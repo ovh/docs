@@ -74,7 +74,7 @@ To add a user to a project or an environment, follow these steps:
 >> <!--This is in HTML to get the icon not to break the list. -->
 >> <ol>
 >>   <li>Select the project where you want to add a new user.</li>
->>   <li>Click {{< icon settings >}} <strong>Settings</strong>.</li>
+>>   <li>Click <strong>Settings</strong>.</li>
 >>   <li>Click <strong>Access</strong>.</li>
 >>   <li>Click <strong>+ Add</strong>.</li>
 >>   <li>Add the user's details and choose their permissions.</li>
@@ -113,7 +113,7 @@ To delete a user from a project, follow these steps:
 >> <!--This is in HTML to get the icon not to break the list. -->
 >> <ol>
 >>   <li>Select the project where you want to add a new user.</li>
->>   <li>Click {{< icon settings >}} <strong>Settings</strong>.</li>
+>>   <li>Click <strong>Settings</strong>.</li>
 >>   <li>Click <strong>Access</strong>.</li>
 >>   <li>Expand the user you want to delete.</li>
 >>   <li>Click <strong>Delete</strong>.</li>
@@ -150,7 +150,7 @@ To change user permissions, follow these steps:
 >> <!--This is in HTML to get the icon not to break the list. -->
 >> <ol>
 >>   <li>Select the project where you want to add a new user.</li>
->>   <li>Click {{< icon settings >}} <strong>Settings</strong>.</li>
+>>   <li>Click <strong>Settings</strong>.</li>
 >>   <li>Click <strong>Access</strong>.</li>
 >>   <li>Expand the user you want to delete.</li>
 >>   <li>Click <strong>Delete</strong>.</li>
