@@ -602,24 +602,33 @@ In our example, the new Client informations are:
   <li>Then click on the <code class="action">Save</code> button.</li>
 </ol>
 
-5. In the new created client, Find the `Access Type` field and set its value to `confidential` to require a secret to initiate the login protocol. Then click on the `Save`{.action} blue button to save the change.
+<ol start="5">
+  <li>In the new created client, Find the <code>Access Type</code> field and set its value to <code>confidential</code> to require a secret to initiate the login protocol. Then click on the <code class="action">Save</code> blue button to save the change.
+</ol>
 
 ![Keycloak client](images/keycloak-client.png)
 
 <ol start="6">
-<li>Then click on the <code class="action">Credentials</code> tab. Find the <code>Valid Redirect URIs</code> field and set the following value: <code>*</code></li>
+  <li>Then click on the <code class="action">Credentials</code> tab. Find the <code>Valid Redirect URIs</code> field and set the following value: <code>*</code></li>
 </ol>
 
-7. Find the `Admin URL` and the `Web Origins` fields and set their values to your defined domain name if it is not already done.  
-In our example: `https://keycloak.example.com/`. __\/!\ Be careful to use the HTTPS schema only /!\\__
-8. Save your changes.
+<ol start="7">
+  <li>Find the <code>Admin URL</code> and the <code>Web Origins</code> fields and set their values to your defined domain name if it is not already done. 
+  
+  In our example: <code>https://keycloak.example.com/</code>.
+  __\/!\ Be careful to use the HTTPS schema only /!\\__</li>
+ </ol> 
+  
+<ol start="8">
+  <li>Save your changes.</li>
+</ol>  
 
 
 #### Create a USER
 
 1. From the previously created realm, click on the left-hand menu `Users`{.action} under the `Manage` category.
 2. Click on `Add user`{.action} in the top-right corner of the table.
-3) Fill in the form. Only the `Username` field is required, it's enough for this tutorial.
+3. Fill in the form. Only the `Username` field is required, it's enough for this tutorial.
 
 In our example, we created the following user:
 
@@ -628,9 +637,12 @@ USERNAME: ovhcloud-keycloak-tutorial
 PASSWORD: ovhcloud-keycloak-tutorial-awesome-password
 ```
 
-4. Then click on the `Save`{.action} button
+<ol start="4">
+  <li>Then click on the <code class="action">Save</code> button.</li>
+</ol>
 
 The first user connection required an initial password, so let's create it:
+
 1. Click on the `Credentials`{.action} tab
 2. Fill in the `Set Password` form
 3. Disable the `Temporary` flag to prevent having to update the password on first login
