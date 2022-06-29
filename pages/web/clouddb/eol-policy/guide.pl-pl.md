@@ -30,7 +30,7 @@ Posiadanie co najmniej jednej z 3 poniższych ofert:
 
 Produkty objęte tą polityką wycofania z eksploatacji to:
 
-- Usługi Public Cloud Databases, dedykowane instancje SGBD dostępne w sieci publicznej ([sprawdź zapowiedzi](https://docs.ovh.com/gb/en/clouddb/clouddb-eos-eol/)).
+- Usługi Public Cloud Databases, dedykowane instancje SGBD dostępne w sieci publicznej ([sprawdź zapowiedzi](https://docs.ovh.com/pl/clouddb/clouddb-eos-eol/)).
 
 - Usługi Cloud Databases Web Hosting (znane również jako usługi SQLPrive), dedykowane instancje SGBD dostępne poprzez sieć Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 

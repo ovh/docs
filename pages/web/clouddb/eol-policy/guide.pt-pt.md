@@ -30,7 +30,7 @@ Dispor de, pelo menos, uma das 3 ofertas seguintes:
 
 Os produtos abrangidos por esta política de fim de vida são:
 
-- Os serviços Cloud Databases Públicos, instâncias SGBD dedicadas acessíveis através da rede pública ([ver os anúncios](https://docs.ovh.com/gb/en/clouddb/clouddb-eos-eol/)).
+- Os serviços Cloud Databases Públicos, instâncias SGBD dedicadas acessíveis através da rede pública ([ver os anúncios](https://docs.ovh.com/pt/clouddb/clouddb-eos-eol/)).
 
 - Os serviços Cloud Databases Web Hosting (também conhecidos como serviços SQLP Privado), instâncias SGBD dedicadas acessíveis através da rede Web Hosting ([ver os anúncios](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
