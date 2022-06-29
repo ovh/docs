@@ -47,6 +47,8 @@ La zone DNS d'un nom de domaine est un fichier de configuration composé d'**enr
 > - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 > 
 > - Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans l'onglet `Serveurs DNS`{.action} du nom de domaine concerné.
+> 
+> Dans les deux cas ci-dessus, faites attention en effectuant vos changements de serveurs DNS. En effet, l'ancienne configuration qui pourrait être appliquée à votre nom de domaine ne sera plus active si vous n'avez pas préalablement reconfiguré à votre guise la nouvelle zone DNS présente chez OVHcloud. Vous ne pouvez avoir qu'une seule zone DNS active à la fois par nom de domaine.
 >
 
 ## En pratique
@@ -131,15 +133,21 @@ En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* 
 
 **MX** (**M**ail e**X**changer) : Relie un nom de domaine à un serveur e-mail. Par exemple, l'adresse *10 mx1.mail.ovh.net* correspond à l'un des serveurs e-mail OVHcloud lorsque vous possédez une offre e-mail OVHcloud. Il est probable que votre fournisseur e-mail dispose de plusieurs serveurs e-mail : plusieurs champs MX doivent donc être créés. Consultez notre documentation « [Ajouter un champ MX à la configuration de son nom de domaine](../mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) ».
 
+> [!warning]
+>
+> De manière générale, il est recommandé de n’utiliser qu’un ou plusieurs serveurs d’un même fournisseur mail dans votre zone DNS.
+> En effet, si vous disposez déjà de services mail chez un autre fournisseur mail et que vous ajoutez en parallèle (sans remplacer) les serveurs mail de votre nouveau fournisseur mail, vous risquez de recevoir aléatoirement vos mails chez l’un ou l’autre de vos deux fournisseurs.
+> 
+
 **SPF** (**S**ender **P**olicy **F**ramework) : Permet d'éviter les potentielles usurpations d’identité sur les adresses e-mail utilisant votre nom de domaine (spoofing). Par exemple, l'enregistrement *v=spf1 include:mx.ovh.com ~all* indique que seuls les serveurs d'envoi liés à votre offre mail OVHCloud peuvent être considérés par le serveur de réception comme légitimes. Il est possible de renseigner cet enregistrement sous la forme d'un champ TXT ou via notre système de configuration automatique. Consultez notre documentation « [Ajouter un champ SPF à la configuration de son nom de domaine](../le-champ-spf/) » pour en savoir plus.
 
-**DKIM** (**D**omain**K**eys **I**dentified **M**ail) : Permet de vérifier l'authenticité du nom de domaine de l'expéditeur et assurer l'intégrité de l'e-mail envoyé. L'enregistrement DKIM se présente sous la forme d'une clé composée de plusieurs caractères. La clé DKIM est fournie par votre prestataire e-mail, il est possible de la renseigner sous la forme d'un champ TXT.
+**DKIM** (**D**omain**K**eys **I**dentified **M**ail) : Permet de vérifier l'authenticité du nom de domaine de l'expéditeur et assurer l'intégrité de l'e-mail envoyé. L'enregistrement DKIM se présente sous la forme d'une clé composée de plusieurs caractères. La clé DKIM est fournie par votre prestataire e-mail (si cette fonctionnalité est proposée par ce dernier), il est possible de la renseigner sous la forme d'un champ TXT.
 
-**DMARC** (**D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance) : Contribue à l'authentification des e-mails en association avec les méthodes SPF et/ou DKIM. Cette valeur vous sera donnée par votre fournisseur e-mail, elle sera au minimum associée à un enregistrement SPF ou DKIM.
+**DMARC** (**D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance) : Contribue à l'authentification des e-mails en association avec les méthodes SPF et/ou DKIM. Cette valeur vous sera donnée par votre fournisseur e-mail (si cette fonctionnalité est proposée par ce dernier), elle sera au minimum associée à un enregistrement SPF ou DKIM.
 
 #### Enregistrements étendus
 
-**TXT** (**T**e**XT**) : Permet d'ajouter la valeur de votre choix, au format textuel, dans la zone DNS de votre nom de domaine. Cet enregistrement est souvent utilisé lors de processus de vérification.
+**TXT** (**T**e**XT**) : Permet d'ajouter la valeur de votre choix, au format textuel, dans la zone DNS de votre nom de domaine. Cet enregistrement est souvent utilisé lors de processus de vérification/validation ou de sécurité.
 
 > [!warning]
 > 
