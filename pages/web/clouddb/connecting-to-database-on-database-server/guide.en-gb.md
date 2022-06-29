@@ -6,7 +6,7 @@ section: Configuration
 order: 3
 ---
 
-**Last updated 29th June .2022**
+**Last updated 29th June 2022**
 
 ## Objective
 
@@ -16,7 +16,7 @@ You can access your database’s content via an interface. There are several way
 
 ## Requirements
 
-- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions

@@ -20,7 +20,7 @@ order: 3
 
 ## Prerequisiti
 
-- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/it/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura

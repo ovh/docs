@@ -10,7 +10,7 @@ order: 3
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 29.06.2022**
+**Última atualização: 29/06/2022**
 
 ## Objetivo
 
@@ -20,7 +20,7 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 
 ## Requisitos
 
-- Dispor de uma [instância CloudDB](https://www.ovh.com/pt/cloud/cloud-databases/) (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/).
+- Dispor de uma [instância CloudDB](https://www.ovh.com/pt/cloud/cloud-databases/) (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
