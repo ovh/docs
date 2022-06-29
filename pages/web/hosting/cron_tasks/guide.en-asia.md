@@ -6,7 +6,7 @@ legacy_guide_number: g1990
 section: 'Automated tasks (CRON)'
 ---
 
-**Last updated 22th September 2020**
+**Last updated 22nd September 2020**
 
 ## Objective
 

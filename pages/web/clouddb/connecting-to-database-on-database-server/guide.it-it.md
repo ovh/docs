@@ -10,7 +10,7 @@ order: 3
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 03/02/2022**
+**Ultimo aggiornamento: 29/06/2022**
 
 ## Obiettivo
 
@@ -20,16 +20,17 @@ order: 3
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Cloud Database](https://www.ovh.it/cloud-databases/){.external}
+- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/it/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 > [!primary]
 >
-> Ti ricordiamo che non esiste un accesso super utente "root".
-> <br> I comandi SQL generici funzionano normalmente e i software HeidiSQL, SQuirreL SQL o Adminer sono pienamente compatibili.
-> 
+> Attenzione: le soluzioni [CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
+> <br> - Attenzione: non sono presenti accessi "root".
+> <br> - I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL o Adminer sono completamente compatibili.
+>
 
 ### Connettersi a un database MySQL o MariaDB 
 
@@ -50,32 +51,30 @@ Si aprirà la pagina di connessione di phpMyAdmin.
 
 ![private-sql](images/private-sql-phpma02.png){.thumbnail}
 
-- **Server:** inserisci il nome host del tuo server visibile nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
-- **Utente:** inserisci il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
-- **Password:** inserisci la password associata all'utente
-- **Porta:** inserisci la porta indicata nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Porta" nella parte **SQL**. 
+- **Server**: inserisci il nome host del tuo server visibile nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
+- **Utente**: inserisci il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
+- **Password**: inserisci la password associata all'utente
+- **Porta**: inserisci la porta indicata nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Porta" nella parte **SQL**. 
 
 Se la connessione avrà successo, comparirà la pagina successiva di phpMyAdmin.
 
 ![private-sql](images/private-sql-phpma03.png){.thumbnail}
 
-> **In caso di errore #1045**
-> 
-> In caso di errore #1045, significa che le credenziali non sono corrette. È quindi necessario verificare il nome utente e/o la password.
-> 
-> **In caso di errore #2005**
-> 
-> In caso di errore #2005, ti consigliamo di verificare il nome del server e il suo corretto funzionamento.
+> [!warning]
+>
+> **In caso di errore**:
+> <br> - Errore #1045, significa che le credenziali non sono corrette. È quindi necessario verificare il nome utente e/o la password.
+> <br> - Errore #2005, ti consigliamo di verificare il nome del server e il suo corretto funzionamento.
 
 #### Accedi al database al di fuori dello Spazio Cliente OVH
 
 Per connetterti al tuo database, assicurati di recuperare queste informazioni:
 
-- **Server:** l'hostname del tuo server è visibile nella scheda `Informazioni `generali del tuo server database, nel quadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
-- **Utente:** il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
-- **Password:** la password associata all'utente
-- **Porta:** la porta è visibile nella scheda `Informazioni `generali del tuo database server, nel quadro **"Amministrazione del database"** con la voce "Porta" della parte **SQL**.
-- **Nome del database:** i database sono elencati nella scheda `Database` del tuo database server.
+- **Server:**: l'hostname del tuo server è visibile nella scheda `Informazioni `generali del tuo server database, nel quadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
+- **Utente:**: il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
+- **Password**: la password associata all'utente
+- **Porta**: la porta è visibile nella scheda `Informazioni `generali del tuo database server, nel quadro **"Amministrazione del database"** con la voce "Porta" della parte **SQL**.
+- **Nome del database**: i database sono elencati nella scheda `Database` del tuo database server.
 
 ##### 1. Connessione online di comando
 
@@ -131,11 +130,11 @@ Da questo momento sei connesso correttamente al tuo database:
 
 Per connetterti al tuo database, assicurati di recuperare queste informazioni:
 
-- **Server:** l'hostname del tuo server è visibile nella scheda `Informazioni `generali del tuo server database, nel quadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
-- **Utente:** il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
-- **Password:** la password associata all'utente
-- **Porta:** la porta è visibile nella scheda `Informazioni `generali del tuo database server, nel quadro **"Amministrazione del database"** con la voce "Porta" della parte **SQL**.
-- **Nome del database:** i database sono elencati nella scheda `Database` del tuo database server.
+- **Server**: l'hostname del tuo server è visibile nella scheda `Informazioni `generali del tuo server database, nel quadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
+- **Utente**: il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
+- **Password**: la password associata all'utente
+- **Porta**: la porta è visibile nella scheda `Informazioni `generali del tuo database server, nel quadro **"Amministrazione del database"** con la voce "Porta" della parte **SQL**.
+- **Nome del database**: i database sono elencati nella scheda `Database` del tuo database server.
 
 #### Connessione online di comando
 

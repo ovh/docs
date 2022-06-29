@@ -6,7 +6,7 @@ section: AI Apps tutorials
 order: 01
 ---
 
-**Last updated 23th June, 2022.**
+**Last updated 23rd June, 2022.**
 
 ## Objective
 

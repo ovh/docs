@@ -5,7 +5,7 @@ excerpt: This guide will show you how to retrieve the serial number of a disk in
 section: Server Management
 ---
 
-**Last update 21th August 2018**
+**Last update 21st August 2018**
 
 ## Objective
 

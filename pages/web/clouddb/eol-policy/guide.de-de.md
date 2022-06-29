@@ -8,7 +8,7 @@ section: 'Technische Ressourcen'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 07.01.2022**
+**Letzte Aktualisierung am 29.06.2022**
 
 ## Ziel
 
@@ -18,12 +18,11 @@ Von OVHcloud verwaltete Datenbanken (*Managed Databases*) verwenden verschiedene
 
 ## Voraussetzungen
 
-Sie verfügen über einen oder mehrere der folgenden Dienste:
+Sie verfügen über einen der folgenden Dienste:
 
-- Ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit Datenbanken
-- Ein [Start SQL Datenbank-Paket](https://www.ovhcloud.com/de/web-hosting/options/start-sql/)
-- Ein [Private SQL Server](https://www.ovhcloud.com/de/web-hosting/options/)
-- Ein [Cloud Databases Server](https://www.ovh.de/cloud/cloud-databases/)
+- Eine in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthaltene Datenbank.
+- Eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/) (auch in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
+- Ein [Start SQL Datenbank-Paket](https://www.ovhcloud.com/de/web-hosting/options/start-sql/).
 
 ## In der praktischen Anwendung
 
@@ -31,10 +30,7 @@ Sie verfügen über einen oder mehrere der folgenden Dienste:
 
 Die von der EOL Policy betroffenen Dienste sind:
 
-- Public Cloud Databases, dedizierte DBMS Instanzen, die über das öffentliche Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/clouddb/clouddb-eos-eol/)).
-
-- Webhosting Cloud Databases (auch Private SQL Dienste genannt), dedizierte DBMS Instanzen, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
-
+- Webhosting CloudDB (auch Private SQL Dienste genannt), dedizierte DBMS Instanzen, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 - SharedSQL Web Hosting Dienste, MySQL Datenbanken, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
 ### Definitionen und Leitlinien für EOL-Richtlinien

@@ -5,7 +5,7 @@ excerpt: Configure Scollector for Metrics Data Platform
 section: Source
 order: 5
 ---
-**Last updated 23th August, 2019**
+**Last updated 23rd August, 2019**
 
 ## Objective
 

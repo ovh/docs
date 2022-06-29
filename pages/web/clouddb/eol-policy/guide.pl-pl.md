@@ -8,22 +8,21 @@ section: 'Zasoby techniczne'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 07/01/2022**
+**Ostatnia aktualizacja z dnia 29/06/2022**
 
 ## Wprowadzenie
 
-Zarządzane bazy danych OVHcloud oferują kilka systemów zarządzania bazami danych (SGBD), takich jak MySQL lub PostgreSQL. Każda wersja oprogramowania dociera w dowolnym momencie do końca sprzedaży i do końca obsługi. Usługa może być następnie aktualizowana przez OVH lub przestać działać ("koniec życia"). Chcemy, abyś zrozumiał cykl życia zarządzanych baz danych OVHcloud, dzięki czemu będziesz mógł w pełni przewidywać i przygotowywać własne zmiany.
+Zarządzane bazy danych OVHcloud oferują kilka systemów zarządzania bazami danych (SGBD), takich jak MySQL lub PostgreSQL. Każda wersja oprogramowania dociera w dowolnym momencie do końca sprzedaży i do końca obsługi. Usługa może być następnie aktualizowana przez OVHcloud lub przestać działać ("koniec życia"). Chcemy, abyś zrozumiał cykl życia zarządzanych baz danych OVHcloud, dzięki czemu będziesz mógł w pełni przewidywać i przygotowywać własne zmiany.
 
 **Zapoznaj się z polityką dotyczącą wycofania z eksploatacji baz danych zarządzanych przez OVHcloud.**
 
 ## Wymagania początkowe
 
-Posiadanie jednej lub kilku z następujących ofert:
+Posiadanie co najmniej jednej z 3 poniższych ofert:
 
-- [Hosting www](https://www.ovhcloud.com/pl/web-hosting/) z bazami danych.
-- Pakiet baz danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
-- Prywatny serwer [SQL](https://www.ovhcloud.com/pl/web-hosting/options/).
-- Serwer [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/).
+- Jedna z baz danych zawartych w ofercie [Hosting WWW](https://www.ovhcloud.com/pl/web-hosting/).
+- Jedna [instancja CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawarta w usłudze [Hosting www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Pakiet bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
 
 ## W praktyce
 
@@ -31,9 +30,7 @@ Posiadanie jednej lub kilku z następujących ofert:
 
 Produkty objęte tą polityką wycofania z eksploatacji to:
 
-- Usługi Public Cloud Databases, dedykowane instancje SGBD dostępne w sieci publicznej ([sprawdź zapowiedzi](https://docs.ovh.com/gb/en/clouddb/clouddb-eos-eol/)).
-
-- Usługi Cloud Databases Web Hosting (znane również jako usługi SQLPrive), dedykowane instancje SGBD dostępne poprzez sieć Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
+- Usługi CloudDB Web Hosting (znane również jako usługi SQLPrive), dedykowane instancje SGBD dostępne poprzez sieć Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
 - Usługi SharedSQL Web Hosting, bazy danych MySQL dostępne za pośrednictwem sieci Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
