@@ -20,9 +20,9 @@ I database gestiti OVHcloud propongono diversi Sistemi di Gestione Database (SGB
 
 Almeno una delle 3 offerte seguenti:
 
-- Utilizzare uno dei database inclusi con un [Hosting Web](https://www.ovhcloud.com/it/web-hosting/).
-- Una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di [hosting web performance](https://www.ovhcloud.com/it/web-hosting/).
-- Pack di database [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/)
+- Uno dei database inclusi con un [Hosting Web](https://www.ovhcloud.com/it/web-hosting/).
+- Una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di [Hosting Performance](https://www.ovhcloud.com/it/web-hosting/).
+- Pack di database [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/).
 
 ## Procedura
 
@@ -31,9 +31,7 @@ Almeno una delle 3 offerte seguenti:
 I prodotti contemplati da questa politica di fine vita sono:
 
 - I servizi Public Cloud Database, istanze SGBD dedicate raggiungibili tramite la rete pubblica ([vedi gli annunci](https://docs.ovh.com/it/clouddb/clouddb-eos-eol/)).
-
 - I servizi Cloud Databases Web Hosting (noti anche come servizi SQLPPrivati), istanze SGBD dedicate raggiungibili tramite la rete Web Hosting ([vedi gli annunci](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
-
 - I servizi SharedSQL Web Hosting, database MySQL raggiungibili tramite la rete Web Hosting ([vedi gli annunci](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
 ### Definizioni e orientamenti della politica di fine vita

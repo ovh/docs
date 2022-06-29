@@ -12,7 +12,7 @@ section: 'Zasoby techniczne'
 
 ## Wprowadzenie
 
-Zarządzane bazy danych OVHcloud oferują kilka systemów zarządzania bazami danych (SGBD), takich jak MySQL lub PostgreSQL. Każda wersja oprogramowania dociera w dowolnym momencie do końca sprzedaży i do końca obsługi. Usługa może być następnie aktualizowana przez OVH lub przestać działać ("koniec życia"). Chcemy, abyś zrozumiał cykl życia zarządzanych baz danych OVHcloud, dzięki czemu będziesz mógł w pełni przewidywać i przygotowywać własne zmiany.
+Zarządzane bazy danych OVHcloud oferują kilka systemów zarządzania bazami danych (SGBD), takich jak MySQL lub PostgreSQL. Każda wersja oprogramowania dociera w dowolnym momencie do końca sprzedaży i do końca obsługi. Usługa może być następnie aktualizowana przez OVHcloud lub przestać działać ("koniec życia"). Chcemy, abyś zrozumiał cykl życia zarządzanych baz danych OVHcloud, dzięki czemu będziesz mógł w pełni przewidywać i przygotowywać własne zmiany.
 
 **Zapoznaj się z polityką dotyczącą wycofania z eksploatacji baz danych zarządzanych przez OVHcloud.**
 
@@ -20,8 +20,8 @@ Zarządzane bazy danych OVHcloud oferują kilka systemów zarządzania bazami da
 
 Posiadanie co najmniej jednej z 3 poniższych ofert:
 
-- Korzystanie z jednej z baz danych zawartych w ofercie [Hosting WWW](https://www.ovhcloud.com/pl/web-hosting/).
-- Jedna [instancja CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawarta w usłudze[hosting www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Jedna z baz danych zawartych w ofercie [Hosting WWW](https://www.ovhcloud.com/pl/web-hosting/).
+- Jedna [instancja CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawarta w usłudze [Hosting www Performance](https://www.ovhcloud.com/pl/web-hosting/).
 - Pakiet bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
 
 ## W praktyce
