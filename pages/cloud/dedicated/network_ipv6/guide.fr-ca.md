@@ -5,7 +5,7 @@ excerpt: Decouvrez comment configurer des adresses IPv6 sur notre infrastructure
 section: Réseau & IP
 ---
 
-**Dernière mise à jour le 04/05/2022**
+**Dernière mise à jour le 29/06/2022**
 
 ## Objectif
 
@@ -55,7 +55,7 @@ Si vous souhaitez configurer plusieurs adresses IPv6 sur votre serveur (ou si vo
 
 >  [!warning]
 > 
-> Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l’original en cas de problème. 
+> Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l’original, pour pouvoir y revenir en cas de problème. 
 > 
 
 ### Debian et systèmes d’exploitation basés sur Debian
@@ -77,7 +77,7 @@ Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
-Le fichier de configuration réseau de votre serveur est situé soit dans `/etc/network/interfaces` ou `/etc/network/interfaces.d`. Utilisez la ligne de commande pour localiser le fichier et ouvrez-le pour l'éditer. Avant de le faire, envisagez de créer une copie de sauvegarde.
+Le fichier de configuration réseau de votre serveur est situé soit dans `/etc/network/interfaces` ou `/etc/network/interfaces.d`. Utilisez la ligne de commande pour localiser le fichier et ouvrez-le pour l'éditer. Avant de le faire, prenez soin de créer une copie de sauvegarde.
 
 #### Étape 3 : Modifier le fichier de configuration réseau
 
