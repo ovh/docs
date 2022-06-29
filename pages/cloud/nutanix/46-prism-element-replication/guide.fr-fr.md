@@ -1,12 +1,12 @@
 ---
-title: Réplication asynchrone ou synchrone au travers de Prism Element
+title: Réplication asynchrone ou nearsync au travers de Prism Element
 slug: prism-element-nutanix-replication
-excerpt: "Comment mettre en place la réplication asynchrone ou synchrone au travers de Prism Element"
+excerpt: "Comment mettre en place la réplication asynchrone ou nearsync au travers de Prism Element"
 section: Plan de Reprise d'Activité
 order: 04
 ---
 
-**Dernière mise à jour le 28/06/2022**
+**Dernière mise à jour le 29/06/2022**
 
 ## Objectif
 
@@ -29,7 +29,7 @@ Via **Prism Element**, il est possible :
 > 
 > Le pack **Nutanix Standard** OVHcloud vous permet d'utiliser des réplications asynchrones **toutes les heures**. 
 >
-> Pour obtenir un délai de réplication plus court compris entre 1 et 15 minutes, il vous faut configurer des réplications synchrones. Cette option n'est disponible qu'avec le pack **Nutanix Advanced** OVHcloud.
+> Pour obtenir un délai de réplication plus court compris entre 1 et 15 minutes, il vous faut configurer des réplications **nearsync**. Cette option n'est disponible qu'avec le pack **Nutanix Advanced** OVHcloud.
 > 
 
 ## Prérequis
@@ -180,7 +180,7 @@ Cliquez sur `Close`{.action} pour fermer la fenêtre.
 
 > [!primary]
 > 
-> Vous pouvez modifier la planification pour réduire le risque de perte de données en cas de désastre mais la réplication va basculer du mode asynchrone au mode synchrone et il vous faudra alors faire évoluer votre licence vers le pack **Nutanix Advanced** OVHcloud.
+> Vous pouvez modifier la planification pour réduire le risque de perte de données en cas de désastre mais la réplication va basculer du mode asynchrone au mode **nearsync** et il vous faudra alors faire évoluer votre licence vers le pack **Nutanix Advanced** OVHcloud.
 
 ![03 Create dataprotection 09](images/03-create-dataprotection09.png){.thumbnail}
 

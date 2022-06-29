@@ -53,7 +53,7 @@ Certaines solutions sont disponibles avec **Prism Element** :
 - **Async DR** : la réplication entre deux **storage containers** distants ne se fait qu'une fois par heure. Si un problème survient, il est possible de perdre une heure de données (RPO 1 heure) mais le redémarrage peut se faire manuellement dans la minute.
 - **NearSync DR** : la réplication se fait plusieurs fois par heure. Il est possible d'avoir une synchronisation entre 1 minute et 15 minutes, en fonction de la licence que vous possédez (RPO entre 1 minute et 15 minutes).
 
-Retrouvez le détail de ces solutions dans notre documentation sur la [réplication asynchrone ou synchrone au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
+Retrouvez le détail de ces solutions dans notre documentation sur la [réplication asynchrone ou nearsync au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
 
 Il est possible d'améliorer la gestion des plans de reprise d'activité via des outils tiers ou via une solution Nutanix nommé **Leap** au travers de **Prism Central**.
 
@@ -64,7 +64,7 @@ Il est possible d'améliorer la gestion des plans de reprise d'activité via des
 
 [Interconnexion IPsec entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
 
-[Réplication asynchrone ou synchrone au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
+[Réplication asynchrone ou **nearsync** au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
