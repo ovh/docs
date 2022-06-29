@@ -6,6 +6,10 @@ section: Configuração
 order: 3
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 03/02/2022**
 
 ## Objetivo
@@ -16,16 +20,17 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 
 ## Requisitos
 
-- Dispor de uma [instância CloudDB](https://www.ovh.com/pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Dispor de uma [instância CloudDB](https://www.ovh.com/pt/cloud/cloud-databases/) (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
 > [!primary]
 >
-> Os serviços Cloud Databases não dão acesso ao Host, mas às bases de dados nele alojadas. Não há um acesso superutilizador «root».
-> <br> Os comandos SQL genéricos funcionam normalmente, e os programas de tipo HeidiSQL, SQuirreL SQL e Adminer são plenamente compatíveis.
-> 
+> Note que as ofertas [CloudDB](https://www.ovh.com/pt/cloud/cloud-databases/) não dão acesso ao sistema de gestão de base de dados, mas às bases de dados alojadas nesse sistema.
+> <br> - Não existe um acesso super-utilizador "root".
+> <br> - Os comandos SQL genéricos funcionam normalmente e os softwares do tipo HeidiSQL, SQuirreL SQL ou Adminer são plenamente compatíveis.
+>
 
 ### Conexão a uma base de dados MySQL ou MariaDB 
 
@@ -46,10 +51,10 @@ Será conduzido à página de conexão do phpMyAdmin.
 
 ![sql-privado](images/private-sql-phpma02.png){.thumbnail}
 
-- **Servidor:** indique o host do servidor, visível no separador `Informações gerais`, no quadro **«Gestão da base de dados»** sob a menção «Host» da secção **SQL**.
-- **Utilizador:** indique o utilizador criado no separador `Utilizadores e permissões` do servidor de bases de dados.
-- **Palavra-pase:** indique a palavra-passe associada ao utilizador em causa.
-- **Porta:** indique a porta mencionada no separador `Informações gerais`, no quadro **«Gestão da base de dados»** sob a menção «Porta» da secção **SQL**.
+- **Servidor**: indique o host do servidor, visível no separador `Informações gerais`, no quadro **«Gestão da base de dados»** sob a menção «Host» da secção **SQL**.
+- **Utilizador**: indique o utilizador criado no separador `Utilizadores e permissões` do servidor de bases de dados.
+- **Palavra-pase**: indique a palavra-passe associada ao utilizador em causa.
+- **Porta**: indique a porta mencionada no separador `Informações gerais`, no quadro **«Gestão da base de dados»** sob a menção «Porta» da secção **SQL**.
 
 Se a conexão for bem-sucedida, acederá à página seguinte do phpMyAdmin.
 
@@ -66,11 +71,11 @@ Se a conexão for bem-sucedida, acederá à página seguinte do phpMyAdmin.
 
 Para se conectar à base de dados, certifique-se de que tem à mão as seguintes informações:
 
-- **Servidor:** o nome do host do servidor está visível no separador `Informações gerais` do servidor de bases de dados, no quadro **«Gestão da base de dados»**, sob a menção «Host» da secção **SQL**.
-- **Utilizador:** o nome do utilizador criado no separador `Utilizadores e permissões` do servidor de bases de dados.
-- **Palavra-passe:** a palavra-passe associada ao utilizador em causa.
-- **Porta:** a porta está visível no separador `Informações gerais` do servidor de bases de dados, no quadro **«Gestão da base de dados»**, sob a menção «Porta» da secção **SQL**.
-- **Nome da base de dados:** as bases de dados estão listadas no separador `Bases de dados` do servidor de bases de dados.
+- **Servidor**: o nome do host do servidor está visível no separador `Informações gerais` do servidor de bases de dados, no quadro **«Gestão da base de dados»**, sob a menção «Host» da secção **SQL**.
+- **Utilizador**: o nome do utilizador criado no separador `Utilizadores e permissões` do servidor de bases de dados.
+- **Palavra-passe**: a palavra-passe associada ao utilizador em causa.
+- **Porta**: a porta está visível no separador `Informações gerais` do servidor de bases de dados, no quadro **«Gestão da base de dados»**, sob a menção «Porta» da secção **SQL**.
+- **Nome da base de dados**: as bases de dados estão listadas no separador `Bases de dados` do servidor de bases de dados.
 
 ##### 1. Conexão através da linha de comandos
 
@@ -113,23 +118,19 @@ Já está conectado à base de dados:
 
 ![config conexao](images/4.PNG){.thumbnail}
 
-
 ##### 4. Conexão pelo phpMyAdmin
 
 Pode utilizar a sua própria interface phpMyAdmin para explorar o conteúdo da base de dados. Para isso, instale o phpMyAdmin no servidor ou no alojamento web. Durante a instalação, configure adequadamente as informações do servidor de bases de dados e da base de dados desejada, para que o phpMyAdmin consiga proceder à conexão.
 
-
-
 ### Conexão a uma base de dados PostgreSQL 
-
 
 Para se conectar à base de dados, certifique-se de que tem à mão as seguintes informações:
 
-- **Servidor:** o nome do host do servidor está visível no separador `Informações gerais` do servidor de bases de dados, no quadro **«Gestão da base de dados»**, sob a menção «Host» da secção **SQL**.
-- **Utilizador:** o nome do utilizador criado no separador `Utilizadores e permissões` do servidor de bases de dados.
-- **Palavra-passe:** a palavra-passe associada ao utilizador em causa.
-- **Porta:** a porta está visível no separador `Informações gerais` do servidor de bases de dados, no quadro **«Gestão da base de dados»**, sob a menção «Porta» da secção **SQL**.
-- **Nome da base de dados:** as bases de dados estão listadas no separador `Bases de dados` do servidor de bases de dados.
+- **Servidor**: o nome do host do servidor está visível no separador `Informações gerais` do servidor de bases de dados, no quadro **«Gestão da base de dados»**, sob a menção «Host» da secção **SQL**.
+- **Utilizador**: o nome do utilizador criado no separador `Utilizadores e permissões` do servidor de bases de dados.
+- **Palavra-passe**: a palavra-passe associada ao utilizador em causa.
+- **Porta**: a porta está visível no separador `Informações gerais` do servidor de bases de dados, no quadro **«Gestão da base de dados»**, sob a menção «Porta» da secção **SQL**.
+- **Nome da base de dados**: as bases de dados estão listadas no separador `Bases de dados` do servidor de bases de dados.
 
 #### Conexão através da linha de comandos
 

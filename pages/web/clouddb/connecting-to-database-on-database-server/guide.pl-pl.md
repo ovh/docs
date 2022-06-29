@@ -6,6 +6,10 @@ section: Konfiguracja
 order: 3
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
 **Ostatnia aktualizacja z dnia 03-02-2022**
 
 ## Wprowadzenie
@@ -47,10 +51,10 @@ Zostaniesz przekierowany na stronę logowania phpMyAdmin.
 
 ![private-sql](images/private-sql-phpma02.png){.thumbnail}
 
-- **Serwer:** wprowadź nazwę hosta widocznego w zakładce `Informacje ogólne` w polu **"Zarządzanie bazą danych"** w polu "Nazwa hosta" w części **SQL**.
-- **Użytkownik:** wprowadź nazwę użytkownika utworzoną w karcie `Użytkownicy i uprawnienia` serwera baz danych.
-- **Hasło:** wprowadź hasło przypisane do danego użytkownika.
-- **Port:** wprowadź port podany w karcie `Informacje ogólne` w polu **"Zarządzanie bazą danych"** pod nagłówkiem "Port" w części **SQL**.
+- **Serwer**: wprowadź nazwę hosta widocznego w zakładce `Informacje ogólne` w polu **"Zarządzanie bazą danych"** w polu "Nazwa hosta" w części **SQL**.
+- **Użytkownik**: wprowadź nazwę użytkownika utworzoną w karcie `Użytkownicy i uprawnienia` serwera baz danych.
+- **Hasło**: wprowadź hasło przypisane do danego użytkownika.
+- **Port**: wprowadź port podany w karcie `Informacje ogólne` w polu **"Zarządzanie bazą danych"** pod nagłówkiem "Port" w części **SQL**.
 
 Jeśli połączenie zakończy się pomyślnie, wyświetli się następna strona phpMyAdmin.
 
@@ -59,7 +63,7 @@ Jeśli połączenie zakończy się pomyślnie, wyświetli się następna strona 
 
 > [!warning]
 >
-> **W przypadku błędu :**
+> **W przypadku błędu**:
 > <br> - błędu #1045 oznacza to, że identyfikacja jest nieprawidłowa. Sprawdź nazwę użytkownika i/lub hasło.
 > <br> - błędu #2005, zalecamy sprawdzenie nazwy serwera i jego funkcjonalności.
 
@@ -67,11 +71,11 @@ Jeśli połączenie zakończy się pomyślnie, wyświetli się następna strona 
 
 Aby zalogować się do bazy danych, upewnij się, że pobrałeś następujące informacje:
 
-- **Serwer:** nazwa hosta Twojego serwera jest widoczna w zakładce `Informacje ogólne` Twojego serwera baz danych w ramach **"Administracja bazą danych"** w części **SQL** "Nazwa hosta".
-- **Użytkownik:** nazwa użytkownika utworzona w zakładce `Użytkownicy i prawa` serwera baz danych.
-- **Hasło:** hasło przypisane do danego użytkownika.
-- **Port:** port jest widoczny w zakładce `Informacje ogólne` na serwerze baz danych w ramach **"Zarządzanie bazą danych"** w polu "Port" w części **SQL**.
-- **Nazwa bazy danych:** bazy danych są wymienione w zakładce `Bazy danych` Twojego serwera baz danych.
+- **Serwer**: nazwa hosta Twojego serwera jest widoczna w zakładce `Informacje ogólne` Twojego serwera baz danych w ramach **"Administracja bazą danych"** w części **SQL** "Nazwa hosta".
+- **Użytkownik**: nazwa użytkownika utworzona w zakładce `Użytkownicy i prawa` serwera baz danych.
+- **Hasło**: hasło przypisane do danego użytkownika.
+- **Port**: port jest widoczny w zakładce `Informacje ogólne` na serwerze baz danych w ramach **"Zarządzanie bazą danych"** w polu "Port" w części **SQL**.
+- **Nazwa bazy danych**: bazy danych są wymienione w zakładce `Bazy danych` Twojego serwera baz danych.
 
 ##### 1. Połączenie z linii poleceń
 
@@ -126,11 +130,11 @@ Możesz skorzystać z własnego interfejsu phpMyAdmin, aby uzyskać dostęp do z
 
 Aby zalogować się do bazy danych, upewnij się, że pobrałeś następujące informacje:
 
-- **Serwer:** nazwa hosta Twojego serwera jest widoczna w zakładce `Informacje ogólne` Twojego serwera baz danych w ramach **"Administracja bazą danych"** w części **SQL** "Nazwa hosta".
-- **Użytkownik:** nazwa użytkownika utworzona w zakładce `Użytkownicy i prawa` serwera baz danych.
-- **Hasło:** hasło przypisane do danego użytkownika.
-- **Port:** port jest widoczny w zakładce `Informacje ogólne` na serwerze baz danych w ramach **"Zarządzanie bazą danych"** w polu "Port" w części **SQL**.
-- **Nazwa bazy danych:** bazy danych są wymienione w zakładce `Bazy danych` Twojego serwera baz danych.
+- **Serwer**: nazwa hosta Twojego serwera jest widoczna w zakładce `Informacje ogólne` Twojego serwera baz danych w ramach **"Administracja bazą danych"** w części **SQL** "Nazwa hosta".
+- **Użytkownik**: nazwa użytkownika utworzona w zakładce `Użytkownicy i prawa` serwera baz danych.
+- **Hasło**: hasło przypisane do danego użytkownika.
+- **Port**: port jest widoczny w zakładce `Informacje ogólne` na serwerze baz danych w ramach **"Zarządzanie bazą danych"** w polu "Port" w części **SQL**.
+- **Nazwa bazy danych**: bazy danych są wymienione w zakładce `Bazy danych` Twojego serwera baz danych.
 
 #### Połączenie z linii poleceń
 

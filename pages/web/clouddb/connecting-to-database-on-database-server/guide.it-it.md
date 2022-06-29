@@ -51,10 +51,10 @@ Si aprirà la pagina di connessione di phpMyAdmin.
 
 ![private-sql](images/private-sql-phpma02.png){.thumbnail}
 
-- **Server:** inserisci il nome host del tuo server visibile nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
-- **Utente:** inserisci il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
-- **Password:** inserisci la password associata all'utente
-- **Porta:** inserisci la porta indicata nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Porta" nella parte **SQL**. 
+- **Server**: inserisci il nome host del tuo server visibile nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
+- **Utente**: inserisci il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
+- **Password**: inserisci la password associata all'utente
+- **Porta**: inserisci la porta indicata nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Porta" nella parte **SQL**. 
 
 Se la connessione avrà successo, comparirà la pagina successiva di phpMyAdmin.
 
@@ -62,7 +62,7 @@ Se la connessione avrà successo, comparirà la pagina successiva di phpMyAdmin.
 
 > [!warning]
 >
-> **In caso di errore :**
+> **In caso di errore**:
 > <br> - Errore #1045, significa che le credenziali non sono corrette. È quindi necessario verificare il nome utente e/o la password.
 > <br> - Errore #2005, ti consigliamo di verificare il nome del server e il suo corretto funzionamento.
 
@@ -70,11 +70,11 @@ Se la connessione avrà successo, comparirà la pagina successiva di phpMyAdmin.
 
 Per connetterti al tuo database, assicurati di recuperare queste informazioni:
 
-- **Server:** l'hostname del tuo server è visibile nella scheda `Informazioni `generali del tuo server database, nel quadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
-- **Utente:** il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
-- **Password:** la password associata all'utente
-- **Porta:** la porta è visibile nella scheda `Informazioni `generali del tuo database server, nel quadro **"Amministrazione del database"** con la voce "Porta" della parte **SQL**.
-- **Nome del database:** i database sono elencati nella scheda `Database` del tuo database server.
+- **Server:**: l'hostname del tuo server è visibile nella scheda `Informazioni `generali del tuo server database, nel quadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
+- **Utente:**: il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
+- **Password**: la password associata all'utente
+- **Porta**: la porta è visibile nella scheda `Informazioni `generali del tuo database server, nel quadro **"Amministrazione del database"** con la voce "Porta" della parte **SQL**.
+- **Nome del database**: i database sono elencati nella scheda `Database` del tuo database server.
 
 ##### 1. Connessione online di comando
 
@@ -130,11 +130,11 @@ Da questo momento sei connesso correttamente al tuo database:
 
 Per connetterti al tuo database, assicurati di recuperare queste informazioni:
 
-- **Server:** l'hostname del tuo server è visibile nella scheda `Informazioni `generali del tuo server database, nel quadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
-- **Utente:** il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
-- **Password:** la password associata all'utente
-- **Porta:** la porta è visibile nella scheda `Informazioni `generali del tuo database server, nel quadro **"Amministrazione del database"** con la voce "Porta" della parte **SQL**.
-- **Nome del database:** i database sono elencati nella scheda `Database` del tuo database server.
+- **Server**: l'hostname del tuo server è visibile nella scheda `Informazioni `generali del tuo server database, nel quadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
+- **Utente**: il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
+- **Password**: la password associata all'utente
+- **Porta**: la porta è visibile nella scheda `Informazioni `generali del tuo database server, nel quadro **"Amministrazione del database"** con la voce "Porta" della parte **SQL**.
+- **Nome del database**: i database sono elencati nella scheda `Database` del tuo database server.
 
 #### Connessione online di comando
 
