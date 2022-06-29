@@ -26,10 +26,8 @@ At least one of the following 3 solutions:
 
 The products covered by this end-of-life policy are:
 
-- Public Cloud Databases services, dedicated DBMS instances that can be reached via the public network ([see announcements](https://docs.ovh.com/ie/en/clouddb/clouddb-eos-eol/)).
 
 - Cloud Databases Web Hosting services (also known as Private SQL services), dedicated DBMS instances that can be reached via the Web Hosting network ([see announcements](https://docs.ovh.com/gb/en/hosting/sql_eos_eol/)).
-
 - SharedSQL Web Hosting services, MySQL databases that can be reached through the Web Hosting network ([see announcements](https://docs.ovh.com/gb/en/hosting/sql_eos_eol/)).
 
 ### Definitions and guidelines for the end-of-life policy

@@ -21,7 +21,7 @@ Von OVHcloud verwaltete Datenbanken (*Managed Databases*) verwenden verschiedene
 Sie besitzen mindestens eines der folgenden 3 Angebote:
 
 - Eine der Datenbanken ist bei einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) inklusive.
-- Ein [Cloud Databases Server](https://www.ovh.de/cloud/cloud-databases/) (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
+- Ein [CloudDB einer Instanz](https://www.ovh.de/cloud/cloud-databases/) (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
 - Ein [Start SQL Datenbank-Paket](https://www.ovhcloud.com/de/web-hosting/options/start-sql/).
 
 ## In der praktischen Anwendung
@@ -30,10 +30,7 @@ Sie besitzen mindestens eines der folgenden 3 Angebote:
 
 Die von der EOL Policy betroffenen Dienste sind:
 
-- Public Cloud Databases, dedizierte DBMS Instanzen, die über das öffentliche Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/de/clouddb/clouddb-eos-eol/)).
-
 - Webhosting Cloud Databases (auch Private SQL Dienste genannt), dedizierte DBMS Instanzen, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
-
 - SharedSQL Web Hosting Dienste, MySQL Datenbanken, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
 ### Definitionen und Leitlinien für EOL-Richtlinien
