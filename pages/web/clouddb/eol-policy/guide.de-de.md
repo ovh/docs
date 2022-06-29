@@ -18,10 +18,10 @@ Von OVHcloud verwaltete Datenbanken (*Managed Databases*) verwenden verschiedene
 
 ## Voraussetzungen
 
-Sie besitzen mindestens eines der folgenden 3 Angebote:
+Sie verfügen über einen der folgenden Dienste:
 
-- Eine der Datenbanken ist bei einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) inklusive.
-- Ein [CloudDB einer Instanz](https://www.ovh.de/cloud/cloud-databases/) (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
+- Eine in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthaltene Datenbank.
+- Eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/) (auch in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
 - Ein [Start SQL Datenbank-Paket](https://www.ovhcloud.com/de/web-hosting/options/start-sql/).
 
 ## In der praktischen Anwendung
