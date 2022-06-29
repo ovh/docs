@@ -30,7 +30,7 @@ Sie besitzen mindestens eines der folgenden 3 Angebote:
 
 Die von der EOL Policy betroffenen Dienste sind:
 
-- Webhosting Cloud Databases (auch Private SQL Dienste genannt), dedizierte DBMS Instanzen, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
+- Webhosting CloudDB (auch Private SQL Dienste genannt), dedizierte DBMS Instanzen, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 - SharedSQL Web Hosting Dienste, MySQL Datenbanken, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
 ### Definitionen und Leitlinien für EOL-Richtlinien

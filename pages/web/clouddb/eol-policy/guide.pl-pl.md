@@ -30,7 +30,7 @@ Posiadanie co najmniej jednej z 3 poniższych ofert:
 
 Produkty objęte tą polityką wycofania z eksploatacji to:
 
-- Usługi Cloud Databases Web Hosting (znane również jako usługi SQLPrive), dedykowane instancje SGBD dostępne poprzez sieć Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
+- Usługi CloudDB Web Hosting (znane również jako usługi SQLPrive), dedykowane instancje SGBD dostępne poprzez sieć Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
 - Usługi SharedSQL Web Hosting, bazy danych MySQL dostępne za pośrednictwem sieci Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
