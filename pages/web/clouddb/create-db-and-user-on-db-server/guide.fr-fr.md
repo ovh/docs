@@ -42,15 +42,15 @@ Cliquez sur `Valider`{.action}.
 
 ### Créer un utilisateur
 
-Pour utiliser un serveur de bases de données OVHcloud, il est nécessaire de créer des utilisateurs qui auront des droits spécifiques pour se connecter à une base de données. 
+Pour utiliser un serveur de bases de données OVHcloud, il est nécessaire de créer des utilisateurs qui auront des droits spécifiques pour se connecter à une base de données.
 
 Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
-Dirigez-vous dans l'onglet `Utilisateurs et droits`  et cliquez sur `Ajouter un utilisateur`{.action}
+Dirigez-vous dans l'onglet `Utilisateurs et droits` et cliquez sur `Ajouter un utilisateur`{.action}
 
 ![private-sql](images/private-sql-user01.png){.thumbnail}
 
-Renseignez un « nom d'utilisateur  » et un « mot de passe » puis cliquez sur `Valider`{.action}. 
+Renseignez un « nom d'utilisateur  » et un « mot de passe » puis cliquez sur `Valider`{.action}.
 
 ### Gerer les droits des utilisateurs
 
@@ -66,10 +66,10 @@ Vous retrouverez dans la colonne de gauche **« base de données »**, la liste 
 
 Voici la description des 3 types de droits proposés :
 
-- `Administrateur`: autorisation des requêtes de type **Select / Insert / Update / Delete / Create / Alter / Drop**
-- `Lecture / Ecriture`: autorisation des requêtes de type **Select / Insert / Update / Delete**
-- `Lecture`: autorisation des requêtes de type **Select**
-- `Aucun`: aucun droit sur la base
+- `Administrateur`: autorisation des requêtes de type **Select / Insert / Update / Delete / Create / Alter / Drop**.
+- `Lecture / Ecriture`: autorisation des requêtes de type **Select / Insert / Update / Delete**.
+- `Lecture`: autorisation des requêtes de type **Select**.
+- `Aucun`: aucun droit sur la base.
 
 > [!primary]
 > 
@@ -92,7 +92,6 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 Pour supprimer une base de données sur votre serveur de bases de données, dirigez-vous dans l'onglet `Bases de données` puis cliquez sur le bouton `...`{.action} à droite de la base de données concernée et enfin cliquez sur `Supprimer la base`{.action} .
 
 ![private-sql](images/private-sql-deldb01.png){.thumbnail}
-
 
 ## Aller plus loin
 

@@ -16,8 +16,8 @@ Baza danych (z ang.*database* lub w skrócie „DB”) umożliwia przechowywanie
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie [instancji CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
@@ -25,7 +25,7 @@ Baza danych (z ang.*database* lub w skrócie „DB”) umożliwia przechowywanie
 
 Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę prywatnego serwera SQL.
 
-Przejdź do karty `Bazy danych`, a następnie `Dodaj bazę danych`{.action}
+Przejdź do karty `Bazy danych`, a następnie `Dodaj bazę danych`{.action}.
 
 ![private-sql](images/private-sql-createdb01.png){.thumbnail}
 
@@ -66,10 +66,10 @@ W kolumnie po lewej stronie **"baza danych"** znajdziesz listę baz danych znajd
 
 Opis 3 rodzajów proponowanych uprawnień:
 
-- `Administrator` Zezwolenie na zapytania typu: **Select / Insert / Update / Delete / Create / Alter / Drop**
-- `Odczyt/Zapis` Zezwolenie na zapytania typu: **Select / Insert / Update / Delete**
-- `Odczyt` Zezwolenie na zapytania typu: **Select**
-- `Żaden` Brak uprawnień dla bazy
+- `Administrator` : Zezwolenie na zapytania typu **Select / Insert / Update / Delete / Create / Alter / Drop**.
+- `Odczyt/Zapis` : Zezwolenie na zapytania typu **Select / Insert / Update / Delete**.
+- `Odczyt` : Zezwolenie na zapytania typu **Select**.
+- `Żaden` : Brak uprawnień dla bazy.
 
 > [!primary]
 > 

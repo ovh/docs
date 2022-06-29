@@ -66,10 +66,10 @@ Na coluna à esquerda encontrará **Base de dados**, a lista das bases de dados 
 
 Segue-se a descrição dos três tipos de permissões possíveis:
 
-- `Administrador:` autorização de consultas do tipo **Select / Insert / Update / Delete / Create / Alter / Drop**
-- `Leitura / Escrita:` autorização de consultas do tipo **Select / Insert / Update / Delete**
-- `Leitura:` autorização de consultas do tipo **Select**
-- `Nenhuma:` sem permissões nesta base de dados
+- `Administrador` : autorização de consultas do tipo **Select / Insert / Update / Delete / Create / Alter / Drop**.
+- `Leitura / Escrita` : autorização de consultas do tipo **Select / Insert / Update / Delete**.
+- `Leitura` : autorização de consultas do tipo **Select**.
+- `Nenhuma:` : sem permissões nesta base de dados.
 
 > [!primary]
 > 

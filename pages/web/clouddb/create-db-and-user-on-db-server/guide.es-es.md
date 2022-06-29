@@ -16,7 +16,7 @@ Una base de datos (también llamada *database*, DB o BD) permite almacenar eleme
 
 ## Requisitos
 
-- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de hosting Performance)(https://www.ovhcloud.com/es-es/web-hosting/)
+- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un [plan de hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/)
 - Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
 ## Procedimiento
@@ -34,7 +34,7 @@ Introduzca los campos de acuerdo con los criterios indicados. Es posible crear d
 - **Nombre de la BD** (obligatorio): Nombre que tendrá la base de datos.
 - **Nombre de usuario** (solo si está marcada la casilla `Crear un usuario`): usuario que podrá conectarse a la base de datos y realizar consultas.
 - **Permisos** (solo si está marcada la casilla `Crear un usuario`): son los permisos que se asociarán al usuario sobre la base de datos. Para un uso convencional, seleccione `Administrador`{.action}. Más adelante podrá modificar los permisos.
-- **Contraseña**/**Confirmar contraseña**\** (solo si está marcada la casilla `Crear usuario`): seleccione una contraseña y luego confírmela introduciéndola de nuevo.
+- **Contraseña**/**Confirmar contraseña** (solo si está marcada la casilla `Crear usuario`): seleccione una contraseña y luego confírmela introduciéndola de nuevo.
 
 Haga clic en `Aceptar`{.action}.
 
@@ -42,7 +42,7 @@ Haga clic en `Aceptar`{.action}.
 
 ### Crear un usuario
 
-Para utilizar un servidor de bases de datos de OVHcloud, es necesario crear usuarios que tengan permisos específicos para conectarse a una base de datos. 
+Para utilizar un servidor de bases de datos de OVHcloud, es necesario crear usuarios que tengan permisos específicos para conectarse a una base de datos.
 
 Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action}. Seleccione el nombre del servidor de bases de datos.
 
@@ -50,7 +50,7 @@ Acceda a la pestaña `Usuarios y permisos` y haga clic en `Añadir un usuario`{.
 
 ![private-sql](images/private-sql-user01.png){.thumbnail}
 
-Introduzca un nombre de usuario y una contraseña y haga clic en `Aceptar`{.action}. 
+Introduzca un nombre de usuario y una contraseña y haga clic en `Aceptar`{.action}.
 
 ### Gestionar los derechos de los usuarios
 
@@ -66,10 +66,10 @@ En la columna izquierda, **"Bases de datos"**, encontrará una lista de las base
 
 La descripción de los tres tipos de derechos propuestos es la siguiente:
 
-- `Administrador:` autorización de consultas de tipo **Select, Insert, Update, Delete, Create, Alter y Drop.**
-- `Lectura/Escritura:` autorización de consultas de tipo **Select, Insert, Update y Delete.**
-- `Lectura:` autorización de consultas de tipo **Select**
-- `Ninguno:` sin derechos sobre la base de datos
+- `Administrador:` autorización de consultas de tipo **Select, Insert, Update, Delete, Create, Alter y Drop**.
+- `Lectura/Escritura:` autorización de consultas de tipo **Select, Insert, Update y Delete**.
+- `Lecture`: autorización de consultas de tipo **Select**.
+- `Ninguno:` sin derechos sobre la base de datos.
 
 > [!primary]
 > 

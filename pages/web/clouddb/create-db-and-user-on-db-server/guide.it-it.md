@@ -14,7 +14,7 @@ order: 2
 
 ## Obiettivo
 
-Un database («DB») permette di conservare elementi cosiddetti dinamici quali, ad esempio, commenti o articoli. Oggi questi database sono utilizzati per quasi tutti i sistemi di gestione contenuti (Content Management System o CMS) come WordPress o Joomla! e sono accessibili digitando una password. 
+Un database («DB») permette di conservare elementi cosiddetti dinamici quali, ad esempio, commenti o articoli. Oggi questi database sono utilizzati per quasi tutti i sistemi di gestione contenuti (Content Management System o CMS) come WordPress o Joomla! e sono accessibili digitando una password.
 
 **Questa guida ti mostra come creare un database sul tuo database server.**
 
@@ -46,7 +46,7 @@ Clicca su `Conferma`{.action}.
 
 ### Crea un utente
 
-Per utilizzare un database server OVHcloud è necessario creare utenti con diritti specifici per connettersi a un database. 
+Per utilizzare un database server OVHcloud è necessario creare utenti con diritti specifici per connettersi a un database.
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
 
@@ -54,7 +54,7 @@ Clicca sulla scheda `Utenti e diritti` e poi su `Aggiungi un utente`{.action}
 
 ![private-sql](images/private-sql-user01.png){.thumbnail}
 
-Inserisci un "nome utente" e una "password" e clicca su `Conferma`{.action}. 
+Inserisci un "nome utente" e una "password" e clicca su `Conferma`{.action}.
 
 ### Gestire i diritti degli utenti
 
@@ -70,14 +70,14 @@ Nella colonna di sinistra "**database**" è riportata la lista dei database pres
 
 Ecco la descrizione dei 3 tipi di diritti proposti:
 
-- `Amministratore`: autorizzazione delle richieste di tipo **Select/Insert/Update/Delete/Create/Alter/Drop**
-- `Lettura/Scrittura`: autorizzazione delle richieste di tipo **Select/Insert/Update/Delete**
-- `Lettura`: autorizzazione delle richieste di tipo **Select**
-- `Nessuno`: nessun diritto sul database
+- `Amministratore`: autorizzazione delle richieste di tipo **Select/Insert/Update/Delete/Create/Alter/Drop**.
+- `Lettura/Scrittura`: autorizzazione delle richieste di tipo **Select/Insert/Update/Delete**.
+- `Lettura`: autorizzazione delle richieste di tipo **Select**.
+- `Nessuno`: nessun diritto sul database.
 
 > [!primary]
 > 
-> La suddivisione dei diritti sopra indicati è specifica di OVHcloud. In questo modo, un utente con i diritti `Amministratore` potrà utilizzare il **DLL** (Data Definition Language) e il **DML** (Data Manipulation Language), mentre un utente con i diritti `Lettura/Scrittura` Farà solo del DML (Data Manipulation Language)
+> La suddivisione dei diritti sopra indicati è specifica di OVHcloud. In questo modo, un utente con i diritti `Amministratore` potrà utilizzare il **DLL** (Data Definition Language) e il **DML** (Data Manipulation Language), mentre un utente con i diritti `Lettura/Scrittura` Farà solo del DML (Data Manipulation Language).
 
 ![private-sql](images/private-sql-rights02.png){.thumbnail}
 

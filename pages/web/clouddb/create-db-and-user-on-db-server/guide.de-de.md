@@ -16,7 +16,7 @@ In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/){.external} (in einem [Performance Web Hosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt
 
 ## In der praktischen Anwendung
@@ -62,10 +62,10 @@ In der linken Spalte **Datenbank** finden Sie die Liste der Datenbanken Ihres Da
 
 Benutzern können die folgenden Berechtigungen erteilt werden:
 
-- `Administrator`: Freigabe von Anfragen des Typs: **Select / Insert / Update / Delete / Create / Alter / Drop**
-- `Lesen/Schreiben`: Freigabe von Anfragen des Typs: **Select / Insert / Update / Delete**
-- `Lesen`: Freigabe von Anfragen des Typs: **Select**
-- `Keine`: Keine Rechte auf der Datenbank
+- `Administrator`: Freigabe von Anfragen des Typs: **Select / Insert / Update / Delete / Create / Alter / Drop**.
+- `Lesen/Schreiben`: Freigabe von Anfragen des Typs: **Select / Insert / Update / Delete**.
+- `Lesen`: Freigabe von Anfragen des Typs: **Select**.
+- `Keine`: Keine Rechte auf der Datenbank.
 
 > [!primary]
 > 

@@ -46,7 +46,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 ![private-sql](images/private-sql-user01.png){.thumbnail}
 
-Enter a “username” and a “password”, then click `Confirm`{.action}. 
+Enter a “username” and a “password”, then click `Confirm`{.action}.
 
 ### Managing user rights
 
@@ -60,10 +60,10 @@ In the left-hand column, **Database**, you will see a list of the databases on y
 
 The 3 types of permissions proposed are described below:
 
-- `Administrator`: Authorisation of the following queries: **Select/Insert/Update/Delete/Create/Alter/Drop**
-- `Reading/Writing`: Authorisation of the following queries: **Select/Insert/Update/Delete**
-- `Read`: Authorisation of **Select** queries
-- `None`: No database rights
+- `Administrator`: Authorisation of the following queries: **Select/Insert/Update/Delete/Create/Alter/Drop**.
+- `Reading/Writing`: Authorisation of the following queries: **Select/Insert/Update/Delete**.
+- `Read`: Authorisation of **Select** queries.
+- `None`: No database rights.
 
 > [!primary]
 > 
