@@ -6,15 +6,15 @@ section: Getting started
 order: 02
 ---
 
-**Last updated 28th June 2022**
-  
+**Last updated 29th June 2022**
+
 ## Objective
 
 Do you want to use MySQL or MariaDB for your databases?
 
 ### What is a MySQL database?
 
-MySQL is a relational database management system developed for increased read performance, unlike other systems
+MySQL is a relational database management system developed for increased read performance, unlike other systems.
 
 This is an open-source engine, whose parent company is Oracle.
 
@@ -23,14 +23,14 @@ This is an open-source engine, whose parent company is Oracle.
 MariaDB is a derivative (fork) of MySQL.
 
 This engine is 100% compatible, and is "freer" than its sibling MySQL. All the bugs and roadmaps are freely accessible, unlike the Oracle version. In addition, the storage database InnoDB has been replaced by XtraDB and other optimisations, promising performance gains.
-  
+
 **Find out how to create and manage your MySQL or MariaDB databases**
 
 ## Requirements
 
-- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
-- You need to have consulted the [CloudDB startup guide](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
+- A [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- You need to have read the [CloudDB startup guide](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/).
 
 ## Instructions
 
@@ -54,9 +54,9 @@ To log in to your database, make sure that you have:
 - The password associated with the user
 - The database name
 
-All this information is available in the [Web Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+All this information is available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
-There is also a guide here: [Getting started with the CloudDB service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/).
+Please also read our guide on [getting started with the CloudDB service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/).
 
 #### Connect via the command line
 
@@ -74,20 +74,20 @@ mysql --host=server --user=user --port=port --password=password database_name
 
 #### Connect from software (SQuirreL SQL)
 
-- Launch SQuirreL SQL and click on `Aliases`{.action}, then on `+`{.action}
+- Launch SQuirreL SQL and click on `Aliases`{.action}, then on `+`{.action}.
 
 ![launch SQuirreL SQL](images/1.PNG){.thumbnail}
 
 - Fill in the fields below and then confirm by clicking `OK`{.action} :
     - **Name**: Choose a name
-    - **Driver**: Choose "PostgreSQL"
-    - **URL**: Enter the server address and port in the following form jdbc:postgresql://server:port/database
+    - **Driver**: Choose `PostgreSQL`
+    - **URL**: Enter the server address and port in the following form `jdbc:postgresql://server:port/database`
     - **User Name**: Enter the username
     - **Password**: Enter the password
 
 ![config connection](images/2.PNG){.thumbnail}
 
-- Confirm again by clicking the button `Connect`{.action}
+- Confirm again by clicking the button `Connect`{.action}.
 
 ![valid connection](images/3.PNG){.thumbnail}
 
@@ -99,7 +99,7 @@ You will now be connected to your database:
 
 You can use phpMyAdmin to explore the contents of your database. To do this, install phpMyAdmin on your own server or web hosting plan. During this installation, make sure that the information on your CloudDB server and the database you want are correctly configured so that phpMyAdmin can connect to it.
 
-### Export und Import einer MySQL oder MariaDB Datenbank
+### Export and import a MySQL or MariaDB database
 
 - **Export your database via the command line**
 
@@ -115,9 +115,9 @@ cat database_name.sql | mysql --host=server --user=user --port=port --password=p
 
 > [!primary]
 >
-> In some cases, the RAM available in your CloudDB instance may not be sufficient to perform the desired export or import. If this is the case, we recommend using the OVH tool in the OVH Control Panel. See the ["Getting started with CloudDB service"] documentation (https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/){.external} if necessary.
+> In some cases, the RAM available in your CloudDB instance may not be sufficient to perform the desired export or import. If this is the case, we recommend using the OVHcloud tool in the OVHcloud Control Panel. See the [Getting started with CloudDB service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/) documentation if necessary.
 >
 
 ## Go further
-  
+
 Join our community of users on <https://community.ovh.com/en/>.

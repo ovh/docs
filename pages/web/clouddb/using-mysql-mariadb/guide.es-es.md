@@ -6,8 +6,12 @@ section: Primeros pasos
 order: 02
 ---
 
-**Última actualización: 16/04/2020**
-  
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
+**Última actualización: 29/06/2022**
+
 ## Objetivo
 
 ¿Quiere utilizar MySQL o MariaDB para sus bases de datos?
@@ -58,7 +62,7 @@ Para conectarse a ella, es necesario disponer de la siguiente información relat
 - Disponer de la contraseña asociada al usuario.
 - el nombre de la base de datos;
 
-Puede encontrar todos estos datos en el [área de cliente Web](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+Puede encontrar todos estos datos en el [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/).
 
@@ -78,21 +82,20 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña=contraseña nom
 
 #### Conexion a traves de la aplicacion SQuirreL SQL
 
-Ejecute SQuirreL SQL, abra el menú `Aliases`{.action} y haga clic en `+`{.action}.
+- Ejecute SQuirreL SQL, abra el menú `Aliases`{.action} y haga clic en `+`{.action}.
 
 ![ejecutar SQuirreL SQL](images/1.PNG){.thumbnail}
 
-Cumplimente los campos como se indica a continuación y acepte con el botón `OK`{.action}:
-
-- **Name**: Indique un nombre.
-- **Driver**: Seleccione `MySQL Driver`{.action}.
-- **URL**: Indique la dirección del servidor y el puerto en formato jdbc:mysql://servidor:puerto.
-- **User Name**: Indique el nombre de usuario.
-- **Password**: Indique la contraseña.
+- Cumplimente los campos como se indica a continuación y acepte con el botón `OK`{.action}:
+    - **Name**: Indique un nombre.
+    - **Driver**: Seleccione `MySQL Driver`.
+    - **URL**: Indique la dirección del servidor y el puerto en formato `jdbc:mysql://servidor:puerto`.
+    - **User Name**: Indique el nombre de usuario.
+    - **Password**: Indique la contraseña.
 
 ![configuración de la conexión](images/2.PNG){.thumbnail}
 
-Confirme con el botón `Connect`{.action}.
+- Confirme con el botón `Connect`{.action}.
 
 ![confirmación de la conexión](images/3.PNG){.thumbnail}
 
@@ -120,9 +123,9 @@ cat nombre_de_la_BD.sql | mysql --host=servidor --user=usuario --port=puerto --c
 
 > [!primary]
 >
-> En algunos casos, la RAM disponible en la instancia Cloud Databases puede no permitir la exportación o importación deseadas. En ese caso, le recomendamos que utilice la herramienta OVH en el área de cliente. Si lo necesita, consulte la guía ["Primeros pasos con el servicio Cloud Databases"](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/) {.external}.
+> En algunos casos, la RAM disponible en la instancia Cloud Databases puede no permitir la exportación o importación deseadas. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. Si lo necesita, consulte la guía ["Primeros pasos con el servicio Cloud Databases"](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/).
 >
 
 ## Más información
-  
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

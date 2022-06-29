@@ -6,7 +6,11 @@ section: Per iniziare
 order: 02
 ---
 
-**Ultimo aggiornamento: 28/06/2022**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 29/06/2022**
 
 ## Obiettivo
 
@@ -30,7 +34,7 @@ Questo motore è compatibile al 100% ed è stato progettato per essere più "lib
 
 - Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Consulta la guida all'avvio di CloudDB (https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
+- Consulta la guida [all'avvio di CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
 
 ## Procedura
 
@@ -40,8 +44,6 @@ Questo motore è compatibile al 100% ed è stato progettato per essere più "lib
 >
 > Ricordiamo che questa offerta non dà accesso all’host ma ai database ospitati su di esso. È possibile utilizzare tutti i comandi SQL generici e i software come HeidiSQL o SQuirreL SQL sono totalmente compatibili.
 > 
-
-
 
 > [!primary]
 >
@@ -56,7 +58,7 @@ Per accedere al tuo database, sono necessarie queste informazioni:
 - Disporre della password associata all'utente
 - Disporre del nome del tuo database
 
-Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 Se necessario, consulta la guida: [Inziare a utilizzare CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
 
@@ -76,20 +78,20 @@ mysql --host=server --user=utente --port=porta --password=password nome_database
 
 #### Connessione da software (SQuirreL SQL)
 
-- Avvia SQuirreL SQL, clicca su `Aliases`{.action} e poi su `+`{.action}
+- Avvia SQuirreL SQL, clicca su `Aliases`{.action} e poi su `+`{.action}.
 
 ![launch SQuirreL SQL](images/1.PNG){.thumbnail}
 
 - Completa i campi qui sotto e clicca su `OK`{.action} per confermare:
     - **Name**: scegli un nome
-    - **Driver**: scegli "MySQL Driver"
-    - **URL**: inserisci l’indirizzo del server e la porta in formato jdbc:mysql://server:porta
+    - **Driver**: scegli `MySQL Driver`
+    - **URL**: inserisci l’indirizzo del server e la porta in formato `jdbc:mysql://server:porta`
     - **User Name**: inserisci il nome utente
     - **Password**: inserisci la password
 
 ![config connection](images/2.PNG){.thumbnail}
 
-- Clicca su `Connect`{.action} per confermare
+- Clicca su `Connect`{.action} per confermare.
 
 ![valid connection](images/3.PNG){.thumbnail}
 
@@ -117,9 +119,9 @@ cat nome_database.sql | mysql --host=server --user=utente --port=porta --passwor
 
 > [!primary]
 >
-> In alcuni casi, è possibile che la RAM disponibile nella tua istanza CloudDB non permetta di realizzare l'esportazione o l'importazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVH nello Spazio Cliente. Se necessario, consulta la documentazione ["Iniziare a utilizzare il servizio CloudDB"](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/){.external}.
+> In alcuni casi, è possibile che la RAM disponibile nella tua istanza CloudDB non permetta di realizzare l'esportazione o l'importazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVH nello Spazio Cliente. Se necessario, consulta la documentazione ["Iniziare a utilizzare il servizio CloudDB"](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
 >
 
 ## Per saperne di più
-  
+
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

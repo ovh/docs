@@ -6,10 +6,14 @@ section: 'Pierwsze kroki'
 order: 02
 ---
 
-**Ostatnia aktualizacja z dnia 28/06/2022**
-  
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 29/06/2022**
+
 ## Wprowadzenie
-  
+
 Chcesz korzystać z MySQL lub MariaDB dla swoich baz danych?
 
 ### Czym jest baza danych MySQL?
@@ -54,7 +58,7 @@ Aby zalogować się do bazy danych, musisz dysponować:
 - Hasło przypisane do użytkownika
 - Posiadanie bazy danych
 
-Wszystkie te informacje są dostępne w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Wszystkie te informacje są dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 Zapoznaj się również z tym przewodnikiem: [Pierwsze kroki z usługą Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
 
@@ -74,14 +78,14 @@ mysql --host=serwer --user=użytkownik --port=port --password=password nazwa_baz
 
 #### Logowanie z poziomu oprogramowania (SQuirreL SQL)
 
-- Uruchom program SQuirreL SQL i kliknij na `Aliases`{.action}, i na `+`{.action}
+- Uruchom program SQuirreL SQL i kliknij na `Aliases`{.action}, i na `+`{.action}.
 
 ![launch SQuirreL SQL](images/1.PNG){.thumbnail}
 
 - Wypełnij poniższe pola i zatwierdź za pomocą przycisku `OK`{.action}:
     - **Name**: Wybierz nazwę
-    - **Driver**: Wybierz "MySQL Driver"
-    - **URL**: Wskaż adres serwera i port w formie jdbc:mysql://server:port
+    - **Driver**: Wybierz `MySQL Driver`
+    - **URL**: Wskaż adres serwera i port w formie `jdbc:mysql://server:port`
     - **User Name**: Wskaż nazwę użytkownika
     - **Password**: Wskaż hasło
 
@@ -115,9 +119,9 @@ cat nazwa_bazy.sql | mysql --host=serwer --user=użytkownik --port=port --passwo
 
 > [!primary]
 >
-> W niektórych przypadkach pamięć RAM dostępna w Twojej instancji CloudDB może nie powodować odpowiedniego eksportu lub importu. W takim przypadku zalecamy użycie narzędzia OVH w Panelu klienta. W razie potrzeby skorzystaj z dokumentacji ["Pierwsze kroki z usługą CloudDB"](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/){.external}.
+> W niektórych przypadkach pamięć RAM dostępna w Twojej instancji CloudDB może nie powodować odpowiedniego eksportu lub importu. W takim przypadku zalecamy użycie narzędzia OVHcloud w Panelu klienta. W razie potrzeby skorzystaj z dokumentacji ["Pierwsze kroki z usługą CloudDB"](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
 >
 
 ## Sprawdź również
- 
+
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
