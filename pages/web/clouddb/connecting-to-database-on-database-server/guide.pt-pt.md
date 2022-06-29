@@ -63,7 +63,7 @@ Se a conexão for bem-sucedida, acederá à página seguinte do phpMyAdmin.
 
 > [!warning]
 >
-> **Em caso de erro #1045**
+> **Em caso de erro**
 > <br> - Erro #1045, isso significa que a identificação não está correta. Verifique o nome de utilizador e/ou a palavra-passe.
 > <br> - Erro #2005, verifique o nome do servidor e se ele está funcional.
 
