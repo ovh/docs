@@ -4,7 +4,7 @@ slug: managed-db-life-cycle-policy
 section: 'Ressources techniques'
 ---
 
-**Dernière mise à jour le 22/06/2022**
+**Dernière mise à jour le 29/06/2022**
 
 ## Objectif
 
@@ -13,6 +13,8 @@ Les bases de données managées OVHcloud proposent plusieurs Systèmes de Gestio
 **Découvrez ici la politique de fin de vie des bases de données managées par OVHcloud.**
 
 ## Prérequis
+
+Posséder au moins l'une des 3 offres suivantes:
 
 - Utiliser une des bases de données incluses avec un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
 - Une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).

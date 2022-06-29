@@ -4,7 +4,7 @@ slug: managed-db-life-cycle-policy
 section: 'Technical resources'
 ---
 
-**Last updated 22nd January 2022**
+**Last updated 29th June 2022**
 
 ## Objective
 
@@ -13,6 +13,8 @@ OVHcloud managed databases offer several Database Management Systems (DBMS), suc
 **Discover the end-of-life policy for databases managed by OVHcloud.**
 
 ## Requirements
+
+At least one of the following 3 solutions:
 
 - Use one of the included databases with a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/).
 - A [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance Web Hosting](https://www.ovhcloud.com/en-ie/web-hosting/) offer)

@@ -8,7 +8,7 @@ section: 'Zasoby techniczne'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 22/06/2022**
+**Ostatnia aktualizacja z dnia 29/06/2022**
 
 ## Wprowadzenie
 
@@ -18,7 +18,7 @@ Zarządzane bazy danych OVHcloud oferują kilka systemów zarządzania bazami da
 
 ## Wymagania początkowe
 
-Posiadanie jednej lub kilku z następujących ofert:
+Posiadanie co najmniej jednej z 3 poniższych ofert:
 
 - Korzystanie z jednej z baz danych zawartych w ofercie [Hosting WWW](https://www.ovhcloud.com/pl/web-hosting/).
 - Jedna [instancja CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawarta w usłudze[hosting www Performance](https://www.ovhcloud.com/pl/web-hosting/).

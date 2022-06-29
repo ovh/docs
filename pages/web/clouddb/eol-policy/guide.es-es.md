@@ -8,7 +8,7 @@ section: 'Recursos técnicos'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 22/06/2022**
+**Última actualización: 29/06/2022**
 
 ## Objetivo
 
@@ -17,6 +17,8 @@ Las bases de datos administradas de OVHcloud ofrecen varios sistemas de gestión
 **Descubra aquí la política de fin de vida de las bases de datos administradas por OVHcloud.**
 
 ## Requisitos
+
+Tener al menos una de las 3 ofertas siguientes:
 
 - Utilizar una de las bases de datos incluidas con un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/).
 - Una [instancia Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) {.external} (incluida en un plan de hosting Performance)(https://www.ovhcloud.com/es-es/web-hosting/).

@@ -8,7 +8,7 @@ section: 'Recursos técnicos'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22/06/2022**
+**Última atualização: 29/06/2022**
 
 ## Objetivo
 
@@ -18,7 +18,7 @@ As bases de dados geridas pela OVHcloud propõem vários sistemas de gestão de 
 
 ## Requisitos
 
-Dispor de uma ou mais das seguintes propostas:
+Dispor de, pelo menos, uma das 3 ofertas seguintes:
 
 - Utilizar uma das bases de dados incluídas com um [Alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
 - Uma [instance CloudDB](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/).
