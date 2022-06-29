@@ -6,7 +6,7 @@ section: Plan de Reprise d'Activité
 order: 02
 ---
 
-**Dernière mise à jour le 27/06/2022**
+**Dernière mise à jour le 29/06/2022**
 
 ## Objectif
 
@@ -977,6 +977,6 @@ Le paramétrage du VPN est terminé sur les deux clusters. Il est maintenant pos
 
 [Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
 
-[Réplication asynchrone ou synchrone au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
+[Réplication asynchrone ou **nearsync** au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
