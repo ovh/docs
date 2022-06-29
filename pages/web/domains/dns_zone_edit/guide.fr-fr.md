@@ -69,13 +69,18 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 **A** (**A**ddress) : Relie un nom de domaine à une adresse IPv4. Par exemple, l'adresse IPv4 ("X.X.X.X" où les "X" sont des chiffres compris entre "0" et "255") du serveur où est hébergé votre site internet.
 
-**AAAA** : Relie un nom de domaine à une adresse IPv6. Par exemple, l'adresse IPv6 du serveur où est hébergé votre site internet.
+**AAAA** (**A**ddress : Quatre lettre **A** car cet enregistrement est encodé sur quatre fois plus de bits que le champ de pointage **A** historique) : Relie un nom de domaine à une adresse IPv6. Par exemple, l'adresse IPv6 du serveur où est hébergé votre site internet.
 
 > [!warning]
 > 
 > Si votre serveur dispose déjà d'une IPv4, il vous sera recommandé de privilégier l'utilisation de celle-ci à votre IPv6.
 > 
 > En effet, les IPv6 ne sont pas encore correctement interprétées sur l'ensemble du réseau internet : ce qui peut engendrer des perturbations d'affichage ou d'accès.
+> 
+
+> [!primary]
+> 
+> Les IPv6 sont progressivement mises en place pour pallier au manque d'IPv4 qui arrive avec l'expansion grandissante du numérique. L'encodage sur 128 bits des IPv6 permets ainsi un plus grand nombre d'adresses IP disponibles.
 > 
 
 
