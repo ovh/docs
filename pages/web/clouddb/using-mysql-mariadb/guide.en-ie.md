@@ -28,9 +28,9 @@ This engine is 100% compatible, and is "freer" than its sibling MySQL. All the b
 
 ## Requirements
 
-- A [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
-- You need to have read the [CloudDB startup guide](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/).
+- A [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- You need to have read the [CloudDB startup guide](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/).
 
 ## Instructions
 
@@ -54,9 +54,9 @@ To log in to your database, make sure that you have:
 - The password associated with the user
 - The database name
 
-All this information is available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+All this information is available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
-Please also read our guide on [getting started with the CloudDB service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/).
+Please also read our guide on [Getting started with the CloudDB service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/).
 
 #### Connect via the command line
 
@@ -115,7 +115,7 @@ cat database_name.sql | mysql --host=server --user=user --port=port --password=p
 
 > [!primary]
 >
-> In some cases, the RAM available in your CloudDB instance may not be sufficient to perform the desired export or import. If this is the case, we recommend using the OVHcloud tool in the OVHcloud Control Panel. See the [Getting started with CloudDB service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/) documentation if necessary.
+> In some cases, the RAM available in your CloudDB instance may not be sufficient to perform the desired export or import. If this is the case, we recommend using the OVHcloud tool in the OVHcloud Control Panel. See the [Getting started with CloudDB service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/) documentation if necessary.
 >
 
 ## Go further
