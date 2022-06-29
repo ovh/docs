@@ -607,7 +607,7 @@ In our example, the new Client informations are:
 ![Keycloak client](images/keycloak-client.png)
 
 <ol start="6">
-  <li>Then click on the <code class="action">Credentials</code> tab. Find the `Valid Redirect URIs` field and set the following value: `*`</li>
+<li>Then click on the <code class="action">Credentials</code> tab. Find the <code>Valid Redirect URIs</code> field and set the following value: <code>*</code></li>
 </ol>
 
 7. Find the `Admin URL` and the `Web Origins` fields and set their values to your defined domain name if it is not already done.  
