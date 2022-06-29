@@ -104,12 +104,14 @@ Par exemple : Si je crée un enregistrement DNAME de *mydomain.ovh* vers *ovh.co
 En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* et *xxx.mydomain.ovh* doivent respectivement afficher les résultats de *dname.ovh.com* et *xxx.ovh.com*.
 
 > [!warning]
-> En revanche, *mydomain.ovh* en tant que domaine n’affichera pas *ovh.com* car l’enregistrement DNAME n’est valable que pour les sous-domaines des domaines définis dans l’enregistrement DNAME.
+> 
+> En revanche, *mydomain.ovh* en tant que domaine n’affichera pas la cible du domaine *ovh.com* car l’enregistrement DNAME n’est valable que pour les sous-domaines des domaines définis dans l’enregistrement DNAME.
 >
 > De plus et en reprenant nos exemples, si l’un des sous-domaines cible *xxx.ovh.com* ne pointe nulle part, alors l’enregistrement DNAME n’affichera rien non plus pour *xxx.mydomain.ovh*.
 > 
 
 > [!primary]
+> 
 > L’enregistrement DNAME est généralement utilisé dans le cadre d’un changement de nom de société ou lorsqu’un utilisateur dispose de plusieurs extensions de domaines (.fr, .net, .com, .info, …) qu’il souhaite rediriger entre eux facilement.
 >
 
