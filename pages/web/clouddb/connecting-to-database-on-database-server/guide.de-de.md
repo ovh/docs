@@ -27,7 +27,7 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein geeignete
 
 > [!primary]
 >
-> Beachten Sie, dass die Dienste [CloudDB](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Datenbankverwaltungssystem gewähren, sondern auf die darauf gehosteten Datenbanken. 
+> Beachten Sie, dass die [CloudDB Dienste](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Datenbankserver gewähren, sondern auf die darauf gehosteten Datenbanken. 
 > <br> - Es gibt keinen "root"-Zugang. 
 > <br> - Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
@@ -62,9 +62,9 @@ Wenn die Verbindung erfolgreich ist, erscheint die phpMyAdmin-Startseite.
 
 > [!warning]
 >
-> **Bei einem Fehler :**
-> <br> - Fehler #1045, dass die Identifikation fehlgeschlagen ist. Überprüfen Sie daher Ihren Benutzernamen und Ihr Passwort.
-> <br> - Fehler #2005, den Namen des Servers zu überprüfen und sicherzustellen, ob dieser korrekt funktioniert.
+> **Im Fall eines Fehlers:**
+> <br> - Fehler #1045 bedeutet, dass die Identifikation fehlgeschlagen ist. Überprüfen Sie daher Ihren Benutzernamen und Ihr Passwort.
+> <br> - Fehler #2005 bedeutet, dass Sie den Namen des Servers überprüfen sollten. Stellen Sie sicher, dass er korrekt ist.
 
 #### Verbindung zur Datenbank außerhalb des Kundencenters
 
