@@ -97,7 +97,7 @@ Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exem
 > Si vous souhaitez aller plus loin techniquement sur ce sujet, vous pourrez retrouver un cas particulier d’usage concernant les CNAME et les zones DNS créées pour des sous-domaines en cliquant [ici](#bonusTech).
 >
 
-**Champ DNAME** (**D**elegation **NAME**) : Permet de générer un "alias" pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une infinité d’enregistrements CNAME qui ne redirigent qu'un seul sous-domaine vers une seule cible.
+**Champ DNAME** (**D**elegation **NAME**) : Permet de générer un "alias" pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une infinité d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible.
 
 Par exemple : Si je crée un enregistrement DNAME de *mydomain.ovh* vers *ovh.com*, tous les sous-domaines de *mydomain.ovh* (exemples : *dname.mydomain.ovh* et *xxx.mydomain.ovh*) seront redirigés respectivement vers les sous-domaines de *ovh.com* (dans nos exemples : *dname.ovh.com* et *xxx.ovh.com*).
 
