@@ -8,7 +8,7 @@ section: 'Recursos técnicos'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 07/01/2022**
+**Última actualización: 29/06/2022**
 
 ## Objetivo
 
@@ -18,12 +18,11 @@ Las bases de datos administradas de OVHcloud ofrecen varios sistemas de gestión
 
 ## Requisitos
 
-Tener uno o más de los siguientes planes:
+Tener al menos una de las 3 ofertas siguientes:
 
-- Alojamiento [web](https://www.ovhcloud.com/es-es/web-hosting/) con bases de datos.
+- Una de las bases de datos incluidas con un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/).
+- Una [instancia Cloud DB](https://www.ovh.es/cloud/cloud-databases/) {.external} (incluida en un [plan de hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/)).
 - Un pack de bases de datos [Start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/).
-- Un servidor [SQL privado](https://www.ovhcloud.com/es-es/web-hosting/options/).
-- Un servidor [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
 
 ## Procedimiento
 
@@ -31,10 +30,7 @@ Tener uno o más de los siguientes planes:
 
 Los productos cubiertos por esta política de fin de vida son:
 
-- Servicios de bases de datos públicas, instancias SGBD dedicadas que se pueden acceder a través de la red pública ([ver los anuncios](https://docs.ovh.com/gb/en/clouddb/clouddb-eos-eol/)).
-
-- Servicios Cloud Databases Web Hosting (también conocidos como servicios SQLP Privado), instancias SGBD dedicadas que se pueden acceder a través de la red Web Hosting ([ver los anuncios](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
-
+- Servicios CloudDB Web Hosting (también conocidos como servicios SQLP Privado), instancias SGBD dedicadas que se pueden acceder a través de la red Web Hosting ([ver los anuncios](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 - Servicios SharedSQL Web Hosting, bases de datos MySQL accesibles a través de la red Web Hosting ([ver los anuncios](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
 ### Definiciones y directrices de la política de fin de vida
