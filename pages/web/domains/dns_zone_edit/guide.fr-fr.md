@@ -67,7 +67,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 #### Enregistrements de pointage
 
-**A** : Relie un nom de domaine à une adresse IPv4. Par exemple, l'adresse IPv4 (X.X.X.X où X est un chiffre compris entre 0 et 255) du serveur où est hébergé votre site internet.
+**A** (**A**ddress) : Relie un nom de domaine à une adresse IPv4. Par exemple, l'adresse IPv4 (X.X.X.X où X est un chiffre compris entre 0 et 255) du serveur où est hébergé votre site internet.
 
 **AAAA** : Relie un nom de domaine à une adresse IPv6. Par exemple, l'adresse IPv6 du serveur où est hébergé votre site internet.
 
@@ -79,7 +79,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 > 
 
 
-**CNAME** (**C**anonical **NAME**): Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.mydomain.ovh* est un alias de *mydomain.ovh*, cela indique que *www.mydomain.ovh* utilisera l'adresse IP de *mydomain.ovh*.
+**CNAME** (**C**anonical **NAME**) : Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.mydomain.ovh* est un alias de *mydomain.ovh*, cela indique que *www.mydomain.ovh* utilisera l'adresse IP de *mydomain.ovh*.
 
 > [!alert]
 >
@@ -97,11 +97,23 @@ Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exem
 > Si vous souhaitez aller plus loin techniquement sur ce sujet, vous pourrez retrouver un cas particulier d’usage concernant les CNAME et les zones DNS créées pour des sous-domaines en cliquant [ici](#bonusTech).
 >
 
-**Champ DNAME** (**D**elegation **NAME**): Permet de générer un "alias" de domaine ou de sous-domaine. Ce champ permet ainsi de rediriger une multitude de sous-domaines vers une même cible (contrairement au champ CNAME qui ne redirigige qu'un seul sous-domaine vers une seule cible).
+**Champ DNAME** (**D**elegation **NAME**) : Permet de générer un "alias" pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une infinité d’enregistrements CNAME qui ne redirigent qu'un seul sous-domaine vers une seule cible.
 
-Par exemple : Si je crée un champ DNAME de *mydomain.ovh* vers *ovh.com*, tous les sous-domaines de *mydomain.ovh* (exemple *dname.mydomain.ovh*) seront redirigés vers *ovh.com*.
+Par exemple : Si je crée un enregistrement DNAME de *mydomain.ovh* vers *ovh.com*, tous les sous-domaines de *mydomain.ovh* (exemples : *dname.mydomain.ovh* et *xxx.mydomain.ovh*) seront redirigés respectivement vers les sous-domaines de *ovh.com* (dans nos exemples : *dname.ovh.com* et *xxx.ovh.com*).
 
-**Champ NS** : Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](../generalites-serveurs-dns/) » pour plus d'informations.
+En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* et *xxx.mydomain.ovh* doivent respectivement afficher les résultats de *dname.ovh.com* et *xxx.ovh.com*.
+
+> [!warning]
+> En revanche, *mydomain.ovh* en tant que domaine n’affichera pas *ovh.com* car l’enregistrement DNAME n’est valable que pour les sous-domaines des domaines définis dans l’enregistrement DNAME.
+>
+> De plus et en reprenant nos exemples, si l’un des sous-domaines cible *xxx.ovh.com* ne pointe nulle part, alors l’enregistrement DNAME n’affichera rien non plus pour *xxx.mydomain.ovh*.
+> 
+
+> [!primary]
+> L’enregistrement DNAME est généralement utilisé dans le cadre d’un changement de nom de société ou lorsqu’un utilisateur dispose de plusieurs extensions de domaines (.fr, .net, .com, .info, …) qu’il souhaite rediriger entre eux facilement.
+>
+
+**Champ NS** (**N**ame **S**erver) : Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](../generalites-serveurs-dns/) » pour plus d'informations.
 
 > [!warning]
 >
@@ -110,34 +122,34 @@ Par exemple : Si je crée un champ DNAME de *mydomain.ovh* vers *ovh.com*, tous 
 
 #### Enregistrements e-mail
 
-**MX** : Relie un nom de domaine à un serveur e-mail. Par exemple, l'adresse *10 mx1.mail.ovh.net* correspond à l'un des serveurs e-mail OVHcloud lorsque vous possédez une offre e-mail OVHcloud. Il est probable que votre fournisseur e-mail dispose de plusieurs serveurs e-mail : plusieurs champs MX doivent donc être créés. Consultez notre documentation « [Ajouter un champ MX à la configuration de son nom de domaine](../mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) ».
+**MX** (**M**ail e**X**changer) : Relie un nom de domaine à un serveur e-mail. Par exemple, l'adresse *10 mx1.mail.ovh.net* correspond à l'un des serveurs e-mail OVHcloud lorsque vous possédez une offre e-mail OVHcloud. Il est probable que votre fournisseur e-mail dispose de plusieurs serveurs e-mail : plusieurs champs MX doivent donc être créés. Consultez notre documentation « [Ajouter un champ MX à la configuration de son nom de domaine](../mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) ».
 
-**SPF** : Permet d'éviter les potentielles usurpations d’identité sur les adresses e-mail utilisant votre nom de domaine (spoofing). Par exemple, l'enregistrement *v=spf1 include:mx.ovh.com ~all* indique que seuls les serveurs d'envoi liés à votre offre mail OVHCloud peuvent être considérés par le serveur de réception comme légitimes. Il est possible de renseigner cet enregistrement sous la forme d'un champ TXT ou via notre système de configuration automatique. Consultez notre documentation « [Ajouter un champ SPF à la configuration de son nom de domaine](../le-champ-spf/) » pour en savoir plus.
+**SPF** (**S**ender **P**olicy **F**ramework) : Permet d'éviter les potentielles usurpations d’identité sur les adresses e-mail utilisant votre nom de domaine (spoofing). Par exemple, l'enregistrement *v=spf1 include:mx.ovh.com ~all* indique que seuls les serveurs d'envoi liés à votre offre mail OVHCloud peuvent être considérés par le serveur de réception comme légitimes. Il est possible de renseigner cet enregistrement sous la forme d'un champ TXT ou via notre système de configuration automatique. Consultez notre documentation « [Ajouter un champ SPF à la configuration de son nom de domaine](../le-champ-spf/) » pour en savoir plus.
 
-**DKIM** : Permet de vérifier l'authenticité du nom de domaine de l'expéditeur et assurer l'intégrité de l'e-mail envoyé. L'enregistrement DKIM se présente sous la forme d'une clé composée de plusieurs caractères. La clé DKIM est fournie par votre prestataire e-mail, il est possible de la renseigner sous la forme d'un champ TXT.
+**DKIM** (**D**omain**K**eys **I**dentified **M**ail) : Permet de vérifier l'authenticité du nom de domaine de l'expéditeur et assurer l'intégrité de l'e-mail envoyé. L'enregistrement DKIM se présente sous la forme d'une clé composée de plusieurs caractères. La clé DKIM est fournie par votre prestataire e-mail, il est possible de la renseigner sous la forme d'un champ TXT.
 
-**DMARC** : Contribue à l'authentification des e-mails en association avec les méthodes SPF et/ou DKIM. Cette valeur vous sera donnée par votre fournisseur e-mail, elle sera au minimum associée à un enregistrement SPF ou DKIM.
+**DMARC** (**D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance) : Contribue à l'authentification des e-mails en association avec les méthodes SPF et/ou DKIM. Cette valeur vous sera donnée par votre fournisseur e-mail, elle sera au minimum associée à un enregistrement SPF ou DKIM.
 
 #### Enregistrements étendus
 
-**TXT** : Permet d'ajouter la valeur de votre choix, au format textuel, dans la zone DNS de votre nom de domaine. Cet enregistrement est souvent utilisé lors de processus de vérification.
+**TXT** (**T**e**XT**) : Permet d'ajouter la valeur de votre choix, au format textuel, dans la zone DNS de votre nom de domaine. Cet enregistrement est souvent utilisé lors de processus de vérification.
 
 > [!warning]
 > 
 > L'enregistrement TXT est limité à 255 caractères. Il est néanmoins possible, dans certains cas, de scinder votre valeur en plusieurs enregistrements. Renseignez-vous auprès de votre prestataire lorsque celui-ci vous demande de renseigner une valeur dépassant le quota des 255 caractères.
 > 
 
-**SRV** : Permet d'indiquer l'adresse d'un serveur gérant un service. Par exemple, il peut indiquer l'adresse d'un serveur SIP ou celle d'un serveur permettant la configuration automatique d'un logiciel de messagerie.
+**SRV** (**S**e**RV**ice resource) : Permet d'indiquer l'adresse d'un serveur gérant un service. Par exemple, il peut indiquer l'adresse d'un serveur SIP ou celle d'un serveur permettant la configuration automatique d'un logiciel de messagerie.
 
-**CAA** (**C**ertification **A**uthority **A**uthorization): Permet de lister les autorités de certification autorisées à délivrer des certificats SSL pour un nom de domaine.
+**CAA** (**C**ertification **A**uthority **A**uthorization) : Permet de lister les autorités de certification autorisées à délivrer des certificats SSL pour un nom de domaine.
 
-**NAPTR** (**N**ame **A**uthority **P**oin**T**e**R**): Utilisé en télécommunication pour diriger une requête émise par un terminal mobile vers un serveur. Un enregistrement SRV peut y être associé pour générer de façon dynamique des URIs (Uniform Resource Identifier) cibles.
+**NAPTR** (**N**ame **A**uthority **P**oin**T**e**R**) : Utilisé en télécommunication pour diriger une requête émise par un terminal mobile vers un serveur. Un enregistrement SRV peut y être associé pour générer de façon dynamique des URIs (Uniform Resource Identifier) cibles.
 
-**LOC** : Utilisé pour renseigner les informations de position géographique (latitude et longitude).
+**LOC** (**LOC**ation) : Utilisé pour renseigner les informations de position géographique (notamment avec la latitude, la longitude et l'altitude).
 
-**SSHFP** : Utilisé pour renseigner l'empreinte d'une clé publique SSH.
+**SSHFP** (**S**ecure **SH**ell **F**inger**P**rint) : Utilisé pour renseigner l'empreinte d'une clé publique SSH.
 
-**TLSA** : Utilisé pour renseigner l'empreinte d'un certificat SSL/TLS.
+**TLSA** (**TLS A**uthentification) : Utilisé pour renseigner l'empreinte d'un certificat SSL/TLS.
 
 ### Éditer la zone DNS OVHcloud de votre nom de domaine
 
