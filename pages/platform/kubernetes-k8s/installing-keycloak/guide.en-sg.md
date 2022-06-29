@@ -5,7 +5,7 @@ excerpt: Secure Your OVHcloud Managed Kubernetes Cluster with Keycloak, an OpenI
 section: Tutorials
 ---
 
-**Last updated 13th December, 2021.**
+**Last updated 28th June, 2022.**
 
 <style>
  pre {
@@ -31,7 +31,7 @@ section: Tutorials
 
 ## Objective
 
-The main objective of this tutorial is to Secure Your OVHcloud Managed Kubernetes Cluster with OpenID Connect (OIDC) and RBAC.
+The main objective of this tutorial is to secure your OVHcloud Managed Kubernetes Cluster with OpenID Connect (OIDC) and RBAC.
 
 First of all, what is OIDC?
 
@@ -59,13 +59,16 @@ That's because in this tutorial we want to:
 - configure the `OpenIdConnect` flags available for the `kube-apiserver` component of a Managed Kubernetes Service through the OVHcloud Control Panel
 - be able to use the `kubectl` command line with the Keycloak OpenIdConnect provider configured
 
-In this tutorial we are going to install Keycloak on a freshly created OVHcloud Managed Kubernetes Service cluster then we will configure Keycloak instance in our Kubernetes cluster as an OIDC provider.
+In this tutorial we are going to:
+
+- install Keycloak on a freshly created OVHcloud Managed Kubernetes Service cluster
+- configure a Keycloak instance in our Kubernetes cluster as an OIDC provider
 
 You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please consult the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
 This tutorial has been written to be fully compliant with the release `v1.22` of Kubernetes.  
 You may need to adapt it to be able to deploy a functional Keycloak instance in Kubernetes release prior to the `v1.22`. 
@@ -88,13 +91,55 @@ helm repo update
 Then install the `cert-manager` operator from its Helm chart:
 
 ```bash
-helm install ovh-cert-lab jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.6.1 -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/installing-keycloak/files/01-cert-manager/01-cert-manager-definition.yaml
+helm install \
+  ovh-cert-lab jetstack/cert-manager \
+  --namespace cert-manager \
+  --create-namespace \
+  --version v1.6.1 \
+  --set replicas=1 \
+  --set rbac.create=true \
+  --set prometheus.enabled=false \
+  --set installCRDs=true
 ```
 
-You should have new `Deployments`, `Services`, `ReplicaSets` and `Pods` running in your cluster:
+This command will install the cert-manager with the values we defined, create a new cert-manager namespace, and install the new CRD (CustomResourceDefinitions):
 
-```
-$ kubectl get all -n cert-manager
+<pre class="console"><code>$ helm install \
+  ovh-cert-lab jetstack/cert-manager \
+  --namespace cert-manager \
+  --create-namespace \
+  --version v1.6.1 \
+  --set replicas=1 \
+  --set rbac.create=true \
+  --set prometheus.enabled=false \
+  --set installCRDs=true
+NAME: ovh-cert-lab
+LAST DEPLOYED: Tue Jun 28 09:22:39 2022
+NAMESPACE: cert-manager
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+cert-manager v1.6.1 has been deployed successfully!
+
+In order to begin issuing certificates, you will need to set up a ClusterIssuer
+or Issuer resource (for example, by creating a 'letsencrypt-staging' issuer).
+
+More information on the different types of issuers and how to configure them
+can be found in our documentation:
+
+https://cert-manager.io/docs/configuration/
+
+For information on how to configure cert-manager to automatically provision
+Certificates for Ingress resources, take a look at the `ingress-shim`
+documentation:
+
+https://cert-manager.io/docs/usage/ingress/
+</code></pre>
+
+Check cert-manager have been deployed correctly with `kubectl get all -n cert-manager` command:
+
+<pre class="console"><code>$ kubectl get all -n cert-manager
 NAME                                                        READY   STATUS    RESTARTS   AGE
 pod/ovh-cert-lab-cert-manager-5df67445d5-h89zb              1/1     Running   0          25s
 pod/ovh-cert-lab-cert-manager-cainjector-5b7bfc69b7-w78hp   1/1     Running   0          25s
@@ -109,9 +154,11 @@ NAME                                                              DESIRED   CURR
 replicaset.apps/ovh-cert-lab-cert-manager-5df67445d5              1         1         1       25s
 replicaset.apps/ovh-cert-lab-cert-manager-cainjector-5b7bfc69b7   1         1         1       25s
 replicaset.apps/ovh-cert-lab-cert-manager-webhook-58585dd956      1         1         1       25s
-```
+</code></pre>
 
-Then, we will create an `ACME ClusterIssuer` used by the `cert-manager` operator to requesting certificates from ACME servers, including from Let’s Encrypt.
+You should have new `Deployments`, `Services`, `ReplicaSets` and `Pods` running in your cluster.
+
+Then, we will create an `ACME ClusterIssuer` used by the `cert-manager` operator to request certificates from ACME servers, including from Let’s Encrypt.
 
 During this lab, we will use the Let's Encrypt `production` environment to generate all our testing certificates.  
 
@@ -119,13 +166,45 @@ During this lab, we will use the Let's Encrypt `production` environment to gener
 > **Warning!**
 > Using the Let's Encrypt Staging environment is not recommended and not compliant with this tutorial.
 
+Create a `ClusterIssuer` in a file named `issuer.yaml` with the following content:
+
+```
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-production
+spec:
+  acme:
+    # You must replace this email address with your own.
+    # Let's Encrypt will use this to contact you about expiring
+    # certificates, and issues related to your account.
+    email: [YOUR_EMAIL]
+    server: https://acme-v02.api.letsencrypt.org/directory
+    privateKeySecretRef:
+      # Secret resource that will be used to store the account's private key.
+      name: acme-production-issuer-http01-account-key
+    # Add a single challenge solver, HTTP01 using nginx
+    solvers:
+    - http01:
+        ingress:
+          class: nginx
+```
+
+> [!primary]
+>
+> Do not forget to replace [YOUR_EMAIL] by a real value, it will be used for ACME challenges.
+
+Apply the YAML manifest:
+
 ```bash
-kubectl --namespace cert-manager apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/installing-keycloak/files/01-cert-manager/02-acme-production-issuer-http01.yaml
+kubectl apply -f issuer.yaml
 ```
 
 You should have a new `ClusterIssuer` deployed in your cluster:
 
-```
+<pre class="console"><code>$ kubectl apply -f issuer.yaml
+clusterissuer.cert-manager.io/letsencrypt-production created
+
 $ kubectl get clusterissuer letsencrypt-production -o yaml -n cert-manager | kubectl neat
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
@@ -142,7 +221,7 @@ spec:
     - http01:
         ingress:
           class: nginx
-```
+</code></pre>
 
 > [!warning]
 > **Warning!**
@@ -161,16 +240,77 @@ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 ```
 
-Then install the `nginx-ingress` controller:
+Then install the `ingress-nginx` controller:
 
 ```bash
-helm install ovh-ingress-lab ingress-nginx/ingress-nginx --namespace ingress-nginx --create-namespace --version 4.0.6
+helm install \
+  ovh-ingress-lab ingress-nginx/ingress-nginx \
+  --namespace ingress-nginx \
+  --create-namespace \
+  --version 4.0.6
 ```
+
+This command will install the `ingress-nginx` and create a new `ingress-nginx` namespace:
+
+<pre class="console"><code>$ helm install \
+  ovh-ingress-lab ingress-nginx/ingress-nginx \
+  --namespace ingress-nginx \
+  --create-namespace \
+  --version 4.0.6
+NAME: ovh-ingress-lab
+LAST DEPLOYED: Tue Jun 28 09:43:52 2022
+NAMESPACE: ingress-nginx
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+The ingress-nginx controller has been installed.
+It may take a few minutes for the LoadBalancer IP to be available.
+You can watch the status by running 'kubectl --namespace ingress-nginx get services -o wide -w ovh-ingress-lab-ingress-nginx-controller'
+
+An example Ingress that makes use of the controller:
+
+  apiVersion: networking.k8s.io/v1
+  kind: Ingress
+  metadata:
+    annotations:
+      kubernetes.io/ingress.class: nginx
+    name: example
+    namespace: foo
+  spec:
+    ingressClassName: example-class
+    rules:
+      - host: www.example.com
+        http:
+          paths:
+            - path: /
+              pathType: Prefix
+              backend:
+                service:
+                  name: exampleService
+                  port: 80
+    # This section is only required if TLS is to be enabled for the Ingress
+    tls:
+      - hosts:
+        - www.example.com
+        secretName: example-tls
+
+If TLS is enabled for the Ingress, a Secret containing the certificate and key must also be provided:
+
+  apiVersion: v1
+  kind: Secret
+  metadata:
+    name: example-tls
+    namespace: foo
+  data:
+    tls.crt: <base64 encoded cert>
+    tls.key: <base64 encoded key>
+  type: kubernetes.io/tls
+</code></pre>
 
 You should have new resources in `ingress-nginx` namespace:
 
-```
-$ kubectl get all -n ingress-nginx
+<pre class="console"><code>$ kubectl get all -n ingress-nginx
 NAME                                                            READY   STATUS    RESTARTS   AGE
 pod/ovh-ingress-lab-ingress-nginx-controller-6f94f9ff8c-w4fqs   1/1     Running   0          6m14s
 
@@ -184,7 +324,7 @@ deployment.apps/ovh-ingress-lab-ingress-nginx-controller   1/1     1            
 NAME                                                                  DESIRED   CURRENT   READY   AGE
 replicaset.apps/ovh-ingress-lab-ingress-nginx-controller-6f94f9ff8c   1         1         1       6m14s
 replicaset.apps/ovh-ingress-lab-ingress-nginx-controller-8466446f66   0         0         0       46d
-```
+</code></pre>
 
 If you need to customize your `ingress-nginx` configuration, please refer to the following documentation: [ingress-nginx values](https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/values.yaml)
 
@@ -199,23 +339,30 @@ To check if the `LoadBalancer` is up and running, execute the following CLI in a
 kubectl --namespace ingress-nginx get services ovh-ingress-lab-ingress-nginx-controller -o wide
 ```
 
+You should obtain a result similar to this:
+
+<pre class="console"><code>$ kubectl --namespace ingress-nginx get services ovh-ingress-lab-ingress-nginx-controller -o wide
+
+NAME                                       TYPE           CLUSTER-IP   EXTERNAL-IP       PORT(S)                      AGE    SELECTOR
+ovh-ingress-lab-ingress-nginx-controller   LoadBalancer   10.3.166.138   135.125.84.194   80:32133/TCP,443:31761/TCP   116s   app.kubernetes.io/component=controller,app.kubernetes.io/instance=ovh-ingress-lab,app.kubernetes.io/name=ingress-nginx
+</code></pre>
+
 Once your LoadBalancer is up and running, get its IP address to configure your domain name zone:
 
 ```bash
-kubectl -n ingress-nginx get service ovh-ingress-lab-ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}{"\n"}'
+export INGRESS_URL=$(kubectl get svc -n ingress-nginx ovh-ingress-lab-ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+echo $INGRESS_URL
 ```
 
-On our side, we have this new Service and the following external IP:
+You should obtain a result similar to this:
 
-```
-$ kubectl --namespace ingress-nginx get services ovh-ingress-lab-ingress-nginx-controller -o wide
-NAME                                       TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)                      AGE   SELECTOR
-ovh-ingress-lab-ingress-nginx-controller   LoadBalancer   10.3.166.138   135.125.84.194   80:30026/TCP,443:31963/TCP   46d   app.kubernetes.io/component=controller,app.kubernetes.io/instance=ovh-ingress-lab,app.kubernetes.io/name=ingress-nginx
-$ kubectl -n ingress-nginx get service ovh-ingress-lab-ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}{"\n"}'
+<pre class="console"><code>$ export INGRESS_URL=$(kubectl get svc -n ingress-nginx ovh-ingress-lab-ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+
+$ echo $INGRESS_URL
 135.125.84.194
-```
+</code></pre>
 
-If you are using the [OVHcloud Domain name product](https://www.ovhcloud.com/en-gb/domains/), you can follow this documentation to configure your DNS record to link it to the public IPv4 address associated to your LoadBalancer: [Editing an OVHcloud DNS zone](https://docs.ovh.com/sg/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+If you are using the [OVHcloud Domain name product](https://www.ovhcloud.com/en-sg/domains/), you can follow this documentation to configure your DNS record to link it to the public IPv4 address associated to your LoadBalancer: [Editing an OVHcloud DNS zone](https://docs.ovh.com/sg/en/domains/web_hosting_how_to_edit_my_dns_zone/).
 
 If you are using an external DNS provider, please configure your domain before reading the rest of this tutorial.
 
@@ -257,11 +404,92 @@ helm repo add codecentric https://codecentric.github.io/helm-charts
 helm repo update
 ```
 
-Then install the `codecentric/keycloak` helm chart:
+Create a file called `keycloack-values.yaml` with the following content:
+
+```
+# Keycloak chart configuration
+
+replicas: 1
+restartPolicy: "Always"
+serviceAccount:
+  create: true
+  name: "sa-keyclok-lab"
+prometheus:
+  enabled: false
+rbac:
+  create: true
+extraEnv: |
+  - name: KEYCLOAK_USER
+    value: "ovhcloud_keycloak_adm" # CHANGEME
+  - name: KEYCLOAK_PASSWORD
+    value: "ThisIsNotAsecuredPassword" # CHANGEME
+  - name: KEYCLOAK_LOGLEVEL
+    value: INFO
+  - name: PROXY_ADDRESS_FORWARDING
+    value: "true"
+service:
+  httpPort: 8080
+  httpsPort: 8443
+ingress:
+  enabled: false
+
+# PostegreSQL sub-chart configuration
+
+postgresql:
+  # This will create a Cinder volume to store the Keycloak PG data
+  enabled: true
+  persistence:
+    enabled: true
+  postgresqlUsername: "ovhcloud_postgresql_adm" # CHANGEME
+  postgresqlPassword: "ThisIsNotAsecuredPassword" # CHANGEME
+  volumePermissions:
+    enabled: true
+```
+
+> [!primary]
+>
+> Replace all values with the comment `CHANGEME` with strong usernames and passwords.
+
+Then install the `codecentric/keycloak` Helm chart:
 
 ```bash
-helm install ovh-keycloak-lab codecentric/keycloak -n keycloak --create-namespace --version 15.1.0 -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/installing-keycloak/files/02-keycloak/01-keycloak-definition.yaml
+helm install \
+  ovh-keycloak-lab codecentric/keycloak \
+  -n keycloak \
+  --create-namespace \
+  --version 15.1.0 \
+  -f keycloack-values.yaml
 ```
+
+You should obtain the following result:
+
+<pre class="console"><code>$ helm install \
+  ovh-keycloak-lab codecentric/keycloak \
+  -n keycloak \
+  --create-namespace \
+  --version 15.1.0 \
+  -f keycloack-values.yaml
+NAME: ovh-keycloak-lab
+LAST DEPLOYED: Tue Jun 28 13:24:48 2022
+NAMESPACE: keycloak
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+***********************************************************************
+*                                                                     *
+*                Keycloak Helm Chart by codecentric AG                *
+*                                                                     *
+***********************************************************************
+
+Keycloak was installed with a Service of type ClusterIP
+
+Create a port-forwarding with the following commands:
+
+export POD_NAME=$(kubectl get pods --namespace keycloak -l "app.kubernetes.io/name=keycloak,app.kubernetes.io/instance=ovh-keycloak-lab" -o name)
+echo "Visit http://127.0.0.1:8080 to use your application"
+kubectl --namespace keycloak port-forward "$POD_NAME" 8080
+</code></pre>
 
 Check if the Keycloak `StatefulSet` is in `Ready` state:
 
@@ -269,36 +497,56 @@ Check if the Keycloak `StatefulSet` is in `Ready` state:
 kubectl -n keycloak get statefulsets.apps -o wide
 ```
 
-In our example, after waiting a little time, our StatefulSets are in Ready state:
+In our example, after waiting a few minutes, our `StatefulSets` are in `Ready` state:
 
-```
-$ kubectl -n keycloak get statefulsets.apps -o wide
+<pre class="console"><code>$ kubectl -n keycloak get statefulsets.apps -o wide
 
 NAME                          READY   AGE    CONTAINERS                    IMAGES
 ovh-keycloak-lab              1/1     2m2s   keycloak                      docker.io/jboss/keycloak:15.0.2
 ovh-keycloak-lab-postgresql   1/1     2m2s   ovh-keycloak-lab-postgresql   docker.io/bitnami/postgresql:11.11.0-debian-10-r31
-```
+</code></pre>
 
-When they are ready, you can edit the `files/02-keycloak/02-nginx-ingress-definition.yaml` file, in order to replace `example.com` by your domain name:
+When they are ready, create a file `nginx-ingress-definition.yaml` with the following content:
 
 ```
+# Keycloak ingress route configuration
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    # This annotation indicates the issuer to use
+    cert-manager.io/cluster-issuer: letsencrypt-staging
+    acme.cert-manager.io/http01-edit-in-place: "true"
+  name: ovh-keycloak-lab
+  namespace: keycloak
 spec:
   rules:
   - host: keycloak.example.com # CHANGEME
-```
-
-and:
-
-```
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: ovh-keycloak-lab-http
+            port:
+              number: 8080
   tls:
     - hosts:
         - keycloak.example.com # CHANGEME
+      secretName: keycloak-tls
 ```
+
+> [!primary]
+>
+> Replace `example.com` by your domain name
 
 Then apply the YAML file to configure the Ingress route required to expose Keycloak on the Internet:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/installing-keycloak/files/02-keycloak/02-nginx-ingress-definition.yaml
+kubectl apply -f nginx-ingress-definition.yaml
 ```
 
 ### Keycloak configuration
@@ -311,7 +559,7 @@ If you change it with your custom URL, you should see the Keycloak UI like this:
 
 ![Keycloak interface](images/keycloak-interface.png)
 
-Then, click in `Administration Console` and login with the `username` and `password` configured in the `https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/installing-keycloak/files/02-keycloak/01-keycloak-definition.yaml` file.
+Then, click in `Administration Console` and login with the `username` and `password` configured in the `keycloack-values.yaml` file you filled and modified in **Keycloak installation** section of this guide.
 
 ![Keycloak login](images/keycloak-login.png)
 
@@ -322,8 +570,8 @@ By default, there is a single realm in Keycloak called `Master`. It is dedicated
 
 Let's create a dedicated realm for our tutorial:
 
-1) Display the dropdown menu in the top-left corner where it is indicated `Master`, then click on the `Add realm`{.action} blue button
-3) Fill in the form with this name: `ovh-lab-k8s-oidc-authentication`, then click on the `Create`{.action}{.action} blue button.
+1) Display the dropdown menu in the top-left corner where it is indicated `Master`, then click on the `Add realm`{.action} blue button.
+2) Fill in the form with this name: `ovh-lab-k8s-oidc-authentication`, then click on the `Create`{.action} blue button.
 
 ![Keycloak create realm](images/keycloak-realm.png)
 
@@ -331,11 +579,13 @@ Let's create a dedicated realm for our tutorial:
 
 A __client__ in Keycloak is an entity that can request a Keycloak server to authenticate a user.
 
-1) From the previously created realm, click on the left-hand menu `Clients`{.action} under the `Configure` category
+1) From the previously created realm, click on the left-hand menu `Clients`{.action} under the `Configure` category:
+
 ![Keycloak Clients](images/keycloak-clients.png)
 
-2) Click on `Create`{.action} in the top-right corner of the table
-3) Fill in the form with the following parameters:
+<ol start="2)">
+  <li>Click on <code class="action">Create</code> in the top-right corner of the table.</li>
+</ol>
 
 ```text
 Client ID: k8s-oidc-auth
@@ -346,22 +596,28 @@ Root URL: https: https://keycloak.your-domain-name.tld/
 In our example, the new Client informations are:
 ![Keycloak create client](images/keycloak-create-client.png)
 
-4) Then click on the `Save`{.action} button
+<ol start="4)">
+  <li>Then click on the <code class="action">Save</code> button.</li>
+</ol>
 
 5) In the new created client, Find the `Access Type` field and set its value to `confidential` to require a secret to initiate the login protocol. Then click on the `Save`{.action} blue button to save the change.
 
 ![Keycloak client](images/keycloak-client.png)
 
-6) Then click on the `Credentials`{.action}{.action} tab. Find the `Valid Redirect URIs` field and set the following value: `*`
+<ol start="6)">
+  <li>Then click on the <code class="action">Credentials</code> tab. Find the `Valid Redirect URIs` field and set the following value: `*`</li>
+</ol>
+
 7) Find the `Admin URL` and the `Web Origins` fields and set their values to your defined domain name if it is not already done  
 In our example: `https://keycloak.example.com/`. __\/!\ Be careful to use the HTTPS schema only /!\\__
-8) Save your changes
+
+8) Save your changes.
 
 
 #### Create a USER
 
-1) From the previously created realm, click on the left-hand menu `Users`{.action} under the `Manage` category
-2) Click on `Add user`{.action} in the top-right corner of the table
+1) From the previously created realm, click on the left-hand menu `Users`{.action} under the `Manage` category.
+2) Click on `Add user`{.action} in the top-right corner of the table.
 3) Fill in the form. Only the `Username` field is required, it's enough for this tutorial.
 
 In our example, we created the following user:
@@ -374,7 +630,6 @@ PASSWORD: ovhcloud-keycloak-tutorial-awesome-password
 4) Then click on the `Save`{.action} button
 
 The first user connection required an initial password, so let's create it:
-
 1) Click on the `Credentials`{.action} tab
 2) Fill in the `Set Password` form
 3) Disable the `Temporary` flag to prevent having to update the password on first login
@@ -484,26 +739,33 @@ kubectl config set-credentials oidc \
   --exec-arg=--oidc-client-secret="c9fbfe32-bff1-4180-b9ff-29108e42b2a5"
 ```
 
-And verify your cluster access (step 6 of the `oidc-login` output):
+And verify your cluster access (step 6 of the `oidc-login` output) with the following command:
 
 ```bash
 kubectl --user=oidc get nodes
 ```
 
 For example:
-```bash
+<pre class="console"><code>$ kubectl --user=oidc get nodes
 NAME                                         STATUS   ROLES    AGE   VERSION
 nodepool-d18716fa-e910-4e77-a2-node-79add5   Ready    <none>   2d    v1.22.2
 nodepool-d18716fa-e910-4e77-a2-node-aa7701   Ready    <none>   2d    v1.22.2
 nodepool-d18716fa-e910-4e77-a2-node-f9f18e   Ready    <none>   2d    v1.22.2
-```
+</code></pre>
 
 If you can see the nodes of your Managed Kubernetes Service, congratulations, your Keycloak instance is up and running!
 
 ## Upgrade the Keycloak deployment if needed
 
+Enter the following command:
+
+TODO: xxx
+
 ```bash
-helm upgrade ovhcloud-keycloak-tutorial codecentric/keycloak -n keycloak -f files/02-keycloak/01-keycloak-definition.yaml
+helm upgrade \
+  ovhcloud-keycloak-tutorial codecentric/keycloak \
+  -n keycloak \
+  -f keycloack-values.yaml
 ```
 
 ## Rollout restarts the Keycloak StatefulSets if needed
