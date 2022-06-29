@@ -229,7 +229,7 @@ Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
-Ouvrez le fichier de configuration du réseau, fichier se trouvant dans `/etc/netplan`. À des fins de démonstration, notre fichier est appelé 50-cloud-init.yaml.
+Ouvrez le fichier de configuration du réseau, fichier se trouvant dans `/etc/netplan`. À des fins d'exemple, notre fichier est appelé 50-cloud-init.yaml.
 
 #### Étape 3 : Modifier le fichier de configuration réseau
 
