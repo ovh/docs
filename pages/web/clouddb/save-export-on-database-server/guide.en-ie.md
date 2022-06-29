@@ -111,7 +111,7 @@ pg_dump --host=server --port=port --user=usernmame --password=password database_
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it]( ../how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/ie/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 

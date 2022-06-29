@@ -94,7 +94,7 @@ mysqldump --host=server --user=benutzername --port=port --password=passwort date
 
 > [!warning]
 >
-> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/).
 > - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 >
 
@@ -120,7 +120,7 @@ pg_dump --host=server --port=port --user=benutzername --password=passwort datenb
 
 > [!warning]
 >
-> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/).
 > - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 >
 
