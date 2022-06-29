@@ -6,7 +6,11 @@ section: Configuración
 order: 3
 ---
 
-**Última actualización: 03/02/2022**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 29/06/2022**
 
 ## Objetivo
 
@@ -16,16 +20,16 @@ Es posible consultar el contenido de la base de datos a través de una interfaz.
 
 ## Requisitos
 
-- Tener contratado un plan de [Cloud Databases](https://www.ovh.es/cloud-databases){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
 > [!primary]
 >
-> Tenga en cuenta que este producto no permite acceso "root".
-> <br> Los comandos SQL genéricos funcionan sin ningún problema, y los programas de tipo HeidiSQL o SQuirreL SQL son totalmente compatibles.
-> 
+> Tenga en cuenta que las soluciones [CloudDB](https://www.ovh.es/cloud/cloud-databases/){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+> <br> - Tenga en cuenta que no hay acceso "root".
+> <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
 
 ### Importar una base de datos MySQL o MariaDB 
 
@@ -55,13 +59,13 @@ Si la conexión se ha completado, se mostrará la siguiente página de phpMyAdmi
 
 ![private-sql](images/private-sql-phpma03.png){.thumbnail}
 
-> **En caso de error #1045**
+
+> [!warning]
+>
+> **En caso de error :**
 > 
-> En caso de error #1045, significa que la identificación es incorrecta. Por lo tanto, es necesario comprobar el nombre de usuario y/o la contraseña.
-> 
-> **En caso de error #2005**
-> 
-> En caso de error #2005, le recomendamos que compruebe el nombre del servidor y si este está en funcionamiento.
+> <br> - Error #1045, significa que la identificación es incorrecta. Por lo tanto, es necesario comprobar el nombre de usuario y/o la contraseña.
+> <br> - Error #2005, le recomendamos que compruebe el nombre del servidor y si este está en funcionamiento.
 
 #### Conexión a la base de datos fuera del área de cliente
 

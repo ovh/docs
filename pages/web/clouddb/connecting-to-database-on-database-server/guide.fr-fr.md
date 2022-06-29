@@ -6,7 +6,7 @@ section: Configuration
 order: 3
 ---
 
-**Dernière mise à jour le 03/02/2022**
+**Dernière mise à jour le 29/06/2022**
 
 ## Objectif
 
@@ -16,30 +16,30 @@ Il est possible de consulter le contenu de votre base de données via une interf
 
 ## Prérequis
 
-- Disposer d'une [offre Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
+- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
 > [!primary]
 >
-> Il est à noter que les offres [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au Host mais aux bases de données hébergées sur celui-ci. 
-> <br> Il n'y a pas d'accès super utilisateur  « root ». 
-> <br> Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL ou Adminer sont pleinement compatibles.
+> Il est à noter que les offres [CloudDB](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci. 
+> <br> - Il n'y a pas d'accès super utilisateur « root ». 
+> <br> - Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL ou Adminer sont pleinement compatibles.
 > 
 
-### Se connecter a une base de données MySQL ou MariaDB 
+### Se connecter à une base de données MySQL ou MariaDB
 
 > [!primary]
 >
-> MariaDB étant un dérivé de MySQL, les différentes commandes sont exactement les mêmes pour ces 2 types de bases de données.
+> MariaDB étant un dérivé de MySQL, les différentes commandes sont exactement les mêmes pour ces deux types de bases de données.
 > 
 
-####  Par phpMyAdmin OVHcloud 
+#### Par phpMyAdmin OVHcloud 
 
 Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
-Depuis l'onglet `Informations générales`, vous trouverez le lien d'accès dans le cadre **« Administration de la base de données »**  sous la mention « Interface utilisateur ».
+Depuis l'onglet `Informations générales`, vous trouverez le lien d'accès dans le cadre **« Administration de la base de données »** sous la mention « Interface utilisateur ».
 
 ![private-sql](images/private-sql-phpma01.png){.thumbnail}
 
@@ -56,13 +56,12 @@ Si la connexion aboutit, la page suivante de phpMyAdmin apparaîtra.
 
 ![private-sql](images/private-sql-phpma03.png){.thumbnail}
 
-> **En cas d'erreur #1045**
-> 
-> En cas d'erreur #1045, cela signifie que l'identification est incorrecte. Il faut donc vérifier votre nom d'utilisateur et/ou votre mot de passe.
-> 
-> **En cas d'erreur #2005**
-> 
-> En cas d'erreur #2005, il est conseillé de vérifier le nom du serveur et si celui-ci est bien fonctionnel.
+> [!warning]
+>
+> **En cas d'erreur :**
+> <br> - Erreur #1045, cela signifie que l'identification est incorrecte. Il faut donc vérifier votre nom d'utilisateur et/ou votre mot de passe.
+> <br> - Erreur #2005, il est conseillé de vérifier le nom du serveur et si celui-ci est bien fonctionnel.
+>
 
 #### Connexion à la base de données hors espace client
 
