@@ -6,7 +6,7 @@ section: 'Configuration'
 order: 5
 ---
 
-**Dernière mise à jour le 24/06/2022**
+**Dernière mise à jour le 29/06/2022**
 
 ## Objectif
 
