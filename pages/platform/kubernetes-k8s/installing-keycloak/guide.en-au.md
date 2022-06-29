@@ -571,7 +571,6 @@ By default, there is a single realm in Keycloak called `Master`. It is dedicated
 Let's create a dedicated realm for our tutorial:
 
 1) Display the dropdown menu in the top-left corner where it is indicated `Master`, then click on the `Add realm`{.action} blue button.
-
 2) Fill in the form with this name: `ovh-lab-k8s-oidc-authentication`, then click on the `Create`{.action} blue button.
 
 ![Keycloak create realm](images/keycloak-realm.png)
@@ -619,9 +618,7 @@ In our example: `https://keycloak.example.com/`. __\/!\ Be careful to use the HT
 #### Create a USER
 
 1) From the previously created realm, click on the left-hand menu `Users`{.action} under the `Manage` category.
-
 2) Click on `Add user`{.action} in the top-right corner of the table.
-
 3) Fill in the form. Only the `Username` field is required, it's enough for this tutorial.
 
 In our example, we created the following user:
@@ -634,13 +631,9 @@ PASSWORD: ovhcloud-keycloak-tutorial-awesome-password
 4) Then click on the `Save`{.action} button
 
 The first user connection required an initial password, so let's create it:
-
 1) Click on the `Credentials`{.action} tab
-
 2) Fill in the `Set Password` form
-
 3) Disable the `Temporary` flag to prevent having to update the password on first login
-
 4) Then click on the `Set Password`{.action} button and confirm your choice
 
 ### Configure Keycloak instance in your Kubernetes cluster as an OIDC provider
