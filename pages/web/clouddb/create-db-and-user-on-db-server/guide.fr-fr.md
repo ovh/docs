@@ -6,17 +6,17 @@ section: Configuration
 order: 2
 ---
 
-**Dernière mise à jour le 03/02/2022**
+**Dernière mise à jour le 23/06/2022**
 
 ## Objectif
 
-Une base de données (*database*, « DB » ou « BDD ») permet de stocker des éléments dits dynamiques, comme des commentaires ou des articles par exemple. Ces bases sont aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de contenu (*Content Management System* ou CMS) comme WordPress, Joomla!.
+Une base de données (*database*, « DB » ou « BDD ») permet de stocker des éléments dits dynamiques, comme des commentaires ou des articles par exemple. Ces bases sont aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de contenu (*Content Management System* ou CMS) comme WordPress ou Joomla!.
 
 **Découvrez comment créer une base de données sur votre serveur de bases de données.**
 
 ## Prérequis
 
-- Disposer d'une [offre Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
+- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
@@ -29,12 +29,12 @@ Dirigez-vous dans l'onglet `Bases de données` et enfin sur `Ajouter une base de
 
 ![private-sql](images/private-sql-createdb01.png){.thumbnail}
 
-Renseignez les champs en respectant les critères indiqués. Il est possible de créer directement un utilisateur en cochant la case **«_Créer un utilisateur_»** :
+Renseignez les champs en respectant les critères indiqués. Il est possible de créer directement un utilisateur en cochant la case **«Créer un utilisateur»** :
 
 - **Nom de la base** (obligatoire) : il s'agit du nom de votre future base de données.
 - **Nom d'utilisateur** (seulement si la case `Créer un utilisateur` est cochée) : il s'agit de l'utilisateur qui pourra se connecter à votre base de données et y effectuer des requêtes.
 - **Droits** (seulement si la case `Créer un utilisateur` est cochée) : il s'agit des droits qui seront associés à l'utilisateur sur la base de données. Pour une utilisation classique, sélectionnez `Administrateur`{.action}. Les droits peuvent être modifiés par la suite.
-- **Mot de passe**/**Confirmer le mot de passe**** (seulement si la case `Créer un utilisateur` est cochée) : sélectionnez un mot de passe, puis confirmez ce dernier.
+- **Mot de passe**/**Confirmer le mot de passe** (seulement si la case `Créer un utilisateur` est cochée) : sélectionnez un mot de passe, puis confirmez ce dernier.
 
 Cliquez sur `Valider`{.action}.
 
@@ -42,15 +42,15 @@ Cliquez sur `Valider`{.action}.
 
 ### Créer un utilisateur
 
-Pour utiliser un serveur de bases de données OVHcloud, il est nécessaire de créer des utilisateurs qui auront des droits spécifiques pour se connecter à une base de données. 
+Pour utiliser un serveur de bases de données OVHcloud, il est nécessaire de créer des utilisateurs qui auront des droits spécifiques pour se connecter à une base de données.
 
 Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
-Dirigez-vous dans l'onglet `Utilisateurs et droits`  et cliquez sur `Ajouter un utilisateur`{.action}
+Dirigez-vous dans l'onglet `Utilisateurs et droits` et cliquez sur `Ajouter un utilisateur`{.action}
 
 ![private-sql](images/private-sql-user01.png){.thumbnail}
 
-Renseignez un « nom d'utilisateur  » et un « mot de passe » puis cliquez sur `Valider`{.action}. 
+Renseignez un « nom d'utilisateur  » et un « mot de passe » puis cliquez sur `Valider`{.action}.
 
 ### Gerer les droits des utilisateurs
 
@@ -66,14 +66,14 @@ Vous retrouverez dans la colonne de gauche **« base de données »**, la liste 
 
 Voici la description des 3 types de droits proposés :
 
-- **Administrateur :** autorisation des requêtes de type **Select / Insert / Update / Delete / Create / Alter / Drop**
-- **Lecture / Ecriture :** autorisation des requêtes de type **Select / Insert / Update / Delete**
-- **Lecture :** autorisation des requêtes de type **Select**
-- **Aucun :** aucun droit sur la base
+- `Administrateur`: autorisation des requêtes de type **Select / Insert / Update / Delete / Create / Alter / Drop**.
+- `Lecture / Ecriture`: autorisation des requêtes de type **Select / Insert / Update / Delete**.
+- `Lecture`: autorisation des requêtes de type **Select**.
+- `Aucun`: aucun droit sur la base.
 
 > [!primary]
 > 
-> La segmentation des droits mentionnés ci-dessus est propre à OVHcloud. Ainsi un utilisateur ayant les droits **«_Administrateur_»** pourra faire du **DLL** (Data_Definition_Language) et du **DML** (Data_Manipulation_Language) alors qu'un utilisateur ayant les droits **«_Lecture_/_Ecriture_»** ne fera uniquement que du **DML** (Data_Manipulation_Language)
+> La segmentation des droits mentionnés ci-dessus est propre à OVHcloud. Ainsi un utilisateur ayant les droits `Administrateur` pourra faire du **DLL** (Data Definition Language) et du **DML** (Data Manipulation Language) alors qu'un utilisateur ayant les droits `Lecture/Ecriture` ne fera uniquement que du **DML** (Data Manipulation Language)
 
 ![private-sql](images/private-sql-rights02.png){.thumbnail}
 
@@ -92,7 +92,6 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 Pour supprimer une base de données sur votre serveur de bases de données, dirigez-vous dans l'onglet `Bases de données` puis cliquez sur le bouton `...`{.action} à droite de la base de données concernée et enfin cliquez sur `Supprimer la base`{.action} .
 
 ![private-sql](images/private-sql-deldb01.png){.thumbnail}
-
 
 ## Aller plus loin
 

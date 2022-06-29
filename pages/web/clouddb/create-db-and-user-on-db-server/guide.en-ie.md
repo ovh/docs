@@ -6,7 +6,7 @@ section: Configuration
 order: 2
 ---
 
-**Last updated 3rd February 2022**
+**Last updated 23rd June 2022**
 
 ## Objective
 
@@ -16,8 +16,8 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 ## Requirements
 
-- a [Cloud Database](https://www.ovh.ie/cloud-databases/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- You must have a [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructions
 
@@ -46,7 +46,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 ![private-sql](images/private-sql-user01.png){.thumbnail}
 
-Enter a “username” and a “password”, then click `Confirm`{.action}. 
+Enter a “username” and a “password”, then click `Confirm`{.action}.
 
 ### Managing user rights
 
@@ -60,14 +60,14 @@ In the left-hand column, **Database**, you will see a list of the databases on y
 
 The 3 types of permissions proposed are described below:
 
-- **Administrator**: Authorisation of the following queries: **Select/Insert/Update/Delete/Create/Alter/Drop**
-- **Reading/Writing**: Authorisation of the following queries: **Select/Insert/Update/Delete**
-- **Read**: Authorisation of **Select** queries
-- **None**: No database rights
+- `Administrator`: Authorisation of the following queries: **Select/Insert/Update/Delete/Create/Alter/Drop**.
+- `Reading/Writing`: Authorisation of the following queries: **Select/Insert/Update/Delete**.
+- `Read`: Authorisation of **Select** queries.
+- `None`: No database rights.
 
 > [!primary]
 > 
-> The distribution of rights mentioned above is unique to OVHcloud. This will allow a user with *Administrator* rights to use **DLL** (Data_Definition_Language) and **DML** (Data_Manipulation_Language), while a user with **Reading/Writing** rights will only use **DML**.
+> The distribution of rights mentioned above is unique to OVHcloud. This will allow a user with `Administrator` rights to use **DLL** (Data Definition Language) and **DML** (Data Manipulation Language), while a user with `Reading/Writing` rights will only use **DML**.
 
 ![private-sql](images/private-sql-rights02.png){.thumbnail}
 
