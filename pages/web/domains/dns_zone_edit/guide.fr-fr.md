@@ -67,7 +67,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 #### Enregistrements de pointage
 
-**A** (**A**ddress) : Relie un nom de domaine à une adresse IPv4. Par exemple, l'adresse IPv4 (X.X.X.X où X est un chiffre compris entre 0 et 255) du serveur où est hébergé votre site internet.
+**A** (**A**ddress) : Relie un nom de domaine à une adresse IPv4. Par exemple, l'adresse IPv4 ("X.X.X.X" où les "X" sont des chiffres compris entre "0" et "255") du serveur où est hébergé votre site internet.
 
 **AAAA** : Relie un nom de domaine à une adresse IPv6. Par exemple, l'adresse IPv6 du serveur où est hébergé votre site internet.
 
