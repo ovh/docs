@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 section: 'Network Management'
 ---
 
-**Last updated 4th May 2022**
+**Last updated 29th June 2022**
 
 ## Objective
 
