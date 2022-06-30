@@ -9,7 +9,7 @@ section: 'Redes & IP'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 04/05/2022**
+**Última atualização: 29/06/2022**
 
 ## Objetivo
 
@@ -56,6 +56,12 @@ Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utili
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
 
+>  [!warning]
+> 
+> Antes de alterar um ficheiro de configuração, crie sempre uma cópia de segurança do original para que possa voltar a ela em caso de problema. 
+> 
+
+
 ### Distribuições Debian e baseadas em Debian
 
 > [!warning]
@@ -75,7 +81,7 @@ Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utili
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
-O ficheiro de configuração da rede do seu servidor encontra-se em `/etc/network/interfaces`. Use a linha de comandos para localizar o ficheiro, abri-lo e editá-lo. Antes disso, pense em fazer um backup.
+O ficheiro de configuração da rede do seu servidor encontra-se em `/etc/network/interfaces` ou `/etc/network/interfaces.d`. Use a linha de comandos para localizar o ficheiro, abri-lo e editá-lo. Antes disso, pense em fazer um backup.
 
 #### Passo 3: Corrigir o ficheiro de configuração de rede
 
@@ -220,7 +226,7 @@ ping6 -c 4 2001:4860:4860::8888
 
 Se não conseguir que este endereço IPv6 faça ping, verifique a configuração e tente novamente. Além disso, assegure-se de que a máquina a partir da qual está a fazer o teste está conectada por IPv6. Se mesmo assim não for bem-sucedido, teste a configuração em [modo Rescue](../rescue_mode/).
 
-### Ubuntu 18.04
+### Ubuntu 18.04 e 20.04
 
 #### Passo 1: Usar o SSH para se conectar ao servidor
 
@@ -228,35 +234,71 @@ Se não conseguir que este endereço IPv6 faça ping, verifique a configuração
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
-Abra o ficheiro de configuração de rede situado em `/etc/systemd/network`. Para efeitos de exemplificação, o nosso ficheiro chama-se 50-default.network.
+Abra o ficheiro de configuração da rede, o ficheiro que se encontra em `/etc/netplan`. Para efeitos de demonstração, o nosso ficheiro chama-se 50-cloud-init.yaml.
 
 #### Passo 3: Corrigir o ficheiro de configuração de rede
 
-Usando um editor de texto, corrija o ficheiro acrescentando as seguintes linhas nas secções relevantes, como mostramos no exemplo abaixo:
+Usando um editor de texto, altere o ficheiro 50-cloud-init.yaml adicionando as seguintes linhas às secções em causa, como indicado no exemplo abaixo.
 
-```console
-[Network]
-Destination=Gateway_Address
+Substitua os elementos genéricos (YOUR_IPV6, IPV6_PREFIX e IPV6_GATEWAY) e a interface de rede (se o seu servidor não utilizar enp1s0) pelos seus valores específicos.
 
-[Address]
-Address=IPv6_Address/64
-
-[Route]
-Destination=Gateway_Address
-Scope=link
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            gateway6: IPv6_GATEWAY
+            routes:
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-Para adicionar múltiplos endereços IPv6, adicione múltiplas secções [Address].
 
-```console
-[Address]
-Address=IPv6_Address_2/64
+### Ubuntu 21.10 e 22.04
 
-[Address]
-Address=IPv6_Address_3/64
+O ficheiro de configuração deve ter o seguinte exemplo:
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            routes:
+                - to: ::/0
+                  via: IPv6_GATEWAY
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-#### Passo 4: Guardar o ficheiro e reiniciar o servidor
 
-Guarde as alterações feitas ao ficheiro e reinicie a rede ou o servidor de modo a aplicar as alterações.
+> [!warning]
+>
+> É importante respeitar o alinhamento de cada elemento deste ficheiro tal como representado no exemplo acima. Não utilize a tecla de tabulação para criar o seu espaçamento. Apenas a tecla de espaço é necessária. 
+>
+
+#### Passo 4: Testar e aplicar a configuração
+
+Pode testar a sua configuração através do seguinte comando:
+
+```bash
+netplan try
+```
+
+Se a configuração estiver correta, execute-a através do seguinte comando:
+
+```bash
+netplan apply
+```
 
 #### Passo 5: Testar a conetividade IPv6
 
