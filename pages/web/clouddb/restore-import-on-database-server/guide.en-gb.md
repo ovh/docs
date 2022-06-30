@@ -16,7 +16,7 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ## Requirements
 
-- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
