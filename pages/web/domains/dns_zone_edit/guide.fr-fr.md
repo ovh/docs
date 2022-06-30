@@ -153,6 +153,8 @@ En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* 
 > 
 > L'enregistrement TXT est limité à 255 caractères. Il est néanmoins possible, dans certains cas, de scinder votre valeur en plusieurs enregistrements. Renseignez-vous auprès de votre prestataire lorsque celui-ci vous demande de renseigner une valeur dépassant le quota des 255 caractères.
 > 
+> Cette limite n'est cependant pas existante si vous passez par la fonctionnalité `Modifier en mode textuel`{.action} [décrite plus bas](#TxtMod) dans ce guide (pour les utilisateurs avertis).
+> 
 
 **SRV** (**S**e**RV**ice resource) : Permet d'indiquer l'adresse d'un serveur gérant un service. Par exemple, il peut indiquer l'adresse d'un serveur SIP ou celle d'un serveur permettant la configuration automatique d'un logiciel de messagerie.
 
@@ -170,7 +172,7 @@ En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* 
 
 Vous pouvez éditer la zone DNS OVHcloud de votre nom de domaine en ajoutant, modifiant ou en supprimant un enregistrement DNS. Pour cela, deux possibilités s'offrent à vous :
 
-#### Modifier manuellement la zone en mode textuel 
+#### Modifier manuellement la zone en mode textuel <a name="TxtMod"></a>
 
 > [!warning]
 > 
