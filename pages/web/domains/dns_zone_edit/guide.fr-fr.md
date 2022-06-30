@@ -160,6 +160,12 @@ En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* 
 
 **CAA** (**C**ertification **A**uthority **A**uthorization) : Permet de lister les autorités de certification autorisées à délivrer des certificats SSL pour un nom de domaine.
 
+> [!warning]
+> 
+> Si vous utilisez un certificat SSL Let's Encrypt avec votre domaine sur un hébergement mutualisé OVHcloud et que vous utilisez un enregistrement CAA, ce dernier empêchera la régénération du certificat SSL Let's Encrypt.
+> 
+
+
 **NAPTR** (**N**ame **A**uthority **P**oin**T**e**R**) : Utilisé en télécommunication pour diriger une requête émise par un terminal mobile vers un serveur. Un enregistrement SRV peut y être associé pour générer de façon dynamique des URIs (Uniform Resource Identifier) cibles.
 
 **LOC** (**LOC**ation) : Utilisé pour renseigner les informations de position géographique (notamment avec la latitude, la longitude et l'altitude).
