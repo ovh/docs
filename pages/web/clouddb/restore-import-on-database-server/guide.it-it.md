@@ -10,7 +10,7 @@ order: 5
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 29/02/2022**
+**Ultimo aggiornamento: 29/06/2022**
 
 ## Obiettivo
 
@@ -20,14 +20,14 @@ In caso di errore sul database, è necessario essere in grado di ripristinare un
 
 ## Prerequisiti
 
-- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/fr/web-hosting/)
+- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/) (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/fr/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
 > [!primary]
 >
-> Attenzione: le soluzioni [CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
+> Attenzione: le soluzioni [CloudDB](https://www.ovh.it/cloud/cloud-databases/) non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
 > <br> - Attenzione: non sono presenti accessi "root".
 > <br> - I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL o Adminer sono completamente compatibili.
 >
@@ -134,7 +134,7 @@ cat nom_de_base.sql | mysql —host=server —user=utente —port=port —passwo
 
 ### Importazione di database PostgreSQL al di fuori dello Spazio Cliente
 
-In alcuni casi, la RAM disponibile sul tuo server di database non permette di realizzare l'importazione desiderata al di fuori dello Spazio Cliente OVH. Accedi alla sezione ["Ripristinare e importare un database dallo Spazio Cliente"](./#ripristina-e-importa-un-database-dallo-spazio-cliente) di questa guida.
+In alcuni casi, la RAM disponibile sul tuo server di database non permette di realizzare l'importazione desiderata al di fuori dello Spazio Cliente OVHcloud. Accedi alla sezione ["Ripristinare e importare un database dallo Spazio Cliente"](./#ripristina-e-importa-un-database-dallo-spazio-cliente) di questa guida.
 
 #### Importa il tuo database PostgreSQL da riga di comando
 

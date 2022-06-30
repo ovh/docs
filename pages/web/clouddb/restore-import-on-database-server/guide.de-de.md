@@ -16,7 +16,7 @@ Nach einem Fehler auf Ihrer Datenbank müssen Sie in der Lage sein, ein Backup w
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud-databases/) (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

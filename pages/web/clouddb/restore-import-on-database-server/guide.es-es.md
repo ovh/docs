@@ -27,7 +27,7 @@ Si se produce un error en la base de datos, es necesario que pueda restaurar una
 
 > [!primary]
 >
-> Tenga en cuenta que las soluciones [CloudDB](https://www.ovh.es/cloud/cloud-databases/){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+> Tenga en cuenta que las soluciones [CloudDB](https://www.ovh.es/cloud/cloud-databases/) no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
 > <br> - Tenga en cuenta que no hay acceso "root".
 > <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
 > 
@@ -91,7 +91,7 @@ En algunos casos, la RAM disponible en su servidor de bases de datos no permite 
 
 #### Importar una base MySQL o MariaDB desde phpMyAdmin
 
-Para importar su base de datos directamente desde phpMyAdmin, es necesario conectarse a ella previamente. Para ello, puede utilizar el apartado ["Conectarse a una base de datos MySQL o MariaDB"](https://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/#importar-una-base-de-datos-mysql-o-mariadb.
+Para importar su base de datos directamente desde phpMyAdmin, es necesario conectarse a ella previamente. Para ello, puede utilizar el apartado ["Conectarse a una base de datos MySQL o MariaDB"](https://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/#importar-una-base-de-datos-mysql-o-mariadb).
 
 Una vez conectado a phpMyAdmin, seleccione la base de datos haciendo clic en su nombre.
 
@@ -133,7 +133,7 @@ cat nombre_de_la_base.sql | mysql —host=servidor —user=usuario —port=puert
 > - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
 >
 
-### importación de bases de datos PostgreSQL fuera del área de cliente
+### Importación de bases de datos PostgreSQL fuera del área de cliente
 
 En algunos casos, la RAM disponible en su servidor de bases de datos no permite realizar la importación deseada fuera del área de cliente. Consulte la sección ["Restaurar e importar una base de datos desde el área de cliente"](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-clientes) de esta guía.
 

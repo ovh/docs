@@ -16,14 +16,14 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ## Requirements
 
-- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that the [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
+> Please note that the [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/) solutions do not give access to the database management system, but to the databases hosted on it.
 > <br> - Please note that there is no "root" access.
 > <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 
@@ -122,7 +122,7 @@ cat database_name.sql | mysql --host=server --user=username --port=port --passwo
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](../how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 
