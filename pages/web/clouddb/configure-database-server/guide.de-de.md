@@ -6,17 +6,17 @@ section: Konfiguration
 order: 6
 ---
 
-**Letzte Aktualisierung am 12.05.2022**
+**Letzte Aktualisierung am 30.06.2022**
 
 ## Ziel
 
-Die Cloud Databases geben Ihnen die Möglichkeit, auf die Gesamtparameter Ihres Servers einzuwirken. Sie können auch die Aktivität Ihres Servers sehen. 
+Die CloudDB geben Ihnen die Möglichkeit, auf die Gesamtparameter Ihres Servers einzuwirken. Sie können auch die Aktivität Ihres Servers sehen.
 
 **Diese Anleitung erklärt, wie Sie Ihren Datenbankserver konfigurieren und optimieren können.**
 
 ## Voraussetzungen
 
-- Sie haben einen [Cloud Databases](https://www.ovh.de/cloud-databases/) Dienst in Ihrem Kunden-Account.
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/) (auch in einem [Performance Web Hosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -32,18 +32,23 @@ Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Wir bitte
 |Status der Dienstleistung|Zeigt an, ob die Instanz gestartet wurde, gerade neu gestartet wird oder gesperrt wurde. Ihre Instanz muss gestartet worden sein, damit Sie Aktionen durchführen können.|
 |Typ|Zeigt das vom Server verwendete Datenbanksystem an. Wenn Sie nicht wissen, ob der verwendete Typ korrekt ist, beachten Sie, dass MySQL das am weitesten verbreitete System ist. Es gibt jedoch auch andere Datenbanksysteme (PostgreSQL, MariaDB). Wurde Ihre Website zum Beispiel mit WordPress erstellt, ist ein MySQL-System die richtige Wahl.|
 |Version|Zeigt die Version des vom Server verwendeten Datenbanksystems an. Achten Sie auf die Kompatibilität Ihrer Website mit der gewählten Version.|
+|CPU Auslastung|Zeigt die überlastete CPU Zeit über die letzten 24 Stunden an.|
 |RAM|Zeigt den für Ihre Instanz verfügbaren Arbeitsspeicher sowie eventuelle Überschreitungen der RAM-Kapazität. Ihr Datenbankserver verfügt über dedizierte und garantierte Ressourcen: den RAM-Speicher. Falls nötig, können Sie Ihren RAM skalieren und eine Warnmeldung erhalten, wenn Sie sämtliche RAM-Ressourcen Ihrer Instanz verwenden.|
-|Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es es sich um eine interne Information der  OVHcloud Infrastruktur.|
+|Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es es sich um eine interne Information der OVHcloud Infrastruktur.|
 |Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|
-|Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine interne Information der  OVHcloud Infrastruktur, die im Rahmen unserer Kommunikation zu [OVHcloud Störungen](https://web-cloud.status-ovhcloud.com/){.external} verwendet werden kann.|
+|Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine interne Information der OVHcloud Infrastruktur, die im Rahmen unserer Kommunikation zu [OVHcloud Störungen](https://web-cloud.status-ovhcloud.com/) verwendet werden kann.|
 
 ![Allgemeine Informationen](images/privatesql01-General-information.png){.thumbnail}
 
-### Autorisieren einer IP-Adresse (nur bei CloudDB Datenbanken)
+## Zugangsverwaltung
+
+Ihre CloudDB ist über Ihre OVHcloud Webhostings oder/und über das öffentliche Netzwerk erreichbar.
+
+#### Eine IP-Adresse erlauben
 
 Damit auf Ihre CloudDB Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen.
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. 
+Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende CloudDB-Instanz.
 
 Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
@@ -53,26 +58,15 @@ Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse od
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-#### Autorisieren der Anbindung eines OVHcloud Webhostings 
+#### Autorisieren der Anbindung eines OVHcloud Webhostings
 
-Für OVHcloud Webhostings müssen Sie die ausgehende IP-Adresse („gateway“) des Hostings hinzufügen. 
-
-Die ausgehende IP-Adresse können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) herausfinden. Klicken Sie auf `Web Cloud` und dann auf `Hosting-Pakete`{.action}. Wählen Sie Ihr Hosting aus der Liste und klicken Sie dann auf den Tab `FTP - SSH`.
-
-Unter **FTP Server** wird Ihnen die Cluster-Nummer, auf der Ihr Hosting liegt, angezeigt.
+Für ein OVHcloud Webhosting können Sie einfach `Den OVHcloud Webhostings den Zugriff auf die Datenbank erlauben` auswählen.
 
 ![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
 
-Nachdem Sie die Cluster-Nummer Ihres Hostings abgerufen haben, überprüfen Sie diese im [Verzeichnis von IP-Adressen für die Webhosting Cluster](../verzeichnis-der-ip-adressen-web-hosting-cluster/). Dort finden Sie die ausgehende IP-Adresse jedes Clusters.
+#### Ihr CloudDB Angebot bearbeiten
 
-> [!warning]
->
-> Die IP-Adresse des Clusters wird nicht funktionieren, um die Verbindung mit dem Cloud-DB-Server zu ermöglichen. Es muss die ausgehende IP-Adresse („gateway“)  hinzugefügt werden.
->
-
-### Wechseln des Datenbank-Angebots
-
-Um das Angebot Ihres Datenbanken-Servers zu wechseln, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
+Um Ihr CloudDB Angebot zu ändern, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 In der Standardansicht **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM Menge ändern`{.action}, um zur Bestellung geleitet zu werden.
 
@@ -82,16 +76,14 @@ Wählen Sie die gewünschte Menge RAM aus und klicken Sie auf `Weiter`{.action}.
 
 > [!primary]
 >
-> Eine anteilige Berechnung erfolgt basierend auf der Restlaufzeit des Dienstes.
-> Diese Berechnung basiert auf dem Ablaufdatum des CloudDB Servers, nicht auf dem Datum des Bestellscheins.
+> Eine anteilige Berechnung erfolgt basierend auf der Restlaufzeit des Dienstes. Diese Berechnung basiert auf dem Ablaufdatum des CloudDB Instanz, nicht auf dem Datum des Bestellscheins.
 > 
 
 Nach Bestätigung der Verträge werden Sie auf den Bestellschein umgeleitet, um die Änderung auszuführen. Die Anpassung erfolgt innerhalb einiger Stunden.
 
 > [!warning]
 >
-> Wenn Sie bisher einen kostenlosen CloudDB Server, inkludiert in einem Performance Hosting-Paket, genutzt haben, wird dies mit dem
-> Wechsel des Angebots hinfällig.
+> Wenn Sie dank Ihres Performance Hostings derzeit über ein kostenloses CloudDB verfügen, verlieren Sie dessen Kosten.
 > 
 
 ### Die Konfiguration meines Datenbankservers ändern
@@ -107,7 +99,7 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 ![clouddb](images/private-sql-config02.png){.thumbnail}
 
 - **Tmpdir**: Verzeichnis temporärer Dateien. **/dev/shm** entspricht dem RAM Speicher der Instanz. **/tmp** entspricht der Festplatte der Instanz.
-- **MaxAllowedPacket**: Maximale Paketgröße
+- **MaxAllowedPacket**: Maximale Paketgröße.
 - **max_user_connections**: Anzahl der erlaubten Simultanverbindungen je Benutzer.
 - **AutoCommit**: Legt fest, ob die SQL-Transaktionen automatisch bestätigt werden oder nicht.
 - **Interactive_timeout**: Zeit (in Sekunden), während der der Server auf eine Aktivität auf einer interaktiven Verbindung wartet, bevor er diese schließt.
@@ -126,15 +118,15 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 >
 > <b>Tmpdir</b>:
 >
-> \- /dev/shm: Der Datenbankserver wird die Hälfte seines RAM-Speichers diesem Verzeichnis für mehr Leistung zuweisen.
+> - /dev/shm: Der Datenbankserver wird die Hälfte seines RAM-Speichers diesem Verzeichnis für mehr Leistung zuweisen.
 >
-> \- /tmp: Der Server wird auf seiner Festplatte unbegrenzten Speicherplatz für dieses Verzeichnis freigeben, aber deutlich zu Lasten der Performance. Wir empfehlen Ihnen, dieses Verzeichnis nur gelegentlich für größere Operationen zu verwenden.
+> - /tmp: Der Server wird auf seiner Festplatte unbegrenzten Speicherplatz für dieses Verzeichnis freigeben, aber deutlich zu Lasten der Performance. Wir empfehlen Ihnen, dieses Verzeichnis nur gelegentlich für größere Operationen zu verwenden.
 >
 
 > [!primary]
 >
 > <b>sql_mode</b>:
->   
+>  
 > &emsp;&emsp;Standardmodus von MariaDB 10.1:
 > <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>
 > 
@@ -201,7 +193,7 @@ show variables like "version";
 > [!warning]
 >
 > Es ist nicht möglich, direkt von einer älteren Version zur neuesten zu wechseln. Die Zwischenversionen müssen einbezogen werden.
-> 
+>
 
 ### Logs und Messwerte
 
@@ -209,7 +201,7 @@ show variables like "version";
 
 So können Sie die Ausführungsdauer auf Ihrem Datenbankserver während der letzten 24 Stunden visualisieren.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die **Statistiken zur Ausführungsdauer der Anfragen**.
 
@@ -218,12 +210,12 @@ Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die
 #### Zugang zu Slow-Query-Logs
 
 > **Definition von "slow query log"**
-> 
+>
 > Es handelt sich um Anfragen, die zu lange benötigten, bis sie ausgeführt wurden. Der Wert wird auf „1 Sekunde“ auf unseren Datenbankservern in der **“long_query_time"**-Variable festgelegt.
 
-Diese Logs (**"slow-query.log"**) können im Wurzelverzeichnis des SFTP-Zugangs Ihres Datenbankservers abgerufen werden. 
+Diese Logs (**"slow-query.log"**) können im Wurzelverzeichnis des SFTP-Zugangs Ihres Datenbankservers abgerufen werden.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf Datenbanken. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf Datenbanken. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 Im Kasten `Allgemeine Informationen` finden Sie den Abschnitt **SFTP** unter **Verbindungsinformationen**.
 
@@ -233,10 +225,9 @@ Um sich via **SFTP** einzuloggen, können Sie den Client von FileZilla verwenden
 
 Wenn diese Datei leer ist, haben Sie keine langsamen Anfragen.
 
-
 #### Überprüfung der RAM Nutzung
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken zum verwendeten RAM**.
 
@@ -307,6 +298,6 @@ Verwenden Sie beispielsweise nicht **"HAVING"**. Dies erhöht die Zahl der Abfra
 
 ## Weiterführende Informationen
 
-[Verzeichnis von IP-Adressen für die Webhosting Cluster](../verzeichnis-der-ip-adressen-web-hosting-cluster/)
+[Verzeichnis von IP-Adressen für die Webhosting Cluster](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
