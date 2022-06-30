@@ -16,8 +16,8 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ## Requirements
 
-- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -43,7 +43,7 @@ The list of available backups will appear. Click on the `...`{.action} button to
 
 > [!warning]
 >
-> Restoration involves overwriting the contents of the database, potentially resulting in data loss. If you are not sure what you are doing, please back up beforehand.
+> Restoration involves overwriting the contents of the database, potentially resulting in data loss. If you are not sure what you are doing, please create a backup beforehand.
 > 
 
 #### Importing a local backup
