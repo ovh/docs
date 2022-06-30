@@ -1,16 +1,21 @@
 ---
-title: Démarrage en mode reprise d'activité
-slug: cluster-failover
-excerpt: "Plan d'action pour redémarrer sur un autre site en cas de problème sur le site d'origine"
+title: Réplication avancée avec LEAP
+slug: leap-replication
+excerpt: "Mise en place de réplications avancées avec LEAP"
 section: Plan de reprise d'activité
-order: 03
+order: 05
 ---
 
 **Dernière mise à jour le 18/02/2022**
 
 ## Objectif
 
-Cette page montre comment mettre en place une réplication entre cluster
+
+
+
+Cette page montre comment mettre en place une réplication entre cluster avec LEAP
+
+
 
 
 ***Documentation à faire completement quand deux clusters seront disponibles***
