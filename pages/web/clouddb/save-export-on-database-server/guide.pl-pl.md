@@ -10,7 +10,7 @@ order: 4
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 03-02-2022**
+**Ostatnia aktualizacja z dnia 27-06-2022**
 
 ## Wprowadzenie
 
@@ -20,16 +20,17 @@ Baza danych może zawierać dużą liczbę informacji niezbędnych dla Twojej st
 
 ## Wymagania początkowe
 
-- Posiadanie [oferty Cloud Databases](https://www.ovh.pl/cloud-databases/)
+- Posiadanie [instancji CloudDB](https://www.ovh.com/pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
 > [!primary]
 >
-> Pamiętaj, że oferty Nie ma dostępu "root" super użytkownik.
-> <br> Ogólne komendy SQL działają normalnie, a oprogramowanie typu HeidiSQL, SQuirreL SQL lub Adminer są w pełni kompatybilne.
-> 
+> Pamiętaj, że rozwiązania [CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
+> <br> - Pamiętaj, że nie ma dostępu "root".
+> <br> - Ogólne polecenia SQL działają normalnie, a oprogramowanie takie jak HeidiSQL, SQuirreL lub Adminer jest w pełni kompatybilne.
+>
 
 ### Tworzenie kopii zapasowych i eksportowanie bazy danych w Panelu klienta
 
@@ -92,7 +93,7 @@ mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_
 
 > [!warning]
 >
-> - Aby zapobiec dostępowi strony trzeciej do tego pliku zawierającego dane wrażliwe, zapoznaj się z przewodnikiem dotyczącym bezpieczeństwa dostępu do tego pliku: ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - Aby zapobiec dostępowi strony trzeciej do tego pliku zawierającego dane wrażliwe, zapoznaj się z przewodnikiem dotyczącym bezpieczeństwa dostępu do tego pliku: ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/).
 > - Operacja ta jest możliwa tylko z poziomu hostingu OVHcloud.
 >
 
@@ -118,7 +119,7 @@ pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de
 
 > [!warning]
 >
-> - Aby zapobiec dostępowi strony trzeciej do tego pliku zawierającego dane wrażliwe, zapoznaj się z przewodnikiem dotyczącym bezpieczeństwa dostępu do tego pliku: ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - Aby zapobiec dostępowi strony trzeciej do tego pliku zawierającego dane wrażliwe, zapoznaj się z przewodnikiem dotyczącym bezpieczeństwa dostępu do tego pliku: ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/).
 > - Operacja ta jest możliwa tylko z poziomu hostingu OVHcloud.
 >
 
