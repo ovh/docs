@@ -16,14 +16,14 @@ Nach einem Fehler auf Ihrer Datenbank müssen Sie in der Lage sein, ein Backup w
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud-databases/) (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud-databases/) (auch in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass die Dienste [CloudDB](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Datenbankverwaltungssystem gewähren, sondern auf die darauf gehosteten Datenbanken. 
+> Beachten Sie, dass die [CloudDB Dienste](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Datenbankserver gewähren, sondern auf die darauf gehosteten Datenbanken. 
 > <br> - Es gibt keinen "root"-Zugang. 
 > <br> - Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 
@@ -37,13 +37,13 @@ In der Spalte **Sicherungen** indiziert die Zahl die für Ihre Datenbank verfüg
 
 Klicken Sie auf `...`{.action} rechts neben der Datenbank und dann auf `Die Sicherungen anzeigen`{.action}.
 
-Die Liste der verfügbaren Backups erscheint. Klicken Sie auf den Button `...`{.action} rechts neben dem ausgewählten Backup und dann auf `Sicherung  wiederherstellen`{.action}.
+Die Liste der verfügbaren Backups erscheint. Klicken Sie auf den Button `...`{.action} rechts neben dem ausgewählten Backup und dann auf `Sicherung wiederherstellen`{.action}.
 
 ![clouddb](images/private-sql-restore01.png){.thumbnail}
 
 > [!warning]
 >
-> Die Wiederherstellung bedeutet, dass der Inhalt der Datenbank überschrieben wird, was zu einem möglichen Datenverlust führen kann. Wenn Sie sich nicht sicher sind, was Sie tun, nehmen Sie bitte ein Backup vor.
+> Die Wiederherstellung bedeutet, dass der Inhalt der Datenbank überschrieben wird, was zu einem Datenverlust führen kann. Wenn Sie sich nicht sicher sind, was Sie tun, nehmen Sie bitte ein Backup vor.
 > 
 
 #### Eine lokale Sicherung importieren
@@ -122,13 +122,13 @@ cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --pa
 
 > [!warning]
 >
-> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/).
 > - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 >
 
 ### Import von PostgreSQL Datenbanken außerhalb des Kundencenters
 
-In einigen Fällen ist der auf Ihrem Datenbankserver verfügbare RAM nicht für die Ausführung des gewünschten Imports außerhalb des Kundencenters verfügbar. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren).
+In einigen Fällen reicht der auf Ihrem Datenbankserver verfügbare RAM möglicherweise nicht für die Ausführung des gewünschten Imports außerhalb des Kundencenters aus. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren).
 
 #### PostgreSQL Datenbank über die Kommandozeile importieren
 
