@@ -119,7 +119,7 @@ En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* 
 
 > [!primary]
 > 
-> L’enregistrement DNAME est généralement utilisé dans le cadre d’un changement de nom de société ou lorsqu’un utilisateur dispose de plusieurs extensions de domaines (.fr, .net, .com, .info, …) qu’il souhaite rediriger entre eux facilement.
+> L’enregistrement DNAME est généralement utilisé dans le cadre d’un changement de nom de société. Il peut aussi être mis en place lorsqu’un utilisateur dispose de plusieurs extensions de domaines (.fr, .net, .com, .info, …) pour les rediriger entre eux facilement.
 >
 
 **Champ NS** (**N**ame **S**erver) : Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](../generalites-serveurs-dns/) » pour plus d'informations.
