@@ -16,14 +16,14 @@ With an OVHcloud Web Hosting plan, you get a storage space to host your websites
 > 
 > Backups offered by OVHcloud for shared hosting are non-contractual. We offer them in addition to your services to help you in urgent situations. We recommend that you regularly perform your own security backups to avoid any data loss.
 > 
-> When you make a security backup for your site and use a database, also make a backup of your database. Please refer to our guide on [retrieving the backup of a Web Hosting plan’s database](https://docs.ovh.com/ie/en/hosting/web_hosting_database_export_guide/).
+> When you do a security backup for your site and you are using a database, also create a backup of your database. Please refer to our guide on [retrieving the backup of a Web Hosting plan’s database](https://docs.ovh.com/ie/en/hosting/web_hosting_database_export_guide/).
 > 
 
 **Find out how to restore a file or an entire storage space from your Web Hosting plan.**
 
 ## Requirements
 
-- a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} (please note that this does not work with [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/))
+- A [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} (please note that this does not work with [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/)).
 - Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, or have the FTP user password required to access your storage space. 
 
 ## Instructions
@@ -68,11 +68,11 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 > In this case:
 >
 > - Our teams send an email to the hosting [administrator contact](https://docs.ovh.com/ie/en/customer/managing-contacts/#access-contact-management).
-> - The “maintenance” status will appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. In the `Web Cloud`{.action} section, click on your service in the `Web Hosting`{.action} section, then on the `General information`{.action} tab.
+> - The “maintenance” status will appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
 > - The hosted site(s) will display a "403 Forbidden" page.
 >
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click `Web Hosting`{.action}, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click `Hosting plans`{.action}, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 
@@ -111,7 +111,7 @@ First of all, decide which software or interface you would like to use in order 
 
 - **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](https://docs.ovh.com/ie/en/hosting/web_hosting_cyberduck_user_guide_on_mac/){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
-- **Using the FTP Explorer interface.** To use this method, you will need to log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Once you have logged in, click `Web hosting`{.action}, then choose the Web Hosting plan concerned. Go to the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
+- **Using the FTP Explorer interface.** To use this method, you will need to log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Once you have logged in, click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Go to the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
 
 Once you are ready to start making changes, continue to the next step.
 
