@@ -585,9 +585,8 @@ A __client__ in Keycloak is an entity that can request a Keycloak server to auth
 
 <ol start="2">
   <li>Click on <code class="action">Create</code> in the top-right corner of the table.</li>
+  <li>Fill in the form with the following parameters:</li>
 </ol>
-
-3. Fill in the form with the following parameters:
 
 ```text
 Client ID: k8s-oidc-auth
@@ -596,14 +595,10 @@ Root URL: https: https://keycloak.your-domain-name.tld/
 ```
 
 In our example, the new Client informations are:
-
 ![Keycloak create client](images/keycloak-create-client.png)
 
 <ol start="4">
   <li>Then click on the <code class="action">Save</code> button.</li>
-</ol>
-
-<ol start="5">
   <li>In the new created client, Find the <code>Access Type</code> field and set its value to <code>confidential</code> to require a secret to initiate the login protocol. Then click on the <code class="action">Save</code> blue button to save the change.
 </ol>
 
@@ -611,19 +606,11 @@ In our example, the new Client informations are:
 
 <ol start="6">
   <li>Then click on the <code class="action">Credentials</code> tab. Find the <code>Valid Redirect URIs</code> field and set the following value: <code>*</code></li>
-</ol>
-
-<ol start="7">
-  <li>Find the <code>Admin URL</code> and the <code>Web Origins</code> fields and set their values to your defined domain name if it is not already done. 
-  
-  In our example: <code>https://keycloak.example.com/</code>.
+  <li>Find the <code>Admin URL</code> and the <code>Web Origins</code> fields and set their values to your defined domain name if it is not already done.<br><br>
+  In our example: <code>https://keycloak.example.com/</code>.<br>
   __\/!\ Be careful to use the HTTPS schema only /!\\__</li>
- </ol> 
-  
-<ol start="8">
   <li>Save your changes.</li>
 </ol>  
-
 
 #### Create a USER
 
