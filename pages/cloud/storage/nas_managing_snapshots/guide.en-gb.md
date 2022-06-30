@@ -11,7 +11,7 @@ section: NAS
 
 OVHcloud HA-NAS allows you to create and manage file volumes that can be accessed over a network. 
 
-**This guide explains how to manage the snapshots of a HA-NAS partiton via the OVHcloud API.**
+**This guide explains how to manage the snapshots of a HA-NAS partition via the OVHcloud API.**
 
 ## Requirements
 
