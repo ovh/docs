@@ -6,24 +6,28 @@ section: 'Konfiguracja'
 order: 6
 ---
 
-**Ostatnia aktualizacja z dnia 12-05-2022**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 30-06-2022**
 
 ## Wprowadzenie
 
-Za pomocą serwerów baz Cloud Databases możesz wpłynąć na globalne parametry serwera. Możesz również wyświetlić aktywność swojego serwera. 
+Za pomocą serwerów baz CloudDB możesz wpłynąć na globalne parametry serwera. Możesz również wyświetlić aktywność swojego serwera. 
 
 **Dowiedz się, jak skonfigurować i zoptymalizować serwer baz danych.**
 
 ## Wymagania początkowe
 
-- Posiadanie [Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie [instancji CloudDB](https://www.ovh.pl/cloud/cloud-databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
 ### Wyświetl ogólne informacje o serwerze baz danych
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji SQL. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji SQL. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
 
 W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji SQL. Prosimy o poświęcenie kilku minut na sprawdzenie, czy wyświetlane informacje są poprawne lub zgodne z poniższymi wskazówkami.
 
@@ -32,18 +36,23 @@ W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji SQL. Pr
 |Status usługi|Pokazuje, czy instancja jest uruchomiona, w trakcie restartu lub zawieszona. Twoja instancja musi być uruchomiona, abyś mógł przeprowadzać na niej działania.|
 |Typ|Pokazuje system baz danych używany przez serwer. Jeśli nie masz pewności, czy stosowany typ jest prawidłowy, wiedz, że najczęściej wybieranym jest "MySQL", ale istnieją również inne (PostgreSQL, MariaDB). Na przykład, jeśli Twoja strona WWW korzysta z modułu WordPress, system MySQL jest najlepiej do tego dopasowany.|
 |Wersja|Pokazuje wersję systemu baz danych używaną przez serwer. Upewnij się, czy Twoja strona WWW jest kompatybilna z wybraną wersją.|
+|Saturacja CPU|Pokazuje czas procesora podczas wysycenia w ciągu ostatnich 24 godzin.|
 |RAM|Pokazuje pamięć operacyjną dostępną dla Twojej instancji oraz ewentualne przekroczenia pamięci. Serwer baz danych ma dedykowane i gwarantowane zasoby, jakimi jest pamięć RAM. Jeśli zajdzie taka potrzeba, możesz zwiększyć pamięć RAM, jeśli zużyjesz wszystkie zasoby pamięci Twojej instancji.|
 |Infrastruktura|Pokazuje infrastrukturę używaną przez Twoją instancję. Jest to wewnętrzne oznaczenie infrastruktury OVHcloud.|
 |Centrum danych|Pokazuje centrum danych, w którym została uruchomiona instancja. Upewnij się, czy centrum danych Twojej instancji jest takie samo, jak centrum danych hostingu OVHcloud, na którym Twoja strona WWW jest lub będzie hostowana.|
-|Host|Pokazuje serwer OVHcloud, na którym utworzona jest Twoja instancja. Jest to wewnętrzne oznaczenie infrastruktury OVHcloud i może być wykorzystywane w komunikatach dotyczących [incydentów OVHcloud](https://web-cloud.status-ovhcloud.com/){.external}.|
+|Host|Pokazuje serwer OVHcloud, na którym utworzona jest Twoja instancja. Jest to wewnętrzne oznaczenie infrastruktury OVHcloud i może być wykorzystywane w komunikatach dotyczących [incydentów OVHcloud](https://web-cloud.status-ovhcloud.com/).|
 
 ![Informacje ogólne](images/privatesql01-General-information.png){.thumbnail}
 
-### Autoryzacja adresu IP ( Tylko w ofercie Cloud Databases )
+## Zarządzaj dostępami
+
+Usługa CloudDB jest dostępna z poziomu hostingu OVHcloud lub/i z sieci publicznej.
+
+#### Zatwierdź adres IP
 
 Aby uzyskać dostęp do instancji CloudDB, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.
 
-W Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji SQL. 
+W Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji CloudDB. 
 
 Kliknij kartę Autoryzowane `IP`{.action}, a następnie przycisk `Dodaj adres IP/maskę`{.action}.
 
@@ -53,27 +62,15 @@ W oknie, które się wyświetli wskaż adres IP lub maskę, którą chcesz autor
 
 ![cloud databases - bazy danych na instancji](images/clouddb-add-ip-step2.png){.thumbnail}
 
-#### Autoryzacja połączeń do hostingu OVHcloud 
+#### Autoryzacja połączeń do hostingu OVHcloud
 
-W przypadku hostingu OVHcloud należy autoryzować adres IP "bramy wyjściowej" (gateway). 
-
-Aby uzyskać adres IP "**bramy wyjściowej**", przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Hosting`{.action}. Wybierz hosting z listy i kliknij zakładkę `FTP - SSH`.
-
-Na stronie znajdziesz wpis **"Serwer FTP"**, pod którym wpiszesz numer klastra, na którym się znajdujesz.
+W przypadku hostingu OVHcloud możesz po prostu zaznaczyć opcję `Zezwól hostingowi OVHcloud na dostęp do bazy danych`.
 
 ![cloud databases - bazy danych na instancji](images/clouddb-add-ip-step3.png){.thumbnail}
 
-Po odnalezieniu numeru klastra, na którym znajduje się Twój hosting, sprawdź stronę ["Lista adresów IP klastrów i hostingów WWW"](../lista-adresow-ip-klastrow-i-hostingow-www/){.external}. Znajdziesz tam adres IP "**bramy wyjściowej**" dla każdego klastra.
+### Zmień ofertę CloudDB
 
-> [!warning]
->
-> **Adres IP** klastra nie będzie działał, aby zezwolić na połączenie z serwerem Cloud DB. Należy dodać **adres IP "bramy wyjściowej"**.
->
-
-
-### Zmiana oferty serwera baz danych
-
-Aby zmienić ofertę serwera baz danych, przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych.
+Aby zmienić ofertę CloudDB, przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych.
 W zakładce **"Informacje ogólne"**, która jest wyświetlana domyślnie, kliknij `...`{.action} po prawej stronie słowa "RAM", a następnie `Zmień ilość pamięci RAM`{.action}, aby przejść do zlecenia zamówienia na tą zmianę.
 
 ![clouddb](images/private-sql-order-ram01.png){.thumbnail}
@@ -82,19 +79,19 @@ Wybierz żądaną ilość pamięci RAM i kliknij `Dalej`{.action}. Następnie mo
 
 > [!primary]
 >
-> Pozostały czas do obecnego wygaśnięcia zostanie odpowiednio przekalkulowany. Prorata będzie oparta na dacie wygaśnięcia serwera SQL, a nie na dacie złożonego zamówienia.
+> Prorata zostanie wpłacona, jeśli pozostaniesz kilka miesięcy przed wygaśnięciem usługi. Kwota proporcjonalna zostanie obliczona na podstawie daty wygaśnięcia instancji CloudDB, a nie na podstawie daty wygaśnięcia zamówienia.
 > 
 
 Po zatwierdzeniu regulaminów zostaniesz przekierowany do zamówienia, abyś mógł uregulować tą zmianę. Zmiana zostanie wykonana w ciągu kilku godzin.
 
 > [!warning]
 >
->  Jeśli dysponujesz aktualnie darmowym prywatnym serwerem SQL w ramach oferty hosting Performance - zmiana oferty spowoduje, iż nie będzie on już darmowy.
+> Jeśli dysponujesz aktualnie darmowym CloudDB dzięki hostingowi Performance, zmiana oferty straci jej bezpłatność.
 > 
 
 ### Zmiana konfiguracji serwera baz danych
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę prywatnego serwera SQL. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę prywatnego serwera SQL.
 
 #### Instancja MySQL i MariaDB
 
@@ -124,9 +121,9 @@ W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefi
 >
 > <b>Tmpdir</b>:
 >
-> \- /dev/shm: Serwer baz danych przypisze połowę pamięci RAM do tego katalogu, aby uzyskać większą wydajność.
+> - /dev/shm: Serwer baz danych przypisze połowę pamięci RAM do tego katalogu, aby uzyskać większą wydajność.
 >
-> \- /tmp: Serwer przydzieli nielimitowaną przestrzeń dla tego katalogu na dysku twardym. Zalecamy korzystanie z tego katalogu tylko w przypadku sporadycznych, ciężkich operacji.
+> - /tmp: Serwer przydzieli nielimitowaną przestrzeń dla tego katalogu na dysku twardym. Zalecamy korzystanie z tego katalogu tylko w przypadku sporadycznych, ciężkich operacji.
 >
 
 > [!primary]
@@ -153,7 +150,7 @@ Wprowadź niezbędne zmiany i kliknij `Zatwierdź`{.action}.
 > [!warning]
 >
 > Każda zmiana wymaga restartu serwera baz danych.
-> 
+>
 
 #### Instancja PostgreSQL
 
@@ -173,8 +170,7 @@ Aby zmienić tę wersję, kliknij `Zmień wersję`{.action}.
 
 ![clouddb](images/private-sql-config04.png){.thumbnail}
 
-
-#### **Jak poznać dokładną wersję PostgreSQL, której używam?**
+#### Jak poznać dokładną wersję PostgreSQL, której używam?
 
 Wprowadź to polecenie w phpPgAdmin klikając na **bazę danych**, sekcja **"SQL"**, a następnie klikając `Uruchom`{.action}:
 
@@ -182,7 +178,7 @@ Wprowadź to polecenie w phpPgAdmin klikając na **bazę danych**, sekcja **"SQL
 select version();
 ```
 
-#### **Jak poznać dokładną wersję mySQL lub MariaDB, której używam?**
+#### Jak poznać dokładną wersję MySQL lub MariaDB, której używam?
 
 W tym celu wprowadź komendę w phpMyAdmin, w rubryce **"SQL"**, następnie kliknij `Uruchom`{.action}:
 
@@ -207,7 +203,7 @@ show variables like "version";
 
 Dzięki temu możesz wyświetlić czas wykonywania zapytań na serwerze baz danych w ciągu ostatnich 24 godzin.
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych.
 
 Przejdź do karty `Metryki` serwera baz danych. Wykres **"Statystyki czasu wykonywania zapytań"**.
 
@@ -219,22 +215,21 @@ Przejdź do karty `Metryki` serwera baz danych. Wykres **"Statystyki czasu wykon
 > 
 > Są to nieoptymalne zapytania, które trwają dłużej. Wartość jest ustawiona na 1 sekundę dla serwerów baz danych w zmiennej **"long_query_time"**.
 
-Logi te, nazywane **"slow-query.log"**, mogą zostać odzyskane z katalogu głównego przestrzeni SFTP Twojego serwera baz danych. 
+Logi te, nazywane **"slow-query.log"**, mogą zostać odzyskane z katalogu głównego przestrzeni SFTP Twojego serwera baz danych.
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych.
 
 W zakładce `informacje ogólne` sekcja **"SFTP"** w polu **"Informacje o logowaniu"**
 
 ![clouddb](images/private-sql-SFTP01.png){.thumbnail}
 
-Aby zalogować się przez **SFTP**, możesz skorzystać z programu Filezilla i z niniejszego przewodnika: [ "Korzystanie z programu FileZilla na Twoim hostingu"]( ../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/){.external}.
+Aby zalogować się przez **SFTP**, możesz skorzystać z programu Filezilla i z niniejszego przewodnika: [ "Korzystanie z programu FileZilla na Twoim hostingu"](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
 
 Jeśli ten plik jest pusty, to znaczy, że nie masz żadnych nieoptymalnych zapytań.
 
-
 #### Monitoruj zużytą pamięć RAM
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych.
 
 Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki pamięci RAM"**.
 
@@ -244,7 +239,7 @@ Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki pamięci RAM"
 
 Wykres ten pozwala na śledzenie, w ciągu ostatnich 24 godzin, obciążenia połączeń na minutę na serwerze bazy danych.
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych.
 
 Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki całkowitej liczby połączeń na minutę"**.
 
@@ -254,7 +249,7 @@ Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki całkowitej l
 
 Zalecamy optymalizację bazy danych w celu zapewnienia jej wysokiej wydajności. Wydajność polega na tym, że informacje zawarte w bazie danych są zwracane do skryptu, który je wzywa. Wymaga to ustrukturyzowanej i zoptymalizowanej bazy danych.
 
-#### **Indeksowanie bazy danych**
+#### Indeksowanie bazy danych
 
 Aby przyspieszyć wyszukiwanie podczas zapytania, należy dodać indeks do pól używanych w klauzulach WHERE.
 
@@ -263,15 +258,16 @@ Przykład: regularnie wyszukujesz osób w danym mieście. Zaindeksuj pole "miast
 ```sql
 ALTER TABLE 'test' ADD INDEX ('city')
 ```
-#### **Czyszczenie bazy danych**
+
+#### Czyszczenie bazy danych
 
 Niektóre z Twoich danych nie są już dostępne? Poprzez ich archiwizację, Twoje tabele będą mniej wypełnione, a wyszukiwania będą trwały krócej.
 
-#### **Ograniczenie wyświetlania**
+#### Ograniczenie wyświetlania
 
 Ogranicz wyświetlanie rekordów do ustalonej liczby (np. 10 na stronę), korzystając z limitowanej części zapytania SQL.
 
-#### **Łączenie zapytań**
+#### Łączenie zapytań
 
 Zbierz wszystkie zapytania na początku skryptu w poniższy sposób:
 
@@ -287,7 +283,8 @@ Boucles ...
 Wyświetlanie
 ...
 ```
-#### **Pobieranie tylko użytecznych danych**
+
+#### Pobieranie tylko użytecznych danych
 
 W zapytaniach SQL sprawdź, czy wybierasz tylko to, czego potrzebujesz, a przede wszystkim czy pamiętasz o połączeniach między tabelami.
 
@@ -297,12 +294,12 @@ Przykład:
 (where table1.pole = tabela2.pole2)
 ```
 
-#### **Unikanie opcji zużywających zbyt dużo zasobów**
+#### Unikanie opcji zużywających zbyt dużo zasobów
 
 Unikanie na przykład stosowania **"HAVING"**. Zwiększa to liczbę twoich zapytań. Podobnie należy unikać korzystania z **"GROUP BY"**, chyba że jest to bezwzględnie konieczne.
 
 ## Sprawdź również
 
-[Lista adresów IP klastrów i hostingów](../lista-adresow-ip-klastrow-i-hostingow-www/){.external}
+[Lista adresów IP klastrów i hostingów](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>.

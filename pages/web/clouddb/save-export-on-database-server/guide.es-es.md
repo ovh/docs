@@ -10,7 +10,7 @@ order: 4
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 03/02/2022**
+**Última actualización: 27/06/2022**
 
 ## Objetivo
 
@@ -20,15 +20,14 @@ Su base de datos puede contener una gran cantidad de información esencial para 
 
 ## Requisitos
 
-- Tener contratado un plan de [Cloud Databases](https://www.ovh.es/cloud-databases/).
+- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
-> [!primary]
->
-> Tenga en cuenta que los productos [Cloud Databases](https://www.ovh.es/cloud-databases/) no dan acceso al host, sino a las bases de datos alojadas en este, por lo que no hay accesos super usuario "root". Los comandos SQL genéricos funcionan con normalidad y los programas de tipo HeidiSQL, SQuirreL SQL o Adminer son totalmente compatibles.
-> 
+> Tenga en cuenta que las soluciones [CloudDB](https://www.ovh.es/cloud/cloud-databases/){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+> <br> - Tenga en cuenta que no hay acceso "root".
+> <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
 
 ### Guardar y exportar una base de datos desde el área de cliente
 
@@ -91,7 +90,7 @@ mysqldump —host=servidor —user=usuario —port=puerto —contraseña=contras
 
 > [!warning]
 >
-> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Uso de .htaccess para proteger con contraseña un directorio de su sitio web](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](https://docs.ovh.com/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
 > - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
 >
 
@@ -117,7 +116,7 @@ pg_dump —host=servidor —port=puerto —user=usuario —password=contraseña 
 
 > [!warning]
 >
-> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Uso de .htaccess para proteger con contraseña un directorio de su sitio web](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](https://docs.ovh.com/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
 > - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
 >
 
