@@ -69,7 +69,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 #### Enregistrements de pointage
 
-**A** (**A**ddress) : Relie un nom de domaine à une adresse IPv4. Par exemple, l'adresse IPv4 ("X.X.X.X" où les "X" sont des chiffres compris entre "0" et "255") du serveur où est hébergé votre site internet.
+**A** (**A**ddress) : Relie un nom de domaine à une adresse IPv4 "X.X.X.X" (où les "X" sont des chiffres compris entre "0" et "255"). Par exemple, l'adresse IPv4 du serveur où est hébergé votre site internet.
 
 **AAAA** (**A**ddress : Quatre lettre **A** car cet enregistrement est encodé sur quatre fois plus de bits que le champ de pointage **A** historique) : Relie un nom de domaine à une adresse IPv6. Par exemple, l'adresse IPv6 du serveur où est hébergé votre site internet.
 
@@ -82,7 +82,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 > [!primary]
 > 
-> Les IPv6 sont progressivement mises en place pour pallier au manque d'IPv4 qui arrive avec l'expansion grandissante du numérique. L'encodage sur 128 bits des IPv6 permets ainsi un plus grand nombre d'adresses IP disponibles.
+> Les IPv6 sont progressivement mises en place pour pallier au manque d'IPv4 qui arrive avec l'expansion grandissante du numérique. L'encodage sur 128 bits des IPv6 permet ainsi de fournir un plus grand nombre d'adresses IP.
 > 
 
 
