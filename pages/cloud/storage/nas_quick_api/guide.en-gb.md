@@ -135,7 +135,7 @@ To create a new ACL entry that will allow you to connect to your partition, use 
 >> >
 >> > **type** *
 >> >
->> >> ACL access type for this entry (**readonly** or **readwrite**)
+>> >> ACL access type for this entry: *readonly* or *readwrite*
 >
 
 > [!primary]
