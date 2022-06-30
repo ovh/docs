@@ -42,7 +42,7 @@ Vous pouvez y consulter les informations importantes concernant votre instance S
 
 ### Gérer vos accès
 
-Votre CloudDB est accessible depuis vos hébergements web OVHcloud ou/et depuis le réseau publique.
+Votre CloudDB est accessible depuis vos hébergements web OVHcloud ou/et depuis le réseau public.
 
 #### Autoriser une adresse IP
 
@@ -167,7 +167,7 @@ Pour modifier cette version, cliquez sur `Modifier la version`{.action}.
 ![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
-#### **Comment connaitre la version exacte de PostgreSQL que j'utilise ?**
+#### Comment connaitre la version exacte de PostgreSQL que j'utilise ?
 
 Entrez cette commande dans phpPgAdmin en cliquant sur **votre base de données**, rubrique **« SQL »**, puis en cliquant sur `Lancer`{.action} :
 
@@ -175,7 +175,7 @@ Entrez cette commande dans phpPgAdmin en cliquant sur **votre base de données**
 select version();
 ```
 
-#### **Comment connaitre la version exacte de MySQL ou MariaDB que j'utilise ?**
+#### Comment connaitre la version exacte de MySQL ou MariaDB que j'utilise ?
 
 Il faut pour cela entrer cette commande dans phpMyAdmin, rubrique **« SQL »**, puis cliquer sur `Exécuter`{.action} :
 
@@ -248,7 +248,7 @@ Dirigez-vous dans l'onglet `Métriques` de votre espace client. Vous trouverez l
 
 Il est conseillé d'entretenir sa base de données pour qu'elle soit performante. Ce que l'on entend par performante, c'est le fait que les informations contenues dans la base de données soient le plus rapidement retournées au script qui les demande. Pour cela, il faut une base de données structurée et optimisée.
 
-#### **Indexer la base de données**
+#### Indexer la base de données
 
 Pour augmenter la rapidité des recherches lors d'une requête, il faut mettre un index sur les champs qui sont utilisés dans les clauses WHERE.
 
@@ -258,15 +258,15 @@ Exemple : vous faites régulièrement une recherche de personne par rapport à l
 ALTER TABLE 'test' ADD INDEX ('city')
 ```
 
-#### **Purger la base de données**
+#### Purger la base de données
 
 Certaines de vos données ne sont plus consultées ? Archivez-les, vos tables seront moins remplies et les recherches iront plus vite.
 
-#### **Limitation d'affichage**
+#### Limitation d'affichage
 
 Limitez l'affichage des enregistrements à un nombre restreint (par exemple 10 par page) avec la partie LIMIT de votre requête SQL.
 
-#### **Regroupement des requêtes**
+#### Regroupement des requêtes
 
 Regroupez vos requêtes en début de script de cette manière :
 
@@ -283,7 +283,7 @@ Affichage ...
 ...
 ```
 
-#### **Récupérer uniquement les données utiles**
+#### Récupérer uniquement les données utiles
 
 Dans vos requêtes SQL, vérifiez que vous ne sélectionnez que ce dont vous avez besoin, et surtout que vous n'avez pas oublié les liaisons entre les tables.
 
@@ -293,7 +293,7 @@ Exemple :
 (where table1.champs = table2.champs2)
 ```
 
-#### **Éviter les options qui consomme trop de ressources**
+#### Éviter les options qui consomment trop de ressources
 
 Évitez d'utiliser **« HAVING »** par exemple. Elle alourdit vos requêtes. De la même manière, évitez d'utiliser **« GROUP BY »**, sauf si cela s'avère strictement nécessaire.
 

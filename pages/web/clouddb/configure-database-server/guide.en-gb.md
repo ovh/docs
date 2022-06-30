@@ -168,7 +168,7 @@ To edit this version, click `Update version`{.action}.
 
 ![clouddb](images/private-sql-config04.png){.thumbnail}
 
-#### **How do I know the exact version of PostgreSQL I am using?**
+#### How do I know the exact version of PostgreSQL I am using?
 
 Enter this command in phpPgAdmin by clicking on **Your database** in the **SQL** section, then click `Launch`{.action}:
 
@@ -176,7 +176,7 @@ Enter this command in phpPgAdmin by clicking on **Your database** in the **SQL**
 select version();
 ```
 
-#### **How do I know the exact version of MySQL or MariaDB that I am using?**
+#### How do I know the exact version of MySQL or MariaDB that I am using?
 
 To do this, enter this command in phpMyAdmin, in the **SQL** section, then click `Run`{.action}:
 

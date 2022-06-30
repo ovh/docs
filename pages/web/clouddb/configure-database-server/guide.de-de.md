@@ -172,7 +172,7 @@ Um die Version anzupassen, klicken Sie auf `Die Version ändern`{.action}.
 ![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
-#### **Wie kann ich die genaue Version von PostgreSQL erfahren, die verwendet wird?**
+#### Wie kann ich die genaue Version von PostgreSQL erfahren, die verwendet wird?
 
 Geben Sie diesen Befehl in phpPgAdmin ein, nachdem Sie auf **Ihre Datenbank** im Bereich **SQL** geklickt haben und klicken Sie dann auf `Ausführen`{.action}:
 
@@ -180,7 +180,7 @@ Geben Sie diesen Befehl in phpPgAdmin ein, nachdem Sie auf **Ihre Datenbank** im
 select version();
 ```
 
-#### **Woher weiß ich, welche Version von MySQL oder MariaDB ich benutze?**
+#### Woher weiß ich, welche Version von MySQL oder MariaDB ich benutze?
 
 Hierzu geben Sie in phpMyAdmin unter der Rubrik **SQL** den folgenden Befehl ein und klicken Sie dann auf `Ausführen`{.action}:
 

@@ -172,7 +172,7 @@ Para modificar esta versión, haga clic en `Editar la versión`{.action}.
 ![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
-#### **¿Cómo puedo conocer la versión exacta de PostgreSQL que utilizo?**
+#### ¿Cómo puedo conocer la versión exacta de PostgreSQL que utilizo?
 
 Introduzca este comando en phpMyAdmin haciendo clic en la **base de datos**, en la sección **"SQL"**, y haciendo clic en `Ejecutar`{.action}:
 
@@ -180,7 +180,7 @@ Introduzca este comando en phpMyAdmin haciendo clic en la **base de datos**, en 
 select version();
 ```
 
-#### **¿Cómo puedo conocer la versión exacta de MySQL o MariaDB que utilizo?**
+#### ¿Cómo puedo conocer la versión exacta de MySQL o MariaDB que utilizo?
 
 Para ello, introduzca el comando en phpMyAdmin, en la sección **"SQL"** y haga clic en `Ejecutar`{.action}.
 
@@ -266,11 +266,11 @@ ALTER TABLE 'test' ADD INDEX ('city')
 
 ¿Alguno de sus datos ya no está disponible? Archívelos, sus tabalas estarán optimizadas y las búsquedas irán más rápido.
 
-#### **Limitación de visualización**
+#### Limitación de visualización
 
 Limite la visualización de los registros a un número limitado (por ejemplo, 10 por página) con la parte LIMIT de su consulta SQL.
 
-#### **Agrupar las consultas**
+#### Agrupar las consultas
 
 Reagrupe sus peticiones al inicio del script de esta forma :
 
@@ -287,7 +287,7 @@ Visualización
 ...
 ```
 
-#### **Obtener sólo los datos útiles**
+#### Obtener sólo los datos útiles
 
 En sus consultas SQL, compruebe que solo seleccione lo que necesite, y sobre todo que no haya olvidado los enlaces entre tablas.
 
@@ -297,7 +297,7 @@ Por ejemplo:
 (where table1.champs = table2.champs2)
 ```
 
-#### **Evitar opciones que consuman demasiados recursos**
+#### Evitar opciones que consuman demasiados recursos
 
 Evite usar **"HAVING"**, por ejemplo. Está consulta incrementará el número de peticiones a la base de datos. De la misma manera, evita usar **"GROUP BY"**, a menos que sea estrictamente necesario.
 

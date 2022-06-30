@@ -171,7 +171,7 @@ Per modificare questa versione, clicca su `Modifica la versione`{.action}.
 ![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
-#### **Come conoscere la versione esatta di PostgreSQL che uso?**
+#### Come conoscere la versione esatta di PostgreSQL che uso?
 
 Inserisci questo comando in phpPgAdmin cliccando sul **tuo database**, rubrica **"SQL"**, poi su `Esegui`{.action}:
 
@@ -179,7 +179,7 @@ Inserisci questo comando in phpPgAdmin cliccando sul **tuo database**, rubrica *
 select version();
 ```
 
-#### **Come conoscere la versione esatta del MySQL o MariaDB che uso?**
+#### Come conoscere la versione esatta del MySQL o MariaDB che uso?
 
 Per effettuare questa operazione, inserisci questo comando in phpMyAdmin, sezione **"SQL"**, poi clicca su `Esegui`{.action}:
 
@@ -252,7 +252,7 @@ Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche d
 
 Si consiglia di mantenere il proprio database in modo da renderlo efficiente. Ciò che si intende per prestazione è che le informazioni contenute nel database sono reindirizzate il più rapidamente possibile allo script che le richiede. Per fare ciò, è necessario un database strutturato e ottimizzato.
 
-#### **Indicizza il database**
+#### Indicizza il database
 
 Per aumentare la rapidità delle ricerche in caso di una richiesta, è necessario inserire un indice sui campi utilizzati nelle clausole WHERE.
 
@@ -262,15 +262,15 @@ Esempio: fate regolarmente una ricerca di persona sulla città. Inserisci il cam
 ALTER TABLE 'test' ADD INDEX ('city')
 ```
 
-#### **Elimina il database**
+#### Elimina il database
 
 Alcuni dei tuoi dati non sono più utilizzati? Archiviateli, le vostre tabelle saranno meno piene e le ricerche saranno più veloci.
 
-#### **Limitazione della visualizzazione**
+#### Limitazione della visualizzazione
 
 Limita la visualizzazione dei record a un numero limitato (ad esempio 10 per pagina) con la sezione LIMIT della tua richiesta SQL.
 
-#### **Raggruppamento delle richieste**
+#### Raggruppamento delle richieste
 
 Raggruppa le tue richieste all'inizio dello script in questo modo:
 
@@ -287,7 +287,7 @@ Visualizzazione ...
 ...
 ```
 
-#### **Recupera solo i dati utili**
+#### Recupera solo i dati utili
 
 Nelle tue richieste SQL, verifica di selezionare solo quello di cui hai bisogno e soprattutto di non aver dimenticato i collegamenti tra le tabelle.
 
@@ -297,7 +297,7 @@ Esempio:
 (where table1.record = tavolo2.record2)
 ```
 
-#### **Evitare opzioni che utilizzano troppe risorse**
+#### Evitare opzioni che utilizzano troppe risorse
 
 Evita di utilizzare **"HAVING"**, ad esempio. Aumenta le tue richieste. Allo stesso modo, evita di utilizzare **"GROUP BY"**, tranne quando ciò sia strettamente necessario.
 

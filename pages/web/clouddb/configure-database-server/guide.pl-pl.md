@@ -170,7 +170,7 @@ Aby zmienić tę wersję, kliknij `Zmień wersję`{.action}.
 
 ![clouddb](images/private-sql-config04.png){.thumbnail}
 
-#### **Jak poznać dokładną wersję PostgreSQL, której używam?**
+#### Jak poznać dokładną wersję PostgreSQL, której używam?
 
 Wprowadź to polecenie w phpPgAdmin klikając na **bazę danych**, sekcja **"SQL"**, a następnie klikając `Uruchom`{.action}:
 
@@ -178,7 +178,7 @@ Wprowadź to polecenie w phpPgAdmin klikając na **bazę danych**, sekcja **"SQL
 select version();
 ```
 
-#### **Jak poznać dokładną wersję MySQL lub MariaDB, której używam?**
+#### Jak poznać dokładną wersję MySQL lub MariaDB, której używam?
 
 W tym celu wprowadź komendę w phpMyAdmin, w rubryce **"SQL"**, następnie kliknij `Uruchom`{.action}:
 
@@ -249,7 +249,7 @@ Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki całkowitej l
 
 Zalecamy optymalizację bazy danych w celu zapewnienia jej wysokiej wydajności. Wydajność polega na tym, że informacje zawarte w bazie danych są zwracane do skryptu, który je wzywa. Wymaga to ustrukturyzowanej i zoptymalizowanej bazy danych.
 
-#### **Indeksowanie bazy danych**
+#### Indeksowanie bazy danych
 
 Aby przyspieszyć wyszukiwanie podczas zapytania, należy dodać indeks do pól używanych w klauzulach WHERE.
 
@@ -259,15 +259,15 @@ Przykład: regularnie wyszukujesz osób w danym mieście. Zaindeksuj pole "miast
 ALTER TABLE 'test' ADD INDEX ('city')
 ```
 
-#### **Czyszczenie bazy danych**
+#### Czyszczenie bazy danych
 
 Niektóre z Twoich danych nie są już dostępne? Poprzez ich archiwizację, Twoje tabele będą mniej wypełnione, a wyszukiwania będą trwały krócej.
 
-#### **Ograniczenie wyświetlania**
+#### Ograniczenie wyświetlania
 
 Ogranicz wyświetlanie rekordów do ustalonej liczby (np. 10 na stronę), korzystając z limitowanej części zapytania SQL.
 
-#### **Łączenie zapytań**
+#### Łączenie zapytań
 
 Zbierz wszystkie zapytania na początku skryptu w poniższy sposób:
 
@@ -284,7 +284,7 @@ Wyświetlanie
 ...
 ```
 
-#### **Pobieranie tylko użytecznych danych**
+#### Pobieranie tylko użytecznych danych
 
 W zapytaniach SQL sprawdź, czy wybierasz tylko to, czego potrzebujesz, a przede wszystkim czy pamiętasz o połączeniach między tabelami.
 
@@ -294,7 +294,7 @@ Przykład:
 (where table1.pole = tabela2.pole2)
 ```
 
-#### **Unikanie opcji zużywających zbyt dużo zasobów**
+#### Unikanie opcji zużywających zbyt dużo zasobów
 
 Unikanie na przykład stosowania **"HAVING"**. Zwiększa to liczbę twoich zapytań. Podobnie należy unikać korzystania z **"GROUP BY"**, chyba że jest to bezwzględnie konieczne.
 

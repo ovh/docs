@@ -171,7 +171,7 @@ Para modificar esta versão, clique em `Alterar a versão`{.action}.
 ![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
-#### **Como saber a versão exata de PostgreSQL que utilizo?**
+#### Como saber a versão exata de PostgreSQL que utilizo?
 
 Introduza este comando no phpPgAdmin, clicando na sua **base de dados**, rubrica **«SQL»**, e a seguir em `Lançar`{.action}:
 
@@ -179,7 +179,7 @@ Introduza este comando no phpPgAdmin, clicando na sua **base de dados**, rubrica
 select version();
 ```
 
-#### **Como saber a versão exata de MySQL ou MariaDB que utilizo?**
+#### Como saber a versão exata de MySQL ou MariaDB que utilizo?
 
 Introduza este comando no phpMyAdmin, rubrica **«SQL»**, e a seguir em `Executar`{.action}:
 
@@ -252,7 +252,7 @@ Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **�
 
 Aconselhamos que faça a manutenção das suas bases de dados para que o seu desempenho permaneça elevado. Um desempenho elevado significa que as informações contidas na base são devolvidas rapidamente ao script que as solicita. Nesse sentido, as bases de dados precisam de ser estruturadas e otimizadas.
 
-#### **Indexar a base de dados**
+#### Indexar a base de dados
 
 Para aumentar a rapidez de pesquisa no seguimento de um pedido, é necessário indexar os campos utilizados nas cláusulas WHERE.
 
@@ -261,15 +261,15 @@ Por exemplo: costuma fazer pesquisas de pessoas relativamente à cidade. Indexe 
 ```sql
 ALTER TABLE 'test' ADD INDEX ('city')
 ```
-#### **Limpar a base de dados**
+#### Limpar a base de dados
 
 Já não consulta alguns dos seus dados? Se os arquivar, as tabelas ficarão menos cheias e as pesquisas levarão menos tempo.
 
-#### **Limite de exibição**
+#### Limite de exibição
 
 Limite a exibição dos registos a um número fixo (por exemplo, 10 por página) através da parte LIMIT do pedido SQL.
 
-#### **Agrupamento dos pedidos**
+#### Agrupamento dos pedidos
 
 Agrupe os pedidos no início do script da seguinte forma:
 
@@ -285,7 +285,7 @@ Loop through data...
 Display...
 ...
 ```
-#### **Obter apenas dados úteis**
+#### Obter apenas dados úteis
 
 Nos pedidos SQL, verifique se seleciona apenas aquilo de que precisa e, principalmente, se não se esqueceu das ligações entre as tabelas.
 
@@ -295,7 +295,7 @@ Por exemplo:
 (where table1.champs = table2.champs2)
 ```
 
-#### **Evitar as opções que consomem demasiados recursos**
+#### Evitar as opções que consomem demasiados recursos
 
 Por exemplo, evite utilizar **«HAVING»**; isto torna os pedidos mais pesados. Da mesma forma, evite utilizar **«GROUP BY»**, exceto em caso de verdadeira necessidade.
 
