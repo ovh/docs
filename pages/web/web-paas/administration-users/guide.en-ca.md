@@ -91,7 +91,7 @@ To add a user to a project or an environment, follow these steps:
 >> webpaas user:add user1@example.com -r admin
 >> ```
 >> 
->> ```     
+>>      
 
 The user has to create an account before they can contribute to the project.
 Once you add a user to a project, they receive an email with instructions.
@@ -126,7 +126,7 @@ To delete a user from a project, follow these steps:
 >> ```bash
 >> webpaas user:delete user1@example.com
 >> ```
->> ```     
+>>      
 
 Once you delete a user, they can no longer access the project.
 After you delete a user from a project or an environment type,
@@ -165,6 +165,6 @@ To change user permissions, follow these steps:
 >> 
 >> After you change a user's role for an environment type, you must trigger a redeploy each environment to propagate access changes. You can redeploy using the CLI command `webpaas redeploy`.
 >> 
->> ```     
+>>      
 
 
