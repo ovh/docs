@@ -71,15 +71,13 @@ To add a user to a project or an environment, follow these steps:
 >> ``` false     
 >> 
 >> 
->> <!--This is in HTML to get the icon not to break the list. -->
->> <ol>
->>   <li>Select the project where you want to add a new user.</li>
->>   <li>Click <strong>Settings</strong>.</li>
->>   <li>Click <strong>Access</strong>.</li>
->>   <li>Click <strong>+ Add</strong>.</li>
->>   <li>Add the user's details and choose their permissions.</li>
->>   <li>Click <strong>Save</strong>.</li>
->> </ol>
+>>1. Select the project where you want to add a new user.
+>>2. Click **Settings**.
+>>3. Click **Access**.
+>>4. Click **+ Add**.
+>>5. Add the user's details and choose their permissions.
+>>6. Click **Save**.
+>> 
 >> 
 >> 
 >> ```     
@@ -93,7 +91,7 @@ To add a user to a project or an environment, follow these steps:
 >> webpaas user:add user1@example.com -r admin
 >> ```
 >> 
->> ```     
+>>      
 
 The user has to create an account before they can contribute to the project.
 Once you add a user to a project, they receive an email with instructions.
@@ -110,15 +108,13 @@ To delete a user from a project, follow these steps:
 >> ``` false     
 >> 
 >> 
->> <!--This is in HTML to get the icon not to break the list. -->
->> <ol>
->>   <li>Select the project where you want to add a new user.</li>
->>   <li>Click <strong>Settings</strong>.</li>
->>   <li>Click <strong>Access</strong>.</li>
->>   <li>Expand the user you want to delete.</li>
->>   <li>Click <strong>Delete</strong>.</li>
->>   <li>Click <strong>Save</strong>.</li>
->> </ol>
+>>1. Select the project where you want to add a new user.
+>>2. Click **Settings**.
+>>3. Click **Access**.
+>>4. Expand the user you want to delete.
+>>5. Click **Delete**.
+>>6. Click **Save**.
+>> 
 >> 
 >> 
 >> ```     
@@ -130,7 +126,7 @@ To delete a user from a project, follow these steps:
 >> ```bash
 >> webpaas user:delete user1@example.com
 >> ```
->> ```     
+>>      
 
 Once you delete a user, they can no longer access the project.
 After you delete a user from a project or an environment type,
@@ -147,15 +143,13 @@ To change user permissions, follow these steps:
 >> ``` false     
 >> 
 >> 
->> <!--This is in HTML to get the icon not to break the list. -->
->> <ol>
->>   <li>Select the project where you want to add a new user.</li>
->>   <li>Click <strong>Settings</strong>.</li>
->>   <li>Click <strong>Access</strong>.</li>
->>   <li>Expand the user you want to delete.</li>
->>   <li>Click <strong>Delete</strong>.</li>
->>   <li>Click <strong>Delete</strong> to confirm.</li>
->> </ol>
+>> 1. Select the project where you want to add a new user.
+>> 2. Click **Settings**.
+>> 3. Click **Access**.
+>> 4. Expand the user you want to delete.
+>> 5. Click **Delete**.
+>> 6. Click **Delete** to confirm.
+>> 
 >> 
 >> 
 >> ```     
@@ -171,6 +165,6 @@ To change user permissions, follow these steps:
 >> 
 >> After you change a user's role for an environment type, you must trigger a redeploy each environment to propagate access changes. You can redeploy using the CLI command `webpaas redeploy`.
 >> 
->> ```     
+>>      
 
 
