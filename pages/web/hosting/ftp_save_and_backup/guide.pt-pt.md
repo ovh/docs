@@ -3,20 +3,32 @@ title: 'Restaurar o espaço de armazenamento do alojamento web'
 slug: restauracao-ftp-filezilla-area-de-cliente
 excerpt: 'Saiba como restaurar um ficheiro ou a totalidade do espaço de armazenamento do seu alojamento web'
 section: 'FTP e SSH'
+order: 3
 ---
 
-**Última atualização: 24/09/2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 20/06/2022***
 
-A sua solução de alojamento web da OVH dá-lhe acesso a um espaço de armazenamento no qual pode alojar os seus websites. Por várias razões (para eliminar ou alterar um ficheiro que torna o seu site inacessível, por exemplo), poderá ter de restaurar os dados do seu espaço de armazenamento ou simplesmente um ficheiro guardado nesse mesmo espaço.
+## Objetivo
+
+A sua solução de alojamento web da OVHcloud dá-lhe acesso a um espaço de armazenamento no qual pode alojar os seus websites. Por várias razões (para eliminar ou alterar um ficheiro que torna o seu site inacessível, por exemplo), poderá ter de restaurar os dados do seu espaço de armazenamento ou simplesmente um ficheiro guardado nesse mesmo espaço.
+
+> [!primary]
+> 
+> Os backups propostos pela OVHcloud para os alojamentos partilhados são extracontratuais. Oferecemos-lhe estas informações em complemento dos seus serviços, de forma a ajudá-lo em situações urgentes. Recomendamos que efetue regularmente as suas próprias cópias de segurança para corrigir eventuais perdas de dados.
+> 
+> Quando efetuar um backup de segurança para o seu site e utilizar uma base de dados, faça também um backup da sua base de dados. Não hesite em consultar o nosso guia para [recuperar a cópia de segurança da base de dados de um alojamento web](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/).
+>
 
 **Saiba como restaurar um ficheiro ou a totalidade do espaço de armazenamento do seu alojamento web.**
 
 ## Requisitos
 
-- Ter um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} (não funciona com um alojamento Cloud Web).
-- Consoante o método utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou dispor da palavra-passe do utilizador FTP que lhe permite aceder ao seu espaço de armazenamento. 
+- Ter um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} (não funciona com um alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/)).
+- Consoante o método utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou dispor da palavra-passe do utilizador FTP que lhe permite aceder ao seu espaço de armazenamento. 
 
 ## Instruções
 
@@ -28,7 +40,7 @@ Antes de começar, certifique-se de que as datas de restauração propostas perm
 - no domingo anterior, à 01h00 da manhã;
 - no domingo, duas semanas antes, à 01h00 da manhã.
 
-A OVH não poderá fornecer uma cópia de segurança mais antiga. Nesse caso, deverá utilizar uma cópia de segurança do website que realizou no passado. 
+A OVHcloud não poderá fornecer uma cópia de segurança mais antiga. Nesse caso, deverá utilizar uma cópia de segurança do website que realizou no passado. 
 
 Da mesma forma, deverá definir o método de restauração que vai utilizar:
 
@@ -39,13 +51,31 @@ Da mesma forma, deverá definir o método de restauração que vai utilizar:
 
 Aceda à informação correspondente ao método de restauração escolhido.
 
-- “[Restaurar o espaço de armazenamento a partir da Área de Cliente](https://docs.ovh.com/pt/hosting/restauracao-ftp-filezilla-area-de-cliente/#restaurar-o-espaco-de-armazenamento-a-partir-da-area-de-cliente){.external}”.
+- “[Restaurar o espaço de armazenamento a partir da Área de Cliente](#viacontrolpanel).
+- “[Restaurar um ficheiro a partir de um programa ou uma interface](#viainterface).
 
-- “[Restaurar um ficheiro a partir de um programa ou uma interface](https://docs.ovh.com/pt/hosting/restauracao-ftp-filezilla-area-de-cliente/#restaurar-um-ficheiro-a-partir-de-um-programa-ou-uma-interface){.external}”.
+### Restaurar o espaço de armazenamento a partir da Área de Cliente <a name="viacontrolpanel"></a>
 
-### Restaurar o espaço de armazenamento a partir da Área de Cliente
+> [!warning]
+>
+> Este método de restauro não está disponível se o seu alojamento foi colocado no modo "manutenção" pelos nossos administradores ou se não dispõe das permissões de acesso FTP (permissões `chmod`) na sequência de uma ação da sua parte.
+>
+> As permissões `chmod` na raiz do seu alojamento devem ser obrigatórias em `705` para que este método funcione.
+>
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Restaurar um backup`{.action}.
+> [!primary]
+> **Site em modo de manutenção**
+> 
+> Para determinar se o seu site foi colocado em modo "manutenção", consulte o nosso manual [O que fazer em caso de página “403 forbidden”?](https://docs.ovh.com/pt/hosting/diagnostico-403-forbidden/). 
+> 
+> Nesse caso:
+>
+> - As nossas equipas enviam um e-mail ao [administrador](https://docs.ovh.com/pt/customer/gestao_dos_contactos/#aceder-a-area-de-gestao-dos-contactos) do alojamento. 
+> - O estado "manutenção" aparece na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Web Cloud`{.action}, clique no serviço na secção `Alojamento`{.action} e, a seguir, no separador `Informações gerais`{.action}.
+> - O(s) site(s) alojado(s) apresenta(m) uma página "403 Forbidden".
+>
+
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Restaurar um backup`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 
@@ -67,7 +97,7 @@ Certifique-se de que não perdeu nenhum ficheiro no processo de restauração (p
 
 De seguida, clique no botão `Validar`{.action}.
 
-### Restaurar um ficheiro a partir de um programa ou uma interface
+### Restaurar um ficheiro a partir de um programa ou uma interface <a name="viainterface"></a>
 
 Esta operação realiza-se em vários passos. Certifique-se de que tem a palavra-passe do utilizador FTP para aceder ao seu espaço de armazenamento. 
 
@@ -84,7 +114,7 @@ Em primeiro lugar, deve decidir qual o programa ou interface que vai utilizar pa
 
 - **Cyberduck**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual [“Guia de utilização do Cyberduck (MAC)”](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_cyberduck_mac/){.external}. Este manual não substitui a documentação oficial do editor.
 
-- **FTP Explorer**: deverá aceder previamente através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para aceder, basta iniciar sessão, clicar em `Alojamentos`{.action} na barra à esquerda e, em seguida, selecionar o alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Explorador FTP`{.action}.
+- **FTP Explorer**: deverá aceder previamente através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para aceder, basta iniciar sessão, clicar em `Alojamentos`{.action} na barra à esquerda e, em seguida, selecionar o alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Explorador FTP`{.action}.
 
 Assim que estiver pronto para continuar a operação, avance para o passo seguinte.
 
@@ -132,4 +162,6 @@ Uma vez ligado, só precisará de restaurar os ficheiros. Para isso, navegue pel
 
 [Guia de utilização do Cyberduck (MAC)](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_cyberduck_mac/){.external}.
 
-Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}
+[Recuperar a cópia de segurança da base de dados de um alojamento web](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/)
+
+Fale com a nossa comunidade de utilizadores: [Comunidade OVHcloud](https://community.ovh.com/en/){.external}
