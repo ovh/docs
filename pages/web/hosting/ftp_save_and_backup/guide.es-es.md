@@ -3,6 +3,7 @@ title: 'Restaurar el espacio de almacenamiento de un alojamiento web'
 slug: restaurar-espacio-almacenamiento-alojamiento-web
 excerpt: 'Cómo restaurar un archivo o el espacio de almacenamiento completo de un alojamiento web'
 section: 'FTP y SSH'
+order: 3
 ---
 
 > [!primary]
