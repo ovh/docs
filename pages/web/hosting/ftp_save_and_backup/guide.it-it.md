@@ -1,23 +1,35 @@
 ---
 title: 'Ripristinare i dati dello spazio di storage di un hosting Web'
-excerpt: 'Come recuperare un file o l’intero contenuto dello spazio di storage di un hosting Web OVH'
+excerpt: 'Come recuperare un file o l’intero contenuto dello spazio di storage di un hosting Web OVHcloud'
 slug: web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla
 legacy_guide_number: g1593
 section: 'FTP e SSH'
+order: 3
 ---
 
-**Ultimo aggiornamento: 15/04/2019**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 20/06/2022**
 
 ## Obiettivo
 
-Le soluzioni di hosting Web OVH includono uno spazio di storage in cui è possibile ospitare i tuoi siti Internet. Per diversi motivi potrebbe essere necessario ripristinare tutti i dati in esso contenuti o un file specifico, ad esempio nel caso in cui il tuo sito risulti irraggiungibile in seguito alla rimozione o alla modifica errata di un file.
+Le soluzioni di hosting Web OVHcloud includono uno spazio di storage in cui è possibile ospitare i tuoi siti Internet. Per diversi motivi potrebbe essere necessario ripristinare tutti i dati in esso contenuti o un file specifico, ad esempio nel caso in cui il tuo sito risulti irraggiungibile in seguito alla rimozione o alla modifica errata di un file.
 
-**Questa guida ti mostra come ripristinare un file o l’intero contenuto dello storage del tuo hosting Web OVH.**
+> [!primary]
+> 
+> I backup proposti da OVHcloud per gli hosting condivisi sono non contrattuali. In aggiunta ai tuoi servizi, ti offriamo le nostre soluzioni per aiutarti in caso di emergenze. Ti consigliamo di effettuare regolarmente i backup di sicurezza necessari per far fronte alle eventuali perdite di dati.
+> 
+> Quando effettui un backup di sicurezza per il tuo sito e utilizzi un database, fai anche un backup del tuo database. Consulta la guida per [recuperare il backup del database di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/).
+> 
+
+**Questa guida ti mostra come ripristinare un file o l’intero contenuto dello storage del tuo hosting Web OVHcloud.**
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} (escluso il servizio Cloud Web)
-- In base al metodo utilizzato, disporre dell’accesso alla gestione della soluzione di hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o della password FTP per accedere allo spazio di storage 
+- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} (escluso il servizio [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/))
+- In base al metodo utilizzato, disporre dell’accesso alla gestione della soluzione di hosting Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o della password FTP per accedere allo spazio di storage 
 
 ## Procedura
 
@@ -29,24 +41,42 @@ Prima di iniziare, assicurati che le date di ripristino disponibili ti consentan
 - domenica precedente, alle 01:00 del mattino
 - domenica di due settimane prima, alle 01:00 del mattino
 
-OVH non sarà in grado di fornirti backup antecedenti: in caso di necessità, dovrai utilizzare un backup eseguito personalmente. 
+OVHcloud non sarà in grado di fornirti backup antecedenti: in caso di necessità, dovrai utilizzare un backup eseguito personalmente. 
 
 Inoltre, dovrai indicare il metodo di ripristino che intendi adottare:
 
 |Metodo di ripristino|Descrizione|
 |---|---|
-|Ripristino dallo Spazio Cliente OVH|Ripristina tutti i dati dello spazio di storage. L’intero contenuto corrente sarà sostituito con quello del backup selezionato.|
+|Ripristino dallo Spazio Cliente OVHcloud|Ripristina tutti i dati dello spazio di storage. L’intero contenuto corrente sarà sostituito con quello del backup selezionato.|
 |Ripristino da un software o un’interfaccia Web|Permette di accedere in sola lettura a un backup dello spazio di storage. Questo metodo, più tecnico, consente di recuperare uno o più file di una data anteriore senza sovrascrivere completamente il contenuto dello spazio di storage.|
 
 Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui nella lettura di questa guida nel paragrafo corrispondente:
 
-- [Ripristina i dati dello storage dallo Spazio Cliente OVH](./#ripristina-i-dati-dello-storage-dallo-spazio-cliente-ovh){.external}
+- [Ripristina i dati dello storage dallo Spazio Cliente OVHcloud](#viacontrolpanel)
+- [Ripristina un file da un software o un’interfaccia Web](#viainterface)
 
-- [Ripristina un file da un software o un’interfaccia Web](.#ripristina-un-file-da-un-software-o-uninterfaccia-web){.external}
+### Ripristina i dati dello storage dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
 
-### Ripristina i dati dello storage dallo Spazio Cliente OVH
+> [!warning]
+>
+> Questo metodo di ripristino non è disponibile se il tuo hosting è stato impostato in modalità manutenzione dai nostri amministratori o se non dispone dei diritti di accesso FTP (diritti `chmod`) in seguito ad un'azione da parte tua.
+>
+> Perché questo metodo funzioni è necessario che i diritti `chmod` alla radice del tuo hosting siano obbligatoriamente nel `705`.
+>
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e, nella scheda `FTP - SSH`{.action}, clicca sul pulsante `Ripristina un backup`{.action}.
+> [!primary]
+> **Sito in modalità manutenzione**
+> 
+> Per verificare se il tuo sito è stato impostato in modalità manutenzione, consulta la nostra guida [Cosa fare in caso di pagina “403 forbidden”?](https://docs.ovh.com/it/hosting/diagnostic-403-forbidden/). 
+> 
+> In questo caso:
+>
+> - I nostri team inviano un'email al [contatto amministratore](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/#accedi-alla-pagina-di-gestione-dei-contatti) dell'hosting. 
+> - Lo stato di "manutenzione" compare nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nella sezione `Web Cloud`{.action}, clicca sul tuo servizio nella sezione `Hosting`{.action} e poi sulla scheda `Informazioni generali`{.action}.
+> - Il(i) sito(i) ospita(i) mostra(no) una pagina "403 Forbidden".
+>
+
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e, nella scheda `FTP - SSH`{.action}, clicca sul pulsante `Ripristina un backup`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 
@@ -68,7 +98,7 @@ Assicurati che questa azione non comporti la perdita di dati, ad esempio di un f
 
 Clicca su `Conferma`{.action} per avviare l’operazione.
 
-### Ripristina un file da un software o un’interfaccia Web
+### Ripristina un file da un software o un’interfaccia Web <a name="viainterface"></a>
 
 Questa operazione prevede diversi step. Assicurati di avere a disposizione la password dell’utente FTP per poter accedere allo spazio di storage. 
 
@@ -85,7 +115,7 @@ Per prima cosa, definisci quale software o interfaccia utilizzerai per accedere 
 
 - **Cyberduck**: il download di questo client è disponibile dal sito ufficiale. Per maggiori informazioni consulta la nostra [guida all’utilizzo di Cyberduck (MAC)](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_cyberduck_mac/){.external}, tenendo però presente che non si sostituisce alla documentazione ufficiale del software.
 
-- **FTP Explorer**: questa interfaccia è disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}: seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `FTP - SSH`{.action} e poi sul pulsante `FTP Explorer`{.action}.
+- **FTP Explorer**: questa interfaccia è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}: seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `FTP - SSH`{.action} e poi sul pulsante `FTP Explorer`{.action}.
 
 A questo punto, prosegui con lo step successivo.
 
@@ -134,5 +164,7 @@ A questo punto non ti resta che ripristinare i file: recuperali esplorando il co
 [Hosting condiviso: guida all’utilizzo di Cyberduck (MAC)](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_cyberduck_mac/){.external}
 
 [Modificare la password di un utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}
+
+[Recuperare il backup del database di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
