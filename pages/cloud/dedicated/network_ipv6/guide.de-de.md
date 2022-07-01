@@ -59,7 +59,7 @@ Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wen
 
 >  [!warning]
 > 
-> Erstellen Sie vor der Änderung einer Konfigurationsdatei immer ein Backup des Originals, um im Problemfall darauf zurückzukommen. 
+> Erstellen Sie vor der Änderung einer Konfigurationsdatei immer ein Backup des Originals, um es im Fehlerfall wiederherstellen zu können. 
 > 
 
 ### Debian und Debian-basierte Betriebssysteme
@@ -224,7 +224,7 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass die Maschine, von der aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](../ovh-rescue/).
+Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass das Gerät, von dem aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](../ovh-rescue/).
 
 ### Ubuntu 18.04 und 20.04
 
@@ -238,7 +238,7 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
-Ändern Sie mithilfe eines Texteditors die Datei 50-cloud-init.yaml, indem Sie die folgenden Zeilen zu den betreffenden Abschnitten hinzufügen, wie im folgenden Beispiel dargestellt.
+Bearbeiten Sie mithilfe eines Texteditors die Datei 50-cloud-init.yaml und fügen Sie die folgenden Zeilen in den betreffenden Abschnitten hinzu (siehe nachstehendes Beispiel):
 
 Ersetzen Sie die generischen Elemente (YOUR_IPV6, IPV6_PREFIX und IPV6_GATEWAY) sowie das Netzwerkinterface (falls Ihr Server nicht enp1s0 verwendet) mit Ihren spezifischen Werten.
 
@@ -283,7 +283,7 @@ network:
 
 > [!warning]
 >
-> Es ist wichtig, dass die Anpassung jedes Elements dieser Datei, wie im vorstehenden Beispiel dargestellt, eingehalten wird. Verwenden Sie nicht die Taste, um Ihren Abstand zu erstellen. Nur die Leertaste ist notwendig. 
+> Es ist wichtig, dass die Zeilenausrichtung jedes Elements dieser Datei, wie im Beispiel dargestellt, eingehalten wird. Verwenden Sie nicht die Tabulationstaste, um den Abstand zu erzeugen. Nur die Leertaste ist notwendig.
 >
 
 #### Schritt 4: Konfiguration testen und anwenden
