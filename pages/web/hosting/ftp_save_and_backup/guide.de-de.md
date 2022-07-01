@@ -1,7 +1,7 @@
 ---
 title: 'Den Speicherplatz Ihres Webhostings wiederherstellen'
 slug: webhosting-speicherplatz-wiederherstellen
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen.'
+excerpt: Erfahren Sie hier, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen
 section: 'FTP und SSH'
 order: 3
 ---
@@ -14,16 +14,16 @@ order: 3
 
 ## Ziel
 
-Über Ihr OVHcloud Webhosting Angebot haben Sie Zugriff auf einen Speicherplatz, auf dem Sie Ihre Websites hosten können. Aus verschiedenen Gründen kann es vorkommen, dass die gesamten Daten Ihres Speicherplatzes oder auch nur eine darin gespeicherte Datei wiederhergestellt werden müssen. Das ist beispielsweise der Fall, wenn eine Datei gelöscht oder bearbeitet wurde und die Website nicht mehr erreichbar ist.
+Über Ihr OVHcloud Webhosting haben Sie Zugriff auf einen Speicherplatz, auf dem Sie Ihre Websites hosten können. Aus verschiedenen Gründen kann es vorkommen, dass die gesamten Daten Ihres Speicherplatzes oder auch nur eine darin gespeicherte Datei wiederhergestellt werden müssen. Das ist beispielsweise der Fall, wenn eine Datei gelöscht oder bearbeitet wurde und die Website nicht mehr erreichbar ist.
 
 > [!primary]
 > 
-> Die von OVHcloud angebotenen Backups für Shared Hosting sind nicht vertraglich festgelegt. Wir bieten Ihnen diese zusätzlich zu Ihren Dienstleistungen an, um Ihnen in Notsituationen zu helfen. Wir empfehlen Ihnen, regelmäßig Ihre eigenen Sicherheitsbackups durchzuführen, um eventuelle Datenverluste zu vermeiden.
+> Die von OVHcloud angebotenen Backups für Shared Hosting sind nicht vertraglich festgelegt. Wir bieten Ihnen diese zusätzlich zu Ihren Dienstleistungen an, um Ihnen in Notsituationen zu helfen. Wir empfehlen Ihnen, regelmäßig Ihre eigenen Sicherheitsbackups durchzuführen, um mögliche Datenverluste zu vermeiden.
 > 
-> Wenn Sie ein Sicherheitsbackup für Ihre Website erstellen und eine Datenbank verwenden, erstellen Sie auch ein Backup Ihrer Datenbank. Bitte lesen Sie unsere Anleitung, [Backup einer Webhosting-Datenbank exportieren](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/).
+> Wenn Sie ein Sicherheitsbackup für Ihre Website erstellen und eine Datenbank verwenden, erstellen Sie auch ein Backup Ihrer Datenbank. Lesen Sie dazu unsere Anleitung, "[Backup einer Webhosting-Datenbank exportieren](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/)".
 > 
 
-**Hier erfahren Sie, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen.**
+**Diese Anleitung erklärt, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen.**
 
 ## Voraussetzungen
 
@@ -34,20 +34,20 @@ order: 3
 
 Vergewissern Sie sich zunächst, dass ein Backup für den Zeitpunkt zur Verfügung steht, zu dem Sie den Speicherplatz Ihres Webhostings wiederherstellen möchten:
 
-- am selben Tag, um 00:01 Uhr morgens
-- am Tag zuvor, um 00:01 Uhr morgens
-- zwei Tage zuvor, um 00:01 Uhr morgens
-- am Sonntag zuvor, um 01:00 Uhr morgens
-- am Sonntag zwei Wochen vorher, um 01:00 Uhr morgens
+- Vom selben Tag um 00:01 Uhr
+- Vom Tag davor um 00:01 Uhr
+- Zwei Tage zuvor um 00:01 Uhr
+- Vom letzten Sonntag um 01:00 Uhr 
+- Vom Sonntag zwei Wochen zuvor um 01:00 Uhr
 
-Ein früheres Backup kann OVHcloud Ihnen leider nicht zur Verfügung stellen. Wir empfehlen, regelmäßig selbst Backups Ihrer Website zu erstellen, wenn Sie frühere Backups verwenden möchten. 
+Ein früheres Backup kann OVHcloud Ihnen leider nicht zur Verfügung stellen. Wir empfehlen, regelmäßig selbst Backups Ihrer Website zu erstellen, wenn Sie ältere Backups verwenden möchten. 
 
-Legen Sie ebenfalls die Wiederherstellungsmethode fest, die Sie verwenden möchten:
+Entscheiden Sie sich für eine Wiederherstellungsmethode, die Sie verwenden möchten:
 
 |Wiederherstellungsmethode|Beschreibung|
 |---|---|
 |Wiederherstellung über das Kundencenter|Mit dieser Methode stellen Sie den gesamten Speicherplatz wieder her. Der aktuelle Inhalt wird dabei komplett mit dem Inhalt des ausgewählten Backups ersetzt.|
-|Wiederherstellung mithilfe einer Software oder über ein Interface|Bei dieser Methode erhalten Sie Leserechte für ein Backup des Speicherplatzes. Diese Methode ist zwar etwas technischer, dafür können Sie jedoch eine oder mehrere Dateien zu einem früheren Zeitpunkt wiederherstellen und müssen nicht den gesamten Inhalt Ihres Speicherplatzes überschreiben.|
+|Wiederherstellung mithilfe einer Software oder über ein Interface|Bei dieser Methode erhalten Sie Leserechte für ein Backup des Speicherplatzes. Diese Methode ist zwar technisch aufwendiger, dafür können Sie jedoch eine oder mehrere Dateien zu einem früheren Zeitpunkt zurücksetzen und müssen nicht den gesamten Inhalt Ihres Speicherplatzes überschreiben.|
 
 Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellungsmethode:
 
@@ -58,42 +58,42 @@ Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellung
 
 > [!warning]
 >
-> Diese Wiederherstellungsmethode ist nicht verfügbar, wenn Ihr Hosting von unseren Administratoren in den Wartungsmodus versetzt wurde oder aufgrund einer Aktion Ihrerseits nicht über FTP-Zugriffsrechte (`chmod` Rechte) verfügt.
+> Diese Wiederherstellungsmethode ist nicht verfügbar, wenn Ihr Hosting von unseren Administratoren in den Wartungsmodus versetzt wurde oder aufgrund einer Aktion Ihrerseits nicht über FTP-Zugriffsrechte (`CHMOD` Rechte) verfügt.
 >
-> Die `CHMOD`-Rechte an der Wurzel Ihres Hostings müssen bis `705` zwingend sein, damit diese Methode funktioniert.
+> Die `CHMOD` Rechte im Wurzelverzeichnis Ihres Hostings müssen auf `705` gesetzt sein, damit diese Methode funktioniert.
 >
 
 > [!primary]
 > **Seite im Wartungsmodus**
 > 
-> Wenn Sie feststellen, ob Ihre Website im Wartungsmodus eingestellt wurde, lesen Sie unsere Anleitung [Was tun bei dem Fehler “403 forbidden”?](https://docs.ovh.com/de/hosting/diagnose-403-forbidden/). 
+> Wenn Sie feststellen, dass Ihre Website in den Wartungsmodus versetzt wurde, befolgen Sie unsere Anleitung [Was tun bei dem Fehler “403 forbidden”?](https://docs.ovh.com/de/hosting/diagnose-403-forbidden/). 
 > 
-> In diesem Fall:
+> Konkret bedeutet das Folgendes:
 >
-> - Unsere Teams senden eine E-Mail an den [Administrator-Kontakt](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/#auf-die-kontaktverwaltung-zugreifen) des Webhostings. 
-> - Der Status "Wartung" wird in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angezeigt. Klicken Sie im Bereich `Web Cloud`{.action} auf Ihren Dienst im Bereich `Hosting-Pakete`{.action} und dann auf den Tab `Allgemeine Informationen`{.action}.
-> - Die gehostete(n) Seite(n) zeigt eine "403 Forbidden"-Seite.
+> - Unsere Teams senden eine E-Mail über den Status an den [Administrator-Kontakt](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/#auf-die-kontaktverwaltung-zugreifen) des Webhostings. 
+> - Der Status "Wartung" wird in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angezeigt. Klicken Sie im Bereich `Web Cloud`{.action} auf Ihren Dienst unter `Hosting-Pakete`{.action} und dann auf den Tab `Allgemeine Informationen`{.action}.
+> - Die gehosteten Webseiten zeigen eine "403 Forbidden"-Meldung an.
 >
 
-Loggen Sie sich in Ihr [OVHcloudcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action} und klicken Sie auf den Button `Backup wiederherstellen`{.action}.
+Loggen Sie sich in Ihr [OVHcloudcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann zum Tab `FTP - SSH`{.action} und klicken Sie auf den Button `Backup wiederherstellen`{.action}.
 
 ![FTP-Backup](images/backupftp-step1.png){.thumbnail}
 
-Wählen Sie im angezeigten Fenster über das Drop-down-Menü mithilfe folgender Informationen das gewünschte Backup-Datum aus:
+Wählen Sie im angezeigten Fenster über das Dropdown-Menü mithilfe folgender Informationen das gewünschte Backup-Datum aus:
 
 |Angezeigtes Datum|Backup-Datum|
 |---|---|
-|T-1|am selben Tag, um 00:01 Uhr morgens|
-|T-2|am Tag zuvor, um 00:01 Uhr morgens|
-|T-3|zwei Tage zuvor, um 00:01 Uhr morgens|
-|1 Woche|am Sonntag zuvor, um 01:00 Uhr morgens|
-|2 Wochen|am Sonntag zwei Wochen vorher, um 01:00 Uhr morgens|
+|T-1|Vom selben Tag um 00:01 Uhr|
+|T-2|Vom Tag davor um 00:01 Uhr|
+|T-3|Zwei Tage zuvor um 00:01 Uhr|
+|1 Woche|Vom letzten Sonntag um 01:00 Uhr |
+|2 Wochen|Vom Sonntag zwei Wochen zuvor um 01:00 Uhr|
 
 Klicken Sie nach der Auswahl auf den Button `Weiter`{.action}. 
 
 ![FTP-Backup](images/backupftp-step2.png){.thumbnail}
 
-Vergewissern Sie sich, dass bei der Wiederherstellung keine Datei verloren geht. Das könnte beispielsweise mit einer Datei passieren, die nach dem ausgewählten Datum in Ihren Speicherplatz hochgeladen wurde. Wie bereits erwähnt, werden bei der Wiederherstellung die gesamten, aktuellen Daten mit den Backup-Daten überschrieben.
+Vergewissern Sie sich, dass bei der Wiederherstellung keine Datei verloren geht. Das könnte beispielsweise mit einer Datei passieren, die nach dem ausgewählten Datum in Ihren Speicherplatz hochgeladen wurde. Beachten Sie, dass bei der Wiederherstellung die aktuellen Daten vollständig mit den Backup-Daten überschrieben werden.
 
 Klicken Sie auf den Button `Bestätigen`{.action}, um die Wiederherstellung zu starten.
 
@@ -110,11 +110,11 @@ Für diese Methode sind mehrere Schritte notwendig. Vergewissern Sie sich, dass 
 
 Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwenden möchten, um auf den Backup-Speicher zuzugreifen. Wenn Sie sich bereits entschieden haben, können Sie direkt zu Schritt 2 übergehen. Andernfalls empfehlen wir Ihnen eine der folgenden drei Lösungen:
 
-- **FileZilla**: Laden Sie FileZilla zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die Verwendung von FileZilla folgende Anleitung zur Verfügung: „[Webhosting: Hilfe zur Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/){.external}“. Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
+- **FileZilla**: Laden Sie FileZilla zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die [Verwendung von FileZilla eine Anleitung zur Verfügung](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
 
-- **Cyberduck**: Laden Sie Cyberduck zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die Verwendung von Cyberduck folgende Anleitung zur Verfügung: „[Web hosting: Cyberduck user guide (on Mac)](https://docs.ovh.com/gb/en/hosting/web_hosting_cyberduck_user_guide_on_mac/){.external}“ (Englisch). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
+- **Cyberduck**: Laden Sie Cyberduck zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die [Verwendung von Cyberduck eine Anleitung zur Verfügung](https://docs.ovh.com/gb/en/hosting/web_hosting_cyberduck_user_guide_on_mac/) (Englisch). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
 
-- **Interface des FTP-Explorers**: Zugriff auf das Interface des FTP-Explorers erhalten Sie über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP-Explorer`{.action}.
+- **Interface des FTP-Explorers**: Zugriff auf das Interface des FTP-Explorers erhalten Sie über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP-Explorer`{.action}.
 
 Gehen Sie zum nächsten Schritt über, um mit der Wiederherstellung fortzufahren.
 
@@ -124,21 +124,21 @@ Gehen Sie zum nächsten Schritt über, um mit der Wiederherstellung fortzufahren
 
 Mithilfe der ausgewählten Software bzw. über das Interface können Sie sich nun auf Ihrem Speicherplatz einloggen, um auf die gewünschten Backup-Daten zuzugreifen. Sie benötigen hierfür den FTP-Benutzernamen, das zugehörige Passwort sowie den Hostnamen Ihres FTP-Servers.
 
-Diese Login-Informationen finden Sie über den Tab `FTP - SSH`{.action} Ihres Webhostings. Wenn Sie kein FTP-Passwort besitzen, lesen Sie bitte die Anleitung [„Passwort eines FTP-Benutzers ändern“](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/){.external}.
+Diese Login-Informationen finden Sie über den Tab `FTP - SSH`{.action} Ihres Webhostings. Wenn Sie kein FTP-Passwort besitzen, lesen Sie die Anleitung [„Passwort eines FTP-Benutzers ändern“](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/).
 
 ![FTP-Backup](images/backupftp-step4.png){.thumbnail}
 
-Ergänzen Sie Ihren Haupt-FTP-Benutzernamen (oder „FTP-Login“) mit einem Suffix, das sich auf das betreffende Backup bezieht. Verwenden Sie die folgenden Informationen, um auf das gewünschte Backup zuzugreifen:
+Ergänzen Sie Ihren Haupt-FTP-Benutzernamen (bzw. „FTP-Login“) mit einem Suffix, das sich auf das betreffende Backup bezieht. Verwenden Sie die folgenden Tabelle, um das korrekte Backup auszuwählen:
 
 |Backup-Datum|Hinzuzufügendes Suffix|Beispiel für einen ergänzten FTP-Benutzernamen|
 |---|---|---|
-|am selben Tag, um 00:01 Uhr morgens|-snap0|ftpbenutzer**-snap0**|
-|am Tag zuvor, um 00:01 Uhr morgens|-snap1|ftpbenutzer**-snap1**|
-|zwei Tage zuvor, um 00:01 Uhr morgens|-snap2|ftpbenutzer**-snap2**|
-|am Sonntag zuvor, um 01:00 Uhr morgens|-snap3|ftpbenutzer**-snap3**|
-|am Sonntag zwei Wochen zuvor, um 01:00 Uhr morgens|-snap4|ftpbenutzer**-snap4**|
+|Vom selben Tag um 00:01 Uhr|-snap0|ftpbenutzer**-snap0**|
+|Vom Tag davor um 00:01 Uhr|-snap1|ftpbenutzer**-snap1**|
+|Zwei Tage zuvor um 00:01 Uhr|-snap2|ftpbenutzer**-snap2**|
+|Vom letzten Sonntag um 01:00 Uhr|-snap3|ftpbenutzer**-snap3**|
+|Vom Sonntag zwei Wochen zuvor um 01:00 Uhr|-snap4|ftpbenutzer**-snap4**|
 
-Denken Sie daran, die generische Information „ftpbenutzer“ mit Ihrem eigenen FTP-Benutzernamen zu ersetzen. Notieren Sie sich das Suffix für das Backup, auf das Sie zugreifen möchten.
+Denken Sie daran, „ftpbenutzer“ mit Ihrem eigenen FTP-Benutzernamen zu ersetzen. Notieren Sie sich das Suffix für das Backup, auf das Sie zugreifen möchten.
 
 Wie Sie sich in Ihren Speicherplatz einloggen, hängt von der verwendeten Software bzw. dem Interface ab. Die folgende Abbildung zeigt den Login über das Interface des FTP-Explorers.
 
@@ -146,22 +146,22 @@ Wie Sie sich in Ihren Speicherplatz einloggen, hängt von der verwendeten Softwa
 
 #### Schritt 3: Eine oder mehrere Backup-Dateien wiederherstellen
 
-Wählen Sie nach dem Login die Dateien aus, die Sie wiederherstellen möchten. Gehen Sie hierfür den Inhalt Ihres Speicherplatzes durch, bis Sie die gewünschten Dateien finden, und laden Sie diese herunter. Die Vorgehensweise richtet sich nach der verwendeten Software bzw. dem Interface.
+Wählen Sie nach dem Login die Dateien aus, die Sie wiederherstellen möchten. Gehen Sie hierfür den Inhalt Ihres Speicherplatzes durch, bis Sie die gewünschten Dateien finden, und laden Sie diese herunter. Die Vorgehensweise richtet sich nach der verwendeten Software oder dem Interface.
 
 Vergewissern Sie sich, bevor Sie zum nächsten Schritt übergehen, dass Sie alle Dateien für die Wiederherstellung heruntergeladen haben, und loggen Sie sich dann aus Ihrem Speicherplatz aus.
 
 #### Schritt 4: Die gewünschten Dateien wiederherstellen
 
-Wenn Sie alle Dateien heruntergeladen haben, loggen Sie sich erneut auf Ihrem Speicherplatz ein. Verwenden Sie für diesen Login allerdings nicht den FTP-Benutzernamen mit der hinzugefügten Endung. Indem Sie das Suffix nicht verwenden, loggen Sie sich in die aktuelle Version Ihres Speicherplatzes ein und nicht in eine frühere Backup-Version.
+Wenn Sie alle Dateien heruntergeladen haben, loggen Sie sich erneut auf Ihrem Speicherplatz ein. Verwenden Sie für diesen Login allerdings den FTP-Benutzernamen ohne die zusätzliche Endung. Indem Sie das Suffix nicht verwenden, loggen Sie sich in die aktuelle Version Ihres Speicherplatzes ein und nicht in eine ältere Backup-Version.
 
-Nach dem Login können Sie die gewünschten Dateien wiederherstellen. Gehen Sie hierfür den Inhalt Ihres Speicherplatzes durch, bis Sie die Dateien finden, und ersetzen Sie diese mit den zuvor heruntergeladenen Dateien.
+Nach dem Login können Sie die gewünschten Dateien wiederherstellen. Gehen Sie hierfür den Inhalt Ihres Speicherplatzes durch bis Sie die entsprechenden Dateien finden, und ersetzen Sie diese mit den zuvor heruntergeladenen Dateien.
 
 ## Weiterführende Informationen
 
 [Backup einer Webhosting-Datenbank exportieren](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/)
 
-[Webhosting: Hilfe zur Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/){.external}
+[Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
 
-[Web hosting: Cyberduck user guide (on Mac)](https://docs.ovh.com/gb/en/hosting/web_hosting_cyberduck_user_guide_on_mac/){.external} (Englisch)
+[Using Cyberduck (on Mac)](https://docs.ovh.com/gb/en/hosting/web_hosting_cyberduck_user_guide_on_mac/) (Englisch)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
