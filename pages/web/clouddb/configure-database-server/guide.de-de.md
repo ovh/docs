@@ -14,7 +14,7 @@ order: 6
 
 ## Ziel
 
-Die CloudDB geben Ihnen die Möglichkeit, auf die Gesamtparameter Ihres Servers einzuwirken. Sie können auch die Aktivität Ihres Servers sehen.
+CloudDB Datenbanken geben Ihnen die Möglichkeit, auf die globalen Einstellungen Ihres Servers einzuwirken. Sie können auch die Aktivität Ihres Servers sehen.
 
 **Diese Anleitung erklärt, wie Sie Ihren Datenbankserver konfigurieren und optimieren können.**
 
@@ -36,7 +36,7 @@ Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Wir bitte
 |Status der Dienstleistung|Zeigt an, ob die Instanz gestartet wurde, gerade neu gestartet wird oder gesperrt wurde. Ihre Instanz muss gestartet worden sein, damit Sie Aktionen durchführen können.|
 |Typ|Zeigt das vom Server verwendete Datenbanksystem an. Wenn Sie nicht wissen, ob der verwendete Typ korrekt ist, beachten Sie, dass MySQL das am weitesten verbreitete System ist. Es gibt jedoch auch andere Datenbanksysteme (PostgreSQL, MariaDB). Wurde Ihre Website zum Beispiel mit WordPress erstellt, ist ein MySQL-System die richtige Wahl.|
 |Version|Zeigt die Version des vom Server verwendeten Datenbanksystems an. Achten Sie auf die Kompatibilität Ihrer Website mit der gewählten Version.|
-|CPU Auslastung|Zeigt die überlastete CPU Zeit über die letzten 24 Stunden an.|
+|CPU Auslastung|Zeigt Auslastungsspitzen der CPU über die letzten 24 Stunden an.|
 |RAM|Zeigt den für Ihre Instanz verfügbaren Arbeitsspeicher sowie eventuelle Überschreitungen der RAM-Kapazität. Ihr Datenbankserver verfügt über dedizierte und garantierte Ressourcen: den RAM-Speicher. Falls nötig, können Sie Ihren RAM skalieren und eine Warnmeldung erhalten, wenn Sie sämtliche RAM-Ressourcen Ihrer Instanz verwenden.|
 |Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es es sich um eine interne Information der OVHcloud Infrastruktur.|
 |Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|
@@ -52,7 +52,7 @@ Ihre CloudDB ist über Ihre OVHcloud Webhostings oder/und über das öffentliche
 
 Damit auf Ihre CloudDB Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen.
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende CloudDB-Instanz.
+Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende CloudDB Instanz.
 
 Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
@@ -68,26 +68,26 @@ Für ein OVHcloud Webhosting können Sie einfach `Den OVHcloud Webhostings den Z
 
 ![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
 
-#### Ihr CloudDB Angebot bearbeiten
+#### Ihren CloudDB Dienst ändern
 
-Um Ihr CloudDB Angebot zu ändern, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
+Um Ihren CloudDB Dienst zu bearbeiten, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 In der Standardansicht **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM Menge ändern`{.action}, um zur Bestellung geleitet zu werden.
 
 ![clouddb](images/private-sql-order-ram01.png){.thumbnail}
 
-Wählen Sie die gewünschte Menge RAM aus und klicken Sie auf `Weiter`{.action}. Danach können Sie die gewünschte Dauer wählen.
+Wählen Sie die gewünschte RAM-Größe aus und klicken Sie auf `Weiter`{.action}. Danach können Sie die Laufzeit wählen.
 
 > [!primary]
 >
-> Eine anteilige Berechnung erfolgt basierend auf der Restlaufzeit des Dienstes. Diese Berechnung basiert auf dem Ablaufdatum des CloudDB Instanz, nicht auf dem Datum des Bestellscheins.
+> Eine anteilige Berechnung erfolgt basierend auf der Restlaufzeit des Dienstes. Diese Berechnung basiert auf dem Ablaufdatum der CloudDB Instanz, nicht auf dem Datum des Bestellscheins.
 > 
 
 Nach Bestätigung der Verträge werden Sie auf den Bestellschein umgeleitet, um die Änderung auszuführen. Die Anpassung erfolgt innerhalb einiger Stunden.
 
 > [!warning]
 >
-> Wenn Sie dank Ihres Performance Hostings derzeit über ein kostenloses CloudDB verfügen, verlieren Sie dessen Kosten.
+> Wenn Sie derzeit über eine kostenfreie, in einem Performance Hosting inkludierte CloudDB Instanz verfügen, wird diese mit dem Wechsel des Dienstes hinfällig.
 > 
 
 ### Die Konfiguration meines Datenbankservers ändern
