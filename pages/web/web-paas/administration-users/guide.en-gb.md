@@ -68,29 +68,26 @@ To add a user to a project or an environment, follow these steps:
 
 > [!tabs]      
 > In the console     
->> ``` false     
->> 
->> 
+>>
 >>1. Select the project where you want to add a new user.
 >>2. Click **Settings**.
 >>3. Click **Access**.
 >>4. Click **+ Add**.
 >>5. Add the user's details and choose their permissions.
 >>6. Click **Save**.
->> 
->> 
->> 
->> ```     
+>>
+>>
 > Using the CLI     
->> ``` false     
->> 
->> 
+>>
 >> Say you want to add `user1@example.com` to the project with a Project Admin role:
 >> 
->> ```bash
->> webpaas user:add user1@example.com -r admin
->> ```
+>> ``` bash     
 >> 
+>> 
+>> webpaas user:add user1@example.com -r admin
+>> 
+>> 
+>> ``` 
 >>      
 
 The user has to create an account before they can contribute to the project.
@@ -104,9 +101,7 @@ To delete a user, you need to be a [Project Admin](#user-roles).
 To delete a user from a project, follow these steps:
 
 > [!tabs]      
-> In the console     
->> ``` false     
->> 
+> In the console
 >> 
 >>1. Select the project where you want to add a new user.
 >>2. Click **Settings**.
@@ -114,19 +109,19 @@ To delete a user from a project, follow these steps:
 >>4. Expand the user you want to delete.
 >>5. Click **Delete**.
 >>6. Click **Save**.
->> 
->> 
->> 
->> ```     
-> Using the CLI     
->> ``` false     
+>>
+>>
+> Using the CLI   
 >> 
 >> To delete existing users:
 >> 
->> ```bash
+>> ``` bash     
+>> 
+>> 
 >> webpaas user:delete user1@example.com
->> ```
->>      
+>> 
+>> 
+>> ``` 
 
 Once you delete a user, they can no longer access the project.
 After you delete a user from a project or an environment type,
@@ -140,8 +135,6 @@ To change user permissions, follow these steps:
 
 > [!tabs]      
 > In the console     
->> ``` false     
->> 
 >> 
 >> 1. Select the project where you want to add a new user.
 >> 2. Click **Settings**.
@@ -149,22 +142,23 @@ To change user permissions, follow these steps:
 >> 4. Expand the user you want to delete.
 >> 5. Click **Delete**.
 >> 6. Click **Delete** to confirm.
->> 
->> 
->> 
->> ```     
+>>
+>>  
 > Using the CLI     
->> ``` false     
+>>    
 >> 
 >> Say you want `user1@example.com` to have the Viewer role for Production environments
 >> and the Contributor role for Development environments:
 >> 
->> ```bash
->> webpaas user:update user1@example.com -r production:v,development:c
->> ```
+>> ``` bash     
 >> 
+>> 
+>> webpaas user:update user1@example.com -r production:v,development:c
+>> 
+>> 
+>> ``` 
+>>     
 >> After you change a user's role for an environment type, you must trigger a redeploy each environment to propagate access changes. You can redeploy using the CLI command `webpaas redeploy`.
 >> 
 >>      
-
 
