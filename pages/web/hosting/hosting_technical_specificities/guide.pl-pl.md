@@ -143,7 +143,7 @@ Dowiedz się, jak [zalogować się do przestrzeni dyskowej](https://docs.ovh.com
 
 #### Baza danych / SQL
 
-W przypadku baz danych na hostingu (zawartych w ofercie hostingu www) lub serwerów baz danych (Private SQL / Cloud Databases) dostępnych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie kopia zapasowa baz danych jest wykonywana codziennie. Kopie te są dostępne (poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub poprzez [API OVHcloud](https://api.ovh.com/). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane te są kopiowane w 3 różnych miejscach we Francji: Roubaix (RBX), Strasburg (SBG) i Gravelines (GRA). Polityka przechowywania kopii zapasowych wynosi 30 dni.
+W przypadku baz danych na hostingu (zawartych w ofercie hostingu www) lub serwerów baz danych (CloudDB) dostępnych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie kopia zapasowa baz danych jest wykonywana codziennie. Kopie te są dostępne (poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub poprzez [API OVHcloud](https://api.ovh.com/). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane te są kopiowane w 3 różnych miejscach we Francji: Roubaix (RBX), Strasburg (SBG) i Gravelines (GRA). Polityka przechowywania kopii zapasowych wynosi 30 dni.
 
 Dowiedz się, jak [Pobierz kopię zapasową bazy danych hostingu WWW](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/) w naszej dokumentacji.
 
