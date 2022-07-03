@@ -144,7 +144,7 @@ Questa guida ti mostra come [accedere allo spazio di storage](https://docs.ovh.c
 
 #### Database / SQL
 
-Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (SQL privato/Cloud Database), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è effettuato quotidianamente. Questi backup sono accessibili via [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup sono salvati anche su un'altra infrastruttura. Questi dati sono replicati in 3 punti distinti in Francia: Roubaix (RBX), Strasburgo (SBG) e Gravelines (GRA). La politica di mantenimento dei backup è di 30 giorni.
+Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (CloudDB), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è effettuato quotidianamente. Questi backup sono accessibili via [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup sono salvati anche su un'altra infrastruttura. Questi dati sono replicati in 3 punti distinti in Francia: Roubaix (RBX), Strasburgo (SBG) e Gravelines (GRA). La politica di mantenimento dei backup è di 30 giorni.
 
 Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/) nella nostra guida.
 
