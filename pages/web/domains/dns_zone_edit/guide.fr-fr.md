@@ -71,7 +71,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 **A** (**A**ddress) : Relie un nom de domaine à une adresse IPv4 "X.X.X.X" (où les "X" sont des chiffres compris entre "0" et "255"). Par exemple, l'adresse IPv4 du serveur où est hébergé votre site internet.
 
-**AAAA** (**A**ddress : Quatre lettre **A** car cet enregistrement est encodé sur quatre fois plus de bits que le champ de pointage **A** historique) : Relie un nom de domaine à une adresse IPv6. Par exemple, l'adresse IPv6 du serveur où est hébergé votre site internet.
+**AAAA** (Quatre lettres **A** car cet enregistrement est encodé sur quatre fois plus de bits que le champ de pointage **A** historique) : Relie un nom de domaine à une adresse IPv6. Par exemple, l'adresse IPv6 du serveur où est hébergé votre site internet.
 
 > [!warning]
 > 
@@ -96,7 +96,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 > [!warning]
 >
-> Par convention, les champs CNAME ne peuvent pas être directement utilisés par le domaine dans sa propre zone DNS. En effet, le domaine seul doit obligatoirement pointer directement vers une adresse IP avec un champ de type A (ou AAAA s’il s’agit d’une IPv6).
+> Par convention, les champs CNAME ne peuvent pas être directement utilisés par un domaine dans sa propre zone DNS. En effet, le domaine seul doit obligatoirement et directement pointer vers une adresse IP avec un champ de type A (ou AAAA s’il s’agit d’une IPv6).
 > 
 > Pour reprendre l’exemple ci-dessus, vous ne pourrez pas créer un champ CNAME pour le domaine *mydomain.ovh* dans la zone DNS que vous avez créé pour celui-ci.
 Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exemples : *sous-domaine.mydomain.ovh* ou *www.mydomain.ovh*) du domaine *mydomain.ovh* dans la zone DNS créée pour *mydomain.ovh*.
@@ -114,7 +114,7 @@ En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* 
 > 
 > En revanche, *mydomain.ovh* en tant que domaine n’affichera pas la cible du domaine *ovh.com* car l’enregistrement DNAME n’est valable que pour les sous-domaines des domaines définis dans l’enregistrement DNAME.
 >
-> De plus et en reprenant nos exemples, si l’un des sous-domaines cible *xxx.ovh.com* ne pointe nulle part, alors l’enregistrement DNAME n’affichera rien non plus pour *xxx.mydomain.ovh*.
+> De plus et en reprenant l'un de nos exemples, si le sous-domaine cible *xxx.ovh.com* ne pointe nulle part, alors l’enregistrement DNAME n’affichera rien non plus pour *xxx.mydomain.ovh*.
 > 
 
 > [!primary]
@@ -172,7 +172,7 @@ En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* 
 
 **SSHFP** (**S**ecure **SH**ell **F**inger**P**rint) : Utilisé pour renseigner l'empreinte d'une clé publique SSH.
 
-**TLSA** (**TLS A**uthentification) : Utilisé pour renseigner l'empreinte d'un certificat SSL/TLS.
+**TLSA** (**T**ransport **L**ayer **S**ecurity **A**uthentification) : Utilisé pour renseigner l'empreinte d'un certificat SSL/TLS.
 
 ### Éditer la zone DNS OVHcloud de votre nom de domaine
 
@@ -182,7 +182,7 @@ Vous pouvez éditer la zone DNS OVHcloud de votre nom de domaine en ajoutant, mo
 
 > [!warning]
 > 
-> Pour les utilisateurs avertis uniquement. 
+> Pour les utilisateurs avertis uniquement. Soyez également très vigilant sur la syntaxe lors de vos modifications.
 > 
 
 Depuis l'onglet `Zone DNS`{.action}, cliquez sur `Modifier en mode textuel`{.action} puis suivez les étapes qui s'affichent.
@@ -257,9 +257,7 @@ Pour ce faire, positionnez-vous sur l'onglet `Zone DNS`{.action} de votre espace
 
 Vous pouvez aussi modifier le TTL d'un enregistrement DNS. Cependant, cette manipulation ne peut être effectuée que sur un enregistrement à la fois, en le modifiant ou lors d'un ajout.
 
-### BONUS technique : Cas particuliers concernant l'utilisation des enregistrements DNS <a name="bonusTech"></a>
-
-- Cas concernant les champs CNAME :
+### BONUS : Cas particulier concernant l'utilisation des enregistrements CNAME <a name="bonusTech"></a>
 
 Certains utilisateurs créent des zones DNS directement pour le sous-domaine d’un domaine (par exemple *sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh*). La règle précisée juste au-dessus s’applique alors également dans ce cas de figure. 
 
