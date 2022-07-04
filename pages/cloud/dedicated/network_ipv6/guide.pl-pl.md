@@ -285,7 +285,6 @@ network:
 > Ważne jest przestrzeganie wyrównania każdego elementu tego pliku, jak pokazano w powyższym przykładzie. Nie używaj przycisku tabulacji do tworzenia odstępów. Potrzebny jest tylko klawisz spacji. 
 >
 
-
 #### Krok 4: Przetestuj i stosuj konfigurację
 
 Możesz przetestować konfigurację, wpisując następujące polecenie:
