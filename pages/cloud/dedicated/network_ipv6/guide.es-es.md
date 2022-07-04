@@ -57,7 +57,7 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
 >
 
->  [!warning]
+> [!warning]
 > 
 > Antes de editar un archivo de configuración, cree siempre una copia de seguridad del original para poder volver si surge algún problema. 
 > 

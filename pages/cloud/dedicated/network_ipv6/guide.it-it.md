@@ -56,7 +56,7 @@ Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM)
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
 
->  [!warning]
+> [!warning]
 > 
 > Prima di modificare un file di configurazione, crea sempre un backup dell'originale per poterlo ripristinare in caso di problemi. 
 > 
@@ -233,11 +233,11 @@ Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utiliz
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
-Apri il file di configurazione della rete, file che si trova in `/etc/netplan`. Per dimostrarlo, il nostro file è chiamato 50-cloud-init.yaml.
+Apri il file di configurazione della rete, file che si trova in `/etc/netplan`. Per dimostrarlo, il nostro file è chiamato '50-cloud-init.yaml'.
 
 #### Step 3: Modifica il file di configurazione di rete.
 
-Servendoti di un editor di testo, modificare il file 50-cloud-init.yaml aggiungendo le righe seguenti alle sezioni interessate, come indicato nell'esempio qui sotto.
+Servendoti di un editor di testo, modificare il file '50-cloud-init.yaml' aggiungendo le righe seguenti alle sezioni interessate, come indicato nell'esempio qui sotto.
 
 Sostituisci i valori generici (YOUR_IPV6, IPV6_PREFIX e IPV6_GATEWAY) e l'interfaccia di rete (se il tuo server non utilizza enp1s0) con i valori specifici.
 

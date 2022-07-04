@@ -231,11 +231,11 @@ Find more information in [this guide](../getting-started-dedicated-server/#loggi
 
 #### Step 2: Open your server's network configuration file
 
-Open the network configuration file located in /etc/netplan. For demonstration purposes, our file is called 50-cloud-init.yaml.
+Open the network configuration file located in `/etc/netplan`. For demonstration purposes, our file is called '50-cloud-init.yaml'.
 
 #### Step 3: Amend the network configuration file
 
-Using a text editor, amend the 50-cloud-init.yaml file by adding the following lines to the relevant sections as shown in the example below.
+Using a text editor, amend the '50-cloud-init.yaml' file by adding the following lines to the relevant sections as shown in the example below.
 
 Replace the generic elements (i.e. YOUR_IPV6, IPV6_PREFIX and IPV6_GATEWAY) as well as the network interface (if your server is not using enp1s0) with your specific values. 
 
