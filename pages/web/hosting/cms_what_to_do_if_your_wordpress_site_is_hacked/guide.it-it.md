@@ -111,7 +111,7 @@ Per rendere operativo il collegamento con il database, è necessario modificare 
 Per farlo, è necessario disporre dell'email ricevuta al momento della creazione del tuo database. Puoi trovare tutte le informazioni nel tuo Spazio Cliente OVH, nella sezione "Supporto" > "Email ricevute".
 
 Se non ricordi più la password del tuo database, puoi modificarla dal tuo Spazio Cliente OVH. Per eseguire questa operazione, consulta [questa guida](https://www.ovh.it/g1374.hosting_condiviso_come_mettere_online_il_tuo_sito).
-Importante: ricordati di verificare gli aggiornamenti disponibili dal pannello di amministrazione WorpdPress
+Importante: ricordati di verificare gli aggiornamenti disponibili dal pannello di amministrazione WordPress
 
 
 ## Informazioni utili

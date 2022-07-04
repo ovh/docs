@@ -138,7 +138,7 @@ Découvrez comment [se connecter à l’espace de stockage](../connexion-espace-
 
 #### Base de données / SQL
 
-Pour les bases de données mutualisées (comprises dans votre offre d'hébergement Web) ou les serveurs de base de données (SQL privé / Cloud Databases), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou via les [API OVHcloud](https://api.ovh.com/)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées à 3 endroits distincts en France : Roubaix(RBX), Strasbourg(SBG), et Gravelines(GRA). La politique de rétention des sauvegardes est de 30 jours.
+Pour les bases de données mutualisées (comprises dans votre offre d'hébergement Web) ou les serveurs de base de données (CloudDB), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou via les [API OVHcloud](https://api.ovh.com/)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées à 3 endroits distincts en France : Roubaix(RBX), Strasbourg(SBG), et Gravelines(GRA). La politique de rétention des sauvegardes est de 30 jours.
 
 Découvrez comment [Récupérer la sauvegarde de la base de données d’un hébergement web](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/) sur notre documentation.
 

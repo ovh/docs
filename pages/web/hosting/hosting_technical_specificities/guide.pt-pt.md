@@ -143,7 +143,7 @@ Saiba como [ligar-se ao espaço de armazenamento](https://docs.ovh.com/pt/hostin
 
 ###### Base de dados / SQL
 
-Para as bases de dados partilhadas (incluídas na sua oferta de alojamento Web) ou os servidores de base de dados (SQL privado / Cloud Databases), propostos em Gravelines (GRA), em França e Beauharnois (BHS), no Canadá, o backup das bases de dados é feito todos os dias. Estes backups estão acessíveis (através de [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou através das [API OVHcloud](https://api.ovh.com/). Os backups são igualmente armazenados numa outra infraestrutura. Estes dados são replicados em 3 locais distintos em França: Roubaix(RBX), Estrasburgo(SBG) e Gravelines(GRA). A política de retenção dos backups é de 30 dias.
+Para as bases de dados partilhadas (incluídas na sua oferta de alojamento Web) ou os servidores de base de dados (CloudDB), propostos em Gravelines (GRA), em França e Beauharnois (BHS), no Canadá, o backup das bases de dados é feito todos os dias. Estes backups estão acessíveis (através de [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou através das [API OVHcloud](https://api.ovh.com/). Os backups são igualmente armazenados numa outra infraestrutura. Estes dados são replicados em 3 locais distintos em França: Roubaix(RBX), Estrasburgo(SBG) e Gravelines(GRA). A política de retenção dos backups é de 30 dias.
 
 Saiba como [Recuperar o backup da base de dados de um alojamento web](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/) no nosso manual.
 

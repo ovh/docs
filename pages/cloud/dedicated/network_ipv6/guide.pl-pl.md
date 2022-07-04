@@ -9,7 +9,7 @@ section: 'Sieć & IP'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja: 04-05-2022**
+**Ostatnia aktualizacja: 29-06-2022**
 
 ## Wprowadzenie
 
@@ -56,6 +56,11 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
 
+>  [!warning]
+> 
+> Zanim zmodyfikujesz plik konfiguracyjny, zawsze utwórz kopię zapasową oryginału, aby móc powrócić w przypadku problemu. 
+> 
+
 ### Systemy operacyjne Debian i oparte na dystrybucji Debian
 
 > [!warning]
@@ -75,7 +80,7 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
 
-Plik konfiguracji sieci Twojego serwera znajduje się w katalogu `/etc/network/interfaces`. Znajdź plik i otwórz go do edycji przy użyciu wiersza polecenia. Najpierw warto utworzyć kopię zapasową.
+Plik konfiguracji sieci Twojego serwera znajduje się w katalogu `/etc/network/interfaces` lub `/etc/network/interfaces.d`. Znajdź plik i otwórz go do edycji przy użyciu wiersza polecenia. Najpierw warto utworzyć kopię zapasową.
 
 #### Krok 3: wprowadzenie zmian w pliku konfiguracji sieci
 
@@ -220,7 +225,7 @@ ping6 -c 4 2001:4860:4860::8888
 
 Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigurację i spróbuj ponownie. Upewnij się też, że komputer, z którego przeprowadzasz test, jest połączony za pośrednictwem protokołu IPv6. Jeśli połączenie wciąż nie działa, sprawdź konfigurację w [trybie ratunkowym (rescue)](../ovh-rescue/).
 
-### Ubuntu 18.04
+### Ubuntu 18.04 i 20.04
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
@@ -228,35 +233,71 @@ Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykow
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
 
-Otwórz plik konfiguracji sieci znajdujący się w katalogu `/etc/systemd/network`. Nasz przykładowy plik ma nazwę 50-default.network.
+Otwórz plik konfiguracyjny sieci, plik znajdujący się w `/etc/netplan`. Do celów demonstracyjnych nasz plik nazywa się 50-cloud-init.yaml.
 
 #### Krok 3: wprowadzenie zmian w pliku konfiguracji sieci
 
-Przy użyciu edytora tekstu wprowadź zmiany w pliku, dodając następujące wiersze w odpowiednich sekcjach (zgodnie z poniższym przykładem).
+Za pomocą edytora tekstu zmodyfikuj plik 50-cloud-init.yaml, dodając następujące wiersze do odpowiednich sekcji, jak pokazano w poniższym przykładzie.
 
-```console
-[Network]
-Destination=Gateway_Address
+Zastąp elementy ogólne (YOUR_IPV6, IPV6_PREFIX i IPV6_GATEWAY) oraz interfejs sieciowy (jeśli Twój serwer nie używa enp1s0) Twoimi wartościami specyficznymi.
 
-[Address]
-Address=IPv6_Address/64
-
-[Route]
-Destination=Gateway_Address
-Scope=link
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            gateway6: IPv6_GATEWAY
+            routes:
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-Aby dodać wiele adresów IPv6, dodaj wiele sekcji \[Address].
 
-```console
-[Address]
-Address=IPv6_Address_2/64
+### Ubuntu 21.10 i 22.04
 
-[Address]
-Address=IPv6_Address_3/64
+Plik konfiguracyjny musi wyglądać jak poniższy przykład:
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            routes:
+                - to: ::/0
+                  via: IPv6_GATEWAY
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-#### Krok 4: zapisanie pliku i restart serwera
 
-Zapisz zmiany w pliku, a następnie uruchom ponownie sieć lub restartuj serwer w celu zastosowania zmian.
+> [!warning]
+>
+> Ważne jest przestrzeganie wyrównania każdego elementu tego pliku, jak pokazano w powyższym przykładzie. Nie używaj przycisku tabulacji do tworzenia odstępów. Potrzebny jest tylko klawisz spacji. 
+>
+
+#### Krok 4: Przetestuj i stosuj konfigurację
+
+Możesz przetestować konfigurację, wpisując następujące polecenie:
+
+```bash
+netplan try
+```
+
+Jeśli jest poprawna, zastosuj ją za pomocą następującego polecenia:
+
+```bash
+netplan apply
+```
 
 #### Krok 5: testowanie łączności IPv6
 
