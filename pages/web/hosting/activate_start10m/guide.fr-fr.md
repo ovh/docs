@@ -13,7 +13,7 @@ order: 2
 Avec le [Start10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external}, OVHcloud vous offre un hébergement Web de 10 Mo et un compte e-mail disposant de 5 Go de stockage. Ce guide vous présente comment activer l'hébergement start 10M sur votre [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external}.
 
 > [!warning]
-> Cet hébergement gratuit de 10 Mo convient pour une simple page Web de présentation, il **n'inclut pas de base de données**. Si vous souhaitez mettre en place un site Web comprenant plusieurs pages et nécessitant une base de données, tel qu'un CMS (Par exemple: Worpdress, Joomla, Prestashop, Drupal, etc.), nous vous invitons à commander directement l'une de [nos offres d'hébergement Web depuis notre site](https://www.ovhcloud.com/fr/web-hosting/) ou votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+> Cet hébergement gratuit de 10 Mo convient pour une simple page Web de présentation, il **n'inclut pas de base de données**. Si vous souhaitez mettre en place un site Web comprenant plusieurs pages et nécessitant une base de données, tel qu'un CMS (Par exemple: WordPress, Joomla, Prestashop, Drupal, etc.), nous vous invitons à commander directement l'une de [nos offres d'hébergement Web depuis notre site](https://www.ovhcloud.com/fr/web-hosting/) ou votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 **Découvrez comment activer votre hébergement gratuit Start 10M**
 

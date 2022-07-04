@@ -108,7 +108,7 @@ Należy również zmodyfikować plik wp-config.php, aby działało połączenie 
 W tym celu należy odnaleźć e-mail otrzymany po utworzeniu bazy danych. Informacje te są dostępne w panelu klienta w sekcji Historia e-maili (oprócz hasła, które samodzielnie ustaliłeś). 
 
 Jeśli nie przypominasz sobie hasła do bazy danych, możesz je zmienić w panelu klienta. Procedura ta jest opisana w tym [przewodniku](https://www.ovh.pl/g1374.umieszczenie-strony-w-internecie).
-Następnie w interfejsie administratora WorpdPress należy sprawdzić dostępne aktualizacje.
+Następnie w interfejsie administratora WordPress należy sprawdzić dostępne aktualizacje.
 
 
 ## Użyteczne informacje

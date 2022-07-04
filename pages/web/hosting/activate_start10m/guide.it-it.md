@@ -17,7 +17,7 @@ order: 2
 Con [Start10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external}, OVHcloud ti offre un hosting Web da 10 MB e un account email con 5 GB di storage. Questa guida ti mostra come attivare l’hosting Start 10M sul tuo [dominio](https://www.ovhcloud.com/it/domains/){.external}.
 
 > [!warning]
-> Questo hosting gratuito da 10 MB è utile per una semplice pagina Web di presentazione e **non include un database**. Per creare un sito Web composto da più pagine e che necessita di un database, come un CMS (ad esempio: Worpdress, Joomla, Prestashop, Drupal...), ti consigliamo di ordinare una delle [nostre soluzioni di hosting direttamente dal nostro sito](https://www.ovhcloud.com/it/web-hosting/) o dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+> Questo hosting gratuito da 10 MB è utile per una semplice pagina Web di presentazione e **non include un database**. Per creare un sito Web composto da più pagine e che necessita di un database, come un CMS (ad esempio: WordPress, Joomla, Prestashop, Drupal...), ti consigliamo di ordinare una delle [nostre soluzioni di hosting direttamente dal nostro sito](https://www.ovhcloud.com/it/web-hosting/) o dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
 **Come attivare il tuo hosting gratuito Start 10M**
 
