@@ -921,7 +921,7 @@ Saisissez les informations suivantes :
 
 ![Create VPN from France 09](images/10-configure-vpn-from-france09.png){.thumbnail}
 
-Vérifiez les paramètres de chiffrement et faites en sorte qu'ils soient identiques avec deux définis sur la passerelle du Canada.
+Vérifiez les paramètres de chiffrement et faites en sorte qu'ils soient identiques avec ceux définis sur la passerelle du Canada.
 
 ![Create VPN from France 10](images/10-configure-vpn-from-france10.png){.thumbnail}
 
@@ -977,6 +977,6 @@ Le paramétrage du VPN est terminé sur les deux clusters. Il est maintenant pos
 
 [Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
 
-[Réplication asynchrone ou *NearSync* au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
+[Réplication asynchrone ou **nearsync** au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
