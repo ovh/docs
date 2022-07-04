@@ -142,7 +142,7 @@ Si vous ne vous rappelez plus du mot de passe de votre base de données, il est 
 
 > [!success]
 >
-> Il est important ensuite depuis l'interface administrateur WorpdPress de
+> Il est important ensuite depuis l'interface administrateur WordPress de
 > vérifier les mises à jour possibles.
 > 
 

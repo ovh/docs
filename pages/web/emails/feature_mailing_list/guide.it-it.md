@@ -163,7 +163,7 @@ Per disiscriversi dalla tua mailing list, è sufficiente inviare un email all’
 
 
 ```bash
-nom_de_votre_ML-unsubscribe@votredomaine.com
+nome_tua_ML-unsubscribe@votredomaine.com
 ```
 
 
