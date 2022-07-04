@@ -9,7 +9,7 @@ section: 'Netzwerk & IP'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 04.05.2022**
+**Letzte Aktualisierung am 29.06.2022**
 
 ## Ziel
 
@@ -57,6 +57,10 @@ Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wen
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
 >
 
+>  [!warning]
+> 
+> Erstellen Sie vor der Änderung einer Konfigurationsdatei immer ein Backup des Originals, um es im Fehlerfall wiederherstellen zu können. 
+> 
 
 ### Debian und Debian-basierte Betriebssysteme
 
@@ -77,7 +81,7 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
-Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in /etc/network/interfaces. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen. Denken Sie daran, vorher ein Backup zu erstellen.
+Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich entweder in `/etc/network/interfaces` oder `/etc/network/interfaces.d`. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen. Denken Sie daran, vorher ein Backup zu erstellen.
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
@@ -220,9 +224,9 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass die Maschine, von der aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](../ovh-rescue/).
+Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass das Gerät, von dem aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](../ovh-rescue/).
 
-### Ubuntu 18.04
+### Ubuntu 18.04 und 20.04
 
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
@@ -230,35 +234,71 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
-Öffnen Sie die Netzwerkkonfigurationsdatei in `/etc/systemd/network`. In unserem Beispiel heißt die Datei 50-default.network.
+Öffnen Sie die Netzwerkkonfigurationsdatei in `/etc/netplan`. In unserem Beispiel heißt die Datei 50-cloud-init.yaml.
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
-Verwenden Sie einen Text-Editor, um die Datei zu bearbeiten, und fügen Sie die folgenden Zeilen in den betreffenden Abschnitten hinzu (siehe nachstehendes Beispiel):
+Bearbeiten Sie mithilfe eines Texteditors die Datei 50-cloud-init.yaml und fügen Sie die folgenden Zeilen in den betreffenden Abschnitten hinzu (siehe nachstehendes Beispiel):
 
-```console
-[Network]
-Destination=Gateway_Address
+Ersetzen Sie die generischen Elemente (YOUR_IPV6, IPV6_PREFIX und IPV6_GATEWAY) sowie das Netzwerkinterface (falls Ihr Server nicht enp1s0 verwendet) mit Ihren spezifischen Werten.
 
-[Address]
-Address=IPv6_Address/64
-
-[Route]
-Destination=Gateway_Address
-Scope=link
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: EU
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            gateway6: IPv6_GATEWAY
+            Straßen
+                - IPv6_GATEWAY
+                  scope: link
 ```
-Um mehrere IPv6-Adressen hinzuzufügen, fügen Sie mehrere \[Address]-Abschnitte hinzu:
 
-```console
-[Address]
-Address=IPv6_Address_2/64
+### Ubuntu 21.10 und 22.04
 
-[Address]
-Address=IPv6_Address_3/64
+Die Konfigurationsdatei muss dem folgenden Beispiel entsprechen:
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            routes:
+                - to: ::/0
+                  via: IPv6_GATEWAY
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-#### Schritt 4: Datei speichern und Server neu starten
 
-Speichern Sie die Änderungen in der Datei und starten Sie anschließend das Netzwerk oder Ihren Server neu, um die Änderungen anzuwenden.
+> [!warning]
+>
+> Es ist wichtig, dass die Zeilenausrichtung jedes Elements dieser Datei, wie im Beispiel dargestellt, eingehalten wird. Verwenden Sie nicht die Tabulationstaste, um den Abstand zu erzeugen. Nur die Leertaste ist notwendig.
+>
+
+#### Schritt 4: Konfiguration testen und anwenden
+
+Sie können Ihre Konfiguration mit folgendem Befehl testen:
+
+```bash
+netplan try
+```
+
+Ist der Befehl korrekt, verwenden Sie den folgenden Befehl:
+
+```bash
+netplan apply
+```
 
 #### Schritt 5: IPv6-Konnektivität testen
 
