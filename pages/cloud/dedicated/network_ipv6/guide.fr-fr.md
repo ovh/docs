@@ -53,7 +53,7 @@ Si vous souhaitez configurer plusieurs adresses IPv6 sur votre serveur (ou si vo
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
 >
 
->  [!warning]
+> [!warning]
 > 
 > Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l’original, pour pouvoir y revenir en cas de problème. 
 > 
@@ -229,11 +229,11 @@ Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
-Ouvrez le fichier de configuration du réseau, fichier se trouvant dans `/etc/netplan`. À des fins d'exemple, notre fichier est appelé 50-cloud-init.yaml.
+Ouvrez le fichier de configuration du réseau, fichier se trouvant dans `/etc/netplan`. À des fins d'exemple, notre fichier est appelé '50-cloud-init.yaml'.
 
 #### Étape 3 : Modifier le fichier de configuration réseau
 
-À l'aide d'un éditeur de texte, modifiez le fichier 50-cloud-init.yaml en ajoutant les lignes suivantes aux sections concernées, comme indiqué dans l'exemple ci-dessous.
+À l'aide d'un éditeur de texte, modifiez le fichier '50-cloud-init.yaml' en ajoutant les lignes suivantes aux sections concernées, comme indiqué dans l'exemple ci-dessous.
 
 Remplacez les éléments génériques (YOUR_IPV6, IPV6_PREFIX et IPV6_GATEWAY) ainsi que l'interface réseau (si votre serveur n'utilise pas enp1s0) par vos valeurs spécifiques.
 
