@@ -43,7 +43,7 @@ Die Liste der verfügbaren Backups erscheint. Klicken Sie auf den Button `...`{.
 
 > [!warning]
 >
-> Die Wiederherstellung bedeutet, dass der Inhalt der Datenbank überschrieben wird, was zu einem Datenverlust führen kann. Wenn Sie sich nicht sicher sind, was Sie tun, nehmen Sie bitte ein Backup vor.
+> Die Wiederherstellung bedeutet, dass der Inhalt der Datenbank überschrieben wird, was zu Datenverlust führen kann. Wenn Sie sich nicht sicher sind, legen Sie unbedingt ein Backup an.
 > 
 
 #### Eine lokale Sicherung importieren
@@ -81,7 +81,7 @@ Haken Sie, wenn Sie möchten, **Aktuelle Datenbank leeren** und **E-Mail am Ende
 
 ### MySQL oder MariaDB Datenbank-Import außerhalb des Kundencenters
 
-In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare RAM nicht ausreicht, um den gewünschten Import durchzuführen. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren).
+In einigen Fällen reicht der auf Ihrem Datenbankserver verfügbare RAM möglicherweise nicht für die Ausführung des gewünschten Imports außerhalb des Kundencenters aus. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren).
 
 #### MySQL oder MariaDB Datenbank über phpMyAdmin importieren
 
