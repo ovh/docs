@@ -49,7 +49,7 @@ A *chart* is a Helm package. Inside the chart you have all the resource definiti
 
 Charts are stored in *repositories*, where they can be shared. Repositories are the Helm equivalent of the NPM registry for Node JS or Maven Central for Java.
 
-When a chart is installed in a Kubernetes cluster, the running instance is called a *release*. Multiple releases of a single chart can be installed at the same time in a cluster (think for example several instance of the Wordpress chart for several different blogs instances running in the cluster). 
+When a chart is installed in a Kubernetes cluster, the running instance is called a *release*. Multiple releases of a single chart can be installed at the same time in a cluster (think for example several instance of the WordPress chart for several different blogs instances running in the cluster). 
 
 
 ## Installing Helm

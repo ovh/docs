@@ -33,7 +33,7 @@ Con los planes de hosting de OVHcloud puede crear un sitio web desde cero o migr
 
 Usted mismo puede crear su sitio web si tiene conocimientos de desarrollo, o puede optar por utilizar un sitio web de tipo llave en mano como un CMS (del inglés *content management system*). La primera solución es más técnica, pero ofrece la posibilidad de crear un proyecto personalizado. La segunda le permite beneficiarse de la estructura de un sitio web lista para usar sin necesidad de conocimientos técnicos.
 
-Desde el área de cliente, OVHcloud pone a disposición de sus clientes una herramienta para instalar un CMS en un clic, permitiéndole elegir entre WordPress, PrestaShop, Drupal y Joomla. Si no sabe qué CMS elegir, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es/web-hosting/uc-cms-comparison/){.external}. Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVHcloud, puede instalarlo manualmente en su alojamiento.
+Desde el área de cliente, OVHcloud pone a disposición de sus clientes una herramienta para instalar un CMS en un clic, permitiéndole elegir entre WordPress, PrestaShop, Drupal y Joomla!. Si no sabe qué CMS elegir, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es/web-hosting/uc-cms-comparison/){.external}. Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVHcloud, puede instalarlo manualmente en su alojamiento.
 
 **Migrar un sitio web existente a OVHcloud**
 

@@ -28,7 +28,7 @@ A Redis instance can be managed through multiple ways.
 One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to Redis with CLI](https://docs.ovh.com/ca/en/publiccloud/databases/redis/connect-cli).
 
 Another way is to interact directly using programming languages, such as PHP.
-PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or Wordpress.
+PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or WordPress.
 Redis has multiple PHP clients, allowing us to connect and manage a Redis instance from code. Please follow the official [Redis documentation for PHP clients](https://redis.io/clients#php){.external} to get the latest information for all Redis clients.
 
 We will need to set up our PHP environment with phpredis client, then configure our Public Cloud Databases for Redis instances to accept incoming connections, and finally code in PHP to perform a few example actions.

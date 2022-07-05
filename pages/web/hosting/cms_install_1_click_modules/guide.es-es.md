@@ -9,7 +9,7 @@ section: CMS
 
 ## Objetivo
 
-Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida sin necesidad de conocimientos técnicos. OVHcloud tiene módulos en un clic de los CMS más conocidos: WordPress, PrestaShop, Drupal y Joomla.
+Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida sin necesidad de conocimientos técnicos. OVHcloud tiene módulos en un clic de los CMS más conocidos: WordPress, PrestaShop, Drupal y Joomla!.
 
 **Esta guía explica cómo instalar un sitio web con nuestros módulos en un clic.**
 

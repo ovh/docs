@@ -10,7 +10,7 @@ order: 2
 
 ## Objectif
 
-Les modules en 1 clic permettent l’installation facile et rapide d’un logiciel en ligne d'assistance à la création de site Internet (communément appelé « CMS »). OVHcloud vous propose les plus connus d'entre eux : WordPress, PrestaShop, Drupal et Joomla.
+Les modules en 1 clic permettent l’installation facile et rapide d’un logiciel en ligne d'assistance à la création de site Internet (communément appelé « CMS »). OVHcloud vous propose les plus connus d'entre eux : WordPress, PrestaShop, Drupal et Joomla!.
 
 **Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud.**
 
@@ -131,10 +131,10 @@ Ajoutez des outils de test de type CAPTCHA sur les formulaires de votre site.
 
 N'installez pas sur votre site de plugins ou de templates qui n'ont pas été recommandés par les communautés officielles de votre CMS : 
 
-- [Wordpress](https://wpfr.net/){.external}
+- [WordPress](https://wpfr.net/){.external}
 - [Joomla!](https://forum.joomla.fr/){.external}
 - [Drupal](https://www.drupal.fr/forum){.external}
-- [Prestashop](https://www.prestashop.com/forums/){.external}
+- [PrestaShop](https://www.prestashop.com/forums/){.external}
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 

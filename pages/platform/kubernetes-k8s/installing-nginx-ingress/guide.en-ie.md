@@ -153,7 +153,7 @@ Ingress URL: http://51.178.69.190/
 </code></pre>
 
 
-In order to test your `nginx-ingress`, you can for example [install a Wordpress](../installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
+In order to test your `nginx-ingress`, you can for example [install a WordPress](../installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -214,6 +214,6 @@ And the Ingress is created.
 ingress.extensions/ingress created
 </code></pre>
 
-So now if you point your browser to `http://$INGRESS_URL/`, you will see your Wordpress:
+So now if you point your browser to `http://$INGRESS_URL/`, you will see your WordPress:
 
-![Wordpress using Ingress](images/installing-ingress-01.png){.thumbnail}
+![WordPress using Ingress](images/installing-ingress-01.png){.thumbnail}

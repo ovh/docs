@@ -159,7 +159,7 @@ Kliknij na "Dalej", aby kontynuować.
 ## Zakończenie
 
 ## Zakończenie instalacji
-Aby dokończyć instalowanie modułu Joomla, kontynuuj etapy instalacji.
+Aby dokończyć instalowanie modułu Joomla!, kontynuuj etapy instalacji.
 
 ## Etap 1
 Pojawi się przypomnienie wybranych parametrów.

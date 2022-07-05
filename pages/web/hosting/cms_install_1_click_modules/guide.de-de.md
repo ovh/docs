@@ -10,7 +10,7 @@ order: 1
 
 ## Einleitung
 
-1-Klick-Module ermöglichen die einfache und schnelle Installation einer Website, auch ohne technische Vorkenntnisse. Sie verwenden die gängigsten CMS: WordPress, PrestaShop, Drupal und Joomla.
+1-Klick-Module ermöglichen die einfache und schnelle Installation einer Website, auch ohne technische Vorkenntnisse. Sie verwenden die gängigsten CMS: WordPress, PrestaShop, Drupal und Joomla!.
 
 **In dieser Anleitung erfahren Sie, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren können.**
 

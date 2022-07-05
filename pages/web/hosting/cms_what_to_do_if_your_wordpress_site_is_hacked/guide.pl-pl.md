@@ -5,9 +5,9 @@ slug: wlamanie_na_strone_z_modulem_wordpress_porady_i_przyklady_zastosowania
 section: Diagnostyka
 ---
 
-Dysponujesz stroną opartą o moduł Wordpress w OVH i zauważyłeś, że Twoja strona się nie wyświetla, że przekierowuje na inną stronę lub że jest wypełniona reklamami. 
+Dysponujesz stroną opartą o moduł WordPress w OVH i zauważyłeś, że Twoja strona się nie wyświetla, że przekierowuje na inną stronę lub że jest wypełniona reklamami. 
 
-OVH nie zapewnia pomocy w zakresie korzystania z produktu Wordpress. Możemy jednak wskazać kroki do podjęcia w przypadku włamania.
+OVH nie zapewnia pomocy w zakresie korzystania z produktu WordPress. Możemy jednak wskazać kroki do podjęcia w przypadku włamania.
 
 
 ## Dlaczego włamano się na moją stronę?
@@ -57,7 +57,7 @@ W żadnym przypadku pomoc techniczna nie będzie mogła bezpośrednio pomóc Ci 
 
 
 ## Przywrócenie strony
-Wordpress składa się z plików i z bazy danych. Można przywrócić pliki z wcześniejszej daty, OVH proponuje historię z 2 tygodni dla plików dostępnych na hostingu. W przypadku bazy danych można przywrócić dane sprzed 7 dni.
+WordPress składa się z plików i z bazy danych. Można przywrócić pliki z wcześniejszej daty, OVH proponuje historię z 2 tygodni dla plików dostępnych na hostingu. W przypadku bazy danych można przywrócić dane sprzed 7 dni.
 Przywrócenie danych nie usuwa luk w zabezpieczeniach. Po przywróceniu danych należy odszukać i naprawić lukę. 
 Operacja przywrócenia usuwa dane obecne na hostingu i zastępuje je kopią zapasową.
 
@@ -84,7 +84,7 @@ Należy również odinstalować nieużywane wtyczki. Ich wyłączenie nie jest w
 Jeśli włamanie jest starsze a przywrócenie danych nie jest możliwe, przedstawiamy sposób przywrócenia wordpressa:
 
 ## Nie możesz zalogować się do panelu administracyjnego WordPress.
-W takim przypadku należy zmienić [hasło administratora](https://codex.wordpress.org/) korzystając z oficjalnego przewodnika Wordpress.
+W takim przypadku należy zmienić [hasło administratora](https://codex.wordpress.org/) korzystając z oficjalnego przewodnika WordPress.
 
 Jeśli jest to zbyt skomplikowane, można zaktualizować adres e-mail w [interfejsie phpMyAdmin](https://docs.ovh.com/pl/hosting/polaczenie-bazy-danych-serwer-bdd/) w tabeli user, powrócić na stronę logowania, kliknąć na Nie pamiętasz hasła? i poczekać na wysłanie e-maila.
 

@@ -99,10 +99,10 @@ Os formulários dos websites são alvos privilegiados dos hackers/spammers. Prot
 
 Adicione ao seu site um plugin de segurança recomendado pelo editor do CMS:
 
-- [Wordpress](https://pt.wordpress.org/){.external}
+- [WordPress](https://pt.wordpress.org/){.external}
 - [Joomla](https://downloads.joomla.org/pt/){.external}
 - [Drupal](https://www.drupal.org/){.external}
-- [Prestashop](https://www.prestashop.com/pt){.external}
+- [PrestaShop](https://www.prestashop.com/pt){.external}
 
 ### Etapa 10: verifique que o seu alojamento não contém ficheiros maliciosos
 

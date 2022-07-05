@@ -10,7 +10,7 @@ order: 1
 
 ## Objetivo
 
-Una base de datos (también llamada *database*, DB o BD) permite almacenar elementos dinámicos, como comentarios o artículos. Prácticamente todos los sistemas de gestión de contenidos (*content management system* o CMS), como WordPress o Joomla, utilizan bases de datos.
+Una base de datos (también llamada *database*, DB o BD) permite almacenar elementos dinámicos, como comentarios o artículos. Prácticamente todos los sistemas de gestión de contenidos (*content management system* o CMS), como WordPress o Joomla!, utilizan bases de datos.
 
 **Esta guía explica cómo crear una base de datos en un alojamiento web de OVHcloud.**
 

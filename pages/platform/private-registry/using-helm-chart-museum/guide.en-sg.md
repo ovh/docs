@@ -49,12 +49,12 @@ You also need to have a working OVHcloud Managed Private Registry and have follo
 
 In order to do this tutorial, you will need a Helm chart to upload to your OVHcloud Managed Private Registry. 
 
-If you already have a Helm chart in your filesystem, you can use it for the example, but in this section we are suppossing you haven't any. We are using a well known Helm chart often employed as example: the [Wordpress](https://github.com/helm/charts/tree/master/stable/wordpress) chart.
+If you already have a Helm chart in your filesystem, you can use it for the example, but in this section we are suppossing you haven't any. We are using a well known Helm chart often employed as example: the [WordPress](https://github.com/helm/charts/tree/master/stable/wordpress) chart.
 
 
 #### Download the chart
 
-The first step is downloading the Wordpress chart using `helm`:
+The first step is downloading the WordPress chart using `helm`:
 
 ```bash
 helm fetch bitnami/wordpress
@@ -152,7 +152,7 @@ On the upload dialog, choose the packaged chart file and click on `UPLOAD` butto
 
 ![Uploading a chart](images/harbor-ui-002.png){.thumbnail}
 
-Now you will see the Wordpress chart listed in your registry:
+Now you will see the WordPress chart listed in your registry:
 
 ![Chart uploaded](images/harbor-ui-003.png){.thumbnail}
 

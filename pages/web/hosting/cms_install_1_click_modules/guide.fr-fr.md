@@ -10,7 +10,7 @@ order: 1
 
 ## Objectif
 
-Les modules en 1 clic permettent l'installation facile et rapide d'un site Internet (sans compétences techniques requises). Ils utilisent les CMS les plus connus : WordPress, PrestaShop, Drupal et Joomla.
+Les modules en 1 clic permettent l'installation facile et rapide d'un site Internet (sans compétences techniques requises). Ils utilisent les CMS les plus connus : WordPress, PrestaShop, Drupal et Joomla!.
 
 **Découvrez comment installer votre site via nos modules en 1 clic.**
 
@@ -132,8 +132,8 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre site
 
 |CMS|Documentation officielle|
 |---|---|
-|Wordpress|[Premiers pas avec Wordpress](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}|
-|Prestashop|[Documentation en français Prestashop](http://doc.prestashop.com/pages/viewpage.action?pageId=2424836){.external}|
+|WordPress|[Premiers pas avec WordPress](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}|
+|PrestaShop|[Documentation en français PrestaShop](http://doc.prestashop.com/pages/viewpage.action?pageId=2424836){.external}|
 |Joomla|[Infos techniques Joomla](https://www.joomla.fr/actualites/infos-techniques){.external}|
 |Drupal|[Bien démarrer avec Drupal](https://www.drupal.fr/documentation/bien-demarrer-drupal){.external}|
 

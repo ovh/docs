@@ -1,6 +1,6 @@
 ---
-title: 'CMS: installa manualmente Wordpress'
-excerpt: Come fai a installare manualmente Wordpress?
+title: 'CMS: installa manualmente WordPress'
+excerpt: Come fai a installare manualmente WordPress?
 id: '1977'
 slug: cms_installa_manualmente_wordpress
 legacy_guide_number: g1977
@@ -29,7 +29,7 @@ Per recuperare le tue credenziali SQL, consulta la guida []({legacy}1374)
 
 ## Parte 2: recupero dei file sorgente
 
-- Accedi al sito di [Wordpress](https://it.wordpress.org/).
+- Accedi al sito di [WordPress](https://it.wordpress.org/).
 
 In genere, il link disponibile ti permette di scaricare l'ultima versione stabile del CMS.
 
@@ -48,12 +48,12 @@ Clicca con il tasto destro, seleziona Estrai tutto... o Estrai qui e indica la c
 
 Se hai bisogno di aiuto, segui i numerosi tutorial online e scarica uno dei tanti programmi per decomprimere file .zip disponibili su Internet.
 
-La cartella di destinazione si chiamerà Wordpress.
+La cartella di destinazione si chiamerà WordPress.
 
 ![wordpress](images/3127.png){.thumbnail}
 
 ## - Accedi al tuo hosting Web via FTP
-Accedi al tuo hosting e salva i file di Wordpress.
+Accedi al tuo hosting e salva i file di WordPress.
 
 Se hai bisogno di aiuto per accedere in FTP alla tua soluzione di hosting condiviso, consulta la guida []({legacy}1374)
 
@@ -65,7 +65,7 @@ Per salvare i tuoi file sull'FTP, segui questi step.
 ## Step 1
 Apri FileZilla.
 
-Nella sezione Sito locale, che contiene l'elenco dei file presenti sul tuo pc, apri la cartella decompressa Wordpress in cui sono presenti i file del tuo CMS.
+Nella sezione Sito locale, che contiene l'elenco dei file presenti sul tuo pc, apri la cartella decompressa WordPress in cui sono presenti i file del tuo CMS.
 
 Nella sezione Sito remoto, che corrisponde in questo caso al tuo hosting condiviso OVH, apri la cartella www in cui dovrai salvare tutti i file del CMS.
 
@@ -96,10 +96,10 @@ Al termine dell'operazione, assicurati che tutti i file e le cartelle siano stat
 ![wordpress](images/3131.png){.thumbnail}
 
 
-## Parte 4: collega Wordpress al tuo database
+## Parte 4: collega WordPress al tuo database
 
 ## - Per evitare errori, prima di proseguire cancella la cache del tuo browser.
-Per collegare Wordpress al tuo database, è necessario seguire gli step di installazione del CMS.
+Per collegare WordPress al tuo database, è necessario seguire gli step di installazione del CMS.
 
 ## Step 1
 Inserisci il tuo dominio nella barra degli indirizzi del tuo browser.
@@ -112,7 +112,7 @@ Clicca su Creare un file di configurazione per continuare.
 ## Step 2
 Recupera le credenziali del tuo database (se hai bisogno di aiuto, consulta la guida[]({legacy}1374)).
 
-Clicca su Installa Wordpress per continuare.
+Clicca su Installa WordPress per continuare.
 
 ![wordpress](images/3133.png){.thumbnail}
 
@@ -127,7 +127,7 @@ Password: se non l'hai modificata, la password che hai ricevuto per email al mom
 
 Host del database: il nome del server del tuo database, indicato nell'email di installazione o nel tuo Spazio Cliente OVH.
 
-Prefisso tabella: utile per realizzare più installazioni di Wordpress utilizzando lo stesso database. In questo caso, è necessario inserire un prefisso diverso per ognuna delle installazioni.
+Prefisso tabella: utile per realizzare più installazioni di WordPress utilizzando lo stesso database. In questo caso, è necessario inserire un prefisso diverso per ognuna delle installazioni.
 
 Importante: le credenziali del database non vengono inviate automaticamente durante l'installazione dell'hosting. Per riceverle, attiva il database nel tuo Spazio Cliente OVH.
 

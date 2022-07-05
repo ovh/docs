@@ -20,7 +20,7 @@ Los CMS son [sistemas de gestión de contenidos](https://es.wikipedia.org/wiki/S
 
 Todos estos elementos se encuentran en [nuestros productos](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 
-*Si desea instalar Joomla de forma automática desde el área de cliente, puede consultar la [siguiente guía](https://docs.ovh.com/es/hosting/modulos-en-un-clic/).* 
+*Si desea instalar Joomla! de forma automática desde el área de cliente, puede consultar la [siguiente guía](https://docs.ovh.com/es/hosting/modulos-en-un-clic/).* 
 
 
 ## Joomla!
@@ -81,7 +81,7 @@ En la pestaña "Sitio remoto" del apartado correspondiente al alojamiento compar
 
 Una vez abiertas las carpetas:
 
-En la sección "Sitio local", encontrará todos los archivos necesarios para instalar el CMS Joomla.
+En la sección "Sitio local", encontrará todos los archivos necesarios para instalar el CMS Joomla!.
 
 Para seleccionar todos, utilice la combinación de teclas **Ctrl+A** .
 
@@ -107,11 +107,11 @@ Esta operación concluye la sección relativa al depósito de archivos en el FTP
 ### Parte 4: enlace con la base de datos
 - Antes de continuar la instalación, vacíe la caché del navegador de internet para evitar errores.
 
-Para conectar la base de datos con Joomla, siga los pasos de instalación del CMS: Acceda a su dominio. Se ejecuta el asistente de instalación.
+Para conectar la base de datos con Joomla!, siga los pasos de instalación del CMS: Acceda a su dominio. Se ejecuta el asistente de instalación.
 
-En primer lugar, es necesario configurar la información de configuración de **Joomla.**  :
+En primer lugar, es necesario configurar la información de configuración de **Joomla!.**  :
 
-Select Language : seleccione el idioma de instalación de Joomla.
+Select Language : seleccione el idioma de instalación de Joomla!.
 
 Nombre del sitio web: defina el nombre del sitio web, lo que puede influir en el posicionamiento.
 
@@ -157,7 +157,7 @@ Haga clic en "Siguiente" para confirmar la información solicitada.
 
 
 ### Finalización
-Continúe con las etapas de instalación para finalizar la instalación de Joomla. Aparecerá un recordatorio de los parámetros seleccionados.
+Continúe con las etapas de instalación para finalizar la instalación de Joomla!. Aparecerá un recordatorio de los parámetros seleccionados.
 
 Se le solicita la siguiente información:
 
@@ -188,12 +188,12 @@ Para ello, haga clic en "Eliminar el directorio de instalación".
 
 Un mensaje confirma la eliminación del directorio.
 
-Ya puede conectarse al apartado Administración de **Joomla.** . Identifíquese en la ventana que se abre, donde también puede consultar la página de inicio de **Joomla!** .
+Ya puede conectarse al apartado Administración de **Joomla!.** . Identifíquese en la ventana que se abre, donde también puede consultar la página de inicio de **Joomla!** .
 
 
 ![hosting](images/3153.png){.thumbnail}
 
-Para obtener una visión general del panel de administración de Joomla, haga clic en la imagen.
+Para obtener una visión general del panel de administración de Joomla!, haga clic en la imagen.
 
 
 ![hosting](images/3154.png){.thumbnail}
@@ -201,9 +201,9 @@ Para obtener una visión general del panel de administración de Joomla, haga cl
 
 ### Información útil
 
-**El soporte de OVH no estará facultado para responder a cualquier solicitud de ayuda relativa a la configuración de su Joomla.**
+**El soporte de OVH no estará facultado para responder a cualquier solicitud de ayuda relativa a la configuración de su Joomla!.**
 
-Puede consultar los foros dedicados a la solución Joomla.
+Puede consultar los foros dedicados a la solución Joomla!.
 
 - Este es un enlace a un [foro de soporte](https://forum.joomla.org/viewforum.php?f=24){.external} dedicado a este CMS.
 
@@ -231,7 +231,7 @@ La causa es simple: la última versión de PHP no ha sido activada.
 
 ![hosting](images/3156.png){.thumbnail}
 
-Se trata de una variable indefinida que impide la instalación de Joomla.
+Se trata de una variable indefinida que impide la instalación de Joomla!.
 
 Magic Quotes debe estar en Off y, por tanto, a 0 en su archivo de configuración.
 

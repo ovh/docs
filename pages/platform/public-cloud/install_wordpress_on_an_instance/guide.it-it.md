@@ -1,5 +1,5 @@
 ---
-title: Installa Wordpress sulla tua istanza
+title: Installa WordPress sulla tua istanza
 excerpt: Scopri come utilizzare un'istanza Public Cloud per ospitare siti WordPress
 slug: installa_wordpress_sulla_tua_istanza
 section: Tutorial

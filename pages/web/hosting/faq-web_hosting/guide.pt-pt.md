@@ -37,7 +37,7 @@ Para colocar o seu site online, deverá dispor de um [domínio](https://www.ovhc
 
 Para seguir os passos necessários para construir o seu website, consulte esta [página](https://www.ovhcloud.com/pt/web-hosting/uc-website/) e siga as instruções do guia [Publicar um website no seu alojamento web](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/).
 
-**Truques e dicas**: Para o ajudar a criar o seu site, a OVHcloud permite-lhe instalar no seu alojamento um software de assistência à criação de sites (Wordpress, Prestashop, Joomla e Drupal), graças à funcionalidade [Módulos 1 clique](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/).
+**Truques e dicas**: Para o ajudar a criar o seu site, a OVHcloud permite-lhe instalar no seu alojamento um software de assistência à criação de sites (WordPress, PrestaShop, Joomla! e Drupal), graças à funcionalidade [Módulos 1 clique](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/).
 
 ### Como transferir o meu site e os meus e-mails para os servidores OVHcloud? 
 
@@ -183,7 +183,7 @@ Se os restauros não lhe permitem restabelecer o acesso ao seu site, contacte o 
 
 ![503_varnish](images/503_varnish.png){.thumbnail}
 
-Se ativou a [opção CDN](https://docs.ovh.com/pt/hosting/guia_de_utilizacao_do_acelerador_geocache_num_alojamento_web/) do seu alojamento, desative o modo *Manutenção* no seu site Wordpress ou Prestashop.
+Se ativou a [opção CDN](https://docs.ovh.com/pt/hosting/guia_de_utilizacao_do_acelerador_geocache_num_alojamento_web/) do seu alojamento, desative o modo *Manutenção* no seu site WordPress ou PrestaShop.
 
 Se não ativou esta opção nem utilizou o modo *Maintenance*, contacte o seu Webmaster ou procure um fornecedor especializado no site dos [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

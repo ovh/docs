@@ -62,7 +62,7 @@ Compruebe la coincidencia **exacta** entre los identificadores de conexión a [P
 
 Cambie, si es necesario, la [contraseña de su base de datos](https://docs.ovh.com/us/es/hosting/cambiar-contrasena-base-de-datos/).
 
-#### Ejemplo para Wordpress
+#### Ejemplo para WordPress
 
 Si su sitio web muestra un mensaje **"Error al conectarse a la base de datos"** y no se ve afectado por un [incidente](https://web-cloud.status-ovhcloud.com/), conéctese a [FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) a su alojamiento y abra el directorio que contiene su sitio web (por defecto es el directorio "www").
 
