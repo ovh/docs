@@ -156,7 +156,7 @@ In het venster dat verschijnt, voert u het IP-adres of masker in dat u wilt auto
 
 ### Uw site aan de database koppelen
 
-Nu u uw database hebt gemaakt, één of meerdere gebruikers hebt aangemaakt met toegang ertoe, en minimaal één IP-adres hebt geautoriseerd in uw CloudDB-instance, hoeft u alleen nog maar uw website te koppelen aan de database. Deze stap kan op meerdere manieren worden uitgevoerd, afhankelijk van de site en de CMS die u gebruikt (WordPress, Joomla enz.) of de stap waarin u zich bevindt indien u een website aan het installeren bent.
+Nu u uw database hebt gemaakt, één of meerdere gebruikers hebt aangemaakt met toegang ertoe, en minimaal één IP-adres hebt geautoriseerd in uw CloudDB-instance, hoeft u alleen nog maar uw website te koppelen aan de database. Deze stap kan op meerdere manieren worden uitgevoerd, afhankelijk van de site en de CMS die u gebruikt (WordPress, Joomla! enz.) of de stap waarin u zich bevindt indien u een website aan het installeren bent.
 
 Om deze handeling met succes te kunnen uitvoeren, moet u over de volgende vijf gegevens beschikken:
 

@@ -76,7 +76,7 @@ It will apply the correct `StorageClass` YAML manifest:
 storageclass.storage.k8s.io/csi-cinder-high-speed created
 </code></pre>
 
-If you have already installed a previous version of Bitnami's Wordpress Helm chart, please follow the following step by step guide.
+If you have already installed a previous version of Bitnami's WordPress Helm chart, please follow the following step by step guide.
 
 - Delete the concerned Helm Chart
 
@@ -170,7 +170,7 @@ Look for your chart:
 helm search repo wordpress
 ```
 
-In my case, it finds several versions of Wordpress chart, the official ones in the `bitnami` Helm repository, and the one in my `privreg` private registry project:
+In my case, it finds several versions of WordPress chart, the official ones in the `bitnami` Helm repository, and the one in my `privreg` private registry project:
 
 <pre class="console"><code>$ helm search repo wordpress
 NAME                   	CHART VERSION	APP VERSION	DESCRIPTION

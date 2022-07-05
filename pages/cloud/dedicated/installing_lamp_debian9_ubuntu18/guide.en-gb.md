@@ -261,7 +261,7 @@ Create a database named `wordpress` in the command line, or via `phpMyAdmin`.
 
 Your configuration screen should look like this:
 
-![Wordpress installation](images/tuto_wp.png){.thumbnail}
+![WordPress installation](images/tuto_wp.png){.thumbnail}
 
 If you receive a warning when you create the `wp-config.php` file, edit the rights in read, write and execute, depending on what you need (commonly called `chmod`).
 

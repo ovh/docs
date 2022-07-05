@@ -95,10 +95,10 @@ Les formulaires des sites Internet sont des cibles privilégiées des hackers/sp
 
 Ajoutez à votre site un plugin de sécurité recommandé par l'éditeur du CMS :
 
-- [Wordpress](https://fr.wordpress.org/){.external}
+- [WordPress](https://fr.wordpress.org/){.external}
 - [Joomla](https://www.joomla.fr/){.external}
 - [Drupal](https://www.drupal.fr/){.external}
-- [Prestashop](https://www.prestashop.com/fr){.external}
+- [PrestaShop](https://www.prestashop.com/fr){.external}
 
 ### Étape 10. Vérifiez que votre hébergement ne contient pas de fichiers malveillants
 

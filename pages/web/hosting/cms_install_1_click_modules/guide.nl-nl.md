@@ -10,7 +10,7 @@ section: CMS
 
 ## Introductie
 
-De 1-klik modules maken een eenvoudige en snelle installatie van een Website mogelijk (geen technische expertise vereist).  De meest bekende CMS worden hiervoor gebruikt: WordPress, PrestaShop, Drupal en Joomla.
+De 1-klik modules maken een eenvoudige en snelle installatie van een Website mogelijk (geen technische expertise vereist).  De meest bekende CMS worden hiervoor gebruikt: WordPress, PrestaShop, Drupal en Joomla!.
 
 **Ontdek hoe uw site te installeren met onze 1-klik modules.**
 

@@ -22,14 +22,14 @@ Cliquez [ici](http://www.ovh.com/ca/fr/hebergement-web/faq){.external} pour retr
 
 ## Installation manuelle
 
-### Wordpress
+### WordPress
 WordPress est un moteur de blog entretenu par une communauté française. Basé sur la technologie PHP, WordPress est une application dotée d'outils puissants vous permettant de faciliter toujours plus la création de vos pages, comme par exemple le correcteur orthographique ou un outil de gestion du référencement.
 
 - [Module WordPress](http://www.ovh.com/ca/fr/items/modules/blogs/word_press.xml){.external}
 
 - [Solution WordPress](http://www.wordpress-fr.net/){.external}.
 
-- Retrouvez le guide d'[installation manuelle de Wordpress](../installer-manuellement-wordpress/){.ref}
+- Retrouvez le guide d'[installation manuelle de WordPress](../installer-manuellement-wordpress/){.ref}
 
 
 ![hosting](images/3379.png){.thumbnail}
@@ -50,7 +50,7 @@ La communauté française de Joomla! est très importante et apporte des aides e
 ![hosting](images/3380.png){.thumbnail}
 
 
-### Prestashop
+### PrestaShop
 Créez votre boutique en ligne ! La solution e-Commerce PrestaShop a été créée pour profiter de l'essentiel des innovations dites « Web 2.0 » telles que l'AJAX, ou l'ergonomie nouvelle génération. PrestaShop guide les utilisateurs à travers votre catalogue de produits de manière intelligente et transparente, transformant de simples visiteurs en futurs acheteurs. PrestaShop est tellement léger et rapide que même les clients possédant des connexions à bas débit apprécieront d'acheter sur votre site!
 
 PrestaShop fut à l'origine créé en 2005 au sein de l'école informatique Epitech par cinq jeunes étudiants. Le projet d'origine, traduit en deux langues (français, anglais) portait le nom de phpopenstore (P O S). Les créateurs décidèrent de le livrer dans le domaine du logiciel libre dès sa conception. Il fut testé par plusieurs petits marchands ayant participé à la co-rédaction de son cahier des charges.
@@ -59,9 +59,9 @@ Depuis 2005, le logiciel ne cesse d'évoluer, jusqu'en 2013 : la version 1.5.4.1
 
 - [Module PrestaShop](http://www.ovh.com/ca/fr/items/modules/ecommerce/prestashop-2.xml){.external}
 
-- [solution Prestashop](https://www.prestashop.com/forums/){.external}.
+- [solution PrestaShop](https://www.prestashop.com/forums/){.external}.
 
-- Retrouvez le [guide d'installation manuelle de Prestashop](../installer-manuellement-prestashop/)
+- Retrouvez le [guide d'installation manuelle de PrestaShop](../installer-manuellement-prestashop/)
 - Si vous ne disposez pas encore d'un hébergement chez OVHcloud, vous pouvez dans ce cas commander un hébergement mutualisé Performance qui inclus l'installation de prestashop sur ce lien : [https://www.ovh.com/ca/fr/solutions/prestashop/](https://www.ovh.com/ca/fr/solutions/prestashop/){.external}
 
 

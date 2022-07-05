@@ -10,7 +10,7 @@ legacy_guide_number: g1978
 ## Parte 1: preparação da instalação
 
 ## Ferramentas necessárias
-Para instalar a sua plataforma Joomla no seu alojamento partilhado, sugerimos o uso do cliente FTP FileZilla (gratuito).
+Para instalar a sua plataforma Joomla! no seu alojamento partilhado, sugerimos o uso do cliente FTP FileZilla (gratuito).
 
 ## Identificadores de acesso necessários para a instalação
 Assegura-se que possui o Nichandle e a palavra-passe associada para poder ligar-se ao seu Espaço Cliente OVH, se necessário.

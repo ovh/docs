@@ -50,7 +50,7 @@ Em [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.co
 
 #### Verificar os dados de acesso à sua base de dados <a name="config_file"></a>
 
-Ligue-se ao espaço de armazenamento de ficheiros com [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao espaço de armazenamento de ficheiros no seu alojamento e encontre o ficheiro de configuração do seu site (por exemplo, para um site Wordpress, trata-se do ficheiro **wp-config.php** situado na pasta que contém o seu site).
+Ligue-se ao espaço de armazenamento de ficheiros com [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao espaço de armazenamento de ficheiros no seu alojamento e encontre o ficheiro de configuração do seu site (por exemplo, para um site WordPress, trata-se do ficheiro **wp-config.php** situado na pasta que contém o seu site).
 
 > [!warning]
 >
@@ -63,11 +63,11 @@ De seguida, verifique a correspondência **exata** entre os identificadores de l
 
 Altere, se necessário, a [palavra-passe da sua base de dados](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-base-de-dados/).
 
-#### Exemplo para Wordpress
+#### Exemplo para WordPress
 
 Se o seu website apresentar uma mensagem **"Erro durante a ligação à base de dados"** e que este não é afetado por [incidente](https://web-cloud.status-ovhcloud.com/), ligue-se em [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao seu alojamento e abra o diretório que contém o seu website (por predefinição, trata-se do dossier `www`).
 
-Se se tratar de um site Wordpress, abra o ficheiro `wp-config.php`.
+Se se tratar de um site WordPress, abra o ficheiro `wp-config.php`.
 
 ```php
 define('DB_NAME', 'my_database');

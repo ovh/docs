@@ -14,9 +14,9 @@ section: "Cas d'usage"
 >
 
 ## Je me suis fait pirater &#58; que faire ?
-Vous disposez d'un site Wordpress hébergé chez OVH, et vous vous apercevez que votre site n'apparaît plus, ou qu'il est redirigé vers un autre site, ou encore votre site est rempli d'annonces intempestives.
+Vous disposez d'un site WordPress hébergé chez OVH, et vous vous apercevez que votre site n'apparaît plus, ou qu'il est redirigé vers un autre site, ou encore votre site est rempli d'annonces intempestives.
 
-OVH n'assure pas de support sur l'utilisation du produit Wordpress, ni par courriel, ni par téléphone. Mais nous pouvons vous indiquer les démarches à suivre en cas de piratage.
+OVH n'assure pas de support sur l'utilisation du produit WordPress, ni par courriel, ni par téléphone. Mais nous pouvons vous indiquer les démarches à suivre en cas de piratage.
 
 
 ### Pourquoi mon site Web s'est fait pirate ?
@@ -80,7 +80,7 @@ Nous vous conseillons de demander l'assistance d'un [webmaster](https://partners
 ## Cas 1 &#58; le piratage a lieu dans le delai de restauration possible (sauvegarde OVH)
 
 ### Restauration du site
-Wordpress est composé de fichiers et d¹une base de données. Il est possible de restaurer vos fichiers à une date antérieure. OVH propose un historique de deux semaines concernant les fichiers présents sur votre hébergement. Concernant la base de données, il est possible de remonter à 7 jours.
+WordPress est composé de fichiers et d¹une base de données. Il est possible de restaurer vos fichiers à une date antérieure. OVH propose un historique de deux semaines concernant les fichiers présents sur votre hébergement. Concernant la base de données, il est possible de remonter à 7 jours.
 
 
 
@@ -114,7 +114,7 @@ Il faut aussi désinstaller les plugins non utilisés, la désactivation n'est p
 ## Cas 2 &#58; le piratage est plus ancien, la restauration non fonctionnelle
 
 ### Vous ne pouvez pas vous connecter a votre panneau administrateur WordPress
-Il faut dans ce cas modifier votre [mot de passe administrateur](https://codex.wordpress.org/){.external} en suivant le guide officiel de Wordpress.
+Il faut dans ce cas modifier votre [mot de passe administrateur](https://codex.wordpress.org/){.external} en suivant le guide officiel de WordPress.
 
 Si vous trouvez cela trop compliqué, il est possible de mettre à jour votre e-mail depuis [phpMyAdmin](https://docs.ovh.com/fr/hosting/connexion-base-de-donnees-serveur-bdd/){.external} dans la table user et revenir à la page de connexion, cliquez sur Mot de passe oublié, et d'attendre que l'e-mail vous soit envoyé.
 

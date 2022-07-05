@@ -94,7 +94,7 @@ Then log on to the [FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-stor
 - WordPress: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
 - Joomla!: **"configuration.php"** (the database name appears under **"public $db"**).
 - Drupal: **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
-- Prestashop: **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
+- PrestaShop: **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
 
 #### Step 2: backup your data
 
@@ -133,7 +133,7 @@ Do not install plugins or templates that have not been recommended by the offici
 - [WordPress](https://wordpress.org/){.external}
 - [Joomla!](https://community.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/community){.external}
-- [Prestashop](https://www.prestashop.com/en){.external}
+- [PrestaShop](https://www.prestashop.com/en){.external}
 
 ## Go further <a name="gofurther"></a>
 

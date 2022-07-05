@@ -291,7 +291,7 @@ Créez une base nommée `wordpress` en ligne de commande ou via `phpMyAdmin`.
 Votre écran de configuration doit ressembler à celui ci-dessous :
 
  
-![Installation de Wordpress](images/tuto_wp.png){.thumbnail}
+![Installation de WordPress](images/tuto_wp.png){.thumbnail}
 
 Si vous avez un avertissement au niveau de la création du fichier `wp-config.php`, éditez les droits en exécution, lecture, écriture en fonction de vos besoins (communément appelés `CHMOD`).
 

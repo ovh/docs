@@ -30,7 +30,7 @@ order: 5
  }
 </style>
 
-In this tutorial, we will guide you through the installation of [Wordpress](https://wordpress.org/){.external} on your OVHcloud Managed Kubernetes Service.
+In this tutorial, we will guide you through the installation of [WordPress](https://wordpress.org/){.external} on your OVHcloud Managed Kubernetes Service.
 
 ## Before you begin
 
@@ -66,7 +66,7 @@ It will apply the correct `StorageClass` YAML manifest:
 storageclass.storage.k8s.io/csi-cinder-high-speed created
 </code></pre>
 
-If you have already installed a previous version of Bitnami's Wordpress Helm chart, please follow the following step by step guide.
+If you have already installed a previous version of Bitnami's WordPress Helm chart, please follow the following step by step guide.
 
 - Delete the concerned Helm Chart
 
@@ -95,9 +95,9 @@ The command will delete the remaining `PersistentVolumeClaim`:
 persistentvolumeclaim "data-my-first-k8s-wordpress-mariadb-0" deleted
 </code></pre>
 
-## Installing the Wordpress Helm chart
+## Installing the WordPress Helm chart
 
-For this tutorial we are using the [Wordpress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress){.external} found on [Bitnami repository](https://github.com/bitnami/charts/). The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
+For this tutorial we are using the [WordPress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress){.external} found on [Bitnami repository](https://github.com/bitnami/charts/). The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
 
 > [!primary]
 >
@@ -105,7 +105,7 @@ For this tutorial we are using the [Wordpress Helm chart](https://github.com/bit
 >
 > Maybe you would like your username to be different, or be able to set your password, or choose an external database instead of deploying the MariaDB container...
 >
-> In order to customize your install, without having to leave the simplicity of using Helm and the Wordpress Helm chart, you can simply set some of the [configurable parameters of the WordPress chart](https://github.com/helm/charts/tree/master/stable/wordpress#configuration){.external}. Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`)
+> In order to customize your install, without having to leave the simplicity of using Helm and the WordPress Helm chart, you can simply set some of the [configurable parameters of the WordPress chart](https://github.com/helm/charts/tree/master/stable/wordpress#configuration){.external}. Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`)
 
 ```
 helm install my-first-k8s-wordpress bitnami/wordpress --set allowOverrideNone=true
@@ -114,11 +114,11 @@ helm install my-first-k8s-wordpress bitnami/wordpress --set allowOverrideNone=tr
 This will install the needed elements:
 
 - a MariaDB `Pod` for the database
-- a Wordpress `Pod` for the webserver with the Wordpress PHP code
+- a WordPress `Pod` for the webserver with the WordPress PHP code
 - allocate the persistent volumes (`PersistentVolumeClaim` and `PersistentVolume`) 
 - and initialize the `Services`. 
 
-And at the end, it will give you the connection parameters for your new Wordpress:
+And at the end, it will give you the connection parameters for your new WordPress:
 
 <pre class="console"><code>$ helm install my-first-k8s-wordpress bitnami/wordpress --set allowOverrideNone=true
 NAME: my-first-k8s-wordpress
@@ -183,9 +183,9 @@ $ echo "WordPress Admin URL: http://$SERVICE_IP/admin"
 WordPress Admin URL: http://51.178.69.190/admin
 </code></pre>
 
-Copy/paste the Wordpress URL in your browser to see your new running blog:
+Copy/paste the WordPress URL in your browser to see your new running blog:
 
-![Installing Wordpress](images/installing-wordpress-01.png){.thumbnail}
+![Installing WordPress](images/installing-wordpress-01.png){.thumbnail}
 
 In order to log in on the Admin interface, you need to use the instructions given by the Helm install to get the default username and password for your blog.
 
@@ -197,21 +197,21 @@ $ echo Password: $(kubectl get secret --namespace default my-first-k8s-wordpress
 Password: 9hF2YWSpXB
 </code></pre>
 
-![Installing Wordpress](images/installing-wordpress-02.png){.thumbnail}
+![Installing WordPress](images/installing-wordpress-02.png){.thumbnail}
 
-![Installing Wordpress](images/installing-wordpress-03.png){.thumbnail}
+![Installing WordPress](images/installing-wordpress-03.png){.thumbnail}
 
-You have a working Wordpress on your OVHcloud Managed Kubernetes Service, congratulations!
+You have a working WordPress on your OVHcloud Managed Kubernetes Service, congratulations!
 
 ## Cleaning up
 
-To clean up your cluster, simply use Helm to delete your Wordpress blog.
+To clean up your cluster, simply use Helm to delete your WordPress blog.
 
 ```bash
 helm uninstall my-first-k8s-wordpress
 ```
 
-It will delete your Wordpress and its associated resources from your cluster:
+It will delete your WordPress and its associated resources from your cluster:
 
 <pre class="console"><code>$ helm uninstall my-first-k8s-wordpress
 release "my-first-k8s-wordpress" uninstalled
@@ -223,7 +223,7 @@ You also need to remove remaining `PersistentVolumeClaim` manually, for the mome
 kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
 ```
 
-It will delete the `PersistentVolumeClaim` installed by Bitnami Wordpress helm chart:
+It will delete the `PersistentVolumeClaim` installed by Bitnami WordPress helm chart:
 
 <pre class="console"><code>$ kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
 persistentvolumeclaim "data-my-first-k8s-wordpress-mariadb-0" deleted
@@ -231,6 +231,6 @@ persistentvolumeclaim "data-my-first-k8s-wordpress-mariadb-0" deleted
 
 ## Where do we go from here?
 
-So now you have a working Wordpress on your OVHcloud Managed Kubernetes cluster.
+So now you have a working WordPress on your OVHcloud Managed Kubernetes cluster.
 
 Don't hesitate to go to our [Managed Kubernetes guides and tutorials](../).

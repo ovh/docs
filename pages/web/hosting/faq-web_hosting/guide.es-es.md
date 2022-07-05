@@ -37,7 +37,7 @@ Para publicar su sitio web, debe disponer de un [nombre de dominio](https://www.
 
 Para más información, consulte esta [página](https://www.ovhcloud.com/es-es/web-hosting/uc-website/) y siga las indicaciones de la guía [Publicar un sitio web en internet](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/).
 
-**Trucos y Trucos**: Para ayudarle a crear su sitio web, OVHcloud le permite instalar en su alojamiento un programa de soporte para la creación de sitios web (WordPress, PrestaShop, Joomla y Drupal), gracias a la funcionalidad [Módulos en 1 clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/).
+**Trucos y Trucos**: Para ayudarle a crear su sitio web, OVHcloud le permite instalar en su alojamiento un programa de soporte para la creación de sitios web (WordPress, PrestaShop, Joomla! y Drupal), gracias a la funcionalidad [Módulos en 1 clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/).
 
 ### ¿Cómo transferir un sitio web y el correo a los servidores de OVHcloud? 
 

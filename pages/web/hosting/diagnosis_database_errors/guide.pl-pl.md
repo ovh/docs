@@ -50,7 +50,7 @@ Sprawdź najpierw na stronie [https://web-cloud.status-ovhcloud.com/](https://we
 
 #### Sprawdź dane do logowania do bazy danych <a name="config_file"></a>
 
-Zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) do przestrzeni dyskowej plików na Twoim hostingu i znajdź plik konfiguracyjny Twojej strony (np. w przypadku strony Wordpress plik **wp-config.php** znajduje się w folderze zawierającym Twoją stronę).
+Zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) do przestrzeni dyskowej plików na Twoim hostingu i znajdź plik konfiguracyjny Twojej strony (np. w przypadku strony WordPress plik **wp-config.php** znajduje się w folderze zawierającym Twoją stronę).
 
 > [!warning]
 >
@@ -63,11 +63,11 @@ Następnie sprawdź zgodność **dokładna** między identyfikatorami logowania 
 
 W razie potrzeby zmień [hasło do Twojej bazy danych](https://docs.ovh.com/pl/hosting/zmiana-hasla-do-bazy-danych/).
 
-#### Przykład dla Wordpress
+#### Przykład dla WordPress
 
 Jeśli Twoja strona wyświetla komunikat **"Błąd podczas logowania do bazy danych"** i nie dotyczy jej [problem](https://web-cloud.status-ovhcloud.com/), zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) do hostingu, a następnie otwórz katalog zawierający Twoją stronę (domyślnie jest to folder `www`).
 
-Jeśli jest to strona Wordpress, otwórz plik `wp-config.php`.
+Jeśli jest to strona WordPress, otwórz plik `wp-config.php`.
 
 ```php
 define('DB_NAME', 'my_database');

@@ -33,7 +33,7 @@ Mit Ihrem OVH Webhosting Angebot können Sie eine neue Website erstellen oder ei
 
  Sie können Ihre Website entweder manuell mithilfe Ihrer eigenen Programmierkenntnisse einrichten, oder gebrauchsfertige Lösungen wie Content Management Systeme (CMS) für die Erstellung Ihrer Website verwenden. Die erste Option erfordert ein gewisses Maß an technischer Kompetenz, ermöglicht jedoch ein maßgeschneidertes Ergebnis. Mit der zweiten Lösung profitieren Sie von einer direkt einsetzbaren Website, für deren Einrichtung keine technischen Fachkenntnisse notwendig sind.
 
-Im Kundencenter stellt OVH seinen Kunden ein Tool zur Verfügung, mit dem ein CMS mit nur einem Klick installiert werden kann. Zur Auswahl stehen WordPress, PrestaShop, Drupal und Joomla. Wenn Sie noch auf der Suche nach dem richtigen CMS sind, kann Ihnen dieser [CMS Vergleich](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/){.external} bei Ihrer Auswahl helfen. Wenn das gewünschte CMS von OVH nicht angeboten wird, können Sie es manuell auf Ihrem Webhosting installieren.
+Im Kundencenter stellt OVH seinen Kunden ein Tool zur Verfügung, mit dem ein CMS mit nur einem Klick installiert werden kann. Zur Auswahl stehen WordPress, PrestaShop, Drupal und Joomla!. Wenn Sie noch auf der Suche nach dem richtigen CMS sind, kann Ihnen dieser [CMS Vergleich](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/){.external} bei Ihrer Auswahl helfen. Wenn das gewünschte CMS von OVH nicht angeboten wird, können Sie es manuell auf Ihrem Webhosting installieren.
 
 - **Eine bestehende Website zu OVH migrieren**
 
