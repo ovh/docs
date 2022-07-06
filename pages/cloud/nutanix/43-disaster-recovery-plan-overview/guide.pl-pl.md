@@ -1,9 +1,11 @@
 ---
-title: Disaster Recovery Plan in Nutanix
+title: Plan odtwarzania po awarii w Nutanix (EN)
 slug: disaster-recovery-plan-overview
 excerpt: Overview of various Disaster Recovery Plan solutions in Nutanix
 section: Disaster Recovery Plan
 order: 01
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/nutanix/disaster-recovery-plan-overview/'
 ---
 
 **Last updated 29th June 2022**
@@ -15,7 +17,7 @@ This guide will take you through the possibilities offered by Nutanix clusters i
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/pl/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 ## Requirements
@@ -23,7 +25,7 @@ This guide will take you through the possibilities offered by Nutanix clusters i
 - Multiple Nutanix clusters with either organisation:
     - Multiple Nutanix clusters at physically different sites at OVHcloud
     - A Nutanix cluster provided by OVHcloud and another Nutanix cluster from another provider
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Access to your clusters via Prism Central
 - A vRack or IPSEC VPN connection between the two clusters, as required
 
@@ -36,7 +38,7 @@ The two clusters must be fully visible to each other through a secure connection
 
 To do this, you can use various methods such as:
 
-- Connecting all sites via the same [vRack](https://www.ovh.co.uk/solutions/vrack/).
+- Connecting all sites via the same [vRack](https://www.ovh.pl/rozwiazania/vrack/).
 
 ![Interconnection with vRack diagram](images/vrackinterconnection.png){.thumbnail}
 
@@ -44,7 +46,7 @@ To do this, you can use various methods such as:
 
 ![Interconnection with IPsec diagram](images/ipsecinterconnection.png){.thumbnail}
 
-An example of an IPsec interconnection in this guide: [IPsec interconnection between two sites](https://docs.ovh.com/gb/en/nutanix/ipsec-interconnection/)
+An example of an IPsec interconnection in this guide: [IPsec interconnection between two sites](https://docs.ovh.com/pl/nutanix/ipsec-interconnection/)
 
 ### Nutanix solutions for implementing a disaster recovery plan
 
@@ -53,7 +55,7 @@ Some solutions are available with **Prism Element**:
 - **Async DR**: replication between two remote **storage containers** is only done once per hour. If a problem occurs, it is possible to lose one hour of data (RPO 1 hour) but the restart can be done manually in one minute.
 - **NearSync DR**: replication occurs several times per hour. You can sync between 1 and 15 minutes, depending on the licence you have (RPO between 1 and 15 minutes).
 
-Details of these solutions can be found in our documentation on [asynchronous or NearSync replication through Prism Element](https://docs.ovh.com/gb/en/nutanix/prism-element-nutanix-replication/)
+Details of these solutions can be found in our documentation on [asynchronous or NearSync replication through Prism Element](https://docs.ovh.com/pl/nutanix/prism-element-nutanix-replication/)
 
 The management of disaster recovery plans can be improved via third-party tools or a Nutanix solution called **Leap** through **Prism Central**.
 
@@ -62,8 +64,8 @@ The management of disaster recovery plans can be improved via third-party tools 
 
 ## Go further
 
-[IPsec interconnection between two sites](https://docs.ovh.com/gb/en/nutanix/ipsec-interconnection/)
+[IPsec interconnection between two sites](https://docs.ovh.com/pl/nutanix/ipsec-interconnection/)
 
-[Asynchronous or *NearSync* replication through Prism Element](https://docs.ovh.com/gb/en/nutanix/prism-element-nutanix-replication/)
+[Asynchronous or *NearSync* replication through Prism Element](https://docs.ovh.com/pl/nutanix/prism-element-nutanix-replication/)
 
 Join our community of users on <https://community.ovh.com/en/>.

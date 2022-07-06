@@ -15,17 +15,17 @@ This guide will show you how to interconnect two Nutanix clusters, provided by O
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 
 ## Requirements
 
 - Two Nutanix clusters provided by OVHcloud, on different sites
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - Access to your clusters via Prism Central
 - A different private IP addressing scheme applied per cluster
-- Being familiar with uses for an IPsec VPN using the [Nutanix Disaster Recovery Plan guide](https://docs.ovh.com/gb/en/nutanix/disaster-recovery-plan-overview/)
+- Being familiar with uses for an IPsec VPN using the [Nutanix Disaster Recovery Plan guide](https://docs.ovh.com/ie/en/nutanix/disaster-recovery-plan-overview/)
 
 ## Instructions
 
@@ -83,7 +83,7 @@ To allow this configuration, we will replace the **OVHgateway** virtual machine 
 
 Download an ISO image for the **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/){.external}.
 
-Using [this documentation](https://docs.ovh.com/gb/en/nutanix/image-import/), add the **pfSense ISO** image to your Nutanix cluster.
+Using [this documentation](https://docs.ovh.com/ie/en/nutanix/image-import/), add the **pfSense ISO** image to your Nutanix cluster.
 
 <a name="createvmpfsense"></a>
 #### Step 2.2 Creating the **GW-PFSENSE virtual machine**
@@ -97,7 +97,7 @@ Create a virtual machine with these settings:
 - **CPU**: `2 vCPU`
 - **Network**: `two network cards on the AHV network: **Base**`
 
-You can use [our guide on virtual machine management](https://docs.ovh.com/gb/en/nutanix/virtual-machine-management/) to create this virtual machine.
+You can use [our guide on virtual machine management](https://docs.ovh.com/ie/en/nutanix/virtual-machine-management/) to create this virtual machine.
 
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
@@ -127,7 +127,7 @@ From the `More` menu at the top, click `Soft Shutdown`{.action}.
 
 Retrieve information about the OVHcloud gateway network settings.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), select your Nutanix cluster, and find the information in the `FOIP` field.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), select your Nutanix cluster, and find the information in the `FOIP` field.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
@@ -419,7 +419,7 @@ We will install the **GW-PFSENSE** gateway in France on the IP plan **192.168.0.
 
 Download the ISO image of **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/){.external}.
 
-Using [this documentation](https://docs.ovh.com/gb/en/nutanix/image-import/), add the pfSense **ISO image** to your Nutanix cluster.
+Using [this documentation](https://docs.ovh.com/ie/en/nutanix/image-import/), add the pfSense **ISO image** to your Nutanix cluster.
 
 <a name="createvmpfsensefr"></a>
 #### Step 3.2 Creating the **GW-PFSENSE virtual machine**
@@ -433,7 +433,7 @@ Create a virtual machine with these settings:
 - **CPU**: `2 vCPU`
 - **Network**: `two network cards on the AHV network: **Base**`
 
-You can use [our guide on virtual machine management](https://docs.ovh.com/gb/en/nutanix/virtual-machine-management/) to create this virtual machine.
+You can use [our guide on virtual machine management](https://docs.ovh.com/ie/en/nutanix/virtual-machine-management/) to create this virtual machine.
 
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
@@ -463,7 +463,7 @@ From the `More` menu at the top, click `Soft Shutdown`{.action}.
 
 Retrieve information about the OVHcloud gateway network settings.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), select your Nutanix cluster, and find the information in the `FOIP` field.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), select your Nutanix cluster, and find the information in the `FOIP` field.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
@@ -976,8 +976,8 @@ VPN setup is complete on both clusters. It is now possible to set up replicas th
 <a name="gofurther"></a>
 ## Go further
 
-[Disaster Recovery Plan on Nutanix](https://docs.ovh.com/gb/en/nutanix/disaster-recovery-plan-overview/)
+[Disaster Recovery Plan on Nutanix](https://docs.ovh.com/ie/en/nutanix/disaster-recovery-plan-overview/)
 
-[Asynchronous or *NearSync* replication through Prism Element](https://docs.ovh.com/gb/en/nutanix/prism-element-nutanix-replication/)
+[Asynchronous or *NearSync* replication through Prism Element](https://docs.ovh.com/ie/en/nutanix/prism-element-nutanix-replication/)
 
 Join our community of users on <https://community.ovh.com/en/>.

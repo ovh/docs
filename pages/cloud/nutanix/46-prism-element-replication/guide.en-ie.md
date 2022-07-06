@@ -15,7 +15,7 @@ This guide details how to set up cluster replication via Prism Element.
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 
@@ -28,7 +28,7 @@ Via **Prism Element**, you can:
 
 > [!warning]
 > 
-> The **Nutanix Standard** OVHcloud pack allows you to use asynchronous replicas **every hour**.
+> The **Nutanix Standard** OVHcloud pack allows you to use asynchronous replicas **every hour**. 
 >
 > For a shorter replication time between 1 and 15 minutes, you must configure NearSync replicas. This option is only available with the **Nutanix Advanced** OVHcloud pack.
 > 
@@ -36,7 +36,7 @@ Via **Prism Element**, you can:
 ## Requirements
 
 - Two Nutanix clusters in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - Access to your clusters via **Prism Central**
 - An interconnection between two clusters, e.g. via an IPsec VPN
 
@@ -47,9 +47,9 @@ We will use two Nutanix clusters in OVHcloud data centres, one in Canada and the
 - **192.168.0.0/24** for the cluster in a data centre in France.
 - **192.168.10.0/24** for the cluster in a Canadian data centre.
 
-If you need help setting up an IPsec VPN, please refer to our guide on [interconnecting two Nutanix clusters through an IPsec VPN](https://docs.ovh.com/gb/en/nutanix/ipsec-interconnection/).
+If you need help setting up an IPsec VPN, please refer to our guide on [interconnecting two Nutanix clusters through an IPsec VPN](https://docs.ovh.com/ie/nutanix/ipsec-interconnection/).
 
-Connect via **Prism Element** to the cluster in France from **Prism Central**, as shown in this documentation: [Nutanix Hyperconvergence](https://docs.ovh.com/gb/en/nutanix/nutanix-hci/).
+Connect via **Prism Element** to the cluster in France from **Prism Central**, as shown in this documentation: [Nutanix Hyperconvergence](https://docs.ovh.com/ie/nutanix/nutanix-hci/).
 
 Click `Data Protection`{.action} from the `Home`{.action} menu.
 
@@ -241,9 +241,9 @@ The virtual machines will appear in the **Prism Element** console in the state o
 
 ## Go further
 
-[Disaster Recovery Plan in Nutanix](https://docs.ovh.com/gb/en/nutanix/disaster-recovery-plan-overview/)
+[Disaster Recovery Plan in Nutanix](https://docs.ovh.com/ie/nutanix/disaster-recovery-plan-overview/)
 
-[IPsec interconnection between two sites](https://docs.ovh.com/gb/en/nutanix/ipsec-interconnection/)
+[IPsec interconnection between two sites](https://docs.ovh.com/ie/nutanix/ipsec-interconnection/)
 
 [Nutanix Documentation on Data Protection and Disaster Recovery](https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2005-Data-Protection:top-backup-and-disaster-recovery-on-remote-sites.html)
 
