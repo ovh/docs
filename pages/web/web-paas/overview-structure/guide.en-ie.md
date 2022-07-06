@@ -21,15 +21,15 @@ but you can buy more on a per-project basis.
 
 There are three types of containers within your cluster:
 
-* one *router*
-* one or more *application* containers
-* zero or more *service* containers
+- one *router*
+- one or more *application* containers
+- zero or more *service* containers
 
 All of those containers are managed by three special files in your Git repository:
 
-* `.platform/routes.yaml`
-* `.platform/services.yaml`
-* `.platform.app.yaml`
+- `.platform/routes.yaml`
+- `.platform/services.yaml`
+- `.platform.app.yaml`
 
 In most cases, that means your repository looks like this:
 
@@ -45,7 +45,7 @@ yourproject/
 
 ## Router
 
-There is always exactly one Router per cluster.
+There is always exactly one router per cluster.
 
 The router of a cluster is a single nginx process.
 It's configured by the `routes.yaml` file.
@@ -65,7 +65,7 @@ The code for a service is provided by Web PaaS in a pre-built container image,
 along with a default configuration.
 Depending on the service,
 it may also include user-provided configuration in the `services.yaml` file.
-Examples of services include MySQL/MariaDB, Redis, and RabbitMQ
+Examples of services include MySQL/MariaDB, Redis, and RabbitMQ.
 
 ## Application
 
