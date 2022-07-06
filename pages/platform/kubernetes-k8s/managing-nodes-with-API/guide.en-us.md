@@ -30,14 +30,14 @@ After creation, the `desiredsize` can be edited, and the node pool will automati
 
 We will later propose cluster autoscaling based on node pols. We see some customer developing they own autoscaling scripts. We strongly encourage you to define `minnodecount` and `maxnodecount` in that case.
 
-In this guide we explain how to do some basic operations with nodes and node pools using the [OVHcloud API](https://ca.api.ovh.com/console/): adding nodes to an existing node pool, creating a new node pool...
+In this guide we explain how to do some basic operations with nodes and node pools using the [OVHcloud API](https://ca.api.ovh.com/console/): adding nodes to an existing node pool, creating a new node pool, etc.
 
 
 ## Upsizing and downsizing a Node Pool
 
 By editing the `desiredNodes` value to a value different from `currentNodes` one (for values between the `minnodecount` and `maxnodecount`), i will trigger the node pool upsizing or downsizing.
 
-When downsizing, the last created node will be drained then deleted first, then the before last created is drain and deleted, and this process is reproduced until the "current nodes" is equal to `desirednodes`.
+When downsizing, the last created node will be drained then deleted first, then the second to last created is drained and deleted, and this process is reproduced until the "current nodes" is equal to `desirednodes`.
 
 When upsizing, a first node is created and when it is ready, another is created, and this process is reproduced until the `currentnodes` is equal to `desirednodes`.
 

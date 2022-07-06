@@ -32,7 +32,7 @@ order: 4
 
 ## Objective
 
-OVHcloud Managed Kubernetes natively integrates Block Storage as persistent volumes. This technology may however not be suited to some legacy or non cloud-native applications, often requiring to share this persistent data accross different pods on multiple worker nodes (ReadWriteMany or RWX). If you would need to do so for part of your workloads, one of the solution is to use NFS volumes. [OVHcloud NAS-HA](https://www.ovh.ie/nas/) is a managed solution that lets you configure easily an NFS server and multiple NFS volumes. In this tutorial we are going to see how to configure your OVHcloud Managed Kubernetes cluster to use [OVHcloud NAS-HA](https://www.ovh.ie/nas/) as an NFS provider for [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
+OVHcloud Managed Kubernetes natively integrates Block Storage as persistent volumes. This technology may however not be suited to some legacy or non cloud-native applications, often requiring to share this persistent data accross different pods on multiple worker nodes (ReadWriteMany or RWX). If you would need to do so for part of your workloads, one of the solution is to use NFS volumes. [OVHcloud NAS-HA](https://www.ovh.ie/nas/) is a managed solution that lets you easily configure an NFS server and multiple NFS volumes. In this tutorial we are going to see how to configure your OVHcloud Managed Kubernetes cluster to use [OVHcloud NAS-HA](https://www.ovh.ie/nas/) as an NFS provider for [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
 
 ## Requirements
 
@@ -54,7 +54,7 @@ Create a new NFS partition in your Zpool:
 
 ![Create an NFS partition](images/create-nfs-partition.png){.thumbnail}
 
-Once the partition is created, we needs to allow our Kubernetes nodes to access our newly created partition.
+Once the partition is created, we need to allow our Kubernetes nodes to access our newly created partition.
 
 Get our Kubernetes nodes IP:
 ```bash
@@ -78,7 +78,7 @@ In this example our `ZPOOL_IP` is `10.201.18.33`, our `ZPOOL_NAME` is `zpool-127
 
 ### Step 2 - Configuring Kubernetes to use our newly created NFS partition
 
-Your Kubernetes cluster need some additionnal piece of software to make use of the NFS partition. We will install those and then create a first volume, shared accross multiple pods.
+Your Kubernetes cluster needs some additionnal piece of software to make use of the NFS partition. We will install those and then create a first volume, shared accross multiple pods.
 
 First, let's create a `values.yaml` configuration file for the NFS subdir external provisioner Helm installation:
 
