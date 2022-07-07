@@ -139,17 +139,52 @@ Connectez vous au cluster en France avec **Prism Central** sur la même rubrique
 
 ![Connect clusters 03](images/03-connect-cluster05.png){.thumbnail}
 
-
-
-
+### Mise en place d'une réplication du site au Canade vers la France.
 
 > [!warning]
 > Il est impossible d'avoir des machines virtuelles qui utilisent **Domain Protection** à partir de **Prism Element** si l'on veut utiliser **Nutanix Leap** , il faudra s'assurer que les machines virtuells ne fassent plus partie du **Domain Protection**.
 >
 
+#### Création d'un catégorie contenant les machines virtuelles à répliquer
 
-### Mise en place d'une réplication du site en FRANCE vers le site au CANADA.
+Au travers du `menu principal` allez sur `Availability Zones`{.action} des options `administration`.
 
+![Create CATEGORIE 01](images/04-create-category01.png){.thumbnail}
+
+Cliquez sur `New Category`{.action}
+
+![Create CATEGORIE 02](images/04-create-category02.png){.thumbnail}
+
+Saisissez ces informations :
+
+- **Name** : `replicated-vm`
+- **values** : `from-canada`
+
+Ensuite cliquez sur `Save`{.action}.
+
+![Create CATEGORIE 03](images/04-create-category04.png){.thumbnail}
+
+Revenez dans le menu principal sélectionnez `VMs`{.action} dns la catégorie `Compute et Storage`
+
+![Create CATEGORIE 04](images/04-create-category04.png){.thumbnail}
+
+Sélectionnez la machine virtuelle à répliquer avec la `case à cocher`{.action} à gauche de la machine virtuelle et cliquez sur `Actions`{.action} pour faire apparaitre un menu.
+
+![Create CATEGORIE 05](images/04-create-category05.png){.thumbnail}
+
+Au travers du menu cliquez sur `Manage Categories`{.action} 
+
+![Create CATEGORIE 06](images/04-create-category06.png){.thumbnail}
+
+Sélectionnez la catégorie créé et cliquez sur le bouton `+`{.action} de couleur bleu.
+
+![Create CATEGORIE 07](images/04-create-category07.png){.thumbnail}
+
+cliquez sur  `Save`{.action}
+
+![Create CATEGORIE 08](images/04-create-category08.png){.thumbnail}
+
+#### Création de la stratégie de protection
 
 
 
