@@ -5,7 +5,7 @@ slug: windows-klucz
 section: Inne
 ---
 
-**Ostatnia aktualizacja dnia 2018-03-08**
+**Ostatnia aktualizacja dnia 06-07-2022**
 
 ## Wprowadzenie
 
@@ -16,9 +16,9 @@ Istnieje możliwość, że podczas instalacji systemu operacyjnego Windows Serve
 
 ## Wymagania początkowe
 
-- [Serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/){.external} z systemem Windows.
-- Dostępna licencja Windows SPLA. [Sprawdź ofertę licencji Windows](https://www.ovh.pl/serwery_dedykowane/cennik-licencje-windows-2014.xml){.external} i zamów ją w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Dostęp do zdalnego pulpitu.
+- Posiadanie [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/os/server-windows/) z zainstalowanym systemem Windows na koncie OVHcloud
+- Posiadanie licencja SPLA systemu Windows na koncie OVHcloud
+- Dostęp administracyjny do serwera za pośrednictwem połączenia pulpitu zdalnego
 
 
 ## W praktyce
@@ -66,6 +66,8 @@ Oto lista kluczy KMS dostępnych dla każdego systemu operacyjnego:
 |Windows Server 2016 Essentials|JCKRF-N37P4-C2D82-9YXRT-4M63B|
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
+|Windows Server 2022 Standard|VDYBN-27WPP-V4HQT-9VMD4-VMK7H|
+|Windows Server 2022 Datacenter|WX4NM-KYWYW-QJJR4-XV3QB-6VM33|
 
 Źródło: [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
 
@@ -97,7 +99,5 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 ```
 
 ## Sprawdź również
-
-[Licencje Windows dostępne w OVH](https://www.ovh.pl/serwery_dedykowane/cennik-licencje-windows-2014.xml){.external}
-
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

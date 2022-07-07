@@ -5,20 +5,20 @@ slug: windows-key
 section: Divers
 ---
 
-**Dernière mise à jour le 20/02/2018**
+**Dernière mise à jour le 07/06/2022**
 
 ## Objectif
 
 Lors de l'installation d'un système d'exploitation Windows Server, il est possible que la clé d'activation ne soit pas correctement enregistrée. Dans ce cas, le système est installé avec une clé en version d'essai d'une durée de 120 jours. Passé ce délai, votre système ne sera plus utilisable.
 
-**Ce guide vous explique comment corriger la clé d'activation de votre environnement Windows Server.**
+**Ce guide vous explique comment modifier la clé d'activation de votre environnement Windows Server.**
 
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} installé sous Windows.
-- Disposer d'une licence Windows SPLA ou en [acheter une](https://www.ovh.com/fr/serveurs_dedies/tarification-licences-windows-2014.xml){.external}.
-- Avoir un accès au bureau à distance.
+- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/os/server-windows/) avec Windows installé dans votre compte OVHcloud
+- Disposer d'une licence Windows SPLA dans votre compte OVHcloud
+- Avoir un accès administratif à votre serveur via une connexion bureau à distance
 
 
 ## En pratique
@@ -65,6 +65,8 @@ Voici la liste des clés KMS disponibles pour chaque système d'exploitation :
 |Windows Server 2016 Essentials|JCKRF-N37P4-C2D82-9YXRT-4M63B|
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
+|Windows Server 2022 Standard|VDYBN-27WPP-V4HQT-9VMD4-VMK7H|
+|Windows Server 2022 Datacenter|WX4NM-KYWYW-QJJR4-XV3QB-6VM33|
 
 Source : [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
 

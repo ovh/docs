@@ -5,7 +5,7 @@ slug: windows-key
 section: Diversos
 ---
 
-**Última atualização: 08/03/2018**
+**Última atualização: 06/07/2022**
 
 ## Sumário
 
@@ -16,8 +16,8 @@ Por vezes, durante a instalação de um sistema operativo Windows Server, a chav
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external} com o Windows instalado.
-- Ter uma licença Windows SPLA [ ou adquirir uma licença nova](https://www.ovh.pt/servidores_dedicados/precos-licencas-windows-2014.xml){.external}.
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/os/server-windows/) com Windows instalado na sua conta OVHcloud
+- Ter uma licença Windows SPLA na sua conta OVHcloud
 - Ter acesso ao servidor via desktop remoto.
 
 
@@ -66,6 +66,8 @@ Abaixo pode ver a lista das Chaves de Configuração de Cliente KMS (Key Managem
 |Windows Server 2016 Essentials|JCKRF-N37P4-C2D82-9YXRT-4M63B|
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
+|Windows Server 2022 Standard|VDYBN-27WPP-V4HQT-9VMD4-VMK7H|
+|Windows Server 2022 Datacenter|WX4NM-KYWYW-QJJR4-XV3QB-6VM33|
 
 Fonte: [Microsoft](https://docs.microsoft.com/pt-pt/windows-server/get-started/kmsclientkeys){.external}
 
