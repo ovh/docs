@@ -54,7 +54,7 @@ Toutes les opérations se feront au travers de **Prism Central**
 ### Mise en service de LEAP
 
 #### Ajout d'une adresse IP en iSCSI sur chaque cluster 
-Avant d'activer **LEAP** il est nécessaire de rajouter une address IP pour les connexions iSCSI sur chacun des clusters
+Avant d'activer **LEAP** il est nécessaire de rajouter une addresse IP pour les connexions iSCSI sur chacun des clusters
 
 Connectez-vous à **Prism Element** au travers de **Prism Central** du cluster en France, pour vous aider vous pouvez utiliser ce guide [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/).
 
@@ -80,19 +80,68 @@ Saisissez une `adresse IP du réseau d'administration non utilisée` dans **iSCS
 
 Revenez sur l'interface **Prism Central** du cluster se trouvant en France
 
+Au travers **Prism Central** allez dans le menu principal et sous la rubrique `Data Protection` cliquez sur `Recovery Plans`{.action}.
 
+![Activate Recovery 01](images/02-activate-recovery01.png){.thumbnail}
 
+Cliquez sur `Enable LEAP`{.action}.
 
+![Activate Recovery 02](images/02-activate-recovery02.png){.thumbnail}
 
+Si les `Prechecks` sont successful cliquez sur `Enable`{.action}.
 
+![Activate Recovery 03](images/02-activate-recovery03.png){.thumbnail}
 
+Allez maintenant sur l'interface **Prism Central** du Canada et faites la même opération
 
+Cliquez sur `Recovery Plans`{.action}.
 
+![Activate Recovery 01](images/02-activate-recovery01.png){.thumbnail}
 
+Cliquez sur `Enable LEAP`{.action}.
 
+![Activate Recovery 02](images/02-activate-recovery02.png){.thumbnail}
 
+Si les `Prechecks` sont successful cliquez sur `Enable`{.action}.
+
+![Activate Recovery 03](images/02-activate-recovery03.png){.thumbnail}
+
+Nutanix Leap est activé sur les deux clusters , chaque cluster possède une *Availability Zone* il faut maintenant les connecter les deux clusters pour que chacun des deux clusters voient la *Availability Zone**.
 
 ### Connexion des deux clusters.
+
+Restez sur **Prism Central** dans le cluster se trouvant au Canada.
+
+Allez dans le menu principal, et sous la rubrique `Administration` cliquez sur `Availability Zones`{.action}.
+
+![Connect clusters 01](images/03-connect-cluster01.png){.thumbnail}
+
+cliquez sur `Connect to Availability Zone`{.action}.
+
+![Connect clusters 01](images/03-connect-cluster02.png){.thumbnail}
+
+Saisissez ces informations :
+
+- **Availability Zone Type** : `Physical Location`
+- **IP Address for Remote PC** : `Adresse IP Prism Central distant`
+- **Username** : `Compte administrateur du Prism Central distant`
+- **Password** : `Mot de passe du compte Prism Central distant`
+
+Ensuite cliquez sur `Connect`{.action}.
+
+![Connect clusters 01](images/03-connect-cluster03.png){.thumbnail}
+
+Le cluster distant apparait avec son adresse IP, ici celle de l'adresse de **Prism Central** en France.
+
+![Connect clusters 02](images/03-connect-cluster04.png){.thumbnail}
+
+Connectez vous au cluster en France avec **Prism Central** sur la même rubrique  `Availability Zones` vous allez constatez que le cluster distant au Canada aussi apparait. Les deux sites sont connectés.
+
+![Connect clusters 03](images/03-connect-cluster05.png){.thumbnail}
+
+
+
+
 
 > [!warning]
 > Il est impossible d'avoir des machines virtuelles qui utilisent **Domain Protection** à partir de **Prism Element** si l'on veut utiliser **Nutanix Leap** , il faudra s'assurer que les machines virtuells ne fassent plus partie du **Domain Protection**.
