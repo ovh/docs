@@ -2,7 +2,7 @@
 title: Configure Nutanix Flow
 slug: nutanix-flow
 excerpt: Find out how to configure and use Nutanix Flow
-section: IP and Security
+section: Network & Security
 order: 09
 kb: Hosted Private Cloud
 category_l1: Hosted Private Cloud powered by Nutanix

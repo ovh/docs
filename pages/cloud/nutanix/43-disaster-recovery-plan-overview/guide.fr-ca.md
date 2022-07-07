@@ -2,7 +2,7 @@
 title: "Plan de Reprise d'Activité sous Nutanix"
 slug: disaster-recovery-plan-overview
 excerpt: "Aperçu des diverses solutions de Plan de Reprise d'Activité sous Nutanix"
-section: Plan de Reprise d'Activité
+section: "Plan de Reprise d'Activité"
 order: 01
 ---
 

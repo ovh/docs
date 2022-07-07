@@ -2,7 +2,7 @@
 title: Réplication asynchrone ou NearSync au travers de Prism Element
 slug: prism-element-nutanix-replication
 excerpt: "Comment mettre en place la réplication asynchrone ou NearSync au travers de Prism Element"
-section: Plan de Reprise d'Activité
+section: "Plan de Reprise d'Activité"
 order: 04
 ---
 
