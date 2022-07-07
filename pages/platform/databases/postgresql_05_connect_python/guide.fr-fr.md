@@ -3,12 +3,12 @@ title: PostgreSQL - Connectez-vous avec Python (EN)
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Python programming language
 slug: postgresql/connect-python
 section: PostgreSQL - Guides
-order: 302
+order: 060
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-python/'
 ---
 
-**Last updated January 25th 2022**
+**Last updated 4<sup>th</sup> April, 2022**
 
 ## Objective
 
@@ -20,7 +20,8 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account.
-- An up and running Public Cloud Database for PostgreSQL.
+- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/fr/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- [Configure your PostgreSQL instance](https://docs.ovh.com/fr/publiccloud/databases/postgresql/configure-postgresql-instance/) to accept incoming connections
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.7.
 
 ## Concept
@@ -69,68 +70,13 @@ wheel                  0.34.2
 (...)
 ```
 
-Finally, copy the IP address of your Python environment and save it for later.
-If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external} from your station hosting the Python environment.
-In our example, we will use the (fake) IP 109.190.200.59.
-
 We are now ready to learn how to connect to our PostgreSQL instance!
-
-### Configure your PostgreSQL instance to accept incoming connections
-
-Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
-
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your PostgreSQL instance.
-
-#### Step 1: Verify your user roles and password
-
-Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user + password pair.
-
-This first user **avnadmin** comes with the following privileges:
-
-```console
-  LOGIN
-  NOSUPERUSER
-  INHERIT
-  CREATEDB
-  CREATEROLE
-  REPLICATION
-```
-
-We rely on official PostgreSQL roles and privileges. You can manage them yourself via CLI or code.
-So far, **user grants and privileges management are not supported via the OVHcloud Control Panel or the OVHcloud API**.
-
-Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html){.external} to select the right roles for your use-case.
-
-
-In our example, we will simply reset the **avnadmin** password.
-
-Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
-
-![User ready](images/user_enabled.png){.thumbnail}
-
-#### Step 2: Authorize incoming connections from the PostgreSQL client
-
-In this step, select the `Authorised IP's`{.action} tab (Access Control List).
-By default, a Public Cloud Database does not accept any form of connection from the outside world.
-This way we can help prevent intrusive connection attempts.
-
-Click to authorize a new IP, and enter the previously found IP of your Python environment. In our case we will enter 109.190.200.59.
-
-![Add an IP](images/ip_authorize.png){.thumbnail}
-
-> [!primary]
->
-> If you want to allow any connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully. Every IP will be authorized.
->
 
 ### Connect with Python
 
 #### Using psycopg2
 
 Psycopg is the most popular PostgreSQL database adapter for the Python programming language.
-
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your MySQL instance.  
-Select the `General Information`{.action} tab. In the **Login Informations** section, download the CA certificate.
 
 In your Python environment, let's try a connection.
 

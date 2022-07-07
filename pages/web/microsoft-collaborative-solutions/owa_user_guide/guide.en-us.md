@@ -121,7 +121,7 @@ Fill in the requested information depending on the action you want the rule to c
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-For more detailed instructions about creating inbox rules, please refer to our guide: [Creating inbox rules in OWA](../creating-inbox-rules-in-owa).
+For more detailed instructions about creating inbox rules, please refer to our guide: [Creating inbox rules in OWA](../creating-inbox-rules-in-owa/).
 
 #### Block a sender
 
@@ -185,7 +185,7 @@ Now, fill in the requested information depending on the action you want it to ca
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-For more detailed instructions about creating auto-replies, please refer to our guide: [Creating automatic replies in OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa).
+For more detailed instructions about creating auto-replies, please refer to our guide: [Creating automatic replies in OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa/).
 
 ### Adding a signature
 
@@ -199,7 +199,7 @@ On the left-hand side of the new page, click `Email signature`{.action}. In the 
 
 Compose your electronic signature in the editor box. You can specify whether you want to include the signature by default in new emails only or in replies and forwarded emails as well. Once you have finished, click `Save`{.action} to confirm.
 
-For instructions about creating automated signatures by using domain-wide templates, please refer to our guide: [Creating automatic signatures](../exchange_20132016_how_to_create_an_automatic_signature).
+For instructions about creating automated signatures by using domain-wide templates, please refer to our guide: [Creating automatic signatures](../exchange_20132016_how_to_create_an_automatic_signature/).
 
 ### Accessing the options section
 
@@ -220,12 +220,12 @@ However, disabling these cookies may affect the stability of your webmail.
 
 ## Go further
 
-[Creating automatic replies in OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa)
+[Creating automatic replies in OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa/)
 
-[Sharing folders in OWA](../exchange_2016_how_to_share_a_folder_via_owa)
+[Sharing folders in OWA](../exchange_2016_how_to_share_a_folder_via_owa/)
 
-[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa/)
 
-[Creating contact groups](../exchange_20132016_how_to_use_the_groups_feature_mailing_lists)
+[Creating contact groups](../exchange_20132016_how_to_use_the_groups_feature_mailing_lists/)
 
 Join our community of users on <https://community.ovh.com/en/>.

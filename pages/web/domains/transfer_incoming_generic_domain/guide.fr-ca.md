@@ -98,7 +98,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](https:
 
 ![domaine](images/Order_summary.png){.thumbnail}
 
-Une fois la commande validée, vous recevrez un bon de commande. Le processus de transfert ne démarrera qu'après réception du paiement. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action} dans la barre de services située à gauche, puis ` Opérations en cours`{.action}.
+Une fois la commande validée, vous recevrez un bon de commande. Le processus de transfert ne démarrera qu'après réception du paiement. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action}, puis ` Opérations en cours`{.action}.
 
 ### Étape 4 : effectuer la première étape de validation du transfert
 
@@ -142,7 +142,7 @@ Le processus de transfert peut être redémarré à partir de l'[espace client O
 
 ### Étape 6 : gérer son nom de domaine avec OVHcloud
 
-Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné.
+Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
 
 ## Aller plus loin
 

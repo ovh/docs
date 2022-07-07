@@ -18,7 +18,7 @@ Wenn Sie einen dedizierten Server bestellen, ist auf diesem noch kein Sicherheit
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten.
 >
-> Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil "Weiterführende Informationen" dieser Anleitung.
 >
 
 
@@ -139,7 +139,7 @@ Stellen Sie eine SSH-Verbindung mit Ihrem Server her und geben Sie den folgenden
 nano /etc/ssh/sshd_config
 ```
 
-Suchen Sie anschließend den folgenden Abschnitt und ersetzen Sie „yes“ mit „no“ in der Zeile `PermitRootLogin`:
+Suchen Sie anschließend den folgenden Abschnitt und ersetzen Sie “yes” mit “no” in der Zeile `PermitRootLogin`:
 
 ```sh
 # Authentication: 
@@ -196,21 +196,21 @@ iptables -L
 Es wird empfohlen, die Regeln dieser Firewall zu erstellen und an Ihre Bedürfnisse anzupassen. Für weitere Informationen zur Konfiguration von Iptables lesen Sie bitte die offizielle Dokumentation Ihrer Linux-Distribution.
 
 
-### OVHcloud Firewall Network konfigurieren
+### OVHcloud Network Firewall konfigurieren
 
-OVHcloud Server sind mit Firewall Network, einer eigenen Firewall direkt am Eingang der Infrastruktur, ausgestattet. Installation und Konfiguration von Firewall Network ermöglichen das Blockieren von Protokollen, bevor diese überhaupt auf Ihrem Server ankommen.
+OVHcloud Server sind mit Network Firewall, einer eigenen Firewall direkt am Eingang der Infrastruktur, ausgestattet. Installation und Konfiguration von Network Firewall ermöglichen das Blockieren von Protokollen, bevor diese überhaupt auf Ihrem Server ankommen.
 
-[Hier](https://docs.ovh.com/de/dedicated/firewall-network/){.external} finden Sie die Anleitung, um Firewall Network zu konfigurieren.
+[Hier](https://docs.ovh.com/de/dedicated/firewall-network/){.external} finden Sie die Anleitung, um Network Firewall zu konfigurieren.
 
 
 ### Ihr System und Ihre Daten sichern
 
 Das Konzept der Sicherheit ist nicht auf den Schutz eines Systems vor Angriffen beschränkt. Die Sicherung Ihrer Daten ist ebenfalls ein wesentlicher Bestandteil, weshalb OVHcloud Ihnen kostenlos 500 GB Backup-Speicherplatz für Ihren Server anbietet. Sie können den Backup-Speicher in Ihrem Kundencenter aktivieren und dort über folgende Protokolle auf ihn zugreifen.
 
-* FTP
-* FTPS
-* NFS
-* CIFS
+- FTP
+- FTPS
+- NFS
+- CIFS
 
 Außerdem benötigen Sie eine zusätzliche Backup-Lösung, um Ihre Daten zu replizieren und auf Ihren Backup-Speicher zu übertragen.
 

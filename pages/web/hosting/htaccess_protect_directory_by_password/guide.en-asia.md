@@ -1,7 +1,6 @@
 ---
 title: "Protecting your website's administration interface with a .htaccess file"
 slug: how_to_password_protect_a_directory_on_your_website
-legacy_guide_number: g1968
 excerpt: "Find out how to protect access to your website's administration with a .htaccess file"
 section: Redirection and authentication
 ---
@@ -22,9 +21,9 @@ You may need to protect access to part of your website with login credentials. Y
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- the [login details](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
+- An [OVHcloud Web Hosting plan](https://www.ovh.com/asia/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- The [login details](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 
 ## Instructions
 
@@ -32,7 +31,7 @@ You may need to protect access to part of your website with login credentials. Y
 >
 > The solution proposed here is only one technical possibility among others to set up an administrator space on your website. You can also use the [1-click Module](../web_hosting_web_hosting_modules/) feature offered by [OVHcloud](https://www.ovhcloud.com/asia/).
 >
-> If you have any question regarding the creation or programming of your site, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/asia/). We will not be able to assist you with these matters.
+> If you have any question regarding the creation or programming of your site, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/). We will not be able to assist you with these matters.
 >
 
 ### Step 1: Create the file path
@@ -76,7 +75,7 @@ php crypter.php
 >
 > For security reasons, using SSH in this case is recommended. However, if you have a [Personal](https://www.ovhcloud.com/asia/web-hosting/personal-offer/) offer and you do not want to upgrade it to a [Professional](https://www.ovhcloud.com/asia/web-hosting/professional-offer/) or [Performance](https://www.ovhcloud.com/asia/web-hosting/performance-offer/) one, you can also run the "crypter.php" file with your web browser (by simply opening the URL, for example: https://your-domain-name.ovh/crypter.php).
 >
-> For any additional questions on how to encrypt your passwords, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/asia/). We will not be able to assist you with this matter.
+> For any additional questions on how to encrypt your passwords, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/). We will not be able to assist you with this matter.
 >
 
 Retrieve the encrypted passwords (Do not copy the "&#60;br />" if you run the "php crypter.php" command in SSH):
@@ -145,6 +144,6 @@ Require valid-user
 
 [What else can you do with the .htaccess file?](../what_else_can_you_do_with_the_htaccess_file/)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/asia/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -151,7 +151,7 @@ If you have any difficulty understanding this pattern or if you want help creati
 
 It's also possible to replay a given time window in the past.
 
-To proceed, give the begin & end as uri query parameter. begin and end must be in [Unix timestamp format](https://en.wikipedia.org/wiki/Unix_time){.external}. 
+To proceed, give the begin & end as uri query parameter. begin and end must be in [Unix timestamp format](https://en.wikipedia.org/wiki/Unix_time){.external}.
 
 Sample:
 

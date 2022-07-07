@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: FAQ Web Hosting
 excerpt: Retrouvez les questions les plus fréquemment posées sur les hébergements web OVHcloud
 slug: faq-hebergement
 section: Premiers pas
@@ -14,7 +14,7 @@ order: 2
 
 Pour configurer votre hébergement, connectez-vous tout d'abord à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Depuis la rubrique `Hébergements`, vous pourrez notamment gérer vos certificats SSL, la version PHP, l'option CDN, le multisite, les bases de données, etc.
 
-**Trucs et Astuces** : Pour vous aider à configurer votre hébergement, nous vous invitons à prendre connaissance de la rubrique « Premiers pas » que vous retrouverez [ici](https://docs.ovh.com/fr/hosting/).
+**Trucs et Astuces** : Pour vous aider à configurer votre hébergement, nous vous invitons à prendre connaissance de la rubrique « *Premiers pas* » que vous retrouverez [ici](https://docs.ovh.com/fr/hosting/).
 
 ### Comment gérer mes mots de passe ?
 
@@ -70,6 +70,12 @@ Sélectionnez ensuite votre nouvelle formule d'hébergement et la durée de votr
 > En cas de doutes sur les manipulations à effectuer, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/) ou notre [communauté d'utilisateurs ](https://community.ovh.com/).
 >
 
+### Comment conserver l'offre e-mail liée à mon hébergement mutualisé lors d'une résiliation ?
+
+Lorsque vous résiliez ou supprimez votre hébergement mutualisé, l'offre e-mail qui est attachée est également résiliée. Pour conserver vos adresses e-mails, il vous faudra détacher l'offre e-mail avant la résiliation de l'hébergement.<br>
+
+Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Adresses e-mails** ». Cliquez sur `Délier mon option e-mail`{.action} et suivez les instructions pour commander une offre e-mail indépendante qui vous permettra de conserver vos adresses e-mails déjà créées.
+
 ## Diagnostic
 
 > [!warning]
@@ -87,11 +93,11 @@ Consultez ensuite les [évènements en cours sur notre infrastructure](https://w
 
 ![site_en_construction](images/site_en_construction.png){.thumbnail}
 
-À l'installation de votre hébergement, OVHcloud met en place cette page d'attente sous la forme d'un fichier `index.html` contenu dans le dossier `www` de votre serveur FTP.
+À l'installation de votre hébergement, OVHcloud met en place cette page d'attente sous la forme d'un fichier **index.html** contenu dans le dossier `www` de votre serveur FTP.
 
 Ce fichier est automatiquement désactivé lors de la création de votre [module en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
 
-Si vous avez choisi [d'installer votre site manuellement](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/), [connectez-vous à votre espace FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) afin de le renommer en `index.html.old`.
+Si vous avez choisi [d'installer votre site manuellement](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/), [connectez-vous à votre espace FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) afin de le renommer en **index.html.old**.
 
 ### Que faire si mon site s'affiche sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net » ?
 

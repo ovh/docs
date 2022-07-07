@@ -5,7 +5,11 @@ excerpt: 'Come scegliere i motori di esecuzione del tuo hosting per realizzare a
 section: 'Configurazione dell’hosting'
 ---
 
-**Ultimo aggiornamento: 23/01/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 04/05/2022**
 
 ## Obiettivo
 
@@ -54,7 +58,7 @@ Per aggiungere o modificare un motore di esecuzione, seleziona l’hosting Cloud
 - **per aggiungere un motore**, clicca su `Azioni`{.action} in alto a sinistra della tabella e seleziona l’opzione `Aggiungi un motore di esecuzione`{.action}.
 - **per modificare un motore**, clicca sul pulsante `...`{.action} in corrispondenza del motore in questione e seleziona `Modifica`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step2.png){.thumbnail}
+
 
 Nella nuova finestra, inserisci le informazioni richieste e prosegui nella lettura di questa guida in base al motore scelto:
 
@@ -72,7 +76,7 @@ Nella nuova finestra, inserisci le informazioni richieste e prosegui nella lettu
 
 Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite_2){.external}.
 
-![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
+
 
 ##### **Node.js**
 

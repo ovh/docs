@@ -2,7 +2,7 @@
 title: Email Pro
 slug: emails-pro
 sections: General, Configuración del cliente de correo
-order: 04
+order: 06
 ---
 
 > [!product-section]

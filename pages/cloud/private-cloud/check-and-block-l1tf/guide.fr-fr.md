@@ -24,7 +24,7 @@ Pour rappel :
 
 |Variante|vulnérable|fixé par le patch ?|
 |:---|:---:|:---:|
-|Variant1 : L1 Terminal Fault - VMM (CVE-2018-3646)|YES|NO (mais mitigation)|
+|Variant1 : L1 Terminal Fault - VMM (CVE-2018-3646)|YES|NO (mais mitigé)|
 |Variant2 : L1 Terminal Fault - OS (CVE-2018-3620)|NO||
 |Variant3 : L1 Terminal Fault - SGX (CVE-2018-3615)|NO||
 
@@ -46,7 +46,7 @@ Vous retrouverez les informations de cette faille sur notre [article de blog](ht
 
 > [!primary]
 >
-> Il est important de comprendre que la faille n'est pas corrigée avec les actions suivantes.
+> Il est important de comprendre que les actions détaillées ci-dessous ne corrigent pas la vulnérabilité.
 >
 > Les actions décrivent uniquement comment désactiver l'hyperthreading sur vos hôtes ESXi. Cependant, la faille L1TF nécesitant l'hyperthreading pour fonctionner, sa désactivation protège votre infrastructure de l'exploitation de cette vulnérabilité.
 >
@@ -57,7 +57,7 @@ Cette procédure se divise en 3 phases distinctes.
 
 ### Étape 1: Phase de mise à jour
 
-La mise à jour du vCenter est réalisée par OVH, cependant, le patch des hôtes ESXi est à effectuer par vos soins et est disponible dans [l'update manager](https://docs.ovh.com/fr/private-cloud/vmware-update-manager/){.external-link}.
+La mise à jour du vCenter est réalisée par OVHcloud, cependant, le patch des hôtes ESXi est à effectuer par vos soins et est disponible dans [l'update manager](https://docs.ovh.com/fr/private-cloud/vmware-update-manager/){.external-link}.
 
 Vous retrouverez la liste des patchs pour les hôtes ESXi dans [ce document](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 
@@ -85,10 +85,10 @@ Pour en savoir plus, vous pouvez vous rendre à l'étape 3 de la partie résolut
 
 > [!warning]
 > 
-> Si, à la vue de ces diférents éléments, vous ne souhaitez pas désactiver l'hyperthreading, vous pouvez supprimer le message d'alerte en suivant cette [base de connaissance](https://kb.vmware.com/s/article/57374){.external-link}.
+> Si, à la vue de ces différents éléments, vous ne souhaitez pas désactiver l'hyperthreading, vous pouvez supprimer le message d'alerte en suivant cette [base de connaissance](https://kb.vmware.com/s/article/57374){.external-link}.
 > 
 > ![](images/deleteWarning.png){.thumbnail}
-> OVH ne recommande pas cette solution et ce dégage de toute responsabilité concernant cette prise de risque.
+> OVHcloud ne recommande pas cette solution et se dégage de toute responsabilité concernant cette prise de risque.
 >
 
 ## Aller plus loin

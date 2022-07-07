@@ -56,7 +56,7 @@ Zastąp "InstanceID" identyfikatorem odpowiedniej instancji. Identyfikator może
 
 ### Z poziomu API OVHcloud
 
-Zaloguj się do [interfejsu API OVHcloud](https://eu.api.ovh.com/console/) zgodnie z [odpowiednim przewodnikiem](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN) i postępuj zgodnie z poniższymi krokami.
+Zaloguj się do [interfejsu API OVHcloud](https://eu.api.ovh.com/console/) zgodnie z [odpowiednim przewodnikiem](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/) i postępuj zgodnie z poniższymi krokami.
 
 Skorzystaj z następującego połączenia:
 

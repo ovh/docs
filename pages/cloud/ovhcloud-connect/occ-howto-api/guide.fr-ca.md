@@ -22,7 +22,7 @@ La mise en place de l'offre OVHcloud Connect peut se faire directement depuis le
 
 * Posséder une offre [OVHcloud Connect](https://www.ovh.com/fr/solutions/ovhcloud-connect/) dans votre compte OVHcloud.
 * Être connecté aux [API OVHcloud](https://ca.api.ovh.com/console/){.external}.
-* Avoir [créé vos credentials pour l'utilisation des API OVHcloud](../../api/api-premiers-pas/).
+* Avoir [créé vos credentials pour l'utilisation des API OVHcloud](../../api/first-steps-with-ovh-api/).
 
 ## En pratique
 

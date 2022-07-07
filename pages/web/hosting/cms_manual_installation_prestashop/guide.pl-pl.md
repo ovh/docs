@@ -17,13 +17,13 @@ Sprawdź, czy posiadasz identyfikator klienta (nic-handle) i hasło, aby móc si
 
 
 - Musisz posiadać dane do logowania do FTP, aby zalogować się do hostingu.
-Zapoznaj się z przewodnikiem na temat odzyskania danych do FTP:[]({legacy}1374)
+Zapoznaj się z przewodnikiem na temat odzyskania danych do FTP:[prestashop]({legacy}1374)
 
 - Musisz również posiadać dane do bazy danych SQL, dzięki którym będziesz mógł się połączyć z bazą danych.
-Zapoznaj się z przewodnikiem na temat odzyskania danych do SQL:[]({legacy}1374)
+Zapoznaj się z przewodnikiem na temat odzyskania danych do SQL:[prestashop]({legacy}1374)
 
 
-![](images/img_3158.jpg){.thumbnail}
+![prestashop](images/3158.png){.thumbnail}
 
 
 ## Część 2: pobranie plików źródłowych
@@ -35,7 +35,7 @@ Na stronie tej znajduje się link pozwalający na pobranie najnowszej stabilnej 
 
 Pobrane pliki są spakowane. Należy je rozpakować na swoim komputerze. W Internecie odnajdziesz pomoc na ten temat.
 
-![](images/img_3159.jpg){.thumbnail}
+![prestashop](images/3159.png){.thumbnail}
 
 
 ## Część 3: umieszczenie plików na FTP
@@ -51,15 +51,15 @@ W Internecie dostępne są liczne przewodniki związane z tą operacją. Skorzys
 
 Katalog docelowy będzie nosił nazwę "prestashop".
 
-![](images/img_3160.jpg){.thumbnail}
+![prestashop](images/3160.png){.thumbnail}
 
 ## Logowanie na hosting www przez FTP
 Aby umieścić pliki modułu PrestaShop na hostingu, należy najpierw zalogować się na ten hosting. 
 
 Udostępniamy przewodnik na temat połączenia FTP w ofercie hostingu www:
-[]({legacy}1374)
+[prestashop]({legacy}1374)
 
-![](images/img_3161.jpg){.thumbnail}
+![prestashop](images/3161.png){.thumbnail}
 
 ## Transfer plików przez FTP
 Postępuj zgodnie z opisanymi poniżej etapami, aby umieścić pliki na serwerze FTP.
@@ -75,7 +75,7 @@ Jeśli taki katalog nie istnieje, możesz go utworzyć.
 
 Pliki muszą zostać obowiązkowo umieszczone w katalogu "www". W przeciwnym razie procedura instalacji nie będzie dostępna z poziomu nazwy domeny.
 
-![](images/img_3162.jpg){.thumbnail}
+![prestashop](images/3162.png){.thumbnail}
 
 ## Etap 2
 Po otwarciu tych katalogów:
@@ -88,7 +88,7 @@ Następnie skorzystaj z funkcji przeciągnij i upuść do części "Serwer zdaln
 
 Możliwe, że katalog "www" nie jest pusty. Nie trzeba usuwać plików z tego katalogu. Powrócimy do tego tematu w dalszej części tego przewodnika.
 
-![](images/img_3163.jpg){.thumbnail}
+![prestashop](images/3163.png){.thumbnail}
 
 ## Etap 3
 Trwa przenoszenie plików.
@@ -99,7 +99,7 @@ Po przeniesieniu plików, upewnij się, że wszystkie pliki i katalogi zostały 
 
 Ta operacja kończy część poświęconą umieszczaniu plików na FTP.
 
-![](images/img_3164.jpg){.thumbnail}
+![prestashop](images/3164.png){.thumbnail}
 
 
 ## Część 4: połączenie z bazą danych
@@ -118,14 +118,14 @@ Wybierz język "Polski (Polish)" dla instalacji sklepu PrestaShop.
 
 Kliknij na "Następny", aby kontynuować.
 
-![](images/img_3165.jpg){.thumbnail}
+![prestashop](images/3165.png){.thumbnail}
 
 ## Etap 2
 Zaznacz  "Zgadzam się z powyższymi warunkami".
 
 Kliknij na "Następny", aby przejść do kolejnego etapu.
 
-![](images/img_3166.jpg){.thumbnail}
+![prestashop](images/3166.png){.thumbnail}
 
 ## Etap 3
 Zostaniesz poproszony o dodatkowe informacje na temat sklepu. Wypełnij poniższe pola:
@@ -150,7 +150,7 @@ Zapisz się do newslettera PrestaShop: Zaznacz to pole, jeśli chcesz otrzymywa�
 
 Kliknij na "Następny", aby zatwierdzić te informacje.
 
-![](images/img_3167.jpg){.thumbnail}
+![prestashop](images/3167.png){.thumbnail}
 
 ## Etap 4
 Pobierz dane do połączenia z bazą danych (informacje na ten temat są dostępne na początku tego przewodnika). 
@@ -178,7 +178,7 @@ Kliknij na przycisk "Następny", aby zatwierdzić wpisane informacje.
 
 
 
-![](images/img_3168.jpg){.thumbnail}
+![prestashop](images/3168.png){.thumbnail}
 
 
 ## Zakończenie
@@ -189,7 +189,7 @@ Aby dokończyć instalowanie sklepu PrestaShop, kontynuuj etapy instalacji.
 ## Etap 1
 Po zakończeniu instalacji pojawi się nowe okno.
 
-![](images/img_3169.jpg){.thumbnail}
+![prestashop](images/3169.png){.thumbnail}
 
 ## Etap 2
 Instalacja została zakończona!
@@ -201,17 +201,17 @@ Możesz teraz się zalogować i rozpocząć pracę ze sklepem klikając na "Zarz
 "install" znajdujący się w katalogu "www".
 
 
-![](images/img_3170.jpg){.thumbnail}
+![prestashop](images/3170.png){.thumbnail}
 
 ## Część administracyjna sklepu PrestaShop
 Tak wygląda panel administracyjny sklepu PrestaShop.
 
-![](images/img_3171.jpg){.thumbnail}
+![prestashop](images/3171.png){.thumbnail}
 
 
 ## Użyteczne informacje
 Pomoc OVH nie będzie w stanie zapewnić Ci wsparcia w zakresie konfiguracji sklepu PrestaShop.
-Udostępniamy przewodnik na ten temat: []({legacy}2053).
+Udostępniamy przewodnik na ten temat: [prestashop]({legacy}2053).
 
 Zachęcamy do korzystania z forum rozwiązania PrestaShop.
 
@@ -233,7 +233,7 @@ Zmień nazwę tego pliku. Będziesz mógł później aktywować ten plik jako ty
 
 Inna użyteczna informacja: pliki strony muszą zostać umieszczone w katalogu "www", aby były brane pod uwagę.
 
-![](images/img_3172.jpg){.thumbnail}
+![prestashop](images/3172.png){.thumbnail}
 
 ## Klasyczny błąd: katalog "install" nie został usunięty.
 
@@ -241,5 +241,5 @@ Inna użyteczna informacja: pliki strony muszą zostać umieszczone w katalogu "
 "install" znajdujący się w katalogu "www".
 
 
-![](images/img_3173.jpg){.thumbnail}
+![prestashop](images/3173.png){.thumbnail}
 

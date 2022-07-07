@@ -70,7 +70,7 @@ Na janela que se abrir, complete os campos obrigatórios. Clique em `Validar`{.a
 
 O utilizador receberá um ID próprio, composto pelo ID digital da conta (indicado no menu «Gestão de utilizadores») e pelo nome de utilizador, com as duas referências separadas por uma barra.
 
-Por exemplo: **1234-567-89/john.smith**.
+Por exemplo: **1234-567-89/johnsmith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 

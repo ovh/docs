@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 10 de setembro de 2021**
+**Última atualização: 10/09/2021**
 
 
 ## Sumário
@@ -32,7 +32,7 @@ Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e
 
 ## Instruções
 
-Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), navegue até à seção "Bare Metal Cloud" e selecione o seu servidor na barra situada à esquerda dentro do separador `VPS`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 ### Passo 1: Subscrever a opção snapshot
 

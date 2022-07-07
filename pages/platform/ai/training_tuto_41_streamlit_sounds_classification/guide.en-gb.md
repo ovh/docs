@@ -6,7 +6,7 @@ section: AI Training tutorials
 order: 13
 ---
 
-**Last updated 6th April, 2022.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
@@ -27,14 +27,14 @@ Overview of the app:
 - A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users/);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
-- You also should have followed the steps of the marine mammal sounds classification notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook-marine-sound-classification.ipynb). You will be able to obtain your data.csv file and save your model.
+- You also should have followed the steps of the marine mammal sounds classification notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/audio/audio-classification/notebook-marine-sound-classification.ipynb). You will be able to obtain your data.csv file and save your model.
 
 ## Instructions
 
 You are going to follow different steps to build your Streamlit application.
 
 - More information about Streamlit capabilities can be found [here](https://docs.streamlit.io/en/stable/).
-- Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/streamlit/marine_sounds_classification_app).
+- Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/streamlit/audio-classification-app).
 
 ### Write the Streamlit application
 
@@ -108,7 +108,7 @@ Define the function that classifies the sounds from the previously trained model
 
 > [!primary]
 >
-> To learn more about how you can save a model with TensorFlow, please refer to the **step 8** *"Save the model for future inference"* of the [notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook-marine-sound-classification.ipynb).
+> To learn more about how you can save a model with TensorFlow, please refer to the **step 8** *"Save the model for future inference"* of the [notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/audio/audio-classification/notebook-marine-sound-classification.ipynb).
 >
 
 > [!primary]
@@ -204,7 +204,7 @@ The `requirements.txt` file will allow us to write all the modules needed to mak
 streamlit
 ```
 
-Here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/jobs/flask/hugging-face-sentiment-analysis-app).
+Here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/jobs/streamlit/audio-classification-app).
 
 ### Write the Dockerfile for the application
 
@@ -323,7 +323,7 @@ ovhai job run --default-http-port 8501 \
 
 To launch your Streamlit app, you need to attach **3 volumes** to your job.
 
-The first volume contains the csv files from the transformation of the sound files. By launching the job, this Object Container contains only the data.csv file created from **step 4** *"Data preprocessing"* of the [notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook-marine-sound-classification.ipynb).
+The first volume contains the csv files from the transformation of the sound files. By launching the job, this Object Container contains only the data.csv file created from **step 4** *"Data preprocessing"* of the [notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/audio/audio-classification/notebook-marine-sound-classification.ipynb).
 
 > [!primary]
 >
@@ -337,7 +337,7 @@ The second volume contains the sound files that you will upload directly from th
 > `--volume <my_audio_files>@<region>/:/workspace/audio_files:RW` is the second volume attached for storing **audio files**. This volume is read/write (`RW`) attached because new audio files will be saved there.
 >
 
-The third container contains the model that you trained before in **step 8** *"Save the model for future inference"* of the [notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook-marine-sound-classification.ipynb).
+The third container contains the model that you trained before in **step 8** *"Save the model for future inference"* of the [notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/audio/audio-classification/notebook-marine-sound-classification.ipynb).
 
 > [!primary]
 >

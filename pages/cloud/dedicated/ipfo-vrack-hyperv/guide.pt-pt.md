@@ -25,6 +25,11 @@ Siga o processo de instalação do Hyper-V, a associação de um switch virtual 
 - Um Bloco IP de 4 endereços IP ou mais.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
+> [!warning]
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+>
+> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+
 ## Instruções
 
 Este guia supõe que já instalou o Windows Server, que está ligado através do ambiente de trabalho remoto e que já afetou o seu servidor dedicado e o seu bloco IP a um vRack. Para mais informações sobre estes passos, consulte os passos 1 a 4 do nosso manual: [Configurar vários servidores dedicados no vRack](../configurar-varios-servidores-dedicados-no-vrack/).

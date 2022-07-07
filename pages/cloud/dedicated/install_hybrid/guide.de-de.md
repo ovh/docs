@@ -17,7 +17,7 @@ Bei OVH können Sie [Dedicated Server](https://www.ovh.de/dedicated_server/){.ex
 > 
 > OVH stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil "Weiterführende Informationen" dieser Anleitung.
 >
 
 ## Voraussetzungen
@@ -57,7 +57,7 @@ Verwenden Sie hierzu folgenden API-Aufruf:
 > @api {GET} /dedicated/server/{serviceName}/specifications/hardware
 > 
 
-Geben Sie den zuvor erhaltenen Servernamen in das Feld „**serviceName**“ ein und klicken Sie dann auf `Execute`{.action}. Alle Informationen zur Hardware Ihres Servers werden nun angezeigt. Die gewünschte `diskGroupId` finden Sie im Bereich `diskGroups`.
+Geben Sie den zuvor erhaltenen Servernamen in das Feld “**serviceName**” ein und klicken Sie dann auf `Execute`{.action}. Alle Informationen zur Hardware Ihres Servers werden nun angezeigt. Die gewünschte `diskGroupId` finden Sie im Bereich `diskGroups`.
 
 Das Betriebssystem wird standardmäßig auf `diskGroupId` 1 installiert.
 
@@ -83,7 +83,7 @@ Notieren Sie den Template-Namen des gewünschten Betriebssystems und fahren Sie 
 > @api {POST} /dedicated/server/{serviceName}/install/start
 > 
 
-Geben Sie den Servernamen in das Feld **serviceName** und die „diskGroupId“ (2) in das Feld **diskGroupId** sowie anschließend den Namen des gewünschten Betriebssystems in das Feld **templateName** ein (die übrigen Felder sind optional).
+Geben Sie den Servernamen in das Feld **serviceName** und die “diskGroupId” (2) in das Feld **diskGroupId** sowie anschließend den Namen des gewünschten Betriebssystems in das Feld **templateName** ein (die übrigen Felder sind optional).
 
 Wenn Sie alle Angaben gemacht haben, klicken Sie auf `Execute`{.action}:
 

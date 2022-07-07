@@ -19,8 +19,8 @@ Celui ci est compatible avec l'Object Storage du Public Cloud OVHcloud et vous p
 
 ## Prérequis
 
-- [Créer un conteneur de stockage](https://docs.ovh.com/gb/en/storage/create_an_object_container/)
-- [Créer un accès à Horizon](https://docs.ovh.com/ca/fr/public-cloud/creer-un-acces-a-horizon/)
+- [Créer un conteneur de stockage](https://docs.ovh.com/ca/fr/storage/pcs/creation-de-conteneur/)
+- [Créer un accès à Horizon](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/#creation-dun-utilisateur-openstack)
 
 ## En pratique
 

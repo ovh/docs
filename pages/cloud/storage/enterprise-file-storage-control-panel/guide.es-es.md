@@ -10,7 +10,7 @@ order: 2
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 24/11/2021**
+**Última actualización: 14/04/2022**
 
 ## Objetivo
 
@@ -83,6 +83,12 @@ Haga clic en la línea de la regla correspondiente para consultar los detalles d
 
 Para configurar sus [políticas de snapshot](#snapshot_policy), acceda a la sección [Gestión de volúmenes](#instructions) del servicio y abra la pestaña `Snapshot policiales`{.action}.
 
+#### Lista y recuperación de snapshots <a name="access_snapshots"></a>
+
+En el área de cliente no es posible consultar la lista de snapshots realizados ni restaurarlos.
+
+Para acceder a los snapshots desde el punto de montaje, puede utilizar los comandos que se ofrecen en la documentación [NetApp](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html){.external}.
+
 #### Gestión de volúmenes ACL <a name="access_control"></a>
 
 El control de acceso a los volúmenes funciona mediante restricciones de direcciones IP. Como no hay ninguna restricción configurada por defecto, el primer paso al crear los volúmenes es definir las direcciones IP o los rangos desde los que se autorizará el acceso.
@@ -132,6 +138,7 @@ Si no está familiarizado con la solución Enterprise File Storage, puede seguir
 - [Configurar el control de accesos](#access_control)
 - [Configurar las políticas de snapshot](#snapshot_policy) (opcional)
 - [Aplicar reglas de snapshot al volumen](#snapshots) (opcional)
+- [Listar y recuperar los snapshots](#access_snapshots) (opcional)
 - [Conéctese a su volumen siguiendo las instrucciones de la sección "Información general".](#modify_volume)
 - [Cómo utilizar Enterprise File Storage a través de la API con nuestras guías](#gofurther) (opcionales)
 

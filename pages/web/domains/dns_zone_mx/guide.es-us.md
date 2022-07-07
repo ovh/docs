@@ -24,7 +24,7 @@ El registro MX permite asociar un dominio a un servidor de correo para que los s
 >
 > - Si el dominio no utiliza los servidores DNS de OVHcloud, deberá editar los MX desde el panel que le ofrezca el proveedor que gestione su configuración.
 >
-> - Si el dominio está registrado en OVHcloud, puede comprobar si utiliza nuestra configuración desde el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio. A continuación, abra la pestaña `Servidores DNS`{.action}.
+> - Si el dominio está registrado en OVHcloud, puede comprobar si utiliza nuestra configuración desde el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, haga clic en `Dominios`{.action} y seleccione el dominio. A continuación, abra la pestaña `Servidores DNS`{.action}.
 >
 
 ## Procedimiento
@@ -53,7 +53,7 @@ Deberá utilizar los registros MX anteriores en la configuración DNS del domini
 
 ### 3. Modificar los registros MX de OVHcloud
 
-Para modificar un registro MX en la configuración de su dominio en OVH, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Para modificar un registro MX en la configuración de su dominio en OVHcloud, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
 La tabla mostrará la configuración del dominio en OVHcloud. Cada línea corresponde a un registro DNS. En primer lugar, compruebe si los registros MX ya existen en la configuración DNS del dominio en OVHcloud utilizando el campo de búsqueda.
 
@@ -63,7 +63,7 @@ Si los registros MX ya existen y quiere sustituirlos, haga clic en el icono con 
 
 Para crear un nuevo registro MX, haga clic en el botón `Añadir un registro`{.action} y seleccione `MX`{.action}. Complete la información solicitada (en función de la solución de correo de que disponga):
 
-- **Si tiene contratada una solución de correo de OVHcloud**, consulte la información del paso [2. Conocer la configuración MX de OVH](../anadir-registro-mx-configuracion-dominio/#2-conocer-la-configuracion-mx-de-ovhcloud){.external}.
+- **Si tiene contratada una solución de correo de OVHcloud**, consulte la información del paso [2. Conocer la configuración MX de OVHcloud](../anadir-registro-mx-configuracion-dominio/#2-conocer-la-configuracion-mx-de-ovhcloud){.external}.
 
 - **Si tiene contratada una solución de correo externa**, consulte la información que le haya proporcionado el proveedor de su servicio de correo.
 

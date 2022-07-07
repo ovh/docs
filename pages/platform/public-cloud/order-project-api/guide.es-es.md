@@ -22,7 +22,7 @@ La creación de un proyecto es la primera etapa del despliegue de [instancias Pu
 
 - Disponer de las claves de OVHcloud válidas.
 - Disponer de una [forma de pago](https://docs.ovh.com/es/billing/gestionar-formas-de-pago/) válida y registrada en su cuenta de OVHcloud.
-- Estar familiarizado con el [funcionamiento de la APIv6 de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+- Estar familiarizado con el [funcionamiento de la APIv6 de OVHcloud](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
 
 ## Procedimiento
 

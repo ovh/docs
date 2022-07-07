@@ -7,7 +7,7 @@ order: 1
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 25-03-2022**
@@ -20,7 +20,7 @@ Prywatny serwer wirtualny VPS (z ang. *Virtual Private Server*) to wirtualny ser
 
 > [!warning]
 >
-> OVHcloud oddaje do Twojej dyspozycji serwery, za które w pełni odpowiadasz - nie mając dostępu do tych maszyn, nie możemy być ich administratorem. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Oddajemy w Twoje ręce przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również” niniejszego przewodnika.
+> OVHcloud oddaje do Twojej dyspozycji serwery, za które w pełni odpowiadasz - nie mając dostępu do tych maszyn, nie możemy być ich administratorem. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Oddajemy w Twoje ręce przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji “Sprawdź również” niniejszego przewodnika.
 >
 
 ## Wymagania początkowe
@@ -31,7 +31,7 @@ Prywatny serwer wirtualny VPS (z ang. *Virtual Private Server*) to wirtualny ser
 
 ## W praktyce
 
-Zaloguj się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer z listy nawigacyjnej po lewej stronie pod `Prywatne serwery wirtualne`{.action}.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
 Otrzymasz dashboard, który zawiera ważne informacje o Twojej usłudze i pozwala na wykonywanie najważniejszych operacji. Jego wygląd będzie różnił się w zależności od gamy, do jakiej należy Twój VPS.
 
@@ -47,7 +47,7 @@ W przypadku starszego modelu VPS, zapraszamy do dalszej lektury przewodnika po k
 #### Łączenie z Twoim serwerem VPS (gama aktualna)
 
 W momencie pierwszej instalacji lub reinstalacji z poziomu panelu klienta, zostanie stworzony profil użytkownika posiadający wszystkie uprawnienia. Jego dane identyfikacyjne zostaną Ci wysłane w wiadomości e-mail.
-Nazwa użytkownika zostanie wygenerowana w zależności od systemu operacyjnego, na przykład „ubuntu” czy „debian”.
+Nazwa użytkownika zostanie wygenerowana w zależności od systemu operacyjnego, na przykład “ubuntu” czy “debian”.
 
 Z serwerem VPS będzie można połączyć się za pomocą SSH, używając nazwy użytkownika oraz hasła dostępu. (SSH to szyfrowany protokół komunikacyjny. Aby dowiedzieć się więcej na jego temat, zapraszamy do lektury [przewodnika wprowadzającego do tematyki SSH dla serwerów dedykowanych OVHcloud](../../dedicated/ssh-wprowadzenie/). Dostęp do Twojego serwera odbywa się przez okienko terminala linii poleceń (Linux lub MAC), a w systemie Windows za pomocą oprogramowania innych producentów (zalecamy PuTTy).
 
@@ -70,7 +70,7 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-Należy zaznaczyć, iż hasła nie są wyświetlane. Zmień następnie profil użytkownika na profil „root” i ustaw Twoje hasło dostępu dla administratora:
+Należy zaznaczyć, iż hasła nie są wyświetlane. Zmień następnie profil użytkownika na profil “root” i ustaw Twoje hasło dostępu dla administratora:
 
 ```bash
 ~$ sudo su -
@@ -92,13 +92,13 @@ Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania prob
 reboot
 ```
 
-W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Strona główna`{.action} kliknij `...`{.action} naprzeciwko "Boot" w strefie **Twój VPS**, następnie `Restart serwera VPS`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
+W każdej chwili możesz jednak wykonać "reboot hard" w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Strona główna`{.action} kliknij `...`{.action} naprzeciwko "Boot" w strefie **Twój VPS**, następnie `Restart serwera VPS`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
 
 ![Restart](images/reboot-vps-current.png){.thumbnail}
 
 #### Instalacja lub reinstalacja Twojego serwera VPS (gama aktualna) <a name="reinstallvps"></a>
 
-Każdą reinstalację możesz przeprowadzić bezpośrednio z poziomu panelu klienta OVHcloud. Z zakładce „Strona główna” odszukaj  „OS / Dystrybucja” w części **Twój VPS**. Kliknij `...`{.action}, a następnie `Reinstalacja serwera VPS`{.action}.
+Każdą reinstalację możesz przeprowadzić bezpośrednio z poziomu panelu klienta OVHcloud. Z zakładce “Strona główna” odszukaj  “OS / Dystrybucja” w części **Twój VPS**. Kliknij `...`{.action}, a następnie `Reinstalacja serwera VPS`{.action}.
 
 ![Reinstalacja serwera VPS](images/2020panel_02.png){.thumbnail}
 
@@ -197,8 +197,10 @@ OVHcloud zaproponuje Ci w sposób automatyczny [SSL Gateway](https://www.ovh.pl/
 
 ## Sprawdź również
 
-[Wprowadzenie do protokołów SSH](../../dedicated/ssh-wprowadzenie/){.external}
+[Wprowadzenie do protokołów SSH](../../dedicated/ssh-wprowadzenie/)
 
 [Zabezpieczenie serwera VPS](../porady-zabezpieczenie-vps/)
+
+[Skonfiguruj nową instalację Windows Server](../windows-first-config/)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

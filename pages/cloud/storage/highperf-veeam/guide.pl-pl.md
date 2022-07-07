@@ -1,17 +1,17 @@
 ---
-title: Skorzystaj z oferty High Performance z Veeam (EN)
+title: Skorzystaj z oferty S3 Object Storage z Veeam (EN)
 slug: s3/veeam
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/veeam'
 section: Object Storage S3 High Performance
 order: 140
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/veeam/'
 ---
 
 **Last updated on 3rd January 2022**
 
 ## Objective
 
-This guide is intended to show you how to configure Veeam to use your Object Storage S3 High Performance storage space
+This guide is intended to show you how to configure Veeam to use your S3 Object Storage.
 
 > [!warning]
 >
@@ -26,7 +26,7 @@ This guide is intended to show you how to configure Veeam to use your Object Sto
 - A user with the required access rights on the bucket
 - Your S3 credentials (access_key and secret_access_key).
 
-See our [Getting started with S3 High Performance](https://docs.ovh.com/pl/storage/s3/getting-started-with-s3) guide.
+See our [Getting started with S3 Object Storage](https://docs.ovh.com/pl/storage/s3/getting-started-with-s3) guide.
 
 ## Instructions
 

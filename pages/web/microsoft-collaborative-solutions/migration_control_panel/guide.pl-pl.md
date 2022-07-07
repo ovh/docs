@@ -168,6 +168,16 @@ Teraz możesz korzystać z migrowanych kont e-mail. W tym celu OVHcloud udostęp
 
 Jeśli skonfigurowałeś jedno z kont przeniesionych na klienta poczty elektronicznej (np. Outlook), należy ponownie skonfigurować to konto. Dane do logowania do serwera OVHcloud zmieniły się po migracji. Aby pomóc Ci w przeprowadzeniu operacji, zapoznaj się z naszą dokumentacją w sekcjach przewodników dotyczących [E-mail Pro](../../emails-pro/) i [Hosted Exchange](../). Jeśli nie jesteś w stanie zmienić konfiguracji konta w tej chwili, dostęp przez aplikację online jest zawsze możliwy.
 
+### Organizacja zawartości Twoich kont e-mail po migracji <a name="content-after-migration"></a>
+
+Podczas pierwszego logowania do nowego konta e-mail migrowane treści mogą być częściowo ukryte. Aby wyświetlić wszystkie elementy, w interfejsie Webmail kliknij przycisk "Przywozie" obok `Skrzynki odbiorczej`, aby wyświetlić podfoldery. Powinna pojawić się przeniesiona zawartość Twojego starego konta e-mail.
+
+![exchange](images/owa_migrate_content.png){.thumbnail}
+
+Domyślne katalogi, takie jak "elementy wysłane" lub "kosz", są wyświetlane w języku angielskim ("Sent items" i "Trash"), z wyjątkiem utworzonych przez Ciebie katalogów.
+
+Po przeprowadzeniu migracji sprawdź wszystkie foldery i podfoldery Twojego konta, aby upewnić się, że wszystkie elementy są dostępne.
+
 ### Migracja Ręczna
 
 Możesz również ręcznie przenieść Twoje konta e-mail do nowej usługi e-mail OVHcloud używając tylko programu pocztowego. Skorzystaj z naszego przewodnika [Ręczna migracja Twojego konta e-mail](../../emails/przenoszenie-kont-e-mail/). Zalecamy jednak, abyś stosował tę metodę tylko wtedy, gdy podstawowe metody nie są możliwe.

@@ -9,7 +9,7 @@ section: Tutorial
 
 W procesie migracji lub zabezpieczania danych może być konieczne skopiowanie lub przesłanie danych z serwera dedykowanego na inną maszynę. 
 
-Rsync (z ang. „remote synchronization”), dystrybuowany w ramach licencji GNU GPL, to wolne oprogramowanie służące do synchronizacji plików umożliwiające synchronizację jednokierunkową, czyli kopiowanie plików z serwera źródłowego na serwer docelowy. 
+Rsync (z ang. “remote synchronization”), dystrybuowany w ramach licencji GNU GPL, to wolne oprogramowanie służące do synchronizacji plików umożliwiające synchronizację jednokierunkową, czyli kopiowanie plików z serwera źródłowego na serwer docelowy. 
 
 **Ten tutorial wyjaśnia, jak kopiować dane z jednego serwera dedykowanego OVHcloud na inną maszynę przy użyciu rsync.**
 

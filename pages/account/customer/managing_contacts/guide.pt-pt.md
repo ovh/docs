@@ -105,7 +105,7 @@ Se um dos contactos não tiver recebido o e-mail, é possível que o endereço a
 
 Se apenas um dos contactos confirmar a alteração, será mostrada uma mensagem para informar que o pedido precisa de ser confirmado por outro utilizador. A confirmação dos utilizadores pode demorar alguns minutos até ser atualizada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-![Gestão de contactos](images/managing_contacts_07.png){.thumbnail}
+![Gestão de contactos](images/managing_contacts_007.png){.thumbnail}
 
 A alteração de contacto será efetiva alguns minutos após a validação do pedido pelos dois contactos. De seguida, receberão um e-mail a informá-los de que o pedido foi tratado.
 

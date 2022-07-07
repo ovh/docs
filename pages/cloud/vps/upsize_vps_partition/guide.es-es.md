@@ -44,7 +44,7 @@ lsblk
 
 La partición correspondiente al modo de rescate será la montada en el directorio `/`, que es en realidad la raíz del sistema. En cambio, es probable que la partición del VPS se sitúe en un directorio asociado a "/mnt".
 
-No obstante, si su VPS pertenece a la gama actual, la partición no se montará automáticamente. Si la columna del resultado MOUNTPOINT lo confirma, puede ignorar el paso de desmontaje.
+No obstante, si su VPS pertenece a la gama actual, la partición no se montará automáticamente. Si la columna del resultado "MOUNTPOINT" lo confirma, puede ignorar el paso de desmontaje.
 
 ```sh
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT

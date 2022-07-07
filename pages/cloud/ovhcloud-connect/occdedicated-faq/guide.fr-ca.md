@@ -1,7 +1,6 @@
 ---
-title: FAQ
+title: FAQ OVHcloud Connect
 slug: ovhcloudconnect-faq
-excerpt: 'Les FAQ sur l’offre OVHcloud Connect'
 section: Premiers pas
 order: 3
 ---

@@ -51,7 +51,7 @@ We are now ready to learn how to connect to our MySQL instance.
 
 We will now follow official MySQL documentation to perform our first connection.
 
-In your CLI, type **mysqlsh --version**. The result should look like this:
+In your CLI, type `mysqlsh --version`. The result should look like this:
 
 ```console
 laptop$mysqlsh --version
@@ -65,7 +65,7 @@ It means that mysqlsh is correctly installed and working properly. If you do not
 
 We will follow official MySQL documentation: <https://dev.mysql.com/doc/refman/8.0/en/connecting-using-uri-or-key-value-pairs.html>.
 
-To perform a connection, simply type **mysqlsh --sql** followed by the Service URI:
+To perform a connection, simply type `mysqlsh --sql` followed by the Service URI:
 
 ```console
 laptop$mysqlsh --sql "mysql://<username>:<password@<hostname>t<port>/defaultdb?ssl-mode=REQUIRED"
@@ -107,9 +107,9 @@ Once connected, you can manage your MySQL instance with built-in MySQL client me
 Please follow the official MySQL documentation.
 
 To verify:
-- `SHOW DATABASES;` will list all the databases;
-- `select * from mysql.user;` will display information about existing users.
 
+- `SHOW DATABASES;` will list all the databases;  
+- `select * from mysql.user;` will display information about existing users.  
 
 In our example, it will look like this:
 

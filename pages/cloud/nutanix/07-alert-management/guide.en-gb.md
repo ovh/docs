@@ -3,7 +3,7 @@ title: Events and alerts management
 slug: alerts-events
 excerpt: 'Analysing and modifying alerts and events in a Nutanix cluster'
 section: Getting started
-order: 07
+order: 10
 ---
 
 **Last updated 17th March 2022**

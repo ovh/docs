@@ -47,7 +47,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 |NETWORK_INTERFACE|Name des Netzwerkinterfaces|*eth*, *ens3*|
 |ID|ID der Alias-IP, beginnend mit *0* (abhängig von der Anzahl der zu konfigurierenden zusätzlichen IP-Adressen)|*0*, *1*|
 
-### Debian 10
+### Debian 10/11
 
 #### Schritt 1: Automatische Netzwerkkonfiguration deaktivieren
 

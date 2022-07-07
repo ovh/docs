@@ -167,7 +167,7 @@ For detailed instructions on how to configure IP aliasing, please refer to [this
 
 > [!primary]
 >
-> Please note that servers of the **Kimsufi** range only have one IPv4 address and one IPv6 address.
+> Please note that servers of the **Kimsufi** range only have one IPv4 address and one IPv6 address. Both will be configured automatically when installing the OS.
 >
 
 OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. Please refer to our guide: [IPv6 Configuration](../network-ipv6/).
@@ -176,7 +176,7 @@ OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addre
 
 For any kind of issue the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
-Please refer to the [rescue mode guide](../rescue-mode/).
+Please refer to the [rescue mode guide](../rescue_mode/).
 
 ### Access using IPMI
 

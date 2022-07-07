@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/storage/'
 excerpt: Overview of Storage Management in a Nutanix cluster
 section: Primeiros passos
-order: 04
+order: 06
 ---
 
 **Last updated 23rd February 2022**

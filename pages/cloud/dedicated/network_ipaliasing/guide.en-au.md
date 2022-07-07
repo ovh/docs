@@ -40,7 +40,7 @@ The following sections contain the configurations for the most commonly used dis
 Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
 > 
 
-### Debian 10
+### Debian 10/11
 
 #### Step 1: Create a backup
 

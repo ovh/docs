@@ -75,7 +75,7 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.b
 
 #### Überprüfung Ihrer aktuellen SPF-Konfiguration
 
-Wenn Ihre Domain OVHcloud DNS-Server verwendet, können Sie überprüfen, ob ein SPF-Eintrag bereits dafür konfiguriert ist. Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie in der oberen Navigationsleiste zum Bereich `Web Cloud`{.action}. Wählen Sie links unter `Domains`{.action} die betreffende Domain aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
+Wenn Ihre Domain OVHcloud DNS-Server verwendet, können Sie überprüfen, ob ein SPF-Eintrag bereits dafür konfiguriert ist. Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Domainnamen`{.action} Ihren Domainnamen aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
 
 Die Tabelle auf dieser Seite zeigt die DNS-Zone Ihrer Domain bei OVHcloud an. Jede Zeile der Tabelle repräsentiert einen DNS-Eintrag.
 
@@ -101,7 +101,7 @@ Um die Zeile mit dem OVHcloud SPF-Eintrag zu finden, kann auf die Tabelle ein An
 
 ### Konfiguration eines neuen SPF Eintrags <a name="spfrecord"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie in der oberen Navigationsleiste zum Bereich `Web Cloud`{.action}. Wählen Sie links unter `Domains`{.action} die betreffende Domain aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Domainnamen`{.action} Ihren Domainnamen aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
 
 Um einen SPF-Eintrag hinzuzufügen klicken Sie rechts im Menü auf `Eintrag hinzufügen`{.action}.
 
@@ -180,7 +180,7 @@ Klicken Sie auf `Weiter`{.action} und bestätigen Sie, dass der von Ihnen eingeg
 
 ### Bearbeiten eines SPF-Eintrags <a name="modifyspf"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie in der oberen Navigationsleiste zum Bereich `Web Cloud`{.action}. Wählen Sie links unter `Domains`{.action} die betreffende Domain aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Domainnamen`{.action} Ihren Domainnamen aus. Klicken Sie dann auf den Tab `DNS-Zone`{.action}.
 
 Die Tabelle auf dieser Seite zeigt die DNS-Zone Ihrer Domain bei OVHcloud an. Jede Zeile der Tabelle repräsentiert einen DNS-Eintrag. Lokalisieren Sie den TXT- oder SPF-Eintrag in dieser Tabelle und klicken Sie rechts auf `...`{.action}, um den Eintrag zu ändern.
 

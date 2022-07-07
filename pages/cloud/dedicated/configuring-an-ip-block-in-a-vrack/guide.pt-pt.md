@@ -16,12 +16,16 @@ Além do direcionamento IP privado, o [vRack](https://www.ovh.pt/solucoes/vrack/
 
 ## Requisitos
 
-* Ter reservado um bloco público de endereços IP na sua conta, com um mínimo de quatro endereços.
-* Ter acesso ao intervalo de endereços de IP privados escolhidos.
-* Dispor de um [servidor compatível com o vRack](https://www.ovh.pt/servidores_dedicados/){.external}.
-* Ter ativado um serviço [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter reservado um bloco público de endereços IP na sua conta, com um mínimo de quatro endereços.
+- Ter acesso ao intervalo de endereços de IP privados escolhidos.
+- Dispor de um [servidor compatível com o vRack](https://www.ovh.pt/servidores_dedicados/){.external}.
+- Ter ativado um serviço [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
+> [!warning]
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+>
+> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
 
 ## Instruções
 

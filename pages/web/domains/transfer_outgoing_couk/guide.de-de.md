@@ -50,13 +50,12 @@ Falls Sie den benötigten TAG noch nicht kennen, können Sie ihn bei Ihrem neuen
 
 ### Schritt 1: Überprüfung der erforderlichen Informationen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der oberen Menüleiste `Web Cloud`{.action} aus. Klicken Sie `Domains`{.action} im linken Menü und wählen Sie die betreffende Domain aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} Ihren Domainnamen unter `Domainnamen`{.action} aus.
 
 Denken Sie daran, dass Sie als Administrator-Kontakt eingeloggt sein müssen.
 
 Im Tab `Allgemeine Informationen`{.action} können Sie überprüfen, ob die Voraussetzungen für den Transfer erfüllt sind.
 
-![ausgehender Transfer](images/img_4266.jpg){.thumbnail}
 
 ### Schritt 2: Den TAG Ihrer Domain ändern
 

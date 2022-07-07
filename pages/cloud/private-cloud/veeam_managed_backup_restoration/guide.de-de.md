@@ -23,7 +23,7 @@ order: 06
 
 ## In der praktischen Anwendung
 
-Falls notwendig, lesen Sie zunächst unsere Anleitung zur [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+Falls notwendig, lesen Sie zunächst unsere Anleitung zur [OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/).
 
 ### Schritt 1: Einen Backup-Report erstellen
 

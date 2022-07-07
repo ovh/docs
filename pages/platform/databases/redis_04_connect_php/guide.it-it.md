@@ -21,7 +21,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
 - A Redis database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/it/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your Redis instance](https://docs.ovh.com/it/databases/redis/configure-redis-instance/) to accept incoming connections
+- [Configure your Redis instance](https://docs.ovh.com/it/publiccloud/databases/redis/configure-redis-instance/) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 7.4.
 
 ## Concept

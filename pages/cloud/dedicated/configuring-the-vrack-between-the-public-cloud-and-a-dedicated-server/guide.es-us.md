@@ -26,6 +26,10 @@ El [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} de OVHclou
 * Estar conectado al [área de cliente de OVHcloud.](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 * Un rango de direcciones IP privadas que elija.
 
+> [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
 
 ## Procedimiento
 

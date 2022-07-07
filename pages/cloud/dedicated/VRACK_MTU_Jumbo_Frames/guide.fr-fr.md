@@ -18,6 +18,11 @@ Les trames Jumbo, ou *Jumbo frames*, sont des trames Ethernet dont la charge uti
 - Posséder un [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
 - Ouvrir un shell avec les droits root
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
+
 > [!primary]
 >
 > La taille MTU doit être identique sur tous les hôtes d'un même sous-réseau. 

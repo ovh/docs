@@ -28,7 +28,7 @@ Está à disposição um guia de ajuda na obtenção dos dados de ligação SQL 
 
 
 
-![](images/img_3234.jpg){.thumbnail}
+![drupal](images/3234.png){.thumbnail}
 Encontrará aí, geralmente, um link para poder fazer o download da mais recente versão estável do CMS para o seu computador.
 No nosso exemplo, usamos a versão 7.41.
 O ficheiro que vai obter estará, geralmente, comprimido (em formato zip, comummente). Será necessário poder descomprimir esse ficheiro no seu computador. Encontrará na Internet vários tutoriais para ajuda com essa operação.
@@ -47,7 +47,7 @@ Vários tutoriais e softwares de descompressão estão disponíveis na Internet 
 
 A pasta terá o nome "Drupal-xxx" ("xxx" corresponde à versão de Drupal)
 
-![](images/img_3233.jpg){.thumbnail}
+![drupal](images/3233.png){.thumbnail}
 Ligação ao espaço de alojamento através de FTP
 
 
@@ -79,7 +79,7 @@ Para selecionar todos os ficheiros, use CTRL+A.
 
 Arraste e largue, de seguida, os ficheiros na secção "Site Distante/Remoto" dentro da pasta "www".
 
-![](images/img_3199.jpg){.thumbnail}
+![drupal](images/3199.png){.thumbnail}
 É muito provável que a sua pasta "www" não esteja vazia. Vamos abordar esse assunto mais adiante neste guia.
 
 ## Etapa 3
@@ -91,7 +91,7 @@ Uma vez que a transferência esteja concluída, assegure-se que todos os ficheir
 
 Esta operação é a última da parte consagrada à transferência de ficheiros para o espaço FTP.
 
-![](images/img_3200.jpg){.thumbnail}
+![drupal](images/3200.png){.thumbnail}
 
 
 ## Etapa 1 - Instalação de Drupal
@@ -102,13 +102,13 @@ Esta página aparecerá.
 Selecione "Standard
 Install with commonly used features pre-configured." e, depois, clique em "Save and continue"para continuar.
 
-![](images/img_3219.jpg){.thumbnail}
+![drupal](images/3219.png){.thumbnail}
 
 
 ## Etapa 2 - Escolha do idioma
 Selecione o idioma que deseja para a instalação e clique em "Save and continue".
 
-![](images/img_3218.jpg){.thumbnail}
+![drupal](images/3218.png){.thumbnail}
 
 
 ## Estapa 3 - Ligação à base de dados
@@ -131,7 +131,7 @@ Palavra-passe: se não a modificou, é a que definiu no seu Espaço Cliente quan
 
 
 
-![](images/img_3202.jpg){.thumbnail}
+![drupal](images/3202.png){.thumbnail}
 
 - Endereço do servidor de base de dados: Introduza o nome do servidor de base de dados que vê no seu Espaço Cliente ou no email de instalação da base de dados;
 
@@ -140,7 +140,7 @@ Prefixo das tabelas: útil para realizar várias instalações de Drupal na mesm
 
 Em caso de dúvida, deixe esse campo vazio.
 
-![](images/img_3203.jpg){.thumbnail}
+![drupal](images/3203.png){.thumbnail}
 Importante: os dados de acesso da base de dados não são enviados de forma automática após a criação do alojamento. Para os receber, tem de criar uma base de dados a partir da sua área de cliente.
 Clique em "Gravar e continuar" para prosseguir e validar as informações de ligação à base de dados.
 
@@ -154,7 +154,7 @@ Senão, será necessário refazer a etapa. introduzindo os dados corretos.
 
 
 
-![](images/img_3190.jpg){.thumbnail}
+![drupal](images/3190.png){.thumbnail}
 
 
 ## Etapa 5 - Configuração do utilizador "Administrador" de Drupal
@@ -173,7 +173,7 @@ Endereço de email: Introduza o email do administrador. Deve ser um email válid
 
 Desça um pouco mais até ao fundo da página
 
-![](images/img_3206.jpg){.thumbnail}
+![drupal](images/3206.png){.thumbnail}
 
 - País, definição padrão: Escolha o país/idioma do site.
 - Fuso horário, definição padrão: Escolha o fuso horário do seu site.
@@ -184,7 +184,7 @@ Desça um pouco mais até ao fundo da página
 
 Clique em "Gravar e continuar" para prosseguir.
 
-![](images/img_3207.jpg){.thumbnail}
+![drupal](images/3207.png){.thumbnail}
 
 
 ## Etapa 6 - Finalização
@@ -192,10 +192,10 @@ O seu CMS Drupal está agora instalado.
 
 Clique em "Visite o seu novo site".
 
-![](images/img_3208.jpg){.thumbnail}
+![drupal](images/3208.png){.thumbnail}
 Apenas tem agora de utilizar Drupal e construir o seu site.
 
-![](images/img_3209.jpg){.thumbnail}
+![drupal](images/3209.png){.thumbnail}
 
 
 ## Suporte Drupal
@@ -223,7 +223,7 @@ Poderá ser interessante apenas mudar o nome para que, caso necessário, possa m
 
 Outra informação útil: os ficheiros sdo seu site devem ser colocados na pasta 'www' a fim de poderem ser tidos em consideração.
 
-![](images/img_3217.jpg){.thumbnail}
+![drupal](images/3217.png){.thumbnail}
 Erro Clássico: versão de PHP
 
 Trata-se de um erro relativo à versão de PHP do seu servidor.

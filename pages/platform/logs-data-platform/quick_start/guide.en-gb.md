@@ -2,35 +2,35 @@
 title: Quick start
 slug: quick-start
 order: 1
-section: Get Started 
+section: Get Started
 ---
 
-**Last updated 17th July 2020**
+**Last updated 13th June, 2022**
 
 ## Objective
 
 Welcome to the quick start tutorial of the Logs Data Platform. This Quick start guide will help you to understand the core concepts behind the Logs Data Platform and how to send your first logs to the engine.
- 
+
 ## Instructions
 
 ### Welcome to Logs Data Platform
 
-First, you will have to create a new account on [the Logs Data Platform page](https://www.ovh.com/fr/data-platforms/logs){.external}. Creating an account is totally free. With the pay-as-you-go pricing model of Logs Data Platform you pay only what you use. 
+First, you will have to create a new account on [the Logs Data Platform page](https://www.ovh.com/fr/data-platforms/logs){.external}. Creating an account is totally free. With the pay-as-you-go pricing model of Logs Data Platform you pay only what you use.
 
-- Log into the [ovh.com Manager](https://www.ovh.com/manager){.external}, and navigate to the Cloud section located at the top left in the header.
+- Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and navigate to the Bare Metal Cloud section located at the top left in the header.
 - Once you have created your credentials, the main interface will appear :
 
 ![Main interface](images/manager_start.png){.thumbnail}
 
 Your Logs Data Platform username is located on the bottom left of the page, in the **Configuration** panel (as shown in the red square on the capture). In this section, you can also :
 
-1. Identify your assigned access point for this account and your LDP username. 
+1. Identify your assigned access point for this account and your LDP username.
 2. Reset your password of your LDP account.
-3. Edit your LDP access tokens (more on this functionality [here](../tokens-logs-data-platform){.ref}). 
+3. Edit your LDP access tokens (more on this functionality [here](../tokens-logs-data-platform){.ref}).
 
 
 The main page allows you also to consult the SSL certificates used on your access point in the **SSL Configuration panel**. This panel lets you also review the available ports and formats supported.
-The **Subscription panel** allows you to change the displayed name of your account which can be useful in the case you have multiples accounts tied to the same OVHcloud nic. 
+The **Subscription panel** allows you to change the displayed name of your account which can be useful in the case you have multiples accounts tied to the same OVHcloud nic.
 
 
 At the top of the page, you can see the configuration menu of the two main items:
@@ -41,9 +41,9 @@ At the top of the page, you can see the configuration menu of the two main items
 Below them, you have access to different sections :
 
 3. The **Data-gathering tools** tab, allows requesting OVHcloud to host your own dedicated collector like Logstash or Flowgger.
-4. The **Index** tab, allows creating your dedicated Elasticsearch Index or retrieve the ones used to store your Kibana settings.
-5. The **Aliases** tab, provides access to your data directly from your Kibana or using an Elasticsearch query.
-6. The **Kibana** tab, creates your personal Kibana Instance, in order to exploit the aliases and index from the powerful Kibana interface. 
+4. The **Index** tab, allows creating your dedicated OpenSearch Index or retrieve the ones used to store your OpenSearch Dashboards settings.
+5. The **Aliases** tab, provides access to your data directly from your OpenSearch Dashboards or using an OpenSearch query.
+6. The **Kibana** tab, creates your personal OpenSearch Dashboards instance, in order to exploit the aliases and index from the powerful OpenSearch Dashboards interface.
 7. The **Users Roles**, allows access rights modification of your content.
 
 ### Let's send some logs!
@@ -52,7 +52,7 @@ Below them, you have access to different sections :
 
 ![new Stream](images/newStream.png){.thumbnail}
 
-On the same page you can enable the live-tail websocket feature, enabling the indexation of your logs to explore them in Graylog, choose the retention of the data in this stream, limit the amount of logs stored in this stream to control your budget. 
+On the same page you can enable the live-tail websocket feature, enabling the indexation of your logs to explore them in Graylog, choose the retention of the data in this stream, limit the amount of logs stored in this stream to control your budget.
 
 - Once you have done this, click on the blue button `Save`{.action} and that's it! You have created your first stream. The button will redirect you to the stream page where you will be able to copy the X-OVH-TOKEN token. This value is the only token you will need to route logs to your stream. Under this token, you will have a list of your created streams.
 
@@ -85,7 +85,7 @@ Here are the ports you can use on your cluster to send your logs. You can either
 |TCP|514|2202|2201|2200|2204|---|
 |UDP|514|2202|2201|2200|2204|---|
 
-As said before, you can retrieve the ports and the address of your cluster at the **Home** page (in the **SSL Configuration** panel). 
+As said before, you can retrieve the ports and the address of your cluster at the **Home** page (in the **SSL Configuration** panel).
 
 ![About page](images/about.png){.thumbnail}
 
@@ -164,21 +164,30 @@ At first, your dashboard is sad and empty but we will fill it really soon with s
 
 - in the search bar, enter the following: `some_metric_num:>30`
 - select above the search bar, the relative range of time you want to use in your widgets. If you want your widget to display the value for the last hour, select  **Search in the last Hour**
-- On the left panel, unroll the `user_id` menu (by clicking on the blue triangle at the left) and select  **Quick Values**. It will then display a nice widget with the distribution of the most frequent `user_ids`.
+- On the left panel, click on the button looking like a "X" to display the fields menu.
+- Unroll the `user_id` menu by clicking on the value and select  **Show top values**. It will then display a nice widget with the distribution of the most frequent `user_ids`.
+
+You can `edit`{.action} the widget by using its top right menu arrow. For example you can change the visualization type by choosing **Pie Chart** in the top left _Visualization Type_ option.
 
 ![Quick Values](images/quick-values.png)
 
 This widget gives you the most frequent `user_id` in the logs of the last hour that have a `some_metric_num` value above `30`.
 
-- To add this really critical information to your dashboard, click on the `Add to Dashboard`{.action} menu button and select your newly created Dashboard. Fill a title for your widget and select the representation of your datas.
-
-Head to the Dashboard by clicking on the the appropriate tab and observe your widget on it.
+- To add this really critical information to your dashboard, click on the `Copy to Dashboard`{.action} menu button and select your newly created Dashboard. After that, you will be redirected to the Dashboard with your newly created widget in it.
 
 ![critical Dashboard](images/critical-dashboard.png)
 
-Mixing various widgets on the same dashboard give to this feature all its sense. In this screenshot, you can see that we added a widget that represents the mean values for some_metric_num (by using generate chart instead of quick values for the field some_metric in the stream tab). we also updated the title of the first widget using the little `pen`{.action} button at the bottom right of the widget and finally we also changed the disposition of the widgets (using the Unlock button at the top right) and moved everything around.
+Mixing various widgets on the same dashboard gives this feature all its sense. To add a widget in this Dashboard you can also directly use the "+" button on the left panel. This button will ask you the type of widget you want to create (Aggregation or Message Count or Message Table). The Aggregation option allows you to create various visualization types for your data.
+
+![widget creation](images/widget-create.png)
+
+
+In this screenshot, you can see that we added a widget that represents the mean values for some_metric_num (by using generate chart instead of quick values for the field some_metric in the stream tab).
 
 ![critical Dashboard 2](images/critical-dashboard-2.png)
+
+
+Note that dashboards are interactive and you can use the top search bar and the date picker to only display the widgets for a particular type of event. Try it ;-).
 
 
 ## Going further
@@ -187,8 +196,8 @@ We have only scratched the surface of what Logs Data Platform can do for you. yo
 - [Send correctly formatted logs](../field-naming-conventions){.ref} to use custom types as number, boolean and other stuffs
 - [Configure your syslog-ng](../how-to-log-your-linux){.ref} to send your Linux logs to Logs Data Platform.
 - [Using roles](../roles){.ref} to allow other users of the platform to let them see yours beautiful Dashboards or let them dig in your Streams instead of doing it for them.
-- [Using Kibana and aliases to unleash the power of elasticsearch](../using-kibana-with-logs){.ref}
-- If you want to master Graylog, this is the place to go: [Graylog documentation](http://docs.graylog.org/en/2.0/pages/queries.html){.external}
+- [Using OpenSearch Dashboards and aliases to unleash the power of OpenSearch](../opensearch-dashboards){.ref}
+- If you want to master Graylog, this is the place to go: [Graylog documentation](https://docs.graylog.org/docs/queries){.external}
 - Documentation: [Guides](../){.ref}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
 - Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}

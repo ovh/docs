@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: FAQ e-mails OVHcloud
 excerpt: 'Retrouvez les questions les plus fréquemment posées sur les e-mails OVHcloud'
 slug: faq-emails
 section: 'Premiers pas'

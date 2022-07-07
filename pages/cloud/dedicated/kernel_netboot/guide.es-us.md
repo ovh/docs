@@ -5,6 +5,10 @@ slug: kernel-netboot
 section: Uso avanzado
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
 **Última actualización: 25/02/2022**
 
 ## Objectivo
@@ -15,19 +19,16 @@ La función Netboot es un servicio gratuito ofrecido por OVHcloud, le permite in
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/en/bare-metal/){.external}
+- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external}
 - Acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 ## Procedimiento
-
-La instalación de Netboot debe configurarse en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
-
 
 ### Inicie el servidor desde el modo network
 
 > [!primary]
 >
->Esta parte esta destinada a servidor Linux. Para las distribuciones Windows, FreeBSD y Virtualizaciones, solo es posible el modo Disco duro o rescate.
+> Esta parte esta destinada a servidor Linux. Para las distribuciones Windows, FreeBSD y Virtualizaciones, solo es posible el modo Disco duro o rescate.
 >
 
 Para iniciar el servidor en el kernel de red, primero debe de conectarse al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
@@ -36,14 +37,13 @@ Acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor de `Se
 
 Busque “Boot” en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action}.
 
-![Netboot](images/netboot_2022.png)
+![Netboot](images/netboot_2022.png){.thumbnail}
 
 Seleccione `Arrancar en modo network`{.action}.
 
 ![Netboot](images/netboot_005.png){.thumbnail}
 
 Seleccione el kernel disponible e escriba el Root device (partición donde está ubicada la partición raíz de su servidor).
-
 
 Para determinar el dispositivo root en su servidor, vaya al fichero /etc/fstab en su servidor.
 
@@ -69,7 +69,6 @@ Una vez que haya realizado los cambios, haga clic en `...`{.action} a la derecha
 Haga clic en `Reiniciar`{.action} para aplicar los cambios.
 
 ![Netboot](images/netboot_004.png){.thumbnail}
-
 
 ## Más información
 

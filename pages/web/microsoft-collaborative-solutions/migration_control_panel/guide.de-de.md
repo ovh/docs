@@ -6,7 +6,7 @@ section: Account-Migration
 order: 1
 ---
 
-**Letzte Aktualisierung am 22.02.2022**
+**Letzte Aktualisierung am 22.04.2022**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -170,6 +170,16 @@ Verwenden Sie nun Ihre migrierten E-Mail-Adressen. OVHcloud stellt dazu eine Onl
 
 Wenn Sie einen der migrierten Accounts auf einem E-Mail-Client (wie Outlook) eingerichtet haben, müssen Sie diesen erneut konfigurieren. Die Verbindungsdaten zum OVHcloud Server haben sich nach der Migration geändert. Weitere Informationen finden Sie in den jeweiligen Anleitungen zu [E-Mail Pro](../../emails-pro/) und [Hosted Exchange](../). Auch wenn Sie den Account nicht sofort neu konfigurieren können, ist der Zugriff über die Online-Anwendung weiterhin möglich.
 
+### Organisation der Inhalte Ihrer E-Mail-Accounts nach einer Migration <a name="content-after-migration"></a>
+
+Wenn Sie sich zum ersten Mal in Ihrem neuen E-Mail-Account einloggen, können migrierte Inhalte teilweise verborgen sein. Um alle Elemente anzuzeigen, klicken Sie im Webmail auf den Pfeil neben `Posteingang`, um die Subordner freizugeben. Der migrierte Inhalt Ihres alten E-Mail-Accounts sollte erscheinen.
+
+![exchange](images/owa_migrate_content.png) {.thumbnail}
+
+Standardordner wie "Gesendete Elemente" oder "Papierkorb" erscheinen in englischer Benennung ("Sent items" und "Trash"), im Gegensatz zu von Ihnen selbst erstellte Ordner.
+
+Nach einer Migration können Sie alle Ordner und Unterordner Ihres Accounts einsehen, um sicherzustellen, dass alle Elemente vorhanden sind.
+
 ### Manuell migrieren
 
 Sie können auch Ihre E-Mail-Adressen manuell auf Ihr neues OVHcloud E-Mail-Angebot migrieren, indem Sie ausschließlich Ihr E-Mail-Programm verwenden. Lesen Sie unsere Anleitung [E-Mail-Adresse manuell migrieren](../../emails/email-adressen-manuell-migrieren/). Wir empfehlen Ihnen jedoch, diese Methode nur dann anzuwenden, wenn die Hauptmethoden nicht möglich sind.
@@ -177,10 +187,10 @@ Sie können auch Ihre E-Mail-Adressen manuell auf Ihr neues OVHcloud E-Mail-Ange
 
 ## Weiterführende Informationen
 
-[Verwaltung der Kontakte Ihrer Dienste](../../customer/verwaltung-der-kontakte/){.external}
+[Verwaltung der Kontakte Ihrer Dienste](../../customer/verwaltung-der-kontakte/)
 
-[E-Mail Pro Hilfen](https://docs.ovh.com/de/emails-pro/){.external}.
+[E-Mail Pro Hilfen](https://docs.ovh.com/de/emails-pro/)
 
-[Exchange Hilfen](https://docs.ovh.com/de/microsoft-collaborative-solutions/){.external}.
+[Exchange Hilfen](https://docs.ovh.com/de/microsoft-collaborative-solutions/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

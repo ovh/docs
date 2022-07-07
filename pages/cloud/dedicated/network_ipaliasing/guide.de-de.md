@@ -6,7 +6,7 @@ section: 'Netzwerk & IP'
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 16.09.2021**
@@ -32,7 +32,7 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 
 In dieser Anleitung finden Sie die Konfigurationen für die gängigsten Distributionen.
 
-### Debian 10
+### Debian 10/11
 
 #### Schritt 1: Die Quelldatei sichern
 
@@ -437,7 +437,7 @@ Ihre Failover-IP ist jetzt funktionsfähig.
 2. Klicken Sie mit der rechten Maustaste auf `LAN-Verbindung`{.action}.
 3. Klicken Sie auf `Eigenschaften`{.action}.
 4. Wählen Sie `Internetprotokoll Version 4 (TCP/IPv4)`{.action} aus und klicken Sie auf `Eigenschaften`{.action}.
-5. Klicken Sie auf `Folgende IP-Adresse verwenden`{.action} und geben Sie die Haupt-IP-Adresse Ihres Servers, die Subnetzmaske und das Standardgateway ein, die Sie über den Befehl `ipconfig`{.action} erhalten haben. (Im Feld „Bevorzugter DNS-Server“ geben Sie 213.186.33.99 ein).
+5. Klicken Sie auf `Folgende IP-Adresse verwenden`{.action} und geben Sie die Haupt-IP-Adresse Ihres Servers, die Subnetzmaske und das Standardgateway ein, die Sie über den Befehl `ipconfig`{.action} erhalten haben. (Im Feld “Bevorzugter DNS-Server” geben Sie 213.186.33.99 ein).
 
 ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
 

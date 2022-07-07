@@ -9,7 +9,7 @@ order: 2
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 14/03/2022**
@@ -133,7 +133,7 @@ W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHclou
 
 ### Bezpieczeństwo serwera dedykowanego
 
-Zgodnie z informacją w części „Wprowadzenie” niniejszego przewodnika, jesteś administratorem Twojego serwera dedykowanego. Jesteś odpowiedzialny za Twoje dane i ich bezpieczeństwo. Aby uzyskać więcej informacji na temat bezpieczeństwa serwera, zapoznaj się z naszym przewodnikiem [Zabezpieczenie serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/).
+Zgodnie z informacją w części “Wprowadzenie” niniejszego przewodnika, jesteś administratorem Twojego serwera dedykowanego. Jesteś odpowiedzialny za Twoje dane i ich bezpieczeństwo. Aby uzyskać więcej informacji na temat bezpieczeństwa serwera, zapoznaj się z naszym przewodnikiem [Zabezpieczenie serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/).
 
 ### Monitoring OVHcloud
 
@@ -170,7 +170,7 @@ Szczegółowe instrukcje dotyczące konfiguracji aliasu IP znajdziesz w przewodn
 
 > [!primary]
 >
-> Serwery z gamy **Kimsufi** mają tylko jeden adres IPv4 i jeden adres IPv6.
+> Serwery z gamy **Kimsufi** mają tylko jeden adres IPv4 i jeden adres IPv6. Adresy będą automatycznie konfigurowane podczas instalacji systemu operacyjnego.
 >
 
 Wszystkie serwery dedykowane OVHcloud są dostarczane z blokiem /64 IPv6. Aby korzystać z adresów tego bloku, należy wprowadzić zmiany w konfiguracji sieci. Zapoznaj się z naszym przewodnikiem "[Konfiguracja IPv6](../siec-ipv6/)".

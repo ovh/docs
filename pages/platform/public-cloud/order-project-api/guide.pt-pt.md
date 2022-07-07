@@ -22,7 +22,7 @@ A criação de um projeto é a primeira etapa da implantação de [instâncias P
 
 - Dispor de identificadores OVHcloud válidos
 - Dispor de um [método de pagamento](https://docs.ovh.com/pt/billing/gerir-metodos-de-pagamento/) válido e registado na sua conta OVHcloud
-- Estar familiarizado com o [funcionamento da APIv6 OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+- Estar familiarizado com o [funcionamento da APIv6 OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/).
 
 ## Instruções
 

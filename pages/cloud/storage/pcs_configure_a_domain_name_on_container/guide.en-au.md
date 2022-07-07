@@ -6,6 +6,7 @@ section: Object Storage Standard (Swift)
 order: 120
 ---
 
+**Last updated 27th October 2021**
 
 ## Objective
 
@@ -31,10 +32,10 @@ The feature works correctly with HTTP. However you will get a certificate error 
 
 
 ### CNAME or TXT record?
-You can only use one of these DNS records at a time. :
+You can only use one of these DNS records at a time:
 
-- CNAME : The default record. Use this if you are able to manage your DNS zone, it will automatically follow our endpoint regardless of the IP address.
-- TXT : Only use this if you need to configure your domain on another support, such as a CDN. Remember to check if the IP address of the endpoint has changed. You can also use a "virtual CNAME" if your CDN provider allows it.
+- CNAME: The default record. Use this if you are able to manage your DNS zone, it will automatically follow our endpoint regardless of the IP address.
+- TXT: Only use this if you need to configure your domain on another support, such as a CDN. Remember to check if the IP address of the endpoint has changed. You can also use a "virtual CNAME" if your CDN provider allows it.
 
 
 ## Configure your DNS
@@ -49,14 +50,14 @@ To be interpreted by the Object Storage, the CNAME record must conform to some s
 [CONTAINER_NAME].auth-[PROJECT_ID].storage.[REGION].cloud.ovh.net.
 ```
 
-For example, for a container named **staticct** and a project named **123xxxx456** to be used in SBG :
+For example, for a container named **staticct** and a project named **123xxxx456** to be used in SBG:
 
 
 ```bash
 staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
-Your DNS record will be :
+Your DNS record will be:
 
 
 ```bash
@@ -74,7 +75,7 @@ To be interpreted by the Object Storage, the TXT record must conform to specific
 '_swift-remap.' + subdomain
 ```
 
-For example, if I want to use 'static.mypersonaldomain.ovh', I should use :
+For example, if I want to use 'static.mypersonaldomain.ovh', I should use:
 
 
 ```bash
@@ -95,21 +96,21 @@ For example, for a container named **staticct**, in project **123xxxx456** used 
 staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
-Your DNS record will be :
+Your DNS record will be:
 
 
 ```bash
 _swift-remap.static IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
-If you do not want to use a subdomain, you can use the following command :
+If you do not want to use a subdomain, you can use the following command:
 
 
 ```bash
 _swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
-Finally, the last step for configuring a TXT record is to add an A record for your (sub)domain which points to the Public Cloud Object Storage IP address. To do this, use the following commad:
+Finally, the last step for configuring a TXT record is to add an A record for your (sub)domain which points to the Public Cloud Object Storage IP address. To do this, use the following command:
 
 
 ```bash
@@ -123,7 +124,7 @@ dig storage.bhs.cloud.ovh.net
 > [!alert]
 >
 > You cannot use the following characters in your container name :
-> :
+> 
 > - [ . ]
 > - [ _ ] depending on your DNS provider
 > - Upper case

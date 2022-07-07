@@ -39,7 +39,7 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur différent
 
 Pour débuter la manipulation, rendez-vous sur l'interface en ligne de Gmail depuis votre navigateur internet. Une fois sur cette dernière, renseignez les informations de votre compte Gmail, puis connectez-vous.
 
-Une fois connecté à l'interface, cliquez sur l'icône en forme de roue dentée, puis sur `Paramètres`{.action}. Sur la page qui s'affiche, cliquez sur l'onglet `Comptes et importation`{.action}. 
+Une fois connecté à l'interface, cliquez sur l'icône en forme de roue dentée, puis sur `Voir tous les paramètres`{.action}. Sur la page qui s'affiche, cliquez sur l'onglet `Comptes et importation`{.action}. 
 
 ![mxplan](images/configuration-gmail-web-step1.png){.thumbnail}
 

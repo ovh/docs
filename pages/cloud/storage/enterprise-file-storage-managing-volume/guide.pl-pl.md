@@ -7,7 +7,7 @@ order: 3
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 27-10-2021**
@@ -187,6 +187,6 @@ Zamień `serviceName` na ID usługi i `netappShareId` na ID wolumenu do usunięc
 
 ## Sprawdź również
 
-[Pierwsze kroki z API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN)
+[Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)
 
 Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.

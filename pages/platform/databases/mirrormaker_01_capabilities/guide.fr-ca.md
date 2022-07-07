@@ -2,7 +2,7 @@
 title: Kafka MirrorMaker - Capacités et limitations (EN)
 slug: mirrormaker/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka MirrorMaker
-section: Kafka MirrorMaker
+section: Kafka MirrorMaker - Guides
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mirrormaker/capabilities/'
@@ -13,7 +13,8 @@ routes:
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for Kafka MirrorMaker offer.
-We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
 
@@ -36,7 +37,7 @@ The Public Cloud Databases offer supports the following Kafka versions:
 
 - Kafka MirrorMaker 2.0
 
-You can folllow Kafka Release Cycle on their official page : <https://kafka.apache.org/downloads>
+You can follow Kafka Release Cycle on their official page : <https://kafka.apache.org/downloads>
 
 ### Kafka clients
 
@@ -52,7 +53,7 @@ Three plans are available:
 - *Business*
 - *Enterprise*
 
-Here is an overview of the various plans capabilities:
+Here is an overview of the various plans' capabilities:
 
 | Plan         | Number of nodes by default | Additional nodes | Network                |
 | ------------ | -------------------------- | ---------------- | ---------------------- |
@@ -64,9 +65,9 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 #### Nodes
 
-- **Essential**: the cluster is delivered with 3 nodes by default.
-- **Business**: the cluster is delivered with 3 nodes by default.
-- **Enterprise**: the cluster is delivered with 6 nodes by default.
+- **Essential**: The cluster is delivered with 3 nodes by default.
+- **Business**: The cluster is delivered with 3 nodes by default.
+- **Enterprise**: The cluster is delivered with 6 nodes by default.
 
 #### License type
 
@@ -147,8 +148,8 @@ Kafka is a streaming tool. We don't backup Kafka data.
 Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
 As of today, you can't export logs and metrics, nor plug them into a remote tool.
 
-- **Logs retention :** 1000 lines of logs;
-- **Metrics retention :** 1 calendar month.
+- **Logs retention**: 1000 lines of logs
+- **Metrics retention**: 1 calendar month
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
 

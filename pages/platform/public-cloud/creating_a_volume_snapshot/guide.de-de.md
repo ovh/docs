@@ -56,4 +56,4 @@ Klicken Sie auf den Button `...`{.action} um einen Snapshot zu löschen oder ein
 
 [Die Größe einer zusätzlichen Disk erweitern](../ihre_zusatzliche_festplatte_vergroern/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

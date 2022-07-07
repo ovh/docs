@@ -37,13 +37,13 @@ Please note that setting up a redirection will affect your website’s SEO ranki
 
 ### Redirect a domain name from the Control Panel
 
-Once you have logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, click your domain name in the `Domains`{.action} section of the service bar (1 on the image below). Then click the `Redirection`{.action} tab (2 on the image below) in the page that opens.
+Once you have logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, click your domain name in the `Domains`{.action} section. Then click the `Redirection`{.action} tab in the page that opens.
 
 This table displays all active redirections for your domain name.
 
-To add a redirection, click `Add a redirection`{.action} (3 on the image below).
+To add a redirection, click `Add a redirection`{.action}.
 
-![Main page for redirections](images/create_redirection_global.png){.thumbnail}
+
 
 In the window that appears, enter the domain name (or subdomain) that you would like to redirect. This will be the redirection source.
 

@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 section: 'Network Management'
 ---
 
-**Last updated 15th March 2022**
+**Last updated 4th May 2022**
 
 ## Objective
 
@@ -25,6 +25,10 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 - All your IPv6 information (prefix, gateway etc.)
 - Basic knowledge of [SSH](../ssh-introduction/) and networking
 
+> [!warning]
+> Please note that Kimsufi servers are only provided with a single IPV6 block (/128). IPv6 will be configured automatically when installing the OS.
+>
+
 ## Instructions
 
 If you are using an OVHcloud-provided Linux OS template to install your server, you will see that you already have the first (main) IPv6 configured out of the box.
@@ -33,19 +37,16 @@ If you want to have more than one IPv6 configured on your server (or want to use
 
 > [!primary]
 >
-> The default gateway for your IPv6 block (IPv6_GATEWAY) is usually xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> The default gateway for your IPv6 block (IPv6_GATEWAY) is usually xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Please note that the leading "0's" can be removed in an IPv6 to avoid errors when determining the gateway.  
 >
 > For example:
 > 
-> - The IPv6 address of the server is 2607:5300:60:62ac::/64. The IPv6_GATEWAY will therefore be 2607:5300:60:62FF:FF:FF:FF:FF.
-> - The IPv6 address of the server is 2001:41D0:1:46e::/64. The IPv6_GATEWAY will therefore be 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - The IPv6 address of the server is 2607:5300:60:62ac::/64 or 2607:5300:60:62ac:0000:0000:0000:0000/64. The IPv6_GATEWAY will therefore be 2607:5300:60:62FF:FF:FF:FF:FF.
+> - The IPv6 address of the server is 2001:41D0:1:46e::/64 or 2001:41D0:0001:046e:0000:0000:0000:0000/64. The IPv6_GATEWAY will therefore be 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
 > The safe way to retrieve the networking information for your server is to [use the OVHcloud API](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/). Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
 >
 
-> [!warning]
-> Please note that Kimsufi servers are only provided with a single IPV6 block (/128). In this case, please refer to this [guide](https://docs.ovh.com/ie/en/vps/configuring-ipv6/) for configuring ipv6 on a Kimsufi server.
->
 
 > [!api]
 >

@@ -39,7 +39,7 @@ Gli account email del servizio MX Plan possono essere configurati su client o ap
 
 Accedi tramite browser all’interfaccia Web di Gmail, inserisci le credenziali del tuo account ed effettua il login.
 
-Clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Impostazioni`{.action}. Seleziona la scheda `Account e importazione`{.action}. 
+Clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Visualizza tutti le impostazioni`{.action}. Seleziona la scheda `Account e importazione`{.action}. 
 
 ![MX Plan](images/configuration-gmail-web-step1.png){.thumbnail}
 

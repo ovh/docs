@@ -3,6 +3,7 @@ deprecated: true
 title: Cloud Web
 slug: cloud-web
 sections: Eerste stappen
+order: 10
 ---
 
 > [!product-section]
@@ -10,7 +11,7 @@ sections: Eerste stappen
 > ### Websites en projecten
 >
 > - [Publiceren van een website op uw webhosting](https://docs.ovh.com/nl/hosting/mijn-website-online-zetten/)
-> - [Migratie van uw website en e-mails naar OVH](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/)
+> - [Migratie van uw website en e-mails naar OVHcloud](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/)
 > - [Het hosten van meerdere websites op uw webhostingplan](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/)
 > - [Installatie van een site met 1-klik modules](https://docs.ovh.com/nl/hosting/1-klik-modules/)
 >

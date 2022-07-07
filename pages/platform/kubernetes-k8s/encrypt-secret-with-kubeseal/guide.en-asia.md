@@ -6,7 +6,7 @@ section: Security
 order: 2
 ---
 
-**Last updated 17th February 2022.**
+**Last updated 6th June 2022.**
 
 <style>
  pre {
@@ -44,7 +44,7 @@ In this guide you will:
 - Deploy Sealed Secrets in your OVHcloud Managed Kubernetes
 - Generate and deploy a SealedSecret
 
-You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} to reinitialize your cluster before following this tutorial.
 
 ## Kubernetes Secrets
 
@@ -101,7 +101,7 @@ brew install kubeseal
 Then test if the CLI is correctly installed on your computer:
 
 ```console
-kubeseal version
+kubeseal --version
 ```
 
 Output should be like this:

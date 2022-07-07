@@ -6,7 +6,7 @@ section: AI Training tutorials
 order: 12
 ---
 
-**Last updated 6th April, 2022.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
@@ -27,7 +27,7 @@ For more information about Hugging Face, please visit <https://huggingface.co/>.
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
 
-We also suggest you do some tests to find out which [Hugging Face model](https://huggingface.co/models) is right for your use case. Find examples on our [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/notebooks/hugging-face/tuto/sentiment-analysis-Twitter).
+We also suggest you do some tests to find out which [Hugging Face model](https://huggingface.co/models) is right for your use case. Find examples on our [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/notebooks/natural-language-processing/text-classification/hugging-face/sentiment-analysis-twitter).
 
 ## Instructions
 
@@ -116,7 +116,7 @@ transformers==4.4.2
 torch==1.6.0
 ```
 
-Here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/jobs/flask/hugging-face-sentiment-analysis-app).
+Here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/jobs/flask/sentiment-analysis-hugging-face-app).
 
 ### Write the Dockerfile for the application
 

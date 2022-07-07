@@ -9,7 +9,7 @@ order: 4
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zaproponuj zmianę" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 28-12-2021**
+**Ostatnia aktualizacja z dnia 13-06-2022**
 
 ## Wprowadzenie
 
@@ -34,7 +34,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 > [!primary]
 >
-> W przewodniku używamy oznaczenia serwera: pro**?**.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
+> W przewodniku używamy oznaczenia serwera: pro<b>?</b>.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 > 
 > Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
 >
@@ -69,6 +69,28 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 - Wybierz konto w kolumnie po lewej stronie, następnie kliknij `Ustawienia serwera`{.action}.
 
 ![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
+
+### Dodatkowe informacje
+
+W przypadku konfiguracji **IMAP** wartości są następujące:
+
+|Typ serwera|Nazwa serwera|Metoda szyfrowania|Port|
+|---|---|---|---|
+|Wchodzący(IMAP)|pro<b>?</b>.mail.ovh.net (nazwa **"?"** należy zastąpić numerem serwera)|SSL/TLS|993|
+|Wychodzący(SMTP)|pro<b>?</b>.mail.ovh.net (nazwa **"?"** należy zastąpić numerem serwera)|SSL/TLS|465|
+
+W przypadku konfiguracji **POP** wartości są następujące:
+
+|Typ serwera|Nazwa serwera|Metoda szyfrowania|Port|
+|---|---|---|---|
+|Wchodzący(POP)|pro<b>?</b>.mail.ovh.net (nazwa **"?"** należy zastąpić numerem serwera)|SSL/TLS|995|
+|Wychodzący(SMTP)|pro<b>?</b>.mail.ovh.net (nazwa **"?"** należy zastąpić numerem serwera)|SSL/TLS|465|
+
+> [!primary]
+>
+> **Zmień konfigurację**
+>
+> Jeśli skonfigurujesz Twoje konto e-mail przy użyciu **IMAP** i chcesz zmienić konfigurację na **POP**, usuń konto e-mail Maca i odtworzyć je w **POP**, aby zmienić konfigurację.
 
 ## Sprawdź również
  

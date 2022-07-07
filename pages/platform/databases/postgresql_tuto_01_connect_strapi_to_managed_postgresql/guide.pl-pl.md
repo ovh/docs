@@ -3,7 +3,7 @@ title: PostgreSQL - Tutorial - Build a Strapi app connected to OVHcloud Managed 
 slug: postgresql/tutorial-connect-strapi-to-managed-postgresql
 excerpt: "Find out how to build a Strapi application connected to an OVHcloud Managed PostgreSQL service"
 section: PostgreSQL - Tutorials
-order: 01
+order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/tutorial-connect-strapi-to-managed-postgresql/'
 ---
@@ -105,7 +105,7 @@ Click `Next`{.action} to continue.
 
 #### Step 6: Summary and confirmation
 
-The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql06.png){.thumbnail}
 

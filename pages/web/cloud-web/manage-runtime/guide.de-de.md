@@ -5,7 +5,11 @@ excerpt: 'Erfahren Sie hier, wie Sie die Runtime Engines Ihres Hostings verwalte
 section: Webhosting-Konfiguration
 ---
 
-**Letzte Aktualisierung am 23.01.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 04.05.2022**
 
 ## Ziel
 
@@ -54,7 +58,7 @@ Um eine Runtime Engine hinzuzufügen oder zu ändern, gehen Sie in den Tab `Runt
 - **Wenn Sie eine Engine hinzufügen möchten**\: Klicken Sie über der Tabelle auf `Aktionen`{.action} und dann auf `Runtime Engine hinzufügen`{.action}.
 - **Wenn Sie die vorhandene Engine ändern möchten**\: Klicken Sie rechtes neben der betreffenden Engine auf `...`{.action} und dann auf `Ändern`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step2.png){.thumbnail}
+
 
 Geben Sie im angezeigten Fenster die notwendigen Informationen ein. Fahren Sie entsprechend der ausgewählten Engine fort:
 
@@ -72,7 +76,7 @@ Geben Sie im angezeigten Fenster die notwendigen Informationen ein. Fahren Sie e
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden_2).
 
-![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
+
 
 ##### **Node.js**
 

@@ -10,14 +10,14 @@ order: 3
 
 ## Obiettivo
 
-Dopo aver [eseguito l’accesso all’interfaccia VMWare Horizon](https://docs.ovh.com/it/cloud-desktop-infrastructure/piattaforma-horizon-7/){.external} e aver [creato il template di un <i>pool</i>](https://docs.ovh.com/it/cloud-desktop-infrastructure/creare-template-pool/){.external}, è il momento di creare il tuo primo <i>pool</i>.
+Dopo aver [eseguito l’accesso all’interfaccia VMware Horizon](https://docs.ovh.com/it/cloud-desktop-infrastructure/piattaforma-horizon-7/){.external} e aver [creato il template di un <i>pool</i>](https://docs.ovh.com/it/cloud-desktop-infrastructure/creare-template-pool/){.external}, è il momento di creare il tuo primo <i>pool</i>.
 
 **Questa guida ti mostra come creare un pool utilizzando VMware Horizon 7.1.**
 
 
 ## Prerequisiti
 
-- Essere connesso a VMware Horizon 7.1. 
+- Essere connesso a VMware Horizon 7.1.
 
 
 ## Procedura
@@ -34,13 +34,13 @@ Dopo aver eseguito l’accesso a VMware Horizon, segui i seguenti passaggi:
 > [!primary]
 >
 > Esistono tre principali tipologie di <i>pool </i>di desktop virtuali: automatizzato, manuale e RDS.
-> 
+>
 > - I <i>pool</i> di desktop virtuali <b>automatizzati</b> si creano a partire dallo stesso template o da uno snapshot del template di una macchina virtuale (VM).
-> 
+>
 > - I <i>pool</i> di desktop virtuali <b>manuali</b> sono una raccolta di VM, computer fisici o VM appartenenti a terzi. Nei <i>pool</i> automatizzati e manuali, ogni macchina è accessibile da un'utenza remota alla volta.
 >
 > - I <i>pool</i> di desktop virtuali <b>RDS</b> non consistono in una raccolta di macchine ma forniscono sessioni desktop sugli host RDS. Su un host RDS, più utenti possono avere varie sessioni di lavoro aperte contemporaneamente.
-> 
+>
 
 
 ![création d'un pool](images/1201.png){.thumbnail}
@@ -69,7 +69,7 @@ Dopo aver eseguito l’accesso a VMware Horizon, segui i seguenti passaggi:
 > [!primary]
 >
 > Ti consigliamo di utilizzare il protocollo **Blast**, che ti garantisce in particolare una migliore performance (indipendentemente dalla larghezza di banda della tua connessione), una maggiore sicurezza e, per gli utilizzi da dispositivo mobile, un importante risparmio di batteria. Per maggiori informazioni riguardanti il protocollo, clicca su [questo link](https://docs.vmware.com/fr/VMware-Horizon-7/7.2/com.vmware.horizon-view.installation.doc/GUID-F64BAD49-78A0-44FE-97EA-76A56FD022D6.html){.external}.
-> 
+>
 
 ![création d'un pool](images/1205.png){.thumbnail}
 
@@ -90,7 +90,7 @@ Dopo aver eseguito l’accesso a VMware Horizon, segui i seguenti passaggi:
 > [!primary]
 >
 > Se la VM non appare, seleziona `Show all parent VMs`{.action} per capirne il motivo.
-> 
+>
 
 ![création d'un pool](images/1209.png){.thumbnail}
 

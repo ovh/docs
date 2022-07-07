@@ -15,8 +15,8 @@ Carregar as variáveis de ambiente OpenStack no seu computador permitirá usar a
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Ter criado um utilizador OpenStack. Consulte [o respetivo guia](https://docs.ovh.com/pt/public-cloud/criar-e-eliminar-um-utilizador-openstack/)
-- Ter preparado o ambiente para usar o OpenStack. Para isso, consulte o seguinte guia: [Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/preparar_o_ambiente_para_utilizar_a_api_openstack/)
+- Ter criado um utilizador OpenStack. Consulte [o respetivo guia](https://docs.ovh.com/pt/public-cloud/criar-e-eliminar-um-utilizador-openstack/).
+- Ter preparado o ambiente para usar o OpenStack. Para isso, consulte o seguinte guia: [Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/preparar_o_ambiente_para_utilizar_a_api_openstack/).
 
 ## Instruções
 
@@ -43,7 +43,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-Conforme indicado no guia [Aceder à interface Horizon](https://docs.ovh.com/pt/public-cloud/criar-e-eliminar-um-utilizador-openstack/), a palavra-passe só é visível uma vez, no momento da sua criação.
+Como indicado em [este guia](https://docs.ovh.com/pt/public-cloud/criar-e-eliminar-um-utilizador-openstack/), a palavra-passe só é visível uma vez, no momento da sua criação.
 
 Se se tiver esquecido da palavra-passe, terá de voltar a criá-la.
 

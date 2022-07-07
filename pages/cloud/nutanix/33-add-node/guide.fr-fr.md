@@ -4,6 +4,10 @@ slug: add-node
 excerpt: 'Ajouter un nœud et valider son bon fonctionnement'
 section: "Utilisation avancée"
 order: 03
+hidden: true
+kb: Hosted Private Cloud
+category_l1: Hosted Private Cloud powered by Nutanix
+category_l2: Advanced usage
 ---
 
 **Dernière mise à jour le 04/04/2022**
@@ -53,7 +57,7 @@ Cliquez sur `Close`{.action} pour fermer cette fenêtre.
 
 Ouvrez le menu `Home`{.action} et choisissez `Health`{.action} pour faire une analyse du cluster avant le rajout du nœud.
 
-![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}.
+![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}
 
 Cliquez en haut à droite sur `Actions`{.action} et choisissez `Run NCC Check`{.action}.
 

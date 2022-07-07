@@ -11,17 +11,17 @@ section: Features
 ## Objective
 
 Alerting is one of the most powerful features of the Logs Data Platform. It allows you to stop worrying about your logs and be prepared for a lot of situations: When you don't have any logs of a software for an unexpected long time, when the number of tasks completed is too low, when the traffic on your website is too high, or even when one specific keyword appears in any of your information feeds: all of these use cases can trigger an alert that will send you a message immediately.
- 
+
 This guide will help you to configure and use alerts on a particular field. We will provide an example with Apache logs.
 
 ## Requirements
 
 In order to understand this guide you should read the following tutorials:
- 
+
 - [Quick start of Logs Data Platform](../quick-start){.ref}.
 - [Logstash collector on Logs Data Platform](../logstash-input){.ref}.
 - [The Filebeat tutorial](../filebeat-logs){.ref}.
- 
+
 ## Instructions
 
 ### Why configuring an alert on the Logs Data Platform ?
@@ -39,9 +39,9 @@ The goal of the Alerting feature is to give you the freedom to not watch your lo
 - **Numeric value alert** is triggered when a certain numeric field has an abnormal value. The value can be the mean value, the sum, the minimum, maximum, and even the standard deviation or the median.
 - **Text content alert** is the alert triggered when a field has some exact value.
 
-For the 3 types of alert, you can configure a **grace period**. The **grace period** is a period of time during which the alert won't be triggered again so that you won't get spammed by the same alert over and over again. You can also configure how many last messages you want to include in your alert. This is useful to quickly identify the root causes of your alerts. 
+For the 3 types of alert, you can configure a **grace period**. The **grace period** is a period of time during which the alert won't be triggered again so that you won't get spammed by the same alert over and over again. You can also configure how many last messages you want to include in your alert. This is useful to quickly identify the root causes of your alerts.
 
-Don't hesitate to jump to the alert configuration part if you only need to know how to configure alerts. 
+Don't hesitate to jump to the alert configuration part if you only need to know how to configure alerts.
 
 ### Use case&#58; Alerts for a website powered by an Apache Server
 
@@ -67,7 +67,7 @@ The configuration is inspired by the one you can find in [this tutorial](../apac
 
 #### Filebeat configuration
 
-The Filebeat configuration will enable the apache module and allow you to send your logs directly to Logs Data Platform. 
+The Filebeat configuration will enable the apache module and allow you to send your logs directly to Logs Data Platform.
 
 ```yaml
 #=========================== Filebeat inputs =============================

@@ -6,7 +6,7 @@ section: Funkcjonalności OVHcloud
 order: 05
 ---
 
-**Ostatnia aktualizacja z dnia 30-06-2020**
+**Ostatnia aktualizacja z dnia 10-06-2022**
 
 ## Wprowadzenie
 
@@ -35,7 +35,7 @@ Możesz to zrobić na dwa sposoby:
 
 Po zalogowaniu do interfejsu zarządzania kliknij `Change Password`{.action}
 
-![Change Password](images/selectChangePassword.jpg){.thumbnail}
+![Change Password](images/selectChangePassword.png){.thumbnail}
 
 W interfejsie wykonaj następujące czynności:
 	
@@ -44,7 +44,7 @@ W interfejsie wykonaj następujące czynności:
 * Zeskanuj kod QR przy użyciu dowolnej aplikacji na smartfona służącej do weryfikacji dwuetapowej;
 * Potwierdź otrzymany kod.
 
-![Scan QRcode](images/scanQRcode.jpg){.thumbnail}
+![Scan QRcode](images/scanQRcode.png){.thumbnail}
 
 Po utworzeniu zadania zostanie wysłany do Ciebie token.
 
@@ -59,7 +59,7 @@ Przejdź do sekcji `Operation validation`{.action}, załaduj operację otrzyman�
 
 Korzystając z tego samego linku co zwykle, zaloguj się do klienta *Web*. Przejdziesz na następującą stronę:
 
-![Connexion 2FA](images/2FAtoken.jpg){.thumbnail}
+![Connexion 2FA](images/2FAtoken.png){.thumbnail}
 
 Zanim podasz hasło, wprowadź token wygenerowany przez zainstalowaną na Twoim smartfonie aplikację do weryfikacji dwuetapowej.
 

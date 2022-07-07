@@ -13,7 +13,7 @@ Este software dá-lhe a possibilidade de colocar online o seu website e permite-
 
 Para noções sobre como utilizar o software, aceda ao site [url="https://filezilla-project.org/"[blue]do projeto FileZilla[/blue][/url]
 
-![](images/img_2400.jpg){.thumbnail}
+![FileZilla](images/2400.png){.thumbnail}
 
 
 ## Interface
@@ -34,7 +34,7 @@ A zona 6 indica a lista de espera dos ficheiros que transferiu (ou está em curs
 
 Na parte superior da interface (a verde) tem em conta o nome do host (servidor ao qual está ligado), bem com o nome do utilizador FTP, a sua password e a porta utilizada.
 
-![](images/img_1818.jpg){.thumbnail}
+![FileZilla](images/1818.png){.thumbnail}
 
 ## Separador principal
 O separador principal contém os ícones úteis ao funcionamento básico do software. Não utilizamos todos os botões para proceder à transferência de ficheiros. Consulte em baixo uma breve descrição dos ícones.
@@ -68,7 +68,7 @@ Se não possuir estas informações, aceda à [Área de Cliente OVH](https://www
 
 Após tudo preenchido de forma correta, clique em Ligação rápida para estabelecer a ligação ao servidor.
 
-![](images/img_1819.jpg){.thumbnail}
+![FileZilla](images/1819.png){.thumbnail}
 
 
 ## Ligação SFTP
@@ -87,7 +87,7 @@ A verde em cima, a fim de estabelecer a ligação ao servidor distante ser-nos-�
 Após clicar no botão Ligação rápida, irá abrir-se uma caixa de diálogo (ver ao lado) para se certificar da ligação ao host ao qual pretende estabelecer ligação.
 Estando a ligar-se a um host OVH poderá selecionar "Configurar sempre neste host, adicionar esta chave à cache" para que não lhe volte aparecer esta mensagem.
 
-![](images/img_1834.jpg){.thumbnail}
+![FileZilla](images/1834.png){.thumbnail}
 
 
 ## Erros de ligação
@@ -99,10 +99,10 @@ Verifique os seus dados para que se certifique que não existe nenhum erro aquan
 
 Está disponível um guia que diz respeito à alteração da password FTP nas ofertas partilhadas:[]({legacy}1374)
 
-![](images/img_1820.jpg){.thumbnail}
+![FileZilla](images/1820.png){.thumbnail}
 Neste caso, é gerado um erro devido ao nome do servidor estar incorreto.
 
-![](images/img_1824.jpg){.thumbnail}
+![FileZilla](images/1824.png){.thumbnail}
 
 
 ## Transferência de ficheiros
@@ -114,7 +114,7 @@ Para proceder à transferência dos seus ficheiros via FTP pode simplesmente sel
 
 Após realizar esta operação, os seus ficheiros serão automaticamente colocados na ficha de espera para serem transferidos para o servidor.
 
-![](images/img_1821.jpg){.thumbnail}
+![FileZilla](images/1821.png){.thumbnail}
 
 
 ## Vista da fila de espera
@@ -131,7 +131,7 @@ Pode consultar:
 
 
 
-![](images/img_1822.jpg){.thumbnail}
+![FileZilla](images/1822.png){.thumbnail}
 
 
 ## Menu contextual do Servidor
@@ -156,7 +156,7 @@ Exemplo de URL que pode ser gerado: ftp://loginftp@ftp.cluster0XX.ovh.net/www/mi
 
 Permissões do ficheiro: dá-lhe a possibilidade de modificar os direitos de ficheiros (CHMOD)
 
-![](images/img_1830.jpg){.thumbnail}
+![FileZilla](images/1830.png){.thumbnail}
 
 
 ## Permissões de pastas e ficheiros
@@ -170,7 +170,7 @@ Pode ainda selecionar "Aplicar a todos os ficheiros e pastas".
 
 Esta ação terá como efeito a modificação dos direitos da pasta em questão mas igualmente as pastas e ficheiros presentes na pasta.
 
-![](images/img_1831.jpg){.thumbnail}
+![FileZilla](images/1831.png){.thumbnail}
 
 
 ## Reabertura de Site
@@ -202,7 +202,7 @@ Para verificar que a reabertura do site ocorreu de forma bem sucedida, teste atr
 
 Este comando não funciona em SFTP.
 
-![](images/img_1829.jpg){.thumbnail}
+![FileZilla](images/1829.png){.thumbnail}
 A apresentação do site deverá passar a ser novamente possível após 3 horas, no máximo.
 Os nossos robôs passam a cada 3 horas para fazer verificações de alterações de estados.O tempo de reestabelecimento varia em função do momento em que solicitou a reabertura.
 
@@ -215,7 +215,7 @@ pode ser interessante escolher como a transferência se irá realizar.
 
 Para modificar, selecione "Transferências" no menu principal e de seguida clique em "Tipo de transferência".
 
-![](images/img_1832.jpg){.thumbnail}
+![FileZilla](images/1832.png){.thumbnail}
 
 
 ## Comparação de pastas
@@ -236,7 +236,7 @@ Cores :
 
 
 
-![](images/img_1823.jpg){.thumbnail}
+![FileZilla](images/1823.png){.thumbnail}
 
 
 ## Preferências
@@ -248,14 +248,14 @@ No entanto, tenha cuidado, pode ser considerado abusivo para certos servidores e
 
 Para modificar estas regras, aceda a "Edição" e depois "Parâmetros" e finalmente "Ligação".
 
-![](images/img_1825.jpg){.thumbnail}
+![FileZilla](images/1825.png){.thumbnail}
 
 ## Transferências
 É possível que modifique as preferências no que diz respeito às ações a executar por defeito aquando da modificação de um ficheiro existente.
 
 Para modificar essas regras aceda a "Edição" e depois "Parâmetros" e finalmente "Transferências".
 
-![](images/img_1826.jpg){.thumbnail}
+![FileZilla](images/1826.png){.thumbnail}
 
 
 ## Conhecer o servidor de ligação
@@ -268,5 +268,5 @@ Esta verificação pode ser necessária, por exemplo, se constatar lentidões ou
 
 
 
-![](images/img_2399.jpg){.thumbnail}
+![FileZilla](images/2399.png){.thumbnail}
 

@@ -1,17 +1,17 @@
 ---
-title: 'Configurer le Firewall Network'
+title: 'Configurer le Network Firewall'
 slug: firewall-network
-excerpt: 'Découvrez comment configurer votre Firewall Network'
+excerpt: 'Découvrez comment configurer votre Network Firewall'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 23/12/2021**
+**Dernière mise à jour le 31/05/2022**
 
 ## Objectif
 
-Pour protéger son infrastructure globale et les serveurs de ses clients, OVHcloud propose un pare-feu paramétrable et intégré à la solution **Anti-DDoS** : le Firewall Network. Cette option vous permet de limiter l'exposition de votre service aux attaques provenant du réseau public.
+Pour protéger son infrastructure globale et les serveurs de ses clients, OVHcloud propose un pare-feu paramétrable et intégré à la solution **Anti-DDoS** : le Network Firewall. Cette option vous permet de limiter l'exposition de votre service aux attaques provenant du réseau public.
 
-**Ce guide vous explique comment configurer votre Firewall Network.**
+**Ce guide vous explique comment configurer votre Network Firewall.**
 
 
 > [!primary]
@@ -23,22 +23,26 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 
 ## Prérequis
 
-- Posséder un service OVHcloud bénéficiant d’un Firewall Network ([serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external},[instance Public Cloud](https://www.ovh.com/fr/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
+- Posséder un service OVHcloud bénéficiant d’un Network Firewall ([Serveur Dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external},[instance Public Cloud](https://www.ovh.com/fr/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
 
 ## En pratique
 
-### Activer le Firewall Network
+### Activer le Network Firewall
 
 > [!primary]
 >
-> Le Firewall Network protège les adresses IP associées à une machine. Vous devez donc configurer chaque adresse IP indépendamment. Une configuration globale du serveur est impossible.
+> Le Network Firewall protège les adresses IP associées à une machine. Vous devez donc configurer chaque adresse IP indépendamment. Une configuration globale du serveur est impossible.
 > 
 
 Connectez-vous à[ l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et accédez à la section `Bare Metal Cloud`{.action}. Ensuite, ouvrez la section `IP`{.action} et cliquez sur `...`{.action} pour activer le pare-feu sur une adresse IPv4.
 
-![Activation du Firewall Network](images/firewall_creation2022.png){.thumbnail}
+![Activation du Network Firewall](images/firewall_creation2022.png){.thumbnail}
 
 Confirmez votre action.
 
@@ -60,18 +64,24 @@ Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 
 > [!primary]
 >
-> - La fragmentation UDP est bloquée (DROP) par défaut. Lorsque vous activez le Firewall Network, n'oubliez pas de configurer correctement votre unité de transmission maximale (<i>Maximum Transmission Unit</i> ou MTU) si vous utilisez un VPN. Par exemple, sur OpenVPN, vous pouvez cocher `MTU test`{.action} .
-> - Le Firewall Network n'est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n'affectent pas les connexions de ce réseau interne.
+> - La fragmentation UDP est bloquée (DROP) par défaut. Lorsque vous activez le Network Firewall, n'oubliez pas de configurer correctement votre unité de transmission maximale (<i>Maximum Transmission Unit</i> ou MTU) si vous utilisez un VPN. Par exemple, sur OpenVPN, vous pouvez cocher `MTU test`{.action} .
+> - Le Network Firewall n'est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n'affectent pas les connexions de ce réseau interne.
 >
 
 
-### Configurer le Firewall Network
+### Configurer le Network Firewall
 
-Pour ajouter une règle, cliquez sur ` Ajouter une règle`{.action}.
+> [!warning]
+> Veuillez noter que le Network Firewall d'OVHcloud ne peut pas être utilisé pour ouvrir des ports sur un serveur. Pour ouvrir des ports sur un serveur, vous devez passer par le pare-feu du système d'exploitation installé sur le serveur.<br>
+> Pour plus d'informations, consultez les guides suivants : [Configurer le pare-feu sous Windows](https://docs.ovh.com/fr/dedicated/firewall-windows/) et [Configurer le pare-feu sous Linux avec Iptables](https://docs.ovh.com/fr/dedicated/firewall-iptables/).
+>
+
+Pour ajouter une règle, cliquez sur `Ajouter une règle`{.action}.
 
 ![Ajouter une règle](images/ajoutregle1.png){.thumbnail}
 
 Pour chaque règle, vous devez choisir :
+
 - une priorité (de 0 à 19, 0 étant la première règle à appliquer) ;
 - une action (`Autoriser`{.action} ou `Refuser`{.action}) ;
 - le protocole ;
@@ -100,8 +110,26 @@ Les règles sont triées de 0 (la première règle lue) à 19 (la dernière). La
 Par exemple, un paquet pour le port 80/TCP sera capturé par la règle 2 et les règles qui suivent ne seront pas appliquées. Un paquet pour le port 25/TCP ne sera attrapé qu'à la dernière règle (19) qui le bloquera, car le pare-feu n'autorise pas la communication sur le port 25 dans les règles précédentes.
 
 > [!warning]
+> Comme indiqué, la configuration ci-dessus n’est qu’un exemple et doit être utilisée comme référence si les règles ne s'appliquent pas aux services hébergés sur votre serveur. Il est absolument nécessaire de configurer les règles de votre firewall en fonction des services hébergés sur votre serveur. Une mauvaise configuration de vos règles de firewall peut entrainer le blocage du trafic légitime et l'inaccessibilité des services du serveur.
 >
-> Si notre solution anti-DDoS limite une attaque, votre Firewall Network s'activera automatiquement, même si vous l'avez désactivé par défaut. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
+
+### Mitigation
+
+Il existe trois modes de mitigation : automatique (détection permanente), permanente ou forcée.
+
+**Mitigation automatique (détection permanente)** : Avec ce mode, le trafic ne passe par le système de mitigation que s'il est détecté comme « inhabituel » par rapport au trafic normal habituellement reçu par le serveur.
+
+**Mitigation permanente** : En activant la mitigation permanente, vous appliquez un premier niveau de filtrage constant à travers notre Shield hardware.<br>
+Tout le trafic passe en permanence par le système de mitigation avant d'atteindre le serveur. Nous recommandons ce mode pour les services faisant l'objet d'attaques fréquentes.<br>
+Veuillez noter que le Network Firewall ne doit pas être créé/activé pour activer la mitigation permanente sur votre IP.
+
+Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `IP`{.action}. Cliquez ensuite sur les `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Mitigation : mode permanent`{.action}.
+
+**Mitigation forcée** : Ce mode est activé automatiquement dès qu'une attaque est détectée sur le serveur. Une fois activé, ce mode ne peut être désactivé. Afin de protéger notre infrastructure, la protection sera activée pendant toute la durée de l’attaque, jusqu’à ce qu’elle soit totalement mitigée.
+
+> [!warning]
+>
+> Si notre solution anti-DDoS limite une attaque, votre Network Firewall s'activera automatiquement, même si vous l'avez désactivé par défaut. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
 > 
 
 ### Configurer le pare-feu Armor (Firewall Game)

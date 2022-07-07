@@ -6,7 +6,6 @@ section: Kafka Connect - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/kafka/capabilities/'
-hidden: true
 ---
 
 **Last updated April 4<sup>th</sup>, 2022**
@@ -14,7 +13,8 @@ hidden: true
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for Kafka Connect offer.
-We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
 
@@ -39,7 +39,7 @@ Three plans are available:
 - *Business*
 - *Enterprise*
 
-Here is an overview of the various plans capabilities:
+Here is an overview of the various plans' capabilities:
 
 | Plan         | Number of nodes | Additional nodes | Network            |
 | ------------ | --------------- | ---------------- | ------------------ |

@@ -6,7 +6,7 @@ section: 'Poziom zaawansowany'
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 14-10-2021**
@@ -20,7 +20,7 @@ cPanel to panel konfiguracyjny zaprojektowany dla dostawców hostingu WWW. Skła
 ## Wymagania początkowe
 
 - [aktualne rozwiązanie VPS](https://www.ovhcloud.com/pl/vps/) (Value, Essential, Comfort lub Elite).
-- Zalogowanie do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Zalogowanie do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
@@ -75,7 +75,7 @@ Należy teraz mieć możliwość logowania się do WHM i SSH, używając użytko
 
 Zalecamy podjęcie wszelkich niezbędnych kroków w celu zabezpieczenia WHM i VPS. W tym celu zalecamy zapoznanie się z zaleceniami [cPanel tutaj](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
-Zapoznaj się również z naszym przewodnikiem dotyczącym [zabezpieczenia serwera VPS](../porady-zabezpieczenie-vps/#tworzenie-kopii-zapasowej-systemu-i-danych), korzystania z [naszych rozwiązań do tworzenia kopii zapasowych](../) oraz konfiguracji [Firewall Network](../../dedicated/network-firewall/).
+Zapoznaj się również z naszym przewodnikiem dotyczącym [zabezpieczenia serwera VPS](../porady-zabezpieczenie-vps/#tworzenie-kopii-zapasowej-systemu-i-danych), korzystania z [naszych rozwiązań do tworzenia kopii zapasowych](../) oraz konfiguracji [Network Firewall](../../dedicated/network-firewall/).
 
 ## Sprawdź również
 

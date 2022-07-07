@@ -5,7 +5,11 @@ excerpt: 'Dowiedz się, jak utworzyć wirtualny adres MAC i jak powiązać go z 
 section: 'Sieć & IP'
 ---
 
-**Ostatnia aktualizacja z dnia 16-12-2021**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 17-05-2022**
 
 ## Wprowadzenie
 
@@ -18,7 +22,7 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 
 - Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external}
 - Posiadanie [adresu IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external} lub bloku IP Failover (RIPE)
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub do [API OVHcloud](https://api.ovh.com/console/)
 - Twój serwer musi obsługiwać wirtualne adresy MAC. Zapoznaj się [z tym przewodnikiem](https://docs.ovh.com/pl/dedicated/network-support-virtual-mac/).
 
 > [!warning]
@@ -26,9 +30,14 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 >
 > Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
 
+> [!primary]
+> Jeśli nie jesteś zaznajomiony z korzystaniem z API OVHcloud, zapoznaj się z naszym przewodnikiem [Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
+
 ## W praktyce
 
 ### Przypisanie adresu MAC
+
+#### Za pośrednictwem Panelu klienta OVHcloud
 
 Po zalogowaniu się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}.
 
@@ -55,16 +64,35 @@ Po wyświetleniu okna dialogowego "Dodaj wirtualny adres MAC" wybierz typ adresu
 > Pamiętaj, aby przypisać wirtualny adres MAC podczas konfiguracji Twojej wirtualnej maszyny.
 > 
 
+#### Za pośrednictwem API OVHcloud
+
+Skorzystaj z następującego wywołania API:
+
+> [!api]
+>
+> @api {POST} /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
+
 ### Usuwanie adresu MAC
 
 > [!warning]
 >
 > Usunięcie adresu MAC jest nieodwracalne, nie jest możliwe jego późniejsze przywrócenie.
-> 
+>
+
+#### Za pośrednictwem Panelu klienta OVHcloud
 
 Aby usunąć wirtualny adres MAC powiązany z IP Failover, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}. Wybierz odpowiedni serwer, aby wyświetliły się powiązane z nim adresy IP Failover (lub blok IP).
 
 Aby zakończyć, kliknij przycisk `...`{.action} po prawej stronie, po czym kliknij `Usuń wirtualny adres MAC`{.action}.
+
+#### Za pośrednictwem API OVHcloud
+
+Skorzystaj z następującego wywołania API:
+
+> [!api]
+>
+> @api {DELETE} /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
+>
 
 ## Sprawdź również
 

@@ -19,6 +19,11 @@ O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} é uma rede privada que
 - Ter [configurado um bloco de endereços IP no vRack](https://docs.ovh.com/pt/dedicated/adicionar-ou-remover-um-bloco-ip-do-vrack/).
 - Ter conhecimentos avançados de rede.
 
+> [!warning]
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+>
+> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+
 ## Instruções
 
 ### 1 - Verificar a zona de anúncio atual

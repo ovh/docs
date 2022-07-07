@@ -13,7 +13,7 @@ Cyberduck è un software MAC che ti permette di pubblicare il tuo sito accedendo
 
 Per utilizzarlo, vai sul sito ufficiale Cyberduck: [cyberduck.io](https://cyberduck.io/)
 
-![](images/img_2344.jpg){.thumbnail}
+![cyberduck macOS](images/2344.png){.thumbnail}
 Cyberduck è un software MAC. Se utilizzi Windows, ti consigliamo di utilizzare FileZilla: []({legacy}1380)
 
 
@@ -28,7 +28,7 @@ Al primo avvio, potresti visualizzare questa finestra.
 
 
 
-![](images/img_2343.jpg){.thumbnail}
+![cyberduck macOS](images/2343.png){.thumbnail}
 Personalizza l'interfaccia di Cyberduck
 
 Rendi il tuo Cyberduck perfetto per te. 
@@ -37,7 +37,7 @@ Per effettuare le modifiche, clicca su Visuale poi su Personalizza Barra Strumen
 
 Nella finestra che compare, trascina gli elementi che vuoi aggiungere alla barra degli strumenti poi clicca su Fine per confermare.
 
-![](images/img_2345.jpg){.thumbnail}
+![cyberduck macOS](images/2345.png){.thumbnail}
 
 
 ## Connessione FTP
@@ -57,7 +57,7 @@ Per accedere al tuo spazio hosting (FTP), segui questi step:
 4. Clicca su Connessione per connetterti al tuo spazio hosting (FTP)
 
 
-![](images/img_2361.jpg){.thumbnail}
+![cyberduck macOS](images/2361.png){.thumbnail}
 
 - Puoi memorizzare la tua password su Cyberduck cliccando Aggiungi all'Accesso Portachiavi. Questa opzione è facoltativa: se non usi questa opzione dovrai reinserire la password per riconnetterti al tuo spazio hosting.
 
@@ -72,7 +72,7 @@ Un eventuale avviso ti confermerà che il server supporta connessioni cifrate (S
 
 
 
-![](images/img_2349.jpg){.thumbnail}
+![cyberduck macOS](images/2349.png){.thumbnail}
 
 - Per verificare se la tua offerta include l'accesso SSH, controlla i [dettagli delle nostre offerte](http://www.ovh.it/hosting-web/). 
 
@@ -113,7 +113,7 @@ Per connetterti al tuo hosting, segui questi step:
 5. Clicca su Collegamento per connetterti al tuo spazio hosting (FTP)
 
 
-![](images/img_2362.jpg){.thumbnail}
+![cyberduck macOS](images/2362.png){.thumbnail}
 
 - Puoi memorizzare la tua password su Cyberduck cliccando Aggiungi all'Accesso Portachiavi. Questa opzione è facoltativa: se non usi questa opzione dovrai reinserire la password per riconnetterti al tuo spazio hosting.
 
@@ -126,7 +126,7 @@ Al primo accesso al tuo spazio hosting, apparirà la finestra Questo Host è att
 
 
 
-![](images/img_2363.jpg){.thumbnail}
+![cyberduck macOS](images/2363.png){.thumbnail}
 Per conservare le informazioni di connessione, salvale tra i Preferiti. 
 
 
@@ -147,7 +147,7 @@ Con questo messaggio visualizzerai 530 Login authentification failed e, nella ma
 
 
 
-![](images/img_2352.jpg){.thumbnail}
+![cyberduck macOS](images/2352.png){.thumbnail}
 
 - Se non hai le credenziali FTP, consulta questa guida:
 [Recupera le mie credenziali FTP](http://www.ovh.it/g1374.mettre-mon-site-en-ligne#deposer_mes_fichiers_en_ftp_recuperer_mes_identifiants_ftp).
@@ -163,7 +163,7 @@ Con questo messaggio visualizzerai Timed out waiting for initial connect reply e
 
 Il problema può essere causato anche da un blocco da parte del firewall o di una rete locale delle porte 21 o 22 utilizzate per connettersi all'FTP. In questo caso verifica la tua configurazione personale.
 
-![](images/img_2353.jpg){.thumbnail}
+![cyberduck macOS](images/2353.png){.thumbnail}
 
 - Reminder: l'host di connessione per il tuo spazio hosting è ftp.tuo-dominio.tld (sostituisci con il tuo dominio) o ftp.clusterXXX.ovh.net (sostituisci XXX con il tuo numero di cluster).
 
@@ -184,7 +184,7 @@ Per farlo:
 
 
 
-![](images/img_2346.jpg){.thumbnail}
+![cyberduck macOS](images/2346.png){.thumbnail}
 Visualizzerai una nuova finestra con le tue informazioni di connessione. Al prossimo accesso a Cyberduck, clicca due volte sul segnalibro per connetterti più rapidamente.
 
 
@@ -200,7 +200,7 @@ Per spostare i tuoi file in FTP, trascina gli elementi dalla cartella locale (i 
 
 
 
-![](images/img_2354.jpg){.thumbnail}
+![cyberduck macOS](images/2354.png){.thumbnail}
 Interfaccia Transferire
 Nell'interfaccia Transferire si aprirà una finestra in cui potrai visualizzare i tuoi file. Selezionali e clicca su Transferire.
 
@@ -209,7 +209,7 @@ Nell'interfaccia Transferire si aprirà una finestra in cui potrai visualizzare 
 
 
 
-![](images/img_2355.jpg){.thumbnail}
+![cyberduck macOS](images/2355.png){.thumbnail}
 Visualizzare i trasferimenti in corso
 Visualizza la cronologia dei trasferimenti effettuati sul tuo spazio hosting. Qui troverai:
 
@@ -227,7 +227,7 @@ Questa finestra si apre in due modi:
 
 
 
-![](images/img_2356.jpg){.thumbnail}
+![cyberduck macOS](images/2356.png){.thumbnail}
 
 
 ## Operazioni possibili su un file/cartella
@@ -244,7 +244,7 @@ Selezionando un file o una cartella del tuo spazio hosting (nella finestra di Cy
 
 La lista non è completa: esistono altre azioni possibili. Se hai bisogno, consulta il sito ufficiale di Cyberduck.
 
-![](images/img_2357.jpg){.thumbnail}
+![cyberduck macOS](images/2357.png){.thumbnail}
 
 
 ## Diritti dei file o delle cartelle
@@ -268,7 +268,7 @@ Clicca su Permessi nella nuova finestra e poi esegui le modifiche desiderate.
 
 
 
-![](images/img_2358.jpg){.thumbnail}
+![cyberduck macOS](images/2358.png){.thumbnail}
 
 
 ## Sblocco del sito
@@ -282,7 +282,7 @@ Puoi usare il comando:
 
 
 
-![](images/img_2359.jpg){.thumbnail}
+![cyberduck macOS](images/2359.png){.thumbnail}
 Nella nuova finestra, inserisci il comando:
 
 
@@ -297,7 +297,7 @@ Visualizzerai il messaggio di conferma 200 Permissions changed on /.
 
 
 
-![](images/img_2360.jpg){.thumbnail}
+![cyberduck macOS](images/2360.png){.thumbnail}
 
 - Questo comando non funziona in SFTP. Per utilizzarlo usa una [connessione FTP](#utiliser_cyberduck_connexion_ftp).
 
@@ -329,5 +329,5 @@ Comparirà un riquadro sotto la finestra di Cyberduck, quindi:
 
 
 
-![](images/img_2364.jpg){.thumbnail}
+![cyberduck macOS](images/2364.png){.thumbnail}
 

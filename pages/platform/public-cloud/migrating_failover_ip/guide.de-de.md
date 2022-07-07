@@ -32,11 +32,11 @@ IP-Adressen migrieren zu können bedeutet, die Möglichkeit eines Dienstausfalls
 
 Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken im linken Menü auf `Failover IP`{.action} unter **Network**.
 
-In diesem Beispiel soll die auf “Instance_A“ geroutete Failover-IP zu “Instance_B“ migriert werden.
+In diesem Beispiel soll die auf “Instance_A” geroutete Failover-IP zu “Instance_B” migriert werden.
 
 ![](images/failover2022.png){.thumbnail}
 
-Klicken Sie auf `...`{.action} neben der Failover-IP und dann auf „Verbundene Instanz bearbeiten“.
+Klicken Sie auf `...`{.action} neben der Failover-IP und dann auf “Verbundene Instanz bearbeiten”.
 
 ![](images/modify1.2022.png){.thumbnail}
 

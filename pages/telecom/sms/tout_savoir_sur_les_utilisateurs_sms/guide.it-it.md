@@ -123,7 +123,7 @@ Per ottenere la descrizione di un codice ptt specifico, utilizza questa API:
 > @api {GET} /sms/ptts
 >
 
-Per maggiori informazioni sull'utilizzo delle API OVHcloud, consulta la nostra guida [Iniziare a utilizzare le API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN).
+Per maggiori informazioni sull'utilizzo delle API OVHcloud, consulta la nostra guida [Iniziare a utilizzare le API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/).
 
 Nella tabella seguente è riportato un elenco non esaustivo dei codici ptt principali.
 

@@ -13,7 +13,7 @@ order: 8
 
 ## Objective
 
-VMWare offers the ability to take snapshots so you can save and possibly go back to a VM's previous state.
+VMware offers the ability to take snapshots so you can save and possibly go back to a VM's previous state.
 
 **This guide explains how to execute these tasks**
 

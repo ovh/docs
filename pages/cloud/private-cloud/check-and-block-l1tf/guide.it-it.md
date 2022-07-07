@@ -38,7 +38,7 @@ La vulnerabilità L1TF si presenta in tre varianti:
 > L1 Terminal Fault - SGX (CVE-2018-3615) [non colpisce gli hypervisor VMware](https://kb.vmware.com/s/article/55807): [https://kb.vmware.com/s/article/54913](https://kb.vmware.com/s/article/55807).
 > 
 
-Relativamente al servizio **Private Cloud OVH**, le soluzioni SDDC sono le uniche che potrebbero essere affette da questa vulnerabilità.
+Relativamente al servizio **Private Cloud**, le soluzioni SDDC sono le uniche che potrebbero essere affette da questa vulnerabilità.
 
 Per maggiori informazioni sul bug di sicurezza L1TF, leggi [questo articolo](https://www.ovh.com/world/news/articles/al479.ovh-l1-terminal-fault-l1tf-foreshadow-disclosure){.external-link}.
 
@@ -52,7 +52,7 @@ Il processo di mitigazione, descritto in [questo articolo](https://kb.vmware.com
 
 ### 1. Aggiornamento
 
-OVH si occupa dell’aggiornamento del vCenter, ma l’applicazione del software correttivo sugli host ESXi è di responsabilità dell’utente. La patch è disponibile nell’[Update Manager](https://docs.ovh.com/it/private-cloud/usare_vmware_update_manager/){.external-link}.
+OVHcloud si occupa dell’aggiornamento del vCenter, ma l’applicazione del software correttivo sugli host ESXi è di responsabilità dell’utente. La patch è disponibile nell’[Update Manager](https://docs.ovh.com/it/private-cloud/usare_vmware_update_manager/){.external-link}.
 
 Per visualizzare la lista completa delle patch rilasciate per gli host ESXi, consulta le [raccomandazioni sulla sicurezza di VMware](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 
@@ -83,7 +83,7 @@ Per maggiori informazioni, consulta il punto 3 del paragrafo “Resolution” di
 > Se, dopo le opportune valutazioni, decidi di mantenere attivo l’Hyper-Threading, è possibile eliminare il messaggio di alert seguendo i passaggi descritti in [questo articolo](https://kb.vmware.com/s/article/57374){.external-link}.
 > 
 > ![](images/deleteWarning.png){.thumbnail}
-> OVH sconsiglia una soluzione di questo tipo e non potrà in nessun modo essere ritenuta responsabile delle eventuali conseguenze di questa scelta. 
+> OVHcloud sconsiglia una soluzione di questo tipo e non potrà in nessun modo essere ritenuta responsabile delle eventuali conseguenze di questa scelta. 
 >
 
 ## Per saperne di più

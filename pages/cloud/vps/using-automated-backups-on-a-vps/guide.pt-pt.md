@@ -31,7 +31,8 @@ Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e
 
 ## Instruções
 
-Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), navegue até à seção "Bare Metal Cloud" e selecione o seu servidor na barra situada à esquerda dentro do separador `Servidores privados virtuais`{.action}.
+
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 ### Passo 1: Subscrever a opção Backups automáticos
 

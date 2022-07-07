@@ -6,34 +6,38 @@ section: Tutorial
 order: 1
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 04/05/2022**
+
 ## Introduzione
 
 [Ghost](https://ghost.org/){.external} è una piattaforma di blogging open source sviluppata per semplificare il processo di pubblicazione di contenuti online da parte di blogger e giornalisti. Scritto in JavaScript, questo programma utilizza [Node.js](https://nodejs.org/){.external}, un framework che consente di creare siti e API in JavaScript lato server.
 
-Gli [hosting Cloud Web OVH](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/){.external} permettono di utilizzare Node.js come motore di esecuzione per i siti Web consentendo quindi l’installazione e l’hosting di Ghost o qualsiasi altra applicazione sviluppata per Node.js.
+Gli [hosting Cloud Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/){.external} permettono di utilizzare Node.js come motore di esecuzione per i siti Web consentendo quindi l’installazione e l’hosting di Ghost o qualsiasi altra applicazione sviluppata per Node.js.
 
-**Questo tutorial ti mostra come utilizzare Ghost per creare un blog su un hosting Cloud Web OVH e pubblicarlo con il tuo dominio.**
+**Questo tutorial ti mostra come utilizzare Ghost per creare un blog su un hosting Cloud Web OVHcloud e pubblicarlo con il tuo dominio.**
 
 ## Prerequisiti
-
-### Competenze necessarie
-
-- Conoscenze di base dell’ecosistema Node.js
-- Saper effettuare un accesso via SSH
-- Saper modificare un file da riga di comando utilizzando editor come Vim, Emacs o Nano
 
 ### Hardware e software necessari
 
 - Disporre di un [hosting Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/){.external} attivo
 - Aver impostato Node.js come motore di esecuzione
 - Aver aggiunto il dominio in questione come multisito e definito Node.js come motore di esecuzione associato
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
+- Competenze necessarie:
+    - Conoscenze di base dell’ecosistema Node.js
+    - Saper effettuare un accesso via SSH
+    - Saper modificare un file da riga di comando utilizzando editor come Vim, Emacs o Nano
 
 ## Procedura
 
 ### Step 1: attiva Node.js come motore di esecuzione
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio Cloud Web nella sezione `Hosting`{.action} nel menu a sinistra  e clicca sulla scheda `Programma di esecuzione`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio Cloud Web nella sezione `Hosting`{.action} nel menu a sinistra  e clicca sulla scheda `Programma di esecuzione`{.action}.
 
 Visualizzi una tabella con tutti i motori di esecuzione aggiunti alla tua soluzione: assicurati che Node.js sia attivo. Se il motore risulta abilitato passa direttamente allo [Step 2: associa Node.js a un multisito](./#step-2-associa-nodejs-a-un-multisito).
 
@@ -98,7 +102,7 @@ Apri la scheda `Database`{.action} (se non è visibile, clicca sull’icona con 
 
 ![ghostcloudweb](images/ghost-cloud-web-step5.png){.thumbnail}
 
-Nella nuova finestra scegli l’opzione “MySQL” e la versione del database da aggiungere (in questo tutorial utilizzeremo la “5.6”). Seleziona “Archiviata nella tua istanza Cloud Web” e clicca su `Seguente`{.action}.
+Nella nuova finestra, è disponibile solo "MySQL", in versione "5.6".. Seleziona “Archiviata nella tua istanza Cloud Web” e clicca su `Seguente`{.action}.
 
 Indica il nome utente e la password associata e clicca su `Seguente`{.action}. Conferma e attendi alcuni minuti fino al completamento dell’operazione.
 
@@ -125,7 +129,6 @@ Nella nuova finestra, completa i campi con i valori corrispondenti al tuo caso s
 |server__port|integer|80|
 |server__host|string|0.0.0.0|
 
-![ghostcloudweb](images/ghost-cloud-web-step8.png){.thumbnail}
 
 ### Step 5: accedi all’hosting Cloud Web via SSH
 
@@ -246,7 +249,7 @@ A questo punto l’installazione e la configurazione di Ghost sono completate e 
 
 ### Step 7: riavvia il daemon Node.js
 
-Per riavviare il daemon Node.js, torna allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Apri la scheda `Multisito`{.action}, clicca sull’icona a forma di ingranaggio in corrispondenza del tuo dominio e seleziona `Riavvia`{.action}.
+Per riavviare il daemon Node.js, torna allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Apri la scheda `Multisito`{.action}, clicca sul pulsante `...`{.action} a destra in corrispondenza del tuo dominio e seleziona `Riavvia`{.action}.
 
 L’applicazione sarà accessibile dal dominio scelto durante la configurazione del multisito. 
 
@@ -263,4 +266,16 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 ## Conclusione
 
-In questo tutorial abbiamo descritto gli step necessari per l’installazione di un’applicazione Node.js su un hosting Cloud Web OVH. A questo punto, puoi utilizzare Ghost e pubblicarvi i tuoi primi contenuti!
+In questo tutorial abbiamo descritto gli step necessari per l’installazione di un’applicazione Node.js su un hosting Cloud Web OVHcloud. A questo punto, puoi utilizzare Ghost e pubblicarvi i tuoi primi contenuti!
+
+## Per saperne di più
+
+[Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external} (in inglese)
+
+[Pubblicare un sito Web](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} (in inglese)
+
+[Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+
+[Ospitare più siti su uno stesso hosting](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external} (in inglese)
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>

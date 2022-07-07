@@ -105,7 +105,7 @@ Jeśli jeden z kontaktów nie otrzymał e-maila, może to na przykład oznaczać
 
 Jeśli tylko jeden kontakt zatwierdzi zmianę, pojawi się komunikat informujący, że wniosek wciąż oczekuje na zatwierdzenie przez drugi kontakt. Gdy jeden z kontaktów zatwierdzi wniosek, informacje wyświetlane w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} zaktualizują się w ciągu kilku minut.
 
-![Contact management](images/managing_contacts_07.png){.thumbnail}
+![Contact management](images/managing_contacts_007.png){.thumbnail}
 
 Zmiana kontaktu zostanie wykonana w ciągu kilku minut od zatwierdzenia przez oba kontakty wniosku. Następnie otrzymają e-mail informujący ich o pomyślnym rozpatrzeniu wniosku.
 

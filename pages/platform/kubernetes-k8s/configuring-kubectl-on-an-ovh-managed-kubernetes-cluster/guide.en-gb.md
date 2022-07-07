@@ -1,23 +1,46 @@
 ---
 title: Configuring kubectl on an OVHcloud Managed Kubernetes cluster
 slug: configuring-kubectl
-excerpt: Find out how to recover the `kubectl` configuration file to interact with an OVHcloud Managed Kubernetes cluster.
+excerpt: Find out how to retrieve the `kubectl` configuration file to interact with an OVHcloud Managed Kubernetes cluster.
 section: User guides
 order: 0
 ---
 
-**Last updated 23<sup>rd</sup> March, 2022.**
+**Last updated 27<sup>th</sup> April, 2022.**
 
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
 
 ## Objective
 
-The OVHcloud Managed Kubernetes service provides you with access to Kubernetes clusters, without the hassle of installing or operating them. 
+The OVHcloud Managed Kubernetes service gives you access to Kubernetes clusters, without the hassle of installing or operating them. 
 
-This guide will cover how to recover the `kubectl` configuration file to interact with an OVHcloud Managed Kubernetes cluster.
+This guide will cover how to retrieve the `kubectl` configuration file to interact with an OVHcloud Managed Kubernetes cluster.
 
 
 ## Requirements
 
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - You must have an OVHcloud Managed Kubernetes cluster.
 - You must have the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed.
 
@@ -29,26 +52,34 @@ You can find the detailed installation instructions for `kubectl` in Kubernetes'
 
 ### Step 1 - Configure the default settings for kubectl
 
-First, log in to the OVH Control Panel, open the 'Public Cloud' top tab, and click on the 'Managed Kubernetes Service' link under 'Containers & Orchestration' menu:
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
-Then, choose one of your Kubernetes cluster in the tab.
+Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
+
+Then, click on one of your Kubernetes cluster in the tab.
 
 ![Configuring default settings for kubectl](images/kubernetes-quickstart-01.png){.thumbnail}
 
-Then, download the `kubectl` configuration file:
+Then, click on `kubeconfig`{.action} to download the `kubectl` configuration file:
 
 ![Configuring default settings for kubectl](images/kubernetes-quickstart-02.png){.thumbnail}
 
-If you want to use this configuration file by default in `kubectl`, you can save it with the filename `config` in the `$HOME/.kube` directory. Alternatively, you can place it in your working directory, with either the `KUBECONFIG` environment variable or the `--kubeconfig` flag. 
+How kubeconfig files are loaded?
 
-In this example, we are using the environment variable method.
+- 1. from the `--kubeconfig`{.action} flag, is specified
+- 2. from the `KUBECONFIG` environment variable, if set
+- 3. from the `$HOME/.kube/config` file, by default
+
+So, after downloading it, if you want to use this configuration file by default in `kubectl`, you can save it with the filename `config` in the `$HOME/.kube/` directory. Alternatively, you can place it in your working directory, with either the `KUBECONFIG` environment variable or the `--kubeconfig` flag. 
+
+In this example, we are using the `KUBECONFIG` environment variable method.
 
 #### For MacOS or Linux:
 
 Type the following command into your terminal:
 
 ```
-export KUBECONFIG=./kube-config
+export KUBECONFIG=/Users/myuser/.kube/my-test-cluster.yml
 ```
 
 #### For Windows 7, 10 and 11 : 
@@ -62,7 +93,7 @@ export KUBECONFIG=./kube-config
 You can also add the variable for the current shell process with this command :
 
 ```
-set KUBECONFIG=kube-config
+set KUBECONFIG=my-test-cluster.yml
 ```
 
 
@@ -77,17 +108,34 @@ kubectl cluster-info
 
 The cluster should return a response with some key information about itself:
 
+<pre class="console"><code>$ kubectl cluster-info
+Kubernetes control plane is running at https://xxxxxx.c2.gra.k8s.ovh.net
+CoreDNS is running at https://xxxxxx.c2.gra.k8s.ovh.net/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+Metrics-server is running at https://xxxxxx.c2.gra.k8s.ovh.net/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+</code></pre>
+
+### Define the access for several Kubernetes clusters
+
+You can also specify several kubeconfig files in your `KUBECONFIG` environment variable, separated by a colon (`:`).
+
 ```
-kubectl cluster-info
-Kubernetes master is running at https://******.c1.gra.k8s.ovh.net
-KubeDNS is running at https://******.c1.gra.k8s.ovh.net/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+export KUBECONFIG=/Users/myuser/.kube/my-test-cluster.yml:/Users/myuser/.kube/my-test-cluster2.yml
 ```
 
-To further debug and diagnose cluster problems, use: 
+### Switch to a different cluster
 
-```
-kubectl cluster-info dump
-```
+You can switch between different clusters by using the `kubectl config`{.action} command.
+
+<pre class="console"><code>$ kubectl config use-context kubernetes-admin@my-test-cluster
+Switched to context "kubernetes-admin@my-test-cluster".
+
+$ kubectl config use-context kubernetes-admin@my-test-cluster2
+Switched to context "kubernetes-admin@my-test-cluster2".
+</code></pre>
+
+Or you can install and use [kubectx](https://github.com/ahmetb/kubectx).
 
 ## Go further
 

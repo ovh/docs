@@ -6,10 +6,10 @@ section: 'Diagnostyka i tryb Rescue'
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 01-04-2022**
+**Ostatnia aktualizacja z dnia 02-05-2022**
 
 ## Wprowadzenie
 
@@ -45,10 +45,10 @@ Wyszukaj "Boot" w sekcji **Informacje ogólne** i kliknij `...`{.action} a nast�
 
 ![Zmień tryb uruchamiania](images/rescue-mode-001.png){.thumbnail}
 
-Na następnym ekranie wybierz **Uruchom w trybie diagnostycznym (Rescue)**. Jeśli Twój serwer posiada system operacyjny Linux, na rozwijanej liście wybierz `rescue64-pro`{.action}. Jeśli Twój serwer znajduje się w systemie Windows, wybierz `WinRescue`{.action} (patrz [sekcja przewodnika poniżej](#windowsrescue)). Określ inny adres e-mail, jeśli nie chcesz, aby dane do logowania zostały wysłane na główny adres Twojego konta OVHcloud.
+Na następnym ekranie wybierz **Uruchom w trybie diagnostycznym (Rescue)**. Jeśli Twój serwer posiada system operacyjny Linux, na rozwijanej liście wybierz `rescue-customer`{.action}. Jeśli Twój serwer znajduje się w systemie Windows, wybierz `WinRescue`{.action} (patrz [sekcja przewodnika poniżej](#windowsrescue)). Określ inny adres e-mail, jeśli nie chcesz, aby dane do logowania zostały wysłane na główny adres Twojego konta OVHcloud.
 <br>Kliknij `Dalej`{.action} i `Zatwierdź`{.action}.
 
-![Tryb Rescue-Pro](images/rescue-mode-003.png){.thumbnail}
+![Tryb rescue-customer](images/rescue-mode-08.png){.thumbnail}
 
 Po zakończeniu modyfikacji kliknij `...`{.action} po prawej stronie "Status" w strefie zatytułowanej **Status usług**.
 <br>Kliknij `Restart`{.action}, a serwer zrestartuje się w trybie rescue. Operacja ta może zająć kilka minut.
@@ -92,7 +92,7 @@ Większość modyfikacji wprowadzonych na Twoim serwerze przez SSH w trybie Resc
 Partycje montowane są za pomocą komendy `mount` przez SSH. Wyświetl listę partycji, aby odnaleźć tę, którą chcesz zamontować. Możesz użyć przykładowych poleceń:
 
 ```bash
-rescue:~# fdisk -l
+rescue-customer:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -114,7 +114,7 @@ Device Boot Start End Blocks Id System
 Po odnalezieniu partycji, którą chcesz zamontować, zastosuj poniższe polecenie:
 
 ```bash
-rescue:~# mount /dev/hda1 /mnt/
+rescue-customer:~# mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -131,40 +131,22 @@ Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruch
 Możesz zamontować datastore VMware w sposób opisany powyżej. Po pierwsze, zainstaluj niezbędny pakiet:
 
 ```bash
-rescue:~# apt-get update && apt-get install vmfs-tools
+rescue-customer:~# apt-get update && apt-get install vmfs-tools
 ```
 
 Następnie przełącz partycje, aby pobrać nazwę partycji datastore:
 
 ```bash
-rescue:~# fdisk -l
+rescue-customer:~# fdisk -l
 ```
 
 Teraz zamontuj partycję za pomocą następującego polecenia, zastępując `sdbX` wartością zidentyfikowaną na poprzednim etapie:
 
 ```bash
-rescue:~# vmfs-fuse /dev/sdbX /mnt
+rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
 Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.
-
-### Korzystanie z interfejsu sieciowego trybu zapasowego ("rescue64-pro")
-
-Po ponownym uruchomieniu serwera możesz uzyskać dostęp do interfejsu www poprzez wstawienie `your_server_IP:81` na pasku adresowym przeglądarki. Korzystając z protokołu https, użyj portu *444* zamiast tego. Na przykład:
-
-```
-https://169.254.10.20:444
-```
-
-Jeśli posiadasz już bezpieczne dane, możesz skorzystać z interfejsu www do trybu odzyskiwania danych, aby przetestować następujące komponenty.
-
-- **Test dysku**: Sprawdź ich integralność za pomocą SMART.
-- **Procesory**: Sprawdź, czy procesor działa prawidłowo. (Operacja ta może zająć trochę czasu.)
-- **Partycje**: Sprawdź stan czytników.
-- **Pamięć**: Sprawdź pamięć RAM zainstalowaną na serwerze. (Operacja ta może zająć trochę czasu.)
-- **Sieć**: Sprawdź połączenie z wewnętrznym systemem OVHcloud i połączenie z przeglądarką.
-
-![Interfejs www dla trybu awaryjnego](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 
@@ -188,7 +170,7 @@ W trybie tym zainstalowane są już następujące narzędzia:
 |SilverSHielD|Serwer SSH2 i SFTP.|
 |System Recovery|System Windows do przywracania i rozwiązywania problemów systemu.|
 |TestDisk|Wydajna aplikacja do odzyskiwania danych.  Umożliwia odzyskiwanie i modyfikację uszkodzonych partycji, odnajdowanie zgubionych partycji, naprawę sektora rozruchowego, a nawet odbudowę uszkodzonego MBR. |
-|FileZilla|Open source’owy klient FTP  Obsługuje protokoły SSH i SSL, posiada przejrzysty i intuicyjny interfejs typu „przeciągnij i upuść”. Może być używany do przesyłania danych na serwer FTP, na przykład kopii zapasowej FTP dostarczanej z większością modeli serwerów OVHcloud.|
+|FileZilla|Open source’owy klient FTP  Obsługuje protokoły SSH i SSL, posiada przejrzysty i intuicyjny interfejs typu “przeciągnij i upuść”. Może być używany do przesyłania danych na serwer FTP, na przykład kopii zapasowej FTP dostarczanej z większością modeli serwerów OVHcloud.|
 |7-ZIP|Narzędzie do kompresji i archiwizacji plików czytające następujące formaty: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR oraz Z. Umożliwia również tworzenie Twoich własnych archiwów w następujących formatach: BZIP2, GZIP, TAR, WIM, XZ, Z oraz ZIP.|
 
 ## Sprawdź również

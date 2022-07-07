@@ -127,7 +127,7 @@ Die Einstellungen finden Sie auf [dieser Seite](https://docs.vmware.com/de/VMwar
 
 ### HA-Regel
 
-Im Bereich `Konfiguration` im Tab `VM/Host-Regeln` können Sie eine Regel des Typs „Virtuelle Maschinen zu virtuelle Maschinen“ erstellen.
+Im Bereich `Konfiguration` im Tab `VM/Host-Regeln` können Sie eine Regel des Typs “Virtuelle Maschinen zu virtuelle Maschinen” erstellen.
 
 Diese fügt eine Neustartbedingung hinzu, um sicherzustellen, dass alle virtuellen Maschinen einer ersten Gruppe vor den VMs einer zweiten Gruppe gestartet werden.
 

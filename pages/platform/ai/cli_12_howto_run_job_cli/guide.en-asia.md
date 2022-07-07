@@ -124,7 +124,7 @@ The volume description sets the option for the volume and synchronisation proces
 - `region` the Object Storage region on which the container is located
 - `prefix` objects in the container are filtered on the base of this prefix, only matching objects are synced
 - `mount_path` the location in the job where the synced data is mounted
-- `permission` the permission rights on the mounted data. Available rights are **read only (ro)** or **read write (rw)**. Data mounted with **ro** permission is not synced back at the end of the job. Thus it avoids unnecessary synchronization delay on static data.
+- `permission` the permission rights on the mounted data. Available rights are **read only (ro)**, **read write (rw)** or **read write delete (rwd)**. Data mounted with **ro** permission is not synced back at the end of the job. Thus it avoids unnecessary synchronization delay on static data.
 - `cache` whether the synced data should be added to the project cache. Available options are either `cache` or `no-cache`. Data in the cache can be used by other jobs without additional synchronisation, to benefit from the cache the new jobs also need to mount the data with the cache option.
 
 Let's assume you have a team of datascientists working on the same input dataset but running each their own experiment.

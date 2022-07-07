@@ -65,7 +65,7 @@ La réponse de l'api vous indiquera "null". Cette réponse est tout à fait norm
 
 Dès lors que vous n'avez plus besoin de SSLv3, afin de garantir la sécurité de votre infrastructure Private Cloud, nous vous recommandons de désactiver cette option en suivant la procédure suivante.
 
-Vous devez tout d'abord vous rendre sur l'API ovh.com : [http://api.ovh.com](http://api.ovh.com/){.external-link} et vous connecter à l'aide de votre identifiant client ([guide sur l'utilisation de l'API](https://docs.ovh.com/fr/api/api-premiers-pas/))
+Vous devez tout d'abord vous rendre sur l'API ovh.com : [http://api.ovh.com](http://api.ovh.com/){.external-link} et vous connecter à l'aide de votre identifiant client ([guide sur l'utilisation de l'API](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/))
 
 Dans la section /dedicatedCloud, repérez l'appel `PUT /dedicatedCloud/{serviceName}`
 

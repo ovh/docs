@@ -1,7 +1,7 @@
 ---
 title: Eine neue Windows Server Installation konfigurieren
 slug: windows-first-config
-excerpt: Hier erfahren Sie, wie Sie die Remotedesktop-Verbindung und die ICMP Antwort aktivieren.
+excerpt: Erfahren Sie hier, wie Sie Remote-Desktop-Verbindung, ICMP Antwort und Bootlogs aktivieren
 section: Erste Schritte
 ---
 
@@ -9,13 +9,13 @@ section: Erste Schritte
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 16.02.2021**
+**Letzte Aktualisierung am 06.05.2022**
 
 ## Ziel
 
-Nach der Neuinstallation eines Windows Server Betriebssystems auf einem VPS können der Fernzugriff und die ICMP-Antwort (Internet Control Message Protocol) manchmal deaktiviert werden.
+Nach der Neuinstallation eines Windows Server Betriebssystems auf einem VPS können der Remote-Zugriff und die ICMP-Antwort (Internet Control Message Protocol) deaktiviert sein. Mit OVHcloud KVM können Sie jedoch auf Ihren VPS zugreifen und die Windows Firewall-Anwendung so konfigurieren, dass ICMP aktiviert wird und Verbindungen über das Remote Desktop Protocol (RDP) wieder möglich sind.<br>Die Aktivierung von Windows-Startprotokollen kann bei der Serverfehlerdiagnose hilfreich sein.
 
-**In dieser Anleitung erfahren Sie, wie Sie Windows konfigurieren, um ICMP wieder zu aktivieren und Verbindungen über das Remote Desktop Protocol zu erlauben.**
+**Diese Anleitung erklärt, wie Sie ICMP, RDP und Bootlogs auf einem Windows VPS aktivieren.**
 
 ## Voraussetzungen
 
@@ -26,7 +26,7 @@ Nach der Neuinstallation eines Windows Server Betriebssystems auf einem VPS kön
 
 ### Schritt 1: KVM Zugang
 
-Um auf die KVM-Konsole Ihres VPS zuzugreifen, folgen Sie dieser [Anleitung](../verwendung_von_kvm_fur_vps/).
+Um auf die KVM-Konsole Ihres VPS zuzugreifen, folgen Sie [unserer Anleitung](../verwendung_von_kvm_fur_vps/).
 
 ### Schritt 2: Die Installation von Windows abschließen
 
@@ -48,7 +48,7 @@ Geben Sie das Passwort ein, das Sie für Ihren Administrator-Account erstellt ha
 
 Damit ist die Erstkonfiguration abgeschlossen. Sobald Sie eingeloggt sind, ändern Sie die notwendigen Einstellungen der Windows Firewall.
 
-### Schritt 3: Windows Firewall ändern
+### Schritt 3: Windows Firewall bearbeiten
 
 Öffnen Sie die `Verwaltungstools`{.action} des Konfigurationspanel `System und Sicherheit`{.action} und klicken Sie auf `Windows Firewall mit erweiterter Sicherheit`{.action}.
 
@@ -60,6 +60,24 @@ Hier können Sie jeweils die Eingangsregeln für `ICMP` und `Remote Desktop` akt
 
 Ihr Server sollte nun auf Anfragen antworten, die diese Protokolle verwenden.
 
+### Windows Bootlogs aktivieren (optional)
+
+Loggen Sie sich via Remote-Desktop-Verbindung oder [KVM](../verwendung_von_kvm_fur_vps/) auf dem Server ein. Öffnen Sie das Windows Startmenü und klicken Sie auf `Run`{.action}.
+
+![Bootlog](images/windowsboot1.png){.thumbnail}
+
+Geben Sie "msconfig" ein und klicken Sie auf `OK`{.action}.
+
+![Bootlog](images/windowsboot2.png){.thumbnail}
+
+Aktivieren Sie im neuen Fenster die Option `Boot log`. Klicken Sie auf `OK`{.action}.
+
+![Bootlog](images/windowsboot3.png){.thumbnail}
+
+Bein nächsten Hochfahren des Servers werden die Logs in eine TXT-Datei geschrieben. Der Dateipfad lautet ```C:\Windows\ntbtlog.txt```.
+
+Um die in der Datei gespeicherten Protokolle im Rescue-Modus einzusehen, folgen Sie der [Anleitung zum Rescue-Modus für VPS](../rescue/). 
+
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

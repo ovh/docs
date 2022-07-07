@@ -8,7 +8,7 @@ section: Tutoriels
 
 ## Objectif
 
-Vmware View vous permet d'accéder à un bureau virtuel à n'importe quel moment de la journée, quel que soit l'endroit où vous vous trouvez. Le challenge est de vous permettre d'y accéder de manière sécurisée grâce aux points d'accès, mais aussi en ajoutant une double authentification.
+VMware View vous permet d'accéder à un bureau virtuel à n'importe quel moment de la journée, quel que soit l'endroit où vous vous trouvez. Le challenge est de vous permettre d'y accéder de manière sécurisée grâce aux points d'accès, mais aussi en ajoutant une double authentification.
 
 **Ce guide va vous expliquer comment l'activer.**
 
@@ -28,7 +28,7 @@ Une fois la mise en place d'un serveur d'authentification de votre côté effect
 Le serveur Radius a été créé dans un réseau privé.
 
 Si vous souhaitez utiliser ce Radius sur un pool public, il est nécessaire d'ajouter le réseau privé, si ce n'est pas déjà fait. Pour cela référez-vous au guide sur l'[ajout d'un réseau privé](https://docs.ovh.com/fr/cloud-desktop-infrastructure/allow-virtual-desktop/).
- 
+
 ### Étape 2 : réaliser le call dans l'APIv6 et dans l'espace client
 
 Une fois le serveur d'authentification mis en place côté client, il est nécessaire de renseigner les points suivants dans le call :

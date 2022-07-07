@@ -6,7 +6,7 @@ section: Funzionalità OVHcloud
 order: 05
 ---
 
-**Ultimo aggiornamento: 30/06/2020**
+**Ultimo aggiornamento: 10/06/2022**
 
 ## Obiettivo
 
@@ -33,7 +33,7 @@ Per attivare il metodo di autenticazione a due fattori è necessario accedere al
 
 Una volta connesso all’interfaccia di gestione, clicca su `Change Password`{.action}
 
-![Change password](images/selectChangePassword.jpg){.thumbnail}
+![Change password](images/selectChangePassword.png){.thumbnail}
 
 Nella nuova pagina:
 	
@@ -42,7 +42,7 @@ Nella nuova pagina:
 * esegui la scansione del codice QR dal tuo smartphone con l’applicazione di autenticazione scelta
 * conferma il codice ottenuto
 
-![Scansione codice QR](images/scanQRcode.jpg){.thumbnail}
+![Scansione codice QR](images/scanQRcode.png){.thumbnail}
 
 A questo punto verrà creato un task e riceverai un token.
 
@@ -57,7 +57,7 @@ Accedi alla sezione `Operation validation`{.action}, identifica l’operazione r
 
 Accedi al client *Web* con il link abituale utilizzato per connetterti a questa pagina:
 
-![Connessione 2FA](images/2FAtoken.jpg){.thumbnail}
+![Connessione 2FA](images/2FAtoken.png){.thumbnail}
 
 A questo punto, prima di poter digitare la password, è necessario inserire il token generato dall’applicazione di autenticazione installata sullo smartphone.
 

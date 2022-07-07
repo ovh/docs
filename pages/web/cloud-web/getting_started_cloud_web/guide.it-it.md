@@ -5,11 +5,15 @@ excerpt: Come eseguire le prime operazioni su un Cloud Web
 section: Per iniziare
 ---
 
-**Ultimo aggiornamento: 11/07/2018**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 04/05/2022**
 
 ## Obiettivo
 
-La nuova soluzione di hosting Cloud Web combina i nostri 20 anni di esperienza nel settore Web e la potenza del nostro Public Cloud. Esattamente come per i classici hosting Web di OVH, i tuoi siti sono ospitati su un servizio gestito 24 ore su 24, 7 giorni su 7, offrendoti però molte più funzionalità, come le performance dei dischi SSD.
+La nuova soluzione di hosting Cloud Web combina i nostri 20 anni di esperienza nel settore Web e la potenza del nostro Public Cloud. Esattamente come per i classici hosting Web di OVHcloud, i tuoi siti sono ospitati su un servizio gestito 24 ore su 24, 7 giorni su 7, offrendoti però molte più funzionalità, come le performance dei dischi SSD.
 
 **Come eseguire le prime operazioni su un hosting Cloud Web**
 
@@ -18,7 +22,7 @@ La nuova soluzione di hosting Cloud Web combina i nostri 20 anni di esperienza n
 - Disporre di un piano di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Cloud Web
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/) attivo, che corrisponderà all’indirizzo del tuo sito
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -38,9 +42,14 @@ Dopo aver valutato le diverse possibilità tra cui scegliere, puoi iniziare a me
 
 Cloud Web mette a tua disposizione diversi linguaggi di programmazione per consentirti di costruire il tuo progetto. Se vuoi utilizzare un linguaggio di programmazione diverso da PHP (opzione predefinita), è necessario selezionare un “programma d’esecuzione” corrispondente al tuo linguaggio.
 
-I linguaggi di programmazione disponibili sono PHP e Node.js.
+I linguaggi di programmazione disponibili sono:
 
-Per accedere al programma d’esecuzione del tuo hosting Cloud Web, effettua l’accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosting`{.action} nella barra dei servizi a sinistra e scegli il nome del tuo Cloud Web. Infine, posizionati sulla scheda `Programma d’esecuzione`{.action}.
+- PHP
+- Node.js
+- Python
+- Ruby
+
+Per accedere al programma d’esecuzione del tuo hosting Cloud Web, effettua l’accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosting`{.action} nella barra dei servizi a sinistra e scegli il nome del tuo Cloud Web. Infine, posizionati sulla scheda `Programma d’esecuzione`{.action}.
 
 Nel momento in cui installi il tuo hosting, un programma viene utilizzato automaticamente e inserito come `Opzione predefinita`. Per modificare il programma d’esecuzione già configurato, clicca sui 3 puntini a destra, poi su `Modifica`{.action}. 
 
@@ -88,7 +97,7 @@ Ricorda di sostituire l’informazione generica presente in questi script “DB_
 
 Adesso che l’ambiente tecnico del tuo hosting Cloud Web è pronto, puoi configurare domini aggiuntivi come Multisito. Questo ti permette di condividere il tuo spazio al fine di ospitare più siti Internet, ad esempio. Se questo è il tuo caso, sempre dopo aver cliccato sul tuo Cloud Web, clicca sulla scheda `Multisito`{.action}.
 
-La tabella che appare contiene quindi tutti domini che hai aggiunto al tuo hosting. Alcuni sono stati creati automaticamente durante l’installazione del tuo hosting. Per aggiungerne un altro, clicca su `Aggiungi un dominio o un sottodominio`{.action} e segui le indicazioni. L’operazione può essere diversa se il dominio è registrato con OVH o meno. 
+La tabella che appare contiene quindi tutti domini che hai aggiunto al tuo hosting. Alcuni sono stati creati automaticamente durante l’installazione del tuo hosting. Per aggiungerne un altro, clicca su `Aggiungi un dominio o un sottodominio`{.action} e segui le indicazioni. L’operazione può essere diversa se il dominio è registrato con OVHcloud o meno. 
 
 Ti consigliamo di fare molta attenzione nell’inserire queste informazioni:
 
@@ -98,7 +107,7 @@ Ti consigliamo di fare molta attenzione nell’inserire queste informazioni:
 
 > [!warning]
 >
-> Se hai aggiunto un dominio esterno, è necessario configurare un record TXT denominato **ovhcontrol** sulla configurazione DNS, Questo consente a OVH di assicurarsi che si tratti di un’operazione valida e pertanto, se non viene realizzata, l’aggiunta del dominio viene annullata. 
+> Se hai aggiunto un dominio esterno, è necessario configurare un record TXT denominato **ovhcontrol** sulla configurazione DNS, Questo consente a OVHcloud di assicurarsi che si tratti di un’operazione valida e pertanto, se non viene realizzata, l’aggiunta del dominio viene annullata. 
 >
 
 Ripeti questa operazione per ciascun dominio che vuoi aggiungere al tuo Cloud Web. Per ottenere maggiori informazioni sull’aggiunta di un dominio come Multisito, consulta la seguente guida (in inglese): [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.
@@ -111,11 +120,11 @@ Per realizzare l’installazione del tuo progetto ci sono due possibilità. Ripe
 
 #### 5.1. Utilizza i nostri moduli in 1 click
 
-Questa soluzione ti permette di usufruire di un CMS pronto all’uso e personalizzabile (tema, contenuti, ecc...). OVH propone 4 moduli in 1 click che permettono di installare un CMS in modo semplice e veloce. Per saperne di più accedi alla pagina [Crea il tuo sito con i moduli in 1 click](https://www.ovhcloud.com/it/web-hosting/uc-website/){.external}.
+Questa soluzione ti permette di usufruire di un CMS pronto all’uso e personalizzabile (tema, contenuti, ecc...). OVHcloud propone 4 moduli in 1 click che permettono di installare un CMS in modo semplice e veloce. Per saperne di più accedi alla pagina [Crea il tuo sito con i moduli in 1 click](https://www.ovhcloud.com/it/web-hosting/uc-website/){.external}.
 
 Se vuoi optare per l’utilizzo di uno dei nostri moduli, sempre dopo aver selezionato il Cloud Web dallo Spazio Cliente, seleziona la scheda `CMS in 1 click`{.action}, poi su `Aggiungi un modulo`{.action}. A questo punto puoi dare avvio a un’installazione in modalità “semplice” (non personalizzabile) o in modalità “avanzata” (possibilità di personalizzare alcuni elementi).
 
-Per maggiori informazioni sui moduli in 1 click, consulta la nostra guida: [Installare i moduli in 1 click OVH](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+Per maggiori informazioni sui moduli in 1 click, consulta la nostra guida: [Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
 
 > [!primary]
 >
@@ -130,77 +139,63 @@ Che si tratti di un nuovo sito Internet o della migrazione di un sito già esist
 
 Se scegli l’installazione manuale, è necessario che tu sia in possesso di tutti i file del sito Internet o dell’applicazione che vuoi installare, così come (se richiesto per un corretto funzionamento) degli identificativi di un database precedentemente creato sul tuo Cloud Web. In caso di migrazione di un sito Internet, procurati un backup completo.
 
-Poiché i progetti possono essere diversi tra loro, non esiste un procedimento universale, ma per ulteriore assistenza sulle operazioni da svolgere puoi consultare la nostre guide (in inglese): [Pubblicare un sito Web](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} e [Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
+Poiché i progetti possono essere diversi tra loro, non esiste un procedimento universale, ma per ulteriore assistenza sulle operazioni da svolgere puoi consultare la nostre guide (in inglese): [Pubblicare un sito Web](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} e [Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
 
-### Step 6: crea i tuoi account email
+### Step 6: modifica la configurazione del tuo dominio
 
-Una volta installato il tuo progetto sul Cloud Web, hai la possibilità di creare indirizzi email. Se non sei interessato, passa direttamente allo step successivo.
+In questa fase è necessario che il tuo progetto sia installato sul Cloud Web OVHcloud e che tu abbia creato i tuoi account email. Se non dovessero ancora funzionare, potrebbe darsi che la configurazione del tuo dominio non sia corretta e, in questo caso, ti consigliamo di seguire questo step.
 
-Per creare uno o più indirizzi email, sempre dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Email`{.action} nella barra dei servizi a sinistra, poi scegli il dominio associato al tuo Cloud Web.
+Ti ricordiamo tuttavia che, se stai effettuando una migrazione dei tuoi servizi a OVHcloud, le operazioni legate ai DNS potrebbero causare un malfunzionamento dei tuoi servizi se non vengono effettuate nel momento giusto. In base ai diversi step descritti nella nostra guida (in inglese) [Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}, è quindi necessario verificare ed eventualmente correggerne la configurazione alla fine del processo di migrazione.
 
-Per creare un nuovo indirizzo email, clicca su `Crea un indirizzo email`{.action}, poi segui le indicazioni. In caso di necessità, consulta la nostra guida (in inglese): [Creare un account email con il servizio MX Plan](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}.
+#### 6.1. Conoscere i record DNS OVHcloud 
 
-![cloudweb](images/cloud-web-first-steps-step5.png){.thumbnail}
-
-### Step 7: modifica la configurazione del tuo dominio
-
-In questa fase è necessario che il tuo progetto sia installato sul Cloud Web OVH e che tu abbia creato i tuoi account email. Se non dovessero ancora funzionare, potrebbe darsi che la configurazione del tuo dominio non sia corretta e, in questo caso, ti consigliamo di seguire questo step.
-
-Ti ricordiamo tuttavia che, se stai effettuando una migrazione dei tuoi servizi a OVH, le operazioni legate ai DNS potrebbero causare un malfunzionamento dei tuoi servizi se non vengono effettuate nel momento giusto. In base ai diversi step descritti nella nostra guida (in inglese) [Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}, è quindi necessario verificare ed eventualmente correggerne la configurazione alla fine del processo di migrazione.
-
-#### 7.1. Conoscere i record DNS OVH 
-
-Esistono diversi record DNS relativi a OVH. Ci concentreremo in particolare su due di essi, che garantiscono l’accessibilità del sito e la ricezione dei messaggi sui tuoi account email. Segui le indicazioni sottostanti per sapere dove recuperarli:
+Esistono diversi record DNS relativi a OVHcloud. Ci concentreremo in particolare su due di essi, che garantiscono l’accessibilità del sito e la ricezione dei messaggi sui tuoi account email. Segui le indicazioni sottostanti per sapere dove recuperarli:
 
 |Record DNS|Servizio associato|Dove recuperarlo?|
 |---|---|---|
-|A|Per il sito Internet|Nello [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosting`{.action} e seleziona il tuo hosting Cloud Web. L'indirizzo IP viene mostrato in corrispondenza della voce "IPv4" nella scheda `Informazioni generali`{.action}.|
-|MX|Per le email|Nello [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Email`{.action} e seleziona il tuo dominio. L’informazione viene mostrata in corrispondenza della voce "Record MX" nella scheda `Informazioni generali`{.action}.|
+|A|Per il sito Internet|Nello [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosting`{.action} e seleziona il tuo hosting Cloud Web. L'indirizzo IP viene mostrato in corrispondenza della voce "IPv4" nella scheda `Informazioni generali`{.action}.|
+|MX|Per le email|Nello [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Email`{.action} e seleziona il tuo dominio. L’informazione viene mostrata in corrispondenza della voce "Record MX" nella scheda `Informazioni generali`{.action}.|
 
-#### 7.2. Verificare e modificare i record DNS
+#### 6.2. Verificare e modificare i record DNS
 
-Adesso che conosci i record DNS relativi al tuo Cloud Web e il tuo servizio di posta OVH, è necessario verificare se la configurazione è stata effettuata correttamente ed eventualmente modificarla. Queste due operazioni devono essere assolutamente eseguite presso il provider che gestisce la zona DNS del tuo dominio.
+Adesso che conosci i record DNS relativi al tuo Cloud Web e il tuo servizio di posta OVHcloud, è necessario verificare se la configurazione è stata effettuata correttamente ed eventualmente modificarla. Queste due operazioni devono essere assolutamente eseguite presso il provider che gestisce la zona DNS del tuo dominio.
 
 > [!warning]
 >
-> - Se il tuo dominio non utilizza i DNS di OVH, è necessario effettuare la modifica tramite l’interfaccia del provider che gestisce i nameserver del tuo dominio.
+> - Se il tuo dominio non utilizza i DNS di OVHcloud, è necessario effettuare la modifica tramite l’interfaccia del provider che gestisce i nameserver del tuo dominio.
 > 
-> - Se il tuo dominio è registrato presso OVH, puoi verificare se utilizza i nostri DNS accedendo allo [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > `Server DNS`{.action} e seleziona il tuo dominio.
+> - Se il tuo dominio è registrato presso OVHcloud, puoi verificare se utilizza i nostri DNS accedendo allo [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > `Server DNS`{.action} e seleziona il tuo dominio.
 >
 
 Segui le indicazioni sottostanti per sapere dove effettuare le operazioni:
 
 |Configurazione DNS utilizzata|Dove effettuare le operazioni?|
 |---|---|
-|OVH|Nello [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} e seleziona il tuo dominio. Nella scheda `Zona DNS`{.action} è possibile verificare ed eventualmente modificare le informazioni necessarie. Per maggiore assistenza, puoi consultare la nostra guida (in inglese) [Modificare una zona DNS OVH](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.|
+|OVHcloud|Nello [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} e seleziona il tuo dominio. Nella scheda `Zona DNS`{.action} è possibile verificare ed eventualmente modificare le informazioni necessarie. Per maggiore assistenza, puoi consultare la nostra guida (in inglese) [Modificare una zona DNS OVHcloud](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.|
 |Altro|Attraverso l’interfaccia del provider che gestisce la configurazione DNS del tuo dominio. Ti suggeriamo inoltre di contattarlo se trovi difficoltà nello svolgere queste operazioni.|
 
 Una volta modificata la configurazione DNS del tuo dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore. Se hai aggiunto più domini al tuo hosting Cloud Web come Multisito, è necessario ripetere queste due operazioni per ciascun dominio. 
 
-### Step 8: personalizza il tuo sito
+### Step 7: personalizza il tuo sito
 
 In caso di migrazione di un sito già esistente e quindi già personalizzato, questo step è facoltativo. Se invece il sito è appena stato realizzato, ad esempio utilizzando i nostri moduli, è possibile personalizzarlo modificando il tema e pubblicando i primi contenuti.
 
 Per maggiori informazioni sulle funzionalità disponibili, consulta la documentazione del CMS utilizzato per realizzare il tuo progetto.
 
-### Step 9: utilizza i tuoi indirizzi email
+### Step 8: utilizza i tuoi indirizzi email
 
-A questo punto non ti resta che utilizzare i tuoi account di posta. OVH fornisce un’applicazione online (webmail): RoundCube. Puoi accedere all’App tramite l’indirizzo <https://www.ovh.it/mail/>, inserendo le credenziali associate al tuo account email creato in OVH.
+A questo punto non ti resta che utilizzare i tuoi account di posta. OVHcloud fornisce un’applicazione online (webmail): RoundCube. Puoi accedere all’App tramite l’indirizzo <https://www.ovh.it/mail/>, inserendo le credenziali associate al tuo account email creato in OVHcloud.
 
 Per maggiori informazioni su questo servizio, consulta la nostra guida [Guida all'utilizzo di RoundCube](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/){.external} Per configurare l’account email su un client di posta o un dispositivo (ad esempio, smartphone o tablet), fai riferimento alla documentazione disponibile a questa pagina: <https://docs.ovh.com/it/emails/>.
 
 ## Per saperne di più
 
-[Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external} (in inglese)
+[Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external} (in inglese)
 
 [Pubblicare un sito Web](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} (in inglese)
 
-[Installare i moduli in 1 click OVH](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+[Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
 
 [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external} (in inglese)
-
-[Creare un account email con il servizio MX Plan](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} (in inglese) 
-
-[Guida all’utilizzo di RoundCube](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>

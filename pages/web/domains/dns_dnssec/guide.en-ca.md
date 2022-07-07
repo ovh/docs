@@ -37,11 +37,9 @@ DNSSEC can be activated in two ways:
 
 ### Step 1: Access the domain name management section.
 
-To start with, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and go to the "Web" section. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the domain name concerned from the list.
+To start with, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and go to the "Web" section. Click `Web hosting`{.action}, then choose the domain name concerned from the list.
 
 The page that appears displays the general information. 
-
-![dnssec](images/activate-dnssec-step1.png){.thumbnail}
 
 ### Step 2: Manage your domain name’s DNSSEC service.
 

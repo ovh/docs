@@ -17,7 +17,6 @@ OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein private
 
 **Diese Anleitung erklärt, wie Sie eine Public Cloud Instanz und einen dedizierten Server über vRack verbinden.**
 
-
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
@@ -25,6 +24,11 @@ OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein private
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) (kompatibel mit vRack) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben einen privaten IP-Adressbereich für das vRack festgelegt.
+
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
 
 ## In der praktischen Anwendung
 

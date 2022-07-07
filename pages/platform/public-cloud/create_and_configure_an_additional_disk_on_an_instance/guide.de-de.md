@@ -309,4 +309,4 @@ Das Volume ist dann als Laufwerk im Dateiexplorer verfügbar.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

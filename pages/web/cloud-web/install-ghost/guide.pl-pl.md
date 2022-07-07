@@ -6,28 +6,32 @@ section: Tutoriale
 order: 1
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 04-05-2022**
+
 ## Wprowadzenie
 
 [Ghost](https://ghost.org/){.external} to silnik bloga z otwartym kodem źródłowym. Ma on na celu uproszczenie procesu publikacji online dla blogerów i dziennikarzy. To oprogramowanie jest napisane w JavaScript i wykorzystuje [Node.js](https://nodejs.org/){.external}, platformę programową do tworzenia witryn i interfejsów API w JavaScript po stronie serwera.
 
 [Hosting Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external} umożliwia użycie Node.js jako frameworka dla Twoich stron WWW oraz instalację i hosting silnika Ghost lub innej aplikacji stworzonej na potrzeby Node.js.
 
-W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Ghost na hostingu Cloud Web w OVH oraz jak udostępnić go pod Twoją domeną.
+W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Ghost na hostingu Cloud Web w OVHcloud oraz jak udostępnić go pod Twoją domeną.
 
 ## Wymagania początkowe
 
-### Co powinieneś umieć:
-
-- Znać podstawy ekosystemu Node.js
-- Łączyć się z serwerem za pomocą protokołu SSH
-- Edytować plik za pomocą wiersza poleceń przy użyciu (na przykład) Vim, Emacs lub Nano.
-
 ### Powinieneś posiadać:
 
-- Hosting [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external} od OVH
+- Hosting [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external} od OVHcloud
 - Node.js aktywowany jako framework
 - Domenę dodaną w opcji MultiSite oraz Node.js wskazany jako jej framework.
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}
+-Co powinieneś umieć:
+    - Znać podstawy ekosystemu Node.js
+    - Łączyć się z serwerem za pomocą protokołu SSH
+    - Edytować plik za pomocą wiersza poleceń przy użyciu (na przykład) Vim, Emacs lub Nano.
 
 ## W praktyce
 
@@ -74,7 +78,7 @@ W powyższej tabeli zwróć uwagę na dwie kolumny. Upewnij się, czy silnik Nod
 Jeśli nie znajdujesz, dodaj nową stronę w opcji MultiSite lub zmień istniejącą.
 
 - **jeśli chcesz dodać stronę podpiętą w opcji MultiSite**: kliknij `Dodaj domenę lub subdomenę`{.action} po prawej stronie tabeli.
-- **jeśli chcesz zmienić stronę podpiętą w opcji MultiSite**: kliknij koło zębate po prawej stronie odpowiedniej domeny, po czym kliknij `Zmień`{.action}.
+- **jeśli chcesz zmienić stronę podpiętą w opcji MultiSite**: kliknij przycisk `...`{.action} po prawej stronie nazwy domeny, a następnie `Zmień`{.action}.
 
 W oknie, które się wyświetla, wprowadź wymagane informacje: Poniższa tabela wyszczególnia informacje użyte na potrzeby tego tutoriala.
 
@@ -98,7 +102,7 @@ Przejdź do zakładki `Bazy danych`{.action}. Jeśli zakładka nie pojawia się 
 
 ![ghostcloudweb](images/ghost-cloud-web-step5.png){.thumbnail}
 
-W oknie, które się wyświetla wybierz „MySQL”, a następnie wybierz wersję. Na potrzeby tego tutoriala wybraliśmy wersję „5.6”. Wybierz następnie „Przechowywana w Twojej instancji Cloud Web”, po czym kliknij `Dalej`{.action}.
+W oknie, które się wyświetli, dostępny jest tylko "MySQL" w wersji "5.6".. Wybierz następnie „Przechowywana w Twojej instancji Cloud Web”, po czym kliknij `Dalej`{.action}.
 
 Wybierz następnie nazwę użytkownika i określ dla niej hasło. Teraz kliknij przycisk `Dalej`{.action}. Potwierdź utworzenie bazy danych, klikając `Zatwierdź`{.action}. Odczekaj kilka minut, aż operacja się zakończy.
 
@@ -125,8 +129,6 @@ W oknie, które się wyświetla, wprowadź wymagane informacje, po czym kliknij 
 |database__client|string|mysql|
 |server__port|integer|80|
 |server__host|string|0.0.0.0|
-
-![ghostcloudweb](images/ghost-cloud-web-step8.png){.thumbnail}
 
 ### Etap 5: logowanie do Cloud Web za pomocą SSH
 
@@ -249,7 +251,7 @@ Instalacja i konfiguracja silnika Ghost są zakończone. Teraz uruchom ponownie 
 
 ### Etap 7: ponowne uruchomienie *daemona* Node.js
 
-Aby ponownie uruchomić *daemon* Node.js, wróć do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Przejdź do zakładki `MultiSite`{.action}, kliknij koło zębate po prawej stronie nazwy odpowiedniej domeny, po czym kliknij `Uruchom ponownie`{.action}.
+Aby ponownie uruchomić *daemon* Node.js, wróć do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Przejdź do zakładki `MultiSite`{.action}, po prawej stronie nazwy wybranej domeny kliknij na przycisk `...`{.action} po prawej stronie, po czym kliknij `Uruchom ponownie`{.action}.
 
 W wyniku tej operacji aplikacja będzie dostępna za pośrednictwem nazwy domeny wybranej w konfiguracji Twojej strony podpiętej w opcji MultiSite.
 
@@ -267,3 +269,16 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ## Podsumowanie
 
 W tym tutorialu przedstawiliśmy poszczególne etapy instalacji aplikacji Node.js na hostingu Cloud Web. Teraz czas na korzystanie z Ghosta i publikację pierwszych treści!
+
+## Sprawdź również
+
+[Przeniesienie strony WWW do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
+
+[Umieszczenie strony w Internecie](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external}
+
+[Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}
+
+[Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
+
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

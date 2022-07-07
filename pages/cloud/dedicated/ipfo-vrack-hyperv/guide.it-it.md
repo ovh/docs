@@ -25,6 +25,11 @@ Segui il processo di installazione di Hyper-V, l'associazione di uno switch virt
 - Blocco IP di 4 o più indirizzi IP
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+
 ## Procedura
 
 Questa guida ti mostra come utilizzare Windows Server, connetterti tramite desktop remoto e aver già assegnato il tuo server dedicato e il tuo blocco IP a una vRack. Per maggiori informazioni sugli step da 1 a 4, consulta la nostra guida: [Configurare diversi server dedicati nella vRack](../configurare-server-dedicati-vrack/).

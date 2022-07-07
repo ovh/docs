@@ -1,7 +1,7 @@
 ---
-title: API / Account management
+title: API / Gestione account
 slug: account
-excerpt: Manage your accounts and billing preferences at OVH
+excerpt: Gestisci i tuoi account e la tua fatturazione in OVHcloud
 color: grey
 img: icone-user.png
 order: 4

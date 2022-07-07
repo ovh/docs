@@ -6,7 +6,7 @@ section: Command Line Interface
 order: 207
 ---
 
-**Last updated 27th of May, 2021.**
+**Last updated 13th of April, 2022.**
 
 ## Objective
 
@@ -34,7 +34,7 @@ This file can now be accessed from your notebooks, either with read-only or read
 In order to access your dataset, you can use the `--volume` option.
 
 ``` {.console}
-$ ovhai notebook run --volume my-dataset@GRA:/workspace/datasets:ro tensorflow jupyterlab
+$ ovhai notebook run tensorflow jupyterlab --volume my-dataset@GRA:/workspace/datasets:ro
 ```
 
 This command can be read as "Load the container `my-dataset` from the GRA region, in the /workspace/datasets directory,
@@ -58,15 +58,36 @@ Similarly to the read-only mode, you can use the `--volume` option to load data 
 The only difference is that you specify `rw` instead of `ro` in the command:
 
 ``` {.console}
-$ ovhai notebook run --volume my-neural-networks@GRA:/workspace/neural-networks:rw tensorflow jupyterlab
+$ ovhai notebook run tensorflow jupyterlab --volume my-neural-networks@GRA:/workspace/neural-networks:rw
 ```
 
 Once you have some data that you want to save (a trained neural network in this example), you can simply write it
 to the `/workspace/neural-networks` folder.
 
-This folder will be uploaded to your Object Storage when you will stop your notebook.
+This folder will be uploaded to your Object Storage when you stop your notebook.
 As long as your notebook is in the `STOPPING` state, this means that the upload is still in progress. Once the state
 changes to `STOPPED`, it means all the data were uploaded to your Object Storage.
+
+With the `RW` permission, you can add or modify data but you **cannot permanently delete** it from your Object Storage.
+
+> [!primary]
+>
+> If you want to add, modify or **delete data**, connect your volume with **Read-write-delete** specifying `RWD` instead of `RW`.
+
+## Attach a public Git repository
+
+If Python code, notebooks or other files are available on a public GitHub repository, you can attach them to your notebook with the `--volume` option.
+To be able to edit it and make changes easily, use the read-write permission (shorten by: `rw`).
+
+The command is as follows:
+
+``` {.console}
+$ ovhai notebook run tensorflow jupyterlab --volume https://github.com/ovh/ai-training-examples.git:/workspace/git-hub-repository:rw
+```
+
+> [!warning]
+>
+> To make your command valid, don't forget to add a `.git` at the end of the GitHub repository URL.
 
 ## Access multiple volumes
 
@@ -74,11 +95,13 @@ In many cases you need at least one volume for your dataset, and another to stor
 volumes as you want by chaining the `--volume` options:
 
 ``` {.console}
-$ ovhai notebook run --volume my-dataset@GRA:/workspace/datasets:ro \
-    --volume my-neural-networks@GRA:/workspace/neural-networks:rw tensorflow jupyterlab
+$ ovhai notebook run tensorflow jupyterlab
+    --volume my-dataset@GRA:/workspace/datasets:ro \
+    --volume my-neural-networks@GRA:/workspace/neural-networks:rw \
+    --volume https://github.com/ovh/ai-training-examples.git:/workspace/git-hub-repository:rw
 ```
 
-In this case, we loaded `my-dataset` in read-only, and `my-neural-networks` in read-write mode.
+In this case, we loaded `my-dataset` in read-only, and `my-neural-networks` and the GitHub repository in read-write mode.
 
 ## Using cached volumes
 
@@ -87,12 +110,28 @@ When loading large files from the Object Storage, it can take some time to downl
 To do so, you can append `:cache` after the permissions when specifying volumes:
 
 ``` {.console}
-$ ovhai notebook run --volume my-dataset@GRA:/workspace/datasets:ro:cache tensorflow jupyterlab
+$ ovhai notebook run tensorflow jupyterlab --volume my-dataset@GRA:/workspace/datasets:ro:cache
 ```
 
 Cached volumes will be deleted at least 72 hours after the last notebook using it has stopped.
-Note that the cache is shared with all users in your project. The main consequence that you need to be careful about
+Note that the cache is shared with all users in your project. The main consequence you need to be careful about
 is the fact that if someone else modifies the data in your cached volume, you will also see the modifications on your side.
+
+## Update volume configuration
+
+It's possible to update the volumes configuration of a notebook with the `patch` command.
+It can be convenient if you need afterward a new object storage and don't want to recreate the whole notebook.
+
+To do so, use the `patch` command with the `--volume` option:
+```{.console}
+$ ovhai notebook patch <notebook ID> -v my-dataset@GRA:/workspace/datasets:rw
+
+```
+
+> [!primary]
+> 
+> This is the same option as the `run` command above. You can choose to mount the volume in read-only or read & write mode and mount multiple volumes.
+>
 
 ## Feedback
 

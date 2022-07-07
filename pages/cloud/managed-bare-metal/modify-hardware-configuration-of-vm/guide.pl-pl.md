@@ -49,11 +49,11 @@ Istnieje również możliwość zarezerwowania częstotliwości (minimalnej i ma
 
 Po zaznaczeniu pola `Dodawanie CPU bez przerwy w pracy`{.action} możesz zmieniać te ustawienia po uruchomieniu maszyny wirtualnej.
 
-W zależności od systemu operacyjnego, dodawanie procesorów w trybie „hot swap” może być niewłaściwie obsługiwane i powodować nieprawidłowe działanie hosta.
+W zależności od systemu operacyjnego, dodawanie procesorów w trybie “hot swap” może być niewłaściwie obsługiwane i powodować nieprawidłowe działanie hosta.
 
 Można dokonać rezerwacji, co oznacza, że do maszyny wirtualnej możesz przydzielić minimalną ilość *MHz* (megaherców).
 
-Limit, domyślnie ustawiony na „brak”, umożliwia ograniczenie procesora Twojej maszyny wirtualnej do wartości wyrażonej w *MHz*. Można na przykład ograniczyć wydajność maszyny wirtualnej wykorzystywanej do rozwoju aplikacji.
+Limit, domyślnie ustawiony na “brak”, umożliwia ograniczenie procesora Twojej maszyny wirtualnej do wartości wyrażonej w *MHz*. Można na przykład ograniczyć wydajność maszyny wirtualnej wykorzystywanej do rozwoju aplikacji.
 
 
 ### Pamięć (RAM)

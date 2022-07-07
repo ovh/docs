@@ -9,20 +9,20 @@ section: Tutoriels
 
 ## Objectif
 
-Plesk est une interface de gestion de serveurs simple à prendre en main. Vous avez la possibilité de la mettre en place et de l'utiliser sur vos instances Public Cloud OVH.
+Plesk est une interface de gestion de serveurs simple à prendre en main. Vous avez la possibilité de la mettre en place et de l'utiliser sur vos instances Public Cloud OVHcloud.
 
 **Apprenez à installer Plesk sur votre instance Public Cloud.** 
 
 > [!warning]
 > 
-> OVH met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. N'hésitez pas à vous rendre sur notre [forum communautaire](https://community.ovh.com/){.external} pour échanger avec d'autres utilisateurs.
 >
 
 ## Prérequis
 
-- [Avoir créé une instance depuis l'espace client OVH](../creer-instance-espace-client/).
+- [Avoir créé une instance depuis l'espace client OVHcloud](../creer-instance-espace-client/).
 - [Passer root et définir un mot de passe](../passer-root-et-definir-un-mot-de-passe/).
 
 ## En pratique

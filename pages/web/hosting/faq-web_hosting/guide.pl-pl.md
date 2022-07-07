@@ -1,80 +1,225 @@
 ---
-title: FAQ
-excerpt: 'Znajdź najczęściej zadawane pytania dotyczące hostingu stron internetowych przez OVHcloud'
+title: FAQ Web Hosting
+excerpt: Znajdź najczęściej zadawane pytania dotyczące hostingu stron internetowych przez OVHcloud
 slug: web-hosting-faq
-section: 'Pierwsze kroki'
+section: Pierwsze kroki
 ---
 
-**Ostatnia aktualizacja z dnia 13-05-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-## Hosting WWW OVHcloud - FAQ
+**Ostatnia aktualizacja z dnia 07-04-2022**
 
+## Zarządzanie usługą
 
-### Co zrobić w przypadku awarii mojej strony www? 
+### W jaki sposób skonfigurować moją usługę hostingu?
 
-U podstaw nieprawidłowego działania Twojej strony internetowej może znajdować się kilka przyczyn. Aby ustalić źródło problemu, rozpocznij od sprawdzenia, czy wszystkie Twoje usługi zostały odnowione i są włączone, logując się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Następnie sprawdź [aktualnie prowadzone prace](https://web-cloud.status-ovhcloud.com/){.external}. Jeżeli wszystkie usługi są aktywne, a Twoja strona nie jest objęta żadną z prowadzonych przez nas prac, zapraszamy do przeprowadzenia szczegółowej diagnostyki w oparciu o [nasze przewodniki do diagnostyki](../).
+W celu skonfigurowania Twojej usługi hostingu, udaj się najpierw do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W sekcji `Hosting` możesz zarządzać certyfikatami SSL, wersjami PHP, opcją CDN, stronami podpiętymi w opcji MultiSite, bazami danych, itp.
 
-**Wskazówki i porady**: Jeżeli Twoja strona nagle stała się niedostępna na skutek wykonanej przez Ciebie operacji, możesz odzyskać jej zawartość z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu udaj się do zakładki `FTP - SSH` Twojej usługi hostingu i kliknij przycisk `Przywróć kopię zapasową`{.action} znajdujący się po prawej stronie Twojego ekranu. Możesz również zapoznać się z treścią dokumentacji: [Przywracanie plików na przestrzeni dyskowej hostingu](../hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/).
+**Wskazówki i porady**: Aby pomóc Ci w skonfigurowaniu Twojego hostingu, zapoznaj się z sekcją "*Pierwsze kroki*", którą zobaczysz [tutaj](https://docs.ovh.com/pl/hosting/).
 
-### W jaki sposób skonfigurować moją usługę hostingu? 
+### Jak zarządzać swoimi hasłami?
 
-W celu skonfigurowania Twojej usługi hostingu, udaj się najpierw do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W rubryce `Hosting` będziesz mieć, między innymi, możliwość zarządzania Twoimi certyfikatami SSL, Twoimi wersjami PHP, Twoimi systemami CDN, Twoimi stronami podpiętymi w opcji MultiSite, Twoimi bazami danych...
+Aby zarządzać swoimi hasłami, musisz najpierw zalogować się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jeżeli nie pamiętasz swojego loginu lub hasła, kliknij opcję `Nie pamiętasz identyfikatora klienta lub hasła?`{.action} znajdującą się pod okienkiem logowania. Zostanie do Ciebie wysłana wiadomość e-mail z procedurą przywracania danych.
 
-**Wskazówki i porady**: Aby w sposób nieskomplikowany skonfigurować Twoją usługę hostingu, zapoznaj się z treścią rubryki <br> „Pierwsze kroki”, którą odnajdziesz [tutaj](../).
+Zapoznaj się również z przewodnikiem [Tworzenie i zarządzanie hasłem do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/).
 
-### Jak stworzyć lub usunąć dany element mojego produktu/usługi (konto e-mail, baza danych, ...)?
+Po zalogowaniu się do Panelu klienta:
 
-Aby stworzyć lub usunąć dany element, zaloguj się do odpowiedniej usługi > (`E-mail`, `Baza danych`, `Moduły`). Będziesz mógł(mogła) modyfikować lub uaktualnić Twój produkt zgodnie z Twoimi potrzebami.
-
-**Wskazówki i porady**\: z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} możesz regularnie tworzyć kopie zapasowe Twoich baz danych.
-
-### Jak zarządzać swoimi hasłami? 
-
-Aby zarządzać swoimi hasłami, musisz najpierw zalogować się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Jeżeli nie pamiętasz swojego loginu lub hasła, kliknij opcję `Nie pamiętam identyfikatora lub hasła`{.action} znajdującą się pod okienkiem logowania. Zostanie do Ciebie wysłana wiadomość e-mail z procedurą przywracania danych.
-Możesz również zapoznać się z treścią przewodnika [Tworzenie i zarządzanie hasłem do konta](../../customer/zarzadzanie-haslem/).
-
-Po zalogowaniu się do panelu klienta będziesz mógł(mogła) zarządzać swoimi poszczególnymi dostępami, takimi jak: 
-
-- dostęp do Twojego serwera FTP oraz dostęp do baz danych. W tym celu, udaj się do rubryki `Hosting` Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz odpowiedni produkt/usługę.
-- dostęp do Twoich e-maili z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), rubryka `E-mail`.
-
-**Wskazówki i porady**: W przypadku oferty E-mail Pro lub Exchange możesz zarządzać swoimi dostępami również z wykorzystaniem systemów webmail odpowiadających tym ofertom.
+- Aby zmienić hasło do przestrzeni FTP, zapoznaj się z instrukcjami zawartymi w [tym przewodniku](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/).
+- Aby zmienić hasło do bazy danych, zapoznaj się z instrukcjami zawartymi w [tym przewodniku](https://docs.ovh.com/pl/hosting/zmiana-hasla-do-bazy-danych/).
+- Aby zmienić hasło do Twojego konta e-mail MX Plan, postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](https://docs.ovh.com/pl/emails/zmiana-hasla-do-konta-email/).
 
 ### Jak umieścić moją stronę w internecie? 
 
-Aby umieścić swoją stronę www w internecie w infrastrukturze OVHcloud, musisz posiadać nazwę domeny odpowiadającą adresowi, z którego Twoja strona będzie dostępna (przykład: ovh.com). Musisz również mieć wykupioną usługę hostingową www, na której umieścisz Twoją stronę. Możesz również zapoznać się z naszym przewodnikiem: [Uruchomienie strony WWW na hostingu ](../hosting_www_umieszczenie_strony_w_internecie/)
+Aby uruchomić Twoją stronę WWW w Internecie, musisz posiadać [Domeny](https://www.ovhcloud.com/pl/domains/) odpowiadającą adresowi WWW, z którego będzie ona dostępna (na przykład: *mojadomena.com*). Będziesz również potrzebował [hostingu](https://www.ovhcloud.com/pl/web-hosting/), na którym będziesz mógł zainstalować Twoją stronę.
 
-**Wskazówki i porady**: Aby pomóc Ci w stworzeniu Twojej strony internetowej, OVHcloud oddaje Ci do dyspozycji moduły dostępne za 1 kliknięciem, jak Wordpress, Prestashop, Joomla czy Drupal. Znajdziesz je [tutaj](https://www.ovhcloud.com/pl/web-hosting/uc-website/).external}. Możesz również skorzystać z [naszej dokumentacji](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+Aby dowiedzieć się, jak budować Twoją stronę, zapoznaj się z tym [przewodnikiem](https://www.ovhcloud.com/pl/web-hosting/uc-website/), a następnie postępuj zgodnie z instrukcjami zawartymi w przewodniku [Uruchomienie strony WWW na hostingu](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/).
 
-### W jaki sposób migrować moją stronę internetową i moje e-maile do infrastruktury OVHcloud? 
+**Wskazówki i porady**: OVHcloud, aby pomóc Ci w zbudowaniu strony WWW, modułu Prestashop, Joomla i Drupal, pozwala na zainstalowanie na Twoim hostingu oprogramowania do wspomagania tworzenia stron Wordpress, Prestashop, Joomla i Drupal. Jest to możliwe dzięki funkcji [Moduły za 1 kliknięciem](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
 
-Aby przenieść Twoją stroną internetową i Twoją ofertę e-mailową na infrastrukturę OVHcloud, musisz mieć wykupioną [usługę hostingową Web](https://www.ovhcloud.com/pl/web-hosting/){.external} oraz [ofertę e-mailową OVHcloud](https://www.ovhcloud.com/pl/emails/){.external}. Będziesz mieć wtedy możliwość podłączenia się do serwera FTP Twojego hostingu i przeniesienia plików powiązanych z Twoją stroną. Jeżeli jesteś aktualnie w posiadaniu bazy danych, możesz również stworzyć jej kopię zapasową. 
+### Jak mogę przenieść moją stronę WWW i konta e-mail na serwery OVHcloud? 
 
-Aby przenieść e-maile, musisz ponownie stworzyć Twoje konta w OVHcloud, a następnie posłużyć się naszym narzędziem do migracji [OMM (OVH Mail Migrator)](https://omm.ovh.net/) dostępnym [tutaj](https://omm.ovh.net/). 
-
-Po zakończeniu tych etapów będziesz mógł(mogła) skonfigurować strefę DNS Twojej domeny, aby pojawiła się na naszej infrastrukturze w ciągu 1 do 24 godzin. Jeżeli potrzebujesz dodatkowych informacji, zapraszamy do zapoznania się z naszym przewodnikiem [Migracja mojej strony internetowej do OVHcloud](../przeniesienie-strony-www-do-ovh/).
-
-**Wskazówki i porady**: Do transferu plików możesz użyć oprogramowań takich, jak Filezilla czy Cyberduck, podpierając się informacjami zawartymi w [naszej dokumentacji](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
+Zapoznaj się z przewodnikiem [Przeniesienie strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/).
 
 ### Jak zainstalować kilka stron WWW na tym samym hostingu?
 
-Jeżeli jesteś doświadczonym użytkownikiem, możesz umieścić kilka stron internetowych w ramach tej samej oferty hostingowej. W tym celu należy podpiąć do tego hostingu inną nazwę domeny albo podpiąć subdomenę. Procedura podpinania lub oddzielania domeny została opisana w [tym przewodniku](../konfiguracja-multisite-na-hostingu/).
+Zapoznaj się z przewodnikiem [Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/) na jednym hostingu.
 
-### Co zrobić w przypadku, gdy po opublikowaniu mojej witryny, strona „Gratulacje” OVHcloud wciąż się wyświetla?
+### Jak zmienić formułę hostingu?
 
-Po instalacji Twojej oferty hostingowej, OVHcloud wstawi stronę tymczasową, na czas przeniesienia plików z Twojej strony internetowej. Jeżeli po prostu umieścisz swoje pliki w folderze „www”, bez usunięcia treści pozostawionej przez OVHcloud, możesz napotkać tego typu problem. 
+> [!primary]
+>
+> Aby zamówić ofertę hostingu WWW dostosowaną do Twoich potrzeb, sprawdź [tę stronę](https://www.ovhcloud.com/pl/web-hosting/).
+>
 
-Aby skorygować błąd, należy usunąć lub zmienić nazwę pliku „index.html” wstawionego przez OVHcloud na Twoim hostingu.
-Sama zmiana jego nazwy może być dobrym rozwiązaniem, gdyż pozwoli na ponowną aktywację pliku w dowolnym momencie i korzystanie z niego jako strony tymczasowej. 
+Aby zmienić [ofertę hostingu](https://www.ovhcloud.com/pl/web-hosting/) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij `Web Cloud`{.action}, a następnie `Hosting`{.action}. Wybierz odpowiedni hosting, a następnie w sekcji `Abonament` kliknij przycisk `...`{.action} w sekcji `Usługa`, a następnie `Zmień ofertę`{.action}.
 
-**Inna istotna informacja**\: aby pliki strony zostały uwzględnione i wyświetlane, powinny zostać umieszczone w katalogu „WWW”.
+Następnie wybierz nową ofertę hostingu oraz czas trwania nowego abonamentu. Zapoznaj się z odpowiednimi regulaminami i kliknij `Wyślij`{.action}.
 
-### Jak zmienić ofertę hostingu?
+> [!warning]
+>
+> Przed przejściem na ofertę niższą (na przykład przed przejściem z oferty [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) na ofertę [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/)) sprawdź, czy korzystanie z hostingu jest kompatybilne z Twoją nową formułą:
+>
+> - Jeśli utworzyłeś zbyt wiele kont e-mail, aby przejść na niższą ofertę, wykonaj kopię zapasową, a następnie usuń mniej używane konta e-mail;
+>
+> - Jeśli limit nowej oferty hostingowej jest niewystarczający, zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) do hostingu, wykonaj kopię zapasową, a następnie usuń niepotrzebne pliki i katalogi;
+>
+> - Jeśli Twój nowy hosting zawiera niewystarczającą liczbę baz danych lub przestrzeń dyskową, wykonaj kopie zapasowe, a następnie usuń niewykorzystane dane lub bazy danych. Możesz również zamówić [ofertę serwera baz danych](https://www.ovh.pl/cloud/cloud-databases/);
+>
+> - Jeśli utworzyłeś [listy mailingowe](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) wraz z hostingiem, sprawdź, czy nowa oferta zawiera tę funkcjonalność.
+>
+> W przypadku wątpliwości dotyczących sposobu postępowania skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/) lub naszą [społecznością użytkowników ](https://community.ovh.com/en/).
+>
 
-Jeśli chcesz zmienić aktualną ofertę na wyższą, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, do sekcji `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie.
+### Jak zachować konto e-mail powiązane z hostingiem podczas rezygnacji z usługi?
 
-W zakładce `Informacje ogólne` w sekcji `Abonament` kliknij przycisk `...`{.action} przed "Ofertą", a następnie kliknij przycisk `Zmień ofertę`{.action}. Postępuj zgodnie z poniższymi instrukcjami, aby sfinalizować zamówienie. Do nowej oferty dodana jest proporcjonalna część pozostałego czasu trwania Twojej aktualnej oferty.
+Jeśli zrezygnujesz z hostingu lub usuniesz go z hostingu, powiązana z nim oferta e-mail zostanie również usunięta. Aby zachować konta e-mail, należy odłączyć usługę e-mail przed rezygnacją z hostingu.<br>
 
-## Sprawdź również
+W tym celu przejdź do zakładki `Informacje ogólne`{.action} na Twoim hostingu. W sekcji **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie `Adresy e-mail`. Kliknij polecenie `Odłącz opcję e-mail`{.action} i postępuj zgodnie z instrukcjami, aby zamówić niezależną ofertę e-mail, która pozwoli Ci zachować utworzone konta e-mail.
+
+## Diagnostyka
+
+> [!warning]
+>
+> Jeśli zauważysz anomalię niewymienioną w tym FAQ, zapoznaj się z sekcjami "*Diagnostyka*" w [naszej dokumentacji](https://docs.ovh.com/pl/hosting/).
+>
+
+### Co zrobić w przypadku awarii mojej strony www? 
+
+Istnieje kilka powodów, dla których Twoja strona WWW nie działa. Aby zidentyfikować przyczynę takiej sytuacji, sprawdź, czy żaden z subskrypcji nie musi zostać **odnowiony** po zalogowaniu się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+Następnie sprawdź bieżące [wydarzenia na naszej infrastrukturze](https://www.status-ovhcloud.com/). Jeśli wszystkie Twoje usługi są aktywne i nie mają wpływu na jakiekolwiek incydenty lub prace konserwacyjne, wykonaj dokładniejszą diagnostykę.
+
+### Co zrobić, jeśli po uruchomieniu strony WWW OVHcloud strona w budowie pozostanie wyświetlona?
+
+![strona_budowlana](images/site_en_construction.png){.thumbnail}
+
+Po zainstalowaniu hostingu OVHcloud umieszcza tę stronę oczekiwania w formie pliku **index.html** zawartego w folderze `www` Twojego serwera FTP.
+
+Ten plik jest automatycznie wyłączany podczas tworzenia [modułu za pomocą 1 kliknięcia](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+
+Jeśli wybrałeś ręczną [instalację Twojej strony WWW](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/), [zaloguj się do przestrzeni FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) i zmień nazwę strony **index.html.old**.
+
+### Co zrobić, jeśli moja strona wyświetla się na stronie "xxxxx.cluster0xx.hosting.ovh.net"?
+
+![url-klaster](images/url-cluster.png){.thumbnail}
+
+Możliwe są dwa scenariusze. Twoja strona WWW została utworzona z tego adresu lub pojawiła się po zmianie.
+
+#### Scenariusz 1: twoja strona została stworzona z adresem www typu "xxxxx.cluster0xx.hosting.ovh.net"
+
+> [!warning]
+>
+> Usunięcie bazy danych, np. modułu za 1 kliknięciem, jest nieodwracalne. Prowadzi to również do **usunięcia kopii zapasowych** danych, których dotyczy operacja. Zanim usuniesz Twoją stronę WWW z hostingu OVHcloud, **upewnij się, że jesteś w stanie odtworzyć ją w identyczny** sposób. Jeśli nie masz pewności co do przeprowadzenia czynności, skontaktuj się z Webmasterem lub jednym z [naszych partnerów](https://partner.ovhcloud.com/pl/directory/).
+>
+
+W pierwszym przypadku, po wykonaniu wszystkich niezbędnych kopii zapasowych, usuń moduł z części `Hosting` w Panelu klienta:
+
+![delete_a_module](images/delete_a_module.png){.thumbnail}
+
+Następnie usuń bazę danych w zakładce z tej samej nazwy po prawej stronie ekranu, w części `Hosting`:
+
+![delete_a_database](images/delete_a_database.png){.thumbnail}
+ 
+Następnie uruchom ponownie instalację dla wybranej domeny, korzystając z funkcji [Module za 1 kliknięciem](https://docs.ovh.com/pl/hosting/1-click-module-management/).
+
+#### Scenariusz 2: twoja strona wyświetla się z adresem www typu "xxxxx.cluster0xx.hosting.ovh.net" po zmianie
+
+Jeśli Twoja strona WWW wyświetla się z tym adresem URL po operacji, przywróć ją do poprzedniego stanu.
+
+> [!alert]
+>
+> Przywrócenie hostingu OVHcloud spowoduje przywrócenie **wszystkich stron**, które on zawiera.
+>
+> Podczas przywracania zawartość Twojej przestrzeni FTP lub bazy danych zostaje zastąpiona kopią zapasową. Nie będziesz mógł zatem pobrać danych z serwera FTP lub z bazy danych przed przywróceniem danych.
+>
+
+Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem [Przywracanie plików z kopii zapasowej OVHcloud](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/).
+
+Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem [Import kopii zapasowej do bazy danych hostingu](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/#przywracanie-kopii-zapasowej-w-panelu-klienta).
+
+### Co zrobić, jeśli moja strona przekieruje się na webmail OVHcloud?
+
+![Webmail](images/webmail.png){.thumbnail}
+
+Ta nieprawidłowość wskazuje na nieprawidłową konfigurację [serwery DNS](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/) lub [strefa DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/) przypisanych do Twojej domeny.
+
+Najczęstszym przypadkiem jest: zamówiłeś oddzielnie domenę i hosting, więc nie są one ze sobą połączone za pomocą strefy DNS.
+
+Przejdź do sekcji `Domeny`{.action} w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij odpowiednią domenę, a następnie zakładkę `Serwery DNS`{.action}.
+
+Następnie zapisz wskazane serwery DNS i przejdź do zakładki `Strefa DNS`{.action}.
+
+Porównaj `Adres docelowy` wpisów typu `NS` w zakładce `Strefa DNS`{.action} z `Serwery DNS` w zakładce o tej samej nazwie:
+
+- Jeśli elementy są identyczne, zamień cel `213.186.33.5` na czterocyfrowy kod zapisany w zakładce `Informacje ogólne` pod nagłówkiem `IPv4` (aby uzyskać więcej informacji na temat czynności, jakie należy wykonać, postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/#w-praktyce)).
+
+- Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/#zresetuj-serwery-dns).
+
+- Jeśli elementy nie są identyczne i `serwery DNS` wskazane w zakładce o tej samej nazwie nie figurują na [tej liście](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/), skontaktuj się z Webmasterem lub poszukaj wyspecjalizowanego usługodawcy na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+### Co zrobić, jeśli moja strona wyświetla błąd "Strona nie przekierowuje się poprawnie"?
+
+![too_many_redirect](images/too_many_redirect.png){.thumbnail}
+
+> [!alert]
+>
+> Przywrócenie Twojego hostingu OVHcloud spowoduje przywrócenie wszystkich stron WWW, które on zawiera.
+>
+> Podczas przywracania zawartość Twojej przestrzeni FTP lub bazy danych zostaje zastąpiona kopią zapasową. Następnie nie będziesz mógł pobrać danych z serwera FTP lub z bazy danych bezpośrednio przed przywróceniem danych.
+>
+
+Przywróć zawartość Twojej strony WWW do poprzedniego stanu:
+
+- Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem [Przywracanie plików z kopii zapasowej OVHcloud](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/);
+
+- Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem [Przywrócenie kopii zapasowej bazy danych](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/#przywracanie-kopii-zapasowej-w-panelu-klienta).
+
+W przypadku braku możliwości przywrócenia dostępu do strony WWW, skontaktuj się z Webmasterem lub poszukaj wyspecjalizowanego webmastera na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+### Co zrobić, jeśli moja strona wyświetla błąd "503 error Backend fetch failed (Varnish cache)"?
+
+![503_varnish](images/503_varnish.png){.thumbnail}
+
+Jeśli włączyłeś [opcję CDN](https://docs.ovh.com/pl/hosting/przewodnik_dotyczacy_uslugi_geocache_na_hostingu_www/) hostingu, wyłącz tryb *Maintenance* na swojej stronie Wordpress lub Prestashop.
+
+Jeśli nie włączyłeś tej opcji lub nie korzystałeś z trybu *konserwacji*, skontaktuj się z Webmasterem lub poszukaj specjalistycznego dostawcy na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+### Co zrobić, jeśli moja strona wyświetla błąd "Your request has been blocked"?
+
+![your_request_has_been_blocked](images/your_request_has_been_blocked.png){.thumbnail}
+
+Wiadomość ta wskazuje, że rodzaj zapytania HTTP, które chcesz wykonać na Twojej stronie WWW jest zabroniony na ograniczony czas. W takiej sytuacji [sprawdź logi](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/) strony, aby określić, które zapytania spowodowały blokadę.
+
+W celu usunięcia nieprawidłowości skontaktuj się z Biurem Webmasterem lub jednym z naszych [partnerów](https://partner.ovhcloud.com/pl/directory/).
+
+### Co zrobić, jeśli moja strona wyświetla błąd "Your IP has been banned"?
+
+![your_ip_has_been_blocked](images/your_ip_has_been_blocked.png){.thumbnail}
+
+Wiadomość ta wskazuje, że adres IP, którego używasz do logowania się do Twojej strony, jest zablokowany na ograniczony czas. 
+
+W tej sytuacji [sprawdź logi](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/), aby określić, które zapytania spowodowały blokadę Twojej strony.<br>
+Sprawdź również, czy komputer nie jest zainfekowany wirusem.<br>
+Możesz również skontaktować się z [naszymi partnerami] (https://partner.ovhcloud.com/pl/directory/), aby sprawdzić kod informatyczny Twojej strony.
+
+### Zamówiłem domenę z akcentami i wyświetla się ona w moim panelu klienta w bardzo dziwny sposób. Co mam zrobić?
+
+![rating_idn](images/notation_idn.png){.thumbnail}
+
+Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli Twoja domena wyświetla się w [ratingu międzynarodowym (IDN)](https://pl.wikipedia.org/wiki/Internationalized_Domain_Name){.external} w Panelu klienta, będzie działać i wyświetlać się w sposób całkowicie normalny gdzie indziej. Adres Twojej strony WWW zostanie wyświetlony w żądanym przez Ciebie formacie. Twoje konta e-mail będą się wyświetlały w wybranym przez Ciebie formacie.
+
+> [!warning]
+>
+> Korzystanie z konta e-mail z domeną IDN w programie pocztowym (Outlook, Mail macOS, etc.) nie jest zalecane i może powodować niezgodności.
+>
+
+## Sprawdź również <a name="gofurther"></a>
+
+[FAQ - E-maile na hostingu MX Plan](https://docs.ovh.com/pl/emails/faq-konta-email/)
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

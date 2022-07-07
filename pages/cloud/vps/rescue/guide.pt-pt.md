@@ -1,11 +1,11 @@
 ---
-title: Ativar o Modo Rescue para um VPS
+title: Ativar e utilizar o modo rescue no seu VPS
 slug: rescue
-excerpt: Saiba como iniciar o VPS em Modo Rescue
+excerpt: Saiba como ativar e utilizar o modo rescue no seu VPS
 section: Diagnóstico e Modo Rescue
 ---
 
-**Última atualização: 11/02/2022**
+**Última atualização: 02/05/2022**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -30,7 +30,7 @@ Verificar o modo rescue também ajuda a determinar se existe um problema relacio
 > Se tem serviços em produção no seu VPS, o modo rescue interrompe-os enquanto a máquina não for reiniciada no modo normal.
 > 
 
-**Este guia explica como reiniciar o VPS em modo rescue.**
+**Este guia explica como ativar e utilizar o modo rescue no seu VPS.**
 
 ## Requisitos
 
@@ -46,7 +46,7 @@ Verificar o modo rescue também ajuda a determinar se existe um problema relacio
 
 ### Ativação do modo rescue
 
-Ligue-se à sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na lista de navegação à esquerda em `VPS`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 #### Com uma oferta VPS atual
 
@@ -70,10 +70,46 @@ Depois de iniciar a reinicialização, uma barra de progresso indica o avanço d
 
 > [!primary]
 >
-> Receberá um email automatizado com as informações de identificação SSH para aceder ao modo rescue. Aguarde a receção do e-mail antes de tomar qualquer outra medida. Este e-mail também está disponível na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para aceder, clique no seu ID de cliente OVHcloud no canto superior direito e selecione `E-mails de serviço`{.action}.
+> Receberá um email automatizado com as informações de identificação SSH para aceder ao modo rescue. Aguarde a receção do e-mail antes de tomar qualquer outra medida. Este e-mail também está disponível na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para aceder, clique no seu ID de cliente OVHcloud no canto superior direito e selecione `E-mails de serviço`{.action}.
 >
 
-Pode desde já conectar-se ao VPS via SSH, utilizando as informações de identificação do modo rescue. Uma vez terminadas as ações em modo de rescue, reinicie o VPS em modo "normal" a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+De seguida, deverá aceder ao servidor através de uma linha de comandos ou através de uma ferramenta SSH, utilizando a palavra-passe root gerada para o modo rescue.
+
+Por exemplo:
+
+```bash
+ssh root@your_server_IP
+root@your_server_password:
+```
+
+> [!warning]
+> 
+> É provável que o seu cliente SSH bloqueie a ligação em primeiro lugar, devido a uma incompatibilidade da marca ECDSA. Isto é normal, pois o modo rescue utiliza o seu próprio servidor SSH temporário.
+>
+> Para contornar este problema, pode comentar a pegada do seu sistema habitual adicionando um `#` à frente da sua linha no ficheiro *known_hosts*. Tenha o cuidado de retirar este caráter antes que o servidor volte ao estado normal.
+>
+A maior parte das modificações efetuadas no seu servidor através de SSH em modo rescue requerem a montagem de uma partição. De facto, este modo possui o seu próprio sistema de ficheiros temporários. Por isso, as modificações efetuadas no sistema de ficheiros em modo rescue serão perdidas durante o reboot do servidor em modo normal.
+
+Uma vez ligado, verifique os discos disponíveis com este comando:
+
+```bash
+[RESCUE] root@vps-111111d:~ $ lsblk
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+sda 8:0 0 2.5G 0 disk
+└─sda1 8:1 0 2.5G 0 part /
+sdb 8:16 0 80G 0 disk
+└─sdb1 8:17 0 80G 0 part
+```
+
+A seguir, suba a partição:
+
+```bash
+[RESCUE] root@vps-111111d:~ $ mount /dev/sdb1 /mnt
+```
+
+Os seus dados estarão agora acessíveis a partir da pasta `/mnt`.
+
+Uma vez terminadas as ações em modo de rescue, reinicie o VPS em modo "normal" a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ![rescue mode control panel](images/rescue_exit.png){.thumbnail}
 
@@ -81,6 +117,6 @@ Pode desde já conectar-se ao VPS via SSH, utilizando as informações de identi
 
 [Alterar a palavra-passe root de um VPS](../root-password/)
 
-[Consulte o manual Introdução ao SSH.](../../dedicated/ssh-introducao/)
+[Consulte o manual Introdução ao SSH](../../dedicated/ssh-introducao/)
 
 Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.

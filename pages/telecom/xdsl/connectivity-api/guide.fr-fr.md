@@ -20,7 +20,7 @@ Cette documentation a pour objectif d'aider les développeurs à utiliser nos AP
 
 - Disposer d'un compte OVHcloud actif et connaître ses identifiants.
 - Être sur la page web des [API OVHcloud](https://api.ovh.com/){.external}.
-- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 

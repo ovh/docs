@@ -6,10 +6,10 @@ section: 'Sieć & IP'
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja: 30/03/2022**
+**Ostatnia aktualizacja: 04-05-2022**
 
 ## Wprowadzenie
 
@@ -20,7 +20,7 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 > [!warning]
 >OVHcloud oferuje usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Tym samym odpowiada za zapewnienie ich prawidłowego działania.
 >
->Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja „Sprawdź również” tego przewodnika.
+>Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja “Sprawdź również” tego przewodnika.
 >
 
 ## Wymagania początkowe
@@ -28,6 +28,10 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 - [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/) w ramach konta OVHcloud.
 - Wszystkie informacje o protokole IPv6 (prefiks, brama itd.).
 - Podstawowa wiedza z zakresu [protokołu SSH](../ssh-wprowadzenie/) i sieci.
+
+> [!warning]
+> Serwery Kimsufi są dostarczane z jednym blokiem IPv6 (/128). IPv6 zostanie automatycznie skonfigurowane podczas instalacji systemu operacyjnego.
+>
 
 ## W praktyce
 
@@ -37,19 +41,16 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 
 > [!primary]
 >
-> Domyślną bramą Twojego bloku adresów IPv6 (IPv6_GATEWAY) jest zawsze xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> Domyślną bramą Twojego bloku adresów IPv6 (IPv6_GATEWAY) jest zawsze xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Pamiętaj, że w IPv6 możesz usunąć "0" głowy, aby uniknąć błędów podczas określania mostka.
 >
 > Na przykład:
 > 
-> - Adres IPv6 serwera to 2607:5300:60:62ac::/64. Dlatego bramą IPv6_GATEWAY jest 2607:5300:60:62FF:FF:FF:FF:FF.
-> - Adres IPv6 serwera to 2001:41D0:1:46e::/64. Dlatego bramą IPv6_GATEWAY jest 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - Adres IPv6 serwera to 2607:5300:60:62ac::/64 lub 2607:5300:60:62ac:0000:0000:0000:0000/64. Dlatego bramą IPv6_GATEWAY jest 2607:5300:60:62FF:FF:FF:FF:FF.
+> - Adres IPv6 serwera to 2001:41D0:1:46e::/64 lub 2001:41D0:0001:046e:0000:0000:0000:0000/64. Dlatego bramą IPv6_GATEWAY jest 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
-> Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
+> Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
 >
 
-> [!warning]
-> Należy zauważyć, że serwery Kimsufi są dostarczane z jednym blokiem IPV6 (/128). W takim przypadku skorzystaj z tego [przewodnika](https://docs.ovh.com/pl/vps/konfiguracja-ipv6/) dotyczącego konfiguracji ipv6 na serwerze Kimsufi.
->
 
 > [!api]
 >

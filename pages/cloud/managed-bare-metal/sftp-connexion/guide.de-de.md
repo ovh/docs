@@ -15,7 +15,7 @@ order: 3
 
 Die Verbindung mit Ihren Datastores per SFTP (Secure File Transfert Protocol) ermöglicht es Ihnen, Ihrer Infrastruktur lokal gespeicherte Dateien hinzuzufügen. Sie können sich über ein graphisches Interface mit Programmen wie FileZilla verbinden, verfügbar für Windows und Mac. Außerdem können Sie unter Linux die Kommandozeile zur Verbindung nutzen.
 
-Dieses System lässt Sie nur auf den Ordner „upload-vpn“ Ihrer Datastores zugreifen. Auf diesem Wege kann nicht auf Dateien außerhalb dieses Ordners zugegriffen werden.
+Dieses System lässt Sie nur auf den Ordner “upload-vpn” Ihrer Datastores zugreifen. Auf diesem Wege kann nicht auf Dateien außerhalb dieses Ordners zugegriffen werden.
 
 **Diese Anleitung erklärt, wie Sie sich per SFTP und ein graphisches Interface oder die Kommandozeile verbinden.**
 
@@ -82,7 +82,7 @@ Mit dem Befehl `exit` trennen Sie die Verbindung.
 
 ### Ansicht in vSphere
 
-In Ihrem vSphere Interface können Sie einsehen, was Sie gerade gesandt haben, indem Sie Ihren Datastore durchsuchen. Klicken Sie dazu im Ordner „upload-vpn“ auf den jeweiligen Datastore:
+In Ihrem vSphere Interface können Sie einsehen, was Sie gerade gesandt haben, indem Sie Ihren Datastore durchsuchen. Klicken Sie dazu im Ordner “upload-vpn” auf den jeweiligen Datastore:
 
 ![SFTP Verbindung per vSphere](images/sftpconnection.png){.thumbnail}
 

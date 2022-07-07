@@ -36,13 +36,11 @@ Tenga en cuenta que la redirección puede afectar al posicionamiento de su sitio
 
 ### Redirigir un dominio desde el área de cliente
 
-Una vez conectado al [área de cliente de OVHcloud](https://ovh.com/auth?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda (**1** en la imagen de abajo), seleccione el dominio correspondiente y abra la pestaña `Redireccciones`{.action} (**2** en la imagen de abajo).
+Una vez conectado al [área de cliente de OVHcloud](https://ovh.com/auth?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda, seleccione el dominio correspondiente y abra la pestaña `Redireccciones`{.action}.
 
 Se mostrará una tabla con las redirecciones activas para el dominio.
 
-Haga clic en `Crear una redirección`{.action} (**3** en la imagen de abajo) para añadir una redirección.
-
-![Página principal de las redirecciones](images/create_redirection_global.png){.thumbnail}
+Haga clic en `Crear una redirección`{.action} para añadir una redirección.
 
 Se abrirá una ventana en la que deberá indicar el dominio (o subdominio) que desea redirigir, es decir, el origen de la redirección.
 
@@ -54,7 +52,7 @@ A continuación, elija el tipo de destino al que quiere redirigir el dominio ind
 
 Redirige un dominio hacia otro dominio. Es la mejor opción si ha cambiado el nombre de dominio de su sitio web.
 
-**Redirección hacia un servidor de OVH o externo**
+**Redirección hacia un servidor de OVHcloud o externo**
 
 Modifica la configuración DNS de un dominio sustituyendo el destino (registro A, AAAA o CNAME). Es la mejor opción si su sitio web ya no está alojado en el mismo lugar, pero el dominio sigue siendo el mismo.
 Si su dominio utiliza la configuración de OVHcloud, también puede realizar esta acción directamente desde el área de cliente (ver la guía [Editar una zona DNS de OVHcloud](../web_hosting_como_editar_mi_zona_dns/){.external}).

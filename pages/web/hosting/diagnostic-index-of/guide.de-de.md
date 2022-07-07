@@ -1,17 +1,17 @@
 ---
-title: Was tun, wenn eine "Index of"-Seite angezeigt wird?
-excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn eine "Index of"-Seite angezeigt wird
+title: Was tun, wenn eine “Index of“-Seite angezeigt wird?
+excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn eine “Index of“-Seite angezeigt wird
 slug: diagnose-index-of
 section: Diagnose
 order: 6
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 25.06.2021**
- 
+**Letzte Aktualisierung am 10.05.2022**
+
 ## Ziel
 
 Eine Fehlkonfiguration der `Multisite`-Einstellungen kann dazu führen, dass Ihre Website eine Seite namens **"Index of"** anzeigt.
@@ -33,54 +33,61 @@ Eine Fehlkonfiguration der `Multisite`-Einstellungen kann dazu führen, dass Ihr
 
 ## In der praktischen Anwendung
 
-### Die Ursache der "Index of"-Seite verstehen
+### Den Ursprung der "Index of"-Seite verstehen
 
-Über die `Multisite`-Konfiguration Ihres Hostings wird Ihr Domainname mit einem Ordner (`Wurzelverzeichnis`) in Ihrem [FTP-Speicherplatz](../verbindung-ftp-speicher-webhosting/) verbunden. 
+Über die `Multisite`-Konfiguration Ihres Hostings wird Ihr Domainname mit einem Ordner (`Wurzelverzeichnis`) in Ihrem [FTP-Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) verbunden.
 
-Die Seite **"Index of"** ist ein Anzeichen dafür, dass Ihr Verzeichnis keine Indexdatei, also **index.php** oder **index.html** enthält. Eine solche Datei ist der 'Einstiegspunkt' Ihrer Website. Ihr Domainname muss daher mit einem `Wurzelverzeichnis` verknüpft werden, das eine **index.php** oder **index.html** Datei enthält.
+Die Seite **"Index of"** ist ein Anzeichen dafür, dass Ihr Verzeichnis keine Indexdatei, also **index.php** oder **index.html** enthält. Eine solche Datei ist der 'Einstiegspunkt' Ihrer Website. 
+
+Ihr Domainname muss daher im `Multisite`{.action}-Bereich Ihres Hostings mit einem `Wurzelverzeichnis` verknüpft werden, das eine **index.php** oder **index.html** Datei enthält.
 
 > [!primary]
 >
-> Wenn Sie Ihren Domainnamen temporär mit einem `Wurzelverzeichnis` verbinden möchten, das keine **index.php** oder **index.html** Datei enthält, können Sie verhindern, dass die Auflistung von Ordnern auf Ihrer Website angezeigt wird, indem Sie dieser [Anleitung](../webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich/#verzeichnis-browsing-verhindern) folgen. Sie können auch den Zugang zu Ihren Ordnern mit einem [Passwort](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/) schützen.
+> Wenn Sie Ihren Domainnamen temporär mit einem `Wurzelverzeichnis` verbinden möchten, das keine **index.php** oder **index.html** Datei enthält, können Sie verhindern, dass die Auflistung von Ordnern auf Ihrer Website angezeigt wird, indem Sie [dieser Anleitung](https://docs.ovh.com/de/hosting/webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich/#verzeichnis-browsing-verhindern) folgen. Sie können auch den Zugang zu Ihren Ordnern mit einem [Passwort](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/) schützen.
 >
-> Wir empfehlen Ihnen, einen spezialisierten [Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Schwierigkeiten haben, diese Konfiguration einzurichten. Unsere Support-Teams sind nicht in der Lage, Sie bei Änderungen an der internen Programmierung Ihrer Website zu unterstützen.
+> Wir empfehlen Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Schwierigkeiten haben, diese Konfiguration einzurichten. Unsere Support-Teams sind nicht in der Lage, Sie bei Änderungen an der internen Programmierung Ihrer Webseite zu unterstützen.
 
 ### Die häufigste Ursache einer "Index of"-Seite beheben
 
-Sie haben die Dateien Ihrer Website **mydomain.ovh** per [FTP](../verbindung-ftp-speicher-webhosting/) in den `www`-Ordner Ihres OVHcloud Webhostings importiert. Ihr Domainname ist jedoch nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` Ihrer `Multisite`-Konfiguration verknüpft.
+Sie haben die Dateien Ihrer Website **mydomain.ovh** per [FTP](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) in den `www`-Ordner Ihres OVHcloud Webhostings importiert. Ihr Domainname ist jedoch nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` Ihrer `Multisite`-Konfiguration verknüpft.
 
-![index_of_multisite](images/index_of_multisite.png){.thumbnail}
+![index_multisite](images/index_of_multisite.png){.thumbnail}
 
 Ändern Sie das `Wurzelverzeichnis`, indem Sie in der Zeile des betreffenden Domainnames auf die Schaltfläche `...`{.action} klicken und dann `Domain bearbeiten`{.action} auswählen.
 
 ![modify_domain](images/modify_domain.png){.thumbnail}
 
-Setzen Sie einen Haken bei `Auch die Subdomain www.mydomain.ovh ändern` und geben Sie den Ordnernamen Ihrer Website, der die **index.php** oder **index.html** enthält, als `Wurzelverzeichnis` ein.
+Führen Sie im neuen Fenster die folgenden Aktionen aus:
+
+- Setzen Sie einen Haken bei `Auch die Subdomain www.mydomain.ovh ändern`{.action} (1);
+- Geben Sie den Ordnernamen Ihrer Webseite, der die **index.php** oder **index.html** enthält, als `Wurzelverzeichnis` (2) an;
+- Klicken Sie auf `Weiter`{.action} (3).
+
+![change_root_folder](images/change_root_folder01.png){.thumbnail}
 
 > [!primary]
 >
-> Den `www`-Ordner als `Wurzelverzeichnis` zu verwenden ist nicht zwingend. Sie können Ihre Website auch in einem anderen Ordner innerhalb Ihres [FTP-Speicherplatzes](../verbindung-ftp-speicher-webhosting/) installieren.
+> Den `www`-Ordner als `Wurzelverzeichnis` zu verwenden ist nicht zwingend. Sie können Ihre Webseite auch in einem anderen Ordner innerhalb Ihres [FTP-Speicherplatzes](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) installieren.
+>
 
-Klicken Sie anschließend auf `Weiter`.
-
-![change_root_folder](images/change_root_folder.png){.thumbnail}
-
-Klicken Sie dann auf `Bestätigen`{.action}.
+Klicken Sie anschließend auf `Bestätigen`{.action}.
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
-Sie erhalten das Ergebnis wie in der folgenden Abbildung dargestellt:
+Sie erhalten das Ergebnis innerhalb weniger Minuten (denken Sie daran, Ihren Browser zu aktualisieren) wie in der folgenden Abbildung dargestellt:
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
-## Weiterführende Informationen <a name="gofurther"></a>
+Überprüfen Sie, ob Ihre Webseite korrekt angezeigt wird. Wenn dies nicht der Fall ist, starten Sie Ihr Gerät neu und leeren Sie den Cache Ihres Browsers.
 
-[Die häufigsten Fehler bei 1-Klick-Modulen beheben](../fehler-bei-1-klick-modulen/)
+## Weiterführende Informationen <a name=“gofurther“></a>
 
-[Fehler "Seite nicht installiert" beheben](../webhosting_fehler_-_webseite_ist_nicht_installiert/)
+[Die häufigsten Fehler bei 1-Klick-Modulen beheben](https://docs.ovh.com/de/hosting/fehler-bei-1-klick-modulen/)
 
-[Mehrere Websites auf einem Webhosting einrichten](../multisites-mehrere-websites-konfigurieren/)
+[Fehler “Seite nicht installiert” beheben](https://docs.ovh.com/de/hosting/webhosting_fehler_-_webseite_ist_nicht_installiert/)
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, lesen Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

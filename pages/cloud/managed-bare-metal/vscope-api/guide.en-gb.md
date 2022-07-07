@@ -75,7 +75,7 @@ To collect and use logged data (graphs), we use the **Metrics Data Platforms** p
 Via OpenTSDB or WARP10 protocol, you will be able to retrieve your data as points. You can use these points via your application, or directly display them in your choice of rendering.
 
 
-The folllowing instructions cover the use of the OpenTSDB protocol for a raw data display (no graph rendering).
+The following instructions cover the use of the OpenTSDB protocol for a raw data display (no graph rendering).
 
 To use **Metrics Data Platforms**, you will need to get a *read* token. With the new version of vScope, each infrastructure user has a *read* token. 
 

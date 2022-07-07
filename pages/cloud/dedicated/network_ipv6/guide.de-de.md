@@ -9,7 +9,7 @@ section: 'Netzwerk & IP'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 30.03.2022**
+**Letzte Aktualisierung am 04.05.2022**
 
 ## Ziel
 
@@ -29,6 +29,10 @@ Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol
 - Sie haben Ihre IPv6-Informationen bereit (Präfix, Gateway etc.)
 - Sie verfügen über Grundkenntnisse im Umgang mit [SSH](../ssh-einfuehrung/) und in der Netzwerkverwaltung.
 
+> [!warning]
+> Beachten Sie, dass die Server der Reihe Kimsufi mit einem einzigen IPv6 Block (/128) bereitgestellt werden. IPv6 bei der Installation des Betriebssystems automatisch eingerichtet.
+>
+
 ## In der praktischen Anwendung
 
 Falls Sie für die Installation Ihres Servers ein Linux-OS-Template von OVHcloud verwenden, werden Sie feststellen, dass die erste (Haupt-) IPv6 bereits konfiguriert ist.
@@ -37,19 +41,16 @@ Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wen
 
 > [!primary]
 >
-> Das Standard-Gateway für Ihr IPv6-Block (IPv6_GATEWAY) ist in der Regel xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> Das Standard-Gateway für Ihr IPv6-Block (IPv6_GATEWAY) ist in der Regel xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Beachten Sie, dass führende Nullen in einer IPv6-Adresse gelöscht werden können, um Fehler bei der Bestimmung des Gateways zu vermeiden.
 >
 > Beispiel:
 > 
-> - Die IPv6-Adresse des Servers ist 2607:5300:60:62ac::/64. Das IPv6_GATEWAY ist daher 2607:5300:60:62FF:FF:FF:FF:FF.
-> - Die IPv6-Adresse des Servers ist 2001:41D0:1:46e::/64. Das IPv6_GATEWAY ist daher 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - Die IPv6-Adresse des Servers ist 2607:5300:60:62ac::/64 oder 2607:5300:60:62ac:0000:0000:0000:0000/64. Das IPv6_GATEWAY ist daher 2607:5300:60:62FF:FF:FF:FF:FF.
+> - Die IPv6-Adresse des Servers ist 2001:41D0:1:46e::/64 order 2001:41D0:0001:046e:0000:0000:0000:0000/64. Das IPv6_GATEWAY ist daher 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
-> Der sichere Weg um die Netzwerkinformationen für Ihren Server abzurufen ist die [Verwendung der OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
+> Der sichere Weg um die Netzwerkinformationen für Ihren Server abzurufen ist die [Verwendung der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/). Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
 >
 
-> [!warning]
-> Beachten Sie, dass die Kimsufi Server mit einem einzigen IPV6 Block (/128) bereitgestellt werden. In diesem Fall beachten Sie bitte die [Anleitung](https://docs.ovh.com/de/vps/ipv6-konfigurieren/) für die Konfiguration von IPv6 auf einem Kimsufi Server.
->
 
 > [!api]
 >

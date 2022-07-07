@@ -24,8 +24,8 @@ order: 3
 
 ## Prerequisiti
 
-- un'[istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/) con la fatturazione oraria
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/)
+- un'[istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/) con la fatturazione **oraria**
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[interfaccia Horizon](https://docs.ovh.com/it/public-cloud/horizon/)
 - Conoscenza dell'[API OpenStack](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/) e delle [variabili d’ambiente OpenStack](https://docs.ovh.com/it/public-cloud/impostare-le-variabili-dambiente-openstack/)
 
 ## Procedura
@@ -69,7 +69,7 @@ Lo snapshot sarà disponibile nella sezione `Instance Backup`{.action}. Un'istan
 
 #### Dall'interfaccia Horizon
 
-Per continuare, devi [creare un utente per accedere a horizon](../crea_un_utente_per_accedere_a_horizon/) e [connetterti all'interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Per continuare, devi [creare un utente per accedere a horizon](../horizon/) e [connetterti all'interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Se hai installato istanze in diverse regioni, assicurati di essere nella localizzazione giusta. Puoi verificarlo nell'angolo superiore sinistro dell'interfaccia Horizon.
 

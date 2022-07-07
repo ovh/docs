@@ -7,7 +7,7 @@ order: 1
 hidden: true
 ---
 
-**Last updated 23rd July 2021**
+**Last updated 22th April 2022**
 
 ## Objective
 
@@ -156,6 +156,14 @@ To modify the configuration, click on the red box and carry out the requested op
 Now, you can start using your migrated email addresses. To do this, OVHcloud offers an online interface (_web app_), available here: <https://www.ovh.com/world/mail/>. You will need to enter your email credentials.
 
 If you have configured one of the migrated accounts on an email client (such as Outlook), you must set it up again. The login details for the OVHcloud server have changed following the migration. To help you make changes, please read the relevant guides in the [Hosted Exchange](../) guide section. Even if you are unable to reconfigure the account immediately, access via the online application is still possible.
+
+### Organise the content of your email addresses following a migration <a name=`content-after-migration`></a>
+
+When you first log in to your new email account, the migrated content may be partially hidden. To view all items, from the webmail, click on the chevron next to the `Inbox` to reveal the subfolders. The migrated content of your old email account should appear.
+
+![exchange](images/owa_migrate_content.png) {.thumbnail}
+
+After a migration, please check all of the folders and sub-folders in your account to ensure that all of the elements are present.
 
 ### Migrating manually
 

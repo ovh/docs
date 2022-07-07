@@ -1,15 +1,15 @@
 ---
 title: 'Konfiguracja zapory sieciowej Network Firewall'
-excerpt: 'Dowiedz się, jak skonfigurować reguły firewalla w OVH'
+excerpt: 'Dowiedz się, jak skonfigurować reguły firewalla w OVHcloud'
 slug: network-firewall
 section: 'Sieć & IP'
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 23-12-2021**
+**Ostatnia aktualizacja z dnia 31-05-2022**
 
 ## Wprowadzenie
 
@@ -20,7 +20,7 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 
 > [!primary]
 >
-> Więcej informacji o rozwiązaniu DDoS, znajdziesz na stronie: <https://www.ovh.pl/anti-ddos/>.
+> Więcej informacji o rozwiązaniu DDoS, znajdziesz na stronie: <https://www.ovhcloud.com/pl/security/anti-ddos/>.
 > 
 
 ![Szczegóły dotyczące systemu VAC](images/vac-inside.png){.thumbnail}
@@ -28,9 +28,13 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 
 ## Wymagania początkowe
 
-- Korzystanie z usługi OVHcloud ze zintegrowaną zaporą ogniową, Network Firewall: ([serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/){.external}, [serwer VPS](https://www.ovh.pl/vps/){.external}, [instancje Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pl/private-cloud/){.external}, [IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external}, etc.)
+- Korzystanie z usługi OVHcloud ze zintegrowaną zaporą ogniową, Network Firewall: ([Serwer Dedykowany](https://www.ovhcloud.com/pl/bare-metal/){.external}, [serwer VPS](https://www.ovhcloud.com/pl/vps/){.external}, [instancje Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/){.external}, etc.)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
 
 ## W praktyce
 
@@ -71,6 +75,11 @@ Do dyspozycji masz **20 reguł dla każdego adresu IP**.
 
 ### Konfiguracja zapory Network Firewall 
 
+> [!warning]
+> Network Firewall OVHcloud nie może być używany do otwierania portów na serwerze. Aby otworzyć porty na serwerze, musisz przejść przez firewall systemu operacyjnego zainstalowanego na serwerze<br>
+> Więcej informacji znajdziesz w przewodnikach: [Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/dedicated/firewall-windows/) i [Konfiguracja firewalla w systemie Linux z systemem Iptables](https://docs.ovh.com/pl/dedicated/firewall-iptables/).
+>
+
 Dodawanie reguły odbywa się przez kliknięcie po prawej stronie `Dodaj regułę`{.action}.
 
 ![Dodawanie reguły](images/ajoutregle1.png){.thumbnail}
@@ -101,14 +110,33 @@ Aby pozostawić otwarte tylko porty SSH (22), HTTP (80), HTTPS (443), UDP (na po
 
 ![Przykład konfiguracji.](images/exemple.png){.thumbnail}
 
-Reguły są uporządkowane chronologicznie, od 0 (pierwsza odczytana reguła) do 19 (ostatnia odczytana reguła) i w tym porządku są uruchamiane dla pakietów.  Reguły przestają być sprawdzane, w chwili gdy jedna z nich dotyczy odebranego pakietu.
+Reguły są uporządkowane chronologicznie, od 0 (pierwsza odczytana reguła) do 19 (ostatnia odczytana reguła) i w tym porządku są uruchamiane dla pakietów. Reguły przestają być sprawdzane, w chwili gdy jedna z nich dotyczy odebranego pakietu.
 
 Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez regułę 2, wtedy kolejne reguły nie są już aplikowane.  Pakiet przeznaczony dla portu 25/TCP zostanie przechwycony tylko przy ostatniej regule (19), która zablokuje go, ponieważ OVHcloud nie zezwala na żadną komunikację na porcie 25 w poprzednich regułach.
+
+> [!warning]
+> Jak już wspomniano, powyższa konfiguracja jest tylko przykładem i powinna zostać użyta jako punkt odniesienia, jeśli reguły nie mają zastosowania do usług hostowanych na Twoim serwerze. Konieczne jest skonfigurowanie reguł firewalla w zależności od usług hostowanych na Twoim serwerze. Nieprawidłowa konfiguracja reguł firewall może spowodować zablokowanie prawidłowego ruchu i niedostępność usług serwera.
+>
+
+### Mitygacja ataków - Filtrowanie ataku DDoS - OVH Anty-DDoS
+
+Istnieją trzy tryby filtrowania: automatyczne, stałe lub wymuszone.
+
+**Automatyczne filtrowanie**: Dzięki temu trybowi ruch przechodzi przez system mitygacji tylko wtedy, gdy zostanie wykryty jako "nietypowy" w porównaniu do normalnego ruchu otrzymywanego przez serwer.
+
+**Stałe filtrowanie**: Aktywując stałe filtrowanie, stosujesz pierwszy poziom stałego filtrowania przez sprzęt Shield.<br>
+Cały ruch przechodzi przez system mitygacji zanim dotrze do serwera. Zalecamy ten tryb w przypadku usług będących przedmiotem częstych ataków.<br>
+Pamiętaj, że Firewall Network nie powinien zostać utworzony/aktywowany, aby włączyć stałe filtrowanie dla Twojego IP.
+
+Aby go aktywować, kliknij menu `Bare Metal Cloud`{.action} i otwórz `IP`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie odpowiedniego IPv4 i wybierz `Filtrowanie: tryb stały`{.action}.
+
+**Wymuszone filtrowanie**: Tryb ten jest włączany automatycznie po wykryciu ataku na serwer. Po włączeniu tego trybu nie można wyłączyć. W celu ochrony naszej infrastruktury, ochrona będzie aktywowana przez cały czas trwania ataku, aż do całkowitego zniszczenia infrastruktury.
 
 > [!warning]
 >
 > W chwili gdy włącza się ochrona Anty-DDoS, Twoje reguły zdefiniowane w usłudze Network Firewall zostaną uaktywnione, nawet jeśli je wyłączyłeś. W przypadku dezaktywacji firewalla, pamiętaj o usunięciu reguł.
 > 
+> Pamiętaj, że tłumienie anty-DDoS nie może zostać wyłączone.
 
 ### Konfiguracja zapory Armor (Firewall Game)
 

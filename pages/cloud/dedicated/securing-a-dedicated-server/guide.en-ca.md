@@ -6,7 +6,7 @@ section: Getting started
 order: 2
 ---
 
-**Last updated 2018/06/20**
+**Last updated 20th June 2018**
 
 ## Objective
 
@@ -23,8 +23,8 @@ When you order your dedicated server, no security protocols are implemented nati
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.com/ca/en/dedicated-servers/){.external}
-* a SSH access as administrative (root)
+- A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your OVHcloud account
+- Administrative access (root/sudo) to your server via SSH
 
 ## Instructions
 
@@ -202,10 +202,10 @@ We also have a guide to configuring the [Network Firewall](../firewall-network){
 
 The concept of security is not limited to protecting a system against attacks. Securing your data is a key element, which is why OVHcloud offers you 500GB of free backup storage with your server. You can activate this backup storage in your Control Panel, and access it using the following protocols:
 
-* FTP
-* FTPS
-* NFS
-* CIFS.
+- FTP
+- FTPS
+- NFS
+- CIFS
 
 You will need a third-party backup solution to replicate your data and transfer it to your backup storage.
 

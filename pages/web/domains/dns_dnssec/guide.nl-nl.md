@@ -35,37 +35,37 @@ nsXX.ovh.net and dnsXX.ovh.net, or Xns200.anycast.me dan heeft u de OVH DNS-serv
 
 Selecteer vervolgens de relevante domeinnaam in het 'Domeinen' gedeelte.
 
-![](images/img_2896.jpg){.thumbnail}
+![](images/2896.png){.thumbnail}
 
 - In het 'DNS beheer' gedeelte kunt u nagaan of u OVH DNS servers gebruikt.
 
 
 
-![](images/img_3966.jpg){.thumbnail}
+![](images/3966.png){.thumbnail}
 
 - Zodra u de DNS gecontroleerd heeft klikt u op de 'Beveiligde Delegatie' (DNSSEC) knop.
 
 
 
-![](images/img_3967.jpg){.thumbnail}
+![](images/3967.png){.thumbnail}
 
 - Er zal een pop-up venster verschijnen zodat u de procedure kunt bevestigen. U zult de melding krijgen dat de activering van DNSSEC tot 24 uur kan duren.
 
 
 
-![](images/img_2895.jpg){.thumbnail}
+![](images/2895.png){.thumbnail}
 
 - De beveiligde delegatie-knop wordt dan gekleurd.
 
 
 
-![](images/img_3968.jpg){.thumbnail}
+![](images/3968.png){.thumbnail}
 
 - Vervolgens kunt u in de 'Lopende Acties' tab kijken of de procedure van start is gegaan.
 
 
 
-![](images/img_3969.jpg){.thumbnail}
+![](images/3969.png){.thumbnail}
 
 
 ## Deactivering
@@ -73,13 +73,13 @@ Om DNSSEC uit te schakelen selecteert u opnieuw uw domein en klikt u op de knop 
 
 Hou er rekening mee dat als de activering wordt uitgevoerd u dient te wachten totdat deze is voltooid (de knop zal grijs zijn). Hiermee wordt voorkomen dat de DNSSEC configuratie van uw domein in een tussenstadium blijft staan.
 
-![Deactivering](images/img_3970.jpg){.thumbnail}
+![Deactivering](images/3970.png){.thumbnail}
 
 
 ## Methode 1: gebruik van Firefox en Chrome
 U kunt een Firefox extensie gebruiken, die het mogelijk maakt om te controleren of de sites die u bezoekt, worden beveiligd door DNSSEC, en zo ja, wat het resultaat is van de validatie. Deze extensie [url = http://www.dnssec-validator.cz/]vindt u hier[/url]. Eenmaal geïnstalleerd, ziet u een toets aan de linkerkant van de adresbalk van uw browser. Voor domeinen waar de key groen is, werd het IP geverifieerd via DNSSEC.
 
-![Firefox plugin voor DNSSEC validatie: deze site is beveiligd](images/img_119.jpg){.thumbnail}
+![Firefox plugin voor DNSSEC validatie: deze site is beveiligd](images/119.png){.thumbnail}
 Als de key oranje is dan betekent dit dat de recursieve DNS van uw ISP geen DNSSEC ondersteunt. Dit hoeft geen probleem te zijn: u kunt gebruik maken van alternatieve DNS servers om deze validatie uit te voeren. De Firefox module biedt een lijst die u kunt bekijken door met de rechtermuisknop te klikken op de key en vervolgens de optie "Voorkeuren" te kiezen.
 
 Een alpha-versie van deze extensie is ook beschikbaar voor Chrome op [deze pagina](https://chrome.google.com/webstore/detail/hpmbmjbcmglolhjdcbicfdhmgmcoeknm).

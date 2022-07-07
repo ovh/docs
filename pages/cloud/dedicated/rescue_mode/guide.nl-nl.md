@@ -27,7 +27,7 @@ U kunt de reddingsmode activeren door in te loggen op uw [OVH Control Panel](htt
 
 ![Wijzig de opstartmodus](images/rescue-mode-01.png){.thumbnail}
 
-Selecteer in het volgende scherm `Opstarten in reddingsmodus`{.action}. Als uw server een Linux-besturingssysteem heeft, selecteert u `rescue64-pro`{.action} in de vervolgkeuzelijst. Als u een Windows-server hebt, selecteert u `WinRescue`{.action}. Voer ten slotte uw e-mailadres in het tekstveld in en klik op `Volgende`{.action}.
+Selecteer in het volgende scherm `Opstarten in reddingsmodus`{.action}. Als uw server een Linux-besturingssysteem heeft, selecteert u `rescue-customer`{.action} in de vervolgkeuzelijst. Als u een Windows-server hebt, selecteert u `WinRescue`{.action}. Voer ten slotte uw e-mailadres in het tekstveld in en klik op `Volgende`{.action}.
 
 ![Rescue-pro modus](images/rescue-mode-03.png){.thumbnail}
 
@@ -74,7 +74,7 @@ Voor de meeste wijzigingen die u aanbrengt in uw server via SSH in de reddingsmo
 U kunt partities koppelen met behulp van het commando `mount` in SSH. Allereerst moet u uw partities vermelden, zodat u de naam van de partitie kunt ophalen die u wilt koppelen. U kunt de volgende codevoorbeelden raadplegen:
 
 ```sh
-rescue:~# fdisk -l
+rescue-customer:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders

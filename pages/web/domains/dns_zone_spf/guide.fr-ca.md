@@ -59,7 +59,7 @@ Lorsque vous commandez l'une de ces solutions, nous vous recommandons d'utiliser
 mypersonaldomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-Si votre domaine utilise la configuration OVHcloud, vous pouvez vérifier si un SPF est déjà configuré pour ce dernier. Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, puis dans la barre de services à gauche. Rendez-vous dans la section `Noms de domaine`{.action}. Cliquez ensuite sur le domaine concerné, puis rendez-vous ensuite dans l'onglet `Zone DNS`{.action}.
+Si votre domaine utilise la configuration OVHcloud, vous pouvez vérifier si un SPF est déjà configuré pour ce dernier. Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `Noms de domaine`{.action}. Cliquez ensuite sur le domaine concerné, puis rendez-vous ensuite dans l'onglet `Zone DNS`{.action}.
 
 Un tableau devrait apparaître. Ce dernier affiche la configuration de votre domaine chez OVHcloud. Elle est constituée de plusieurs enregistrements DNS, tous symbolisés par une ligne du tableau.
 
@@ -85,7 +85,7 @@ Dans le tableau, pour retrouver la ligne correspondante au SPF OVHcloud, un cham
 
 ### Étape 3 : modifier le SPF
 
-Pour modifier le SPF dans la configuration OVHcloud de votre domaine, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Dans la barre de services à gauche, rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné, puis rendez-vous ensuite dans l'onglet `Zone DNS`{.action}.
+Pour modifier le SPF dans la configuration OVHcloud de votre domaine, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné, puis rendez-vous ensuite dans l'onglet `Zone DNS`{.action}.
 
 Le tableau affiche la configuration OVHcloud de votre domaine. Chaque ligne correspond à un enregistrement DNS.
 
@@ -124,7 +124,7 @@ Parmi les champs proposés, cliquez sur `SPF`{.action}. Sur l'étape suivante, d
 
 ##### Utiliser le SPF OVHcloud
 
-Cliquez sur le bouton `Utiliser le SPF pour mutualisé OVH`{.action}. Les informations relatives au SPF OVHcloud s'afficheront. Cliquez sur le bouton `Valider`{.action} pour réaliser la modification.
+Cliquez sur le bouton `Utiliser le SPF pour mutualisé OVHcloud`{.action}. Les informations relatives au SPF OVHcloud s'afficheront. Cliquez sur le bouton `Valider`{.action} pour réaliser la modification.
 
 > [!primary]
 >

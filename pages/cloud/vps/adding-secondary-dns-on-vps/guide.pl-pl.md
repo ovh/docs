@@ -6,7 +6,7 @@ section: Poziom zaawansowany
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 12-01-2022**
@@ -33,7 +33,7 @@ Jeśli skonfigurujesz serwer VPS jako serwer DNS, możesz użyć Secondary DNS O
 
 ### Etap 1: odzyskanie kodu <a name="retrievecode"></a>
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie wybierz Twój serwer z menu po lewej stronie w **prywatnych serwerach wirtualnych**.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
 Przejdź do zakładki `DNS secondary`{.action} i kliknij przycisk `Dodaj domenę`{.action}.
 
@@ -55,7 +55,7 @@ Operacja jest inna w zależności od tego, gdzie są zarządzane DNS Twojej dome
 
 - Jeśli domena jest zarządzana przez zewnętrznego operatora domeny **lub** na tym etapie używa zewnętrznych serwerów DNS, zaloguj się do panelu klienta Twojego dostawcy DNS i dodaj w strefie DNS wpis TXT z subdomeną "ownercheck" oraz wartość dodaną wykonując [etap 1](#retrievecode).
 
-- Jeśli domena jest zarządzana przez OVHcloud jako operator **i** używa serwerów DNS OVHcloud, dodaj rekord TXT do sekcji `Web Cloud`{.action} w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Edytuj strefę DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/)", jeśli nie znasz tego procesu.
+- Jeśli domena jest zarządzana przez OVHcloud jako operator **i** używa serwerów DNS OVHcloud, dodaj rekord TXT do sekcji `Web Cloud`{.action} w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Edytuj strefę DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/)”, jeśli nie znasz tego procesu.
 
 ![Secondary DNS](images/sec-04.png){.thumbnail}
 
@@ -83,4 +83,4 @@ Można usunąć domenę klikając przycisk `...`{.action} w tabeli.
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

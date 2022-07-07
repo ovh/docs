@@ -32,7 +32,7 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de la r
 
 A continuación se explica el procedimiento de configuración en las principales distribuciones.
 
-### Debian 10
+### Debian 10/11
 
 #### 1. Crear una copia de seguridad del archivo de configuración
 

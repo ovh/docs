@@ -16,13 +16,13 @@ Assegura-se que possui o Nichandle e a palavra-passe associada para poder ligar-
 
 
 - Obtenha o seu identificador e palavra-passe de acesso FTP para se ligar ao espaço de armazenamento do seu serviço de alojamento partilhado OVH.
-Um guia para obtenção dos dados de acesso FTP está à disposição:[]({legacy}1374)
+Um guia para obtenção dos dados de acesso FTP está à disposição:[prestashop]({legacy}1374)
 
 - É necessário possuir um identificador e palavra-passe da base de dados SQL que lhe permita a ligação a uma base de dados.
-Um guia para obtenção dos dados de acesso à base de dados está à disposição:[]({legacy}1374)
+Um guia para obtenção dos dados de acesso à base de dados está à disposição:[prestashop]({legacy}1374)
 
 
-![](images/img_3158.jpg){.thumbnail}
+![prestashop](images/3158.png){.thumbnail}
 
 
 ## Parte 2: recuperação dos ficheiros "fonte" da instalação
@@ -34,7 +34,7 @@ Um guia para obtenção dos dados de acesso à base de dados está à disposiç�
 
 O ficheiro que vai obter estará, geralmente, comprimido (em formato zip, certamente). Será necessário poder descomprimir esse ficheiro no seu computador. Encontrará na Internet vários tutoriais para ajuda com essa operação.
 
-![](images/img_3159.jpg){.thumbnail}
+![prestashop](images/3159.png){.thumbnail}
 
 
 ## Parte 3: colocação dos ficheiros no seu espaço de armazenamento através de FTP
@@ -50,14 +50,14 @@ Vários tutoriais e softwares de descompressão estão disponíveis na Internet 
 
 A pasta terá o nome "prestashop"
 
-![](images/img_3160.jpg){.thumbnail}
+![prestashop](images/3160.png){.thumbnail}
 
 ## Ligação ao espaço de alojamento através de FTP
 Para colocar os ficheiros de PrestaShop no seu alojamento, deverá ligar-se ao mesmo.
 
-Está à disposição um guia de ajuda à ligação FTP num alojamento partilhado OVH:[]({legacy}1374)
+Está à disposição um guia de ajuda à ligação FTP num alojamento partilhado OVH:[prestashop]({legacy}1374)
 
-![](images/img_3161.jpg){.thumbnail}
+![prestashop](images/3161.png){.thumbnail}
 
 ## Transferência dos ficheiros através de FTP
 Siga estas etapas para colocar os seus ficheiros no espaço FTP.
@@ -75,7 +75,7 @@ Se a pasta não existir, terá  a possibilidade de a criar.
 
 Os seus ficheiros devem estar obrigatoriamente na pasta "www". Se não o fizer, o procedimento de instalação não estará diretamente acessível através do seu nome de domínio.
 
-![](images/img_3162.jpg){.thumbnail}
+![prestashop](images/3162.png){.thumbnail}
 
 ## Etapa 2
 Uma vez abertas as pastas:
@@ -88,7 +88,7 @@ Arraste e largue, de seguida, os ficheiros na secção "Site Distante/Remoto" de
 
 É muito provável que a sua pasta "www" não esteja vazia. Vamos abordar esse assunto mais adiante neste guia.
 
-![](images/img_3163.jpg){.thumbnail}
+![prestashop](images/3163.png){.thumbnail}
 
 ## Etapa 3
 A transferência de ficheiros está em curso.
@@ -99,7 +99,7 @@ Uma vez que a transferência esteja concluída, assegure-se que todos os ficheir
 
 Esta operação é a última da parte consagrada à transferência de ficheiros para o espaço FTP.
 
-![](images/img_3164.jpg){.thumbnail}
+![prestashop](images/3164.png){.thumbnail}
 
 
 ## Parte 4: ligação com a base de dados
@@ -114,14 +114,14 @@ Selecione a linguagem "Português" para a instalação da sua loja PrestaShop.
 
 Clique em "Seguinte" para continuar.
 
-![](images/img_3165.jpg){.thumbnail}
+![prestashop](images/3165.png){.thumbnail}
 
 ## Etapa 2
 Marque a opção "Eu aceito os termos e condições do contrato".
 
 Clique de seguida em "Seguinte" para aceder à etapa seguinte.
 
-![](images/img_3166.jpg){.thumbnail}
+![prestashop](images/3166.png){.thumbnail}
 
 ## Etapa 3
 Serão pedidas informações complementares sobre a loja no ponto em que a está a criar.
@@ -147,7 +147,7 @@ Inscrever-se na newsledtter da PrestaShop: "marque a casa" se desejar receber as
 
 Clique em "Seguinte" para validar as informações relativas à loja PrestaShop.
 
-![](images/img_3167.jpg){.thumbnail}
+![prestashop](images/3167.png){.thumbnail}
 
 ## Etapa 4
 Muna-se dos identificadores da sua base de dados (ajuda no inicio deste guia).
@@ -175,7 +175,7 @@ Clique em "Seguinte" para validar as informações de ligação.
 
 
 
-![](images/img_3168.jpg){.thumbnail}
+![prestashop](images/3168.png){.thumbnail}
 
 
 ## Finalização
@@ -186,7 +186,7 @@ A fim de terminar a instalação do PrestaShop, continue as etapas de instalaç�
 ## Etapa 1
 Deixar que a instalação termine. Após estar a 100% será apresentada uma nova janela.
 
-![](images/img_3169.jpg){.thumbnail}
+![prestashop](images/3169.png){.thumbnail}
 
 ## Etapa 2
 A instalação da loja PrestaShop está terminada!
@@ -198,17 +198,17 @@ Poderá desde já identificar-se e começar a trabalhar na sua loja ao clicar em
 
 
 
-![](images/img_3170.jpg){.thumbnail}
+![prestashop](images/3170.png){.thumbnail}
 
 ## Visualização da parte de administração do PrestaShop
 Encontrará aqui uma pré-visualização do painel de administração PrestaShop.
 
-![](images/img_3171.jpg){.thumbnail}
+![prestashop](images/3171.png){.thumbnail}
 
 
 ## Informações úteis
 O suporte da OVH não está habilitado para responder às suas questões sobre configuração e utilização de PrestaShop.
-Está no entanto disponível um guia para o ajudar na utilização: []({legacy}2053)..
+Está no entanto disponível um guia para o ajudar na utilização: [prestashop]({legacy}2053)..
 
 Convidamo-lo a consultar o [fórum do PrestaShop](https://www.prestashop.com/forums/forum/202-forum-em-portugues/).
 
@@ -227,7 +227,7 @@ Poderá ser interessante apenas mudar o nome para que, caso necessário, possa m
 
 Outra informação útil: Os ficheiros do seu website deverão ser colocados na pasta "www" para que sejam tomados em conta.
 
-![](images/img_3172.jpg){.thumbnail}
+![prestashop](images/3172.png){.thumbnail}
 
 ## Erro clássico: esqueceu-se de eliminar a pasta "install"
 
@@ -235,5 +235,5 @@ Outra informação útil: Os ficheiros do seu website deverão ser colocados na 
 
 
 
-![](images/img_3173.jpg){.thumbnail}
+![prestashop](images/3173.png){.thumbnail}
 

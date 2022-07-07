@@ -26,7 +26,7 @@ Además de los requisitos y limitaciones indicados más abajo, debe asegurarse d
 - Tener un [servidor dedicado de OVHcloud](https://www.ovhcloud.com/es-es/bare-metal/).
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para la sección ["Despliegue desde el área de cliente"](#viacontrolpanel) de esta guía.
 - Estar conectado a la [API de OVHcloud](https://api.ovh.com/){.external} para la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
-- Haber generado los [credenciales para utilizar la APIv6](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) en la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
+- Haber generado los [credenciales para utilizar la APIv6](https://docs.ovh.com/es/api/first-steps-with-ovh-api/) en la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
 - El tamaño de la imagen debe ser inferior al disco o discos instalados en el servidor
 
 > [!warning]

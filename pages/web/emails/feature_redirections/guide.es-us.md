@@ -40,7 +40,7 @@ Existen dos tipos de redirecciones:
 
 ## Procedimiento
 
-La versión puede variar en función de la fecha de activación de su servicio MX Plan o en el caso de que [el servicio haya sido migrado recientemente](https://www.ovhcloud.com/es/web-hosting/mxplan-migration/){.external}. Antes de continuar, compruebe de qué versión dispone. 
+La versión puede variar en función de la fecha de activación de su servicio MX Plan o en el caso de que el servicio haya sido migrado recientemente. Antes de continuar, compruebe de qué versión dispone. 
 
 Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, y vaya a la sección «Web». En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
 

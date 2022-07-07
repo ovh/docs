@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: Les questions les plus fréquemment posées sur les solutions OVHcloud d'accès à Internet 
+title: FAQ solutions internet OVHcloud 
 slug: faq-xdsl-ftth
 section: Premiers pas
 order: 1

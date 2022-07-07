@@ -6,6 +6,12 @@ section: Tutoriais
 order: 1
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 04/05/2022**
+
 ## Introdução
 
 [Ghost](https://ghost.org/){.external} é um gestor de conteúdos open source destinado a blogueiros ou jornalistas que simplifica o processo de publicação na Internet. O programa está escrito em JavaScript e utiliza [Node.js](https://nodejs.org/){.external}, uma plataforma que permite criar websites e API em JavaScript do lado do servidor.
@@ -16,18 +22,17 @@ Neste tutorial, vamos explicar como instalar um blogue com Ghost num alojamento 
 
 ## Requisitos
 
-### O que precisa de saber
-
-- Conhecer as bases do ecossistema Node.js
-- Aceder através de SSH.
-- Editar um ficheiro em linha de comandos com Vim, Emacs ou Nano, por exemplo.
-
 ### O que precisa de ter
 
 - Ter um serviço de [alojamento Cloud Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external}.
 - Ter ativado Node.js como motor de execução.
 - Ter adicionado o domínio em questão como multisite e ter definido Node.js como o motor de execução.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
+- O que precisa de saber:
+    - Conhecer as bases do ecossistema Node.js
+    - Aceder através de SSH.
+    - Editar um ficheiro em linha de comandos com Vim, Emacs ou Nano, por exemplo.
+
 
 ## Instruções
 
@@ -74,7 +79,7 @@ Deverá prestar especial atenção a duas colunas da tabela abaixo. Verifique qu
 Se este não for o caso, adicione um novo multisite ou altere o existente.
 
 - **Se pretender adicionar um multisite**: clique em `Adicionar um domínio ou subdomínio`{.action} à direita da tabela.
-- **Se pretender alterar um multisite**: clique no ícone em forma de roda dentada no final da linha correspondente ao domínio e selecione a opção `Alterar`{.action}.
+- **Se pretender alterar um multisite**: clique no botão `...`{.action} à direita do nome de domínio em causa, e depois em `Modificar`{.action}.
 
 Na nova janela que aparecerá, preencha as informações necessárias em função da sua situação. A tabela abaixo apresenta os valores utilizados neste tutorial.
 
@@ -98,7 +103,7 @@ Clique no separador `Base de dados`{.action} (se não o conseguir ver, clique no
 
 ![ghostcloudweb](images/ghost-cloud-web-step5.png){.thumbnail}
 
-Na nova janela, selecione “MySQL” e escolha uma versão. Para este tutorial, selecionámos a versão 5.6. A seguir, selecione a opção “Armazenado na sua instância Cloud Web” e, por fim, `Seguinte`{.action}.
+Na nova janela, apenas "MySQL", em versão "5.6", está disponível. A seguir, selecione a opção “Armazenado na sua instância Cloud Web” e, por fim, `Seguinte`{.action}.
 
 Personalize um nome de utilizador e defina uma palavra-passe. Depois clique em `Seguinte`{.action}. Confirme a criação da base de dados clicando em `Validar`{.action}. Aguarde alguns minutos até a operação ser finalizada.
 
@@ -124,8 +129,6 @@ Na nova janela que aparecerá, preencha as informações necessárias em funçã
 |database__client|string|mysql|
 |server__port|integer|80|
 |server__host|string|0.0.0.0|
-
-![ghostcloudweb](images/ghost-cloud-web-step8.png){.thumbnail}
 
 ### 5 - Ligar-se ao alojamento Cloud Web por SSH
 
@@ -248,7 +251,7 @@ A instalação e a configuração de Ghost ficam assim concluídas. Só falta re
 
 ### 7 - Reiniciar o *daemon* Node.js
 
-Para reiniciar o *daemon* Node.js, aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No separador `Multi-site`{.action}, clique na roda dentada no final da linha correspondente ao seu nome de domínio e, a seguir, em `Reiniciar`{.action}.
+Para reiniciar o *daemon* Node.js, aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No separador `Multi-site`{.action}, clique no botão `...`{.action} no final da linha correspondente ao domínio.{.action} à direita, em `Reiniciar`{.action}.
 
 Depois de realizar esta operação, a aplicação ficará acessível através do nome de domínio escolhido na configuração do seu multisite.
 
@@ -266,3 +269,19 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ## Conclusão
 
 Neste tutorial, foi-lhe explicado como instalar uma aplicação Node.js num alojamento Cloud Web. Já pode começar a utilizar o Ghost e publicar os seus primeiros conteúdos!
+
+## Quer saber mais? Veja os guias abaixo
+
+[Transferir o meu site para a OVHcloud](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (Versão PT disponível em breve)
+
+[Colocar o meu site online](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external}
+
+[Instalar um CMS com os Módulos 1 clique](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}
+
+[Partilhar o alojamento entre vários sites](https://docs.ovh.com/ie/en/hosting/multisites-configuring-multiple-websites/){.external}
+
+[Como criar um endereço de e-mail](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}
+
+[Utilização do RoundCube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/){.external}
+
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

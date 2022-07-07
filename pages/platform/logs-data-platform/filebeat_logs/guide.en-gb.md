@@ -5,7 +5,7 @@ order: 01
 section: Use cases
 ---
 
-**Last updated 24th July, 2020**
+**Last updated 13th June, 2022**
 
 ## Objective
 
@@ -32,18 +32,22 @@ You can decide to setup Filebeat OSS from a package or to compile it from source
 
 For this part, head to [Filebeat OSS download website](https://www.elastic.co/fr/downloads/past-releases#filebeat-oss){.external} to download the best version for your distribution.
 
-The following configuration files have been tested on the latest version of Filebeat OSS available at the time of writing (**7.9**).
+The following configuration files have been tested on the latest version of Filebeat OSS compatible with OpenSearch (**7.12.1**).
 
 The package will install the config file in the following directory: `/etc/filebeat/filebeat.yml`.
 
 
+> [!warning]
+> Do not use a version superior than the 7.12 version. They are currently not compatible with OpenSearch.
+> More information in the [matrix compatibility documentation](https://opensearch.org/docs/latest/clients/agents-and-ingestion-tools/index/#compatibility-matrix-for-beats){.external}.
+
 ### Configure Filebeat OSS 7.X on your system
 
-In the following example we will enable Apache and Syslog support, but you can easily prospect [anything else](https://www.elastic.co/guide/en/beats/filebeat/7.5/filebeat-modules.html){.external}.
+In the following example we will enable Apache and Syslog support, but you can easily prospect [anything else](https://www.elastic.co/guide/en/beats/filebeat/7.12/filebeat-modules.html){.external}.
 
-Filebeat expect a configuration file named **filebeat.yml** .
+Filebeat expects a configuration file named **filebeat.yml** .
 
-1. For the configuration to work, the important part is to replace hosts: ["`<your_cluster>.logs.ovh.com:5044`"] with the hostname given by Logs Data Platform.
+1. For the configuration to work, it is mandatory to replace hosts: ["`<your_cluster>.logs.ovh.com:5044`"] with the hostname given by Logs Data Platform.
 2. You should also ensure to specify the `X-OVH-TOKEN` of the related stream.
 
 #### Filebeat configuration
@@ -185,16 +189,16 @@ processors:
 ```
 
 
-You can also use our [Elasticsearch endpoint](../ldp-index){.ref} to send your logs. This endpoint support ingest and then ensures a higher performance and a higher compatibility with the modules selected. For legal reasons, we do not support X-Pack modules on this endpoint but any OSS module is supported. To enable this endpoint, replace the Logstash Output configuration with the following snippet:
+You can also use our [OpenSearch endpoint](../ldp-index){.ref} to send your logs. This endpoint support ingest and then ensures a higher performance and a higher compatibility with the modules selected. For legal reasons, we do not support X-Pack modules on this endpoint but any OSS module is supported. To enable this endpoint, replace the Logstash Output configuration with the following snippet:
 
 
-```yaml 
-#==================== Elasticsearch template setting ==========================
+```yaml
+#==================== Output template setting ==========================
 
 setup.template.enabled: false
 setup.ilm.enabled: false
 
-#-------------------------- Elasticsearch output ------------------------------
+#-------------------------- OpenSearch output ------------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
   hosts: ["<your-cluster>.logs.ovh.com:9200"]
@@ -209,9 +213,9 @@ output.elasticsearch:
 
 ```
 
-This configuration deactivates the template configuration (unneeded for our endpoint). You need to provide your credentials **<username>** and **<password>** of your account. Like all Logs Data Platform APIs you can also use [tokens](../tokens-logs-data-platform){.ref}. Don't change **ldp-logs** since it is our special destination index. 
+This configuration deactivates the template configuration (unneeded for our endpoint). You need to provide your credentials **<username>** and **<password>** of your account. Like all Logs Data Platform APIs you can also use [tokens](../tokens-logs-data-platform){.ref}. Don't change **ldp-logs** since it is our special destination index.
 
-When you use Elasticsearch endpoint with filebeat, it will use the [ingest module](https://www.elastic.co/guide/en/logstash/7.9/use-ingest-pipelines.html){.external} to parse and structure the logs. 
+When you use our OpenSearch endpoint with filebeat, it will use the [ingest module](https://www.elastic.co/guide/en/logstash/7.12/use-ingest-pipelines.html){.external} to parse and structure the logs.
 
 #### Enable Apache Filebeat module
 
@@ -277,14 +281,14 @@ Ensure both file path exists on your system.
 
 #### Enable pipelines
 
-If you use the Elasticsearch output, be sure to setup the pipelines by using the following command: 
+If you use the "Elasticsearch output", be sure to setup the pipelines by using the following command:
 
 
 ```shell-session
 $ filebeat setup --pipelines --modules apache,system
 ```
 
-Filebeat will then connect to Elasticsearch and setup the pipelines needed by your modules. 
+Filebeat will then connect to OpenSearch and setup the pipelines needed by your modules.
 
 
 #### Launch Filebeat

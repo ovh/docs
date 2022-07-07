@@ -26,7 +26,7 @@ Before applying backup options, we recommend to consult the [VPS options](https:
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), navigate to the "Bare Metal Cloud" section, and select your server under `Virtual Private Servers`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), open the "Bare Metal Cloud" section, and select your server under `Virtual Private Servers`{.action}.
 
 ### Step 1: Subscribing to the snapshot option
 

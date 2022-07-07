@@ -1,145 +1,95 @@
 ---
-title: 'Partilhado: DynHost'
-excerpt: 'Partilhado: DynHost'
+title: 'Partilhado DynHost'
 slug: partilhado_dynhost
-legacy_guide_number: g2024
+excerpt: 'Saiba como configurar um registo DNS dinâmico (DynHost) para o seu nome de domínio OVHcloud'
+section: 'DNS e zona DNS'
+order: 6
 ---
 
+**Última atualização: 06/06/2018**
 
-## Pré-requisitos
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-- Dispor de um domínio registado na OVH
-- Utilizar os servidores DNS OVH para o seu domínio
+## Objetivo
 
+A zona Domain Name System (DNS) de um domínio constitui o ficheiro de configuração deste último. É composta por informações técnicas, conhecidas como registos. Por várias razões, como o autoalojamento do seu próprio servidor de jogo sem beneficiar de um endereço IP dito "fixo", pode revelar-se indispensável atualizar dinamicamente um registo DNS de forma a evitar uma interrupção prolongada de um dos seus serviços. 
 
+**Saiba como configurar um registo DNS dinâmico (DynHost) para o seu nome de domínio OVHcloud.**
 
+## Requisitos
 
-## Definições
+- Ter acesso à secção de gestão do domínio na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+- Utilizar a configuração da OVHcloud (os servidores DNS) para o domínio em questão.
+- O registo DynHost que está prestes a criar não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A".
 
-- Endereço IP
+> [!warning]
+>
+> - Se o domínio não usar os servidores DNS da OVHcloud, deverá contactar o fornecedor responsável pela configuração para saber o que fazer a seguir.
+> 
+> - Se o domínio estiver registado na OVHcloud, pode verificar se este último utiliza a nossa configuração. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em “Domínios” e selecione o domínio em questão. A seguir, clique no separador `Servidores DNS`{.action}.
+>
 
-Na Internet os computadores comunicam entre eles graças ao protocolo TCP/IP que identificada cada máquina de rede e cada computador sob a forma de um endereço: xxx.xxx.xxx.xxx.
+## Instruções
 
+### 1 - criar um utilizador DynHost
 
-- DNS
+O primeiro passo consiste em criar um utilizador DynHost. que lhe permitirá realizar a atualização do registo DNS dinâmico que pretende criar. Para iniciar a operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Nomes de domínio`{.action} na barra à esquerda e escolha o domínio em causa. Por fim, clique no separador `DynHost`{.action}.
 
-Os utilizadores comunicam com os endereços IP, mas para maior facilidade, esses endereços IP são definidos como nomes de domínio ou endereços mais fáceis de reter: são os DNS (Domain Name System).
+![dynhost](images/use-dynhost-step1.png){.thumbnail}
 
+A seguir, clique no botão `Gerir os acessos`{.action} e, a seguir, em `Criar um identificador`{.action}. Na nova janela, preencha as informações necessárias:
 
-## Para que serve a opção DynHOST?
-Se dispõe de uma ligação à Internet, o seu endereço IP de ligação pode ser alterado a cada ligação.
-DynHOST permite-lhe apontar o seu domínio ou subdomínio para um IP de ligação, e se ele for alterado, poderá atualizá-lo em tempo real com a ajuda de um identificador e de uma password.
-Desta forma, deverá dispor da sua própria ligação à Internet.
+|Informações|Descrição|
+|---|---|
+|Sufixo do identificador|Defina um sufixo ao identificador DynHost que está a criar.|
+|Subdomínio|Especifique o subdomínio afetado pela criação do registo DNS dinâmico.|
+|Palavra-passe|Defina uma palavra-passe para o identificador DynHost e confirme-a.|
 
+Depois de preencher os campos, clique no botão `Validar`{.action}. O identificador aparece no quadro presente na página atual. Repita este passo sempre que necessário se precisar de dados DynHost adicionais.
 
-## Ligação ao Espaço Cliente
+![dynhost](images/use-dynhost-step2.png){.thumbnail}
 
-- Ligue ao seu [Espaço Cliente](https://www.ovh.com/manager/web) com a ajuda do seu identificador (nic-handle) - password.
+### Etapa 2: criar o registo DNS dinâmico (DynHost)
 
-- Clique em "Ligação" para validar a operação.
+A segunda etapa consiste em criar o registo DNS que deverá ser atualizado de forma dinâmica. Relembramos que este não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A". Para o verificar e, se necessário, eliminá-lo, consulte o nosso manual "[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}".
 
+Quando estiver pronto para criar o registo DynHost, clique no separador `DynHost`{.action} e, em seguida, no botão `Adicionar um DynHost`{.action}. Na nova janela, preencha as informações necessárias:
 
+|Informações|Descrição|
+|---|---|
+|Subdomínio|Indique o subdomínio cujo registo DNS deverá ser atualizado de forma dinâmica. Este subdomínio deve corresponder ao domínio indicado durante a criação do utilizador DynHost.|
+|IP de destino|Indique o endereço IP que deve ser atualmente utilizado pelo registo DNS. De acordo com o princípio do DynHost, esta será atualizada posteriormente.|
 
-![](images/img_3443.jpg){.thumbnail}
+Depois de preencher os campos, clique no botão `Validar`{.action}. O registo DynHost aparece no quadro presente na página atual. Repita este passo sempre que necessário se precisar de mais registos DynHost.
 
+![dynhost](images/use-dynhost-step3.png){.thumbnail}
 
-## Seleção do domínio
+### Etapa 3: automatizar a alteração do DynHost
 
-- No menu à esquerda selecione "Domínnios", e depois no "domínio" em que deseja criar um DynHost.
+Agora que o utilizador e o registo DynHost foram criados, a última etapa consiste em automatizar a atualização do registo DNS de forma a que seja realizada de forma dinâmica. Para isso, é necessário utilizar um cliente que se encarregará de verificar regularmente se o endereço IP de destino mudou para o atualizar.
 
+> [!warning]
+>
+> A instalação e a configuração do cliente devem ser realizadas de acordo com os seus conhecimentos. Apresentamos a seguir algumas informações sobre como a realizar. Contudo, se precisar de ajuda, recomendamos que recorra a um prestador de serviços especializado. Não poderemos proporcionar-lhe assistência técnica. 
+>
 
+Uma vez que existem grandes possibilidades, saiba que este cliente pode ser instalado no seu servidor ou no seu computador, ou pode já estar disponível na interface do seu router se este for compatível. Depois de escolher e instalar o cliente, deverá configurá-lo através das informações do utilizador DynHost criado anteriormente.
 
-![](images/img_3444.jpg){.thumbnail}
+Dependendo do cliente utilizado, é possível que seja também necessário um endereço URL de atualização para além dos elementos do utilizador DynHost e do subdomínio em questão. Se for este o caso, utilize o seguinte endereço URL para substituir as informações genéricas:
 
+> https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
 
-## Gestão de acessos
+|Informações|Substituir por|
+|---|---|
+|$HOSTNAME|O subdomínio abrangido pela alteração.|
+|$IP|O novo endereço IP de destino.|
 
-- Clique no separador DynHost, e depois "Gerir os acessos".
+Pode verificar se o endereço IP de destino foi atualizado na sua Área de Cliente a partir do separador `DynHost`{.action}. Verifique o endereço IP que aparece na coluna `Alvo`{.action}.
 
+![dynhost](images/use-dynhost-step4.png){.thumbnail}
 
+## Quer saber mais?
 
-![](images/img_3458.jpg){.thumbnail}
-
-- Clique de seguida  "Criar um Identificador".
-
-
-
-![](images/img_3459.jpg){.thumbnail}
-
-- Indique nessa janela as diferentes informações solicitadas :
-
-- Identificador
-- Subdomínio
-- Password
-
-- Clique depois em "Validar".
-
-
-
-![](images/img_3461.jpg){.thumbnail}
-Poderá de seguida consultar a coMTA que criou bem como o subdomínio associado.
-
-- Clique de seguida no botão voltar.
-
-
-
-![](images/img_3463.jpg){.thumbnail}
-
-
-## Criação do DynHost
-
-- Clique em "Adicionar um DynHost".
-
-
-
-![](images/img_3464.jpg){.thumbnail}
-Indique aqui:
-
-- O subdomínio em que deseja colocar o DynHost.
-- O endereço IP de destino atual
-- Clique de seguida em "Validar".
-
-
-
-![](images/img_3465.jpg){.thumbnail}
-Atenção:
-
-- A criação deste campo leva 24 horas.
-
-
-
--  Poderá de seguida consultar a correta criação do seu DynHst com o subdomínio e o seu endereço IP.
-
-
-
-![](images/img_3470.jpg){.thumbnail}
-Atenção:
-
-- A criação de um registo do tipo A na sua zona DNS é automática. Não deve então criá-lo manualmente nem antes nem depois de ter criado o seu DynHost.
-
-
-
-
-## Bali Dynamic DNS (gratuito)
-
-- No Bali Dynamic DNS, introduza os campos solicitados a verde, de depois clique em "Update IP in database if necessary".
-
-
-
-![](images/img_3477.jpg){.thumbnail}
-
-- O estado "IP changed" aparece, significando que o IP foi atualizado corretamente.
-
-
-
-![](images/img_3478.jpg){.thumbnail}
-
-
-## Direct Update (Shareware)
-
-- No Direct Update, basta-lhe intgroduzir os campos a verde e não se esqueça de deselecionar a opção "Desativar/ignorar a conta".
-
-
-
-![](images/img_3480.jpg){.thumbnail}
-
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

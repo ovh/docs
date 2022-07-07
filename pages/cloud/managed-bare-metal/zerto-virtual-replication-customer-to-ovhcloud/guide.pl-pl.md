@@ -148,13 +148,13 @@ Kliknij przycisk `+`{.action}.
 
 ![zerto vpn](images/image-EN-17.png){.thumbnail}
 
-Sprawdź, czy tryb jest ustawiony na „Tunnel IPv4”.
+Sprawdź, czy tryb jest ustawiony na “Tunnel IPv4”.
 
 ##### 3.2.2 Faza 2: sieć lokalna
 
 ![zerto vpn](images/image-EN-18.png){.thumbnail}
 
-Wybrana sieć lokalna musi być typu „Podsieć lokalna”.
+Wybrana sieć lokalna musi być typu “Podsieć lokalna”.
 
 ##### 3.2.3 Faza 2: sieć zdalna
 
@@ -236,11 +236,11 @@ Kliknij `Add`{.action}, aby utworzyć nową regułę.
 
 Reguła ta zawiera następujące parametry:
 
-- Action: „Pass” (Zezwalaj na ruch)
-- Interfejs: „IPsec” (dozwolony ruch przychodzący z VPN)
-- Protokół: „TCP”
+- Action: “Pass” (Zezwalaj na ruch)
+- Interfejs: “IPsec” (dozwolony ruch przychodzący z VPN)
+- Protokół: “TCP”
 
-Sekcje Source i Destination są typu „Single host or Network” i oznaczają odpowiednio adresy IP ZVM OVHcloud i ZVM klienta.
+Sekcje Source i Destination są typu “Single host or Network” i oznaczają odpowiednio adresy IP ZVM OVHcloud i ZVM klienta.
 
 ![zerto vpn](images/image-EN-28.png){.thumbnail}
 

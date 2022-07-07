@@ -27,8 +27,12 @@ Bei der [Standardkonfiguration des vRack](https://docs.ovh.com/de/dedicated/mehr
 - Sie sind mit dem Administrator-Account eingeloggt (Windows).
 - Sie haben die [Konfiguration des vRack](https://docs.ovh.com/de/dedicated/mehrere-dedizierte-server-im-vrack-konfigurieren/) abgeschlossen.
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Linux
 
@@ -43,7 +47,7 @@ Bei der [Standardkonfiguration des vRack](https://docs.ovh.com/de/dedicated/mehr
 
 Dieses Beispiel basiert auf Ubuntu 21.10 (Impish Indri).
 
-Installieren Sie zuerst das Paket „VLAN“ auf Ihrem Server. Verwenden Sie hierzu folgenden Befehl:
+Installieren Sie zuerst das Paket “VLAN” auf Ihrem Server. Verwenden Sie hierzu folgenden Befehl:
 
 ```bash
 sudo apt-get install vlan
@@ -118,7 +122,7 @@ ip a
 
 #### Debian
 
-Installieren Sie zuerst das Paket „VLAN“ auf Ihrem Server. Verwenden Sie hierzu folgenden Befehl:
+Installieren Sie zuerst das Paket “VLAN” auf Ihrem Server. Verwenden Sie hierzu folgenden Befehl:
 
 ```bash
 sudo apt-get install vlan
@@ -166,15 +170,15 @@ broadcast 192.168.255.255
 
 ### Unter Windows
 
-Verbinden Sie sich über Remote-Desktop mit Ihrem Server und öffnen Sie die Anwendung „Server Manager“. Wählen Sie dann `Local Server`{.action} aus und klicken Sie neben „**NIC Teaming**“ auf den Link `Disabled`{.action}:
+Verbinden Sie sich über Remote-Desktop mit Ihrem Server und öffnen Sie die Anwendung “Server Manager”. Wählen Sie dann `Local Server`{.action} aus und klicken Sie neben “**NIC Teaming**” auf den Link `Disabled`{.action}:
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
-Erstellen Sie anschließend ein neues Team, indem Sie ein Netzwerkinterface auswählen und im Feld „**Team name**“ einen Teamnamen eingeben. Wenn Sie damit fertig sind, bestätigen Sie mit `OK`{.action}.
+Erstellen Sie anschließend ein neues Team, indem Sie ein Netzwerkinterface auswählen und im Feld “**Team name**” einen Teamnamen eingeben. Wenn Sie damit fertig sind, bestätigen Sie mit `OK`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
-Geben Sie nun das VLAN-Tag an. Klicken Sie im „**NIC Teaming**“-Fenster im Panel „**Adapters and Interfaces**“ mit der rechten Maustaste auf das Interface, das Sie gerade zum neuen Team hinzugefügt haben, und klicken Sie dann auf `Properties`{.action}. Klicken Sie jetzt auf `Specific VLAN`{.action} und geben Sie den Tag ein:
+Geben Sie nun das VLAN-Tag an. Klicken Sie im “**NIC Teaming**”-Fenster im Panel “**Adapters and Interfaces**” mit der rechten Maustaste auf das Interface, das Sie gerade zum neuen Team hinzugefügt haben, und klicken Sie dann auf `Properties`{.action}. Klicken Sie jetzt auf `Specific VLAN`{.action} und geben Sie den Tag ein:
 
 ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 
@@ -202,7 +206,7 @@ Doppelklicken Sie auf `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 
-Klicken Sie auf `Use the following IP address`{.action}. Geben Sie in das Feld „**IP-Adresse**“ eine IP-Adresse aus Ihrem internen IP-Bereich ein. Geben Sie in das Feld „**Subnetzmaske**“ die Subnetzmaske „255.255.0.0“ ein.
+Klicken Sie auf `Use the following IP address`{.action}. Geben Sie in das Feld “**IP-Adresse**” eine IP-Adresse aus Ihrem internen IP-Bereich ein. Geben Sie in das Feld “**Subnetzmaske**” die Subnetzmaske “255.255.0.0” ein.
 
 ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
 

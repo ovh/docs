@@ -5,7 +5,7 @@ excerpt: 'Saiba como alterar a palavra-passe de um administrador num servidor de
 section: 'Diagnóstico e Modo Rescue'
 ---
 
-**Última atualização: 16 de dezembro de 2020**
+**Última atualização: 16/12/2020**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -48,7 +48,7 @@ Para mais informações sobre o modo rescue, consulte [este guia](../rescue_mode
 
 ### 2 - Montar a partição do sistema
 
-Ligue-se ao seu servidor através de SSH. Caso seja necessário, consulte o guia da >OVH. Como se trata de um servidor Windows, as partições serão intituladas "Microsoft LDM data".
+Ligue-se ao seu servidor através de SSH. Se necessário, consulte o guia de [introdução ao SSH](../ssh-introducao/). Como se trata de um servidor Windows, as partições serão intituladas "Microsoft LDM data".
 
 ```
 # fdisk -l
@@ -67,7 +67,7 @@ Device          Start        End    Sectors  Size Type
 /dev/sda5  3907028992 3907029134        143 71.5K Microsoft LDM data
 ```
 
-Neste exemplo, "sda4" é a partição do sistema, determinada pelo seu tamanho. Geralmente, existe também uma segunda partição espelho que, neste caso, se chama "/dev/sdb**X**". Na maioria dos casos, o servidor terá vários discos com esquemas de partição idênticos. Para o processo de reinicialização da palavra-passe, apenas o primeiro é importante. 
+Neste exemplo, "sda4" é a partição do sistema, determinada pelo seu tamanho. Geralmente, existe também uma segunda partição espelho que, neste caso, se chama "/dev/sdb**X**”. Na maioria dos casos, o servidor terá vários discos com esquemas de partição idênticos. Para o processo de reinicialização da palavra-passe, apenas o primeiro é importante. 
 
 Agora, monte esta partição:
 
@@ -256,7 +256,7 @@ A interface de ligação deve exibir uma mensagem indicando a expiração da pal
 
 ![pwreset](images/adminpw_win_04.png){.thumbnail}
 
-A nova palavra-passe do utilizador admin deve ser introduzida duas vezes. No entanto, o campo de confirmação ainda não está visível, o que significa que deve deixar o primeiro campo vazio, introduzir a nova palavra-passe no segundo campo e utilizar a tecla de tabulação (" ↹ ") do teclado (virtual) para passar para o terceiro campo ("Confirmar a palavra-passe").
+A nova palavra-passe do utilizador admin deve ser introduzida duas vezes. No entanto, o campo de confirmação ainda não está visível, o que significa que deve deixar o primeiro campo vazio, introduzir a nova palavra-passe no segundo campo e utilizar a tecla de tabulação (“ ↹ ”) do teclado (virtual) para passar para o terceiro campo ("Confirmar a palavra-passe").
 <br>Introduza novamente a password e clique na seta para a gravar.
 
 ![enterpw](images/adminpw_win_05.png){.thumbnail}

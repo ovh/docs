@@ -1,26 +1,28 @@
 ---
 title: Skonfiguruj nową instalację Windows Server
 slug: windows-first-config
-excerpt: Dowiedz się, jak aktywować połączenie ze zdalnym pulpitem i odpowiedź ICMP
+excerpt: Dowiedz się, jak włączyć Pulpit zdalny, ICMP i logi startowe
 section: Pierwsze kroki
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 16-02-2021**
+**Ostatnia aktualizacja z dnia 06-05-2022**
 
 ## Wprowadzenie
 
-Po ponownym zainstalowaniu systemu operacyjnego Windows Server na serwerze VPS zdalny dostęp i odpowiedź ICMP (Internet Control Message Protocol) mogą być czasami wyłączone.
+Po ponownym zainstalowaniu systemu operacyjnego Windows Server na serwerze VPS zdalny dostęp i odpowiedź ICMP (Internet Control Message Protocol) mogą zostać wyłączone.<br>
+Możesz jednak użyć funkcji KVM OVHcloud, aby uzyskać dostęp do serwera VPS i skonfigurować zaporę Windows, aby ponownie aktywować ICMP i zezwolić na połączenia przez Remote Desktop Protocol.<br>
+Aktywacja logów startowych (*boot log*) Windows może być przydatna przy diagnostyce błędów serwera.
 
-**Niniejszy przewodnik wyjaśnia, jak skonfigurować Windows, aby ponownie włączyć ICMP i zezwolić na połączenia przez protokół Remote Desktop Protocol.**
+**Niniejszy przewodnik wyjaśnia, jak aktywować ICMP, Remote Desktop Protocol i logi startowe na serwerze VPS Windows.**
 
 ## Wymagania początkowe
 
 - Dystrybucja Windows zainstalowana na [serwerze VPS](https://www.ovhcloud.com/pl/vps/).
-- Dostęp do Panelu [klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -59,6 +61,24 @@ W tej sekcji możesz włączyć odpowiednie reguły "ICMP" i "Remote Desktop" (z
 ![Aktywny](images/windows5.png){.thumbnail}
 
 Twój serwer powinien odpowiadać na zapytania wykorzystujące te protokoły.
+
+### Aktywacja logów startowych (boot log) Windows (opcjonalnie)
+
+Zaloguj się do serwera przez sesję "zdalny pulpit" lub [KVM](../kvm_na_serwerach_vps/). Otwórz menu Start systemu Windows i kliknij `Uruchom`{.action}.
+
+![Bootlog](images/windowsboot1.png){.thumbnail}
+
+Wprowadź "msconfig" i kliknij `OK`{.action}.
+
+![Bootlog](images/windowsboot2.png){.thumbnail}
+
+W nowym oknie zaznacz kratkę obok `Boot log`. Kliknij `OK`{.action}.
+
+![Bootlog](images/windowsboot3.png){.thumbnail}
+
+Po kolejnym uruchomieniu Twojego serwera logi będą zapisywane w pliku .txt. Droga do pliku to `C:\Windows\ntbtlog.txt`.
+
+Aby uzyskać dostęp do zawartości tego pliku w trybie Rescue, postępuj zgodnie z instrukcjami zawartymi w [przewodniku dotyczącym trybu Rescue serwera VPS](../rescue/).
 
 ## Sprawdź również
 

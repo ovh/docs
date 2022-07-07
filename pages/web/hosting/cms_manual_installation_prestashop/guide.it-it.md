@@ -18,13 +18,13 @@ Assicurati di disporre delle credenziali (Nic-handle e password) di accesso al t
 
 
 - Recupera le credenziali FTP per accedere al tuo hosting Web.
-Per recuperare gli identificativi FTP, consulta la guida []({legacy}1374)
+Per recuperare gli identificativi FTP, consulta la guida [prestashop]({legacy}1374)
 
 - Assicurati di avere a disposizione le credenziali per accedere al tuo database SQL.
-Per recuperare le tue credenziali SQL, consulta la guida []({legacy}1374)
+Per recuperare le tue credenziali SQL, consulta la guida [prestashop]({legacy}1374)
 
 
-![](images/img_3158.jpg){.thumbnail}
+![prestashop](images/3158.png){.thumbnail}
 
 
 ## Parte 2: recupero dei file sorgente
@@ -36,7 +36,7 @@ In genere, il link disponibile ti permette di scaricare l'ultima versione stabil
 
 Il file scaricato generalmente è compresso (.zip). Per aprirlo e installarlo è necessario decomprimerlo.
 
-![](images/img_3159.jpg){.thumbnail}
+![prestashop](images/3159.png){.thumbnail}
 
 
 ## Parte 3: configurazione dei file sull'FTP
@@ -50,14 +50,14 @@ Se hai bisogno di aiuto, segui i numerosi tutorial online e scarica uno dei tant
 
 La cartella di destinazione si chiamerà PrestaShop.
 
-![](images/img_3160.jpg){.thumbnail}
+![prestashop](images/3160.png){.thumbnail}
 
 ## - Accedi al tuo hosting Web via FTP
 Accedi al tuo hosting e salva i file di PrestaShop.
 
-Se hai bisogno di aiuto per accedere in FTP alla tua soluzione di hosting condiviso, consulta la guida []({legacy}1374)
+Se hai bisogno di aiuto per accedere in FTP alla tua soluzione di hosting condiviso, consulta la guida [prestashop]({legacy}1374)
 
-![](images/img_3161.jpg){.thumbnail}
+![prestashop](images/3161.png){.thumbnail}
 
 ## - Trasferisci i tuoi file via FTP
 Per salvare i tuoi file sull'FTP, segui questi step.
@@ -73,7 +73,7 @@ Se questa cartella non esiste, puoi crearla.
 
 Per poter effettuare l'installazione dal tuo dominio, i tuoi file devono necessariamente essere salvati nella cartella "www".
 
-![](images/img_3162.jpg){.thumbnail}
+![prestashop](images/3162.png){.thumbnail}
 
 ## Step 2
 Apri le cartelle:
@@ -86,14 +86,14 @@ Trascina i tuoi file nella cartella "www" della sezione Sito remoto.
 
 È molto probabile che la cartella "www" non sia vuota. Non è obbligatorio eliminare i file presenti al suo interno.
 
-![](images/img_3163.jpg){.thumbnail}
+![prestashop](images/3163.png){.thumbnail}
 
 ## Step 3
 Attendi qualche minuto fino al completo trasferimento dei file sul server FTP remoto.
 
 Al termine dell'operazione, assicurati che tutti i file e le cartelle siano stati spostati correttamente.
 
-![](images/img_3164.jpg){.thumbnail}
+![prestashop](images/3164.png){.thumbnail}
 
 
 ## Parte 4: collega PrestaShop al tuo database
@@ -106,12 +106,12 @@ Inserisci il tuo dominio nella barra degli indirizzi del tuo browser.
 
 Per installare la tua boutique PrestaShop, seleziona la lingua Italiano (Italian)" e clicca su Avanti per continuare.
 
-![](images/img_3165.jpg){.thumbnail}
+![prestashop](images/3165.png){.thumbnail}
 
 ## Step 2
 Seleziona la casella Accetto i termini e le condizioni dei presenti accordi e clicca su Avanti per passare allo step successivo.
 
-![](images/img_3166.jpg){.thumbnail}
+![prestashop](images/3166.png){.thumbnail}
 
 ## Step 3
 Ti vengono richieste alcune informazioni relative al negozio online che vuoi creare:
@@ -136,7 +136,7 @@ Aggiornamento alla newsletter: seleziona questa opzione per ricevere la newslett
 
 Clicca su Successivo per confermare le informazioni inserite.
 
-![](images/img_3167.jpg){.thumbnail}
+![prestashop](images/3167.png){.thumbnail}
 
 ## Step 4
 Inserisci le informazioni del tuo database:
@@ -157,7 +157,7 @@ Una volta completate le informazioni, puoi verificare la connessione al tuo data
 
 Clicca su Avanti pour confermare i dati inseriti.
 
-![](images/img_3168.jpg){.thumbnail}
+![prestashop](images/3168.png){.thumbnail}
 
 
 ## Finalizzazione
@@ -168,7 +168,7 @@ Segui gli step di installazione del CMS per completare l'installazione del tuo s
 ## Step 1
 Attendi fino al completamento dell’installazione. A questo punto, si apre una nuova finestra.
 
-![](images/img_3169.jpg){.thumbnail}
+![prestashop](images/3169.png){.thumbnail}
 
 ## Step 2
 L'installazione del tuo negozio PrestaShop è completata!
@@ -180,16 +180,16 @@ Inserisci le tue credenziali per iniziare subito a gestire il tuo shop online.
 
 
 
-![](images/img_3170.jpg){.thumbnail}
+![prestashop](images/3170.png){.thumbnail}
 
 ## Pannello di amministrazione di PrestaShop
 Una volta effettuato l'accesso, visualizzi il pannello di amministrazione di PrestaShop.
 
-![](images/img_3171.jpg){.thumbnail}
+![prestashop](images/3171.png){.thumbnail}
 
 
 ## Informazioni utili
-Il supporto OVH non risponde alle domande relative alla configurazione del tuo PrestaShop. Se hai bisogno di aiuto, consulta la guida []({legacy}2053) disponibile online o i [forum dedicati](https://www.prestashop.com/forums/forum/57-forum-italiano/) a questa soluzione.
+Il supporto OVH non risponde alle domande relative alla configurazione del tuo PrestaShop. Se hai bisogno di aiuto, consulta la guida [prestashop]({legacy}2053) disponibile online o i [forum dedicati](https://www.prestashop.com/forums/forum/57-forum-italiano/) a questa soluzione.
 
 ## - Errore "Sito in costruzione"
 Hai configurato i tuoi file sul tuo server FTP, ma continui a visualizzare la pagina "Sito in construzione".
@@ -204,7 +204,7 @@ Se rinomini semplicemente il file, puoi riattivarlo in qualsiasi momento per uti
 
 Altre informazioni utili: per essere presi in carico, i file del tuo sito devono trovarsi nella cartella "www".
 
-![](images/img_3172.jpg){.thumbnail}
+![prestashop](images/3172.png){.thumbnail}
 
 ## - Cartella "install" non eliminata
 
@@ -212,5 +212,5 @@ Altre informazioni utili: per essere presi in carico, i file del tuo sito devono
 
 
 
-![](images/img_3173.jpg){.thumbnail}
+![prestashop](images/3173.png){.thumbnail}
 

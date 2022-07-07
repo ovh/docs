@@ -23,7 +23,7 @@ Aby zminimalizować ryzyko błędu podczas wymiany dysku twardego, prosimy naszy
 
 > [!primary]
 >
-> W przypadku dysku NVMe konieczne jest uruchomienie serwera w trybie Rescue64 i użycie zainstalowanego domyślnie na serwerze narzędzia „nvme-cli”.
+> W przypadku dysku NVMe konieczne jest uruchomienie serwera w trybie Rescue64 i użycie zainstalowanego domyślnie na serwerze narzędzia “nvme-cli”.
 > 
 
 ### Ustalenie numeru seryjnego dysku w przypadku programowej macierzy RAID
@@ -95,7 +95,7 @@ Adapter 1
 Virtual Drive Information: Size: 2.727 TB
 ```
 
-W powyższym przykładzie na serwerze znajdują się dwie skonfigurowane macierze RAID: „Adapter 0” i „Adapter 1”. Macierze RAID powinny być zmapowane na `/dev/sda` i `/dev/sdb`.
+W powyższym przykładzie na serwerze znajdują się dwie skonfigurowane macierze RAID: “Adapter 0” i “Adapter 1”. Macierze RAID powinny być zmapowane na `/dev/sda` i `/dev/sdb`.
 
 
 ##### Etap 2: ustalenie informacji dotyczących dysków
@@ -162,15 +162,15 @@ Numer ID urządzenia RAID będzie się wyświetlał w następujący sposób: `/d
 
 Kontroler RAID LSI korzysta z modułu o nazwie `sg-map`, który mapuje urządzenia na `/dev/sgX` (gdzie X to numer określający urządzenie).
 
-Możesz skorzystać z [tego przewodnika (kontroler RAID LSI)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}, aby określić, który dysk twardy odpowiada oznaczonemu urządzeniu „sg”.
+Możesz skorzystać z [tego przewodnika (kontroler RAID LSI)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}, aby określić, który dysk twardy odpowiada oznaczonemu urządzeniu “sg”.
 
-Po odnalezieniu urządzenia „sg” powiązanego z dyskiem twardym, który chcesz przeanalizować, zastosuj następujące polecenie:
+Po odnalezieniu urządzenia “sg” powiązanego z dyskiem twardym, który chcesz przeanalizować, zastosuj następujące polecenie:
 
 ```sh
 # smartctl -a /dev/sgX | grep Serial
 ```
 
-Numer urządzenia „sg” będzie się wyświetlał w następujący sposób: `/dev/sg0`, `/dev/sg1`...
+Numer urządzenia “sg” będzie się wyświetlał w następujący sposób: `/dev/sg0`, `/dev/sg1`...
 
 
 

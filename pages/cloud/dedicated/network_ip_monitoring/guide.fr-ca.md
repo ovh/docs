@@ -87,6 +87,6 @@ En plus du monitoring standard, vous pouvez autoriser à OVHcloud de surveiller 
 
 ## Aller plus loin
 
-[Configurer le Firewall Network](../firewall-network/)
+[Configurer le Network Firewall](../firewall-network/)
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

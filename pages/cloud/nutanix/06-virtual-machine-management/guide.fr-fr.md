@@ -3,10 +3,10 @@ title: Gestion des machines virtuelles
 slug: virtual-machine-management
 excerpt: "Découvrez la gestion des machines virtuelles dans Prism Central"
 section: Premiers pas
-order: 06
+order: 09
 ---
 
-**Dernière mise à jour le 10/03/2022**
+**Dernière mise à jour le 10/05/2022**
 
 ## Objectif
 
@@ -97,7 +97,7 @@ Cliquez sur `Attach Disk`{.action}.
 
 ![Création d'une machine virtuelle - Etape 6](images/CreateVM06.PNG){.thumbnail}
 
-Modifiez les paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **virtio-win-0.1.126.iso**.
+Modifiez les paramètres `Type`{.action} en **CD-ROM**, `Operation`{.action} en **Clone from Image**, `Image`{.action} en **Nutanix-VirtIO-1.1.7.iso**.
 
 Cliquez sur `Save`{.action}.
 
@@ -165,65 +165,44 @@ Prenez connaissance des termes et conditions liés à la licence logicielle Micr
 
 ![Installation - WS2022](images/InstallWS2022-07.PNG){.thumbnail}
 
+Cliquez sur `Custom: Install Microsoft Server Operating System only (advanced)`{.action}.
+
+![Installation - WS2022](images/InstallWS2022-08.PNG){.thumbnail}
+
 Cliquez sur `Load driver`{.action}.
 
-![Installation - WS2022- Etape4](images/InstallWS2022-08.PNG){.thumbnail}
+![Installation - WS2022- Etape4](images/InstallWS2022-09.PNG){.thumbnail}
 
 Cliquez sur `Browse`{.action}.
 
-![Installation - WS2022- Etape5](images/InstallWS2022-09.PNG){.thumbnail}
-
-Sélectionnez le bon dossier `e:\vioscsi\2k16\amd64` et cliquez sur `OK`{.action}.
-
 ![Installation - WS2022- Etape5](images/InstallWS2022-10.PNG){.thumbnail}
 
-Sélectionnnez `Red Hat VirtIO SCSI etc..`{.action} et cliquez sur `Next`{.action}.
+Sélectionnez le bon dossier `e:\Windows Server 2022\amd64` et cliquez sur `OK`{.action}.
 
-![Installation - WS2022- Etape6](images/InstallWS2022-11.PNG){.thumbnail}
+![Installation - WS2022- Etape5](images/InstallWS2022-11.PNG){.thumbnail}
 
-Le disque de 60 GB apparaît, cliquez sur `Next`{.action}.
+Sélectionnez ces pilotes : 
+
+* `Nutanix VirtIO Balloon Driver`{.action}
+* `Nutanix VirtIO Ethernet Adapter`{.action}
+* `Nutanix VirtIO SCSI pass-through controller`{.action}
+* `QEMU FWCfg Device`{.action}
+
+Cliquez sur `Next`{.action}.
 
 ![Installation - WS2022- Etape6](images/InstallWS2022-12.PNG){.thumbnail}
 
-Attendez la fin de l'installation.
+Le disque de 60 GB apparaît, cliquez sur `Next`{.action}.
 
-![Installation - WS2022- Etape7](images/InstallWS2022-13.PNG){.thumbnail}
-
-![Installation - WS2022- Etape8](images/InstallWS2022-14.PNG){.thumbnail}
-
-![Installation - WS2022- Etape9](images/InstallWS2022-15.PNG){.thumbnail}
+![Installation - WS2022- Etape6](images/InstallWS2022-13.PNG){.thumbnail}
 
 Saisissez et confirmez le mot de passe dans les deux champs prévus à cet effet et cliquez sur `Finish`{.action}.
 
-![Installation - WS2022- Etape9](images/InstallWS2022-16.PNG){.thumbnail}
+![Installation - WS2022- Etape9](images/InstallWS2022-14.PNG){.thumbnail}
 
-##### **Installer les pilotes**
+L'installation de Windows Server 2022 et des pilotes spécifiques à WS2022 pour l'hyperviseur **AHV** est terminée.
 
-Allez à présent dans le gestionnaire de périphériques de Windows pour installer le pilote de la carte réseau et un pilote système spécifique à **AHV**.
-
-Faites un clic-droit sur **Ethernet Controller** et cliquez sur `Update Driver`{.action}.
-
-![Post Installation - WS2022- Pilotes Etape 1](images/InstallWS2022-17.PNG){.thumbnail}
-
-Selectionnez le dossier **E:\NetKVM\2k16\amd64** et cliquez sur `Next`{.action}.
-
-![Post Installation - WS2022- Pilotes Etape 3](images/InstallWS2022-18.PNG){.thumbnail}
-
-Cliquez sur `Install`{.action}.
-
-![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-19.PNG){.thumbnail}
-
-Faites clic-droit sur **PCI Device** dans **Other Devices** et cliquez sur `Update Driver`{.action}.
-
-![Post Installation - WS2022- Pilotes Etape 2](images/InstallWS2022-20.PNG){.thumbnail}
-
-Sélectionnez le dossier **E:\Balloon\2k16\amd64** et cliquez sur `Next`{.action}.
-
-![Post Installation - WS2022- Pilotes Etape 3](images/InstallWS2022-21.PNG){.thumbnail}
-
-Pour finir l'installation, cliquez sur `Close`{.action}.
-
-![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-22.PNG){.thumbnail}
+![Installation - WS2022- Etape9](images/InstallWS2022-15.PNG){.thumbnail}
 
 #### Installation des NGT (Nutanix Guest Tools)
 

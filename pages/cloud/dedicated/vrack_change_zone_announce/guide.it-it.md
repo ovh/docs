@@ -19,6 +19,11 @@ La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} è una rete privata c
 - Aver [configurato un blocco IP nella vRack](https://docs.ovh.com/it/dedicated/configurare-blocco-ip-nella-vRack/)
 - Possedere competenze avanzate di rete
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+
 ## Procedura
 
 ### Step 1: verifica la zona annunciata corrente

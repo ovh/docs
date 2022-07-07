@@ -44,7 +44,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients und We
 
 Gehen Sie zunächst über Ihren Webbrowser in das Gmail-Webinterface. Geben Sie dort die Login-Daten Ihres Gmail-Accounts ein, um sich mit diesem zu verbinden.
 
-Wenn Sie im Interface eingeloggt sind, klicken Sie auf das Zahnrad-Symbol und anschließend auf `Einstellungen`{.action}. Klicken Sie im angezeigten Fenster auf den Tab `Konten und Import`{.action}. 
+Wenn Sie im Interface eingeloggt sind, klicken Sie auf das Zahnrad-Symbol und anschließend auf `Alle Einstellungen aufrufen`{.action}. Klicken Sie im angezeigten Fenster auf den Tab `Konten und Import`{.action}. 
 
 ![emailpro](images/configuration-gmail-web-step1.png){.thumbnail}
 

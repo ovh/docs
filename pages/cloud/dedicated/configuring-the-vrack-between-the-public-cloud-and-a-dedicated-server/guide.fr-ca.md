@@ -22,6 +22,11 @@ Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) OVHcloud est un réseau p
 * Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 * Une plage d'adresses IP privées de votre choix
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+
 ## En pratique
 
 ### Ajouter un projet Public Cloud au vRack

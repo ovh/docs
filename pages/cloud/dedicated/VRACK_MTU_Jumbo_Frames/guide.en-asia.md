@@ -18,6 +18,11 @@ Jumbo frames are Ethernet frames with more than 1500 bytes of payload. They can 
 - a [vRack](https://www.ovh.com/asia/solutions/vrack/){.external}.
 - run a shell as root
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/asia/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/asia/compare/) for more information.
+
 > [!primary]
 >
 > MTU size must be the same on all hosts in the same subnet.
@@ -34,7 +39,7 @@ ip link show | grep mtu
 ### Step 2: Setting new MTU size and test command 
 
 ```sh
-ip link set <nom de l’interface> mtu 9000
+ip link set <interface name> mtu 9000
 ```
 
 ### Step 3: Making changes permanent

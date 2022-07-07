@@ -25,14 +25,14 @@ La zona DNS (Domain Name System) de un dominio es el archivo de configuración e
 >
 > - Si el dominio no utiliza los servidores DNS de OVHcloud, debe ponerse en contacto con el proveedor que gestione su configuración para que le informe de los pasos a seguir.
 > 
-> - Si el dominio está registrado con OVHcloud, compruebe que utiliza nuestra configuración. Para ello, en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, seleccione el dominio en la columna izquierda y abra la pestaña `Servidores DNS`{.action}.
+> - Si el dominio está registrado con OVHcloud, compruebe que utiliza nuestra configuración. Para ello, en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, seleccione el dominio y abra la pestaña `Servidores DNS`{.action}.
 >
 
 ## Procedimiento
 
 ### 1. Crear un usuario DynHost
 
-En primer lugar, debe crear un usuario DynHost. Este usuario es necesario para que posteriormente pueda actualizarse el registro DNS dinámico. Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. Abra la pestaña `DynHost`{.action}.
+En primer lugar, debe crear un usuario DynHost. Este usuario es necesario para que posteriormente pueda actualizarse el registro DNS dinámico. Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. Abra la pestaña `DynHost`{.action}.
 
 ![DynHost](images/use-dynhost-step1.png){.thumbnail}
 

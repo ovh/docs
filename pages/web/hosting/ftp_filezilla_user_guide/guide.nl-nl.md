@@ -15,7 +15,7 @@ Deze laatste geeft u ook de mogelijkheid om uw website te uploaden, door u in st
 
 Om dit te gebruiken, ga naar de site: [filezilla.fr](http://filezilla.fr/)
 
-![](images/img_2400.jpg){.thumbnail}
+![FileZilla](images/2400.png){.thumbnail}
 
 
 ## Interface
@@ -36,7 +36,7 @@ De zone 6 toont de wachtrij van de bestanden die zullen worden overgedragen (of 
 
 Het bovenste gedeelte van de interface (onder het groene vak) toont de hostnaam (de server waarmee u bent verbonden), de FTP gebruikersnaam, het wachtwoord en de gebruikte port.
 
-![](images/img_1818.jpg){.thumbnail}
+![FileZilla](images/1818.png){.thumbnail}
 
 ## Menubalk
 De menubalk bevat nuttige icons voor de toegang tot de basisfuncties van het programma. Voor de overdracht van bestanden zijn deze niet allemaal nodig. Een overzicht:
@@ -68,7 +68,7 @@ Om verbinding met de remote server te maken, moet u in het groene vak hierboven 
 
 Zodra alle gegevens correct zijn ingevoerd, klikt u op snel verbinden om de verbinding met de server tot stand te brengen.
 
-![](images/img_1819.jpg){.thumbnail}
+![FileZilla](images/1819.png){.thumbnail}
 
 
 ## SFTP-verbinding
@@ -87,7 +87,7 @@ Om verbinding te maken met de remote server, moet u in het groene vak hierboven,
 Klik op snel verbinden, dit zal een dialoogvenster (zie hierboven) openen om de verbinding met de server te controleren. 
 Als u verbinding maakt met een OVH server, kunt u aanvinken: "Deze host altijd vertrouwen, deze key toevoegen aan de cache", zodat er de volgende keren niet meer om deze bevestiging wordt gevraagd.
 
-![](images/img_1834.jpg){.thumbnail}
+![FileZilla](images/1834.png){.thumbnail}
 
 
 ## Verbindingsfouten
@@ -101,10 +101,10 @@ Controleer of uw inloggegevens juist zijn, indien nodig kunt u het wachtwoord vo
 
 Een handleiding is beschikbaar voor de wijziging van het FTP-wachtwoord op uw webhosting:[]({legacy}1374)
 
-![](images/img_1820.jpg){.thumbnail}
+![FileZilla](images/1820.png){.thumbnail}
 In dit geval wordt de fout gegenereerd door een onjuiste hostnaam.
 
-![](images/img_1824.jpg){.thumbnail}
+![FileZilla](images/1824.png){.thumbnail}
 
 
 ## Het overzetten van bestanden
@@ -116,7 +116,7 @@ Om uw FTP bestanden over te dragen, kunt u deze eenvoudig selecteren en uitvoere
 
 Zodra dit is gebeurd, worden de bestanden automatisch in de wachtrij gezet, zodat het later op de server kan worden geplaatst.
 
-![](images/img_1821.jpg){.thumbnail}
+![FileZilla](images/1821.png){.thumbnail}
 
 
 ## De wachtrij bekijken
@@ -133,7 +133,7 @@ Op dit niveau zult u vinden:
 
 
 
-![](images/img_1822.jpg){.thumbnail}
+![FileZilla](images/1822.png){.thumbnail}
 
 
 ## Server contextmenu
@@ -160,7 +160,7 @@ Voorbeeld van een URL die kan worden gegenereerd:  ftp://loginftp@ftp.cluster0XX
 
 Bestandsrechten: dit geeft u de mogelijkheid om de bestandsrechten (CHMOD) te wijzigen(
 
-![](images/img_1830.jpg){.thumbnail}
+![FileZilla](images/1830.png){.thumbnail}
 
 
 ## Rechten op bestanden & mappen
@@ -174,7 +174,7 @@ Vink aan: "recursie in de submappen".
 
 Dit zal invloed hebben op de rechten van de map in kwestie, evenals de mappen en bestanden die daarin aanwezig kunnen zijn.
 
-![](images/img_1831.jpg){.thumbnail}
+![FileZilla](images/1831.png){.thumbnail}
 
 
 ## Heropenen van de site
@@ -206,7 +206,7 @@ Om te controleren of de heropening effectief was, kunt u simpelweg uw site vanaf
 
 Dit commando werkt niet in SFTP.
 
-![](images/img_1829.jpg){.thumbnail}
+![FileZilla](images/1829.png){.thumbnail}
 Ter herinnering: zorg ervoor dat u het display test in  maximaal 3 uur. Onze robots controleren elke 3 uur de status wijzigingen. Afhankelijk van wanneer de instructies hierboven werden uitgevoerd, zal het herstel van het display van uw site sneller of langzamer verlopen.
 
 Als er drie uur zijn verstreken en uw site is nog niet online, dan kunt u contact opnemen met ons support team.
@@ -217,7 +217,7 @@ Voor binaire bestanden, bijvoorbeeld CGI bestanden, kan het interessant zijn om 
 
 Om dit te wijzigen, selecteer "Transfer" in het hoofdmenu, vervolgens "Transfer Type".
 
-![](images/img_1832.jpg){.thumbnail}
+![FileZilla](images/1832.png){.thumbnail}
 
 
 ## Vergelijking van het bestand
@@ -238,7 +238,7 @@ Kleuren:
 
 
 
-![](images/img_1823.jpg){.thumbnail}
+![FileZilla](images/1823.png){.thumbnail}
 
 
 ## Voorkeuren
@@ -250,14 +250,14 @@ Maar wees voorzichtig, dit kan als misbruik door sommige servers worden beschouw
 
 Om deze instellingen te wijzigen, gaat u naar "Bewerken" en dan "Instellingen" en vervolgens "Verbinding".
 
-![](images/img_1825.jpg){.thumbnail}
+![FileZilla](images/1825.png){.thumbnail}
 
 ## Transfers (overdragen van bestanden)
 Het is mogelijk om de voorkeuren te wijzigen inzake de standaardacties die worden uitgevoerd bij het bewerken van een bestaand bestand. 
 
 Om deze instellingen te wijzigen, gaat u naar "Bewerken" en vervolgens naar "Instellingen" en dan naar "transfers".
 
-![](images/img_1826.jpg){.thumbnail}
+![FileZilla](images/1826.png){.thumbnail}
 
 
 ## Het kennen van de login server
@@ -271,5 +271,5 @@ Met deze verificatie kan bijvoorbeeld worden ingegrepen, indien u eventuele vert
 
 
 
-![](images/img_2399.jpg){.thumbnail}
+![FileZilla](images/2399.png){.thumbnail}
 

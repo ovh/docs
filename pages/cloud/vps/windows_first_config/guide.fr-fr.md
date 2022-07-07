@@ -1,17 +1,19 @@
 ---
 title: Configurer une nouvelle installation de Windows Server
 slug: windows-first-config
-excerpt: Découvrez comment activer la connexion au bureau à distance et la réponse ICMP
+excerpt: "Découvrez comment activer les logs de démarrage, l'ICMP et le bureau à distance"
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 16/02/2021**
+**Dernière mise à jour le 06/05/2022**
 
 ## Objectif
 
-Après une nouvelle installation d'un système d'exploitation Windows Server sur un VPS, l'accès à distance et la réponse ICMP (Internet Control Message Protocol) peuvent parfois être désactivés.
+Après une nouvelle installation d'un système d'exploitation Windows Server sur un VPS, l'accès à distance et la réponse ICMP (Internet Control Message Protocol) peuvent être désactivés.<br>
+Vous pouvez cependant utiliser le KVM d'OVHcloud pour accéder à votre VPS et ainsi configurer le pare-feu Windows pour réactiver ICMP et autoriser les connexions via le Remote Desktop Protocol.<br>
+L'activation des logs de démarrage (*boot logs*) Windows peut être utile pour les diagnostics d'erreurs du serveur.
 
-**Ce guide explique comment configurer Windows afin de réactiver l'ICMP et d'autoriser les connexions via le protocole Remote Desktop Protocol.**
+**Ce guide explique comment activer ICMP, Remote Desktop Protocol et les logs de démarrage sur un VPS Windows.**
 
 ## Prérequis
 
@@ -55,6 +57,24 @@ Vous pouvez activer ici les règles « ICMP » et « Remote Desktop » (bureau �
 ![Activé](images/windows5.png){.thumbnail}
 
 Votre serveur devrait maintenant répondre aux demandes utilisant ces protocoles.
+
+### Activation des logs de démarrage (boot logs) Windows (facultatif)
+
+Connectez-vous à votre serveur via une session « Remote Desktop » (bureau à distance) ou [KVM](../utilisation-kvm-sur-vps/). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
+
+![Bootlog](images/windowsboot1.png){.thumbnail}
+
+Entrez "msconfig" et cliquez sur `OK`{.action}.
+
+![Bootlog](images/windowsboot2.png){.thumbnail}
+
+Dans la nouvelle fenêtre, cochez la case à côté de `Boot log`. Cliquez sur `OK`{.action}.
+
+![Bootlog](images/windowsboot3.png){.thumbnail}
+
+Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier .txt. Le chemin du fichier est `C:\Windows\ntbtlog.txt`.
+
+Pour accéder au contenu de ce fichier en mode rescue, veuillez suivre les instructions décrites dans [le guide du mode rescue du VPS](../mode-rescue-vps/).
 
 ## Aller plus loin
 

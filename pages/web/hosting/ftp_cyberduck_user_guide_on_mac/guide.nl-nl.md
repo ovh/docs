@@ -20,7 +20,7 @@ Om hiervoor te kwalificeren, verwijzen wij u naar de officiële website van de a
 
 
 
-![](images/img_2344.jpg){.thumbnail}
+![cyberduck macOS](images/2344.png){.thumbnail}
 Cyberduck is een applicatie voor gebruikers die MAC gebruiken. Als u een machine met Windows gebruikt, heeft het gebruik van FileZilla de voorkeur: []({legacy}1380)
 
 
@@ -35,7 +35,7 @@ Wanneer u voor het eerst de applicatie start, ziet u het onderstaande scherm.
 
 
 
-![](images/img_2343.jpg){.thumbnail}
+![cyberduck macOS](images/2343.png){.thumbnail}
 Pas de weergave aan van Cyberduck naar uw persoonlijke wensen
 Het is mogelijk om de weergave van Cyberduck aan te passen om het efficiënter en persoonlijker te maken.
 
@@ -43,7 +43,7 @@ Om deze wijziging uit te voeren, klik op  Presentatie, dan op Aanpassen toolbar 
 
 Op het scherm dat nu verschijnt, sleept u de gewenste items naar de toolbar. Om deze wijzigingen op te slaan, klik op Voltooid
 
-![](images/img_2345.jpg){.thumbnail}
+![cyberduck macOS](images/2345.png){.thumbnail}
 
 
 ## FTP gebruik
@@ -63,7 +63,7 @@ Volg de onderstaande stappen, om in te loggen op uw hosting ruimte (FTP):
 4. Klik op Inloggen om verbinding te maken met uw hosting ruimte (FTP)
 
 
-![](images/img_2361.jpg){.thumbnail}
+![cyberduck macOS](images/2361.png){.thumbnail}
 
 - U kunt uw wachtwoord in Cyberduck registreren door te selecteren Toevoeging onthouden van toegang. Deze keuze is niet verplicht; door het niet te selecteren, moet u het wachtwoord opnieuw invoeren om opnieuw in te loggen op uw hosting ruimte.
 
@@ -78,7 +78,7 @@ Een alert verschijnt, waarin wordt vermeld: de server ondersteunt de versleuteld
 
 
 
-![](images/img_2349.jpg){.thumbnail}
+![cyberduck macOS](images/2349.png){.thumbnail}
 
 - Als u niet weet of SSH-toegang is inbegrepen in uw aanbod, zie [beschrijving van ons aanbod](http://www.ovh.com/fr/hebergement-web/).
 
@@ -119,7 +119,7 @@ Om in te loggen op uw hosting ruimte, volg de onderstaande stappen:
 5. Klik op Inloggen om in te loggen op uw hosting ruimte (FTP).
 
 
-![](images/img_2362.jpg){.thumbnail}
+![cyberduck macOS](images/2362.png){.thumbnail}
 
 - U kunt uw wachtwoord in Cyberduck registreren door te selecteren Toevoeging onthouden van toegang. Deze keuze is niet verplicht; door het niet te selecteren, moet u het wachtwoord opnieuw invoeren om opnieuw in te loggen op uw hosting ruimte.
 
@@ -132,7 +132,7 @@ Wanneer u voor het eerst inlogt op uw hosting ruimte, een scherm De host is mome
 
 
 
-![](images/img_2363.jpg){.thumbnail}
+![cyberduck macOS](images/2363.png){.thumbnail}
 
 - Wij raden u aan uw inloggegevens op te slaan via een Signet. Op deze manier kunt u in het geheugen bepaalde inloggegevens bewaren. 
 
@@ -153,7 +153,7 @@ Dit bericht wordt vergezeld van de zinsnede 530 Inlog authentificatie mislukt. I
 
 
 
-![](images/img_2352.jpg){.thumbnail}
+![cyberduck macOS](images/2352.png){.thumbnail}
 
 - Als u uw FTP wachtwoord niet weet, kunt u de volgende handleiding raadplegen: [Mijn FTP inloggegevens ophalen](http://www.ovh.com/fr/g1374.mettre-mon-site-en-ligne#deposer_mes_fichiers_en_ftp_recuperer_mes_identifiants_ftp).
 
@@ -169,7 +169,7 @@ Dit bericht wordt vergezeld van de zin Timed out waiting for initial connect rep
 
 De fout kan ook worden veroorzaakt door een firewall of LAN, die port 21 of 22 blokkeert, deze ports worden gebruikt om verbinding te maken met FTP. U moet in dit geval uw persoonlijke instellingen controleren.
 
-![](images/img_2353.jpg){.thumbnail}
+![cyberduck macOS](images/2353.png){.thumbnail}
 
 - Ter herinnering, de inlog host voor uw hosting ruimte is ftp.uw-domein.tld (vervangen door uw domeinnaam) of ftp.clusterXXX.ovh.net (vervang XXX met uw cluster nummer).
 
@@ -190,7 +190,7 @@ Om deze toevoeging door te voeren:
 
 
 
-![](images/img_2346.jpg){.thumbnail}
+![cyberduck macOS](images/2346.png){.thumbnail}
 Een nieuw scherm verschijnt met daarin uw inloggegevens. De volgende keer dat Cyberduck start, kunt u dubbelklikken op het 'signet' om sneller in te loggen.
 
 
@@ -206,7 +206,7 @@ Om bestanden naar FTP te verplaatsen, kunt u de bestanden selecteren en implemen
 
 
 
-![](images/img_2354.jpg){.thumbnail}
+![cyberduck macOS](images/2354.png){.thumbnail}
 Via de overdragende interface
 U kunt de overdragende[/ blue] interface gebruiken, die een scherm opent en u kunt uw bestanden bekijken. U moet de bestanden die u nodig heeft selecteren en op Transfer klikken.
 
@@ -215,7 +215,7 @@ U kunt de overdragende[/ blue] interface gebruiken, die een scherm opent en u ku
 
 
 
-![](images/img_2355.jpg){.thumbnail}
+![cyberduck macOS](images/2355.png){.thumbnail}
 Bekijk de transfers die nu uitgevoerd worden
 U kunt de historie bekijken van de transfers naar uw hosting ruimte. U vindt hier: 
 
@@ -233,7 +233,7 @@ Dit scherm wordt op twee manieren weergegeven:
 
 
 
-![](images/img_2356.jpg){.thumbnail}
+![cyberduck macOS](images/2356.png){.thumbnail}
 
 
 ## Mogelijke acties op een bestand/map
@@ -252,7 +252,7 @@ Dit laatste zal u toelaten om:
 
 De bovenstaande lijst is niet uitputtend, er zijn andere mogelijke acties. Ga naar de officiële website van Cyberduck indien nodig.
 
-![](images/img_2357.jpg){.thumbnail}
+![cyberduck macOS](images/2357.png){.thumbnail}
 
 
 ## Rechten voor bestanden en mappen
@@ -276,7 +276,7 @@ Op het nieuwe scherm, klik opPermissies voer vervolgens de gewenste wijzigingen 
 
 
 
-![](images/img_2358.jpg){.thumbnail}
+![cyberduck macOS](images/2358.png){.thumbnail}
 
 
 ## Heropening van de site
@@ -292,7 +292,7 @@ Om een commando te gebruiken:
 
 
 
-![](images/img_2359.jpg){.thumbnail}
+![cyberduck macOS](images/2359.png){.thumbnail}
 Voer in het nieuwe scherm het volgende command in:
 
 
@@ -307,7 +307,7 @@ Ter bevestiging, het bericht 200 Permissies gewijzigd op / zal verschijnen in he
 
 
 
-![](images/img_2360.jpg){.thumbnail}
+![cyberduck macOS](images/2360.png){.thumbnail}
 
 - Dit command werkt niet in SFTP. Om het te kunnen gebruiken, gebruikt u een [FTP login](#utiliser_cyberduck_connexion_ftp).
 
@@ -339,5 +339,5 @@ Er moet een kader worden weergegeven onderaan het Cyberduck scherm. Daarna:
 
 
 
-![](images/img_2364.jpg){.thumbnail}
+![cyberduck macOS](images/2364.png){.thumbnail}
 

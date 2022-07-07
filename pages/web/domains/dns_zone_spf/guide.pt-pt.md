@@ -2,13 +2,12 @@
 title: Como configurar o registo SPF de um domínio
 excerpt: Saiba como adicionar um registo SPF à zona DNS do seu domínio
 slug: partilhado_o_campo_spf
-section: Uso avançado
+section: DNS e zona DNS
 order: 5
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 **Última atualização: 25/02/2021**
 
@@ -29,7 +28,6 @@ Resumindo, o registo SPF deve incluir a origem (<i>source</i>) de envio dos e-ma
 > [!primary]
 >
 > O registo SPF é apenas uma indicação dada aos servidores de receção de e-mails. Cabe a estes servidores «aceitarem» ou não a autenticação SPF atribuída aos servidores de envio.
->
 
 **Saiba como configurar um registo SPF no seu domínio da OVHcloud.**
 
@@ -44,7 +42,6 @@ Resumindo, o registo SPF deve incluir a origem (<i>source</i>) de envio dos e-ma
 > Se o domínio não usar os servidores DNS da OVHcloud, a alteração SPF deve ser realizada através da interface do agente responsável pela configuração do domínio.
 >
 > Se o domínio estiver registado na OVHcloud, verifique se este último utiliza a nossa configuração OVHcloud na sua Área de [Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} a partir do separador `Servidores DNS`{.action}, depois de posicionado no domínio em questão.
->
 
 ## Instruções
 
@@ -56,7 +53,7 @@ A configuração da OVHcloud aplica-se às seguintes soluções:
 - [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external};
 - [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}.
 
-Ao encomendar uma destas soluções, recomendamos que utilize um registo SPF com as informações da OVHcloud na zona DNS do seu domínio. Exemplo de parâmetros OVH:
+Ao encomendar uma destas soluções, recomendamos que utilize um registo SPF com as informações da OVHcloud na zona DNS do seu domínio. Exemplo de parâmetros OVHcloud:
 
 ```bash
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
@@ -75,14 +72,13 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.b
 
 ### Verificar a configuração SPF atual
 
-Se o seu domínio estiver a usar a configuração da OVHcloud, verifique se o registo SPF já está configurado. Para isso, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Domínios`{.action} à esquerda, selecione o domínio em questão. Clique no separador `Zona DNS`{.action}.
+Se o seu domínio estiver a usar a configuração da OVHcloud, verifique se o registo SPF já está configurado. Para isso, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Domínios`{.action}, selecione o domínio em questão. Clique no separador `Zona DNS`{.action}.
 
 Irá aparecer uma tabela Este último apresenta a zona DNS do seu domínio na OVHcloud. É constituída por vários registos, todos simbolizados por uma linha da tabela.
 
 > [!primary]
 >
 > Se o seu domínio for gerido pela OVHcloud, verifique se este último utiliza os servidores DNS da OVHcloud a partir do separador `Servidores DNS`{.action}.
->
 
 Na tabela, para consultar a linha correspondente ao SPF OVHcloud, pode utilizar um filtro de visualização. Uma vez que isto pode ocorrer em dois locais diferentes, selecione a opção `TXT`{.action} ou `SPF`{.action}, passando de um para o outro, caso seja necessário. Por conseguinte, a apresentação do quadro pode ser diferente.
 
@@ -95,13 +91,12 @@ Na tabela, para consultar a linha correspondente ao SPF OVHcloud, pode utilizar 
 > [!primary]
 >
 > O SPF tem a seguinte forma: "v=spf1 `fontes` `qualificadoras`". Por exemplo, o SPF da OVHcloud é: "v=spf1 include:mx.ovh.com ~all".
->
 
 ![domínio](images/spf_records_check_OVH_configuration.png){.thumbnail}
 
 ### Configurar o registo SPF
 
-Para adicionar um registo SPF na configuração da OVHcloud do seu domínio, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu à esquerda, selecione `Domínios`{.action}, clique no domínio pretendido e aceda ao separador `Zona DNS`{.action}.
+Para adicionar um registo SPF na configuração da OVHcloud do seu domínio, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `Domínios`{.action}, clique no domínio pretendido e aceda ao separador `Zona DNS`{.action}.
 
 Para adicionar um registo SPF, clique em `Adicionar uma entrada`{.action}.
 
@@ -115,7 +110,6 @@ Na nova janela, irá visualizar vários registos DNS. Para adicionar um SPF, tem
 
 ![domínio](images/spf_records_add_entry.png){.thumbnail}
 
-
 #### Adicionar um registo SPF <a name="spfrecord"></a>
 
 Escolheu o registo `SPF`{.action}
@@ -126,40 +120,38 @@ Vamos abordá-las gradualmente.
 
 ![domínio](images/spf_records_add_entry_personnalize_step1.png){.thumbnail}
 
-|Detalhes|Descrição|
-|---|---|
-|Subdomínio|Indique se o registo SPF deve incluir um subdomínio associado ao seu domínio. Esta opção é válida se usar um subdomínio para enviar e-mail.|
-|TTL|Trata-se do tempo de propagação que será aplicado à configuração deste registo DNS.|
-|Ativar um IP para enviar e-mails| A selecionar se o seu website e os seus endereços de e-mail estiverem alojados num servidor que utilize o mesmo endereço de IP (por exemplo, no seu servidor dedicado).|
-|Autorizar servidores MX para enviarem e-mails|A selecionar se os servidores de receção de e-mails também puderem enviar e-mails.|
-|Autorizar envio a partir de todos os servidores cujo nome inclui o seu domínio.|Opção a utilizar com precaução, pois permite legitimar de forma muito ampla as fontes de envio que utilizam o seu nome de domínio.|
-
+| Detalhes                                                                        | Descrição                                                                                                                                                               |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Subdomínio                                                                      | Indique se o registo SPF deve incluir um subdomínio associado ao seu domínio. Esta opção é válida se usar um subdomínio para enviar e-mail.                             |
+| TTL                                                                             | Trata-se do tempo de propagação que será aplicado à configuração deste registo DNS.                                                                                     |
+| Ativar um IP para enviar e-mails                                                | A selecionar se o seu website e os seus endereços de e-mail estiverem alojados num servidor que utilize o mesmo endereço de IP (por exemplo, no seu servidor dedicado). |
+| Autorizar servidores MX para enviarem e-mails                                   | A selecionar se os servidores de receção de e-mails também puderem enviar e-mails.                                                                                      |
+| Autorizar envio a partir de todos os servidores cujo nome inclui o seu domínio. | Opção a utilizar com precaução, pois permite legitimar de forma muito ampla as fontes de envio que utilizam o seu nome de domínio.                                      |
 
 A questão: «** O correio associado ao seu domínio é enviado a partir de outros servidores ?**», inclui os seguintes campos:
 
-|Detalhes|Descrição|
-|---|---|
-|a|Insira aqui os domínios. Esta opção identifica os servidores de alojamento destes sites como origem fidedigna de envio (i.e. origem fidedigna de envio dos e-mails com os seus endereços).|
-|mx|Permite indicar como fidedignos os servidores de receção de e-mail (servidores MX), se estes também forem usados para enviar correio. Serão assim identificados como uma fonte de envio legítima.|
-|ptr|Introduza aqui os nomes de hosts cuja *reverse* está funcional (graças a um registo PTR na zona DNS). Serão assim identificados como uma fonte de envio legítima.|
-|ip4|Permite indicar como fidedignos os IP ou intervalos de IP (IPv4) usados para a enviar e-mails com os seus endereços.|
-|ip6|Permite indicar como fidedignos os intervalos de IP (IPv6) usados para enviar e-mails com os seus endereços.|
-|include|Introduza aqui os nomes de domínio que incluem as suas próprias regras SPF. Isto irá permitir que estas últimas sejam utilizadas no seu próprio domínio. Por exemplo, a OVHcloud utiliza este método na sua configuração SPF:  "v=spf1 include:mx.ovh.com ~all", o que permite à OVHcloud gerir o SPF de mx.ovh.com e permitir que os seus clientes o utilizem.|
+| Detalhes | Descrição                                                                                                                                                                                                                                                                                                                                                      |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| a        | Insira aqui os domínios. Esta opção identifica os servidores de alojamento destes sites como origem fidedigna de envio (i.e. origem fidedigna de envio dos e-mails com os seus endereços).                                                                                                                                                                     |
+| mx       | Permite indicar como fidedignos os servidores de receção de e-mail (servidores MX), se estes também forem usados para enviar correio. Serão assim identificados como uma fonte de envio legítima.                                                                                                                                                              |
+| ptr      | Introduza aqui os nomes de hosts cuja _reverse_ está funcional (graças a um registo PTR na zona DNS). Serão assim identificados como uma fonte de envio legítima.                                                                                                                                                                                              |
+| ip4      | Permite indicar como fidedignos os IP ou intervalos de IP (IPv4) usados para a enviar e-mails com os seus endereços.                                                                                                                                                                                                                                           |
+| ip6      | Permite indicar como fidedignos os intervalos de IP (IPv6) usados para enviar e-mails com os seus endereços.                                                                                                                                                                                                                                                   |
+| include  | Introduza aqui os nomes de domínio que incluem as suas próprias regras SPF. Isto irá permitir que estas últimas sejam utilizadas no seu próprio domínio. Por exemplo, a OVHcloud utiliza este método na sua configuração SPF: "v=spf1 include:mx.ovh.com ~all", o que permite à OVHcloud gerir o SPF de mx.ovh.com e permitir que os seus clientes o utilizem. |
 
 Por fim, a questão: «** as informações indicadas descrevem todos os hosts que enviam e-mail através do seu domínio?**», oferece três opções:
 
-|Detalhes|Descrição|
-|---|---|
-|Sim, tenho a certeza|Pede aos servidores que recebem e-mails associados ao seu domínio para rejeitarem mensagens de origem não fidedigna (não indicada no registo SPF).|
-|Sim, mas prefiro usar o «safe mode»|Pede aos servidores que recebem e-mails associados ao seu domínio para aceitarem e-mails de origem não fidedigna (não indicada no SPF), e que estes sejam marcados (tagged) como potencialmente não fidedignos (como spam, por exemplo).|
-|Não|Pede aos servidores que recebem e-mails associados ao seu domínio para aceitarem e-mails de origem não fidedigna, sem outras ações. Com esta opção, o cabeçalho (header) do e-mail ficará maior.|
+| Detalhes                            | Descrição                                                                                                                                                                                                                                |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sim, tenho a certeza                | Pede aos servidores que recebem e-mails associados ao seu domínio para rejeitarem mensagens de origem não fidedigna (não indicada no registo SPF).                                                                                       |
+| Sim, mas prefiro usar o «safe mode» | Pede aos servidores que recebem e-mails associados ao seu domínio para aceitarem e-mails de origem não fidedigna (não indicada no SPF), e que estes sejam marcados (tagged) como potencialmente não fidedignos (como spam, por exemplo). |
+| Não                                 | Pede aos servidores que recebem e-mails associados ao seu domínio para aceitarem e-mails de origem não fidedigna, sem outras ações. Com esta opção, o cabeçalho (header) do e-mail ficará maior.                                         |
 
 Depois de inseridas todas as informações, clique em `Seguinte`{.action}. Certifique-se de que as informações estão corretas e clique em `Confirmar`{.action}.
 
 > [!primary]
 >
 > A propagação das alterações efetuadas pode demorar entre 4 e 24 horas.
->
 
 #### Utilizar o registo SPF OVHcloud <a name="spfrecordovhcloud"></a>
 
@@ -172,7 +164,6 @@ Clique no botão `Utilizar o SPF para partilhar a OVHcloud`{.action} no topo da 
 > [!primary]
 >
 > A propagação das alterações efetuadas pode demorar entre 4 e 24 horas.
->
 
 #### Adicionar um registo TXT <a name="txtrecord"></a>
 
@@ -183,13 +174,12 @@ Para terminar a ação, clique em `Seguinte`{.action}. Certifique-se que as info
 > [!primary]
 >
 > A propagação das alterações efetuadas pode demorar entre 4 e 24 horas.
->
 
 ![domínio](images/spf_records_add_TXT_entry.png){.thumbnail}
 
 ### Modificar um registo SPF
 
-Para alterar o registo SPF na configuração OVHcloud do seu domínio, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu à esquerda, selecione `Domínios`{.action}, clique no domínio pretendido e aceda ao separador `Zona DNS`{.action}.
+Para alterar o registo SPF na configuração OVHcloud do seu domínio, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `Domínios`{.action}, clique no domínio pretendido e aceda ao separador `Zona DNS`{.action}.
 
 A tabela apresenta a configuração da OVHcloud do seu domínio. Cada linha corresponde a um registo DNS. Consulte neste quadro o seu registo TXT ou SPF e clique no botão `...`{.action} para editar a entrada.
 

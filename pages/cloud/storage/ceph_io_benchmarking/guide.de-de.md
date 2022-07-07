@@ -41,7 +41,7 @@ rbd -p rbd create --size 1024 --image-format 2 test-image
 Um die Performance zu testen, haben Sie drei Möglichkeiten:
 
 - direkt über RBD
-- das Image einem `/dev/rbd`-Device zuordnen („rbd map“)
+- das Image einem `/dev/rbd`-Device zuordnen (“rbd map”)
 - eine Benchmark in einer virtuellen Maschine ausführen, die auf einem RBD-Image läuft
 
 Für die erste Methode verwenden Sie Fio wie folgt:
@@ -57,7 +57,7 @@ Wird eine Benchmark über ein `/dev/rbd`-Device oder in einer virtuellen Maschin
 - der Cache des Betriebssystems: Er kann den Eindruck erwecken, dass Ihr System eine Zeit lang sehr schnell ist und dann langsamer wird. Verwenden Sie direkte I/O-Operationen, um dies zu vermeiden.
 - die Bearbeitung von FLUSH/FUA-Anfragen im für die Tests verwendeten Stapelspeicher
 - der für die Visualisierung verwendete Hypervisor und/oder Treiber (virtio/scsi)
-- Nicht ausgelasteter Speicher: Machen Sie ein „Warm-up“ für Ihren Speicher bevor Sie eine Benchmark starten oder mehrere Male ausführen.
+- Nicht ausgelasteter Speicher: Machen Sie ein “Warm-up” für Ihren Speicher bevor Sie eine Benchmark starten oder mehrere Male ausführen.
 
 
 ## Eigentliche Benchmark

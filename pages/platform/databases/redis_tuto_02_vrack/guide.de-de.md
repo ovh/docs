@@ -91,7 +91,7 @@ From the Subnetwork list, select the **10.0.0.0/16 - YYY**. The YYY value is the
 
 ![Configure options](images/redis_08_vrack_12.png){.thumbnail}
 
-The final section will display a summary of your order as well as the API equivalent for creating this database instance with the [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent for creating this database instance with the [OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/).
 
 ![Resume database creation](images/redis_08_vrack_13.png){.thumbnail}
 

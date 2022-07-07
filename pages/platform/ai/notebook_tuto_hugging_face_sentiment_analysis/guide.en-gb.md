@@ -6,7 +6,7 @@ section: AI Notebooks tutorials
 order: 5
 ---
 
-**Last updated 6th April, 2022.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
@@ -83,36 +83,21 @@ ovhai notebook run huggingface-transformers jupyterlab \
 	--gpu <nb-gpus>
 	--volume <container@region/prefix:mount_path:permission>
 ```
-
-### Clone the GitHub examples repository
-
-The GitHub repository containing all examples for OVHcloud AI NOTEBOOKS is available [here](https://github.com/ovh/ai-training-examples).
-
-Inside your notebook, open a new Terminal tab by clicking `File`{.action} > `New`{.action} > `Terminal`{.action}.
-
-![image](images/new-terminal.png){.thumbnail}
-
-Run the following command in the notebook’s terminal to clone the repository:
-
-```bash
-git clone https://github.com/ovh/ai-training-examples.git
-```
-
 ### Experiment sentiment analysis on Tweets with OVHcloud examples notebooks
 
 Once the repository has been cloned, find the notebook(s) of your choice.
 
 - Notebook for sentiment analysis with CamemBERT (pt-tblard-tf-allocine):
 
-`ai-training-examples` > `notebooks` > `hugging-face` > `tuto` > `sentiment-analysis-Twitter` > `CamemBERT` > `hugging_face_camembert_sentiment_analysis_tweets.ipynb`
+`ai-training-examples` > `notebooks` > `natural-language-processing` > `text-classification` > `hugging-face` > `sentiment-analysis-twitter` > `CamemBERT` > `hugging_face_camembert_sentiment_analysis_tweets.ipynb`
 
 - Notebook for sentiment analysis with BARThez (barthez-sentiment-classification):
 
-`ai-training-examples` > `notebooks` > `hugging-face` > `tuto` > `sentiment-analysis-Twitter` > `BARThez` > `hugging_face_barthez_sentiment_analysis_tweets.ipynb`
+`ai-training-examples` > `notebooks` > `natural-language-processing` > `text-classification` > `hugging-face` > `sentiment-analysis-twitter` > `BARThez` > `hugging_face_barthez_sentiment_analysis_tweets.ipynb`
 
 - Notebook for sentiment analysis with BERT (bert-base-multilingual-uncased-sentiment):
 
-`ai-training-examples` > `notebooks` > `hugging-face` > `tuto` > `sentiment-analysis-Twitter` > `BERT` > `hugging_face_bert_sentiment_analysis_tweets.ipynb`
+`ai-training-examples` > `notebooks` > `natural-language-processing` > `text-classification` > `hugging-face` > `sentiment-analysis-twitter` > `BERT` > `hugging_face_bert_sentiment_analysis_tweets.ipynb`
 
 Instructions are directly shown inside the notebooks. You can run them with the standard "Play" button inside the notebook interface.
 
@@ -174,7 +159,7 @@ Do not hesitate to test several models!
 
 ### Experimenting the notebooks
 
-A preview of the three notebooks can be found on GitHub [here](https://github.com/ovh/ai-training-examples/tree/main/notebooks/hugging-face/tuto/sentiment-analysis-Twitter).
+A preview of the three notebooks can be found on GitHub [here](https://github.com/ovh/ai-training-examples/tree/main/notebooks/natural-language-processing/text-classification/hugging-face/sentiment-analysis-twitter).
 
 ## Feedback
 

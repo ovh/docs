@@ -75,8 +75,8 @@ Já deve poder ligar-se ao WHM e ao SSH através do utilizador root com a palavr
 
 Recomendamos que tome todas as medidas necessárias para proteger a sua WHM e o seu VPS. Para isso, recomendamos que leia as recomendações do cPanel [aqui](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
 
-Também recomendamos que consulte o nosso manual para [proteger um VPS](../como-proteger-vps/), que utilize as [nossas soluções de backup](../) e que configure a [Firewall Network](../../dedicated/firewall-network/).
+Também recomendamos que consulte o nosso manual para [proteger um VPS](../como-proteger-vps/), que utilize as [nossas soluções de backup](../) e que configure a [Network Firewall](../../dedicated/firewall-network/).
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-hci/'
 excerpt: Presentation of the Nutanix hyperconvergence solution
 section: Erste Schritte
-order: 03
+order: 04
 ---
 
 **Last updated 22nd February 2022**

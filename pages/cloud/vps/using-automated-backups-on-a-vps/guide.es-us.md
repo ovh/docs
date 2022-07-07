@@ -14,7 +14,7 @@ order: 2
 
 ## Objetivo
 
-Esta opción —disponible en el panel de control de OVHcloud— ofrece una forma conveniente de disponer frecuentemente de copias de seguridad completas del servidor virtual privado (VPS) sin tener que conectarse al servidor para crearlas y restaurarlas manualmente. Otra ventaja es que también puede optar por montar una copia de seguridad y acceder a ella a través del protocolo/programa SSH.
+Esta opción disponible desde el área de cliente de OVHcloud le ofrece una forma conveniente de disponer frecuentemente de copias de seguridad completas del servidor virtual privado (VPS) sin tener que conectarse al servidor para crearlas y restaurarlas manualmente. Otra ventaja es que también puede optar por montar una copia de seguridad y acceder a ella a través del protocolo/programa SSH.
 
 **En esta guía, se explica cómo usar copias de seguridad automáticas en su servidor virtual privado (VPS) de OVHcloud.**
 
@@ -25,13 +25,13 @@ Antes de aplicar las opciones de copia de seguridad, le recomendamos que consult
 
 ## Requisitos
 
-- Tener acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Tener un [servicio de servidor virtual privado (VPS)](https://www.ovh.com/world/es/vps) de OVHcloud ya configurado.
 - Tener acceso de administrador (raíz) a su servidor virtual privado (VPS) a través del protocolo/programa SSH (opcional).
 
 ## Procedimiento
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), navegue hasta la sección `Bare Metal Cloud`{.action} y seleccione su servidor en la barra lateral de la izquierda, en `Servidores privados virtuales`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
 ### Paso 1: Suscribirse a la opción «Copias de seguridad automatizadas»
 

@@ -10,7 +10,7 @@ order: 3
 
 ## Wprowadzenie
 
-Wiesz już, jak [się zalogować do VMWare Horizon](https://docs.ovh.com/pl/cloud-desktop-infrastructure/platforma-horizon-7/){.external}, a Twój [szablon puli](https://docs.ovh.com/pl/cloud-desktop-infrastructure/tworzenie-szablonu-puli/){.external} jest gotowy. Teraz utwórz Twoją pierwszą pulę pulpitów.
+Wiesz już, jak [się zalogować do VMware Horizon](https://docs.ovh.com/pl/cloud-desktop-infrastructure/platforma-horizon-7/){.external}, a Twój [szablon puli](https://docs.ovh.com/pl/cloud-desktop-infrastructure/tworzenie-szablonu-puli/){.external} jest gotowy. Teraz utwórz Twoją pierwszą pulę pulpitów.
 
 **Niniejszy przewodnik wyjaśni Ci, jak to zrobić, korzystając z VMware Horizon 7.1.**
 
@@ -34,13 +34,13 @@ Po zalogowaniu się do VMware Horizon wykonaj następujące kroki:
 > [!primary]
 >
 > Istnieją trzy główne typy pul wirtualnych pulpitów: *zautomatyzowana*, *ręczna* oraz *RDS* (Remote Desktop Services).
-> 
+>
 > - *Zautomatyzowane* pule są tworzone na podstawie tego samego szablonu lub snapshota wirtualnej maszyny (VM).
-> 
+>
 > - *Ręczne* pule stacji roboczych są zbiorem wirtualnych maszyn lub komputerów. W przypadku pul *zautomatyzowanych* i *ręcznych* każda maszyna dostępna jest dla jednego zdalnego użytkownika w danym czasie.
 >
 > - Pule stacji roboczych *RDS* (Remote Desktop Service) nie są zbiorem maszyn. Udostępniają sesje stacji roboczej na hostach RDS. Z sesji stacji roboczej na hoście RDS może korzystać kilku użytkowników jednocześnie.
-> 
+>
 
 
 ![tworzenie puli](images/1201.png){.thumbnail}
@@ -69,7 +69,7 @@ Po zalogowaniu się do VMware Horizon wykonaj następujące kroki:
 > [!primary]
 >
 > Zalecamy użycie protokołu **Blast**. Zapewnia on większą płynność (niezależnie od przepustowości Twojego łącza), wyższy poziom bezpieczeństwa, a w przypadku użytkowników korzystających z usługi na urządzeniu przenośnym - istotnie mniejsze zużycie baterii. Więcej informacji o protokole znajdziesz pod [tym linkiem](https://docs.vmware.com/fr/VMware-Horizon-7/7.2/com.vmware.horizon-view.installation.doc/GUID-F64BAD49-78A0-44FE-97EA-76A56FD022D6.html){.external}.
-> 
+>
 
 ![tworzenie puli](images/1205.png){.thumbnail}
 
@@ -90,7 +90,7 @@ Po zalogowaniu się do VMware Horizon wykonaj następujące kroki:
 > [!primary]
 >
 > Jeśli wirtualna maszyna nie pojawia się, wybierz `Show all parent VMs`{.action}, aby poznać przyczynę.
-> 
+>
 
 ![tworzenie puli](images/1209.png){.thumbnail}
 

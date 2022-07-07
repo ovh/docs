@@ -28,7 +28,7 @@ Snapshots sind nützlich, wenn Sie mehrmals zum selben Zustand zurückkehren mö
 
 Auf diese Weise können Sie den Basis-Zustand einer VM sichern, bevor Sie diese auf einen anderen Funktionstyp migrieren. 
 
-Snapshots liefern nützliche „Momentaufnahmen“ einer Festplatte. Dennoch empfehlen wir, die vorhandenen Snapshots regelmäßig zu löschen. Wenn Sie eine große Anzahl an Snapshots haben, belegt dies sehr viel Speicherplatz und beeinträchtigt die Leistung Ihrer VM.
+Snapshots liefern nützliche “Momentaufnahmen” einer Festplatte. Dennoch empfehlen wir, die vorhandenen Snapshots regelmäßig zu löschen. Wenn Sie eine große Anzahl an Snapshots haben, belegt dies sehr viel Speicherplatz und beeinträchtigt die Leistung Ihrer VM.
 
 > [!primary]
 > 

@@ -30,7 +30,7 @@ Instale [la aplicación que desee desde el área de cliente de OVHcloud](https:/
  
 #### cPanel
 
-A continuación se indican los primeros pasos para poner en servicio la imagen preinstalada de cPanel. A las etapas marcadas con un "\*", seguiremos una FAQ.
+A continuación se indican los primeros pasos para poner en servicio la imagen preinstalada de cPanel. A las etapas marcadas con un "*", seguiremos una FAQ.
 
 1. Abra el mensaje de correo electrónico que haya recibido con las claves de acceso a la aplicación.
 2. Haga clic en la URL de cPanel en este email.
@@ -57,7 +57,7 @@ No es necesario realizar ningún otro paso para finalizar la primera configuraci
 > ¿Por qué establecer la contraseña root?
 >> WHM utiliza por defecto el usuario root para la autenticación. La URL de un solo uso permite acceder a la primera configuración y cambiar la contraseña root. La próxima vez que se conecte a WHM, deberá utilizar el usuario root y la contraseña que haya establecido.
 > ¿Dónde está mi licencia para cPanel?
->> Puede contratar su licencia cPanel para su VPS desde [el área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> Puede contratar su licencia cPanel para su VPS desde el [área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Plesk
 
@@ -77,7 +77,7 @@ No es necesario realizar ningún otro paso para finalizar la primera configuraci
 > [!faq]
 >
 > ¿Dónde está mi licencia Plesk?
->> Puede contratar una licencia Plesk para su VPS desde [el área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> Puede contratar una licencia Plesk para su VPS desde el [área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Virtualmin
 

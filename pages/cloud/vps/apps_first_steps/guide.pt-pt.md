@@ -26,7 +26,7 @@ A OVHcloud oferece aos clientes VPS imagens de aplicações pré-instaladas para
 
 ### Instalar a aplicação pré-instalada à sua escolha
 
-A partir [da Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou das API OVHcloud, instale a aplicação que desejar. Também pode consultar o nosso guia [VPS](../instalar-gerir-vps/): primeira utilização
+A partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou das API OVHcloud, instale a aplicação que desejar. Também pode consultar o nosso guia [VPS](../instalar-gerir-vps/): primeira utilização.
 
 #### cPanel
 
@@ -66,7 +66,7 @@ Encontrará abaixo os primeiros passos para a implementação da imagem pré-ins
 1. Abra o e-mail que recebeu com os dados de acesso à aplicação.
 2. Clique no URL do Plesk neste e-mail.
 3. Ligue-se com o nome de utilizador e a palavra-passe presentes no e-mail.
-4. Uma vez ligado, o Plesk irá pedir-lhe:
+4. Uma vez ligado, o Plesk irá pedir-lhe:<br>
     a) Os seus dados.  
     b) Uma nova palavra-passe para o utilizador "admin" que irá utilizar para se ligar à interface do Plesk.  
     c) Informações sobre a licença.*  
@@ -77,7 +77,7 @@ Não é necessário mais nenhuma etapa para terminar a primeira configuração d
 > [!faq]
 >
 > Onde está a minha licença Plesk?
->> Pode encomendar a sua licença Plesk para o seu VPS a partir [da Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> Pode encomendar a sua licença Plesk para o seu VPS a partir da [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Virtualmin
 
@@ -116,13 +116,13 @@ Esta secção aplica-se apenas às instalações WordPress, Drupal, Joomla e Pre
 1. Deve criar ou alterar, na Área de Cliente OVHcloud, dois registos `A `que apontam para o endereço IP do seu servidor. Por exemplo, se o seu nome de domínio for "personaldomain.ovh", deve criar registos `A` para:  
 
      personaldomain.ovh <br>
-     www.personaldomain.ov <br>  
+     www.personaldomain.ovh <br>  
 
-Se o seu domínio estiver registado na OVHcloud, pode seguir [este guia.](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+Se o seu domínio estiver registado na OVHcloud, pode seguir [este guia](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
 <br>Se o seu domínio estiver registado numa outra empresa, deverá contactá-la para obter ajuda na configuração dos seus registos `A`.
 
 <ol start="2">
-  <li>Talvez tenha de esperar 24 horas até que os dois registos se propaguem completamente. Pode sempre verificá-lo com [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. Se o endereço IP do seu domínio for apresentado no mxtoolbox da mesma forma que o do seu servidor, pode passar ao passo seguinte.</li>
+  <li>Talvez tenha de esperar 24 horas até que os dois registos se propaguem completamente. Pode sempre verificá-lo com <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. Se o endereço IP do seu domínio for apresentado no mxtoolbox da mesma forma que o do seu servidor, pode passar ao passo seguinte.</li>
 
   <li>Ligue-se ao seu servidor com o utilizador CentOS em SSH e execute os seguintes comandos para instalar Certbot:</li>
 </ol>

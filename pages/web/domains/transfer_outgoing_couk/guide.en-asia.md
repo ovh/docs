@@ -44,11 +44,9 @@ In case you do not know the required TAG yet, you can request it at your new pro
 
 ### Step 1: Verify the necessary information
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action} in the top navigation bar. Click `Domain names`{.action} in the services bar on the left-hand side, then choose the domain name concerned.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action}. Click `Domain names`{.action} , then choose the domain name concerned.
 
 In the `General information`{.action} tab, you can verify that the requirements for the transfer process are met.
-
-![outgoingtransfer](images/img_4266.jpg){.thumbnail}
 
 
 ### Step 2: Edit your domain name's TAG

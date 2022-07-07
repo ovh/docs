@@ -22,6 +22,11 @@ La [configuration standard du vRack](../configurer-plusieurs-serveurs-dedies-dan
 - Être connecté avec le compte administrateur (Windows).
 - Avoir finalisé la [configuration du vRack](../configurer-plusieurs-serveurs-dedies-dans-le-vrack/){.external}.
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+
 ## En pratique
 
 ### Sous Linux

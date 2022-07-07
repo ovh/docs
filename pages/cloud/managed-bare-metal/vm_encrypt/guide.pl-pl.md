@@ -77,7 +77,7 @@ Pojawia się okno postępu zadania.
 
 Funkcje szyfrowania można aktywować za pośrednictwem API OVHcloud.
 
-Aby uzyskać nazwę „serviceName”, użyj następującego wywołania API:
+Aby uzyskać nazwę “serviceName”, użyj następującego wywołania API:
 
 > [!api]
 >
@@ -105,7 +105,7 @@ Następnie przeprowadź rejestrację serwera KMS:
 
 Aby wykonać tę operację, przygotuj poniższe informacje:
 
-* poprzednio uzyskana nazwa „serviceName”;
+* poprzednio uzyskana nazwa “serviceName”;
 * adres IP serwera KMS;
 * uprzednio uzyskany kod SSLThumbprint serwera KMS Server.
 
@@ -119,11 +119,11 @@ Aby wykonać tę operację, przygotuj poniższe informacje:
 - Gdy vCenter utworzy pierwszy klaster, możesz dodawać do niego nowe instancje KMS tego samego dostawcy. 
 - Możesz skonfigurować klaster z co najmniej jedną instancją KMS.
 - Jeśli Twoje środowisko uwzględnia rozwiązania KMS różnych dostawców, możesz dodać więcej klastrów KMS. 
-- Jeśli środowisko zawiera kilka klastrów KMS i usuniesz domyślny klaster, musisz określić inny jako domyślny. Zobacz „Ustawianie klastra KMS jako domyślnego”.
+- Jeśli środowisko zawiera kilka klastrów KMS i usuniesz domyślny klaster, musisz określić inny jako domyślny. Zobacz “Ustawianie klastra KMS jako domyślnego”.
 
 #### Procedura
 
-Rozpocznij operację, logując się do usługi Managed Bare Metal przy użyciu klienta Web vSphere. Następnie przejrzyj listę zasobów i wybierz vCenter. Kliknij opcję „Zarządzaj”, a następnie „Key Management Servers”. Kliknij `Dodaj KMS`{.action}, a w asystencie, który się pojawi, podaj informacje o KMS i kliknij `OK`{.action}.
+Rozpocznij operację, logując się do usługi Managed Bare Metal przy użyciu klienta Web vSphere. Następnie przejrzyj listę zasobów i wybierz vCenter. Kliknij opcję “Zarządzaj”, a następnie “Key Management Servers”. Kliknij `Dodaj KMS`{.action}, a w asystencie, który się pojawi, podaj informacje o KMS i kliknij `OK`{.action}.
 Kliknij `Trust`{.action}, aby zatwierdzić certyfikat.
 
 ![procédure ajout clé KMS](images/vm-encrypt_01.png){.thumbnail}
@@ -132,22 +132,22 @@ Wybierz następujące opcje:
 
 |Nazwa opcji|Opis|
 |---|---|
-|„KMS cluster”|Wybierz opcję „Utwórz nowy klaster”, aby utworzyć nowy klaster. Jeśli klaster już istnieje, możesz go wybrać.|
-|„Cluster name”|Nazwa klastra KMS. Nazwa ta może być potrzebna do zalogowania się do KMS, jeśli vCenter będzie niedostępny. Bardzo ważne jest, aby nazwa klastra była unikatowa. Należy też ją zanotować.|
-|„Server alias”|Alias serwera KMS. Alias ten może być potrzebny do zalogowania się do KMS, jeśli vCenter będzie niedostępny.|
-|„Server address”|Adres IP lub FQDN serwera KMS.|
-|„Server port”|Port, na którym serwer vCenter loguje się do KMS. Standardowy port KMIP to 5696. Może być też inny, jeśli serwer KMS innego dostawcy jest skonfigurowany na konkretnym porcie.|
-|„Proxy address”|Zostaw to pole puste.|
-|„Proxy port”|Zostaw to pole puste.|
-|„User name”|Niektórzy dostawcy KMS pozwalają użytkownikom na izolowanie kluczy szyfrowania używanych przez różnych użytkowników lub grupy poprzez określenie nazwy użytkownika i hasła. Nazwę użytkownika określ tylko wtedy, jeśli Twój serwer KMS obsługuje tę funkcję i masz zamiar jej używać.|
-|„Password”|Niektórzy dostawcy KMS pozwalają użytkownikom na izolowanie kluczy szyfrowania używanych przez różnych użytkowników lub grupy poprzez określenie nazwy użytkownika i hasła. Hasło określ tylko wtedy, jeśli Twój serwer KMS obsługuje tę funkcję i masz zamiar jej używać.|
+|“KMS cluster”|Wybierz opcję “Utwórz nowy klaster”, aby utworzyć nowy klaster. Jeśli klaster już istnieje, możesz go wybrać.|
+|“Cluster name”|Nazwa klastra KMS. Nazwa ta może być potrzebna do zalogowania się do KMS, jeśli vCenter będzie niedostępny. Bardzo ważne jest, aby nazwa klastra była unikatowa. Należy też ją zanotować.|
+|“Server alias”|Alias serwera KMS. Alias ten może być potrzebny do zalogowania się do KMS, jeśli vCenter będzie niedostępny.|
+|“Server address”|Adres IP lub FQDN serwera KMS.|
+|“Server port”|Port, na którym serwer vCenter loguje się do KMS. Standardowy port KMIP to 5696. Może być też inny, jeśli serwer KMS innego dostawcy jest skonfigurowany na konkretnym porcie.|
+|“Proxy address”|Zostaw to pole puste.|
+|“Proxy port”|Zostaw to pole puste.|
+|“User name”|Niektórzy dostawcy KMS pozwalają użytkownikom na izolowanie kluczy szyfrowania używanych przez różnych użytkowników lub grupy poprzez określenie nazwy użytkownika i hasła. Nazwę użytkownika określ tylko wtedy, jeśli Twój serwer KMS obsługuje tę funkcję i masz zamiar jej używać.|
+|“Password”|Niektórzy dostawcy KMS pozwalają użytkownikom na izolowanie kluczy szyfrowania używanych przez różnych użytkowników lub grupy poprzez określenie nazwy użytkownika i hasła. Hasło określ tylko wtedy, jeśli Twój serwer KMS obsługuje tę funkcję i masz zamiar jej używać.|
 
 
 #### Import certyfikatu KMS
 
 Większość dostawców KMS potrzebuje certyfikatu, aby [nawiązać bezpieczne połączenie](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html){.external} z vCenter.
 
-W vCenter wybierz uprzednio dodany serwer KMS. W sekcji „Wszystkie opcje” kliknij `Ustal zaufane połączenie z KMS`{.action}.
+W vCenter wybierz uprzednio dodany serwer KMS. W sekcji “Wszystkie opcje” kliknij `Ustal zaufane połączenie z KMS`{.action}.
 
 > [!warning]
 >
@@ -158,11 +158,11 @@ W vCenter wybierz uprzednio dodany serwer KMS. W sekcji „Wszystkie opcje” kl
 
 #### Sprawdzanie konfiguracji KMS
 
-Sprawdź, czy **Connection Status** odpowiadający serwerowi KMS jest w trybie „Normal”.
+Sprawdź, czy **Connection Status** odpowiadający serwerowi KMS jest w trybie “Normal”.
 
 ![vérifier connection status](images/vm-encrypt_03.png){.thumbnail}
 
-#### Zmiana polityki przechowywania „VM Encryption Storage”
+#### Zmiana polityki przechowywania “VM Encryption Storage”
 
 Utwórz maszynę wirtualną. Po utworzeniu kliknij ją prawym przyciskiem myszy. Następnie kliknij `VM Policies`{.action}, a potem `Edit VM Storage Policies`{.action}.
 
@@ -176,7 +176,7 @@ Upewnij się, że zadania zostały wykonane bez błędów.
 
 > [!primary]
 >
-> Jeśli serwer KMS nie jest skonfigurowany prawidłowo i występują nieprawidłowości podczas wymiany kluczy między vCenter a KMS, w zadaniu z komunikatem o błędzie „Cannot generate key” pojawi się błąd „RuntimeFault”.
+> Jeśli serwer KMS nie jest skonfigurowany prawidłowo i występują nieprawidłowości podczas wymiany kluczy między vCenter a KMS, w zadaniu z komunikatem o błędzie “Cannot generate key” pojawi się błąd “RuntimeFault”.
 >
 
 #### Zaszyfrowany vMotion

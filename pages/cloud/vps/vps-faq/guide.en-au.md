@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: 'OVHcloud VPS FAQ'
+title: FAQ VPS OVHcloud
 slug: vps-faq
 section: 'Getting started'
 order: 1

@@ -21,11 +21,11 @@ Dostęp do logów i statystyk Twojej strony WWW jest zawarty w ofercie hostingu 
 ## Wymagania początkowe
 
 - Posiadanie kompatybilnego [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action}.
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action}.
 
 Wybierz odpowiedni hosting i kliknij zakładkę `Statystyki i logi`{.action}
 
@@ -82,7 +82,7 @@ Dostępne są różne typy logów:
 - Logi SSH: te logi przedstawiają różne połączenia zrealizowane za pomocą protokołu SSH.
 - Logi CRON: wynik wykonywania zaplanowanych zadań ([Zadania zautomatyzowane (CRON) na Twoim hostingu](../hosting_www_automatyczne_zadania_cron/)).
 
-### Działalność związana z zakwaterowaniem
+### Obciążenie hostingu
 
 W tej sekcji znajdziesz opis działalności związanej z infrastrukturą Twojego hostingu, aby sprawdzić zużycie dostępnych zasobów.
 

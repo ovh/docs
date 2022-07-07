@@ -18,7 +18,7 @@ This page shows you how to update your Redis user ACLs with the OVHcloud API.
 
 As explained on this page: [Redis Capabilities, Users & roles](https://docs.ovh.com/ca/fr/publiccloud/databases/redis/capabilities/#users-and-roles), the users' ACLs can not be updated via the OVHcloud Control Panel.
 
-You must therefore use the [OVHcloud API](https://docs.ovh.com/ca/fr/api/api-premiers-pas/).
+You must therefore use the [OVHcloud API](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/).
 
 ## Requirements
 

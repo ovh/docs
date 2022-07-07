@@ -9,7 +9,7 @@ section: Segurança
 
 ## Sumário
 
-No seguimento da divulgação pública da vulnerabilidade L1TF (“L1 Terminal Fault " ou "Foreshadow"), foram publicados diversos procedimentos e patches para minimizar a exposição a este risco.
+No seguimento da divulgação pública da vulnerabilidade L1TF (“L1 Terminal Fault" ou "Foreshadow"), foram publicados diversos procedimentos e patches para minimizar a exposição a este risco.
 
 **Este manual explica como bloquear esta vulnerabilidade.**
 
@@ -55,7 +55,7 @@ Este procedimento divide-se em 3 partes.
 
 ### 1 - Atualização
 
-Embora a OVH atualize o vCenter, deverá encarregar-se da atualização dos hosts ESXi. O patch está disponível no [Update Manager](https://docs.ovh.com/pt/private-cloud/utilizar_o_vmware_update_manager/){.external-link}. 
+Embora a OVHcloud atualize o vCenter, deverá encarregar-se da atualização dos hosts ESXi. O patch está disponível no [Update Manager](https://docs.ovh.com/pt/private-cloud/utilizar_o_vmware_update_manager/){.external-link}. 
 
 Poderá consultar a lista de patches para os hosts ESXi neste [documento](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 
@@ -86,7 +86,7 @@ Para obter mais informações, pode consultar a secção “Resolution”, artig
 > Se, tendo em conta a informação referida anteriormente, não pretender desativar o <i>hyperthreading</i>, pode eliminar a mensagem de alerta seguindo os passos indicados [neste artigo](https://kb.vmware.com/s/article/57374){.external-link}.
 > 
 > ![](images/deleteWarning.png){.thumbnail}
-> A OVH não recomenda esta solução e não se responsabiliza pelas consequências que possam advir.
+> A OVHcloud não recomenda esta solução e não se responsabiliza pelas consequências que possam advir.
 >
 
 ## Quer saber mais?

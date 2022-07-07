@@ -1,8 +1,8 @@
 ---
 title: 'Aggiungere un record SPF alla configurazione di un dominio'
-excerpt: 'Come aggiungere un record SPF alla configurazione di un dominio presso OVH'
+excerpt: 'Come aggiungere un record SPF alla configurazione di un dominio presso OVHcloud'
 slug: hosting_condiviso_il_record_spf
-section: 'Uso avanzato'
+section: 'DNS e zona DNS'
 order: 5
 ---
 
@@ -75,7 +75,7 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex mail.biz a:gw2.ex mail.b
 
 ### Verifica la tua configurazione SPF attuale
 
-Se il tuo dominio utilizza la configurazione OVHcloud, verifica se è già stato configurato un record SPF. accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nella sezione `Domini`{.action} a sinistra, seleziona il dominio interessato. Clicca sulla scheda `Zona DNS`{.action}.
+Se il tuo dominio utilizza la configurazione OVHcloud, verifica se è già stato configurato un record SPF. accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nella sezione `Domini`{.action}, seleziona il dominio interessato. Clicca sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella che mostra la zona DNS del dominio presso OVHcloud. La registrazione è composta da più registrazioni, tutte simbolizzate da una riga della tavola.
 
@@ -101,7 +101,7 @@ Per ritrovare la riga corrispondente al record SPF di OVHcloud nella tabella è 
 
 ### Configura il record SPF
 
-Per aggiungere un record SPF alla configurazione di OVHcloud del tuo dominio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nel menu a sinistra, clicca su `Domini`{.action} e poi sulla scheda `Zona DNS`{.action}.
+Per aggiungere un record SPF alla configurazione di OVHcloud del tuo dominio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca su `Domini`{.action} e poi sulla scheda `Zona DNS`{.action}.
 
 Per aggiungere un record SPF, clicca su `Aggiungi un record`{.action}.
 
@@ -189,7 +189,7 @@ Poi clicca su `Seguente`{.action}, assicurati che il riepilogo delle informazion
 
 ### Modifica un record SPF
 
-Per modificare il record SPF nella configurazione di OVHcloud del tuo dominio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nel menu a sinistra, clicca su `Domini`{.action} e poi sulla scheda `Zona DNS `{.action}.
+Per modificare il record SPF nella configurazione di OVHcloud del tuo dominio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca su `Domini`{.action} e poi sulla scheda `Zona DNS `{.action}.
 
 La tabella mostra la configurazione OVHcloud del tuo dominio. ogni riga corrisponde a un diverso record DNS. Recupera il tuo record TXT o SPF in questa tabella e clicca su `...`{.action} per modificare il record.
 

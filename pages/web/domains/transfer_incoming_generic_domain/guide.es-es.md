@@ -14,7 +14,7 @@ order: 1
 
 ## Objetivo
 
-Si tiene un dominio registrado con otro proveedor y quiere transferirlo a OVHcloud, puede transferirlo a OVH.
+Si tiene un dominio registrado con otro proveedor y quiere transferirlo a OVHcloud, puede transferirlo a OVHcloud.
 
 La transferencia de un dominio permite cambiar el agente registrador que lo gestiona. Puede transferir su dominio a OVHcloud creando un pedido. Esta operación suele tardar entre uno y diez días.
 
@@ -102,7 +102,7 @@ También puede completar el pedido con un [alojamiento web](https://www.ovhcloud
 
 ![dominio](images/Order_summary.png){.thumbnail}
 
-Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para consultar el progreso, haga clic en `Dominios`{.action} en la columna izquierda y seleccione `Operaciones en curso`{.action}.
+Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para consultar el progreso, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
 
 ### 4. realizar la primera fase de verificación
 
@@ -146,7 +146,7 @@ El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcl
 
 ### 6. gestionar su dominio con OVHcloud
 
-Una vez finalizado el procedimiento de transferencia, podrá administrar su dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para ello, seleccione `Web Cloud`{.action}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente.
+Una vez finalizado el procedimiento de transferencia, podrá administrar su dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para ello, seleccione `Web Cloud`{.action}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
 
 ## Más información
 

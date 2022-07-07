@@ -29,7 +29,7 @@ You must have:
 - installed all the latest required sources and packages.
 - applied every fine-tuning processes mandated by SAP.
 
-Please refer to the general guideline documentation on [how to prepare an OVHcloud SLES system for SAP HANA](../prepare-sles-for-sap-hana).
+Please refer to the general guideline documentation on [how to prepare an OVHcloud SLES system for SAP HANA](../sap-prepare-sles-for-sap-hana/).
 
 ## Instructions
 
@@ -272,6 +272,6 @@ DATABASE_NAME,DESCRIPTION,ACTIVE_STATUS,ACTIVE_STATUS_DETAILS,OS_USER,OS_GROUP,R
 
 ## Go further
 
-General guideline documentation on [how to update SAP HANA on a a OVHcloud SLES system](../update-sap-hana-sles).
+General guideline documentation on [how to update SAP HANA on a a OVHcloud SLES system](../update-sap-hana-sles/).
 
-General guideline documentation on [how to backup SAP HANA on a a OVHcloud SLES system](../backup-sap-hana).
+General guideline documentation on [how to backup SAP HANA on a a OVHcloud SLES system](../backup-sap-hana/).

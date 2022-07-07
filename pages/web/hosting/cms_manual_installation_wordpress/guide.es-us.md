@@ -29,7 +29,7 @@ También debe estar en posesión de su identificador y la contraseña de su base
 
 
 
-![](images/img_3125.jpg){.thumbnail}
+![wordpress](images/3125.png){.thumbnail}
 
 
 ## Paso 2: Recuperar los archivos de origen
@@ -39,7 +39,7 @@ Encontrará un enlace en el que podrá descargar la última versión completa de
 
 El archivo de descarga es un archivo comprimido (.zip), que deberá descomprimir (extraer) en su ordenador. En internet encontrará información sobre cómo realizar esta operación.
 
-![](images/img_3126.jpg){.thumbnail}
+![wordpress](images/3126.png){.thumbnail}
 
 
 ## Paso 3: Colocar los archivos en el alojamiento a través de FTP
@@ -55,14 +55,14 @@ En internet encontrará diversos tutoriales y programas de descompresión que le
 
 La carpeta de destino se llamará «wordpress».
 
-![](images/img_3127.jpg){.thumbnail}
+![wordpress](images/3127.png){.thumbnail}
 
 ## Conexión al web hosting a través de FTP
 Para subir archivos de WordPress a su alojamiento, primero deberá conectarse a este último. 
 
 Si necesita ayuda sobre cómo conectarse a su web hosting a través de FTP, consulte la siguiente guía: []({legacy}1374).
 
-![](images/img_3128.jpg){.thumbnail}
+![wordpress](images/3128.png){.thumbnail}
 
 ## Transferencia de archivos a través de FTP
 Siga los siguientes pasos para subir sus archivos con un cliente de FTP.
@@ -78,7 +78,7 @@ Si la carpeta no existe, puede crearla.
 
 Deberá colocar sus archivos obligatoriamente en la carpeta «www». De lo contrario, no podrá acceder a este procedimiento de instalación desde su dominio.
 
-![](images/img_3129.jpg){.thumbnail}
+![wordpress](images/3129.png){.thumbnail}
 
 ## Etapa 2
 Una vez abiertas estas carpetas, en el apartado «Sitio local» encontrará todos los archivos necesarios para la instalación del CMS WordPress. 
@@ -89,7 +89,7 @@ A continuación, arrastre y suelte los archivos en la carpeta «www» del aparta
 
 Es probable que la carpeta «www» no esté vacía, pero no es obligatorio eliminar los archivos que contiene. Analizaremos este punto más adelante.
 
-![](images/img_3130.jpg){.thumbnail}
+![wordpress](images/3130.png){.thumbnail}
 
 ## Etapa 3
 A continuación, se transferirán los distintos archivos. 
@@ -98,7 +98,7 @@ Espere a que todos los archivos se copien al servidor FTP remoto. Esta operació
 
 Una vez completada la transferencia, asegúrese de que todos los archivos y carpetas se han copiado correctamente.
 
-![](images/img_3131.jpg){.thumbnail}
+![wordpress](images/3131.png){.thumbnail}
 
 
 ## Paso 4: Conexión con la base de datos
@@ -113,14 +113,14 @@ Acceda a su nombre de dominio. Encontrará el siguiente mensaje:
 
 Haga clic en «Crear un archivo de configuración» para continuar.
 
-![](images/img_3132.jpg){.thumbnail}
+![wordpress](images/3132.png){.thumbnail}
 
 ## Etapa 2
 Recopile las claves de acceso a su base de datos (encontrará ayuda sobre este punto al principio de la guía). 
 
 Haga clic en «¡Vamos a ello!» para acceder a la siguiente etapa.
 
-![](images/img_3133.jpg){.thumbnail}
+![wordpress](images/3133.png){.thumbnail}
 
 ## Etapa 3
 Introduzca la información relativa a la base de datos: 
@@ -141,7 +141,7 @@ Haga clic en «Enviar» para validar la información de conexión a la base de d
 
 Este es el último paso para establecer la conexión entre su base de datos y WordPress. Tan solo deberá concluir la instalación.
 
-![](images/img_3134.jpg){.thumbnail}
+![wordpress](images/3134.png){.thumbnail}
 
 
 ## Concluir la instalación
@@ -152,7 +152,7 @@ Para concluir la instalación de su blog WordPress, complete las siguientes etap
 ## Etapa 1
 Haga clic en «Iniciar la instalación» para continuar.
 
-![](images/img_3135.jpg){.thumbnail}
+![wordpress](images/3135.png){.thumbnail}
 
 ## Etapa 2
 Complete la siguiente información relativa a la administración de su blog WordPress: 
@@ -169,19 +169,19 @@ Privacidad: Si marca esta casilla, permitirá a los buscadores que indexen el si
 
 Haga clic en «Instalar WordPress» para lanzar la instalación.
 
-![](images/img_3136.jpg){.thumbnail}
+![wordpress](images/3136.png){.thumbnail}
 
 ## Etapa 3
 ¡Ya ha terminado la instalación de su blog WordPress! 
 
 Identifíquese introduciendo su nombre de usuario y contraseña, y haga clic en «Acceder» para empezar a trabajar con su blog.
 
-![](images/img_3137.jpg){.thumbnail}
+![wordpress](images/3137.png){.thumbnail}
 
 ## Visualización del panel de administración de WordPress
 Este será el aspecto del panel de administración de Wordpress.
 
-![](images/img_3138.jpg){.thumbnail}
+![wordpress](images/3138.png){.thumbnail}
 
 
 ## Información útil
@@ -202,7 +202,7 @@ Para solucionarlo, elimine o renombre el archivo «index.html» colocado por OVH
 
 Importante: Los archivos del sitio web deben subirse a la carpeta «www».
 
-![](images/img_3139.jpg){.thumbnail}
+![wordpress](images/3139.png){.thumbnail}
 
 ## Error clásico: Versión PHP
 Se trata de un error relativo a la versión PHP de su servidor. 
@@ -211,5 +211,5 @@ La causa es muy sencilla: no ha activado la última versión de PHP.
 
 Si necesita ayuda sobre cómo modificar la versión PHP de su plan de web hosting, consulte la siguiente guía: []({legacy}1207).
 
-![](images/img_3140.jpg){.thumbnail}
+![wordpress](images/3140.png){.thumbnail}
 

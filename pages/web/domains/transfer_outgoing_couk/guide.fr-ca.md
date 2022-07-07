@@ -40,13 +40,12 @@ Si vous ne connaissez pas encore le TAG requis, vous pouvez en faire la demande 
 
 ### Étape 1 : vérifier les informations nécessaires
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut à gauche. Cliquez sur `Noms de domaine`{.action} dans la colonne à gauche, puis choisissez le nom de domaine concerné.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
 
 N'oubliez pas que vous devez être connecté en tant que contact administrateur.
 
 Dans l'onglet `Informations générales`{.action}, vous pouvez vérifier que les conditions requises pour le processus de transfert sont remplies.
 
-![transfert sortant](images/img_4266.jpg){.thumbnail}
 
 ### Étape 2 : modifier le TAG de votre nom de domaine
 

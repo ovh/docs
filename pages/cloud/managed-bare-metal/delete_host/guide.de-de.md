@@ -12,7 +12,7 @@ section: 'OVHcloud Funktionen'
 
 ## Einleitung
 
-In einigen Fällen kann es nützlich sein, einen Host-Server aus Ihrem Cluster zu löschen, zum Beispiel, um einen ungenutzten „_Spare_-Host“ zu entfernen oder wenn Sie auf eine höhere Serverreihe umsteigen möchten.
+In einigen Fällen kann es nützlich sein, einen Host-Server aus Ihrem Cluster zu löschen, zum Beispiel, um einen ungenutzten “_Spare_-Host” zu entfernen oder wenn Sie auf eine höhere Serverreihe umsteigen möchten.
 
 **In dieser Anleitung erfahren Sie, wie Sie einen Host-Server sicher aus Ihrer Managed Bare Metal Infrastruktur entfernen.**
 

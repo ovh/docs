@@ -18,7 +18,7 @@ Dla lepszego zrozumienia, jak ta ochrona działa, zachęcamy do lektury treści 
 
 ## Wymagania początkowe
 
-- Posiadanie domeny zarejestrowanej w OVH
+- Posiadanie domeny zarejestrowanej w OVHcloud
 - Wybrana domena powinna posiadać rozszerzenie kompatybilne z DNSSEC
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}
 
@@ -26,22 +26,20 @@ Dla lepszego zrozumienia, jak ta ochrona działa, zachęcamy do lektury treści 
 
 Aktywacja DNSSEC jest możliwa w dwóch przypadkach:
 
-- **Twoja domena korzysta z serwerów DNS OVH**: aktywacji dokonujesz w prosty sposób w Panelu klienta;
+- **Twoja domena korzysta z serwerów DNS OVHcloud**: aktywacji dokonujesz w prosty sposób w Panelu klienta;
 
-- **Twoja domena nie używa serwerów DNS OVH**: zwróć się do administratora zarządzającego jej konfiguracją DNS.  Jeśli sam zarządzasz domeną, zainstaluj DNSSEC ręcznie. W tym przypadku skorzystaj z dokumentacji technicznej dostępnej online.
+- **Twoja domena nie używa serwerów DNS OVHcloud**: zwróć się do administratora zarządzającego jej konfiguracją DNS.  Jeśli sam zarządzasz domeną, zainstaluj DNSSEC ręcznie. W tym przypadku skorzystaj z dokumentacji technicznej dostępnej online.
 
 > [!primary]
 >
-> Aby sprawdzić, czy Twoja domena używa konfiguracji DNS OVH, kliknij zakładkę `Serwery DNS` w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+> Aby sprawdzić, czy Twoja domena używa konfiguracji DNS OVHcloud, kliknij zakładkę `Serwery DNS` w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 >
 
 ### Etap 1: logowanie do interfejsu zarządzania domeną
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}. Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}. Po zalogowaniu kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 
 Na stronie, która się wyświetla widoczne są ogólne informacje o hostingu. 
-
-![DNSSEC](images/activate-dnssec-step1.png){.thumbnail}
 
 ### Etap 2: zarządzanie DNSSEC domeny
 

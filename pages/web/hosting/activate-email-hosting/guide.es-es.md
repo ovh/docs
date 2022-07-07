@@ -60,6 +60,10 @@ En la columna `Configuración`, vaya a `Direcciones de correo`{.action}, haga cl
 
 ![Dar de baja el correo](images/mail-hosting04.png){.thumbnail}
 
+> [!warning]
+>
+> Para confirmar la eliminación del servicio de correo asociado a su alojamiento web, recibirá un enlace de validación por correo electrónico. Para que se inicie la operación de eliminación, haga clic en este enlace.
+
 ## Más información
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>

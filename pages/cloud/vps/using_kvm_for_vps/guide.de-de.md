@@ -5,6 +5,10 @@ slug: verwendung_von_kvm_fur_vps
 section: Erste Schritte
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
 **Letzte Aktualisierung am 05.09.2020**
 
 ## Ziel
@@ -24,7 +28,7 @@ Die KVM-Konsole ermöglicht eine direkte Verbindung zu Ihrem VPS, ohne externe S
 
 #### Aktuelle VPS Reihe
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus. Klicken Sie auf dieser Seite auf `...`{.action} rechts neben dem Namen Ihres VPS im Abschnitt „Ihr VPS“.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus. Klicken Sie auf dieser Seite auf `...`{.action} rechts neben dem Namen Ihres VPS im Abschnitt “Ihr VPS”.
 
 ![KVM](images/kvm-new1.png){.thumbnail}
 
@@ -36,13 +40,13 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 ### Verwendung der KVM-Konsole
 
-Der Bildschirm der KVM-Konsole öffnet sich. Dies ist ein kleines Fenster, das die Verbindung mit Ihrem Server anzeigt. Da das Fenster recht klein ist, kann die Navigation im Interface Ihres Servers mithilfe der Scrollbalken schwierig sein. Wie empfehlen Ihnen daher, KVM in einem neuen Fenster in voller Bildschirmgröße zu öffnen. Nutzen Sie dazu den Button „In einem neuen Fenster öffnen“ unten rechts im Dialogfenster.
+Der Bildschirm der KVM-Konsole öffnet sich. Dies ist ein kleines Fenster, das die Verbindung mit Ihrem Server anzeigt. Da das Fenster recht klein ist, kann die Navigation im Interface Ihres Servers mithilfe der Scrollbalken schwierig sein. Wie empfehlen Ihnen daher, KVM in einem neuen Fenster in voller Bildschirmgröße zu öffnen. Nutzen Sie dazu den Button “In einem neuen Fenster öffnen” unten rechts im Dialogfenster.
 
 > [!primary]
 >
-> Etwaige Probleme mit doppelter Erfassung können von der automatischen Einstellung des Bildschirms herrühren. Wie empfehlen Ihnen, KVM in einem neuen Fenster zu öffnen. Nutzen Sie dazu den Button „In einem neuen Fenster öffnen“.
+> Etwaige Probleme mit doppelter Erfassung können von der automatischen Einstellung des Bildschirms herrühren. Wie empfehlen Ihnen, KVM in einem neuen Fenster zu öffnen. Nutzen Sie dazu den Button “In einem neuen Fenster öffnen”.
 >
-> Wenn die Probleme mit dem Bildschirm andauern, löschen Sie aus der URL den Teil „auto“. Lautet die URL https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx, muss sie also danach https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx sein. (Der Link kann für Sie anders aussehen. Hier wird nur am Beispiel verdeutlicht, welcher Teil der URL zu löschen ist.)
+> Wenn die Probleme mit dem Bildschirm andauern, löschen Sie aus der URL den Teil “auto”. Lautet die URL https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx, muss sie also danach https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx sein. (Der Link kann für Sie anders aussehen. Hier wird nur am Beispiel verdeutlicht, welcher Teil der URL zu löschen ist.)
 >
 
 ![Verbindung mit KVM](images/kvm_screen.png){.thumbnail}
@@ -96,9 +100,9 @@ Bei Problemen mit der KVM-Konsole ist dies die empfohlene Verbindungsmethode:
 
 > [!primary]
 >
-> Wenn die Probleme mit dem Bildschirm andauern, löschen Sie aus der URL den Teil „auto“. Lautet die URL https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx, muss sie also danach https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx sein. (Der Link kann für Sie anders aussehen. Hier wird nur am Beispiel verdeutlicht, welcher Teil der URL zu löschen ist.)
+> Wenn die Probleme mit dem Bildschirm andauern, löschen Sie aus der URL den Teil “auto”. Lautet die URL https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx, muss sie also danach https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx sein. (Der Link kann für Sie anders aussehen. Hier wird nur am Beispiel verdeutlicht, welcher Teil der URL zu löschen ist.)
 >
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

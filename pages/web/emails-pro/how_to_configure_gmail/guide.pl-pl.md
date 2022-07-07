@@ -45,7 +45,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 Przed rozpoczęciem operacji przejdź do interfejsu online programu Gmail, korzystając z Twojej przeglądarki internetowej. Wprowadź Twoje dane identyfikacyjne przypisane do konta Gmail, a następnie zaloguj się.
 
-Po zalogowaniu do interfejsu kliknij ikonę koła zębatego, a następnie `Ustawienia`{.action}. Na stronie, która się wyświetli kliknij zakładkę `Konta i import`{.action}. 
+Po zalogowaniu do interfejsu kliknij ikonę koła zębatego, a następnie `Zobacz wszystkie ustawienia`{.action}. Na stronie, która się wyświetli kliknij zakładkę `Konta i import`{.action}. 
 
 ![emailpro](images/configuration-gmail-web-step1.png){.thumbnail}
 

@@ -28,7 +28,7 @@ order: 7
  }
 </style>
 
-**Last updated February 18<sup>th</sup>, 2022.**
+**Last updated May 17<sup>th</sup>, 2022.**
 
 ## Objective
 
@@ -73,8 +73,7 @@ Here you have a description of the parameters used in the autoscaler configurati
 
 You can get more information on those parameters on the [Kubernetes autoscaler documentation](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md).
 
-If you consider we should reevaluate the default value and/or prioritize the possible customization of of one of those parameters, we are looking for your feedback concerning this beta feature in the [Gitter community channel around OVHcloud Managed Kubernetes service](https://gitter.im/ovh/kubernetes).
-
+If you consider we should reevaluate the default value and/or prioritize the possible customization of one of those parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
 ### Configuring the autoscaler
 
 The easiest way to enable the autoscaler is using the Kubernetes API, for example using `kubectl`.
@@ -109,7 +108,7 @@ In my example cluster:
   "flavor": "b2-7",
   "maxNodes": 100,
   "minNodes": 0,
-  "monthlyBilled": true
+  "monthlyBilled": false
 }
 </code></pre>
 
@@ -130,7 +129,7 @@ nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
   "flavor": "b2-7",
   "maxNodes": 100,
   "minNodes": 0,
-  "monthlyBilled": true
+  "monthlyBilled": false
 }
 </code></pre>
 
@@ -142,7 +141,7 @@ For the moment, only these following parameters are editable:
 - minNodes
 - maxNodes
 
-You can contact us through [Gitter](https://gitter.im/ovh/kubernetes) if you need to edit other parameters and/or you can check our [public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
+If you consider that we should prioritize the possible customization of other autoscaling parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
 
 ## Go further
 

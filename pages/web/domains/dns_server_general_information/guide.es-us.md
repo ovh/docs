@@ -47,7 +47,7 @@ Tenga en cuenta los siguientes aspectos:
 
 ### 1. Acceder a la zona de gestión de los servidores DNS del dominio
 
-En primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action}.
+En primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action}.
 
 Se mostrará una tabla con los servidores DNS actualmente configurados en OVHcloud para el dominio. Cada línea de la tabla contiene un servidor DNS (puede haber varios).
 
@@ -76,7 +76,7 @@ Una vez que haya introducido los datos, haga clic en el botón `Aplicar la confi
 
 Una vez que haya realizado los cambios, deberá esperar a que se apliquen. Ocurrirán dos cosas:
 
-- En primer lugar, el registro encargado de gestionar la extensión del dominio debe aplicar los cambios realizados desde OVHcloud. Puede consultar el progreso de esta operación en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, en la columna izquierda, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
+- En primer lugar, el registro encargado de gestionar la extensión del dominio debe aplicar los cambios realizados desde OVHcloud. Puede consultar el progreso de esta operación en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
 - Una vez que el registro encargado de gestionar la extensión del dominio haya aplicado los cambios, estos tardan un máximo de 48 horas en propagarse y ser efectivos.
 
 ## Más información

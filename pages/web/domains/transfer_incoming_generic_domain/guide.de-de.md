@@ -99,7 +99,7 @@ Sie können Ihre Bestellung auch mit einem [Webhosting](https://www.ovhcloud.com
 
 ![Domain](images/Order_summary.png){.thumbnail}
 
-Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Transferprozess wird erst nach Erhalt der Zahlung gestartet. Ab dann können Sie den Fortschritt des Transfers über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nachverfolgen: Klicken Sie links im Menü auf `Domainnamen`{.action}  und dann auf `Laufende Operationen`{.action}.
+Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Transferprozess wird erst nach Erhalt der Zahlung gestartet. Ab dann können Sie den Fortschritt des Transfers über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nachverfolgen: Öffnen Sie `Domainnamen`{.action} und klicken Sie auf `Laufende Operationen`{.action}.
 
 ### Schritt 4: Erster Schritt der Transferbestätigung
 
@@ -125,7 +125,7 @@ Abhängig von den Aktionen des Inhabers und des Administrators können in diesem
 
 Falls ein Transfer abgebrochen wurde, vergewissern Sie sich, dass alle Beteiligten zustimmen, bevor Sie einen weiteren Versuch unternehmen. Wenn keine E-Mails empfangen wurden, überprüfen Sie zunächst, dass alle E-Mail-Adressen aktuell sind.
 
-Der Transfervorgang kann später im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erneut gestartet werden. Wählen Sie `Web Cloud`{.action} aus und gehen Sie in den Bereich `Domainnamen`{.action}. Klicken Sie dann auf `Laufende Operationen`{.action}.
+Der Transfervorgang kann später im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erneut gestartet werden. Gehen Sie im Bereich `Web Cloud`{.action} zu `Domainnamen`{.action} und klicken Sie auf `Laufende Operationen`{.action}.
 
 ### Schritt 5: Zweiter Schritt der Transferbestätigung
 
@@ -139,11 +139,11 @@ Sobald der zweite Schritt eingeleitet wurde, wird der aktuelle Registrar (der no
 
 Wird eine Ablehnung vom bisherigen Registrar ausgesprochen, kontaktieren Sie bitte den Registrar, um zu erfahren, warum der Transfer verhindert wird.
 
-Der Transfervorgang kann später im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erneut gestartet werden. Wählen Sie `Web Cloud`{.action} aus und gehen Sie in den Bereich `Domainnamen`{.action}. Klicken Sie dann auf `Laufende Operationen`{.action}.
+Der Transfervorgang kann später im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erneut gestartet werden. Gehen Sie im Bereich `Web Cloud`{.action} zu `Domainnamen`{.action} und klicken Sie auf `Laufende Operationen`{.action}.
 
 ### Schritt 6: Domainnamen bei OVHcloud verwalten
 
-Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten. Wählen Sie hierzu `Web Cloud`{.action} aus, klicken Sie links im Menü auf `Domainnamen`{.action} und klicken Sie dann auf den Domainnamen.
+Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten. Gehen Sie im Bereich `Web Cloud`{.action} zu `Domainnamen`{.action} und wählen Sie den Domainnamen aus.
 
 ## Weiterführende Informationen
 

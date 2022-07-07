@@ -48,7 +48,7 @@ Für Informationen zur Verwendung älterer VPS Modelle, fahren Sie weiter unten 
 #### Mit Ihrem VPS verbinden (aktuelle Reihe)
 
 Bei Erstinstallation oder Neuinstallation über das Kundencenter wird ein Nutzer erstellt, der über alle Rechte zur Serververwendung verfügt, und Sie erhalten eine E-Mail mit den Login-Daten für diesen Nutzer.<br>
-Der Nutzername wird je nach Betriebssystem generiert, zum Beispiel „ubuntu“ oder „debian“.
+Der Nutzername wird je nach Betriebssystem generiert, zum Beispiel “ubuntu” oder “debian”.
 
 Sie können sich mit dem Nutzernamen und Passwort per SSH mit Ihrem VPS verbinden. (SSH ist ein sicheres Kommunikationsprotokoll. Weitere Informationen hierzu finden Sie in der [Einführung zur Verwendung von SSH](../../dedicated/ssh-einfuehrung/). Sie können auf Ihren Server über ein Terminal (Linux OS oder Mac OS) oder unter Windows über eine Drittanbieter-Software (wir empfehlen PuTTY) zugreifen.
 
@@ -99,7 +99,7 @@ Sie können jedoch jederzeit einen "Hard Reboot" in Ihrem [OVHcloud Kundencenter
 
 #### VPS installieren oder neu installieren (aktuelle Reihe) <a name="reinstallvps"></a>
 
-Sie können jede Neuinstallation über das OVHcloud Kundencenter durchführen. Gehen Sie im Tab „Start“ im Bereich **Ihr VPS** zu „Betriebssystem / Distribution“. Klicken Sie auf `...`{.action} und dann auf `VPS reinstallieren`{.action}.
+Sie können jede Neuinstallation über das OVHcloud Kundencenter durchführen. Gehen Sie im Tab “Start” im Bereich **Ihr VPS** zu “Betriebssystem / Distribution”. Klicken Sie auf `...`{.action} und dann auf `VPS reinstallieren`{.action}.
 
 ![Neuinstallation des VPS](images/2020panel_02.png){.thumbnail}
 
@@ -201,5 +201,7 @@ OVHcloud bietet auch die SSL Gateway-Lösung zur Automatisierung dieses Prozesse
 [SSH Einführung](../../dedicated/ssh-einfuehrung/)
 
 [VPS absichern](../vps-sicherheit/)
+
+[Eine neue Windows Server Installation konfigurieren](../windows-first-config/)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

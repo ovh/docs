@@ -191,6 +191,30 @@ ovhai registry add <url>
 
 You will be asked to type your credentials.
 
+### Switch region in the CLI
+
+The regions available to install and use the `ovhai` CLI are `GRA` and `BHS`. If you want to change the region in the CLI, you can use the following commands.
+
+You can list the **Names** and **URLs** of the available regions with:
+
+``` {.console}
+ovhai config list
+```
+
+> [!primary]
+> The region in **green** is the one you are currently in.
+>
+
+To change the region, use:
+
+``` {.console}
+ovhai config set <region>
+```
+
+> [!primary]
+> `<region>` is the new region name (`GRA` or `BHS`), in which you want to be placed.
+>
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

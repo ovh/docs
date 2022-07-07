@@ -1,7 +1,7 @@
 ---
 title: Deploying an application
 slug: deploying-an-application
-excerpt: 'Find out how to deploy a "Hello World" application'
+excerpt: 'Find out how to deploy a "Hello World" application on an OVHcloud Managed Kubernetes cluster'
 section: Getting started
 ---
 
@@ -27,7 +27,7 @@ section: Getting started
  }
 </style>
 
-**Last updated 21<sup>st</sup> September, 2021.**
+**Last updated 2nd May, 2022.**
 
 ## Objective
 
@@ -113,12 +113,12 @@ deployment.apps/hello-world-deployment created
 You have just deployed a `hello-world` service in a pod in your worker node. Let's verify that everything is correct by listing the pods.
 
 ```bash
-kubectl get pods -n default
+kubectl get pods -n default -l app=hello-world
 ```
 
 You should see your newly created pod:
 
-<pre class="console"><code>$ kubectl get pods -n default
+<pre class="console"><code>$ kubectl get pods -n default -l app=hello-world
 NAME                                           READY     STATUS    RESTARTS   AGE
 hello-world-deployment-d98c6464b-7jqvg         1/1       Running   0          47s
 </code></pre>
@@ -131,12 +131,12 @@ hello-world-deployment-d98c6464b-7jqvg         1/1       Running   0          47
 You can also verify the deployment is active:
 
 ```bash
-kubectl get deploy -n default
+kubectl get deploy -n default -l app=hello-world
 ```
 
 And you will see the `hello-service-deployment`:
 
-<pre class="console"><code>$ kubectl get deploy -n default
+<pre class="console"><code>$ kubectl get deploy -n default -l app=hello-world
 NAME                          DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 hello-world-deployment        1         1         1            1           1m
 </code></pre>
@@ -161,7 +161,15 @@ hello-world   LoadBalancer   10.3.234.211   51.178.69.47   80:31885/TCP   6m54s
 
 ### Step 5 - Test your service
 
-If you point your web browser to the service URL, the `hello-world` service will answer you:
+Retrieve the URL of the `hello-world` application:
+
+<pre class="console"><code>$ export SERVICE_URL=$(kubectl get svc hello-world -n default -o jsonpath='{.status.loadBalancer.ingress[].ip}')
+
+$ echo "http://$SERVICE_URL/"
+http://135.125.83.30/
+</code></pre>
+
+Copy/paste the URL in your browser to see your new running `hello-world` application:
 
 ![Testing your service](images/deploying_an_application-01.png){.thumbnail}
 
@@ -169,14 +177,13 @@ If you point your web browser to the service URL, the `hello-world` service will
 You can even test the newly created service, in command line, with curl:
 
 ```bash
-curl 51.178.69.47
+curl $SERVICE_URL
 ```
 
 You should see your newly created service:
 
 ```bash
-$ kubectl get services -n default -l app=hello-world
-$ curl 51.178.69.47
+curl $SERVICE_URL
 <!doctype html>
 
 <html>
@@ -200,7 +207,7 @@ text-align: center;
 ```
 
 > [!primary]
-> If you have an error message "Failed to connect to 51.178.69.47 port 80: Connection refused", it's normal. The service is starting, so you have to wait a few seconds in order to test it again.
+> If you have an error message "Failed to connect to 135.125.83.30 port 80: Connection refused", it's normal. The service is starting, so you have to wait a few seconds in order to test it again.
 
 ### Step 6 - Clean up
 
@@ -216,8 +223,9 @@ If you list the services you will see that `hello-world` doesn't exist anymore:
 
 <pre class="console"><code>$ kubectl delete service hello-world -n default
 service "hello-world" deleted
-$ kubectl get services -l app=hello-world
-No resources found.
+
+$ kubectl get services -l app=hello-world -n default
+No resources found in default namespace.
 </code></pre>
 
 Then, you can delete the deployment:
@@ -229,21 +237,22 @@ kubectl delete deploy hello-world-deployment -n default
 And now if you list you deployment you will find no resources:
 
 <pre class="console"><code>$ kubectl delete deploy  hello-world-deployment -n default
-deployment.extensions "hello-world-deployment" deleted
-$ kubectl get deployments
-No resources found.
+deployment.apps "hello-world-deployment" deleted
+
+$ kubectl get deployments -n default -l app=hello-world
+No resources found in default namespace.
 </code></pre>
 
 If now you list the pods:
 
 ```bash
-kubectl get pods -n default
+kubectl get pods -n default -l app=hello-world
 ```
 
 you will see that the pod created for `hello-world` has been deleted too:
 
-<pre class="console"><code>$ kubectl get pods -n default
-No resources found
+<pre class="console"><code>$ kubectl get pods -n default -l app=hello-world
+No resources found in default namespace.
 </code></pre>
 
 ## Go further

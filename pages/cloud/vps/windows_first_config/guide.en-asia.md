@@ -1,17 +1,17 @@
 ---
 title: 'Configuring a new Windows Server installation'
 slug: windows-first-config
-excerpt: 'Find out how to enable Remote Desktop and ICMP'
+excerpt: 'Find out how to enable Remote Desktop, ICMP and boot logs'
 section: 'Getting started'
 ---
 
-**Last updated 16th February 2021**
+**Last updated 6th May 2022**
 
 ## Objective
 
-After a fresh installation of a Windows Server operating system on a VPS, remote access and the ICMP (Internet Control Message Protocol) response can sometimes be disabled.
+After a fresh installation of a Windows Server operating system on a VPS, remote access and the ICMP (Internet Control Message Protocol) response might be disabled. However, you can use the OVHcloud KVM to access your VPS and configure the Windows Firewall application to re-enable ICMP and allow connections via Remote Desktop Protocol.<br>Activating Windows boot logs can be helpful for server error diagnostics.
 
-**This guide explains how to set up Windows in order to re-enable ICMP and allow connections via Remote Desktop Protocol.**
+**This guide explains how to enable ICMP, Remote Desktop Protocol and boot logs on a Windows VPS.**
 
 ## Requirements
 
@@ -55,6 +55,24 @@ Here you can enable the respective `ICMP` and `Remote Desktop` rules (right-clic
 ![Enabled](images/windows5.png){.thumbnail}
 
 Your server should now be responding to requests using these protocols.
+
+### Activating Windows boot logs (optional)
+
+Connect to your server via a Remote Desktop or [KVM](../use-kvm-for-vps/) session. Open the Windows start menu and click on `Run`{.action}.
+
+![Bootlog](images/windowsboot1.png){.thumbnail}
+
+Enter "msconfig" and click on `OK`{.action}.
+
+![Bootlog](images/windowsboot2.png){.thumbnail}
+
+In the new window, check the box next to `Boot log`. Click on `OK`{.action}.
+
+![Bootlog](images/windowsboot3.png){.thumbnail}
+
+The next time your server boots, the logs will be saved into a .txt file. The file path is ```C:\Windows\ntbtlog.txt```.
+
+To access the contents of this file in rescue mode, please follow the instructions in the [VPS rescue mode guide](../rescue/).
 
 ## Go further
 

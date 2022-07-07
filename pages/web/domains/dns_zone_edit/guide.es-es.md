@@ -1,6 +1,6 @@
 ---
-title: 'Editar una zona DNS de OVH'
-excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVH'
+title: 'Editar una zona DNS de OVHcloud'
+excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVHcloud'
 slug: web_hosting_como_editar_mi_zona_dns
 section: 'DNS (servidor y zona)'
 ---
@@ -9,7 +9,7 @@ section: 'DNS (servidor y zona)'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 16/02/2021**
+**Última actualización: 01/06/2022**
 
 ## Objetivo
 
@@ -56,7 +56,7 @@ La zona DNS de un dominio es un archivo de configuración compuesto por **regist
 
 ### Acceder a la gestión de una zona DNS de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`{.action}.Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
 Se mostrará una tabla con un registro DNS asociado a su dominio en OVHcloud para cada línea. Puede filtrar el contenido por tipo de registro o por dominio.
 
@@ -166,6 +166,30 @@ Puede borrar varias entradas de una vez marcándolas desde la parte izquierda de
 
 ![Zona DNS](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
+#### Restaurar la zona DNS
+
+Restaurar la zona DNS le permite:
+
+- volver a una configuración mínima con los registros de OVHcloud por defecto.
+- volver a una zona DNS vacía (a excepción de los campos NS) para establecer una configuración manual posterior.
+
+En la pestaña `Zona DNS`{.action}, haga clic en `Restaurar mi zona DNS`{.action} y siga los pasos que se indican.
+
+![Zona DNS](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Puede elegir entre:
+
+- `Sí, quiero restaurar la zona DNS con los registros mínimos`. Esta opción le permite dirigir su dominio y su servicio de correo hacia:
+    - cualquiera de sus servicios Web Cloud disponibles en el área de cliente de OVHcloud.
+    - el servicio de redirección de OVHcloud, disponible en la pestaña `Redirección`{.action} del dominio en las secciones `Dominios`{.action} y `Correo electrónico`{.action}.
+    - la función `Personalizada`. Introduzca el registro `A` y/o `MX` que desee.
+- `No, pero quiero restaurar la zona DNS`. Su zona DNS estará vacía, a excepción de los registros NS que se asociarán automáticamente a los servidores DNS de OVHcloud de su zona DNS.
+
+> [!primary]
+>
+> Antes de restaurar la zona DNS, asegúrese de que el dominio no está asociado a servicios en uso, como un sitio web o direcciones de correo.
+>
+
 ### El tiempo de propagación
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse y ser efectivos.
@@ -177,7 +201,7 @@ También puede modificar el TTL de un registro DNS. Sin embargo, esta operación
 
 ## Más información
 
-[Cambiar los servidores DNS de un dominio en OVH](../web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
+[Cambiar los servidores DNS de un dominio en OVHcloud](../web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
 
 [Añadir un registro SPF a la configuración del dominio](../web_hosting_el_registro_spf/){.external}
 

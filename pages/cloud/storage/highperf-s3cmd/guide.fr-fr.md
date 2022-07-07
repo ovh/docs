@@ -1,5 +1,5 @@
 ---
-title: Utiliser High Performance avec S3cmd
+title: Utiliser S3 Object Storage avec S3cmd
 slug: s3/s3cmd
 excerpt: Découvrez comment configurer S3cmd afin de gérer vos buckets et objets
 section: Object Storage S3 High Performance
@@ -10,7 +10,7 @@ order: 130
 
 ## Objectif
 
-S3cmd est un outil de ligne de commande gratuit et un client de gestion des données dans des espaces de stockage qui utilisent le protocole S3, tels que OVHcloud Object Storage S3 High Performance, Google Cloud Storage ou DreamHost DreamObjects.
+S3cmd est un outil de ligne de commande gratuit et un client de gestion des données dans des espaces de stockage qui utilisent le protocole S3, tels que S3 Object Storage, Google Cloud Storage ou DreamHost DreamObjects.
 
 **Ce guide explique comment configurer S3cmd afin gérer vos buckets et objets.**
 
@@ -27,7 +27,7 @@ S3cmd est un outil de ligne de commande gratuit et un client de gestion des donn
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
 - Connaître vos informations d'identification S3 (access_key et secret_access_key)
 
-Consultez notre guide « [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
 
 ## En pratique
 

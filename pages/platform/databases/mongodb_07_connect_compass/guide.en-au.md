@@ -93,11 +93,11 @@ mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname nod
 
 In MongoDB Compass fill in the connection field with the `Service URI`:
 
-![New connection](images/new-connection.png)
+![New connection](images/new-connection.png){.thumbnail}
 
 Now you are now interact with your Public Cloud Databases for MongoDB:
 
-![Connected](images/connected.png)
+![Connected](images/connected.png){.thumbnail}
 
 > [!primary]
 >
@@ -118,4 +118,4 @@ Join our community of users on <https://community.ovh.com/en/>.
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-Are you on Discord? Connect to our channel at https://discord.gg/PwPqWUpN8G and interact directly with the team that builds our databases service!
+Are you on Discord? Connect to our channel at [https://discord.gg/PwPqWUpN8G](https://discord.gg/PwPqWUpN8G) and interact directly with the team that builds our databases service!

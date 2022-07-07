@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Last updated 2nd February 2022**
+**Last updated 2nd June 2022**
 
 **This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC) to a new destination vDC (Essentials or Premier).**
 
@@ -30,6 +30,7 @@ There are two aspects involved in this process:
 ## Requirements
 
 - a PCC infrastructure (SDDC or DC)
+- a [new or an empty vRack](https://docs.ovh.com/gb/en/private-cloud/using-private-cloud-with-vrack/) added to your PCC infrastructure (SDDC or DC)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
 - access to the vSphere Control Panel
 
@@ -109,10 +110,11 @@ Please note that this choice is definitive.
 
 Here are a few guidelines:
 
-- if you are using or you plan to use [NSX](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => you must upgrade to [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- if you need your VMware infrastructure to be [certified](https://www.ovhcloud.com/en-gb/enterprise/certification-conformity/) (HDS, PCI-DSS, HIPA) => you must upgrade to [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- if you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose between [Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/) and [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/). As a general rule of thumbs, Essentials hosts have a better cost/core ratio while Premier ones optimize cost/RAM ratio. You can compare [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/)
+- If you are using or you plan to use [NSX](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => you must upgrade to [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- If you need your VMware infrastructure to be [certified](https://www.ovhcloud.com/en-gb/enterprise/certification-conformity/) (HDS, PCI-DSS, HIPA) => you must upgrade to [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- If you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose between [Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/) and [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/). As a general rule of thumbs, Essentials hosts have a better cost/core ratio while Premier ones optimize cost/RAM ratio. You can compare [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/)
 - Veeam Managed Backup and Zerto Disaster Recovery options are available on both Essentials and Premier
+- If your current infrastructure is in AMD-2013, you will not be able to migrate to Premier.
 
 ![decision tree](images/ESSorPRE.png){.thumbnail}
 
@@ -580,6 +582,10 @@ Here is how to proceed:
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
 >
+
+> [!warning]
+>
+> This API call is to be executed on the old vDC (source vDC).
 
 4\. Repeat steps 2 and 3 for all VMs that have backups enabled and have been migrated to the new vDC.
 

@@ -21,7 +21,7 @@ section: Diagnostica e modalità Rescue
 
 ## Procedura
 
-Accedi al VPS tramite il VNC [dello Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) con le credenziali di accesso ricevute via email.
+Accedi al VPS tramite il VNC dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) con le credenziali di accesso ricevute via email.
 
 Effettua questi comandi per montare il file system remoto:
 

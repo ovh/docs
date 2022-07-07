@@ -4,6 +4,10 @@ slug: enregistrer-ligne-sip-linphone
 excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur le softphone Linphone'
 section: Tutoriels
 hidden: true
+kb: Web Cloud
+category_l1: Phone and Fax
+category_l2: VoIP
+category_l3: Tutorials
 ---
 
 **Dernière mise à jour le 31/03/2022**

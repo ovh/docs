@@ -11,7 +11,7 @@ section: 'DNS und DNS-Zone'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 16.02.2021**
+**Letzte Aktualisierung am 01.06.2022**
 
 ## Ziel
 
@@ -58,7 +58,7 @@ Die DNS-Zone einer Domain ist eine Konfigurationsdatei bestehend aus **Datensät
 
 ### Zugang zur Verwaltung einer OVHcloud DNS-Zone
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Zone`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Zone`{.action}.
 
 Die Tabelle zeigt für jede Zeile einen DNS-Eintrag zu Ihrer Domain bei OVHCloud an. Sie können die Einträge nach dem Eintragstyp oder der zugehörigen Domain filtern.
 
@@ -168,6 +168,29 @@ Um einen DNS-Eintrag zu löschen, klicken Sie im Tab `DNS Zone`{.action} auf den
 Sie können mehrere Einträge auf einmal löschen, indem Sie im linken Teil der Tabelle einen Haken setzen und dann auf den Button `Löschen`{.action} klicken.
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+
+#### Die DNS Zone zurücksetzen
+
+Sie können Ihre DNS-Zone auf zwei Zustände zurücksetzen:
+
+- Auf die Standardeinträge für OVHcloud DNS-Zonen mit einer minimalen Konfiguration.
+- Auf eine leere DNS-Zone (mit Ausnahme der NS-Einträge), um später eine manuelle Konfiguration einzurichten.
+
+Klicken Sie im Tab `DNS-Zone`{.action} auf `Meine DNS-Zone zurücksetzen`{.action} und folgen Sie den angezeigten Schritten.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Sie haben die Wahl zwischen folgenden Optionen:
+
+- `Ja, ich möchte meine DNS-Zone mit den Mindesteinträgen zurücksetzen`. Damit können Sie Ihren Domainnamen und Ihren E-Mail-Dienst folgendermaßen  umleiten:
+    - Auf einen Ihrer Dienste unter "Web Cloud" im OVHcloud Kundencenter.
+    - Auf den OVHcloud Weiterleitungsdienst, verfügbar über den Tab `Weiterleitung`{.action} Ihres Domainnamens in den Bereichen `Domainnamen`{.action} und `E-Mails`{.action}.
+    - Auf eigene DNS-Einträge, wenn Sie `Personalisiert` auswählen. Geben Sie dann Einträge Ihrer Wahl vom Typ `A` und/oder `MX` ein.
+- `Nein, aber ich möchte meine DNS-Zone zurücksetzen`. Ihre DNS-Zone wird dann leer sein, mit Ausnahme der NS-Einträge, die automatisch entsprechend der  OVHcloud DNS-Server für Ihre DNS-Zone eingestellt werden.
+
+> [!primary]
+>
+> Bevor Sie Ihre DNS-Zone zurücksetzen, überprüfen Sie, dass Ihr Domainname nicht mit derzeit aktiv verwendeten Dienstleistungen verbunden ist, wie zum Beispiel Websites oder E-Mail-Adressen.
 
 ### Propagationszeit
 

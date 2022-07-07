@@ -23,8 +23,8 @@ When you order your dedicated server, no security protocols are implemented nati
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/) in your OVHcloud account
-- root access via SSH on your server
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
+- Administrative access (root/sudo) to your server via SSH
 
 ## Instructions
 

@@ -14,7 +14,7 @@ Lors de l’upgrade de votre VPS, il est possible qu’un repartitionnement de v
 
 > [!warning]
 >
-> Le repartitionnement peut endommager définitivement vos données. OVH ne pourra être tenu responsable de leur détérioration ou de leur perte. Avant de faire quoi que ce soit, pensez donc à bien sauvegarder vos informations. 
+> Le repartitionnement peut endommager définitivement vos données. OVHcloud ne pourra être tenu responsable de leur détérioration ou de leur perte. Avant de faire quoi que ce soit, pensez donc à bien sauvegarder vos informations. 
 >
 
 **Découvrez comment augmenter votre espace de stockage après un upgrade de votre VPS.**

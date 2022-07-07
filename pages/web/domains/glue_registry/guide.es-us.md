@@ -18,7 +18,7 @@ Según sus necesidades, es posible personalizar el nombre de los servidores DNS 
 
 ## Requisitos
 
-- Tener un [dominio](https://www.ovhcloud.com/es/domains/){.external} registrado en OVH.
+- Tener un [dominio](https://www.ovhcloud.com/es/domains/){.external} registrado en OVHcloud.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
@@ -27,7 +27,7 @@ Según sus necesidades, es posible personalizar el nombre de los servidores DNS 
 
 ### 1. Añadir los registros Glue
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio cuyos servidores DNS quiera personalizar. A continuación, abra la pestaña `Glue`{.action}, en la que podrá consultar una tabla con los registros Glue configurados actualmente en OVHcloud para su dominio. 
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en `Dominios`{.action} y seleccione el dominio cuyos servidores DNS quiera personalizar. A continuación, abra la pestaña `Glue`{.action}, en la que podrá consultar una tabla con los registros Glue configurados actualmente en OVHcloud para su dominio. 
 
 Para añadir un nuevo registro Glue, haga clic en el botón `Añadir`{.action}.
 

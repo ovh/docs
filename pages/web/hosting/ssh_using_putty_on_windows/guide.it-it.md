@@ -32,7 +32,7 @@ Queste informazioni sono disponibili nella cartella di configurazione. Accedi al
 
 
 
-![](images/img_3094.jpg){.thumbnail}
+![Putty](images/3094.png){.thumbnail}
 
 
 ## Accedi al tuo hosting

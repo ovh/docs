@@ -1,9 +1,8 @@
 ---
-title: FAQ
-excerpt: 'Managed Private Registry (Harbor) FAQ'
+title: 'FAQ Managed Private Registry (Harbor)'
 slug: managed-private-registry-faq
 section: 'Getting started'
-order: 4
+order: 05
 ---
 
 ## Objective

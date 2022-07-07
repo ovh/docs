@@ -196,11 +196,11 @@ iptables -L
 Como tal, recomendamos a criação e o ajustamento das regras da firewall à sua utilização. Para obter mais informações sobre a configuração dos iptables, consulte a documentação oficial da distribuição Linux.
 
 
-### Configurar a Firewall Network da OVHcloud
+### Configurar a Network Firewall da OVHcloud
 
-Os servidores da OVHcloud incluem uma firewall para proteger o acesso à infraestrutura designada Firewall Network. A configuração deste serviço permite o bloqueio de protocolos antes mesmo de chegarem ao servidor.
+Os servidores da OVHcloud incluem uma firewall para proteger o acesso à infraestrutura designada Network Firewall. A configuração deste serviço permite o bloqueio de protocolos antes mesmo de chegarem ao servidor.
 
-Poderá também consultar o nosso [manual](https://docs.ovh.com/pt/dedicated/firewall-network/){.external} sobre como configurar a Firewall Network.
+Poderá também consultar o nosso [manual](https://docs.ovh.com/pt/dedicated/firewall-network/){.external} sobre como configurar a Network Firewall.
 
 
 ### Proteger o sistema e os dados

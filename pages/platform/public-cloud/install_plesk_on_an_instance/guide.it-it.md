@@ -10,20 +10,20 @@ legacy_guide_number: g1998
 
 ## Obiettivo
 
-Plesk è un’interfaccia di gestione server di semplice utilizzo, disponibile all’installazione su tutte le istanze Public Cloud OVH.
+Plesk è un’interfaccia di gestione server di semplice utilizzo, disponibile all’installazione su tutte le istanze Public Cloud OVHcloud.
 
 **Questa guida ti mostra come installare e configurare l’interfaccia Plesk sulla tua istanza Public Cloud.** 
 
 > [!warning]
 > 
-> OVH mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente.
+> OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a muovere i primi passi nell’utilizzo di Plesk sulle istanze Public Cloud OVH. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato o rivolgerti alla [Community OVH](https://community.ovh.com/en/) per confrontarti con altri utenti.
+> Questa guida ti aiuta a muovere i primi passi nell’utilizzo di Plesk sulle istanze Public Cloud OVHcloud. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato o rivolgerti allo [forum comunitario](https://community.ovh.com/en/) per confrontarti con altri utenti.
 >
 
 ## Prerequisiti
 
-- [Aver creato un’istanza dallo Spazio Cliente OVH](../crea_unistanza_dallo_spazio_cliente_ovh/)
+- [Aver creato un’istanza dallo Spazio Cliente OVHcloud](../crea_unistanza_dallo_spazio_cliente_ovh/)
 - [Poter accedere come utente root e impostare la password associata](https://docs.ovh.com/it/public-cloud/imposta_una_password_amministratore/)
 
 ## Procedura
@@ -80,7 +80,7 @@ Per aggiungere una licenza Plesk, assicurati per prima cosa di avere a disposizi
 
 > [!primary]
 >
-> OVH non fornisce licenze Plesk per la soluzione Public Cloud. Per ottenerne una, accedi al sito di [Plesk](https://www.plesk.com/){.external}.
+> OVHcloud non fornisce licenze Plesk per la soluzione Public Cloud. Per ottenerne una, accedi al sito di [Plesk](https://www.plesk.com/){.external}.
 > 
 
 La prima volta che ti connetti all’interfaccia, si apre automaticamente una pagina che propone di installare la licenza:

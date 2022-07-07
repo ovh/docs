@@ -171,7 +171,7 @@ Para más información sobre la configuración del alias IP, consulte la guía [
 
 > [!primary]
 >
-> Los servidores de la gama **Kimsufi** solo disponen de una dirección IPv4 y una dirección IPv6.
+> Los servidores de la gama **Kimsufi** solo disponen de una dirección IPv4 y una dirección IPv6. Las direcciones se configurarán automáticamente al instalar el sistema operativo.
 >
 
 Todos los servidores dedicados de OVHcloud se entregan con un bloque /64 IPv6. Para utilizar las direcciones de este bloque, debe realizar cambios en la configuración de la red. Consulte nuestra guía [Configuración IPv6](../network-ipv6/).

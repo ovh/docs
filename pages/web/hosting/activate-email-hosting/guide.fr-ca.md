@@ -60,6 +60,10 @@ Dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de
 
 ![email-activation](images/mail-hosting04.png){.thumbnail}
 
+> [!warning]
+>
+> Pour confirmer la suppression de l'offre e-mail associée à votre hébergement web, un lien de validation vous est envoyé par e-mail. Il est indispensable de cliquer sur ce lien pour que l'opération de suppression soit lancée.
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

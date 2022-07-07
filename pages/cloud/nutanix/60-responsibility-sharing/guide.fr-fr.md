@@ -3,6 +3,9 @@ title: Partage de responsabilité - Hosted Private Cloud powered by Nutanix
 slug: raci-hosted-private-cloud-nutanix
 section: RACI
 excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation du produit Hosted Private Cloud powered by Nutanix"
+kb: Hosted Private Cloud
+category_l1: Hosted Private Cloud powered by Nutanix
+category_l2: Responsibility sharing
 ---
 
 **Dernière mise à jour le 07/04/2022**
@@ -16,7 +19,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 |R : Est en charge de la Réalisation du processus|
 |A : Est gArant de la bonne fin du processus|
 |C : Est Consulté pendant le processus|
-|I : est Informé des résultats  du processus|
+|I : est Informé des résultats du processus|
 
 ### 1. Avant la souscription
 
@@ -37,7 +40,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Produire, acheminer, livrer et maintenir les machines physiques et les bâtiments d’hébergement | CI | RA |
 | Installer et configurer les briques fonctionnelles internes au serveur dédié nécessaires au maintien en conditions opérationnelles et au maintien en conditions de sécurité (firmware, BIOS, BMC, IPMI...) |  | RA |
-| Acheter et détenir les et droits d’utilisation Nutanix | I | RA  |
+| Acheter et détenir les licences et droits d’utilisation Nutanix | I | RA  |
 | Déployer la configuration réseau initiale sur les équipements | I | RA |
 | Installer le cluster Nutanix | I | RA |
 

@@ -1,16 +1,16 @@
 ---
-title: Getting started with S3 High Performance
+title: Getting started with S3 Object Storage
 slug: s3/getting-started-with-s3
 excerpt:
 section: Object Storage S3 High Performance
 order: 020
 ---
 
-**Last updated**
+**Last updated 6<sup>th</sup> December 2021**
 
 ## Objective
 
-This guide aims at giving you the basics of High Performance containers / objects management.
+This guide aims to familiarise you with the management of your containers / objects.
 
 ## Requirements
 
@@ -177,12 +177,12 @@ Here are the configuration values you can specifically set:
 
 | Variable | Type | Value | Definition |
 |:--|:--|:--|:--|
-| max_concurrent_requests | Integer | **Default :** 10 | The maximum number of simultaneous requests. |
-| max_queue_size | Integer | **Default :** 1000 | The maximum number of jobs in the job queue. |
-| multipart_threshold | Integer<br>String | **Default :** 8MB |  The size threshold that the CLI uses for multipart transfers of individual files. |
-| multipart_chunksize | Integer<br>String | **Default :** 8MB<br>**Minimum for uploads:** 5MB |  When using multipart transfers, this is the chunk size that the CLI uses for multipart transfers of individual files. |
-| max_bandwidth | Integer | **Default :** None | The maximum bandwidth that will be consumed for uploading and downloading data to and from your buckets. |
-|  verify_ssl  | Boolean | **Default :** true | Enable / Disable verification of SSL certificates |
+| max_concurrent_requests | Integer | **Default:** 10 | The maximum number of simultaneous requests. |
+| max_queue_size | Integer | **Default:** 1000 | The maximum number of jobs in the job queue. |
+| multipart_threshold | Integer<br>String | **Default:** 8MB |  The size threshold that the CLI uses for multipart transfers of individual files. |
+| multipart_chunksize | Integer<br>String | **Default:** 8MB<br>**Minimum for uploads:** 5MB |  When using multipart transfers, this is the chunk size that the CLI uses for multipart transfers of individual files. |
+| max_bandwidth | Integer | **Default:** None | The maximum bandwidth that will be consumed for uploading and downloading data to and from your buckets. |
+|  verify_ssl  | Boolean | **Default:** true | Enable / Disable verification of SSL certificates |
 
 #### Usage
 

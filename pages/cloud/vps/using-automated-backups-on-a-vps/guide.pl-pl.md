@@ -7,10 +7,10 @@ order: 2
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja: 01-02-2022**
+**Ostatnia aktualizacja z dnia: 01-02-2022**
 
 ## Wprowadzenie
 
@@ -31,7 +31,7 @@ Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji „Serwer” i wybierz serwer na lewym pasku bocznym pod pozycją `Prywatne serwery wirtualne`{.action}.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
 ### Krok 1: subskrybowanie opcji automatycznych kopii zapasowych
 
@@ -45,7 +45,7 @@ Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Automatyczne kopie za
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
-Jeśli niedawno zmieniło się Twoje hasło użytkownika administracyjnego (root), w wyświetlonym oknie zaznacz opcję „Modyfikuj hasło administratora przy przywracaniu", aby zachować bieżące hasło, i kliknij pozycję `Potwierdź`{.action}. Po ukończeniu zadania otrzymasz wiadomość e-mail. Czas potrzebny do przywrócenia kopii zapasowej zależy od używanej przestrzeni dyskowej.
+Jeśli niedawno zmieniło się Twoje hasło użytkownika administracyjnego (root), w wyświetlonym oknie zaznacz opcję "Modyfikuj hasło administratora przy przywracaniu", aby zachować bieżące hasło, i kliknij pozycję `Potwierdź`{.action}. Po ukończeniu zadania otrzymasz wiadomość e-mail. Czas potrzebny do przywrócenia kopii zapasowej zależy od używanej przestrzeni dyskowej.
 
 > [!alert]
 >
@@ -54,12 +54,12 @@ W procesie tworzenia automatycznych kopii zapasowych nie są uwzględniane dodat
 
 ### Montowanie kopii zapasowej i dostęp do niej
 
-Całkowite zastąpienie istniejącej usługi w wyniku przywrócenia nie jest konieczne. Opcja „Montowanie” umożliwia dostęp do danych kopii zapasowej w celu przywrócenia poszczególnych plików. 
+Całkowite zastąpienie istniejącej usługi w wyniku przywrócenia nie jest konieczne. Opcja “Montowanie” umożliwia dostęp do danych kopii zapasowej w celu przywrócenia poszczególnych plików. 
 
 > [!warning]
 >OVHcloud oferuje usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Tym samym odpowiada za zapewnienie ich prawidłowego działania.
 >
->Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja „Sprawdź również” tego przewodnika.
+>Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja “Sprawdź również” tego przewodnika.
 >
 
 #### Krok 1: Panel klienta
@@ -94,7 +94,7 @@ sdb       8:16   0   25G  0 disk
 └─sdb15   8:31   0  106M  0 part /boot/efi
 ```
 
-W tym przykładzie partycja zawierająca system plików kopii zapasowej ma nazwę „sdb1”.
+W tym przykładzie partycja zawierająca system plików kopii zapasowej ma nazwę “sdb1”.
 Następnie utwórz katalog dla tej partycji i zdefiniuj go jako punkt montowania:
 
 ```
@@ -134,7 +134,7 @@ Funkcja automatycznych kopii zapasowych opiera się na snapshotach VPS. Zalecamy
 
 #### Konfiguracja agenta QEMU na serwerze VPS
 
-Migawki to kopie systemu tworzone w ściśle określonym momencie („live snapshots”). Aby zapewnić dostępność systemu podczas tworzenia migawki, wykorzystywany jest agent QEMU, który pozwala przygotować system plików do tego procesu.
+Migawki to kopie systemu tworzone w ściśle określonym momencie (“live snapshots”). Aby zapewnić dostępność systemu podczas tworzenia migawki, wykorzystywany jest agent QEMU, który pozwala przygotować system plików do tego procesu.
 
 Wymagany *qemu-guest-agent* nie jest domyślnie zainstalowany na większości dystrybucji. Ponadto, wymogi licencyjne mogą uniemożliwić OVHcloud włączenie go do dostępnych obrazów systemu operacyjnego. Dlatego zalecamy zainstalowanie agenta, jeśli nie jest on aktywowany na Twoim prywatnym serwerze wirtualnym. W tym celu połącz się z VPS przez SSH i postępuj zgodnie z poleceniami dotyczącymi Twojego systemu operacyjnego.
 
@@ -147,7 +147,7 @@ $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Jeśli wynik jest inny („No such file or directory”), zainstaluj najnowszy pakiet:
+Jeśli wynik jest inny (“No such file or directory”), zainstaluj najnowszy pakiet:
 
 ```
 $ sudo apt-get update
@@ -175,7 +175,7 @@ $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Jeśli wynik jest inny („No such file or directory”), zainstaluj i aktywuj agenta:
+Jeśli wynik jest inny (“No such file or directory”), zainstaluj i aktywuj agenta:
 
 ```
 $ sudo yum install qemu-guest-agent

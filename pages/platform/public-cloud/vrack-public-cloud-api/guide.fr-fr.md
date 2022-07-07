@@ -20,13 +20,13 @@ Le [vRack](https://www.ovh.com/fr/solutions/vrack/) est un réseau privé qui vo
 - [Avoir créer un utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/#creer-un-compte-utilisateur-openstack).
 - Connaissances réseaux élémentaires.
 - Consulter le guide [Configuration du vRack Public Cloud](../public-cloud-vrack) pour connaître les différentes méthodes proposées pour gérer le vRack Public Cloud OVHcloud.
-- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 
 ### Étape 1 : Activer et gérer un vRack
 
-Connectez-vous aux APIv6 OVHcloud en suivant le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/).
+Connectez-vous aux APIv6 OVHcloud en suivant le guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/).
 
 Une fois identifié, suivez les étapes décrites ci-dessous :
 
@@ -117,7 +117,7 @@ Une fois le bon de commande gratuit validé, un délai de quelques minutes peut 
 
 Une fois le vRack actif, il vous faudra intégrer votre ou vos projets Public Cloud dans le vRack.
 
-Connectez-vous aux APIv6 OVHcloud en suivant le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/).
+Connectez-vous aux APIv6 OVHcloud en suivant le guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/).
 
 Dans le cas ou l’identifiant du projet Public Cloud n’est pas connu, les appels suivants vous permettront de le connaître.
 
@@ -513,6 +513,6 @@ Vous devrez renseigner a minima les champs suivants :
 
 [Configuration du vRack Public Cloud](../public-cloud-vrack)
 
-[Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/)
+[Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

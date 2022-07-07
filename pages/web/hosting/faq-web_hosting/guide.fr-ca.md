@@ -1,80 +1,196 @@
 ---
-title: FAQ
-excerpt: 'Retrouvez les questions les plus fréquemment posées sur les hébergements web OVHcloud'
+title: FAQ Web Hosting
+excerpt: Retrouvez les questions les plus fréquemment posées sur les hébergements web OVHcloud
 slug: faq-hebergement
-section: 'Premiers pas'
+section: Premiers pas
+order: 2
 ---
 
-**Dernière mise à jour le 13/05/2020**
+**Dernière mise à jour le 07/04/2022**
 
-## FAQ hébergements web OVHcloud
+## Gestion de votre offre
 
+### Comment configurer mon hébergement ?
 
-### Que faire si mon site web dysfonctionne ? 
+Pour configurer votre hébergement, connectez-vous tout d'abord à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/ca/fr/&ovhSubsidiary=qc). Depuis la rubrique `Hébergements`, vous pourrez notamment gérer vos certificats SSL, la version PHP, l'option CDN, le multisite, les bases de données, etc.
 
-Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site internet. Pour en identifier la cause, commencez par vérifier que tous vos services sont bien renouvelés et actifs, en vous connectant à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Une fois cette vérification faite, consultez les [tâches travaux en cours](https://web-cloud.status-ovhcloud.com/){.external}. Si tous vos services sont actifs et qu'aucune tâche travaux n'impacte votre site, nous vous invitons à réaliser un diagnostic plus approfondi en vous aidant de [nos guides de diagnostic](../).
+**Trucs et Astuces** : Pour vous aider à configurer votre hébergement, nous vous invitons à prendre connaissance de la rubrique « *Premiers pas* » que vous retrouverez [ici](https://docs.ovh.com/ca/fr/hosting/).
 
-**Trucs et Astuces** : Si votre site est soudainement indisponible suite à une manipulation de votre part, vous pouvez restaurer son contenu depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Pour cela, dirigez-vous sur l'onglet `FTP - SSH` de votre hébergement et cliquez sur le bouton `Restaurer une sauvegarde`{.action}, situé à droite de votre écran. Vous pouvez également vous appuyer sur la documentation suivante : [Restaurer l’espace de stockage de son hébergement web](../restauration-ftp-filezilla-espace-client/).
+### Comment gérer mes mots de passe ?
 
-### Comment configurer mon hébergement ? 
+Pour gérer vos mots de passe, vous devez tout d'abord vous connecter à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/ca/fr/&ovhSubsidiary=qc). En cas d'oubli de votre identifiant ou de votre mot de passe, cliquez sur `Identifiant ou mot de passe oublié`{.action} sous la fenêtre de connexion. Un e-mail vous sera envoyé avec une procédure de réinitialisation.
 
-Pour configurer votre hébergement, connectez-vous tout d'abord à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Depuis la rubrique `Hébergement` vous pourrez notamment gérer vos certificats SSL, vos versions PHP, vos CDN, vos multisites, vos bases de données, ...
+Vous pouvez également consulter le guide [Modifier le mot de passe de votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/).
 
-**Trucs et Astuces** : Pour vous aider à configurer votre hébergement, nous vous invitons à prendre connaissance de la rubrique <br> « Premiers pas » que vous retrouverez [ici](../).
+Une fois connecté à votre espace client :
 
-### Comment créer ou supprimer un élément sur mon produit/service (compte e-mail, base de données, ….) ?
-
-Pour créer ou supprimer un élément, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} puis sélectionnez le produit concerné <br> (`E-mail`, `Base de données`, `Modules`). Vous pourrez ainsi faire évoluer votre produit à votre convenance.
-
-**Trucs et Astuces** : depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, vous avez la possibilité de réaliser des sauvegardes régulières de vos bases de données.
-
-### Comment gérer mes mots de passe ? 
-
-Pour gérer vos mots de passe, vous devez tout d'abord vous connecter à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. En cas d'oubli de votre identifiant ou de votre mot de passe, cliquez sur `Identifiant ou mot de passe oublié`{.action} sous la fenêtre de connexion. Un e-mail vous sera envoyé avec une procédure de réinitialisation. 
-Vous pouvez également consulter le guide [Définir et gérer le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/){.external}.
-
-Une fois connecté à votre espace client, vous pourrez gérer vos différents accès tels que : 
-
-* l'accès à votre serveur FTP et aux bases de données. Pour ce faire, accédez à la rubrique `Hébergement` de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez le produit/service concerné .
-* l'accès à vos e-mails, depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, rubrique `E-mail`.
-
-**Trucs et Astuces** : Dans le cas d'une offre E-mail Pro ou Exchange, vous pouvez également gérer vos accès depuis les webmails respectifs de ces offres.
+- Pour modifier le mot de passe de votre espace FTP, suivez les instructions de [ce guide](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
+- Pour modifier le mot de passe de votre base de données, suivez les instructions de [ce guide](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
+- Pour modifier le mot de passe de votre adresse e-mail MX Plan, suivez les instructions de [ce guide](https://docs.ovh.com/ca/fr/emails/modifier-mot-de-passe-adresse-email/).
 
 ### Comment mettre en ligne mon site ? 
 
-Pour mettre en ligne votre site chez OVHcloud, vous devez disposer d'un nom de domaine, qui correspondra à l'adresse depuis laquelle votre site sera accessible (exemple : ovh.com). Vous devez également disposer d'un hébergement web sur lequel vous allez mettre en place votre site. Vous pouvez également consulter ce guide : [Mettre en ligne un site internet sur son hébergement web](../mettre-mon-site-en-ligne)
+Pour mettre en ligne votre site, vous devez disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/) qui correspondra à l'adresse Web depuis laquelle votre site sera accessible (exemple : *mondomaine.com*). Vous aurez également besoin d'un [hébergement](https://www.ovhcloud.com/fr-ca/web-hosting/) sur lequel installer votre site.
 
-**Trucs et Astuces** : Pour vous aider à créer votre site internet, OVHcloud met à votre disposition des modules en 1 clic tels que Wordpress, Prestashop, Joomla ou encore Drupal. Retrouvez-les [ici](https://www.ovhcloud.com/fr-ca/web-hosting/uc-website/).external}. Vous pouvez également vous aider de [notre documentation](../modules-en-1-clic/).
+Pour suivre les étapes nécessaires à la construction de votre site, consultez cette [page](https://www.ovhcloud.com/fr-ca/web-hosting/uc-website/) puis suivez les instructions du guide [Mettre en ligne un site Internet sur son hébergement web](https://docs.ovh.com/ca/fr/hosting/mettre-mon-site-en-ligne/).
 
-### Comment migrer mon site internet et mes e-mails vers OVHcloud ? 
+**Trucs et Astuces** : Pour vous aider à créer votre site, OVHcloud vous permet d'installer sur votre hébergement un logiciel d'assistance à la création de sites (Wordpress, Prestashop, Joomla et Drupal), grâce la fonctionnalité [Modules en 1 clic](https://docs.ovh.com/ca/fr/hosting/modules-en-1-clic/).
 
-Pour migrer votre site internet et vos e-mails vers OVHcloud, vous devez disposer d'une [offre d'hébergement Web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} ainsi que d'une [offre e-mail OVHcloud](https://www.ovh.com/ca/fr/emails/){.external}. Vous pourrez ensuite vous connecter au serveur FTP de votre hébergement afin d'y transférer les fichiers de votre site. Si vous disposez actuellement d'une base de données, pensez également à réaliser une sauvegarde de celle-ci. 
+### Comment transférer mon site et mes e-mails sur les serveurs OVHcloud ? 
 
-Pour migrer les e-mails, vous devrez recréer vos comptes chez OVHcloud, puis utiliser notre outil de migration [OMM (OVH Mail Migrator)](https://omm.ovh.net/) que vous trouverez [ici](https://omm.ovh.net/). 
-
-Une fois ces étapes réalisées, vous pourrez modifier la zone DNS de votre domaine afin qu'elle puisse sous 1 à 24 heures pointer sur notre infrastructure. Si vous souhaitez des informations complémentaires, n'hésitez pas à consulter le guide [Migrer mon site chez OVHcloud](../migrer-mon-site-chez-ovh/).
-
-**Trucs et Astuces** : Pour le transfert de vos fichiers, vous pouvez utiliser un logiciel tel que Filezilla ou Cyberduck en vous appuyant sur [notre documentation](../mutualise-guide-utilisation-filezilla/).
+Consultez le guide [Migrer son site et ses e-mails vers OVHcloud](https://docs.ovh.com/ca/fr/hosting/migrer-mon-site-chez-ovh/).
 
 ### Comment héberger plusieurs sites web sur un même hébergement mutualisé ?
 
-Pour les utilisateurs experts, vous pouvez héberger plusieurs sites internet sur le même hébergement mutualisé. Pour cela, vous devez attacher un autre nom de domaine ou attacher un sous-domaine à cet hébergement. La procédure pour attacher ou détacher un domaine est expliquée dans [ce guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+Consultez le guide [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
 
-### Que faire si après publication de mon site, la page « Félicitations » d'OVHcloud reste affichée ?
+### Comment conserver l'offre e-mail liée à mon hébergement mutualisé lors d'une résiliation ?
 
-À l'installation de votre hébergement, OVHcloud met en place une page d'attente, le temps que vous déposiez les fichiers de votre site internet. Si vous déposez simplement vos fichiers dans le dossier « www » sans supprimer le contenu déposé par OVHcloud, vous risquez de rencontrer ce souci. 
+Lorsque vous résiliez ou supprimez votre hébergement mutualisé, l'offre e-mail qui est attachée est également résiliée. Pour conserver vos adresses e-mails, il vous faudra détacher l'offre e-mail avant la résiliation de l'hébergement.<br>
 
-Afin de corriger cela, vous devez supprimer ou renommer le fichier « index.html » mis en place par OVHcloud sur votre hébergement. 
-Il peut être intéressant de simplement le renommer afin de vous permettre de le réactiver à tout moment et de vous en servir comme page d'attente. 
+Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Adresses e-mails** ». Cliquez sur `Délier mon option e-mail`{.action} et suivez les instructions pour commander une offre e-mail indépendante qui vous permettra de conserver vos adresses e-mails déjà créées.
 
-**Autre information utile** : les fichiers de votre site doivent être déposés dans le dossier « www » afin d'être pris en compte.
+## Diagnostic
 
-### Comment faire évoluer mon offre d'hébergement web ?
+> [!warning]
+>
+> Si vous rencontrez une anomalie non-répertoriée dans cette FAQ, consultez les pages « Diagnostic » de [notre documentation](https://docs.ovh.com/ca/fr/hosting/).
+>
 
-Si vous souhaitez changer votre offre actuelle pour une offre supérieure, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, dans la rubrique `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et sélectionnez l'offre concernée.
+### Que faire si mon site web dysfonctionne ? 
 
-Depuis l'onglet `Informations générales`, dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} devant « Offre » puis cliquez sur  `Changer d'offre`{.action}. Suivez les instructions suivantes pour finaliser votre commande. Un prorata du temps restant de votre offre actuelle est rajouté sur la nouvelle offre.
+Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site. Pour en identifier la cause, commencez par vérifier qu'aucun de vos abonnements n'a besoin d'être **renouvelé** en vous connectant à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/ca/fr/&ovhSubsidiary=qc).
 
-## Aller plus loin
+Consultez ensuite les [évènements en cours sur notre infrastructure](https://www.status-ovhcloud.com/). Si tous vos services sont actifs et ne sont affectés par aucun incident ou maintenance, nous vous invitons à réaliser un diagnostic plus approfondi.
+
+### Que faire si, après la mise en ligne de mon site, la page « Site en construction » d'OVHcloud reste affichée ?
+
+![site_en_construction](images/site_en_construction.png){.thumbnail}
+
+À l'installation de votre hébergement, OVHcloud met en place cette page d'attente sous la forme d'un fichier **index.html** contenu dans le dossier `www` de votre serveur FTP.
+
+Ce fichier est automatiquement désactivé lors de la création de votre [module en 1 clic](https://docs.ovh.com/ca/fr/hosting/modules-en-1-clic/).
+
+Si vous avez choisi [d'installer votre site manuellement](https://docs.ovh.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/), [connectez-vous à votre espace FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) afin de le renommer en **index.html.old**.
+
+### Que faire si mon site s'affiche sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net » ?
+
+![url-cluster](images/url-cluster.png){.thumbnail}
+
+Deux scénarii sont possibles. Soit votre site a été créé avec cette adresse web, soit celle-ci est apparue suite à une modification.
+
+#### Scénario 1 : votre site a été créé avec une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net »
+
+> [!warning]
+>
+> La suppression d'une base de données, comme celle d'un module en 1 clic, est définitive. Elle entraîne également la **suppression des sauvegardes** des données concernées. Avant de supprimer votre site sur l'hébergement OVHcloud, **assurez-vous d'être capable de le recréer à l'identique**. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr-ca/directory/).
+>
+
+Dans le premier cas, après avoir réalisé toutes les sauvegardes nécessaires, supprimez votre module depuis la partie `Hébergements` de votre espace client OVHcloud :
+
+![delete_a_module](images/delete_a_module.png){.thumbnail}
+
+Puis supprimez sa base de données depuis l'onglet du même nom situé à droite de votre écran, toujours dans la partie `Hébergements` :
+
+![delete_a_database](images/delete_a_database.png){.thumbnail}
+ 
+Enfin, relancez son installation sur le nom de domaine souhaité, en utilisant la fonctionnalité [Module en 1 clic](https://docs.ovh.com/ca/fr/hosting/1-click-module-management/).
+
+#### Scénario 2 : votre site s'affiche avec une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net » suite à une modification
+
+Si votre site s'affiche avec cette URL suite à une manipulation, restaurez-le à son état antérieur.
+
+> [!alert]
+>
+> La restauration de votre hébergement OVHcloud entraînera celle de **l'ensemble des sites** qu'il contient.
+>
+> Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur FTP ou celles de la base de données avant la restauration.
+>
+
+Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage de son hébergement web](https://docs.ovh.com/ca/fr/hosting/restauration-ftp-filezilla-espace-client/) ».
+
+Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client) ».
+
+### Que faire si mon site redirige vers le webmail OVHcloud ?
+
+![webmail](images/webmail.png){.thumbnail}
+
+Cette anomalie indique une configuration erronée au niveau des [serveurs DNS](https://docs.ovh.com/ca/fr/domains/generalites-serveurs-dns/) ou de la [zone DNS](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/) associés à votre nom de domaine.
+
+Le cas le plus courant est le suivant : vous avez commandé séparément votre nom de domaine et votre hébergement, ils ne sont donc pas reliés entre eux via leur zone DNS.
+
+Rendez-vous dans la partie `Domaines`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/ca/fr/&ovhSubsidiary=qc). Cliquez sur le nom de domaine concerné puis sur l'onglet `Serveurs DNS`{.action}.
+
+Notez ensuite les serveurs DNS indiqués puis rendez-vous dans l'onglet `Zone DNS`{.action}.
+
+Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone DNS`{.action} avec les `Serveurs DNS` indiqués dans l'onglet du même nom :
+
+- Si les éléments sont identiques, remplacez la cible `213.186.33.5` par le code à quatre nombres noté dans l'onglet `Informations générales` sous la mention `IPv4` (pour plus de détails sur les manipulations à effectuer, suivez les instructions de [ce guide](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/#en-pratique)).
+
+- Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](https://docs.ovh.com/ca/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), effectuez une réinitialisation en suivant les instructions de [ce guide](https://docs.ovh.com/ca/fr/domains/generalites-serveurs-dns/#reinitialiser-les-serveurs-dns).
+
+- Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](https://docs.ovh.com/ca/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), contactez votre Webmaster ou recherchez un prestataire spécialisé via la page des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+
+### Que faire si mon site affiche une erreur « La page ne se redirige pas correctement » ?
+
+![too_many_redirect](images/too_many_redirect.png){.thumbnail}
+
+> [!alert]
+>
+> La restauration de votre hébergement OVHcloud entraînera celle de l'ensemble des sites qu'il contient.
+>
+> Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur FTP ou celles de la base de données juste avant la restauration.
+>
+
+Restaurez votre site à son état précédent :
+
+- Pour restaurer le code source de votre site, consultez notre guide [Restaurer l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/).
+
+- Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client).
+
+Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un prestataire spécialisé sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+
+### Que faire si mon site affiche une erreur « 503 error Backend fetch failed (Varnish cache) » ?
+
+![503_varnish](images/503_varnish.png){.thumbnail}
+
+Si vous avez activé [l'option CDN](https://docs.ovh.com/ca/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/) de votre hébergement, désactivez le mode *Maintenance* sur votre site Wordpress ou Prestashop.
+
+Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un prestataire spécialisé sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+
+### Que faire si mon site affiche une erreur « Your request has been blocked » ?
+
+![your_request_has_been_blocked](images/your_request_has_been_blocked.png){.thumbnail}
+
+Ce message indique que le type de requête HTTP que vous tentez de faire sur votre site est interdit pour un temps limité. Dans cette situation, [examinez les logs](https://docs.ovh.com/ca/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) de votre site afin de déterminer quelles requêtes ont provoqué ce blocage.
+
+Pour vous aider à corriger ces anomalies, contactez votre Webmaster ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr-ca/directory/).
+
+### Que faire si mon site affiche une erreur « Your IP has been banned » ?
+
+![your_ip_has_been_blocked](images/your_ip_has_been_blocked.png){.thumbnail}
+
+Ce message indique que l'adresse IP que vous utilisez pour vous connecter à votre site est bloquée pour un temps limité. 
+
+Dans cette situation, [examinez les logs](https://docs.ovh.com/ca/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) de votre site, afin de déterminer quelles requêtes ont provoqué ce blocage.<br>
+Vérifiez également que votre poste informatique n'est pas infecté par un virus.<br>
+Vous pouvez enfin contacter l'un de [nos partenaires](https://partner.ovhcloud.com/fr-ca/directory/), afin qu'il vérifie le code informatique de votre site.
+
+### J'ai commandé un domaine comportant des accents et il s'affiche écrit de façon étrange dans mon espace client. Que dois-je faire ?
+
+![notation_idn](images/notation_idn.png){.thumbnail}
+
+Vous n'avez aucune action à mener dans cette situation. Même si votre domaine s'affiche en [notation internationalisée (IDN)](https://fr.wikipedia.org/wiki/Nom_de_domaine_internationalis%C3%A9){.external} dans votre espace client, il fonctionnera et s'affichera de façon tout à fait normale ailleurs. L'adresse Web de votre site s'affichera telle que vous l'avez demandée. Vos adresses e-mail s'afficheront également telles que vous le souhaitez chez vos correspondants.
+
+> [!warning]
+>
+> L'utilisation d'une adresse e-mail avec un domaine IDN dans un logiciel de messagerie (Outlook, Mail de macOS, etc.) n'est pas recommandée et peut provoquer des incompatibilités.
+>
+
+## Aller plus loin <a name="gofurther"></a>
+
+[FAQ - E-mails mutualisés MX Plan](https://docs.ovh.com/ca/fr/emails/faq-emails/)
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

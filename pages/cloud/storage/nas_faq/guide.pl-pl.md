@@ -6,7 +6,7 @@ section: NAS
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
 **Ostatnia aktualizacja dnia 09-09-2021**
@@ -92,7 +92,7 @@ Obecnie nie można zintegrować NAS-HA z siecią prywatną vRack. Jednakże moż
 
 Snapshot (inaczej migawka) to rodzaj zrzutu danych przechowywanych na dysku w danym momencie. Konfiguracja i zarządzanie snapshotami są dostępne z poziomu Panelu klienta.
 
-Snapshot jest aktywowany domyślnie w chwili tworzenia partycji, a domyśla częstotliwość jego wykonywania to „co godzinę”.
+Snapshot jest aktywowany domyślnie w chwili tworzenia partycji, a domyśla częstotliwość jego wykonywania to “co godzinę”.
 
 ### Jak często tworzyć snapshoty?
 
@@ -118,7 +118,7 @@ Istnieje możliwość automatycznego tworzenia snapshotów w określonych odstę
 
 ### Czy można usunąć snapshota?
 
-Usuwane mogą być jedynie snapshoty utworzone „na żądanie” (patrz poprzednie pytanie „Jak często należy tworzyć snapshoty?”). Snapshoty tworzone w stałych odstępach czasowych są usuwane automatycznie, bez możliwości ich ręcznego usuwania.
+Usuwane mogą być jedynie snapshoty utworzone “na żądanie” (patrz poprzednie pytanie “Jak często należy tworzyć snapshoty?”). Snapshoty tworzone w stałych odstępach czasowych są usuwane automatycznie, bez możliwości ich ręcznego usuwania.
 
 ### Ile przestrzeni zajmują snapshoty na NAS-HA?
 
@@ -133,7 +133,7 @@ Od chwili utworzenia snapshota wszystkie działania wykonane na danej partycji b
 
 ### Skąd mogę odzyskać snapshoty?
 
-Na właściwej partycji: katalog ukryty o nazwie `.zfs` → katalog `snapshots`. Pliki mają status „read only”.
+Na właściwej partycji: katalog ukryty o nazwie `.zfs` → katalog `snapshots`. Pliki mają status “read only”.
 
 ### Czy OVHcloud wykonuje również kopię zapasową moich danych?
 

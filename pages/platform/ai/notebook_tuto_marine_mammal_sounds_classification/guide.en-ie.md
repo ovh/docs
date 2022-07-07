@@ -6,7 +6,7 @@ section: AI Notebooks tutorials
 order: 6
 ---
 
-**Last updated 6th April, 2022.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
@@ -16,18 +16,25 @@ The purpose of this tutorial is to show how it is possible to train a model in o
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie);
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account;
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - A user for AI Notebooks
+- Two [Object Storage containers](https://docs.ovh.com/ie/en/storage/pcs/create-container/) to store the data and the model
 - Your own dataset
 
 ## Instructions
 
 ### Uploading your dataset on Public Cloud Storage
 
-If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the Object Storage section and create a new object container by clicking `Object Storage`{.action} > `Create an object container`{.action}.
+If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the Object Storage section and [create a new object container](https://docs.ovh.com/ie/en/storage/pcs/create-container/) by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
+
+> [!primary]
+>
+> In the OVHcloud Control Panel, you can upload files but not folders. For instance, you can upload a .zip file to optimize the bandwidth, then unzip it later when accessing it through your JupyterLab.
+> You can also use the OVHcloud AI CLI to upload files and folders (and be more stable than through your browser). 
+>
 
 If you want to run it with the CLI, just follow this [this guide](https://docs.ovh.com/ie/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
@@ -49,8 +56,11 @@ ovhai data upload <region> <container> <paths>
 
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/ie/en/publiccloud/ai/cli/access-object-storage-data/).
 
-If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), just follow this [guide](https://docs.ovh.com/ie/en/publiccloud/ai/cli/getting-started-cli/).
+To be able to use the source code below in this article you have to create 2 Object Storage containers mounted as follows:
 
+ - mount point name: `/workspace/data`, permissions: `read & write`
+ - mount point name: `/workspace/saved_model`, permissions: `read & write`
+ 
 `Choose the same region as your object container` > `"One image to rule them all" framework` > `Attach Object Storage containers (the one that contains your dataset)`
 
 If you want to launch it with the CLI, choose the [volume](https://docs.ovh.com/ie/en/publiccloud/ai/cli/access-object-storage-data/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
@@ -62,29 +72,15 @@ ovhai notebook run one-for-all jupyterlab \
   --volume <container@region/prefix:mount_path:permission>
 ```
 
-You can then reach your notebook’s URL once the notebook is Running.
+You can then reach your notebook’s URL once the notebook is running.
 
-### Cloning the GitHub repository
-
-The GitHub repository containing all examples for OVHcloud AI NOTEBOOKS is available [here](https://github.com/ovh/ai-training-examples).
-
-Inside your notebook, open a new Terminal tab by clicking `File`{.action} > `New`{.action} > `Terminal`{.action}.
-
-![image](images/new-terminal.png){.thumbnail}
-
-Run the following command in the notebook’s terminal to clone the repository:
-
-```bash
-git clone https://github.com/ovh/ai-training-examples.git
-```
-
-Once the repository has been cloned, find your notebook by following this path: `ai-training-examples` > `notebooks` > `tensorflow` > `tuto` > `notebook_marine_sound_classification`.
+Find the notebook by following this path: `ai-training-examples` > `notebooks` > `audio` > `audio-classification` > `notebook-marine-sound-classification.ipynb`.
 
 ### Experimenting classification sound notebook
 
 Once your dataset is ready and uploaded, you are able to train the model!
 
-A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook-marine-sound-classification.ipynb).
+A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/audio/audio-classification/notebook-marine-sound-classification.ipynb).
 
 ## Feedback
 

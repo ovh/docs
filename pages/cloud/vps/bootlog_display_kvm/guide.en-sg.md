@@ -9,7 +9,7 @@ section: 'Diagnostics and rescue mode'
 
 ## Objective
 
-If your VPS has become unresponsive, you should still be able to access it from your Control Panel via [KVM](../use-kvm-for-vps/). The quickest way to diagnose the problem is to check the boot log of the server. However, the GRUB configuration needs to be modified in order for these logs to appear. 
+If your VPS has become unresponsive, you still have the possibility to access it from your Control Panel via [KVM](../use-kvm-for-vps/). The quickest way to diagnose the problem is to check the boot log of the server. However, the GRUB configuration needs to be modified in order for these logs to appear. 
 
 > [!primary]
 >

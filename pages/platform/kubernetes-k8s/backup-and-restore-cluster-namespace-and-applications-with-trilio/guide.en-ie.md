@@ -27,7 +27,7 @@ section: 'Tutorials'
  }
 </style>
 
-**Last updated March 28<sup>th</sup>, 2022.**
+**Last updated May 13<sup>th</sup>, 2022.**
 
 ## Introduction <a name="introduction"></a>
 
@@ -115,8 +115,8 @@ After finishing this tutorial, you should be able to:
 - [Step 1 - Installing TrilioVault for Kubernetes](#step-1---installing-triliovault-for-kubernetes)
     - [Installing TrilioVault Operator and Manager Using Helm](#installing-triliovault-operator-and-manager-using-helm)
     - [TrilioVault Application Licensing](#triliovault-application-licensing)
-    - [Checking TVK Application Licensing](#checking-tvk-application-licensing)
-    - [Creating/Renewing TVK Application License](#creatingrenewing-tvk-application-license)
+    - [Installing TVK Application Licensing](#installing-tvk-application-licensing)
+    - [Renewing TVK Application License](#renewing-tvk-application-license)
 - [Step 2 - Creating a TrilioVault Target to Store Backups](#step-2---creating-a-triliovault-target-to-store-backups)
 - [Step 3 - Getting to Know the TVK Web Management Console](#step-3---getting-to-know-the-tvk-web-management-console)
     - [Getting Access to the TVK Web Management Console](#getting-access-to-the-tvk-web-management-console)
@@ -245,7 +245,7 @@ The output looks similar to the following:
 
 ```text
 NAME                                            CHART VERSION   APP VERSION     DESCRIPTION
-triliovault-operator/k8s-triliovault-operator   2.7.1           2.7.1           K8s-TrilioVault-Operator is an operator designe...
+triliovault-operator/k8s-triliovault-operator   2.9.2           2.9.2           K8s-TrilioVault-Operator is an operator designe...
 ```
 
 The chart of interest is `triliovault-operator/k8s-triliovault-operator`, which will install TrilioVault for Kubernetes Operator on the cluster. You can run `helm install` command to install the Operator which will also install the Triliovault Manager CRD. Install TrilioVault for Kubernetes Operator using `Helm`:
@@ -266,8 +266,8 @@ The output looks similar to the following (`STATUS` column should display "deplo
 
 ```text
 NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
-triliovault-manager-tvk tvk             1               2022-01-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.7.1           2.7.1
-triliovault-operator    tvk             1               2022-01-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.7.1  2.7.1
+triliovault-manager-tvk tvk             1               2022-01-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.9.2           2.9.2
+triliovault-operator    tvk             1               2022-01-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.9.2  2.9.2
 ```
 
 Next, verify that TrilioVault-Operator and Triliovault-Manager application is up and running:
@@ -321,19 +321,26 @@ The output looks similar to the following:
 
 ```text
 NAME                  TRILIOVAULT-VERSION   SCOPE     STATUS     RESTORE-NAMESPACES
-triliovault-manager   2.7.1                 Cluster   Deployed
+triliovault-manager   2.9.2                 Cluster   Deployed
 ```
 
 If the output looks like above, you installed TVK successfully. Next, you will learn how to check license type and validity, as well as how to renew.
 
 #### TrilioVault Application Licensing <a name="triliovault-application-licensing"></a>
 
-By default, when installing TVK via Helm, there is no Free Trial license generated. But if you download a Free Trial license and apply, it lets you run TVK for one month on unlimited cluster nodes.<br>
-You can always go to the Trilio website and generate a new [license](https://www.trilio.io/plans) for your cluster that suits your needs (for example, you can pick the **basic license** type that lets you run TrilioVault indefinetly if your cluster capacity doesn't exceed 50 nodes or 100 vCPUs).
+By default, when installing TVK via Helm, there is no Free Trial license generated. This tutorial will help you install the 'Cluster' scoped license which is of type 'Basic' for cluster capacity of 500 CPUs and has expiration time of 5 years. <br>
+You can always go to the Trilio website and generate a new [license](https://www.trilio.io/plans) for your cluster that suits your needs.
 
-#### Checking TVK Application Licensing <a name="checking-tvk-application-licensing"></a>
+#### Installing TVK Application Licensing <a name="installing-tvk-application-licensing"></a>
 
 Please run below command to see what license is available for your cluster (it is managed via the License CRD):
+
+```shell
+curl -LO https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/manifests/tvk_install_license.yaml
+kubectl apply -f tvk_install_license.yaml -n tvk
+```
+
+Run the below command to verify if the license is successfully created for OVHcloud users:
 
 ```shell
 kubectl get license -n tvk
@@ -343,7 +350,7 @@ The output looks similar to (notice the `STATUS` which should be "Active", as we
 
 ```text
 NAMESPACE   NAME             STATUS   MESSAGE                                   CURRENT NODE COUNT   GRACE PERIOD END TIME   EDITION   CAPACITY   EXPIRATION TIME        MAX NODES
-tvk         test-license-1   Active   Cluster License Activated successfully.   3                                            Basic     50         2022-12-22T00:00:00Z   3
+tvk         trilio-license   Active   Cluster License Activated successfully.   3                                            Basic     500         2022-12-22T00:00:00Z   3
 ```
 The license is managed via a special `CRD`, namely the `License` object. You can inspect it by running below command:
 
@@ -364,32 +371,32 @@ Annotations:  generation: 1
 API Version:  triliovault.trilio.io/v1
 Kind:         License
 Metadata:
-  Creation Timestamp:  2021-12-21T10:06:59Z
+  Creation Timestamp:  2022-05-13T10:56:14Z
 ...
   Current Node Count:  3
   Max Nodes:           3
   Message:             Cluster License Activated successfully.
   Properties:
     Active:                        true
-    Capacity:                      50
-    Company:                       TRILIO-KUBERNETES-LICENSE-GEN-BASIC
-    Creation Timestamp:            2021-12-21T00:00:00Z
+    Capacity:                      500
+    Company:                       OVHCloud License For Users
+    Creation Timestamp:            2027-05-17T00:00:00Z
     Edition:                       Basic
     Expiration Timestamp:          2022-12-22T00:00:00Z
     Kube UID:                      46188ee1-8ce1-4c45-96fa-c262f2214ced
-    License ID:                    TVAULT-aa433560-6245-11ec-8d41-0cc47a9fd48e
-    Maintenance Expiry Timestamp:  2022-12-22T00:00:00Z
+    License ID:                    TVAULT-4ddf3f72-d2ab-11ec-9a22-4b4849af53ee
+    Maintenance Expiry Timestamp:  2027-05-17T00:00:00Z
     Number Of Users:               -1
-    Purchase Timestamp:            2021-12-21T00:00:00Z
+    Purchase Timestamp:            2022-05-13T00:00:00Z
     Scope:                         Cluster
 ...
 ```
 
 The above output will also tell you when the license is going to expire in the `Expiration Timestamp` field, and the `Scope` (`Cluster` based in this case). You can opt for a cluster wide license type, or for a namespace based license. More details can be found on the [Trilio Licensing](https://docs.trilio.io/kubernetes/overview/licensing) documentation page.
 
-#### Creating/Renewing TVK Application License <a name="creatingrenewing-tvk-application-license"></a>
+#### Renewing TVK Application License <a name="renewing-tvk-application-license"></a>
 
-To create or renew the license, you will have to request a new one from the Trilio website, by navigating to the [licensing](https://www.trilio.io/plans) page. After completing the form, you should receive the License YAML manifest, which can be applied to your cluster using `kubectl`. Below commands assume that TVK is installed in the default `tvk` namespace (please replace the `<>` placeholders accordingly, where required):
+To renew the license, you will have to request a new one from the Trilio website, by navigating to the [licensing](https://www.trilio.io/plans) page. After completing the form, you should receive the License YAML manifest, which can be applied to your cluster using `kubectl`. Below commands assume that TVK is installed in the default `tvk` namespace (please replace the `<>` placeholders accordingly, where required):
 
 ```shell
 kubectl apply -f <YOUR_LICENSE_FILE_NAME>.yaml -n tvk

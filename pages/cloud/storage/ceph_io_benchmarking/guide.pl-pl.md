@@ -59,7 +59,7 @@ W przypadku uruchomienia testu w urządzeniu `/dev/rbd` lub w maszynie wirtualne
 - cache systemu operacyjnego: można odnieść wrażenie, że system operacyjny jest przez jakiś czas bardzo szybki, a następnie zwalnia. Aby tego uniknąć, użyj bezpośrednich I/O;
 - obsługa żądań FLUSH / FUA w stosie pamięci używanym do testów;
 - hiperwizor i/lub sterownik (virtio/scsi) używany do wirtualizacji;
-- „rozgrzej” przestrzeń dyskową przed rozpoczęciem lub kilkukrotnym uruchomieniem benchmarku.
+- “rozgrzej” przestrzeń dyskową przed rozpoczęciem lub kilkukrotnym uruchomieniem benchmarku.
 
 
 ### Właściwy benchmark

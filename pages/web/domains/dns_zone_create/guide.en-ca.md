@@ -3,7 +3,7 @@ title: 'Creating an OVHcloud DNS zone for a domain name'
 slug: create_a_dns_zone_for_a_domain_which_is_not_registered_at_ovh
 excerpt: 'Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel'
 legacy_guide_number: g2229
-section: 'DNS and DNS zone'
+section: 'DNS and DNS Zone'
 order: 2
 ---
 
@@ -27,7 +27,7 @@ For a number of reasons, you may need to create a DNS zone for your domain name 
 
 ### Step 1: Create the DNS zone via the OVHcloud Control Panel.
 
-First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Click `Order`{.action} in the services bar on the left-hand side, then `DNS zone`{.action}.
+First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Click `Order`{.action}, then `DNS zone`{.action}.
 
 In the page that pops up, enter the domain name you would like to create an OVHcloud DNS for. Then wait a few moments for the tool to carry out its verifications on the domain name.
 
@@ -50,7 +50,7 @@ Once you have selected an option, continue following the next steps until you ha
 
 Now that your domain name’s DNS zone has been created, you can edit it. This step is optional, but it may be essential if you want to ensure that any services linked to your domain name do not experience any downtime (e.g. your website and email services).
 
-If you would like to edit this DNS zone, in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+If you would like to edit this DNS zone, in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click `Domains`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 > [!primary]
 >

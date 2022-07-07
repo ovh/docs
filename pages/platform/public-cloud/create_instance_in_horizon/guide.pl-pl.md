@@ -39,7 +39,7 @@ Wprowadź następnie odpowiednie dane. W razie potrzeby skorzystaj z poniższej 
 
 |Informacja|Szczegóły|
 |---|---|
-|Availability Zone|Pozostaw „nova” (wybór domyślny).|
+|Availability Zone|Pozostaw “nova” (wybór domyślny).|
 |Instance Name|Wpisz wybraną nazwę tworzonej instancji.|
 |Flavor|Wybierz typ instancji.|
 |Count|Wpisz liczbę instancji, które chcesz utworzyć.|

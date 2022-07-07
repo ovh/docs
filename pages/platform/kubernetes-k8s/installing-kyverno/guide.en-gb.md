@@ -6,7 +6,7 @@ section: Security
 order: 0
 ---
 
-**Last updated 7th February 2022.**
+**Last updated 27th May 2022.**
 
 <style>
  pre {
@@ -36,7 +36,7 @@ order: 0
 
 ![Kyverno](images/kyverno-logo.png)
 
-With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies (compared to [OPA Gatekeeper](https://github.com/open-policy-agent/gatekeeper) which use Rego programming language). This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies. 
+With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies (compared to [OPA Gatekeeper](https://github.com/open-policy-agent/gatekeeper) which uses Rego programming language). This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies. 
 
 Kyverno policies can **validate**, **mutate** and **generate** Kubernetes resources.
 
@@ -78,11 +78,11 @@ As at OVHcloud, we like to provide you with the best products and services and f
 
 In this guide you will:
 
-- Install Knative
+- Install Kyverno
 - Write and deploy several policies
 - Test the behavior
 
-You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 

@@ -3,7 +3,7 @@ title: 'E-mail Pro'
 slug: emails-pro
 excertp: 'Tout sur le service E-mail Pro'
 sections: 'Premiers pas, Fonctionnalités des adresses e-mail, Configuration sur smartphone, Configuration sur ordinateur, Configuration sur une interface en ligne'
-order: 04
+order: 06
 ---
 
 > [!product-section]

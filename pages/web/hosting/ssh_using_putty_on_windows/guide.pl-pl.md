@@ -30,7 +30,7 @@ Informacja ta jest dostępna w panelu klienta. Przejdź do sekcji FTP lub postę
 
 
 
-![](images/img_3094.jpg){.thumbnail}
+![Putty](images/3094.png){.thumbnail}
 
 
 ## Logowanie na hosting

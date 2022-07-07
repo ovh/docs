@@ -18,6 +18,11 @@ Ramki Jumbo, inaczej *Jumbo frames*, to ramki Ethernet o ładowności ponad 1500
 - Posiadanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
 - Otwórz shell z prawami root
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+
 > [!primary]
 >
 > Rozmiar MTU musi być taki sam na wszystkich hostach w tej samej podsieci. 

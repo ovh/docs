@@ -12,15 +12,15 @@ You can set up geolocation for your website from your [Control Panel](https://ca
 
 Once you are logged on, click on the name of your main website under the Hostings section.
 
-![](images/img_2792.jpg){.thumbnail}
+![geolocation](images/2792.png){.thumbnail}
 In the menu, select the Multisite tab.
 Then click on the pen to the right of the website that you wish to geolocate.
 
-![](images/img_2793.jpg){.thumbnail}
+![geolocation](images/2793.png){.thumbnail}
 You can then choose the IP for the country in question. 
 OVHcloud can offer 12 different country IPs
 
-![](images/img_2794.jpg){.thumbnail}
+![geolocation](images/2794.png){.thumbnail}
 The change will take 24 hours to take effect
 
 ## Go further

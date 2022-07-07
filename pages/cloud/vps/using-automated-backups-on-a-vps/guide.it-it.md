@@ -31,7 +31,7 @@ Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pa
 
 ## Procedura
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione "Bare Metal Cloud" e seleziona il tuo server dalla barra laterale sinistra in `Server Privati Virtuali`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 
 ### Step 1: Attivare l’opzione Backup automatizzati
 
@@ -39,7 +39,7 @@ Dopo aver selezionato il tuo VPS, clicca sulla scheda `Backup automatizzato`{.ac
 
 Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura d’ordine e riceverai una email di conferma. A questo punto i backup verranno effettuati giornalmente finché l’opzione non verrà nuovamente disattivata.
 
-### Step 2: Ripristinare un backup dallo Spazio Cliente OVH
+### Step 2: Ripristinare un backup dallo Spazio Cliente OVHcloud
 
 Dopo aver selezionato il tuo VPS, clicca sulla scheda `Backup automatizzato`{.action} nel menu orizzontale. Hai a disposizione un massimo di 7 backup giornalieri (15 backup giornalieri per i VPS di gamme precedenti). Clicca su `...`{.action} accanto al backup che desideri ripristinare e seleziona `Ripristino`{.action}.
 
@@ -212,4 +212,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Usare snapshot su un VPS](../usare-snapshot-su-un-vps)
 
-Partecipa alla nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

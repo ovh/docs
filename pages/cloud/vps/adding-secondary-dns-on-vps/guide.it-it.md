@@ -33,7 +33,7 @@ Se configuri il tuo VPS come server DNS, puoi utilizzare il servizio DNS seconda
 
 ### Step 1: recupera il codice di conferma <a name="retrievecode"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nel menu a sinistra, seleziona il tuo server nella sezione **Server Privati Virtuali**.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 
 Clicca sulla scheda `DNS secondario`{.action} e poi sul pulsante `Aggiungi un dominio`{.action}.
 
@@ -83,4 +83,4 @@ Per eliminare un dominio, clicca sul pulsante `...`{.action} nella tabella.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

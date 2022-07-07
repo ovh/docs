@@ -4,6 +4,9 @@ slug: move-to-nutanix
 excerpt: "Installer, configurer et utiliser l'outil de migration Move"
 section: Utilisation avancée
 order: 02
+kb: Hosted Private Cloud
+category_l1: Hosted Private Cloud powered by Nutanix
+category_l2: Advanced usage
 ---
 
 **Dernière mise à jour le 31/03/2022**
@@ -163,7 +166,7 @@ Laissez les options de fuseau horaire par défaut et cliquez sur `Next`{.action}
 
 ![Move Install 10](images/MoveInstall10.PNG){.thumbnail}
 
-Cliquez sur sur `Create VM`{.action} pour finaliser l'installation de la machine virtuelle **Nutanix Move**.
+Cliquez sur `Create VM`{.action} pour finaliser l'installation de la machine virtuelle **Nutanix Move**.
 
 ![Move Install 11](images/MoveInstall11.PNG){.thumbnail}
 
@@ -179,7 +182,7 @@ La machine virtuelle est démarrée et l'on obtient une adresse IP si un serveur
 
 ![Move Install 14](images/MoveInstall14.PNG){.thumbnail}
 
-Cette installation de **Nutanix Move** se fait sur un réseau disposant d'un serveur DHCP mais il est possible de configurer la machine virtuelle sur un réseau sans serveur **DHCP** 
+Cette installation de **Nutanix Move** se fait sur un réseau disposant d'un serveur DHCP mais il est possible de configurer la machine virtuelle sur un réseau sans serveur **DHCP**. 
 
 Pour plus de détails sur **Nutanix Move**, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
@@ -187,7 +190,7 @@ Pour plus de détails sur **Nutanix Move**, reportez-vous à la section « [Alle
 
 #### Connexion à l'interface web et création d'environnements pour la migration
 
-Connectez-vous à l'adresse IP de la machine virtuelle **Nutanix Move** au travers d'un navigateur web en HTTPS comme ceci : `https://addresseipnutanixmove/`
+Connectez-vous à l'adresse IP de la machine virtuelle **Nutanix Move** au travers d'un navigateur web en HTTPS comme ceci : `https://addresseipnutanixmove/`.
 
 Prenez connaissance des conditions d'utilisation de la licence, validez leur acceptation et cliquez sur `Continue`{.action}.
 

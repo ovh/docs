@@ -6,7 +6,7 @@ section: Object Storage Standard (Swift)
 order: 040
 ---
 
-**Last updated 23rd September 2021**
+**Last updated 06th May 2022**
 
 ## Objective
 
@@ -555,7 +555,7 @@ Sync To:
 Sync Key:
 Accept-Ranges: bytes
 X-Storage-Policy: PCS
-Last-Modified: Thu, 26 Aug 2021 07:24:25 GMT
+Last-Modified: Wed, 04 May 2022 18:00:00 GMT
 X-Timestamp: 1629925917.23282
 Content-Type: text/plain; charset=utf-8
 Vary: Accept
@@ -568,7 +568,11 @@ X-Iplb-Instance: 33617
 ## The case of Large Objects
 
 If an object over 5Gb has been dropped, this generates a container such as: `<container_segments>`.<br>
-The same ACLs must be applied to this container in order to retrieve the object larger than 5Gb.
+A large object can be SLO or DLO. You can find more information about this on the [OpenStack documentation](https://docs.openstack.org/swift/latest/overview_large_objects.html){.external} 
+
+### SLO
+
+The same ACLs must be applied to the `<container_segments>` container in order to retrieve the object larger than 5Gb.
 
 ```bash
 swift stat <container>
@@ -620,6 +624,8 @@ X-Iplb-Request-Id: 6DBEFE1E:8B3C_3626E64B:01BB_6127443A_1E867A3:15625
 X-Iplb-Instance: 38342
 ```
 
+If ACL is only on the "manifest container" you will encounter 409 errors :
+
 ```bash
 swift download <container> <largeobject>
 ```
@@ -627,6 +633,8 @@ swift download <container> <largeobject>
 ```
 Error downloading object '<container>/<largeobject>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>/<largeobject> 409 Conflict  [first 60 chars of response] b'<html><h1>Conflict</h1><p>There was a conflict when trying t'
 ```
+
+You can update the rights on the container to allow the download : 
 
 ```bash
 swift post <container_segments> -r "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72"
@@ -662,6 +670,21 @@ swift download <container> <largeobject>
 ```
 ```
 <largeobject> [auth 0.739s, headers 1.408s, total 5504.436s, 1.171 MB/s]
+```
+
+### DLO
+
+By design, DLO manifests need to dynamically list `<container_segments>`.<br> 
+If .rlistings ACL is only on the "manifest container" you will encounter 403 errors :
+
+```bash
+Container GET failed: https://storage.xxx.cloud.ovh.net/v1/AUTH_e4xxxxxxxxxxxxxxxxxxxxxxxxe02f/payload.png?format=json 403 Forbidden [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource' (txn: txf74a0fc6ixxxxxxxxxxxxx-006270f0a1)
+```
+
+To allow object download you will need to put the acl ".rlisting" on the <container_segments>.
+
+```bash
+swift post dlo --read-acl ".rlistings"
 ```
 
 ## Go further

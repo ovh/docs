@@ -170,7 +170,7 @@ Detaillierte Anweisungen zur Konfiguration des IP-Alias finden Sie in der Anleit
 
 > [!primary]
 >
-> Beachten Sie, dass Server der **Kimsufi** Reihe nur jeweils eine IPv4 Adresse und eine IPv6 Adresse haben.
+> Beachten Sie, dass Server der **Kimsufi** Reihe nur jeweils eine IPv4 Adresse und eine IPv6 Adresse haben. Diese werden bei der Installation des Betriebssystems automatisch eingerichtet.
 >
 
 OVHcloud Dedicated Server werden mit einem /64 IPv6 Block geliefert. Um die Adressen dieses Blocks zu verwenden müssen Sie die Konfiguration des Netzwerks anpassen. Lesen Sie dazu unsere Anleitung "[IPv6 auf einem Dedicated Server konfigurieren](../netzwerk-ipv6/)".

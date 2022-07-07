@@ -10,7 +10,7 @@ order: 07
 
 ## Objectif
 
-VMWare offre la possibilité de cloner une VM pour créer une nouvelle VM ou un modèle.
+VMware offre la possibilité de cloner une VM pour créer une nouvelle VM ou un modèle.
 
 **Ce guide explique comment exécuter ces tâches.**
 

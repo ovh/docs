@@ -8,7 +8,29 @@ section: Tutorials
 order: 02
 ---
 
-**Last updated 1st July 2021**
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24;
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
+
+**Last updated 27th May 2022**
 
 ## Objective
 
@@ -59,7 +81,7 @@ terraform workspace new test_terraform
 
 In Terraform, you specify "providers" for your cloud environment. A "provider" (such as OVHcloud) hosts your OpenStack infrastructure resources.
 
-In a file named *provider.tf*, put the following lines:
+Create a file named `provider.tf` with the following content:
 
 ```python
 # Define providers and set versions
@@ -77,18 +99,49 @@ required_version    = ">= 0.14.0" # Takes into account Terraform versions from 0
     }
   }
 }
- 
+
 # Configure the OpenStack provider hosted by OVHcloud
 provider "openstack" {
   auth_url    = "https://auth.cloud.ovh.net/v3/" # Authentication URL
   domain_name = "default" # Domain name - Always at 'default' for OVHcloud
   alias       = "ovh" # An alias
 }
+
+provider "ovh" {
+  alias              = "ovh"
+  endpoint           = "ovh-eu"
+  application_key    = "<your_access_key>"
+  application_secret = "<your_application_secret>"
+  consumer_key       = "<your_consumer_key>"
+}
 ```
 
-Right-click <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/public-cloud/how_to_use_terraform/images/TF1.txt" download>here and "Save Link As"</a> to download the code-only text file.
+> [!primary]
+> If you don't want to define your secrets in the Terraform configuration file, you can also define them in environment variables:
+
+```console
+$ export OVH_ENDPOINT=ovh-eu
+$ export OVH_APPLICATION_KEY=Your_key_application_OVH(or_AK)
+$ export OVH_APPLICATION_SECRET=Your_secret_application_key_OVH(or_AS)
+$ export OVH_CONSUMER_KEY=Your_token(or_CK)
+```
 
 The "alias" is a unique identifier for a provider. For example, if you have two OpenStack providers with different credentials, you must precise each provider in the resource.
+
+You now need to [create a new OpenStack user](https://docs.ovh.com/sg/en/public-cloud/creation-and-deletion-of-openstack-user/), then [generate the OpenRC file](https://docs.ovh.com/sg/en/public-cloud/set-openstack-environment-variables/#step-1-retrieve-the-variables) containing all of the credentials you want to export as environment variables.
+
+Load this file, then enter the password for the user you created earlier:
+
+```console
+$ source openrc.sh
+Please enter your OpenStack Password:
+```
+
+You now need to initialize your workspace in order to download the provider plugins:
+
+```console
+terraform init
+```
 
 #### Creating an instance
 
@@ -101,7 +154,7 @@ To create an instance, you need at least:
 - A flavor
 - An SSH key
 
-For example purposes, we will create a simple instance on **Debian 10** with the flavour **s1-2**, and import an SSH key. Add the following lines to a file named *simple_instance.tf*:
+For example purposes, we will create a simple instance on **Debian 10** with the flavour **s1-2**, and import an SSH key. Add the following lines to a file named `simple_instance.tf`:
 
 ```python
 # Creating an SSH key pair resource
@@ -125,24 +178,7 @@ resource "openstack_compute_instance_v2" "test_terraform_instance" {
 }
 ```
 
-Right-click <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/public-cloud/how_to_use_terraform/images/TF2.txt" download>here and "Save Link As"</a> to download the code-only text file.
-
-You now need to [create a new OpenStack user](https://docs.ovh.com/sg/en/public-cloud/creation-and-deletion-of-openstack-user/), then [generate the OpenRC file](https://docs.ovh.com/sg/en/public-cloud/set-openstack-environment-variables/#step-1-retrieve-the-variables) containing all of the credentials you want to export as environment variables.
-
-Load this file, then enter the password for the user you created earlier:
-
-```console
-$ source openrc.sh
-Please enter your OpenStack Password:
-```
-
-You now need to initialise your workspace in order to download the provider plugins:
-
-```console
-terraform init
-```
-
-To see what will be added/created/deleted in your infrastructure, you can use:
+To see what will be added/created/deleted in your infrastructure, you can execute:
 
 ```console
 terraform plan
@@ -154,11 +190,70 @@ You can enter the following command to import your SSH key and create your first
 terraform apply
 ```
 
-If you log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or [the Horizon interface](https://horizon.cloud.ovh.net/auth/login/), you will find an instance named "terraform_instance".
+Output should be like this:
+
+<pre class="console"><code>$ terraform apply
+openstack_compute_keypair_v2.test_keypair: Refreshing state... [id=test_keypair]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # openstack_compute_instance_v2.test_terraform_instance will be created
+  + resource "openstack_compute_instance_v2" "test_terraform_instance" {
+      + access_ip_v4        = (known after apply)
+      + access_ip_v6        = (known after apply)
+      + all_metadata        = (known after apply)
+      + all_tags            = (known after apply)
+      + availability_zone   = (known after apply)
+      + flavor_id           = (known after apply)
+      + flavor_name         = "s1-2"
+      + force_delete        = false
+      + id                  = (known after apply)
+      + image_id            = (known after apply)
+      + image_name          = "Debian 10"
+      + key_pair            = "test_keypair"
+      + name                = "terraform_instance"
+      + power_state         = "active"
+      + region              = (known after apply)
+      + security_groups     = (known after apply)
+      + stop_before_destroy = false
+
+      + network {
+          + access_network = false
+          + fixed_ip_v4    = (known after apply)
+          + fixed_ip_v6    = (known after apply)
+          + floating_ip    = (known after apply)
+          + mac            = (known after apply)
+          + name           = "Ext-Net"
+          + port           = (known after apply)
+          + uuid           = (known after apply)
+        }
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions in workspace "test_terraform"?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+openstack_compute_instance_v2.test_terraform_instance: Creating...
+openstack_compute_instance_v2.test_terraform_instance: Still creating... [10s elapsed]
+openstack_compute_instance_v2.test_terraform_instance: Still creating... [20s elapsed]
+openstack_compute_instance_v2.test_terraform_instance: Creation complete after 25s [id=f83d3a7a-xxxx-xxxx-xxxx-53c2cee0b0fd]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+</code></pre>
+
+Now, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Public Cloud`{.action} section and click on `Instances`{.action}.
+As you can see, your compute instance named "terraform_instance" is creating.
 
 > [!primary]
 > Note that creating a second, identical instance with `terraform apply` will not work.
-> <br>Terraform applies change only if it recognises a difference in your configuration files or a new file..
+> <br>Terraform applies change only if it recognises a difference in your configuration files or a new file.
 >
 
 #### Creating multiple instances
@@ -182,7 +277,7 @@ You can create three resources named "openstack_compute_instance_v2" and change 
 
 A better method is to use the resource meta parameter called "count". It allows you to tell Terraform to create the same resource several times.
 
-To do this, we will create a file named "multiple_instance.tf". In it, we first define a variable containing the three regions, and then add an instance creation counter:
+To do this, we will create a file named `multiple_instance.tf`. In it, we first define a variable containing the three regions, and then add an instance creation counter:
 
 ```python
 # Create a region variable containing the list of OVHcloud regions
@@ -222,8 +317,6 @@ To do this, we will create a file named "multiple_instance.tf". In it, we first 
  }
 ```
 
-Right-click <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/public-cloud/how_to_use_terraform/images/TF3.txt" download>here and "Save Link As"</a> to download the code-only text file.
-
 Check the changes you need to make to your infrastructure using the following command:
 
 ```console
@@ -240,7 +333,7 @@ Terraform can create multiple instances with this method but you can use it to m
 
 #### Modifying an instance
 
-In this example we will attach a new storage volume to our first instance. Open and edit the file named "simple_instance.tf", then add the following lines:
+In this example we will attach a new storage volume to our first instance. Open and edit the file named `simple_instance.tf`, then add the following lines:
 
 ```python
 # Create a resource for storage
@@ -259,8 +352,6 @@ resource "openstack_compute_volume_attach_v2" "attached" {
 }
 ```
 
-Right-click <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/public-cloud/how_to_use_terraform/images/TF4.txt" download>here and "Save Link As"</a> to download the code-only text file.
-
 Check the changes you need to make to your infrastructure using the following command:
 
 ```console
@@ -277,41 +368,32 @@ terraform apply
 
 The Terraform OVHcloud plugin can manage private networks, private subnets, Public Cloud users and vRack attachments. In this part we will focus on the network creation.
 
-First, the OVHcloud identifiers have to be initialised in your environment. Customise the commands with your actual values:
-
-```console
-$ export OVH_ENDPOINT=ovh-eu
-$ export OVH_APPLICATION_KEY=Your_key_application_OVH(or_AK)
-$ export OVH_APPLICATION_SECRET=Your_secret_application_key_OVH(or_AS)
-$ export OVH_CONSUMER_KEY=Your_token(or_CK)
-$ export TF_ACC=1
-```
-
-Now add the following lines to the file "provider.tf":
+Create a file `create_private_network_instance.tf` and enter the following:
 
 ```python
-# Provider configuration
-provider "ovh" {
-  endpoint = "ovh-eu" # Provider entry point
-  alias    = "ovh" # Provider alias
+variable "service_name" {
+  default = "OS_PROJECT_ID" # Replace with your service name / OS_PROJECT_ID value
 }
-```
 
-Right-click <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/public-cloud/how_to_use_terraform/images/TF5.txt" download>here and "Save Link As"</a> to download the code-only text file.
+variable "project_id" {
+  default = "OS_TENANT_ID" # Replace OS_TENANT_ID with your Project Tenant ID
+}
 
-Create a file "create_private_network_instance.tf" and enter the following:
+variable "region" {
+  default = "GRA11" # Replace with your region, for example with the environment variable OS_REGION_NAME
+}
 
-```python
 # Associating cloud project to vRack
  resource "ovh_vrack_cloudproject" "vcp" {
-  service_name = "VRACK_NAME" # Replace with the name of your vRack
-  project_id   = "OS_TENANT_ID" # Replace OS_TENANT_ID with your Project Tenant ID
+  service_name = var.service_name
+  project_id   = var.project_id
 } 
+
  # Creating a private network
  resource "ovh_cloud_project_network_private" "network" {
-    service_name = "OS_TENANT_ID" # Replace OS_TENANT_ID with your Project Tenant ID
+    service_name = var.service_name
     name         = "private_network" # Network name
-    regions      = ["OS_REGION_NAME"] # Replace OS_REGION_NAME with the environment variable OS_REGION_NAME 
+    regions      = [var.region]
     provider     = ovh.ovh # Provider name
     vlan_id      = 168 # VLAN ID for vRack
     depends_on   = [ovh_vrack_cloudproject.vcp] # Depends on the vRack's association with the cloud project
@@ -319,14 +401,14 @@ Create a file "create_private_network_instance.tf" and enter the following:
   
  # Creating a subnet using the previously created private network
  resource "ovh_cloud_project_network_private_subnet" "subnet" {
-    service_name = "OS_TENANT_ID" # Replace OS_TENANT_ID with your Project Tenant ID
+    service_name = var.service_name
     # ID of the ovh_cloud_network_private resource named network
     network_id   = ovh_cloud_project_network_private.network.id
     start        = "192.168.168.100" # First IP of the subnet
     end          = "192.168.168.200" # Last IP of the subnet
     network      = "192.168.168.0/24" # Subnet IP address location
     dhcp         = true # Enables DHCP
-    region       = "OS_REGION_NAME" # Replace OS_REGION_NAME with the environment variable OS_REGION_NAME
+    region       = var.region
     provider     = ovh.ovh # Provider name
     no_gateway   = true # No default gateway
  }
@@ -349,7 +431,9 @@ Create a file "create_private_network_instance.tf" and enter the following:
  }
 ```
 
-Right-click <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/public-cloud/how_to_use_terraform/images/TF6.txt" download>here and "Save Link As"</a> to download the code-only text file.
+> [!primary]
+>
+> This instance creation is linked to the `openstack_compute_keypair_v2.test_keypair` resource you created previsouly in this guide.
 
 Check the changes you need to make to your infrastructure using the following command:
 
@@ -376,14 +460,18 @@ In this example, we will create a basic web site infrastructure using Terraform 
 
 ![public-cloud](images/basic_infrastructure_for_a_web_site.png){.thumbnail}
 
-Create a file named "simple_web_site.tf" and enter the following lines:
+Create a file named `simple_web_site.tf` and enter the following lines:
 
 ```python
+variable myregion {
+  default = "SBG5" # Replace with the OS_REGION_NAME environment variable content
+}
+
 # Creating a private network
 resource "ovh_cloud_project_network_private" "private_network" {
-  service_name  = "c076ca2979904ef6bf93faff181dab18" # Replace OS_TENANT_ID with your Tenant Project ID
+  service_name  = var.service_name
   name          = "backend" # Network name
-  regions       = ["SBG5"] # Replace OS_REGION_NAME with the OS_REGION_NAME environment variable
+  regions       = [var.myregion] 
   provider      = ovh.ovh # Provider name
   vlan_id       = 42 # vRack vlan ID
   depends_on    = [ovh_vrack_cloudproject.vcp] # Depends on vRack being associated with the cloud project
@@ -393,8 +481,8 @@ resource "ovh_cloud_project_network_private" "private_network" {
 resource "ovh_cloud_project_network_private_subnet" "private_subnet" {
   # ID for the ovh_cloud_network_private resource named private_network
   network_id    = ovh_cloud_project_network_private.private_network.id
-  service_name  = "c076ca2979904ef6bf93faff181dab18" # Replace OS_TENANT_ID with your Tenant Project ID
-  region        = "SBG5" # Replace OS_REGION_NAME with the environment variable OS_REGION_NAME
+  service_name  = var.service_name
+  region        = var.myregion
   network       = "192.168.42.0/24" # Subnet IP
   start         = "192.168.42.2" # First IP of the subnet
   end           = "192.168.42.200" # Last IP of the subnet
@@ -485,8 +573,6 @@ resource "openstack_compute_instance_v2" "back" {
 }
 ```
 
-Right-click <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/public-cloud/how_to_use_terraform/images/TF7.txt" download>here and "Save Link As"</a> to download the code-only text file.
-
 Check the changes you need to make to your infrastructure using the following command:
 
 ```console
@@ -499,9 +585,53 @@ Apply your changes with the following command:
 terraform apply
 ```
 
+#### Creating a Public Cloud project
+
+You can also create an OVHcloud project directly as code, through Terraform.
+
+Nevertheless, two conditions apply:
+
+- You must have at least 3 Public Cloud projects (note that there is a 3 project limit by default. To raise this limit, please submit a request to our support teams)
+- You must have created a Public Cloud project during the last 3 months.
+
+If one of these business rules is not met, you will receive the following error: `"Found eligibility issues: challengePaymentMethod"`.<br>
+In that case, the only solution is to use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) to create a project.<br>
+You will then be challenged to validate that you are indeed the owner of the payment means used on your account (this challenge depends on the payment means and other parameters).
+
+Please understand these rules and extra human steps have been put in place as an extra safety for customers that might have leaked their OVHcloud credentials.<br>
+We will try to continue improving those rules in the future to facilitate Infra-as-code scenarios, such as this "public cloud project as code" scenario.
+
+Create a file named `project.tf` and enter the following lines:
+
+```python
+data "ovh_order_cart" "cart" {
+  ovh_subsidiary = "fr"
+  description    = "Use the French OVH cart by default"
+}
+
+data "ovh_order_cart_product_plan" "cloud" {
+  cart_id        = data.ovh_order_cart.cart.id
+  price_capacity = "renew"
+  product        = "cloud"
+  plan_code      = "project.2018"
+}
+
+resource "ovh_cloud_project" "cloud" {
+  ovh_subsidiary = data.ovh_order_cart.cart.ovh_subsidiary
+  description    = var.project_description
+  payment_mean   = "fidelity"
+
+  plan {
+    duration     = data.ovh_order_cart_product_plan.cloud.selected_price.0.duration
+    plan_code    = data.ovh_order_cart_product_plan.cloud.plan_code
+    pricing_mode = data.ovh_order_cart_product_plan.cloud.selected_price.0.pricing_mode
+  }
+}
+```
+
 ### Deleting an infrastructure
 
-To remove every resource you can enter the following command:
+To remove every resource created through Terraform, you can enter the following command:
 
 ```console
 terraform destroy

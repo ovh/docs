@@ -1,571 +1,345 @@
 ---
 title: 'Webmail: guida all’utilizzo di RoundCube'
-excerpt: ''
 slug: webmail_guida_allutilizzo_di_roundcube
-legacy_guide_number: g1302
 section: Per iniziare
 order: 05
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## Attraverso il sito OVHcloud
-Accedi al sito [OVHcloud](http://www.ovh.it) e clicca su "Webmail" in alto a destra.
+**Ultimo aggiornamento: 31/05/2022**
 
-![](images/img_2413.jpg){.thumbnail}
+## Obiettivo
 
+Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un software di terze parti o tramite una webmail. OVHcloud fornisce un servizio di posta online chiamato RoundCube che permette l'accesso a un account email tramite un browser.
 
-## Interfaccia della Webmail OVHcloud
-Vedrai un'interfaccia in cui inserire un indirizzo email. In questo modo verrai reindirizzato verso la Webmail del tuo servizio email OVHcloud.
+**Come utilizzare la Webmail RoundCube per i tuoi indirizzi email OVHcloud**
 
-Se sai già che offerta email hai, puoi accedere direttamente alla Webmail del tuo servizio, cliccando su .
+## Prerequisiti
 
-Cliccando su , accedi direttamente alle guide relative alle Webmail.
+- Disporre di una soluzione email OVHcloud **MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [hosting Start10M gratuito](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma
+- Disporre delle informazioni di connessione all'indirizzo email MX Plan che vuoi consultare Per maggiori informazioni, consulta la nostra guida Iniziare a [utilizzare la soluzione MX Plan](https://docs.ovh.com/it/emails/informazioni-generali-email-condivise/).
 
-![](images/img_2414.jpg){.thumbnail}
-Cliccando su "Memorizza questo indirizzo email", i vari indirizzi inseriti saranno salvati nel menù in alto a destra (Webmail in blu). Il vantaggio è connettersi facilmente all'indirizzo desiderato!
+## Procedura
 
+### Accedi alla Webmail RoundCube
 
-## Interfaccia della Webmail OVHcloud
-Arrivi poi all'interfaccia della Webmail del tuo servizio email, se l'indirizzo è già precompilato. inseriscilo comunque di nuovo.
+Accedi alla pagina <https://www.ovh.com/it/mail/>. Inserisci un indirizzo email e la password e clicca su `Connessione`{.action}. 
 
-Inserisci quindi il tuo indirizzo email e la password e clicca su "Login".
+![hosting](images/webmail_login.png){.thumbnail}
 
-![](images/img_2415.jpg){.thumbnail}
+Verrai reindirizzato all'interfaccia RoundCube.
 
+![hosting](images/roundcube01.png){.thumbnail}
 
-## Posta in arrivo
-Dopo esserti connesso al tuo account email, accedi alla tua casella di posta.
-Nella colonna di sinistra trovi le cartelle principali del tuo account: messaggi ricevuti e inviati.
+> [!warning]
+> 
+> Se il server è reindirizzato a un'interfaccia **O**utlook **W**eb **A**ccess (OWA), significa che sei sull'ultima versione della soluzione MX Plan. Per maggiori informazioni sulla soluzione MX Plan, consulta la pagina [Iniziare a utilizzare la soluzione MX Plan](https://docs.ovh.com/it/emails/informazioni-generali-email-condivise/).
+>
+> Per familiarizzare con l'interfaccia **OWA**, consulta la nostra guida [Consultare il suo account email dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/).
 
-Nella stessa colonna, in fondo alla pagina, trovi le  [opzioni delle cartelle](#DOSSIERS) e la percentuale di spazio occupato del tuo account email.
+### Interfaccia generale della Webmail RoundCube <a name="general-interface"></a>
 
-Nella parte destra, visualizzi tutte le email ricevute, corredate da queste informazioni:
+Una volta connesso al tuo account email, hai accesso alla finestra principale di Roundcube, composta da 3 zone:
 
+- [**Colonna di sinistra**](#leftcolumn): cartelle e sottocartelle dell'account email La cartella principale è la `Posta in arrivo`.
 
-- mittente
-- oggetto
-- status del messaggio (letto o non letto)
-- eventuali tag attribuiti al messaggio
-- dimensione di ogni e-mail
-- presenza di allegati
+- [**Finestra superiore**](#topwindow): elenco delle email contenute nella cartella selezionata nella colonna di sinistra.
 
+- [**Finestra inferiore**](#lowerwindow): il contenuto dell'email selezionata nella finestra superiore.
 
-Di default alcune colonne non vengono visualizzate, come ad esempio quella che indica la priorità attribuita alle mail. Puoi inserirle modificando le opzioni come ti spieghiamo qui sotto.
+#### Gestione delle cartelle (colonna di sinistra) <a name="leftcolumn"></a>
 
-![](images/img_1271.jpg){.thumbnail}
+In questa sezione vengono mostrate le cartelle presenti nel tuo account email.
 
+Per maggiori informazioni sulle cartelle, clicca sull'icona a forma di ingranaggio in fondo alla colonna e seleziona `Gestione cartelle`{.action}
 
-## Opzioni di visualizzazione e ordinamento
-Per accedere a questa opzione, clicca sull'icona a forma di ingranaggio sulla parte sinistra della barra mail, a sinistra di Oggetto come vedi in figura.
+![hosting](images/roundcube02.png){.thumbnail}
 
-In questa sezione è possibile: 
+Per creare una cartella, clicca sul pulsante `+`{.action} in fondo alla colonna `Cartelle`.
 
-- aggiungere colonne da visualizzare (priorità mail, etc.)
-- scegliere la colonna che stabilisce di default l'ordinamento dei messaggi
-- scegliere il criterio di ordinamento (ascendente o discendente)
+Per eliminare una cartella, seleziona la cartella, clicca sull'icona a forma di ingranaggio in fondo alla colonna `Cartelle` e seleziona `Elimina`{.action}. Per cancellare il contenuto e conservare la cartella, clicca su `Svuota`{.action}.
 
+Le caselle da barrare a livello delle cartelle corrispondono alle "iscrizioni". L'abbonamento determina se la cartella deve essere visualizzata o meno a livello dell'interfaccia Webmail o del client di posta conservando il contenuto della cartella. con lo scopo di nascondere o visualizzare una cartella sull'account email.
 
-Dopo aver effettuato le modifiche, conferma cliccando su "Registra".
+> [!primary]
+>
+> I fascicoli che presentano una casella da barrare grigia sono fascicoli speciali. Non è possibile cancellarli o ritirarli.
 
-![](images/img_1281.jpg){.thumbnail}
+#### Lista delle email ricevute/inviate (finestra superiore) <a name="topwindow"></a>
 
+In questa finestra è mostrato il contenuto della cartella selezionata nella colonna di sinistra. 
 
-## Le email in tutti gli status
-La Webmail RoundCube gestisce le principali opzioni relative alle mail (conferme di lettura, tag, allegati protezione dati personali).
-In figura è presente una panoramica su tutte le funzionalità.
+##### **Tipo di visualizzazione**
 
-Il numero di email non letto appare in un piccolo riquadro nella colonna di sinistra, a destra dei  Messaggi ricevuti.
-Un'email non viene visualizzata in grassetto nella parte di destra.
+Questa finestra è presentata in una forma personalizzata. Clicca sull'icona a forma di ingranaggio in alto a sinistra da questa finestra.
 
-Per ogni messaggio puoi
+![hosting](images/roundcube03.png){.thumbnail}
 
-- Rispondi: ti permette di rispondere direttamente al mittente
-- Rispondi a tutti: ti permette di rispondere a tutti i destinatari presenti nei campi "A" e "CC"
-- Inoltra: inoltra la mail selezionata ai contatti che scegli
-- Elimina: metti la mail selezionata "nel cestino" ;
-- Indesiderata: inserisci la mail selezionata nella cartella di posta indesiderata (Junk) e contrassegnala come Spam
-- Contrassegna: vedi paragrafo seguente
-- ...More: vedi paragrafo seguente
+È possibile configurare questi elementi:
 
+- **Disposizione**: permette di determinare la disposizione delle finestre di gestione di un account email.
+- **Colonne dell'elenco**: permette di aggiungere colonne da visualizzare (priorità delle email, ecc...).
+- **Colonna di selezione**: permette di scegliere la colonna su cui effettuare la selezione di default.
+- **Ordine di selezione**: permette di scegliere l'ordine di selezione ascendente o discendente, in funzione della colonna di selezione.
 
-Se un messaggio viene contrassegnato come vedi qui di seguito, con una bandierina rossa.
-Se la mail ha una priorità, viene visualizzata una freccia che punta verso l'alto (molto urgente, urgente) o verso il basso (non urgente).
+##### **Azione su un'email selezionata**
 
-![](images/img_1282.jpg){.thumbnail}
-Se ti viene richiesta una conferma di lettura, visualizzi questo messaggio: 
-Il mittente di questo messaggio ha richiesto una conferma di lettura. Vuoi inviarla?
+Quando viene selezionata un'email, è possibile agire su di essa. Ecco le azioni possibili:
 
+- `Rispondi`{.action}: rispondere direttamente al mittente.
+- `Rispondere a tutti`{.action}: rispondere direttamente a tutti i destinatari presenti nei campi "A" e "Copia".
+- `Inoltra`{.action}: trasferire l'email selezionata a uno o più destinatari.
+- `Elimina`{.action}: inserisci l'email selezionata in "Corbeille".
+- `SPAM`{.action}: inserire l'email selezionata direttamente nella casella della posta indesiderata (Junk), qualificarla come **spam**.
+- `Contrassegna`{.action}: determinare manualmente lo stato di un'email.
+- `Azioni`{.action} 
+    - `Stampa il messagio`{.action}.
+    - `Scarica (.eml)`{.action}: recuperare l'intestazione dell'email e il suo contenuto.
+    - `Modifica come nuovo`{.action}: creare una nuova email utilizzando l'email selezionata.
+    - `Visualizza sorgente messaggio`{.action}: visualizzare l'email nella forma grezza con l'intestazione.
+    - `Sposta in...`{.action}: spostare l'email in una cartella
+    - `Copia su...`{.action}: copia l'email in una cartella
+    - `Apri in una nuova finestra`{.action}.
 
-## Contrassegna un messaggio
-Quando clicchi sull'opzione "Contrassegna", visualizzi questo menu contestuale. 
-Puoi contrassegnare un messaggio, eliminare un contrassegno e segnare come non letto un messaggio già letto. Questa funzione è valida anche per selezioni multiple di email, è utile per gestire le priorità delle tue mail.
+![hosting](images/roundcube04.png){.thumbnail}
 
-![](images/img_1277.jpg){.thumbnail}
+> [!primary]
+>
+> Se uno dei tuoi interlocutori richiede che gli sia inviato un messaggio di conferma durante la lettura della sua email, riceverai questo messaggio: `il mittente di questo messaggio ha chiesto di essere avvisato quando leggerai questo messaggio. Desiderate avvisare il mittente?`.
+> 
 
+##### **Ricerca un'email**
 
-## ...More
-Quando clicchi sull'opzione "...More", visualizzi un menu contestuale con queste possibilità:
+È disponibile uno strumento di ricerca nella parte superiore destra dell'interfaccia.
 
-- Stampa messaggio: apre il messaggio in una nuova finestra e propone la stampa
-- Scarica: scarica il messaggio sul tuo computer in formato .eml
-- Modifica come nuovo messaggio/b]: modifica un messaggio conservando il template originale
-- Visualizza la sorgente: visualizza la sorgente completa del messaggio. Molto utile se ti viene richiesta l'intestazione
-- Apri in una nuova finestra: apre il messaggio in una nuova finestra (utile per consultare molti messaggi contemporaneamente).
+Clicca sulla freccia a destra della lente di ingrandimento per visualizzare i filtri di ricerca.
 
 
+#### Contenuto di un'email (finestra inferiore) <a name="lowerwindow"></a>
 
-![](images/img_1278.jpg){.thumbnail}
+Quando un'email è selezionata nella lista, compare nella finestra inferiore.
 
+Visualizza le scorciatoie, a destra, delle funzioni seguenti:
 
-## Accesso alle impostazioni
-Accedi alla tua Webmail RoundCube per questa funzionalità.
+- Visualizza in formato HTML (di default)
+- Mostra nel formato testo semplice
+- Rispondere
+- Rispondere a tutti
+- Inoltra
+- Apri in una nuova finestra
 
-Per accedere alle impostazioni della tua casella, clicca sull'ingranaggio in alto a destra.
+![hosting](images/roundcube05.png){.thumbnail}
 
-![](images/img_1272.jpg){.thumbnail}
+### Configura le preferenze dell'interfaccia Roundcube
 
+I seguenti capitoli della guida corrispondono alle schede che compongono la parte `Preferenze`{.action} delle `Impostazioni`{.action} di Roundcube. La loro descrizione non è esaustiva.
 
-## Interfaccia utente
-Dopo aver cliccato sull'ingranaggio, accedi direttamente all'Interfaccia utente delle Impostazioni. 
-In questa interfaccia, puoi modificare elementi come lingua, formato data e ora, tema.
+![hosting](images/roundcube06.png){.thumbnail}
 
-Per le altre opzioni disponibili, ti invitiamo a guardare la figura.
+#### Interfaccia utente
 
-![](images/img_1436.jpg){.thumbnail}
+Definisci qui la `lingua` d'uso dell'interfaccia Roundcube, il `fuso orario`, il `formato orario` e il `formato data`.
 
+Con l'opzione `Date più leggibilie` graziose è possibile visualizzare la data di ricezione/invio con termini relativi come "Oggi", "Ieri", ecc.<br>
+**Ad esempio**: siamo il **19/05/2022**, un'email inviata/ricevuta il **17/05/2022** alle **17:38** sarà visualizzata **Mar 17:38**, perché l'email corrisponde al martedì precedente.
 
-## Visualizzazione messaggio
-In Visualizzazione del messaggio, modifica il numero di email visualizzate nell'interfaccia per generare meno pagine, ad esempio, se hai molti messaggi. Puoi anche decidere di non visualizzare in questa interfaccia la sintesi dei messaggi selezionati per visualizzarli solo con un doppio click o in una nuova finestra.
+La casella `Display next list entry after delete/move` significa che, dopo un'operazione di eliminazione o spostamento su un'email, l'elemento della linea inferiore sarà sistematicamente selezionato, indipendentemente dall'ordine di selezione. 
 
-Per le altre opzioni disponibili, consulta la figura.
+#### Impaginazione messaggi
 
-![](images/img_1292.jpg){.thumbnail}
+Definisci qui l'ergonomia per visualizzare e agire sulle email. L'opzione `Layout` permette di configurare le 3 finestre descritte nella sezione [Interfaccia generale della Webmail RoundCube](#topwindow).
 
+#### Visualizzazione messaggi
 
-## Visualizzazione dei messaggi
-In Visualizzazione dei messaggi, scegli la modalità di visualizzazione dei messaggi (HTML o no, caricamento contenuti remoti, codifica caratteri) delle tue email nell'interfaccia.
+Definisci come visualizzare le email.<br>
+Ti consigliamo di avere la casella `Mostra HTML` selezionata, per assicurarti che le email formattate dal mittente siano correttamente visualizzate.<br>
+Ti consigliamo inoltre di mantenere l'opzione `Permetti risorse remote (immagini, stili)` per `mai`. in quanto evita di caricare gli elementi di un'email che sembra malevolo.
 
-Per le altre opzioni disponibili, controlla la figura.
+#### Composizione messaggi
 
-![](images/img_1287.jpg){.thumbnail}
+Definisci la forma predefinita durante la redazione di un'email o di una risposta.<br>
+Ti consigliamo di utilizzare l'opzione `Scrivi i messaggi in HTML` su `sempre`, per utilizzare di default gli strumenti HTML e non alterare la firma HTML.
 
+#### Contatti
 
-## Scrittura dei messaggi
-In Scrittura dei messaggi, scegli fra le differenti opzioni di scrittura delle tue email, come formato, report di consegna, di distribuzione, regole di scrittura, etc.
+Personalizza qui la configurazione delle informazioni nella tua rubrica.
 
-Per le altre opzioni disponibili, controlla la figura.
+#### Cartelle speciali
 
+Roundcube dispone di 4 cartelle speciali: `Bozze`, `Inviate`, `Marce`, `Cestino`.
 
-- Di default, sulla nuova interfaccia di Roundcube ("Larry"), l'opzione "Scrivi i messaggi in HTML" è configurata su "solo in risposta a messaggi HTML".
+Non consigliamo di modificarli, ma è possibile attribuire il comportamento di una cartella speciale a un'altra cartella creata successivamente, grazie ai menu a tendina.<br>
+**Ad esempio**, è possibile attribuire il comportamento "Bozze" a un'altra cartella creata. Le email salvate saranno considerate come bozze fino al loro invio effettivo.
 
+#### Impostazioni del server
 
-Puoi modificare questa opzione in "sempre" per inviare le tue email in formato HTML.
+In questa scheda è possibile ottimizzare lo spazio occupato su un account email. Infatti, l'opzione `Svuota il cestino all'uscita` permette di evitare il cumulo degli elementi che sono stati eliminati. L'opzione `Elimina direttamente i messaggi in Spam` eliminerà automaticamente tutte le email considerate SPAM.
 
-![options_rc_en](images/options_RC_en.PNG){.thumbnail}
+> [!warning]
+> 
+> Si sconsiglia di attivare l'opzione `Elimina direttamente i messaggi in Spam` nel caso in cui un falso positivo (e-mail erroneamente dichiarato come "SPAM") si trovi dichiarato SPAM per il server ricevente. Infatti, quando un'email è inserita nella cartella "Posta elettronica", è ancora possibile verificare se l'email è legittima.
 
+### Gestisci le identità e la loro firma <a name="identity"></a>
 
-## Elenco contatti
-In Elenco contatti, scegli la rubrica predefinita da utilizzare (se hai [rubriche](#CARNET) diverse) e le opzioni di visualizzazione dei contatti.
+Clicca su `Impostazioni`{.action} nella barra superiore e seleziona `Identità`{.action} nella colonna di sinistra. "L'identità" permette di personalizzare le informazioni inviate ai destinatari, come ad esempio il nome visualizzato o la firma.
 
-Per le altre opzioni disponibili, controlla la figura.
+![hosting](images/roundcube07.png){.thumbnail}
 
-![](images/img_1289.jpg){.thumbnail}
+#### Impostare gli attributi di un'identità 
 
+- **Nome visualizzato**: questo nome comparirà nella sezione "Mittente" del destinatario
+- **E-mail**: corrisponde all'indirizzo da cui è stata inviata l'email.
+- **Società**: campo destinato al nome della società, associazione o altro ente.
+- **Rispondere a**: attribuire un indirizzo email di risposta diverso da quello del mittente.
+- **Ccn**: inviare in copia nascosta un indirizzo email durante un invio.
+- **Imposta predefinita**: se vi sono più identità (firme), attribuirla di default.
+- **Firma**: personalizzare la firma di un'email durante la redazione (cognome, nome, posizione occupata, frasi, immagini...).
+- **Firma HTML**: attiva il formato HTML sulla firma. 
 
-## Cartelle speciali
-In Cartelle speciali, puoi definire o inserire (scelta delle cartelle), le email Bozze, Messaggi inviati, Posta indesiderata e i messaggi da mettere nel Cestino.
+> [!alert]
+> 
+> Completare la casella **E-mail** con un indirizzo email diverso da quello a cui sei connesso è considerato un'usurpazione di identità elettronica (*spoofing*). L'indirizzo IP utilizzato per l'invio rischia di essere "bandito" e/o considerato "SPAM" presso i tuoi destinatari. 
 
-Per le altre opzioni disponibili, controlla la figura.
+#### Aggiungere una firma
 
-Per creare cartelle personalizzate, fai riferimento al paragrafo [Impostazioni - Cartelle](#DOSSIERS)
+Di default, la casella `firma` è in "testo chiaro". Questo formato non consente di effettuare modifiche avanzate o di inserire un'immagine nella firma. Per usufruire delle opzioni di modifica avanzate per una firma, ti consigliamo di attivare la modalità HTML cliccando su **Firma HTML** sotto il riquadro di registrazione.
 
-![](images/img_1290.jpg){.thumbnail}
+> [!warning]
+> 
+> Pertanto, se la firma è in formato HTML, sarà necessario passare in modalità HTML per la redazione di un'email. Puoi attivare di default questa opzione per ogni redazione di email, dalla sezione `Impostazioni`{.action} dell'interfaccia Roundcube.
+> Clicca su `Preferenze`{.action} nella colonna di sinistra e poi su `Composizione messaggi`{.action}. Per la voce **Redigere email HTML**, seleziona `Sempre`.
+>
 
+Per inserire un'immagine in una firma, l'immagine deve essere ospitata su un server (un hosting OVHcloud o altro).<br>
+**Scaricare un'immagine da un computer non ne permetterà la visualizzazione**.
 
-## Impostazioni del server
-In Impostazioni del server, puoi impostare le regole di eliminazione dei messaggi dal server (dalla Webmail).
+Clicca sul pulsante `< >`{.action} nella barra degli strumenti HTML e inserisci il codice seguente, sostituendo `your-image-url` con l'indirizzo (URL) dell'immagine e `text-if-image-is-not displayed` con un testo che sostituisce l'immagine se questa non può essere visualizzata.
 
-Per le altre opzioni disponibili, controlla la figura.
-
-![](images/img_1291.jpg){.thumbnail}
-Esempio di eliminazione: 
-Non ricevi più messaggi. La tua casella è quasi sovraccarica. Vuoi eliminare alcune email per "fare pulizia" e poterne ricevere altre. 
-Ricevi però un messaggio d'errore che ti impedisce di eliminare i messaggi.
-Che succede?
-Quando elimini un messaggio, quest'ultimo viene copiato nel cestino prima di essere eliminato dalla posta in arrivo (in modo invisibile). Ma se la casella è piena, la copia non è possibile e quindi viene visualizzato un messaggio d'errore.Come rimediare?
-Nell'interfaccia Impostazioni del server, seleziona "Quando li sposto nel cestino, elimina definitivamente i messaggi", in modo da poter cancellare i messaggi senza problemi.
-
-
-## Crea una cartella (1)
-Per creare una cartella personalizzata e isolare messaggi precisi, clicca su "+"
-
-![](images/img_1293.jpg){.thumbnail}
-
-
-## Crea una cartella (2)
-Creiamo la cartella "Test OVH", da inserire in INBOX, in cui i messaggi saranno visualizzati come lista.
-
-
-Clicca su Registra per validare la creazione.
-
-![](images/img_1294.jpg){.thumbnail}
-
-
-## Crea una cartella (3)
-Controlliamo che la cartella sia stata creata correttamente.
-
-Viene visualizzata come sottocartella della posta in arrivo, come:
-. Drafts: bozze
-. Junk: posta indesiderata
-. Sent: messaggi inviati
-. Trash: cestino
-
-![](images/img_1295.jpg){.thumbnail}
-
-
-## Modifica - Elimina una cartella
-L'eliminazione (fai attenzione a quali messaggi sono nella cartella prima di eliminarla) o la modifica di una cartella, sono operazioni molto semplici.
-
-Pereliminare una cartella, selezionala e poi clicca sull'ingranaggio in fondo alla pagina. Puoi: eliminare la cartella o svuotarla. Puoi controllare la percentuale di spazio occupato della tua casella.
-
-Per modificare una cartella, cliccaci sopra. Puoi modificare il nome della cartella, la  cartella in cui è nidificata, la visualizzazione e consultare il numero di messaggi presenti e lo spazio occupato dalle mail della cartella selezionata. Il link "Clicca qui per conoscere la dimensione della cartella" permette di conoscere la dimensione di queste email, il cui numero deve essere superiore a 0.
-
-![](images/img_1296.jpg){.thumbnail}
-/!\ Gli elementi nativi: messaggi ricevuti, messaggi inviati e cestino non possono essere modificati, come vedi dalla figura.
-
-
-## Proprietà delle cartelle principali
-Le cartelle messaggi ricevuti, messaggi inviati e cestino non possono essere completamente modificate.
-
-Puoi modificare la visualizzazione nella lista, ordinandole come "Lista" o "Oggetti".come
-
-![](images/img_1297.jpg){.thumbnail}
-
-
-## Installazione di una firma
-Per installare una firma, da visualizzare in calce ai messaggi inviati, accedi alle Impostazioni e poi Identità. Seleziona l’indirizzo e-mail con il quale accedere alla Webmail.
-
-Clicca per inserire gli elementi della tua firma.
-Quelli predefiniti sono il nome da visualizzare e l'indirizzo di posta, che sono già inseriti.
-Puoi inserire anche:
-. Azienda: inserisci la tua azienda, la tua associazione
-. Rispondere a: se vuoi che i destinatari rispondano a un indirizzo diverso dal quale scrivi
-. Cci: se vuoi aggiungere un indirizzo in copia nascosta a tutti i tuoi invii
-. Impostazioni predefinite: se hai creato più firme e vuoi utilizzarne una di default
-. Firma: per personalizzare il pié di pagina dei tuoi messaggi
-. Firma HTML: le informazioni che hai inserito nella Firma contengono del codice HTML o temi che sia compatibile con il programma di posta del destinatario che codifica i messaggi in HTML.
-
-Clicca Registra per confermare la modifica dell'identità principale.
-
-Per inserire la firma associata a questa identità, fai riferimento alla sezione [Inserire una firma in formato HTML](#SIGNATURE).
-
-![](images/img_1298.jpg){.thumbnail}
-
-
-## Installa una firma con un'immagine (1)
-Per questa operazione è necessario che l'immagine sia salvata su un server (ad esempio il tuo hosting OVHcloud).
-
-Per salvare un'immagine sul tuo hosting OVHcloud, segui  [questa guida](http://guides.ovh.com/FtpFileZilla).
-
-Selezionando Firma HTML, l'editor WYSWYG* viene visualizzato come ti mostra la figura.
-
-Clicca su HTML per aprire la finestra in cui inserire il codice HTML.
-Per aggiungere un'immagine usa questo comando:
-
-
-```
-<img src="url-della-tua-immagine" border="0" alt="testo-da-visualizzare-se-la-tua-immagine-non-si-apre" />
+```bash
+<img src="your-image-url" border="0" alt="text-if-image-is-not-displayed" />
 ```
 
+![hosting](images/roundcube08.png){.thumbnail}
 
-Clicca su Aggiorna per confermare le modifiche e le aggiunte.
+### Rubrica di contatti
 
-* What You See is What Yo Ge: quello che visualizzi è quello che ottieni
+Clicca su `Contatti`{.action} nella barra superiore per accedere alla rubrica. Esso è diviso in **3 colonne**:
 
-![](images/img_1299.jpg){.thumbnail}
+- **Gruppi**: nella rubrica indirizzi, potete creare gruppi per classificare i contatti.
+- **Contatti**: visualizza i contatti della rubrica o del gruppo selezionato.
+- **Proprietà contatto** o **Aggiungi contatto**: questa finestra si apre quando viene selezionato un contatto o quando è in fase di creazione. È possibile leggere o modificare le informazioni di un contatto.
 
+![hosting](images/roundcube09.png){.thumbnail}
 
-## Installa una firma con un'immagine (2)
-Dopo aver confermato l'aggiornamento, l'immagine viene visualizzata correttamente nel campo di modifica della firma.
+#### Gruppi <a name="group"></a>
 
-Puoi modificare anche il testo, con le opzioni di grassetto, corsivo, sottolineato, barrato, gestire l'allineamento, le dimensioni e il colore del carattere, etc.
+I gruppi sono sottocategorie della rubrica. Permettono di classificare i contatti in sottounità. Ad esempio, è più facile trovare un contatto in un gruppo che hai creato piuttosto che nell'intera rubrica indirizzi. per permetterti di inviare un'email aggiungendo un gruppo di destinatari, invece di aggiungerne uno a uno.
 
-Per le altre opzioni disponibili, controlla la figura.
+Per creare un gruppo, clicca sul pulsante `+`{.action} in fondo alla colonna `Gruppi`. Definisci il nome del gruppo e clicca su `Salva`{.action} per confermare l'operazione.
 
-Dopo aver terminato l'operazione, clicca su Registra per ottenere il messaggio "Salvataggio completato correttamente".
+![hosting](images/roundcube10.png){.thumbnail}
 
-Per inserire la firma associata a questa identità, fai riferimento alla sezione [Inserire una firma in formato HTML](#SIGNATURE).
+Per assegnare un contatto a uno dei gruppi, seleziona un contatto nella colonna `Contatti` e, nella finestra che appare, clicca sulla scheda `Gruppi`{.action}. Seleziona il gruppo che vuoi assegnare al contatto.
 
-![](images/img_1300.jpg){.thumbnail}
+#### Contatti <a name="contacts"></a>
 
+Nella colonna `Gruppi`, seleziona la rubrica o uno dei gruppi.
 
-## Nuova identità/firma (1)
-Hai solo un indirizzo email (offerta Start 10M ad esempio) o vuoi gestirne uno solo utilizzando la Webmail, ma puoi creare delle identità o delle firme diverse. 
-Puoi anche inviare messaggi da parte di un altro account email, senza disconnetterti dal tuo account.
+> [!primary]
+> 
+> Quando crei un contatto a partire da un gruppo selezionato, il contatto sarà aggiunto automaticamente al gruppo.
 
-Ti presentiamo questo esempio:
-hai un account email supporto@ovh.net e vuoi inviare messaggi come no-reply@ovh.net ma non vuoi accedere all'account no-reply@ovh.net utiliizzando la Webmail.
+Clicca sul pulsante `+`{.action} in fondo alla colonna `Contatti` per creare un contatto.
 
-In Identità, clicca sul "+" per aggiungere una nuova identità.
+![hosting](images/roundcube11.png){.thumbnail}
 
-![](images/img_1301.jpg){.thumbnail}
+Inserisci le informazioni del contatto.
 
+> [!primary]
+> Aggiungi campi supplementari tramite il menu a tendina `Aggiungi campo...`{.action}, sotto i campi `Nome` e `Indirizzo`.
 
-## Nuova identità/firma (2)
-Nel nostro esempio, creiamo un'identità chiamata Guide OVHcloud. È associata all'indirizzo no-reply@ovh.net, che vogliamo mostrare ai destinatari. Quando rispondono, il messaggio viene inviato a  supporto@ovh.net. Personalizziamo la firma (facoltativo) e clicchiamo su Registra.
+#### Importa contatti
 
-Dopo aver confermato, la nuova identità Guide OVHcloud <no-reply@ovh.net> viene visualizzata nella colonna delle identità.
+Dalla finestra `Contatti`{.action}, nella barra superiore, clicca su `importare`{.action} per aprire la finestra di importazione.
 
-Per inserire la firma associata a questa identità, fai riferimento alla sezione [Inserire una firma in formato HTML](#SIGNATURE).
+- `Importa da file`: seleziona un file CSV o vCard sul tuo computer. I contatti all'interno di un file CSV devono essere separati da virgola. Il file non deve superare i 20 MB.
+- `Importa le assegnazioni di gruppo`: Se i contatti del tuo file sono ripartiti per gruppi, puoi attivare questa opzione per trovare questa organizzazione o lasciare questa opzione su `zero` affinché nessun gruppo sia assegnato ai contatti.
+- `Sostituisci l'intera rubrica`: Se hai già configurato una rubrica, ti consigliamo di esportarla prima di selezionare questa opzione o di essere sicuro di voler definitivamente sostituirla.
 
-![](images/img_1302.jpg){.thumbnail}
+![hosting](images/roundcube-import-contact.png){.thumbnail}
 
+#### Esporta i contatti Roundcube
 
-## Accedere all'interfaccia di scrittura di un nuovo messaggio
-Per scrivere un nuovo messaggio, clicca su Componi. Se non vedi questo pulsante, clicca sulla busta bianca in alto a destra (Posta) per visualizzarlo.
+Dalla finestra `Contatti`{.action}, nella barra superiore, clicca sulla freccia verso il basso a destra del pulsante `Esporta`{.action}.
 
-![compose](images/Compose.PNG){.thumbnail}
+Puoi scegliere tra:
 
+- `Esporta tutto`{.action} i contatti saranno poi esportati in un file **vcf**.
+- `Esporta selezionati`{.action} per esportare solo gli elementi selezionati nella colonna `Contatti`{.action}.
 
-## Opzioni
-Dopo aver cliccato su "Componi", vengono visualizzate delle opzioni utili alla scrittura di un messaggio come l'aggiunta di contatti dalla [rubrica](#CARNET), gli [allegati](#ATTACHED) e le [impostazioni](#SIGNATURE) del messaggio.
-Puoi recuperare gli indirizzi dei tuoi contatti cliccando nei campi indirizzo:
+![hosting](images/roundcube-export-contact.png){.thumbnail}
 
-- To+: per aggiungere un destinatario diretto
-- Cc+: aggiungere un destinatario in copia semplice
-- Bcc+: aggiungere un destinatario in copia nascosta che non verrà visualizzato dagli altri destinatari.
+### Risposte (template) <a name="responses"></a>
 
+Questa funzione permette di creare template di risposta durante la redazione di un'email.
 
+Clicca su `Impostazioni`{.action} nella barra superiore e seleziona `Risposte`{.action} nella colonna di sinistra.
 
-![](images/img_1405.jpg){.thumbnail}
+Per aggiungere una risposta, clicca sul pulsante `+`{.action} in fondo alla colonna `Risposte`.
 
+![hosting](images/roundcube12.png){.thumbnail}
 
-## Inserire in formato HTML
-Per inserire una firma in formato HTML (come abbiamo visto nella sezione Identità), scegli il Tipo di editor: HTML.
-Clicca su Firma (pulsante in alto, con la matita) per inserirla. L'immagine inclusa nella firma viene visualizzata.
+> [!primary]
+> 
+> Le "risposte" sono redatte in formato "testo chiaro".
 
-1. Nel menu a tendina, scegli l'identità fra quelle che hai creato (vedi sezione Identità) 
-2. In questo momento puoi definire dei destinatari principali
-3. clicca qui per aggiungere un destinatario in copia, copia nascosta o un'opzione "Rispondi a" o "Inoltra a"
-4. Inserisci l'oggetto del tuo messaggio
-5. Utilizza l'èditor WYSWYG* per comporre il tuo messaggio.
+### Redazione di un'email
 
+Nella scheda `E-mail`{.action} nella barra superiore, clicca su `Nuovo messaggio`{.action}.
 
-* What You See is What Yo Ge: quello che visualizzi è quello che ottieni
+Nella finestra di redazione di un'email sono disponibili questi campi: 
 
-![](images/img_1406.jpg){.thumbnail}
+- **Mittente**: scegli un'[identità](#identity) per definire il mittente.
+- **Destinatario+**: aggiungere destinatari e/o un [gruppo di destinatari](#group).
 
+> [!primary]
+> 
+> Il campo **"Destinatario"** non deve superare i 100 destinatari, include i contatti contenuti in un [gruppo](#group).
 
-## Invio di un messaggio
-Per inviare un messaggio, clicca su Invia.
+- **Aggiungi Cc+**: aggiungere destinatari in copia semplice.
+- **Aggiungi Ccn+**: aggiungere destinatari in copia nascosta. Gli altri destinatari dell'email non vedranno questi in Cci.
+- **Aggiungi Followup-To**: inviare l'email ai destinatari
+- **Tipo editor**:  
+    - `Testo semplice`: solo testo senza forma.
+    - `HTML`: testo riformato. Si apre una barra degli strumenti HTML sopra la finestra di inserimento.
+- **Priorità** dell'email
+- **Ricevuta di ritorno**: al destinatario è richiesto un avviso di ricevimento.
+- **Notifica di consegna** quando l'email è stata trasmessa al destinatario.
+- **Salva i messaggi inviati in**: scegli la cartella in cui verrà salvata una copia dell'email.
 
-![](images/img_1305.jpg){.thumbnail}
+Nella barra superiore sono disponibili le seguenti azioni:
 
+- `Annulla`{.action} la redazione di un'email con una richiesta di conferma
+- `Invia`{.action} un'email.
+- `Salva`{.action} un'email nella cartella speciale "bozza"
+- `Controllo ortografico`{.action}, per verificare il testo, con un menù che permette la scelta della lingua.
+- `Allegare`{.action} un file a un'email
+- `Firma`{.action}: aggiunge la firma associata all'[identità](#identity) selezionata.
+- `Risposte`{.action}: aggiungi un template pre-registrato nella sezione [Risposte](#responses).
 
-## Ricezione di un messaggio
-L'invio precedente è stato effettuato da support@ovh.net.
-Ecco come viene ricevuto il messaggio che ci siamo inviati.
+![hosting](images/roundcube13.png){.thumbnail}
 
-Se la mail non viene ricevuta automaticamente, clicca su  "Aggiorna" in alto a sinistra (frecce orizzontali opposte).
+## Per saperne di più
 
-Possiamo verificare che il mittente è Support OVHcloud e che la firma viene visualizzata correttamente.
+[Iniziare a utilizzare la soluzione MX Plan](https://docs.ovh.com/it/emails/informazioni-generali-email-condivise/)
 
-![](images/img_1408.jpg){.thumbnail}
+[Modifica la password di un indirizzo email MX Plan](https://docs.ovh.com/it/emails/modificare-password-account-email-mxplan/)
 
+[Crea filtri per i tuoi indirizzi email](https://docs.ovh.com/it/emails/servizio_email_configura_i_filtri_email_nel_tuo_spazio_cliente_ovh/)
 
-## Aggiunta di un allegato (1)
-Per aggiungere uno o più documenti in vari formati, dopo aver scritto il messaggio, clicca su "Allega" in alto nella barra, sul pulsante con una graffetta).
+[Utilizza i reindirizzamenti email](https://docs.ovh.com/it/emails/servizio_email_configura_il_reindirizzamento_delle_tue_email/)
 
-Il pulsante "Allega un file" è accessibile anche a destra del campo di scrittura del messaggio. Cliccandoci si apre la stessa finestra di aggiunta del documento, come vedi in figura.
-
-Un altro metodo (vedi figura) è un semplice drag&drop dei file dal tuo computer sulla sezione allegati che trovi vicino al pulsante "Allega un file".
-
-![](images/img_1410.jpg){.thumbnail}
-
-
-## Aggiunta di un allegato (2)
-Se non utilizzi il drag&drop, ma clicchi sul pulsante con la graffetta o su "Allega un file", si apre questa finestra per caricare il file.
-
-Nel nostro esempio abbiamo deciso di aggiungere il file MaConfig_win.
-Dopo averlo selezionato, clicca su Apri.
-
-![](images/img_1407.jpg){.thumbnail}
-
-
-## Aggiunta di un allegato (3)
-Cliccando su Apri, viene visualizzata questa interfaccia, con il nome del file selezionato. Da questa, puoi confermare che il file da aggiungere è corretto o aggiungerne altri cliccando su "+".
-
-Clicca su Trasferisci a selezione completata.
-
-![](images/img_1409.jpg){.thumbnail}
-/!\ Come vedi in figura, la dimensione massima di un allegato utilizzando la Webmail è di 20MB.
-
-
-## Organizza la tua rubrica
-In base alle tue necessità, alle necessità della tua azienda, può essere molto utile organizzare il tuo elenco contatti in cartelle (gruppi di contatti).
-In questo esempio, creiamo due gruppi per illustrare le diverse possibilità.
-
-Per cominciare, clicca sull'icona Elenco Contatti RoundCube per accedere all'interfaccia che vedi.
-
-Per inserire tutti i contatti delle guide OVHcloud, creiamo un gruppo chiamato "Guide".
-
-Clicca su "+" in basso a sinistra, per creare il gruppo di contatti.
-Il cursore si posiziona automaticamente nel campo di digitazione del nome, come vedi in figura
-
-
-Tieni presente che puoi creare contatti nel "gruppo" creato di default (Contatti personali) saltando il passaggio della creazione di un nuovo gruppo di contatti.
-Clicca semplicemente su "+" in basso, nella seconda colonna (Crea un nuovo contatto).
-
-![](images/img_1411.jpg){.thumbnail}
-
-
-## Operazioni sui gruppi di contatti
-Dopo aver creato il gruppo, puoi accedere alle funzioni associate ai gruppi, come: 
-
-
-- Rinomina il gruppo
-- Elimina il gruppo
-- Registra la cronologia della ricerca (attivo dopo che effettui una ricerca sul gruppo)
-- Elimina la cronologia della ricerca (attivo dopo che effettui una ricerca sul gruppo)
-
-
-
-![](images/img_1412.jpg){.thumbnail}
-
-
-## Aggiungi un contatto, parte 1 - Proprietà
-Per aggiungere un contatto al gruppo "Guide", clicca su "+" della seconda colonna (colonna dei contatti) dopo aver selezionato il gruppo (deve essere in grassetto).
-Come vedi abbiamo aggiunto anche un gruppo chiamato "Support".
-
-Clicca su Aggiungi per inserire le informazioni del contatto nei 4 campi richiesti:
-
-- Informazioni generali: inserisci qui nome, cognome, società
-- Proprietà: inserisci l'indirizzo mail, il telefono, etc. (si apre un menu a tendina con l'opzione "Aggiungi un campo" disponibile sotto Indirizzo)
-- Informazioni personali: inserisci la data di nascita, il sesso, etc.
-- Note: inserisci informazioni diverse sul tuo contatto.
-
-
-Nelle Informazioni generali, puoi inserire:
-
-- Prefisso
-- Secondo nome (US)
-- Nome da visualizzare
-- Nickname
-- Organizzazione
-- Servizio
-- Ruolo
-
-
-Dopo aver inserito le informazioni necessari, clicca su "Registra".
-
-![](images/img_1413.jpg){.thumbnail}
-
-## Consiglio
-Un'altra possibilità, più rapida, è cliccare sull'icona "+" al momento della ricezione di un'email.
-
-![](images/img_2485.jpg){.thumbnail}
-
-
-## Aggiungi un contatto, parte 2 - Informazioni personali
-Visualizzi ora le informazioni generali (Prefisso, Nome, Cognome, Nickname e Organizzazione) con il menu a tendina "Aggiungi un campo".
-
-Ritrovi qui la sezione "Informazioni personali" a cui il menu a tendina permette di aggiungere campi.
-
-
-Dopo aver inserito le informazioni necessari, clicca su "Registra".
-
-![](images/img_1414.jpg){.thumbnail}
-
-
-## Aggiungi un contatto, parte 3 - Note
-La sezione "Note" è un campo semplice in cui aggiungere annotazioni sul contatto.
-
-
-Dopo aver inserito le informazioni necessari, clicca su "Registra".
-
-![](images/img_1415.jpg){.thumbnail}
-
-
-## Aggiungi un contatto, parte 4 - Avatar
-Per aggiungere un'immagine a un contatto (un avatar), basta procedere come in figura.
-
-Clicca su "Aggiungi" e poi, nella finestra che si apre, clicca su "Scegli un file". Carica il file che ti interessa dal tuo computer e conferma la scelta. Clicca poi su "Trasferisci" per confermare l'aggiunta dell'immagine.
-
-![](images/img_1416.jpg){.thumbnail}
-
-
-## Aggiungi un contatto, parte 5 - Finalizzazione
-L'immagine è stata aggiunta, l'indirizzo email e le informazioni di contatto sono registrate correttamente. Conferma l'aggiunta del contatto cliccando su "Registra".
-
-Puoi modificare l'immagine cliccando su "Sostituisci".
-
-![](images/img_1417.jpg){.thumbnail}
-
-
-## Aggiungi un contatto, parte 6 - Verifica
-Il contatto è stato registrato correttamente, infatti il messaggio "Salvataggio effettuato correttamente" viene visualizzato.
-Verifica/consulta la scheda contatto cliccando sul nome nella lista dei contatti (dopo aver selezionato il gruppo o avendo svolto una ricerca).
-Di default, il menu proprietà è attivo e visualizzi le informazioni inserite in questa sezione.
-
-Da quando un contatto è creato e inserito nel gruppo, puoi rimuoverlo dal gruppo cliccando sull'icona in fondo alla colonna dei contatti (con "-").
-
-![](images/img_1418.jpg){.thumbnail}
-
-
-## Modifica di un contatto
-Modifica un contatto selezionando il contatto, clicca su "Modifica il contatto" in alto a destra.
-
-Accedi alle informazioni in modalità editor.
-
-In figura, abbiamo cliccato su "Gruppi" per visualizzare i gruppi a cui è associato il contatto.
-
-In questo menu, puoi aggiungere un contatto a un gruppo selezionando la casella corrispondente.
-
-Puoi anche fare drag&drop per spostare i tuoi contatti nei vari gruppi e aggiornare la sezione "Gruppi".
-
-![](images/img_1419.jpg){.thumbnail}
-
-
-## Effettuare una ricerca
-Per effettuare una ricerca nei tuoi contatti, clicca su "Dettagli" nella banda in alto.
-
-Tutti i campi di ricerca possibili vengono visualizzati per permetterti di realizzare una ricerca avanzata.
-
-Inserisci i tuoi criteri di ricerca e clicca su "Ricerca" (qui il pulsante è nascosto e si trova sotto "Messaggeria istantanea").
-
-![](images/img_1420.jpg){.thumbnail}
-
-
-## Esporta la tua rubrica
-Recupera i contatti della tua Webmail RoundCube OVHcloud utilizzando l'esportazione di un file di indirizzi.
-
-Clicca su "Esporta" nella barra in alto, per scaricare un file rcube_contacts.vcf.
-
-![](images/img_1421.jpg){.thumbnail}
-
-
-## Importa una rubrica esistente
-Sei abituato a lavorare e gestire i tuoi contatti con un altro programma di posta e hai esportato i tuoi contatti. 
-Puoi importare i tuoi contatti cliccando su "Importa" a sinistra di "Esporta".
-
-L'unico formato autorizzato è l'estensione .vcf.
-L'importazione degli indirizzi può essere realizzata anche da file vCard o CSV (campi separati da una virgola.
-
-Nell'interfaccia che si apre, clicca su "Esplora" per caricare il file vCard o CSV con i tuoi contatti da importare.
-
-Scegli se sostituire la rubrica o no.
-
-Dopo aver impostato tutto, clicca su "Importa" per cominciare l'importazione.
-
-![](images/img_1422.jpg){.thumbnail}
-
-
-## Rispondi a tutti
-Nel caso in cui i tuoi destinatari siano organizzati in mailing list e non in maniera classica, clicca su rispondi a tutti nel menù in alto (vedi immagine).
-
-In questo modo risponderai a tutti i destinatari (sia mailing list che destinatari classici).
-
-In caso contrario, clicca sull'icona a sinistra per rispondere solo alla mailing list, escludendo i destinatari classici della tua email.
-
-![](images/img_2164.jpg){.thumbnail}
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

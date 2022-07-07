@@ -699,44 +699,6 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 91.134.248.230
 ```
 
-### Klaster 025
-
-Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
-|Kraj|Kod kraju|IPv4|IPv6|
-|---|---|----|---|
-|Francja|FR|188.165.59.25|2001:41d0:301::25|
-|Irlandia|IE|188.165.6.82|2001:41d0:301:3::25|
-|Portugalia|PT|213.251.139.148|2001:41d0:301:2::25|
-|Wielka Brytania|UK|178.32.52.5|2001:41d0:301:12::2|
-|Włochy|IT|178.32.138.102|2001:41d0:301:11::25|
-|Hiszpania|ES|188.165.130.4|2001:41d0:301:4::25|
-|Polska|PL|188.165.16.78|2001:41d0:301:5::25|
-|Czechy|CZ|51.254.146.179|2001:41d0:301:6::25|
-|Niderlandy|NL|51.254.154.69|2001:41d0:301:7::25|
-|Finlandia|FI|178.32.129.72|2001:41d0:301:8::25|
-|Litwa|LT|188.165.26.160|2001:41d0:301:9::25|
-|Niemcy|DE|178.33.34.108|2001:41d0:301:1::25|
-|Belgia|BE|87.98.252.243|2001:41d0:301:10::25|
-
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-145.239.37.172
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
-
-```bash
-46.105.204.25
-```
-
-Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
-
-```bash
-91.134.248.215
-```
-
 ### Klaster 026
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):

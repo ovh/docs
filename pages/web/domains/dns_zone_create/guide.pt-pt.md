@@ -1,101 +1,74 @@
 ---
 title: Criar uma zona DNS para um domínio externo
-excerpt: Criar uma zona DNS para um domínio externo
 slug: criar_uma_zona_dns_para_um_dominio_externo
-legacy_guide_number: g2229
+excerpt: 'Saiba como criar uma zona DNS na OVHcloud para o seu domínio através da Área de Cliente'
+section: 'DNS e zona DNS'
+order: 2
 ---
 
+**Última atualização: 05/06/2018**
 
-## Pré-requisitos
-Para poder Criar uma zona DNS para um domínio externo assegure-se que respeita os seguintes pré-requisitos:
+## Objetivo
 
+A zona Domain Name System (DNS) de um domínio constitui o ficheiro de configuração deste último. É composta por informações técnicas, conhecidas como registos. Numa utilização clássica, estes registos permitem fazer a ligação entre o seu nome de domínio e os servidores que alojam o seu website e os seus endereços de e-mail.
 
-- Não tem nenhuma encomenda criada ou em curso na OVH
-- O domínio existe
-- O SOA do domínio deve estar funcional na sua atual zona DNS
+Por várias razões, poderá ter de criar uma zona DNS para o seu domínio na OVHcloud.
 
+**Saiba como criar uma zona DNS na OVHcloud para o seu domínio através da Área de Cliente.**
 
+## Requisitos
 
+- Ter um domínio.
+- O domínio em questão não deve dispor de uma zona DNS da OVHcloud nem estar a ser objeto de uma operação ou encomenda em curso na OVHcloud.
+- A configuração técnica do domínio deve estar correta (estado, SOA, etc.).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-## Etapa 1: Verificação do domínio
+## Instruções
 
-- Na rubrica domínio no seu Espaço Cliente clique em "Adicionar uma zona DNS".
+### 1 - criar a zona DNS através da Área de Cliente
 
+Para iniciar esta operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Encomendar`{.action} na barra à esquerda e, a seguir, em `Zona DNS`{.action}.
 
+Na nova página, indique o domínio para o qual pretende criar uma zona DNS da OVHcloud. Aguarde alguns instantes até que a ferramenta efetue as verificações relativas ao nome de domínio.
 
-![](images/img_4295.jpg){.thumbnail}
+Se aparecer uma mensagem indicando que a zona DNS não pode ser criada, verifique que o nome de domínio cumpre os requisitos necessários ou peça à pessoa que o gere que o faça por si. Assim que tudo estiver correto, tente novamente.
 
-- No quadro "Nome de domínio", indique o domínio para o qual pretende criar a zona.
+![dnszonecreate](images/dns-zone-create-step1.png){.thumbnail}
 
+Assim que a verificação estiver concluída, deve escolher ativar ou não as entradas mínimas para a zona DNS que vai criar. Esta escolha não é definitiva, pois poderá editar os registos da zona DNS uma vez criada esta última.
 
+|Ativar o número mínimo de entradas?|Detalhes|
+|---|---|
+|Sim|Selecione esta escolha se deseja personalizar você mesmo a zona DNS mais tarde.|
+|Não|Selecione esta escolha se estiver a planear utilizar serviços da OVHcloud como um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, estando a zona pré-configurada para este efeito.|
 
-![](images/img_4296.jpg){.thumbnail}
+![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
-## Atenção:
+Depois de escolher, siga os passos até criar a zona DNS.
 
-- Se o nome de domínio indicado não preenche os pré-requisitos não será possível que crie a zona DNS
+### Etapa 2: editar a zona DNS (facultativo)
 
+Uma vez que a zona DNS para o seu domínio está criada, pode editá-la a partir de agora. Esta operação é opcional, mas pode ser indispensável se pretender assegurar a continuidade da disponibilidade dos serviços associados a este nome de domínio (como um website e e-mails).
 
+Se pretender editar esta zona DNS, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Nomes de domínio`{.action} na barra à esquerda e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
-![](images/img_4297.jpg){.thumbnail}
+> [!primary]
+>
+> Se acabou de criar a zona DNS e o domínio ainda não aparecer na lista dos seus serviços `Nomes de domínio`{.action}, aguarde alguns instantes e recarregue a página.
+>
 
-## Truque:
-Se o seu domínio não tem servidores DNS funcionais, a OVH permite que utilize os servidores DNS provisórios de forma a que possa depois adicionar* a zona DNS:
+Faça as ações necessárias. Para obter mais informações, consulte a secção "[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}" (versão em inglês). Depois de alterar a zona DNS da OVHcloud do seu domínio, é necessário um tempo máximo de propagação de 4 a 24 horas para que as alterações sejam efetivas.
 
-- parking1.ovh.net
-- parking2.ovh.net
+### Etapa 3: alterar os servidores DNS do domínio
 
-(*) 48h podem ser necessárias para a propagação dos servidores DNS.
+Quando a zona DNS da OVHcloud estiver pronta a ser utilizada, deve associá-la ao seu domínio. Para isso, obtenha os servidores DNS da OVHcloud ativados para o seu domínio na Área de Cliente. Estes últimos aparecem abaixo do `Name Servers`{.action}.
 
+![dnszonecreate](images/dns-zone-create-step3.png){.thumbnail}
 
+Quando estiver na sua posse, **modifique os servidores DNS do seu nome de domínio a partir da interface do fornecedor que o gere.** Depois de efetuar a operação, é necessário aguardar um tempo máximo de 48 horas para que a alteração seja totalmente efetiva.
 
-## Etapa 2: Escolha do tipo de zona
-É necessário escolher o tipo de zona DNS:
+## Quer saber mais?
 
-- Mínima: Zona DNS com as entradas mínimas para que o domínio funcione (A, MX, CNAME, ...)
-- Normal: Zona DNS com as entradas suplementares (CNAME para o servidor POP/IMAP/SMTP, ...)
+[Como editar a minha zona DNS?](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}.
 
-
-
-![](images/img_4298.jpg){.thumbnail}
-
-
-## Etapa 3: Validação
-
-- Escolha a opção "Eu li e aceito os contratos".
-- Clique de seguida em "Gerar a nota de encomenda".
-
-
-
-![](images/img_4299.jpg){.thumbnail}
-
-- Clique de seguida em "Pagar".
-
-
-
-![](images/img_4300.jpg){.thumbnail}
-
-- Após estar na nota de encomenda clique em "Prosseguir".
-
-
-
-![](images/img_4301.jpg){.thumbnail}
-
-## Informaçao:
-A criação da sua zona DNS é totalmente gratuita.
-
-- Indique o código de segurança e valide.
-
-
-
-![](images/img_4302.jpg){.thumbnail}
-
-
-## Etapa 4: Confirmação da encomenda
-Poderá de seguida verificar que a sua encomenda foi validada corretamente.
-
-![](images/img_4303.jpg){.thumbnail}
-
-## Informação:
-Após a validação da nota de encomenda a OVH poderá levar 30 minutos a efetuar a criação da zona DNS.
-
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>

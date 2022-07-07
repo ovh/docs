@@ -18,6 +18,11 @@ section: 'vRack'
 - Sie besitzen ein [vRack](https://www.ovh.de/loesungen/vrack/){.external}.
 - Eine Shell mit Root-Rechten ausführen
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+
 > [!primary]
 >
 > Die MTU-Größe muss auf allen Hosts eines Netzwerks übereinstimmen.  

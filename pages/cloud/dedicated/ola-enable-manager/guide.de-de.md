@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15.11.2021**
+**Letzte Aktualisierung am 18.05.2022**
 
 ## Ziel
 
@@ -27,9 +27,16 @@ Die Aggregation basiert auf dem Standard IEEE 802.3ad, Link Aggregation Control 
 
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> OLA wird über alle Netzwerkinterfaces konfiguriert. Sie werden dadurch zu einem Aggregat vom Typ "private aggregation".
+>
+> Nach der Umsetzung von OLA ist die öffentliche IP nicht mehr verfügbar.
+>
+
 ### OLA in Ihrem OVHcloud Kundencenter konfigurieren
 
-Um OLA zu konfigurieren, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)  ein und wechseln Sie zum Tab `Bare Metal Cloud`{.action}. Klicken Sie auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus der Liste aus.
+Um OLA zu konfigurieren, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Bereich `Bare Metal Cloud`{.action}. Klicken Sie auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus der Liste aus.
 
 ![network interfaces](images/network_interfaces2022.png){.thumbnail}
 

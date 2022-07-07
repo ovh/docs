@@ -3,10 +3,10 @@ title: PostgreSQL - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Command Line Interface (CLI)
 slug: postgresql/connect-cli
 section: PostgreSQL - Guides
-order: 100
+order: 040
 ---
 
-**Last updated 02nd November 2021**
+**Last updated 4<sup>th</sup> April, 2022**
 
 ## Objective
 
@@ -16,9 +16,10 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg);
-- A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account;
-- An up and running Public Cloud Database for PostgreSQL.
+- A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/sg/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- [Configure your PostgreSQL instance](https://docs.ovh.com/sg/en/publiccloud/databases/postgresql/configure-postgresql-instance/) to accept incoming connections
 
 ## Concept
 
@@ -48,85 +49,6 @@ As explained, the **postgresql-client** is often included by default.
 Example with Linux/Debian:
 
 ![Debian postgresql-client](images/debian_postgresql.png){.thumbnail}
-
-
-Once installed, you need to catch your IP address in order to authorise connections from this specific client.
-
-If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external}.
-Copy the IP address numbers shown on this website and keep them for later.
-In our example, we will use the (fake) IP 109.190.200.59.
-
-We are now ready to learn how to connect to our PostgreSQL instance.
-
-### Configure your PostgreSQL instance to accept incoming connections
-
-Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
-
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your PostgreSQL instance.
-
-#### Step 1: Verify your user roles and password
-
-Select the `Users`{.action} tab. By default a first user called **avnadmin** is created, with permissions to perform most of the usual DB management tasks. **SUPERUSER** is not allowed.
-
-If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update each access configuration in which you already use this user/password pair.
-
-This first user **avnadmin** comes with the following privileges:
-
-```console
-  LOGIN
-  NOSUPERUSER
-  INHERIT
-  CREATEDB
-  CREATEROLE
-  REPLICATION
-```
-
-We rely on official PostgreSQL roles and privileges. You can manage them yourself via CLI or code.
-So far, **user roles and privileges management is not supported via OVHcloud Control Panel neither OVHcloud API**.
-
-Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html){.external} to select the right roles for your use-case.
-
-
-In our example, we will simply reset the **avnadmin** password.
-
-Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
-
-![User ready](images/user_enabled.png){.thumbnail}
-
-#### Step 2: Authorise incoming connections from the PostgreSQL client
-
-In this step, select the `Authorised IP's`{.action} tab (Access Control List).
-By default, a Public Cloud Database does not accept any form of connection from the outside world.
-This can help to prevent intrusive connection attempts.
-
-Click to authorise a new IP, and enter the previously found IP of your remote client. In our case we will enter 109.190.200.59.
-
-![Add an IP](images/ip_authorize.png){.thumbnail}
-
-> [!primary]
->
-> If you want to allow any connection from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
->
-
-### Get your connection information (URI)
-
-Now all the setup should be done, from the remote client and the PostgreSQL instance.
-
-Select the `General Information`{.action} tab. In the **Login information** section, copy the Service URI.
-
-It should be similar to this:
-
-```console
-postgres://<username>:<password>@<hostname>:<port>/defaultdb?sslmode=require
-```
-
-A bit of information to know:
-
-- It will pass the username and password arguments;
-- Will connect to the hostname;
-- to the "defaultdb" database directly;
-- on the specified PostgreSQL port (dynamic allocation);
-- All of that securely, with TLS activated (SSL mode).
 
 We will now follow official PostgreSQL documentation to perform our first connection.
 

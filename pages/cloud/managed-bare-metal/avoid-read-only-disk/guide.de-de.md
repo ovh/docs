@@ -12,7 +12,7 @@ order: 10
 
 ## Einleitung
 
-Bei Vorgängen mit Bezug zu Datenspeichern kommt es vor, dass einige Partitionen einer Linux-Maschine nur gelesen werden können („read only“).
+Bei Vorgängen mit Bezug zu Datenspeichern kommt es vor, dass einige Partitionen einer Linux-Maschine nur gelesen werden können (“read only”).
 
 **Diese Anleitung erklärt, wie dieser Modus korrigiert und dieses Risiko minimiert werden kann**
 

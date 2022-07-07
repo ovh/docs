@@ -1,5 +1,5 @@
 ---
-title: Débuter avec S3 High Performance
+title: Débuter avec S3 Object Storage
 slug: s3/debuter-avec-s3
 excerpt:
 section: Object Storage S3 High Performance
@@ -10,7 +10,7 @@ order: 020
 
 ## Objectif
 
-Ce guide à pour objectif de vous familiariser avec la gestion de vos conteneurs / objets High Performance
+Ce guide à pour objectif de vous familiariser avec la gestion de vos conteneurs / objets.
 
 ## Prérequis
 
@@ -42,15 +42,16 @@ Sélectionnez `Object Storage`{.action} dans le menu à gauche puis cliquez sur 
 
 S'il s'agit de votre premier bucket, vous devriez voir cet affichage :
 
-![pcs dashboard](images/create-container-20211005102334181.png)
+![S3 Object Storage Dashboard](images/create-container-20211005102334181.png)
 
 S'il ne s'agit pas de votre premier bucket :
 
-![pcs dashboard](images/create-container-20211005115040834.png)
+![S3 Object Storage Dashboard](images/create-container-20211005115040834.png)
 
 Sélectionnez la solution High Performance et cliquez sur `Suivant`{.action} :
 
-![Select High Performance Solution](images/HighPerf-S3-getting-started-2021102809081084.png)
+![Select High Performance Solution](images/highperf-s3-getting-started-20220502112813860.png)
+
 
 Sélectionnez la région de votre bucket et cliquez sur `Suivant`{.action} :
 

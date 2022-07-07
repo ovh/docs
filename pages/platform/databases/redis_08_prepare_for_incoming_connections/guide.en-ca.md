@@ -63,7 +63,7 @@ Once created or updated, the user has to be ready and with the "Enabled" status 
 
 In this step, select the `Authorised IPs`{.action} tab. IP addresses must be authorised here before they can connect to your database.
 
-Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new window in which you can add single IP addresses or blocks to allow access to the databse.
+Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new window in which you can add single IP addresses or blocks to allow access to the database.
 
 ![Add an IP](images/ip_authorize.png){.thumbnail}
 

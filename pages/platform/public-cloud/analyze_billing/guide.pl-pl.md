@@ -118,7 +118,7 @@ Każdy model instancji jest dostępny w dwóch trybach rozliczenia: godzinowym l
 
 #### Rozliczenie godzinowe
 
-Rozliczenie godzinowe odpowiada opisanemu wyżej modelowi „Pay as you go”.
+Rozliczenie godzinowe odpowiada opisanemu wyżej modelowi “Pay as you go”.
 
 Płatności za instancje objęte takim rozliczeniem realizowane są pierwszego dnia następnego miesiąca za godziny zużyte w bieżącym miesiącu.
 

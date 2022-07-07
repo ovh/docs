@@ -32,7 +32,7 @@ Encontrará estas informações no Painel de configuração. Aceda à secção F
 
 
 
-![](images/img_3094.jpg){.thumbnail}
+![Putty](images/3094.png){.thumbnail}
 
 
 ## Ligação ao seu alojamento

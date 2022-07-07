@@ -43,7 +43,7 @@ You can use [pip](https://pip.pypa.io/en/stable/){.external} to install Djehouty
 ```shell-session
 $ pip install --upgrade pip
 [...]
-Successfully installed pip-<version> 
+Successfully installed pip-<version>
 $ pip install --upgrade djehouty
 [...]
 Successfully installed djehouty-<version> setuptools-18.3.1
@@ -62,7 +62,7 @@ remote: Total 58 (delta 26), reused 0 (delta 0)
 Receiving objects: 100% (58/58), 9.62 KiB | 0 bytes/s, done.
 Resolving deltas: 100% (26/26), done.
 Checking connectivity... done.
- 
+
 $ cd djehouty
 $ python setup.py install
 [...]
@@ -91,7 +91,7 @@ The complete list of parameters supported by Djehouty can be found on [github](h
 ```python hl_lines="7 9"
 import logging
 from djehouty.libgelf.handlers import GELFTCPSocketHandler
- 
+
 gelf_logger = logging.getLogger('djehouty-gelf')
 gelf_logger.setLevel(logging.DEBUG)
 gelf_logger.addHandler(GELFTCPSocketHandler(

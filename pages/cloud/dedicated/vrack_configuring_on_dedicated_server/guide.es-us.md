@@ -10,7 +10,7 @@ order: 01
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 19/10/2021**
+**Última actualización: 02/02/2022**
 
 ## Objetivo
 
@@ -28,9 +28,22 @@ El vRack (rack virtual) de OVHcloud permite agrupar virtualmente varios servidor
 - Tienes acceso a tu [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Tener un rango de direcciones IP privadas.
 
+> [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
+
 ## Procedimiento
 
-### Paso 1: añadir sus servidores al vRack
+### Paso 1: contratar el vRack
+
+Una vez que se haya conectado al área de cliente de OVHcloud, acceda al menú `Bare Metal Cloud`{.action} y haga clic en el botón `Contratar`{.action}. En este menú, haga clic en el botón ` vRack`{.action}.
+
+![Contratar el vrack](images/orderingvrack.png) {.thumbnail}
+
+Será redirigido a otra página para validar el pedido. La operación tardará unos minutos.
+
+### Paso 2: añadir sus servidores al vRack
 
 Una vez que haya activado el vRack en su cuenta, acceda a la sección `Bare metal Cloud`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Network`{.action} y abra el menú `vRack`{.action}.
 
@@ -38,7 +51,7 @@ Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga
 
 ![Selección del vRack](images/vrack_selection.png){.thumbnail}
 
-### Paso 2: configuración de las interfaces de red
+### Paso 3: configuración de las interfaces de red
 
 Las siguientes etapas contienen las configuraciones de las distribuciones/sistemas operativos recientes más comúnmente utilizadas. En primer lugar, debe [conectarse al servidor](https://docs.ovh.com/us/es/dedicated/primeros-pasos-servidor-dedicado/) por SSH o en sesión RDP (para Windows). Los siguientes ejemplos suponen que está conectado como usuario con permisos muy exigentes (administrador/sudo).
 

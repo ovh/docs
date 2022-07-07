@@ -1,5 +1,5 @@
 ---
-title: 'Como criar um servidor Minecraft num VPS ou num servidor dedicado'
+title: 'Tutorial - Como criar um servidor Minecraft num VPS ou num servidor dedicado'
 slug: criar-servidor-minecraft-em-vps
 excerpt: 'Saiba como instalar o seu próprio servidor Minecraft'
 section: Tutorial
@@ -181,4 +181,4 @@ Tenha em conta que este guia de instalação é igualmente válido para um [serv
 
 Para adicionar add-ons, mods e configurar mais detalhadamente o seu servidor Minecraft, queira consultar a seguinte documentação oficial: <https://help.mojang.com/>.
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -1,130 +1,148 @@
 ---
-title: 'Gestionar las facturas de OVHcloud'
+title: Gestionar las facturas de OVHcloud
 slug: gestionar-facturas-ovh
-excerpt: 'Cómo gestionar sus facturas y pagos en OVHcloud'
-section: 'Pedidos, facturas y servicios'
+excerpt: Cómo gestionar sus facturas y pagos en OVHcloud
+section: Pedidos, facturas y servicios
 ---
 
-**Última actualización: 08/04/2021**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
+**Última actualización: 12/05/2022**
 
 ## Objetivo
 
-Desde el área de cliente puede consultar, administrar y abonar sus facturas en cualquier momento.
+OVHcloud pone a su disposición un espacio que le permitirá consultar, administrar y abonar sus facturas.
 
-**Esta guía explica cómo realizar todas estas acciones relativas a la facturación.**
+**Cómo gestionar sus facturas desde el área de cliente de OVHcloud**
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud aplicables, que encontrará en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}. En la página de administración de sus servicios, haga clic en `Contratos`{.action}.
+> En función de su lugar de residencia y de la legislación vigente, así como del producto o productos en cuestión, es posible que algunas partes de esta guía varíen o no se apliquen en función de su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) (haga clic en su nombre en la esquina superior derecha de la pantalla y seleccione `Gestión de servicios`{.action} en el menú contextual y abra la pestaña `Contratos`{.action}).
 >
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} como contacto de facturación del servicio
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) como [contacto de facturación](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/) del servicio.
 
 ## Procedimiento
 
 > [!primary]
-> Actualización - Enero de 2021
 >
-La factura, que se emite por OVHcloud, se envía por correo electrónico como un enlace accesible y accesible directamente desde el área de cliente de OVHcloud. Todas las facturas están disponibles en el panel de control de OVHcloud.
+> Cada factura se enviará por correo electrónico y podrá acceder a ella a través de un enlace accesible. Podrá acceder autenticándose en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Todas las facturas están también disponibles en la pestaña `Panel de control`{.action} del área de cliente.
 >
 
-### Partes de una factura de OVHcloud
+### Partes de una factura de OVH
 
-La factura es el documento que se genera al abonar un pedido o cuando se realiza una renovación automática un servicio. Dicho documento recoge los productos pagados o pendientes de pago, junto con el período de renovación y el importe correspondientes. La referencia de las facturas de OVHcloud emitidas por la filial española de OVH siempre empieza por «ES».
+La factura del servicio de OVHcloud se enviará una vez realizado el pago de un pedido o una renovación. En ella se resumen los importes correspondientes a la compra o renovación de sus productos, así como sus períodos de validez.
 
-![Detalles de una factura](images/invoice-es.png){.thumbnail}
+![Detalles de una factura](images/invoice_ovh.png){.thumbnail}
 
 |Número|Descripción|
 |---|---|
-|1|Información relativa a la propia factura: referencia, fecha de emisión, orden de pedido correspondiente y forma de pago.|
-|2|Resumen de los datos del contacto de facturación.|
+|1|Información sobre la factura: referencia, fecha de emisión, orden de pedido correspondiente, tipo de pago e identificador de cliente de que se trate.|
+|2|Información del contacto de facturación.|
+|3|Suscripción: una descripción del servicio y período facturado|
+|4|Referencia: la referencia del servicio facturado|
+|5|Cantidad: el número de unidades del servicio facturado|
+|6|Precio unitario (sin IVA) de un producto|
+|7|Importe total (IVA incluido) de la factura|
 
-A continuación se desglosan los servicios facturados:
+### Descubrir el área de Facturación
 
-- **Suscripción**: Descripción del servicio y período facturado (para los servicios bajo suscripción periódica).
-- **Consumo**: Descripción del servicio (para los servicios con pago por consumo).
-- **Dominio**: Referencia del servicio facturado.
-- **Cantidad**: Número de unidades del servicio facturado. 
-- **Precio unitario** y **Precio IVA no incl.**: Precio del servicio facturado.
+#### Consultar y administrar las facturas de OVH
 
-El precio total del servicio con el IVA incluido se indica al final de la tabla, en el **TOTAL IVA incl**.
+Para consultar sus facturas, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Haga clic en su nombre en la esquina superior derecha de su pantalla y, en el nuevo menú que aparecerá, haga clic en `Facturas`{.action}.
 
-> [!primary]
->
-> Si, en la esquina superior derecha, aparece «Número de cuenta» como forma de pago, significa que se trata de una renovación automática. En ese caso, se utilizará la forma de pago que haya configurado en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
->
+![Facturación](images/hubinvoices.png){.thumbnail}
 
-### Sección de facturación
+Será redirigido a una página en la que podrá consultar todas sus facturas.
 
-#### Consultar y gestionar las facturas de OVHcloud
-
-Para consultar sus facturas, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Facturas`{.action}. 
-
-![area de cliente](images/hubinvoices.png){.thumbnail}
-
-Se abrirá una página en la que podrá ver todas sus facturas.
-
-![Mis facturas](images/billing-section.png){.thumbnail}
-
-Para cada factura, se muestran los siguientes datos:
-
-- referencia de la factura (p. ej.: ES1234567)
-- fecha de emisión de la factura
-- importe IVA incl.
-- saldo a pagar
-- fecha de vencimiento
-- botón `···`{.action} para realizar distintas acciones
+![Mis facturas](images/billing_section.png){.thumbnail}
 
 > [!primary]
 >
-> Si el saldo a pagar aparece en rojo, significa que la factura está pendiente de pago. La fecha de vencimiento de la factura le permitirá saber si debe realizar algún pago de forma inmediata.
+> Si una factura está pendiente de pago (estado de `No pagada`), el importe adeudado se indica en rojo en la columna `Saldo`.
 >
 
-Cuando la factura no corresponde a una renovación automática, el saldo a pagar y la fecha de vencimiento no figuran en la tabla, y en su lugar aparece la indicación **Información no disponible**. No obstante, puede ver esos datos haciendo clic en el botón `···`{.action}, que permite realizar las siguientes acciones:
+En cada línea de la tabla encontrará la siguiente información:
 
-![Opciones](images/actions-choice.png){.thumbnail}
+- `Referencia`{.action} de la factura;
+- `Número del pedido`{.action} correspondiente;
+- `Fecha de emisión`{.action} de la factura;
+- `Importe sin IVA`{.action};
+- `Importe IVA incl`{.action}.
+- `Saldo`{.action} a pagar;
+- `Estado`{.action} de la factura (`No pagada` o `Pago`).
 
-- **Ver la versión HTML**: La factura se abrirá en una nueva pestaña de su navegador.
-- **Ver la versión PDF**: Se generará un archivo en formato PDF que podrá descargar en su ordenador.
-- **Ver los detalles**: Puede consultar el historial de operaciones realizadas en la factura (en las facturas no relativas a renovaciones automáticas).
+Al hacer clic en uno de los botones `...`{.action} a la derecha de la tabla, también podrá:
 
-Para localizar fácilmente una o más facturas, puede utilizar los filtros situados sobre la tabla.
+- `Ver la versión HTML`{.action}: la factura se mostrará en su navegador en una nueva pestaña.
+- `Ver la versión PDF`{.action}: una versión en PDF descargable de su factura se generará automáticamente.
 
-![Filtros](images/invoice-filter.png){.thumbnail}
+![Opciones](images/actions_choices.png){.thumbnail}
 
-Puede buscar una factura concreta introduciendo su referencia o filtrar las facturas cuya fecha de emisión sea igual, anterior o posterior a una fecha determinada.
+> [!primary]
+>
+> Si una de sus facturas está pendiente de pago, aparecerá un botón `Abonar el importe pendiente ahora`{.action} haciendo clic en `...`{.action}.
+>
 
-Para descargar un archivo Excel en formato CSV con las facturas seleccionadas, haga clic en el botón `Acciones`{.action}, situado sobre la tabla en el lado izquierdo, y seleccione `Exportar en CSV`{.action}.
+##### **Filtros**
 
-![Exportación como CSV](images/csv-export.png){.thumbnail}
+Hay varios filtros a su disposición:
 
-#### Abonar las facturas <a name="abonar-las-facturas"></a>
+![Filtros](images/sort_filters.png){.thumbnail}
 
-Existen dos formas de abonar las facturas pendientes de pago: desde el botón `Acciones`{.action} o desde las acciones relativas a una factura concreta.
+Para obtener una factura exacta, podrá indicar su referencia, el número del pedido correspondiente o la fecha de emisión.
 
-En el primer caso, haga clic en el botón `Acciones`{.action}, situado sobre la tabla en el lado izquierdo, y seleccione `Abonar el importe pendiente ahora`{.action}.
+##### **Acciones masivas**
 
-![Abonar el importe pendiente](images/balance-payment.png){.thumbnail}
+En el menú `Acciones masivas`{.action} podrá exportar sus facturas en formato *.CSV* o *.pdf*. Los archivos creados mostrarán su importe, referencia y fecha de emisión.
 
-Alternativamente, haga clic en el botón `···`{.action} situado al final de la línea correspondiente a la factura y seleccione `Abonar el importe pendiente ahora`{.action}.
+Si desea exportar todas sus facturas, utilice los botones `Exportar todo en CSV`{.action} o `Exportar todo en PDF`{.action}.
 
-En cualquiera de los casos, confirme haciendo clic en el botón `Abonar el importe pendiente`{.action}. Se generará una [orden de pedido](../gestionar-los-pedidos-en-ovh/#la-orden-de-pedido). Abone el importe pendiente para estar al corriente de pago.
+![export_all](images/export_all.png){.thumbnail}
 
-### Consultar los pagos
+Si quiere exportar sólo una parte, marque las casillas correspondientes en la primera columna de la tabla para seleccionar las facturas que le interesen. En el menú `Acciones masivas`{.action} podrá elegir dos nuevas acciones: `Exportar la selección en formato CSV`{.action} o `Exportar la selección en formato PDF`{.action}.
 
-Puede realizar un seguimiento de los pagos en la sección de facturación del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la pestaña `Seguimiento de los pagos`{.action}. La página muestra los pagos de facturas realizados con la forma de pago configurada en el área de cliente. La referencia de los justificantes de pago siempre empieza por «PA_ES».
+![export_selection](images/export_selection.png){.thumbnail}
+
+#### Pagar sus facturas
+
+Para abonar las facturas pendientes de pago, haga clic en el menú `Acciones massivas`{.action} y, seguidamente, en el botón `Abonar el importe pendiente ahora`{.action}.
+
+![Abonar el importe pendiente](images/pay_debt.png){.thumbnail}
+
+Se generará una [orden de pedido de regularización](https://docs.ovh.com/us/es/billing/gestionar-los-pedidos-en-ovh/#la-orden-de-pedido). Una vez abonado el importe pendiente, se regularizará su situación.
+
+#### Solicitar la cancelación de una factura
+
+> [!primary]
+>
+> Para solicitar la baja al vencimiento del servicio, siga las indicaciones de esta [guía](https://docs.ovh.com/us/es/billing/how-to-cancel-your-services/).
+>
+
+### Seguimiento de los pagos
+
+Consulte el historial de pagos efectuados en `Mis facturas`{.action} y, seguidamente, `Seguimiento de los pagos`{.action}. De este modo, podrá asociar cada factura al pago asociado.
 
 ![Seguimiento de los pagos](images/payment_tracking.png){.thumbnail}
 
-Al igual que las facturas, puede exportar los justificantes de pago en formato CSV, así como filtrar el contenido de la tabla, en este caso por fecha de pago, importe total o forma de pago.
+También puede exportar sus justificantes de pago en formato *.CSV* utilizando el botón `Exportar en CSV`{.action}(1). También puede utilizar el botón `Filtrar`{.action}(2) para filtrar los datos.
 
 > [!primary]
 >
-> Las diferencias que puede haber entre un pago y el importe de la factura correspondiente se deben a que el saldo previo de su cuenta se ha deducido previamente del importe total, por lo que la cantidad final abonada es menor.
+> Si detecta alguna diferencia entre un pago y el importe de una factura, significa que el saldo previo en su cuenta ha hecho que se reduzca el importe final.
 >
 
 ## Más información
 
+[Gestionar la renovación de los servicios](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/)
+
+[Gestionar las formas de pago](https://docs.ovh.com/us/es/billing/gestionar-formas-de-pago/)
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+

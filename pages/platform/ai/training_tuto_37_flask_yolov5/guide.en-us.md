@@ -6,7 +6,7 @@ section: AI Training tutorials
 order: 09
 ---
 
-**Last updated 04th of October, 2021.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
@@ -23,7 +23,7 @@ For more information on how to train YOLOv5 on a custom dataset, refer to the fo
 -   a [user for AI Training](https://docs.ovh.com/us/en/publiccloud/ai/users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
--   your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/pytorch/tuto/notebook_object_detection_yolov5.ipynb))
+-   your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/notebook_object_detection_yolov5.ipynb)
 
 ## Instructions
 
@@ -33,7 +33,7 @@ First, the tree structure of your folder should be as follows.
 
 -   You have to create the folder named `models_train` and this is where you can store the weights generated after your trainings. You are free to put as many weight files as you want in the `models_train` folder.
 
--   Here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub](https://github.com/ovh/ai-training-examples/tree/main/jobs/yolov5-web-service) repository.
+-   Here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub](https://github.com/ovh/ai-training-examples/tree/main/jobs/flask/object-detection-yolov5-app) repository.
 
 ### Write the Flask application
 

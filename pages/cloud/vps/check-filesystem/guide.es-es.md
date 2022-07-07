@@ -24,8 +24,8 @@ order: 5
 
 ## Requisitos
 
-- un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta OVHcloud
-- tener acceso al [área de cliente de OVHcloud.](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta OVHcloud
+- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
 ## Procedimiento
 

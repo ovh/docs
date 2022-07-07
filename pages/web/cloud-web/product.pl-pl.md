@@ -2,7 +2,7 @@
 title: 'Cloud Web'
 slug: cloud-web
 sections: 'Pierwsze kroki'
-order: 09
+order: 10
 ---
 
 > [!product-section]
@@ -10,7 +10,7 @@ order: 09
 > ### Strony WWW i projekty
 >
 > - [Umieszczenie strony WWW w Internecie](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/)
-> - [Przeniesienie strony WWW i kont e-mail do OVH](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/)
+> - [Przeniesienie strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/)
 > - [Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/)
 > - [Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/)
 >

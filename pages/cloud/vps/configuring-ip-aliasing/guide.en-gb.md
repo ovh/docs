@@ -45,7 +45,7 @@ Concerning different distribution releases, please note that the proper procedur
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
 
-### Debian 10
+### Debian 10/11
 
 #### Step 1: Disable automatic network configuration
 

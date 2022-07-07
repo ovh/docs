@@ -1,7 +1,7 @@
 ---
 title: Configurar una nueva instalación de Windows Server
 slug: windows-first-config
-excerpt: Cómo activar la conexión al escritorio remoto y la respuesta ICMP
+excerpt: "Cómo activar la conexión al escritorio remoto, la respuesta ICMP y los registros de arranque"
 section: Primeros pasos
 ---
 
@@ -9,26 +9,28 @@ section: Primeros pasos
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 16/02/2021**
+**Última actualización: 06/05/2022**
 
 ## Objetivo
 
-Después de una nueva instalación de un sistema operativo Windows Server en un VPS, en ocasiones puede desactivarse el acceso remoto y la respuesta ICMP (Internet Control Message Protocol).
+Tras la nueva instalación de un sistema operativo Windows Server en un VPS, es posible desactivar el acceso remoto y la respuesta ICMP (Internet Control Message Protocol).<br>
+No obstante, puede utilizar el KVM de OVHcloud para acceder a su VPS y así configurar el firewall de Windows para reactivar ICMP y autorizar las conexiones a través del Remote Desktop Protocol.<br>
+La activación de los logs de arranque (*boot logs*) Windows puede ser útil para los diagnósticos de errores del servidor.
 
-**Esta guía explica cómo configurar Windows para reactivar el ICMP y autorizar las conexiones a través del protocolo Remote Desktop Protocol.**
+**Esta guía explica cómo activar ICMP, Remote Desktop Protocol y los logs de arranque en un VPS Windows.**
 
 ## Requisitos
 
 - Una distribución Windows instalada en un [VPS](https://www.ovhcloud.com/es/vps/).
-- Tener acceso al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
-### 1. acceso al KVM
+### Paso 1: acceso al KVM
 
 Para acceder a la consola KVM de su VPS, consulte la [guía KVM VPS](../utilizar_el_kvm_para_los_vps/).
 
-### 2. finalizar la instalación de Windows
+### Paso 2: finalizar la instalación de Windows
 
 Una vez establecida la sesión KVM, se mostrarán los monitores de configuración inicial. Aquí debe configurar su **país/región**, el **idioma de Windows** y su **teclado**. Una vez realizada la operación, haga clic en `Next`{.action}.
 
@@ -48,7 +50,7 @@ Introduzca la contraseña que haya creado para su cuenta de administrador y haga
 
 La configuración inicial ha finalizado. Una vez conectado, deberá modificar los parámetros necesarios del firewall de Windows.
 
-### 3. modificar el firewall de Windows
+### Paso 3: modificar el firewall de Windows
 
 Abra las `Herramientas de administración`{.action} del panel de configuración `Sistema y Seguridad`{.action} y haga doble clic en `Firewall Windows con seguridad avanzada`{.action}.
 
@@ -59,6 +61,24 @@ Aquí puede activar las respectivas reglas "ICMP" y "Remote Desktop" (escritorio
 ![Activado](images/windows5.png){.thumbnail}
 
 El servidor debe responder a las solicitudes que utilicen estos protocolos.
+
+### Activación de los logs de arranque (boot logs) Windows (opcional)
+
+Conéctese al servidor a través de una sesión de escritorio remoto o de [KVM](../utilizar_el_kvm_para_los_vps/). Abra el menú Iniciar Windows y haga clic en `Ejecutar`{.action}.
+
+![Bootlog](images/windowsboot1.png){.thumbnail}
+
+Introduzca "msconfig" y haga clic en `OK`{.action}.
+
+![Bootlog](images/windowsboot2.png){.thumbnail}
+
+En la nueva ventana, marque la casilla situada junto a `Boot log`. Haga clic en `OK`{.action}.
+
+![Bootlog](images/windowsboot3.png){.thumbnail}
+
+La próxima vez que inicie el servidor, los logs se guardarán en un archivo .txt. La ruta del archivo es `C:\Windows\ntbtlog.txt`.
+
+Para acceder al contenido de este archivo en modo de rescate, siga las indicaciones de [la guía del modo de rescate del VPS](../rescue/).
 
 ## Más información
 

@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: 'Znajdź najczęściej zadawane pytania dotyczące kont e-mail OVHcloud'
+title: FAQ e-mail OVHcloud
 slug: faq-konta-email
 section: Pierwsze kroki
 order: 07

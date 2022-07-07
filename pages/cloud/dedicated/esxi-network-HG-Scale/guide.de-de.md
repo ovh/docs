@@ -7,10 +7,10 @@ order: 6
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 01.02.2022**
+**Letzte Aktualisierung am 09.05.2022**
 
 ## Ziel
 
@@ -34,9 +34,12 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Failover-IPs im *Bridged*-
 
 ## In der praktischen Anwendung
 
-> [!primary]
+> [!warning]
 >
-> Bei diesen Serverreihen gibt es 4 Netzwerkkarten: jeweils zwei für das öffentliche und lokale Netzwerk. Um die gesamte Bandbreite zu nutzen, müssen Aggregate erstellt werden.
+> Diese Server-Reihen verfügen über 4 Netzwerkkarten. Um die gesamte Bandbreite nutzen zu können, müssen Aggregate erstellt werden. Unsere Dokumentation basiert auf diesen Kartenaggregaten.
+>
+> **ESXi unterstützt LACP nativ nicht.**
+> Es ist also keine Redundanz verfügbar. Auch die gesamte Bandbreite der Netzwerkkarten Ihres Servers kann deshalb nicht genutzt werden.
 >
 
 > [!warning]

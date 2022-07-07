@@ -1,25 +1,25 @@
 ---
 title: 'Weiterleitung einer bei OVHcloud verwalteten Domain'
 slug: domainweiterleitung
-excerpt: 'In dieser Anleitung lernen Sie die verschiedenen Weiterleitungsarten kennen und erfahren, wie Sie diese für von OVH verwaltete Domains einrichten.'
+excerpt: 'In dieser Anleitung lernen Sie die verschiedenen Weiterleitungsarten kennen und erfahren, wie Sie diese für von OVHcloud verwaltete Domains einrichten.'
 section: DNS und DNS-Zone
 ---
 
 **Stand 27.11.2018**
 
 
-## Einleitung
+## Ziel
 
 Eine Domainweiterleitung wird verwendet, um eine Domain auf ein neues Ziel umzuleiten. Dafür stehen verschiedene, den jeweiligen Anforderungen entsprechende Weiterleitungsarten zur Verfügung.
 
-**Hier lernen Sie die verschiedenen Weiterleitungsarten kennen und erfahren, wie Sie diese für von OVH verwaltete Domains einrichten.**
+**Hier lernen Sie die verschiedenen Weiterleitungsarten kennen und erfahren, wie Sie diese für von OVHcloud verwaltete Domains einrichten.**
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt.
 - Sie sind mit Ihrem Webhosting verbunden (nur wenn Sie eine [.htaccess-Datei](https://docs.ovh.com/de/hosting/webhosting_alles_uber_die_datei_htaccess/){.external} hinzufügen möchten).
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Domainweiterleitung verstehen
 
@@ -29,7 +29,7 @@ Das kann in verschiedenen Fällen notwendig sein. Meistens muss eine Weiterleitu
 
 Die Weiterleitung kann auf verschiedene Arten eingerichtet werden:
 
-- **Über das OVH Kundencenter**: Sie können die Weiterleitung mithilfe eines Konfigurationsassistenten einrichten.
+- **Über das OVHcloud Kundencenter**: Sie können die Weiterleitung mithilfe eines Konfigurationsassistenten einrichten.
 
 - **Weiterleitung selbst einrichten**: Bei dieser Methode erstellen Sie die Weiterleitung selbst in einer Datei (meist eine *.htaccess*-Datei). Hierzu sind Programmierkenntnisse erforderlich.
 
@@ -37,13 +37,11 @@ Beachten Sie, dass die Einrichtung einer Weiterleitung Auswirkungen auf das SEO-
 
 ### Domainweiterleitung über das Kundencenter einrichten
 
-Loggen Sie sich in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf Domains (*1* im Bild unten) und gehen Sie dann auf den Tab `Weiterleitung`{.action} (*2* im Bild unten).
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} Ihren Domainnamen unter `Domainnamen`{.action} aus. Wechseln Sie zum Tab `Weiterleitung`{.action}.
 
 Die Tabelle zeigt alle für Ihre Domain aktiven Weiterleitungen an.
 
-Um eine Weiterleitung hinzuzufügen, klicken Sie auf den Button `Weiterleitung hinzufügen`{.action} (*3* im Bild unten).
-
-![Hauptseite Weiterleitungen](images/create_redirection_global.png){.thumbnail}
+Um eine Weiterleitung hinzuzufügen, klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}.
 
 Geben Sie im angezeigten Fenster die Domain (bzw. die Subdomain) ein, die Sie umleiten möchten. Dadurch legen Sie die Quell-Domain für die Weiterleitung fest.
 
@@ -55,10 +53,10 @@ Wählen Sie nun das Ziel aus, auf das Sie die ausgewählte Domain weiterleiten m
 
 Leiten Sie Ihre Domain auf eine andere Domain um. Wählen Sie diese Option, wenn Sie den Domainnamen Ihrer Website geändert haben.
 
-- **Weiterleitung auf einen OVH Server oder auf externe Server**
+- **Weiterleitung auf einen OVHcloud Server oder auf externe Server**
 
 Ändern Sie die DNS-Konfiguration der Domain und geben Sie ein anderes Ziel ein (Eintrag A, AAAA oder CNAME). Wählen Sie diese Option, wenn Ihre Website an einem anderen Ort (zum Beispiel bei einem anderen Anbieter) gehostet wird, der Domainname aber bestehen bleibt.
-Wenn Ihre Domain die OVH Konfiguration verwendet, können Sie diese Änderung auch über das Kundencenter vornehmen (siehe [Bearbeiten der OVH DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}).
+Wenn Ihre Domain die OVHcloud Konfiguration verwendet, können Sie diese Änderung auch über das Kundencenter vornehmen (siehe [Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}).
 
 Die vorliegende Anleitung beschreibt von hier an ausschließlich die **Weiterleitung auf eine Webadresse**. Wenden Sie sich für die Weiterleitung auf einen anderen Server an Ihren Hosting-Anbieter. Die notwendigen Änderungen in Ihrer DNS-Konfiguration können Sie dort erfragen.
 
@@ -168,6 +166,6 @@ Redirect temp / http://andere_website.tld/seite/
 
 [Webhosting: Alles über die Datei .htaccess](https://docs.ovh.com/de/hosting/webhosting_alles_uber_die_datei_htaccess/){.external}
 
-[Bearbeiten der OVH DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
+[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -34,7 +34,7 @@ Das bedeutet also: Man kann auf einem Datastore von 1,2TB die Kapazität von 50T
 
 Belegter Platz kann nicht anderweitig beansprucht werden. 
 
-Beispiel: Belegt man 40GB auf einer „Thin Disk“ von 100GB und löscht man Daten im Umfang von 20GB in der VM, beträgt der verwendete Speicherplatz auf dem Datastore immer noch 40GB und der zugewiesene Speicherplatz 100GB.
+Beispiel: Belegt man 40GB auf einer “Thin Disk” von 100GB und löscht man Daten im Umfang von 20GB in der VM, beträgt der verwendete Speicherplatz auf dem Datastore immer noch 40GB und der zugewiesene Speicherplatz 100GB.
 
 
 ### Thick Provisioning Eager Zero

@@ -50,7 +50,7 @@ W celu wygenerowania klucza możesz użyć jednej z dostępnych metod, takich ja
 - date +%s | sha256sum
 - date +%s | md5sum 
 
-Po wygenerowania klucza możesz go skonfigurować w Twoim projekcie za pomocą klienta Swift. Pamiętaj, aby zastąpić ciąg „12345” Twoim kluczem:
+Po wygenerowania klucza możesz go skonfigurować w Twoim projekcie za pomocą klienta Swift. Pamiętaj, aby zastąpić ciąg “12345” Twoim kluczem:
 
 ```bash
 swift post -m "Temp-URL-Key: 12345"

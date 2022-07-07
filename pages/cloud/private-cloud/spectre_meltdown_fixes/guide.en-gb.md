@@ -30,7 +30,7 @@ As a reminder:
 > [!primary]
 >
 > Meltdown (CVE-2017-5754) does not affect ESXI because ESXI does not run non-verified user codes.
-> 
+>
 
 
 For **Private Cloud** solutions, there is planned scheduled maintenance to apply a patch for this vulnerability automatically on vulnerable hosts. You can find information about this scheduled maintenance on the [associated task](http://travaux.ovh.com/?do=details&id=29250){.external} (English translation below French text).
@@ -52,7 +52,7 @@ If you have an older version of these *builds*, you will need to update your hos
 
 ### Update your host with the patch associated with the vulnerability
 
-Update your host by switching it to maintenance mode (your host will be rebooted during the procedure), and use the [VMWare Update Manager plugin](https://www.vmware.com/support/pubs/vum_pubs.html){.external}.
+Update your host by switching it to maintenance mode (your host will be rebooted during the procedure), and use the [VMware Update Manager plugin](https://www.vmware.com/support/pubs/vum_pubs.html){.external}.
 
 The patches are as follows:
 
@@ -62,7 +62,7 @@ The patches are as follows:
 > [!warning]
 >
 > This version **5.5** patch is only for **CVE-2017-5715**, not CVE-2017-5753.
-> 
+>
 
 
 ![Configuration](images/spectre2.JPG)

@@ -29,7 +29,7 @@ Die Hilfe zu Login/Passwort für SQL finden Sie hier:[]({legacy}1909)
 
 
 
-![](images/img_3234.jpg){.thumbnail}
+![drupal](images/3234.png){.thumbnail}
 Hier steht die neueste stabile Version des Programms zum Download bereit.
 In unserem Beispiel handelt es sich um Version 7.41.
 In der Regel handelt es sich dabei um komprimierte (gezippte) Dateien, die Sie dekomprimieren (extrahieren) müssen. Im Internet finden Sie zahlreiche Hilfen zum Thema.
@@ -50,7 +50,7 @@ Im Internet finden Sie zahlreiche Hilfen und Programme zur Dekomprimierung, die 
 
 Der Zielordner wird "Drupal-xxx" heißen (anstatt xxx steht in der Regel die Versionsbezeichnung).
 
-![](images/img_3233.jpg){.thumbnail}
+![drupal](images/3233.png){.thumbnail}
 
 - FTP-Verbindung zum Webhosting
 
@@ -82,7 +82,7 @@ Mit Strg+A können Sie alle Dateien auswählen.
 
 Verschieben Sie anschließend alle Dateien per Drag&Drop in das "www" Verzeichnis auf dem "Server" (rechter Bereich).
 
-![](images/img_3199.jpg){.thumbnail}
+![drupal](images/3199.png){.thumbnail}
 Höchstwahrscheinlich ist das "www" Verzeichnis nicht leer. Die darin enthaltenen Dateien müssen aber nicht unbedingt gelöscht werden. Auf diesen Punkt kommen wir später noch einmal zurück.
 
 ## Schritt 3
@@ -94,7 +94,7 @@ Wenn die Dateiübertragung abgeschlossen ist, überprüfen Sie, ob alle Dateien 
 
 Damit ist der Upload der Drupal-Dateien auf Ihr Webhosting beendet.
 
-![](images/img_3200.jpg){.thumbnail}
+![drupal](images/3200.png){.thumbnail}
 
 
 ## Schritt 1 - Installation von Drupal
@@ -104,13 +104,13 @@ Wenn Sie auf Ihrer Webseite sind,
 wählen Sie "Standard
 Install with commonly used features pre-configured." und klicken Sie dann auf "Save and continue".
 
-![](images/img_3219.jpg){.thumbnail}
+![drupal](images/3219.png){.thumbnail}
 
 
 ## Schritt 2 - Sprachwahl
 Wählen Sie die gewünschte Sprache für die Installation und klicken Sie auf "Save and continue".
 
-![](images/img_3218.jpg){.thumbnail}
+![drupal](images/3218.png){.thumbnail}
 
 
 ## Schritt 3 - Verbindung zur Datenbank
@@ -131,7 +131,7 @@ Wählen Sie "MySQL, MariaDB oder equivalent".
 
 
 
-![](images/img_3202.jpg){.thumbnail}
+![drupal](images/3202.png){.thumbnail}
 
 - Datenbankhost: Geben Sie hier den Server an, auf dem Ihre Datenbank läuft. Sie finden die Angabe in der Installationsmail Ihrer Datenbank oder in Ihrem Kundencenter. Der Hostname endet meist auf ".mysql.db".
 
@@ -141,7 +141,7 @@ Wählen Sie "MySQL, MariaDB oder equivalent".
 
 
 
-![](images/img_3203.jpg){.thumbnail}
+![drupal](images/3203.png){.thumbnail}
 Bitte beachten Sie: Login und Passwort für die Datenbank werden Ihnen nicht automatisch bei der Installation eines Hostings zugeschickt. Sie müssen zuerst die Datenbank in Ihrem Kundencenter aktivieren.
 Klicken Sie dann auf "Speichern und fortfahren", um die Verbindung zur Datenbank herzustellen.
 
@@ -154,7 +154,7 @@ Wenn alle Angaben zur Datenbank korrekt waren, wird die Installation nun gestart
 
 
 
-![](images/img_3190.jpg){.thumbnail}
+![drupal](images/3190.png){.thumbnail}
 
 
 ## Schritt 5 - Konfiguration von Drupal
@@ -175,7 +175,7 @@ Dann tragen Sie Daten für die Verwaltung Ihres Drupal ein.
 
 Scrollen Sie nach unten.
 
-![](images/img_3206.jpg){.thumbnail}
+![drupal](images/3206.png){.thumbnail}
 
 - Standardland: Wählen Sie Land/Sprache der Webseite.
 - Standard-Zeizone: Wählen Sie die Zeitzone der Webseite.
@@ -186,17 +186,17 @@ Scrollen Sie nach unten.
 
 
 
-![](images/img_3207.jpg){.thumbnail}
+![drupal](images/3207.png){.thumbnail}
 
 
 ## Schritt 6 - Fertigstellung
 Ihr CMS Drupal ist nun vollständig installiert.
 Klicken Sie auf "Besuchen Sie Ihre neue Website".
 
-![](images/img_3208.jpg){.thumbnail}
+![drupal](images/3208.png){.thumbnail}
 Jetzt müssen Sie Drupal nur noch einsetzen und Ihre Webseite ganz nach Ihren Wünschen gestalten.
 
-![](images/img_3209.jpg){.thumbnail}
+![drupal](images/3209.png){.thumbnail}
 
 
 ## Drupal Support
@@ -222,7 +222,7 @@ Es kann sinnvoll sein, die Datei lediglich umzubennen. So können Sie sie späte
 
 Noch ein Hinweis: Die Dateien Ihrer Webseite müssen immer im "www" Verzeichnis abgelegt werden. Andernfalls werden Sie nicht erfasst.
 
-![](images/img_3217.jpg){.thumbnail}
+![drupal](images/3217.png){.thumbnail}
 
 - Fehler bei der PHP-Version
 

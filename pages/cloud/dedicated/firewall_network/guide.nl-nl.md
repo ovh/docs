@@ -25,7 +25,7 @@ Om de wereldwijde infrastructuur en servers van zijn klanten te beschermen, bied
 
 ## Vereisten
 
-- U moet geabonneerd zijn op een OVH dienst met de optie Network Firewall: ([Dedicated server](https://www.ovh.nl/dedicated_servers/){.external}, [VPS](https://www.ovh.nl/vps/){.external}, [Public Cloud instance](https://www.ovh.nl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.nl/private-cloud/){.external}, [Failover-IP](https://www.ovh.com/nl/dedicated_servers/ip_failover.xml){.external}, etc.).
+- U moet geabonneerd zijn op een OVH dienst met de optie Network Firewall: ([Dedicated server](https://www.ovh.nl/dedicated_servers/){.external}, [VPS](https://www.ovh.nl/vps/){.external}, [Public Cloud instance](https://www.ovh.nl/public-cloud/instances/){.external}, [Hosted Private Cloud](https://www.ovh.nl/private-cloud/){.external}, [Failover-IP](https://www.ovh.com/nl/dedicated_servers/ip_failover.xml){.external}, etc.).
 - U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 

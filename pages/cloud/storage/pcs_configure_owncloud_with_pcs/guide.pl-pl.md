@@ -18,7 +18,7 @@ Przewodnik ten wyjaśnia, jak skonfigurować aplikację OwnCloud dla Object Stor
 
 ## Wymagania
 
-- Pobranie pliku OpenRC z panelu klienta OVH lub z interfejsu Horizon
+- Pobranie pliku OpenRC z panelu klienta OVHcloud lub z interfejsu Horizon
 - [Dodanie przestrzeni dyskowej](https://docs.ovh.com/pl/public-cloud/dodanie_przestrzeni_dyskowej/) dla aplikacji Owncloud
 
 
@@ -74,6 +74,7 @@ mysql> GRANT ALL PRIVILEGES ON `owncloud` . * TO 'owncloud'@'localhost';
 Po wykonaniu tych czynności możemy zalogować się do interfejsu OwnCloud za pomocą przeglądarki wpisując http://I.P.serwera/owncloud:
 
 ![](images/img_3325.jpg){.thumbnail}
+
 W interfejsie tym można:
 
 - Założyć konto administratora.
@@ -86,15 +87,19 @@ W interfejsie tym włączymy aplikację pozwalającą nam na dodanie obsługi ze
 Kliknij na przycisk "Plik" w górnym lewym rogu i wybierz "Aplikacja":
 
 ![](images/img_3327.jpg){.thumbnail}
+
 Aby włączyć aplikację "External storage support" w menu aplikacji "Wyłączonych":
 
 ![](images/img_3328.jpg){.thumbnail}
+
 Teraz możemy przejść do skonfigurowania tej aplikacji. Kliknij na nazwę użytkownika w górnym prawym rogu i na "Administracja":
 
 ![](images/img_3326.jpg){.thumbnail}
+
 Wybierz sekcję "Sekcja zewnętrzna" i dodaj typ przechowywania "OpenStack Object Storage":
 
 ![](images/img_3329.jpg){.thumbnail}
+
 Należy tu podać informacje z pliku "OpenRC":
 
 - Identyfikator użytkownika Horizon odnoszący się do pola "OS_USERNAME" w pliku "OpenRC"

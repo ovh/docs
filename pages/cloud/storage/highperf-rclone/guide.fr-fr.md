@@ -1,7 +1,7 @@
 ---
-title: Utiliser High Performance avec Rclone
+title: Utiliser S3 Object Storage avec Rclone
 slug: s3/rclone
-excerpt: Découvrez comment configurer Rclone afin de synchroniser vos fichiers vers et depuis High Performance
+excerpt: Découvrez comment configurer Rclone afin de synchroniser vos fichiers vers et depuis S3 Object Storage
 section: Object Storage S3 High Performance
 order: 110
 ---
@@ -12,7 +12,7 @@ order: 110
 
 Rclone est un outil de sauvegarde qui peut se synchroniser vers et depuis divers backends de stockage, et peut être utilisé sur Windows, macOS et Linux.
 
-**Ce guide explique comment configurer Rclone afin de synchroniser vos fichiers vers et depuis High Performance.**
+**Ce guide explique comment configurer Rclone afin de synchroniser vos fichiers vers et depuis S3 Object Storage.**
 
 > [!warning]
 >
@@ -27,7 +27,7 @@ Rclone est un outil de sauvegarde qui peut se synchroniser vers et depuis divers
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
 - Connaître vos informations d'identification S3 (access_key et secret_access_key).
 
-Consultez notre guide « [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
 
 ## En pratique
 

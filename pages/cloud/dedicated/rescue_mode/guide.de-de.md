@@ -9,7 +9,7 @@ section: 'Diagnose & Rescue Modus'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 01.04.2022**
+**Letzte Aktualisierung am 02.05.2022**
 
 ## Ziel
 
@@ -45,10 +45,10 @@ Suchen Sie "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `.
 
 ![Startmodus ändern](images/rescue-mode-001.png){.thumbnail}
 
-Auf der nächsten Seite, wählen Sie **Im Rescue-Modus booten**. Wenn Ihr Server über ein Linux-Betriebssystem verfügt, wählen Sie `rescue64-pro`{.action} im Drop-down-Menü aus. Wenn Ihr Server auf Windows läuft, können Sie auch `WinRescue`{.action} wählen ([vgl. Abschnitt unten](#windowsrescue)). Geben Sie eine alternative E-Mail-Adresse an, wenn Sie *nicht* möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Kunden-Accounts gesendet werden.
+Auf der nächsten Seite, wählen Sie **Im Rescue-Modus booten**. Wenn Ihr Server über ein Linux-Betriebssystem verfügt, wählen Sie `rescue-customer`{.action} im Drop-down-Menü aus. Wenn Ihr Server auf Windows läuft, können Sie auch `WinRescue`{.action} wählen ([vgl. Abschnitt unten](#windowsrescue)). Geben Sie eine alternative E-Mail-Adresse an, wenn Sie *nicht* möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Kunden-Accounts gesendet werden.
 <br>Klicken Sie auf `Weiter`{.action} um mit dem nächsten Schritt fortzufahren, und dann auf `Bestätigen`{.action}.
 
-![Rescue-Modus](images/rescue-mode-003.png){.thumbnail}
+![rescue-customer](images/rescue-mode-08.png){.thumbnail}
 
 Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action}. rechts neben "Status" im Bereich **Dienstleistungsstatus**.
 <br>Klicken Sie auf `Neu starten`{.action} und der Server wird im Rescue-Modus neu gestartet. Die Durchführung dieser Operation kann einige Minuten dauern.
@@ -92,7 +92,7 @@ Für die meisten Änderungen Ihres Servers via SSH im Rescue-Modus muss eine Par
 Die Partitionen werden über SSH per `mount` Befehl gemountet. Zunächst müssen jedoch Ihre Partitionen aufgelistet werden, um den Namen derjenigen Partition zu ermitteln, die Sie mounten möchten. Im Folgenden finden Sie Codebeispiele, an denen Sie sich orientieren können.
 
 ```bash
-rescue:~# fdisk -l
+rescue-customer:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders, total 41943040 sectors
@@ -114,7 +114,7 @@ Device Boot Start End Blocks Id System
 Wenn Sie den Namen der gewünschten Partition ermittelt haben, verwenden Sie den folgenden Befehl:
 
 ```bash
-rescue:~# mount /dev/hda1 /mnt/
+rescue-customer:~# mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -131,40 +131,22 @@ Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https:/
 Sie können einen VMware Datastore auf ähnliche Weise mounten wie im vorherigen Segment beschrieben. Installieren Sie zuerst das erforderliche Paket:
 
 ```bash
-rescue:~# apt-get update && apt-get install vmfs-tools
+rescue-customer:~# apt-get update && apt-get install vmfs-tools
 ```
 
 Listen Sie anschließend Ihre Partitionen auf, um den Namen der Partition des Datastores abzurufen:
 
 ```bash
-rescue:~# fdisk -l
+rescue-customer:~# fdisk -l
 ```
 
 Mounten Sie nun die Partition mit folgendem Befehl, und ersetzen Sie dabei `sdbX` mit dem im vorherigen Schritt identifizierten Wert:
 
 ```bash
-rescue:~# vmfs-fuse /dev/sdbX /mnt
+rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
 Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte Booten`{.action} und starten Sie den Server über die Kommandozeile neu.
-
-### Verwendung des Webinterfaces des Rescue-Modus (ausschließlich mit "rescue64-pro")
-
-Sobald der Server neu gestartet ist, können Sie auf das Web-Interface zugreifen, indem Sie in die Adresszeile Ihres Browsers `Ihre_Server_IP:81` eingeben. Verwenden Sie für https stattdessen den Port *444*, zum Beispiel:
-
-```sh
-https://169.254.10.20:444
-```
-
-Wenn Sie Ihre Daten bereits gesichert haben, können Sie die folgenden Komponenten über das Webinterface des Rescue-Modus testen:
-
-- **Disk test**: Überprüfen Sie die Integrität der Disks mit SMART.
-- **Processors**: Überprüft, ob der Prozessor normal funktioniert (diese Operation kann einige Zeit in Anspruch nehmen).
-- **Partitions**: Überprüfe dden Status der Reader.
-- **Memory**: Überprüft den auf dem Server installierten RAM (diese Operation kann einige Zeit in Anspruch nehmen).
-- **Network**: Überprüft sowohl die Verbindung zu einem internen OVHcloud Referenzsystem als auch die Verbindung zu Ihrem Browser.
-
-![Webinterface für den Rescue-Modus](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 

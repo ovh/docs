@@ -9,7 +9,7 @@ section: Per iniziare
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 7 settembre 2020**
+**Ultimo aggiornamento: 7/09/2020**
 
 ## Obiettivo
 
@@ -20,7 +20,7 @@ La console KVM consente di stabilire una connessione diretta al tuo VPS senza ut
 ## Prerequisiti
 
 - Un [VPS](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -28,13 +28,13 @@ La console KVM consente di stabilire una connessione diretta al tuo VPS senza ut
 
 #### Gamma VPS attuale
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nel menu di navigazione a sinistra del `VPS`{.action}. In questa sezione, clicca sui tre puntini `...`{.action} in corrispondenza del nome del tuo VPS nella sezione "Il tuo VPS".
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}. In questa sezione, clicca sui tre puntini `...`{.action} in corrispondenza del nome del tuo VPS nella sezione "Il tuo VPS".
 
 ![Apri KVM](images/kvm-new1.png){.thumbnail}
 
 #### VPS precedente
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nel menu di navigazione a sinistra del `VPS`{.action}. In questa sezione, clicca sul link di accesso intitolato `KVM`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}. In questa sezione, clicca sul link di accesso intitolato `KVM`{.action}.
 
 ![Clicca sul pulsante KVM](images/kvm-new2.png){.thumbnail}
 
@@ -105,4 +105,4 @@ Con i VPS 2016, l'API consigliata per accedere al KVM è la seguente:
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

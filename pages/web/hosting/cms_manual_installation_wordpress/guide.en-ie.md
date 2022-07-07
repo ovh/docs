@@ -23,7 +23,7 @@ There is a guide showing you [how to get your FTP details](../modify-ftp-user-pa
 There is a guide showing you [how to get your SQL credentials](../creating-database/)
 
 
-![](images/img_3125.jpg){.thumbnail}
+![wordpress](images/3125.png){.thumbnail}
 
 
 ## Part 2: get source files
@@ -35,7 +35,7 @@ There should be a link that lets you download the latest stable version of the C
 
 The file will usually be compressed (zipped) so you have to be able to extract the files to your computer. There is lots of help available online.
 
-![](images/img_3126.jpg){.thumbnail}
+![wordpress](images/3126.png){.thumbnail}
 
 
 ## Part 3: Upload your files to your hosting package via FTP
@@ -53,14 +53,14 @@ Check them out if you are stuck at this stage.
 
 The target folder will be called "WordPress"
 
-![](images/img_3127.jpg){.thumbnail}
+![wordpress](images/3127.png){.thumbnail}
 
 ## Log on to the web hosting package via FTP
 To upload the WordPress files to your hosting package, you first have to log on. 
 
 Follow this guide on [connecting to a hosting package in FTP](../log-in-to-storage-ftp-web-hosting/).
 
-![](images/img_3128.jpg){.thumbnail}
+![wordpress](images/3128.png){.thumbnail}
 
 ## Transfer files via FTP
 Follow these steps to upload your files using FTP.
@@ -76,7 +76,7 @@ If this folder does not exist you can create it.
 
 Your files must be dropped in to the "www" folder or you will not be able to access the installation procedure from your domain name.
 
-![](images/img_3129.jpg){.thumbnail}
+![wordpress](images/3129.png){.thumbnail}
 
 ## Step 2
 Once these folders are open:
@@ -89,7 +89,7 @@ Then drag and drop the files in to the "Remote site" section in the "www" folder
 
 It is very likely that the "www" folder is not empty. You do not have to remove the files that are in it. We will go back to this point later on in the guide.
 
-![](images/img_3130.jpg){.thumbnail}
+![wordpress](images/3130.png){.thumbnail}
 
 ## Step 3
 The files are being transferred. 
@@ -100,7 +100,7 @@ Once the transfer is complete, make sure that all of the files and folders have 
 
 This is the end of the section devoted to transferring files via FTP.
 
-![](images/img_3131.jpg){.thumbnail}
+![wordpress](images/3131.png){.thumbnail}
 
 
 ## Step 4: link with the database
@@ -119,14 +119,14 @@ This message will appear.
 
 Click on "Create a configuration file to continue."
 
-![](images/img_3132.jpg){.thumbnail}
+![wordpress](images/3132.png){.thumbnail}
 
 ## Step 2
 Get your database credentials (see the beginning of this guide)
 
 Click "We're off!" or equivalent to go to the next step.
 
-![](images/img_3133.jpg){.thumbnail}
+![wordpress](images/3133.png){.thumbnail}
 
 ## Step 3
 Enter the information requested concerning the database
@@ -150,7 +150,7 @@ Click "Send" to confirm login details for the database.
 
 
 
-![](images/img_3134.jpg){.thumbnail}
+![wordpress](images/3134.png){.thumbnail}
 
 
 ## Completion
@@ -161,7 +161,7 @@ Take the following steps to finish installing the WordPress blog.
 ## Step 1
 Click "Run install" or equivalent to continue.
 
-![](images/img_3135.jpg){.thumbnail}
+![wordpress](images/3135.png){.thumbnail}
 
 ## Step 2
 Enter the information requested concerning administration of your WordPress blog:
@@ -178,19 +178,19 @@ Private life: if this box is checked, the search engines will rank the blog.
 
 To launch the WordPress installation click on green]"Install WordPress".
 
-![](images/img_3136.jpg){.thumbnail}
+![wordpress](images/3136.png){.thumbnail}
 
 ## Step 3
 Your WordPress blog has now been installed!
 
 You can now log in and start to work on your blog. Click "Log in".
 
-![](images/img_3137.jpg){.thumbnail}
+![wordpress](images/3137.png){.thumbnail}
 
 ## WordPress administration
 A look at the WordPress administration panel.
 
-![](images/img_3138.jpg){.thumbnail}
+![wordpress](images/3138.png){.thumbnail}
 
 
 ## Useful information
@@ -216,7 +216,7 @@ It may be useful to simply just rename the file so that you can re-enable it at 
 
 Something else to note: Your website's files must be placed in the "www" folder in order for them to display your website.
 
-![](images/img_3139.jpg){.thumbnail}
+![wordpress](images/3139.png){.thumbnail}
 
 ## Typical error: PHP version
 This is an error to do with your server's PHP version. 
@@ -225,5 +225,5 @@ The cause is simple: the latest version of PHP is not enabled.
 
 A guide is available concerning how to modify the PHP version on your hosting package:[Modify hosting package PHP version]({legacy}1207)
 
-![](images/img_3140.jpg){.thumbnail}
+![wordpress](images/3140.png){.thumbnail}
 

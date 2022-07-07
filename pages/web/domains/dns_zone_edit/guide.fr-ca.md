@@ -6,7 +6,7 @@ section: 'DNS et zone DNS'
 order: 3
 ---
 
-**Dernière mise à jour le 16/02/2021**
+**Dernière mise à jour le 01/06/2022**
 
 ## Objectif
 
@@ -53,7 +53,7 @@ La zone DNS d'un nom de domaine est un fichier de configuration composé d'**enr
 
 ### Accéder à la gestion d'une zone DNS OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 Le tableau qui apparaît affiche pour chaque ligne un enregistrement DNS lié à votre nom de domaine chez OVHCloud. Vous avez la possibilité d'en filtrer le contenu par type d'enregistrement ou par domaine.
 
@@ -162,6 +162,30 @@ Pour supprimer un enregistrement DNS, toujours depuis l'onglet `Zone DNS`{.actio
 Vous pouvez supprimer plusieurs entrées en une seule fois en les cochant depuis la partie gauche du tableau, puis en cliquant sur le bouton `Supprimer`{.action}.
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+
+#### Réinitialiser la zone DNS
+
+Réinitialiser votre zone DNS vous permet de :
+
+- soit revenir à une configuration minimale avec les entrées OVHcloud par défaut.
+- soit revenir à une zone DNS vide (à l'exception des champs NS), pour définir une configuration manuelle ultérieure.
+
+Depuis l'onglet `Zone DNS`{.action}, cliquez sur `Réinitialiser ma zone DNS`{.action} puis suivez les étapes qui s'affichent.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Vous avez le choix entre :
+
+- `Oui, je veux réinitialiser ma zone DNS avec les entrées minimales`. Cette option vous permet de diriger votre nom de domaine et votre service e-mail vers :
+    - l'un de vos services Web Cloud disponibles dans votre espace client OVHcloud.
+    - le service de redirection OVHcloud, accessible via l'onglet `Redirection`{.action} de votre nom de domaine dans les sections `Noms de domaine`{.action} et `Emails`{.action}.
+    - la fonction `Personnalisé`. Saisissez le champ `A` et/ou `MX` de votre choix.
+- `Non, mais je veux réinitialiser ma zone DNS`. Votre zone DNS sera alors vide, à l'exception des entrées NS qui seront automatiquement attachées aux serveurs DNS OVHcloud de votre zone DNS.
+
+> [!primary]
+>
+> Avant de réinitialiser votre zone DNS, assurez-vous que votre nom de domaine n'est pas attaché à des services en cours d'utilisation, tels qu'un site web ou des adresses e-mail.
+>
 
 ### Le temps de propagation
 

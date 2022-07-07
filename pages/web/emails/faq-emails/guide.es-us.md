@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: 'Encuentre las respuestas a las preguntas más frecuentes sobre las soluciónes de correo electrónico de OVHcloud'
+title: FAQ soluciónes de correo electrónico de OVHcloud
 slug: correo-electronico-faq
 section: 'Primeros pasos'
 order: 07

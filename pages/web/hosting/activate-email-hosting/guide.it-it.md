@@ -60,6 +60,10 @@ Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrisponde
 
 ![Attivazione email](images/mail-hosting04.png){.thumbnail}
 
+> [!warning]
+>
+> Per confermare l'eliminazione dell'offerta email associata al tuo hosting, riceverai un link di conferma via email. Clicca su questo link per avviare l'operazione di eliminazione.
+
 ## Per saperne di più
 
 Contatta la nostra Community di utenti all’indirizzo https://community.ovh.com/en/.

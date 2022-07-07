@@ -25,8 +25,8 @@ order: 03
 
 ## Requisitos
 
-- Tener [una instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/) sobre la facturación por horas
-- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o al [interfaz de Horizon](https://docs.ovh.com/us/es/public-cloud/crear_un_acceso_a_horizon/)
+- Tener [una instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/) sobre la facturación por **horas**
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o al [interfaz de Horizon](https://docs.ovh.com/us/es/public-cloud/horizon/)
 - Conocimiento de la [API de OpenStack](https://docs.ovh.com/us/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) y de las [variables OpenStack](https://docs.ovh.com/us/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
 
 ## Procedimiento
@@ -70,7 +70,7 @@ Para ver el snapshot, acceda al menú de la izquierda y haga clic en `Instance B
 
 #### Desde la interfaz de Horizon
 
-Para continuar, debe [crear un acceso a Horizon](../crear_un_acceso_a_horizon/) y [conectarse al panel Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Para continuar, debe [crear un acceso a Horizon](../horizon/) y [conectarse al panel Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Si ha desplegado instancias en diferentes regiones, asegúrese de que se encuentre en la región adecuada. Puede comprobarlo en la esquina superior izquierda de Horizon.
 

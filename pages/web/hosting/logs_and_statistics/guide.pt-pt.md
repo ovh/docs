@@ -21,11 +21,11 @@ O acesso aos logs e às estatísticas do seu site está incluído no seu plano d
 ## Requisitos
 
 - Ter um serviço [de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action}.
 
 Selecione o alojamento correspondente e clique no separador `Estatísticas e logs`{.action}
 

@@ -1,7 +1,7 @@
 ﻿---
-title: Przekierowanie domeny zarządzanej w OVH
+title: Przekierowanie domeny zarządzanej w OVHcloud
 slug: przekierowanie-domeny
-excerpt: Poznaj rodzaje przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVH
+excerpt: Poznaj rodzaje przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVHcloud
 section: Informacje ogólne
 ---
 
@@ -11,11 +11,11 @@ section: Informacje ogólne
 
 Przekierowanie nazwy domeny pozwala na skierowanie jej na nową stronę docelową. Istnieją różne rodzaje przekierowań, które odpowiadają na szczególne potrzeby.
 
-**Poznaj typy przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVH.**
+**Poznaj typy przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVHcloud.**
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Nawiązane połączenie z hostingiem przez ftp (jeżeli chcesz dodać plik .htaccess).
 
 ## W praktyce
@@ -28,7 +28,7 @@ W wielu przypadkach, przekierowanie może okazać się właściwym wyborem. Najc
 
 Taką konfigurację domeny można wykonać na kilka sposobów:
 
-- **w Panelu klienta OVH**: asystent konfiguracji pozwoli Ci na ustawienie parametrów przekierowania;
+- **w Panelu klienta OVHcloud**: asystent konfiguracji pozwoli Ci na ustawienie parametrów przekierowania;
 
 - **za pomocą kodu w plikach na serwerze**: sam tworzysz kod przekierowania w pliku (zazwyczaj jest to plik .htaccess).
 
@@ -36,13 +36,11 @@ Pamiętaj, że stworzenie przekierowania może mieć wpływ na pozycjonowanie Tw
 
 ### Przekierowanie domeny w Panel klienta
 
-Kiedy już zalogujesz się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w menu usług po lewej stronie, przejdź do sekcji `Domeny`{.action} (zazn. 1 na grafice poniżej), a następnie do zakładki `Przekierowanie`{.action} (zazn. 2 na grafice poniżej).
+Kiedy już zalogujesz się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w menu usług po lewej stronie, przejdź do sekcji `Domeny`{.action} , a następnie do zakładki `Przekierowanie`{.action}.
 
 Tabela wyświetli aktywne przekierowania dla Twojej nazwy domeny. 
 
-W celu dodania przekierowania, kliknij na przycisk `Dodaj przekierowanie`{.action} (na poprzednim obrazku).
-
-![Głόwna strona z przekierowaniami](images/create_redirection_global.png){.thumbnail}
+W celu dodania przekierowania, kliknij na przycisk `Dodaj przekierowanie`{.action} .
 
 W oknie, ktόre się wyświetli, podaj nazwę domeny (lub subdomeny), ktόrą chcesz przekierować. Jest to nazwa domeny źródłowej czyli przekierowywanej.
 
@@ -54,10 +52,10 @@ Na tym etapie, powinieneś wybrać adres, na który chcesz przekierować wskazan
 
 Przekierujesz w ten sposób nazwę domeny na inną. To rozwiązanie sprawdzi się, w przypadku gdy zmieniasz nazwę Twojej strony WWW;
 
-- **przekierowanie na serwer w OVH lub u innego dostawcy**
+- **przekierowanie na serwer w OVHcloud lub u innego dostawcy**
 
 Ten wariant wymaga zmiany konfiguracji DNS danej domeny na inną wartość docelową (pole A, AAAA lub CNAME). To rozwiązanie jest idealne, w przypadku gdy Twoja strona internetowa nie jest już hostowana w tym samym miejscu, przy czym nazwa domeny jest podobna. 
-Jeżeli Twoja nazwa domeny wykorzystuje konfigurację OVH, możesz również wykonać tę czynność poprzez wprowadzenie zmiany w Panelu klienta OVH (sprawdź przewodnik: [Jak edytować strefę DNS?](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external})
+Jeżeli Twoja nazwa domeny wykorzystuje konfigurację OVHcloud, możesz również wykonać tę czynność poprzez wprowadzenie zmiany w Panelu klienta OVHcloud (sprawdź przewodnik: [Jak edytować strefę DNS?](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external})
 
 Od tego momentu, przewodnik omawia tylko i wyłącznie przekierowanie na inny adres WWW.  W kwestii drugiej możliwości, skontaktuj się ze swoim dostawcą usług w celu uzyskania informacji na temat tego, jakie wpisy DNS należy zmienić, tak aby skierować domenę na wybrany serwer. 
 

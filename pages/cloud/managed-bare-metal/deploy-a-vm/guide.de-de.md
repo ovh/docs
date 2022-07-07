@@ -8,9 +8,9 @@ section: Verwaltung virtueller Maschinen
 order: 0
 ---
 
-**Stand 18.11.2020**
+**Letzte Aktualisierung am 18.11.2020**
 
-## Einleitung
+## Ziel
 
 Es gibt mehrere Möglichkeiten, um virtuelle Maschinen über Ihr vSphere Interface zu deployen. 
 
@@ -21,7 +21,7 @@ Es gibt mehrere Möglichkeiten, um virtuelle Maschinen über Ihr vSphere Interfa
 - Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Produkt.
 - Sie sind auf Ihrem [vSphere Interface](../den_vsphere_client_installieren/) eingeloggt.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Virtuelle Maschine deployen
 
@@ -33,12 +33,12 @@ Klicken Sie mit der rechten Maustaste auf den Cluster Ihrer Wahl und dann auf `N
 
 Sie haben mehrere Optionen, um eine virtuelle Maschine zu erstellen:
 
-- per ISO-Datei, verfügbar in Ihrem Datastore (um die Datei zu importieren, befolgen Sie die [Anleitung zur Verbindung via SFTP](../verbindung_per_sftp/)
-- über ein eigenes oder ein [von OVHcloud bereitgestelltes](../ovhcloud-template-deployment/) Template
-- durch Klonen einer bereits vorhandenen virtuellen Maschine (achten Sie darauf, mögliche Konflikte in der IP-Adressierung zu vermeiden)
-- durch Klonen einer virtuellen Maschine als Template, für ein schnelleres Deployment der nächsten virtuellen Maschinen
-- Klonen eines Templates als ein anderes Template, um das Template beispielsweise auf verschiedenen Datastores abzulegen und Leistungseinbußen bei umfangreicheren Deployments zu vermeiden
-- durch Konvertieren eines Templates in eine virtuelle Maschine. Dies führt zum Verlust des Templates, kann jedoch nützlich sein, wenn Sie dieses ändern möchten
+- Per ISO-Datei, verfügbar in Ihrem Datastore (um die Datei zu importieren, befolgen Sie die [Anleitung zur Verbindung via SFTP](../verbindung_per_sftp/)).
+- über ein eigenes oder ein [von OVHcloud bereitgestelltes](../ovhcloud-template-deployment/) Template.
+- Durch Klonen einer bereits vorhandenen virtuellen Maschine (achten Sie darauf, mögliche Konflikte in der IP-Adressierung zu vermeiden).
+- Durch Klonen einer virtuellen Maschine als Template, für ein schnelleres Deployment der nächsten virtuellen Maschinen.
+- Klonen eines Templates als ein anderes Template, um das Template beispielsweise auf verschiedenen Datastores abzulegen und Leistungseinbußen bei umfangreicheren Deployments zu vermeiden.
+- Durch Konvertieren eines Templates in eine virtuelle Maschine. Dies führt zum Verlust des Templates, kann jedoch nützlich sein, wenn Sie dieses ändern möchten.
 
 ![Erstellungsoptionen](images/vm02.png){.thumbnail}
 
@@ -56,7 +56,7 @@ Im vorliegenden Beispiel wird die virtuelle Maschine entsprechend den konfigurie
 
 Wählen Sie nun die Datenbank aus, in der Sie die Konfigurations- und Festplattendateien speichern möchten.
 
-Wir raten Ihnen davon ab, Ihre virtuelle Maschine in „storageLocal“, was dem lokalen Speicher Ihres Hosts entspricht, zu platzieren. Bei einer Störung Ihres Hosts könnte Ihre virtuelle Maschine sonst nicht neu gestartet werden und wäre somit nicht mehr verfügbar.
+Wir raten Ihnen davon ab, Ihre virtuelle Maschine in “storageLocal”, was dem lokalen Speicher Ihres Hosts entspricht, zu platzieren. Bei einer Störung Ihres Hosts könnte Ihre virtuelle Maschine sonst nicht neu gestartet werden und wäre somit nicht mehr verfügbar.
 
 ![Wahl des Speichers](images/vm05.png){.thumbnail}
 
@@ -64,7 +64,7 @@ Wählen Sie anschließend die Kompatibilität zwischen Ihrer virtuellen Maschine
 
 ![Auswahl der Kompatibilität](images/vm06.png){.thumbnail}
 
-Wählen Sie nun ein Gast-Betriebssystem. Das „Guest OS“ installiert nicht das Betriebssystem. Stattdessen wird die virtuelle Maschine automatisch vorkonfiguriert (Anzahl CPU/RAM, Netzwerkkartentyp, Installieren der VMware Tools).
+Wählen Sie nun ein Gast-Betriebssystem. Das “Guest OS” installiert nicht das Betriebssystem. Stattdessen wird die virtuelle Maschine automatisch vorkonfiguriert (Anzahl CPU/RAM, Netzwerkkartentyp, Installieren der VMware Tools).
 
 ![Auswahl des Gast-Betriebssystems](images/vm07.png){.thumbnail}
 
@@ -74,12 +74,12 @@ In den nachfolgenden Schritten können Sie die Ressourcen Ihrer virtuellen Masch
 
 In der Zeile `Neues Netzwerk` kann eine Netzwerkkarte hinzugefügt werden:
 
-- „VM-Netzwerk“ wird als öffentliches Netzwerk und für den direkten Internetzugriff verwendet.
+- “VM-Netzwerk” wird als öffentliches Netzwerk und für den direkten Internetzugriff verwendet.
 - Die VLANs werden für das private Netzwerk zwischen Ihren virtuellen Maschinen (sowie mit anderen OVHcloud Diensten via vRack) verwendet.
 
 ![Wahl des Netzwerks](images/vm08.png){.thumbnail}
 
-In der Zeile `Neues CD/DVD-Laufwerk` können Sie „ISO-Datei für Datenspeicher“ auswählen.
+In der Zeile `Neues CD/DVD-Laufwerk` können Sie “ISO-Datei für Datenspeicher” auswählen.
 
 Es wird ein neues Fenster geöffnet, in dem Sie Ihre ISO-Datei auswählen können. Diese kann auch nach der Erstellung der virtuellen Maschine hinzugefügt werden.
 

@@ -38,7 +38,7 @@ You can start using it by first adding it to your `Cargo.toml`:
 ```toml
 [dependencies]
 gelf_logger = { version = "0.1", features = ["ovh-ldp"] }
-# or 
+# or
 [dependencies.gelf_logger]
 version = "0.1"
 features = ["ovh-ldp"]
@@ -53,13 +53,13 @@ extern crate log;
 
 fn main() {
     let cfg = Config::ldp("gra1.logs.ovh.com", "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
-    
+
     // Initialize logger
     gelf_logger::init(cfg).unwrap();
-    
+
     // Send log using a macro defined in the create log
     info!("common message");
-    
+
     // make sure all buffered records are sent before exiting
     gelf_logger::flush().unwrap();
 }
@@ -74,7 +74,7 @@ You can start using it by first adding it to your `Cargo.toml`:
 ```toml
 [dependencies]
 log4rs_gelf = { version = "0.1", features = ["ovh-ldp"] }
-# or 
+# or
 [dependencies.log4rs_gelf]
 version = "0.1"
 features = ["ovh-ldp"]

@@ -1,7 +1,7 @@
 ---
 title: Configurar uma nova instalação do Windows Server
 slug: windows-first-config
-excerpt: Saiba como ativar a ligação à Área de Trabalho remota e a resposta ICMP
+excerpt: Saiba como ativar a Remote Desktop Protocol, ICMP e os logs de arranque
 section: Primeiros passos
 order: 7
 ---
@@ -10,18 +10,20 @@ order: 7
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 16/02/2021**
+**Última atualização: 06/05/2022**
 
 ## Objetivo
 
-Após uma nova instalação de um sistema operativo Windows Server num VPS, o acesso remoto e a resposta ICMP (Internet Control Message Protocol) podem por vezes ser desativados.
+Após uma nova instalação de um sistema operativo Windows Server num VPS, o acesso remoto e a resposta ICMP (Internet Control Message Protocol) podem ser desativados.<br>
+No entanto, pode utilizar o KVM da OVHcloud para aceder ao seu VPS e assim configurar a firewall Windows para reativar o ICMP e autorizar as ligações através do Remote Desktop Protocol.<br>
+A ativação dos logs de arranque (*boot logs*) Windows pode ser útil para os diagnósticos de erros do servidor.
 
-**Este guia explica como configurar o Windows para reativar o ICMP e autorizar as ligações através do protocolo Remote Desktop Protocol.**
+**Este guia explica como ativar ICMP, Remote Desktop Protocol e os logs de arranque num VPS Windows.**
 
 ## Requisitos
 
 - Uma distribuição Windows instalada num [VPS](https://www.ovhcloud.com/pt/vps/).
-- Ter acesso à Área de [Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 
@@ -60,6 +62,24 @@ Pode ativar aqui as regras "ICMP" e "Remote Desktop" (ambiente de trabalho remot
 ![Ativado](images/windows5.png){.thumbnail}
 
 O seu servidor deverá responder aos pedidos que utilizam estes protocolos.
+
+### Ativação dos logs de arranque (boot logs) Windows (facultativo)
+
+Ligue-se ao seu servidor através de uma sessão "Remote Desktop" (ambiente de trabalho remoto) ou [KVM](../utilizar_o_kvm_para_um_servidor_vps/). Abra o menu Iniciar o Windows e clique em `Executar`{.action}.
+
+![Bootlog](images/windowsboot1.png){.thumbnail}
+
+Introduza "msconfig" e clique em `OK`{.action}.
+
+![Bootlog](images/windowsboot2.png){.thumbnail}
+
+Na nova janela, selecione a caixa junto de `Boot log`. Clique em `OK`{.action}.
+
+![Bootlog](images/windowsboot3.png){.thumbnail}
+
+Quando iniciar o seu servidor, os logs serão registados num ficheiro .txt. O caminho do ficheiro é `C:\Windows\ntbtlog.txt`.
+
+Para aceder ao conteúdo deste ficheiro em modo de rescue, queira seguir as instruções descritas [no guia do modo de rescue do VPS](../rescue/).
 
 ## Quer saber mais?
 

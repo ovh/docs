@@ -26,7 +26,7 @@ There is an FTP credentials guide:[Modifying a FTP user password](../modify-ftp-
 There is a guide showing you how to change your SQL credentials: [Changing the password for a Web Hosting plan database](../change-password-database/)
 
 
-![joomla](images/img_3141.jpg){.thumbnail}
+![joomla](images/3141.png){.thumbnail}
 
 
 ## Part 2: get source files
@@ -38,7 +38,7 @@ There should be a link that lets you download the latest stable version of the C
 
 The file that you download will usually be compressed (zipped) so you have to be able to extract the files to your computer. There is lots of help available online.
 
-![joomla](images/img_3142.jpg){.thumbnail}
+![joomla](images/3142.png){.thumbnail}
 
 
 ## Part 3: Upload your files to your hosting package via FTP
@@ -58,7 +58,7 @@ Check them out if you are stuck at this stage.
 
 The target folder will be called "Joomla!"
 
-![joomla](images/img_3143.jpg){.thumbnail}
+![joomla](images/3143.png){.thumbnail}
 
 ## Log on to the web hosting package via FTP
 
@@ -66,7 +66,7 @@ To upload the Joomla! files to your hosting package, you first have to log on.
 
 Follow this guide on connecting to a hosting package in FTP: [Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting)
 
-![joomla](images/img_3144.jpg){.thumbnail}
+![joomla](images/3144.png){.thumbnail}
 
 ## Transfer files via FTP
 
@@ -85,7 +85,7 @@ If this folder does not exist you can create it.
 
 Your files must be uploaded to the "www" folder or you will not be able to access the installation procedure from your domain name.
 
-![joomla](images/img_3145.jpg){.thumbnail}
+![joomla](images/3145.png){.thumbnail}
 
 ## Step 2
 
@@ -99,7 +99,7 @@ Then drag and drop the files in to the "Remote site" section in the "www" folder
 
 It is very likely that the "www" folder is not empty. You do not have to remove the files that are in it. We will go back to this point later on in the guide.
 
-![joomla](images/img_3146.jpg){.thumbnail}
+![joomla](images/3146.png){.thumbnail}
 
 ## Step 3
 
@@ -111,7 +111,7 @@ Once it is complete, make sure that the files and folders have transferred corre
 
 This operation is the final step in uploading files via FTP.
 
-![joomla](images/img_3147.jpg){.thumbnail}
+![joomla](images/3147.png){.thumbnail}
 
 
 ## Part 4: Linking to the database
@@ -143,7 +143,7 @@ Confirm the password: confirm the password that you entered.
 
 Click "Next"
 
-![joomla](images/img_3148.jpg){.thumbnail}
+![joomla](images/3148.png){.thumbnail}
 
 ## Step 2
 
@@ -167,7 +167,7 @@ Previous installation: if there are tables in the database, those whose prefix i
 
 Click "Next" to confirm the information requested.
 
-![joomla](images/img_3149.jpg){.thumbnail}
+![joomla](images/3149.png){.thumbnail}
 
 
 ## Completion
@@ -196,13 +196,13 @@ Indicate whether you want to receive the installation information by email, such
 
 Click "Install" to continue.
 
-![joomla](images/img_3150.jpg){.thumbnail}
+![joomla](images/3150.png){.thumbnail}
 
 ## Step 2
 
 Wait a few minutes for it to install.
 
-![joomla](images/img_3151.jpg){.thumbnail}
+![joomla](images/3151.png){.thumbnail}
 
 ## Step 3
 
@@ -210,7 +210,7 @@ For security reasons Joomla! please delete the installation directory.
 
 To do this just click "delete the installation directory".
 
-![joomla](images/img_3152.jpg){.thumbnail}
+![joomla](images/3152.png){.thumbnail}
 
 ## Step 4
 
@@ -218,13 +218,13 @@ You will get a message confirming that the directory has been deleted.
 
 You can now connect to the Joomla! administration section. Log in in the window that opens, where you can also view the homepage set up by Joomla!.
 
-![joomla](images/img_3153.jpg){.thumbnail}
+![joomla](images/3153.png){.thumbnail}
 
 ## Joomla! administration section.
 
 For an overview of the Joomla! admin panel, click on the image below.
 
-![joomla](images/img_3154.jpg){.thumbnail}
+![joomla](images/3154.png){.thumbnail}
 
 
 ## Useful information
@@ -252,7 +252,7 @@ It may be useful to simply just rename the file so that you can re-enable it at 
 
 Something else to note: Your website's files must be uploaded to the "www" folder in order for them to display your website.
 
-![joomla](images/img_3155.jpg){.thumbnail}
+![joomla](images/3155.png){.thumbnail}
 
 ## Typical error: PHP version
 
@@ -262,7 +262,7 @@ The cause is simple: the latest version of PHP is not enabled.
 
 A guide is available detailing how to modify the PHP version on your hosting package:[Modify hosting package PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/)
 
-![joomla](images/img_3156.jpg){.thumbnail}
+![joomla](images/3156.png){.thumbnail}
 
 ## Typical error: Magic Quotes
 
@@ -274,5 +274,5 @@ On 2014 solutions, if PHP-FPM is enabled, the Magic Quote variable is disabled b
 
 There is a guide available on changing PHP variable on the 2014 hosting packages:[Modify web hosting package's PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/)
 
-![joomla](images/img_3157.jpg){.thumbnail}
+![joomla](images/3157.png){.thumbnail}
 

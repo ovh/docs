@@ -23,7 +23,7 @@ The first step is to create a container that will hold your files.
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
@@ -48,6 +48,7 @@ Name your container, then click `Create the container`{.action} :
 > [!warning]
 >
 > If you want to link your container to a domain name, your container name must not contain the following characters:
+>
 > - [ . ]
 > - [ _ ]
 > - And you must not use capital letters.

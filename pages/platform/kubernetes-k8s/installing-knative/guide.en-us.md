@@ -60,7 +60,7 @@ It helps for:
 
 Read more about [Knative 1.0 features](https://knative.dev/blog/articles/knative-1.0/).
 
-Knative reached the 1.0 milestone. To celebrate this achievement, in this tutorial we are going to install Knative on a freshly created OVHcloud Managed Kubernetes Service cluster and we will deploy an example app using Knative Serving component. You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} to reinitialize your cluster before following this tutorial.
+Knative reached the 1.0 milestone. To celebrate this achievement, in this tutorial we are going to install Knative on a freshly created OVHcloud Managed Kubernetes Service cluster and we will deploy an example app using Knative Serving component. You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} to reinitialize your cluster before following this tutorial.
 s
 ## Requirements
 
@@ -300,7 +300,7 @@ kubectl patch configmap/config-domain \
   --patch '{"data":{"knative.my-website.com":""}}'
 ```
 
-If you have questions about DNS on OVHcloud, we have a FAQ page for you that explain [how to configure a DNS zone](https://docs.ovh.com/us/en/domains/domains-dns-faq/#how-do-i-configure-my-dns-zone).
+If you have questions about DNS on OVHcloud, we have a FAQ page for you that explain [how to configure a DNS zone](https://docs.ovh.com/us/en/domains/web_hosting_how_to_edit_my_dns_zone/).
 
 ### Deploying an application
 

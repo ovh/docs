@@ -187,6 +187,6 @@ Sustituya el `serviceName` por el ID de su servicio y `netappShareId` por el ID 
 
 ## Más información
 
-[Primeros pasos con las API de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN)
+[Primeros pasos con las API de OVHcloud](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -3,7 +3,7 @@ title: PostgreSQL - Tutorial - Build a Strapi app connected to OVHcloud Managed 
 slug: postgresql/tutorial-connect-strapi-to-managed-postgresql
 excerpt: "Find out how to build a Strapi application connected to an OVHcloud Managed PostgreSQL service"
 section: PostgreSQL - Tutorials
-order: 01
+order: 010
 ---
 
 <style>

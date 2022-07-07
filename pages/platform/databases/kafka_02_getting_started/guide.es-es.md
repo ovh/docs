@@ -2,13 +2,13 @@
 title: Kafka - Getting started
 excerpt: Find out how to set up and manage your Public Cloud Databases for Kafka
 slug: kafka/getting-started
-section: Kafka
+section: Kafka - Guides
 order: 2
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/kafka/getting-started/'
 ---
 
-**Last updated 5th<sup>th</sup> of January 2022**
+**Last updated 5<sup>th</sup> January 2022**
 
 ## Objectives
 
@@ -78,7 +78,7 @@ Please note that attaching a private network is a feature not yet available at t
 
 #### Step 6: Review and confirm
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/kafka_configuration.png){.thumbnail}
 

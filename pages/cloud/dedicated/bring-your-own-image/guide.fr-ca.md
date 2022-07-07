@@ -22,7 +22,7 @@ Outre les prérequis et limitations citées plus bas, il faut s'assurer que l'im
 - Posséder un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) pour la partie [« Déploiement via espace client »](#viacontrolpanel) de ce guide.
 - Être connecté aux [API OVHcloud](https://ca.api.ovh.com/){.external} pour la partie [« Déploiement via API »](#viaapi) de ce guide.
-- Avoir généré les [credentials pour utiliser l'APIv6](../../api/api-premiers-pas/) pour la partie [« Déploiement via API »](#viaapi) de ce guide.
+- Avoir généré les [credentials pour utiliser l'APIv6](../../api/first-steps-with-ovh-api/) pour la partie [« Déploiement via API »](#viaapi) de ce guide.
 - La taille de votre image doit être plus petite que le(s) disque(s) installé(s) sur le serveur.
 
 > [!warning]

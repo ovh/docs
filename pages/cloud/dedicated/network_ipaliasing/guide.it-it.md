@@ -32,7 +32,7 @@ L'alias IP (o IP aliasing) è un tipo di configurazione del tuo server dedicato 
 
 Di seguito le procedure di configurazione per le principali distribuzioni.
 
-### Debian 10
+### Debian 10/11
 
 #### Step 1: crea il file sorgente
 

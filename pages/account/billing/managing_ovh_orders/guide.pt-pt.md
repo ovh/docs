@@ -1,96 +1,112 @@
 ---
-title: 'Gerir as encomendas da OVHcloud'
+title: Gerir as encomendas da OVHcloud
 slug: gerir-as-encomendas-ovh
-excerpt: 'Saiba como gerir as suas encomendas da OVHcloud'
-section: 'Gerir as encomendas, faturas e serviços'
+excerpt: Saiba como gerir as suas encomendas da OVHcloud
+section: Gerir as encomendas, faturas e serviços
 ---
 
-**Última atualização: 20/05/2020**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 06/05/2022**
 
 ## Objetivo
 
-Sempre que efetuar uma encomenda, pode segui-la e interagir com ela a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+Quando efetuar uma encomenda, pode segui-la e interagir com ela a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-**Este guia explica-lhe como gerir as suas encomendas.**
+**Saiba como gerir as suas encomendas a partir da Área de Cliente OVHcloud.**
 
 > [!primary]
 >
-> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso tenha alguma dúvida, consulte os contratos OVHcloud disponíveis na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para isso, clique no seu ID de cliente no canto superior direito e selecione `Produtos e serviços`{.action} > `Contratos`{.action}.
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso seja necessário, consulte os contratos da OVHcloud disponíveis na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt): clique no seu nome no canto superior direito e, a seguir, em `Gestão dos serviços`{.action} no menu contextual e no separador `Contratos`{.action}.
 >
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Ter realizado, pelo menos, uma encomenda na OVHcloud.
 
-
-##  Instruções
+## Instruções
 
 ### A nota de encomenda
 
-A nota de encomenda é criada quando efetua uma encomenda. Indica os produtos encomendados, os respetivos preços e os possíveis descontos aplicados.
+A nota de encomenda é criada quando efetua a encomenda. Indica os produtos encomendados, os respetivos preços e os possíveis descontos de que pode beneficiar.
 
 ![Nota de encomenda da OVH](images/order01.png){.thumbnail}
 
 |Número|Descrição|
 |---|---|
-|1|Todas as informações relativas à nota de encomenda são apresentadas aqui: o número, data de criação e data de expiração. Tenha em conta que as notas de encomenda expiradas já não aparecerão na sua Área de Cliente.|
-|2|Se estiver ligado à sua Área de Cliente no momento da encomenda, o contacto de faturação aparecerá nesta área. Para obter mais informações sobre os diferentes contactos, consulte [esta documentação](../../customer/gestao_dos_contactos/){.external}.|
-|3|Caso tenha registado um método de pagamento por predefinição, aparecerá nesta secção. No âmbito de uma renovação automática, é necessário registar um método de pagamento predefinido.|
-|4|Nesta secção, encontrará os métodos de pagamento disponíveis. Apenas serão sugeridos os métodos de pagamento autorizados no país de origem da conta ou os que estão associados ao tipo de conta registada.|
+|1|Número, data de criação e data de expiração da nota de encomenda. Se o prazo expirou, deverá efetuar novamente a encomenda.|
+|2|As suas informações de faturação. Deve estar identificado para apresentar e pagar a sua nota de encomenda.|
+|3|Métodos de pagamento registados na sua conta de cliente. Para mais informações, consulte o guia [Gerir os meus métodos de pagamento](https://docs.ovh.com/pt/billing/gerir-metodos-de-pagamento/).|
+|4|Métodos de pagamento disponíveis. Apenas serão sugeridos os métodos de pagamento autorizados no país de origem da conta ou os relacionados com o tipo de conta registada.|
 
-
-Pode consultar a sua nota de encomenda a qualquer momento através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, conforme explicado abaixo.
-
+Pode consultar a sua nota de encomenda a qualquer momento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), conforme explicado abaixo.
 
 ### Aceder às notas de encomenda na Área de Cliente OVHcloud
 
-Para aceder ao painel de gestão das encomendas, deverá clicar no seu `Paneil de controlo`{.action} no canto superior esquerdo da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, e clicar em `Ver as minhas encomendas`{.action}.
+Para aceder ao painel de gestão dos comandos, aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e, no separador `Painel de controlo`{.action}, clique em `Ver as minhas encomendas`{.action}.
 
 ![Área de Cliente](images/huborders.png){.thumbnail}
 
-De seguida, será redirecionado para uma página que resume as diferentes encomendas válidas que foram efetuadas na conta da OVHcloud.
+Um resumo das diferentes encomendas efetuadas aparece a seguir:
 
 ![Resumo das encomendas](images/order03.png){.thumbnail}
 
 Aqui, encontrará as seguintes informações:
 
-- a data em que a nota de encomenda foi criada;
-- o número da encomenda;
-- o estado de pagamento da encomenda;
-- o montante que inclui as taxas da nota de encomenda.
+- A data em que a nota de encomenda foi criada;
+- Número de encomenda;
+- O estado do comando;
+- O montante que inclui as taxas da nota de encomenda.
 
 Estes são os diferentes estados da encomenda:
 
 |Estado|Explicação|
 |---|---|
-|Sem pagamento|Este estado corresponde a uma nota de encomenda cujo pagamento não foi recebido. Não é obrigatório efetuar o pagamento - a encomenda não será concluída e irá desaparecer na data de expiração.|
-|Validação|A nossa equipa está a realizar uma verificação manual do pedido (apenas em dias úteis). Uma vez finalizada esta verificação, o pedido será validado. Caso não seja possível finalizar a verificação, receberá um e-mail indicando-lhe os documentos comprovativos que deve enviar.|
+|Sem pagamento|Este estado corresponde a uma nota de encomenda que ainda não recebeu qualquer pagamento. Sem pagamento, a encomenda expirará e será anulada na data indicada na nota de encomenda. Passado este prazo, se deseja finalmente realizar esta compra, será apenas necessário efetuar uma nova encomenda.|
+|Validação|A nossa equipa está a realizar uma verificação manual da encomenda (apenas em dias úteis). Uma vez finalizada esta verificação, o pedido será validado. Caso não seja possível finalizar a verificação, receberá um e-mail indicando-lhe os documentos comprovativos que deve enviar.|
 |Entrega em curso|A entrega do serviço está em curso, só precisa de aguardar. Dependendo do tipo de serviço, a entrega poderá demorar alguns minutos ou algumas horas.|
 |Concluída|O serviço já foi entregue e as credenciais foram-lhe enviadas por e-mail (caso seja necessário).|
 
-Se o estado do pedido for “Entrega em curso” ou “Aguardar pagamento”, poderá visualizá-lo clicando nos três pontos (`...`{.action}) que aparecem no final da linha correspondente e selecionando a opção `Ver encomenda em formato HTML`{.action}.
+Poderá igualmente visualizar a nota de encomenda em formato HTML, clicando em `...`{.action} à direita da sua encomenda e depois em `Ver encomenda em formato HTML`{.action}.
 
 ![Resumo das encomendas](images/order04.png){.thumbnail}
 
-### Seguir a sua encomenda.
+### Seguir a sua encomenda
 
-Após criar a sua nota de encomenda, pode seguir a sua encomenda a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Paneil de controlo`{.action}, depois em `Ver as minhas encomendas`{.action} e por fim em `...`{.action} junto à sua encomenda. Selecione `Seguir encomenda`{.action}. O acompanhamento de encomendas pode ser igualmente exibido, clicando no estado de uma encomenda na coluna "Estado".
+Depois de gerar a sua nota de encomenda, pode seguir a sua encomenda a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt):
+
+* Clique no seu `Painel de controlo`{.action}, depois em `Ver as minhas encomendas`{.action} e, por fim, em `...`{.action} antes da sua encomenda.
+* Selecione `Seguir encomenda`{.action}. O acompanhamento da encomenda pode igualmente ser apresentado clicando no estado de uma encomenda na coluna `Estado`.
 
 ![Acompanhamento de encomendas](images/order05b.png){.thumbnail}
 
-A janela seguinte permite um acompanhamento em 4 etapas. 
+Aparecerá a janela seguinte, que lhe permite um acompanhamento em quatro etapas.
 
 ![Acompanhamento de encomendas](images/order06.png){.thumbnail}
 
-
 ### Direito de retratação
 
-O artigo 12.º das nossas [Condições gerais de serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf){.external} estabelece que *os clientes, enquanto consumidores e utilizadores ao abrigo da legislação portuguesa em vigor, poderão exercer o seu direito de retratação durante os primeiros 7 dias a partir da contratação do produto ou serviço correspondente.*
+O artigo 12 das [Condições Gerais de Serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf) especifica que "*A OVH HOSTING confere ao Cliente, um direito de retratação de 7 (sete) dias, a contar da data de fornecimento de serviços, mesmo se a execução da prestação já tiver começado a pedido do Cliente e confere-lhe o direito ao reembolso por qualquer meio de pagamento das quantias já pagas logo que possível, o mais tardar 30 (trinta) dias após a data em que o Cliente exerceu o seu direito de retratação.*".
 
-Para mais informações, consulte as nossas Condições gerais de serviço.
+> [!warning]
+>
+> O direito de retração só diz respeito aos particulares e só se aplica às novas encomendas. Assim, não pode invocá-lo:
+>
+> - renovações;
+> - se a sua conta de cliente OVHcloud é de [outro tipo que não Particer](https://docs.ovh.com/pt/customer/saber_tudo_sobre_o_identificador_de_cliente/#modificar-o-tipo-de-conta).
+>
+> Além disso, o direito de retratação não se aplica às encomendas não pagas, uma vez que estas são automaticamente anuladas quando a nota de encomenda expira.
+>
+> Por último, não se aplica a determinados serviços (nomeadamente os [nomes de domínio](https://www.ovhcloud.com/pt/domains/) e os [certificados SSL Sectigo](https://www.ovhcloud.com/pt/web-hosting/options/ssl/)). Ao encomendar estes produtos, é-lhe pedido que renuncie expressamente ao seu direito de retratação, em conformidade com o artigo L.221-28 do Código do Consumidor.
+>
 
-Se o cliente cumprir os requisitos necessários para exercer o seu direito de retratação, poderá fazê-lo diretamente na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Paneil de controlo`{.action}, depois em `Ver as minhas encomendas`{.action} e por fim em `...`{.action} junto à sua encomenda. Selecione `Anular a encomenda`{.action}.
+Se os critérios de elegibilidade para o direito de retratação estiverem preenchidos, pode ser implementado diretamente a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt):
+
+* Clique no seu `Painel de controlo`{.action}, depois em `Ver as minhas encomendas`{.action} e, por fim, em `...`{.action} antes da sua encomenda.
+* Selecione `Anular a encomenda`{.action}.
 
 ![Anular uma encomenda](images/cancelorder1.png){.thumbnail}
 
@@ -100,9 +116,9 @@ Por último, selecione a opção `Sim, desejo cancelar esta encomenda`{.action} 
 
 > [!primary]
 >
-> A OVHcloud garante o reembolso dos montantes pagos, com dedução proporcional dos dias de serviço consumidos, no prazo de trinta dias após a data em que o Cliente exerceu o seu direito de retratação.
+> Serão reembolsados os montantes inicialmente pagos, após dedução dos dias de serviço consumidos numa base pro rata temporis, no prazo de 30 dias a contar da data do pedido de retratação.
 >
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

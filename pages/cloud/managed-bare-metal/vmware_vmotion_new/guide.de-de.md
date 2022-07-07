@@ -29,9 +29,9 @@ Um eine virtuelle Maschine zu verlagern müssen Sie nur mit der rechten Maustast
 
 ## Wahl des vMotion-Typs
 
-Das Menü schlägt Ihnen verschiedene Optionen für vMotion vor. In unserem Beispiel möchten wir nur die virtuelle Maschine auf einen anderen Host verlagern. Daher wählen wir „Change compute resource only“.
+Das Menü schlägt Ihnen verschiedene Optionen für vMotion vor. In unserem Beispiel möchten wir nur die virtuelle Maschine auf einen anderen Host verlagern. Daher wählen wir “Change compute resource only”.
 
-Mit der Option „Change storage only“ können Sie die virtuelle Maschine in einen anderen Datastore verlegen. Diese Aktion wird **Storage vMotion** genannt und in [dieser Anleitung beschrieben](../vmware-storage-vmotion-neu/).
+Mit der Option “Change storage only” können Sie die virtuelle Maschine in einen anderen Datastore verlegen. Diese Aktion wird **Storage vMotion** genannt und in [dieser Anleitung beschrieben](../vmware-storage-vmotion-neu/).
 
 ![Wahl des vMotion-Typs](images/Vmotion2.png){.thumbnail}
 
@@ -51,7 +51,7 @@ In diesem Schritt können Sie das Netzwerk auswählen, das der virtuellen Maschi
 
 ### Wahl der Priorität
 
-Wir empfehlen Ihnen, die Migration mit hoher Prioritätsstufe durchzuführen. Dazu wählen Sie „Schedule vMotion with high priority“.
+Wir empfehlen Ihnen, die Migration mit hoher Prioritätsstufe durchzuführen. Dazu wählen Sie “Schedule vMotion with high priority”.
 
 ![Wahl der Priorität](images/Vmotion5.png){.thumbnail}
 

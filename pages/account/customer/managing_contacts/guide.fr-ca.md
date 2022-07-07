@@ -28,7 +28,7 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ## Prérequis
 
-- Être connecté à  votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 - Disposer d'un accès à l'adresse e-mail renseignée dans votre profil.
 - Disposer de droits suffisants  sur le service concerné.
 - Posséder l'identifiant client du nouveau contact (pour qui vous réalisez la modification).
@@ -99,7 +99,7 @@ Si l'un des contacts n'a pas reçu l'e-mail, il se peut que l'adresse de contact
 
 Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l'autre contact. Si l'un des contacts vient tout juste de valider une demande,  l'affichage dans [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} se mettra à jour sous quelques minutes.
 
-![Contact management](images/managing_contacts_07.png){.thumbnail}
+![Contact management](images/managing_contacts_007.png){.thumbnail}
 
 Dès que les deux contacts ont validé la demande, le changement sera effectif sous quelques minutes. Les deux contacts recevront un e-mail les informant que la demande a bien été traitée.
 

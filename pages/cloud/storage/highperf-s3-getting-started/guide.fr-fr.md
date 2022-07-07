@@ -1,5 +1,5 @@
 ---
-title: Débuter avec S3 High Performance
+title: Débuter avec S3 Object Storage
 slug: s3/debuter-avec-s3
 excerpt:
 section: Object Storage S3 High Performance
@@ -10,7 +10,7 @@ order: 020
 
 ## Objectif
 
-Ce guide à pour objectif de vous familiariser avec la gestion de vos conteneurs / objets High Performance
+Ce guide à pour objectif de vous familiariser avec la gestion de vos conteneurs / objets.
 
 ## Prérequis
 

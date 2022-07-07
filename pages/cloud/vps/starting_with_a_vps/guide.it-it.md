@@ -31,7 +31,7 @@ Un Virtual Private Server (VPS) è un server dedicato virtualizzato. A differenz
 
 ## Procedura
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nella lista di navigazione a sinistra sotto `Server Privati Virtuali`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 
 La dashboard che ti viene presentata contiene informazioni importanti sul tuo servizio e ti permette di effettuare operazioni essenziali. Comparirà in modo diverso a seconda della gamma del tuo VPS.
 
@@ -200,5 +200,7 @@ Se invece preferisci una soluzione automatica, scegli il servizio [SSL Gateway](
 [Introduzione a SSH](../../dedicated/introduzione-ssh/)
 
 [Proteggere un VPS](../consigli-sicurezza-vps/)
+
+[Configura una nuova installazione di Windows Server](../windows-first-config/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

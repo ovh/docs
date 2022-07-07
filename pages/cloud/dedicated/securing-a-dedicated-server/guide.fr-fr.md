@@ -197,11 +197,11 @@ iptables -L
 Il est alors recommandé de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur la configuration des iptables, reportez-vous à la documentation officielle de votre distribution Linux.
 
 
-### Configurer le Firewall Network d’OVHcloud
+### Configurer le Network Firewall d’OVHcloud
 
-Les serveurs OVHcloud incluent un pare-feu à l’entrée de l’infrastructure appelé Firewall Network. Sa mise en place et sa configuration permettent le blocage des protocoles avant même leur arrivée sur votre serveur.
+Les serveurs OVHcloud incluent un pare-feu à l’entrée de l’infrastructure appelé Network Firewall. Sa mise en place et sa configuration permettent le blocage des protocoles avant même leur arrivée sur votre serveur.
 
-Nous avons également un [guide](../firewall-network/){.external} pour configurer le Firewall Network.
+Nous avons également un [guide](../firewall-network/){.external} pour configurer le Network Firewall.
 
 
 ### Sauvegarder votre système et vos données

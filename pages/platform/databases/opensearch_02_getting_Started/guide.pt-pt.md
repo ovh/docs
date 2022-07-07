@@ -2,13 +2,13 @@
 title: OpenSearch - Getting started
 excerpt: Find out how to set up and manage your Public Cloud Databases for OpenSearch
 slug: opensearch/getting-started
-section: OpenSearch
+section: OpenSearch - Guides
 order: 2
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/getting-started/'
 ---
 
-**Last updated 06<sup>th</sup> of December 2021**
+**Last updated 06<sup>th</sup> December 2021**
 
 ## Objectives
 
@@ -70,7 +70,7 @@ Please note that attaching to a private network is a feature we are currently wo
 
 #### Step 6: Review and confirm
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/creation_opensearch06.png){.thumbnail}
 

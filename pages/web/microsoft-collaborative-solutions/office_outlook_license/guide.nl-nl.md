@@ -28,39 +28,39 @@ U zult dan voor het Exchange adres waarvoor u de Outlook software wilt gebruiken
 
 Klik op het icon en het volgende scherm zal verschijnen:
 
-![](images/img_2558.jpg){.thumbnail}
+![](images/2558.png){.thumbnail}
 
 - Kies de software versie, de duur (maand of jaar) en ga dan verder met de volgende stap.
 
 
 
-![](images/img_2559.jpg){.thumbnail}
+![](images/2559.png){.thumbnail}
 
 - Klik na het overzicht van uw bestelling, op "Betalen" om de bestelbon aan te maken. U wordt doorgestuurd naar een OVH internetpagina, die het resultaat van uw bestelling en de beschikbare betalingsmethoden weergeeft.
 
 
 
-![](images/img_2560.jpg){.thumbnail}
+![](images/2560.png){.thumbnail}
 
 - Het kan maximaal twee uur duren voordat de Outlook downloadlink beschikbaar zal zijn.
 
 
 
-![](images/img_2561.jpg){.thumbnail}
+![](images/2561.png){.thumbnail}
 
 
 ## In het geval van een Private Exchange platform
 Ga naaar uw [control panel](https://www.ovh.com/manager/web/login/), klik op uw Exchange platform en dan op "E-mailaccounts".
 Klik op het  icon voor het betreffende Exchange adres.
 
-![](images/img_2562.jpg){.thumbnail}
+![](images/2562.png){.thumbnail}
 
 - Vink het vakje "Outlook Licentie" aan.
 
 Ga naar de volgende stap om de bestelling van de Outlook licentie te valideren. Er wordt geen bestelling gegenereerd, de facturatie (2 euro excl. btw per maand) wordt toegevoegd aan de maandelijkse verlenging van uw Private Exchange platform.
 
 
-![](images/img_2563.jpg){.thumbnail}
+![](images/2563.png){.thumbnail}
 
 
 ## Algemene informatie
@@ -68,7 +68,7 @@ Ga naar uw Web control panel, klik op uw Exchange platform, tabje "E-mailaccount
 
 U ziet in de "Outlook" kolom de knop "Ja". Klik hierop, zodat u de Outlook software versie en de taal kunt kiezen.
 
-![](images/img_2567.jpg){.thumbnail}
+![](images/2567.png){.thumbnail}
 
 - U weet niet welke Windows of MAC versie u heeft? Hier zijn de officiële Microsoft en Apple handleidingen:
 
@@ -77,18 +77,18 @@ U ziet in de "Outlook" kolom de knop "Ja". Klik hierop, zodat u de Outlook softw
 
 
 
-![](images/img_2564.jpg){.thumbnail}
+![](images/2564.png){.thumbnail}
 
 - Het genereren van de download URL.
 
 
 
-![](images/img_2565.jpg){.thumbnail}
+![](images/2565.png){.thumbnail}
 Klik vervolgens op de URL om het programma te downloaden. Vergeet niet om de beveiligingscode of het serienummer te noteren. Hier zal om gevraagd worden gedurende de software installatie.
 
 -Er is geen beveiligingscode/serienummer vereist voor de installatie van Outlook 2011 op de MAC.
 
-![](images/img_2566.jpg){.thumbnail}
+![](images/2566.png){.thumbnail}
 
 
 ## Algemene informatie

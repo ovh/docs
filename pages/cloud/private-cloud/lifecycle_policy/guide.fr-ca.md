@@ -6,7 +6,7 @@ section: FAQ
 order: 3
 ---
 
-**Dernière mise à jour le 11/02/2022**
+**Dernière mise à jour le 30/05/2022**
 
 > [!warning]
 >
@@ -100,7 +100,7 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 | DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 31/07/2022 |
 | DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 31/07/2022 |
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2023 | 31/08/2023 |
-| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2023 | 31/08/2023 |
+| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | 31/08/2024 |
 
 ### Datastores (stockage)
 

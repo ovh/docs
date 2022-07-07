@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja rekordu SPF w strefie DNS nazwy domeny
 slug: uslugi_www_pole_spf
-excerpt: Zobacz, jak dodać rekord SPF w strefie DNS nazwy domeny na serwerze OVH
+excerpt: Zobacz, jak dodać rekord SPF w strefie DNS nazwy domeny na serwerze OVHcloud
 section: Konfiguracja zaawansowana
 ---
 
@@ -74,7 +74,7 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex mail.biz a:gw2.ex-mail.b
 
 ### Sprawdź aktualną konfigurację SPF
 
-Jeśli Twoja domena używa konfiguracji OVHcloud, możesz sprawdzić, czy rekord SPF jest już skonfigurowany dla tej domeny. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Domeny`{.action} po lewej stronie wybierz odpowiednią domenę. Kliknij zakładkę `Strefa DNS`{.action}.
+Jeśli Twoja domena używa konfiguracji OVHcloud, możesz sprawdzić, czy rekord SPF jest już skonfigurowany dla tej domeny. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Domeny`{.action} wybierz odpowiednią domenę. Kliknij zakładkę `Strefa DNS`{.action}.
 
 Pojawi się tabela. Strona pokaże strefę DNS Twojej domeny w OVHcloud. Składają się one z kilku rekordów, które są symbolizowane przez wiersz w tabeli.
 
@@ -100,7 +100,7 @@ W tabeli, aby odnaleźć wiersz odpowiadający SPF OVHcloud, można użyć filtr
 
 ### Konfiguracja rekordu SPF
 
-Aby dodać rekord SPF w konfiguracji OVHcloud Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług po lewej stronie kliknij `Domeny`{.action}, następnie wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}.
+Aby dodać rekord SPF w konfiguracji OVHcloud Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij `Domeny`{.action}, następnie wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}.
 
 Aby dodać rekord SPF, kliknij przycisk `Dodaj rekord`{.action}.
 
@@ -138,7 +138,7 @@ W kwestii: "**Czy inne serwery wysyłają emaile z Twoją domeną?**", możesz d
 
 |Szczegóły|Opis|
 |---|---|
-|a|Wpisz tutaj nazwy domen. Uprawni to serwery hostujące strony WWW OVH do wysyłania e-maili z Twoich adresów.|
+|a|Wpisz tutaj nazwy domen. Uprawni to serwery hostujące strony WWW OVHcloud do wysyłania e-maili z Twoich adresów.|
 |mx|Wpisz tutaj serwery, które odbierają Twoje e-maile (serwery MX), jeśli mogą one również wysyłać e-maile. W ten sposób zostaną one zidentyfikowane jako legalne źródło wysyłki.|
 |rt|Wpisz tutaj hosty, których rewers *jest aktywny* (dzięki rekordowi PTR w strefie DNS). W ten sposób zostaną one zidentyfikowane jako legalne źródło wysyłki.|
 |ip4|Wskaż adresy IP lub zakresy adresów IP (IPv4), które mogą wysyłać e-maile z Twoimi adresami.|
@@ -188,7 +188,7 @@ Aby zakończyć operację, kliknij `Dalej`{.action}. Upewnij się, że wyświetl
 
 ### Zmień rekord SPF
 
-Aby zmienić SPF w konfiguracji OVHCloud Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług po lewej stronie, w sekcji `Domeny`{.action}, kliknij wybraną domenę, następnie przejdź do zakładki `Strefa DNS`{.action}.
+Aby zmienić SPF w konfiguracji OVHCloud Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług, w sekcji `Domeny`{.action}, kliknij wybraną domenę, następnie przejdź do zakładki `Strefa DNS`{.action}.
 
 W tabeli wyświetla się konfiguracja OVHCloud Twojej domeny. Każdy wiersz odpowiada jednemu rekordowi DNS. Znajdź rekord TXT lub SPF w tej tabeli i kliknij przycisk `...`{.action}, aby edytować rekord.
 

@@ -4,7 +4,7 @@ slug: firewall-network
 section: 'Network management'
 ---
 
-**Last updated 23rd December 2021**
+**Last updated 31st May 2022**
 
 ## Objective
 
@@ -23,9 +23,13 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 ## Requirements
 
-- An OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovh.co.uk/dedicated_servers){.external}, [VPS](https://www.ovh.co.uk/vps/){.external}, [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external},  [Failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external}, etc.)
+- An OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovh.co.uk/dedicated_servers){.external}, [VPS](https://www.ovh.co.uk/vps/){.external}, [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}, [Hosted Private Cloud](https://www.ovh.co.uk/private-cloud/){.external}, [Failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external}, etc.)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
 
 ## Instructions
 
@@ -38,7 +42,7 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Create Firewall`{.action}.
 
-![Enabling the Firewall Network](images/firewall_creation2022.png){.thumbnail}
+![Enabling the Network Firewall](images/firewall_creation2022.png){.thumbnail}
 
 You will then be asked to confirm.
 
@@ -67,11 +71,17 @@ You can set up to **20 rules per IP**.
 
 ### Configure the Network Firewall
 
+> [!warning]
+> Please note that the OVHcloud Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
+> For more information, please refer to the following guides: [Configure the firewall on Windows](https://docs.ovh.com/gb/en/dedicated/firewall-windows/) and [Configuring the firewall on Linux with iptables](https://docs.ovh.com/gb/en/dedicated/firewall-iptables/).
+>
+
 To add a rule, click on `Add a rule`{.action}:
 
 ![Add a rule](images/ajoutregle1.png){.thumbnail}
 
 For each rule you must choose:
+
 - a priority (from 0 to 19, 0 being the first rule to be applied, followed by the others)
 - an action (`Authorise`{.action} or `Refuse`{.action})
 - the protocol
@@ -100,9 +110,28 @@ The rules are sorted from 0 (the first rule read) to 19 (the last). The chain st
 For example, a packet for TCP port 80 will be captured by rule 2, and the rules that come after will not be applied. A packet for TCP port 25 will only be captured at the last rule (19) which will block it, because the Firewall does not authorise communication on port 25 in the previous rules.
 
 > [!warning]
->
-> If our anti-DDoS solution is mitigating an attack, your Network Firewall will be enabled, even if you have disabled it by default. If you wish to disable it, remember to delete your rules.
+> As stated, the configuration above is just an example and should only be used as reference if the rules do not apply to services hosted on your server. It is absolutely necessary to configure the rules in your firewall according to the services hosted on your server. Improper configuration of your firewall rules can cause legitimate traffic to be blocked and server services to be inaccessible. 
 > 
+
+### Mitigation
+
+There are three mitigation modes: automatic, permanent or forced.
+
+**Automatic mitigation**: With this mode, the traffic goes through the mitigation system only if it is detected as "unusual" compared to the normal traffic usually received by the server. 
+
+**Permanent mitigation**: By activating permanent mitigation, you apply a constant first level of filtering through our Shield hardware.<br>
+All traffic at all times gets through the mitigation system before reaching the server. We recommend this mode for services under frequent attacks.<br>
+Please note that the Network firewall must not be created/enabled to activate permanent mitigation on your IP.
+
+To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
+
+**Forced mitigation**: This mode is automatically activated once an attack is detected on the server. Once enabled, this mode cannot be disabled. In order to protect our infrastructure, it will be activated throughout the attack until it is completely mitigated.
+
+> [!warning]
+>
+> If anti-DDoS mitigation is enabled, your Network Firewall rules will be applied, even if you have disabled them. If you wish to disable it, remember to delete your rules.
+> 
+> Please note that the anti-DDoS mitigation cannot be disabled.
 
 ### Configuring Armor
 

@@ -15,9 +15,14 @@ The [vRack](https://www.ovh.com/world/solutions/vrack/){.external} is a private 
 
 ## Requirements:
 
-- a [vRack](https://www.ovh.com/world/solutions/vrack/){.external}
-- a [configured block of IP addresses in the vRack](../ip-block-vrack/)
-- basic network knowledge
+- A [vRack](https://www.ovh.com/world/solutions/vrack/){.external}
+- A [configured block of IP addresses in the vRack](../ip-block-vrack/)
+- Basic network knowledge
+
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
 
 ## Instructions
 

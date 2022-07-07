@@ -2,7 +2,7 @@
 title: Cloud Web
 slug: cloud-web
 sections: Per iniziare
-order: 09
+order: 10
 ---
 
 > [!product-section]
@@ -10,9 +10,9 @@ order: 09
 > ### Siti Web e progetti
 >
 > - [Mettere online un sito Internet su un hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/)
-> - [Migrare un sito e un servizio di posta in OVH](https://docs.ovh.com/it/hosting/migrare-un-sito-in-ovh/)
+> - [Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/it/hosting/migrare-un-sito-in-ovh/)
 > - [Ospitare più siti su uno stesso hosting (in inglese)](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/)
-> - [Installare i moduli in 1 click OVH](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/)
+> - [Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/)
 >
 > ### Email automatiche
 >

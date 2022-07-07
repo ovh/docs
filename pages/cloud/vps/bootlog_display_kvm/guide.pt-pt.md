@@ -80,7 +80,7 @@ sdb       8:16   0   50G  0 disk
 
 O exemplo acima mostra que a partição do sistema está montada em **/mnt/sdb1**. (O disco principal é **sdb**. O disco rescue é **sda** e **sda1** é a partição principal em rescue montada sobre **/**).
 
-Se o seu VPS pertencer às [**gamas VPS atuais**](https://www.ovhcloud.com/pt/vps/), não será efetuada nenhuma montagem automática e a coluna "MOUNTPOINT\`" deverá estar vazia. Nesse caso, passe [ao passo 4](#step4).
+Se o seu VPS pertencer às [**gamas VPS atuais**](https://www.ovhcloud.com/pt/vps/), não será efetuada nenhuma montagem automática e a coluna "MOUNTPOINT" deverá estar vazia. Nesse caso, passe [ao passo 4](#step4).
 
 ### Etapa 3: desmontar a partição (apenas para as antigas gamas VPS)
 
@@ -114,7 +114,7 @@ A partição do sistema foi montada para ser utilizada com o comando `chroot`, d
 Agora tem de aceder aos ficheiros GRUB do seu sistema e alterá-los. Para isso, utilize o comando `chroot`:
 
 ```sh
-~$ xroot /mnt/sdb1
+~$ chroot /mnt/sdb1
 ```
 
 A partir de agora, todos os comandos que introduzir serão aplicados no seu VPS em vez do ambiente temporário do modo rescue.

@@ -1,7 +1,7 @@
 ---
 title: Domains and  DNS
 slug: domains
-except: All you need to know about domains
-sections: General, Security, Transfer, DNS and DNS zone
+excerpt: All you need to know about domains
+sections: General, Trade, Transfer, Domains API, DNS and DNS Zone, Security
 order: 01
 ---

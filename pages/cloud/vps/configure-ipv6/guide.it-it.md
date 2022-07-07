@@ -56,7 +56,7 @@ Per prima cosa, è necessario avere a disposizione l’indirizzo IPV6 e il gatew
 
 #### Dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, vai alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server in `Server Privati Virtuali`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 
 Nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](#applyipv6).
 
@@ -84,7 +84,7 @@ Dopo aver recuperato gli indirizzi, continua allo Step 2: [Applica la configuraz
 
 ### Step 2: applicare la configurazione IPv6 <a name="applyipv6"></a>
 
-Una volta che disponi dei dati necessari per la configurazione dell’IPv6, accedi al VPS in SSH. Se hai bisogno di aiuto per questa operazione, consulta la guida [Introduzione a SSH](../../dedicated/introduzione-ssh/){.external}
+Una volta che disponi dei dati necessari per la configurazione dell’IPv6, accedi al VPS in SSH. Se hai bisogno di aiuto per questa operazione, consulta la guida [Introduzione a SSH](../../dedicated/introduzione-ssh/){.external}.
 
 La configurazione IPv6 può essere applicata in diversi modi. Prosegui nella lettura di questa guida in base alle tue esigenze:
 

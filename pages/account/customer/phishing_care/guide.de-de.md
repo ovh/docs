@@ -36,8 +36,8 @@ Sie haben eine angebliche E-Mail von OVHcloud erhalten und möchten überprüfen
 
 |Nummer - Beschreibung|E-Mail von OVHcloud|Phishing-Mail|
 |---|---|---|
-|1 - Absender|Überprüfen Sie, ob die Absenderadresse auf „@ovhcloud.com“, „@ovh.com“ „@ovh.de“, „@soyoustart.com“ oder „@kimsufi.com“ endet.|Der Absender der E-Mail ist keine OVHcloud Adresse.|
-|2 - Betreff|Überprüfen Sie, ob Ihre Kundenkennung **(beginnend mit dem jeweils ersten Buchstaben Ihres bei OVHcloud registrierten Namens und Vornamens)** und/oder die E-Mail-Adresse Ihres Accounts in der Betreffzeile stehen.|In den meisten Fällen ist die E-Mail in eckigen Klammern als „Spam“ gekennzeichnet und Ihre Kontaktdaten erscheinen nicht ODER sind falsch.|
+|1 - Absender|Überprüfen Sie, ob die Absenderadresse auf “@ovhcloud.com”, “@ovh.com” “@ovh.de”, “@soyoustart.com” oder “@kimsufi.com” endet.|Der Absender der E-Mail ist keine OVHcloud Adresse.|
+|2 - Betreff|Überprüfen Sie, ob Ihre Kundenkennung **(beginnend mit dem jeweils ersten Buchstaben Ihres bei OVHcloud registrierten Namens und Vornamens)** und/oder die E-Mail-Adresse Ihres Accounts in der Betreffzeile stehen.|In den meisten Fällen ist die E-Mail in eckigen Klammern als “Spam” gekennzeichnet und Ihre Kontaktdaten erscheinen nicht ODER sind falsch.|
 |3 - Link|Gehen Sie mit Ihrer Maus über den Link. Sie sehen den Inhalt dann direkt (unten in Ihrem Browserfenster), ohne auf den Link zu klicken. In unserem Beispiel verweist der Link auf https://www.ovh.com/.|In der Beispielabbildung sehen Sie, dass der Link nichts mit OVHcloud zu tun hat. Klicken Sie nicht auf einen solchen Link.|
 
 

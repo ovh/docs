@@ -406,4 +406,4 @@ Um die automatische Netzwerkverwaltung mit Cloud-init wieder zu aktivieren, lös
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

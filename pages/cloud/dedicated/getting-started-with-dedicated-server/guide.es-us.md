@@ -26,6 +26,10 @@ Un servidor dedicado es un servidor físico situado en uno de nuestros datacente
 - Estar conectado al servidor por SSH (acceso root) en Linux o a través de un escritorio remoto en Windows.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
+> [!primary]
+>
+> Si su servidor pertenece a la línea de productos **Eco**, acceda a [esta guía](../getting-started-dedicated-server-eco/).
+
 ## Procedimiento
 
 Cuando su servidor dedicado esté configurado por primera vez durante el proceso de pedido, puede seleccionar el sistema operativo que desea instalar.

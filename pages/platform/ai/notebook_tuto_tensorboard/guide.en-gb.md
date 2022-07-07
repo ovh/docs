@@ -6,7 +6,7 @@ section: AI Notebooks tutorials
 order: 03
 ---
 
-**Last updated 9th of September, 2021.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
@@ -42,21 +42,9 @@ ovhai notebook run tensorflow jupyterlab \
 
 You can then reach your notebook's URL once the notebook is running.
 
-### Clone the GitHub repository
-
-The GitHub repository containing all examples for OVHcloud AI NOTEBOOKS is available [here](https://github.com/ovh/ai-training-examples).
-
-Inside your notebook, open a new Terminal tab by clicking `File` > `New` > `Terminal`.
-
-![image](images/new-terminal.png){.thumbnail}
-
-Run the following command in the notebook's terminal to clone the repository:
-
-``` {.bash}
-git clone https://github.com/ovh/ai-training-examples.git
-```
-
 ### Experiment with example notebook
+
+All source code for this tutorial can be found [here](https://github.com/ovh/ai-training-examples).
 
 The example notebook is based on the Fashion MNIST dataset.
 
@@ -64,11 +52,11 @@ The example notebook is based on the Fashion MNIST dataset.
 
 Then access the example notebook via the following path:
 
-`ai-training-examples` > `notebooks` > `tensorflow` > `tuto` > `notebook_tutorial_tensorboard.ipynb`
+`ai-training-examples` > `notebooks` > `computer-vision` > `image-classification` > `tensorflow` > `tensorboard` > `notebook_tutorial_tensorboard.ipynb`
 
 The aim of this tutorial is to show how it is possible, thanks to TensorBoard, to see the dynamic display of different metrics.
 
-A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook_tutorial_tensorboard.ipynb).
+A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/tensorboard/notebook_tutorial_tensorboard.ipynb).
 
 ### How to use TensorBoard with AI training ?
 

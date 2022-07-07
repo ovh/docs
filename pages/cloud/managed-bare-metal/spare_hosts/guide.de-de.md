@@ -27,7 +27,7 @@ Wenn einer Ihrer Hosts ausfällt, liefern wir Ihnen automatisch und kostenfrei e
 
 Sofort nach Lieferung dieses Hosts erhalten Sie eine E-Mail mit allen Informationen zu diesem Host. Sie erhalten auch seine IP-Adresse, mit der Sie ihn leicht in Ihrem vSphere Interface finden können.
 
-Standardmäßig ist der Dienst HA ([High Availability](../vmware-ha-high-availability/)) von VMware für Ihren Cluster aktiviert. Wenn Sie Ihn aktiviert lassen, werden Ihre virtuellen Maschinen automatisch neu gestartet. Ist der Dienst DRS (Distributed Ressources Scheduler) aktiviert und im Modus „fully automated“, so findet die Lastverteilung zwischen den Hosts Ihres Clusters ebenfalls automatisch statt.
+Standardmäßig ist der Dienst HA ([High Availability](../vmware-ha-high-availability/)) von VMware für Ihren Cluster aktiviert. Wenn Sie Ihn aktiviert lassen, werden Ihre virtuellen Maschinen automatisch neu gestartet. Ist der Dienst DRS (Distributed Ressources Scheduler) aktiviert und im Modus “fully automated”, so findet die Lastverteilung zwischen den Hosts Ihres Clusters ebenfalls automatisch statt.
 
 > [!warning]
 > 

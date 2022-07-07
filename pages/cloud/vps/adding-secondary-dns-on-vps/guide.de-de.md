@@ -34,7 +34,7 @@ Wenn Sie Ihren VPS als DNS-Server konfigurieren, können Sie einen OVHcloud DNS-
 
 ### Schritt 1: Abruf des Validierungscodes <a name="retrievecode"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server im linken Menü unter **Virtual Private Server** aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter **Virtual Private Server** aus.
 
 Gehen Sie zum Tab `Sekundärer DNS`{.action} und klicken Sie auf den Button `Domain hinzufügen`{.action}.
 
@@ -84,4 +84,4 @@ Sie können einen Domainnamen löschen, indem Sie auf den Button `...`{.action} 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

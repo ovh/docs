@@ -6,7 +6,11 @@ section: 'Configuração do alojamento'
 hidden: true
 ---
 
-**Última atualização: 23/01/2020**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 04/05/2022**
 
 ## Sumário
 
@@ -55,7 +59,7 @@ Para adicionar ou alterar um motor de execução, aceda ao separador `Motores de
 - **se pretender adicionar um motor**: clique em `Ações`{.action} na parte superior da tabela e em `Adicionar um motor de execução`{.action};
 - **se pretender alterar um motor**: clique no botão `...`{.action} à direita do motor em questão e, a seguir, em `Alterar`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step2.png){.thumbnail}
+
 
 Na nova janela que aparecerá, preencha as informações necessárias e prossiga em função do motor de execução selecionado:
 
@@ -73,7 +77,7 @@ Na nova janela que aparecerá, preencha as informações necessárias e prossiga
 
 Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site_2){.external}.
 
-![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
+
 
 ##### **Node.js**
 

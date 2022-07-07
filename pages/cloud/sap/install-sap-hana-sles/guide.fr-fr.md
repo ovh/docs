@@ -29,7 +29,7 @@ Vous devez avoir :
 - installé toutes les dernières sources et tous les paquets nécessaires;
 - appliqué tous les processus de fine-tuning requis par SAP.
 
-Reportez-vous à la documentation sur [comment préparer un système SLES OVHcloud pour SAP HANA](../prepare-sles-for-sap-hana).
+Reportez-vous à la documentation sur [comment préparer un système SLES OVHcloud pour SAP HANA](../sap-preparation-sles-pour-sap-hana/).
 
 ## En pratique
 
@@ -270,6 +270,6 @@ DATABASE_NAME,DESCRIPTION,ACTIVE_STATUS,ACTIVE_STATUS_DETAILS,OS_USER,OS_GROUP,R
 
 ## Aller plus loin
 
-Documentation générale sur [comment mettre à jour SAP HANA sur un système SLES OVHcloud](../sap-mise-a-jour-sap-hana).
+Documentation générale sur [comment mettre à jour SAP HANA sur un système SLES OVHcloud](../sap-mise-a-jour-sap-hana/).
 
-Documentation générale sur [comment sauvegarder SAP HANA sur un système SLES OVHcloud](../backup-sap-hana).
+Documentation générale sur [comment sauvegarder SAP HANA sur un système SLES OVHcloud](../backup-sap-hana/).

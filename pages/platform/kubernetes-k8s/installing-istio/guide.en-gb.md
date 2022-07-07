@@ -6,7 +6,7 @@ section: Traffic management
 order: 02
 ---
 
-**Last updated 21 September, 2021.**
+**Last updated 30 May, 2022.**
 
 <style>
  pre {
@@ -37,7 +37,7 @@ order: 02
 - Apply and enforce policies on distributes services
 - Monitor the services gathering metrics, logs and traces
 
-In this tutorial we are going to install Istio on a freshly created OVHcloud Managed Kubernetes Service cluster. You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb){.external} to reinitialize your cluster before following this tutorial.
+In this tutorial we are going to install Istio on a freshly created OVHcloud Managed Kubernetes Service cluster. You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb){.external} to reinitialize your cluster before following this tutorial.
 
 
 ## Before you begin
@@ -257,9 +257,10 @@ As you can see, each pod has 2 containers, the app container and the Istio sidec
 
 Verify everything is working correctly up to this point. Run this command to see if the app is running inside the cluster and serving HTML pages by checking for the page title in the response:
 
-<pre class="console"><code>$ kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}')" -c ratings -- curl -sS productpage:9080/productpage | grep -o "<title>.*</title>"
+```bash
+$ kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}')" -c ratings -- curl -sS productpage:9080/productpage | grep -o "<title>.*</title>"
 <title>Simple Bookstore App</title>
-<pre class="console"><code>
+```
 
 ### Open the application to outside traffic
 

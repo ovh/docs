@@ -1,7 +1,7 @@
 ---
-title: 'Reindirizzare un dominio gestito da OVH'
+title: 'Reindirizzare un dominio gestito da OVHcloud'
 slug: reindirizzamento-dominio
-excerpt: 'I diversi tipi di redirect e come creare un reindirizzamento per un dominio gestito da OVH'
+excerpt: 'I diversi tipi di redirect e come creare un reindirizzamento per un dominio gestito da OVHcloud'
 section: Generale
 order: 1
 ---
@@ -13,11 +13,11 @@ order: 1
 
 Il redirect è una funzione che permette di reindirizzare un dominio verso una nuova destinazione. Ne esistono di diversi tipi e ognuno risponde a esigenze specifiche.
 
-**Questa guida ti mostra i reindirizzamenti esistenti e come crearne uno per un dominio gestito da OVH.**
+**Questa guida ti mostra i reindirizzamenti esistenti e come crearne uno per un dominio gestito da OVHcloud.**
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Essere connesso all’hosting Web (per aggiungere un [file .htaccess](https://docs.ovh.com/it/hosting/hosting_condiviso_tutto_sul_file_htaccess/){.external})
 
 ## Procedura
@@ -28,21 +28,20 @@ Prima di creare un reindirizzamento, è importante capirne l’utilità.  Questa
 
 Questa operazione può essere effettuata in vari modi:
 
-- **dallo Spazio Cliente OVH**: un’assistente di configurazione ti guiderà alla configurazione del redirect
+- **dallo Spazio Cliente OVHcloud**: un’assistente di configurazione ti guiderà alla configurazione del redirect
 
 - **tramite file (sono necessarie conoscenze di programmazione)**: puoi creare tu stesso il reindirizzamento in un file (in genere, *.htaccess*)
 
 Ricordati che utilizzare un reindirizzamento può avere impatto anche sull’indicizzazione Web del tuo sito: presta particolare attenzione alle operazioni eseguite e, se necessario, contatta un esperto SEO.
 
-### Reindirizza un dominio dallo Spazio Cliente OVH
+### Reindirizza un dominio dallo Spazio Cliente OVHcloud
 
-Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo dominio nella sezione `Domini`{.action} nella colonna a sinistra (1) e clicca sulla scheda `Reindirizzamento`{.action} (2).
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo dominio nella sezione `Domini`{.action} nella colonna a sinistra e clicca sulla scheda `Reindirizzamento`{.action}.
 
 Visualizzerai una tabella con i reindirizzamenti attivi per il tuo dominio.
 
-Per aggiungere un redirect, clicca sul pulsante `Aggiungi un reindirizzamento`{.action} (3).
+Per aggiungere un redirect, clicca sul pulsante `Aggiungi un reindirizzamento`{.action}.
 
-![Pagina principale dei reindirizzamenti](images/create_redirection_global.png){.thumbnail}
 
 Si aprirà una finestra in cui dovrai inserire il dominio (o sottodominio) da reindirizzare e che costituirà la sorgente del redirect.
 
@@ -54,12 +53,12 @@ A questo punto, scegli la destinazione verso cui reindirizzare il dominio indica
 
 Reindirizza un dominio verso un altro dominio. È la soluzione ideale in caso di modifica del dominio di un sito Internet.
 
-- **redirect verso un server OVH o esterno**
+- **redirect verso un server OVHcloud o esterno**
 
 Modifica la configurazione DNS di un dominio sostituendo la destinazione (record A, AAAA o CNAME). È la soluzione ideale quando il sito Web non è più ospitato nella stessa cartella ma il dominio resta lo stesso.
-Se il tuo dominio utilizza la configurazione OVH, è possibile effettuare questa operazione direttamente dallo Spazio Cliente (consulta la guida [Modificare una zona DNS OVH](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}).
+Se il tuo dominio utilizza la configurazione OVHcloud, è possibile effettuare questa operazione direttamente dallo Spazio Cliente (consulta la guida [Modificare una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}).
 
-Questa guida spiega esclusivamente come configurare il reindirizzamento **verso un altro indirizzo Web**. Se invece vuoi impostare un redirect verso un server OVH o esterno, contatta il tuo provider per conoscere quali record DNS modificare prima di continuare la procedura.
+Questa guida spiega esclusivamente come configurare il reindirizzamento **verso un altro indirizzo Web**. Se invece vuoi impostare un redirect verso un server OVHcloud o esterno, contatta il tuo provider per conoscere quali record DNS modificare prima di continuare la procedura.
 
 ![Step 2 per aggiungere un reindirizzamento](images/adding_redirection_2.png){.thumbnail}
 

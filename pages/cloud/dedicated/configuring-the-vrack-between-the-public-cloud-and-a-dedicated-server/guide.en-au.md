@@ -22,6 +22,10 @@ The OVHcloud [vRack](https://www.ovh.com.au/solutions/vrack/) allows you to conf
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - A private IP address range of your choice
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-au/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-au/compare/) for more information.
 
 ## Instructions
 

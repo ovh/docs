@@ -22,6 +22,11 @@ Bitte beachten Sie, dass in der Anleitung auch der Begriff KVM (Keyboard Video a
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+
 ## In der praktischen Anwendung
 
 Die Verbindung zur IPMI kann über mehrere Methoden hergestellt werden: Java-Applet (empfohlen, jedoch nur für neuere Server verfügbar) oder Browser (Serial over LAN).

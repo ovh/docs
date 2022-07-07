@@ -35,7 +35,7 @@ OVHcloud propose avec sa solution [Insight](https://docs.ovh.com/fr/metrics/metr
 
 1\. Rendez-vous sur la console APIv6 à cette adresse : [https://api.ovh.com/console/](https://api.ovh.com/console/){.external}
 
-2\. Authentifiez-vous avec vos identifiants OVHcloud. Retrouvez plus d'informations sur l'utilisation des API sur le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/).
+2\. Authentifiez-vous avec vos identifiants OVHcloud. Retrouvez plus d'informations sur l'utilisation des API sur le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/).
 
 3\. Executez la méthode suivante pour récupérer votre jeton de lecture :
 

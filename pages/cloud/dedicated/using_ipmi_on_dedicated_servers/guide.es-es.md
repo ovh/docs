@@ -22,6 +22,11 @@ En otros documentos puede encontrar el término KVM, del inglés keyboard, video
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
+> [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
+
 ## Procedimiento
 
 Existen diversos métodos para conectarse al IPMI: el applet Java (recomendado) o el navegador (Serial over LAN).

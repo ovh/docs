@@ -44,7 +44,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-Wie in der [Anleitung zu Horizon](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/) erklärt, ist das Passwort ist nur eimalig während der Erstellung sichtbar.
+Wie in [dieser Anleitung](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/) erklärt, ist das Passwort ist nur eimalig während der Erstellung sichtbar.
 
 Wenn Sie das Passwort nicht zur Verfügung haben, muss es neu erstellt werden.
 

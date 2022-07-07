@@ -30,7 +30,7 @@ Per recuperare le tue credenziali SQL, consulta questa guida:[]({legacy}1909)
 
 
 
-![](images/img_3234.jpg){.thumbnail}
+![drupal](images/3234.png){.thumbnail}
 In genere, il link disponibile ti permette di scaricare l'ultima versione stabile del CMS.
 Nel nostro esempio, la versione utilizzata è la 7.41.
 Il file scaricato generalmente è compresso (.zip). Per aprirlo e installarlo è necessario decomprimerlo.
@@ -49,7 +49,7 @@ Se hai bisogno di aiuto, segui i numerosi tutorial online e scarica uno dei tant
 
 La cartella di destinazione si chiamerà Drupal-xxx (xxx spesso è sostituito dal numero della versione).
 
-![](images/img_3233.jpg){.thumbnail}
+![drupal](images/3233.png){.thumbnail}
 
 - Accedi al tuo hosting Web via FTP
 
@@ -80,7 +80,7 @@ Selezionali tutti premendo i tasti CTRL+A.
 
 Trascina i tuoi file nella cartella "www" della sezione Sito remoto.
 
-![](images/img_3199.jpg){.thumbnail}
+![drupal](images/3199.png){.thumbnail}
 È molto probabile che la cartella "www" non sia vuota. Non è obbligatorio eliminare i file presenti al suo interno.
 
 ## Step 3
@@ -88,7 +88,7 @@ Attendi qualche minuto fino al completo trasferimento dei file sul server FTP re
 
 Al termine dell'operazione, assicurati che tutti i file e le cartelle siano state spostate correttamente.
 
-![](images/img_3200.jpg){.thumbnail}
+![drupal](images/3200.png){.thumbnail}
 
 
 ## Step 1 - Installa Drupal
@@ -98,13 +98,13 @@ Si apre questa pagina:
 Seleziona Standard
 Install with commonly used features pre-configured. e clicca su Save and continue.
 
-![](images/img_3219.jpg){.thumbnail}
+![drupal](images/3219.png){.thumbnail}
 
 
 ## Step 2 - Scegli una lingua
 La lingua di installazione predefinita è l'inglese. Per modificarla, clicca su Learn how to install Drupal in other languages, scegli il pacchetto della tua lingua e ricarica la pagina. A questo punto, seleziona "Italian (italiano)" e clicca su Save and continue.
 
-![](images/img_3218.jpg){.thumbnail}
+![drupal](images/3218.png){.thumbnail}
 
 
 ## Step 3 - Imposta il database
@@ -125,7 +125,7 @@ Seleziona MySQL, MariaDB o equivalente.
 
 
 
-![](images/img_3202.jpg){.thumbnail}
+![drupal](images/3202.png){.thumbnail}
 
 - Host database: il nome del server del tuo database, indicato nell'email di installazione o nel tuo Spazio Cliente OVH. Generalmente finisce per .mysql.db.
 
@@ -135,7 +135,7 @@ Seleziona MySQL, MariaDB o equivalente.
 
 
 
-![](images/img_3203.jpg){.thumbnail}
+![drupal](images/3203.png){.thumbnail}
 Importante: le credenziali del database non vengono inviate automaticamente durante l'installazione dell'hosting. Per riceverle, attiva il database nel tuo Spazio Cliente OVH.
 Clicca su Salva e continua per confermare le informazioni di accesso al tuo database.
 
@@ -149,7 +149,7 @@ Altrimenti, ripeti l'operazione.
 
 
 
-![](images/img_3190.jpg){.thumbnail}
+![drupal](images/3190.png){.thumbnail}
 
 
 ## Step 5 - Configura sito
@@ -169,7 +169,7 @@ Inserisci le informazioni del tuo CMS Drupal.
 
 
 
-![](images/img_3206.jpg){.thumbnail}
+![drupal](images/3206.png){.thumbnail}
 
 - Paese predefinito: scegli il Paese e la lingua del tuo sito.
 - Fuso orario predefinito: inserisci il fuso orario del tuo sito.
@@ -180,17 +180,17 @@ Inserisci le informazioni del tuo CMS Drupal.
 
 
 
-![](images/img_3207.jpg){.thumbnail}
+![drupal](images/3207.png){.thumbnail}
 
 
 ## Step 6 - Finalizzazione
 Il tuo CMS Drupal è installato!
 Clicca su Visita il nuovo sito.
 
-![](images/img_3208.jpg){.thumbnail}
+![drupal](images/3208.png){.thumbnail}
 Costruisci il tuo sito con il tuo CMS Drupal!
 
-![](images/img_3209.jpg){.thumbnail}
+![drupal](images/3209.png){.thumbnail}
 
 
 ## Supporto Drupal
@@ -216,7 +216,7 @@ Se rinomini semplicemente il file, puoi riattivarlo in qualsiasi momento per uti
 
 Altre informazioni utili: per essere presi in carico, i file del tuo sito devono trovarsi nella cartella "www".
 
-![](images/img_3217.jpg){.thumbnail}
+![drupal](images/3217.png){.thumbnail}
 
 - Errore con la versione di PHP
 

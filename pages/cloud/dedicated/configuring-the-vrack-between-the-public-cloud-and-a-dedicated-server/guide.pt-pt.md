@@ -26,6 +26,10 @@ O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} da OVHcloud é uma rede
 * Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 * Um intervalo de endereços IP privados à sua escolha
 
+> [!warning]
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+>
+> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
 
 ## Instruções
 

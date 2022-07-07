@@ -6,6 +6,10 @@ section: 'Erste Schritte'
 order: 3
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+
+
 **Letzte Aktualisierung am 17.08.2020**
 
 ## Ziel
@@ -34,31 +38,35 @@ Daraufhin öffnet sich das Aktivierungsfenster. Wählen Sie aus, welchen Domainn
 
 ![Aktivierung der E-Mail-Adressen](images/mail-hosting02.png){.thumbnail}
 
-### Sichern Ihrer E-Mail Adressen, bevor Ihr Webhosting endet
+### Sichern Ihrer E-Mail-Accounts, bevor Ihr Webhosting endet
 
-Wenn Ihr Hosting abläuft oder gelöscht werden muss, können Sie dennoch Ihre E-Mail-Adressen beibehalten.
+Wenn Ihr Hosting abläuft oder gelöscht werden muss, können Sie dennoch Ihre E-Mail-Accounts beibehalten.
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} an, klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action} und wählen Sie das jeweilige Webhosting aus.
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} an, klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus.
 
 Klicken Sie im Feld `Konfiguration` auf den Button `...`{.action} rechts neben `E-Mail-Adressen`. Klicken Sie dann auf `Meine E-Mail-Option abtrennen`{.action}.
 
 ![Aktivierung der E-Mail-Adressen](images/mail-hosting03.png){.thumbnail}
 
-Eine passende „MX Plan“ Lösung wird Ihnen dann zum Kauf angeboten. Sobald die Bestellung bezahlt ist, können Sie Ihre E-Mail-Adressen auch nach Ablauf des Webhostings nutzen.
+Eine passende „MX Plan“ Lösung wird Ihnen dann zum Kauf angeboten. Sobald die Bestellung bezahlt ist, können Sie Ihre E-Mail-Accounts auch nach Ablauf des Webhostings nutzen.
  
 ### Beenden Ihrer E-Mail-Option in Verbindung mit dem Webhosting
 
-Sie können die optionalen E-Mail-Adressen in Verbindung mit Ihrem Webhosting endgültig löschen.
+Sie können die optionalen E-Mail-Accounts in Verbindung mit Ihrem Webhosting endgültig löschen.
 
 > [!warning]
 >
-> Bitte beachten Sie: Diese Aktion kann nicht rückgängig gemacht werden. Nach der Kündigung können Sie die optionalen E-Mail-Adressen nicht wieder aktivieren.
+> Bitte beachten Sie: Diese Aktion kann nicht rückgängig gemacht werden. Nach der Kündigung können Sie die optionalen E-Mail-Konten nicht wieder aktivieren.
 
 Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} an, klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action} und wählen Sie das jeweilige Webhosting aus.
 
-Klicken Sie im Feld `Konfiguration` auf den Button`...`{.action} rechts neben `E-Mail-Adressen`. Klicken Sie dann auf `Die Option „E-Mail“ kündigen`{.action}.
+Klicken Sie im Feld `Konfiguration` auf den Button `...`{.action} rechts neben `E-Mail-Adressen`. Klicken Sie dann auf `Die Option "E-Mail"  kündigen`{.action}.
 
 ![Aktivierung der E-Mail-Adressen](images/mail-hosting04.png){.thumbnail}
+
+> [!warning]
+>
+> Um die Löschung des zu Ihrem Webhosting gehörenden E-Mail-Dienstes zu bestätigen, erhalten Sie einen Bestätigungslink per E-Mail. Klicken Sie auf diesen Link, im die Löschung zu starten.
 
 ## Weiterführende Informationen
 

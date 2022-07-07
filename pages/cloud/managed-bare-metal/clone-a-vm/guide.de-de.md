@@ -46,7 +46,7 @@ Geben Sie Cluster, Host, vApp oder Ressourcen-Pool dieser VM an.
 
 Legen Sie den Speicherort (Festplattenspeicherplatz) dieser VM fest. 
 
-Das Format der virtuellen Festplatte ist „Thin Provision“. Das bedeutet, dass eine virtuelle Festplatte erstellt wird, diese aber den wirklich verwendeten Speicherplatz einnimmt, ungeachtet des Speicherplatzes, den vorher die ursprüngliche VM eingenommen hat. 
+Das Format der virtuellen Festplatte ist “Thin Provision”. Das bedeutet, dass eine virtuelle Festplatte erstellt wird, diese aber den wirklich verwendeten Speicherplatz einnimmt, ungeachtet des Speicherplatzes, den vorher die ursprüngliche VM eingenommen hat. 
 
 Weitere Erklärungen zu Festplattenformaten finden Sie in [dieser Anleitung](../die-wahl-des-festplattenformats/).
 

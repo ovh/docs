@@ -1,6 +1,6 @@
 ---
 title:  Trasferisci un IP FailOver
-excerpt: Questa guida ti mostra come spostare un IP Failover dallo Spazio Cliente OVH o via API OVHcloud
+excerpt: Questa guida ti mostra come spostare un IP Failover dallo Spazio Cliente OVHcloud o via API OVHcloud
 slug: ip-fo-move
 section: Rete e IP
 order: 7

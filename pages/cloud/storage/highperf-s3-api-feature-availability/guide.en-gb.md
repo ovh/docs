@@ -10,7 +10,7 @@ order: 010
 
 ## Objective
 
-This guide lists the S3 API features supported by High Performance.
+This guide lists the S3 API features supported by S3 Object Storage.
 
 ## Instructions
 

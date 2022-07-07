@@ -24,7 +24,7 @@ Per recuperare gli identificativi FTP, consulta la guida []({legacy}1374)
 Per recuperare le tue credenziali SQL, consulta la guida []({legacy}1374)
 
 
-![](images/img_3125.jpg){.thumbnail}
+![wordpress](images/3125.png){.thumbnail}
 
 
 ## Parte 2: recupero dei file sorgente
@@ -36,7 +36,7 @@ In genere, il link disponibile ti permette di scaricare l'ultima versione stabil
 
 Il file scaricato generalmente è compresso (.zip). Per aprirlo e installarlo è necessario decomprimerlo.
 
-![](images/img_3126.jpg){.thumbnail}
+![wordpress](images/3126.png){.thumbnail}
 
 
 ## Parte 3: configurazione dei file sull'hosting via FTP
@@ -50,14 +50,14 @@ Se hai bisogno di aiuto, segui i numerosi tutorial online e scarica uno dei tant
 
 La cartella di destinazione si chiamerà Wordpress.
 
-![](images/img_3127.jpg){.thumbnail}
+![wordpress](images/3127.png){.thumbnail}
 
 ## - Accedi al tuo hosting Web via FTP
 Accedi al tuo hosting e salva i file di Wordpress.
 
 Se hai bisogno di aiuto per accedere in FTP alla tua soluzione di hosting condiviso, consulta la guida []({legacy}1374)
 
-![](images/img_3128.jpg){.thumbnail}
+![wordpress](images/3128.png){.thumbnail}
 
 ## - Trasferisci i tuoi file via FTP
 Per salvare i tuoi file sull'FTP, segui questi step.
@@ -73,7 +73,7 @@ Se questa cartella non esiste, puoi crearla.
 
 Per poter effettuare l'installazione dal tuo dominio, i tuoi file devono necessariamente essere salvati nella cartella "www".
 
-![](images/img_3129.jpg){.thumbnail}
+![wordpress](images/3129.png){.thumbnail}
 
 ## Step 2
 Apri le cartelle:
@@ -86,14 +86,14 @@ Trascina i tuoi file nella cartella "www" della sezione Sito remoto.
 
 È molto probabile che la cartella "www" non sia vuota. Non è obbligatorio eliminare i file presenti al suo interno.
 
-![](images/img_3130.jpg){.thumbnail}
+![wordpress](images/3130.png){.thumbnail}
 
 ## Step 3
 Attendi qualche minuto fino al completo trasferimento dei file sul server FTP remoto.
 
 Al termine dell'operazione, assicurati che tutti i file e le cartelle siano stati spostati correttamente.
 
-![](images/img_3131.jpg){.thumbnail}
+![wordpress](images/3131.png){.thumbnail}
 
 
 ## Parte 4: collega Wordpress al tuo database
@@ -107,14 +107,14 @@ Compare questo messaggio:
 
 Clicca su Creare un file di configurazione per continuare.
 
-![](images/img_3132.jpg){.thumbnail}
+![wordpress](images/3132.png){.thumbnail}
 
 ## Step 2
 Recupera le credenziali del tuo database (se hai bisogno di aiuto, consulta la guida[]({legacy}1374)).
 
 Clicca su Installa Wordpress per continuare.
 
-![](images/img_3133.jpg){.thumbnail}
+![wordpress](images/3133.png){.thumbnail}
 
 ## Step 3
 Inserisci le informazioni del tuo database:
@@ -133,7 +133,7 @@ Importante: le credenziali del database non vengono inviate automaticamente dura
 
 Clicca su Invia per confermare le informazioni di accesso al tuo database.
 
-![](images/img_3134.jpg){.thumbnail}
+![wordpress](images/3134.png){.thumbnail}
 
 
 ## Finalizzazione
@@ -144,7 +144,7 @@ Segui gli step di installazione del CMS per completare l'installazione del tuo b
 ## Step 1
 Clicca su Eseguire l’installazione per continuare.
 
-![](images/img_3135.jpg){.thumbnail}
+![wordpress](images/3135.png){.thumbnail}
 
 ## Step 2
 Inserisci le informazioni relative al tuo blog WordPress:
@@ -161,19 +161,19 @@ Privacy: seleziona la casella se vuoi che il tuo blog venga indicizzato  dai mot
 
 Clicca su Installa WordPress per avviare l'installazione.
 
-![](images/img_3136.jpg){.thumbnail}
+![wordpress](images/3136.png){.thumbnail}
 
 ## Step 3
 Il tuo blog WordPress è installato!
 
 Clicca su Collegati e inserisci le tue credenziali per iniziare subito a utilizzare il tuo blog.
 
-![](images/img_3137.jpg){.thumbnail}
+![wordpress](images/3137.png){.thumbnail}
 
 ## Pannello di amministrazione di WordPress
 Una volta effettuato l'accesso, visualizzi il pannello di amministrazione di WordPress.
 
-![](images/img_3138.jpg){.thumbnail}
+![wordpress](images/3138.png){.thumbnail}
 
 
 ## Informazioni utili
@@ -192,7 +192,7 @@ Se rinomini semplicemente il file, puoi riattivarlo in qualsiasi momento per uti
 
 Altre informazioni utili: per essere presi in carico, i file del tuo sito devono trovarsi nella cartella "www".
 
-![](images/img_3139.jpg){.thumbnail}
+![wordpress](images/3139.png){.thumbnail}
 
 ## - Errore con la versione di PHP
 È un errore che riguarda la versione PHP del tuo server.
@@ -201,5 +201,5 @@ La causa è semplice: l'ultima versione di PHP non è stata attivata.
 
 Per modificare la versione PHP del tuo hosting coindiviso, consulta la guida [Configura PHP sul tuo Hosting Web OVH]({legacy}1207)
 
-![](images/img_3140.jpg){.thumbnail}
+![wordpress](images/3140.png){.thumbnail}
 

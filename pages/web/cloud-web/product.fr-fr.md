@@ -2,7 +2,7 @@
 title: Cloud Web
 slug: cloud-web
 sections: Premiers pas, Tutoriels, Configuration de l’hébergement
-order: 09
+order: 10
 ---
 
 > [!product-section]
@@ -10,7 +10,7 @@ order: 09
 > ### Sites internet et projets
 >
 > - [Mettre en ligne un site internet sur son hébergement web](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/)
-> - [Migrer son site et ses e-mails vers OVH](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/)
+> - [Migrer son site et ses e-mails vers OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/)
 > - [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/)
 > - [Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/)
 >

@@ -6,7 +6,7 @@ section: Diagnóstico y modo de rescate
 order: 2
 ---
 
-**Última actualización: 16 de diciembre de 2020**
+**Última actualización: 16/12/2020**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -69,7 +69,7 @@ Device          Start        End    Sectors  Size Type
 /dev/sda5  3907028992 3907029134        143 71.5K Microsoft LDM data
 ```
 
-En este ejemplo, "sda4" es la partición del sistema, determinada por su tamaño. Por lo general, también existe una segunda partición espejo, que en este caso se denomina "/dev/sdb**X**". ya que, en la mayoría de los casos, el servidor tendrá varios discos con patrones de partición idénticos. Para el proceso de restauración de la contraseña, solo es importante el primero. 
+En este ejemplo, "sda4" es la partición del sistema, determinada por su tamaño. Por lo general, también existe una segunda partición espejo, que en este caso se denomina “/dev/sdb**X**”. ya que, en la mayoría de los casos, el servidor tendrá varios discos con patrones de partición idénticos. Para el proceso de restauración de la contraseña, solo es importante el primero. 
 
 monte esta partición:
 
@@ -257,7 +257,7 @@ La interfaz de conexión debería mostrar un mensaje indicando la expiración de
 
 ![pwreset](images/adminpw_win_04.png){.thumbnail}
 
-La nueva contraseña del usuario admin debe introducirse dos veces. Sin embargo, el campo de confirmación todavía no está visible, lo que significa que debe dejar el primer campo vacío, introducir su nueva contraseña en el segundo campo y utilizar la tecla de tabulación (" ↹ ") del teclado (virtual) para pasar al tercer campo ("Confirmar la contraseña").
+La nueva contraseña del usuario admin debe introducirse dos veces. Sin embargo, el campo de confirmación todavía no está visible, lo que significa que debe dejar el primer campo vacío, introducir su nueva contraseña en el segundo campo y utilizar la tecla de tabulación (“ ↹ ”) del teclado (virtual) para pasar al tercer campo (“Confirmar la contraseña”).
 <br>Vuelva a introducir la contraseña y haga clic en la flecha para guardarla.
 
 ![enterpw](images/adminpw_win_05.png){.thumbnail}

@@ -6,7 +6,7 @@ legacy_guide_number: g1344
 section: 'Website optimisation'
 ---
 
-**Last updated 23rd September 2020**
+**Last updated 5th January 2021**
 
 ## Objective
 
@@ -23,25 +23,34 @@ Web server logs and website statistics are included in your Web Hosting plan, ea
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned.
 
-Next, navigate to the `Statistics and logs`{.action} tab by selecting it in the `More +`{.action} submenu.
+From `Hosting plans`{.action}, choose the Web Hosting plan concerned and open the `Statistics and logs`{.action} tab.
 
 ![hosting](images/statistics01.png){.thumbnail}
 
-In this tab, you can choose between two links: one to display the **website visit statistics** and the other to access the raw **logs** of your hosting.
+This tab consists of 3 sections. The first one presents the **statistics**, the second the raw **logs** of your hosting, and the last one is dedicated to the **administration of users** authorised to access the statistics.
 
-|Web Hosting using the "Urchin 6" statistics|Web Hosting using the <br> "OVHcloud Web Statistics"|
-|----------|:-------------:|
-| ![hosting](images/statistics02.png){.thumbnail} | ![hosting](images/statistics02bis.png){.thumbnail} |
+![hosting](images/statistics02u.png){.thumbnail}
 
-### Website visit statistics
+### User administration
 
-#### OVHcloud Web Statistics
+Creating a user will allow someone to access your hosting plan’s statistics without having access to your OVHcloud Control Panel. 
 
-This tool helps you to track and control the traffic of websites hosted on your Web Hosting plan, by visually compiling statistics of page visits and audience measurement.
+Click the `Create a new user`{.action} button in the `User Administration` section and follow the instructions as shown below.  
+
+![hosting](images/user-statistics01.png){.thumbnail}
+
+> [!warning] 
+>
+> If you have enabled separate logs on a [multisite entry](../multisites-configuring-multiple-websites/#step-2-add-a-domain-or-subdomain), users created here cannot access statistics for that multisite entry.
+>
+
+### Visit statistics
+
+The **OVHcloud Web Statistics** tool helps you to track and control the traffic of websites hosted on your Web Hosting plan, by visually compiling statistics of page visits and audience measurement.
 
 ![hosting](images/OWStats01.gif){.thumbnail}
 
-The dashboard of OVHcloud Web Statistics is presented in 6 sections in the left panel.
+The dashboard of OVHcloud Web Statistics is presented in 6 sections in the left-hand panel.
 
 - Dashboard: visualises the website traffic on your Web Hosting plan.
 - Browsers: shows a ranking of the most used internet browsers to view your sites.
@@ -52,25 +61,6 @@ The dashboard of OVHcloud Web Statistics is presented in 6 sections in the left 
 - FAQ: opens the section dedicated to frequently asked questions.
 
 The `Period selection` box allows you to select a specific time frame.
-
-#### Urchin v6 (legacy)
-
-If access to the OVHcloud Web Statistics is not available on your hosting, you will have the legacy tool Urchin v6 instead.
-
-![hosting](images/1490.png){.thumbnail}
-
-Urchin provides information about:
-
-- the website traffic
-- the number of visitors
-- the number of pages viewed
-- the weighting of the viewed pages
-- the number of *http* requests
-- the average connection times to your entire site or a particular page
-- referrer URLs, to see where visitors come from
-- the search engines used to find the site
-- the keywords used in web searches leading to the site
-- the most visited pages on the site
 
 ### Logs
 
@@ -88,7 +78,22 @@ Different types of logs are available:
 - **ssh**: These logs indicate the different connections made with the SSH protocol.
 - **cron**: The results of executing your [scheduled tasks](../hosting_automated_taskscron) are logged here.
 
+### Hosting activity
+
+In this section you can view your Web Hosting plan’s infrastructure activity as well as the resource usage.
+
+Switch to the `General information`{.action} tab, then scroll to the bottom of the page.
+
+![hosting](images/statistics03.png){.thumbnail}
+
+You can display different types of graphics from the drop-down menu in the top left-hand corner:
+
+- Outbound connections: requests sent from your website to an external website.
+- CPU usage: the level of processor consumption on your hosting instance.
+- Exceeding the resource threshold: indicates when your hosting exceeds its resource quota.
+- SQL requests: quantity of requests to your hosting database.
+- SQL response time: response time of requests sent to your hosting database.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com>.

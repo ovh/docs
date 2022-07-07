@@ -1,7 +1,7 @@
 ---
 title: Modificare la password di root su un VPS
 slug: root-password
-excerpt: Come modificare la password dell’utente root sui VPS OVH
+excerpt: Come modificare la password dell’utente root sui VPS
 section: Diagnostica e modalità Rescue
 ---
 

@@ -91,6 +91,6 @@ Além do sistema de monitorização standard, pode autorizar a OVHcloud a monito
 
 ## Quer saber mais?
 
-[Configurar a Firewall Network](../firewall-network/)
+[Configurar a Network Firewall](../firewall-network/)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

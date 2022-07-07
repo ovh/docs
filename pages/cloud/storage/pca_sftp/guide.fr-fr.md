@@ -6,7 +6,9 @@ section: Public Cloud Archive
 order: 100
 ---
 
-## Préambule
+**Dernière mise à jour le 13/05/2022**
+
+## Objectif
 
 Public Cloud Archive est une solution de stockage qui peut s'utiliser avec les API OpenStack. Cependant, il est possible que vous ne soyez pas familier avec cette façon de gérer un espace de stockage. Nous avons donc développé une passerelle qui vous permet d’accéder à votre PCA via un client SFTP.
 
@@ -26,7 +28,7 @@ Nous utilisons dans cet exemple WinSCP en tant que client SFTP. D’autres solut
 
 ### Identifiant OpenStack
 
-Vous pouvez générer votre login et password OpenStack en suivant ce [Guide](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/).
+Vous pouvez générer votre login et password OpenStack en suivant ce [Guide](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
 
 
 ### Le TenantName
@@ -83,4 +85,8 @@ Dans cette partie nous allons désactiver deux options de WinSCP :
 
 
 ### Récuperation de données
-La récupération de données est soumise à un déblocage préalable de l'objet. Une requête GET est nécessaire sur l’objet en question. Si cette manipulation n’est pas effectuée au préalable, votre client SFTP retournera un message d’erreur lors d’une tentative de téléchargement de fichier. Consulter notre guide sur le déverrouillage de vos objets [ici](https://docs.ovh.com/fr/storage/pca/unlock/){.thumbnail}.
+La récupération de données est soumise à un déblocage préalable de l'objet. Une requête GET est nécessaire sur l’objet en question. Si cette manipulation n’est pas effectuée au préalable, votre client SFTP retournera un message d’erreur lors d’une tentative de téléchargement de fichier. Consulter notre guide sur le déverrouillage de vos objets [ici](https://docs.ovh.com/fr/storage/pca/unlock/).
+
+## Aller plus loin
+
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

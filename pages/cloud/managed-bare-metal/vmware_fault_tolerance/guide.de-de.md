@@ -46,7 +46,7 @@ Abschließend: Eine Zusammenfassung Ihrer Auswahl. Bestätigen Sie, um FT auf Ih
 
 ![Fault Tolerance](images/FT3.png){.thumbnail}
 
-Nun ist Ihre virtuelle Maschine durch **Fault Tolerance** geschützt. Sie können eine Veränderung des Symbols feststellen, außerdem zeigt der Name nun den Status „Primär“ an.
+Nun ist Ihre virtuelle Maschine durch **Fault Tolerance** geschützt. Sie können eine Veränderung des Symbols feststellen, außerdem zeigt der Name nun den Status “Primär” an.
 
 ![Fault Tolerance](images/FT4.png){.thumbnail}
 

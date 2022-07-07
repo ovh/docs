@@ -48,10 +48,12 @@ Nommez votre conteneur puis cliquez sur `Ajouter le conteneur`{.action} :
 > [!warning]
 >
 > Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre conteneur de doit pas contenir les caractères suivants : 
+>
 > - [ . ] 
 > - [ _ ]
-> et vous ne devez pas utiliser de majuscules.
->Pour plus d'informations, consultez notre guide « [Lier un conteneur à un nom de domaine](https://docs.ovh.com/ca/fr/storage/pcs/link-domain/) ».
+> - et vous ne devez pas utiliser de majuscules.
+>
+> Pour plus d'informations, consultez notre guide « [Lier un conteneur à un nom de domaine](https://docs.ovh.com/ca/fr/storage/pcs/link-domain/) ».
 >
 
 ![container name](images/create-container-20211006094550334.png)

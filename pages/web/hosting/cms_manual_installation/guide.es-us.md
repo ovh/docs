@@ -28,7 +28,7 @@ También puede encontrar más información en la guía de instalación manual de
 
 
 
-![](images/img_3379.jpg){.thumbnail}
+![CMS](images/3379.png){.thumbnail}
 
 
 ## Joomla!
@@ -51,7 +51,7 @@ También puede encontrar más información en la guía de instalación manual de
 
 
 
-![](images/img_3380.jpg){.thumbnail}
+![CMS](images/3380.png){.thumbnail}
 
 
 ## PrestaShop
@@ -79,7 +79,7 @@ Si todavía no dispone de un alojamiento con OVHcloud, puede contratar un alojam
 
 [https://www.ovh.es/soluciones/prestashop/](https://www.ovh.es/soluciones/prestashop/)
 
-![](images/img_3381.jpg){.thumbnail}
+![CMS](images/3381.png){.thumbnail}
 
 
 ## Drupal
@@ -98,7 +98,7 @@ También puede encontrar más información en la guía de instalación manual de
 
 
 
-![](images/img_3382.jpg){.thumbnail}
+![CMS](images/3382.png){.thumbnail}
 
 
 ## 

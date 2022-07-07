@@ -29,7 +29,7 @@ If you are configuring your VPS as a DNS server, you can make use of the OVHclou
 
 ### Step 1: Retrieving the validation code <a name="retrievecode"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and then select your server from **Virtual Private Servers** in the left-hand menu.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and then select your server from **Virtual Private Servers**.
 
 Switch to the tab `Secondary DNS`{.action} and click on the button `Add a domain`{.action}.
 

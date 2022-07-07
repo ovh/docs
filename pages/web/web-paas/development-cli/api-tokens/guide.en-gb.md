@@ -25,7 +25,7 @@ Once done, the newly created token will be displayed at the top of the page, and
 
 ![After creating an API token](images/api-tokens-view.png "0.6")
 
-Now set that token in an environment variable named `PLATFORMSH_CLI_TOKEN` on the system where the CLI will run.  Consult the documentation for your CI system to see how to do that.
+Now set that token in an environment variable named `OVHCLOUD_WEBPAAS_CLI_TOKEN` on the system where the CLI will run.  Consult the documentation for your CI system to see how to do that.
 
 > [!primary]  
 > If running CLI commands from any automated system, including a Web PaaS cron task, we urge you to use the `--no-wait` flag on any commands that may take more than a second or two to avoid blocking the process.
@@ -46,14 +46,14 @@ It will also show up in logs and activity streams as a separate entry from human
 
 A common use case for an API token is to allow the Web PaaS CLI to be run on an app container, often via a cron hook.  An API token is necessary for authentication, but the CLI will be able to auto-detect the current project and environment.
 
-First, create a machine user (see above) that you invite to your project. Then, log in as that machine user to obtain an API token. Set this token as the [top-level](../../development-variables#top-level-environment-variables) environment variable `env:PLATFORMSH_CLI_TOKEN` either through the management console or via the CLI, like so:
+First, create a machine user (see above) that you invite to your project. Then, log in as that machine user to obtain an API token. Set this token as the [top-level](../../development-variables#top-level-environment-variables) environment variable `env:OVHCLOUD_WEBPAAS_CLI_TOKEN` either through the management console or via the CLI, like so:
 
 ```bash
-webpaas variable:create -e master --level environment --name env:PLATFORMSH_CLI_TOKEN --sensitive true --value 'your API token'
+webpaas variable:create -e master --level environment --name env:OVHCLOUD_WEBPAAS_CLI_TOKEN --sensitive true --value 'your API token'
 ```
 
 > [!primary]  
-> It is important to include the `env:` so as to expose `$PLATFORMSH_CLI_TOKEN` on its own as a top level Unix environment variable, rather than as a part of `$PLATFORM_VARIABLES` like normal environment variables.
+> It is important to include the `env:` so as to expose `$OVHCLOUD_WEBPAAS_CLI_TOKEN` on its own as a top level Unix environment variable, rather than as a part of `$PLATFORM_VARIABLES` like normal environment variables.
 > 
 
 Second, add a build hook to your `.platform.app.yaml` file to download the CLI as part of the build process.

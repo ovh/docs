@@ -17,7 +17,7 @@ Se não tem acesso ao seu Espaço Cliente, pode seguir o [seguinte guia](https:/
 
 
 
-![](images/img_3110.jpg){.thumbnail}
+![script emails](images/3110.png){.thumbnail}
 
 
 ## Bloquear o envio de emails a partir do seu site
@@ -35,18 +35,18 @@ Por vezes, é necessário bloquear o envio de emails a partir do seu website.
 Nenhum email será eliminado. Eles serão colocados em espera durante 72 horas. Poderá, durante esse período, ou desbloquear o envio, ou efetuar uma "purga" à fila de emails em espera.
 1. Clique no botão "Bloquear o envio".
 
-![](images/img_3111.jpg){.thumbnail}
+![script emails](images/3111.png){.thumbnail}
 2. Clique no botão "Validar".
 
-![](images/img_3112.jpg){.thumbnail}
+![script emails](images/3112.png){.thumbnail}
 3. A seguinte janela de confirmação aparecerá.
 
-![](images/img_3113.jpg){.thumbnail}
+![script emails](images/3113.png){.thumbnail}
 
 ## Nota:
 Poderá constatar que o estado do serviço passará para "Inativo".
 
-![](images/img_3114.jpg){.thumbnail}
+![script emails](images/3114.png){.thumbnail}
 
 
 ## Purgar a fila de envio de mensagens
@@ -56,42 +56,42 @@ Poderá constatar que o estado do serviço passará para "Inativo".
 A sua conta será de seguida desbloqueada. A operação levará entre 5 a 10 minutos a ser tomada em consideração.
 1. Clique no botão "Bloquear os e-mails".
 
-![](images/img_3115.jpg){.thumbnail}
+![script emails](images/3115.png){.thumbnail}
 2. Clique no botão "Validar".
 
-![](images/img_3116.jpg){.thumbnail}
+![script emails](images/3116.png){.thumbnail}
 3. A seguinte janela de confirmação aparecerá.
 
-![](images/img_3117.jpg){.thumbnail}
+![script emails](images/3117.png){.thumbnail}
 
 ## Nota:
 Poderá constatar que o estado do serviço passará para "Purga".
 
-![](images/img_3118.jpg){.thumbnail}
+![script emails](images/3118.png){.thumbnail}
 
 
 ## Desbloquear o envio
 O envio dos emails será retomado quando solicitar o envio do próximo email. Os emails que estavem em espera passarão a ser enviados.
 1. Clique no botão "Desbloquear o envio".
 
-![](images/img_3122.jpg){.thumbnail}
+![script emails](images/3122.png){.thumbnail}
 2. Clique no botão "Validar".
 
-![](images/img_3123.jpg){.thumbnail}
+![script emails](images/3123.png){.thumbnail}
 3. A seguinte janela de confirmação aparecerá.
 
-![](images/img_3124.jpg){.thumbnail}
+![script emails](images/3124.png){.thumbnail}
 
 
 ## Modificar o destinatário dos relatórios de erro
 Se ocorreram erros no envio dos emails a partir do seu alojamento Web, receberá no dia seguinte o relatório de erros.
 1. Clique, num primeiro tempo, em "Alterar o destinatário".
 
-![](images/img_3119.jpg){.thumbnail}
+![script emails](images/3119.png){.thumbnail}
 2. Introduza, de seguida, o endereço de email e clique, por fim, em "Validar".
 
-![](images/img_3120.jpg){.thumbnail}
+![script emails](images/3120.png){.thumbnail}
 3. Poderá constatar que o novo endereço de email já aparece no painel de cliente.
 
-![](images/img_3121.jpg){.thumbnail}
+![script emails](images/3121.png){.thumbnail}
 

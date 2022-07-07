@@ -1,7 +1,7 @@
 ---
-title: Utiliser High Performance avec Owncloud
+title: Utiliser S3 Object Storage avec Owncloud
 slug: s3/owncloud
-excerpt: Découvrez comment configurer le stockage dans Owncloud pour utiliser un bucket High Performance
+excerpt: Découvrez comment configurer le stockage dans Owncloud pour utiliser un bucket S3 Object Storage
 section: Object Storage S3 High Performance
 order: 170
 ---
@@ -12,7 +12,7 @@ order: 170
 
 Owncloud est une suite de logiciels client-serveur pour créer et utiliser des services d'hébergement de fichiers.
 
-**Ce guide explique comment configurer le stockage dans Owncloud pour utiliser un bucket High Performance.**
+**Ce guide explique comment configurer le stockage dans Owncloud pour utiliser un bucket S3 Object Storage.**
 
 > [!warning]
 >
@@ -27,7 +27,7 @@ Owncloud est une suite de logiciels client-serveur pour créer et utiliser des s
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
 - Connaître vos informations d'identification S3 (access_key et secret_access_key).
 
-Consultez notre guide « [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
 
 ## En pratique
 

@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: 'FAQ pour les instances Public Cloud OVHcloud'
+title: FAQ Public Cloud OVHcloud 
 slug: public-cloud-faq
 section: 'Informations générales'
 order: 01

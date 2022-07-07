@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: 'Find the answers to the most frequently asked questions about OVHcloud emails'
+title: FAQ OVHcloud emails
 slug: emails-faq
 section: 'Getting started'
 order: 07

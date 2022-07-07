@@ -6,7 +6,7 @@ legacy_guide_number: 1851
 section: 'OpenStack'
 ---
 
-**Stand 22.12.2021**
+**Letzte Aktualisierung am 22.12.2021**
 
 ## Einleitung
 
@@ -109,7 +109,7 @@ Sie können die Installation auch selbst durchführen. Befolgen Sie hierzu die n
 
 #### Schritt 1: Umgebungsvariablen des Systems bearbeiten
 
-Suchen Sie nach den Systemumgebungsvariablen und klicken Sie auf „Systemumgebungsvariablen bearbeiten“:
+Suchen Sie nach den Systemumgebungsvariablen und klicken Sie auf “Systemumgebungsvariablen bearbeiten”:
 
 ![Einstellungen der Umgebungsvariablen](images/2_preparation_openstack_environment_windows.png){.thumbnail}
 
@@ -121,13 +121,13 @@ Gehen Sie in den Tab `Erweitert`{.action} und klicken Sie auf `Umgebungsvariable
 
 #### Schritt 3: Umgebungsvariablen konfigurieren 
 
-Im Bereich „Systemvariablen“, wählen Sie „Neu“, verwenden Sie den Namen „PYTHON_HOME“ und fügen Sie den Pfad bis Python hinzu. Dieser ist standardmäßig: „C:\\Python27“.
+Im Bereich “Systemvariablen”, wählen Sie “Neu”, verwenden Sie den Namen “PYTHON_HOME” und fügen Sie den Pfad bis Python hinzu. Dieser ist standardmäßig: “C:\\Python27”.
 
 ![Zugriffspfad hinzufügen](images/4_edit_system_variables.png){.thumbnail}
 
 #### Schritt 4: Pfad der Variablen hinzufügen
 
-Wenn Sie Python hinzugefügt haben, ändern Sie „Path“ (Pfad) in den Systemvariablen und fügen Sie folgendes zum Ende des Pfads hinzu:
+Wenn Sie Python hinzugefügt haben, ändern Sie “Path” (Pfad) in den Systemvariablen und fügen Sie folgendes zum Ende des Pfads hinzu:
 
 `...;%PYTHON_HOME%\;%PYTHON_HOME%\Script`
 
@@ -147,7 +147,7 @@ Wurde die Operation erfolgreich ausgeführt, wird eine Zusammenfassung geöffnet
 
 ![Automatische Installation](images/5_preparation_openstack_environment_windows.png){.thumbnail}
 
-Sie können die installierte Version im neu geöffneten CMD-Fenster (Kommandozeile) überprüfen, indem Sie „python-V“ eingeben (egal, wo Sie sich im System befinden).
+Sie können die installierte Version im neu geöffneten CMD-Fenster (Kommandozeile) überprüfen, indem Sie “python-V” eingeben (egal, wo Sie sich im System befinden).
 
 ![Überprüfung](images/6_preparation_openstack_environment_windows.png){.thumbnail}
 

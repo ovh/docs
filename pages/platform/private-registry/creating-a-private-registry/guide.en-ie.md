@@ -3,10 +3,10 @@ title: 'Creating a private registry'
 excerpt: ''
 slug: creating-a-private-registry
 section: 'Getting started'
-order: 1
+order: 01
 ---
 
-**Last updated 24 September, 2021.**
+**Last updated 14th April, 2022.**
 
 <style>
  pre {
@@ -61,6 +61,10 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 5. Choose your plan between the three available plans, and click on `Next`{.action}.
 
     ![Create a Private Registry](images/create-a-private-registry-005.png){.thumbnail}
+
+> [!primary]
+>
+> With the `M` and `L` plan, OVHcloud installs and maintains a vulnerability scanner for you: [Trivy](https://aquasecurity.github.io/trivy/).
 
 6. Your private registry is being created...
 

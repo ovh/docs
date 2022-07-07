@@ -5,7 +5,7 @@ order: 2
 section: Get Started
 ---
 
-**Last updated 25th October 2021**
+**Last updated 13th June, 2022**
 
 ## Objective
 
@@ -46,6 +46,11 @@ First please check the table below to know which field are reserved and what is 
 |X-OVH-TO-FREEZE|String|If given, will build another archive containing only its value (separated by a line break).|
 
 
+> [!warning]
+>
+> You cannot use the field **source** since it is replaced by the content of the field **host** in Graylog.
+
+
 ### Can I go deeper?
 
 Of course. As we said before, you can send some additional fields as long as you prepend them with the `_` (underscore) character. You can use any JSON valid character for your field, except the `.` (dot) character. But don't worry, if you do so, we will rewrite your '.' in a very cute underscore. So how can you send special type as number, date and boolean ? Here is the answer :
@@ -64,7 +69,7 @@ As you can see, it is fairly straightforward. Suffix your field with the right v
 
 
 ```json
-{  
+{
    "version":"1.1",
    "host":"my_host",
    "_some_num":87.6,
@@ -89,7 +94,7 @@ Specifying correct numeric suffix type is the only way to generate numeric Widge
 Our platform limits the usage of IP adresses as field keys. IP addresses have a high cardinality and thus are not allowed to be used as keys (of course they are supported and enriched as values, as you can see above). If you use an IP address as key, it will be changed. For example:
 
 ```json
-{  
+{
    "version":"1.1",
    "host":"my_host",
    "_some_user_id_float":123,
@@ -101,7 +106,7 @@ Our platform limits the usage of IP adresses as field keys. IP addresses have a 
 will become:
 
 ```json
-{  
+{
    "version":"1.1",
    "host":"my_host",
    "_some_user_id_float":123,

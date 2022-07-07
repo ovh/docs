@@ -106,7 +106,7 @@ Sollte einer der Kontakte die E-Mail nicht erhalten haben, kann es sein, dass di
 
 Wenn nur ein Kontakt die Änderung bestätigt hat, wird eine Meldung angezeigt, die Sie darüber informiert, dass die Bestätigung der Änderungsanfrage durch den anderen Kontakt noch nicht erfolgt ist. Wenn einer der Kontakte die Anfrage gerade erst bestätigt hat, dauert es ein paar Minuten, bis die Anzeige im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aktualisiert wird.
 
-![Kontaktverwaltung](images/managing_contacts_07.png){.thumbnail}
+![Kontaktverwaltung](images/managing_contacts_007.png){.thumbnail}
 
 Die Kontaktänderung wird einige Minuten nach Bestätigung der Anfrage durch die beiden Kontakte wirksam. Anschließend erhalten sie eine E-Mail, in der sie darüber informiert werden, dass die Anfrage erfolgreich bearbeitet wurde.
 

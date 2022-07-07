@@ -5,7 +5,7 @@ excerpt: 'Creates a Kubernetes cluster through Terraform'
 section: Getting started
 ---
 
-**Last updated 7th December 2021**
+**Last updated 14th April 2022**
 
 ## Objective
 
@@ -56,6 +56,10 @@ Because, behind the scenes, the "OVH Terraform provider" is doing requests to OV
 
 In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/) tutorial.
 
+Concretely, you have to generate these credentials via the [OVH token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+
+![OVHcloud API rights](images/api-rights.png){.thumbnail}
+
 When you have successfully generated your OVH tokens, please keep them. You'll have to define them in the coming minutes ;-).
 
 The last needed information is the `service_name`: it is the ID of your Public Cloud project.
@@ -84,16 +88,45 @@ So, let's start!
 
 First, create a `provider.tf` file with the minimum version, european endpoint ("ovh-eu") and keys you got in this guide previously.
 
+Terraform 0.13 and later:
+
 ```
-# Configure the OVHcloud Provider
+terraform {
+  required_providers {
+    ovh = {
+      source  = "ovh/ovh"
+    }
+  }
+}
+
 provider "ovh" {
-  version            = "~> 0.11"
   endpoint           = "ovh-eu"
   application_key    = "<your_access_key>"
   application_secret = "<your_application_secret>"
   consumer_key       = "<your_consumer_key>"
 }
 ```
+
+Terraform 0.12 and earlier:
+
+```
+# Configure the OVHcloud Provider
+provider "ovh" {
+  endpoint           = "ovh-eu"
+  application_key    = "<your_access_key>"
+  application_secret = "<your_application_secret>"
+  consumer_key       = "<your_consumer_key>"
+}
+```
+
+Alternatively the secret keys can be retrieved from your environment.
+
+- `OVH_ENDPOINT`
+- `OVH_APPLICATION_KEY`
+- `OVH_APPLICATION_SECRET`
+- `OVH_CONSUMER_KEY`
+
+This later method (or a similar alternative) is recommended to avoid storing secret data in a source repository.
 
 Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API, but other endpoints exist, depending on your needs:
 
@@ -145,6 +178,7 @@ Finally, create a `output.tf` file with the following content:
 ```
 output "kubeconfig" {
   value = ovh_cloud_project_kube.my_kube_cluster.kubeconfig
+  sensitive = true
 }
 ```
 
@@ -156,7 +190,6 @@ Your code organisation should be like this:
 
 ```
 .
-├── data.tf
 ├── output.tf
 ├── ovh_kube_cluster.tf
 ├── provider.tf
@@ -173,16 +206,18 @@ $ terraform init
 Initializing the backend...
 
 Initializing provider plugins...
-- Checking for available provider plugins...
-- Downloading plugin for provider "ovh" (terraform-providers/ovh) 0.11.0...
+- Finding latest version of ovh/ovh...
+- Installing ovh/ovh v0.17.1...
+- Installed ovh/ovh v0.17.1 (signed by a HashiCorp partner, key ID F56D1A6CBDAAADA5)
 
+Partner and community providers are signed by their developers.
+If you'd like to know more about provider signing, you can read about it here:
+https://www.terraform.io/docs/cli/plugins/signing.html
 
-Warning: registry.terraform.io: This version of Terraform has an outdated GPG key and is unable to verify new provider releases. Please upgrade Terraform to at least 0.12.31 to receive new provider updates. For details see: https://discuss.hashicorp.com/t/hcsec-2021-12-codecov-security-event-and-hashicorp-gpg-key-exposure/23512
-
-
-
-Warning: registry.terraform.io: For users on Terraform 0.13 or greater, this provider has moved to ovh/ovh. Please update your source in required_providers.
-
+Terraform has created a lock file .terraform.lock.hcl to record the provider
+selections it made above. Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run "terraform init" in the future.
 
 Terraform has been successfully initialized!
 
@@ -195,7 +230,7 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
 
-The `init` command will initialise your working directory which contains `.tf` configuration files.
+The `init` command will initialize your working directory which contains `.tf` configuration files.
 
 It’s the first command to execute for a new configuration, or after doing a checkout of an existing configuration in a given git repository for example.
 
@@ -209,15 +244,8 @@ Now, we can generate our plan:
 
 ```
 $ terraform plan
-Refreshing Terraform state in-memory prior to plan...
-The refreshed state will be used to calculate this plan, but will not be
-persisted to local or remote state storage.
 
-
-------------------------------------------------------------------------
-
-An execution plan has been generated and is shown below.
-Resource actions are indicated with the following symbols:
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
 
 Terraform will perform the following actions:
@@ -232,7 +260,7 @@ Terraform will perform the following actions:
       + next_upgrade_versions       = (known after apply)
       + nodes_url                   = (known after apply)
       + region                      = "GRA7"
-      + service_name                = "<your_service_name>"
+      + service_name                = "<YOUR_SERVICE_NAME>"
       + status                      = (known after apply)
       + update_policy               = (known after apply)
       + url                         = (known after apply)
@@ -241,26 +269,36 @@ Terraform will perform the following actions:
 
   # ovh_cloud_project_kube_nodepool.node_pool will be created
   + resource "ovh_cloud_project_kube_nodepool" "node_pool" {
-      + anti_affinity  = false
-      + desired_nodes  = 3
-      + flavor_name    = "b2-7"
-      + id             = (known after apply)
-      + kube_id        = (known after apply)
-      + max_nodes      = 3
-      + min_nodes      = 3
-      + monthly_billed = false
-      + name           = "my-pool"
-      + service_name   = "<your_service_name>"
-      + status         = (known after apply)
+      + anti_affinity    = false
+      + autoscale        = false
+      + available_nodes  = (known after apply)
+      + created_at       = (known after apply)
+      + current_nodes    = (known after apply)
+      + desired_nodes    = 3
+      + flavor           = (known after apply)
+      + flavor_name      = "b2-7"
+      + id               = (known after apply)
+      + kube_id          = (known after apply)
+      + max_nodes        = 3
+      + min_nodes        = 3
+      + monthly_billed   = false
+      + name             = "my-pool"
+      + project_id       = (known after apply)
+      + service_name     = "<YOUR_SERVICE_NAME>"
+      + size_status      = (known after apply)
+      + status           = (known after apply)
+      + up_to_date_nodes = (known after apply)
+      + updated_at       = (known after apply)
     }
 
 Plan: 2 to add, 0 to change, 0 to destroy.
 
-------------------------------------------------------------------------
+Changes to Outputs:
+  + kubeconfig = (sensitive value)
 
-Note: You didn't specify an "-out" parameter to save this plan, so Terraform
-can't guarantee that exactly these actions will be performed if
-"terraform apply" is subsequently run.
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
 ```
 
 Thanks to the `plan` command, we can check what Terraform wants to create, modify or remove.
@@ -286,7 +324,7 @@ Terraform will perform the following actions:
       + next_upgrade_versions       = (known after apply)
       + nodes_url                   = (known after apply)
       + region                      = "GRA7"
-      + service_name                = "<your_service_name>"
+      + service_name                = "<YOUR_SERVICE_NAME>"
       + status                      = (known after apply)
       + update_policy               = (known after apply)
       + url                         = (known after apply)
@@ -304,7 +342,7 @@ Terraform will perform the following actions:
       + min_nodes      = 3
       + monthly_billed = false
       + name           = "my-pool"
-      + service_name   = "<your_service_name>"
+      + service_name   = "<YOUR_SERVICE_NAME>"
       + status         = (known after apply)
     }
 
@@ -364,28 +402,10 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 
 Outputs:
 
-kubeconfig = apiVersion: v1
-clusters:
-- cluster:
-    certificate-authority-data: <encoded_value>
-    server: https://xxxxxx.c1.gra7.k8s.ovh.net
-  name: my_kube_cluster
-contexts:
-- context:
-    cluster: my_kube_cluster
-    user: kubernetes-admin-my_kube_cluster
-  name: kubernetes-admin@my_kube_cluster
-current-context: kubernetes-admin@my_kube_cluster
-kind: Config
-preferences: {}
-users:
-- name: kubernetes-admin-my_kube_cluster
-  user:
-    client-certificate-data: <encoded_value>
-    client-key-data: <encoded_value>
+kubeconfig = <sensitive>
 ```
 
-Now, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`. <br>
+Now, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`. <br>
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}

@@ -10,7 +10,7 @@ hidden: true
 
 ## Ziel
 
-Neben weiteren Methoden stellt Ihnen OVHcloud die Zwei-Faktor-Authentifizierung per Sicherheitsschlüssel „Universal Second Factor (U2F)“ zur Verfügung, um den Zugang zu Ihrem Account abzusichern. Diese Schutztechnik per USB-Stick wird von der FIDO Alliance gehostet und wird zunehmend in vielen Bereichen für die Zwei-Faktor-Authentifizierung genutzt.
+Neben weiteren Methoden stellt Ihnen OVHcloud die Zwei-Faktor-Authentifizierung per Sicherheitsschlüssel “Universal Second Factor (U2F)” zur Verfügung, um den Zugang zu Ihrem Account abzusichern. Diese Schutztechnik per USB-Stick wird von der FIDO Alliance gehostet und wird zunehmend in vielen Bereichen für die Zwei-Faktor-Authentifizierung genutzt.
 
 **Diese Anleitung hilft Ihnen, die Zwei-Faktor-Authentifizierung per U2F-Sicherheitsschlüssel zu aktivieren, und für Ihre nächsten Verbindungen zu Ihrem Kundencenter zu nutzen.**
 

@@ -2,7 +2,7 @@
 title: 'Cloud Web'
 slug: cloud-web
 sections: 'Erste Schritte'
-order: 09
+order: 10
 ---
 
 > [!product-section]
@@ -10,7 +10,7 @@ order: 09
 > ### Websites und Projekte
 >
 > - [Meine Seite online stellen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/)
-> - [Migration Ihrer Website und E-Mails zu OVH](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/)
+> - [Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/)
 > - [Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)
 > - [Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/)
 >

@@ -27,7 +27,7 @@ Selon vos besoins, vous pouvez vouloir personnaliser le nom des serveurs DNS de 
 
 ### Étape 1 : ajouter les enregistrements GLUE
 
-Pour démarrer, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} partie `Web Cloud`, cliquez sur `Noms de domaine`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine pour lequel vous souhaitez personnaliser les serveurs DNS. Positionnez-vous enfin sur l'onglet `GLUE`{.action}.
+Pour démarrer, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} partie `Web Cloud`, cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine pour lequel vous souhaitez personnaliser les serveurs DNS. Positionnez-vous enfin sur l'onglet `GLUE`{.action}.
 
 Sur la page qui apparaît, un tableau affiche les enregistrements GLUE actuellement configurés chez OVHcloud pour votre nom de domaine. Afin d'ajouter un nouvel enregistrement GLUE, cliquez sur le bouton `Ajouter`{.action}.
 

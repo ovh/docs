@@ -9,7 +9,7 @@ section: Veeam
 
 ## Wprowadzenie
 
-Veeam Cloud Connect to rozwiązanie oferowane przez wydawcę Veeam. Umożliwia ono posiadanie kopii bezpieczeństwa poza miejscem działalności („off-site”), i to bez konieczności zarządzania infrastrukturą w drugiej lokalizacji. Ideą rozwiązania Veeam Cloud Connect jest zapewnienie łatwego i bezpiecznego sposobu na wykonywanie kopii zapasowych i przywracania danych z chmury.
+Veeam Cloud Connect to rozwiązanie oferowane przez wydawcę Veeam. Umożliwia ono posiadanie kopii bezpieczeństwa poza miejscem działalności (“off-site”), i to bez konieczności zarządzania infrastrukturą w drugiej lokalizacji. Ideą rozwiązania Veeam Cloud Connect jest zapewnienie łatwego i bezpiecznego sposobu na wykonywanie kopii zapasowych i przywracania danych z chmury.
 
 **Dowiedz się, jak skonfigurować ofertę Veeam Cloud Connect**
 
@@ -84,7 +84,7 @@ Wdrożenie Veeam Cloud Connect przeprowadza się w tym samym interfejsie, konsol
 > Informacje na temat instalacji konsoli znajdują się na tej stronie.
 > 
 
-Najpierw dodaj usługę do konsoli, klikając polecenie „ADD SERVICE PROVIDER”
+Najpierw dodaj usługę do konsoli, klikając polecenie “ADD SERVICE PROVIDER”
 
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider.png){.thumbnail}
@@ -94,7 +94,7 @@ Wprowadź adres IP/nazwę oferty, którą znajdziesz w otrzymanej wiadomości e-
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-ip.png){.thumbnail}
 
-Wpisz nazwę użytkownika i hasło, a następnie kliknij „Zastosuj”, aby potwierdzić.
+Wpisz nazwę użytkownika i hasło, a następnie kliknij “Zastosuj”, aby potwierdzić.
 
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-login.png){.thumbnail}

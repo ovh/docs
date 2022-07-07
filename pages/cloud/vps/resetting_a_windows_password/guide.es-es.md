@@ -21,7 +21,7 @@ Es posible que deba restaurar una contraseña en su VPS con Windows. Esta guía 
 
 ## Procedimiento
 
-Conéctese al VPS desde [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) con las claves de conexión que habrá recibido por correo electrónico.
+Conéctese al VPS desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) con las claves de conexión que habrá recibido por correo electrónico.
 
 Escriba los siguientes comandos para montar el sistema de archivos remoto:
 

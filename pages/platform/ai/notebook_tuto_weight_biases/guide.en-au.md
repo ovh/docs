@@ -6,7 +6,7 @@ section: AI Notebooks tutorials
 order: 02
 ---
 
-**Last updated 9th of September, 2021.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
@@ -31,7 +31,7 @@ This tutorial presents two examples of using Weights & Biases. The first noteboo
 
 The first step consists in creating a Jupyter Notebook with OVHcloud AI Notebooks.
 
-First, you have to install the OVHAI CLI then just choose the name of the notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
+First, you have to [install the OVHAI CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/install-client/) then just choose the name of the notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
 
 - TensorFlow image docker:
 
@@ -49,37 +49,18 @@ ovhai notebook run pytorch jupyterlab \
     --gpu <nb-gpus>
 ```
 
-Whatever the selected method, you should now be able to reach your notebook's URL.
-
-### Clone the GitHub examples repository
-
-The GitHub repository containing all examples for OVHcloud AI NOTEBOOKS is available [here](https://github.com/ovh/ai-training-examples).
-
-Inside your notebook, open a new Terminal tab by clicking `File` > `New` > `Terminal`.
-
-![image](images/new-terminal.png){.thumbnail}
-
-Run the following command in the notebook's terminal to clone the repository:
-
-``` {.bash}
-git clone https://github.com/ovh/ai-training-examples.git
-```
+Whatever the selected method, you should now be able to reach your notebook's URL (see in the output of the command, the field `Url:`).
 
 ### Experiment with OVHcloud examples notebooks
 
-Once the repository has been cloned, find the notebook of your choice.
-
-- The notebook using TensorFlow and Weights & Biases is based on the MNIST dataset. To access it, follow this path:
-
-`ai-training-examples` > `notebooks` > `tensorflow` > `tuto` > `notebook_Weights_and_Biases_MNIST.ipynb`
-
-- The notebook using PyTorch and Weights & Biases is based on YOLOv5 and the COCO dataset. To access it, follow this path:
-
-`ai-training-examples` > `notebooks` > `pytorch` > `tuto` > `notebook_Weights_and_Biases_yolov5.ipynb`
-
+Once the repository has been cloned, find the notebook of your choice.<br/>
 Instructions are directly shown inside the notebooks. You can run them with the standard "Play" button inside the notebook interface.
 
 #### Notebook using TensorFlow and Weights & Biases is based on the MNIST dataset
+
+The notebook using TensorFlow and Weights & Biases is based on the MNIST dataset. To access it, follow this path:
+
+`ai-training-examples` > `notebooks` > `computer-vision` > `image-classification` > `tensorflow` > `weights-and-biases` > `notebook_Weights_and_Biases_MNIST.ipynb`
 
 The aim of this tutorial is to show how it is possible, thanks to Weights & Biases, to compare the results of trainings according to the chosen hyperparameters.
 
@@ -95,9 +76,13 @@ You can also compare the **Test error rates**:
 
 ![image](images/test_error_rate_mnist_wandb.png){.thumbnail}
 
-A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook_Weights_and_Biases_MNIST.ipynb).
+A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/tree/main/notebooks/computer-vision/image-classification/tensorflow/weights-and-biases).
 
 #### Notebook using PyTorch and Weights & Biases is based on YOLOv5 and the COCO dataset
+
+The notebook using PyTorch and Weights & Biases is based on YOLOv5 and the COCO dataset. To access it, follow this path:
+
+`ai-training-examples` > `notebooks` > `computer-vision` > `object-detection` > `miniconda` > `weights-and-biases` > `notebook_Weights_and_Biases_yolov5.ipynb`
 
 The aim of this tutorial is to show how Weights & Biases can be used with the YOLOv5 real-time object detection framework. In order to achieve this, the YOLOv5 s, m, l and x models performance will be compared on the COCO dataset for the same number of epochs.
 
@@ -111,7 +96,7 @@ You can also create your report with your curves and images and share it with yo
 
 ![image](images/report_yolov5_wandb.png){.thumbnail}
 
-A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/blob/main/notebooks/pytorch/tuto/notebook_Weights_and_Biases_yolov5.ipynb).
+A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/tree/main/notebooks/computer-vision/object-detection/miniconda/weights-and-biases).
 
 ## Conclusion
 

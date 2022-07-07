@@ -6,7 +6,7 @@ section: AI Training tutorials
 order: 08
 ---
 
-**Last updated 5th of June, 2021.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
@@ -47,7 +47,7 @@ st.write(pd.DataFrame({
 ```
 
 -   More information about Streamlit capabilities can be found [here](https://docs.streamlit.io/en/stable/)
--   Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/blob/main/jobs/streamlit/tuto_simple_app/simple_app.py)
+-   Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/streamlit/simple-app/simple_app.py)
 
 ### Write the Dockerfile for your application
 
@@ -95,7 +95,7 @@ WORKDIR /workspace
 > This last step is mandatory because streamit needs to be able to write inside the `HOME` directory of the owner of the process in order to work properly.
 
 -   More information about Dockerfiles can be found [here](https://docs.docker.com/engine/reference/builder/)
--   Direct link to the full Dockerfile can be found here [here](https://github.com/ovh/ai-training-examples/blob/main/jobs/streamlit/tuto_simple_app/Dockerfile)
+-   Direct link to the full Dockerfile can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/streamlit/simple-app/Dockerfile)
 
 ### Build the docker image from the dockerfile
 

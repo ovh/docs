@@ -5,7 +5,7 @@ excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 31/03/2022**
+**Dernière mise à jour le 02/05/2022**
 
 ## Objectif
 
@@ -41,10 +41,10 @@ Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `
 
 ![Changer le mode de démarrage](images/rescue-mode-001.png){.thumbnail}
 
-Dans la page suivante, sélectionnez **Booter en mode rescue**. Si votre serveur dispose d’un système d’exploitation Linux, sélectionnez `rescue64-pro`{.action} dans la liste déroulante. Si votre serveur est sous Windows, choisissez  `WinRescue`{.action} (voir la [section du guide ci-dessous](#windowsrescue). Spécifiez une autre adresse de messagerie si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
+Dans la page suivante, sélectionnez **Booter en mode rescue**. Si votre serveur dispose d’un système d’exploitation Linux, sélectionnez `rescue-customer`{.action} dans la liste déroulante. Si votre serveur est sous Windows, choisissez  `WinRescue`{.action} (voir la [section du guide ci-dessous](#windowsrescue). Spécifiez une autre adresse de messagerie si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
 <br>Cliquez sur `Suivant`{.action} et `Valider`{.action}.
 
-![Mode rescue-pro](images/rescue-mode-003.png){.thumbnail}
+![Mode rescue-customer](images/rescue-mode-08.png){.thumbnail}
 
 Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Statut » dans la zone intitulée **Etat des services**. 
 <br>Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. 
@@ -88,7 +88,7 @@ La plupart des modifications apportées à votre serveur via SSH en mode rescue 
 Le montage des partitions est réalisé à l’aide de la commande `mount` en SSH. Vous devez préalablement lister vos partitions, afin de pouvoir récupérer le nom de celle que vous souhaitez monter. Vous pouvez vous référer aux exemples de code suivants :
 
 ```bash
-rescue:~# fdisk -l
+rescue-customer:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -110,7 +110,7 @@ Device Boot Start End Blocks Id System
 Lorsque vous avez identifié le nom de la partition que vous voulez monter, utilisez la commande ci-dessous :
 
 ```bash
-rescue:~# mount /dev/hda1 /mnt/
+rescue-customer:~# mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -127,40 +127,22 @@ Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur
 Vous pouvez monter un datastore VMware de la même manière que décrite précédemment. Tout d'abord, installez le paquet nécessaire :
 
 ```bash
-rescue:~# apt-get update && apt-get install vmfs-tools
+rescue-customer:~# apt-get update && apt-get install vmfs-tools
 ```
 
 Listez ensuite vos partitions afin de récupérer le nom de la partition du datastore :
 
 ```bash
-rescue:~# fdisk -l
+rescue-customer:~# fdisk -l
 ```
 
 À présent, montez la partition avec la commande suivante, en remplaçant `sdbX` par la valeur identifiée à l'étape précédente :
 
 ```bash
-rescue:~# vmfs-fuse /dev/sdbX /mnt
+rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
 Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et redémarrez le serveur en ligne de commande.
-
-### Utilisation de l'interface Web du mode rescue (« rescue64-pro » uniquement)
-
-Une fois le serveur redémarré, vous pouvez accéder à l'interface Web en entrant `your_server_IP:81` dans la barre d'adresses de votre navigateur. Avec https, utilisez le port *444* à la place. Par exemple :
-
-```bash
-https://169.254.10.20:444
-```
-
-Si vous avez déjà sécurisé vos données, vous pouvez utiliser l'interface Web du mode de récupération pour tester les composants suivants :
-
-- **Test du disque** : Vérifie leur intégrité via SMART.
-- **Processeurs** : Vérifie que le processeur fonctionne normalement (cette opération peut prendre un certain temps).
-- **Partitions** : Vérifie les états des lecteurs.
-- **Mémoire** : Vérifie la mémoire RAM installée sur le serveur (cette opération peut prendre un certain temps).
-- **Réseau** : Vérifie la connexion à un système de référence interne OVHcloud ainsi que la connexion à votre navigateur.
-
-![Interface Web pour le mode rescue](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 

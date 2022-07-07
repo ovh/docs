@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 15/11/2021**
+**Última atualização: 18/05/2022**
 
 ## Objetivo
 
@@ -26,6 +26,13 @@ A agregação baseia-se na tecnologia IEEE 802.3ad, ou Link Aggregation Control 
 - Um sistema operativo / Hypervisor que suporta o protocolo de agregação 802.3ad (LACP).
 
 ## Instruções
+
+> [!warning]
+>
+> A configuração OLA faz-se em todas as interfaces de rede. Constituirão um agregado do tipo "agregação privada".
+>
+> Após a implementação do OLA, o IP público deixará de estar acessível.
+>
 
 ### Configurar o OLA na Área de Cliente OVHcloud
 

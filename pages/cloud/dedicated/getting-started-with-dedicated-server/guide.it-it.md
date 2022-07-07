@@ -26,6 +26,10 @@ Un server dedicato è una macchina fisica localizzata in uno dei nostri datacent
 - Essere connesso al tuo server in SSH (accesso root) con Linux o tramite un desktop remoto con Windows.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
+> [!primary]
+>
+> Se il tuo server appartiene alla linea di prodotti **Eco**, consulta [questa guida](../getting-started-dedicated-server-eco/).
+
 ## Procedura
 
 Quando il tuo server dedicato è configurato per la prima volta durante il processo di ordine, puoi selezionare il sistema operativo da installare.

@@ -29,7 +29,7 @@ Zapoznaj się z przewodnikiem na temat odzyskania danych do SQL:[]({legacy}1909)
 
 
 
-![](images/img_3234.jpg){.thumbnail}
+![drupal](images/3234.png){.thumbnail}
 Na stronie tej znajduje się link pozwalający na pobranie najnowszej stabilnej wersji modułu.
 W naszym przykładzie jest to wersja 7.41.
 Pobrane pliki są spakowane. Należy je rozpakować na swoim komputerze. W Internecie odnajdziesz pomoc na ten temat.
@@ -48,7 +48,7 @@ W Internecie dostępne są liczne przewodniki związane z tą operacją. Skorzys
 
 Katalog docelowy będzie nosił nazwę "Drupal-xxx".
 
-![](images/img_3233.jpg){.thumbnail}
+![drupal](images/3233.png){.thumbnail}
 Logowanie na hosting www przez FTP
 
 Aby umieścić pliki modułu Drupal na hostingu, należy najpierw zalogować się na ten hosting. 
@@ -77,7 +77,7 @@ Aby zaznaczyć wszystkie pliki, skorzystaj z połączenia klawiszy CTRL+A.
 
 Następnie skorzystaj z funkcji przeciągnij i upuść do części "Serwer zdalny" do katalogu "www".
 
-![](images/img_3199.jpg){.thumbnail}
+![drupal](images/3199.png){.thumbnail}
 Możliwe, że katalog "www" nie jest pusty. Nie trzeba usuwać plików z tego katalogu. Powrócimy do tego tematu w dalszej części tego przewodnika.
 
 ## Etap 3
@@ -89,7 +89,7 @@ Po przeniesieniu plików, upewnij się, że wszystkie pliki i katalogi zostały 
 
 Ta operacja kończy część poświęconą umieszczaniu plików na FTP.
 
-![](images/img_3200.jpg){.thumbnail}
+![drupal](images/3200.png){.thumbnail}
 
 
 ## Etap 1 - Instalacja modułu Drupal
@@ -100,13 +100,13 @@ Pojawi się taka strona.
 Zaznacz "Standard
 Install with commonly used features pre-configured." i kliknij na "Save and continue", aby kontynuować.
 
-![](images/img_3219.jpg){.thumbnail}
+![drupal](images/3219.png){.thumbnail}
 
 
 ## Etap 2 - Wybór języka
 Wybierz język instalacji "Polski" i kliknij na "Save and continue".
 
-![](images/img_3218.jpg){.thumbnail}
+![drupal](images/3218.png){.thumbnail}
 
 
 ## Etap 3 - Połączenie z bazą danych
@@ -127,7 +127,7 @@ Zaznacz "MySQL, MariaDB lub równoważne".
 
 
 
-![](images/img_3202.jpg){.thumbnail}
+![drupal](images/3202.png){.thumbnail}
 
 - Host bazy danych: Wpisz nazwę serwera bazy danych wskazaną w e-mailu instalacyjnym i w panelu klienta. Nazwa ta kończy się zazwyczaj ".mysql.db".
 
@@ -137,7 +137,7 @@ Zaznacz "MySQL, MariaDB lub równoważne".
 
 
 
-![](images/img_3203.jpg){.thumbnail}
+![drupal](images/3203.png){.thumbnail}
 Ważne:  Dane do bazy danych nie są wysyłane automatycznie po zainstalowaniu hostingu. Aby je otrzymać, należy założyć bazę danych w panelu klienta.
 Kliknij na "Zachowaj i kontynuuj", aby kontynuować.
 
@@ -150,7 +150,7 @@ Jeśli wpisałeś prawidłowo dane dotyczące bazy danych, rozpocznie się insta
 
 
 
-![](images/img_3190.jpg){.thumbnail}
+![drupal](images/3190.png){.thumbnail}
 
 
 ## Etap 5 - Konfiguracja aspektów administracyjnych
@@ -171,7 +171,7 @@ Wpisz ustawienia administracyjne modułu CMS Drupal.
 
 
 
-![](images/img_3206.jpg){.thumbnail}
+![drupal](images/3206.png){.thumbnail}
 
 - Domyślny kraj: Wybierz kraj/język dla strony.
 - Domyślna sterfa czasowa: Wybierz strefę czasową dla strony.
@@ -182,16 +182,16 @@ Wpisz ustawienia administracyjne modułu CMS Drupal.
 
 
 
-![](images/img_3207.jpg){.thumbnail}
+![drupal](images/3207.png){.thumbnail}
 
 
 ## Etap 6 - Zakończenie
 CMS Drupal został zainstalowany. Kliknij na "Odwiedź swoją nową stronę".
 
-![](images/img_3208.jpg){.thumbnail}
+![drupal](images/3208.png){.thumbnail}
 Teraz wystarczy korzystać z modułu Drupal i zbudować stronę.
 
-![](images/img_3209.jpg){.thumbnail}
+![drupal](images/3209.png){.thumbnail}
 
 
 ## Wsparcie dla modułu Drupal
@@ -221,7 +221,7 @@ Zmień nazwę tego pliku. Będziesz mógł później aktywować ten plik jako ty
 
 Inna użyteczna informacja: pliki strony muszą zostać umieszczone w katalogu "www", aby były brane pod uwagę.
 
-![](images/img_3217.jpg){.thumbnail}
+![drupal](images/3217.png){.thumbnail}
 
 - Błąd dotyczący wersji PHP
 

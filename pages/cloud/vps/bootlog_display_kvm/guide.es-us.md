@@ -30,8 +30,8 @@ Si su VPS no responde, siempre debería poder acceder a él desde el área de cl
 
 ## Requisitos
 
-- disponer de un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
-- tener acceso al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Disponer de un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
+- Tener acceso al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
 ## Procedimiento
 

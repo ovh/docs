@@ -69,7 +69,7 @@ Se pretender autorizar a ligação como utilizador root, siga os passos [indicad
 
 #### Etapa 1: Reinicie o VPS em modo rescue
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o VPS em modo rescue. Se precisar de mais instruções sobre a utilização do modo rescue com um VPS, consulte o [guia do modo rescue](../rescue/).
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o VPS em modo rescue. Se precisar de mais instruções sobre a utilização do modo rescue com um VPS, consulte o [guia do modo rescue](../rescue/).
 
 #### Etapa 2: Identificar o ponto de montagem
 

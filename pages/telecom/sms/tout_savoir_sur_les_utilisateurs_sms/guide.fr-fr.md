@@ -120,7 +120,7 @@ Pour obtenir la description d'un code ptt spécifique, vous pouvez utiliser l'AP
 > @api {GET} /sms/ptts
 >
 
-Pour plus d'informations sur l'utilisation des API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/).
+Pour plus d'informations sur l'utilisation des API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/).
 
 Vous retrouverez dans le tableau ci-dessous une liste non-exhaustive des codes ptt principaux.
 

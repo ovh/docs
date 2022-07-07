@@ -10,7 +10,7 @@ order: 2
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 24/11/2021**
+**Última atualização: 14/04/2022**
 
 ## Objetivo
 
@@ -83,6 +83,12 @@ Clique na linha da regra em questão para consultar os detalhes do planeamento d
 
 Para configurar as suas [políticas de snapshot](#snapshot_policy), volte à secção [Gestão dos volumes](#instructions) do seu serviço e abra o separador `Snapshot policiais`{.action}.
 
+#### Lista e recuperação das snapshots <a name="access_snapshots"></a>
+
+A Área de Cliente não permite consultar a lista das snapshots efetuadas nem restaurá-las.
+
+Para ter acesso às snapshots a partir do seu ponto de montagem, pode utilizar os comandos propostos na documentação [NetApp](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html){.external}.
+
 #### Gestão dos ACL de volumes <a name="access_control"></a>
 
 O controlo de acesso aos volumes funciona através de restrições de endereços IP. Uma vez que não existem restrições configuradas por predefinição, a primeira etapa aquando da criação de volumes consiste em definir endereços IP ou intervalos a partir dos quais o acesso será autorizado.
@@ -130,8 +136,9 @@ Se não está familiarizado com a utilização da solução Enterprise File Stor
 
 - [Criar um volume](#create_volume)
 - [Configurar o controlo de acesso](#access_control)
-- [(Opcional) Configurar as políticas de snapshot](#snapshot_policy).
+- [(Opcional) Configurar as políticas de snapshot](#snapshot_policy)
 - [Aplicar regras de snapshot ao volume](#snapshots) (facultativo)
+- [Listar e recuperar as snaphots](#access_snapshots) (facultativo)
 - [Aceda ao volume seguindo as instruções da secção "Informações gerais"](#modify_volume)
 - [Saiba como utilizar o Enterprise File Storage através da API ao consultar os nossos guias](#gofurther) (como opção)
 

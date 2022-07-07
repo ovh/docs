@@ -30,7 +30,7 @@ Un serveur privé virtuel (VPS, pour Virtual Private Server) est un serveur déd
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans la liste de navigation de gauche sous `Serveurs privés virtuels`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 Le tableau de bord qui vous est présenté contient des informations importantes sur votre service et vous permet d'effectuer des opérations essentielles. Il apparaîtra différemment selon la gamme de votre VPS.
 
@@ -199,5 +199,7 @@ De manière plus automatique, OVHcloud vous propose le [SSL Gateway](https://www
 [Créer une clé SSH](../../dedicated/creer-cle-ssh-serveur-dediees//)
 
 [Sécuriser un VPS](../conseils-securisation-vps/)
+
+[Configurer une nouvelle installation de Windows Server](../windows-first-config/)
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -2,7 +2,7 @@
 title: Cloud Web
 slug: cloud-web
 sections: Getting started
-order: 09
+order: 10
 ---
 
 > [!product-section]
@@ -10,7 +10,7 @@ order: 09
 > ### Websites and projects
 >
 > - [Publishing a website on your Web Hosting space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/)
-> - [Como migrar um site e e-mails para a OVH?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/)
+> - [Como migrar um site e e-mails para a OVHcloud?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/)
 > - [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/)
 > - [Módulos 1 clique: como instalar um CMS para criar um site](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/)
 >

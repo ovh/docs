@@ -10,7 +10,7 @@ order: 010
 
 ## Objectif
 
-Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supportées par High Performance.
+Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supportées par S3 Object Storage.
 
 ## En pratique
 

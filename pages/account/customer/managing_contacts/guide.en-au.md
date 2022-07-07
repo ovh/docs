@@ -98,7 +98,7 @@ If one of the contacts has not received this email, the contact email address li
 
 If only one contact has confirmed the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just confirmed the request, it will take a few minutes for the information to be updated and appear correctly in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
 
-![Contact management](images/managing_contacts_07.png){.thumbnail}
+![Contact management](images/managing_contacts_007.png){.thumbnail}
 
 Once both contacts have confirmed the request, the change will be successful within a few minutes. The two contacts will receive an email confirming that the request has been successfully processed.
 

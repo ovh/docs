@@ -10,7 +10,7 @@ order: 01
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 19/10/2021**
+**Ultimo aggiornamento: 02/05/2022**
 
 ## Obiettivo
 
@@ -28,9 +28,22 @@ La vRack (rack virtuale) OVHcloud permette di unire virtualmente diversi server 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Aver selezionato una gamma di indirizzi IP privati
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+
 ## Procedura
 
-### Step 1: aggiungi i tuoi server alla vRack
+### Step 1: ordina la vRack
+
+Accedi alla sezione `Bare Metal Cloud`{.action} nel tuo Spazio Cliente OVHcloud e clicca sul pulsante `Ordina`{.action}. Nel menu, clicca sull’opzione `vRack`{.action}.
+
+![Ordina la vRack](images/orderingvrack.png){.thumbnail}
+
+Verrai reindirizzato verso un'altra pagina per confermare l'ordine. L'operazione richiederà alcuni minuti.
+
+### Step 2: aggiungi i tuoi server alla vRack
 
 Una volta attivata la vRack, accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Network`{.action} e apri il menu `vRack`{.action}.
 
@@ -38,7 +51,7 @@ Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissi
 
 ![Choix du vRack](images/vrack_selection.png){.thumbnail}
 
-### Step 2: configurazione delle interfacce di rete
+### Step 3: configurazione delle interfacce di rete
 
 Gli step successivi contengono le configurazioni delle distribuzioni/sistemi operativi più comunemente utilizzati. Il primo step consiste sempre nell'[connetterti al tuo server](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/) in SSH o in sessione RDP (per Windows). Gli esempi che seguono presuppongono che tu sia connesso come utente con elevate autorizzazioni (Administratore/Sudo).
 

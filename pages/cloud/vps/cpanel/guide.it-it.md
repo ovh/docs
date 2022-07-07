@@ -75,8 +75,8 @@ A questo punto dovresti essere in grado di connetterti a WHM e in SSH utilizzand
 
 Ti consigliamo di adottare tutte le misure necessarie a proteggere il tuo WHM e il tuo VPS. Per effettuare questa operazione, ti consigliamo di consultare [qui](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external} le raccomandazioni di cPanel.
 
-Ti consigliamo inoltre di consultare la nostra guida per [proteggere un VPS](../consigli-sicurezza-vps/), utilizzare [le nostre soluzioni di backup](../) e configurare il [Firewall Network](../../dedicated/firewall-network/).
+Ti consigliamo inoltre di consultare la nostra guida per [proteggere un VPS](../consigli-sicurezza-vps/), utilizzare [le nostre soluzioni di backup](../) e configurare il [Network Firewall](../../dedicated/firewall-network/).
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

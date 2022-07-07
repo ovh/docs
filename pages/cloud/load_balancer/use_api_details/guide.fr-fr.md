@@ -14,7 +14,7 @@ Retrouvez ici la description des différents points d'entrées dans l'API pour l
 
 ## Prérequis
 
-- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 

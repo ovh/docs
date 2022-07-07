@@ -10,13 +10,13 @@ order: 150
 ## Objective
 [Synology DiskStation Manager 6.0](https://www.synology.com/en-global/dsm/6.0beta){.external} provides a tool for synchronisation with different cloud solutions.
 
-This is compatible with OVH Public Cloud Object Storage and lets you back up your data and access it from any location. This guide explains how to configure DiskStation Manager 6.0 so that you can synchronise your NAS files and your Object Storage.
+This is compatible with the OVHcloud Public Cloud Object Storage and lets you back up your data and access it from any location. This guide explains how to configure DiskStation Manager 6.0 so that you can synchronise your NAS files and your Object Storage.
 
 
 ## Prerequisites
 
-- [Add storage space](../../create_an_object_container/)
-- [Configure user](../../../public-cloud/set-openstack-environment-variables/)
+- [Create an Object Storage container](https://docs.ovh.com/us/en/storage/pcs/create-container/)
+- [Configure an Openstack user](../../../public-cloud/creation-and-deletion-of-openstack-user/#creating-an-openstack-user)
 
 
 ## Instructions
@@ -32,13 +32,15 @@ This is compatible with OVH Public Cloud Object Storage and lets you back up you
 
 To sync your NAS Synology, you need your OpenStack credentials.
 
-You can retrieve these by downloading the OpenRC file in OpenStack Horizon.
+You can retrieve them by downloading the OpenRC file using the first part of the following guide:
+
+[Setting OpenStack environment variables](../../../public-cloud/set-openstack-environment-variables/#step-1-retrieve-the-variables)
 
 #### Configuring the synchronisation point with Cloud Sync
 
-Once you have your credentials, you can log in to your NAS and take the following steps :
+Once you have your credentials, you can log in to your NAS and take the following steps:
 
-- Launch the Cloud Sync application :
+- Launch the Cloud Sync application:
 
 ![public-cloud](images/3791.png){.thumbnail}
 
@@ -46,7 +48,7 @@ Once you have your credentials, you can log in to your NAS and take the followin
 
 ![public-cloud](images/3788.png){.thumbnail}
 
-- Enter your OpenStack credentials :
+- Enter your OpenStack credentials:
 
 ![public-cloud](images/3792.png){.thumbnail}
 

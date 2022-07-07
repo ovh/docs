@@ -20,7 +20,7 @@ As part of the configuration of a high-availability infrastructure, you may enco
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) on hourly billing
+- An [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) on **hourly** billing
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} or [Horizon interface](https://docs.ovh.com/ie/en/public-cloud/configure_user_access_to_horizon/)
 - Knowledge of [Openstack API](https://docs.ovh.com/ie/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) and [Openstack variables](https://docs.ovh.com/ie/en/public-cloud/set-openstack-environment-variables/)
 
@@ -65,7 +65,7 @@ To view the snapshot, go to the left side menu and click on `Instance Backup`{.a
 
 #### From the Horizon Interface
 
-To proceed, you need to [configure user access to Horizon](../configure_user_access_to_horizon/) and [log in to the Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+To proceed, you need to [configure user access to Horizon](../horizon/) and [log in to the Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
 
 If you have deployed instances in different regions, make sure you are in the correct region. You can verify this on the top left corner in the Horizon interface.
 

@@ -32,7 +32,7 @@ Un servidor virtual privado (VPS, por sus siglas en inglés) es un servidor dedi
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor de la lista de navegación de la izquierda en `Servidores privados virtuales`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
 El panel de control que se le presenta contiene información importante sobre su servicio y le permite realizar operaciones esenciales. La apariencia puede variar según la gama de su VPS.
 
@@ -201,5 +201,7 @@ Si prefiere automatizar la protección de su sitio web, OVHcloud le ofrece la so
 [Crear una llave SSH](../../dedicated/crear-claves-ssh-dedicadas/)
 
 [Proteger un VPS](../consejos-proteccion-vps/)
+
+[Configurar una nueva instalación de Windows Server](../windows-first-config/)
 
 Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

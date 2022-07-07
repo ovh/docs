@@ -23,7 +23,7 @@ order: 06
 
 ## W praktyce
 
-Jeśli nie jesteś przyzwyczajony do działania API OVHcloud, zapoznaj się z naszym przewodnikiem Pierwsze kroki [z API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+Jeśli nie jesteś przyzwyczajony do działania API OVHcloud, zapoznaj się z naszym przewodnikiem Pierwsze kroki [z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
 
 ### Etap 1: wygeneruj raport z kopii zapasowych
 

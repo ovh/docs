@@ -17,7 +17,7 @@ The Logs Data Platform gives you a custom log retention system, you can adjust i
 As implied in the title, you will need a stream. If you don't know what a stream is or if you don't have any, you can follow this [quick start tutorial](../quick-start){.ref}. You must edit the stream configuration to activate the cold storage. Click on the Edit button in the menu to go to the stream configuration page.
 
 ![Streams menu](images/streams-menu-1.png){.thumbnail}
- 
+
 ## Instructions
 
 ### Activating cold storage on a stream
@@ -30,21 +30,21 @@ On this page you will find the long-term storage toggle. Once enabled, you will 
 - The content of your archives : GELF, one special field [X-OVH-TO-FREEZE](../field-naming-conventions){.ref}, or both (you will get two separate archive in this case)
 - The activation of the notification for each new archive available.
 
-Note that OVHcloud Object Storage is more expensive than OVHcloud Public Archive but allow you to immediately download your archive whereas there is a delay (from 10 minutes to 4h) before being able to download your files on Public Archive. Depending or the urgency of your futures logs retrieval, you will have to choose your backend accordingly. 
+Note that OVHcloud Object Storage is more expensive than OVHcloud Public Archive but allow you to immediately download your archive whereas there is a delay (from 10 minutes to 4h) before being able to download your files on Public Archive. Depending or the urgency of your futures logs retrieval, you will have to choose your backend accordingly.
 
-The content of your archive is flexible. By default, you get the full log content in GELF format. But you can choose to have an archive containing only the value of the custom LDP field X-OVH-TO-FREEZE. This field can for exemple be use to keep your logs in a human readable or original format. You can also choose to have two archives simultaneously: the original GELF and the X-OVH-TO-FREEZE archives. 
+The content of your archive is flexible. By default, you get the full log content in GELF format. But you can choose to have an archive containing only the value of the custom LDP field X-OVH-TO-FREEZE. This field can for exemple be use to keep your logs in a human readable or original format. You can also choose to have two archives simultaneously: the original GELF and the X-OVH-TO-FREEZE archives.
 
 ![Edit menu](images/edit-1.png){.thumbnail}
 
 As soon as you click on `Save`{.action}, the cold storage is activated. Here are some more things you need to know about this feature:
 
 > [!warning]
-> 
+>
 > As soon as the feature is activated, your logs will be stored for the specified duration. The effect is immediate so the billing of this feature will be also immediate.
-> 
+>
 > - Deactivating the cold storage on a stream will prevent the producing of new archives but it won't delete the already produced archives. These archives will be kept for the duration configured.
 > - Changing the retention duration WILL delete any archive exceeding the new retention (Ex: choosing a one year retention will implicitly delete all archives older than one year).
-> - We push a daily archive of the 2 days old data you pushed. So every Day you will get the archive of the day before yesterday. 
+> - We push a daily archive of the 2 days old data you pushed. So every Day you will get the archive of the day before yesterday.
 > - When you activate the feature for the first time we can't create an archive for data older than two days before the activation.
 > - Deleting the stream WILL delete any archive associated. The stream must be alive to be able to keep its archive.
 >
@@ -53,11 +53,11 @@ As soon as you click on `Save`{.action}, the cold storage is activated. Here are
 
 #### Using the OVHcloud Manager
 
-On a cold storage enabled stream (you can quickly see if they are with the archive checkbox), you have a new `Archives`{.action} item on the bottom of the stream menu. Click on it to navigate to the archives pages. On this page, you have a list of the archives produced. Each archive is named after its date, so you can quickly retrieve an archive of a particular day. 
+On a cold storage enabled stream (you can quickly see if they are with the archive checkbox), you have a new `Archives`{.action} item on the bottom of the stream menu. Click on it to navigate to the archives pages. On this page, you have a list of the archives produced. Each archive is named after its date, so you can quickly retrieve an archive of a particular day.
 
 ![Archive page](images/archive-1.png){.thumbnail}
 
-From this page you can launch the "unfreezing" process of your archive and make it available for download. This delay varies between 10 minutes to 4 hours depending on multiple factors like the size of the archive. There is no delay in the case you choosed the **OVH Public Storage** backend for your archives. 
+From this page you can launch the "unfreezing" process of your archive and make it available for download. This delay varies between 10 minutes to 4 hours depending on multiple factors like the size of the archive. There is no delay in the case you choosed the **OVH Public Storage** backend for your archives.
 Once available, its status changes and a new `Download`{.action} action appears.
 
 #### Using the API
@@ -81,7 +81,7 @@ You will need your OVHcloud service name associated with your account. Your serv
 > About:
 >
 >> Return the list of graylog streams.
-> 
+>
 > Parameters:
 >> serviceName *
 >>> The internal ID of your Logs Data Platform service (string)
@@ -101,7 +101,7 @@ You will need your OVHcloud service name associated with your account. Your serv
 > About:
 >
 >> Return details of specified archive.
-> 
+>
 > Parameters:
 >> serviceName *
 >>> The internal ID of your Logs Data Platform service (string)
@@ -125,7 +125,7 @@ You will need your OVHcloud service name associated with your account. Your serv
 > About:
 >
 >> Get a public temporary URL to access the archive.
-> 
+>
 > Parameters:
 >> serviceName *
 >>> The internal ID of your Logs Data Platform service (string)

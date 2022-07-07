@@ -6,7 +6,7 @@ section: Security
 order: 0
 ---
 
-**Last updated 7th February 2022.**
+**Last updated 27th May 2022.**
 
 <style>
  pre {
@@ -32,20 +32,20 @@ order: 0
 
 ## Objective
 
-[Kyverno](https://kyverno.io) (Greek for “govern”) is a policy engine designed specifically for Kubernetes.
+[Kyverno](https://kyverno.io) (Greek for “govern”) is a policy engine designed specifically for Kubernetes. 
 
 ![Kyverno](images/kyverno-logo.png)
 
-With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies (compared to [OPA Gatekeeper](https://github.com/open-policy-agent/gatekeeper) which use Rego programming language). This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies.
+With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies (compared to [OPA Gatekeeper](https://github.com/open-policy-agent/gatekeeper) which uses Rego programming language). This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies. 
 
 Kyverno policies can **validate**, **mutate** and **generate** Kubernetes resources.
 
-Kyverno runs as a [dynamic admission controller](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/) in a Kubernetes cluster.
+Kyverno runs as a [dynamic admission controller](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/) in a Kubernetes cluster. 
 Kyverno receives validating and mutating admission webhook HTTP callbacks from the Kubernetes API-Server and applies matching policies to return results that enforce admission policies or reject requests.
 
 Kyverno policies can match resources using the resource kind, name, and label selectors. Wildcards are supported in names.
 
-Mutating and Validating policies can be written as overlays (similar to Kustomize).
+Mutating and Validating policies can be written as overlays (similar to Kustomize). 
 
 Policy enforcement is captured using Kubernetes events. Kyverno also reports policy violations for existing resources.
 
@@ -78,11 +78,11 @@ As at OVHcloud, we like to provide you with the best products and services and f
 
 In this guide you will:
 
-- Install Knative
+- Install Kyverno
 - Write and deploy several policies
 - Test the behavior
 
-You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=ca){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
@@ -373,7 +373,7 @@ disallow-default-namespace:
 
 Perfect, you no longer have the ability to deploy a Pod/Deployment/ReplicaSet/Job/StatefulSet in the `default` namespace.
 
-#### Policy 2: Create a ConfigMap in all namespaces excepted `kube-system`, `kube-public` and `kyverno`
+#### Policy 2: Create a ConfigMap in all namespaces excepted `kube-system`, `kube-public` and `kyverno` 
 
 For our second example we want to create a `generate` policy that will create a new ConfigMap called `zk-kafka-address` in all new namespaces except `kube-system`, `kube-public` and `kyverno`.
 

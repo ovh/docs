@@ -6,7 +6,7 @@ section: 'Diagnostic and rescue mode'
 order: 1
 ---
 
-**Last updated 31st March 2022**
+**Last updated 2nd May 2022**
 
 ## Objective
 
@@ -42,11 +42,11 @@ Look for "Boot" in the **General information** box and click on `...`{.action}, 
 
 ![Modify boot mode](images/rescue-mode-001.png){.thumbnail}
 
-In the next page, select **Boot in rescue mode**. If your server has a Linux-based OS, select "rescue64-pro" from the menu. If your server runs on Windows, you can also choose "WinRescue" (see the [guide section below](#windowsrescue)). Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
+In the next page, select **Boot in rescue mode**. If your server has a Linux-based OS, select `rescue-customer`{.action} from the menu. If your server runs on Windows, you can also choose "WinRescue" (see the [guide section below](#windowsrescue)). Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
 
 Click on `Next`{.action} to proceed to the next step and on `Confirm`{.action} to validate the change.
 
-![Mode rescue-pro](images/rescue-mode-003.png){.thumbnail}
+![Mode rescue-customer](images/rescue-mode-08.png){.thumbnail}
 
 Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
 
@@ -84,8 +84,8 @@ For most changes you make to your server via SSH while in rescue mode, you will 
 
 You can mount partitions using the `mount` command in SSH. Firstly, list your partitions in order to retrieve the name of the partition you need to mount. You can refer to the following code examples:
 
-```
-rescue:~# fdisk -l
+```bash
+rescue-customer:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -106,8 +106,8 @@ Device Boot Start End Blocks Id System
 
 Once you have found the name of the partition you want to mount, use the command below:
 
-```
-rescue:~# mount /dev/hda1 /mnt/
+```bash
+rescue-customer:~# mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -123,41 +123,23 @@ To exit rescue mode, change the boot mode back to `Boot from the hard disk`{.act
 
 You can mount a VMware datastore in a similar way as described in the previous segment. Firstly, install the necessary package:
 
-```
-rescue:~# apt-get update && apt-get install vmfs-tools
+```bash
+rescue-customer:~# apt-get update && apt-get install vmfs-tools
 ```
 
 Then list your partitions in order to retrieve the name of the datastore partition:
 
-```
-rescue:~# fdisk -l
+```bash
+rescue-customer:~# fdisk -l
 ```
 
 Now mount the partition with the following command, replacing `sdbX` with the value identified in the previous step:
 
-```
-rescue:~# vmfs-fuse /dev/sdbX /mnt
+```bash
+rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
 To exit rescue mode, change the boot mode back to `Boot from the hard disk`{.action} in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and restart the server from the command line.
-
-### Using the rescue mode web interface ("rescue64-pro" only)
-
-Once your server has rebooted, you can access the web interface by entering `your_server_IP:81` into your browsers address bar. With https, use port *444* instead. For example:
-
-```
-https://169.254.10.20:444
-```
-
-If you have already secured your data, you can use the rescue mode web interface to test the following components.
-
-- **Disk test**: Checks their integrity using SMART.
-- **Processors**: Checks that the CPU is functioning normally. (This may take a while.)
-- **Partitions**: Checks the states of readers.
-- **Memory**: Checks the RAM installed on the server. (This may take a while.)
-- **Network**: Checks the connection to an OVHcloud-internal reference system as well as the connection to your browser.
-
-![Web interface for rescue mode](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 

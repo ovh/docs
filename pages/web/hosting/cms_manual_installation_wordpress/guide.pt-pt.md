@@ -23,7 +23,7 @@ Um guia para obtenção dos dados de acesso FTP está à disposição:[]({legacy
 Um guia para obtenção dos dados de acesso à base de dados está à disposição:[]({legacy}1374)
 
 
-![](images/img_3125.jpg){.thumbnail}
+![wordpress](images/3125.png){.thumbnail}
 
 
 ## Parte 2: recuperação dos ficheiros "fonte" da instalação
@@ -35,7 +35,7 @@ Um guia para obtenção dos dados de acesso à base de dados está à disposiç�
 
 O ficheiro que vai obter estará, geralmente, comprimido (em formato zip, certamente). Será necessário poder descomprimir esse ficheiro no seu computador. Encontrará na Internet vários tutoriais para ajuda com essa operação.
 
-![](images/img_3126.jpg){.thumbnail}
+![wordpress](images/3126.png){.thumbnail}
 
 
 ## Parte 3: colocação dos ficheiros no seu espaço de armazenamento através de FTP
@@ -51,14 +51,14 @@ Vários tutoriais e softwares de descompressão estão disponíveis na Internet 
 
 A pasta terá o nome "wordpress"
 
-![](images/img_3127.jpg){.thumbnail}
+![wordpress](images/3127.png){.thumbnail}
 
 ## Ligação ao espaço de alojamento através de FTP
 Para colocar os ficheiros de WordPress no seu alojamento, deverá ligar-se ao mesmo.
 
 Está à disposição um guia de ajuda à ligação FTP num alojamento partilhado OVH:[]({legacy}1374)
 
-![](images/img_3128.jpg){.thumbnail}
+![wordpress](images/3128.png){.thumbnail}
 
 ## Transferência dos ficheiros através de FTP
 Siga estas etapas para colocar os seus ficheiros no espaço FTP.
@@ -76,7 +76,7 @@ Se a pasta não existir, terá  a possibilidade de a criar.
 
 Os seus ficheiros devem estar obrigatoriamente na pasta "www". Se não o fizer, o procedimento de instalação não estará diretamente acessível através do seu nome de domínio.
 
-![](images/img_3129.jpg){.thumbnail}
+![wordpress](images/3129.png){.thumbnail}
 
 ## Etapa 2
 Uma vez abertas as pastas:
@@ -91,7 +91,7 @@ Arraste e largue, de seguida, os ficheiros na secção "Site Distante/Remoto" de
 
 É muito provável que a sua pasta "www" não esteja vazia. Vamos abordar esse assunto mais adiante neste guia.
 
-![](images/img_3130.jpg){.thumbnail}
+![wordpress](images/3130.png){.thumbnail}
 
 ## Etapa 3
 A transferência de ficheiros está em curso.
@@ -102,7 +102,7 @@ Uma vez que a transferência esteja concluída, assegure-se que todos os ficheir
 
 Esta operação é a última da parte consagrada à transferência de ficheiros para o espaço FTP.
 
-![](images/img_3131.jpg){.thumbnail}
+![wordpress](images/3131.png){.thumbnail}
 
 
 ## Parte 4: ligação com a base de dados
@@ -122,14 +122,14 @@ Esta mensagem aparecerá.
 
 Cliquem em "Criar um ficheiro de configuração" para continuar.
 
-![](images/img_3132.jpg){.thumbnail}
+![wordpress](images/3132.png){.thumbnail}
 
 ## Etapa 2
 Obtenha os seus identificadores da base de dados (há informação de ajuda para esta ação no início deste guia).
 
 Clique em "Iniciar!" para aceder à etapa seguinte.
 
-![](images/img_3133.jpg){.thumbnail}
+![wordpress](images/3133.png){.thumbnail}
 
 ## Etapa 3
 Introduza as informações solicitadas para a base de dados:
@@ -153,7 +153,7 @@ Clique em "Enviar" para validar as informações de ligação à base de dados.
 
 
 
-![](images/img_3134.jpg){.thumbnail}
+![wordpress](images/3134.png){.thumbnail}
 
 
 ## Finalização
@@ -164,7 +164,7 @@ A fim de terminar a instalação do blog WordPress, continue as etapas de instal
 ## Etapa 1
 Clique em "Iniciar Instalação" para prosseguir.
 
-![](images/img_3135.jpg){.thumbnail}
+![wordpress](images/3135.png){.thumbnail}
 
 ## Etapa 2
 Introduza as informações solicitadas em relação à administração do seu blog WordPress. A descrição das informações é sugestiva:
@@ -182,19 +182,19 @@ Privado: se marcar esta opção, os motores de busca não farão a indexação d
 
 Para iniciar a instalação de WordPress clique em "Instalar WordPress".
 
-![](images/img_3136.jpg){.thumbnail}
+![wordpress](images/3136.png){.thumbnail}
 
 ## Etapa 3
 A instalação do seu blog WordPress está concluída!
 
 Poderá agora autenticar-se no seu site e começar a trabalhar na edição do seu aspeto e conteúdos.
 
-![](images/img_3137.jpg){.thumbnail}
+![wordpress](images/3137.png){.thumbnail}
 
 ## Visualização da parte de administração de WordPress
 Encontrará aqui uma pré-visualização do painel de administração WordPress.
 
-![](images/img_3138.jpg){.thumbnail}
+![wordpress](images/3138.png){.thumbnail}
 
 
 ## Informações úteis
@@ -217,7 +217,7 @@ Para corrigir o problema:
 
 Poderá ser interessante apenas mudar o nome para que, caso necessário, possa mais tarde colocar o site em manutenção.
 
-![](images/img_3139.jpg){.thumbnail}
+![wordpress](images/3139.png){.thumbnail}
 
 ## Erro Clássico: versão de PHP
 Trata-se de um erro relativo à versão de PHP do seu servidor.
@@ -227,5 +227,5 @@ A causa é simples: a última versão de PHP não foi ativada.
 
 Tem à sua disposição um guia para o ajudar a alterar a versão de PHP em uso no seu alojamento:[aqui]({legacy}1207)
 
-![](images/img_3140.jpg){.thumbnail}
+![wordpress](images/3140.png){.thumbnail}
 

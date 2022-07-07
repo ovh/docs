@@ -15,8 +15,8 @@ Cambiar las variables de entorno necesarias para OpenStack en su equipo le permi
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Haber creado un usuario de OpenStack. Consulte [la guía dedicada a este tema](../crear-y-eliminar-un-usuario-de-openstack/)
-- Haber preparado el entorno para utilizar OpenStack. Para ello, consulte la siguiente guía: [«Preparar el entorno para utilizar la API de OpenStack»](../preparar_el_entorno_para_utilizar_la_api_de_openstack/)
+- Haber creado un usuario de OpenStack. Consulte [la guía dedicada a este tema](../crear-y-eliminar-un-usuario-de-openstack/).
+- Haber preparado el entorno para utilizar OpenStack. Para ello, consulte la siguiente guía: [«Preparar el entorno para utilizar la API de OpenStack»](../preparar_el_entorno_para_utilizar_la_api_de_openstack/).
 
 ## Procedimiento
 
@@ -44,7 +44,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-Como indicamos en la guía [«Conectarse a Horizon»](../crear-y-eliminar-un-usuario-de-openstack/), la contraseña solo se ve una vez, en el momento de su creación.
+Como indicamos en [esta guía](../crear-y-eliminar-un-usuario-de-openstack/), la contraseña solo se ve una vez, en el momento de su creación.
 
 Si la ha olvidado, deberá crearla nuevamente.
 

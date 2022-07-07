@@ -72,7 +72,7 @@ Starten Sie anschließend den SSH-Dienst neu:
 /etc/init.d/sshd restart
 ```
 
-#### Ist das Benutzer-Basisverzeichnis auch wirklich „/root“?
+#### Ist das Benutzer-Basisverzeichnis auch wirklich “/root”?
 
 Verwenden Sie hierzu den Befehl `/etc/passwd`:
 
