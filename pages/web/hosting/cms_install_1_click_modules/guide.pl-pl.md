@@ -9,7 +9,7 @@ section: CMS
 
 ## Wprowadzenie
 
-Moduły OVHcloud umożliwiają łatwe i szybkie postawienie strony internetowej (bez konieczności posiadania umiejętności technicznych), przy pomocy narzędzi w Panelu klienta OVH. Automatyczna instalacja jest dostępna dla: WordPress, PrestaShop, Drupal i Joomla.
+Moduły OVHcloud umożliwiają łatwe i szybkie postawienie strony internetowej (bez konieczności posiadania umiejętności technicznych), przy pomocy narzędzi w Panelu klienta OVH. Automatyczna instalacja jest dostępna dla: WordPress, PrestaShop, Drupal i Joomla!.
 
 **Dowiedz się, jak postawić stronę za pomocą modułów OVH.**
 

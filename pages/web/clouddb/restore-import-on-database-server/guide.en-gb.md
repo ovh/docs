@@ -43,7 +43,7 @@ The list of available backups will appear. Click on the `...`{.action} button to
 
 > [!warning]
 >
-> Restoration involves overwriting the contents of the database, potentially resulting in data loss. If you are not sure what you are doing, please create a backup beforehand.
+> Restoration involves overwriting the contents of the database, potentially resulting in data loss. If you are unsure, please create a backup beforehand.
 > 
 
 #### Importing a local backup

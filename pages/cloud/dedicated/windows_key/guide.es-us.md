@@ -5,7 +5,7 @@ excerpt: 'Cómo cambiar la clave de activación de Windows Server'
 section: Miscelánea
 ---
 
-**Última actualización: 20/04/2018**
+**Última actualización: 07/07/2022**
 
 ## Objetivo
 
@@ -16,9 +16,9 @@ Al instalar un sistema operativo Windows Server, es posible que la clave de acti
 
 ## Requisitos
 
-- Disponer de un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} con Windows instalado.
-- Disponer de una licencia Windows SPLA o [contratar una](https://www.ovhcloud.com/en/bare-metal/os/server-windows/){.external}.
-- Tener acceso al escritorio remoto.
+- Disponer de un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/os/server-windows/) con Windows instalado en su cuenta OVHcloud
+- Disponer de una licencia Windows SPLA en su cuenta de OVHcloud
+- Tener acceso administrativo al servidor a través de una conexión de escritorio remoto
 
 
 ## Procedimiento
@@ -66,6 +66,8 @@ Estas son las claves KMS disponibles para cada sistema operativo:
 |Windows Server 2016 Essentials|JCKRF-N37P4-C2D82-9YXRT-4M63B|
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
+|Windows Server 2022 Standard|VDYBN-27WPP-V4HQT-9VMD4-VMK7H|
+|Windows Server 2022 Datacenter|WX4NM-KYWYW-QJJR4-XV3QB-6VM33|
 
 Fuente: [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
 
@@ -96,5 +98,5 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 ```
 
 ## Más información
-
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.
+  
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

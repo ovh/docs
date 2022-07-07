@@ -34,7 +34,7 @@ Pour mettre en ligne votre site, vous devez disposer d'un [nom de domaine](https
 
 Pour suivre les étapes nécessaires à la construction de votre site, consultez cette [page](https://www.ovhcloud.com/fr/web-hosting/uc-website/) puis suivez les instructions du guide « [Mettre en ligne un site Internet sur son hébergement web](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/) ».
 
-**Trucs et Astuces** : Pour vous aider à créer votre site, OVHcloud vous permet d'installer sur votre hébergement un logiciel d'assistance à la création de sites (Wordpress, Prestashop, Joomla et Drupal), grâce la fonctionnalité [Modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+**Trucs et Astuces** : Pour vous aider à créer votre site, OVHcloud vous permet d'installer sur votre hébergement un logiciel d'assistance à la création de sites (WordPress, PrestaShop, Joomla! et Drupal), grâce la fonctionnalité [Modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
 
 ### Comment transférer mon site et mes e-mails sur les serveurs OVHcloud ? 
 
@@ -180,7 +180,7 @@ Si les restaurations ne vous permettent pas de rétablir l'accès à votre site,
 
 ![503_varnish](images/503_varnish.png){.thumbnail}
 
-Si vous avez activé [l'option CDN](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/) de votre hébergement, désactivez le mode *Maintenance* sur votre site Wordpress ou Prestashop.
+Si vous avez activé [l'option CDN](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/) de votre hébergement, désactivez le mode *Maintenance* sur votre site WordPress ou PrestaShop.
 
 Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 

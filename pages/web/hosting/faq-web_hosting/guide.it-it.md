@@ -37,7 +37,7 @@ Per pubblicare online il tuo sito, è necessario disporre di un [dominio](https:
 
 Per seguire gli step necessari alla costruzione del tuo sito, consulta [questa pagina](https://www.ovhcloud.com/it/web-hosting/uc-website/) e segui le istruzioni contenute nella guida [Mettere online un sito Internet su un hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/).
 
-**Consigli e suggerimenti**: Per aiutarti a creare il tuo sito, OVHcloud ti permette di installare sul tuo hosting un software di assistenza alla creazione di siti (Wordpress, Prestashop, Joomla e Drupal), grazie alla funzionalità [CMS in 1 click](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/).
+**Consigli e suggerimenti**: Per aiutarti a creare il tuo sito, OVHcloud ti permette di installare sul tuo hosting un software di assistenza alla creazione di siti (WordPress, PrestaShop, Joomla! e Drupal), grazie alla funzionalità [CMS in 1 click](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/).
 
 ### Come trasferire un sito e un servizio di posta sui server OVHcloud? 
 
@@ -183,7 +183,7 @@ Se il ripristino non ti consente di ripristinare l'accesso al tuo sito, contatta
 
 ![503_varnish](images/503_varnish.png){.thumbnail}
 
-Se hai attivato l'[opzione CDN](https://docs.ovh.com/it/hosting/guida_allutilizzo_dellacceleratore_geocache_su_un_hosting_web/) del tuo hosting, disattiva la modalità *Maintenance* sul tuo sito Wordpress o Prestashop.
+Se hai attivato l'[opzione CDN](https://docs.ovh.com/it/hosting/guida_allutilizzo_dellacceleratore_geocache_su_un_hosting_web/) del tuo hosting, disattiva la modalità *Maintenance* sul tuo sito WordPress o PrestaShop.
 
 Se non hai attivato questa opzione o utilizzato la modalità *Maintenance*, contatta il tuo Webmaster o cerca un [provider specializzato](https://partner.ovhcloud.com/it/directory/) sul sito dei [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

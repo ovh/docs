@@ -47,7 +47,7 @@ In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (gr
 
 When you create your cluster, it's created with a default node pool. Then, you can modify the size of this node pool, or add additional node pools of different sizes and types.
 
-In this guide we explain how to do some basic operations with nodes and node pools using the `NodePools` CRD: adding nodes to an existing node pool, creating a new node pool...
+In this guide we explain how to do some basic operations with nodes and node pools using the `NodePools` CRD: adding nodes to an existing node pool, creating a new node pool, etc.
 
 ## NodePools CRD
 

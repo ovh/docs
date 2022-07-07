@@ -56,6 +56,10 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
 
+> [!warning]
+> 
+> Antes de editar un archivo de configuración, cree siempre una copia de seguridad del original para poder volver si surge algún problema. 
+> 
 
 ### Sistemas operativos Debian y basados en Debian
 
@@ -76,7 +80,7 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 
 #### 2: Abrir el archivo de configuración de red de su servidor
 
-Su archivo de configuración de red de su servidor se encuentra en `/etc/network/interfaces`. Utilice la línea de comando para localizar el archivo y ábralo para editarlo. Realice una copia de seguridad antes de modificar cualquier archivo de configuración.
+Su archivo de configuración de red de su servidor se encuentra en `/etc/network/interfaces` o `/etc/network/interfaces.d`. Utilice la línea de comando para localizar el archivo y ábralo para editarlo. Realice una copia de seguridad antes de modificar cualquier archivo de configuración.
 
 #### 3: Modificar el archivo de configuración de red
 

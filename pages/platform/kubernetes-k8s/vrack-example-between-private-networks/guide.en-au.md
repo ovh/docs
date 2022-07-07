@@ -67,7 +67,7 @@ First of all, we will need to set up vRack Private Network for our Public Cloud.
 
 As explained in the [known limits](../known-limits/) guide, the default subnet ranges for our private networks won't work with OVHcloud Managed Kubernetes, as the ranges `10.2.0.0/16` and `10.3.0.0/16` are reserved to internal Managed Kubernetes use.
 
-Once we have created a vRack, we need to create two different Private Networks enabled at least on the region of our cluster (GRA5 in our example). The private networks created via OVHcloud Manager have by-default ranges, that can't be easily modified. We are thus creating the private networks using the [OVHcloud API](https://ca.api.ovh.com/console/). 
+Once we have created a vRack, we need to create two different Private Networks enabled at least on the region of our cluster (GRA5 in our example). The private networks created via the OVHcloud Manager have by-default ranges, that can't be easily modified. We are thus creating the private networks using the [OVHcloud API](https://ca.api.ovh.com/console/). 
 
 For this example we are creating two private networks, `priv-net-01` & `priv-net-02`, with DHCP subnets with ranges of `10.0.1.0/24` et `10.0.2.0/24`.
 
@@ -519,7 +519,7 @@ ubuntu@vrack-example-between-private-networks:~$ curl 10.0.1.146:30902
 &lt;!DOCTYPE html>
 &lt;html>
 &lt;head>
-&lt;title>Welcome to nginx!</title>
+&lt;title>Welcome to nginx!&lt;/title>
 &lt;style>
     body {
         width: 35em;

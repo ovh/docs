@@ -179,11 +179,11 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 mysql></code></pre>
 
-Setup is done, your Managed MySQL database is fully operational, let's go further and use it with Wordpress hosted in Kubernetes.
+Setup is done, your Managed MySQL database is fully operational, let's go further and use it with WordPress hosted in Kubernetes.
 
-### Installing the Wordpress Helm chart
+### Installing the WordPress Helm chart
 
-For this tutorial we are using the [Wordpress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress){.external} found on [Bitnami repository](https://github.com/bitnami/charts/){.external}. The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
+For this tutorial we are using the [WordPress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress){.external} found on [Bitnami repository](https://github.com/bitnami/charts/){.external}. The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
 
 #### Pre-requisites
 
@@ -197,9 +197,9 @@ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/platfo
 
 #### Customizing your install
 
-By default, the Helm chart installs the Wordpress and a MariaDB on the Kubernetes cluster. As you want to use your OVHcloud Managed MySQL database, you need to customize the Helm installation by setting the URL, user and password of your database.
+By default, the Helm chart installs the WordPress and a MariaDB on the Kubernetes cluster. As you want to use your OVHcloud Managed MySQL database, you need to customize the Helm installation by setting the URL, user and password of your database.
 
-In order to customize your install, without having to leave the simplicity of using Helm and the Wordpress Helm chart, you can simply set some of the [WordPress chart configurable parameters](https://github.com/helm/charts/tree/master/stable/wordpress#configuration){.external}.
+In order to customize your install, without having to leave the simplicity of using Helm and the WordPress Helm chart, you can simply set some of the [WordPress chart configurable parameters](https://github.com/helm/charts/tree/master/stable/wordpress#configuration){.external}.
 
 Then you can add it to your `helm install` command with the `--set` option (`--set param1=value1,param2=value2`)
 
@@ -214,8 +214,8 @@ externalDatabase.database=defaultdb
 externalDatabase.port=20184
 ```
 
-This will install the needed elements (a Wordpress pod for the webserver with the Worpdress PHP code),
-allocate the persistent volumes and initialize the services. And at the end, it will give you the connection parameters for your new Wordpress:
+This will install the needed elements (a WordPress pod for the webserver with the Worpdress PHP code),
+allocate the persistent volumes and initialize the services. And at the end, it will give you the connection parameters for your new WordPress:
 
 <pre class="console"><code>$ helm install my-wordpress bitnami/wordpress --set allowOverrideNone=true,mariadb.enabled=false,externalDatabase.host=mysql-abcdefgh-ijklmnopq.database.cloud.ovh.net,externalDatabase.user=avnadmin,externalDatabase.password=mYStrongPasswOrdHere,externalDatabase.database=defaultdb,externalDatabase.port=20184
 NAME: my-wordpress
@@ -283,7 +283,7 @@ WordPress Admin URL: http://135.125.83.116/admin
 
 And putting the URL in your browser will take you to the new blog:
 
-![Wordpress login screen](images/connect-kubernetes-to-managed-mysql12.png){.thumbnail}
+![WordPress login screen](images/connect-kubernetes-to-managed-mysql12.png){.thumbnail}
 
 You can also use the instructions given by the `helm install` command to get the default username and password for your blog.
 
@@ -293,19 +293,19 @@ $ echo Password: $(kubectl get secret --namespace default my-wordpress -o jsonpa
 Password: GSPSIXwGok
 </code></pre>
 
-![Wordpress admin dashboard](images/connect-kubernetes-to-managed-mysql13.png){.thumbnail}
+![WordPress admin dashboard](images/connect-kubernetes-to-managed-mysql13.png){.thumbnail}
 
-You now have a working Wordpress on your OVHcloud Managed Kubernetes Service, storing data on your OVHcloud Managed MySQL, congratulations!
+You now have a working WordPress on your OVHcloud Managed Kubernetes Service, storing data on your OVHcloud Managed MySQL, congratulations!
 
 ### Cleaning up
 
-To clean up your cluster, simply use Helm to delete your Wordpress blog.
+To clean up your cluster, simply use Helm to delete your WordPress blog.
 
 ```sh
 helm uninstall my-wordpress
 ```
 
-It will delete your Wordpress and its associated resources from your cluster:
+It will delete your WordPress and its associated resources from your cluster:
 
 <pre class="console"><code>$ helm delete my-wordpress
 release "my-wordpress" uninstalled

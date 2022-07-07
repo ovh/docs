@@ -33,7 +33,7 @@ To put your website online, you need to have a [domain name](https://www.ovhclou
 
 To follow the steps required to build your website, go to this [page](https://www.ovhcloud.com/en-gb/web-hosting/uc-website/), then follow the instructions in our guide on [Publishing a website on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/).
 
-**Tips and tricks**: To help you create your website, OVHcloud allows you to install website creation support software (WordPress, Prestashop, Joomla! and Drupal) on your hosting plan, with the [1-click modules](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/) feature.
+**Tips and tricks**: To help you create your website, OVHcloud allows you to install website creation support software (WordPress, PrestaShop, Joomla! and Drupal) on your hosting plan, with the [1-click modules](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/) feature.
 
 ### How do I transfer my website and emails to OVHcloud servers? 
 

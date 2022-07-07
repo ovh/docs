@@ -2,7 +2,7 @@
 title: Installer manuellement Joomla
 slug: installer-manuellement-joomla
 legacy_guide_number: 1978
-excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS Joomla.
+excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS Joomla!.
 section: CMS
 ---
 
@@ -23,7 +23,7 @@ Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki
 
 Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 
-*Si vous souhaitez installer Joomla de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [](../modules-en-1-clic/)
+*Si vous souhaitez installer Joomla! de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [](../modules-en-1-clic/)
 
 
 ## Joomla!

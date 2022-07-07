@@ -99,7 +99,7 @@ Loggen Sie sich anschließend in den [FTP-Bereich](https://docs.ovh.com/de/hosti
 - WordPress: **“wp-config.php“** (Der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
 - Joomla!: **“configuration.php“** (Der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
 - Drupal: **“settings.php“** (Gehen Sie zum Ordner **“sites“** und dann **“default“**. Der Name der Datenbank erscheint unter der Bezeichnung **“database“**).
-- Prestashop: **“parameters.php“** (Gehen Sie zum Ordner **“app“** und dann **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**).
+- PrestaShop: **“parameters.php“** (Gehen Sie zum Ordner **“app“** und dann **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**).
 
 #### Schritt 2: Ihr Modul sichern
 
@@ -138,7 +138,7 @@ Installieren Sie auf Ihrer Seite keine Plugins oder Templates, die nicht auf der
 - [WordPress](https://wordpress.org/){.external}
 - [Joomla!](https://community.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/community){.external}
-- [Prestashop](https://www.prestashop.com/de){.external}
+- [PrestaShop](https://www.prestashop.com/de){.external}
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 

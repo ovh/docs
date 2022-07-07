@@ -2,7 +2,7 @@
 title: Interconnexion IPsec entre deux sites
 slug: ipsec-interconnection
 excerpt: "Mise en place d'un VPN IPsec entre deux clusters Nutanix distants"
-section: Plan de Reprise d'Activité
+section: "Plan de Reprise d'Activité"
 order: 02
 ---
 
@@ -340,7 +340,7 @@ Appuyez sur la touche `Entrée`{.action} pour terminer la configuration en ligne
 <a name="configurepfsenseoptions"></a>
 #### Etape 2.9 Configuration de certaines options au travers de l'interface WEB
 
-Connectez-vous sur la console Web de pfSense avec cette URL https://192.168.10.254 à partir d'une machine virtuelle du cluster se trouvant sur le réseau local **AHV : Base**.
+Connectez-vous sur la console Web de pfSense avec cette URL `https://192.168.10.254` à partir d'une machine virtuelle du cluster se trouvant sur le réseau local **AHV : Base**.
 
 Saisissez ces informations :
 
@@ -406,7 +406,7 @@ Cliquez sur `Apply Changes`{.action} pour activer la règle.
 
 ![Authorisation admin from public ADDRESS 05](images/07-authorize-admin-from-publicaddress05.png){.thumbnail}
 
-L'interface d'administration de **pfSense** est alors accessible depuis Internet, uniquement à partir du réseau autorisé en HTTPS, ici https://123.123.123.5 .
+L'interface d'administration de **pfSense** est alors accessible depuis Internet, uniquement à partir du réseau autorisé en HTTPS, ici `https://123.123.123.5` .
 
 <a name="configuregatewayfrance"></a>
 ### Etape 3 Configuration de la passerelle en France
@@ -742,7 +742,7 @@ Cliquez sur `Apply Changes`{.action} pour activer la règle.
 
 ![Authorisation admin from public ADDRESS 05](images/07-authorize-admin-from-publicaddress05.png){.thumbnail}
 
-L'interface d'administration de **pfSense** est alors accessible depuis Internet, sur le réseau autorisé via cette url https://adressewan, ici https://123.123.123.5 .
+L'interface d'administration de **pfSense** est alors accessible depuis Internet, sur le réseau autorisé via cette URL `https://adressewan`, ici `https://123.123.123.5` .
 
 <a name="configurevpnipsec"></a>
 ### Etape 4 Mise en place du VPN IPsec
@@ -755,7 +755,7 @@ Maintenant que les deux passerelles ont été remplacées, nous allons configure
 <a name="paramipsectofrance"></a>
 ##### **Etape 4.1.1 Mise en place du VPN IPsec vers la France**
 
-Connectez-vous depuis un réseau autorisé sur l'adresse publique du Canada en HTTPS avec cette URL https://adressepublique-pfsense-canada. 
+Connectez-vous depuis un réseau autorisé sur l'adresse publique du Canada en HTTPS avec cette URL `https://adressepublique-pfsense-canada`. 
 
 Allez dans le menu `VPN`{.action} et choisissez `IPsec`{.action}.
 
@@ -871,7 +871,7 @@ Le paramétrage sur la passerelle au Canada est alors terminé.
 <a name="paramipsectocanada"></a>
 ##### **Etape 4.2.1 Mise en place du VPN IPsec vers le Canada**
 
-Connectez-vous sur l'adresse publique de la passerelle de la France en HTTPS via : https://adressepublique-pfsense-france.
+Connectez-vous sur l'adresse publique de la passerelle de la France en HTTPS via : `https://adressepublique-pfsense-france`.
 
 Allez dans le menu `VPN`{.action} et choisissez `IPsec`{.action}.
 
@@ -921,7 +921,7 @@ Saisissez les informations suivantes :
 
 ![Create VPN from France 09](images/10-configure-vpn-from-france09.png){.thumbnail}
 
-Vérifiez les paramètres de chiffrement et faites en sorte qu'ils soient identiques avec deux définis sur la passerelle du Canada.
+Vérifiez les paramètres de chiffrement et faites en sorte qu'ils soient identiques avec ceux définis sur la passerelle du Canada.
 
 ![Create VPN from France 10](images/10-configure-vpn-from-france10.png){.thumbnail}
 
@@ -977,6 +977,6 @@ Le paramétrage du VPN est terminé sur les deux clusters. Il est maintenant pos
 
 [Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
 
-[Réplication asynchrone ou *NearSync* au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
+[Réplication asynchrone ou **NearSync** au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

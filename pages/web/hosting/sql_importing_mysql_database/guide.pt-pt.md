@@ -10,7 +10,7 @@ legacy_guide_number: g1393
 
 ## Sumário
 
-As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos (Content Management System ou CMS) como WordPress ou Joomla, permitem armazenar elementos dinâmicos, como comentários ou artigos. São vários os motivos pelos quais poderia ser obrigado a importar dados numa das suas bases de dados para modificar ou substituir os conteúdos.
+As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos (Content Management System ou CMS) como WordPress ou Joomla!, permitem armazenar elementos dinâmicos, como comentários ou artigos. São vários os motivos pelos quais poderia ser obrigado a importar dados numa das suas bases de dados para modificar ou substituir os conteúdos.
 
 **Saiba como importar um backup para a base de dados de um alojamento web da OVH.**
 

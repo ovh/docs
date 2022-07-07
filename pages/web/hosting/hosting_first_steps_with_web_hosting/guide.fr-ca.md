@@ -34,7 +34,7 @@ Grâce à votre hébergement web OVHcloud, vous pouvez créer un nouveau site in
 
  Vous avez la possibilité de créer vous même votre site internet grâce à des compétences en programmation ou d'utiliser des sites clés en main comme des CMS (Content Management System). La première solution est plus technique, mais  offre la possibilité de créer un projet sur mesure. La seconde permet de bénéficier d’une structure de site prête à l’emploi sans compétences techniques requises.
 
-Depuis son espace client, OVHcloud met à la disposition de ses clients un outil permettant d'installer en 1 clic un CMS à choisir parmi WordPress, PrestaShop, Drupal et Joomla. Si vous ne savez pas quel CMS utiliser, ce [comparatif](https://www.ovhcloud.com/fr-ca/web-hosting/uc-cms-comparison/){.external} devrait vous aider dans votre décision. Si le CMS que vous souhaitez installer n'est pas proposé par OVHcloud, vous pouvez l'installer manuellement sur votre hébergement.
+Depuis son espace client, OVHcloud met à la disposition de ses clients un outil permettant d'installer en 1 clic un CMS à choisir parmi WordPress, PrestaShop, Drupal et Joomla!. Si vous ne savez pas quel CMS utiliser, ce [comparatif](https://www.ovhcloud.com/fr-ca/web-hosting/uc-cms-comparison/){.external} devrait vous aider dans votre décision. Si le CMS que vous souhaitez installer n'est pas proposé par OVHcloud, vous pouvez l'installer manuellement sur votre hébergement.
 
 - **Migrer un site web existant vers OVHcloud**
 

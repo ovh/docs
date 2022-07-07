@@ -119,13 +119,13 @@ Si vous n'êtes pas encore convaincu par la puissance des routes, cette section 
 
 Vous trouverez le détail des appels d'API dans la section « [Manipulation des routes](#handling-routes) », en bas de ce guide et les sections suivantes.
 
-#### Forcer le HTTPS pour les pages de login Wordpress
+#### Forcer le HTTPS pour les pages de login WordPress
 
 Le HTTPS est devenu la norme. L'objectif est de rendre tous les sites disponibles de manière sécurisée en HTTPS grâce au protocole SSL/TLS. Si vous avez besoin d'un certificat SSL/TLS, vous pouvez utiliser votre service OVHcloud Load Balancer pour en commander un qui sera géré pour vous de manière complètement automatique.
 
 Migrer un site en HTTPS demande du travail, notamment pour éviter les problèmes de « [Mixed-Content](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external} ». Il peut être intéressant de migrer section par section, en commençant par sécuriser les pages envoyant des identifiants.
 
-Une approche pourrait être de se baser sur le début des URLs Wordpress. Par défaut, l'URL des pages de connexion de Wordpress commencent par `/wp-login`. Nous aurions donc besoin :
+Une approche pourrait être de se baser sur le début des URLs WordPress. Par défaut, l'URL des pages de connexion de WordPress commencent par `/wp-login`. Nous aurions donc besoin :
 
 - d'une route avec une action de redirection ;
 - d'une règle dans cette route qui détecte les URLs commençant par `/wp-login`.
@@ -136,7 +136,7 @@ Dans la pratique, cela donne une route :
 |---|---|
 |serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |frontendId|Identifiant de votre frontend HTTP|
-|displayName|"Redirection des connexions Wordpress vers HTTPS"|
+|displayName|"Redirection des connexions WordPress vers HTTPS"|
 |weight|(vide)|
 |action.type|"redirect"|
 |action.status|302 pour une redirection temporaire, 301 pour une redirection permanente|

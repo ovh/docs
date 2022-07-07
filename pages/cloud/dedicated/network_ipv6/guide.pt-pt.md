@@ -56,7 +56,7 @@ Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utili
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
 
->  [!warning]
+> [!warning]
 > 
 > Antes de alterar um ficheiro de configuração, crie sempre uma cópia de segurança do original para que possa voltar a ela em caso de problema. 
 > 
@@ -234,11 +234,11 @@ Se não conseguir que este endereço IPv6 faça ping, verifique a configuração
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
-Abra o ficheiro de configuração da rede, o ficheiro que se encontra em `/etc/netplan`. Para efeitos de demonstração, o nosso ficheiro chama-se 50-cloud-init.yaml.
+Abra o ficheiro de configuração da rede, o ficheiro que se encontra em `/etc/netplan`. Para efeitos de demonstração, o nosso ficheiro chama-se '50-cloud-init.yaml'.
 
 #### Passo 3: Corrigir o ficheiro de configuração de rede
 
-Usando um editor de texto, altere o ficheiro 50-cloud-init.yaml adicionando as seguintes linhas às secções em causa, como indicado no exemplo abaixo.
+Usando um editor de texto, altere o ficheiro '50-cloud-init.yaml' adicionando as seguintes linhas às secções em causa, como indicado no exemplo abaixo.
 
 Substitua os elementos genéricos (YOUR_IPV6, IPV6_PREFIX e IPV6_GATEWAY) e a interface de rede (se o seu servidor não utilizar enp1s0) pelos seus valores específicos.
 

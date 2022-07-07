@@ -1,6 +1,6 @@
 ---
-title: CMS - ręczna instalacja modułu Wordpress
-excerpt: Jak ręcznie zainstalować moduł Wordpress?
+title: CMS - ręczna instalacja modułu WordPress
+excerpt: Jak ręcznie zainstalować moduł WordPress?
 id: '1977'
 slug: cms_-_reczna_instalacja_modulu_wordpress
 section: CMS
@@ -153,7 +153,7 @@ Kliknij na "Wyślij", aby kontynuować.
 ## Zakończenie
 
 ## Zakończenie instalacji
-Aby dokończyć instalowanie modułu Wordpress, kontynuuj etapy instalacji.
+Aby dokończyć instalowanie modułu WordPress, kontynuuj etapy instalacji.
 
 ## Etap 1
 Kliknij na "Uruchomienie instalacji", aby kontynuować.

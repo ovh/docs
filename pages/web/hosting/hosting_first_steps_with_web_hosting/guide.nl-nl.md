@@ -34,7 +34,7 @@ Met uw OVH-webhosting kunt u een nieuwe website bouwen of een bestaande website 
 
  U heeft de mogelijkheid uw eigen website te bouwen als u voldoende vaardigheden heeft om te programmeren, of door gebruik te maken van kant-en-klaar websites als CMS (Content Management System). De eerste oplossing vereist bepaalde technische vaardigheden, maar biedt de mogelijkheid een project meer op maat te bouwen. De tweede biedt de mogelijkheid gebruik te maken van een structuur die klaar is voor gebruik, zonder er veel  technische vaardigheden nodig te hebben.
 
-Vanuit het Control Panel biedt OVH de klant een tool waarmee deze met 1 klik een CMS kan installeren en kan kiezen uit WordPress, PrestaShop, Drupal en Joomla. Als u niet weet welke CMS het beste bij u past dan kan dit [vergelijkend overzicht](https://www.ovhcloud.com/nl/web-hosting/uc-cms-comparison/){.external} u helpen bij uw keuze. Indien de CMS die u wilt installeren niet door OVH wordt aangeboden, kunt u deze handmatig op uw hosting installeren.
+Vanuit het Control Panel biedt OVH de klant een tool waarmee deze met 1 klik een CMS kan installeren en kan kiezen uit WordPress, PrestaShop, Drupal en Joomla!. Als u niet weet welke CMS het beste bij u past dan kan dit [vergelijkend overzicht](https://www.ovhcloud.com/nl/web-hosting/uc-cms-comparison/){.external} u helpen bij uw keuze. Indien de CMS die u wilt installeren niet door OVH wordt aangeboden, kunt u deze handmatig op uw hosting installeren.
 
 - **Migratie van uw website naar OVH**
 

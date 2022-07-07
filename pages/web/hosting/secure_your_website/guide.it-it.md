@@ -99,10 +99,10 @@ I form dei siti sono bersagli privilegiati dagli hackers/spammers. Proteggi i tu
 
 Aggiungi al tuo sito un plugin di sicurezza consigliato dall'editor del CMS:
 
-- [Wordpress](https://it.wordpress.org){.external}
+- [WordPress](https://it.wordpress.org){.external}
 - [Joomla](https://downloads.joomla.org/it/){.external}
 - [Drupal](http://www.drupalitalia.org/){.external}
-- [Prestashop](https://www.prestashop.com/it){.external}
+- [PrestaShop](https://www.prestashop.com/it){.external}
 
 ### Step 10: verifica che il tuo hosting non contenga file malevoli
 

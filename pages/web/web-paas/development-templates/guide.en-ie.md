@@ -404,10 +404,10 @@ View the [Node.js documentation](../languages-nodejs).
  
 [View the repository](https://github.com/platformsh-templates/gatsby-drupal) on GitHub.
 
-### Gatsby with Wordpress  
+### Gatsby with WordPress  
 
-<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Note that after you have completed the Wordpress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
+<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and WordPress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from WordPress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>Note that after you have completed the WordPress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and WordPress is a blogging and lightweight CMS written in PHP.</p>
   
 #### Features
@@ -416,7 +416,7 @@ View the [Node.js documentation](../languages-nodejs).
 - MariaDB 10.4<br />  
 - Automatic TLS certificates<br />  
 - npm-based build for Gatsby<br />  
-- Composer-based build for Wordpress<br />  
+- Composer-based build for WordPress<br />  
 - Multi-app configuration<br />  
 - Delayed SSG build (post deploy hook)<br />  
  
@@ -522,10 +522,10 @@ View the [PHP documentation](../languages-php).
  
 [View the repository](https://github.com/platformsh-templates/gatsby-drupal) on GitHub.
 
-### Gatsby with Wordpress  
+### Gatsby with WordPress  
 
-<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Note that after you have completed the Wordpress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
+<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and WordPress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from WordPress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>Note that after you have completed the WordPress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and WordPress is a blogging and lightweight CMS written in PHP.</p>
   
 #### Features
@@ -534,7 +534,7 @@ View the [PHP documentation](../languages-php).
 - MariaDB 10.4<br />  
 - Automatic TLS certificates<br />  
 - npm-based build for Gatsby<br />  
-- Composer-based build for Wordpress<br />  
+- Composer-based build for WordPress<br />  
 - Multi-app configuration<br />  
 - Delayed SSG build (post deploy hook)<br />  
  
@@ -759,7 +759,7 @@ View the [PHP documentation](../languages-php).
  
 [View the repository](https://github.com/platformsh-templates/laravel) on GitHub.
 
-### Wordpress (Composer)  
+### WordPress (Composer)  
 
 <p>This template builds WordPress on Web PaaS using the <a href="https://github.com/johnpbloch/wordpress"><code>johnbolch/wordpress</code></a> "Composer Fork" of WordPress.  Plugins and themes should be managed with Composer exclusively.  A custom configuration file is provided that runs on Web PaaS to automatically configure the database, so the installer will not ask you for database credentials.  For local-only configuration you can use a `wp-config-local.php` file that gets excluded from Git.</p>
 <p>WordPress is a blogging and lightweight CMS written in PHP.</p>

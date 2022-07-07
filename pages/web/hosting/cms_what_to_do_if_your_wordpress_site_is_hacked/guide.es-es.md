@@ -106,7 +106,7 @@ Para ello, deberá modificar el archivo wp-config.php para que el enlace en la b
 Deberá recuperar el mensaje de correo electrónico que recibió al crear la base de datos. Podrá encontrar dicha información en su área de cliente. Para ello, acceda a «Soporte» > «Historial de mensajes de correo». 
 
 Si no recuerda la contraseña de su base de datos, podrá modificarla desde el área de cliente. Para ello, consulte la siguiente [guía](https://www.ovh.es/g1374.publicar-sitio-web-en-internet).
-A continuación, deberá comprobar las actualizaciones disponibles desde el panel de administración de Wordpress.
+A continuación, deberá comprobar las actualizaciones disponibles desde el panel de administración de WordPress.
 
 
 ## Información útil

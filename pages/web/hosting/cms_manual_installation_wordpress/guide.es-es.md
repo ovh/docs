@@ -179,7 +179,7 @@ Identifíquese introduciendo su nombre de usuario y contraseña, y haga clic en 
 ![wordpress](images/3137.png){.thumbnail}
 
 ## Visualización del panel de administración de WordPress
-Este será el aspecto del panel de administración de Wordpress.
+Este será el aspecto del panel de administración de WordPress.
 
 ![wordpress](images/3138.png){.thumbnail}
 

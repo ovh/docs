@@ -179,7 +179,7 @@ Para ello, abra la pestaña `IP autorizadas`{.action} y haga clic en el botón `
 
 ### Conectar el sitio web con la base de datos
 
-Una vez que la base de datos está creada, que uno o más usuarios tienen permisos sobre ella y que al menos una dirección IP o que los alojamientos web de OVHcloud han sido autorizados en su instancia Cloud Databases, solo queda conectar el sitio web a la base de datos. Esto puede hacerse de varias formas, en función del sitio web o del CMS utilizado (WordPress, Joomla...), así como de la fase en la que se encuentre si está instalando un sitio web.
+Una vez que la base de datos está creada, que uno o más usuarios tienen permisos sobre ella y que al menos una dirección IP o que los alojamientos web de OVHcloud han sido autorizados en su instancia Cloud Databases, solo queda conectar el sitio web a la base de datos. Esto puede hacerse de varias formas, en función del sitio web o del CMS utilizado (WordPress, Joomla!...), así como de la fase en la que se encuentre si está instalando un sitio web.
 
 Para poder realizar esta operación, deberá disponer de los siguientes datos:
 
