@@ -6,7 +6,7 @@ section: 'DNS et zone DNS'
 order: 3
 ---
 
-**Dernière mise à jour le 28/06/2022**
+**Dernière mise à jour le 07/07/2022**
 
 ## Objectif
 
@@ -80,15 +80,15 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 >
 > Néanmoins, si votre serveur dispose déjà d'une IPv4, nous vous recommandons de privilégier l'utilisation de celle-ci à votre IPv6.<br>
 > En effet, les IPv6 ne sont pas encore correctement interprétées sur l'ensemble du réseau Internet, ce qui peut engendrer des perturbations d'affichage ou d'accès.
-> 
+>
 
+<a name="cname"></a>
 - **CNAME** (**C**anonical **NAME**) : Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.mydomain.ovh* est un alias de *mydomain.ovh*, cela indique que *www.mydomain.ovh* utilisera l'adresse IP de *mydomain.ovh*.
 
 > [!alert]
 >
 > Un enregistrement TXT utilisant le même domaine ou sous-domaine qu'un enregistrement CNAME perturbe le fonctionnement de ce dernier. Votre enregistrement CNAME ne fonctionnera alors que partiellement ou pas du tout.
 > 
-
 
 > [!warning]
 >
@@ -97,7 +97,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 > Pour reprendre l’exemple donné ci-dessus, vous ne pourrez pas créer un champ CNAME pour le domaine *mydomain.ovh* dans la zone DNS que vous avez créé pour celui-ci.
 > Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exemples : *subdomain.mydomain.ovh* ou *www.mydomain.ovh*) du domaine *mydomain.ovh* dans la zone DNS créée pour *mydomain.ovh*.
 >
-> Si vous souhaitez aller plus loin techniquement sur ce sujet, vous pourrez retrouver, en bas de cette page, [un cas particulier d’usage concernant les CNAME et les zones DNS créées pour des sous-domaines en cliquant](#techusecase).
+> Si vous souhaitez aller plus loin techniquement sur ce sujet, vous pouvez retrouver, en bas de cette page, [un cas particulier d’usage concernant les CNAME et les zones DNS créées pour des sous-domaines](#techusecase).
 >
 
 - **Champ DNAME** (**D**elegation **NAME**) : Permet de générer un « alias » pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une multitude d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible.
@@ -255,7 +255,7 @@ Vous pouvez aussi modifier le TTL d'un enregistrement DNS. Cependant, cette mani
 
 ### Cas particulier d'usage : l'utilisation des enregistrements CNAME <a name="techusecase"></a>
 
-Certains utilisateurs créent des zones DNS directement pour le sous-domaine d’un domaine (par exemple *sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh*). La règle précisée juste au-dessus s’applique alors également dans ce cas de figure. 
+Certains utilisateurs créent des zones DNS directement pour le sous-domaine d’un domaine (par exemple *sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh*). La règle précisée [plus haut](#cname) dans ce guide s’applique alors également dans ce cas de figure. 
 
 La zone DNS étant créée pour le sous-domaine (dans notre exemple *sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh*), ce dernier est alors considéré comme un domaine à part entière dans sa zone DNS.
 
