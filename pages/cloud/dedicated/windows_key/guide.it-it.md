@@ -5,20 +5,20 @@ slug: windows-key
 section: Utilizzo avanzato
 ---
 
-**Ultimo aggiornamento: 07/03/2018**
+**Ultimo aggiornamento: 06/07/2022**
 
 ## Obiettivo
 
 Quando installi Windows Server, la Product Key (ovvero il codice di attivazione del prodotto) potrebbe non essere registrata correttamente. In questo caso, significa che il sistema operativo è stato installato con un codice di prova valido 120 giorni e che, allo scadere di questo periodo, non potrai più utilizzare il servizio. 
 
-**Questa guida ti mostra come correggere la Product Key di Windows Server.**
+**Questa guida ti mostra come modificare la Product Key di Windows Server.**
 
 
 ## Prerequisiti
 
-- Utilizzare un [server dedicato](https://www.ovh.it/server_dedicati/){.external} con Windows
-- Avere una licenza Windows SPLA oppure [ordinarne una](https://www.ovh.it/server_dedicati/tariffazione-licenze-windows-2014.xml){.external}
-- Avere accesso al server da desktop remoto
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/os/server-windows/) con Windows installato sul tuo account OVHcloud
+- Avere una licenza Windows SPLA sul tuo account OVHcloud
+- Avere un accesso amministrativo al tuo server tramite una connessione desktop remoto
 
 
 ## Procedura
@@ -66,6 +66,8 @@ Ecco la lista delle chiavi KMS disponibili per ciascun sistema operativo:
 |Windows Server 2016 Essentials|JCKRF-N37P4-C2D82-9YXRT-4M63B|
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
+|Windows Server 2022 Standard|VDYBN-27WPP-V4HQT-9VMD4-VMK7H|
+|Windows Server 2022 Datacenter|WX4NM-KYWYW-QJJR4-XV3QB-6VM33|
 
 Fonte: [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
 
