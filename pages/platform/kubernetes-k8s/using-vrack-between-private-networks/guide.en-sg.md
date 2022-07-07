@@ -38,7 +38,7 @@ By default, your Kubernetes clusters will have public IPs. For some uses cases, 
 
 OVHcloud [vRack](https://www.ovh.com/sg/solutions/vrack/) is a private networking solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. 
 
-When your Managed Kubernetes and your other services are both in vRack, but in different private networks, some extra configuration is needed. In this document, you will find an explanation of why this extra configuration is needed and how to do it.
+When your Managed Kubernetes and your other services are both in the vRack, but in different private networks, some extra configuration is needed. In this document, you will find an explanation of why this extra configuration is needed and how to do it.
 
 
 > [!warning]
@@ -58,7 +58,7 @@ Let's have a look at our Managed Kubernetes without vRack. Both the master and t
 
 ![OVHcloud Managed Kubernetes without vRack](images/using-vrack-01.jpg){.thumbnail}
 
-All the traffic between the master and the nodes is done using this IP addresses, as are administration traffic and traffic to/from resources external to the cluster.
+All the traffic between the master and the nodes is done using these IP addresses, as does administrative traffic and traffic to/from resources outside the cluster.
 
 ![OVHcloud Managed Kubernetes without vRack](images/using-vrack-02.jpg){.thumbnail}
 
@@ -71,7 +71,7 @@ When you put an OVHcloud Managed Kubernetes cluster in a private network in the 
 
 Using the addresses and names in the schema, each node has a `eth0` network interface to the external network, and a `eth1` to the private network. `eth0` is dedicated to the communication between nodes and master, to your managed service administration traffic and to communication with external services. Pod to pod traffic, and traffic to the private network is routed through `eth1`.
 
-In order allow this routing, the default gateway for each node is in the external network, via their `eth0` interface, and only the traffic towards the private network is routed through `eth1`.
+In order to allow this routing, the default gateway for each node is in the external network, via their `eth0` interface, and only the traffic towards the private network is routed through `eth1`.
 
 ![OVHcloud Managed Kubernetes inside vRack](images/using-vrack-04.jpg){.thumbnail}
 
@@ -80,7 +80,7 @@ For this use case, no additional configuration is needed, you simply have to cho
 
 ### Communication between different private networks
 
-In some use cases you don't want to have a single private network, but several ones, while keeping the capacity to communicate between them (one of the strong points of vRack is to allow a transparent communication between your private networks).
+In some use cases you don't want to have a single private network, but several ones, while keeping the capacity to communicate between them (one of the strong points of the vRack is to allow a transparent communication between your private networks).
 
 This use case currently asks for additional configuration on the OVHcloud Managed Kubernetes cluster side.
 

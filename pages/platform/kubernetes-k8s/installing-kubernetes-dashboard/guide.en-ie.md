@@ -154,7 +154,7 @@ clusterrolebinding.rbac.authorization.k8s.io/admin-user created
 
 ### Bearer Token
 
-Next step is recovering the bearer token you will use to log in your Dashboard. Execute following command:
+Next step is recovering the bearer token you will use to log in your Dashboard. Execute the following command:
 
 ```bash
 kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user-token | awk '{print $1}')
