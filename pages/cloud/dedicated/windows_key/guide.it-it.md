@@ -5,7 +5,7 @@ slug: windows-key
 section: Utilizzo avanzato
 ---
 
-**Ultimo aggiornamento: 06/07/2022**
+**Ultimo aggiornamento: 07/07/2022**
 
 ## Obiettivo
 

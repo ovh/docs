@@ -5,7 +5,7 @@ slug: windows-key
 section: Server Management
 ---
 
-**Letzte Aktualisierung am 06.07.2022**
+**Letzte Aktualisierung am 07.07.2022**
 
 ## Ziel
 

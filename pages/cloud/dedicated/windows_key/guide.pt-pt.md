@@ -5,7 +5,7 @@ slug: windows-key
 section: Diversos
 ---
 
-**Última atualização: 06/07/2022**
+**Última atualização: 07/07/2022**
 
 ## Sumário
 
