@@ -5,7 +5,7 @@ slug: windows-klucz
 section: Inne
 ---
 
-**Ostatnia aktualizacja dnia 06-07-2022**
+**Ostatnia aktualizacja dnia 07-07-2022**
 
 ## Wprowadzenie
 
