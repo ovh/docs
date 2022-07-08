@@ -1,11 +1,11 @@
 ---
 title: 'Configuring MegaRAID for RAID Level 0'
 slug: using-the-maximum-amount-of-disk-space
-excerpt: "This guide will help you to configure your server’s disks with RAID 0, which will allow you to use all your disks usable space."
+excerpt: "Find out how to configure RAID 0 in order to use your server's entire disk space"
 section: 'Server Management'
 ---
 
-**Last updated 2nd August 2018**
+**Last updated 8th July 2022**
  
 ## Objective
 
@@ -22,14 +22,14 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/){.external} with hardware RAID
-- administrative (root) access to the server via SSH
+- A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/){.external} with hardware RAID
+- Administrative (root) access to the server via SSH
 
 ## Instructions
 
 ### Using the OVHcloud Control Panel
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click on the `Bare Metal Cloud`{.action} menu and then select your server by going to `Dedicated Servers`{.action} in the left-hand sidebar. 
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Bare Metal Cloud`{.action} menu and then select your server from `Dedicated Servers`{.action} in the left-hand sidebar. 
 
 In the **General Information** tab, look for « System (OS) » and click on `...`{.action} then on `Install`{.action} button to install a new operating system with your custom RAID 0 configuration.
 
@@ -63,19 +63,19 @@ df -h
 
 ### Using rescue mode
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click on the `Bare Metal Cloud`{.action} menu and then select your server by going to `Dedicated Servers`{.action} in the left-hand sidebar. 
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Bare Metal Cloud`{.action} menu and then select your server from `Dedicated Servers`{.action} in the left-hand sidebar. 
 
 In the **General Information** tab, look for « Boot » and click on `...`{.action} then on `Edit`{.action} button to change the boot system.
 
 ![megaraid](images/rescue_mode_raid0_1.png){.thumbnail}
 
-Next, select `Boot in rescue mode`{.action} then select `rescue64-pro`{.action} from the drop-down list.
+Next, select `Boot in rescue mode`{.action} then select `rescue-customer`{.action} from the drop-down list.
 
 In the field "Send new login details to the following email address:", specify an alternative email address if you do not want the login credentials sent to your customer account’s primary address.
 
 ![megaraid](images/rescue_mode_raid0_2.png){.thumbnail}
 
-Click `Next`{.action} and then click `Confirm`{.action} on the following screen.
+Click `Next`{.action} and then Confirm`{.action} in the **Summary**.
 
 ![megaraid](images/rescue_mode_raid0_3.png){.thumbnail}
 

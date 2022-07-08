@@ -5,7 +5,7 @@ excerpt: "Découvrez comment paramétrer les disques de votre serveur en RAID 0,
 section: 'Gestion du serveur'
 ---
 
-**Dernière mise à jour le 10/01/2022**
+**Dernière mise à jour le 08/07/2022**
  
 ## Objectif
 
@@ -69,7 +69,7 @@ Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `
 
 ![MegaRAID](images/rescue_mode_raid0_1.png){.thumbnail}
 
-Ensuite, sélectionnez `Booter en mode rescue`{.action} et choisissez `rescue64-pro`{.action} dans la liste déroulante.
+Ensuite, sélectionnez `Booter en mode rescue`{.action} et choisissez `rescue-customer`{.action} dans la liste déroulante.
 
 Dans le champ "Recevoir les identifiants du mode sur l'adresse e-mail :", spécifiez une autre adresse e-mail si vous ne souhaitez pas que les identifiants de connexion soient envoyées à l’adresse principale de votre compte OVHcloud.
 

@@ -67,7 +67,7 @@ Busque « Boot » en la zona **Información general** y haga clic en `...`{.acti
 
 ![megaraid](images/rescue_mode_raid0_1.png){.thumbnail}
 
-A continuación, seleccione `Arrancar en modo rescue`{.action} luego seleccione `rescue64-pro`{.action} de la lista desplegable.
+A continuación, seleccione `Arrancar en modo rescue`{.action} luego seleccione `rescue-customer`{.action} de la lista desplegable.
 
 En el campo **Recibir las claves del modo seleccionado en la siguiente dirección de correo electrónico:**, especifique otra dirección de correo electrónico si no desea que se envíen las claves de acceso a la dirección principal de su cuenta de OVHcloud.
 
