@@ -49,8 +49,6 @@ Por conseguinte, a renovação da autorização de introdução no mercado terá
 > Por exemplo, não poderá passar de uma fórmula *Performance 2* para uma fórmula *Pro* numa única operação.
 > Deverá **primeiro** fazer evoluir o seu alojamento a partir da fórmula *Performance 2* para a oferta *Performance 1* e **depois** para a oferta *Pro*.
 >
-> Os elementos seguintes dizem respeito às ofertas pagas. Para fazer evoluir o seu [alojamento gratuito Start10M](https://docs.ovh.com/pt/hosting/ativar-start10m/), siga estas [instruções](#start10m).
->
 
 > [!warning]
 >

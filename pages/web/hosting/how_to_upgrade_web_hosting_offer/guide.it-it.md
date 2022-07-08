@@ -49,8 +49,6 @@ Il rinnovo durerà quindi **poco più di un anno** fino al prossimo rinnovo.
 > Ad esempio, non sarà possibile passare da una formula *Performance 2* a una formula *Pro* in una sola operazione.
 > Dovrai **prima** far evolvere il tuo hosting dalla formula *Performance 2* verso l'offerta *Performance 1* **poi** verso l'offerta *Pro*.
 >
-> I seguenti elementi riguardano le offerte a pagamento. Per far evolvere il tuo [hosting gratuito Start10M](https://docs.ovh.com/it/hosting/attivare_start10m/), segui queste [istruzioni](#start10m).
->
 
 > [!warning]
 >
