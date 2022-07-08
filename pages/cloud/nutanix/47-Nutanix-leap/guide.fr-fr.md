@@ -297,7 +297,7 @@ Sur le site de reprise choisisissez ces options :
 - **Production** : `VLAN de production`
 - **Test Failback** : `VLAN de test` 
 
-Ensuite cliquez sur `Done`{.action} 
+Ensuite cliquez sur `Done`{.action}. 
 
 ![Create Recovery Plan 08](images/06-create-recovery-plan08.png){.thumbnail}
 
@@ -307,8 +307,37 @@ Le plan de reprise apparait dans la liste, il pourra être utilisé.
 
 ### Activation programmée d'un site
 
-Connectez-vous avec **Prism Central sur le cluster en FRANCE pour basculer la machine virtuelle du CANADA vers la FRANCE
+Connectez-vous avec **Prism Central** sur le cluster en FRANCE pour basculer la machine virtuelle du CANADA vers la FRANCE.
 
+ALlez dans le menu `Principal` choissisez `Recovery Plans`{.action} dans la rubrique `Data Protection`.
+
+![Planned Migration 01](images/07-planned-migration01.png){.thumbnail}
+
+    Sélectionnez le plan de reprise en utilisant la `case à cocher` à coté ensuite cliquez sur `Actions`{.action} pour faire apparaitre le menu.
+
+![Planned Migration 02](images/07-planned-migration02.png){.thumbnail}
+
+cliquez sur `Failover`{.action} 
+
+![Planned Migration 03](images/07-planned-migration03.png){.thumbnail}
+
+Dans Failover type sélectionnez `Planned Failover`{.action} et cliquez sur le bouton `Failover`{.action}
+
+![Planned Migration 04](images/07-planned-migration04.png){.thumbnail}
+
+Saisissez `Failover`{.action} et cliquez sur le bouton `Failover`{.action}
+
+![Planned Migration 05](images/07-planned-migration05.png){.thumbnail}
+
+La machine virtuelle se trouvant sur le cluster d'origine va être démarré , une dernière synchronisation des données va être faites, ensuite la machine virtuelle disparaitra du cluster d'origine pour apparaitre et démarrer sur le cluster de destinations.
+
+Au travers du tableau de bord on peut voir dans **Last Failover Status** le résultat qui est `Succeeded` si tout c'est bien déroulé.
+
+![Planned Migration 06](images/07-planned-migration06.png){.thumbnail}
+
+### Inversion de la réplication 
+
+Si l'on veut renvoyer les données sur le cluster d'origine il faut inverser la réplication dans un premier temps.
 
 
 
