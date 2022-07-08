@@ -6,7 +6,7 @@ section: Plan de reprise d'activité
 order: 05
 ---
 
-**Dernière mise à jour le 07/06/2022**
+**Dernière mise à jour le 08/07/2022**
 
 ## Objectif
 
@@ -186,11 +186,92 @@ cliquez sur  `Save`{.action}
 
 #### Création de la stratégie de protection
 
+Un stratégie de protection est une connexion entre deux *Availability zones* avec un planning de réplication qui autorise tous les types de synchronisations:
 
+- asynchrone toutes les heures
+- nearsync entre 1 & 15 minutes
+- synchrone avec un délai de 0 secondes (Ce mode necessite une latence de 5Ms entre les deux clusters)
 
+Au travers du menu principal choisissez `Protection Policies`{.action} dans le sous menu `Data Protection`.
 
+![Create Protection policy 01](images/05-create-protection-policy01.png){.thumbnail}
+
+Cliquez sur `Create Protection Policy`{.action} 
+
+![Create Protection policy 02](images/05-create-protection-policy02.png){.thumbnail}
+
+- **Policy name** : `nom de la stratégie`
+- **Location** : `Local AZ` pour choisir la zone contenant le cluster local
+- **Cluster** : `Cluster contenant les machines virtuelles à répliquer`
+
+Cliquez sur `Save`{.action}
+
+![Create Protection policy 03](images/05-create-protection-policy03.png){.thumbnail}
+
+Dans recovery location choisissez ces options :
+
+- **Location** : `PC_192.168.0.222` qui correspond à zone contenant le cluster distant
+- **Cluster** : `Cluster de destination`
+
+Cliquez sur `Save`{.action}.
+
+![Create Protection policy 04](images/05-create-protection-policy04.png){.thumbnail}
+
+Cliquez sur `Add schedule`{.action}.
+
+![Create Protection policy 05](images/05-create-protection-policy05.png){.thumbnail}
+
+Choisissez `Asynchronous dans`  **Protection Type**.
+
+Modifiez ces options dans takes **Take Snapshot Every** par `Minutes : 15` pour faire une réplication *nearsync*.
+
+Cochez la case `Take App-Consistent Snapshots` et cliquez sur `Save Schedule`{.action}.
+
+![Create Protection policy 06](images/05-create-protection-policy06.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![Create Protection policy 07](images/05-create-protection-policy07.png){.thumbnail}
+
+Cochez la `catégorie` et cliquez sur `Add`{.action}.
+
+![Create Protection policy 08](images/05-create-protection-policy08.png){.thumbnail}
+
+cliquez sur `Create`{.action}.
+
+![Create Protection policy 09](images/05-create-protection-policy09.png){.thumbnail}
+
+La stratégie de protection est activée et apparait dans le tableau de bord des **Protection Policies**
+
+![Create Protection policy 10](images/05-create-protection-policy10.png){.thumbnail}
 
 ### Activation d'un plan  de reprise d'activité.
+
+Un plan de reprise d'activité peut être manuel ou automatique en fonction du type de réplication choisi , il peut être executé en mode programmé avec les deux clusters disponibles ou en mode de desastre si le cluster d'origine n'est pas disponible. Il est aussi possible de faire un test sur le cluster distant sur un réseau isolé.
+
+Dans le menu principal choisissez `Recovery Plans`{.action} qui se trouve dans la rubrique `Data Protection`
+
+![Create Recovery Plan 01](images/06-create-recovery-plan01.png){.thumbnail}
+
+Cliquez sur `Create New Recovery Plan`{.action} 
+
+![Create Recovery Plan 02](images/06-create-recovery-plan02.png){.thumbnail}
+
+Saisisissez ces valeurs : 
+
+- **Recovery Plan Name** : `nom du plan de restauration`
+- **Primary Location** : `Local AZ` pour choisir la zone contenant le cluster local.
+- **Recovery Location** : `Nom de la Zone distante` qui servira pour le plan de reprise.
+
+Ensuite cliquez sur `Next`{.action} 
+
+![Create Recovery Plan 03](images/06-create-recovery-plan03.png){.thumbnail}
+
+Cliquez sur `Add Entities`{.action} 
+
+![Create Recovery Plan 03](images/06-create-recovery-plan04.png){.thumbnail}
+
+
 
 ### Test d'insdiponibilité d'un site
 
