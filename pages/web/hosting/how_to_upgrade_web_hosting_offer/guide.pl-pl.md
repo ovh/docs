@@ -49,8 +49,6 @@ W związku z tym będzie on trwał **nieco dłużej niż rok**, aż do kolejnego
 > Na przykład nie można przejść z formuły *Performance 2* na formułę *Pro* w jednej operacji.
 > Należy **najpierw** zmienić ofertę hostingu z poziomu oferty *Performance 2* na ofertę *Performance 1* **następnie** na ofertę *Pro*.
 >
-> Poniższe elementy dotyczą ofert płatnych. Aby zwiększyć [darmowy hosting Start10M](https://docs.ovh.com/pl/hosting/wlaczanie_start10m/), postępuj zgodnie z [instrukcjami](#start10m).
->
 
 > [!warning]
 >

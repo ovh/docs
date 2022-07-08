@@ -45,8 +45,6 @@ Celui-ci durera de ce fait **un peu plus d'un an**, jusqu'à son prochain renouv
 > Par exemple, vous ne pourrez pas passer d'une formule *Performance 2* à une formule *Pro* en une seule opération.
 > Vous devrez **d'abord** faire évoluer votre hébergement depuis la formule *Performance 2* vers l'offre *Performance 1* **puis** vers l'offre *Pro*.
 >
-> Les éléments suivants concernent les offres payantes. Pour faire évoluer votre [hébergement gratuit Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/), suivez ces [instructions](#start10m).
->
 
 > [!warning]
 >

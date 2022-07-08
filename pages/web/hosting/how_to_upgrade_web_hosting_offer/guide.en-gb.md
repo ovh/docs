@@ -45,8 +45,6 @@ The service will therefore last **a little more than a year**, until its next re
 > For example, you cannot switch from a *Performance 2* hosting to a *Pro* hosting in a single operation.
 > You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **then** to the *Professional plan*.
 >
-> The following steps concern paid offers. To upgrade a [free Start10M hosting](https://docs.ovh.com/gb/en/hosting/activate-start10m/) solution, follow [these instructions](#start10m).
->
 
 > [!warning]
 >
