@@ -6,7 +6,7 @@ section: Sécurité
 hidden: true
 ---
 
-**Dernière mise à jour le 28/06/2021**
+**Dernière mise à jour le 08/07/2022**
 
 ## Objectif
 
@@ -22,6 +22,19 @@ La double authentification par clé de sécurité Universal Second Factor (U2F) 
 - Disposer d'un port USB libre sur votre ordinateur.
 
 ## En pratique
+
+> [!warning]
+> **Ajout d'une nouvelle clé U2F sous les versions récentes de Chrome/Chromium**
+>
+> L'ajout d'une nouvelle clé U2F n'est actuellement plus possible sur les versions récentes du navigateur Chrome (à partir de Chrome v98) et ses dérivés tels que Chromium.<br>
+> L'utilisation d'une clé U2F déjà ajoutée et fonctionnelle est toujours possible sur ces versions récentes du navigateur, seul l'ajout d'une nouvelle clé U2F est impossible.
+>
+> Nos équipes [travaillent à résoudre ce dysfonctionnement](https://customer-service.status-ovhcloud.com/incidents/wl6txzgvrym8). En attendant une résolution définitive, nous vous invitons à suivre l'une de ces deux méthodes de contournement :
+>
+> - Utilisez un autre navigateur (tel que Firefox) pour ajouter votre nouvelle clé U2F puis utilisez votre navigateur Chrome/Chromium habituel pour vous connecter à l'espace client OVHcloud de manière habituelle.
+> - Réactivez le support de la fonctionnalité U2F dans votre navigateur Chrome/Chromium. Pour cela, comme dans l'image ci-dessous, copiez cette valeur `chrome://flags/#u2f-security-key-api` dans la barre d'adresses du navigateur, sélectionnez `Enabled` dans le menu déroulant de droite et redémarrez votre navigateur.
+>
+> ![2FA securitykey - Chrome](images/chrome-u2f-support.png){.thumbnail}
 
 ### Étape 1 : activer la double authentification
 
