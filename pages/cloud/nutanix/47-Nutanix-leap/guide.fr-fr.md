@@ -269,11 +269,45 @@ Ensuite cliquez sur `Next`{.action}
 
 Cliquez sur `Add Entities`{.action} 
 
-![Create Recovery Plan 03](images/06-create-recovery-plan04.png){.thumbnail}
+![Create Recovery Plan 04](images/06-create-recovery-plan04.png){.thumbnail}
 
+Cochez la `case`{.action} à coté des machines virtuelles qui font partie du plan de reprise.
 
+Ensuite cliquez sur `Add`{.action} 
 
-### Test d'insdiponibilité d'un site
+![Create Recovery Plan 05](images/06-create-recovery-plan05.png){.thumbnail}
+
+Cochez la `case`{.action} à coté des machines virtuelles qui doivent démarrer automatiquement lors de l'activation du plan de reprise.
+
+Ensuite cliquez sur `Next`{.action} 
+
+![Create Recovery Plan 06](images/06-create-recovery-plan06.png){.thumbnail}
+
+Lors de la présentation du plan de reprise  cliquez sur `OK, Got it`{.action} 
+
+![Create Recovery Plan 07](images/06-create-recovery-plan07.png){.thumbnail}
+
+Sur le site primaire choisisissez ces options :
+
+- **Production** : `VLAN de production`
+- **Test Failback** : `VLAN de test` 
+
+Sur le site de reprise choisisissez ces options :
+
+- **Production** : `VLAN de production`
+- **Test Failback** : `VLAN de test` 
+
+Ensuite cliquez sur `Done`{.action} 
+
+![Create Recovery Plan 08](images/06-create-recovery-plan08.png){.thumbnail}
+
+Le plan de reprise apparait dans la liste, il pourra être utilisé.
+
+![Create Recovery Plan 09](images/06-create-recovery-plan09.png){.thumbnail}
+
+### Activation programmée d'un site
+
+Connectez-vous avec **Prism Central sur le cluster en FRANCE pour basculer la machine virtuelle du CANADA vers la FRANCE
 
 
 
