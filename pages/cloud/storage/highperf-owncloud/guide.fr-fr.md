@@ -59,7 +59,7 @@ Puis :
 Renseignez les informations suivantes :
 
 1. Indiquez le nom de votre bucket
-2. Définissez l'hôte comme tel : `s3.<region>.perf.cloud.ovh.net`
+2. Définissez l'hôte comme tel : `s3.<region_in_lowercase>.perf.cloud.ovh.net`
 3. Définissez le port : 443
 4. Indiquez la région
 5. Activez SSL

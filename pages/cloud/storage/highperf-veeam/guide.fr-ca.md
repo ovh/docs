@@ -55,9 +55,9 @@ Si vous souhaitez limiter le nombre maximum de tâches pouvant être traitées e
 
 À l'étape **Compte** de l'assistant, spécifiez les paramètres de connexion :
 
-- Dans le champ **Point de service**, spécifiez une adresse de point de terminaison de votre stockage d'objets compatible S3 : `https://s3.<region>.perf.cloud.ovh.net`
+- Dans le champ **Point de service**, spécifiez une adresse de point de terminaison de votre stockage d'objets compatible S3 : `https://s3.<region_in_lowercase>.perf.cloud.ovh.net`
 
-- Dans le champ **Région**, indiquez une région : `<region>`.
+- Dans le champ **Région**, indiquez une région : `<region_in_lowercase>`.
 
 - Dans la liste déroulante **Credentials**, sélectionnez les informations d'identification de l'utilisateur pour accéder à votre stockage d'objets compatibles S3.
 
