@@ -6,7 +6,7 @@ section: Plan de reprise d'activité
 order: 05
 ---
 
-**Dernière mise à jour le 08/07/2022**
+**Dernière mise à jour le 11/07/2022**
 
 ## Objectif
 
@@ -337,7 +337,117 @@ Au travers du tableau de bord on peut voir dans **Last Failover Status** le rés
 
 ### Inversion de la réplication 
 
-Si l'on veut renvoyer les données sur le cluster d'origine il faut inverser la réplication dans un premier temps.
+Dans le cas d'un basculement programmée il faut pour revenir à la situation d'origine inverser la réplication.
+
+Connectez-vous sur le cluster de destination en FRANCE au travers de **Prism Central**
+
+Utilisez le `menu principal`, choisissez `Protection Policies`{.action} dans le sous-menu `Data Protection`.
+
+![Replication Inversion 01](images/08-replication-inversion01.png){.thumbnail}
+
+Cochez la `case`{.action} à gauche de la stratégie de protection et cliquez sur le boutons `Actions`{.action}.
+
+![Replication Inversion 02](images/08-replication-inversion02.png){.thumbnail}
+
+Cliquez sur le bouton `Update`{.action}.
+
+![Replication Inversion 03](images/08-replication-inversion03.png){.thumbnail}
+
+Positionnez-vous à gauche en dessous de `Primary Location ` jusqu'a qu'un choix apparaisse et cliquez sur `Edit`{.action}
+
+![Replication Inversion 04](images/08-replication-inversion04.png){.thumbnail}
+
+Modifier ces informations dans **Primary Location** :
+
+- **Location** : `Local AZ`
+- **cluster** : `cluster de la zone locale`
+
+Ensuite cliquez sur `Save`{.action}
+
+![Replication Inversion 05](images/08-replication-inversion05.png){.thumbnail}
+
+cliquez sur `Update Location`{.action}
+
+![Replication Inversion 06](images/08-replication-inversion06.png){.thumbnail}
+
+Positionnez-vous à droite en dessous de la destination jusqu'a qu'un choix apparaisse et cliquez sur `Edit`{.action}
+
+![Replication Inversion 07](images/08-replication-inversion07.png){.thumbnail}
+
+Modifier ces informations dans **Primary Location** :
+
+- **Location** : `zone de destination`
+- **cluster** : `cluster de la zone de destination`
+
+Ensuite cliquez sur `Save`{.action}.
+
+![Replication Inversion 08](images/08-replication-inversion08.png){.thumbnail}
+
+Cliquez sur `Update Location`{.action}.
+
+![Replication Inversion 09](images/08-replication-inversion09.png){.thumbnail}
+
+Cliquez sur `Next`{.action}. 
+
+![Replication Inversion 10](images/08-replication-inversion10.png){.thumbnail}
+
+Cliquez sur `Update`{.action} pour finaliser l'inversion.
+
+![Replication Inversion 11](images/08-replication-inversion11.png){.thumbnail}
+
+### Modification du plan de reprise 
+
+De même que la réplication doit être inversée il faut aussi modifier le plan de reprise pour pouvoir basculer à nouveau vers le cluster d'origine au CANADA.
+
+Allez dans le `menu principal` choisissez `Recovery Plans`{.action} dans le sous-menu `Data Protection`.
+
+![Recovery Plan Inversion 01](images/09-replication-plan-inversion01.png){.thumbnail}
+
+Sélectionnez le plan de reprise d'activité à l'aide de la `case à cocher`{.action} à gauche et ensuite cliquez sur le bouton `Actions`{.action}.
+
+![Recovery Plan Inversion 02](images/09-replication-plan-inversion02.png){.thumbnail}
+
+cliquez dans le menu sur `Update`{.action}.
+
+![Recovery Plan Inversion 03](images/09-replication-plan-inversion03.png){.thumbnail}
+
+Remplacez dans **Primary Location** à gauche `le cluster distant` par `Local AZ`{.action}.
+
+![Recovery Plan Inversion 04](images/09-replication-plan-inversion04.png){.thumbnail}
+
+Choisissez `La zone distante`{.action} dans **Recovery Location** à droite à la place de `Local AZ`.
+
+![Recovery Plan Inversion 05](images/09-replication-plan-inversion05.png){.thumbnail}
+
+Maintenant que la source et la destination du plan de reprise sont modifiées, cliquez sur `Next`{.action}.
+
+![Recovery Plan Inversion 06](images/09-replication-plan-inversion06.png){.thumbnail}
+
+Cliquez sur `Proceed`{.action}.
+
+![Recovery Plan Inversion 07](images/09-replication-plan-inversion07.png){.thumbnail}
+
+Selectionnez  la `Machine virtuelle` qui doit démarrer lors du plan de reprise et cliquez sur `Next`{.action}.
+
+![Recovery Plan Inversion 08](images/09-replication-plan-inversion08.png){.thumbnail}
+
+Sur le site primaire choisisissez ces options :
+
+- **Production** : `VLAN de production`
+- **Test Failback** : `VLAN de test` 
+
+Sur le site de reprise choisisissez ces options :
+
+- **Production** : `VLAN de production`
+- **Test Failback** : `VLAN de test` 
+
+Ensuite cliquez sur `Done`{.action}. 
+
+![Recovery Plan Inversion 09](images/09-replication-plan-inversion09.png){.thumbnail}
+
+Le plan de reprise est modifié pour fonctionner du cluster en France vers le cluster au Canada.
+
+![Recovery Plan Inversion 10](images/09-replication-plan-inversion10.png){.thumbnail}
 
 
 
