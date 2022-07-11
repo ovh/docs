@@ -15,16 +15,17 @@ section: 'RAID and disks'
 > This article is intended for experimented users that have at least basic Linux knowledge, but more importantly deeper technical knowledge on storage and especially on RAID software as well as Logical volume management (LVM)
 >
 
-With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/), you can configure Partitions, [software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/), LVM, ZFS, etc. during [OS installation](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/) from the [OVHcloud API](https://api.ovh.com/) as well as the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration). In this article, we will focus on the [OVHcloud API](https://api.ovh.com/). This will give us more details about the engine that is running in the background in order to create the partitioning on the dedicated server from the input data passed to the OVHcloud API.
+With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/), you can configure Partitions, [software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/), LVM, ZFS, etc. during [OS installation](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/) from the [OVHcloud API](https://api.ovh.com/) as well as the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration). In this article, we will focus on the [OVHcloud API](https://api.ovh.com/). This will give us more details about the engine that is running in the background in order to create the partitioning on the dedicated server from the input data passed on to the OVHcloud API.
 
 Providing in-depth details about partitioning can help customers understand why:
 
 - their custom partitioning could not be applied on their dedicated server.
-- actual partitioning on the dedicated server is slightly different from what the customer requested.
+- the actual partitioning on the dedicated server is slightly different from what the customer requested.
 
 ## Requirements
 
 * A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) **ready to be installed/re-installed** in your OVHcloud account.
+* Access to the [OVHcloud API](https://api.ovh.com/console/).
 
 > [!warning]
 >
@@ -269,7 +270,7 @@ The following table gives an overview of well known customer errors and how to f
 
 |Error message|Details|Solution(s)|
 |---|---|---|
-|Some Linux distributions such as RHEL family OSes do not support those mountpoints / mountpoint reserved/managed by OVHcloud (\*\*\*). Please remove those mountpoints and restart the installation|- You have chosen `/boot/efi` as mountpoint. OVHcloud will create this partition automatically for you if your server needs one<br />- You have chosen a mountpoint that is symlinked on some operating systems. See [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/fhs.shtml) for more details.|- Choose another mountpoint for the partition or remove this partition from your partitioning layout|
+|Some Linux distributions such as RHEL family OSes don't support those mountpoints / mountpoint reserved/managed by OVHcloud (\*\*\*). Please remove those mountpoints and restart an installation|- You have chosen `/boot/efi` as mountpoint. OVHcloud will create this partition automatically for you if your server needs one<br />- You have chosen a mountpoint that is symlinked on some operating systems. See [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/fhs.shtml) for more details.|- Choose another mountpoint for the partition or remove this partition from your partitioning layout|
 |Partition of type \*\*\* with mountpoint \*\*\* cannot fill the disk.|- You have chosen the `swap` partition to fill the disk, we disallow this to avoid creating unnecessarily large `swap` partitions|- Set a fixed size for the `swap` partition|
 |Missing `/` partition. Please add a `/` partition in your partition scheme!|- Any Linux-based OS needs at least a `/` partition|- Add a `/` partition in your partitioning layout|
 |\*\*\*. Please adjust partitions so that the \*\*\* partition fits on \*\*\* disk(s)|- You have chosen a partition with a RAID that requires a number of disks that your server can provide, but some disks are already full because of other partitions and/or this current partition|- If it is not already set on another partition, set the partition size to fill the disk<br />- Reduce the size of this partition so that it fits the disks<br />- Reduce the size of other partitions partitions so that this partition fits the disks|
@@ -284,7 +285,7 @@ In order to improve customer experience, reduce [OVHcloud support](https://help.
 |LV grouping|All partitions of type `lv` with the same RAID level will be grouped within the same VG (if possible depending on the size of the disks)|
 |VG expanding|In case of LV partitions with a RAID level of 0, the VG will span multiple PPs (therefore PDs) and no SR device will be created|
 |VG Disk fill|Remaining disk space will be filled by a VG (if any LV exists). The size of LVs attached to the VG is not affected.|
-|RAID level reducing|In case the customer choses a partition with a RAID level that requires more disks than the server has, the RAID level will be automatically reduced in the following order: 6, 10, 5, 1, 0 (or raidz3, raidz2, raidz, mirror, striped vdev for ZFS)|
+|RAID level reducing|In case the customer chooses a partition with a RAID level that requires more disks than the server has, the RAID level will be automatically reduced in the following order: 6, 10, 5, 1, 0 (or raidz3, raidz2, raidz, mirror, striped vdev for ZFS)|
 |PP size reducing|In case the customer chose a PP that requires more space than the server has, the size of this PP will be reduced so that it fits the disk. Note that in case several PPs require more space than the system has, the script will only act on the first partition, raising an error later in the script for the second oversized partition. Also note that an error will be raised if the customer set another partition to fill the disk via the OVHcloud API|
 
 ## Go further <a name="gofurther"></a>
