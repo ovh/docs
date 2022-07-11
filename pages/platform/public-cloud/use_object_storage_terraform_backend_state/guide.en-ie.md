@@ -1,7 +1,7 @@
 ---
-title: 'Using OVHcloud Object Storage as Terraform Backend to store your Terraform state'
+title: 'Using OVHcloud Standard (Swift) Object Storage as Terraform Backend to store your Terraform state'
 slug: use_object_storage_terraform_backend_state
-excerpt: 'Find out how to use an OVHcloud Object Storage as a Terraform Backend to store your Terraform state'
+excerpt: 'Find out how to use an OVHcloud Standard (Swift) Object Storage as a Terraform Backend to store your Terraform state'
 section: Tutorials
 order: 03
 ---
@@ -28,15 +28,15 @@ order: 03
  }
 </style>
 
-**Last updated 5th April 2022**
+**Last updated 11th July 2022**
 
 ## Objective
 
-It is possible to store Terraform state on a remote data store/backend like a AWS S3 bucket, a Google Cloud Storage (GCS)... but do you know that you can also store your Terraform states on an OVHcloud Object Storage container?
+It is possible to store Terraform state on a remote data store/backend like a AWS S3 bucket, a Google Cloud Storage (GCS)... but do you know that you can also store your Terraform states on an OVHcloud Standard (Swift) Object Storage container?
 
 In this tutorial you will:
 
-- create an Object Storage container
+- create an Standard (Swift) Object Storage container
 - create a Terraform remote backend
 - create an OpenStack user with Object Storage rights and retrieve OpenStack credentials
 - initialize your Terraform backend
@@ -72,7 +72,7 @@ But the common usage, in production environment, is to store it remotely.
 
 ![Terraform state schema](images/schema.png){.thumbnail}
 
-You can for example store your Terraform state on an OVHcloud Object Storage container.
+You can for example store your Terraform state on an OVHcloud Standard (Swift) Object Storage container.
 
 In order to do that you need to configure a `backend` in your Terraform HCL configuration files.
 
@@ -82,11 +82,11 @@ In order to do that you need to configure a `backend` in your Terraform HCL conf
 
 ## Instructions
 
-### Creating an Object Storage container/bucket
+### Creating a Standard Object Storage container/bucket
 
-First, you need to have an Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](../../storage/pcs/create-container/) tutorial.
+First, you need to have a Standard Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](../../storage/pcs/create-container/) tutorial.
 
-For this guide, our Object Storage container is named `terraform-state` and its region is `GRA`.
+For this guide, our Object Storage container is named `terraform-state`, its solution is `Standard (Swift)` and its region is `GRA`.
 
 ![terraform state container in OVHcloud Object Storage](images/object_storage.png){.thumbnail}
 
@@ -106,6 +106,11 @@ terraform {
 ```
 
 In this file you define a [Swift Terraform backend](https://www.terraform.io/language/settings/backends/swift) in the `GRA` region. Don't hesitate to change this parameter if you created an Object Storage container in another region.
+
+> [!primary]
+> 
+> [`Swift` Terraform remote state backend is deprecated since Terraform version 1.2.3 (June 15, 2022)](https://github.com/hashicorp/terraform/releases/tag/v1.2.3).
+> Please think about creating an OVHcloud High Performance Object Storage and use S3 remote state backend instead.
 
 We also use an OpenStack `clouds.yaml` file.
 
