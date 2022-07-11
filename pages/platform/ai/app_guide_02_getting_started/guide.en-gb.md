@@ -1,23 +1,23 @@
 ---
-title: Getting started with AI Apps
+title: AI Apps - Getting started
 slug: apps/getting-started
-excerpt: Discover AI Apps and deploy your first application
+excerpt: Discover AI Apps and unfold your first application
 section: AI Apps guides
 order: 02
 ---
 
-**Last updated January 10th, 2022.**
+**Last updated July 11th, 2022.**
 
 ## Objective
 
-OVHcloud provides a set of managed AI tools designed for building your machine learning projects. 
+OVHcloud provides a set of managed AI tools designed for building your machine learning projects.
 
 This guide explains how to get started with OVHcloud AI Apps by deploying your first application through the Control Panel.
 
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- a [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 
 ## Instructions
 
@@ -29,7 +29,7 @@ Click on the `Deploy an AI App`{.action} button and accept terms and conditions 
 
 Once clicked, you will be redirected to the creation process detailed below.
 
-![AI App subscribe](images/ai_app_subscribe.png){.thumbnail}
+![AI Apps app subscribe](images/ai_app_subscribe.png){.thumbnail}
 
 #### Step 1: Select the location
 
@@ -37,7 +37,7 @@ Select where your AI App will be hosted, meaning the physical location.
 
 > [!primary]
 >
-> OVHcloud provides multiple datacenters. You can find the capabilities for AI Apps in the guide [AI Apps capabilities](https://docs.ovh.com/gb/en/publiccloud/ai/apps/capabilities/).
+> OVHcloud provides multiple datacenters. You can find the capabilities for AI Apps in the guide [AI Apps capabilities](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/capabilities/).
 >
 
 #### Step 2: Select the application to deploy
@@ -45,13 +45,13 @@ Select where your AI App will be hosted, meaning the physical location.
 AI Apps allows a user to deploy applications from two sources:
 
 - From an OVHcloud catalog with already built-in AI models and applications.
-- From your own Docker container, giving you the full flexibility to deploy what you want. 
+- From your own Docker container, giving you the full flexibility to deploy what you want.
 
-In this tutorial, we will select **English Sentiment Analysis** from the **HuggingFace** company.
+In this tutorial, we will select an OVHcloud Docker image to deploy your first **AI App**.
 
-These AI models will work to detect the positive or negative feelings in English sentences.
+The objective is to deploy and call a simple **Flask API** for a kind of *Hello World*. The API welcomes you on your first **AI App** by sending back `Hello` followed by your `name` you sent and the end of the sentence.
 
-![AI App subscribe](images/ai_app_model.png){.thumbnail}
+![AI App subscribe](images/ai_app_image.png){.thumbnail}
 
 > [!primary]
 >
@@ -78,16 +78,16 @@ For our first deployment, we will select two instances.
 
 #### Step 4: Configure your AI App
 
-First, choose a name for your AI Apps or keep the automatically generated name.
+First, choose a name for your AI App or keep the automatically generated name.
 
 Then, you have the option to add some Key/Value labels to filter or organize your AI App access.
 
-As an example, add a label with **Key=owner** and **Value=bastien**.
+As an example, add a label with **Key=owner** and **Value=elea**.
 
 ![AI App label](images/ai_app_labels.png){.thumbnail}
 
 The last parameter to select is the **Access rule**.
-Either you restrict your AI Apps access to selected tokens, or you allow any access.
+Either you restrict your AI App access to selected tokens, or you allow any access.
 Use this option carefully; usually a Public access is used for a test, but not in production since everyone will be able to use it.
 
 We will select **Restricted Access** for this deployment.
@@ -103,14 +103,14 @@ Congratulations, your first AI App is now running on production!
 
 AI Apps can be your own Docker container or applications proposed by the OVHcloud ecosystem.
 
-In this tutorial, we deployed a HuggingFace AI model allowing us to analyze positive or negative sentiment in English sentences.
-There is no web interface to manage this AI model. What is given is an API endpoint that you can reach via HTTP.
+In this tutorial, we deployed a Flask API allowing us to return.
+There is no web interface. What is given is an API endpoint that you can reach via HTTP.
 
 #### Step 1: Check your AI Apps status
 
-First, go check your AI App details and verify that your AI App has a **running** status. Please also verify that your labels are clearly mentioned.
+First, go check your AI App details and verify that your AI Apphas a **running** status. Please also verify that your labels are clearly mentioned.
 
-In this example, we added the label **owner=bastien** and two labels were automatically added by OVHcloud.
+In this example, we added the label **owner=elea** and two labels were automatically added by OVHcloud.
 
 ![AI App details](images/ai_app_details.png){.thumbnail}
 
@@ -126,7 +126,7 @@ Click on the `New token`{.action} button then fill in a name, a label selector, 
 
 A few explanations:
 
-- **Label selector**: you can restrict the token granted by labels. You can note a specific id, a type, or any previously created label such as **owner=bastien** in our case.
+- **Label selector**: you can restrict the token granted by labels. You can note a specific id, a type, or any previously created label such as **owner=elea** in our case.
 - **Role**: *AI Platform Operator* can read and manage your AI App. *AI Platform Read only* can only read your AI App.
 - **Region**: tokens are regionalized. Select the region related to your AI App.
 
@@ -146,60 +146,53 @@ In our case, the exact cURL code is:
 
 ```bash
  curl --request POST
-    --url https://982a750f-e1f0-45cf-bf41-efc1031f1101.app.bhs.training.ai.cloud.ovh.net/predict
-    -H "Authorization: Bearer 0sTWeKaATGuV0a0cqFZeNV2tILbdxgYLoMQRxvWABHYWWDQ4JDs945o4Afhy+6Sj"
+    --url https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.training.ai.cloud.ovh.net
+    -H "Authorization: Bearer WixOC/dmSoK3d0YSd20UvLMzbSVxMTMosnz6FcBQOQDlqxAsR5BezCVKtYfu18e"
     --header 'Content-Type: application/json'
-    --data '{
-        "inputs": "I love curl so much!"
-    }'
+    --data ' "Elea" '
  ```
- 
- Giving us 
- 
+
+ Giving us
+
  ```bash
- {
-    "probabilities": [0.003630106, 0.99636996],
-    "info": {
-        "was_input_truncated": false,
-        "num_tokens": 8
-    }
-}
+ "Hello Elea. Congratulations, you have launched your first AI App!"
 ```
 
-Probability result is explained in negative sentiment then positive sentiment. Here, we obtain a 99,6% positive score.
+If you see this message with the **name** you provided, you have successfully launched your first app!
 
 #### Generate your first Python query
 
-If you want to query this model with Python, this code sample with Python Request library may suit you:
+If you want to query this API with Python, this code sample with Python Request library may suit you:
 
 ``` python
 import requests
 import json
 from requests.structures import CaseInsensitiveDict
 
-url = "https://982a750f-e1f0-45cf-bf41-efc1031f1101.app.bhs.training.ai.cloud.ovh.net/predict"
+url = "https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.training.ai.cloud.ovh.net"
 
 headers = CaseInsensitiveDict()
-headers["Authorization"] = "Bearer 0sTWeKaATGuV0a0cqFZeNV2tILbdxgYLoMQRxvWABHYWWDQ4JDs945o4Afhy+6Sj"
+headers = {'content-type': 'application/json',
+           'Accept-Charset': 'UTF-8',
+           'Authorization': 'Bearer WixOC/dmSoK3d0YSd20UvLMzbSVxMTMosnz6FcBQOQDlqxAsR5BezCVKtYfu18eC'}
 
-data = {'inputs': 'I love curl so much!'}
+data = "Elea"
+j_data = json.dumps(data)
 
-resp = requests.post(url, headers=headers, json=data)
+r = requests.post(url, data = j_data, headers = headers)
 
-print(resp.status_code)
-    
-print(resp.json())
-
+print(r.status_code)
+print(r.text)
 ```
 
 Result:
 
 ```bash
 200
-{'probabilities': [0.003630106, 0.99636996], 'info': {'was_input_truncated': False, 'num_tokens': 8}}
+ "Hello Elea. Congratulations, you have launched your first AI App!"
 ```
 
-That's it! To go further, you can imagine a script which gathers latest Facebook or Twitter messages and analyze their sentiment over time. 
+That's it! To go further, you can imagine to deploy an AI model thanks to AI Apps. Refer to this [tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 
 ### Stop and delete your AI App
 
@@ -210,9 +203,9 @@ You can keep your AI App running as long as you want. At any time, you may **sto
 Once stopped, your AI App will free up the previously allocated compute resources. Your endpoint is kept and if you restart your AI App, the same endpoint can be reused seamlessly.
 Also, when you stop your AI App, you don't book compute resources anymore which means you don't have expenses for this part. Only expenses for attached storage may occur.
 
-If you want to completely **delete** your AI App, just click on the `delete`{.action} action. 
+If you want to completely **delete** your AI App, just click on the `delete`{.action} action.
 Be sure to also delete your Object Storage data if you don't need it anymore.
 
 ## Feedback
 
-Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/KbrKSEettv)! 
+Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/KbrKSEettv)!
