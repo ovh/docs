@@ -40,13 +40,13 @@ This value should be set under the top-level s3 key in the AWS configuration fil
 user@host:~$ cat ~/.aws/config
 
 [profile default]
-region = <region>
+region = <region_in_lowercase>
 s3 =
-  endpoint_url = https://s3.<region>.perf.cloud.ovh.net
+  endpoint_url = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
   max_concurrent_requests = 20
   signature_version = s3v4
 s3api =
-  endpoint_url = https://s3.<region>.perf.cloud.ovh.net
+  endpoint_url = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
 ```
 
 You can also set this value using the `aws configure set` command.

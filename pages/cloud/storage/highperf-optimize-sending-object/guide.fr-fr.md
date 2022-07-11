@@ -38,13 +38,13 @@ Cette valeur doit être définie sous la clé s3 de premier niveau dans le fichi
 user@host:~$ cat ~/.aws/config
 
 [profile default]
-region = <region>
+region = <region_in_lowercase>
 s3 =
-  endpoint_url = https://s3.<region>.perf.cloud.ovh.net
+  endpoint_url = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
   max_concurrent_requests = 20
   signature_version = s3v4
 s3api =
-  endpoint_url = https://s3.<region>.perf.cloud.ovh.net
+  endpoint_url = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
 ```
 
 Vous pouvez également définir cette valeur à l'aide de la commande `aws configure set`.
