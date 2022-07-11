@@ -1,7 +1,7 @@
 ---
 title: Cross Service Integration
 slug: cross-service-integration
-excerpt: Find out how to use Cross Service Integration for Public Clolud Databases engines
+excerpt: Find out how to use Cross Service Integration for Public Cloud Databases engines
 section: General guides
 order: 060
 hidden: true
@@ -11,15 +11,15 @@ hidden: true
 
 ## Objective
 
-Cross Service Integration allow you to expose your Public Cloud Databases Logs and Metrics.
+Cross Service Integration allows you to expose your Public Cloud Databases Logs and Metrics.
 
-**This guide explain how to use Cross Service Integration**
+**This guide explains how to use Cross Service Integration.**
 
-> [!wraning]
+> [!warning]
 >
-> **Out of scope :**
+> **Out of scope:**
 >
-> - Expose metrics and logs outside of OVH public cloud  
+> - Expose metrics and logs outside of OVHcloud Public Cloud
 > - MongoDB engine is not supported  
 >
 
@@ -31,11 +31,11 @@ Cross Service Integration allow you to expose your Public Cloud Databases Logs a
 
 ## Concept
 
-The Cross Service Integrations for Logs and Metrics. allow you for example:
+The Cross Service Integrations for Logs and Metrics allow you for example:
 
-- To send Redis or MySQL metrics or Cassandra metrics in M3db or PostgreSQL
-- To send PostgreSQL or MySQL metrics to OpenSearch
-- To show metrics in Grafana
+- To send Redis or MySQL metrics or Cassandra metrics in M3db or PostgreSQL.
+- To send PostgreSQL or MySQL metrics to OpenSearch.
+- To show metrics in Grafana.
 
 For that you need:
 
@@ -47,8 +47,8 @@ For that you need:
 ### Integration matrix
 
 
-- All services support logs to opensearch & kafka_logs to kafka
-- All services except m3db & m3agg support metrics to pg & metrics to m3db
+- All services support logs to opensearch & kafka_logs to kafka.
+- All services except m3db & m3agg support metrics to pg & metrics to m3db.
 
 Other integrations:
 
@@ -67,7 +67,7 @@ Other integrations:
 
 #### Store yours logs or metrics
 
-Login to your OVHcloud Control Panel and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, select your engine instance then the `Service integration`{.action} tab.
+Log in to your OVHcloud Control Panel and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, select your engine instance and open the `Service integration`{.action} tab.
 
 Click on `Add an integration`{.action}:
 
@@ -77,7 +77,7 @@ Define the `Integration type`{.action} and the `Destination service`{.action}:
 
 > [!warning]
 >
-> First create a Public Cloud Database for your *Destination* service via your control panel or API.
+> First create a Public Cloud Database for your *Destination* service via your Control Panel or API.
 >
 
 > [!primary]
@@ -120,11 +120,11 @@ Your second integration is ready:
 ![Result](images/databases_07_cross_service_integration-20220708160441618.png){.thumbnail}
 
 
-Connect to your Grafana instance and browse the Dashboards:
+Connect to your Grafana instance and browse the dashboards:
 
 ![Grafana browse Dashboards](images/databases_07_cross_service_integration-2022070814063719.png){.thumbnail}
 
-then, open your new dashboard:
+Then open your new dashboard:
 
 ![PostgreSQL Dashboard](images/databases_07_cross_service_integration-20220708184410774.png){.thumbnail}
 
@@ -137,7 +137,7 @@ then, open your new dashboard:
 
 #### Get your service and cluster IDs
 
-You first need to identify your serviceId and yours clusterId.
+You first need to identify your `serviceId` and your `clusterId`.
 
 ##### **Get the desired service ID**
 
@@ -150,7 +150,7 @@ Execute the following API call:
 
 ![serviceName](images/04_advanced_configuration-20220405143910846.png){.thumbnail}
 
-From the resulting list, select and copy the service identifier corresponding to the desired service, also known as serviceName.
+From the resulting list, select and copy the service identifier corresponding to the desired service, also known as `serviceName`.
 
 ##### **Get the desired cluster ID**
 
@@ -218,7 +218,7 @@ Open the following API call, paste your service ID into the `serviceName` input 
 
 #### Get integration capabilities
 
-Get integration capabilities related to your Public Cloud Databases Service
+Get integration capabilities related to your Public Cloud Databases service:
 
 > [!tabs]
 > Cassandra
@@ -270,7 +270,7 @@ Get integration capabilities related to your Public Cloud Databases Service
 
 #### Store yours logs or metrics
 
-As a first step, you need to push your metrics or logs somewhere, in order to store them and retrieve the metrics with grafana
+As a first step, you need to push your metrics or logs somewhere, in order to store them and retrieve the metrics with Grafana.
 
 > [!primary]
 >
@@ -329,19 +329,19 @@ Fill in the form with the information corresponding to the type of integration c
 
 ![Create a new integration](images/databases_07_cross_service_integration-2022070814275082.png){.thumbnail}
 
-The destionationServiceId and the sourceServiceId correponds to the destination cluster id and to the source cluster id.
+The `destionationServiceId` and the `sourceServiceId` correspond to the destination cluster ID and to the source cluster ID.
 
 #### Allow metrics visualization into Grafana
 
 Now that metrics are stored somewhere, you need to connect your Public Cloud Databases service to a Grafana service.
 
-For that, first create a Public Cloud Database for Grafana via our control panel or API.
+For that, first create a Public Cloud Database for Grafana via our Control Panel or API.
 
-Once done, get the GrafanaDashboard integration capabilitie related to the destination service:
+Once done, get the `GrafanaDashboard` integration capability related to the destination service:
 
 ![Get Grafana Dashboard integration capabilitie](images/databases_07_cross_service_integration-20220708141900814.png){.thumbnail}
 
-Then, create a second integration from your *Destination* service name
+Then create a second integration from your *Destination* service name:
 
 > [!tabs]
 > Cassandra
@@ -391,11 +391,11 @@ Then, create a second integration from your *Destination* service name
 
 ![Create Grafana Integration](images/databases_07_cross_service_integration-20220708180105894.png){.thumbnail}
 
-Connect to your Grafana instance and browse the Dashboards:
+Connect to your Grafana instance and browse the dashboards:
 
 ![Grafana browse Dashboards](images/databases_07_cross_service_integration-2022070814063719.png){.thumbnail}
 
-then, open your new dashboard:
+Then open your new dashboard:
 
 ![PostgreSQL Dashboard](images/databases_07_cross_service_integration-20220708184410774.png){.thumbnail}
 
