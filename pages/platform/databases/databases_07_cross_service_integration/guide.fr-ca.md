@@ -2,7 +2,7 @@
 title: Intégration interservices (EN)
 slug: cross-service-integration
 excerpt: Find out how to use Cross Service Integration for Public Cloud Databases engines
-section: General guides
+section: Guides généraux
 order: 060
 hidden: true
 routes:
