@@ -445,9 +445,42 @@ Ensuite cliquez sur `Done`{.action}.
 
 ![Recovery Plan Inversion 09](images/09-replication-plan-inversion09.png){.thumbnail}
 
-Le plan de reprise est modifié pour fonctionner du cluster en France vers le cluster au Canada.
+Le plan de reprise est modifié pour fonctionner du cluster en France vers le cluster au Canada. 
+
+Si vous souhaitez revenir au fonctionnement d'origine il faudra refaire un failover , modifier le sens de la réplication et modirer le plan de reprise d'activité.
+
+
 
 ![Recovery Plan Inversion 10](images/09-replication-plan-inversion10.png){.thumbnail}
+
+### Activation du plan de reprise suite à un incident sur le cluster d'origine
+
+Il est possible d'activer les machines virtuells sur le cluster de destination en cas de problème sur le cluster d'origine, dans ce cas l'activation se fera avec un risque de perte données dans le cas d'une réplication asynchrone ou nearsync, mais si l'on a une solution de réplication synchrone aucune perte ne sera à déplorer.
+
+Dans notre cas la réplication se faisant toute les 15 minutes le risque de perte de données peut atteindre ce temps.
+
+Connectez vous au cluster qui est le destinataire des replications avec  **Prism Central** 
+
+Allez dans le `menu principal`, choisissez `Recovery Plan`{.action} dans le sous menu `Data Protection`.
+
+![Unplanned Recovery 01](images/10-unplanned-recovery01.png){.thumbnail}
+
+Sélectionnez le plan de reprise d'activité avec `la case à cocher`{.action} et cliquez sur `Actions`{.action} 
+
+![Unplanned Recovery 02](images/10-unplanned-recovery02.png){.thumbnail}
+
+Choisissez dans le menu `Failover`{.action} 
+
+![Unplanned Recovery 03](images/10-unplanned-recovery03.png){.thumbnail}
+
+Cochez `Unplanned Failover`{.action} et cliquez sur `Failover`{.action}
+
+![Unplanned Recovery 04](images/10-unplanned-recovery04.png){.thumbnail}
+
+Saisissez `Failover` et cliquez sur `Failover`{.action}
+
+![Unplanned Recovery 05](images/10-unplanned-recovery05.png){.thumbnail}
+
 
 
 
