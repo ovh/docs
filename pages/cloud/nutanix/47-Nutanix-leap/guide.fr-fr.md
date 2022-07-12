@@ -6,20 +6,20 @@ section: Plan de reprise d'activité
 order: 05
 ---
 
-**Dernière mise à jour le 11/07/2022**
+**Dernière mise à jour le 12/07/2022**
 
 ## Objectif
 
-Mettre en place des réplication avancées avec Nutanix LEAP dans **Prism Central**
+Mettre en place des réplications et des plans de reprises avancées avec Nutanix LEAP dans **Prism Central**
 
 ## Présentation
 
 Nutanix LEAP permet :
 
-- de faire des réplication asynchrones et synchrone en fonction du pack de licence choisi. 
+- de faire des réplication asynchrones et synchrones en fonction du pack de licence choisi. 
 - de tester les réplications.
-- de faire des plan de reprises avancées avec démarrage de machine virtuelles et dans certains cas une automatisation de la bascule d'un cluster à l'autre (Uniquement avec une réplication synchrone et un témoin de cluster)
-- La réplication peut se faire aussi sur des clusters stockées chez Nutanix avec la solution Xi-Leap qui n'est pas compris avec le pack de Licence OHVcloud.
+- de faire des plans de reprises d'activités avancées avec démarrage de machine virtuelles et dans certains cas une automatisation de la bascule d'un cluster à l'autre (Uniquement avec une réplication synchrone et un témoin de cluster)
+- D'avoir un destination vers le cloud de Nutanix avec Xi-Leap (Attention cette solution n'est pas disponible avec les licences fournies par OVHcloud)
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -33,28 +33,28 @@ Nutanix LEAP permet :
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté à vos clusters via **Prism Central**.
-- Avoir mis en place une interconnexion entre deux clusters, par exemple via un VPN IPsec. ou vRack si il faut une réplication synchrone. Vous pouvez utiliser cette documentation pour vous aider à interconnecter deux clusters Nutanix en IPsec [Interconnexion IPsec entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
-- Nutanix Leap a besoin de plus de resources sur la ou les VM Prism central en fonction du mode
-    + Single Mode : 4Go de RAM
-    + Scale Mode avec 3 machines virtuelles **Prism Central** : 8 Go de RAM par machines virtuelles
+- Avoir mis en place une interconnexion entre deux clusters, par exemple via un VPN IPsec ou vRack. Vous pouvez utiliser cette documentation pour vous aider à interconnecter deux clusters Nutanix en IPsec [Interconnexion IPsec entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/) et lire cette page concernant les vRACK OVHcloud [vRack](https://www.ovh.com/fr/solutions/vrack/) sur tous les sites.
+- **Prism Central** a besoin de plus de ressources en fonction du nombre de machines virtuelles dédiées à **Prism Central**
+    + Single Mode : 4Go de RAM supplémentaires
+    + Scale Mode avec 3 machines virtuelles **Prism Central** : 8 Go de RAM supplémentaire par machines virtuelles
 
 ## En pratique
 
-Notre plan de reprise d'activité au travers de Nutanix Leap sera mis en place entre deux clusters, l'un se trouvant au Canada et l'autre se trouvant en France. Les deux clusters sont reliés par un VPN IPSec avec cette configuration réseau :
+Notre plan de reprise d'activité au travers de **Nutanix Leap** sera mis en place entre deux clusters, les deux se trouvant dans deux datacenters OVHcloud l'un Canada et l'autre en France. Les deux clusters sont reliés par un VPN IPSec avec cette configuration réseau :
 
-- Lan d'administration sur cluster en France : **192.168.0.0/24**.
-- Lan d'administration du cluster au Canada **192.168.10.0/24**.
+- Lan d'administration du cluster en France : **192.168.0.0/24**.
+- Lan d'administration du cluster au Canada : **192.168.10.0/24**.
 
 - Lan commun au deux clusters pour les machines virtuelles du plan de reprise d'activité **192.168.50.0/24**.
 
 Toutes les opérations se feront au travers de **Prism Central**.
  
-### Mise en service de LEAP
+### Mise en service de Nutanix Leap
 
 #### Ajout d'une adresse IP en iSCSI sur chaque cluster 
-Avant d'activer **LEAP** il est nécessaire de rajouter une addresse IP pour les connexions iSCSI sur chacun des clusters.
+Avant d'activer **Nutanix Leap** il est nécessaire de rajouter une addresse IP pour les connexions iSCSI sur chacun des clusters.
 
-Connectez-vous à **Prism Element** au travers de **Prism Central** du cluster en France, pour vous aider vous pouvez utiliser ce guide [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/).
+Connectez-vous à **Prism Element** au travers de **Prism Central** sur le cluster se trouvant en France, pour vous aider vous pouvez utiliser ce guide [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/).
 
 Au travers du tableau de bord de **Prism Element** en haut à gauche cliquez sur `Le nom du cluster`{.action}.
 
@@ -70,7 +70,7 @@ Dans le tableau de bord de **Prism Element** en haut à gauche cliquez sur `Le n
 
 ![01 Add iSCSI address in CANADA01](images/01-isci-add-address-canada-01.png){.thumbnail}
 
-Saisissez une `adresse IP du réseau d'administration non utilisée` dans **iSCSI Data Service IP** ensuite cliquez sur `Save`{.action}.
+Saisissez une `adresse IP privée du réseau d'administration non utilisée` dans **iSCSI Data Service IP** ensuite cliquez sur `Save`{.action}.
 
 ![01 Add iSCSI address in CANADA01](images/00-isci-add-address-canada-02.png){.thumbnail}
 
@@ -90,7 +90,7 @@ Si sur l'écran apparait `Prechecks successful` Cliquez sur `Enable`{.action}.
 
 ![Activate Recovery 03](images/02-activate-recovery03.png){.thumbnail}
 
-Revenez sur l'interface **Prism Central** du Canada et faites la même manipulation.
+Revenez sur l'interface **Prism Central** du cluster se trouvant au Canada et faites la même manipulation.
 
 Cliquez sur `Recovery Plans`{.action}.
 
@@ -133,16 +133,16 @@ Le cluster distant apparait avec comme nom l'adresse IP privée du **Prism Centr
 
 ![Connect clusters 02](images/03-connect-cluster04.png){.thumbnail}
 
-Connectez-vous au cluster en France avec **Prism Central** 
+Connectez-vous au cluster en France avec **Prism Central**. 
 
-Depuis le menu principal, cliquez sur `Availability Zones`{.action} dans le sous-menu `Administration` pour constater que le site distant du Canada apparait avec l'adresse IP privée du **Prism Central** se trouvant au Canada précédé de **PC_**
+Depuis le menu principal, cliquez sur `Availability Zones`{.action} dans le sous-menu `Administration` pour constater que le site distant du Canada apparait avec l'adresse IP privée du **Prism Central** se trouvant au Canada précédé de **PC_**.
 
 ![Connect clusters 03](images/03-connect-cluster05.png){.thumbnail}
 
 ### Mise en place d'une réplication à partir du Canada vers la France.
 
 > [!warning]
-> Les machines virtuelles qui seront protégées avec **Nutanix Leap** ne doivent pas être membre d'un **Domain Protection** créé à partir de **Prism Element**. Il existe une procédure sur le site de Nutanix pour éffectuer une migration. 
+> Les machines virtuelles qui seront protégées avec **Nutanix Leap** ne doivent pas être membre d'un **Domain Protection** créé à partir de **Prism Element**. Il existe une procédure sur le site de Nutanix pour effectuer une migration. 
 >
 
 #### Création d'un catégorie contenant les machines virtuelles à répliquer
@@ -151,7 +151,7 @@ Depuis le `menu principal`, cliquez sur `Availability Zones`{.action} dans le so
 
 ![Create CATEGORIE 01](images/04-create-category01.png){.thumbnail}
 
-Cliquez sur `New Category`{.action}
+Cliquez sur `New Category`{.action}.
 
 ![Create CATEGORIE 02](images/04-create-category02.png){.thumbnail}
 
@@ -164,11 +164,11 @@ Ensuite cliquez sur `Save`{.action}.
 
 ![Create CATEGORIE 03](images/04-create-category04.png){.thumbnail}
 
-Revenez dans le menu principal sélectionnez `VMs`{.action} sous `Compute et Storage`
+Revenez dans le menu principal sélectionnez `VMs`{.action} sous `Compute et Storage`.
 
 ![Create CATEGORIE 04](images/04-create-category04.png){.thumbnail}
 
-Utilisez la  `case à cocher`{.action} à gauche de la machine virtuelle pour la séléctionner. 
+Utilisez la `case à cocher`{.action} à gauche de la machine virtuelle pour la sélectionner. 
 
 Ensuite cliquez sur le menu `Actions`{.action}.
 
@@ -178,21 +178,21 @@ Dans le menu cliquez sur `Manage Categories`{.action}
 
 ![Create CATEGORIE 06](images/04-create-category06.png){.thumbnail}
 
-Sélectionnez la catégorie créée et cliquez sur le bouton `+`{.action} de couleur bleu.
+Sélectionnez la catégorie créée et cliquez sur le bouton `+`{.action} de couleur bleue.
 
 ![Create CATEGORIE 07](images/04-create-category07.png){.thumbnail}
 
-cliquez sur `Save`{.action}
+cliquez sur `Save`{.action}.
 
 ![Create CATEGORIE 08](images/04-create-category08.png){.thumbnail}
 
 #### Création de la stratégie de protection
 
-Une stratégie de protection consiste à une connexion entre deux *Availability zones* avec un planning de réplication qui autorise tous les types de synchronisations:
+Une stratégie de protection consiste à une connexion entre deux *Availability zones* avec un planning de réplication qui autorise tous les types de synchronisations :
 
 - asynchrone toutes les heures
 - nearsync entre 1 & 15 minutes
-- synchrone avec un délai de 0 secondes (Ce mode nécessite une latence inférieure à 5Ms entre les deux clusters)
+- synchrone avec un délai de 0 secondes (Ce mode nécessite une latence inférieure à 5ms entre les deux clusters)
 
 Depuis le menu principal, cliquez `Protection Policies`{.action} sous `Data Protection`.
 
@@ -207,7 +207,7 @@ Choisissez le `nom de la stratégie` dans **Policy name**
 Ensuite dans **Primary location** choisissez ces options : 
 
 - **Location** : `Local AZ` pour choisir la zone contenant le cluster local.
-- **Cluster** : `Cluster contenant les machines virtuelles à répliquer`.
+- **Cluster** : `Cluster contenant ls machines virtuelles à répliquer`.
 
 Cliquez sur `Save`{.action}.
 
@@ -216,7 +216,7 @@ Cliquez sur `Save`{.action}.
 Dans **Recovery location** choisissez ces options :
 
 - **Location** : `PC_192.168.0.222` qui correspond à zone contenant le cluster distant
-- **Cluster** : `Cluster de destination à l'intérieur de cette zone`
+- **Cluster** : `Cluster de destination à l'intérieur de la zone de destination zone`
 
 Cliquez sur `Save`{.action}.
 
@@ -238,7 +238,7 @@ Cliquez sur `Next`{.action}.
 
 ![Create Protection policy 07](images/05-create-protection-policy07.png){.thumbnail}
 
-Cochez la `catégorie` et cliquez sur `Add`{.action}.
+Séléctionnez la `catégorie` dont fait partie les machines virtuelles et cliquez sur `Add`{.action}.
 
 ![Create Protection policy 08](images/05-create-protection-policy08.png){.thumbnail}
 
@@ -260,37 +260,39 @@ En fonction du choix de réplication et de la disponibilité d'un témoin de clu
 - Automatisation du plan de reprise d'activité en réplication synchrone avec un un témoin de cluster.
 - Choix du démarrage des machines virtuelles lors de l'activation du plan de reprise d'activité avcc exécution d'un script.
 
+Dans notre exemple se sera un plan de reprise d'activité manuel avec le démarrage automatique des machines virtuelles.
+
 #### Création 
 
 Depuis le menu principal choisissez `Recovery Plans`{.action} sous `Data Protection`.
 
 ![Create Recovery Plan 01](images/06-create-recovery-plan01.png){.thumbnail}
 
-Cliquez sur `Create New Recovery Plan`{.action} 
+Cliquez sur `Create New Recovery Plan`{.action}. 
 
 ![Create Recovery Plan 02](images/06-create-recovery-plan02.png){.thumbnail}
 
 Saisisissez ces valeurs : 
 
-- **Recovery Plan Name** : `nom du plan de restauration`
+- **Recovery Plan Name** : `nom du plan de reprise d'activité`.
 - **Primary Location** : `Local AZ` pour choisir la zone contenant le cluster local.
-- **Recovery Location** : `Nom de la Zone distante` qui servira pour le plan de reprise.
+- **Recovery Location** : `Nom de la Zone distante` qui servira pour le plan de reprise d'activité.
 
-Ensuite cliquez sur `Next`{.action} 
+Ensuite cliquez sur `Next`{.action}. 
 
 ![Create Recovery Plan 03](images/06-create-recovery-plan03.png){.thumbnail}
 
-Cliquez sur `Add Entities`{.action} 
+Cliquez sur `Add Entities`{.action}. 
 
 ![Create Recovery Plan 04](images/06-create-recovery-plan04.png){.thumbnail}
 
-Cochez la `case`{.action} à coté des machines virtuelles qui font partie du plan de reprise.
+Cochez la `case`{.action} à coté des machines virtuelles qui font partie du plan de reprise d'activité.
 
-Ensuite cliquez sur `Add`{.action} 
+Ensuite cliquez sur `Add`{.action}.
 
 ![Create Recovery Plan 05](images/06-create-recovery-plan05.png){.thumbnail}
 
-Cochez la `case`{.action} à coté des machines virtuelles qui doivent démarrer automatiquement lors de l'activation du plan de reprise.
+Cochez la `case`{.action} à coté des machines virtuelles qui doivent démarrer automatiquement lors de l'activation du plan de reprise d'activité.
 
 Ensuite cliquez sur `Next`{.action}. 
 
@@ -302,19 +304,19 @@ Lors de la présentation du plan de reprise cliquez sur `OK, Got it`{.action}.
 
 Sur le site primaire choisisissez ces options :
 
-- **Production** : `VLAN de production`
-- **Test Failback** : `VLAN de test` 
+- **Production** : `VLAN de production`.
+- **Test Failback** : `VLAN de test`. 
 
 Sur le site de reprise choisisissez ces options :
 
-- **Production** : `VLAN de production`
-- **Test Failback** : `VLAN de test` 
+- **Production** : `VLAN de production`.
+- **Test Failback** : `VLAN de test`. 
 
 Ensuite cliquez sur `Done`{.action}. 
 
 ![Create Recovery Plan 08](images/06-create-recovery-plan08.png){.thumbnail}
 
-Le plan de reprise apparait dans la liste, il pourra être utilisé.
+Le plan de reprise apparait dans la liste.
 
 ![Create Recovery Plan 09](images/06-create-recovery-plan09.png){.thumbnail}
 
@@ -328,23 +330,23 @@ Allez dans le menu `Principal` choisissez `Recovery Plans`{.action} dans la rubr
 
 ![Planned Migration 01](images/07-planned-migration01.png){.thumbnail}
 
-    Sélectionnez le plan de reprise en utilisant la `case à cocher` à coté ensuite cliquez sur `Actions`{.action} pour faire apparaitre le menu.
+Sélectionnez le plan de reprise en utilisant la `case à cocher` à coté ensuite cliquez sur `Actions`{.action} pour faire apparaitre le menu.
 
 ![Planned Migration 02](images/07-planned-migration02.png){.thumbnail}
 
-cliquez sur `Failover`{.action} 
+cliquez sur `Failover`{.action}. 
 
 ![Planned Migration 03](images/07-planned-migration03.png){.thumbnail}
 
-Dans Failover type sélectionnez `Planned Failover`{.action} et cliquez sur le bouton `Failover`{.action}
+Dans Failover type sélectionnez `Planned Failover`{.action} et cliquez sur le bouton `Failover`{.action}.
 
 ![Planned Migration 04](images/07-planned-migration04.png){.thumbnail}
 
-Saisissez `Failover`{.action} et cliquez sur le bouton `Failover`{.action}
+Saisissez `Failover`{.action} et cliquez sur le bouton `Failover`{.action}.
 
 ![Planned Migration 05](images/07-planned-migration05.png){.thumbnail}
 
-La machine virtuelle se trouvant sur le cluster d'origine va être démarré , une dernière synchronisation des données va être faites, ensuite la machine virtuelle disparaitra du cluster d'origine pour apparaitre et démarrer sur le cluster de destinations.
+La machine virtuelle se trouvant sur le cluster d'origine va être démarré,  une dernière synchronisation des données va être faites, ensuite la machine virtuelle disparaitra du cluster d'origine pour apparaitre et démarrer sur le cluster de destinations.
 
 Au travers du tableau de bord on peut voir dans **Last Failover Status** le résultat qui est `Succeeded` si tout c'est bien déroulé.
 
@@ -352,9 +354,9 @@ Au travers du tableau de bord on peut voir dans **Last Failover Status** le rés
 
 ##### Inversion de la réplication 
 
-Dans le cas d'un basculement programmée il faut inverser la réplication pour continuer à avoir la redondance entre les deux sites.
+Dans le cas d'un basculement programmé il faut inverser la réplication pour continuer à avoir la redondance entre les deux sites.
 
-Connectez-vous sur le cluster de destination en FRANCE au travers de **Prism Central**
+Connectez-vous sur le cluster de destination en FRANCE au travers de **Prism Central**.
 
 Utilisez le `menu principal`, choisissez `Protection Policies`{.action} dans le sous-menu `Data Protection`.
 
@@ -368,7 +370,7 @@ Cliquez sur le bouton `Update`{.action}.
 
 ![Replication Inversion 03](images/08-replication-inversion03.png){.thumbnail}
 
-Positionnez-vous à gauche en dessous de `Primary Location ` jusqu'a qu'un choix apparaisse et cliquez sur `Edit`{.action}
+Positionnez-vous à gauche en dessous de `Primary Location` jusqu'a qu'un choix apparaisse et cliquez sur `Edit`{.action}.
 
 ![Replication Inversion 04](images/08-replication-inversion04.png){.thumbnail}
 
@@ -377,22 +379,22 @@ Modifier ces informations dans **Primary Location** :
 - **Location** : `Local AZ`
 - **cluster** : `cluster de la zone locale`
 
-Ensuite cliquez sur `Save`{.action}
+Ensuite cliquez sur `Save`{.action}.
 
 ![Replication Inversion 05](images/08-replication-inversion05.png){.thumbnail}
 
-cliquez sur `Update Location`{.action}
+Cliquez sur `Update Location`{.action}.
 
 ![Replication Inversion 06](images/08-replication-inversion06.png){.thumbnail}
 
-Positionnez-vous à droite en dessous de la destination jusqu'a qu'un choix apparaisse et cliquez sur `Edit`{.action}
+Positionnez-vous à droite en dessous de la destination jusqu'a qu'un choix apparaisse et cliquez sur `Edit`{.action}.
 
 ![Replication Inversion 07](images/08-replication-inversion07.png){.thumbnail}
 
 Modifier ces informations dans **Primary Location** :
 
-- **Location** : `zone de destination`
-- **cluster** : `cluster de la zone de destination`
+- **Location** : `zone de destination`.
+- **cluster** : `cluster de la zone de destination`.
 
 Ensuite cliquez sur `Save`{.action}.
 
@@ -412,13 +414,13 @@ Cliquez sur `Update`{.action} pour finaliser l'inversion.
 
 ##### Modification du plan de reprise 
 
-De même que la réplication doit être inversée il faut aussi modifier le plan de reprise d'activité pour avoir la possibilité de migrer vers le site distant :
+De même que la réplication doit être inversée il faut aussi modifier le plan de reprise d'activité pour avoir la possibilité de migrer vers le site distant.
 
 Allez dans le `menu principal` choisissez `Recovery Plans`{.action} dans le sous-menu `Data Protection`.
 
 ![Recovery Plan Inversion 01](images/09-replication-plan-inversion01.png){.thumbnail}
 
-Sélectionnez le plan de reprise d'activité à l'aide de la `case à cocher`{.action} à gauche et ensuite cliquez sur le bouton `Actions`{.action}.
+Sélectionnez le plan de reprise d'activité à l'aide de la `case à cocher`{.action} à sa gauche ensuite cliquez sur le bouton `Actions`{.action}.
 
 ![Recovery Plan Inversion 02](images/09-replication-plan-inversion02.png){.thumbnail}
 
@@ -442,7 +444,7 @@ Cliquez sur `Proceed`{.action}.
 
 ![Recovery Plan Inversion 07](images/09-replication-plan-inversion07.png){.thumbnail}
 
-Selectionnez  la `Machine virtuelle` qui doit démarrer lors du plan de reprise et cliquez sur `Next`{.action}.
+Sélectionnez la `Machine virtuelle` qui doit démarrer lors du plan de reprise et cliquez sur `Next`{.action}.
 
 ![Recovery Plan Inversion 08](images/09-replication-plan-inversion08.png){.thumbnail}
 
@@ -451,7 +453,7 @@ Sur le site primaire choisisissez ces options :
 - **Production** : `VLAN de production`
 - **Test Failback** : `VLAN de test` 
 
-Sur le site de reprise choisisissez ces options :
+Sur le site de destination choisisissez ces options :
 
 - **Production** : `VLAN de production`
 - **Test Failback** : `VLAN de test` 
@@ -460,7 +462,7 @@ Ensuite cliquez sur `Done`{.action}.
 
 ![Recovery Plan Inversion 09](images/09-replication-plan-inversion09.png){.thumbnail}
 
-Le plan de reprise est modifié pour fonctionner du cluster en France vers le cluster au Canada. 
+Le plan de reprise d'activité est modifié pour permettre la bascule des machines virtuelles du cluster en se trouvant en France celui se trouvant au Canada. 
 
 Si vous souhaitez revenir au fonctionnement d'origine il faudra refaire un failover , modifier le sens de la réplication et modirer le plan de reprise d'activité.
 
@@ -468,11 +470,13 @@ Si vous souhaitez revenir au fonctionnement d'origine il faudra refaire un failo
 
 #### Activation du plan de reprise suite à un incident sur le cluster d'origine
 
-Il est possible d'activer les machines virtuelles sur le cluster de destination en cas de problème sur le cluster d'origine, dans ce cas l'activation se fera avec un risque de perte données dans le cas d'une réplication asynchrone ou nearsync, mais si l'on a une solution de réplication synchrone aucune perte ne sera à déplorer.
+Il est possible d'activer les machines virtuelles sur le cluster de destination en cas de problème sur le cluster d'origine, dans ce cas l'activation se fera avec un risque de perte données dans le cas d'une réplication asynchrone ou nearsync, 
 
-Dans notre cas la réplication se faisant toute les 15 minutes le risque de perte de données peut atteindre ce temps.
+Si l'on utilise une solution de réplication synchrone aucune perte de données ne sera à déplorer.
 
-Connectez-vous au cluster qui est le destinataire des replications avec  **Prism Central** 
+Dans notre cas la réplication est programmée toute les 15 minutes, le risque de perte de données peut dans le pire des cas correspondre à cette durée.
+
+Connectez-vous au cluster qui est le destinataire des replications avec **Prism Central** 
 
 Allez dans le `menu principal`, choisissez `Recovery Plan`{.action} dans le sous menu `Data Protection`.
 
@@ -494,12 +498,15 @@ Saisissez `Failover` et cliquez sur `Failover`{.action}
 
 ![Unplanned Recovery 05](images/10-unplanned-recovery05.png){.thumbnail}
 
-La machine virtuelle va démarrer sur le cluster secondaire sans essayer de faire de réplication. Dans ce type de reprise il faudra supprimer toute trace de réplication et de de connexion avec le cluster d'origine.
-
+La machine virtuelle membre du plan de reprise d'activité va démarrer sur le cluster de destination avec le contenu de la dernière réplication.
 
 ## Aller plus loin
 
+[Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
+
 [Interconnexion IPsec entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
+
+[vRack](https://www.ovh.com/fr/solutions/vrack/)
 
 [Documentation Nutanix LEAP](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6_1)
 
