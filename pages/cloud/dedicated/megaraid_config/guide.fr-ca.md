@@ -2,10 +2,10 @@
 title: 'Configurer votre MegaRAID en RAID 0'
 slug: using-the-maximum-amount-of-disk-space
 excerpt: "Découvrez comment paramétrer les disques de votre serveur en RAID 0, afin d'exploiter le maximum d’espace utilisable"
-section: 'Gestion du serveur'
+section: 'RAID & disques'
 ---
 
-**Dernière mise à jour le 10/01/2022**
+**Dernière mise à jour le 08/07/2022**
  
 ## Objectif
 
@@ -31,7 +31,7 @@ Le niveau de RAID par défaut des serveurs OVHcloud est le RAID 1\. Celui-ci dou
 
 Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
 
-Recherchez « Système (OS) » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Installer`{.action} pour installer un nouveau système d'exploitation avec votre configuration RAID 0 personnalisée.
+Recherchez « Dernier système d'exploitation (OS) installé par OVHcloud » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Installer`{.action} pour installer un nouveau système d'exploitation avec votre configuration RAID 0 personnalisée.
 
 Sélectionnez **Installer à partir d'un template OVH** puis cliquez sur `Suivant`{.action}.
 
@@ -69,7 +69,7 @@ Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `
 
 ![MegaRAID](images/rescue_mode_raid0_1.png){.thumbnail}
 
-Ensuite, sélectionnez `Booter en mode rescue`{.action} et choisissez `rescue64-pro`{.action} dans la liste déroulante.
+Ensuite, sélectionnez `Booter en mode rescue`{.action} et choisissez `rescue-customer`{.action} dans la liste déroulante.
 
 Dans le champ "Recevoir les identifiants du mode sur l'adresse e-mail :", spécifiez une autre adresse e-mail si vous ne souhaitez pas que les identifiants de connexion soient envoyées à l’adresse principale de votre compte OVHcloud.
 
@@ -111,7 +111,7 @@ Dans cet exemple, 252 est l'identifiant du boîtier du disque.
 Après avoir défini le nouveau niveau de RAID, vous pouvez vérifier les paramètres à l'aide de la commande suivante :
 
 ```sh
-MegaCli -LDInfo -Lall -a0 |grep -i size
+MegaCli -LDInfo -Lall -a0 | grep -i size
 ```
 
 ## Aller plus loin

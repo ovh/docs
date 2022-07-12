@@ -26,14 +26,14 @@ El nivel de RAID por defecto de los servidores de OVHcloud es el RAID 1. duplica
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) con RAID por hardware.
+- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/) con RAID por hardware.
 - Tener acceso al servidor por SSH como administrador (root).
 
 ## Procedimiento
 
 ### Utilizar el área de cliente de OVHcloud
 
-En el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}. 
+En el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}. 
 
 Busque "Último sistema operativo (SO) instalado por OVHcloud" en la zona `Información general`{.action} y haga clic en `...`{.action} y, seguidamente, en `Instalar`{.action} para instalar un nuevo sistema operativo con su configuración RAID 0 personalizada.
 
@@ -67,7 +67,7 @@ df -h
 
 ### Utilizar el modo de rescate
 
-En el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}.
+En el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}.
 
 Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action} para cambiar el sistema de arranque.
 
@@ -122,8 +122,8 @@ MegaCli -LDInfo -Lall -a0 | grep -i size
 
 [Sustituir en caliente un disco en un servidor con RAID por hardware](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/)
 
-[Sustituir en caliente un disco en un servidor con RAID por software](https://docs.ovh.com/us/es/dedicated/hotswap-raid-soft/)
+[Sustituir en caliente un disco en un servidor con RAID por software](https://docs.ovh.com/es/dedicated/hotswap-raid-soft/)
 
-[Gestión del RAID por hardware](https://docs.ovh.com/us/es/dedicated/raid-hardware/)
+[Gestión del RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
