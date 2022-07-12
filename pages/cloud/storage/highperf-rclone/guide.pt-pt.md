@@ -42,10 +42,10 @@ provider = Other
 env_auth = false
 access_key_id = <access_key>
 secret_access_key = <secret_key>
-endpoint = https://s3.<region>.perf.cloud.ovh.net
+endpoint = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
 acl = private
-region = <region>
-location_constraint = <region>
+region = <region_in_lowercase>
+location_constraint = <region_in_lowercase>
 ```
 
 Rclone is now ready for use.

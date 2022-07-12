@@ -49,8 +49,6 @@ Este plazo durará **un poco más de un año** hasta su próxima renovación.
 > Por ejemplo, no podrá pasar de una fórmula *Performance 2* a una fórmula *Profesional* en una sola operación.
 > **En primer lugar**, deberá migrar su alojamiento desde la fórmula *Performance 2* al plan *Performance 1* y **después** al plan *Profesional*.
 >
-> Los siguientes elementos se refieren a las ofertas de pago. Para mejorar su [hosting gratuito Start10M](https://docs.ovh.com/es/hosting/activar-start10m/), siga [estas instrucciones](#start10M).
->
 
 > [!warning]
 >

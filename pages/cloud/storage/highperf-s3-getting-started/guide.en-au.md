@@ -6,7 +6,7 @@ section: Object Storage S3 High Performance
 order: 020
 ---
 
-**Last updated 6<sup>th</sup> December 2021**
+**Last updated 12th July 2022**
 
 ## Objective
 
@@ -111,6 +111,7 @@ user@host:~$ pip3 install python-openstackclient awscli awscli-plugin-endpoint
 
 > [!primary]
 >
+> `awscli-plugin-endpoint` is optional  
 > Install the `groff` package if you want to use the command line help
 >
 #### Configuration
@@ -130,7 +131,7 @@ user@host:~$ source openrc.sh
 > ![Download Openrc file](images/HighPerf-S3-Getting-started-20211123123335113.png)
 >
 
-Finally, with the python-openstack client:
+Finally, with the `python-openstack` client:
 
 ```bash
 user@host:~$ openstack ec2 credentials create
@@ -146,7 +147,7 @@ user@host:~$ openstack ec2 credentials create
 +------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Configure the aws client as follows:
+Configure the `aws` client as follows:
 
 ```bash
 user@host:~$ cat ~/.aws/credentials
@@ -157,21 +158,30 @@ aws_secret_access_key = <secret_key>
 
 user@host:~$ cat ~/.aws/config
 
+# Delete the next two lines if you don't installed `awscli-plugin-endpoint`
+[plugins]
+endpoint = awscli_plugin_endpoint
+
 [profile default]
-region = <region>
+region = <region_in_lowercase>
 s3 =
-  endpoint_url = https://s3.<region>.perf.cloud.ovh.net
+  endpoint_url = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
   signature_version = s3v4
 s3api =
-  endpoint_url = https://s3.<region>.perf.cloud.ovh.net
+  endpoint_url = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
 ```
+
+> [!primary]
+>
+> The region must be lowercase, not uppercase!
+> Else, the `aws` CLI may not recognize the region and will redirect you to the default endpoint `https://s3.<region_in_lowercase>.amazonaws.com/` instead of your defined endpoint URL.
+>
 
 > [!primary]
 >
 > You can also use interactive configuration by running the following command:
 > `aws --configure`
 >
-
 
 Here are the configuration values you can specifically set:
 
@@ -188,7 +198,7 @@ Here are the configuration values you can specifically set:
 
 > [!primary]
 >
-> If you don't have `awscli-plugin-endpoint` installed, you must add `--endpoint-url https://s3.<region>.perf.cloud.ovh.net` to the command line.
+> If you don't have `awscli-plugin-endpoint` installed, you must add `--endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net` to the command line.
 >
 
 > [!primary]
@@ -200,7 +210,7 @@ Here are the configuration values you can specifically set:
 
 ```bash
 aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region>.perf.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
+aws --endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
 ```
 
 **List your buckets**

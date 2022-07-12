@@ -1,11 +1,11 @@
 ---
-title: 'Configuring MegaRAID for RAID Level 0'
+title: Configuring MegaRAID for RAID Level 0
 slug: using-the-maximum-amount-of-disk-space
-excerpt: "This guide will help you to configure your server’s disks with RAID 0, which will allow you to use all your disks usable space."
-section: 'Server Management'
+excerpt: "Find out how to configure RAID 0 in order to use your server's entire disk space"
+section: RAID and disks
 ---
 
-**Last updated 2nd August 2018**
+**Last updated 8th July 2022**
  
 ## Objective
 
@@ -13,7 +13,7 @@ Redundant Array of Independent Disks (RAID) is a utility that mitigates data los
 
 The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the usable disk space.
 
-**This guide will help you to configure your server’s disks with RAID 0, which will allow you to use all your disks' usable space.**
+**This guide explains how to configure your server’s disks with RAID 0, which will allow you to use all your disks' usable space.**
 
 > [!warning]
 > 
@@ -22,16 +22,16 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en/bare-metal/){.external} with hardware RAID
-- administrative (root) access to the server via SSH
+- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/){.external} with hardware RAID
+- Administrative (root) access to the server via SSH
 
 ## Instructions
 
 ### Using the OVHcloud Control Panel
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, click on the `Bare Metal Cloud`{.action} menu and then select your server by going to `Dedicated Servers`{.action} in the left-hand sidebar. 
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} menu and then select your server from `Dedicated Servers`{.action} in the left-hand sidebar. 
 
-In the **General Information** tab, look for « System (OS) » and click on `...`{.action} then on `Install`{.action} button to install a new operating system with your custom RAID 0 configuration.
+In the **General Information** tab, look for `Last operating system (OS) installed by OVHcloud` and click on `...`{.action}. Then click the `Install`{.action} button to install a new operating system with your custom RAID 0 configuration.
 
 Now select **Install from an OVHcloud template** and then click `Next`{.action}.
 
@@ -43,7 +43,7 @@ Tick the boxes for **Customise the hardware RAID configuration** and **Customise
 
 ![megaraid](images/server_installation_raid0_2.png){.thumbnail}
 
-Select raid0 from the RAID drop-down list and click `Next`{.action}.
+Select `raid0` from the RAID drop-down list and click `Next`{.action}.
 
 ![megaraid](images/server_installation_raid0_3.png){.thumbnail}
 
@@ -63,19 +63,19 @@ df -h
 
 ### Using rescue mode
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, click on the `Bare Metal Cloud`{.action} menu and then select your server by going to `Dedicated Servers`{.action} in the left-hand sidebar. 
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} menu and then select your server from `Dedicated Servers`{.action} in the left-hand sidebar. 
 
-In the **General Information** tab, look for « Boot » and click on `...`{.action} then on `Edit`{.action} button to change the boot system.
+In the **General Information** tab, look for `Boot` and click on `...`{.action}. Then click the `Edit`{.action} button to change the boot system.
 
 ![megaraid](images/rescue_mode_raid0_1.png){.thumbnail}
 
-Next, select `Boot in rescue mode`{.action} then select `rescue64-pro`{.action} from the drop-down list.
+Next, select `Boot in rescue mode`{.action} then select `rescue-customer`{.action} from the drop-down list.
 
 In the field "Send new login details to the following email address:", specify an alternative email address if you do not want the login credentials sent to your customer account’s primary address.
 
 ![megaraid](images/rescue_mode_raid0_2.png){.thumbnail}
 
-Click `Next`{.action} and then click `Confirm`{.action} on the following screen.
+Click `Next`{.action} and then Confirm`{.action} in the **Summary**.
 
 ![megaraid](images/rescue_mode_raid0_3.png){.thumbnail}
 
@@ -109,15 +109,15 @@ In this example, 252 is the ID of the drive enclosure.
 After setting the new RAID level you can check the settings with the following command:
 
 ```sh
-MegaCli -LDInfo -Lall -a0 |grep -i size
+MegaCli -LDInfo -Lall -a0 | grep -i size
 ```
 
 ## Go further
 
-[Hot Swap – Hardware RAID](../hotswap-raid-hard/){.external}
+[Hot Swap – Hardware RAID](../hotswap-raid-hard/)
 
-[Hot Swap – Software RAID](../hotswap-raid-soft/){.external}
+[Hot Swap – Software RAID](../hotswap-raid-soft/)
 
-[Hardware RAID](../raid-hard/){.external} 
+[Hardware RAID](../raid-hard/)
 
 Join our community of users on <https://community.ovh.com/en/>

@@ -57,8 +57,8 @@ If you wish to limit the maximum number of tasks that can be processed at once, 
 
 At the **Account** step of the wizard, specify the connection settings:
 
-- In the **Service point** field, specify an endpoint address of your S3 Compatible object storage: `https://s3.<region>.perf.cloud.ovh.net`.
-- In the **Region** field, specify a region: `<region>`.
+- In the **Service point** field, specify an endpoint address of your S3 Compatible object storage: `https://s3.<region_in_lowercase>.perf.cloud.ovh.net`.
+- In the **Region** field, specify a region: `<region_in_lowercase>`.
 - From the **Credentials** drop-down list, select user credentials to access your S3 Compatible object storage.
 
 If you already have a credentials record that was configured in advance, select it from the drop-down list. Otherwise, click `Add`{.action} and provide your access and secret keys. You can also click the `Manage cloud accounts`{.action} link to add, edit or remove a credentials record.

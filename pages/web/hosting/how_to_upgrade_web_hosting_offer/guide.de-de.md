@@ -49,8 +49,6 @@ Die Laufzeit des Dienstes ist somit **entsprechend länger als die regulären 12
 > So können Sie zum Beispiel nicht von *Performance 2* auf *Pro* wechseln.
 > Sie müssen Ihr Hosting **zuerst** von *Performance 2* zum *Performance 1* **und dann** zum *Pro*-Angebot umstellen.
 >
-> Die folgenden Punkte betreffen kostenpflichtige Angebote. Um Ihr kostenloses [Start 10M Hosting](https://docs.ovh.com/de/hosting/start10m-aktivieren/) anzupassen, folgen Sie [diesen Anweisungen](#start10m).
->
 
 > [!warning]
 >

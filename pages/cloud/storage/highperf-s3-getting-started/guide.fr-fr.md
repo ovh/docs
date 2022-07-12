@@ -115,6 +115,7 @@ user@host:~$ pip3 install python-openstackclient awscli awscli-plugin-endpoint
 
 > [!primary]
 >
+> `awscli-plugin-endpoint` est optionel  
 > Installez le package `groff` si vous souhaitez utiliser l'aide en ligne de commande.
 >
 
@@ -162,13 +163,17 @@ aws_secret_access_key = <secret_key>
 
 user@host:~$ cat ~/.aws/config
 
+# Delete the next two lines if you don't installed `awscli-plugin-endpoint`
+[plugins]
+endpoint = awscli_plugin_endpoint
+
 [profile default]
-region = <region>
+region = <region_in_lowercase>
 s3 =
-  endpoint_url = https://s3.<region>.perf.cloud.ovh.net
+  endpoint_url = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
   signature_version = s3v4
 s3api =
-  endpoint_url = https://s3.<region>.perf.cloud.ovh.net
+  endpoint_url = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
 ```
 
 > [!primary]
@@ -192,7 +197,7 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 
 > [!primary]
 >
-> Si vous n'avez pas installé `awscli-plugin-endpoint`, vous devez ajouter `--endpoint-url https://s3.<region>.perf.cloud.ovh.net` à la ligne de commande.
+> Si vous n'avez pas installé `awscli-plugin-endpoint`, vous devez ajouter `--endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net` à la ligne de commande.
 >
 
 > [!primary]
@@ -204,7 +209,7 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 
 ```bash
 aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region>.perf.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
+aws --endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
 ```
 
 **Lister vos buckets**

@@ -1,119 +1,129 @@
 ---
-title: Configurar  MegaRAID para RAID nivel 0
-excerpt: Esta guía le ayudará a configurar los discos de su servidor en RAID 0, lo que le permitirá usar el espacio útil de todos sus discos.
-slug: Usar-la-cantidad-maxima-de-espacio-en-el-disco
+title: Configurar MegaRAID para RAID nivel 0
+excerpt: Cómo configurar los discos del servidor en RAID 0 para aprovechar al máximo el espacio útil
+slug: using-the-maximum-amount-of-disk-space
 section: RAID y discos
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 08/07/2022**
+
 ## Objetivo
 
-Un grupo/matriz redundante de discos independientes (RAID) es una utilidad que mitiga la pérdida de datos en un servidor mediante la replicación de datos en dos o más discos.
+El RAID (Redundant Array of Independent Disks) es un conjunto de técnicas que mitigan la pérdida de datos en un servidor, replicando la información en varios discos.
 
-El nivel de RAID predeterminado para las instalaciones del servidor OVHcloud es RAID 1, que duplica el espacio ocupado por sus datos, reduciendo a la mitad el espacio de disco utilizable.
+El nivel de RAID por defecto de los servidores de OVHcloud es el RAID 1. duplica el volumen de los datos, reduciendo así el espacio disponible.
 
-**Esta guía le ayudará a configurar los discos de su servidor con RAID 0, lo que le permitirá usar el espacio útil de todos sus discos.**
+**Esta guía explica cómo configurar los discos del servidor en RAID 0 para aprovechar al máximo el espacio útil.**
 
 > [!warning]
 > 
-> Tenga en cuenta: RAID 0 no proporciona TOLERANCIA SIN FALLOS ni REDUNDANCIA DE DATOS, lo que hace muy probable la pérdida de datos en caso de fallo del disco.
+> Tenga en cuenta: RAID 0 no proporciona **tolerancia a fallos** ni **redundancia de datos**, lo que hace muy probable la pérdida de datos en caso de fallo del disco.
 >
 
 ## Requisitos
 
-* Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} conhardware RAID 
-* Acceso administrativo (root) al servidor a través de SSH
+- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) con RAID por hardware.
+- Tener acceso al servidor por SSH como administrador (root).
 
-## Instrucciones
+## Procedimiento
 
-### Usando el panel de control de OVHcloud
+### Utilizar el área de cliente de OVHcloud
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) .external}, seleccione el servidor en la sección `Bare Metal Cloud`{.action} y, seguidamente, `Servidores dedicados`{.action}.
+En el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}. 
 
-A continuación, en la pestaña **Información general**, haga clic en el botón `Reinstalar`{.action} para instalar un nuevo sistema operativo con su configuración RAID 0 personalizada.
+Busque "Último sistema operativo (SO) instalado por OVHcloud" en la zona `Información general`{.action} y haga clic en `...`{.action} y, seguidamente, en `Instalar`{.action} para instalar un nuevo sistema operativo con su configuración RAID 0 personalizada.
 
-Ahora seleccione  **Instalar desde una plantilla de OVHcloud** y luego haga clic en `Siguiente`{.action}. 
+Seleccione **Instalar desde una plantilla de OVHcloud** y haga clic en `Siguiente`{.action}.
 
-![megaraid](images/server_installation_raid0_1.png){.thumbnail}
+![MegaRAID](images/server_installation_raid0_1.png){.thumbnail}
 
-Seleccione el sistema operativo que desea instalar y luego haga clic en `Siguiente`{.action}.
+Seleccione el sistema operativo que quiera instalar y haga clic en `Siguiente`{.action}.
 
-Marque las casillas para **Personalizar la configuración de hardware RAID** y **Personalizar la configuración de la partición**, luego haga clic en Siguiente {.action}.
+Marque las casillas **Personalizar la configuración del RAID** de hardware y **Personalizar la configuración de las particiones**. Haga clic en `Siguiente`{.action}.
 
-![megaraid](images/server_installation_raid0_2.png){.thumbnail}
+![MegaRAID](images/server_installation_raid0_2.png){.thumbnail}
 
-Seleccione RAID 0 de la lista desplegable y haga clic en `Siguiente`{.action}. 
+Seleccione "RAID0" en la lista desplegable y haga clic en `Siguiente`{.action}.
 
-![megaraid](images/server_installation_raid0_3.png){.thumbnail}
+![MegaRAID](images/server_installation_raid0_3.png){.thumbnail}
 
-Configure las particiones como sea requeridoy luego haga clic en `Siguiente`{.action}.
+Configure las particiones según sus necesidades y haga clic en `Siguiente`{.action}.
 
-![megaraid](images/server_installation_raid0_4.png){.thumbnail}
+![MegaRAID](images/server_installation_raid0_4.png){.thumbnail}
 
-Finalmente, haga click en `Confirmar`{.action}
+Por último, haga clic en `Confirmar`{.action}.
 
-![megaraid](images/server_installation_raid0_5.png){.thumbnail}
+![MegaRAID](images/server_installation_raid0_5.png){.thumbnail}
 
-Después de instalar su servidor, verifique los tamaños de partición iniciando sesión en el servidor a través de SSH y ejecutando el siguiente comando:
+Una vez que haya configurado el servidor, compruebe el tamaño de las particiones conectándose a él por SSH y ejecutando el siguiente comando:
 
 ```sh
 df -h
 ```
 
-### Usando el modo de rescate
+### Utilizar el modo de rescate
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, seleccione el servidor en la sección `Bare Metal Cloud`{.action} y, seguidamente, `Servidores dedicados`{.action}.
+En el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}.
 
-Busque « Boot » en la zona **Información general** y haga clic en `...`{.action} y luego seleccione `Editar`{.action} para cambiar el sistema de arranque.
+Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action} para cambiar el sistema de arranque.
 
-![megaraid](images/rescue_mode_raid0_1.png){.thumbnail}
+![MegaRAID](images/rescue_mode_raid0_1.png){.thumbnail}
 
-A continuación, seleccione `Arrancar en modo rescue`{.action} luego seleccione `rescue64-pro`{.action} de la lista desplegable.
+A continuación, seleccione `Arrancar en modo rescue`{.action} y elija `rescue-customer`{.action} en la lista desplegable.
 
-En el campo **Recibir las claves del modo seleccionado en la siguiente dirección de correo electrónico:**, especifique otra dirección de correo electrónico si no desea que se envíen las claves de acceso a la dirección principal de su cuenta de OVHcloud.
+En el campo "Recibir las claves del modo en la dirección de correo electrónico:", introduzca otra dirección de correo electrónico si no desea que se envíen las claves de acceso a la dirección principal de su cuenta de OVHcloud.
 
+![MegaRAID](images/rescue_mode_raid0_2.png){.thumbnail}
 
-![megaraid](images/rescue_mode_raid0_2.png){.thumbnail}
+Haga clic en `Siguiente`{.action} y, seguidamente, en `Confirmar`{.action}.
 
-Haga clic en `Siguiente`{.action} y luego haga clic en `Confirmar`{.action} en la siguiente pantalla.
+![MegaRAID](images/rescue_mode_raid0_3.png){.thumbnail}
 
-![megaraid](images/rescue_mode_raid0_3.png){.thumbnail}
+Una vez que haya realizado los cambios, haga clic en `..`{.action} a la derecha de "Estado" en el cuadro titulado **Estado de los servicios.** 
 
-Una vez finalizada la edición, haga clic en `...`{.action} a la derecha de "Estado" en la zona titulada **Estado de los servicios.**
+Haga clic en el botón `Reiniciar`{.action} y el servidor se reiniciará en modo de rescate. Esta operación puede tardar unos minutos. 
 
-Haga clic en el botón `Reiniciar`{.action} y el servidor se reiniciará en modo de rescate. Esta operación puede tardar unos minutos.
- 
+![MegaRAID](images/server_installation_raid0_6.png){.thumbnail}
 
-![megaraid](images/server_installation_raid0_6.png){.thumbnail}
+Cuando reinicie el servidor, conéctese a este último por SSH utilizando las claves del modo de rescate. Estos se le han enviado a la dirección de correo electrónico principal de la cuenta o, en su caso, a la dirección de correo electrónico que se le ha proporcionado anteriormente.
 
-Cuando su servidor se reinicie, inicie sesión a través de SSH utilizando las credenciales del modo de rescate que le enviamos por correo electrónico.
-
-Desde la línea de comandos, escriba los siguientes comandos para eliminar la configuración RAID existente. Todos los datos en el RAID serán eliminados:
+En la línea de comandos, escriba los siguientes comandos para eliminar los parámetros RAID existentes. Todos los datos del RAID se eliminarán:
 
 ```sh
 MegaCli -CfgLdDel -L0 -a0
 MegaCli -CfgLdDel -Lall -aAll
 ```
 
-Escriba el siguiente comando para recuperar las ID de dispositivo de ranura de sus discos:
+Introduzca el siguiente comando para obtener las claves de ubicación de los discos:
 
 ```sh
-MegaCli -PdList -aALL | egrep "Slot|Device ID"
+MegaCli -PdList -ALL | egrep "Slot|Device ID"
 ```
 
-Escriba los siguientes comandos para configurar el nivel RAID 0:
+Introduzca los siguientes comandos para configurar el RAID 0:
 
 ```sh
-MegaCli -CfgLDAdd -R0 [252: 0,252: 1] -a0
+MegaCli -CfgLDAdd -R0[252:0,252:1] -a0
 ```
 
-En este ejemplo, 252 es la ID del gabinete del disco.
+En este ejemplo, 252 es el identificador del adaptador del disco.
 
-Después de configurar el nuevo nivel RAID, puede verificar la configuración con el siguiente comando:
+Una vez que haya establecido el nuevo nivel de RAID, puede comprobar los parámetros utilizando el siguiente comando:
 
 ```sh
 MegaCli -LDInfo -Lall -a0 | grep -i size
 ```
 
-## Mas Infomacions
+## Más información
 
-Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+[Sustituir en caliente un disco en un servidor con RAID por hardware](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/)
+
+[Sustituir en caliente un disco en un servidor con RAID por software](https://docs.ovh.com/us/es/dedicated/hotswap-raid-soft/)
+
+[Gestión del RAID por hardware](https://docs.ovh.com/us/es/dedicated/raid-hardware/)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
