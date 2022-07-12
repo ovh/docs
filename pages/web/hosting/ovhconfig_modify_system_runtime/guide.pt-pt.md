@@ -27,7 +27,7 @@ Ao alterar a configuração do seu alojamento, estará a alterar a configuraçã
 
 > [!warning]
 >
-> Antes de realizar qualquer alteração, assegure-se de que a modificação não deixará o seu website inacessível. Todavia, se precisar de ajuda, recomendamos que recorra a um prestador de serviços especializado. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”. 
+> Antes de realizar qualquer alteração, assegure-se de que a modificação não deixará o seu website inacessível. Todavia, se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”. 
 > 
 
 ### Alterar a configuração do alojamento web a partir da Área de Cliente

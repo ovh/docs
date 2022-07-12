@@ -27,7 +27,7 @@ Al modificar la configuración de un alojamiento, también se modifica la config
 
 > [!warning]
 >
-> Antes de realizar cualquier cambio, asegúrese de que la modificación no hará que su sitio web deje de estar accesible. Si no está seguro, le recomendamos que contacte con un proveedor especializado. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía. 
+> Antes de realizar cualquier cambio, asegúrese de que la modificación no hará que su sitio web deje de estar accesible. Si no está seguro, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía. 
 > 
 
 ### Modificar la configuración del alojamiento web desde el área de cliente

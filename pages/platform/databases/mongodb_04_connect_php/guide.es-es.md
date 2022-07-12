@@ -29,7 +29,7 @@ A MongoDB instance can be managed through multiple ways.
 One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MongoDB with CLI](https://docs.ovh.com/es/publiccloud/databases/mongodb/connect-cli).
 
 Another way is to interact directly using programming languages, such as PHP.
-PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or Wordpress.
+PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or WordPress.
 MongoDB provides PHP drivers, allowing us to connect and manage a MongoDB instance from code.
 
 In order to do so, we will need to set up our PHP environment with MongoDB drivers, then configure our Public Cloud Databases for MongoDB instances to accept incoming connections, and finally code in PHP to perform a few example actions.

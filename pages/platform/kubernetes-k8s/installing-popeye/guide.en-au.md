@@ -437,9 +437,9 @@ mkdir ~/.aws
 
 Create the AWS CLI config file and set up the good endpoint to our Object Storage stored in the GRA region:
 
+```
 vi ~/.aws/config
 
-```
 [plugins]
 endpoint = awscli_plugin_endpoint
 
@@ -535,7 +535,7 @@ X-Trans-Id: txd66f17782e2847c6a5f29-00625976e6
 -----------------------------------------------------
 </code></pre>
 
-You can check on your OVhcloud Object Storage `popeye` container that the report has been correctly stored:
+You can check on your OVHcloud Object Storage `popeye` container that the report has been correctly stored:
 
 ![Popeye report stored on OVHcloud Object Storage](images/report-saved-on-object-storage.png)
 

@@ -18,7 +18,7 @@ Nextcloud is a suite of client-server software for creating and using file hosti
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
@@ -55,7 +55,7 @@ Click on your avatar at the top right then on `Settings`{.action}.
 2. Create an *Amazon S3* storage type.
 3. Name your destination folder
 4. Specify the name of your bucket
-5. Set the host as: `s3.<region>.perf.cloud.ovh.net`
+5. Set the host as: `s3.<region_in_lowercase>.perf.cloud.ovh.net`
 6. Set the port to 443
 7. Specify the region
 8. Activate SSL
@@ -109,8 +109,8 @@ Mount your S3 bucket on Nextcloud as a **OVH_hp-bucket** mount point:
 
 ```bash
 $ php occ files_external:create -c bucket=hp-bucket \
-                                -c hostname=s3.<region>.perf.cloud.ovh.net \
-                                -c region=<region> \
+                                -c hostname=s3.<region_in_lowercase>.perf.cloud.ovh.net \
+                                -c region=<region_in_lowercase> \
                                 -c use_ssl=true \
                                 -c use_path_style=false \
                                 -c legacy_auth: false \
@@ -168,10 +168,10 @@ Edit your `config/config.php` file and add:
                 'autocreate' => true,
                 'key'    => 'xxxxxxxxxxxxxxxxxxxx',
                 'secret' => 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy',
-                'hostname' => 's3.<region>.perf.cloud.ovh.net',
+                'hostname' => 's3.<region_in_lowercase>.perf.cloud.ovh.net',
                 'port' => 443,
                 'use_ssl' => true,
-                'region' => '<region>',
+                'region' => '<region_in_lowercase>',
                 'use_path_style' => false
         ),
 ),

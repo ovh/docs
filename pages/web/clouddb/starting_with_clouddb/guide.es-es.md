@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 01
 ---
 
-**Última actualización: 28/01/2022**
+**Última actualización: 22/06/2022**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -22,7 +22,7 @@ Su solución Cloud Databases está asociada por defecto a la red de alojamientos
 ## Requisitos
 
 - Tener una instancia [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluido en un [plan de hosting performance](https://www.ovhcloud.com/es-es/web-hosting/)).
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
@@ -30,7 +30,7 @@ Su solución Cloud Databases está asociada por defecto a la red de alojamientos
 
 Si el plan de hosting incluye la opción CloudDB, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} en la columna izquierda.
 
-En la pestaña `Información general`, en el cuadro `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de la **Base de datos privada**. Por último, haga clic en `Activar`{.action} para iniciar el proceso de activación.
+En la pestaña `Información general`, en el cuadro `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de la **CloudDB**. Por último, haga clic en `Activar`{.action} para iniciar el proceso de activación.
 
 ![Información general](images/db-activation.png){.thumbnail}
 
@@ -38,11 +38,11 @@ Para finalizar, siga las indicaciones que se ofrecen a continuación para determ
 
 ### Ver la información general del servicio
 
-En la columna izquierda de la sección Web del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio Cloud Databases correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
+En la columna izquierda de la sección Web del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio Cloud Databases correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
 
 > [!primary]
 >
-> El nombre del servicio Cloud Databases en el área de cliente de OVH contiene una parte de su ID de cliente y termina en tres cifras («001» para el primer servicio Cloud Databases instalado, «002» para el segundo y así sucesivamente).
+> El nombre del servicio Cloud Databases en el área de cliente de OVHcloud contiene una parte de su ID de cliente y termina en tres cifras («001» para el primer servicio Cloud Databases instalado, «002» para el segundo y así sucesivamente).
 >
 
 En dicha pestaña podrá consultar la información más importante relativa al servicio. Compruebe que los datos mostrados son correctos y se corresponden con las indicaciones que se ofrecen a continuación.
@@ -52,10 +52,11 @@ En dicha pestaña podrá consultar la información más importante relativa al s
 |Estado del servicio|Indica si el servicio está iniciado, se está reiniciando o está suspendido. El servicio debe estar iniciado para poder realizar cualquier tipo de acción.|
 |Tipo|Muestra el sistema de bases de datos utilizado por la instancia.|
 |Versión|Muestra la versión del sistema de bases de datos utilizado por la instancia. Asegúrese de que su sitio web es compatible con la versión elegida.|
+|Saturación CPU|Muestra el tiempo de CPU pasado en saturación. Su instancia CloudDB no está limitada en términos de CPU, pero debe asegurarse de que no sobrecarga la CPU de su CloudDB.|
 |RAM|Muestra la memoria RAM disponible para la instancia e indica si se ha sobrepasado dicha cantidad de memoria. La instancia Cloud Databases tiene recursos de RAM dedicados y garantizados. Si lo necesita, puede aumentar la capacidad de RAM de la instancia, así como recibir alertas si consume todos los recursos de RAM asignados.|
-|Infraestructura|Muestra la infraestructura utilizada por la instancia. Se trata de una información inherente a la infraestructura de OVH.|
+|Infraestructura|Muestra la infraestructura utilizada por la instancia. Se trata de una información inherente a la infraestructura de OVHcloud.|
 |Datacenter|Muestra el centro de datos en el que se ha creado la instancia Cloud Databases. Asegúrese de que el datacenter sea el mismo que el del servicio (VPS, servidor dedicado, Public Cloud...) que aloje su sitio web.|
-|Host|Indica el servidor de OVH en el que se ha creado la instancia. Se trata de una información inherente a la infraestructura de OVH y se utiliza en nuestras comunicaciones relacionadas con [incidencias](http://status.ovh.es){.external}.|
+|Host|Indica el servidor de OVHcloud en el que se ha creado la instancia. Se trata de una información inherente a la infraestructura de OVHcloud y se utiliza en nuestras comunicaciones relacionadas con [incidencias](http://status.ovh.es){.external}.|
 
 ![Cloud Databases](images/clouddb-general-information.png){.thumbnail}
 
@@ -131,9 +132,9 @@ Una vez que haya creado el usuario, deberá asignarle permisos para que pueda re
 > Esta operación solo es necesaria si desea importar una copia de seguridad de una base de datos preexistente. Si no tiene que importar ninguna base de datos, puede omitir este paso.
 >
 
-Hay varias maneras de importar una base de datos. OVH ofrece una herramienta que permite hacerlo desde el área de cliente. No obstante, puede utilizar cualquier otro método de importación en función de sus preferencias y conocimientos.
+Hay varias maneras de importar una base de datos. OVHcloud ofrece una herramienta que permite hacerlo desde el área de cliente. No obstante, puede utilizar cualquier otro método de importación en función de sus preferencias y conocimientos.
 
-A continuación se explica cómo importar una base de datos utilizando la herramienta que OVH pone a su disposición en el área de cliente.
+A continuación se explica cómo importar una base de datos utilizando la herramienta que OVHcloud pone a su disposición en el área de cliente.
 
 **1. Acceder a la función de importación**
 
@@ -178,7 +179,7 @@ Para ello, abra la pestaña `IP autorizadas`{.action} y haga clic en el botón `
 
 ### Conectar el sitio web con la base de datos
 
-Una vez que la base de datos está creada, que uno o más usuarios tienen permisos sobre ella y que al menos una dirección IP o que los alojamientos web de OVHcloud han sido autorizados en su instancia Cloud Databases, solo queda conectar el sitio web a la base de datos. Esto puede hacerse de varias formas, en función del sitio web o del CMS utilizado (WordPress, Joomla...), así como de la fase en la que se encuentre si está instalando un sitio web.
+Una vez que la base de datos está creada, que uno o más usuarios tienen permisos sobre ella y que al menos una dirección IP o que los alojamientos web de OVHcloud han sido autorizados en su instancia Cloud Databases, solo queda conectar el sitio web a la base de datos. Esto puede hacerse de varias formas, en función del sitio web o del CMS utilizado (WordPress, Joomla!...), así como de la fase en la que se encuentre si está instalando un sitio web.
 
 Para poder realizar esta operación, deberá disponer de los siguientes datos:
 

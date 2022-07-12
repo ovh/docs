@@ -10,7 +10,7 @@ order: 1
 
 ## Objetivo
 
-Una base de datos (también llamada «database», DB o BD) permite almacenar elementos dinámicos, como comentarios o artículos. Prácticamente todos los sistemas de gestión de contenidos (CMS), como WordPress o Joomla, utilizan bases de datos.
+Una base de datos (también llamada «database», DB o BD) permite almacenar elementos dinámicos, como comentarios o artículos. Prácticamente todos los sistemas de gestión de contenidos (CMS), como WordPress o Joomla!, utilizan bases de datos.
 
 **Esta guía explica cómo crear y utilizar una base de datos en un plan de hosting de OVHcloud.**
 
@@ -80,7 +80,7 @@ Compruebe que la información que aparece es correcta y haga clic en `Aceptar`{.
 ### 3. Utilizar la base de datos
 
 > [!warning]
->Esta guía no sustituye la ayuda de un profesional, como un webmaster. Le recomendamos que, si necesita ayuda, contacte con un proveedor especializado o con el editor del servicio. Nosotros no podremos ayudarle. Para más información, acceda a la sección «Más información» de esta guía.
+>Esta guía no sustituye la ayuda de un profesional, como un webmaster. Le recomendamos que, si necesita ayuda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos ayudarle. Para más información, acceda a la sección «Más información» de esta guía.
 >
 
 Una vez que haya creado la base de datos, ya puede utilizarla. Para ello, necesitará los siguientes datos de conexión: el nombre de usuario y la contraseña que acaba de establecer, el nombre de la base de datos que acaba de crear y la dirección del servidor. Esta información es imprescindible para que el sitio web pueda conectarse a la base de datos.

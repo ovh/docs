@@ -6,7 +6,7 @@ section: 'Configuration'
 order: 5
 ---
 
-**Dernière mise à jour le 03/02/2022**
+**Dernière mise à jour le 29/06/2022**
 
 ## Objectif
 
@@ -16,19 +16,21 @@ order: 5
 
 ## Prérequis
 
-- Disposer d'une [offre Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/) (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
 
 > [!primary]
 >
-> Il est à noter que les offres [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au Host mais aux bases de données hébergées sur celui-ci, il n'y a pas d'accès super utilisateur  « root ». Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL  ou Adminer sont pleinement compatibles.
+> Il est à noter que les offres [CloudDB](https://www.ovh.com/fr/cloud-databases) ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci.
+> <br> - Il n'y a pas d'accès super utilisateur « root ».
+> <br> - Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL ou Adminer sont pleinement compatibles.
 > 
 
 ### Restaurer et importer une base de données depuis l'espace client
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données. Dirigez-vous-vous dans l'onglet `Bases de données`.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données. Dirigez-vous-vous dans l'onglet `Bases de données`.
 
 Au niveau de la colonne **« Sauvegardes »**, le chiffre correspond au nombre de sauvegardes disponibles pour votre base de données.
 
@@ -42,8 +44,7 @@ La liste des sauvegardes disponibles apparaît, cliquez sur le bouton `...`{.act
 
 > [!warning]
 >
-> La restauration implique le remplacement du contenu de la base de données suite à la restauration.
-> Si vous n'êtes pas sûr de ce que vous faites, nous vous invitons à effectuer une sauvegarde auparavant.
+> La restauration implique l'écrasement du contenu de la base de données et donc une potentielle perte de données. Si vous n'êtes pas sûr de ce que vous faites, nous vous invitons à effectuer une sauvegarde auparavant.
 > 
 
 #### 2\. Importer une sauvegarde locale
@@ -62,30 +63,30 @@ Indiquez un nom pour votre fichier importé, cliquez sur `Parcourir`{.action} po
 
 > [!warning]
 >
-> Le fichier doit être au format « .gz ».
+> Le fichier doit être au format « .sql », « .txt » ou « .gz ».
 > 
 
 ![clouddb](images/private-sql-import02.png){.thumbnail}
 
-Cochez, si vous le désirez, **« Vider la base de données actuelle »** avant l'import, et **« Envoyer un e-mail à la fin de l'import »**  pour être informé de la fin de l'opération sur l'adresse e-mail de référence de votre compte OVHcloud, puis cliquez sur `Valider`{.action}.
+Cochez, si vous le désirez, **« Vider la base de données actuelle »** avant l'import, et **« Envoyer un e-mail à la fin de l'import »** pour être informé de la fin de l'opération sur l'adresse e-mail de référence de votre compte OVHcloud, puis cliquez sur `Valider`{.action}.
 
 ##### 2\.2 Utiliser un fichier existant
 
-Si vous aviez déjà importé un fichier auparavant, il est possible de choisir l'option **« Importer un fichier existant »** .
+Si vous aviez déjà importé un fichier auparavant, il est possible de choisir l'option **« Importer un fichier existant »**.
 
 Choisissez ensuite le fichier dans le menu déroulant, puis cliquez sur `Suivant`{.action}.
 
 ![clouddb](images/private-sql-import03.png){.thumbnail}
 
-Cochez, si vous le désirez, **« Vider la base de données actuelle »** avant l'import, et **« Envoyer un e-mail à la fin de l'import »**  pour être informé de la fin de l'opération sur l'adresse e-mail de référence de votre compte OVHcloud, puis cliquez sur `Valider`{.action}.
+Cochez, si vous le désirez, **« Vider la base de données actuelle »** avant l'import, et **« Envoyer un e-mail à la fin de l'import »** pour être informé de la fin de l'opération sur l'adresse e-mail de référence de votre compte OVHcloud, puis cliquez sur `Valider`{.action}.
 
 ### Import de base de données MySQL ou MariaDB hors espace client
 
-Dans certains cas, il se peut que la RAM disponible dans votre serveur de bases de données ne permette pas de réaliser l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external} de cette documentation.
+Dans certains cas, la RAM disponible dans votre serveur de bases de données ne permet pas de réaliser l'import souhaité en dehors de l'espace client. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client_1) de cette documentation.
 
 
 #### Importer ma base MySQL ou MariaDB depuis phpMyAdmin
-Pour importer votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable, vous pouvez pour cela vous aider du paragraphe [« Se connecter a une base de données MySQL ou MariaDB »](../connexion-base-de-donnees-serveur-bdd/#se-connecter-a-une-base-de-données-mysql-ou-mariadb){.external}
+Pour importer votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable, vous pouvez pour cela vous aider du paragraphe [« Se connecter a une base de données MySQL ou MariaDB »](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb)
 
 Une fois connecté sur phpMyAdmin, sélectionnez votre base de données en cliquant sur son nom.
 
@@ -105,7 +106,7 @@ Laissez les options par défaut et cliquez sur `Exécuter`{.action} pour lancer 
 
 #### Importer ma base MySQL ou MariaDB en ligne de commande
 
-Cette action est  uniquement possible en [SSH]( ../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external} depuis un hébergement mutualisé OVHcloud.
+Cette action est uniquement possible en [SSH](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/) depuis un hébergement mutualisé OVHcloud.
 
 ```bash
 cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base
@@ -122,17 +123,17 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 
 > [!warning]
 >
-> - Afin d'éviter que quelqu'un accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?]( ../mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/){.external}
+> - Afin d'éviter que quelqu'un accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/)
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 >
 
 ### Importer une base de données PostgreSQL hors espace client
 
-Dans certains cas, il se peut que la RAM disponible dans votre serveur de bases de données ne permette pas de réaliser l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external} de cette documentation.
+Dans certains cas, il se peut que la RAM disponible dans votre serveur de bases de données ne permette pas de réaliser l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client_1) de cette documentation.
 
 #### Importer ma base PostgreSQL en ligne de commande
 
-Cette action est  uniquement possible en [SSH]( ../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external} depuis un hébergement mutualisé OVHcloud en version stable ou supérieure.
+Cette action est uniquement possible en [SSH](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/) depuis un hébergement mutualisé OVHcloud en version stable ou supérieure.
 
 ```bash
 psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base < nom_de_la_base.sql
@@ -150,7 +151,7 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
 
 > [!warning]
 >
-> - Afin d'éviter que quelqu'un accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide [Comment protéger l’accès a un répertoire par une authentification ?]( ../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}
+> - Afin d'éviter que quelqu'un accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide [Comment protéger l’accès a un répertoire par une authentification ?](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/)
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 >
 

@@ -1,8 +1,8 @@
 ---
-title: Installer manuellement Wordpress
+title: Installer manuellement WordPress
 slug: installer-manuellement-wordpress
 legacy_guide_number: 1977
-excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS Wordpress.
+excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS WordPress.
 section: CMS
 ---
 
@@ -10,7 +10,7 @@ section: CMS
 >
 > OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
 Pour vous aider, chacune des étapes est détaillée. Pour toute demande précise liée au CMS, nous vous invitons à vous rapprocher de l'éditeur du CMS, ou des communautés en rapport avec celui-ci.
@@ -21,7 +21,7 @@ Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki
 
 Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 
-*Si vous souhaitez installer Wordpress de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [](../modules-en-1-clic/)
+*Si vous souhaitez installer WordPress de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [](../modules-en-1-clic/)
 
 
 ## WordPress

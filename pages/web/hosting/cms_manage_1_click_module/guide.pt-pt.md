@@ -22,7 +22,7 @@ Os módulos 1 clique permitem a instalação fácil e rápida de um software on-
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
 >
 
 ## Requisitos
@@ -135,10 +135,10 @@ Adicione ferramentas de teste do tipo CAPTCHA aos formulários do seu site.
 
 Não instale no seu site plugins ou templates que não foram recomendados pelas comunidades oficiais do seu CMS: 
 
-- [Wordpress](https://wordpress.org/){.external}
+- [WordPress](https://wordpress.org/){.external}
 - [Joomla!](https://community.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/community){.external}
-- [Prestashop](https://www.prestashop.com/pt){.external}
+- [PrestaShop](https://www.prestashop.com/pt){.external}
 
 ## Quer saber mais? <a name="gofurther"></a>
 

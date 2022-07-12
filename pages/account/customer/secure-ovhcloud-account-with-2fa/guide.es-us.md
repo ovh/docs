@@ -9,7 +9,7 @@ section: Seguridad
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 30/12/2021**
+**Última actualización: 17/06/2022**
 
 ## Objetivo
 
@@ -120,7 +120,7 @@ Antes de contactarnos, debe reunir los siguientes justificantes:
 |Particular|- Documento de identidad (documento de identidad, permiso de conducir o pasaporte), que menciona el nombre completo, la fecha de nacimiento y la fecha de expiración, a nombre del titular de la cuenta de OVHcloud|
 |Empresa|- Documento de identidad (documento de identidad, permiso de conducir y pasaporte) que mencione el nombre completo, la fecha de nacimiento y la fecha de expiración, al nombre del titular de la cuenta de OVHcloud o al nombre de una persona autorizada para representar a la empresa.<br><br>- Documentos de registro de la empresa|
 
-Una vez que haya reunido los documentos justificativos, póngase en contacto con nuestro equipo de soportepor correo electrónico en la dirección `validation@ovh.ca`.
+Una vez que haya reunido los documentos justificativos, póngase en contacto con nuestro equipo de soporte, llamando al +1-855-684-5463.
 
 > [!warning]
 >

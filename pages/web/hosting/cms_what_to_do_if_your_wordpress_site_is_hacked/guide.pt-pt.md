@@ -8,9 +8,9 @@ legacy_guide_number: g1874
 
 
 ## 
-Dispõe de um website Wordpress alojado na OVH e apercebeu-se que o seu website deixou de ser apresentado ou é reencaminhado para um outro website, ou ainda o seu website apresenta inúmeros anúncios.
+Dispõe de um website WordPress alojado na OVH e apercebeu-se que o seu website deixou de ser apresentado ou é reencaminhado para um outro website, ou ainda o seu website apresenta inúmeros anúncios.
 
-A OVH não assegura o suporte sobre a utilização de Wordpress, nem por correio nem por telefone, mas poderemos indicar-lhe o que poderá fazer no seguimento de ter sido alvo de um ataque.
+A OVH não assegura o suporte sobre a utilização de WordPress, nem por correio nem por telefone, mas poderemos indicar-lhe o que poderá fazer no seguimento de ter sido alvo de um ataque.
 
 
 ## Porque foi o meu Website alvo de pirataria?
@@ -20,7 +20,7 @@ Ser alvo de pirataria está geralmente associado a uma não atualização do pro
 
 O risco 0 não existe! É no entanto possível minimizar este risco.
 
-Existem numerosas medidas práticas que pode tomar para corrigir o problema quando ele ocorre, e/ou impedir que volte a ocorrer (efetuar atualizações regularmente: versão Wordpress, temas, plugins..).
+Existem numerosas medidas práticas que pode tomar para corrigir o problema quando ele ocorre, e/ou impedir que volte a ocorrer (efetuar atualizações regularmente: versão WordPress, temas, plugins..).
 
 Iremos neste guia ajudá-lo nas diferentes etapas a ter em conta para colocar novamente o seu website a funcionar.
 
@@ -61,7 +61,7 @@ Em nenhum caso o nosso suporte poderá assisti-lo neste tipo de pedidos.
 
 
 ## Restauro do website
-O Wordpress é composto por ficheiros e uma base de dados. É possível restaurar os seus ficheiros para uma data anterior. A OVH propõe-lhe um histórico de 3 semanas no que aos ficheiros diz respeito. Relativamente à base de dados é possível recuperar um backup de há 7 dias.
+O WordPress é composto por ficheiros e uma base de dados. É possível restaurar os seus ficheiros para uma data anterior. A OVH propõe-lhe um histórico de 2 semanas no que aos ficheiros diz respeito. Relativamente à base de dados é possível recuperar um backup de há 7 dias.
 O restauro não corrige falhas de segurança, é necessário procurar a falha e corrigir a mesma.
 O restauro elimina todo o conteúdo presente no seu alojamento pelo conteúdo do backup.
 
@@ -83,21 +83,21 @@ Após ter efetuado um restauro deve verificar se existe alguma atualizações do
 
 É igualmente aconselhado que desative plugins não utilizados, embora a desativação poderá não ser suficiente se houver alguma falha presente.
 
-Se o acto de pirataria é mais antigo e o restauro não resolve o problema veja como poderá voltar a recolocar o seu Wordpress a funcionar:
+Se o acto de pirataria é mais antigo e o restauro não resolve o problema veja como poderá voltar a recolocar o seu WordPress a funcionar:
 
 ## Não se consegue ligar ao painel de administrador WordPress
-Deve, nesse caso, modificar a sua [password do administrador](https://codex.wordpress.org/) ao seguir o guia oficial do Wordpress.
+Deve, nesse caso, modificar a sua [password do administrador](https://codex.wordpress.org/) ao seguir o guia oficial do WordPress.
 
 Se verifica que é complicado, é igualmente necessário atualizar o seu endereço de e-mail a partir do [phpMyAdmin](https://docs.ovh.com/pt/hosting/conexao-base-de-dados-servidor-bdd/) na tabela user e ao voltar à página de ligação clique em Perdeu a password?, e aguarde por um e-mail.
 
 
-## Substitua os ficheiros Wordpress com os de um Wordpress "virgem"
+## Substitua os ficheiros WordPress com os de um WordPress "virgem"
 A substituição de todos os seus ficheiros de base assegura-lhe que os ficheiros não são deixados no estado de pirateados.
 
 - aceda ao website oficial do [WordPress](https://pt.wordpress.org/).
 
 
-Encontrará neste website um link que permitirá o download da última versão estável do Wordpress para o seu computador.
+Encontrará neste website um link que permitirá o download da última versão estável do WordPress para o seu computador.
 
 O ficheiro que recuperar está normalmente comprimido (zipado), e é necessário descomprimi-lo (extrai-lo) para o seu computador. Encontrará na Internet inúmeras ajudas para o ajudar com a descompressão do ficheiro.
 
@@ -110,7 +110,7 @@ Caso tenha no seu alojamento vários websites, a transferência dos dados dever�
 Sugerimos que consulte o e-mail que lhe foi enviado no seguimento da criação da base de dados, podendo encontrar este e-mail no seu Espaço Cliente na sua conta => Histórico dos e-mails, com exceção da password pois essa somente você a conhece.
 
 Se não se lembra da password da base de dados, é necessário que a modifique no seu Espaço Cliente. Essa manipulação é explicada no seguinte [guia](https://www.ovh.pt/g1374.colocar-o-meu-site-online).
-É importante que verifique depois na interface de administração do Wordpress as atualizações.
+É importante que verifique depois na interface de administração do WordPress as atualizações.
 
 
 ## Informações úteis

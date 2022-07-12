@@ -1,5 +1,5 @@
 ---
-title: Envoyer des Fax via l’imprimante virtuelle EcoFax- Windows
+title: Envoyer des Fax via l’imprimante virtuelle EcoFax - Windows
 excerpt: Comment envoyer des Fax depuis Ecofax en utilisant l'imprimante virtuelle - Version Windows
 slug: envoyer_des_fax_via_limprimante_virtuelle_ecofax-_windows
 legacy_guide_number: g1685
@@ -7,32 +7,45 @@ section: Envoi/Réception de fax
 order: 4
 ---
 
-Il vous faut avant tout posséder une ligne de Fax OVH. Vous trouverez le détail de cette offre via ces liens : 
+**Dernière mise à jour le 24/06/2022**
 
+> [!alert]
+> Le logiciel EcoFax n'est pas compatible avec les versions 64 bits de Windows.<br>
+> Nous vous conseillons de priviléger la méthode d'envoi de fax par e-mail. Consultez [ce guide](https://docs.ovh.com/fr/fax/envoyer-des-fax-et-creer-des-campagnes-par-e-mail/) pour plus d'informations.
 
-- Sur la partie dédiée aux Fax : [https://www.ovhtelecom.fr/fax/](https://www.ovhtelecom.fr/fax/)
-- Dans le cadre d'une offre ADSL : [https://www.ovhtelecom.fr/adsl/](https://www.ovhtelecom.fr/adsl/)
+## Objectif
 
+Vous pouvez envoyer des fax OVHcloud de différentes manières. Ce guide vous présente la méthode pour envoyer vos fax via l'imprimante virtuelle EcoFax sur Windows.
 
-Il faut également avoir installé Ecofax sur votre PC. Ecofax est disponible via ce lien : [https://www.ovhtelecom.fr/fax/logiciel-ecofax.xml](https://www.ovhtelecom.fr/fax/logiciel-ecofax.xml)
+**Découvrez comment envoyer un fax via le logiciel EcoFax sur Windows.**
 
-Votre logiciel Ecofax doit être configuré.
+## Prérequis
 
+- Disposer d’une [ligne Fax OVHcloud](https://www.ovhtelecom.fr/fax/).
+- Avoir téléchargé et configuré le [logiciel EcoFax](https://www.ovhtelecom.fr/fax/logiciel-ecofax.xml).
 
-## 
+## En pratique
+
 Ouvrez le fichier à faxer :
 
-![](images/img_2496.jpg){.thumbnail}
-Faites Fichier puis Imprimer ou bien le raccourci clavier Touche CTRL + Touche P afin d'ouvrir le gestionnaire d'impression dans votre logiciel.
+![EcoFax](images/img_2496.jpg){.thumbnail}
 
-![](images/img_2495.jpg){.thumbnail}
-Choisissez dans la liste des imprimantes "Fax Manager"
+Faites `Fichier`{.action} puis `Imprimer`{.action} ou bien le raccourci clavier `Touche CMD` + `Touche P` afin d'ouvrir le gestionnaire d'impression dans votre logiciel.
 
-![](images/img_2494.jpg){.thumbnail}
+![EcoFax](images/img_2495.jpg){.thumbnail}
+
+Choisissez dans la liste des imprimantes `Fax Manager`{.action}.
+
+![EcoFax](images/img_2494.jpg){.thumbnail}
+
 Ecofax s'ouvre et vous demande d'entrer le numéro du destinataire :
 
-![](images/img_2493.jpg){.thumbnail}
-Le Fax est en cours d'envoi, il ne vous reste plus qu'à attendre le passage dans "Fax transmis" !
+![EcoFax](images/img_2493.jpg){.thumbnail}
 
-![](images/img_2492.jpg){.thumbnail}
+Le Fax est en cours d'envoi, il ne vous reste plus qu'à attendre le passage dans `Fax transmis`{.action}.
 
+![EcoFax](images/img_2492.jpg){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

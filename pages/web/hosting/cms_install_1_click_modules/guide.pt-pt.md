@@ -9,7 +9,7 @@ section: CMS
 
 ## Sumário
 
-Os Módulos 1 clique permitem instalar um CMS, uma ferramenta para criar um site de forma fácil e rápida, e que dispensa conhecimentos de código web ou de programação. Cada módulo permite instalar um dos Sistemas de Gestão de Conteúdos (*Content Management Systems* / CMS) mais populares do mercado: WordPress, PrestaShop, Drupal e Joomla.
+Os Módulos 1 clique permitem instalar um CMS, uma ferramenta para criar um site de forma fácil e rápida, e que dispensa conhecimentos de código web ou de programação. Cada módulo permite instalar um dos Sistemas de Gestão de Conteúdos (*Content Management Systems* / CMS) mais populares do mercado: WordPress, PrestaShop, Drupal e Joomla!.
 
 **Este guia explica como instalar um CMS usando os nossos Módulos 1 clique.**
 

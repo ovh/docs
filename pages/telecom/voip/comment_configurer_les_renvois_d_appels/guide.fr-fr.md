@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment filtrer et renvoyer les appels entrants et sortants
 section: 'Lignes téléphoniques'
 ---
 
-**Dernière mise à jour le 18/08/2021**
+**Dernière mise à jour le 21/06/2022**
 
 ## Objectif
 
@@ -17,6 +17,8 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d'émettre des appels. Pour 
 
 - Disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
 - Disposer d'un accès à la gestion de la ligne SIP concernée depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 
@@ -30,13 +32,13 @@ Il existe trois solutions pour filtrer et renvoyer les appels entrants et sortan
 
 Poursuivez la lecture de cette documentation en fonction de la solution que vous souhaitez activer.
 
-- [Activer le verrouillage des appels sortants](https://docs.ovh.com/fr/voip/comment-configurer-les-renvois-d-appels/#activer-le-verrouillage-des-appels-sortants){.external}.
-- [Activer le renvoi d'appel](https://docs.ovh.com/fr/voip/comment-configurer-les-renvois-d-appels/#activer-le-renvoi-dappel){.external}.
-- [Activer le filtrage d'appels](https://docs.ovh.com/fr/voip/comment-configurer-les-renvois-d-appels/#activer-le-filtrage-dappels){.external}.
+- [Activer le verrouillage des appels sortants](#verrouillage)
+- [Activer le renvoi d'appel](#renvoi)
+- [Activer le filtrage d'appels](#filtrage)
 
-### Activer le verrouillage des appels sortants
+### Activer le verrouillage des appels sortants <a name="verrouillage"></a>
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne SIP concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Verrouillage des appels sortants`{.action}.
 
@@ -48,14 +50,17 @@ Vous avez la possibilité d'appliquer ce verrouillage à plusieurs lignes grâce
 
 ![gerer-appels-verrouillage](images/manage-calls-locking-step2.png){.thumbnail}
 
-### Activer le renvoi d'appel
+### Activer le renvoi d'appel <a name="renvoi"></a>
+
+> [!warning]
+> Le renvoi d'appel est différent du transfert d'appel. Ce dernier consiste à transférer un appel en cours vers un autre destinataires. Pour connaître les méthodes de transfert d'appel, consultez la documentation constructeur de votre téléphone.
 
 > [!primary]
 >
 > Si vous souhaitez renvoyer les appels **en fonction de plages horaires**, consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](../configurer-plages-horaires-fermetures-exceptionnelles-ligne/)».
 >
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne SIP concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Renvoi d'appel`{.action}.
 
@@ -88,9 +93,9 @@ Vous avez la possibilité d'appliquer vos choix de configuration à plusieurs li
 
 ![gerer-appels-renvoi](images/manage-calls-fowarding-step2.png){.thumbnail}
 
-### Activer le filtrage d'appels
+### Activer le filtrage d'appels <a name="filtrage"></a>
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne SIP concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Filtrage d'appels`{.action}.
 

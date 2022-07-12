@@ -6,7 +6,7 @@ section: AI Training guides
 order: 07
 ---
 
-**Last updated 04th of October, 2021.**
+**Last updated 04th October, 2021.**
 
 ## Objective
 

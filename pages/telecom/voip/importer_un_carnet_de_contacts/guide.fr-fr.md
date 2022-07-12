@@ -5,7 +5,7 @@ excerpt: 'Apprenez à gérer un carnet de contacts sur une ligne SIP OVHcloud'
 section: 'Lignes téléphoniques'
 ---
 
-**Dernière mise à jour le 26/08/2021**
+**Dernière mise à jour le 21/06/2022**
 
 ## Objectif
 
@@ -16,7 +16,9 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afi
 ## Prérequis
 
 - Disposer au moins d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} :
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 
@@ -26,7 +28,7 @@ Vous avez la possibilité de gérer le carnet de contacts d'une seule ligne ou d
 
 - **Pour accéder à la gestion du carnet de contacts d'une seule ligne** :
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Téléphone`{.action} et cliquez sur `Carnets de contacts`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et assurez-vous de vous situer dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Téléphone`{.action} et cliquez sur `Carnets de contacts`{.action}.
  
 ![carnet de contacts](images/carnetligne.png){.thumbnail}
 
@@ -40,19 +42,19 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 La gestion du carnet de contacts s'effectue de la même manière, que vous ayez sélectionné une seule ligne ou un groupe de lignes. Poursuivez en fonction de la manipulation que vous souhaitez réaliser.
 
-#### Créer un carnet de contact
+#### Créer un carnet de contacts
 
-Pour créer un carnet de contact, renseignez le nom du carnet dans la zone de texte en dessous de « Nom du carnet de contacts », puis cliquez sur le bouton `Créer le carnet de contacts`{.action}.
+Pour créer un carnet de contacts, renseignez le nom du carnet dans la zone de texte en dessous de « Nom du carnet de contacts », puis cliquez sur le bouton `Créer le carnet de contacts`{.action}.
 
 ![carnet de contacts](images/creercarnet.png){.thumbnail}
 
-#### Ajouter ou modifier un contact
+#### Ajouter ou modifier un contacts
 
 Pour ajouter un nouveau contact, cliquez sur le bouton `Actions`{.action}, puis sur `Ajouter`{.action}. Pour modifier un contact existant, cliquez sur le bouton représentant trois points à droite du contact concerné, puis sur `Éditer`{.action}.
 
 ![carnet de contacts](images/creercarnetV2.png){.thumbnail}
 
-Remplissez ensuite les informations demandées. Les numéros doivent être renseignés au format international (par exemple, « 0033100000000 » pour un numéro français). Une fois les informations complétées, cliquez sur le bouton `Valider`{.action} pour ajouter le contact. Répétez cette manipulation autant de fois que nécessaire.
+Remplissez ensuite les informations demandées. Les numéros doivent être renseignés au format international (par exemple, « 0033123456789 » pour un numéro français). Une fois les informations complétées, cliquez sur le bouton `Valider`{.action} pour ajouter le contact. Répétez cette manipulation autant de fois que nécessaire.
 
 ![carnet de contacts](images/carnet-contacts-step5.png){.thumbnail}
 
@@ -64,7 +66,7 @@ Pour importer des contacts dans le carnet de contacts, cliquez sur le bouton `Ac
 |---|---|---|---|---|---|---|---|
 |Aucune|OVH|Support|100000000| | |6000000000|33|
 
-Vous pouvez également utiliser une version texte en séparant chaque celulle du tableau par un point-virgule (donnant par exemple : « Aucune;OVH;Support;100000000;;;6000000000;33 »). Une fois le fichier sélectionné dans la fenêtre d'import, cliquez sur le bouton `Valider`{.action}.
+Vous pouvez également utiliser une version texte en séparant chaque cellule du tableau par un point-virgule (donnant par exemple : « Aucune;OVH;Support;100000000;;;6000000000;33 »). Une fois le fichier sélectionné dans la fenêtre d'import, cliquez sur le bouton `Valider`{.action}.
 
 > [!warning]
 >
@@ -75,13 +77,13 @@ Vous pouvez également utiliser une version texte en séparant chaque celulle du
 
 #### Télécharger le carnet de contacts
 
-Pour télécharger la liste actuelle des contacts ajoutés dans le carnet, cliquez sur le bouton `Actions`{.action}, puis sur `Exporter`{.action}. Une fenêtre vous invitant à enregistrer le fichier apparaît alors.
+Pour télécharger la liste actuelle des contacts ajoutés dans le carnet, cliquez sur le bouton `Actions`{.action}, puis sur `Exporter`{.action}. Une fenêtre apparaît alors, vous invitant à enregistrer le fichier.
 
 Le fichier obtenu sera au format .csv.
 
 #### Supprimer un ou plusieurs contacts
 
-Pour supprimer un seul contact, cliquez sur le bouton représentant trois points à droite du contact concerné, puis sur `Supprimer`{.action}. Pour en supprimer plusieurs, cochez la case à gauche des contacts concernés, puis cliquez sur `Supprimer les contacts sélectionnés`{.action}.
+Pour supprimer un seul contact, cliquez sur le bouton `...`{.action} à droite du contact concerné, puis sur `Supprimer`{.action}. Pour en supprimer plusieurs, cochez la case à gauche des contacts concernés, puis cliquez sur `Supprimer les contacts sélectionnés`{.action}.
 
 ![carnetcontacts](images/supprimercontact.png){.thumbnail}
 
@@ -92,8 +94,6 @@ Pour supprimer un carnet de contacts, cliquez sur le bouton `Supprimer le carnet
 ### Étape 3 : utiliser le carnet de contacts sur votre téléphone
 
 Afin que votre téléphone puisse utiliser le carnet de contacts ou récupérer les éventuelles modifications effectuées dans celui-ci, commencez par le redémarrer. Une fois votre téléphone redémarré, il devrait avoir téléchargé le nouveau carnet de contacts.
-
-
 
 ## Aller plus loin
 

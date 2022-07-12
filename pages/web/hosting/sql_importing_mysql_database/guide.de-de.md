@@ -45,7 +45,7 @@ Folgen Sie dieser Anleitung nun entsprechend der von Ihnen gewählten Import-Met
 >
 > OVH stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVH leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVH leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
 >
 
 ### Backup über das Kundencenter wiederherstellen
@@ -107,7 +107,7 @@ Geben Sie im phpMyAdmin-Webinterface die Informationen zu Ihrer Datenbank ein, w
 
 > [!warning]
 >
-> Da das phpMyAdmin-Webinterface nicht von OVH entwickelt wurde, können wir Ihnen nicht sagen, wie der Import durchzuführen ist. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren und/oder sich auf der Website des Herausgebers zu informieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Da das phpMyAdmin-Webinterface nicht von OVH entwickelt wurde, können wir Ihnen nicht sagen, wie der Import durchzuführen ist. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder sich auf der Website des Herausgebers zu informieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 ### Backup über ein Skript importieren
@@ -116,7 +116,7 @@ Für diese Methode sind mehrere Schritte notwendig. Vergewissern Sie sich, dass 
 
 > [!warning]
 >
-> Für diese Methode sind Programmierkenntnisse erforderlich. Im Folgenden geben wir Ihnen einige Informationen zur Vorgehensweise, empfehlen Ihnen aber dennoch, einen spezialisierten Dienstleister zu kontaktieren, falls Sie Hilfe brauchen. Für externe Dienstleistungen bietet OVH leider keine Unterstützung.
+> Für diese Methode sind Programmierkenntnisse erforderlich. Im Folgenden geben wir Ihnen einige Informationen zur Vorgehensweise, empfehlen Ihnen aber dennoch, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Hilfe brauchen. Für externe Dienstleistungen bietet OVH leider keine Unterstützung.
 >
 
 #### Schritt 1: Importskript schreiben
@@ -159,7 +159,7 @@ Bei dieser Methode werden Befehle über ein Terminal eingegeben, um mit Ihrem Sp
 
 > [!warning]
 >
-> Für diese Art des Zugriffs sind fortgeschrittene Kenntnisse erforderlich. Im Folgenden geben wir Ihnen einige Informationen zur Vorgehensweise, empfehlen Ihnen aber dennoch, einen spezialisierten Dienstleister zu kontaktieren, falls Sie Hilfe brauchen. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Für diese Art des Zugriffs sind fortgeschrittene Kenntnisse erforderlich. Im Folgenden geben wir Ihnen einige Informationen zur Vorgehensweise, empfehlen Ihnen aber dennoch, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Hilfe brauchen. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 Wenn Sie sich via SSH in Ihren Speicherplatz eingeloggt haben, geben Sie einen Befehl für den Import der Datenbank ein. Im Folgenden finden Sie ein Beispiel, um Ihnen dabei zu helfen. Bevor Sie den Befehl über das Terminal ausführen, stellen Sie bitte sicher, dass Sie das Backup, das Sie importieren möchten, bereits auf den Speicherplatz hochgeladen haben und dass Sie sich in dem Verzeichnis befinden, in dem die Backup-Datei liegt.

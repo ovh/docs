@@ -99,10 +99,10 @@ Formularze stron internetowych są głównym celem hakerów/spammerów. Chroń s
 
 Dodaj do swojej strony wtyczkę bezpieczeństwa zalecaną przez producenta CMS:
 
-- [Wordpress](https://pl.wordpress.org/){.external}
+- [WordPress](https://pl.wordpress.org/){.external}
 - [Joomla](https://downloads.joomla.org/pl/){.external}
 - [Drupal](https://www.drupal.org.pl/){.external}
-- [Prestashop](https://www.prestashop.com/pl){.external}
+- [PrestaShop](https://www.prestashop.com/pl){.external}
 
 ### Etap 10: sprawdź, czy Twój hosting nie zawiera złośliwych plików
 

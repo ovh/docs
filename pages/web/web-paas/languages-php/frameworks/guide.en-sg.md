@@ -4,35 +4,35 @@ slug: frameworks
 section: Php
 ---
 
-**Last updated 25th May 2021**
+**Last updated 2nd June 2022**
 
 
 
 ## Objective  
 
-Full Drush support and Composer-based builds make handling dependencies and builds for PHP frameworks as simple as committing your `composer.json` to your project.
-
+Full Drush support and Composer-based builds
+so you can handle dependencies and builds for PHP frameworks by committing `composer.json` to your project.
 
 ## Drupal
 
-[Drupal](https://www.drupal.org/) is an open-source content management framework written in PHP. Since Composer comes pre-installed on Web PaaS, Drupal can be installed and updated completely using Composer. The default [build flavor](../../overview-build-deploy#building-the-application) for PHP application runs `composer install` during build, handling all of your dependencies automatically.
+[Drupal](https://www.drupal.org/) is an open-source content management framework written in PHP.
+Since Composer comes pre-installed on Web PaaS, Drupal can be installed and updated completely using Composer.
+The default build flavor for PHP application
+runs `composer install` during build, handling all of your dependencies automatically.
 
-* [Drupal 7 Best Practices](../../frameworks-drupal7)
 
 
 ### Community Support
 
 Drupal FAQs, how-to guides and other tutorials right on [Web PaaS Community](https://community.platform.sh/).
 
-* [Drupal on Web PaaS Community](https://community.platform.sh/search?q=drupal&expanded=true)
+* [Drupal on Web PaaS Community](https://community.platform.sh/search?q=drupal)
 
 ### Templates
 
-* [Drupal 7](https://github.com/platformsh-templates/drupal7)
-* [Drupal 7 (Vanilla)](https://github.com/platformsh-templates/drupal7-vanilla)
 * [Drupal 8](https://github.com/platformsh-templates/drupal8)
 * [Drupal 9](https://github.com/platformsh-templates/drupal9)
-* [Drupal 8 (Multisite variant)](https://github.com/platformsh-templates/drupal8-multisite)
+* [Drupal 8 (multisite variant)](https://github.com/platformsh-templates/drupal8-multisite)
 * [Opigno](https://github.com/platformsh-templates/drupal8-opigno)
 * [GovCMS8](https://github.com/platformsh-templates/drupal8-govcms8)
 
@@ -52,20 +52,14 @@ Drupal FAQs, how-to guides and other tutorials right on [Web PaaS Community](htt
 
 ## Symfony
 
-[Symfony](https://symfony.com/) is a web application framework written in PHP. Like Drupal, Symfony projects can utilize native Composer to build applications and manage dependencies.
+[Symfony](https://symfony.com/) is a web application framework written in PHP. Symfony projects utilize native Composer to build applications and manage dependencies.
 
-* [Symfony Best Practices](../../frameworks-symfony)
-
-### Community Support
-
-Symfony FAQs, how-to guides and other tutorials right on [Web PaaS Community](https://community.platform.sh/).
-
-* [Symfony on Web PaaS Community](https://community.platform.sh/search?expanded=true&q=symfony)
+* [Symfony Integration with Web PaaS](https://symfony.com/cloud)
 
 ### Templates
 
-* [Symfony 3](https://github.com/platformsh-templates/symfony3)
-* [Symfony 4](https://github.com/platformsh-templates/symfony4)
+* [Symfony 5](https://github.com/symfonycorp/platformsh-symfony-template/tree/5.4)
+* [Symfony 6](https://github.com/symfonycorp/platformsh-symfony-template/tree/6.0)
 
 ## TYPO3
 
@@ -77,18 +71,17 @@ Symfony FAQs, how-to guides and other tutorials right on [Web PaaS Community](ht
 
 * [TYPO3](https://github.com/platformsh-templates/typo3)
 
-## Wordpress
+## WordPress
 
-[Wordpress](https://wordpress.com/) is a PHP content management system. Web PaaS recommends using the composer-based installation method for Wordpress.
-
+[WordPress](https://wordpress.com/) is a PHP content management system. Web PaaS recommends using the composer-based installation method for WordPress.
 
 
 ### Community Support
 
-All your Wordpress FAQs, plus how-to guides and tutorials right on [Web PaaS Community](https://community.platform.sh/).
+All your WordPress FAQs, plus how-to guides and tutorials right on [Web PaaS Community](https://community.platform.sh/).
 
-* [Wordpress on Web PaaS Community](https://community.platform.sh/search?expanded=true&q=wordpress)
+* [WordPress on Web PaaS Community](https://community.platform.sh/search?q=wordpress)
 
 ### Templates
 
-* [Wordpress](https://github.com/platformsh-templates/wordpress-composer)
+* [WordPress](https://github.com/platformsh-templates/wordpress-composer)

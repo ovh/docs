@@ -9,7 +9,7 @@ section: Gestão via OpenStack
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 30/11/2021**
+**Última atualização: 16/06/2022**
 
 ## Objetivo
 
@@ -129,27 +129,25 @@ openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 A configuração predefinida da rede privada pode diferir consoante a região utilizada.
 
 > [!primary]
-> Em certas regiões, a propriedade "port security" é considerada como *enabled*, embora não aplique regras na rede privada. Em algumas outras regiões (em função da versão do OpenStack implementada), a propriedade "port security" é vista como *enabled*, mas as regras são corretamente aplicadas na rede privada.
+> Em certas regiões, a propriedade "port security" é considerada como *enabled*, embora não aplique regras na rede privada. Em algumas outras regiões (em função da versão do OpenStack implementada), a propriedade "port security" é vista como *enabled* e as regras são corretamente aplicadas na rede privada.
 > 
 
 
 Resumindo, as seguintes regiões executam a Newton OpenStack release e **nenhuma regra de firewall funcionará** para as suas redes privadas, mesmo que a segurança das portas esteja ativada:
 
-- Beauharnois: BHS1, BHS3, BHS5
-- Frankfurt: DE1
-- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA11
-- Estrasburgo SBG5
 - Singapura: SGP1
 - Sydney: SYD1
-- Londres: UK1
-- Varsóvia: WAW1
 - Hillsboro: US-WEST-OR-1
 - Vint Hill: US-EAST-VA-1
 
 Nas regiões seguintes (executando a versão Stein OpenStack), as regras de firewall para as redes privadas **funcionarão** como previsto:
 
-- Gravelines: GRA9
-- Estrasburgo SBG7
+- Beauharnois: BHS1, BHS3, BHS5
+- Frankfurt: DE1
+- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA9, GRA11
+- Estrasburgo: SBG5, SBG7
+- Londres: UK1
+- Varsóvia: WAW1
 
 A OVHcloud vai progressivamente atualizar todas as regiões de Newton para Stein, de modo que a funcionalidade "port security" esteja disponível.
 
@@ -166,9 +164,15 @@ False
 
 A migração seguirá o seguinte processo:
 
-- GRA9 e SBG7 irão juntar-se às outras regiões com o "porto security" por predefinição em **dissabled**.
 - As regras de firewall para as novas portas não serão aplicadas enquanto não tiver ativado a propriedade "port security" no novo porto. Nada muda para os portos existentes.
 - As regiões OpenStack passarão para a versão Stein.
+- As regiões OpenStack em versão Stein passarão por uma nova versão de OpenVSwitch.
+
+> [!primary]
+> A partir desta etapa, para os utilizadores do Terraform, é necessário forçar a parametrização do [port security para "false"](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external} para que os playbooks possam funcionar.
+>
+
+- Poderá ativar a "port security" nas regiões de Stein.
 - A porta security predefinida será alterada para **ativa** (será enviada uma comunicação global em tempo útil).
 - As regras de firewall funcionarão para as novas portas. Nada muda para os portos existentes.
 - A opção que permite ativar a propriedade "port security" nos portos existentes será ativada.

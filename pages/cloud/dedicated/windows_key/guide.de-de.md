@@ -5,7 +5,7 @@ slug: windows-key
 section: Server Management
 ---
 
-**Letzte Aktualisierung am 20.07.2018**
+**Letzte Aktualisierung am 07.07.2022**
 
 ## Ziel
 
@@ -66,6 +66,8 @@ In der nachstehenden Tabelle finden Sie die verfügbaren KMS Keys für die versc
 |Windows Server 2016 Essentials|JCKRF-N37P4-C2D82-9YXRT-4M63B|
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
+|Windows Server 2022 Standard|VDYBN-27WPP-V4HQT-9VMD4-VMK7H|
+|Windows Server 2022 Datacenter|WX4NM-KYWYW-QJJR4-XV3QB-6VM33|
 
 Quelle: [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
 

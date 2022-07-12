@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 01
 ---
 
-**Dernière mise à jour le 28/01/2022**
+**Dernière mise à jour le 22/06/2022**
 
 ## Objectif
 
@@ -26,7 +26,7 @@ Par défaut, votre solution CloudDB est liée au réseau d'hébergements web OVH
 
 Si votre offre d'hébergement inclut l'option CloudDB, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Depuis la section `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} dans la colonne de gauche.
 
-Depuis l'onglet `Informations générales`, dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de **Base de données privée**. Cliquez enfin sur `Activer`{.action} pour lancer le processus d'activation.
+Depuis l'onglet `Informations générales`, dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de **CloudDB**. Cliquez enfin sur `Activer`{.action} pour lancer le processus d'activation.
 
 ![Informations générales](images/db-activation.png){.thumbnail}
 
@@ -48,6 +48,7 @@ Vous pouvez y consulter les informations importantes concernant votre instance. 
 |État du service|Affiche notamment si l'instance est démarrée, en cours de redémarrage ou suspendue. Votre instance doit être démarrée pour pouvoir y réaliser des actions.|
 |Type|Affiche le système de bases de données utilisée par le serveur.|
 |Version|Affiche la version du système de bases de données utilisée par le serveur. Veillez à la compatibilité de votre site avec la version choisie.|
+|Saturation CPU|Affiche le temps CPU passé en saturation. Votre instance CloudDB n'est pas limitée en termes de CPU mais vous devez veiller à ne pas surcharger le CPU de votre CloudDB.|
 |RAM|Affiche la mémoire vive disponible pour votre instance ainsi que les éventuels dépassements de mémoire. Votre instance CloudDB dispose de ressources dédiées et garanties : sa mémoire RAM. Si besoin, vous pouvez faire évoluer cette dernière et être prévenu si vous consommez toutes les ressources mémoire de votre instance.|
 |Infrastructure|Affiche l'infrastructure utilisée par votre instance. Il s'agit d'une information inhérente à l'infrastructure d'OVHcloud.|
 |Datacenter|Affiche le centre de données dans lequel l'instance a été créée.|

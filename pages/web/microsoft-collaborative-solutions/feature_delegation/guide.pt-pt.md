@@ -68,7 +68,7 @@ A forma de o fazer é diferente consoante os direitos que delegou e o software o
 
 > [!warning]
 >
-> Esta solução requer conhecimentos sobre o programa ou a interface que vai utilizar. Apresentamos a seguir algumas informações sobre como a realizar. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do programa ou da interface. Não poderemos proporcionar-lhe assistência técnica.
+> Esta solução requer conhecimentos sobre o programa ou a interface que vai utilizar. Apresentamos a seguir algumas informações sobre como a realizar. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do programa ou da interface. Não poderemos proporcionar-lhe assistência técnica.
 >
 
 #### 2.1 Utilizar o seu "direito de acesso" <a name="access"></a>

@@ -11,7 +11,7 @@ order: 3
 
 ## Objetivo
 
-Una vez que haya creado un usuario OpenStack y haya generado una contraseña de acceso siguiendo la guía [Crear un acceso a Horizon](../crear_un_acceso_a_horizon/){.external}, puede cambiar dicha contraseña desde el panel Horizon. 
+Una vez que haya creado un usuario OpenStack y haya generado una contraseña de acceso siguiendo la guía [Crear un acceso a Horizon](../horizon/){.external}, puede cambiar dicha contraseña desde el panel Horizon. 
 
 Atención: El cambio de contraseña de una cuenta de usuario inhabilita las claves de acceso activas hasta ese momento.
 

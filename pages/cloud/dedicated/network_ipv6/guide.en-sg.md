@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 section: 'Network Management'
 ---
 
-**Last updated 4th May 2022**
+**Last updated 29th June 2022**
 
 ## Objective
 
@@ -16,7 +16,7 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) and/or discuss the issue with [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
@@ -53,6 +53,10 @@ If you want to have more than one IPv6 configured on your server (or want to use
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
 >
 
+> [!warning]
+>
+> Before modifying a configuration file, always create a backup of the original.
+>
 
 ### Debian and Debian-based operating systems
 
@@ -73,7 +77,7 @@ Find more information in [this guide](../getting-started-dedicated-server/#loggi
 
 #### Step 2: Open your server's network configuration file
 
-Your server's network configuration file is located in `/etc/network/interfaces`. Use the command line to locate the file and open it for editing. Also consider creating a backup first.
+Your server's network configuration file is either located in `/etc/network/interfaces` or `/etc/network/interfaces.d`. Use the command line to locate the file and open it for editing. Also consider creating a backup first.
 
 #### Step 3: Amend the network configuration file
 
@@ -219,7 +223,7 @@ ping6 -c 4 2001:4860:4860::8888
 
 If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
 
-### Ubuntu 18.04
+### Ubuntu 18.04 and 20.04
 
 #### Step 1: Use SSH to connect to your server
 
@@ -227,35 +231,71 @@ Find more information in [this guide](../getting-started-dedicated-server/#loggi
 
 #### Step 2: Open your server's network configuration file
 
-Open the network configuration file located in /etc/systemd/network. For demonstration purposes, our file is called 50-default.network.
+Open the network configuration file located in `/etc/netplan`. For demonstration purposes, our file is called '50-cloud-init.yaml'.
 
 #### Step 3: Amend the network configuration file
 
-Using a text editor, amend the file by adding the following lines to the relevant sections as shown in the example below:
+Using a text editor, amend the '50-cloud-init.yaml' file by adding the following lines to the relevant sections as shown in the example below.
 
-```console
-[Network]
-Destination=Gateway_Address
+Replace the generic elements (i.e. YOUR_IPV6, IPV6_PREFIX and IPV6_GATEWAY) as well as the network interface (if your server is not using enp1s0) with your specific values. 
 
-[Address]
-Address=IPv6_Address/64
-
-[Route]
-Destination=Gateway_Address
-Scope=link
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            gateway6: IPv6_GATEWAY
+            routes:
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-To add multiple IPv6 addresses, add multiple [Address] sections
 
-```console
-[Address]
-Address=IPv6_Address_2/64
+### Ubuntu 21.10 and 22.04
 
-[Address]
-Address=IPv6_Address_3/64
+The configuration file should look like the example below:
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            routes:
+                - to: ::/0
+                  via: IPv6_GATEWAY
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-#### Step 4: Save the file and reboot the server
 
-Save your changes to the file and then restart the network or reboot your server to apply the changes.
+
+> [!warning]
+> It is important to respect the alignment of each element in this file as represented in the example above. Do not use the tab key to create your spacing. Only the space key is needed.
+>
+
+#### Step 4: Test and apply the configuration
+
+You can test your configuration using this command:
+
+```bash
+netplan try
+```
+
+If it is correct, apply it using the following command:
+
+```bash
+netplan apply
+```
 
 #### Step 5: Test the IPv6 connectivity
 

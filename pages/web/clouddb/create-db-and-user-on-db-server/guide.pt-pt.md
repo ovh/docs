@@ -6,18 +6,22 @@ section: Configuração
 order: 2
 ---
 
-**Última atualização: 03/02/2022**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 23/06/2022**
 
 ## Objetivo
 
-Uma base de dados (*database*, «DB» ou «BDD») permite armazenar elementos considerados dinâmicos, tal como comentários ou artigos, por exemplo. Atualmente, estas bases são utilizadas pela maior parte dos sistemas de gestão de conteúdos (*Content Management System* ou CMS), como o WordPress ou o Joomla!.
+Uma base de dados (*database*, «DB» ou «BDD») permite armazenar elementos considerados dinâmicos, tal como comentários ou artigos, por exemplo. Atualmente, estas bases são utilizadas pela maior parte dos sistemas de gestão de conteúdos (*Content Management System* ou CMS), como o WordPress ou Joomla!.
 
 **Saiba como criar uma base de dados no seu servidor de bases de dados.**
 
 ## Requisitos
 
-- Dispor de um [serviço de Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Dispor de uma [instância CloudDB](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/)
+- Ter acesso à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 
@@ -29,7 +33,7 @@ Clique no separador `Bases de dados` e em `Adicionar uma base de dados`{.action}
 
 ![sql-privado](images/private-sql-createdb01.png){.thumbnail}
 
-Preencha os campos respeitando os critérios indicados. Pode criar diretamente um utilizador ao selecionar a caixa **«_Criar um utilizador_»**:
+Preencha os campos respeitando os critérios indicados. Pode criar diretamente um utilizador ao selecionar a caixa **«Criar um utilizador»**:
 
 - **Nome da base de dados** (obrigatório): nome da futura base de dados.
 - **Nome de utilizador** (apenas se opção `Criar um utilizador` foi selecionada): trata-se do utilizador que poderá conectar-se à sua base de dados e efetuar pedidos.
@@ -66,14 +70,14 @@ Na coluna à esquerda encontrará **Base de dados**, a lista das bases de dados 
 
 Segue-se a descrição dos três tipos de permissões possíveis:
 
-- **Administrador:** autorização de consultas do tipo **Select / Insert / Update / Delete / Create / Alter / Drop**
-- **Leitura / Escrita:** autorização de consultas do tipo **Select / Insert / Update / Delete**
-- **Leitura:** autorização de consultas do tipo **Select**
-- **Nenhuma:** sem permissões nesta base de dados
+- `Administrador` : autorização de consultas do tipo **Select / Insert / Update / Delete / Create / Alter / Drop**.
+- `Leitura / Escrita` : autorização de consultas do tipo **Select / Insert / Update / Delete**.
+- `Leitura` : autorização de consultas do tipo **Select**.
+- `Nenhuma:` : sem permissões nesta base de dados.
 
 > [!primary]
 > 
-> A segmentação das permissões referidas acima é própria da OVHcloud. Assim, um utilizador com permissões de **«_Administrador_»** poderá fazer **DLL** (Data_Definition_Language) e **DML** (Data_Manipulation_Language), ao passo que um utilizador com permissões de **«_Leitura_/_Escrita_»** só poderá fazer **DML** (Data_Manipulation_Language).
+> A segmentação das permissões referidas acima é própria da OVHcloud. Assim, um utilizador com permissões de `Administrador` poderá fazer **DLL** (Data Definition Language) e **DML** (Data Manipulation Language), ao passo que um utilizador com permissões de `Leitura/Escrita` só poderá fazer **DML** (Data Manipulation Language).
 
 ![sql-privado](images/private-sql-rights02.png){.thumbnail}
 

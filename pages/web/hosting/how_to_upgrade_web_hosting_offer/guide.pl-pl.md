@@ -10,7 +10,7 @@ order: 2
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 19-05-2022**
+**Ostatnia aktualizacja z dnia 22-06-2022**
 
 ## Wprowadzenie
 
@@ -49,8 +49,6 @@ W związku z tym będzie on trwał **nieco dłużej niż rok**, aż do kolejnego
 > Na przykład nie można przejść z formuły *Performance 2* na formułę *Pro* w jednej operacji.
 > Należy **najpierw** zmienić ofertę hostingu z poziomu oferty *Performance 2* na ofertę *Performance 1* **następnie** na ofertę *Pro*.
 >
-> Poniższe elementy dotyczą ofert płatnych. Aby zwiększyć [darmowy hosting Start10M](https://docs.ovh.com/pl/hosting/wlaczanie_start10m/), postępuj zgodnie z [instrukcjami](#start10m).
->
 
 > [!warning]
 >
@@ -67,24 +65,11 @@ W polu `Abonament` kliknij przycisk `...`{.action} po prawej stronie `Usługa`, 
 
 Następnie wybierz Twój nowy abonament oraz czas jego trwania. Zatwierdź odpowiednie regulaminy i kliknij `Wyślij`{.action}.
 
-### Zmień ofertę hostingu Start 10M na wyższą ofertę <a name="start10m"></a>
-
 > [!primary]
 >
-> Poniższa procedura ma zastosowanie **tylko w przypadku aktywacji usługi poczty elektronicznej przypisanej do oferty Start 10M**.
+> **Przypadek szczególny**
 >
-> Jeśli nie włączyłeś usługi poczty elektronicznej, wystarczy instrukcja z [poprzedni punkt](#modify).
->
-
-Nie będziesz mógł zmienić **bezpośrednio** z [bezpłatnego hostingu Start10M](https://docs.ovh.com/pl/hosting/wlaczanie_start10m/) na ofertę płatną. Wykonaj następujące operacje:
-
-1. W razie potrzeby zapisz [pliki hostingu](https://docs.ovh.com/pl/hosting/eksportowanie-witryna-internetowa/#etap-1-pobranie-plikow-z-twojej-przestrzeni-dyskowej-ftp) i [wiadomości e-mail](https://docs.ovh.com/pl/emails/przenoszenie-kont-e-mail/)<br>
-2. Uruchom usuwanie usługi Start10M. W tym celu w prawym górnym rogu kliknij Twoją nazwę, a następnie `Zarządzanie usługami`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie danej usługi, po czym kliknij `Usuń natychmiast hosting`{.action}.<br>
-3. Utwórz [zgłoszenie serwisowe](https://help.ovhcloud.com/pl/faq/support/cant-reach-support-phone/), aby zażądać przyspieszonego usunięcia Twojej oferty (adres e-mail Start10M jest domyślnie przechowywany przez 14 dni, w celu uniknięcia utraty danych z powodu błędu podczas operacji).<br>
-4. [Zamów nową ofertę hostingu](https://www.ovhcloud.com/pl/web-hosting/).<br>
-5. W razie potrzeby zaimportuj Twoją stronę do [nowej przestrzeni hostingowej](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/#etap-2-wgranie-plikow-strony-www-na-przestrzen-dyskowa).<br>
-6. [Dodaj domenę do swojej strony w opcji MultiSite](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/#etap-2-dodanie-domeny-lub-subdomeny).<br>
-7. [W razie potrzeby odtwórz adres e-mail](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/) i [zaimportuj wiadomości](https://docs.ovh.com/pl/emails/przenoszenie-kont-e-mail/).
+> W związku ze zmianą oferty [Start10M](https://docs.ovh.com/pl/hosting/activer-start10m/) pojawi się tylko [oferta Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/). Po zmianie oferty Perso będziesz mógł ją zmienić na wszystkie nasze [pakiety hostingowe] (https://www.ovhcloud.com/pl/web-hosting/).
 
 ### Sprawdź, czy Twój hosting jest kompatybilny z mniejszą ofertą <a name="checks"></a>
 

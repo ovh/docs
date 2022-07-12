@@ -10,7 +10,7 @@ order: 3
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 13/09/2021**
+**Última actualización: 17/06/2022**
 
 ## Objetivo
 
@@ -21,6 +21,23 @@ Office 365 Reseller (CSP2) es un servicio que permite disfrutar de diferentes ti
 ## Requisitos
 
 - Estar conectado al [área de cliente de OVHcloud.](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Disponer de un MPN ID (Microsoft Partner Network IDentifico)
+- Estar inscrito en el programa CSP (Cloud Solution Provider) de Microsoft como revendedor indirecto en la región en la que ejerza su actividad (por ejemplo: "UE" para Europa)
+
+> [!warning]
+>
+> A partir del 01/07/2022, Microsoft desactivará todos los servicios Office 365 Reseller (CSP2) que no dispongan de un MPN ID inscrito en el programa "CSP revendedor indirecto".
+>
+> Disponer de un MPN ID es ahora obligatorio para toda nueva suscripción.
+>
+Si todavía no tiene un MPN ID, puede crear uno (si cumple los requisitos de Microsoft) siguiendo la [documentación oficial de Microsoft](https://docs.microsoft.com/es-es/partner-center/mpn-create-a-partner-center-account){.external}.
+
+Para inscribirse como revendedor indirecto, consulte esta otra [documentación oficial de Microsoft](https://docs.microsoft.com/es-es/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
+
+> [!success]
+>
+> El MPN ID le permitirá obtener un descuento en las suscripciones que contrate desde el área de cliente de OVHcloud. Este descuento está sujeto a las reglas establecidas por Microsoft, en función del volumen de suscripciones que genere.
+>
 
 ## Procedimiento
 
@@ -28,17 +45,15 @@ Office 365 Reseller (CSP2) es un servicio que permite disfrutar de diferentes ti
 
 Para contratar un servicio Office 365 Reseller, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Una vez conectado, seleccione `Sunrise`{.action} en la barra superior y haga clic en `Office 365 Reseller`{.action}.
 
+- Introduzca su ID MPN previamente creado en Microsoft.
 - Complete la información de contacto del cliente final, que se solicita para definir el gestor del grupo de licencias (Tenant) que va a crear.
 
 > [!primary]
 >
-> - Si ya tiene un servicio Office 365 CSP2 con Microsoft, puede delegar la administración en OVHcloud. De este modo, podrá añadir suscripciones adicionales directamente desde el área de cliente de OVHcloud. Al contratar un nuevo grupo de licencias, deberá elegir `Delegación de una plataforma previamente creada en Microsoft`{.action}.
->
-> - Si dispone de un ID de partner de Microsoft, deberá indicarlo en la misma interfaz. Con ese ID, podrá obtener un descuento al contratar suscripciones desde el área de cliente. El descuento dependerá de la cantidad de suscripciones que genere, de acuerdo con las normas establecidas por Microsoft.
+> Si desea crear una nueva plataforma, puede elegir un **subdominio personalizado* marcando la pequeña casilla (con los nombres disponibles).
 >
 
 - En la lista inferior, indique las licencias que quiere añadir a su grupo.
-
 - Haga clic en `Contratar`{.action} para finalizar el pedido.
 
 > [!warning]
@@ -48,6 +63,22 @@ Para contratar un servicio Office 365 Reseller, acceda al [área de cliente de O
 
 ![Office 365](images/csp2-01.png){.thumbnail}
 
+#### Caso particular de las delegaciones
+
+Si ya tiene un servicio Office 365 CSP2 con Microsoft, puede delegar su administración en OVHcloud. De este modo, podrá añadir suscripciones adicionales directamente desde el área de cliente de OVHcloud. Al contratar un nuevo grupo de licencias, deberá elegir la opción `Delegación de una plataforma previamente creada en Microsoft` y especificar con precisión el **Tenant Office 365 existente** que podrá encontrar en su portal Microsoft, así como su MPN ID.
+
+- Si ya tiene que pasar por OVHcloud para su Office 365 revendedores, también podrá delegar la administración en OVHcloud, pero deberá cortar previamente la conexión con su anterior proveedor.
+
+- Será necesaria una doble validación para finalizar la aparición del tenant en el área de cliente de OVHcloud.
+
+- Una vez que se hayan contratado las licencias del tenant, estas estarán disponibles en su [portal de administración de Microsoft](https://portal.office.com/Admin/Default.aspx){.external}. A continuación, deberá sustituir sus antiguas licencias en su [portal de administración de Microsoft](https://portal.office.com/Admin/Default.aspx){.external} por las licencias de OVHcloud y dar de baja sus antiguas licencias para no seguir pagando por duplicado.
+
+- No se preocupe, si tiene licencias no disponibles para su compra en OVHcloud, puede conservar estas licencias activas en Microsoft.
+
+> [!warning]
+Dado que se trata de productos con licencia, no es posible cambiar un tenant Office 365 revendedores de un identificador de cliente de OVHcloud a otro.
+>
+
 ### Gestionar el servicio Office 365 Reseller
 
 Una vez que el servicio Office 365 haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
@@ -56,7 +87,7 @@ Para ello, acceda al apartado `Sunrise`{.action}. En el menú de la izquierda, s
 
 Aparecerá la siguiente información:
 
-- **Nombre interno del servicio**: indica el nombre del servicio. (solo es visible desde el área de cliente)
+- **Nombre interno del servicio**: indica el nombre del servicio. Solo es visible desde el área de cliente. También corresponde al *Tenant* (que contiene su grupo de licencias) de Microsoft.
 - **Nombre mostrado del servicio**: permite personalizar el nombre de visualización del servicio en el área de cliente.
 - **Creado el**: indica la fecha de creación del servicio.
 - **Centro de administración de Microsoft**: enlace del portal Office que permite administrar las suscripciones.

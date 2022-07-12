@@ -37,7 +37,7 @@ Para publicar su sitio web, debe disponer de un [nombre de dominio](https://www.
 
 Para más información, consulte esta [página](https://www.ovhcloud.com/es-es/web-hosting/uc-website/) y siga las indicaciones de la guía [Publicar un sitio web en internet](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/).
 
-**Trucos y Trucos**: Para ayudarle a crear su sitio web, OVHcloud le permite instalar en su alojamiento un programa de soporte para la creación de sitios web (WordPress, PrestaShop, Joomla y Drupal), gracias a la funcionalidad [Módulos en 1 clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/).
+**Trucos y Trucos**: Para ayudarle a crear su sitio web, OVHcloud le permite instalar en su alojamiento un programa de soporte para la creación de sitios web (WordPress, PrestaShop, Joomla! y Drupal), gracias a la funcionalidad [Módulos en 1 clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/).
 
 ### ¿Cómo transferir un sitio web y el correo a los servidores de OVHcloud? 
 
@@ -158,7 +158,7 @@ Compare los `Objetivos` de las entradas de tipo `NS` indicadas en la pestaña `Z
 
 - Si los elementos no son idénticos, pero los `servidores DNS` indicados en la pestaña del mismo nombre aparecen en [esta lista](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/), siga las instrucciones de [esta guía](https://docs.ovh.com/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/#restaurar-los-servidores-dns) para restaurarlos.
 
-- Si los elementos no son idénticos y los `servidores DNS` indicados en la pestaña del mismo nombre no aparecen en [esta lista](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/), contacte con su Webmaster o busque un proveedor especializado a través de la página de [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+- Si los elementos no son idénticos y los `servidores DNS` indicados en la pestaña del mismo nombre no aparecen en [esta lista](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/), contacte con su Webmaster o busque un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) a través de la página de [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 ### ¿Qué hacer si mi sitio web muestra un error "La página no se redirige correctamente"?
 
@@ -177,7 +177,7 @@ Restaure su sitio web a su estado anterior:
 
 - Si su sitio web incluye una base de datos, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente).
 
-Si las restauraciones no le permiten restablecer el acceso a su sitio web, contacte con su Webmaster o busque un proveedor especializado en la web de los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Si las restauraciones no le permiten restablecer el acceso a su sitio web, contacte con su Webmaster o busque un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) en la web de los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 ### ¿Qué hacer si mi sitio web muestra un error "503 error Backend fetch failed"?
 
@@ -185,7 +185,7 @@ Si las restauraciones no le permiten restablecer el acceso a su sitio web, conta
 
 Si ha activado la [opción CDN](https://docs.ovh.com/es/hosting/guia_de_uso_del_acelerador_geocache_en_un_alojamiento_web/) del alojamiento, desactive el modo de *mantenimiento* en su sitio web WordPress o PrestaShop.
 
-Si no ha activado esta opción ni ha utilizado el modo de *mantenimiento*, póngase en contacto con su Webmaster o busque un proveedor especializado en el sitio web de los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Si no ha activado esta opción ni ha utilizado el modo de *mantenimiento*, póngase en contacto con su Webmaster o busque un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) en el sitio web de los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 ### ¿Qué hacer si mi sitio web muestra un error "Your request has been blocked"?
 

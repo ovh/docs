@@ -69,7 +69,7 @@ Po utworzeniu identyfikatora i rekordu ostatni etap polega na zautomatyzowaniu a
 
 > [!warning]
 >
-> Instalację i konfigurację klienta przeprowadź we własnym zakresie zgodnie z Twoją wiedzą. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego usługodawcy. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. 
+> Instalację i konfigurację klienta przeprowadź we własnym zakresie zgodnie z Twoją wiedzą. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. 
 >
 
 Pamiętaj, że klient może być zainstalowany na Twoim serwerze lub komputerze albo może być już dostępny w interfejsie Twojego routera, jeśli router jest kompatybilny. Po wybraniu i zainstalowaniu klienta skonfiguruj go, używając informacji o utworzonym na wcześniejszym etapie użytkowniku DynHost.

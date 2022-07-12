@@ -24,7 +24,7 @@ Il progetto è organizzato gradualmente in ordine crescente di importanza e diff
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo VPS. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un provider specializzato o contattare l'amministratore del servizio. OVH non potrà fornirti assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo VPS. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o contattare l'amministratore del servizio. OVH non potrà fornirti assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
 >
 
 ## Prerequisiti
@@ -99,10 +99,10 @@ I form dei siti sono bersagli privilegiati dagli hackers/spammers. Proteggi i tu
 
 Aggiungi al tuo sito un plugin di sicurezza consigliato dall'editor del CMS:
 
-- [Wordpress](https://it.wordpress.org){.external}
+- [WordPress](https://it.wordpress.org){.external}
 - [Joomla](https://downloads.joomla.org/it/){.external}
 - [Drupal](http://www.drupalitalia.org/){.external}
-- [Prestashop](https://www.prestashop.com/it){.external}
+- [PrestaShop](https://www.prestashop.com/it){.external}
 
 ### Step 10: verifica che il tuo hosting non contenga file malevoli
 

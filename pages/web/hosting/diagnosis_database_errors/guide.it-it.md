@@ -49,7 +49,7 @@ Per prima cosa verifica su [https://web-cloud.status-ovhcloud.com/](https://web-
 
 #### Verifica le credenziali di connessione al tuo database <a name="config_file"></a>
 
-Accedi in [FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) allo spazio di archiviazione dei file sul tuo hosting e ritrova il file di configurazione del tuo sito (ad esempio, per un sito Wordpress, si tratta del file **wp-config.php***, che contiene il tuo sito).
+Accedi in [FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) allo spazio di archiviazione dei file sul tuo hosting e ritrova il file di configurazione del tuo sito (ad esempio, per un sito WordPress, si tratta del file **wp-config.php***, che contiene il tuo sito).
 
 > [!warning]
 >
@@ -62,11 +62,11 @@ Verifica la corrispondenza **esatta** tra le credenziali di connessione a [PhpMy
 
 Modifica, se necessario, la [password del tuo database](https://docs.ovh.com/it/hosting/modificare-password-database/).
 
-##### Esempio per Wordpress
+##### Esempio per WordPress
 
 Se il tuo sito visualizza un messaggio **"Errore durante la connessione al database"** e non è interessato da un [incidente](https://web-cloud.status-ovhcloud.com/), accedi al tuo hosting e apri la directory contenente il tuo sito (di default la cartella `wwww`) ...
 
-Se il tuo sito è Wordpress, apri il file `wp-config.php`.
+Se il tuo sito è WordPress, apri il file `wp-config.php`.
 
 ```php
 define('DB_NAME', 'my_database');

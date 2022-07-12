@@ -18,7 +18,7 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 > [!warning]
 >This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. ou may need to adapt the instructions according to your situation.
 >
->If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this guide.
+>If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-au/directory/) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements

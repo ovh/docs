@@ -35,7 +35,7 @@ OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private network so
 
 In this tutorial, we are going to activate the vRack on a Public Cloud project. Then we will create a Managed Kubernetes cluster and a Public Cloud instance (PCI). Eventually, both of them will be added inside the vRack. 
 
-Concretely, we are going to install an OVHcloud Managed Kubernetes cluster and a Public Cloud instance, both of them in the same private network. We are going to deploy a [Wordpress](https://wordpress.org/){.external} on the Kubernetes cluster that will use the private network to connect to a [MariaDB database](https://mariadb.org/) installed on the Public Cloud instance.
+Concretely, we are going to install an OVHcloud Managed Kubernetes cluster and a Public Cloud instance, both of them in the same private network. We are going to deploy a [WordPress](https://wordpress.org/){.external} on the Kubernetes cluster that will use the private network to connect to a [MariaDB database](https://mariadb.org/) installed on the Public Cloud instance.
 
 **In this tutorial we are going to give you an example of how to use the OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) to connect a Managed Kubernetes cluster with a Public Cloud instance inside the same private network.**
 
@@ -447,7 +447,7 @@ WordPress Admin URL: http://152.228.251.29/admin
   
 And putting the URL in the browser will take us to the new blog, accessing the MariaDB database from the PCI instance via the vRack.
 
-![Setting-up Wordpress](images/vrack-example-06.png){.thumbnail}
+![Setting-up WordPress](images/vrack-example-06.png){.thumbnail}
 
 ## Go further
 

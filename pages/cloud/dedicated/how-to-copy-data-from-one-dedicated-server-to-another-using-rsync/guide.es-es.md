@@ -15,7 +15,7 @@ Rsync (de *remote syncronization*) es un software libre de sincronización de ar
 
 > [!warning]
 >
-Este tutorial explica cómo utilizar una solución de OVHcloud con herramientas externas en un contexto concreto. Deberá adaptar las indicaciones a su caso particular. Si necesita ayuda, le recomendamos que contacte con un proveedor especializado o que comparta sus dudas con nuestra comunidad en <https://community.ovh.com/en/>. Nosotros no podremos asistirle.
+Este tutorial explica cómo utilizar una solución de OVHcloud con herramientas externas en un contexto concreto. Deberá adaptar las indicaciones a su caso particular. Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o que comparta sus dudas con nuestra comunidad en <https://community.ovh.com/en/>. Nosotros no podremos asistirle.
 >
 
 ## Requisitos

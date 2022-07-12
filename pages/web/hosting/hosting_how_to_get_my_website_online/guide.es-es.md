@@ -103,7 +103,7 @@ Es posible que en el espacio de almacenamiento ya haya un archivo denominado ind
 > Si su sitio web no está conectado a una base de datos, puede omitir este paso.
 >
 
-En la actualidad, prácticamente todos los sistemas de gestión de contenidos (CMS), como WordPress o Joomla, utilizan bases de datos para almacenar los elementos dinámicos, como comentarios o artículos. Para que el sitio web funcione correctamente, es imprescindible conectar los archivos del sitio web a la base de datos mediante un archivo de configuración que contiene la información de conexión a la base de datos.
+En la actualidad, prácticamente todos los sistemas de gestión de contenidos (CMS), como WordPress o Joomla!, utilizan bases de datos para almacenar los elementos dinámicos, como comentarios o artículos. Para que el sitio web funcione correctamente, es imprescindible conectar los archivos del sitio web a la base de datos mediante un archivo de configuración que contiene la información de conexión a la base de datos.
 
 Según el sitio web, la conexión puede realizarse, o bien manualmente, o bien a través de un panel de administración generado por el propio sitio web. Para ello, debe realizar las acciones que se indican a continuación.
 

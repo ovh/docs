@@ -27,7 +27,7 @@ Wenn Sie die Konfiguration Ihres Hostings ändern, ändern Sie auch die Konfigur
 
 > [!warning]
 >
-> Vergewissern Sie sich, bevor Sie Änderungen vornehmen, dass Ihre Website auch mit den neuen Einstellungen weiterhin erreichbar bleibt. Falls Sie sich nicht sicher sind und Hilfe benötigen, empfehlen wir Ihnen, einen spezialisierten Dienstleister zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung. 
+> Vergewissern Sie sich, bevor Sie Änderungen vornehmen, dass Ihre Website auch mit den neuen Einstellungen weiterhin erreichbar bleibt. Falls Sie sich nicht sicher sind und Hilfe benötigen, empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung. 
 > 
 
 ### Webhosting-Konfiguration über das Kundencenter bearbeiten

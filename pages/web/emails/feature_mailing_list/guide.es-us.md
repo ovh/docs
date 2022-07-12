@@ -153,7 +153,7 @@ Si alguien desea suscribirse a su lista de difusión, basta con enviar un mensaj
 
 
 ```bash
-nombre_de_su_LD-suscripción@sudominio.com
+nombre_de_su_LD-subscribe@sudominio.com
 ```
 
 
@@ -163,7 +163,7 @@ Si un abonado desea cancelar la suscripción a su lista de difusión, basta con 
 
 
 ```bash
-nombre_de_su_LD-cancelarsuscripción@sudominio.com
+nombre_de_su_LD-unsubscribe@sudominio.com
 ```
 
 

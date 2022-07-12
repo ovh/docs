@@ -1,6 +1,6 @@
 ---
-title: CMS - ręczna instalacja modułu Prestashop
-excerpt: Jak ręcznie zainstalować moduł Prestashop?
+title: CMS - ręczna instalacja modułu PrestaShop
+excerpt: Jak ręcznie zainstalować moduł PrestaShop?
 id: '1979'
 slug: cms_-_reczna_instalacja_modulu_prestashop
 section: CMS

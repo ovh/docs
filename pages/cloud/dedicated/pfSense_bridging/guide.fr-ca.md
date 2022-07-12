@@ -27,7 +27,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer votre mac
 > [!warning]
 > Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et décrit les actions à réaliser dans un contexte précis. Veuillez noter que ces actions décrites ici doivent être adaptées à votre cas particulier.
 >
-Si vous rencontrez des difficultés lors de l'exécution de ces actions, merci de contacter un prestataire spécialisé et/ou d'échanger avec notre communauté sur <https://community.ovh.com/>. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
+Si vous rencontrez des difficultés lors de l'exécution de ces actions, merci de contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou d'échanger avec notre communauté sur <https://community.ovh.com/>. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
 >
 
 ## En pratique

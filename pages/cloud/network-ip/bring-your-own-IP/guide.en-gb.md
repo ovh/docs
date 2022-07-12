@@ -136,7 +136,7 @@ The imported IPs will behave like the current failover IP product. An imported I
 > For the same reason, you will not be able to edit your IP's reverses out of the box via the OVHcloud Control Panel/API.
 >
 
-<br>During the delivery, we will create ARPA zones on our DNS servers and any reverse modification via the OVHcloud Control Panel/API will be applied on them. However, these modifications will be visible to the public when our DNS servers receive delegations of the ARPA zones by the RIR. (This is optional, if you want to continue managing your reverse DNS on your own, you can).
+<br>During the delivery, we will create ARPA zones on our DNS servers and any reverse DNS modification via the OVHcloud Control Panel/API will be applied on them. However, these modifications will be visible to the public when our DNS servers receive delegations of the ARPA zones by the RIR. (This is optional, if you want to continue managing your reverse DNS on your own, you can).
 
 ## FAQ
 

@@ -18,7 +18,7 @@ Le protocole de communication SSH (Secure Shell) est l'outil principal pour éta
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Si vous rencontrez des difficultés lors de l'exécution de ces actions, nous vous invitons à contacter un prestataire spécialisé et/ou échanger avec notre communauté d'utilisateurs sur https://community.ovh.com/. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
+> Si vous rencontrez des difficultés lors de l'exécution de ces actions, nous vous invitons à contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou échanger avec notre communauté d'utilisateurs sur https://community.ovh.com/. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
 >
 
 ## Prérequis
@@ -134,7 +134,7 @@ Enregistrez les modifications et quittez l'éditeur. La nouvelle empreinte de cl
 
 Sous Windows, l'emplacement du fichier `known_hosts` et la ligne à supprimer sont également spécifiés, par exemple :
 
-```powershell
+```console
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 

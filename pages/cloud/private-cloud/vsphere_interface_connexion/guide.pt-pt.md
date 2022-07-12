@@ -6,16 +6,20 @@ section: Introdução
 order: 2
 ---
 
-**Última atualização: 28/12/2021**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 24/06/2022**
 
 ## Objetivo
 
-**Este manual apresenta-lhe as diferentes formas de se ligar ao vSphere.**
+**Este manual explica-lhe como aceder ao vSphere.**
 
 ## Requisitos
 
 - Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), para receber dados de acesso.
-- Ter um identificador de utilizador ativo [criado na Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter adicionado endereços IP à secção `Segurança`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para mais informações, consulte o nosso guia [Autorizar IP a ligar-se ao vCenter](https://docs.ovh.com/pt/private-cloud/autorizar-ip-a-ligar-se-ao-vcenter/).
 
 ## Instruções
 
@@ -38,20 +42,6 @@ O web client HTML5 está disponível na interface web do seu Hosted Private Clou
 A seguir, deverá aceder à seguinte interface:
 
 ![Ligação à interface vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
-
-A página `Home`{.action} permite consultar os grandes menus do seu vCenter.
-
-### Utilização do web client flash
-
-O web client flash está disponível na interface web do seu Hosted Private Cloud no endereço: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (substitua pcc-xxx-xx-xx-xxx.ovh.com pelo endereço do seu Hosted Private Cloud).
-
-Ligue-se com as credenciais que recebeu:
-
-![Client vSphere](images/vsphere-client.png){.thumbnail}
-
-A seguir, deverá aceder à seguinte interface:
-
-![Ligação à interface vSphere](images/connection_interface_w.png){.thumbnail}
 
 A página `Home`{.action} permite consultar os grandes menus do seu vCenter.
 

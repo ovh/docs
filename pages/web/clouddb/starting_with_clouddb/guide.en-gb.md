@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 01
 ---
 
-**Last updated 28th January 2022**
+**Last updated 22nd June 2022**
 
 ## Objective
 
@@ -17,8 +17,8 @@ Your CloudDB solution is linked to the OVHcloud web hosting network by default. 
 
 ## Requirements
 
-- a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in [web hosting plans Performance](https://www.ovhcloud.com/en-gb/web-hosting/)).
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in [Performance web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -26,7 +26,7 @@ Your CloudDB solution is linked to the OVHcloud web hosting network by default. 
 
 If your hosting plan includes the CloudDB option, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. In the `Web Cloud`{.action} section, click `Web Hosting`{.action} in the left-hand column.
 
-In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **Private database**. Then click `Enable`{.action} to start the activation process.
+In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **CloudDB**. Then click `Enable`{.action} to start the activation process.
 
 ![Informations générales](images/db-activation.png){.thumbnail}
 
@@ -48,9 +48,10 @@ You can also view important information about your instance. Please take a few m
 |Service status|Mainly shows whether the instance has been rebooted, is in the process of rebooting, or is suspended. Your instance must be rebooted if you need to carry out any actions. |
 |Type|Shows the database system used by the server.|
 |Version|Shows the database system version used by the server. Check that your website is compatible with the version you have chosen.|
-|RAM|Shows the RAM available for your instance, also shows if you are close to exceeding the RAM limit. Your CloudDB instance uses dedicated, guaranteed resources: its RAM. If required, you can scale the RAM, and receive warnings if you are consuming all of your instance’s RAM resources.|
+|CPU throttling|Displays the CPU time spent in saturation. Your CloudDB instance is not limited in terms of CPU, but you must be careful not to overload the CPU of your CloudDB.|
+|RAM|Shows the RAM available for your instance and indicates RAM overflow. Your CloudDB instance uses dedicated, guaranteed RAM resources. If required, you can scale the RAM and receive warnings when your RAM usage exceeds the limit.|
 |Infrastructure|Shows the infrastructure that your instance uses. This information relates to the OVHcloud infrastructure.|
-|Datacentre|Shows the datacentre where the instance has been created.|
+|Datacenter|Shows the data centre where the instance has been created.|
 |Host|Shows the OVHcloud server where your instance is. This information relates to the OVHcloud infrastructure, and we may use it in our communication on [OVHcloud incidents](http://status.ovh.net/){.external}.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}
@@ -188,7 +189,7 @@ No matter which method you choose to follow, you must have the following five pi
 
 > [!warning]
 >
-> In some rare cases, the `port`{.action} field may not be available in your website’s configuration. If this is the case, you will need to add this field after your server’s host name, separating them with a *:* (e.g.: hostname:port).
+> In some rare cases, the `port`{.action} field may not be available in your website’s configuration. If this is the case, you will need to add this field after your server’s host name, separating them with a *:*, i.e. `hostname:port`.
 >
 
 ![clouddb](images/clouddb-login-information.png){.thumbnail}

@@ -18,9 +18,9 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 
 ## Requirements
 
-- a [domain name](https://www.ovhcloud.com/en-au/domains/) registered with OVHcloud
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) with the necessary permissions to manage the domain name (domain administrator)
-- the registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of owner) during the last 60 days
+- A [domain name](https://www.ovhcloud.com/en-au/domains/) registered with OVHcloud
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) with the necessary permissions to manage the domain name (domain administrator)
+- The registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of owner) during the last 60 days
 
 
 ## Instructions
@@ -33,10 +33,10 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 >
 > We recommend to consult the following resources in case of any doubt:
 >
-> - the website of the respective TLD registry
-> - the [list of TLDs available at OVHcloud](https://www.ovhcloud.com/en-au/domains/tld/)
+> - The website of the respective TLD registry
+> - The [list of TLDs available at OVHcloud](https://www.ovhcloud.com/en-au/domains/tld/)
 > - [ICANN's explanation of EPP Status Codes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (to find out which status codes currently apply to your domain name, carry out a *Whois* search, preferably using the respective TLD registry's website)
-> - your new registrar's website and management interface, especially for questions about a pending transfer process
+> - Your new registrar's website and management interface, especially for questions about a pending transfer process
 >
 
 ### Step 1: Remove the transfer protection for the domain name

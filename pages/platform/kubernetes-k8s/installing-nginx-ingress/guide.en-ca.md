@@ -6,7 +6,7 @@ section: Traffic management
 order: 0
 ---
 
-**Last updated 24th March 2022**
+**Last updated 27th June 2022**
 
 <style>
  pre {
@@ -40,6 +40,22 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
+## Ingress resources and Nginx Ingress Controller
+
+In Kubernetes, an Ingress resource allows you to access to your Services from outside the cluster. The goal is to avoid creating a Load Balancer per Service but only one per Ingress.
+
+![Kubernetes Ingress](images/ingress.png)
+
+An Ingress is implemented by a 3rd party: an Ingress Controller that extends specs to support additional features.
+
+In this tutorial you will install a Nginx Ingress Controller.<br>
+It is an Ingress controller for Kubernetes using a Nginx web server as a reverse proxy and Load Balancer.
+
+Specifically, when you are deploying and running a Nginx Ingress Controller, you will have a Pod that runs Nginx and watches the Kubernetes Control Plane for new and updated Ingress Resource objects.
+
+Imagine an Ingress Resource as a list of traffic routing rules for backend Services.
+
+After deploying the Nginx Ingress Controller, you will also have an OVHcloud Load Balancer. Thanks to this Load Balancer the external traffic will be routed to the Ingress Controller Pod running Nginx, which then forwards traffic to the appropriate backend Services you will configure in Ingress resources.
 
 ## Installing the Nginx Ingress Controller Helm chart
 
@@ -58,7 +74,7 @@ The install process will begin:
 
 <pre class="console"><code>$ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
 NAME: ingress-nginx
-LAST DEPLOYED: Mon Feb 28 16:04:05 2022
+LAST DEPLOYED: Mon Jun 27 09:20:44 2022
 NAMESPACE: ingress-nginx
 STATUS: deployed
 REVISION: 1
@@ -86,7 +102,8 @@ An example Ingress that makes use of the controller:
       - host: www.example.com
         http:
           paths:
-            - backend:
+            - pathType: Prefix
+              backend:
                 service:
                   name: exampleService
                   port:
@@ -111,7 +128,6 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
   type: kubernetes.io/tls
 </code></pre>
 
-
 As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `<pending>` `EXTERNAL-IP`. 
 
 If you try again in a few minutes you should get an `EXTERNAL-IP`:
@@ -133,11 +149,11 @@ You should have a content like this:
 
 <pre class="console"><code>$ export INGRESS_URL=$(kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath='{.status.loadBalancer.ingress[].ip}')
 echo Ingress URL: http://$INGRESS_URL/
-Ingress URL: http://135.125.84.16/
+Ingress URL: http://51.178.69.190/
 </code></pre>
 
 
-In order to test your `nginx-ingress`, you can for example [install a Wordpress](../installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
+In order to test your `nginx-ingress`, you can for example [install a WordPress](../installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -163,6 +179,29 @@ spec:
 > [!primary]
 > Don't forget to replace `[YOUR_WORDPRESS_SERVICE_NAME]`.
 
+In our example, the `ingress.yaml` produces this result:
+
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: ingress
+  namespace: default
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: my-first-k8s-wordpress
+                port:
+                  number: 80
+```
+
 Apply the file:
 
 ```
@@ -175,6 +214,6 @@ And the Ingress is created.
 ingress.extensions/ingress created
 </code></pre>
 
-So now if you point your browser to `http://$INGRESS_URL/`, you will see your Wordpress:
+So now if you point your browser to `http://$INGRESS_URL/`, you will see your WordPress:
 
-![Wordpress using Ingress](images/installing-ingress-01.png){.thumbnail}
+![WordPress using Ingress](images/installing-ingress-01.png){.thumbnail}

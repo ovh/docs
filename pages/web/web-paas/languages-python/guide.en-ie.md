@@ -5,14 +5,15 @@ section: Languages
 order: 4
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 2nd June 2022**
 
 
 ## Objective  
 
-Web PaaS supports deploying Python applications. Your application can use WSGI-based (Gunicorn / uWSGI) application server, Tornado, Twisted, or Python 3.5+ asyncio server.
+Python is a general purpose scripting language often used in web development.
+You can deploy Python apps on Web PaaS using a server or a project such as [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/).
 
-## Supported
+## Supported versions
 
 | **Grid** | 
 |----------------------------------|  
@@ -22,152 +23,149 @@ Web PaaS supports deploying Python applications. Your application can use WSGI-b
 |  3.7 |  
 |  3.8 |  
 |  3.9 |  
+|  3.10 |  
 
-## Support libraries
 
-While it is possible to read the environment directly from your application, it is generally easier and more robust to use the [`platformshconfig`](https://github.com/platformsh/config-reader-python) pip library which handles decoding of service credential information for you.
+## Usage example
 
-## WSGI-based configuration
+### Run your own server
 
-In this example, we use Gunicorn to run our WSGI application.  Configure the `.platform.app.yaml` file with a few key settings as listed below, a complete example is included at the end of this section.
+You can define any server to handle requests.
+Once you have it configured, add the following configuration to get it running on Web PaaS:
 
-1\. Specify the language of your application (available versions are listed above):
+1\. Specify one of the [supported versions](#supported-versions):
+
+```yaml   
+type: 'python:3.10'
+```  
+
+2\. Install the requirements for your app.
+
+```yaml  
+location=".platform.app.yaml"
+dependencies:
+    python3:
+        pipenv: "2022.5.2"
+
+hooks:
+    build: |
+              pipenv install --system --deploy
+``` 
+3\. Define the command to start your web server:
+
+
+```yaml 
+location=".platform.app.yaml"
+web:
+    # Start your app with the configuration you define
+    # You can replace the file location with your location
+    commands:
+        start: python server.py
+```
+
+### Use uWSGI
+
+You can also use [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) to manage your server.
+Follow these steps to get your server started.
+
+1\. Specify one of the [supported versions](#supported-versions):
 
 
 
 ```yaml   
-type: 'python:3.9'
+type: 'python:3.10'
 ```  
 
 
-2\. Build your application with the build hook. Assuming you have your pip dependencies stored in `requirements.txt` and a `setup.py` at the root of your application folder to execute build steps:
+2\. Define the conditions for your web server:
 
 
-```yaml
-hooks:
-  build: |
-    pip install -r requirements.txt
-    pip install -e .
-    pip install gunicorn
-```
-
-   These are installed as global dependencies in your environment.
-
-3\. Configure the command you use to start serving your application (this must be a foreground-running process) under the `web` section, e.g.:
-
-
-```yaml
+```yaml 
+location=".platform.app.yaml"
 web:
-  commands:
-    start: "gunicorn -b 0.0.0.0:$PORT project.wsgi:application"
+    upstream:
+        # Send requests to the app server through a unix socket
+        # Its location is defined in the SOCKET environment variable
+        socket_family: "unix"
+
+    # Start your app with the configuration you define
+    # You can replace the file location with your location
+    commands:
+        start: "uwsgi --ini conf/uwsgi.ini"
+
+    locations:
+        # The folder from which to serve static assets
+        "/":
+            root: "public"
+            passthru: true
+            expires: 1h
 ```
 
-   This assumes the WSGI file is `project/wsgi.py` and the WSGI application object is named `application` in the WSGI file.
-
-4\. Define the web locations your application is using:
+3\. Create configuration for uWSGI such as the following:
 
 
-```yaml
-web:
-  locations:
-    "/":
-      root: ""
-      passthru: true
-      allow: false
-    "/static":
-      root: "static/"
-      allow: true
+```ini 
+location="config/uwsgi.ini"
+[uwsgi]
+ # UNIX socket to use to talk with the web server
+ # Uses the variable defined in the configuration in step 2
+ socket = $(SOCKET)
+ protocol = http
+
+ # the entry point to your app
+ wsgi-file = app.py
 ```
 
-   This configuration asks our web server to handle HTTP requests at "/static" to serve static files stored in `/app/static/` folder while everything else is forwarded to your application server.
+   Replace `app.py` with whatever your file is.
 
-5\. Create any Read/Write mounts. The root file system is read only.  You must explicitly describe writable mounts.
-
-
-```yaml
-mounts:
-    tmp:
-        source: local
-        source_path: tmp
-    logs:
-        source: local
-        source_path: logs
-```
-
-   This setting allows your application writing files to `/app/tmp` and have logs stored in `/app/logs`.
-
-Then, set up the routes to your application in `.platform/routes.yaml`.
-
-```yaml
-"https://{default}/":
-  type: upstream
-  upstream: "app:http"
-```
-
-Here is the complete `.platform.app.yaml` file:
-
-```yaml
-name: app
-type: python:2.7
-
-web:
-  commands:
-    start: "gunicorn -b $PORT project.wsgi:application"
-  locations:
-    "/":
-      root: ""
-      passthru: true
-      allow: false
-    "/static":
-      root: "static/"
-      allow: true
+4\. Install the requirements for your app.
+```yaml  
+   dependencies:
+    python3:
+        pipenv: "2022.5.2"
 
 hooks:
-  build: |
-    pip install -r requirements.txt
-    pip install -e .
-    pip install gunicorn
+    build: |
+              pipenv install --system --deploy
+```
+5\. Define the entry point in your app:
 
-mounts:
-   tmp:
-       source: local
-       source_path: tmp
-   logs:
-       source: local
-       source_path: logs
 
-disk: 512
+```python
+# You can name the function differently and pass the new name as a flag
+# start: "uwsgi --ini conf/uwsgi.ini --callable <NAME>"
+def application(env, start_response):
+
+    start_response('200 OK', [('Content-Type', 'text/html')])
+    return [b"Hello world from Web PaaS"]
 ```
 
-## Using the asyncio module
+## Package management
 
-The above Gunicorn based WSGI example can be modified to use the Python 3.5+ asyncio module.
+Your app container comes with pip pre-installed.
+To add global dependencies (packages available as commands),
+add them to the `dependencies` in your [app configuration](../configuration-app):
 
-1\. Change the `type` to `python:3.6`.
-
-2\. Change the start command to use asyncio.
-
-
-```yaml
-web:
-  commands:
-    start: "gunicorn -b $PORT -k gaiohttp project.wsgi:application"
+```yaml 
+location=".platform.app.yaml"
+dependencies:
+    python3:
+        <PACKAGE_NAME>: <PACKAGE_VERSION>
 ```
 
-3\. Add `aiohttp` as pip dependency in your build hook.
+```yaml  
+dependencies:
+    python3:
+        pipenv: "2022.5.2"
 
-
-```yaml
 hooks:
-  build: |
-    pip install -r requirements.txt
-    pip install -e .
-    pip install gunicorn aiohttp
+    build: |
+              pipenv install --system --deploy
 ```
+## Connect to services
 
-## Accessing services
-
-To access various [services](../configuration-services) with Python, see the following examples.  The individual service pages have more information on configuring each service.
+The following examples show how to access various [services](../configuration-services) with Python.
+For more information on configuring a given service, see the page for that service.
 
 > [!tabs]      
 > Elasticsearch     
@@ -207,18 +205,20 @@ To access various [services](../configuration-services) with Python, see the fol
 >> {!> web/web-paas/static/files/fetch/examples/python/solr !}  
 >> ```     
 
+## Configuration reader
+While you can read the environment directly from your app, you might want to use the
+[`platformshconfig` library](https://github.com/platformsh/config-reader-python). 
+It decodes service credentials, the correct port, and other information for you.
 
 ## Project templates
-
-A number of project templates for Python applications are available on GitHub.  Not all of them are proactively maintained but all can be used as a starting point or reference for building your own website or web application.
 
 
 ### Django 2 
 
 ![image](images/django2.png)
 
-<p>This template deploys the Django 2 application framework on Web PaaS, using the gunicorn application runner.  It also includes a PostgreSQL database connection pre-configured.</p>
-<p>New projects should be built using Django 3, but this project is a reference for existing migrating sites.  Version 2 is in legacy support.</p>
+<p>This template deploys the Django 2 application framework on Web PaaS, using the gunicorn application runner. It also includes a PostgreSQL database connection pre-configured.</p>
+<p>New projects should be built using Django 3, but this project is a reference for existing migrating sites. Version 2 is in legacy support.</p>
   
 #### Features
 - Python 3.8<br />  
@@ -228,27 +228,25 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/django2) on GitHub.
 
-### Python 3 running UWSGI 
+### Pelican 
 
-![image](images/python.png)
+![image](images/pelican.png)
 
-<p>This template provides the most basic configuration for running a custom Python 3.7 project.  It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.  The application runs through the UWSGI runner.</p>
-<p>Python is a general purpose scripting language often used in web development.</p>
+<p>This template provides a basic Pelican skeleton. Only content files need to be committed, as Pelican itself is downloaded at build time via the Pipfile. All files are generated at build time, so at runtime only static files need to be served.</p>
+<p>Pelican is a static site generator written in Python and using Jinja for templating.</p>
   
 #### Features
 - Python 3.8<br />  
-- MariaDB 10.4<br />  
-- Redis 5.0<br />  
 - Automatic TLS certificates<br />  
 - Pipfile-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/python3-uwsgi) on GitHub.
+[View the repository](https://github.com/platformsh-templates/pelican) on GitHub.
 
 ### Wagtail 
 
 ![image](images/wagtail.png)
 
-<p>This template builds the Wagtail CMS on Web PaaS, using the gunicorn application runner.  It includes a PostgreSQL database that is configured automatically, and a basic demonstration app that shows how to use it.  It is intended for you to use as a starting point and modify for your own needs.  You will need to run the command line installation process by logging into the project over SSH after the first deploy.</p>
+<p>This template builds the Wagtail CMS on Web PaaS, using the gunicorn application runner. It includes a PostgreSQL database that is configured automatically, and a basic demonstration app that shows how to use it.  It is intended for you to use as a starting point and modify for your own needs. You will need to run the command line installation process by logging into the project over SSH after the first deploy.</p>
 <p>Wagtail is a web CMS built using the Django framework for Python.</p>
   
 #### Features
@@ -263,7 +261,7 @@ A number of project templates for Python applications are available on GitHub.  
 
 ![image](images/flask.png)
 
-<p>This template demonstrates building the Flask framework for Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching.  The application starts as a bare Python process with no separate runner.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template demonstrates building the Flask framework for Web PaaS. It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching. The application starts as a bare Python process with no separate runner. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Flask is a lightweight web microframework for Python.</p>
   
 #### Features
@@ -279,7 +277,7 @@ A number of project templates for Python applications are available on GitHub.  
 
 ![image](images/django2.png)
 
-<p>This template deploys the Django 3 application framework on Web PaaS, using the gunicorn application runner.  It also includes a PostgreSQL database connection pre-configured.</p>
+<p>This template deploys the Django 3 application framework on Web PaaS, using the gunicorn application runner. It also includes a PostgreSQL database connection pre-configured.</p>
 <p>Django is a Python-based web application framework with a built-in ORM.</p>
   
 #### Features
@@ -290,27 +288,11 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/django3) on GitHub.
 
-### Basic Python 3 
-
-![image](images/basicpython3.png)
-
-<p>This template provides the most basic configuration for running a custom Python 3.7 project.  It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.  The application starts as a bare Python process with no separate runner.</p>
-<p>Python is a general purpose scripting language often used in web development.</p>
-  
-#### Features
-- Python 3.8<br />  
-- MariaDB 10.4<br />  
-- Redis 5.0<br />  
-- Automatic TLS certificates<br />  
-- Pipfile-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/python3) on GitHub.
-
 ### Pyramid 
 
 ![image](images/pyramid.png)
 
-<p>This template builds Pyramid on Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template builds Pyramid on Web PaaS. It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Pyramid is a web framework written in Python.</p>
   
 #### Features
@@ -322,17 +304,35 @@ A number of project templates for Python applications are available on GitHub.  
  
 [View the repository](https://github.com/platformsh-templates/pyramid) on GitHub.
 
-### Pelican 
+### Basic Python 3 
 
-![image](images/pelican.png)
+![image](images/basicpython3.png)
 
-<p>This template provides a basic Pelican skeleton.  Only content files need to be committed, as Pelican itself is downloaded at build time via the Pipfile.  All files are generated at build time, so at runtime only static files need to be served.</p>
-<p>Pelican is a static site generator written in Python and using Jinja for templating.</p>
+<p>This template provides the most basic configuration for running a custom Python 3.7 project.  It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis. It can be used to build a very rudimentary application but is intended primarily as a documentation reference. The application starts as a bare Python process with no separate runner.</p>
+<p>Python is a general purpose scripting language often used in web development.</p>
   
 #### Features
 - Python 3.8<br />  
+- MariaDB 10.4<br />  
+- Redis 5.0<br />  
 - Automatic TLS certificates<br />  
 - Pipfile-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/pelican) on GitHub.
+[View the repository](https://github.com/platformsh-templates/python3) on GitHub.
+
+### Python 3 running UWSGI 
+
+![image](images/python.png)
+
+<p>This template provides the most basic configuration for running a custom Python 3.7 project. It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis. It can be used to build a very rudimentary application but is intended primarily as a documentation reference. The application runs through the UWSGI runner.</p>
+<p>Python is a general purpose scripting language often used in web development.</p>
+  
+#### Features
+- Python 3.8<br />  
+- MariaDB 10.4<br />  
+- Redis 5.0<br />  
+- Automatic TLS certificates<br />  
+- Pipfile-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/python3-uwsgi) on GitHub.
 

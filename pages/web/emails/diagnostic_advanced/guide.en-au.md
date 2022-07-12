@@ -62,7 +62,7 @@ You can check the various tasks that are currently in progress on <https://web-c
 
 Check that your domain name points correctly to the OVHcloud email servers. To do this, you will need to configure MX records in your DNS zone. <br>Please refer to our guide on [Adding an MX record to your domain name’s configuration](../../domains/web_hosting_configuring_mx_with_the_ovh_dns_zone/).
 
-![DNSzone](images/DNS.png){.thumbnail}
+![DNSzone](images/DNS-CA.png){.thumbnail}
 
 ### After sending an email, I receive a message that my email could not be sent, including a 3-digit code
 

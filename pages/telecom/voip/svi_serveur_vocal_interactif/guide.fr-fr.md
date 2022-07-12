@@ -61,7 +61,7 @@ Vous pouvez ajouter plusieurs sons si vous souhaitez créer des choix de touches
 
 > [!warning]
 >
-> La création des fichiers-sons est à votre charge. Nous vous conseillons de faire appel à un prestataire spécialisé car OVHcloud ne sera pas en mesure de créer ces fichiers pour vous.
+> La création des fichiers-sons est à votre charge. Nous vous conseillons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) car OVHcloud ne sera pas en mesure de créer ces fichiers pour vous.
 > <br>Sachez qu'il est également possible de créer des fichiers-sons via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/){.external}.
 >
 

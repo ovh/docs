@@ -6,24 +6,24 @@ section: Configuration
 order: 6
 ---
 
-**Last updated 12th May 2022**
+**Last updated 30th June 2022**
 
 ## Objective
 
-With the Cloud Databases database servers, you can influence your server’s global settings. You can also view your server's activity. 
+With the CloudDB database servers, you can influence your server’s global settings. You can also view your server's activity. 
 
 **Find out how to configure and optimise your database server.**
 
 ## Requirements
 
-- A [Cloud Database](https://www.ovh.ie/cloud-databases/)
+- A [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
 ### View general information on your database server
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Databases`{.action} section, then select the SQL instance concerned. Click on the `General information`{.action} tab.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Databases`{.action} section, then select the SQL instance concerned. Click on the `General information`{.action} tab.
 
 You can also view important information on your SQL instance. Please take a few moments to ensure that the information displayed is correct, and corresponds to the instructions below.
 
@@ -32,18 +32,23 @@ You can also view important information on your SQL instance. Please take a few 
 |Service status|Mainly shows if the instance has been rebooted, is in the process of rebooting, or is suspended. Your instance must be rebooted if you need to carry out any actions. |
 |Type|Shows the database system used by the server. If you are unsure if the correct type is being used, please note that the most common version is “MySQL”, but other types also exist (PostgreSQL, MariaDB). For example, if you are using WordPress for your website, a MySQL system is perfect for it.|
 |Version|Shows the database system version used by the server. Check that your website is compatible with the version you have chosen.|
+|CPU throttling|Displays the CPU time spent in saturation over the last 24 hours.|
 |RAM|Shows the RAM available for your instance, also shows if you are close to exceeding the RAM limit. Your database server has dedicated, guaranteed resources: its RAM. If required, you can scale the RAM, and receive warnings if you are consuming all of your instance’s RAM resources.|
 |Infrastructure|Shows the infrastructure used by your instance. This information is inherent to the OVHcloud infrastructure.|
-|Datacentre|Shows the datacentre in which the instance has been created. Verify that your instance is hosted in is the same datacentre as the OVHcloud Web Hosting plan that your website is based (or will be based) on.|
-|Host|Shows the OVHcloud server your instance has been created in. This information is inherent to the OVHcloud infrastructure, and can be used in our communications on [OVHcloud incidents](https://web-cloud.status-ovhcloud.com/){.external}.|
+|Datacenter|Shows the data centre in which the instance has been created. Verify that your instance is hosted in is the same data centre as the OVHcloud Web Hosting plan that your website is based (or will be based) on.|
+|Host|Shows the OVHcloud server your instance has been created in. This information is inherent to the OVHcloud infrastructure, and can be used in our communications on [OVHcloud incidents](https://web-cloud.status-ovhcloud.com/).|
 
 ![General information](images/privatesql01-General-information.png){.thumbnail}
 
-### Authorising an IP address (only on Cloud Database solutions)
+## Manage your access
+
+You can access your CloudDB from your OVHcloud web hosting plans or from the public network.
+
+### Authorise an IP address
 
 In order for your CloudDB instance to be accessible, you must enter the IP addresses or ranges that can connect to your database.
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Databases`{.action} section, then select the SQL instance concerned. Click on the `General information`{.action} tab.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Databases`{.action} section, then select the CloudDB instance concerned. Click on the `General information`{.action} tab.
 
 To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
 
@@ -53,27 +58,15 @@ In the window that pops up, enter the IP address or mask that you wish to author
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-#### Authorise connections to OVHcloud Web Hosting plans 
+#### Authorise connections to OVHcloud Web Hosting plans
 
-For an OVHcloud Web Hosting plan, you will need to authorise its gateway IP address. 
-
-To find the **gateway IP address** go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Click the `Web Cloud` tab, then click on `Hosting plans`{.action}. Select your Web Hosting plan in the list, then click on the `FTP - SSH` tab.
-
-Here, look for **FTP server**, which will show you the cluster number you are on, as shown below.
+For an OVHcloud web hosting plan, you can simply tick `Authorise OVHcloud web hosting plans to access the database`.
 
 ![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
 
-Once you have retrieved the number of the cluster on which your Web Hosting plan is located, go to the [IP address list for Web Hosting clusters](../list-of-ip-addresses-of-web-hosting-clusters/). It provides the gateway IP address for each cluster.
+### Modify your CloudDB offer
 
-> [!warning]
->
-> The cluster IP address will not work to authorise the connection to the Cloud DB server. Please add the gateway IP address.
->
-
-
-### Modifying the database server solution
-
-To modify the solution for your database server, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Click the `Web Cloud` tab, and then click `Database`{.action}. Select the name of your database server.
+To modify the solution for your CloudDB instance, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Click the `Web Cloud` tab, and then click `Database`{.action}. Select the name of your database server.
 
 In the **General information** tab, displayed by default, click on `...`{.action} to the right of “RAM”, then on `Change the amount of RAM`{.action} to access the order for this modification.
 
@@ -83,15 +76,14 @@ Choose the amount of RAM you want, then click `Next`{.action}. You can then choo
 
 > [!primary]
 >
-> The remaining term until expiration will be prorated.
-> This pro rata calculation will be based on the expiration date of the CloudDB server, not on the date of the purchase order.
+> The remaining term until expiration will be prorated. This pro rata calculation will be based on the expiration date of the CloudDB instance, not on the date of the purchase order.
 > 
 
 Once you have confirmed your contracts, you will be redirected to the purchase order to pay for this change. It will then be effective within a few hours.
 
 > [!warning]
 >
->  If you currently have a free CloudDB server available as part of a Performance hosting, it will no longer be free after changing your offer.
+> If you currently have a free CloudDB with your Performance hosting plan, it will no longer be free after modifying the plan.
 > 
 
 
@@ -127,9 +119,9 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 >
 > <b>Tmpdir</b>:
 >
-> \- /dev/shm: The database server will allocate half of its RAM to this directory for higher performance.
+> - /dev/shm: The database server will allocate half of its RAM to this directory for higher performance.
 >
-> \- /tmp: The server will allocate unlimited space on its hard disk for this directory, but this will be much less efficient. We recommend using this directory only for occasional heavy operations.
+> - /tmp: The server will allocate unlimited space on its hard disk for this directory, but this will be much less efficient. We recommend using this directory only for occasional heavy operations.
 >
 
 > [!primary]
@@ -156,7 +148,7 @@ Make the necessary changes, then click `Confirm`{.action}.
 > [!warning]
 >
 > Any changes require a restart of the database server.
-> 
+>
 
 #### PostgreSQL instance
 
@@ -176,8 +168,7 @@ To edit this version, click `Update version`{.action}.
 
 ![clouddb](images/private-sql-config04.png){.thumbnail}
 
-
-#### **How do I know the exact version of PostgreSQL I am using?**
+#### How do I know the exact version of PostgreSQL I am using?
 
 Enter this command in phpPgAdmin by clicking on **Your database** in the **SQL** section, then click `Launch`{.action}:
 
@@ -185,7 +176,7 @@ Enter this command in phpPgAdmin by clicking on **Your database** in the **SQL**
 select version();
 ```
 
-#### **How do I know the exact version of mySQL or MariaDB that I am using?**
+#### How do I know the exact version of MySQL or MariaDB that I am using?
 
 To do this, enter this command in phpMyAdmin, in the **SQL** section, then click `Run`{.action}:
 
@@ -203,7 +194,7 @@ show variables like "version";
 >
 > It is not possible to switch from an old version to the latest version
 > directly. It is mandatory to use all intermediate versions.
-> 
+>
 
 ### Logs and metrics
 
@@ -223,8 +214,7 @@ Go to the `Metrics` tab for your database server. You will find the graph **Quer
 > 
 > These are the queries that take longer to run. The value is set to 1 second on our database servers in the variable **“long_query_time”**.
 
-These logs, labelled **"slow-query.log"**, can be retrieved from the root of the SFTP space of your database server. 
-
+These logs, labelled **"slow-query.log"**, can be retrieved from the root of the SFTP space of your database server.
 
 In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Web Cloud` section, and then click `Databases`{.action}. Select the name of your CloudDB server.
 
@@ -232,7 +222,7 @@ In the `General information` tab, you will find the **SFTP** section in the **Co
 
 ![clouddb](images/private-sql-SFTP01.png){.thumbnail}
 
-To log in via **SFTP**, you can do so via the FileZilla software, using [this guide](../web_hosting_filezilla_user_guide/).
+To log in via **SFTP**, you can do so via the FileZilla software, using [this guide](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/).
 
 If this file is empty, you do not have any slow queries.
 
@@ -311,6 +301,6 @@ Avoid using **"HAVING"** for example. It increases your requests. Similarly, avo
 
 ## Go further
 
-[IP address list for Web Hosting clusters](../list-of-ip-addresses-of-web-hosting-clusters/)
+[IP address list for Web Hosting clusters](https://docs.ovh.com/ie/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/)
 
 Join our community of users on <https://community.ovh.com>.

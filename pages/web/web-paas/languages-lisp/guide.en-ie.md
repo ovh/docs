@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 2nd June 2022**
 
 
 ## Objective  
@@ -17,14 +17,14 @@ Web PaaS supports building and deploying applications written in Lisp using Comm
 | **Grid** | 
 |----------------------------------|  
 |  1.5 |  
+|  2.0 |  
+|  2.1 |  
 
 To specify a Lisp container, use the `type` property in your `.platform.app.yaml`.
 
-
 ```yaml   
 type: 'lisp:1.5'
-```  
-
+``` 
 
 ## Assumptions
 
@@ -71,14 +71,12 @@ runtime:
 
 ## Web PaaS variables
 
-Web PaaS exposes relationships and other configuration as [environment variables](../development-variables). Most notably, it allows a program to determine at runtime what HTTP port it should listen on and what the credentials are to access [other services](../configuration-services).
-
-To get the `PORT` environment variable (the port on which your web application is supposed to listen) you would:
+Web PaaS exposes relationships and other configuration as [environment variables](../development-variables).
+To get the `PORT` environment variable (the port on which your web application is supposed to listen):
 
 ```lisp
 (parse-integer (uiop:getenv "PORT"))
 ```
-
 
 ## Building and running the application
 
@@ -125,7 +123,7 @@ Given a relationship defined in `.platform.app.yaml`:
 
 ```yaml
 relationships:
-  pg: postgresql:postgresql
+    pg: postgresql:postgresql
 ```
 
 The following would access that relationship, and provide your Lisp program the credentials to connect to a PostgreSQL instance. Add this to your `.asd` file:
@@ -155,11 +153,10 @@ Then in your program you could access the PostgreSQL instance as follows:
 "))))
 ```
 
-## Project templates
+## Example
 
-Web PaaS offers a project template for Lisp applications using the structure described above.  It can be used as a starting point or reference for building your own website or web application.
-
-The following is a simple example of a Hunchentoot based web application (you can find the corresponding `.asd` and Web PaaS `.yaml` files in the linked Github repository):
+The following is a basic example of a Hunchentoot-based web app
+(you can find the corresponding `.asd` and Web PaaS `.yaml` files in the [template](#project-templates)):
 
 ```lisp
 (defpackage #:example
@@ -178,7 +175,11 @@ The following is a simple example of a Hunchentoot based web application (you ca
     (start acceptor)
     (sleep most-positive-fixnum)))
 ```
-Notice how we get the `PORT` from the environment, and how we sleep at the end, as `(start acceptor)` will immediately yield and Web PaaS requires applications to run in the foreground.
+
+Notice how it gets the `PORT` from the environment and how it sleeps at the end,
+as `(start acceptor)` immediately yields and Web PaaS requires apps to run in the foreground.
+
+## Project templates
 
 
 ### Lisp Hunchentoot 

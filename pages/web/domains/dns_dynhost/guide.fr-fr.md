@@ -68,7 +68,7 @@ Maintenant que l'utilisateur et l'enregistrement DynHost sont créés, la derni�
 
 > [!warning]
 >
-> L'installation et la configuration du client doivent être réalisées selon vos propres connaissances. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos. 
+> L'installation et la configuration du client doivent être réalisées selon vos propres connaissances. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos. 
 >
 
 Les possibilités étant vastes, sachez que ce client peut être installé sur votre serveur ou sur votre ordinateur, ou peut être déjà disponible dans l'interface de votre routeur si ce dernier est compatible. Une fois le client choisi et installé, vous devrez le configurer en utilisant les informations de l'utilisateur DynHost créé précédemment.

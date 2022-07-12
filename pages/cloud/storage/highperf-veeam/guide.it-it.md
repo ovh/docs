@@ -17,7 +17,7 @@ This guide is intended to show you how to configure Veeam to use your S3 Object 
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
@@ -57,8 +57,8 @@ If you wish to limit the maximum number of tasks that can be processed at once, 
 
 At the **Account** step of the wizard, specify the connection settings:
 
-- In the **Service point** field, specify an endpoint address of your S3 Compatible object storage: `https://s3.<region>.perf.cloud.ovh.net`.
-- In the **Region** field, specify a region: `<region>`.
+- In the **Service point** field, specify an endpoint address of your S3 Compatible object storage: `https://s3.<region_in_lowercase>.perf.cloud.ovh.net`.
+- In the **Region** field, specify a region: `<region_in_lowercase>`.
 - From the **Credentials** drop-down list, select user credentials to access your S3 Compatible object storage.
 
 If you already have a credentials record that was configured in advance, select it from the drop-down list. Otherwise, click `Add`{.action} and provide your access and secret keys. You can also click the `Manage cloud accounts`{.action} link to add, edit or remove a credentials record.

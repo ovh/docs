@@ -36,13 +36,13 @@ Les lignes téléphoniques VoIP et numéros alias peuvent appartenir à un ou pl
 - Sur un **groupe**, vous pouvez changer les contacts administrateur, technique et facturation. Dans ce cas, le changement se propagera sur tous les services présents dans le groupe.
 
 
-## Prérequis 
+## Prérequis
+
 - Être connecté à  votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 - Disposer d’un accès à l’adresse e-mail renseignée dans votre profil.
 - Posséder l’identifiant client du nouveau contact (destinataire de la modification).
 - Le nouveau contact doit quant à lui disposer d’un accès à l’adresse e-mail renseignée dans son profil.
 - En cas de modification du contact facturation, l’ancien et le nouveau contacts facturation doivent avoir validé leurs comptes via [la procédure de validation VoIP](https://docs.ovh.com/fr/voip/la-procedure-de-validation-voip/) et être à jour de leurs règlements.
-
 
 ## En pratique
 

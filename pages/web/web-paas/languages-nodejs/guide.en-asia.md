@@ -5,13 +5,15 @@ section: Languages
 order: 4
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 2nd June 2022**
+
 
 
 ## Objective  
 
-Node.js is a popular JavaScript runtime built on Chrome's V8 JavaScript engine.  Web PaaS supports deploying Node.js applications quickly and easily. Using our Multi-App support you can build a micro-service oriented system mixing both Javascript and PHP applications.
-
+Node.js is a popular asynchronous JavaScript runtime.
+Deploy scalable Node.js apps of all sizes on Web PaaS.
+You can also develop a microservice architecture mixing JavaScript and other apps with [multi-app projects](../configuration-app).
 
 ## Supported versions
 
@@ -22,12 +24,12 @@ Node.js is a popular JavaScript runtime built on Chrome's V8 JavaScript engine. 
 |  10 |  
 |  12 |  
 |  14 |  
+|  16 |  
 
-If you need other versions, take a look at our [options for installing them with NVM](nvm).
+
+To use a specific version in a container with a different language, [use a version manager](./nvm).
 
 ## Deprecated versions
-
-Some versions with a minor (such as 8.9) are available but are not receiving security updates from upstream, so their use is not recommended.
 
 | **Grid** | 
 |----------------------------------|  
@@ -38,134 +40,62 @@ Some versions with a minor (such as 8.9) are available but are not receiving sec
 |  6.9 |  
 |  8.2 |  
 
-## Build flavor
+## Usage example
 
-Node.js images use the `default` build flavor, which will run `npm prune --userconfig .npmrc && npm install --userconfig .npmrc` if a `package.json` file is detected. Note that this also allows you to provide a custom `.npmrc` file in the root of your application (as a sibling of the `.platform.app.yaml` file.)
+To use Node.js on Web PaaS and Node.js together, configure the `.platform.app.yaml` file with a few key settings
+(a complete example is included at the end).
 
-## Support libraries
+### 1. Specify the version
 
-While it is possible to read the environment directly from your application, it is generally easier and more robust to use the [`platformsh-config`](https://github.com/platformsh/config-reader-nodejs) NPM library which handles decoding of service credential information for you.
-
-## Configuration
-
-To use Web PaaS and Node.js together, configure the `.platform.app.yaml` file with a few key settings, as described here (a complete example is included at the end).
-
-1\. Specify the language of your application (available versions are listed above):
-
+Choose a version from the [list above](#supported-versions)
+and add it to your [app configuration](../configuration-app):
 
 
 ```yaml   
-type: 'nodejs:14'
+type: 'nodejs:16'
 ```  
 
 
-2\. Specify your dependencies under the `nodejs` key, like this:
+### 2. Specify any global dependencies
 
+Add the following to your app configuration:
 
-```yaml
+```yaml 
+location=".platform.app.yaml"
 dependencies:
-  nodejs:
-    pm2: "^4.5.0"
+    nodejs:
+        yarn: "*"
 ```
 
-   These are the global dependencies of your project (the ones you would have installed with `npm install -g`). Here we specify the `pm2` process manager that will allow us to run the node process.
+These are now available as commands, the same as installing with `npm install -g`.
 
-3\. Configure the command you use to start serving your application (this must be a foreground-running process) under the `web` section, e.g.:
+### 3. Build your app
 
+Include any commands needed to build and setup your app in the `hooks`, as in the following example:
 
-```yaml
-web:
-  commands:
-    start: "PM2_HOME=/app/run pm2 start index.js --no-daemon"
-```
-
-   If there is a package.json file present at the root of your repository, Web PaaS will automatically install the dependencies. We suggest including the `platformsh-config` helper npm module, which makes it trivial to access the running environment.
-
-```json
-{
-  "dependencies": {
-    "platformsh-config": "^2.0.0"
-  }
-}
-```
-
-> [!primary]  
->   If using the `pm2` process manager to start your application, it is recommended that you do so directly in `web.commands.start` as described above, rather than by calling a separate script the contains that command. Calling `pm2 start` at `web.commands.start` from within a script, even with the `--no-daemon` flag, has been found to daemonize itself and block other processes (such as backups) with continuous respawns.
-> 
-
-4\. Create any Read/Write mounts. The root file system is read only. You must explicitly describe writable mounts. In (3) we set the home of the process manager to `/app/run` so this needs to be writable.
-
-
-```yaml
-mounts:
-    run:
-        source: local
-        source_path: run
-```
-
-5\. Include any relevant commands needed to build and setup your application in the `hooks` section, e.g.:
-
-
-```yaml
+```yaml 
+location=".platform.app.yaml"
 hooks:
-  build: |
-    npm install
-    npm run build
+    build: |
+        npm run setup-assets
+        npm run build
 ```
 
-6\. Setup the routes to your Node.js application in `.platform/routes.yaml`.
+### 4. Start your app
 
+Specify a command to start serving your app (it must be a process running in the foreground):
 
-```yaml
-"https://{default}/":
-  type: upstream
-  upstream: "app:http"
-```
-
-7\. (Optional) If Web PaaS detects a `package.json` file in your repository, it will automatically include a `default` [`build` flavor](../configuration-app/build#build), that will run `npm prune --userconfig .npmrc && npm install --userconfig .npmrc`. You can modify that process to use an alternative package manager by including the following in your `.platform.app.yaml` file:
-
-
-```yaml
-build:
-  flavor: none
-```
-
-   Consult the documentation specific to [Node.js builds](../configuration-app/build#nodejs-npm-by-default) for more information.
-
-
-Here's a complete example that also serves static assets (.png from the `/public` directory):
-
-```yaml
-name: node
-type: nodejs:14
-
+```yaml 
+location=".platform.app.yaml"
 web:
-  commands:
-    start: "PM2_HOME=/app/run pm2 start index.js --no-daemon"
-    #in this setup you will find your application stdout and stderr in /app/run/logs
-  locations:
-    "/public":
-      passthru: false
-      root: "public"
-      # Whether to allow files not matching a rule or not.
-      allow: true
-      rules:
-        '\.png$':
-          allow: true
-          expires: -1
-dependencies:
-  nodejs:
-    pm2: "^4.5.0"
-mounts:
-   run:
-       source: local
-       source_path: run
-disk: 512
+    commands:
+        start: node index.js
 ```
 
-## In your application...
+### 5. Listen on the right port
 
-Finally, make sure your Node.js application is configured to listen over the port given by the environment (here we use the platformsh helper and get it from `config.port`) that is available in the environment variable ``PORT``.  Here's an example:
+Make sure your Node.js application is configured to listen over the port given by the environment.
+The following example uses the [`platformsh-config` helper](#configuration-reader):
 
 ```js
 // Load the http module to create an http server.
@@ -175,16 +105,86 @@ const http = require('http');
 const config = require('platformsh-config').config();
 
 const server = http.createServer(function (request, response) {
-  response.writeHead(200, {"Content-Type": "application/json"});
-  response.end(JSON.stringify(config));
+    response.writeHead(200, {"Content-Type": "application/json"});
+    response.end("Hello world!");
 });
 
+// Listen on the port from the Web PaaS configuration
 server.listen(config.port);
 ```
 
-## Accessing services
+### Complete example
 
-To access various [services](../configuration-services) with Node.js, see the following examples.  The individual service pages have more information on configuring each service.
+A complete basic app configuration looks like the following:
+
+```yaml 
+location=".platform.app.yaml"
+name: node-app
+
+type: nodejs:16
+
+disk: 512
+
+dependencies:
+    nodejs:
+        yarn: "*"
+
+hooks:
+    build: |
+        npm run setup-assets
+        npm run build
+
+web:
+    commands:
+        start: "node index.js"
+```
+
+## Dependencies
+
+By default, Web PaaS assumes you're using npm as a package manager.
+If you have a `package.json` file in your code, the default [build flavor is run](../../configuration-app/build/#build):
+
+```bash
+npm prune --userconfig .npmrc && npm install --userconfig .npmrc
+```
+
+This means you can specify configuration in a `.npmrc` file in your app root.
+
+### Use yarn as a package manager
+
+To switch to yarn to manage dependencies, follow these steps:
+
+#### Step 1: Switch to a build flavor of `none` (so packages aren't installed with npm)
+
+```yaml 
+location=".platform.app.yaml"
+build:
+    flavor: none
+```
+
+#### Step 2: Add yarn as a global dependency
+
+```yaml 
+location=".platform.app.yaml"
+dependencies:
+    nodejs:
+        yarn: "1.22.17"
+```
+
+#### Step 3: Install dependencies in the `build` hook
+
+
+```yaml 
+location=".platform.app.yaml"
+hooks:
+    build: |
+        yarn --frozen-lockfile
+```
+
+## Connecting to services
+
+The following examples show how to use Node.js to access various [services](../configuration-services).
+To configure a given service, see the page dedicated to that service.
 
 > [!tabs]      
 > Elasticsearch     
@@ -216,27 +216,11 @@ To access various [services](../configuration-services) with Node.js, see the fo
 >> {!> web/web-paas/static/files/fetch/examples/nodejs/solr !}  
 >> ```     
 
+
+[`platformsh-config` package](https://github.com/platformsh/config-reader-nodejs)
+
 ## Project templates
 
-A number of project templates for Node.js applications and typical configurations are available on GitHub. Not all of them are proactively maintained but all can be used as a starting point or reference for building your own website or web application.
-
-
-### strapi 
-
-![image](images/strapi.png)
-
-<p>This template builds a Strapi backend for Web PaaS, which can be used to quickly create an API that can be served by itself or as a Headless CMS data source for another frontend application in the same project. This repository does not include a frontend application, but you can add one of your choice and access Strapi by defining it in a relationship in your frontend's <code>.platform.app.yaml</code> file.</p>
-<p>Strapi is a Headless CMS framework written in Node.js.</p>
-  
-#### Features
-- Node.js 12<br />  
-- PostgreSQL 12<br />  
-- Automatic TLS certificates<br />  
-- npm-based build<br />  
-- OpenAPI spec generation<br />  
-- Automatic public API documentation<br />  
- 
-[View the repository](https://github.com/platformsh-templates/strapi) on GitHub.
 
 ### Gatsby with Strapi 
 
@@ -271,33 +255,29 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/probot) on GitHub.
 
-### Gatsby with Drupal 
+### strapi 
 
-![image](images/gatsby.png)
+![image](images/strapi.png)
 
-<p>This template builds a two-application project to deploy the Headless CMS pattern using Gatsby as its frontend and Drupal for its backend. The <code>gatsby-source-drupal</code> source plugin is used to pull data from Drupal during the <code>post_deploy</code> hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Note that after you have completed the Drupal installation and included a few articles, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
-<p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and Drupal is a flexible and extensible PHP-based CMS framework.</p>
+<p>This template builds a Strapi backend for Web PaaS, which can be used to quickly create an API that can be served by itself or as a Headless CMS data source for another frontend application in the same project. This repository does not include a frontend application, but you can add one of your choice and access Strapi by defining it in a relationship in your frontend's <code>.platform.app.yaml</code> file.</p>
+<p>Strapi is a Headless CMS framework written in Node.js.</p>
   
 #### Features
 - Node.js 12<br />  
-- PHP 7.4<br/>  
-- MariaDB 10.4<br/>  
-- Redis 5.0<br/>  
+- PostgreSQL 12<br />  
 - Automatic TLS certificates<br />  
-- npm-based build for Gatsby<br />  
-- Composer-based build for Drupal<br />  
-- Multi-app configuration<br />  
-- Delayed SSG build (post deploy hook)<br />  
+- npm-based build<br />  
+- OpenAPI spec generation<br />  
+- Automatic public API documentation<br />  
  
-[View the repository](https://github.com/platformsh-templates/gatsby-drupal) on GitHub.
+[View the repository](https://github.com/platformsh-templates/strapi) on GitHub.
 
-### Gatsby with Wordpress 
+### Gatsby with WordPress 
 
 ![image](images/gatsby.png)
 
-<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Note that after you have completed the Wordpress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
+<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and WordPress for its backend. The `gatsby-source-WordPress` source plugin is used to pull data from WordPress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>Note that after you have completed the WordPress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and WordPress is a blogging and lightweight CMS written in PHP.</p>
   
 #### Features
@@ -306,7 +286,7 @@ A number of project templates for Node.js applications and typical configuration
 - MariaDB 10.4<br />  
 - Automatic TLS certificates<br />  
 - npm-based build for Gatsby<br />  
-- Composer-based build for Wordpress<br />  
+- Composer-based build for WordPress<br />  
 - Multi-app configuration<br />  
 - Delayed SSG build (post deploy hook)<br />  
  
@@ -325,35 +305,6 @@ A number of project templates for Node.js applications and typical configuration
 - yarn-based build<br />  
  
 [View the repository](https://github.com/platformsh-templates/gatsby) on GitHub.
-
-### Express 
-
-![image](images/express.png)
-
-<p>This template demonstrates building the Express framework for Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Express is a minimalist web framework written in Node.js.</p>
-  
-#### Features
-- Node.js 14<br />  
-- MariaDB 10.4<br />  
-- Automatic TLS certificates<br />  
-- npm-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/express) on GitHub.
-
-### NuxtJS 
-
-![image](images/nuxtjs.png)
-
-<p>This template builds a simple application using the NuxtJS web framework that can be used as a starting point.</p>
-<p>NuxtJS is an open-source web framework based on Vue.js.</p>
-  
-#### Features
-- Node.js 14<br />  
-- Automatic TLS certificates<br />  
-- yarn-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/nuxtjs) on GitHub.
 
 ### Koa 
 
@@ -399,3 +350,66 @@ A number of project templates for Node.js applications and typical configuration
  
 [View the repository](https://github.com/platformsh-templates/nextjs) on GitHub.
 
+### Express 
+
+![image](images/express.png)
+
+<p>This template demonstrates building the Express framework for Web PaaS. It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>Express is a minimalist web framework written in Node.js.</p>
+  
+#### Features
+- Node.js 14<br />  
+- MariaDB 10.4<br />  
+- Automatic TLS certificates<br />  
+- npm-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/express) on GitHub.
+
+### NuxtJS 
+
+![image](images/nuxtjs.png)
+
+<p>This template builds a simple application using the NuxtJS web framework that can be used as a starting point.</p>
+<p>NuxtJS is an open-source web framework based on Vue.js.</p>
+  
+#### Features
+- Node.js 14<br />  
+- Automatic TLS certificates<br />  
+- yarn-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/nuxtjs) on GitHub.
+
+### Gatsby with Drupal 
+
+![image](images/gatsby.png)
+
+<p>This template builds a two-application project to deploy the Headless CMS pattern using Gatsby as its frontend and Drupal 8 for its backend. The <code>gatsby-source-drupal</code> source plugin is used to pull data from Drupal during the <code>post_deploy</code> hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>Note that after you have completed the Drupal installation and included a few articles, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
+<p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and Drupal is a flexible and extensible PHP-based CMS framework.</p>
+  
+#### Features
+- Node.js 12<br />  
+- PHP 7.4<br/>  
+- MariaDB 10.4<br/>  
+- Redis 5.0<br/>  
+- Automatic TLS certificates<br />  
+- npm-based build for Gatsby<br />  
+- Composer-based build for Drupal<br />  
+- Multi-app configuration<br />  
+- Delayed SSG build (post deploy hook)<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/gatsby-drupal) on GitHub.
+
+### Directus 
+
+<p>This template demonstrates building Directus for Web PaaS. It includes a quickstart application configured to run with PostgreSQL. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>Directus is an open-source platform that allows you to create and manage an API from data stored in a database.</p>
+  
+#### Features
+- Node.js 14<br />  
+- PostgreSQL 12<br />  
+- Redis 6.0<br />  
+- Automatic TLS certificates<br />  
+- npm-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/directus) on GitHub.

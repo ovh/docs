@@ -9,10 +9,10 @@ There are different ways to use your Ceph cluster. We'll describe how to map you
 
 You must first ensure that you have done those steps :
 
-- [Create a pool](../../)
-- [Create a user](../../)
-- [Add rights to a user on a pool](../../)
-- [Add an IP ACL](../../) to allow your server to contact the cluster
+- [Create a pool](../create-a-pool)
+- [Create a user](../create-a-user)
+- [Add rights to a user on a pool](../change-user-rights)
+- [Add an IP ACL](../create-an-ip-acl) to allow your server to contact the cluster
 
 
 ## Ceph installation
@@ -38,25 +38,25 @@ ceph-common.x86_64 1:0.80.7-3.el7
 
 
 ## Ceph configuration
-Create file /etc/ceph/ceph.conf
+Create file `/etc/ceph/ceph.conf`
 
 
 ```ini
-1. [global]
-2. mon_host = <mon_1_IP>,<mon_2_IP>,<mon_3_IP>
+[global]
+mon_host = <mon_1_IP>,<mon_2_IP>,<mon_3_IP>
 ```
 
-Create the file /etc/ceph/ceph.client.<ceph_user_name>.keyring
+Create the file `/etc/ceph/ceph.client.<ceph_user_name>.keyring`
 
 
 ```ini
-1. [client.<ceph_user_name>]
-2. key = <my_user_key>
+[client.<ceph_user_name>]
+key = <my_user_key>
 ```
 
-<mon_X_IP> has to be replaced by monitors IP you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/){.external}.
+`<mon_X_IP>` has to be replaced by monitors IP you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/){.external}.
 
-<my_user_key> has to be replaced by the users's key you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/){.external}.
+`<my_user_key>` has to be replaced by the users's key you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/){.external}.
 
 
 ## Configuration check

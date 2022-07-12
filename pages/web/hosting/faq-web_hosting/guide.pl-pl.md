@@ -37,7 +37,7 @@ Aby uruchomić Twoją stronę WWW w Internecie, musisz posiadać [Domeny](https:
 
 Aby dowiedzieć się, jak budować Twoją stronę, zapoznaj się z tym [przewodnikiem](https://www.ovhcloud.com/pl/web-hosting/uc-website/), a następnie postępuj zgodnie z instrukcjami zawartymi w przewodniku [Uruchomienie strony WWW na hostingu](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/).
 
-**Wskazówki i porady**: OVHcloud, aby pomóc Ci w zbudowaniu strony WWW, modułu Prestashop, Joomla i Drupal, pozwala na zainstalowanie na Twoim hostingu oprogramowania do wspomagania tworzenia stron Wordpress, Prestashop, Joomla i Drupal. Jest to możliwe dzięki funkcji [Moduły za 1 kliknięciem](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+**Wskazówki i porady**: OVHcloud, aby pomóc Ci w zbudowaniu strony WWW, modułu PrestaShop, Joomla! i Drupal, pozwala na zainstalowanie na Twoim hostingu oprogramowania do wspomagania tworzenia stron WordPress, PrestaShop, Joomla! i Drupal. Jest to możliwe dzięki funkcji [Moduły za 1 kliknięciem](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
 
 ### Jak mogę przenieść moją stronę WWW i konta e-mail na serwery OVHcloud? 
 
@@ -158,7 +158,7 @@ Porównaj `Adres docelowy` wpisów typu `NS` w zakładce `Strefa DNS`{.action} z
 
 - Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/#zresetuj-serwery-dns).
 
-- Jeśli elementy nie są identyczne i `serwery DNS` wskazane w zakładce o tej samej nazwie nie figurują na [tej liście](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/), skontaktuj się z Webmasterem lub poszukaj wyspecjalizowanego usługodawcy na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+- Jeśli elementy nie są identyczne i `serwery DNS` wskazane w zakładce o tej samej nazwie nie figurują na [tej liście](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/), skontaktuj się z Webmasterem lub poszukaj [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "Strona nie przekierowuje się poprawnie"?
 
@@ -183,7 +183,7 @@ W przypadku braku możliwości przywrócenia dostępu do strony WWW, skontaktuj 
 
 ![503_varnish](images/503_varnish.png){.thumbnail}
 
-Jeśli włączyłeś [opcję CDN](https://docs.ovh.com/pl/hosting/przewodnik_dotyczacy_uslugi_geocache_na_hostingu_www/) hostingu, wyłącz tryb *Maintenance* na swojej stronie Wordpress lub Prestashop.
+Jeśli włączyłeś [opcję CDN](https://docs.ovh.com/pl/hosting/przewodnik_dotyczacy_uslugi_geocache_na_hostingu_www/) hostingu, wyłącz tryb *Maintenance* na swojej stronie WordPress lub PrestaShop.
 
 Jeśli nie włączyłeś tej opcji lub nie korzystałeś z trybu *konserwacji*, skontaktuj się z Webmasterem lub poszukaj specjalistycznego dostawcy na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

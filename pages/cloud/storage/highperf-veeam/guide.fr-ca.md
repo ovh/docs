@@ -15,7 +15,7 @@ Ce guide a pour objectif de vous montrer comment configurer Veeam pour utiliser 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
@@ -55,9 +55,9 @@ Si vous souhaitez limiter le nombre maximum de tâches pouvant être traitées e
 
 À l'étape **Compte** de l'assistant, spécifiez les paramètres de connexion :
 
-- Dans le champ **Point de service**, spécifiez une adresse de point de terminaison de votre stockage d'objets compatible S3 : `https://s3.<region>.perf.cloud.ovh.net`
+- Dans le champ **Point de service**, spécifiez une adresse de point de terminaison de votre stockage d'objets compatible S3 : `https://s3.<region_in_lowercase>.perf.cloud.ovh.net`
 
-- Dans le champ **Région**, indiquez une région : `<region>`.
+- Dans le champ **Région**, indiquez une région : `<region_in_lowercase>`.
 
 - Dans la liste déroulante **Credentials**, sélectionnez les informations d'identification de l'utilisateur pour accéder à votre stockage d'objets compatibles S3.
 

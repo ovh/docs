@@ -18,7 +18,7 @@ Rclone is a backup tool that can sync to and from various storage backends, and 
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
@@ -40,10 +40,10 @@ provider = Other
 env_auth = false
 access_key_id = <access_key>
 secret_access_key = <secret_key>
-endpoint = https://s3.<region>.perf.cloud.ovh.net
+endpoint = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
 acl = private
-region = <region>
-location_constraint = <region>
+region = <region_in_lowercase>
+location_constraint = <region_in_lowercase>
 ```
 
 Rclone is now ready for use.

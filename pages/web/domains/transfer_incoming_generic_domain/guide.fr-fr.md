@@ -6,7 +6,7 @@ section: Transfert
 order: 1
 ---
 
-**Dernière mise à jour le 20/04/2021**
+**Dernière mise à jour le 17/06/2022**
 
 ## Objectif
 
@@ -119,7 +119,7 @@ Si un refus est émis par le bureau d'enregistrement actuel, contactez le pour s
 
 Le processus de transfert peut être redémarré à partir de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Sélectionnez `Web Cloud`{.action} et accédez à la section `Noms de domaine`{.action}, puis cliquez sur `Opérations en cours`{.action}.
 
-### Étape 6 : gérer son nom de domaine avec OVHcloud
+### Étape 5 : gérer son nom de domaine avec OVHcloud
 
 Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
 

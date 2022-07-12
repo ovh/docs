@@ -29,7 +29,7 @@ For this tutorial we propose to use the WordPress CMS, running on Linux Ubuntu w
 > [!warning]
 >This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation.
 >
->If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with [our community](https://community.ovh.com/en/). OVHcloud cannot provide you with technical support in this regard.
+>If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with [our community](https://community.ovh.com/en/). OVHcloud cannot provide you with technical support in this regard.
 >
 > Remember to back up your files prior to making any changes.
 >

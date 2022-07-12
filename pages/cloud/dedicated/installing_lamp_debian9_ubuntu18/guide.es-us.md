@@ -25,7 +25,7 @@ Estas tecnologías forman una pila, que usted puede utilizar para alojar sitio w
 > [!warning]
 >
 >OVHcloud ofrece servicios de los cuales usted es responsable. De hecho, como no tenemos acceso administrativo a estas máquinas, no somos administradores y no podemos ofrecerle soporte. Esto significa que depende de usted administrar el software y la seguridad diariamente.
->Le proporcionamos esta guía para ayudarlo con tareas comunes. Sin embargo, le recomendamos ponerse en contacto con un proveedor especializado si tiene dificultades o dudas sobre la administración, el uso o la seguridad del servidor.
+>Le proporcionamos esta guía para ayudarlo con tareas comunes. Sin embargo, le recomendamos ponerse en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) si tiene dificultades o dudas sobre la administración, el uso o la seguridad del servidor.
 ## Procedimiento
 >
 
@@ -130,7 +130,7 @@ Una vez que haya revisado esta página, le recomendamos encarecidamente que elim
 
 > [!primary]
 >
->    Por defecto, el servidor web Apache no prioriza los ficheros PHP sobre HTML. Aquí, en la dirección raíz, tenemos el fichero index.html y el fichero index.php. Si volvemos al navegador, en `http://server_IP`, Apache nos redireccionará hacia la página index.html en lugar de index.php. Esta priorización no afectará a la mayoría de los sistemas de gestión de contenido, como Wordpress o Drupal. Sin embargo esta regla puede ser modificada si fuese necesario.
+>    Por defecto, el servidor web Apache no prioriza los ficheros PHP sobre HTML. Aquí, en la dirección raíz, tenemos el fichero index.html y el fichero index.php. Si volvemos al navegador, en `http://server_IP`, Apache nos redireccionará hacia la página index.html en lugar de index.php. Esta priorización no afectará a la mayoría de los sistemas de gestión de contenido, como WordPress o Drupal. Sin embargo esta regla puede ser modificada si fuese necesario.
 >
 
 ### Paso 5:  Instale la base de datros  MySQL/MariaDB
@@ -238,7 +238,7 @@ Después acceda la interfaz a través de: `http://server_IP/phpmyadmin/`:
 
 ![PHP installation](images/tuto_pma.png){.thumbnail}
 
-### Paso 7: Instala Wordpress (opcional)
+### Paso 7: Instala WordPress (opcional)
 
 Este paso también es opcional. Aquí encontrará los pasos que necesita para instalar un CMS:
 
@@ -248,13 +248,13 @@ Descargue, descomprime y copie el contenido en un nuevo fichero llamado `mywebsi
 wget https://wordpress.org/latest.tar.gz tar xpf latest.tar.gz sudo cp -r wordpress /var/www/html/mywebsite 
 ```
 
-Es archivo que contiene Wordpress ahora es accesible en `http://server_IP/mywebsite/`.
+Es archivo que contiene WordPress ahora es accesible en `http://server_IP/mywebsite/`.
 
 Crea una base de datos llamada wordpress a través de comando o a través de `phpMyAdmin`.
 
 Su pantalla de configuración debería verse así:
 
-![Wordpress installation](images/tuto_wp.png){.thumbnail}
+![WordPress installation](images/tuto_wp.png){.thumbnail}
 
 Si recibe un aviso cuando esta creación el fichero wp-config.php , edite los permisos de lectura, escritura y ejecución, dependiendo de lo que necesite (comúnmente llamado chmod).
 

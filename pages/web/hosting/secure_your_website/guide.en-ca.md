@@ -99,7 +99,7 @@ Add a security plugin recommended by the CMS publisher to your website:
 - [WordPress](https://wordpress.org/){.external}
 - [Joomla](https://www.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/){.external}
-- [Prestashop](https://www.prestashop.com/en){.external}
+- [PrestaShop](https://www.prestashop.com/en){.external}
 
 ### Step 10 - Check that your hosting does not contain any malwares
 

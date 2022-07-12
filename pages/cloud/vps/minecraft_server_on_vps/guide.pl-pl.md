@@ -22,7 +22,7 @@ Możesz wynająć lub samodzielnie skonfigurować serwer Minecraft na [serwerze 
 > [!warning]
 >Niniejszy przewodnik wyjaśnia, jak korzystać z jednego lub kilku rozwiązań OVHcloud za pomocą zewnętrznych narzędzi i opisuje działania, jakie należy podjąć w konkretnym przypadku. Może być konieczne dostosowanie instrukcji do Twojego przypadku.
 >
->W przypadku trudności w stosowaniu tych instrukcji, zalecamy skorzystanie z pomocy wyspecjalizowanego usługodawcy. Więcej informacji znajdziesz w sekcji [Sprawdź](#gofurther) ten przewodnik.
+>W przypadku trudności w stosowaniu tych instrukcji, zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Więcej informacji znajdziesz w sekcji [Sprawdź](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe

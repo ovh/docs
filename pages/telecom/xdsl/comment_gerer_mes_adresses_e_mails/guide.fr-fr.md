@@ -62,7 +62,7 @@ Si vous souhaitez configurer votre adresse xDSL E-mail sur un logiciel de messag
 |Entrant (IMAP/POP)|pro1.mail.ovh.net|SSL/TLS|993|
 |Sortant (SMTP)|pro1.mail.ovh.net|STARTTLS|587|
 
-Depuis le portail <https://docs.ovh.com/fr/emails-pro/>, vous pouvez consulter nos documentations de configuration de clients de messagerie. Ces dernières s'appliquent également aux comptes xDSL E-mail. Si vous éprouvez des difficultés lors de la configuration de votre adresse, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l’éditeur du client de messagerie utilisé. Les paramètres mentionnés dans le tableau ci-dessus peuvent vous être demandés.
+Depuis le portail <https://docs.ovh.com/fr/emails-pro/>, vous pouvez consulter nos documentations de configuration de clients de messagerie. Ces dernières s'appliquent également aux comptes xDSL E-mail. Si vous éprouvez des difficultés lors de la configuration de votre adresse, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l’éditeur du client de messagerie utilisé. Les paramètres mentionnés dans le tableau ci-dessus peuvent vous être demandés.
 
 ## Aller plus loin
 

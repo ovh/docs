@@ -68,7 +68,7 @@ Nachdem Sie den Benutzer und den DynHost-Eintrag erstellt haben, wird im letzten
 
 > [!warning]
 >
-> Für die Installation und Konfiguration des Clients sind Sie selbst verantwortlich. Im Folgenden haben wir einige Informationen zur Vorgehensweise zusammengetragen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten. 
+> Für die Installation und Konfiguration des Clients sind Sie selbst verantwortlich. Im Folgenden haben wir einige Informationen zur Vorgehensweise zusammengetragen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten. 
 >
 
 Für die Installation des Clients stehen einige Möglichkeiten zur Verfügung. Er kann auf Ihrem Server oder Ihrem Computer installiert werden. Möglicherweise ist er bereits im Interface Ihres Routers verfügbar, wenn dieser kompatibel ist. Wenn Sie den Client installiert haben, muss dieser konfiguriert werden. Nutzen Sie dazu die Informationen der DynHost-Kennung, die Sie in Schritt 1 angelegt haben.

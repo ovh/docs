@@ -9,9 +9,9 @@ section: Casi d'uso
 
 
 ## 
-Il tuo sito sviluppato in Wordpress e ospitato in OVH risulta non raggiungibile, viene reindirizzato verso un altro sito o presenta messaggi non desiderati.
+Il tuo sito sviluppato in WordPress e ospitato in OVH risulta non raggiungibile, viene reindirizzato verso un altro sito o presenta messaggi non desiderati.
 
-OVH non garantisce assistenza relativamente all'utilizzo di Wordpress, ma possiamo indicarti la procedura da seguire in caso di hacking.
+OVH non garantisce assistenza relativamente all'utilizzo di WordPress, ma possiamo indicarti la procedura da seguire in caso di hacking.
 
 
 ## Perché il tuo sito è stato vittima di hacking? Che cosa devi fare?
@@ -41,7 +41,7 @@ Individuiamo la fonte dell'intrusione e analizziamo i 2 casi possibili.
 
 
 ## 
-Prima di effettuare qualsiasi ripristino, è importante verificare la data delle ultime modifiche dei tuoi file Web (FTP)  per trovare e correggere le falle di sicurezza.
+Prima di effettuare qualsiasi ripristino, è importante verificare la data delle ultime modifiche dei tuoi file Web (FTP) per trovare e correggere le falle di sicurezza.
 Non è possibile descrivere dettagliatamente la procedura che permette di identificare a colpo sicuro l'origine di qualsiasi intrusione, ma in generale un attacco è possibile a causa di una falla in uno script che l'hacker sfrutta per effettuare una richiesta HTTP.
 
 Tutte le richieste HTTP sono disponibili nei tuoi log (https://logs.cluster0XX.hosting.ovh.net/tuo_dominio).
@@ -58,12 +58,12 @@ Sostituisci "tuo_dominio" con il tuo dominio e la sua estensione, ad esempio "ov
 
 Eliminare semplicemente il codice malevolo aggiunto dall'hacker non è sufficiente: è necessario correggere totalmente la falla di sicurezza.
 
-Per questo tipo di operazione, ti consigliamo di richiedere l’assistenza di un [Webmaster](https://partners.ovh.com) o di chiedere aiuto sul forum ufficiale di Wordpress.
+Per questo tipo di operazione, ti consigliamo di richiedere l’assistenza di un [Webmaster](https://partners.ovh.com) o di chiedere aiuto sul forum ufficiale di WordPress.
 In nessun caso il supporto OVH potrà assisterti direttamente per questo tipo di richiesta.
 
 
 ## Ripristina il tuo sito
-Wordpress è composto da file e da un database. È possibile ripristinare i tuoi file a una data anteriore. OVH propone uno storico dei file presenti sul tuo hosting di 3 settimane. Per il database, è possibile risalire fino a 7 giorni prima.
+WordPress è composto da file e da un database. È possibile ripristinare i tuoi file a una data anteriore. OVH propone uno storico dei file presenti sul tuo hosting di 2 settimane. Per il database, è possibile risalire fino a 7 giorni prima.
 Il ripristino non corregge le falle di sicurezza, cancella semplicemente i dati presenti e li sostituisce con quelli contenuti nel backup.
 
 
@@ -84,10 +84,10 @@ Una volta completato il ripristino verifica se sono disponibili aggiornamenti di
 
 Disinstalla i plugin che non utilizzi: la loro semplice disattivazione non è sufficiente a eliminare le eventuali falle presenti.
 
-Se l’attacco è avvenuto in una data precedente al periodo di backup, ecco come ripristinare il tuo Wordpress:
+Se l’attacco è avvenuto in una data precedente al periodo di backup, ecco come ripristinare il tuo WordPress:
 
 ## Non riesci ad accedere al pannello di amministrazione WordPress
-In questo caso, modifica la tua [password amministratore](https://codex.wordpress.org/) seguendo la guida ufficiale di Wordpress.
+In questo caso, modifica la tua [password amministratore](https://codex.wordpress.org/) seguendo la guida ufficiale di WordPress.
 
 È possibile aggiornare la tua email dalla tabella user di [phpMyAdmin](https://docs.ovh.com/it/hosting/connessione-database-server-bdd/). Ritorna poi alla pagina di login, clicca su Hai dimenticato la password? e aspetta che ti venga inviata l'email.
 
@@ -111,7 +111,7 @@ Per rendere operativo il collegamento con il database, è necessario modificare 
 Per farlo, è necessario disporre dell'email ricevuta al momento della creazione del tuo database. Puoi trovare tutte le informazioni nel tuo Spazio Cliente OVH, nella sezione "Supporto" > "Email ricevute".
 
 Se non ricordi più la password del tuo database, puoi modificarla dal tuo Spazio Cliente OVH. Per eseguire questa operazione, consulta [questa guida](https://www.ovh.it/g1374.hosting_condiviso_come_mettere_online_il_tuo_sito).
-Importante: ricordati di verificare gli aggiornamenti disponibili dal pannello di amministrazione WorpdPress
+Importante: ricordati di verificare gli aggiornamenti disponibili dal pannello di amministrazione WordPress
 
 
 ## Informazioni utili

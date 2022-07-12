@@ -21,7 +21,7 @@ Sull'hosting Web OVHcloud è possibile utilizzare script per automatizzare alcun
 > [!warning]
 >OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Spetta quindi a te garantirne il buon funzionamento.
 >
->Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Per questo, ti suggeriamo di rivolgerti a un provider specializzato o di contattare l’amministratore del servizio nel caso in cui dovessi incontrare delle difficoltà. Non saremo effettivamente in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida. 
+>Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Per questo, ti suggeriamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o di contattare l’amministratore del servizio nel caso in cui dovessi incontrare delle difficoltà. Non saremo effettivamente in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida. 
 >
 
 ## Prerequisiti

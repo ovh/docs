@@ -10,7 +10,7 @@ order: 3
 
 ## Objetivo
 
-Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas de gestión de contenidos (*content management system* o CMS) como WordPress o Joomla, permiten almacenar elementos dinámicos, tales como comentarios o artículos. Existen diversos motivos por los que podría necesitar realizar una copia de seguridad de una base de datos para recuperar su contenido.
+Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas de gestión de contenidos (*content management system* o CMS) como WordPress o Joomla!, permiten almacenar elementos dinámicos, tales como comentarios o artículos. Existen diversos motivos por los que podría necesitar realizar una copia de seguridad de una base de datos para recuperar su contenido.
 
 **Esta guía explica cómo exportar una copia de seguridad de la base de datos de un alojamiento web de OVH.**
 
@@ -98,7 +98,7 @@ Esta operación se realiza en varios pasos. En primer lugar, asegúrese de que t
 
 > [!warning]
 >
-> Esta operación requiere conocimientos de programación. A continuación ofrecemos algunas indicaciones sobre cómo realizarla. No obstante, si necesita ayuda, le recomendamos que contacte con un proveedor especializado. Nosotros no podremos asistirle.
+> Esta operación requiere conocimientos de programación. A continuación ofrecemos algunas indicaciones sobre cómo realizarla. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle.
 >
 
 #### 1. Crear un script de backup
@@ -157,7 +157,7 @@ Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos des
 
 > [!warning]
 >
-> Este tipo de acceso requiere conocimientos técnicos más avanzados. A continuación ofrecemos algunas indicaciones. No obstante, si necesita ayuda, le recomendamos que contacte con un proveedor especializado. Nosotros no podremos asistirle.
+> Este tipo de acceso requiere conocimientos técnicos más avanzados. A continuación ofrecemos algunas indicaciones. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle.
 >
 
 Una vez que se haya conectado al espacio de almacenamiento por SSH, utilice un comando para realizar la copia de seguridad de la base de datos. A continuación ofrecemos un ejemplo que le ayudará a realizar esta operación. Tenga en cuenta que la copia de seguridad se creará en el directorio en el que esté situado cuando envíe el comando desde su terminal.

@@ -33,7 +33,7 @@ To put your website online, you need to have a [domain name](https://www.ovhclou
 
 To follow the steps required to build your website, go to this [page](https://www.ovhcloud.com/en-ca/web-hosting/uc-website/), then follow the instructions in our guide on [Publishing a website on your Web Hosting plan](https://docs.ovh.com/ca/en/hosting/web_hosting_how_to_get_my_website_online/).
 
-**Tips and tricks**: To help you create your website, OVHcloud allows you to install website creation support software (WordPress, Prestashop, Joomla! and Drupal) on your hosting plan, with the [1-click modules](https://docs.ovh.com/ca/en/hosting/web_hosting_web_hosting_modules/) feature.
+**Tips and tricks**: To help you create your website, OVHcloud allows you to install website creation support software (WordPress, PrestaShop, Joomla! and Drupal) on your hosting plan, with the [1-click modules](https://docs.ovh.com/ca/en/hosting/web_hosting_web_hosting_modules/) feature.
 
 ### How do I transfer my website and emails to OVHcloud servers? 
 
@@ -128,7 +128,7 @@ Compare the `Target` of the `NS` type records listed in the `DNS zone`{.action} 
 
 - If the elements are not identical, but the servers listed in the `DNS servers` tab appear in [this list](https://docs.ovh.com/ca/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/), perform a reset as described in [this guide](https://docs.ovh.com/ca/en/domains/web_hosting_general_information_about_dns_servers/#resetting-dns-servers).
 
-- If the elements are not identical and the servers listed in the `DNS server`{.action} tab do not appear in [this list](https://docs.ovh.com/ca/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/), contact your webmaster or search for a specialised service provider via the [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/) page.
+- If the elements are not identical and the servers listed in the `DNS server`{.action} tab do not appear in [this list](https://docs.ovh.com/ca/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/), contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) via the [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/) page.
 
 ### What do I do if my website displays a page does not redirect correctly error?
 
@@ -147,7 +147,7 @@ Restore your website to its previous state:
 
 - If your website has a database, please refer to our guide [Importing a backup into a Web Hosting plan database](https://docs.ovh.com/ca/en/hosting/web_hosting_guide_to_importing_a_mysql_database/#restore-a-backup-from-the-control-panel).
 
-If the restores do not allow you to restore access to your site, contact your webmaster or search for a specialised service provider on the [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/) website.
+If the restores do not allow you to restore access to your site, contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) on the [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/) website.
 
 ### What do I do if my website displays a "503 error Backend fetch failed (Varnish cache)" error?
 
@@ -155,7 +155,7 @@ If the restores do not allow you to restore access to your site, contact your we
 
 If you have enabled the [CDN option](https://docs.ovh.com/ca/en/hosting/guide_to_using_the_geocache_accelerator_on_a_web_hosting_package/) on your Web Hosting plan, disable *Maintenance* mode on your WordPress or PrestaShop website.
 
-If you have not enabled this option or used *Maintenance* mode, please contact your webmaster or search for a specialised service provider via the [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/) website.
+If you have not enabled this option or used *Maintenance* mode, please contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) via the [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/) website.
 
 ### What do I do if my website displays a "Your request has been blocked" error?
 

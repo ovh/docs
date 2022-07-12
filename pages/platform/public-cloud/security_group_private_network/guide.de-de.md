@@ -9,7 +9,7 @@ section: OpenStack
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 30.11.2021**
+**Letzte Aktualisierung am 16.06.2021**
 
 ## Ziel
 
@@ -129,26 +129,24 @@ openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 Die Standardkonfiguration für private Netzwerke kann je nach verwendeter Region verschieden sein.
 
 > [!primary]
-> In einigen Regionen wird die Eigenschaft "port security" als "*enabled*" angezeigt, auch wenn keine Regel auf das private Netzwerk angewendet wird. In einigen anderen Regionen (abhängig von der eingesetzten OpenStack-Version) wird die Eigenschaft "port security" als "*enabled*" angezeigt, aber die Regeln werden im privaten Netzwerk korrekt angewendet.
+> In einigen Regionen wird die Eigenschaft "port security" als "*enabled*" angezeigt, auch wenn keine Regel auf das private Netzwerk angewendet wird. In einigen anderen Regionen (abhängig von der eingesetzten OpenStack-Version) wird die Eigenschaft "port security" als "*enabled*" angezeigt, und die Regeln werden im privaten Netzwerk korrekt angewendet.
 > 
 
 Zusammengefasst, werden in den folgenden Regionen, in denen OpenStack Newton läuft, **keine Firewall-Regeln** für Ihre privaten Netzwerke funktionieren, selbst wenn die Port-Sicherheit aktiviert ist:
 
-- Beauharnois: BHS1, BHS3, BHS5
-- Frankfurt: DE1
-- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA11
-- Straßburg: SBG5
 - Singapur: SGP1
 - Sydney: SYD1
-- London: UK1
-- Warschau: WAW1
-- Hillsboro : US-WEST-OR-1
+- Hillsboro: US-WEST-OR-1
 - Vint Hill: US-EAST-VA-1
 
 In den folgenden Regionen (die OpenStack Stein verwenden) werden die Firewall-Regeln für private Netzwerke **wie erwartet funktionieren**:
 
-- Gravelines: GRA9
-- Straßburg: SBG7
+- Beauharnois: BHS1, BHS3, BHS5
+- Frankfurt: DE1
+- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA9, GRA11
+- Straßburg: SBG5, SBG7
+- London: UK1
+- Warschau: WAW1
 
 OVHcloud wird schrittweise alle Regionen von Newton auf Stein upgraden, um die Funktion "port security" verfügbar zu machen.
 
@@ -165,9 +163,15 @@ False
 
 Die Migration erfolgt nach diesem Prozess:
 
-- GRA9 und SBG7 werden sich den anderen Regionen anschließen, indem "port security" auf **disabled** gesetzt wird.
 - Die Firewall-Regeln für neue Ports werden nicht angewendet, bis Sie "port security" für den neuen Port aktiviert haben. Bei bestehenden Ports ändert sich nichts.
-- Die OpenStack-Regionen werden zur Stein-Version übergehen.
+- Die OpenStack-Regionen werden zur Stein-Version übertragen.
+- Die OpenStack-Regionen mit Stein werden auf eine neue Version von OpenVSwitch umgestellt.
+
+> [!primary]
+> Ab diesem Schritt müssen Terraform-Benutzer die [Einstellung von "port security" auf "false" erzwingen](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external}, damit die Playbooks funktionieren können.
+>
+
+- Sie können "port security" für die Stein Regionen aktivieren.
 - Der "port security"-Standardwert wird zu **enabled** geändert (eine globale Kommunikation wird zu gegebener Zeit stattfinden).
 - Die Firewall-Regeln werden für die neuen Ports funktionieren. Bei bestehenden Ports ändert sich nichts.
 - Die Option zur Aktivierung der Eigenschaft "port security" für die bestehenden Ports wird aktiviert.

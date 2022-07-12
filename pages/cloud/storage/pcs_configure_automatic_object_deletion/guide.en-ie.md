@@ -48,7 +48,7 @@ Then you can enter this date in the X-Delete-At header:
 root@server:~$ swift copy --header "X-Delete-At: 1668877261000" container test.txt
 ```
 
-The file will therefore be deleted on the 19th of November 2022.
+The file will therefore be deleted on the 19th November 2022.
 
 ## Go further
 

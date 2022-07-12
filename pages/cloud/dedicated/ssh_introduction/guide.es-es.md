@@ -22,7 +22,7 @@ El protocolo de comunicación SSH (Secure Shell) es la herramienta principal par
 > [!warning]
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
-> Si necesita ayuda para llevar a cabo estas acciones, puede ponerse en contacto con un proveedor especializado o hablar con nuestra comunidad de usuarios en https://community.ovh.com/en/. OVHcloud no puede ofrecerle asistencia técnica.
+> Si necesita ayuda para llevar a cabo estas acciones, puede ponerse en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o hablar con nuestra comunidad de usuarios en https://community.ovh.com/en/. OVHcloud no puede ofrecerle asistencia técnica.
 >
 
 ## Requisitos
@@ -138,7 +138,7 @@ Guarde los cambios y salga del editor. La nueva huella de clave debe ser aceptad
 
 En Windows, también se especifica la ruta del archivo `known_hosts` y la línea a eliminar, por ejemplo:
 
-```powershell
+```console
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 

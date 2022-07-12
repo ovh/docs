@@ -4,7 +4,7 @@ slug: fpm
 section: Php
 ---
 
-**Last updated 31st March 2021**
+**Last updated 2nd June 2022**
 
 
 
@@ -18,9 +18,9 @@ Note that this value is independent of the `memory_limit` set in `php.ini`, whic
 
 The heuristic is based on three input parameters:
 
- * The memory available for the container, which depends on the size of the container (`S`, `M`, `L`),
- * The memory that an average request is expected to require,
- * The memory that should be reserved for things that are not specific to a request (memory for `nginx`, the op-code cache, some OS page cache, etc.)
+- The memory available for the container, which depends on the size of the container (`S`, `M`, `L`).
+- The memory that an average request is expected to require.
+- The memory that should be reserved for things that are not specific to a request (memory for `nginx`, the op-code cache, some OS page cache, etc.)
 
 The number of workers is calculated as:
 
@@ -31,8 +31,8 @@ The number of workers is calculated as:
 
 The default assumptions are:
 
- * `45 MB` for the average per-request memory
- * `70 MB` for the reserved memory
+- `45 MB` for the average per-request memory
+- `70 MB` for the reserved memory
 
 These are deliberately conservative values that should allow most programs to run without modification.
 
@@ -86,7 +86,7 @@ This will print out a table of how many requests used how much memory, in KB, fo
       6 131072
 ```
 
-This indicates that the majority of requests (4800) used 2048 KB of memory.  In this case that's likely application caching at work.  Most requests used up to around 10 MB of memory, while a few used as much as 18 MB and a very very few (6 requests) peaked at 131 MB.  (In this example those are probably cache clears.)
+This indicates that the majority of requests (4800) used 2048 KB of memory.  In this case that's likely application caching at work.  Most requests used up to around 10 MB of memory, while a few used as much as 18 MB and a very few (6 requests) peaked at 131 MB.  (In this example those are probably cache clears.)
 
 A conservative approach would suggest an average request memory of 16 MB should be sufficient.  A more aggressive stance would suggest 10 MB.  The more aggressive approach would potentially allow for more concurrent requests at the risk of some requests needing to use swap memory, thus slowing them down.
 

@@ -1,23 +1,25 @@
 ---
 title: 'Modifier les musiques et sonneries de votre ligne'
 slug: modifier-musiques-sonneries-ligne
-excerpt: 'Apprenez à modifier les musiques et les sonneries de votre ligne OVH'
+excerpt: 'Apprenez à modifier les musiques et les sonneries de votre ligne OVHcloud'
 section: 'Lignes téléphoniques'
 ---
 
-**Dernière mise à jour le 24/09/2018**
+**Dernière mise à jour le 22/06/2022**
 
 ## Objectif
 
-Votre ligne SIP OVH vous permet de recevoir et d’émettre des appels. Afin de personnaliser l'expérience de vos correspondants, vous pouvez modifier les musiques et les sonneries qu'ils entendent lors d'un appel vers votre ligne ou votre numéro.
+Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afin de personnaliser l'expérience de vos correspondants, vous pouvez modifier les musiques et les sonneries qu'ils entendent lors d'un appel vers votre ligne ou votre numéro.
 
-**Apprenez à modifier les musiques et les sonneries de votre ligne OVH.**
+**Apprenez à modifier les musiques et les sonneries de votre ligne OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'une [ligne téléphonique OVH](https://www.ovhtelecom.fr/telephonie/){.external}, entreprise
-- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Disposer d'une [ligne téléphonique OVHcloud entreprise](https://www.ovhtelecom.fr/telephonie/){.external}
 - Être en possession de la ou des musiques ou sonneries que vous souhaitez utiliser, au format audio adéquat.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} :
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 > [!primary]
 >
@@ -28,7 +30,7 @@ Votre ligne SIP OVH vous permet de recevoir et d’émettre des appels. Afin de 
 
 ### Étape 1 : accéder à la gestion des musiques et sonneries
 
-Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée parmi celles qui s'affichent.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée parmi celles qui s'affichent.
 
 Positionnez-vous ensuite sur l'onglet `Gestion des musiques`{.action}.
 
@@ -54,9 +56,17 @@ Il existe certaines règles et informations à prendre en considération concern
 
 - **vous devez disposer du droit d'utiliser le fichier audio** : si vous n'êtes pas le créateur du fichier, vous avez l'obligation légale de détenir le droit de l'utiliser (sauf s'il est libre de droits).
 
-Afin de vous aider dans la création de votre fichier audio, sachez que vous pouvez laisser un message sur le répondeur de votre ligne OVH puis le récupérer. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Configurer et consulter le répondeur de sa ligne](https://docs.ovh.com/fr/voip/configurer-consulter-repondeur-ligne-ovh/){.external} »
+> [!primary]
+> **Création de fichiers-sons**
+>
+> La création des fichiers-sons est à votre charge. OVHcloud ne sera pas en mesure de créer ces fichiers pour vous.
+> Vous pouvez faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) mais sachez qu'il est également possible de créer des fichiers-sons par vos propres moyens :
+> 
+> - Soit en laissant un message sur le répondeur de votre ligne OVHcloud puis en le téléchargeant. Plus d'informations sur [notre guide d'utilisation du répondeur](https://docs.ovh.com/fr/voip/configurer-consulter-repondeur-ligne-ovh/).
+> - Soit via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/){.external}.
+>
 
-Une fois que vous êtes prêt, en dessous de la musique ou de la sonnerie que vous voulez modifier, choisissez dans le menu déroulant `Personnalisée` puis cliquez sur le bouton `Choisir un fichier`{.action}. Dans la fenêtre qui s'ouvre, retrouvez le fichier audio que vous souhaitez utiliser. Une fois sélectionné, cliquez sur le bouton `Envoyer le fichier`{.action}.
+Une fois que vous êtes prêt, en dessous de la musique ou de la sonnerie que vous voulez modifier, choisissez `Personnalisée` dans le menu déroulant puis cliquez sur le bouton `Choisir un fichier`{.action}. Dans la fenêtre qui s'ouvre, retrouvez le fichier audio que vous souhaitez utiliser. Une fois sélectionné, cliquez sur le bouton `Envoyer le fichier`{.action}.
 
 ![sonneriesetmusiques](images/sonneries-musiques-step2.png){.thumbnail}
 

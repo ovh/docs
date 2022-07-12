@@ -24,7 +24,7 @@ Several error messages may appear on your browser in the event of your site bein
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
@@ -86,7 +86,7 @@ Your website will then be available within a maximum of 48 hours.
 
 > [!warning]
 >
-> In this situation, please contact your webmaster or a [OVHcloud partner](https://partner.ovhcloud.com/en-gb/directory/) before making any changes.
+> In this situation, please contact your DNS Zone provider, your webmaster or a [OVHcloud partner](https://partner.ovhcloud.com/en-gb/directory/) before making any changes.
 >
 > The DNS servers used by your domain name may be functional and the problem accessing your website be linked to a missing or incorrect entry in the active [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns). Changing the DNS servers in this situation might make your email addresses or other online applications related to your domain name unavailable.
 >

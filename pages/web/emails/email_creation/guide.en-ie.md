@@ -88,7 +88,7 @@ You will need to configure your email address on the device you want to use (e.g
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10](../mail-configuration-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/)|[MacOS Mail (latest version)](../guide-configuring-mail-on-macos/)|[Android (latest version)](../configuration-android/)|[Gmail](../gmail-configuration/)|[Mail for iPhone and iPad (iOS 7 and later)](../email_hosting_iphone_ios_91_configuration/)|
+|[Windows 10](../mail-configuration-on-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/)|[MacOS Mail (latest version)](../guide-configuring-mail-on-macos/)|[Android (latest version)](../configuration-android/)|[Gmail](../gmail-configuration/)|[Mail for iPhone and iPad (iOS 7 and later)](../email_hosting_iphone_ios_91_configuration/)|
 
 If you just need the information required to configure your email address, the settings to use are listed below:
 
@@ -160,7 +160,7 @@ You will need to configure your email address on the device you want to use (e.g
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10](../mail-configuration-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[MacOS Mail (latest version)](../guide-configuring-mail-on-macos/){.external}|[Android (latest version)](../configuration-android/)|[Gmail]../gmail-configuration/)|[Mail for iPhone and iPad (iOS 7 and later)](../email_hosting_iphone_ios_91_configuration/)|
+|[Windows 10](../mail-configuration-on-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[MacOS Mail (latest version)](../guide-configuring-mail-on-macos/){.external}|[Android (latest version)](../configuration-android/)|[Gmail]../gmail-configuration/)|[Mail for iPhone and iPad (iOS 7 and later)](../email_hosting_iphone_ios_91_configuration/)|
 
 If you just need the information required to configure your email address, the settings to use are listed below:
 

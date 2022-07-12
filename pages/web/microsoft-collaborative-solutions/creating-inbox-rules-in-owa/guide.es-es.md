@@ -59,7 +59,7 @@ Debido al gran número de condiciones y acciones disponibles, no podemos tratarl
 > [!warning]
 >OVHcloud le ofrece una serie de servicios cuya configuración y gestión recae sobre usted. Por lo tanto, es su responsabilidad asegurarse de que estos servicios funcionen correctamente.
 >
->El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un proveedor especializado y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle en este aspecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
+>El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle en este aspecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
 >
 
 #### Ejemplo 1: redireccionamiento de mensajes de correo electrónico a otra dirección

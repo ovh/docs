@@ -7,7 +7,7 @@ section: Per iniziare
 order: 01
 ---
 
-**Ultimo aggiornamento: 28/01/2022**
+**Ultimo aggiornamento: 22/06/2022**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -23,7 +23,7 @@ La soluzione CloudDB è associata di default alla rete di hosting Web OVHcloud. 
 ## Prerequisiti
 
 - Disporre di un’[istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa nelle soluzioni di [hosting Web performance](https://www.ovhcloud.com/it/web-hosting/))
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
@@ -31,7 +31,7 @@ La soluzione CloudDB è associata di default alla rete di hosting Web OVHcloud. 
 
 Se la tua offerta di hosting include l'opzione CloudDB, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra.
 
-Nella scheda `Informazioni generali`, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **Database privato**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
+Nella scheda `Informazioni generali`, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **CloudDB**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
 
 ![Informazioni generali](images/db-activation.png){.thumbnail}
 
@@ -39,11 +39,11 @@ Per completare l'operazione segui le istruzioni riportate qui di seguito per det
 
 ### Visualizza le informazioni generali dell'istanza
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Database`{.action} nel menu a sinistra e seleziona la tua istanza CloudDB. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Database`{.action} nel menu a sinistra e seleziona la tua istanza CloudDB. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
 
 > [!primary]
 >
-> Il nome del servizio CloudDB nello Spazio Cliente OVH contiene una parte del tuo identificativo cliente e termina con tre numeri (001 per il primo servizio CloudDB installato, 002 per il secondo, ecc...).
+> Il nome del servizio CloudDB nello Spazio Cliente OVHcloud contiene una parte del tuo identificativo cliente e termina con tre numeri (001 per il primo servizio CloudDB installato, 002 per il secondo, ecc...).
 >
 
 In questa interfaccia puoi visualizzare anche le informazioni principali relative alla tua istanza. Ti consigliamo di verificarne la correttezza e assicurarti che corrispondano alle descrizioni indicate di seguito:
@@ -53,10 +53,11 @@ In questa interfaccia puoi visualizzare anche le informazioni principali relativ
 |Stato del servizio|Indica se l’istanza è attiva, in stato di riavvio o sospesa. Per poter eseguire operazioni, l’istanza deve essere attiva.|
 |Tipo|Indica il sistema di database utilizzato dal server.|
 |Versione|Indica la versione del sistema di database utilizzata dal server. Ti ricordiamo di verificare la compatibilità del tuo sito con la versione scelta.|
+|Saturazione CPU| Indica il tempo CPU passato in saturazione. La tua istanza CloudDB non è limitata in termini di CPU, ma devi fare attenzione a non sovraccaricare la CPU del tuo CloudDB.|
 |RAM|Indica la memoria disponibile sulla tua istanza e segnala l’eventuale raggiungimento della soglia limite. La tua istanza CloudDB dispone di risorse dedicate e garantite: la memoria RAM.  Se necessario, è possibile aumentarla e ricevere una notifica in caso di utilizzo di tutte le risorse disponibili.|
-|Infrastruttura|Indica l’infrastruttura utilizzata dall’istanza. Questa informazione è relativa alla piattaforma di OVH.|
-|Datacenter|Indica il datacenter in cui è stata creata l’istanza. Assicurati che corrisponda a quello dell’hosting Web OVH in cui è (o sarà) ospitato il tuo sito.|
-|Host|Indica il server OVH in cui è stata creata l’istanza. Questa informazione è relativa all'infrastruttura OVH e, in caso di [incidenti](http://status.ovh.net/){.external}, può essere presente nelle nostre comunicazioni.|
+|Infrastruttura|Indica l’infrastruttura utilizzata dall’istanza. Questa informazione è relativa alla piattaforma di OVHcloud.|
+|Datacenter|Indica il datacenter in cui è stata creata l’istanza. Assicurati che corrisponda a quello dell’hosting Web OVHcloud in cui è (o sarà) ospitato il tuo sito.|
+|Host|Indica il server OVHcloud in cui è stata creata l’istanza. Questa informazione è relativa all'infrastruttura OVHcloud e, in caso di [incidenti](http://status.ovh.net/){.external}, può essere presente nelle nostre comunicazioni.|
 
 ![Clouddb](images/clouddb-general-information.png){.thumbnail}
 
@@ -133,9 +134,9 @@ Una volta creato l’utente è necessario assegnargli i permessi per autorizzarl
 > Questo step mostra come importare un backup di un database già esistente. Se non è il tuo caso, passa allo step successivo.
 >
 
-Esistono diverse tecniche per importare un database e OVH mette anche a disposizione un tool nello Spazio Cliente. Puoi comunque utilizzare la modalità che preferisci in base alle tue conoscenze.
+Esistono diverse tecniche per importare un database e OVHcloud mette anche a disposizione un tool nello Spazio Cliente. Puoi comunque utilizzare la modalità che preferisci in base alle tue conoscenze.
 
-Negli step successivi descriviamo come importare un database attraverso lo Spazio Cliente OVH.
+Negli step successivi descriviamo come importare un database attraverso lo Spazio Cliente OVHcloud.
 
 - **Step 1: accedi all’interfaccia d’importazione**
 
@@ -189,8 +190,8 @@ In ogni caso, è necessario disporre di queste cinque informazioni:
 |Nome del database|È il nome assegnato in fase di creazione del database. Puoi trovare tutti i database creati sulla tua istanza CloudDB dalla scheda `Database`{.action}.|
 |Nome utente|È il nome utente definito durante la creazione del database o degli eventuali utenti aggiuntivi. Puoi trovare tutti gli utenti creati sulla tua istanza CloudDB dalla scheda `Utenti e diritti`{.action}.|
 |Password dell’utente|È la password associata all'utente definita durante le operazioni precedenti.|
-|Hostname del server|È l’indirizzo del server utilizzato dal tuo sito per connettersi al tuo database. Questa informazione è disponibile nello Spazio Cliente OVH, scheda **Informazioni generali** > `Informazioni di login`{.action}.|
-|Porta del server|È la porta di connessione all'istanza CloudDB, che permette l’accesso del tuo sito al database. Questa informazione è disponibile nello Spazio Cliente OVH, scheda **Informazioni generali** > `Informazioni di login`{.action}.|
+|Hostname del server|È l’indirizzo del server utilizzato dal tuo sito per connettersi al tuo database. Questa informazione è disponibile nello Spazio Cliente OVHcloud, scheda **Informazioni generali** > `Informazioni di login`{.action}.|
+|Porta del server|È la porta di connessione all'istanza CloudDB, che permette l’accesso del tuo sito al database. Questa informazione è disponibile nello Spazio Cliente OVHcloud, scheda **Informazioni generali** > `Informazioni di login`{.action}.|
 
 > [!warning]
 >

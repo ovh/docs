@@ -201,7 +201,7 @@ Encontrará aqui uma pré-visualização do painel de administração WordPress.
 O suporte da OVH não está habilitado para responder às suas questões sobre configuração e utilização de WordPress.
 Contudo, um guia de ajuda à utilização de WordPress está à disposição: []({legacy}2053).
 
-Convidamo-lo a consultar os fóruns dedicados à [ferramenta Wordpress](http://www.wordpress-fr.net/).
+Convidamo-lo a consultar os fóruns dedicados à [ferramenta WordPress](http://www.wordpress-fr.net/).
 
 ## Erro clássico: site em construção
 Colocou os seus ficheiros, através de FTP mas, continua a ver "Página em construção" numa página padrão criada pela OVH aquando da instalação do seu alojamento.

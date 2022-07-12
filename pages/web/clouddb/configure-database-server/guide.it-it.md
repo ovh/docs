@@ -6,17 +6,21 @@ section: Configurazione
 order: 6
 ---
 
-**Ultimo aggiornamento: 12/05/2022**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 30/06/2022**
 
 ## Obiettivo
 
-I database server Cloud Database ti danno la possibilità di agire sui parametri globali del tuo server. Inoltre, è possibile visualizzare l'attività del server. 
+I database server Cloud Database ti danno la possibilità di agire sui parametri globali del tuo server. Inoltre, è possibile visualizzare l'attività del server.
 
 **Questa guida ti mostra come configurare e ottimizzare il tuo database server.**
 
 ## Prerequisiti
 
-- Disporre di un [Cloud Database](https://www.ovh.it/cloud-databases/)
+- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/) (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/fr/web-hosting/).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -32,6 +36,7 @@ In questa interfaccia vengono mostrate anche le informazioni principali della tu
 |Stato del servizio|Indica se l'istanza è attiva, in corso di riavvio o sospesa. Per poter eseguire operazioni, l’istanza deve essere attiva.|
 |Tipo|Indica il sistema di database utilizzato dal server. MySQL è il più diffuso, ma ne esistono anche altri (come PostgreSQL e MariaDB). Ad esempio, se il tuo sito è un WordPress, il sistema MySQL è perfetto.|
 |Versione|Indica la versione del sistema di database utilizzato dal server. Ti ricordiamo di verificare la compatibilità del tuo sito con la versione scelta.|
+|Saturazione CPU|Indica il tempo CPU passato in saturazione nelle ultime 24 ore.|
 |RAM|Indica la memoria disponibile sulla tua istanza e segnala l’eventuale raggiungimento della soglia limite. I database server dispongono di risorse dedicate e garantite: la sua memoria RAM. Se necessario, è possibile aumentarla e ricevere una notifica in caso di utilizzo di tutte le risorse disponibili.|
 |Infrastruttura|Indica l’infrastruttura utilizzata dall’istanza. Questa informazione è relativa all'infrastruttura di OVHcloud.|
 |Datacenter|Indica il datacenter in cui è stata creata l’istanza. Assicurati che il datacenter dell'istanza sia lo stesso dell'hosting Web OVHcloud in cui è (o sarà) ospitato il tuo sito.|
@@ -39,11 +44,15 @@ In questa interfaccia vengono mostrate anche le informazioni principali della tu
 
 ![Informazioni generali](images/privatesql01-General-information.png){.thumbnail}
 
-### Autorizza un indirizzo IP (solo sull'offerta Cloud Databases)
+## Gestisci i tuoi accessi
+
+Il tuo CloudDB è accessibile dai tuoi hosting Web OVHcloud o dalla rete pubblica.
+
+#### Autorizza un indirizzo IP
 
 Per il corretto funzionamento dell'accesso alla tua istanza CloudDB, è necessario indicare gli indirizzi IP o le classi di IP che possono connettersi ai tuoi database.
 
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona `Database`{.action} > Istanza SQL corrispondente. 
+Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona `Database`{.action} > Istanza CloudDB corrispondente.
 
 Clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Aggiungi un indirizzo IP/mask`{.action}.
 
@@ -53,27 +62,15 @@ Nella finestra che appare indica l’indirizzo IP o la mask da autorizzare in `I
 
 ![Clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-#### Autorizza la connessione a un hosting Web OVHcloud 
+#### Autorizza la connessione a un hosting Web OVHcloud
 
-Per gli hosting Web OVHcloud è necessario autorizzare l'indirizzo IP gateway di uscita. 
-
-Per recuperare l'indirizzo IP "**gateway**" accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi `su Hosting`{.action}. Seleziona il tuo hosting dalla lista e clicca sulla scheda `FTP - SSH`.
-
-Ritrova la voce **"Server FTP"**, che ti indicherà il numero di cluster su cui sei, come mostrato qui di seguito.
+Per gli hosting Web OVHcloud è sufficiente selezionare `Autorizza gli hosting Web OVHcloud ad accedere al database`.
 
 ![Clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
 
-Dopo aver recuperato il numero del cluster su cui è situato il tuo hosting, consulta la pagina ["Elenco degli indirizzi IP dei cluster e degli hosting Web"](../lista-indirizzi-ip-di-cluster-e-hosting-web/). In questa interfaccia è possibile trovare l'indirizzo IP "**gateway di uscita**" di ciascun cluster.
+### Modifica la tua offerta CloudDB
 
-> [!warning]
->
-> **L'indirizzo IP** del cluster non funzionerà per autorizzare la connessione al server Cloud DB, è necessario aggiungere **l'indirizzo IP "gateway di uscita"**.
->
-
-
-### Modifica l'offerta del database server
-
-Per modificare l'offerta del tuo database server, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
+Per modificare l'offerta del tua istanza CloudDB, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
 Nella scheda **"Informazioni generali"**, visualizzata di default, clicca su `...`{.action} a destra della voce "RAM" e poi su `Modifica la quantità di RAM`{.action} per accedere all'ordine di questo passaggio.
 
 ![clouddb](images/private-sql-order-ram01.png){.thumbnail}
@@ -82,22 +79,19 @@ Scegli la quantità di RAM desiderata e clicca su `Seguente`{.action}. e sceglie
 
 > [!primary]
 >
-> Se hai ancora qualche mese prima della scadenza, verrà effettuato un prorata.
-> Questo prorata sarà basato sulla data di scadenza del server CloudDB e non su quello del buono d'ordine.
+> Se hai ancora qualche mese prima della scadenza, verrà effettuato un prorata. Questo prorata sarà basato sulla data di scadenza della tua istanza CloudDB e non su quello del buono d'ordine.
 > 
 
 Dopo la conferma dei contratti, verrai reindirizzato al buono d'ordine da cui sarà possibile pagare la modifica. L'operazione diventerà effettiva entro qualche ora.
 
 > [!warning]
 >
->  Se disponi attualmente di un server CloudDB gratuito grazie al tuo
-> hosting Performance, la modifica dell'offerta ti farà perdere la sua
-> gratuità.
+> Se disponi attualmente di un CloudDB gratuito grazie al tuo hosting Performance, la modifica dell'offerta ti farà perdere la gratuità.
 > 
 
 ### Modifica la configurazione del tuo database server
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo server CloudDB. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo server CloudDB.
 
 #### Istanza MySQL e MariaDB
 
@@ -127,9 +121,9 @@ Nel riquadro **"Configurazione generale di MySql"** troverai la configurazione a
 >
 > <b>Tmpdir</b>:
 >
-> \- /dev/shm: Il database server assegnerà metà della memoria RAM a questa directory per ottenere migliori performance.
+> - /dev/shm: Il database server assegnerà metà della memoria RAM a questa directory per ottenere migliori performance.
 >
-> \- /tmp: Il server assegnerà sul suo hard disk uno spazio illimitato per questa directory, ma sarà molto meno performante. Ti consigliamo di utilizzare questa directory solo per operazioni occasionali di grande impatto.
+> - /tmp: Il server assegnerà sul suo hard disk uno spazio illimitato per questa directory, ma sarà molto meno performante. Ti consigliamo di utilizzare questa directory solo per operazioni occasionali di grande impatto.
 >
 
 > [!primary]
@@ -177,7 +171,7 @@ Per modificare questa versione, clicca su `Modifica la versione`{.action}.
 ![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
-#### **Come conoscere la versione esatta di PostgreSQL che uso?**
+#### Come conoscere la versione esatta di PostgreSQL che uso?
 
 Inserisci questo comando in phpPgAdmin cliccando sul **tuo database**, rubrica **"SQL"**, poi su `Esegui`{.action}:
 
@@ -185,7 +179,7 @@ Inserisci questo comando in phpPgAdmin cliccando sul **tuo database**, rubrica *
 select version();
 ```
 
-#### **Come conoscere la versione esatta del mySQL o MariaDB che uso?**
+#### Come conoscere la versione esatta del MySQL o MariaDB che uso?
 
 Per effettuare questa operazione, inserisci questo comando in phpMyAdmin, sezione **"SQL"**, poi clicca su `Esegui`{.action}:
 
@@ -211,7 +205,7 @@ show variables like "version";
 
 In questo modo è possibile visualizzare il tempo di esecuzione delle richieste sul tuo database server nelle ultime 24 ore.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
 
 Clicca sulla scheda `Metriche` del tuo database server. Il grafico **"Statistiche dei tempi di esecuzione delle richieste"**.
 
@@ -223,22 +217,22 @@ Clicca sulla scheda `Metriche` del tuo database server. Il grafico **"Statistich
 > 
 > Le richieste richiedono più tempo per essere eseguite. Il valore è definito a 1 secondo sui nostri database server nella variabile **"long_query_time"**.
 
-Questi log, chiamati **"slow-query.log"**, possono essere recuperati alla radice dello spazio SFTP del tuo database server. 
+Questi log, chiamati **"slow-query.log"**, possono essere recuperati alla radice dello spazio SFTP del tuo database server.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
 
 Nella scheda `informazioni generali`, consulta la sezione **"SFTP"** nel riquadro **"Informazioni di connessione"**
 
 ![clouddb](images/private-sql-SFTP01.png){.thumbnail}
 
-Per effettuare l'accesso via **SFTP**, è possibile utilizzare Filezilla utilizzando la guida: [ Utilizzo del software FileZilla con il tuo hosting]( ../hosting_condiviso_guida_allutilizzo_di_filezilla/).
+Per effettuare l'accesso via **SFTP**, è possibile utilizzare Filezilla utilizzando la guida: [ Utilizzo del software FileZilla con il tuo hosting](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/).
 
 Se questo file è vuoto, significa che non hai richieste lente.
 
 
 #### Monitora la RAM consumata
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
 
 Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche della memoria RAM utilizzata"**.
 
@@ -248,7 +242,7 @@ Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche d
 
 Questo grafico permette di seguire, nelle ultime 24 ore, il carico di connessione al minuto sul tuo database server.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
 
 Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche del totale delle connessioni al minuto"**.
 
@@ -258,7 +252,7 @@ Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche d
 
 Si consiglia di mantenere il proprio database in modo da renderlo efficiente. Ciò che si intende per prestazione è che le informazioni contenute nel database sono reindirizzate il più rapidamente possibile allo script che le richiede. Per fare ciò, è necessario un database strutturato e ottimizzato.
 
-#### **Indicizza il database**
+#### Indicizza il database
 
 Per aumentare la rapidità delle ricerche in caso di una richiesta, è necessario inserire un indice sui campi utilizzati nelle clausole WHERE.
 
@@ -267,15 +261,16 @@ Esempio: fate regolarmente una ricerca di persona sulla città. Inserisci il cam
 ```sql
 ALTER TABLE 'test' ADD INDEX ('city')
 ```
-#### **Elimina il database**
+
+#### Elimina il database
 
 Alcuni dei tuoi dati non sono più utilizzati? Archiviateli, le vostre tabelle saranno meno piene e le ricerche saranno più veloci.
 
-#### **Limitazione della visualizzazione**
+#### Limitazione della visualizzazione
 
 Limita la visualizzazione dei record a un numero limitato (ad esempio 10 per pagina) con la sezione LIMIT della tua richiesta SQL.
 
-#### **Raggruppamento delle richieste**
+#### Raggruppamento delle richieste
 
 Raggruppa le tue richieste all'inizio dello script in questo modo:
 
@@ -291,7 +286,8 @@ Canali ...
 Visualizzazione ...
 ...
 ```
-#### **Recupera solo i dati utili**
+
+#### Recupera solo i dati utili
 
 Nelle tue richieste SQL, verifica di selezionare solo quello di cui hai bisogno e soprattutto di non aver dimenticato i collegamenti tra le tabelle.
 
@@ -301,14 +297,12 @@ Esempio:
 (where table1.record = tavolo2.record2)
 ```
 
-#### **Evitare opzioni che utilizzano troppe risorse**
+#### Evitare opzioni che utilizzano troppe risorse
 
 Evita di utilizzare **"HAVING"**, ad esempio. Aumenta le tue richieste. Allo stesso modo, evita di utilizzare **"GROUP BY"**, tranne quando ciò sia strettamente necessario.
 
 ## Per saperne di più
 
-[Elenco degli indirizzi IP di cluster e hosting Web](../lista-indirizzi-ip-di-cluster-e-hosting-web/)
+[Elenco degli indirizzi IP di cluster e hosting Web](https://docs.ovh.com/it/hosting/lista-indirizzi-ip-di-cluster-e-hosting-web/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
-
-

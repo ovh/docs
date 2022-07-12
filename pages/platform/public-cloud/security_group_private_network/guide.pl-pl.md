@@ -9,13 +9,13 @@ section: Zarządzanie w OpenStack CLI
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 30-11-2021**
+**Ostatnia aktualizacja z dnia 16-06-2022**
 
 ## Wprowadzenie
 
 Platforma OpenStack zarządza bezpieczeństwem zapory sieciowej, łącząc reguły połączenia w **grupy zabezpieczeń**. Reguły są następnie stosowane przez przypisanie grup bezpieczeństwa do portów sieciowych.
 
-Port** w ramach **OpenStack Neutron[ ](https://docs.openstack.org/neutron/latest/index.html){.external} jest punktem połączenia między podsieciami i elementami sieci (takimi jak instancje, Load Balancer, routery, itp...).
+**Port** w ramach [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html){.external} jest punktem połączenia między podsieciami i elementami sieci (takimi jak instancje, Load Balancer, routery, itp...).
 
 **Dowiedz się, jak zarządzać grupami zabezpieczeń w sieciach prywatnych w ramach Public Cloud.**
 
@@ -129,27 +129,25 @@ openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 Domyślna konfiguracja sieci prywatnej może być różna w zależności od używanego regionu.
 
 > [!primary]
-> W niektórych regionach własność "port security" jest uznawana za *enabled*, nawet jeśli nie stosuje ona żadnych zasad dotyczących sieci prywatnej. W niektórych innych regionach (w zależności od wdrożonej wersji OpenStack) własność "port security" jest widoczna jako *enabled*, ale reguły są poprawnie stosowane w prywatnej sieci.
+> W niektórych regionach własność "port security" jest uznawana za *enabled*, nawet jeśli nie stosuje ona żadnych zasad dotyczących sieci prywatnej. W niektórych innych regionach (w zależności od wdrożonej wersji OpenStack) własność "port security" jest widoczna jako *enabled*, a reguły są poprawnie stosowane w prywatnej sieci.
 > 
 
 
 Podsumowując, następujące regiony uruchamiają Newton OpenStack release i **żadna reguła firewall nie będzie działać** dla Twoich prywatnych sieci, nawet jeśli bezpieczeństwo portów jest włączone:
 
-- Beauharnois: BHS1, BHS3, BHS5
-- Frankfurt: DE1
-- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA11
-- Strasburg: SBG5
 - Singapur: SGP1
 - Sydney: SYD1
-- Londyn: UK1
-- Warszawa: WAW1
 - Hillsboro: US-WEST-OR-1
 - Vint Hill: US-EAST-VA-1
 
 W następujących regionach (uruchamiając wersję Stein OpenStack) reguły zapory ogniowej dla prywatnych sieci **będą działać** zgodnie z planem:
 
-- Gravelines: GRA9
-- Strasburg: SBG7
+- Beauharnois: BHS1, BHS3, BHS5
+- Frankfurt: DE1
+- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA9, GRA11
+- Strasburg: SBG5, SBG7
+- Londyn: UK1
+- Warszawa: WAW1
 
 OVHcloud stopniowo uaktualni wszystkie regiony Newton do Stein, aby zapewnić dostępność funkcji "port security".
 
@@ -166,9 +164,15 @@ False
 
 Migracja będzie przebiegać zgodnie z poniższym procesem:
 
-- GRA9 i SBG7 dołączają do innych regionów z domyślnym "portem security" w **niedostępności**.
 - Reguły firewalla dla nowych portów nie będą stosowane, dopóki nie uruchomisz prawa własności "port security" na nowym porcie. Dla istniejących portów nic się nie zmieni.
 - Regiony OpenStack przejdą do wersji Stein.
+- Regiony OpenStack w wersji Stein będą przechodzić na nową wersję OpenVSwitch.
+
+> [!primary]
+> Na tym etapie, dla użytkowników Terraform, konieczne jest wymuszenie konfiguracji [portu security w "false"](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external}, aby playbooks mógł działać.
+>
+
+- Możesz aktywować "port security" w regionie Stein.
 - Domyślny "port security" zostanie zmodyfikowany podczas **aktywacji** (globalna komunikacja zostanie wysłana w odpowiednim czasie).
 - Reguły firewalla będą działać dla nowych portów. Dla istniejących portów nic się nie zmieni.
 - Opcja aktywacji nieruchomości "port security" dla istniejących portów zostanie włączona.

@@ -5,7 +5,7 @@ excerpt: Find out how security groups work on Public Cloud
 section: OpenStack
 ---
 
-**Last updated 30th November 2021**
+**Last updated 16th June 2022**
 
 ## Objective
 
@@ -126,26 +126,24 @@ The private network default configuration might be different depending on the re
 
 > [!primary]
 >
-> In some regions the "port security" property is shown as "enabled" even when it is not applying any rule on private network. On some other regions (depending on the OpenStack version deployed), the "port security" property is shown as "enabled" but rules are applied correctly on private network.
+> In some regions the "port security" property is shown as "enabled" even when it is not applying any rule on private network. On some other regions (depending on the OpenStack version deployed), the "port security" property is shown as "enabled" and rules are applied correctly on private network.
 >
 
 To summarise, for the following regions running OpenStack Newton **no firewall rules will work** for your private networks, even if port security is enabled:
 
-- Beauharnois: BHS1, BHS3, BHS5
-- Frankfurt: DE1
-- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA11
-- Strasbourg: SBG5
 - Singapore: SGP1
 - Sydney: SYD1
-- London: UK1
-- Warsaw: WAW1
 - Hillsboro: US-WEST-OR-1
 - Vint Hill: US-EAST-VA-1
 
 In the following regions (running OpenStack Stein release), the firewall rules for private networks **will work** as expected:
 
-- Gravelines: GRA9
-- Strasbourg: SBG7
+- Beauharnois: BHS1, BHS3, BHS5
+- Frankfurt: DE1
+- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA9, GRA11
+- Strasbourg: SBG5, SBG7
+- London: UK1
+- Warsaw: WAW1
 
 OVHcloud will progressively upgrade all Newton regions to Stein, so the port security property feature will be available.
 
@@ -162,9 +160,15 @@ False
 
 This will occur according to the following process:
 
-- GRA9 and SBG7 will join the other regions with the default port security set on **disabled**.
 - The firewall rules for new ports will not be applied until you enable it on the new port. Nothing will change for the existing ports.
 - The OpenStack regions will be upgraded to Stein.
+- The Stein version of OpenStack regions will be upgraded to a new version of OpenVSwitch.
+
+> [!primary]
+> From this step, for Terraform users, it is necessary to force the setting of [port security to `false`](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external} for the playbooks to work.
+>
+
+- You can enable port security on Stein regions.
 - The default port security will be changed to **enabled** (a global communication will be sent in time).
 - The firewall rules will work for the new ports. Nothing will change for the existing ports.
 - The option to enable port security for existing ports will be activated.

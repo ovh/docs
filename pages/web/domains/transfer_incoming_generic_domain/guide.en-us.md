@@ -6,7 +6,7 @@ section: Transfer
 order: 1
 ---
 
-**Last updated 20th April 2021**
+**Last updated 17h June 2022**
 
 ## Objective
 
@@ -16,14 +16,14 @@ By transferring your domain name, you will change your domain name registrar. Yo
 
 ## Requirements
 
-- a domain name registered with another registrar
-- the domain name is more than 60 days old
-- the domain name has not been transferred or changed owners within the last 60 days
-- the domain name status is "OK" or "Transferable"
-- the domain name is not expired and has an expiry date that allows to finish the transfer process in time - recommended are more than 60 days
-- the domain name is unlocked, with a transfer code received or the ability to receive one
-- the authority to request a transfer for the domain name
-- the domain name owner and/or its administrators must be informed of the transfer request.
+- A domain name registered, with another registrar.
+- The domain name is more than 60 days old.
+- The domain name has not been transferred or changed owners within the last 60 days.
+- The domain name status is "OK" or "Transferable".
+- The domain name is not expired and has an expiry date that allows to finish the transfer process in time - recommended are more than 60 days.
+- The domain name is unlocked, with a transfer code received or the ability to receive one.
+- You have the authority to request a transfer for the domain name.
+- The domain name owner and/or its administrators must be informed of the transfer request.
 
 ## Instructions
 
@@ -34,8 +34,7 @@ The transfer procedure has several steps. These steps will involve various entit
 |1|Checking the information associated with the domain|The domain administrator|With the current registrar|Depends on your actions|
 |2|Unlocking the domain and retrieving the transfer code|The domain administrator, with the owner's permission|With the current registrar|Depends on your actions|
 |3|Requesting the domain name transfer|Whoever has the transfer code and the owner's permission|With the new registrar|Depends on your actions|
-|4|The first transfer validation step|The domain name holder and the admin inform the new domain name registrar|Via email|Five days maximum|
-|5|The second transfer validation step|The current registrar|Via a request from the organisation managing the domain name extension|Five days maximum|
+|4|Transfer confirmation|With the current registrar|At the request of the organisation managing the domain name extension|Five days maximum|
 
 > [!warning]
 >
@@ -101,51 +100,34 @@ Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhc
 
 Once finished, you will receive a purchase order. The transfer process will only start after your payment was received. Afterward, you can track the transfer progress via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}: Switch to `Web Cloud`{.action} and go to the `Domain names`{.action} section. Then select `Ongoing operations`{.action}.
 
-### Step 4: Complete the first transfer validation step
+#### Tracking a transfer after the order
 
-Now that you have launched the transfer procedure, it will need to go through two validation steps. The first step can be completed as soon as the transfer starts but may take a maximum of five days. 
+Once the order has been confirmed, you will receive a purchase order. The transfer process will not start until payment has been received. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. To track the progress, open `Domain names`{.action}, then click on `Ongoing operations`{.action}.
 
-|Who receives these validation requests?|Where is the validation request sent to?|
+> [!primary]
+>
+> If the transfer code was not entered during the order, you can enter it in the section `Ongoing operations`{.action} to validate the transfer.
+
+### Step 4: Transfer validation by the current registrar
+
+Once the order and transfer code have been confirmed, the domain name registrar (which is still not OVHcloud) will receive a validation request. There are several possible outcomes at this stage, depending on the actions taken.
+
+|Action|Result|
 |---|---|
-|The domain name owner|To the owner's email address, stored in the WHOIS data (if it is visible). Otherwise, it is sent to the domain name owner's email address that was entered during the order process.|
-|The administrator, provided in the order process at OVHcloud.|To the email address listed under the administrator’s profile at OVHcloud|
+|Validation response received from the current registrar.|The transfer is completed within **24 hours**.|
+|No response received from the current registrar.|The transfer is completed after a **5-day period**.|
+|A refusal request from the current registrar.|The transfer process is **cancelled** as soon as a refusal is issued.|
 
-The two parties provide their validation through an OVHcloud interface. A link to the interface is provided in the emails sent. 
+If a refusal is issued by the current registrar, contact them to find out why they refused it.
 
-![domain](images/domaintransfer_gTLD_validationv2.png){.thumbnail}
+The transfer process can be restarted from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. Select `Web Cloud`{.action} and go to the `Domain names`{.action}, then click on `Ongoing operations`{.action}.
 
-There are several possible outcomes at this stage, depending on the actions taken by the domain name owner and the administrator.
 
-|Action|Outcome|
-|---|---|
-|Both the domain name owner and the admin validate the transfer request.|The transfer progresses to the second validation stage within 24 hours.|
-|Only one validation response is received (from either contact). The other contact does not provide a response.|The transfer progresses to the second validation stage after a five-day period.|
-|Neither of the contacts respond to the validation requests.|The transfer progresses to the second validation stage after a five-day period.|
-|A refusal is received (from either contact).|The transfer process is cancelled as soon as either one of the contacts refuses the transfer.|
-
-If a transfer is cancelled, please ensure that all the parties involved are in agreement about it before trying again. If emails were not received, verify that all email addresses are up-to-date.
-
-The transfer process can be restarted at a later stage from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. Switch to `Web Cloud`{.action} and go to the `Domain names`{.action} section. Then select `Ongoing operations`{.action}.
-
-### Step 5: The second transfer validation step
-
-Once the second step has been initiated, the current domain name registrar (which is not OVHcloud yet) will receive a validation request. There are several possible outcomes to this stage, depending on the actions taken.
-
-|Action|Outcome|
-|---|---|
-|Validation response is received from the current registrar.|The transfer is completed within 24 hours.|
-|No response received is from the current registrar.|The transfer is completed after a five-day period.|
-|A refusal is received from the current registrar.|The transfer process is cancelled as soon as the refusal is received.|
-
-If a refusal response is sent by the current registrar, please contact them to find out why the transfer is being prevented.
-
-The transfer process can be restarted from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}: Switch to `Web Cloud`{.action} and go to the `Domain names`{.action} section. Then select `Ongoing operations`{.action}.
-
-### Step 6: Manage your domain at OVHcloud
+### Step 5: Manage your domain at OVHcloud
 
 Once the transfer procedure is complete, you can manage your domain from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
 
-To do this, go to `Web Cloud`{.action} click `Domains`{.action} in the services bar, then click on the domain name concerned.
+To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the services bar, then click on the domain name concerned.
 
 ## Go further
 

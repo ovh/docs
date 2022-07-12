@@ -70,7 +70,7 @@ Por último, una vez que haya creado el usuario y el registro DynHost, debe auto
 
 > [!warning]
 >
-> Usted mismo deberá encargarse de instalar y configurar dicho cliente.  A continuación ofrecemos algunas indicaciones sobre cómo hacerlo. No obstante, si necesita ayuda, le recomendamos que contacte con un proveedor especializado. Nosotros no podremos asistirle. 
+> Usted mismo deberá encargarse de instalar y configurar dicho cliente.  A continuación ofrecemos algunas indicaciones sobre cómo hacerlo. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle. 
 >
 
 Puede instalar un cliente en el servidor o en su ordenador. También existe la posibilidad de que disponga de un cliente en la interfaz de su router, si este es compatible. Una vez que haya elegido e instalado el cliente, deberá configurarlo utilizando la información del usuario DynHost creado anteriormente.

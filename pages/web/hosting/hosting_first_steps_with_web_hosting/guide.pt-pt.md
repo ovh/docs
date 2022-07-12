@@ -31,7 +31,7 @@ O alojamento web OVH permite criar um site novo com toda a facilidade, ou alojar
 
  Os sites podem ser criados de forma «manual», usando código web e programação, ou através de um CMS (Content Management System), a solução mais rápida e fácil. A primeira opção é mais complexa e morosa, mas permite criar um projeto original, concebido de raiz para necessidades específicas. A segunda assenta na utilização de um CMS, que disponibiliza modelos de site personalizáveis prontos a usar. Esta opção dispensa qualquer competência técnica.
 
-Na Área de Cliente existe uma ferramenta que permite instalar um CMS com 1 clique. O cliente pode optar entre vários CMS: WordPress, PrestaShop, Drupal e Joomla. Se tiver dúvidas relativamente à escolha do CMS, veja esta [análise comparativa](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/){.external} e selecione a opção mais adequada para um blogue, um site normal, uma loja online... Se o CMS pretendido não estiver disponível para instalação automática (através dos Módulos 1 clique), pode instalá-lo de forma manual.
+Na Área de Cliente existe uma ferramenta que permite instalar um CMS com 1 clique. O cliente pode optar entre vários CMS: WordPress, PrestaShop, Drupal e Joomla!. Se tiver dúvidas relativamente à escolha do CMS, veja esta [análise comparativa](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/){.external} e selecione a opção mais adequada para um blogue, um site normal, uma loja online... Se o CMS pretendido não estiver disponível para instalação automática (através dos Módulos 1 clique), pode instalá-lo de forma manual.
 
 - **Transferir um site para a OVH**
 

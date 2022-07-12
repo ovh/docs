@@ -37,7 +37,7 @@ Um Ihre Website online zu stellen benötigen Sie einen [Domainnamen](https://www
 
 Folgen Sie den für die Erstellung Ihrer Website notwendigen Schritten auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/uc-website/) und folgen Sie dann den Anweisungen in der Anleitung [Eine Website auf Ihrem Webhosting online stellen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/).
 
-**Tipps und Tricks**: Um Ihnen bei der Erstellung Ihrer Website zu helfen, bietet Ihnen OVHcloud die Installation einer Software zur Erstellung von Webseiten (WordPress, Prestashop, Joomla und Drupal) auf Ihrem Hosting. Die Funktion [1 Klick-Module](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/) bietet Ihnen die Möglichkeit.
+**Tipps und Tricks**: Um Ihnen bei der Erstellung Ihrer Website zu helfen, bietet Ihnen OVHcloud die Installation einer Software zur Erstellung von Webseiten (WordPress, PrestaShop, Joomla! und Drupal) auf Ihrem Hosting. Die Funktion [1 Klick-Module](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/) bietet Ihnen die Möglichkeit.
 
 ### Wie überträgt man eine Website und E-Mails auf die OVHcloud Server? 
 
@@ -132,7 +132,7 @@ Vergleichen Sie die **Ziele** der `NS`-Einträge im Tab `DNS-Zone`{.action} mit 
 
 - Wenn die Elemente nicht identisch sind, aber die im Tab desselben Namens aufgeführten `DNS-Server` in [dieser Liste](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/) aufgeführt sind, setzen Sie die Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-server-zurucksetzen) fort.
 
-- Wenn die Elemente nicht identisch sind und die `DNS-Server` im Tab desselben Namens nicht in [dieser Liste](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/) aufgeführt sind, kontaktieren Sie Ihren Webmaster oder suchen Sie einen spezialisierten Dienstleister auf der [Seite der OVHcloud-Partner](https://partner.ovhcloud.com/de/directory/).
+- Wenn die Elemente nicht identisch sind und die `DNS-Server` im Tab desselben Namens nicht in [dieser Liste](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/) aufgeführt sind, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) auf der [Seite der OVHcloud-Partner](https://partner.ovhcloud.com/de/directory/).
 
 ### Was tun, wenn meine Website einen Fehler “Die Seite leitet sich nicht richtig um“ zeigt?
 
@@ -151,15 +151,15 @@ Stellen Sie Ihre Website in ihrem vorherigen Zustand wieder her:
 
 - Wenn Ihre Website eine Datenbank enthält, lesen Sie unsere Anleitung [Backup Ihrer Datenbank wiederherstellen](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/#backup-uber-das-kundencenter-wiederherstellen).
 
-Wenn Sie über die Wiederherstellungen den Zugang zu Ihrer Webseite nicht wiederherstellen können, kontaktieren Sie Ihren Webmaster oder suchen Sie einen spezialisierten Dienstleister auf der [Seite der OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie über die Wiederherstellungen den Zugang zu Ihrer Webseite nicht wiederherstellen können, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) auf der [Seite der OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
 ### Was soll ich tun, wenn meine Website einen Fehler “503 error Backend fetch failed (Varnish cache)“ anzeigt?
 
 ![503_varnish](images/503_varnish.png){.thumbnail}
 
-Wenn Sie die [CDN Option](https://docs.ovh.com/de/hosting/verwendung_des_geocache_boosters_auf_einem_webhosting/) Ihres Hostings aktiviert haben, deaktivieren Sie den *Wartungsmodus* für Ihr WordPress oder Prestashop.
+Wenn Sie die [CDN Option](https://docs.ovh.com/de/hosting/verwendung_des_geocache_boosters_auf_einem_webhosting/) Ihres Hostings aktiviert haben, deaktivieren Sie den *Wartungsmodus* für Ihr WordPress oder PrestaShop.
 
-Wenn Sie diese Option nicht aktiviert oder den *Wartungsmodus* verwendet haben, kontaktieren Sie Ihren Webmaster oder suchen Sie einen spezialisierten Dienstleister auf der Seite der [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie diese Option nicht aktiviert oder den *Wartungsmodus* verwendet haben, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) auf der Seite der [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
 ### Was soll ich tun, wenn meine Website einen Fehler “Your request has been blocked“ zeigt?
 

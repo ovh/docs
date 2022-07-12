@@ -6,11 +6,11 @@ section: Website optimisation
 order: 2
 ---
 
-**Last updated 19th May 2022**
+**Last updated 22nd June 2022**
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-gb/web-hosting/) to have more compute resources, storage space, databases or email addresses. Additional features such as [mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/) (from the [Pro plan](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-gb/web-hosting/) to have more compute resources, storage space, databases or email addresses. Additional features such as [mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/) (from the [Professional plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
 
 **Find out how to scale your OVHcloud hosting plan without any service interruptions.**
 
@@ -45,8 +45,6 @@ The service will therefore last **a little more than a year**, until its next re
 > For example, you cannot switch from a *Performance 2* hosting to a *Pro* hosting in a single operation.
 > You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **then** to the *Professional plan*.
 >
-> The following steps concern paid offers. To upgrade a [free Start10M hosting](https://docs.ovh.com/gb/en/hosting/activate-start10m/) solution, follow [these instructions](#start10m).
->
 
 > [!warning]
 >
@@ -63,24 +61,11 @@ In the `Plan` box, click the `...`{.action} button to the right of `Solution`, t
 
 Then select your new subscription and its duration. Confirm the corresponding contracts, then click `Send`{.action}.
 
-### Upgrading your Start 10M hosting plan to a higher solution <a name="start10m"></a>
-
 > [!primary]
 >
-> The following procedure only applies if you have enabled **the email offer associated with Start 10M**.
+> **Special case**
 >
-> If you have not activated the email offer, the instructions in the [previous paragraph](#modify) will be sufficient.
->
-
-You will not be able to switch **directly** from a [free Start10M hosting](https://docs.ovh.com/gb/en/hosting/activate-start10m/) to a paid offer. You will need to follow these steps:
-
-1. If necessary, back up the [files on your hosting plan](https://docs.ovh.com/gb/en/hosting/export-a-website/#step-1-retrieve-files-from-your-ftp-storage-space) and [messages from your email solution](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/).<br>
-2. Start the deletion of your Start10M plan. To do this, click on your name in the top right-hand corner, then `Manage services`{.action}. Then click on the `...`{.action} button to the right of the service concerned, then `Delete web hosting plan immediately`{.action}.<br>
-3. Create a [support ticket](https://help.ovhcloud.com/en-gb/faq/support/cant-reach-support-phone/), in order to request the accelerated deletion of your solution (a Start10M email address is kept for 14 days by default, to avoid any data loss following a handling error).<br>
-4. [Order a new hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).<br>
-5. Import your website into your [new hosting space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/#step-2-put-your-website-files-online-in-your-storage-space) if necessary.<br>
-6. [Add your website's domain name to your new solution's multisite](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/#step-2-add-a-domain-or-subdomain).<br>
-7. [If necessary, recreate your email address](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/) and [import your messages](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/).
+> If you wish to upgrade your [Start10M plan](https://docs.ovh.com/en-gb/hosting/activer-start10m/), only the [Personal plan](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) will be available. However, once you have switched to the Personal hosting plan, you can migrate it to all of our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/).
 
 ### Checking that your hosting plan is compatible with a lower plan <a name="checks"></a>
 

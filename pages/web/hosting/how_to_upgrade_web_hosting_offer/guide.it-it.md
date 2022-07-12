@@ -10,11 +10,11 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 19/05/2022**
+**Ultimo aggiornamento: 22/06/2022**
 
 ## Obiettivo
 
-Il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) ti permette di aumentare le capacità delle tue [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/) per disporre di un hosting più potente, di più spazio di archiviazione, di database, di indirizzi email o di funzionalità supplementari come le [mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/) (a partire dall'[offerta Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o il servizio SQL privato](https://www.ovhcloud.com/it/web-hosting/options/private-sql/) (incluse le offerte della [gamma Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/).
+Il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) ti permette di aumentare le capacità delle tue [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/) per disporre di un hosting più potente, di più spazio di archiviazione, di database, di indirizzi email o di funzionalità supplementari come le [mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/) (a partire dall'[offerta Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/)) o il servizio SQL privato](https://www.ovhcloud.com/it/web-hosting/options/private-sql/) (incluse le offerte della [gamma Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/).
 
 **Questa guida ti mostra come aggiornare la tua offerta di hosting OVHcloud senza interruzioni.**
 
@@ -49,8 +49,6 @@ Il rinnovo durerà quindi **poco più di un anno** fino al prossimo rinnovo.
 > Ad esempio, non sarà possibile passare da una formula *Performance 2* a una formula *Pro* in una sola operazione.
 > Dovrai **prima** far evolvere il tuo hosting dalla formula *Performance 2* verso l'offerta *Performance 1* **poi** verso l'offerta *Pro*.
 >
-> I seguenti elementi riguardano le offerte a pagamento. Per far evolvere il tuo [hosting gratuito Start10M](https://docs.ovh.com/it/hosting/attivare_start10m/), segui queste [istruzioni](#start10m).
->
 
 > [!warning]
 >
@@ -67,24 +65,11 @@ Nella `Abbonamento`, clicca sul pulsante `...`{.action} a destra di `Servizio` >
 
 Seleziona il tuo nuovo abbonamento e la sua durata. Conferma i contratti e clicca su `Invia`{.action}.
 
-### Fai evolvere il tuo hosting Start 10M verso un'offerta superiore <a name="start10m"></a>
-
 > [!primary]
 >
-> La procedura seguente si applica **solo se hai attivato l'offerta di posta associata allo Start 10M**.
->
-> Se non hai attivato il servizio di posta, le istruzioni del [paragrafo precedente](#modify) saranno sufficienti.
->
-
-Non è possibile passare **direttamente** da un [hosting gratuito Start10M](https://docs.ovh.com/it/hosting/attivare_start10m/) a un'offerta a pagamento. Dovrai effettuare queste operazioni:
-
-1. Salva, se necessario, i [file del tuo hosting](https://docs.ovh.com/it/hosting/exporter-son-site-web/#step-1-recupero-dei-file-del-tuo-spazio-di-storage-ftp) e i [messaggi della tua offerta email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/).<br>
-2. Elimina il tuo Start10M Clicca sul tuo nome in alto a destra e seleziona `Gestione dei servizi`{.action}. Clicca sul pulsante `...`{.action} a destra del servizio interessato e poi su `Elimina subito l'hosting`{.action}.<br>
-3. Crea un [ticket di assistenza](https://help.ovhcloud.com/it/faq/support/cant-reach-support-phone/) per richiedere, se vuoi, l'eliminazione accelerata della tua offerta (un indirizzo email Start10M viene conservato di default per 14 giorni, per evitare perdite di dati a causa di un errore di gestione).<br>
-4. [Ordina una nuova offerta di hosting](https://www.ovhcloud.com/it/web-hosting/).<br>
-5. Importa, se necessario, il tuo sito nel tuo [nuovo spazio di hosting](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/#step-2-carica-i-file-del-sito-nello-spazio-di-storage).<br>
-6. [Aggiungi il dominio del tuo sito al multisito della tua nuova offerta](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/#step-2-aggiungi-un-dominio-o-un-sottodominio).<br>
-7. [Ricevi se necessario il tuo indirizzo email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/) e [importa i tuoi messaggi](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/).
+> **Caso particolare**
+> 
+> In caso di modifica dell'offerta [Start10M](https://docs.ovh.com/it/hosting/activer-start10m/), ti sarà offerta solo [l'offerta Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/). Tuttavia, in seguito a una modifica all'offerta Personale, potrai effettuare l'upgrade a tutte le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/).
 
 ### Verifica che il tuo hosting sia compatibile con un'offerta inferiore <a name="checks"></a>
 

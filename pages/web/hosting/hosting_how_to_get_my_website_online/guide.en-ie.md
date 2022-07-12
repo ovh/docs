@@ -123,7 +123,7 @@ There are several methods for importing a database. OVHcloud offers one of these
 
 Once your database is available and you have uploaded your files to your storage space, all you need to do is connect them. To do this, you will need the following information: a username, the associated password, the name of the database and the address of the server.
 
-How this connection is created will depend on the type of website you are publishing. This process is dictated by how your website is configured and has nothing to do with OVHcloud. We therefore recommend that you contact your website’s editor or a similar professional (such as a specialist service provider) if you need assistance with this procedure.
+How this connection is created will depend on the type of website you are publishing. This process is dictated by how your website is configured and has nothing to do with OVHcloud. We therefore recommend that you contact your website’s editor or a similar professional (such as a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/)) if you need assistance with this procedure.
 
 ### Step 4: access your website
 

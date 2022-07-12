@@ -9,7 +9,7 @@ section: 'Red e IP'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 04/05/2022**
+**Última actualización: 29/06/2022**
 
 ## Objetivo
 
@@ -20,7 +20,7 @@ El protocolo de internet versión 6 (IPv6) es la última versión del protocolo 
 > [!warning]
 >OVHcloud le ofrece una serie de servicios cuya configuración y gestión recaen sobre usted. Por lo tanto, es su responsabilidad asegurarse de que estos servicios funcionen correctamente.
 >
->El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un proveedor especializado y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle al respecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
+>El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle al respecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
 >
 
 ## Requisitos
@@ -42,7 +42,6 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 > [!primary]
 >
 > La puerta de enlace por defecto de su bloque IPv6 (IPv6_GATEWAY) seguirá siempre la nomenclatura xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Tenga en cuenta que los "0" de cabeza pueden eliminarse en una IPv6 para evitar errores al determinar la pasarela.
-
 >
 > Por ejemplo,
 > 
@@ -57,6 +56,10 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
 
+> [!warning]
+> 
+> Antes de editar un archivo de configuración, cree siempre una copia de seguridad del original para poder volver si surge algún problema. 
+> 
 
 ### Sistemas operativos Debian y basados en Debian
 
@@ -77,7 +80,7 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 
 #### 2: Abrir el archivo de configuración de red de su servidor
 
-Su archivo de configuración de red de su servidor se encuentra en `/etc/network/interfaces`. Utilice la línea de comando para localizar el archivo y ábralo para editarlo. Realice una copia de seguridad antes de modificar cualquier archivo de configuración.
+Su archivo de configuración de red de su servidor se encuentra en `/etc/network/interfaces` o `/etc/network/interfaces.d`. Utilice la línea de comando para localizar el archivo y ábralo para editarlo. Realice una copia de seguridad antes de modificar cualquier archivo de configuración.
 
 #### 3: Modificar el archivo de configuración de red
 
@@ -222,7 +225,7 @@ ping6 -c 4 2001:4860:4860::8888
 
 Si no consigue hacer ping a esta dirección IPv6, compruebe su configuración e inténtelo de nuevo. Asegúrese también de que la maquina que está comprobando esté conectada con IPv6. Si aun así sigue sin funcionar, compruebe su configuración en [modo de rescate](../modo_de_rescate/).
 
-### Ubuntu 18.04
+### Ubuntu 18.04 y 20.04
 
 #### 1: Conectarse a su servidor por SSH
 
@@ -230,35 +233,71 @@ Más información en [esta guía](../primeros-pasos-servidor-dedicado/).
 
 #### 2: Abrir el archivo de configuración de red de su servidor
 
-Abra el archivo de configuración de red ubicado en `/etc/systemd/network`. En este ejemplo, nuestro archivo se llama 50-default.network.
+Abra el archivo de configuración de la red, situado en `/etc/netplan`. Para demostrarlo, nuestro archivo se denomina 50-cloud-init.yaml.
 
 #### 3: Modificar el archivo de configuración de red
 
-Para modificar el archivo, abra un editor de texto y añada las líneas siguientes a las secciones relevantes como se muestra en el siguiente ejemplo:
+Mediante un editor de texto, modifique el archivo 50-cloud-init.yaml añadiendo las siguientes líneas a las secciones correspondientes, como se muestra en el ejemplo a continuación.
 
-```console
-[Network]
-Destination=Gateway_Address
+Sustituya los valores genéricos (YOUR_IPV6, IPV6_PREFIX e IPV6_GATEWAY) y la interfaz de red (si el servidor no utiliza enp1s0) por sus valores específicos.
 
-[Address]
-Address=IPv6_Address/64
-
-[Route]
-Destination=Gateway_Address
-Scope=link
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            gateway6: IPv6_GATEWAY
+            routes:
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-Para añadir varias direcciones IPv6, añada varias secciones [Address].
 
-```console
-[Address]
-Address=IPv6_Address_2/64
+### Ubuntu 21.10 y 22.04
 
-[Address]
-Address=IPv6_Address_3/64
+El archivo de configuración debe tener el siguiente formato:
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            routes:
+                - to: ::/0
+                  via: IPv6_GATEWAY
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-#### 4: Guardar el archivo y reiniciar el servidor
 
-Guarde los cambios realizados en el archivo y reinicie la red o el servidor para aplicar los cambios.
+> [!warning]
+>
+> Es importante respetar la alineación de cada elemento del archivo, tal y como se muestra en el ejemplo anterior. No utilice la tecla de tabulación para crear el espacio. Sólo es necesaria la tecla espacio. 
+>
+
+#### 4: Probar y aplicar la configuración
+
+Para probar su configuración, utilice el siguiente comando:
+
+```bash
+netplan try
+```
+
+Si es correcta, puede aplicarla con el siguiente comando:
+
+```bash
+netplan apply
+```
 
 #### 5: Comprobar la conectividad de la IPv6
 

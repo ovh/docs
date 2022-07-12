@@ -10,11 +10,11 @@ order: 2
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 19.05.2022**
+**Letzte Aktualisierung am 22.06.2022**
 
 ## Ziel
 
-Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erlaubt es Ihnen, [die Kapazitäten Ihrer Webhosting Dienste](https://www.ovhcloud.com/de/web-hosting/) zu erhöhen, um über mehr Rechenleistung, Speicherplatz, Datenbanken, E-Mail-Adressen zu verfügen. Zusätzliche Funktionen wie [Mailinglisten](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/) (ab Webhosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/)) oder [Private SQL](https://www.ovhcloud.com/de/web-hosting/options/private-sql/) (inkludiert in Webhostings der Reihe [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/)) werden mit einem Upgrade ebenfalls verfügbar.
+Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erlaubt es Ihnen, [die Kapazitäten Ihrer Webhosting Dienste](https://www.ovhcloud.com/de/web-hosting/) zu erhöhen, um über mehr Rechenleistung, Speicherplatz, Datenbanken, E-Mail-Adressen zu verfügen. Zusätzliche Funktionen wie [Mailinglisten](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/) (ab [Pro Dienst](https://www.ovhcloud.com/de/web-hosting/professional-offer/)) oder [Private SQL](https://www.ovhcloud.com/de/web-hosting/options/private-sql/) (inkludiert in Webhostings der Reihe [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/)) werden mit einem Upgrade ebenfalls verfügbar.
 
 **Diese Anleitung erklärt, wie Sie Ihr OVHcloud Hosting-Abonnement ohne Dienstunterbrechung skalieren können.**
 
@@ -47,9 +47,7 @@ Die Laufzeit des Dienstes ist somit **entsprechend länger als die regulären 12
 >
 > Die Änderung Ihres Abos zu einem Dienst mit weniger Ressourcen ist nur möglich, wenn es sich um das nächstniedrigere **Angebot handelt**.
 > So können Sie zum Beispiel nicht von *Performance 2* auf *Pro* wechseln.
-> Sie müssen Ihr Hosting **zuerst**** von *Performance 2* zum *Performance 1* **und dann** zum *Pro*-Angebot umstellen.
->
-> Die folgenden Punkte betreffen kostenpflichtige Angebote. Um Ihr kostenloses [Start 10M Hosting](https://docs.ovh.com/de/hosting/start10m-aktivieren/) anzupassen, folgen Sie [diesen Anweisungen](#start10m).
+> Sie müssen Ihr Hosting **zuerst** von *Performance 2* zum *Performance 1* **und dann** zum *Pro*-Angebot umstellen.
 >
 
 > [!warning]
@@ -67,24 +65,11 @@ Klicken Sie im Rahmen `Abonnement` auf `...`{.action} rechts neben `Angebot` und
 
 Wählen Sie dann Ihr neues Abonnement und dessen Dauer aus. Bestätigen Sie die entsprechenden Verträge und klicken Sie dann auf `Absenden`{.action}.
 
-### Ihr Start 10M Hosting auf ein leistungsfähigeres Angebot umstellen <a name="start10m"></a>
-
 > [!primary]
 >
-> Das folgende Verfahren gilt nur, **wenn Sie den E-Mail-Dienst für das Start 10M aktiviert haben**.
+> **Sonderfall**
 >
-> Wenn Sie das E-Mail-Angebot nicht aktiviert haben, sind die Anweisungen im [vorherigen Abschnitt](#modify) ausreichend.
->
-
-Sie können nicht **direkt** von einem kostenlosen [Start 10M Hosting](https://docs.ovh.com/de/hosting/start10m-aktivieren/) auf ein kostenpflichtiges Angebot umstellen. Folgende Operationen sind durchzuführen:
-
-1. Speichern Sie erforderlichenfalls die [Dateien Ihres Hostings](https://docs.ovh.com/de/hosting/website-exportieren/#schritt-1-dateien-von-ihrem-ftp-speicherplatz-abrufen) und die [Inhalte Ihres E-Mail Accounts](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/)<br>.
-2. Starten Sie die Löschung Ihres Start 10M. Klicken Sie hierzu oben rechts auf Ihren Namen und dann auf `Dienstverwaltung`{.action}. Klicken Sie rechts neben dem betreffenden Dienst auf `...`{.action} und dann auf `Hosting sofort löschen`{.action}.<br>
-3. Erstellen Sie ein [Support-Ticket](https://help.ovhcloud.com/de/faq/support/cant-reach-support-phone/), um auf Wunsch die beschleunigte Löschung Ihres Angebots zu beantragen (eine Start 10M E-Mail-Adresse wird standardmäßig 14 Tage gespeichert, um ungewollten Datenverlust aufgrund eines Handhabungsfehlers zu vermeiden)<br>.
-4. [Wälen Sie Ihr neues Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/) aus und führen Sie die Bestellung durch.<br>
-5. Importieren Sie Ihre Webseite in Ihren [neuen Hosting-Speicherplatz](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/#schritt-2-websitedateien-im-speicherplatz-online-stellen), falls notwendig.<br>
-6. [Fügen Sie den Domainnamen Ihrer Webseite zur Multisite Ihres neuen Dienstes hinzu](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/#schritt-2-eine-domain-oder-subdomain-hinzufugen).<br>
-7. [Erstellen Sie bei Bedarf Ihren E-Mail-Account](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/) neu und [importieren Sie Ihre E-Mails](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/).
+> Ein Upgrade des [Start 10M Webhostings](https://docs.ovh.com/de/hosting/activer-start10m/) ist nur auf das [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) möglich. Nach einem Wechsel zum Basic Webhosting können Sie dieses jedoch zu allen unseren [Webhosting Angeboten](https://www.ovhcloud.com/de/web-hosting/) migrieren.
 
 ### Überprüfen, ob Ihr Hosting mit einem niedrigeren Angebot kompatibel ist <a name="checks"></a>
 

@@ -34,7 +34,7 @@ Pour mettre en ligne votre site, vous devez disposer d'un [nom de domaine](https
 
 Pour suivre les étapes nécessaires à la construction de votre site, consultez cette [page](https://www.ovhcloud.com/fr-ca/web-hosting/uc-website/) puis suivez les instructions du guide [Mettre en ligne un site Internet sur son hébergement web](https://docs.ovh.com/ca/fr/hosting/mettre-mon-site-en-ligne/).
 
-**Trucs et Astuces** : Pour vous aider à créer votre site, OVHcloud vous permet d'installer sur votre hébergement un logiciel d'assistance à la création de sites (Wordpress, Prestashop, Joomla et Drupal), grâce la fonctionnalité [Modules en 1 clic](https://docs.ovh.com/ca/fr/hosting/modules-en-1-clic/).
+**Trucs et Astuces** : Pour vous aider à créer votre site, OVHcloud vous permet d'installer sur votre hébergement un logiciel d'assistance à la création de sites (WordPress, PrestaShop, Joomla! et Drupal), grâce la fonctionnalité [Modules en 1 clic](https://docs.ovh.com/ca/fr/hosting/modules-en-1-clic/).
 
 ### Comment transférer mon site et mes e-mails sur les serveurs OVHcloud ? 
 
@@ -129,7 +129,7 @@ Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone D
 
 - Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](https://docs.ovh.com/ca/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), effectuez une réinitialisation en suivant les instructions de [ce guide](https://docs.ovh.com/ca/fr/domains/generalites-serveurs-dns/#reinitialiser-les-serveurs-dns).
 
-- Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](https://docs.ovh.com/ca/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), contactez votre Webmaster ou recherchez un prestataire spécialisé via la page des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+- Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](https://docs.ovh.com/ca/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) via la page des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 ### Que faire si mon site affiche une erreur « La page ne se redirige pas correctement » ?
 
@@ -148,15 +148,15 @@ Restaurez votre site à son état précédent :
 
 - Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client).
 
-Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un prestataire spécialisé sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 ### Que faire si mon site affiche une erreur « 503 error Backend fetch failed (Varnish cache) » ?
 
 ![503_varnish](images/503_varnish.png){.thumbnail}
 
-Si vous avez activé [l'option CDN](https://docs.ovh.com/ca/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/) de votre hébergement, désactivez le mode *Maintenance* sur votre site Wordpress ou Prestashop.
+Si vous avez activé [l'option CDN](https://docs.ovh.com/ca/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/) de votre hébergement, désactivez le mode *Maintenance* sur votre site WordPress ou PrestaShop.
 
-Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un prestataire spécialisé sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 ### Que faire si mon site affiche une erreur « Your request has been blocked » ?
 

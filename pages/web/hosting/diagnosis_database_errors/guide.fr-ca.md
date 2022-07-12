@@ -18,7 +18,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
 ## Prérequis
@@ -44,7 +44,7 @@ Vérifiez tout d'abord sur [https://web-cloud.status-ovhcloud.com/](https://web-
 
 #### Vérifier les identifiants de connexion à votre base de données <a name="config_file"></a>
 
-Connectez-vous en [FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'espace de stockage de fichiers sur votre hébergement et retrouvez le fichier de configuration de votre site (par exemple, pour un site Wordpress, il s'agit du fichier **wp-config.php** situé dans le dossier contenant votre site).
+Connectez-vous en [FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'espace de stockage de fichiers sur votre hébergement et retrouvez le fichier de configuration de votre site (par exemple, pour un site WordPress, il s'agit du fichier **wp-config.php** situé dans le dossier contenant votre site).
 
 > [!warning]
 >
@@ -57,11 +57,11 @@ Vérifiez ensuite la correspondance **exacte** entre les identifiants de connexi
 
 Changez, si nécessaire, le [mot de passe de votre base de données](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
 
-#### Exemple pour Wordpress
+#### Exemple pour WordPress
 
 Si votre site affiche un message **« Erreur lors de la connexion à la base de données »** et qu'il n'est pas concerné par un [incident](https://web-cloud.status-ovhcloud.com/), connectez-vous en [FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à votre hébergement puis ouvrez le répertoire contenant votre site (par défaut, il s'agit du dossier `www`).
 
-S'il s'agit d'un site Wordpress, ouvrez le fichier `wp-config.php`.
+S'il s'agit d'un site WordPress, ouvrez le fichier `wp-config.php`.
 
 ```php
 define('DB_NAME', 'my_database');

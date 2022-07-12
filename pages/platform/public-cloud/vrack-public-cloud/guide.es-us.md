@@ -47,7 +47,7 @@ Interfaz visual independiente de OVHcloud, [Horizon](https://horizon.cloud.ovh.n
 
 Esta completa interfaz técnica le permite gestionar casi todas las acciones de OpenStack. Será una de las interfaces necesarias si desea gestionar más de dos VLAN, añadir interfaces de red privadas a sus instancias, gestionar imágenes personalizadas, etc.
 
-Consulte la guía [Conectarse a Horizon](../crear_un_acceso_a_horizon/) para familiarizarse con Horizon.
+Consulte la guía [Conectarse a Horizon](../horizon/) para familiarizarse con Horizon.
 
 > [!primary]
 > Horizon que funciona por zonas. No olvide elegir su zona geográfica de trabajo en la parte superior izquierda de su interfaz (GRA5, SBG3, BHS1, etc.).

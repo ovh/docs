@@ -99,10 +99,10 @@ Los formularios de los sitios web son un objetivo principal de los piratas infor
 
 Añada a su sitio web un plugin de seguridad recomendado por el editor del CMS:
 
-- [Wordpress](https://es.wordpress.org/){.external}
+- [WordPress](https://es.wordpress.org/){.external}
 - [Joomla](https://downloads.joomla.org/es/){.external}
 - [Drupal](https://www.drupal.org/drupal-7.0/es){.external}
-- [Prestashop](https://www.prestashop.com/es){.external}
+- [PrestaShop](https://www.prestashop.com/es){.external}
 
 ### Etapa 10: compruebe que su alojamiento no contenga archivos maliciosos
 

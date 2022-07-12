@@ -61,7 +61,7 @@ Bei einer solchen Anfrage kann Ihnen unser Support leider nicht behilflich sein.
 
 
 ## Wiederherstellung der Webseite
-WordPress besteht aus verschiedenen Dateien und einer Datenbank. Es ist möglich, Dateien älteren Datums wiederherzustellen. Bei OVH haben Sie für die Dateien auf Ihrem Hosting Zugriff auf eine History der letzten drei Wochen. Für die Datenbank haben Sie Zugriff auf die letzten sieben Tage.
+WordPress besteht aus verschiedenen Dateien und einer Datenbank. Es ist möglich, Dateien älteren Datums wiederherzustellen. Bei OVH haben Sie für die Dateien auf Ihrem Hosting Zugriff auf eine History der letzten zwei Wochen. Für die Datenbank haben Sie Zugriff auf die letzten sieben Tage.
 Bitte beachten Sie, dass durch eine Wiederherstellung keine Sicherheitslücken geschlossen werden. Diese müssen Sie also dennoch ermitteln und schließen.
 
 Durch die Wiederherstellung werden die Dateien durch das Backup ersetzt.
@@ -86,7 +86,7 @@ Denken Sie auch daran, nciht (mehr) verwendete Plugins zu deinstallieren. Bei ei
 
 Wenn der Hack länger zurückliegt und eine Wiederherstellung nicht möglich ist, müssen Sie folgendermaßen vorgehen:
 
-## Sie können sich nicht auf Ihrem Wordpress Admin-Panel anmelden
+## Sie können sich nicht auf Ihrem WordPress Admin-Panel anmelden
 In diesem Fall müssen Sie Ihr [Administrator-Passwort](https://codex.wordpress.org/) zurücksetzen. Wie das geht, erfahren Sie im offiziellen WordPress Guide.
 
 Wenn Ihnen das zu kompliziert ist, können Sie auch über [phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-verbindung-auf-bdd/) Ihre E-Mail-Adresse in der Tabelle User aktualisieren. Wenn Sie dann auf die Login-Seite gehen und auf Passwort vergessen klicken, wird Ihnen eine entsprechende E-Mail zugesandt.
@@ -111,7 +111,7 @@ Die wp-config.php-Datei muss ebenfalls geändert werden, damit die Verbindung zu
 Rufen Sie hierfür die E-Mail wieder auf, die Sie nach Erstellung Ihrer Datenbank erhalten haben. Sie finden diese E-Mail in Ihrem OVH Kundencenter, Bereich "Mein Account" > "Empfangene E-Mails". Darin sind alle notwendigen Informationen enthalten, mit Ausnahme des Passworts, das nur Sie alleine kennen.
 
 Wenn Sie das Passwort Ihrer Datenbank vergessen haben, können Sie es über das OVH Kundencenter ändern. Wie das geht, erfahren Sie in [dieser Hilfe](https://www.ovh.de/g1374.webhosting_meine_seite_online_stellen).
-Denken Sie daran, anschließend über Ihr Wordpress Admin-Interface nach möglichen Updates zu suchen.
+Denken Sie daran, anschließend über Ihr WordPress Admin-Interface nach möglichen Updates zu suchen.
 
 
 ## Nützliche Informationen

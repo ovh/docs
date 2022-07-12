@@ -111,7 +111,7 @@ Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigu
 
 ### Let's Encrypt SSL
 
-Ta sekcja ma zastosowanie wyłącznie do instalacji WordPress, Drupal, Joomla i Prestashop. Nie ma ona zastosowania do innych instalacji.
+Ta sekcja ma zastosowanie wyłącznie do instalacji WordPress, Drupal, Joomla! i PrestaShop. Nie ma ona zastosowania do innych instalacji.
 
 1. W Panelu klienta OVHcloud utwórz lub zmodyfikuj dwa rekordy `A`, które wskazują na adres IP Twojego serwera. Na przykład, jeśli Twoja domena to "personaldomain.ovh", musisz utworzyć rekordy `A`, aby:  
 
@@ -148,7 +148,7 @@ systemctl restart httpd
 certbot certonly -d personaldomain.ovh —webroot
 ```
 
-Gdy zostaniesz poproszony o wprowadzenie "Input the webroot", wpisz zmienną typu "/var/www/wordpress". Jeśli zainstalujesz Joomla, musisz zastąpić "wordpress" nazwą "joomla".
+Gdy zostaniesz poproszony o wprowadzenie "Input the webroot", wpisz zmienną typu "/var/www/wordpress". Jeśli zainstalujesz Joomla!, musisz zastąpić "wordpress" nazwą "joomla".
 
 Teraz należy upewnić się, że Certbot umieszcza tę zmienną również w pliku ssl.conf. W tym celu wprowadź:
 

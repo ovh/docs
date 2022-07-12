@@ -21,7 +21,7 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 >
 
 ## Voraussetzungen
@@ -55,7 +55,7 @@ Verbinden Sie sich über [FTP](https://docs.ovh.com/de/hosting/verbindung-ftp-sp
 >
 > Der Name und der Inhalt der für die Datenbankverbindungsinformationen relevanten Datei hängt von dem für die Website verwendeten CMS ab. Dies liegt nicht im Verantwortungsbereich von OVHcloud.
 >
-> Wir empfehlen Ihnen daher, die Ressourcen des [CMS-Anbieters](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/) heranzuziehen oder bei Bedarf einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Wir empfehlen Ihnen daher, die Ressourcen des [CMS-Anbieters](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/) heranzuziehen oder bei Bedarf einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 Stellen Sie anschließend die **exakte** Übereinstimmung zwischen den Zugangsdaten zu [phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) und denen der Konfigurationsdatei Ihrer Website sicher.
@@ -92,7 +92,7 @@ In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&fr
 >
 > Wenn Sie mit diesen Änderungen den Zugriff auf Ihre Website nicht wiederherstellen können, legen Sie ein [Datenbank-Backup an](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/) und setzen Sie dann in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) die Datenbank [auf einen früheren Zeitpunkt zurück](https://docs.ovh.com/de/hosting/datenbank-importieren/#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren).
 >
-> Kontaktieren Sie gegebenenfalls einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Kontaktieren Sie gegebenenfalls einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 ### Überschreitung der Datenbank-Quota
@@ -113,7 +113,7 @@ Wenn Sie über ein Webhosting **Basic** oder **Pro** verfügen, empfehlen wir Ih
 >
 > Eine solche Anomalie kann zu einem dauerhaften Anschwellen Ihrer Datenbank führen. Ein Wechsel des Webhosting-Abos wird dies nicht beheben.
 >
-> Daher empfehlen wir Ihnen, falls Sie eine plötzliche Vergrößerung Ihrer Datenbank feststellen oder wenn Sie beispielsweise nur einen Blog betreiben, der nicht viel Datenvolumen verbraucht, sobald möglich einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Wir werden Sie in diesem Fall nicht unterstützen können.
+> Daher empfehlen wir Ihnen, falls Sie eine plötzliche Vergrößerung Ihrer Datenbank feststellen oder wenn Sie beispielsweise nur einen Blog betreiben, der nicht viel Datenvolumen verbraucht, sobald möglich einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Wir werden Sie in diesem Fall nicht unterstützen können.
 >
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie auf `Hosting-Pakete`{.action} und anschließend auf das betreffende Hosting. Klicken Sie auf den Button `...`{.action} rechts im Bereich `Abo`{.action} unter `Angebot`{.action}, dann auf `Upgraden`{.action}.
@@ -141,7 +141,7 @@ Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hosting
 
 > [!warning]
 >
-> Dieser Vorgang erfordert fortgeschrittene Kenntnisse. Wir empfehlen Ihnen, falls nötig einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Wir werden Ihnen in dieser Angelegenheit nicht weiterhelfen können.
+> Dieser Vorgang erfordert fortgeschrittene Kenntnisse. Wir empfehlen Ihnen, falls nötig einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Wir werden Ihnen in dieser Angelegenheit nicht weiterhelfen können.
 >
 
 #### Methode 4: Ihre Datenbank optimieren
@@ -184,7 +184,7 @@ Sie können beim [Datenbank-Import](https://docs.ovh.com/de/hosting/webhosting_i
 
 ![database-import](images/database-import-empty.png){.thumbnail}
 
-Kontaktieren Sie gegebenenfalls unsere [Community](https://community.ovh.com/en/) oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/). Wir werden Sie in diesem Fall nicht unterstützen können.
+Kontaktieren Sie gegebenenfalls unsere [Community](https://community.ovh.com/en/) oder einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/). Wir werden Sie in diesem Fall nicht unterstützen können.
 
 > [!success]
 >

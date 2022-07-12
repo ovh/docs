@@ -4,7 +4,7 @@ slug: managed-db-life-cycle-policy
 section: 'Technical resources'
 ---
 
-**Last updated 7th January 2022**
+**Last updated 29th June 2022**
 
 ## Objective
 
@@ -14,12 +14,11 @@ OVHcloud managed databases offer several Database Management Systems (DBMS), suc
 
 ## Requirements
 
-You must have one or more of the following options:
+At least one of the following 3 solutions:
 
-- A [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that includes databases
-- A [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) database pack
-- A [Private SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/) server
-- A [Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/) server
+- One of the included databases with a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/).
+- A [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance Web Hosting](https://www.ovhcloud.com/en-ie/web-hosting/) offer)
+- A database pack [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/).
 
 ## Instructions
 
@@ -27,10 +26,7 @@ You must have one or more of the following options:
 
 The products covered by this end-of-life policy are:
 
-- Public Cloud Databases services, dedicated DBMS instances that can be reached via the public network ([see announcements](https://docs.ovh.com/gb/en/clouddb/clouddb-eos-eol/)).
-
-- Cloud Databases Web Hosting services (also known as Private SQL services), dedicated DBMS instances that can be reached via the Web Hosting network ([see announcements](https://docs.ovh.com/gb/en/hosting/sql_eos_eol/)).
-
+- CloudDB Web Hosting services (also known as Private SQL services), dedicated DBMS instances that can be reached via the Web Hosting network ([see announcements](https://docs.ovh.com/gb/en/hosting/sql_eos_eol/)).
 - SharedSQL Web Hosting services, MySQL databases that can be reached through the Web Hosting network ([see announcements](https://docs.ovh.com/gb/en/hosting/sql_eos_eol/)).
 
 ### Definitions and guidelines for the end-of-life policy

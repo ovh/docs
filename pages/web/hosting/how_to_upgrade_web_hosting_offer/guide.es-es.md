@@ -10,11 +10,11 @@ order: 2
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 19/05/2022**
+**Última actualización: 22/06/2022**
 
 ## Objetivo
 
-Su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](https://docs.ovh.com/es/emails/guia_de_utilizacion_de_listas_de_difusion/) (a partir del [plan Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) o el [servicio SQL privado](https://www.ovhcloud.com/es-es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/)).
+Su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](https://docs.ovh.com/es/emails/guia_de_utilizacion_de_listas_de_difusion/) (a partir del [plan Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/)) o el [servicio SQL privado](https://www.ovhcloud.com/es-es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/)).
 
 **Descubra cómo cambiar sin interrupción el plan de hosting de OVHcloud.**
 
@@ -49,8 +49,6 @@ Este plazo durará **un poco más de un año** hasta su próxima renovación.
 > Por ejemplo, no podrá pasar de una fórmula *Performance 2* a una fórmula *Profesional* en una sola operación.
 > **En primer lugar**, deberá migrar su alojamiento desde la fórmula *Performance 2* al plan *Performance 1* y **después** al plan *Profesional*.
 >
-> Los siguientes elementos se refieren a las ofertas de pago. Para mejorar su [hosting gratuito Start10M](https://docs.ovh.com/es/hosting/activar-start10m/), siga [estas instrucciones](#start10M).
->
 
 > [!warning]
 >
@@ -67,24 +65,11 @@ En el recuadro `Suscripción`, haga clic en el botón `...`{.action} a la derech
 
 A continuación, seleccione la nueva suscripción y la duración de la misma. Acepte los contratos correspondientes y haga clic en `Enviar`{.action}.
 
-### Hacer evolucionar su alojamiento Start 10M hacia una oferta superior <a name="start10m"></a>
-
 > [!primary]
 >
-> El siguiente procedimiento solo es aplicable a **si ha activado el servicio de correo asociado al Start 10M**.
+> **Caso particular**
 >
-> Si no ha activado el servicio de correo, las instrucciones del [párrafo anterior](#modify) serán suficientes.
->
-
-No podrá pasar **directamente* de un [alojamiento gratuito Start10M](https://docs.ovh.com/es/hosting/activar-start10m/) a una oferta de pago. Realice las siguientes operaciones:
-
-1. Guarde, si es necesario, los [archivos de su alojamiento](https://docs.ovh.com/es/hosting/exportar-un-sitio-web/#1-recuperacion-de-los-archivos-de-su-espacio-de-almacenamiento-ftp) y los [mensajes de su servicio de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/).<br>
-2. Ejecute la eliminación de su Start10M. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Gestión de servicios`{.action}. Haga clic en el botón `...`{.action} a la derecha del servicio en cuestión y luego `Eliminar inmediatamente el alojamiento`{.action}.<br>
-3. Cree un [tique de asistencia](https://help.ovhcloud.com/es-es/faq/support/cant-reach-support-phone/) para solicitar, si lo desea, la eliminación acelerada de su producto (una dirección de correo electrónico Start 10M se conservará 14 días por defecto, a fin de evitar la pérdida de datos debido a un error de manipulación).<br>
-4. [Contrate un nuevo plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).<br>
-5. Importe su sitio web a su [nuevo espacio de alojamiento](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/#2-colocar-los-archivos-del-sitio-web-en-el-espacio-de-almacenamiento).<br>
-6. [Añada el dominio de su sitio web al multisitio de su nuevo producto](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/#2-anadir-un-dominio-o-subdominio).<br>
-7. [Recargue su dirección de correo electrónico](https://docs.ovh.com/es/emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/) y [importe sus mensajes](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/).
+> Si cambia de plan [Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/), solo podrá [plan Personal](https://www.ovhcloud.com/fr/web-hosting/personal-offer/). No obstante, una vez haya cambiado el plan Personal, podrá migrarlo al resto de nuestros planes de hosting (https://www.ovhcloud.com/fr/web-hosting/).
 
 ### Comprobar que el alojamiento es compatible con un producto inferior <a name="checks"></a>
 
