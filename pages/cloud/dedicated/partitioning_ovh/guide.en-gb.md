@@ -6,7 +6,7 @@ section: 'RAID and disks'
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->
-**Last updated 8<sup>th</sup> July 2022**
+**Last updated 8th July 2022**
 
 ## Objective
 
@@ -165,8 +165,8 @@ A partiton layout is a list of partitions. Here is an example of partition struc
 > [!primary]
 >
 > type: is one of primary, logical, lv
-> lv: means that LVM layers will be added on top of the [software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/) device (or the physical partition if RAID level is 0)
 >
+> - lv: means that LVM layers will be added on top of the [software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/) device (or the physical partition if RAID level is 0)
 > - primary: only makes sense for MBR partition tables (a few old non-UEFI servers still don't support GPT)
 > - logical: if you don't know what to choose
 >
@@ -185,7 +185,7 @@ The following table provides an overview of filesystem compatibility with RAID l
 |---|---|---|---|---|---|---|---|
 |Btrfs, ext4, XFS|✅|✅|✅|✅|✅|❌|✅|
 |ZFS¹|❌|✅|✅|✅|✅|✅|❌|
-|swap|❌|⚠²|❌|❌|❌|❌|❌|
+|swap|❌|⚠️²|❌|❌|❌|❌|❌|
 |NTFS|❌|❌|✅³|❌|❌|❌|❌|
 |UFS, VMFS5, VMFS6, VMFS-L⁴|❌|❌|❌|❌|❌|❌|❌|
 
@@ -243,9 +243,9 @@ Basic customer input data errors are directly handled by the [OVHcloud API](http
 
 Customer input data related to partitioning might be too specific to be checked by the the [OVHcloud API](https://api.ovh.com/) and therefore require **pre-processing**. The drawback is that customers are notified later during the [OS installation](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/) process.
 
-> [!primary]
->Within the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration), this is visible on the progress bar
->From the [OVHcloud API](https://api.ovh.com/), this status can be obtained with the following API call:
+Within the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration), this is visible on the progress bar
+From the [OVHcloud API](https://api.ovh.com/), this status can be obtained with the following API call:
+
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/status
@@ -269,10 +269,10 @@ The following table gives an overview of well known customer errors and how to f
 
 |Error message|Details|Solution(s)|
 |---|---|---|
-|Some Linux distributions such as RHEL family OSes don't support those mountpoints / mountpoint reserved/managed by OVHcloud (\*\*\*). Please remove those mountpoints and restart an installation|- You have chosen `/boot/efi` as mountpoint. OVHcloud will create this partition automatically for you if your server needs one<br />- You have chosen a mountpoint that is symlinked on some operating systems. See [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/fhs.shtml) for more details.|- Choose another mountpoint for the partition or remove this partition from your partitioning layout|
-|Partition of type \*\*\* with mountpoint \*\*\* cannot fill the disk.|- You have chosen the `swap` partition to fill the disk, we disallow this to avoid creating unnecessarily large `swap` partitions|- Set a fixed size for the `swap` partition|
+|Some Linux distributions such as RHEL family OSes don't support those mountpoints / mountpoint reserved/managed by OVHcloud (`list forbidden mountpoints`). Please remove those mountpoints and restart an installation|- You have chosen `/boot/efi` as mountpoint. OVHcloud will create this partition automatically for you if your server needs one<br />- You have chosen a mountpoint that is symlinked on some operating systems. See [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/fhs.shtml) for more details.|- Choose another mountpoint for the partition or remove this partition from your partitioning layout|
+|Partition of type `t` with mountpoint `m` cannot fill the disk.|- You have chosen the `swap` partition to fill the disk, we disallow this to avoid creating unnecessarily large `swap` partitions|- Set a fixed size for the `swap` partition|
 |Missing `/` partition. Please add a `/` partition in your partition scheme!|- Any Linux-based OS needs at least a `/` partition|- Add a `/` partition in your partitioning layout|
-|\*\*\*. Please adjust partitions so that the \*\*\* partition fits on \*\*\* disk(s)|- You have chosen a partition with a RAID that requires a number of disks that your server can provide, but some disks are already full because of other partitions and/or this current partition|- If it is not already set on another partition, set the partition size to fill the disk<br />- Reduce the size of this partition so that it fits the disks<br />- Reduce the size of other partitions partitions so that this partition fits the disks|
+|`message`. Please adjust partitions so that the `p` partition fits on `n` disk(s)|- You have chosen a partition with a RAID that requires a number of disks that your server can provide, but some disks are already full because of other partitions and/or this current partition|- If it is not already set on another partition, set the partition size to fill the disk<br />- Reduce the size of this partition so that it fits the disks<br />- Reduce the size of other partitions partitions so that this partition fits the disks|
 
 #### Input customer auto-fixing
 
