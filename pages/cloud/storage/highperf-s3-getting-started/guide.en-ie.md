@@ -6,7 +6,7 @@ section: Object Storage S3 High Performance
 order: 020
 ---
 
-**Last updated 6<sup>th</sup> December 2021**
+**Last updated 12th July 2022**
 
 ## Objective
 
@@ -131,7 +131,7 @@ user@host:~$ source openrc.sh
 > ![Download Openrc file](images/HighPerf-S3-Getting-started-20211123123335113.png)
 >
 
-Finally, with the python-openstack client:
+Finally, with the `python-openstack` client:
 
 ```bash
 user@host:~$ openstack ec2 credentials create
@@ -147,7 +147,7 @@ user@host:~$ openstack ec2 credentials create
 +------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Configure the aws client as follows:
+Configure the `aws` client as follows:
 
 ```bash
 user@host:~$ cat ~/.aws/credentials
@@ -173,10 +173,15 @@ s3api =
 
 > [!primary]
 >
+> The region must be lowercase, not uppercase!
+> Else, the `aws` CLI may not recognize the region and will redirect you to the default endpoint `https://s3.<region_in_lowercase>.amazonaws.com/` instead of your defined endpoint URL.
+>
+
+> [!primary]
+>
 > You can also use interactive configuration by running the following command:
 > `aws --configure`
 >
-
 
 Here are the configuration values you can specifically set:
 
