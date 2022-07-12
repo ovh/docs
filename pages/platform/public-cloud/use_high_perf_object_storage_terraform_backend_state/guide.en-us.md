@@ -42,8 +42,8 @@ In this tutorial you will:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- A [Public Cloud Instance](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 - Installing [Terraform CLI](https://www.terraform.io/downloads){.external}
 
 ## Before you begin
