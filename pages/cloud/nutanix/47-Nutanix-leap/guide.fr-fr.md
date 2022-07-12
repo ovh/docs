@@ -101,7 +101,7 @@ Cliquez sur `Enable Leap`{.action}.
 
 ![Activate Recovery 02](images/02-activate-recovery02.png){.thumbnail}
 
-Si sur l'écran est affiché `Prechecks successful`, cliquez sur `Enable`{.action}.
+Si comme sur l'autre cluster est affiché `Prechecks successful`, cliquez sur `Enable`{.action}.
 
 ![Activate Recovery 03](images/02-activate-recovery03.png){.thumbnail}
 
@@ -122,9 +122,9 @@ Cliquez sur `Connect to Availability Zone`{.action}.
 Saisissez ces informations :
 
 - **Availability Zone Type** : `Physical Location`.
-- **IP Address for Remote PC** : `Adresse IP Prism Central distant`.
+- **IP Address for Remote PC** : `Adresse IP du Prism Central distant`.
 - **Username** : `Compte administrateur du Prism Central distant`.
-- **Password** : `Mot de passe du compte Prism Central distant`.
+- **Password** : `Mot de passe du compte du Prism Central distant`.
 
 Ensuite cliquez sur `Connect`{.action}.
 
@@ -208,7 +208,7 @@ Saisissez `le nom de la stratégie` dans **Policy name**
 Ensuite dans **Primary location** choisissez ces options : 
 
 - **Location** : `Local AZ` pour choisir la zone contenant le cluster local.
-- **Cluster** : `Cluster contenant ls machines virtuelles à répliquer`.
+- **Cluster** : `Cluster contenant les machines virtuelles à répliquer`.
 
 Cliquez sur `Save`{.action}.
 
@@ -216,8 +216,8 @@ Cliquez sur `Save`{.action}.
 
 Dans **Recovery location** choisissez ces options :
 
-- **Location** : `PC_192.168.0.222` qui correspond à zone contenant le cluster distant.
-- **Cluster** : `Cluster de destination à l'intérieur de la zone de destination`.
+- **Location** : `Zone du cluster distant` 
+- **Cluster** : `Cluster de destination`.
 
 Cliquez sur `Save`{.action}.
 
@@ -239,7 +239,7 @@ Cliquez sur `Next`{.action}.
 
 ![Create Protection policy 07](images/05-create-protection-policy07.png){.thumbnail}
 
-Sélectionnez la `catégorie` dont fait partie les machines virtuelles et cliquez sur `Add`{.action}.
+Sélectionnez la `catégorie` où la machine virtuelle a été ajoutée et cliquez sur `Add`{.action}.
 
 ![Create Protection policy 08](images/05-create-protection-policy08.png){.thumbnail}
 
@@ -347,7 +347,13 @@ Saisissez `Failover`{.action} et cliquez sur le bouton `Failover`{.action}.
 
 ![Planned Migration 05](images/07-planned-migration05.png){.thumbnail}
 
-La machine virtuelle se trouvant sur le cluster d'origine va être éteinte, une dernière synchronisation des données va être faites, ensuite la machine virtuelle disparaitra du cluster d'origine pour apparaitre et démarrer sur le cluster de destinations.
+Les étapes de migrations sont décrites ci-dessous :
+
+- Arrêt de la machine virtuelle sur le cluster d'origine.
+- Synchronisation des dernières modifications.
+- Suppression de la machine virtuelle sur le cluster d'origine.
+- Ajout de la machine virtuelle sur le cluster de destination.
+- Démarrage de la machine virtuelle sur le cluster de destination.
 
 Le résultat de de la migration apparait dans la colonne **Last Failover Status** avec le statut `Succeeded` si tout s'est bien passé.
 
@@ -415,7 +421,7 @@ Cliquez sur `Update`{.action} pour finaliser l'inversion.
 
 ##### Modification du plan de reprise d'activité
 
-De même que la réplication doit être inversée il faut aussi modifier le plan de reprise d'activité pour avoir la possibilité de migrer vers le site distant.
+Il faut aussi modifier le plan de reprise d'activité en inversant la source et la destination.
 
 Allez dans le `menu principal` choisissez `Recovery Plans`{.action} dans le sous-menu `Data Protection`.
 
@@ -471,7 +477,7 @@ Si vous souhaitez revenir au fonctionnement d'origine il faudra refaire un *fail
 
 #### Activation du plan de reprise d'activité suite à un incident sur le cluster d'origine
 
-Il est possible d'activer les machines virtuelles sur le cluster de destination en cas de problème sur le cluster d'origine, dans ce cas l'activation se fera avec un risque de perte de données dans le cas d'une réplication asynchrone ou *nearsync*, 
+Le plan de reprise d'activité sert aussi en cas de problème sur le cluster d'origine, dans ce cas l'activation se fera sans les données modifiées depuis la dernière synchronisation.
 
 Si l'on utilise une solution de réplication synchrone aucune perte de données ne sera à déplorer.
 
