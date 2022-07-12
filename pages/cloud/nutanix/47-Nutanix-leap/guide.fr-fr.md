@@ -10,7 +10,7 @@ order: 05
 
 ## Objectif
 
-Mettre en place des réplications et des plans de reprises d'activités avancées avec **Nutanix LEAP** dans **Prism Central**
+Mettre en place des réplications et des plans de reprises d'activités avancées avec **Nutanix LEAP** dans **Prism Central**.
 
 ## Présentation
 
@@ -18,8 +18,8 @@ Nutanix LEAP permet :
 
 - de faire des réplication asynchrones et synchrones en fonction du pack de licence choisi. 
 - de tester les réplications.
-- de faire des plans de reprises d'activités avancées avec démarrage de machine virtuelles et dans certains cas une automatisation de la bascule d'un cluster à l'autre (Uniquement avec une réplication synchrone et un témoin de cluster)
-- D'avoir une destination vers le cloud de Nutanix avec **Xi Leap** (Attention cette solution n'est pas disponible avec les licences fournies par OVHcloud)
+- de faire des plans de reprises d'activités avancées avec démarrage de machine virtuelles et dans certains cas une automatisation de la bascule d'un cluster à l'autre (Uniquement avec une réplication synchrone et un témoin de cluster).
+- D'avoir une destination vers le cloud de Nutanix avec **Xi Leap** (Attention cette solution n'est pas disponible avec les licences fournies par OVHcloud).
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -47,8 +47,8 @@ Notre plan de reprise d'activité au travers de **Nutanix Leap** sera mis en pla
 - Lan d'administration du cluster en France : **192.168.0.0/24**.
 - Lan d'administration du cluster au Canada : **192.168.10.0/24**.
 
-- Lan de production pour les machines virtuelles commun aux deux clusters **192.168.50.0/24**. sur le VLAN 50
-- Lan de test commun aux deux clusters **192.168.51.0/25** sur le VLAN 51
+- Lan de production pour les machines virtuelles commun aux deux clusters **192.168.50.0/24**. sur le VLAN 50.
+- Lan de test commun aux deux clusters **192.168.51.0/25** sur le VLAN 51.
 
 ### Mise en service de Nutanix Leap
 
@@ -115,7 +115,7 @@ Depuis le menu principal, cliquez sur `Availability Zones`{.action} sous `Admini
 
 ![Connect clusters 01](images/03-connect-cluster01.png){.thumbnail}
 
-cliquez sur `Connect to Availability Zone`{.action}.
+Cliquez sur `Connect to Availability Zone`{.action}.
 
 ![Connect clusters 01](images/03-connect-cluster02.png){.thumbnail}
 
@@ -217,7 +217,7 @@ Cliquez sur `Save`{.action}.
 Dans **Recovery location** choisissez ces options :
 
 - **Location** : `PC_192.168.0.222` qui correspond à zone contenant le cluster distant.
-- **Cluster** : `Cluster de destination à l'intérieur de la zone de destination zone`.
+- **Cluster** : `Cluster de destination à l'intérieur de la zone de destination`.
 
 Cliquez sur `Save`{.action}.
 
@@ -255,11 +255,11 @@ La stratégie de protection est activée et apparait dans le tableau de bord des
 
 #### Présentation 
 
-En fonction du choix de réplication et de la disponibilité d'un témoin de cluster supplémentaire il est possible d'avoir ces possibilités lors de la mise en service d'un plan de reprise d'activité :
+IL est possible de créer des plans de reprises d'activités avec diverses options : 
 
 - Lancement manuel du plan de reprise d'activité si l'on n'a pas de témoin de cluster.
 - Automatisation du plan de reprise d'activité en réplication synchrone avec un témoin de cluster.
-- Choix du démarrage des machines virtuelles lors de l'activation du plan de reprise d'activité avec exécution d'un script.
+- Choix du démarrage des machines virtuelles lors de l'activation du plan de reprise d'activité avec la possibilité supplémentaire d'exécuter un script.
 
 Dans notre exemple ce sera un plan de reprise d'activité manuel avec le démarrage automatique des machines virtuelles.
 
@@ -331,7 +331,7 @@ Allez dans le menu `Principal` choisissez `Recovery Plans`{.action} dans la rubr
 
 ![Planned Migration 01](images/07-planned-migration01.png){.thumbnail}
 
-Sélectionnez le plan de reprise d'activité en utilisant la `case à cocher` à coté ensuite cliquez sur `Actions`{.action} pour faire apparaitre le menu.
+Sélectionnez le plan de reprise d'activité en utilisant la `case à cocher` à sa gauche ensuite cliquez sur `Actions`{.action} pour faire apparaitre le menu.
 
 ![Planned Migration 02](images/07-planned-migration02.png){.thumbnail}
 
@@ -371,7 +371,7 @@ Cliquez sur le bouton `Update`{.action}.
 
 ![Replication Inversion 03](images/08-replication-inversion03.png){.thumbnail}
 
-Positionnez-vous à gauche en dessous de `Primary Location` jusqu'a menu apparaisse. Cliquez sur `Edit`{.action}.
+Positionnez-vous à gauche en dessous de `Primary Location` jusqu'a qu'un menu apparaisse. Cliquez sur `Edit`{.action}.
 
 ![Replication Inversion 04](images/08-replication-inversion04.png){.thumbnail}
 
@@ -463,7 +463,7 @@ Ensuite cliquez sur `Done`{.action}.
 
 ![Recovery Plan Inversion 09](images/09-recovery-plan-inversion09.png){.thumbnail}
 
-Le plan de reprise d'activité est modifié pour permettre la bascule des machines virtuelles du cluster en se trouvant en France celui se trouvant au Canada. 
+Le plan de reprise d'activité est modifié pour permettre la bascule des machines virtuelles du cluster se trouvant en France vers celui se trouvant au Canada. 
 
 Si vous souhaitez revenir au fonctionnement d'origine il faudra refaire un *failover*, modifier la réplication et le plan de reprise d'activités.
 
@@ -471,7 +471,7 @@ Si vous souhaitez revenir au fonctionnement d'origine il faudra refaire un *fail
 
 #### Activation du plan de reprise d'activité suite à un incident sur le cluster d'origine
 
-Il est possible d'activer les machines virtuelles sur le cluster de destination en cas de problème sur le cluster d'origine, dans ce cas l'activation se fera avec un risque de perte données dans le cas d'une réplication asynchrone ou *nearsync*, 
+Il est possible d'activer les machines virtuelles sur le cluster de destination en cas de problème sur le cluster d'origine, dans ce cas l'activation se fera avec un risque de perte de données dans le cas d'une réplication asynchrone ou *nearsync*, 
 
 Si l'on utilise une solution de réplication synchrone aucune perte de données ne sera à déplorer.
 
