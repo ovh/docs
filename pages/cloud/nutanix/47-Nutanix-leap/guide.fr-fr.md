@@ -227,7 +227,7 @@ Cliquez sur `Add schedule`{.action}.
 
 ![Create Protection policy 05](images/05-create-protection-policy05.png){.thumbnail}
 
-Choisissez `Asynchronous dans`  **Protection Type**.
+Choisissez `Asynchronous dans` **Protection Type**.
 
 Modifiez ces options dans takes **Take Snapshot Every** par `Minutes : 15` pour faire une réplication *nearsync*.
 
@@ -273,7 +273,7 @@ Cliquez sur `Create New Recovery Plan`{.action}.
 
 ![Create Recovery Plan 02](images/06-create-recovery-plan02.png){.thumbnail}
 
-Saisisissez ces valeurs : 
+Saisissez ces valeurs : 
 
 - **Recovery Plan Name** : `nom du plan de reprise d'activité`.
 - **Primary Location** : `Local AZ` pour choisir la zone contenant le cluster local.
@@ -349,7 +349,7 @@ Saisissez `Failover`{.action} et cliquez sur le bouton `Failover`{.action}.
 
 La machine virtuelle se trouvant sur le cluster d'origine va être éteinte, une dernière synchronisation des données va être faites, ensuite la machine virtuelle disparaitra du cluster d'origine pour apparaitre et démarrer sur le cluster de destinations.
 
-Le résultat de de la migration apparait dans la colonne **Last Failover Status** avec le statut `Succeeded` si tout c'est bien passé.
+Le résultat de de la migration apparait dans la colonne **Last Failover Status** avec le statut `Succeeded` si tout s'est bien passé.
 
 ![Planned Migration 06](images/07-planned-migration06.png){.thumbnail}
 
