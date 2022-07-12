@@ -36,7 +36,7 @@ Nutanix LEAP permet :
 - Avoir mis en place une interconnexion entre deux clusters a l'aide de ces technologies par exemple :  
     + Via un VPN IPsec comme dans ce guide [Interconnexion IPsec entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/). 
     + Ou une connexion vRACK [vRack](https://www.ovh.com/fr/solutions/vrack/).
-- **Prism Central** a besoin de plus de ressources en fonction du nombre de machines virtuelles dédiées à **Prism Central**
+- **Prism Central** a besoin de plus de ressources en fonction du mode.
     + Single Mode : 4Go de RAM supplémentaires.
     + Scale Mode avec 3 machines virtuelles **Prism Central** : 8 Go de RAM supplémentaire par machines virtuelles.
 
