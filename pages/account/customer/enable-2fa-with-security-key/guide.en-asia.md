@@ -6,7 +6,7 @@ section: Security
 hidden: true
 ---
 
-**Last updated 24th June 2020**
+**Last updated 8th July 2022**
 
 ## Objective
 
@@ -23,12 +23,24 @@ Two-factor authentication via Universal Second Factor (U2F) is one of the method
 
 ## Instructions
 
+> [!warning]
+> **Addition of a new U2F key on recent versions of Chrome/Chromium**
+>
+> Adding a new U2F key is currently no longer possible on recent versions of the Chrome browser (starting with Chrome v98) and its derivatives such as Chromium.<br>
+> The use of a U2F key already added and functional is always possible on these recent versions of the browser, only the addition of a new U2F key is impossible.
+>
+> Our teams [are working to resolve this issue](https://customer-service.status-ovhcloud.com/incidents/wl6txzgvrym8). Pending a final resolution, we invite you to follow one of these two workaround methods:
+>
+> - Use another browser (such as Firefox) to add your new U2F key, then use your regular Chrome/Chromium browser to log in to the OVHcloud Control Panel as usual.
+> - Manually re-enable U2F support in your Chrome/Chromium browser. To do this, as in the image below, copy this value `chrome://flags/#u2f-security-key-api` into the browser's address bar, select `Enabled` from the right-hand drop-down menu and restart your browser.
+>
+>![2FA securitykey - Chrome](images/chrome-u2f-support.png){.thumbnail}
+
 ### Step 1: Enable two-factor authentication.
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, click your name in the top right-hand corner (1), then click your initials (2). Next, click `Security`{.action} (3) and `Enable two-factor authentication`{.action} (4).
 
 ![2FA securitykey](images/hub2FA.png){.thumbnail}
-
 
 ### Step 2: Select the security key method.
 
