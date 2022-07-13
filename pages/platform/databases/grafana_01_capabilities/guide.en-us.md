@@ -51,7 +51,7 @@ Here is an overview of the *Essential* plan capabilities:
 | ------------ | -------------------------- | ---------------- | ---------------------- |
 | *Essential*  | 1                          | No               | Public                 |
 
-The *Essential* plan offer so far an automatic  backup retention of 2 days and doesn't support private networks (vRack)
+The *Essential* plan offer an automatic  backup retention of 2 days and doesn't support private networks (vRack)
 
 #### Nodes and replicas
 
