@@ -96,7 +96,7 @@ Right now, all nodes in a given cluster must be of the same type and located in 
 
 Public networking can be used for all the offers.
 
-Private networking (vRack) is planned for *Business* and *Enterprise*.
+Private networking (vRack) is available for *Business* and *Enterprise*.
 
 When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
 
