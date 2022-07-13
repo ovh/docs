@@ -6,7 +6,11 @@ section: Bezpieczeństwo
 hidden: true
 ---
 
-**Ostatnia aktualizacja z dnia 29-05-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 08-07-2022**
 
 ## Wprowadzenie
 
@@ -23,12 +27,24 @@ Weryfikacja dwuetapowa za pomocą klucza sprzętowego Universal Second Factor (U
 
 ## W praktyce
 
+> [!warning]
+> **Dodanie nowego klucza U2F w najnowszych wersjach Chrome/Chromium**
+>
+> Dodanie nowego klucza U2F nie jest obecnie możliwe w najnowszych wersjach przeglądarki Chrome (począwszy od Chrome v98) i jej pochodnych, takich jak Chromium.<br>
+> Użycie już dodanego i funkcjonalnego klucza U2F jest zawsze możliwe w najnowszych wersjach przeglądarki. Nie można dodać jedynie nowego klucza U2F.
+>
+> Nasze zespoły [pracują nad rozwiązaniem tej nieprawidłowości](https://customer-service.status-ovhcloud.com/incidents/wl6txzgvrym8). W oczekiwaniu na ostateczne rozwiązanie problemu zalecamy zastosowanie jednej z dwóch metod obchodzenia środków:
+>
+> - Użyj innej przeglądarki (takiej jak Firefox), aby dodać nowy klucz U2F, a następnie korzystając ze zwykłej przeglądarki Chrome/Chromium zalogować się do Panelu klienta OVHcloud w sposób rutynowy.
+> - Włącz obsługę funkcji U2F w przeglądarce Chrome/Chromium. W tym celu, podobnie jak na poniższym obrazie, skopiuj tę wartość `chrome://flags/#u2f-security-key-api` do paska adresowego przeglądarki, wybierz `Enabled` z menu rozwijanego po prawej stronie i zrestartuj przeglądarkę.
+>
+>![2FA securitykey - Chrome](images/chrome-u2f-support.png){.thumbnail}
+
 ### Etap 1: włączenie weryfikacji dwuetapowej
 
 Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij Twoją nazwę użytkownika w prawym górnym rogu (1) i wybierz `Moje konto`{.action} (2). Następnie kliknij `Bezpieczeństwo`{.action} (3), a na koniec `Aktywuj weryfikację dwuetapową`{.action} (4).
 
 ![2FA securitykey](images/hub2FA.png){.thumbnail}
-
 
 ### Etap 2: Wybór metody z wykorzystaniem klucza sprzętowego
 

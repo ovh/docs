@@ -43,15 +43,15 @@ You can use your browser to access your Grafana cluster.
 
 ### Plans
 
-The only plan available so far is *Essential*.
+The only plan available is *Essential*.
 
-Here is an overview of the various plans' capabilities:
+Here is an overview of the *Essential* plan capabilities:
 
 | Plan         | Number of nodes by default | Additional nodes | Network                |
 | ------------ | -------------------------- | ---------------- | ---------------------- |
 | *Essential*  | 1                          | No               | Public                 |
 
-Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network, read replicas and backup retention.
+The *Essential* plan offer an automatic  backup retention of 2 days and doesn't support private networks (vRack)
 
 #### Nodes and replicas
 

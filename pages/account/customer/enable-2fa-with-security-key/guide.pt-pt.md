@@ -6,7 +6,11 @@ section: Segurança
 hidden: true
 ---
 
-**Última atualização: 16/04/2020**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 08/07/2022**
 
 ## Objetivo
 
@@ -23,12 +27,24 @@ A dupla autenticação com chave de segurança Universal Second Factor (U2F) é 
 
 ## Instruções
 
+> [!warning]
+> **Adição de uma nova chave U2F nas versões recentes de Chrome/Chromium**
+>
+> A adição de uma nova chave U2F já não é possível nas versões recentes do browser Chrome (a partir de Chrome v98) e seus derivados como Chromium.<br>
+> A utilização de uma chave U2F já adicionada e funcional é sempre possível nestas versões recentes do browser, apenas a adição de uma nova chave U2F é impossível.
+>
+> As nossas equipas [trabalham para resolver este problema](https://customer-service.status-ovhcloud.com/incidents/wl6txzgvrym8). Enquanto aguardamos uma resolução definitiva, convidamo-lo a seguir um destes dois métodos de contornar:
+>
+> - Utilize outro browser (como o Firefox) para adicionar a sua nova chave U2F e, a seguir, utilize o seu browser Crome/Chromium habitual para se ligar à Área de Cliente OVHcloud da forma habitual.
+> - Reative o suporte da funcionalidade U2F no seu browser Chrome/Chromium. Para isso, como na imagem abaixo, copie este valor `chrome://flags/#u2f-security-key-api` para a barra de endereços do browser, selecione Enabled` no menu pendente à direita e reinicie o seu browser.
+>
+>![2FA securitykey - Chrome](images/chrome-u2f-support.png){.thumbnail}
+
 ### Etapa 1: ativar a dupla autenticação
 
 Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no seu nome no canto superior direito (1) e clique em suas iniciais (2). A seguir, clique em `Segurança`{.action} (3) e por fim em `Ativar a dupla autenticação`{.action} (4).
 
 ![2FA securitykey](images/hub2FA.png){.thumbnail}
-
 
 ### Etapa 2: Escolher o método com chave de segurança
 
