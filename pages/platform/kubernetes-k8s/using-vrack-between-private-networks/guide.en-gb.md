@@ -2,7 +2,8 @@
 title: Using vRack - Communicating between different private networks
 slug: using-vrack-between-private-networks
 excerpt: ''
-section: Technical resources
+section: Network
+order: 01
 ---
 
 **Last updated July 31<sup>st</sup>, 2021.**

@@ -1,8 +1,8 @@
 ---
 title: Working with vRack example - Communicating between different private networks
 slug: vrack-example-between-private-networks
-section: Tutorials
-order: 11
+section: Network
+order: 03
 ---
 
 

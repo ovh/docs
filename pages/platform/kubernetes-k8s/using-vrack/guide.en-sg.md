@@ -2,8 +2,8 @@
 title: Using vRack Private Network
 slug: using_vrack
 excerpt: ''
-section: User guides
-order: 8
+section: Network
+order: 00
 ---
 
 **Last updated 30th September 2021**
