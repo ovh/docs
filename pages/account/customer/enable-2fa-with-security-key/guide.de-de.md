@@ -30,8 +30,8 @@ Neben weiteren Methoden stellt Ihnen OVHcloud die Zwei-Faktor-Authentifizierung 
 > [!warning]
 > **Hinzufügen eines neuen U2F-Schlüssels in den neuesten Chrome/Chromium-Versionen**
 >
-> Ein neuer U2F-Schlüssel kann derzeit nicht mehr auf den neuesten Versionen des Chrome Browsers (von Chrome v98) und dessen Derivaten wie Chromium.<br>
-> Es ist immer möglich, einen bereits hinzugefügten und funktionalen U2F-Schlüssel für diese neueren Browserversionen zu verwenden. Es kann nur ein neuer U2F-Schlüssel nicht hinzugefügt werden.
+> Ein neuer U2F-Schlüssel kann derzeit nicht mehr auf den neuesten Versionen des Chrome Browsers (seit Chrome v98) und dessen Derivaten wie Chromium.<br>
+> Es ist noch möglich, einen bereits hinzugefügten und funktionalen U2F-Schlüssel für diese neueren Browserversionen zu verwenden. Es kann nur kein neuer U2F-Schlüssel hinzugefügt werden.
 >
 > Unsere Teams [arbeiten daran, diese Störung zu beheben](https://customer-service.status-ovhcloud.com/incidents/wl6txzgvrym8). Bis zur endgültigen Behebung möchten wir Sie bitten, eine dieser beiden Methoden zu befolgen:
 >
