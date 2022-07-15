@@ -94,7 +94,7 @@ Pour obtenir plus d’informations sur la résiliation de vos services, consulte
 ### Fermeture de compte
 
 Si vous souhaitez clôturer définitivement votre compte personnel OVHcloud, vérifiez tout d’abord qu’il ne contient pas de services actifs, de factures en attente de paiement ou de commandes en cours.<br>
-Ensuite, utilisez [ce formulaire](https://www.ovh.com/fr/protection-donnees-personnelles/exercer-vos-droits/) pour demander la suppression définitive de votre compte. Sélectionnez d'exercer le « Droit d'effacement » dans la liste des propositions.
+Ensuite, soumettez une [requête](https://ca.ovh.com/manager/#/dedicated/support/tickets/new) à notre équipe d'assistance pour demander la suppression définitive de votre compte.
 
 ## Aller plus loin <a name="gofurther"></a>
 
