@@ -1,8 +1,8 @@
 ---
-title : 'OVHcloud API & Partitioning'
-slug : api-partitioning
-excerpt: 'Découvrez ce que l'API OVHcloud fournit afin de personnaliser la configuration du partitionnement lors de l'installation de l'OS serveur'
-section : 'RAID & disques'
+title: 'OVHcloud API & Partitioning'
+slug: api-partitioning
+excerpt: "Découvrez ce que l'API OVHcloud fournit afin de personnaliser la configuration du partitionnement lors de l'installation de l'OS serveur"
+section: 'RAID & disques'
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->
