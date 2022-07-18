@@ -10,7 +10,7 @@ order : 02
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 02/05/2022**
+**Última actualización: 18/07/2022**
 
 ## Objetivo
 
@@ -29,7 +29,7 @@ Esta guía explica los requisitos necesarios para una buena gestión de su cuent
 
 #### Proteja su cuenta
 
-- [Cree una contraseña segura](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/#generar-una-contrasena-adecuada) para garantizar la confidencialidad de su cuenta.
+- [Cree una contraseña segura](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/#generar-una-contrasena-adecuada) para garantizar la confidencialidad de su cuenta.
 
 - [Active la doble autenticación](https://docs.ovh.com/us/es/customer/proteger-su-cuenta-con-una-2FA/) para evitar todo acceso fraudulento al área de cliente.
 
@@ -98,7 +98,7 @@ Para más información sobre la baja de sus servicios, consulte la guía [Cómo 
 ### Cierre de cuenta
 
 Si quiere cerrar definitivamente su cuenta personal de OVHcloud, compruebe que no contenga servicios activos, facturas pendientes de pago o pedidos en curso.<br>
-A continuación, envíe una [solicitud](https://ca.ovh.com/manager/#/dedicated/support/tickets/new) a nuestro equipo de asistencia para pedir que se elimine su cuenta de forma permanente.
+A continuación, abra un [solicitud de asistencia](https://ca.ovh.com/manager/#/dedicated/support/tickets/new) a nuestro equipo de soporte para solicitar la eliminación definitiva de su cuenta.
 
 ## Más información <a name="gofurther"></a>
 

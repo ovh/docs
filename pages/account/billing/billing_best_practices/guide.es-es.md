@@ -29,7 +29,7 @@ Esta guía explica los requisitos necesarios para una buena gestión de su cuent
 
 #### Proteja su cuenta
 
-- [Cree una contraseña segura](https://docs.ovh.com/es/customer/gestionar-su-contrase%c3%b1a/#generar-una-contrasena-adecuada) para garantizar la confidencialidad de su cuenta.
+- [Cree una contraseña segura](https://docs.ovh.com/es/customer/gestionar-su-contrasena/#generar-una-contrasena-adecuada) para garantizar la confidencialidad de su cuenta.
 
 - [Active la doble autenticación](https://docs.ovh.com/es/customer/proteger-su-cuenta-con-una-2FA/) para evitar todo acceso fraudulento al área de cliente.
 
