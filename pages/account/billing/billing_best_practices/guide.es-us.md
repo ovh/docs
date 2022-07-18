@@ -98,7 +98,7 @@ Para más información sobre la baja de sus servicios, consulte la guía [Cómo 
 ### Cierre de cuenta
 
 Si quiere cerrar definitivamente su cuenta personal de OVHcloud, compruebe que no contenga servicios activos, facturas pendientes de pago o pedidos en curso.<br>
-A continuación, utilice [este formulario](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos/) para solicitar la eliminación definitiva de su cuenta. Seleccione ejercer el "Derecho de supresión" en la lista de propuestas.
+A continuación, envíe una [solicitud](https://ca.ovh.com/manager/#/dedicated/support/tickets/new) a nuestro equipo de asistencia para pedir que se elimine su cuenta de forma permanente.
 
 ## Más información <a name="gofurther"></a>
 

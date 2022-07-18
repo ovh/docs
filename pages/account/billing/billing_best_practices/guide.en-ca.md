@@ -6,7 +6,7 @@ section: Managing the renewal of services
 order: 02
 ---
 
-**Last updated 2nd May 2022**
+**Last updated 18th July 2022**
 
 ## Objective
 
@@ -94,7 +94,7 @@ To get more information about the termination of your services, consult the [How
 ### Account closure
 
 If you want to definitely close your OVHcloud personal account, first check that it does not contain any active services, pending invoices or ongoing orders.<br>
-Then, use [this form](https://www.ovh.co.uk/personal-data-protection/exercise-your-rights) to ask for the permanent deletion of your account. Select to exercise the "Right of deletion" from the list of proposals.
+Then, submit a [request](https://ca.ovh.com/manager/#/dedicated/support/tickets/new) to our support teams to ask for the permanent deletion of your account. 
 
 ## Go further <a name="gofurther"></a>
 
