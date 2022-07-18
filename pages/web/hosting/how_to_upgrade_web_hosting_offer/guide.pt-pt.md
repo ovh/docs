@@ -69,7 +69,7 @@ De seguida, selecione a sua nova subscrição e a sua duração. Valide os contr
 >
 > **Caso particular**
 >
-> No âmbito de uma alteração da oferta [Start10M](https://docs.ovh.com/pt/hosting/activer-start10m/), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) lhe será proposta. No entanto, após uma mudança para a oferta Perso, poderá fazer evoluir esta última para o conjunto das nossas ofertas de alojamento Web (https://www.ovhcloud.com/pt/web-hosting/).
+> No âmbito de uma alteração da oferta [Start10M](https://docs.ovh.com/pt/hosting/ativar-start10m/), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) lhe será proposta. No entanto, após uma mudança para a oferta Perso, poderá fazer evoluir esta última para o conjunto das nossas ofertas de alojamento Web (https://www.ovhcloud.com/pt/web-hosting/).
 
 ### Verificar que o seu alojamento é compatível com uma oferta inferior <a name="checks"></a>
 

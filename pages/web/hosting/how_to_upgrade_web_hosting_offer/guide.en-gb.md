@@ -65,7 +65,7 @@ Then select your new subscription and its duration. Confirm the corresponding co
 >
 > **Special case**
 >
-> If you wish to upgrade your [Start10M plan](https://docs.ovh.com/en-gb/hosting/activer-start10m/), only the [Personal plan](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) will be available. However, once you have switched to the Personal hosting plan, you can migrate it to all of our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/).
+> If you wish to upgrade your [Start10M plan](https://docs.ovh.com/gb/en/hosting/activate-start10m/), only the [Personal plan](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) will be available. However, once you have switched to the Personal hosting plan, you can migrate it to all of our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/).
 
 ### Checking that your hosting plan is compatible with a lower plan <a name="checks"></a>
 

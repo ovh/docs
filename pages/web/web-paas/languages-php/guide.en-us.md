@@ -178,7 +178,7 @@ because the dependencies aren't yet present.
 To resolve this, you have two options:
 
 - Have your script `include` dependencies instead of `require` and fail gracefully if the dependencies aren't there.
-- Enable preloading with a variable that [isn't available during the build](../../development-variables/#setting-variables). Then preloading happens only on deploy.
+- Enable preloading with a variable that [isn't available during the build](../development-variables/#setting-variables). Then preloading happens only on deploy.
 
 ## FFI
 

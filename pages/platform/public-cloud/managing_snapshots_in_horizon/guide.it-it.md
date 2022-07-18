@@ -23,7 +23,7 @@ Creando degli snapshot, puoi effettuare una copia della tua istanza o ripristina
 ## Prerequisiti
 
 - Aver [creato un'istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-3-crea-unistanza) nel tuo account OVHcloud
-- [Accedere all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/)
+- [Accedere all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/horizon/)
 
 ## Procedura
 

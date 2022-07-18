@@ -14,7 +14,7 @@ order: 1
 
 ## Objectif
 
-La fonctionnalité [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/fr/lp/byoip) vous permet d'utiliser les plages d'adresses IP que vous possédez déjà en tant qu'adresses IP fail-over, directement sur le réseau et les produits OVHcloud.
+La fonctionnalité [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/fr/network/byoip/) vous permet d'utiliser les plages d'adresses IP que vous possédez déjà en tant qu'adresses IP fail-over, directement sur le réseau et les produits OVHcloud.
 
 Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taille /24 et se comporteront comme une adresse [IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/) OVHcloud.
 
