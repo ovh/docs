@@ -69,7 +69,7 @@ Seleziona il tuo nuovo abbonamento e la sua durata. Conferma i contratti e clicc
 >
 > **Caso particolare**
 > 
-> In caso di modifica dell'offerta [Start10M](https://docs.ovh.com/it/hosting/activer-start10m/), ti sarà offerta solo [l'offerta Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/). Tuttavia, in seguito a una modifica all'offerta Personale, potrai effettuare l'upgrade a tutte le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/).
+> In caso di modifica dell'offerta [Start10M](https://docs.ovh.com/it/hosting/attivare_start10m/), ti sarà offerta solo [l'offerta Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/). Tuttavia, in seguito a una modifica all'offerta Personale, potrai effettuare l'upgrade a tutte le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/).
 
 ### Verifica che il tuo hosting sia compatibile con un'offerta inferiore <a name="checks"></a>
 

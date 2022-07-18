@@ -9,7 +9,7 @@ section: Gestione da Horizon
 
 ## Obiettivo
 
-Dopo aver creato un utente OpenStack e generato una password di accesso seguendo la guida [Creare un utente per accedere a Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/){.external}, è possibile effettuarne la modifica attraverso l'interfaccia Horizon. È importante ricordare che questa operazione comporta l’annullamento delle precedenti credenziali.
+Dopo aver creato un utente OpenStack e generato una password di accesso seguendo la guida [Creare un utente per accedere a Horizon](https://docs.ovh.com/it/public-cloud/horizon/){.external}, è possibile effettuarne la modifica attraverso l'interfaccia Horizon. È importante ricordare che questa operazione comporta l’annullamento delle precedenti credenziali.
 
 **Questa guida ti mosta come personalizzare una password utente dall’interfaccia Horizon.**
 

@@ -22,7 +22,7 @@ In questo modo è possibile, ad esempio, importare le immagini delle macchine vi
 
 ## Prerequisiti
 
-- [Crea un utente per accedere a Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/)
+- [Crea un utente per accedere a Horizon](https://docs.ovh.com/it/public-cloud/horizon/)
 - Accedi al menu Immagini dell'interfaccia OpenStack Horizon
 
 ![public-cloud](images/horizon_menu.png){.thumbnail}

@@ -47,9 +47,9 @@ We will use two Nutanix clusters in OVHcloud data centres, one in Canada and the
 - **192.168.0.0/24** for the cluster in a data centre in France.
 - **192.168.10.0/24** for the cluster in a Canadian data centre.
 
-If you need help setting up an IPsec VPN, please refer to our guide on [interconnecting two Nutanix clusters through an IPsec VPN](https://docs.ovh.com/ie/nutanix/ipsec-interconnection/).
+If you need help setting up an IPsec VPN, please refer to our guide on [interconnecting two Nutanix clusters through an IPsec VPN](https://docs.ovh.com/ie/en/nutanix/ipsec-interconnection/).
 
-Connect via **Prism Element** to the cluster in France from **Prism Central**, as shown in this documentation: [Nutanix Hyperconvergence](https://docs.ovh.com/ie/nutanix/nutanix-hci/).
+Connect via **Prism Element** to the cluster in France from **Prism Central**, as shown in this documentation: [Nutanix Hyperconvergence](https://docs.ovh.com/ie/en/nutanix/nutanix-hci/).
 
 Click `Data Protection`{.action} from the `Home`{.action} menu.
 
@@ -241,9 +241,9 @@ The virtual machines will appear in the **Prism Element** console in the state o
 
 ## Go further
 
-[Disaster Recovery Plan in Nutanix](https://docs.ovh.com/ie/nutanix/disaster-recovery-plan-overview/)
+[Disaster Recovery Plan in Nutanix](https://docs.ovh.com/ie/en/nutanix/disaster-recovery-plan-overview/)
 
-[IPsec interconnection between two sites](https://docs.ovh.com/ie/nutanix/ipsec-interconnection/)
+[IPsec interconnection between two sites](https://docs.ovh.com/ie/en/nutanix/ipsec-interconnection/)
 
 [Nutanix Documentation on Data Protection and Disaster Recovery](https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2005-Data-Protection:top-backup-and-disaster-recovery-on-remote-sites.html)
 

@@ -50,7 +50,7 @@ ResNet has many variants that work on the same concept but have different number
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-asia/public-cloud/) in your OVHcloud account
+- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 - A [user](https://docs.ovh.com/asia/en/publiccloud/ai/users/) for AI Notebooks
 
 ## Instructions

@@ -14,7 +14,7 @@ order: 1
 
 ## Objective
 
-The [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/en-gb/lp/byoip) feature allows you to use IP addresses ranges that you already own, as failover IPs directly on the OVHcloud network and products.
+The [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/en-gb/network/byoip/) feature allows you to use IP addresses ranges that you already own, as failover IPs directly on the OVHcloud network and products.
 
 These IP addresses will be imported in the form of a /24 IP block size and will behave like a regular OVHcloud [failover IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/) block product.
 

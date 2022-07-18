@@ -16,7 +16,7 @@ With Logs Data Platform, there are 3 ways to query your logs.
 - The [Graylog API](https://gra1.logs.ovh.com/api/api-browser/global/index.html#!/search47universal47relative/searchRelative){.external}
 - The [OpenSearch API](https://opensearch.org/docs/latest/opensearch/query-dsl/index/){.external} located at the port 9200 of your cluster (find its address in the **Home** Page) against your [alias](../using-kibana-with-logs){.ref}.
 
-So you can pop up a [Kibana](../using-kibana-with-logs){.ref} or a [Grafana](../using-grafana-with-logs){.ref} or even [a terminal Dashboard for Graylog](https://github.com/Graylog2/cli-dashboard){.external}.
+So you can pop up a [Grafana](../using-grafana-with-logs){.ref} or even [a terminal Dashboard for Graylog](https://github.com/Graylog2/cli-dashboard){.external}.
 
 All these accesses are secured by your username and password. But what if you don't want to put your Logs Data Platform credentials everywhere? You can just use tokens to access all these endpoints and revoke them anytime you want. This tutorial is here to tell you how.
 
@@ -208,7 +208,7 @@ To issue a search against the OpenSearch API, you also use the same credentials.
 $ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token "https://<your_cluster>.logs.ovh.com:9200/your_alias/_search?pretty"
 ```
 
-This call will launch a quick search (to retrieve the count and a sample of your documents) against the alias **your_alias**. Replace the alias by the one you have setup in you Logs Data Platform console. Note that these credentials are usable in place of your account credentials in Kibana and Grafana (or any tool that support Basic Authentication with OpenSearch).
+This call will launch a quick search (to retrieve the count and a sample of your documents) against the alias **your_alias**. Replace the alias by the one you have setup in you Logs Data Platform console. Note that these credentials are usable in place of your account credentials in Grafana (or any tool that supports Basic Authentication with OpenSearch).
 
 The only place you cannot use your token is the Graylog Web Interface.
 
