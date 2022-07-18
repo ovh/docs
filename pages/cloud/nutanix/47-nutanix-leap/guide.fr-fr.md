@@ -16,9 +16,9 @@ Ce guide vous détaille comment mettre en place des réplications et des plans d
 
 Nutanix Leap permet :
 
-- de faire des réplication asynchrones et synchrones en fonction du pack de licence choisi;
-- de tester les réplications;
-- de faire des plans de reprises d'activités avancés avec le démarrage de machine virtuelles et, dans certains cas, une automatisation de la bascule d'un cluster à l'autre (uniquement avec une réplication synchrone et un témoin de cluster);
+- de faire des réplication asynchrones et synchrones en fonction du pack de licence choisi ;
+- de tester les réplications ;
+- de faire des plans de reprises d'activités avancés avec le démarrage de machine virtuelles et, dans certains cas, une automatisation de la bascule d'un cluster à l'autre (uniquement avec une réplication synchrone et un témoin de cluster) ;
 - d'avoir une destination vers le cloud de Nutanix avec **Xi Leap** (attention, cette solution n'est pas disponible avec les licences fournies par OVHcloud).
 
 > [!warning]
@@ -189,8 +189,8 @@ Cliquez sur `Save`{.action}.
 
 Une stratégie de protection crée une réplication planifiée entre deux *Availability zones*. Vous pouvez choisir ce type de planning en fonction de la licence dont vous disposez : 
 
-- asynchrone toutes les heures;
-- *nearsync* entre 1 & 15 minutes;
+- asynchrone toutes les heures ;
+- *nearsync* entre 1 & 15 minutes ;
 - synchrone avec un délai de 0 secondes (ce mode nécessite une latence réseau inférieure à 5ms entre les deux clusters).
 
 Depuis le menu principal, cliquez sur `Protection Policies`{.action} sous `Data Protection`.
@@ -214,14 +214,14 @@ Cliquez sur `Save`{.action}.
 
 Dans le cadre **Recovery location**, choisissez ces options :
 
-- **Location** : `Zone du cluster distant` 
+- **Location** : `Zone du cluster distant`.
 - **Cluster** : `Cluster de destination`.
 
 Cliquez sur `Save`{.action}.
 
 ![Create Protection policy 04](images/05-create-protection-policy04.png){.thumbnail}
 
-Cliquez ensuitensur `+ Add schedule`{.action}.
+Cliquez ensuite sur `+ Add schedule`{.action}.
 
 ![Create Protection policy 05](images/05-create-protection-policy05.png){.thumbnail}
 
