@@ -35,7 +35,7 @@ Via **Prism Element**, il est possible :
 ## Prérequis
 
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté à vos clusters via **Prism Central**.
 - Avoir mis en place une interconnexion entre deux clusters, par exemple via un VPN IPsec.
 
@@ -46,9 +46,9 @@ Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenters OVHc
 - **192.168.0.0/24** pour le cluster se trouvant dans un datacenter en France.
 - **192.168.10.0/24** pour le cluster se trouvant dans un datacenter au Canada.
 
-Si vous souhaitez de l'aide concernant la mise en place d'un VPN IPsec, consulter notre guide sur l'[interconnexion de deux clusters Nutanix au travers d'un VPN IPsec](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/).
+Si vous souhaitez de l'aide concernant la mise en place d'un VPN IPsec, consulter notre guide sur l'[interconnexion de deux clusters Nutanix au travers d'un VPN IPsec](https://docs.ovh.com/ca/fr/nutanix/ipsec-interconnection/).
 
-Connectez-vous via **Prism Element** au cluster en France à partir de **Prism Central**, comme indiqué dans cette documentation : [Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/).
+Connectez-vous via **Prism Element** au cluster en France à partir de **Prism Central**, comme indiqué dans cette documentation : [Hyper-convergence Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/).
 
 Cliquez sur `Data Protection`{.action} depuis le menu `Home`{.action}.
 
@@ -240,9 +240,9 @@ Les machines virtuelles apparaîtront dans la console de **Prism Element** dans 
 
 ## Aller plus loin
 
-[Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
+[Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/ca/fr/nutanix/disaster-recovery-plan-overview/)
 
-[Connexion IPsec](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
+[Connexion IPsec](https://docs.ovh.com/ca/fr/nutanix/ipsec-interconnection/)
 
 [Documentation Nutanix sur Data Protection and Disaster Recovery](https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2005-Data-Protection:top-backup-and-disaster-recovery-on-remote-sites.html)
 
