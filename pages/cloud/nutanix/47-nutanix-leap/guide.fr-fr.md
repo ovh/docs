@@ -304,7 +304,7 @@ Sur le site primaire, choisissez ces options :
 - **Production** : `VLAN de production`.
 - **Test Failback** : `VLAN de test`. 
 
-Sur le site de reprise choisissez ces options :
+Sur le site de reprise, choisissez ces options :
 
 - **Production** : `VLAN de production`.
 - **Test Failback** : `VLAN de test`. 
