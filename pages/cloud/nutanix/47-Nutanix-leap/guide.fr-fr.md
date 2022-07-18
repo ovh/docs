@@ -6,7 +6,7 @@ section: Plan de reprise d'activité
 order: 05
 ---
 
-**Dernière mise à jour le 12/07/2022**
+**Dernière mise à jour le 18/07/2022**
 
 ## Objectif
 
@@ -55,7 +55,7 @@ Notre plan de reprise d'activité au travers de **Nutanix Leap** sera mis en pla
 #### Ajout d'une adresse IP en iSCSI sur chaque cluster 
 Avant d'activer **Nutanix Leap** il est nécessaire de rajouter une adresse IP pour les connexions iSCSI sur chacun des clusters.
 
-Connectez-vous à **Prism Element** au travers de **Prism Central** sur le cluster se trouvant en France, pour vous aider vous pouvez utiliser ce guide [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/).
+Connectez-vous à **Prism Element** au travers de **Prism Central** sur le cluster se trouvant en France, vous pouvez utiliser ce guide [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) pour vous aider.
 
 Au travers du tableau de bord de **Prism Element** en haut à gauche cliquez sur `Le nom du cluster`{.action}.
 
@@ -65,7 +65,7 @@ Saisissez une `adresse IP non utilisée du réseau d'administration ` dans **iSC
 
 ![00 Add iSCSI address in FRANCE01](images/00-isci-add-address-france02.png){.thumbnail}
 
-Allez sur le cluster se trouvant au CANADA avec **Prism Central** pour effectuer la même opération qu'en France.
+Allez sur le cluster se trouvant au CANADA avec **Prism Central** et effectuez la même opération qu'en France.
 
 Dans le tableau de bord de **Prism Element** en haut à gauche cliquez sur `Le nom du cluster`{.action}.
 
@@ -143,7 +143,7 @@ Depuis le menu principal, cliquez sur `Availability Zones`{.action} dans le sous
 ### Mise en place d'une réplication à partir du Canada vers la France.
 
 > [!warning]
-> Les machines virtuelles qui seront protégées avec **Nutanix Leap** ne doivent pas être membre d'un **Domain Protection** créé à partir de **Prism Element**. Il existe une procédure sur le site de Nutanix pour effectuer une migration. 
+> Les machines virtuelles qui seront protégées avec **Nutanix Leap** ne doivent pas être membre d'un **Domain Protection** créé à partir de **Prism Element**. Il existe une procédure sur le site de Nutanix pour effectuer cette migration [Migration depuis un Domain Protection](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:ecd-ecdr-migratevm-protectiondomaintoprotectionpolicy-pc-t.html). 
 >
 
 #### Création d'une catégorie contenant les machines virtuelles à répliquer
@@ -189,7 +189,7 @@ cliquez sur `Save`{.action}.
 
 #### Création de la stratégie de protection
 
-Une stratégie de protection consiste à une connexion entre deux *Availability zones* avec un planning de réplication :
+Une stratégie de protection crée une réplication planifiée entre deux *Availability zones* , vous pouvez choisir ce type de planning en fonction de la licence que vous avez : 
 
 - asynchrone toutes les heures
 - *nearsync* entre 1 & 15 minutes
@@ -259,7 +259,7 @@ IL est possible de créer des plans de reprises d'activités avec diverses optio
 
 - Lancement manuel du plan de reprise d'activité si l'on n'a pas de témoin de cluster.
 - Automatisation du plan de reprise d'activité en réplication synchrone avec un témoin de cluster.
-- Choix du démarrage des machines virtuelles lors de l'activation du plan de reprise d'activité avec la possibilité supplémentaire d'exécuter un script.
+- Choix du démarrage des machines virtuelles lors de l'activation du plan de reprise d'activité avec la possibilité d'exécuter un script.
 
 Dans notre exemple ce sera un plan de reprise d'activité manuel avec le démarrage automatique des machines virtuelles.
 
@@ -287,13 +287,13 @@ Cliquez sur `Add Entities`{.action}.
 
 ![Create Recovery Plan 04](images/06-create-recovery-plan04.png){.thumbnail}
 
-Cochez la `case`{.action} à côté des machines virtuelles qui font partie du plan de reprise d'activité.
+Cochez la `case`{.action} à côté de la machine virtuelle qui fait partie du plan de reprise d'activité.
 
 Ensuite cliquez sur `Add`{.action}.
 
 ![Create Recovery Plan 05](images/06-create-recovery-plan05.png){.thumbnail}
 
-Cochez la `case`{.action} à coté des machines virtuelles qui doivent démarrer automatiquement lors de l'activation du plan de reprise d'activité.
+Cochez la `case`{.action} à coté de la machine virtuelle qui doit démarrer automatiquement lors de l'activation du plan de reprise d'activité.
 
 Ensuite cliquez sur `Next`{.action}. 
 
@@ -471,7 +471,7 @@ Ensuite cliquez sur `Done`{.action}.
 
 Le plan de reprise d'activité est modifié pour permettre la bascule des machines virtuelles du cluster se trouvant en France vers celui se trouvant au Canada. 
 
-Si vous souhaitez revenir au fonctionnement d'origine il faudra refaire un *failover*, modifier la réplication et le plan de reprise d'activités.
+Si vous souhaitez revenir au fonctionnement d'origine il faudra refaire un *failover*, modifier la réplication et le plan de reprise d'activité.
 
 ![Recovery Plan Inversion 10](images/09-recovery-plan-inversion10.png){.thumbnail}
 
