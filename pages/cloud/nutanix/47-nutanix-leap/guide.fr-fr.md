@@ -2,7 +2,7 @@
 title: Réplication avancée avec Leap
 slug: leap-replication
 excerpt: "Mise en place de réplications avancées avec Leap"
-section: Plan de reprise d'activité
+section: Plan de reprise d'Activité
 order: 05
 ---
 
@@ -140,7 +140,7 @@ Depuis le menu principal, cliquez sur `Availability Zones`{.action} dans le sous
 
 ![Connect clusters 03](images/03-connect-cluster05.png){.thumbnail}
 
-### Mise en place d'une réplication à partir du Canada vers la France.
+### Mise en place d'une réplication à partir du Canada vers la France
 
 > [!warning]
 > Les machines virtuelles qui seront protégées avec **Nutanix Leap** ne doivent pas être membres d'un **Domain Protection** créé à partir de **Prism Element**. Il existe une procédure sur le site de Nutanix pour effectuer cette migration : [Migration depuis un Domain Protection](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:ecd-ecdr-migratevm-protectiondomaintoprotectionpolicy-pc-t.html){.external}. 
@@ -373,14 +373,14 @@ Cliquez sur le bouton `Update`{.action}.
 
 ![Replication Inversion 03](images/08-replication-inversion03.png){.thumbnail}
 
-Positionnez-vous à gauche en dessous de `Primary Location` jusqu'a qu'un menu apparaisse. Cliquez sur `Edit`{.action}.
+Positionnez-vous à gauche en dessous de `Primary Location` jusqu'à ce qu'un menu apparaisse. Cliquez sur `Edit`{.action}.
 
 ![Replication Inversion 04](images/08-replication-inversion04.png){.thumbnail}
 
 Modifiez les informations suivantes dans le cadre **Primary Location** :
 
 - **Location** : `Local AZ`
-- **cluster** : `cluster de la zone locale`
+- **Cluster** : `cluster de la zone locale`
 
 Cliquez ensuite sur `Save`{.action}.
 
@@ -485,7 +485,7 @@ Dans le menu principal, choisissez `Recovery Plan`{.action} dans le sous menu `D
 
 ![Unplanned Recovery 01](images/10-unplanned-recovery01.png){.thumbnail}
 
-Sélectionnez le plan de reprise d'activité avec `la case à cocher`{.action} et cliquez sur le bouton `Actions`{.action} 
+Sélectionnez le plan de reprise d'activité avec `la case à cocher`{.action} et cliquez sur le bouton `Actions`{.action}.
 
 ![Unplanned Recovery 02](images/10-unplanned-recovery02.png){.thumbnail}
 
