@@ -27,7 +27,7 @@ I file binari precompilati sono disponibili nella maggior parte delle distribuzi
 
 ### ID OpenStack
 
-Per generare l'identificativo cliente e la password OpenStack, consulta questa [guida](../../../public-cloud/crea_un_utente_per_accedere_a_horizon/).
+Per generare l'identificativo cliente e la password OpenStack, consulta questa [guida](https://docs.ovh.com/it/public-cloud/horizon/).
 
 ### TenantName
 

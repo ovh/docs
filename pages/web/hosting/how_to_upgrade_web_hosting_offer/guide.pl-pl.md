@@ -69,7 +69,7 @@ Następnie wybierz Twój nowy abonament oraz czas jego trwania. Zatwierdź odpow
 >
 > **Przypadek szczególny**
 >
-> W związku ze zmianą oferty [Start10M](https://docs.ovh.com/pl/hosting/activer-start10m/) pojawi się tylko [oferta Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/). Po zmianie oferty Perso będziesz mógł ją zmienić na wszystkie nasze [pakiety hostingowe] (https://www.ovhcloud.com/pl/web-hosting/).
+> W związku ze zmianą oferty [Start10M](https://docs.ovh.com/pl/hosting/wlaczanie_start10m/) pojawi się tylko [oferta Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/). Po zmianie oferty Perso będziesz mógł ją zmienić na wszystkie nasze [pakiety hostingowe] (https://www.ovhcloud.com/pl/web-hosting/).
 
 ### Sprawdź, czy Twój hosting jest kompatybilny z mniejszą ofertą <a name="checks"></a>
 

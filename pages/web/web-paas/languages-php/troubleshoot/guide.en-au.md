@@ -96,7 +96,7 @@ To address the issue, you can:
 
 - Lower the memory consumption of each request so that the amount of PHP workers gets automatically raised. nThis can be customized with the `runtime.sizing_hints.request_memory` key in your `.platform.app.yaml` file. For more details, consult [PHP-FPM sizing](../fpm/).
 - Add a CDN.
-- Set up [HTTP caching](../../bestpractices/http-caching).
+- Set up [HTTP caching](../../bestpractices-http-caching/).
 - Follow the global [performance tuning recommendations](../tuning/).
 - Remove stale plugins and extensions when using a CMS.
 - Upgrade the container size to get more resources.

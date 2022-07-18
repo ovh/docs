@@ -17,7 +17,7 @@ OpenSearch is the star component of our platform, making it possible to use [Ope
 ## OpenSearch endpoint
 
 
-The OpenSearch endpoint is a dedicated index where you can send a JSON document. The port used is the **9200**, the same HTTP port used for all other OpenSearch API of Logs Data Platform. The only field needed are the **X-OVH-TOKEN** and an extra field (any custom field). Don't hesitate to go to the [Quick Start documentation](../quick_start){.ref} if you are not familiar with this notion. This document log will be transformed into a valid GELF log and any missing field will be filled automatically. In order to respect the GELF convention, you can also use all the [GELF format reserved fields](https://docs.graylog.org/docs/gelf){.external}. Here is one example of the minimal message you can send:
+The OpenSearch endpoint is a dedicated index where you can send a JSON document. The port used is the **9200**, the same HTTP port used for all other OpenSearch API of Logs Data Platform. The only field needed are the **X-OVH-TOKEN** and an extra field (any custom field). Don't hesitate to go to the [Quick Start documentation](../quick-start){.ref} if you are not familiar with this notion. This document log will be transformed into a valid GELF log and any missing field will be filled automatically. In order to respect the GELF convention, you can also use all the [GELF format reserved fields](https://docs.graylog.org/docs/gelf){.external}. Here is one example of the minimal message you can send:
 
 ```shell-session
 $ curl -H 'Content-Type: application/json' -u '<user>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/message -d '{ "X-OVH-TOKEN" : "7f00cc33-1a7a-4464-830f-91be90dcc880" , "test_field" : "OVHcloud"}'
