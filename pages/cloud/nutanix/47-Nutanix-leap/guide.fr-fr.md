@@ -513,7 +513,7 @@ La machine virtuelle membre du plan de reprise d'activité va démarrer sur le c
 
 [Interconnexion IPsec entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
 
-[vRack](https://www.ovh.com/fr/solutions/vrack/)
+[OVHcloud vRack](https://www.ovh.com/fr/solutions/vrack/)
 
 [Documentation Nutanix LEAP](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6_1)
 
