@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 11/03/2022**
+**Dernière mise à jour le 18/07/2022**
 
 ## Objectif
 
@@ -60,14 +60,6 @@ Si vous devez modifier le schéma de partitionnement de votre système d'exploit
 ![Personnaliser la configuration des partitions](images/SSH_02.png){.thumbnail}
 
 Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder à la page de résumé.
-
-#### Installation du Real Time Monitoring (facultatif) <a name="installrtm"></a>
-
-Si vous avez sélectionné un système d'exploitation compatible GNU/Linux, l'option d'activation de la surveillance en temps réel (RTM pour Real Time Monitoring) du serveur s'affiche.
-
-![RTM](images/reinstalling-your-server-04.png){.thumbnail}
-
-Réglez le curseur sur `Activer`{.action} pour l'installer. Pour en savoir plus sur la fonctionnalité RTM, consultez notre guide « [Installer le Real Time Monitoring (RTM)](../installer-rtm/) ».
 
 #### Ajout d'une clé SSH (facultatif)
 

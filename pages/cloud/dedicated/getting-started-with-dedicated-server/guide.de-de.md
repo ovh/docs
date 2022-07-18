@@ -11,7 +11,7 @@ order: 1
 >
 
 
-**Letzte Aktualisierung am 11.03.2022**
+**Letzte Aktualisierung am 18.07.2022**
 
 ## Ziel
 
@@ -65,14 +65,6 @@ Wenn Sie das Partitionsschema Ihres Betriebssystems ändern müssen, setzen Sie 
 ![Konfiguration der Partitionen anpassen](images/SSH_02.png){.thumbnail}
 
 Klicken Sie nach Abschluss der Anpassungen auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen.
-
-#### Installation des Real Time Monitoring (optional) <a name="installrtm"></a>
-
-Wenn Sie ein kompatibles GNU/Linux-Betriebssystem ausgewählt haben, erscheint die Option zur Aktivierung der Echtzeit-Überwachung (Real Time Monitoring) des Servers.
-
-![RTM](images/reinstalling-your-server-04.png){.thumbnail}
-
-Stellen Sie den Slider auf `Aktivieren`{.action}, um RTM auf dem Server zu installieren. Mehr Informationen zur RTM-Funktion finden Sie in unserer Anleitung [zur manuellen Installation](../rtm-installieren/).
 
 #### Hinzufügen eines SSH-Schlüssels (optional)
 
