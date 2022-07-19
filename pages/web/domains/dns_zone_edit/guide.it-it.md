@@ -3,14 +3,14 @@ title: 'Modificare una zona DNS di OVHcloud'
 excerpt: 'Come modificare una zona DNS OVHcloud dallo Spazio Cliente'
 slug: web_hosting_modifica_la_tua_zona_dns
 section: 'DNS e zona DNS'
-legacy_guide_number: g1604
+order: 3
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 01/06/2022**
+**Ultimo aggiornamento: 07/07/2022**
 
 ## Obiettivo
 
@@ -50,14 +50,17 @@ La zona DNS di un dominio è un file di configurazione composto da **record**. c
 >
 > - Se il dominio non utilizza i server DNS di OVHcloud, è necessario effettuare la modifica attraverso l'interfaccia del provider che gestisce la configurazione del dominio.
 > 
-> - Se il tuo dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione. accedendo allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} OVHcloud, clicca sulla scheda `Server DNS`{.action} del dominio interessato.
+> - Se il tuo dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione. accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, cliccando sulla scheda `Server DNS`{.action} del dominio interessato.
+> 
+> In entrambi i casi, fai attenzione effettuando le modifiche dei server DNS. Infatti, la configurazione precedente che può essere applicata al tuo dominio non sarà più attiva se non hai precedentemente riconfigurato e personalizzato la nuova zona DNS presente in OVHcloud.<br>
+> È possibile avere una sola zona DNS attiva per ogni dominio.
 >
 
 ## Procedura
 
 ### Accedere alla gestione di una zona DNS OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio. e clicca sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella con tutti i record DNS associati al tuo dominio presso OVHcloud. Il contenuto può essere filtrato per tipo di record o per dominio.
 
@@ -71,18 +74,56 @@ Essere a conoscenza delle diverse tipologie di record consente di modificare al 
 
 #### Registrazioni di puntamento
 
-**A**: Collega un dominio a un indirizzo IPv4. ad esempio, l'indirizzo IPv4 del server in cui è ospitato il tuo sito Internet.
+- **A** (**A**ddress): Collega un dominio a un indirizzo IPv4 `X.X.X.X` (dove le `X` sono cifre comprese tra `0` e `255`). ad esempio, l'indirizzo IPv4 del server in cui è ospitato il tuo sito Web.
 
-**AAAA**: Collega un dominio a un indirizzo IPv6. ad esempio, l'indirizzo IPv6 del server in cui è ospitato il tuo sito Internet.
+- **AAAA** (4 lettere **A** perché questa registrazione è codificata su quattro volte più bit del campo di puntamento **A** storico): Collega un dominio a un indirizzo IPv6. ad esempio, l'indirizzo IPv6 del server in cui è ospitato il tuo sito Web.
 
-**CNAME**: Utilizza l'indirizzo IP di un altro dominio creando un link chiamato alias. Ad esempio, se *www.mydomain.ovh* è un alias di *mydomain.ovh*, ciò indica che *www.mydomain.ovh* utilizzerà l'indirizzo IP di *mydomain.ovh*.
+> [!primary]
+> 
+> Gli indirizzi IPv6 vengono progressivamente creati per ovviare alla mancanza di indirizzi IPv4 dovuta all'espansione continua degli usi digitali. La codifica a 128 bits degli indirizzi IPv6 permette di fornire un maggior numero di indirizzi IP.
+>
+> Tuttavia, se il tuo server dispone già di un IPv4, ti consigliamo di privilegiare l'utilizzo di quest'ultimo sul tuo IPv6.<br>
+> Gli IPv6 non sono infatti ancora correttamente interpretati su tutta la rete Internet, il che può causare problemi di visualizzazione o di accesso.
+>
+
+<a name="cname"></a>
+
+- **CNAME** (**C**anonical **NAME**): Utilizza l'indirizzo IP di un altro dominio creando un link chiamato alias. Ad esempio, se *www.mydomain.ovh* è un alias di *mydomain.ovh*, ciò indica che *www.mydomain.ovh* utilizzerà l'indirizzo IP di *mydomain.ovh*.
 
 > [!alert]
 >
 > Un record TXT che utilizza lo stesso dominio o sottodominio di un CNAME interferisce con il suo funzionamento. Il record CNAME funzionerà solo parzialmente o totalmente.
+> 
+
+> [!warning]
+>
+> Per convenzione, i record CNAME non possono essere utilizzati direttamente da un dominio nella sua zona DNS. Il dominio da solo deve necessariamente e direttamente puntare verso un indirizzo IP con un record di tipo A (o AAAA se si tratta di un IPv6).
+> 
+> Per citare l'esempio di cui sopra, non è possibile creare un record CNAME per il dominio *mydomain.ovh* nella zona DNS che hai creato per questo dominio.
+> Puoi creare record CNAME con tutti i sottodomini (ad esempio: *domain.mydomain.ovh* o *www.mydomain.ovh*) del dominio *mydomain.ovh* nella zona DNS creata per *mydomain.ovh*.
+>
+> Per saperne di più sul piano tecnico, in fondo a questa pagina puoi trovare [un caso particolare di utilizzo dei CNAME e delle zone DNS create per sottodomini](#techusecase).
 >
 
-**Record NS**: Definisci i server DNS associati alla tua zona DNS. Ad esempio, se i record NS della tua zona DNS visualizzano i server *DNS19.ovh.net* e *ns19.ovh.net*, sarà necessario utilizzarli nella scheda `Server DNS`{.action} del tuo Spazio Cliente. Per maggiori informazioni, consulta la nostra guida [Modificare i server DNS di un dominio OVHcloud](../web_hosting_gestisci_il_tuo_server_dns/).
+- **DNAME** (**D**elegation **NAME**): Permette di generare un "alias" per tutti i sottodomini di un dominio. Questo record evita di creare una moltitudine di record CNAME. Infatti, un record CNAME reindirizza indipendentemente da un solo sottodominio verso un unico bersaglio.
+
+Esempio: creando un record DNAME de *mydomain.ovh* verso *ovh.com*, tutti i sottodomini di *mydomain.ovh* (come *dname.mydomain.ovh* e *xxx.mydomain.ovh*) saranno reindirizzati rispettivamente verso i sottodomini di impostaovh.comAP (come "IMPROND") ame.ovh.it.com evalixxx.ovh.comcinesesaldo).
+
+In altre parole, il record DNAME indica che *dname.mydomain.ovh* e *xxx.mydomain.ovh* devono rispettivamente visualizzare i risultati di *dname.ovh.com* e *xxx.ovh.com*.
+
+> [!warning]
+> 
+> Per contro, *midomain.ovh* come dominio non mostrerà la destinazione del dominio *ovh.com* perché il record DNAME è valido solo per i sottodomini definiti nel record DNAME.
+>
+> Se il sottodominio di destinazione *xxx.ovh.com* non punta da nessuna parte, il record DNAME non mostrerà nulla per *xxx.mydomain.ovh*.
+> 
+
+> [!success]
+> 
+> Il record DNAME è generalmente utilizzato come parte di una modifica della ragione sociale. Può essere installato anche quando un utente dispone di più estensioni di domini (.it, .net, .com, .info, ecc...) per reindirizzarle facilmente tra loro.
+>
+
+- **NS** (**N**ame **S**erver): Definisci i server DNS associati alla tua zona DNS. Ad esempio, se i record NS della tua zona DNS visualizzano i server *DNS19.ovh.net* e *ns19.ovh.net*, sarà necessario utilizzarli nella scheda `Server DNS`{.action} del tuo Spazio Cliente OVHcloud. Per maggiori informazioni, consulta la nostra guida [Modificare i server DNS di un dominio OVHcloud](../generalites-serveurs-dns/).
 
 > [!warning]
 >
@@ -91,42 +132,59 @@ Essere a conoscenza delle diverse tipologie di record consente di modificare al 
 
 #### Record email
 
-**MX**: Associa un dominio a un server di posta Ad esempio, l'indirizzo *10 mx1.mail.ovh.net* corrisponde a uno dei server di posta OVHcloud quando possiedi un'offerta email OVHcloud. È probabile che il tuo provider di posta disponga di diversi server di posta: è necessario creare diversi record MX. Consulta la nostra guida [Aggiungere un record MX alla configurazione di un dominio](../aggiungere-record-mx-configurazione-dominio/).
+- **MX** (**M**ail e**X**changer): Associa un dominio a un server di posta Ad esempio, l'indirizzo *10 mx1.mail.ovh.net* corrisponde a uno dei server di posta OVHcloud quando possiedi un'offerta email OVHcloud. È probabile che il tuo provider di posta disponga di diversi server di posta: è necessario creare diversi record MX. Consulta la nostra guida [Aggiungere un record MX alla configurazione di un dominio](../mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/).
 
-**SPF**: Consente di evitare potenziali usurpazioni d'identità sugli indirizzi email che utilizzano il tuo dominio (spoofing). Ad esempio, il record *v=spf1 include:mx.ovh.com ~all* indica che solo i server di invio associati alla tua offerta mail OVHcloud possono essere considerati legittimi dal server di ricezione. È possibile inserire questo record come un record TXT o tramite il nostro sistema di configurazione automatica. Per saperne di più, consulta la guida [Aggiungere un record SPF alla configurazione di un dominio](../hosting_condiviso_il_record_spf/).
+> [!warning]
+>
+> In generale, ti consigliamo di utilizzare uno o più server di uno stesso provider email nella tua zona DNS.
+> Infatti, se disponi già di servizi email presso un altro provider e aggiungi contemporaneamente (senza sostituire) i server email del tuo nuovo provider, rischi di ricevere casualmente le tue email presso uno dei tuoi due provider.
+> 
 
-**DKIM**: Consente di verificare l'autenticità del dominio del mittente e garantire l'integrità dell'email inviata. Il record DKIM si presenta sotto forma di una chiave composta da diversi caratteri. La chiave DKIM è fornita dal tuo provider email, è possibile inserirla in un record TXT.
+- **SPF** (**S**ender **P**olicy **F**ramework): Consente di evitare potenziali usurpazioni di identità sugli indirizzi email che utilizzano il tuo dominio (*spoofing*). Ad esempio, il record `v=spf1 include:mx.ovh.com ~all` indica che solo i server di invio associati alla tua offerta mail OVHcloud possono essere considerati legittimi dal server di ricezione. Puoi inserire questo record tramite un record TXT o il nostro sistema di configurazione automatica. Per saperne di più, consulta la guida [Aggiungere un record SPF alla configurazione di un dominio](../le-champ-spf/).
 
-**DMARC**: Contribuisce all'autenticazione delle email in associazione con i metodi SPF e/o DKIM. Questo valore ti verrà dato dal tuo provider email e sarà associato almeno a un record SPF o DKIM.
+- **DKIM** (**D**omain**K**eys **I**dentified **M**ail): Consente di verificare l'autenticità del dominio del mittente e garantire l'integrità dell'email inviata. Il record DKIM si presenta sotto forma di una chiave composta da diversi caratteri. La chiave DKIM è fornita dal tuo provider di posta (se questa funzionalità è proposta da quest'ultimo), è possibile inserirla in un record TXT.
+
+- **DMARC** (**D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance): Contribuisce all'autenticazione delle email in associazione con i metodi SPF e/o DKIM. Questo valore ti verrà dato dal tuo provider email (se questa funzionalità è proposta da quest'ultimo), sarà associato almeno a un record SPF o DKIM.
 
 #### Registrazioni estese
 
-**TXT**: Consente di aggiungere il valore che preferisci, in formato testuale, alla zona DNS del tuo dominio. Questo record è quello utilizzato durante i processi di verifica.
+- **TXT** (**T**e**XT**): Consente di aggiungere il valore che preferisci, in formato testuale, alla zona DNS del tuo dominio. Questo record viene spesso utilizzato durante il processo di verifica/convalida o di sicurezza.
 
 > [!warning]
 > 
 > La registrazione TXT è limitata a 255 caratteri. In alcuni casi è possibile suddividere il valore in più record. Quando ti viene chiesto di inserire un valore superiore alla quota di 255 caratteri, contatta il tuo provider.
 > 
+> Questo limite non è tuttavia esistente se passi per la funzionalità "Utilizza l'editor di testo" [descritta di seguito](#txtmod) in questa guida (per gli utenti esperti).
+> 
 
-**SRV**: Consente di indicare l’indirizzo di un server che gestisce un servizio. Ad esempio, può indicare l'indirizzo di un server SIP o quello di un server che permette la configurazione automatica di un client di posta.
+- **SRV** (**S**e**RV**ice resource): Consente di indicare l’indirizzo di un server che gestisce un servizio. Ad esempio, può indicare l'indirizzo di un server SIP o quello di un server che permette la configurazione automatica di un client di posta.
 
-**CAA**: Consente di elencare le autorità di certificazione autorizzate a fornire certificati SSL per un dominio.
+- **CAA** (**C**ertification **A**uthority **A**uthorisation): Consente di elencare le autorità di certificazione autorizzate a fornire certificati SSL per un dominio.
 
-**NAPTR**: Utilizzato in telecomunicazione per indirizzare una richiesta emessa da un terminale mobile verso un server. 
+> [!warning]
+> 
+> Se utilizzi un certificato SSL Let's Encrypt su un hosting condiviso OVHcloud e utilizzi un record CAA, quest'ultimo impedirà la rigenerazione del certificato SSL Let's Encrypt.
+> 
 
-**LOC**: Utilizzato per inserire le informazioni sulla posizione geografica.
 
-**SSHFP**: Utilizzato per inserire l'impronta di una chiave pubblica SSH.
+- **NAPTR** (**N**ame **A**uthority **P**oint**T**e**R**): Utilizzato in telecomunicazione per indirizzare una richiesta emessa da un terminale mobile verso un server. Un record SRV può essere associato per generare in modo dinamico gli URI (Uniform Resource Identifier) di destinazione.
 
-**TLSA**: Utilizzato per inserire l'impronta di un certificato SSL/TLS.
+- **LOC** (**LOC**ation): Utilizzato per fornire informazioni sulla posizione geografica (in particolare latitudine, longitudine e altitudine).
+
+- **SSHFP** (**S**ecure **SH**ell **F**inger**P**rint): Utilizzato per inserire l'impronta di una chiave pubblica SSH.
+
+- **TLSA** (**T**ransport **L**ayer **S**ecurity **A**uthentication): Utilizzato per inserire l'impronta di un certificato SSL/TLS.
 
 ### Modifica la zona DNS OVHcloud del dominio
 
 Per modificare la zona DNS di un dominio è possibile aggiungere, modificare o rimuovere un record DNS. in due modi diversi:
 
-#### Modifica manualmente la zona in modalità testuale 
+#### Modifica manualmente la zona in modalità testuale <a name="txtmod"></a>
 
-Solo per gli utenti esperti. 
+> [!warning]
+> 
+> Solo per gli utenti esperti. Presta particolare attenzione alla sintassi durante le modifiche.
+> 
 
 Nella scheda `Zona DNS`{.action}, clicca su `Utilizza l'editor di testo`{.action} e segui gli step.
 
@@ -149,9 +207,9 @@ Ti consigliamo di verificare se questo record non esiste già e non punta verso 
 
 > Quando la destinazione del tuo record è un URL, ricordati di pulire il link. In effetti, se non lo fai, il tuo dominio verrà automaticamente aggiunto alla fine della tua destinazione.
 >
->Esempio: vuoi creare un record CNAME di *test.mydomain.ovh* verso *mydomain.ovh*.
+> Esempio: vuoi creare un record CNAME di *test.mydomain.ovh* verso *mydomain.ovh*.
 >
->Dovrai avere come bersaglio *mydomain.ovh.* e non *mydomain.ovh* senza il **.** alla fine.
+> Dovrai avere come bersaglio *mydomain.ovh.* e non *mydomain.ovh* senza il "." alla fine.
 
 #### Modifica un record DNS esistente 
 
@@ -171,16 +229,16 @@ Per eliminare più record in una sola volta, seleziona la casella sinistra della
 
 Reinizializza la tua zona DNS ti permette di:
 
-- tornare di default a una configurazione minima
-- tornare a una zona DNS vuota (ad eccezione dei record NS) per definire una configurazione manuale successiva
+- ritornare a una configurazione minima con i record OVHcloud di default.
+- ritornare a una zona DNS vuota (ad eccezione dei record NS) per definire una configurazione manuale successiva.
 
-Nella scheda `Zona DNS`{.action}, clicca su `Reinizializza la zona DNS`{.action} e segui gli step.
+Nella scheda `Zona DNS`{.action}, clicca su `Reimposta la tua zona DNS`{.action} e segui gli step.
 
 ![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
 
 Puoi scegliere tra:
 
-- `Sì, voglio reinizializzare la zona DNS con il numero minimo di record`. Questa opzione ti permette di reindirizzare il tuo dominio e il tuo servizio di posta verso:
+- `Sì, voglio reinizializzare la mia zona DNS con il numero minimo` di record Questa opzione ti permette di reindirizzare il tuo dominio e il tuo servizio di posta verso:
     - uno dei tuoi servizi Web Cloud disponibili nello Spazio Cliente OVHcloud.
     - il servizio di reindirizzamento OVHcloud, accessibile dalla scheda `Reindirizzamento`{.action} del tuo dominio nelle sezioni `Domini`{.action} ed `Email`{.action}.
     - la funzione `Personalizzata`. Inserisci il record `A` e/o `MX` che preferisci.
@@ -199,6 +257,14 @@ Per ridurre il tempo di propagazione per le prossime modifiche della zona DNS OV
 Clicca sulla scheda `Zona DNS`{.action} dello Spazio Cliente, clicca sul pulsante `TTL di default`{.action} e segui gli step. 
 
 È inoltre possibile modificare il TTL di un record DNS. ma questa operazione può essere effettuata solo su una registrazione alla volta, modificandola o aggiungendola.
+
+### Caso particolare di utilizzo: utilizzo dei record CNAME <a name="techusecase"></a>
+
+Alcuni utenti creano zone DNS direttamente per il sottodominio di un dominio (ad esempio, *sottodominio-con-propria-zona-DNS.mydomain.ovh*). In questo caso, si applica anche la regola di cui [sopra](#cname). 
+
+La zona DNS è stata creata per il sottodominio (nel nostro esempio, *sottodominio-con-propria-zona-DNS.mydomain.ovh*) e viene quindi considerato un dominio a tutti gli effetti nella sua zona DNS.
+
+Per questo motivo e in questo caso specifico, non è possibile creare un record CNAME per *sottodominio-con-propria-zona-DNS.mydomain.ovh* nella zona DNS che hai creato per quest'ultimo. È possibile creare record CNAME come *sottodominio.sottodominio-con-propria-zona-DNS.mydomain.ovh* o *xxx.sottodominio-con-propria-zona-DNS.mydomain.ovh*.
 
 ## Per saperne di più
 
