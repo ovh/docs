@@ -33,7 +33,7 @@ Acceda a la pestaña `Cuentas de correo`{.action}, haga clic en el botón `Accio
 ![billing_exchange](images/billing-exchange-00.png){.thumbnail}
 
 
-#### Cambiar la periodicidad de sus cuentas
+#### Cambiar la periodicidad de sus cuentas <a name="periodicity"></a>
 
 En la ventana de gestión de su plataforma Exchange, haga clic en el botón `Acciones`{.action} en la parte superior derecha y, luego, en `Configuración de la renovación`{.action}. 
 

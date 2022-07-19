@@ -33,7 +33,7 @@ Quindi clicca sulla scheda `Account email`{.action} e poi sul pulsante `Azioni`{
 ![billing_exchange](images/billing-exchange-00.png){.thumbnail}
 
 
-#### Modifica la frequenza di rinnovo dei tuoi account
+#### Modifica la frequenza di rinnovo dei tuoi account <a name="periodicity"></a>
 
 Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `Azioni`{.action} in alto a destra e poi su `Configura il rinnovo`{.action}. 
 

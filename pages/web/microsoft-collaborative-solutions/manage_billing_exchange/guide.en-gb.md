@@ -32,7 +32,7 @@ Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} bu
 ![billing_exchange](images/billing-exchange-00.png){.thumbnail}
 
 
-#### Changing the renewal frequency for your accounts
+#### Changing the renewal frequency for your accounts <a name="periodicity"></a>
 
 In the window for managing your Exchange platform, click on the `Actions`{.action} button in the top right-hand corner, then click `Renewal configuration`{.action}. 
 

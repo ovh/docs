@@ -10,7 +10,7 @@ order: 2
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 27/4/2021**
+**Última actualización: 18/07/2022**
 
 ## Objetivo
 
@@ -48,7 +48,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 |NETWORK_INTERFACE|Nombre de la interfaz de red|*eth0*, *ens3*|
 |ID|ID del alias IP, comenzando por *0* (en función del número de direcciones IP adicionales a configurar)|*0*, *1*|
 
-### Debian 10
+### Debian 11
 
 #### Paso 1: desactivar la configuración automática de red
 
@@ -61,7 +61,7 @@ sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 Introduzca la siguiente línea y, a continuación, guarde y cierre el editor.
 
 ```bash
-network: [config: disabled}
+network: {config: disabled}
 ```
 
 La creación de este archivo de configuración impide la ejecución automática de los cambios realizados en la configuración de su red.
@@ -97,7 +97,7 @@ Aplique los cambios con el siguiente comando:
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04
+### Ubuntu 22.04
 
 El archivo de configuración de las direcciones IP failover se encuentra en `/etc/netplan/`. En este ejemplo, se llama "50-cloud-init.yaml". Antes de realizar cualquier cambio, compruebe el nombre del archivo real en esta carpeta. Cada dirección IP failover necesita su propia línea en el archivo.
 

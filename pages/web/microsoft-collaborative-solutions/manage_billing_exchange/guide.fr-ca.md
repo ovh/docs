@@ -33,7 +33,7 @@ Dirigez-vous dans l'onglet `Comptes e-mail`{.action} puis cliquez sur le bouton 
 ![billing_exchange](images/billing-exchange-00.png){.thumbnail}
 
 
-#### Modifier la périodicité de vos comptes
+#### Modifier la périodicité de vos comptes <a name="periodicity"></a>
 
 Depuis la fenêtre de gestion de votre plateforme Exchange, cliquez sur le bouton `Actions`{.action} en haut à droite puis sur `Configuration du renouvellement`{.action}. 
 

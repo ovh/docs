@@ -10,7 +10,7 @@ order: 2
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 27.04.2021**
+**Letzte Aktualisierung am 18.07.2022**
 
 ## Ziel
 
@@ -48,7 +48,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 |NETWORK_INTERFACE|Name des Netzwerkinterfaces|*eth*, *ens3*|
 |ID|ID der Failover-IP, beginnend mit *0* (abhängig von der Anzahl der zu konfigurierenden zusätzlichen IP-Adressen)|*0*, *1*|
 
-### Debian 10
+### Debian 11
 
 #### Schritt 1: Automatische Netzwerkkonfiguration deaktivieren
 
@@ -97,7 +97,7 @@ Wenden Sie die Änderungen mit folgendem Befehl an:
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04
+### Ubuntu 22.04
 
 Die Konfigurationsdatei für Ihre Failover-IPs befindet sich in `/etc/netplan/`. In diesem Beispiel heißt sie "50-cloud-init.yaml". Bevor Sie Änderungen vornehmen, überprüfen Sie am besten den tatsächlichen Dateinamen in diesem Ordner. Jede Failover-IP benötigt in der Datei eine eigene Zeile.
 

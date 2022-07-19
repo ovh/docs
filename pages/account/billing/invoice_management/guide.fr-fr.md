@@ -107,7 +107,7 @@ Si vous souhaitez n'en exporter qu'une partie, cochez les cases correspondantes 
 
 ![export_selection](images/export_selection.png){.thumbnail}
 
-#### Payer vos factures
+#### Payer vos factures <a name="pay-bills"></a>
 
 Afin de procéder au règlement de vos factures en attente de paiement, il vous suffit de cliquer sur le menu `Actions de masse`{.action} puis sur le bouton `Régler mon solde immédiatement`{.action}.
 

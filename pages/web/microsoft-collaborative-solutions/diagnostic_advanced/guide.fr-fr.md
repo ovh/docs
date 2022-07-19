@@ -7,7 +7,7 @@ section: 'Diagnostic Exchange'
 order: 1
 ---
 
-**Dernière mise à jour le 28/05/2021**
+**Dernière mise à jour le 08/07/2022**
 
 ## Objectif
 
@@ -20,6 +20,7 @@ Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de cause
 - Disposer d'une [solution Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/hosted-exchange/) déjà installée
 - Disposer des informations d'identification pour le compte Exchange à vérifier
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être à jour dans les [paiements](https://docs.ovh.com/fr/billing/gerer-factures-ovh/#pay-bills) de ce service et du nom de domaine lié.
 
 ## En pratique
 
@@ -57,7 +58,8 @@ Veuillez consulter notre guide [Que faire en cas de compte bloqué pour spam ?](
 
 ### L'abonnement au compte est expiré <a name="expired"></a>
 
-Votre abonnement n'étant plus actif, l'envoi et la réception ont été désactivés. Vous pouvez [vérifier le statut de facturation du service](../gestion-facturation-exchange/) dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et le renouveler pour réactiver le compte.
+Votre abonnement n'étant plus actif, l'envoi et la réception ont été désactivés.<br>
+Pour réactiver votre abonnement, il suffit de reconfigurer sa [périodicité de facturation](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#periodicity) dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ### Le compte est bloqué par la politique de sécurité
 

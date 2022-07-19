@@ -46,10 +46,8 @@ The DNS zone for a domain name is a configuration file made up of **records**. Y
 >
 > - If your domain name does not use OVHcloud DNS servers, you will need to edit the configuration using the interface of your service provider that manages your domain name.
 > 
-> - If your domain name is registered with OVHcloud, you can check if it is using our configuration. To do this, go to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and select the `DNS servers`{.action} tab of the domain name in question.
+> - If your domain name is registered with OVHcloud, you can check if it is using our configuration. To do this, go to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and open the `DNS servers`{.action} tab of the domain name in question.
 >
-> - If your domain name is registered with OVHcloud, you can check if it is using our configuration. To do this, go to your OVHcloud Control [Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and select the domain name in question’s DNS `Servers`{.action} tab.
-> 
 > In both of the above cases, be careful when making your DNS server changes. The old configuration that can be applied to your domain name will no longer be active if you have not previously reconfigured and customised the new DNS zone present at OVHcloud.<br>
 > You can only have one active DNS zone per domain name at a time.
 >
@@ -73,7 +71,7 @@ By understanding what each of these records does, you will gain a better underst
 
 #### Pointing records
 
-- **A** (**A**ddress): Links a domain name to an `X.X.X.X.X` IPv4 address (where `Xs` are numbers between `0` and `255`). For example, the IPv4 address of the server your website is hosted on.
+- **A** (**A**ddress): Links a domain name to an `X.X.X.X` IPv4 address (where `Xs` are numbers between `0` and `255`). For example, the IPv4 address of the server your website is hosted on.
 
 - **AAAA** (Four **A** characters because this record is encoded on four times more bits than the historical **A** field): Links a domain name to an IPv6 address. For example, the IPv6 address of the server your website is hosted on.
 
@@ -104,9 +102,9 @@ By understanding what each of these records does, you will gain a better underst
 > If you would like to go further technically on this subject, you can find at the bottom of this page [a particular use case concerning CNAME records and DNS zones created for subdomains](#techusecase).
 >
 
-- **DNAME** (**D**elegation **NAME**) field: Allows to generate an "alias" for all subdomains of a domain. This record avoids creating a multitude of CNAME records. A CNAME record redirects only one subdomain to a single target, independently.
+- **DNAME** (**D**elegation **NAME**): Allows to generate an "alias" for all subdomains of a domain. This record avoids creating a multitude of CNAME records. A CNAME record redirects only one subdomain to a single target, independently.
 
-Example: By creating a DNAME record from *mydomain.ovh* to *ovh.com*, all subdomains from *mydomain.ovh* (such as *dname.mydomain.ovh* and *xxx.mydomain.ovh*) will be redirected respectively to subdomains from *ovh.com** (such as *dname.ovh.com* and *xxx.ovh.com*).
+Example: By creating a DNAME record from *mydomain.ovh* to *ovh.com*, all subdomains from *mydomain.ovh* (such as *dname.mydomain.ovh* and *xxx.mydomain.ovh*) will be redirected respectively to subdomains from *ovh.com* (such as *dname.ovh.com* and *xxx.ovh.com*).
 
 In other words, the DNAME record indicates that *dname.mydomain.ovh* and *xxx.mydomain.ovh* must display the results of *dname.ovh.com* and *xxx.ovh.com*, respectively.
 
@@ -122,7 +120,7 @@ In other words, the DNAME record indicates that *dname.mydomain.ovh* and *xxx.my
 > The DNAME record is usually used for company name changes. It can also be set up when a user has several domain extensions (.fr, .net, .com, .info, ...) to redirect them easily.
 >
 
-- **NS** (**N**ame **S**erver) field: Define the DNS servers associated with your DNS zone. For example, if the NS records in your DNS zone display the servers *dns19.ovh.net* and *ns19.ovh.net*, you will need to use them in the `DNS servers`{.action} tab in your OVHcloud Control Pane. Please refer to our guide on [Editing DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/) for more information.
+- **NS** (**N**ame **S**erver): Define the DNS servers associated with your DNS zone. For example, if the NS records in your DNS zone display the servers *dns19.ovh.net* and *ns19.ovh.net*, you will need to use them in the `DNS servers`{.action} tab in your OVHcloud Control Pane. Please refer to our guide on [Editing DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/) for more information.
 
 > [!warning]
 >
@@ -165,9 +163,9 @@ In other words, the DNAME record indicates that *dname.mydomain.ovh* and *xxx.my
 > If you use a Let's Encrypt SSL certificate with your domain on an OVHcloud shared hosting plan, and you enter a CAA record, the latter will prevent the Let's Encrypt SSL certificate from being regenerated.
 > 
 
-- **NAPTR** (**N**ame **A**uthority **P**oint**T**e**R**): Used in telecommunication to direct a request from a mobile device to a server. 
+- **NAPTR** (**N**ame **A**uthority **P**oint**T**e**R**): Used in telecommunication to direct a request from a mobile device to a server. An SRV record can be associated to dynamically generate target URIs (Uniform Resource Identifier).
 
-- **LOC** (**LOC**ation): Used to populate location information.
+- **LOC** (**LOC**ation): Used to populate location information (including latitude, longitude and altitude).
 
 - **SSHFP** (**S**ecure **SH**ell **F**inger**P**rint): Used to fill in the fingerprint of an SSH public key.
 
@@ -184,7 +182,7 @@ You can edit your domain name’s OVHcloud DNS zone by adding, modifying or dele
 > This is only recommended for experienced users. Also be very careful about the syntax when you make changes.
 > 
 
-In the `DNS zone`{.action}  tab, click `Change in text format`{.action}, then follow the steps that appear.
+In the `DNS zone`{.action} tab, click `Change in text format`{.action}, then follow the steps that appear.
 
 #### Use our configuration assistants
 
@@ -207,7 +205,7 @@ Please check in advance whether this record already exists and might point to a 
 >
 > Example: You want to create a CNAME record from *test.mydomain.ovh* to *mydomain.ovh*.
 >
-> You must then target *mydomain.ovh.* and not *mydomain.ovh* without **.** at the end.
+> You must then target *mydomain.ovh.* and not *mydomain.ovh* without "." at the end.
 
 #### Modify an existing DNS record
 
