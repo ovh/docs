@@ -10,7 +10,7 @@ order: 1
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 11/03/2022**
+**Ultimo aggiornamento: 18/07/2022**
 
 ## Obiettivo
 
@@ -64,14 +64,6 @@ Per modificare lo schema di partizione del tuo sistema operativo, seleziona la c
 ![Personalizzare la configurazione delle partizioni](images/SSH_02.png){.thumbnail}
 
 Una volta terminate le modifiche, clicca su `Seguente`{.action} per accedere alla pagina di riepilogo.
-
-#### Installazione del Real Time Monitoring (facoltativo) <a name="installrtm"></a>
-
-Se hai selezionato un sistema operativo compatibile con GNU/Linux, verrà visualizzata l'opzione di attivazione del monitoraggio in tempo reale (RTM per Real Time Monitoring) del server.
-
-![RTM](images/reinstalling-your-server-04.png){.thumbnail}
-
-Salda il cursore su `Attiva`{.action} per installarlo. Per maggiori informazioni sulla funzionalità RTM, consulta la guida Installare [Real Time Monitoring (RTM)](../installare-rtm/).
 
 #### Aggiunta di una chiave SSH (facoltativo)
 
