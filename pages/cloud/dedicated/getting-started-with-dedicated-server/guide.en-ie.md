@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 11th March 2022**
+**Last updated 18th July 2022**
 
 ## Objective
 
@@ -60,14 +60,6 @@ If you need to modify the partioning scheme of your operating system, check the 
 ![Customise the partition configuration](images/SSH_02.png){.thumbnail}
 
 After you have finished your adjustments, click `Next`{.action} to arrive at the summary page.
-
-#### Installing Real Time Monitoring (optional) <a name="installrtm"></a>
-
-If you have selected a compatible GNU/Linux-based operating system, the option to activate RTM for the server will appear.
-
-![RTM](images/reinstalling-your-server-04.png){.thumbnail}
-
-Set the slider to `Enabled`{.action} to install it. You can find out more about the RTM feature in [this guide](../install-rtm/).
 
 #### Adding an SSH key (optional)
 
