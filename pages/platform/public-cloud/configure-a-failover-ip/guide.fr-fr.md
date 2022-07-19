@@ -6,7 +6,7 @@ section: Réseau
 order: 2
 ---
 
-**Dernière mise à jour le 14 avril 2021**
+**Dernière mise à jour le 18/07/2022**
 
 ## Objectif
 
@@ -44,7 +44,7 @@ En ce qui concerne les différentes versions de distributions, veuillez noter qu
 |NETWORK_INTERFACE|Nom de l'interface réseau|*eth0*, *ens3*|
 |ID|ID de l'alias IP, commençant par *0* (en fonction du nombre d'adresses IP supplémentaires à configurer)|*0*, *1*|
 
-### Debian 10
+### Debian 11
 
 #### Etape 1 : désactiver la configuration automatique du réseau
 
@@ -93,7 +93,7 @@ Appliquez les modifications à l'aide de la commande suivante :
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04
+### Ubuntu 22.04
 
 Le fichier de configuration de vos adresses IP fail-over se trouve dans `/etc/netplan/`. Dans cet exemple, il s'appelle « 50-cloud-init.yaml ». Avant d'apporter des modifications, vérifiez le nom de fichier réel dans ce dossier. Chaque adresse IP fail-over nécessite sa propre ligne dans le fichier.
 

@@ -47,7 +47,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 |NETWORK_INTERFACE|Nome dell'interfaccia di rete|*eth0*, *ens3*|
 |ID|ID dell'alias IP, che inizia con *0* (in base al numero di indirizzi IP aggiuntivi da configurare)|*0*, *1*|
 
-### Debian 10
+### Debian 11
 
 #### Step 1: disattiva la configurazione automatica della rete
 
@@ -96,7 +96,7 @@ Applica le modifiche utilizzando il seguente comando:
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04
+### Ubuntu 22.04
 
 Il file di configurazione dei tuoi indirizzi IP Failover si trova in `/etc/netplan/`. In questo esempio, si chiama "50-cloud-init.yaml". Prima di apportare modifiche, verifica il nome del file effettivo in questa cartella. Ogni indirizzo IP Failover richiede la propria linea nel file.
 
