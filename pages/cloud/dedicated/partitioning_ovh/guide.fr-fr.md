@@ -1,7 +1,7 @@
 ---
 title: 'API OVHcloud & Partitionnement'
 slug: api-partitioning
-excerpt: "Découvrez ce que l'API OVHcloud fournit afin de personnaliser la configuration du partitionnement lors de l'installation de l'OS serveur"
+excerpt: "Découvrez comment l'API OVHcloud vous permet de personnaliser la configuration du partitionnement lors de l'installation de l'OS sur votre serveur"
 section: 'RAID & disques'
 ---
 
@@ -12,12 +12,13 @@ section: 'RAID & disques'
 
 > [!warning]
 >
-> Cet article est destiné aux utilisateurs expérimentés qui ont au moins des connaissances de base sur Linux, mais surtout des connaissances plus approfondies sur le stockage et en particulier sur les logiciels RAID ainsi que sur la gestion logique des volumes (LVM).
+> Cet article est destiné aux utilisateurs expérimentés qui ont au minimum des connaissances de base sur Linux, mais surtout des connaissances plus approfondies sur le stockage et en particulier sur les logiciels RAID ainsi que sur la gestion logique des volumes (LVM).
 >
 
-Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer des partitions, le [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/), un LVM, un ZFS, etc. pendant [l’installation](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/) de votre système d'exploitation depuis l’[API OVHcloud](https://api.ovh.com/) ou depuis votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration). Dans cet article, nous allons nous concentrer sur l'[API OVHcloud](https://api.ovh.com/). Cela nous donnera plus de détails sur le moteur qui s'exécute en arrière-plan, afin de créer le partitionnement sur le serveur dédié à partir des données d'entrée transmises à l'API OVHcloud.
+Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer des partitions, le [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/), un LVM, un ZFS, etc. pendant [l’installation](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/) de votre système d'exploitation depuis l’[API OVHcloud](https://api.ovh.com/) ou depuis votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration). Dans cet article, nous allons nous concentrer sur l'[API OVHcloud](https://api.ovh.com/).<br>
+Cela vous donnera plus de détails sur le moteur qui s'exécute en arrière-plan, afin de créer le partitionnement sur le serveur dédié à partir des données d'entrée transmises à l'API OVHcloud.
 
-Fournir des détails pousser sur le partitionnement peut vous aider à comprendre pourquoi :
+Fournir des détails avancés sur le partitionnement peut vous aider à comprendre pourquoi :
 
 - votre partitionnement personnalisé n'a pu être appliqué sur votre serveur dédié.
 - le partitionnement réel sur votre serveur dédié est légèrement différent de ce que vous aviez demandé.
@@ -25,7 +26,7 @@ Fournir des détails pousser sur le partitionnement peut vous aider à comprendr
 ## Prérequis
 
 * Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) **prêt à être installé/réinstallé** sur votre compte OVHcloud.
-* Avoir accès à l['API OVHcloud](https://api.ovh.com/console/).
+* Avoir accès à l'[API OVHcloud](https://api.ovh.com/console/).
 
 > [!warning]
 >
@@ -35,7 +36,8 @@ Fournir des détails pousser sur le partitionnement peut vous aider à comprendr
 ## En pratique
 
 Lors de l'installation du système d'exploitation par défaut, l'installateur du système d'exploitation (fourni par l'éditeur du logiciel) invite l'utilisateur à spécifier les disques sur lesquels le système d'exploitation sera installé, la configuration du partitionnement, etc.<br>
-Une fois l’OS installé, il est possible de modifier la disposition du partitionnement mais cela peut s’avérer très délicat et risqué, notamment pour les partitions qui sont actuellement utilisées par le système. Pour cette raison, le partitionnement des serveurs est un sujet très important qui doit être pris en compte **avant** d'installer un système d'exploitation.
+Une fois l’OS installé, il est possible de modifier la disposition du partitionnement mais cela peut s’avérer très délicat et risqué, notamment pour les partitions qui sont actuellement utilisées par le système.<br>
+Pour cette raison, le partitionnement des serveurs est un sujet très important qui doit être pris en compte **avant** d'installer un système d'exploitation.
 
 Outre la simplicité de l'API, le principal avantage est la possibilité de personnaliser totalement les disques et partitions sur lesquels sera installé l’OS.
 
@@ -59,11 +61,11 @@ Le tableau suivant donne une vue d'ensemble des différents composants de partit
 > Dans le tableau ci-dessus, `/dev/zd1` représente un volume ZFS (aussi appelé `zvol`). Il s'agit d'un disque virtuel situé au-dessus d'un ensemble de données ZFS (ZD) et d'un zpool (ZP), qui est considéré comme un disque physique normal (PD) par le système d'exploitation. Cette fonctionnalité n'est pas disponible sur l'API OVHcloud et nous ne prévoyons pas de l'implémenter.
 >
 
-### Partitionnement à travers API
+### Partitionnement à travers l'API
 
 #### Concepts des templates
 
-Lors du lancement de l’installation du système d'exploitation, vous pouvez soit choisir entre plusieurs modèles (*templates*) OVHcloud, soit choisir un de vos templates personnels (basé sur un template OVHcloud).
+Lors du lancement de l’installation du système d'exploitation, vous pouvez soit choisir entre plusieurs modèles/gabarits (*templates*) OVHcloud, soit choisir un de vos templates personnels (basé sur un template OVHcloud).
 
 > [!api]
 >
