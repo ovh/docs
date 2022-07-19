@@ -5,7 +5,7 @@ excerpt: Find out how to add failover IP addresses to your instance's configurat
 section: Networking
 ---
 
-**Last updated 14th April 2021**
+**Last updated 18th July 2022**
 
 ## Objective
 
@@ -44,7 +44,7 @@ Concerning different distribution releases, please note that the proper procedur
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
 
-### Debian 10
+### Debian 11
 
 #### Step 1: Disable automatic network configuration
 
@@ -90,7 +90,7 @@ Apply the changes with the following command:
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04
+### Ubuntu 22.04
 
 The configuration file for your failover IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. Each failover IP address will need its own line within the file.
 
