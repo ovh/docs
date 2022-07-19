@@ -11,7 +11,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 28/05/2021**
+**Última atualização: 08/07/2022**
 
 ## Objetivo
 
@@ -23,13 +23,13 @@ Os erros nas contas de e-mail Exchange podem ter várias causas. Um diagnóstico
 
 - Dispor de uma [solução Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/) já instalada
 - Dispor das informações de identificação para a conta Exchange a verificar
-- Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 
 ### Realizar um diagnóstico
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}. Selecione `Microsoft`{.action} e clique em `Exchange`{.action} e selecione o seu serviço.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}. Selecione `Microsoft`{.action} e clique em `Exchange`{.action} e selecione o seu serviço.
 
 ![Diagnóstico Exchange](images/img_4450.png){.thumbnail}
 
@@ -61,7 +61,8 @@ Consulte o nosso guia [O que fazer em caso de conta bloqueada por spam?](../bloq
 
 ### A subscrição à conta expirou <a name="expired"></a>
 
-Uma vez que a sua subscrição já não está ativa, o envio e a receção foram desativados. Pode [verificar o estado de faturação do serviço](../gestao-faturacao-exchange/) na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e renová-lo para reativar a conta.
+Uma vez que a sua assinatura deixou de estar ativa, o envio e a receção foram desativados.<br>
+Para reativar a subscrição, basta reconfigurar a [periodicidade de faturação](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gestao-faturacao-exchange/#periodicity) na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ### A conta está bloqueada pela política de segurança
 
@@ -77,7 +78,7 @@ Para mais informações sobre esta funcionalidade, consulte o nosso [guia sobre 
 
 Isto pode dever-se à introdução de uma palavra-passe de conta incorreta. Verifique primeiro que a palavra-passe está correta, ligando-se ao [webmail](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/) e reinicie o diagnóstico.
 
-Se necessário, pode alterar a palavra-passe da conta em causa no separador `Contas de e-mail`{.action} na sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Se o problema persistir, crie um pedido de assistência.
+Se necessário, pode alterar a palavra-passe da conta em causa no separador `Contas de e-mail`{.action} na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Se o problema persistir, crie um pedido de assistência.
 
 ### O registo MX do domínio não é válido
 

@@ -110,7 +110,7 @@ Jeśli chcesz wyeksportować tylko część, zaznacz odpowiednie pola w pierwsze
 
 ![export_selection](images/export_selection.png){.thumbnail}
 
-#### Zapłać faktury
+#### Zapłać faktury <a name="pay-bills"></a>
 
 Aby uregulować zaległe płatności, kliknij menu `Masowe operacje`{.action}, a następnie przycisk `Ureguluj saldo teraz`{.action}.
 

@@ -7,7 +7,7 @@ section: 'Diagnostic Exchange'
 order: 1
 ---
 
-**Dernière mise à jour le 28/05/2021**
+**Dernière mise à jour le 08/07/2022**
 
 ## Objectif
 
@@ -57,7 +57,8 @@ Veuillez consulter notre guide [Que faire en cas de compte bloqué pour spam ?](
 
 ### L'abonnement au compte est expiré <a name="expired"></a>
 
-Votre abonnement n'étant plus actif, l'envoi et la réception ont été désactivés. Vous pouvez vérifier le statut de facturation du service dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et le renouveler pour réactiver le compte.
+Votre abonnement n'étant plus actif, l'envoi et la réception ont été désactivés.<br>
+Pour réactiver votre abonnement, il suffit de reconfigurer sa [périodicité de facturation](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#periodicity) dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ### Le compte est bloqué par la politique de sécurité
 

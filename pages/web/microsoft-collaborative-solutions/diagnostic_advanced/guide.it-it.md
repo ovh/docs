@@ -11,7 +11,7 @@ order: 1
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 28/05/2021**
+**Ultimo aggiornamento: 08/07/2022**
 
 ## Obiettivo
 
@@ -61,7 +61,8 @@ Consulta la nostra guida [Cosa fare in caso di account bloccato per Spam?](../bl
 
 ### L'abbonamento all'account è scaduto <a name="expired"></a>
 
-Il tuo abbonamento non è più attivo e l'invio e la ricezione sono stati disattivati. È possibile [verificare lo stato di fatturazione del servizio](../gestisci-fatturazione-exchange/) nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e rinnovarlo per riattivare l'account.
+Il tuo abbonamento non è più attivo e l'invio e la ricezione sono stati disattivati.<br>
+Per riattivare il tuo abbonamento, è sufficiente riconfigurarne la [periodicità di fatturazione](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestisci-fatturazione-exchange/#periodicity) nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ### La politica di sicurezza ha bloccato l'account
 

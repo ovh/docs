@@ -11,7 +11,7 @@ order: 2
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 28.05.2021**
+**Letzte Aktualisierung am 08.07.2022**
 
 ## Ziel
 
@@ -62,7 +62,8 @@ Bitte folgen Sie den Anweisungen in [dieser Anleitung](../blocked-wegen-spam/), 
 
 ### Das Abonnement des Accounts ist abgelaufen <a name="expired"></a>
 
-Da Ihr Abonnement nicht mehr aktiv ist, wurden Versand und Empfang deaktiviert. Sie können den [Abrechnungsstatus der Dienstleistung](../exchange-abrechnung-verwalten/) im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen und den Dienst verlängern, um den Account wieder zu aktivieren.
+Da Ihr Abonnement nicht mehr aktiv ist, wurden Versand und Empfang deaktiviert.<br>
+Um Ihr Abo wieder zu aktivieren genügt es, die [Abrechnungsfrequenz](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/#periodicity) im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu zu konfigurieren.
 
 ### Account aufgrund der Sicherheitsrichtlinien gesperrt
 

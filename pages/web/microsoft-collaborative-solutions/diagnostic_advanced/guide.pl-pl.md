@@ -10,7 +10,7 @@ legacy_guide_number: g2277
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 28-05-2021**
+**Ostatnia aktualizacja z dnia 08-07-2022**
 
 ## Wprowadzenie
 
@@ -60,7 +60,8 @@ Zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku blokady konta ze wz
 
 ### Abonament dotyczący konta wygasł <a name="expired"></a>
 
-Ponieważ abonament nie jest już aktywny, wysyłka i odbiór zostały wyłączone. Możesz [sprawdzić status fakturowania usługi](../zarzadzanie-fakturowanie-exchange/) w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i odnowić ją, aby aktywować konto.
+Ponieważ abonament nie jest już aktywny, wysyłka i odbiór zostały wyłączone.<br>
+Aby ponownie włączyć abonament, wystarczy zmienić jego konfigurację [częstotliwość płatności](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/#periodicity) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ### Konto zostało zablokowane z powodu polityki bezpieczeństwa
 

@@ -34,7 +34,7 @@ Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.
 ![billing_exchange](images/billing-exchange-00.png){.thumbnail}
 
 
-#### Zmiana częstotliwości odnawiania usługi dla Twoich kont
+#### Zmiana częstotliwości odnawiania usługi dla Twoich kont <a name="periodicity"></a>
 
 W oknie zarządzania Twoją usługą Exchange kliknij przycisk `Akcje`{.action} w prawym górnym rogu, a następnie wybierz opcję `Konfiguracja odnawiania usługi`{.action}. 
 

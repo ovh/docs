@@ -10,7 +10,7 @@ section: Diagnóstico Exchange
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 28/05/2021**
+**Última actualización: 08/07/2022**
 
 ## Objetivo
 
@@ -60,7 +60,8 @@ Consulte nuestra guía ¿[Qué hacer en caso de cuenta bloqueada por spam?](../b
 
 ### La suscripción a la cuenta ha expirado. <a name="expired"></a>
 
-La suscripción ya no está activa, por lo que se ha desactivado el envío y la recepción. Puede [comprobar el estado de facturación del servicio](../gestion-de-la-facturacion-exchange/) en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y renovarlo para reactivar la cuenta.
+Su suscripción ya no está activa, por lo que se ha desactivado el envío y la recepción.<br>
+Para reactivar la suscripción, solo tiene que reconfigurar su [frecuencia de facturación](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/#periodicity) en el[área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ### La cuenta está bloqueada por la política de seguridad.
 
