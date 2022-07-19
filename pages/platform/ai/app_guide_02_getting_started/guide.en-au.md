@@ -6,7 +6,7 @@ section: AI Apps guides
 order: 02
 ---
 
-**Last updated July 11th, 2022.**
+**Last updated 11th July 2022.**
 
 ## Objective
 
@@ -37,7 +37,7 @@ Select where your AI App will be hosted, meaning the physical location.
 
 > [!primary]
 >
-> OVHcloud provides multiple datacenters. You can find the capabilities for AI Apps in the guide [AI Apps capabilities](https://docs.ovh.com/au/en/publiccloud/ai/deploy/capabilities/).
+> OVHcloud provides multiple datacenters. You can find the capabilities for AI Apps in the guide [AI Apps capabilities](https://docs.ovh.com/au/en/publiccloud/ai/apps/capabilities/).
 >
 
 #### Step 2: Select the application to deploy
@@ -49,7 +49,7 @@ AI Apps allows a user to deploy applications from two sources:
 
 In this tutorial, we will select an OVHcloud Docker image to deploy your first **AI App**.
 
-The objective is to deploy and call a simple **Flask API** for a kind of *Hello World*. The API welcomes you on your first **AI App** by sending back `Hello` followed by your `name` you sent and the end of the sentence.
+The objective is to deploy and call a simple **Flask API** for a kind of *Hello World*. The API welcomes you on your first **AI App** by sending back `Hello` followed by the `name` you sent and the end of the sentence.
 
 ![AI App subscribe](images/ai_app_image.png){.thumbnail}
 
@@ -108,7 +108,7 @@ There is no web interface. What is given is an API endpoint that you can reach v
 
 #### Step 1: Check your AI Apps status
 
-First, go check your AI App details and verify that your AI Apphas a **running** status. Please also verify that your labels are clearly mentioned.
+First, go check your AI App details and verify that your AI App has a **running** status. Please also verify that your labels are clearly mentioned.
 
 In this example, we added the label **owner=elea** and two labels were automatically added by OVHcloud.
 
@@ -192,7 +192,7 @@ Result:
  "Hello Elea. Congratulations, you have launched your first AI App!"
 ```
 
-That's it! To go further, you can imagine to deploy an AI model thanks to AI Apps. Refer to this [tutorial](https://docs.ovh.com/au/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
+That's it! To go further, you can imagine deploying an AI model thanks to AI Apps. Refer to this [tutorial](https://docs.ovh.com/au/en/publiccloud/ai/apps/tuto-gradio-sketch-recognition/).
 
 ### Stop and delete your AI App
 
