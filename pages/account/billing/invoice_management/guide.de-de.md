@@ -110,7 +110,7 @@ Wenn Sie nur einen Teil davon exportieren möchten, setzen Sie in der ersten Spa
 
 ![export_selection](images/export_selection.png){.thumbnail}
 
-#### Rechnungen bezahlen
+#### Rechnungen bezahlen <a name="pay-bills"></a>
 
 Um Ihre ausstehenden Rechnungen zu begleichen, klicken Sie einfach auf das Menü `Massenaktionen`{.action} und dann auf den Button `Mein Konto sofort ausgleichen`{.action}.
 

@@ -5,7 +5,7 @@ slug: exchange_diagnostic_what_to_do_if_you_encounter_an_error
 section: Exchange Diagnostics
 ---
 
-**Last updated 28th May 2021**
+**Last updated 8th July 2022**
 
 ## Objective
 
@@ -18,6 +18,7 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 - an [OVHcloud Exchange solution](https://www.ovhcloud.com/en/emails/hosted-exchange/) already set up
 - credentials for the Exchange account to be checked
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- being up to date in the [payments](https://docs.ovh.com/us/en/billing/manage-ovh-bills/#pay-bills) for this service and the related domain name.
 
 ## Instructions
 
@@ -55,7 +56,8 @@ Please follow the instructions in [this guide](../blocked-for-spam/) to enable o
 
 ### Subscription to the account has expired <a name="expired"></a>
 
-Your subscription is no longer active, so sending and receiving have been disabled. You can review the status of the service in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and renew it to reactivate the account.
+Your subscription is no longer active, sending and receiving has been disabled.<br>
+To reactivate your subscription, simply reconfigure its [billing frequency](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/manage-exchange-billing/#periodicity) in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
 ### Account locked due to the security policy
 

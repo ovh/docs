@@ -115,7 +115,7 @@ Se pretender exportar apenas uma parte, selecione as casas correspondentes na pr
 
 ![export_selection](images/export_selection.png){.thumbnail}
 
-#### Pagar as suas faturas
+#### Pagar as suas faturas <a name="pay-bills"></a>
 
 Para efetuar o pagamento das suas faturas com pagamento pendente, clique no menu `Ações massivas`{.action} e no botão `Pagar a minha dívida imediatamente`{.action}.
 

@@ -32,7 +32,7 @@ Gehen Sie dann auf den Tab `E-Mail-Accounts`{.action}. Klicken Sie dann links au
 ![billing_exchange](images/billing-exchange-00.png){.thumbnail}
 
 
-#### Den Verlängerungszeitraum Ihrer Accounts ändern
+#### Den Verlängerungszeitraum Ihrer Accounts ändern <a name="periodicity"></a>
 
 Klicken Sie dann rechts oben auf den Button `Aktionen`{.action} und auf `Verlängerung konfigurieren`{.action}.
 

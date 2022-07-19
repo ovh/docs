@@ -110,7 +110,7 @@ Per esportare solo una parte del prodotto, seleziona le caselle corrispondenti n
 
 ![export_selection](images/export_selection.png){.thumbnail}
 
-#### Paga le tue fatture
+#### Paga le tue fatture <a name="pay-bills"></a>
 
 Per procedere al saldo delle fatture in attesa di pagamento, clicca sul menu `Azioni massive`{.action} e poi sul pulsante `Salda subito l'importo dovuto`{.action}.
 

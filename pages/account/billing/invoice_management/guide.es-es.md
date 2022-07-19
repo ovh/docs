@@ -110,7 +110,7 @@ Si quiere exportar sólo una parte, marque las casillas correspondientes en la p
 
 ![export_selection](images/export_selection.png){.thumbnail}
 
-#### Pagar sus facturas
+#### Pagar sus facturas <a name="pay-bills"></a>
 
 Para abonar las facturas pendientes de pago, haga clic en el menú `Acciones massivas`{.action} y, seguidamente, en el botón `Abonar el importe pendiente ahora`{.action}.
 

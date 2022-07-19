@@ -107,7 +107,7 @@ If you want to export only selected invoices, use the corresponding check boxes 
 
 ![export_selection](images/export_selection.png){.thumbnail}
 
-#### Pay your bills
+#### Pay your bills <a name="pay-bills"></a>
 
 To pay bills that are awaiting payment, simply click on the `Batch actions`{.action} menu, then select `Pay balance immediately`{.action}.
 
