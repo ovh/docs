@@ -18,6 +18,7 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 - an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) already set up
 - credentials for the Exchange account to be checked
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- being up to date in the [payments](https://docs.ovh.com/ca/en/billing/manage-ovh-bills/#pay-bills) for this service and the related domain name.
 
 ## Instructions
 

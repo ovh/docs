@@ -24,6 +24,7 @@ Da es eine Vielzahl von Gründen für mögliche Fehler bei Exchange-Accounts gib
 - Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
 - Sie verfügen über die Login-Daten für den zu überprüfenden Exchange Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie sind auf dem neuesten Stand in den [Zahlungen](https://docs.ovh.com/de/billing/ovh-rechnungen-verwalten/#pay-bills) dieser Dienstleistung und der dazugehörigen Domain.
 
 
 ## In der praktischen Anwendung

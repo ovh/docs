@@ -22,7 +22,8 @@ Błędy na kontach e-mail Exchange mogą mieć wiele przyczyn. Automatyczna diag
 
 - Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
 - Posiadanie danych identyfikacyjnych konta Exchange do sprawdzenia
-- Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Aktualizacja w [płatności](https://docs.ovh.com/pl/billing/zarzadzanie-fakturami-ovhcloud/#pay-bills) tej usługi i powiązanej domeny
 
 ## W praktyce
 
@@ -65,7 +66,7 @@ Aby ponownie włączyć abonament, wystarczy zmienić jego konfigurację [częst
 
 ### Konto zostało zablokowane z powodu polityki bezpieczeństwa
 
-Jeśli w Panelu [klienta aktywowana jest polityka bezpieczeństwa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), konto może zostać tymczasowo zablokowane.
+Jeśli w [Panelu klienta aktywowana jest polityka bezpieczeństwa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), konto może zostać tymczasowo zablokowane.
 
 Możesz na przykład zdecydować, że konto zostanie zablokowane po kilku nieudanych próbach logowania, na czas określony przez Twoją opiekę.
 
@@ -77,7 +78,7 @@ Aby uzyskać więcej informacji na temat tej funkcji, zapoznaj się z naszym [pr
 
 Może to być spowodowane wpisaniem nieprawidłowego hasła do konta. Sprawdź najpierw, czy hasło jest poprawne. Zaloguj się do interfejsu [Webmail](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/), następnie zrestartuj diagnostykę.
 
-W razie potrzeby możesz zmienić hasło do wybranego konta w zakładce `Konta e-mail`{.action} w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jeśli problem się powtórzy, utwórz zgłoszenie.
+W razie potrzeby możesz zmienić hasło do wybranego konta w zakładce `Konta e-mail`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jeśli problem się powtórzy, utwórz zgłoszenie.
 
 ### Wpis MX domeny jest nieprawidłowy
 

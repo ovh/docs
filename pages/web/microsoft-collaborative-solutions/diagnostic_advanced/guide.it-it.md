@@ -24,6 +24,7 @@ Gli errori sugli account email Exchange possono avere diverse cause. Una diagnos
 - Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) già installata
 - Disporre delle credenziali di accesso per l'account Exchange da verificare
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Essere aggiornato nei [pagamenti](https://docs.ovh.com/it/billing/gestire-fatture-ovhcloud/#pay-bills) di questo servizio e del dominio associato
 
 ## Procedura
 

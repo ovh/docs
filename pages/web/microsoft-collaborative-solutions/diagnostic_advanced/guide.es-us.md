@@ -23,6 +23,7 @@ Los errores en las cuentas de correo Exchange pueden tener múltiples causas. Un
 - Tener una [solución Exchange de OVHcloud](https://www.ovhcloud.com/es/emails/hosted-exchange/) ya instalada.
 - Disponer de las claves de acceso para la cuenta Exchange que debe verificar.
 - Estar conectado al [área de cliente de OVHcloud.](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Estar actualizado en los [pagos](https://docs.ovh.com/us/es/billing/gestionar-facturas-ovh/#pay-bills) de este servicio y del dominio asociado.
 
 ## Procedimiento
 
