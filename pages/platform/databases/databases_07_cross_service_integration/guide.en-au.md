@@ -49,7 +49,7 @@ For that you need:
 > Although it is possible to define the same cluster as destination service and source service, this is a bad practice for multiple reasons (performance, security, resiliency, ...)
 >
 
-![Bad pratices](images/databases_07_cross_service_integration-20220719195804400.png)
+![Bad practices](images/databases_07_cross_service_integration-20220719203753927.png)
 
 ### Integration matrix
 
