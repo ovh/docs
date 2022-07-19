@@ -182,7 +182,7 @@ You can edit your domain name’s OVHcloud DNS zone by adding, modifying or dele
 > This is only recommended for experienced users. Also be very careful about the syntax when you make changes.
 > 
 
-In the `DNS zone`{.action}  tab, click `Change in text format`{.action}, then follow the steps that appear.
+In the `DNS zone`{.action} tab, click `Change in text format`{.action}, then follow the steps that appear.
 
 #### Use our configuration assistants
 
