@@ -210,6 +210,11 @@ Use the following route to retrieve the ZFS settings:
 
 ### Changing the ZFS settings of a partition
 
+> [!warning]
+>
+> All the default Z File System settings are optimised. We do not recommend changing these parameters.
+>
+
 Use the following route to edit the ZFS settings:
 
 > [!faq]
