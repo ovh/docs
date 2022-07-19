@@ -1,9 +1,11 @@
 ---
-title: Advanced replication with Leap
+title: Replicação avançada com Leap (EN)
 slug: leap-replication
 excerpt: Implementing advanced replication with Leap
 section: Disaster Recovery Plan
 order: 05
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/nutanix/leap-replication/'
 ---
 
 **Last updated 18th July 2022**
@@ -30,11 +32,11 @@ Nutanix Leap allows:
 ## Requirements
 
 - Two Nutanix clusters in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Access to your clusters via **Prism Central**
 - An interconnection between two clusters, for example using these technologies:
-    - via an IPsec VPN as detailed in the guide [Interconnecting IPsec between two sites](https://docs.ovh.com/gb/en/nutanix/ipsec-interconnection/)
-    - or via a [vRack](https://www.ovh.co.uk/solutions/vrack/) connection.
+    - via an IPsec VPN as detailed in the guide [Interconnecting IPsec between two sites](https://docs.ovh.com/pt/nutanix/ipsec-interconnection/)
+    - or via a [vRack](https://www.ovh.pt/solucoes/vrack/) connection.
 - **Prism Central** needs more resources depending on the mode:
     - Single Mode: 4GB additional RAM.
     - Scale Mode with 3 **Prism Central** virtual machines: 8 GB additional RAM per virtual machine.
@@ -55,7 +57,7 @@ Our Disaster Recovery Plan via **Nutanix Leap** will be set up between two clust
 
 Before you enable **Nutanix Leap**, you must add an IP address for iSCSI connections on each cluster.
 
-Using **Prism Central**, connect to **Prism Element** on the cluster in France. You can use the [Nutanix Hyperconvergence guide](https://docs.ovh.com/gb/en/nutanix/nutanix-hci/) for more information.
+Using **Prism Central**, connect to **Prism Element** on the cluster in France. You can use the [Nutanix Hyperconvergence guide](https://docs.ovh.com/pt/nutanix/nutanix-hci/) for more information.
 
 In the top left-hand corner of the **Prism Element** dashboard, click `the cluster name`{.action}.
 
@@ -505,11 +507,11 @@ The virtual machine that is a member of the disaster recovery plan will boot to 
 
 ## Go further
 
-[Disaster Recovery Plan on Nutanix](https://docs.ovh.com/gb/en/nutanix/disaster-recovery-plan-overview/)
+[Disaster Recovery Plan on Nutanix](https://docs.ovh.com/pt/nutanix/disaster-recovery-plan-overview/)
 
-[IPsec interconnect between two sites](https://docs.ovh.com/gb/en/nutanix/ipsec-interconnection/)
+[IPsec interconnect between two sites](https://docs.ovh.com/pt/nutanix/ipsec-interconnection/)
 
-[OVHcloud vRack](https://www.ovh.co.uk/solutions/vrack/)
+[OVHcloud vRack](https://www.ovh.pt/solucoes/vrack/)
 
 [Nutanix Leap documentation](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6_1)
 

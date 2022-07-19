@@ -30,11 +30,11 @@ Nutanix Leap permet :
 ## Prérequis
 
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté à vos clusters via **Prism Central**.
 - Avoir mis en place une interconnexion entre deux clusters, par exemple à l'aide de ces technologies :
-    - via un VPN IPsec comme détaillé dans le guide « [Interconnexion IPsec entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/) »;
-    - ou via une connexion [vRack](https://www.ovh.com/fr/solutions/vrack/).
+    - via un VPN IPsec comme détaillé dans le guide « [Interconnexion IPsec entre deux sites](https://docs.ovh.com/ca/fr/nutanix/ipsec-interconnection/) »;
+    - ou via une connexion [vRack](https://www.ovh.com/ca/fr/solutions/vrack/).
 - **Prism Central** a besoin de plus de ressources en fonction du mode :
     - Single Mode : 4Go de RAM supplémentaires.
     - Scale Mode avec 3 machines virtuelles **Prism Central** : 8 Go de RAM supplémentaires par machine virtuelle.
@@ -55,7 +55,7 @@ Notre plan de reprise d'activité au travers de **Nutanix Leap** sera mis en pla
 
 Avant d'activer **Nutanix Leap**, il est nécessaire de rajouter une adresse IP pour les connexions iSCSI sur chacun des clusters.
 
-Par le biais de **Prism Central**, connectez-vous à **Prism Element** sur le cluster se trouvant en France. Vous pouvez utiliser le guide [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) pour vous aider.
+Par le biais de **Prism Central**, connectez-vous à **Prism Element** sur le cluster se trouvant en France. Vous pouvez utiliser le guide [Hyperconvergence Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/) pour vous aider.
 
 En haut à gauche du tableau de bord de **Prism Element**, cliquez sur `Le nom du cluster`{.action}.
 
@@ -505,11 +505,11 @@ La machine virtuelle membre du plan de reprise d'activité va démarrer sur le c
 
 ## Aller plus loin
 
-[Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
+[Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/ca/fr/nutanix/disaster-recovery-plan-overview/)
 
-[Interconnexion IPsec entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
+[Interconnexion IPsec entre deux sites](https://docs.ovh.com/ca/fr/nutanix/ipsec-interconnection/)
 
-[OVHcloud vRack](https://www.ovh.com/fr/solutions/vrack/)
+[OVHcloud vRack](https://www.ovh.com/ca/fr/solutions/vrack/)
 
 [Documentation Nutanix Leap](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6_1)
 
