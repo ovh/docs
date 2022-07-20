@@ -11,7 +11,7 @@ order: 01
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 21/05/2021**
+**Ultimo aggiornamento: 20/07/2022**
 
 ## Obiettivo
 
@@ -29,6 +29,7 @@ Gli account email del servizio MX Plan possono essere configurati su client o ap
 ## Prerequisiti
 
 - Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Essere aggiornato nei [pagamenti](https://docs.ovh.com/it/billing/gestire-fatture-ovhcloud/#pay-bills) e [rinnovi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#renewal-management) dei servizi associati (dominio e hosting web).
 - Aver installato l'applicazione Mail sul proprio dispositivo iOS
 - Disporre delle credenziali associate all’account email da configurare
 

@@ -89,7 +89,7 @@ Jeśli wybierzesz tę opcję, przed terminem wygaśnięcia otrzymasz kilka wiado
 > Natomiast jeśli nie chcesz przedłużać tej usługi, nie musisz zlecać rezygnacji z niej.
 >
 
-### Zarządzanie odnawianiem usług
+### Zarządzanie odnawianiem usług <a name="renewal-management"></a>
 
 Z prawej strony każdej usługi kliknij przycisk `...`{.action} w kolumnie `Działania`, aby skonfigurować odnawianie usług.
 
