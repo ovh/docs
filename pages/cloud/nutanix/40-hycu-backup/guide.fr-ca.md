@@ -27,11 +27,11 @@ HYCU for Nutanix est un logiciel de sauvegarde disponible pour Nutanix.
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté sur le cluster via Prism Central. 
 - Avoir un projet Public Cloud avec un bucket de stockage de type High Performance Object Storage ainsi qu'un utilisateur ayant les droits en lecture et écriture sur ce bucket. Vous trouverez plus d'informations sur la création d'un projet Public Cloud et sur l’utilisation du service High Performance Object Storage sur les pages suivantes :
-    - [Création d'un projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/)
-    - [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/).
+    - [Création d'un projet Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/creer-un-projet-public-cloud/)
+    - [Débuter avec S3 High Performance](https://docs.ovh.com/ca/fr/storage/s3/debuter-avec-s3/).
 - Disposer, sur votre Cluster Nutanix, de 60 Go de Stockage, de 8 Go de Mémoire et de 8 Cœurs.
 
 ## En pratique
@@ -662,7 +662,7 @@ La base de données est restaurée dans une nouvelle base de données.
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
+[Hyper-convergence Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/)
 
 [Page d'accueil HYCU](https://www.hycu.com/)
 
@@ -670,6 +670,6 @@ La base de données est restaurée dans une nouvelle base de données.
 
 [Documentation OVHcloud Load Balancer](https://docs.ovh.com/fr/load-balancer/)
 
-[Nos solutions OVHcloud Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/)
+[Nos solutions OVHcloud Object Storage](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

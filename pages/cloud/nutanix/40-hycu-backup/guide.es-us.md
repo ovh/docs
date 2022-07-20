@@ -29,11 +29,11 @@ HYCU for Nutanix is a backup software available for Nutanix.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 - You must be connected to the cluster via Prism Central. 
 - A Public Cloud project with a High Performance Object Storage type storage bucket, with a user with read and write permissions for this bucket. You can find more information on how to create a Public Cloud project and how to use the High Performance Object Storage service on the following pages:
-    - [Creating your first OVHcloud Public Cloud project](https://docs.ovh.com/us/en/public-cloud/create_a_public_cloud_project/)
-    - [Getting started with S3 High Performance](https://docs.ovh.com/us/en/storage/s3/getting-started-with-s3/).
+    - [Creating your first OVHcloud Public Cloud project](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/)
+    - [Getting started with S3 High Performance](https://docs.ovh.com/us/es/storage/s3/getting-started-with-s3/).
 - 60 GB of storage, 8 GB of memory and 8 cores on your Nutanix Cluster.
 
 ## Instructions
@@ -664,7 +664,7 @@ The database is restored into a new database.
 
 ## Go further <a name="gofurther"></a>
 
-[Nutanix Hyper-Convergence](https://docs.ovh.com/us/en/nutanix/nutanix-hci/)
+[Nutanix Hyper-Convergence](https://docs.ovh.com/us/es/nutanix/nutanix-hci/)
 
 [HYCU Home Page](https://www.hycu.com/)
 
@@ -672,6 +672,6 @@ The database is restored into a new database.
 
 [OVHcloud Load Balancer documentation](https://docs.ovh.com/gb/en/load-balancer/)
 
-[Our OVHcloud Object Storage solutions](https://www.ovhcloud.com/en/public-cloud/object-storage/)
+[Our OVHcloud Object Storage solutions](https://www.ovhcloud.com/es/public-cloud/object-storage/)
 
 Join our community of users on <https://community.ovh.com/en/>.
