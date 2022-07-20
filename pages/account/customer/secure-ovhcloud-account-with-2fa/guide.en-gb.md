@@ -5,7 +5,7 @@ excerpt: 'Find out how to improve security for your OVHcloud account by enabling
 section: Security
 ---
 
-**Last updated 15th December 2021**
+**Last updated 20th July 2022**
 
 ## Objective
 
