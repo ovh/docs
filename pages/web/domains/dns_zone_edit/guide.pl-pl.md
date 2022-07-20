@@ -10,7 +10,7 @@ order: 3
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 07-07-2022***
+**Ostatnia aktualizacja z dnia 07-07-2022**
 
 ## Wprowadzenie
 
@@ -68,13 +68,13 @@ Pojawi się tabela wyszczególniająca rekord DNS przypisany do Twojej domeny w 
 
 ### Wpisy DNS
 
-**Edycja strefy DNS jest operacją wymagającą odpowiedniej wiedzy**\: wprowadzenie omyłkowej zmiany mogłoby na przykład uniemożliwić dostęp do Twojej strony WWW lub odbiór nowych wiadomości e-mail.
+**Edycja strefy DNS jest operacją wymagającą odpowiedniej wiedzy**: wprowadzenie omyłkowej zmiany mogłoby na przykład uniemożliwić dostęp do Twojej strony WWW lub odbiór nowych wiadomości e-mail.
 
 Poznanie poszczególnych rekordów będzie pomocne w lepszym zrozumieniu zmian, które wprowadzisz w strefie DNS Twojej domeny. Zapraszamy do zapoznania się z poniższą listą. Zawiera ona cele i specyfikę każdej rejestracji.
 
 #### Zapisy wskazania
 
-- **A** (**A**ddress): Powiąż domenę z adresem IPv4 `X.X.X.X` (gdzie `X` to cyfry od `00` do `25`). Na przykład adres IPv4 serwera, na którym hostowana jest Twoja strona WWW.
+- **A** (**A**ddress): Powiąż domenę z adresem IPv4 `X.X.X.X` (gdzie `X` to cyfry od `0` do `255`). Na przykład adres IPv4 serwera, na którym hostowana jest Twoja strona WWW.
 
 - **AAAA** (4 litery **A**, ponieważ zapis ten jest zakodowany czterokrotnie więcej bitów niż historyczne pole **A**): Powiąż domenę z adresem IPv6. Na przykład adres IPv6 serwera, na którym hostowana jest Twoja strona WWW.
 
@@ -254,7 +254,8 @@ Możesz wybrać:
 Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
 
 Jeśli chcesz skrócić czas potrzebny na kolejną edycję strefy DNS OVHcloud, możesz zmienić w pewnym stopniu TTL (*Time To Live*), który będzie miał zastosowanie do wszystkich rekordów strefy DNS.
-W tym celu przejdź do zakładki `Strefa DNS`{.action} w Panelu klienta, kliknij przycisk domyślny` `{.action} TTL, a następnie postępuj zgodnie z kolejnymi instrukcjami. 
+
+W tym celu przejdź do zakładki `Strefa DNS`{.action} w Panelu klienta, kliknij `przycisk domyślny TTL`{.action}, a następnie postępuj zgodnie z kolejnymi instrukcjami. 
 
 Możesz również zmienić TTL rekordu DNS. Operacja ta może być jednak przeprowadzona tylko na jednym rekordzie, po zmianie lub po dodaniu rekordu.
 
