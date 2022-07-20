@@ -160,7 +160,7 @@ Saisissez ces informations :
 
 - **Type** : `Disk`
 - **Operation** : `Clone from Image`
-- **Image** : `hycu-4.3.0-XXXX`
+- **Image** : `hycu-4.X.X-XXXX`
 
 Cliquez sur `Save`{.action}.
 
