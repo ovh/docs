@@ -44,6 +44,13 @@ For that you need:
 
 ![Best practices](images/databases_07_cross_service_integration-20220708091945946.png){.thumbnail}
 
+> [!warning]
+>
+> Although it is possible to define the same cluster as destination service and source service, this is a bad practice for multiple reasons (performance, security, resiliency, ...)
+>
+
+![Bad practices](images/databases_07_cross_service_integration-20220719203753927.png)
+
 ### Integration matrix
 
 
@@ -271,11 +278,6 @@ Get integration capabilities related to your Public Cloud Databases service:
 #### Store yours logs or metrics
 
 As a first step, you need to push your metrics or logs somewhere, in order to store them and retrieve the metrics with Grafana.
-
-> [!primary]
->
-> Although it is possible to define the same cluster as destination and source, this is a bad practice for multiple reasons (performance, security, resiliency, ...).
->
 
 For that, you need to create a new integration:
 

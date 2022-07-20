@@ -5,7 +5,7 @@ excerpt: 'Find out how to improve security for your OVHcloud account by enabling
 section: Security
 ---
 
-**Last updated 16th April 2020**
+**Last updated 20th July 2022**
 
 ## Objective
 
@@ -30,10 +30,9 @@ We offer three different methods:
 - **via an OTP mobile application**. Install an OTP mobile application on to your Android or iOS smartphone or tablet. Next, link the application to your OVHcloud account. Each time you try to log in to your account, the application will generate a one-time code valid for a short time period.
 Once you have linked the application to your account, your device no longer needs an internet connection for the codes to be generated.
 
-
 - **via a U2F security key**. This method involves plugging a U2F USB security key into your computer each time you log in to your OVHcloud account. When you plug in the key, the authentication process takes place automatically. This method offers a higher level of security, as it is based on independent security hardware that is completely separate from your computer, smartphone or tablet. As a result, it is less exposed to the risk of hacking.
 
-### Step 1: Enable your first two-factor authentication method.
+### Step 1: Enable your first two-factor authentication method
 
 - [Enabling two-factor authentication via SMS](https://docs.ovh.com/gb/en/customer/enable-two-factor-authentication-via-sms/)
 - [Enabling two-factor authentication via mobile application](https://docs.ovh.com/gb/en/customer/enable-two-factor-authentication-via-mobile-application/)
@@ -41,7 +40,7 @@ Once you have linked the application to your account, your device no longer need
 
 Once you have added your first method, you can also add one or two other methods, so that you have more choice in how you log in to your account.
 
-### Step 2: Save the emergency security codes.
+### Step 2: Save the emergency security codes
 
 When you add two-factor authentication for the first time, you are sent emergency codes. Please keep them saved somewhere safe. We recommend saving them in a password manager.
 
@@ -55,11 +54,8 @@ You can delete or regenerate them via the OVHcloud Control Panel:
 >
 > As a reminder, please note that it is important to save these emergency codes and ensure that they are valid. If one of the security methods you have selected becomes unavailable (theft or loss of your mobile phone or security key), access to your account may be blocked.
 > 
-> 
-> 
 
-
-### Step 3: Log in to the OVHcloud Control Panel with two-factor authentication.
+### Step 3: Log in to the OVHcloud Control Panel with two-factor authentication
 
 Once you have enabled two-factor authentication, the login screen will show the security method selected. If you would like to use another method, click `Try another method`{.action}.
 
@@ -76,7 +72,7 @@ If you have lost one of your devices (mobile phone/smartphone/security key) or i
 You can also use one of the security codes provided to you. 
 
 
-### Remove a device linked to two-factor authentication.
+### Remove a device linked to two-factor authentication <a name="delete-device"></a>
 
 > [!warning]
 >
@@ -99,6 +95,36 @@ Next, click `Security`{.action} (the first step on the image below), then click 
 
 ![2FA](images/hub2FAc.png){.thumbnail}
 
+### Disable two-factor authentication completely <a name="disable-2fa"></a>
+
+#### If you still have access to your OVHcloud Control Panel
+
+To disable two-factor authentication completely on your OVHcloud account, you will need to delete **all** of the devices entered, **and also disable the emergency codes**.
+
+To remove each device, please refer to the dedicated [part of this guide](#delete-device).
+
+Once you have removed all your devices, disable the emergency codes by clicking the `Disable 2FA codes`{.action}  button.
+
+![2FA codes](images/disabling-codes.png){.thumbnail}
+
+#### If you no longer have access to your OVHcloud Control Panel
+
+If you no longer have valid devices and if you no longer have valid emergency codes, you can request that two-factor authentication be disabled by contacting our support teams.
+
+Before contacting us, you must gather the following documents:
+
+|OVHcloud account type|Needed documents|
+|---|---|
+|Private individual|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder|
+|Company|- Company registration documents<br><br>- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder, or in the name of a person authorized to represent the company.<br><br>- Company registration documents|
+
+Once you have gathered your supporting documents, contact our OVHcloud support teams, dialing 0333 370 0425. 
+
+> [!warning]
+>
+> Your documents must be sent to us from an email address **registered in your OVHcloud account**.
+
+After verifying your documents, a support agent will manually disable two-factor authentication on your OVHcloud account.
 
 ## Go further
 
