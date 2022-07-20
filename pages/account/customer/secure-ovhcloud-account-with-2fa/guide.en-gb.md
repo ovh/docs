@@ -116,7 +116,7 @@ Before contacting us, you must gather the following documents:
 |OVHcloud account type|Needed documents|
 |---|---|
 |Private individual|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder|
-|Company|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder, or in the name of a person authorized to represent the company.<br><br>- Company registration documents|
+|Company|- Company registration documents<br><br>- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder, or in the name of a person authorized to represent the company.<br><br>- Company registration documents|
 
 Once you have gathered your supporting documents, contact our OVHcloud support teams, dialing 0333 370 0425. 
 
