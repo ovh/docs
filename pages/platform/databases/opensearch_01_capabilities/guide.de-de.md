@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/capabilities/'
 ---
 
-**Last updated January 26<sup>th</sup>, 2022**
+**Last updated July 13, 2022**
 
 ## Objective
 
@@ -136,7 +136,7 @@ Here is the list of plugins enabled by default:
 
 #### Network
 
-OpenSearch clusters are reachable through port specified in the control panel or API, for example 23125. 
+OpenSearch clusters are reachable through port specified in the control panel or API, for example 23125.
 
 Public networking can be used for all the offers.
 

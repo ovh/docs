@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/grafana/capabilities/'
 ---
 
-**Last updated April 7<sup>th</sup>, 2022**
+**Last updated July 13, 2022**
 
 ## Objective
 

@@ -6,7 +6,7 @@ section: M3 Aggregator - Guides
 order: 010
 ---
 
-**Last updated April 14<sup>th</sup>, 2022**
+**Last updated July 13, 2022**
 
 ## Objective
 
