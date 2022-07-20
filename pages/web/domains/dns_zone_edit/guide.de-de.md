@@ -16,7 +16,7 @@ section: 'DNS und DNS-Zone'
 
 ### DNS Konzept verstehen <a name="understanddns"></a>
 
-**D**omain **N**ame **S**ystem ist ein Datensatz, um eine Domain mit einer IP-Adresse zu verbinden.
+**D**omain **N**ame **S**ystem steht für Datensätze, die Domains mit IP-Adressen verbinden.
 
 Wenn Sie zum Beispiel auf die Website *mydomain.ovh* zugreifen möchten, wird Ihre Anfrage zunächst von diesem DNS-Array bearbeitet, das sie auf die IP-Adresse des Servers leitet, auf dem die Website *mydomain.ovh* gehostet wird.
 
@@ -42,9 +42,9 @@ Die DNS-Zone einer Domain ist eine Konfigurationsdatei bestehend aus **Datensät
 
 ## Voraussetzungen
 
-- Sie haben über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ausreichenden Zugriff auf die Verwaltung der betreffenden Domain.
+- Sie haben über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ausreichende Berechtigungen zur Verwaltung der betreffenden Domain.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- OVHcloud DNS-Server sind in Verwendung für die betreffende Domain
+- OVHcloud DNS-Server sind in Verwendung für die betreffende Domain.
 
 > [!warning]
 >

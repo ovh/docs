@@ -6,7 +6,7 @@ section: Configure on smartphone
 order: 01
 ---
 
-**Last updated 21st May 2021**
+**Last updated 20th July 2022**
 
 ## Objective
 
@@ -24,6 +24,7 @@ You can configure MX Plan email addresses on email clients and applications, if 
 ## Requirements
 
 - an MX Plan email address included in [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/){.external}
+- being up-to-date in the [payments](https://docs.ovh.com/sg/en/billing/manage-ovh-bills/#pay-bills) and [renewals](https://docs.ovh.com/sg/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management) of related services (domain name and web hosting plan)
 - the Mail app installed on your iOS device
 - login credentials for the email account to be configured
 

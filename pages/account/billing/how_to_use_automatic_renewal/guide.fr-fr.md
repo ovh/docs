@@ -84,7 +84,7 @@ Si vous choisissez ce mode, vous recevrez plusieurs relances par e-mail avant é
 > En revanche, si vous ne souhaitez pas conserver ce service, il n'est pas nécessaire d'en demander la [résiliation](https://docs.ovh.com/fr/billing/how-to-cancel-your-services/).
 >
 
-### Gérer le renouvellement de vos services
+### Gérer le renouvellement de vos services <a name="renewal-management"></a>
 
 À la droite de chaque service, cliquez sur le bouton `...`{.action} dans la colonne `Actions` pour paramétrer le renouvellement de vos services.
 

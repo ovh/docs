@@ -89,7 +89,7 @@ Se escolher esta forma de renovação, receberá vários e-mails a lembrar o fim
 > No entanto, se não pretender manter este serviço, não será necessário pedir a sua rescisão.
 >
 
-### Gerir a renovação dos serviços
+### Gerir a renovação dos serviços <a name="renewal-management"></a>
 
 À direita de cada serviço, clique no botão `...`{.action} na coluna `Ações` para parametrizar a renovação dos seus serviços.
 

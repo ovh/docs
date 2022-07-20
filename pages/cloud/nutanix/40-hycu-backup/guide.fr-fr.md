@@ -9,7 +9,7 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 25/04/2022**
+**Dernière mise à jour le 20/07/2022**
 
 ## Objectif
 
@@ -52,7 +52,7 @@ Cliquez sur `Add Image`{.action}.
 
 ![Add Image HYCU 02](images/00-addimagehycu02.png){.thumbnail}
 
-Choisissez `URL`{.action} comme type de source, saisissez l'URL `https://download.hycu.com/ec/v4.3.0/hycu-4.3.0-4122.qcow2` dans **Enter Image URL** et cliquez sur `Upload file`{.action}. 
+Choisissez `URL`{.action} comme type de source, saisissez l'URL `https://download.hycu.com/ec/v4.X.X/hycu-4.X.X-XXXX.qcow2` dans **Enter Image URL** et cliquez sur `Upload file`{.action}. 
 
 > [!primary]
 > 
@@ -60,7 +60,7 @@ Choisissez `URL`{.action} comme type de source, saisissez l'URL `https://downloa
 
 ![Add Image HYCU 03](images/00-addimagehycu03.png){.thumbnail}
 
-Retirez l'extension **.qcow2** derrière le nom et laissez `hycu-4.3.0-4122`. Saisissez une description et cliquez sur `Next`{.action}.
+Retirez l'extension **.qcow2** derrière le nom et laissez `hycu-4.X.X-XXXX`. Saisissez une description et cliquez sur `Next`{.action}.
 
 > [!warning]
 > Il est important d'enlever l'extension dans le nom afin de faciliter le processus de configuration d'HYCU.
@@ -160,7 +160,7 @@ Saisissez ces informations :
 
 - **Type** : `Disk`
 - **Operation** : `Clone from Image`
-- **Image** : `hycu-4.3.0-4122`
+- **Image** : `hycu-4.X.X-XXXX`
 
 Cliquez sur `Save`{.action}.
 
@@ -395,7 +395,7 @@ Sélectionnez `URL`{.action}.
 
 Saisissez l'URL de l'image qcow2 de la dernière version d'HYCU, tel que : 
 
-- `https://download.hycu.com/ec/v4.3.1/hotfixes/4.3.1-616/hycu-4.3.1-616.qcow2`
+- `https://download.hycu.com/ec/v4.X.X/hotfixes/4.X.X-XXXX/hycu-4.X.X-XXXX.qcow2`
 
 > [!primary]
 > 
@@ -405,7 +405,7 @@ Cliquez sur `Upload file`{.action}.
 
 ![Add Image HYCU for update 03](images/04-addimageforupdate03.png){.thumbnail}
 
-Retirez l'extension **.qcow2** derrière le nom `hycu-'4.3.1-616`, saisissez une description et cliquez sur `Next`{.action}.
+Retirez l'extension **.qcow2** derrière le nom `hycu-'4.X.X-XXXX`, saisissez une description et cliquez sur `Next`{.action}.
 
 > [!warning]
 > Il est important de retirer l'extension dans le nom afin de faciliter le processus de mise à jour d'HYCU.

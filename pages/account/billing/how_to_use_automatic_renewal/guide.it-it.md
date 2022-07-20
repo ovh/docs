@@ -89,7 +89,7 @@ Se scegli questa modalità, riceverai diverse email di promemoria prima della sc
 > Mentre, se non vuoi mantenere il servizio attivo, non è necessario richiederne la disattivazione.
 >
 
-### Gestire il rinnovo dei servizi
+### Gestire il rinnovo dei servizi <a name="renewal-management"></a>
 
 A destra di ogni servizio, clicca sul pulsante `...`{.action} nella colonna `Azioni` per impostare il rinnovo dei tuoi servizi.
 
