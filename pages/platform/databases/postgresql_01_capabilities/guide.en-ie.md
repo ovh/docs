@@ -6,7 +6,7 @@ section: PostgreSQL - Guides
 order: 010
 ---
 
-**Last updated January 26<sup>th</sup>, 2022**
+**Last updated July 13, 2022**
 
 ## Objective
 
