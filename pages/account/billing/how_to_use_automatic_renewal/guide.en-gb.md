@@ -84,7 +84,7 @@ If you select this mode, you will receive several reminder emails before the exp
 > It is therefore not necessary to request the cancellation if you do not want to keep this service.
 >
 
-### Manage renewal for your services
+### Manage renewal for your services <a name="renewal-management"></a>
 
 To the right of each service, click on the `...`{.action} button in the `Actions` column to set renewal for your services.
 

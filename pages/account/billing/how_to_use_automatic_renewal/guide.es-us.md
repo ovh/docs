@@ -88,7 +88,7 @@ Si elige este modo, recibirá por correo electrónico varios recordatorios por c
 > En cambio, en caso de no querer conservar este servicio, no es necesario solicitar la baja.
 >
 
-### Gestionar la renovación de los servicios
+### Gestionar la renovación de los servicios <a name="renewal-management"></a>
 
 A la derecha de cada servicio, haga clic en el botón `...`{.action} en la columna `Acciones` para configurar la renovación de los servicios.
 

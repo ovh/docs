@@ -88,7 +88,7 @@ Wenn Sie diesen Modus wählen, erhalten Sie vor dem Ablaufdatum der Dienste mehr
 > Es ist also nicht notwendig, die Kündigung zu beantragen, wenn Sie die Dienstleistung nicht beibehalten möchten.
 >
 
-### Verlängerung verwalten
+### Verlängerung verwalten <a name="renewal-management"></a>
 
 Klicken Sie rechts neben jedem Dienst auf den Button `...`{.action} in der Spalte `Aktionen`, um die Verlängerung Ihrer Dienstleistungen einzustellen.
 
