@@ -1,6 +1,8 @@
 ---
-title: Configuring HYCU Backup
+title: Configura HYCU Backup (EN)
 slug: hycu-backup
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/nutanix/hycu-backup/'
 excerpt: Installing HYCU Backup on a Nutanix cluster
 section: Backups
 order: 01
