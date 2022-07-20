@@ -9,7 +9,7 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 25/04/2022**
+**Dernière mise à jour le 20/07/2022**
 
 ## Objectif
 
@@ -20,18 +20,18 @@ HYCU for Nutanix est un logiciel de sauvegarde disponible pour Nutanix.
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 > La licence HYCU n'est pas fournie par OVHcloud. Pour plus d'informations, contactez le service commercial de HYCU ou d'OVHcloud.
 
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central. 
 - Avoir un projet Public Cloud avec un bucket de stockage de type High Performance Object Storage ainsi qu'un utilisateur ayant les droits en lecture et écriture sur ce bucket. Vous trouverez plus d'informations sur la création d'un projet Public Cloud et sur l’utilisation du service High Performance Object Storage sur les pages suivantes :
-    - [Création d'un projet Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/creer-un-projet-public-cloud/)
-    - [Débuter avec S3 High Performance](https://docs.ovh.com/ca/fr/storage/s3/debuter-avec-s3/).
+    - [Création d'un projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/)
+    - [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/).
 - Disposer, sur votre Cluster Nutanix, de 60 Go de Stockage, de 8 Go de Mémoire et de 8 Cœurs.
 
 ## En pratique
@@ -52,7 +52,7 @@ Cliquez sur `Add Image`{.action}.
 
 ![Add Image HYCU 02](images/00-addimagehycu02.png){.thumbnail}
 
-Choisissez `URL`{.action} comme type de source, saisissez l'URL `https://download.hycu.com/ec/v4.3.0/hycu-4.3.0-4122.qcow2` dans **Enter Image URL** et cliquez sur `Upload file`{.action}. 
+Choisissez `URL`{.action} comme type de source, saisissez l'URL `https://download.hycu.com/ec/v4.X.X/hycu-4.X.X-XXXX.qcow2` dans **Enter Image URL** et cliquez sur `Upload file`{.action}. 
 
 > [!primary]
 > 
@@ -60,7 +60,7 @@ Choisissez `URL`{.action} comme type de source, saisissez l'URL `https://downloa
 
 ![Add Image HYCU 03](images/00-addimagehycu03.png){.thumbnail}
 
-Retirez l'extension **.qcow2** derrière le nom et laissez `hycu-4.3.0-4122`. Saisissez une description et cliquez sur `Next`{.action}.
+Retirez l'extension **.qcow2** derrière le nom et laissez `hycu-4.X.X-XXXX`. Saisissez une description et cliquez sur `Next`{.action}.
 
 > [!warning]
 > Il est important d'enlever l'extension dans le nom afin de faciliter le processus de configuration d'HYCU.
@@ -160,7 +160,7 @@ Saisissez ces informations :
 
 - **Type** : `Disk`
 - **Operation** : `Clone from Image`
-- **Image** : `hycu-4.3.0-4122`
+- **Image** : `hycu-4.X.X-XXXX`
 
 Cliquez sur `Save`{.action}.
 
@@ -395,7 +395,7 @@ Sélectionnez `URL`{.action}.
 
 Saisissez l'URL de l'image qcow2 de la dernière version d'HYCU, tel que : 
 
-- `https://download.hycu.com/ec/v4.3.1/hotfixes/4.3.1-616/hycu-4.3.1-616.qcow2`
+- `https://download.hycu.com/ec/v4.X.X/hotfixes/4.X.X-XXXX/hycu-4.X.X-XXXX.qcow2`
 
 > [!primary]
 > 
@@ -405,7 +405,7 @@ Cliquez sur `Upload file`{.action}.
 
 ![Add Image HYCU for update 03](images/04-addimageforupdate03.png){.thumbnail}
 
-Retirez l'extension **.qcow2** derrière le nom `hycu-'4.3.1-616`, saisissez une description et cliquez sur `Next`{.action}.
+Retirez l'extension **.qcow2** derrière le nom `hycu-'4.X.X-XXXX`, saisissez une description et cliquez sur `Next`{.action}.
 
 > [!warning]
 > Il est important de retirer l'extension dans le nom afin de faciliter le processus de mise à jour d'HYCU.
@@ -662,7 +662,7 @@ La base de données est restaurée dans une nouvelle base de données.
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Hyper-convergence Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/)
+[Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
 [Page d'accueil HYCU](https://www.hycu.com/)
 
@@ -670,6 +670,6 @@ La base de données est restaurée dans une nouvelle base de données.
 
 [Documentation OVHcloud Load Balancer](https://docs.ovh.com/fr/load-balancer/)
 
-[Nos solutions OVHcloud Object Storage](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/)
+[Nos solutions OVHcloud Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

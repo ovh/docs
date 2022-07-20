@@ -395,7 +395,7 @@ Sélectionnez `URL`{.action}.
 
 Saisissez l'URL de l'image qcow2 de la dernière version d'HYCU, tel que : 
 
-- `https://download.hycu.com/ec/v4.3.1/hotfixes/4.X.X-XXXX/hycu-4.X.X-XXXX.qcow2`
+- `https://download.hycu.com/ec/v4.X.X/hotfixes/4.X.X-XXXX/hycu-4.X.X-XXXX.qcow2`
 
 > [!primary]
 > 

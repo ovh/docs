@@ -9,7 +9,7 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Last updated 25th April 2022**
+**Last updated 20th July 2022**
 
 ## Objective
 
@@ -27,11 +27,11 @@ HYCU for Nutanix is a backup software available for Nutanix.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - You must be connected to the cluster via Prism Central. 
 - A Public Cloud project with a High Performance Object Storage type storage bucket, with a user with read and write permissions for this bucket. You can find more information on how to create a Public Cloud project and how to use the High Performance Object Storage service on the following pages:
-    - [Creating your first OVHcloud Public Cloud project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/)
-    - [Getting started with S3 High Performance](https://docs.ovh.com/ca/en/storage/s3/getting-started-with-s3/).
+    - [Creating your first OVHcloud Public Cloud project](https://docs.ovh.com/us/en/public-cloud/create_a_public_cloud_project/)
+    - [Getting started with S3 High Performance](https://docs.ovh.com/us/en/storage/s3/getting-started-with-s3/).
 - 60 GB of storage, 8 GB of memory and 8 cores on your Nutanix Cluster.
 
 ## Instructions
@@ -52,7 +52,7 @@ Click `Add Image`{.action}.
 
 ![Add Image HYCU 02](images/00-addimagehycu02.png){.thumbnail}
 
-Choose `URL`{.action} as the source type, enter the URL `https://download.hycu.com/ec/v4.3.0/hycu-4.3.0-4122.qcow2` in **Enter Image URL**, and click `Upload file`{.action}. 
+Choose `URL`{.action} as the source type, enter the URL `https://download.hycu.com/ec/v4.X.X/hycu-4.X.X-XXXX.qcow2` in **Enter Image URL**, and click `Upload file`{.action}. 
 
 > [!primary]
 > 
@@ -60,7 +60,7 @@ Choose `URL`{.action} as the source type, enter the URL `https://download.hycu.c
 
 ![Add Image HYCU 03](images/00-addimagehycu03.png){.thumbnail}
 
-Remove the **.qcow2** extension behind the name and leave `hycu-4.3.0-4122`. Enter a description and click `Next`{.action}.
+Remove the **.qcow2** extension behind the name and leave `hycu-4.X.X-XXXX`. Enter a description and click `Next`{.action}.
 
 > [!warning]
 > It is important to remove the extension in the name to facilitate the HYCU configuration process.
@@ -160,7 +160,7 @@ Enter these values:
 
 - **Type**: `Disk`
 - **Operation**: `Clone from Image`
-- **Image**: `hycu-4.3.0-4122`
+- **Image**: `hycu-4.X.X-XXXX`
 
 Click `Save`{.action}.
 
@@ -395,7 +395,7 @@ Select `URL`{.action}.
 
 Enter the URL for the qcow2 image of the latest version of HYCU, such as: 
 
-- `https://download.hycu.com/ec/v4.3.1/hotfixes/4.3.1-616/hycu-4.3.1-616.qcow2`
+- `https://download.hycu.com/ec/v4.X.X/hotfixes/4.X.X-XXXX/hycu-4.X.X-XXXX.qcow2`
 
 > [!primary]
 > 
@@ -405,7 +405,7 @@ Click `Upload file`{.action}.
 
 ![Add Image HYCU for update 03](images/04-addimageforupdate03.png){.thumbnail}
 
-Remove the extension **.qcow2** behind the name `hycu-'4.3.1-616`, enter a description and click `Next`{.action}.
+Remove the extension **.qcow2** behind the name `hycu-'4.X.X-XXXX`, enter a description and click `Next`{.action}.
 
 > [!warning]
 > It is important to remove the extension in the name to facilitate the HYCU update process.
@@ -662,7 +662,7 @@ The database is restored into a new database.
 
 ## Go further <a name="gofurther"></a>
 
-[Nutanix Hyper-Convergence](https://docs.ovh.com/ca/en/nutanix/nutanix-hci/)
+[Nutanix Hyper-Convergence](https://docs.ovh.com/us/en/nutanix/nutanix-hci/)
 
 [HYCU Home Page](https://www.hycu.com/)
 
@@ -670,6 +670,6 @@ The database is restored into a new database.
 
 [OVHcloud Load Balancer documentation](https://docs.ovh.com/gb/en/load-balancer/)
 
-[Our OVHcloud Object Storage solutions](https://www.ovhcloud.com/en-ca/public-cloud/object-storage/)
+[Our OVHcloud Object Storage solutions](https://www.ovhcloud.com/en/public-cloud/object-storage/)
 
 Join our community of users on <https://community.ovh.com/en/>.
