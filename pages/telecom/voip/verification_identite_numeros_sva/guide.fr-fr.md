@@ -6,7 +6,7 @@ section: Administratif
 order: 4
 ---
 
-**Dernière mise à jour le 22/06/2022**
+**Dernière mise à jour le 20/07/2022**
 
 ## Objectif
 
@@ -128,7 +128,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Une **pièce d'identité** en cours de validité de chacun des bénéficiaires effectifs de la société titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
 - Un **KBIS de moins de trois mois** de la société titulaire du compte OVHcloud.
 - Les statuts de la société, datés et signés.
-- Le registre des bénéficiaires effectifs type DBE-S1 (présentant les personnes physiques détenant directement ou indirectement plus de 25% du capital de la société).
+- Le registre des bénéficiaires effectifs type DBE-S1 (présentant les personnes physiques détenant directement ou indirectement plus de 25% du capital de la société). Vous pouvez l'obtenir gratuitement sur le site [INPI.fr](https://www.inpi.fr/beneficiaires-effectifs).
 - Un **Relevé d'Identité Bancaire**.
 
 ##### **Société cotée dans un pays de l'UE ou un pays tiers équivalent** <a name="societecotee"></a>
