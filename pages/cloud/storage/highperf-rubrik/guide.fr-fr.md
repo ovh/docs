@@ -100,13 +100,13 @@ L'accès S3 a été créé il est composé de ces éléments :
 
 Nous allons utiliser l'outils en ligne de commande openssl disponible sous Linux ou Windows 
 
-Lancer cette commande dans un terminal
+Lancer cette commande dans un terminal :
 
 ```bash
 openssl genrsa -out rubrik_encryption_key.pem 2048
 ```
 
-Le contenu du fichier est de cette forme :
+Le contenu du fichier est de cette forme par exemple :
 
 ```console
 -----BEGIN RSA PRIVATE KEY-----
