@@ -10,9 +10,9 @@ order: 171
 
 ## Objectif
 
-Rubrik est une solution de sauvegarde robuste et sécurisé qui autorise l'archivage sur un stockage High Performance Object Storage OVHcloud.
+Rubrik est une solution de sauvegarde robuste et sécurisée qui autorise l'archivage sur un stockage High Performance Object Storage OVHcloud.
 
-**Ce guide explique comment configurer High Performance Object Storage OVHcloud en tant qu'archive du logiciel Rubrik.**
+**Ce guide explique comment configurer High Performance Object Storage OVHcloud comme dépot d'archivage du logiciel Rubrik.**
 
 > [!warning]
 >
@@ -29,16 +29,16 @@ Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/
 
 ## En pratique
 
-Pour pouvoir utiliser **High Performance Storage** en tant qu'archive du logiciel Rubrik il est nécessaire d'avoir au préalable :
+Pour pouvoir utiliser **High Performance Storage** en tant que dépot d'archive du logiciel Rubrik il est nécessaire d'avoir au préalable :
 
 - Un utilisateur dans un compte public OVHcloud avec la possibilité de gérer de créer des Bucket ;
 - Une clé RSA 2048 bits.
 
 ### Création d'un utilisateur sur un projet public OVHcloud
 
-Nous allons créer un compte dans un projet public qui sera capable de créer des buckets sur un stockage **High Performance Object Storage**
+Nous allons créer un compte dans un projet public qui sera capable d'ajouter des *buckets* sur un stockage **High Performance Object Storage**
 
-Connectez-vous à l'espace client OVHcloud au travers de l'url [OVHcloud](https://www.ovhcloud.com)
+Connectez-vous à l'espace client OVHcloud au travers de l'url [OVHcloud](https://www.ovhcloud.com).
 
 Cliquez en haut à gauche sur le `menu principal`{.action}.
 
@@ -54,43 +54,43 @@ Cliquez en haut à droite sur la `flêche vers la droite`{.action}.
 
 Cliquez sur votre `projet`{.action}.
 
-![01 Create User 03](images/01-createuser03.png)
-
-Cliquez en haut à gauche sur le `menu principal`{.action}.
-
 ![01 Create User 04](images/01-createuser04.png)
 
 Cliquez en haut à gauche sur le `menu principal`{.action}.
 
-![01 Create User 05](images/01-createuser06.png)
+![01 Create User 05](images/01-createuser05.png)
 
-Sélectionnez `Public Cloud`{.action}.
+Cliquez en haut à gauche sur le `menu principal`{.action}.
 
 ![01 Create User 06](images/01-createuser06.png)
 
-Utilisez la `barre de défilement`{.action} et cliquez sur `Users & Roles`{.action}.
+Sélectionnez `Public Cloud`{.action}.
 
 ![01 Create User 07](images/01-createuser07.png)
 
-cliquez sur `Create user`{.action}.
+Utilisez la `barre de défilement`{.action} et cliquez sur `Users & Roles`{.action}.
 
 ![01 Create User 08](images/01-createuser08.png)
 
-Saisissez un `nom d'utilisateur` dans **User description** et cliquez sur `Next`{.action}.
+cliquez sur `Create user`{.action}.
 
 ![01 Create User 09](images/01-createuser09.png)
 
-Cochez la case `ObjectStore operator`{.action} et cliquez sur `Confirm`{.action}.
+Saisissez un `nom d'utilisateur` dans **User description** et cliquez sur `Next`{.action}.
 
 ![01 Create User 10](images/01-createuser10.png)
 
-Un compte est crée avec son mot de passe mais il ne servira pas pour la sauvegarde, il faut créer un accés S3 , pour cela cliquez sur `l'icône rond avec 3 petits points`{.action} à droite.
+Cochez la case `ObjectStore operator`{.action} et cliquez sur `Confirm`{.action}.
 
 ![01 Create User 11](images/01-createuser11.png)
 
-Choisissez sur `Generate S3 credentials`{.action} à droite.
+Un compte est crée avec son mot de passe mais il ne servira pas pour la sauvegarde, il faut créer un accés S3 , pour cela cliquez sur `l'icône rond avec 3 petits points`{.action} à droite.
 
 ![01 Create User 12](images/01-createuser12.png)
+
+Choisissez sur `Generate S3 credentials`{.action} à droite.
+
+![01 Create User 13](images/01-createuser13.png)
 
 L'accès S3 a été créé ils est composé de ces éléments :
 
@@ -134,6 +134,9 @@ Lors de la configuration du dépot d'archive veuillez saisir ces informations :
 ** RSA Key** : `copiez la clé RSA -----BEGIN RSA PRIVATE KEY----- ... -----END RSA PRIVATE KEY-----`
 
 Ensuite cliquez sur `Add`{.action}
+
+![02 Configure rubrik repository 01](images/02-configure-rubrik-repository01.png)
+
 
 Un bucket sera créé dans le projet public OVHcloud avec comme préfixe le nom dans **bucket Prefix**
 
