@@ -21,11 +21,15 @@ This guide aims to familiarise you with the management of your containers / obje
 
 ### User management
 
-Once your user has been created, you must generate its S3 certificates.
+Once your user has been created with `ObjectStore operator` role or with `Administrator` role, you must generate its S3 credentials.
 
-![User menu](images/HighPerf-S3-Getting-started-20211123122705161.png)
+![User menu](images/highperf-s3-getting-started-20220721141708221.png)
 
-![Result](images/HighPerf-S3-Getting-started-20211123122810597.png)
+> [!primary]
+>
+> Be sure to save the acces and secret keys shown in the green message box to a password manager at this time
+
+![Result](images/highperf-s3-getting-started-20220721141829843.png)
 
 ### Bucket management
 
@@ -48,7 +52,7 @@ If this is not your first bucket:
 
 Select the High Performance solution and click `Next`{.action}.
 
-![Select High Performance Solution](images/HighPerf-S3-getting-started-2021102809081084.png)
+![Select High Performance Solution](images/highperf-s3-getting-started-20220502112813860.png)
 
 Select the region of your bucket and click `Next`{.action}.
 
@@ -106,7 +110,7 @@ You can now interact with your object.
 #### Installation
 
 ```bash
-user@host:~$ pip3 install python-openstackclient awscli awscli-plugin-endpoint
+user@host:~$ pip3 install awscli awscli-plugin-endpoint
 ```
 
 > [!primary]
@@ -114,38 +118,8 @@ user@host:~$ pip3 install python-openstackclient awscli awscli-plugin-endpoint
 > `awscli-plugin-endpoint` is optional  
 > Install the `groff` package if you want to use the command line help
 >
+
 #### Configuration
-
-S3 tokens are different, you need 2 parameters (access and secret) to generate an S3 token. These credentials will be stored securely in Keystone. Follow the next steps to generate it.
-
-Set the OpenStack environment variables:
-
-```bash
-user@host:~$ source openrc.sh
-```
-
-> [!primary]
->
-> If necessary, download your user's OpenRC file.
->
-> ![Download Openrc file](images/HighPerf-S3-Getting-started-20211123123335113.png)
->
-
-Finally, with the `python-openstack` client:
-
-```bash
-user@host:~$ openstack ec2 credentials create
-+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-| Field      | Value                                                                                                                                      |
-+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-| access     | 86cfae29192b4cedb49bbc0f067a9df8                                                                                                           |
-| links      | {'self': 'https://auth.cloud.ovh.net:35357/v3/users/a1a8da433b04476593ce9656caf85d66/credentials/OS-EC2/86cfae29192b4cedb49bbc0f067a9df8'} |
-| project_id | 702de32b692c4842b0bb751dc5085daf                                                                                                           |
-| secret     | 3b3e625d867d4ddb9e748426daf5aa6a                                                                                                           |
-| trust_id   | None                                                                                                                                       |
-| user_id    | a1a8da433b04476593ce9656caf85d66                                                                                                           |
-+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-```
 
 Configure the `aws` client as follows:
 

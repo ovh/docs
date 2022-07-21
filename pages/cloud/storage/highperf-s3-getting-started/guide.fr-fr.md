@@ -21,11 +21,16 @@ Ce guide à pour objectif de vous familiariser avec la gestion de vos conteneurs
 
 ### Gestion des utilisateurs
 
-Une fois votre utilisateur créé vous devez générer ses certificats S3
+Une fois que votre utilisateur a été créé avec le rôle `ObjectStore operator` ou avec le rôle `Administrator`, vous devez générer ses informations d'identification S3.
 
-![User menu](images/HighPerf-S3-Getting-started-20211123122705161.png)
+![User menu](images/highperf-s3-getting-started-20220721141708221.png)
 
-![Result](images/HighPerf-S3-Getting-started-20211123122810597.png)
+> [!primary]
+>
+> Assurez-vous de sauvegarder les clés *access* et *secret* indiquées dans la boîte de message verte dans un gestionnaire de mots de passe à ce moment-là.
+>
+
+![Result](images/highperf-s3-getting-started-20220721141829843.png)
 
 ### Gestion des buckets
 
@@ -50,7 +55,7 @@ S'il ne s'agit pas de votre premier bucket :
 
 Sélectionnez la solution High Performance et cliquez sur `Suivant`{.action} :
 
-![Select High Performance Solution](images/HighPerf-S3-getting-started-2021102809081084.png)
+![Select High Performance Solution](images/highperf-s3-getting-started-20220502112813860.png)
 
 Sélectionnez la région de votre bucket et cliquez sur `Suivant`{.action} :
 
@@ -110,7 +115,7 @@ Vous pouvez maintenant interagir avec votre objet :
 Entrez la commande suivante :
 
 ```bash
-user@host:~$ pip3 install python-openstackclient awscli awscli-plugin-endpoint
+user@host:~$ pip3 install awscli awscli-plugin-endpoint
 ```
 
 > [!primary]
@@ -120,37 +125,6 @@ user@host:~$ pip3 install python-openstackclient awscli awscli-plugin-endpoint
 >
 
 #### Configuration
-
-Les jetons S3 sont différents, vous avez besoin de 2 paramètres (accès et secret) pour générer un jeton S3. Ces informations d'identification seront stockées en toute sécurité dans Keystone. Pour le générer, suivez les étapes ci-dessous.
-
-Définissez les variables d'environnement d'OpenStack :
-
-```bash
-user@host:~$ source openrc.sh
-```
-
-> [!primary]
->
-> Si besoin, téléchargez le fichier OpenRC de votre utilisateur.
->
-> ![Download Openrc file](images/HighPerf-S3-Getting-started-20211123123335113.png)
->
-
-Enfin, avec le client python-openstack :
-
-```bash
-user@host:~$ openstack ec2 credentials create
-+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-| Field      | Value                                                                                                                                      |
-+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-| access     | 86cfae29192b4cedb49bbc0f067a9df8                                                                                                           |
-| links      | {'self': 'https://auth.cloud.ovh.net:35357/v3/users/a1a8da433b04476593ce9656caf85d66/credentials/OS-EC2/86cfae29192b4cedb49bbc0f067a9df8'} |
-| project_id | 702de32b692c4842b0bb751dc5085daf                                                                                                           |
-| secret     | 3b3e625d867d4ddb9e748426daf5aa6a                                                                                                           |
-| trust_id   | None                                                                                                                                       |
-| user_id    | a1a8da433b04476593ce9656caf85d66                                                                                                           |
-+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-```
 
 Configurez le client aws comme suit :
 
