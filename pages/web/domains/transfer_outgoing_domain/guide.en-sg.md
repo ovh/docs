@@ -6,7 +6,7 @@ section: Transfer
 order: 4
 ---
 
-**Last updated 25th January 2021**
+**Last updated 21st July 2022**
 
 ## Objective
 
@@ -67,6 +67,10 @@ Once the status is set to `Disabled`{.action}, a link labelled `AUTH/INFO`{.acti
 The code will be requested by your new registrar to complete the transfer process. You can verify the details with your provider.
 
 Make sure to copy and paste the code as opposed to typing it by hand, since some characters are easily confused.
+
+> [!warning]
+>
+> If the domain name has been suspended or expired, you will need to [create a support ticket](https://ca.ovh.com/manager/dedicated/#/support/tickets/new) from your OVHcloud Control Panel.
 
 ### Step 3: Launch the transfer at your new registrar
 

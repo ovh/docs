@@ -12,7 +12,7 @@ order: 02
 > 
 
 
-**Ostatnia aktualizacja z dnia 04-06-2021**
+**Ostatnia aktualizacja z dnia 21-07-2022**
 
 ## Wprowadzenie
 
@@ -34,6 +34,8 @@ Nie można odbierać ani wysyłać e-maili przy użyciu programu pocztowego lub 
 ### Czy moja oferta e-mail i/lub moje konta są aktywne?
 
 Aby Twoje e-maile działały, musisz posiadać aktywną ofertę e-mail. Jeśli Twoja usługa e-mail jest przypisana do hostingu, sprawdź, czy oferta nie wygasła. Informacje te możesz sprawdzić bezpośrednio w Panelu klienta. Podobnie Twoja domena musi być aktywna.
+
+Sprawdź, czy jesteś na bieżąco z [płatnościami](https://docs.ovh.com/pl/billing/zarzadzanie-fakturami-ovhcloud/#pay-bills) i [odnawianiem](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#renewal-management) usług.
 
 Sprawdź, czy Twoje usługi działają poprawnie:
 

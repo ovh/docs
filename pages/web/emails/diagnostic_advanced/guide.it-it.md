@@ -11,7 +11,7 @@ order: 02
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 04/06/2021**
+**Ultimo aggiornamento: 21/07/2022**
 
 ## Obiettivo
 
@@ -33,6 +33,8 @@ Non è possibile ricevere o inviare email dal tuo client di posta o dalla Webmai
 ### Il tuo servizio di posta elettronica e/o i tuoi account sono attivi?
 
 Per una corretta gestione delle email è necessario disporre di un'offerta attiva. Se la tua offerta email è associata a un'offerta di hosting, verifica che non sia scaduta. È possibile verificare questa informazione direttamente dallo Spazio Cliente. Allo stesso modo, anche il tuo dominio deve essere attivo.
+
+Verifica di essere aggiornato sui [pagamenti](https://docs.ovh.com/it/billing/gestire-fatture-ovhcloud/#pay-bills) e sui [rinnovi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#renewal-management) dei tuoi servizi.
 
 Come verificare che i tuoi servizi siano operativi:
 

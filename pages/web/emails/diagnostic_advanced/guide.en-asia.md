@@ -7,7 +7,7 @@ section: Troubleshooting
 order: 02
 ---
 
-**Last updated 16th June 2021**
+**Last updated 21st July 2022**
 
 ## Objective
 
@@ -30,7 +30,11 @@ Is your email account unable to send or receive emails when using webmail or you
 
 For your emails to work, you need to have an active email service (Web Hosting plan). You can verify this directly in the OVHcloud Control Panel. The corresponding domain name must also be active.
 
+Start by checking that you are up to date with your [payments](https://docs.ovh.com/asia/en/billing/manage-ovh-bills/#pay-bills) and service [renewals](https://docs.ovh.com/asia/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management).
+
 Follow these steps to ensure that your relevant services are up and running:
+
+Start by checking that you are up to date with your [payments]
 
 - For your **domain name**, go to the `Web Cloud`{.action} section, click `Domain names`{.action}, then select your domain name. If your domain name has expired, this will be listed at the top of the page.
 - For your **Web Hosting plan**, go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then select your Web Hosting plan. The date of expiry or automatic renewal of your hosting will be indicated at the top of the page.

@@ -4,7 +4,7 @@ slug: clouddb-eos-eol
 section: 'Technical resources'
 ---
 
-**Last updated 27th June 2022**
+**Last updated 21st July 2022**
 
 ## Objective
 
@@ -14,7 +14,7 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 |---|---|---|---|
 |MariaDB 10.2|2020-09-29|2021-11-21|2022-05-23|
 |MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
-|MariaDB 10.4|To be defined|To be defined|To be defined|
+|MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|To be defined|To be defined|To be defined|
 |MongoDB 4|2019-07-29|2019-02-25|2022-09-28|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|

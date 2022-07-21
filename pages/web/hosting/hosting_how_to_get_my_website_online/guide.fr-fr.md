@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 2
 ---
 
-**Dernière mise à jour le 03/02/2022**
+**Dernière mise à jour le 21/07/2022**
 
 ## Objectif
 
@@ -20,6 +20,7 @@ Il existe une multitude de sites internet. Qu'il s'agisse de blogs, de boutiques
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} qui sera l'adresse d'accès à votre site.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Être à jour dans les [paiements](https://docs.ovh.com/fr/billing/gerer-factures-ovh/#pay-bills) et [renouvellements](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#renewal-management) des services liés (nom de domaine et hébergement web).
 
 ## En pratique
 

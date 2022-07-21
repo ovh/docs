@@ -10,7 +10,7 @@ order: 3
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 25/1/2021**
+**Última actualización: 21/07/2022**
 
 ## Objetivo
 
@@ -72,6 +72,10 @@ Se abrirá una ventana en la que podrá consultar su código AUTH/INFO (también
 El nuevo agente registrador solicitará el código para finalizar la transferencia. Puede consultar los detalles en el nuevo agente registrador.
 
 En lugar de escribir manualmente el código, le recomendamos que copie y pegue el código, ya que algunos caracteres pueden confundirse fácilmente.
+
+> [!warning]
+>
+> Si el dominio está suspendido o caducado, es necesario [crear un tique de asistencia](https://ca.ovh.com/manager/dedicated/#/support/tickets/new) desde el área de cliente de OVHcloud.
 
 ### 3\. iniciar la transferencia al nuevo agente registrador
 

@@ -6,7 +6,11 @@ section: 'Pierwsze kroki'
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 03-02-2022**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 21-07-2022**
 
 ## Wprowadzenie
 
@@ -22,6 +26,7 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external}, pod którą będzie Twoja strona WWW
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Aktualizacja w [płatności](https://docs.ovh.com/pl/billing/zarzadzanie-fakturami-ovhcloud/#pay-bills) i [odnowienie](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#renewal-management) powiązanych usług (domena i hosting).
 
 ## W praktyce
 

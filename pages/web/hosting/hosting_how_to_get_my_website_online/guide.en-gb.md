@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 2
 ---
 
-**Last updated 3rd February 2022**
+**Last updated 21st July 2022**
 
 ## Objective
 
@@ -20,6 +20,7 @@ There are many different types of website you can put online. Whether you are cr
 - an email confirming that your Web Hosting plan has been set up
 - a [domain name](https://www.ovhcloud.com/en-gb/domains/){.external} which can be used to access your website
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- being up-to-date in the [payments](https://docs.ovh.com/gb/en/billing/manage-ovh-bills/#pay-bills) and [renewals](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 

@@ -6,7 +6,7 @@ section: Transfert
 order: 4
 ---
 
-**Dernière mise à jour le 25 janvier 2021**
+**Dernière mise à jour le 21/07/2022**
 
 ## Objectif
 
@@ -72,6 +72,10 @@ Une fenêtre s'affiche alors et contient votre code AUTH/INFO (également appel�
 Le code sera demandé par votre nouveau bureau d'enregistrement pour terminer le processus de transfert. Vous pouvez vérifier les détails auprès de votre nouveau bureau d'enregistrement.
 
 Plutôt que de taper manuellement le code, nous vous recommandons de copier/coller celui-ci, car certains caractères peuvent être facilement confondus.
+
+> [!warning]
+>
+> Si le nom de domaine est suspendu ou expiré, il est nécessaire de [créer un ticket d'assistance](https://www.ovh.com/manager/dedicated/#/support/tickets/new) depuis votre espace client OVHcloud.
 
 ### Étape 3 : débuter le transfert vers le nouveau bureau d'enregistrement
 

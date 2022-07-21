@@ -8,7 +8,7 @@ section: 'Recursos técnicos'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 27/06/2022**
+**Última actualización: 21/07/2022**
 
 ## Objetivo
 
@@ -19,7 +19,7 @@ Para más información, consulte la [política de fin de vida de las bases de da
 |---|---|---|---|
 |MariaDB 10.2|2020-09-29|2021-11-21|2022-05-23|
 |MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
-|MariaDB 10.4|Por determinar|Por determinar|Por determinar|
+|MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|Por determinar|Por determinar|Por determinar|
 |MongoDB 4|2019-07-29|2019-02-25|2022-09-28|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
