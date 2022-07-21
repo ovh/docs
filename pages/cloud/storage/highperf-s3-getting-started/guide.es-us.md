@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3/'
 ---
 
-**Last updated 6<sup>th</sup> December 2021**
+**Last updated 21<sup>st</sup> July 2022**
 
 ## Objective
 
