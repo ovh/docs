@@ -6,7 +6,7 @@ section: Transfert
 order: 4
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 21/07/2022**
 
 ## Objectif
 
@@ -47,6 +47,10 @@ Une fois la protection contre le transfert levée, vous pouvez récupérer le co
 Récupérez le code qui s'affiche dans la fenêtre.
 
 ![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
+
+> [!warning]
+>
+> Si le nom de domaine est suspendu ou expiré, il est nécessaire de [créer un ticket d'assistance](https://ca.ovh.com/manager/dedicated/#/support/tickets/new) depuis votre espace client OVHcloud.
 
 ### Étape 3 : débuter le transfert vers le nouveau bureau d'enregistrement
 
