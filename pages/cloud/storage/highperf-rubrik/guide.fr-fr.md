@@ -73,7 +73,7 @@ Cliquez sur `Ajouter un utilisateur`{.action}.
 
 ![01 Create User 08](images/01-createuser08.png)
 
-Saisissez un `nom d'utilisateur` dans **User description** et cliquez sur `Suivant`{.action}.
+Saisissez un `nom d'utilisateur` dans **Description de l'utilisateur** et cliquez sur `Suivant`{.action}.
 
 ![01 Create User 09](images/01-createuser09.png)
 
@@ -89,7 +89,7 @@ Choisissez sur `Générer les credentials S3`{.action} à droite.
 
 ![01 Create User 12](images/01-createuser12.png)
 
-L'accès S3 a été créé ils est composé de ces éléments :
+L'accès S3 a été créé il est composé de ces éléments :
 
 - **access key** ;
 - **secret key** .
@@ -98,7 +98,7 @@ L'accès S3 a été créé ils est composé de ces éléments :
 
 ### Création d'une clé privé RSA
 
-Nous allons utilser l'outils openssl disponible sous Linux ou Windows 
+Nous allons utiliser l'outils en ligne de commande openssl disponible sous Linux ou Windows 
 
 Lancer cette commande dans un terminal
 
@@ -122,7 +122,7 @@ oic8XYh0OdAA5aY1kIy33Gg8NVarnGMe+ezc9NhF6AHIhAgwXZ+NBLdcUujPBaqx
 
 ### Configuration du stockage dans le logiciel Rubrik
 
-Lors de la configuration du dépot d'archive veuillez saisir ces informations :
+Lors de la configuration du dépôt d'archive veuillez saisir ces informations :
 
 * ** Acces Key** : `Acces key généré au travers de l'espace client OVHcloud` ;
 * ** Secret Key** : `Secret key généré au travers de l'espace client OVHcloud` ;
@@ -137,7 +137,7 @@ Ensuite cliquez sur `Add`{.action}
 ![02 Configure rubrik repository 01](images/02-configure-rubrik-repository01.png)
 
 
-Un bucket sera créé dans le projet public OVHcloud avec comme préfixe le nom dans **bucket Prefix**
+Un *bucket* sera créé dans le projet public OVHcloud avec comme préfixe le nom dans **bucket Prefix**
 
 ## Aller plus loin
 
