@@ -4,7 +4,7 @@ slug: clouddb-eos-eol
 section: 'Ressources techniques'
 ---
 
-**Dernière mise à jour le 27/06/2022**
+**Dernière mise à jour le 21/07/2022**
 
 ## Objectif
 
