@@ -6,7 +6,7 @@ section: "API domaines"
 order: 9
 ---
 
-**Dernière mise à jour le 05/05/2022**
+**Dernière mise à jour le 21/07/2022**
 
 <!-- Rappel à mettre au début de chaque page -->
 
@@ -131,3 +131,7 @@ Votre nouveau registrar procédera alors au transfert.
 > [!primary]
 >
 > Pour l'extension .uk, se référer à la [documentation dédiée](https://docs.ovh.com/fr/domains/transferer-domaine-couk/).
+
+> [!warning]
+>
+> Si le nom de domaine est suspendu ou expiré, il est nécessaire de [créer un ticket d'assistance](https://www.ovh.com/manager/dedicated/#/support/tickets/new) depuis votre espace client OVHcloud.

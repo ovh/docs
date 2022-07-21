@@ -10,7 +10,7 @@ order: 4
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 22-07-2020**
+**Ostatnia aktualizacja z dnia 21-07-2022**
 
 ## Wprowadzenie
 
@@ -76,6 +76,10 @@ Wyświetli się wówczas okno zawierające kod AUTH/INFO (zwany również kodem 
 Kod zostanie poproszony przez nowego operatora o zakończenie procesu transferu. Szczegóły możesz sprawdzić u nowego operatora.
 
 Zamiast ręcznie wpisywać kod, zalecamy jego skopiowanie/wklejenie, ponieważ niektóre znaki mogą być łatwo mylone.
+
+> [!warning]
+>
+> Jeśli nazwa domeny została zawieszona lub wygasła, konieczne jest utworzenie [zgłoszenia serwisowego](https://www.ovh.com/manager/dedicated/#/support/tickets/new) w Panelu klienta OVHcloud.
 
 ### Etap 3: rozpocząć transfer do nowego operatora
 

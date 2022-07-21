@@ -6,7 +6,7 @@ section: "Domains API"
 order: 9
 ---
 
-**Last updated 5th May 2022**
+**Last updated 21st July 2022**
 
 <!-- Reminder to put at the beginning of each page -->
 
@@ -134,3 +134,7 @@ Your new registrar will then proceed with the transfer.
 > [!primary]
 >
 > For .uk domain names, please refer to the [dedicated documentation](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_transfer_a_couk_domain_name/).
+
+> [!warning]
+>
+> If the domain name has been suspended or expired, you will need to [create a support ticket](https://ca.ovh.com/manager/dedicated/#/support/tickets/new) from your OVHcloud Control Panel.

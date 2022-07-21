@@ -10,7 +10,7 @@ order: 4
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 25/01/2021**
+**Ultimo aggiornamento: 21/07/2022**
 
 ## Obiettivo
 
@@ -76,6 +76,10 @@ A questo punto compare una finestra con il tuo codice AUTH/INFO (anche chiamato 
 Il codice verrà richiesto dal tuo nuovo Registrar per completare il processo di trasferimento. Puoi verificare i dettagli presso il tuo nuovo Registrar.
 
 Piuttosto che digitare manualmente il codice, ti consigliamo di copiarlo/incollarlo perché alcuni caratteri possono essere facilmente confondibili.
+
+> [!warning]
+>
+> Se il dominio è sospeso o scaduto, è necessario [creare un ticket di assistenza](https://www.ovh.com/manager/dedicated/#/support/tickets/new) dallo Spazio Cliente OVHcloud.
 
 ### Step 3: avvia il trasferimento verso il nuovo Registrar
 

@@ -10,7 +10,7 @@ section: Transferência
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 25/01/2021**
+**Última atualização: 21/07/2022**
 
 ## Objetivo
 
@@ -76,6 +76,10 @@ Aparecerá uma janela com o seu código AUTH/INFO (também conhecido como códig
 O código será pedido pelo seu novo agente de registo para concluir o processo de transferência. Pode verificar os detalhes junto do seu novo agente de registo.
 
 Em vez de introduzir manualmente o código, recomendamos que o copie/cole, uma vez que alguns caracteres podem ser facilmente confundidos.
+
+> [!warning]
+>
+> Se o domínio estiver suspenso ou expirado, é necessário [criar um ticket de assistência](https://www.ovh.com/manager/dedicated/#/support/tickets/new) a partir da Área de Cliente OVHcloud.
 
 ### Etapa 3: iniciar a transferência para o novo agente de registo
 

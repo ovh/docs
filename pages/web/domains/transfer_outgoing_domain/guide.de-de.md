@@ -10,7 +10,7 @@ order: 4
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 25.01.2021**
+**Letzte Aktualisierung am 21.07.2022**
 
 ## Ziel
 
@@ -76,6 +76,10 @@ Dieser Code wird von Ihrem neuen Registrar angefordert werden, um den Transfer a
 
 Anstatt den Code manuell einzugeben, empfehlen wir Ihnen, diesen zu kopieren und einzufügen, da einige Zeichen leicht verwechselt werden können.
 
+> [!warning]
+>
+> Wenn die Domain gesperrt oder abgelaufen ist, muss über Ihr OVHcloud Kundencenter [Support-Ticket erstellen](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
+
 ### Schritt 3: Transfer zum neuen Registrar beauftragen
 
 Nach erfolgreicher Durchführung der vorherigen Schritte können Sie den Transferprozess starten, in der Regel indem Sie eine Bestellung bei Ihrem neuen Provider aufgeben. Der Transfer kann dann bis zu 10 Tage dauern. 
@@ -83,6 +87,5 @@ Nach erfolgreicher Durchführung der vorherigen Schritte können Sie den Transfe
 Weitere Informationen hierzu erhalten Sie bei Ihren neuen Registrar.
 
 ## Weiterführende Informationen
-
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
