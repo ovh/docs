@@ -7,7 +7,7 @@ section: Diagnostic
 order: 5
 ---
 
-**Dernière mise à jour le 07/05/2021**
+**Dernière mise à jour le 21/07/2022**
 
 ## Objectif
 
@@ -28,6 +28,7 @@ Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement*
 
 - Disposer d'une [offre d'hébergement mutualisé](https://www.ovhcloud.com/fr-ca/web-hosting/)
 - Etre connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être à jour dans les [paiements](https://docs.ovh.com/ca/fr/billing/gerer-factures-ovh/#pay-bills) et [renouvellements](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#renewal-management) des services liés (nom de domaine et hébergement web)
 
 ## En pratique
 

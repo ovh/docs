@@ -11,7 +11,7 @@ order: 5
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 06/05/2021**
+**Última actualización: 21/07/2022**
 
 ## Objetivo
 
@@ -35,7 +35,7 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 
 - Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-
+- Estar actualizado en los [pagos](https://docs.ovh.com/es/billing/gestionar-facturas-ovh/#pay-bills) y [renovaciones](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
 

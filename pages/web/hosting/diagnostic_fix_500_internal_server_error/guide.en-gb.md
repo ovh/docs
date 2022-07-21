@@ -8,7 +8,7 @@ order: 5
 ---
 
 
-**Last updated 11th May 2021**
+**Last updated 21st July 2022**
 
 ## Objective
 
@@ -31,7 +31,7 @@ These errors may also come from updates carried out **automatically** by compone
 
 - an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-
+- being up-to-date in the [payments](https://docs.ovh.com/gb/en/billing/manage-ovh-bills/#pay-bills) and [renewals](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 
