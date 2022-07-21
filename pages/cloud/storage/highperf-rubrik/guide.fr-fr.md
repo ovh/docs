@@ -29,9 +29,9 @@ Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/
 
 ## En pratique
 
-Pour pouvoir utiliser **High Performance Storage** en tant que dépot d'archive du logiciel Rubrik il est nécessaire d'avoir au préalable :
+Pour pouvoir utiliser **High Performance Storage** en tant que dépot d'archive du logiciel Rubrik il est nécessaire de créer :
 
-- Un utilisateur dans un compte public OVHcloud avec la possibilité de gérer de créer des Bucket ;
+- Un utilisateur dans un compte public OVHcloud qui peut créer des *Buckets* ;
 - Une clé RSA 2048 bits.
 
 ### Création d'un utilisateur sur un projet public OVHcloud
@@ -41,6 +41,7 @@ Nous allons créer un compte dans un projet public qui sera capable d'ajouter de
 Connectez-vous à l'espace client OVHcloud au travers de l'url [OVHcloud](https://www.ovhcloud.com).
 
 Cliquez en haut à gauche sur le `menu principal`{.action}.
+
 
 ![01 Create User 01](images/01-createuser01.png)
 
@@ -68,23 +69,23 @@ Utilisez la `barre de défilement`{.action} et cliquez sur `Users & Roles`{.acti
 
 ![01 Create User 07](images/01-createuser07.png)
 
-cliquez sur `Create user`{.action}.
+Cliquez sur `Ajouter un utilisateur`{.action}.
 
 ![01 Create User 08](images/01-createuser08.png)
 
-Saisissez un `nom d'utilisateur` dans **User description** et cliquez sur `Next`{.action}.
+Saisissez un `nom d'utilisateur` dans **User description** et cliquez sur `Suivant`{.action}.
 
 ![01 Create User 09](images/01-createuser09.png)
 
-Cochez la case `ObjectStore operator`{.action} et cliquez sur `Confirm`{.action}.
+Cochez la case `ObjectStore operator`{.action} et cliquez sur `Valider`{.action}.
 
 ![01 Create User 10](images/01-createuser10.png)
 
-Un compte est crée avec son mot de passe mais il ne servira pas pour la sauvegarde, il faut créer un accés S3 , pour cela cliquez sur `l'icône rond avec 3 petits points`{.action} à droite.
+Un compte est crée avec son mot de passe mais il ne servira pas, il faut créer un accés S3, pour cela cliquez sur `l'icône rond avec 3 petits points`{.action} à droite du compte utilisateur créé
 
 ![01 Create User 11](images/01-createuser11.png)
 
-Choisissez sur `Generate S3 credentials`{.action} à droite.
+Choisissez sur `Generer les credentials S3`{.action} à droite.
 
 ![01 Create User 12](images/01-createuser12.png)
 
