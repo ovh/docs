@@ -81,11 +81,11 @@ Cochez la case `ObjectStore operator`{.action} et cliquez sur `Valider`{.action}
 
 ![01 Create User 10](images/01-createuser10.png)
 
-Un compte est crée avec son mot de passe mais il ne servira pas, il faut créer un accés S3, pour cela cliquez sur `l'icône rond avec 3 petits points`{.action} à droite du compte utilisateur créé
+Cliquez sur `l'icône rond avec 3 petits points`{.action} à droite du compte utilisateur créé pour générer les accès S3.
 
 ![01 Create User 11](images/01-createuser11.png)
 
-Choisissez sur `Generer les credentials S3`{.action} à droite.
+Choisissez sur `Générer les credentials S3`{.action} à droite.
 
 ![01 Create User 12](images/01-createuser12.png)
 
@@ -124,13 +124,13 @@ oic8XYh0OdAA5aY1kIy33Gg8NVarnGMe+ezc9NhF6AHIhAgwXZ+NBLdcUujPBaqx
 
 Lors de la configuration du dépot d'archive veuillez saisir ces informations :
 
-** Acces Key** : `Acces key généré au travers de l'espace client OVHcloud` ;
-** Secret Key** : `Secret key généré au travers de l'espace client OVHcloud` ;
-** hostname** : `s3.gra.perf.cloud.ovh.net` pour le Datacenter de Graveline ou `s3.sbg.perf.cloud.ovh.net` pour celui de Strasbourg ;
-** bucket Prefix** : `prefixe du bucket` en minuscule ;
-** Number of Buckets** : prenez `1` ;
-** Archival Location Name** : `S3Compatible`
-** RSA Key** : `copiez la clé RSA -----BEGIN RSA PRIVATE KEY----- ... -----END RSA PRIVATE KEY-----`
+* ** Acces Key** : `Acces key généré au travers de l'espace client OVHcloud` ;
+* ** Secret Key** : `Secret key généré au travers de l'espace client OVHcloud` ;
+* ** hostname** : `s3.gra.perf.cloud.ovh.net` pour le Datacenter de Graveline ou `s3.sbg.perf.cloud.ovh.net` pour celui de Strasbourg ;
+* ** bucket Prefix** : `prefixe du bucket` en minuscule ;
+* ** Number of Buckets** : prenez `1` ;
+* ** Archival Location Name** : `S3Compatible`
+* ** RSA Key** : `copiez la clé RSA -----BEGIN RSA PRIVATE KEY----- ... -----END RSA PRIVATE KEY-----`
 
 Ensuite cliquez sur `Add`{.action}
 
@@ -141,7 +141,7 @@ Un bucket sera créé dans le projet public OVHcloud avec comme préfixe le nom 
 
 ## Aller plus loin
 
-Site Officiel [Rubrik](https://www.rubrik.com/)
+Site Officiel de [Rubrik](https://www.rubrik.com/)
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
 
