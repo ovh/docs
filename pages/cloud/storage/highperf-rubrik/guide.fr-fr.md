@@ -58,44 +58,42 @@ Cliquez sur votre `projet`{.action}.
 
 Cliquez en haut à gauche sur le `menu principal`{.action}.
 
-![01 Create User 05](images/01-createuser05.png)
-
-Cliquez en haut à gauche sur le `menu principal`{.action}.
-
-![01 Create User 06](images/01-createuser06.png)
+![01 Create User 06](images/01-createuser05.png)
 
 Sélectionnez `Public Cloud`{.action}.
 
-![01 Create User 07](images/01-createuser07.png)
+![01 Create User 06](images/01-createuser06.png)
 
 Utilisez la `barre de défilement`{.action} et cliquez sur `Users & Roles`{.action}.
 
-![01 Create User 08](images/01-createuser08.png)
+![01 Create User 07](images/01-createuser07.png)
 
 cliquez sur `Create user`{.action}.
 
-![01 Create User 09](images/01-createuser09.png)
+![01 Create User 08](images/01-createuser08.png)
 
 Saisissez un `nom d'utilisateur` dans **User description** et cliquez sur `Next`{.action}.
 
-![01 Create User 10](images/01-createuser10.png)
+![01 Create User 09](images/01-createuser09.png)
 
 Cochez la case `ObjectStore operator`{.action} et cliquez sur `Confirm`{.action}.
 
-![01 Create User 11](images/01-createuser11.png)
+![01 Create User 10](images/01-createuser10.png)
 
 Un compte est crée avec son mot de passe mais il ne servira pas pour la sauvegarde, il faut créer un accés S3 , pour cela cliquez sur `l'icône rond avec 3 petits points`{.action} à droite.
 
-![01 Create User 12](images/01-createuser12.png)
+![01 Create User 11](images/01-createuser11.png)
 
 Choisissez sur `Generate S3 credentials`{.action} à droite.
 
-![01 Create User 13](images/01-createuser13.png)
+![01 Create User 12](images/01-createuser12.png)
 
 L'accès S3 a été créé ils est composé de ces éléments :
 
 - **access key** ;
 - **secret key** .
+
+![01 Create User 13](images/01-createuser13.png)
 
 ### Création d'une clé privé RSA
 
