@@ -15,7 +15,7 @@ section: 'RAID & disques'
 > Cet article est destiné aux utilisateurs expérimentés qui ont au minimum des connaissances de base sur Linux, mais surtout des connaissances plus approfondies sur le stockage et en particulier sur les logiciels RAID ainsi que sur la gestion logique des volumes (LVM).
 >
 
-Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer des partitions, le [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/), un LVM, un ZFS, etc. pendant [l’installation](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/) de votre système d'exploitation depuis l’[API OVHcloud](https://api.ovh.com/) ou depuis votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration). Dans cet article, nous allons nous concentrer sur l'[API OVHcloud](https://api.ovh.com/).<br>
+Les [serveurs dédiés](https://www.ovhcloud.com/fr-ca/bare-metal/) OVHcloud vous permettent de configurer des partitions, le [RAID logiciel](https://docs.ovh.com/ca/fr/dedicated/raid-soft/), un LVM, un ZFS, etc. pendant [l’installation](https://docs.ovh.com/ca/fr/dedicated/premiers-pas-serveur-dedie/) de votre système d'exploitation depuis l’[API OVHcloud](https://ca.api.ovh.com/) ou depuis votre [espace client OVHcloud](https://ca.ovh.com/manager/#/dedicated/configuration). Dans cet article, nous allons nous concentrer sur l'[API OVHcloud](https://ca.api.ovh.com/).<br>
 Cela vous donnera plus de détails sur le moteur qui s'exécute en arrière-plan, afin de créer le partitionnement sur le serveur dédié à partir des données d'entrée transmises à l'API OVHcloud.
 
 Fournir des détails avancés sur le partitionnement peut vous aider à comprendre pourquoi :
@@ -25,8 +25,8 @@ Fournir des détails avancés sur le partitionnement peut vous aider à comprend
 
 ## Prérequis
 
-* Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) **prêt à être installé/réinstallé** sur votre compte OVHcloud.
-* Avoir accès à l'[API OVHcloud](https://api.ovh.com/console/).
+* Un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) **prêt à être installé/réinstallé** sur votre compte OVHcloud.
+* Avoir accès à l'[API OVHcloud](https://ca.api.ovh.com/console/).
 
 > [!warning]
 >
@@ -48,7 +48,7 @@ Lorsque l’on parle de schéma de partitionnement, on évoque l’organisation 
 - Disque (disque physique, PD)
 - Partition (partition physique, PP)
 - ZFS : vdev (zgroup, ZG), zpool (ZP), dataset ZFS (ZD), volume ZFS (ZV)
-- Le [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/) (SR)
+- Le [RAID logiciel](https://docs.ovh.com/ca/fr/dedicated/raid-soft/) (SR)
 - LVM : volume physique (VP), groupe de volumes (VG), volume logique (LV)
 - Système de fichiers avec point de montage (FS)
 
@@ -168,7 +168,7 @@ Une disposition de partition est une liste de partitions. Voici un exemple de st
 >
 > type : primary, logical, lv.
 >
-> - lv : cela signifie que des couches LVM seront ajoutées au-dessus du périphérique [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/) (ou de la partition physique si le niveau du RAID est 0)
+> - lv : cela signifie que des couches LVM seront ajoutées au-dessus du périphérique [RAID logiciel](https://docs.ovh.com/ca/fr/dedicated/raid-soft/) (ou de la partition physique si le niveau du RAID est 0)
 > - primary : n'a de sens que pour les tables de partition MBR (quelques anciens serveurs non-UEFI ne supportent toujours pas GPT)
 > - logical: si vous ne savez pas quoi choisir
 >
@@ -192,9 +192,9 @@ Le tableau suivant donne une vue d'ensemble de la compatibilité des systèmes d
 |UFS, VMFS5, VMFS6, VMFS-L⁴|❌|❌|❌|❌|❌|❌|❌|
 
 ¹ Pour plus d'informations, reportez-vous au tableau [vdevs ZFS vs standard RAID](#raidz2RAID).<br />
-² Le niveau de RAID pour swap ne peut être que égal à 1 au sein de l’[API OVHcloud](https://api.ovh.com/). En réalité, les partitions swap n'utiliseront pas de RAID. Lorsqu'une partition swap de taille `s` est définie sur un serveur avec un nombre `n` de disques, cela créera `n` partitions de taille `s` sur chaque disque sans aucun dispositif RAID logiciel en dessous.<br />
+² Le niveau de RAID pour swap ne peut être que égal à 1 au sein de l’[API OVHcloud](https://ca.api.ovh.com/). En réalité, les partitions swap n'utiliseront pas de RAID. Lorsqu'une partition swap de taille `s` est définie sur un serveur avec un nombre `n` de disques, cela créera `n` partitions de taille `s` sur chaque disque sans aucun dispositif RAID logiciel en dessous.<br />
 ³ Le RAID natif Windows (celui configuré par l'installateur OVHcloud) prend en charge le RAID 1 mais uniquement entre deux disques, alors que les autres implémentations en autorisent plus de deux.<br />
-⁴ Le programme d'installation ESXi ne prend pas en charge les schémas de partitionnement personnalisés. Le partitionnement est défini par l'éditeur du logiciel. Néanmoins, l’[API OVHcloud](https://api.ovh.com/) peut vous donner une idée de ce à quoi ressemble le partitionnement : pour plus d'informations, consultez [les templates OVHcloud](#OVHcloudtemplates).<br />
+⁴ Le programme d'installation ESXi ne prend pas en charge les schémas de partitionnement personnalisés. Le partitionnement est défini par l'éditeur du logiciel. Néanmoins, l’[API OVHcloud](https://ca.api.ovh.com/) peut vous donner une idée de ce à quoi ressemble le partitionnement : pour plus d'informations, consultez [les templates OVHcloud](#OVHcloudtemplates).<br />
 
 > [!warning]
 >
@@ -246,8 +246,8 @@ Les erreurs basiques de données d'entrée client sont directement traitées par
 
 Les données d'entrée client liées au partitionnement peuvent être trop spécifiques pour être vérifiées par l'API OVHcloud et nécessiter par conséquent un **pre-processing**. L'inconvénient est que les clients sont avertis plus tard pendant le processus d'installation du système d'exploitation.
 
-Celui-ci est visible via la barre de progression depuis [l'espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
-Depuis l'[API OVHcloud](https://api.ovh.com/), cet état peut être obtenu avec l'appel API suivant :
+Celui-ci est visible via la barre de progression depuis [l'espace client OVHcloud](https://ca.ovh.com/manager/#/dedicated/configuration).
+Depuis l'[API OVHcloud](https://ca.api.ovh.com/), cet état peut être obtenu avec l'appel API suivant :
 
 > [!api]
 >
@@ -279,7 +279,7 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 
 #### Saisir l'auto-correction du client
 
-Afin d'améliorer l'expérience client, réduire la charge de travail du [support OVHcloud](https://help.ovhcloud.com/fr/) et éviter des injections de changements dommageables pour le client, certaines saisies effectués par le client sont automatiquement corrigées ou modifiées par le backend. Le tableau suivant donne une vue d'ensemble de ce qui est actuellement auto-fixé / changé lors du **pre-processing** :
+Afin d'améliorer l'expérience client, réduire la charge de travail du [support OVHcloud](https://help.ovhcloud.com/fr-ca/) et éviter des injections de changements dommageables pour le client, certaines saisies effectués par le client sont automatiquement corrigées ou modifiées par le backend. Le tableau suivant donne une vue d'ensemble de ce qui est actuellement auto-fixé / changé lors du **pre-processing** :
 
 |Subject|Description|
 |---|---|
@@ -292,8 +292,8 @@ Afin d'améliorer l'expérience client, réduire la charge de travail du [suppor
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/)
+[RAID logiciel](https://docs.ovh.com/ca/fr/dedicated/raid-soft/)
 
-[Gestion du RAID Matériel](https://docs.ovh.com/fr/dedicated/raid-hard/)
+[Gestion du RAID Matériel](https://docs.ovh.com/ca/fr/dedicated/raid-hard/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
