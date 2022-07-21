@@ -6,7 +6,7 @@ section: Object Storage S3 High Performance
 order: 020
 ---
 
-**Last updated 12th July 2022**
+**Last updated 21<sup>st</sup> July 2022**
 
 ## Objective
 
@@ -21,11 +21,15 @@ This guide aims to familiarise you with the management of your containers / obje
 
 ### User management
 
-Once your user has been created, you must generate its S3 certificates.
+Once your user has been created with `ObjectStore operator` role or with `Administrator` role, you must generate its S3 credentials.
 
-![User menu](images/HighPerf-S3-Getting-started-20211123122705161.png)
+![User menu](images/highperf-s3-getting-started-20220721141708221.png){.thumbnail}
 
-![Result](images/HighPerf-S3-Getting-started-20211123122810597.png)
+> [!primary]
+>
+> Be sure to save the access and secret keys shown in the green message box to a password manager at this time.
+
+![Result](images/highperf-s3-getting-started-20220721141829843.png){.thumbnail}
 
 ### Bucket management
 
@@ -40,23 +44,23 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 If this is your first bucket, you should be displayed the following:
 
-![pcs dashboard](images/create-container-20211005102334181.png)
+![pcs dashboard](images/create-container-20211005102334181.png){.thumbnail}
 
 If this is not your first bucket:
 
-![pcs dashboard](images/create-container-20211005115040834.png)
+![pcs dashboard](images/create-container-20211005115040834.png){.thumbnail}
 
 Select the High Performance solution and click `Next`{.action}.
 
-![Select High Performance Solution](images/HighPerf-S3-getting-started-2021102809081084.png)
+![Select High Performance Solution](images/highperf-s3-getting-started-20220502112813860.png){.thumbnail}
 
 Select the region of your bucket and click `Next`{.action}.
 
-![Select a region](images/HighPerf-S3-getting-started-20211028090916484.png)
+![Select a region](images/HighPerf-S3-getting-started-20211028090916484.png){.thumbnail}
 
 Name your bucket and click `Create the container`{.action}.
 
-![Container name](images/HighPerf-S3-getting-started-20211028091015710.png)  
+![Container name](images/HighPerf-S3-getting-started-20211028091015710.png){.thumbnail}  
 
 > [!warning]
 >
@@ -73,40 +77,40 @@ At this stage, you can not interact with your bucket because no S3 user is assoc
 
 Click on the `...`{.action} at the end of the line of your bucket and then `Add a user to a container`{.action}.
 
-![Add a user to a container](images/HighPerf-S3-getting-started-20211028091254996.png)
+![Add a user to a container](images/HighPerf-S3-getting-started-20211028091254996.png){.thumbnail}
 
 Select the user to add to your bucket and click `Next`{.action}.
 
-![Add a user to my container](images/HighPerf-S3-getting-started-20211028091356617.png)
+![Add a user to my container](images/HighPerf-S3-getting-started-20211028091356617.png){.thumbnail}
 
 Define access to your bucket for this user and click `Next`{.action}.
 
-![Add a user to my container - Role](images/HighPerf-S3-getting-started-20211028091456850.png)
+![Add a user to my container - Role](images/HighPerf-S3-getting-started-20211028091456850.png){.thumbnail}
 
 ### Managing objects
 
 Click on the `...`{.action} at the end of the line of your bucket and then on `Display objects`{.action}.
 
-![Object Storage Dashboard](images/HighPerf-S3-getting-started-20211028093009189.png)
+![Object Storage Dashboard](images/HighPerf-S3-getting-started-20211028093009189.png){.thumbnail}
 
 Click on `+ Add objects`{.action}.
 
-![Add objects](images/HighPerf-S3-getting-started-20211028093103226.png)
+![Add objects](images/HighPerf-S3-getting-started-20211028093103226.png){.thumbnail}
 
 If needed, set a prefix, click `Select files`{.action} then `Import`{.action}.
 
-![Select files](images/HighPerf-S3-getting-started-2021102809321218.png)
+![Select files](images/HighPerf-S3-getting-started-2021102809321218.png){.thumbnail}
 
 You can now interact with your object.
 
-![Object actions](images/HighPerf-S3-getting-started-20211028093408437.png)
+![Object actions](images/HighPerf-S3-getting-started-20211028093408437.png){.thumbnail}
 
 ### Using the AWS CLI
 
 #### Installation
 
 ```bash
-user@host:~$ pip3 install python-openstackclient awscli awscli-plugin-endpoint
+user@host:~$ pip3 install awscli awscli-plugin-endpoint
 ```
 
 > [!primary]
@@ -114,38 +118,8 @@ user@host:~$ pip3 install python-openstackclient awscli awscli-plugin-endpoint
 > `awscli-plugin-endpoint` is optional  
 > Install the `groff` package if you want to use the command line help
 >
+
 #### Configuration
-
-S3 tokens are different, you need 2 parameters (access and secret) to generate an S3 token. These credentials will be stored securely in Keystone. Follow the next steps to generate it.
-
-Set the OpenStack environment variables:
-
-```bash
-user@host:~$ source openrc.sh
-```
-
-> [!primary]
->
-> If necessary, download your user's OpenRC file.
->
-> ![Download Openrc file](images/HighPerf-S3-Getting-started-20211123123335113.png)
->
-
-Finally, with the `python-openstack` client:
-
-```bash
-user@host:~$ openstack ec2 credentials create
-+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-| Field      | Value                                                                                                                                      |
-+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-| access     | 86cfae29192b4cedb49bbc0f067a9df8                                                                                                           |
-| links      | {'self': 'https://auth.cloud.ovh.net:35357/v3/users/a1a8da433b04476593ce9656caf85d66/credentials/OS-EC2/86cfae29192b4cedb49bbc0f067a9df8'} |
-| project_id | 702de32b692c4842b0bb751dc5085daf                                                                                                           |
-| secret     | 3b3e625d867d4ddb9e748426daf5aa6a                                                                                                           |
-| trust_id   | None                                                                                                                                       |
-| user_id    | a1a8da433b04476593ce9656caf85d66                                                                                                           |
-+------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-```
 
 Configure the `aws` client as follows:
 
