@@ -27,7 +27,7 @@ Une fois que votre utilisateur a été créé avec le rôle `ObjectStore operato
 
 > [!primary]
 >
-> Assurez-vous de sauvegarder les clés *access* et *secret* indiquées dans la boîte de message verte dans un gestionnaire de mots de passe à ce moment-là.
+> Veillez à enregistrer les clés *access* et *secret*, uniquement affichées à ce moment précis dans le cadre vert, dans un gestionnaire de mots de passe.
 >
 
 ![Result](images/highperf-s3-getting-started-20220721141829843.png)

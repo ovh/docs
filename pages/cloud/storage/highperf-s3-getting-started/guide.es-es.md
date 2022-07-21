@@ -29,7 +29,7 @@ Once your user has been created with `ObjectStore operator` role or with `Admini
 
 > [!primary]
 >
-> Be sure to save the acces and secret keys shown in the green message box to a password manager at this time
+> Be sure to save the acces and secret keys shown in the green message box to a password manager at this time.
 
 ![Result](images/highperf-s3-getting-started-20220721141829843.png)
 
