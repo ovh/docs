@@ -7,7 +7,11 @@ order: 2
 legacy_guide_number: g1374
 ---
 
-**Ultimo aggiornamento: 03/02/2022**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 21/07/2022**
 
 ## Obiettivo
 
@@ -21,6 +25,7 @@ I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, s
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} attivo, che corrisponderà all’indirizzo del sito
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Essere aggiornato nei [pagamenti](https://docs.ovh.com/it/billing/gestire-fatture-ovhcloud/#pay-bills) e [rinnovi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#renewal-management) dei servizi associati (dominio e hosting web)
 
 ## Procedura
 

@@ -6,7 +6,11 @@ section: Introdução
 legacy_guide_number: g1374
 ---
 
-**Última atualização: 03/02/2022**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 21/07/2022**
 
 ## Sumário
 
@@ -21,6 +25,7 @@ Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
 - Ter um [domínio](https://www.ovhcloud.com/pt/domains/){.external} (endereço que permite identificar e aceder ao seu site).
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Estar atualizado em [pagamentos](https://docs.ovh.com/pt/billing/gerir-faturas-ovhcloud/#pay-bills) e [renovações](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#renewal-management) dos serviços associados (nome de domínio e alojamento web).
 
 ## Instruções
 

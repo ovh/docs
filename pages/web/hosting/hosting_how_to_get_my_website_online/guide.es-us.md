@@ -6,7 +6,11 @@ section: 'Primeros pasos'
 order: 2
 ---
 
-**Última actualización: 19/01/2022**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
+**Última actualización: 21/07/2022**
 
 ## Objetivo
 
@@ -20,6 +24,7 @@ Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere c
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
 - Disponer de un [dominio](https://www.ovhcloud.com/es/domains/){.external} con el que poder acceder a su sitio web.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Estar actualizado en los [pagos](https://docs.ovh.com/us/es/billing/gestionar-facturas-ovh/#pay-bills) y [renovaciones](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
 
