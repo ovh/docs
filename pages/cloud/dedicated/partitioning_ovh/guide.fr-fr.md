@@ -168,7 +168,7 @@ Une disposition de partition est une liste de partitions. Voici un exemple de st
 >
 > type : primary, logical, lv.
 >
-> - lv : cela signifie que des couches LVM seront ajoutées au-dessus du périphérique [RAID logiciel](https://docs.ovh.com/gb/en/dedicated/raid-soft/) (ou de la partition physique si le niveau du RAID est 0)
+> - lv : cela signifie que des couches LVM seront ajoutées au-dessus du périphérique [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/) (ou de la partition physique si le niveau du RAID est 0)
 > - primary : n'a de sens que pour les tables de partition MBR (quelques anciens serveurs non-UEFI ne supportent toujours pas GPT)
 > - logical: si vous ne savez pas quoi choisir
 >
