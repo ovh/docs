@@ -7,7 +7,7 @@ section: 'Diagnostic'
 order: 02
 ---
 
-**Dernière mise à jour le 04/06/2021**
+**Dernière mise à jour le 21/07/2022**
 
 ## Objectif
 
@@ -30,6 +30,8 @@ Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel 
 ### Mon offre e-mail et/ou mes comptes sont-ils actifs ?
 
 Pour que vos e-mails soient fonctionnels, vous devez posséder une offre e-mail active. Si votre offre e-mail est associée à une offre d'hébergement, vérifiez que celle-ci n'est pas expirée. Vous pouvez vérifier cette information directement dans l'espace client. De la même façon, votre nom de domaine doit lui aussi être actif.
+
+Commencez par vérifier que vous êtes à jour dans les [paiements](https://docs.ovh.com/ca/fr/billing/gerer-factures-ovh/#pay-bills) et [renouvellements](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#renewal-management) de vos services.
 
 Voici comment vérifier que vos services sont bien opérationnels :
 

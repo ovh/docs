@@ -11,7 +11,7 @@ order: 02
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 04/06/2021**
+**Última actualización: 21/07/2022**
 
 ## Objetivo
 
@@ -33,6 +33,8 @@ order: 02
 ### ¿Mi solución de correo y/o mis cuentas están activas?
 
 Para que sus mensajes de correo funcionen, debe tener un servicio de correo activo. Si su servicio de correo está asociado a un plan de alojamiento, compruebe que este no haya expirado. Puede comprobar esta información directamente desde el área de cliente. Asimismo, el dominio también debe estar activo.
+
+En primer lugar, compruebe que está actualizado en los [pagos](https://docs.ovh.com/us/es/billing/gestionar-facturas-ovh/#pay-bills) y [renovaciones](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/#renewal-management) de sus servicios.
 
 Compruebe que los servicios están correctamente operativos:
 

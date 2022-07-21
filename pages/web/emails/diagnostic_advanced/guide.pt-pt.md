@@ -11,7 +11,7 @@ order: 02
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 04/06/2021**
+**Última atualização: 21/07/2022**
 
 ## Objetivo
 
@@ -33,6 +33,8 @@ Não é possível receber ou enviar e-mails a partir do seu software de correio 
 ### A minha oferta de e-mail e/ou as minhas contas estão ativas?
 
 Para que os seus e-mails sejam funcionais, deve possuir uma oferta de e-mail ativa. Se a sua oferta de e-mail estiver associada a uma oferta de alojamento, verifique se esta não expirou. Pode verificar esta informação diretamente na Área de Cliente. Da mesma forma, o seu domínio também deve estar ativo.
+
+Comece por verificar que está atualizado nos [pagamentos](https://docs.ovh.com/pt/billing/gerir-faturas-ovhcloud/#pay-bills) e nas [renovações](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#renewal-management) dos seus serviços.
 
 Eis como verificar que os seus serviços estão corretamente operacionais:
 
