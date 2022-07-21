@@ -23,14 +23,14 @@ Ce guide à pour objectif de vous familiariser avec la gestion de vos conteneurs
 
 Une fois que votre utilisateur a été créé avec le rôle `ObjectStore operator` ou avec le rôle `Administrator`, vous devez générer ses informations d'identification S3.
 
-![User menu](images/highperf-s3-getting-started-20220721141708221.png)
+![User menu](images/highperf-s3-getting-started-20220721141708221.png){.thumbnail}
 
 > [!primary]
 >
 > Veillez à enregistrer les clés *access* et *secret*, uniquement affichées à ce moment précis dans le cadre vert, dans un gestionnaire de mots de passe.
 >
 
-![Result](images/highperf-s3-getting-started-20220721141829843.png)
+![Result](images/highperf-s3-getting-started-20220721141829843.png){.thumbnail}
 
 ### Gestion des buckets
 
@@ -47,23 +47,23 @@ Sélectionnez `Object Storage`{.action} dans le menu à gauche puis cliquez sur 
 
 S'il s'agit de votre premier bucket, vous devriez voir cet affichage :
 
-![pcs dashboard](images/create-container-20211005102334181.png)
+![pcs dashboard](images/create-container-20211005102334181.png){.thumbnail}
 
 S'il ne s'agit pas de votre premier bucket :
 
-![pcs dashboard](images/create-container-20211005115040834.png)
+![pcs dashboard](images/create-container-20211005115040834.png){.thumbnail}
 
 Sélectionnez la solution High Performance et cliquez sur `Suivant`{.action} :
 
-![Select High Performance Solution](images/highperf-s3-getting-started-20220502112813860.png)
+![Select High Performance Solution](images/highperf-s3-getting-started-20220502112813860.png){.thumbnail}
 
 Sélectionnez la région de votre bucket et cliquez sur `Suivant`{.action} :
 
-![Select a region](images/HighPerf-S3-getting-started-20211028090916484.png)
+![Select a region](images/HighPerf-S3-getting-started-20211028090916484.png){.thumbnail}
 
 Nommez votre bucket et cliquez sur `Ajouter le conteneur`{.action} :  
 
-![Container name](images/HighPerf-S3-getting-started-20211028091015710.png)  
+![Container name](images/HighPerf-S3-getting-started-20211028091015710.png){.thumbnail}  
 
 > [!warning]
 >
@@ -80,33 +80,33 @@ Nommez votre bucket et cliquez sur `Ajouter le conteneur`{.action} :
 
 Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Ajouter un utilisateur à un conteneur`{.action}.
 
-![Add a user to a container](images/HighPerf-S3-getting-started-20211028091254996.png)
+![Add a user to a container](images/HighPerf-S3-getting-started-20211028091254996.png){.thumbnail}
 
 Sélectionnez l'utilisateur à ajouter à votre bucket et cliquez sur `Suivant`{.action} :
 
-![Add a user to my container](images/HighPerf-S3-getting-started-20211028091356617.png)
+![Add a user to my container](images/HighPerf-S3-getting-started-20211028091356617.png){.thumbnail}
 
 Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Suivant`{.action} :
 
-![Add a user to my container - Role](images/HighPerf-S3-getting-started-20211028091456850.png)
+![Add a user to my container - Role](images/HighPerf-S3-getting-started-20211028091456850.png){.thumbnail}
 
 ### Gestion des objets
 
 Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Afficher les objets`{.action}.
 
-![Object Storage Dashboard](images/HighPerf-S3-getting-started-20211028093009189.png)
+![Object Storage Dashboard](images/HighPerf-S3-getting-started-20211028093009189.png){.thumbnail}
 
 Cliquez sur `+ Ajouter des objets`{.action}
 
-![Add objects](images/HighPerf-S3-getting-started-20211028093103226.png)
+![Add objects](images/HighPerf-S3-getting-started-20211028093103226.png){.thumbnail}
 
 Si besoin, définissez un préfixe, cliquez sur `Sélectionnez les fichiers`{.action} puis sur `Importer`{.action}
 
-![Select files](images/HighPerf-S3-getting-started-2021102809321218.png)
+![Select files](images/HighPerf-S3-getting-started-2021102809321218.png){.thumbnail}
 
 Vous pouvez maintenant interagir avec votre objet :
 
-![Object actions](images/HighPerf-S3-getting-started-20211028093408437.png)
+![Object actions](images/HighPerf-S3-getting-started-20211028093408437.png){.thumbnail}
 
 ### Utilisation de AWS CLI
 

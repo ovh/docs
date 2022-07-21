@@ -23,13 +23,13 @@ This guide aims to familiarise you with the management of your containers / obje
 
 Once your user has been created with `ObjectStore operator` role or with `Administrator` role, you must generate its S3 credentials.
 
-![User menu](images/highperf-s3-getting-started-20220721141708221.png)
+![User menu](images/highperf-s3-getting-started-20220721141708221.png){.thumbnail}
 
 > [!primary]
 >
 > Be sure to save the access and secret keys shown in the green message box to a password manager at this time.
 
-![Result](images/highperf-s3-getting-started-20220721141829843.png)
+![Result](images/highperf-s3-getting-started-20220721141829843.png){.thumbnail}
 
 ### Bucket management
 
@@ -44,23 +44,23 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 If this is your first bucket, you should be displayed the following:
 
-![pcs dashboard](images/create-container-20211005102334181.png)
+![pcs dashboard](images/create-container-20211005102334181.png){.thumbnail}
 
 If this is not your first bucket:
 
-![pcs dashboard](images/create-container-20211005115040834.png)
+![pcs dashboard](images/create-container-20211005115040834.png){.thumbnail}
 
 Select the High Performance solution and click `Next`{.action}.
 
-![Select High Performance Solution](images/highperf-s3-getting-started-20220502112813860.png)
+![Select High Performance Solution](images/highperf-s3-getting-started-20220502112813860.png){.thumbnail}
 
 Select the region of your bucket and click `Next`{.action}.
 
-![Select a region](images/HighPerf-S3-getting-started-20211028090916484.png)
+![Select a region](images/HighPerf-S3-getting-started-20211028090916484.png){.thumbnail}
 
 Name your bucket and click `Create the container`{.action}.
 
-![Container name](images/HighPerf-S3-getting-started-20211028091015710.png)  
+![Container name](images/HighPerf-S3-getting-started-20211028091015710.png){.thumbnail}  
 
 > [!warning]
 >
@@ -77,33 +77,33 @@ At this stage, you can not interact with your bucket because no S3 user is assoc
 
 Click on the `...`{.action} at the end of the line of your bucket and then `Add a user to a container`{.action}.
 
-![Add a user to a container](images/HighPerf-S3-getting-started-20211028091254996.png)
+![Add a user to a container](images/HighPerf-S3-getting-started-20211028091254996.png){.thumbnail}
 
 Select the user to add to your bucket and click `Next`{.action}.
 
-![Add a user to my container](images/HighPerf-S3-getting-started-20211028091356617.png)
+![Add a user to my container](images/HighPerf-S3-getting-started-20211028091356617.png){.thumbnail}
 
 Define access to your bucket for this user and click `Next`{.action}.
 
-![Add a user to my container - Role](images/HighPerf-S3-getting-started-20211028091456850.png)
+![Add a user to my container - Role](images/HighPerf-S3-getting-started-20211028091456850.png){.thumbnail}
 
 ### Managing objects
 
 Click on the `...`{.action} at the end of the line of your bucket and then on `Display objects`{.action}.
 
-![Object Storage Dashboard](images/HighPerf-S3-getting-started-20211028093009189.png)
+![Object Storage Dashboard](images/HighPerf-S3-getting-started-20211028093009189.png){.thumbnail}
 
 Click on `+ Add objects`{.action}.
 
-![Add objects](images/HighPerf-S3-getting-started-20211028093103226.png)
+![Add objects](images/HighPerf-S3-getting-started-20211028093103226.png){.thumbnail}
 
 If needed, set a prefix, click `Select files`{.action} then `Import`{.action}.
 
-![Select files](images/HighPerf-S3-getting-started-2021102809321218.png)
+![Select files](images/HighPerf-S3-getting-started-2021102809321218.png){.thumbnail}
 
 You can now interact with your object.
 
-![Object actions](images/HighPerf-S3-getting-started-20211028093408437.png)
+![Object actions](images/HighPerf-S3-getting-started-20211028093408437.png){.thumbnail}
 
 ### Using the AWS CLI
 
