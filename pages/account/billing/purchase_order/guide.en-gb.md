@@ -5,7 +5,7 @@ excerpt: 'Understanding the notion of a Purchase Order number, and applying it w
 section: Billing
 ---
 
-**Last updated 14th November 2019**
+**Last updated 22nd July 2022**
 
 ## Objective
 
@@ -49,11 +49,37 @@ For OVHcloud, the document must contain at least the following information:
 - Effective date
 - End date
 
-### How to enter a Purchase Order (PO) Number
+### How to enter a Purchase Order (PO) reference in your OVHcloud Control Panel
 
-In order for OVHcloud to be able to issue invoices with the desired Purchase Order number, contact your sales representative to give them this number.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then in the `Dashboard`{.action} tab, click `View my orders`{.action}.
 
-If you change this Purchase Order number, contact your sales advisor as soon as possible.
+![Control Panel](images/internalreference00.png){.thumbnail}
+
+Click the `My Internal References`{.action} tab and then click the `+ Add an internal reference`{.action} button.
+
+![Control Panel](images/internalreference01.png){.thumbnail}
+
+You can use two different wordings, depending on whether you wish to display the word `Internal reference` **or**  the word `Purchase order` on your invoices.<br>
+Select either `Create your internal reference`{.action} or `Create your purchase order`{.action}.
+
+Give your internal reference / purchase order a name in the field provided, enter a **start date** and an **end date** (the end date is excluded) then click on `Validate`{.action}.
+
+> [!primary]
+> You cannot create 2 internal references / Purchase Orders over the same time period.
+
+![Control Panel](images/internalreference02.png){.thumbnail}
+
+This reference will then appear on your next invoices, for the time period that you have set.
+
+![Control Panel](images/internalreference03.png){.thumbnail}
+
+From the `My internal references`{.action} tab, you can edit or deactivate a reference that has already been created by clicking the `...`{.action} to the right of the reference concerned.
+
+![Control Panel](images/internalreference04.png){.thumbnail}
+
+> [!primary]
+> If you want to disable/modify one reference for another **on the same time interval**, you must use the `Edit`{.action} option to change the time interval of the first reference.
+
 
 ## Go further
 
