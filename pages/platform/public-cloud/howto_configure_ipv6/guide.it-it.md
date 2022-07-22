@@ -13,7 +13,14 @@ Internet Protocol version 6 (IPv6) è la versione più recente dell’Internet P
 
 Tutte le istanze Public Cloud vengono consegnate  con un indirizzo IPv4 e un indirizzo IPv6.
 
-Di default è configurato soltanto l’IPv4 perciò, questa guida ti mostra come configurare un indirizzo IPv6 su un’istanza Public Cloud.
+Di default è configurato soltanto l’IPv4 perciò.
+
+**Questa guida ti mostra come configurare un indirizzo IPv6 su un’istanza Public Cloud.**
+
+> [!warning]
+>
+> Si noti che nelle versioni recenti dei sistemi operativi Linux, l'indirizzo IPv6 è configurato di default sulle istanze Public Cloud. Assicurarsi di verificare il file di configurazione del sistema operativo prima di apportare qualsiasi modifica.
+>
 
 ## Prerequisiti
 

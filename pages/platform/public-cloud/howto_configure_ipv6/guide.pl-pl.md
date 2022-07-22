@@ -15,7 +15,12 @@ Każda instancja Public Cloud jest dostarczana z jednym adresem IPv4 i jednym ad
 
 Domyślnie skonfigurowany jest tylko adres IPv4.
 
-W tym tutorialu dowiesz się, jak skonfigurować adres IPv6 dla instancji Public Cloud.
+**W tym tutorialu dowiesz się, jak skonfigurować adres IPv6 dla instancji Public Cloud.**
+
+> [!warning]
+>
+> Należy pamiętać, że w ostatnich wersjach systemów operacyjnych Linux adres IPv6 jest domyślnie skonfigurowany na instancjach Public Cloud. Pamiętaj, aby sprawdzić plik konfiguracyjny systemu operacyjnego przed wprowadzeniem jakichkolwiek zmian.
+>
 
 ## Wymagania początkowe
 

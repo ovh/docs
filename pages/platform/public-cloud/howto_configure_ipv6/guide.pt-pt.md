@@ -15,7 +15,12 @@ Todas as instâncias Public Cloud são entregues com um endereço IPv4 e um ende
 
 Por predefinição, apenas o endereço IPv4 é configurado.
 
-Neste tutorial, iremos explicar como configurar um endereço IPv6 numa instância Public Cloud.
+**Neste tutorial, iremos explicar como configurar um endereço IPv6 numa instância Public Cloud.**
+
+> [!warning]
+>
+> Note-se que nas versões recentes dos sistemas operativos Linux, o endereço IPv6 é configurado por defeito nas instâncias da Nuvem Pública. Certifique-se de verificar o seu ficheiro de configuração do SO antes de fazer quaisquer alterações.
+>
 
 ## Requisitos
 

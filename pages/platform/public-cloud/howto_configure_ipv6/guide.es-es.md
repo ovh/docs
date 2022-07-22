@@ -15,7 +15,12 @@ Todas las instancias de Public Cloud se entregan con una dirección IPv4 y una d
 
 Por defecto solo está configurada la IPv4.
 
-Esta guía explica cómo configurar una dirección IPv6 en una instancia de Public Cloud.
+**Esta guía explica cómo configurar una dirección IPv6 en una instancia de Public Cloud.**
+
+> [!warning]
+>
+> Tenga en cuenta que en las versiones recientes de los sistemas operativos Linux, la dirección IPv6 está configurada por defecto en las instancias de Public Cloud. Asegúrese de comprobar el archivo de configuración de su sistema operativo antes de realizar cualquier cambio.
+>
 
 ## Requisitos
 
