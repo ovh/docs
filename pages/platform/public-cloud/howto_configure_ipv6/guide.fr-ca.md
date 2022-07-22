@@ -6,7 +6,7 @@ section: 'Réseau'
 order: 21
 ---
 
-**Dernière mise à jour le 21/06/2022**
+**Dernière mise à jour le 22/07/2022**
 
 ## Objectif
 
@@ -20,7 +20,7 @@ Par défaut, seule l'adresse IPv4 est configurée.
 
 > [!warning]
 > 
-> Veuillez noter que sur les versions récentes des systèmes d'exploitation Linux, l'adresse IPv6 est configuré par défaut sur les instances Public Cloud. Assurez-vous de vérifier le fichier de configuration de votre OS avant d'effectuer tout changement.
+> Veuillez noter que, sur les versions récentes des systèmes d'exploitation Linux, l'adresse IPv6 est configuré par défaut sur les instances Public Cloud. Assurez-vous de vérifier le fichier de configuration de votre OS avant d'effectuer tout changement.
 >
 
 ## Prérequis
