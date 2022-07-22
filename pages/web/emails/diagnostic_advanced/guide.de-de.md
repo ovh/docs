@@ -35,7 +35,7 @@ Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-
 
 Damit Ihre E-Mails funktionieren, benötigen Sie ein aktives E-Mail-Angebot. Wenn Ihre E-Mail-Accounts Teil eines Webhosting-Angebots sind, überprüfen Sie, dass es nicht abgelaufen ist. Sie können das direkt im Kundencenter überprüfen. Die zugehörige Domain muss ebenfalls aktiv sein.
 
-Überprüfen Sie zunächst, ob Sie sich auf dem neuesten Stand der [Zahlungen](https://docs.ovh.com/de/billing/ovh-rechnungen-verwalten/#pay-bills) und [Verlängerungen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#renewal-management) Ihrer Dienstleistungen befinden.
+Überprüfen Sie zunächst, dass Sie keine ausstehenden [Zahlungen](https://docs.ovh.com/de/billing/ovh-rechnungen-verwalten/#pay-bills) und [Verlängerungen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#renewal-management) Ihrer Dienstleistungen haben.
 
 Befolgen Sie diese Schritte, um sicherzustellen, dass Ihre relevanten Dienste in Betrieb sind:
 

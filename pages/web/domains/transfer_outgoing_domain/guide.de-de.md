@@ -78,7 +78,7 @@ Anstatt den Code manuell einzugeben, empfehlen wir Ihnen, diesen zu kopieren und
 
 > [!warning]
 >
-> Wenn die Domain gesperrt oder abgelaufen ist, muss über Ihr OVHcloud Kundencenter [Support-Ticket erstellen](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
+> Wenn die Domain gesperrt oder abgelaufen ist, muss über Ihr OVHcloud Kundencenter ein [Support-Ticket erstellt werden](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
 
 ### Schritt 3: Transfer zum neuen Registrar beauftragen
 
