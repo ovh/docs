@@ -5,7 +5,7 @@ slug:
 section: 
 ---
 
-**Last updated 22th July 2022**
+**Last updated 22nd July 2022**
 
 # How to use a custom gateway with a Managed Kubernetes cluster.
 
@@ -74,7 +74,7 @@ Get your OpenStack Tenant Id and store it into the serviceName variable.
 
 > Important: Assuming that your PCI project is added to your [vRack](https://docs.ovh.com/us/en/public-cloud/public-cloud-vrack/).
 
-We are using the OVHcloud API to create the private network. For this tutorial, whe are using the two regions GRA9 and GRA11.
+We are using the OVHcloud API to create the private network. For this tutorial, we are using the two regions GRA9 and GRA11.
 
 with data inside the **data-pvnw.json** file:
 
@@ -111,7 +111,7 @@ Ref: https://www.davidc.net/sites/default/subnets/subnets.html
 |Subnet 1|GRA9|192.168.0.0/25|192.168.0.1|192.168.0.2-192.168.0.126|192.168.0.127|
 |Subnet 2|GRA11|192.168.0.128/25|192.168.0.129|192.168.0.130-192.168.0.254|192.168.0.255|
 
-Create this two data files:
+Create these two data files:
 
 **data-subnetGRA9.json** file:
 ```json
@@ -137,7 +137,7 @@ Create this two data files:
 }
 ```
 
-> Note: To be clear, the parameter "noGateway": false means "Gateway": true. We want the subnet explicitly use the CIDR range first IP address.
+> Note: To be clear, the parameter "noGateway": false means "Gateway": true. We want the subnet to explicitly use the CIDR range first IP address.
 
 Then create subnets with appropriate routes, and finally get ids (subnGRA9 & subnGRA11):
 
@@ -168,7 +168,7 @@ Then create subnets with appropriate routes, and finally get ids (subnGRA9 & sub
 ### Create the routers
 
 We have the ability to create Openstack virtuals routers. To do this, we need to use the Openstack Cli.
-Create router and get their ids (rtrGRA9Id & rtrGRA11Id):
+Create routers and get their ids (rtrGRA9Id & rtrGRA11Id):
 
 > [!tabs]
 > Bash
@@ -205,11 +205,11 @@ Do the same with the regional subnets:
 >> openstack --os-region-name=GRA11 router add subnet $rtrGRA11Id $subnGRA11
 >> ```
 
-## Create cluster with private gateway
+## Create a cluster with private gateway
 
-Now the network is ready,create the Kubernetes cluster, specifying the use of the gateway defined on each subnet.
+Now the network is ready, create the Kubernetes cluster, specifying the use of the gateway defined on each subnet.
 
-> Note: until the end of this tutorial, we are only using the GRA9 region, but you can repeat exactly the same steps to create a cluster on the GRA11 region.
+> Note: until the end of this tutorial, we are only using the GRA9 region, but you can repeat the exact same steps to create a cluster on the GRA11 region.
 
 Create a **tpl/data-kube.json** file as data and add the right parameters. The files should be like:
 
@@ -233,7 +233,7 @@ Create a **tpl/data-kube.json** file as data and add the right parameters. The f
 }
 ``` 
 
-Get first the private network Ids (pvnwGRA9Id & pvnwGRA11Id) then create the Kubernetes Cluster and finally get the cluster Id (kubeId):
+First, get the private network Ids (pvnwGRA9Id & pvnwGRA11Id) then create the Kubernetes Cluster and finally get the cluster Id (kubeId):
 
 > [!tabs]
 > Bash
@@ -297,7 +297,7 @@ The IP address must be the same as the public router one.
 
 ### Routers
 
-To delete an Openstack router, you have to remove linked ports before.
+To delete an Openstack router, you must first remove the related ports.
 
 > [!tabs]
 > Bash
