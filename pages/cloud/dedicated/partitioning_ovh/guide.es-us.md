@@ -1,8 +1,8 @@
 ---
-title: 'OVHcloud API & Partitioning'
+title: 'OVHcloud API & Partitioning (EN)'
 slug: api-partitioning
 excerpt: 'Find out what the OVHcloud API provides in order to customize the partitioning configuration during the server OS installation'
-section: 'RAID and disks'
+section: 'RAID y discos'
 routes:
     canonical: 'https://docs.ovh.com/gb/en/dedicated/api-partitioning/'
 ---
