@@ -5,7 +5,11 @@ excerpt: 'Tutorial de configuração do protocolo IPv6 numa instância Public Cl
 section: Rede
 ---
 
-**Última atualização: 21/06/2022**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 22/07/2022**
 
 ## Objetivo
 
@@ -15,7 +19,12 @@ Todas as instâncias Public Cloud são entregues com um endereço IPv4 e um ende
 
 Por predefinição, apenas o endereço IPv4 é configurado.
 
-Neste tutorial, iremos explicar como configurar um endereço IPv6 numa instância Public Cloud.
+**Neste tutorial, iremos explicar como configurar um endereço IPv6 numa instância Public Cloud.**
+
+> [!warning]
+>
+> Note-se que nas versões recentes dos sistemas operativos Linux, o endereço IPv6 é configurado por defeito nas instâncias da Nuvem Pública. Certifique-se de verificar o seu ficheiro de configuração do SO antes de fazer quaisquer alterações.
+>
 
 ## Requisitos
 

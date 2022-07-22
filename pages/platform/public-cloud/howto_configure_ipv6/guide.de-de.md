@@ -5,7 +5,11 @@ excerpt: 'Anleitung zum Konfigurieren von IPv6 auf einer Public Cloud Instanz'
 section: 'Netzwerk und IP'
 ---
 
-**Letzte Aktualisierung am 21.06.2022**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 22.07.2022**
 
 ## Ziel
 
@@ -16,6 +20,11 @@ Jede Public Cloud Instanz wird mit einer IPv4-Adresse und einer IPv6-Adresse aus
 Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 
 **In dieser Anleitung möchten wir Ihnen zeigen, wie Sie eine IPv6-Adresse auf einer Public Cloud Instanz konfigurieren können.**
+
+> [!warning]
+>
+> Bitte beachten Sie, dass bei neueren Versionen von Linux-Betriebssystemen die IPv6-Adresse von Public-Cloud-Instanzen breits vorkonfiguriert ist. Überprüfen Sie deshalb die Konfigurationsdatei Ihres Betriebssystems, bevor Sie Änderungen vornehmen.
+>
 
 
 ## Voraussetzungen
