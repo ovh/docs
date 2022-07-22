@@ -118,7 +118,7 @@ Prima di contattarci, dovete raccogliere i seguenti elementi giustificativi:
 
 |Tipo di account OVHcloud|Giustificativi da fornire|
 |---|---|
-|Privato|- Documento d'identità (carta d'identità, patente di guida, passaporto) con indicazione del nome completo, della data di nascita e di scadenza, a nome del titolare dell'account OVH Cloud|
+|Privato|- Documento d'identità (carta d'identità, patente di guida, passaporto) con indicazione del nome completo, della data di nascita e di scadenza, a nome del titolare dell'account OVHcloud|
 |Società|- Documenti d'identità di una persona autorizzata a rappresentare l'impresa (carta d'identità, patente di guida, passaporto) con indicazione del nome completo, della data di nascita e di scadenza.<br><br>- Documenti comprovanti le coordinate della società e la persona che rappresenta la società.|
 
 Una volta raccolti i giustificativi, contatta il supporto OVHcloud al +39 02 5560 0423. 
