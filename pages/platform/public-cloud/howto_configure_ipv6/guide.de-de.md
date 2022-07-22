@@ -23,7 +23,7 @@ Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 
 > [!warning]
 >
-> Bitte beachten Sie, dass bei neueren Versionen von Linux-Betriebssystemen die IPv6-Adresse in Public-Cloud-Instanzen standardmäßig konfiguriert ist. Stellen Sie sicher, dass Sie die Konfigurationsdatei Ihres Betriebssystems überprüfen, bevor Sie irgendwelche Änderungen vornehmen.
+> Bitte beachten Sie, dass bei neueren Versionen von Linux-Betriebssystemen die IPv6-Adresse von Public-Cloud-Instanzen breits vorkonfiguriert ist. Überprüfen Sie deshalb die Konfigurationsdatei Ihres Betriebssystems, bevor Sie Änderungen vornehmen.
 >
 
 
