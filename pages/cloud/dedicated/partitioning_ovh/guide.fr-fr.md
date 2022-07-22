@@ -15,7 +15,7 @@ section: 'RAID & disques'
 > Cet article est destiné aux utilisateurs expérimentés qui ont au minimum des connaissances de base sur Linux, mais surtout des connaissances plus approfondies sur le stockage et en particulier sur les logiciels RAID ainsi que sur la gestion logique des volumes (LVM).
 >
 
-Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer des partitions, le [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/), un LVM, un ZFS, etc. pendant [l’installation](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/) de votre système d'exploitation depuis l’[API OVHcloud](https://api.ovh.com/) ou depuis votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration). Dans cet article, nous allons nous concentrer sur l'[API OVHcloud](https://api.ovh.com/).<br>
+Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer des partitions, le [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/), LVM, ZFS, etc. pendant [l’installation](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/) de votre système d'exploitation depuis l’[API OVHcloud](https://api.ovh.com/) ou depuis votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration). Dans cet article, nous allons nous concentrer sur l'[API OVHcloud](https://api.ovh.com/).<br>
 Cela vous donnera plus de détails sur le moteur qui s'exécute en arrière-plan, afin de créer le partitionnement sur le serveur dédié à partir des données d'entrée transmises à l'API OVHcloud.
 
 Fournir des détails avancés sur le partitionnement peut vous aider à comprendre pourquoi :
@@ -48,22 +48,22 @@ Lorsque l’on parle de schéma de partitionnement, on évoque l’organisation 
 - Disque (disque physique, PD)
 - Partition (partition physique, PP)
 - ZFS : vdev (zgroup, ZG), zpool (ZP), dataset ZFS (ZD), volume ZFS (ZV)
-- Le [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/) (SR)
+- [RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft/) (SR)
 - LVM : volume physique (VP), groupe de volumes (VG), volume logique (LV)
 - Système de fichiers avec point de montage (FS)
 
 Le tableau suivant donne une vue d'ensemble des différents composants de partitionnement et de la manière dont ces couches interagissent :
 
-![Partitionnement de la table des couches](images/partitioning-layers-table.png){.thumbnail}
+![Tableau représentant les différentes couches du partitionnement](images/partitioning-layers-table.png){.thumbnail}
 
 > [!primary]
 >
 > Dans le tableau ci-dessus, `/dev/zd1` représente un volume ZFS (aussi appelé `zvol`). Il s'agit d'un disque virtuel situé au-dessus d'un ensemble de données ZFS (ZD) et d'un zpool (ZP), qui est considéré comme un disque physique normal (PD) par le système d'exploitation. Cette fonctionnalité n'est pas disponible sur l'API OVHcloud et nous ne prévoyons pas de l'implémenter.
 >
 
-### Partitionnement à travers l'API
+### Partitionnement avec l'API
 
-#### Concepts des templates
+#### Concepts des gabarits
 
 Lors du lancement de l’installation du système d'exploitation, vous pouvez soit choisir entre plusieurs modèles/gabarits (*templates*) OVHcloud, soit choisir un de vos templates personnels (basé sur un template OVHcloud).
 
@@ -279,16 +279,16 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 
 #### Saisir l'auto-correction du client
 
-Afin d'améliorer l'expérience client, réduire la charge de travail du [support OVHcloud](https://help.ovhcloud.com/fr/) et éviter des injections de changements dommageables pour le client, certaines saisies effectués par le client sont automatiquement corrigées ou modifiées par le backend. Le tableau suivant donne une vue d'ensemble de ce qui est actuellement auto-fixé / changé lors du **pre-processing** :
+Afin d'améliorer l'expérience client, réduire la charge de travail du [support OVHcloud](https://help.ovhcloud.com/fr/) et éviter les changements brutaux qui pourraient avoir un impact pour le client, certaines saisies effectuées par le client sont automatiquement corrigées ou modifiées par le backend. Le tableau suivant donne une vue d'ensemble de ce qui est actuellement auto-corrigé / changé lors du **pre-processing** :
 
-|Subject|Description|
+|Sujet|Description|
 |---|---|
 |Regroupement ZP|Toutes les partitions ZFS de même niveau RAID seront regroupées au sein d’un même zpool (ZP) (si possible en fonction de la taille des disques).|
-|Regroupement LV|Toutes les partitions de type `lv` ayant le même niveau RAID seront regroupées au sein d'un même VG (si possible en fonction de la taille des disques).|
+|Regroupement LV|Toutes les partitions de type `lv` ayant le même niveau de RAID seront regroupées au sein d'un même VG (si possible en fonction de la taille des disques).|
 |Expansion VG|Dans le cas de partitions lv de niveau RAID 0, le VG s’étendra sur plusieurs PP (donc PD) et aucun périphérique SR ne sera créé.|
-|VG Remplissage de disque|L'espace disque restant sera comblé par un VG (si un LV existe). La taille des LV attachés au VG n'est pas affectée.|
+|VG Remplissage de disque|L'espace disque restant sera comblé par un VG (si un LV existe). La taille des LV contenus dans ce VG n'est pas affectée.|
 |Réduction du niveau RAID|Dans le cas où vous choisissez une partition avec un niveau RAID nécessitant plus de disques que le serveur n’en a, le niveau RAID sera automatiquement réduit dans l’ordre suivant : 6, 10, 5, 1, 0 (ou raidz3, raidz2, raidz, mirror, striped vdev pour ZFS).|
-|Réduction de la taille du PP|Dans le cas où vous avez choisi un PP qui nécessite plus d'espace que le serveur a, la taille de ce PP sera réduite afin qu'il s'adapte au disque. Notez que dans le cas où plusieurs PP nécessitent plus d'espace que celui dont dispose le système, le script n'agira que sur la première partition, en soulevant une erreur plus tard dans le script pour la seconde partition surdimensionnée. Notez également qu’une erreur sera générée si vous avez paramétré une autre partition pour remplir le disque via l’API OVHcloud.|
+|Réduction de la taille du PP|Dans le cas où vous avez choisi un PP qui nécessite plus d'espace que le serveur a, la taille de ce PP sera réduite afin qu'il s'adapte au disque. Notez que dans le cas où plusieurs PP nécessitent plus d'espace que celui dont dispose le système, le script n'agira que sur la première partition, en remontant une erreur plus tard dans le script pour la seconde partition surdimensionnée. Notez également qu’une erreur sera générée si vous avez paramétré une autre partition pour remplir le disque via l’API OVHcloud.|
 
 ## Aller plus loin <a name="gofurther"></a>
 
