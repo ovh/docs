@@ -1,11 +1,11 @@
 ---
 title: 'Notion de Numéro de commande ou Purchase Order (PO)'
 slug: purchase-order
-excerpt: 'Comprendre la notion de numéro de commande ou purchase order et l’appliquer dans le cadre du réglement des factures OVHcloud'
+excerpt: "Comprendre la notion de numéro de commande ou purchase order et l’appliquer dans le cadre du réglement des factures OVHcloud"
 section: Facturation
 ---
 
-**Dernière mise à jour le 14/11/2019**
+**Dernière mise à jour le 22/07/2022**
 
 ## Objectif
 
@@ -52,10 +52,34 @@ Pour OVHcloud, le document doit donc contenir a minima les informations suivante
 
 ### Comment renseigner un Numéro de Purchase Order (PO)
 
-Afin que OVHcloud puisse éditer les factures avec le numéro de Purchase Order souhaité, contactez votre conseiller commercial afin de lui donner ce numéro.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis, dans l'onglet `Tableau de bord`{.action}, cliquez sur `Voir mes commandes`{.action}.
 
-En cas de modification de ce numéro de Purchase Order, contactez votre conseiller commercial au plus vite.
+![Espace client](images/internalreference00.png){.thumbnail}
 
+Cliquez sur l'onglet `Mes références internes`{.action} puis sur le bouton `+ Ajouter une référence interne`{.action}.
+
+![Espace client](images/internalreference01.png){.thumbnail}
+
+Deux terminologies s'offrent à vous, selon que vous souhaitiez afficher sur vos factures la mention `Référence interne` **ou** `Purchase Order`.<br>
+Sélectionnez ainsi soit  `Créer une référence interne`{.action}, soit `Créer votre purchase order`{.action}.
+
+Donnez un nom à votre référence interne / Purchase Order dans le champ prévu à cet effet, renseignez une **date de début** et une **date de fin** (la date de fin est exclue) puis cliquez sur  `Valider`{.action}.
+
+> [!primary]
+> Vous ne pouvez pas créer 2 références internes / Purchase Orders sur la même période de temps.
+
+![Espace client](images/internalreference02.png){.thumbnail}
+
+La référence définie apparaîtra alors sur vos prochaines factures correspondant à l'intervalle de temps défini.
+
+![Espace client](images/internalreference03.png){.thumbnail} <!-- image facture à rajouter -->
+
+Depuis l'onglet  `Mes références internes`{.action}, vous pouvez modifier ou désactiver une référence déjà créée en cliquant sur le bouton `...`{.action} à droite de la référence concernée.
+
+![Espace client](images/internalreference04.png){.thumbnail}
+
+> [!primary]
+> Si vous souhaitez désactiver/modifier une référence au profit d'une autre **sur le même intervalle de temps**, vous devez utiliser l'option  `Modifier`{.action} afin de modifier l'intervalle de temps de la première référence.
 
 ## Aller plus loin
 
