@@ -297,7 +297,7 @@ The IP address must be the same as the public router one.
 
 ### Routers
 
-To delete an Openstack router, you must first remove the related ports.
+To delete an Openstack router, you must first remove the linked ports.
 
 > [!tabs]
 > Bash
