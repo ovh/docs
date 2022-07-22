@@ -5,7 +5,7 @@ excerpt: 'Find out how to improve security for your OVHcloud account by enabling
 section: Security
 ---
 
-**Last updated 17th June 2022**
+**Last updated 21st July 2022**
 
 ## Objective
 
@@ -111,7 +111,7 @@ Before contacting us, you must gather the following documents:
 
 |OVHcloud account type|Needed documents|
 |---|---|
-|Private individual|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder<br><br>- One proof of address corresponding to the one registered in the OVHcloud account, less than two months old.|
+|Private individual|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder<br><br>- One proof of address corresponding to the one registered in the OVHcloud account, less than two months old<br>**If, following a move, you have not updated your address in your OVHcloud Control Panel, you will need to provide:**<br>- A proof of address at the old address<br>- A proof of address at the new address, less than two months old<br>If you are now living with a third party, you will need to provide:<br>- A proof of address in the name of the person hosting you, less than two months old<br>- A certificate of accommodation signed by the person hosting you|
 |Company|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder, or in the name of a person authorized to represent the company.<br><br>- One proof of address for the company, corresponding to the one registered in the OVHcloud account, less than two months old. |
 
 Once you have gathered your supporting documents, contact our OVHcloud support teams by calling +1-855-684-5463. 

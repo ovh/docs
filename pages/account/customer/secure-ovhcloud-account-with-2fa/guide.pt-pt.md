@@ -9,7 +9,7 @@ section: Segurança
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 19/01/2022**
+**Última atualização: 21/07/2022**
 
 ## Objetivo
 
@@ -118,7 +118,7 @@ Antes de nos contactar, deverá apresentar os seguintes elementos comprovativos:
 
 |Tipo de conta OVHcloud|Documentos a apresentar|
 |---|---|
-|Particular|- Documento de identidade (cartão de cidadão, carta de condução, passaporte) do titular da conta OVHcloud<br><br>- Comprovativo de morada recente|
+|Particular|- Documento de identidade (cartão de cidadão, carta de condução, passaporte) do titular da conta OVHcloud<br><br>- Comprovativo de morada recente<br>**Se, após uma mudança de residência, não tiver atualizado o seu endereço na Área de Cliente OVHcloud, deverá fornecer:**<br>- Um comprovativo de morada no antigo endereço<br>- Um comprovativo de morada recente no novo endereço<br>Se vive agora num terceiro, deverá fornecer:<br>- Um comprovativo de morada recente em nome da pessoa que o aloja<br>- Certificado de alojamento assinado pela pessoa que o aloja|
 |Empresa|- Documento de identidade (cartão de cidadão, carta de condução, passaporte) do gerente da empresa<br><br>- Documento comprovativo do registo da empresa ou o código da certidão permanente<br><br>- Comprovativo de morada em nome da empresa|
 
 Quando os seus documentos estiverem reunidos, contacte o suporte da OVHcloud em +351 213 155 642. 
