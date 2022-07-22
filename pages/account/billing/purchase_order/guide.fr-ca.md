@@ -5,7 +5,7 @@ excerpt: 'Comprendre la notion de numéro de commande ou purchase order et l’a
 section: Facturation
 ---
 
-**Dernière mise à jour le 14/11/2019**
+**Dernière mise à jour le 22/07/2022**
 
 ## Objectif
 
@@ -50,12 +50,36 @@ Pour OVHcloud, le document doit donc contenir a minima les informations suivante
 * Date de début de validité
 * Date de fin de validité
 
-### Comment renseigner un Numéro de Purchase Order (PO)
+### Comment renseigner un Numéro de Purchase Order (PO) dans votre espace client OVHcloud
 
-Afin que OVHcloud puisse éditer les factures avec le numéro de Purchase Order souhaité, contactez votre conseiller commercial afin de lui donner ce numéro.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis, dans l'onglet `Tableau de bord`{.action}, cliquez sur `Voir mes commandes`{.action}.
 
-En cas de modification de ce numéro de Purchase Order, contactez votre conseiller commercial au plus vite.
+![Espace client](images/internalreference00.png){.thumbnail}
 
+Cliquez sur l'onglet `Mes références internes`{.action} puis sur le bouton `+ Ajouter une référence interne`{.action}.
+
+![Espace client](images/internalreference01.png){.thumbnail}
+
+Deux terminologies s'offrent à vous, selon que vous souhaitez afficher sur vos factures la mention `Référence interne` **ou** la mention `Purchase Order`.<br>
+Sélectionnez ainsi soit  `Créer une référence interne`{.action}, soit `Créer votre purchase order`{.action}.
+
+Donnez un nom à votre référence interne / Purchase Order dans le champ prévu à cet effet, renseignez une **date de début** et une **date de fin** (la date de fin est exclue) puis cliquez sur  `Valider`{.action}.
+
+> [!primary]
+> Vous ne pouvez pas créer 2 références internes / Purchase Orders sur la même période de temps.
+
+![Espace client](images/internalreference02.png){.thumbnail}
+
+Cette référence apparaîtra alors sur vos prochaines factures correspondant à l'intervalle de temps défini par vos soins.
+
+![Espace client](images/internalreference03.png){.thumbnail}
+
+Depuis l'onglet `Mes références internes`{.action}, vous pouvez modifier ou désactiver une référence déjà créée en cliquant sur le bouton `...`{.action} à droite de la référence concernée.
+
+![Espace client](images/internalreference04.png){.thumbnail}
+
+> [!primary]
+> Si vous souhaitez désactiver/modifier une référence au profit d'une autre **sur le même intervalle de temps**, vous devez utiliser l'option  `Modifier`{.action} afin de modifier l'intervalle de temps de la première référence.
 
 ## Aller plus loin
 
