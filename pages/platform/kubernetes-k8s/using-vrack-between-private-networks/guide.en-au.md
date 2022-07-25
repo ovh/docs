@@ -45,11 +45,6 @@ When your Managed Kubernetes and your other services are both in the vRack, but 
 > [!warning]
 > You can now [create and use a custom gateway on an OVHcloud Managed Kubernetes cluster](../vrack-k8s-custom-gateway) but if you don't want to, the content of this guide is still relevant.
 
-you can still 
-
-> The need of extra manual configuration described in this guide is **temporary**. Our Managed Kubernetes team is working on a more streamlined solution, as explained in [this issue](https://github.com/ovh/public-cloud-roadmap/issues/116) in our [Public Cloud roadmap](https://github.com/ovh/public-cloud-roadmap/).
->
-
 In this document we suppose that you have some understanding of how to use OVHcloud Managed Kubernetes in the vRack. To get more information on this topic you can look at the [Using vRack Private Network](../using_vrack/) guide and [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial.
 
 ## Networking in Managed Kubernetes inside the vRack
