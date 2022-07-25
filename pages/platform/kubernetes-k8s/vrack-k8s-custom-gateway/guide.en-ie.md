@@ -29,11 +29,11 @@ section: Network
 
 **Last updated 25th July 2022**
 
-# How to use a custom gateway deployed in vrack with a Managed Kubernetes cluster
+# How to use a custom gateway deployed in vRack with a Managed Kubernetes cluster
 
 ## Objectives
 
-In this tutorial we are going use a custom gateway deployed in vrack with a Managed Kubernetes cluster.
+In this tutorial we are going use a custom gateway deployed in vRack with a Managed Kubernetes cluster.
 
 Why?
 
@@ -42,12 +42,10 @@ So we have as many output IPs as Nodes. This can be a problem when you are in a 
 
 One solution is to use a custom gateway which will allow you to have a single output IP (your gateway).
 
-You can deploy and manage your own gateway using an instance connected to multiple private networks, but in this tutorial we will leverage the managed OpenStack router now available in some regions.
-
 You will:
 - create a private network
 - create subnets
-- create an OpenStack router (in the different regions where your need them) and link them to the external provider network and the subnets.
+- create an OpenStack router (in every regions) and link them to the external provider network and the subnets
 - create an OVHcloud Managed Kubernetes cluster with the private gateway
 - test the Pod's output IP
 
@@ -60,20 +58,20 @@ At the end of this tutorial you should have the following flow:
 
 ## Pre-requisites
 
-- A [Public Cloud project](https://docs.ovh.com/us/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account.
-- The [OpenStack API CLI](https://docs.ovh.com/us/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) installed.
-- Be familiar with the [OVHcloud API](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/).
+- A [Public Cloud project](https://docs.ovh.com/ie/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account.
+- The [OpenStack API CLI](https://docs.ovh.com/ie/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) installed.
+- Be familiar with the [OVHcloud API](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/).
 - The JSON parser tool [jq](https://stedolan.github.io/jq/){.external} installed.
 
 ## Initialization
 
-To setup a fonctional environment, you have to load the OpenStack and the OVHcloud API credentials.
+To setup a functional environment, you have to load the OpenStack and the OVHcloud API credentials.
 To help you we also created for you several useful scripts and templates.
 
 First, create in your environment/local machine a `utils` folder.
-Then, download [ovhAPI.sh](https://raw.githubusercontent.com/ovh/docs/vrack-k8s-custom-gateway/pages/platform/kubernetes-k8s/vrack-k8s-custom-gateway/utils/ovhAPI.sh) script into it.
+Then, download the [ovhAPI.sh](https://raw.githubusercontent.com/ovh/docs/vrack-k8s-custom-gateway/pages/platform/kubernetes-k8s/vrack-k8s-custom-gateway/utils/ovhAPI.sh) script into it.
 
-And then add execution right to `ovhAPI.sh` script:
+And then add execution rights to the `ovhAPI.sh` script:
 
 ```bash 
 chmod +x utils/ovhAPI.sh
@@ -125,7 +123,7 @@ Load variables:
 >> . utils/ovhAPI.properties
 >> ``` 
 
-Get your OpenStack Tenant Id and store it into the serviceName variable.
+Get your OpenStack Tenant ID and store it into the serviceName variable.
 
 > [!tabs]
 > Bash
@@ -145,11 +143,11 @@ EXAMPLE
 
 ## Create Private Network
 
-> Important: Assuming that your PCI project is added to your [vRack](https://docs.ovh.com/us/en/public-cloud/public-cloud-vrack/).
+> Important: Assuming that your PCI project is added to your [vRack](https://docs.ovh.com/ie/en/public-cloud/public-cloud-vrack/).
 
 We are using the OVHcloud API to create the private network. For this tutorial, we are using the two regions GRA9 and GRA11.
 
-Create a folder `tpl` next to `utils` folder and create inside the **data-pvnw.json** file witht he following content:
+Create a folder `tpl` next to `utils` folder and create inside the **data-pvnw.json** file with he following content:
 
 ```json
 {
@@ -159,7 +157,7 @@ Create a folder `tpl` next to `utils` folder and create inside the **data-pvnw.j
 }
 ```
 
-Create the private network named `demo-pvnw` in `GRA9` and `GRA11` regions and get the vlan ID.
+Create the private network named `demo-pvnw` in `GRA9` and `GRA11` regions and get the VLAN ID.
 
 > [!tabs]
 > Bash
@@ -179,11 +177,11 @@ You should have a result like this:
 pn-1083678_20
 </code></pre>
 
-At this point, your private network is created and is ID is `pn-1083678_20`.
+At this point, your private network is created and its ID is `pn-1083678_20`.
 
 ## Create subnets
 
-For this tutorial, we are spliting  a /24 subnet, to obtain two /25 subnets.
+For this tutorial, we are splitting a /24 subnet, to obtain two /25 subnets.
 
 Ref: https://www.davidc.net/sites/default/subnets/subnets.html
 
@@ -192,7 +190,7 @@ Ref: https://www.davidc.net/sites/default/subnets/subnets.html
 |Subnet 1|GRA9|192.168.0.0/25|192.168.0.1|192.168.0.2-192.168.0.126|192.168.0.127|
 |Subnet 2|GRA11|192.168.0.128/25|192.168.0.129|192.168.0.130-192.168.0.254|192.168.0.255|
 
-Create these two data files in `tpl` folder:
+Create these two data files in the `tpl` folder:
 
 **data-subnetGRA9.json** file:
 ```json
@@ -218,7 +216,7 @@ Create these two data files in `tpl` folder:
 }
 ```
 
-> Note: To be clear, the parameter `"noGateway": false` means `"Gateway": true`. We want the subnet to explicitly use the CIDR range first IP address.
+> Note: To be clear, the parameter `"noGateway": false` means `"Gateway": true`. We want the subnet to explicitly use the first IP address of the CIDR range.
 
 Then create subnets with appropriate routes, and finally get IDs (subnGRA9 & subnGRA11):
 
@@ -257,7 +255,7 @@ e76f2b49-2b9f-4248-98ae-179d596d6e45
 
 ### Create the routers
 
-We have the ability to create OpenStack virtuals routers. To do this, we need to use the OpenStack CLI.
+We have the ability to create OpenStack virtual routers. To do this, we need to use the OpenStack CLI.
 Create routers and get their IDs (rtrGRA9Id & rtrGRA11Id):
 
 > [!tabs]
@@ -276,13 +274,12 @@ $ export rtrGRA11Id="$(openstack --os-region-name=GRA11 router create rtr-GRA11 
 ResourceNotFound: 404: Client Error for url: https://network.compute.gra11.cloud.ovh.net/v2.0/routers, The resource could not be found.
 </code></pre>
 
-TODO: fix the error ...
 
 > [!primary]
 >
-> For the moment you can only create a virtual router on GRA9 and GRA11 region, but this feature will be released in another regions in coming weeks and monthes.
+> For the moment you can only create a virtual router in the GRA9 and GRA11 regions, but this feature will be released in another regions in coming weeks and months.
 
-Now, you can display the information of your newly virtual router on GRA9 in order to display its IP:
+Now, you can display the information of your new virtual router on GRA9 in order to display its IP:
 
 <pre class="console"><code>$ openstack --os-region-name=GRA9 router show $rtrGRA9Id -c id -c name -c status -c created_at -c external_gateway_info
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -339,7 +336,7 @@ Do the same with the regional subnets:
 
 ## Create a Kubernetes cluster with private gateway
 
-Now the network is ready, create a OVHcloud Managed Kubernetes cluster, specifying the use of the gateway defined on each subnet.
+Now the network is ready. Create an OVHcloud Managed Kubernetes cluster, specifying the use of the gateway defined on each subnet.
 
 > Note: until the end of this tutorial, we are only using the `GRA9` region, but you can repeat the exact same steps to create a cluster on the `GRA11` region.
 
@@ -458,7 +455,7 @@ To proceed with the freshly created Kubernetes cluster, you must get the Kubecon
 >> >
 >> > @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/kubeconfig
 
-To use this kubeconfig file and access to your cluster, you can follow our [configuring kubectl](https://docs.ovh.com/ie/en/kubernetes/configuring-kubectl/) tutorial, or symply add the `--kubeconfig` flag in your `kubectl` commands.
+To use this kubeconfig file and access to your cluster, you can follow our [configuring kubectl](https://docs.ovh.com/ie/en/kubernetes/configuring-kubectl/) tutorial, or simply add the `--kubeconfig` flag in your `kubectl` commands.
 
 ## Test
 
@@ -486,7 +483,7 @@ apt install -y curl
 curl ifconfig.me
 ```
 
-Your should obtain a result like this:
+You should obtain a result like this:
 
 <pre class="console"><code>$ kubectl --kubeconfig=kubeconfig-demo run --image=debian debian  -it -- bash
 If you don't see a command prompt, try pressing enter.
