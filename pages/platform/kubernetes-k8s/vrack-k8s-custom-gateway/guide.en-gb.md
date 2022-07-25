@@ -42,10 +42,12 @@ So we have as many output IPs as Nodes. This can be a problem when you are in a 
 
 One solution is to use a custom gateway which will allow you to have a single output IP (your gateway).
 
+You can deploy and manage your own gateway using an instance connected to multiple private networks, but in this tutorial we will leverage the managed OpenStack router now available in some regions.
+
 You will:
 - create a private network
 - create subnets
-- create an OpenStack router (in every regions) and link them to the external provider network and the subnets
+- create an OpenStack router (in the different regions where your need them) and link them to the external provider network and the subnets.
 - create an OVHcloud Managed Kubernetes cluster with the private gateway
 - test the Pod's output IP
 
