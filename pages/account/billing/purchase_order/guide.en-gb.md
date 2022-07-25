@@ -59,7 +59,7 @@ Click the `My Internal References`{.action} tab and then click the `+ Add an int
 
 ![Control Panel](images/internalreference01.png){.thumbnail}
 
-You can use two different wordings, depending on whether you wish to display the word `Internal reference` **or**  the word `Purchase order` on your invoices.<br>
+You can use two different wordings, depending on whether you wish to display the notation `Internal reference` **or**  the notation `Purchase order` on your invoices.<br>
 Select either `Create your internal reference`{.action} or `Create your purchase order`{.action}.
 
 Give your internal reference / purchase order a name in the field provided, enter a **start date** and an **end date** (the end date is excluded) then click on `Validate`{.action}.
