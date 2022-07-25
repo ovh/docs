@@ -36,9 +36,11 @@ You can easily reinstall your server and choose a different OS image in your [OV
 
 ![Reinstall button](images/reinstalling-your-server-00.png){.thumbnail}
 
-On the next screen, select either `Install from an OVHcloud template`{.action} or `Install one of your templates`{.action} in order to use a template for the installation. 
+In the popup window, select one of the installation options:
 
-To be able to install a customised image on the server, choose the third option `Install from custom image`{.action}. Please refer to the [BYOI guide](../bringyourownimage/) to learn about the settings of this functionality.
+- `Install from an OVHcloud template`{.action}: You can select the OS and customise the server configuration.
+- `Install one of your templates`{.action}: In order to apply a customised template, you need to have saved at least one server configuration. To do this, check the option `Save this installation` in step 4 of the installation process.
+- `Install from custom image`{.action}: This allows you to install an external image on the server. Please refer to the [BYOI guide](../bringyourownimage/) to learn about the settings of this functionality.
 
 > [!primary]
 >

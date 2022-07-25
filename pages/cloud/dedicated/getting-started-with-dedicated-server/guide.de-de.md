@@ -41,9 +41,11 @@ Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](h
 
 ![Button Reinstallieren](images/reinstalling-your-server-00.png){.thumbnail}
 
-Wählen Sie im folgenden Fenster `Installation mit einem OVHcloud Template`{.action} oder `Installation mit einem Ihrer Templates`{.action} Vorlagen zur Installation eines Installations-Template.
+Wählen Sie im Popup-Fenster eine der Installationsoptionen aus:
 
-Um ein individualisiertes Image auf dem Server installieren zu können, wählen Sie die dritte Option `Installation auf Basis eines personalisierten Images`{.action}. Weitere Informationen zu den Parametern finden Sie in der Anleitung ["Bring Your Own Image verwenden"](../bringyourownimage/).
+- `Installation mit einem OVHcloud Template`{.action}: Sie können das Betriebssystem auswählen und die Konfiguration Ihres Servers anpassen.
+- `Installation mit einem Ihrer Templates`{.action}: Um eine personalisierte Vorlage verwenden zu können, müssen Sie zuvor mindestens eine Serverkonfiguration gespeichert haben. Aktivieren Sie dazu in Schritt 4 des Installationsprozesses die Option "Diese Installation speichern".
+- `Installation auf Basis eines personalisierten Images`{.action}: Mit dieser Option können Sie ein externes Image auf dem Server installieren. Weitere Informationen zu dieser Option finden Sie in der Anleitung ["Bring Your Own Image verwenden"](../bringyourownimage/)".
 
 > [!primary]
 >
