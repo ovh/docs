@@ -6,7 +6,7 @@ section: Network
 order: 01
 ---
 
-**Last updated July 31<sup>st</sup>, 2021.**
+**Last updated July 25th, 2022.**
 
 <style>
  pre {
@@ -35,14 +35,18 @@ order: 01
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
 
-By default, your Kubernetes clusters will have public IPs. For some uses cases, or for security reasons, you could prefer having your Kubernetes cluster inside a private network. 
+By default, your Kubernetes clusters will have public IPs. For some uses cases, or for security reasons, you might prefer having your Kubernetes cluster inside a private network. 
 
-OVHcloud [vRack](https://www.ovh.com.au/solutions/vrack/) is a private networking solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. 
+OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networking solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. 
 
 When your Managed Kubernetes and your other services are both in the vRack, but in different private networks, some extra configuration is needed. In this document, you will find an explanation of why this extra configuration is needed and how to do it.
 
 
 > [!warning]
+> You can now [create and use a custom gateway on an OVHcloud Managed Kubernetes cluster](../vrack-k8s-custom-gateway) but if you don't want to, the content of this guide is still relevant.
+
+you can still 
+
 > The need of extra manual configuration described in this guide is **temporary**. Our Managed Kubernetes team is working on a more streamlined solution, as explained in [this issue](https://github.com/ovh/public-cloud-roadmap/issues/116) in our [Public Cloud roadmap](https://github.com/ovh/public-cloud-roadmap/).
 >
 
@@ -70,13 +74,13 @@ When you put an OVHcloud Managed Kubernetes cluster in a private network in the 
 
 ![OVHcloud Managed Kubernetes inside vRack](images/using-vrack-03.jpg){.thumbnail}
 
-Using the addresses and names in the schema, each node have a `eth0` network interface to the external network, and a `eth1` to the private network. `eth0` is dedicated to the communication between nodes and master, to your managed service administration traffic and to communication with external services. Pod to pod traffic, and traffic to the private network is routed through `eth1`.
+Using the addresses and names in the schema, each node has a `eth0` network interface to the external network, and a `eth1` to the private network. `eth0` is dedicated to the communication between nodes and master, to your managed service administration traffic and to communication with external services. Pod to pod traffic, and traffic to the private network is routed through `eth1`.
 
 In order to allow this routing, the default gateway for each node is in the external network, via their `eth0` interface, and only the traffic towards the private network is routed through `eth1`.
 
 ![OVHcloud Managed Kubernetes inside vRack](images/using-vrack-04.jpg){.thumbnail}
 
-For this use case, no additional configuration is needed, you simply has to choose the private network at the creation of your Managed Kubernetes cluster, as explained in the [Using vRack Private Network](../using_vrack/) guide and [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial.
+For this use case, no additional configuration is needed, you simply have to choose the private network at the creation of your Managed Kubernetes cluster, as explained in the [Using vRack Private Network](../using_vrack/) guide and [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial.
 
 
 ### Communication between different private networks
@@ -103,11 +107,11 @@ That means that if in our schema *Pod 3* wants to communicate with the PCI *vm1*
 
 ### The solution
 
-The solution to this problem is to push the routes to the additional private networks via the DHCP of the private networks. That inform the nodes that traffic to the private networks is to be sent via `eth1` instead of `eth0`:
+The solution to this problem is to push the routes to the additional private networks via the DHCP of the private networks. This informs the nodes that traffic to the private networks is to be sent via `eth1` instead of `eth0`:
 
 ![Communication between different private networks](images/using-vrack-07.jpg){.thumbnail}
 
-With this setupm if in our schema *Pod 3* wants to communicate with the PCI *vm1*, that is in a different private network, the traffic is routed to `eth1`, and thus to *vm1*:
+With this setup, if in our schema *Pod 3* wants to communicate with the PCI *vm1*, that is in a different private network, the traffic is routed to `eth1`, and thus to *vm1*:
 
 ![Communication between different private networks](images/using-vrack-08.jpg){.thumbnail}
 

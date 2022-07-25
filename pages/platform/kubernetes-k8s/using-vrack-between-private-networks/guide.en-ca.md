@@ -6,7 +6,7 @@ section: Network
 order: 01
 ---
 
-**Last updated July 31<sup>st</sup>, 2021.**
+**Last updated July 25th, 2022.**
 
 <style>
  pre {
@@ -37,12 +37,16 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 By default, your Kubernetes clusters will have public IPs. For some uses cases, or for security reasons, you might prefer having your Kubernetes cluster inside a private network. 
 
-OVHcloud [vRack](https://www.ovh.com/ca/en/solutions/vrack/) is a private networking solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. 
+OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networking solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. 
 
 When your Managed Kubernetes and your other services are both in the vRack, but in different private networks, some extra configuration is needed. In this document, you will find an explanation of why this extra configuration is needed and how to do it.
 
 
 > [!warning]
+> You can now [create and use a custom gateway on an OVHcloud Managed Kubernetes cluster](../vrack-k8s-custom-gateway) but if you don't want to, the content of this guide is still relevant.
+
+you can still 
+
 > The need of extra manual configuration described in this guide is **temporary**. Our Managed Kubernetes team is working on a more streamlined solution, as explained in [this issue](https://github.com/ovh/public-cloud-roadmap/issues/116) in our [Public Cloud roadmap](https://github.com/ovh/public-cloud-roadmap/).
 >
 
