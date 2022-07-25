@@ -9,7 +9,7 @@ section: Facturación
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 14/11/2019**
+**Última actualización: 22/07/2022**
 
 ## Objetivo
 
@@ -54,12 +54,36 @@ Por lo tanto, para OVHcloud, el documento debe contener al menos la siguiente in
 * Fecha de inicio de validez
 * Fecha de fin de validez
 
-### Cómo introducir un número de Purchase Order (PO)
+### Cómo introducir un número de Purchase Order (PO) en el área de cliente de OVHcloud
 
-Para que OVHcloud pueda editar las facturas con el número de Purchase Order deseado, contacte con su asesor comercial para darle este número.
+Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y, en la pestaña `Panel de control`{.action}, haga clic en `Ver mis pedidos`{.action}.
 
-En caso de modificar el número de Purchase Order, contacte con su asesor comercial lo antes posible.
+![Área de cliente](images/internalreference00.png){.thumbnail}
 
+Haga clic en la pestaña `Mis referencias internas`{.action} y, seguidamente, en el botón `+ Añadir una referencia interna`{.action}.
+
+![Área de cliente](images/internalreference01.png){.thumbnail}
+
+Puede utilizar dos terminologías, según desee incluir en sus facturas la mención `Referencia interna` **o** la mención `Purchase Order`.<br>
+Seleccione `Crear su referencia interna`{.action} o `Crear su «purchase order»`{.action}.
+
+Asigne un nombre a su referencia interna o Purchase Order en el campo previsto a tal efecto, introduzca una **fecha de inicio** y una **fecha de finalización** (la fecha de finalización está excluida) y haga clic en `Aceptar`{.action}.
+
+> [!primary]
+> No puede crear 2 referencias internas / Purchase Orders en el mismo período de tiempo.
+
+![Área de cliente](images/internalreference02.png){.thumbnail}
+
+Esta referencia aparecerá en las próximas facturas correspondientes al intervalo de tiempo establecido por usted.
+
+![Área de cliente](images/internalreference03.png){.thumbnail}
+
+Desde la pestaña `Mis referencias internas`{.action} puede modificar o desactivar una referencia ya creada haciendo clic en el botón `...`{.action} a la derecha de la referencia correspondiente.
+
+![Área de cliente](images/internalreference04.png){.thumbnail}
+
+> [!primary]
+> Si desea desactivar/modificar una referencia en beneficio de otra **en el mismo intervalo de tiempo**, debe utilizar la opción `Editar`{.action} para modificar el intervalo de tiempo de la primera referencia.
 
 ## Más información
 
