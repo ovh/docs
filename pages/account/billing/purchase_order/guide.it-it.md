@@ -9,7 +9,7 @@ section: Fatturazione
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 14/11/2019**
+**Ultimo aggiornamento: 22/07/2022**
 
 ## Obiettivo
 
@@ -54,12 +54,36 @@ Per OVHcloud il documento deve quindi contenere almeno le seguenti informazioni:
 * Data di inizio della validità
 * Data di scadenza
 
-### Come inserire un numero di Purchase Order (PO)
+### Come inserire un numero di Purchase Order (PO) nello Spazio Cliente OVHcloud
 
-Per consentire a OVHcloud di modificare le fatture utilizzando il numero di Purchase Order desiderato, contatta il tuo consulente commerciale per conferirgli questo numero.
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e, nella scheda `Dashboard`{.action}, clicca su `Visualizza i tuoi ordini`{.action}.
 
-In caso di modifica di questo numero di Purchase Order, contatta il tuo consulente commerciale il prima possibile.
+![Spazio Cliente](images/internalreference00.png){.thumbnail}
 
+Clicca sulla scheda `Le tue referenze interne`{.action} e poi sul pulsante `+ Aggiungi un referenza interna`{.action}.
+
+![Spazio Cliente](images/internalreference01.png){.thumbnail}
+
+A seconda che tu voglia visualizzare sulle tue fatture la menzione `Referenza interna` **o** la menzione `Purchase Order`.<br>
+Seleziona `Crea la tua referenza interna`{.action} o `Crea il tuo purchase order`{.action}.
+
+Assegna un nome la tua referenza interna / Purchase Order nel campo previsto a tal fine, inserisci una **data di inizio** e una **data di fine** (la data di fine è esclusa) e clicca su `Confermare`{.action}.
+
+> [!primary]
+> Non puoi creare 2 referenze interne / Purchase Orders nello stesso periodo di tempo.
+
+![Spazio Cliente](images/internalreference02.png){.thumbnail}
+
+Questa informazione verrà mostrata sulle fatture che corrispondono all'intervallo di tempo definito dall'utente.
+
+![Spazio Cliente](images/internalreference03.png){.thumbnail}
+
+Nella scheda `Le tue referenze interne`{.action}, è possibile modificare o disattivare un riferimento già creato cliccando sul pulsante `...`{.action} a destra della referenza.
+
+![Spazio Cliente](images/internalreference04.png){.thumbnail}
+
+> [!primary]
+> Per disattivare/modificare una referenza a un altro **nello stesso intervallo di tempo**, utilizza l'opzione `Modificare`{.action} per modificare l'intervallo di tempo della prima referenza.
 
 ## Per saperne di più
 
