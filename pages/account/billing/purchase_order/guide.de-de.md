@@ -64,8 +64,8 @@ Klicken Sie auf den Tab `Meine internen Referenzen`{.action} und anschließend a
 
 ![Kundencenter](images/internalreference01.png){.thumbnail}
 
-Je nachdem, ob Sie auf Ihren Rechnungen den Eintrag `Interne Referenz` **oder*** den Eintrag `Purchase Order` anzeigen möchten.<br>
-Wählen Sie entweder `Ihre Interne Referenz erstellen`{.action} oder `Ihere Purchase order erstellen`{.action}.
+Sie können auf Ihren Rechnungen den Eintrag `Interne Referenz` **oder*** den Eintrag `Purchase Order` anzeigen lassen.<br>
+Wählen Sie entweder `Ihre Interne Referenz erstellen`{.action} oder `Ihre Purchase Order erstellen`{.action}.
 
 Geben Sie im dafür vorgesehenen Feld einen Namen für Ihre interne Referenz / Purchase Order ein, geben Sie ein **Startdatum** und ein **Enddatum** ein (Enddatum ist ausgeschlossen) und klicken Sie anschließend auf `Bestätigen`{.action}.
 
@@ -78,12 +78,12 @@ Diese Referenz erscheint dann auf Ihren nächsten Rechnungen, die dem von Ihnen 
 
 ![Kundencenter](images/internalreference03.png){.thumbnail}
 
-Im Tab `Meine internen Referenzen`{.action} können Sie eine Referenz ändern oder deaktivieren, die bereits erstellt wurde, indem Sie auf den Button klicken `...`{.action} rechts neben der betreffenden Referenz.
+Im Tab `Meine internen Referenzen`{.action} können Sie eine Referenz ändern oder deaktivieren, die bereits erstellt wurde, indem Sie rechts neben der betreffenden Referenz auf den Button `...`{.action} klicken.
 
 ![Kundencenter](images/internalreference04.png){.thumbnail}
 
 > [!primary]
-> Wenn Sie eine Referenz deaktivieren/ändern möchten **innerhalb des gleichen Zeitintervalls**, verwenden Sie die Option `Bearbeiten`{.action}, um die Zeitspanne der ersten Referenz zu ändern.
+> Wenn Sie eine Referenz **innerhalb des gleichen Zeitintervalls** deaktivieren/ändern möchten, verwenden Sie die Option `Bearbeiten`{.action}, um die Zeitspanne der ersten Referenz zu ändern.
 
 ## Weiterführende Informationen
 
