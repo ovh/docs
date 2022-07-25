@@ -1,0 +1,11 @@
+#!/bin/bash
+export OS_AUTH_URL=https://auth.cloud.ovh.net/v3
+export OS_IDENTITY_API_VERSION=3
+export OS_USER_DOMAIN_NAME=${OS_USER_DOMAIN_NAME:-"Default"}
+export OS_PROJECT_DOMAIN_NAME=${OS_PROJECT_DOMAIN_NAME:-"Default"}
+export OS_TENANT_ID=
+export OS_TENANT_NAME=""
+export OS_USERNAME=""
+export OS_PASSWORD=""
+export OS_REGION_NAME="GRA9"
+if [ -z "$OS_REGION_NAME" ]; then unset OS_REGION_NAME; fi
