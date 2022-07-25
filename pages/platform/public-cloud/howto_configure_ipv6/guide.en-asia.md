@@ -6,7 +6,7 @@ section: Networking
 order: 11
 ---
 
-**Last updated 21st June 2022**
+**Last updated 22nd July 2022**
 
 ## Objective
 
@@ -17,6 +17,11 @@ Each Public Cloud instance is delivered with an IPv4 address and an IPv6 address
 By default, only the IPv4 address is configured.
 
 **This guide will show you how to configure an IPv6 address on a Public Cloud instance.**
+
+> [!warning]
+>
+> Please note that on recent versions of Linux operating systems, the IPv6 address is configured by default on Public Cloud instances. Be sure to check your OS configuration file before making any changes.
+>
 
 ## Requirements
 

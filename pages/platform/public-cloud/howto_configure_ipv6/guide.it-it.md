@@ -5,7 +5,11 @@ excerpt: 'Configurare un indirizzo IPv6 su un’istanza Public Cloud'
 section: Rete
 ---
 
-**Ultimo aggiornamento: 21/06/2022**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 22/07/2022**
 
 ## Obiettivo
 
@@ -13,7 +17,14 @@ Internet Protocol version 6 (IPv6) è la versione più recente dell’Internet P
 
 Tutte le istanze Public Cloud vengono consegnate  con un indirizzo IPv4 e un indirizzo IPv6.
 
-Di default è configurato soltanto l’IPv4 perciò, questa guida ti mostra come configurare un indirizzo IPv6 su un’istanza Public Cloud.
+Di default è configurato soltanto l’IPv4 perciò.
+
+**Questa guida ti mostra come configurare un indirizzo IPv6 su un’istanza Public Cloud.**
+
+> [!warning]
+>
+> Si noti che nelle versioni recenti dei sistemi operativi Linux, l'indirizzo IPv6 è configurato di default sulle istanze Public Cloud. Assicurarsi di verificare il file di configurazione del sistema operativo prima di apportare qualsiasi modifica.
+>
 
 ## Prerequisiti
 

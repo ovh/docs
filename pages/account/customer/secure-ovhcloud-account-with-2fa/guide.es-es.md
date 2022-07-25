@@ -9,7 +9,7 @@ section: Seguridad
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 03/01/2022**
+**Última actualización: 21/07/2022**
 
 ## Objetivo
 
@@ -120,7 +120,7 @@ Antes de contactarnos, debe reunir los siguientes justificantes:
 
 |Tipo de cuenta OVHcloud|Justificantes a adjuntar|
 |---|---|
-|Particular|- Documento de identidad (DNI, permiso de conducir o pasaporte), que menciona el nombre completo, la fecha de nacimiento y la fecha de expiración, a nombre del titular de la cuenta de OVHcloud. <br><br>- Justificante de domicilio correspondiente al registrado en la cuenta OVHcloud, de menos de dos meses.|
+|Particular|- Documento de identidad (DNI, permiso de conducir o pasaporte), que menciona el nombre completo, la fecha de nacimiento y la fecha de expiración, a nombre del titular de la cuenta de OVHcloud. <br><br>- Justificante de domicilio correspondiente al registrado en la cuenta OVHcloud, de menos de dos meses.<br>**Si, después de un traslado, no ha actualizado su dirección en su área de cliente de OVHcloud, deberá proporcionar :**<br>- Un justificante de domicilio en la antigua dirección <br>- Un justificante de domicilio en la nueva dirección, de menos de dos meses.<br> Si vive ahora en un tercero, deberá proporcionar:<br>- Un justificante de domicilio a nombre de la persona que le aloje, de menos de dos meses<br>- Un certificado de alojamiento firmado por la persona que le aloje|
 |Empresa|- Documento de identidad (DNI, permiso de conducir o pasaporte) que mencione el nombre completo, la fecha de nacimiento y la fecha de expiración al nombre de una persona autorizada para representar a la empresa.<br><br>- Documento de registro de la empresa que indica la persona autorizada para representar la empresa.|
 
 Una vez que haya reunido los documentos justificativos, póngase en contacto con nuestro equipo de soporte, llamando al 91 758 34 77.

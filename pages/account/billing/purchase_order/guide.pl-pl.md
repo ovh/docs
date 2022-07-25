@@ -9,7 +9,7 @@ section: Płatności
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 14-11-2019**
+**Ostatnia aktualizacja z dnia 22-07-2022**
 
 ## Wprowadzenie
 
@@ -54,12 +54,36 @@ W przypadku OVHcloud dokument musi zawierać co najmniej następujące informacj
 * Data rozpoczęcia ważności
 * Data wygaśnięcia
 
-### Jak wpisać numer Purchase Order (PO)
+### Jak wpisać numer Purchase Order (PO) w Panelu klienta OVHcloud
 
-Aby OVHcloud mógł wystawić faktury za pomocą wybranego numeru Purchase Order, skontaktuj się z konsultantem handlowym, który udzieli mu tego numeru.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie w zakładce `Dashboard`{.action} kliknij `Wyświetl moje zamówienia`{.action}.
 
-W przypadku zmiany tego numeru Purchase Order, skontaktuj się z konsultantem handlowym.
+![Panel klienta](images/internalreference00.png){.thumbnail}
 
+Kliknij kartę `Moje oznaczenia wewnętrzne`{.action}, a następnie przycisk `+ Dodaj wewnętrzne oznaczenia referencyjne`{.action}.
+
+![Panel klienta](images/internalreference01.png){.thumbnail}
+
+W zależności od tego, czy chcesz wyświetlić na swoich fakturach wzorzec `Wewnętrzne odniesienia` **lub**  `„purchase order”`, masz do dyspozycji dwie terminologie.<br>
+Wybierz w ten sposób `Utwórz Twoje wewnętrzne oznaczenie referencyjne`{.action} lub `Utwórz „purchase order”`{.action}.
+
+Nadaj nazwę swojemu wewnętrznemu referencyjnemu / Purchase Order w odpowiednim polu, wprowadź **datę rozpoczęcia** oraz **datę zakończenia** (data zakończenia jest wyłączona), a następnie kliknij `Zatwierdź`{.action}.
+
+> [!primary]
+> Nie możesz utworzyć 2 wewnętrznych referencji / Purchase Orders w tym samym czasie.
+
+![Panel klienta](images/internalreference02.png){.thumbnail}
+
+Ten numer pojawi się wówczas na kolejnych fakturach odpowiadających przedziałowi czasowemu określonemu przez Ciebie.
+
+![Panel klienta](images/internalreference03.png){.thumbnail}
+
+W zakładce `Moje oznaczenia wewnętrzne`{.action} możesz zmienić lub wyłączyć już utworzony numer referencyjny, klikając przycisk `...`{.action} po prawej stronie danego punktu odniesienia.
+
+![Panel klienta](images/internalreference04.png){.thumbnail}
+
+> [!primary]
+> Jeśli chcesz wyłączyć/zmienić odniesienie na korzyść innego **w tym samym przedziale czasowym**, należy skorzystać z opcji `Zmień`{.action}, aby zmienić przedział czasowy pierwszego odniesienia.
 
 ## Sprawdź również
 

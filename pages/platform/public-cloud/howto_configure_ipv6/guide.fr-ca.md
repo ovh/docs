@@ -6,7 +6,7 @@ section: 'Réseau'
 order: 21
 ---
 
-**Dernière mise à jour le 21/06/2022**
+**Dernière mise à jour le 22/07/2022**
 
 ## Objectif
 
@@ -16,7 +16,12 @@ Chaque instance Public Cloud est livrée avec une adresse IPv4 et une adresse IP
 
 Par défaut, seule l'adresse IPv4 est configurée.
 
-Dans ce tutoriel, nous allons vous apprendre à configurer une adresse IPv6 sur une instance Public Cloud.
+**Dans ce tutoriel, nous allons vous apprendre à configurer une adresse IPv6 sur une instance Public Cloud.**
+
+> [!warning]
+> 
+> Veuillez noter que, sur les versions récentes des systèmes d'exploitation Linux, l'adresse IPv6 est configurée par défaut sur les instances Public Cloud. Assurez-vous de vérifier le fichier de configuration de votre OS avant d'effectuer tout changement.
+>
 
 ## Prérequis
 
