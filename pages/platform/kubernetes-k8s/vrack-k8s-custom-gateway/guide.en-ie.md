@@ -388,7 +388,7 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >> > 
 >> > @api {GET} /cloud/project/{serviceName}/kube
 > OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+>> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >> 
 >> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 >> 
@@ -428,7 +428,7 @@ Now wait until your OVHcloud Managed Kubernetes cluster is READY.
 
 For that, you can check its status in the OVHcloud Control Panel:
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 
@@ -456,7 +456,7 @@ To proceed with the freshly created Kubernetes cluster, you must get the Kubecon
 >> >
 >> > @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/kubeconfig
 
-To use this kubeconfig file and access to your cluster, you can follow our [configuring kubectl](https://docs.ovh.com/gb/en/kubernetes/configuring-kubectl/) tutorial, or symply add the `--kubeconfig` flag in your `kubectl` commands.
+To use this kubeconfig file and access to your cluster, you can follow our [configuring kubectl](https://docs.ovh.com/ie/en/kubernetes/configuring-kubectl/) tutorial, or symply add the `--kubeconfig` flag in your `kubectl` commands.
 
 ## Test
 
