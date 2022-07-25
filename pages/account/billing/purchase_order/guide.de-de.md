@@ -9,7 +9,7 @@ section: Abrechnung
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 14.11.2019**
+**Letzte Aktualisierung am 22.07.2022**
 
 ## Ziel
 
@@ -54,12 +54,36 @@ Für OVHcloud muss das Dokument daher mindestens folgende Angaben enthalten:
 - Beginn der Gültigkeit
 - Ablaufdatum
 
-### Eine Purchase Order Nummer angeben
+### Wie Sie eine Purchase Order Nummer (PO) in Ihrem OVHcloud Kundencenter eingeben
 
-Damit OVHcloud die Rechnungen mit der gewünschten Purchase Order Nummer bearbeiten kann, kontaktieren Sie Ihren Kundenberater, um diese Nummer mitzuteilen.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie dann im Tab `Dashboard`{.action} auf `Meine Bestellungen anzeigen`{.action}.
 
-Bei einer Änderung dieser PO Nummer wenden Sie sich schnellstmöglich an Ihren Kundenberater.
+![Kundencenter](images/internalreference00.png){.thumbnail}
 
+Klicken Sie auf den Tab `Meine internen Referenzen`{.action} und anschließend auf den Button `+ Interne Referenz hinzufügen`{.action}.
+
+![Kundencenter](images/internalreference01.png){.thumbnail}
+
+Je nachdem, ob Sie auf Ihren Rechnungen den Eintrag `Interne Referenz` **oder*** den Eintrag `Purchase Order` anzeigen möchten.<br>
+Wählen Sie entweder `Ihre Interne Referenz erstellen`{.action} oder `Ihere Purchase order erstellen`{.action}.
+
+Geben Sie im dafür vorgesehenen Feld einen Namen für Ihre interne Referenz / Purchase Order ein, geben Sie ein **Startdatum** und ein **Enddatum** ein (Enddatum ist ausgeschlossen) und klicken Sie anschließend auf `Bestätigen`{.action}.
+
+> [!primary]
+> Sie können nicht 2 interne Referenzen / Purchase Orders für denselben Zeitraum erstellen.
+
+![Kundencenter](images/internalreference02.png){.thumbnail}
+
+Diese Referenz erscheint dann auf Ihren nächsten Rechnungen, die dem von Ihnen definierten Zeitintervall entsprechen.
+
+![Kundencenter](images/internalreference03.png){.thumbnail}
+
+Im Tab `Meine internen Referenzen`{.action} können Sie eine Referenz ändern oder deaktivieren, die bereits erstellt wurde, indem Sie auf den Button klicken `...`{.action} rechts neben der betreffenden Referenz.
+
+![Kundencenter](images/internalreference04.png){.thumbnail}
+
+> [!primary]
+> Wenn Sie eine Referenz deaktivieren/ändern möchten **innerhalb des gleichen Zeitintervalls**, verwenden Sie die Option `Bearbeiten`{.action}, um die Zeitspanne der ersten Referenz zu ändern.
 
 ## Weiterführende Informationen
 
