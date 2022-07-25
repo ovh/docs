@@ -18,6 +18,9 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 > Une IP Fail Over ne peut pas être déplacée d'une zone à l'autre. Par exemple, une IP située dans le datacenter SBG pourra être déplacée vers GRA ou RBX mais ne pourra pas être déplacée vers BHS.
 >
 > La migration ne fonctionne que pour des blocs entiers, il n'est pas possible de migrer des IP individuelles au sein d'un bloc.
+>
+> Si un bloc IP est déplacé/ajouté dans le vrack, il n’est plus lié à un serveur physique. Dans ce cas, toute adresse MAC virtuelle sera perdue pendant le transfert.
+>
 
 **Découvez comment déplacer une IP Fail Over depuis votre espace client OVHcloud ou via les API OVHcloud.**
 

@@ -32,6 +32,11 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 
 ### Assigner une adresse MAC
 
+> [!warning]
+>
+> Si un bloc IP a été déplacé dans le vrack, il n’est plus assigné à un serveur physique à ce titre, il n’est plus possible d’assigner une MAC virtuelle à une IP.
+>
+
 #### Via l'espace client OVHcloud
 
 Une fois connecté dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur le menu `Bare Metal Cloud`{.action}, puis ouvrez la section `IP`{.action}.

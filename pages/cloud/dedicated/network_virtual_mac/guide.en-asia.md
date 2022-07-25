@@ -32,6 +32,11 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 ### Assign a MAC address
 
+> [!warning]
+>
+> If an IP block has been moved to the vrack, it is no longer assigned to a physical server, as such, you cannot assign a virtual MAC address to any IP.
+>
+
 #### Via the OVHcloud Control Panel
 
 To assign a virtual MAC address to a failover IP, you first need to connect to your OVHcloud Control Panel. Next, go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu.
