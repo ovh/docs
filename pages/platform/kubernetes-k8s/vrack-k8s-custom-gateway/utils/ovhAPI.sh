@@ -8,15 +8,19 @@
 # (2) QUERY  - required                     #
 #     Check APIcloud API doc                #
 # (3) BODY   - optionnal                    #
-#     Json format data to send              #
+#     JSON format data to send              #
 #############################################
 # Examples:
 # $ ./ovhAPI.sh POST /cloud/project/${OS_TENANT_ID}/network/private $(jq -c . < create_nwclust.json)
 # $ ./ovhAPI.sh GET /domain/zone/labdevrel.ovh/export | awk '{gsub(/\\n/,"\n");gsub(/\\t/,"\t")}1'
 
 # Script variables(s)
-SCRIPTROOTDIR="$GITPOD_REPO_ROOT"
-source $SCRIPTROOTDIR/utils/ovhAPI.properties
+if [ -z ${GITPOD_REPO_ROOT+x} ]
+then
+ source utils/ovhAPI.properties
+else
+  source $GITPOD_REPO_ROOT/utils/ovhAPI.properties
+fi
 
 # Input parameters
 METHOD="${1}"
