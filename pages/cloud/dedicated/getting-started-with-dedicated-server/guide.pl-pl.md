@@ -40,9 +40,11 @@ W prosty sposób możesz przeprowadzić reinstalację serwera i wybrać inny obr
 
 ![Przycisk Reinstalacja](images/reinstalling-your-server-00.png){.thumbnail}
 
-Na następnym ekranie wybierz `Zainstaluj szablon OVHcloud`{.action} lub `Zainstaluj jeden z Twoich szablonów`{.action}, aby korzystać z szablonu instalacyjnego.
+W oknie, które się pojawi wybierz jedną z opcji instalacji:
 
-Aby zainstalować spersonalizowany obraz serwera, wybierz trzecią opcję `Zainstaluj na podstawie spersonalizowanego`{.action} obrazu. Zapoznaj się z przewodnikiem ["Korzystanie z funkcji Bring Your Own Image"](https://docs.ovh.com/pl/dedicated/bringyourownimage/), aby uzyskać więcej informacji na temat parametrów tej funkcji.
+- `Instalacja z szablonu OVHcloud`{.action}: możesz wybrać system operacyjny i spersonalizować konfigurację serwera.
+- `Zainstaluj jeden ze swoich szablonów`{.action}: aby móc zastosować spersonalizowany szablon, musisz wcześniej zarejestrować przynajmniej jedną konfigurację serwera. W tym celu należy zaznaczyć opcję "Zapisz tę instalację" w etapie 4 procesu instalacji.
+- `Instalacja na podstawie spersonalizowanego obrazu`{.action}: ta opcja pozwala na zainstalowanie zewnętrznego obrazu na serwerze. Więcej informacji na temat tej opcji znajdziesz w [przewodniku Bring Your Own Image](../bringyourownimage/).
 
 > [!primary]
 >
