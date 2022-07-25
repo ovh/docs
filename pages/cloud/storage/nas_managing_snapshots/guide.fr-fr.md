@@ -1,7 +1,7 @@
 ---
 title: NAS-HA - Gestion des snapshots via API
 slug: nas/nas-snapshots-api
-excerpt: Apprenez à gérer les snapshots du NAS-HA via l'API OVH
+excerpt: "Apprenez à gérer les snapshots du NAS-HA via l'API OVHcloud"
 section: NAS
 ---
 
@@ -16,9 +16,9 @@ Les NAS-HA OVHcloud vous permettent de créer et de gérer des volumes de fichie
 ## Prérequis
 
 - Un service [NAS-HA OVHcloud](https://www.ovh.com/fr/nas/)
-- Consulter le guide des premières étapes de l'API [OVHcloud](../../api/first-steps-with-ovh-api/) pour vous familiariser avec l'APIv6 OVHcloud
+- Consultez notre guide des [premiers pas avec l'API OVHcloud](../../api/first-steps-with-ovh-api/) afin de vous familiariser avec l'APIv6 OVHcloud
 
-## Instructions
+## En pratique
 
 > [!primary]
 > N’hésitez pas à vous rendre sur [la page FAQ NAS-HA](../faq-nas/) pour retrouver toutes les informations détaillées concernant la fonction snapshot.
@@ -44,7 +44,7 @@ Les snapshots sont créés par défaut et sauvegardés sur votre NAS-HA. Vous po
 
 ### Récupérer la planification automatique des snapshots
 
-Pour afficher la planification de cliché automatique active, utilisez la route suivante :
+Pour afficher la planification de snapshot automatique active, utilisez la route suivante :
 
 > [!faq]
 >
@@ -69,7 +69,7 @@ Pour afficher la planification de cliché automatique active, utilisez la route 
 
 ### Ajout d'un intervalle de snapshot automatique
 
-Pour créer des instantanés automatiques supplémentaires à une fréquence sélectionnée, utilisez la route suivante :
+Pour créer des snapshots automatiques supplémentaires à une fréquence sélectionnée, utilisez la route suivante :
 
 > [!faq]
 >
@@ -181,7 +181,6 @@ Utilisez la route suivante pour récupérer des snapshots personnalisés existan
 >> >> Nom de la partition
 >
 
-
 ### Création d'un snapshot personnalisé
 
 Pour ajouter un snapshot manuel, utilisez la route suivante :
@@ -217,7 +216,7 @@ Pour ajouter un snapshot manuel, utilisez la route suivante :
 
 ### Récupération des informations d'un snapshot personnalisé
 
-Pour afficher les détails d'un instantané personnalisé, utilisez la route suivante :
+Pour afficher les détails d'un snapshot personnalisé, utilisez la route suivante :
 
 > [!faq]
 >
@@ -272,7 +271,6 @@ Utilisez la route suivante pour supprimer un snapshot personnalisé :
 >> >
 >> >> Le nom du snapshot
 >
-
 
 ## Aller plus loin
 

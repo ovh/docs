@@ -1,7 +1,7 @@
 ---
 title: NAS-HA - Gestion des ACL via API
 slug: nas/nas-manage-acls
-excerpt: Apprenez à gérer les accès au NAS-HA via l'API OVH
+excerpt: Apprenez à gérer les accès au NAS-HA via l'API OVHcloud
 section: NAS
 ---
 
@@ -16,9 +16,9 @@ Le service NAS-HA OVHcloud vous permet de gérer un stockage de fichiers accessi
 ## Prérequis
 
 - Un service [NAS-HA OVHcloud](https://www.ovh.com/fr/nas/)
-- Consulter le guide des premières étapes de l'API [OVHcloud](../../api/first-steps-with-ovh-api/) pour vous familiariser avec l'APIv6 OVHcloud
+- Consultez notre guide des [premiers pas avec l'API OVHcloud](../../api/first-steps-with-ovh-api/) afin de vous familiariser avec l'APIv6 OVHcloud
 
-## Instructions
+## En pratique
 
 Toutes les routes API de ce guide sont disponibles dans la section */dedicated/nasha* : <https://api.ovh.com/console/#/dedicated/nasha>.
 
@@ -93,7 +93,6 @@ Vous pouvez vérifier les adresses IP éligibles à un accès via les appels API
 >> >> Nom de la partition
 >
 
-
 ### Ajout d'une entrée ACL
 
 Pour créer une nouvelle entrée ACL vous permettant de vous connecter à votre partition, utilisez la route suivante :
@@ -160,7 +159,6 @@ Pour supprimer une adresse IP ou une plage d'adresses de l'ACL, utilisez la rout
 >> >
 >> >> L'adresse IP ou la plage à refuser d'accès
 >
-
 
 ## Aller plus loin
 

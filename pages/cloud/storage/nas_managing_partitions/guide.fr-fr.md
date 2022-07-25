@@ -1,7 +1,7 @@
 ---
 title: NAS-HA - Gestion des partitions par API
 slug: nas/nas-partitions-api
-excerpt: Apprenez à gérer les partitions NAS-HA grâce à l'API OVH
+excerpt: "Apprenez à gérer les partitions NAS-HA grâce à l'API OVHcloud"
 section: NAS
 ---
 
@@ -16,9 +16,9 @@ Le service NAS-HA OVHcloud vous permet de gérer un stockage de fichiers accessi
 ## Prérequis
 
 - Un service [NAS-HA OVHcloud](https://www.ovh.com/fr/nas/)
-- Consulter le guide des premières étapes de l'API [OVHcloud](../../api/first-steps-with-ovh-api/) pour vous familiariser avec l'APIv6 OVHcloud
+- Consultez notre guide des [premiers pas avec l'API OVHcloud](../../api/first-steps-with-ovh-api/) afin de vous familiariser avec l'APIv6 OVHcloud
 
-## Instructions
+## En pratique
 
 Toutes les routes API de ce guide sont disponibles dans la section */dedicated/nasha* : <https://api.ovh.com/console/#/dedicated/nasha>.
 
@@ -212,7 +212,7 @@ Utilisez la route suivante pour récupérer les paramètres ZFS :
 
 > [!warning]
 >
-> Tous les paramètres par défaut du système de fichiers Z sont optimisés. Il est déconseillé de modifier ces paramètres.
+> Tous les paramètres ZFS par défaut sont optimisés. Il est déconseillé de modifier ces paramètres.
 >
 
 Utilisez la route suivante pour modifier les paramètres ZFS :
@@ -249,7 +249,6 @@ Utilisez la route suivante pour modifier les paramètres ZFS :
 >> >
 >> >> Paramètre de synchronisation de fichier : *always*, *disabled* ou *standard* (valeur par défaut)
 >
-
 
 ### Suppression d'une partition
 

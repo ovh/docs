@@ -1,7 +1,7 @@
 ---
-title: NAS-HA - API Quickstart
+title: NAS-HA - Premiers pas avec les API
 slug: nas/nas-quickapi
-excerpt: Découvrez comment bien débuter avec le NAS-HA en utilisant l'API OVHcloud
+excerpt: "Découvrez comment bien débuter avec un service NAS-HA en utilisant l'API OVHcloud"
 section: NAS
 ---
 
@@ -9,16 +9,16 @@ section: NAS
 
 ## Objectif
 
-Le service NAS-HA OVHcloud vous permet de gérer un stockage de fichiers accessible depuis un réseau. 
+Le service NAS-HA OVHcloud vous permet de gérer du stockage de fichiers accessible depuis un réseau. 
 
 **Ce guide vous donne un aperçu de l'utilisation de votre service NAS-HA via l'API OVHcloud.**
 
 ## Prérequis
 
 - Un service [NAS-HA OVHcloud](https://www.ovh.com/fr/nas/)
-- Consulter le guide des premières étapes de l'API [OVHcloud](../../api/first-steps-with-ovh-api/) pour vous familiariser avec l'APIv6 OVHcloud
+- Consultez notre guide des [premiers pas avec l'API OVHcloud](../../api/first-steps-with-ovh-api/) afin de vous familiariser avec l'APIv6 OVHcloud
 
-## Instructions
+## En pratique
 
 Toutes les routes API de ce guide sont disponibles dans la section */dedicated/nasha* : <https://api.ovh.com/console/#/dedicated/nasha>.
 
@@ -143,7 +143,6 @@ Pour créer une nouvelle entrée ACL vous permettant de vous connecter à votre 
 > Utilisez la notation CIDR pour les plages IP, par exemple : 192.0.2.0/24.
 >
 
-
 ### Créer un snapshot manuel
 
 Pour ajouter un snapshot manuel, utilisez la route suivante :
@@ -176,7 +175,6 @@ Pour ajouter un snapshot manuel, utilisez la route suivante :
 >> >
 >> >> Nom du snapshot.
 >
-
 
 ### Suppression d'une partition
 
