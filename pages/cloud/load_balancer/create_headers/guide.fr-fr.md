@@ -219,7 +219,7 @@ Dans l'API, les en-têtes sont spécifiées dans une liste httpHeader. À la dif
 
 Dans la console de l'API OVHcloud, un bouton `+`{.action} est disponible dès que vous commencez à spécifier une valeur afin d'ajouter un nouveau champ dans la liste. 
 
-![Configuration des en-têtes HTTP d'un Frontend](images/add_headers_api.png){.thumbnail}
+![Configuration des en-têtes HTTP d'un Frontend](images/add_headers_with_api.png){.thumbnail}
 
 Si vous utilisez l'API dans votre code, cela correspond à une liste json telle que :
 
