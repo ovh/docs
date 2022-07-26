@@ -6,7 +6,7 @@ section: SSL
 order: 1
 ---
 
-**Dernière mise à jour le 04/03/2021**
+**Dernière mise à jour le 26/07/2022**
 
 ## Objectif
 
@@ -22,48 +22,17 @@ Votre hébergement web vous permet de gérer un certificat SSL. Vous pouvez comm
 
 ## En pratique
 
-Il existe plusieurs manières de gérer un certificat SSL sur votre hébergement web OVHcloud. Nous vous recommandons de lire ces chapitres et de vous concentrer sur la méthode que vous souhaitez suivre.
+Plusieurs étapes sont nécessaires pour générer un certificat SSL sur votre hébergement web OVHcloud. Nous vous recommandons de suivre **dans l'ordre** les 3 étapes décrites ci-dessous.
 
-- [Activer un certificat SSL sur un multisite](#multisite) : si votre solution ou votre certificat SSL vous le permettent, vous pouvez faire bénéficier plusieurs de vos multisites d'une connexion sécurisée SSL.
+[1. Activer un certificat SSL sur un hébergement web](#enablessl) : vous aide à activer un certificat SSL sur votre hébergement web. Il peut s'agir d'un certificat gratuit ou payant commandé auprès d'OVHcloud. Vous pouvez également importer votre propre certificat SSL commandé auprès d'un autre fournisseur.
 
-- [Activer un certificat SSL sur votre hébergement web](#enablessl) : vous aide à activer un certificat SSL sur votre hébergement web. Il peut s'agir d'un certificat gratuit ou payant commandé auprès d'OVHcloud. Vous pouvez également importer votre propre certificat SSL commandé auprès d'un autre fournisseur.
+[2. Attribuer le certificat SSL à une entrée multisite](#multisite) : si votre solution ou votre certificat SSL vous le permettent, vous pouvez faire bénéficier plusieurs de vos multisites d'une connexion sécurisée SSL.
 
-- [Regénérer un certificat SSL sur un hébergement web](#regeneratessl) : vous permet de regénérer un certificat SSL sur votre hébergement web lorsque vous activez le SSL sur un ou plusieurs multisites.
+[3. Regénérer le certificat SSL sur un hébergement web](#regeneratessl) : vous permet de regénérer un certificat SSL Let's Encrypt sur votre hébergement web lorsque vous activez le SSL sur un ou plusieurs multisites.
 
-- [Supprimer un certificat SSL sur un hébergement web.](#deletessl) : vous permet de supprimer un certificat SSL sur votre hébergement web OVHcloud. Veuillez noter que cela peut présenter des risques si l'un de vos sites web utilise actuellement le certificat que vous avez l'intention de supprimer.
+Vous pouvez également [supprimer le certificat SSL sur un hébergement web](#deletessl). **Veuillez noter que cela peut présenter des risques si l'un de vos sites web utilise actuellement le certificat que vous avez l'intention de supprimer**.
 
-### Activer un certificat SSL sur un multisite <a name="multisite"></a>
-
-Selon le [certificat SSL ](https://www.ovhcloud.com/fr-ca/web-hosting/options/ssl/){.external} que vous souhaitez commander, vous pouvez activer une connexion SSL sécurisée sur un ou plusieurs de vos multisites. Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement web concerné. Positionnez-vous ensuite sur l'onglet `Multisite`{.action}.
-
-Le tableau qui s'affiche contient tous les noms de domaine ajoutés à votre hébergement web. La colonne « SSL » vous montre l'état d'activation des connexions SSL sécurisées sur vos multisites.
-
-![managessl](images/manage-ssl-step5.png){.thumbnail}
-
-Trois états peuvent alors apparaître :
-
-|État|Description|
-|---|---|
-|Activé|Un certificat SSL a déjà été activé pour ce multisite. Cependant, si votre site web n'est pas disponible en HTTPS, reportez-vous aux instructions répertoriées dans notre guide « [Passer son site en HTTPS grâce au SSL](../passer-site-internet-https-ssl/){.external} ».|
-|À générer|Un certificat SSL a été activé pour ce multisite, mais celui-ci n'est toujours pas techniquement actif. Pour cela, vous devrez le regénérer afin qu'il inclue les nouveaux noms de domaine du multisite.|
-|Désactivé|Aucun certificat SSL n'est activé pour ce multisite. Pour l'activer, suivez les étapes ci-dessous.|
-
-Pour activer SSL sur un multisite, cliquez sur le bouton `...`{.action} à droite du multisite concerné, puis sur `Modifier le domaine`{.action}. Dans la fenêtre qui s'affiche, cochez la case `SSL`{.action}. Vous pouvez également activer l'option pour modifier le sous-domaine www en même temps que le nom de domaine associé. Suivez les étapes jusqu'à confirmer la modification.
-
-Une fois que vous avez soumis la demande d'activation, l'état de la connexion sécurisée SSL pour le multisite concerné doit être actualisé au bout de quelques secondes, le statut étant remplacé par « À générer ». Répétez cette action si nécessaire si vous souhaitez activer SSL pour d'autres multisites.
-
-> [!primary]
->
-> Vous pouvez avoir deux situations dans cet état:
->
-> - **Vous n'avez pas de certificat.**
-> Pousuivez la lecture de ce guide à la section [Activer un certificat SSL sur votre hébergement web](#enablessl) et choisissez le « Certificat gratuit (Let's Encrypt) » qui prend en charge les sites multisites.
->
-> - **Le certificat SSL est actif, mais vous avez ajouté d'autres sites multisites.**
-> Pousuivez la lecture de ce guide à la section [Régénérer un certificat SSL sur un hébergement Web](#regeneratessl) pour régénérer le certificat SSL pour les multisites restants.
->
-
-### Activer un certificat SSL sur votre hébergement web <a name="enablessl"></a>
+### 1. Activer un certificat SSL sur un hébergement web <a name="enablessl"></a>
 
 Votre hébergement web OVHcloud vous permet d'activer un [certificat SSL selon plusieurs solutions](https://www.ovhcloud.com/fr-ca/web-hosting/options/ssl/){.external} :
 
@@ -101,11 +70,42 @@ La configuration du certificat peut prendre entre plusieurs minutes et plusieurs
 
 ![managessl](images/manage-ssl-step4.png){.thumbnail}
 
-### Regénérer un certificat SSL sur un hébergement web <a name="regeneratessl"></a>
+### 2. Attribuer le certificat SSL à une entrée multisite <a name="multisite"></a>
+
+Selon le [certificat SSL ](https://www.ovhcloud.com/fr-ca/web-hosting/options/ssl/){.external} que vous souhaitez commander, vous pouvez activer une connexion SSL sécurisée sur un ou plusieurs de vos multisites. Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement web concerné. Positionnez-vous ensuite sur l'onglet `Multisite`{.action}.
+
+Le tableau qui s'affiche contient tous les noms de domaine ajoutés à votre hébergement web. La colonne « SSL » vous montre l'état d'activation des connexions SSL sécurisées sur vos multisites.
+
+![managessl](images/manage-ssl-step5.png){.thumbnail}
+
+Trois états peuvent alors apparaître :
+
+|État|Description|
+|---|---|
+|Activé|Un certificat SSL a déjà été activé pour ce multisite. Cependant, si votre site web n'est pas disponible en HTTPS, reportez-vous aux instructions répertoriées dans notre guide « [Passer son site en HTTPS grâce au SSL](../passer-site-internet-https-ssl/){.external} ».|
+|À générer|Un certificat SSL a été activé pour ce multisite, mais celui-ci n'est toujours pas techniquement actif. Pour cela, vous devrez le regénérer afin qu'il inclue les nouveaux noms de domaine du multisite.|
+|Désactivé|Aucun certificat SSL n'est activé pour ce multisite. Pour l'activer, suivez les étapes ci-dessous.|
+
+Pour activer SSL sur un multisite, cliquez sur le bouton `...`{.action} à droite du multisite concerné, puis sur `Modifier le domaine`{.action}. Dans la fenêtre qui s'affiche, cochez la case `SSL`{.action}. Vous pouvez également activer l'option pour modifier le sous-domaine www en même temps que le nom de domaine associé. Suivez les étapes jusqu'à confirmer la modification.
+
+Une fois que vous avez soumis la demande d'activation, l'état de la connexion sécurisée SSL pour le multisite concerné doit être actualisé au bout de quelques secondes, le statut étant remplacé par « À générer ». Répétez cette action si nécessaire si vous souhaitez activer SSL pour d'autres multisites.
 
 > [!primary]
 >
-> Cette opération s'applique uniquement aux certificats permettant d'activer une connexion SSL sécurisée pour plusieurs multisites.
+> Vous pouvez avoir deux situations dans cet état:
+>
+> - **Vous n'avez pas de certificat.**
+> Pousuivez la lecture de ce guide à la section [Activer un certificat SSL sur votre hébergement web](#enablessl) et choisissez le « Certificat gratuit (Let's Encrypt) » qui prend en charge les sites multisites.
+>
+> - **Le certificat SSL est actif, mais vous avez ajouté d'autres sites multisites.**
+> Pousuivez la lecture de ce guide à la section [Régénérer un certificat SSL sur un hébergement Web](#regeneratessl) pour régénérer le certificat SSL pour les multisites restants.
+>
+
+### 3. Regénérer un certificat SSL sur un hébergement web <a name="regeneratessl"></a>
+
+> [!primary]
+>
+> Cette opération s'applique uniquement aux certificats SSL gratuit Let's Encrypt [inclus avec une offre d'hébergement web compatible](https://www.ovhcloud.com/fr-ca/web-hosting/options/ssl/)permettant d'activer une connexion SSL sécurisée pour plusieurs multisites.
 >
 
 Une fois que vous avez activé une connexion SSL sécurisée sur un ou plusieurs de vos multisites, l'état indique alors « À générer ». Cette génération est essentielle pour pouvoir ajouter les noms de domaines concernés au certificat SSL sur votre hébergement web.

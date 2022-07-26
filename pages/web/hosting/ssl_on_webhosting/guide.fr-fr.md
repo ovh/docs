@@ -28,7 +28,7 @@ Plusieurs étapes sont nécessaires pour générer un certificat SSL sur votre h
 
 [2. Attribuer le certificat SSL à une entrée multisite](#multisite) : si votre solution ou votre certificat SSL vous le permettent, vous pouvez faire bénéficier plusieurs de vos multisites d'une connexion sécurisée SSL.
 
-[3. Regénérer le certificat SSL sur un hébergement web](#regeneratessl) : vous permet de regénérer un certificat SSL sur votre hébergement web lorsque vous activez le SSL sur un ou plusieurs multisites.
+[3. Regénérer le certificat SSL sur un hébergement web](#regeneratessl) : vous permet de regénérer un certificat SSL Let's Encrypt sur votre hébergement web lorsque vous activez le SSL sur un ou plusieurs multisites.
 
 Vous pouvez également [supprimer le certificat SSL sur un hébergement web](#deletessl). **Veuillez noter que cela peut présenter des risques si l'un de vos sites web utilise actuellement le certificat que vous avez l'intention de supprimer**.
 
@@ -109,7 +109,7 @@ Une fois que vous avez soumis la demande d'activation, l'état de la connexion s
 
 > [!primary]
 >
-> Cette opération s'applique uniquement aux certificats permettant d'activer une connexion SSL sécurisée pour plusieurs multisites.
+> Cette opération s'applique uniquement aux certificats SSL gratuit Let's Encrypt [inclus avec une offre d'hébergement web compatible](https://www.ovhcloud.com/fr/web-hosting/options/ssl/)permettant d'activer une connexion SSL sécurisée pour plusieurs multisites.
 >
 
 Une fois que vous avez activé une connexion SSL sécurisée sur un ou plusieurs de vos multisites, l'état indique alors « À générer ». Cette génération est essentielle pour pouvoir ajouter les noms de domaines concernés au certificat SSL sur votre hébergement web.

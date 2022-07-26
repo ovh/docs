@@ -10,7 +10,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 04-03-2021**
+**Ostatnia aktualizacja z dnia 26-07-2022**
 
 ## Wprowadzenie
 
@@ -28,46 +28,15 @@ Hosting umożliwia zarządzanie certyfikatem SSL. Certyfikat możesz uzyskać za
 
 Na Twoim hostingu OVHcloud można zarządzać certyfikatem SSL. Przejdź do opisu operacji, którą chcesz przeprowadzić.
 
-- [Aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite](#multisite): jeśli pozwalają na to Twoje rozwiązanie lub certyfikat SSL, możesz podłączyć kilka stron podpiętych w opcji MultiSite do bezpiecznego połączenia SSL.
+- [1. Aktywacja certyfikatu SSL na Twoim hostingu](#enablessl): pomoże Ci aktywować certyfikat SSL na Twoim hostingu. Może to być bezpłatny lub płatny certyfikat zamówiony przez OVHcloud. Możesz również zaimportować własny certyfikat SSL zamówiony u innego dostawcy.
 
-- [Aktywacja certyfikatu SSL na Twoim hostingu](#enablessl): pomoże Ci aktywować certyfikat SSL na Twoim hostingu. Może to być bezpłatny lub płatny certyfikat zamówiony przez OVHcloud. Możesz również zaimportować własny certyfikat SSL zamówiony u innego dostawcy.
+- [2. Aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite](#multisite): jeśli pozwalają na to Twoje rozwiązanie lub certyfikat SSL, możesz podłączyć kilka stron podpiętych w opcji MultiSite do bezpiecznego połączenia SSL.
 
-- [Odnowienie certyfikatu SSL na hostingu](#regeneratessl): umożliwia wygenerowanie certyfikatu SSL na Twoim hostingu, gdy aktywujesz certyfikat SSL na jednej lub kilku stronach podpiętych w opcji MultiSite.
+- [3. Odnowienie certyfikatu SSL na hostingu](#regeneratessl): umożliwia wygenerowanie certyfikatu SSL Let's Encrypt na Twoim hostingu, gdy aktywujesz certyfikat SSL na jednej lub kilku stronach podpiętych w opcji MultiSite.
 
-- [Usunięcie certyfikatu SSL na hostingu.](#deletessl): pozwala usunąć certyfikat SSL na Twoim hostingu OVHcloud. Pamiętaj, że może to stwarzać ryzyko, jeśli jedna ze stron WWW używa aktualnie certyfikatu, który chcesz usunąć.
+Możesz również [usunąć certyfikat SSL na hostingu](#deletessl). **Pamiętaj, że może to stwarzać ryzyko, jeśli jedna ze stron WWW korzysta obecnie z certyfikatu, który ma zostać usunięty**.
 
-### Aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite <a name="multisite"></a>
-
-W zależności od [certyfikatu SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}, który chcesz zamówić, możesz aktywować bezpieczne połączenie SSL na jednej lub kilku stronach podpiętych w opcji MultiSite. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Przejdź następnie do zakładki `MultiSite`{.action}.
-
-Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie "SSL" możesz sprawdzić stan aktywacji bezpiecznego połączenia SSL dla Twoich stron podpiętych w opcji MultiSite.
-
-![managessl](images/manage-ssl-step5.png){.thumbnail}
-
-Mogą pojawić się wówczas trzy statusy:
-
-|Statusy|Opis |
-|---|---|
-|Aktywny|Wskazuje, że certyfikat SSL jest już aktywny dla tej strony podpiętej w opcji MultiSite. Jeśli Twoja strona WWW nie używa protokołu HTTPS, skorzystaj z instrukcji zawartych w dokumentacji OVHcloud [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](../aktywacja-https-ssl-na-stronie-WWW/){.external}.|
-|Do wygenerowania|Wskazuje, że certyfikat SSL został aktywowany dla danej strony podpiętej w opcji MutiSite, ale nie jest jeszcze aktywny. Odnów certyfikat SSL dla Twojego hostingu, aby uwzględniał nowe domeny.|
-|Wyłączony|Wskazuje, że certyfikat SSL nie jest aktywny dla danej strony podpiętej w opcji MultiSite. Aby go aktywować, postępuj zgodnie z instrukcjami podanymi poniżej.|
-
-Aby aktywować certyfikat SSL na stronie podpiętej w opcji MultiSite, kliknij przycisk `...`{.action} po prawej stronie podpiętej w opcji MultiSite, a następnie `Zmień domenę`{.action}. W oknie, które się wyświetla zaznacz kratkę `SSL`{.action}. Możesz również włączyć opcję, aby zmienić subdomenę www w tym samym czasie co powiązana nazwa domeny. Postępuj zgodnie z instrukcjami, aż do potwierdzenia modyfikacji.
-
-Po zatwierdzeniu, status bezpiecznego połączenia SSL dla strony podpiętej w opcji MultiSite zaktualizuje się w ciągu kilku sekund, po czym zostaje wyświetlony komunikat "Do wygenerowania". Powtórz operację, jeśli chcesz aktywować SSL na innych stronach podpiętych w opcji MultiSite.
-
-> [!primary]
->
-> Możesz mieć w tym stanie dwie sytuacje:
->
-> - **Nie masz certyfikatu.**
-> Aby przeczytać ten przewodnik, przejdź do sekcji [Aktywuj certyfikat SSL na Twoim hostingu](#enablessl) i wybierz "Darmowy certyfikat (Let's Encrypt)", który obsługuje strony podpięte w opcji MultiSite.
->
-> - **Certyfikat SSL jest aktywny, ale dodałeś inne strony podpięte w opcji MultiSite.**
-> Aby ponownie wygenerować certyfikat SSL dla pozostałych stron w opcji MultiSite, zapoznaj się z tym przewodnikiem w sekcji [Odnowienie certyfikatu SSL na hostingu WWW](#regeneratessl).
->
-
-### Aktywacja certyfikatu SSL na hostingu <a name="enablessl"></a>
+### 1. Aktywacja certyfikatu SSL na hostingu <a name="enablessl"></a>
 
 Twój hosting umożliwia uruchomienie [certyfikatu SSL w zależności od potrzeb](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}:
 
@@ -105,11 +74,46 @@ Wdrożenie certyfikatu może zająć od kilku minut do kilku dni, w zależności
 
 ![managessl](images/manage-ssl-step4.png){.thumbnail}
 
-### Ponowne wygenerowanie certyfikatu SSL na hostingu <a name="regeneratessl"></a>
+### 2. Aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite <a name="multisite"></a>
 
 > [!primary]
 >
-> Operacja ta dotyczy jedynie certyfikatów umożliwiających aktywację bezpiecznego połączenia SSL na kilku stronach podpiętych w opcji MultiSite.
+> Przed przypisaniem certyfikatu SSL do jednej z Twoich stron podpiętych w opcji MultiSite upewnij się, że wcześniej aktywowałeś certyfikat SSL na Twoim hostingu. W tym celu sprawdź [poprzedni etap](#enablessl).
+
+W zależności od [certyfikatu SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}, który chcesz zamówić, możesz aktywować bezpieczne połączenie SSL na jednej lub kilku stronach podpiętych w opcji MultiSite. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Przejdź następnie do zakładki `MultiSite`{.action}.
+
+Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie "SSL" możesz sprawdzić stan aktywacji bezpiecznego połączenia SSL dla Twoich stron podpiętych w opcji MultiSite.
+
+![managessl](images/manage-ssl-step5.png){.thumbnail}
+
+Mogą pojawić się wówczas trzy statusy:
+
+|Statusy|Opis |
+|---|---|
+|Aktywny|Wskazuje, że certyfikat SSL jest już aktywny dla tej strony podpiętej w opcji MultiSite. Jeśli Twoja strona WWW nie używa protokołu HTTPS, skorzystaj z instrukcji zawartych w dokumentacji OVHcloud [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](../aktywacja-https-ssl-na-stronie-WWW/){.external}.|
+|Do wygenerowania|Wskazuje, że certyfikat SSL został aktywowany dla danej strony podpiętej w opcji MutiSite, ale nie jest jeszcze aktywny. Odnów certyfikat SSL dla Twojego hostingu, aby uwzględniał nowe domeny.|
+|Wyłączony|Wskazuje, że certyfikat SSL nie jest aktywny dla danej strony podpiętej w opcji MultiSite. Aby go aktywować, postępuj zgodnie z instrukcjami podanymi poniżej.|
+
+Aby aktywować certyfikat SSL na stronie podpiętej w opcji MultiSite, kliknij przycisk `...`{.action} po prawej stronie podpiętej w opcji MultiSite, a następnie `Zmień domenę`{.action}. W oknie, które się wyświetla zaznacz kratkę `SSL`{.action}. Możesz również włączyć opcję, aby zmienić subdomenę www w tym samym czasie co powiązana nazwa domeny. Postępuj zgodnie z instrukcjami, aż do potwierdzenia modyfikacji.
+
+Po zatwierdzeniu, status bezpiecznego połączenia SSL dla strony podpiętej w opcji MultiSite zaktualizuje się w ciągu kilku sekund, po czym zostaje wyświetlony komunikat "Do wygenerowania". Powtórz operację, jeśli chcesz aktywować SSL na innych stronach podpiętych w opcji MultiSite.
+
+> [!primary]
+>
+> Możesz mieć w tym stanie dwie sytuacje:
+>
+> - **Nie masz certyfikatu.**
+> Aby przeczytać ten przewodnik, przejdź do sekcji [Aktywuj certyfikat SSL na Twoim hostingu](#enablessl) i wybierz "Darmowy certyfikat (Let's Encrypt)", który obsługuje strony podpięte w opcji MultiSite.
+>
+> - **Certyfikat SSL jest aktywny, ale dodałeś inne strony podpięte w opcji MultiSite.**
+> Aby ponownie wygenerować certyfikat SSL dla pozostałych stron w opcji MultiSite, zapoznaj się z tym przewodnikiem w sekcji [Odnowienie certyfikatu SSL na hostingu WWW](#regeneratessl).
+>
+
+### 3. Ponowne wygenerowanie certyfikatu SSL na hostingu <a name="regeneratessl"></a>
+
+> [!primary]
+>
+> Operacja ta dotyczy wyłącznie certyfikatów SSL Let's Encrypt [zawartych w ofercie kompatybilnego hostingu](https://www.ovhcloud.com/pl/web-hosting/options/ssl/) umożliwiających aktywację bezpiecznego połączenia SSL dla kilku stron podpiętych w opcji MultiSite.
 >
 
 Po aktywowaniu bezpiecznego połączenia SSL na jednej lub kilku stronach podpiętych w opcji MultiSite status wskazuje: „Do wygenerowania”. Operacja ta konieczna jest, aby dodać do certyfikatu SSL na Twoim hostingu wybraną domenę lub domeny.
