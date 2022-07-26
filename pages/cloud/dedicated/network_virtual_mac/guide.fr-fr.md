@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment créer une adresse MAC virtuelle et comment l’ass
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 17/05/2022**
+**Dernière mise à jour le 26/07/2022**
 
 ## Objectif
 
@@ -34,7 +34,7 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 
 > [!warning]
 >
-> Si un bloc IP a été déplacé dans le vrack, il n’est plus assigné à un serveur physique à ce titre, il n’est plus possible d’assigner une MAC virtuelle à une IP.
+> Si un bloc IP a été déplacé dans le vRack, il n’est plus assigné à un serveur physique à ce titre, il n’est plus possible d’assigner une MAC virtuelle à une IP.
 >
 
 #### Via l'espace client OVHcloud

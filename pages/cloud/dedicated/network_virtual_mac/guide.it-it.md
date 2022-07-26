@@ -9,7 +9,7 @@ section: 'Rete e IP'
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 17/05/2022**
+**Ultimo aggiornamento: 26/07/2022**
 
 ## Obiettivo
 
@@ -35,6 +35,11 @@ OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al
 ## Procedura
 
 ### Assegna un indirizzo MAC
+
+> [!warning]
+>
+> Se un blocco IP è stato spostato nella vRack, non è più assegnato a un server fisico a questo titolo, non è più possibile assegnare un MAC virtuale a un IP.
+>
 
 #### Tramite lo Spazio Cliente OVHcloud
 

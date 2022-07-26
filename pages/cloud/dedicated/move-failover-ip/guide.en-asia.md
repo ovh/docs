@@ -6,7 +6,7 @@ section: Network Management
 order: 7
 ---
 
-**Last updated 9th December 2021**
+**Last updated 26th July 2022**
 
 ## Objective
 
@@ -45,7 +45,7 @@ With this technology, you can switch IP addresses from one solution to another i
 >
 > On the other hand, blocks containing duplicate virtual MAC addresses cannot be moved. You must first delete the duplicate virtual MAC address on the block to be moved.
 >
-> If an IP block is moved/added to the vrack, it is no longer linked to a physical server. In this case, any virtual MAC address will be lost during the transfer.
+> If an IP block is moved/added to the vRack, it is no longer linked to a physical server. In this case, any virtual MAC address will be lost during the transfer.
 >
 
 ### Moving an IP from the OVHcloud Control Panel

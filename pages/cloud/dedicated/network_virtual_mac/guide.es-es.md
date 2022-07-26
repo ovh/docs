@@ -9,7 +9,7 @@ section: 'Red e IP'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 17/05/2022**
+**Última actualización: 26/07/2022**
 
 ## Objetivo
 
@@ -35,6 +35,11 @@ OVHcloud permite asociar una dirección MAC virtual a una dirección IP para pod
 ## Procedimiento
 
 ### Asignar una dirección MAC
+
+> [!warning]
+>
+> Si un bloque IP ha sido movido al vRack, ya no está asignado a un servidor físico por este motivo, ya no es posible asignar una MAC virtual a una IP.
+>
 
 #### Desde el área de cliente de OVHcloud
 
