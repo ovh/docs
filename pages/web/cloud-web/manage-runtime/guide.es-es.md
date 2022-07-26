@@ -10,7 +10,7 @@ section: 'Configuración del alojamiento'
 >
 
 
-**Última actualización: 04/05/2022**
+**Última actualización: 27/07/2022**
 
 ## Objetivo
 
