@@ -46,8 +46,9 @@ There are several different ways you can manage the runtime environments on your
 
 > [!primary]
 >
-> Before you modify a runtime environment, please ensure that any websites or applications using it will not become unavailable as a result. You can view the number of multi-sites based on your runtime environment using the `Number of linked multi-sites` column. In the `Multi-site`{.action} tab, you can also view the runtime environment used for each domain looking at the table's `Runtime software` column.
-> 
+> Before you modify a runtime environment, ensure that you do not make a website or application using it unavailable as a result. You can view the number of multisites that are based on your runtime environment using the `Number of linked multisites` column. In the `Multisite`{.action} tab, you can view the runtime environment used for each domain, using the Runtime software column in the table that appears.
+>
+> To allow the removal of a runtime environment, you must first delete the multisite entries that use the runtime environment.
 
 To add or modify a runtime environment, go to the `Runtime environment`{.action} tab of the Cloud Web hosting plan concerned. Then:
 

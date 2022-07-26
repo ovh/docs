@@ -53,6 +53,7 @@ A gestão dos motores de execução do seu alojamento Cloud Web realiza-se de v�
 >
 > Antes de alterar um motor de execução, certifique-se de que essa ação não causará a indisponibilidade dos sites ou aplicações que utilizam o motor. Para isso, consulte a coluna `Número de multi-sites relacionados` do motor em questão. Na janela `Multi-site`, poderá também consultar o motor utilizado para cada domínio na coluna Motor de execução da tabela.
 > 
+> Para permitir a eliminação de um motor de execução, é necessário eliminar as entradas multisite que utilizam este último.
 
 Para adicionar ou alterar um motor de execução, aceda ao separador `Motores de execução`{.action} do alojamento Cloud Web em questão. A partir daí:
 
