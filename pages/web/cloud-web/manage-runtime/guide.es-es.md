@@ -8,7 +8,7 @@ section: 'Configuración del alojamiento'
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-> Para poder eliminar un motor de ejecución, es necesario eliminar las entradas multisitio que utilizan este último.
+
 
 **Última actualización: 04/05/2022**
 
@@ -53,6 +53,7 @@ Existen diversas formas de gestionar los motores de ejecución de su alojamiento
 >
 > Antes de modificar un motor de ejecución, asegúrese previamente de que dicha operación no provocará que el sitio web o la aplicación que utilice el motor deje de estar disponible. Puede encontrar el número de multisitios que se apoyan en sus motores de ejecución gracias a la columna `«Número de multisitios vinculados»`. En la pestaña `«Multisitio»`{.action}, también puede encontrar el motor que utiliza cada dominio gracias a la columna `«Motor de ejecución»` de la tabla.
 > 
+> Para poder eliminar un motor de ejecución, es necesario eliminar las entradas multisitio que utilizan este último.
 
 Para añadir o modificar un motor de ejecución, abra la pestaña `«Motores de ejecución»`{.action} del alojamiento Cloud Web de su interés. Y luego:
 
