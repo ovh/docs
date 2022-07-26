@@ -49,9 +49,16 @@ AI Apps allows a user to deploy applications from two sources:
 
 In this tutorial, we will select an OVHcloud Docker image to deploy your first **AI App**.
 
-The objective is to deploy and call a simple **Flask API** for a kind of *Hello World*. The API welcomes you on your first **AI App** by sending back `Hello` followed by the `name` you sent and the end of the sentence.
+Enter the name of the image: `ovhcom/ai-deploy-hello-World`
+
+> [!primary]
+>
+> You can find this image on the [OVHcloud DockerHub](https://hub.docker.com/r/ovhcom/ai-deploy-hello-world). For more information about this Docker image, please check the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/apps/getting-started/flask/hello-world-api/Dockerfile).
+>
 
 ![AI App subscribe](images/ai_app_image.png){.thumbnail}
+
+The objective is to deploy and call a simple **Flask API** for a kind of *Hello World*. The API welcomes you on your first **AI App** by sending back `Hello` followed by the `name` you sent and the end of the sentence.
 
 > [!primary]
 >
