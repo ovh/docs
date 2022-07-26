@@ -76,7 +76,7 @@ Lors du lancement de l’installation du système d'exploitation, vous pouvez so
 
 Un template OVHcloud est un template officiel quasi-identique à l'image prête à l'emploi de l'éditeur/vendeur de logiciel officiel. 
 
-Pour lister les templates disponibles (en fonction du matériel de votre serveur), utilisez l'appel API suivant :
+Pour lister les templates disponibles (en fonction de la compatibilité matérielle de votre serveur), utilisez l'appel API suivant :
 
 > [!api]
 >
@@ -183,7 +183,7 @@ Une disposition de partition est une liste de partitions. Voici un exemple de st
 
 Le tableau suivant donne une vue d'ensemble de la compatibilité des systèmes de fichiers avec les niveaux RAID et LVM dans le contexte OVHcloud :
 
-|Filesystem|LVM|RAID 0|RAID 1|RAID 5|RAID 6|RAID 7|RAID 10|
+|Système de fichiers|LVM|RAID 0|RAID 1|RAID 5|RAID 6|RAID 7|RAID 10|
 |---|---|---|---|---|---|---|---|
 |Btrfs, ext4, XFS|✅|✅|✅|✅|✅|❌|✅|
 |ZFS¹|❌|✅|✅|✅|✅|✅|❌|
@@ -192,24 +192,24 @@ Le tableau suivant donne une vue d'ensemble de la compatibilité des systèmes d
 |UFS, VMFS5, VMFS6, VMFS-L⁴|❌|❌|❌|❌|❌|❌|❌|
 
 ¹ Pour plus d'informations, reportez-vous au tableau [vdevs ZFS vs standard RAID](#raidz2RAID).<br />
-² Le niveau de RAID pour swap ne peut être que égal à 1 au sein de l’[API OVHcloud](https://api.ovh.com/). En réalité, les partitions swap n'utiliseront pas de RAID. Lorsqu'une partition swap de taille `s` est définie sur un serveur avec un nombre `n` de disques, cela créera `n` partitions de taille `s` sur chaque disque sans aucun dispositif RAID logiciel en dessous.<br />
+² Le niveau de RAID pour swap ne peut être que égal à 1 au sein de l’[API OVHcloud](https://api.ovh.com/). En réalité, les partitions swap n'utiliseront pas de RAID. Lorsqu'une partition swap de taille `s` est définie sur un serveur avec un nombre `n` de disques, cela créera `n` partitions de taille `s` sur chaque disque sans aucun périphérique RAID logiciel en dessous.<br />
 ³ Le RAID natif Windows (celui configuré par l'installateur OVHcloud) prend en charge le RAID 1 mais uniquement entre deux disques, alors que les autres implémentations en autorisent plus de deux.<br />
-⁴ Le programme d'installation ESXi ne prend pas en charge les schémas de partitionnement personnalisés. Le partitionnement est défini par l'éditeur du logiciel. Néanmoins, l’[API OVHcloud](https://api.ovh.com/) peut vous donner une idée de ce à quoi ressemble le partitionnement : pour plus d'informations, consultez [les templates OVHcloud](#OVHcloudtemplates).<br />
+⁴ L'installateur ESXi ne prend pas en charge les schémas de partitionnement personnalisés. Le partitionnement est défini par l'éditeur du logiciel. Néanmoins, l’[API OVHcloud](https://api.ovh.com/) peut vous donner une idée de ce à quoi ressemble le partitionnement : pour plus d'informations, consultez [les templates OVHcloud](#OVHcloudtemplates).<br />
 
 > [!warning]
 >
-> Ce tableau est fourni uniquement à titre d'information. À noter que la compatibilité LVM et surtout filesystem dépend également de l’OS (template OVHcloud) installé. Consultez les [templates OVHcloud](#OVHcloudtemplates) pour plus de détails.
+> Ce tableau est fourni uniquement à titre d'information. À noter que la compatibilité LVM et surtout le système de fichiers dépendent également de l’OS (template OVHcloud) installé. Consultez les [templates OVHcloud](#OVHcloudtemplates) pour plus de détails.
 >
 
 #### Vdevs ZFS vs RAID standard <a name="raidz2RAID"></a>
 
-ZFS ne supporte pas les niveaux RAID standards. Il s'agit de périphériques virtuels (vdevs) pour décrire la tolérance aux pannes au sein d'un groupe de périphériques. Consultez la [documentation officielle d'OpenZFS](https://openzfs.github.io/openzfs-docs/man/7/zpoolconcepts.7.html) pour plus de détails sur les vdevs.
+ZFS ne supporte pas les niveaux RAID standards. Il s'agit de périphériques virtuels (vdevs) pour décrire la tolérance aux pannes au sein d'un groupe de périphériques. Consultez la [documentation officielle d'OpenZFS](https://openzfs.github.io/openzfs-docs/man/7/zpoolconcepts.7.html) en anglais pour plus de détails sur les vdevs.
 
 Afin de rendre l'API OVHcloud la plus simple possible, il est nécessaire que vous définissiez un RAID standard au sein de l'API pour les systèmes de fichiers ZFS. Le niveau RAID standard sera alors traduit par une définition équivalente de vdev. Le tableau suivant illustre la traduction des différents niveaux RAID proposés par l'API OVHcloud ainsi qu'un rappel de leurs caractéristiques respectives.
 
 |RAID Standard|Type vdev équivalent|Nombre minimal de disques de données|Nombre de disques de parité|
 |---|---|---|---|
-|RAID 0|vdev entrelacé|1|0|
+|RAID 0|striped vdev|1|0|
 |RAID 1|mirror|2|0|
 |RAID 5|raidz1|2|1|
 |RAID 6|raidz2|3|2|
@@ -272,12 +272,12 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 
 |Message d'erreur|Détails|Solution(s)|
 |---|---|---|
-|Certaines distributions Linux comme les OS de la famille RHEL ne supportent pas ces mountpoints / mountpoint reservé / managed by OVHcloud (`liste des mountpoints interdits`). Supprimez ces points de montage et relancez une installation.|- Vous avez choisi `/boot/efi` comme point de montage. OVHcloud créera cette partition automatiquement pour vous si votre serveur en a besoin.<br />- Vous avez choisi un point de montage qui est *symlinked* sur certains OS. Voir [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/fhs.shtml) pour plus de détails.|- Choisissez un autre point de montage pour la partition ou supprimez cette partition de votre schéma de partitionnement.|
-|Une partition de type `t` avec un point de montage `m` ne peut pas remplir le disque.|- Vous avez choisi la partition `swap` pour remplir le disque, nous interdisons cela pour éviter de créer des partitions `swap` inutilement grosses.|- Définissez une taille fixe pour la partition de `swap`.|
-|Partition `/` manquante. Veuillez ajouter une partition `/` dans votre schéma de partition!|- Tout système d'exploitation Linux nécessite au moins une partition `/`.|- Ajoutez une partition `/` dans votre schéma de partitionnement.|
-|`message`. Veuillez ajuster les partitions de sorte que la partition `p` tienne sur `n` disque(s).|- Vous avez choisi une partition avec un RAID nécessitant un nombre de disques que votre serveur peut fournir, mais certains disques sont déjà pleins à cause d'autres partitions et/ou de cette partition actuelle.|- Si ce n'est pas déjà fait sur une autre partition, définissez la taille de la partition pour remplir le disque.<br />- Réduisez la taille de cette partition pour qu'elle s'adapte aux disques.<br />- Réduisez la taille des autres partitions pour que cette partition s'adapte aux disques.|
+|Some Linux distributions such as RHEL family OSes don't support those mountpoints / mountpoint reserved/managed by OVHcloud (`list forbidden mountpoints`). Please remove those mountpoints and restart an installation|- Vous avez choisi `/boot/efi` comme point de montage. OVHcloud créera cette partition automatiquement pour vous si votre serveur en a besoin.<br />- Vous avez choisi un point de montage qui est un *lien symbolique* sur certains OS. Voir [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/fhs.shtml) (en anglais) pour plus de détails.|- Choisissez un autre point de montage pour la partition ou supprimez cette partition de votre schéma de partitionnement.|
+|Partition of type `t` with mountpoint `m` cannot fill the disk.|- Vous avez choisi la partition `swap` pour remplir le disque, nous interdisons cela pour éviter de créer des partitions `swap` inutilement trop grandes.|- Définissez une taille fixe pour la partition de `swap`.|
+|Missing `/` partition. Please add a `/` partition in your partition scheme!|- Tout système d'exploitation Linux nécessite au moins une partition `/`.|- Ajoutez une partition `/` dans votre schéma de partitionnement.|
+|`message`. Please adjust partitions so that the `p` partition fits on `n` disk(s)|- Vous avez choisi une partition avec un RAID nécessitant un nombre de disques que votre serveur peut fournir, mais certains disques sont déjà pleins à cause d'autres partitions et/ou de cette partition actuelle.|- Si ce n'est pas déjà fait sur une autre partition, définissez la taille de la partition comme remplissant le disque.<br />- Réduisez la taille de cette partition pour qu'elle s'adapte aux disques.<br />- Réduisez la taille des autres partitions pour que cette partition s'adapte aux disques.|
 
-#### Saisir l'auto-correction du client
+#### Auto-correction des données d'entrée client
 
 Afin d'améliorer l'expérience client, réduire la charge de travail du [support OVHcloud](https://help.ovhcloud.com/fr/) et éviter les changements brutaux qui pourraient avoir un impact pour le client, certaines saisies effectuées par le client sont automatiquement corrigées ou modifiées par le backend. Le tableau suivant donne une vue d'ensemble de ce qui est actuellement auto-corrigé / changé lors du **pre-processing** :
 
