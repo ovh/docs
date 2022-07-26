@@ -46,7 +46,7 @@ La gestion des moteurs d'exécution de votre hébergement Cloud Web s'effectue d
 
 > [!primary]
 >
-> Avant de modifier un moteur d'exécution, assurez-vous que cela ne rendra pas indisponible un site ou une application l'utilisant. Vous pouvez relever le nombre de multisites s'appuyant sur vos moteurs d'exécution grâce à la colonne `nombre de multisites liés`. Dans l'onglet `Multisite`{.action}, vous pouvez relever le moteur utilisé pour chaque domaine, grâce à la colonne `Moteur d'exécution` du tableau qui vous est présenté qui vous est présenté..
+> Avant de modifier un moteur d'exécution, assurez-vous que cela ne rendra pas indisponible un site ou une application l'utilisant. Vous pouvez relever le nombre de multisites s'appuyant sur vos moteurs d'exécution grâce à la colonne `nombre de multisites liés`. Dans l'onglet `Multisite`{.action}, vous pouvez relever le moteur utilisé pour chaque domaine, grâce à la colonne `Moteur d'exécution` du tableau qui vous est présenté.
 >
 > Pour permettre la suppression d'un moteur d'exécution, il est nécessaire de supprimer les entrées multisite utilisant ce dernier.
 
