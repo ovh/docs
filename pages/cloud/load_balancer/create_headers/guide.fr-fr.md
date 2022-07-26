@@ -209,7 +209,7 @@ Dans la section `Frontends`{.action} de votre espace client OVHcloud, choisissez
 
 Si vous souhaitez configurer plusieurs en-têtes, ceux-ci doivent être séparés par des virgules *sans espaces*. Par exemple, vous pouvez créer les en-têtes suivants: `X-Ip-Header %ci,X-Port-Header %cp`.
 
-![Configuration des en-têtes HTTP d'un Frontend](images/add_headers.png){.thumbnail}
+![Configuration des en-têtes HTTP d'un Frontend via ovh manager API](images/add_headers.png){.thumbnail}
 
 Cliquez sur le bouton `Mettre à jour`{.action} une fois les en-têtes configurés puis sur `Déployer la zone: VOTRE ZONE`{.action} pour appliquer vos changements dans la zone concernée.
 
