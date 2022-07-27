@@ -76,7 +76,7 @@ Je nach Art des gewählten Zertifikats kann die Konfiguration wenige Minuten bis
 
 > [!primary]
 >
-> Bevor Sie einem Ihrer Multisite-Einträge das SSL Zertifikat zuweisen, überprüfen Sie, dass Sie zuvor ein SSL Zertifikat auf Ihrem Hosting aktiviert haben. Dazu lesen Sie [vorherige Stufe](#enablessl).
+> Bevor Sie einem Ihrer Multisite-Einträge das SSL Zertifikat zuweisen, überprüfen Sie, dass Sie zuvor ein SSL Zertifikat auf Ihrem Hosting aktiviert haben. Beachten Sie dazu den [vorherigen Schritt](#enablessl).
 
 Je nach Art des [SSL-Zertifikats](https://www.ovhcloud.com/de/web-hosting/options/ssl/){.external}, das Sie bestellen möchten, können Sie eine sichere SSL-Verbindung für eine oder mehrere Ihrer Multisites aktivieren. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Multisite`{.action}.
 
@@ -101,10 +101,10 @@ Sobald Sie die Aktivierungsanfrage eingereicht haben, sollte sich der Zustand de
 > In diesem Zustand können zwei Situationen auftreten:
 >
 > - **Sie haben kein Zertifikat.**
-> Lesen Sie die Anleitung unter "[SSL-Zertifikat auf Ihrem Webhosting aktivieren](#enablessl)" und wählen Sie "Kostenloses Zertifikat (Let's Encrypt)", das Multisite-Websites unterstützt.
+> Lesen Sie die Anweisungen unter "[SSL-Zertifikat auf Ihrem Webhosting aktivieren](#enablessl)" und wählen Sie "Kostenloses Zertifikat (Let's Encrypt)", das Multisite-Websites unterstützt.
 >
 > - **Das SSL Zertifikat ist aktiv, Sie haben jedoch weitere Multisite-Seiten hinzugefügt.**
-> Lesen Sie diese Anleitung im Bereich [SSL-Zertifikat auf einem Webhosting neu erstellen](#regeneratessl), um das SSL-Zertifikat für die verbleibenden Multisites zu erneuern.
+> Lesen Sie diese Anleitung im Bereich "[SSL-Zertifikat auf einem Webhosting neu erstellen](#regeneratessl)", um das SSL-Zertifikat für die verbleibenden Multisites zu erneuern.
 >
 
 
