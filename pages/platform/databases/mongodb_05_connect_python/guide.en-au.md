@@ -3,10 +3,10 @@ title: MongoDB - Connect with Python
 excerpt: Connect to your Public Cloud Databases for MongoDB using the Python programming language
 slug: mongodb/connect-python
 section: MongoDB - Guides
-order: 302
+order: 050
 ---
 
-**Last updated September 20th 2021**
+**Last updated 27<sup>th</sup> July 2022**
 
 ## Objective
 
@@ -16,15 +16,16 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
-- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account.
-- An up and running Public Cloud Database for MongoDB. This guide was made with MongoDB 4.4.
+- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/au/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- [Configure your MongoDB instance](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/managing-service/) to accept incoming connections
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.5.
 
 ## Concept
 
 A MongoDB instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MongoDB with CLI](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/connect-cli/).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MongoDB with CLI](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/connect-cli).
 
 Another way is to interact directly using a programming language, such as Python.
 Python is one of the major programming languages in the world, especially in the Data ecosystem.
@@ -89,69 +90,6 @@ Finally, copy the IP address of your Python environment and save it for later.
 If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external} from your station hosting the Python environment.
 In our example, we will use the (fake) IP 109.190.200.59.
 
-We are now ready to learn how to connect to our MongoDB instance !
-
-### Configure your MongoDB instance to accept incoming connections
-
-Before making a connection, we need to verify that our MongoDB instance is correctly configured.
-
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your MongoDB instance.
-
-#### Step 1: Verify your user roles and password
-
-Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user + password pair.
-
-We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/){.external} to select the right roles for your use-case.
-
-In our example, we will create a user called *bastien* with the (fake) password *Mysup3rs3cur3p4ssw0rd* and the roles *readWriteAnyDatabase* and *userAdminAnyDatabase*.
-
-![User Creation](images/user_creation.png){.thumbnail}
-
-Once created or updated, check to verify the user is ready and with the "Enabled" status in the OVHcloud Control Panel.
-
-![User ready](images/user_enabled.png){.thumbnail}
-
-#### Step 2: Authorize incoming connections from the MongoDB client
-
-In this step, select the `Authorised IP's`{.action} tab (Access Control List).
-By default, a Public Cloud Database does not accept any form of connection from the outside world.
-This way we can help prevent intrusive connection attempts.
-
-Click to authorize a new IP, and enter the previously found IP of your Python environment. In our case we will enter 109.190.200.59.
-
-![Add an IP](images/ip_authorize.png){.thumbnail}
-
-> [!primary]
->
-> If you want to allow any connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully. Every IP will be authorized.
->
-
-### Get your connection information (URI)
-
-The setup is now done for both the Python environment and the MongoDB instance.
-
-Select the `General Information`{.action} tab. In the **Login Information** section, copy the Service URI.
-
-It should be similar to this when you have a single node (Essential service plan):
-
-```
-mongodb://<username>:<password>@<hostname>/admin?tls=true
-```
-
-And like this when you have a MongoDB cluster with multiple nodes, called a replica set (Business or Enterprise service plans) :
-
-```
-mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true
-```
-
-A bit of information to know. It will connect:
-
-- to the hostname or the replica set (name is **replicaset**);
-- to the "admin" database directly;
-- on the default MongoDB port (27017);
-- with the username and password arguments included;
-- all of that securely, with TLS activated.
-
 We will now follow the official MongoDB documentation to perform our first connection with Python.
 
 ### Connect with Python
@@ -168,7 +106,7 @@ from pymongo.errors import ConnectionFailure
 # Establishing connection
 try:
     # MongoClient('mongodb://username:password@hostnameOrReplicaset/?tls=True') replica by your own Service URI
-    uri = 'mongodb://bastien:Mysup3rs3cur3p4ssw0rd@node1-123456789.database.cloud.ovh.net/admin?tls=true'
+    uri = 'mongodb+srv://<username>:<password>@mongodb-e49d02ee-o2626ab53.database.cloud.ovh.net/admin?replicaSet=replicaset'
     connect = MongoClient(uri)
     print("MongoDB cluster is reachable")
     print(connect)
@@ -185,7 +123,7 @@ MongoDB cluster is reachable
 MongoClient(host=['node1-123456789.database.cloud.ovh.net:27017'], document_class=dict, tz_aware=False, connect=True, ssl=True)
 ```
 
-If not, your CLI should give you more details about the issue, for example:
+If not, your CLI should give you more details about the issue, for example :
 
 - *Authentication failed* : could be an error with your user login or password;
 - *nodename nor servname provided, or not known* : could be a wrongly typed hostname;
@@ -238,8 +176,6 @@ Congratulations! Everything is working properly.
 ## Go further
 
 [MongoDB capabilities](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/capabilities/)
-
-[Managing a MongoDB service from the OVHcloud Control Panel](https://docs.ovh.com/au/en/publiccloud/databases/mongodb/managing-service/)
 
 [Configuring vRack for Public Cloud](https://docs.ovh.com/au/en/public-cloud/public-cloud-vrack/)
 
