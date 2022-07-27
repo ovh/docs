@@ -22,7 +22,7 @@ Puede activar la autentificación de dos factores (2FA). Esta se agrega a su nom
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Disponer de un teléfono inteligente o una tableta (para el método a través de la aplicación móvil) o una llave de seguridad U2F (Universal Second Factor).
-- Haber consultado las [recomendaciones sobre la gestión de la contraseña de acceso a su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/).
+- Haber consultado las [recomendaciones sobre la gestión de la contraseña de acceso a su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/).
 
 ## Procedimiento
 

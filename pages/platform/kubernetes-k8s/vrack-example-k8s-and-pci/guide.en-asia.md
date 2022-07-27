@@ -31,13 +31,13 @@ order: 02
 
 ## Objective
 
-OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. At the same time, it allows you to add Public Cloud instances and Managed Kubernetes clusters to your private network to create an infrastructure of physical and virtual resources.
+OVHcloud [vRack](https://www.ovh.com/asia/solutions/vrack/) is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. At the same time, it allows you to add Public Cloud instances and Managed Kubernetes clusters to your private network to create an infrastructure of physical and virtual resources.
 
 In this tutorial, we are going to activate the vRack on a Public Cloud project. Then we will create a Managed Kubernetes cluster and a Public Cloud instance (PCI). Eventually, both of them will be added inside the vRack. 
 
 Concretely, we are going to install an OVHcloud Managed Kubernetes cluster and a Public Cloud instance, both of them in the same private network. We are going to deploy a [WordPress](https://wordpress.org/){.external} on the Kubernetes cluster that will use the private network to connect to a [MariaDB database](https://mariadb.org/) installed on the Public Cloud instance.
 
-**In this tutorial we are going to give you an example of how to use the OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) to connect a Managed Kubernetes cluster with a Public Cloud instance inside the same private network.**
+**In this tutorial we are going to give you an example of how to use the OVHcloud [vRack](https://www.ovh.com/asia/solutions/vrack/) to connect a Managed Kubernetes cluster with a Public Cloud instance inside the same private network.**
 
 > [!warning]
 > The method described in this tutorial currently works if the Managed Kubernetes cluster and the external instance are in the same private network in the vRack. The process to connect them between *different* private networks will be described in a next tutorial.
