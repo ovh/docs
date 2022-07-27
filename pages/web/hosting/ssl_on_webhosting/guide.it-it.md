@@ -125,7 +125,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Leggi le informazioni che compaiono nella nuova finestra, clicca su `Conferma`{.action} e attendi il tempo necessario alla rigenerazione del certificato. Questa operazione potrebbe durare anche diverse ore.
 
-Ti ricordiamo che Let's Encrypt, l’autorità che fornisce i certificati SSL sugli hosting Web OVH, impone un [limite di cinque rigenerazioni a settimana](https://letsencrypt.org/docs/rate-limits/){.external}. Ti consigliamo quindi di verificare attentamente il numero di rigenerazioni settimanali da eseguire, per evitare qualsiasi impatto sulla tua attività.
+Ti ricordiamo che Let's Encrypt, l’autorità che fornisce i certificati SSL sugli hosting Web OVHcloud, impone un [limite di cinque rigenerazioni a settimana](https://letsencrypt.org/docs/rate-limits/){.external}. Ti consigliamo quindi di verificare attentamente il numero di rigenerazioni settimanali da eseguire, per evitare qualsiasi impatto sulla tua attività.
 
 ![Gestione SSL](images/manage-ssl-step8.png){.thumbnail}
 

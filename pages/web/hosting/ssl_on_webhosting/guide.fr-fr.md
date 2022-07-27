@@ -109,7 +109,7 @@ Une fois que vous avez soumis la demande d'activation, l'état de la connexion s
 
 > [!primary]
 >
-> Cette opération s'applique uniquement aux certificats SSL gratuit Let's Encrypt [inclus avec une offre d'hébergement web compatible](https://www.ovhcloud.com/fr/web-hosting/options/ssl/)permettant d'activer une connexion SSL sécurisée pour plusieurs multisites.
+> Cette opération s'applique uniquement aux certificats SSL gratuit Let's Encrypt [inclus avec une offre d'hébergement web compatible](https://www.ovhcloud.com/fr/web-hosting/options/ssl/) permettant d'activer une connexion SSL sécurisée pour plusieurs multisites.
 >
 
 Une fois que vous avez activé une connexion SSL sécurisée sur un ou plusieurs de vos multisites, l'état indique alors « À générer ». Cette génération est essentielle pour pouvoir ajouter les noms de domaines concernés au certificat SSL sur votre hébergement web.
