@@ -35,6 +35,13 @@ For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for
 
 ### Add the IP block to the vRack
 
+> [!warning]
+>
+> Once an IP block is added to the vRack, it is no longer attached to a physical server.
+>
+> This setup allows you to configure IPs of the same block on multiple servers, provided that these servers are all in the same vRack as the IP block. The IP block must have at least 2 usable IPs or more for this to be possible.
+>
+
 In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `vRack`{.action} menu.
 
 Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on the `Add`{.action} button.

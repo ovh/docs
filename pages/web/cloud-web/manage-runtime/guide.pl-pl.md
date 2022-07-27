@@ -9,7 +9,7 @@ section: 'Konfiguracja hostingu'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 04-05-2022**
+**Ostatnia aktualizacja z dnia 27-07-2022**
 
 ## Wprowadzenie
 
@@ -52,6 +52,7 @@ Istnieje kilka sposobów zarządzania frameworkami hostingu Cloud Web:
 >
 > Zanim zmienisz framework, upewnij się, czy nie spowoduje to niedostępności strony lub używającej jej aplikacji. Możesz odszukać liczbę powiązanych stron w opcji MultiSite, sprawdzając frameworki w kolumnie `Liczba powiązanych stron w opcji MultiSite`. Następnie, w karcie `MultiSite`{.action}, możesz odszukać w odpowiedniej kolumnie tabeli `Framework` używany dla każdej domeny.
 > 
+> Aby umożliwić usunięcie frameworka, konieczne jest usunięcie wpisów w opcji MultiSite, które go używają.
 
 Aby dodać lub zmienić framework, przejdź do karty`Frameworki`{.action} odpowiedniego hostingu Cloud Web. Następnie:
 

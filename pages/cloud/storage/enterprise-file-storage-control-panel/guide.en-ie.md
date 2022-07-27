@@ -39,11 +39,11 @@ Switch to the tab `Volumes`{.action}. The table lists all volumes you have creat
 
 You can carry out some actions by clicking on the `...`{.action} button in each row of the table.
 
-- **Modify the volume**: opens the ["General information" section](#modify_volume) of the volume.
-- **Create a snapshot**: opens the ["Backups" section](#snapshots) to take a manual snapshot of the volume.
-- **Manage snapshots**: opens the ["Backups" section](#snapshots) of the volume.
-- **Manage IP access (ACL)**: opens the ["Access control list (ACL)" section](#access_control) where you can manage access control for the volume.
-- **Delete the volume**: will delete this volume after confirming the action in the popup window.
+- **Modify the volume**: Opens the ["General information" section](#modify_volume) of the volume.
+- **Create a snapshot**: Opens the ["Backups" section](#snapshots) to take a manual snapshot of the volume.
+- **Manage snapshots**: Opens the ["Backups" section](#snapshots) of the volume.
+- **Manage IP access (ACL)**: Opens the ["Access control list (ACL)" section](#access_control) where you can manage access control for the volume.
+- **Delete the volume**: Will delete this volume after confirming the action in the popup window.
 
 #### Creating a volume <a name="create_volume"></a>
 

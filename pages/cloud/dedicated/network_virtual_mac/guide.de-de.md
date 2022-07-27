@@ -9,7 +9,7 @@ section: 'Netzwerk & IP'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 17.05.2022**
+**Letzte Aktualisierung am 26.07.2022**
 
 ## Ziel
 
@@ -35,6 +35,11 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 ## In der praktischen Anwendung
 
 ### MAC-Adresse zuweisen
+
+> [!warning]
+>
+> Wenn ein IP-Block im vRack umgezogen wurde, dann ist es nicht mehr möglich, einer IP eine virtuelle MAC-Adresse zuzuweisen.
+>
 
 #### Über das OVHcloud Kundencenter
 

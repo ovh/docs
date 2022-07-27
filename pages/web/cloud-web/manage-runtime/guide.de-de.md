@@ -9,7 +9,7 @@ section: Webhosting-Konfiguration
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 04.05.2022**
+**Letzte Aktualisierung am 26.07.2022**
 
 ## Ziel
 
@@ -52,6 +52,7 @@ Es gibt verschiedene Möglichkeiten, um die Runtime Engines Ihres Cloud Web Host
 >
 > Bevor Sie eine Runtime Engine ändern, stellen Sie sicher, dass dadurch keine Webseite oder Anwendung, die diese Engine verwendet, beeinträchtigt wird. Die Anzahl der auf Ihren Runtime Engines basierenden Multisites finden Sie in der Spalte `Anzahl der verbundenen Multisites`. Im Tab `Multisite`{.action} können Sie in der Spalte `Runtime Engines` die von jeder Domain verwendete Runtime Engine ermitteln.
 > 
+> Um die Löschung einer Runtime Engine zu ermöglichen, müssen Multisite-Einträge, die diese verwenden, gelöscht werden.
 
 Um eine Runtime Engine hinzuzufügen oder zu ändern, gehen Sie in den Tab `Runtime Engine`{.action} des betreffenden Cloud Web Hostings:
 

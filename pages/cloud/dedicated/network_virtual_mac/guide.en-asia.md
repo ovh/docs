@@ -5,7 +5,7 @@ excerpt: This guide will show you how to create a virtual MAC address and assign
 section: Network Management
 ---
 
-**Last updated 17th May 2022**
+**Last updated 26th July 2022**
 
 ## Objective
 
@@ -31,6 +31,11 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 ## Instructions
 
 ### Assign a MAC address
+
+> [!warning]
+>
+> If an IP block has been moved to the vRack, it is no longer assigned to a physical server, as such, you cannot assign a virtual MAC address to any IP.
+>
 
 #### Via the OVHcloud Control Panel
 

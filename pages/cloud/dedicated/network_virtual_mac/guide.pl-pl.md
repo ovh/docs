@@ -9,7 +9,7 @@ section: 'Sieć & IP'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 17-05-2022**
+**Ostatnia aktualizacja z dnia 26-07-2022**
 
 ## Wprowadzenie
 
@@ -36,6 +36,11 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 ## W praktyce
 
 ### Przypisanie adresu MAC
+
+> [!warning]
+>
+> Jeśli blok IP został przeniesiony do sieci vRack, nie jest już przypisany do fizycznego serwera w tym celu, nie można przypisać wirtualnego adresu MAC do IP.
+>
 
 #### Za pośrednictwem Panelu klienta OVHcloud
 

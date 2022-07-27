@@ -216,7 +216,7 @@ externalDatabase.database=defaultdb
 externalDatabase.port=20184
 ```
 
-This will install the needed elements (a WordPress pod for the webserver with the Worpdress PHP code),
+This will install the needed elements (a WordPress pod for the webserver with the WordPress PHP code),
 allocate the persistent volumes and initialize the services. And at the end, it will give you the connection parameters for your new WordPress:
 
 <pre class="console"><code>$ helm install my-wordpress bitnami/wordpress --set allowOverrideNone=true,mariadb.enabled=false,externalDatabase.host=mysql-abcdefgh-ijklmnopq.database.cloud.ovh.net,externalDatabase.user=avnadmin,externalDatabase.password=mYStrongPasswOrdHere,externalDatabase.database=defaultdb,externalDatabase.port=20184

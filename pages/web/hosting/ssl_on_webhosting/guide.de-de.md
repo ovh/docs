@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 12.04.2021**
+**Letzte Aktualisierung am 26.07.2022**
 
 Sie haben bei Ihrem Webhosting die Möglichkeit, ein SSL-Zertifikat einzurichten. Das Zertifikat können Sie entweder direkt bei OVHcloud bestellen oder eines auf Ihr Hosting importieren. Sobald das Zertifikat auf Ihrem Webhosting installiert und fertig eingerichtet ist, können Sie eine oder mehrere Ihrer Websites mit einer sicheren SSL-Verbindung und somit über HTTPS betreiben.
 
@@ -24,48 +24,17 @@ Sie haben bei Ihrem Webhosting die Möglichkeit, ein SSL-Zertifikat einzurichten
 
 ## In der praktischen Anwendung
 
-Was die Verwaltung von SSL-Zertifikaten auf Ihrem OVHcloud Webhosting betrifft, gibt es verschiedene mögliche Vorgehensweisen. Wir empfehlen Ihnen, die folgenden Abschnitte nach der für Sie relevanten Methode auszuwählen.
+Es sind mehrere Schritte notwendig, um ein SSL-Zertifikat auf Ihrem OVHcloud-Webhosting zu erstellen. Wir empfehlen Ihnen, die 3 Schritte **in der folgenden Reihenfolge** durchzuführen.
 
-- [SSL-Zertifikat für eine Multisite aktivieren](#multisite): Wenn Ihre Lösung oder Ihr SSL-Zertifikat dies erlauben, können Sie mehrere Ihrer Multisites mit einer sicheren SSL-Verbindung ausstatten.
+- [1. SSL-Zertifikat auf Ihrem Webhosting aktivieren](#enablessl): Dieser Abschnitt hilft Ihnen, ein SSL-Zertifikat auf Ihrem Webhosting zu aktivieren. Dabei kann es sich um ein kostenloses oder kostenpflichtiges Zertifikat handeln, das bei OVHcloud bestellt wurde. Sie können auch Ihr eigenes, bei einem anderen Anbieter bestelltes SSL-Zertifikat importieren.
 
-- [SSL-Zertifikat auf Ihrem Webhosting aktivieren](#enablessl): hilft Ihnen, ein SSL-Zertifikat auf Ihrem Webhosting zu aktivieren. Dabei kann es sich um ein kostenloses oder kostenpflichtiges Zertifikat handeln, das bei OVHcloud bestellt wurde. Sie können auch Ihr eigenes, bei einem anderen Anbieter bestelltes SSL-Zertifikat importieren.
+- [2. SSL-Zertifikat für eine Multisite aktivieren](#multisite): Wenn Ihre Lösung oder Ihr SSL-Zertifikat dies erlauben, können Sie mehrere Ihrer Multisites mit einer sicheren SSL-Verbindung ausstatten.
 
-- [SSL-Zertifikat auf einem Webhosting neu erstellen](#regeneratessl): erlaubt es Ihnen, ein SSL-Zertifikat auf Ihrem Webhosting zu erstellen, wenn Sie SSL auf einer oder mehreren Multisites aktivieren.
+- [3. SSL-Zertifikat auf einem Webhosting neu erstellen](#regeneratessl): Dieser Schitt ermöglicht es, ein SSL-Zertifikat von Let's Encrypt auf Ihrem Webhosting zu erstellen, wenn Sie SSL auf einer oder mehreren Multisites neu aktiviert haben.
 
-- [SSL-Zertifikat auf einem Webhosting löschen](#deletessl): erlaubt es Ihnen, ein SSL-Zertifikat auf Ihrem OVHcloud Webhosting zu löschen. Bitte beachten Sie, dass dies gefährlich sein kann, wenn eine Ihrer Websites das Zertifikat verwendet, das Sie löschen möchten.
+Sie können auch [SSL-Zertifikat auf einem Webhosting löschen](#deletessl). **Bitte beachten Sie, dass dies Risiken bergen kann, wenn eine Ihrer Webseiten das Zertifikat verwendet, das Sie löschen möchten**.
 
-### SSL-Zertifikat für eine Multisite aktivieren <a name="multisite"></a>
-
-Je nach Art des [SSL-Zertifikats](https://www.ovhcloud.com/de/web-hosting/options/ssl/){.external}, das Sie bestellen möchten, können Sie eine sichere SSL-Verbindung für eine oder mehrere Ihrer Multisites aktivieren. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Multisite`{.action}.
-
-Die angezeigte Tabelle listet alle Domains auf, die Ihrem Webhosting zugewiesen sind. Die Spalte "SSL" zeigt Ihnen den Aktivierungsstatus der gesicherten SSL-Verbindungen für Ihre Multisites.
-
-![ssl verwalten](images/manage-ssl-step5.png){.thumbnail}
-
-Es können drei Zustände entstehen:
-
-|Status|Beschreibung|
-|---|---|
-|Aktiviert|Es wurde bereits ein SSL-Zertifikat für diese Multisite aktiviert. Sollte Ihre Seite dennoch nicht via HTTPS verfügbar sein, lesen Sie unsere Anleitung "[Website mit SSL-Zertifikat auf HTTPS umstellen](../website-umstellen-https-ssl/){.external}".|
-|Zu erstellen|Es wurde ein SSL-Zertifikat für diese Multisite aktiviert, es ist aber noch nicht technisch aktiv. Erneuern Sie in diesem Fall das Zertifikat, damit es auch für die neuen Multisite-Domains funktioniert.|
-|Deaktiviert|Es wurde noch kein SSL-Zertifikat für diese Multisite aktiviert. Um es zu aktivieren, folgen Sie den untenstehenden Anweisungen.|
-
-Um SSL für eine Multisite zu aktivieren, klicken Sie rechts neben der betreffenden Multisite auf `...`{.action} und dann auf `Domain bearbeiten`{.action}. Setzen Sie im angezeigten Fenster einen Haken bei `SSL`{.action}. Sie können auch die Option anhaken, um die www-Subdomain gleichzeitig mit dem dazugehörigen Domainnamen zu aktivieren. Folgen Sie den Schritten, bis Sie die Änderung bestätigen.
-
-Sobald Sie die Aktivierungsanfrage eingereicht haben, sollte sich der Zustand der sicheren SSL-Verbindung für die betreffende Multisite innerhalb weniger Sekunden aktualisieren, wobei der Status auf "Zu erstellen" gesetzt wird. Falls Sie für weitere Multisites SSL aktivieren möchten, wiederholen Sie den Vorgang entsprechend.
-
-> [!primary]
->
-> In diesem Zustand können zwei Situationen auftreten:
->
-> - **Sie haben kein Zertifikat.**
-> Lesen Sie die Anleitung unter "[SSL-Zertifikat auf Ihrem Webhosting aktivieren](#enablessl)" und wählen Sie "Kostenloses Zertifikat (Let's Encrypt)", das Multisite-Websites unterstützt.
->
-> - **Das SSL Zertifikat ist aktiv, Sie haben jedoch weitere Multisite-Seiten hinzugefügt.**
-> Lesen Sie diese Anleitung im Bereich [SSL-Zertifikat auf einem Webhosting neu erstellen](#regeneratessl), um das SSL-Zertifikat für die verbleibenden Multisites zu erneuern.
->
-
-### SSL-Zertifikat auf Ihrem Webhosting aktivieren <a name="enablessl"></a>
+### 1. SSL-Zertifikat auf Ihrem Webhosting aktivieren <a name="enablessl"></a>
 
 Bei Ihrem OVHcloud Webhosting haben Sie für die Aktivierung eines [SSL-Zertifikats](https://www.ovh.de/ssl/){.external} verschiedene Optionen:
 
@@ -103,11 +72,47 @@ Je nach Art des gewählten Zertifikats kann die Konfiguration wenige Minuten bis
 
 ![ssl verwalten](images/manage-ssl-step4.png){.thumbnail}
 
-### SSL-Zertifikat für das Webhosting erneuern <a name="regeneratessl"></a>
+### 2. SSL-Zertifikat für eine Multisite aktivieren <a name="multisite"></a>
 
 > [!primary]
 >
-> Dieser Vorgang gilt nur für Zertifikate, die eine sichere SSL-Verbindung für mehrere Multisites aktivieren können.
+> Bevor Sie einem Ihrer Multisite-Einträge das SSL Zertifikat zuweisen, überprüfen Sie, dass Sie zuvor ein SSL Zertifikat auf Ihrem Hosting aktiviert haben. Beachten Sie dazu den [vorherigen Schritt](#enablessl).
+
+Je nach Art des [SSL-Zertifikats](https://www.ovhcloud.com/de/web-hosting/options/ssl/){.external}, das Sie bestellen möchten, können Sie eine sichere SSL-Verbindung für eine oder mehrere Ihrer Multisites aktivieren. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Multisite`{.action}.
+
+Die angezeigte Tabelle listet alle Domains auf, die Ihrem Webhosting zugewiesen sind. Die Spalte "SSL" zeigt Ihnen den Aktivierungsstatus der gesicherten SSL-Verbindungen für Ihre Multisites.
+
+![ssl verwalten](images/manage-ssl-step5.png){.thumbnail}
+
+Es können drei Zustände entstehen:
+
+|Status|Beschreibung|
+|---|---|
+|Aktiviert|Es wurde bereits ein SSL-Zertifikat für diese Multisite aktiviert. Sollte Ihre Seite dennoch nicht via HTTPS verfügbar sein, lesen Sie unsere Anleitung "[Website mit SSL-Zertifikat auf HTTPS umstellen](../website-umstellen-https-ssl/){.external}".|
+|Zu erstellen|Es wurde ein SSL-Zertifikat für diese Multisite aktiviert, es ist aber noch nicht technisch aktiv. Erneuern Sie in diesem Fall das Zertifikat, damit es auch für die neuen Multisite-Domains funktioniert.|
+|Deaktiviert|Es wurde noch kein SSL-Zertifikat für diese Multisite aktiviert. Um es zu aktivieren, folgen Sie den untenstehenden Anweisungen.|
+
+Um SSL für eine Multisite zu aktivieren, klicken Sie rechts neben der betreffenden Multisite auf `...`{.action} und dann auf `Domain bearbeiten`{.action}. Setzen Sie im angezeigten Fenster einen Haken bei `SSL`{.action}. Sie können auch die Option anhaken, um die www-Subdomain gleichzeitig mit dem dazugehörigen Domainnamen zu aktivieren. Folgen Sie den Schritten, bis Sie die Änderung bestätigen.
+
+Sobald Sie die Aktivierungsanfrage eingereicht haben, sollte sich der Zustand der sicheren SSL-Verbindung für die betreffende Multisite innerhalb weniger Sekunden aktualisieren, wobei der Status auf "Zu erstellen" gesetzt wird. Falls Sie für weitere Multisites SSL aktivieren möchten, wiederholen Sie den Vorgang entsprechend.
+
+> [!primary]
+>
+> In diesem Zustand können zwei Situationen auftreten:
+>
+> - **Sie haben kein Zertifikat.**
+> Lesen Sie die Anweisungen unter "[SSL-Zertifikat auf Ihrem Webhosting aktivieren](#enablessl)" und wählen Sie "Kostenloses Zertifikat (Let's Encrypt)", das Multisite-Websites unterstützt.
+>
+> - **Das SSL Zertifikat ist aktiv, Sie haben jedoch weitere Multisite-Seiten hinzugefügt.**
+> Lesen Sie diese Anleitung im Bereich "[SSL-Zertifikat auf einem Webhosting neu erstellen](#regeneratessl)", um das SSL-Zertifikat für die verbleibenden Multisites zu erneuern.
+>
+
+
+### 3. SSL-Zertifikat für das Webhosting erneuern <a name="regeneratessl"></a>
+
+> [!primary]
+>
+> Dieser Vorgang gilt nur für kostenlose Let's Encrypt SSL-Zertifikate [inklusive bei einem kompatiblen Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/options/ssl/), mit denen eine sichere SSL-Verbindung für mehrere Multisites aktiviert werden kann.
 >
 
 Wenn Sie eine gesicherte SSL-Verbindung für eine oder mehrere Ihrer Multisites aktiviert haben, zeigt der Status "Zu erstellen" an. Diese Neuerstellung ist unerlässlich, um die betreffenden Domainnamen zu Ihrem SSL-Zertifikat hinzufügen zu können.
@@ -122,7 +127,7 @@ Bitte beachten Sie, dass Let's Encrypt – die Zertifizierungsstelle, die das in
 
 ![ssl verwalten](images/manage-ssl-step8.png){.thumbnail}
 
-### SSL-Zertifikat auf einem Webhosting löschen <a name="deletessl"></a>
+###  SSL-Zertifikat auf einem Webhosting löschen <a name="deletessl"></a>
 
 Sie können auch ein auf Ihrem Webhosting installiertes SSL-Zertifikat löschen. Bevor Sie mit Änderungen beginnen, **empfehlen wir Ihnen dringend, sicherzustellen, dass Ihre Websites durch das Löschen des Zertifikats nicht unzugänglich werden**. Denken Sie daran, dass Ihre Benutzer auf einen Sicherheitsfehler stoßen, wenn sie versuchen, auf eine Website zuzugreifen, die mit HTTPS betrieben wird, aber über keine sichere SSL-Verbindung verfügt.
 
