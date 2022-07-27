@@ -24,13 +24,13 @@ Sie haben bei Ihrem Webhosting die Möglichkeit, ein SSL-Zertifikat einzurichten
 
 ## In der praktischen Anwendung
 
-Es sind mehrere Schritte notwendig, um ein SSL-Zertifikat auf Ihrem OVHcloud-Webhosting zu erstellen. Wir empfehlen Ihnen, die folgenden 3 Schritte **in der Reihenfolge** zu befolgen.
+Es sind mehrere Schritte notwendig, um ein SSL-Zertifikat auf Ihrem OVHcloud-Webhosting zu erstellen. Wir empfehlen Ihnen, die 3 Schritte **in der folgenden Reihenfolge** durchzuführen.
 
-- [1. SSL-Zertifikat auf Ihrem Webhosting aktivieren](#enablessl): hilft Ihnen, ein SSL-Zertifikat auf Ihrem Webhosting zu aktivieren. Dabei kann es sich um ein kostenloses oder kostenpflichtiges Zertifikat handeln, das bei OVHcloud bestellt wurde. Sie können auch Ihr eigenes, bei einem anderen Anbieter bestelltes SSL-Zertifikat importieren.
+- [1. SSL-Zertifikat auf Ihrem Webhosting aktivieren](#enablessl): Dieser Abschnitt hilft Ihnen, ein SSL-Zertifikat auf Ihrem Webhosting zu aktivieren. Dabei kann es sich um ein kostenloses oder kostenpflichtiges Zertifikat handeln, das bei OVHcloud bestellt wurde. Sie können auch Ihr eigenes, bei einem anderen Anbieter bestelltes SSL-Zertifikat importieren.
 
 - [2. SSL-Zertifikat für eine Multisite aktivieren](#multisite): Wenn Ihre Lösung oder Ihr SSL-Zertifikat dies erlauben, können Sie mehrere Ihrer Multisites mit einer sicheren SSL-Verbindung ausstatten.
 
-- [3. SSL-Zertifikat auf einem Webhosting neu erstellen](#regeneratessl): erlaubt es Ihnen, ein SSL-Zertifikat Let's Encrypt auf Ihrem Webhosting zu erstellen, wenn Sie SSL auf einer oder mehreren Multisites aktivieren.
+- [3. SSL-Zertifikat auf einem Webhosting neu erstellen](#regeneratessl): Dieser Schitt ermöglicht es, ein SSL-Zertifikat von Let's Encrypt auf Ihrem Webhosting zu erstellen, wenn Sie SSL auf einer oder mehreren Multisites neu aktiviert haben.
 
 Sie können auch [SSL-Zertifikat auf einem Webhosting löschen](#deletessl). **Bitte beachten Sie, dass dies Risiken bergen kann, wenn eine Ihrer Webseiten das Zertifikat verwendet, das Sie löschen möchten**.
 
