@@ -5,7 +5,7 @@ excerpt: Intégrez vos services web derrière un Load Balancer avec les en-tête
 section: Configuration
 ---
 
-**Dernière mise à jour le à 24/03/2022**
+**Dernière mise à jour le à 27/07/2022**
 
 ## Objectif
 
@@ -217,7 +217,7 @@ Cliquez sur le bouton `Mettre à jour`{.action} une fois les en-têtes configur�
 
 Dans l'API, les en-têtes sont spécifiées dans une liste httpHeader. À la différence de l'espace client OVHcloud, chaque en-tête doit être dans sa propre entrée de la liste. 
 
-Dans la console de l'API OVHcloud, un bouton `+`{.action} est disponible dès que vous commencez à spécifier une valeur afin d'ajouter un nouveau champ dans la liste. 
+Dans la console de l'API OVHcloud, un bouton `+`{.action} est disponible dès que vous commencez à spécifier une valeur, afin d'ajouter un nouveau champ dans la liste. 
 
 ![Configuration des en-têtes HTTP d'un Frontend](images/add_headers_with_api.png){.thumbnail}
 
