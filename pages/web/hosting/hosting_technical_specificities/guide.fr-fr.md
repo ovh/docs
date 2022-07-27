@@ -32,7 +32,7 @@ order: 6
 
 - Les connexions FTP doivent utiliser le **mode passif**. Assurez-vous que votre script ou votre client FTP est ajusté en conséquence.
 
-### E-mails <a name=emails></a>
+### E-mails <a name="emails"></a>
 
 Pour garantir une bonne qualité de service pour tous et fluidifier l'envoi de vos e-mails vers vos destinataires, nous appliquons des quotas concernant nos services d'hébergement web.
 
@@ -133,7 +133,7 @@ Remplacez le cluster indiqué dans l'URL par le vôtre. Pour savoir sur quel clu
 
 Pour connaitre les spécificités technique de l'offre Cloud Web, dirigez-vous directement vers le lien <https://cloudweb-infos.hosting.ovh.net/>.
 
-### Informations sur les sauvegardes automatiques <a name=“backup”></a>
+### Informations sur les sauvegardes automatiques <a name="backup"></a>
 
 > [!warning]
 >
