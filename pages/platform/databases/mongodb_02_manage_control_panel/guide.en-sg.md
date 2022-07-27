@@ -1,92 +1,101 @@
 ---
-title: MongoDB - Managing a database service from the OVHcloud Control Panel
-excerpt: Find out how to manage your databases in the OVHcloud Control Panel
+title: MongoDB - Configure your MongoDB instance to accept incoming connections
+excerpt: Find out how to configure your MongoDB instance to accept incoming connections
 slug: mongodb/managing-service
 section: MongoDB - Guides
-order: 2
+order: 020
 ---
 
-**Last updated 1st February 2022**
+**Last updated 27<sup>th</sup> July 2022**
 
 ## Objective
 
-The subscription and configuration details of your MongoDB databases can be managed in the OVHcloud Control Panel.
+Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-**This guide explains how to configure a MongoDB service in the OVHcloud Control Panel.**
+**This guide explains how to configure your MongoDB instance to accept incoming connections.**
 
 ## Requirements
 
-- A MongoDB database service in your OVHcloud account (find the details in [this guide](https://docs.ovh.com/sg/en/publiccloud/databases/getting-started/))
+- A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/sg/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
+### Configure your MongoDB instance to accept incoming connections
+
+Before making a connection, we need to verify that our MongoDB instance is correctly configured.
+
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your MongoDB instance.
+
+#### Step 1: Verify your user roles and password
+
+Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
+
+We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/){.external} to select the right roles for your use case.
+
+In our example, we will create a user called *user* with the roles *readWriteAnyDatabase* and *userAdminAnyDatabase*.
+
+![User Creation](images/mongodb_02_manage_control_panel-20220727141804751.png){.thumbnail}
+
+Once created or updated, note the password then after a few seconds check to verify the user is ready and with the "Enabled" status in the OVHcloud Control Panel.
+
+![User ready](images/mongodb_02_manage_control_panel-20220727142321150.png){.thumbnail}
+
+#### Step 2: Authorise incoming connections from the MongoDB client
+
+In this step, select the `Authorised IP's`{.action} tab (Access Control List).
+By default, a Public Cloud Database does not accept any form of connection from the outside world.
+This way we can help prevent intrusive connection attempts.
+
+Click to authorise a new IP. In our case we will enter 109.190.200.59:
+
+![Add an IP](images/ip_authorize.png){.thumbnail}
 
 > [!primary]
-> Note that the configuration options might be different for other database types.
+>
+> If you want to allow any connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully. Every IP will be authorised.
+>
 
-### Databases overview
+### Get your connection information (URI)
 
-On the **Databases** home page, a table will list your services and their attributes.
+Select the `General Information`{.action} tab. In the **Login Information** section, copy the Service URI.
 
-![All databases](images/configure_mongo01.png){.thumbnail}
+You can specify the MongoDB connection string using either:
 
-The button `Create a database`{.action} starts the process of ordering a [new database service](https://docs.ovh.com/sg/en/publiccloud/databases/getting-started/).
+- the Standard Connection String Format *(service: mongodb)*.
+- the DNS Seed List Connection Format *(service: mongodbSrv)*.
 
-You can remove a service by clicking on the `...`{.action} button and then on `Delete`{.action}.
+![MongoDB General Information](images/mongodb_02_manage_control_panel-20220727113110757.png){.thumbnail}
 
-### General information
+> [!primary]
+>
+> MongoDB 3.6 introduced the concept of a seed list that is specified using DNS records, specifically SRV and TXT records. This allows a client to connect to a replica set even if one of the nodes that the client specifies is unavailable.
+>
+> The use of SRV records eliminates the requirement for every client to pass in a complete set of state information for the cluster. Instead, a single SRV record identifies all the nodes associated with the cluster (and their port numbers) and an associated TXT record defines the options for the URI.
+>
+> *Learn more [here](https://www.mongodb.com/docs/manual/reference/connection-string/)*.
+>
 
-After selecting your service, the `General information`{.action} tab displays the technical details of your plan as well as some subscription information.
+> [!tabs]
+> mongodb
+>> It should be similar to this when you have a single node (Essential service plan):
+>> ```
+>> mongodb://<username>:<password>@<hostname>/admin?tls=true
+>> ```
+>> And like this when you have a MongoDB cluster with multiple nodes, called a replica set (Business or Enterprise service plans):
+>> ```
+>> mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true
+>> ```
+> mongodbSrv
+>> It should be similar to this:
+>> ```
+>> mongodb+srv://<username>:<password>@mongodb-d5674315-o2626ab53.database.cloud.ovh.net/admin?replicaSet=replicaset
+>> ```
 
-![General information](images/configure_mongo02.png){.thumbnail}
+Select the `Users`{.action} tab to get the username or reset a user password.
 
-At the bottom of the page you can find **Login information** for your database; click on the respective links to copy/paste the strings for *mongo shell* or for use with an application.
-
-#### **Adding nodes**
-
-Click on `Add nodes`{.action} in the **Information** box. The number of nodes you can add depends on the service plan. Please visit the [MongoDB capabilities page](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/capabilities/) for detailed information on each plan's properties.
-
-### Managing users and roles
-
-Switch to the tab `Users`{.action}. An admin user is pre-configured during the service installation.
-
-![Users](images/configure_mongo03.png){.thumbnail}
-
-You can add more users by clicking on the button `Add user`{.action}.
-
-![Add users](images/configure_mongo04.png){.thumbnail}
-
-Enter a username and a password, then click `Next`{.action}. Passwords can be changed afterwards in the `Users`{.action} tab.
-
-![Roles](images/configure_mongo05.png){.thumbnail}
-
-In the second step, select the roles for this user from the left-hand section. Click on `Create user`{.action} when all desired roles are listed on the right-hand side.
-
-### Using backups
-
-Switch to the tab `Backups`{.action}. Backups will be created automatically, using a scheme based on the service plan. Please visit the [MongoDB capabilities page](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/capabilities/) for detailed information on each plan's properties.
-
-![Backups](images/configure_mongo06.png){.thumbnail}
-
-You can restore and delete backups via the `...`{.action} button.
-
-### Configuring authorised IPs
-
-> [!warning]
-> For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorise the suitable IP addresses in order to successfully access your database.
-
-Switch to the tab `Authorised IPs`{.action}. IP addresses must be authorise here before they can connect to your database.
-
-![Authorised IP](images/configure_mongo07.png){.thumbnail}
-
-Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new window in which you can add single IP addresses or blocks to allow access to the database.
-
-![Add IP](images/configure_mongo08.png){.thumbnail}
-
-You can edit and retract database access via the `...`{.action} button in the IP table.
-
+![Users tab](images/mongodb_02_manage_control_panel-20220727113850144.png){.thumbnail}
 
 ## Go further
 

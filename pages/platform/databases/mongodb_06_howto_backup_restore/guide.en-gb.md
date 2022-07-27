@@ -3,10 +3,10 @@ title: MongoDB - Backups and Restores with the CLI
 slug: mongodb/backups-and-restores-cli
 excerpt: Find out how to back up and restore your Public Cloud Databases for MongoDB database using the CLI
 section: MongoDB - Guides
-order: 4
+order: 070
 ---
 
-**Last updated December 13<sup>th</sup>, 2021**
+**Last updated 27<sup>th</sup> July 2022**
 
 ## Objective
 
@@ -16,9 +16,10 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
-- An up and running Public Cloud Database for MongoDB.
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- [Configure your MongoDB instance](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/managing-service/) to accept incoming connections
 
 ## Concept
 
@@ -40,17 +41,10 @@ Back up your database to a file using:
 
 ```bash
 $ mongodump --gzip --archive=path/to/backup.gz --readPreference=secondaryPreferred \
-  --uri="mongodb://<username>:<password>@<hostname>/admin?tls=true"
+  --uri="mongodb+srv://<username>:<password>@mongodb-e49d02ee-o2626ab53.database.cloud.ovh.net/admin?replicaSet=replicaset"
 ```
 
-If your cluster is e.g. a 3-node replica set, the command might look more like: 
-
-```bash
-$ mongodump --gzip --archive=path/to/backup.gz --readPreference=secondaryPreferred \
-  --uri="mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true"
-```
-
-The MongoDB user needs to have sufficient privileges to perform the backup operation. This can be ensured by giving this user the `backup` role. 
+The MongoDB user needs to have sufficient privileges to perform the backup operation. This can be ensured by giving this user the `backup` role.
 
 This operation might take some time - from a few seconds to a few hours, depending on the amount of data your database holds and your network connection. Once it completes, the file `path/to/backup.gz` will hold a backup of your data.
 
@@ -66,21 +60,15 @@ This operation might take some time - from a few seconds to a few hours, dependi
 > `mongorestore` merges data
 >
 > After the restore operation, any data that was stored in your database which isn't also part of the backup file (e.g. other collections or other keys) will be left untouched: That is to say, `mongorestore` merges data from your backup file with preexisting data in the database.
-> 
+>
 
 Restore your database from a backup using:
 
 ```bash
 $ mongorestore --gzip --archive=path/to/backup.gz \
-  --uri="mongodb://<username>:<password>@<hostname>/admin?tls=true"
+  --uri="mongodb+srv://<username>:<password>@mongodb-e49d02ee-o2626ab53.database.cloud.ovh.net/admin?replicaSet=replicaset"
 ```
 
-Again, if your cluster is e.g. a 3-node replica set, the command might look more like:
-
-```bash
-$ mongorestore --gzip --archive=path/to/backup.gz \
-  --uri="mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true"
-```
 
 The MongoDB user needs to have sufficient privileges to perform the restore operation. This can be ensured by giving this user the `restore` role.
 
