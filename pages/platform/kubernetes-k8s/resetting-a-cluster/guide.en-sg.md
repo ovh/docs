@@ -5,7 +5,7 @@ slug: resetting-a-cluster
 section: User guides
 ---
 
-**Last updated September 5th, 2019.**
+**Last updated July 27th, 2022.**
 
 <style>
  pre {
@@ -42,38 +42,41 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 ## Instructions
 
-### Step 1 - Ask for cluster reset on the OVH Cloud Manager 
+### Step 1 - Ask for cluster reset on the OVHcloud Control Plane 
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
-![Access to the administration UI](images/resetting_a_cluster-01.jpg){.thumbnail}
+Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 
+![List your Kubernetes clusters](images/clusters.png){.thumbnail}
 
-In the *Services* tab of the administration UI, click on the button on the *Status* section, and choose to reset the configuration of the cluster. 
+Click on your Kubernetes cluster.
 
+![Access to the administration UI](images/resetting_a_cluster-01.png){.thumbnail}
 
-![Reset the configuration of the cluster](images/resetting_a_cluster-02.jpg){.thumbnail}
+In the *Service* tab of the administration UI, click on *Reset your cluster*.
 
 
 ### Step 2 - Choose the type of reset you want
 
 You have two options on the reset menu, *Delete* and *Reinstall*. 
 
-- Choosing *Delete* means that the current cluster nodes are deleted, and the cluster is reinitialized to an empty state.
+- Choosing *Delete nodes* means that the current cluster nodes are deleted, and the cluster is reinitialized to an empty state.
 
-- Choosing *Reinstall* means that the cluster is reinitialized without destroying the nodes.
+- Choosing *Keep and reinstall nodes* means that the cluster is reinitialized without destroying the nodes.
 
+![Choose the type of reset you want](images/resetting_a_cluster-03.png){.thumbnail}
 
-![Choose the type of reset you want](images/resetting_a_cluster-03.jpg){.thumbnail}
+You can also choose the minor version of the cluster and the private network attached.
 
+Click on the `Confirm`{.action} button to continue.
 
 
 ### Step 3 - Wait for the resetting to end 
 
 Depending on the chosen kind of reset, the process can take several minutes. During that time, a message on the manager warns you that the cluster is under resetting:
 
-
-![Choose the type of reset you want](images/resetting_a_cluster-03.jpg){.thumbnail}
+![resetting](images/resetting_a_cluster-04.png){.thumbnail}
 
 
 ## Go further
