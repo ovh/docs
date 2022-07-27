@@ -5,7 +5,7 @@ excerpt: Intégrez vos services web derrière un Load Balancer avec les en-tête
 section: Configuration
 ---
 
-**Dernière mise à jour le à 24/03/2022**
+**Dernière mise à jour le à 27/07/2022**
 
 ## Objectif
 
@@ -209,7 +209,7 @@ Dans la section `Frontends`{.action} de votre espace client OVHcloud, choisissez
 
 Si vous souhaitez configurer plusieurs en-têtes, ceux-ci doivent être séparés par des virgules *sans espaces*. Par exemple, vous pouvez créer les en-têtes suivants: `X-Ip-Header %ci,X-Port-Header %cp`.
 
-![Configuration des en-têtes HTTP d'un Frontend](images/add_headers.png){.thumbnail}
+![Configuration des en-têtes HTTP d'un Frontend via ovh manager API](images/add_headers.png){.thumbnail}
 
 Cliquez sur le bouton `Mettre à jour`{.action} une fois les en-têtes configurés puis sur `Déployer la zone: VOTRE ZONE`{.action} pour appliquer vos changements dans la zone concernée.
 
@@ -217,7 +217,11 @@ Cliquez sur le bouton `Mettre à jour`{.action} une fois les en-têtes configur�
 
 Dans l'API, les en-têtes sont spécifiées dans une liste httpHeader. À la différence de l'espace client OVHcloud, chaque en-tête doit être dans sa propre entrée de la liste. 
 
-Dans la console de l'API OVHcloud, un bouton `+`{.action} est disponible dès que vous commencez à spécifier une valeur afin d'ajouter un nouveau champ dans la liste. Si vous utilisez l'API dans votre code, cela correspond à une liste json telle que :
+Dans la console de l'API OVHcloud, un bouton `+`{.action} est disponible dès que vous commencez à spécifier une valeur, afin d'ajouter un nouveau champ dans la liste. 
+
+![Configuration des en-têtes HTTP d'un Frontend](images/add_headers_with_api.png){.thumbnail}
+
+Si vous utilisez l'API dans votre code, cela correspond à une liste json telle que :
 
 
 ```json
