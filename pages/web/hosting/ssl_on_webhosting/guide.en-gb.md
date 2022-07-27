@@ -74,7 +74,7 @@ Certificate setup may take between several minutes and several days, depending o
 
 > [!primary]
 >
-> Before assigning the SSL certificate to one of your multisite records, make sure that you have already activated an SSL certificate on your hosting plan. To do this, see [previous step](#enablessl).
+> Before assigning the SSL certificate to one of your multisites, make sure that you have already activated an SSL certificate on your hosting plan. To do this, see the [previous step](#enablessl).
 
 Depending on which [SSL certificate](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/){.external} you would like to order, you can activate a secure SSL connection on one or more of your multisites. To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `Multisite`{.action} tab.
 
@@ -90,7 +90,7 @@ There are three status types that may appear:
 |To generate|An SSL certificate has been activated for this website, but it is still not technically active. To activate the SSL certificate properly, you will need to [regenerate the certificate](#regeneratessl), in order to include the new domain names.|
 |Disabled|An SSL certificate has not been activated for this multisite. To activate it, follow the steps listed below.|
 
-To activate SSL on a multisite, click on `...`{.action} icon to the right of the multisite concerned, then `Modify domain`{.action}. In the window that pops up, tick the `SSL`{.action} box. You can also tick the option to modify the www subdomain at once if you modify its proper domain name. Then follow the steps until you confirm the change.
+To activate SSL on a multisite, click on `...`{.action} icon to the right of the multisite concerned, then `Modify domain`{.action}. In the window that pops up, tick the `SSL`{.action} box. You can also tick the option to include the www subdomain when you modify the corresponding domain name. Then follow the steps until you confirm the change.
 
 ![managessl](images/manage-ssl-step6.png){.thumbnail}
 
