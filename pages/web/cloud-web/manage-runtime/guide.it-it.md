@@ -9,7 +9,7 @@ section: 'Configurazione dell’hosting'
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 04/05/2022**
+**Ultimo aggiornamento: 27/07/2022**
 
 ## Obiettivo
 
@@ -52,6 +52,7 @@ La gestione dei motori di esecuzione di un hosting Cloud Web comprende diverse o
 >
 > Prima di modificare un motore di esecuzione, assicurati che l’operazione non abbia impatto sulla raggiungibilità dei siti e delle applicazioni che lo utilizzano. I multisiti che si basano sui motori di esecuzione sono disponibili nella colonna `Numero di multisiti associati`. Nella scheda `Multisito`{.action}, nella colonna `Motore di esecuzione` della tabella, è inoltre possibile visualizzare il motore utilizzato per ogni dominio. .
 > 
+> Per eliminare un programma d'esecuzione, è necessario eliminare i record multisito che utilizzano il programma.
 
 Per aggiungere o modificare un motore di esecuzione, seleziona l’hosting Cloud Web in questione e clicca sulla scheda `Motori di esecuzione`{.action}. A questo punto: 
 
