@@ -5,7 +5,7 @@ excerpt: 'So konfigurieren Sie einen öffentlichen IP-Adressblock im vRack'
 section: vRack
 ---
 
-**Letzte Aktualisierung am 23.03.2022**
+**Letzte Aktualisierung am 26.07.2022**
 
 ## Einleitung
 
@@ -35,6 +35,13 @@ Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/
 >
 
 ### IP-Block zum vRack hinzufügen
+
+> [!warning]
+>
+> Wenn ein IP-Block zum vRack hinzugefügt wird, ist er nicht mehr an einen physischen Server gebunden.
+>
+> Mit dieser Konfiguration können IP-Adressen eines Blocks auf mehreren Servern konfiguriert werden, sofern sich alle Server im selben vRack befinden wie der IP-Block. Der IP-Block muss über mindestens 2 IP-Adressen oder mehr verfügen, damit dies möglich ist.
+>
 
 Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf `Network`{.action}. Öffnen Sie anschließend das Menü `vRack`{.action}.
 

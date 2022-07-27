@@ -5,7 +5,7 @@ excerpt: 'Saiba como configurar um bloco de endereços IP públicos no vRack'
 section: vRack
 ---
 
-**Última atualização: 23/03/2022**
+**Última atualização: 26/07/2022**
 
 ## Objetivo
 
@@ -35,6 +35,13 @@ Além do direcionamento IP privado, o [vRack](https://www.ovh.pt/solucoes/vrack/
 >
 
 ### Adicionar o bloco IP ao vRack
+
+> [!warning]
+>
+> Quando um bloco IP é adicionado ao vRack, este deixa de estar ligado a um servidor físico.
+>
+> Esta configuração permite configurar endereços IP de um mesmo bloco em vários servidores, desde que todos estejam no mesmo vRack que o bloco IP. O bloco IP deve ter pelo menos 2 endereços IP utilizáveis ou mais para que isso seja possível.
+>
 
 Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e clique em `Network`{.action}. A seguir, abra o menu `vRack` {.action}.
 

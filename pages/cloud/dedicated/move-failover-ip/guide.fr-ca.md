@@ -46,6 +46,8 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 >
 > D’autre part, les blocs contenant des adresses MAC virtuelles en double ne peuvent pas être déplacés. Vous devez d'abord supprimer l'adresse MAC virtuelle en double sur le bloc à déplacer.
 >
+> Si un bloc IP est déplacé/ajouté dans le vRack, il n’est plus lié à un serveur physique. Dans ce cas, toute adresse MAC virtuelle sera perdue pendant le transfert.
+>
 
 ### Déplacer une IP depuis l'espace client OVHcloud
 
