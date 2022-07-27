@@ -1,7 +1,7 @@
 ---
 title: Resize an instance
 slug: resize-an-instance-manager
-excerpt: "Find out how to resize an instance in the OVHcloud Manager"
+excerpt: Find out how to resize an instance in the OVHcloud Manager
 section: Management via Control Panel
 order: 6
 ---
