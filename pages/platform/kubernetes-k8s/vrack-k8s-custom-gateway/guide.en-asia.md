@@ -29,8 +29,6 @@ section: Network
 
 **Last updated 25th July 2022**
 
-# How to use a custom gateway deployed in vRack with a Managed Kubernetes cluster
-
 ## Objectives
 
 In this tutorial we are going use a custom gateway deployed in vRack with a Managed Kubernetes cluster.
@@ -43,6 +41,7 @@ So we have as many output IPs as Nodes. This can be a problem when you are in a 
 One solution is to use a custom gateway which will allow you to have a single output IP (your gateway).
 
 You will:
+
 - create a private network
 - create subnets
 - create an OpenStack router (in every regions) and link them to the external provider network and the subnets
@@ -116,12 +115,10 @@ You should have a `utils` folder with three files:
 
 Load variables:
 
-> [!tabs]
-> Bash
->> ```bash
->> . utils/openrc
->> . utils/ovhAPI.properties
->> ``` 
+```bash 
+. utils/openrc
+. utils/ovhAPI.properties
+```
 
 Get your OpenStack Tenant ID and store it into the serviceName variable.
 
@@ -511,9 +508,11 @@ root@debian:/# curl ifconfig.me
 
 The IP address of our Pod is indeed that of our gateway!
 
-## Purge
+## Cleanup
 
-### Kube cluster
+To delete created resources, please follow these instructions:
+
+### Kubernetes cluster
 > [!tabs]
 > Bash
 >> ```bash
