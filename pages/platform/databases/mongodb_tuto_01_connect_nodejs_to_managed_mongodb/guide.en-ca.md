@@ -21,43 +21,11 @@ In this tutorial, we will use the Node.js platform to build a **real-time chat a
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
-- A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account.
-- An up and running Public Cloud Database for MongoDB.
+- A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/ca/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- [Configure your MongoDB instance](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/managing-service/) to accept incoming connections
 - A [NodeJS working environment](https://nodejs.dev/learn/how-to-install-nodejs) and public network connectivity (Internet). This tutorial was made using NodeJS LTS 16.14.0.
-
-## Configure your MongoDB instance to accept incoming connections
-
-Before making a connection, we need to verify that our MongoDB instance is correctly configured.
-
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, and select your MongoDB instance.
-
-### Step 1: Verify your user roles and password
-
-Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
-
-We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/){.external} to select the right roles for your use case.
-
-In our example, we will simply reset the **admin** password.
-
-Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
-
-![User ready](images/mongodb_tuto_01_connect_nodejs_to_managed_mongodb-20220215135329218.png){.thumbnail}
-
-### Step 2: Authorise incoming connections from the MongoDB client
-
-In this step, select the `Authorised IPs`{.action} tab (Access Control List).
-By default, a Public Cloud Database does not accept any form of connection from the outside world.
-This way we can help prevent intrusive connection attempts.
-
-Click to authorise a new IP, and enter the previously found IP of your PHP environment or Web Hosting plan. In our case we will enter 109.190.200.59.
-
-![Add an IP](images/ip_authorize.png){.thumbnail}
-
-> [!primary]
->
-> If you want to allow connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
->
 
 ## Instructions
 
@@ -215,26 +183,10 @@ Inside server.js we will require Mongoose:
 var mongoose = require('mongoose');
 ```
 
-From the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), select the `General Information`{.action} tab. In the `Login Informations` section, copy the `Service URI`.
-
-It should be similar to this when you have a single node (Essential service plan):
-
-```
-mongodb://<username>:<password>@<hostname>/admin?tls=true
-```
-
-And like this when you have a MongoDB cluster with multiple nodes, called a replica set (Business or Enterprise service plans) :
-
-```
-mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true
-```
-
-Here we will use a MongoDB cluster.
-
-And we will assign a variable, the `Service URI` of our MongoDB instance database.
+We will assign a variable, the `Service URI` of our MongoDB instance database.
 
 ```javascript
-var dbUrl = 'mongodb://<username>:<password>@<host>/admin?replicaSet=replicaset&tls=true'
+var dbUrl = 'mongodb+srv://<username>:<password>@mongodb-e49d02ee-o2626ab53.database.cloud.ovh.net/admin?replicaSet=replicaset'
 ```
 
 Mongoose will connect to the MongoDB database with the connect method:
@@ -508,7 +460,7 @@ var Message = mongoose.model('Message',{
   message : String
 })
 
-var dbUrl = 'mongodb://<username>:<password>@node1-702de32b87554329.database.cloud.ovh.net/admin?replicaSet=replicaset&tls=true'
+var dbUrl = 'mongodb+srv://<username>:<password>@mongodb-e49d02ee-o2626ab53.database.cloud.ovh.net/admin?replicaSet=replicaset'
 
 app.get('/messages', (req, res) => {
   Message.find({},(err, messages)=> {
