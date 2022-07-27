@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 04/03/2021**
+**Última atualização: 26/07/2022**
 
 ## Sumário
 
@@ -26,46 +26,15 @@ O seu alojamento web permite-lhe gerir um certificado SSL. Podem encomendá-lo a
 
 ## Instruções
 
-Existem várias formas de gerir um certificado SSL no seu alojamento web da OVHcloud. Recomendamos que consulte os capítulos e se concentre no método que quiser adotar.
+São necessários vários passos para gerar um certificado SSL no seu alojamento web da OVHcloud. Recomendamos que siga *por esta ordem* os 3 passos descritos abaixo.
 
-- [Ativar um certificado SSL num multi-site](#multisite): se a sua solução ou o seu certificado SSL o permitirem, poderá fazer beneficiar vários dos seus multi-sites de uma ligação protegida SSL.
+- [1. Ativar um certificado SSL no seu alojamento web](#enablessl): ajuda-o a ativar um certificado SSL no seu alojamento web. Pode tratar-se de um certificado gratuito ou pago encomendado junto da OVHcloud. Também pode importar o seu próprio certificado SSL encomendado junto de outro fornecedor.
 
-- [Ativar um certificado SSL no seu alojamento web](#enablessl): ajuda-o a ativar um certificado SSL no seu alojamento web. Pode tratar-se de um certificado gratuito ou pago encomendado junto da OVHcloud. Também pode importar o seu próprio certificado SSL encomendado junto de outro fornecedor.
+- [2. Ativar um certificado SSL num multi-site](#multisite): se a sua solução ou o seu certificado SSL o permitirem, poderá fazer beneficiar vários dos seus multi-sites de uma ligação protegida SSL.
 
-- [Gerar um certificado SSL num alojamento web](#regeneratessl): permite-lhe gerar um certificado SSL no seu alojamento web quando ativar o SSL num ou vários multi-sites.
+- [3. Gerar um certificado SSL num alojamento web](#regeneratessl): permite-lhe gerar um certificado SSL Let's Encrypt no seu alojamento web quando ativar o SSL num ou vários multi-sites.
 
-- [Eliminar um certificado SSL num alojamento web.](#deletessl): permite-lhe eliminar um certificado SSL no seu alojamento web da OVHcloud. Tenha em conta que isto pode apresentar riscos se um dos seus websites utiliza atualmente o certificado que pretende eliminar.
-
-### Ativar um certificado SSL num multisite <a name="multisite"></a>
-
-Em função do [certificado SSL ](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external}que pretende encomendar, pode ativar uma ligação SSL segura num ou vários dos seus multi-sites. Para isso, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Por fim, clique no separador `Multisite`{.action}.
-
-Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento web. A coluna "SSL" mostra-lhe o estado de ativação das ligações SSL seguras nos seus multi-sites.
-
-![managessl](images/manage-ssl-step5.png){.thumbnail}
-
-Neste caso, podem surgir três estados:
-
-|Estados|Descrição|
-|---|---|
-|Ativado|Um certificado SSL já foi ativado para este multisite. No entanto, se o seu website não estiver disponível em HTTPS, consulte as instruções indicadas no nosso manual “[Ativar o HTTPS num website com certificado SSL](../ativar-https-website-certificado-ssl/){.external}”.|
-|A gerar / atualizar|Um certificado SSL foi ativado para este multisite, mas ainda não está ativo a nível técnico. Para isso, deverá regenerá-lo para que inclua os novos domínios do multisite.|
-|Desativado|Não foi ativado nenhum certificado SSL para este multisite. Para o ativar, siga os passo abaixo.|
-
-Para ativar o SSL num multi-site, clique no botão `...`{.action} à direita do multi-site em causa e, a seguir, em `Alterar o domínio`{.action}. Na nova janela, selecione a caixa `SSL`{.action}. Também pode ativar a opção para modificar o subdomínio www ao mesmo tempo que o nome de domínio associado. Siga os passos para confirmar a alteração.
-
-Uma vez que tenha submetido o pedido de ativação, o estado da ligação protegida SSL para o multi-site em causa deve ser atualizado ao fim de alguns segundos, sendo o estado substituído por "A gerar / atualizar". Repita este processo se pretender ativar um certificado SSL para outros multisites.
-
-> [!primary]
->
-> Pode ter duas situações neste estado:
->
-> - **Não possui certificados.**
-> Consulte este guia na secção [Ativar um certificado SSL no alojamento web](#enablessl) e escolha o "Certificado gratuito (Let's Encrypt)" que trata dos sites multi-sites.
->
-> - **O certificado SSL está ativo, mas adicionou outros sites multi-site.**
-> Consulte este manual na secção [Gerar um certificado SSL num alojamento Web](#regeneratessl) para regenerar o certificado SSL para os multi-sites restantes.
->
+Também pode [eliminar o certificado SSL num alojamento web](#deletessl). **Tenha em conta que isto pode apresentar riscos se um dos seus websites utiliza atualmente o certificado que pretende eliminar**.
 
 ### Ativar um certificado SSL no alojamento web <a name="enablessl"></a>
 
@@ -105,11 +74,46 @@ A configuração do certificado pode demorar alguns minutos ou vários dias, dep
 
 ![managessl](images/manage-ssl-step4.png){.thumbnail}
 
+### Ativar um certificado SSL num multisite <a name="multisite"></a>
+
+> [!primary]
+>
+> Antes de atribuir o certificado SSL a uma das suas entradas multisite, certifique-se de que ativou previamente um certificado SSL no seu alojamento. Para isso, consulte o passo anterior.
+
+Em função do [certificado SSL ](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external}que pretende encomendar, pode ativar uma ligação SSL segura num ou vários dos seus multi-sites. Para isso, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Por fim, clique no separador `Multisite`{.action}.
+
+Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento web. A coluna "SSL" mostra-lhe o estado de ativação das ligações SSL seguras nos seus multi-sites.
+
+![managessl](images/manage-ssl-step5.png){.thumbnail}
+
+Neste caso, podem surgir três estados:
+
+|Estados|Descrição|
+|---|---|
+|Ativado|Um certificado SSL já foi ativado para este multisite. No entanto, se o seu website não estiver disponível em HTTPS, consulte as instruções indicadas no nosso manual “[Ativar o HTTPS num website com certificado SSL](../ativar-https-website-certificado-ssl/){.external}”.|
+|A gerar / atualizar|Um certificado SSL foi ativado para este multisite, mas ainda não está ativo a nível técnico. Para isso, deverá regenerá-lo para que inclua os novos domínios do multisite.|
+|Desativado|Não foi ativado nenhum certificado SSL para este multisite. Para o ativar, siga os passo abaixo.|
+
+Para ativar o SSL num multi-site, clique no botão `...`{.action} à direita do multi-site em causa e, a seguir, em `Alterar o domínio`{.action}. Na nova janela, selecione a caixa `SSL`{.action}. Também pode ativar a opção para modificar o subdomínio www ao mesmo tempo que o nome de domínio associado. Siga os passos para confirmar a alteração.
+
+Uma vez que tenha submetido o pedido de ativação, o estado da ligação protegida SSL para o multi-site em causa deve ser atualizado ao fim de alguns segundos, sendo o estado substituído por "A gerar / atualizar". Repita este processo se pretender ativar um certificado SSL para outros multisites.
+
+> [!primary]
+>
+> Pode ter duas situações neste estado:
+>
+> - **Não possui certificados.**
+> Consulte este guia na secção [Ativar um certificado SSL no alojamento web](#enablessl) e escolha o "Certificado gratuito (Let's Encrypt)" que trata dos sites multi-sites.
+>
+> - **O certificado SSL está ativo, mas adicionou outros sites multi-site.**
+> Consulte este manual na secção [Gerar um certificado SSL num alojamento Web](#regeneratessl) para regenerar o certificado SSL para os multi-sites restantes.
+>
+
 ### Regenerar um certificado SSL do alojamento web <a name="regeneratessl"></a>
 
 > [!primary]
 >
-> Esta operação é apenas aplicável aos certificados que permitem ativar uma ligação SSL segura para vários multisites.
+> Esta operação aplica-se apenas aos certificados SSL gratuitos Let's Encrypt [incluído num plano de alojamento web compatível](https://www.ovhcloud.com/pt/web-hosting/options/ssl/) que permitem ativar uma ligação SSL segura para vários multi-sites.
 >
 
 Depois de ativar uma ligação SSL segura num ou vários dos seus multisites, o estado indica “A gerar / atualizar”. Esta geração é essencial para poder adicionar ao certificado SSL do seu alojamento web.
