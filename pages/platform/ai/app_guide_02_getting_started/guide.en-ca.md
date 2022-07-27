@@ -6,7 +6,7 @@ section: AI Apps guides
 order: 02
 ---
 
-**Last updated 11th July 2022.**
+**Last updated 26th July 2022.**
 
 ## Objective
 
