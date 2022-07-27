@@ -34,13 +34,13 @@ Select the `Users`{.action} tab. Verify that you have a user with sufficient rig
 
 We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/){.external} to select the right roles for your use case.
 
-In our example, we will create a user called *userCompass* with the roles *readWriteAnyDatabase* and *userAdminAnyDatabase*.
+In our example, we will create a user called *user* with the roles *readWriteAnyDatabase* and *userAdminAnyDatabase*.
 
-![User Creation](images/mongodb_07_connect_compass-20220223102939915.png){.thumbnail}
+![User Creation](images/mongodb_02_manage_control_panel-20220727141804751.png){.thumbnail}
 
 Once created or updated, note the password then after a few seconds check to verify the user is ready and with the "Enabled" status in the OVHcloud Control Panel.
 
-![User ready](images/mongodb_07_connect_compass-20220223103623205.png){.thumbnail}
+![User ready](images/mongodb_02_manage_control_panel-20220727142321150.png){.thumbnail}
 
 #### Step 2: Authorise incoming connections from the MongoDB client
 
