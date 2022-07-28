@@ -1,5 +1,5 @@
 ---
-title: Adding Labels & Taint on Node Pool creation (Node Pool template)
+title: Adding Labels & Taint on Node Pool (Node Pool template)
 slug: automatically-label-taint-node-pool
 excerpt: 'Find out how to add labels, annotations and taints on Nodes thanks to Node Pools template on OVHcloud Managed Kubernetes'
 section: Tutorials
@@ -33,6 +33,8 @@ section: Tutorials
 
 We previously showed you how to taint, cordon and drain specific `Nodes` and `Nodes Pools`. It's useful but it's not super efficient in the case of Kubernetes cluster AutoScaling, when your Nodes are created and deleted automatically.
 In this new tutorial we will show you how to do some operations (add labels, annotations, taints...) propagated to your `Nodes` thanks to `Node Pools` template, on your OVHcloud Managed Kubernetes Service.
+
+This enables multiple scheduling scenarii, like optimizing the cost of a cluster hosting your application by distributing `Pods` accross two labelled `Node Pools` (one is in monthly billing and the other autoscaled).
 
 Thanks to the `Node Pool's template`, you will:
 
