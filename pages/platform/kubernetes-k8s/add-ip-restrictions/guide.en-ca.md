@@ -5,7 +5,7 @@ excerpt: 'Find out how to add IP restrictions/manage access to the APIServer of 
 section: User guides
 ---
 
-**Last updated 27th July 2022**
+**Last updated 28th July 2022**
 
 ## Objective
 
@@ -157,8 +157,11 @@ Initializing the backend...
 
 Initializing provider plugins...
 - Finding latest version of ovh/ovh...
-- Installing ovh/ovh v0.19.0...
-- Installed ovh/ovh v0.19.0 (signed by a HashiCorp partner, key ID F56D1A6CBDAAADA5)
+- Finding latest version of hashicorp/local...
+- Installing ovh/ovh v0.19.1...
+- Installed ovh/ovh v0.19.1 (signed by a HashiCorp partner, key ID F56D1A6CBDAAADA5)
+- Installing hashicorp/local v2.2.3...
+- Installed hashicorp/local v2.2.3 (signed by HashiCorp)
 
 Partner and community providers are signed by their developers.
 If you'd like to know more about provider signing, you can read about it here:
@@ -248,22 +251,7 @@ Do you want to perform these actions?
   Enter a value: yes
 
 ovh_cloud_project_kube_iprestrictions.iprestrictions: Creating...
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [10s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [20s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [30s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [40s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [50s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [1m0s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [1m10s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [1m20s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [1m30s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [1m40s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [1m50s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [2m0s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [2m10s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [2m20s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Still creating... [2m30s elapsed]
-ovh_cloud_project_kube_iprestrictions.iprestrictions: Creation complete after 2m30s [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx]
+ovh_cloud_project_kube_iprestrictions.iprestrictions: Creation complete after 6s [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
