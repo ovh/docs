@@ -22,7 +22,7 @@ This can be useful in cases where:
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- A [Public Cloud Instance](https://www.ovh.com.au/public-cloud/){.external} in your OVHcloud account
+- A [Public Cloud Instance](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 - Administrative (root) access to your instance via SSH (Linux) or RDP (Windows)
 
 ## Instructions

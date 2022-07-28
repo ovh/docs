@@ -64,7 +64,7 @@ Se abrirá una ventana, donde deberá completar los campos obligatorios. Haga cl
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Usuario | Introduzca, por ejemplo, el nombre de usuario o su función. |
 | Correo electrónico | Introduzca la dirección de correo electrónico del usuario. |
-| Contraseña | Especifique la contraseña del usuario. El usuario podrá cambiarla una vez creado su acceso. <br>Para establecer esta contraseña, también le recomendamos consultar [la guía sobre la gestión de contraseñas](../gestionar-su-contraseña){.external}. |
+| Contraseña | Especifique la contraseña del usuario. El usuario podrá cambiarla una vez creado su acceso. <br>Para establecer esta contraseña, también le recomendamos consultar [la guía sobre la gestión de contraseñas](../gestionar-su-contrasena){.external}. |
 | Privilegios | Seleccione entre Ninguno/Usuario/Administrador. |
 | Descripción | Puede añadir una descripción del usuario. Por ejemplo, su función en la empresa. |
 
