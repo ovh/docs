@@ -6,7 +6,7 @@ section: "Configuration de l'hébergement"
 order: 6
 ---
 
-**Dernière mise à jour le 06/01/2021**
+**Dernière mise à jour le 27/07/2022**
 
 ## Objectif
 
@@ -31,6 +31,19 @@ order: 6
 - Erreur d'accès ("Échec de l'authentification de connexion 530"): Vous pouvez vous assurer que les informations d'accès à votre espace FTP sont correctes en vérifiant celles-ci via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans l'onglet `FTP - SSH`. Les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés. Veuillez consulter nos [guides FTP](../connexion-espace-stockage-ftp-hebergement-web/).
 
 - Les connexions FTP doivent utiliser le **mode passif**. Assurez-vous que votre script ou votre client FTP est ajusté en conséquence.
+
+### E-mails <a name="emails"></a>
+
+Pour garantir une bonne qualité de service pour tous et fluidifier l'envoi de vos e-mails vers vos destinataires, nous appliquons des quotas concernant nos services d'hébergement web.
+
+Sur une période glissante de 3600 secondes (soit 1 heure), votre offre d'hébergement vous permettra d'envoyer les quotas d'e-mails suivants :
+
+|Offres|Start 10M|Kimsufi Web|Perso|Pro|Performance|
+|---|---|---|---|---|---|
+|Quantité maximale d'envoi d'e-mails par heure et par service|10|20|100|200|2000|
+
+- En dehors de suspicions de spamming ou de phishing, l'expédition de vos e-mails pourra être différée. Vos e-mails seront conservés dans une file d'attente jusqu'à ce que le nombre d'e-mails envoyés au cours de l'heure écoulée soit inférieur au quota.
+- En cas d'abus ou de risque avéré, votre service sera suspendu et vous serez notifié par e-mail de la suspension de celui-ci. Que faire en cas de compte bloqué pour spam ? Consultez [notre guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/bloque-pour-spam/).
 
 ### Base de données / SQL
 
@@ -120,7 +133,7 @@ Remplacez le cluster indiqué dans l'URL par le vôtre. Pour savoir sur quel clu
 
 Pour connaitre les spécificités technique de l'offre Cloud Web, dirigez-vous directement vers le lien <https://cloudweb-infos.hosting.ovh.net/>.
 
-### Informations sur les sauvegardes automatiques <a name=“backup”></a>
+### Informations sur les sauvegardes automatiques <a name="backup"></a>
 
 > [!warning]
 >

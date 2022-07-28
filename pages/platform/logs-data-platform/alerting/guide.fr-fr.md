@@ -6,7 +6,7 @@ excerpt: With the alerting feature you don't even need to watch your logs, our p
 section: Features
 ---
 
-**Last updated 23rd July, 2020**
+**Last updated July 28th, 2022**
 
 ## Objective
 
@@ -31,7 +31,7 @@ The Logs Data Platform provides many ways to watch your logs in real time:
 - The **follow stream** functionality in the OVHcloud Manager.
 - The **Live Tail** functionality in Graylog.
 - The **Graylog dashboards** that refresh themselves in real-time.
-- Any software that can query the Graylog or ES APIs (Kibana or Grafana for example).
+- Any software that can query the Graylog or ES APIs (OpenSearch Dashboards or Grafana for example).
 
 The goal of the Alerting feature is to give you the freedom to not watch your logs. The Logs Data Platform can automatically inform you when something happens. There are 3 types of alert:
 
