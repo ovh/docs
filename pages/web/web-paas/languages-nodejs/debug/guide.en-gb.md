@@ -39,7 +39,7 @@ webpaas branch debug-branch
 >> 
 >> ```bash
 >> webpaas ssh
->> ```
+>> 
 >> 
 >> 
 >> ```     
@@ -51,7 +51,7 @@ webpaas branch debug-branch
 >> 
 >> ```bash
 >> webpaas tunnel:open
->> ```
+>>
 >> 
 >> In the same terminal, set the relevant environment variables:
 >> 
@@ -60,7 +60,7 @@ webpaas branch debug-branch
 >> export PORT=8888
 >> ```
 >> 
->> ```     
+>>     
 
 
 ## 3. Run your app in inspect mode
@@ -75,7 +75,7 @@ webpaas branch debug-branch
 >> ```bash
 >> sv stop app
 >> node --inspect <START_FILE>
->> ```
+>> 
 >> 
 >> 
 >> ```     
@@ -89,7 +89,7 @@ webpaas branch debug-branch
 >> node --inspect <START_FILE>
 >> ```
 >> 
->> ```     
+>>      
 
 
 Replace `<START_FILE>` with the file defined for your app's `start` command.
