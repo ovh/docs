@@ -1,7 +1,7 @@
 ---
 title: Add IP restrictions on an OVHcloud Managed Kubernetes cluster
 slug: add-ip-restrictions
-excerpt: 'Find out how to add IP restrictions/manage access to the APIServer of an OVHcloud Managed Kubernetes cluster'
+excerpt: 'Find out how to add IP restrictions/manage access to the API server of an OVHcloud Managed Kubernetes cluster'
 section: User guides
 ---
 
@@ -11,7 +11,7 @@ section: User guides
 
 The OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
 
-This guide will cover the feature that allow you to manage access to the API server of your OVHcloud Managed Kubernetes cluster. Thanks to that you can add IP restrictions in a cluster.
+This guide will cover the feature that allows you to manage access to the API server of your OVHcloud Managed Kubernetes cluster. Thanks to that you can add IP restrictions in a cluster.
 
 ## Requirements
 
@@ -19,7 +19,9 @@ This guide will cover the feature that allow you to manage access to the API ser
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - An OVHcloud Managed Kubernetes cluster
 
-## Add IP restrictions through OVHcloud Control Panel
+## Instructions
+
+### Add IP restrictions through the OVHcloud Control Panel
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
@@ -31,26 +33,26 @@ Click on your Kubernetes cluster.
 
 ![Your Kubernetes cluster](images/cluster.png){.thumbnail}
 
-Click on the *APIServer access* tab or in *Modify limitations* link.
+Click the `APIServer access`{.action} tab or the *Modify limitations* link.
 
 ![APIServer access](images/apiserver_access.png){.thumbnail}
 
-Now, click on `Add a new limitation`{.action} button.
+Click the `+ Add a new limitation`{.action} button.
 
-Enter an IPv4 range on the *Authorised clients* input field and then click on `✔️`{.action} button.
+Enter an IPv4 range in the *Authorised clients* input field and then click the `✔️`{.action} button.
 You can add one or several IP ranges.
 
 ![Add IP restriction to a Kubernetes cluster](images/add-ip-restriction.png){.thumbnail}
 
 > [!primary]
 >
-> If there is no Authorised clients IPs, it means that no restriction is applied.
+> If there are no Authorised clients IPs, it means that no restriction is applied.
 
-## Add IP restrictions through Terraform
+### Add IP restrictions through Terraform
 
 Since the version 0.19+ of our [OVH Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs) you can add IP restrictions also through Terraform.
 
-### Getting your cluster/API tokens information
+#### Getting your cluster/API tokens information
 
 The "OVH provider" needs to be configured with a set of credentials:
 
@@ -58,21 +60,21 @@ The "OVH provider" needs to be configured with a set of credentials:
 * an `application_secret`
 * a `consumer_key`
 
-Why?
+**Why?**
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/au/en/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/au/en/api/first-steps-with-ovh-api/) tutorial.
 
-Concretely, you have to generate these credentials via the [OVH token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
-When you have successfully generated your OVH tokens, please keep them. You'll have to define them in the coming minutes ;-).
+When you have successfully generated your OVHcloud tokens, please save them as you will have to use them very soon.
 
 The last needed information is the `service_name`: it is the ID of your Public Cloud project.
 
-How to get it?
+**How to get it?**
 
 In the Public Cloud section, you can retrieve your service name ID thanks to the `Copy to clipboard`{.action} button.
 
@@ -80,13 +82,13 @@ In the Public Cloud section, you can retrieve your service name ID thanks to the
 
 You will also use this information in Terraform resources definition files.
 
-### Instructions
+#### Terraform instructions
 
-First, create a `provider.tf` file with the minimum version, european endpoint ("ovh-eu") and keys you got in this guide previously.
+First, create a `provider.tf` file with the minimum version, european endpoint ("ovh-eu") and the keys previously retrieved in this guide.
 
 Terraform 0.13 and later:
 
-```
+```bash
 terraform {
   required_providers {
     ovh = {
@@ -106,7 +108,7 @@ provider "ovh" {
 
 Terraform 0.12 and earlier:
 
-```
+```bash
 # Configure the OVHcloud Provider
 provider "ovh" {
   endpoint           = "ovh-eu"
@@ -125,7 +127,6 @@ Alternatively the secret keys can be retrieved from your environment.
 
 This later method (or a similar alternative) is recommended to avoid storing secret data in a source repository.
 
-
 Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API, but other endpoints exist, depending on your needs:
 
 * `ovh-eu` for OVHcloud Europe API
@@ -134,7 +135,7 @@ Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Euro
 
 Then, define the resources you want to create in a new file called `ovh_kube_cluster_iprestrictions.tf`:
 
-```
+```bash
 resource "ovh_cloud_project_kube_iprestrictions" "iprestrictions" {
 	service_name  = <service_name>
 	kube_id       = <cluster_id>
@@ -189,13 +190,13 @@ It’s the first command to execute for a new configuration, or after doing a ch
 
 The `init` command will:
 
-* Download and install Terraform providers/plugins
-* Initialise backend (if defined)
-* Download and install modules (if defined)
+- Download and install Terraform providers/plugins
+- Initialise backend (if defined)
+- Download and install modules (if defined)
 
 Now, we can generate our plan:
 
-```
+```bash
 $ terraform plan
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
@@ -224,7 +225,7 @@ Thanks to the `plan` command, we can check what Terraform wants to create, modif
 
 The plan is OK for us, so let's apply it:
 
-```
+```bash
 $ terraform apply
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
@@ -256,11 +257,11 @@ ovh_cloud_project_kube_iprestrictions.iprestrictions: Creation complete after 6s
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-### Destroy
+#### Destroy
 
 If you want to delete the IP restrictions you added it through Terraform, have to execute `terraform destroy` command:
 
-```
+```bash
 $ terraform destroy
 ovh_cloud_project_kube_iprestrictions.iprestrictions: Refreshing state... [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx]
 
