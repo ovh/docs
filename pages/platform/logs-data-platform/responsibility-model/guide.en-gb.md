@@ -48,7 +48,7 @@ For your information, a **Log forwarder agent** is considered as a tool (full so
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Offer standard solutions and protocols for importing and exporting data using API for logs and dashboards | I | RA |
-| Decide to use [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror){.external} for data export and local analysis |  | RA |
+| Decide to use [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror){.external} for data export and local analysis  | RA |  |
 
 #### 2.3. Customer Information System setup
 
