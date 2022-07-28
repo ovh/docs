@@ -6,8 +6,7 @@ excerpt: Manage who can have access to your data and what they can do with them.
 section: Features
 ---
 
-**Last updated 29th July, 2020**
-
+**Last updated July 28th, 2022**
 
 ## Overview
 
@@ -42,16 +41,16 @@ Some items can be shared in read-only whereas others can be shared with a write 
 |Dashboard|Yes|Yes|
 |Index|Yes|Yes|
 |Alias|Yes|No|
-|Kibana|Yes|Yes|
+|OpenSearch Dashboards|Yes|Yes|
 
 - **Data Stream**: Graylog Data Streams can only be shared **read-only** since logs are fully immutable.
 - **Dashboards**: Graylog Dashboards can be shared **read-only or read-write**. With the read-write access, the users in the role can add, modify and remove widgets of a dashboard.
 - **Index **: OpenSearch indices can be shared **read-only or read-write**. With the read-write access, users in the role can add, modify and delete documents in the index. They can also alter the mapping.
 - **Aliases**: OpenSearch Aliases are **read-only**. They can only be used to read the data attached to them.
-- **Kibana**: Kibana can be shared **read-only or read-write**. If Kibana is read-only, users have access to the Kibana but cannot modify it. If Kibana is read-write, they can modify the dashboards or the visualizations or any other Kibana feature or setting.
+- **OpenSearch Dashboards**: OpenSearch Dashboards can be shared **read-only or read-write**. If OpenSearch Dashboards is read-only, users have access to the OpenSearch Dashboards but cannot modify it. If OpenSearch Dashboards is read-write, they can modify the dashboards or the visualizations or any other OpenSearch Dashboards feature or setting.
 
 > [!primary]
-> Note that to give access to data (index or aliases) explored through Kibana to a user, you need to give at least **read** rights to **both** the instance and to the data explored.
+> Note that to give access to data (index or aliases) explored through OpenSearch Dashboards to a user, you need to give at least **read** rights to **both** the instance and to the data explored.
 
 
 Select the items you want to share in the role and they will switch from the **avalaible** column to the **selected** column. Go back to the **roles** page to manage the users in the defined role.

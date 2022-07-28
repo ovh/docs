@@ -5,7 +5,7 @@ order: 2
 section: Get Started
 ---
 
-**Last updated 13th June, 2022**
+**Last updated July 28th, 2022**
 
 ## Objective
 
@@ -61,7 +61,7 @@ Of course. As we said before, you can send some additional fields as long as you
 |*_int, *_long|long|64 bit signed long type,which has a minimum value of -263 and a maximum value of 263-1|
 |*_date|date|a ISO 8601 date with optional Time or Milliseconds since UNIX epoch in Integer.|
 |*_bool|boolean|Expected values: "true" or  "false". WARNING : GELF does not support boolean types you will have to send "true" or "false" in String|
-|*_geolocation|String|A pair of two float number separeted by a comma ','. This pair must represent Latitude and Longitude. For Kibana & Grafana compatibility, the value is also copied to a GeoHash: `*_geoloacation.geo`|
+|*_geolocation|String|A pair of two float number separeted by a comma ','. This pair must represent Latitude and Longitude. For OpenSearch Dashboards & Grafana compatibility, the value is also copied to a GeoHash: `*_geoloacation.geo`|
 |*_ip|String|A valid IPv4 or IPv6. This will allows you to search by range (`dst_ip:[10.0.0.0 TO 10.255.255.255]`) or netmask (`dst_ip:10.0.0.0\/8`)|
 |Everything else|String|Anything else will be considered a string|
 
