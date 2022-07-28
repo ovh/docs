@@ -62,7 +62,6 @@ Clicca sul tipo di prodotto da disattivare nella lista delle principali offerte 
 
 [Hosted Private Cloud](#privatecloud)<br />
 &emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by Anthos](#hostedprivatecloud-anthos)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -135,14 +134,6 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
 Per disattivare la soluzione [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/), segui le istruzioni di questa [guida](https://docs.ovh.com/it/private-cloud/disattivare-una-soluzione-private-cloud/).
-
-#### Hosted Private Cloud powered by Anthos <a name="hostedprivatecloud-anthos"></a>
-
-Per disattivare il servizio [Hosted Private Cloud powered by Anthos](https://www.ovhcloud.com/it/hosted-private-cloud/anthos/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
-
-Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
-
-Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action}.
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
