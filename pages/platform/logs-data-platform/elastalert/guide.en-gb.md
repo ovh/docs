@@ -6,7 +6,7 @@ excerpt: Deploy in a few minutes one of the most complete alert system.
 section: Use cases
 ---
 
-**Last updated 13th June, 2022**
+**Last updated July 28th, 2022**
 
 ## Objective
 
@@ -88,7 +88,7 @@ $ elastalert-create-index --host <ldp-cluster>.logs.ovh.com --port 9200 --userna
 Tou should pay attention to the following points:
 
 - The `<ldp-cluster>` must be the one assigned to you (find on the **Home** page of the LDP Manager).
-- `<username>` is the username used to connect to the API or to the Logs Data Platform interfaces (Graylog or Kibana).
+- `<username>` is the username used to connect to the API or to the Logs Data Platform interfaces (Graylog or OpenSearch Dashboards).
 - `<password>` is the associated password. You can use [tokens](../tokens-logs-data-platform){.ref} in place of the username/password couple for your credentials.
 - The `--index` is the most important here since you **must** follow the index naming convention of Logs Data Platform. Use the presented form `<username>-i-` as a base name for your meta-indices. `<suffix>` can be personalized to any alphanumeric characters.
 
@@ -96,7 +96,7 @@ This command will prompt you with different questions:
 
 ```shell-session
 Verify TLS certificates? t/f: t
-Enter optional Elasticsearch URL prefix (prepends a string to the URL of every request):
+Enter optional OpenSearch URL prefix (prepends a string to the URL of every request):
 Name of existing index to copy? (Default None)
 Reading Elastic 7 index mappings:
 Reading index mapping 'es_mappings/7/silence.json'

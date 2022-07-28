@@ -5,7 +5,7 @@ order: 1
 section: Get Started
 ---
 
-**Last updated 13th June, 2022**
+**Last updated July 28th, 2022**
 
 ## Objective
 
@@ -43,7 +43,7 @@ Below them, you have access to different sections :
 3. The **Data-gathering tools** tab, allows requesting OVHcloud to host your own dedicated collector like Logstash or Flowgger.
 4. The **Index** tab, allows creating your dedicated OpenSearch Index or retrieve the ones used to store your OpenSearch Dashboards settings.
 5. The **Aliases** tab, provides access to your data directly from your OpenSearch Dashboards or using an OpenSearch query.
-6. The **Kibana** tab, creates your personal OpenSearch Dashboards instance, in order to exploit the aliases and index from the powerful OpenSearch Dashboards interface.
+6. The **OpenSearch Dashboards** tab, creates your personal OpenSearch Dashboards instance, in order to exploit the aliases and index from the powerful OpenSearch Dashboards interface.
 7. The **Users Roles**, allows access rights modification of your content.
 
 ### Let's send some logs!
