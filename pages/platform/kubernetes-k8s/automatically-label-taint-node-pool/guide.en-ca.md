@@ -1,5 +1,5 @@
 ---
-title: Adding Labels & Taint on Node Pool creation
+title: Adding Labels & Taint on Node Pool creation (Node Pool template)
 slug: automatically-label-taint-node-pool
 excerpt: 'Find out how to add labels, annotations and taints on Nodes thanks to Node Pools template on OVHcloud Managed Kubernetes'
 section: Tutorials
