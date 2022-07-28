@@ -235,6 +235,7 @@ Now, we can generate our plan:
 $ terraform plan
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+
   + create
 
 Terraform will perform the following actions:
@@ -301,6 +302,7 @@ The plan is OK for us, so let's apply it:
 $ terraform apply
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+
   + create
 
 Terraform will perform the following actions:
@@ -408,7 +410,7 @@ NAME           FLAVOR   AUTOSCALED   MONTHLYBILLED   ANTIAFFINITY   DESIRED   CU
 my-node-pool   b2-7     false        false           false          1         1         1            1           0     1     8m13s
 ```
 
-Our node pool exist and we can see its configuration.
+Our node pool exists and we can see its configuration.
 
 Now let's see the node pool template:
 
@@ -442,7 +444,7 @@ Status:
 ...
 ```
 
-The template you defined will ask Kubernetes to propagated this configuration to all the Nodes of this Node Pool.
+The template you defined will ask Kubernetes to propagate this configuration to all the Nodes of this Node Pool.
 
 Let's display our node. We should have 1 node running:
 
@@ -452,7 +454,7 @@ NAME                       STATUS   ROLES    AGE     VERSION
 my-node-pool-node-5781fa   Ready    <none>   7m55s   v1.22.9
 ```
 
-Check the label, annotation and taint you defined are well propageted to the node:
+Check that the label, annotation and taint you defined are well propageted to the node:
 
 ```bash
 $ kubectl describe node my-node-pool-node-5781fa
@@ -461,7 +463,6 @@ $ kubectl describe node my-node-pool-node-5781fa
 ![Node's labels annotations and taints](images/node-labels-annotations-taints.png)
 
 And if you edit the Node Pool configuration to activate the AutoScaling and scale to 3 nodes for example, all the information you defined will be propagated to new Nodes.
-
 
 ### Create a Node Pool Template through API
 
@@ -473,7 +474,8 @@ To create a Node Pool with a template (labels, annotations, taints...), you have
 >
 > @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/nodepool
 >
- with the following information:
+
+with the following information:
 
 ```json
 {
@@ -514,7 +516,7 @@ To create a Node Pool with a template (labels, annotations, taints...), you have
 
 #### Destroy the Node Pool through Terraform
 
-If you want to delete the Node Pool you added it through Terraform, have to execute `terraform destroy` command:
+If you want to delete the Node Pool you added through Terraform, execute the `terraform destroy` command:
 
 ```bash
 $ terraform destroy
@@ -600,12 +602,13 @@ To delete a Node Pool with the API, you have to make a call on:
 >
 > @api {DELETE} /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
 >
-> With the following information:
->
-> ![delete nodepool through API](images/delete-np-api.png)
 
+with the following information:
+
+![delete nodepool through API](images/delete-np-api.png)
 
 ## Go further
+
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/asia/public-cloud/kubernetes/).
 
 Join our community of users on <https://community.ovh.com/en/>.
