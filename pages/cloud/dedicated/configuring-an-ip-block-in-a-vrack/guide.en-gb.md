@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to configure a block of public IP address
 section: 'vRack'
 ---
 
-**Last updated 29th June 2018**
+**Last updated 26th July 2022**
 
 ## Objective
 
