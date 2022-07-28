@@ -1,0 +1,31 @@
+{
+    "serviceName": "<service_name>",
+    "kubeId": "<cluster_id>",
+    "ProjectKubeNodePoolCreation": {
+      "name": "my-node-pool",
+      "flavorName": "b2-7",
+      "desiredNodes": 1,
+      "minNodes": 0,
+      "maxNodes": 1,
+      "template": {
+        "metadata": {
+          "annotations": {
+            "my-annotation": "my-value"
+          },
+          "labels": {
+            "app": "my-app"
+          }
+        },
+        "spec": {
+          "unschedulable": false,
+          "taints": [
+            {
+              "effect": "PreferNoSchedule",
+              "key": "k1",
+              "value": "v1"
+            }
+          ]
+        }
+      }
+    }
+  }
