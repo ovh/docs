@@ -10,7 +10,7 @@ section: 'Configuración del alojamiento'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 22/02/2022**
+**Última actualización: 28/07/2022**
 
 ## Objetivo
 
@@ -35,6 +35,19 @@ section: 'Configuración del alojamiento'
 - Error de acceso ("Fallo de autenticación de conexión 530"): Puede comprobar que los datos de acceso a su espacio FTP son correctos verificándolos en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la pestaña `FTP - SSH`. Las contraseñas nunca se muestran, pero pueden modificarse. Consulte nuestras [guías FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/).
 
 - Las conexiones FTP deben utilizar el **modo pasivo**. Asegúrese de que su script o su cliente FTP estén configurados correctamente.
+
+## Emails <a name="emails"></a>
+
+Para garantizar una buena calidad de servicio para todos y facilitar el envío de sus mensajes a sus destinatarios, aplicamos cuotas para nuestros servicios de alojamiento web.
+
+En un período de 3600 segundos (es decir, 1 hora), su plan de hosting le permitirá enviar los siguientes límites de correo:
+
+|Solución|Perso|Pro|Performance|
+|---|---|---|---|---|
+|Cantidad máxima de envío de correo por hora y servicio|100|200|2000|
+
+- Aparte de las sospechas de spamming o phishing, el envío de los mensajes de correo podría aplazarse. Su correo se conservará en una cola de espera hasta que el número de mensajes enviados durante la hora anterior sea inferior al de tráfico.
+- En caso de abuso o riesgo comprobado, el servicio se suspenderá y usted recibirá una notificación por correo electrónico de la suspensión del servicio. ¿Qué hacer en caso de cuenta bloqueada por spam? Consulte [nuestra guía](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/bloqueo-por-correo-no-deseado/).
 
 ### Bases de datos/SQL
 

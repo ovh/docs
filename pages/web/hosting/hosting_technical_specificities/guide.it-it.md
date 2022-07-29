@@ -11,7 +11,7 @@ order: 6
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22/02/2022**
+**Ultimo aggiornamento: 28/07/2022**
 
 ## Obiettivo
 
@@ -36,6 +36,19 @@ order: 6
 - Errore di accesso (“Autenticazione di connessione 530 non riuscita”): È possibile verificare la correttezza delle credenziali di accesso allo Spazio Cliente FTP dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella scheda `FTP - SSH`. La password non vengono mai mostrate, ma possono essere modificate. Consulta le nostre [guide FTP](../accedere-spazio-storage-ftp-hosting-web/).
 
 - Le connessioni FTP devono utilizzare la **modalità passiva**. Assicurati che il tuo script o il tuo client FTP siano configurati correttamente.
+
+### E-mail <a name="emails"></a>
+
+Per garantire una buona qualità di servizio per tutti e semplificare l'invio delle tue email ai tuoi destinatari, applichiamo delle quote relative ai nostri servizi di hosting Web.
+
+Per un periodo di 3600 secondi (1 ora), la tua offerta di hosting ti permetterà di inviare queste email:
+
+|Offerte|Start 10M|Perso|Pro|Performance|
+|---|---|---|---|---|
+|Quantità massima di invio di email per ora e per servizio|10|100|200|2000|
+
+- A parte spamming o phishing, la spedizione delle tue email può essere differita. Le tue email saranno conservate in coda fino a che il numero di email inviate nell'arco dell'ora è inferiore alla quota.
+- In caso di abuso o rischio accertato, il tuo servizio verrà sospeso e riceverai un'email di notifica della sospensione. Cosa fare in caso di account bloccato per Spam? [Consulta la nostra guida](https://docs.ovh.com/it/microsoft-collaborative-solutions/blocco-per-spam/).
 
 ### Database/SQL
 
