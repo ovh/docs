@@ -10,7 +10,7 @@ order: 07
 
 ## Objectif
 
-Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Encryption sur l'offre Private Cloud de OVHcloud, en employant vSphere Native Key Provider le serveur de clé interne à vsPhere disponible depuis la version 7.0 update 2.
+Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Encryption sur l'offre Private Cloud de OVHcloud, en employant vSphere Native Key Provider le serveur de clé interne à vSphere disponible depuis la version 7.0 update 2.
 
 
 **Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec VM Encryption.**
@@ -24,7 +24,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Enc
 
 ## Présentation
 
-La solution **vSphere Native Key provider** permet de chiffrer les machines virtuelles sans avoir besoin d'un serveur KMS (Key management Server) externe. Cette solution est localisée à l'intérieur d'un cluster.
+La solution **vSphere Native Key provider** permet de chiffrer les machines virtuelles sans avoir besoin d'un serveur KMS (Key management Server) externe.
 
 Pour pouvoir l'utiliser il faut un cluster vSphere 7.0 Update 2 avec une licence enterprise plus.
 
@@ -45,11 +45,11 @@ IL est possible d'importer la clé sur un autre cluster dans le cas d'un plan de
 
 ### Création d'une clé pour 
 
-Nous allons créer la clé de chiffrement
+Nous allons créer la clé de chiffrement.
 
-Connectez-vous à l'interface vSPHERE à l'aide de ce guide [Se connecter à l'interace vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/)
+Connectez-vous à l'interface vSPHERE à l'aide de ce guide [Se connecter à l'interace vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
 
-Cliquez en haut à gauche sur le la racine du `cluster`{.action}, ensuite cliquez sur `Configurer`{.action} dans la barre des menu et choisissez `Fournisseurs de clés`{.action}.
+Cliquez en haut à gauche sur le la racine du `cluster`{.action}, ensuite cliquez sur l'onglet `Configurer`{.action} et choisissez `Fournisseurs de clés`{.action}.
 
 ![01 Create KEY 01](images/01-create-key01.png)
 
