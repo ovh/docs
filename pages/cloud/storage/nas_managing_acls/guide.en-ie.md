@@ -1,7 +1,7 @@
 ---
-title: HA-NAS - API Quickstart
-slug: nas/nas-quickapi
-excerpt: Find out how to get started with HA-NAS using the OVHcloud API
+title: HA-NAS - Managing ACLs via API
+slug: nas/nas-manage-acls
+excerpt: Find out how to manage HA-NAS access using the OVHcloud API
 section: NAS
 ---
 
@@ -9,13 +9,13 @@ section: NAS
 
 ## Objective
 
-The OVHcloud HA-NAS service allows you to manage file storage that can be accessed over a network. 
+The OVHcloud HA-NAS service allows you to manage file storage that can be accessed over a network.
 
-**This guide provides an overview of how to use your HA-NAS service via the OVHcloud API.**
+**This guide explains how to manage the ACL of a HA-NAS partition via the OVHcloud API.**
 
 ## Requirements
 
-- An OVHcloud [HA-NAS service](https://www.ovh.co.uk/nas/)
+- An OVHcloud [HA-NAS service](https://www.ovh.ie/nas/)
 - Consulting the [OVHcloud API first steps guide](../../api/first-steps-with-ovh-api/) to familiarise yourself with the OVHcloud APIv6
 
 ## Instructions
@@ -36,9 +36,14 @@ All your active services can be retrieved by using the following route:
 > @api {GET} /dedicated/nasha
 >
 
-### Creating a partition
+> [!warning]
+>
+> Access is denied by default unless granted via the ACL. Only IP addresses attached to your OVHcloud services can be added.
+>
 
-Use the following route to create a new partition:
+### Retrieving the ACL of a partition
+
+To retrieve the IP addresses that can access the partition, use the following route:
 
 > [!faq]
 >
@@ -46,7 +51,7 @@ Use the following route to create a new partition:
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition
+>> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/access
 >> >
 >>
 >
@@ -56,31 +61,12 @@ Use the following route to create a new partition:
 >> >
 >> >> The internal name of your HA-NAS service
 >> >
->> > **partitionDescription** 
->> >
->> >> Optional description
->> >
 >> > **partitionName** *
 >> >
->> >> A name for the partition
->> >
->> > **protocol** *
->> >
->> >> *NFS*, *CIFS*, or *NFS_CIFS* for both  
->> >
->> > **size** *
->> >
->> >> The size of the partition
+>> >> Name of the partition
 >
 
-Choose `NFS` as protocol and a size of `10` Gigabytes, for example.
-
-### Adding an ACL entry to access the partition
-
-> [!warning]
->
-> Access is denied by default unless granted via the ACL. Only IP addresses attached to your OVHcloud services can be added.
->
+### Retrieving all eligible IP addresses
 
 You can verify the IP addresses that are eligible for access via the following API calls:
 
@@ -106,6 +92,9 @@ You can verify the IP addresses that are eligible for access via the following A
 >> >
 >> >> Name of the partition
 >
+
+
+### Adding an ACL entry
 
 To create a new ACL entry that will allow you to connect to your partition, use the following route:
 
@@ -143,10 +132,9 @@ To create a new ACL entry that will allow you to connect to your partition, use 
 > Use CIDR notation for IP ranges, for example: 192.0.2.0/24.
 >
 
+### Removing an ACL entry
 
-### Creating a manual snapshot
-
-To add a manual snapshot, use the following route:
+To delete an IP address or address range from the ACL, use the following route:
 
 > [!faq]
 >
@@ -154,7 +142,7 @@ To add a manual snapshot, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
+>> > @api {DELETE} /dedicated/nasha/{serviceName}/partition/{partitionName}/access/{ip}
 >> >
 >>
 >
@@ -168,40 +156,11 @@ To add a manual snapshot, use the following route:
 >> >
 >> >> Name of the partition
 >> >
->> > **expiration**
+>> > **ip** *
 >> >
->> >> An optional expiration date, for example: 2022-06-24 (ISO 8601)
->> >
->> > **name** *
->> >
->> >> A name for the snapshot
+>> >> The IP address or range to be denied access
 >
 
-
-### Deleting a partition
-
-Use the following route to delete a partition:
-
-> [!faq]
->
-> API:
->
->> > [!api]
->> >
->> > @api {DELETE} /dedicated/nasha/{serviceName}/partition/{partitionName}
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> The internal name of your HA-NAS service
->> >
->> > **partitionName** *
->> >
->> >> Name of the partition
->
 
 ## Go further
 

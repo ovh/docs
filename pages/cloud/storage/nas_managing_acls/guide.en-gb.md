@@ -86,7 +86,7 @@ You can verify the IP addresses that are eligible for access via the following A
 >
 >> > **serviceName** *
 >> >
->> >> The internal name of your NAS service
+>> >> The internal name of your HA-NAS service
 >> >
 >> > **partitionName** *
 >> >
