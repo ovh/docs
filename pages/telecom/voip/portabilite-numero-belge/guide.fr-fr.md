@@ -116,7 +116,7 @@ Nous vous recommandons également de consulter régulièrement votre adresse e-m
 > 
 
 Vous trouverez ci-dessous un récapitulatif des différentes étapes du processus de portabilité d'un numéro belge chez OVHcloud :
-
+<a name="steps"></a>
 |Avancement dans le processus|Description|Délai estimé|
 |---|---|---|
 |Demande envoyée à l'opérateur|La demande est envoyée à l'opérateur cédant|2 heures|
