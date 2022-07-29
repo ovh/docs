@@ -231,6 +231,11 @@ A user with elevated permissions is automatically created on the instance. The u
 If you encounter issues with your connection, i.e. errors regarding your SSH keys, please refer to the guide on [Replacing your lost SSH key pair](../replacing_your_lost_ssh_key_pair/).
 >
 
+> [!primary]
+>
+If you created an instance without an SSH key via the OVHcloud API or the Openstack Horizon interface, you will only be able to add an SSH key to your instance via [rescue mode](https://docs.ovh.com/ca/en/public-cloud/put_an_instance_in_rescue_mode/) by following the instructions in this [section](../replacing_your_lost_ssh_key_pair/#instructions) of the relevant guide.
+>
+
 #### Connecting to a Linux OS instance from Linux OS / Mac
 
 You can now access your instance through a command line interface (Terminal) via SSH. Replace "username" in the following examples with your default user as explained above. You can also simply copy the complete login command from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) by clicking on it in the instance's "Dashboard" and then paste it into your Terminal.

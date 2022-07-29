@@ -75,6 +75,10 @@ Une fois vos tâches terminées, vous pouvez désactiver le mode rescue en redé
 
 ![tableau de bord](images/rescueexit2022.png){.thumbnail}
 
+> [!warning]
+> Si le bouton `Sortir du mode rescue`{.action} n'apparaît pas alors que l'instance est en mode rescue, nous vous recommandons de rafraîchir votre onglet.
+>
+
 ### Activer le mode rescue avec les API OpenStack
 
 Vous pouvez activer le mode rescue via les API OpenStack en utilisant la commande suivante :

@@ -228,6 +228,11 @@ Un utilisateur disposant d'autorisations élevées est automatiquement créé su
 Si vous rencontrez des problèmes avec votre connexion, c'est-à-dire des erreurs concernant vos clés SSH, consultez le guide [Changer sa clé SSH en cas de perte](../changer-sa-cle-ssh-en-cas-de-perte/).
 >
 
+> [!primary]
+>
+Si vous avez créé une instance sans clé SSH via l’API OVHcloud ou l’interface Openstack Horizon, il vous sera uniquement possible d’ajouter une clé SSH à votre instance à travers le [mode rescue](https://docs.ovh.com/ca/fr/public-cloud/passer-une-instance-en-mode-rescue/) en suivant les instructions décrites dans cette [section](../changer-sa-cle-ssh-en-cas-de-perte/#en-pratique) du guide approprié.
+>
+
 #### Connexion à une instance Linux à partir de Linux / Mac
 
 Vous pouvez maintenant accéder à votre instance en ligne de commande (Terminal) via SSH. Remplacez  « username » dans les exemples suivants par votre utilisateur par défaut, comme expliqué ci-dessus. Vous pouvez également copier simplement la commande de connexion complète à partir de [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) en cliquant sur votre instance dans le tableau, puis sur le bouton à droite de « Informations de connexion » dans le cadre **Réseaux**. Il ne vous reste plus qu'à le coller  dans votre terminal.

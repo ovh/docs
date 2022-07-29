@@ -74,6 +74,10 @@ Once you have completed your tasks, you can deactivate rescue mode by rebooting 
 
 ![control panel](images/rescueexit2022.png){.thumbnail}
 
+> [!warning]
+> In the event the `Exit rescue mode`{.action} button is not displayed while the instance is in rescue mode, we recommend refreshing your tab.
+>
+
 ### Activating rescue mode using the OpenStack API
 
 You can also activate rescue mode via the OpenStack API using the following command:
