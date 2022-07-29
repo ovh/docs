@@ -165,7 +165,7 @@ Dans la page qui apparaît, vous trouverez l'état de vos demandes de portabilit
 Si, durant le processus, vous souhaitez annuler votre demande de portabilité, vous pouvez le faire, au plus tard jusqu'à 72 heures avant la date de portabilité, grâce au bouton `Annuler la portabilité ?`{.action}.
 
 Nous vous recommandons également de consulter régulièrement votre adresse e-mail. Des notifications peuvent en effet vous y être envoyées si une action de votre part est requise.
-
+<a name="steps"></a>
 Vous trouverez ci-dessous un récapitulatif des différentes étapes du **processus de portabilité d'un numéro isolé** chez OVHcloud :
 
 |Avancement dans le processus|Description|Délai estimé|
