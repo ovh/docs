@@ -1,7 +1,7 @@
 ---
-title: Activation du chiffrement des machines virtuelles (VM Encryption) avec vnkp
+title: Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider (VNKP)
 slug: vm-encrypt-vpnkp
-excerpt: Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec vnkp (Vsphere Native Key Provider)
+excerpt: Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider (VNKP)
 section: Fonctionnalités VMware vSphere
 order: 07
 ---
@@ -10,7 +10,7 @@ order: 07
 
 ## Objectif
 
-Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Encryption sur l'offre Private Cloud de OVHcloud, en employant vNKP le serveur de clé interne à vsPhere disponible depuis la version 7.0 update 2.
+Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Encryption sur l'offre Private Cloud de OVHcloud, en employant vSphere Native Key Provider le serveur de clé interne à vsPhere disponible depuis la version 7.0 update 2.
 
 
 **Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec VM Encryption.**
@@ -24,8 +24,14 @@ Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Enc
 
 ## Présentation
 
-vNKP (Vcenter Native Key provider) est présent sur vSphere 7.0 Update 2, c'est un serveur de clé de chiffrement interne ne necessitant pas de serveur KMS, il est possible de l'activer dans l'espace client OVHcloud et administrable à partir de la console PCC.
+La solution **vSphere Native Key provider** permet de chiffrer les machines virtuelles sans avoir besoin d'un serveur KMS (Key management Server) externe. Cette solution est localisée à l'intérieur d'un cluster.
 
+Pour pouvoir l'utiliser il faut un cluster vSphere 7.0 Update 2 avec une licence enterprise plus.
+
+Pour pouvoir utiliser cette solution il est necessaire l'activer sur l'espace client OVHcloud.
+
+Cette clé est créée et copié sur tous les Esxi ,si la clé est supprimée sur vSphere les machine virtuelles cryptées continuerons à fonctionner jusqu'a quelles soient sorties de l'inventaire. 
+On ne pourras pas les restaurer 
 
 
 ## En pratique
@@ -37,7 +43,7 @@ vNKP (Vcenter Native Key provider) est présent sur vSphere 7.0 Update 2, c'est 
 
 -->
 
-### Création d'une clé vNKP
+### Création d'une clé pour 
 
 Nous allons créer la clé de chiffrement
 
@@ -71,12 +77,22 @@ Il est possible maintenant d'utiliser la clé pour chiffrer des machines virtuel
 
 [01 Create KEY 07](images/01-create-key07.png)
 
-
-
-
-
-
 ### Chiffrement d'une machine virtuelle
+
+Avant de lancer le chiffrement d'un machine virtuelle il faut absolument quelle soit éteinte.
+
+Faites un clic droit sur la `machine virtuelle`{.action} que vous voulez chiffrer, à partir du menu `Stratégies de VM`{.action} et choisissez `Modifier les stratégies de stockage VM`{.action}.
+
+[02 encrypt VM 01](images/02-encrypt-vm01.png)
+
+Choisissez dans Stratégies de stockage de VM `VM Encryption Policy`{.action} et cliquez sur `OK`{.action}.
+
+[02 encrypt VM 02](images/02-encrypt-vm02.png)
+
+Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.action} et vous verrez apparaitre un `cadenas` qui indique que la machine virtuelle est chiffrée. 
+
+[02 encrypt VM 03](images/02-encrypt-vm03.png) 
+
 
 
 
