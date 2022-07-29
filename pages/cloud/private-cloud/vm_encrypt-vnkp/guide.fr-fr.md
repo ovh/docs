@@ -75,7 +75,7 @@ Saisissez `le mot de passe` et `confirmez le`, ensuite cochez la case `J'ai enre
 
 Il est possible maintenant d'utiliser la clé pour chiffrer des machines virtuelles.
 
-[01 Create KEY 07](images/01-create-key07.png)
+![01 Create KEY 07](images/01-create-key07.png)
 
 ### Chiffrement d'une machine virtuelle
 
@@ -83,15 +83,15 @@ Avant de lancer le chiffrement d'un machine virtuelle il faut absolument quelle 
 
 Faites un clic droit sur la `machine virtuelle`{.action} que vous voulez chiffrer, à partir du menu `Stratégies de VM`{.action} et choisissez `Modifier les stratégies de stockage VM`{.action}.
 
-[02 encrypt VM 01](images/02-encrypt-vm01.png)
+![02 encrypt VM 01](images/02-encrypt-vm01.png)
 
 Choisissez dans Stratégies de stockage de VM `VM Encryption Policy`{.action} et cliquez sur `OK`{.action}.
 
-[02 encrypt VM 02](images/02-encrypt-vm02.png)
+![02 encrypt VM 02](images/02-encrypt-vm02.png)
 
 Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.action} et vous verrez apparaitre un `cadenas` qui indique que la machine virtuelle est chiffrée. 
 
-[02 encrypt VM 03](images/02-encrypt-vm03.png) 
+![02 encrypt VM 03](images/02-encrypt-vm03.png) 
 
 ### Migration de la solution **KMS** vers **VNKP**
 
