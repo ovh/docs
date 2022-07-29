@@ -28,11 +28,11 @@ La solution **vSphere Native Key provider** permet de chiffrer les machines virt
 
 Pour pouvoir l'utiliser il faut un cluster vSphere 7.0 Update 2 avec une licence enterprise plus.
 
-Pour pouvoir utiliser cette solution il est necessaire l'activer sur l'espace client OVHcloud.
+L'option doit être activée sur l'espace client OVHcloud.
 
-Cette clé est créée et copié sur tous les Esxi ,si la clé est supprimée sur vSphere les machine virtuelles cryptées continuerons à fonctionner jusqu'a quelles soient sorties de l'inventaire. 
-On ne pourras pas les restaurer 
+La clé est crée sur vCenter et est copié sur chacun des serveurs Esxi membres du cluster, si une clé est supprimée les machines virtuelles qui sont cryptées continuerons à fonctionner jusqu'a quelles soient sorties de l'inventaire.
 
+IL est possible d'importer la clé sur un autre cluster dans le cas d'un plan de reprise d'activité.
 
 ## En pratique
 
@@ -57,7 +57,7 @@ Cliquez sur le bouton `Ajouter`{.action} et choississez dans le menu `Ajouter un
 
 ![01 Create KEY 02](images/01-create-key02.png)
 
-Saisissez un nom dans `Nom` et  Cliquez sur `AJOUTER UN FOURNISSEUR DE CLÉS`{.action}.
+Saisissez un nom dans `Nom` et cliquez sur `AJOUTER UN FOURNISSEUR DE CLÉS`{.action}.
 
 ![01 Create KEY 03](images/01-create-key03.png)
 
@@ -93,11 +93,13 @@ Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.a
 
 [02 encrypt VM 03](images/02-encrypt-vm03.png) 
 
+### Migration de la solution **KMS** vers **VNKP**
+
+des clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes, il est possible de migrer les machines virtuelles utilisant ce système vers VNKP.
 
 
 
 
-### Migration de la solution KMS vers vnkp
 
 
 ## Aller plus loin
