@@ -61,15 +61,15 @@ Saisissez un nom dans `Nom` et cliquez sur `AJOUTER UN FOURNISSEUR DE CLÉS`{.ac
 
 ![01 Create KEY 03](images/01-create-key03.png)
 
-Cliquez sur le bouton `SAUVEGARDE`{.action} à gauche pour protéger la sauvegarde de la clé par un mot de passe.
+Cliquez sur le bouton `SAUVEGARDE`{.action} à gauche pour sauvegarder la clés en dehors du cluster.
 
 ![01 Create KEY 04](images/01-create-key04.png)
 
-Cliquez sur `La case à cocher`{.action} à gauche pour protéger la sauvegarde de la clé par un mot de passe.
+Cliquez sur `La case à cocher`{.action} à gauche pour protéger la sauvegarde par un mot de passe.
 
 ![01 Create KEY 05](images/01-create-key05.png)
 
-Saisissez `le mot de passe ainsi que sa confirmation` ensuite cliquez sur `J'ai enregistré le mot de passe dans un lieu sûr`{.action} et cliquez sur `SAUVEGARDER LE FOURNISSEUR DE CLÉS`{.action}.
+Saisissez `le mot de passe` et `confirmez le`, ensuite cochez la case `J'ai enregistré le mot de passe dans un lieu sûr`{.action} et cliquez sur `SAUVEGARDER LE FOURNISSEUR DE CLÉS`{.action}.
 
 ![01 Create KEY 06](images/01-create-key06.png)
 
