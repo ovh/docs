@@ -9,7 +9,7 @@ section: 'Webhosting-Konfiguration'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 22.02.2022**
+**Letzte Aktualisierung am 28.07.2022**
 
 ## Ziel
 
@@ -33,6 +33,19 @@ section: 'Webhosting-Konfiguration'
 - Verbindungsfehler („Fehler 530: Login-Authentifizierung fehlgeschlagen“): Stellen Sie sicher, dass die Zugangsdaten für Ihren FTP-Bereich korrekt sind. Gehen Sie hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und überprüfen Sie die Daten im Tab `FTP-SSH`. Die Passwörter werden nie angezeigt, können jedoch geändert werden. Weitere Informationen finden Sie in unseren [FTP-Anleitungen](../verbindung-ftp-speicher-webhosting/).
 
 - FTP-Verbindungen müssen den **passiven Modus** verwenden. Stellen Sie sicher, dass Ihre Skripte bzw. Ihr FTP-Client entsprechend angepasst sind.
+
+### E-Mails <a name="E-Mails"></a>
+
+Um eine hohe Dienstqualität für alle zu gewährleisten und den Versand Ihrer E-Mails an Ihre Empfänger zu optimieren, wenden wir Quoten für unsere Webhosting-Dienste an.
+
+Innerhalb eines gleitenden Zeitraums von 3600 Sekunden (also 1 Stunde) können Sie mit Ihrem Webhosting-Angebot folgendes E-Mail-Versandvolumen nutzen:
+
+|Angebote|Start 10M|Perso|Pro|Performance|
+|---|---|---|---|---|
+|Maximale Anzahl an E-Mails pro Stunde und Dienstleistung|10|100|200|2000|
+
+- Ihre E-Mails werden möglicherweise zeitverzögert gesendet, ausgenommen Spam- oder Phishing-verdächtige E-Mails. Ihre E-Mails werden dazu in einer Warteschlange gespeichert, bis die Anzahl der in der letzten Stunde gesendeten E-Mails unter der Quota liegt.
+- Im Missbrauchsfall oder bei erwiesenem Risiko wird Ihr Dienst gesperrt und Sie werden darüber per E-Mail informiert. Um zu erfahren, wie Sie vorgehen können, wenn ein Account aufgrund von Spam-Verdacht blockiert wurde, konsultieren Sie [unsere Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/blocked-wegen-spam/).
 
 ### Datenbank / SQL
 

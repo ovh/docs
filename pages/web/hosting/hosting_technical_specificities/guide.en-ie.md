@@ -6,7 +6,7 @@ section: 'Configuring the Web Hosting plan'
 order: 4
 ---
 
-**Last updated 22nd February 2022**
+**Last updated 28th July 2022**
 
 
 ## Objective
@@ -32,6 +32,19 @@ order: 4
 - Access error ("530 Login authentication failed"): You can make sure the access credentials to your hosting space are correct by checking via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) ("FTP - SSH"). Passwords are never displayed but they can be changed. Please refer to our [FTP guides](../).
 
 - FTP connections have to use **passive mode**. Please make sure your script or FTP client is adjusted accordingly.
+
+### Emails <a name="emails"></a>
+
+To guarantee a good quality of service for all and make it easier to send your emails to recipients, we apply quotas for our web hosting services.
+
+For a rolling period of 3600 seconds (1 hour), your hosting plan will allow you to send the following email quotas:
+
+|Offers|Start 10M|Personal|Pro|Performance|
+|---|---|---|---|---|
+|Maximum number of emails sent per hour per service|10|100|200|2000|
+
+- Apart from suspected spamming or phishing, the sending of your emails may be delayed. Your emails will be kept in a queue until the number of emails sent in the last hour is less than the quota.
+- In the event of abuse or proven risk, your service will be suspended and you will be notified by email of its suspension. What to do if your account is blocked for spam? Read [our guide](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/blocked-for-spam/).
 
 ### Databases / SQL
 
