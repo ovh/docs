@@ -38,14 +38,14 @@ section: 'Webhosting-Konfiguration'
 
 Um eine hohe Dienstqualität für alle zu gewährleisten und den Versand Ihrer E-Mails an Ihre Empfänger zu optimieren, wenden wir Quoten für unsere Webhosting-Dienste an.
 
-Über einen gleitenden Zeitraum von 3600 Sekunden (also 1 Stunde) können Sie mit Ihrem Webhosting-Angebot folgende E-Mail-Quotas versenden:
+Innerhalb eines gleitenden Zeitraums von 3600 Sekunden (also 1 Stunde) können Sie mit Ihrem Webhosting-Angebot folgendes E-Mail-Versandvolumen nutzen:
 
 |Angebote|Start 10M|Perso|Pro|Performance|
 |---|---|---|---|---|
-|Maximale Versandmenge an E-Mails pro Stunde und Dienstleistung|10|100|200|2000|
+|Maximale Anzahl an E-Mails pro Stunde und Dienstleistung|10|100|200|2000|
 
-- Abgesehen von Spamming- oder Phishing-Verdächtigungen kann der Versand Ihrer E-Mails verschoben werden. Ihre E-Mails werden in einer Warteschlange gespeichert, bis die Anzahl der im letzten Zeitpunkt versandten E-Mails unter dem Quota liegt.
-- Im Falle eines Missbrauchs oder erwiesener Risiken wird Ihr Dienst gesperrt und Sie werden per E-Mail über die Kündigung des Dienstes informiert. Was tun, wenn ein Spam-Account blockiert wird? Konsultieren Sie [unsere Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/blocked-wegen-spam/).
+- Ihre E-Mails werden möglicherweise zeitverzögert gesendet, ausgenommen Spam- oder Phishing-verdächtige E-Mails. Ihre E-Mails werden dazu in einer Warteschlange gespeichert, bis die Anzahl der in der letzten Stunde gesendeten E-Mails unter der Quota liegt.
+- Im Missbrauchsfall oder bei erwiesenem Risiko wird Ihr Dienst gesperrt und Sie werden darüber per E-Mail informiert. Um zu erfahren, wie Sie vorgehen können, wenn ein Account aufgrund von Spam-Verdacht blockiert wurde, konsultieren Sie [unsere Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/blocked-wegen-spam/).
 
 ### Datenbank / SQL
 
