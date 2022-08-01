@@ -6,7 +6,7 @@ section: SSL
 order: 1
 ---
 
-**Dernière mise à jour le 26/07/2022**
+**Dernière mise à jour le 01/08/2022**
 
 ## Objectif
 
@@ -50,7 +50,7 @@ Trois états peuvent alors apparaître :
 
 Pour activer SSL sur un multisite, cliquez sur le bouton `...`{.action} à droite du multisite concerné, puis sur `Modifier le domaine`{.action}. Dans la fenêtre qui s'affiche, cochez la case `SSL`{.action}. Vous pouvez également activer l'option pour modifier le sous-domaine www en même temps que le nom de domaine associé. Suivez les étapes jusqu'à confirmer la modification.
 
-Une fois que vous avez soumis la demande d'activation, l'état de la connexion sécurisée SSL pour le multisite concerné doit être actualisé au bout de quelques secondes, le statut étant remplacé par « À générer ». Répétez cette action si nécessaire si vous souhaitez activer SSL pour d'autres multisites.
+Une fois que vous avez soumis la demande d'activation, le statut de la connexion sécurisée SSL pour le multisite concerné sera actualisé au bout de quelques secondes et remplacé par « À générer ». Répétez cette action si nécessaire si vous souhaitez activer SSL pour d'autres multisites.
 
 > [!primary]
 >
@@ -65,27 +65,27 @@ Une fois que vous avez soumis la demande d'activation, l'état de la connexion s
 
 ### 2. Activer un certificat SSL sur un hébergement web <a name="enablessl"></a>
 
-Avant de procéder à cette configuration, assurez-vous que l'étape précédente [activation d'un certificat SSL sur un site multisite](#multisite), a été effectuée correctement. Au moins un domaine doit avoir l'option SSL `Activée` ou l'état `A générer` pour activer le certificat SSL.<br>
- **Ces informations ne s'appliquent pas si vous sélectionnez `Certificat payant`{.action} ou `Importer de votre certificat SSL`{.action}.**
+Avant de procéder à cette configuration, assurez-vous que l'étape précédente, « [activation d'un certificat SSL sur un site multisite](#multisite) », a été effectuée correctement. Au moins un domaine doit avoir l'option SSL `Activée` ou le statut `A générer` pour activer le certificat SSL.<br>
+**Ces informations ne s'appliquent pas si vous sélectionnez `Certificat payant`{.action} ou `Importer de votre certificat SSL`{.action}.**
 
 
 > [!warning]
 >
-> Avant de poursuivre, vous devez également vous assurez que le ou les entrées multisite pour lesquelles vous activez l'option SSL, pointent vers l'adresse IP de l'hébergement web. Cette configuration vous est automatiquement proposée lorsque vous ajoutez ou modifiez une entrée multisite, mais doit être faite manuellement pour un nom de domaine qui n'est pas géré dans votre espace client.<br>
+> Avant de poursuivre, assurez-vous également que le ou les entrées multisite pour lesquelles vous activez l'option SSL pointent vers l'adresse IP de l'hébergement web. Cette configuration vous est automatiquement proposée lorsque vous ajoutez ou modifiez une entrée multisite, mais doit être faite manuellement pour un nom de domaine qui n'est pas géré dans votre espace client.<br>
 > - Retrouvez l'adresse IP de votre hébergement depuis l'onglet `Informations générales`{.action}, sous la mention `IPv4`.
 > ![managessl](images/manage-ssl-arecord01.png){.thumbnail}
-> - Configurez la zone DNS du nom de domaine déclaré en multisite, depuis la rubrique `Domaines`{.action}, onglet `Zone DNS`{.action}. Modifiez ou ajoutez un enregistrement de type `A` corespondant à votre entrée multisite et renseignez l'adresse IP de votre hébergement dans la `Cible`
+> - Configurez la zone DNS du nom de domaine déclaré en multisite, depuis la rubrique `Domaines`{.action}, onglet `Zone DNS`{.action}. Modifiez ou ajoutez un enregistrement de type `A` corespondant à votre entrée multisite et renseignez l'adresse IP de votre hébergement dans la `Cible`.
 > ![managessl](images/manage-ssl-arecord02.png){.thumbnail}
 >
-> Pour plus de détails, n'hésitez pas à consultez nos guides [sur la configuration d'une entrée multisite](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) ou de [la configuration d'une zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#les-enregistrements-dns).
+> Pour plus de détails, n'hésitez pas à consulter nos guides [sur la configuration d'une entrée multisite](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) ou sur [la configuration d'une zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#les-enregistrements-dns).
 
 Votre hébergement web OVHcloud vous permet d'activer un [certificat SSL selon plusieurs solutions](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external} :
 
-- un certificat SSL gratuits Let's Encrypt [inclus avec une offre d'hébergement web compatible](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external} ;
+- un certificat SSL gratuit Let's Encrypt [inclus avec une offre d'hébergement web compatible](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external} ;
 - un certificat SSL payant [en option avec un hébergement web compatible](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external} ;
 - l'importation d'un certificat SSL commandé auprès d'un autre fournisseur.
 
-Pour activer votre certificat, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis sélectionnez l'hébergement concerné. Cliquez sur l'onglet `Informations générales`{.action}. Sous l'onglet « Certificat SSL », la mention « Non » devrait apparaître, indiquant qu'aucun certificat SSL n'a été configuré ni installé sur votre hébergement web.
+Pour activer votre certificat, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement concerné. Cliquez sur l'onglet `Informations générales`{.action}. Sous l'onglet « Certificat SSL », la mention « Non » devrait apparaître, indiquant qu'aucun certificat SSL n'a été configuré ni installé sur votre hébergement web.
 
 Cliquez sur le bouton `...`{.action} à côté de « Certificat SSL », puis sur `Commander un certificat SSL`{.action}.
 
