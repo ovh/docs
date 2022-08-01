@@ -10,7 +10,7 @@ order: 4
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22/02/2022**
+**Última atualização: 28/07/2022**
 
 ## Objetivo
 
@@ -35,6 +35,19 @@ order: 4
 - Erro de acesso («Erro de autenticação de login 530»): Assegure-se de que as informações de acesso ao seu espaço FTP estão corretas. Para isso, verifique-as através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no separador `FTP - SSH`. As palavras-passe nunca são exibidas, mas podem ser alteradas. Consulte os nossos [guias FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/).
 
 - As conexões FTP devem utilizar o **modo passivo**. Certifique-se de que o script ou o cliente FTP está ajustado em conformidade.
+
+### E-mails <a name="emails"></a>
+
+Para garantir uma boa qualidade de serviço para todos e simplificar o envio dos seus e-mails para os seus destinatários, aplicamos quotas para os nossos serviços de alojamento web.
+
+Durante um período de 3600 segundos (ou seja, 1 hora), a sua oferta de alojamento permitir-lhe-á enviar as seguintes quotas de e-mail:
+
+|Offres|Start 10M|Perso|Pro|Performance|
+|---|---|---|---|---|
+|Quantidade máxima de envio de e-mails por hora e por serviço|10|100|200|2000|
+
+- Para além das suspeitas de spamming ou phishing, a expedição dos seus e-mails poderá ser diferida. Os seus e-mails serão guardados numa fila de espera até que o número de e-mails enviados na hora anterior seja inferior ao limite.
+- Em caso de abuso ou de risco comprovado, o seu serviço será suspenso e ser-lhe-á enviado um e-mail a informá-lo da suspensão do serviço. O que fazer em caso de conta bloqueada por spam? Consulte [nosso guia](https://docs.ovh.com/pt/microsoft-collaborative-solutions/bloqueado-por-spam/).
 
 ### Base de dados / SQL
 

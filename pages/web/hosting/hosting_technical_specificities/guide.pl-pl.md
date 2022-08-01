@@ -10,7 +10,7 @@ order: 6
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 22-02-2022**
+**Ostatnia aktualizacja z dnia 28-07-2022**
 
 ## Wprowadzenie
 
@@ -35,6 +35,19 @@ order: 6
 - Błąd dostępu („Uwierzytelnienie połączenia 530 zakończyło się niepowodzeniem”): Upewnij się, że informacje dotyczące dostępu do Twojej przestrzeni FTP są poprawne, sprawdzając je w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w karcie `FTP - SSH`. Hasła nigdy nie są wyświetlane, ale można je zmieniać. Zapoznaj się z [przewodnikami dotyczącymi FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web//).
 
 - Połączenia FTP muszą korzystać z **trybu pasywnego**. Upewnij się, że Twój skrypt lub klient FTP jest odpowiednio skonfigurowany.
+
+### E-maili <a name="emails"></a>
+
+Aby zagwarantować dobrą jakość usługi dla wszystkich i uprościć wysyłkę e-maili do odbiorców, my ustalamy limity dotyczące naszych usług hostingowych.
+
+W ciągu 3600 sekund (czyli 1 godzina) Twoja oferta hostingowa pozwoli Ci na wysłanie następujących kont e-mail:
+
+|Oferty|Start 10M|Perso|Pro|Performance|
+|---|---|---|---|---|
+|Maksymalna ilość wysyłki e-maili na godzinę i na usługę|10|100|200|2000|
+
+- Poza podejrzeniem spamu lub phishingu, wysyłka e-maili może zostać odroczona. Twoje e-maile będą przechowywane w kolejce do momentu, aż liczba e-maili wysłanych w ciągu ostatniej godziny nie przekroczy limitu.
+- W przypadku stwierdzonego nadużycia lub ryzyka Twoja usługa zostanie zawieszona i otrzymasz e-mail z powiadomieniem o zawieszeniu usługi. Co zrobić w przypadku konta zablokowanego z powodu spamu? Sprawdź [nasz przewodnik](https://docs.ovh.com/pl/microsoft-collaborative-solutions/blokada-za-spam/).
 
 ### Baza danych / SQL
 

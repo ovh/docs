@@ -6,11 +6,11 @@ section: vRack
 order: 2
 ---
 
-**Last updated 22nd July 2020**
+**Last updated 28th July 2022**
 
 ## Objective
 
-The [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} is a private network that allows you to configure addressing between two or more compatible OVHcloud services. It also allows you to add [Public Cloud instances](https://www.ovhcloud.com/asia/public-cloud/) to your private network to create an infrastructure of physical and virtual resources.
+The [vRack](https://www.ovh.com/asia/solutions/vrack/) is a private network that allows you to configure addressing between two or more compatible OVHcloud services. It also allows you to add [Public Cloud instances](https://www.ovhcloud.com/asia/public-cloud/) to your private network to create an infrastructure of physical and virtual resources.
 
 **This guide provides some basic information on creating and configuring the vRack on Public Cloud using the OVHcloud API.**
 
@@ -40,7 +40,7 @@ Once logged in, follow the steps described below:
 > [!primary]
 > This call will create an ID for your "Cart". You will be able to add products to it before checking out.
 >
-> For this case, ordering a vRack is free. Copy the ID for your cart (cartId), you will need it further down.
+> For this case, ordering a vRack is free. Copy your cart ID (cartId), you will need it further down.
 >
 
 #### Obtaining required information to order the vRack
@@ -63,7 +63,7 @@ Once logged in, follow the steps described below:
 >
 
 > [!primary]
-> This call allows you to add the vRack to the card by filling in the required information.
+> This call allows you to add the vRack to the cart by filling in the required information.
 >
 > For vRack:
 >
@@ -78,11 +78,11 @@ Once logged in, follow the steps described below:
 > quantity : 1
 >
 
-Once you have added the vRack to the cart, you should receive an itemID. Copy this, it will be useful for making modifications before checking out.
+Once you have added the vRack to the cart, you should receive an "itemID". Copy this, it will be useful for making modifications before checking out.
 
-#### Checking Out
+#### Validating the cart
 
-Once the items have been placed in the card, you will need to checkout:
+Once the items have been placed in the cart, you will need to checkout:
 
 > [!api]
 >
@@ -90,12 +90,12 @@ Once the items have been placed in the card, you will need to checkout:
 >
 
 > [!primary]
-> This call will checkout the card and will genearte a purchase order (orderID). Save this ID, it will be required to validate the order.
+> This call will validate the cart and create a purchase order ("orderId"). Keep this information, it will be necessary to validate the order.
 >
 
-#### Final validation of the order
+#### Validating the final order
 
-To validate the order, there are 2 possible methods:
+To validate the order, you have two possibilities:
 
 * Go to the URL given when checking out. Example:
 > url: https://www.ovh.com/cgi-bin/order/displayOrder.cgi?orderId=12345678&orderPassword=xxxxxxxxxx
@@ -115,7 +115,7 @@ Once the free order has been validated, it may take a few minutes for the vRack 
 
 ### Step 2: Add your Public Cloud project to the vRack
 
-Once the vRack is active, you will need to assign your Public Cloud projects to the vRack.
+Once the vRack is active, you will need to integrate your Public Cloud project(s) into the vRack.
 
 Connect to the OVHcloud API using the following guide [First steps with the OVHcloud API](../../api/first-steps-with-ovh-api){.external}.
 
@@ -129,7 +129,7 @@ If you do not know your Public Cloud project ID, the following calls will allow 
 >
 
 > [!primary]
-> This call will generate a list of your projects IDs
+> This call retrieves the list of projects.
 >
 
 > [!api]
@@ -138,7 +138,7 @@ If you do not know your Public Cloud project ID, the following calls will allow 
 >
 
 > [!primary]
-> This will help identify the project by displaying the description
+> This call identifies the project via the "description" field.
 >
 
 #### Adding the project to the vRack
@@ -151,14 +151,15 @@ Once you have identified the project and vRack, you can associate them with the 
 >
 
 Fill in the fields with the information previously collected:
-**serviceName** : name of the  vRack in the form:  « pn-xxxxxx »
-**project** : The Public Cloud project ID, in a string of  32 caractères.
+
+**serviceName** : name of the vRack in the form: « pn-xxxxxx »
+<br>**project** : The Public Cloud project ID in the form of a 32-character string
 
 > [!primary]
 > This call initialises the assignment of the project to the vRack, you will need to copy the task ID to verify its progress.
 >
 
-#### Verifying the progrss of the assignment task
+#### Verifying the progress of the assignment task
 
 You can verify the progress of the assignment task with the help of the following API call:
 
@@ -168,19 +169,19 @@ You can verify the progress of the assignment task with the help of the followin
 >
 
 > [!primary]
-> This call allows you only verify the status of the task. Once the task is done, you can proceed to the following step.
+> This call only allows you to verify the status of the task. Once the task is done, you can proceed to the following step.
 >
 
 ### Step 3:  Create a VLAN on the vRack
 
 A VLAN (Virtual Local Area Network) will need to be created so that your instances can communicate with each other over the vRack.
 
-With the Public Cloud, you can create up to 4,000 vLANs in a single vRack. This means that you can use each private IP up to 4000 times.
-Thus, for example, the IP 192.168.0.10 on VLAN 2, will be different than 192.168.0.10 on vLAN 42.
+With the Public Cloud, you can create up to 4,000 VLANs in a single vRack. This means that you can use each private IP up to 4000 times.
+Thus, for example, the IP 192.168.0.10 on VLAN 2, will be different than 192.168.0.10 on VLAN 42.
 
 This can be useful for segmenting your vRack between multiple virtual networks.
 
-From the OVHcloud API, you can customize the settings: IP range (e.g 10.0.0.0/16), deployment zones, DHCP, Gateway...
+From the OVHcloud API, you can customize the settings: IP range (e.g 10.0.0.0/16), deployment zones, DHCP, Gateway, etc.
 
 > [!primary]
 > On dedicated servers, by default, you are using VLAN 0. The OpenStack infrastructure requires that you specify your VLAN number directly at the hardware level.
@@ -195,9 +196,9 @@ From the OVHcloud API, you can customize the settings: IP range (e.g 10.0.0.0/16
 > As OpenStack is not located on the same infrastructure level as the vRack, you will not be able to customize VLANs through the Horizon interface or OpenStack APIs.
 >  
 
-Once logged into the the [API](https://ca.api.ovh.com/){.external}, execute the calls the following in order.
+Once logged into the [API](https://ca.api.ovh.com/), follow these steps:
 
-#### Obtaining the required infomration :
+#### Obtaining the required information
 
 ##### **Public Cloud Project**
 
@@ -207,7 +208,7 @@ Once logged into the the [API](https://ca.api.ovh.com/){.external}, execute the 
 >
 
 > [!primary]
-> This call will generate a list of your projects IDs
+> This call will generate a list of your projects IDs.
 >
 
 > [!api]
@@ -216,7 +217,7 @@ Once logged into the the [API](https://ca.api.ovh.com/){.external}, execute the 
 >
 
 > [!primary]
-> This will help identify the project by displaying the description
+> This call identifies the project via the "description" field.
 >
 
 ##### **vRack**
@@ -227,7 +228,7 @@ Once logged into the the [API](https://ca.api.ovh.com/){.external}, execute the 
 >
 
 > [!primary]
-> In the serviceName field, enter your Project ID. Save the serviceName of the vRack in the form of "pn-XXXXX:..
+> In the serviceName field, enter your Project ID. Save the serviceName of the vRack in the form of "pn-XXXXX".
 >
 
 
@@ -241,18 +242,18 @@ Once logged into the the [API](https://ca.api.ovh.com/){.external}, execute the 
 > [!primary]
 > Fill in the field with the previously obtained information :
 >
-> **serviceName** : ID du projet
+> **serviceName** : project ID
 >
-> **name** : le nom que vous voulez donner au vLan.
+> **name** : the name you want to give to the VLAN
 >
-> You can leave the "Region" field empty if you want it to be active in all regions..
+> You can leave the "regions" field blank in order to enable it for all regions.
 >
-> The "vLanID" is required to create a specific vLAN.
+> The VLAN identifier (vlanId) is required if you want to create a specific VLAN.
 >
 
 The creation will take a few minutes.
 
-To verify the details of your VLANs, you can us the following API call :
+To verify the details of your VLANs, you can use the following API call:
 
 > [!api]
 >
@@ -260,7 +261,7 @@ To verify the details of your VLANs, you can us the following API call :
 >
 
 > [!primary]
-> This call will retrive the networkId. It will appear as: pn-XXXXXX__vlanId.
+> This call will retrieve the networkId. It will appear as: pn-XXXXXX__vlanId.
 >
 > For example, for VLAN 42 it would appear as: pn-xxxxxx_42
 >
@@ -282,13 +283,13 @@ To do this, once the VLAN is created, you will need to create the subnet for eac
 > @api {POST} /cloud/project/{serviceName}/network/private/{networkId}/subnet
 >
 
-You can fill our the fields like the following:
+You can fill out the fields like the following:
 
 |Field|Description|
 |---|---|
 |serviceName|'The ID of your project'|
-|networkId|'ID that was retrived previously. Ex : pn-xxxxxx_42 pour le vLan 42'|
-|dhcp|Checked to activate / Unchecked to leave deactivated on the vLan|
+|networkId|'ID that was retrieved previously. Ex : pn-xxxxxx_42 for VLAN 42'|
+|dhcp|Check box for enabling / uncheck for disabling DHCP in the VLAN|
 |end|Last address in the subnet in the region Ex : 192.168.1.50|
 |network|Subnet IP block. Ex : 192.168.1.0/24|
 |region|Example : SBG3|
@@ -297,7 +298,7 @@ You can fill our the fields like the following:
 > [!primary]
 > This is the step of creating the subnet by region. You can enable or disable private IP address assignment dynamically through DHCP.
 >
-> You will have to do the same for each area where your instances are present.
+> You will need to do the same for each region where your instances are present.
 >
 
 > [!warning]
@@ -320,9 +321,9 @@ Two situations may exist:
 
 Once connected to the [API](https://ca.api.ovh.com/), execute the following commands in order.
 
-##### **Retrieving required information**
+##### **Retrieving the required information**
 
-###### Retrieving project ID:
+###### Retrieving the project ID:
 
 > [!api]
 >
@@ -344,7 +345,7 @@ Once connected to the [API](https://ca.api.ovh.com/), execute the following comm
 >
 
 > [!primary]
-> The networkID  obtained is in the form: "pn-xxxxx_yy" where yy is the vLan number.
+> The networkID obtained is in the form: "pn-xxxxx_yy" where yy is the VLAN number.
 
 ###### Retrieving the ID of the chosen instance type (flavorId)
 
@@ -354,7 +355,7 @@ Once connected to the [API](https://ca.api.ovh.com/), execute the following comm
 >
 
 > [!primary]
-> You can limit the list by specifying the creation zone of your instance
+> You can limit the list by specifying the creation region of your instance.
 
 
 ###### Retrieving the ID of the chosen image (imageId)
@@ -365,7 +366,7 @@ Once connected to the [API](https://ca.api.ovh.com/), execute the following comm
 >
 
 > [!primary]
-> You can limit the list by specifying the creation zone of your instance
+> You can limit the list by specifying the creation region of your instance.
 
 ###### Retrieving your OpenStack SSH Key ID (sshKeyId)
 
@@ -374,7 +375,7 @@ Once connected to the [API](https://ca.api.ovh.com/), execute the following comm
 > @api {GET} /cloud/project/{serviceName}/sshkey
 >
 
-If you haven't added an SSH key to your client space yet, you can do so through the following API:
+If you have not added an SSH key to your OVHcloud Control Panel yet, you can do so using the following call:
 
 > [!api]
 >
@@ -383,14 +384,14 @@ If you haven't added an SSH key to your client space yet, you can do so through 
 
 ###### **Instance Deployment**
 
-Once all the elements necessary for the deployment are gathered, you can use the following call
+Once all the elements necessary for the deployment are gathered, you can use the following call:
 
 > [!api]
 >
 > @api {POST} /cloud/project/{serviceName}/instance
 >
 
-You will need to enter at least the following fields:
+You will need to fill in at least the following fields:
 
 |Field|Description|
 |---|---|
@@ -398,7 +399,7 @@ You will need to enter at least the following fields:
 |flavorId|Instance Type ID (e.g. S1-2, B2-7, WIN-R2-15...)|
 |imageId|Deployment Image ID (ex: Debian 9, Centos 7..)|
 |name|Name you give to your instance.|
-|networks|In the "networkId" part, enter the public network ID (ext-net) or your vLan ID (pn-xxxxxx_yy). You can click the "+" button to add more networks.|
+|networks|In the "networkId" part, enter the public network ID (ext-net) or your VLAN ID (pn-xxxxxx_yy). You can click the "+" button to add more networks.|
 |region|Instance Deployment Regions (for example, GRA5)|
 |sshKeyId|Your OpenStack SSH Key ID|
 
@@ -406,38 +407,38 @@ Once the call is executed, if all information is correctly filled in, the instan
 
 > [!warning]
 >
-> Depending on operating systems, you will need to manually configure your private network interfaces for consideration.
->OpenStack is unable to prioritize the public interface of the vRack interface, so the vRack interface may pass as the default route.
->The direct consequence is that the instance is unreachable from a public IP.
->One or more reboots of the instance from the client space can restore the situation.
->The other solution is to connect to the SSH instance through another of your servers in the same private network. You can also correct the network configuration of the instance through Rescue mode.
+> Depending on operating systems, you will need to manually configure your private network interfaces to be considered.
+><br>Because OpenStack is unable to prioritise the public interface of the vRack interface, the vRack interface may sometimes pass as the default route.
+><br>The direct consequence is that the instance is unreachable from a public IP.
+><br>One or more reboots of the instance from the Control Panel can resolve this situation.
+><br>The other solution is to connect to the instance via another server in the same private network. You can also correct the network configuration of the instance through Rescue mode.
 >
 
 #### Cases of an already existing instance
 
-If you need to integrate an existing instance into vRack, you will not be able to do so from your OVHcloud client space. To do this, you will have to go through Horizon, the Openstack APIs or the OVHcloud API.
+If you need to integrate an existing instance into the vRack, you will not be able to do so from your OVHcloud Control Panel. To do this, you will have to go through Horizon, the Openstack APIs or the OVHcloud API.
 
 The action will simply be to add a new network interface to your server, in addition to the existing one.
 
-So, for example, if you have a eth0 public interface, you will also have an eth1 interface.
+For example, if you have a public interface *eth0*, you will add the interface *eth1*.
 
 > [!primary]
 > The configuration of this new interface is rarely automatic.
->You'll need to configure it as DHCP or Fixed IP depending on your infrastructure.
+>You'll need to configure it as DHCP or Statci IP depending on your infrastructure.
 >
 
 **The steps below describe how to manage your instances' network interfaces.**
 
-##### **Retrieving required information**
+##### **Retrieving the required information**
 
-###### Retrieving project ID:
+###### Retrieving the project ID:
 
 > [!api]
 >
 > @api {GET} /cloud/project
 >
 
-####### Retrieving Instance ID:
+###### Retrieving Instance ID:
 
 > [!api]
 >
@@ -459,7 +460,7 @@ So, for example, if you have a eth0 public interface, you will also have an eth1
 >
 
 > [!primary]
-> The ID obtained is in the form of: "pn-xxxxx_yy" where yy is the vLan number.
+> The ID obtained is in the form of: "pn-xxxxx_yy" where yy is the VLAN number.
 
 ##### **Adding an interface to your instance**
 
@@ -470,21 +471,21 @@ Once all the necessary information is retrieved, you can use the following call:
 > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/interface
 >
 
-You will need to enter at least the following fields:
+You will need to fill in at least the following fields:
 
 |Field|Description|
 |---|---|
 |serviceName|ID of the relevant Public Cloud project|
 |instanceId|ID of the instance concerned|
-|networkId|Specify the public network ID (ext-net) or your vLan ID (pn-xxxxxx_yy)|
+|networkId|Specify the public network ID (ext-net) or your VL ID (pn-xxxxxx_yy)|
 |ip|Set a specific IP (only works for private interfaces)|
 
 Once the call is complete, if all information is correctly filled in, a new interface will be added to your instance.
 
 > [!primary]
-> Your OVHcloud instance will have a new network interface in addition to the public interface (Ext-net).
->You can see in the instance summary the private IP address automatically assigned to your interface.
->It is your responsibility to use it by configuring your interface through DHCP or by using your own IP through a static IP configuration.
+> Your OVHcloud instance will have a new network interface in addition to the public interface (Ext-Net).
+><br>In the instance summary, you can see the private IP address that is automatically assigned to your interface.
+><br>It is your responsibility to correctly configure the interface through DHCP or by using the proper IP addresses through a static IP configuration.
 >
 
 ##### **Removing an interface from your instance**
@@ -492,8 +493,8 @@ Once the call is complete, if all information is correctly filled in, a new inte
 > [!warning]
 > Removing an interface is permanent.
 >
->In case you remove the "Ext-Net" interface (public IP), this address would be released and recycled. So you couldn't reassign it to yourself.
-><br>This action is only to be performed if you want to isolate your server in the vRack (Ext-Net interface) or exit it from a vLan.
+>If you remove the "Ext-Net" interface (public IP), this address would be released and recycled. It is not possible to just reassign it.
+><br>This action is only to be performed if you want to isolate your server in the vRack (Ext-Net interface) or remove it from a VLAN.
 >
 
 Once all the necessary information is retrieved, you can use the following call to remove an interface:
@@ -503,13 +504,14 @@ Once all the necessary information is retrieved, you can use the following call 
 > @api {DELETE} /cloud/project/{serviceName}/instance/{instanceId}/interface/{interfaceId}
 >
 
-You will need to enter at least the following fields:
+You will need to fill in at least the following fields:
 
 |Field|Description|
 |---|---|
 |serviceName|ID of the relevant Public Cloud project|
 |instanceId|Id of the instance concerned|
-|networkId|Specify the public network ID (ext-net) or your vLan ID (pn-xxxxxx_yy)|
+|networkId|Specify the public network ID (ext-net) or your VLAN ID (pn-xxxxxx_yy)|
+
 ## Go further
 
 [Configuring vRack with the Public Cloud](../public-cloud-vrack)
