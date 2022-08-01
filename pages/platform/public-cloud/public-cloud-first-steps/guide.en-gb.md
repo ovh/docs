@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 26th March 2021**
+**Last updated 1st August 2022**
 
 ## Objective
 
@@ -229,6 +229,11 @@ A user with elevated permissions is automatically created on the instance. The u
 > [!primary]
 >
 If you encounter issues with your connection, i.e. errors regarding your SSH keys, please refer to the guide on [Replacing your lost SSH key pair](../replacing_your_lost_ssh_key_pair/).
+>
+
+> [!primary]
+>
+If you have created an instance without an SSH key, via the OVHcloud API or the OpenStack Horizon interface, you can only add an SSH key to your instance via [rescue mode](https://docs.ovh.com/gb/en/public-cloud/put_an_instance_in_rescue_mode/) by following the instructions set out in [this section of the appropriate guide](../replacing_your_lost_ssh_key_pair/#instructions).
 >
 
 #### Connecting to a Linux OS instance from Linux OS / Mac

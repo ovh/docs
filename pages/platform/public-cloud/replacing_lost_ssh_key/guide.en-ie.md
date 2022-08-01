@@ -30,10 +30,10 @@ To regain access, we have provided you with a [rescue mode](../put_an_instance_i
 If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
 >
 
-After mounting your instance's disk in [rescue mode](../put_an_instance_in_rescue_mode/), you will be able to access all your files. The file containing your SSH keys is shown below:
+After mounting your instance's disk in [rescue mode](../put_an_instance_in_rescue_mode/#step-2-accessing-your-data), you will be able to access all your files. The file containing your SSH keys is shown below:
 
 ```
-/home/USER_NAME/.ssh/authorized_keys
+/mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 If you want to add your new SSH key, you just have to edit this file as follows:
