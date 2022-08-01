@@ -43,11 +43,11 @@ IL est possible d'importer la clé sur un autre cluster dans le cas d'un plan de
 
 -->
 
-### Création d'une clé pour 
+### Création d'une clé vNKP
 
 Nous allons créer la clé de chiffrement.
 
-Connectez-vous à l'interface vSPHERE à l'aide de ce guide [Se connecter à l'interace vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
+Connectez-vous à l'interface vSphere à l'aide de ce guide [Se connecter à l'interace vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
 
 Cliquez en haut à gauche sur le la racine du `cluster`{.action}, ensuite cliquez sur l'onglet `Configurer`{.action} et choisissez `Fournisseurs de clés`{.action}.
 
@@ -79,7 +79,9 @@ Il est possible maintenant d'utiliser la clé pour chiffrer des machines virtuel
 
 ### Chiffrement d'une machine virtuelle
 
-Avant de lancer le chiffrement d'un machine virtuelle il faut absolument quelle soit éteinte.
+Nous allons chiffrer le fichier de configuration de la machine virtuelle ainsi que les disques de stockage.
+
+Eteignez la machine virtuelle, avant de lancer le chiffrement.
 
 Faites un clic droit sur la `machine virtuelle`{.action} que vous voulez chiffrer, à partir du menu `Stratégies de VM`{.action} et choisissez `Modifier les stratégies de stockage VM`{.action}.
 
@@ -93,9 +95,18 @@ Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.a
 
 ![02 encrypt VM 03](images/02-encrypt-vm03.png) 
 
-### Migration de la solution **KMS** vers **VNKP**
+### Migration de la solution KMS Thalès vers VNKP
 
-des clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes, il est possible de migrer les machines virtuelles utilisant ce système vers VNKP.
+Des clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes, Il est possible de migrer le cryptage vers vNKP
+
+Nous allons migrer une machine virtuelle chiffrée avec le système KMS de Thalès nommé **cluster** vers une clé vNKP nommé **MY-NKP**.
+
+Au travers de la consoles **vSphere** de votre cluster cliquez en haut à gauche sur la `racine du cluster`{.action}. allez en haut dans l'onglet `Configurer`{.action} cliquez `Fournisseurs de clés`{.action}. Positionnez vous sur la `clé VNKP`{.action} et cliquez dans l'onglet sur `DÉFINIR COMME VALEUR PAR DÉFAUT`{.action}.
+
+![03 migrate-from-kms-to-vnkp 01](images/03-migrate-from-kms-to-vnkp01.png)
+
+
+
 
 
 
@@ -104,8 +115,8 @@ des clients OVHcloud utilisent une solution de chiffrement avec des clés KMS ex
 
 ## Aller plus loin
 
-[Présentation de Vsphere Native Key Provider](https://core.vmware.com/native-key-provider)
+[Présentation VMWARE pour vSphere Native Key Provider](https://core.vmware.com/native-key-provider)
 
-[Documentation Vsphere Native Key Profider](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html)
+[Documentation VMWARE pour vSphere Native Key Profider](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
