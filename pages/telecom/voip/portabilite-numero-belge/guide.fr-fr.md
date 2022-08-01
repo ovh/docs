@@ -115,8 +115,9 @@ Nous vous recommandons également de consulter régulièrement votre adresse e-m
 > Le cas échéant, vous pouvez contacter notre support en cliquant successivement, dans votre espace client, sur `Besoin d'aide`{.action} puis `Demande d'assistance`{.action}. Une facture récente (moins de 3 mois) de votre opérateur cédant vous sera alors systématiquement demandée par nos services techniques.
 > 
 
-Vous trouverez ci-dessous un récapitulatif des différentes étapes du processus de portabilité d'un numéro belge chez OVHcloud :
 <a name="steps"></a>
+Vous trouverez ci-dessous un récapitulatif des différentes étapes du processus de portabilité d'un numéro belge chez OVHcloud 
+
 |Avancement dans le processus|Description|Délai estimé|
 |---|---|---|
 |Demande envoyée à l'opérateur|La demande est envoyée à l'opérateur cédant|2 heures|
