@@ -34,7 +34,7 @@ section: 'Webhosting-Konfiguration'
 
 - FTP-Verbindungen müssen den **passiven Modus** verwenden. Stellen Sie sicher, dass Ihre Skripte bzw. Ihr FTP-Client entsprechend angepasst sind.
 
-### E-Mails <a name="E-Mails"></a>
+### E-Mails <a name="emails"></a>
 
 Um eine hohe Dienstqualität für alle zu gewährleisten und den Versand Ihrer E-Mails an Ihre Empfänger zu optimieren, wenden wir Quoten für unsere Webhosting-Dienste an.
 
