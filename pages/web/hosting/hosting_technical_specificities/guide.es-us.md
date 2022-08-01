@@ -43,7 +43,7 @@ Para garantizar una buena calidad de servicio para todos y facilitar el envío d
 En un período de 3600 segundos (es decir, 1 hora), su plan de hosting le permitirá enviar los siguientes límites de correo:
 
 |Solución|Perso|Pro|Performance|
-|---|---|---|---|---|
+|---|---|---|---|
 |Cantidad máxima de envío de correo por hora y servicio|100|200|2000|
 
 - Aparte de las sospechas de spamming o phishing, el envío de los mensajes de correo podría aplazarse. Su correo se conservará en una cola de espera hasta que el número de mensajes enviados durante la hora anterior sea inferior al de tráfico.
