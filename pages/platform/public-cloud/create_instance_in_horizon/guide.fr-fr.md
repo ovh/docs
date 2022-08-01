@@ -6,7 +6,7 @@ section: Gestion depuis Horizon
 order: 03
 ---
 
-**Dernière mise à jour le 30/12/2021**
+**Dernière mise à jour le 01/08/2022**
 
 ## Objectif
 

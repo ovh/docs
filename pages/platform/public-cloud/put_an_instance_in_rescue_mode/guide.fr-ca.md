@@ -7,7 +7,7 @@ section: "Gestion depuis l'espace client"
 order: 3
 ---
 
-**Dernière mise à jour le 11/02/2022**
+**Dernière mise à jour le 01/08/2022**
 
 ## Objectif
 
@@ -76,7 +76,7 @@ Une fois vos tâches terminées, vous pouvez désactiver le mode rescue en redé
 ![tableau de bord](images/rescueexit2022.png){.thumbnail}
 
 > [!warning]
-> Si le bouton `Sortir du mode rescue`{.action} n'apparaît pas alors que l'instance est en mode rescue, nous vous recommandons de rafraîchir votre onglet.
+> Si le bouton `Sortir du mode rescue`{.action} n'apparaît pas une fois l'instance en mode rescue, nous vous recommandons de rafraîchir votre onglet.
 >
 
 ### Activer le mode rescue avec les API OpenStack
