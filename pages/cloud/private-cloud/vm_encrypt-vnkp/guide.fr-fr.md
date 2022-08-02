@@ -1,5 +1,5 @@
 ---
-title: Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider (VNKP)
+title: Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider
 slug: vm-encrypt-vpnkp
 excerpt: Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider (VNKP)
 section: Fonctionnalités VMware vSphere
@@ -14,6 +14,12 @@ Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Enc
 
 
 **Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec VM Encryption.**
+
+> [!warning]
+> OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+>
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+>
 
 ## Prérequis
 
@@ -38,16 +44,17 @@ Le chiffrement sur des cluster **vSphere** se fait en deux étapes, les données
 
 ## En pratique
 
+### Autorisation de la fonctionnalité au travers de l'espace client OVHcloud
+
+Non encore disponible
 
 <!--- Partie à écrire dès que la fonctionnalité sera présente
 
-### Autorisation de la fonctionnalité au travers de l'espace client OVHcloud
-
 -->
 
-### Création d'une clé vNKP
+### Création d'une clé **vSphere Native Key Provider**
 
-Nous allons créer la clé de chiffrement. Cette clé est une clé **KEK** (*Key Encryption Key*) qui sert pour faire du chiffrement symétrique (*wrap*) de la clé **DEK** qui elle est installée sur les ESxi et qui crypte les données de la machine virtuelle. 
+Nous allons créer la clé de chiffrement. Cette clé est une clé **KEK** (*Key Encryption Key*) qui sert pour faire du chiffrement symétrique (*wrap*) de la clé **DEK** qui se trouve sur les hôtes **ESXi**. 
 
 Connectez-vous à l'interface vSphere à l'aide de ce guide [Se connecter à l'interace vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
 
@@ -81,9 +88,11 @@ Il est possible maintenant d'utiliser la clé pour chiffrer des machines virtuel
 
 ### Chiffrement d'une machine virtuelle
 
-Nous allons chiffrer le fichier de configuration de la machine virtuelle ainsi que les disques de stockage. L'opération de chiffrement se fait en deux étapes, le données sont chiffrées à l'aide d'un clé **DEK** (Data encryption Key) qui se trouve sur les serveurs Esxi et ensuite la clé **DEK** est re-chiffrée (**wrapped**) à l'aide de la clé **KEK** générée précédemment.
+Nous allons chiffrer le fichier de configuration de la machine virtuelle ainsi que les disques de stockage. L'opération de chiffrement se fait en deux étapes, les données sont chiffrées à l'aide d'un clé **DEK** (Data encryption Key) qui se trouve sur les serveurs Esxi et ensuite la clé **DEK** est re-chiffrée (**wrapped**) à l'aide de la clé **KEK** générée précédemment.
 
-Eteignez la machine virtuelle, avant de lancer le chiffrement.
+> [!warning]
+> L'opération de chiffrement d'une machine virtuelle ne peut se faire qu'avec la machine virtuelle étéinte
+>
 
 Faites un clic droit sur la `machine virtuelle`{.action} que vous voulez chiffrer, à partir du menu `Stratégies de VM`{.action} et choisissez `Modifier les stratégies de stockage VM`{.action}.
 
@@ -97,13 +106,13 @@ Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.a
 
 ![02 encrypt VM 03](images/02-encrypt-vm03.png) 
 
-### Migration de la solution KMS Thalès vers vNKP
+### Migration de la solution KMS Thalès vers **vSphere Native Key provider**
 
-Certains clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes, Il est possible de migrer le cryptage vers **vNKP**
+Certains clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes, Il est possible de migrer le cryptage vers vSphere Native Key Provider
 
-Nous allons migrer une machine virtuelle chiffrée avec une clés KMS de Thalès nommée **cluster** vers une clé **vNKP** portant le nom **MY-NKP**.
+Nous allons migrer une machine virtuelle chiffrée avec une clés KMS de Thalès nommée **cluster** vers une clé vSphere Native Key Provider portant le nom **MY-NKP**.
 
-Au travers de la console **vSphere** de votre cluster cliquez en haut à gauche sur la `racine du cluster`{.action}. allez en haut dans l'onglet `Configurer`{.action} cliquez `Fournisseurs de clés`{.action} dans la barre verticale, positionnez vous sur la `clé vNKP`{.action} et cliquez dans l'onglet sur `DÉFINIR COMME VALEUR PAR DÉFAUT`{.action}.
+A partir de la console **vCenter** de votre cluster cliquez en haut à gauche sur la `racine du cluster`{.action}. allez en haut dans l'onglet `Configurer`{.action} cliquez `Fournisseurs de clés`{.action} dans la barre verticale, positionnez vous sur la `clé vNKP`{.action} et cliquez dans l'onglet sur `DÉFINIR COMME VALEUR PAR DÉFAUT`{.action}.
 
 ![03 migrate-from-kms-to-vnkp 01](images/03-migrate-from-kms-to-vnkp01.png)
 
@@ -111,7 +120,7 @@ Cliquez sur `DÉFINIR COMME VALEUR PAR DÉFAUT`{.action}.
 
 ![03 migrate-from-kms-to-vnkp 02](images/03-migrate-from-kms-to-vnkp02.png)
 
-La clé **vNKP** est définie par défaut.
+La clé **vSphere Native Key Provider** est définie par défaut.
 
 ![03 migrate-from-kms-to-vnkp 03](images/03-migrate-from-kms-to-vnkp03.png)
 
@@ -123,10 +132,9 @@ Au travers de **vCenter** faites un clic droit sur `la machine virtuelle`{.actio
 
 ![03 migrate-from-kms-to-vnkp 04](images/03-migrate-from-kms-to-vnkp04.png)
 
-L'opération ne prends que quelques millisecondes se termine en quelques millisecondes car ce n'est que la **DEK** qui est re-chifrée à l'aide la nouvelle **KEK** venant de **vNKP**.
+Le re-chiffrement s'éffectue en quelques millisecondes car ce n'est que la **DEK** qui est re-chifrée à l'aide la nouvelle clé **vSphere Native Key Provider**.
 
 ![03 migrate-from-kms-to-vnkp 05](images/03-migrate-from-kms-to-vnkp05.png)
-
 
 ## Aller plus loin <a name="gofurther"></a>
 
