@@ -30,9 +30,11 @@ Pour pouvoir l'utiliser il faut un cluster vSphere 7.0 Update 2 avec une licence
 
 L'option doit être activée sur l'espace client OVHcloud.
 
-La clé est crée sur vCenter et est copié sur chacun des serveurs Esxi membres du cluster, si une clé est supprimée les machines virtuelles qui sont cryptées continuerons à fonctionner jusqu'a quelles soient sorties de l'inventaire.
+La clé est créée sur vSphere et est copiée sur chacun des serveurs Esxi membres du cluster, si une clé est supprimée les machines virtuelles qui sont chiffrés continuerons à fonctionner jusqu'a quelles soient retirées de l'inventaire.
 
 IL est possible d'importer la clé sur un autre cluster dans le cas d'un plan de reprise d'activité.
+
+Le chiffrement sur des cluster **vSphere** se fait en deux étapes, les données des machines virtuelles sont chiffrées à l'aide d'une clé **DEK** qui se trouve sur les serveurs **Esxi**, ensuite cette clé est re-chifrée à l'aide de la clé **vSphere Native Key provider** en que clé **KEK** (*Key Encryption Key*). Vous trouverez plus de détails en consultant  les documentations officielles que vous trouverez dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
@@ -45,11 +47,11 @@ IL est possible d'importer la clé sur un autre cluster dans le cas d'un plan de
 
 ### Création d'une clé vNKP
 
-Nous allons créer la clé de chiffrement.
+Nous allons créer la clé de chiffrement. Cette clé est une clé **KEK** (*Key Encryption Key*) qui sert pour faire du chiffrement symétrique (*wrap*) de la clé **DEK** qui elle est installée sur les ESxi et qui crypte les données de la machine virtuelle. 
 
 Connectez-vous à l'interface vSphere à l'aide de ce guide [Se connecter à l'interace vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
 
-Cliquez en haut à gauche sur le la racine du `cluster`{.action}, ensuite cliquez sur l'onglet `Configurer`{.action} et choisissez `Fournisseurs de clés`{.action}.
+Cliquez en haut à gauche sur la racine du `cluster`{.action}, ensuite cliquez sur l'onglet `Configurer`{.action} et choisissez `Fournisseurs de clés`{.action}.
 
 ![01 Create KEY 01](images/01-create-key01.png)
 
@@ -79,7 +81,7 @@ Il est possible maintenant d'utiliser la clé pour chiffrer des machines virtuel
 
 ### Chiffrement d'une machine virtuelle
 
-Nous allons chiffrer le fichier de configuration de la machine virtuelle ainsi que les disques de stockage.
+Nous allons chiffrer le fichier de configuration de la machine virtuelle ainsi que les disques de stockage. L'opération de chiffrement se fait en deux étapes, le données sont chiffrées à l'aide d'un clé **DEK** (Data encryption Key) qui se trouve sur les serveurs Esxi et ensuite la clé **DEK** est re-chiffrée (**wrapped**) à l'aide de la clé **KEK** générée précédemment.
 
 Eteignez la machine virtuelle, avant de lancer le chiffrement.
 
@@ -95,28 +97,45 @@ Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.a
 
 ![02 encrypt VM 03](images/02-encrypt-vm03.png) 
 
-### Migration de la solution KMS Thalès vers VNKP
+### Migration de la solution KMS Thalès vers vNKP
 
-Des clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes, Il est possible de migrer le cryptage vers vNKP
+Certains clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes, Il est possible de migrer le cryptage vers **vNKP**
 
-Nous allons migrer une machine virtuelle chiffrée avec le système KMS de Thalès nommé **cluster** vers une clé vNKP nommé **MY-NKP**.
+Nous allons migrer une machine virtuelle chiffrée avec une clés KMS de Thalès nommée **cluster** vers une clé **vNKP** portant le nom **MY-NKP**.
 
-Au travers de la consoles **vSphere** de votre cluster cliquez en haut à gauche sur la `racine du cluster`{.action}. allez en haut dans l'onglet `Configurer`{.action} cliquez `Fournisseurs de clés`{.action}. Positionnez vous sur la `clé VNKP`{.action} et cliquez dans l'onglet sur `DÉFINIR COMME VALEUR PAR DÉFAUT`{.action}.
+Au travers de la console **vSphere** de votre cluster cliquez en haut à gauche sur la `racine du cluster`{.action}. allez en haut dans l'onglet `Configurer`{.action} cliquez `Fournisseurs de clés`{.action} dans la barre verticale, positionnez vous sur la `clé vNKP`{.action} et cliquez dans l'onglet sur `DÉFINIR COMME VALEUR PAR DÉFAUT`{.action}.
 
 ![03 migrate-from-kms-to-vnkp 01](images/03-migrate-from-kms-to-vnkp01.png)
 
+Cliquez sur `DÉFINIR COMME VALEUR PAR DÉFAUT`{.action}.
+
+![03 migrate-from-kms-to-vnkp 02](images/03-migrate-from-kms-to-vnkp02.png)
+
+La clé **vNKP** est définie par défaut.
+
+![03 migrate-from-kms-to-vnkp 03](images/03-migrate-from-kms-to-vnkp03.png)
+
+Au travers de **vCenter** faites un clic droit sur `la machine virtuelle`{.action} qui doit être re-chiffrée ensuite au travers du menu dans `VM Policies`{.action} choisissez `Chiffrer à nouveau`{.action}.
+
+> [!primary]
+> L'opération de re-chiffrement peut se faire avec la machine virtuelle allumée, car uniquement la clé **DEK** est re-chiffrée.
+>
+
+![03 migrate-from-kms-to-vnkp 04](images/03-migrate-from-kms-to-vnkp04.png)
+
+L'opération ne prends que quelques millisecondes se termine en quelques millisecondes car ce n'est que la **DEK** qui est re-chifrée à l'aide la nouvelle **KEK** venant de **vNKP**.
+
+![03 migrate-from-kms-to-vnkp 05](images/03-migrate-from-kms-to-vnkp05.png)
 
 
+## Aller plus loin <a name="gofurther"></a>
 
+[Présentation VMWARE de vSphere Native Key Provider](https://core.vmware.com/native-key-provider)
 
+[Documentation VMARE du processus de chiffrement sur vSphere](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html)
 
-
-
-
-## Aller plus loin
-
-[Présentation VMWARE pour vSphere Native Key Provider](https://core.vmware.com/native-key-provider)
-
-[Documentation VMWARE pour vSphere Native Key Profider](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html)
+[Documentation VMWARE concernant vSphere Native Key Provider](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+
+
