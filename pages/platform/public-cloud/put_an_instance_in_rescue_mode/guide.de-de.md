@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: 'Verwaltung im OVHcloud Kundencenter'
 ---
 
-**Letzte Aktualisierung am 11.02.2022**
+**Letzte Aktualisierung am 02.08.2022**
 
 ## Ziel
 
@@ -69,6 +69,10 @@ Ihre Daten sind jetzt über den Ordner /mnt abrufbar.
 Sobald Sie Ihre Maßnahmen beendet haben, können Sie den Rescue-Modus deaktivieren, indem Sie Ihre Instanz in der Instanzenverwaltung neu starten. Klicken Sie dazu auf `...`{.action} und wählen Sie `Rescue-Modus verlassen`{.action}.
 
 ![control panel](images/rescueexit2022.png){.thumbnail}
+
+> [!warning]
+> Wenn der Button Aus dem `Rescue-Modus verlassen`{.action} aussteigen nicht angezeigt wird, sobald die Instanz im Rescue-Modus ist, empfehlen wir Ihnen, den Tab zu aktualisieren.
+>
 
 ### Den Rescue-Modus mit der OpenStack API aktivieren
 

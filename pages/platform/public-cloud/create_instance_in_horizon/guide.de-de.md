@@ -9,7 +9,7 @@ section: 'Horizon'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 31.12.2021**
+**Letzte Aktualisierung am 02.08.2022**
 
 ## Ziel
 
@@ -56,7 +56,7 @@ Geben Sie dann die angeforderten Informationen ein. Falls Sie beim Ausfüllen de
 
 > [!warning] 
 >
-> Obwohl das Feld "Key Pair" bei der Erstellung einer Instanz im Horizon-Interface nicht obligatorisch ist, ist die Speicherung eines SSH-Schlüssels notwendig, um sich mit einer Instanz verbinden zu können. Ohne SSH-Schlüssel müssen Sie die Instanz im Rescue-Modus neu starten, um ein Passwort zu erstellen oder einen SSH-Schlüssel in der entsprechenden Datei hinzuzufügen.
+> Obwohl das Feld "Key Pair" bei der Erstellung einer Instanz im Horizon-Interface nicht obligatorisch ist, ist die Speicherung eines SSH-Schlüssels notwendig, um sich mit einer Instanz verbinden zu können. Ohne SSH-Schlüssel müssen Sie die Instanz im Rescue-Modus neu starten, um ein Passwort zu erstellen oder einen SSH-Schlüssel in der entsprechenden Datei hinzuzufügen (Für weitere Informationen lesen Sie die Anleitung [Änderung des SSH-Schlüssels bei Verlust](../nderung_des_ssh_schlussels_bei_verlust/#in-der-praktischen-anwendung)).
 >
 
 Um die gewünschten Instanzen zu starten, klicken Sie auf den Button `Launch Instance`{.action}.

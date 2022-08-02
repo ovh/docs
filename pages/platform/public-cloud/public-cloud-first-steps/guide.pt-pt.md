@@ -6,7 +6,7 @@ section: Introdução
 order: 1
 ---
 
-**Última atualização: 30/03/2021**
+**Última atualização: 02/08/2022**
 
 ## Objetivo
 
@@ -229,6 +229,11 @@ De forma automática, é criado na instância um utilizador com um leque alargad
 > [!primary]
 >
 Se encontrar problemas durante a conexão, nomeadamente erros relativos às chaves SSH, consulte o guia [Alterar a chave SSH em caso de perda](../alterar_a_chave_ssh_em_caso_de_perda/).
+>
+
+> [!primary]
+>
+Se criou uma instância sem chave SSH, através da API OVHcloud ou da interface Openstack Horizon, só poderá adicionar uma chave SSH à sua instância através do [modo de rescue](https://docs.ovh.com/pt/public-cloud/passar_uma_instancia_em_modo_de_rescue/), seguindo as instruções descritas em [esta secção do guia apropriado](../alterar_a_chave_ssh_em_caso_de_perda/#instrucoes).
 >
 
 #### Conexão a uma instância Linux a partir de Linux/Mac

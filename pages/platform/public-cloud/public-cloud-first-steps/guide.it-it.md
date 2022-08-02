@@ -6,7 +6,7 @@ section: Per iniziare
 order: 1
 ---
 
-**Ultimo aggiornamento: 30/03/2021**
+**Ultimo aggiornamento: 02/08/2022**
 
 ## Obiettivo
 
@@ -16,7 +16,7 @@ Le istanze di OVHcloud Public Cloud richiedono un approccio diverso da quello di
 
 ## Prerequisiti
 
-- Aver già creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/)nel tuo account OVHcloud
+- Aver già creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 
@@ -229,6 +229,11 @@ Un utente con privilegi elevati viene creato automaticamente sull’istanza. Il 
 > [!primary]
 >
 In caso di problemi di connessione, ad esempio errori relativi alle chiavi SSH, consulta la guida[Sostituisci la tua chiave SSH in caso di perdita](../sostituisci_la_tua_chiave_ssh_in_caso_di_perdita/).
+>
+
+> [!primary]
+>
+Se hai creato un'istanza senza chiave SSH tramite l'API OVHcloud o l'interfaccia Openstack Horizon, puoi aggiungere una chiave SSH alla tua istanza solo attraverso [modalità rescue](https://docs.ovh.com/it/public-cloud/riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/), seguendo le istruzioni descritte in [questa sezione della guida appropriata](../sostituisci_la_tua_chiave_ssh_in_caso_di_perdita//#procedura).
 >
 
 #### Connettersi a un’istanza Linux da Linux/Mac

@@ -10,7 +10,7 @@ order: 5
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 31/12/2021**
+**Última actualización: 02/08/2022**
 
 ## Objetivo
 
@@ -57,7 +57,7 @@ Introduzca la información solicitada. Si necesita ayuda para completar los dist
 
 > [!warning]
 > 
-> Aunque el campo "Key Pair" no es obligatorio en la interfaz Horizon al crear una instancia, es absolutamente necesario registrar una llave SSH para poder conectarse a una instancia. Sin una llave SSH, deberá reiniciar la instancia en modo de rescate para poder crear una contraseña o añadir una llave SSH al archivo correspondiente.
+> Aunque el campo "Key Pair" no es obligatorio en la interfaz Horizon al crear una instancia, es absolutamente necesario registrar una llave SSH para poder conectarse a una instancia. Sin una llave SSH, deberá reiniciar la instancia en modo de rescate para poder crear una contraseña o añadir una llave SSH al archivo correspondiente (para más información, consulte la guía [Modificar su llave SSH en caso de pérdida](../modificar_su_llave_ssh_en_caso_de_perdida/#procedimiento)).
 >
 
 Una vez que haya terminado de configurar la instancia o instancias, haga clic en el botón `Launch Instance`{.action} para lanzarlas.

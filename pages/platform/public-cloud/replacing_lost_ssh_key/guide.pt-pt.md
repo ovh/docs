@@ -33,12 +33,12 @@ Para recuperar o acesso, disponibilizámos-lhe um [modo de rescue](https://docs.
 Se pretender guardar uma chave SSH na Área de Cliente OVHcloud, recomendamos que utilize a encriptação RSA ou ECDSA. ED25519 não está atualmente a ser utilizado.
 >
 
-Depois de montar o disco da sua instância em modo rescue, poderá aceder ao conjunto dos seus ficheiros.
+Depois de montar o disco da sua instância em [modo rescue](../passar_uma_instancia_em_modo_de_rescue/#aceder-a-sua-informacao), poderá aceder ao conjunto dos seus ficheiros.
 
 O ficheiro que contém as suas chaves SSH é o seguinte:
 
 ```sh
-/home/NOME_UTILIZADOR/.ssh/authorized_keys
+/mnt/home/NOME_UTILIZADOR/.ssh/authorized_keys
 ```
 
 Para adicionar a nova chave SSH, basta editar o ficheiro e adicionar a nova chave:
