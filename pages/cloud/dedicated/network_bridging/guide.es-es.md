@@ -61,13 +61,13 @@ Seleccione "ovh" en la lista desplegable "Tipo", escriba un nombre en el campo "
 
 ### Establecer la dirección de la puerta de enlace
 
-Para configurar sus máquinas virtuales para el acceso a Internet, debe conocer la pasarela de su máquina host, es decir, su servidor dedicado. La dirección de la pasarela está formada por los tres primeros bytes de la dirección IP principal del servidor, el último byte es de 254. Por ejemplo, si la dirección IP principal del servidor es:
+Para configurar sus máquinas virtuales para el acceso a Internet, debe conocer la pasarela de su máquina host, es decir, su servidor dedicado. La dirección de la pasarela está formada por los tres primeros bytes de la dirección IP principal del servidor, el último byte es de 252. Por ejemplo, si la dirección IP principal del servidor es:
 
 - 169.254.10.020
 
 Su dirección de pasarela será:
 
-- 169.254.10.254
+- 169.254.10.252
 
 ### Preparar el host
 
@@ -210,7 +210,7 @@ Guarde y cierre el archivo.
 Abra el archivo de enrutado de la máquina virtual, que se encuentra en `/etc/sysconfig/network-scripts/route-(nombre de la interfaz)`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
 
 ```console
-GATEWAY_IP - 169.254.10.254 (nombre-interfaz)
+GATEWAY_IP - 169.254.10.252 (nombre-interfaz)
 NETWORK_GW_VM - 255.255.255.0 (inserte el nombre de la interfaz)
 default GATEWAY_IP
 ```
@@ -317,7 +317,7 @@ Seleccione el protocolo de `internet versión 4 (TCP/IPv4)`{.action} y haga clic
 
 En la ventana Propiedades de la IPv4, seleccione `Use the following IP address`{.action}. Introduzca la dirección IP failover en el campo de direcciones IP e introduzca "255.255.255.255" en la máscara de subred.
 
-A continuación, introduzca la dirección IP de la pasarela del servidor en la pasarela por defecto (por ejemplo, la IP del servidor termina en 254) e introduzca "213.186.33.99" en el campo `Preferred DNS Server`{.action}.
+A continuación, introduzca la dirección IP de la pasarela del servidor en la pasarela por defecto (por ejemplo, la IP del servidor terminada en 252) e introduzca "213.186.33.99" en el campo `Preferred DNS Server`{.action}.
 
 Haga clic en `Aceptar`{.action} e ignore el mensaje de aviso relativo a la dirección IP de la pasarela y a la dirección IP asignada que no estén en la misma subred.
 
