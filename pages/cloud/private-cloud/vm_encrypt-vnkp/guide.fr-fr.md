@@ -31,11 +31,11 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre du chiffr
 
 ## Présentation
 
-**vSphere Native Key provider** permet de chiffrer les machines virtuelles sans avoir besoin d'un serveur KMS (Key management Server) externe.
+**vSphere Native Key provider** permet de chiffrer les machines virtuelles sans avoir besoin d'un serveur KMS (*Key Management Server*) externe.
 
 L'option doit être activée sur l'espace client OVHcloud.
 
-Le chiffrement sur des clusters **vSphere** se fait en deux étapes, les données des machines virtuelles sont chiffrées à l'aide d'une clé **DEK** (Data Encryption Key) qui se trouve sur les serveurs **Esxi**, ensuite cette clé est rechiffrée à l'aide de la clé **vSphere Native Key provider** qui est une clé **KEK** (*Key Encryption Key*). Vous trouverez plus de détails sur le chiffrement **VMWARE** en consultant les documentations officielles que vous trouverez dans la section « [Aller plus loin](#gofurther) » de ce guide.
+Le chiffrement sur des clusters **vSphere** se fait en deux étapes, les données des machines virtuelles sont chiffrées à l'aide d'une clé **DEK** (*Data Encryption Key*) qui se trouve sur les serveurs **Esxi**, ensuite cette clé est rechiffrée à l'aide de la clé **vSphere Native Key provider** qui est une clé **KEK** (*Key Encryption Key*). Vous trouverez plus de détails sur le chiffrement **VMWARE** en consultant les documentations officielles que vous trouverez dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 IL est possible d'importer la clé sur un autre cluster dans le cas d'un plan de reprise d'activité.
 
@@ -75,7 +75,7 @@ Cliquez sur `La case à cocher`{.action} à gauche pour protéger la sauvegarde 
 
 ![01 Create KEY 05](images/01-create-key05.png){.thumbnail}
 
-Saisissez `le mot de passe` et `confirmez le`, ensuite cochez la case `J'ai enregistré le mot de passe dans un lieu sûr`{.action} et cliquez sur `SAUVEGARDER LE FOURNISSEUR DE CLÉS`{.action}.
+Saisissez `le mot de passe` et `confirmez-le`, ensuite cochez la case `J'ai enregistré le mot de passe dans un lieu sûr`{.action} et cliquez sur `SAUVEGARDER LE FOURNISSEUR DE CLÉS`{.action}.
 
 ![01 Create KEY 06](images/01-create-key06.png){.thumbnail}
 
