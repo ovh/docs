@@ -45,10 +45,12 @@ Trois états peuvent alors apparaître :
 |État|Description|
 |---|---|
 |Activé|Un certificat SSL a déjà été activé pour ce multisite. Cependant, si votre site web n'est pas disponible en HTTPS, reportez-vous aux instructions répertoriées dans notre guide « [Passer son site en HTTPS grâce au SSL](../passer-site-internet-https-ssl/){.external} ».|
-|À générer|Un certificat SSL a été activé pour ce multisite, mais celui-ci n'est toujours pas techniquement actif. Pour cela, vous devrez le régénérer afin qu'il inclue les nouveaux noms de domaine du multisite.|
+|À générer|Un certificat SSL a été activé pour ce multisite, mais celui-ci n'est toujours pas techniquement actif. Pour cela, vous devrez [le régénérer](#regeneratessl) afin qu'il inclue les nouveaux noms de domaine du multisite.|
 |Désactivé|Aucun certificat SSL n'est activé pour ce multisite. Pour l'activer, suivez les étapes ci-dessous.|
 
 Pour activer SSL sur un multisite, cliquez sur le bouton `...`{.action} à droite du multisite concerné, puis sur `Modifier le domaine`{.action}. Dans la fenêtre qui s'affiche, cochez la case `SSL`{.action}. Vous pouvez également activer l'option pour modifier le sous-domaine www en même temps que le nom de domaine associé. Suivez les étapes jusqu'à confirmer la modification.
+
+![managessl](images/manage-ssl-step6.png){.thumbnail}
 
 Une fois que vous avez soumis la demande d'activation, le statut de la connexion sécurisée SSL pour le multisite concerné sera actualisé au bout de quelques secondes et remplacé par « À générer ». Répétez cette action si nécessaire si vous souhaitez activer SSL pour d'autres multisites.
 
@@ -67,7 +69,6 @@ Une fois que vous avez soumis la demande d'activation, le statut de la connexion
 
 Avant de procéder à cette configuration, assurez-vous que l'étape précédente, « [activation d'un certificat SSL sur un site multisite](#multisite) », a été effectuée correctement. Au moins un domaine doit avoir l'option SSL `Activée` ou le statut `A générer` pour activer le certificat SSL.<br>
 **Ces informations ne s'appliquent pas si vous sélectionnez `Certificat payant`{.action} ou `Importer de votre certificat SSL`{.action}.**
-
 
 > [!warning]
 >
