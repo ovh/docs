@@ -7,7 +7,7 @@ section: "Gestion depuis l'espace client"
 order: 3
 ---
 
-**Dernière mise à jour le 11/02/2022**
+**Dernière mise à jour le 01/08/2022**
 
 ## Objectif
 
@@ -74,6 +74,10 @@ Vos données seront maintenant accessibles depuis le dossier /mnt.
 Une fois vos tâches terminées, vous pouvez désactiver le mode rescue en redémarrant votre instance depuis l'espace client. Pour cela, cliquez sur `...`{.action} et sélectionnez `Sortir du mode rescue`{.action}.
 
 ![tableau de bord](images/rescueexit2022.png){.thumbnail}
+
+> [!warning]
+> Si le bouton `Sortir du mode rescue`{.action} n'apparaît pas une fois l'instance en mode rescue, nous vous recommandons de rafraîchir votre onglet.
+>
 
 ### Activer le mode rescue avec les API OpenStack
 

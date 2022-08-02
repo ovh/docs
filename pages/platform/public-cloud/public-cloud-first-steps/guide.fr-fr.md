@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 04
 ---
 
-**Dernière mise à jour le 30/03/2021**
+**Dernière mise à jour le 01/08/2022**
 
 ## Objectif
 
@@ -228,6 +228,11 @@ Un utilisateur disposant d'autorisations élevées est automatiquement créé su
 > [!primary]
 >
 Si vous rencontrez des problèmes avec votre connexion, c'est-à-dire des erreurs concernant vos clés SSH, consultez le guide [Changer sa clé SSH en cas de perte](../changer-sa-cle-ssh-en-cas-de-perte/).
+>
+
+> [!primary]
+>
+Si vous avez créé une instance sans clé SSH, via l’API OVHcloud ou l’interface Openstack Horizon, vous ne pourrez ajouter une clé SSH à votre instance qu'à travers le [mode rescue](https://docs.ovh.com/fr/public-cloud/passer-une-instance-en-mode-rescue/), en suivant les instructions décrites dans [cette section du guide approprié](../changer-sa-cle-ssh-en-cas-de-perte/#en-pratique).
 >
 
 #### Connexion à une instance Linux à partir de Linux / Mac

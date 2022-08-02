@@ -3,6 +3,7 @@ title: 'Mount your NAS via NFS share'
 slug: nas-nfs
 excerpt: 'Find out how to mount a NAS over an NFS share here.'
 section: NAS
+order: 03
 ---
 
 **Last updated 21st February 2022**

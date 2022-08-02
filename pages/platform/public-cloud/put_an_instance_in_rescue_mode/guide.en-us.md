@@ -7,7 +7,7 @@ section: Management via Control Panel
 order: 3
 ---
 
-**Last updated 11th February 2022**
+**Last updated 1st August 2022**
 
 ## Objective
 
@@ -73,6 +73,10 @@ Your data will now be accessible from the `/mnt` folder.
 Once you have completed your tasks, you can deactivate rescue mode by rebooting your instance from the Control Panel interface. To execute this, click on `...`{.action} and select `Exit rescue mode`{.action}.
 
 ![control panel](images/rescueexit2022.png){.thumbnail}
+
+> [!warning]
+> If the `Exit rescue mode`{.action} button is not displayed while the instance is in rescue mode, we recommend that you refresh your tab.
+>
 
 ### Activating rescue mode using the OpenStack API
 

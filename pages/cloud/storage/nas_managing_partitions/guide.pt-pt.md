@@ -3,6 +3,7 @@ title: NAS-HA - Gestão das partições por API
 slug: nas/nas-partitions-api
 excerpt: "Aprenda a gerir as partições NAS-HA graças à API OVHcloud"
 section: NAS
+order: 08
 ---
 
 > [!primary]

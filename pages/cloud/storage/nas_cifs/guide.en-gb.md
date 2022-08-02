@@ -1,8 +1,9 @@
 ---
-title: Mount your NAS on Windows Server via CIFS
+title: Mount your HA-NAS on Windows Server via CIFS
 slug: nas/nas-cifs
-excerpt: This guide shows you how to mount your NAS on Windows Server via CIFS.
+excerpt: This guide shows you how to mount your HA-NAS on Windows Server via CIFS.
 section: NAS
+order: 04
 ---
 
 **Last updated 22nd November 2021**
@@ -29,15 +30,9 @@ Then run the following command:
 net use z: \\CIFS_SERVER_IP\CIFS_PATH
 ```
 
-### Examples
+### Example
 
-- CIFS mounting for a Mini-Nas:
-
-```bash
-net use z: \\10.16.100.10\nas-000041_mininas-000212
-```
-
-- CIFS mounting for a NAS or NAS-HA:
+- CIFS mounting for a NAS-HA:
 
 ```bash
 net use z: \\10.16.101.8\zpool-000206_PARTITION_NAME_1
