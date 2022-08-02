@@ -23,7 +23,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre du chiffr
 
 ## Prérequis
 
-- Avoir souscrit une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+- Avoir souscrit une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/).
 - Utiliser un cluster **vSphere** en version 7.0 Update 2 au minimum avec une licence **Enterprise plus**.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à l’interface de gestion vSphere.
@@ -105,7 +105,7 @@ Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.a
 
 ### Migration de la solution KMS Thalès vers **vSphere Native Key provider**
 
-Certains clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes Thalès, Il est possible de migrer le cryptage vers vSphere Native Key Provider
+Certains clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes Thalès, Il est possible de migrer le chiffrement vers vSphere Native Key Provider
 
 Suivez les instructions ci-dessous pour migrer une machine virtuelle chiffrée avec une clés KMS Thalès nommée **cluster** vers une clé vSphere Native Key Provider portant le nom **MY-NKP**.
 
