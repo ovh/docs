@@ -3,6 +3,7 @@ title: 'Montar um NAS através de NFS'
 slug: nas-nfs
 excerpt: 'Saiba como montar um NAS através de NFS'
 section: NAS
+order: 03
 ---
 
 **Última atualização: 21/02/2022**

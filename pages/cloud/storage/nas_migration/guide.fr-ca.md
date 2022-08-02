@@ -1,23 +1,24 @@
 ---
-title: Migration de données d'un NAS vers un autre via NFS
+title: Migration de données d'un NAS-HA vers un autre via NFS
 slug: nas/nas-migration
-excerpt: Decouvrez ici comment migrer vos données d'un Nas à un autre via un partage NFS.
+excerpt: Decouvrez ici comment migrer vos données d'un NAS-HA à un autre via un partage NFS.
 section: NAS
+order: 05
 ---
 
 **Dernière mise à jour le 09/02/2021**
 
 ## Objectif
 
-Ce guide détaille comment transférer les données d'un NAS vers un autre. 
+Ce guide détaille comment transférer les données d'un NAS-HA vers un autre. 
 
 ## Prérequis
 
 Pour effectuer le transfert de vos données, il vous faut :
 
-- Un NAS OVHcloud / mini-NAS OVHcloud / NAS-HA OVHcloud
+- Un NAS-HA OVHcloud
 - Une distribution compatible NFS
-- Avoir monté votre NAS au préalable en suivant le guide pour [monter votre NAS via un partage NFS](https://docs.ovh.com/ca/fr/storage/nas/nas-nfs/){.external}.
+- Avoir monté votre NAS-HA au préalable en suivant le guide pour [monter votre NAS-HA via un partage NFS](https://docs.ovh.com/ca/fr/storage/nas/nas-nfs/){.external}.
 
 ## En pratique
 

@@ -3,6 +3,7 @@ title: NAS-HA - Pierwsze kroki z API
 slug: nas/nas-quickapi
 excerpt: "Dowiedz się, jak rozpocząć korzystanie z usługi NAS-HA przy użyciu API OVHcloud"
 section: NAS
+order: 06
 ---
 
 > [!primary]

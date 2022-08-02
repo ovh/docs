@@ -3,6 +3,7 @@ title: Monter votre NAS via un partage NFS
 slug: nas/nas-nfs
 excerpt: Decouvrez ici comment monter un NAS via un partage NFS.
 section: NAS
+order: 03
 ---
 
 **Dernière mise à jour le 21/02/2022**

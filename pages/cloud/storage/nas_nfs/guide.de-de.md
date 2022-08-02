@@ -3,6 +3,7 @@ title: 'NAS via NFS-Freigabe einhängen'
 slug: nas-nfs
 excerpt: 'Hier erfahren Sie, wie Sie einen NAS via NFS-Freigabe mounten.'
 section: NAS
+order: 03
 ---
 
 **Letzte Aktualisierung am 21.02.2022**
