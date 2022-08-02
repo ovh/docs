@@ -3,6 +3,7 @@ title: Montar un NAS en Windows Server a través de CIFS
 slug: nas/nas-cifs
 excerpt: Esta guía explica cómo montar un NAS en Windows Server a través de CIFS.
 section: NAS
+order: 04
 ---
 
 > [!primary]

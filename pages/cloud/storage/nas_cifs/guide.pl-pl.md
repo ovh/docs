@@ -3,6 +3,7 @@ title: Skonfigurować NAS na serwerze Windows poprzez CIFS
 slug: nas/nas-cifs
 excerpt: Ten przewodnik pokazuje, jak zamontować NAS w systemie Windows Server poprzez CIFS.
 section: NAS
+order: 04
 ---
 
 > [!primary]

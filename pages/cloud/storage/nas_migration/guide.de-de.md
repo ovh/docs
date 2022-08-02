@@ -3,6 +3,7 @@ title: Migration von Daten von einem NAS auf ein anderes über NFS
 slug: nas/nas-migration
 excerpt: Erfahren Sie hier, wie Sie Ihre Daten über eine NFS-Freigabe von einem NAS auf ein anderes migrieren.
 section: NAS
+order: 05
 ---
 
 > [!primary]

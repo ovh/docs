@@ -3,6 +3,7 @@ title: Migracja danych z jednego serwera NAS do innego przez NFS
 slug: nas/nas-migration
 excerpt: Dowiedz się, jak migrować dane z jednego Nas do innego za pomocą zasobu NFS.
 section: NAS
+order: 05
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: HA-NAS - Partitionsverwaltung über API
 slug: nas/nas-partitions-api
 excerpt: "Erfahren Sie hier, wie Sie HA-NAS-Partitionen mithilfe der OVHcloud API verwalten"
 section: NAS
+order: 08
 ---
 
 > [!primary]

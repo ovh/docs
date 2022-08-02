@@ -3,6 +3,7 @@ title: NAS auf Windows Server über CIFS mounten
 slug: nas/nas-cifs
 excerpt: Erfahren Sie hier, wie Sie Ihr NAS unter Windows Server über CIFS mounten können
 section: NAS
+order: 04
 ---
 
 > [!primary]

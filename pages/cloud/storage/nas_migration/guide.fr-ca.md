@@ -3,6 +3,7 @@ title: Migration de données d'un NAS vers un autre via NFS
 slug: nas/nas-migration
 excerpt: Decouvrez ici comment migrer vos données d'un Nas à un autre via un partage NFS.
 section: NAS
+order: 05
 ---
 
 **Dernière mise à jour le 09/02/2021**

@@ -3,6 +3,7 @@ title: Configure o seu NAS no Windows Server através do CIFS
 slug: nas/nas-cifs
 excerpt: Saiba como montar um NAS no Windows Server através do CIFS.
 section: NAS
+order: 04
 ---
 
 > [!primary]

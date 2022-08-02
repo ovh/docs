@@ -3,6 +3,7 @@ title: Mount your NAS on Windows Server via CIFS
 slug: nas/nas-cifs
 excerpt: This guide shows you how to mount your NAS on Windows Server via CIFS.
 section: NAS
+order: 04
 ---
 
 **Last updated 22nd November 2021**
