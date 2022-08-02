@@ -13,7 +13,7 @@ order: 07
 Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre du chiffrement de machine virtuelles sur l'offre Private Cloud de OVHcloud, en employant vSphere Native Key Provider le serveur de clé interne disponible depuis la version 7.0 update 2.
 
 
-**Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider.**
+**Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles à l'aide de vSphere Native Key Provider.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -36,11 +36,9 @@ La version minimale est vSphere 7.0 Update 2 avec une licence **enterprise plus*
 
 L'option doit être activée sur l'espace client OVHcloud.
 
-La clé est créée sur vSphere et est copiée sur chacun des serveurs Esxi membres du cluster, si une clé est supprimée les machines virtuelles qui sont chiffrés continuerons à fonctionner jusqu'à qu'elles soient retirées de l'inventaire.
+Le chiffrement sur des cluster **vSphere** se fait en deux étapes, les données des machines virtuelles sont chiffrées à l'aide d'une clé **DEK** qui se trouve sur les serveurs **Esxi**, ensuite cette clé est rechiffrée à l'aide de la clé **vSphere Native Key provider** qui est en fait une clé **KEK** (*Key Encryption Key*). Vous trouverez plus de détails sur le chiffrement **VMWARE** en consultant  les documentations officielles que vous trouverez dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 IL est possible d'importer la clé sur un autre cluster dans le cas d'un plan de reprise d'activité.
-
-Le chiffrement sur des cluster **vSphere** se fait en deux étapes, les données des machines virtuelles sont chiffrées à l'aide d'une clé **DEK** qui se trouve sur les serveurs **Esxi**, ensuite cette clé est re-chifrée à l'aide de la clé **vSphere Native Key provider** qui est en fait une clé **KEK** (*Key Encryption Key*). Vous trouverez plus de détails sur le chiffrement **VMWARE** en consultant  les documentations officielles que vous trouverez dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
