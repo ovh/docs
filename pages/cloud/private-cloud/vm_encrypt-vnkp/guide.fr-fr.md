@@ -53,7 +53,7 @@ Non encore disponible
 
 Nous allons créer la clé de chiffrement. Cette clé est une clé **KEK** (*Key Encryption Key*) qui sert pour faire du chiffrement symétrique (*wrap*) de la clé **DEK** qui se trouve sur les hôtes **ESXi**. 
 
-Connectez-vous à l'interface vSphere à l'aide de ce guide [Se connecter à l'interface vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
+Connectez-vous à l'interface **vSphere** à l'aide de ce guide [Se connecter à l'interface vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
 
 Cliquez en haut à gauche sur la racine du `cluster`{.action}, ensuite cliquez sur l'onglet `Configurer`{.action} et choisissez `Fournisseurs de clés`{.action}.
 
@@ -109,7 +109,7 @@ Certains clients OVHcloud utilisent une solution de chiffrement avec des clés K
 
 Suivez les instructions ci-dessous pour migrer une machine virtuelle chiffrée avec une clés KMS Thalès nommée **cluster** vers une clé vSphere Native Key Provider portant le nom **MY-NKP**.
 
-A partir de la console **vCenter** de votre cluster cliquez en haut à gauche sur la `racine du cluster`{.action}, allez en haut dans l'onglet `Configurer`{.action} cliquez `Fournisseurs de clés`{.action} dans la barre verticale, positionnez-vous sur la `clé vSphere Native Key provider`{.action} et cliquez sur `DÉFINIR COMME VALEUR PAR DÉFAUT`{.action}.
+A partir de la console **vSphere** de votre cluster cliquez en haut à gauche sur la `racine du cluster`{.action}, allez en haut dans l'onglet `Configurer`{.action} cliquez `Fournisseurs de clés`{.action} dans la barre verticale, positionnez-vous sur la `clé vSphere Native Key provider`{.action} et cliquez sur `DÉFINIR COMME VALEUR PAR DÉFAUT`{.action}.
 
 ![03 migrate-from-kms-to-vnkp 01](images/03-migrate-from-kms-to-vnkp01.png){.thumbnail}
 
@@ -121,7 +121,7 @@ La clé **vSphere Native Key Provider** est définie par défaut.
 
 ![03 migrate-from-kms-to-vnkp 03](images/03-migrate-from-kms-to-vnkp03.png){.thumbnail}
 
-Au travers de **vCenter** faites un clic droit sur `la machine virtuelle`{.action} qui doit être rechiffrée ensuite au travers du menu dans `VM Policies`{.action} choisissez `Chiffrer à nouveau`{.action}.
+Au travers du client **vSphere** faites un clic droit sur `la machine virtuelle`{.action} qui doit être rechiffrée ensuite au travers du menu dans `VM Policies`{.action} choisissez `Chiffrer à nouveau`{.action}.
 
 > [!primary]
 > L'opération de rechiffrement peut se faire avec la machine virtuelle allumée, car uniquement la clé **DEK** est chiffrée à nouveau.
