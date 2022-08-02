@@ -28,10 +28,10 @@ Hosting umożliwia zarządzanie certyfikatem SSL. Certyfikat możesz uzyskać za
 
 Na Twoim hostingu OVHcloud można zarządzać certyfikatem SSL. Przejdź do opisu operacji, którą chcesz przeprowadzić.
 
-[2. Aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite](#multisite): jeśli pozwalają na to Twoje rozwiązanie lub certyfikat SSL, możesz podłączyć kilka stron podpiętych w opcji MultiSite do bezpiecznego połączenia SSL.
+[1. Aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite](#multisite): jeśli pozwalają na to Twoje rozwiązanie lub certyfikat SSL, możesz podłączyć kilka stron podpiętych w opcji MultiSite do bezpiecznego połączenia SSL.
 
 
-[1. Aktywacja certyfikatu SSL na Twoim hostingu](#enablessl): pomoże Ci aktywować certyfikat SSL na Twoim hostingu. Może to być bezpłatny lub płatny certyfikat zamówiony przez OVHcloud. Możesz również zaimportować własny certyfikat SSL zamówiony u innego dostawcy.
+[2. Aktywacja certyfikatu SSL na Twoim hostingu](#enablessl): pomoże Ci aktywować certyfikat SSL na Twoim hostingu. Może to być bezpłatny lub płatny certyfikat zamówiony przez OVHcloud. Możesz również zaimportować własny certyfikat SSL zamówiony u innego dostawcy.
 
 [3. Odnowienie certyfikatu SSL na hostingu](#regeneratessl): umożliwia wygenerowanie certyfikatu SSL Let's Encrypt na Twoim hostingu, gdy aktywujesz certyfikat SSL na jednej lub kilku stronach podpiętych w opcji MultiSite.
 
@@ -78,12 +78,12 @@ Przed przeprowadzeniem tej konfiguracji upewnij się, że poprzedni etap [aktywa
 > [!warning]
 >
 > Przed kontynuowaniem upewnij się również, że wpis lub wpisy MultiSite, dla których aktywujesz opcję SSL, wskazują na adres IP hostingu. Konfiguracja ta jest automatycznie proponowana podczas dodawania lub modyfikowania wpisu w opcji MultiSite, ale musi być wykonywana ręcznie dla domeny, która nie jest zarządzana w Twoim Panelu klienta.<br>
-> - Znajdź adres IP Twojego hostingu w zakładce 'Informacje ogólne{.action}, z adnotacją 'IPv4\.
+> - Znajdź adres IP Twojego hostingu w zakładce `Informacje ogólne`{.action}, z adnotacją `IPv4`.
 > ![managessl](images/manage-ssl-arecord01.png){.thumbnail}
-> - Konfiguracja strefy DNS domeny w opcji MultiSite w sekcji `Domeny{.action}, w zakładce `Strefa DNS`{.action}. Zmień lub dodaj rekord typu `A` odpowiadający Twojemu rekordowi w opcji MultiSite i wprowadź adres IP Twojego hostingu w `Docelowy`.
+> - Konfiguracja strefy DNS domeny w opcji MultiSite w sekcji `Domeny`{.action}, w zakładce `Strefa DNS`{.action}. Zmień lub dodaj rekord typu `A` odpowiadający Twojemu rekordowi w opcji MultiSite i wprowadź adres IP Twojego hostingu w `Adres docelowy`.
 > ![managessl](images/manage-ssl-arecord02.png){.thumbnail}
 >
-> Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami (dotyczącymi konfiguracji wpisu w opcji MultiSite) (https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/) lub [konfiguracji strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
+> Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami [dotyczącymi konfiguracji wpisu w opcji MultiSite](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/) lub [konfiguracji strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
 
 Twój hosting umożliwia uruchomienie [certyfikatu SSL w zależności od potrzeb](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}:
 

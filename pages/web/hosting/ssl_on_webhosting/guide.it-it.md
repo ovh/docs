@@ -29,9 +29,9 @@ Le operazioni di gestione degli hosting Web OVHcloud, disponibili direttamente n
 
 Per generare un certificato SSL su un hosting Web OVHcloud sono necessari diversi step. Ti consigliamo di seguire **nell'ordine** i 3 step descritti di seguito.
 
-[2. Attiva un certificato SSL su un multisito](#multisite): se la tua soluzione o il tuo certificato SSL te lo permettono, puoi far beneficiare diversi dei tuoi multisiti di una connessione protetta SSL.
+[1. Attiva un certificato SSL su un multisito](#multisite): se la tua soluzione o il tuo certificato SSL te lo permettono, puoi far beneficiare diversi dei tuoi multisiti di una connessione protetta SSL.
 
-[1. Attiva un certificato SSL sul tuo hosting Web](#enablessl): ti aiuta ad attivare un certificato SSL sul tuo hosting Web. Può trattarsi di un certificato gratuito o a pagamento ordinato presso OVHcloud. Il certificato SSL ordinato può essere importato anche da un altro provider.
+[2. Attiva un certificato SSL sul tuo hosting Web](#enablessl): ti aiuta ad attivare un certificato SSL sul tuo hosting Web. Può trattarsi di un certificato gratuito o a pagamento ordinato presso OVHcloud. Il certificato SSL ordinato può essere importato anche da un altro provider.
 
 [3. Rigenera un certificato SSL su un hosting Web](#regeneratessl): ti permette di rigenerare un certificato SSL Let's Encrypt sul tuo hosting Web attivando l'SSL su uno o più multisiti.
 
