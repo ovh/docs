@@ -36,9 +36,9 @@ São necessários vários passos para gerar um certificado SSL no seu alojamento
 
 Também pode [eliminar o certificado SSL num alojamento web](#deletessl). **Tenha em conta que isto pode apresentar riscos se um dos seus websites utiliza atualmente o certificado que pretende eliminar**.
 
-### 1.Ativar um certificado SSL num multisite <a name="multisite"></a>
+### 1. Ativar um certificado SSL num multisite <a name="multisite"></a>
 
-Em função do [certificado SSL ](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external}que pretende encomendar, pode ativar uma ligação SSL segura num ou vários dos seus multi-sites. Para isso, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Por fim, clique no separador `Multisite`{.action}.
+Em função do [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external} que pretende encomendar, pode ativar uma ligação SSL segura num ou vários dos seus multi-sites. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Por fim, clique no separador `Multisite`{.action}.
 
 Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento web. A coluna "SSL" mostra-lhe o estado de ativação das ligações SSL seguras nos seus multi-sites.
 
@@ -76,9 +76,9 @@ Antes de realizar esta configuração, certifique-se de que a etapa anterior de 
 >
 > Antes de continuar, certifique-se de que as entradas multisite para as quais ativou a opção SSL apontam para o endereço IP do alojamento web. Esta configuração é-lhe automaticamente proposta quando adiciona ou modifica uma entrada multi-site, mas deve ser feita manualmente para um nome de domínio que não é gerido na sua Área de Cliente.<br>
 > - Encontre o endereço IP do seu alojamento a partir do separador `Informações gerais` {.action}, na menção `IPv4`.
->![managessl](images/manage-ssl-arecord01.png) {.thumbnail}
+> ![managessl](images/manage-ssl-arecord01.png) {.thumbnail}
 > - Configure a zona DNS do domínio declarado em multi-site, a partir da rubrica Domaines {.action}, onglet Zone DNS` {.action. Altere ou adicione um registo de tipo A` para a sua entrada multisite e indique o endereço IP do seu alojamento na "Cible`".
->![managessl](images/manage-ssl-arecord02.png) {.thumbnail}
+> ![managessl](images/manage-ssl-arecord02.png) {.thumbnail}
 >
 > Para mais informações, consulte os nossos manuais [sobre a configuração de uma entrada multisite](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/) ou sobre [a configuração de uma zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
 

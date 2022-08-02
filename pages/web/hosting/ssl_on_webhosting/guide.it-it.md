@@ -39,7 +39,7 @@ Puoi anche [eliminare il certificato SSL su un hosting Web](#deletessl). **Ti ri
 
 ### 1. Attiva un certificato SSL su un multisito <a name="multisite"></a>
 
-In base al [certificato SSL ](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external}che vuoi attivare, puoi attivare una connessione SSL sicura su uno o più dei tuoi multisiti. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Nella sezione `Hosting`{.action}, e clicca sulla scheda Multisito.
+In base al [certificato SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external} che vuoi attivare, puoi attivare una connessione SSL sicura su uno o più dei tuoi multisiti. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Nella sezione `Hosting`{.action}, e clicca sulla scheda Multisito.
 
 La tabella che appare contiene quindi tutti i domini che hai aggiunto al tuo hosting. La colonna "SSL" mostra lo stato di attivazione delle connessioni SSL sui tuoi multisiti.
 
@@ -77,9 +77,9 @@ Prima di procedere con questa configurazione, assicurati che lo step precedente 
 >
 > Prima di proseguire, assicurati anche che il record o i record multisito per i quali attivi l'opzione SSL puntino verso l'indirizzo IP dell'hosting Web. Questa configurazione viene proposta automaticamente quando aggiungi o modifichi un record multisito, ma deve essere fatta manualmente per un dominio non gestito nel tuo Spazio Cliente.<br>
 > - Nella scheda `Informazioni generali`{.action}, clicca su `IPv4` e seleziona l'indirizzo IP del tuo hosting.
->![managessl](images/manage-ssl-arecord01.png){.thumbnail}
+> ![managessl](images/manage-ssl-arecord01.png){.thumbnail}
 > - Configura la zona DNS del dominio dichiarato su multisito, dalla sezione `Domini`{.action}, nella scheda `Zona DNS`{.action}. Modifica o aggiungi un record di tipo `A` corrispondente al tuo record multisito e inserisci l'indirizzo IP del tuo hosting nella `Cible`.
->![managessl](images/manage-ssl-arecord02.png){.thumbnail}
+> ![managessl](images/manage-ssl-arecord02.png){.thumbnail}
 >
 > Per maggiori informazioni, consulta le nostre guide [sulla configurazione di un record multisito](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/) o su [la configurazione di una zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/).
 

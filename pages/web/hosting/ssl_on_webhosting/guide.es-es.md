@@ -38,7 +38,7 @@ También puede [eliminar el certificado SSL de un alojamiento web](#deletessl). 
 
 ### 1. Activar un certificado SSL en un multisitio <a name="multisite"></a>
 
-Según el [certificado SSL ](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external}que quiera contratar, puede activar una conexión SSL segura en uno o más multisitios. Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}.
+Según el [certificado SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external} que quiera contratar, puede activar una conexión SSL segura en uno o más multisitios. Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}.
 
 Se mostrará una tabla que contiene todos los dominios añadidos al alojamiento web. La columna SSL muestra el estado de activación de las conexiones SSL seguras en los multisitios.
 
@@ -76,9 +76,9 @@ Antes de realizar esta configuración, asegúrese de que ha realizado correctame
 >
 > Antes de continuar, asegúrese también de que el registro o registros multisitio para los que está activando la opción SSL apuntan a la dirección IP del alojamiento web. Esta configuración se ofrece automáticamente al añadir o modificar una entrada multisitio, pero debe realizarse manualmente para un dominio que no esté gestionado en el área de cliente.
 > - Localice la dirección IP de su alojamiento en la pestaña `Información general`{.action}, debajo de `IPv4`.
->![manager](images/manage-ssl-arecord01.png){.thumbnail}
+> ![manager](images/manage-ssl-arecord01.png){.thumbnail}
 > - Configure la zona DNS del nombre de dominio declarado en multisitio, en la sección `Dominios`{.action}, pestaña `Zona DNS`{.action}. Modifique o añada un registro A correspondiente al registro multisitio e indique la dirección IP de su alojamiento en el campo "Destino".
->![manager](images/manage-ssl-arecord02.png){.thumbnail}
+> ![manager](images/manage-ssl-arecord02.png){.thumbnail}
 >
 > Para más información, consulte nuestras guías [sobre la configuración de un registro multisitio](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) o [sobre la configuración de una zona DNS](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/).
 

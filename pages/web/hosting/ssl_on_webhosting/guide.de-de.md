@@ -76,9 +76,9 @@ Vergewissern Sie sich, dass der vorherige Schritt der [Aktivierung eines SSL-Zer
 >
 > Vergewissern Sie sich außerdem, dass der oder die Multisite-Einträge, für die Sie die SSL Option aktivieren, auf die IP-Adresse des Webhostings zeigen. Diese Konfiguration wird Ihnen automatisch angeboten, wenn Sie einen Multisite-Eintrag hinzufügen oder ändern, muss aber manuell für eine Domain erfolgen, die nicht in Ihrem Kundencenter verwaltet wird.<br>
 > - Die IP-Adresse Ihres Webhostings finden Sie im Tab `Allgemeine Informationen`{.action} unter dem Eintrag `IPv4`.
->![managessl](images/manage-ssl-arecord01.png){.thumbnail}
+> ![managessl](images/manage-ssl-arecord01.png){.thumbnail}
 > - Konfigurieren Sie die DNS-Zone der angegebenen Domain auf Multisite, im Bereich `Domains`{.action}, Tab `DNS-Zone`{.action}. Ändern oder fügen Sie einen entsprechenden `A`-Eintrag für Ihren Multisite-Eintrag hinzu und geben Sie die IP-Adresse Ihres Hostings im `Ziel` ein.
->![managessl](images/manage-ssl-arecord02.png){.thumbnail}
+> ![managessl](images/manage-ssl-arecord02.png){.thumbnail}
 >
 > Für weitere Informationen lesen Sie bitte unsere Anleitungen [zur Konfiguration eines Multisite-Eintrags](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) oder [zur Konfiguration einer DNS Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
 

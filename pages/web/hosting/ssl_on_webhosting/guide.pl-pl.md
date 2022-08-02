@@ -79,9 +79,9 @@ Przed przeprowadzeniem tej konfiguracji upewnij się, że poprzedni etap [aktywa
 >
 > Przed kontynuowaniem upewnij się również, że wpis lub wpisy MultiSite, dla których aktywujesz opcję SSL, wskazują na adres IP hostingu. Konfiguracja ta jest automatycznie proponowana podczas dodawania lub modyfikowania wpisu w opcji MultiSite, ale musi być wykonywana ręcznie dla domeny, która nie jest zarządzana w Twoim Panelu klienta.<br>
 > - Znajdź adres IP Twojego hostingu w zakładce 'Informacje ogólne{.action}, z adnotacją 'IPv4\.
->![managessl](images/manage-ssl-arecord01.png){.thumbnail}
+> ![managessl](images/manage-ssl-arecord01.png){.thumbnail}
 > - Konfiguracja strefy DNS domeny w opcji MultiSite w sekcji `Domeny{.action}, w zakładce `Strefa DNS`{.action}. Zmień lub dodaj rekord typu `A` odpowiadający Twojemu rekordowi w opcji MultiSite i wprowadź adres IP Twojego hostingu w `Docelowy`.
->![managessl](images/manage-ssl-arecord02.png){.thumbnail}
+> ![managessl](images/manage-ssl-arecord02.png){.thumbnail}
 >
 > Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami (dotyczącymi konfiguracji wpisu w opcji MultiSite) (https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/) lub [konfiguracji strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
 
