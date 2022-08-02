@@ -5,7 +5,7 @@ excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Inte
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 21/12/2020**
+**Dernière mise à jour le 02/08/2022**
 
 ## Objectif
 
@@ -104,7 +104,7 @@ Vous pouvez maintenant démarrer votre machine virtuelle et passer aux étapes s
 
 ### Configurer les machines virtuelles
 
-#### Debian
+#### Debian 11
 
 Connectez-vous à l'interface système (ou *shell*) de votre machine virtuelle. Une fois connecté, ouvrez le fichier de configuration réseau de la machine virtuelle, situé dans `/etc/network/interfaces`.
 Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
@@ -177,11 +177,11 @@ default via GATEWAY_IP dev eth0
 
 Enregistrez et fermez le fichier, puis redémarrez la machine virtuelle.
 
-#### CentOS 7
+#### CentOS 8
 
 > [!primary]
 > 
-> Concernant CentOS 7, le nom de la carte réseau varie en fonction des options d'installation. Vous devrez vérifier le nom de l'adaptateur et l'utiliser pour configurer votre machine virtuelle. Vous pouvez trouver les noms d'interface réseau avec la commande `ls /sys/class/net`.
+> Concernant CentOS 8, le nom de la carte réseau varie en fonction des options d'installation. Vous devrez vérifier le nom de l'adaptateur et l'utiliser pour configurer votre machine virtuelle. Vous pouvez trouver les noms d'interface réseau avec la commande `ls /sys/class/net`.
 > 
 
 Ouvrez un terminal sur votre machine virtuelle. Une fois connecté, ouvrez le fichier de configuration réseau de la machine virtuelle, qui se trouve dans `/etc/sysconfig/network-scripts/ifcfg-(nom de l'interface)`. Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
@@ -206,7 +206,7 @@ Sauvegardez et fermez le fichier.
 Ouvrez ensuite le fichier de routage de la machine virtuelle, qui se trouve dans `/etc/sysconfig/network-scripts/route-(nom-de l’interface)`. Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
 
 ```bash
-GATEWAY_IP - 169.254.10.254 (nom-interface)
+GATEWAY_IP - 169.254.10.252 (nom-interface)
 NETWORK_GW_VM - 255.255.255.0 (insérez le nom de l'interface)
 default GATEWAY_IP
 ```
@@ -240,7 +240,7 @@ nameserver 213.186.33.99
 
 Enregistrez et fermez le fichier, puis redémarrez la machine virtuelle.
 
-#### Ubuntu 18.04
+#### Ubuntu 22.04
 
 En premier lieu, établissez une connexion SSH à votre machine virtuelle et ouvrez le fichier de configuration réseau situé dans `/etc/netplan/` à l'aide de la commande suivante. À des fins de démonstration, notre fichier s'appelle « 50-cloud-init.yaml ».
 

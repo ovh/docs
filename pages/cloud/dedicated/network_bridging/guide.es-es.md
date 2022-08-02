@@ -67,7 +67,7 @@ Para configurar sus máquinas virtuales para el acceso a Internet, debe conocer 
 
 Su dirección de pasarela será:
 
-- 169.254.10.252
+- 169.254.10.**252**
 
 ### Preparar el host
 
@@ -108,7 +108,7 @@ Ya puede iniciar su máquina virtual y pasar a las siguientes etapas, en funció
 
 ### Configurar las máquinas virtuales
 
-#### Debian
+#### Debian 11
 
 Conéctese al panel del sistema (o *shell*) de su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual, situado en `/etc/network/interfaces`.
 Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
@@ -181,11 +181,11 @@ default via GATEWAY_IP dev eth0
 
 Guarde y cierre el archivo y reinicie la máquina virtual.
 
-#### CentOS 7
+#### CentOS 8
 
 > [!primary]
 > 
-> En CentOS 7, el nombre de la tarjeta de red varía en función de las opciones de instalación. Compruebe el nombre del adaptador y utilícelo para configurar su máquina virtual. Puede encontrar los nombres de la interfaz de red con el comando `ls /sys/class/net`.
+> En CentOS 8, el nombre de la tarjeta de red varía en función de las opciones de instalación. Compruebe el nombre del adaptador y utilícelo para configurar su máquina virtual. Puede encontrar los nombres de la interfaz de red con el comando `ls /sys/class/net`.
 > 
 
 Abra un terminal en su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual, que se encuentra en `/etc/sysconfig/network-scripts/ifcfg-(nombre de la interfaz)`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
@@ -244,7 +244,7 @@ nameserver 213.186.33.99
 
 Guarde y cierre el archivo y reinicie la máquina virtual.
 
-#### Ubuntu 18.04
+#### Ubuntu 22.04
 
 En primer lugar, conéctese a su máquina virtual por SSH y abra el archivo de configuración de red situado en `/etc/netplan/` utilizando el siguiente comando. A efectos de demostración, nuestro archivo se denomina "50-cloud-init.yaml".
 

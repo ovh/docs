@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak używać trybu bridge do konfiguracji dostępu do In
 section: 'Sieć & IP'
 ---
 
-**Ostatnia aktualizacja z dnia 21-12-2020**
+**Ostatnia aktualizacja z dnia 02-08-2022**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
@@ -109,7 +109,7 @@ Możesz teraz uruchomić wirtualną maszynę i przejść do kolejnych etapów, w
 
 ### Konfiguracja wirtualnych maszyn
 
-#### Debian
+#### Debian 11
 
 Zaloguj się do interfejsu systemu (lub *shell*) Twojej wirtualnej maszyny. Po zalogowaniu otwórz plik konfiguracyjny sieci wirtualnej maszyny znajdujący się w `/etc/network/interfaces`.
 Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
@@ -182,11 +182,11 @@ default via GATEWAY_IP dev eth0
 
 Zapisz i zamknij plik, a następnie uruchom ponownie wirtualną maszynę.
 
-#### CentOS 7
+#### CentOS 8
 
 > [!primary]
 > 
-> Nazwa karty sieciowej CentOS 7 różni się w zależności od opcji instalacji. Aby skonfigurować wirtualną maszynę, sprawdź nazwę adaptera i użyj jej. Nazwy interfejsów sieciowych można znaleźć za pomocą polecenia `ls /sys/class/net`.
+> Nazwa karty sieciowej CentOS 8 różni się w zależności od opcji instalacji. Aby skonfigurować wirtualną maszynę, sprawdź nazwę adaptera i użyj jej. Nazwy interfejsów sieciowych można znaleźć za pomocą polecenia `ls /sys/class/net`.
 > 
 
 Otwórz terminal na swojej wirtualnej maszynie. Po zalogowaniu otwórz plik konfiguracyjny sieci wirtualnej maszyny, który znajduje się w `/etc/sysconfig/network-scripts/ifcfg-(nazwa interfejsu)`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
@@ -211,7 +211,7 @@ Zapisz i zamknij plik.
 Następnie otwórz plik routingu wirtualnej maszyny, który znajduje się w `/etc/sysconfig/network-scripts/route-(nazwa interfejsu)`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
 
 ```console
-GATEWAY_IP - 169.254.10.254 (nazwa interfejsu)
+GATEWAY_IP - 169.254.10.252 (nazwa interfejsu)
 NETWORK_GW_VM - 255.255.255.0 (wpisz nazwę interfejsu)
 default GATEWAY_IP
 ```
@@ -245,7 +245,7 @@ nameserver 213.186.33.99
 
 Zapisz i zamknij plik, a następnie uruchom ponownie wirtualną maszynę.
 
-#### Ubuntu 18.04
+#### Ubuntu 22.04
 
 Po pierwsze, połącz się przez SSH ze swoją wirtualną maszyną i otwórz plik konfiguracyjny sieci znajdujący się w `/etc/netplan/` za pomocą polecenia. Nasz plik nazywa się "50-cloud-init.yaml".
 

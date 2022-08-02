@@ -9,7 +9,7 @@ section: Netzwerk & IP
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 14.01.2021**
+**Letzte Aktualisierung am 02.08.2022**
 
 ## Ziel
 
@@ -68,7 +68,7 @@ Um Ihre virtuellen Maschinen für den Internetzugang zu konfigurieren, müssen S
 
 Ihre Gateway-Adresse wäre dann:
 
-- 169.254.10.**254**
+- 169.254.10.**252**
 
 ### Schritt 3: Host vorbereiten
 
@@ -108,7 +108,7 @@ Sie können nun Ihre VM starten und zu den nächsten Schritten, abhängig vom in
 
 ### Die virtuellen Maschinen konfigurieren
 
-#### Debian
+#### Debian 11
 
 Verbinden Sie sich mit dem Interface (*shell*) Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/network/interfaces` befindet.
 Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
@@ -180,11 +180,11 @@ default via GATEWAY_IP dev eth0
 
 Speichern und schließen Sie die Datei und starten Sie die VM neu.
 
-#### CentOS 7
+#### CentOS 8
 
 > [!primary]
 > 
-> Bei CentOS 7 variiert der Name der Netzwerkkarte abhängig von den Installationsoptionen. Überprüfen Sie den Namen des Adapters und verwenden Sie diesen, um Ihre VM zu konfigurieren. Sie können die Netzwerkinterface-Namen mit dem Befehl `ls /sys/class/net` herausfinden.
+> Bei CentOS 8 variiert der Name der Netzwerkkarte abhängig von den Installationsoptionen. Überprüfen Sie den Namen des Adapters und verwenden Sie diesen, um Ihre VM zu konfigurieren. Sie können die Netzwerkinterface-Namen mit dem Befehl `ls /sys/class/net` herausfinden.
 > 
 
 Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/sysconfig/network-scripts/ifcfg-(Interface_Name)` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
@@ -208,7 +208,7 @@ Speichern und schließen Sie die Datei.<br>
 Öffnen Sie anschließend die Routing-Datei der VM, die sich in `/etc/sysconfig/network-scripts/route-(Interface_Name)` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
 
 ```console
-GATEWAY_IP - 169.254.10.254 (interface-name)
+GATEWAY_IP - 169.254.10.252 (interface-name)
 NETWORK_GW_VM - 255.255.255.0 (interface-name)
 default GATEWAY_IP
 ```
@@ -242,7 +242,7 @@ nameserver 213.186.33.99
 
 Speichern und schließen Sie die Datei und starten Sie die VM neu.
 
-#### Ubuntu 18.04
+#### Ubuntu 22.04
 
 Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/netplan/` befindet mit folgendem Befehl. Zu Demonstrationszwecken heißt unsere Datei "50-cloud-init.yaml".
 

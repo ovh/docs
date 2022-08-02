@@ -5,7 +5,7 @@ excerpt: 'Saiba como utilizar o modo bridge para configurar o acesso à Internet
 section: 'Redes & IP'
 ---
 
-**Última atualização: 21/12/2020**
+**Última atualização: 02/08/2022**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -107,7 +107,7 @@ Pode desde já iniciar a sua máquina virtual e passar às etapas seguintes, em 
 
 ### Configurar as máquinas virtuais
 
-#### Debian
+#### Debian 11
 
 Ligue-se à interface de sistema (ou *shell*) da sua máquina virtual. Uma vez ligado, abra o ficheiro de configuração de rede da máquina virtual, situado em/`etc/network/interfaces`.
 Altere o ficheiro para que este reflita a configuração abaixo. Não se esqueça de substituir as nossas variáveis pelos seus próprios valores:
@@ -180,11 +180,11 @@ default via GATEWAY_IP dev eth0
 
 Registe e feche o ficheiro e reinicie a máquina virtual.
 
-#### CentOS 7
+#### CentOS 8
 
 > [!primary]
 > 
-> No caso do CentOS 7, o nome da placa de rede varia em função das opções de instalação. Deverá verificar o nome do adaptador e utilizá-lo para configurar a sua máquina virtual. Pode encontrar os nomes de interface de rede com o comando `ls /sys/class/net`.
+> No caso do CentOS 8, o nome da placa de rede varia em função das opções de instalação. Deverá verificar o nome do adaptador e utilizá-lo para configurar a sua máquina virtual. Pode encontrar os nomes de interface de rede com o comando `ls /sys/class/net`.
 > 
 
 Abra um terminal na sua máquina virtual. Uma vez ligado, abra o ficheiro de configuração de rede da máquina virtual, que se encontra em `/etc/sysconfig/network-scripts/ifcfg-(nome da interface)`. Altere o ficheiro para que este reflita a configuração abaixo. Não se esqueça de substituir as nossas variáveis pelos seus próprios valores:
@@ -209,7 +209,7 @@ Guarde e feche o ficheiro.
 De seguida, abra o ficheiro de roteamento da máquina virtual, que se encontra em `/etc/sysconfig/network-scripts/rodoviário-(nome-da-interface)`. Altere o ficheiro para que este reflita a configuração abaixo. Não se esqueça de substituir as nossas variáveis pelos seus próprios valores:
 
 ```console
-GATEWAY_IP - 169.254.10.254 (nome-interface)
+GATEWAY_IP - 169.254.10.252 (nome-interface)
 NETWORK_GW_VM - 255.255.255.0 (insira o nome da interface)
 default GATEWAY_IP
 ```
@@ -243,7 +243,7 @@ nameserver 213.186.33.99
 
 Registe e feche o ficheiro e reinicie a máquina virtual.
 
-#### Ubuntu 18.04
+#### Ubuntu 22.04
 
 Em primeiro lugar, estabeleça uma ligação SSH à sua máquina virtual e abra o ficheiro de configuração de rede situado em `/etc/netplan/` através do comando seguinte. Para efeitos de demonstração, o nosso ficheiro chama-se "50-cloud-init.yaml".
 

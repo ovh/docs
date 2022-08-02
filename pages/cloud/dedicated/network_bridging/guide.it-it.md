@@ -5,7 +5,7 @@ excerpt: Come configurare l'accesso a Internet delle macchine virtuali utilizzan
 section: 'Rete e IP'
 ---
 
-**Ultimo aggiornamento: 21/12/2020**
+**Ultimo aggiornamento: 02/08/2022**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -108,7 +108,7 @@ A questo punto puoi avviare la tua macchina virtuale e passare agli step success
 
 ### Configura le macchine virtuali
 
-#### Debian
+#### Debian 11
 
 Accedi all'interfaccia di sistema (o *shell*) della tua macchina virtuale. Una volta connesso, apri il file di configurazione di rete della macchina virtuale, situato in `/etc/network/interfaces`.
 Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
@@ -181,11 +181,11 @@ default via GATEWAY_IP dev eth0
 
 Salva e chiudi il file e riavvia la macchina virtuale.
 
-#### CentOS 7
+#### CentOS 8
 
 > [!primary]
 > 
-> Per CentOS 7 il nome della scheda di rete varia in base alle opzioni di installazione. Dovrai verificare il nome dell'adattatore e utilizzarlo per configurare la tua macchina virtuale. Puoi trovare i nomi di interfaccia di rete con il comando `ls /sys/class/net`.
+> Per CentOS 8 il nome della scheda di rete varia in base alle opzioni di installazione. Dovrai verificare il nome dell'adattatore e utilizzarlo per configurare la tua macchina virtuale. Puoi trovare i nomi di interfaccia di rete con il comando `ls /sys/class/net`.
 > 
 
 Apri un terminale sulla tua macchina virtuale. Una volta connesso, apri il file di configurazione di rete della macchina virtuale, che si trova in `/etc/sysconfig/network-scripts/ifcfg-(nome dell'interfaccia)`. Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
@@ -210,7 +210,7 @@ Salva e chiudi il file
 Apri il file di routing della macchina virtuale, che si trova in `/etc/sysconfig/network-scripts/route-(nome dell'interfaccia)`. Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
 
 ```console
-GATEWAY_IP - 169.254.10.254 (nome-interfaccia)
+GATEWAY_IP - 169.254.10.252 (nome-interfaccia)
 NETWORK_GW_VM - 255.255.255.0 (inserisci il nome dell'interfaccia)
 default GATEWAY_IP
 ```
@@ -244,7 +244,7 @@ nameserver 213.186.33.99
 
 Salva e chiudi il file e riavvia la macchina virtuale.
 
-#### Ubuntu 18.04
+#### Ubuntu 22.04
 
 Per prima cosa connetti SSH alla tua macchina virtuale e apri il file di configurazione di rete situato in `/etc/netplan/`utilizzando il comando seguente. Per dimostrarlo, il nostro file si chiama "50-cloud-init.yaml".
 

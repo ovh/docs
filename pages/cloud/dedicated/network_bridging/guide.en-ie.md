@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure your virtual machines for access to the publ
 section: 'Network Management'
 ---
 
-**Last updated 13th January 2021**
+**Last updated 2nd August 2022**
 
 ## Objective
 
@@ -64,7 +64,7 @@ To configure your virtual machines for internet access, you will need to know th
 
 Your gateway address would therefore be:
 
-- 169.254.10.**254**
+- 169.254.10.**252**
 
 ###  Step 3: Prepare the host
 
@@ -104,7 +104,7 @@ Now you can start the VM and proceed with the configuration steps, depending on 
 
 ### Step 4: Configure the virtual machines
 
-#### Debian
+#### Debian 11
 
 Connect to the shell of your virtual machine. Open the virtual machine's network configuration file located in `/etc/network/interfaces`. 
 Edit the file so that it reflects the configuration below (please remember to fill in your own values).
@@ -176,11 +176,11 @@ default via GATEWAY_IP dev eth0
 
 Save and close the file, then reboot your virtual machine.
 
-#### CentOS 7
+#### CentOS 8
 
 > [!primary]
 > 
-> For CentOS 7, the name of the network adapter will vary, depending on the installation options. You will need to verify the adapter name and use it to configure your virtual machine. You can find the Network interface names with the command `ls /sys/class/net`.
+> For CentOS 8, the name of the network adapter will vary, depending on the installation options. You will need to verify the adapter name and use it to configure your virtual machine. You can find the Network interface names with the command `ls /sys/class/net`.
 > 
 
 Open a terminal on your virtual machine. Open the virtual machine's network configuration file located in `/etc/sysconfig/network-scripts/ifcfg-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to fill in your own values).
@@ -204,7 +204,7 @@ Save and close the file.<br>
 Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to fill in your own values).
 
 ```console
-GATEWAY_IP - 169.254.10.254 (interface-name)
+GATEWAY_IP - 169.254.10.252 (interface-name)
 NETWORK_GW_VM - 255.255.255.0 (interface-name)
 default GATEWAY_IP
 ```
@@ -238,7 +238,7 @@ nameserver 213.186.33.99
 
 Save and close the file, then reboot your virtual machine.
 
-#### Ubuntu 18.04
+#### Ubuntu 22.04
 
 First, open a terminal on your virtual machine and open the network configuration file located in `/etc/netplan/` with the following command. For demonstration purposes, our file is called `50-cloud-init.yaml`.
 

@@ -5,7 +5,7 @@ excerpt: El modo bridge IP se utiliza para configurar las maquinas virtuales. Es
 section: Red e IP
 ---
 
-**Última actualización: 21/12/2020**
+**Última actualización: 02/08/2022**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -108,7 +108,7 @@ Ya puede iniciar su máquina virtual y pasar a las siguientes etapas, en funció
 
 ### Configurar las máquinas virtuales
 
-#### Debian
+#### Debian 11
 
 Conéctese al panel del sistema (o *shell*) de su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual, situado en `/etc/network/interfaces`.
 Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
@@ -181,11 +181,11 @@ default via GATEWAY_IP dev eth0
 
 Guarde y cierre el archivo y reinicie la máquina virtual.
 
-#### CentOS 7
+#### CentOS 8
 
 > [!primary]
 > 
-> En CentOS 7, el nombre de la tarjeta de red varía en función de las opciones de instalación. Compruebe el nombre del adaptador y utilícelo para configurar su máquina virtual. Puede encontrar los nombres de la interfaz de red con el comando `ls /sys/class/net`.
+> En CentOS 8, el nombre de la tarjeta de red varía en función de las opciones de instalación. Compruebe el nombre del adaptador y utilícelo para configurar su máquina virtual. Puede encontrar los nombres de la interfaz de red con el comando `ls /sys/class/net`.
 > 
 
 Abra un terminal en su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual, que se encuentra en `/etc/sysconfig/network-scripts/ifcfg-(nombre de la interfaz)`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
@@ -210,7 +210,7 @@ Guarde y cierre el archivo.
 Abra el archivo de enrutado de la máquina virtual, que se encuentra en `/etc/sysconfig/network-scripts/route-(nombre de la interfaz)`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
 
 ```bash
-GATEWAY_IP - 169.254.10.254 (nombre-interfaz)
+GATEWAY_IP - 169.254.10.252 (nombre-interfaz)
 NETWORK_GW_VM - 255.255.255.0 (inserte el nombre de la interfaz)
 default GATEWAY_IP
 ```
@@ -244,7 +244,7 @@ nameserver 213.186.33.99
 
 Guarde y cierre el archivo y reinicie la máquina virtual.
 
-#### Ubuntu 18.04
+#### Ubuntu 22.04
 
 En primer lugar, conéctese a su máquina virtual por SSH y abra el archivo de configuración de red situado en `/etc/netplan/` utilizando el siguiente comando. A efectos de demostración, nuestro archivo se denomina "50-cloud-init.yaml".
 
@@ -317,7 +317,7 @@ Seleccione el protocolo de `internet versión 4 (TCP/IPv4)`{.action} y haga clic
 
 En la ventana Propiedades de la IPv4, seleccione `Use the following IP address`{.action}. Introduzca la dirección IP failover en el campo de direcciones IP e introduzca "255.255.255.255" en la máscara de subred.
 
-A continuación, introduzca la dirección IP de la pasarela del servidor en la pasarela por defecto (por ejemplo, la IP del servidor termina en 254) e introduzca "213.186.33.99" en el campo `Preferred DNS Server`{.action}.
+A continuación, introduzca la dirección IP de la pasarela del servidor en la pasarela por defecto (por ejemplo, la IP del servidor terminada en 252) e introduzca "213.186.33.99" en el campo `Preferred DNS Server`{.action}.
 
 Haga clic en `Aceptar`{.action} e ignore el mensaje de aviso relativo a la dirección IP de la pasarela y a la dirección IP asignada que no estén en la misma subred.
 
