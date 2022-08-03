@@ -62,7 +62,6 @@ Clique no tipo de produto a rescindir na seguinte lista das principais ofertas O
 
 [Hosted Private Cloud](#privatecloud)<br />
 &emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by Anthos](#hostedprivatecloud-anthos)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -135,14 +134,6 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
 Para rescindir a sua oferta [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), siga as instruções deste [guia](https://docs.ovh.com/pt/private-cloud/como-rescindir-o-hosted-private-cloud/).
-
-#### Hosted Private Cloud powered by Anthos <a name="hostedprivatecloud-anthos"></a>
-
-Para rescindir o seu serviço [Hosted Private Cloud powered by Anthos](https://www.ovhcloud.com/pt/hosted-private-cloud/anthos/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
-
-A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
-
-Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 

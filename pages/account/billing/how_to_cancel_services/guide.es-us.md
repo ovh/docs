@@ -62,7 +62,6 @@ Haga clic en el tipo de producto que desea dar de baja en la siguiente lista de 
 
 [Hosted Private Cloud](#privatecloud)<br />
 &emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by Anthos](#hostedprivatecloud-anthos)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -128,14 +127,6 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
 Para dar de baja su servicio [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/), siga las indicaciones de esta [guía](https://docs.ovh.com/us/es/private-cloud/dar-de-baja-solucion-hosted-private-cloud/).
-
-#### Hosted Private Cloud powered by Anthos <a name="hostedprivatecloud-anthos"></a>
-
-Para dar de baja el servicio [Hosted Private Cloud powered by Anthos](https://www.ovhcloud.com/es/hosted-private-cloud/anthos/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
-
-Haga clic en el botón `...`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
-
-Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 

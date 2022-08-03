@@ -56,7 +56,6 @@ Click on the type of product to be cancelled in the following list of main OVHcl
 
 [Hosted Private Cloud](#privatecloud)<br />
 &emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by Anthos](#hostedprivatecloud-anthos)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -102,14 +101,6 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
 To cancel your [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/asia/hosted-private-cloud/), follow the instructions in this [guide](https://docs.ovh.com/asia/en/private-cloud/how-to-cancel-private-cloud/).
-
-#### Hosted Private Cloud powered by Anthos <a name="hostedprivatecloud-anthos"></a>
-
-To cancel your [Hosted Private Cloud powered by Anthos](https://www.ovhcloud.com/asia/hosted-private-cloud/anthos/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Service Management`{.action}.
-
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
-
-Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 

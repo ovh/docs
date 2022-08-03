@@ -62,7 +62,6 @@ Kliknij na rodzaj produktu, który chcesz zrezygnować z usługi na poniższej l
 
 [Hosted Private Cloud](#privatecloud)<br />
 &emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by Anthos](#hostedprivatecloud-anthos)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -135,14 +134,6 @@ Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
 Aby zrezygnować z usługi [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/private-cloud/jak-zrezygnowac-z-private-cloud/).
-
-#### Hosted Private Cloud powered by Anthos <a name="hostedprivatecloud-anthos"></a>
-
-Aby zrezygnować z usługi [Hosted Private Cloud powered by Anthos](https://www.ovhcloud.com/pl/hosted-private-cloud/anthos/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Zarządzanie usługami`{.action}.
-
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
-
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
