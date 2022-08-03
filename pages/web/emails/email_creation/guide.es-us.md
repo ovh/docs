@@ -7,7 +7,7 @@ order: 2
 hidden: true
 ---
 
-**Última actualización: 05/05/2020**
+**Última actualización: 03/08/2022**
 
 ## Objetivo
 
@@ -20,6 +20,10 @@ Las direcciones de correo de un alojamiento web permiten enviar y recibir mensaj
 - Tener una solución MX Plan (incluida en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Poder crear más direcciones de correo electrónico en su MX Plan.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
+
+> [!primary]
+>
+> - En un [alojamiento web](https://www.ovhcloud.com/es/web-hosting/){.external}, es necesario activar la solución MX Plan incluida antes de continuar leyendo esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo electrónico incluidas en su alojamiento web](https://docs.ovh.com/es/hosting/activar-correo-hosting-web/).
 
 ## Procedimiento
 
@@ -63,8 +67,6 @@ Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}.
 Compruebe que la información indicada en el resumen es correcta. Si lo es, haga clic en `Aceptar`{.action}. La cuenta que acaba de crear aparecerá en la tabla. Espere a que la cuenta esté disponible.
 
 Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas de que disponga.
-
-![Correo electrónico](images/mxplan-creation-new-step4.png){.thumbnail}
 
 #### 3. Utilizar las direcciones de correo
 

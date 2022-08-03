@@ -7,7 +7,7 @@ order: 02
 legacy_guide_number: g1343
 ---
 
-**Ultimo aggiornamento: 22/07/2019**
+**Ultimo aggiornamento: 03/08/2022**
 
 ## Obiettivo
 
@@ -23,7 +23,10 @@ La soluzione MX Plan di OVHcloud permette di usufruire di una o più caselle ema
 
 > [!primary]
 >
-> Se disponi di un hosting Start 10M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, selezionando il dominio in questione.
+>**Casi particolari**
+>
+> - In caso di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, è necessario attivare la tua soluzione MX Plan inclusa prima di proseguire nella lettura di questa guida. Per effettuare questa operazione, consulta la guida "[Attiva gli indirizzi email inclusi nel tuo hosting Web](https://docs.ovh.com/it/hosting/attivare-email-hosting-web/)".
+> - Se disponi di un hosting Start 10M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, selezionando il dominio in questione.
 >
 
 ## Procedura
@@ -69,8 +72,6 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}.
 Verifica la correttezza delle informazioni inserite e poi clicca su `Conferma`{.action}. Il nuovo account comparirà nella tabella e sarà disponibile all’utilizzo entro pochi minuti.
 
 Ripeti questa operazione per tutti gli account che vuoi creare, in base al numero a tua disposizione.
-
-![email](images/mxplan-creation-new-step4.png){.thumbnail}
 
 #### Step 3: utilizza gli indirizzi email
 

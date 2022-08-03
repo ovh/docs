@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 02
 ---
 
-**Ostatnia aktualizacja z dnia 24-04-2019**
+**Ostatnia aktualizacja z dnia 03-08-2022**
 
 ## Wprowadzenie
 
@@ -22,7 +22,11 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 
 > [!primary]
 >
-> Jeśli chodzi o bezpłatny hosting Start 10M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Możesz przeprowadzić tę operację w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przechodząc do odpowiedniej domeny.
+> **Szczególne przypadki**
+>
+> - W ramach [hostingu www](https://www.ovhcloud.com/pl/web-hosting/){.external}, należy włączyć, jeśli jeszcze tego nie zrobiłeś, Twoją ofertę MX Plan zawartą w ofercie, zanim przejdziesz do dalszej lektury tej dokumentacji. W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj adresy e-mail zawarte w Twoim hostingu](https://docs.ovh.com/pl/hosting/aktywacja-kont-email-zawartych-w-hostingu/)".
+>
+> - Jeśli chodzi o bezpłatny hosting Start 10M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Możesz przeprowadzić tę operację w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przechodząc do odpowiedniej domeny.
 >
 
 ## W praktyce
@@ -68,7 +72,6 @@ Sprawdź informacje, które wyświetlają się w podsumowaniu. Jeśli są popraw
 
 Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od liczby kont, które posiadasz.
 
-![E-mail](images/mxplan-creation-new-step4.png){.thumbnail}
 
 #### Etap 3: korzystanie z kont e-mail
 

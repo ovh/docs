@@ -7,7 +7,7 @@ order: 2
 hidden: true
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 03/08/2022**
 
 ## Objectif
 
@@ -20,6 +20,10 @@ Les adresses e-mail de l’offre MX Plan permettent d’envoyer et de recevoir v
 - Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, ou l'offre MX Plan commandée séparément.
 - Avoir encore la possibilité de créer des adresses e-mail dans le cadre de votre offre.
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}.
+
+> [!primary]
+>
+> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, il est nécessaire d'activer, si cela n'a pas déjà été fait, votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mails incluses dans votre hébergement web](https://docs.ovh.com/ca/fr/hosting/activate-email-web-hosting/) ».
 
 ## En pratique
 
@@ -63,8 +67,6 @@ Une fois les champs complétés, cliquez sur `Suivant`{.action}.
 Vérifiez maintenant les informations qui s'affichent dans le récapitulatif ; si celles-ci sont correctes, cliquez sur `Valider`{.action}. Le compte nouvellement ajouté apparaît alors dans le tableau. Patientez quelques instants le temps que le compte soit disponible.
 
 Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition.
-
-![email](images/mxplan-creation-new-step4.png){.thumbnail}
 
 #### Étape 3 : utiliser vos adresses e-mail
 
