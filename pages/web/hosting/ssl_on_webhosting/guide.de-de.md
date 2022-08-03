@@ -10,7 +10,9 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 26.07.2022**
+**Letzte Aktualisierung am 01.08.2022**
+
+## Ziel
 
 Sie haben bei Ihrem Webhosting die Möglichkeit, ein SSL-Zertifikat einzurichten. Das Zertifikat können Sie entweder direkt bei OVHcloud bestellen oder eines auf Ihr Hosting importieren. Sobald das Zertifikat auf Ihrem Webhosting installiert und fertig eingerichtet ist, können Sie eine oder mehrere Ihrer Websites mit einer sicheren SSL-Verbindung und somit über HTTPS betreiben.
 
@@ -26,57 +28,15 @@ Sie haben bei Ihrem Webhosting die Möglichkeit, ein SSL-Zertifikat einzurichten
 
 Es sind mehrere Schritte notwendig, um ein SSL-Zertifikat auf Ihrem OVHcloud-Webhosting zu erstellen. Wir empfehlen Ihnen, die 3 Schritte **in der folgenden Reihenfolge** durchzuführen.
 
-- [1. SSL-Zertifikat auf Ihrem Webhosting aktivieren](#enablessl): Dieser Abschnitt hilft Ihnen, ein SSL-Zertifikat auf Ihrem Webhosting zu aktivieren. Dabei kann es sich um ein kostenloses oder kostenpflichtiges Zertifikat handeln, das bei OVHcloud bestellt wurde. Sie können auch Ihr eigenes, bei einem anderen Anbieter bestelltes SSL-Zertifikat importieren.
+[1. SSL-Zertifikat für eine Multisite aktivieren](#multisite): Wenn Ihre Lösung oder Ihr SSL-Zertifikat dies erlauben, können Sie mehrere Ihrer Multisites mit einer sicheren SSL-Verbindung ausstatten.
 
-- [2. SSL-Zertifikat für eine Multisite aktivieren](#multisite): Wenn Ihre Lösung oder Ihr SSL-Zertifikat dies erlauben, können Sie mehrere Ihrer Multisites mit einer sicheren SSL-Verbindung ausstatten.
+[2. SSL-Zertifikat auf Ihrem Webhosting aktivieren](#enablessl): Dieser Abschnitt hilft Ihnen, ein SSL-Zertifikat auf Ihrem Webhosting zu aktivieren. Dabei kann es sich um ein kostenloses oder kostenpflichtiges Zertifikat handeln, das bei OVHcloud bestellt wurde. Sie können auch Ihr eigenes, bei einem anderen Anbieter bestelltes SSL-Zertifikat importieren.
 
-- [3. SSL-Zertifikat auf einem Webhosting neu erstellen](#regeneratessl): Dieser Schitt ermöglicht es, ein SSL-Zertifikat von Let's Encrypt auf Ihrem Webhosting zu erstellen, wenn Sie SSL auf einer oder mehreren Multisites neu aktiviert haben.
+[3. SSL-Zertifikat auf einem Webhosting neu erstellen](#regeneratessl): Dieser Schitt ermöglicht es, ein SSL-Zertifikat von Let's Encrypt auf Ihrem Webhosting zu erstellen, wenn Sie SSL auf einer oder mehreren Multisites neu aktiviert haben.
 
 Sie können auch [SSL-Zertifikat auf einem Webhosting löschen](#deletessl). **Bitte beachten Sie, dass dies Risiken bergen kann, wenn eine Ihrer Webseiten das Zertifikat verwendet, das Sie löschen möchten**.
 
-### 1. SSL-Zertifikat auf Ihrem Webhosting aktivieren <a name="enablessl"></a>
-
-Bei Ihrem OVHcloud Webhosting haben Sie für die Aktivierung eines [SSL-Zertifikats](https://www.ovh.de/ssl/){.external} verschiedene Optionen:
-
-- das kostenfreie SSL-Zertifikat von Let's Encrypt, [das bei allen kompatiblen Webhosting Angeboten inklusive ist](https://www.ovh.de/ssl/){.external}
-- ein kostenpflichtiges SSL-Zertifikat [als optionale Zusatzleistung bei allen kompatiblen Webhosting Angeboten](https://www.ovh.de/ssl/){.external}
-- Import eines Zertifikats, das bei einem anderen Anbieter erworben wurde
-
-Um Ihr Zertifikat zu aktivieren, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}. Unter dem Tab "SSL-Zertifikat" sollte der Eintrag "Nein" erscheinen, aus dem hervorgeht, dass auf Ihrem Webhosting kein SSL-Zertifikat eingerichtet und installiert wurde.
-
-> [!primary]
->
-> Vergewissern Sie sich, dass der vorherige Schritt der [Aktivierung eines SSL-Zertifikats für eine Multisite](#multisite) korrekt durchgeführt wurde. Mindestens eine Domain muss die SSL-Option `Aktiviert` oder den Status `Erstellen` haben, um das SSL-Zertifikat zu aktivieren<br>.
-> Diese Angaben finden keine Anwendung, wenn Sie `Kostenpflichtiges Zertifikat`{.action} oder `Import Ihres SSL-Zertifikats`{.action} auswählen.
->
-
-Klicken Sie auf den Button `...`{.action} neben "SSL-Zertifikat" und dann auf `SSL-Zertifikat bestellen`{.action}.
-
-Wenn das Wort "Ja" erscheint, bedeutet dies, dass bereits ein SSL-Zertifikat auf dem Webhosting installiert und konfiguriert wurde. Daher können Sie kein anderes Zertifikat bestellen, solange das bestehende Zertifikat aktiv ist.
-
-![ssl verwalten](images/manage-ssl-step1.png){.thumbnail}
-
-Wählen Sie in dem neuen Fenster das SSL-Zertifikat aus, das Sie bestellen möchten. Je nach Art Ihres [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebots und dessen Konfiguration kann es sein, dass keine der nachstehend aufgeführten Lösungen verfügbar ist. Wenn Sie Ihre Auswahl vorgenommen haben, klicken Sie auf `Weiter`{.action}.
-
-![ssl verwalten](images/manage-ssl-step2.png){.thumbnail}
-
-Je nach gewählter Lösung können weitere Schritte notwendig sein:
-
-- **wenn Sie ein kostenloses SSL-Zertifikat ausgewählt haben:** Sie brauchen keine weiteren Aktionen durchzuführen, es sei denn, ein technisches Element verhindert die Aktivierung des SSL-Zertifikats (in diesem Fall erscheint eine Nachricht im OVHcloud Kundencenter, in der die zu überprüfenden Elemente aufgeführt sind) oder die Validierung Ihrer Domain für die Ausstellung des SSL-Zertifikats. In diesem Fall werden Sie benachrichtigt. Befolgen die Anweisungen, die Ihnen mitgeteilt werden.
-
-- **wenn Sie ein kostenpflichtiges SSL-Zertifikat ausgewählt haben:** Sie müssen den Bestellprozess abschließen, um ein Zertifikat zu erhalten. Für einige Arten von SSL-Zertifikaten ist ein spezifischer Validierungsprozess notwendig. Sie werden daher eine oder mehrere entsprechende E-Mails zur Bestätigung erhalten. Ist das der Fall, lesen Sie die darin enthaltenen Informationen und folgen Sie den Anweisungen zum Abschluss der Konfiguration.
-
-- **wenn Sie sich für den Import eines SSL Zertifikats entschieden haben:** Geben Sie in den angezeigten Feldern die Details des Zertifikats ein. Bitte verwenden Sie hierfür die Informationen, die Sie beim Erwerb des Zertifikats von Ihrem Anbieter erhalten haben.
-
-Je nach Art des gewählten Zertifikats kann die Konfiguration wenige Minuten bis hin zu mehreren Tagen dauern. Um zu überprüfen, ob das SSL-Zertifikat auf Ihrem Webhosting eingerichtet wurde, gehen Sie in Ihrem OVHcloud Kundencenter auf den Tab `Allgemeine Informationen`{.action}. Das Wort "Ja" muss dann unter "SSL-Zertifikat" erscheinen.
-
-![ssl verwalten](images/manage-ssl-step4.png){.thumbnail}
-
-### 2. SSL-Zertifikat für eine Multisite aktivieren <a name="multisite"></a>
-
-> [!primary]
->
-> Bevor Sie einem Ihrer Multisite-Einträge das SSL Zertifikat zuweisen, überprüfen Sie, dass Sie zuvor ein SSL Zertifikat auf Ihrem Hosting aktiviert haben. Beachten Sie dazu den [vorherigen Schritt](#enablessl).
+### 1. SSL-Zertifikat für eine Multisite aktivieren <a name="multisite"></a>
 
 Je nach Art des [SSL-Zertifikats](https://www.ovhcloud.com/de/web-hosting/options/ssl/){.external}, das Sie bestellen möchten, können Sie eine sichere SSL-Verbindung für eine oder mehrere Ihrer Multisites aktivieren. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Multisite`{.action}.
 
@@ -107,6 +67,50 @@ Sobald Sie die Aktivierungsanfrage eingereicht haben, sollte sich der Zustand de
 > Lesen Sie diese Anleitung im Bereich "[SSL-Zertifikat auf einem Webhosting neu erstellen](#regeneratessl)", um das SSL-Zertifikat für die verbleibenden Multisites zu erneuern.
 >
 
+### 2. SSL-Zertifikat auf Ihrem Webhosting aktivieren <a name="enablessl"></a>
+
+Vergewissern Sie sich, dass der vorherige Schritt der [Aktivierung eines SSL-Zertifikats für eine Multisite](#multisite) korrekt durchgeführt wurde. Mindestens eine Domain muss die SSL-Option `Aktiviert` oder den Status `Erstellen` haben, um das SSL-Zertifikat zu aktivieren.<br>
+**Diese Angaben finden keine Anwendung, wenn Sie `Kostenpflichtiges Zertifikat`{.action} oder `Import Ihres SSL-Zertifikats`{.action} auswählen.**
+
+> [!warning]
+>
+> Vergewissern Sie sich außerdem, dass der oder die Multisite-Einträge, für die Sie die SSL Option aktivieren, auf die IP-Adresse des Webhostings zeigen. Diese Konfiguration wird Ihnen automatisch angeboten, wenn Sie einen Multisite-Eintrag hinzufügen oder ändern, muss aber manuell für eine Domain erfolgen, die nicht in Ihrem Kundencenter verwaltet wird.<br>
+> - Die IP-Adresse Ihres Webhostings finden Sie im Tab `Allgemeine Informationen`{.action} unter dem Eintrag `IPv4`.
+> ![managessl](images/manage-ssl-arecord01.png){.thumbnail}
+> - Konfigurieren Sie die DNS-Zone der angegebenen Domain auf Multisite, im Bereich `Domains`{.action}, Tab `DNS-Zone`{.action}. Ändern oder fügen Sie einen entsprechenden `A`-Eintrag für Ihren Multisite-Eintrag hinzu und geben Sie die IP-Adresse Ihres Hostings im `Ziel` ein.
+> ![managessl](images/manage-ssl-arecord02.png){.thumbnail}
+>
+> Für weitere Informationen lesen Sie bitte unsere Anleitungen [zur Konfiguration eines Multisite-Eintrags](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) oder [zur Konfiguration einer DNS Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
+
+Bei Ihrem OVHcloud Webhosting haben Sie für die Aktivierung eines [SSL-Zertifikats](https://www.ovh.de/ssl/){.external} verschiedene Optionen:
+
+- das kostenfreie SSL-Zertifikat von Let's Encrypt, [das bei allen kompatiblen Webhosting Angeboten inklusive ist](https://www.ovh.de/ssl/){.external}
+- ein kostenpflichtiges SSL-Zertifikat [als optionale Zusatzleistung bei allen kompatiblen Webhosting Angeboten](https://www.ovh.de/ssl/){.external}
+- Import eines Zertifikats, das bei einem anderen Anbieter erworben wurde
+
+Um Ihr Zertifikat zu aktivieren, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}. Unter dem Tab "SSL-Zertifikat" sollte der Eintrag "Nein" erscheinen, aus dem hervorgeht, dass auf Ihrem Webhosting kein SSL-Zertifikat eingerichtet und installiert wurde.
+
+Klicken Sie auf den Button `...`{.action} neben "SSL-Zertifikat" und dann auf `SSL-Zertifikat bestellen`{.action}.
+
+Wenn das Wort "Ja" erscheint, bedeutet dies, dass bereits ein SSL-Zertifikat auf dem Webhosting installiert und konfiguriert wurde. Daher können Sie kein anderes Zertifikat bestellen, solange das bestehende Zertifikat aktiv ist.
+
+![ssl verwalten](images/manage-ssl-step1.png){.thumbnail}
+
+Wählen Sie in dem neuen Fenster das SSL-Zertifikat aus, das Sie bestellen möchten. Je nach Art Ihres [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebots und dessen Konfiguration kann es sein, dass keine der nachstehend aufgeführten Lösungen verfügbar ist. Wenn Sie Ihre Auswahl vorgenommen haben, klicken Sie auf `Weiter`{.action}.
+
+![ssl verwalten](images/manage-ssl-step2.png){.thumbnail}
+
+Je nach gewählter Lösung können weitere Schritte notwendig sein:
+
+- **wenn Sie ein kostenloses SSL-Zertifikat ausgewählt haben:** Sie brauchen keine weiteren Aktionen durchzuführen, es sei denn, ein technisches Element verhindert die Aktivierung des SSL-Zertifikats (in diesem Fall erscheint eine Nachricht im OVHcloud Kundencenter, in der die zu überprüfenden Elemente aufgeführt sind) oder die Validierung Ihrer Domain für die Ausstellung des SSL-Zertifikats. In diesem Fall werden Sie benachrichtigt. Befolgen die Anweisungen, die Ihnen mitgeteilt werden.
+
+- **wenn Sie ein kostenpflichtiges SSL-Zertifikat ausgewählt haben:** Sie müssen den Bestellprozess abschließen, um ein Zertifikat zu erhalten. Für einige Arten von SSL-Zertifikaten ist ein spezifischer Validierungsprozess notwendig. Sie werden daher eine oder mehrere entsprechende E-Mails zur Bestätigung erhalten. Ist das der Fall, lesen Sie die darin enthaltenen Informationen und folgen Sie den Anweisungen zum Abschluss der Konfiguration.
+
+- **wenn Sie sich für den Import eines SSL Zertifikats entschieden haben:** Geben Sie in den angezeigten Feldern die Details des Zertifikats ein. Bitte verwenden Sie hierfür die Informationen, die Sie beim Erwerb des Zertifikats von Ihrem Anbieter erhalten haben.
+
+Je nach Art des gewählten Zertifikats kann die Konfiguration wenige Minuten bis hin zu mehreren Tagen dauern. Um zu überprüfen, ob das SSL-Zertifikat auf Ihrem Webhosting eingerichtet wurde, gehen Sie in Ihrem OVHcloud Kundencenter auf den Tab `Allgemeine Informationen`{.action}. Das Wort "Ja" muss dann unter "SSL-Zertifikat" erscheinen.
+
+![ssl verwalten](images/manage-ssl-step4.png){.thumbnail}
 
 ### 3. SSL-Zertifikat für das Webhosting erneuern <a name="regeneratessl"></a>
 

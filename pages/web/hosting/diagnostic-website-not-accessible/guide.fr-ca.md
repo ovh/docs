@@ -6,7 +6,7 @@ section: Diagnostic
 Order: 1
 ---
 
-**Dernière mise à jour le 16/07/2021**
+**Dernière mise à jour le 02/08/2022**
 
 ## Objectif
 
@@ -32,6 +32,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 
 - Avoir la gestion des serveurs et de la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) de votre domaine
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être à jour dans les [paiements](https://docs.ovh.com/ca/fr/billing/gerer-factures-ovh/#pay-bills) et [renouvellements](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#renewal-management) des services liés (nom de domaine et hébergement web)
 
 ## En pratique
 

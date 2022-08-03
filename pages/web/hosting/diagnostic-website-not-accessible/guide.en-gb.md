@@ -6,7 +6,7 @@ section: Troubleshooting
 Order: 1
 ---
 
-**Last updated 16th July 2021**
+**Last updated 2nd August 2022**
 
 ## Objective
 
@@ -31,6 +31,7 @@ Several error messages may appear on your browser in the event of your site bein
 
 - administrative access to your domain name in order to change the DNS servers and edit the [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- being up-to-date in the [payments](https://docs.ovh.com/gb/en/billing/manage-ovh-bills/#pay-bills) and [renewals](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 

@@ -10,7 +10,7 @@ Order: 1
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 16/07/2021**
+**Última actualización: 02/08/2022**
 
 ## Objetivo
 
@@ -36,6 +36,7 @@ En caso de que su sitio web no sea accesible, puede haber varios errores en su n
 
 - Tener la gestión de los servidores y de la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns) del dominio.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Estar actualizado en los [pagos](https://docs.ovh.com/us/es/billing/gestionar-facturas-ovh/#pay-bills) y [renovaciones](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
 

@@ -62,7 +62,6 @@ Klicken Sie auf den zu kündigenden Produkttyp in der folgenden Liste der wichti
 
 [Hosted Private Cloud](#privatecloud)<br />
 &emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by Anthos](#hostedprivatecloud-anthos)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -135,14 +134,6 @@ Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Best�
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
 Um Ihre [Hosted Private Cloud Powered by VMware](https://www.ovhcloud.com/de/hosted-private-cloud/) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/private-cloud/eine-private-cloud-kuendigen/).
-
-#### Hosted Private Cloud Powered by Anthos <a name="hostedprivatecloud-anthos"></a>
-
-Um Ihre [Hosted Private Cloud Powered by Anthos](https://www.ovhcloud.com/de/hosted-private-cloud/anthos/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
-
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action}. und dann auf `Kündigen`{.action}.
-
-Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 

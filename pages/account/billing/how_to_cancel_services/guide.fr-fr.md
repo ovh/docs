@@ -58,7 +58,6 @@ Cliquez sur le type de produit à résilier dans la liste suivante des principal
 
 [Hosted Private Cloud](#privatecloud)<br />
 &emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by Anthos](#hostedprivatecloud-anthos)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -138,14 +137,6 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
 Pour résilier votre offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/private-cloud/comment-resilier-le-private-cloud/).
-
-#### Hosted Private Cloud powered by Anthos <a name="hostedprivatecloud-anthos"></a>
-
-Pour résilier votre service [Hosted Private Cloud powered by Anthos](https://www.ovhcloud.com/fr/hosted-private-cloud/anthos/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Gestion des services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 

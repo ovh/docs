@@ -6,7 +6,7 @@ section: Troubleshooting
 Order: 1
 ---
 
-**Last updated 16th July 2021**
+**Last updated 2nd August 2022**
 
 ## Objective
 
@@ -32,6 +32,7 @@ Several error messages may appear on your browser in the event of your site bein
 
 - control over your domain’s servers and [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- being up-to-date in the [payments](https://docs.ovh.com/asia/en/billing/manage-ovh-bills/#pay-bills) and [renewals](https://docs.ovh.com/asia/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 
