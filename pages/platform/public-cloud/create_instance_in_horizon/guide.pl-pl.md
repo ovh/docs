@@ -10,7 +10,7 @@ section: 'Zarządzanie w interfejsie Horizon'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 31-12-2021**
+**Ostatnia aktualizacja z dnia 02-08-2022**
 
 ## Wprowadzenie
 
@@ -20,7 +20,7 @@ Istnieje możliwość tworzenia instancji bezpośrednio w interfejsie Horizon. M
 
 ## Wymagania początkowe
 
-- Utworzenie projektu [Public Cloud]({ovh_www}/public-cloud/instances/){.external} na Twoim koncie OVHcloud
+- Utworzenie [projektu Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
 - [Dostęp do interfejsu Horizon](../horizon/){.external}
 
 ## W praktyce
@@ -57,7 +57,7 @@ Wprowadź następnie odpowiednie dane. W razie potrzeby skorzystaj z poniższej 
 
 > [!warning] 
 > 
-> Chociaż pole "Key Pair" nie jest obowiązkowe w interfejsie Horizon podczas tworzenia instancji, rejestracja klucza SSH jest absolutnie konieczna, aby móc połączyć się z instancją. Bez klucza SSH będziesz musiał zrestartować instancję w trybie Rescue, aby móc utworzyć hasło lub dodać klucz SSH do odpowiedniego pliku.
+> Chociaż pole "Key Pair" nie jest obowiązkowe w interfejsie Horizon podczas tworzenia instancji, rejestracja klucza SSH jest absolutnie konieczna, aby móc połączyć się z instancją. Bez klucza SSH będziesz musiał zrestartować instancję w trybie Rescue, aby móc utworzyć hasło lub dodać klucz SSH do odpowiedniego pliku (aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](../zmiana_klucza_ssh_w_przypadku_utraty/#w-praktyce)).
 >
 
 Kiedy jesteś gotowy, aby uruchomić instancję lub instancje, kliknij przycisk `Launch Instance`{.action}.

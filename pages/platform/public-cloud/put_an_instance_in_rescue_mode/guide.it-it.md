@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: Gestione dallo Spazio Cliente OVHcloud
 ---
 
-**Ultimo aggiornamento 11/02/2022**
+**Ultimo aggiornamento 02/08/2022**
 
 ## Obiettivo
 
@@ -72,6 +72,10 @@ A questo punto i tuoi dati sono accessibili nella cartella /mnt.
 Una volta completate queste operazioni, è possibile disattivare la modalità Rescue riavviando normalmente la tua istanza. Per farlo, clicca sulla freccia verso il basso e seleziona `Esci dalla modalità Rescue`{.action}.
 
 ![Spazio Cliente](images/rescueexit2022.png){.thumbnail}
+
+> [!warning]
+> Se il pulsante `Esci dalla modalità Rescue`{.action} non compare in modalità Rescue, consigliamo di aggiornare la scheda.
+>
 
 ### Attiva la modalità Rescue con le API OpenStack
 

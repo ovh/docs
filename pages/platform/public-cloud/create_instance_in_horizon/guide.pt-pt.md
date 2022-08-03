@@ -10,7 +10,7 @@ section: Gestão a partir do Horizon
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 31/12/2021**
+**Última atualização: 02/08/2022**
 
 ## Sumário
 
@@ -20,7 +20,7 @@ Tem a possibilidade de criar instâncias diretamente a partir da interface Horiz
 
 ## Requisitos
 
-- Dispor de um projeto [Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external} na sua conta OVHcloud.
+- Dispor de um [projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
 - [Ter acesso à interface Horizon](../horizon/){.external}. 
 
 ## Instruções
@@ -57,7 +57,7 @@ Deverá preencher as diferentes informações. Caso seja necessário, consulte a
 
 > [!warning]
 > 
-> Embora o campo "Key Pair" não seja obrigatório na interface Horizon aquando da criação de uma instância, o registo de uma chave SSH é absolutamente necessário para poder ligar-se a uma instância. Sem chave SSH, será obrigado a reiniciar a instância em modo rescue para poder criar uma palavra-passe ou adicionar uma chave SSH ao ficheiro adequado.
+> Embora o campo "Key Pair" não seja obrigatório na interface Horizon aquando da criação de uma instância, o registo de uma chave SSH é absolutamente necessário para poder ligar-se a uma instância. Sem chave SSH, será obrigado a reiniciar a instância em modo rescue para poder criar uma palavra-passe ou adicionar uma chave SSH ao ficheiro adequado (para mais informações, consulte o guia [Alterar a chave SSH em caso de perda](../alterar_a_chave_ssh_em_caso_de_perda/#instrucoes)).
 >
 
 Assim que estiver pronto para lançar a(s) instância(s) pretendida(s), clique no botão `Launch Instance`{.action}.

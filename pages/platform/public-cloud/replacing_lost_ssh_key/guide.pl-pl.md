@@ -33,12 +33,12 @@ Aby odzyskać dostęp, udostępniliśmy [tryb Rescue](https://docs.ovh.com/pl/pu
 Jeśli chcesz zapisać klucz SSH w Panelu klienta OVHcloud, zalecamy użycie szyfrowania RSA lub ECDSA. ED25519 nie jest aktualnie obsługiwany.
 >
 
-Po zamontowaniu dysku Twojej instancji w trybie Rescue, będziesz mógł uzyskać dostęp do wszystkich Twoich plików.
+Po zamontowaniu dysku Twojej instancji w [trybie Rescue](../przelaczenie_instancji_w_tryb_rescue/#dostep-do-danych), będziesz mógł uzyskać dostęp do wszystkich Twoich plików.
 
 Plik zawierający klucze SSH to:
 
 ```sh
-/home/USER_NAME/.ssh/authorized_keys
+/mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Jeśli chcesz dodać nowy klucz SSH, wystarczy edytować ten plik i dodać nowy klucz:

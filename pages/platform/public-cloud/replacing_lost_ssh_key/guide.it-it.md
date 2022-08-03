@@ -33,12 +33,12 @@ Per recuperare l'accesso, abbiamo messo a tua disposizione una [modalità Rescue
 Per salvare una chiave SSH nello Spazio Cliente OVHcloud, ti consigliamo di utilizzare la cifratura RSA o ECDSA. ED25519 non è attualmente supportato.
 >
 
-Dopo aver montato il disco della tua istanza in modalità Rescue, sarai in grado di accedere a tutti i tuoi file.
+Dopo aver montato il disco della tua istanza in [modalità Rescue](../riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/#accedi-ai-tuoi-dati), sarai in grado di accedere a tutti i tuoi file.
 
 Il file contenente le tue chiavi SSH è il file:
 
 ```sh
-/home/USER_NAME/.ssh/authorized_keys
+/mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Per aggiungere la nuova chiave SSH, è sufficiente modificare questo file e aggiungere la nuova chiave:

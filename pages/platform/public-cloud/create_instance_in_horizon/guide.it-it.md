@@ -10,7 +10,7 @@ legacy_guide_number: g1772
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 31/12/2021**
+**Ultimo aggiornamento: 02/08/2022**
 
 ## Obiettivo
 
@@ -57,7 +57,7 @@ A questo punto completa i campi con le informazioni richieste aiutandoti, se nec
 
 > [!warning] 
 >
-> Anche se il campo "Key Pair" non è obbligatorio nell'interfaccia Horizon durante la creazione di un'istanza, la registrazione di una chiave SSH è assolutamente necessaria per potersi connettere a un'istanza. Senza chiave SSH, dovrai riavviare l'istanza in modalità Rescue per creare una password o aggiungere una chiave SSH nel file appropriato.
+> Anche se il campo "Key Pair" non è obbligatorio nell'interfaccia Horizon durante la creazione di un'istanza, la registrazione di una chiave SSH è assolutamente necessaria per potersi connettere a un'istanza. Senza chiave SSH, dovrai riavviare l'istanza in modalità Rescue per creare una password o aggiungere una chiave SSH nel file appropriato (per maggiori informazioni, consulta la guida [Sostituisci la tua chiave SSH in caso di perdita](../sostituisci_la_tua_chiave_ssh_in_caso_di_perdita/#procedura)).
 >
 
 Quando tutto è pronto, clicca su `Launch Instance`{.action} per avviare le istanze desiderate.

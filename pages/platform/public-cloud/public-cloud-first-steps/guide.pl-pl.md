@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 1
 ---
 
-**Ostatnia aktualizacja: 30-03-2021**
+**Ostatnia aktualizacja: 02-08-2022**
 
 ## Wprowadzenie
 
@@ -229,6 +229,11 @@ W instancji zostaje utworzony automatycznie użytkownik z podwyższonymi uprawni
 > [!primary]
 >
 W przypadku problemów z połączeniem, tj. błędów dotyczących kluczy SSH, zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](https://docs.ovh.com/pl/public-cloud/zmiana_klucza_ssh_w_przypadku_utraty/).
+>
+
+> [!primary]
+>
+Jeśli utworzyłeś instancję bez klucza SSH, przez API OVHcloud lub interfejs Openstack Horizon, możesz dodać klucz SSH do instancji tylko przez [tryb Rescue](https://docs.ovh.com/pl/public-cloud/przelaczenie_instancji_w_tryb_rescue/), postępując zgodnie z instrukcjami podanymi w [tej sekcji odpowiedniego przewodnika](../zmiana_klucza_ssh_w_przypadku_utraty/#w-praktyce).
 >
 
 #### Połączenie z instancją z systemem operacyjnym Linux z systemu Linux/Mac
