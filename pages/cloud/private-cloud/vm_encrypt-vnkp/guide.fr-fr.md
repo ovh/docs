@@ -6,7 +6,7 @@ section: Fonctionnalités VMware vSphere
 order: 07
 ---
 
-**Dernière mise à jour le 02/08/2022**
+**Dernière mise à jour le 03/08/2022**
 
 ## Objectif
 
@@ -99,7 +99,7 @@ Choisissez dans Stratégies de stockage de VM `VM Encryption Policy`{.action} et
 
 ![02 encrypt VM 02](images/02-encrypt-vm02.png){.thumbnail}
 
-Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.action} et vous verrez apparaitre un `cadenas` qui indique que la machine virtuelle est chiffrée. 
+Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.action} et vous verrez apparaitre un `cadenas` suivi du texte `Chiffré avec un fournisseur de clés natif` qui indique que la machine virtuelle est chiffrée. 
 
 ![02 encrypt VM 03](images/02-encrypt-vm03.png){.thumbnail} 
 
@@ -121,17 +121,25 @@ La clé **vSphere Native Key Provider** est définie par défaut.
 
 ![03 migrate-from-kms-to-vnkp 03](images/03-migrate-from-kms-to-vnkp03.png){.thumbnail}
 
+Cliquez sur `la machine virtuelle`{.action} allez dans l'onglet `Résumé`{.action}. Cette machine virtuelle utilise le `fournisseur de clés standard`. Nous allons changer le chiffrement de cette machine virtuelle.
+
+![03 migrate-from-kms-to-vnkp 04](images/03-migrate-from-kms-to-vnkp04.png){.thumbnail}
+
 Au travers du client **vSphere** faites un clic droit sur `la machine virtuelle`{.action} qui doit être rechiffrée ensuite au travers du menu dans `VM Policies`{.action} choisissez `Chiffrer à nouveau`{.action}.
 
 > [!primary]
 > L'opération de rechiffrement peut se faire avec la machine virtuelle allumée, car uniquement la clé **DEK** est chiffrée à nouveau.
 >
 
-![03 migrate-from-kms-to-vnkp 04](images/03-migrate-from-kms-to-vnkp04.png){.thumbnail}
+![03 migrate-from-kms-to-vnkp 05](images/03-migrate-from-kms-to-vnkp05.png){.thumbnail}
 
 Le rechiffrement s'effectue en quelques millisecondes car ce n'est que la **DEK** qui est rechiffrée à l'aide la nouvelle clé **vSphere Native Key Provider**.
 
-![03 migrate-from-kms-to-vnkp 05](images/03-migrate-from-kms-to-vnkp05.png){.thumbnail}
+![03 migrate-from-kms-to-vnkp 06](images/03-migrate-from-kms-to-vnkp06.png){.thumbnail}
+
+Cliquez sur la `la machine virtuelle`{.action} ou le chiffrement a été modifié allez dans l'onglet `Résumé`{.action} vous verrez que le chiffrement utilise un fournisseur de clés natif à coté du  `cadenas`.
+
+![03 migrate-from-kms-to-vnkp 07](images/03-migrate-from-kms-to-vnkp07.png){.thumbnail}
 
 ## Aller plus loin <a name="gofurther"></a>
 
