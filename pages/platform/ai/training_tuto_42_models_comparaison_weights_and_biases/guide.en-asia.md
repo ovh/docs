@@ -109,7 +109,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/au
 > In the OVHcloud Control Panel, you can upload files but not folders. For instance, you can upload a .zip file to optimize the bandwidth, then unzip it later when accessing it through a JupyterLab. You can also use the OVHcloud AI CLI to upload files and folders (and be more stable than through your browser).
 >
 
-If you want to run it with the CLI, just follow this [this guide](https://docs.ovh.com/asia/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow [this guide](https://docs.ovh.com/asia/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```console
 ovhai data upload <region> <container> <paths>
@@ -213,7 +213,7 @@ tensorflow==2.9.1
 wandb==0.12.21
 ```
 
-The `packages.txt` file will allow us to install and use **Librosa** module and its dependences.
+The `packages.txt` file will allow us to install and use the **Librosa** module and its dependencies.
 
 ```console
 libsndfile1-dev
@@ -223,7 +223,7 @@ These files will be useful when writing the `Dockerfile`.
 
 ### Write the Dockerfile for the application
 
-Your **Dockerfile** should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a `python:3.9` image:
+Your **Dockerfile** should start with the `FROM` instruction indicating the parent image to use. In our case we choose to start from a `python:3.9` image:
 
 ```console
 FROM python:3.9
@@ -249,7 +249,7 @@ Install the `requirements.txt` file which contains your needed Python modules us
 RUN pip install --no-cache-dir -r requirements.txt
 ```
 
-Give correct access rights to OVHcloud user (42420:42420):
+Give correct access rights to the OVHcloud user (42420:42420):
 
 > [!warning]
 >
@@ -272,7 +272,7 @@ Launch the following command from the **Dockerfile** directory to build your app
 
 > [!warning]
 >
-> Remember to replace `<your-docker-id>` with yours
+> Remember to replace `<your-docker-id>` with yours.
 >
 
 ```console
@@ -301,7 +301,7 @@ docker push <your-docker-id>/audio-classification-models:latest
 
 > [!primary]
 >
-> Here we will use the [ovhai CLI](https://docs.ovh.com/asia/en/publiccloud/ai/cli/run-job-cli/). If you wish to do this from the control panel, refer to this [documentation](https://docs.ovh.com/asia/en/publiccloud/ai/training/submit-job/).
+> Here we will use the [ovhai CLI](https://docs.ovh.com/asia/en/publiccloud/ai/cli/run-job-cli/). If you wish to do this from the OVHcloud Control Panel, refer to this [documentation](https://docs.ovh.com/asia/en/publiccloud/ai/training/submit-job/).
 >
 
 Jobs are launched in two stages. First, the **data processing jobs** are launched. Once they are `Done`, the **training jobs** can be executed.
@@ -439,13 +439,13 @@ You will be able to check your models training once your jobs are in running sta
 ovhai job get <job-id>
 ```
 
-Once, the jobs are in running status, you can check the logs to obtain the Weight & Biases link. Run the command:
+Once the jobs are in running status, you can check the logs to obtain the Weight & Biases link. Run the command:
 
 ```console
 ovhai job logs <job-id>
 ```
 
-Now, you can access to Weights & Biases panel. You will be able to check the accuracy and the loss values for the training and the validation sets.
+Now, you can access the Weights & Biases panel. You will be able to check the accuracy and the loss values for the training and the validation sets.
 
 - **Training data:**
 
