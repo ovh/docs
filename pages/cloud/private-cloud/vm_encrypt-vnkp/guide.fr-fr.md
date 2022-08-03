@@ -2,7 +2,7 @@
 title: Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider
 slug: vm-encrypt-vpnkp
 excerpt: Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider
-section: Fonctionnalités VMware vSphere
+section: Fonctionnalités WMware vSphere
 order: 07
 ---
 
@@ -24,7 +24,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre du chiffr
 ## Prérequis
 
 - Avoir souscrit une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/).
-- Utiliser un cluster **vSphere** en version 7.0 Update 2 au minimum avec une licence **Enterprise plus**.
+- Avoir un PCC en version 7.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à l’interface de gestion vSphere.
 
@@ -33,17 +33,15 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre du chiffr
 
 **vSphere Native Key provider** permet de chiffrer les machines virtuelles sans avoir besoin d'un serveur KMS (*Key Management Server*) externe.
 
-L'option doit être activée sur l'espace client OVHcloud.
-
-Le chiffrement sur des clusters **vSphere** se fait en deux étapes, les données des machines virtuelles sont chiffrées à l'aide d'une clé **DEK** (*Data Encryption Key*) qui se trouve sur les serveurs **Esxi**, ensuite cette clé est rechiffrée à l'aide de la clé **vSphere Native Key provider** qui est une clé **KEK** (*Key Encryption Key*). Vous trouverez plus de détails sur le chiffrement **VMWARE** en consultant les documentations officielles que vous trouverez dans la section « [Aller plus loin](#gofurther) » de ce guide.
+Le chiffrement sur des clusters **vSphere** se fait en deux étapes, les machines virtuelles, la donnée ainsi que les fichiers sont chiffrées à l'aide d'une clé **DEK** (*Data Encryption Key*) qui se trouve sur les serveurs **ESXi**, ensuite cette clé est rechiffrée à l'aide de la clé **vSphere Native Key provider** qui est une clé **KDK** (*Key Derivation Key*). Vous trouverez plus de détails sur le chiffrement **WMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 IL est possible d'importer la clé sur un autre cluster dans le cas d'un plan de reprise d'activité.
 
 ## En pratique
 
-### Autorisation de la fonctionnalité au travers de l'espace client OVHcloud
+### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster PCC
 
-Non encore disponible
+Avant de pouvoir utiliser les fonctionnalités de chiffrement il est necessaire d'autoriser un utilisateur du PCC à gérer le chiffrement cette autorisation se fait à partir de l'espace client OVHcloud.
 
 <!--- Partie à écrire dès que la fonctionnalité sera présente
 
@@ -51,7 +49,7 @@ Non encore disponible
 
 ### Création d'une clé **vSphere Native Key Provider**
 
-Nous allons créer la clé de chiffrement. Cette clé est une clé **KEK** (*Key Encryption Key*) qui sert pour faire du chiffrement symétrique (*wrap*) de la clé **DEK** qui se trouve sur les hôtes **ESXi**. 
+Nous allons créer la clé de chiffrement. Cette clé est une clé **KDK** (*Key Derivation Key*) qui sert pour faire du chiffrement symétrique (*wrap*) de la clé **DEK** qui se trouve sur les hôtes **ESXi**. 
 
 Connectez-vous à l'interface **vSphere** à l'aide de ce guide [Se connecter à l'interface vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
 
@@ -85,7 +83,10 @@ Il est possible maintenant d'utiliser la clé pour chiffrer des machines virtuel
 
 ### Chiffrement d'une machine virtuelle
 
-Nous allons chiffrer le fichier de configuration de la machine virtuelle ainsi que les disques de stockage. L'opération de chiffrement se fait en deux étapes, les données sont chiffrées à l'aide d'une clé **DEK** (Data Encryption Key) qui se trouve sur les serveurs Esxi et ensuite la clé **DEK** est rechiffrée (**wrapped**) à l'aide de la clé **KEK** générée précédemment.
+Nous allons chiffrer le fichier de configuration de la machine virtuelle ainsi que les disques de stockage. L'opération de chiffrement se fait en deux étapes, les données sont chiffrées à l'aide d'une clé **DEK** (Data Encryption Key) qui se trouve sur les serveurs ESXi et ensuite la clé **DEK** est rechiffrée (**wrapped**) à l'aide de la clé **KDK** générée précédemment.
+
+
+
 
 > [!warning]
 > L'opération de chiffrement d'une machine virtuelle ne peut se faire qu'avec la machine virtuelle éteinte
@@ -125,7 +126,7 @@ Cliquez sur `la machine virtuelle`{.action} allez dans l'onglet `Résumé`{.acti
 
 ![03 migrate-from-kms-to-vnkp 04](images/03-migrate-from-kms-to-vnkp04.png){.thumbnail}
 
-Au travers du client **vSphere** faites un clic droit sur `la machine virtuelle`{.action} qui doit être rechiffrée ensuite au travers du menu dans `VM Policies`{.action} choisissez `Chiffrer à nouveau`{.action}.
+Au travers du client **vSphere** faites un clic droit sur `la machine virtuelle`{.action} qui doit être rechiffrée, ensuite au travers du menu dans `VM Policies`{.action} choisissez `Chiffrer à nouveau`{.action}.
 
 > [!primary]
 > L'opération de rechiffrement peut se faire avec la machine virtuelle allumée, car uniquement la clé **DEK** est chiffrée à nouveau.
@@ -143,11 +144,11 @@ Cliquez sur la `la machine virtuelle`{.action} ou le chiffrement a été modifi�
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Présentation VMWARE de vSphere Native Key Provider](https://core.vmware.com/native-key-provider)
+[Présentation WMware de vSphere Native Key Provider](https://core.WMware.com/native-key-provider)
 
-[Documentation VMARE du processus de chiffrement sur vSphere](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html)
+[Documentation VMware du processus de chiffrement sur vSphere](https://docs.WMware.com/en/WMware-vSphere/7.0/com.WMware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html)
 
-[Documentation VMWARE concernant vSphere Native Key Provider](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html)
+[Documentation WMware concernant vSphere Native Key Provider](https://docs.WMware.com/en/WMware-vSphere/7.0/com.WMware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
 
