@@ -23,7 +23,7 @@ Les adresses e-mail de l’offre MX Plan permettent d’envoyer et de recevoir v
 
 > [!primary]
 >
-> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, il est nécessaire d'activer, si cela n'a pas déjà été fait, votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mails incluses dans votre hébergement web](https://docs.ovh.com/ca/fr/hosting/activate-email-web-hosting/) ».
+> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, il est nécessaire d'activer, si cela n'a pas déjà été fait, votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mails incluses dans votre hébergement web](https://docs.ovh.com/ca/fr/hosting/activate-email-web-hosting/) ».
 
 ## En pratique
 

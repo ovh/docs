@@ -24,7 +24,7 @@ You can use an email address in your MX Plan solution to send and receive emails
 >
 >**Special cases**
 >
-> - For web [hosting plans](https://www.ovhcloud.com/fr/web-hosting/){.external}, you will need to activate your MX Plan package before reading this guide. If you have not already done so, you will need to do so. To do this, please refer to our guide [Activate the email addresses included in your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/activate-email-web-hosting/).
+> - For web [hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/){.external}, you will need to activate your MX Plan package before reading this guide. If you have not already done so, you will need to do so. To do this, please refer to our guide [Activate the email addresses included in your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/activate-email-web-hosting/).
 > - Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email address. You can do this via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by going to the domain name concerned.
 >
 
