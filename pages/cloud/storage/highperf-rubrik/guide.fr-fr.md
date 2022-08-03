@@ -4,9 +4,10 @@ slug: s3/rubrik
 excerpt: Découvrez comment configurer le stockage dans Rubrik pour utiliser un bucket S3 Object Storage
 section: Object Storage S3 High Performance
 order: 171
+hidden: true
 ---
 
-**Dernière mise à jour le 21/07/2022**
+**Dernière mise à jour le 03/08/2022**
 
 ## Objectif
 
