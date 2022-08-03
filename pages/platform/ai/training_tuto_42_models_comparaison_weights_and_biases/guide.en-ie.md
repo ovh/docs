@@ -100,7 +100,7 @@ cd ai-training-examples/jobs/weights-and-biases/audio-classification-models-comp
 > First, download the data on [Kaggle](https://www.kaggle.com/datasets/subhajournal/free-spoken-digit-database).
 >
 
-It's a zip file (`audio_files.zip`)! Push it into an object container named `spoken-digit`.
+It's a zip file (`audio_files.zip`)! We are going to push it into an object container named `spoken-digit`.
 
 If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the Object Storage section and [create a new object container](https://docs.ovh.com/ie/en/storage/pcs/create-container/) by clicking `Object Storage` > `Create an object container`.
 
