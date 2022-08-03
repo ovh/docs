@@ -5,7 +5,7 @@ excerpt: 'Comment reconnaître un e-mail de phishing et que faire si vous avez c
 section: Sécurité
 ---
 
-**Dernière mise à jour le 26/07/2022**
+**Dernière mise à jour le 03/08/2022**
 
 ## Objectif
 
@@ -41,8 +41,7 @@ Cliquez sur l'image pour l'agrandir. Retrouvez les détails et explications dans
 
 > [!success]
 > 
-> Vous pouvez retrouver dans votre espace client les e-mails légitimes envoyés par OVHcloud concernant vos services.<br>
-> Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur `E-mails de service`{.action}.<br>
+> Une grande partie des e-mails légitimes envoyés par OVHcloud à propos de vos services peut être consultée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois connecté, cliquez sur votre nom en haut à droite puis sur `E-mails de service`{.action}
 >
 > L'e-mail que vous avez reçu n'y figure pas ? Il peut alors s'agir soit d'un e-mail de phishing, soit d'un e-mail destiné à un autre identifiant client OVHcloud (vérifiez l'identifiant qui figure dans l'objet de l'e-mail).
 >
