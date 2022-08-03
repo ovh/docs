@@ -6,7 +6,11 @@ section: 'Erste Schritte'
 order: 02
 ---
 
-**Stand 28.06.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Stand 03.08.2022**
 
 ## Einleitung
 
@@ -22,8 +26,11 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 
 > [!primary]
 >
-> Hinweis zum Start 10M Hosting: Dieses muss unbedingt zuerst aktiviert werden, um eine E-Mail-Adresse zu erstellen. Sie können Start 10M in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren, indem Sie zur betreffenden Domain gehen.
+> **Sonderfälle**
 >
+> - Hinweis zum Start 10M Hosting: Dieses muss unbedingt zuerst aktiviert werden, um eine E-Mail-Adresse zu erstellen. Sie können Start 10M in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren, indem Sie zur betreffenden Domain gehen.
+>
+> - Im Rahmen eines [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} muss Ihr MX Plan Angebot aktiviert werden, falls dies noch nicht geschehen ist, bevor Sie mit dem Lesen dieser Anleitung fortfahren. Lesen Sie hierzu unsere Anleitung "[Die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren](https://docs.ovh.com/de/hosting/webhosting-email-aktivieren/)".
 
 ## Beschreibung
 
@@ -67,8 +74,6 @@ Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Weiter`{.acti
 Überprüfen Sie die in der Übersicht angezeigten Informationen. Sind alle Angaben korrekt, klicken Sie auf `Bestätigen`{.action}. Der neu hinzugefügte Account erscheint nun in der Tabelle. Warten Sie einen Moment, bis der Account verfügbar ist.
 
 Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Accounts).
-
-![E-Mail](images/mxplan-creation-new-step4.png){.thumbnail}
 
 #### Schritt 3: E-Mail-Adressen verwenden
 
