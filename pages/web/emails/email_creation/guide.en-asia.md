@@ -23,7 +23,7 @@ You can use an email address in your MX Plan solution to send and receive emails
 
 > [!primary]
 >
-> For [web hosting plans](https://www.ovhcloud.com/asia/web-hosting/){.external}, you will need to activate your MX Plan package before reading this guide. If you have not already done so, you will need to do so. To do this, please refer to our guide [Activate the email addresses included in your Web Hosting plan](https://docs.ovh.com/asia/en/hosting/activate-email-web-hosting/).
+> For [web hosting plans](https://www.ovhcloud.com/asia/web-hosting/){.external}, you will need to activate your MX Plan package before reading this guide. To do this, please refer to our guide on how to [Activate the email addresses included in your Web Hosting plan](https://docs.ovh.com/asia/en/hosting/activate-email-web-hosting/).
 
 ## Instructions
 
