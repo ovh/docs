@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 1
 ---
 
-**Letzte Aktualisierung am 30.03.2021**
+**Letzte Aktualisierung am 02.08.2022**
 
 ## Ziel
 
@@ -229,6 +229,12 @@ Für die Instanz wird automatisch ein Benutzer mit erweiterten Berechtigungen er
 > [!primary]
 >
 Sollten Verbindungsprobleme auftreten, d. h. kommt es zu Fehlern mit Ihren SSH-Schlüsseln, lesen Sie bitte die Anleitung “[Änderung des SSH-Schlüssels bei Verlust](https://docs.ovh.com/de/public-cloud/nderung_des_ssh_schlussels_bei_verlust/)”.
+>
+
+
+> [!primary]
+>
+Wenn Sie über die OVHcloud API oder das OpenStack-Horizon-Interface eine Instanz ohne SSH-Schlüssel erstellt haben, können Sie Ihrer Instanz nur über den [Rescue-Modus](https://docs.ovh.com/de/public-cloud/umstellung_einer_instanz_auf_den_rescue-modus/) einen SSH-Schlüssel hinzufügen, entsprechend den Anweisungen in [diesem Abschnitt der entsprechenden Anleitung](../nderung_des_ssh_schlussels_bei_verlust/#in-der-praktischen-anwendung).
 >
 
 #### Über Linux / Mac mit einer Linux-Instanz verbinden

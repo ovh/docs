@@ -7,7 +7,7 @@ section: 'Gestión de las instancias desde el área de cliente'
 order: 03
 ---
 
-**Última actualización: 11/02/2022**
+**Última actualización: 02/08/2022**
 
 ## Objetivo
 
@@ -75,6 +75,10 @@ Podrá acceder a sus datos desde la carpeta /mnt.
 Una vez que haya completado sus tareas, puede desactivar el modo de rescate reiniciando normalmente su instancia. Para hacerlo, haga clic en la flecha desplegable de su instancia y seleccione `«Salir del modo de rescate»`{.action}.
 
 ![control panel](images/rescueexit2022.png){.thumbnail}
+
+> [!warning]
+> Si el botón `Salir del modo de rescate`{.action} no aparece una vez que la instancia esté en modo de rescate, le recomendamos que actualice la pestaña.
+>
 
 ### Activar el modo rescate utilizando la API de OpenStack
 

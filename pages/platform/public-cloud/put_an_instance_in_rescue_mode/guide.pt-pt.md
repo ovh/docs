@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: Gestão a partir da Área de Cliente OVHcloud
 ---
 
-**Última atualização: 11/02/2022**
+**Última atualização: 02/08/2022**
 
 ## Sumário
 
@@ -74,6 +74,10 @@ A sua informação estará agora disponível a partir da pasta /mnt.
 Após concluir as suas tarefas, pode desativar o modo rescue reiniciando normalmente a sua instância. Para o fazer, clique na seta voltada para baixo na sua instância e selecione `Sair do modo rescue`{.action}.
 
 ![área de cliente](images/rescueexit2022.png){.thumbnail}
+
+> [!warning]
+> Se o botão `Sair do modo rescue`{.action} não aparecer uma vez a instância em modo rescue, recomendamos que atualize o seu separador.
+>
 
 ### Ativar o modo rescue usando a API OpenStack
 

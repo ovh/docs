@@ -34,12 +34,12 @@ Para recuperar el acceso, hemos puesto a su disposición un [modo de rescate](ht
 Si quiere registrar una llave SSH en el área de cliente de OVHcloud, le recomendamos que utilice el cifrado RSA o ECDSA. ED25519 no está soportado actualmente.
 >
 
-Una vez que haya montado el disco de su instancia en [modo de rescate](https://docs.ovh.com/us/es/public-cloud/poner_una_instancia_en_modo_de_rescate/), podrá acceder a todos sus archivos.
+Una vez que haya montado el disco de su instancia en [modo de rescate](../poner_una_instancia_en_modo_de_rescate/#acceso-a-sus-datos), podrá acceder a todos sus archivos.
 
 El archivo que contiene las llaves SSH es el siguiente:
 
 ```sh
-/home/USER_NAME/.ssh/authorized_keys
+/mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Si quiere añadir su nueva llave SSH, solo tiene que editar el archivo y añadir la nueva clave:

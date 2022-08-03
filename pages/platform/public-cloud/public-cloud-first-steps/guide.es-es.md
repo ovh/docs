@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 04
 ---
 
-**Última actualización: 30/03/2021**
+**Última actualización: 02/08/2022**
 
 ## Objetivo
 
@@ -229,6 +229,11 @@ Se creará automáticamente un usuario con permisos superiores en la instancia. 
 > [!primary]
 >
 Si tiene problemas con la conexión a través de sus claves SSH, consulte nuestra guía [Modificar su llave SSH en caso de pérdida](../modificar_su_llave_ssh_en_caso_de_perdida/).
+>
+
+> [!primary]
+>
+Si ha creado una instancia sin llave SSH, a través de la API OVHcloud o la interfaz Openstack Horizon, solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](https://docs.ovh.com/es/public-cloud/poner_una_instancia_en_modo_de_rescate/) siguiendo las instrucciones descritas en [esta sección de la guía adecuada](../modificar_su_llave_ssh_en_caso_de_perdida/#procedimiento).
 >
 
 #### Conexión a una instancia Linux en Linux o Mac

@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
-**Ostatnia aktualizacja z dnia 11-02-2022**
+**Ostatnia aktualizacja z dnia 02-08-2022**
 
 ## Wprowadzenie
 
@@ -74,6 +74,10 @@ Dane będą dostępne w folderze /mnt.
 Po wykonaniu wszystkich zadań można zdezaktywować tryb ratunkowy przez zrestartowanie instancji w trybie normalnym. Aby to zrobić, kliknij strzałkę menu rozwijanego instancji i wybierz pozycję `Wyjdź z trybu ratunkowego`{.action}.
 
 ![control panel](images/rescueexit2022.png){.thumbnail}
+
+> [!warning]
+> Jeśli przycisk `Wyjdź z trybu ratunkowego`{.action} nie pojawi się po wykonaniu instancji w trybie rescue, zalecamy odświeżenie karty.
+>
 
 ### Aktywacja trybu ratunkowego przy użyciu interfejsu API OpenStack
 
