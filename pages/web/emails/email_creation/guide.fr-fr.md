@@ -22,8 +22,11 @@ Les adresses e-mail de l’offre MX Plan permettent d’envoyer et de recevoir v
 
 > [!primary]
 >
-> Concernant l’hébergement gratuit Start 10M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, en vous positionnant sur le nom de domaine concerné.
+>**Cas particuliers**
 >
+> - Concernant l’hébergement gratuit Start 10M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, en vous positionnant sur le nom de domaine concerné.
+>
+> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, il est nécessaire d'activer, si ça n'est pas le cas, votre offre MXplan incluse avant de poursuivre sur cette documentation. Pour cela consulter notre guide [Activer les adresses e-mails incluses dans votre hébergement web](https://docs.ovh.com/gb/en/hosting/activate-email-web-hosting/)
 
 ## En pratique
 
@@ -68,7 +71,7 @@ Vérifiez maintenant les informations qui s'affichent dans le récapitulatif ; s
 
 Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition.
 
-![email](images/mxplan-creation-new-step4.png){.thumbnail}
+
 
 #### Étape 3 : utiliser vos adresses e-mail
 
