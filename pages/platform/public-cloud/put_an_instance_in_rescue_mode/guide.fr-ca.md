@@ -31,9 +31,7 @@ Tout d’abord, connectez-vous à [l’espace client d’OVHcloud](https://ca.ov
 
 Cliquez ensuite sur l'onglet `Instances`{.action} dans la barre de navigation à gauche.
 
-![tableau de bord](images/compute2022.PNG){.thumbnail}
-
-Cliquez ensuite sur `...`{.action} à droite de l'instance et sélectionnez `Redémarrer en mode rescue`{.action}.
+Cliquez sur `...`{.action} à droite de l'instance et sélectionnez `Redémarrer en mode rescue`{.action}.
 
 ![tableau de bord](images/rescue2022.png){.thumbnail}
 
