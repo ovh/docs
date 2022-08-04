@@ -29,8 +29,6 @@ In such circumstances, you can use the rescue mode to reconfigure your instance 
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and open your `Public Cloud`{.action} project. Then click on `Instances`{.action} in the left-hand menu.
 
-![control panel](images/compute2022.PNG){.thumbnail}
-
 Click on `...`{.action} in the row of the instance concerned and select `Reboot in rescue mode`{.action}.
 
 ![control panel](images/rescue2022.png){.thumbnail}
