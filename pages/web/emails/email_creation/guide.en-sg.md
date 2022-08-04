@@ -7,7 +7,7 @@ order: 1
 hidden: true
 ---
 
-**Last updated 5th May 2020**
+**Last updated 3rd August 2022**
 
 ## Objective
 
@@ -20,6 +20,10 @@ You can use an email address in your MX Plan solution to send and receive emails
 - an MX Plan solution, available via a [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/), or the MX Plan solution, ordered separately
 - the ability to create email addresses as part of your solution
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+
+> [!primary]
+>
+> For [web hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/){.external}, you will need to activate your MX Plan package before reading this guide. To do this, please refer to our guide on how to [Activate the email addresses included in your Web Hosting plan](https://docs.ovh.com/sg/en/hosting/activate-email-web-hosting/).
 
 ## Instructions
 
@@ -63,8 +67,6 @@ Once you have filled in all of the required fields, click `Next`{.action}.
 Next, check that all the information displayed in the summary is correct. If it is, click `Confirm`{.action}. The account you have just added will now appear in the table. You will need to wait a few minutes for the account to become available.
 
 Repeat this step as necessary according to the number of accounts you have.
-
-![email](images/mxplan-creation-new-step4.png){.thumbnail}
 
 #### Step 3: Use your email addresses.
 

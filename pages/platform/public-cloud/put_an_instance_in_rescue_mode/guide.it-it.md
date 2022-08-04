@@ -28,8 +28,6 @@ Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth
 
 Poi, seleziona il tuo progetto Public Cloud dal menu a sinistra e vai su Istanze.
 
-![Spazio Cliente](images/compute2022.PNG){.thumbnail}
-
 Quindi, clicca sui tre puntini a destra dell’istanza e seleziona `Riavvia in modalità Rescue`{.action}
 
 ![Spazio Cliente](images/rescue2022.png){.thumbnail}

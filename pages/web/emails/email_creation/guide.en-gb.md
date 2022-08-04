@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 02
 ---
 
-**Last updated 26th March 2019**
+**Last updated 3rd August 2022**
 
 ## Objective
 
@@ -22,7 +22,10 @@ You can use an email address in your MX Plan solution to send and receive emails
 
 > [!primary]
 >
-> Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email address. You can do this via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by going to the domain name concerned.
+>**Special cases**
+>
+> - For web [hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/){.external}, you will need to activate your MX Plan package before reading this guide. To do this, please refer to our guide on how to [Activate the email addresses included in your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/activate-email-web-hosting/).
+> - Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email address. You can do this via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by going to the domain name concerned.
 >
 
 ## Instructions
@@ -67,8 +70,6 @@ Once you have filled in all of the required fields, click `Next`{.action}.
 Next, check that all the information displayed in the summary is correct. If it is, click `Confirm`{.action}. The account you have just added will now appear in the table. You will need to wait a few minutes for the account to become available.
 
 Repeat this step as necessary according to the number of accounts you have.
-
-![email](images/mxplan-creation-new-step4.png){.thumbnail}
 
 #### Step 3: Use your email addresses.
 

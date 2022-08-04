@@ -6,7 +6,11 @@ section: 'Primeros pasos'
 order: 02
 ---
 
-**Última actualización: 14/05/2019**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 03/08/2022**
 
 ## Objetivo
 
@@ -22,7 +26,10 @@ Las direcciones de correo de la solución MX Plan permiten enviar y recibir mens
 
 > [!primary]
 >
-> En el caso del hosting gratuito Start 10M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, accediendo al dominio correspondiente.
+>**Casos particulares**
+>
+> - En un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}, es necesario activar la solución MX Plan incluida antes de continuar leyendo esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo electrónico incluidas en su alojamiento web](https://docs.ovh.com/es/hosting/activar-correo-hosting-web/).
+> - En el caso del hosting gratuito Start 10M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, accediendo al dominio correspondiente.
 >
 
 ## Procedimiento
@@ -67,8 +74,6 @@ Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}.
 Compruebe que la información indicada en el resumen es correcta. Si lo es, haga clic en `Aceptar`{.action}. La cuenta que acaba de crear aparecerá en la tabla. Espere a que la cuenta esté disponible.
 
 Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas de que disponga.
-
-![Correo electrónico](images/mxplan-creation-new-step4.png){.thumbnail}
 
 #### 3. Utilizar las direcciones de correo
 
