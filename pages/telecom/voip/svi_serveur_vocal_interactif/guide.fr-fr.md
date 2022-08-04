@@ -6,12 +6,12 @@ section: 'Numéros ou alias'
 order: 6
 ---
 
-**Dernière mise à jour le 18/06/2021**
+**Dernière mise à jour le 04/08/2022**
 
 ## Objectif
 
-Configurer un numéro en Serveur Vocal Interactif (SVI) permet de proposer à vos correspondants un menu avec lequel ils pourront interagir, grâce aux touches de leurs téléphones.
-<br>L'exemple le plus courant consiste à orienter un appelant entre plusieurs services d'une société : « Appuyez sur la touche 1 pour une demande commerciale ou sur la touche 2 pour une demande technique ».
+Configurer un numéro en Serveur Vocal Interactif (SVI) permet de proposer à vos correspondants un menu avec lequel ils pourront interagir, grâce aux touches de leurs téléphones.<br>
+L'exemple le plus courant consiste à orienter un appelant entre plusieurs services d'une société : « *Appuyez sur la touche 1 pour une demande commerciale ou sur la touche 2 pour une demande technique* ».
 
 **Découvrez comment configurer un serveur vocal interactif depuis l'espace client OVHcloud.**
 
@@ -19,6 +19,8 @@ Configurer un numéro en Serveur Vocal Interactif (SVI) permet de proposer à vo
 
 - Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 > [!primary]
 >
@@ -29,9 +31,9 @@ Configurer un numéro en Serveur Vocal Interactif (SVI) permet de proposer à vo
 
 ### Étape 1 : accéder à la configuration du serveur vocal interactif
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
-<br>Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez votre groupe de téléphonie et enfin le numéro concerné.
-<br>Assurez-vous que celui-ci est bien configuré en tant que « Serveur Vocal Interactif », en vérifiant son `Type de configuration` dans le cadre « Configuration ». Dès lors, deux possibilités :
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.<br>
+Cliquez sur `Téléphonie`{.action} puis sélectionnez votre groupe de téléphonie et enfin le numéro concerné.<br>
+Assurez-vous que celui-ci est bien configuré en tant que « Serveur Vocal Interactif », en vérifiant son `Type de configuration` dans le cadre « Configuration ». Dès lors, deux possibilités :
 
 - **le numéro est configuré en tant que « Serveur Vocal Interactif »** : cliquez alors sur `Paramétrer la configuration`{.action} et poursuivez la lecture de cette documentation ;
 
