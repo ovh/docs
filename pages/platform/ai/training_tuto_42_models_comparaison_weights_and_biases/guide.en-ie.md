@@ -71,7 +71,7 @@ The basic principles for using Weights & Biases can be found [here](https://gith
 You will follow different steps to process your data and train your two models.
 
 - More detailed data processing in this [notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/audio/audio-classification/notebook-marine-sound-classification.ipynb) concerning the classification of marine mammal sounds.
-- Direct link to the full Python files can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/weights-and-biases/audio-classification-models-comparaison).
+- Direct link to the full Python files can be found [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/weights-and-biases/audio-classification-models-comparaison).
 
 The tutorial is as follows:
 
