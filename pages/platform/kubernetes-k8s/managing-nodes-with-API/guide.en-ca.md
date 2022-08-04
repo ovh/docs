@@ -6,7 +6,7 @@ section: User guides
 order: 1
 ---
 
-**Last updated November 2<sup>nd</sup>, 2020.**
+**Last updated 4th August 2022.**
 
 ## Objective
 
@@ -20,26 +20,31 @@ In this guide, we are assuming you're using the [OVHcloud API](https://ca.api.ov
 
 ## Nodes and node pools
 
-In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration).  
+In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration).
 
-When you create your cluster, it's created with a default node pool. Then, you can modify the size of this node pool, or add additional node pools of different sizes and types.
+In the cluster creation call, you can specify the specs of a first node pool that will be created with it. Then, you can update this node pool, or add additional node pools of different sizes and types.
 
-Upon creation, node pool is defined by its name (`name`), the type of instance within our available catalog (`flavor`), the number of identical nodes that you want in that node pool (`desiredsize`), and potentially self-defined boundaries to limit the value of desired nodes (`minnodecount` and `maxnodecount`). Setting the `antiAffinity` boolean ensures that nodes in that node pool will be created on different hypervisors (baremetal machines) and therefore ensure the best availability for your workload. The maximum number of nodes is set to 5 if this feature is activated on a nodepool (you can of course create multiple node pools with each 5 anti-affinity nodes max). Finally `monthlyBilled` boolean ensures that all nodes in a node pool will be spawned in monthly billing mode and therefore benefit from the monthly discount.
+Upon creation, a node pool is defined by its name (`name`), the type of instance within our available catalog (`flavorName`), the number of identical nodes that you want in that node pool (`desiredNodes`), and potentially self-defined boundaries to limit the value of desired nodes (`minNodes` and `maxNodes`).
 
-After creation, the `desiredsize` can be edited, and the node pool will automatically be resized to accommodate this new value. `minnodecount` and `maxnodecount` can also be edited at any time.
+You can also enable the `autoscale` feature, and the `desiredNodes` will be automatically updated at runtime within the `minNodes` and `maxNodes` boundaries, depending on the resource reservations of your workload (see [Using the cluster autoscaler](../using-cluster-autoscaler/)).
 
-We will later propose cluster autoscaling based on node pols. We see some customer developing they own autoscaling scripts. We strongly encourage you to define `minnodecount` and `maxnodecount` in that case.
+Setting the `antiAffinity` boolean ensures that nodes in that node pool will be created on different hypervisors (baremetal machines) and therefore ensure the best availability for your workload. The maximum number of nodes is set to 5 if this feature is activated on a nodepool (you can of course create multiple node pools with each 5 anti-affinity nodes max).
+
+Setting the `template` property will allow you to define some specs (annotations, finalizers, labels, taints, schedulability) that will be applied to each node under this node pool.
+
+Finally `monthlyBilled` boolean ensures that all nodes in a node pool will be spawned in monthly billing mode and therefore benefit from the monthly discount.
+
+After creation, the `desiredNodes`, `minNodes`, `maxNodes`, `autoscale` and `template` properties can also be edited at any time.
 
 In this guide we explain how to do some basic operations with nodes and node pools using the [OVHcloud API](https://ca.api.ovh.com/console/): adding nodes to an existing node pool, creating a new node pool, etc.
 
-
 ## Upsizing and downsizing a Node Pool
 
-By editing the `desiredNodes` value to a value different from `currentNodes` one (for values between the `minnodecount` and `maxnodecount`), i will trigger the node pool upsizing or downsizing.
+Editing the `desiredNodes` property to a different value will trigger the node pool upsizing or downsizing.
 
-When downsizing, the last created node will be drained then deleted first, then the second to last created is drained and deleted, and this process is reproduced until the "current nodes" is equal to `desirednodes`.
+When downsizing, the last created nodes will be drained then deleted in parallel. You can also specify which nodes should be removed by filling the optional `nodesToRemove` property, which can be a list of node names, node IDs or openstack instance IDs.
 
-When upsizing, a first node is created and when it is ready, another is created, and this process is reproduced until the `currentnodes` is equal to `desirednodes`.
+When upsizing, all new nodes will be created in parallel.
 
 ## The API Explorer
 
@@ -88,7 +93,7 @@ Use the `POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool` API endpoint 
 
 You will need to give it a `flavorName` parameter, with the flavor of the instance you want to create. For this tutorial choose a general purpose node, like the `b2-7` flavor.
 
-If you want your node pool to have at least one node, set the `desiredSize` to a value above 0.
+If you want your node pool to have at least one node, set the `desiredNodes` to a value above 0.
 
 The API will return you the new node pool information.
 
@@ -99,14 +104,14 @@ The API will return you the new node pool information.
 
 Use the `GET  /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}` API endpoint to get information on a specific node pool:
 
-![Get information on a node pool](images/kubernetes-quickstart-api-ovh-com-008.png) 
+![Get information on a node pool](images/kubernetes-quickstart-api-ovh-com-008.png)
 
 
-## Editing the node pool size
+## Updating the node pool
 
-To upsize or downsize your node pool, you can use the `POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}` API endpoint, and set the `desiredSize` to the new pool size (between `minnodecount` and `maxnodecount`, that you can modify if needed):
+To upsize or downsize your node pool, you can use the `PUT /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}` API endpoint, and set the `desiredNodes` to the new pool size. You can also modify some other properties:
 
-![Editing the node pool size](images/kubernetes-quickstart-api-ovh-com-009.png) 
+![Editing the node pool size](images/kubernetes-quickstart-api-ovh-com-009.png)
 
 
 
@@ -114,7 +119,7 @@ To upsize or downsize your node pool, you can use the `POST /cloud/project/{serv
 
 To delete a node pool, use the `/DELETE /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}` API endpoint:
 
-![Deleting a node pool](images/kubernetes-quickstart-api-ovh-com-010.png) 
+![Deleting a node pool](images/kubernetes-quickstart-api-ovh-com-010.png)
 
 
 ## Go further
