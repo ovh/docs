@@ -6,7 +6,7 @@ section: 'Numéros ou alias'
 order: 7
 ---
 
-**Dernière mise à jour le 16/11/2021**
+**Dernière mise à jour le 04/08/2022**
 
 ## Objectif
 
@@ -24,7 +24,9 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 ## Prérequis
 
 - Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## Lexique
 
@@ -39,11 +41,12 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 
 ### Étape 1 : Appliquer la configuration Contact Center Solution <a name="appliquer-CCS"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}. <br>Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, sélectionnez le groupe de téléphonie puis le numéro à configurer.
-<br>Dans l'onglet `Configuration`{.action}, cliquez sur `Passer en mode expert`{.action} pour sélectionner **Contact Center Solution**.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.<br>
+Cliquez sur `Téléphonie`{.action}, sélectionnez le groupe de téléphonie puis le numéro à configurer.<br>
+Dans l'onglet `Configuration`{.action}, cliquez sur `Passer en mode expert`{.action} pour sélectionner **Contact Center Solution**.<br>
 Validez en cliquant sur `Paramétrer`{.action}. L'application de la configuration prend quelques secondes.
 
-![contact-center-solution](images/ccs-step1-1.gif){.thumbnail}
+![contact-center-solution](images/ccs-config-2022.png){.thumbnail}
 
 Si une autre configuration est déjà appliquée sur votre numéro, cliquez sur `Configuration`{.action} puis `Changer de configuration`{.action}.
 

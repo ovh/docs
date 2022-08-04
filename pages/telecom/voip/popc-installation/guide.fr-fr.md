@@ -6,7 +6,7 @@ section: POPC
 order: 1
 ---
 
-**Dernière mise à jour le 14/04/2021**
+**Dernière mise à jour le 04/08/2022**
 
 ## Objectif
 
@@ -21,7 +21,9 @@ Il se présente sous la forme d'une application, installée sur votre PC sous Wi
 - Disposer d'un PC sous Windows (7, 8, 10).
 - Disposer de la [solution POPC OVHcloud](https://www.ovhtelecom.fr/telephonie/standard/) ainsi que de la ligne SIP associée.
 - **Uniquement pour la version d'essai de POPC** : disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/) sans téléphone Plug & Phone associé.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr).
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 
