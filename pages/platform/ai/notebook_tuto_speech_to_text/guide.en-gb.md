@@ -19,9 +19,7 @@ In **Natural Language Processing** (NLP), speech-to-text is a Deep Learning task
 This documentation allows you to test and launch **3 AI Notebooks** allowing you to get to grips with and use various speech-to-text features.
 
 1. The first one will teach you the **basics of audio transcript**. You will be able to transcribe long local or YouTube audio files, measure the quality of a transcription, add punctuation and summarize them.
-
 2. The second tutorial is intended to discover more advanced steps such as the **detection of speaker changes (diarization)** and the **generation of video subtitles**.
-
 3. The last tutorial is a **comparison of different Speech-to-Text models** to find the best one among those available.
 
 > [!primary]
@@ -112,9 +110,7 @@ You can then reach your notebook’s URL once the notebook is running.
 Once the repository has been cloned, find your notebook by following this path: `ai-training-examples` > `notebooks` > `natural-language-processing` > `speech-to-text`.
 
 1. You can find the first tutorial in the `basics` folder. A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/speech-to-text/conda/basics/speech-to-text-basics.ipynb).
-
 2. The second tutorial corresponds to the `advanced` folder. A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/speech-to-text/conda/advanced/speech-to-text-advanced.ipynb).
-
 3. The last folder, named `compare-models`, contains the third tutorial. A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/speech-to-text/conda/compare-models/speech-to-text-compare-models.ipynb).
 
 ## Go further
