@@ -14,7 +14,7 @@ La conférence permet à toutes les personnes composant un numéro donné d’ê
 
 - protéger la conférence par un code ;
 - définir une annonce personnalisée ;
-- enregistrer les participants et recevoir un rapport par e-mail à la fin de celle-ci. 
+- enregistrer les participants et recevoir un rapport par e-mail à la fin de la conférence. 
 
 Une interface spécifique vous propose également de suivre en temps réel les discussions des participants, mais aussi de gérer leur audio et leur micro.
 
