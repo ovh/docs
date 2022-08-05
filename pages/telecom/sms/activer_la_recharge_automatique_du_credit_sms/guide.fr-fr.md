@@ -6,7 +6,7 @@ legacy_guide_number: '16254520'
 section: 'Gérer mon offre'
 ---
 
-**Dernière mise à jour le 16/11/2021**
+**Dernière mise à jour le 05/08/2022**
 
 ## Objectif
 
@@ -14,8 +14,11 @@ Ce guide à pour objectif de vous expliquer ce que sont les crédit SMS, comment
 
 ## Prérequis
 
-* Disposer d'un compte SMS OVHcloud.
-* Être connecté aux [API OVHcloud](https://api.ovh.com/console/) (uniquement pour les transferts de crédits).
+- Disposer d'un compte SMS OVHcloud.
+- Être connecté aux [API OVHcloud](https://api.ovh.com/console/) (uniquement pour les transferts de crédits).
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
 
@@ -48,7 +51,7 @@ Afin de n'être jamais à court de crédit sur votre compte, vous pouvez activer
 > L'option de recharge automatique ne peut être activée que si un moyen de paiement de type Prélèvement SEPA est présent et validé sur votre compte OVHcloud.
 >
 
-Pour activer la recharge automatique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans l'onglet `Télécom`{.action} puis cliquez sur la section `SMS`{.action} dans la barre de services à gauche. Choisissez le compte SMS sur lequel activer la recharge automatique.
+Pour activer la recharge automatique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans l'onglet `Télécom`{.action} puis cliquez sur la section `SMS`{.action}. Choisissez le compte SMS sur lequel activer la recharge automatique.
 
 Rendez-vous dans le menu `Options`{.action} (1) puis `Recharge automatique`{.action} (2).
 
@@ -75,6 +78,9 @@ Enfin, remplissez les champs requis :
 
 Le transfert de crédits SMS ne peut s'effectuer que via API.
 
+> [!success]
+> Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/)».
+
 Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/console/) puis utilisez l'API suivante :
 
 > [!api]
@@ -84,9 +90,9 @@ Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/console/) puis uti
 
 Vous devrez compléter les trois champs requis :
 
-* serviceName : renseignez la référence du compte SMS léguant les crédits.
-* credits : renseignez le nombre de crédits à transférer
-* smsAccountTarget : renseignez la référence du compte SMS recevant les crédits.
+- `serviceName` : renseignez la référence du compte SMS léguant les crédits.
+- `credits` : renseignez le nombre de crédits à transférer
+- `smsAccountTarget` : renseignez la référence du compte SMS recevant les crédits.
 
 Cliquez sur `Execute`{.action} pour valider le transfert. Celui-ci est immédiat.
 

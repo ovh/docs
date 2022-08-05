@@ -2,11 +2,10 @@
 title: 'Managing SMS credits and enabling automatic re-crediting'
 slug: enable-automatic-recredit-sms-credit
 excerpt: 'Find out how to manage your OVHcloud SMS credits'
-legacy_guide_number: '16254520'
 section: 'Managing your solution'
 ---
 
-**Last updated 16th November 2021**
+**Last updated 5th August 2021**
 
 ## Objective
 
@@ -14,8 +13,11 @@ The purpose of this guide is to explain what SMS credits are, how to set up auto
 
 ## Requirements
 
-* an OVHcloud account
-* access to the [OVHcloud API](https://api.ovh.com/console/) (for credit transfers only)
+- an OVHcloud account
+- access to the [OVHcloud API](https://api.ovh.com/console/) (for credit transfers only)
+- You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
+
+![VoIP Telecom Control Panel](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Instructions
 
@@ -27,8 +29,8 @@ You can view the list of SMS packs [here](https://www.ovh.co.uk/sms/).
 
 **E.g. to purchase a pack of 100 SMS credits, each credit costs 0.03 ex. VAT.**
 
-Sending 1 SMS message in the United Kingdom costs 0,5 credit. With this pack, you can send 200 SMS messages in the United Kingdom.
-<br>Sending 1 SMS message in India costs 0.4 credit. With this pack, you can send 250 SMS messages in India.
+Sending 1 SMS message in the United Kingdom costs 0,5 credit. With this pack, you can send 200 SMS messages in the United Kingdom.<br>
+Sending 1 SMS message in India costs 0.4 credit. With this pack, you can send 250 SMS messages in India.
 
 On [this webpage](https://www.ovh.co.uk/sms/prices/), you can view the price in credits for sending SMS messages, depending on their destination.
 
@@ -48,7 +50,7 @@ To ensure that you are never short of credit on your account, you can enable aut
 > The automatic re-credit option can only be activated if a SEPA direct debit payment method is present and confirmed in your OVHcloud account.
 >
 
-To enable automatic re-crediting, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Telecom`{.action} tab. Next, click on the `SMS`{.action} section in the services bar on the left-hand side. Choose the SMS account you would like to enable automatic re-credit for.
+To enable automatic re-crediting, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Telecom`{.action} tab. Next, click on the `SMS`{.action} section in the services bar. Choose the SMS account you would like to enable automatic re-credit for.
 
 Go to the `Options`{.action} menu (1), then `Automatic re-credit`{.action} (2).
 
@@ -60,9 +62,9 @@ Then click `Edit`{.action} in the “Manage options” section.
 
 Finally, fill in the required fields.
 
-* Minimum threshold (1): When this threshold is reached, automatic re-crediting is triggered.
-* Amount to top-up (2): Defines the number of credits to re-credit on to your SMS account. There are 7 possible choices: 100, 200, 250, 500, 1000, 5000 and 10000.
-* Click `Confirm`{.action} to apply the settings.
+- Minimum threshold (1): When this threshold is reached, automatic re-crediting is triggered.
+- Amount to top-up (2): Defines the number of credits to re-credit on to your SMS account. There are 7 possible choices: 100, 200, 250, 500, 1000, 5000 and 10000.
+- Click `Confirm`{.action} to apply the settings.
 
 ![credit sms](images/smscredit03.png){.thumbnail}
 
@@ -75,6 +77,9 @@ Finally, fill in the required fields.
 
 SMS credits can only be transferred via the API.
 
+> [!success]
+> If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+
 Log in to [https://api.ovh.com/](https://api.ovh.com/console/), then use the following API call:
 
 > [!api]
@@ -84,9 +89,9 @@ Log in to [https://api.ovh.com/](https://api.ovh.com/console/), then use the fol
 
 You will need to fill in the following fields.
 
-* serviceName: Enter the reference for the SMS account currently holding the credits.
-* credits: Enter the number of credits you want to transfer.
-* smsAccountTarget: Enter the reference for the SMS account that will receive the credits.
+- `serviceName`: Enter the reference for the SMS account currently holding the credits.
+- `credits`: Enter the number of credits you want to transfer.
+- `smsAccountTarget`: Enter the reference for the SMS account that will receive the credits.
 
 Click `Execute`{.action} to confirm the transfer. The process is immediate.
 
