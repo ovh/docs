@@ -5,7 +5,7 @@ slug: launch_first_sms_campaign
 section: Getting started
 ---
 
-**Last updated 28th October 2020**
+**Last updated 5th August 2022**
 
 ## Objective
 
@@ -14,10 +14,13 @@ OVHcloud provides tools integrated into the OVHcloud Control Panel, for sending 
 ## Requirements
 
 - an OVHcloud SMS account with SMS credits
+- You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
+
+![SMS Telecom Control Panel](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), then select `Telecom`{.action}. Next, click `SMS`{.action} on the left, and select your SMS account.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account.
 
 The toolbar and shortcuts will give you access to the main features for sending SMS campaigns.
 

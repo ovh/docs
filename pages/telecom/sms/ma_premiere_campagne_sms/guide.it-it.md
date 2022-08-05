@@ -9,7 +9,7 @@ section: Per iniziare
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 28/10/2020**
+**Ultimo aggiornamento: 05/08/2022**
 
 ## Obiettivo
 
@@ -18,15 +18,17 @@ OVHcloud mette a tua disposizione strumenti integrati nello Spazio Cliente per l
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con saldo SMS.
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+
+![Spazio Cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `ADSL e telefono`{.action}. Clicca su `SMS`{.action} a sinistra e poi seleziona il tuo account SMS.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `ADSL e telefono`{.action}. Clicca su `SMS`{.action} e poi seleziona il tuo account SMS.
 
 La barra degli strumenti e le scorciatoie ti permetteranno di accedere alle funzionalità principali per inviare la tua campagna di SMS.
 
 ![firstsms](images/firstsms01.png){.thumbnail}
-
 
 ### Step 1: aggiungi contatti
 

@@ -9,7 +9,7 @@ section: Primeros pasos
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 28/10/2020**
+**Última actualización: 05/08/2022**
 
 ## Objetivo
 
@@ -18,15 +18,17 @@ OVHcloud ofrece una serie de herramientas, disponibles en el área de cliente, q
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Telecom`{.action}{.action} > `SMS`{.action}.
+
+![área de cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Telecom`{.action}. Haga clic en `SMS`{.action} en la columna izquierda y seleccione su cuenta de SMS.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Telecom`{.action}. Haga clic en `SMS`{.action} y seleccione su cuenta de SMS.
 
 La barra de herramientas y los accesos rápidos le permitirán acceder a las principales funcionalidades para enviar su campaña de SMS.
 
 ![firstsms](images/firstsms01.png){.thumbnail}
-
 
 ### 1. Añadir contactos
 
@@ -83,7 +85,6 @@ Componga su mensaje y elija entre un envío inmediato o planificado. En caso de 
 ![firstsms](images/firstsms08.png){.thumbnail}
 
 Haga clic en el botón `Enviar`{.action} para enviar o planificar la campaña.
-
 
 ## Más información
 

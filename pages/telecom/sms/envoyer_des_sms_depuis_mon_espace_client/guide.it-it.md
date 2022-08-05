@@ -5,7 +5,7 @@ excerpt: Come inviare SMS facilmente dal tuo Spazio Cliente OVHcloud
 section: Inviare SMS
 ---
 
-**Ultimo aggiornamento: 28/10/2020**
+**Ultimo aggiornamento: 05/08/2022**
 
 ## Obiettivo
 
@@ -14,11 +14,13 @@ section: Inviare SMS
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con saldo SMS.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+
+![Spazio Cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom`. Quindi clicca su `SMS` a sinistra e seleziona il tuo account SMS.
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom`{.action}. Quindi clicca su `SMS`{.action} e seleziona il tuo account SMS.
 
 Il campo “Inviare un SMS” è il primo elemento disponibile nella lista delle azioni.
 
