@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak utworzyć książkę adresową SMS na Twoim koncie O
 section: 'Zarządzanie ofertą'
 ---
 
-**Ostatnia aktualizacja z dnia 19-05-2020**
+**Ostatnia aktualizacja z dnia 05-08-2022**
 
 ## Wprowadzenie
 
@@ -13,15 +13,17 @@ Wszystkie konta OVHcloud mogą używać jednej lub więcej książek adresowych.
 
 ## Wymagania początkowe
 
-- Posiadanie aktywnego konta SMS OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie aktywnego konta SMS OVHcloud.
 - Posiadanie arkusza kalkulacyjnego lub edytora tekstu.
+- Zalogowanie do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
+
+![Panel klienta Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## W praktyce
 
 ### Etap 1: tworzenie książki adresowej w Panelu klienta
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do rubryki Telecom. Następnie z menu po lewej stronie wybierz SMS.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do rubryki `Telefonia`{.action}. Następnie z menu po lewej stronie wybierz `SMS`{.action}.
 
 Teraz wybierz żądane konto SMS.
 
@@ -65,7 +67,9 @@ Gdy dokument jest gotowy, zapisz go w formacie arkusza kalkulacyjnego, aby móc 
 
 Jednocześnie zapisz go lub wyeksportuj do formatu .csv, aby przygotować jego import.
 
-> [!primary] Zalecenia
+> [!primary]
+>
+> **Zalecenia**
 >
 >Zapisz plik arkusza kalkulacyjnego w formacie .csv (separator: średnik).
 >

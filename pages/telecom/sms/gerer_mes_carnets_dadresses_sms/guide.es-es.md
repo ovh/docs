@@ -6,7 +6,7 @@ legacy_guide_number: g2118
 section: 'Gestionar el servicio'
 ---
 
-**Última actualización: 21/11/2019**
+**Última actualización: 05/08/2022**
 
 ## Objetivo
 
@@ -15,8 +15,10 @@ Todas las cuentas de SMS de OVHcloud permiten utilizar una o varias agendas de c
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud.
-- Tener acceso al área de cliente de OVHcloud.
 - Tener un programa de hojas de cálculo o un editor de texto.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Telecom`{.action}{.action} > `SMS`{.action}.
+
+![área de cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedimiento
 
@@ -24,15 +26,15 @@ Todas las cuentas de SMS de OVHcloud permiten utilizar una o varias agendas de c
 
 Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la pestaña `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} en la columna izquierda
 
-y seleccione su cuenta de SMS.
+Seleccione su cuenta de SMS.
 
-![](images/smsphonebook1.png){.thumbnail}
+![agenda de contactos](images/smsphonebook1.png){.thumbnail}
 
 Acceda a la sección `Agenda de contactos`{.action}.
 
 A continuación, haga clic en `Añadir una agenda de contactos`{.action} y asígnele un nombre a la nueva agenda.
 
-![](images/smsphonebook2.png){.thumbnail}
+![agenda de contactos](images/smsphonebook2.png){.thumbnail}
 
 ### 2. Añadir contactos a la agenda
 
@@ -42,11 +44,11 @@ Una vez creada la agenda de contactos, es posible añadir contactos de diferente
 
 Haga clic en `Acciones`{.action} y seleccione la opción `Añadir`{.action}.
 
-![](images/smsphonebook3.png){.thumbnail}
+![agenda de contactos](images/smsphonebook3.png){.thumbnail}
 
 A continuación, introduzca la información del contacto que desea añadir.
 
-![](images/smsphonebook4.png){.thumbnail}
+![agenda de contactos](images/smsphonebook4.png){.thumbnail}
 
 Rellene los campos solicitados y haga clic en `Aceptar`{.action} para guardar los cambios. El contacto se añadirá a su agenda. Realice esta misma operación para añadir más contactos.
 
@@ -56,17 +58,19 @@ Rellene los campos solicitados y haga clic en `Aceptar`{.action} para guardar lo
 
 Si quiere utilizar o crear un documento en formato de hoja de cálculo, este último deberá tener la siguiente estructura y estar en formato «.CSV» para poder ser exportado.
 
-![](images/smsphonebook-spreadsheet1.png){.thumbnail}
+![agenda de contactos](images/smsphonebook-spreadsheet1.png){.thumbnail}
 
 La mayoría de los documentos de hojas de cálculo no son compatibles con el formato internacional de los números de teléfono y faxes (+34xxxxxxxxx), por lo que deberá modificar el formato de las celdas que incluyan estos números (workPhone, workMobile, ...). Para ello, seleccione las columnas correspondientes y aplique el formato «Texto».
 
-![](images/smsphonebook-spreadsheet2.png){.thumbnail}
+![agenda de contactos](images/smsphonebook-spreadsheet2.png){.thumbnail}
 
 Una vez que tenga listo el documento, puede guardarlo en formato de hoja de cálculo para modificarlo posteriormente si fuera necesario.
 
 Asimismo, guárdelo o expórtelo en formato «.CSV» para poder importarlo.
 
-> [!primary]Recomendaciones
+> [!primary]
+>
+> **Recomendaciones**
 >
 >El archivo de hoja de cálculo debe guardarse en formato «.CSV» (utilizando el punto y coma como separador).
 >
@@ -84,11 +88,11 @@ Asimismo, guárdelo o expórtelo en formato «.CSV» para poder importarlo.
 
 Haga clic en `Acciones`{.action} y seleccione la opción `Importar`{.action}.
 
-![](images/smsphonebook5.png){.thumbnail}
+![agenda de contactos](images/smsphonebook5.png){.thumbnail}
 
 En la ventana que aparece, haga clic en `Archivo de contactos`{.action} y seleccione el archivo «.CSV». Haga clic en `Aceptar`{.action} para importar el archivo.
 
-![](images/smsphonebook6.png){.thumbnail}
+![agenda de contactos](images/smsphonebook6.png){.thumbnail}
 
 Espere unos segundos hasta que el archivo se cargue en su área de cliente.
 
@@ -100,7 +104,7 @@ Para eliminar una agenda, selecciónela en el menú desplegable (1) y haga clic 
 
 Para editar o eliminar un contacto, haga clic en el icono con forma de tres puntos (`...`{.action}) que aparece en la columna «Acciones» (4), junto al contacto correspondiente. Podrá elegir entre realizar cualquiera de estas dos acciones.
 
-![](images/smsphonebook7.png){.thumbnail}
+![agenda de contactos](images/smsphonebook7.png){.thumbnail}
 
 ## Más información
 
