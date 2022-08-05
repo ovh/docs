@@ -8,15 +8,19 @@ space_name: SMS
 section: 'Gérer mon offre'
 ---
 
-**Dernière mise à jour le 19/05/2020**
+**Dernière mise à jour le 05/08/2022**
 
 ## Objectif
+
 Votre espace client OVHcloud vous permet de consulter et télécharger l'historique de vos SMS envoyés. Ce guide vous décrit comment effectuer ces actions.
 
 ## Prérequis
 
-- Avoir accès à votre compte OVHcloud.
 - Disposer d’un compte SMS OVHcloud avec avec au moins 1 SMS envoyé.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
+
 
 ## En pratique
 
@@ -24,15 +28,16 @@ L'historique comprend la date, l'heure, l'expéditeur, le destinataire ainsi que
 
 > [!primary]
 >
-> L'espace client ne pourra afficher que les 6 derniers mois de votre historique. Pour consulter des SMS plus anciens, consultez [l'Étape 2 : télécharger l'historique de vos SMS en CSV](./#etape-2-telecharger-lhistorique-de-vos-sms-en-csv).
+> L'espace client ne pourra afficher que les 6 derniers mois de votre historique. Pour consulter des SMS plus anciens, consultez [l'Étape 2 : télécharger l'historique de vos SMS en CSV](#csv).
 >
-
 
 ### Étape 1 : consulter l'historique dans votre espace client
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et choisissez votre compte SMS.
 
-Dans la barre d'onglets, choisissez `SMS`{.action} (4) puis `Historique des envois`{.action} (5)
+Dans la barre d'onglets, cliquez sur `SMS`{.action} puis sur `Gestions des SMS`{.action} pour accéder à l'historique de vos SMS unitaires ou sur `Gestions des campagnes`{.action} pour accéder à l'historique de vos campagnes de SMS.
+
+Selon votre choix, cliquez ensuite sur `Historique des envois`{.action} ou `Statistiques et historique`{.action}.
 
 ![sms-history](images/smshistory1.png){.thumbnail}
 
@@ -52,7 +57,7 @@ Le bouton `Filtrer`{.action} vous permet de filtrer la recherche par expéditeur
 
 ![sms-history](images/smshistory5.png){.thumbnail}
  
-### Étape 2 : télécharger l'historique de vos SMS en CSV
+### Étape 2 : télécharger l'historique de vos SMS en CSV <a name="csv"></a>
  
 Cliquez sur le bouton `Actions`{.action} à gauche au dessus de votre historique puis sur `Télécharger`{.action} pour télécharger l'historique de vos SMS envoyés au format « .csv ». 
  
