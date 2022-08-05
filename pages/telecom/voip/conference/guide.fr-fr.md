@@ -1,58 +1,61 @@
 ---
 title: 'Créer et gérer des conférences téléphoniques'
 slug: conference
-excerpt: 'Apprenez à gérer des conférences téléphoniques avec votre numéro OVH'
+excerpt: 'Apprenez à gérer des conférences téléphoniques avec votre numéro OVHcloud'
 section: 'Numéros ou alias'
 order: 7
 ---
 
-**Dernière mise à jour le 24/01/2019**
+**Dernière mise à jour le 05/08/2022**
 
 ## Objectif
 
-La conférence permet à toutes les personnes composant un numéro donné d’être en communication simultanément. Différentes fonctionnalités sont alors disponibles : protéger la conférence par un code, définir une annonce personnalisée, enregistrer les participants et recevoir un rapport par e-mail à la fin de celle-ci. Une interface spécifique vous propose également de suivre en temps réel les discussions des participants, mais aussi de gérer leur audio et leur micro.
+La conférence permet à toutes les personnes composant un numéro donné d’être en communication simultanément. Différentes fonctionnalités sont alors disponibles :
 
-**Apprenez à gérer des conférences téléphoniques avec votre numéro OVH.**
+- protéger la conférence par un code ;
+- définir une annonce personnalisée ;
+- enregistrer les participants et recevoir un rapport par e-mail à la fin de la conférence. 
 
+Une interface spécifique vous propose également de suivre en temps réel les discussions des participants, mais aussi de gérer leur audio et leur micro.
+
+**Découvrez comment créer et gérer des conférences téléphoniques avec votre numéro OVHcloud.**
 
 ## Prérequis
 
-- Avoir créé un [numéro](https://www.ovhtelecom.fr/telephonie/numeros/){.external} (porté ou un alias).
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} dans la partie `Téléphonie`{.action}.
+- Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+
+> [!primary]
+>
+> Consultez notre guide « [Choisir et appliquer une configuration pour un numéro](../quelle-configuration-est-adaptee-a-mes-besoins/) » pour plus de détails sur les différentes configurations applicables à un numéro alias.
+>
 
 ## En pratique
 
-### Étape 1 : configurer le numéro en tant que conférence
+### Étape 1 : accéder à la configuration du numéro
 
-Pour débuter la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} et assurez-vous de vous situer dans la partie « Télécom ». Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez parmi les numéros OVH qui s’affichent celui sur lequel vous souhaitez configurer la conférence.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.<br>
+Cliquez sur `Téléphonie`{.action}, sélectionnez le groupe de téléphonie puis le numéro à configurer.<br>
+Dans l'onglet `Configuration`{.action}, cliquez sur `Conférence`{.action} puis sur `Paramétrer`{.action}.<br>
+L'application de la configuration prend quelques secondes.
 
-Dès lors, deux possibilités existent selon la configuration du numéro concerné :
+![conférence](images/conference2022-01.png){.thumbnail}
 
-- **le numéro ne possède pas de configuration** : positionnez-vous alors sur l'onglet `Configuration`{.action}, puis suivez les instructions ci-dessous ;
-- **le numéro possède déjà une configuration** : cliquez sur l'onglet `Configuration`{.action}, puis sur `Changer de configuration`{.action}. Suivez ensuite les instructions ci-dessous.
+Si une autre configuration est déjà appliquée sur votre numéro, cliquez sur `Configuration`{.action} puis `Changer de configuration`{.action}.
 
-![conference](images/conference-step1.png){.thumbnail}
+Une fois la configuration appliquée, vous accédez directement aux paramètres de la conférence.
 
-Dans la nouvelle fenêtre qui apparaît, assurez-vous d’avoir coché la case `Conférence`{.action} et cliquez sur le bouton `Paramétrer`{.action} situé en bas de la page. Si vous changez de configuration pour une autre, vous devrez accepter de perdre celle actuellement en place.
-
-![conference](images/conference-step2.png){.thumbnail}
+Pour retrouver ce menu ultérieurement, cliquez sur l'onglet `Configuration`{.action} puis sur `Conférence`{.action}.
 
 ### Étape 2 : gérer les paramètres de la conférence
 
-Maintenant que votre numéro est défini en tant que conférence, vous pouvez le paramétrer. Pour cela, assurez-vous d'être toujours bien positionné dans la partie « Configuration ».
+#### Configurer la conférence
 
-Si ce n'est plus le cas, ou si vous souhaitez y accéder de nouveau, cliquez sur l'onglet `Configuration`{.action} puis sur `Conférence`{.action}.
+Dans la partie « Configuration », définissez les paramètres de la conférence.
 
-![conference](images/conference-step3.png){.thumbnail}
-
-Vous avez la possibilité de configurer la conférence selon deux thématiques. Poursuivez cette documentation selon le ou les paramètres que vous souhaitez ajuster.
-
-- [2.1 Configurer la conférence](./#21-configurer-la-conference){.external}.
-- [2.2 Administrer la conférence](./#22-administrer-la-conference){.external}.
-
-#### 2.1 Configurer la conférence
-
-Dans la partie « Configuration », définissez vos paramètres.
+![conference](images/conference2022-02.png){.thumbnail}
 
 |Paramètres|Description|
 |---|---|
@@ -65,20 +68,18 @@ Dans la partie « Configuration », définissez vos paramètres.
 
 Cliquez enfin sur le bouton `Valider`{.action} en bas de la page afin de confirmer les changements.
 
-![conference](images/conference-step4.png){.thumbnail}
-
-#### 2.2 Administrer la conférence
+#### Administrer la conférence
 
 Dans la partie « Administration », définissez également vos paramètres.
 
+![conference](images/conference2022-03.png){.thumbnail}
+
 |Paramètres|Description|
 |---|---|
-|Rapport de la conférence|Permet de définir si vous souhaitez recevoir un rapport concernant l'activité de la conférence ; et si oui, l'adresse sur laquelle le recevoir.|
-|Suivi et contrôle de la conférence|Permet d'activer des liens pour suivre et contrôler la conférence. Pour les activer, cliquez sur `Générer les URL`{.action}.<br><br> Si des URL sont déjà générés, vous avez la possibilité de :<br><br> - **Regénérer les URL** : permet de changer les URL existantes par d'autres ;<br> - **Supprimer les URL** : permet de désactiver le suivi et le contrôle de la conférence.|
+|Rapport de la conférence|Permet de définir si vous souhaitez recevoir un rapport concernant l'activité de la conférence ; et si oui, l'adresse e-mail sur laquelle le recevoir.|
+|Suivi et contrôle de la conférence|Permet d'activer des liens pour suivre et contrôler la conférence. Pour les activer, cliquez sur `Générer les URL`{.action}. Un bouton à droite de chaque URL vous permet de la copier.<br><br> Si des URL sont déjà générées, vous avez la possibilité de :<br><br> - **Regénérer les URL** : permet de remplacer les URL existantes par d'autres ;<br> - **Supprimer les URL** : permet de désactiver le suivi et le contrôle de la conférence.|
 
 Cliquez enfin sur le bouton `Valider`{.action} pour confirmer les changements.
-
-![conference](images/conference-step5.png){.thumbnail}
 
 ### Étape 3 : utiliser la conférence
 
