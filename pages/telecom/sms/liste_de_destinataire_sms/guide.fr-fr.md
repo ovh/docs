@@ -6,7 +6,7 @@ legacy_guide_number: g2402
 section: 'Gérer mon offre'
 ---
 
-**Dernière mise à jour le 19/08/2021**
+**Dernière mise à jour le 05/08/2022**
 
 ## Objectif
 
@@ -18,7 +18,9 @@ Afin d'envoyer une campagne de SMS à de multiples contacts, vous pouvez importe
 
 - Disposer d’un compte SMS OVHcloud
 - Disposer d'un outil de type tableur ou éditeur de texte
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+
+![espace client Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
 
@@ -66,7 +68,7 @@ Vous devriez obtenir le résultat ci-dessous :
 
 ### Étape 2 : importer votre liste dans l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Telecom`{.action}. Sélectionnez ensuite `SMS`{.action} dans les menus de gauche.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Telecom`{.action}. Sélectionnez ensuite `SMS`{.action}.
 
 Sélectionnez votre compte SMS puis cliquez sur l'onglet `Contacts`{.action} et sur `Créer une liste de contacts`{.action}.
 

@@ -8,15 +8,22 @@ space_name: SMS
 section: 'Gestionar el servicio'
 ---
 
-**Última actualización: 19/11/2019**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
+**Última actualización: 05/08/2022**
 
 ## Objetivo
+
 Esta guía explica cómo consultar y descargar el historial de SMS enviados desde el área de cliente de OVHcloud.
 
 ## Requisitos
 
-- Tener acceso a su cuenta de OVHcloud.
 - Tener una cuenta de SMS de OVHcloud con la que haya enviado al menos un SMS.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Telecom`{.action}{.action} > `SMS`{.action}.
+
+![área de cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedimiento
 
@@ -24,43 +31,44 @@ El historial de envíos incluye información sobre la fecha, el remitente, el de
 
 > [!primary]
 >
-> El área de cliente solo permite consultar los últimos seis meses del historial de envío. Para consultar los SMS anteriores a esta fecha, vaya al paso [2. Descargar el historial de sus SMS en CSV](./#2-descargar-el-historial-de-sus-sms-en-csv).
+> El área de cliente solo permite consultar los últimos seis meses del historial de envío. Para consultar los SMS anteriores a esta fecha, vaya al paso [2. Descargar el historial de sus SMS en CSV](#csv).
 >
-
 
 ### 1. Consultar el historial en el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y haga clic en `Telecom`{.action} (1). A continuación, haga clic en `SMS`{.action} en la columna izquierda (2) y seleccione su cuenta de SMS (3).
+Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Telecom`{.action}. Haga clic en `SMS`{.action} y seleccione su cuenta de SMS.
 
-Acceda a la sección `SMS`{.action} (4) y, a continuación, seleccione `Historial de envíos`{.action} (5).
+En la barra de pestañas, haga clic en `Mensage y campaña`{.action} y, seguidamente, en `Gestión de SMS`{.action} para acceder al historial de sus SMS unitarios o en `Gestión de campañas`{.action} para acceder al historial de sus campañas de SMS.
 
-![](images/smshistory1.png){.thumbnail}
+A continuación, haga clic en el botón `Historial de envíos`{.action} o `Estadísticas e historial`{.action}.
+
+![área de cliente Telecom SMS](images/smshistory1.png){.thumbnail}
 
 Para filtrar el historial de SMS por fecha de envío, haga clic sobre la palabra «Fecha» en la primera columna a la izquierda.
 
-![](images/smshistory2.png){.thumbnail}
+![área de cliente Telecom SMS](images/smshistory2.png){.thumbnail}
 
 Para consultar o eliminar un SMS, haga clic en el icono con forma de tres puntos (`...`{.action}) en la columna «Acciones».
 
-![](images/smshistory3.png){.thumbnail}
+![área de cliente Telecom SMS](images/smshistory3.png){.thumbnail}
 
 Para eliminar varios SMS a la vez, selecciónelos marcando las casillas correspondientes y haga clic en el botón `Eliminar el SMS seleccionado`{.action}.
 
-![](images/smshistory4.png){.thumbnail}
+![área de cliente Telecom SMS](images/smshistory4.png){.thumbnail}
  
 El botón `Filtrar`{.action} permite filtrar la búsqueda por remitente (si hubiera más de uno) o por destinatario.
 
-![](images/smshistory5.png){.thumbnail}
+![área de cliente Telecom SMS](images/smshistory5.png){.thumbnail}
  
-### 2. Descargar el historial de sus SMS en CSV
+### 2. Descargar el historial de sus SMS en CSV <a name="csv"></a>
  
 Para descargar el historial de los SMS enviados en formato «.CSV», haga clic en el botón `Acciones`{.action} en la esquina superior izquierda y seleccione `Descargar`{.action}. 
  
-![](images/smshistory6.png){.thumbnail}
+![área de cliente Telecom SMS](images/smshistory6.png){.thumbnail}
  
 También puede consultar el historial desde un programa de hojas de cálculo. La información aparecerá como se muestra a continuación:
 
-![](images/smshistory7.png){.thumbnail}
+![área de cliente Telecom SMS](images/smshistory7.png){.thumbnail}
 
 Detalles de la información incluida en el historial:
 

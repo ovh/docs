@@ -5,7 +5,7 @@ excerpt: Find out how to send SMS messages to the USA
 section: Sending SMS messages
 ---
 
-**Last updated 17/12/2019**
+**Last updated 5th August 2022**
 
 ## Objective
 
@@ -13,8 +13,11 @@ There are specific rules for sending SMS to the United States. The guide will ex
 
 ## Requirements
 
-* an OVHcloud SMS account with SMS credits.
-* access to your OVHcloud account.
+- An OVHcloud SMS account with SMS credits.
+- Access to the [OVHcloud API](https://api.ovh.com/console/) (for the API method only)
+- You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
+
+![SMS Telecom Control Panel](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Instructions
 
@@ -30,12 +33,13 @@ You can request the validation of multiple message templates.
 Setting message templates is free and is carried out by the OVHcloud teams within two working days.
 >
 
-
 ### Step 2: adding a template
 
 #### 2.1 Via the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then select `Telecom`{.action} (1). Next, click `SMS`{.action} on the left, and select your `SMS account`{.action} (2). Click on the `SMS`{.action} tab (3) and finally on `Manage templates`{.action} (4).
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account. Click on the `Message and campaign`{.action} tab then click `SMS management`{.action}.
+
+Finally, click `Manage templates`{.action}.
 
 ![SMS messages to the USA](images/smstousa1.png){.thumbnail}
 
@@ -47,7 +51,6 @@ A pop-up will appear with fields to complete.
 
 ![SMS messages to the USA](images/smstousa3.png){.thumbnail}
 
-
 | Field       | Description                                                                                                      |
 |-------------|------------------------------------------------------------------------------------------------------------------|
 | Name         | Template name                                                                                                  |
@@ -57,6 +60,9 @@ A pop-up will appear with fields to complete.
 
 
 #### 2.2 Via APIs
+
+> [!success]
+> If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
 
 Log in to [api.ovh.com/](https://api.ovh.com/), then use the following API:
 
@@ -76,15 +82,16 @@ Below are two examples of message templates that can be sent to the US.
 
 - Authentication template example:
 
-```
+```bash
 Your security code is: #CODE#. Have a good day!
 ```
 
 - Alert template example:
 
-```
+```bash
 Our monitoring system detected your server #SERVER# doesn't respond to ping requests
 ```
+
 ### Step 3: analysing returns
 
 Once your message template has been created and validated, the outgoing SMS automatically compares your content with your templates. If the comparison is positive, the SMS is sent in the same way as one sent to another recipient.
@@ -92,7 +99,6 @@ Once your message template has been created and validated, the outgoing SMS auto
 If you send an SMS to the US without creating and validating a template, the SMS will be rejected and the Premium Tracking Transaction Code (PTT code) 1999 will be sent to you, which corresponds to the “No templates available” error message.
 
 You can view the other possible return codes in [this guide](../everything_you_need_to_know_about_sms_users/).
-
 
 ## Go further
 

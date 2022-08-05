@@ -6,7 +6,11 @@ legacy_guide_number: g1754
 section: 'Enviar SMS'
 ---
 
-**Última actualización: 17/12/2019**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
+**Última actualización: 05/08/2022**
 
 ## Objetivo
 
@@ -14,8 +18,11 @@ El envío de SMS a Estados Unidos está sujeto a normas específicas. Esta guía
 
 ## Requisitos
 
-* Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
-* Tener acceso a su cuenta de OVHcloud.
+- Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
+- Conectarse a la [API de OVHcloud](https://api.ovh.com/console/) (solo para el método de envío a través de la API).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Telecom`{.action}{.action} > `SMS`{.action}.
+
+![área de cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedimiento
 
@@ -31,12 +38,13 @@ Es posible solicitar la validación de varias plantillas de mensajes.
 La validación de las plantillas de mensajes, realizada por el equipo de OVHcloud, es gratuita y puede durar entre uno y dos días laborables.
 >
 
-
 ### 2. Añadir un modelo
 
 #### 2.1. Desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Telecom`{.action} (1). Haga clic en `SMS`{.action} en la columna izquierda (2) y seleccione su cuenta de SMS. A continuación, haga clic en la pestaña `SMS`{.action} (3) y, por último, seleccione `Gestionar las plantillas`{.action} (4).
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Telecom`{.action}. Haga clic en `SMS`{.action} y seleccione su cuenta de SMS. A continuación, haga clic en la pestaña `Mensaje y campaña`{.action} y, seguidamente, en `Gestión de SMS`{.action}.
+
+Por último, haga clic en `Gestionar las plantillas`{.action}.
 
 ![SMS a Estados Unidos](images/smstousa1.png){.thumbnail}
 
@@ -59,6 +67,9 @@ Rellene los campos en la ventaja emergente que aparece.
 
 #### 2.2. A través de la API
 
+> [!success]
+> Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
+
 Conéctese a [api.ovh.com](https://api.ovh.com/) y realice la siguiente llamada:
 
 > [!api]
@@ -77,13 +88,13 @@ Incluimos a continuación dos ejemplos de plantillas de mensajes a Estados Unido
 
 - Ejemplo de plantilla de autenticación:
 
-```
+```bash
 Your security code is #CODE#, have a good day
 ```
 
 - Ejemplo de plantilla de alerta:
 
-```
+```bash
 Our monitoring system detected your server #SERVER# doesn't respond to ping requests
 ```
 
@@ -94,7 +105,6 @@ Una vez que haya creado y validado su plantilla, OVHcloud realiza una comprobaci
 Si envía un SMS a Estados Unidos sin haber creado y validado previamente una plantilla, el SMS será rechazado y recibirá un Premium Tracking Transaction Code (PTT code) 1999. Este código corresponde al mensaje de error «No templates available».
 
 Puede consultar el resto de códigos PTT en la siguiente [guía](../usuarios-de-sms/).
-
 
 ## Más información
 

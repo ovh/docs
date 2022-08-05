@@ -5,7 +5,11 @@ excerpt: Dowiedz się, jak sprawdzić historię wiadomości SMS wysłanych z Two
 section: Zarządzanie ofertą
 ---
 
-**Ostatnia aktualizacja z dnia 19-05-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 05-08-2022**
 
 ## Wprowadzenie
 
@@ -13,8 +17,10 @@ Historię wysłanych wiadomości SMS możesz sprawdzić i pobrać z poziomu Pane
 
 ## Wymagania początkowe
 
-- Dostęp do konta OVHcloud
 - Posiadanie konta SMS OVHcloud, z którego wysłano co najmniej jedną wiadomość SMS
+- Zalogowanie do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
+
+![Panel klienta Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## W praktyce
 
@@ -22,15 +28,16 @@ Historia zawiera informacje o dacie, godzinie, nadawcy, odbiorcy oraz treści wy
 
 > [!primary]
 >
-> W Panelu klienta można wyświetlić historię tylko z 6 ostatnich miesięcy. Aby uzyskać dostęp do starszych wiadomości SMS, sprawdź [etap 2: pobieranie historii wiadomości SMS do pliku CSV](./#etap-2-pobieranie-historii-wiadomosci-sms-do-pliku-csv).
+> W Panelu klienta można wyświetlić historię tylko z 6 ostatnich miesięcy. Aby uzyskać dostęp do starszych wiadomości SMS, sprawdź [etap 2: pobieranie historii wiadomości SMS do pliku CSV](#csv).
 >
-
 
 ### Etap 1: sprawdzanie historii w Panelu klienta
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz opcję `Telecom`{.action} (1). Następnie kliknij pozycję `SMS`{.action} po lewej stronie (2) i wybierz Twoje konto SMS (3).
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) i wybierz `Telefonia`{.action}. Następnie kliknij `SMS`{.action} i wybierz Twoje konto SMS.
 
-Na pasku kart wybierz pozycję `SMS`{.action} (4), a następnie `Historia wysyłek`{.action} (5).
+Na pasku kart kliknij `Wiadomość SMS i kampania`{.action}, a następnie `Zarządzanie SMS-ami`{.action}, aby uzyskać dostęp do historii Twoich pojedynczych wiadomości SMS lub `Zarządzanie kampaniami`{.action}.
+
+Następnie kliknij `Historia wysyłki`{.action} lub `Statystyki i Historia`{.action}.
 
 ![sms-history](images/smshistory1.png){.thumbnail}
 
@@ -50,7 +57,7 @@ Przycisk `Filtruj`{.action} umożliwia filtrowanie wyszukiwania według nadawcy 
 
 ![sms-history](images/smshistory5.png){.thumbnail}
  
-### Etap 2: pobieranie historii wiadomości SMS do pliku CSV
+### Etap 2: pobieranie historii wiadomości SMS do pliku CSV <a name="csv"></a>
  
 Kliknij przycisk `Działania`{.action} po lewej stronie, nad historią, a następnie kliknij polecenie `Pobierz`{.action}, aby pobrać historię wysłanych wiadomości SMS w formacie .csv. 
  

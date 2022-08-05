@@ -5,7 +5,11 @@ excerpt: Come consultare la cronologia degli SMS inviati dallo Spazio Cliente OV
 section: Gestisci la tua offerta 
 ---
 
-**Ultimo aggiornamento: 19/05/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 05/08/2022**
 
 ## Obiettivo
 
@@ -13,8 +17,10 @@ Dallo Spazio Cliente è possibile consultare e scaricare la cronologia degli SMS
 
 ## Prerequisiti
 
-- Avere accesso al tuo account OVHcloud.
-- Disporre di un account SMS OVHcloud con almeno 1 SMS inviato.
+- Disporre di un account SMS OVHcloud con almeno 1 SMS inviato
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+
+![Spazio Cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedura
 
@@ -22,15 +28,16 @@ I dettagli elencati nella cronologia includono la data, l’ora, il mittente, il
 
 > [!primary]
 >
-> Nello Spazio Cliente è possibile visualizzare soltanto la cronologia degli ultimi 6 mesi. Per consultare gli SMS meno recenti, vai allo [Step 2: scarica la cronologia degli SMS in formato CSV](./#step-2-scarica-la-cronologia-degli-sms-in-formato-csv).
+> Nello Spazio Cliente è possibile visualizzare soltanto la cronologia degli ultimi 6 mesi. Per consultare gli SMS meno recenti, vai allo [Step 2: scarica la cronologia degli SMS in formato CSV](#csv).
 >
-
 
 ### Step 1: consulta la cronologia dal tuo Spazio Cliente
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom` (1). Quindi clicca su `SMS` a sinistra (2) e seleziona il tuo account SMS (3).
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) e seleziona `Telecom`{.action}. Clicca su `SMS`{.action} e seleziona il tuo account SMS.
 
-Nella barra delle schede, seleziona `SMS`{.action} (4) e poi `Cronologia dei messaggi inviati`{.action} (5).
+Nella barra delle schede, clicca su `Messaggio e campagna`{.action} e poi su `Gestisci gli SMS`{.action} per accedere allo storico dei tuoi SMS unitari o su `Gestisci le campagne`{.action} per accedere allo storico delle tue campagne di SMS.
+
+Clicca su `Storico invii`{.action} o `Statistiche e storico`{.action}.
 
 ![sms-history](images/smshistory1.png){.thumbnail}
 
@@ -50,8 +57,8 @@ Il pulsante `Filtra`{.action} consente di filtrare la ricerca in base al mittent
 
 ![sms-history](images/smshistory5.png){.thumbnail}
  
-### Step 2: scarica la cronologia degli SMS in formato CSV
- 
+### Step 2: scarica la cronologia degli SMS in formato CSV <a name="csv"></a>
+
 Per scaricare la cronologia degli SMS inviati in formato “.csv”, clicca sul pulsante `Azioni`{.action} nell’angolo in alto a sinistra e poi clicca su `Scarica`{.action} 
  
 ![sms-history](images/smshistory6.png){.thumbnail}

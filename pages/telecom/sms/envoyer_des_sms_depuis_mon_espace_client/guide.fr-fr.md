@@ -5,7 +5,7 @@ excerpt: Découvrez comment envoyer des SMS simplement depuis votre espace clien
 section: Envoyer des SMS
 ---
 
-**Dernière mise à jour le 28/10/2020**
+**Dernière mise à jour le 05/08/2022**
 
 ## Objectif
 
@@ -14,11 +14,13 @@ Vous pouvez envoyer des SMS directement via votre espace client OVHcloud. Ce gui
 ## Prérequis
 
 - Disposer d’un compte SMS OVHcloud avec des crédits SMS.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+
+![espace client Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} à gauche et sur votre compte SMS.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et sur votre compte SMS.
 
 Le champ « Envoyer un SMS » est le premier élément disponible dans la liste des actions.
 

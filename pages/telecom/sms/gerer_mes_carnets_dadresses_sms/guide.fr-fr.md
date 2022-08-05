@@ -6,7 +6,7 @@ legacy_guide_number: g2118
 section: 'Gérer mon offre'
 ---
 
-**Dernière mise à jour le 11/02/2021**
+**Dernière mise à jour le 05/08/2022**
 
 ## Objectif
 
@@ -15,14 +15,16 @@ Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresse
 ## Prérequis
 
 - Disposer d'un compte SMS OVHcloud.
-- Avoir accès à votre espace client OVHcloud.
 - Disposer d'un outil de type tableur ou éditeur de texte.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+
+![espace client Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
 
 ### Étape 1 : créer un carnet d'adresses dans votre espace client
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rubrique `Telecom`. Sélectionnez ensuite `SMS`{.action} dans les menus de gauche.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rubrique `Telecom`. Sélectionnez ensuite `SMS`{.action}.
 
 Cliquez sur le compte SMS souhaité et choisissez l'onglet `Contacts`{.action} puis `Carnet d'adresses`{.action}.
 
@@ -66,7 +68,9 @@ Une fois le document prêt, sauvegardez le au format tableur pour le modifier ul
 
 En parallèle, enregistrez-le ou exportez-le au format «.csv » afin d'en préparer l'import.
 
-> [!primary] Recommandations
+> [!primary]
+>
+> **Recommandations**
 >
 >Enregistrez votre fichier tableur au format «.csv » (séparateur : point-virgule).
 >

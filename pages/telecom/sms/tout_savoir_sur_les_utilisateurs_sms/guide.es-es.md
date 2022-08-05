@@ -10,7 +10,7 @@ section: 'Gestionar el servicio'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 26/08/2021** 
+**Última actualización: 05/08/2022** 
 
 ## Objetivo
 
@@ -19,7 +19,9 @@ Esta guía explica cómo crear y gestionar usuarios de la API de SMS.
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud.
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Telecom`{.action}{.action} > `SMS`{.action}.
+
+![área de cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedimiento
 
@@ -43,9 +45,9 @@ Para gestionar mejor el saldo de su cuenta de SMS, es posible aplicar un límite
 
 ### 1. Crear un usuario de la API
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Telecom`{.action} (1). A continuación, haga clic en `SMS`{.action} en la columna izquierda y seleccione su cuenta de SMS (2).
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} y seleccione su cuenta de SMS.
 
-Por último, abra la pestaña `Usuarios API`{.action} (3). Para añadir un usuario, haga clic en el botón `Acciones`{.action} y seleccione `Añadir`{.action} (4).
+Por último, abra la pestaña `Usuarios API`{.action}. Para añadir un usuario, haga clic en el botón `Acciones`{.action} y seleccione `Añadir`{.action}.
 
 ![Usuarios API](images/smsusers01e-2021.png){.thumbnail}
 

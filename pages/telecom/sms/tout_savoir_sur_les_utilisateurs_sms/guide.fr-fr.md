@@ -6,7 +6,7 @@ legacy_guide_number: g2144
 section: 'Gérer mon offre'
 ---
 
-**Dernière mise à jour le 26/08/2021** 
+**Dernière mise à jour le 05/08/2022** 
 
 ## Objectif
 
@@ -15,7 +15,9 @@ Ce guide vous explique comment créer et gérer des utilisateurs API.
 ## Prérequis
 
 - Disposer d'un compte SMS OVHcloud
-- Avoir accès à votre espace client OVHcloud.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+
+![espace client Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
 
@@ -40,9 +42,9 @@ Afin de gérer au mieux le crédit de votre compte SMS, il est possible de fixer
 
 ### Étape 1 : créer un utilisateur API
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche et choisissez votre compte SMS (2).
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et choisissez votre compte SMS.
 
-Cliquez sur l'onglet `Utilisateurs API`{.action} (3). Pour ajouter un utilisateur, cliquez sur le bouton `Actions`{.action} puis sur `Ajouter`{.action} (4).
+Cliquez sur l'onglet `Utilisateurs API`{.action}. Pour ajouter un utilisateur, cliquez sur le bouton `Actions`{.action} puis sur `Ajouter`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 

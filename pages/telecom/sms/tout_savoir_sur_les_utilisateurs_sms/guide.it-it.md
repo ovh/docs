@@ -9,7 +9,7 @@ section: Gestisci la tua offerta
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 26/08/2021** 
+**Ultimo aggiornamento: 05/08/2022** 
 
 ## Obiettivo
 
@@ -18,7 +18,9 @@ Questa guida ti mostra come creare e aggiungere utenti API.
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+
+![Spazio Cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedura
 
@@ -43,9 +45,9 @@ Per gestire al meglio il saldo del tuo account SMS, puoi fissare un limite e una
 
 ### Step 1: crea un utente API
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom`{.action} (1). Poi clicca su `SMS`{.action} a sinistra e seleziona il tuo account SMS (2).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom`{.action}. Poi clicca su `SMS`{.action} e seleziona il tuo account SMS.
 
-Infine clicca sulla scheda `Utenti API`{.action} (3). Per aggiungere un utente, clicca sul pulsante `Azioni`{.action} e poi su `Aggiungi`{.action}.
+Infine clicca sulla scheda `Utenti API`{.action}. Per aggiungere un utente, clicca sul pulsante `Azioni`{.action} e poi su `Aggiungi`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 

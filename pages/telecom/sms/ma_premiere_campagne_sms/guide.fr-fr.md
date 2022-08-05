@@ -5,7 +5,7 @@ slug: ma_premiere_campagne_sms
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 28/10/2020**
+**Dernière mise à jour le 05/08/2022**
 
 ## Objectif
 
@@ -14,10 +14,13 @@ OVHcloud met à votre disposition des outils intégrés à votre espace client a
 ## Prérequis
 
 - Disposer d’un compte SMS OVHcloud avec des crédits SMS.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
+
+![espace client Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} à gauche  puis choisissez votre compte SMS .
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} puis choisissez votre compte SMS .
 
 La barre d'outils ainsi que les raccourcis vous permettront d'accéder aux fonctionnalités principales pour envoyer votre campagne de SMS.
 
@@ -79,7 +82,6 @@ Composez alors votre message et choisissez entre un envoi immédiat ou planifié
 Pour plus d'informations sur la taille des SMS à caractère commercial ainsi que sur le format des messages, consultez notre guide dédié à [l'envoi de messages depuis l'espace client OVHcloud](../envoyer_des_sms_depuis_mon_espace_client/#taille-des-sms-a-caractere-commercial) .
 
 Il ne vous reste plus qu'à cliquer sur le bouton `Envoi`{.action} pour que votre campagne soit envoyée ou planifiée.
-
 
 ## Aller plus loin
 
