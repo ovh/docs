@@ -5,7 +5,7 @@ excerpt: Come creare una rubrica SMS nel tuo account OVHcloud
 section: Gestisci la tua offerta
 ---
 
-**Ultimo aggiornamento: 19/05/2020**
+**Ultimo aggiornamento: 05/08/2022**
 
 ## Obiettivo
 
@@ -14,14 +14,16 @@ Tutti gli account SMS OVHcloud possono utilizzare una o più rubriche. Questa gu
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre di un programma di fogli di calcolo o un editor di testo
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+
+![Spazio Cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedura
 
 ### Step 1: crea una rubrica di contatti nel tuo Spazio Cliente
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Quindi seleziona SMS nel menu a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Quindi seleziona `SMS`{.action}.
 
 Clicca sull’account SMS interessato.
 
@@ -65,7 +67,9 @@ Quando il documento è pronto, salvalo nel formato foglio di calcolo per modific
 
 Allo stesso modo, salvalo o esportalo nel formato “.csv” per consentirne l’importazione.
 
-> [!primary]Consigli
+> [!primary]
+>
+> **Consigli**
 >
 >Salva il file foglio di calcolo nel formato .csv (separatore: punto e virgola).
 >

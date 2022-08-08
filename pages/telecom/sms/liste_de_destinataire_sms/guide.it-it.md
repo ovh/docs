@@ -9,7 +9,7 @@ section: Gestisci la tua offerta
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 19/08/2021**
+**Ultimo aggiornamento: 05/08/2022**
 
 ## Obiettivo
 
@@ -21,7 +21,9 @@ Per inviare una campagna SMS a contatti multipli, è possibile importare una o p
 
 - Disporre di un account SMS OVHcloud attivo
 - Disporre di un programma di fogli di calcolo o un editor di testo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+
+![Spazio Cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedura
 
@@ -69,7 +71,7 @@ Il risultato ottenuto dovrebbe essere di questo tipo:
 
 ### Step 2: importare la tua lista dallo Spazio Cliente OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom`. Quindi seleziona `SMS`{.action} nel menu a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom`. Quindi seleziona `SMS`{.action}.
 
 Seleziona il tuo account SMS e clicca sulla scheda `Contatti`{.action} e su `Crea una lista di contatti`{.action}.
 

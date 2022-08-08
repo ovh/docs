@@ -9,7 +9,7 @@ section: Pierwsze kroki
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 28-10-2020**
+**Ostatnia aktualizacja z dnia 05-08-2022**
 
 ## Wprowadzenie
 
@@ -18,6 +18,9 @@ OVHcloud udostępnia Ci zintegrowane z Panelem klienta narzędzia umożliwiając
 ## Wymagania początkowe
 
 - Posiadanie konta SMS OVHcloud z zasileniami SMS
+- Zalogowanie do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
+
+![Panel klienta Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## W praktyce
 
@@ -26,7 +29,6 @@ Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 Pasek narzędzi oraz skróty ułatwiają dostęp do głównych funkcji służących do wysyłania kampanii SMS.
 
 ![firstsms](images/firstsms01.png){.thumbnail}
-
 
 ### Etap 1: dodaj kontakty
 
@@ -81,7 +83,6 @@ Zbuduj swoją wiadomość i wybierz między natychmiastową lub zaplanowaną wys
 ![firstsms](images/firstsms08.png){.thumbnail}
 
 Teraz kliknij przycisk `Wyślij`{.action}, aby Twoja kampania została wysłana lub zaplanowana.
-
 
 ## Sprawdź również
 

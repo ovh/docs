@@ -6,7 +6,7 @@ legacy_guide_number: g2144
 section: 'Managing your solution'
 ---
 
-**Last updated 26th August 2021** 
+**Last updated 5th August 2022** 
 
 ## Objective
 
@@ -15,7 +15,9 @@ This guide will explain how to create and manage API users.
 ## Requirements
 
 - an active OVHcloud SMS account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
+
+![SMS Telecom Control Panel](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Instructions
 
@@ -40,9 +42,9 @@ To better manage credit for your SMS accounts, you can set a limit and quota for
 
 ### Step 1: Create an API user.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select `Telecom`{.action} (1). Next, click `SMS`{.action} on the left and select your SMS account (2).
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account.
 
-Then click on the `API users`{.action} tab (3). To add a user, click `Actions`{.action}, then `Add`{.action} (4).
+Then click on the `API users`{.action} tab. To add a user, click `Actions`{.action}, then `Add`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 

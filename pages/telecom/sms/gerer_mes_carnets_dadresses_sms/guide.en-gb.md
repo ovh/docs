@@ -6,7 +6,7 @@ legacy_guide_number: g2118
 section: 'Managing your solution'
 ---
 
-**Last updated 04th June 2020**
+**Last updated 5th August 2022**
 
 ## Objective
 
@@ -15,14 +15,16 @@ All OVHcloud SMS accounts can use one or more address books. This guide explains
 ## Requirements
 
 - an active OVHcloud SMS account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - a spreadsheet or text editor tool
+- You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
+
+![SMS Telecom Control Panel](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Instructions
 
-### Step 1: Create an address book via the OVHcloud Control Panel.
+### Step 1: Create an address book via the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and go to the Telecom section. Next, select SMS in the left-hand menu.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and go to the `Telecom`{.action} section. Next, select `SMS`{.action}.
 
 Then click on the SMS account concerned.
 
@@ -34,11 +36,11 @@ Click `Add an address book`{.action}, and give it a name.
 
 ![phonebook](images/smsphonebook2.png){.thumbnail}
 
-### Step 2: Add contacts to your address book.
+### Step 2: Add contacts to your address book
 
 You have now created the address book, but it does not contain any contacts. There are several ways of adding contacts.
 
-### Add them individually via the OVHcloud Control Panel.
+### Add them individually via the OVHcloud Control Panel
 
 Select the `Actions`{.action} button, and click `Add`{.action}.
 
@@ -50,9 +52,9 @@ You will access a window that enables you to enter the contact details.
 
 Fill out the fields you need to, and confirm to save your changes. The contact will then be added to your address book. You will need to repeat this process to add more contacts.
 
-### Add multiple contacts by importing a contact file to the OVHcloud Control Panel.
+### Add multiple contacts by importing a contact file to the OVHcloud Control Panel
 
-#### Prepare a file in your spreadsheet.
+#### Prepare a file in your spreadsheet
 
 If you would like to use or create a document in a spreadsheet format, you will need to design it as per the layout below, and export it in .csv format.
 
@@ -66,7 +68,9 @@ Once the document is ready, save it in a spreadsheet format to edit later.
 
 At the same time, save or export it in .csv format to prepare the import.
 
-> [!primary] Recommendations
+> [!primary] 
+>
+> **Recommendations**
 >
 > Save your spreadsheet file in .csv format (separator: semi-colon).
 >
@@ -80,7 +84,7 @@ At the same time, save or export it in .csv format to prepare the import.
 >
 >
 
-#### Import the file into the OVHcloud Control Panel.
+#### Import the file into the OVHcloud Control Panel
 
 Go back to the OVHcloud Control Panel, select the `Actions`{.action} button, and click `Import`{.action}.
 
@@ -92,7 +96,7 @@ A pop-up window will appear. Next, click `Contact file`{.action} to select your 
 
 Wait a few seconds while the file is imported in to the OVHcloud Control Panel.
 
-### Step 3: Edit or delete an address book.
+### Step 3: Edit or delete an address book
 
 If you would like to edit the name of an address book, select it in the dropdown menu (1) (if you have created several address books), then click on the pencil icon (2) across from the address book name. 
 
