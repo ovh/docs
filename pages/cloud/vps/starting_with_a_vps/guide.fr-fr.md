@@ -36,6 +36,7 @@ Le tableau de bord qui vous est présenté contient des informations importantes
 
 - Si vous venez de commander un VPS, sa référence se présente ainsi : *vps-XXXXXXX.vps.ovh.net* (où les *X* sont une suite de chiffres et de lettres).
 - Si vous gérez un VPS plus ancien, vous remarquerez que sa référence est structurée différemment: *vpsXXXX.ovh.net* (dans lequel les *X* sont un nombre).
+- Le "Statut" **En cours d'exécution** est le statut normal du VPS, cela ne signifie pas qu'une action ou qu'une maintenance est en cours.
 
 Pour la gamme actuelle de VPS, poursuivez la lecture de ce guide à la section suivante, **Premiers pas (gamme VPS actuelle)**.
 
@@ -93,13 +94,13 @@ reboot
 
 Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Accueil`{.action}, cliquez sur `...`{.action} en face de « Boot » dans la zone **Votre VPS**, puis cliquez sur `Redémarrer mon VPS`{.action} et `Confirmer`{.action} dans la fenêtre contextuelle.
 
-![Reboot](images/reboot-vps-current.png){.thumbnail}
+![Reboot](images/reboot-vps-current01.png){.thumbnail}
 
 #### Installation ou réinstallation de votre VPS (gamme VPS actuelle) <a name="reinstallvps"></a>
 
 Vous pouvez effectuer toute réinstallation directement dans l'espace client OVHcloud. Sous l'onglet « Accueil », recherchez « OS / Distribution » dans la zone **Votre VPS**. Cliquez sur `...`{.action}, puis sur `Réinstaller mon VPS`{.action}.
 
-![Réinstallation du VPS](images/2020panel_02.png){.thumbnail}
+![Réinstallation du VPS](images/2022panel_02.png){.thumbnail}
 
 Une fenêtre s'ouvre et vous aurez alors à choisir :
 
