@@ -77,4 +77,4 @@ Kliknij `...`{.action} i wybierz `Usuń`{.action}.
 
 [Prezentacja Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/>.
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

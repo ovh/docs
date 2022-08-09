@@ -62,4 +62,4 @@ Die Liste der nun nicht mehr unterstützten Aktionen finden Sie auf [dieser Seit
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

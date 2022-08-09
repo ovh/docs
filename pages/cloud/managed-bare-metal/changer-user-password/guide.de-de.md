@@ -59,4 +59,4 @@ Geben Sie nun ein neues Passwort ein und bestätigen Sie es.
 
 [Das Passwort Ihres OVHcloud Accounts anlegen und verwalten](https://docs.ovh.com/de/customer/Passwort-verwalten/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

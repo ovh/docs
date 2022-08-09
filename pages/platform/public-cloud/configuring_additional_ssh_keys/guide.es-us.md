@@ -95,4 +95,4 @@ user2@server:~$
 
 [Cambiar la llave SSH en caso de pérdida](https://docs.ovh.com/us/es/public-cloud/modificar_su_llave_ssh_en_caso_de_perdida/)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

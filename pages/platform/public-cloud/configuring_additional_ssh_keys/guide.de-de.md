@@ -96,4 +96,4 @@ user2@server:~$
 
 [Ersatz eines verlorenen SSH-Schlüsselpaares](https://docs.ovh.com/de/public-cloud/nderung_des_ssh_schlussels_bei_verlust/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
