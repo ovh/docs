@@ -36,7 +36,7 @@ Le tableau de bord qui vous est présenté contient des informations importantes
 
 - Si vous venez de commander un VPS, sa référence se présente ainsi : *vps-XXXXXXX.vps.ovh.net* (où les *X* sont une suite de chiffres et de lettres).
 - Si vous gérez un VPS plus ancien, vous remarquerez que sa référence est structurée différemment: *vpsXXXX.ovh.net* (dans lequel les *X* sont un nombre).
-- Le "Statut" **En cours d'exécution** est le statut normal du VPS, cela ne signifie pas qu'une action ou qu'une maintenance est en cours.
+- Le Statut **En cours d'exécution** de votre VPS signifie simplement que le serveur fonctionne en mode normal. Cela ne signifie pas qu'une action ou qu'une maintenance est en cours.
 
 Pour la gamme actuelle de VPS, poursuivez la lecture de ce guide à la section suivante, **Premiers pas (gamme VPS actuelle)**.
 
