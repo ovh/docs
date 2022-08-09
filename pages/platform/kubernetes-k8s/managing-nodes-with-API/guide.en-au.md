@@ -12,7 +12,7 @@ order: 1
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will cover one of the first steps after ordering a cluster: managing nodes and node pools, using the OVHcloud API.
 
-In this guide, we are assuming you're using the [OVHcloud API](https://ca.api.ovh.com/console/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Cloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), please refer to the relevant documentation: [Managing nodes and node pools](../managing-nodes/) guide.
+In this guide, we are assuming you're using the [OVHcloud API](https://ca.api.ovh.com/console/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), please refer to the relevant documentation: [Managing nodes and node pools](../managing-nodes/) guide.
 
 ## Requirements
 
