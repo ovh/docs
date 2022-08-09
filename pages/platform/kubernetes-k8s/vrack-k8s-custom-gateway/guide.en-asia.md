@@ -31,7 +31,7 @@ section: Network
 
 ## Objectives
 
-In this tutorial we are going use a custom gateway deployed in vRack with a Managed Kubernetes cluster.
+In this tutorial we are going to use a custom gateway deployed in vRack with a Managed Kubernetes cluster.
 
 Why?
 
@@ -53,7 +53,7 @@ At the end of this tutorial you should have the following flow:
 ![Schema vrack gateway](images/schema_mksvrack.png)
 
 > [!primary]
-> In this tutorial we guide you how to create the private network in two regions but you can use only one region if you want, GRA9 for example.
+> In this tutorial we guide you on how to create the private network in two regions but you can use only one region if you want, GRA9 for example.
 
 ## Pre-requisites
 
@@ -65,9 +65,9 @@ At the end of this tutorial you should have the following flow:
 ## Initialization
 
 To setup a functional environment, you have to load the OpenStack and the OVHcloud API credentials.
-To help you we also created for you several useful scripts and templates.
+To help you, we have also created several useful scripts and templates for you.
 
-First, create in your environment/local machine a `utils` folder.
+First, create a `utils` folder in your environment/local machine. 
 Then, download the [ovhAPI.sh](https://raw.githubusercontent.com/ovh/docs/master/pages/platform/kubernetes-k8s/vrack-k8s-custom-gateway/utils/ovhAPI.sh) script into it.
 
 And then add execution rights to the `ovhAPI.sh` script:
@@ -144,7 +144,7 @@ EXAMPLE
 
 We are using the OVHcloud API to create the private network. For this tutorial, we are using the two regions GRA9 and GRA11.
 
-Create a folder `tpl` next to `utils` folder and create inside the **data-pvnw.json** file with he following content:
+Create a folder `tpl` next to `utils` folder and create inside the **data-pvnw.json** file with the following content:
 
 ```json
 {
@@ -274,7 +274,7 @@ ResourceNotFound: 404: Client Error for url: https://network.compute.gra11.cloud
 
 > [!primary]
 >
-> For the moment you can only create a virtual router in the GRA9 and GRA11 regions, but this feature will be released in another regions in coming weeks and months.
+> For the moment you can only create a virtual router in the GRA9 and GRA11 regions, but this feature will be released in other regions in the coming weeks and months.
 
 Now, you can display the information of your new virtual router on GRA9 in order to display its IP:
 
