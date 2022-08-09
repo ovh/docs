@@ -25,7 +25,7 @@ Se o seu VPS não responder, deverá sempre poder aceder ao VPS a partir da Áre
 > [!warning]
 > A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
 >
->Se encontrar dificuldades para efetuar estas ações, contacte um fornecedor de serviços especializado e/ou troque informações com a nossa comunidade de utilizadores <https://community.ovh.com/>. A OVHcloud não poderá fornecer-lhe assistência técnica a este respeito.
+>Se encontrar dificuldades para efetuar estas ações, contacte um fornecedor de serviços especializado e/ou troque informações com a nossa comunidade de utilizadores <https://community.ovh.com/en/>. A OVHcloud não poderá fornecer-lhe assistência técnica a este respeito.
 >
 
 ## Requisitos

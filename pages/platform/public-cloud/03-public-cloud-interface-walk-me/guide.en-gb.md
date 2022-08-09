@@ -90,4 +90,4 @@ There are several management tools available in your Public Cloud project, they 
 
 [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/)
 
-Join our community of users on <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.

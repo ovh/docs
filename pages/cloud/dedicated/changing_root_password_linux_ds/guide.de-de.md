@@ -136,4 +136,4 @@ Nachdem Sie diesen Schritt durchgeführt haben, ändern Sie den Netboot-Modus Ih
 
 [Administrator-Passwort eines Windows Servers ändern](../windows-admin-passwort-aendern/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

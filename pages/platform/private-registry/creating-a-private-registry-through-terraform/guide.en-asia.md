@@ -45,7 +45,7 @@ All available resources and data sources have their definition and documentation
 In this guide, we will create two resources:
 
 * a [ovh_cloud_project_containerregistry](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry){.external}, that represents an OVHcloud managed private registry
-* and a [ovh_cloud_project_containerregistry_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry_user){.external}, that represents an user associated to a private registry
+* and a [ovh_cloud_project_containerregistry_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry_user){.external}, that represents a user associated to a private registry
 
 ![OVHcloud Managed Private Registry Harbor](images/ovh-managed-private-registry-harbor.png){.thumbnail}
 
@@ -89,7 +89,7 @@ So, let's start!
 
 ### Resources definition
 
-First, create a `provider.tf` file with the minimum version, european endpoint ("ovh-eu") and keys you got in this guide previously.
+First, create a `provider.tf` file with the minimum version, european endpoint ("ovh-eu") and keys you previously got in this guide.
 
 Terraform 0.13 and later:
 
@@ -355,8 +355,7 @@ $ terraform output user
 "myuser"
 
 $ terraform output password
-"mygeneratedpassword"
-</code></pre>
+"mygeneratedpassword"</code></pre>
 
 Now go to the private registry URL and login with the credentials you have retrieved.
 

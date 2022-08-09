@@ -60,4 +60,4 @@ Una vez que haya introducido y confirmado la contraseña, el proyecto se elimina
 
 [Crear una primera instancia de Public Cloud y conectarse a ella](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

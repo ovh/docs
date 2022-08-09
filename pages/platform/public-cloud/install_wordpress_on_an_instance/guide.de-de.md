@@ -259,4 +259,4 @@ Certbot verlängert die Zertifikate automatisch; es sind keine weitereren Schrit
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

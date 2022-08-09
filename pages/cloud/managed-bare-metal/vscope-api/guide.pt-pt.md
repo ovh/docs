@@ -271,4 +271,4 @@ Para mais pormenores sobre os pedidos OpenTSDB, pode consultar a seguinte docume
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

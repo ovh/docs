@@ -86,7 +86,7 @@ So, let's start!
 
 ### Resources definition
 
-First, create a `provider.tf` file with the minimum version, european endpoint ("ovh-eu") and keys you got in this guide previously.
+First, create a `provider.tf` file with the minimum version, european endpoint ("ovh-eu") and keys you previously got in this guide.
 
 Terraform 0.13 and later:
 

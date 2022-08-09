@@ -12,7 +12,7 @@ order: 1
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will cover one of the first steps after ordering a cluster: managing nodes and node pools, using the OVHcloud API.
 
-In this guide, we are assuming you're using the [OVHcloud API](https://ca.api.ovh.com/console/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Cloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), please refer to the relevant documentation: [Managing nodes and node pools](../managing-nodes/) guide.
+In this guide, we are assuming you're using the [OVHcloud API](https://ca.api.ovh.com/console/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), please refer to the relevant documentation: [Managing nodes and node pools](../managing-nodes/) guide.
 
 ## Requirements
 
@@ -64,13 +64,13 @@ The `GET /cloud/project` API endpoint lists all the available Public Cloud Servi
 
 ![List your OVHcloud Public Cloud Services](images/kubernetes-quickstart-api-ovh-com-003.png){.thumbnail}
 
-Choose the Public Cloud Service corresponding to your OVHcloud Managed Kubernetes. In this example, we will refer to it as `serviceName`
+Choose the Public Cloud Service corresponding to your OVHcloud Managed Kubernetes. In this example, we will refer to it as `serviceName`.
 
 The `GET /cloud/project/{serviceName}/kube` API endpoint lists all the available clusters in your chosen project:
 
 ![List your OVHcloud Managed Kubernetes clusters](images/kubernetes-quickstart-api-ovh-com-004.png){.thumbnail}
 
-By calling it, you can view a list of your Kubernetes clusters ID. Note down the ID of the cluster you want to use. In this example, we will refer to it as `kubeId`
+By calling it, you can view a list of your Kubernetes clusters ID. Note down the ID of the cluster you want to use. In this example, we will refer to it as `kubeId`.
 
 
 ## Getting your cluster information
@@ -125,8 +125,8 @@ To delete a node pool, use the `/DELETE /cloud/project/{serviceName}/kube/{kubeI
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-au/public-cloud/kubernetes/).
 
-Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying an application](../deploying-an-application/) .
+Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying an application](../deploying-an-application/).
 
 Join our [community of users](https://community.ovh.com/en/).

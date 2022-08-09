@@ -61,4 +61,4 @@ Per rimuovere un accesso, clicca sul pulsante `...`{.action} poi seleziona `Elim
 
 [Impostazioni di accesso e sicurezza in Horizon](https://docs.ovh.com/it/public-cloud/accesso_e_sicurezza_con_horizon/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

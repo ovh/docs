@@ -152,4 +152,4 @@ Se non conosci la soluzione Enterprise File Storage, segui questi passaggi:
 
 [Enterprise File Storage - Gestione degli Snapshot dei volumi](../netapp-volume-snapshots/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

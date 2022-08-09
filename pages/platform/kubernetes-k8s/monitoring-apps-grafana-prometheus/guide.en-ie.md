@@ -56,7 +56,7 @@ The [Prometheus Operator](https://github.com/prometheus-operator/prometheus-oper
 
 The purpose of this project is to simplify and automate the configuration of a Prometheus-based monitoring stack for Kubernetes clusters. The Prometheus operator also deploys Grafana and its dashboards, to visualize our metrics in a user-friendly way.
 
-If you are interested into the operator, feel free to read the [Prometheus operator official documentation](https://github.com/prometheus-operator/prometheus-operator){.external}.
+If you are interested in the operator, feel free to read the [Prometheus operator official documentation](https://github.com/prometheus-operator/prometheus-operator){.external}.
 
 ### Installing the Prometheus operator
 
@@ -213,7 +213,7 @@ You can also go to the Grafana interface. Open your browser and point to `http:/
 
 ![Grafana Home Page](images/grafana-home-page.png){.thumbnail}
 
-This time again, thanks to the prometheus operator and without doing anything on your side, several dashboards are available. You can show them by clicking on the `Dashboards`{.action} icon, in the Grafana sidebar, then on `browse`{.action}:
+This time again, thanks to the prometheus operator and without doing anything on your side, several dashboards are available. You can display them by clicking on the `Dashboards`{.action} icon, in the Grafana sidebar, then on `browse`{.action}:
 
 ![Grafana](images/grafana-browse.png){.thumbnail}
 ![Grafana](images/grafana-dashboards.png){.thumbnail}

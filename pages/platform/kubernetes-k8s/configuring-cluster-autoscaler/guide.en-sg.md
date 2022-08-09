@@ -41,13 +41,13 @@ This guide follows up the [Using the cluster autoscaler](../using-cluster-autosc
 ## Requirements
 
 - An OVHcloud Managed Kubernetes cluster
-- A basic understanding of [how the cluster autoscaler works and how to enable it](../using-cluster-autoscaler).
+- A basic understanding of [how the cluster autoscaler works and how to enable it](../using-cluster-autoscaler)
 
 ## Instructions
 
 ### Cluster autoscaler configuration
 
-When the autoscaler is enabled on a node pool, is uses a default configuration.
+When the autoscaler is enabled on a node pool, it uses a default configuration.
 
 Here you have a description of the parameters used in the autoscaler configuration, and their default value:
 

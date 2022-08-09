@@ -77,4 +77,4 @@ Clicca su `...`{.action} e seleziona `Elimina`{.action}.
 
 [Introduzione a Horizon](https://docs.ovh.com/it/public-cloud/horizon/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -34,15 +34,15 @@ order: 6
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
 
-During the day-to-day life of your cluster, you may want to dynamically adjust the size of your cluster to accommodate to your workloads. The cluster autoscaler simplifies the task by scaling up or down your OVHcloud Managed Kubernetes cluster to meet the demand of your workloads. 
+During the day-to-day life of your cluster, you may want to dynamically adjust the size of your cluster to accommodate your workloads. The cluster autoscaler simplifies the task by scaling up or down your OVHcloud Managed Kubernetes cluster to meet the demand of your workloads. 
 
 This guide will cover how to enable and manage the cluster autoscaler on your OVHcloud Managed Kubernetes cluster.
 
 ## Requirements
 
-- An OVHcloud Managed Kubernetes cluster
+- An OVHcloud Managed Kubernetes cluster.
 - Some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
-- Some basic understanding of [how nodes and node pools work](../managing-nodes/) on OVHcloud Managed Kubernetes
+- Some basic understanding of [how nodes and node pools work](../managing-nodes/) on OVHcloud Managed Kubernetes.
 
 ## Instructions
 
@@ -173,7 +173,7 @@ NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED 
 nodepool-b2-7   b2-7     true          false            false           3         3         3            3           [...]   
 </code></pre>
 
-When the autoscaler is enabled on a node pool, is uses a by default configuration. To better understand the by-default configuration and its parameters, see the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
+When the autoscaler is enabled on a node pool, it uses a by-default configuration. To better understand the by-default configuration and its parameters, see the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
 
 ### Configuring the autoscaler
 

@@ -55,7 +55,7 @@ Copy the URL of the API Harbor, it's the URL of your private registry and we are
 
 ![API Harbor](images/creating-a-using-a-private-image-002.png){.thumbnail}
 
-> In fact when you click to copy button as mentioned by an hand icon in the image, the copied string begins with `https://`. Please remove the `https://` part.
+> In fact, when you click the copy button as indicated by a hand icon in the image, the copied string starts with `https://`. Please remove the `https://` part.
 
 ### Creating a Docker image
 
@@ -115,7 +115,7 @@ You should have these files in your `hello-ovh` directory:
 docker build --tag [YOUR_PRIVATE_REGISTRY_URL]/[YOUR_PROJECT]/hello-ovh:1.0.0 .
 ```
 
-  Here the result of the command execution for my private registry in the `private` project:
+  Here is the result of running the command for my private registry in the `private` project:
 
 <pre class="console"><code>$ docker build --tag 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0 .
 Sending build context to Docker daemon  14.34kB
