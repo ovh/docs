@@ -85,9 +85,6 @@ Il est possible maintenant d'utiliser la clé pour chiffrer des machines virtuel
 
 Nous allons chiffrer le fichier de configuration de la machine virtuelle ainsi que les disques de stockage. L'opération de chiffrement se fait en deux étapes, les données sont chiffrées à l'aide d'une clé **DEK** (Data Encryption Key) qui se trouve sur les serveurs ESXi et ensuite la clé **DEK** est rechiffrée (**wrapped**) à l'aide de la clé **KDK** générée précédemment.
 
-
-
-
 > [!warning]
 > L'opération de chiffrement d'une machine virtuelle ne peut se faire qu'avec la machine virtuelle éteinte
 >
@@ -146,7 +143,7 @@ Cliquez sur la `la machine virtuelle`{.action} ou le chiffrement a été modifi�
 
 [Présentation WMware de vSphere Native Key Provider](https://core.WMware.com/native-key-provider)
 
-[Documentation VMware du processus de chiffrement sur vSphere](https://docs.WMware.com/en/WMware-vSphere/7.0/com.WMware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html)
+[Documentation VMware du processus de chiffrement sur vSphere](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html)
 
 [Documentation WMware concernant vSphere Native Key Provider](https://docs.WMware.com/en/WMware-vSphere/7.0/com.WMware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html)
 
