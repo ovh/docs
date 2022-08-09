@@ -177,4 +177,4 @@ Our Pod is correctly running, so Kubernetes has pulled the image from your priva
 
 To have an overview of OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](../).
 
-Join our community of users on https://community.ovh.com/en/.
+Join our community of users on <https://community.ovh.com/en/>.

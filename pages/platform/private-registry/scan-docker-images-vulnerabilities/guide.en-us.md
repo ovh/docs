@@ -115,4 +115,4 @@ For that, select the scheduling and click on the `Save`{.action} button.
 
 To have an overview of OVHcloud Managed Private Registry service, you can consult the [OVHcloud Managed Private Registry site](../).
 
-Join our community of users on https://community.ovh.com/en/.
+Join our community of users on <https://community.ovh.com/en/>.
