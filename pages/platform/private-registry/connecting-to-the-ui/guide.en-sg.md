@@ -44,11 +44,11 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
     ![Managing users and projects](images/connecting-to-the-ui-002.png){.thumbnail}
 
-2. On the login page of the ([Harbor](https://goharbor.io/) UI, the open source engine running your OVHcloud Managed Private Registry, enter the credentials (user and password) of your OVHcloud Managed Private Registry:
+2. On the login page of the [Harbor](https://goharbor.io/) UI, the open source engine running your OVHcloud Managed Private Registry, enter the credentials (user and password) of your OVHcloud Managed Private Registry:
 
     ![Managing users and projects](images/connecting-to-the-ui-003.png){.thumbnail}
 
-Now you can use Harbor UI to manage your private registry
+Now you can use the Harbor UI to manage your private registry
 
 ![Managing users and projects](images/connecting-to-the-ui-004.png){.thumbnail}
 
