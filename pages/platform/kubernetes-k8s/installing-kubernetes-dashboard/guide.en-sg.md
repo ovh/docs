@@ -44,7 +44,7 @@ This tutorial assumes that you already have a working OVHcloud Managed Kubernete
 
 ## Deploy the Dashboard in your cluster
 
-According to which version of Kubernetes you are running, you have to choose the right Dashboard version to deploy in order to avoid incompatibilities.
+Depending on the version of Kubernetes you are running, you have to choose the right Dashboard version to deploy in order to avoid incompatibilities.
 
 ### For Kubernetes 1.15, choose version [v2.0.0-beta4](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-beta4)
 
@@ -195,7 +195,7 @@ Starting to serve on 127.0.0.1:8001
 </code></pre>
 
 Next, access the Dashboard at:  
-http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+<http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/>
 
 In the log-in page, select authentication by token, and use the bearer token you recovered in the previous step.
 
