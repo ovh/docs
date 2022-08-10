@@ -141,11 +141,11 @@ Cliquez sur la `machine virtuelle`{.action} ou le chiffrement a été modifié a
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Présentation WMware de vSphere Native Key Provider](https://core.WMware.com/native-key-provider)
+[Présentation WMware de vSphere Native Key Provider](https://core.vmware.com/native-key-provider)
 
-[Documentation VMware du processus de chiffrement sur vSphere](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html)
+[Documentation VMware du processus de chiffrement sur vSphere](https://docs.vmware.com/en/vmware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html)
 
-[Documentation WMware concernant vSphere Native Key Provider](https://docs.WMware.com/en/WMware-vSphere/7.0/com.WMware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html)
+[Documentation WMware concernant vSphere Native Key Provider](https://docs.WMware.com/en/vmware-vSphere/7.0/com.WMware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
 
