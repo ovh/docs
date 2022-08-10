@@ -35,7 +35,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 
 Il est possible d'exporter la clé **vSphere Native Key provider** vers un autre cluster dans le cas d'un plan de reprise d'activité.
 
-Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génére une clé **DEK** stockée en mémoire, cette clé servira à effectuer le chiffrement de la machine virtuelle et de sa données. Ensuite la clé **DEK** sera à son tour chiffrée à l'aide de **vSphere Native Key provider** et stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **WMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
+Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génére une clé **DEK** stockée en mémoire, cette clé servira à effectuer le chiffrement de la machine virtuelle et de sa donnée. Ensuite la clé **DEK** sera à son tour chiffrée à l'aide de **vSphere Native Key provider** et stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **WMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
@@ -143,9 +143,9 @@ Cliquez sur la `machine virtuelle`{.action} ou le chiffrement a été modifié a
 
 [Présentation WMware de vSphere Native Key Provider](https://core.vmware.com/native-key-provider)
 
-[Documentation VMware du processus de chiffrement sur vSphere](https://docs.vmware.com/en/vmware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html)
+[Documentation VMware du processus de chiffrement sur vSphere](https://docs.vmware.com/en/vmware-vsphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html)
 
-[Documentation WMware concernant vSphere Native Key Provider](https://docs.WMware.com/en/vmware-vSphere/7.0/com.WMware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html)
+[Documentation WMware concernant vSphere Native Key Provider](https://docs.vmware.com/en/vmware-vsphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
 
