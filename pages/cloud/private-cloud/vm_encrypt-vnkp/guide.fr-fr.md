@@ -10,8 +10,8 @@ order: 07
 
 ## Objectif
 
-Ce guide a pour objectif d'expliquer les détails de la mise en œuvre du chiffrement de machine virtuelles dans l'offre **Private Cloud** **OVHcloud** au travers de vSphere Native Key Provider le fournisseur de clés interne disponible depuis la version 7.0 update 2.
 
+Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSphere Native Key Provider** pour ensuite effectuer un chiffrement d'une machine virtualle dans l'offre **Private Cloud** **OVHcloud**
 
 **Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles à l'aide de vSphere Native Key Provider.**
 
@@ -31,11 +31,11 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre du chiffr
 
 ## Présentation
 
-**vSphere Native Key provider** permet de chiffrer les machines virtuelles sans avoir besoin d'un serveur **KMS** (*Key Management Server*) externe.
+**vSphere Native Key provider** permet de chiffrer les machines virtuelles ou d'utiliser des périphérique **TPM 2.0** sans avoir besoin d'un serveur **KMS** (*Key Management Server*) externe.
 
 Il est possible d'exporter la clé **vSphere Native Key provider** vers un autre cluster dans le cas d'un plan de reprise d'activité.
 
-Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génére une clé **DEK** stocké en mémoire, cette clé servira à effectuer le chiffrement de la machine virtuelle et de sa données. Ensuite la clé **DEK** sera à son tour chiffrée à l'aide de **vSphere Native Key provider** et stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **WMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
+Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génére une clé **DEK** stockée en mémoire, cette clé servira à effectuer le chiffrement de la machine virtuelle et de sa données. Ensuite la clé **DEK** sera à son tour chiffrée à l'aide de **vSphere Native Key provider** et stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **WMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
@@ -49,7 +49,7 @@ Avant de pouvoir utiliser les fonctionnalités de chiffrement il est necessaire 
 
 ### Création d'une clé **vSphere Native Key Provider**
 
-Nous allons créer la clé de chiffrement **vSphere Native Key Provider** . Cette clé pourra être utilisé pour chiffrer les clés **DEK** lors du chiffrement d'une machine virtuelle ou pour permettre l'ajout sur une machine virtuelle d'un périphérique virtuel **TPM 2.0**.
+Nous allons créer la clé de chiffrement **vSphere Native Key Provider**. Cette clé pourra être utilisé pour chiffrer les clés **DEK** lors du chiffrement d'une machine virtuelle ou pour permettre l'ajout sur une machine virtuelle d'un périphérique virtuel **TPM 2.0**.
 
 Connectez-vous à l'interface **vSphere** à l'aide de ce guide [Se connecter à l'interface vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
 
@@ -77,7 +77,7 @@ Saisissez `le mot de passe` et `confirmez-le`, ensuite cochez la case `J'ai enre
 
 ![01 Create KEY 06](images/01-create-key06.png){.thumbnail}
 
-Il est possible maintenant d'utiliser la clé pour chiffrer des machines virtuelles ou ajouter un périphérique **TPM 2.0** à une machine virtuelle.
+Il est possible maintenant d'utiliser la clé pour chiffrer des machines virtuelles ou d'ajouter un périphérique **TPM 2.0** à une machine virtuelle.
 
 ![01 Create KEY 07](images/01-create-key07.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Choisissez dans Stratégies de stockage de VM `VM Encryption Policy`{.action} et
 
 ![02 encrypt VM 02](images/02-encrypt-vm02.png){.thumbnail}
 
-Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.action} et vous verrez apparaitre un `cadenas` suivi du texte `Chiffré avec un fournisseur de clés natif` qui indique que la machine virtuelle est chiffrée. 
+Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.action}. Vous verrez apparaitre un `cadenas` suivi du texte `Chiffré avec un fournisseur de clés natif` qui indique que la machine virtuelle est chiffrée. 
 
 ![02 encrypt VM 03](images/02-encrypt-vm03.png){.thumbnail} 
 
@@ -135,7 +135,7 @@ Le rechiffrement s'effectue en quelques millisecondes car ce n'est que la clé *
 
 ![03 migrate-from-kms-to-vnkp 06](images/03-migrate-from-kms-to-vnkp06.png){.thumbnail}
 
-Cliquez sur la `machine virtuelle`{.action} ou le chiffrement a été modifié allez dans l'onglet `Résumé`{.action} vous pouvez constater que le chiffrement utilise un fournisseur de clés natif à coté du  `cadenas`.
+Cliquez sur la `machine virtuelle`{.action} ou le chiffrement a été modifié allez dans l'onglet `Résumé`{.action} vous pouvez constater que le chiffrement utilise un fournisseur de clés natif à coté du `cadenas`.
 
 ![03 migrate-from-kms-to-vnkp 07](images/03-migrate-from-kms-to-vnkp07.png){.thumbnail}
 
