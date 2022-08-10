@@ -33,7 +33,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 
 **vSphere Native Key provider** permet de chiffrer les machines virtuelles ou d'utiliser des périphérique **TPM 2.0** sans avoir besoin d'un serveur **KMS** (*Key Management Server*) externe.
 
-Il est possible d'exporter la clé **vSphere Native Key provider** vers un autre cluster dans le cas d'un plan de reprise d'activité.
+Il est possible d'exporter la clé **vSphere Native Key provider** et de la réimporter sur un autre cluster.
 
 Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génére une clé **DEK** stockée en mémoire, cette clé servira à effectuer le chiffrement de la machine virtuelle et de sa donnée. Ensuite la clé **DEK** sera à son tour chiffrée à l'aide de **vSphere Native Key provider** et stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **WMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
