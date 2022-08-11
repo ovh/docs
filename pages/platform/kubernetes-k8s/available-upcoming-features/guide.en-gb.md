@@ -18,7 +18,7 @@ We list here the most frequently requested OVHcloud Managed Kubernetes features 
 - **RBAC and APIserver IP restrictions**: Use the standard [RBAC authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external} mode to distribute rights within your organization and/or assure compatibility with specific applications. You can additionaly choose to restrict access to your Kubernetes APIserver to a selection of IPv4 ranges.
 - **Pod autoscaling**: Use the [standard horizontal pod autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/){.external} to distribute dynamically your containerized workloads on a given set of worker nodes.
 - **Node pools management**: Easily [resize you cluster through our UI or directly using standard Kubernetes tooling by editing a Nodepool CRD ](../node-pools-crd/) .
-- **Location choice**: We offer Managed Kubernetes service in all OVHcloud Public Cloud regions as of June 2022. OVHcloud customers (excluding customer of OVHcloud US) can use the service in France (GRA and SBG), Canada (BHS), Poland (WAW), UK, Germany and APAC (SYD and SYN). OVHcloud US customers can use the service in 2 US regions.
+- **Location choice**: We offer Managed Kubernetes service in all OVHcloud Public Cloud regions as of June 2022. OVHcloud customers (excluding customers of OVHcloud US) can use the service in France (GRA and SBG), Canada (BHS), Poland (WAW), UK, Germany (DE) and APAC (SYD and SYN). OVHcloud US customers can use the service in 2 US regions.
 
 ### Planned features
 
