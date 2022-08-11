@@ -40,7 +40,7 @@ The purpose of this guide is to explain how to deploy [Airflow](https://airflow.
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
 - An [OVH Managed Kubernetes created](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
 - A [Nginx ingress deployed](https://docs.ovh.com/gb/en/kubernetes/installing-nginx-ingress/) on the cluster;
-- [Helm CLI](https://helm.sh/docs/intro/install/) and [kubectl CLI](https://kubernetes.io/docs/tasks/tools/#kubectl) installed
+- [Helm CLI](https://docs.ovh.com/gb/en/kubernetes/installing-helm/) and [kubectl CLI](https://docs.ovh.com/gb/en/kubernetes/configuring-kubectl/) installed
 
 ## Instructions
 
