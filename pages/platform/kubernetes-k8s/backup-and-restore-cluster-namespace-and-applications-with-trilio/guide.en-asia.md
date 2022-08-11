@@ -27,7 +27,7 @@ section: 'Tutorials'
  }
 </style>
 
-**Last updated June 22<sup>nd</sup>, 2022.**
+**Last updated August 11<sup>th</sup>, 2022.**
 
 ## Introduction <a name="introduction"></a>
 
@@ -199,12 +199,6 @@ csi-cinder-classic          cinder.csi.openstack.org   Delete          Immediate
 csi-cinder-high-speed       cinder.csi.openstack.org   Delete          Immediate           true                   3d
 csi-hostpath-sc (default)   hostpath.csi.k8s.io        Retain          Immediate           false                  2d
 ```
-
-> [!warning]
-> **Disclaimer**
->
-> A current limitation of the managed Cinder CSI with OVHcloud Managed Kubernetes Service does not allow to snapshot attached persistent volumes.
-> This limitation will be removed following a CSI upgrade planned for all clusters early May 2022.
 
 Users should run a preflight check to make sure all the prerequisites for the TVK are fulfilled to proceed safely with installation. Follow the [TVK Preflight Checks](https://docs.trilio.io/kubernetes/support/support-and-issue-filing/tvk-preflight-checks) page to install and run preflight through krew plugin.
 
