@@ -25,7 +25,7 @@ Si su VPS no responde, siempre debería poder acceder a él desde el área de cl
 > [!warning]
 > OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
 >
->Si necesita ayuda para realizar estas acciones, póngase en contacto con un proveedor de servicios especializado o intercambie información con nuestra comunidad de usuarios en <https://community.ovh.com/>. OVHcloud no podrá ofrecerle soporte técnico.
+>Si necesita ayuda para realizar estas acciones, póngase en contacto con un proveedor de servicios especializado o intercambie información con nuestra comunidad de usuarios en <https://community.ovh.com/en/>. OVHcloud no podrá ofrecerle soporte técnico.
 >
 
 ## Requisitos

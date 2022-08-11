@@ -94,4 +94,4 @@ user2@server:~$
 
 [Modifica la chiave SSH in caso di perdita](https://docs.ovh.com/it/public-cloud/sostituisci_la_tua_chiave_ssh_in_caso_di_perdita/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -8,7 +8,7 @@ order: 1
 
 **Last updated 1<sup>st</sup> July, 2019.**
 
-Follow this quickstart guide to deploy a containerised *Hello World* application on your OVHcloud Managed Kubernetes Service cluster, using the OVH API.
+Follow this quickstart guide to deploy a containerised *Hello World* application on your OVHcloud Managed Kubernetes Service cluster, using the OVHcloud API.
 
 In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Cloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), please refer to the relevant documentation:
 
@@ -20,7 +20,7 @@ In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.c
 * You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/){.external} for this tool on Kubernetes' official site.
 
 > [!warning]
-> This guide assumes you are familiar with the [OVH API](https://api.ovh.com/). If you have never used it, you can find the basics here: [First steps with the OVH API](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/).
+> This guide assumes you are familiar with the [OVHcloud API](https://api.ovh.com/). If you have never used it, you can find the basics here: [First Steps with the OVHcloud APIs](https://docs.ovh.com/asia/en/api/first-steps-with-ovh-api/).
 >
 
 ## The API Explorer

@@ -137,7 +137,7 @@ jaeger-operator-67f8dd68c9-5qj26   1/1     Running   0          3m5s
 
 The simplest possible way to create a Jaeger instance is by creating a YAML file that will install the default AllInOne image. This “all-in-one” image includes: agent, collector, query, ingester and Jaeger UI in a single pod, using in-memory storage by default.
 
-For this guide you will deploy Jaeger components through this simple way, which can be uses for development, testing and demo purposes but for [production strategy](https://www.jaegertracing.io/docs/1.32/operator/#deployment-strategies) you can read the official documentation.
+For this guide you will deploy Jaeger components through this simple way, which can be used for development, testing and demo purposes but for [production strategy](https://www.jaegertracing.io/docs/1.32/operator/#deployment-strategies) you can read the official documentation.
 
 Once the `jaeger-operator` pod in the namespace `observability` is ready, create a `jaeger.yaml` file with the following content:
 
@@ -232,7 +232,7 @@ Our `main.go` file contains:
 
 - the import of the OpenTelemetry dependencies,
 - a `tracerProvider` method that initiates a connection to a Jaeger provider 
-- a `main()` method that connects to the Jaeger collector you deployed previously and creates and sends a span each time the `/` HTTP route will be called
+- a `main()` method that connects to the Jaeger collector you previously deployed and creates and sends a span each time the `/` HTTP route will be called
 
 ```go
 package main

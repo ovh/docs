@@ -246,4 +246,4 @@ And in the *Values* section you will find the content from the `values.yaml` fil
 
 To have an overview of OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](../).
 
-Join our community of users on https://community.ovh.com/en/.
+Join our community of users on <https://community.ovh.com/en/>.

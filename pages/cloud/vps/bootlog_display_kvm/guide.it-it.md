@@ -25,7 +25,7 @@ Se il tuo VPS non risponde, accedi al tuo Spazio Cliente OVHcloud tramite il [KV
 > [!warning]
 > OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
 >
->In caso di difficoltà nell'effettuare queste azioni, contatta un fornitore di servizi specializzato e/o contatta la nostra Community di utenti <https://community.ovh.com/>. OVHcloud non potrà fornirti assistenza tecnica al riguardo.
+>In caso di difficoltà nell'effettuare queste azioni, contatta un fornitore di servizi specializzato e/o contatta la nostra Community di utenti <https://community.ovh.com/en/>. OVHcloud non potrà fornirti assistenza tecnica al riguardo.
 >
 
 ## Prerequisiti

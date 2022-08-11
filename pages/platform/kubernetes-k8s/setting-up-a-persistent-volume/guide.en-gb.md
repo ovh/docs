@@ -30,7 +30,7 @@ order: 0
  }
 </style>
 
-In this tutorial we are going to guide you a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
+In this tutorial we are going to guide you with a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
 
 ## Before you begin
 
@@ -49,7 +49,8 @@ As the [official documentation](https://kubernetes.io/docs/concepts/storage/pers
 - A `PersistentVolume` (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes. It is a resource in the cluster just like a node is a cluster resource.  
 - A `PersistentVolumeClaim` (PVC) is a request for storage by a user. It is similar to a pod. Pods consume node resources and PVCs consume PV resources. Pods can request specific levels of resources (CPU and Memory). Claims can request specific size and access modes (e.g., can be mounted once read/write or many times read-only).
 
-Or, if you prefer an analogy, **PVC are to PV like pods are to nodes**.  
+Or, if you prefer an analogy, **PVC are to PV like pods are to nodes**.
+
 PVC consume abstract storage resources (the PVs) as Pods consume node resources.
 
 ## So you want some persistent storage on your cluster
@@ -183,7 +184,7 @@ When you are done with a volume, you can delete the PVC, to liberate the resourc
 
 There are 2 possible reclaim policies:
 
-* `Retain`: When the PVC is deleted, the PV still exists. The volume is considered *released*, but it is not yet available because the previous data remains on the volume. If you want to delete it, you must do manually.
+* `Retain`: When the PVC is deleted, the PV still exists. The volume is considered *released*, but it is not yet available because the previous data remains on the volume. If you want to delete it, you must do it manually.
 
 * `Delete`: when the PVC is deleted, the PV and the associated storage in the external infrastructure (i.e. the Cinder storage in our case) are both deleted.
 

@@ -167,4 +167,4 @@ The BGP Area on the customer side must be different from the OVHcloud side.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.

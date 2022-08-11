@@ -264,4 +264,4 @@ Cerbot rinnova automaticamente i certificati. Non sono necessarie ulteriori fasi
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
