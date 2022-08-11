@@ -33,7 +33,7 @@ order: 01
 
 The purpose of this guide is to explain how to deploy [Airflow](https://airflow.apache.org/) on a OVH Managed Kubernetes cluster.
 
-![image](images/airflow_logo.png){.thumbnail}
+![image](images/airflow-img_article.png){.thumbnail}
 
 ## Requirements
 
