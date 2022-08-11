@@ -62,8 +62,8 @@ L'adresse IP interne de Prism Element est **192.168.0.111**
 Le nom des machines virtuelles nécessaires à l'installation de Tina sont les suivantes :
 
 - **atempo-srv.ad-testing.lan** : Serveur Tina avec l'adresse IP `192.168.0.203`
-- **atempo-ade.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.204`
-- **atempo-adecan.ad-testion.lan** : Serveur de déduplication en mode HSS avec l'adresse IP 192.168.10.204` pour récevoir une réplication de la sauvegarde.
+- **atempo-adefr.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.204`
+- **atempo-adecan.ad-testion.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.10.204` pour récevoir une réplication de la sauvegarde.
 
 #### Création de la machine virtuelle TINA-SRV
 
@@ -86,7 +86,7 @@ Choisissez ces paramètres:
 
 Ensuite nous allons créer deux machines virtuelles du même type une en France et l'autre au Canada en tant que dépot ADE au format HSS avec ces paramètres :
 
-- Nom de la machine virtuelle `atempo-adefr`. et `atempo-adecan`
+- Nom des machines virtuelle `atempo-adefr`. et `atempo-adecan`
 - Un disque de `60Go`.
 - Un deuxième disque de `500Go`
 - 4 `vCPU`
@@ -117,26 +117,31 @@ Positionnez-vous en haut sur l'onglet `IPv4 Settings`{.action}, choisissez la `M
 > [!warning]
 > Pour information les adresses IP sont 
 > 
-> tina-srv : 192.168.0.203
-> tina-adefr : 192.168.0.204
-> tina-adecan : 192.168.10.254
+> tina-srv : 192.168.0.203.
 >
+> tina-adefr : 192.168.0.204.
 >
+> tina-adecan : 192.168.10.254.
+>
+
+
 
 Ensuite cliquez sur `Save`{.action}
 
 ![03 Installing ALMAOS 04](images/03-install-almaos04.png){.thumbnail}
 
-Saisissez le nom d'hôte dans `Host Name`{.action} ensuite cliquez sur `Apply`{.action} et cliquez sur `Done`{.action}
+Cliquez sur l'`interrupteur`{.action} pour activer le réseau, saisissez le nom d'hôte dans `Host Name`{.action} ensuite cliquez sur `Apply`{.action} et cliquez sur `Done`{.action}
 
 -> [!warning]
 > Pour information les nom d'hôtes sont : 
 > 
-> tina-srv.ad-testing.lan pour le serveur tina
-> tina-adefr.ad-testing.lan pour le serveur de déduplication HSS en France
-> tina-adecan.ad-testing.lan pour le serveur dé déduplication HSS au Canada
+> tina-srv.ad-testing.lan pour le serveur tina.
 >
+> tina-adefr.ad-testing.lan pour le serveur de déduplication HSS en France.
 >
+> tina-adecan.ad-testing.lan pour le serveur dé déduplication HSS au Canada.
+>
+
 
 ![03 Installing ALMAOS 05](images/03-install-almaos05.png){.thumbnail}
 
