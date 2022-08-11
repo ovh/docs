@@ -156,7 +156,7 @@ airflow-airflow-ingress   nginx   *       XX.XXX.XX.52   80      3m17s
 </code>
 </pre>
 
-At this stage you can connect to the admin UI (default login and password are `admin`) and test your Airflow installation by entered the url http://xx.xxx.xx.52 in your browser:
+At this stage you can connect to the admin UI (default login and password are `admin`) and test your Airflow installation by entered the url `http://xx.xxx.xx.52` in your browser:
 
 ![image](images/airflow-ui_admin.png){.thumbnail}
 ![image](images/airflow_dashboard.png){.thumbnail}
