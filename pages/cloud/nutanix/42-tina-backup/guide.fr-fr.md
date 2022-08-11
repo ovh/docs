@@ -29,19 +29,17 @@ category_l2: Backups
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central.
 - Avoir souscrit une offre Tina auprès de la société ATEMPO. 
-- Disposer, sur votre cluster Nutanix, de 600 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs.
-- De disposer d'un autre cluster Nutanix de avec 560 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs.
-- De disposer de deux machines virtuelles sous Linux avec l'interface graphique ou de deux machines virtuelles sous Windows sur le premier cluster.
-- De disposer d'une machine virtuelle sous Linux avec l'interface graphique ou d'une machine virtuelle sous Windows sur le le deuxième cluster.
-- d'avoir un serveur DNS interne (Par exemple un active diretory). 
+- Disposer, sur votre cluster Nutanix, de 700 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs.
+- De disposer d'un autre cluster Nutanix de avec 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs.
+- d'avoir un serveur DNS interne (Par exemple un serveur active diretory). 
 
 ## Présentation
 
-Le logiciel **Time Navigator** est un logiciel modulaire composé de divers éléments que l'on peut installer sur diverses machines virtuelles ou physiques, pour fonctionner correctement sur Nutanix il faut installer un agent qui fera la liaison avec le cluster.
+Le logiciel **Tina** est un logiciel modulaire composé de divers éléments que l'on peut installer sur diverses machines virtuelles ou physiques. Il permet la sauvegarde de machines virtuelles sous **Nutanix**.
 
 ## En pratique
 
-Nous allons installer deux machines virtuelles sous AlmaLinux en version 8.6 une distribution Linux proche de RedHat (Dans le cas d'une exploitation en production il est judicieux d'utiliser une Redhat Enterprise Linux Server avec l'achat d'un support logiciel). 
+Nous allons installer trois machines virtuelles sous AlmaLinux en version 8.6 une distribution Linux proche de RedHat (Dans le cas d'une exploitation en production il est judicieux d'utiliser une Redhat Enterprise Linux Server avec l'achat d'un support logiciel). 
 
 Les trois machines virtuelles seront réparties comme ceci:
 
@@ -49,15 +47,13 @@ Deux sur un cluster Nutanix en France pour :
 - Le serveur de sauvegarde avec sa console d'administration
 - Servir de serveur de déduplication avec un paramètrage HSS (Hyper Stream Server) qui est pour l'instant le seul compatible avec Nutanix.
 Un sur le serveur Nutanix au Canada pour :
-- Le serveur de déduplication HSS relié au travers d'un VPN pour recevoir une réplication d'une machine virtuelle.
+- Le serveur de déduplication HSS pour recevoir une réplication des données du serveur HSS en France.
 
 ### Installation
 
-#### Installation de trois machines virtuelles sous Linux
+IL faut installer trois machines virtuelles avec le système d'exploitation ALMALINUX (Distribution proche de Redhat Enterprise Linux Server) en version 8.6.
 
-IL faut installer trois machines virtuelles avec le système d'exploitation ALMALINUX (Distribution proche de Redhat Enterprise Server) en version 8.6.
-
-Vous pouvez télécharger les sources sur ce lien [Sources ALMALINUX](https://mirrors.almalinux.org/isos.html) et vous aider de cette documentation pour ajouter les sources sur vos clusters Nutanix [Importer des images ISO](https://docs.ovh.com/fr/nutanix/image-import/)
+Vous pouvez télécharger les sources sur ce lien [Sources ALMALINUX](https://mirrors.almalinux.org/isos/x86_64/8.6.html) et vous aider de cette documentation pour ajouter les sources sur vos clusters Nutanix [Importer des images ISO](https://docs.ovh.com/fr/nutanix/image-import/)
 
 Nous allons utiliser une serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine ad-testing.lan
 
@@ -68,6 +64,8 @@ Le nom des machines virtuelles nécessaires à l'installation de Tina sont les s
 - **atempo-srv.ad-testing.lan** : Serveur Tina avec l'adresse IP `192.168.0.203`
 - **atempo-ade.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.204`
 - **atempo-adecan.ad-testion.lan** : Serveur de déduplication en mode HSS avec l'adresse IP 192.168.10.204` pour récevoir une réplication de la sauvegarde.
+
+#### Création de la machine virtuelle TINA-SRV
 
 Nous allons créer la machine virtuelle atempo-srv qui est le serveur de sauvegarde tina
 
@@ -84,6 +82,8 @@ Choisissez ces paramètres:
 
 ![01 Create Tina Srv VM 01](images/02-create-tinasrvade01.png){.thumbnail}
 
+#### Création des machines virtuelles TINA ADE pour HSS
+
 Ensuite nous allons créer deux machines virtuelles du même type une en France et l'autre au Canada en tant que dépot ADE au format HSS avec ces paramètres :
 
 - Nom de la machine virtuelle `atempo-adefr`. et `atempo-adecan`
@@ -93,6 +93,8 @@ Ensuite nous allons créer deux machines virtuelles du même type une en France 
 - 8Go de `mémoire vive`
 - Un lecteur CDROM connecté au sources `d'ALMALINUX`.
 - Une carte réseau sur le réseau de `base` qui est le réseau d'administration du cluster Nutanix.
+
+#### Installation d'ALMALINUX sur les trois machines virtuelles créés
 
 Nous allons ensuite installer les trois machines virtuelles en suivant cette procédure 
 
@@ -214,10 +216,6 @@ Cliquez sur `FINISH CONFIGURATION`{.action}
 L'installation est terminée
 
 ![03 Installing ALMAOS 22](images/03-install-almaos22.png){.thumbnail}
-
-
-
-
 
 
 
