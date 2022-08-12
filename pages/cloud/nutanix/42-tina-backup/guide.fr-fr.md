@@ -9,7 +9,7 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 05/08/2022**
+**Dernière mise à jour le 12/08/2022**
 
 ## Objectif
 
@@ -61,9 +61,9 @@ L'adresse IP interne de Prism Element est **192.168.0.111**
 
 Le nom des machines virtuelles nécessaires à l'installation de Tina sont les suivantes :
 
-- **tina-srv.ad-testing.lan** : Serveur Tina avec l'adresse IP `192.168.0.203`
-- **tina-adefr.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.204`
-- **tina-adecan.ad-testion.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.10.204` pour récevoir une réplication de la sauvegarde.
+- **tina-srv.ad-testing.lan** : Serveur Tina avec l'adresse IP `192.168.0.210`
+- **tina-adefr.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.211`
+- **tina-adecan.ad-testion.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.10.211` pour récevoir une réplication de la sauvegarde.
 
 #### Création de la machine virtuelle TINA-SRV
 
@@ -119,11 +119,11 @@ Positionnez-vous en haut sur l'onglet `IPv4 Settings`{.action}, choisissez la `M
 > [!warning]
 > Pour information les adresses IP sur le réseau privé sont : 
 > 
-> - tina-srv : 192.168.0.203.
+> - tina-srv : 192.168.0.210.
 >
-> - tina-adefr : 192.168.0.204.
+> - tina-adefr : 192.168.0.211.
 >
-> - tina-adecan : 192.168.10.254.
+> - tina-adecan : 192.168.10.211.
 >
 
 Ensuite cliquez sur `Save`{.action}
@@ -141,7 +141,6 @@ Cliquez sur l'`interrupteur`{.action} pour activer le réseau, saisissez le nom 
 >
 > tina-adecan.ad-testing.lan pour le serveur dé déduplication HSS au Canada.
 >
-
 
 ![03 Installing ALMAOS 05](images/03-install-almaos05.png){.thumbnail}
 
@@ -224,7 +223,7 @@ L'installation est terminée
 
 #### Personalisation communes des trois machines virtuelles
 
-Nous allons desactiver le pare-feu , IPv6, selinux. Ensuite nous allons installer et configurer **tigervnc** pour la prise de main à distance avec une interface graphique sous Linux
+Nous allons desactiver le pare-feu , IPv6 et selinux. Ensuite nous allons installer et configurer **Tigervnc** pour la prise de main à distance avec une interface graphique sous Linux
 
 Connectez-vous en ssh sur chaque machine virtuelle.
 
@@ -234,13 +233,13 @@ ssh root@nommachinevirtuelle.ad-testing.lan
 
 Désactivez selinux sur la machine virtuelle en modifiant le fichier **/etc/selinux/config** en remplaçant
 
-```bash
+```conf
 SELINUX=enforcing
 ```
 
 par 
 
-```bash
+```conf
 SELINUX=disabled
 ```
 
@@ -252,7 +251,7 @@ systemctl stop firewalld
 systemctl disable firewalld
 ## Desactivation IPv6
 echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf
-echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/systctl.conf
+echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/sysctl.conf
 sysctl -p
 ## Installation tigervnc
 dnf install tigervnc-server
@@ -266,7 +265,7 @@ ln  -s  /lib64/ld-linux-x86-64.so.2   /lib64/ld-lsb-x86-64.so.3
 
 Modifiez le fichier **/etc/tigervnc/vncserver.users**
 
-```bash
+```conf
 ## Ajoutez cette ligne
 :1=root
 ```
@@ -288,7 +287,7 @@ reboot
 
 #### Personalisation des deux machines virtuelles de déduplication
 
-IL faut configurer le disque supplémentaire dans le système d'exploitation linux sur les deux machines virtuelles de déduplication
+IL faut configurer le disque supplémentaire dans le système d'exploitation linux sur les deux machines virtuelles de déduplication.
 
 Executez ces commandes
 
