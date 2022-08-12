@@ -6,7 +6,7 @@ section: Security
 order: 0
 ---
 
-**Last updated 27th May 2022.**
+**Last updated 11th August 2022.**
 
 <style>
  pre {
@@ -148,12 +148,6 @@ go: downloading github.com/dimchansky/utfbom v1.1.1
 
 $ cp ./cmd/cli/kubectl-kyverno/kyverno /usr/local/bin/kyverno
 </code></pre>
-
-> [!warning]
-> The `kyverno` CLI installation using Krew is not working for the moment [for MacBook Air M1 devices](https://github.com/kyverno/kyverno/issues/3020).  
-> The fix is planned for Kyverno v1.6 release.
-
-After the installation, check that the `kyverno` CLI is working:
 
 ```bash
 kyverno version
