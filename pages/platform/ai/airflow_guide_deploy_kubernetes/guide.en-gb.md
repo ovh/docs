@@ -85,7 +85,7 @@ ingress:
     ingressClassName: nginx
 ```
 
-Next, with le `values.yml` previously created in the directory `/data/airflow/yml`, you can use the Airflow Helm chart to deploy Airflow:
+Next, with the `values.yml` previously created in the directory `/data/airflow/yml`, you can use the Airflow Helm chart to deploy Airflow:
 
 ```bash
 helm upgrade --install airflow apache-airflow/airflow --namespace airflow --create-namespace -f /data/airflow/yml/values.yml
