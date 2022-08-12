@@ -55,7 +55,9 @@ IL faut installer trois machines virtuelles avec le système d'exploitation ALMA
 
 Vous pouvez télécharger les sources sur ce lien [Sources ALMALINUX](https://mirrors.almalinux.org/isos/x86_64/8.6.html) et vous aider de cette documentation pour ajouter les sources sur vos clusters Nutanix [Importer des images ISO](https://docs.ovh.com/fr/nutanix/image-import/)
 
-Nous allons utiliser une serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine ad-testing.lan
+Nous allons utiliser une serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine ad-testing.lan, il faut rajouter trois entrée dns avec les noms de machines ainsi que leurs adresses. 
+
+![09 DNS Entry Exemple 01 ](images/00-dnsexemple01.png){.thumbnail}
 
 L'adresse IP interne de Prism Element est **192.168.0.111**
 
@@ -308,7 +310,6 @@ A l'écran apparait ces informations :
 /dev/sdb1: UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" BLOCK_SIZE="4096" TYPE="xfs" PARTLABEL="primary" 
 PARTUUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 ```
-
 Copiez le contenu UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
 Ensuite modifier ce fichier **/etc/fstab**
@@ -317,6 +318,21 @@ Ensuite modifier ce fichier **/etc/fstab**
 # Ajout de cette ligne dans le fichier
 UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     defaults        0 0
 ```
+
+#### Installation du logiciel tina sur tina-srv
+
+A partir d'une machine virtuelle avec une interface graphique soit sous **windows** soit sous **linux** se trouvant sur le réseau privé ou se trouve les machines virtuelles **tina-srv**, **tina-adefr** et **tina-adecan** installez le logiciel [TightVNC](https://www.tightvnc.com/download.php).
+
+Connectez-vous sur le tina-srv avec le logiciel Tightvnc en utitilisant cette adresse `tina-srv:5901`{.action}
+
+
+
+
+
+
+#### Installation du logiciel de déduplication sur tina-adefr et tina-adecan
+
+
 
 ### Configuration d'une sauvegarde
 
