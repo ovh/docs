@@ -61,9 +61,9 @@ L'adresse IP interne de Prism Element est **192.168.0.111**
 
 Le nom des machines virtuelles nécessaires à l'installation de Tina sont les suivantes :
 
-- **atempo-srv.ad-testing.lan** : Serveur Tina avec l'adresse IP `192.168.0.203`
-- **atempo-adefr.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.204`
-- **atempo-adecan.ad-testion.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.10.204` pour récevoir une réplication de la sauvegarde.
+- **tina-srv.ad-testing.lan** : Serveur Tina avec l'adresse IP `192.168.0.203`
+- **tina-adefr.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.204`
+- **tina-adecan.ad-testion.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.10.204` pour récevoir une réplication de la sauvegarde.
 
 #### Création de la machine virtuelle TINA-SRV
 
@@ -80,7 +80,7 @@ Choisissez ces paramètres:
 - Un lecteur CDROM connecté au sources `d'ALMALINUX`.
 - Une carte réseau sur le réseau de `base` qui est le réseau d'administration du cluster Nutanix.
 
-![01 Create Tina Srv VM 01](images/02-create-tinasrvade01.png){.thumbnail}
+![01 Create Tina Srv VM 01](images/02-create-tinasrv01.png){.thumbnail}
 
 #### Création des machines virtuelles TINA ADE pour HSS
 
@@ -94,11 +94,13 @@ Ensuite nous allons créer deux machines virtuelles du même type une en France 
 - Un lecteur CDROM connecté au sources `d'ALMALINUX`.
 - Une carte réseau sur le réseau de `base` qui est le réseau d'administration du cluster Nutanix.
 
+![02 Create Tina Srv ADE VM 01](images/02-create-tinasrvade01.png){.thumbnail}
+
 #### Installation d'ALMALINUX sur les trois machines virtuelles créés
 
-Nous allons ensuite installer les trois machines virtuelles en suivant cette procédure 
+Nous allons ensuite installer les systèmes d'exploitations. 
 
-Démarrez la machine virtuelles et choisissez ces paramètres :
+Démarrez la machine virtuelles et lancez l'installation
 
 Choisissez comme langue `English` et clavier `English (United States` et cliquez sur `Continue`{.action}
 
@@ -115,16 +117,14 @@ Cliquez sur `Configure`{.action}
 Positionnez-vous en haut sur l'onglet `IPv4 Settings`{.action}, choisissez la `Manual` cliquez sur `Add`{.action} , saisissez l'`adresse IP`{.action} , l'`adresse IP du DNS`{.action} ansi que le nom de domaine dans `Search domains`{.action}
 
 > [!warning]
-> Pour information les adresses IP sont 
+> Pour information les adresses IP sur le réseau privé sont : 
 > 
-> tina-srv : 192.168.0.203.
+> - tina-srv : 192.168.0.203.
 >
-> tina-adefr : 192.168.0.204.
+> - tina-adefr : 192.168.0.204.
 >
-> tina-adecan : 192.168.10.254.
+> - tina-adecan : 192.168.10.254.
 >
-
-
 
 Ensuite cliquez sur `Save`{.action}
 
@@ -133,7 +133,7 @@ Ensuite cliquez sur `Save`{.action}
 Cliquez sur l'`interrupteur`{.action} pour activer le réseau, saisissez le nom d'hôte dans `Host Name`{.action} ensuite cliquez sur `Apply`{.action} et cliquez sur `Done`{.action}
 
 -> [!warning]
-> Pour information les nom d'hôtes sont : 
+> A chaque installation choisissez le nom d'hôtes sont : 
 > 
 > tina-srv.ad-testing.lan pour le serveur tina.
 >
@@ -222,8 +222,102 @@ L'installation est terminée
 
 ![03 Installing ALMAOS 22](images/03-install-almaos22.png){.thumbnail}
 
+#### Personalisation communes des trois machines virtuelles
 
+Nous allons desactiver le pare-feu , IPv6, selinux. Ensuite nous allons installer et configurer **tigervnc** pour la prise de main à distance avec une interface graphique sous Linux
 
+Connectez-vous en ssh sur chaque machine virtuelle.
+
+```bash
+ssh root@nommachinevirtuelle.ad-testing.lan
+```
+
+Désactivez selinux sur la machine virtuelle en modifiant le fichier **/etc/selinux/config** en remplaçant
+
+```bash
+SELINUX=enforcing
+```
+
+par 
+
+```bash
+SELINUX=disabled
+```
+
+Ensuite executez ces commandes :
+
+```bash
+## Arrêt et desactivation du parefeu
+systemctl stop firewalld
+systemctl disable firewalld
+## Desactivation IPv6
+echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf
+echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/systctl.conf
+sysctl -p
+## Installation tigervnc
+dnf install tigervnc-server
+## Choix du mot de passe
+vncpasswd
+mot de passe
+confirmation mot de passe
+## création d'un lien sympbolique sur une librairie afin de faire fonctionner le serveur de licences
+ln  -s  /lib64/ld-linux-x86-64.so.2   /lib64/ld-lsb-x86-64.so.3
+```
+
+Modifiez le fichier **/etc/tigervnc/vncserver.users**
+
+```bash
+## Ajoutez cette ligne
+:1=root
+```
+
+Créez le fichier **/root/.vnc/config**
+
+```conf
+session=gnome
+securitytypes=vncauth,tlsvnc
+geometry=1280x1024
+```
+
+Executez ces commandes
+
+```bash
+systemctl enable --now vncserver@:1
+reboot
+```
+
+#### Personalisation des deux machines virtuelles de déduplication
+
+IL faut configurer le disque supplémentaire dans le système d'exploitation linux sur les deux machines virtuelles de déduplication
+
+Executez ces commandes
+
+```bash
+# Création de la partition
+parted -s /dev/sdb --script mklabel gpt mkpart primary xfs 0% 100%
+# Création du système de fichier
+mkfs.xfs /dev/sdb1
+# Création du dossier /data
+mkdir /data
+# Récupération de l'UUID de la partition /dev/sdb1
+blkid /dev/sdb1
+```
+
+A l'écran apparait ces informations :
+
+```conf
+/dev/sdb1: UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" BLOCK_SIZE="4096" TYPE="xfs" PARTLABEL="primary" 
+PARTUUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+```
+
+Copiez le contenu UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+Ensuite modifier ce fichier **/etc/fstab**
+
+```conf
+# Ajout de cette ligne dans le fichier
+UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     defaults        0 0
+```
 
 ### Configuration d'une sauvegarde
 
