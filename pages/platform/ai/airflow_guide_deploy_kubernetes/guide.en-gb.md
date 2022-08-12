@@ -42,6 +42,11 @@ The purpose of this guide is to explain how to deploy [Airflow](https://airflow.
 - A [Nginx ingress deployed](https://docs.ovh.com/gb/en/kubernetes/installing-nginx-ingress/) on the cluster;
 - [Helm CLI](https://docs.ovh.com/gb/en/kubernetes/installing-helm/) and [kubectl CLI](https://docs.ovh.com/gb/en/kubernetes/configuring-kubectl/) installed
 
+> [!primary]
+>
+> All these requirements are mandatory 
+>
+
 ## Instructions
 
 > [!primary]
@@ -49,19 +54,6 @@ The purpose of this guide is to explain how to deploy [Airflow](https://airflow.
 > Airflow needs Kubernetes nodes with at least 16 Go of RAM and 4 CPU.
 >
 
-
-### Create the custom Helm chart configuration file (values.yml)
-
-By default the Airflow Helm chart doesn't install an ingress or a service in load balancer mode.
-You need activate it by configuration, the easiest way is to override the Helm chart configuration creating a `values.yml` file:
-
-```yaml
-ingress:
-  web:
-    enabled: true
-    # nginx is the ingressClass default name setted by the helm chart of the nginx ingress (see https://github.com/kubernetes/ingress-nginx/tree/main/charts/ingress-nginx#values)
-    ingressClassName: nginx
-```
 
 ### Deploy Airflow with the Helm chart
 
@@ -80,10 +72,23 @@ Output should be like this:
 </code>
 </pre>
 
-Next, you can use the Airflow Helm chart to deploy Airflow:
+#### Create the custom Helm chart configuration file (values.yml)
+
+By default the Airflow Helm chart doesn't install an ingress or a service in load balancer mode.
+You need activate it by configuration, the easiest way is to override the Helm chart configuration creating a `values.yml` file and save it (for example in `/data/airflow/yml`):
+
+```yaml
+ingress:
+  web:
+    enabled: true
+    # nginx is the ingressClass default name setted by the helm chart of the nginx ingress (see https://github.com/kubernetes/ingress-nginx/tree/main/charts/ingress-nginx#values)
+    ingressClassName: nginx
+```
+
+Next, with le `values.yml` previously created in the directory `/data/airflow/yml`, you can use the Airflow Helm chart to deploy Airflow:
 
 ```bash
-helm upgrade --install airflow apache-airflow/airflow --namespace airflow --create-namespace -f values.yml
+helm upgrade --install airflow apache-airflow/airflow --namespace airflow --create-namespace -f /data/airflow/yml/values.yml
 ```
 
 > [!primary]
@@ -93,7 +98,7 @@ helm upgrade --install airflow apache-airflow/airflow --namespace airflow --crea
 
 Output should be like this:
 
-<pre class="console"><code>$ helm upgrade --install airflow apache-airflow/airflow --namespace airflow --create-namespace -f values.yml
+<pre class="console"><code>$ helm upgrade --install airflow apache-airflow/airflow --namespace airflow --create-namespace -f /data/airflow/yml/values.yml
 
 Release "airflow" does not exist. Installing it now.
 NAME: airflow
