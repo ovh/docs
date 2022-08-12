@@ -13,7 +13,6 @@ category_l2: Backups
 
 ## Objectif
 
-
 **Apprenez à installer, configurer et utiliser Time Navigator sur un cluster Nutanix avec une réplication du stockage distant**
 
 > [!warning]
@@ -324,10 +323,6 @@ UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     def
 A partir d'une machine virtuelle avec une interface graphique soit sous **windows** soit sous **linux** se trouvant sur le réseau privé ou se trouve les machines virtuelles **tina-srv**, **tina-adefr** et **tina-adecan** installez le logiciel [TightVNC](https://www.tightvnc.com/download.php).
 
 Connectez-vous sur le tina-srv avec le logiciel Tightvnc en utitilisant cette adresse `tina-srv:5901`{.action}
-
-
-
-
 
 
 #### Installation du logiciel de déduplication sur tina-adefr et tina-adecan
