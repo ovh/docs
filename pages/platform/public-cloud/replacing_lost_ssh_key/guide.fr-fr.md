@@ -52,7 +52,7 @@ Pour modifier la clé SSH de votre utilisateur par défaut, il faudra simplement
 /home/admin/.ssh/authorized_keys
 ```
 
-Pour une instance sous Ubuntu 15.10, l'utilisateur par défaut sera  ubuntu , le fichier sera donc dans le dossier suivant :
+Pour une instance sous Ubuntu, l'utilisateur par défaut sera  ubuntu , le fichier sera donc dans le dossier suivant :
 
 ```sh
 /home/ubuntu/.ssh/authorized_keys

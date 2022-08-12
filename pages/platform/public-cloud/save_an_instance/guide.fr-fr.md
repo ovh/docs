@@ -17,7 +17,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 ## Prérequis
 
 - Avoir une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
 
@@ -33,7 +33,7 @@ Renseignez un nom pour la sauvegarde sur la page suivante. Prenez connaissance d
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Une fois la sauvegarde terminée, celle-ci sera disponible dans la section `Instance Backup`{.action} .
+Une fois la sauvegarde terminée, celle-ci sera disponible dans la section `Instance Backup`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 

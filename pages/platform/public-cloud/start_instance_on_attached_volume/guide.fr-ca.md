@@ -56,7 +56,7 @@ nova volume-attach myinstance01 897ec71d-bae2-4394-b8c1-4d8fd373a72
 ## Redemarrage de l'instance
 Pour que l'instance démarre sur le volume additionnel, il faut redémarrer l'instance.
 
-Soit par l'action nova stop, puis nova start, soit par un reboot forcé.
+Soit par l'action `nova stop`, puis `nova start`, soit par un reboot forcé :
 
 
 ```bash
@@ -82,4 +82,8 @@ vdb    252:16   0  15G  0 disk
 └─vdb1 252:17   0  15G  0 part /
 ```
 
-Le point de montage / est bien monté depuis /dev/vdb1.
+Le point de montage **/** est bien monté depuis **/dev/vdb1**.
+
+## Aller plus loin
+
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
