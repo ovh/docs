@@ -100,7 +100,7 @@ Vous pouvez consulter à tout moment la [documentation officielle d'OpenStack](h
 
 Avant toute chose, vous devez créer un vRack.
 
-Ce produit est gratuit et la mise à disposition ne prends que quelques minutes. Cependant, il nécessite la création et la validation d'un bon de commande.
+Ce produit est gratuit et la mise à disposition ne prend que quelques minutes. Cependant, il nécessite la création et la validation d'un bon de commande.
 
 Une fois le vRack actif, vous retrouverez ce service sous l’appellation « pn-xxxxxx ».
 
