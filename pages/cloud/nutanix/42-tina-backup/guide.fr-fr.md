@@ -30,7 +30,7 @@ category_l2: Backups
 - Avoir souscrit une offre Tina auprès de la société ATEMPO. 
 - Disposer, sur votre cluster Nutanix, de 700 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs.
 - De disposer d'un autre cluster Nutanix de avec 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs.
-- d'avoir un serveur DNS interne (Par exemple un serveur active diretory). 
+- d'avoir un serveur DNS interne (Par exemple un serveur active diretory) et de pouvoir le configurer.
 
 ## Présentation
 
@@ -56,7 +56,7 @@ Vous pouvez télécharger les sources sur ce lien [Sources ALMALINUX](https://mi
 
 Nous allons utiliser une serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine ad-testing.lan, il faut rajouter trois entrée dns avec les noms de machines ainsi que leurs adresses. 
 
-![09 DNS Entry Exemple 01 ](images/00-dnsexemple01.png){.thumbnail}
+![00 DNS Entry Example 01 ](images/00-dnsexample01.png){.thumbnail}
 
 L'adresse IP interne de Prism Element est **192.168.0.111**
 
