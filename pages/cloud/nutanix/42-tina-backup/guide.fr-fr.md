@@ -9,11 +9,11 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 12/08/2022**
+**Dernière mise à jour le 16/08/2022**
 
 ## Objectif
 
-**Apprenez à installer, configurer et utiliser Time Navigator sur un cluster Nutanix avec une réplication du stockage distant**
+**Apprenez à installer, configurer et utiliser Time Navigator sur un cluster Nutanix avec une réplication du stockage sur un site distant**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -38,7 +38,7 @@ Le logiciel **Tina** est un logiciel modulaire composé de divers éléments que
 
 ## En pratique
 
-Nous allons installer trois machines virtuelles sous AlmaLinux en version 8.6 une distribution Linux proche de RedHat (Dans le cas d'une exploitation en production il est judicieux d'utiliser une Redhat Enterprise Linux Server avec l'achat d'un support logiciel). 
+Nous allons installer trois machines virtuelles sous AlmaLinux en version 8.6, une distribution Linux proche de RedHat (Dans le cas d'une exploitation en production il est judicieux d'utiliser une Redhat Enterprise Linux Server avec l'achat d'un support logiciel). 
 
 Les trois machines virtuelles seront réparties comme ceci:
 
@@ -224,7 +224,7 @@ L'installation est terminée
 
 #### Personalisation communes des trois machines virtuelles
 
-Nous allons desactiver le pare-feu , IPv6 et selinux. Ensuite nous allons installer et configurer **Tigervnc** pour la prise de main à distance avec une interface graphique sous Linux
+Sur chacunes des machines virtuelles installés nous allons desactiver le pare-feu , IPv6 et selinux. Ensuite nous allons installer et configurer **Tigervnc** pour la prise de main à distance avec une interface graphique sous Linux
 
 Connectez-vous en ssh sur chaque machine virtuelle.
 
@@ -318,14 +318,17 @@ Ensuite modifier ce fichier **/etc/fstab**
 UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     defaults        0 0
 ```
 
+#### Installation du logiciel de déduplication sur tina-adefr et tina-adecan
+
+
+
+
+
 #### Installation du logiciel tina sur tina-srv
 
 A partir d'une machine virtuelle avec une interface graphique soit sous **windows** soit sous **linux** se trouvant sur le réseau privé ou se trouve les machines virtuelles **tina-srv**, **tina-adefr** et **tina-adecan** installez le logiciel [TightVNC](https://www.tightvnc.com/download.php).
 
 Connectez-vous sur le tina-srv avec le logiciel Tightvnc en utitilisant cette adresse `tina-srv:5901`{.action}
-
-
-#### Installation du logiciel de déduplication sur tina-adefr et tina-adecan
 
 
 
