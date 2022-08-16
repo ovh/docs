@@ -59,7 +59,7 @@ Per modificare la chiave SSH del tuo utente predefinito, dovrai semplicemente co
 /home/admin/.ssh/authorized_keys
 ```
 
-Per un'istanza con Ubuntu 15.10, l'utente di default viene pubblicato. Il file sarà quindi nella cartella seguente:
+Per un'istanza con Ubuntu, l'utente di default viene pubblicato. Il file sarà quindi nella cartella seguente:
 
 ```sh
 /home/ubuntu/.ssh/authorized_keys

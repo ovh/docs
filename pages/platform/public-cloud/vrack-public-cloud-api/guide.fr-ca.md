@@ -289,7 +289,7 @@ Vous pouvez remplir les champs comme cela :
 |serviceName|L’identifiant de votre projet|
 |networkId|L’identifiant de votre réseau récupéré lors des commandes précédentes. Ex : pn-xxxxxx_42 pour le vLan 42|
 |dhcp|Case cochée pour activation / décochée pour désactivation du DHCP dans le vLan|
-|end|Dernière adresse du sous réseau ce la région Ex : 192.168.1.50|
+|end|Dernière adresse du sous réseau de la région Ex : 192.168.1.50|
 |network|Bloc IP du sous réseau. Ex : 192.168.1.0/24|
 |region|Exemple : SBG3|
 |start|Première adresse du sous réseau pour cette région Ex : 192.168.1.15|

@@ -22,7 +22,7 @@ Tal pode ser útil nos seguintes casos:
 - Se deseja dispor de um espaço de armazenamento de alta disponibilidade e de alta performance com os seus dados.
 - Se pretender mover os seus dados para outra instância.
 
-**Saiba como criar e configurar um disco adicional numa das suas instâncias a partir da cópia de segurança de um disco**
+**Saiba como criar e configurar um disco adicional numa das suas instâncias a partir da cópia de segurança de um disco.**
 
 ## Requisitos
 

@@ -59,7 +59,7 @@ Para alterar a chave SSH do utilizador predefinida, só precisa de aceder à pas
 /home/admin/.ssh/authorized_keys
 ```
 
-Para uma instância sob Ubuntu 15.10, o utilizador predefinido será ubuntu, o ficheiro estará na seguinte pasta:
+Para uma instância sob Ubuntu, o utilizador predefinido será ubuntu, o ficheiro estará na seguinte pasta:
 
 ```sh
 /home/ubuntu/.ssh/authorized_keys

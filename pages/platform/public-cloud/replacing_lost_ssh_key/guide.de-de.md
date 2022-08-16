@@ -65,7 +65,7 @@ Für den Benutzer “admin” befindet sich die Datei zum Beispiel im Verzeichni
 ```
 
 
-Bei einer Ubuntu 15.10 Instanz ist der Standard-Benutzer “ubuntu”, Sie finden die Datei also im Verzeichnis:
+Bei einer Ubuntu Instanz ist der Standard-Benutzer “ubuntu”, Sie finden die Datei also im Verzeichnis:
 
 
 ```

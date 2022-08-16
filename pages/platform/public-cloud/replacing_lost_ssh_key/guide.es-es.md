@@ -61,7 +61,7 @@ Para modificar la llave SSH del usuario por defecto, acceda a la carpeta persona
 /home/admin/.ssh/authorized_keys
 ```
 
-Para una instancia en Ubuntu 15.10, el usuario por defecto será ubuntu , por lo que el archivo estará en la siguiente carpeta:
+Para una instancia en Ubuntu, el usuario por defecto será ubuntu , por lo que el archivo estará en la siguiente carpeta:
 
 ```sh
 /home/ubuntu/.ssh/authorized_keys

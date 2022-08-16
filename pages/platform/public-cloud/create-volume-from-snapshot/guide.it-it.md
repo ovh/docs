@@ -22,7 +22,7 @@ Ciò può essere utile nei seguenti casi:
 - Per avere uno spazio di storage high availability e performante con i tuoi dati
 - Spostare i dati verso un'altra istanza
 
-**Scopri come creare e configurare un disco aggiuntivo su una delle tue istanze tramite il backup di un disco**
+**Scopri come creare e configurare un disco aggiuntivo su una delle tue istanze tramite il backup di un disco.**
 
 ## Prerequisiti
 
