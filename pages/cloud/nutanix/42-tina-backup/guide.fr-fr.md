@@ -186,7 +186,7 @@ Choisissez ces options :
 - **Full Name** : `admatempo`
 - **User Name** : `admatempo`
 - **Make this user administrator** : `cochez la case`
-- **Require a passwor to use this account** : `cochez la case`
+- **Require a password to use this account** : `cochez la case`
 - **Password** : `Mot de passe de l'utilisateur`
 - **Confirm password** : `Mot de passe de l'utilisateur confirmé`
 
@@ -254,12 +254,14 @@ systemctl disable firewalld
 echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf
 echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/sysctl.conf
 sysctl -p
-## Installation tigervnc
+## Installation de tigervnc
 dnf install tigervnc-server
-## Choix du mot de passe
+## Choix du mot de passe pour vncserver
 vncpasswd
 mot de passe
 confirmation mot de passe
+## répondre non à la création d'un mot de passe pour l'affichage
+n
 ## création d'un lien sympbolique sur une librairie afin de faire fonctionner le serveur de licences
 ln  -s  /lib64/ld-linux-x86-64.so.2   /lib64/ld-lsb-x86-64.so.3
 ```
@@ -373,17 +375,17 @@ L'installation débute.
 
 Cliquez sur `Done`{.action}.
 
-![04 Installing tina ade12](images/04-install-tina-ade10.png){.thumbnail}
+![04 Installing tina ade12](images/04-install-tina-ade12.png){.thumbnail}
 
 ## Configuration des deux serveurs de déduplications 
 
-Maintenant que l'installation est terminée utilisez un navigateur WEB et allez sur l'adresse `https://tina-adexx:8181`. Le configurateur va se se lancer.
+Maintenant que l'installation est terminée utilisez un navigateur WEB et allez sur l'adresse `https://tina-adexx:8181`. Le configurateur va se lancer.
 
-Lors du choix de la `Database` séléctionnez le dossier `/home` et cliquez sur la `flêche`{.action} en bas.
+Lors du choix de la `Database` sélectionnez le dossier `/home` et cliquez sur la `flêche`{.action} en bas.
 
 ![05 Configure tina ade01](images/05-configure-tina-ade01.png){.thumbnail}
 
-Sélectionnez le dossier `/data` pour le `storage` ensuite cliquez sur la `flêche`{.action} en bas.
+Sélectionnez le dossier `/data` pour le `storage` ensuite cliquez sur la `deuxième flêche`{.action} en bas.
 
 ![05 Configure tina ade02](images/05-configure-tina-ade02.png){.thumbnail}
 
@@ -401,11 +403,11 @@ Ensuite cliquez sur la `deuxième flêche à droite`{.action} en bas.
 
 ![05 Configure tina ade04](images/05-configure-tina-ade04.png){.thumbnail}
 
-Pour la configuration d'`Hyperstream` sélectionnez le dossier `/home` et cliquez sur la `flêche`{.action} en bas.
+Pour la configuration d'`Hyperstream` sélectionnez le dossier `/home` et cliquez sur la `deuxième flêche`{.action} en bas.
 
 ![05 Configure tina ade05](images/05-configure-tina-ade05.png){.thumbnail}
 
-Pour la finition laissez `Yes` à **Receive update notifications**. et cliquez sur le `signe de validation`{.thumbnail} en bas à droite.
+Pour finir l'installation laissez `Yes` à **Receive update notifications**. et cliquez sur le `signe de validation`{.thumbnail} en bas à droite.
 
 ![05 Configure tina ade06](images/05-configure-tina-ade06.png){.thumbnail}
 
@@ -413,7 +415,7 @@ Cliquez sur `OK`{.action} pour redémarrer le programme avec les nouveaux param�
 
 ![05 Configure tina ade07](images/05-configure-tina-ade07.png){.thumbnail}
 
-Maintenant que la configuration est terminée si l'on revient sur l'interface d'administration avec l'adresse `https://tinaadexx:8181` il faut s'authentifier.
+Maintenant que la configuration est terminée revenez sur l'interface d'administration avec l'adresse `https://tinaadexx:8181`. A partir de maintenant il faut s'authentier.
 
 Saisissez le nom d'utilisateur `superadmin` et le mot de passe par défaut `superadmin` et cliquez sur `login`{.action}
 
@@ -479,9 +481,9 @@ Saisissez et confirmez le mot de passe, ensuite cliquez sur le bouton de `valida
 
 #### Mise en place de la réplication entre serveurs de déduplication.
 
-Maintenant que les deux serveurs de déduplication sont installés nous allons configurer la réplication sur le serveur qui qui se trouve en france **tina-adefr**
+Maintenant que les deux serveurs de déduplication sont installés nous allons configurer la réplication sur le serveur qui se trouve en france **tina-adefr**
 
-Cliquez sur l'onglet `Server`{.action}, Choisissez `Replication`{.action} depuis le sous menu `Configuration`
+Cliquez sur l'onglet `Server`{.action}, Choisissez `Replication`{.action} depuis le menu `Configuration`
 
 ![06 Configure replication 01](images/06-configure-replication01.png){.thumbnail}
 
@@ -531,7 +533,7 @@ Cochez la `case`{.action} à coté de **I accept the terms of the License Agreem
 
 ![07 tina server installation 06](images/07-install-tina-server06.png){.thumbnail}
 
-Cochez les cases `Time Navigator`{.action} et `Atempo Licens Manager`{.action}, ensuite cliquez sur `Next`{.action}.
+Cochez les cases `Time Navigator`{.action} et `Atempo License Manager`{.action}, ensuite cliquez sur `Next`{.action}.
 
 ![07 tina server installation 07](images/07-install-tina-server07.png){.thumbnail}
 
@@ -559,7 +561,20 @@ Choisissez `Create a Catalog Now`{.action} et cliquez sur `Next`{.action}.
 
 ![07 tina server installation 13](images/07-install-tina-server13.png){.thumbnail}
 
-Choisissez et confirmer le `mot de passe`{.action} ensuite cliquez sur `Next`{.action}.
+Choisissez ces options :
+
+- **Catalog Name** : `catalog` ;
+- **Administrator User Name** : `admin` ;
+- **Administrator User Password** :  `mot de passe du compte admin`
+- **Confirm Administrator Password** : 'mot de passe du compte admin`
+
+> [!warning]
+>
+> Notez ces informations de connexions, elles vous servirons pour vous authentifier sur le serveur **tina**
+>
+>
+
+Ensuite cliquez sur `Next`{.action}.
 
 ![07 tina server installation 14](images/07-install-tina-server14.png){.thumbnail}
 
@@ -602,8 +617,9 @@ Cliquez sur `Atempo Web Interfaces Administration`{.action}.
 
 Choisir ces options :
 
-- **Username** : admin
-- **Password** : Mot de passe créé lors de l'installation de tina
+- **Username** : `admin`
+- **Password** : `Mot de passe` 
+- **Catalog** : `Nom du catalogue`
 
 Et cliquez sur `Login`{.action}.
 
