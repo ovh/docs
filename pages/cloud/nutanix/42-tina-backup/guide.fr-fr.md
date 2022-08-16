@@ -44,9 +44,9 @@ Les trois machines virtuelles seront réparties comme ceci:
 
 Deux sur un cluster Nutanix en France pour :
 - Le serveur de sauvegarde avec sa console d'administration
-- Servir de serveur de déduplication avec un paramètrage HSS (Hyper Stream Server) qui est pour l'instant le seul compatible avec Nutanix.
+- Le serveur de déduplication avec un paramètrage HSS (Hyper Stream Server) qui est pour l'instant le seul compatible avec Nutanix.
 Un sur le serveur Nutanix au Canada pour :
-- Le serveur de déduplication HSS pour recevoir une réplication des données du serveur HSS en France.
+- Le serveur de déduplication HSS pour recevoir une réplication des données du serveur HSS se trouvant en  France.
 
 ### Installation
 
@@ -81,7 +81,7 @@ Choisissez ces paramètres:
 - Un lecteur CDROM connecté au sources `d'ALMALINUX`.
 - Une carte réseau sur le réseau de `base` qui est le réseau d'administration du cluster Nutanix.
 
-![01 Create Tina Srv VM 01](images/02-create-tinasrv01.png){.thumbnail}
+![01 Create Tina Srv VM 01](images/01-create-tinasrv01.png){.thumbnail}
 
 #### Création des machines virtuelles TINA ADE pour HSS
 
@@ -590,6 +590,28 @@ L'installation se lance.
 Cliquez sur `Done`{.action} pour valider la fin de l'installation.
 
 ![07 tina server installation 21](images/07-install-tina-server21.png){.thumbnail}
+
+
+#### Configuration du serveur tina
+
+Connectez-vous au serveur au travers d'un navigateur WEB sur l'adresse privé **https://tina-srv:22088**
+
+Cliquez sur `Atempo Web Interfaces Administration`{.action}.
+
+![08 tina connection 01](images/08-tina-connection01.png){.thumbnail}
+
+Choisir ces options :
+
+- **Username** : admin
+- **Password** : Mot de passe créé lors de l'installation de tina
+
+Et cliquez sur `Login`{.action}.
+
+![08 tina connection 02](images/08-tina-connection02.png){.thumbnail}
+
+Le tableau de bord apparait.
+
+![08 tina connection 03](images/08-tina-connection03.png){.thumbnail}
 
 
 
