@@ -427,6 +427,32 @@ Cliquez sur l'onglet `Server`{.action}. et choisissez `Tenants`{.action}
 
 ![05 Configure tina ade10](images/05-configure-tina-ade10.png){.thumbnail}
 
+Se positionnez sur le `nom`{.action}  et cliquez sur le bouton `Modify`{.action}.
+
+![05 Configure tina ade11](images/05-configure-tina-ade11.png){.thumbnail}
+
+Cliquez sur le `stylo`{.action} en haut à gauche 
+
+![05 Configure tina ade12](images/05-configure-tina-ade12.png){.thumbnail}
+
+Saisissez le nom du serveur et cliquez sur le bouton de `validation`{.action}.
+
+![05 Configure tina ade13](images/05-configure-tina-ade13.png){.thumbnail}
+
+Cliquez sur la `croix`{.action} pour fermer la fenêtre.
+
+![05 Configure tina ade14](images/05-configure-tina-ade14.png){.thumbnail}
+
+Maintenant nous allons changer le mot de passe superadmin.
+
+Revenez sur l'onglet `Server`{.action}, prenez l'option `User Management` et choisissez `Advanced`{.action}
+
+![05 Configure tina ade15](images/05-configure-tina-ade15.png){.thumbnail}
+
+Cliquez sur le bouton en forme de `stylo`{.action} à coté de **click to modify the password
+
+![05 Configure tina ade16](images/05-configure-tina-ade16.png){.thumbnail}
+
 
 
 
