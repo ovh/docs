@@ -320,7 +320,7 @@ UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     def
 
 #### Installation du logiciel de déduplication sur tina-adefr et tina-adecan.
 
-Le logiciel de déduplication **tina-ade** transforme votre serveur en dépot de stockage pour le serveur tina, nous allons installer deux dépot :
+Le logiciel de déduplication **tina-ade** transforme votre serveur en dépot de stockage pour le serveur tina, nous allons installer deux dépots :
 
 - L'un en France
 - L'autre au Canada pour servir de réplica à celui de France.
@@ -374,6 +374,8 @@ L'installation débute.
 Cliquez sur `Done`{.action}.
 
 ![04 Installing tina ade12](images/04-install-tina-ade10.png){.thumbnail}
+
+## Configuration des deux serveurs de déduplications 
 
 Maintenant que l'installation est terminée utilisez un navigateur WEB et allez sur l'adresse `https://tina-adexx:8181`. Le configurateur va se se lancer.
 
@@ -443,27 +445,155 @@ Cliquez sur la `croix`{.action} pour fermer la fenêtre.
 
 ![05 Configure tina ade14](images/05-configure-tina-ade14.png){.thumbnail}
 
-Maintenant nous allons changer le mot de passe superadmin.
+Maintenant nous allons changer le mot de passe du compte **superadmin**.
 
 Revenez sur l'onglet `Server`{.action}, prenez l'option `User Management` et choisissez `Advanced`{.action}
 
 ![05 Configure tina ade15](images/05-configure-tina-ade15.png){.thumbnail}
 
-Cliquez sur le bouton en forme de `stylo`{.action} à coté de **click to modify the password
+Cliquez sur le bouton en forme de `stylo`{.action} à coté de **click to modify the password**.
 
 ![05 Configure tina ade16](images/05-configure-tina-ade16.png){.thumbnail}
 
+Saisissez et confirmez le mot de passe, ensuite cliquez sur le bouton de `validation`{.action} 
 
+![05 Configure tina ade17](images/05-configure-tina-ade17.png){.thumbnail}
 
+Nous allons modifier le mot de passe du compte **admin**. Ce compte est utilisé sur le serveur **tina**.
+
+Au travers de l'onglet l'onglet `Server`{.action}, prenez l'option `User Management` et choisissez `Users`{.action}.
+
+![05 Configure tina ade18](images/05-configure-tina-ade18.png){.thumbnail}
+
+Sélectionnez l'utilisateur `admin` et cliquez sur `Modify`{.action}.
+
+![05 Configure tina ade19](images/05-configure-tina-ade19.png){.thumbnail}
+
+Cliquez sur `click to modify the passsword`{.action}.
+
+![05 Configure tina ade20](images/05-configure-tina-ade20.png){.thumbnail}
+
+Saisissez et confirmez le mot de passe, ensuite cliquez sur le bouton de `validation`{.action}
+
+![05 Configure tina ade21](images/05-configure-tina-ade21.png){.thumbnail}
 
 #### Mise en place de la réplication entre serveurs de déduplication.
+
+Maintenant que les deux serveurs de déduplication sont installés nous allons configurer la réplication sur le serveur qui qui se trouve en france **tina-adefr**
+
+Cliquez sur l'onglet `Server`{.action}, Choisissez `Replication`{.action} depuis le sous menu `Configuration`
+
+![06 Configure replication 01](images/06-configure-replication01.png){.thumbnail}
+
+Cliquez sur le bouton `Add`{.action}
+
+![06 Configure replication 02](images/06-configure-replication02.png){.thumbnail}
+
+Dans **Host : Port**: , choisissez ces options
+
+- **Host** : `tina-adecan`
+- **Port** : `8181`
+
+Ensuite cliquez sur `Validate the creation`{.action}
+
+![06 Configure replication 03](images/06-configure-replication03.png){.thumbnail}
+
+La réplication est active dès que des données seront stockées sur le serveur de déduplication en france elles seront répliquées au CANADA.
+
+![06 Configure replication 04](images/06-configure-replication04.png){.thumbnail}
 
 
 #### Installation du logiciel tina sur tina-srv
 
 A partir d'une machine virtuelle avec une interface graphique soit sous **windows** soit sous **linux** se trouvant sur le réseau privé ou se trouve les machines virtuelles **tina-srv**, **tina-adefr** et **tina-adecan** installez le logiciel [TightVNC](https://www.tightvnc.com/download.php).
 
-Connectez-vous sur le tina-srv avec le logiciel Tightvnc en utitilisant cette adresse `tina-srv:5901`{.action}
+Connectez-vous sur **tina-srv** avec le logiciel Tightvnc en utilisant cette adresse `tina-srv:5901`{.action}
+
+![07 tina server installation 01](images/07-install-tina-server01.png){.thumbnail}
+
+Saisissez le mot de passe de vnc et cliquez sur `OK`{.action}
+
+![07 tina server installation 02](images/07-install-tina-server02.png){.thumbnail}
+
+Lancer le terminal et executez le programme d'installation `Atempo-tina-4.7.0.6413-Server-Agent-Linux-X64`{.action}
+
+![07 tina server installation 03](images/07-install-tina-server03.png){.thumbnail}
+
+Laissez la langue en `English` et cliquez sur `OK`{.action}.
+
+![07 tina server installation 04](images/07-install-tina-server04.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![07 tina server installation 05](images/07-install-tina-server05.png){.thumbnail}
+
+Cochez la `case`{.action} à coté de **I accept the terms of the License Agreement**, ensuite cliquez sur `Next`{.action}.
+
+![07 tina server installation 06](images/07-install-tina-server06.png){.thumbnail}
+
+Cochez les cases `Time Navigator`{.action} et `Atempo Licens Manager`{.action}, ensuite cliquez sur `Next`{.action}.
+
+![07 tina server installation 07](images/07-install-tina-server07.png){.thumbnail}
+
+cliquez sur `Next`{.action}.
+
+![07 tina server installation 08](images/07-install-tina-server08.png){.thumbnail}
+
+Sélectionnez `I do not have a license file yet`{.action} et cliquez sur `Next`{.action}.
+
+![07 tina server installation 09](images/07-install-tina-server09.png){.thumbnail}
+
+Choisissez l'option `TIme Navigator Server`{.action} et cliquez sur `Next`{.action}.
+
+![07 tina server installation 10](images/07-install-tina-server10.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![07 tina server installation 11](images/07-install-tina-server11.png){.thumbnail}
+
+Prenez `Temporary License`{.action} et cliquez sur `Next`{.action}.
+
+![07 tina server installation 12](images/07-install-tina-server12.png){.thumbnail}
+
+Choisissez `Create a Catalog Now`{.action} et cliquez sur `Next`{.action}.
+
+![07 tina server installation 13](images/07-install-tina-server13.png){.thumbnail}
+
+Choisissez et confirmer le `mot de passe`{.action} ensuite cliquez sur `Next`{.action}.
+
+![07 tina server installation 14](images/07-install-tina-server14.png){.thumbnail}
+
+Séléctionnez l'option `Memory`{.action} ensuite cliquez sur `Next`{.action}.
+
+![07 tina server installation 15](images/07-install-tina-server15.png){.thumbnail}
+
+Gardez l'option de cache à `64MB`{.action} et cliquez sur `Next`{.action}.
+
+![07 tina server installation 16](images/07-install-tina-server16.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![07 tina server installation 17](images/07-install-tina-server17.png){.thumbnail}
+
+Choisissez le `nom du serveur smtp` dans **SMTP Server Name:** et cliquez sur `Next`{.action}.
+
+![07 tina server installation 18](images/07-install-tina-server18.png){.thumbnail}
+
+Cliquez sur `Install`{.action}.
+
+![07 tina server installation 19](images/07-install-tina-server19.png){.thumbnail}
+
+L'installation se lance.
+
+![07 tina server installation 20](images/07-install-tina-server20.png){.thumbnail}
+
+Cliquez sur `Done`{.action} pour valider la fin de l'installation.
+
+![07 tina server installation 21](images/07-install-tina-server21.png){.thumbnail}
+
+
+
+
 
 
 
