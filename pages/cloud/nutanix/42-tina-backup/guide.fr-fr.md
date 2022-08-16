@@ -173,7 +173,7 @@ Cliquez sur `Root Password`{.action}.
 
 ![03 Installing ALMAOS 12](images/03-install-almaos12.png){.thumbnail}
 
-Saisissez et confirmer le `mot de passe` et cliquez sur `Done`{.action} deux fois.
+Saisissez et confirmer le `mot de passe` et cliquez sur `Done`{.action}.
 
 ![03 Installing ALMAOS 13](images/03-install-almaos13.png){.thumbnail}
 
@@ -190,7 +190,7 @@ Choisissez ces options :
 - **Password** : `Mot de passe de l'utilisateur`
 - **Confirm password** : `Mot de passe de l'utilisateur confirmé`
 
-Ensuite cliquez sur `Done`{.action} deux fois.
+Ensuite cliquez sur `Done`{.action}.
 
 ![03 Installing ALMAOS 15](images/03-install-almaos15.png){.thumbnail}
 
@@ -318,10 +318,119 @@ Ensuite modifier ce fichier **/etc/fstab**
 UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     defaults        0 0
 ```
 
-#### Installation du logiciel de déduplication sur tina-adefr et tina-adecan
+#### Installation du logiciel de déduplication sur tina-adefr et tina-adecan.
+
+Le logiciel de déduplication **tina-ade** transforme votre serveur en dépot de stockage pour le serveur tina, nous allons installer deux dépot :
+
+- L'un en France
+- L'autre au Canada pour servir de réplica à celui de France.
+
+Suivez ces instructions sur les machine virtuelles **tina-adefr** et **tina-ade**
+
+Connectez-vous avec un client vnc sur le serveur `tina-adexx:5901`.
+
+![04 Installing tina ade01](images/04-install-tina-ade01.png){.thumbnail}
+
+Saisissez `le mot de passe` et cliquez sur `OK`{.action}.
+
+![04 Installing tina ade02](images/04-install-tina-ade02.png){.thumbnail}
+
+Au travers de la console lancer le programmme d'installation `ATL533-linux-x64.bin`{.action}.
+
+![04 Installing tina ade03](images/04-install-tina-ade03.png){.thumbnail}
+
+Laissez `English` et cliquez sur `OK`{.action}.
+
+![04 Installing tina ade04](images/04-install-tina-ade04.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![04 Installing tina ade05](images/04-install-tina-ade05.png){.thumbnail}
+
+Cochez la case `I accept the terms of the license Agreement`{.action} et cliquez sur `Next`{.action}.
+
+![04 Installing tina ade06](images/04-install-tina-ade06.png){.thumbnail}
+
+Laissez la case  `Atempo Lina`{.action} et cliquez sur `Next`{.action}.
+
+![04 Installing tina ade07](images/04-install-tina-ade07.png){.thumbnail}
+
+Selectionnnez `Do not install Atempo License Manager`{.action} et cliquez sur `Next`{.action}.
+
+![04 Installing tina ade08](images/04-install-tina-ade08.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![04 Installing tina ade09](images/04-install-tina-ade09.png){.thumbnail}
+
+Cliquez sur `Install`{.action}.
+
+![04 Installing tina ade10](images/04-install-tina-ade10.png){.thumbnail}
+
+L'installation débute.
+
+![04 Installing tina ade11](images/04-install-tina-ade11.png){.thumbnail}
+
+Cliquez sur `Done`{.action}.
+
+![04 Installing tina ade12](images/04-install-tina-ade10.png){.thumbnail}
+
+Maintenant que l'installation est terminée utilisez un navigateur WEB et allez sur l'adresse `https://tina-adexx:8181`. Le configurateur va se se lancer.
+
+Lors du choix de la `Database` séléctionnez le dossier `/home` et cliquez sur la `flêche`{.action} en bas.
+
+![05 Configure tina ade01](images/05-configure-tina-ade01.png){.thumbnail}
+
+Sélectionnez le dossier `/data` pour le `storage` ensuite cliquez sur la `flêche`{.action} en bas.
+
+![05 Configure tina ade02](images/05-configure-tina-ade02.png){.thumbnail}
+
+Laissez les options par défaut et cliquez sur la `deuxième flêche à droite`{.action} en bas.
+
+![05 Configure tina ade03](images/05-configure-tina-ade03.png){.thumbnail}
+
+Choisissez ces options :
+
+- **Activate HyperStream** sur `Yes`
+- **Activate Lina** sur `No`
+- **Activate HVDS** sur `No`
+
+Ensuite cliquez sur la `deuxième flêche à droite`{.action} en bas.
+
+![05 Configure tina ade04](images/05-configure-tina-ade04.png){.thumbnail}
+
+Pour la configuration d'`Hyperstream` sélectionnez le dossier `/home` et cliquez sur la `flêche`{.action} en bas.
+
+![05 Configure tina ade05](images/05-configure-tina-ade05.png){.thumbnail}
+
+Pour la finition laissez `Yes` à **Receive update notifications**. et cliquez sur le `signe de validation`{.thumbnail} en bas à droite.
+
+![05 Configure tina ade06](images/05-configure-tina-ade06.png){.thumbnail}
+
+Cliquez sur `OK`{.action} pour redémarrer le programme avec les nouveaux paramètres.
+
+![05 Configure tina ade07](images/05-configure-tina-ade07.png){.thumbnail}
+
+Maintenant que la configuration est terminée si l'on revient sur l'interface d'administration avec l'adresse `https://tinaadexx:8181` il faut s'authentifier.
+
+Saisissez le nom d'utilisateur `superadmin` et le mot de passe par défaut `superadmin` et cliquez sur `login`{.action}
+
+![05 Configure tina ade08](images/05-configure-tina-ade08.png){.thumbnail}
+
+Cochez la case `Do not show again` et cliquez sur `Skip the presentation`{.action}.
+
+![05 Configure tina ade09](images/05-configure-tina-ade09.png){.thumbnail}
+
+Nous allons changer le nom du serveur 
+
+Cliquez sur l'onglet `Server`{.action}. et choisissez `Tenants`{.action}
+
+![05 Configure tina ade10](images/05-configure-tina-ade10.png){.thumbnail}
 
 
 
+
+#### Mise en place de la réplication entre serveurs de déduplication.
 
 
 #### Installation du logiciel tina sur tina-srv
