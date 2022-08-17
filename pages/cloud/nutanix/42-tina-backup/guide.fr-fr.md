@@ -57,14 +57,15 @@ category_l2: Backups
 [Etape 6 Restauration de sauvegardes](#restore)<br />
 
 
-Nous allons installer trois machines virtuelles sous AlmaLinux en version 8.6, cette distribution Linux est proche de RedHat (Dans le cas d'une exploitation en production il sera judicieux d'utiliser une Redhat Enterprise Linux Server avec l'achat d'un support logiciel). 
+Nous allons installer trois machines virtuelles sous AlmaLinux en version 8.6, cette distribution Linux est proche de RedHat (Dans le cas d'une exploitation en production il sera judicieux d'utiliser une **Redhat Enterprise Linux Server** avec le support). 
 
 Les trois machines virtuelles seront réparties comme ceci:
 
 Deux sur un cluster Nutanix en France pour :
 - Le serveur de sauvegarde avec sa console d'administration
 - Le serveur de déduplication avec un paramètrage HSS (Hyper Stream Server) qui est pour l'instant le seul compatible avec Nutanix.
-Un sur le serveur Nutanix au Canada pour :
+
+Une sur le serveur Nutanix au Canada pour :
 - Le serveur de déduplication HSS pour recevoir une réplication des données du serveur HSS se trouvant en  France.
 
 <a name="presentation"></a>
@@ -83,9 +84,9 @@ Nous allons utiliser une serveur DNS interne avec comme adresse **192.168.0.200*
 
 L'adresse IP interne de Prism Element est **192.168.0.111**
 
-Le nom des machines virtuelles nécessaires à l'installation de Tina sont les suivantes :
+Le nom des machines virtuelles nécessaires à l'installation de **Tina** sont les suivantes :
 
-- **tina-srv.ad-testing.lan** : Serveur Tina avec l'adresse IP `192.168.0.210`
+- **tina-srv.ad-testing.lan** : Serveur **Tina** avec l'adresse IP `192.168.0.210`
 - **tina-adefr.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.211`
 - **tina-adecan.ad-testion.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.10.211` pour récevoir une réplication de la sauvegarde.
 
@@ -93,7 +94,7 @@ Le nom des machines virtuelles nécessaires à l'installation de Tina sont les s
 <a name="createvmtina"></a>
 #### **Etape 2.1 Création de la machine virtuelle TINA-SRV**
 
-Nous allons créer la machine virtuelle tina-srv qui est le serveur de sauvegarde tina
+Nous allons créer la machine virtuelle tina-srv qui est le serveur de sauvegarde **Tina**
 
 Aidez-vous de ce guide pour créer une machine virtuelle sous Nutanix [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/)
 
@@ -163,7 +164,7 @@ Cliquez sur l'`interrupteur`{.action} pour activer le réseau, saisissez le nom 
 -> [!warning]
 > Pour chaque installation choisissez le nom d'hôte correspondant : 
 > 
-> tina-srv.ad-testing.lan pour le serveur tina.
+> tina-srv.ad-testing.lan pour le serveur **Tina**.
 >
 > tina-adefr.ad-testing.lan pour le serveur de déduplication HSS en France.
 >
@@ -355,7 +356,7 @@ UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     def
 <a name="dedupinstall"></a>
 #### **Etape 3.1 Installation du logiciel de déduplication sur tina-adefr et tina-adecan**
 
-Le logiciel de déduplication **tina-ade** transforme votre serveur en dépot de stockage pour le serveur tina, nous allons installer deux dépots :
+Le logiciel de déduplication **tina-ade** transforme votre serveur en dépot de stockage pour le serveur **Tina**, nous allons installer deux dépots :
 
 - L'un en France
 - L'autre au Canada pour servir de réplica à celui de France.
@@ -514,7 +515,7 @@ Saisissez et confirmez le mot de passe, ensuite cliquez sur le bouton de `valida
 ![05 Configure tina ade21](images/05-configure-tina-ade21.png){.thumbnail}
 
 <a name="tinainstall"></a>
-#### **Etape 3.3 Installation du logiciel tina sur tina-srv**
+#### **Etape 3.3 Installation du logiciel **Tina** sur tina-srv**
 
 A partir d'une machine virtuelle avec une interface graphique soit sous **windows** soit sous **linux** se trouvant sur le réseau privé ou se trouve les machines virtuelles **tina-srv**, **tina-adefr** et **tina-adecan** installez le logiciel [TightVNC](https://www.tightvnc.com/download.php).
 
@@ -579,7 +580,7 @@ Choisissez ces options :
 
 > [!warning]
 >
-> Notez ces informations de connexions, elles vous servirons pour vous authentifier sur le serveur **tina**
+> Notez ces informations de connexions, elles vous servirons pour vous authentifier sur le serveur **Tina**
 >
 >
 
@@ -643,7 +644,7 @@ La réplication est active dès que des données seront stockées sur le serveur
 ![06 Configure replication 04](images/07-configure-replication04.png){.thumbnail}
 
 <a name="configuretina"></a>
-### Etape 5 Configuration du serveur tina
+### Etape 5 Configuration du serveur **Tina**
 
 Connectez-vous au serveur au travers d'un navigateur WEB sur l'adresse privé **https://tina-srv:22088**
 
@@ -861,7 +862,7 @@ Cochez `Path to Disk Backup Copy`{.action} et cliquez sur `Add variable(s)`{.act
 
 ![14 config-catalog-backup04](images/14-config-catalog-backup04.png){.thumbnail}
 
-Modifiez la variable **Path to Disk Backup Copy** par `un dossier local sur le serveur tina`{.action} ensuite cliquez sur `Save`{.action}
+Modifiez la variable **Path to Disk Backup Copy** par `un dossier local sur le serveur **tina**`{.action} ensuite cliquez sur `Save`{.action}
 
 > [!primary]
 > Le catalogue sera à la fois sauvegardé sur le dépot et aussi en local sur le serveur de sauvegarde
