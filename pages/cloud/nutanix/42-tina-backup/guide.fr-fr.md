@@ -13,24 +13,25 @@ category_l2: Backups
 
 ## Objectif
 
-**Apprenez à installer, configurer et utiliser le logiciel de sauvegarde Tina sur un cluster Nutanix vers un serveur de déduplication HSS et de configurer une réplication du serveur de déduplication**
+**Apprenez à installer, configurer et utiliser le logiciel de sauvegarde **Tina** sur un cluster Nutanix vers un serveur de déduplication HSS et de configurer une réplication du serveur de déduplication**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
-> La licence Time Navigator n'est pas fournie par OVHcloud. Pour plus d'informations, contactez le service commercial Atempo ou d'OVHcloud.
+> La licence **Tina** n'est pas fournie par OVHcloud. Pour plus d'informations, contactez le service commercial **Atempo** ou OVHcloud.
 
 ## Prérequis
 
-- Disposer d'un cluster Nutanix dans votre compte OVHcloud
+- Disposer d'un cluster Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central.
-- Avoir souscrit une offre Tina auprès de la société ATEMPO. 
+- Avoir souscrit une offre Tina auprès de la société **Atempo**. 
 - Disposer, sur votre cluster Nutanix, de 700 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs.
 - De disposer d'un autre cluster distant avec 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs.
 - d'avoir un serveur DNS interne (Par exemple un serveur active diretory) et d'avoir les droits de le modifier.
+- De disposer des sources d'installation des logiciels **Atempo**.
 
 
 ## En pratique
@@ -57,7 +58,13 @@ category_l2: Backups
 [Etape 6 Restauration de sauvegardes](#restore)<br />
 
 
-Nous allons installer trois machines virtuelles sous AlmaLinux en version 8.6, cette distribution Linux est proche de RedHat (Dans le cas d'une exploitation en production il sera judicieux d'utiliser une **Redhat Enterprise Linux Server** avec le support). 
+
+<a name="presentation"></a>
+### Etape 1 Présentation
+
+Le logiciel **Tina** est un logiciel modulaire composé de divers éléments que l'on peut installer sur diverses machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix.
+
+Nous allons installer trois machines virtuelles sous AlmaLinux en version 8.6, cette distribution Linux est proche de RedHat (Dans le cas d'une exploitation en production il serait judicieux d'utiliser une **Redhat Enterprise Linux Server** avec le support). 
 
 Les trois machines virtuelles seront réparties comme ceci:
 
@@ -66,19 +73,15 @@ Deux sur un cluster Nutanix en France pour :
 - Le serveur de déduplication avec un paramètrage HSS (Hyper Stream Server) qui est pour l'instant le seul compatible avec Nutanix.
 
 Une sur le serveur Nutanix au Canada pour :
-- Le serveur de déduplication HSS pour recevoir une réplication des données du serveur HSS se trouvant en  France.
+- Le serveur de déduplication **HSS** servant de réplica pour le serveur de déduplication **HSS** en France
 
-<a name="presentation"></a>
-### Etape 1 Présentation
-
-Le logiciel **Tina** est un logiciel modulaire composé de divers éléments que l'on peut installer sur diverses machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix.
 
 <a name="installation"></a>
 ### Etape 2 Installation et configuration des machines virtuelles
 
 Vous pouvez télécharger les sources d'ALMALINUX sur ce lien [Sources ALMALINUX](https://mirrors.almalinux.org/isos/x86_64/8.6.html) et vous aider de cette documentation pour ajouter les sources sur vos clusters Nutanix [Importer des images ISO](https://docs.ovh.com/fr/nutanix/image-import/)
 
-Nous allons utiliser une serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine ad-testing.lan, il faut rajouter trois entrées dns avec les noms de machines ainsi que leurs adresses. 
+Nous allons utiliser une serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine **ad-testing.lan**, il faut rajouter trois entrées dns avec les noms de machines ainsi que leurs adresses. 
 
 ![00 DNS Entry Example 01 ](images/00-dnsexample01.png){.thumbnail}
 
@@ -112,7 +115,7 @@ Choisissez ces paramètres:
 <a name="createvmdedup"></a>
 #### **Etape 2.2 Création des machines virtuelles pour les serveur de déduplications**
 
-Ensuite nous allons créer deux machines virtuelles du même type une en France et l'autre au Canada en tant que dépot ADE au format HSS avec ces paramètres :
+Ensuite nous allons créer deux machines virtuelles identiques une en France et l'autre au Canada en tant que dépot **ADE HSS** avec ces paramètres :
 
 - Nom des machines virtuelle `tina-adefr`. et `tina-adecan`
 - Un disque de `60Go`.
@@ -127,23 +130,30 @@ Ensuite nous allons créer deux machines virtuelles du même type une en France 
 <a name="almalinuxinstallation"></a>
 #### **Etape 2.3 Installation d'ALMALINUX**
 
-Commençons par installer le système d'exploitation. 
+Cette installation devra se faire 3 fois, pour chaque machine virtuelle créée :
 
-Démarrez la machine virtuelles et lancez l'installation
+En France :
+- tina-srv
+- tina-adefr
 
-Choisissez comme langue `English` et clavier `English (United States` ensuite cliquez sur `Continue`{.action}
+Au Canada :
+- tina-adecan
+
+Démarrez la machine virtuelles et lancez l'installation.
+
+Choisissez comme langue `English` et clavier `English (United States` ensuite cliquez sur `Continue`{.action}.
 
 ![03 Installing ALMAOS 01](images/03-install-almaos01.png){.thumbnail}
 
-Cliquez sur `Network & Host Name`{.action}
+Cliquez sur `Network & Host Name`{.action}.
 
 ![03 Installing ALMAOS 02](images/03-install-almaos02.png){.thumbnail}
 
-Cliquez sur `Configure`{.action}
+Cliquez sur `Configure`{.action}.
 
 ![03 Installing ALMAOS 03](images/03-install-almaos03.png){.thumbnail}
 
-Positionnez-vous en haut sur l'onglet `IPv4 Settings`{.action}, choisissez la `Manual` cliquez sur `Add`{.action} , saisissez l'`adresse IP`{.action}, l'`adresse IP du DNS`{.action} ansi que le nom de domaine dans `Search domains`{.action}
+Positionnez-vous en haut sur l'onglet `IPv4 Settings`{.action}, choisissez la `Manual` cliquez sur `Add`{.action} , saisissez l'`adresse IP`{.action}, l'`adresse IP du DNS`{.action} ansi que le nom de domaine dans `Search domains`{.action}.
 
 > [!warning]
 > Pour information les adresses IP sur le réseau privé sont : 
@@ -152,14 +162,14 @@ Positionnez-vous en haut sur l'onglet `IPv4 Settings`{.action}, choisissez la `M
 >
 > - tina-adefr : 192.168.0.211.
 >
-> - tina-adecan : 192.168.10.211.
+> - tina-adecan : 192.168.10.210.
 >
 
-Ensuite cliquez sur `Save`{.action}
+Ensuite cliquez sur `Save`{.action}.
 
 ![03 Installing ALMAOS 04](images/03-install-almaos04.png){.thumbnail}
 
-Cliquez sur l'`interrupteur`{.action} pour activer le réseau, saisissez le nom d'hôte dans `Host Name`{.action} ensuite cliquez sur `Apply`{.action} et cliquez sur `Done`{.action}
+Cliquez sur l'`interrupteur`{.action} pour activer le réseau, saisissez le nom d'hôte dans `Host Name`{.action} ensuite cliquez sur `Apply`{.action} et cliquez sur `Done`{.action}.
 
 -> [!warning]
 > Pour chaque installation choisissez le nom d'hôte correspondant : 
@@ -177,7 +187,7 @@ Cliquez sur `Installation Destination`{.action}.
 
 ![03 Installing ALMAOS 06](images/03-install-almaos06.png){.thumbnail}
 
-Sélectionnez le disque de `60 Go` et cliquez sur `Done`{.action}.
+Sélectionnez le disque de `60Go` et cliquez sur `Done`{.action}.
 
 ![03 Installing ALMAOS 07](images/03-install-almaos07.png){.thumbnail}
 
@@ -226,7 +236,7 @@ Cliquez sur `Begin Installation`{.action}.
 
 ![03 Installing ALMAOS 16](images/03-install-almaos16.png){.thumbnail}
 
-L'installation démarre
+L'installation débute.
 
 ![03 Installing ALMAOS 17](images/03-install-almaos17.png){.thumbnail}
 
@@ -242,18 +252,18 @@ Cliquez sur `I accept the license agreement`{.action} et cliquez sur `Done`{.act
 
 ![03 Installing ALMAOS 20](images/03-install-almaos20.png){.thumbnail}
 
-Cliquez sur `FINISH CONFIGURATION`{.action}
+Cliquez sur `FINISH CONFIGURATION`{.action}.
 
 ![03 Installing ALMAOS 21](images/03-install-almaos21.png){.thumbnail}
 
-L'installation est terminée
+L'installation est terminée.
 
 ![03 Installing ALMAOS 22](images/03-install-almaos22.png){.thumbnail}
 
 <a name="vmcustomization"></a>
 #### **Etape 2.4 Personalisation des trois machines virtuelles**
 
-Sur chacunes des machines virtuelles installés nous allons desactiver le pare-feu , IPv6 et selinux. Ensuite nous allons installer et configurer **Tigervnc** pour la prise de main à distance avec une interface graphique sous Linux
+Sur chacunes des machines virtuelles installées nous allons désactiver le pare-feu , IPv6 et selinux. Ensuite nous allons installer et configurer **Tigervnc** pour la prise de main à distance avec une interface graphique sous Linux
 
 Connectez-vous en ssh sur chaque machine virtuelle.
 
@@ -261,7 +271,7 @@ Connectez-vous en ssh sur chaque machine virtuelle.
 ssh root@nommachinevirtuelle.ad-testing.lan
 ```
 
-Désactivez selinux sur la machine virtuelle en modifiant le fichier **/etc/selinux/config** en remplaçant
+Pour désactiver semlinux modifiez le fichier **/etc/selinux/config** en remplaçant
 
 ```conf
 SELINUX=enforcing
@@ -295,14 +305,14 @@ n
 ln  -s  /lib64/ld-linux-x86-64.so.2   /lib64/ld-lsb-x86-64.so.3
 ```
 
-Modifiez le fichier **/etc/tigervnc/vncserver.users**
+Modifiez le fichier **/etc/tigervnc/vncserver.users**.
 
 ```conf
 ## Ajoutez cette ligne
 :1=root
 ```
 
-Créez le fichier **/root/.vnc/config**
+Créez le fichier **/root/.vnc/config**.
 
 ```conf
 session=gnome
@@ -310,7 +320,7 @@ securitytypes=vncauth,tlsvnc
 geometry=1280x1024
 ```
 
-Executez ces commandes
+Executez ces commandes :
 
 ```bash
 systemctl enable --now vncserver@:1
@@ -321,7 +331,7 @@ reboot
 
 IL faut configurer le disque supplémentaire dans le système d'exploitation linux sur les deux machines virtuelles de déduplication.
 
-Executez ces commandes
+Executez ces commandes :
 
 ```bash
 # Création de la partition
@@ -350,7 +360,7 @@ UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     def
 ```
 
 <a name="atempoinstall"></a>
-### Etape 3 Installation et configuration des logiciels atempo 
+### Etape 3 Installation et configuration des logiciels **Atempo** 
 
 
 <a name="dedupinstall"></a>
@@ -359,7 +369,7 @@ UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     def
 Le logiciel de déduplication **tina-ade** transforme votre serveur en dépot de stockage pour le serveur **Tina**, nous allons installer deux dépots :
 
 - L'un en France
-- L'autre au Canada pour servir de réplica à celui de France.
+- L'autre au Canada qui servira de réplica pour celui qui se trouve en France.
 
 Suivez ces instructions sur les machine virtuelles **tina-adefr** et **tina-ade**
 
@@ -372,6 +382,8 @@ Saisissez `le mot de passe` et cliquez sur `OK`{.action}.
 ![04 Installing tina ade02](images/04-install-tina-ade02.png){.thumbnail}
 
 Au travers de la console lancer le programmme d'installation `ATL533-linux-x64.bin`{.action}.
+
+
 
 ![04 Installing tina ade03](images/04-install-tina-ade03.png){.thumbnail}
 
@@ -387,7 +399,7 @@ Cochez la case `I accept the terms of the license Agreement`{.action} et cliquez
 
 ![04 Installing tina ade06](images/04-install-tina-ade06.png){.thumbnail}
 
-Laissez la case  `Atempo Lina`{.action} et cliquez sur `Next`{.action}.
+Laissez la case `Atempo Lina`{.action} et cliquez sur `Next`{.action}.
 
 ![04 Installing tina ade07](images/04-install-tina-ade07.png){.thumbnail}
 
@@ -413,6 +425,8 @@ Cliquez sur `Done`{.action}.
 
 <a name="dedupconf"></a>
 #### **Etape 3.2 Configuration des deux serveurs de déduplications** 
+
+Comme pour l'installation du logiciel de dêpot suivez ces instructions sur les machine virtuelles **tina-adefr** et **tina-ade**
 
 Maintenant que l'installation est terminée utilisez un navigateur WEB et allez sur l'adresse `https://tina-adexx:8181`. Le configurateur va se lancer.
 
@@ -442,7 +456,7 @@ Pour la configuration d'`Hyperstream` sélectionnez le dossier `/home` et clique
 
 ![05 Configure tina ade05](images/05-configure-tina-ade05.png){.thumbnail}
 
-Pour finir l'installation laissez `Yes` à **Receive update notifications**. et cliquez sur le `signe de validation`{.thumbnail} en bas à droite.
+Pour finir l'installation laissez `Yes` pour **Receive update notifications** et cliquez sur le `signe de validation`{.thumbnail} en bas à droite.
 
 ![05 Configure tina ade06](images/05-configure-tina-ade06.png){.thumbnail}
 
@@ -450,9 +464,9 @@ Cliquez sur `OK`{.action} pour redémarrer le programme avec les nouveaux param�
 
 ![05 Configure tina ade07](images/05-configure-tina-ade07.png){.thumbnail}
 
-Maintenant que la configuration est terminée revenez sur l'interface d'administration avec l'adresse `https://tinaadexx:8181`. A partir de maintenant il faut s'authentier.
+Maintenant que la configuration est terminée revenez sur l'interface d'administration avec l'adresse `https://tinaadexx:8181`. A partir de maintenant il est necessaire de s'authentifier.
 
-Saisissez le nom d'utilisateur `superadmin` et le mot de passe par défaut `superadmin` et cliquez sur `login`{.action}
+Saisissez le nom d'utilisateur `superadmin` et le mot de passe par défaut `superadmin` ensuite cliquez sur `login`{.action}.
 
 ![05 Configure tina ade08](images/05-configure-tina-ade08.png){.thumbnail}
 
@@ -460,17 +474,17 @@ Cochez la case `Do not show again` et cliquez sur `Skip the presentation`{.actio
 
 ![05 Configure tina ade09](images/05-configure-tina-ade09.png){.thumbnail}
 
-Nous allons changer le nom du serveur 
+Nous allons changer le nom du serveur.
 
-Cliquez sur l'onglet `Server`{.action}. et choisissez `Tenants`{.action}
+Cliquez sur l'onglet `Server`{.action} et choisissez `Tenants`{.action}.
 
 ![05 Configure tina ade10](images/05-configure-tina-ade10.png){.thumbnail}
 
-Se positionnez sur le `nom`{.action}  et cliquez sur le bouton `Modify`{.action}.
+Se positionnez sur le `nom`{.action} et cliquez sur le bouton `Modify`{.action}.
 
 ![05 Configure tina ade11](images/05-configure-tina-ade11.png){.thumbnail}
 
-Cliquez sur le `stylo`{.action} en haut à gauche 
+Cliquez sur le `stylo`{.action} en haut à gauche. 
 
 ![05 Configure tina ade12](images/05-configure-tina-ade12.png){.thumbnail}
 
@@ -492,7 +506,7 @@ Cliquez sur le bouton en forme de `stylo`{.action} à coté de **click to modify
 
 ![05 Configure tina ade16](images/05-configure-tina-ade16.png){.thumbnail}
 
-Saisissez et confirmez le mot de passe, ensuite cliquez sur le bouton de `validation`{.action} 
+Saisissez deux fois le mot de passe pour le confirmer ensuite cliquez sur le bouton `validation`{.action}. 
 
 ![05 Configure tina ade17](images/05-configure-tina-ade17.png){.thumbnail}
 
@@ -510,24 +524,28 @@ Cliquez sur `click to modify the passsword`{.action}.
 
 ![05 Configure tina ade20](images/05-configure-tina-ade20.png){.thumbnail}
 
-Saisissez et confirmez le mot de passe, ensuite cliquez sur le bouton de `validation`{.action}
+Saisissez deux fois le mot de passe , ensuite cliquez sur le bouton `validation`{.action}
 
 ![05 Configure tina ade21](images/05-configure-tina-ade21.png){.thumbnail}
 
 <a name="tinainstall"></a>
 #### **Etape 3.3 Installation du logiciel **Tina** sur tina-srv**
 
-A partir d'une machine virtuelle avec une interface graphique soit sous **windows** soit sous **linux** se trouvant sur le réseau privé ou se trouve les machines virtuelles **tina-srv**, **tina-adefr** et **tina-adecan** installez le logiciel [TightVNC](https://www.tightvnc.com/download.php).
+Connectez-vous sur **tina-srv** avec un client vnc sur cette adresse `tina-srv:5901`{.action}.
 
-Connectez-vous sur **tina-srv** avec le logiciel Tightvnc en utilisant cette adresse `tina-srv:5901`{.action}
+Si vous utilisez Windows vous pouvez installer le logiciel [TightVNC](https://www.tightvnc.com/download.php).
 
 ![07 tina server installation 01](images/06-install-tina-server01.png){.thumbnail}
 
-Saisissez le mot de passe de vnc et cliquez sur `OK`{.action}
+Saisissez le mot de passe de vnc et cliquez sur `OK`{.action}.
 
 ![07 tina server installation 02](images/06-install-tina-server02.png){.thumbnail}
 
 Lancer le terminal et executez le programme d'installation `Atempo-tina-4.7.0.6413-Server-Agent-Linux-X64`{.action}
+
+> [Primary]
+> Le logiciel d'installation doit être fourni par la société Atempo
+>
 
 ![07 tina server installation 03](images/06-install-tina-server03.png){.thumbnail}
 
@@ -539,7 +557,7 @@ Cliquez sur `Next`{.action}.
 
 ![07 tina server installation 05](images/06-install-tina-server05.png){.thumbnail}
 
-Cochez la `case`{.action} à coté de **I accept the terms of the License Agreement**, ensuite cliquez sur `Next`{.action}.
+Cochez sur la `case`{.action} à coté de **I accept the terms of the License Agreement**, ensuite cliquez sur `Next`{.action}.
 
 ![07 tina server installation 06](images/06-install-tina-server06.png){.thumbnail}
 
@@ -576,7 +594,7 @@ Choisissez ces options :
 - **Catalog Name** : `catalog` ;
 - **Administrator User Name** : `admin` ;
 - **Administrator User Password** :  `mot de passe du compte admin`
-- **Confirm Administrator Password** : 'mot de passe du compte admin`
+- **Confirm Administrator Password** : `mot de passe du compte admin`/
 
 > [!warning]
 >
@@ -618,7 +636,7 @@ Cliquez sur `Done`{.action} pour valider la fin de l'installation.
 
 
 <a name="replication"></a>
-### Etape 4 Mise en place de la réplication entre serveurs de déduplication.
+### Etape 4 Mise en place de la réplication entre serveurs de déduplication
 
 Maintenant que les deux serveurs de déduplication sont installés nous allons configurer la réplication sur le serveur qui se trouve en france **tina-adefr**
 
@@ -669,7 +687,7 @@ Le tableau de bord apparait.
 <a name="addrepo"></a>
 #### **Etape 5.1 Ajout de la destination de sauvegarde**
 
-Nous allons configurer le serveur **tina-ade** en tant que dépot de sauvegarde
+Nous allons configurer le serveur **tina-ade** en tant que dépot de sauvegarde.
 
 Cliquez à gauche dans la barre verticale sur `Backup`{.action} ensuite cliquez sur `Add new storage`{.action}.
 
@@ -702,7 +720,6 @@ Ensuite faites défiler la fenêtre avec la `barre de défilement à droite`{.ac
 
 Activez `Define a primary data retention pool`{.action} avec ces paramètres
 
-
 - **Retention** : `Limited`
 - **Data to be kept during** : `1 week(s)`
 - **Storage pool name** : `1w_HSS`
@@ -725,11 +742,11 @@ Restez sur `Backup` à gauche et cliquez sur `Add new agent`{.action}.
 
 ![10 configure nutanix agent 01](images/10-configure-nutanix-agent01.png){.thumbnail}
 
-Selectionnez `Declare a new application`, choisissez dans la liste `Nutanix Virtualisation Agent` ensuite cliquez sur `NEXT`{.action}.
+Sélectionnez `Declare a new application`, choisissez dans la liste `Nutanix Virtualisation Agent` ensuite cliquez sur `NEXT`{.action}.
 
 ![10 configure nutanix agent 02](images/10-configure-nutanix-agent02.png){.thumbnail}
 
-Modifier **Status** en le passant en `Enabled`{.action} ensuite modifier ces paramètres
+Modifier **Status** en `Enabled`{.action} et modifier ces paramètres :
 
 - **Virtualisation server** : `Adresse IP locale de Prism Element`
 - **Virtualization user** : `Utilisateur administrateur de Prism Element`
@@ -740,7 +757,7 @@ Ensuite cliquez sur `FINISH`{.action}.
 
 ![10 configure nutanix agent 03](images/10-configure-nutanix-agent03.png){.thumbnail}
 
-Clique sur `FINISH`{.action}.
+Cliquez sur `FINISH`{.action}.
 
 ![10 configure nutanix agent 04](images/10-configure-nutanix-agent04.png){.thumbnail}
 
@@ -775,17 +792,17 @@ Laissez coché `A` pour la **strategy name**, cochez **Strategie for backup on v
 
 ![12 configure nutanix backup 02](images/12-configurenutanixbackup02.png){.thumbnail}
 
-Decochez `Full backup schedule`{.action} dans **Full backup configuration** ensuite cochez `Incremental backup schedule`{.action} dans **Incremental backup configuration en choisissant** en choissant un `Planning` dans **Select a schedule for incremental backups**.
+Décochez `Full backup schedule`{.action} dans **Full backup configuration** ensuite cochez `Incremental backup schedule`{.action} dans **Incremental backup configuration en choisissant** en choissant un `Planning` dans **Select a schedule for incremental backups**.
 
 ![12 configure nutanix backup 03](images/12-configurenutanixbackup03.png){.thumbnail}
 
 Ensuite faites défiler la `barre de défilement`{.action}.
 
-Choisissez `3` à **Parallelism index** pour pouvoir faire trois sauvegardes en simultané, ensuite cochez la case `Authorize on demand backup`{.action} pour autoriser le lancement manuel de la sauvegarde et cliquez sur `FINISH`{.action}.
+Choisissez `3` à **Parallelism index** pour pouvoir faire trois sauvegardes simultanément, ensuite cochez la case `Authorize on demand backup`{.action} pour autoriser le lancement manuel de la sauvegarde et cliquez sur `FINISH`{.action}.
 
 ![12 configure nutanix backup 04](images/12-configurenutanixbackup04.png){.thumbnail}
 
-Cliquez sur `Configured`{.action} pour voir apparaitre les travaux configurés, Ensuite cliquez sur travail de sauvegarde `Nutanix Cluster`{.action}
+Cliquez sur `Configured`{.action} pour voir apparaitre les travaux configurés, Ensuite cliquez sur le travail de sauvegarde `Nutanix Cluster`{.action}.
 
 ![12 configure nutanix backup 05](images/12-configurenutanixbackup05.png){.thumbnail}
 
@@ -793,7 +810,7 @@ Positionnez-vous sur `Backup selections`{.action} à gauche ensuite cliquez sur 
 
 ![12 configure nutanix backup 06](images/12-configurenutanixbackup06.png){.thumbnail}
 
-Cliquez sur `Browse agent`{.action}
+Cliquez sur `Browse agent`{.action}.
 
 ![12 configure nutanix backup 07](images/12-configurenutanixbackup07.png){.thumbnail}
 
@@ -802,7 +819,7 @@ Saisissez ces informations :
 - **Login** : `Compte root de la machine virtuelle qui execute l'agent`
 - **Password** : `Mot de passe du compte root de la machine virtuelle qui execute l'agent`
 
-Ensuite cliquez sur `Login`{.action}
+Ensuite cliquez sur `Login`{.action}.
 
 ![12 configure nutanix backup 08](images/12-configurenutanixbackup08.png){.thumbnail}
 
@@ -821,7 +838,7 @@ La configuration du travail de sauvegarde est terminée, cliquez sur la `croix`{
 <a name="testbackup"></a>
 #### **Etape 5.5 Test du travail de sauvegarde**
 
-Il est possible de lancer la travail de sauvegarde à la main pour ceci restez sur `Agents`{.action} à droite, cochez le `travail de sauvegarde`{.action} et cliquez sur la flêche d' `execution`{.action} pour lancer un travail de sauvegarde.
+Il est possible de lancer le travail de sauvegarde à la main pour ceci restez sur `Agents`{.action} à droite, cochez le `travail de sauvegarde`{.action} et cliquez sur la flêche `execution`{.action} pour lancer un travail de sauvegarde.
 
 ![13 test backup 01](images/13-test-backup01.png){.thumbnail}
 
@@ -844,45 +861,46 @@ Cliquez à gauche sur `Jobs`{.action} pour voir l'état d'avancement du travail 
 <a name="catalogbackup"></a>
 #### **Etape 5.6 Configuration de la sauvegarde du catalogue**
 
-Un travail de sauvegarde est préconfiguré mais pas activé il sert pour sauvegarder la base de données du serveur de sauvegarde qui se nomme **catalog**. Nous allons le configurer pour faire une sauvegarde tous les jours à 12:00
 
-Cliquez à gauche sur `Agents`{.action}, cliquez sur `Not configured`{.action} ensuite double-cliquez sur `catalog.dat`{.action}
+Pour des raisons de sécurité il est prudent de sauvegarder le catalogue des sauvegardes, Il existe un agent de sauvegarde **catalog.dat* qui n'est pas configuré par défaut. Nous allons le configurer pour faire une sauvegarde tous les jours à midi.
+
+Cliquez à gauche sur `Agents`{.action}, cliquez sur `Not configured`{.action} ensuite cliquez sur `catalog.dat`{.action}.
 
 ![14 config-catalog-backup01](images/14-config-catalog-backup01.png){.thumbnail}
 
-Modifiez **Status** par `Enabled` et faites défiler la `barre de défilement`{.action}
+Modifiez **Status** par `Enabled` et faites défiler la `barre de défilement`{.action}.
 
 ![14 config-catalog-backup02](images/14-config-catalog-backup02.png){.thumbnail}
 
-Modifier l'option **Number of Disk Backup Copies to Keep** à `3` ensuit cliquez sur `Add new variable`{.action}
+Modifier l'option **Number of Disk Backup Copies to Keep** à `3` ensuit cliquez sur `Add new variable`{.action}.
 
 ![14 config-catalog-backup03](images/14-config-catalog-backup03.png){.thumbnail}
 
-Cochez `Path to Disk Backup Copy`{.action} et cliquez sur `Add variable(s)`{.action}
+Cochez `Path to Disk Backup Copy`{.action} et cliquez sur `Add variable(s)`{.action}.
 
 ![14 config-catalog-backup04](images/14-config-catalog-backup04.png){.thumbnail}
 
-Modifiez la variable **Path to Disk Backup Copy** par `un dossier local sur le serveur **tina**`{.action} ensuite cliquez sur `Save`{.action}
+Modifiez la variable **Path to Disk Backup Copy** par `un dossier local sur le serveur **Tina**`{.action} ensuite cliquez sur `Save`{.action}.
 
 > [!primary]
 > Le catalogue sera à la fois sauvegardé sur le dépot et aussi en local sur le serveur de sauvegarde
-> Il est aussi possible de choisir une autre destination.
+> 
 
 ![14 config-catalog-backup05](images/14-config-catalog-backup05.png){.thumbnail}
 
-Cliquez sur `OK`{.action}
+Cliquez sur `OK`{.action}.
 
 ![14 config-catalog-backup06](images/14-config-catalog-backup06.png){.thumbnail}
 
-Cliquez à gauche sur `Stratégies`{.action} et cliquez sur `Add new strategy`{.action}
+Cliquez à gauche sur `Stratégies`{.action} et cliquez sur `Add new strategy`{.action}.
 
 ![14 config-catalog-backup07](images/14-config-catalog-backup07.png){.thumbnail}
 
-Choisissez `A`{.action} comme nom de stratégie prenez `Strategy for backup on virtual tapes using HSS deduplication`{.action} comme type de stratégie ensuite cliquez sur  `NEXT`{.action}
+Choisissez `A`{.action} comme nom de stratégie prenez `Strategy for backup on virtual tapes using HSS deduplication`{.action} comme type de stratégie ensuite cliquez sur  `NEXT`{.action}.
 
 ![14 config-catalog-backup08](images/14-config-catalog-backup08.png){.thumbnail}
 
-Cochez `Full backup schedule`{.action} et cliquez sur `Add new schedule`{.action}
+Cochez `Full backup schedule`{.action} et cliquez sur `Add new schedule`{.action}.
 
 ![14 config-catalog-backup09](images/14-config-catalog-backup09.png){.thumbnail}
 
@@ -891,15 +909,15 @@ Choisissez ces options :
 - **Backup Every** : `1 Day`
 - **Execution time** : `12:00`
 
-Ensuite cliquez sur `Save`{.action}
+Ensuite cliquez sur `Save`{.action}.
 
 ![14 config-catalog-backup10](images/14-config-catalog-backup10.png){.thumbnail}
  
-Cliquez sur `OK`{.action}
+Cliquez sur `OK`{.action}.
 
 ![14 config-catalog-backup11](images/14-config-catalog-backup11.png){.thumbnail}
 
-Faites défiler la fênetre , décochez `Incremental backup schedule`{.action} , cochez `Authorize on demand backup`{.action} ensuite cliquez sur `FINISH`{.action}
+Faites défiler la fenêtre, décochez `Incremental backup schedule`{.action}, cochez `Authorize on demand backup`{.action} ensuite cliquez sur `FINISH`{.action}.
 
 ![14 config-catalog-backup12](images/14-config-catalog-backup12.png){.thumbnail}
 
@@ -911,7 +929,7 @@ Cliquez sur la `croix`{.action} à droite pour fermer.
 
 ![14 config-catalog-backup14](images/14-config-catalog-backup14.png){.thumbnail}
 
-Cliquez sur `Configured`{.action} pour voir le travail de sauvegarde **catalog.cat** Activé et configuré
+Cliquez sur `Configured`{.action} pour voir le travail de sauvegarde **catalog.cat** Activé et configuré.
 
 ![14 config-catalog-backup15](images/14-config-catalog-backup15.png){.thumbnail}
 
