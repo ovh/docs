@@ -13,7 +13,7 @@ category_l2: Backups
 
 ## Objectif
 
-**Apprenez à installer, configurer et utiliser Time Navigator sur un cluster Nutanix avec une réplication du stockage sur un site distant**
+**Apprenez à installer, configurer et utiliser le logiciel de sauvegarde Tina sur un cluster Nutanix vers un serveur de déduplication HSS et de configurer une réplication du serveur de déduplication**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -29,16 +29,16 @@ category_l2: Backups
 - Être connecté sur le cluster via Prism Central.
 - Avoir souscrit une offre Tina auprès de la société ATEMPO. 
 - Disposer, sur votre cluster Nutanix, de 700 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs.
-- De disposer d'un autre cluster Nutanix de avec 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs.
-- d'avoir un serveur DNS interne (Par exemple un serveur active diretory) et de pouvoir le configurer.
+- De disposer d'un autre cluster distant avec 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs.
+- d'avoir un serveur DNS interne (Par exemple un serveur active diretory) et d'avoir les droits de le modifier.
 
 ## Présentation
 
-Le logiciel **Tina** est un logiciel modulaire composé de divers éléments que l'on peut installer sur diverses machines virtuelles ou physiques. Il permet la sauvegarde de machines virtuelles sous **Nutanix**.
+Le logiciel **Tina** est un logiciel modulaire composé de divers éléments que l'on peut installer sur diverses machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix.
 
 ## En pratique
 
-Nous allons installer trois machines virtuelles sous AlmaLinux en version 8.6, une distribution Linux proche de RedHat (Dans le cas d'une exploitation en production il est judicieux d'utiliser une Redhat Enterprise Linux Server avec l'achat d'un support logiciel). 
+Nous allons installer trois machines virtuelles sous AlmaLinux en version 8.6, cette distribution Linux est proche de RedHat (Dans le cas d'une exploitation en production il sera judicieux d'utiliser une Redhat Enterprise Linux Server avec l'achat d'un support logiciel). 
 
 Les trois machines virtuelles seront réparties comme ceci:
 
@@ -50,11 +50,9 @@ Un sur le serveur Nutanix au Canada pour :
 
 ### Installation
 
-IL faut installer trois machines virtuelles avec le système d'exploitation ALMALINUX (Distribution proche de Redhat Enterprise Linux Server) en version 8.6.
+Vous pouvez télécharger les sources d'ALMALINUX sur ce lien [Sources ALMALINUX](https://mirrors.almalinux.org/isos/x86_64/8.6.html) et vous aider de cette documentation pour ajouter les sources sur vos clusters Nutanix [Importer des images ISO](https://docs.ovh.com/fr/nutanix/image-import/)
 
-Vous pouvez télécharger les sources sur ce lien [Sources ALMALINUX](https://mirrors.almalinux.org/isos/x86_64/8.6.html) et vous aider de cette documentation pour ajouter les sources sur vos clusters Nutanix [Importer des images ISO](https://docs.ovh.com/fr/nutanix/image-import/)
-
-Nous allons utiliser une serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine ad-testing.lan, il faut rajouter trois entrée dns avec les noms de machines ainsi que leurs adresses. 
+Nous allons utiliser une serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine ad-testing.lan, il faut rajouter trois entrées dns avec les noms de machines ainsi que leurs adresses. 
 
 ![00 DNS Entry Example 01 ](images/00-dnsexample01.png){.thumbnail}
 
@@ -68,13 +66,13 @@ Le nom des machines virtuelles nécessaires à l'installation de Tina sont les s
 
 #### Création de la machine virtuelle TINA-SRV
 
-Nous allons créer la machine virtuelle atempo-srv qui est le serveur de sauvegarde tina
+Nous allons créer la machine virtuelle tina-srv qui est le serveur de sauvegarde tina
 
 Aidez-vous de ce guide pour créer une machine virtuelle sous Nutanix [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/)
 
 Choisissez ces paramètres:
 
-- Nom de la machine virtuelle `atempo-srv`.
+- Nom de la machine virtuelle `tina-srv`.
 - Un disque de `60Go`.
 - 4 `vCPU`
 - 8Go de `mémoire vive`
@@ -83,11 +81,11 @@ Choisissez ces paramètres:
 
 ![01 Create Tina Srv VM 01](images/01-create-tinasrv01.png){.thumbnail}
 
-#### Création des machines virtuelles TINA ADE pour HSS
+#### Création des machines virtuelles TINA-ADEFR & TINA-ADECAN pour le serveur de déduplication en mode HSS
 
 Ensuite nous allons créer deux machines virtuelles du même type une en France et l'autre au Canada en tant que dépot ADE au format HSS avec ces paramètres :
 
-- Nom des machines virtuelle `atempo-adefr`. et `atempo-adecan`
+- Nom des machines virtuelle `tina-adefr`. et `tina-adecan`
 - Un disque de `60Go`.
 - Un deuxième disque de `500Go`
 - 4 `vCPU`
@@ -99,11 +97,11 @@ Ensuite nous allons créer deux machines virtuelles du même type une en France 
 
 #### Installation d'ALMALINUX sur les trois machines virtuelles créés
 
-Nous allons ensuite installer les systèmes d'exploitations. 
+Commençons par installer le système d'exploitation. 
 
 Démarrez la machine virtuelles et lancez l'installation
 
-Choisissez comme langue `English` et clavier `English (United States` et cliquez sur `Continue`{.action}
+Choisissez comme langue `English` et clavier `English (United States` ensuite cliquez sur `Continue`{.action}
 
 ![03 Installing ALMAOS 01](images/03-install-almaos01.png){.thumbnail}
 
@@ -115,7 +113,7 @@ Cliquez sur `Configure`{.action}
 
 ![03 Installing ALMAOS 03](images/03-install-almaos03.png){.thumbnail}
 
-Positionnez-vous en haut sur l'onglet `IPv4 Settings`{.action}, choisissez la `Manual` cliquez sur `Add`{.action} , saisissez l'`adresse IP`{.action} , l'`adresse IP du DNS`{.action} ansi que le nom de domaine dans `Search domains`{.action}
+Positionnez-vous en haut sur l'onglet `IPv4 Settings`{.action}, choisissez la `Manual` cliquez sur `Add`{.action} , saisissez l'`adresse IP`{.action}, l'`adresse IP du DNS`{.action} ansi que le nom de domaine dans `Search domains`{.action}
 
 > [!warning]
 > Pour information les adresses IP sur le réseau privé sont : 
@@ -134,7 +132,7 @@ Ensuite cliquez sur `Save`{.action}
 Cliquez sur l'`interrupteur`{.action} pour activer le réseau, saisissez le nom d'hôte dans `Host Name`{.action} ensuite cliquez sur `Apply`{.action} et cliquez sur `Done`{.action}
 
 -> [!warning]
-> A chaque installation choisissez le nom d'hôtes sont : 
+> Pour chaque installation choisissez le nom d'hôte correspondant : 
 > 
 > tina-srv.ad-testing.lan pour le serveur tina.
 >
@@ -377,7 +375,7 @@ Cliquez sur `Done`{.action}.
 
 ![04 Installing tina ade12](images/04-install-tina-ade12.png){.thumbnail}
 
-## Configuration des deux serveurs de déduplications 
+#### Configuration des deux serveurs de déduplications 
 
 Maintenant que l'installation est terminée utilisez un navigateur WEB et allez sur l'adresse `https://tina-adexx:8181`. Le configurateur va se lancer.
 
@@ -478,32 +476,6 @@ Cliquez sur `click to modify the passsword`{.action}.
 Saisissez et confirmez le mot de passe, ensuite cliquez sur le bouton de `validation`{.action}
 
 ![05 Configure tina ade21](images/05-configure-tina-ade21.png){.thumbnail}
-
-#### Mise en place de la réplication entre serveurs de déduplication.
-
-Maintenant que les deux serveurs de déduplication sont installés nous allons configurer la réplication sur le serveur qui se trouve en france **tina-adefr**
-
-Cliquez sur l'onglet `Server`{.action}, Choisissez `Replication`{.action} depuis le menu `Configuration`
-
-![06 Configure replication 01](images/06-configure-replication01.png){.thumbnail}
-
-Cliquez sur le bouton `Add`{.action}
-
-![06 Configure replication 02](images/06-configure-replication02.png){.thumbnail}
-
-Dans **Host : Port**: , choisissez ces options
-
-- **Host** : `tina-adecan`
-- **Port** : `8181`
-
-Ensuite cliquez sur `Validate the creation`{.action}
-
-![06 Configure replication 03](images/06-configure-replication03.png){.thumbnail}
-
-La réplication est active dès que des données seront stockées sur le serveur de déduplication en france elles seront répliquées au CANADA.
-
-![06 Configure replication 04](images/06-configure-replication04.png){.thumbnail}
-
 
 #### Installation du logiciel tina sur tina-srv
 
@@ -607,7 +579,33 @@ Cliquez sur `Done`{.action} pour valider la fin de l'installation.
 ![07 tina server installation 21](images/07-install-tina-server21.png){.thumbnail}
 
 
-#### Configuration du serveur tina
+
+### Mise en place de la réplication entre serveurs de déduplication.
+
+Maintenant que les deux serveurs de déduplication sont installés nous allons configurer la réplication sur le serveur qui se trouve en france **tina-adefr**
+
+Cliquez sur l'onglet `Server`{.action}, Choisissez `Replication`{.action} depuis le menu `Configuration`
+
+![06 Configure replication 01](images/06-configure-replication01.png){.thumbnail}
+
+Cliquez sur le bouton `Add`{.action}
+
+![06 Configure replication 02](images/06-configure-replication02.png){.thumbnail}
+
+Dans **Host : Port**: , choisissez ces options
+
+- **Host** : `tina-adecan`
+- **Port** : `8181`
+
+Ensuite cliquez sur `Validate the creation`{.action}
+
+![06 Configure replication 03](images/06-configure-replication03.png){.thumbnail}
+
+La réplication est active dès que des données seront stockées sur le serveur de déduplication en france elles seront répliquées au CANADA.
+
+![06 Configure replication 04](images/06-configure-replication04.png){.thumbnail}
+
+### Configuration du serveur tina
 
 Connectez-vous au serveur au travers d'un navigateur WEB sur l'adresse privé **https://tina-srv:22088**
 
@@ -629,7 +627,7 @@ Le tableau de bord apparait.
 
 ![08 tina connection 03](images/08-tina-connection03.png){.thumbnail}
 
-##### Ajout de la destination de sauvegarde
+#### Ajout de la destination de sauvegarde
 
 Nous allons configurer le serveur **tina-ade** en tant que dépot de sauvegarde
 
@@ -678,7 +676,7 @@ cliquez sur `OK`{.action}
 
 ![09 configure repository 06](images/09-configure-repository06.png){.thumbnail}
 
-##### Ajout du cluster Nutanix en tant que source de sauvegarde
+#### Ajout du cluster Nutanix en tant que source de sauvegarde
 
 Pour pouvoir sauvegarder le serveur Nutanix il faut configurer un agent qui pourra se connecter au cluster Nutanix
 
@@ -705,7 +703,7 @@ Clique sur `FINISH`{.action}.
 
 ![10 configure nutanix agent 04](images/10-configure-nutanix-agent04.png){.thumbnail}
 
-##### Création d'un nouveau planning de sauvegarde
+#### Création d'un nouveau planning de sauvegarde
 
 Restez à gauche dans `Backup` et cliquez sur `Backup schedules`{.action}.
 
@@ -724,7 +722,7 @@ Et cliquez sur `Save`{.action}.
 
 ![11 configure schedule 03](images/11-configure-schedule03.png){.thumbnail}
 
-##### Configuration de l'agent pour automatiser la sauvegarde
+#### Configuration de l'agent pour automatiser la sauvegarde
 
 Cliquez à gauche sur `Agents`, cliquez sur `Not configured`{.action} pour voir les agents non configurés, ensuite cliquez sur le `signe +`{.action} à gauche à coté de l'agent pour Nutanix.
 
@@ -777,7 +775,7 @@ La configuration du travail de sauvegarde est terminée, cliquez sur la `croix`{
 
 ![12 configure nutanix backup 11](images/12-configurenutanixbackup11.png){.thumbnail}
 
-##### Test du travail de sauvegarde
+#### Test du travail de sauvegarde
 
 Il est possible de lancer la travail de sauvegarde à la main pour ceci restez sur `Agents`{.action} à droite, cochez le `travail de sauvegarde`{.action} et cliquez sur la flêche d' `execution`{.action} pour lancer un travail de sauvegarde.
 
@@ -799,7 +797,7 @@ Cliquez à gauche sur `Jobs`{.action} pour voir l'état d'avancement du travail 
 
 ![13 test backup 03](images/13-test-backup04.png){.thumbnail}
 
-##### Configuration de la sauvegarde du catalogue
+#### Configuration de la sauvegarde du catalogue
 
 Un travail de sauvegarde est préconfiguré mais pas activé il sert pour sauvegarder la base de données du serveur de sauvegarde qui se nomme **catalog**. Nous allons le configurer pour faire une sauvegarde tous les jours à 12:00
 
@@ -873,9 +871,10 @@ Cliquez sur `Configured`{.action} pour voir le travail de sauvegarde **catalog.c
 ![14 config-catalog-backup15](images/14-config-catalog-backup15.png){.thumbnail}
 
 
-#### Restauration d'une sauvegarde
+### Restauration d'une sauvegarde
 
-Non encore opérationnel
+Non encore documenté
+
 
 ## Aller plus loin <a name="gofurther"></a>
 
