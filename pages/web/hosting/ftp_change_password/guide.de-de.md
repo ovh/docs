@@ -72,6 +72,10 @@ Das Hochladen Ihrer Dateien in den Hosting-Bereich kann auf mehrere Arten erfolg
 
 - **FTP Explorer**: Dieses Tool ist über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erreichbar. Klicken Sie im Tab `FTP-SSH`{.action} auf den Button `FTP Explorer`{.action}.
 
+> [!warning]
+>
+> FTP Explorer ist für das Cloud Web Angebot nicht verfügbar. Es muss eine der beiden folgenden Methoden angewandt werden.
+
 - **Ein FTP Programm**: Installieren Sie einen FTP-kompatiblen Client auf Ihrem Computer (z.B. [FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)).
 
 - **SSH-Zugang** (nur bei den Hostings Pro und Performance): Verwenden Sie dieses Verbindungsprotokoll mithilfe der Anleitung "[SSH-Zugang Ihres Webhostings verwenden](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/)".

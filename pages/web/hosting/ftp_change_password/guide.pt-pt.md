@@ -73,6 +73,10 @@ A ligação ao espaço de alojamento dos seus ficheiros pode ser realizada de v�
 
 - **FTP Explorer**: este programa está disponível na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para o utilizar, no separador `FTP-SSH`{.action}, clique no botão `Explorador FTP`{.action};
 
+> [!warning]
+>
+> FTP Explorer não está disponível para a oferta Cloud Web. Será necessário utilizar um dos dois métodos seguintes.
+
 - **Software FTP**: terá de instalar no seu computador um programa compatível com o protocolo FTP (por exemplo, [FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/));
 
 - **Acesso SSH** (apenas nas ofertas Pro e Performance): consulte o guia "[Utilizar o acesso SSH do seu alojamento web](https://docs.ovh.com/pt/hosting/partilhado_o_ssh_nos_alojamentos_partilhados/)" para utilizar este protocolo de ligação.

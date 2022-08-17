@@ -73,6 +73,10 @@ La connessione allo spazio di hosting dei tuoi file può essere effettuata in di
 
 - **FTP Explorer**: questo software è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Per utilizzarlo, dalla scheda `FTP-SSH`{.action}, clicca sul pulsante `FTP Explorer`{.action};
 
+> [!warning]
+>
+> FTP Explorer non è disponibile per l'offerta Cloud Web. Deve essere utilizzato uno dei due metodi seguenti.
+
 - **Software FTP**: dovrai installare sul tuo computer un software compatibile con il protocollo FTP (ad esempio, [FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/));
 
 - **Accesso SSH** (solo sulle offerte Pro e Performance): per utilizzare questo protocollo di connessione, consulta la guida "[Utilizzare l'accesso SSH di un hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/)".

@@ -68,6 +68,10 @@ There are several ways you can log in to your hosting space to access the files:
 
 - **FTP Explorer**: You can access this software via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). To use it, click on the `FTP Explorer`{.action} button in the `FTP-SSH`{.action} tab.
 
+> [!warning]
+>
+> FTP Explorer is not available for Cloud Web solutions. You will need to use one of the following two methods.
+
 - **FTP software**: You will need to install FTP-compatible software on your computer (for example, [FileZilla](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/)).
 
 - **SSH access** (only on Professional and Performance plans): Please read our guide on "[Accessing a web hosting plan via SSH](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/)" to use this connection protocol.

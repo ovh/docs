@@ -73,6 +73,10 @@ Możesz łączyć pliki z przestrzenią dyskową na kilka sposobów:
 
 - **FTP Explorer**: program ten jest dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Aby z niego korzystać, w zakładce `FTP-SSH`{.action} kliknij przycisk `FTP Explorer`{.action};
 
+> [!warning]
+>
+> FTP Explorer nie jest dostępny w ofercie Cloud Web. Konieczne będzie zastosowanie jednej z następujących metod.
+
 - **Program FTP**: zainstaluj na Twoim komputerze program kompatybilny z protokołem FTP (np. [FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/));
 
 - **Dostęp SSH** (tylko w ofercie Pro i Performance): zapoznaj się z przewodnikiem "[Korzystanie z dostępu SSH do hostingu](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/)", aby korzystać z tego protokołu.
