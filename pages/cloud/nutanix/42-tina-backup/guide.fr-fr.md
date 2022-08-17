@@ -9,7 +9,7 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 16/08/2022**
+**Dernière mise à jour le 17/08/2022**
 
 ## Objectif
 
@@ -628,6 +628,109 @@ Et cliquez sur `Login`{.action}.
 Le tableau de bord apparait.
 
 ![08 tina connection 03](images/08-tina-connection03.png){.thumbnail}
+
+##### Ajout de la destination de sauvegarde
+
+Nous allons configurer le serveur **tina-ade** en tant que dépot de sauvegarde
+
+Cliquez à gauche dans la barre verticale sur `Backup`{.action} ensuite cliquez sur `Add new storage`{.action}.
+
+![09 configure repository 01](images/09-configure-repository01.png){.thumbnail}
+
+Sélectionnez `Atempo deduplication (Hyperstreeam)` et cliquez sur `Next`{.action}.
+
+![09 configure repository 02](images/09-configure-repository02.png){.thumbnail}
+
+Saisissez ces informations : 
+
+- **Enter a name for the storage** : `Nom qui apparaitra pour les sauvegardes`
+- **Deduplication-server where data will be saved** : `nom FQDN du serveur de deduplication`
+- **Username** : `Compte administrateur du serveur de déduplication`
+- **Password** : `Mot de passe du compte administrateur`
+
+et cliquez sur `CHECK SERVER CONNECTION`{.action}
+
+![09 configure repository 03](images/09-configure-repository03.png){.thumbnail}
+
+Modifiez les options de taille et de nombre de bandes comme ceci :
+
+- **Number of drives** : `10`
+- **Media size** : `1GB`
+- **Compression algorithm** : `Brotli`
+
+Ensuite faites défiler la fenêtre avec la `barre de défilement à droite`{.action}.
+
+![09 configure repository 04](images/09-configure-repository04.png){.thumbnail}
+
+Activez `Define a primary data retention pool`{.action} avec ces paramètres
+
+
+- **Retention** : `Limited`
+- **Data to be kept during** : `1 week(s)`
+- **Storage pool name** : `1w_HSS`
+- **Prefix or cartrige (label)** : `1w_HSS_`
+
+Ensuite cliquez sur `FINISH`{.action}
+
+![09 configure repository 05](images/09-configure-repository05.png){.thumbnail}
+
+cliquez sur `OK`{.action}
+
+![09 configure repository 06](images/09-configure-repository06.png){.thumbnail}
+
+##### Ajout du cluster Nutanix en tant que source de sauvegarde
+
+Pour pouvoir sauvegarder le serveur Nutanix il faut configurer un agent qui pourra se connecter au cluster Nutanix
+
+Restez sur `Backup` à gauche et cliquez sur `Add new agent`{.action}.
+
+![10 configure nutanix agent 01](images/10-configure-nutanix-agent01.png){.thumbnail}
+
+Selectionnez `Declare a new application`, choisissez dans la liste `Nutanix Virtualisation Agent` ensuite cliquez sur `NEXT`{.action}.
+
+![10 configure nutanix agent 02](images/10-configure-nutanix-agent02.png){.thumbnail}
+
+Modifier **Status** en le passant en `Enabled`{.action} ensuite modifier ces paramètres
+
+- **** : ``
+- **Virtualisation server** : `Adresse IP locale de Prism Element`
+- **Virtualization user** : `Utilisateur administrateur de Prism Element`
+- **virtualization password** : `Mot passe du compte administrateur Prism Element`
+- **Nutanix protocol** : `https`
+
+Ensuite cliquez sur `FINISH`{.action}.
+
+![10 configure nutanix agent 03](images/10-configure-nutanix-agent03.png){.thumbnail}
+
+Clique sur `FINISH`{.action}.
+
+![10 configure nutanix agent 04](images/10-configure-nutanix-agent04.png){.thumbnail}
+
+##### Création d'un nouveau planning de sauvegarde
+
+Restez à gauche dans `Backup` et cliquez sur `Backup schedules`{.action}.
+
+![11 configure schedule 01](images/11-configure-schedule01.png){.thumbnail}
+
+Cliquez sur `Add new schedule`{.action}.
+
+![11 configure schedule 02](images/11-configure-schedule02.png){.thumbnail}
+
+Choisissez ces options :
+
+- **Backup every** : `1 Day`
+- **Execution time** : `20:00`
+
+Et cliquez sur `Save`{.action}.
+
+![11 configure schedule 03](images/11-configure-schedule03.png){.thumbnail}
+
+##### Configuration de l'agent pour automatiser la sauvegarde
+
+Cliquez à gauche sur `Agents` et cliquez sur `Not configured`{.action} pour voir les agents non configurés
+
+
+
 
 
 
