@@ -36,7 +36,7 @@ category_l2: Backups
 ## En pratique
 
 [Etape 1 Présentation de la solution](#presentation)<br /> 
-[Etape 2 Installation](#installation)<br />
+[Etape 2 Installation et configuration des machines virtuelles](#installation)<br />
 &ensp;&ensp;[Etape 2.1 Création de la machine virtuelle d'admnistration tina](#createvmtina)<br />
 &ensp;&ensp;[Etape 2.2 Création des machines virtuelles pour les serveur de déduplications](#createvmdedup)<br />
 &ensp;&ensp;[Etape 2.3 Installation d'ALMALINUX](#almalinuxinstallation)<br />
@@ -249,7 +249,7 @@ L'installation est terminée
 
 ![03 Installing ALMAOS 22](images/03-install-almaos22.png){.thumbnail}
 
-<a name="almalinuxinstallation"></a>
+<a name="vmcustomization"></a>
 #### **Etape 2.4 Personalisation des trois machines virtuelles**
 
 Sur chacunes des machines virtuelles installés nous allons desactiver le pare-feu , IPv6 et selinux. Ensuite nous allons installer et configurer **Tigervnc** pour la prise de main à distance avec une interface graphique sous Linux
