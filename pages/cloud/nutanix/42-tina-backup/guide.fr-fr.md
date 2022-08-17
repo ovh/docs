@@ -692,7 +692,6 @@ Selectionnez `Declare a new application`, choisissez dans la liste `Nutanix Virt
 
 Modifier **Status** en le passant en `Enabled`{.action} ensuite modifier ces paramètres
 
-- **** : ``
 - **Virtualisation server** : `Adresse IP locale de Prism Element`
 - **Virtualization user** : `Utilisateur administrateur de Prism Element`
 - **virtualization password** : `Mot passe du compte administrateur Prism Element`
@@ -727,20 +726,156 @@ Et cliquez sur `Save`{.action}.
 
 ##### Configuration de l'agent pour automatiser la sauvegarde
 
-Cliquez à gauche sur `Agents` et cliquez sur `Not configured`{.action} pour voir les agents non configurés
+Cliquez à gauche sur `Agents`, cliquez sur `Not configured`{.action} pour voir les agents non configurés, ensuite cliquez sur le `signe +`{.action} à gauche à coté de l'agent pour Nutanix.
+
+![12 configure nutanix backup 01](images/12-configurenutanixbackup01.png){.thumbnail}
+
+Laissez coché `A` pour la **strategy name**, cochez **Strategie for backup on virtual tapes using HSS deduplication**, ensuite cliquez sur  `Next`{.action}.
+
+![12 configure nutanix backup 02](images/12-configurenutanixbackup02.png){.thumbnail}
+
+Decochez `Full backup schedule`{.action} dans **Full backup configuration** ensuite cochez `Incremental backup schedule`{.action} dans **Incremental backup configuration en choisissant** en choissant un `Planning` dans **Select a schedule for incremental backups**.
+
+![12 configure nutanix backup 03](images/12-configurenutanixbackup03.png){.thumbnail}
+
+Ensuite faites défiler la `barre de défilement`{.action}.
+
+Choisissez `3` à **Parallelism index** pour pouvoir faire trois sauvegardes en simultané, ensuite cochez la case `Authorize on demand backup`{.action} pour autoriser le lancement manuel de la sauvegarde et cliquez sur `FINISH`{.action}.
+
+![12 configure nutanix backup 04](images/12-configurenutanixbackup04.png){.thumbnail}
+
+Cliquez sur `Configured`{.action} pour voir apparaitre les travaux configurés, Ensuite cliquez sur travail de sauvegarde `Nutanix Cluster`{.action}
+
+![12 configure nutanix backup 05](images/12-configurenutanixbackup05.png){.thumbnail}
+
+Positionnez-vous sur `Backup selections`{.action} à gauche ensuite cliquez sur `Add new backup selection`{.action}
+
+![12 configure nutanix backup 06](images/12-configurenutanixbackup06.png){.thumbnail}
+
+Cliquez sur `Browse agent`{.action}
+
+![12 configure nutanix backup 07](images/12-configurenutanixbackup07.png){.thumbnail}
+
+Saisissez ces informations :
+
+- **Login** : `Compte root de la machine virtuelle qui execute l'agent`
+- **Password** : `Mot de passe du compte root de la machine virtuelle qui execute l'agent`
+
+Ensuite cliquez sur `Login`{.action}
+
+![12 configure nutanix backup 08](images/12-configurenutanixbackup08.png){.thumbnail}
+
+Sélectionnez les `machine virtuelles` et cliquez sur `OK`{.action}.
+
+![12 configure nutanix backup 09](images/12-configurenutanixbackup09.png){.thumbnail}
+
+Cliquez sur `FINISH`{.action}.
+
+![12 configure nutanix backup 10](images/12-configurenutanixbackup10.png){.thumbnail}
+
+La configuration du travail de sauvegarde est terminée, cliquez sur la `croix`{.action} en haut à gauche pour fermer la fênetre.
+
+![12 configure nutanix backup 11](images/12-configurenutanixbackup11.png){.thumbnail}
+
+##### Test du travail de sauvegarde
+
+Il est possible de lancer la travail de sauvegarde à la main pour ceci restez sur `Agents`{.action} à droite, cochez le `travail de sauvegarde`{.action} et cliquez sur la flêche d' `execution`{.action} pour lancer un travail de sauvegarde.
+
+![13 test backup 01](images/13-test-backup01.png){.thumbnail}
+
+Choississez `Incremental`{.action} et clique sur `Launch backup`{.action}
+
+> [!primary]
+> Lorsque l'on execute une sauvegarde pour la première fois même si l'on choisie **incremental** la sauvegarde sera complète.
+>
+
+![13 test backup 02](images/13-test-backup02.png){.thumbnail}
+
+Cliquez sur `OK`{.action}.
+
+![13 test backup 03](images/13-test-backup03.png){.thumbnail}
+
+Cliquez à gauche sur `Jobs`{.action} pour voir l'état d'avancement du travail de sauvegarde.
+
+![13 test backup 03](images/13-test-backup04.png){.thumbnail}
+
+##### Configuration de la sauvegarde du catalogue
+
+Un travail de sauvegarde est préconfiguré mais pas activé il sert pour sauvegarder la base de données du serveur de sauvegarde qui se nomme **catalog**. Nous allons le configurer pour faire une sauvegarde tous les jours à 12:00
+
+Cliquez à gauche sur `Agents`{.action}, cliquez sur `Not configured`{.action} ensuite double-cliquez sur `catalog.dat`{.action}
+
+![14 config-catalog-backup01](images/14-config-catalog-backup01.png){.thumbnail}
+
+Modifiez **Status** par `Enabled` et faites défiler la `barre de défilement`{.action}
+
+![14 config-catalog-backup02](images/14-config-catalog-backup02.png){.thumbnail}
+
+Modifier l'option **Number of Disk Backup Copies to Keep** à `3` ensuit cliquez sur `Add new variable`{.action}
+
+![14 config-catalog-backup03](images/14-config-catalog-backup03.png){.thumbnail}
+
+Cochez `Path to Disk Backup Copy`{.action} et cliquez sur `Add variable(s)`{.action}
+
+![14 config-catalog-backup04](images/14-config-catalog-backup04.png){.thumbnail}
+
+Modifiez la variable **Path to Disk Backup Copy** par `un dossier local sur le serveur tina`{.action} ensuite cliquez sur `Save`{.action}
+
+> [!primary]
+> Le catalogue sera à la fois sauvegardé sur le dépot et aussi en local sur le serveur de sauvegarde
+> Il est aussi possible de choisir une autre destination.
+
+![14 config-catalog-backup05](images/14-config-catalog-backup05.png){.thumbnail}
+
+Cliquez sur `OK`{.action}
+
+![14 config-catalog-backup06](images/14-config-catalog-backup06.png){.thumbnail}
+
+Cliquez à gauche sur `Stratégies`{.action} et cliquez sur `Add new strategy`{.action}
+
+![14 config-catalog-backup07](images/14-config-catalog-backup07.png){.thumbnail}
+
+Choisissez `A`{.action} comme nom de stratégie prenez `Strategy for backup on virtual tapes using HSS deduplication`{.action} comme type de stratégie ensuite cliquez sur  `NEXT`{.action}
+
+![14 config-catalog-backup08](images/14-config-catalog-backup08.png){.thumbnail}
+
+Cochez `Full backup schedule`{.action} et cliquez sur `Add new schedule`{.action}
+
+![14 config-catalog-backup09](images/14-config-catalog-backup09.png){.thumbnail}
+
+Choisissez ces options :
+
+- **Backup Every** : `1 Day`
+- **Execution time** : `12:00`
+
+Ensuite cliquez sur `Save`{.action}
+
+![14 config-catalog-backup10](images/14-config-catalog-backup10.png){.thumbnail}
+ 
+Cliquez sur `OK`{.action}
+
+![14 config-catalog-backup11](images/14-config-catalog-backup11.png){.thumbnail}
+
+Faites défiler la fênetre , décochez `Incremental backup schedule`{.action} , cochez `Authorize on demand backup`{.action} ensuite cliquez sur `FINISH`{.action}
+
+![14 config-catalog-backup12](images/14-config-catalog-backup12.png){.thumbnail}
+
+Cliquez sur `FINISH`{.action}
+
+![14 config-catalog-backup13](images/14-config-catalog-backup13.png){.thumbnail}
+
+Cliquez sur la `croix`{.action} à droite pour fermer.
+
+![14 config-catalog-backup14](images/14-config-catalog-backup14.png){.thumbnail}
+
+Cliquez sur `Configured`{.action} pour voir le travail de sauvegarde **catalog.cat** Activé et configuré
+
+![14 config-catalog-backup15](images/14-config-catalog-backup15.png){.thumbnail}
 
 
+#### Restauration d'une sauvegarde
 
-
-
-
-
-
-
-
-### Configuration d'une sauvegarde
-
-### Restauration d'une sauvegarde
+Non encore opérationnel
 
 ## Aller plus loin <a name="gofurther"></a>
 
