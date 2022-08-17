@@ -18,7 +18,7 @@ Cela peut être utile dans les cas suivants :
 - Si vous souhaitez disposer d’un espace de stockage hautement disponible et performant avec vos données.
 - Si vous souhaitez déplacer vos données vers une autre instance.
 
-**Découvez comment créer et configurer un disque supplémentaire sur une de vos instances depuis la sauvegarde d'un disque**
+**Découvez comment créer et configurer un disque supplémentaire sur une de vos instances depuis la sauvegarde d'un disque.**
 
 ## Prérequis
 

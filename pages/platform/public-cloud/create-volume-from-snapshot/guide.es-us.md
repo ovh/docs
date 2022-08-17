@@ -22,7 +22,7 @@ Esto puede ser útil en los siguientes casos:
 - Si desea disponer de un espacio de almacenamiento de alta disponibilidad y buen rendimiento con sus datos.
 - Si desea transferir sus datos a otra instancia.
 
-**Cómo crear y configurar un disco adicional en una de sus instancias desde la copia de seguridad de un disco**
+**Cómo crear y configurar un disco adicional en una de sus instancias desde la copia de seguridad de un disco.**
 
 ## Requisitos
 

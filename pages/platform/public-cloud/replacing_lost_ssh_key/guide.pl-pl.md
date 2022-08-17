@@ -57,7 +57,7 @@ Aby zmienić klucz SSH domyślnego użytkownika, wystarczy przejść do jego oso
 /home/admin/.ssh/authorized_keys
 ```
 
-W przypadku instancji z Ubuntu 15.10 domyślnym użytkownikiem będzie Ubuntu, plik będzie więc w następującym folderze:
+W przypadku instancji z Ubuntu domyślnym użytkownikiem będzie Ubuntu, plik będzie więc w następującym folderze:
 
 ```sh
 /home/ubuntu/.ssh/authorized_keys

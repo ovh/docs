@@ -89,4 +89,4 @@ L'instance aura le statut `Réinstallation` jusqu'à ce que le processus soit te
 
 [Sauvegarder une instance](../sauvegarder-une-instance/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

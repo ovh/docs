@@ -22,7 +22,7 @@ Może to być przydatne w następujących przypadkach:
 - Jeśli chcesz dysponować wydajną przestrzenią dyskową o wysokiej dostępności.
 - Jeśli chcesz przenieść dane do innej instancji.
 
-**Dowiedz się, jak utworzyć i skonfigurować dodatkowy dysk na jednej z Twoich instancji przy użyciu kopii zapasowej dysku**
+**Dowiedz się, jak utworzyć i skonfigurować dodatkowy dysk na jednej z Twoich instancji przy użyciu kopii zapasowej dysku.**
 
 ## Wymagania początkowe
 

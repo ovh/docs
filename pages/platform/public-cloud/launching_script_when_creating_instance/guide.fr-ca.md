@@ -1,5 +1,5 @@
 ---
-title: Lancer un script lors de la creation d’un instance
+title: Lancer un script lors de la creation d’une instance
 slug: lancer-un-script-lors-de-la-creation-dun-instance
 legacy_guide_number: 1932
 section: Gestion via OpenStack
@@ -11,7 +11,7 @@ order: 13
   
 ## Objectif
 
-Dans certaines situations, il vous sera nécessaire de lancer un script lors de la création de votre instance. Par exemple, dans le cas ou vous souhaitez configurer plusieurs clés SSH pour votre instance, ou bien pour configurer votre service SSH automatiquement.
+Dans certaines situations, il vous sera nécessaire de lancer un script lors de la création de votre instance. Par exemple, dans le cas où vous souhaitez configurer plusieurs clés SSH pour votre instance, ou bien pour configurer votre service SSH automatiquement.
 
 **Ce guide vous explique comment lancer un script lors de la création de votre instance via Cloud-init et les API OpenStack.**
 
@@ -54,7 +54,7 @@ service ssh restart
 ```
 
 
-Ce script permet de modifier le port SSH par défaut (22 -> 2211) et d'interdire la connexion à l'aide de l'utilisateur " **root** ".
+Ce script permet de modifier le port SSH par défaut (22 -> 2211) et d'interdire la connexion à l'aide de l'utilisateur "**root**".
 
 - Mise à jour des packets et installation d'un serveur WEB :
 
