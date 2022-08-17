@@ -32,11 +32,30 @@ category_l2: Backups
 - De disposer d'un autre cluster distant avec 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs.
 - d'avoir un serveur DNS interne (Par exemple un serveur active diretory) et d'avoir les droits de le modifier.
 
-## Présentation
-
-Le logiciel **Tina** est un logiciel modulaire composé de divers éléments que l'on peut installer sur diverses machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix.
 
 ## En pratique
+
+[Etape 1 Présentation de la solution](#presentation)<br /> 
+[Etape 2 Installation](#installation)<br />
+&ensp;&ensp;[Etape 2.1 Création de la machine virtuelle d'admnistration tina](#createvmtina)<br />
+&ensp;&ensp;[Etape 2.2 Création des machines virtuelles pour les serveur de déduplications](#createvmdedup)<br />
+&ensp;&ensp;[Etape 2.3 Installation d'ALMALINUX](#almalinuxinstallation)<br />
+&ensp;&ensp;[Etape 2.4 Personalisation des trois machines virtuelles](#vmcustomization)<br />
+&ensp;&ensp;[Etape 2.5 Configuration des disques supplémentaires sur les machines de déduplication](#hddconf)<br />
+[Etape 3 Installation et configuration des logiciels atempo](#atempoinstall)<br />
+&ensp;&ensp;[Etape 3.1 Installation du logiciel de déduplication sur tina-adefr et tina-adecan](#dedupinstall)<br />
+&ensp;&ensp;[Etape 3.2 Configuration des deux serveurs de déduplications](#dedupconf)<br />
+&ensp;&ensp;[Etape 3.3 Installation du logiciel tina sur tina-srv](#tinainstall)<br />
+[Etape 4 Mise en place de la réplication entre serveurs de déduplication](#replication)<br />
+[Etape 5 Configuration du serveur tina](#configuretina)<br />
+&ensp;&ensp;[Etape 5.1 Ajout de la destination de sauvegarde](#addrepo)<br />
+&ensp;&ensp;[Etape 5.2 Ajout du cluster Nutanix en tant que source de sauvegarde](#nutanixconf)<br />
+&ensp;&ensp;[Etape 5.3 Création d'un nouveau planning de sauvegarde](#scheduleconf)<br />
+&ensp;&ensp;[Etape 5.4 Configuration de l'agent pour automatiser la sauvegarde](#agentconfiguration)<br />
+&ensp;&ensp;[Etape 5.5 Test du travail de sauvegarde](#testbackup)<br />
+&ensp;&ensp;[Etape 5.6 Configuration de la sauvegarde du catalogue](#catalogbackup)<br />
+[Etape 6 Restauration de sauvegardes](#restore)<br />
+
 
 Nous allons installer trois machines virtuelles sous AlmaLinux en version 8.6, cette distribution Linux est proche de RedHat (Dans le cas d'une exploitation en production il sera judicieux d'utiliser une Redhat Enterprise Linux Server avec l'achat d'un support logiciel). 
 
@@ -48,7 +67,13 @@ Deux sur un cluster Nutanix en France pour :
 Un sur le serveur Nutanix au Canada pour :
 - Le serveur de déduplication HSS pour recevoir une réplication des données du serveur HSS se trouvant en  France.
 
-### Installation
+<a name="presentation"></a>
+### Etape 1 Présentation
+
+Le logiciel **Tina** est un logiciel modulaire composé de divers éléments que l'on peut installer sur diverses machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix.
+
+<a name="installation"></a>
+### Etape 2 Installation et configuration des machines virtuelles
 
 Vous pouvez télécharger les sources d'ALMALINUX sur ce lien [Sources ALMALINUX](https://mirrors.almalinux.org/isos/x86_64/8.6.html) et vous aider de cette documentation pour ajouter les sources sur vos clusters Nutanix [Importer des images ISO](https://docs.ovh.com/fr/nutanix/image-import/)
 
@@ -64,7 +89,9 @@ Le nom des machines virtuelles nécessaires à l'installation de Tina sont les s
 - **tina-adefr.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.211`
 - **tina-adecan.ad-testion.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.10.211` pour récevoir une réplication de la sauvegarde.
 
-#### Création de la machine virtuelle TINA-SRV
+
+<a name="createvmtina"></a>
+#### **Etape 2.1 Création de la machine virtuelle TINA-SRV**
 
 Nous allons créer la machine virtuelle tina-srv qui est le serveur de sauvegarde tina
 
@@ -81,7 +108,8 @@ Choisissez ces paramètres:
 
 ![01 Create Tina Srv VM 01](images/01-create-tinasrv01.png){.thumbnail}
 
-#### Création des machines virtuelles TINA-ADEFR & TINA-ADECAN pour le serveur de déduplication en mode HSS
+<a name="createvmdedup"></a>
+#### **Etape 2.2 Création des machines virtuelles pour les serveur de déduplications**
 
 Ensuite nous allons créer deux machines virtuelles du même type une en France et l'autre au Canada en tant que dépot ADE au format HSS avec ces paramètres :
 
@@ -95,7 +123,8 @@ Ensuite nous allons créer deux machines virtuelles du même type une en France 
 
 ![02 Create Tina Srv ADE VM 01](images/02-create-tinasrvade01.png){.thumbnail}
 
-#### Installation d'ALMALINUX sur les trois machines virtuelles créés
+<a name="almalinuxinstallation"></a>
+#### **Etape 2.3 Installation d'ALMALINUX**
 
 Commençons par installer le système d'exploitation. 
 
@@ -220,7 +249,8 @@ L'installation est terminée
 
 ![03 Installing ALMAOS 22](images/03-install-almaos22.png){.thumbnail}
 
-#### Personalisation communes des trois machines virtuelles
+<a name="almalinuxinstallation"></a>
+#### **Etape 2.4 Personalisation des trois machines virtuelles**
 
 Sur chacunes des machines virtuelles installés nous allons desactiver le pare-feu , IPv6 et selinux. Ensuite nous allons installer et configurer **Tigervnc** pour la prise de main à distance avec une interface graphique sous Linux
 
@@ -285,8 +315,8 @@ Executez ces commandes
 systemctl enable --now vncserver@:1
 reboot
 ```
-
-#### Personalisation des deux machines virtuelles de déduplication
+<a name="hddconf"></a>
+#### **Etape 2.5 Configuration des disques supplémentaires sur les machines de déduplication**
 
 IL faut configurer le disque supplémentaire dans le système d'exploitation linux sur les deux machines virtuelles de déduplication.
 
@@ -318,7 +348,12 @@ Ensuite modifier ce fichier **/etc/fstab**
 UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     defaults        0 0
 ```
 
-#### Installation du logiciel de déduplication sur tina-adefr et tina-adecan.
+<a name="atempoinstall"></a>
+### Etape 3 Installation et configuration des logiciels atempo 
+
+
+<a name="dedupinstall"></a>
+#### **Etape 3.1 Installation du logiciel de déduplication sur tina-adefr et tina-adecan**
 
 Le logiciel de déduplication **tina-ade** transforme votre serveur en dépot de stockage pour le serveur tina, nous allons installer deux dépots :
 
@@ -375,7 +410,8 @@ Cliquez sur `Done`{.action}.
 
 ![04 Installing tina ade12](images/04-install-tina-ade12.png){.thumbnail}
 
-#### Configuration des deux serveurs de déduplications 
+<a name="dedupconf"></a>
+#### **Etape 3.2 Configuration des deux serveurs de déduplications** 
 
 Maintenant que l'installation est terminée utilisez un navigateur WEB et allez sur l'adresse `https://tina-adexx:8181`. Le configurateur va se lancer.
 
@@ -477,61 +513,62 @@ Saisissez et confirmez le mot de passe, ensuite cliquez sur le bouton de `valida
 
 ![05 Configure tina ade21](images/05-configure-tina-ade21.png){.thumbnail}
 
-#### Installation du logiciel tina sur tina-srv
+<a name="tinainstall"></a>
+#### **Etape 3.3 Installation du logiciel tina sur tina-srv**
 
 A partir d'une machine virtuelle avec une interface graphique soit sous **windows** soit sous **linux** se trouvant sur le réseau privé ou se trouve les machines virtuelles **tina-srv**, **tina-adefr** et **tina-adecan** installez le logiciel [TightVNC](https://www.tightvnc.com/download.php).
 
 Connectez-vous sur **tina-srv** avec le logiciel Tightvnc en utilisant cette adresse `tina-srv:5901`{.action}
 
-![07 tina server installation 01](images/07-install-tina-server01.png){.thumbnail}
+![07 tina server installation 01](images/06-install-tina-server01.png){.thumbnail}
 
 Saisissez le mot de passe de vnc et cliquez sur `OK`{.action}
 
-![07 tina server installation 02](images/07-install-tina-server02.png){.thumbnail}
+![07 tina server installation 02](images/06-install-tina-server02.png){.thumbnail}
 
 Lancer le terminal et executez le programme d'installation `Atempo-tina-4.7.0.6413-Server-Agent-Linux-X64`{.action}
 
-![07 tina server installation 03](images/07-install-tina-server03.png){.thumbnail}
+![07 tina server installation 03](images/06-install-tina-server03.png){.thumbnail}
 
 Laissez la langue en `English` et cliquez sur `OK`{.action}.
 
-![07 tina server installation 04](images/07-install-tina-server04.png){.thumbnail}
+![07 tina server installation 04](images/06-install-tina-server04.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![07 tina server installation 05](images/07-install-tina-server05.png){.thumbnail}
+![07 tina server installation 05](images/06-install-tina-server05.png){.thumbnail}
 
 Cochez la `case`{.action} à coté de **I accept the terms of the License Agreement**, ensuite cliquez sur `Next`{.action}.
 
-![07 tina server installation 06](images/07-install-tina-server06.png){.thumbnail}
+![07 tina server installation 06](images/06-install-tina-server06.png){.thumbnail}
 
 Cochez les cases `Time Navigator`{.action} et `Atempo License Manager`{.action}, ensuite cliquez sur `Next`{.action}.
 
-![07 tina server installation 07](images/07-install-tina-server07.png){.thumbnail}
+![07 tina server installation 07](images/06-install-tina-server07.png){.thumbnail}
 
 cliquez sur `Next`{.action}.
 
-![07 tina server installation 08](images/07-install-tina-server08.png){.thumbnail}
+![07 tina server installation 08](images/06-install-tina-server08.png){.thumbnail}
 
 Sélectionnez `I do not have a license file yet`{.action} et cliquez sur `Next`{.action}.
 
-![07 tina server installation 09](images/07-install-tina-server09.png){.thumbnail}
+![07 tina server installation 09](images/06-install-tina-server09.png){.thumbnail}
 
 Choisissez l'option `TIme Navigator Server`{.action} et cliquez sur `Next`{.action}.
 
-![07 tina server installation 10](images/07-install-tina-server10.png){.thumbnail}
+![07 tina server installation 10](images/06-install-tina-server10.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![07 tina server installation 11](images/07-install-tina-server11.png){.thumbnail}
+![07 tina server installation 11](images/06-install-tina-server11.png){.thumbnail}
 
 Prenez `Temporary License`{.action} et cliquez sur `Next`{.action}.
 
-![07 tina server installation 12](images/07-install-tina-server12.png){.thumbnail}
+![07 tina server installation 12](images/06-install-tina-server12.png){.thumbnail}
 
 Choisissez `Create a Catalog Now`{.action} et cliquez sur `Next`{.action}.
 
-![07 tina server installation 13](images/07-install-tina-server13.png){.thumbnail}
+![07 tina server installation 13](images/06-install-tina-server13.png){.thumbnail}
 
 Choisissez ces options :
 
@@ -548,49 +585,49 @@ Choisissez ces options :
 
 Ensuite cliquez sur `Next`{.action}.
 
-![07 tina server installation 14](images/07-install-tina-server14.png){.thumbnail}
+![07 tina server installation 14](images/06-install-tina-server14.png){.thumbnail}
 
 Séléctionnez l'option `Memory`{.action} ensuite cliquez sur `Next`{.action}.
 
-![07 tina server installation 15](images/07-install-tina-server15.png){.thumbnail}
+![07 tina server installation 15](images/06-install-tina-server15.png){.thumbnail}
 
 Gardez l'option de cache à `64MB`{.action} et cliquez sur `Next`{.action}.
 
-![07 tina server installation 16](images/07-install-tina-server16.png){.thumbnail}
+![07 tina server installation 16](images/06-install-tina-server16.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![07 tina server installation 17](images/07-install-tina-server17.png){.thumbnail}
+![07 tina server installation 17](images/06-install-tina-server17.png){.thumbnail}
 
 Choisissez le `nom du serveur smtp` dans **SMTP Server Name:** et cliquez sur `Next`{.action}.
 
-![07 tina server installation 18](images/07-install-tina-server18.png){.thumbnail}
+![07 tina server installation 18](images/06-install-tina-server18.png){.thumbnail}
 
 Cliquez sur `Install`{.action}.
 
-![07 tina server installation 19](images/07-install-tina-server19.png){.thumbnail}
+![07 tina server installation 19](images/06-install-tina-server19.png){.thumbnail}
 
 L'installation se lance.
 
-![07 tina server installation 20](images/07-install-tina-server20.png){.thumbnail}
+![07 tina server installation 20](images/06-install-tina-server20.png){.thumbnail}
 
 Cliquez sur `Done`{.action} pour valider la fin de l'installation.
 
-![07 tina server installation 21](images/07-install-tina-server21.png){.thumbnail}
+![07 tina server installation 21](images/06-install-tina-server21.png){.thumbnail}
 
 
-
-### Mise en place de la réplication entre serveurs de déduplication.
+<a name="replication"></a>
+### Etape 4 Mise en place de la réplication entre serveurs de déduplication.
 
 Maintenant que les deux serveurs de déduplication sont installés nous allons configurer la réplication sur le serveur qui se trouve en france **tina-adefr**
 
 Cliquez sur l'onglet `Server`{.action}, Choisissez `Replication`{.action} depuis le menu `Configuration`
 
-![06 Configure replication 01](images/06-configure-replication01.png){.thumbnail}
+![06 Configure replication 01](images/07-configure-replication01.png){.thumbnail}
 
 Cliquez sur le bouton `Add`{.action}
 
-![06 Configure replication 02](images/06-configure-replication02.png){.thumbnail}
+![06 Configure replication 02](images/07-configure-replication02.png){.thumbnail}
 
 Dans **Host : Port**: , choisissez ces options
 
@@ -599,13 +636,14 @@ Dans **Host : Port**: , choisissez ces options
 
 Ensuite cliquez sur `Validate the creation`{.action}
 
-![06 Configure replication 03](images/06-configure-replication03.png){.thumbnail}
+![06 Configure replication 03](images/07-configure-replication03.png){.thumbnail}
 
 La réplication est active dès que des données seront stockées sur le serveur de déduplication en france elles seront répliquées au CANADA.
 
-![06 Configure replication 04](images/06-configure-replication04.png){.thumbnail}
+![06 Configure replication 04](images/07-configure-replication04.png){.thumbnail}
 
-### Configuration du serveur tina
+<a name="configuretina"></a>
+### Etape 5 Configuration du serveur tina
 
 Connectez-vous au serveur au travers d'un navigateur WEB sur l'adresse privé **https://tina-srv:22088**
 
@@ -627,7 +665,8 @@ Le tableau de bord apparait.
 
 ![08 tina connection 03](images/08-tina-connection03.png){.thumbnail}
 
-#### Ajout de la destination de sauvegarde
+<a name="addrepo"></a>
+#### **Etape 5.1 Ajout de la destination de sauvegarde**
 
 Nous allons configurer le serveur **tina-ade** en tant que dépot de sauvegarde
 
@@ -676,7 +715,8 @@ cliquez sur `OK`{.action}
 
 ![09 configure repository 06](images/09-configure-repository06.png){.thumbnail}
 
-#### Ajout du cluster Nutanix en tant que source de sauvegarde
+<a name="nutanixconf"></a>
+#### **Etape 5.2 Ajout du cluster Nutanix en tant que source de sauvegarde**
 
 Pour pouvoir sauvegarder le serveur Nutanix il faut configurer un agent qui pourra se connecter au cluster Nutanix
 
@@ -703,7 +743,8 @@ Clique sur `FINISH`{.action}.
 
 ![10 configure nutanix agent 04](images/10-configure-nutanix-agent04.png){.thumbnail}
 
-#### Création d'un nouveau planning de sauvegarde
+<a name="scheduleconf"></a>
+#### **Etape 5.3 Création d'un nouveau planning de sauvegarde**
 
 Restez à gauche dans `Backup` et cliquez sur `Backup schedules`{.action}.
 
@@ -722,7 +763,8 @@ Et cliquez sur `Save`{.action}.
 
 ![11 configure schedule 03](images/11-configure-schedule03.png){.thumbnail}
 
-#### Configuration de l'agent pour automatiser la sauvegarde
+<a name="agentconfiguration"></a>
+#### **Etape 5.4 Configuration de l'agent pour automatiser la sauvegarde**
 
 Cliquez à gauche sur `Agents`, cliquez sur `Not configured`{.action} pour voir les agents non configurés, ensuite cliquez sur le `signe +`{.action} à gauche à coté de l'agent pour Nutanix.
 
@@ -775,7 +817,8 @@ La configuration du travail de sauvegarde est terminée, cliquez sur la `croix`{
 
 ![12 configure nutanix backup 11](images/12-configurenutanixbackup11.png){.thumbnail}
 
-#### Test du travail de sauvegarde
+<a name="testbackup"></a>
+#### **Etape 5.5 Test du travail de sauvegarde**
 
 Il est possible de lancer la travail de sauvegarde à la main pour ceci restez sur `Agents`{.action} à droite, cochez le `travail de sauvegarde`{.action} et cliquez sur la flêche d' `execution`{.action} pour lancer un travail de sauvegarde.
 
@@ -797,7 +840,8 @@ Cliquez à gauche sur `Jobs`{.action} pour voir l'état d'avancement du travail 
 
 ![13 test backup 03](images/13-test-backup04.png){.thumbnail}
 
-#### Configuration de la sauvegarde du catalogue
+<a name="catalogbackup"></a>
+#### **Etape 5.6 Configuration de la sauvegarde du catalogue**
 
 Un travail de sauvegarde est préconfiguré mais pas activé il sert pour sauvegarder la base de données du serveur de sauvegarde qui se nomme **catalog**. Nous allons le configurer pour faire une sauvegarde tous les jours à 12:00
 
@@ -870,8 +914,8 @@ Cliquez sur `Configured`{.action} pour voir le travail de sauvegarde **catalog.c
 
 ![14 config-catalog-backup15](images/14-config-catalog-backup15.png){.thumbnail}
 
-
-### Restauration d'une sauvegarde
+<a name="restore"></a>
+### Etape 6 Restauration d'une sauvegarde
 
 Non encore documenté
 
