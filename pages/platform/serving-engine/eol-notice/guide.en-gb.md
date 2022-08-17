@@ -51,12 +51,12 @@ This end of life **does not concern**:
 
 ## Workaround <a name="workaround"></a>
 
-OVHcloud does not have alternatives to automatically migrate, but in our Public Cloud universe, we provide AI Deploy (formerly known as AI Apps), a managed solution for inference.
+OVHcloud does not have alternatives to automatically migrate your service, but in our Public Cloud universe, we provide AI Deploy (formerly known as AI Apps), a managed solution for inference.
 
-While ML Serving was focused deploying exported ML models files, requiring intensive and complex worfklows, the new AI Deploy solution is much more agnostic and future-proof. 
+While ML Serving was focused on deploying exported ML models files, requiring intensive and complex worfklows, the new AI Deploy solution is much more agnostic and future-proof. 
 AI Deploy supports inference from Docker images, allowing customers to deploy any models but also web applications. 
 
-Full documentation is available on <https://docs.ovh.com/gb/en/publiccloud/ai/>.
+Click [here](https://docs.ovh.com/gb/en/publiccloud/ai/) to consult the full documentation.
 
 Here is a comparative matrix:
 
@@ -74,10 +74,7 @@ Here is a comparative matrix:
 | Billing model                          | Per minute billing               | Per minute billing            |
 
 
-Discover the Public Cloud offers and prices:
-
-- French (Euros): <https://www.ovhcloud.com/fr/public-cloud/ai-machine-learning/>.
-- English (Euros): <https://www.ovhcloud.com/en-ie/public-cloud/ai-machine-learning/>.
+Discover the [Public Cloud offers and prices](https://www.ovhcloud.com/en-ie/public-cloud/ai-machine-learning/).
 
 ## Migration options
 
