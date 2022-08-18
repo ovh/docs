@@ -425,19 +425,19 @@ Suivez ces instructions sur les machine virtuelles **tina-adefr** et **tina-adec
 
 Maintenant que l'installation est terminée utilisez un navigateur WEB et allez sur l'adresse `https://tina-adexxx:8181`. Le configurateur va se lancer.
 
-Lors du choix de la `Database` sélectionnez le dossier `/home` et cliquez sur le bouton `Suivant`{.action} en bas.
+Sélectionnez le dossier `/home`pour le paramètre **Database** et cliquez sur le bouton `Suivant`{.action} en bas.
 
 ![05 Configure tina ade01](images/05-configure-tina-ade01.png){.thumbnail}
 
-Sélectionnez le dossier `/data` pour le `storage` ensuite cliquez sur le bouton `Suivant`{.action} en bas à droite.
+Choisissez le dossier `/data` dans l'option **storage** ensuite cliquez sur le bouton `Suivant`{.action} en bas à droite.
 
 ![05 Configure tina ade02](images/05-configure-tina-ade02.png){.thumbnail}
 
-Laissez les options par défaut et cliquez sur le bouton `Suivant`{.action} en bas.
+Laissez les options par défaut dans **Port** et cliquez sur le bouton `Suivant`{.action} en bas.
 
 ![05 Configure tina ade03](images/05-configure-tina-ade03.png){.thumbnail}
 
-Choisissez ces options :
+Choisissez ces options pour **Products**:
 
 - **Activate HyperStream** sur `Yes`.
 - **Activate Lina** sur `No`.
@@ -447,11 +447,11 @@ Ensuite cliquez sur le bouton `Suivant`{.action} en bas à droite.
 
 ![05 Configure tina ade04](images/05-configure-tina-ade04.png){.thumbnail}
 
-Pour la configuration d'`Hyperstream` sélectionnez le dossier `/home` et cliquez sur le bouton `Suivant`{.action} en bas.
+Pour la configuration **Hyperstream** sélectionnez le dossier `/home` et cliquez sur le bouton `Suivant`{.action} en bas.
 
 ![05 Configure tina ade05](images/05-configure-tina-ade05.png){.thumbnail}
 
-Pour finir l'installation laissez `Yes` pour **Receive update notifications** et cliquez sur le `signe de validation`{.thumbnail} en bas à droite.
+Pour finir l'installation laissez `Yes` pour **Receive update notifications** et cliquez sur le bouton `validation`{.thumbnail} en bas à droite.
 
 ![05 Configure tina ade06](images/05-configure-tina-ade06.png){.thumbnail}
 
@@ -513,7 +513,7 @@ Sélectionnez l'utilisateur `admin` et cliquez sur `Modify`{.action}.
 
 ![05 Configure tina ade19](images/05-configure-tina-ade19.png){.thumbnail}
 
-Cliquez sur `click to modify the passsword`{.action}.
+Cliquez sur `click to modify the password`{.action}.
 
 ![05 Configure tina ade20](images/05-configure-tina-ade20.png){.thumbnail}
 
@@ -655,7 +655,7 @@ Ensuite cliquez sur `Validate the creation`{.action}.
 
 ![07 Configure replication 03](images/07-configure-replication03.png){.thumbnail}
 
-La réplication est active, toutes les nouvelles données stockées sur le serveur de déduplication en France seront copiés sur le serveur déduplication au Canada.
+La réplication est active, toutes les nouvelles données stockées sur le serveur de déduplication en France seront copiées sur le serveur déduplication au Canada.
 
 ![07 Configure replication 04](images/07-configure-replication04.png){.thumbnail}
 
@@ -706,7 +706,7 @@ et cliquez sur `CHECK SERVER CONNECTION`{.action}.
 
 ![09 configure repository 03](images/09-configure-repository03.png){.thumbnail}
 
-La connexion au serveur de déduplication est validé grace à l'information **Connection to server successful**.
+La connexion au serveur de déduplication est validée grâce à l'information **Connection to server successful**.
 
 Modifiez les options de taille et de nombre de bandes comme ceci :
 
@@ -729,7 +729,7 @@ Ensuite cliquez sur `FINISH`{.action}.
 
 ![09 configure repository 05](images/09-configure-repository05.png){.thumbnail}
 
-cliquez sur `OK`{.action}.
+Cliquez sur `OK`{.action}.
 
 ![09 configure repository 06](images/09-configure-repository06.png){.thumbnail}
 
