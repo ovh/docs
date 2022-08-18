@@ -46,14 +46,14 @@ category_l2: Backups
 &ensp;&ensp;[Etape 3.2 Configuration des serveurs de déduplications](#dedupconf)<br />
 &ensp;&ensp;[Etape 3.3 Installation du logiciel Tina sur tina-srv](#tinainstall)<br />
 [Etape 4 Mise en place de la réplication entre serveurs de déduplication](#replication)<br />
-[Etape 5 Configuration du serveur tina](#configuretina)<br />
+[Etape 5 Configuration du serveur Tina](#configuretina)<br />
 &ensp;&ensp;[Etape 5.1 Ajout de la destination de sauvegarde](#addrepo)<br />
 &ensp;&ensp;[Etape 5.2 Ajout du cluster Nutanix en tant que source de sauvegarde](#nutanixconf)<br />
 &ensp;&ensp;[Etape 5.3 Création d'un nouveau planning de sauvegarde](#scheduleconf)<br />
 &ensp;&ensp;[Etape 5.4 Configuration de l'agent pour automatiser la sauvegarde](#agentconfiguration)<br />
 &ensp;&ensp;[Etape 5.5 Test du travail de sauvegarde](#testbackup)<br />
 &ensp;&ensp;[Etape 5.6 Configuration de la sauvegarde du catalogue](#catalogbackup)<br />
-[Etape 6 Restauration de sauvegardes](#restore)<br />
+[Etape 6 Restauration](#restore)<br />
 
 
 
@@ -240,7 +240,7 @@ Cliquez sur `License Information`{.action}.
 
 ![03 Installing ALMAOS 19](images/03-install-almaos19.png){.thumbnail}
 
-Cliquez sur `I accept the license agreement`{.action} et cliquez sur `Done`{.action}.
+Cochez `I accept the license agreement`{.action} et cliquez sur `Done`{.action}.
 
 ![03 Installing ALMAOS 20](images/03-install-almaos20.png){.thumbnail}
 
@@ -568,11 +568,6 @@ Sélectionnez `I do not have a license file yet`{.action} et cliquez sur `Next`{
 
 Choisissez l'option `Time Navigator Server`{.action} ensuite cliquez sur `Next`{.action}.
 
-> [!Primary]
->
-> Tina client est automatiquement installé si l'on choisit l'installation **Time Navigator Server**.
->
-
 ![06 tina server installation 10](images/06-install-tina-server10.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
@@ -638,6 +633,8 @@ Cliquez sur `Done`{.action} pour valider la fin de l'installation.
 
 Nous allons configurer la réplication à partir du serveur qui se trouve en France **tina-adefr** vers le serveur se trouvant au Canada pour avoir une sauvegarde sur un site distant.
 
+Connectez-vous à l'adresse https://tina-adefr:8181.
+
 Cliquez sur l'onglet `Server`{.action}, Choisissez `Replication`{.action} depuis le menu `Configuration`.
 
 ![07 Configure replication 01](images/07-configure-replication01.png){.thumbnail}
@@ -685,7 +682,7 @@ Le tableau de bord apparait.
 <a name="addrepo"></a>
 #### **Etape 5.1 Ajout de la destination de sauvegarde**
 
-Nous allons configurer le serveur **tina-ade** en tant que dépôt de sauvegarde.
+Nous allons configurer le serveur **tina-adefr** en tant que dépôt de sauvegarde.
 
 Cliquez à gauche dans la barre verticale sur `Backup`{.action} ensuite cliquez sur `Add new storage`{.action}.
 
@@ -792,7 +789,7 @@ Laissez coché `A` pour **strategy name**, cochez **Strategie for backup on virt
 
 ![12 configure nutanix backup 02](images/12-configurenutanixbackup02.png){.thumbnail}
 
-Décochez `Full backup schedule`{.action} dans **Full backup configuration** ensuite cochez `Incremental backup schedule`{.action} dans **Incremental backup configuration** et choisissez/ un `Planning` dans **Select a schedule for incremental backups**.
+Décochez `Full backup schedule`{.action} dans **Full backup configuration** ensuite cochez `Incremental backup schedule`{.action} dans **Incremental backup configuration** et choisissez un `Planning` dans **Select a schedule for incremental backups**.
 
 ![12 configure nutanix backup 03](images/12-configurenutanixbackup03.png){.thumbnail}
 
@@ -861,7 +858,7 @@ Cliquez à gauche sur `Jobs`{.action} pour voir l'état d'avancement du travail 
 <a name="catalogbackup"></a>
 #### **Etape 5.6 Configuration de la sauvegarde du catalogue**
 
-Pour des raisons de sécurité il est prudent de sauvegarder le catalogue. Il existe un agent de sauvegarde **catalog.cat** installé mais pas configuré par défaut. Nous allons le configurer pour faire une sauvegarde tous les jours à midi.
+Pour des raisons de sureté il est prudent de sauvegarder le catalogue. Il existe un agent de sauvegarde **catalog.cat** installé mais pas configuré par défaut. Nous allons le configurer pour faire une sauvegarde tous les jours à midi.
 
 Cliquez à gauche sur `Agents`{.action}, cliquez sur `Not configured`{.action} ensuite cliquez sur `catalog.cat`{.action}.
 
@@ -879,7 +876,7 @@ Cochez `Path to Disk Backup Copy`{.action} et cliquez sur `Add variable(s)`{.act
 
 ![14 config-catalog-backup04](images/14-config-catalog-backup04.png){.thumbnail}
 
-Modifiez la variable **Path to Disk Backup Copy** par `un dossier local sur le serveur **Tina**`{.action} ensuite cliquez sur `Save`{.action}.
+Modifiez la variable **Path to Disk Backup Copy** par `un dossier local sur le serveur Tina`{.action} ensuite cliquez sur `Save`{.action}.
 
 > [!primary]
 >
@@ -944,5 +941,5 @@ Non encore documenté
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
-[Tina Compatibily GUIDE 2022](https://www.atempo.com/wp-content/uploads/2022/01/COMPATIBILITY-GUIDE_en_Tina_469_24-01-2022.pdf)
+[Guide de compatibilité Tina 2022](https://www.atempo.com/wp-content/uploads/2022/01/COMPATIBILITY-GUIDE_en_Tina_469_24-01-2022.pdf)
 
