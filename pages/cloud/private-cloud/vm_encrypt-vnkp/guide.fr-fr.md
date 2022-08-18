@@ -1,17 +1,17 @@
 ---
 title: Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider
-slug: vm-encrypt-vpnkp
+slug: vm-encrypt-vnkp
 excerpt: Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider
-section: Fonctionnalités WMware vSphere
+section: Fonctionnalités VMware vSphere
 order: 07
 ---
 
-**Dernière mise à jour le 10/08/2022**
+**Dernière mise à jour le 18/08/2022**
 
 ## Objectif
 
 
-Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSphere Native Key Provider** pour ensuite effectuer un chiffrement d'une machine virtualle dans l'offre **Private Cloud** **OVHcloud**
+Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSphere Native Key Provider** pour ensuite effectuer un chiffrement d'une machine virtuelle dans l'offre **Private Cloud** **OVHcloud**
 
 **Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles à l'aide de vSphere Native Key Provider.**
 
@@ -35,13 +35,13 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 
 Il est possible d'exporter la clé **vSphere Native Key provider** et de la réimporter sur un autre cluster.
 
-Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génére une clé **DEK** stockée en mémoire, cette clé servira à effectuer le chiffrement de la machine virtuelle et de sa donnée. Ensuite la clé **DEK** sera à son tour chiffrée à l'aide de **vSphere Native Key provider** et stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **WMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
+Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génère une clé **DEK** stockée en mémoire, cette clé servira à effectuer le chiffrement de la machine virtuelle et de sa donnée. Ensuite la clé **DEK** sera à son tour chiffrée à l'aide de **vSphere Native Key provider** et stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
 ### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster PCC
 
-Avant de pouvoir utiliser les fonctionnalités de chiffrement il est necessaire d'autoriser un utilisateur du **PCC** à gérer le chiffrement cette autorisation se fait à partir de l'espace client OVHcloud.
+Avant de pouvoir utiliser les fonctionnalités de chiffrement il est nécessaire d'autoriser un utilisateur du **PCC** à gérer le chiffrement cette autorisation se fait à partir de l'espace client OVHcloud.
 
 <!--- Partie à écrire dès que la fonctionnalité sera présente
 
@@ -49,7 +49,7 @@ Avant de pouvoir utiliser les fonctionnalités de chiffrement il est necessaire 
 
 ### Création d'une clé **vSphere Native Key Provider**
 
-Nous allons créer la clé de chiffrement **vSphere Native Key Provider**. Cette clé pourra être utilisé pour chiffrer les clés **DEK** lors du chiffrement d'une machine virtuelle ou pour permettre l'ajout sur une machine virtuelle d'un périphérique virtuel **TPM 2.0**.
+Nous allons créer la clé de chiffrement **vSphere Native Key Provider**. Cette clé pourra être utilisée pour chiffrer les clés **DEK** lors du chiffrement d'une machine virtuelle ou pour permettre l'ajout sur une machine virtuelle d'un périphérique virtuel **TPM 2.0**.
 
 Connectez-vous à l'interface **vSphere** à l'aide de ce guide [Se connecter à l'interface vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
 
@@ -141,11 +141,11 @@ Cliquez sur la `machine virtuelle`{.action} ou le chiffrement a été modifié a
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Présentation WMware de vSphere Native Key Provider](https://core.vmware.com/native-key-provider)
+[Présentation VMware de vSphere Native Key Provider](https://core.vmware.com/native-key-provider)
 
 [Documentation VMware du processus de chiffrement sur vSphere](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-4A8FA061-0F20-4338-914A-2B7A57051495.html#GUID-4A8FA061-0F20-4338-914A-2B7A57051495)
 
-[Documentation WMware concernant vSphere Native Key Provider](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html#GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97)
+[Documentation VMware concernant vSphere Native Key Provider](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html#GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
 
