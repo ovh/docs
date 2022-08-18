@@ -25,12 +25,12 @@ category_l2: Backups
 ## Prérequis
 
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud.
-    + Un avec des machines virtuelles à sauvegarder avec 700 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs.
+    + Un contenant des machines virtuelles à sauvegarder avec 700 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs.
     + Un distant pour recevoir la réplication des sauvegardes avec 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central.
-- Avoir souscrit une offre Tina auprès de la société **Atempo** et d'avoir les sources d'installation des logiciel Tina. 
-- Avoir un serveur DNS interne (Par exemple un serveur DNS Microsoft) et d'avoir les droits de le modifier.
+- Avoir souscrit une offre **Tina** auprès de la société **Atempo** et d'avoir les sources d'installation des logiciel **Tina**. 
+- Avoir un serveur DNS interne administrable (Par exemple un serveur DNS Microsoft).
 
 ## En pratique
 
@@ -39,11 +39,11 @@ category_l2: Backups
 &ensp;&ensp;[Etape 2.1 Création de la machine virtuelle d'administration Tina](#createvmtina)<br />
 &ensp;&ensp;[Etape 2.2 Création des machines virtuelles pour les serveur de déduplications](#createvmdedup)<br />
 &ensp;&ensp;[Etape 2.3 Installation d'ALMALINUX](#almalinuxinstallation)<br />
-&ensp;&ensp;[Etape 2.4 Personnalisation des trois machines virtuelles](#vmcustomization)<br />
+&ensp;&ensp;[Etape 2.4 Personnalisation des machines virtuelles](#vmcustomization)<br />
 &ensp;&ensp;[Etape 2.5 Configuration des disques supplémentaires sur les machines de déduplication](#hddconf)<br />
-[Etape 3 Installation et configuration des logiciels atempo](#atempoinstall)<br />
+[Etape 3 Installation et configuration des logiciels Atempo](#atempoinstall)<br />
 &ensp;&ensp;[Etape 3.1 Installation du logiciel de déduplication sur tina-adefr et tina-adecan](#dedupinstall)<br />
-&ensp;&ensp;[Etape 3.2 Configuration des deux serveurs de déduplications](#dedupconf)<br />
+&ensp;&ensp;[Etape 3.2 Configuration des serveurs de déduplications](#dedupconf)<br />
 &ensp;&ensp;[Etape 3.3 Installation du logiciel Tina sur tina-srv](#tinainstall)<br />
 [Etape 4 Mise en place de la réplication entre serveurs de déduplication](#replication)<br />
 [Etape 5 Configuration du serveur tina](#configuretina)<br />
@@ -60,9 +60,9 @@ category_l2: Backups
 <a name="presentation"></a>
 ### Etape 1 Présentation
 
-Le logiciel **Tina** est un logiciel de sauvegarde modulaire composé de divers éléments que l'on peut installer sur des machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix. Il peut être utilisé avec plusieurs stockages différents. Pour plus d'informations sur la liste des matériels compatible cliquez sur ce lien [Aller plus loin](#gofurther)
+Le logiciel **Tina** est un logiciel de sauvegarde modulaire composé de divers éléments que l'on peut installer sur des machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix. Il peut être utilisé avec plusieurs types de  stockages différents. Pour plus d'informations sur la liste des matériels compatible cliquez sur ce lien [Aller plus loin](#gofurther)
 
-Dans ce guide nous allons utiliser trois machines virtuelles sous **AlmaLinux** en version 8.6. Cette distribution Linux est proche de RedHat (Dans le cas d'une exploitation en production il serait judicieux d'utiliser une **Redhat Enterprise Linux Server** avec le support). 
+Dans ce guide nous allons utiliser trois machines virtuelles sous **AlmaLinux** en version 8.6. Cette distribution Linux est proche de RedHat (Dans le cas d'une exploitation en production il serait judicieux d'utiliser une **Redhat Enterprise Linux Server** disposant d'un support). 
 
 Les trois machines virtuelles seront réparties comme ceci :
 
@@ -80,13 +80,11 @@ Une sur un cluster Nutanix au Canada relié en VPN pour :
 
 Téléchargez les sources d'installation d'ALMALINUX à partir de ce lien [Sources ALMALINUX](https://mirrors.almalinux.org/isos/x86_64/8.6.html) et aidez-vous de ce guide [Importer des images ISO](https://docs.ovh.com/fr/nutanix/image-import/) pour les importer sur votre cluster Nutanix.
 
-Nous allons utiliser une serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine **ad-testing.lan**, il faut rajouter trois entrées DNS avec les noms de machines ainsi que leurs adresses. 
-
-Le nom des machines virtuelles nécessaires à l'installation de **Tina** sont les suivantes :
+Nous allons utiliser un serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine **ad-testing.lan** et rajouter ces adresses : 
 
 - **tina-srv.ad-testing.lan** : Serveur **Tina** avec l'adresse IP `192.168.0.210`
 - **tina-adefr.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.211`
-- **tina-adecan.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.10.211` pour recevoir une réplication de la sauvegarde.
+- **tina-adecan.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.10.210` pour recevoir une réplication de la sauvegarde.
 
 ![00 DNS Entry Example 01 ](images/00-dnsexample01.png){.thumbnail}
 
@@ -165,13 +163,13 @@ Ensuite cliquez sur `Save`{.action}.
 
 ![03 Installing ALMAOS 04](images/03-install-almaos04.png){.thumbnail}
 
-Cliquez sur le bouton `interrupteur`{.action} pour activer le réseau. 
+Cliquez sur le bouton `ON/OFF`{.action} pour activer le réseau. 
 
-Saisissez le nom d'hôte dans `Host Name`{.action} avec ces informations en fonction de la machine virtuelle installée :
+Saisissez le nom d'hôte dans `Host Name`{.action} avec ces informations suivant la machine virtuelle : 
 
 - tina-srv.ad-testing.lan pour le serveur **Tina**.
 - tina-adefr.ad-testing.lan pour le serveur de déduplication HSS en France.
-- tina-adecan.ad-testing.lan pour le serveur dé déduplication HSS au Canada.
+- tina-adecan.ad-testing.lan pour le serveur de déduplication HSS au Canada.
 
 cliquez sur `Apply`{.action} et cliquez sur `Done`{.action}.
 
@@ -427,15 +425,15 @@ Suivez ces instructions sur les machine virtuelles **tina-adefr** et **tina-adec
 
 Maintenant que l'installation est terminée utilisez un navigateur WEB et allez sur l'adresse `https://tina-adexxx:8181`. Le configurateur va se lancer.
 
-Lors du choix de la `Database` sélectionnez le dossier `/home` et cliquez sur la `flèche`{.action} en bas.
+Lors du choix de la `Database` sélectionnez le dossier `/home` et cliquez sur le bouton `Suivant`{.action} en bas.
 
 ![05 Configure tina ade01](images/05-configure-tina-ade01.png){.thumbnail}
 
-Sélectionnez le dossier `/data` pour le `storage` ensuite cliquez sur la `deuxième flèche`{.action} en bas.
+Sélectionnez le dossier `/data` pour le `storage` ensuite cliquez sur le bouton `Suivant`{.action} en bas à droite.
 
 ![05 Configure tina ade02](images/05-configure-tina-ade02.png){.thumbnail}
 
-Laissez les options par défaut et cliquez sur la `deuxième flêche à droite`{.action} en bas.
+Laissez les options par défaut et cliquez sur le bouton `Suivant`{.action} en bas.
 
 ![05 Configure tina ade03](images/05-configure-tina-ade03.png){.thumbnail}
 
@@ -445,11 +443,11 @@ Choisissez ces options :
 - **Activate Lina** sur `No`.
 - **Activate HVDS** sur `No`.
 
-Ensuite cliquez sur la `deuxième flêche à droite`{.action} en bas.
+Ensuite cliquez sur le bouton `Suivant`{.action} en bas à droite.
 
 ![05 Configure tina ade04](images/05-configure-tina-ade04.png){.thumbnail}
 
-Pour la configuration d'`Hyperstream` sélectionnez le dossier `/home` et cliquez sur la `deuxième flèche`{.action} en bas.
+Pour la configuration d'`Hyperstream` sélectionnez le dossier `/home` et cliquez sur le bouton `Suivant`{.action} en bas.
 
 ![05 Configure tina ade05](images/05-configure-tina-ade05.png){.thumbnail}
 
@@ -461,7 +459,7 @@ Cliquez sur `OK`{.action} pour redémarrer le programme avec les nouveaux param�
 
 ![05 Configure tina ade07](images/05-configure-tina-ade07.png){.thumbnail}
 
-Maintenant que la configuration est terminée revenez sur l'interface d'administration avec l'adresse `https://tinaadexx:8181`. A partir de maintenant il est nécessaire de s'authentifier.
+Revenez sur l'URL `https://tinaadexx:8181`. Une fenêtre d'authentification apparait. 
 
 Saisissez le nom d'utilisateur `superadmin` et le mot de passe par défaut `superadmin` ensuite cliquez sur `login`{.action}.
 
@@ -477,7 +475,7 @@ Cliquez sur l'onglet `Server`{.action} et choisissez `Tenants`{.action}.
 
 ![05 Configure tina ade10](images/05-configure-tina-ade10.png){.thumbnail}
 
-Se positionnez sur le `nom`{.action} et cliquez sur le bouton `Modify`{.action}.
+Positionnez-vous sur le `nom`{.action} ensuite cliquez sur le bouton `Modify`{.action}.
 
 ![05 Configure tina ade11](images/05-configure-tina-ade11.png){.thumbnail}
 
@@ -581,11 +579,11 @@ Cliquez sur `Next`{.action}.
 
 ![06 tina server installation 11](images/06-install-tina-server11.png){.thumbnail}
 
-Prenez `Temporary License`{.action} et cliquez sur `Next`{.action}.
+Choisissez `Temporary License`{.action} et cliquez sur `Next`{.action}.
 
 ![06 tina server installation 12](images/06-install-tina-server12.png){.thumbnail}
 
-Choisissez `Create a Catalog Now`{.action} et cliquez sur `Next`{.action}.
+Sélectionnez `Create a Catalog Now`{.action} et cliquez sur `Next`{.action}.
 
 ![06 tina server installation 13](images/06-install-tina-server13.png){.thumbnail}
 
@@ -863,13 +861,13 @@ Cliquez à gauche sur `Jobs`{.action} pour voir l'état d'avancement du travail 
 <a name="catalogbackup"></a>
 #### **Etape 5.6 Configuration de la sauvegarde du catalogue**
 
-Pour des raisons de sécurité il est prudent de sauvegarder le catalogue. Il existe un agent de sauvegarde **catalog.cat** installé mais pas pas configuré par défaut. Nous allons le configurer pour faire une sauvegarde tous les jours à midi.
+Pour des raisons de sécurité il est prudent de sauvegarder le catalogue. Il existe un agent de sauvegarde **catalog.cat** installé mais pas configuré par défaut. Nous allons le configurer pour faire une sauvegarde tous les jours à midi.
 
 Cliquez à gauche sur `Agents`{.action}, cliquez sur `Not configured`{.action} ensuite cliquez sur `catalog.cat`{.action}.
 
 ![14 config-catalog-backup01](images/14-config-catalog-backup01.png){.thumbnail}
 
-Modifiez **Status** par `Enabled` et faites défiler la `barre de défilement`{.action}.
+Modifiez **Status** par `Enabled` et faites défiler la fenêtre à l'aide de la `barre de défilement`{.action}.
 
 ![14 config-catalog-backup02](images/14-config-catalog-backup02.png){.thumbnail}
 
