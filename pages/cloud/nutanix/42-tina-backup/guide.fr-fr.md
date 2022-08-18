@@ -60,7 +60,7 @@ category_l2: Backups
 <a name="presentation"></a>
 ### Etape 1 Présentation
 
-Le logiciel **Tina** est un logiciel de sauvegarde modulaire composé de divers éléments que l'on peut installer sur des machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix. Il peut être utilisé avec plusieurs types de  stockages différents. Pour plus d'informations sur la liste des matériels compatible cliquez sur ce lien [Aller plus loin](#gofurther)
+Le logiciel **Tina** est un logiciel de sauvegarde modulaire composé de divers éléments que l'on peut installer sur des machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix. Il peut être utilisé avec plusieurs types de stockages différents. Pour plus d'informations sur la liste des matériels compatible cliquez sur ce lien [Aller plus loin](#gofurther)
 
 Dans ce guide nous allons utiliser trois machines virtuelles sous **AlmaLinux** en version 8.6. Cette distribution Linux est proche de RedHat (Dans le cas d'une exploitation en production il serait judicieux d'utiliser une **Redhat Enterprise Linux Server** disposant d'un support). 
 
@@ -101,7 +101,7 @@ Choisissez ces paramètres :
 - Un disque de `60Go`.
 - 4 `vCPU`.
 - 8 Go de `mémoire vive`.
-- Un lecteur CDROM connecté au sources `d'ALMALINUX`.
+- Un lecteur CDROM connecté aux sources `d'ALMALINUX`.
 - Une carte réseau sur le réseau de `base` qui est le réseau d'administration du cluster Nutanix.
 
 ![01 Create Tina Srv VM 01](images/01-create-tinasrv01.png){.thumbnail}
@@ -171,7 +171,7 @@ Saisissez le nom d'hôte dans `Host Name`{.action} avec ces informations suivant
 - tina-adefr.ad-testing.lan pour le serveur de déduplication HSS en France.
 - tina-adecan.ad-testing.lan pour le serveur de déduplication HSS au Canada.
 
-cliquez sur `Apply`{.action} et cliquez sur `Done`{.action}.
+Cliquez sur `Apply`{.action} et cliquez sur `Done`{.action}.
 
 ![03 Installing ALMAOS 05](images/03-install-almaos05.png){.thumbnail}
 
@@ -323,7 +323,7 @@ reboot
 
 
 
-Executez ces commandes sur les deux serveurs de déduplications :
+Exécutez ces commandes sur les deux serveurs de déduplications :
 
 ```bash
 # Création de la partition
@@ -358,7 +358,7 @@ UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     def
 <a name="dedupinstall"></a>
 #### **Etape 3.1 Installation du logiciel de déduplication sur tina-adefr et tina-adecan**
 
-Le logiciel de déduplication **tina-ade** transforme votre serveur en dépot de stockage pour le serveur **Tina**, nous allons installer deux dépôts :
+Le logiciel de déduplication **tina-ade** transforme votre serveur en dépôt de stockage pour le serveur **Tina**, nous allons installer deux dépôts :
 
 - L'un en France.
 - L'autre au Canada qui servira de réplica pour celui qui se trouve en France.
@@ -373,7 +373,7 @@ Saisissez `le mot de passe` et cliquez sur `OK`{.action}.
 
 ![04 Installing tina ade02](images/04-install-tina-ade02.png){.thumbnail}
 
-Au travers de la console lancez le programmme d'installation `ATL533-linux-x64.bin`{.action}.
+Au travers de la console lancez le programme d'installation `ATL533-linux-x64.bin`{.action}.
 
 > [!Primary]
 >
