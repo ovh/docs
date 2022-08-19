@@ -15,7 +15,7 @@ Lorsque vous lancez une opération sur un nom de domaine tel qu' un transfert, u
 
 ## En pratique
 
-Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dirigez-vous dans la rubrique `Web Cloud`{.action} puis `Noms de domaine`{.action} . Cliquez sur `Opération en cours`{.action} au-dessus de la liste des noms de domaine.
+Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dirigez-vous dans la rubrique `Web Cloud`{.action} puis `Noms de domaine`{.action} . Cliquez sur `Opérations en cours`{.action} au-dessus de la liste des noms de domaine.
 
 Dans ce tableau, vous pouvez consulter toutes les opérations liées aux noms de domaine dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). 
 
@@ -46,17 +46,17 @@ Toutes ces opérations ne nécessitent pas votre intervention pour qu'elles se d
 
 #### Demande de documents
 
-Certaines extensions de noms de domaine nécessitent qu'on justifie leur utilisation en fournissant des documents. Lorsque c'est la cas, vous devrez transmettre les documents par l'intermédiaire de la fenêtre `Opération en cours`{.action}.
+Certaines extensions de noms de domaine nécessitent qu'on justifie leur utilisation en fournissant des documents. Lorsque c'est la cas, vous devrez transmettre les documents par l'intermédiaire de la fenêtre `Opérations en cours`{.action}.
 
 ![domain](images/domain-error01.png){.thumbnail}
 
-Pour fournir le document nécessaire, cliquez sur le bouton `...`{.action} à droite de l'opération. La fenêtre ci-dessous apparait, la partie `description` vous permettra d'avoir des détails sur le document à fournir et un bouton pour télécharger vtre document.
+Pour fournir le document nécessaire, cliquez sur le bouton `...`{.action} à droite de l'opération. La fenêtre ci-dessous apparait, la partie `description` vous permettra d'avoir des détails sur le document à fournir et un bouton pour télécharger votre document.
 
 ![domain](images/domain-error02.png){.thumbnail}
 
 #### Informations manquantes
 
-Lorsque vous enregistrez votre nom de domaine, il est parfois necessaire de compléter les données de "contact", c'est pourquoi si ces dernières ne correspondent pas aux critères du nom de domaine, vous pouvez obtenir l'erreur ci-dessous.
+Lorsque vous enregistrez votre nom de domaine, il est parfois nécessaire de compléter les données de "contact", c'est pourquoi si ces dernières ne correspondent pas aux critères du nom de domaine, vous pouvez obtenir l'erreur ci-dessous.
 
 ![domain](images/domain-error03.png){.thumbnail}
 
@@ -90,7 +90,7 @@ Lorsque vous modifiez vos serveurs DNS, le registre est susceptible de vérifier
 >
 > Ce type de blocage est initié par le registre et non par OVHcloud, c'est pourquoi le nom de domaine est actif dans votre espace client.
 
-Pour constater le blocage dans votre espace client. Dirigez-vous vers le tableau des `Opération en cours`{.action}.
+Pour constater le blocage dans votre espace client. Dirigez-vous vers le tableau des `Opérations en cours`{.action}.
 
 ![domain](images/domain-error08.png){.thumbnail}
 
@@ -99,7 +99,11 @@ Pour vérifier votre nom de domaine, nous vous conseillons d'utiliser l'outil de
 - Pour un nom de domaine en **.de**: <https://nast.denic.de/>
 - Pour un nom de domaine en **.it**: <https://dns-check.nic.it/>
 
-Si votre registre ne fournit pas d'outil de vérification, vérifier préalablement que les serveurs DNS renseignés
+> [!primary]
+>
+> Si votre registre ne fournit pas d'outil de vérification de serveur DNS, il est possible d'intérroger vos nouveaux serveurs DNS via la commande `nslookup`sur une « invite de commande » Windows ou la commande `dig` sur un « terminal » linux et macOS. Vous devez obtenir une adresse IP, cela indiquera que le serveur DNS est joignable. Il est, dans tous les cas, nécessaire de s'assurer auprès de l'administrateur du serveur DNS que celui-ci est bien configuré pour accueillir la zone DNS de votre nom de domaine.
+
+Lorsque vous avez identifié l'origine de l'erreur et que vous l'avez corrigée, vous pouvez cliquer sur le bouton `...`{.action} à droite de l'opération et relancer l'opération de vérification DNS.
 
 #### Erreur interne OVHcloud
 
