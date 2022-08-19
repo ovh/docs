@@ -82,11 +82,30 @@ Lorsque vous attachez des serveurs DNS à un nom de domaine, si ces derniers ne 
 
 Sélectionnez votre nom de domaine dans la section `Noms de domaine`{.action}, puis cliquez sur l'onglet `Serveurs DNS`{.action}. Depuis cette fenêtre, [modifiez vos serveurs DNS](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/). 
 
+#### Erreur sur un nom de domaine en **.ie**, **.de** ou **.ie** après une mise à jour DNS. 
+
+Lorsque vous modifiez vos serveurs DNS, le registre est susceptible de vérifier les nouveaux serveurs DNS ainsi que la zone DNS associée et bloquer le nom de domaine si la configuration n'est pas conforme.
+
+> [!warning]
+>
+> Ce type de blocage est initié par le registre et non par OVHcloud, c'est pourquoi le nom de domaine est actif dans votre espace client.
+
+Pour constater le blocage dans votre espace client. Dirigez-vous vers le tableau des `Opération en cours`{.action}.
+
+![domain](images/domain-error08.png){.thumbnail}
+
+Pour vérifier votre nom de domaine, nous vous conseillons d'utiliser l'outil de vérification délivré par le registre :
+
+- Pour un nom de domaine en **.de**: <https://nast.denic.de/>
+- Pour un nom de domaine en **.it**: <https://dns-check.nic.it/>
+
+Si votre registre ne fournit pas d'outil de vérification, vérifier préalablement que les serveurs DNS renseignés
+
 #### Erreur interne OVHcloud
 
 Vous pouvez rencontrer une erreur ayant pour détails "erreur interne", vous ne pouvez pas agir sur celle-ci, elle n'a pas de conséquence sur votre nom de domaine.
 
-![domain](images/domain-error08.png){.thumbnail}
+![domain](images/domain-error09.png){.thumbnail}
 
 ## Aller plus loin
 
