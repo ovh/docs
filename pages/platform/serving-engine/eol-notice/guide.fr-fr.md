@@ -87,4 +87,4 @@ Vous pouvez migrer vers AI Deploy en conteneurisant votre application.
 
 Consultez [nos guides AI Deploy (anciennement AI Apps) ici](https://docs.ovh.com/fr/publiccloud/ai/).
 
-Si vous avez besoin d'aide, merci de contacter directement notre support. Nous vous proposons un catalogue de services professionnels.
+Si vous avez besoin d'aide, merci de contacter directement notre support. Nous vous proposons également un catalogue de services professionnels.
