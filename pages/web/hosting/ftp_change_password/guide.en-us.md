@@ -6,7 +6,7 @@ section: FTP and SSH
 order: 2
 ---
 
-**Last updated 18th August 2022**
+**Last updated 24th January 2022**
 
 ## Objective
 
