@@ -1,7 +1,7 @@
 ---
 title: Upgrading Kubernetes version on an OVHcloud Managed Kubernetes cluster
 slug: upgrading-kubernetes-version
-excerpt: ''
+excerpt: 'Find out how to upgrade Kubernetes version on an OVHcloud Managed Kubernetes cluster'
 section: User guides
 ---
 
@@ -27,7 +27,7 @@ section: User guides
  }
 </style>
 
-**Last updated September 5th, 2019.**
+**Last updated 22th August 2022**
 
 ## Objective
 
@@ -48,7 +48,10 @@ The upgrading process will try to do a [rolling upgrade](https://en.wikipedia.or
 
 To minimise downtime for your pods and your overall service, we will drain each of your nodes, only moving on to the next node when the current one is functional (i.e. when the status changes to ‘Ready’). Your admin components and server API will also be updated.
 
- This operation usually takes around 5 minutes per node in your cluster, but that can vary depending on your cluster type and size.
+![Node rolling upgrade - step 1 and 2](images/node-rolling-upgrade1.png)
+![Node rolling upgrade - step 3](images/node-rolling-upgrade2.png)
+
+This operation usually takes around 5 minutes per node in your cluster, but that can vary depending on your cluster type and size.
 
 Once the update has been performed, you cannot revert to the previous version.
 
@@ -57,28 +60,29 @@ Once the update has been performed, you cannot revert to the previous version.
 
 ### Step 1 - Ask for a minor version upgrade on the OVH Cloud Manager 
 
-1. Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Managed Kubernetes Service* menu in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+1. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
+Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 
-    ![Access to the administration UI](images/upgrading-kubernetes-version-000.jpg){.thumbnail}
+    ![Access to the administration UI](images/upgrading-kubernetes-version-000.png){.thumbnail}
 
-1. Click on the right end button and choose *Manage cluster*
+1. Click on the right end button of your Kubernetes cluster and choose `Manage cluster`{.action}
 
-    ![Click on the right end button and choose Manage cluster](images/upgrading-kubernetes-version-001.jpg){.thumbnail}
+    ![Click on the right end button and choose Manage cluster](images/upgrading-kubernetes-version-001.png){.thumbnail}
 
-1. On the *Management* section, click on *Upgrade to the next minor version*
+1. On the *Management* section, click on `Upgrade to the next minor version`{.action}
 
-    ![Click on Upgrade to the next minor version](images/upgrading-kubernetes-version-002.jpg){.thumbnail}
+    ![Click on Upgrade to the next minor version](images/upgrading-kubernetes-version-002.png){.thumbnail}
 
-1. Click on *Confirm*   
+1. Click on `Confirm`{.action} button  
 
-    ![Click on Confirm](images/upgrading-kubernetes-version-003.jpg){.thumbnail}
+    ![Click on Confirm](images/upgrading-kubernetes-version-003.png){.thumbnail}
 
 ### Step 2 - Wait for the upgrading to end 
 
-The upgrading process can take several minutes ( around 5 minutes per node in your cluster). During that time, a message on the manager warns you that the cluster is being upgraded:
+The upgrading process can take several minutes (around 5 minutes per node in your cluster). During that time, a message on the OVHcloud Control Panel warns you that the cluster is being upgraded:
 
-  ![Wait for the end of the upgrade](images/upgrading-kubernetes-version-004.jpg){.thumbnail}
+  ![Wait for the end of the upgrade](images/upgrading-kubernetes-version-004.png){.thumbnail}
 
 
 ## Go further
