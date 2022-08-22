@@ -6,7 +6,7 @@ section: FTP and SSH
 order: 2
 ---
 
-**Last updated 24th January 2022**
+**Last updated 18th August 2022**
 
 ## Objective
 
@@ -67,6 +67,10 @@ Then go to the `Ongoing Jobs`{.action} tab and refresh the page regularly. Your 
 There are several ways you can log in to your hosting space to access the files:
 
 - **FTP Explorer**: You can access this software via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). To use it, click on the `FTP Explorer`{.action} button in the `FTP-SSH`{.action} tab.
+
+> [!warning]
+>
+> FTP Explorer is not available for Cloud Web solutions. You will need to use one of the following two methods.
 
 - **FTP software**: You will need to install FTP-compatible software on your computer (for example, [FileZilla](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/)).
 
