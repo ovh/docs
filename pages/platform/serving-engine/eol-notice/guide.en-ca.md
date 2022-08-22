@@ -1,7 +1,7 @@
 ---
-title: ML Serving - end-of-Life notification
+title: ML Serving - End-of-Life notification
 slug: eol-notice
-excerpt: Details on the end-of-Life of ML Serving services
+excerpt: Details on the End-of-Life of ML Serving services
 section: Announcements
 order: 1
 ---
