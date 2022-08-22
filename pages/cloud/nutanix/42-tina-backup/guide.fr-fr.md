@@ -13,7 +13,7 @@ category_l2: Backups
 
 ## Objectif
 
-**Apprenez à installer, configurer et utiliser le logiciel de sauvegarde **Tina** sur un cluster Nutanix vers un serveur de déduplication HSS et de configurer une réplication du serveur de déduplication**
+**Apprenez à installer, configurer et utiliser le logiciel de sauvegarde **Tina** sur un cluster Nutanix vers un serveur de déduplication HSS et de configurer une réplication du serveur de déduplication.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -60,7 +60,7 @@ category_l2: Backups
 <a name="presentation"></a>
 ### Etape 1 Présentation
 
-Le logiciel **Tina** est un logiciel de sauvegarde modulaire composé de divers éléments que l'on peut installer sur des machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix. Il peut être utilisé avec plusieurs types de stockages différents. Pour plus d'informations sur la liste des matériels compatible cliquez sur ce lien [Aller plus loin](#gofurther)
+Le logiciel **Tina** est un logiciel de sauvegarde modulaire composé de divers éléments que l'on peut installer sur des machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix. Il peut être utilisé avec plusieurs types de stockages différents. Pour plus d'informations sur la liste des matériels compatible cliquez sur ce lien [Aller plus loin](#gofurther).
 
 Dans ce guide nous allons utiliser trois machines virtuelles sous **AlmaLinux** en version 8.6. Cette distribution Linux est proche de RedHat (Dans le cas d'une exploitation en production il serait judicieux d'utiliser une **Redhat Enterprise Linux Server** disposant d'un support). 
 
@@ -933,7 +933,7 @@ Cliquez sur `Configured`{.action} pour voir le travail de sauvegarde **catalog.c
 <a name="restore"></a>
 ### Etape 6 Restauration d'une sauvegarde
 
-Le logiciel permet la restauration d'une machine virtuelle entière au travers de l'agent Nutanix. Si l'on souhaite des restaurations granulaires au niveau des fichiers ou de bases de données il faut installer un agent sur le serveur à sauvegarder et de créer un travail de sauvegarde supplémentaire.
+Le logiciel **Tina** permet la restauration d'une machine virtuelle entière au travers de l'agent Nutanix. Si l'on souhaite des restaurations granulaires au niveau des fichiers ou de bases de données il faut installer un agent sur le serveur à sauvegarder et de créer un travail de sauvegarde supplémentaire.
 
 Nous allons voir comment restaurer une machine virtuelle vers le cluster Nutanix.
 
