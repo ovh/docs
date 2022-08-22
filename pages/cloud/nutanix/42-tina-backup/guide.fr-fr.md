@@ -977,18 +977,6 @@ Positionnez-vous sur `Jobs`{.action} pour voir l'état d'avancement de la restau
 
 ![15 restore vm 10](images/15-restore-vm10.png){.thumbnail}
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Aller plus loin <a name="gofurther"></a>
 
 
