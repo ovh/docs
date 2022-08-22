@@ -9,7 +9,7 @@ section: 'Pierwsze kroki'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 27-05-2021**
+**Ostatnia aktualizacja z dnia 22-08-2022**
 
 ## Wprowadzenie
 
@@ -57,12 +57,13 @@ W przypadku nazwy domeny zewnętrznej (inny identyfikator klienta) lub zewnętrz
 
 #### Etap 2.1: dodaj domenę zarejestrowaną w OVHcloud <a name="add-ovhcloud-domain"></a>
 
-Ten etap ma zastosowanie jedynie, jeśli zaznaczyłeś opcję "Dodaj domenę zarejestrowaną w OVHcloud". W przypadku domen zewnętrznych przejdź do [etapu 2.2: dodanie domeny zewnętrznej](#add-external-domain){.external}.
+> [!warning]
+> Ten etap ma zastosowanie jedynie, jeśli zaznaczyłeś opcję "Dodaj domenę zarejestrowaną w OVHcloud". Domena lub jej strefa DNS muszą znajdować się **w Panelu klienta**. W przypadku domen zewnętrznych przejdź do [etap 2.2: dodaj domenę zewnętrzną](#add-external-domain){.external}.
+
+Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego w OVH hostingu niektóre z oferowanych elementów mogą być dostępne, inne zaś nie.
 
 > [!primary]
 > Aby dodać subdomenę, najpierw wybierz domenę główną z listy (przykład: mydomain.ovh). Na kolejnym etapie podasz subdomenę (przykład: **blog**.mydomain.ovh).
-
-Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego w OVH hostingu niektóre z oferowanych elementów mogą być dostępne, inne zaś nie.
 
 ![MultiSite](images/add-multisite-step2.png){.thumbnail}
 
