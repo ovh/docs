@@ -933,7 +933,7 @@ Cliquez sur `Configured`{.action} pour voir le travail de sauvegarde **catalog.c
 <a name="restore"></a>
 ### Etape 6 Restauration d'une sauvegarde
 
-Le logiciel **Tina** permet la restauration d'une machine virtuelle entière au travers de l'agent Nutanix. Si l'on souhaite des restaurations granulaires au niveau des fichiers ou de bases de données il faut installer un agent sur le serveur à sauvegarder et de créer un travail de sauvegarde supplémentaire.
+Le logiciel **Tina** permet la restauration d'une machine virtuelle entière au travers de l'agent Nutanix. Si l'on souhaite des restaurations granulaires au niveau des fichiers ou des bases de données il faut installer un agent sur le serveur à restaurer et de créer un travail de sauvegarde supplémentaire.
 
 Nous allons voir comment restaurer une machine virtuelle vers le cluster Nutanix.
 
@@ -941,15 +941,15 @@ Au travers de la console **Tina** positionnez-vous à gauche sur `Restore`{.acti
 
 ![15 restore vm 01](images/15-restore-vm01.png){.thumbnail}
 
-Cliquez sur `Find`{.action} pour rechercher les machines virtuelles à restaurer.
+Cliquez sur `FIND`{.action} pour rechercher les machines virtuelles à restaurer.
 
 ![15 restore vm 02](images/15-restore-vm02.png){.thumbnail}
 
-Sélectionnez la machine virtuelle à restaurer à l'aide de la `case à cocher`{.action} à coté de la machine virtuelle, ensuite cliquez sur `Next`{.action}.
+Cochez la `case à cocher`{.action} à côté de la machine virtuelle pour la sélectionner ensuite cliquez sur `Next`{.action}.
 
 ![15 restore vm 03](images/15-restore-vm03.png){.thumbnail}
 
-Saisissez le compte `root`{.action} de la machine virtuelle ainsi que le `mot de passe`{.action} et cliquez sur `Next`{.action}.
+Saisissez le compte `root`{.action} de la machine virtuelle qui sert de serveur **Tina** ainsi que le `mot de passe`{.action} et cliquez sur `Next`{.action}.
 
 ![15 restore vm 04](images/15-restore-vm04.png){.thumbnail}
 
@@ -973,7 +973,7 @@ Cliquez sur `OK`{.action}.
 
 ![15 restore vm 09](images/15-restore-vm09.png){.thumbnail}
 
-Positionnez-vous sur `Jobs`{.action} pour voir l'état d'avancement de la retauration.
+Positionnez-vous sur `Jobs`{.action} pour voir l'état d'avancement de la restauration.
 
 ![15 restore vm 10](images/15-restore-vm10.png){.thumbnail}
 
