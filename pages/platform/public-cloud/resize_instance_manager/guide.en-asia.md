@@ -6,7 +6,7 @@ section: Management via Control Panel
 order: 6
 ---
 
-**Last updated 26th July 2022**
+**Last updated 22nd August 2022**
 
 ## Objective
 
@@ -42,12 +42,12 @@ In the new tab, scroll down to the **Template** section to select the model of y
 
 > [!primary]
 >
-> Please note that you can only upgrade classic models, any model whose disk size is lower than your current model's disk size will not be available for use.<br/>
+> For classic models, you can switch to any flavor that have a similar or bigger disk. You can't switch to a model with a smaller disk.<br/>
 >
 > Only **Flexible instances** can be upgraded and downgraded while maintaining a fix disk size of 50GB.
 >
 
-Next, you can switch to a `Flexible instance`{.action} if desired. 
+If your disk is equal or smaller to 50GB, you can switch to a `Flexible instance`{.action} if desired.
 
 > [!warning]
 > Note that in case you are editing a flex instance, it is not possible to revert to a classic instance via the control panel. For more information, please consult our guide on [Revert a flex instance](https://docs.ovh.com/asia/en/public-cloud/revert-a-flex-instance/).

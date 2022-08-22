@@ -6,7 +6,7 @@ section: Gestion depuis l’espace client
 order: 6
 ---
 
-**Dernière mise à jour le 26/07/2022**
+**Dernière mise à jour le 22/08/2022**
 
 ## Objectif
 
@@ -43,15 +43,15 @@ Dans le nouvel onglet, faites défiler la page jusqu'à la section **Modèle** p
 
 > [!primary]
 >
-> Veuillez noter que seul le redimensionnement vers un modèle supérieur est possible pour les modèles classiques. Tout modèle dont la taille du disque est inférieure à celle de votre modèle actuel ne sera pas disponible pour l'utilisation.<br/>
+> Pour les modèles classiques, vous pouvez basculer vers n'importe quel modèle dont le disque est similaire ou plus grand. Vous ne pouvez pas passer à un modèle avec un disque plus petit.<br/>
 >
 > Seules **les instances flexibles** peuvent être mises à niveau et rétrogradées tout en conservant une taille de disque fixe de 50 Go.
 >
 
-Ensuite, vous pouvez passer à une `Instance flexible`{.action} si vous le souhaitez.
+Si votre disque est égal ou inférieur à 50 Go, vous pouvez passer à une `Instance flexible`{.action} si vous le souhaitez.
 
 > [!warning]
-> Attention, dans le cas où vous éditez une instance de type *flex*, il n'est pas possible de basculer à une instance classique via l'espace client. Pour plus d'informations, veuillez consultez notre guide sur [Basculer d’une instance flex à une instance classique](https://docs.ovh.com/ca/fr/public-cloud/modifier-une-instance-flex/).
+> Attention, dans le cas où vous éditez une instance de type *flex*, il n'est pas possible de basculer vers une instance classique via l'espace client. Pour plus d'informations, veuillez consultez notre guide sur [Basculer d’une instance flex à une instance classique](https://docs.ovh.com/ca/fr/public-cloud/modifier-une-instance-flex/).
 >
 
 Une fois la sélection effectuée, cliquez sur `modifier le modèle`{.action} pour confirmer votre choix.
