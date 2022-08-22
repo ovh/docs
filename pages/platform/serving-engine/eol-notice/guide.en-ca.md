@@ -56,7 +56,7 @@ OVHcloud does not have alternatives to automatically migrate, but in our Public 
 While ML Serving was focused on deploying exported ML models files, requiring intensive and complex worfklows, the new AI Deploy solution is much more agnostic and future-proof. 
 AI Deploy supports inference from Docker images, allowing customers to deploy any models but also web applications. 
 
-Full documentation is available on <https://docs.ovh.com/gb/en/publiccloud/ai/>.
+Full documentation is available on <https://docs.ovh.com/ca/en/publiccloud/ai/>.
 
 Here is a comparative matrix:
 
@@ -77,7 +77,7 @@ Here is a comparative matrix:
 Discover the Public Cloud offers and prices:
 
 - French (Euros): <https://www.ovhcloud.com/fr/public-cloud/ai-machine-learning/>.
-- English (GBP): <https://www.ovhcloud.com/en-gb/public-cloud/ai-machine-learning/>.
+- English (Euros): <https://www.ovhcloud.com/en-ie/public-cloud/ai-machine-learning/>.
 
 ## Migration options
 
@@ -85,6 +85,6 @@ There is no automatic migration option so far.
 
 You can migrate to AI Deploy by containerizing your application.
 
-Consult [our AI Deploy (formerly AI Apps) guides here](https://docs.ovh.com/gb/en/publiccloud/ai/).
+Consult [our AI Deploy (formerly AI Apps) guides here](https://docs.ovh.com/ca/en/publiccloud/ai/).
 
 If you need assistance, please contact our support directly. We provide a catalog of professional services.
