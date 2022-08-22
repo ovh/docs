@@ -10,7 +10,7 @@ order: 2
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 24/01/2022**
+**Última actualización: 18/08/2022**
 
 ## Objetivo
 
@@ -72,6 +72,10 @@ Por último, abra la pestaña `Tareas en curso`{.action} y vuelva a actualizar l
 Existen diversas formas de conectar los archivos al espacio de alojamiento:
 
 - **Explorador FTP**: puede acceder a este programa desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Para utilizarlo, abra la pestaña `FTP-SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
+
+> [!warning]
+>
+> El explorador FTP no está disponible para el hosting Cloud Web. Será necesario utilizar uno de los dos métodos siguientes.
 
 - **Programa FTP**: Si lo desea, deberá instalar en su ordenador un programa compatible con el protocolo FTP (por ejemplo, [FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/)).
 
