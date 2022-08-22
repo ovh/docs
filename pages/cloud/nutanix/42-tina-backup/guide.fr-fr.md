@@ -933,7 +933,60 @@ Cliquez sur `Configured`{.action} pour voir le travail de sauvegarde **catalog.c
 <a name="restore"></a>
 ### Etape 6 Restauration d'une sauvegarde
 
-Non encore documenté
+Le logiciel permet la restauration d'une machine virtuelle entière au travers de l'agent Nutanix. Si l'on souhaite des restaurations granulaires au niveau des fichiers ou de bases de données il faut installer un agent sur le serveur à sauvegarder et de créer un travail de sauvegarde supplémentaire.
+
+Nous allons voir comment restaurer une machine virtuelle vers le cluster Nutanix.
+
+Au travers de la console **Tina** positionnez-vous à gauche sur `Restore`{.action} et cliquez sur `Nutanix virtual machines`{.action}.
+
+![15 restore vm 01](images/15-restore-vm01.png){.thumbnail}
+
+Cliquez sur `Find`{.action} pour rechercher les machines virtuelles à restaurer.
+
+![15 restore vm 02](images/15-restore-vm02.png){.thumbnail}
+
+Sélectionnez la machine virtuelle à restaurer à l'aide de la `case à cocher`{.action} à coté de la machine virtuelle, ensuite cliquez sur `Next`{.action}.
+
+![15 restore vm 03](images/15-restore-vm03.png){.thumbnail}
+
+Saisissez le compte `root`{.action} de la machine virtuelle ainsi que le `mot de passe`{.action} et cliquez sur `Next`{.action}.
+
+![15 restore vm 04](images/15-restore-vm04.png){.thumbnail}
+
+Cliquez sur `RESTORE OPTIONS`{.action}.
+
+![15 restore vm 05](images/15-restore-vm05.png){.thumbnail}
+
+Choisissez `Other location`{.action}, saisissez le `nouveau nom de la machine virtuelle restaurée`{.action}, Ensuite cliquez sur l'icône `...`{.action}.
+
+![15 restore vm 06](images/15-restore-vm06.png){.thumbnail}
+
+Sélectionnez le dossier `/tmp`{.action} et cliquez sur `OK`{.action}.
+
+![15 restore vm 07](images/15-restore-vm07.png){.thumbnail}
+
+Cliquez sur `START RESTORE`{.action}.
+
+![15 restore vm 08](images/15-restore-vm08.png){.thumbnail}
+
+Cliquez sur `OK`{.action}.
+
+![15 restore vm 09](images/15-restore-vm09.png){.thumbnail}
+
+Positionnez-vous sur `Jobs`{.action} pour voir l'état d'avancement de la retauration.
+
+![15 restore vm 10](images/15-restore-vm10.png){.thumbnail}
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Aller plus loin <a name="gofurther"></a>
