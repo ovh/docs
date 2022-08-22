@@ -52,7 +52,7 @@ Solo se muestran los dominios de OVHcloud para los que usted es contacto técnic
 
 - **Añadir un dominio externo**
 
-Para un dominio externo a su cuenta de cliente (otro identificador de cliente) o externo a OVHcloud (proveedor de un dominio externo), seleccione `Añadir un dominio externo`{.action} y haga clic en `Siguiente`{.action}. Continúe en el paso [2.2\. Añadir un dominio externo](#add-external-domain).
+Para un dominio externo a su cuenta de cliente (otro identificador de cliente) o externo a OVHcloud (proveedor de un dominio externo), seleccione `Añadir un dominio externo`{.action} y haga clic en `Siguiente`{.action}. Continúe en el paso [2.2. Añadir un dominio externo](#add-external-domain).
 
 ![Multisitio](images/add-multisite-step1.png){.thumbnail}
 
