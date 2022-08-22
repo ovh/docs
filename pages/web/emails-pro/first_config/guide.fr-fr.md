@@ -136,4 +136,10 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 
 ## Aller plus loin
 
+[Ajouter un alias sur son compte e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-ajouter-un-alias-sur-un-e-mail-depuis-le-manager/)
+
+[Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/)
+
+[Mettre en place un répondeur automatique depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/)
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
