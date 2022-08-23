@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 3
 ---
 
-**Last updated 28th May 2021**
+**Last updated 22nd August 2022**
 
 ## Objective
 
@@ -54,12 +54,13 @@ For a domain name that is external to your customer account (another NIC handle)
 
 #### Step 2.1: Adding an OVHcloud-registered domain <a name="add-ovhcloud-domain"></a>
 
-This step only applies if you have selected "Add a domain registered with OVHcloud". For external domain names, go to [Step 2.2: Adding an external domain](#add-external-domain).
+> [!warning]
+> This step only applies if you have selected "Add an OVHcloud-registered domain". The domain name or its DNS zone must be **in your Control Panel**. For external domain names, go to [Step 2.2: add an external domain](#add-external-domain){.external}.
+
+You will now need to customise the way you add your domain or subdomain. Some of the choices offered cannot be selected, depending on which [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external} you have.
 
 > [!primary]
 > To add a subdomain, you must first select the primary domain from the list (example: mydomain.ovh). In the next step, you can enter the subdomain (e.g. **blog**.mydomain.ovh).
-
-You will now need to customise the way you add your domain or subdomain. Some of the choices offered cannot be selected, depending on which [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external} you have.
 
 ![multisite](images/add-multisite-step2.png){.thumbnail}
 

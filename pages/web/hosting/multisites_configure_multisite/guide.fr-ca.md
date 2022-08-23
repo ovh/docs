@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 26/05/2021**
+**Dernière mise à jour le 22/08/2022**
 
 ## Objectif
 
@@ -54,12 +54,13 @@ Dans le cas d'un nom de domaine externe à votre compte client (autre identifian
 
 #### Étape 2.1 : ajouter un domaine enregistré chez OVHcloud <a name="add-ovhcloud-domain"></a>
 
-Cette étape ne s'applique que si vous avez sélectionné « Ajouter un domaine enregistré chez OVHcloud ». Pour les noms de domaine externes, passez à l'[étape 2.2 : ajouter un nom de domaine externe](#add-external-domain){.external}.
+> [!warning]
+> Cette étape ne s'applique que si vous avez sélectionné « Ajouter un domaine enregistré chez OVHcloud ». Le nom de domaine ou sa zone DNS doivent se trouver dans votre espace client. Pour les noms de domaine externes, passez à l'[étape 2.2 : ajouter un nom de domaine externe](#add-external-domain){.external}.
+
+Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
 
 > [!primary]
 > Pour ajouter un sous-domaine, vous devez d’abord sélectionner le domaine principal dans la liste (exemple: mydomain.ovh). L’étape suivante vous permettra d’indiquer le sous-domaine (exemple: **blog**.mydomain.ovh).
-
-Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
 
 ![multisite](images/add-multisite-step2.png){.thumbnail}
 

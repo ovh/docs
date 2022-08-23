@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 27/05/2021**
+**Última atualização: 22/08/2022**
 
 ## Objetivo
 
@@ -58,12 +58,13 @@ No caso de um nome de domínio externo à sua conta de cliente (outro identifica
 
 #### Etapa 2.1: adicionar um domínio registado na OVHcloud <a name="add-ovhcloud-domain"></a>
 
-Esta etapa só se aplica se tiver selecionado "Adicionar um domínio registado na OVHcloud". Para os domínios externos, consulte o [passo 2.2: adicionar um domínio externo](#add-external-domain){.external}.
+> [!warning]
+> Esta etapa só se aplica se tiver selecionado "Adicionar um domínio registado na OVHcloud". O domínio ou a zona DNS devem estar localizados **na Área de Cliente**. Para os nomes de domínio externos, passe ao [passo 2.2: adicionar um domínio externo](#add-external-domain){.external}
+
+Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, alguns elementos propostos não poderão ser selecionados.
 
 > [!primary]
 > Para adicionar um subdomínio, deve primeiro selecionar o domínio principal na lista (exemplo: mydomain.ovh). O passo seguinte permitir-lhe-á indicar o subdomínio (exemplo: **blog**.mydomain.ovh).
-
-Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, alguns elementos propostos não poderão ser selecionados.
 
 ![multisite](images/add-multisite-step2.png){.thumbnail}
 
