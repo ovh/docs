@@ -1,7 +1,7 @@
 ---
-title: Configuring the storage on a HGR-STOR-3 server
-slug: hgrstor3-system-configuration 
-excerpt: Setting up and configuring the multipath as part of using an HGR-STOR-3 server
+title: Configuring the storage on a HGR-STOR-2 server
+slug: hgrstor2-system-configuration 
+excerpt: Setting up and configuring the multipath as part of using an HGR-STOR-2 server
 section: Advanced use
 order: 6
 ---
@@ -10,7 +10,7 @@ order: 6
 
 ## Objective
 
-Your HGR-STOR-3 server presents the same disks under different logical devices of the operating system. 
+Your HGR-STOR-2 server presents the same disks under different logical devices of the operating system. 
 
 Depending on the systems, without any specific post-configuration, this architecture can cause confusion (where is my data?) or even collisions (unintentional access to the same physical disk for different uses), which could cause the loss of your data.
 
@@ -31,7 +31,7 @@ This documentation details:
 
 ## Requirements
 
-- An HGR-STOR-3 server
+- An [HGR-STOR-2 server](https://www.ovhcloud.com/en-au/bare-metal/high-grade/hgr-stor-2/)
 
 ## Instructions
 
@@ -263,7 +263,7 @@ Name your Datastore at your convenience (`ds-hgr-sto3-01` in the example below).
 
 Select one of the disks shown.
 
-> [!primary] The disks presented by the HGR-STOR-3 are named `Local WDC Disk (naa.xxxxxxxxxxxx)`.
+> [!primary] The disks presented by the HGR-STOR-2 are named `Local WDC Disk (naa.xxxxxxxxxxxx)`.
 
 ![create-datastore-step02](images/esxi-dashboard-view-05.png){.thumbnail}
 
