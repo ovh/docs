@@ -9,7 +9,7 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 22/08/2022**
+**Dernière mise à jour le 23/08/2022**
 
 ## Objectif
 
@@ -24,13 +24,13 @@ category_l2: Backups
 
 ## Prérequis
 
-- Disposer de deux clusters Nutanix dans votre compte OVHcloud.
-    + Un contenant des machines virtuelles à sauvegarder avec 700 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs.
-    + Un distant pour recevoir la réplication des sauvegardes avec 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs.
+- Disposer de deux clusters Nutanix dans votre compte OVHcloud sur deux datacenters différents avec ces paramètres :
+    + 700 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs pour installer le serveur Tina et le serveur déduplication
+    + 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs pour installer un serveur de déduplication pour recevoir une réplication des données.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté sur le cluster via Prism Central.
+- Être connecté sur vos clusters via Prism Central.
 - Avoir souscrit une offre **Tina** auprès de la société **Atempo** et d'avoir les sources d'installation des logiciel **Tina**. 
-- Avoir un serveur DNS interne administrable (Par exemple un serveur DNS Microsoft).
+- Avoir un serveur DNS interne administrable (Par exemple un serveur DNS sur un serveur Microsoft Windows).
 
 ## En pratique
 
@@ -66,12 +66,12 @@ Dans ce guide nous allons utiliser trois machines virtuelles sous **AlmaLinux** 
 
 Les trois machines virtuelles seront réparties comme ceci :
 
-Deux sur un cluster Nutanix en France pour :
-- Un serveur de sauvegarde avec sa console d'administration
-- Un serveur de déduplication en mode **HSS** (Hyper Stream Server : Serveur de bandes virtuelles). 
+Deux sur un cluster Nutanix en France en tant que :
+- serveur de sauvegarde avec sa console d'administration
+- serveur de déduplication en mode **HSS** (Hyper Stream Server : Serveur de bandes virtuelles). 
 
-Une sur un cluster Nutanix au Canada relié en VPN pour :
-- Un serveur de déduplication en mode **HSS** servant de réplica au serveur de déduplication **HSS** en France.
+Une sur un cluster Nutanix au Canada relié en VPN avec pour rôle :
+- serveur de déduplication en mode **HSS** servant de réplica au serveur de déduplication **HSS** en France.
 
 
 
@@ -82,15 +82,15 @@ Téléchargez les sources d'installation d'ALMALINUX à partir de ce lien [Sourc
 
 Nous allons utiliser un serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine **ad-testing.lan** et rajouter ces adresses : 
 
-- **tina-srv.ad-testing.lan** : Serveur **Tina** avec l'adresse IP `192.168.0.210`
-- **tina-adefr.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.211`
+- **tina-srv.ad-testing.lan** : Serveur **Tina** avec l'adresse IP `192.168.0.210`.
+- **tina-adefr.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.211`.
 - **tina-adecan.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.10.210` pour recevoir une réplication de la sauvegarde.
 
 ![00 DNS Entry Example 01 ](images/00-dnsexample01.png){.thumbnail}
 
 L'adresse IP interne de **Prism Element** est **192.168.0.111** elle servira lors de la configuration de l'agent.
 
-Aidez-vous de ce guide pour créer une machine virtuelle sous Nutanix [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/)
+Aidez-vous de ce guide pour créer une machine virtuelle sous Nutanix [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/).
 
 <a name="createvmtina"></a>
 #### **Etape 2.1 Création de la machine virtuelle TINA-SRV**
@@ -102,7 +102,7 @@ Choisissez ces paramètres :
 - 4 `vCPU`.
 - 8 Go de `mémoire vive`.
 - Un lecteur CDROM connecté aux sources `d'ALMALINUX`.
-- Une carte réseau sur le réseau de `base` qui est le réseau d'administration du cluster Nutanix.
+- Une carte réseau sur le réseau d'administration du cluster Nutanix portant le nom `base`.
 
 ![01 Create Tina Srv VM 01](images/01-create-tinasrv01.png){.thumbnail}
 
@@ -117,7 +117,7 @@ Utilisez ces valeurs pour les deux VM de déduplication :
 - 4 `vCPU`.
 - 8Go de `mémoire vive`.
 - Un lecteur CDROM connecté aux sources `d'ALMALINUX`.
-- Une carte réseau sur le réseau de `base` qui est le réseau d'administration du cluster Nutanix.
+- Une carte réseau sur le réseau d'administration du cluster Nutanix portant le nom `base`.
 
 ![02 Create Tina Srv ADE VM 01](images/02-create-tinasrvade01.png){.thumbnail}
 
@@ -291,7 +291,7 @@ dnf install tigervnc-server
 vncpasswd
 mot de passe
 confirmation du mot de passe
-## répondre non à la création d'un mot de passe pour l'accès en lecture seule
+## répondre non à la création d'un mot de passe pour l'accès en uniquement en visionnage
 n
 ## création d'un lien symbolique sur une librairie afin de faire fonctionner le serveur de licences Tina
 ln  -s  /lib64/ld-linux-x86-64.so.2   /lib64/ld-lsb-x86-64.so.3
@@ -347,7 +347,7 @@ Copiez le contenu UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 Ensuite modifier ce fichier **/etc/fstab** à l'aide des informations copiées.
 
 ```conf
-# Ajout de cette ligne dans le fichier /etc/fstab
+# Ajout de cette ligne à la fin du fichier /etc/fstab
 UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     defaults        0 0
 ```
 
@@ -363,7 +363,7 @@ Le logiciel de déduplication **tina-ade** transforme votre serveur en dépôt d
 - L'un en France.
 - L'autre au Canada qui servira de réplica pour celui qui se trouve en France.
 
-Suivez ces instructions sur les machine virtuelles **tina-adefr** et **tina-ade**
+Suivez ces instructions sur les machines virtuelles **tina-adefr** et **tina-ade**
 
 Connectez-vous avec un client vnc sur le serveur `tina-adexx:5901`.
 
@@ -447,7 +447,7 @@ Ensuite cliquez sur le bouton `Suivant`{.action} en bas à droite.
 
 ![05 Configure tina ade04](images/05-configure-tina-ade04.png){.thumbnail}
 
-Pour la configuration **Hyperstream** sélectionnez le dossier `/home` et cliquez sur le bouton `Suivant`{.action} en bas.
+Pour la configuration **HyperStream** sélectionnez le dossier `/home` et cliquez sur le bouton `Suivant`{.action} en bas.
 
 ![05 Configure tina ade05](images/05-configure-tina-ade05.png){.thumbnail}
 
@@ -631,7 +631,7 @@ Cliquez sur `Done`{.action} pour valider la fin de l'installation.
 <a name="replication"></a>
 ### Etape 4 Mise en place de la réplication entre serveurs de déduplication.
 
-Nous allons configurer la réplication à partir du serveur qui se trouve en France **tina-adefr** vers le serveur se trouvant au Canada pour avoir une sauvegarde sur un site distant.
+Nous allons configurer la réplication à partir du serveur qui se trouve en France **tina-adefr** vers le serveur se trouvant au Canada **tina-adecan** pour avoir une sauvegarde sur un site distant.
 
 Connectez-vous à l'adresse https://tina-adefr:8181.
 
@@ -695,7 +695,7 @@ Sélectionnez `Atempo deduplication (HyperStream)` et cliquez sur `Next`{.action
 Saisissez ces informations : 
 
 - **Enter a name for the storage** : `Nom qui apparaitra pour les sauvegardes`.
-- **Deduplication-server where data will be saved** : `nom FQDN du serveur de deduplication`.
+- **Deduplication-server where data will be saved** : `nom FQDN du serveur de déduplication`.
 - **Username** : `Compte administrateur du serveur de déduplication`.
 - **Password** : `Mot de passe du compte administrateur`.
 
@@ -745,7 +745,7 @@ Sélectionnez `Declare a new application`, choisissez dans la liste `Nutanix Vir
 
 Modifier **Status** en `Enabled`{.action} et modifier ces paramètres :
 
-- **Virtualisation server** : `Adresse IP locale de Prism Element`.
+- **Virtualisation server** : `Adresse IP privée de Prism Element`.
 - **Virtualization user** : `Utilisateur administrateur de Prism Element`.
 - **virtualization password** : `Mot passe du compte administrateur Prism Element`.
 - **Nutanix protocol** : `https`.
@@ -835,7 +835,7 @@ La configuration du travail de sauvegarde est terminée, cliquez sur la `croix`{
 <a name="testbackup"></a>
 #### **Etape 5.5 Test du travail de sauvegarde**
 
-Il est possible de lancer le travail de sauvegarde manuellement, pour ceci restez sur `Agents`{.action} à droite, cochez le `travail de sauvegarde`{.action} et cliquez sur la flèche `exécution`{.action} pour lancer un travail de sauvegarde.
+Il est possible de lancer la sauvegarde manuellement, pour ceci restez sur `Agents`{.action} à droite, cochez le `travail de sauvegarde`{.action} et cliquez sur la flèche `exécution`{.action} pour lancer un travail de sauvegarde.
 
 ![13 test backup 01](images/13-test-backup01.png){.thumbnail}
 
@@ -949,7 +949,7 @@ Cochez la `case à cocher`{.action} à côté de la machine virtuelle pour la s�
 
 ![15 restore vm 03](images/15-restore-vm03.png){.thumbnail}
 
-Saisissez le compte `root`{.action} de la machine virtuelle qui sert de serveur **Tina** ainsi que le `mot de passe`{.action} et cliquez sur `Next`{.action}.
+Saisissez le compte `root`{.action} de la machine virtuelle du serveur **tina-srv** ainsi que le `mot de passe`{.action} et cliquez sur `Next`{.action}.
 
 ![15 restore vm 04](images/15-restore-vm04.png){.thumbnail}
 
@@ -973,7 +973,7 @@ Cliquez sur `OK`{.action}.
 
 ![15 restore vm 09](images/15-restore-vm09.png){.thumbnail}
 
-Positionnez-vous sur `Jobs`{.action} pour voir l'état d'avancement de la restauration.
+Cliquez sur `Jobs`{.action} pour voir l'état d'avancement de la restauration.
 
 ![15 restore vm 10](images/15-restore-vm10.png){.thumbnail}
 
