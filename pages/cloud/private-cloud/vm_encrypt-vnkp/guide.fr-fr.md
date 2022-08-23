@@ -24,7 +24,6 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 ## Prérequis
 
 - Avoir souscrit une offre [Hosted Private Cloud powered by VMware](https://www.ovh.com/fr/private-cloud/).
-- Avoir votre machine virtuelle vSphere en version 7.2.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à l’interface de gestion vSphere.
 - Ne pas utiliser la solution de réplication **Zerto**.
