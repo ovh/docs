@@ -1,7 +1,7 @@
 ---
 title: Upgrading Kubernetes version on an OVHcloud Managed Kubernetes cluster
 slug: upgrading-kubernetes-version
-excerpt: 'Find out how to upgrade Kubernetes version on an OVHcloud Managed Kubernetes cluster'
+excerpt: 'Find out how to upgrade the Kubernetes version on an OVHcloud Managed Kubernetes cluster'
 section: User guides
 ---
 
@@ -27,11 +27,11 @@ section: User guides
  }
 </style>
 
-**Last updated 22th August 2022**
+**Last updated 22nd August 2022**
 
 ## Objective
 
-OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. In this guide we cover how you can easily upgrade your cluster to the next minor version of Kubernetes.
+The OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. In this guide we cover how you can easily upgrade your cluster to the next minor version of Kubernetes.
 
 On OVHcloud Managed Kubernetes we have deployed a *Upgrade to the next minor version of Kubernetes* feature to upgrade your cluster from one version to the next (*e.g.* 1.13 to 1.14).
 
@@ -74,7 +74,7 @@ Once the update has been performed, you cannot revert to the previous version.
 
     ![Click on Upgrade to the next minor version](images/upgrading-kubernetes-version-002.png){.thumbnail}
 
-1. Click on `Confirm`{.action} button  
+1. Click on `Confirm`{.action}
 
     ![Click on Confirm](images/upgrading-kubernetes-version-003.png){.thumbnail}
 
@@ -87,8 +87,8 @@ The upgrading process can take several minutes (around 5 minutes per node in you
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
+To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
-Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our [tutorials](../).
+To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](../).
 
 Join our [community of users](https://community.ovh.com/en/).
