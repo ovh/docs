@@ -6,12 +6,12 @@ section: Fonctionnalités VMware vSphere
 order: 07
 ---
 
-**Dernière mise à jour le 18/08/2022**
+**Dernière mise à jour le 23/08/2022**
 
 ## Objectif
 
 
-Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSphere Native Key Provider** pour ensuite effectuer un chiffrement d'une machine virtuelle dans l'offre **Private Cloud** **OVHcloud**
+Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSphere Native Key Provider** pour ensuite effectuer un chiffrement d'une machine virtuelle dans l'offre **Hosted Private Cloud powered by VMware** **OVHcloud**
 
 **Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles à l'aide de vSphere Native Key Provider.**
 
@@ -23,11 +23,11 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 
 ## Prérequis
 
-- Avoir souscrit une offre [Hosted Private Cloud](https://www.ovh.com/fr/private-cloud/).
-- Avoir un **PCC** en version 7.
+- Avoir souscrit une offre [Hosted Private Cloud powered by VMware](https://www.ovh.com/fr/private-cloud/).
+- Avoir votre machine virtuelle vSphere en version 7.2.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à l’interface de gestion vSphere.
-- Ne pas utiliser la solution de réplication Zerto.
+- Ne pas utiliser la solution de réplication **Zerto**.
 
 ## Présentation
 
@@ -39,7 +39,7 @@ Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génère une clé **DEK*
 
 ## En pratique
 
-### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster PCC
+### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster Hosted Private Cloud powered by VMware 
 
 Avant de pouvoir utiliser les fonctionnalités de chiffrement il est nécessaire d'autoriser un utilisateur du **PCC** à gérer le chiffrement cette autorisation se fait à partir de l'espace client OVHcloud.
 
@@ -101,9 +101,9 @@ Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.a
 
 ![02 encrypt VM 03](images/02-encrypt-vm03.png){.thumbnail} 
 
-### Migration de la solution KMS Thalès vers **vSphere Native Key provider**
+### Migration d'une solution existante de chiffrement vers **vSphere Native Key provider**
 
-Certains clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes Thalès, Il est possible de migrer le chiffrement vers **vSphere Native Key Provider**
+Certains clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes, Il est possible de migrer le chiffrement vers **vSphere Native Key Provider**
 
 Suivez les instructions ci-dessous pour migrer une machine virtuelle chiffrée avec une clés KMS Thalès nommée **cluster** vers une clé vSphere Native Key Provider portant le nom **MY-NKP**.
 
@@ -123,19 +123,19 @@ Cliquez sur `la machine virtuelle`{.action} allez dans l'onglet `Résumé`{.acti
 
 ![03 migrate-from-kms-to-vnkp 04](images/03-migrate-from-kms-to-vnkp04.png){.thumbnail}
 
-Au travers du client **vSphere** faites un clic droit sur `la machine virtuelle`{.action} qui doit être rechiffrée, ensuite au travers du menu dans `VM Policies`{.action} choisissez `Chiffrer à nouveau`{.action}.
+Au travers du client **vSphere** faites un clic droit sur `la machine virtuelle`{.action} qui doit être à nouveau chiffrée, ensuite au travers du menu dans `VM Policies`{.action} choisissez `Chiffrer à nouveau`{.action}.
 
 > [!primary]
-> L'opération de rechiffrement peut se faire avec la machine virtuelle allumée, car uniquement la clé **DEK** est chiffrée à nouveau.
+> L'opération liée au nouveau chiffrement peut se faire avec la machine virtuelle allumée, car uniquement la clé **DEK** est chiffrée à nouveau.
 >
 
 ![03 migrate-from-kms-to-vnkp 05](images/03-migrate-from-kms-to-vnkp05.png){.thumbnail}
 
-Le rechiffrement s'effectue en quelques millisecondes car ce n'est que la clé **DEK** qui est rechiffrée à l'aide la nouvelle clé **vSphere Native Key Provider**.
+Le nouveau chiffrement s'effectue en quelques millisecondes car ce n'est que la clé **DEK** qui est à chiffrée à l'aide la nouvelle clé **vSphere Native Key Provider**.
 
 ![03 migrate-from-kms-to-vnkp 06](images/03-migrate-from-kms-to-vnkp06.png){.thumbnail}
 
-Cliquez sur la `machine virtuelle`{.action} ou le chiffrement a été modifié allez dans l'onglet `Résumé`{.action} vous pouvez constater que le chiffrement utilise un fournisseur de clés natif à coté du `cadenas`.
+Cliquez sur la `machine virtuelle`{.action} sur laquelle le chiffrement a été modifié, allez dans l'onglet `Résumé`{.action} vous pouvez constater que le chiffrement utilise un fournisseur de clés natif à coté du `cadenas`.
 
 ![03 migrate-from-kms-to-vnkp 07](images/03-migrate-from-kms-to-vnkp07.png){.thumbnail}
 
