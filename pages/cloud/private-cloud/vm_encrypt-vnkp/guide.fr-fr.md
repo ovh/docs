@@ -41,7 +41,7 @@ Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génère une clé **DEK*
 
 ### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster Hosted Private Cloud powered by VMware 
 
-Avant de pouvoir utiliser les fonctionnalités de chiffrement il est nécessaire d'autoriser un utilisateur du **PCC** à gérer le chiffrement cette autorisation se fait à partir de l'espace client OVHcloud.
+Avant de pouvoir utiliser les fonctionnalités de chiffrement il est nécessaire d'autoriser un utilisateur à gérer le chiffrement cette autorisation se fait à partir de l'espace client OVHcloud.
 
 <!--- Partie à écrire dès que la fonctionnalité sera présente
 
