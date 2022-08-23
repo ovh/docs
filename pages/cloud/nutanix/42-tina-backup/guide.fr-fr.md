@@ -25,12 +25,12 @@ category_l2: Backups
 ## Prérequis
 
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud sur deux datacenters différents avec ces paramètres :
-    + 700 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs pour installer le serveur Tina et le serveur déduplication
-    + 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs pour installer un serveur de déduplication pour recevoir une réplication des données.
+    + 700 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs pour le serveur Tina et le serveur déduplication.
+    + 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs pour le serveur de déduplication en réplication.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via Prism Central.
 - Avoir souscrit une offre **Tina** auprès de la société **Atempo** et d'avoir les sources d'installation des logiciel **Tina**. 
-- Avoir un serveur DNS interne administrable (Par exemple un serveur DNS sur un serveur Microsoft Windows).
+- Avoir un serveur DNS interne administrable (Par exemple le service DNS activé sur un serveur Microsoft Windows).
 
 ## En pratique
 
@@ -60,9 +60,14 @@ category_l2: Backups
 <a name="presentation"></a>
 ### Etape 1 Présentation
 
-Le logiciel **Tina** est un logiciel de sauvegarde modulaire composé de divers éléments que l'on peut installer sur des machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix. Il peut être utilisé avec plusieurs types de stockages différents. Pour plus d'informations sur la liste des matériels compatible cliquez sur ce lien [Aller plus loin](#gofurther).
+Le logiciel **Tina** est un logiciel de sauvegarde modulaire composé de divers éléments que l'on peut installer sur des machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix. Il peut être utilisé avec plusieurs types de stockages différents. Pour plus d'informations sur la liste des matériels compatibles cliquez sur ce lien [Aller plus loin](#gofurther).
 
-Dans ce guide nous allons utiliser trois machines virtuelles sous **AlmaLinux** en version 8.6. Cette distribution Linux est proche de RedHat (Dans le cas d'une exploitation en production il serait judicieux d'utiliser une **Redhat Enterprise Linux Server** disposant d'un support). 
+Dans ce guide nous allons utiliser trois machines virtuelles sous **AlmaLinux** en version 8.6.
+
+> [!Primary]
+>
+> Dans le cas d'une exploitation en production il serait judicieux d'utiliser une **Redhat Enterprise Linux Server** disposant d'un support logiciel à la place de la distribution **AlmaLinux**.
+>
 
 Les trois machines virtuelles seront réparties comme ceci :
 
@@ -82,9 +87,9 @@ Téléchargez les sources d'installation d'ALMALINUX à partir de ce lien [Sourc
 
 Nous allons utiliser un serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine **ad-testing.lan** et rajouter ces adresses : 
 
-- **tina-srv.ad-testing.lan** : Serveur **Tina** avec l'adresse IP `192.168.0.210`.
-- **tina-adefr.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.0.211`.
-- **tina-adecan.ad-testing.lan** : Serveur de déduplication en mode HSS avec l'adresse IP `192.168.10.210` pour recevoir une réplication de la sauvegarde.
+- **tina-srv.ad-testing.lan** : Serveur **Tina** en France avec l'adresse IP `192.168.0.210`.
+- **tina-adefr.ad-testing.lan** : Serveur de déduplication en France en mode HSS avec l'adresse IP `192.168.0.211`.
+- **tina-adecan.ad-testing.lan** : Serveur de déduplication au Canada en mode HSS avec l'adresse IP `192.168.10.210` 
 
 ![00 DNS Entry Example 01 ](images/00-dnsexample01.png){.thumbnail}
 
