@@ -102,20 +102,20 @@ pom.xml :
     <version>1.0-SNAPSHOT</version>
     
     <properties>
-        <spark.version>2.3.2</spark.version>
-        <hadoop.aws.version>2.7.5</hadoop.aws.version>
+        <spark.version>3.2.2</spark.version>
+        <hadoop.aws.version>2.8.5</hadoop.aws.version>
     </properties>
     
     <dependencies>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_2.11</artifactId>
+            <artifactId>spark-core_2.12</artifactId>
             <scope>provided</scope> 
             <version>${spark.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-sql_2.11</artifactId>
+            <artifactId>spark-sql_2.12</artifactId>
             <scope>provided</scope> 
             <version>${spark.version}</version>
         </dependency>

@@ -94,13 +94,13 @@ reboot
 
 ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Home Page`{.action}, clicca `...`{.action} in corrispondenza di "Boot" nella sezione **Il tuo VPS** e poi clicca su `Riavvia il tuo VPS`{.action} e `Conferma`{.action} nella finestra contestuale.
 
-![Riavvia](images/reboot-vps-current.png){.thumbnail}
+![Riavvia](images/reboot-vps-current01.png){.thumbnail}
 
 #### Installa o reinstalla il tuo VPS (gamma attuale) <a name="reinstallvps"></a>
 
 Le operazioni di installazione possono essere effettuate direttamente dallo Spazio Cliente OVHcloud. Apri la scheda “Home Page”, seleziona “SO/Distribuzione” nell’aera **Il tuo VPS**, quindi clicca sui tre puntini`...`{.action} e infine su `Reinstalla il tuo VPS`{.action}.
 
-![Reinstalla il VPS](images/2020panel_02.png){.thumbnail}
+![Reinstalla il VPS](images/2022panel_02.png){.thumbnail}
 
 Si apre una finestra da cui potrai scegliere:
 
