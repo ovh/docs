@@ -59,7 +59,7 @@ No caso de um nome de domínio externo à sua conta de cliente (outro identifica
 #### Etapa 2.1: adicionar um domínio registado na OVHcloud <a name="add-ovhcloud-domain"></a>
 
 > [!warning]
-> Esta etapa só se aplica se tiver selecionado "Adicionar um domínio registado na OVHcloud". O domínio ou a zona DNS devem estar localizados **na Área de Cliente**. Para os nomes de domínio externos, passe ao [passo 2.2: adicionar um domínio externo](#add-external-domain) {.external}
+> Esta etapa só se aplica se tiver selecionado "Adicionar um domínio registado na OVHcloud". O domínio ou a zona DNS devem estar localizados **na Área de Cliente**. Para os nomes de domínio externos, passe ao [passo 2.2: adicionar um domínio externo](#add-external-domain){.external}
 
 Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, alguns elementos propostos não poderão ser selecionados.
 
