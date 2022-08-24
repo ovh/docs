@@ -1,81 +1,82 @@
 ---
-title: "Configuration du stockage d'un serveur HGR-STOR-2"
-slug: hgrstor2-system-configuration
-excerpt: "Mise en place et configuration du multipath dans le cadre de l'utilisation d'un serveur HGR-STOR-2"
-section: 'Utilisation avancée'
+title: Configuring the storage on a HGR-STOR-2 server
+slug: hgrstor2-system-configuration 
+excerpt: Setting up and configuring the multipath as part of using an HGR-STOR-2 server
+section: Advanced use
 order: 6
 ---
 
-**Dernière mise à jour le 23/08/2022**
+**Last updated 24th August 2022**
 
-## Objectif
+## Objective
 
-Votre serveur HGR-STOR-2 présente les mêmes disques sous différents périphérique logiques (*devices*) du système d'exploitation. 
+Your HGR-STOR-2 server presents the same disks under different logical devices of the operating system. 
 
-En fonction des systèmes, sans post-configuration spécifique, cette architecture peut être source de confusion (où sont mes données ?) ou même de collisions (accès involontaire au même disque physique pour des usages différents), ce qui pourrait causer la perte de vos données.
+Depending on the systems, without any specific post-configuration, this architecture can cause confusion (where is my data?) or even collisions (unintentional access to the same physical disk for different uses), which could cause the loss of your data.
 
-En fonction de votre système, une post-configuration peut être nécessaire afin de mettre en place les fonctionnalités _multipath_.
+Depending on your system, you may need to do a post-configuration to set up multipath features.
 
-Le Multipath permet d’agréger les différentes possibilités d'accès au même disque (path) en tant que device logique unique.
+The Multipath allows you to aggregate different access possibilities to the same disk (path) as a single logical device.
 
-Cette documentation détaille :
+This documentation details:
 
-- les templates OVHcloud compatibles (testés par nos équipes);
-- le mode opératoire de post-configuration par OS.
+- compatible OVHcloud templates (tested by our teams)
+- the OS post-configuration procedure
 
 > [!primary]
 >
-> - Ce guide documente une configuration disposant de 102 disques mais les informations sont également valables pour les autres configurations.
-> - Vous ne trouverez que les versions les plus récentes des systèmes.
-> - Toutes les versions Debian testées ne détectent que 2 chemins et non 4, ce qui amènerait des collisions au niveau LVM notamment. 
+> - This guide documents a configuration with 102 disks, but the information is also valid for other configurations.
+> - You will only find the latest versions of the systems.
+> - All tested Debian versions detect only 2 paths and not 4, which would lead to LVM collisions.
 
-## Prérequis
+## Requirements
 
-- Disposer d'un serveur de type [HGR-STOR-2](https://www.ovhcloud.com/fr-ca/bare-metal/high-grade/hgr-stor-2/)
+- An [HGR-STOR-2 server](https://www.ovhcloud.com/en-ie/bare-metal/high-grade/hgr-stor-2/)
 
-## En pratique
+## Instructions
 
-Le serveur, en plus de ses disques internes, expose jusqu'à 102 Disques de 14 To de type SAS.
+In addition to its internal disks, the server supports up to 102 disks of 14TB type SAS.
 
 ![hardware](images/ovh-dashboard-view-02.png){.thumbnail}
 
-Les disques de stockages disposent de :
+Storage disks have:
 
-- 2 accès internes;
-- 2 accès via contrôleur SAS.
+- Internet access
+- 2 access via SAS controller.
 
-Il y a donc en tout 4 manières d'accéder à un disque:
+There are 4 ways to access a disk:
 
-- Contrôleur SAS 1 - Chemin 1-> Disque
-- Contrôleur SAS 1 - Chemin 2-> Disque
-- Contrôleur SAS 2 - Chemin 1-> Disque
-- Contrôleur SAS 2 - Chemin 2-> Disque
+- SAS Controller 1 - Path 1-> Disk
+- SAS Controller 1 - Path 2-> Disk
+- SAS Controller 2 - Path 1-> Disk
+- SAS Controller 2 - Path 2-> Disk
 
-Voici une vue logique :
+Here is a logical view:
 
 ![multipath](images/topologie-baie.png){.thumbnail}
 
-### Liste des templates OVHcloud
+### List of OVHcloud templates
 
-| Template | Procédure | Remarques |
-|----------|-----------|-----------|
-|ESXi 7| [Procédure pour ESXI-7](#esxi7) ||
-|AlmaLinux 8|[Procédure pour AlmaLinux 8, Rocky Linux 8, Fedora 34 Server](#redhatlike)||
-|Rocky Linux 8|[Procédure pour AlmaLinux 8, Rocky Linux 8, Fedora 34 Server](#redhatlike) ||
-|Fedora 34 Server|[Procédure pour AlmaLinux 8, Rocky Linux 8, Fedora 34 Server](#redhatlike) ||
-|Proxmox VE 7|[Procédure pour Proxmox VE 7](#proxmoxve7)||
-|Ubuntu Server 22.04 LTS|[Procédure pour Ubuntu Server 22.04 LTS](#ubuntu22)||
-|Debian toutes versions| __Non supportée__ | Ne détecte que la moitié des chemins |
-|Windows Server 2019|[Procédure pour Windows](#windows)||
+| Template | Procedure | Remarks | 
+|----------|-----------|---------| 
+|ESXi 7| [Procedure for ESXI-7](#esxi7) | 
+|AlmaLinux 8|[Procedure for AlmaLinux 8, Rocky Linux 8, Fedora 34 Server](#redhatlike)|| 
+|Rocky Linux 8|[Procedure for AlmaLinux 8, Rocky Linux 8, Fedora 34 Server](#redhatlike) || 
+|Fedora 34 Server|[Procedure for AlmaLinux 8, Rocky Linux 8, Fedora 34 Server](#redhatlike) ||
+|Proxmox VE 7|[Procedure for Proxmox VE 7](#proxmoxve7)|| 
+|Ubuntu Server 22.04 LTS|[Procedure for Ubuntu Server 22.04 LTS](#ubuntu22)|| 
+|Debian all versions| __Not supported__ | Detects only half of the paths | 
+|Windows Server 2019|[Procedure for Windows](#windows)||
 
-#### Avertissement concernant LVM sur Linux
 
-> [!warning]
-> Ne créez vos PV **que** sur les devices en multipath de type `/dev/mapper/mpathXX`.
+#### Linux LVM Warning
 
-Exemple :
+> [!warning] 
+> Create your PVs **only** on multipath devices of type `/dev/mapper/mpathXX`.
 
-- Création des PVs :
+For example:
+
+- Creation of PVs:
 
 ```bash
 [root@nsxxxxxx ~]# pvcreate /dev/mapper/mpathb /dev/mapper/mpathc
@@ -83,7 +84,7 @@ Physical volume "/dev/mapper/mpathb" successfully created.
 Physical volume "/dev/mapper/mpathc" successfully created.
 ```
 
-- Création d'un VG :
+- Creation of a VG
 
 ```bash
 [root@nsxxxxxx ~]# vgcreate vg_test01 /dev/mapper/mpathb /dev/mapper/mpathc
@@ -93,7 +94,7 @@ Physical volume "/dev/mapper/mpathc" successfully created.
   vg_test01   2   0   0 wz--n- <25.47t <25.47t
 ```
 
-- Création d'un LV :
+- Creation of a LV
 
 ```bash
 [root@nsxxxxxx ~]# lvcreate --name lv_test01 --size 1To vg_test01
@@ -103,12 +104,12 @@ Physical volume "/dev/mapper/mpathc" successfully created.
   lv_test01 vg_test01 -wi-a----- 1.00t
 ```
 
-#### Avertissement concernant ZFS sur Linux
+#### ZFS warning on Linux
 
-> [!warning]
-> Ne créez vos zfspool **que** sur les devices en multipath de type `/dev/mapper/mpathXX`.
+> [!warning] 
+> Create your zfspool **only** on multipath devices of type `/dev/mapper/mpathXX`.
 
-Exemple :
+For example:
 
 ```bash
 [root@nsxxxxxx ~]# zpool create -f zfspool /dev/mapper/mpathe /dev/mapper/mpathf /dev/mapper/mpathg
@@ -139,17 +140,17 @@ zfspool                           39T  128K   39T   1% /zfspool
 
 ### ESXi-7  <a name="esxi7"></a>
 
-ESXi n'a pas besoin d'installation de composants supplémentaires, le multipath est automatiquement géré.
+ESXi does not need to install any additional components, the multipath is automatically managed.
 
-Si nécessaire, vous pouvez procéder aux vérifications décrites ci-dessous.
+If necessary, you can perform the checks described below.
 
-#### Vérifications
+#### Checks
 
-Connectez-vous via SSH en shell sur votre ESXi.
+Connect via SSH in shell on your ESXi.
 
-##### **Liste des adaptateurs**
+##### **Adapter List**
 
-Vérifiez que ESXi a bien détecté les deux contrôleurs SAS de types similaires à ce qui suit :
+Verify that ESXi has detected both SAS controllers of the following types:
 
 ```bash
 [root@nsxxxxxx:~] esxcli storage san sas list
@@ -180,7 +181,7 @@ Vérifiez que ESXi a bien détecté les deux contrôleurs SAS de types similaire
    Driver Version: 19.00.02.00
 ```
 
-##### **Liste des disques**
+##### **Disk list**
 
 ```bash
 root@nsxxxxxx:~] esxcli storage core device list | grep 'Display Name: Local WDC Disk'
@@ -203,16 +204,16 @@ root@nsxxxxxx:~] esxcli storage core device list | grep 'Display Name: Local WDC
    Display Name: Local WDC Disk (naa.5000cca29bccc5ec)
 ```
 
-Vous devez voir 102 ou 50 disques.
+You should see 102 or 50 disks.
 
 ```bash
 [root@nsxxxxxx:~] esxcli storage core device list | grep 'Display Name: Local WDC Disk' | wc -l
 102
 ```
 
-##### **Détails du multipath**
+##### **Multipath details**
 
-Afin de ne pas surcharger inutilement cette documentation, nous n'affichons qu'un des éléments retournés.
+To avoid overloading this documentation, we only display one of the returned items.
 
 ```bash
 root@nsxxxxxx:~] esxcli storage hpp path list
@@ -231,101 +232,101 @@ naa.5000cca259203a00
  
 ...
 ```
-On note que pour chaque device, il existe bien 4 chemins d'accès (ligne _Paths_).
+ 
+We note that for each device, there are indeed 4 paths.
 
-- Disque vu par le système : `Local WDC Disk (naa.5000cca259203a00)`
-- Deux contrôleurs : `vmhba2` et _`vmhba3`
-- Deux disques terminaux: `T72` et `T175`
+- System Viewed Disk: `Local WDC Disk (naa.5000cca259203a00)`
+- Two controllers: `vmhba2` and `vmhba3`
+- Two terminal disks: `T72` and `T175`
 
-##### **Vue via l'interface WEB**
+##### **View via the web interface**
 
-Sélectionnez `Storage`{.action} puis l'onglet `Devices`{.action}.
+Select `Storage`{.action}, then select the `Devices`{.action} tab.
 
-Filtrez les résultats avec le mot-clé `WDC`.
+Filter the results with the keyword `WDC`.
 
 ![esxi-devices-list](images/esxi-dashboard-view-01.png){.thumbnail}
 
-Descendez en bas de la liste, vous devez avoir un décompte de 102 disques (ou 50, en fonction de la configuration utilisée).
+At the bottom of the list, you must have a count of 102 disks (or 50, depending on the configuration used).
 
 ![esxi-devices-count](images/esxi-dashboard-view-02.png){.thumbnail}
 
-#### Ajout d'un Datastore
+#### Add a datastore
 
-Sélectionnez `Storage`{.action} puis l'onglet `Datastores`{.action}.
+Select `Storage`{.action}, then select the `Datastores`{.action} tab.
 
 ![select-datastore-pane](images/esxi-dashboard-view-03.png){.thumbnail}
 
-Cliquez sur l’icône `New datastore`{.action}.
+Click the `New datastore`{.action} icon.
 
 ![create-datastore-step01](images/esxi-dashboard-view-04.png){.thumbnail}
 
-Nommez votre Datastore à votre convenance (`ds-hgr-sto3-01` dans l'exemple ci-dessous).
+Name your Datastore at your convenience (`ds-hgr-sto3-01` in the example below).
 
-Sélectionnez l'un des disques présentés.
+Select one of the disks shown.
 
-> [!primary]
-> Les disques présentés par le HGR-STOR-2 sont nommés `Local WDC Disk (naa.xxxxxxxxxxxx)`.
+> [!primary] 
+> The disks presented by the HGR-STOR-2 are named `Local WDC Disk (naa.xxxxxxxxxxxx)`.
 
 ![create-datastore-step02](images/esxi-dashboard-view-05.png){.thumbnail}
 
-**Options de partitionnement :**
+**Partitioning options:**
 
-Par défaut, tout le disque est attribué (pas de partitionnement).
+By default, the entire disk is allocated (no partitioning).
 
 ![create-datastore-step03](images/esxi-dashboard-view-06.png){.thumbnail}
 
-**Validation finale :**
+**Final confirmation:**
 
-A ce stade, vous pouvez modifier vos choix ou annuler la création du Datastore si besoin.<br>
-Dans le cas contraire, cliquez sur `Finish`{.action}.
+At this point, you can modify your choices or cancel the creation of the Datastore if necessary.<br>
+Otherwise, click `Finish`{.action}.
 
 ![create-datastore-step04](images/esxi-dashboard-view-07.png){.thumbnail}
 
-Un message d'information vous rappele que le disque sélectionné sera entièrement effacé.
+An information message reminds you that the selected disk will be completely erased.
 
 ![create-datastore-step05](images/esxi-dashboard-view-08.png){.thumbnail}
 
-Votre Datastore est alors disponible.
+Your datastore is now available.
 
 ![create-datastore-step06](images/esxi-dashboard-view-09.png){.thumbnail}
 
-#### Extension d'un Datastore
+#### Datastore extension
 
-Sélectionnez le datastore à étendre.
+Select the datastore to extend.
 
-Cliquez sur l’icône `Increase capacity`{.action}.
-
+Click the `Increase capacity`{.action} icon.
 ![extend-datastore-step01](images/esxi-dashboard-extendds-01.png){.thumbnail}
 
-Sélectionnez `Add an extent to existing VMFS datastore`{.action}.
+Select `Add an extent to existing VMFS datastore`{.action}.
 
 ![extend-datastore-step02](images/esxi-dashboard-extendds-02.png){.thumbnail}
 
-Sélectionner l'un des *devices* présentés.
+Select one of the devices shown.
 
 ![extend-datastore-step03](images/esxi-dashboard-extendds-03.png){.thumbnail}
 
-Par défaut, l'ensemble du disque sera utilisé.
+By default, the entire disk will be used.
 
 ![extend-datastore-step04](images/esxi-dashboard-extendds-04.png){.thumbnail}
 
-Un message d'information vous rappele que le disque sélectionné sera entièrement effacé.
+An information message reminds you that the selected disk will be completely erased.
 
 ![extend-datastore-step05](images/esxi-dashboard-view-08.png){.thumbnail}
 
-Votre Datastore est alors étendu.
+Your Datastore is now extended.
 
-L'exemple ci-dessous documente une augmentation de 12.73 TB à 25.47 TB.
+The example below documents an increase from 12.73 TB to 25.47 TB.
 
 ![extend-datastore-step06](images/esxi-dashboard-extendds-05.png){.thumbnail}
 
-### AlmaLinux 8, Rocky Linux 8, Fedora 34 Server  <a name="redhatlike"></a>
+### AlmaLinux 8, Rocky Linux 8, Fedora 34 Server <a name="redhatlike"></a>
 
 #### Post-configuration
 
-Les paquets nécessaires sont déjà installés.
+The necessary packages are already installed.
 
-Exemple pour AlmaLinux :
+Example for AlmaLinux:
 
 ```bash
 [root@nsxxxxxx ~]# yum install device-mapper-multipath sg3_utils
@@ -340,7 +341,7 @@ Nothing to do.
 Complete!
 ```
 
-En revanche, la configuration multipath reste à faire, le fichier `/etc/multipath.conf` n'étant pas présent.
+However, the multipath configuration still needs to be done, as the file `/etc/multipath.conf` is not present.
 
 ```bash
 [root@nsxxxxxx ~]# systemctl start multipathd
@@ -357,26 +358,26 @@ Apr 14 09:38:09 | /etc/multipath.conf. See man mpathconf(8) for more details
 Apr 14 09:38:09 | DM multipath kernel driver not loaded
 ```
 
-#### Configuration du service multipath
+#### Configuring the multipath service
 
-Activez le service :
+Activate the service:
 
 ```bash
 [root@nsxxxxxx ~]# mpathconf --enable --with_multipathd y
-```
-Activez les options `user_friendly_names` ainsi que `find_multipaths`.
+``` 
+Enable the `user_friendly_names` and `find_multipaths` options.
 
 ```bash
 [root@nsxxxxxx ~]# mpathconf --enable  --user_friendly_names  y  --find_multipaths  y
 ```
 
-Redémarrez le service `multipathd` :
+Restart the `multipathd` service:
 
 ```bash
 [root@nsxxxxxx ~]# systemctl restart multipathd
 ```
 
-Vérifiez le bon statut du service `multipathd` :
+Check the status of the `multipathd` service:
 
 ```bash
 
@@ -394,7 +395,7 @@ Vérifiez le bon statut du service `multipathd` :
            └─15533 /sbin/multipathd -d -s
 ```
 
-Listez les devices multipath :
+List the multipath devices:
 
 ```bash
 [root@nsxxxxxx ~]# multipath -l
@@ -432,15 +433,15 @@ size=13T features='0' hwhandler='0' wp=rw
   `- 15:0:112:0 sdle    67:448  active undef running
 ```
 
-On constate que nous avons bien 4 chemins pour chaque device mpathXX listé.
+We can see that we have 4 paths for each mpathXX device listed.
 
 ### Ubuntu Server 22.04 LTS <a name="ubuntu22"></a>
 
 #### Post-configuration
 
-Il n'y a pas de paquets additionnels à installer.
+There are no additional packages to install.
 
-La configuration se fait automatiquement.
+The configuration is done automatically.
 
 ```bash
 ubuntu@nsxxxxxx:~$ sudo systemctl status multipathd
@@ -466,7 +467,7 @@ qApr 14 14:01:13 packer-output-aa7a287c-0b44-48b2-8087-614118424744 systemd[1]: 
 
 #### Post-configuration
 
-Installez le paquet `multipath-tools` :
+Install the `multipath-tools` package:
 
 ```bash
 root@nsxxxxxxx:~# apt-get install multipath-tools
@@ -483,29 +484,29 @@ Re-executing '/etc/kernel/postinst.d/zz-proxmox-boot' in new private mount names
 No /etc/kernel/proxmox-boot-uuids found, skipping ESP sync.
 ```
 
-Générez la configuration initiale :
+Generate the initial configuration:
 
 ```bash
 root@nsxxxxxxx:~# multipath -T > /etc/multipath.conf
 ```
 
-Éditez le fichier `/etc/multipath.conf`
+Edit the `/etc/multipath.conf` file
 
-- Modifiez l'option `find_multipaths` à `on`.
+- Change the `find_multipaths` option to `on`.
 
 ![proxmox-config-01](images/proxmox-config-01.png){.thumbnail}
 
-- Modifiez l'option `use_friendly_names` à `yes`.
+- Change the `use_friendly_names` option to `yes`.
   
 ![proxmox-config-02](images/proxmox-config-02.png){.thumbnail}
 
-Sauvegardez le fichier `/etc/multipath.conf` puis redémarrez le service `multipathd`.
+Save the `/etc/multipath.conf` file, then restart the `multipathd` service.
 
 ```bash
 root@nsxxxxxxx:~# systemctl restart multipathd
 ```
 
-Vérifiez le statut du service `multipathd` :
+Check the status of the `multipathd` service:
 
 ```bash
 root@nsxxxxxxx:~# systemctl status multipathd
@@ -523,11 +524,11 @@ CGroup: /system.slice/multipathd.service
 └─23680 /sbin/multipathd -d -s
 ```
 
-#### Ajout d'un node storage de type LVM sur Proxmox
+#### Add an LVM storage node to Proxmox
 
-Il est nécessaire de créer les Volumes Groupe (VG) manuellement afin que Proxmox puisse les utiliser.
+It is necessary to create the Volume Groups (VG) manually so that Proxmox can use them.
 
-Exemple : création d'un VG sur 3 PV multipath.
+Example: creating a VG on 3 PV multipath.
 
 ```bash
 root@nsxxxxxxx:~# pvcreate /dev/mapper/mpathb
@@ -546,39 +547,39 @@ root@nsxxxxxxx:~# vgs
   vg_hgrstore01   3   0   0 wz--n-  38.20t 38.20t
 ```
 
-**Ajout du storage node :**
+**Add the storage node:**
 
-Dans l'interface Proxmox, sélectionnez votre node puis LVM.
+In the Proxmox interface, select your node, then LVM.
 
-Cliquez sur le bouton `Reload`{.action}.
+Click the `Reload`{.action} button.
 
 ![add-ns-lvm-step01](images/proxmox-add-storage01.png){.thumbnail}
 
-Le nouveau VG est maintenant listé.
+The new VG is now listed.
 
 ![add-ns-lvm-step02](images/proxmox-add-storage02.png){.thumbnail}
 
-- Sélectionnez `Datacenter`{.action} -> `Storage`{.action};
-- puis cliquez sur le bouton `Add`{.action} -> `LVM`{.action};
-- renseignez l'ID avec le nom de votre stockage ainsi que le VG cible que vous venez de créer.
+- Select `Datacenter`{.action} -> `Storage`{.action};
+- then click on the `Add`{.action} button -> `LVM`{.action};
+- enter the ID with your storage name, and the target VG you have just created.
 
-Une fois votre configuration définie, cliquez sur le bouton `Add`{.action}.
+Once you have set your configuration, click the `Add`{.action} button.
 
 ![add-ns-lvm-step03](images/proxmox-add-storage03.png){.thumbnail}
 
-Le stockage est maintenant disponible.
+The storage is now available.
 
 ![add-ns-lvm-step04](images/proxmox-add-storage04.png){.thumbnail}
 
-Vous pouvez l'utiliser pour le déploiement de VMs ou autres.
+You can use it for deploying VMs or other devices.
 
 ![add-ns-lvm-step05](images/proxmox-add-storage05.png){.thumbnail}
 
-#### Ajout d'un node storage de type ZFS sur Proxmox
+#### Add a ZFS storage node to Proxmox
 
-Il est nécessaire de créer les pools ZFS manuellement afin que Proxmox puisse les utiliser.
+It is necessary to create the ZFS pools manually so Proxmox can use them.
 
-Exemple: création d'un pool sur 2 disques multipath.
+Example: creating a pool on 2 multipath disks.
 
 ```bash
 root@nsxxxxxxx:~# zpool status
@@ -596,18 +597,18 @@ root@nsxxxxxxx:~# zfs create zfspool01/fs01
 root@nsxxxxxxx:~# zfs create zfspool01/fs02
 ```
 
-Dans l'interface Proxmox:
+In the Proxmox interface:
 
-- sélectionnez `Datacenter`{.action} -> `Storage`{.action};
-- puis cliquez sur le bouton `Add`{.action} -> `ZFS`{.action}.
+- Select `Datacenter`{.action} -> `Storage`{.action}.
+- then click the `Add`{.action} button -> `ZFS`{.action}.
 
 ![add-ns-zfs-step01](images/proxmox-add-storage06.png){.thumbnail}
 
-Renseignez l'ID avec le nom de votre stockage et sélectionnez l'un des ZFS Pools cibles que vous venez de créer.
+Enter the ID with your storage name, and select one of the ZFS Target Pools you have just created.
 
 ![add-ns-zfs-step02](images/proxmox-add-storage07.png){.thumbnail}
 
-Votre stockage Proxmox est maintenant utilisable.
+Your Proxmox storage is now usable.
 
 ![add-ns-zfs-step03](images/proxmox-add-storage08.png){.thumbnail}
 
@@ -616,7 +617,7 @@ Votre stockage Proxmox est maintenant utilisable.
 
 #### Post-configuration
 
-##### **Etape 1 - Installation de la fonctionnalité `MPIO`**
+##### **Step 1 - Installing the `MPIO` feature**
 
 - **Via Powershell**
 
@@ -628,13 +629,13 @@ Install-WindowsFeature -Name Multipath-IO
 
 ![windows-config-01](images/windows-config-01.png){.thumbnail}
 
-Quelle que soit la méthode utilisée, redémarrez le serveur pour finaliser l'installation du composant.
+Whichever method you use, restart the server to finalize the component installation.
 
-##### **Etape 2 - Ajout du stockage dans MPIO**
+##### **Step 2 - Add storage in MPIO**
 
 - **Via Powershell**
 
-Récupérez les informations du stockage `VendorId` et `HardwareId` :
+Retrieve the `VendorId` and `HardwareId` storage information:
 
 ```Powershell
 PS C:\Windows\system32> Get-MPIOAvailableHW
@@ -644,7 +645,7 @@ VendorId ProductId        IsMultipathed   IsSPC3Supported BusType
 WDC      WUH721414AL5201  False           False           SAS
 ```
 
-Ajoutez le périphérique en utilisant les informations `VendorId` et `HardwareId` précédemment récupérées :
+Add the device using the previously retrieved `VendorId` and `HardwareId` information:
 
 ```Powershell
 PS C:\Windows\system32> New-MSDSMSupportedHw -VendorId WDC -ProductId WUH721414AL5201
@@ -654,7 +655,7 @@ VendorId ProductId
 WDC      WUH721414AL5201
 ```
 
-Vérifiez que le périphérique est maintenant bien pris en compte:
+Check that the device is now properly registered:
 
 ```Powershell
 PS C:\Windows\system32> Get-MSDSMSupportedHw
@@ -665,25 +666,27 @@ Vendor 8 Product       16
 WDC      WUH721414AL5201
 ```
 
-> [!primary]
-> Le stockage par défaut `Vendor 8 Product 16` n'est pas utilisé. Vous pouvez le laisser ou le retirer (dans ce dernier cas, utilisez la commande `Remove-MSDSMSupportedHw`).
+> [!primary] 
+> The default storage `Vendor 8 Product 16` is not used. You can leave it or remove it (in the latter case, use the `Remove-MSDSMSupportedHw` command).
 >
 
 - **Via Server Manager**
 
-Lancez le panneau de contrôle MPIO. Pour cela, accédez au menu `Démarrer`{.action} et recherchez `MPIO`.
+Launch the MPIO control panel. To do this, go to the `Start`{.action} menu and search for `MPIO`.
 
-Dans l'onglet `Discover Multi-Paths`{.action}, sélectionnez le périphérique listé dans la fenètre `Others` puis ajoutez-le en cliquant sur le bouton `Add`{.action}:
+
+In the `Discover Multi-Paths`{.action} tab, select the device listed in the `Others` window and then add it by clicking the `Add`{.action} button:
+
 
 ![windows-config-02](images/windows-config-02.png){.thumbnail}
 
-Quelle que soit la méthode utilisée, redémarrez le serveur pour appliquer le changement de configuration.
+Whichever method you use, restart the server to apply the configuration change.
 
-##### **Etape 3 - Configuration de la stratégie d'équilibrage (Policy) par défaut pour MPIO**
+##### **Step 3 - Configuring the Default Balancing Policy for MPIO**
 
 - **Via Powershell**
 
-Il s'agit de la méthode recommandée car l'utilisation de Server Manager vous obligera à définir la stratégie pour chaque disque.
+This is the recommended method because using Server Manager will require you to set policy for each disk.
 
 ```Powershell
 PS C:\Windows\system32> Set-MSDSMGlobalDefaultLoadBalancePolicy -Policy RR
@@ -692,25 +695,24 @@ PS C:\Windows\system32> Get-MSDSMGlobalDefaultLoadBalancePolicy
 RR
 ```
 
-Les stratégies (Policy) possibles sont :
+Possible policies are:
 
 | Policy | Description |
-|--------|----------------|
-|None|Stratégie d'équilibrage de charge globale par défaut.|
-|FDO|Fail Over Only: Stratégie qui n'effectue pas d'équilibrage de charge. Cette stratégie utilise un seul chemin actif, les autres chemins sont des chemins d'accès de secours.|
-|RR|Round Robin: Stratégie d'équilibrage de charge qui permet d'utiliser tous les chemins disponibles pour MPIO de manière équilibrée.|
-|LQD|Least Queue Depth: Stratégie d'équilibrage de charge qui envoie les E/S vers le chemin ayant le moins de demandes d'E/S actuellement en attente.|
-|LB|Least Blocks: Stratégie d'équilibrage de charge qui envoie les E/S vers le chemin ayant le moins de blocs de données en cours de traitement.|
+|--------|-------------| 
+|None|Default workload balancing policy.| 
+|FDO|Fail Over Only: A policy that does not perform load balancing. This policy uses only one active path, other paths are fallback paths.| 
+|RR|Round Robin: Load balancing policy that allows all available paths for MPIO to be used in a balanced way.| |LQD|Least Queue Depth: Load balancing policy that sends I/O to the path with the least I/O requests currently outstanding.| 
+|LB|Least Blocks Load balancing policy that sends I/O to the path with the least data blocks currently being processed.|
 
 - **Via Server Manager**
 
-Cette méthode n'est pas recommandée car elle nécessite de définir la stratégie pour chaque disque.
+This method is not recommended because it requires setting the policy for each disk.
 
-Vu que `MPIO` est déja installé, l'onglet MPIO est accessible dans les propriétés disque.
+Since the `MPIO` is already installed, the MPIO tab is accessible in the disk properties.
 
 ![windows-config-03](images/windows-config-03.png){.thumbnail}
 
-Ces trois étapes achevées, vous pouvez lister les disques :
+Once you have completed these three steps, you can list the disks:
 
 ```powershell
 PS C:\Windows\system32> get-disk| Sort-Object -Property number |Where-Object -Property FriendlyName -Match WDC
@@ -736,6 +738,6 @@ Number Friendly Name            Serial Number            HealthStatus         Op
 107    WDC WUH721414AL5201      QGKM9E0T                 Healthy              Offline                  12.73 TB   RAW
 ```  
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Join our community of users on <https://community.ovh.com/en/>.
