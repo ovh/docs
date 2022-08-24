@@ -119,7 +119,8 @@ Il faut dans ce cas modifier votre [mot de passe administrateur](https://codex.w
 Si vous trouvez cela trop compliqué, il est possible de mettre à jour votre e-mail depuis [phpMyAdmin](https://docs.ovh.com/fr/hosting/connexion-base-de-donnees-serveur-bdd/){.external} dans la table user et revenir à la page de connexion, cliquez sur Mot de passe oublié, et d'attendre que l'e-mail vous soit envoyé.
 
 
-### Remplacez les fichiers de WordPress avec ceux d'un WordPress fraichement telecharge.
+### Remplacez les fichiers de WordPress avec ceux d'un WordPress fraichement téléchargé
+
 Un remplacement de tous vos fichiers de base permettra d'assurer qu'ils ne sont plus laissés dans un état piraté.
 
 - rendez-vous sur le site officiel de [WordPress](https://fr.wordpress.org){.external} .
