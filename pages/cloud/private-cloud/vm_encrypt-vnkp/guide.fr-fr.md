@@ -11,7 +11,7 @@ order: 07
 ## Objectif
 
 
-Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSphere Native Key Provider** pour ensuite effectuer un chiffrement d'une machine virtuelle dans l'offre **Hosted Private Cloud powered by VMware** **OVHcloud**
+Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSphere Native Key Provider** pour ensuite effectuer un chiffrement d'une machine virtuelle dans l'offre d'**OVHcloud**, **Hosted Private Cloud powered by VMware**.
 
 **Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles à l'aide de vSphere Native Key Provider.**
 
@@ -26,15 +26,15 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 - Avoir souscrit une offre [Hosted Private Cloud powered by VMware](https://www.ovh.com/fr/private-cloud/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à l’interface de gestion vSphere.
-- Ne pas utiliser la solution de réplication **Zerto**.
+- La solution de réplication **Zerto** n'est pas compatible ce jour avec le chiffrement. Les VMs chiffrées ne pourront donc pas être répliquées.
 
 ## Présentation
 
-**vSphere Native Key provider** permet de chiffrer les machines virtuelles ou d'utiliser des périphérique **TPM 2.0** sans avoir besoin d'un serveur **KMS** (*Key Management Server*) externe.
+**vSphere Native Key provider** permet de chiffrer les machines virtuelles, d'activer un vTPM dans les machines virtuelles ou d'activer le chiffrement "data-at-rest" sur vSAN, sans avoir besoin d'un serveur **KMS** (*Key Management Server*) externe.
 
 Il est possible d'exporter la clé **vSphere Native Key provider** et de la réimporter sur un autre cluster.
 
-Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génère une clé **DEK** stockée en mémoire, cette clé servira à effectuer le chiffrement de la machine virtuelle et de sa donnée. Ensuite la clé **DEK** sera à son tour chiffrée à l'aide de **vSphere Native Key provider** et stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
+Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génère une clé **DEK**, cette clé servira à effectuer le chiffrement des fichiers composant la machine virtuelle et donc de ses données. La clé **DEK** est chiffrée à l'aide de clé générée par **vSphere Native Key provider**. Cette DEK chiffrée est stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
