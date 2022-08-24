@@ -6,7 +6,7 @@ section: Gestion depuis l’espace client
 order: 6
 ---
 
-**Dernière mise à jour le 22/08/2022**
+**Dernière mise à jour le 24/08/2022**
 
 ## Objectif
 
@@ -29,7 +29,6 @@ En raison d'une activité accrue, ou simplement de nouveaux besoins, votre insta
 
 - Avoir [créé une instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-
 
 Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche. 
 
@@ -54,8 +53,7 @@ Si votre disque est égal ou inférieur à 50 Go, vous pouvez passer à une `Ins
 > Attention, dans le cas où vous éditez une instance de type *flex*, il n'est pas possible de basculer vers une instance classique via l'espace client. Pour plus d'informations, veuillez consultez notre guide sur [Basculer d’une instance flex à une instance classique](https://docs.ovh.com/fr/public-cloud/modifier-une-instance-flex/).
 >
 
-Une fois la sélection effectuée, cliquez sur `modifier le modèle`{.action} pour confirmer votre choix.
-
+Une fois la sélection effectuée, cliquez sur `Modifier le modèle`{.action} pour confirmer votre choix.
 
 ### Redimensionnement du disque sous Windows
 

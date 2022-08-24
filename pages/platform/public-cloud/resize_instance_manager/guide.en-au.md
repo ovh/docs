@@ -6,7 +6,7 @@ section: Management via Control Panel
 order: 6
 ---
 
-**Last updated 22nd August 2022**
+**Last updated 24th August 2022**
 
 ## Objective
 
@@ -53,7 +53,7 @@ If your disk is equal or smaller to 50GB, you can switch to a `Flexible instance
 > Note that in case you are editing a flex instance, it is not possible to revert to a classic instance via the control panel. For more information, please consult our guide on [Revert a flex instance](https://docs.ovh.com/au/en/public-cloud/revert-a-flex-instance/).
 >
 
-Once the selection has been made, click on `modify template`{.action} to confirm your choice.
+Once the selection has been made, click on `Modify template`{.action} to confirm your choice.
 
 ### Resizing a disk in Windows
 
@@ -78,7 +78,6 @@ Once done, click on `Finish`{.action} to confirm your choice.
 - The new disk size will then be displayed in the disk manager.
 
 ![public-cloud](images/2979.png){.thumbnail}
-
 
 ## Go further
 
