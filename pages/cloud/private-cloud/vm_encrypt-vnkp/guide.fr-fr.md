@@ -52,7 +52,7 @@ Activez la `Gestion du chiffrement`{.action} et cliquez sur `Valider`{.action}.
 
 ![00 add right from manager 03](images/00-add-right-from-manager03.png){.thumbnail}
 
-Attendez que la fenênetre de modification disparaisse.
+Attendez que la fenêtre de modification disparaisse.
 
 ![00 add right from manager 04](images/00-add-right-from-manager04.png){.thumbnail}
 
