@@ -1,14 +1,14 @@
 ---
 title: Configuring the storage on a HGR-STOR-2 server (EN)
-slug: hgrstor2-system-configuration
+slug: hgrstor2-system-configuration 
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/dedicated/hgrstor2-system-configuration/' 
+    canonical: 'https://docs.ovh.com/gb/en/dedicated/hgrstor2-system-configuration/'
 excerpt: Setting up and configuring the multipath as part of using an HGR-STOR-2 server
 section: Uso avanzado
 order: 6
 ---
 
-**Last updated 23rd August 2022**
+**Last updated 24th August 2022**
 
 ## Objective
 
@@ -33,7 +33,7 @@ This documentation details:
 
 ## Requirements
 
-- An [HGR-STOR-2 server](https://www.ovhcloud.com/es-es/bare-metal/high-grade/hgr-stor-2/)
+- An [HGR-STOR-2 server](https://www.ovhcloud.com/es/bare-metal/high-grade/hgr-stor-2/)
 
 ## Instructions
 
@@ -73,7 +73,8 @@ Here is a logical view:
 
 #### Linux LVM Warning
 
-> [!warning] Create your PVs **only** on multipath devices of type `/dev/mapper/mpathXX`.
+> [!warning] 
+> Create your PVs **only** on multipath devices of type `/dev/mapper/mpathXX`.
 
 For example:
 
@@ -107,7 +108,8 @@ Physical volume "/dev/mapper/mpathc" successfully created.
 
 #### ZFS warning on Linux
 
-> [!warning] Create your zfspool **only** on multipath devices of type `/dev/mapper/mpathXX`.
+> [!warning] 
+> Create your zfspool **only** on multipath devices of type `/dev/mapper/mpathXX`.
 
 For example:
 
@@ -265,7 +267,8 @@ Name your Datastore at your convenience (`ds-hgr-sto3-01` in the example below).
 
 Select one of the disks shown.
 
-> [!primary] The disks presented by the HGR-STOR-2 are named `Local WDC Disk (naa.xxxxxxxxxxxx)`.
+> [!primary] 
+> The disks presented by the HGR-STOR-2 are named `Local WDC Disk (naa.xxxxxxxxxxxx)`.
 
 ![create-datastore-step02](images/esxi-dashboard-view-05.png){.thumbnail}
 
