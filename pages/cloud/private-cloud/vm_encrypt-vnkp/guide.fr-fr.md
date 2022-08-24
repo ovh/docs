@@ -6,7 +6,7 @@ section: Fonctionnalités VMware vSphere
 order: 07
 ---
 
-**Dernière mise à jour le 23/08/2022**
+**Dernière mise à jour le 24/08/2022**
 
 ## Objectif
 
@@ -40,11 +40,27 @@ Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génère une clé **DEK*
 
 ### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster Hosted Private Cloud powered by VMware 
 
-Avant de pouvoir utiliser les fonctionnalités de chiffrement il est nécessaire d'autoriser un utilisateur à gérer le chiffrement cette autorisation se fait à partir de l'espace client OVHcloud.
+Avant de pouvoir utiliser les fonctionnalités de chiffrement il est nécessaire de donner des droits à un utilisateur, cette autorisation se fait à partir de l'espace client OVHcloud.
 
-<!--- Partie à écrire dès que la fonctionnalité sera présente
+Au travers de l'espace client OVHcloud cliquez sur `Hosted Private Cloud`{.action} dans la barre de menu horizontale en haut, ensuite à droite choisissez votre cluster sous `VMware`{.action}, Positionnez vous sur `Utilisateurs`{.action} et cliquez sur le bouton  `...`{.action}.
 
--->
+![00 add right from manager 01](images/00-add-right-from-manager01.png){.thumbnail}
+
+Cliquez sur `Modifier`{.action}.
+
+![00 add right from manager 02](images/00-add-right-from-manager02.png){.thumbnail}
+
+Cliquez sur le bouton `Gestion du chiffrement`{.action} et cliquez sur `Valider`{.action}.
+
+![00 add right from manager 03](images/00-add-right-from-manager03.png){.thumbnail}
+
+Attendez que la fenênetre de modification disparaisse.
+
+![00 add right from manager 04](images/00-add-right-from-manager04.png){.thumbnail}
+
+Les droits de gestion du chiffrement ont été modifiés comme on peut le voir dans la colonne `Gestion du chiffrement`.
+
+![00 add right from manager 05](images/00-add-right-from-manager05.png){.thumbnail}
 
 ### Création d'une clé **vSphere Native Key Provider**
 
