@@ -34,13 +34,13 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 
 Il est possible d'exporter la clé **vSphere Native Key provider** et de la réimporter sur un autre cluster.
 
-Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génère une clé **DEK**, cette clé servira à effectuer le chiffrement des fichiers composant la machine virtuelle et donc de ses données. La clé **DEK** est chiffrée à l'aide de clé générée par **vSphere Native Key provider**. Cette DEK chiffrée est stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
+Dans le détail, lorsque l'on chiffre une machine virtuelle, l'hôte ESXi génère une clé **DEK**, cette clé servira à effectuer le chiffrement des fichiers composant la machine virtuelle et donc de ses données. La clé **DEK** est chiffrée à l'aide de clé générée par **vSphere Native Key provider**. Cette DEK chiffrée est stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
 ### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster Hosted Private Cloud powered by VMware 
 
-Au travers de l'espace client OVHcloud cliquez sur `Hosted Private Cloud`{.action} dans la barre de menu horizontale en haut, ensuite à droite choisissez votre cluster sous `VMware`{.action}, Positionnez vous sur `Utilisateurs`{.action} et cliquez sur le bouton  `...`{.action}.
+Au travers de l'espace client OVHcloud cliquez sur `Hosted Private Cloud`{.action} dans la barre de menu horizontale en haut, ensuite choisissez votre cluster , Positionnez vous sur `Utilisateurs`{.action} et cliquez sur le bouton  `...`{.action}.
 
 ![00 add right from manager 01](images/00-add-right-from-manager01.png){.thumbnail}
 
@@ -62,7 +62,7 @@ Les droits de gestion du chiffrement ont été modifiés comme on peut le voir d
 
 ### Création d'une clé **vSphere Native Key Provider**
 
-Nous allons créer la clé de chiffrement **vSphere Native Key Provider**. Cette clé pourra être utilisée pour chiffrer les clés **DEK** lors du chiffrement d'une machine virtuelle ou pour permettre l'ajout sur une machine virtuelle d'un périphérique virtuel **TPM 2.0**.
+Nous allons créer la clé de chiffrement **vSphere Native Key Provider**. Cette clé pourra être utilisée pour chiffrer les fichiers d'une machine virtuelle. Si vous souhaitez ajouter un périphérique virtuel **vTPM**, il est obligatoire de chiffrer la VM.
 
 Connectez-vous à l'interface **vSphere** à l'aide de ce guide [Se connecter à l'interface vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
 
@@ -90,7 +90,7 @@ Saisissez `le mot de passe` et `confirmez-le`, ensuite cochez la case `J'ai enre
 
 ![01 Create KEY 06](images/01-create-key06.png){.thumbnail}
 
-Il est possible maintenant d'utiliser la clé pour chiffrer des machines virtuelles ou d'ajouter un périphérique **TPM 2.0** à une machine virtuelle.
+Il est possible maintenant d'utiliser la clé pour chiffrer des machines virtuelles.
 
 ![01 Create KEY 07](images/01-create-key07.png){.thumbnail}
 
@@ -118,7 +118,7 @@ Dans les propriétés de la machine virtuelle cliquez sur l'onglet `Résumé`{.a
 
 Certains clients OVHcloud utilisent une solution de chiffrement avec des clés KMS externes, Il est possible de migrer le chiffrement vers **vSphere Native Key Provider**
 
-Suivez les instructions ci-dessous pour migrer une machine virtuelle chiffrée avec une clés KMS Thalès nommée **cluster** vers une clé vSphere Native Key Provider portant le nom **MY-NKP**.
+Suivez les instructions ci-dessous pour migrer une machine virtuelle chiffrée avec une clé générée par un KMS externe nommée **cluster** vers une clé vSphere Native Key Provider portant le nom **MY-NKP**.
 
 A partir de la console **vSphere** de votre cluster cliquez en haut à gauche sur la `racine du cluster`{.action}, allez en haut dans l'onglet `Configurer`{.action} cliquez `Fournisseurs de clés`{.action} dans la barre verticale, positionnez-vous sur la `clé vSphere Native Key provider`{.action} et cliquez sur `DÉFINIR COMME VALEUR PAR DÉFAUT`{.action}.
 
@@ -144,7 +144,7 @@ Au travers du client **vSphere** faites un clic droit sur `la machine virtuelle`
 
 ![03 migrate-from-kms-to-vnkp 05](images/03-migrate-from-kms-to-vnkp05.png){.thumbnail}
 
-Le nouveau chiffrement s'effectue en quelques millisecondes car ce n'est que la clé **DEK** qui est à chiffrée à l'aide la nouvelle clé **vSphere Native Key Provider**.
+Le nouveau chiffrement s'effectue en quelques millisecondes car l'opération effectuée n'est qu'un renouvellement du chiffrement de la clé **DEK**. Cette  clé est maintenant chiffrée à l'aide la nouvelle clé **vSphere Native Key Provider**.
 
 ![03 migrate-from-kms-to-vnkp 06](images/03-migrate-from-kms-to-vnkp06.png){.thumbnail}
 
