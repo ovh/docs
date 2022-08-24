@@ -40,8 +40,6 @@ Lorsque l'on chiffre une machine virtuelle l'hôte ESXi génère une clé **DEK*
 
 ### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster Hosted Private Cloud powered by VMware 
 
-Avant de pouvoir utiliser les fonctionnalités de chiffrement il est nécessaire de donner des droits à un utilisateur, cette autorisation se fait à partir de l'espace client OVHcloud.
-
 Au travers de l'espace client OVHcloud cliquez sur `Hosted Private Cloud`{.action} dans la barre de menu horizontale en haut, ensuite à droite choisissez votre cluster sous `VMware`{.action}, Positionnez vous sur `Utilisateurs`{.action} et cliquez sur le bouton  `...`{.action}.
 
 ![00 add right from manager 01](images/00-add-right-from-manager01.png){.thumbnail}
@@ -50,7 +48,7 @@ Cliquez sur `Modifier`{.action}.
 
 ![00 add right from manager 02](images/00-add-right-from-manager02.png){.thumbnail}
 
-Cliquez sur le bouton `Gestion du chiffrement`{.action} et cliquez sur `Valider`{.action}.
+Activez la `Gestion du chiffrement`{.action} et cliquez sur `Valider`{.action}.
 
 ![00 add right from manager 03](images/00-add-right-from-manager03.png){.thumbnail}
 
