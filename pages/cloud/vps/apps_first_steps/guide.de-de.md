@@ -10,7 +10,7 @@ order: 6
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 16.09.2021**
+**Letzte Aktualisierung am 25.08.2022**
 
 ## Ziel
 
@@ -78,27 +78,6 @@ Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anw
 >
 > Wo ist meine Plesk-Lizenz?
 >> Sie können Ihre Plesk Lizenz für Ihren VPS über das [OVHcloud Kundencenter bestellen](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
-
-#### Virtualmin
-
-Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstallierten Virtualmin. 
-
-1. Öffnen Sie die E-Mail mit den Login-Daten zur Anwendung.
-2. Klicken Sie in dieser E-Mail auf die Virtualmin URL.
-3. Loggen Sie sich mithilfe des Benutzernamens und des Passworts aus der E-Mail ein.
-4. Wenn Sie eingeloggt sind, beantworten Sie die Fragen zur Optimierung, um Virtualmin bei der Konfiguration zu helfen.
-
-Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
-
-#### Vestacp
-
-Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstallierten Vestacp.
-
-1. Öffnen Sie die E-Mail mit den Login-Daten zur Anwendung.
-2. Klicken Sie in dieser E-Mail auf die URL von Vestacp.
-3. Loggen Sie sich mithilfe des Benutzernamens und des Passworts aus der E-Mail ein.
-
-Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
 
 #### Docker
 

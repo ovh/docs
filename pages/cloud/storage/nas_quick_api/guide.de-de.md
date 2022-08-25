@@ -21,7 +21,7 @@ OVHcloud HA-NAS Dienste ermöglichen Ihnen die Verwaltung zentral gespeicherter 
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud HA-NAS](https://www.ovh.com/de/nas/) in Ihrem Kunden-Account.
-- Sie haben sich anhand der [Anleitung zu den ersten Schritten mit der OVHcloud API](../../api/first-steps-with-ovh-api/) mit der Verwendung der OVHcloud APIv6 vertraut gemacht.
+- Sie haben sich anhand der [Anleitung zu den ersten Schritten mit der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/) mit der Verwendung der OVHcloud APIv6 vertraut gemacht.
 
 ## In der praktischen Anwendung
 
@@ -208,7 +208,7 @@ Verwenden Sie die folgende Route, um eine Partition zu löschen:
 
 ## Weiterführende Informationen
 
-[NAS via NFS-Freigabe mounten](../nas-nfs/)
+[NAS via NFS-Freigabe mounten](https://docs.ovh.com/de/storage/nas-nfs/)
 
 [NAS auf Windows Server über CIFS mounten](../nas-cifs/)
 

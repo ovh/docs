@@ -30,7 +30,7 @@ Afin d'envoyer une campagne de SMS à de multiples contacts, vous pouvez importe
 
 Vous pouvez créer une liste de destinataires via un tableur ou réutiliser une liste déjà existante. Celle-ci doit alors être au format .csv et doit avoir la forme ci-dessous dans un tableur :
 
-![recipients](images/img_4831.jpg){.thumbnail}
+![recipients](images/img_4831.png){.thumbnail}
 
 > [!warning]
 > Afin que le tableur n’effectue aucun calcul automatique sur vos numéros, vous devez personnaliser le format de votre colonne `number`.

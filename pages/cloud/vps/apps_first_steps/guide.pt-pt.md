@@ -6,7 +6,7 @@ section: 'Primeiros passos'
 order: 4
 ---
 
-**Última atualização: 16/09/2021**
+**Última atualização: 25/08/2022**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -78,27 +78,6 @@ Não é necessário mais nenhuma etapa para terminar a primeira configuração d
 >
 > Onde está a minha licença Plesk?
 >> Pode encomendar a sua licença Plesk para o seu VPS a partir da [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
-
-#### Virtualmin
-
-Encontrará abaixo os primeiros passos para a implementação da imagem pré-instalada de Virtualmin. 
-
-1. Abra o e-mail que recebeu com os dados de acesso à aplicação.
-2. Clique no URL de Virtualmin nesse e-mail.
-3. Ligue-se com o nome de utilizador e a palavra-passe presentes no e-mail.
-4. Depois de se conectar, para responder às suas necessidades e ajudar o Virtualmin a configurar-se, complete o questionário de otimização.
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
-
-#### Vestacp
-
-Encontrará abaixo as primeiras etapas relativas à implementação da imagem pré-instalada do Vestacp.
-
-1. Abra o e-mail que recebeu com os dados de acesso à aplicação.
-2. Clique no URL da Vestacp neste e-mail.
-3. Ligue-se com o nome de utilizador e a palavra-passe presentes no e-mail.
-
-Não é necessário mais nenhuma etapa para terminar a primeira configuração desta aplicação.
 
 #### Docker
 

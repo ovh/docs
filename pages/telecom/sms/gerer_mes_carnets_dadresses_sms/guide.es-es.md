@@ -6,6 +6,10 @@ legacy_guide_number: g2118
 section: 'Gestionar el servicio'
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
 **Última actualización: 05/08/2022**
 
 ## Objetivo
@@ -26,9 +30,9 @@ Todas las cuentas de SMS de OVHcloud permiten utilizar una o varias agendas de c
 
 Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la pestaña `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} en la columna izquierda
 
-Seleccione su cuenta de SMS.
+Haga clic en la cuenta de SMS correspondiente y seleccione la pestaña `Contactos`{.action} y luego `Agenda de contactos`{.action}.
 
-![agenda de contactos](images/smsphonebook1.png){.thumbnail}
+![agenda de contactos](images/smsphonebook01.png){.thumbnail}
 
 Acceda a la sección `Agenda de contactos`{.action}.
 

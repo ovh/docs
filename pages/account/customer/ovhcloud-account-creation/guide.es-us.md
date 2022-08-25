@@ -82,7 +82,7 @@ Consulte también nuestras guías para:
 
 [Conectarse al área de cliente de OVHcloud](https://docs.ovh.com/us/es/customer/conectarse-area-de-cliente-ovhcloud)
 
-[Cambiar la contraseña de su cuenta de OVHcloud](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/)
+[Cambiar la contraseña de su cuenta de OVHcloud](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/)
 
 [Proteger su cuenta de OVHcloud con la doble autenticación](https://docs.ovh.com/us/es/customer/proteger-su-cuenta-con-una-2FA/)
 
