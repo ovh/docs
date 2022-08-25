@@ -3,7 +3,7 @@ title: Activation du chiffrement des machines virtuelles avec vSphere Native Key
 slug: vm-encrypt-vnkp
 excerpt: Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider
 section: Fonctionnalités VMware vSphere
-order: 02
+order: 09
 ---
 
 **Dernière mise à jour le 25/08/2022**
