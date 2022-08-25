@@ -21,7 +21,7 @@ Vous pouvez gérer votre service NAS-HA via l'[API OVHcloud](https://docs.ovh.co
 - Posséder un service OVHcloud auquel est associée une adresse IP publique (Hosted Private Cloud, Serveur Dédié, VPS, instance Public Cloud, etc.).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
-## Instructions
+## En pratique
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la section `Bare Metal Cloud`{.action} et ouvrez `NAS et CDN`{.action}.<br>
 Cliquez sur votre service pour accéder à l'onglet `Informations générales`{.action}.
