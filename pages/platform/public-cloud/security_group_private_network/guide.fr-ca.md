@@ -1,5 +1,5 @@
 ---
-title: Gestion des règles de firewall et sécurité des ports sur les réseaux utilisant OpenStack CLI
+title: Gestion des règles de firewall et port security sur les réseaux utilisant OpenStack CLI
 slug: firewall_security_pci
 excerpt: Découvrez le fonctionnement des groupes de sécurité sur Public Cloud
 section: Gestion via OpenStack
@@ -52,29 +52,29 @@ Un **port** dans le cadre d'[OpenStack Neutron](https://docs.openstack.org/neutr
 
 #### Pour un réseau privé déjà créé
 
-Afin d'éviter toute rupture de configuration lors des mises à niveau d'OpenStack Stein et d'Open vSwitch version, le paramètre « port security » a été défini sur « False » sur les réseaux existants.
+Afin d'éviter toute rupture de configuration lors des montées de version d'OpenStack Stein et d'Open vSwitch, le paramètre "port security" a été défini sur "False" sur les réseaux existants.
 
-Vous devez utiliser la CLI `openstack` pour activer la sécurité des ports sur vos ports et votre réseau existants.
+Vous devez utiliser la CLI `openstack` pour activer le "port security" sur vos ports et votre réseau existant.
 
-Tout d'abord, si vous souhaitez utiliser des règles de pare-feu sur des réseaux privés, vous devrez définir la propriété « port security » à « True » :
+Tout d'abord, si vous souhaitez utiliser des règles de pare-feu sur des réseaux privés, vous devrez définir la propriété "port security" à "True" :
 
 ```bash
 openstack network set --enable-port-security <network_ID>
 ```
 
-Ensuite, vous devrez activer la sécurité du port sur le port de votre service dans ce réseau. 
+Ensuite, vous devrez activer le "port security" sur le port de votre service dans ce réseau. 
 
 > [!primary]
 > Pour rappel, pour récupérer le port, vous pouvez utiliser la CLI OpenStack. Exécutez la commande `openstack port list --server <server_ID>` pour récupérer les ports sur un serveur donné.
 >
 
-Pour tous les services ayant un port actif dans ce réseau, activez la sécurité des ports :
+Pour tous les services ayant un port actif dans ce réseau, activez le "port security" :
 
 ```bash
 openstack port set --enable-port-security <port_ID>
 ```
 
-Vous pouvez ensuite vérifier si la sécurité des ports est activée sur un port en particulier :
+Vous pouvez ensuite vérifier si le "port security" est activée sur un port en particulier :
 
 ```bash
 openstack port show <port-ID> -f value -c port_security_enabled
@@ -88,15 +88,15 @@ False
 
 #### Pour un nouveau réseau privé :
 
-La mise à niveau vers la version Stein sur les régions OpenStack et la nouvelle version d'Open vSwitch étant réalisées ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)), le paramètre de « port security » sera défini sur  « True »  par défaut sur tout réseau privé nouvellement créé.
+La mise à niveau vers la version Stein sur les régions OpenStack et la nouvelle version d'Open vSwitch étant réalisées ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)), le paramètre de "port security" sera défini sur "True" par défaut sur tout réseau privé nouvellement créé.
 
-Cela nous assurera de rester cohérents avec la politique « True » par défaut, comme sur les déploiements vanilla OpenStack.
+Cela nous assurera de rester cohérents avec la politique "True" par défaut, comme sur les déploiements vanilla OpenStack.
 
 ### Paramètres par défaut
 
 Chaque port réseau est attaché à un groupe de sécurité qui contient des règles spécifiques.
 
-Le groupe de sécurité « default » contient les règles suivantes :
+Le groupe de sécurité "default" contient les règles suivantes :
 
 ```bash
 openstack security group rule list default
