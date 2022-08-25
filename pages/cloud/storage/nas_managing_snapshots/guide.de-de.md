@@ -26,7 +26,7 @@ OVHcloud HA-NAS Dienste ermöglichen Ihnen die Verwaltung zentral gespeicherter 
 ## In der praktischen Anwendung
 
 > [!primary]
-> Detaillierte technische Informationen zur Snapshot-Funktion finden Sie auf der [HA-NAS FAQ-Seite](../faq-nas/).
+> Detaillierte technische Informationen zur Snapshot-Funktion finden Sie auf der [HA-NAS FAQ-Seite](https://docs.ovh.com/de/storage/faq-nas/).
 >
 
 

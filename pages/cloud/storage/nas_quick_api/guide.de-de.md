@@ -208,7 +208,7 @@ Verwenden Sie die folgende Route, um eine Partition zu löschen:
 
 ## Weiterführende Informationen
 
-[NAS via NFS-Freigabe mounten](../nas-nfs/)
+[NAS via NFS-Freigabe mounten](https://docs.ovh.com/de/storage/nas-nfs/)
 
 [NAS auf Windows Server über CIFS mounten](../nas-cifs/)
 

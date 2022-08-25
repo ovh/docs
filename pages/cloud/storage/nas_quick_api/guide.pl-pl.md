@@ -208,7 +208,7 @@ Użyj następującej drogi, aby usunąć partycję:
 
 ## Sprawdź również
 
-[Montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](../nas-nfs/)
+[Montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/nas-nfs/)
 
 [Skonfigurować NAS na serwerze Windows poprzez CIFS](../nas-cifs/)
 

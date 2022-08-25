@@ -26,7 +26,7 @@ As NAS-HA da OVHcloud permitem-lhe criar e gerir volumes de ficheiros acessívei
 ## Instruções
 
 > [!primary]
-> Não hesite em aceder [à página FAQ NAS-HA](../faq-nas/) para encontrar todas as informações relativas à função snapshot.
+> Não hesite em aceder [à página FAQ NAS-HA](https://docs.ovh.com/pt/storage/faq-nas/) para encontrar todas as informações relativas à função snapshot.
 >
 
 Todas as rotas API deste guia estão disponíveis na secção */dedicated/nasha*: <https://api.ovh.com/console/#/dedicated/nasha>.
