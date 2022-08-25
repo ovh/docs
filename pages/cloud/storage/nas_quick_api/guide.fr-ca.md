@@ -17,7 +17,7 @@ Le service NAS-HA OVHcloud vous permet de gérer du stockage de fichiers accessi
 ## Prérequis
 
 - Un service [NAS-HA OVHcloud](https://www.ovh.com/ca/fr/nas/)
-- Consultez notre guide des [premiers pas avec l'API OVHcloud](../../api/first-steps-with-ovh-api/) afin de vous familiariser avec l'APIv6 OVHcloud
+- Consultez notre guide des [premiers pas avec l'API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) afin de vous familiariser avec l'APIv6 OVHcloud
 
 ## En pratique
 
