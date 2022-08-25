@@ -31,7 +31,7 @@ To send an SMS campaign to multiple contacts, you can import one or more recipie
 
 You can create a recipient list via a spreadsheet, or use a list that already exists. This list must be in .csv format, and have the layout below in a spreadsheet:
 
-![recipients](images/img_4831.jpg){.thumbnail}
+![recipients](images/img_4831.png){.thumbnail}
 
 > [!warning]
 > To ensure that the spreadsheet does not perform any automatic calculations on your numbers, you must customise the format of your `number` column.

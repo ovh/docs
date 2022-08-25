@@ -5,6 +5,10 @@ excerpt: 'Dowiedz się, jak utworzyć książkę adresową SMS na Twoim koncie O
 section: 'Zarządzanie ofertą'
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
 **Ostatnia aktualizacja z dnia 05-08-2022**
 
 ## Wprowadzenie
@@ -25,9 +29,9 @@ Wszystkie konta OVHcloud mogą używać jednej lub więcej książek adresowych.
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do rubryki `Telefonia`{.action}. Następnie z menu po lewej stronie wybierz `SMS`{.action}.
 
-Teraz wybierz żądane konto SMS.
+Kliknij żądane konto SMS i wybierz kartę `Kontakty`{.action}, a następnie `Książka adresowa`{.action}.
 
-![phonebook](images/smsphonebook1.png){.thumbnail}
+![phonebook](images/smsphonebook01.png){.thumbnail}
 
 Wybierz kartę `Książka adresowa`{.action}.
 

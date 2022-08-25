@@ -26,9 +26,9 @@ All OVHcloud SMS accounts can use one or more address books. This guide explains
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and go to the `Telecom`{.action} section. Next, select `SMS`{.action}.
 
-Then click on the SMS account concerned.
+Click on the SMS account concerned, and select the `Contacts`{.action} tab, then `Address book`{.action}.
 
-![phonebook](images/smsphonebook1.png){.thumbnail}
+![phonebook](images/smsphonebook01.png){.thumbnail}
 
 Select the `Address book`{.action} tab.
 
