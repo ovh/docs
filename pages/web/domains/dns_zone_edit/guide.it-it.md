@@ -123,7 +123,7 @@ In altre parole, il record DNAME indica che *dname.mydomain.ovh* e *xxx.mydomain
 > Il record DNAME è generalmente utilizzato come parte di una modifica della ragione sociale. Può essere installato anche quando un utente dispone di più estensioni di domini (.it, .net, .com, .info, ecc...) per reindirizzarle facilmente tra loro.
 >
 
-- **NS** (**N**ame **S**erver): Definisci i server DNS associati alla tua zona DNS. Ad esempio, se i record NS della tua zona DNS visualizzano i server *DNS19.ovh.net* e *ns19.ovh.net*, sarà necessario utilizzarli nella scheda `Server DNS`{.action} del tuo Spazio Cliente OVHcloud. Per maggiori informazioni, consulta la nostra guida [Modificare i server DNS di un dominio OVHcloud](../generalites-serveurs-dns/).
+- **NS** (**N**ame **S**erver): Definisci i server DNS associati alla tua zona DNS. Ad esempio, se i record NS della tua zona DNS visualizzano i server *DNS19.ovh.net* e *ns19.ovh.net*, sarà necessario utilizzarli nella scheda `Server DNS`{.action} del tuo Spazio Cliente OVHcloud. Per maggiori informazioni, consulta la nostra guida [Modificare i server DNS di un dominio OVHcloud](https://docs.ovh.com/it/domains/web_hosting_gestisci_il_tuo_server_dns/).
 
 > [!warning]
 >
@@ -132,7 +132,7 @@ In altre parole, il record DNAME indica che *dname.mydomain.ovh* e *xxx.mydomain
 
 #### Record email
 
-- **MX** (**M**ail e**X**changer): Associa un dominio a un server di posta Ad esempio, l'indirizzo *10 mx1.mail.ovh.net* corrisponde a uno dei server di posta OVHcloud quando possiedi un'offerta email OVHcloud. È probabile che il tuo provider di posta disponga di diversi server di posta: è necessario creare diversi record MX. Consulta la nostra guida [Aggiungere un record MX alla configurazione di un dominio](../mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/).
+- **MX** (**M**ail e**X**changer): Associa un dominio a un server di posta Ad esempio, l'indirizzo *10 mx1.mail.ovh.net* corrisponde a uno dei server di posta OVHcloud quando possiedi un'offerta email OVHcloud. È probabile che il tuo provider di posta disponga di diversi server di posta: è necessario creare diversi record MX. Consulta la nostra guida [Aggiungere un record MX alla configurazione di un dominio](https://docs.ovh.com/it/domains/aggiungere-record-mx-configurazione-dominio/).
 
 > [!warning]
 >
@@ -140,7 +140,7 @@ In altre parole, il record DNAME indica che *dname.mydomain.ovh* e *xxx.mydomain
 > Infatti, se disponi già di servizi email presso un altro provider e aggiungi contemporaneamente (senza sostituire) i server email del tuo nuovo provider, rischi di ricevere casualmente le tue email presso uno dei tuoi due provider.
 > 
 
-- **SPF** (**S**ender **P**olicy **F**ramework): Consente di evitare potenziali usurpazioni di identità sugli indirizzi email che utilizzano il tuo dominio (*spoofing*). Ad esempio, il record `v=spf1 include:mx.ovh.com ~all` indica che solo i server di invio associati alla tua offerta mail OVHcloud possono essere considerati legittimi dal server di ricezione. Puoi inserire questo record tramite un record TXT o il nostro sistema di configurazione automatica. Per saperne di più, consulta la guida [Aggiungere un record SPF alla configurazione di un dominio](../le-champ-spf/).
+- **SPF** (**S**ender **P**olicy **F**ramework): Consente di evitare potenziali usurpazioni di identità sugli indirizzi email che utilizzano il tuo dominio (*spoofing*). Ad esempio, il record `v=spf1 include:mx.ovh.com ~all` indica che solo i server di invio associati alla tua offerta mail OVHcloud possono essere considerati legittimi dal server di ricezione. Puoi inserire questo record tramite un record TXT o il nostro sistema di configurazione automatica. Per saperne di più, consulta la guida [Aggiungere un record SPF alla configurazione di un dominio](https://docs.ovh.com/it/domains/hosting_condiviso_il_record_spf/).
 
 - **DKIM** (**D**omain**K**eys **I**dentified **M**ail): Consente di verificare l'autenticità del dominio del mittente e garantire l'integrità dell'email inviata. Il record DKIM si presenta sotto forma di una chiave composta da diversi caratteri. La chiave DKIM è fornita dal tuo provider di posta (se questa funzionalità è proposta da quest'ultimo), è possibile inserirla in un record TXT.
 
