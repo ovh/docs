@@ -4,7 +4,7 @@ slug: vmware-update-manager
 excerpt: Utilisez l'outil de VMware pour maintenir à jour vos hôtes
 legacy_guide_number: '2163146'
 section: Fonctionnalités VMware vSphere
-order: 09
+order: 11
 ---
 
 **Dernière mise à jour le 09/12/2021**
