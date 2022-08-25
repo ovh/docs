@@ -6,7 +6,7 @@ section: 'Utilisation avancée'
 order: 6
 ---
 
-**Dernière mise à jour le 24/08/2022**
+**Dernière mise à jour le 25/08/2022**
 
 ## Objectif
 
@@ -26,6 +26,7 @@ Cette documentation détaille :
 > [!primary]
 >
 > - Ce guide documente une configuration disposant de 102 disques mais les informations sont également valables pour les autres configurations.
+> - La configuration présentée dans ce guide n'est pas équipée de disques NVMe (ceux-ci sont optionnels).
 > - Vous ne trouverez que les versions les plus récentes des systèmes.
 > - Toutes les versions Debian testées ne détectent que 2 chemins et non 4, ce qui amènerait des collisions au niveau LVM notamment. 
 
