@@ -42,7 +42,7 @@ Eine Tabelle zeigt die auf Ihrem Hosting erstellten FTP-Benutzer an. Mit diesen 
 
 > [!primary]
 >
-> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/customer/Passwort-verwalten/).
+> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/customer/Passwort-verwalten/).
 >
 
 Je nach Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) erfolgt die Änderung des Passworts Ihres FTP-Benutzers im Tab `FTP-SSH`{.action} über zwei verschiedene Wege:
@@ -62,7 +62,7 @@ Wählen Sie das neue Passwort Ihrer Datenbank aus und notieren Sie es. In beiden
 - Mindestens ein Großbuchstabe
 - Mindestens ein Kleinbuchstabe
 - Mindestens eine Ziffer
-- Darf ausschließlich aus Ziffern und Buchstaben bestehen
+- Es darf ausschließlich aus Ziffern und Buchstaben bestehen
 
 Gehen Sie dann zum Tab `Aktuelle Tasks`{.action} und laden Sie die Seite regelmäßig neu. Die Änderung benötigt einige Minuten, bis sie wirksam ist.
 
@@ -74,9 +74,9 @@ Das Hochladen Ihrer Dateien in den Hosting-Bereich kann auf mehrere Arten erfolg
 
 > [!warning]
 >
-> FTP Explorer ist für das Cloud Web Angebot nicht verfügbar. Es muss eine der beiden folgenden Methoden angewandt werden.
+> FTP Explorer ist für das Angebot Cloud Web nicht verfügbar. Es muss eine der beiden folgenden Methoden verwendet werden.
 
-- **Ein FTP Programm**: Installieren Sie einen FTP-kompatiblen Client auf Ihrem Computer (z.B. [FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)).
+- **Zugang mit FTP Programm**: Installieren Sie einen FTP-kompatiblen Client auf Ihrem Computer (z.B. [FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)).
 
 - **SSH-Zugang** (nur bei den Hostings Pro und Performance): Verwenden Sie dieses Verbindungsprotokoll mithilfe der Anleitung "[SSH-Zugang Ihres Webhostings verwenden](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/)".
 
