@@ -501,7 +501,7 @@ The Zerto Replication is configured at the vDC level. To protect workload on the
 > **Prerequisites:**
 >
 > - Having a new vDC
-> - Having under the new vDC a host cluster with at least two (2) hosts
+> - Having under the new vDC a host cluster with the required number of hosts (same as the source cluster with a minimum of 2 hosts)
 > - Having under the new vDC a datastore that can be accessible from the two (2) hosts
 > - Having enabled Zerto Replication on the new vDC
 >
