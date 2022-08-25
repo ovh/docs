@@ -6,7 +6,7 @@ section: Technical resources
 order: 1
 ---
 
-**Last updated 13th January 2022**
+**Last updated 25th August 2022**
 
 ## Objective
 
@@ -60,7 +60,6 @@ order: 1
 | Description | Detail | Cause | Workaround | Affected sites |
 |:-----:|:------:|:-----:|:----------:|:--------------:|
 | DC routes not propagated to PoP | When using AS65501, routes announced using BGP in vRack are not propagated to PoP | OVHcloud internal configuration | Do not use AS65501 | ALL |
-| ECMP not working | When ECMP is configured on a single PoP with 2 or more links, traffic is not load-balanced for a given destination | Limitation | Divide destination with more specific prefixes | ALL PoPs |
 | Light received but port is down | Device fails to change interface status to UP despite optical levels on RX are correct | Autonegotiation is configured | Unconfigure autonegotiation | ALL PoPs |
 
 ## Go further

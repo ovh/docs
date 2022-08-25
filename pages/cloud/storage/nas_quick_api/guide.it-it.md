@@ -21,7 +21,7 @@ Il servizio NAS-HA OVHcloud ti permette di gestire lo storage di file accessibil
 ## Prerequisiti
 
 - Un servizio [NAS-HA OVHcloud](https://www.ovh.it/nas/)
-- Consulta la nostra guida sui [primi passi con l'API OVHcloud](../../api/first-steps-with-ovh-api/) per familiarizzare con l'APIv6 OVHcloud
+- Consulta la nostra guida sui [primi passi con l'API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/) per familiarizzare con l'APIv6 OVHcloud
 
 ## Procedura
 
@@ -208,7 +208,7 @@ Per eliminare una partizione, utilizza questa pagina:
 
 ## Per saperne di più
 
-[Eseguire il mount di un NAS tramite NFS](../nas-nfs/)
+[Eseguire il mount di un NAS tramite NFS](https://docs.ovh.com/it/storage/nas-nfs/)
 
 [Configura il tuo NAS su Windows Server tramite CIFS](../nas-cifs/)
 

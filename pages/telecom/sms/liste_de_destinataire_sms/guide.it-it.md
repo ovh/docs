@@ -33,7 +33,7 @@ Per inviare una campagna SMS a contatti multipli, è possibile importare una o p
 
 È possibile creare una lista di destinatari tramite un foglio di calcolo oppure riutilizzare una lista già esistente. La lista deve essere in formato .csv e avere il seguente layout:
 
-![recipients](images/img_4831.jpg){.thumbnail}
+![recipients](images/img_4831.png){.thumbnail}
 
 > [!warning]
 > Per evitare che il foglio di calcolo effettui un calcolo automatico sui tuoi numeri, devi personalizzare il formato della tua colonna `number`.

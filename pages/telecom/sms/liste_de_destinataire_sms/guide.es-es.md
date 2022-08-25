@@ -34,7 +34,7 @@ Para enviar una campaña de SMS a múltiples contactos, puede importar una o má
 
 Es posible crear una lista de destinatarios en una hoja de cálculo desde cero o reutilizando una lista existente. Para ello, la lista debe estar en formato .CSV y tener el siguiente apariencia en la hoja de cálculo:
 
-![recipients](images/img_4831.jpg){.thumbnail}
+![recipients](images/img_4831.png){.thumbnail}
 
 > [!warning]
 > Para que la hoja de cálculo no realice ningún cálculo automático en sus números, debe personalizar el formato de su columna `number`.

@@ -59,9 +59,9 @@ Falls die Domain einem anderen Kunden-Account zugeordnet ist oder außerhalb von
 #### Schritt 2.1: Eine bei OVHcloud registrierte Domain hinzufügen <a name="add-ovhcloud-domain"></a>
 
 > [!warning]
-> Dieser Schritt gilt nur, wenn Sie "Eine bei OVHcloud registrierte Domain hinzufügen" ausgewählt haben. Die Domain oder deren DNS-Zone muss sich **in Ihrem Kundencenter** befinden. Für externe Domainnamen gehen Sie zu [Schritt 2.2: eine externe Domain hinzufügen](#add-external-domain){.external}.
+> Dieser Schritt gilt nur, wenn Sie "Eine bei OVHcloud registrierte Domain hinzufügen" ausgewählt haben. Die Domain oder deren DNS-Zone muss sich **in Ihrem Kundencenter** befinden. Für externe Domainnamen gehen Sie zu [Schritt 2.2: eine externe Domain hinzufügen](#add-external-domain).
 
-Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} sind manche Optionen gegebenenfalls nicht verfügbar.
+Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} können manche Optionen nicht verfügbar sein.
 
 > [!primary]
 > Um eine Subdomain hinzuzufügen, wählen Sie zuerst die Hauptdomain aus der Liste aus (Beispiel: mydomain.ovh). Im nächsten Schritt können Sie die Subdomain angeben (Beispiel: **blog**.mydomain.ovh).

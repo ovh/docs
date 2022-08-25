@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 8
 ---
 
-**Last updated 16th September 2021**
+**Last updated 25th August 2022**
 
 ## Objective
 
@@ -74,27 +74,6 @@ No further steps are necessary to complete the first configuration of this appli
 >
 > Where is my licence for Plesk?
 >> You can purchase a licence from OVHcloud for your VPS via the [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
-
-#### Virtualmin
-
-This section will explain the first steps specifically for the Virtualmin pre-installed image.
-
-1. Open the email from OVcloud which contains your application login details.
-2. Click on the URL for Virtualmin in the email.
-3. Log in using the username and password provided in the email.
-4. Once logged in, Virtualmin will have several optimisation questions for you to answer. It will help Virtualmin configure itself to meet your specification.
-
-No further steps are necessary to complete the first configuration of this application.
-
-#### Vestacp
-
-This section will explain the first steps specifically for the Vestacp pre-installed image.
-
-1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for Vestacp in the email.
-3. Log in using the username and password provided in the email.
-
-No further steps are necessary to complete the first configuration of this application.
 
 #### Docker
 

@@ -31,7 +31,7 @@ Wszystkie konta SMS OVHcloud mogą używać jednej lub kilku list odbiorców. Z 
 
 Listę odbiorców możesz utworzyć przy użyciu arkusza kalkulacyjnego lub możesz wykorzystać już istniejącą listę. Musi być ona w formacie .csv i w arkuszu kalkulacyjnym musi mieć formę jak na poniższym przykładzie:
 
-![recipients](images/img_4831.jpg){.thumbnail}
+![recipients](images/img_4831.png){.thumbnail}
 
 > [!warning]
 > Aby arkusz kalkulacyjny nie wykonywał żadnych automatycznych obliczeń Twoich numerów, zmień format kolumny `number`.

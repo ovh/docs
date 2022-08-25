@@ -5,6 +5,10 @@ excerpt: Come creare una rubrica SMS nel tuo account OVHcloud
 section: Gestisci la tua offerta
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 **Ultimo aggiornamento: 05/08/2022**
 
 ## Obiettivo
@@ -25,9 +29,9 @@ Tutti gli account SMS OVHcloud possono utilizzare una o più rubriche. Questa gu
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Quindi seleziona `SMS`{.action}.
 
-Clicca sull’account SMS interessato.
+Clicca sull'account SMS interessato e seleziona `Contatti`{.action} > `Rubrica`{.action}.
 
-![phonebook](images/smsphonebook1.png){.thumbnail}
+![phonebook](images/smsphonebook01.png){.thumbnail}
 
 Seleziona la scheda `Rubrica Indirizzi`{.action}.
 

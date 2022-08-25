@@ -6,7 +6,7 @@ section: Ressources techniques
 order: 1
 ---
 
-**Dernière mise à jour 13/01/2022**
+**Dernière mise à jour 25/08/2022**
 
 ## Objectif
 
@@ -62,8 +62,7 @@ Les problèmes suivants sont présents sur OVHcloud Connect.
 
 | Problème | Détail | Cause | Contournement | Sites impactés |
 |:--------:|:------:|:-----:|:-------------:|:--------------:|
-| Routes du EndPoint/DC non propagées jusqu'au EntryPoint/POP | En utilisant l'AS65501, les routes annoncées en BGP depuis le vRack ne remontent pas | Configuration OVHcloud interne | Ne pas utiliser AS65501 | ALL |
-| ECMP non fonctionnel | Quand ECMP est activé sur un même POP par le client, les flux en sortie sont mal répartis | Limitation | Diviser les annonces pour répartir le trafic | Tous les POP |
+| Routes du EndPoint/DC non propagées jusqu'au EntryPoint/POP | En utilisant l'AS65501, les routes annoncées en BGP depuis le vRack ne remontent pas | Configuration OVHcloud interne | Ne pas utiliser AS65501 | Tous |
 | Lumière en réception mais absence de lien | L'équipement échoue à activer le lien malgré des valeurs optiques en réception correctes | L'auto-négociation est configurée | Désactiver l'auto-négociation | Tous les POP |
 
 ## Aller plus loin
