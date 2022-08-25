@@ -5,7 +5,7 @@ excerpt: Find out how security groups work on Public Cloud
 section: OpenStack
 ---
 
-**Last updated 16th June 2022**
+**Last updated 25th August 2022**
 
 ## Objective
 
@@ -147,7 +147,7 @@ In the following regions (running OpenStack Stein release), the firewall rules f
 
 OVHcloud will progressively upgrade all Newton regions to Stein, so the port security property feature will be available.
 
-To avoid any breaking change during the upgrade, the "port security" will be set to "False" on all already created networks. Once a region will be upgraded in Stein OpenStack release, if you want to use firewall rules on private networks you will have to set the "port security" property as "True".
+To avoid any breaking change during the upgrade, the "port security" will be set to "False" on all already created networks. Once a region will be upgraded to OpenStack Stein release, if you want to use firewall rules on private networks you will have to set the "port security" property as "True".
 
 You can check whether your private network port has port security enabled:
 
@@ -158,20 +158,23 @@ False
 
 ### Migration process <a name="migration"></a>
 
-This will occur according to the following process:
+#### For new ports:
 
-- The firewall rules for new ports will not be applied until you enable it on the new port. Nothing will change for the existing ports.
-- The OpenStack regions will be upgraded to Stein.
-- The Stein version of OpenStack regions will be upgraded to a new version of OpenVSwitch.
+- Since the upgrade to the Stein version on OpenStack regions and the new version of OpenVSwitch, the default port security is **enabled** by default.
+- The firewall rules will work for the new ports. Nothing will change for the existing ports.
+
+#### For existing ports:
+
+You have to use `openstack` CLI to enable the port security on your existing ports:
+
+```bash
+openstack network set --enable-port-security <network_ID>
+openstack port set --enable-port-security <port_ID>
+```
 
 > [!primary]
-> From this step, for Terraform users, it is necessary to force the setting of [port security to `false`](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external} for the playbooks to work.
+> In order to retrieve the port, you can use OpenStack CLI. Execute the command ``openstack port list --server <server_ID>` to retrieve the ports on a given server.
 >
-
-- You can enable port security on Stein regions.
-- The default port security will be changed to **enabled** (a global communication will be sent in time).
-- The firewall rules will work for the new ports. Nothing will change for the existing ports.
-- The option to enable port security for existing ports will be activated.
 
 ## Go further
 
