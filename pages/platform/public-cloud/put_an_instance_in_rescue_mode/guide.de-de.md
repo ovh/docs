@@ -1,9 +1,8 @@
 ---
-title: "Umstellen einer Instanz auf den\_Rescue-Modus"
+title: Umstellen einer Instanz auf den Rescue-Modus
 slug: umstellung_einer_instanz_auf_den_rescue-modus
-excerpt: 'Erfahren Sie hier, wie Sie den Rescue-Modus für Ihre Public Cloud Instanz aktivieren'
-legacy_guide_number: g2029
-section: 'Verwaltung im OVHcloud Kundencenter'
+excerpt: Erfahren Sie hier, wie Sie den Rescue-Modus für Ihre Public Cloud Instanz aktivieren
+section: Verwaltung im OVHcloud Kundencenter
 ---
 
 **Letzte Aktualisierung am 02.08.2022**
@@ -71,7 +70,7 @@ Sobald Sie Ihre Maßnahmen beendet haben, können Sie den Rescue-Modus deaktivie
 ![control panel](images/rescueexit2022.png){.thumbnail}
 
 > [!warning]
-> Wenn der Button Aus dem `Rescue-Modus verlassen`{.action} aussteigen nicht angezeigt wird, sobald die Instanz im Rescue-Modus ist, empfehlen wir Ihnen, den Tab zu aktualisieren.
+> Falls die Option `Den Rescue-Modus verlassen`{.action} nicht im Menü angezeigt wird, sobald die Instanz im Rescue-Modus ist, aktualisieren Sie den Tab über die entsprechende Browser-Funktion.
 >
 
 ### Den Rescue-Modus mit der OpenStack API aktivieren
