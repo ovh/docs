@@ -169,11 +169,16 @@ You have to use `openstack` CLI to enable the port security on your existing por
 
 ```bash
 openstack network set --enable-port-security <network_ID>
+```
+
+For all services with an active port in this network, enable port security:
+
+```bash
 openstack port set --enable-port-security <port_ID>
 ```
 
 > [!primary]
-> In order to retrieve the port, you can use OpenStack CLI. Execute the command ``openstack port list --server <server_ID>` to retrieve the ports on a given server.
+> As a reminder, to retrieve the port, you can use OpenStack CLI. Execute the command `openstack port list --server <server_ID>` to retrieve the ports on a given server.
 >
 
 ## Go further
