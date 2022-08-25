@@ -10,9 +10,9 @@ order: 02
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 03.08.2022**
+**Letzte Aktualisierung am 03.08.2022**
 
-## Einleitung
+## Ziel
 
 Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät versenden und empfangen.
 
@@ -28,11 +28,11 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 >
 > **Sonderfälle**
 >
-> - Hinweis zum Start 10M Hosting: Dieses muss unbedingt zuerst aktiviert werden, um eine E-Mail-Adresse zu erstellen. Sie können Start 10M in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren, indem Sie zur betreffenden Domain gehen.
+> - Hinweis zum Start 10M Hosting: Dieses muss zuerst aktiviert werden, um eine E-Mail-Adresse zu erstellen. Sie können Start 10M in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren, indem Sie zur betreffenden Domain gehen.
 >
-> - Im Rahmen eines [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} muss Ihr MX Plan Angebot aktiviert werden, falls dies noch nicht geschehen ist, bevor Sie mit dem Lesen dieser Anleitung fortfahren. Lesen Sie hierzu unsere Anleitung "[Die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren](https://docs.ovh.com/de/hosting/webhosting-email-aktivieren/)".
+> - Im Rahmen eines [Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} muss Ihr MX Plan Angebot aktiviert werden, falls dies noch nicht geschehen ist, bevor Sie mit nachfolgenden Schritten fortfahren. Beachten Sie hierzu unsere Anleitung "[Die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren](https://docs.ovh.com/de/hosting/webhosting-email-aktivieren/)".
 
-## Beschreibung
+## In der praktischen Anwendung
 
 Je nach Aktivierungsdatum Ihres Dienstes, oder falls [Ihr Angebot vor Kurzem migriert wurde](https://www.ovh.de/mxplan-migration/){.external}, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
 
@@ -40,7 +40,7 @@ Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?
 
 |Historische MX Plan Version|Neue MX Plan Version|
 |---|---|
-|![E-Mail](images/mxplan-creation-legacy-step1.png){.thumbnail}<br> Ihr Angebot steht in der Box „Abo“|![E-Mail](images/mxplan-creation-new-step1.png){.thumbnail}<br>Die `Server-Referenz` steht in der Box „Zusammenfassung“.|
+|![E-Mail](images/mxplan-creation-legacy-step1.png){.thumbnail}<br> Ihr Angebot wird im Abschnitt „Abo“ angezeigt.|![E-Mail](images/mxplan-creation-new-step1.png){.thumbnail}<br>Die `Server-Referenz` steht in der Box „Zusammenfassung“.|
 |Weiter zur [historischen MX Plan Version](./#historische-mx-plan-version_2)|Weiter zur [neuen MX Plan Version](./#neue-mx-plan-version)|
 
 ### Neue MX Plan Version
