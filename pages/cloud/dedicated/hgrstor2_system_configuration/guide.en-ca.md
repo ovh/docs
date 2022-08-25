@@ -6,7 +6,7 @@ section: Advanced use
 order: 6
 ---
 
-**Last updated 24th August 2022**
+**Last updated 25th August 2022**
 
 ## Objective
 
@@ -26,6 +26,7 @@ This documentation details:
 > [!primary]
 >
 > - This guide documents a configuration with 102 disks, but the information is also valid for other configurations.
+> - The configuration detailed in this guide is not equipped with NVMe disks (these are optional).
 > - You will only find the latest versions of the systems.
 > - All tested Debian versions detect only 2 paths and not 4, which would lead to LVM collisions.
 
