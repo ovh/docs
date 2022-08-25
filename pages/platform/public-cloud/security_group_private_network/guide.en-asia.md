@@ -121,7 +121,7 @@ As a consequence, all the network ports (public and private) will allow every co
 
 If you want to configure specific rules, you can create a new security group and associate your networking port with it.
 
-``bash
+```bash
 openstack security group create private
 +-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field           | Value                                                                                                                                                                      |
