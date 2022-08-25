@@ -45,7 +45,7 @@ A **port** in the context of [OpenStack Neutron](https://docs.openstack.org/neut
 
 ## Instructions
 
-### Activation process <a name="Activation"></a>
+### Activation process <a name="activation"></a>
 
 > [!primary]
 >
@@ -120,6 +120,8 @@ As a consequence, all the network ports (public and private) will allow every co
 #### Adding rules
 
 If you want to configure specific rules, you can create a new security group and associate your networking port with it.
+
+Use this command to create the group:
 
 ```bash
 openstack security group create private
