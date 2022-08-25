@@ -30,6 +30,8 @@ En raison d'une activité accrue, ou simplement de nouveaux besoins, votre insta
 - Avoir [créé une instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
+## En pratique
+
 Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche. 
 
 Cliquez ensuite sur `...`{.action} à droite de l'instance et sélectionnez `Editer`{.action}.
