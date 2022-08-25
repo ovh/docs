@@ -51,7 +51,7 @@ A **port** in the context of [OpenStack Neutron](https://docs.openstack.org/neut
 >
 > This guide section only concerns configurations for private networks.
 
-#### For already created private network:
+#### For pre-existing private networks
 
 To prevent breaking changes during OpenStack Stein and Open vSwitch version upgrades, the "port security" has been set to "False" on existing networks.
 
@@ -81,15 +81,15 @@ Then you can check if a port has port security enabled:
 openstack port show <port-ID> -f value -c port_security_enabled
 ```
 
-The result should look like to the following:
+The result should look like the following:
 
 <pre class="console"><code>$ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
 False
 </code></pre>
 
-#### For a new private network:
+#### For a new private network
 
-Since the upgrade to the Stein version on OpenStack regions and the new version of Open vSwitch are done ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)), the "port security" flag will be set to "True" by default on any newly created private networks.
+Since the upgrade to the Stein version on OpenStack regions and the new version of Open vSwitch are done ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)), the "port security" flag will be set to "True" by default on any newly created private network.
 
 This will ensure that we stay consistent with the default "True" policy, like on vanilla OpenStack deployments.
 
