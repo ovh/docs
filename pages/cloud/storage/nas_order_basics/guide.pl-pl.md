@@ -1,5 +1,5 @@
 ---
-title: Pierwsze kroki z usługą NAS HA
+title: Pierwsze kroki z usługą NAS HA OVHcloud
 slug: nas/pierwsze-kroki
 excerpt: Dowiedz się, jak zarządzać usługą NAS-HA w Panelu klienta OVHcloud
 section: NAS
@@ -10,114 +10,176 @@ order: 01
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 16-09-2021**
+**Ostatnia aktualizacja z dnia 22-08-2022**
 
 ## Wprowadzenie
 
-NAS (Network Attached Storage) jest serwerem plików podłączonym do sieci, którego główną funkcją jest przechowywanie danych w scentralizowanym woluminie dla niejednorodnych klientów sieciowych.
+Network Attached Storage (NAS) jest serwerem plików podłączonym do sieci, którego główną funkcją jest przechowywanie danych w scentralizowanym woluminie dla niejednorodnych klientów sieciowych.
+Usługę NAS HA możesz zarządzać poprzez [API OVHcloud](https://docs.ovh.com/pl/storage/nas/nas-quickapi/) lub w Panelu klienta.
+
+**Niniejszy przewodnik wyjaśnia, jak zarządzać partycjami i snapshotami NAS-HA w Panelu klienta OVHcloud.**
 
 ## Wymagania początkowe
 
+- Posiadanie usługi [NAS-HA OVHcloud](https://www.ovh.pl/nas/)
 - Posiadanie adresu IP powiązanego z usługą OVHcloud (Hosted Private Cloud, Serwer dedykowany, VPS, Instancja Public Cloud, itp.)
-- Posiadanie usługi [NAS-HA](https://www.ovh.pl/nas/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
-Zarządzanie usługą NAS-HA odbywa się w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i otwórz `NAS i CDN`{.action}.<br>
+Kliknij Twoją usługę, aby przejść do zakładki `Informacje ogólne`{.action}.
 
-Po zalogowaniu kliknij `Bare Metal Cloud`{.action}, a następnie `NAS i CDN`{.action} w menu po lewej stronie. Kliknij Twoją usługę, aby uzyskać dostęp do menu administracyjnego.
+![Informacje ogólne](images/nas-ha01.png){.thumbnail}
 
-![dostęp do usługi NAS](images/nas2021-01.png){.thumbnail}
+W zakładce `Informacje ogólne`{.action} wyświetlają się informacje techniczne, `Limit` usługi, szczegóły subskrypcji i skróty, aby [utworzyć partycję](#create_partition).
 
-### Utwórz partycję
+> [!primary]
+> Przejdź do strony [FAQ](../faq-nas/), aby poznać właściwości techniczne usługi NAS-HA.
+>
 
-Aby dodać nową partycję, kliknij `Utwórz partycję`{.action}.
+### Zarządzanie partycjami <a name="manage_partition"></a>
 
-![utworzyć partycję](images/nas2021-02.png){.thumbnail}
+Przejdź do zakładki `Partycje`{.action}. Tabela zawiera listę wszystkich partycji utworzonych dla wybranej usługi. Aby otworzyć stronę zarządzania, kliknij nazwę partycji. 
 
-Wystarczy podać **nazwę partycji**, jej **rozmiar** oraz zatwierdzony **protokół** (NFS lub CIFS).
+![Partycje](images/nas-ha02.png){.thumbnail}
 
-![atrybuty partycji](images/nas2021-03.png){.thumbnail}
+W sekcji **Metryki ogólne** podano ilość dostępnej przestrzeni dyskowej wykorzystywanej przez dane i snapshoty (`Pojemność całkowita`). Odsetek przestrzeni zajmowanej obecnie przez snapshoty jest oznaczony kolorem żółtym. Domyślnie wykonywany jest snapshot co godzinę.
 
-### Zmień rozmiar partycji
+Usługa NAS-HA dysponuje wystarczającą ilością przestrzeni do przechowywania kopii zapasowych snapshot. Przestrzeń ta odpowiada 20% początkowego rozmiaru wolumenu. Jeśli przekroczysz tę granicę, poniższe snapshoty będą używać Twojej głównej przestrzeni dyskowej.
 
-Aby zmienić rozmiar partycji, kliknij przycisk `(...)`{.action} znajdujący się po prawej stronie odpowiedniej partycji, a następnie `Zmień rozmiar`{.action}.
+Możesz aktywować opcję `Powiadomienie o wykorzystaniu przestrzeni`{.action}, aby otrzymywać ostrzeżenia przez e-mail, gdy osiągnięto limit wykorzystania wynoszący 90%.
 
-![zmień rozmiar partycji](images/nas2021-04.png){.thumbnail}
+Możesz wykonać kilka operacji klikając przycisk `...`{.action} w każdym wierszu tabeli.
 
-Wskaż nowy rozmiar i zatwierdź.
+- **Edytuj / wyświetl**: Otwórz sekcję "Informacje ogólne" na partycji.
+- **Zarządzanie snapshotami**: Otwórz sekcję [Reguły dotyczące snapshotów](#snapshots) na partycji.
+- **Zarządzanie dostępami**: Otwiera sekcję [Kontrola dostępu (ACL)](#access_control), w której możesz zarządzać prawami dostępu do adresów IP dla partycji.
+- **Zmień rozmiar**: Otwórz okno, aby [zmienić rozmiar](#modify_partition) partycji.
+- **Ustawienia Z File System (ZFS)**: Otwiera okno, które umożliwia [zmianę parametrów systemu ZFS](#zfs).
+- **Usuń**: Otwórz okno, aby [usunąć tę partycję](#deletion).
 
-### Zmień częstotliwość kopii zapasowych snapshot
+#### Tworzenie partycji <a name="create_partition"></a>
 
-Snapshot zawartości serwera NAS wykonywany jest automatycznie co godzinę i zapisywany jest na serwerze NAS.
+Aby dodać nową partycję, kliknij przycisk `+ Utwórz partycję`{.action} nad tabelą.
 
-Możesz utworzyć do 3 dodatkowych snapshotów z różnymi częstotliwościami, które będą również zapisane na serwerze NAS.
+![Partycje](images/nas-ha03.png){.thumbnail}
 
-W tym celu kliknij przycisk `(...)`{.action} znajdujący się po prawej stronie odpowiedniej partycji, a następnie `Częstotliwość snapshotów`{.action}.
+Wprowadź **nazwę** partycji, określ jej **rozmiar** w GB i wybierz **protokoły** dostępu (NFS, CIFS lub oba), które chcesz autoryzować.
 
-![zmień częstotliwość kopii zapasowych snapshot](images/nas2021-05.png){.thumbnail}
+W razie potrzeby podaj opis i kliknij `Utwórz partycję`{.action}.
 
-Wybierz nową częstotliwość, a następnie zatwierdź.
+#### Zmień rozmiar partycji <a name="modify_partition"></a>
 
-### Utwórz zrzut migawki
+Aby zmienić rozmiar partycji, kliknij przycisk `...`{.action} po prawej stronie odpowiedniej partycji, po czym wybierz `Zmień rozmiar`{.action}.
 
-Poza snapshotami wykonanymi automatycznie, w każdej chwili możesz utworzyć zrzut partycji. W tym celu kliknij przycisk `(...)`{.action} znajdujący się po prawej stronie partycji, a następnie `Snapshot`{.action}.
+![Partycje](images/nas-ha04.png){.thumbnail}
 
-![snapshot](images/nas2021-10.png){.thumbnail}
+Wpisz nowy rozmiar, po czym kliknij `Zmień rozmiar`{.action}.
 
-Nazwij snapshot i kliknij na `Dodaj`{.action}
+#### Tworzenie snapshotów i zarządzanie nimi <a name="snapshots"></a>
 
-### Dodawanie dostępu
+Kliknij przycisk `...`{.action} po prawej stronie odpowiedniej partycji, po czym wybierz `Zarządzanie snapshotami`{.action}.
 
-Aby uzyskać dostęp do utworzonej wcześniej partycji, należy skonfigurować dostęp.
+Snapshot danych wykonywany jest automatycznie co godzinę i zapisywany jest na NAS-HA. Reguła ta wyświetla się w tabeli w zakładce `Reguły dotyczące snapshotów`{.action}.
+
+![Snapshoty](images/nas-ha05.png){.thumbnail}
+
+Możesz aktywować inne reguły snapshotów, które utworzą snapshoty o określonej częstotliwości, klikając przycisk rozwijany pod `Opcje`. Wybierz częstotliwość i kliknij przycisk `Zaznacz`{.action} po prawej stronie.
+
+![Snapshoty](images/nas-ha06.png){.thumbnail}
+
+W oknie, które się pojawi odczekaj, aż proces się zakończy, następnie kliknij `Zamknij`{.action}. Dodatkowe snapshoty będą również przechowywane na NAS-HA.
+
+##### **Tworzenie ręcznego snapshota**
+
+Poza snapshotami wykonywanymi automatycznie, w każdej chwili możesz utworzyć ręczny snapshot partycji. Kliknij przycisk `Ręczne tworzenie snapshota`{.action} nad tabelą.
+
+![Snapshoty](images/nas-ha07.png){.thumbnail}
+
+Snapshot zostanie dodany do tabeli. Wpisz nazwę snapshota po prefiksie, po czym kliknij przycisk `Zaznacz`{.action} po prawej stronie.
+
+##### **Listowanie i przywracanie snapshotów**
+
+W Panelu klienta nie są dostępne funkcje przywracania kopii zapasowych snapshot. Są one przechowywane w trybie tylko do odczytu na partycji.
+
+Aby uzyskać dostęp do snapshotów z punktu montowania, należy uzyskać dostęp do katalogu `.zfs/snapshot` partycji.
+
+Na przykład w ramach usługi z ID `zpool-123456` istnieje partycja o nazwie `partition1`, którą utworzyłeś snapshot o nazwie `snap-snapshot01`. Możesz odnaleźć snapshot, wprowadzając następujące polecenie:
+
+```bash
+ls -al /zpool-123456/partition1/.zfs/snapshot/snap-snapshot01/
+```
+
+Aby przywrócić snapshot, skopiuj go ze ścieżki dostępu pliku `.zfs` do nowego katalogu, w którym chcesz przywrócić snapshot. Możesz użyć narzędzia takiego jak *rsync*, które umożliwia przywrócenie danych.
+
+Więcej informacji znajdziesz w sekcji [Sprawdź](#gofurther) ten przewodnik.
+
+#### Zarządzanie ACL partycji <a name="access_control"></a>
+
+Kontrola dostępu do partycji działa poprzez ograniczenie adresów IP. Ponieważ żadne ograniczenie nie jest domyślnie skonfigurowane, pierwszym etapem konfiguracji dla każdej partycji jest zdefiniowanie adresów IP lub zakresów, z których dostęp będzie dozwolony.
 
 > [!primary]
 >
-> Do serwera NAS mają dostęp wyłącznie adresy IP usług OVHcloud (np.: serwera dedykowanego, VPS, instancję Public Cloud, itp..)
+> Tylko adresy IP przypisane do usług OVHcloud mogą mieć dostęp do NAS-HA (np.: Serwer dedykowany, VPS, instancja Public Cloud, itp.).
 >
 
-Aby zezwolić IP na dostęp do usługi NAS, kliknij przycisk `(...)`{.action} znajdujący się po prawej stronie istniejącej partycji, a następnie `Zarządzaj dostępami`{.action}.
+##### **Dodanie dostępu**
 
-![zarządzanie dostępami](images/nas2021-06.png){.thumbnail}
+Kliknij przycisk `+ Dodaj nowy dostęp`{.action}.
 
-Następnie kliknij `Dodaj dostęp`{.action} i wybierz adres IP Twojego produktu OVHcloud.
-<br>Należy również określić, czy dostęp do tego adresu IP jest dozwolony tylko do odczytu (*Read-only*) lub odczytu/zapisu (*Read/Write*)
+![Access](images/nas-ha08.png){.thumbnail}
 
-![dodaj dostęp](images/nas2021-07.png){.thumbnail}
+Tworzy to nowy wiersz w tabeli, w której możesz wybrać adres IP lub blok adresu (CIDR). Wybierz `Odczyt` (RO) lub `Odczyt/zapis` (RW) jako typ dostępu w rozwijanym menu i kliknij przycisk `Zaznacz`{.action}, aby dodać ten wpis do ACL.
 
-#### Usuwanie dostępu
+W oknie, które się pojawi odczekaj, aż proces się zakończy, następnie kliknij `Zamknij`{.action}.
 
-Aby usunąć dostęp do partycji, kliknij przycisk `(...)`{.action} znajdujący się po prawej stronie odpowiedniego adresu IP, a następnie `Usuń`{.action}.
+##### **Usuwanie dostępu**
 
-![createaccess](images/nas2021-09.png){.thumbnail}
+Aby usunąć dostęp do partycji, kliknij ikonę `kosza`{.action} w tabeli.
 
-### Ustawienia Z File System (ZFS)
+![Access](images/nas-ha09.png){.thumbnail}
+
+W oknie, które się wyświetli kliknij `Usuń dostęp`{.action}, po czym zaczekaj, aż proces się zakończy. Kliknij `Zamknij`{.action}.
+
+### Parametry ZFS <a name="zfs"></a>
 
 > [!warning]
 >
-> Wszystkie ustawienia ZFS są zoptymalizowane. Chociaż nie zalecamy modyfikacji tych parametrów, menu to pozwala na dostosowanie ZFS używanego przez NAS-HA.
+> Wszystkie domyślne ustawienia systemu plików Z są zoptymalizowane. Chociaż zalecamy odradzanie tych parametrów, menu to pozwala na dostosowanie ZFS używanego przez NAS-HA.
 >
 
-Aby zmienić ustawienia ZFS dla partycji, kliknij przycisk `(...)`{.action} po prawej stronie odpowiedniej partycji, a następnie `Ustawienia Z File System (ZFS)`{.action}.
+Aby zmienić ustawienia ZFS dla partycji, kliknij przycisk `...`{.action} po prawej stronie odpowiedniej partycji, a następnie wybierz `Ustawienia Z File System (ZFS)`{.action}. 
 
-![zfs](images/nas2021-13.png){.thumbnail}
+![zfs](images/nas-ha10.png){.thumbnail}
 
 - **Wyłącz aktualizację czasu dostępu (*atime*)**: Wyłączenie *atime* oznacza, że jądro nie będzie aktualizować znacznika czasu systemu plików przy każdym dostępie do pliku. Może to być przydatne w przyspieszaniu częstych operacji odczytu, np. na statycznych stronach WWW. Nie zaleca się jednak dezaktywacji tej opcji dla aplikacji krytycznych pod względem spójności, takich jak bazy danych.
 - **ZFS recordsize**: Ta właściwość zmienia maksymalny rozmiar bloku w systemie plików ZFS. Pamiętaj, że ZFS będzie nadal używać mniejszy rozmiar bloku, jeśli plik jest mniejszy niż maksymalny rozmiar. Na przykład plik o rozmiarze 16 KB użyje bloku o rozmiarze 16 KB (plus metadane), aby nie zmarnować przestrzeni dyskowej. W związku z tym nie zalecamy modyfikacji ZFS *recordsize*.
 - **Sync**: Ten parametr zmienia zachowanie transakcji w systemie plików ZFS w odniesieniu do zapisu danych RAM i zapisu danych na dysku. Nie zalecamy modyfikacji tej właściwości, chyba że jest to powód szczególny.
 
-### Usuwanie partycji
+### Usuwanie partycji <a name="deletion"></a>
 
-> [!alert]
+> [!warning]
 >
-> Usunięcie partycji spowoduje całkowite i definitywne usunięcie wszystkich zawartych w niej danych.
+> Usunięcie partycji spowoduje trwałe usunięcie wszystkich zawartych w niej danych.
 >
 
-Aby usunąć partycję, kliknij przycisk `(...)`{.action} znajdujący się po prawej stronie istniejącej partycji, a następnie `Usuń`{.action}.
+Aby usunąć partycję, kliknij przycisk `...`{.action} po prawej stronie odpowiedniej partycji i wybierz `Usuń`{.action}.
 
-![usuń partycję](images/nas2021-08.png){.thumbnail}
+![Usuwanie](images/nas-ha11.png){.thumbnail}
 
-## Sprawdź również
+Potwierdź operację w oknie, które się wyświetli, klikając `Usuń partycję`{.action}. Odczekaj, aż proces się zakończy, następnie kliknij `Zamknij`{.action}.
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+## Sprawdź <a name="gofurther"></a>
+
+[Zarządzanie partycjami przez API](https://docs.ovh.com/pl/storage/nas/nas-partitions-api/)
+
+[Zarządzanie ACL partycji przez API](https://docs.ovh.com/pl/storage/nas/nas-manage-acls/)
+
+[Zarządzanie snapshotami przez API](https://docs.ovh.com/pl/storage/nas/nas-snapshots-api/)
+
+[Montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](../nas-nfs/)
+
+[Montowanie usługi NAS na systemie Windows Server przy użyciu CIFS](../nas-cifs/)
+
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
