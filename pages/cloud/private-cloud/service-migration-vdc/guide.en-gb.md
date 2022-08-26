@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Last updated 2nd June 2022**
+**Last updated 26th August 2022**
 
 **This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC) to a new destination vDC (Essentials or Premier).**
 
