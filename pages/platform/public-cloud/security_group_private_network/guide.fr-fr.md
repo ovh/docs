@@ -74,7 +74,7 @@ Pour tous les services ayant un port actif dans ce réseau, activez le "port sec
 openstack port set --enable-port-security <port_ID>
 ```
 
-Vous pouvez ensuite vérifier si le "port security" est activée sur un port en particulier :
+Vous pouvez ensuite vérifier si le "port security" est activé sur un port en particulier :
 
 ```bash
 openstack port show <port-ID> -f value -c port_security_enabled

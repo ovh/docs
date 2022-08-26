@@ -1,15 +1,37 @@
 ---
-title: Gestión de las reglas de firewall y seguridad de los puertos en las redes privadas
+title: Gestión de las reglas de firewall y port security en las redes que utilizan OpenStack CLI
 slug: firewall_security_pci
 excerpt: Cómo funcionan los grupos de seguridad en Public Cloud
 section: OpenStack
 ---
 
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
+
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 16/06/2022**
+**Última actualización: 26/08/2022**
 
 ## Objetivo
 
@@ -17,14 +39,7 @@ La plataforma OpenStack gestiona la seguridad de los cortafuegos combinando las 
 
 Un **puerto** en el marco de [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html){.external} es un punto de conexión entre las subredes y los elementos de red (como instancias, load-balancers, routers, etc.).
 
-**Esta guía explica cómo se gestionan los grupos de seguridad de las redes privadas en Public Cloud.**
-
-> [!primary]
->
-> Esta guía solo es aplicable a las configuraciones de redes privadas. En cuanto a las redes públicas, las reglas del firewall son globales.
->
-> A continuación ofrecemos los [detalles de la migración](#migration) relativa a los cambios realizados en las [regiones](#regions) de Public Cloud de OpenStack.
->
+**Esta guía explica cómo se gestionan los grupos de seguridad de las redes públicas y privadas en Public Cloud.**
 
 ## Requisitos
 
@@ -32,6 +47,54 @@ Un **puerto** en el marco de [OpenStack Neutron](https://docs.openstack.org/neut
 - [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/us/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
 
 ## Procedimiento
+
+### Procedimiento de activación <a name="activation"></a>
+
+> [!primary]
+>
+> Esta sección de la guía solo se aplica a las configuraciones de redes privadas.
+
+#### Para una red privada ya creada
+
+Para evitar cualquier ruptura de la configuración durante las subidas de versión de OpenStack Stein y Open vSwitch, el parámetro "port security" se ha establecido en las redes existentes.
+
+Debe utilizar la CLI `OpenStack` para activar el "port security" en sus puertos y su red existente.
+
+En primer lugar, si quiere utilizar reglas de firewall en redes privadas, deberá definir la propiedad "port security" en "True":
+
+```bash
+openstack network set --enable-port-security <network_ID>
+```
+
+A continuación, deberá activar el puerto de seguridad en el puerto del servicio de la red. 
+
+> [!primary]
+> Le recordamos que, para cargar el puerto, puede utilizar la CLI OpenStack. Ejecute el comando `openstack port list --server <server_ID>` para recuperar los puertos de un servidor determinado.
+>
+
+Para todos los servicios que tengan un puerto activo en esta red, active el port security :
+
+```bash
+openstack port set --enable-port-security <port_ID>
+```
+
+Compruebe si el "port security" está activado en un puerto en particular:
+
+```bash
+openstack port show <port-ID> -f value -c port_security_enabled
+```
+
+El resultado debería ser similar al siguiente:
+
+<pre class="console"><code>$ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
+False
+</code></pre>
+
+#### Para una nueva red privada:
+
+Al actualizarse a la versión Stein en las regiones de OpenStack y actualizarse la versión de Open vSwitch ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)), el parámetro de "port security" se definirá en "True" por defecto en cualquier red privada recién creada.
+
+Esto nos asegurará que somos coherentes con la política "True" por defecto, como en los despliegues de vanilla de OpenStack.
 
 ### Configuración predeterminada
 
@@ -62,7 +125,7 @@ En consecuencia, todos los puertos de red (públicos y privados) permiten cada c
 
 #### Añadir reglas
 
-Si desea configurar reglas específicas, puede cambiar el grupo de seguridad predeterminado. También puede crear un nuevo grupo de seguridad y asociarle su puerto de red.
+Si desea configurar reglas específicas, puede crear un nuevo grupo de seguridad y asociarle su puerto de red.
 
 Utilice este comando para crear el grupo:
 
@@ -123,59 +186,6 @@ Introduzca el siguiente comando para asociar su grupo de seguridad a su puerto:
 ```bash
 openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 ```
-
-#### Diferencias de comportamiento según las regiones <a name="regions"></a>
-
-La configuración por defecto de la red privada puede variar en función de la región utilizada.
-
-> [!primary]
-> En algunas regiones, la propiedad "port security" se considera *hostil* aunque no aplica ninguna regla sobre la red privada. En algunas otras regiones (en función de la versión de OpenStack implementada), la propiedad "port security" se considera *enabled* y las reglas se aplican correctamente en la red privada.
-> 
-
-
-En resumen, las siguientes regiones ejecutan Newton OpenStack release y **ninguna regla de cortafuegos funcionará** para sus redes privadas, aunque la seguridad de los puertos esté activada:
-
-- Singapur: SGP1
-- Sídney: SYD1
-- Hillsboro: US-WEST-OR-1
-- Vint Hill: US-EAST-VA-1
-
-En las siguientes regiones (ejecutando la versión Stein OpenStack), las reglas de firewall para las redes privadas **funcionarán** como se había previsto:
-
-- Beauharnois: BHS1, BHS3, BHS5
-- Frankfurt: DE1
-- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA9, GRA11
-- Estrasburgo: SBG5, SBG7
-- Londres: UK1
-- Varsovia: WAW1
-
-OVHcloud actualizará progresivamente todas las regiones de Newton a Stein para que la funcionalidad "port security" esté disponible.
-
-Para evitar interrupciones del servicio durante la actualización, el valor *False* se asignará a la propiedad "port security" de todas las redes ya creadas. Una vez que haya actualizado una región en la versión Stein OpenStack, si quiere utilizar reglas de firewall en redes privadas, deberá establecer la propiedad "port security" en *True*.
-
-Ejecute el siguiente comando para comprobar si la propiedad "port security" está activada en su puerto de red privada:
-
-```bash
-openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
-False
-```
-
-### Proceso de migración <a name="migration"></a>
-
-La migración seguirá el siguiente proceso:
-
-- Las reglas de firewall para los nuevos puertos no se aplicarán hasta que active la propiedad "port security" en el nuevo puerto. Nada cambia en los puertos existentes.
-- Las regiones de OpenStack pasarán a la versión Stein.
-- Las regiones de OpenStack en versión Stein pasarán a una nueva versión de OpenVSwitch.
-
-> [!primary]
-> A partir de esta etapa, para los usuarios de Terraform, es necesario forzar la configuración del [port security a "false"](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external} para que los playbooks puedan funcionar.
->
-
-- Puede activar "port security" en las regiones Stein.
-- El puerto de seguridad por defecto se modificará **activándolo** (se enviará una comunicación global a su debido tiempo).
-- Las reglas de firewall funcionarán para los nuevos puertos. Nada cambia en los puertos existentes.
-- Se activará la opción que permite activar la propiedad "port security" en los puertos existentes.
 
 ## Más información
 
