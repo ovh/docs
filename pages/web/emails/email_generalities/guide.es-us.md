@@ -134,7 +134,7 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](../webmail_guia_de_uso_de_roundcube/){.external}.
+A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](https://docs.ovh.com/es/emails/webmail_guia_de_uso_de_roundcube/){.external}.
 
 ![Correo electrónico](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
