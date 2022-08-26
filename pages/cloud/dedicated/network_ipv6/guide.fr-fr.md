@@ -5,7 +5,7 @@ excerpt: 'Decouvrez comment configurer des adresses IPv6 sur notre infrastructur
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 29/06/2022**
+**Dernière mise à jour le 26/08/2022**
 
 ## Objectif
 
@@ -33,7 +33,7 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 
 En installant votre serveur à l’aide d’un modèle de système d’exploitation Linux fourni par OVHcloud, vous devrez configurer la première adresse IPv6 (l'adresse principale) sur le serveur.
 
-Par exemple si nous avons attribué à votre serveur la gamme IPv6 : 2607:5300:xxxx:xxxx::/64 vous pouvez utiliser comme IPv6 principale de votre serveur l'IPv6 : 2607:5300:xxxx:xxxx::1/64.
+Par exemple, si nous avons attribué à votre serveur la plage IPv6 : `2607:5300:xxxx:xxxx::/64` vous pouvez utiliser comme IPv6 principale de votre serveur l'IPv6 : `2607:5300:xxxx:xxxx::1/64`.
 
 Si vous souhaitez configurer plusieurs adresses IPv6 sur votre serveur (ou si vous souhaitez l’utiliser sur une VM) vous devez disposer d’une IP fail-over configurée avec une vMAC. Dans le cas contraire, l'IPv6 ne pourra pas être routée par nos routeurs/switchs.
 
@@ -43,8 +43,8 @@ Si vous souhaitez configurer plusieurs adresses IPv6 sur votre serveur (ou si vo
 >
 > Par exemple :
 > 
-> - La plage IPv6 du serveur est 2607:5300:60:62ac::/64 ou 2607:5300:60:62ac:0000:0000:0000:0000/64. L’IPv6_GATEWAY sera alors 2607:5300:60:62FF:FF:FF:FF:FF.
-> - La plage IPv6 du serveur est 2001:41D0:1:46e::/64 ou 2001:41D0:0001:046e:0000:0000:0000:0000/64. L’IPv6_GATEWAY sera alors 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - La plage IPv6 du serveur est `2607:5300:60:62ac::/64` ou `2607:5300:60:62ac:0000:0000:0000:0000/64`. L’IPv6_GATEWAY sera alors `2607:5300:60:62FF:FF:FF:FF:FF`.
+> - La plage IPv6 du serveur est `2001:41D0:1:46e::/64` ou `2001:41D0:0001:046e:0000:0000:0000:0000/64`. L’IPv6_GATEWAY sera alors `2001:41D0:1:4FF:FF:FF:FF:FF`.
 >
 > Le moyen le plus sûr de récupérer les informations réseau de votre serveur est d'[utiliser l'API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/). Exécutez l'appel API suivant, en indiquant le nom interne du serveur (exemple : `ns3956771.ip-169-254-10.eu`) :
 >
