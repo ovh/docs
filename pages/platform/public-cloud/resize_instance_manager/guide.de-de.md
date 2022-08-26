@@ -48,12 +48,12 @@ Scrollen Sie auf dem neuen Tab zum Abschnitt **Modell**, um die gewünschte Vorl
 
 > [!primary]
 >
-> Bei klassischen Modellen können Sie auf jedes Modell mit ähnlicher oder größerer Festplatte umstellen. Sie können nicht zu einem Modell mit einer kleineren Festplatte wechseln.<br/>
+> Bei klassischen Modellen können Sie auf jedes Modell mit gleicher oder größerer Disk umstellen. Sie können nicht zu einem Modell mit einer kleineren Disk wechseln.<br/>
 >
-> Nur **flexible** Instanzen können aktualisiert und degradiert werden, wobei eine feste Festplattengröße von 50 GB beibehalten wird.
+> Nur **flexible** Instanzen können aktualisiert und degradiert werden, wobei eine feste Größe von 50 GB beibehalten wird.
 >
 
-Wenn Ihre Festplatte 50 GB oder weniger beträgt, können Sie auf eine `flexible Instanz`{.action}  wechseln, wenn Sie möchten.
+Wenn die Größe der Disk 50 GB oder weniger beträgt, können Sie auf eine `Flexible Instanz`{.action} wechseln, wenn Sie möchten.
 
 > [!warning]
 > Achtung, wenn Sie eine Instanz vom Typ *Flex* bearbeiten, können Sie nicht über das Kundencenter auf eine klassische Instanz umstellen. Weitere Informationen finden Sie in unserer Anleitung [Revertierung einer Flex-Instanz](https://docs.ovh.com/de/public-cloud/revertieren-einer-flex-instanz/).
