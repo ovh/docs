@@ -1,11 +1,33 @@
 ---
-title: Managing firewall rules and port security on private networks
+title: Managing firewall rules and port security on networks using OpenStack CLI
 slug: firewall_security_pci
 excerpt: Find out how security groups work on Public Cloud
 section: OpenStack
 ---
 
-**Last updated 16th June 2022**
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
+
+**Last updated 25th August 2022**
 
 ## Objective
 
@@ -13,21 +35,63 @@ The OpenStack platform manages firewall security by combining connection rules i
 
 A **port** in the context of [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html) is a point of connection between subnets and networking elements (such as instances, load balancers, routers etc.).
 
-**This guide explains how security groups for private networks are managed on Public Cloud.**
+**This guide explains how security groups for public and private networks are managed on Public Cloud.**
 
-> [!primary]
->
-> This guide only concerns configurations for private networks. For public networks the firewall rules are global.
->
-> Please take note of the [migration details](#migration) below regarding changes to the Public Cloud OpenStack [regions](#regions).
 
 ## Requirements
 
 - Preparing the environment to [use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
 - Setting the [OpenStack environment variables](../set-openstack-environment-variables/)
 
-
 ## Instructions
+
+### Activation process <a name="activation"></a>
+
+> [!primary]
+>
+> This guide section only concerns configurations for private networks.
+
+#### For pre-existing private networks
+
+To prevent breaking changes during OpenStack Stein and Open vSwitch version upgrades, the "port security" has been set to "False" on existing networks.
+
+You have to use `openstack` CLI to enable the port security on your existing ports and network.
+
+First, if you want to use firewall rules on private networks you will have to set the "port security" property as "True":
+
+```bash
+openstack network set --enable-port-security <network_ID>
+```
+
+Then, you will need to enable the port security on the port of your service in this network. 
+
+> [!primary]
+> As a reminder, to retrieve the port, you can use OpenStack CLI. Execute the command `openstack port list --server <server_ID>` to retrieve the ports on a given server.
+>
+
+For all services with an active port in this network, enable port security:
+
+```bash
+openstack port set --enable-port-security <port_ID>
+```
+
+Then you can check if a port has port security enabled:
+
+```bash
+openstack port show <port-ID> -f value -c port_security_enabled
+```
+
+The result should look like the following:
+
+<pre class="console"><code>$ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
+False
+</code></pre>
+
+#### For a new private network
+
+Since the upgrade to the Stein version on OpenStack regions and the new version of Open vSwitch are done ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)), the "port security" flag will be set to "True" by default on any newly created private network.
+
+This will ensure that we stay consistent with the default "True" policy, like on vanilla OpenStack deployments.
 
 ### Default settings
 
@@ -37,7 +101,6 @@ The "default" security group contains the following rules:
 
 ```bash
 openstack security group rule list default
-
 +--------------------------------------+-------------+-----------+-----------+------------+-----------------------+
 | ID                                   | IP Protocol | Ethertype | IP Range  | Port Range | Remote Security Group |
 +--------------------------------------+-------------+-----------+-----------+------------+-----------------------+
@@ -50,21 +113,18 @@ openstack security group rule list default
 
 The return shows that all connections are allowed for any protocol and in both directions.
 
-Depending on the region, the implementation might be different but the result is identical: all connections are allowed.
-
 As a consequence, all the network ports (public and private) will allow every connection when you start an instance.
 
 ### Managing your private firewall rules
 
 #### Adding rules
 
-If you want to configure specific rules, you can edit the default security group. Alternatively, create a new security group and associate your networking port with it.
+If you want to configure specific rules, you can create a new security group and associate your networking port with it.
 
 Use this command to create the group:
 
 ```bash
 openstack security group create private
-
 +-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field           | Value                                                                                                                                                                      |
 +-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -89,7 +149,6 @@ To add a rule for SSH connections for example, you can use this command:
 
 ```bash
 openstack security group rule create --protocol tcp --dst-port 22 private
-
 +-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field             | Value                                                                                                                                                                   |
 +-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -119,60 +178,6 @@ Enter the following command to associate your security group with your port:
 ```bash
 openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 ```
-
-#### Different behaviour depending on regions <a name="regions"></a>
-
-The private network default configuration might be different depending on the region you are using.
-
-> [!primary]
->
-> In some regions the "port security" property is shown as "enabled" even when it is not applying any rule on private network. On some other regions (depending on the OpenStack version deployed), the "port security" property is shown as "enabled" and rules are applied correctly on private network.
->
-
-To summarise, for the following regions running OpenStack Newton **no firewall rules will work** for your private networks, even if port security is enabled:
-
-- Singapore: SGP1
-- Sydney: SYD1
-- Hillsboro: US-WEST-OR-1
-- Vint Hill: US-EAST-VA-1
-
-In the following regions (running OpenStack Stein release), the firewall rules for private networks **will work** as expected:
-
-- Beauharnois: BHS1, BHS3, BHS5
-- Frankfurt: DE1
-- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA9, GRA11
-- Strasbourg: SBG5, SBG7
-- London: UK1
-- Warsaw: WAW1
-
-OVHcloud will progressively upgrade all Newton regions to Stein, so the port security property feature will be available.
-
-To avoid any breaking change during the upgrade, the "port security" will be set to "False" on all already created networks. Once a region will be upgraded to OpenStack Stein release, if you want to use firewall rules on private networks you will have to set the "port security" property as "True".
-
-You can check whether your private network port has port security enabled:
-
-```bash
-openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
-False
-```
-
-### Migration process <a name="migration"></a>
-
-This will occur according to the following process:
-
-- The firewall rules for new ports will not be applied until you enable it on the new port. Nothing will change for the existing ports.
-- The OpenStack regions will be upgraded to Stein.
-- The Stein version of OpenStack regions will be upgraded to a new version of OpenVSwitch.
-
-> [!primary]
-> From this step, for Terraform users, it is necessary to force the setting of [port security to `false`](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external} for the playbooks to work.
->
-
-- You can enable port security on Stein regions.
-- The default port security will be changed to **enabled** (a global communication will be sent in time).
-- The firewall rules will work for the new ports. Nothing will change for the existing ports.
-- The option to enable port security for existing ports will be activated.
-
 
 ## Go further
 
