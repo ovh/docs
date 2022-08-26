@@ -1,15 +1,37 @@
 ---
-title: Zarządzanie regułami firewalla i bezpieczeństwem portów w sieciach prywatnych
+title: Zarządzanie regułami firewalla i portu security w sieciach korzystających OpenStack CLI
 slug: firewall_security_pci
 excerpt: Sprawdź działanie grup zabezpieczeń w usłudze Public Cloud
 section: Zarządzanie w OpenStack CLI
 ---
 
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
+
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 16-06-2022**
+**Ostatnia aktualizacja z dnia 25-08-2022**
 
 ## Wprowadzenie
 
@@ -17,14 +39,7 @@ Platforma OpenStack zarządza bezpieczeństwem zapory sieciowej, łącząc regu�
 
 **Port** w ramach [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html){.external} jest punktem połączenia między podsieciami i elementami sieci (takimi jak instancje, Load Balancer, routery, itp...).
 
-**Dowiedz się, jak zarządzać grupami zabezpieczeń w sieciach prywatnych w ramach Public Cloud.**
-
-> [!primary]
->
-> Niniejszy przewodnik dotyczy tylko konfiguracji prywatnych sieci. W przypadku sieci publicznych reguły firewalla są kompleksowe.
->
-> Zapraszamy do zapoznania się z poniższymi [szczegółami dotyczącymi migracji](#migration), dotyczącymi zmian w [regionach](#regions) Public Cloud OpenStack.
->
+**Dowiedz się, jak zarządzać grupami zabezpieczeń w sieciach publicznych i prywatnych w systemie Public Cloud.**
 
 ## Wymagania początkowe
 
@@ -32,6 +47,54 @@ Platforma OpenStack zarządza bezpieczeństwem zapory sieciowej, łącząc regu�
 - [Pobieranie zmiennych środowiskowych OpenStack](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/)
 
 ## W praktyce
+
+### Procedura aktywacji <a name="activation"></a>
+
+> [!primary]
+>
+> Ta sekcja przewodnika dotyczy tylko konfiguracji prywatnych sieci.
+
+#### Dla już utworzonej prywatnej sieci
+
+Aby uniknąć przerw w konfiguracji podczas migracji wersji OpenStack Stein i Open vSwitch, na "False" w istniejących sieciach zdefiniowano parametr "port security".
+
+CLI `openstack` jest niezbędny do aktywowania portu security w Twoich portach i w istniejącej sieci.
+
+Po pierwsze, jeśli chcesz używać reguł zapory sieciowej w prywatnych sieciach, musisz zdefiniować właściwość "port security" na "True":
+
+```bash
+openstack network set --enable-port-security <network_ID>
+```
+
+Następnie należy aktywować port security na porcie usługi w tej sieci. 
+
+> [!primary]
+> Przypominamy, że aby odzyskać port, możesz skorzystać z CLI OpenStack. Wprowadź komendę `openstack port list --server <server_ID>`, aby pobrać porty na danym serwerze.
+>
+
+W przypadku wszystkich usług posiadających aktywny port w tej sieci, włącz "port security":
+
+```bash
+openstack port set --enable-port-security <port_ID>
+```
+
+Następnie możesz sprawdzić, czy "port security" jest aktywowany w konkretnym porcie:
+
+```bash
+openstack port show <port-ID> -f value -c port_security_enabled
+```
+
+Wynik powinien być podobny do tego:
+
+<pre class="console"><code>$ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
+False
+</code></pre>
+
+#### W przypadku nowej sieci prywatnej:
+
+Ponieważ aktualizacja do wersji Stein w regionach OpenStack i nowa wersja Open vSwitch zostały przeprowadzone ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)), parametr "port security" zostanie ustawiony domyślnie na "True" w każdej nowo utworzonej sieci prywatnej.
+
+Zapewni to nam spójność z domyślną polityką "True", jak również z wdrażaniami vanilla OpenStack.
 
 ### Domyślne parametry
 
@@ -62,7 +125,7 @@ W związku z tym wszystkie porty sieciowe (publiczne i prywatne) umożliwiają k
 
 #### Dodaj reguły
 
-Jeśli chcesz skonfigurować określone reguły, możesz zmienić grupę zabezpieczeń domyślnie. Możesz również utworzyć nową grupę zabezpieczeń i powiązać z nią port sieciowy.
+Jeśli chcesz skonfigurować określone reguły, możesz utworzyć nową grupę zabezpieczeń i przypisać do niej port sieciowy.
 
 Użyj tego polecenia, aby utworzyć grupę:
 
@@ -117,65 +180,11 @@ openstack security group rule create --protocol tcp --dst-port 22 private
 +-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-
 Wprowadź następujące polecenie, aby powiązać grupę zabezpieczeń z portem:
 
 ```bash
 openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 ```
-
-#### Różnice w zachowaniu w poszczególnych regionach <a name="regions"></a>
-
-Domyślna konfiguracja sieci prywatnej może być różna w zależności od używanego regionu.
-
-> [!primary]
-> W niektórych regionach własność "port security" jest uznawana za *enabled*, nawet jeśli nie stosuje ona żadnych zasad dotyczących sieci prywatnej. W niektórych innych regionach (w zależności od wdrożonej wersji OpenStack) własność "port security" jest widoczna jako *enabled*, a reguły są poprawnie stosowane w prywatnej sieci.
-> 
-
-
-Podsumowując, następujące regiony uruchamiają Newton OpenStack release i **żadna reguła firewall nie będzie działać** dla Twoich prywatnych sieci, nawet jeśli bezpieczeństwo portów jest włączone:
-
-- Singapur: SGP1
-- Sydney: SYD1
-- Hillsboro: US-WEST-OR-1
-- Vint Hill: US-EAST-VA-1
-
-W następujących regionach (uruchamiając wersję Stein OpenStack) reguły zapory ogniowej dla prywatnych sieci **będą działać** zgodnie z planem:
-
-- Beauharnois: BHS1, BHS3, BHS5
-- Frankfurt: DE1
-- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA9, GRA11
-- Strasburg: SBG5, SBG7
-- Londyn: UK1
-- Warszawa: WAW1
-
-OVHcloud stopniowo uaktualni wszystkie regiony Newton do Stein, aby zapewnić dostępność funkcji "port security".
-
-W celu uniknięcia przerw w działaniu usługi podczas aktualizacji wartość *False* zostanie przypisana do nieruchomości "port security" we wszystkich sieciach już utworzonych. Po aktualizacji regionu w wersji Stein OpenStack, jeśli chcesz używać reguł zapory sieciowej w prywatnych sieciach, musisz zdefiniować właściwość "port security" w *True*.
-
-Wprowadź następujące polecenie, aby sprawdzić, czy właściwość "port security" jest aktywna w prywatnym porcie sieciowym:
-
-```bash
-openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
-False
-```
-
-### Proces migracji <a name="migration"></a>
-
-Migracja będzie przebiegać zgodnie z poniższym procesem:
-
-- Reguły firewalla dla nowych portów nie będą stosowane, dopóki nie uruchomisz prawa własności "port security" na nowym porcie. Dla istniejących portów nic się nie zmieni.
-- Regiony OpenStack przejdą do wersji Stein.
-- Regiony OpenStack w wersji Stein będą przechodzić na nową wersję OpenVSwitch.
-
-> [!primary]
-> Na tym etapie, dla użytkowników Terraform, konieczne jest wymuszenie konfiguracji [portu security w "false"](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external}, aby playbooks mógł działać.
->
-
-- Możesz aktywować "port security" w regionie Stein.
-- Domyślny "port security" zostanie zmodyfikowany podczas **aktywacji** (globalna komunikacja zostanie wysłana w odpowiednim czasie).
-- Reguły firewalla będą działać dla nowych portów. Dla istniejących portów nic się nie zmieni.
-- Opcja aktywacji nieruchomości "port security" dla istniejących portów zostanie włączona.
 
 ## Sprawdź również
 
