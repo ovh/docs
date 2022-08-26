@@ -21,7 +21,7 @@ I NAS-HA OVHcloud permettono di creare e gestire volumi di file accessibili da u
 ## Prerequisiti
 
 - Un servizio [NAS-HA OVHcloud](https://www.ovh.it/nas/)
-- Consulta la nostra guida sui [primi passi con l'API OVHcloud](../../api/first-steps-with-ovh-api/) per familiarizzare con l'APIv6 OVHcloud
+- Consulta la nostra guida sui [primi passi con l'API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/) per familiarizzare con l'APIv6 OVHcloud
 
 ## Procedura
 

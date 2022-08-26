@@ -21,7 +21,7 @@ Usługa NAS-HA OVHcloud pozwala na zarządzanie przestrzenią dyskową plików d
 ## Wymagania początkowe
 
 - Usługa [NAS-HA OVHcloud](https://www.ovh.pl/nas/)
-- Zapoznaj się z naszym przewodnikiem Pierwsze kroki z [API OVHcloud](../../api/first-steps-with-ovh-api/), aby zapoznać się z APIv6 OVHcloud
+- Zapoznaj się z naszym przewodnikiem Pierwsze kroki z [API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/), aby zapoznać się z APIv6 OVHcloud
 
 ## W praktyce
 

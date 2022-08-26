@@ -31,7 +31,7 @@ open `NAS and CDN`{.action}. Click on your service to access the `General inform
 The `General information`{.action} tab displays some technical information, the `Quota` of the service, general subscription details and a shortcut to [create a partition](#create_partition).
 
 > [!primary]
-> Please visit the [FAQ page](../faq-nas/) for detailed information on the technical properties of the HA-NAS solution.
+> Please visit the [FAQ page](https://docs.ovh.com/ca/en/storage/faq-nas/) for detailed information on the technical properties of the HA-NAS solution.
 >
 
 ### Managing partitions <a name="manage_partition"></a>
@@ -174,7 +174,7 @@ Confirm the action in the popup window by clicking on `Delete partition`{.action
 
 [Managing snapshots via API](https://docs.ovh.com/ca/en/storage/nas/nas-snapshots-api)
 
-[Mounting your HA-NAS via NFS share](../nas-nfs/)
+[Mounting your HA-NAS via NFS share](https://docs.ovh.com/ca/en/storage/nas-nfs/)
 
 [Mounting your HA-NAS on Windows Server via CIFS](../nas-cifs/)
 
