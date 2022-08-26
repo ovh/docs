@@ -92,7 +92,7 @@ False
 
 #### Para una nueva red privada:
 
-Al actualizarse a la versión Stein en las regiones de OpenStack y actualizarse la versión de Open vSwitch ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)), el parámetro de "port security" se definirá en "True" por defecto en cualquier red privada recién creada.
+Al actualizarse a la versión Stein en las regiones de OpenStack y actualizarse la versión de Open vSwitch a partir del 06/09/2022 ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)), el parámetro de "port security" se definirá en "True" por defecto en cualquier red privada recién creada.
 
 Esto nos asegurará que somos coherentes con la política "True" por defecto, como en los despliegues de vanilla de OpenStack.
 
