@@ -6,7 +6,7 @@ section: Fonctionnalités VMware vSphere
 order: 09
 ---
 
-**Dernière mise à jour le 25/08/2022**
+**Dernière mise à jour le 26/08/2022**
 
 ## Objectif
 
@@ -25,7 +25,16 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 - Avoir souscrit une offre [Hosted Private Cloud powered by VMware](https://www.ovh.com/fr/private-cloud/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à l’interface de gestion vSphere.
+- Avoir la version de vSphere et des hôtes en version 7.0 Update.
 - La solution de réplication **Zerto** n'est pas compatible ce jour avec le chiffrement. Les VMs chiffrées ne pourront donc pas être répliquées.
+
+
+> [!warning]
+>
+> Il est possible que votre cluster **Hosted Private Cloud Powered by VMware** ne soit pas en version 7.0 Update 2, dans ce cas là n'hésitez pas à contacter le support pour voir si il est possible de faire évoluer votre infrastructure.
+>
+
+
 
 ## Présentation
 
