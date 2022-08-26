@@ -27,11 +27,11 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 
 ## En pratique
 
-Nous allons installer VMware Tanzu Kubernetes Grid sur un cluster PCC sur le VLAN10 qui a ces paramètres:
+Nous allons installer **VMware Tanzu Kubernetes Grid** dans un cluster PCC sur le VLAN10 qui a ces paramètres:
 
-* **Lan** : `192.168.0.0/24`
-* **Etendue DHCP** : `192.168.0.50 -> 192.168.0.100`
-* **Passerelle** : `192.168.0.254`
+* **Lan** : `192.168.0.0/24`.
+* **Etendue DHCP** : `192.168.0.50 -> 192.168.0.100`.
+* **Passerelle** : `192.168.0.254`.
 
 ### Intégration du modèle OVA contenant le modèle de machine virtuelle **Tanzu KUBERNETES Grid** sous **Photon OS**
 
@@ -44,4 +44,7 @@ Nous allons installer VMware Tanzu Kubernetes Grid sur un cluster PCC sur le VLA
 
 [Présentation de VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
+[Documentation de VMware Tanzu Kubenetes Grid](https://https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+

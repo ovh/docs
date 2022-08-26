@@ -25,13 +25,13 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 - Avoir souscrit une offre [Hosted Private Cloud powered by VMware](https://www.ovh.com/fr/private-cloud/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à l’interface de gestion vSphere.
-- Avoir la version de vSphere et des hôtes en version 7.0 Update 2 minimum
+- Avoir la version de vSphere et des hôtes en version 7.0 Update 2 minimum.
 - La solution de réplication **Zerto** n'est pas compatible ce jour avec le chiffrement. Les VMs chiffrées ne pourront donc pas être répliquées.
 
 
 > [!warning]
 >
-> Il est possible que votre cluster **Hosted Private Cloud Powered by VMware** ne soit pas en version 7.0 Update 2, dans ce cas  contactez le support pour faire évoluer votre infrastructure.
+> Il est possible que votre cluster **Hosted Private Cloud powered by VMware** ne soit pas en version 7.0 Update 2, dans ce cas  contactez le support pour faire évoluer votre infrastructure.
 >
 
 
@@ -86,7 +86,7 @@ Saisissez un nom dans `Nom`
 
 > [!warning]
 >
-> Si votre offre Private Cloud est plus ancienne que **Premier Hosted Private Cloud powered by VMware**  décochez la case `Utiliser le fournisseur de clés uniquement avec les hôtes ESXi protégés par TPM (recommandé)` 
+> Si votre offre Private Cloud est plus ancienne que **Premier Hosted Private Cloud powered by VMware** décochez la case `Utiliser le fournisseur de clés uniquement avec les hôtes ESXi protégés par TPM (recommandé)` 
 >
 
 Cliquez sur `AJOUTER UN FOURNISSEUR DE CLÉS`{.action}.
