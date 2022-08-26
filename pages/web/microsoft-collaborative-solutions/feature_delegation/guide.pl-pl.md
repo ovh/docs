@@ -1,29 +1,30 @@
 ---
-title: 'Delegowanie uprawnień do konta Exchange'
+title: 'Delegowanie uprawnień do konta e-mail'
 slug: exchange_2013_przyznanie_uprawnien_full_access
-excerpt: 'Dowiedz się, jak zezwolić innym osobom na zarządzanie skrzynką Exchange'
+excerpt: 'Dowiedz się, jak zezwolić innym osobom na zarządzanie skrzynką e-mail'
 section: 'Funkcjonalności i współdzielenie Exchange'
-legacy_guide_number: g1249
+order: 3
 ---
 
-**Ostatnia aktualizacja z dnia 2018-08-13**
+**Ostatnia aktualizacja z dnia 24/10/2020**
 
 ## Wprowadzenie
 
-Usługa Exchange umożliwia korzystanie z profesjonalnych kont e-mail, które ułatwiają pracę zespołową dzięki kilku funkcjonalnościom. Jedna z nich pozwala na oddelegowanie określonych praw, takich jak prawo dostępu czy do wysyłania poczty, dla różnych kont Exchange.
+Usługi Exchange i Email Pro umożliwiają korzystanie z profesjonalnych kont e-mail, które ułatwiają pracę zespołową dzięki kilku funkcjonalnościom. Jedna z nich pozwala na delegowanie określonych praw (takich jak prawo do wysyłki lub dostępu) między różnymi kontami e-mail.
 
-**Dowiedz się, jak przydzielać uprawnienia do konta Exchange.**
+
+**Dowiedz się, jak przydzielać uprawnienia do konta e-mail.**
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Exchange](https://www.ovhcloud.com/pl/emails/){.external}
-- Posiadanie co najmniej dwóch aktywnych kont Exchange skonfigurowanych na tej samej platformie Exchange OVH
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Posiadanie danych dostępowych do konta Exchange, dla którego przydzielone zostaną nowe prawa
+- skonfigurowane rozwiązanie [OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/)
+- Posiadanie co najmniej dwóch aktywnych kont e-mail skonfigurowanych na tej samej platformie e-mail OVHcloud
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie danych dostępowych do konta e-mail, dla którego przydzielone zostaną nowe prawa
 
 ## W praktyce
 
-Zanim rozpoczniesz operację, określ prawo lub prawa, które chcesz przydzielić. Pamiętaj, że kiedy nadajesz uprawnienia, przydzielasz jednemu lub kilku kontom Exchange dodatkowe prawa do wybranej skrzynki Exchange.
+Zanim rozpoczniesz operację, określ prawo lub prawa, które chcesz przydzielić. Pamiętaj, że kiedy nadajesz uprawnienia, przydzielasz jednemu lub kilku kontom e-mail dodatkowe prawa do wybranej skrzynki e-mail.
 
 |Uprawnienia|Opis|
 |---|---|
@@ -40,9 +41,14 @@ Po określeniu konta, dla którego będziesz nadawał uprawnienia, wybraniu praw
 
 ### Etap 1: nadanie uprawnień
 
-Aby rozpocząć operację, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij `Microsoft`{.action}, po czym kliknij `Exchange`{.action}. Następnie kliknij nazwę usługi Exchange, w której znajduje się konto, do którego będziesz nadawał uprawnienia. Teraz przejdź do zakładki `Konta e-mail`{.action}.
+Aby rozpocząć operację, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}:
 
-Pojawi się tabela, w której wyświetlają się konta powiązane z Twoją usługą Exchange. Kliknij trzy kropki po prawej stronie nazwy konta, do którego chcesz utworzyć uprawnienie, następnie kliknij `Zarządzaj uprawnieniami`{.action}.
+- **Exchange**: Kliknij `Microsoft`{.action}, po czym kliknij `Exchange`{.action}.
+- **Email Pro**: Kliknij `Email Pro`{.action}.
+
+ Następnie kliknij nazwę usługi e-mail, w której znajduje się konto, do którego będziesz nadawał uprawnienia. Teraz przejdź do zakładki `Konta e-mail`{.action}.
+
+Pojawi się tabela, w której wyświetlają się konta powiązane z Twoją usługą e-mail. Kliknij trzy kropki po prawej stronie nazwy konta, do którego chcesz utworzyć uprawnienie, następnie kliknij `Zarządzaj uprawnieniami`{.action}.
 
 ![delegacja uprawnień exchange](images/delegation-step1.png){.thumbnail}
 
@@ -50,15 +56,15 @@ Na stronie, która się wyświetla zaznacz prawa, które chcesz przydzielić. Po
 
 ![delegacja uprawnień exchange](images/delegation-step2.png){.thumbnail}
 
-Sprawdź dokładnie podsumowanie zmian. Jeśli są poprawne, kliknij `Zatwierdź`{.action}. W ciągu kilku minut uprawnienia zostaną utworzone na serwerach OVH.
+Sprawdź dokładnie podsumowanie zmian. Jeśli są poprawne, kliknij `Zatwierdź`{.action}. W ciągu kilku minut uprawnienia zostaną utworzone na serwerach OVHcloud.
 
 Po skonfigurowaniu uprawnienia konto*test@mypersonaldomain.ovh* będzie mogło wykonać zaznaczone operacje na koncie *test2@mypersonaldomain.ovh*.
 
 ### Etap 2: używanie udostępnionej skrzynki
 
-Teraz możesz zacząć korzystać z uprawnienia. Upewnij się, że posiadasz dane dostępowe do konta Exchange, dla którego przydzielone zostały nowe prawa. 
+Teraz możesz zacząć korzystać z uprawnienia. Upewnij się, że posiadasz dane dostępowe do konta e-mail, dla którego przydzielone zostały nowe prawa. 
 
-Sposób postępowania jest inny w zależności od prawa lub praw, jakie przydzieliłeś oraz programu lub interfejsu, którego będziesz używał do dostępu do konta Exchange. Kontynuuj lekturę niniejszego przewodnika w sekcji, która dotyczy prawa lub praw, które Cię dotyczą.
+Sposób postępowania jest inny w zależności od prawa lub praw, jakie przydzieliłeś oraz programu lub interfejsu, którego będziesz używał do dostępu do konta e-mail. Kontynuuj lekturę niniejszego przewodnika w sekcji, która dotyczy prawa lub praw, które Cię dotyczą.
 
 - [Korzystanie z „prawa dostępu”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/#21-korzystanie-z-prawa-dostepu){.external}
 
@@ -68,14 +74,14 @@ Sposób postępowania jest inny w zależności od prawa lub praw, jakie przydzie
 
 > [!warning]
 >
-> Rozwiązanie to wymaga znajomości programu lub interfejsu, którego będziesz używał. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. W przypadku trudności zalecamy skorzystanie z pomocy specjalisty lub kontakt z producentem programu lub interfejsu. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+> Rozwiązanie to wymaga znajomości programu lub interfejsu, którego będziesz używał. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. W przypadku trudności zalecamy skorzystanie z pomocy specjalisty lub kontakt z producentem programu lub interfejsu. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
 >
 
 #### 2.1 Korzystanie z „prawa dostępu”
 
 - **Przy użyciu webmail Outlook Web Application (OWA)**
 
-Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta Exchange, dla którego udzielone zastało dane prawo. Po zalogowaniu kliknij prawym przyciskiem myszy nazwę konta w menu po lewej stronie, następnie zaznacz `Dodaj współdzielony katalog`{.action}.
+Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu kliknij prawym przyciskiem myszy nazwę konta w menu po lewej stronie, następnie zaznacz `Dodaj współdzielony katalog`{.action}.
 
 W oknie, które się wyświetla wskaż nazwę konta, którego dotyczy przyznane prawo, a następnie kliknij `Dodaj`{.action}. Konto wyświetla się wówczas w menu po lewej stronie. Możesz przejrzeć jego zawartość. 
 
@@ -95,7 +101,7 @@ Teraz kliknij `Ustawienia dodatkowe`{.action}. W nowym oknie przejdź do zakład
 
 - **Przy użyciu webmail Outlook Web Application (OWA)**
 
-Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta Exchange, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
+Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
 
 W obszarze, który się wyświetli kliknij przycisk z trzema kropkami, po czym kliknij `Wyświetl pole „Od”`{.action}. Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli żądane konto się nie wyświetla, usuń to, które zostało wprowadzone i wpisz odpowiednie. 
 
@@ -117,7 +123,7 @@ Teraz możesz zredagować wiadomość e-mail i wysłać ją.
 
 - **Przy użyciu webmail Outlook Web Application (OWA)**
 
-Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta Exchange, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
+Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
 
 W obszarze, który się wyświetli kliknij przycisk z trzema kropkami, po czym kliknij `Wyświetl pole „Od”`{.action} Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli żądane konto się nie wyświetla, usuń to, które zostało wprowadzone i wpisz odpowiednie. 
 

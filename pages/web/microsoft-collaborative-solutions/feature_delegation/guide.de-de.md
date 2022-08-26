@@ -1,29 +1,29 @@
 ---
-title: 'Berechtigungen für einen Exchange Account übertragen'
-excerpt: 'Hier erfahren Sie, wie Sie einem anderen Account Berechtigungen für Ihren Exchange Account zuweisen.'
+title: 'Berechtigungen für einen E-Mail Account übertragen'
+excerpt: 'Hier erfahren Sie, wie Sie einem anderen Account Berechtigungen für Ihren E-Mail Account zuweisen.'
 slug: exchange_2013_send_as_versand_als
-legacy_guide_number: g1250
-section: 'Exchange Account-Funktionen'
+section: 'E-Mail Account-Funktionen'
+order: 3
 ---
 
-**Stand 27.11.2018**
+**Stand 24.10.2020**
 
 ## Einleitung
 
-Mit Exchange verfügen Sie über professionelle E-Mail-Adressen mit erweiterten Funktionen für kollaboratives Arbeiten. Sie können unter anderem spezifische Berechtigungen (zum Beispiel Versand- oder Zugriffsrechte) zwischen verschiedenen Exchange Accounts vergeben.
+Mit den Exchange und E-Mail Pro Dienstleistungen profitieren Sie von professionellen E-Mail-Adressen, die die kollaborative Arbeit dank verschiedener Funktionen vereinfachen. Mit einer dieser Optionen können bestimmte Rechte (z. B. Versand- oder Zugriffsrechte) zwischen verschiedenen E-Mail-Accounts übertragen werden.
 
-**In dieser Anleitung erfahren Sie, wie Sie anderen Accounts Berechtigungen für Ihren Exchange Account zuweisen.**
+**In dieser Anleitung erfahren Sie, wie Sie anderen Accounts Berechtigungen für Ihren E-Mail Account zuweisen.**
 
 ## Voraussetzungen
 
-- Sie besitzen ein [Exchange](https://www.ovhcloud.com/de/emails/){.external} Angebot.
-- Sie verfügen über mindestens zwei aktive Exchange Accounts, die auf derselben OVHcloud Exchange Plattform eingerichtet sind.
+- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Lösung.
+- Sie verfügen über mindestens zwei aktive E-Mail Account, die auf derselben OVHcloud E-Mail Plattform eingerichtet sind.
 - Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
-- Sie verfügen über die Login-Informationen für den Exchange Account, dem Sie neue Berechtigungen zuweisen möchten.
+- Sie verfügen über die Login-Informationen für den E-Mail Account, dem Sie neue Berechtigungen zuweisen möchten.
 
 ## In der praktischen Anwendung
 
-Legen Sie zunächst fest, welche Berechtigungen Sie vergeben möchten. Zur Erinnerung: Bei einer Delegation übertragen Sie einem oder mehreren Exchange Accounts zusätzliche Rechte für einen ausgewählten Exchange Account.
+Legen Sie zunächst fest, welche Berechtigungen Sie vergeben möchten. Zur Erinnerung: Bei einer Delegation übertragen Sie einem oder mehreren E-Mail Account zusätzliche Rechte für einen ausgewählten E-Mail Account.
 
 |Berechtigungen|Beschreibung|
 |---|---|
@@ -40,9 +40,14 @@ Wählen Sie zunächst den Account aus, für den Sie Berechtigungen vergeben möc
 
 ### Schritt 1: Delegation einrichten
 
-Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Klicken Sie dann auf den Namen des Exchange Dienstes, in dem sich der Account befindet, für den Sie Rechte vergeben möchten. Gehen Sie nun auf den Tab `E-Mail-Accounts`{.action}.
+Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}ein:
 
-Die Tabelle zeigt alle Accounts an, die mit Ihrem Exchange Dienst verbunden sind. Klicken Sie auf die drei Punkte rechts neben dem Account, für den Sie Berechtigungen vergeben möchten, und gehen Sie dann auf `Berechtigungen verwalten`{.action}.
+- **Exchange**: Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}.. 
+- **Email Pro**: Klicken Sie auf `Email Pro`{.action}.
+
+Klicken Sie dann auf den Namen des E-Mail Dienstes, in dem sich der Account befindet, für den Sie Rechte vergeben möchten. Gehen Sie nun auf den Tab `E-Mail-Accounts`{.action}.
+
+Die Tabelle zeigt alle Accounts an, die mit Ihrem E-Mail Dienst verbunden sind. Klicken Sie auf die drei Punkte rechts neben dem Account, für den Sie Berechtigungen vergeben möchten, und gehen Sie dann auf `Berechtigungen verwalten`{.action}.
 
 ![Delegation](images/delegation-step1.png){.thumbnail}
 
@@ -56,9 +61,9 @@ Sobald die Delegation konfiguriert ist, kann *test@mypersonaldomain.ovh* die aus
 
 ### Schritt 2: Berechtigungen nutzen
 
-Nun, da die Delegation eingerichtet ist, können Sie die vergebenen Berechtigungen nutzen. Vergewissern Sie sich zunächst, dass Sie über die Login-Informationen für den Exchange Account verfügen, der die neuen Berechtigungen erhalten hat.
+Nun, da die Delegation eingerichtet ist, können Sie die vergebenen Berechtigungen nutzen. Vergewissern Sie sich zunächst, dass Sie über die Login-Informationen für den E-Mail Account verfügen, der die neuen Berechtigungen erhalten hat.
 
-Die Vorgehensweise für die Nutzung variiert je nach den vergebenen Rechten und der Software bzw. dem Webinterface, das Sie für den Zugang zu Ihrem Exchange Account verwenden. Folgen Sie dieser Anleitung deshalb entsprechend der Berechtigungen, die Sie vergeben haben.
+Die Vorgehensweise für die Nutzung variiert je nach den vergebenen Rechten und der Software bzw. dem Webinterface, das Sie für den Zugang zu Ihrem E-Mail Account verwenden. Folgen Sie dieser Anleitung deshalb entsprechend der Berechtigungen, die Sie vergeben haben.
 
 - [Zugangsrechte nutzen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2013_send_as_versand_als/#21-zugangsrechte-nutzen){.external}
 
@@ -75,7 +80,7 @@ Die Vorgehensweise für die Nutzung variiert je nach den vergebenen Rechten und 
 
 - **Über die Outlook Web Application (OWA)**
 
-Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des Exchange Accounts ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie links im Menü auf den betreffenden Account und wählen Sie `Freigegebenen Ordner hinzufügen`{.action}.
+Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie links im Menü auf den betreffenden Account und wählen Sie `Freigegebenen Ordner hinzufügen`{.action}.
 
 Geben Sie im angezeigten Fenster den Namen des Accounts ein, für den Sie Zugangsrechte erhalten haben, und klicken Sie dann auf `Hinzufügen`{.action}. Der neue Account erscheint dann links im Menü und Sie können die Inhalte einsehen.
 
@@ -95,7 +100,7 @@ Klicken Sie nun auf `Weitere Einstellungen`{.action}. Gehen Sie im neuen Fenster
 
 - **Über die Outlook Web Application (OWA)**
 
-Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des Exchange Accounts ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
+Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
 
 Klicken Sie im angezeigten Bereich oben rechts auf die drei Punkte und dann auf `Absender anzeigen`{.action}. Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, löschen Sie die vorausgefüllte Adresse und geben Sie die gewünschte Adresse ein. 
 
@@ -117,7 +122,7 @@ Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
 
 - **Über die Outlook Web Application (OWA)**
 
-Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des Exchange Accounts ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
+Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
 
 Klicken Sie im angezeigten Bereich oben rechts auf die drei Punkte und dann auf `Absender anzeigen`{.action}. Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, löschen Sie die vorausgefüllte Adresse und geben Sie die gewünschte Adresse ein. 
 
