@@ -41,7 +41,7 @@ La seguridad de sus soluciones depende de la eficacia de la contraseña de acces
 
 Existen varios métodos eficaces para crear contraseñas. Entre ellos, le recomendamos el **método de las primeras letras** y el **método fonético** que se explican en [esta guía del sitio web de la Oficina de Seguridad del Intaernauta (OSI)](https://www.osi.es/es/contrasenas#robustas){.external}.
 
-Para ahondar más en el tema, consulte la sección [«Más información»](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/#mas-informacion_2){.external} al final de esta guía.
+Para ahondar más en el tema, consulte la sección [«Más información»](#gofurther) al final de esta guía.
 
 ### Utilizar un gestor de contraseñas 
 
@@ -113,7 +113,7 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 > Al guardar la nueva contraseña, todas las sesiones activas en su cuenta de OVHcloud se cerrarán automáticamente.
 >
 
-## Más información
+## Más información <a name="gofurther"></a>
 
 [Instituto Nacional de Ciberseguridad (INCIBE)](https://www.incibe.es){.external}
 

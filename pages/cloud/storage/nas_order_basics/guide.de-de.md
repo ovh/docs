@@ -35,7 +35,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 Im Tab `Allgemeine Informationen`{.action} werden technische Informationen, die `Quota` des Dienstes und die Details des Abonnements angezeigt. Sie finden auch einen Direktlink zur [Erstellung einer Partition](#create_partition).
 
 > [!primary]
-> In den [FAQ](../faq-nas/) finden Sie Details zu den technischen Eigenschaften der HA-NAS Dienstleistung.
+> In den [FAQ](https://docs.ovh.com/de/storage/faq-nas/) finden Sie Details zu den technischen Eigenschaften der HA-NAS Dienstleistung.
 >
 
 ### Verwaltung der Partitionen <a name="manage_partition"></a>
@@ -178,7 +178,7 @@ Bestätigen Sie die Aktion im neu angezeigten Fenster, indem Sie auf `Partition 
 
 [Verwaltung von Snapshots über API](https://docs.ovh.com/de/storage/nas/nas-snapshots-api/)
 
-[HA-NAS via NFS-Freigabe mounten](../nas-nfs/)
+[HA-NAS via NFS-Freigabe mounten](https://docs.ovh.com/de/storage/nas-nfs/)
 
 [NAS auf Windows Server über CIFS mounten](../nas-cifs/)
 

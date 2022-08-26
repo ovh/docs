@@ -17,7 +17,7 @@ The OVHcloud HA-NAS service allows you to manage file storage that can be access
 ## Requirements
 
 - An OVHcloud [HA-NAS service](https://www.ovh.co.uk/nas/)
-- Consulting the [OVHcloud API first steps guide](../../api/first-steps-with-ovh-api/) to familiarise yourself with the OVHcloud APIv6
+- Consulting the [OVHcloud API first steps guide](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) to familiarise yourself with the OVHcloud APIv6
 
 ## Instructions
 

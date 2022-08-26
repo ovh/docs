@@ -52,7 +52,7 @@ Follow this accordingly.
 
 If you can edit your PHP environment on your own, install extensions and libraries as detailed in this documentation page linked above.
 
-On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](https://docs.ovh.com/us/es/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
+On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](https://docs.ovh.com/us/es/hosting/cambiar-version-php-en-alojamiento-web/).
 
 In both cases, when executing a **phpinfo()** in your PHP environment, you should see information about the MongoDB driver as shown below :
 

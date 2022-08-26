@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Dernière mise à jour le 02/06/2022**
+**Dernière mise à jour le 26/08/2022**
 
 **Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (DC ou SDDC) vers un nouveau vDC de destination (Essentials ou Premier).**
 
@@ -527,7 +527,7 @@ Zerto Replication est configuré au niveau du vDC. Afin de protéger la charge d
 > **Prérequis :**
 >
 > - Avoir un nouveau vDC
-> - Disposer sous le nouveau vDC d’un cluster host avec au moins deux (2) hosts
+> - Disposer sous le nouveau vDC d’un cluster host avec le nombre de hosts requis (identique au cluster source et au minimum deux hosts)
 > - Avoir sous le nouveau vDC un datastore accessible depuis les 2 hosts
 > - Avoir activé Zerto Replication sur le nouveau vDC
 >

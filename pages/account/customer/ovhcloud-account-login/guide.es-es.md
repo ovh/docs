@@ -107,7 +107,7 @@ Si no encuentra el código, compruebe las carpetas "spam" o "correo no deseado" 
 
 [Proteger mi cuenta de OVHcloud y gestionar mis datos personales](https://docs.ovh.com/es/customer/todo-sobre-el-id-de-cliente/)
 
-[Cambiar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contraseña/)
+[Cambiar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrasena/)
 
 [Proteger su cuenta de OVHcloud con la doble autenticación](https://docs.ovh.com/es/customer/proteger-su-cuenta-con-una-2FA/)
 
