@@ -31,7 +31,7 @@ Cliquez sur votre service pour accéder à l'onglet `Informations générales`{.
 L'onglet `Informations générales`{.action} affiche des informations techniques, le `Quota` du service, les détails de l'abonnement et un raccourci pour [créer une partition](#create_partition).
 
 > [!primary]
-> Rendez-vous sur la page [FAQ](../faq-nas/) pour découvrir les propriétés techniques du service NAS-HA.
+> Rendez-vous sur la page [FAQ](https://docs.ovh.com/fr/storage/faq-nas/) pour découvrir les propriétés techniques du service NAS-HA.
 >
 
 ### Gestion des partitions <a name="manage_partition"></a>
@@ -175,7 +175,7 @@ Confirmez l'action dans la fenêtre qui apparaît en cliquant sur `Supprimer la 
 
 [Gestion des snapshots via API](https://docs.ovh.com/fr/storage/nas/nas-snapshots-api)
 
-[Monter votre NAS via un partage NFS](../nas-nfs/)
+[Monter votre NAS via un partage NFS](https://docs.ovh.com/fr/storage/nas/nas-nfs/)
 
 [Monter votre NAS sur Windows Server via CIFS](../nas-cifs/)
 
