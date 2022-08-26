@@ -1,15 +1,37 @@
 ---
-title: Verwaltung von Firewall-Regeln und Post Security in privaten Netzwerken
+title: Verwaltung von Firewall-Regeln und Port Security für Netzwerke über die OpenStack CLI
 slug: firewall_security_pci
-excerpt: Erfahren Sie hier, wie Sicherheitsgruppen auf der Public Cloud funktionieren
+excerpt: Erfahren Sie hier, wie Sicherheitsgruppen in der Public Cloud funktionieren
 section: OpenStack
 ---
+
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 16.06.2021**
+**Letzte Aktualisierung am 25.08.2022**
 
 ## Ziel
 
@@ -17,14 +39,7 @@ Die OpenStack-Plattform verwaltet Sicherheit via Firewalls, indem sie Verbindung
 
 Ein **Port** im Kontext von [OpenStack Neutron](https://docs.openstack.org/neutron/latest/index.html){.external} ist ein Verbindungspunkt zwischen Subnetzen und Netzwerkelementen (Instanzen, Loadbalancer, Router etc.).
 
-**Diese Anleitung erklärt, wie Sicherheitsgruppen für private Netzwerke in der Public Cloud verwaltet werden.**
-
-> [!primary]
->
-> Diese Anleitung betrifft nur private Netzwerkkonfigurationen. Für öffentliche Netzwerke gelten globale Firewall-Regeln.
->
-> Bitte nehmen Sie auch die Informationen zur [Migration](#migration) bezüglich anstehender Änderungen der OpenStack Public Cloud [Regionen](#regions) zur Kenntnis.
->
+**Diese Anleitung erklärt, wie Sicherheitsgruppen für private und öffentliche Netzwerke in der Public Cloud verwaltet werden.**
 
 ## Voraussetzungen
 
@@ -32,6 +47,54 @@ Ein **Port** im Kontext von [OpenStack Neutron](https://docs.openstack.org/neutr
 - [OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/)
 
 ## In der praktischen Anwendung
+
+### Aktivierungsvorgang <a name="activation"></a>
+
+> [!primary]
+>
+> Dieser Abschnitt der Anleitung betrifft nur die Konfiguration privater Netzwerke.
+
+#### Für ein bereits erstelltes privates Netzwerk
+
+Um Konfigurationsfehler bei Upgrades von OpenStack Stein und Open vSwitch zu vermeiden, wurde der Parameter "port security" in bestehenden Netzwerken auf "False" eingestellt.
+
+Verwenden Sie OpenStack CLI, um "port security" für Ihre existierenden Ports und Ihr Netzwerk zu aktivieren.
+
+Wenn Sie Firewall-Regeln in privaten Netzwerken verwenden möchten, muss zuerst die Eigenschaft "port security" auf "True" gesetzt werden:
+
+```bash
+openstack network set --enable-port-security <network_ID>
+```
+
+Aktivieren Sie anschließend "port security" auf dem Port des entsprechenden Dienstes in diesem Netzwerk. 
+
+> [!primary]
+> Zur Erinnerung: Um den Port abzurufen, können Sie OpenStack CLI verwenden. Führen Sie den Befehl `openstack port list --server <server_ID>` aus, um die Ports auf einem bestimmten Server abzurufen.
+>
+
+Aktivieren Sie "port security" für alle Dienste mit einem aktiven Port in diesem Netzwerk:
+
+```bash
+openstack port set --enable-port-security <port_ID>
+```
+
+Sie können überprüfen, ob "port security" auf einem bestimmten Port aktiviert ist:
+
+```bash
+openstack port show <port-ID> -f value -c port_security_enabled
+```
+
+Das Ergebnis sollte entsprechend der folgenden Ausgabe sein:
+
+<pre class="console"><code>$ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
+False
+</code></pre>
+
+#### Für ein neues privates Netzwerk:
+
+Da die Aktualisierungen auf die Stein-Version in den OpenStack-Regionen und auf die neue Version von Open vSwitch durchgeführt wurde ([Private network port default configuration change](https://public-cloud.status-ovhcloud.com/incidents/z6qq4bcvsn11)), wird der Parameter "port pecurity" in jedem neu erstellten privaten Netzwerk standardmäßig auf "True" festgelegt.
+
+Damit wird sichergestellt, dass die Standardeinstellung "True" als Richtlinie konsistent mit Vanilla-Deployments von OpenStack ist.
 
 ### Standardeinstellungen
 
@@ -58,11 +121,11 @@ Je nach Region kann die Implementierung unterschiedlich sein, das Ergebnis ist j
 
 Demnach lassen alle Netzwerk-Ports (öffentlich und privat) jede Verbindung beim Starten einer Instanz zu.
 
-### Regeln Ihrer Privat-Firewall verwalten
+### Private Regeln Ihrer Firewall verwalten
 
 #### Regeln hinzufügen
 
-Wenn Sie bestimmte Regeln konfigurieren möchten, können Sie die Standardsicherheitsgruppe ("default") ändern. Sie können auch eine neue Sicherheitsgruppe erstellen und dann Ihren Netzwerk-Port zuweisen.
+Wenn Sie bestimmte Regeln konfigurieren möchten, können Sie eine neue Sicherheitsgruppe erstellen und dann Ihren Netzwerk-Port zuweisen.
 
 Verwenden Sie diesen Befehl, um die Gruppe zu erstellen:
 
@@ -124,57 +187,6 @@ Geben Sie folgenden Befehl ein, um Ihre Sicherheitsgruppe Ihrem Port zuzuweisen:
 openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 ```
 
-#### Unterschiedliche Verhaltensweisen je nach Region <a name="regions"></a>
-
-Die Standardkonfiguration für private Netzwerke kann je nach verwendeter Region verschieden sein.
-
-> [!primary]
-> In einigen Regionen wird die Eigenschaft "port security" als "*enabled*" angezeigt, auch wenn keine Regel auf das private Netzwerk angewendet wird. In einigen anderen Regionen (abhängig von der eingesetzten OpenStack-Version) wird die Eigenschaft "port security" als "*enabled*" angezeigt, und die Regeln werden im privaten Netzwerk korrekt angewendet.
-> 
-
-Zusammengefasst, werden in den folgenden Regionen, in denen OpenStack Newton läuft, **keine Firewall-Regeln** für Ihre privaten Netzwerke funktionieren, selbst wenn die Port-Sicherheit aktiviert ist:
-
-- Singapur: SGP1
-- Sydney: SYD1
-- Hillsboro: US-WEST-OR-1
-- Vint Hill: US-EAST-VA-1
-
-In den folgenden Regionen (die OpenStack Stein verwenden) werden die Firewall-Regeln für private Netzwerke **wie erwartet funktionieren**:
-
-- Beauharnois: BHS1, BHS3, BHS5
-- Frankfurt: DE1
-- Gravelines: GRA1, GRA3, GRA5, GRA7, GRA9, GRA11
-- Straßburg: SBG5, SBG7
-- London: UK1
-- Warschau: WAW1
-
-OVHcloud wird schrittweise alle Regionen von Newton auf Stein upgraden, um die Funktion "port security" verfügbar zu machen.
-
-Um Dienstausfälle während der Aktualisierung zu vermeiden, wird der Wert "port security" in allen bereits erstellten Netzwerken auf "*False*" gesetzt. Sobald eine Region zu OpenStack Stein aktualisiert wird, müssen Sie für die Verwendung von Firewall-Regeln in privaten Netzwerken die Eigenschaft "port security" auf *True* ändern.
-
-Um zu überprüfen, ob die Eigenschaft "port security" in Ihrem privaten Netzwerk-Port aktiviert ist, verwenden Sie folgenden Befehl:
-
-```bash
-openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
-False
-```
-
-### Migrationsprozess <a name="migration"></a>
-
-Die Migration erfolgt nach diesem Prozess:
-
-- Die Firewall-Regeln für neue Ports werden nicht angewendet, bis Sie "port security" für den neuen Port aktiviert haben. Bei bestehenden Ports ändert sich nichts.
-- Die OpenStack-Regionen werden zur Stein-Version übertragen.
-- Die OpenStack-Regionen mit Stein werden auf eine neue Version von OpenVSwitch umgestellt.
-
-> [!primary]
-> Ab diesem Schritt müssen Terraform-Benutzer die [Einstellung von "port security" auf "false" erzwingen](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external}, damit die Playbooks funktionieren können.
->
-
-- Sie können "port security" für die Stein Regionen aktivieren.
-- Der "port security"-Standardwert wird zu **enabled** geändert (eine globale Kommunikation wird zu gegebener Zeit stattfinden).
-- Die Firewall-Regeln werden für die neuen Ports funktionieren. Bei bestehenden Ports ändert sich nichts.
-- Die Option zur Aktivierung der Eigenschaft "port security" für die bestehenden Ports wird aktiviert.
 
 ## Weiterführende Informationen
 
