@@ -5,7 +5,11 @@ excerpt: Come gestire i tuoi crediti SMS OVHcloud
 section: Gestisci la tua offerta
 ---
 
-**Ultimo aggiornamento: 05/08/2022**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 29/08/2022**
 
 ## Obiettivo
 
@@ -47,8 +51,10 @@ Per disporre sempre di credito sufficiente sul tuo account SMS, è possibile e a
 
 > [!warning]
 >
-> L'opzione di ricarica automatica può essere attivata solo se sul tuo account OVHcloud è presente e validato un metodo di pagamento di tipo SEPA.
+> L'opzione di ricarica automatica può essere attivata solo se sono soddisfatte le seguenti condizioni:
 >
+> - sul tuo account OVHcloud è presente e validato un metodo di pagamento di tipo SEPA.
+> - il tuo servizio SMS deve avere almeno 2 mesi di anzianità.
 
 Per attivare la ricarica automatica, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sulla scheda `ADSL e telefono`{.action} e poi sulla sezione `SMS`{.action}. Seleziona l’account SMS su cui attivare la ricarica automatica.
 
@@ -56,7 +62,7 @@ Clicca sul menu `Opzioni`{.action} (1) e poi su `Ricarica automatica`{.action} (
 
 ![credit sms](images/smscredit01.png){.thumbnail}
 
-Quindi clicca su `Modifica`{.action}nella sezione “Gestisci le opzioni”.
+Quindi clicca su `Modifica`{.action} nella sezione “Gestisci le opzioni”.
 
 ![credit sms](images/smscredit02.png){.thumbnail}
 

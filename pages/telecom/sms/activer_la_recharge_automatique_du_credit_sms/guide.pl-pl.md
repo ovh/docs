@@ -5,7 +5,11 @@ excerpt: Dowiedz się, jak zarządzać zasileniami SMS OVHcloud
 section: Zarządzanie ofertą
 ---
 
-**Ostatnia aktualizacja z dnia 05-08-2022**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 29-08-2022**
 
 ## Wprowadzenie
 
@@ -47,8 +51,10 @@ Aby nigdy nie zabrakło Ci zasileń na koncie, możesz aktywować automatyczne d
 
 > [!warning]
 >
-> Opcja automatycznego doładowania może zostać aktywowana tylko wtedy, gdy na Twoim koncie OVHcloud dostępny jest sposób płatności typu polecenie zapłaty SEPA.
+> Opcja automatycznego doładowania może być aktywowana tylko wtedy, gdy spełnione są następujące warunki:
 >
+> - na Twoim koncie OVHcloud dostępny jest sposób płatności SEPA.
+> - Twoja usługa SMS musi mieć przynajmniej 2 miesięcy stażu pracy.
 
 Aby aktywować automatyczne doładowanie, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do karty `Telefonia`{.action}, a następnie na pasku usług po lewej stronie kliknij sekcję `SMS`{.action}. Wybierz konto SMS, dla którego chcesz aktywować automatyczne doładowanie.
 
