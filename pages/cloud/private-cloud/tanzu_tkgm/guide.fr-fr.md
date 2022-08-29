@@ -46,11 +46,69 @@ VMware fourni une machine virtuelle sous forme de modèle OVA qui contient tout 
 Télécharger le fichier sur ce lien [TKGm 1.5.4](https://plik.fromsync.net/file/yMsZyou6CyYCqlQn/Es4foCOnmvvWBMsq/photon-3-kube-v1.22.9+vmware.1-tkg.1-06852a87cc9526f5368519a709525c68.ova), ensuite suivez ces instructions
 
 
+Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster`{.action}, ensuite choisissez sur `Déployer un modèle OVF`{.action}.
 
+![01 integrate TKGM OVA 01](images/01-integrate-tkgm-ova01.png){.thumbnail}
 
+Sélectionnez `Fichier local`{.action} et ensuite cliquez sur `TÉLÉCHARGER DES FICHIERS`{.action}.
 
+![01 integrate TKGM OVA 02](images/01-integrate-tkgm-ova02.png){.thumbnail}
 
+Choisissez le `fichier`{.action}, ensuite cliquez sur `Ouvrir`{.action}.
 
+![01 integrate TKGM OVA 03](images/01-integrate-tkgm-ova03.png){.thumbnail}
+
+Cliquez sur `SUIVANT`{.action}.
+
+![01 integrate TKGM OVA 04](images/01-integrate-tkgm-ova04.png){.thumbnail}
+
+Cliquez à nouveau sur `SUIVANT`{.action}.
+
+![01 integrate TKGM OVA 05](images/01-integrate-tkgm-ova05.png){.thumbnail}
+
+Choisissez le cluster et cliquez sur `SUIVANT`{.action}.
+
+![01 integrate TKGM OVA 06](images/01-integrate-tkgm-ova06.png){.thumbnail}
+
+Vérifiez vos informations et cliquez sur `SUIVANT`{.action}.
+
+![01 integrate TKGM OVA 07](images/01-integrate-tkgm-ova07.png){.thumbnail}
+
+Cochez `J'accepte tous les contrats de license`{.action} ensuite cliquez sur `SUIVANT`{.action}.
+
+![01 integrate TKGM OVA 08](images/01-integrate-tkgm-ova08.png){.thumbnail}
+
+Sélectionnez un `Stockage partagé en NFS v3`{.action} et cliquez sur `SUIVANT`{.action}.
+
+![01 integrate TKGM OVA 09](images/01-integrate-tkgm-ova09.png){.thumbnail}
+
+Choisissez le réseau de destination sur `VLAN 10`{.action} ensuite cliquez sur `SUIVANT`{.action}.
+
+![01 integrate TKGM OVA 10](images/01-integrate-tkgm-ova10.png){.thumbnail}
+
+Cliquez sur `TERMINER`{.action}.
+
+![01 integrate TKGM OVA 11](images/01-integrate-tkgm-ova11.png){.thumbnail}
+
+Allez sur l'onglet `Surveiller`{.action} et cliquez sur `Tâches`{.action}.
+
+![01 integrate TKGM OVA 12](images/01-integrate-tkgm-ova12.png){.thumbnail}
+
+attendez que Les tâches `Déployer un modèle OVF` et `Importer un modèle OVF` soient terminées.
+
+![01 integrate TKGM OVA 13](images/01-integrate-tkgm-ova13.png){.thumbnail}
+
+Faites un clic droit sur la `Machine virtuelle déployée`{.action} et choisissez l'option `Convertir au modèle`{.action} depuis le menu `Modèle`{.action}.
+
+![01 integrate TKGM OVA 14](images/01-integrate-tkgm-ova14.png){.thumbnail}
+
+Répondez `OUI`{.action}.
+
+![01 integrate TKGM OVA 15](images/01-integrate-tkgm-ova15.png){.thumbnail}
+
+La machine virtuelle a été à nouveau convertie en modèle comme on peut le voir dans la liste des modèles. Ce modèle sera utilisé lors du déploiement du cluster **Tanzu Kubernetes Grid**.
+
+![01 integrate TKGM OVA 16](images/01-integrate-tkgm-ova16.png){.thumbnail}
 
 
 ### Installation de la machine virtuelle **Bootstrap** fourni par OVHcloud
