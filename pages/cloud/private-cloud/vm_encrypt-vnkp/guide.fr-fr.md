@@ -22,7 +22,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 
 ## Prérequis
 
-- Avoir souscrit une offre [Hosted Private Cloud powered by VMware](https://www.ovh.com/fr/private-cloud/).
+- Avoir souscrit une offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à l’interface de gestion vSphere.
 - A ce jour, la solution de réplication **Zerto** n'est pas compatible avec le chiffrement. Les VMs chiffrées ne pourront donc pas être répliquées.
