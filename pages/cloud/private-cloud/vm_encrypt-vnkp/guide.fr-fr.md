@@ -6,7 +6,7 @@ section: Fonctionnalités VMware vSphere
 order: 09
 ---
 
-**Dernière mise à jour le 25/08/2022**
+**Dernière mise à jour le 29/08/2022**
 
 ## Objectif
 
@@ -25,7 +25,16 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 - Avoir souscrit une offre [Hosted Private Cloud powered by VMware](https://www.ovh.com/fr/private-cloud/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à l’interface de gestion vSphere.
+- Avoir la version de vSphere et des hôtes en version 7.0 Update 2 minimum.
 - La solution de réplication **Zerto** n'est pas compatible ce jour avec le chiffrement. Les VMs chiffrées ne pourront donc pas être répliquées.
+
+
+> [!warning]
+>
+> Il est possible que votre cluster **Hosted Private Cloud powered by VMware** ne soit pas en version 7.0 Update 2, dans ce cas  contactez le support pour faire évoluer votre infrastructure.
+>
+
+
 
 ## Présentation
 
@@ -73,7 +82,15 @@ Cliquez sur le bouton `Ajouter`{.action} et choisissez dans le menu `Ajouter un 
 
 ![01 Create KEY 02](images/01-create-key02.png){.thumbnail}
 
-Saisissez un nom dans `Nom` et cliquez sur `AJOUTER UN FOURNISSEUR DE CLÉS`{.action}.
+Saisissez un nom dans `Nom` 
+
+> [!warning]
+>
+> Si votre offre Private Cloud est plus ancienne que **Premier Hosted Private Cloud powered by VMware** décochez la case `Utiliser le fournisseur de clés uniquement avec les hôtes ESXi protégés par TPM (recommandé)` 
+>
+
+Cliquez sur `AJOUTER UN FOURNISSEUR DE CLÉS`{.action}.
+
 
 ![01 Create KEY 03](images/01-create-key03.png){.thumbnail}
 
