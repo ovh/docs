@@ -520,7 +520,7 @@ Run the OVHcloud API to prepare the migration:
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter
 >
 
-A task is launched on the infrastructure to deploy vRA on each hosts under the new vDC.
+A task is launched on the infrastructure to deploy vRA on each of the hosts of the new vDC. Warning, the hosts ordered in the new vDC after executing this API call, will no longer have Z-VRA automatically. In this case, you will need to contact the support team in order to deploy the Z-VRA on the new hosts. This change will only last for the migration time of your infrastructure, until you use the zerto migration end API call (Step 6.2)
 
 After this, the Zerto Replication will work on both datacenters:
 
