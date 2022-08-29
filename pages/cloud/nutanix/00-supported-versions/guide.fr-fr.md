@@ -1,0 +1,85 @@
+---
+title: Versions de Nutanix supportées par OVHcloud
+slug: supported-versions
+excerpt: "Vérifiez les version de Nutanix supportées par OVHcloud"
+section: Premiers pas
+order: 01
+---
+
+**Dernière mise à jour le 29/08/2022**
+
+## Objectif
+
+*Découvrez quelle versions de Nutanix sont supportées sur les clusters Nutanix OVHcloud.*
+
+> [!warning]
+> OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+>
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+>
+
+## Prérequis
+
+- Disposer d'un Cluster Nutanix dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté sur la page des [API OVHcloud](https://api.ovh.com/).
+
+## Présentation des versions supportées sur un cluster Nutanix OVHcloud
+
+Nutanix propose deux versions d'AOS qui sont régulièrement mise à jour :
+
+- **Une version LTS (*Long term support*)** mise à jour 1 fois par an. 
+- **Une version STS (*Short term support*)** mise à jours 4 fois par an.
+
+
+Lorsqu'une nouvelle version d'AOS sort OVHcloud qualifie cette version pour les serveurs OVHcloud avec un peu de délais.
+
+> [!warning]
+>
+> Vous pouvez utiliser **LCM** pour faire des mises à jours de correctives des versions **LTS** et **STS**.
+> 
+> **LCM** peut proposer le passage vers une nouvelle version qui n'est pas encore qualifiée par OVHcloud, attendez quelle soit validée par OVHcloud pour continuer à bénéficier du support.
+
+Les versions supportées par OVHCloud sont les suivantes :
+
+| Catégorie de version          | Numéro de version                      | 
+| ----------------------------- | -------------------------------------- | 
+| **LTS**                       | 5.20                                   |               
+|                               |                                        | 
+| **STS**                       | 6.1                                    | 
+|                               |                                        |
+
+Ce guide sera régulièrement mis à jour avec les versions supportées mais il est aussi possible de voir les versions qualifiées au travers de l'API OVHcloud.
+
+## En pratique
+
+Nous allons vérifier les versions suppportées au travers de l'API OVHcloud.
+
+Connectez-vous à l'[API OVHcloud](https://api.ovh.com). Pour plus de détails sur le fonctionnement de l'API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/.)
+
+Utilisez l'appel API suivant :
+
+> [!api]
+>
+> @api {get} /nutanix/{serviceName}
+>
+
+Saisissez ces données :
+
+- **ServiceName :** `Nom FQDN de votre Cluster Nutanix`.
+
+Cliquez sur `Execute`{.action} pour récuperer les informations de versions.
+
+![01 Get version 01](images/01-get-supported-version01.png)
+
+Le résultat de la requette apparait et en dessous de `availableVersions` apparait les deux versions supportées sur un cluster Nutanix OVHcloud avec en premier la version LTS et en second la version STS.
+
+![01 Get version 02](images/01-get-supported-version02.png)
+
+## Aller plus loin
+
+[Plan de mise à jours Nutanix AOS](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LIi9CAG)
+
+[Utilisation de l'API OVHcloud](https://docs.ovh.com/fr/api/)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
