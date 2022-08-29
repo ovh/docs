@@ -3,7 +3,7 @@ title: Verwendung des VMware Update Manager
 slug: verwendung_des_vmware_update_manager
 excerpt: Verwenden Sie das Tool von VMware, um Ihre Hosts auf dem neuesten Stand zu halten
 section: VMware vSphere Funktionen
-order: 09
+order: 11
 ---
 
 > [!primary]

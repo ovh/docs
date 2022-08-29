@@ -4,7 +4,7 @@ excerpt: Utilize a ferramenta VMware para manter os seus hosts atualizados
 slug: utilizar_o_vmware_update_manager
 legacy_guide_number: g591
 section: Funcionalidades VMware vSphere
-order: 09
+order: 11
 ---
 
 > [!primary]

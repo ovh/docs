@@ -3,7 +3,7 @@ title: Utilizzare SDK vSphere
 slug: utilizzare-sdk-vsphere
 excerpt: Come installare e utilizzare il Software Development Kit di vSphere
 section: Funzionalità VMware vSphere
-order: 10
+order: 12
 ---
 
 **Ultimo aggiornamento: 01/07/2020**

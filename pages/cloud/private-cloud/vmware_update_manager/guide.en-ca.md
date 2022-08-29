@@ -3,7 +3,7 @@ title: VMware Update Manager
 excerpt: Updating your hosts with VMware Update Manager 
 slug: use_vmware_update_manager
 section: Maintenance and monitoring
-order: 09
+order: 11
 ---
 
 **Last Updated 9th December 2021**

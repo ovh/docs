@@ -3,7 +3,7 @@ title: Reregistrar MV en un nuevo PCC
 slug: vsphere-register-vm-vmx
 excerpt: Cómo reregistrar máquinas virtuales en un nuevo servicio desde datastores antiguos
 section: Funcionalidades de VMware vSphere
-order: 06
+order: 07
 ---
 
 > [!primary]
