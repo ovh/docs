@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Last updated 26th August 2022**
+**Last updated 29th August 2022**
 
 **This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC) to a new destination vDC (Essentials or Premier).**
 
@@ -520,7 +520,11 @@ Run the OVHcloud API to prepare the migration:
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter
 >
 
-A task is launched on the infrastructure to deploy vRA on each hosts under the new vDC.
+A task is launched on the infrastructure to deploy vRA on each of the hosts of the new vDC.
+
+> [!warning]
+> The hosts ordered in the new vDC after executing this API call will no longer have Z-VRA automatically.
+> In this case, you will need to contact the support teams in order to deploy the Z-VRA on the new hosts. This change will only last for the migration time of your infrastructure, until you use the Zerto migration end API call [Step 6.2](#reconzerto).
 
 After this, the Zerto Replication will work on both datacenters:
 
