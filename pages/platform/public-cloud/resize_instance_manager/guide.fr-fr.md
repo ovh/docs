@@ -46,7 +46,7 @@ Dans le nouvel onglet, faites défiler la page jusqu'à la section **Modèle** p
 >
 > Pour les modèles classiques, vous pouvez basculer vers n'importe quel modèle dont le disque est similaire ou plus grand. Vous ne pouvez pas passer à un modèle avec un disque plus petit.<br/>
 >
-> Seules **les instances flexibles** peuvent être mises à niveau et rétrogradées tout en conservant une taille de disque fixe de 50 Go.
+> Seules **les instances flexibles** peuvent être basculées vers un modèle supérieur ou inférieur tout en conservant une taille de disque fixe de 50 Go.
 >
 
 Si votre disque est égal ou inférieur à 50 Go, vous pouvez passer à une `Instance flexible`{.action} si vous le souhaitez.
@@ -59,7 +59,7 @@ Une fois la sélection effectuée, cliquez sur `Modifier le modèle`{.action} po
 
 ### Redimensionnement du disque sous Windows
 
-Attention, lors d'un redimensionnement pour une Instance Windows, la taille de la partition n'est pas automatiquement mise à jour, il faudra donc étendre celle ci en utilisant le  **gestionnaire de disque**  :
+Attention, lors d'un redimensionnement pour une instance Windows, la taille de la partition n'est pas automatiquement mise à jour, il faudra donc étendre celle ci en utilisant le  **gestionnaire de disque**  :
 
 - Faites un clic droit sur le menu `Démarrer`{.action} et lancez le gestionnaire de disque en cliquant sur `Gestion du disque`{.action} :
 
