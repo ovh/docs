@@ -6,7 +6,7 @@ section: VMware vSphere features
 order: 09
 ---
 
-**Last updated 25th August 2022**
+**Last updated 29th August 2022**
 
 ## Objective
 
@@ -25,7 +25,13 @@ The aim of this guide is to explain the implementation details of **vSphere Nati
 - a [Hosted Private Cloud powered by VMware solution](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/)
 - You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
 - access to the vSphere management interface
-- To date, the replication solution **Zerto** is not compatible with encryption. Encrypted VMs cannot therefore be replicated.
+- you must have vSphere version and hosts version 7.0 Update 2 minimum.
+- to date, the replication solution **Zerto** is not compatible with encryption. Encrypted VMs cannot therefore be replicated.
+
+> [!warning]
+>
+> Your **Hosted Private Cloud powered by VMware** cluster may not be in version 7.0 Update 2. If so, please contact support to upgrade your infrastructure.
+>
 
 ## Presentation
 
@@ -73,7 +79,14 @@ Click the `ADD`{.action} button and choose `Add Native Key Provider`{.action} fr
 
 ![01 Create KEY 02](images/01-create-key02.png){.thumbnail}
 
-Type a name in `Name` and click `ADD KEY PROVIDER`{.action}.
+Type a name in `Name`.
+
+> [!warning]
+>
+> If your Private Cloud solution is older than **Premier Hosted Private Cloud powered by VMware**, untick the `Use key provider only with TPM protected ESXi hosts (recommended)` box.
+>
+
+Click `ADD KEY PROVIDER`{.action}.
 
 ![01 Create KEY 03](images/01-create-key03.png){.thumbnail}
 
