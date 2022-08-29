@@ -1,7 +1,7 @@
 ---
-title: Versions de Nutanix supportées par OVHcloud
-slug: supported-versions
-excerpt: "Vérifiez les version de Nutanix supportées par OVHcloud"
+title: Versions de Nutanix AOS supportées par OVHcloud
+slug: nutanix-aos-supported-versions
+excerpt: "Vérifiez les versions de Nutanix AOS supportées par OVHcloud"
 section: Premiers pas
 order: 01
 ---
@@ -10,7 +10,7 @@ order: 01
 
 ## Objectif
 
-*Découvrez quelle versions de Nutanix sont supportées sur les clusters Nutanix OVHcloud.*
+*Découvrez quelle versions de Nutanix AOS sont supportées sur les clusters Nutanix OVHcloud.*
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -32,13 +32,14 @@ Nutanix propose deux versions d'AOS qui sont régulièrement mise à jour :
 - **Une version STS (*Short Term Support*)** mise à jours 4 fois par an.
 
 
-Lorsqu'une nouvelle version d'AOS sort OVHcloud qualifie cette version pour les serveurs OVHcloud avec un peu de délais.
+Lorsqu'une nouvelle version d'AOS sort, OVHcloud qualifie cette version pour les serveurs OVHcloud avec un peu de délais.
 
 > [!warning]
 >
 > Vous pouvez utiliser **LCM** pour faire des mises à jours de correctives des versions **LTS** et **STS**.
 > 
-> **LCM** peut proposer le passage vers une nouvelle version qui n'est pas encore qualifiée par OVHcloud, attendez qu'elle soit validée par OVHcloud pour continuer à bénéficier du support.
+> Lors de ces mises à jours, **LCM** peut proposer une nouvelle version qui n'est pas encore qualifiée par OVHcloud, attendez qu'elle soit validée par OVHcloud pour continuer à bénéficier du support.
+>
 
 Les versions supportées par OVHCloud sont les suivantes :
 
