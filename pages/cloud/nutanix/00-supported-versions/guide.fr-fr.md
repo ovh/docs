@@ -73,7 +73,7 @@ Cliquez sur `Execute`{.action} pour récupérer les informations de versions.
 
 ![01 Get version 01](images/01-get-supported-version01.png)
 
-Le résultat de la requette apparait et en dessous de `availableVersions` apparait les deux versions supportées sur un cluster Nutanix OVHcloud avec en premier la version LTS et en second la version STS.
+Le résultat de la requette apparait en dessous de `availableVersions` apparait les deux versions supportées sur un cluster Nutanix OVHcloud avec en premier la version LTS et en dessous la version STS.
 
 ![01 Get version 02](images/01-get-supported-version02.png)
 
