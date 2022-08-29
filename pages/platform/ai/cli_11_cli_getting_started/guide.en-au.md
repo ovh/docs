@@ -1,12 +1,12 @@
 ---
 title: CLI - Launch an AI notebook
 slug: cli/getting-started-cli
-excerpt: Learn how to run an AI Training notebook using the CLI
+excerpt: Learn how to run an AI Notebook using the CLI
 section: Command Line Interface
 order: 201
 ---
 
-**Last updated 27th May, 2021.**
+**Last updated 29th August, 2022.**
 
 ## Objective
 
@@ -21,29 +21,32 @@ This guide covers the submission of [**notebooks**](https://docs.ovh.com/au/en/p
 ### Run a new notebook
 
 First, you need to select one of the machine learning frameworks and an editor among those available. You can
-get a list of them using the `ovhai capability framework` and `ovhai capability editor` commands:
+get a list of them using the `ovhai capabilities framework list` and `ovhai capabilities editor list` commands:
 
 ``` {.console}
-$ ovhai capability framework
-ID                       NAME                       DOCURL                                     VERSIONS
-fastai                   fastai Course              https://docs.fast.ai/                      2.2.5   
-pytorch                  PyTorch                    https://pytorch.org/docs/stable/index.html 1.8.1   
-mxnet                    MXNet                      https://mxnet.apache.org/versions/1.5.0/   1.5.0   
-tensorflow               Tensorflow                 https://www.tensorflow.org/api_docs        2.4.1   
-huggingface-transformers Hugging Face Transformers  https://huggingface.co/transformers/       4.5.0   
-one-for-all              One image to rule them all                                            v98     
-autogluon-mxnet          AutoGluon + MXNet                                                     0.1.0   
+$ ovhai capabilities framework list
+ID                       NAME                       DOC_URL                                         VERSIONS
+fastai                   fastai Course              https://docs.fast.ai/                           2021-08-04-ovh.beta.1
+pytorch                  PyTorch                    https://pytorch.org/docs/stable/index.html      pytorch1.10.1-py39-cuda10.2-v22-4,pytorch1.9.0-py39-cuda10.2-v22-4,1.8.1-ovh.beta.1
+mxnet                    MXNet                      https://mxnet.apache.org/versions/1.5.0/        1.5.0-ovh.beta.1
+conda                    Miniconda                  https://docs.conda.io/en/latest/miniconda.html  conda-py39-cuda11.2-v22-4,conda-py39-cpu-v22-4,conda-py39-cuda11.3-v22-4,conda-py39-cuda11.0-v22-4,conda-py39-cuda10.2-v22-4,conda-py39-cuda10.1-v22-4,conda-py39-cuda10.0-v22-4,conda-py38-cuda11.3-v22-4,conda-py38-cuda11.2-v22-4,conda-py38-cuda11.0-v22-4,conda-py38-cuda10.2-v22-4,conda-py38-cuda10.1-v22-4,conda-py38-cuda10.0-v22-4,conda-py38-cpu-v22-4,conda-py39-cudaDevel11.3-v22-4,conda-py39-cudaDevel11.2-v22-4,conda-py39-cudaDevel11.0-v22-4,conda-py39-cudaDevel10.2-v22-4,conda-py39-cudaDevel10.1-v22-4,conda-py39-cudaDevel10.0-v22-4,conda-py38-cudaDevel11.3-v22-4,conda-py38-cudaDevel11.2-v22-4,conda-py38-cudaDevel11.0-v22-4,conda-py38-cudaDevel10.2-v22-4,conda-py38-cudaDevel10.1-v22-4,conda-py38-cudaDevel10.0-v22-4,conda-py39-cuda11.2-v0.5-beta,conda-py39-cuda11.0-v0.5-beta,conda-py39-cuda10.2-v0.5-beta,conda-py39-cuda10.1-v0.5-beta,conda-py39-cuda10.0-v0.5-beta,conda-py38-cuda11.2-v0.5-beta,conda-py38-cuda11.0-v0.5-beta,conda-py38-cuda10.2-v0.5-beta,conda-py38-cuda10.1-v0.5-beta,conda-py38-cuda10.0-v0.5-beta,conda-py37-cuda11.2-v0.5-beta,conda-py37-cuda11.0-v0.5-beta,conda-py37-cuda10.2-v0.5-beta,conda-py37-cuda10.1-v0.5-beta,conda-py37-cuda10.0-v0.5-beta
+sklearn                  Scikit Learn               https://scikit-learn.org/stable/user_guide.html sklearn1.0.2-py39-cpu-v22-4
+perceval                 Quandela Perceval          https://perceval.quandela.net/docs/index.html   perceval0.6.1-py39-cpu-v22-4,perceval0.5.2-py39-cpu-v22-4
+tensorflow               Tensorflow                 https://www.tensorflow.org/api_docs             tf2.8-py39-cuda11.2-v22-4,tf2.7-py39-cuda11.2-v22-4,tf2.6-py39-cuda11.2-v22-4,tf2.5-py39-cuda11.2-v22-4,tf2.4-py38-cuda11.0-v22-4,tf2.3-py38-cuda10.1-v22-4,tf2.2-py38-cuda10.1-v22-4,tf2.6-py39-cuda11.2-v0.5-beta,tf2.6-py38-cuda11.2-v0.5-beta,tf2.6-py37-cuda11.2-v0.5-beta,tf2.5-py39-cuda11.2-v0.5-beta,tf2.5-py38-cuda11.2-v0.5-beta,tf2.5-py37-cuda11.2-v0.5-beta,tf2.4-py38-cuda11.0-v0.5-beta,tf2.4-py37-cuda11.0-v0.5-beta,tf2.3-py38-cuda10.1-v0.5-beta,tf2.3-py37-cuda10.1-v0.5-beta,tf2.2-py38-cuda10.1-v0.5-beta,tf2.2-py37-cuda10.1-v0.5-beta,2.4.1-ovh.beta.1
+huggingface-transformers Hugging Face Transformers  https://huggingface.co/transformers/            4.5.0-ovh.beta.1
+one-for-all              One image to rule them all                                                 v98-ovh.beta.1
+autogluon-mxnet          AutoGluon + MXNet                                                          0.1.0-ovh.beta.1
 
-$ ovhai capability editor
-ID         NAME       DOCURL                                      
-vscode     VSCode     https://code.visualstudio.com/docs          
+$ ovhai capabilities editor list
+ID         NAME       DOC_URL
 jupyterlab JupyterLab https://jupyterlab.readthedocs.io/en/stable/
+vscode     VSCode     https://code.visualstudio.com/docs
 ```
 
 In our example, we will create a new notebook using PyTorch and JupyterLab, with 1 GPU:
 
 ``` {.console}
-$ ovhai notebook run --gpu 1 pytorch jupyterlab                                                                                                                                                                                  14:37:13
+$ ovhai notebook run --gpu 1 pytorch jupyterlab
 
 id: fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e
 createdAt: "2021-05-27T12:37:14.752980089Z"
@@ -150,7 +153,7 @@ This is useful when you work on a notebook for some time. If you know you will n
 $ ovhai notebook delete fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e
 ```
 
-Note that a notebook must first be stopped before being deleted, and that deleted notebook cannot be restarted.
+Note that a notebook can be deleted even if it is not stopped, and that deleted notebook cannot be restarted.
 
 > [!primary]
 >
@@ -167,4 +170,4 @@ Learn how to share your notebooks with other people [here](https://docs.ovh.com/
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
