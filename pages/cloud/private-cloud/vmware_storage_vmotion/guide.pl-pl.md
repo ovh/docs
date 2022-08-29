@@ -4,6 +4,7 @@ excerpt: ''
 slug: vmware_storage_vmotion
 section: 'Funkcjonalności VMware vSphere'
 legacy_guide_number: g687
+order: 05
 ---
 
 ## 

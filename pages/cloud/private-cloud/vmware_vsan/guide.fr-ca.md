@@ -3,7 +3,7 @@ title: "Mettre en oeuvre l'hyperconvergence VMware avec vSAN"
 slug: vmware-vsan
 excerpt: "Utiliser la puissance de l'hyperconvergence avec vSAN"
 section: Fonctionnalités VMware vSphere
-order: 08
+order: 10
 ---
 
 **Dernière mise à jour le 21/12/2021**

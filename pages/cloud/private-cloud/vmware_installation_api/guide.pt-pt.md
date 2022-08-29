@@ -3,7 +3,7 @@ title: Utilização do SDK vSphere
 slug: utilizacao-sdk-vsphere
 excerpt: Utilização e implementação do SDK vSphere
 section: Funcionalidades VMware vSphere
-order: 10
+order: 12
 ---
 
 **Última atualização: 11/08/2020**

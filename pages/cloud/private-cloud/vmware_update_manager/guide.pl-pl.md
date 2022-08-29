@@ -4,7 +4,7 @@ excerpt: 'Dowiedz się, jak korzystać z VMware Update Manager'
 slug: korzystanie_z_vmware_update_manager
 section: 'Funkcjonalności VMware vSphere'
 legacy_guide_number: g591
-order: 09
+order: 11
 ---
 
 > [!primary]

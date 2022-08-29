@@ -3,7 +3,7 @@ title: Rekord VM na nowym PCC
 slug: vsphere-register-vm-vmx
 excerpt: Dowiedz się, jak ponownie zarejestrować wirtualne maszyny w nowej usłudze w starych datastore
 section: Funkcjonalności VMware vSphere
-order: 06
+order: 07
 ---
 
 > [!primary]

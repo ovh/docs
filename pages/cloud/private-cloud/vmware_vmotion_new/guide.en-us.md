@@ -4,7 +4,7 @@ slug: vmotion-new
 excerpt: Find out how to move your virtual machine to a different host (hot migration)
 legacy_guide_number: '7767025'
 section: VMware vSphere features
-order: 4
+order: 04
 ---
 
 **Last updated 10th July 2020**

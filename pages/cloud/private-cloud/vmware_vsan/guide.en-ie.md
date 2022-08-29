@@ -3,6 +3,7 @@ title: Using VMware Hyperconvergence with vSAN
 slug: vmware-vsan
 excerpt: Use the power of Hyperconvergence with vSAN
 section: VMware vSphere features
+order: 10
 ---
 
 **Last updated 21st December 2021**

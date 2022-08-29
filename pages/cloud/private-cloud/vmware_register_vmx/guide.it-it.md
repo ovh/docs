@@ -3,7 +3,7 @@ title: Registra le VM in un nuovo PCC
 slug: vsphere-register-vm-vmx
 excerpt: Come eseguire le prime operazioni sulla registrazione delle VM in un nuovo servizio dai datastore precedenti
 section: Funzionalità VMware vSphere
-order: 06
+order: 07
 ---
 
 > [!primary]

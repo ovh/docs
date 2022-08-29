@@ -3,7 +3,7 @@ title: vSphere SDK verwenden
 slug: vsphere-sdk-verwenden
 excerpt: Erfahren Sie hier, wie Sie das vSphere SDK einrichten und verwenden
 section: VMware vSphere Funktionen
-order: 10
+order: 12
 ---
 
 **Letzte Aktualisierung am 21.09.2020**
