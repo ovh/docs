@@ -143,8 +143,6 @@ If you would like to configure your email address on an email client or device (
 
 [Creating automatic replies in OWA](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/)
 
-[Creating automatic signatures](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_20132016_how_to_create_an_automatic_signature/)
-
 [Managing the billing for your Email Pro accounts](https://docs.ovh.com/gb/en/emails-pro/emailpro-billing/)
 
 [Managing the security policy of an email service](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/manage-security-policy-password/)

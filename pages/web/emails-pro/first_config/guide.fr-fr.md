@@ -142,8 +142,6 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 
 [Ajouter un alias sur son compte e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-ajouter-un-alias-sur-un-e-mail-depuis-le-manager/)
 
-[Mettre en place un répondeur automatique depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/)
-
 [Ajouter un pied de page pour vos comptes e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-signature-automatique-disclaimer/)
 
 [Gérer la facturation de vos comptes E-mail Pro](https://docs.ovh.com/fr/emails-pro/gestion-facturation-emailpro/)

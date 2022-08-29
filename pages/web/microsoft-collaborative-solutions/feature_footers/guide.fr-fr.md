@@ -2,7 +2,7 @@
 title: Ajouter un pied de page pour vos comptes Exchange 
 slug: exchange-signature-automatique-disclaimer
 legacy_guide_number: 1330
-excerpt: Retrouvez ici la procedure d’activation d’un pied de page (Disclaimer) sur votre compte Exchange
+excerpt: Retrouvez ici la procedure d’activation d’un pied de page (Disclaimer) sur votre compte e-mail
 section: Fonctionnalités des comptes Exchange
 order: 6
 ---
@@ -16,12 +16,6 @@ Dans votre espace client OVHcloud, vous pouvez créer des signatures universelle
 
 **Découvrez comment créer une signature automatique depuis l’espace client OVHcloud.**
 
-> [!primary]
->
-> Bien que ce guide fasse référence à nos services Exchange, vous pouvez également suivre les instructions pour les comptes Email Pro.
->
-
-
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
@@ -30,7 +24,12 @@ Dans votre espace client OVHcloud, vous pouvez créer des signatures universelle
 
 ## En pratique
 
-Connectez-vous  à votre [espace client OVHcloud ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Accédez à la section `Webcloud`{.action} et sélectionnez votre service Exchange dans la colonne figurant sous `Microsoft`{.action} puis `Exchange`{.action}. Cliquez sur l’onglet `Plus+`{.action} dans le menu horizontal et sélectionnez `Pieds de page`{.action}.
+Pour effectuer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr):
+
+- **Exchange**: Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. 
+- **Email Pro**: Cliquez sur `Email Pro`{.action}.
+
+Cliquez ensuite sur le nom du service e-mail dans lequel se trouve le compte concerné par la création de la délégation. Cliquez sur l’onglet `Plus+`{.action} dans le menu horizontal et sélectionnez `Pieds de page`{.action}.
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
@@ -61,9 +60,9 @@ Veillez à prendre en considération les spécificités suivantes avant de crée
 
 ## Aller plus loin
 
-[Consulter son compte Exchange depuis l’interface OWA](../exchange-2016-guide-utilisation-outlook-web-app/)
+[Consulter son compte e-mail depuis l’interface OWA](../exchange-2016-guide-utilisation-outlook-web-app/)
 
-[Déléguer des permissions sur un compte Exchange](../exchange-donner-les-droits-full-access-sur-un-compte/)
+[Déléguer des permissions sur un compte ](../exchange-donner-les-droits-full-access-sur-un-compte/)
 
 [Partager un calendrier via le webmail OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
 

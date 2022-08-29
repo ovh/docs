@@ -139,8 +139,6 @@ Aby skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu t
 
 [Dodaj alias do konta e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/email-alias/)
 
-[Tworzenie odpowiedzi automatycznych w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/)
-
 [Tworzenie automatycznych podpisów](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_automatyczny_podpis_-_disclaimer/)
 
 [Zarządzanie płatnościami za Twoje konta E-mail Pro](https://docs.ovh.com/pl/emails-pro/zarzadzanie-platnosciami-emailpro/)

@@ -16,8 +16,8 @@ If you receive an email notifying you that one of your email addresses has been 
 
 ## Requirements
 
-- an [OVHcloud email solution](https://www.ovhcloud.com/en-ie/emails/)
-- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- an [OVHcloud email solution](https://www.ovhcloud.com/en-gb/emails/)
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 

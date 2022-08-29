@@ -16,12 +16,6 @@ El área de cliente de OVHcloud le permite crear firmas genéricas (pies de mens
 
 **Esta guía explica cómo crear una firma automática desde el área de cliente de OVHcloud.**
 
-> [!primary]
->
-> Aunque esta guía hace referencia a nuestros servicios de Exchange, también puede consultar las instrucciones para las cuentas de Email Pro.
->
-
-
 ## Requisitos
 
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
@@ -30,8 +24,12 @@ El área de cliente de OVHcloud le permite crear firmas genéricas (pies de mens
 
 ## Procedimiento
 
+Para acceder a la gestión del servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}:
 
-En primer lugar, acceda a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), diríjase a la sección `Webcloud`{.action}, y seleccione su servicio Exchange de la columna `Microsoft`{.action} > `Exchange`{.action}. Haga clic en la pestaña `Más +`{.action} en la barra horizontal y seleccione `Pies de página`{.action}.
+- **Exchange**: Haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. 
+- **Email Pro**: Haga clic en `Email Pro`{.action}.
+
+Haga clic en el nombre del servicio de correo al que pertenezca la cuenta cuyos permisos quiera delegar. Haga clic en la pestaña `Más +`{.action} en la barra horizontal y seleccione `Pies de página`{.action}.
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
@@ -62,9 +60,9 @@ Tenga en cuenta los siguientes datos antes de introducir firmas para los usuario
 
 ## Más información
 
-[Usar Outlook Web App con una cuenta Exchange](../exchange_2016_guia_de_uso_de_outlook_web_app)
+[Usar Outlook Web App con una cuenta de correo](../exchange_2016_guia_de_uso_de_outlook_web_app)
 
-[Delegar permisos en una cuenta Exchange](../exchange_2013_dar_permisos_full_access_a_una_cuenta)
+[Delegar permisos en una cuenta de correo](../exchange_2013_dar_permisos_full_access_a_una_cuenta)
 
 [Compartir un calendario con el webmail OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa)
 

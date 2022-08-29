@@ -143,8 +143,6 @@ Per configurare l’account su un altro client di posta o dispositivi come _smar
 
 [Aggiungi un alias al tuo account email](https://docs.ovh.com/it/microsoft-collaborative-solutions/email-alias/)
 
-[Imposta risposte automatiche con OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_imposta_una_risposta_automatica_con_owa/)
-
 [Creare firme automatiche](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_firma_automatica_-_disclaimer/)
 
 [Gestire la fatturazione dei tuoi account Email Pro](https://docs.ovh.com/it/emails-pro/gestione-fatturazione-emailpro/)

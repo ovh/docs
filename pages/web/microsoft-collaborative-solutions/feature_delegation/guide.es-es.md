@@ -45,7 +45,7 @@ Para acceder a la gestión del servicio, conéctese al [área de cliente de OVHc
 - **Exchange**: Haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. 
 - **Email Pro**: Haga clic en `Email Pro`{.action}.
 
- Haga clic en el nombre del servicio de correo al que pertenezca la cuenta cuyos permisos quiera delegar. A continuación, abra la pestaña `Cuentas de correo`{.action}.
+Haga clic en el nombre del servicio de correo al que pertenezca la cuenta cuyos permisos quiera delegar. A continuación, abra la pestaña `Cuentas de correo`{.action}.
 
 Se mostrará una tabla que contiene las cuentas creadas en el servicio de correo. Haga clic en los tres puntos situados al final de la línea correspondiente a la cuenta y seleccione `Gestionar las delegaciones`{.action}.
 

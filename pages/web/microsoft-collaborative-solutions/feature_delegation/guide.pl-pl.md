@@ -46,7 +46,7 @@ Aby rozpocząć operację, zaloguj się do [Panelu klienta](https://www.ovh.com/
 - **Exchange**: Kliknij `Microsoft`{.action}, po czym kliknij `Exchange`{.action}.
 - **Email Pro**: Kliknij `Email Pro`{.action}.
 
- Następnie kliknij nazwę usługi e-mail, w której znajduje się konto, do którego będziesz nadawał uprawnienia. Teraz przejdź do zakładki `Konta e-mail`{.action}.
+Następnie kliknij nazwę usługi e-mail, w której znajduje się konto, do którego będziesz nadawał uprawnienia. Teraz przejdź do zakładki `Konta e-mail`{.action}.
 
 Pojawi się tabela, w której wyświetlają się konta powiązane z Twoją usługą e-mail. Kliknij trzy kropki po prawej stronie nazwy konta, do którego chcesz utworzyć uprawnienie, następnie kliknij `Zarządzaj uprawnieniami`{.action}.
 

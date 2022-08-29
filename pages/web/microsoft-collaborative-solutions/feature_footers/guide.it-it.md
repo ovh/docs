@@ -1,6 +1,6 @@
 ---
 title: Creare firme automatiche
-excerpt: Come aggiungere firme automatiche ai tuoi account di posta elettronica
+excerpt: Come aggiungere firme automatiche ai tuoi account email
 slug: exchange_2013_firma_automatica_-_disclaimer
 legacy_guide_number: g1330
 section: Funzionalità di un account Exchange
@@ -16,22 +16,19 @@ Nello Spazio Cliente OVHcloud, è possibile creare firme universali (footers) pe
 
 **Questa guida ti mostra come creare una firma automatica dallo Spazio Cliente OVHcloud.**
 
-> [!primary]
->
-> Questa guida si riferisce ai nostri servizi Exchange, ma le istruzioni sono valide anche per gli account Email Pro.
->
-
-
 ## Prerequisiti
 
 - avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/) attive 
 
-
 ## Procedura
 
+Per effettuare questa operazione, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
 
-Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Webcloud`{.action}, e seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}. Clicca sulla scheda`More+`{.action}nel menu orizzontale e seleziona `Footers`{.action}.
+- **Exchange**: Clicca su `Microsoft`{.action} > `Exchange`{.action}. 
+- **Email Pro**: Clicca su `Email Pro`{.action}.
+
+Seleziona il nome del servizio in cui si trova l’account per cui vuoi creare la delega e clicca sulla scheda `Account email`{.action}. Clicca sulla scheda `More+`{.action}nel menu orizzontale e seleziona `Footers`{.action}.
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
@@ -64,7 +61,7 @@ Prima di creare una firma per utenti, prendi in considerazione queste informazio
 
 [Guida all’utilizzo di Outlook Web App con un account Exchange](../exchange_2016_guida_allutilizzo_di_outlook_web_app)
 
-[Delegare i diritti su un account Exchange](../exchange_2013_assegna_i_diritti_full_access_a_un_account)
+[Delegare i diritti su un account email](../exchange_2013_assegna_i_diritti_full_access_a_un_account)
 
 [Condividi un calendario con la Webmail OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa)
 

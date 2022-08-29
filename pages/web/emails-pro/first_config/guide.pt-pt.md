@@ -144,8 +144,6 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 
 [Adicionar um alias à sua conta de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/email-alias/)
 
-[Criar respostas automáticas no OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/)
-
 [Criar assinaturas automáticas](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_assinatura_automatica_-_disclaimer/)
 
 [Gerir a faturação das contas E-mail Pro](https://docs.ovh.com/pt/emails-pro/gestao-faturacao-emailpro/)

@@ -139,7 +139,6 @@ Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispiel
 
 [Einrichten einer automatischen Antwort in OWA](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)
 
-[Automatische Signaturen erstellen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_automatische_signatur_-_disclaimer/)
 
 [Die Abrechnung Ihrer E-Mail Pro Accounts verwalten](https://docs.ovh.com/de/emails-pro/verwaltung-der-abrechnung-emailpro/)
 
