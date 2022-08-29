@@ -6,7 +6,7 @@ legacy_guide_number: '16254520'
 section: 'Gérer mon offre'
 ---
 
-**Dernière mise à jour le 05/08/2022**
+**Dernière mise à jour le 29/08/2022**
 
 ## Objectif
 
@@ -48,8 +48,10 @@ Afin de n'être jamais à court de crédit sur votre compte, vous pouvez activer
 
 > [!warning]
 >
-> L'option de recharge automatique ne peut être activée que si un moyen de paiement de type Prélèvement SEPA est présent et validé sur votre compte OVHcloud.
+> L'option de recharge automatique ne peut être activée que si les conditions suivantes sont remplies :
 >
+> - un moyen de paiement de type Prélèvement SEPA est présent et validé sur votre compte OVHcloud;
+> - votre service SMS doit avoir au moins 2 mois d'ancienneté.
 
 Pour activer la recharge automatique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans l'onglet `Télécom`{.action} puis cliquez sur la section `SMS`{.action}. Choisissez le compte SMS sur lequel activer la recharge automatique.
 

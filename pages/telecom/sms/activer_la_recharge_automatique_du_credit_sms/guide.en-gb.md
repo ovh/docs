@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage your OVHcloud SMS credits'
 section: 'Managing your solution'
 ---
 
-**Last updated 5th August 2021**
+**Last updated 29th August 2022**
 
 ## Objective
 
@@ -47,8 +47,10 @@ To ensure that you are never short of credit on your account, you can enable aut
 
 > [!warning]
 >
-> The automatic re-credit option can only be activated if a SEPA direct debit payment method is present and confirmed in your OVHcloud account.
+> The automatic re-crediting option can only be enabled if the following conditions are met:
 >
+> - a SEPA direct debit payment method is present and validated in your OVHcloud account.
+> - your SMS service must be at least 2 months old.
 
 To enable automatic re-crediting, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Telecom`{.action} tab. Next, click on the `SMS`{.action} section in the services bar. Choose the SMS account you would like to enable automatic re-credit for.
 
