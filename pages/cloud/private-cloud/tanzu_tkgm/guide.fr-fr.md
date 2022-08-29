@@ -110,8 +110,20 @@ Allez dans les `Modèles`{.action} pour voir le modèle créé. Ce modèle sera 
 
 ![01 integrate TKGM OVA 16](images/01-integrate-tkgm-ova16.png){.thumbnail}
 
-
 ### Installation de la machine virtuelle **Bootstrap** fourni par OVHcloud
+
+La configuration d'une cluster **Tanzu Kubernetes Grid** se fait à partir d'un outil en ligne de commande qui s'installe à l'aide d'une procédure fastidieuse que vous pouvez utiliser en allant sur ce lien [Installation manuelle de l'outil CLI pour le déploiement de Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html. ou utiliser la machine virtuelle déja préparée par OVHcloud.
+
+Suivez ces instructions pour déployer la machine virtuelles **Bootstrap**.
+
+Télécharger le modèle OVA de cette machine virtuelle à cette adresse [Ubuntu & TKGm with Gnome](https://plik.fromsync.net/file/kHp0z2X3lpTJi3RB/4M3KLcF9nJLT9Emm/Ubuntu-22.04_TKGm-1.5.4_with_x.ova)
+
+ALlez sur votre interface vSphere 
+
+
+
+
+### Autorisation d'accès au cluster PCC depuis la machine virtuelle **Bootstrap**
 
 
 ### Déploiement du cluster **Tanzu Kubernetes Grid** sur votre infrastructure 
@@ -124,7 +136,7 @@ Allez dans les `Modèles`{.action} pour voir le modèle créé. Ce modèle sera 
 
 [Documentation de VMware Tanzu Kubenetes Grid](https://https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
 
-[Installation manuelle des outils de la machine virtuelle BOOTSTRAP](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
+[Installation manuelle de l'outil CLI pour le déploiement de Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
