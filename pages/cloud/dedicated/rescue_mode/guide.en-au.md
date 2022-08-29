@@ -44,6 +44,11 @@ Look for "Boot" in the **General information** box and click on `...`{.action}, 
 
 In the next page, select **Boot in rescue mode**. If your server has a Linux-based OS, select `rescue-customer`{.action} from the menu. If your server runs on Windows, you can also choose "WinRescue" (see the [guide section below](#windowsrescue)). Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
 
+> [!warning]
+>
+> Some OVHcloud customer accounts may be affected by an error regarding the language of rescue emails: they are sent in French instead of the chosen account language. Although the cause of the error has been corrected since September 20, 2022, the email address needs to be updated once to resolve the issue. To do this, enter your customer account's email address in this step before you enable rescue mode.
+>
+
 Click on `Next`{.action} to proceed to the next step and on `Confirm`{.action} to validate the change.
 
 ![Mode rescue-customer](images/rescue-mode-08.png){.thumbnail}
@@ -59,7 +64,7 @@ Remember to change the netboot back to `Boot from the hard disk`{.action} before
 #### Using rescue mode (SSH)
 
 > [!primary]
-> 
+>
 > If you are using an SSH key (also active in the OVHcloud Control Panel), you will not be sent a password. Once the server is in rescue mode, you can connect directly via your SSH key.
 >
 
@@ -73,8 +78,9 @@ For example:
 ssh root@your_server_IP
 root@your_server_password:
 ```
+
 > [!warning]
-> 
+>
 > Your SSH client will likely block the connection at first due to a mismatch of the ECDSA fingerprint. This is normal because the rescue mode uses its own temporary SSH server.
 >
 > One way around this is commenting the fingerprint of your regular system by adding a `#` in front of its line in the *known_hosts* file. Revert that change before returning to normal boot.
@@ -113,7 +119,7 @@ rescue-customer:~# mount /dev/hda1 /mnt/
 > [!primary]
 >
 > Your partition will now be mounted. You can then carry out operations on the file system.
-> 
+>
 > If your server uses a softRAID configuration, you will need to mount your RAID volume (usually `/dev/mdX`).
 >
 
