@@ -29,7 +29,7 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir un identifiant actif dans vSphere
-- Avoir un Vlan qui possède un accès à internet et un serveur DHCP.
+- Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
 
 ## En pratique
 
@@ -50,7 +50,7 @@ Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster
 
 ![01 integrate TKGM OVA 01](images/01-integrate-tkgm-ova01.png){.thumbnail}
 
-Sélectionnez `Fichier local`{.action} et ensuite cliquez sur `TÉLÉCHARGER DES FICHIERS`{.action}.
+Sélectionnez `Fichier local`{.action} ensuite cliquez sur `TÉLÉCHARGER DES FICHIERS`{.action}.
 
 ![01 integrate TKGM OVA 02](images/01-integrate-tkgm-ova02.png){.thumbnail}
 
@@ -62,7 +62,7 @@ Cliquez sur `SUIVANT`{.action}.
 
 ![01 integrate TKGM OVA 04](images/01-integrate-tkgm-ova04.png){.thumbnail}
 
-Cliquez à nouveau sur `SUIVANT`{.action}.
+Laissez l'emplacement par défaut et cliquez sur `SUIVANT`{.action}.
 
 ![01 integrate TKGM OVA 05](images/01-integrate-tkgm-ova05.png){.thumbnail}
 
@@ -74,7 +74,7 @@ Vérifiez vos informations et cliquez sur `SUIVANT`{.action}.
 
 ![01 integrate TKGM OVA 07](images/01-integrate-tkgm-ova07.png){.thumbnail}
 
-Cochez `J'accepte tous les contrats de license`{.action} ensuite cliquez sur `SUIVANT`{.action}.
+Cochez `J'accepte tous les contrats de license`{.action} et cliquez sur `SUIVANT`{.action}.
 
 ![01 integrate TKGM OVA 08](images/01-integrate-tkgm-ova08.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Répondez `OUI`{.action}.
 
 ![01 integrate TKGM OVA 15](images/01-integrate-tkgm-ova15.png){.thumbnail}
 
-La machine virtuelle a été à nouveau convertie en modèle comme on peut le voir dans la liste des modèles. Ce modèle sera utilisé lors du déploiement du cluster **Tanzu Kubernetes Grid**.
+Allez dans les `Modèles`{.action} pour voir le modèle créé. Ce modèle sera utilisé lors du déploiement du cluster **Tanzu Kubernetes Grid**.
 
 ![01 integrate TKGM OVA 16](images/01-integrate-tkgm-ova16.png){.thumbnail}
 
