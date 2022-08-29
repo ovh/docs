@@ -3,7 +3,7 @@ title: Réenregistrer des VM dans un nouveau PCC
 slug: vsphere-register-vm-vmx
 excerpt: Découvrez comment réenregistrer des VM sur un nouveau service depuis d'anciens datastores
 section: Fonctionnalités VMware vSphere
-order: 06
+order: 07
 ---
 
 **Dernière mise à jour le 22/03/2021**

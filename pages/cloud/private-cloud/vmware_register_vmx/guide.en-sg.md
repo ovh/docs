@@ -3,7 +3,7 @@ title: Reregister VMs in a new PCC
 slug: vsphere-register-vm-vmx
 excerpt: Find out how to reregister VMs on a new service from old datastores
 section: VMware vSphere features
-order: 6
+order: 07
 ---
 
 **Last updated 24th March 2021**

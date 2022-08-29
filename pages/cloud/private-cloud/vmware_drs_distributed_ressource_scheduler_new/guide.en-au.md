@@ -3,7 +3,7 @@ title: VMware DRS (Distributed Resource Scheduler)
 slug: vmware-drs-distributed-ressource-scheduler
 excerpt: Find out how to manage load balancing with DRS
 section: VMware vSphere features
-order: 3
+order: 03
 ---
 
 **Last updated 7th July 2020**

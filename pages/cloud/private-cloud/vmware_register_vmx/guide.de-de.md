@@ -3,7 +3,7 @@ title: VMs in einer PCC re-registrieren
 slug: vsphere-register-vm-vmx
 excerpt: Erfahren Sie hier, wie Sie VMs betriebsunfähiger Datastores in einem neuen Dienst registrieren
 section: VMware vSphere Funktionen
-order: 6
+order: 07
 ---
 
 > [!primary]

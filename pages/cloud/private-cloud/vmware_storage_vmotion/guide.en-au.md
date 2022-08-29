@@ -4,7 +4,7 @@ slug: vmware_storage_vmotion
 excerpt: Find out how to move your virtual machine to a different datastore (hot migration)
 legacy_guide_number: '7767010'
 section: VMware vSphere features
-order: 5
+order: 05
 ---
 
 **Last updated 10th July 2020**

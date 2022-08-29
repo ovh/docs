@@ -5,7 +5,11 @@ excerpt: 'Cómo gestionar el crédito de SMS en OVHcloud'
 section: 'Gestionar el servicio'
 ---
 
-**Última actualización: 05/08/2022**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
+**Última actualización: 29/08/2022**
 
 ## Objetivo
 
@@ -47,8 +51,10 @@ Para garantizar que su cuenta de SMS dispone siempre de crédito, puede activar 
 
 > [!warning]
 >
-> La opción de recarga automática solo puede activarse si dispone de una forma de pago de tipo Adeudo SEPA validada en su cuenta OVHcloud.
+> La opción de recarga automática sólo puede activarse si se cumplen las siguientes condiciones:
 >
+> - una forma de pago de tipo SEPA está presente y validada en su cuenta de OVHcloud.
+> - su servicio SMS debe tener al menos 2 meses de antigüedad.
 
 Para activar la recarga automática, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda a la pestaña `Telecom`{.action} y abra la sección `SMS`{.action}. Seleccione la cuenta de SMS en la que desea activar la recarga automática.
 
