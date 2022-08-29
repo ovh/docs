@@ -28,8 +28,8 @@ order: 01
 
 Nutanix propose deux versions d'AOS qui sont régulièrement mise à jour :
 
-- **Une version LTS (*Long term support*)** mise à jour 1 fois par an. 
-- **Une version STS (*Short term support*)** mise à jours 4 fois par an.
+- **Une version LTS (*Long Term Support*)** mise à jour 1 fois par an. 
+- **Une version STS (*Short Term Support*)** mise à jours 4 fois par an.
 
 
 Lorsqu'une nouvelle version d'AOS sort OVHcloud qualifie cette version pour les serveurs OVHcloud avec un peu de délais.
@@ -38,7 +38,7 @@ Lorsqu'une nouvelle version d'AOS sort OVHcloud qualifie cette version pour les 
 >
 > Vous pouvez utiliser **LCM** pour faire des mises à jours de correctives des versions **LTS** et **STS**.
 > 
-> **LCM** peut proposer le passage vers une nouvelle version qui n'est pas encore qualifiée par OVHcloud, attendez quelle soit validée par OVHcloud pour continuer à bénéficier du support.
+> **LCM** peut proposer le passage vers une nouvelle version qui n'est pas encore qualifiée par OVHcloud, attendez qu'elle soit validée par OVHcloud pour continuer à bénéficier du support.
 
 Les versions supportées par OVHCloud sont les suivantes :
 
@@ -53,7 +53,7 @@ Ce guide sera régulièrement mis à jour avec les versions supportées mais il 
 
 ## En pratique
 
-Nous allons vérifier les versions suppportées au travers de l'API OVHcloud.
+Nous allons vérifier les versions supportées au travers de l'API OVHcloud.
 
 Connectez-vous à l'[API OVHcloud](https://api.ovh.com). Pour plus de détails sur le fonctionnement de l'API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/.)
 
@@ -68,7 +68,7 @@ Saisissez ces données :
 
 - **ServiceName :** `Nom FQDN de votre Cluster Nutanix`.
 
-Cliquez sur `Execute`{.action} pour récuperer les informations de versions.
+Cliquez sur `Execute`{.action} pour récupérer les informations de versions.
 
 ![01 Get version 01](images/01-get-supported-version01.png)
 
