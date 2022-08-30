@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 27/08/2022**
+**Dernière mise à jour le 30/08/2022**
 
 ## Objectif
 
@@ -176,9 +176,18 @@ Faites un clic droit sur la `Machine virtuelle créée`{.action} allez dans `Ali
 
 Positionnez-vous sur la `Machine virtuelle créée`{.action} et cliquez sur `LANCER LA CONSOLE WEB`{.action}.
 
+![02 Add Bootstrapvm 13](images/02-add-bootstrap-vm-from-ova13.png){.thumbnail}
+
+Vous verrez la console de la machine virtuelle.
+
+![02 Add Bootstrapvm 14](images/02-add-bootstrap-vm-from-ova14.png){.thumbnail}
+
+
 ### Autorisation d'accès au cluster PCC depuis la machine virtuelle **Bootstrap**
 
 les outils de configurations sont installés sur la machine virtuelle nouvellement démarrée elle doit pouvoir aller sur Internet et aussi se connecter au cluster vSphere, il faut s'assurer dans l'espace client OVHcloud que ce soit possible.
+
+
 
 
 
