@@ -1,7 +1,7 @@
 ---
 title: 'Delegating permissions on an email account'
 slug: emailpro-delegation
-section: 'General'
+section: 'Getting started'
 order: 5
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 'Gerir a política de segurança de um serviço de e-mail'
-slug: gerir-politica-de-seguranca-palavra-passe
+slug: manage-security-policy-password
 excerpt: 'Saiba como gerir a política de segurança do seu serviço de e-mail.'
 section: 'Introdução'
 order: 8

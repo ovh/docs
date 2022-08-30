@@ -1,6 +1,6 @@
 ---
 title: 'Zarządzanie polityką bezpieczeństwa usługi e-mail'
-slug: zarzadzanie-polityka-bezpieczenstwa-exchange
+slug: manage-security-policy-password
 excerpt: 'Dowiedz się, jak zarządzać polityką bezpieczeństwa usługi e-mail'
 section: 'Pierwsze kroki'
 order: 8

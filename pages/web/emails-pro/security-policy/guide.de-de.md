@@ -1,6 +1,6 @@
 ---
 title: 'Sicherheitseinstellungen eines E-Mail-Dienstes verwalten'
-slug: passwort-sicherheitseinstellungen-verwalten
+slug: manage-security-policy-password
 excerpt: 'Erfahren Sie hier, wie Sie die Sicherheitseinstellungen Ihres E-Mail-Dienstes verwalten'
 section: 'Erste Schritte'
 order: 8

@@ -2,7 +2,7 @@
 title: 'Verwendung der Outlook Web App'
 slug: using-outlook-web-app-email-pro
 legacy_guide_number: g1918
-section: 'Allgemein'
+section: 'Erste Schritte'
 order: 2
 ---
 

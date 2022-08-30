@@ -9,7 +9,7 @@ order: 5
 
 ## Objetivo
 
-Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail profissionais, que facilitam o trabalho colaborativo graças a diferentes funcionalidades. Uma delas permite delegar direitos específicos (como o de envio ou de acesso) entre diferentes contas de e-mail.
+Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail profissionais que facilitam o trabalho colaborativo graças a diferentes funcionalidades. Uma delas permite delegar direitos específicos (como o de envio ou de acesso) entre diferentes contas de e-mail.
 
 **Saiba como delegar os direitos da sua conta  noutro agente.**
 

@@ -2,7 +2,7 @@
 title: 'Konfiguration von E-Mail Pro'
 slug: erstkonfiguration
 excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail Pro Lösung einrichten'
-section: Allgemein
+section: 'Erste Schritte'
 order: 1
 ---
 

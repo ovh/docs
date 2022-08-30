@@ -9,7 +9,7 @@ order: 5
 
 ## Objetivo
 
-Los servicios Exchange y Email Pro permiten disfrutar de direcciones de correo profesionales, que facilitan el trabajo colaborativo gracias a sus diferentes funcionalidades. Una de ellas permite delegar permisos específicos (como permisos de envío o de acceso) entre diferentes cuentas de correo.
+Los servicios Exchange y Email Pro permiten disfrutar de direcciones de correo profesionales que facilitan el trabajo colaborativo gracias a sus diferentes funcionalidades. Una de ellas permite delegar permisos específicos (como permisos de envío o de acceso) entre diferentes cuentas de correo.
 
 **Esta guía explica cómo delegar permisos de su cuenta de correo en otra cuenta.**
 

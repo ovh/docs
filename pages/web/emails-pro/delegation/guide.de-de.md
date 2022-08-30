@@ -1,7 +1,7 @@
 ---
 title: 'Berechtigungen für einen E-Mail Account übertragen'
 slug: emailpro-delegation
-section: 'Allgemein'
+section: 'Erste Schritte'
 order: 5
 ---
 
@@ -9,7 +9,7 @@ order: 5
 
 ## Einleitung
 
-Mit den Exchange und E-Mail Pro Dienstleistungen profitieren Sie von professionellen E-Mail-Adressen, die die kollaborative Arbeit dank verschiedener Funktionen vereinfachen. Mit einer dieser Optionen können bestimmte Rechte (z. B. Versand- oder Zugriffsrechte) zwischen verschiedenen E-Mail-Accounts übertragen werden.
+Mit den Exchange und E-Mail Pro Dienstleistungen profitieren Sie von professionellen E-Mail-Adressen die kollaborative Arbeit dank verschiedener Funktionen vereinfachen. Mit einer dieser Optionen können bestimmte Rechte (z. B. Versand- oder Zugriffsrechte) zwischen verschiedenen E-Mail-Accounts übertragen werden.
 
 **In dieser Anleitung erfahren Sie, wie Sie anderen Accounts Berechtigungen für Ihren E-Mail Account zuweisen.**
 

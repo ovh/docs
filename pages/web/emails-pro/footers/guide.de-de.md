@@ -1,7 +1,7 @@
 ---
 title: 'Automatische Signaturen erstellen'
 slug: email-automatic-signature-disclaimer
-section: Allgemein
+section: 'Erste Schritte'
 order: 6
 ---
 

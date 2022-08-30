@@ -2,7 +2,7 @@
 title: 'Creating inbox rules in OWA (Email Pro)'
 slug: creating-inbox-rules-in-owa-email-pro
 excerpt: 'Find out how to create email redirections and filters using Email Pro'
-section: General
+section: 'Getting started'
 order: 3
 ---
 

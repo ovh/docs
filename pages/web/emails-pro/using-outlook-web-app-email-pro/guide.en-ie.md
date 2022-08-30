@@ -1,7 +1,7 @@
 ---
 title: 'Using the Outlook Web App with an Email Pro account'
 slug: using-outlook-web-app-email-pro
-section: 'General'
+section: 'Getting started'
 order: 2
 ---
 
