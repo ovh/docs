@@ -6,7 +6,7 @@ section: 'Projektverwaltung'
 order: 2
 ---
 
-**Letzte Aktualisierung am 21.09.2021**
+**Letzte Aktualisierung am 30.08.2022**
 
 ## Ziel
 
@@ -36,22 +36,26 @@ Für jedes Cloud Projekt gibt es eine eigene Rechnung, die alle im Laufe des Mon
 
 ### Beispiel
 
+>[!warning]
+> Bitte beachten Sie, dass eine stündliche Instanz unabhängig vom Zeitpunkt der Erstellung der Instanz stundenweise abgerechnet wird. Wenn Sie eine Abrechnungszeit von 60 Minuten nutzen möchten, müssen Sie Ihre Instanz mit der Uhrzeit starten, zum Beispiel um 13:00 oder 14:00 Uhr.
+>
+
 Das folgende Beispiel zeigt eine klare Erklärung dafür liefern, wie dies funktioniert.
 
 - Am 4. Tag des Monats startet ein Nutzer um 09:40 Uhr eine Instanz vom Typ b2-15
 - Um 10:00 Uhr am 8. Tag des Monats werden 250 GB zusätzlicher Speicherplatz hinzugefügt (Classic Volume)
 - Am 12. Tag desselben Monats um 16:30 Uhr löscht der Nutzer alle Ressourcen nach Abschluss des Projekts
 
-Für die Instanz werden vom 4. Tag des Monats um 09.40 Uhr bis zum 12. des Monats um 16.30 Uhr insgesamt 176 Stunden Ressourcenverbrauch berechnet. Sie werden mit 0,111 EUR pro Stunde berechnet.
+Für die Instanz werden vom 4. Tag des Monats um 09.40 Uhr bis zum 12. des Monats um 16.30 Uhr insgesamt 200 Stunden Ressourcenverbrauch berechnet. Sie werden mit 0,111 EUR pro Stunde berechnet.
 
 Vom 8. Tag des Monats um 10.00 Uhr bis zum 12. des Monats um 16.30 Uhr kommen 103 Stunden Ressourcenverbrauch für den Storage hinzu. Für 1 GB des gewählten Storage betragen die Kosten 0,04 EUR/Monat (0,0000555556 EUR/Stunde).
 
 Am Ende des Monats berechnet sich der Gesamtbetrag folgendermaßen:
 
-- 176 x 0,111
-- 103 x 250 x 0,000055556
+- 200 x 0,111
+- 103 x (250 x 0,000055556)
 
-Ergebnis: 20,97€
+Ergebnis: 23,63€
 
 > [!primary]
 >

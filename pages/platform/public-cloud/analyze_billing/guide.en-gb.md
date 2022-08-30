@@ -37,7 +37,7 @@ Each cloud project has its own bill, which totals up all of the resources billed
 ### Example
 
 > [!warning]
-> Please note that an hourly instance is billed by the hour, regardless of when the instance is created. If you want to get a full 60 minutes of usage, then you must start your instance on the hour mark.
+> Please note that an hourly instance is billed per hour, regardless of when the instance is created. If you would like to have 60 minutes of usage for one hour of billing, you will need to launch your instance at the hour mark, for example at 1:00 or 2:00 pm.
 >
 
 This example might provide a clear explanation of how this works.

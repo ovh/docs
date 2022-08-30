@@ -50,7 +50,7 @@ Pour le stockage, du 8 du mois à 10:00 au 12 du même mois à 16:30, il y a 103
 En fin de mois, la facture totalisera :
 
 * 200 x 0,111
-* 103 x 250 x 0,0000555556
+* 103 x (250 x 0,0000555556)
 
 Soit 23,63 euros.
 
