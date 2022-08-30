@@ -5,7 +5,7 @@ slug: use-kvm-for-vps
 section: 'Getting started'
 ---
 
-**Last updated 4th September 2020**
+**Last updated 30th August 2022**
 
 ## Objective
 
@@ -36,42 +36,87 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 ### Using the KVM console
 
-The KVM screen will now open, which is a small window showing a connection to your server. Since the window is rather small it will be quite difficult to navigate around your server's interface using the scrollbars. Therefore we recommend that you open the KVM in a new, full-screen window using the "Open in a new window" button in the bottom right corner of the popup.
+The KVM screen will open, which is a small window showing a connection to your server. Since the window is rather small it will be quite difficult to navigate around your server's interface using the scrollbars. Therefore we recommend that you open the KVM in a new, full-screen window using the "Open in a new window" button in the bottom right corner of the popup.
 
 > [!primary]
 >
-> If you have issues with double typing, the issue may originate due to auto screen adjustment. We recommend opening the KVM in a new window using the "Open in a new window" button.
+> You might experience double typing issues; this is caused by auto screen adjustment. We recommend opening the KVM in a new window using the "Open in a new window" button.
 >
-> Should you still have issues with the screen, we recommend removing from the URL the "auto" part. If the URL is https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx then it should become https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx (the link for you may be different, this is only illustrating which part of the URL needs to be removed)
+> Should you still have issues with the screen, we recommend removing the "auto" part from the URL. If the URL is https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx then it should become https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx (the link for you may be different, this is only illustrating which part of the URL needs to be removed).
 >
 
 ![Connecting to the KVM](images/kvm_screen.png){.thumbnail}
 
 > [!primary]
 >
-> The keyboard may have a different layout to your own. Be sure to check it, since the keyboard could be AZERTY instead of QWERTY, for example.
+> The keyboard may have a different layout from your own. Be sure to check it, since the keyboard could be AZERTY instead of QWERTY, for example.
 >
 
-### Connecting to the KVM via the APIs
+#### Changing the keyboard layout
 
-You may sometimes experience issues connecting to the KVM via your OVHcloud Control Panel, especially with older versions. In this case, you can use the API solution. To do this, log in via the [OVHcloud API](https://api.ovh.com/).
+You can enable your preferred keyboard configuration to make using the console more convenient. Enter the following command:
+
+```bash
+sudo dpkg-reconfigure keyboard-configuration
+```
+
+A graphical menu will open in which you can select a keyboard model.
+
+![KVM](images/kvm_vps01.png){.thumbnail}
+
+Use the arrow keys to navigate to the option that comes closest to your hardware, then press "Enter". 
+
+![KVM](images/kvm_vps02.png){.thumbnail}
+
+In the next menu, choose your country.
+
+![KVM](images/kvm_vps03.png){.thumbnail}
+
+In the third selection, you can specify your actual keyboard layout.
+
+Depending on your selections, there may be further options showing up after the third menu.
+
+Back at the command line, enter the following command to apply the changes.
+
+```bash
+sudo systemctl restart keyboard-setup
+```
+
+> [!primary]
+>
+> These steps need to be repeated after a server reboot.
+>
+
+### Connecting to the KVM via the API
+
+You may sometimes experience issues connecting to the KVM via your OVHcloud Control Panel, especially with older versions. In this case, you can use the API solution via the [OVHcloud API](https://api.ovh.com/).
 
 #### For a 2014 VPS
 
 If you have a 2014 VPS, you may encounter *error 1006*. Going through the API using the call below could resolve this.
 
-> [!api]
+> [!faq]
 >
-> @api {POST} /vps/{serviceName}/openConsoleAccess
+> API:
+>
+>> > [!api]
+>> >
+>> > @api {POST} /vps/{serviceName}/openConsoleAccess
+>> >
+>>
 >
 > API call parameters:
 >
->> serviceName *
->>> ID of your VPS which looks something like vpsxxxxx.ovh.net
->> protocol
->>> VNC
+>> > **serviceName** *
+>> >
+>> >> ID of your VPS in the format vpsxxxxx.ovh.net
+>> >
+>> > **protocol** 
+>> >
+>> >> VNC
+>
 
-Despite the command going through on the API, the connection might take one or two minutes – the time it takes for the port to be successfully opened.
+Despite the command going through on the API, the connection might take a few minutes – the time it takes for the port to be successfully opened.
 
 We recommend using either of the following clients:
 
@@ -84,14 +129,21 @@ Use the details provided by the API call to connect to the VPS remotely using ei
 
 If problems arise with the KVM, here is the recommended API for accessing the KVM:
 
-> [!api]
+> [!faq]
 >
-> @api {POST} /vps/{serviceName}/getConsoleUrl
+> API:
+>
+>> > [!api]
+>> >
+>> > @api {POST} /vps/{serviceName}/getConsoleUrl
+>> >
+>>
 >
 > API call parameters:
 >
->> serviceName *
->>> ID of your VPS which looks something like vpsxxxxx.ovh.net
+>> > **serviceName** *
+>> >
+>> >> ID of your VPS in the format vpsxxxxx.ovh.net
 >
 
 > [!primary]
