@@ -53,7 +53,7 @@ Vom 8. Tag des Monats um 10.00 Uhr bis zum 12. des Monats um 16.30 Uhr kommen 10
 Am Ende des Monats berechnet sich der Gesamtbetrag folgendermaßen:
 
 - 200 x 0,111
-- 103 x (250 x 0,000055556)
+- 103 x 250 x 0,000055556
 
 Ergebnis: 23,63€
 

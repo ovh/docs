@@ -53,7 +53,7 @@ En el caso del volumen de almacenamiento, desde el día 8 a las 10:00 hasta el d
 Al final de mes, la factura incluirá:
 
 - 200 x 0,111
-- 103 x (250 x 0,0000555556)
+- 103 x 250 x 0,0000555556
 
 El importe total será de 23,63 euros.
 
