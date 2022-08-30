@@ -5,7 +5,7 @@ section: 'Gestion de projets'
 excerpt: 'Comprenez le mode de facturation des produits Public Cloud'
 ---
 
-**Dernière mise à jour le 10/09/2021**
+**Dernière mise à jour le 29/08/2022**
 
 ## Objectif
 
@@ -33,22 +33,26 @@ Chaque projet cloud a donc sa propre facture rassemblant l'ensemble des ressourc
 
 ### Exemple
 
+> [!warning]
+> Veuillez noter qu'une instance horaire est facturée à l'heure, indépendamment du moment où l'instance est créée. Si vous souhaitez bénéficier de 60 minutes d'utilisation, vous devez démarrer votre Instance à la marque de l'heure.
+>
+
 Un exemple permettera de mieux comprendre le fonctionnement.
 
 * un utilisateur démarre une instance B2-15 le 4 du mois à 9:40
 * le 8 du mois à 10:00, il ajoute 250 Go de volume additionnel (Classic Volume)
 * il supprime l'ensemble le 12 du même mois à 16:30, après avoir terminé ce qu'il avait à faire avec ces ressources
 
-Pour l'instance, du 4 du mois à 9:40 au 12 du même mois à 16:30, il y a 176 heures commencées. Elles sont facturées 0,111 euros par heure.
+Pour l'instance, du 4 du mois à 9:40 au 12 du même mois à 16:30, il y a 200 heures commencées. Elles sont facturées 0,111 euros par heure.
 
 Pour le stockage, du 8 du mois à 10:00 au 12 du même mois à 16:30, il y a 103 heures commencées. Le Go de Classic Volume coûte 0,04 euros/mois (0,0000555556 euros/heure).
 
 En fin de mois, la facture totalisera :
 
-* 176 x 0,111
+* 200 x 0,111
 * 103 x 250 x 0,0000555556
 
-Soit 20,97 euros.
+Soit 23,63 euros.
 
 > [!primary]
 >
