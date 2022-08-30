@@ -9,7 +9,7 @@ section: 'Netzwerk & IP'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 29.06.2022**
+**Letzte Aktualisierung am 29.08.2022**
 
 ## Ziel
 
@@ -35,7 +35,9 @@ Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol
 
 ## In der praktischen Anwendung
 
-Falls Sie für die Installation Ihres Servers ein Linux-OS-Template von OVHcloud verwenden, werden Sie feststellen, dass die erste (Haupt-) IPv6 bereits konfiguriert ist.
+Wenn Sie Ihren Server mithilfe eines von OVHcloud bereitgestellten Linux-Betriebssystems installieren, muss die erste IPv6-Adresse (die Hauptadresse) auf dem Server konfiguriert werden.
+
+Wenn wir beispielsweise Ihrem Server den IPv6-Bereich zugewiesen haben: `2607:5300:xxxx:xxxx::/64` Sie können IPv6 als Haupt-IPv6 Ihres Servers verwenden: `2607:5300:xxxx:xxxx::1/64`
 
 Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wenn Sie diese auf einer VM verwenden möchten), müssen Sie jeweils eine Failover-IP mit vMAC einrichten. Andernfalls kann IPv6 nicht von unseren Routern / Switches geroutet werden.
 
@@ -45,8 +47,8 @@ Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wen
 >
 > Beispiel:
 > 
-> - Die IPv6-Adresse des Servers ist 2607:5300:60:62ac::/64 oder 2607:5300:60:62ac:0000:0000:0000:0000/64. Das IPv6_GATEWAY ist daher 2607:5300:60:62FF:FF:FF:FF:FF.
-> - Die IPv6-Adresse des Servers ist 2001:41D0:1:46e::/64 order 2001:41D0:0001:046e:0000:0000:0000:0000/64. Das IPv6_GATEWAY ist daher 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - Der IPv6-Bereich des Servers ist `2607:5300:60:62ac::/64` oder `2607:5300:60:62ac:0000:0000:0000:0000/64`. Das IPv6_GATEWAY ist daher `2607:5300:60:62FF:FF:FF:FF:FF`.
+> - Der IPv6-Bereich des Servers ist `2001:41D0:1:46e::/64` oder `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Das IPv6_GATEWAY ist daher `2001:41D0:1:4FF:FF:FF:FF:FF`.
 >
 > Der sichere Weg um die Netzwerkinformationen für Ihren Server abzurufen ist die [Verwendung der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/). Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
 >
