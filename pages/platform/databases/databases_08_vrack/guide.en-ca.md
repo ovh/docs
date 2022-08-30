@@ -1,9 +1,9 @@
 ---
-title: Redis - Connect Redis to vRack
-slug: redis/vrack
-excerpt: Connect an OVHcloud managed Redis cluster to vrack
-section: Redis - Tutorials
-order: 020
+title: Configure your Private Network (cross DB)
+slug: configure-vrack
+excerpt: Connect a Public Cloud Database to vRack
+section: General guides
+order: 035
 ---
 
 **Last updated August 29<sup>th</sup>, 2022**
@@ -18,8 +18,8 @@ The OVHcloud vRack is a private network solution that enables our customers to r
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account.
 
 ## Instructions
 
@@ -53,19 +53,19 @@ Your vRack is ready!
 
 > [!primary]
 >
-> Learn more about vRack [here](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/)
+> Learn more about vRack [here](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/)
 >
 
 ### Step 2 - Creating a Public Cloud Database connected to the private network
 
 
-Follow this [guide](https://docs.ovh.com/de/publiccloud/databases/getting-started/) to create a new Public Cloud Database.
+Follow this [guide](https://docs.ovh.com/ca/en/publiccloud/databases/getting-started/) to create a new Public Cloud Database.
 
 > [!primary]
 >
 > The use of private networks with databases is allowed for **Business** and **Enterprise** plans.
 >
-> ![Choose plan](../databases_01_order_control_panel/images/databases_01_order_control_panel-2022072719143198.png){.thumbnail}
+> ![Choose plan](images/databases_01_order_control_panel-2022072719143198.png){.thumbnail}
 >
 
 > [!primary]
@@ -82,7 +82,7 @@ Follow this [guide](https://docs.ovh.com/de/publiccloud/databases/getting-starte
 
 ### Step 3 - Configure your Public Cloud database instance to accept incoming connections
 
-Follow the *Configure your \<database> instance to accept incoming connections* guide of your selected database type available [here](https://docs.ovh.com/gb/en/publiccloud/databases/) to configure your service after installation.
+Follow the *Configure your \<database> instance to accept incoming connections* guide of your selected database type available [here](https://docs.ovh.com/ca/en/publiccloud/databases/) to configure your service after installation.
 
 > [!primary]
 >
@@ -95,7 +95,7 @@ The database is now connected to the virtual network, we can use it from any com
 
 ### Step 4 - Adding a Public Cloud Instance to the vRack
 
-Follow this [guide](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance) to create a new Public Cloud Instance
+Follow this [guide](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance) to create a new Public Cloud Instance
 
 
 > [!primary]
@@ -107,12 +107,12 @@ Follow this [guide](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-s
 
 > [!primary]
 >
->If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance_2).
+>If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance_2).
 >
 
 ### Step 5 - Example of verification with a Public Cloud Databases for Redis
 
-We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/) page.
+We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/) page.
 
 Connect to the instance via SSH:
 
