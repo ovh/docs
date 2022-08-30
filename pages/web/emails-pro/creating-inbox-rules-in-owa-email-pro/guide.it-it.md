@@ -1,5 +1,5 @@
 ---
-title: 'Regole della casella della posta in arrivo dall'interfaccia OWA'
+title: "Regole della casella della posta in arrivo dall'interfaccia OWA"
 slug: creating-inbox-rules-in-owa-email-pro
 section: 'Per iniziare'
 order: 3
