@@ -20,31 +20,38 @@ This guide covers the installation of the **ovhai** CLI. The CLI is the recommen
 
 ## Instructions
 
-### Step 1: Downloading the CLI
+### Step 1: Installing the CLI
 
-First, choose the cluster location for the **ovhai** CLI. You can choose from the following locations:
+You can choose the cluster location for the **ovhai** CLI:
 
 - Gravelines (`GRA`) in France
 - Beauharnois (`BHS`) in Canada
 
-In the following commands, replace `<region>` with `gra` or `bhs` depending on the desired location.
+> [!primary]
+>
+> Here by default we will use the region `gra` in each of the commands. You are free to replace it with `bhs` if you want.
+>
 
 You can then choose between two methods to install the `ovhai` CLI.
 
 #### Install ovhai CLI with a curl command
 
-You can install the `ovhai` CLI with a single command line by replacing `<region>` with the corresponding location.
+You can install the `ovhai` CLI with a single command line.
 
 ``` {.console}
-curl https://cli.<region>.training.ai.cloud.ovh.net/install.sh | bash
+curl https://cli.gra.training.ai.cloud.ovh.net/install.sh | bash
 ```
+
+Once done, go to **Step 2**.
+
+If you encounter any issue with the automated installation you can also install manually.
 
 #### Install ovhai CLI thanks to a zip file
 
-You can also install the cli by following the link below and replacing `<region>` with the cluster location in lower case.
+You can also install the cli by following the link below:
 
 ``` {.console}
-https://cli.<region>.training.ai.cloud.ovh.net
+https://cli.gra.training.ai.cloud.ovh.net
 ```
 
 After downloading the right zip for your platform, unzip it and add it to your `PATH`:
