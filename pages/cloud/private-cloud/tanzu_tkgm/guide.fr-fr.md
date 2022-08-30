@@ -191,7 +191,117 @@ Notez l'adresse **IP publique** que vous utilisez sur cette machine virtuelle et
 
 ### Déploiement du cluster **Tanzu Kubernetes Grid** sur votre infrastructure 
 
+Connectez-vous sur la machine virtuelle `Ubuntu-22.04_TKGm-1.5.4_with_x` ouvrez un terminal et exécutez cette commande pour créér une clé **RSA**
 
+```bash
+ssh-keygen -t rsa -b 4096 -C "youremail@yourdomain.com"
+```
+
+![03 Create TKG CLUSTER 01](images/03-create-tkg-cluster01.png){.thumbnail}
+
+deux fichier seront créés dans le dossier **~/.ssh** :
+
+* **id_rsa.pub** 
+* **id_rsa** 
+
+Restez sur la ligne de commande et lancer cette commande :
+
+```bash
+tanzu management-cluster create --ui --bind 192.168.0.199:8080
+```
+
+Le navigateur WEB va se lancer.
+
+![03 Create TKG CLUSTER 02](images/03-create-tkg-cluster02.png){.thumbnail}
+
+En dessous de **VMware vSphere** cliquez sur `Deploy`{.action}
+
+![03 Create TKG CLUSTER 03](images/03-create-tkg-cluster03.png){.thumbnail}
+
+Saisissez ces informations 
+
+* **VCENTER SERVER** : `nom FQDN du cluster VMware`.
+* **USERNAME** : `utilisateur du cluster VMware`.
+* **PASSWORD** : `mot de passe de l'utilisateur du  cluster VMware`.
+
+Ensuite cliquez sur `CONNECT`{.action}
+
+![03 Create TKG CLUSTER 04](images/03-create-tkg-cluster04.png){.thumbnail}
+
+Lors de la vérification du **SSL Thumbprint** cliquez sur `CONTINUE`{.action}.
+
+![03 Create TKG CLUSTER 05](images/03-create-tkg-cluster05.png){.thumbnail}
+
+Cliquez sur la `croix`{.action} pour fermer la fenêtre **vSphere 7.0.3 Environnement Detected**.
+
+![03 Create TKG CLUSTER 06](images/03-create-tkg-cluster06.png){.thumbnail}
+
+Copiez le contenu du fichier **~.ssh/id_rsa.pub** dans **SSH PUBLIC KEY** et cliquez sur  `NEXT`{.action}.
+
+![03 Create TKG CLUSTER 07](images/03-create-tkg-cluster07.png){.thumbnail}
+
+Choisissez à droite `Production`{.action}, prenez dans **INSTANCE TYPE** `large ...`.
+
+Ensuite saisissez ces valeurs :
+
+* **MANAGEMEMENT CLUSTER NAME (OPTIONAL)** : `tkgm-management-cluster`.
+* **CONTROL PLANE ENDPOINT** : `192.168.0.10`.
+
+Cliquez sur `NEXT`{.action} pour passer à l'étape suivante.
+
+![03 Create TKG CLUSTER 08](images/03-create-tkg-cluster08.png){.thumbnail}
+
+Cliquez sur `NEXT`{.action} 
+
+![03 Create TKG CLUSTER 09](images/03-create-tkg-cluster09.png){.thumbnail}
+
+Cliquez sur `NEXT`{.action} 
+
+![03 Create TKG CLUSTER 10](images/03-create-tkg-cluster10.png){.thumbnail}
+
+Choisissez ces options :
+
+* **VM FOLDER** : `Dossier de rangement des virtuelles`.
+* **DATASTORE** : `Stockage des machines virtuelles à mettre sur un stockage partagé`.
+* **CLUSTERS , HOSTS,  AND RESOURCE POOLS** : `Cluster1`.
+
+Ensuite cliquez sur `NEXT`{.action} 
+
+![03 Create TKG CLUSTER 11](images/03-create-tkg-cluster11.png){.thumbnail}
+
+Sélectionnez dans **NETWORK NAME** le `VLAN10`{.action}
+
+Ensuite cliquez sur `NEXT`{.action} 
+
+![03 Create TKG CLUSTER 12](images/03-create-tkg-cluster12.png){.thumbnail}
+
+Desactiver l'option `Enable Identity Management Settings`{.action} et cliquez sur `NEXT`{.action} 
+
+![03 Create TKG CLUSTER 13](images/03-create-tkg-cluster13.png){.thumbnail}
+
+Sélectionnez l'image OVA intégré au cluster `photon-3-kube-v1.22.9+vmware.1dans` **OS Image** et cliquez sur `NEXT`{.action} 
+
+![03 Create TKG CLUSTER 14](images/03-create-tkg-cluster14.png){.thumbnail}
+
+Décochez `Participate in the Customer Experience Improvement Program`{.action} et cliquez sur `NEXT`{.action} 
+
+![03 Create TKG CLUSTER 15](images/03-create-tkg-cluster15.png){.thumbnail}
+
+Cliquez sur `REVIEW CONFIGURATION`{.action} 
+
+![03 Create TKG CLUSTER 16](images/03-create-tkg-cluster16.png){.thumbnail}
+
+Vérifiez tous vos paramètres et cliquez sur `DEPLOY MANAGEMENT CLUSTER`{.action} 
+
+![03 Create TKG CLUSTER 17](images/03-create-tkg-cluster17.png){.thumbnail}
+
+Le déploiement du cluster **Tanzu Kubernetes Grid** est lancé veuillez attendre qu'il soit terminée.
+
+![03 Create TKG CLUSTER 18](images/03-create-tkg-cluster18.png){.thumbnail}
+
+Le cluster est déployé quand toutes les étapes du déploiement sont au vert.
+
+![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
 ## Aller plus loin
 
