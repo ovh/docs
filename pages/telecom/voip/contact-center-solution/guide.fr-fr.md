@@ -6,7 +6,7 @@ section: 'Numéros ou alias'
 order: 7
 ---
 
-**Dernière mise à jour le 04/08/2022**
+**Dernière mise à jour le 30/08/2022**
 
 ## Objectif
 
@@ -240,7 +240,7 @@ A des fins de lisibilité, vous pouvez choisir à tout moment d'afficher ou masq
 
 ![contact-center-solution](images/gerer-etapes-actions2021c.png){.thumbnail}
 
-#### Réordonner les étapes et actions
+#### Réordonner les étapes et actions <a name="reordonner-etapes"></a>
 
 Pour réordonner les étapes et actions de votre plan de configuration, cliquez sur le bouton `Réordonner les étapes et actions`{.action} situé en haut à gauche. Utilisez le bouton dédié pour modifier l'ordre de vos étapes et actions puis validez ce nouvel ordre en cliquant sur `Valider les modifications`{.action}.
 
@@ -264,6 +264,17 @@ Ainsi, dans l'exemple ci-dessous, un appel pendant les plages horaires définies
 <br>Un appel en dehors de ces plages horaires sera réceptionné sur le répondeur d'une ligne SIP OVHcloud (2).
 
 ![contact-center-solution](images/exemples-plages2021.png){.thumbnail}
+
+> **Cas particulier** <br> 
+> Vous souhaitez appliquer des conditions (jours exceptionnels, plages horaires, filtrages d'appels) à l'ensemble de vos étapes et de votre configuration.
+>
+> Pour que ces conditions s'appliquent à toutes vos étapes, créez une étape spécifique dédiée à ces conditions. Cette étape doit alors être la **première étape** de votre plan de configuration. Au besoin, utilisez le bouton pour [réordonner vos étapes](#reordonner-etapes).
+>
+> Configurez vos conditions et ajoutez une action correspondant à ces conditions. 
+> Ainsi, dans l'exemple ci-dessous, nous avons configuré des plages horaires de fermeture pendant lesquelles l'ensemble des appels est redirigé vers le répondeur d'une ligne.
+>
+> ![CCS etape 1 pour conditions](images/etape1-conditions.png){.thumbnail}
+
 
 ##### **Condition de « Jours exceptionnels »** <a name="jours-exceptionnels"></a>
 
