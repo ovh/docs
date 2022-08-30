@@ -2,7 +2,7 @@
 title: 'Delegare i diritti su un account email'
 slug: emailpro-delegation
 section: 'Per iniziare'
-order: 3
+order: 5
 ---
 
 **Ultimo aggiornamento: 24/10/2020**

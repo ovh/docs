@@ -3,6 +3,7 @@ title: 'Konfiguracja konta E-mail Pro'
 slug: pierwsza-konfiguracja-email-pro
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro'
 section: 'Informacje ogólne'
+order: 1
 ---
 
 **Ostatnia aktualizacja z dnia 07-04-2020**

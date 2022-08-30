@@ -2,7 +2,7 @@
 title: 'Tworzenie automatycznych podpisów'
 slug: email-automatic-signature-disclaimer
 section: 'Pierwsze kroki'
-order: 5
+order: 6
 ---
 
 **Ostatnia aktualizacja: 26-03-2020**

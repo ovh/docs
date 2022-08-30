@@ -2,7 +2,7 @@
 title: Ajouter un pied de page pour vos comptes Exchange 
 slug: email-automatic-signature-disclaimer
 section: Premiers pas
-order: 5
+order: 6
 ---
 
 **Dernière mise à jour le 26/03/2020**

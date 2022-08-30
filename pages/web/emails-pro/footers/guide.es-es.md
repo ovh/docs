@@ -2,7 +2,7 @@
 title: 'Crear firmas automáticas'
 slug: email-automatic-signature-disclaimer
 section: Primeros pasos
-order: 5
+order: 6
 ---
 
 **Última actualización: 26/3/2020**

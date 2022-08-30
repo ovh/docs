@@ -2,7 +2,7 @@
 title: 'Berechtigungen für einen E-Mail Account übertragen'
 slug: emailpro-delegation
 section: 'Allgemein'
-order: 3
+order: 5
 ---
 
 **Stand 24.10.2020**

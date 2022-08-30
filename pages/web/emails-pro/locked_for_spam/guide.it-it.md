@@ -2,7 +2,7 @@
 title: 'Che fare in caso di account bloccato per invio di Spam ?'
 slug: blocco-per-spam
 excerpt: 'Cosa fare se il tuo indirizzo email è bloccato per invio di Spam'
-section: 'Diagnostica Exchange'
+section: 'Diagnostica'
 order: 1
 ---
 

@@ -2,7 +2,7 @@
 title: 'Criar assinaturas automáticas'
 slug: email-automatic-signature-disclaimer
 section:Introdução
-order: 5
+order: 6
 ---
 
 

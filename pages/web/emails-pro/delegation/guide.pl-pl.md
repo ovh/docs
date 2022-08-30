@@ -2,7 +2,7 @@
 title: 'Delegowanie uprawnień do konta e-mail'
 slug: emailpro-delegation
 section: 'Pierwsze kroki'
-order: 3
+order: 5
 ---
 
 **Ostatnia aktualizacja z dnia 24/10/2020**

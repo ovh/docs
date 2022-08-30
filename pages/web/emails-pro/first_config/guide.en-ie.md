@@ -3,6 +3,7 @@ title: 'Configuring your Email Pro solution'
 slug: first-configuration-email-pro
 excerpt: 'Find out how to configure your Email Pro solution'
 section: General
+order: 1
 ---
 
 **Last updated 9th April 2020**

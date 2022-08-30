@@ -3,6 +3,7 @@ title: 'Konfiguration von E-Mail Pro'
 slug: erstkonfiguration
 excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail Pro Lösung einrichten'
 section: Allgemein
+order: 1
 ---
 
 **Letzte Aktualisierung am 22.04.2020**

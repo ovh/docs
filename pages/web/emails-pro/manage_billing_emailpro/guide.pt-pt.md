@@ -3,7 +3,7 @@ title: 'Gerir a faturação das contas E-mail Pro'
 slug: gestao-faturacao-emailpro
 excerpt: 'Saiba como gerir a faturação do serviço E-mail Pro.'
 section: Introdução
-order: 4
+order: 7
 ---
 
 > [!primary]

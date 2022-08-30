@@ -2,7 +2,7 @@
 title: 'Co zrobić, jeśli moje konto zostało zablokowane z powodu rozsyłania spamu?'
 slug: blokada-za-spam
 excerpt: 'Dowiedz się, jak należy zareagować, jeśli Twój adres e-mail zostanie zablokowany z powodu spamu'
-section: 'Diagnostyka Exchange'
+section: 'Diagnostyka'
 order: 1
 ---
 

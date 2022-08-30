@@ -2,7 +2,7 @@
 title: 'Delegar permisos en una cuenta de correo'
 slug: emailpro-delegation
 section: 'Primeros pasos'
-order: 3
+order: 5
 ---
 
 **Última actualización: 24/10/2020**

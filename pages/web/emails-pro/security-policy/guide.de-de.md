@@ -3,6 +3,7 @@ title: 'Sicherheitseinstellungen eines E-Mail-Dienstes verwalten'
 slug: passwort-sicherheitseinstellungen-verwalten
 excerpt: 'Erfahren Sie hier, wie Sie die Sicherheitseinstellungen Ihres E-Mail-Dienstes verwalten'
 section: 'Erste Schritte'
+order: 8
 ---
 
 **Letzte Aktualisierung am 22.04.2022**

@@ -2,7 +2,7 @@
 title: 'Guida all’utilizzo di Outlook Web App con un account email'
 slug: using-outlook-web-app-email-pro
 section: 'Per iniziare'
-order: 1
+order: 2
 ---
 
 **Ultimo aggiornamento: 25/06/2021**

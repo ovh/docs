@@ -2,7 +2,7 @@
 title: 'Delegar permissões numa conta de e-mail'
 slug: emailpro-delegation
 section: 'Funcionalidades das contas Exchange'
-order: 3
+order: 5
 ---
 
 **Última atualização: 24/10/2020**

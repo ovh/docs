@@ -2,7 +2,7 @@
 title: 'Creating automatic signatures'
 slug: email-automatic-signature-disclaimer
 section: 'General'
-order: 5
+order: 6
 ---
 
 **Last updated 26th March 2020**

@@ -2,7 +2,7 @@
 title: 'Utilizar o Outlook Web App com uma conta email'
 slug: using-outlook-web-app-email-pro
 section: 'Introdução'
-order: 1
+order: 2
 ---
 
 **Última atualização: 25/06/2021**
