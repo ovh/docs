@@ -1,7 +1,7 @@
 ---
 title: 'Criar assinaturas automáticas'
 slug: email-automatic-signature-disclaimer
-section:Introdução
+section: Introdução
 order: 6
 ---
 
