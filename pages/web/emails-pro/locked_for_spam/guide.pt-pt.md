@@ -1,6 +1,6 @@
 ---
 title: 'O que fazer no caso de uma conta bloqueada por spam?'
-slug: bloqueado-por-spam
+slug: blocked-for-spam
 excerpt: 'Descubra como proceder se o seu endereço tiver sido bloqueado por spam'
 section: 'Diagnóstico'
 order: 1

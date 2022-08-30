@@ -5,10 +5,3 @@ excertp: All you need to know about E-mail Pro
 sections: Generale, Configurazione di un client di posta
 order: 06
 ---
-
-> [!product-section]
->
-> ### Diagnostica
->
-> - [Che fare in caso di account bloccato per invio di Spam ?](https://docs.ovh.com/it/microsoft-collaborative-solutions/blocco-per-spam/)
->

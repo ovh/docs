@@ -1,6 +1,6 @@
 ---
 title: 'Was tun, wenn ein Account aufgrund Spamversands gesperrt wurde?'
-slug: blocked-wegen-spam
+slug: blocked-for-spam
 excerpt: 'Erfahren Sie hier, wie Sie vorgehen, wenn Ihre E-Mail-Adresse wegen Spamverdachts blockiert ist'
 section: Troubleshooting
 order: 1

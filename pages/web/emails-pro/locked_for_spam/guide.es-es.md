@@ -1,6 +1,6 @@
 ---
 title: '¿Qué hacer con una cuenta bloqueada debido a correo no deseado?'
-slug: bloqueo-por-correo-no-deseado
+slug: blocked-for-spam
 excerpt: 'Cómo proceder cuando su dirección ha sido bloqueada debido a correo no deseado'
 section: 'Diagnóstico'
 order: 1
