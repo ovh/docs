@@ -3,7 +3,7 @@ title: 'Sauvegarder une instance'
 slug: sauvegarder-une-instance
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud'
 section: "Gestion depuis l'espace client"
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 28/02/2022**

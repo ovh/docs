@@ -9,7 +9,7 @@ section: 'Rete e IP'
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 29/06/2022**
+**Ultimo aggiornamento: 29/08/2022**
 
 ## Obiettivo
 
@@ -35,7 +35,9 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 
 ## Procedura
 
-Se per installare il tuo server utilizzi un template per il sistema operativo Linux fornito da OVHcloud, ti accorgerai che il primo IPv6 (principale) è già configurato.
+Se per installare il tuo server utilizzi un template per il sistema operativo Linux fornito da OVHcloud, dovrai configurare il primo indirizzo IPv6 (l'indirizzo principale) sul server.
+
+Ad esempio, se abbiamo assegnato al tuo server l'intervallo IPv6: `2607:5300:xxxx:xxxx::/64` è possibile utilizzare come IPv6 principale del tuo server l'IPv6: `2607:5300:xxxx:xxx::1/64`.
 
 Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM), è necessario disporre di un IP Failover configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch.
 
@@ -45,8 +47,8 @@ Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM)
 >
 > Ad esempio:
 > 
-> - L’indirizzo IPv6 del server è 2607:5300:60:62ac::/64 o 2607:5300:60:62ac:0000:000:000:0000/64. L’IPv6_GATEWAY sarà perciò 2607:5300:60:62FF:FF:FF:FF:FF.
-> - L’indirizzo IPv6 del server è 2001:41D0:1:46e::/64 o 2001:41D0:0001:046e:0000:000:000:0000/64. L’IPv6_GATEWAY sarà perciò 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - L'intervallo IPv6 del server è `2607:5300:60:62ac::/64` o `2607:5300:60:62ac:0000:000:000:0000/64`. L’IPv6_GATEWAY sarà perciò `2607:5300:60:62FF:FF:FF:FF:FF`.
+> - L'intervallo IPv6 del server è `2001:41D0:1:46e::/64` o `2001:41D0:0001:046e:0000:000:000:0000/64`. L’IPv6_GATEWAY sarà perciò `2001:41D0:1:4FF:FF:FF:FF:FF`.
 >
 > Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/). Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
 >

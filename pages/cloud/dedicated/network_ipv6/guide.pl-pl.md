@@ -9,7 +9,7 @@ section: 'Sieć & IP'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja: 29-06-2022**
+**Ostatnia aktualizacja: 29-08-2022**
 
 ## Wprowadzenie
 
@@ -35,7 +35,9 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 
 ## W praktyce
 
-Jeśli instalujesz serwer przy użyciu udostępnionego przez OVHcloud szablonu systemu operacyjnego Linux, zauważysz gotowy, już skonfigurowany pierwszy (główny) adres IPv6.
+Jeśli instalujesz serwer przy użyciu udostępnionego przez OVHcloud szablonu systemu operacyjnego Linux, zauważysz gotowy, skonfiguruj na serwerze pierwszy (główny) adres IPv6.
+
+Przykładowo, jeśli przypisaliśmy do Twojego serwera zakres IPv6: `2607:5300:xxxx:xxxx::/64` możesz używać jako głównego adresu IPv6 Twojego serwera IPv6: `2607:5300:xxxx:xxxx::1/64`.
 
 Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli chcesz z niego korzystać na wirtualnej maszynie), musisz mieć skonfigurowany adres IP Failover z vMAC. W przeciwnym razie nie będziemy mogli przekierować adresu IPv6 przez routery/switche.
 
@@ -45,8 +47,8 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 >
 > Na przykład:
 > 
-> - Adres IPv6 serwera to 2607:5300:60:62ac::/64 lub 2607:5300:60:62ac:0000:0000:0000:0000/64. Dlatego bramą IPv6_GATEWAY jest 2607:5300:60:62FF:FF:FF:FF:FF.
-> - Adres IPv6 serwera to 2001:41D0:1:46e::/64 lub 2001:41D0:0001:046e:0000:0000:0000:0000/64. Dlatego bramą IPv6_GATEWAY jest 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - Zakres IPv6 serwera to `2607:5300:60:62ac::/64` lub `2607:5300:60:62ac:0000:0000:0000:0000/64`. Dlatego bramą IPv6_GATEWAY jest `2607:5300:60:62FF:FF:FF:FF:FF`.
+> - Zakres IPv6 serwera to `2001:41D0:1:46e::/64` lub `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Dlatego bramą IPv6_GATEWAY jest `2001:41D0:1:4FF:FF:FF:FF:FF`.
 >
 > Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
 >

@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 section: 'Network Management'
 ---
 
-**Last updated 29th June 2022**
+**Last updated 26th August 2022**
 
 ## Objective
 
@@ -31,7 +31,9 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 
 ## Instructions
 
-If you are using an OVHcloud-provided Linux OS template to install your server, you will see that you already have the first (main) IPv6 configured out of the box.
+If you are using an OVHcloud-provided Linux OS template to install your server, you will need to configure the first (main) IPv6 on the server.
+
+For example, if we have assigned to your server the IPv6 range: `2607:5300:xxxx:xxxx::/64` you may use as main IPv6 of your server the IPv6: `2607:5300:xxxx:xxxx::1/64`.
 
 If you want to have more than one IPv6 configured on your server (or want to use it on a VM) you will need to have a failover IP configured with a vMAC. Otherwise, the IPv6 cannot be routed by our routers/switches.
 
@@ -41,8 +43,8 @@ If you want to have more than one IPv6 configured on your server (or want to use
 >
 > For example:
 > 
-> - The IPv6 address of the server is 2607:5300:60:62ac::/64 or 2607:5300:60:62ac:0000:0000:0000:0000/64. The IPv6_GATEWAY will therefore be 2607:5300:60:62FF:FF:FF:FF:FF.
-> - The IPv6 address of the server is 2001:41D0:1:46e::/64 or 2001:41D0:0001:046e:0000:0000:0000:0000/64. The IPv6_GATEWAY will therefore be 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - The IPv6 range of the server is `2607:5300:60:62ac::/64` or `2607:5300:60:62ac:0000:0000:0000:0000/64`. The IPv6_GATEWAY will therefore be `2607:5300:60:62FF:FF:FF:FF:FF`.
+> - The IPv6 range of the server is `2001:41D0:1:46e::/64` or `2001:41D0:0001:046e:0000:0000:0000:0000/64`. The IPv6_GATEWAY will therefore be `2001:41D0:1:4FF:FF:FF:FF:FF`.
 >
 > The safe way to retrieve the networking information for your server is to [use the OVHcloud API](https://docs.ovh.com/asia/en/api/first-steps-with-ovh-api/). Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
 >
