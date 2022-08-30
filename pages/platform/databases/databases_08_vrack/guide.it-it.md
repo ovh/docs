@@ -1,5 +1,5 @@
 ---
-title: Configure your Private Network (cross DB)
+title: Configure your Private Network
 slug: configure-vrack
 excerpt: Connect a Public Cloud Database to vRack
 section: General guides

@@ -1,5 +1,5 @@
 ---
-title: Configure your Private Network (cross DB)
+title: Configure your Private Network
 slug: configure-vrack
 excerpt: Connect a Public Cloud Database to vRack
 section: General guides
@@ -92,6 +92,8 @@ Follow the *Configure your \<database> instance to accept incoming connections* 
 >
 >![Add virtual network subnet](images/redis_08_vrack_19.png){.thumbnail}
 >
+
+![](images/databases_08_vrack-20220830153420143.png)
 
 The database is now connected to the virtual network, we can use it from any component that is connected to the same vRack.
 
