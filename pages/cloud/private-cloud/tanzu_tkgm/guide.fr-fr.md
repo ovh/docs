@@ -33,17 +33,17 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 
 ## En pratique
 
-Nous allons installer **VMware Tanzu Kubernetes Grid** dans un cluster PCC sur le VLAN10 qui a ces paramètres:
+Nous allons installer **VMware Tanzu Kubernetes Grid** dans un cluster **Hosted Private Cloud Powered by VMware** sur le VLAN10 avec ces paramètres :
 
 * **Lan** : `192.168.0.0/24`.
 * **Etendue DHCP** : `192.168.0.50 -> 192.168.0.100`.
 * **Passerelle** : `192.168.0.254`.
 
-### Intégration du modèle OVA contenant le modèle de machine virtuelle **Tanzu KUBERNETES Grid** sous **Photon OS**
+### Intégration du modèle OVA pour **Tanzu KUBERNETES Grid** sous **Photon OS**
 
-VMware fourni une machine virtuelle sous forme de modèle OVA qui contient tout les éléments pour faire fonctionner un noeud du cluster **Tanzu Kubernetes Grid**. 
+VMware fourni une machine virtuelle sous forme de modèle OVA qui contient tout les éléments pour faire fonctionner un nœud du cluster **Tanzu Kubernetes Grid**. 
 
-Télécharger le fichier sur ce lien [TKGm 1.5.4](https://plik.fromsync.net/file/yMsZyou6CyYCqlQn/Es4foCOnmvvWBMsq/photon-3-kube-v1.22.9+vmware.1-tkg.1-06852a87cc9526f5368519a709525c68.ova), ensuite suivez ces instructions
+Télécharger le fichier sur ce lien [TKGm 1.5.4](https://plik.fromsync.net/file/yMsZyou6CyYCqlQn/Es4foCOnmvvWBMsq/photon-3-kube-v1.22.9+vmware.1-tkg.1-06852a87cc9526f5368519a709525c68.ova), ensuite suivez ces instructions :
 
 
 Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster`{.action}, ensuite choisissez sur `Déployer un modèle OVF`{.action}.
@@ -94,7 +94,7 @@ Allez sur l'onglet `Surveiller`{.action} et cliquez sur `Tâches`{.action}.
 
 ![01 integrate TKGM OVA 12](images/01-integrate-tkgm-ova12.png){.thumbnail}
 
-attendez que Les tâches `Déployer un modèle OVF` et `Importer un modèle OVF` soient terminées.
+Attendez que Les tâches `Déployer un modèle OVF` et `Importer un modèle OVF` soient terminées.
 
 ![01 integrate TKGM OVA 13](images/01-integrate-tkgm-ova13.png){.thumbnail}
 
@@ -102,27 +102,27 @@ Faites un clic droit sur la `Machine virtuelle déployée`{.action} et choisisse
 
 ![01 integrate TKGM OVA 14](images/01-integrate-tkgm-ova14.png){.thumbnail}
 
-Répondez `OUI`{.action}.
+Répondez `OUI`{.action} pou convertir la machine virtuelle.
 
 ![01 integrate TKGM OVA 15](images/01-integrate-tkgm-ova15.png){.thumbnail}
 
-Allez dans les `Modèles`{.action} pour voir le modèle créé. Ce modèle sera utilisé lors du déploiement du cluster **Tanzu Kubernetes Grid**.
+Allez dans `Machines virtuelles (et modèles)`{.action} pour voir le modèle créé. Ce modèle sera utilisé lors du déploiement du cluster **Tanzu Kubernetes Grid**.
 
 ![01 integrate TKGM OVA 16](images/01-integrate-tkgm-ova16.png){.thumbnail}
 
 ### Installation de la machine virtuelle **Bootstrap** fourni par OVHcloud
 
-La configuration d'une cluster **Tanzu Kubernetes Grid** se fait à partir d'un outil en ligne de commande qui s'installe à l'aide d'une procédure fastidieuse que vous pouvez utiliser en allant sur ce lien [Installation manuelle de l'outil CLI pour le déploiement de Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html. ou utiliser la machine virtuelle déja préparée par OVHcloud.
+Suivez ces instructions pour déployer la machine virtuelle **Bootstrap**. 
 
-Suivez ces instructions pour déployer la machine virtuelles **Bootstrap**.
+Cette machine virtuelle a été créée par OVHcloud à partir de cette documentation [Installation manuelle de l'outil CLI pour le déploiement de **Tanzu Kubernetes GRID**](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 
-Télécharger le modèle OVA de cette machine virtuelle à cette adresse [Ubuntu & TKGm with Gnome](https://plik.fromsync.net/file/kHp0z2X3lpTJi3RB/4M3KLcF9nJLT9Emm/Ubuntu-22.04_TKGm-1.5.4_with_x.ova)
+Télécharger le modèle OVA de cette machine virtuelle à partir de cette adresse [Ubuntu & TKGm with Gnome](https://plik.fromsync.net/file/kHp0z2X3lpTJi3RB/4M3KLcF9nJLT9Emm/Ubuntu-22.04_TKGm-1.5.4_with_x.ova)
 
 Au travers de l'interface vSphere faites un clic droit sur le `cluster`{.action} et choisissez dans le menu `Déployer un modèle OVF`{.action}.
 
 ![02 Add Bootstrapvm 01](images/02-add-bootstrap-vm-from-ova01.png){.thumbnail}
 
-Séléctionnez Sélectionnez `Fichier local`{.action} ensuite cliquez sur `TÉLÉCHARGER DES FICHIERS`{.action}.
+Sélectionnez `Fichier local`{.action} ensuite cliquez sur `TÉLÉCHARGER DES FICHIERS`{.action}.
 
 ![02 Add Bootstrapvm 02](images/02-add-bootstrap-vm-from-ova02.png){.thumbnail}
 
@@ -185,9 +185,9 @@ Vous verrez la console de la machine virtuelle.
 
 ### Autorisation d'accès au cluster PCC depuis la machine virtuelle **Bootstrap**
 
-les outils de configurations et d'administration de **Tanzu Kubernetes Grid** sont installés sur la machine virtuelle nouvellement installée. Cette machine virtuelle doit pouvoir aller sur Internet et aussi se connecter au cluster vSphere.
+Les outils de configuration et d'administration de **Tanzu Kubernetes Grid** sont installés sur la machine virtuelle nouvellement installée. Cette machine virtuelle doit pouvoir se connecter à Internet et au cluster vSphere.
 
-Notez l'adresse **IP publique** que vous utilisez sur cette machine virtuelle et aidez vous de guide [Autoriser des IP à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) pour permettre l'accès à l'interface vCenter depuis la nouvelle machine virtuelle créée.
+Notez l'adresse **IP publique** que vous utilisez sur cette machine virtuelle et aidez-vous de ce guide [Autoriser des IP à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) pour donner l'accès à l'interface WEB de vSphere depuis la nouvelle machine virtuelle créée.
 
 ### Déploiement du cluster **Tanzu Kubernetes Grid** sur votre infrastructure 
 
@@ -199,12 +199,12 @@ ssh-keygen -t rsa -b 4096 -C "youremail@yourdomain.com"
 
 ![03 Create TKG CLUSTER 01](images/03-create-tkg-cluster01.png){.thumbnail}
 
-deux fichier seront créés dans le dossier **~/.ssh** :
+Deux fichiers sont créés dans le dossier **~/.ssh** :
 
 * **id_rsa.pub** 
 * **id_rsa** 
 
-Restez sur la ligne de commande et lancer cette commande :
+Restez sur la console et lancer cette commande :
 
 ```bash
 tanzu management-cluster create --ui --bind 192.168.0.199:8080
@@ -236,11 +236,11 @@ Cliquez sur la `croix`{.action} pour fermer la fenêtre **vSphere 7.0.3 Environn
 
 ![03 Create TKG CLUSTER 06](images/03-create-tkg-cluster06.png){.thumbnail}
 
-Copiez le contenu du fichier **~.ssh/id_rsa.pub** dans **SSH PUBLIC KEY** et cliquez sur  `NEXT`{.action}.
+Copiez le contenu du fichier **~.ssh/id_rsa.pub** dans **SSH PUBLIC KEY** et cliquez sur `NEXT`{.action}.
 
 ![03 Create TKG CLUSTER 07](images/03-create-tkg-cluster07.png){.thumbnail}
 
-Choisissez à droite `Production`{.action}, prenez dans **INSTANCE TYPE** `large ...`.
+Choisissez à droite `Production`{.action}, prenez dans **INSTANCE TYPE** `large etc...`.
 
 Ensuite saisissez ces valeurs :
 
@@ -261,7 +261,7 @@ Cliquez sur `NEXT`{.action}
 
 Choisissez ces options :
 
-* **VM FOLDER** : `Dossier de rangement des virtuelles`.
+* **VM FOLDER** : `Dossier de rangement des machines virtuelles`.
 * **DATASTORE** : `Stockage des machines virtuelles à mettre sur un stockage partagé`.
 * **CLUSTERS , HOSTS,  AND RESOURCE POOLS** : `Cluster1`.
 
@@ -275,11 +275,11 @@ Ensuite cliquez sur `NEXT`{.action}
 
 ![03 Create TKG CLUSTER 12](images/03-create-tkg-cluster12.png){.thumbnail}
 
-Desactiver l'option `Enable Identity Management Settings`{.action} et cliquez sur `NEXT`{.action} 
+Désactivez l'option `Enable Identity Management Settings`{.action} et cliquez sur `NEXT`{.action} 
 
 ![03 Create TKG CLUSTER 13](images/03-create-tkg-cluster13.png){.thumbnail}
 
-Sélectionnez l'image OVA intégré au cluster `photon-3-kube-v1.22.9+vmware.1dans` **OS Image** et cliquez sur `NEXT`{.action} 
+Sélectionnez l'image OVA intégrée au cluster `photon-3-kube-v1.22.9+vmware.1dans` **OS Image** et cliquez sur `NEXT`{.action} 
 
 ![03 Create TKG CLUSTER 14](images/03-create-tkg-cluster14.png){.thumbnail}
 
@@ -295,7 +295,7 @@ Vérifiez tous vos paramètres et cliquez sur `DEPLOY MANAGEMENT CLUSTER`{.actio
 
 ![03 Create TKG CLUSTER 17](images/03-create-tkg-cluster17.png){.thumbnail}
 
-Le déploiement du cluster **Tanzu Kubernetes Grid** est lancé veuillez attendre qu'il soit terminée.
+Le déploiement du cluster **Tanzu Kubernetes Grid** est lancé veuillez attendre qu'il soit terminé.
 
 ![03 Create TKG CLUSTER 18](images/03-create-tkg-cluster18.png){.thumbnail}
 
