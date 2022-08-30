@@ -34,7 +34,7 @@ Chaque projet cloud a donc sa propre facture rassemblant l'ensemble des ressourc
 ### Exemple
 
 > [!warning]
-> Veuillez noter qu'une instance horaire est facturée à l'heure, indépendamment du moment où l'instance est créée. Si vous souhaitez bénéficier de 60 minutes d'utilisation, vous devez démarrer votre Instance à la marque de l'heure.
+> Veuillez noter qu'une instance horaire est facturée à l'heure, indépendamment du moment où l'instance est créée. Si vous souhaitez bénéficier de 60 minutes d'utilisation pour une heure de facturation, vous devez démarrer votre instance à la marque de l'heure, par exemple à 13h00 ou 14h00.
 >
 
 Un exemple permettera de mieux comprendre le fonctionnement.
