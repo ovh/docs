@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 26/08/2022**
+**Dernière mise à jour le 27/08/2022**
 
 ## Objectif
 
@@ -118,12 +118,73 @@ Suivez ces instructions pour déployer la machine virtuelles **Bootstrap**.
 
 Télécharger le modèle OVA de cette machine virtuelle à cette adresse [Ubuntu & TKGm with Gnome](https://plik.fromsync.net/file/kHp0z2X3lpTJi3RB/4M3KLcF9nJLT9Emm/Ubuntu-22.04_TKGm-1.5.4_with_x.ova)
 
-ALlez sur votre interface vSphere 
+Au travers de l'interface vSphere faites un clic droit sur le `cluster`{.action} et choisissez dans le menu `Déployer un modèle OVF`{.action}.
 
+![02 Add Bootstrapvm 01](images/02-add-bootstrap-vm-from-ova01.png){.thumbnail}
 
+Séléctionnez Sélectionnez `Fichier local`{.action} ensuite cliquez sur `TÉLÉCHARGER DES FICHIERS`{.action}.
 
+![02 Add Bootstrapvm 02](images/02-add-bootstrap-vm-from-ova02.png){.thumbnail}
+
+Choisissez le `fichier`{.action}, ensuite cliquez sur `Ouvrir`{.action}.
+
+![02 Add Bootstrapvm 03](images/02-add-bootstrap-vm-from-ova03.png){.thumbnail}
+
+Cliquez sur `SUIVANT`{.action}.
+
+![02 Add Bootstrapvm 04](images/02-add-bootstrap-vm-from-ova04.png){.thumbnail}
+
+Laissez le positionnement par défaut et cliquez sur `SUIVANT`{.action}.
+
+![02 Add Bootstrapvm 05](images/02-add-bootstrap-vm-from-ova05.png){.thumbnail}
+
+Gardez le cluster1 et cliquez sur `SUIVANT`{.action}.
+
+![02 Add Bootstrapvm 06](images/02-add-bootstrap-vm-from-ova06.png){.thumbnail}
+
+Cliquez sur `SUIVANT`{.action} pour valider les choix.
+
+![02 Add Bootstrapvm 07](images/02-add-bootstrap-vm-from-ova07.png){.thumbnail}
+
+Sélectionnez un `Stockage partagé en NFS v3`{.action} et cliquez sur `SUIVANT`{.action}.
+
+![02 Add Bootstrapvm 08](images/02-add-bootstrap-vm-from-ova08.png){.thumbnail}
+
+Choisissez dans **Réseau de destination** `VLAN10` et cliquez sur `SUIVANT`{.action}.
+
+![02 Add Bootstrapvm 09](images/02-add-bootstrap-vm-from-ova09.png){.thumbnail}
+
+Saisissez ces informations dans **Networking**
+
+* **Hostname** : `bootstrap`
+* **IP Address** : `192.168.0.199`
+* **Network CIDR Prefix** : `24`
+* **Gateway** : `192.168.0.254`
+* **Dns** : `1.1.1.1,1.0.0.1`
+
+Saisissez et confirmez le mot de passe dans **OS Credentials** ensuite cliquez sur `SUIVANT`{.action}.
+
+![02 Add Bootstrapvm 10](images/02-add-bootstrap-vm-from-ova10.png){.thumbnail}
+
+Cliquez sur `TERMINER`{.action}.
+
+![02 Add Bootstrapvm 11](images/02-add-bootstrap-vm-from-ova11.png){.thumbnail}
+
+Faites un clic droit sur la `Machine virtuelle créée`{.action} allez dans `Alimentation`{.action} et cliquez sur `Mettre sous tension`{.action}.
+
+![02 Add Bootstrapvm 12](images/02-add-bootstrap-vm-from-ova12.png){.thumbnail}
+
+Positionnez-vous sur la `Machine virtuelle créée`{.action} et cliquez sur `LANCER LA CONSOLE WEB`{.action}.
 
 ### Autorisation d'accès au cluster PCC depuis la machine virtuelle **Bootstrap**
+
+les outils de configurations sont installés sur la machine virtuelle nouvellement démarrée elle doit pouvoir aller sur Internet et aussi se connecter au cluster vSphere, il faut s'assurer dans l'espace client OVHcloud que ce soit possible.
+
+
+
+
+
+
 
 
 ### Déploiement du cluster **Tanzu Kubernetes Grid** sur votre infrastructure 
