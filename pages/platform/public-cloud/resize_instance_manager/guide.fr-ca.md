@@ -2,8 +2,8 @@
 title: Redimensionner une instance
 slug: resize-an-instance-manager
 excerpt: "Découvrez comment redimensionner une instance depuis l'espace client OVHcloud"
-section: Gestion depuis l’espace client
-order: 6
+section: "Gestion depuis l'espace client"
+order: 02
 ---
 
 **Dernière mise à jour le 24/08/2022**
