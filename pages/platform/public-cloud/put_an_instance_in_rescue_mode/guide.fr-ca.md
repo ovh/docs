@@ -4,7 +4,7 @@ slug: passer-une-instance-en-mode-rescue
 excerpt: 'Ce guide vous explique comment activer le mode rescue pour votre instance Public Cloud'
 legacy_guide_number: 2029
 section: "Gestion depuis l'espace client"
-order: 3
+order: 4
 ---
 
 **Dernière mise à jour le 01/08/2022**
