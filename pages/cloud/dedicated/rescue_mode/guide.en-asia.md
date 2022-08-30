@@ -33,7 +33,7 @@ Backing up your data should be the first step in rescue mode if you do not alrea
 ## Instructions
 
 > [!warning]
-> Please note that if you have set a default SSH key in your control panel for dedicated products, you will not receive a root password when rebooting a server rescue mode. In this case, you must first disable the key before proceeding. To do so, please consult this [section](../creating-ssh-keys-dedicated/#disablesshkey) of the relevant guide.
+> Please note that if you have set a default SSH key in your control panel for dedicated products, you will not receive a root password when rebooting a server in rescue mode. In this case, you must first disable the key before proceeding. To do so, please consult this [section](../creating-ssh-keys-dedicated/#disablesshkey) of the relevant guide.
 > 
 
 You can activate rescue mode only from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). Go to the `Bare Metal Cloud`{.action} section and then select the server on which to enable rescue mode from **Dedicated Servers**.
