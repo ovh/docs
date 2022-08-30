@@ -80,9 +80,9 @@ Follow this [guide](https://docs.ovh.com/de/publiccloud/databases/getting-starte
 >
 
 
-### Step 3 - Configure your Public Cloud instance to accept incoming connections
+### Step 3 - Configure your Public Cloud database instance to accept incoming connections
 
-Follow the Configure your instance to accept incoming connections guide of your selected database type available [here](https://docs.ovh.com/gb/en/publiccloud/databases/) to configure your service after installation.
+Follow the *Configure your \<database> instance to accept incoming connections* guide of your selected database type available [here](https://docs.ovh.com/gb/en/publiccloud/databases/) to configure your service after installation.
 
 > [!primary]
 >
