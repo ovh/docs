@@ -185,16 +185,9 @@ Vous verrez la console de la machine virtuelle.
 
 ### Autorisation d'accès au cluster PCC depuis la machine virtuelle **Bootstrap**
 
-les outils de configurations sont installés sur la machine virtuelle nouvellement démarrée elle doit pouvoir aller sur Internet et aussi se connecter au cluster vSphere, il faut s'assurer dans l'espace client OVHcloud que ce soit possible.
+les outils de configurations et d'administration de **Tanzu Kubernetes Grid** sont installés sur la machine virtuelle nouvellement installée. Cette machine virtuelle doit pouvoir aller sur Internet et aussi se connecter au cluster vSphere.
 
-
-
-
-
-
-
-
-
+Notez l'adresse **IP publique** que vous utilisez sur cette machine virtuelle et aidez vous de guide [Autoriser des IP à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) pour permettre l'accès à l'interface vCenter depuis la nouvelle machine virtuelle créée.
 
 ### Déploiement du cluster **Tanzu Kubernetes Grid** sur votre infrastructure 
 
