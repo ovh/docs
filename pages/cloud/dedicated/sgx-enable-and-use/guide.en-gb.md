@@ -5,7 +5,7 @@ excerpt: 'Find out how to enable SGX on your dedicated server and install the Li
 section: 'Advanced use'
 ---
 
-**Last updated 3rd June 2022**
+**Last updated 31st August 2022**
 
 ## Objective
 
@@ -49,15 +49,25 @@ You can either choose to enable SGX with a specific amount of reserved memory or
 
 ![SGX enabling](images/manage_sgx.png){.thumbnail}
 
+A confirmation pop-up will appear. Please confirm you have understood that activating Intel SGX technology will make your server reboot.
+
+![activation SGX](images/confirmation-popup_sgx.png){.thumbnail}
+
+> [!warning]
+>
+> This will cause your server to reboot once or several times, depending on your server model.
+
 #### Disabling the option
 
 Scroll down to the "Advanced features" box and click on `...`{.action} next to "Security - Intel SGX (Software Guard Extensions)". Select `Modify SGX`{.action} from the drop-down menu. Choose the `Disable`{.action} option and then click `Confirm`{.action}.
 
-![SGX disabling](images/disable_sgx.png){.thumbnail}  
+![SGX disabling](images/disable_sgx.png){.thumbnail}
 
-This will cause your server to reboot. Confirm in the popup window and allow a few minutes before accessing your server again.
+> [!warning]
+>
+> This will cause your server to reboot once or several times, depending on your server model.
 
-Continue with [Step 4](./#step-4-installing-the-sgx-software-stack_1) of the instructions below.
+Continue with [Step 3](#sgx-softwares) of the instructions below.
 
 ### Using the OVHcloud API
 
@@ -83,6 +93,10 @@ Verify that your service has the SGX option, by calling:
 
 Enable SGX using the server name:
 
+> [!warning]
+>
+> This will cause your server to reboot once or several times, depending on your server model.
+
 > [!api]
 >
 > @api {POST} /dedicated/server/{serviceName}/biosSettings/sgx/configure
@@ -105,11 +119,7 @@ You can verify that the status is set to enabled:
 
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 
-#### Step 3: Rebooting to apply the new BIOS settings
-
-The server needs to reboot before continuing.
-
-### Step 4: Installing the SGX software stack
+### Step 3: Installing the SGX software stack <a name="sgx-softwares"></a>
 
 Use the following commands to install Intel's driver and SDK to be able to develop and run SGX applications.  
 
@@ -147,11 +157,11 @@ chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
 sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ```
 
-### Step 5: Rebooting to finish the installation
+### Step 4: Rebooting to finish the installation
 
 The server needs to reboot before continuing.
 
-### Step 6: Validating the installation (optional)
+### Step 5: Validating the installation (optional)
 
 You can use a sample application to validate the installation. Build one of the sample apps provided:
 
