@@ -8,6 +8,11 @@ order: 05
 
 **Last updated August 29th, 2022**
 
+> [!success]
+>
+> AI Apps changes name to AI Deploy.
+>
+
 ## Objective
 
 The purpose of this tutorial is to deploy an application for sketch recognition using a trained model.

@@ -6,7 +6,7 @@ section: General information
 order: 100
 ---
 
-**Last updated August 29th, 2022.**
+**Last updated 1st September, 2022.**
 
 ## Objective
 

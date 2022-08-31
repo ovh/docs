@@ -8,6 +8,11 @@ order: 02
 
 **Last updated August 29th, 2022.**
 
+> [!success]
+>
+> AI Apps changes name to AI Deploy.
+>
+
 ## Objective
 
 OVHcloud provides a set of managed AI tools designed for building your machine learning projects.

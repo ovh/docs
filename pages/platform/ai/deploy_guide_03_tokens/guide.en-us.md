@@ -6,7 +6,12 @@ section: AI Deploy guides
 order: 03
 ---
 
-**Last updated August 29th, 2022.**
+**Last updated 1st September, 2022.**
+
+> [!success]
+>
+> AI Apps changes name to AI Deploy.
+>
 
 ## Objective
 
