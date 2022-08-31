@@ -107,7 +107,7 @@ If you have a 2014 VPS, you may encounter *error 1006*. Going through the API us
 >
 > API call parameters:
 >
->> > **serviceName** *
+>> > **serviceName**
 >> >
 >> >> ID of your VPS in the format vpsxxxxx.ovh.net
 >> >
@@ -141,7 +141,7 @@ If problems arise with the KVM, here is the recommended API for accessing the KV
 >
 > API call parameters:
 >
->> > **serviceName** *
+>> > **serviceName**
 >> >
 >> >> ID of your VPS in the format vpsxxxxx.ovh.net
 >

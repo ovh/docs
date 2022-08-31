@@ -6,7 +6,7 @@ excerpt: 'Saiba mais sobre o método de faturação dos produtos Public Cloud'
 order: 2
 ---
 
-**Última atualização: 21/09/2021**
+**Última atualização: 30/08/2022**
 
 ## Introdução
 
@@ -37,22 +37,26 @@ Todos os projetos cloud têm a sua própria faturação, que reúne todos os rec
 
 ### Exemplo
 
+> [!warning]
+Tenha em conta que uma instância horária é faturada à hora, independentemente do momento em que a instância é criada. Se pretender usufruir de 60 minutos de utilização durante uma hora de faturação, deve iniciar a sua instância à marca da hora, por exemplo às 13h00 ou às 14h00.
+>
+
 Este exemplo permitirá compreender melhor o funcionamento:
 
 - um utilizador lança uma instância B2-15 no dia 4 do mês, às 09h40
 - no dia 8 do mês, às 10h00, adiciona 250 GB de volume adicional (Classic Volume)
 - elimina tudo no dia 12 do mesmo mês às 16h30, depois de concluir o que tinha de fazer com esses recursos
 
-Para a instância, das 09h40 do dia 4 às 16h30 do dia 12 do mesmo mês, existem 176 horas iniciadas, que são faturadas a 0,111€ por hora.
+Para a instância, das 09h40 do dia 4 às 16h30 do dia 12 do mesmo mês, existem 200 horas iniciadas, que são faturadas a 0,111€ por hora.
 
 Para o armazenamento, das 10h00 do dia 8 às 16h30 do dia 12 do mesmo mês, existem 103 horas iniciadas, Cada GB do Classic Volume tem um custo de 0,04€/mês (0,0000555556€/hora).
 
 No final do mês, este será o total da fatura:
 
-- 176 x 0,111
+- 200 x 0,111
 - 103 x 250 x 0,0000555556
 
-Ou seja, 20,97€.
+Ou seja, 23,63€.
 
 > [!primary]
 >

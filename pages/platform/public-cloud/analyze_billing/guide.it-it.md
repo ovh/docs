@@ -7,7 +7,7 @@ legacy_guide_number: g2031
 order: 2
 ---
 
-**Ultimo aggiornamento: 21/09/2021**
+**Ultimo aggiornamento: 30/08/2022**
 
 ## Obiettivo
 
@@ -37,22 +37,26 @@ Ogni progetto Cloud ha quindi una fattura che riunisce l’insieme delle risorse
 
 ### Esempio
 
+> [!warning]
+> Ti ricordiamo che un'istanza oraria viene fatturata all'ora, indipendentemente dal momento in cui viene creata l'istanza. Per usufruire di 60 minuti di utilizzo per un'ora di fatturazione, avvia la tua istanza alla marca dell'ora, ad esempio alle 13:00 o alle 14:00.
+>
+
 Ecco un esempio per comprendere meglio il funzionamento:
 
 - un utente avvia un’istanza B2-15 il 4 del mese alle 9:40
 - l’8 del mese, alle 10, aggiunge 250 GB di volume supplementare (Classic Volume)
 - elimina tutte le risorse il 12 dello stesso mese alle 16:30, dopo aver concluso le operazioni per cui le risorse erano necessarie
 
-Per l’istanza, dal 4 del mese alle 9:40 al 12 dello stesso mese alle 16:30, le ore iniziate sono 176. La tariffa oraria è pari a 0,111 €.
+Per l’istanza, dal 4 del mese alle 9:40 al 12 dello stesso mese alle 16:30, le ore iniziate sono 200. La tariffa oraria è pari a 0,111 €.
 
 Per lo storage, dall’8 del mese alle 10:00 al 12 dello stesso mese alle 16:30, le ore iniziate sono 103. La tariffa del Classic Volume è pari a 0,04 €/mese (0,0000555556 €/ora).
 
 Alla fine del mese, la fattura sommerà:
 
-- 176 x 0,111
+- 200 x 0,111
 - 103 x 250 x 0,0000555556
 
-Pari a 20,99€ IVA incl.
+Pari a 23,63€ IVA incl.
 
 > [!primary]
 >

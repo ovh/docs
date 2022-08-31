@@ -102,7 +102,7 @@ Once the vRack is activated, you will find this service under the name "pn-xxxxx
 
 #### From the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){ and open your `Public Cloud`{.action} project.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and open your `Public Cloud`{.action} project.
 
 Click on `Private Network`{.action} in the left side menu.
 

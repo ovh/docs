@@ -6,7 +6,7 @@ excerpt: 'Cómo interpretar la facturación de las soluciones Public Cloud'
 order: 02
 ---
 
-**Última actualización: 21/09/2021**
+**Última actualización: 30/08/2022**
 
 ## Introducción
 
@@ -36,22 +36,26 @@ Cada proyecto cloud tiene asignada su propia factura, emitida el primer día del
 
 ### Caso práctico
 
+> [!warning]
+> Tenga en cuenta que una instancia por horas se factura por horas, independientemente del momento en el que se cree la instancia. Si desea disfrutar de 60 minutos de uso por una hora de facturación, debe iniciar su instancia con la marca de la hora, por ejemplo a las 13:00 o a las 14:00.
+>
+
 El siguiente ejemplo explica el funcionamiento de la facturación cloud:
 
 - un usuario activa una instancia B2-15 el día 4 del mes a las 9:40;
 - el día 8 del mismo mes, a las 10:00, añade 250 GB de espacio adicional (volumen Classic);
 - el día 12 del mismo mes, a las 16:30, elimina ambos recursos.
 
-Para la instancia, desde el día 4 del mes a las 9:40 hasta el día 12 del mismo mes a las 16:30, se contabilizan un total de 176 horas comenzadas. Estas horas se facturan con un precio de 0,1111 €/hora.
+Para la instancia, desde el día 4 del mes a las 9:40 hasta el día 12 del mismo mes a las 16:30, se contabilizan un total de 200 horas comenzadas. Estas horas se facturan con un precio de 0,1111 €/hora.
 
 En el caso del volumen de almacenamiento, desde el día 8 a las 10:00 hasta el día 12 del mismo mes a las 16:30, se contabilizan un total de 103 horas comenzadas. El precio del volumen Classic es de 0,04 €/mes por GB (0,0000555556 €/hora).
 
 Al final de mes, la factura incluirá:
 
-- 176 x 0,111
+- 200 x 0,111
 - 103 x 250 x 0,0000555556
 
-El importe total será de 20,97 euros.
+El importe total será de 23,63 euros.
 
 
 > [!primary]

@@ -2,7 +2,8 @@
 title: 'Konfiguracja konta E-mail Pro'
 slug: pierwsza-konfiguracja-email-pro
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro'
-section: 'Informacje ogólne'
+section: 'Pierwsze kroki'
+order: 1
 ---
 
 **Ostatnia aktualizacja z dnia 07-04-2020**
@@ -133,4 +134,16 @@ Aby skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu t
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+
+[Tworzenie reguł skrzynki odbiorczej w aplikacji OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/tworzenie-regul-skrzynki-odbiorczej-w-owa/)
+
+[Dodaj alias do konta e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/email-alias/)
+
+[Tworzenie automatycznych podpisów](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_automatyczny_podpis_-_disclaimer/)
+
+[Zarządzanie płatnościami za Twoje konta E-mail Pro](https://docs.ovh.com/pl/emails-pro/zarzadzanie-platnosciami-emailpro/)
+
+[Zarządzanie polityką bezpieczeństwa usługi e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-polityka-bezpieczenstwa-exchange/)
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

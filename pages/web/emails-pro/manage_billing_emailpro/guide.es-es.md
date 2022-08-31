@@ -3,7 +3,7 @@ title: 'Gestionar la facturación de sus cuentas Email Pro'
 slug: gestion-facturacion-emailpro
 excerpt: 'Cómo gestionar la facturación de un servicio Email Pro'
 section: 'Primeros pasos'
-order: 4
+order: 7
 ---
 
 > [!primary]

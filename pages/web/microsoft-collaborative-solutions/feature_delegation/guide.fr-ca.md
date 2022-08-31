@@ -6,7 +6,7 @@ section: 'Fonctionnalités des comptes Exchange'
 order: 3
 ---
 
-**Dernière mise à jour le 02/08/2018**
+**Dernière mise à jour le 24/10/2020**
 
 ## Objectif
 

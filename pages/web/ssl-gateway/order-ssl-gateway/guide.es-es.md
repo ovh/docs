@@ -2,7 +2,7 @@
 title: Contratar un SSL Gateway
 slug: contratar-un-ssl-gateway
 excerpt: Proteja las conexiones a su sitio web
-section: General
+section: 'Getting started'
 ---
 
 

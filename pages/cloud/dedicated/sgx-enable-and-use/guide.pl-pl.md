@@ -5,7 +5,7 @@ excerpt: 'Włącz opcję SGX na serwerze Infrastructure lub Advance i zainstaluj
 section: 'Poziom zaawansowany'
 ---
 
-**Ostatnia aktualizacja: 03-06-2022**
+**Ostatnia aktualizacja: 31-08-2022**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -53,15 +53,25 @@ Możesz aktywować SGX z określoną ilością pamięci zarezerwowanej lub włą
 
 ![activation SGX](images/manage_sgx.png){.thumbnail}
 
+Pojawi się potwierdzenie pop-up. Potwierdź, że zapoznałeś się z aktywowaniem technologii Intel SGX i wymaga restartu serwera.
+
+![aktywacja SGX](images/confirmation-popup_sgx.png){.thumbnail}
+
+> [!warning]
+>
+> W zależności od serwera, operacja ta spowoduje 1 restartów serwera.
+
 #### Wyłączenie opcji
 
 Przejdź do strefy `Zaawansowane funkcje` funkcje i kliknij `...`{.action} naprzeciwko "Bezpieczeństwo - Intel SGX (Software Guard Extensions)". Wybierz `Zmień SGX`{.action} z rozwijanego menu. Wybierz opcję `Wyłącz`{.action}, następnie kliknij `Zatwierdź`{.action}.
 
 ![Wyłączenie funkcji SGX](images/disable_sgx.png){.thumbnail}
 
-Spowoduje to ponowne uruchomienie serwera. Potwierdź w oknie kontekstowym i odczekaj kilka minut, zanim ponownie zaloguj się do Twojego serwera.
+> [!warning]
+>
+> W zależności od serwera, operacja ta spowoduje 1 restartów serwera.
 
-Przejdź do etapu czwartego [poniżej, aby przeczytać ten przewodnik](./#krok-4-zainstalowanie-zestawu-oprogramowania-sgx).
+Przejdź do poniższego przewodnika [etap 3](#sgx-softwares).
 
 ### Za pośrednictwem API OVHcloud
 
@@ -88,6 +98,10 @@ Sprawdź, czy usługa ma włączoną opcję SGX, wywołując następującą proc
 
 Następnie włącz funkcję SGX:
 
+> [!warning]
+>
+> W zależności od serwera, operacja ta spowoduje 1 restartów serwera.
+
 > [!api]
 >
 > @api {POST} /dedicated/server/{serviceName}/biosSettings/sgx/configure
@@ -110,9 +124,7 @@ Teraz można sprawdzić, że status to “włączono” (enabled):
 
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 
-#### Krok 3\. Ponowne uruchomienie w celu zastosowania nowych ustawień systemu BIOS
-
-#### Krok 4\. Zainstalowanie zestawu oprogramowania SGX
+#### Krok 3\. Zainstalowanie zestawu oprogramowania SGX <a name="sgx-softwares"></a>
 
 Teraz zostaną zainstalowane sterownik i zestaw SDK Intel, które umożliwiają tworzenie oraz uruchamianie aplikacji SGX.  
 
@@ -150,9 +162,9 @@ chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
 sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ```
 
-#### Krok 5\. Ponowne uruchomienie w celu ukończenia instalacji
+#### Krok 4\. Ponowne uruchomienie w celu ukończenia instalacji
 
-#### Krok 6\. Sprawdzenie poprawności instalacji przy użyciu przykładowej aplikacji
+#### Krok 5\. Sprawdzenie poprawności instalacji przy użyciu przykładowej aplikacji
 
 Zbuduj jedną z udostępnionych przykładowych aplikacji:
 

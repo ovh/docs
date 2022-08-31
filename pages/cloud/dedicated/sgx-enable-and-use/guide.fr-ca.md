@@ -5,7 +5,7 @@ excerpt: 'Activez l’option SGX sur votre serveur Infrastructure ou Advance et 
 section: 'Utilisation avancée'
 ---
 
-**Dernière mise à jour le 03/06/2022**
+**Dernière mise à jour le 31/08/2022**
 
 ## Objectif
 
@@ -48,15 +48,25 @@ Vous pouvez choisir d'activer SGX avec une quantité spécifique de mémoire ré
 
 ![activation SGX](images/manage_sgx.png){.thumbnail}
 
+Une pop-up de confirmation apparaît, confirmez alors que vous avez bien pris connaissance que l'activation de la technologie Intel SGX nécessite le(s) redémarrage(s) de votre serveur.
+
+![activation SGX](images/confirmation-popup_sgx.png){.thumbnail}
+
+> [!warning]
+>
+> En fonction du serveur, cette action entraînera 1 à plusieurs redémarrages de celui-ci.
+
 #### Désactivation de l'option
 
 Descendez jusqu'à la zone `Fonctionnalités avancées` et cliquez sur `...`{.action} en face de « Sécurité - Intel SGX (Software Guard Extensions) ». Sélectionnez `Modifier SGX`{.action} dans le menu déroulant. Choisissez l'option `Désactiver`{.action}, puis cliquez sur `Confirmer`{.action}.
 
 ![Désactivation de SGX](images/disable_sgx.png){.thumbnail}
 
-Cela entraînera le redémarrage de votre serveur. Confirmez dans la fenêtre contextuelle et attendez quelques minutes avant d'accéder de nouveau à votre serveur.
+> [!warning]
+>
+> En fonction du serveur, cette action entraînera 1 à plusieurs redémarrages de celui-ci.
 
-Continuez la lecture de ce guide à [l'étape 4](./#etape-4-installer-la-pile-de-logiciels-sgx) ci-dessous.
+Continuez la lecture de ce guide à [l'étape 3](#sgx-softwares) ci-dessous.
 
 ### Depuis l'API OVHcloud
 
@@ -83,6 +93,10 @@ Vérifiez que votre service dispose de l’option SGX, avec l’appel suivant :
 
 Maintenant, activez SGX.
 
+> [!warning]
+>
+> En fonction du serveur, cette action entraînera 1 à plusieurs redémarrages de celui-ci.
+
 > [!api]
 >
 > @api {POST} /dedicated/server/{serviceName}/biosSettings/sgx/configure
@@ -105,9 +119,7 @@ Vous pouvez vérifier que l’état est maintenant «activé» :
 
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 
-#### Étape 3 : Redémarrer le serveur pour que la nouvelle configuration du BIOS soit prise en compte
-
-#### Étape 4 : Installer la pile de logiciels SGX
+#### Étape 3 : Installer la pile de logiciels SGX <a name="sgx-softwares"></a>
 
 Il faut maintenant installer le driver Intel et SDK pour pouvoir développer et exécuter des applications SGX.  
 
@@ -145,9 +157,9 @@ chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
 sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ```
 
-#### Étape 5 : Redémarrer pour finir l’installation
+#### Étape 4 : Redémarrer pour finir l’installation
 
-#### Étape 6 : Utiliser un modèle d’application pour valider l’installation
+#### Étape 5 : Utiliser un modèle d’application pour valider l’installation
 
 Créez une application avec un des modèles fournis :
 
