@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 2021-09-21**
+**Ostatnia aktualizacja z dnia 2022-08-30**
 
 ## Wstęp
 
@@ -37,22 +37,26 @@ Każdy projekt w chmurze jest fakturowany oddzielnie. Faktura obejmuje należno�
 
 ### Przykład
 
+> [!warning]
+> Pamiętaj, że godzinowa instancja jest płatna w trybie godzinowym, niezależnie od momentu utworzenia instancji. Jeśli chcesz korzystać z 60 minut użytkowania na godzinę płatności, musisz uruchomić instancję ze znakiem godzinowym, na przykład o godzinie 13:00 lub 14:00.
+>
+
 Poniższy przykład pozwoli lepiej zrozumieć, jak to działa.
 
 - użytkownik uruchamia instancję B2-15 czwartego dnia danego miesiąca o godz. 9:40
 - ósmego dnia miesiąca o godz. 10:00 dodaje 250 GB  dodatkowej przestrzeni dyskowej (Classic Volume) 
 - usuwa wszystkie zasoby dwunastego dnia tego samego miesiąca o 16:30 po zakończeniu zadań, do których tych zasobów potrzebował
 
-W przypadku instancji działającej od czwartego dnia miesiąca od 9:40 do 12 dnia tego samego miesiąca do 16:30 otrzymujemy 176 rozpoczętych godzin. Podlegają one opłacie 0,111 EUR za godzinę. 
+W przypadku instancji działającej od czwartego dnia miesiąca od 9:40 do 12 dnia tego samego miesiąca do 16:30 otrzymujemy 200 rozpoczętych godzin. Podlegają one opłacie 0,111 EUR za godzinę. 
 
 W przypadku przestrzeni dyskowej, od ósmego dnia miesiące od godz. 10:00 do dwunastego dnia tego samego miesiąca do godz. 16:30, otrzymujemy 103 rozpoczęte godziny. Opłata za 1 GB Classic Volume to 0,04 EUR/m-c (0,0000555556 EUR/godz.).
 
 Na koniec miesiąca faktura będzie wyglądała następująco:
 
-- 176 x 0,111
+- 200 x 0,111
 - 103 x 250 x 0,0000555556
 
-czyli 20,97 EUR.
+czyli 23,63 EUR.
 
 > [!primary]
 >

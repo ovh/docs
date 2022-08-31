@@ -6,7 +6,7 @@ section: 'Project management'
 order: 2
 ---
 
-**Last updated 21st September 2021**
+**Last updated 29th August 2022**
 
 ## Objective
 
@@ -36,22 +36,26 @@ Each cloud project has its own bill, which totals up all of the resources billed
 
 ### Example
 
+> [!warning]
+> Please note that an hourly instance is billed per hour, regardless of when the instance is created. If you would like to have 60 minutes of usage for one hour of billing, you will need to launch your instance at the hour mark, for example at 1:00 or 2:00 pm.
+>
+
 This example might provide a clear explanation of how this works.
 
 - A user launches a B2-15 instance on the 04th day of the month, at 09:40.
 - On the 08th day of the month at 10:00, they add 250GB additional volume (Classic Volume).
 - They delete all of it on the 12th day of the same month at 16:30, once they have finished what they needed to do with these resources.
 
-For the instance, from the 04th day of the month at 09:40 until the 12th of the month at 16:30, there are 176 hours of resource usage. They are billed at 0.111 euros per hour.
+For the instance, from the 04th day of the month at 09:40 until the 12th of the month at 16:30, there are 200 hours of resource usage. They are billed at 0.111 euros per hour.
 
 For the storage, from the 08th day of the month at 10:00 until the 12th of the month at 16:30, there are 103 hours of resource usage. One GB of Classic Volume costs 0.04 euros/month (0.0000555556 euros/hour).
 
 At the end of the month, the bill will total up to:
 
-- 176 x 0.111
+- 200 x 0.111
 - 103 x 250 x 0.0000555556
 
-i.e. €20.97.
+i.e. €23.63.
 
 > [!primary]
 >
