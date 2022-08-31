@@ -63,8 +63,6 @@ Não é necessário restaurar completamente o seu atual serviço. A opção “M
 >Este guia foi concebido para o ajudar, tanto quanto possível, nas tarefas mais comuns. No entanto, caso tenha alguma dificuldade, recomendamos que contacte um fornecedor especializado e/ou o editor do software do serviço, uma vez que não poderemos assisti-lo pessoalmente. Para mais informações, consulte a secção “Vá mais longe” neste guia.
 >
 
-#### Passo 1: Área de Cliente
-
 Clique em `...`{.action} junto ao backup pretendido e selecione `Montar`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}

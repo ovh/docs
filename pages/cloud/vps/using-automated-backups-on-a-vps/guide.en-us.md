@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 2
 ---
 
-**Last updated 01st February 2022**
+**Last updated 31st August 2022**
 
 ## Objective
 
@@ -57,8 +57,6 @@ It is not necessary to completely overwrite your existing service with a restora
 >
 >This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
 >
-
-#### Step 1: Control Panel
 
 Click on `...`{.action} next to the backup you need to access and select `Mounting`{.action}.
 

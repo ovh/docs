@@ -62,8 +62,6 @@ No es necesario sobrescribir íntegramente el servicio existente con una restaur
 >El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) y/o el editor del <i>software</i> del servicio si tiene alguna dificultad. Nosotros no podremos ayudarle al respecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
 >
 
-#### Paso 1: Panel de control
-
 Haga clic en `...`{.action} junto a la copia de seguridad a la que necesite acceder y seleccione `Montaje`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}

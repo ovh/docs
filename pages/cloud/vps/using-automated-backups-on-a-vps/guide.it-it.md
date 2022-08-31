@@ -62,8 +62,6 @@ Non è necessario sovrascrivere completamente il tuo servizio esistente con un r
 >Questa guida ti mostra come effettuare le operazioni più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un esperto del settore e/o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni, consulta la sezione “Per saperne di più” di questa guida.
 >
 
-#### Step 1: Spazio Cliente
-
 Clicca su `...`{.action} accanto al backup a cui desideri accedere e seleziona `Montaggio`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
