@@ -1,6 +1,6 @@
 ---
 title: E-mail Pro
 slug: emails-pro
-sections: Generale, Configurazione di un client di posta
+sections: Per iniziare, Configurazione di un client di posta,Diagnostica
 order: 06
 ---
