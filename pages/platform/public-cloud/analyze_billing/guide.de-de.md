@@ -37,10 +37,10 @@ Für jedes Cloud Projekt gibt es eine eigene Rechnung, die alle im Laufe des Mon
 ### Beispiel
 
 >[!warning]
-> Bitte beachten Sie, dass eine stündliche Instanz unabhängig vom Zeitpunkt der Erstellung der Instanz stundenweise abgerechnet wird. Wenn Sie eine Abrechnungszeit von 60 Minuten nutzen möchten, müssen Sie Ihre Instanz mit der Uhrzeit starten, zum Beispiel um 13:00 oder 14:00 Uhr.
+> Bitte beachten Sie, dass eine stündliche Instanz unabhängig vom Zeitpunkt der Erstellung der Instanz stundenweise abgerechnet wird. Wenn Sie eine Abrechnungszeit von 60 Minuten nutzen möchten, müssen Sie Ihre Instanz zur vollen Stunde starten, zum Beispiel um 13:00 oder 14:00 Uhr.
 >
 
-Das folgende Beispiel zeigt eine klare Erklärung dafür liefern, wie dies funktioniert.
+Das folgende Beispiel veranschaulicht, wie das in der Praxis funktioniert.
 
 - Am 4. Tag des Monats startet ein Nutzer um 09:40 Uhr eine Instanz vom Typ b2-15
 - Um 10:00 Uhr am 8. Tag des Monats werden 250 GB zusätzlicher Speicherplatz hinzugefügt (Classic Volume)
