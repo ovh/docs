@@ -5,7 +5,7 @@ excerpt: 'SGX auf Ihrem Dedicated Server aktivieren und den Linux-SGX-Software-S
 section: 'Fortgeschrittene Nutzung'
 ---
 
-**Letzte Aktualisierung am 03.06.2022**
+**Letzte Aktualisierung am 31.08.2022**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -23,7 +23,7 @@ Die Aktivierung der Intel Software Guard Extensions (SGX) auf Ihrem Server erlau
 
 > [!warning]
 >
-> Von der Advance Reihe sind nur die folgenden Server mit Intel CPU mit der Intel SGX-Technologie kompatibel:
+> Von der Advance Reihe sind nur die folgenden Server mit Intel CPU mit der Intel SGX Technologie kompatibel:
 >
 > - Advance-1
 > - Advance-2
@@ -50,21 +50,31 @@ Sie können SGX mit einer bestimmten reservierten Speichermenge aktivieren oder 
 
 ![SGX Aktivierung](images/manage_sgx.png){.thumbnail}
 
+Es erscheint ein Fenster, um zu bestätigen, dass die Aktivierung der Intel SGX Technologie einen Neustart Ihres Servers erfordert.
+
+![SGX Aktivierung](images/confirmation-popup_sgx.png){.thumbnail}
+
+> [!warning]
+>
+> Je nach Server führt diese Aktion zu mehreren Neustarts des Servers.
+
 #### Die Option deaktivieren
 
 Scrollen Sie bis zum Bereich "Fortgeschrittene Funktionen" und klicken Sie auf `...`{.action} bei "Sicherheit - Intel SGX (Software Guard Extensions)". Klicken Sie auf `SGX bearbeiten`{.action} im Dropdown-Menü. Wählen Sie die Option `Deaktivieren`{.action} aus und klicken Sie dann auf `Bestätigen`{.action}.
 
 ![SGX deaktivieren](images/disable_sgx.png){.thumbnail}
 
-Dies führt zum Neustart Ihres Servers. Bestätigen Sie im Popup-Fenster und warten Sie einige Minuten, bevor Sie erneut auf Ihren Server zugreifen.
+> [!warning]
+>
+> Je nach Server führt diese Aktion zu mehreren Neustarts des Servers.
 
-Folgen Sie der Anleitung weiter ab [Schritt 4](#step4).
+Folgen Sie der Anleitung weiter ab [Schritt 3](#sgx-softwares).
 
 ### Über die OVHcloud API
 
 #### Schritt 1: In der API-Konsole anmelden
 
-Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/console/ auf `Login`{.action} oben rechts.  
+Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/console/) auf `Login`{.action} oben rechts.  
 Melden Sie sich auf der folgenden Seite mit den Logindaten Ihres OVHcloud Kunden-Accounts an.
 
 #### Schritt 2: SGX aktivieren
@@ -85,13 +95,17 @@ Um zu überprüfen, ob Ihr Dienst über die SGX-Option verfügt, nutzen Sie folg
 
 Aktivieren Sie SGX unter Verwendung des Servernamens:
 
+> [!warning]
+>
+> Je nach Server führt diese Aktion zu mehreren Neustarts des Servers.
+
 > [!api]
 >
 > @api {POST} /dedicated/server/{serviceName}/biosSettings/sgx/configure
 
 ![SGX aktivieren](images/post-configure.png){.thumbnail}
 
-Überprüfen Sie den Fortschritt des Konfigurationstasks, indem Sie diesen Endpunkt mit der *taskId* aufrufen, die vom vorherigen Call zurückgegeben wurde:
+Überprüfen Sie den Fortschritt des Konfigurationstasks, indem Sie diesen Endpunkt mit der *taskId* aufrufen, die vom vorherigen Aufruf zurückgegeben wurde:
 
 > [!api]
 >
@@ -107,11 +121,7 @@ Sie können überprüfen, ob der Status jetzt aktiviert ist:
 
 ![SGX aktiviert](images/get-enabled.png){.thumbnail}
 
-#### Schritt 3: Neu starten, um die neuen BIOS-Einstellungen zu übernehmen
-
-Der Server muss neu gestartet werden, um fortzufahren.
-
-### Schritt 4: Den SGX Softwarestack installieren <a name="step4"></a>
+### Schritt 3: Den SGX Softwarestack installieren <a name="sgx-softwares"></a>
 
 Verwenden Sie die folgenden Befehle, um den Intel-Treiber und das Software-Kit (SDK) zu installieren, um SGX-Anwendungen entwickeln und ausführen zu können.
 
@@ -149,11 +159,11 @@ chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
 sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ```
 
-### Schritt 5: Neu starten, um die Installation abzuschließen
+### Schritt 4: Neu starten, um die Installation abzuschließen
 
 Der Server muss neu gestartet werden, um fortzufahren.
 
-### Schritt 6: Die Installation validieren (optional)
+### Schritt 5: Die Installation validieren (optional)
 
 Sie können eine Beispielanwendung verwenden, um die Installation zu validieren. Erstellen Sie eine der bereitgestellten Beispiel-Apps:
 
