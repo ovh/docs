@@ -72,11 +72,11 @@ Dans le menu suivant, choisissez votre pays.
 
 ![KVM](images/kvm_vps03.png){.thumbnail}
 
-Dans la troisième sélection, vous pouvez spécifier la disposition réelle du clavier.
+Le troisième menu vous permet de spécifier la disposition réelle du clavier.
 
-Selon vos choix, d'autres options peuvent apparaître après le troisième menu.
+Selon vos choix, d'autres options peuvent apparaître après ce troisième menu.
 
-De retour sur la ligne de commande, entrez la commande suivante pour appliquer les modifications.
+De retour à la ligne de commande, entrez la commande suivante pour appliquer les modifications :
 
 ```bash
 sudo systemctl restart keyboard-setup
