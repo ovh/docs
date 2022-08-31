@@ -1,7 +1,7 @@
 ---
 title: 'Creating automatic signatures'
 slug: email-automatic-signature-disclaimer
-section: 'Exchange account features'
+section: 'Getting started'
 order: 3
 ---
 
