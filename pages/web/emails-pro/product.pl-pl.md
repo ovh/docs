@@ -1,7 +1,6 @@
 ---
 title: 'E-mail Pro'
 slug: emails-pro
-excertp: 'Wszystko o kontach E-mail Pro'
-sections: 'Informacje podstawowe, Konfiguracja programu pocztowego'
+sections: 'Pierwsze kroki, Konfiguracja programu pocztowego, Diagnostyka'
 order: 06
 ---

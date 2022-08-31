@@ -2,7 +2,7 @@
 title: 'Konfiguracja konta E-mail Pro'
 slug: pierwsza-konfiguracja-email-pro
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro'
-section: 'Informacje ogólne'
+section: 'Pierwsze kroki'
 order: 1
 ---
 
