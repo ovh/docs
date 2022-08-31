@@ -16,12 +16,6 @@ order: 3
 
 **Diese Anleitung erläutert, wie Sie eine automatische Signatur über das OVHcloud Kundencenter erstellen.**
 
-> [!primary]
->
-> Obwohl sich diese Anleitung auf unsere Exchange Dienste bezieht, können Sie den Anweisungen auch für Ihre E-Mail Pro Accounts folgen.
->
-
-
 ## Voraussetzungen
 
 - Sie haben Zugriff auf das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
@@ -30,8 +24,12 @@ order: 3
 
 ## In der praktischen Anwendung
 
+Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}ein:
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus. Klicken Sie im horizontalen Menü auf den Tab `Mehr+`{.action} und wählen Sie `Fußzeilen`{.action} aus.
+- **Exchange**: Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}.. 
+- **Email Pro**: Klicken Sie auf `Email Pro`{.action}.
+
+Klicken Sie dann auf den Namen des E-Mail Dienstes, in dem sich der Account befindet, für den Sie Rechte vergeben möchten. Klicken Sie im horizontalen Menü auf den Tab `Mehr+`{.action} und wählen Sie `Fußzeilen`{.action} aus.
 
 ![Exchange Signaturen](images/exchange-footer-step1.png){.thumbnail}
 
@@ -64,7 +62,7 @@ Bitte beachten Sie die folgenden Hinweise, bevor Sie Signaturen für Benutzer ei
 
 [Verwendung der Outlook Web App](../exchange_2016_verwendung_der_outlook_web_app/)
 
-[Berechtigungen für einen Exchange Account übertragen](../exchange_2013_send_as_versand_als/)
+[Berechtigungen für einen E-Mail Account übertragen](../exchange_2013_send_as_versand_als/)
 
 [Kalender in OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
 

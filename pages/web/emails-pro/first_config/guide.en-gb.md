@@ -2,7 +2,8 @@
 title: 'Configuring your Email Pro solution'
 slug: first-configuration-email-pro
 excerpt: 'Find out how to configure your Email Pro solution'
-section: General
+section: 'Getting started'
+order: 1
 ---
 
 **Last updated 9th April 2020**
@@ -134,5 +135,18 @@ If you would like to configure your email address on an email client or device (
 >
 
 ## Go further
+
+[Using the Outlook Web App with an Exchange account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/)
+
+[Creating inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/)
+
+[Adding an alias to your email account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/email-alias/)
+
+[Creating automatic replies in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/)
+
+
+[Managing the billing for your Email Pro accounts](https://docs.ovh.com/gb/en/emails-pro/emailpro-billing/)
+
+[Managing the security policy of an email service](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-security-policy-password/)
 
 Join our community of users on <https://community.ovh.com/en/>.

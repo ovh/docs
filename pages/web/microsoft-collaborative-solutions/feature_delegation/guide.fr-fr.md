@@ -1,29 +1,29 @@
 ---
-title: 'Déléguer des droits sur un compte Exchange'
+title: 'Déléguer des droits sur un compte e-mail'
 slug: exchange-donner-les-droits-full-access-sur-un-compte
-excerpt: 'Découvrez comment déléguer des droits de votre compte Exchange à un autre'
+excerpt: 'Découvrez comment déléguer des droits de votre compte e-mail à un autre'
 section: 'Fonctionnalités des comptes Exchange'
 order: 3
 ---
 
-**Dernière mise à jour le 02/08/2018**
+**Dernière mise à jour le 24/10/2020**
 
 ## Objectif
 
-Le service Exchange permet de bénéficier d’adresses e-mail professionnelles, qui facilitent le travail collaboratif grâce à différentes fonctionnalités. L'une d'elles permet de déléguer des droits spécifiques (comme celui d'envoi ou d'accès) entre différents comptes Exchange.
+Les services Exchange et Email Pro permettent de bénéficier d’adresses e-mail professionnelles, qui facilitent le travail collaboratif grâce à différentes fonctionnalités. L'une d'elles permet de déléguer des droits spécifiques (comme celui d'envoi ou d'accès) entre différents comptes e-mail.
 
-**Découvrez comment déléguer des droits de votre compte Exchange à un autre.**
+**Découvrez comment déléguer des droits de votre compte e-mail à un autre.**
 
 ## Prérequis
 
-- Disposer d'une offre [Exchange](https://www.ovhcloud.com/fr/emails/){.external}.
-- Disposer au minimum de deux comptes Exchange actifs et configurés sur la même plateforme Exchange OVH.
-- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Disposer des identifiants relatifs au compte Exchange qui bénéficiera des nouveaux droits délégués.
+- Avoir souscrit une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)
+- Disposer au minimum de deux comptes e-mail actifs et configurés sur la même plateforme e-mail OVHcloud.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Disposer des identifiants relatifs au compte e-mail qui bénéficiera des nouveaux droits délégués.
 
 ## En pratique
 
-Avant de débuter, définissez le ou les droits que vous allez déléguer. Pour rappel, quand vous mettez en place une délégation, vous accordez à un ou plusieurs comptes Exchange des droits supplémentaires sur le compte Exchange concerné.
+Avant de débuter, définissez le ou les droits que vous allez déléguer. Pour rappel, quand vous mettez en place une délégation, vous accordez à un ou plusieurs comptes e-mail des droits supplémentaires sur le compte e-mail concerné.
 
 |Droits|Description|
 |---|---|
@@ -40,9 +40,14 @@ Lorsque vous avez identifié le compte concerné par la délégation, détermin�
 
 ### Étape 1 : mettre en place la délégation
 
-Pour effectuer cette manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Cliquez ensuite sur le nom du service Exchange dans lequel se trouve le compte concerné par la création de la délégation. Positionnez-vous enfin sur l'onglet `Comptes e-mail`{.action}.
+Pour effectuer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr):
 
-Le tableau qui apparaît affiche les comptes liés à votre service Exchange. Cliquez sur les trois points à droite du compte pour lequel vous souhaitez créer une délégation,  puis sur `Gérer les délégations`{.action}.
+- **Exchange**: Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. 
+- **Email Pro**: Cliquez sur `Email Pro`{.action}.
+
+Cliquez ensuite sur le nom du service e-mail dans lequel se trouve le compte concerné par la création de la délégation. Positionnez-vous enfin sur l'onglet `Comptes e-mail`{.action}.
+
+Le tableau qui apparaît affiche les comptes liés à votre service e-mail. Cliquez sur les trois points à droite du compte pour lequel vous souhaitez créer une délégation,  puis sur `Gérer les délégations`{.action}.
 
 ![delegation](images/delegation-step1.png){.thumbnail}
 
@@ -56,9 +61,9 @@ Une fois la délégation configurée, *test@mypersonaldomain.ovh* pourra effectu
 
 ### Étape 2 : utiliser les droits délégués
 
-Maintenant que la délégation est en place, il ne reste plus qu'à l'utiliser. Assurez-vous avant de poursuivre d'être en possession des identifiants relatifs au compte Exchange qui bénéficie des nouveaux droits délégués.
+Maintenant que la délégation est en place, il ne reste plus qu'à l'utiliser. Assurez-vous avant de poursuivre d'être en possession des identifiants relatifs au compte e-mail qui bénéficie des nouveaux droits délégués.
 
-La manière de faire est différente selon le ou les droits que vous avez délégués et le logiciel ou l'interface web que vous utilisez pour accéder à votre compte Exchange. Poursuivez la lecture de cette documentation en fonction du ou des droits que vous avez délégués.
+La manière de faire est différente selon le ou les droits que vous avez délégués et le logiciel ou l'interface web que vous utilisez pour accéder à votre compte e-mail. Poursuivez la lecture de cette documentation en fonction du ou des droits que vous avez délégués.
 
 - [Utiliser son « droit d'accès »](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/#21-utiliser-son-droit-dacces){.external}
 
@@ -75,7 +80,7 @@ La manière de faire est différente selon le ou les droits que vous avez délé
 
 - **Depuis le webmail Outlook Web Application (OWA)**
 
-Rendez-vous à l'adresse <https://www.ovh.com/fr/mail/> et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, effectuez un clic droit sur le nom du compte dans le menu à gauche, puis sélectionnez `Ajouter un dossier partagé`{.action}.
+Rendez-vous à l'adresse <https://www.ovh.com/fr/mail/> et renseignez les identifiants du compte e-mail disposant du droit délégué. Une fois connecté, effectuez un clic droit sur le nom du compte dans le menu à gauche, puis sélectionnez `Ajouter un dossier partagé`{.action}.
 
 Dans la fenêtre qui apparaît, indiquez le nom du compte pour lequel vous bénéficiez du droit délégué puis cliquez sur `Ajouter`{.action}. Le compte s'affiche alors dans le menu de gauche, vous permettant d'en explorer son contenu.
 
@@ -95,7 +100,7 @@ Cliquez à présent sur `Paramètres supplémentaires`{.action}. Dans la nouvell
 
 - **Depuis le webmail Outlook Web Application (OWA)**
 
-Rendez-vous à l'adresse <https://www.ovh.com/fr/mail/> et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
+Rendez-vous à l'adresse <https://www.ovh.com/fr/mail/> et renseignez les identifiants du compte e-mail disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
 
 Dans la zone qui apparaît, cliquez sur le bouton représentant trois points puis sur `Afficher le champ De`{.action}. Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, supprimez celle déjà renseignée et inscrivez celle souhaitée. 
 
@@ -117,7 +122,7 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 - **Depuis le webmail Outlook Web Application (OWA)**
 
-Rendez-vous à l'adresse <https://www.ovh.com/fr/mail/> et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
+Rendez-vous à l'adresse <https://www.ovh.com/fr/mail/> et renseignez les identifiants du compte e-mail disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
 
 Dans la zone qui s'affiche, cliquez sur le bouton représentant trois points puis sur `Afficher le champ De`{.action}. Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, supprimez celle déjà renseignée et inscrivez celle souhaitée. 
 

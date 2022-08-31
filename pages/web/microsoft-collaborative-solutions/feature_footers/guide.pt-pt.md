@@ -16,12 +16,6 @@ Na Área de Cliente OVHcloud, pode criar assinaturas universais (footers) para e
 
 **Este guia explica como criar assinaturas automáticas através da Área de Cliente OVHcloud.**
 
-> [!primary]
->
-> Embora este guia se refira aos nossos serviços Exchange, as instruções aplicam-se igualmente às contas E-mail Pro.
->
-
-
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
@@ -31,7 +25,12 @@ Na Área de Cliente OVHcloud, pode criar assinaturas universais (footers) para e
 ## Instruções
 
 
-Antes de mais, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique na secção `Webcloud`{.action} e selecione o serviço Exchange na coluna sob `Microsoft`{.action} `Exchange`{.action}. No menu horizontal, clique em `More+`{.action} e selecione `Footers`{.action}.
+Para efetuar esta operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}:
+
+- **Exchange**: Clique em `Microsoft`{.action} na barra à esquerda e, a seguir, em `Exchange`{.action}.. 
+- **Email Pro**: Clique em `Email Pro`{.action}.
+
+A seguir, clique no nome do serviço de e-mail no qual se encontra a conta em que se encontra a criação da delegação. No menu horizontal, clique em `More+`{.action} e selecione `Footers`{.action}.
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
@@ -64,7 +63,7 @@ Antes de criar assinaturas, tenha em consideração o seguinte:
 
 [Guia de utilização do Outlook Web App](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
 
-[Atribuir permissões a uma conta Exchange](../exchange_3013_atribuir_permissoes_full_access_a_uma_conta/)
+[Atribuir permissões a uma conta de e-mail](../exchange_3013_atribuir_permissoes_full_access_a_uma_conta/)
 
 [Partilha de calendários em OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
 

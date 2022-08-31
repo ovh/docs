@@ -138,4 +138,16 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 
 ## Quer saber mais?
 
+[Utilizar o Outlook Web App com uma conta de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+
+[Criar regras inbox no OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/criar-regras-inbox-no-owa/)
+
+[Adicionar um alias à sua conta de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/email-alias/)
+
+[Criar assinaturas automáticas](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_assinatura_automatica_-_disclaimer/)
+
+[Gerir a faturação das contas E-mail Pro](https://docs.ovh.com/pt/emails-pro/gestao-faturacao-emailpro/)
+
+[Gerir a política de segurança de um serviço de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gerir-politica-de-seguranca-palavra-passe/)
+
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

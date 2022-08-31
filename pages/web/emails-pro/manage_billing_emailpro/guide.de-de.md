@@ -3,7 +3,7 @@ title: 'Die Abrechnung Ihrer E-Mail Pro Accounts verwalten'
 slug: verwaltung-der-abrechnung-emailpro
 excerpt: 'Erfahren Sie hier, wie Sie die Abrechnung Ihrer E-Mail Pro Dienstleistung verwalten'
 section: 'Erste Schritte'
-order: 4
+order: 7
 ---
 
 > [!primary]

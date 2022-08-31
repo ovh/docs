@@ -16,12 +16,6 @@ W Panelu klienta OVHcloud można utworzyć uniwersalne podpisy (stopki) dla adre
 
 **Dowiedz się, jak utworzyć automatyczny podpis przy użyciu Panelu klienta OVHcloud.**
 
-> [!primary]
->
-> Choć ten przewodnik dotyczy usług Exchange, z instrukcji można skorzystać również w przypadku kont E-mail Pro.
->
-
-
 ## Wymagania początkowe
 
 - dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
@@ -31,7 +25,12 @@ W Panelu klienta OVHcloud można utworzyć uniwersalne podpisy (stopki) dla adre
 ## W praktyce
 
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Webcloud`{.action} i wybierz usługę Exchange z kolumny znajdującej się w obszarze `Microsoft`{.action} `Exchange`{.action}. Kliknij kartę `Więcej+`{.action} w menu poziomym i wybierz pozycję `Stopki`{.action}.
+Aby rozpocząć operację, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}:
+
+- **Exchange**: Kliknij `Microsoft`{.action}, po czym kliknij `Exchange`{.action}.
+- **Email Pro**: Kliknij `Email Pro`{.action}.
+
+Następnie kliknij nazwę usługi e-mail, w której znajduje się konto, do którego będziesz nadawał uprawnienia. Kliknij kartę `Więcej+`{.action} w menu poziomym i wybierz pozycję `Stopki`{.action}.
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
@@ -62,10 +61,10 @@ Przed zastosowaniem podpisów u użytkowników weź pod uwagę następujące asp
 
 ## Sprawdź również
 
-[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Korzystanie z interfejsu Outlook Web App wraz z kontem e-mail](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
 
-[Delegowanie uprawnień do konta Exchange](../exchange_2013_przyznanie_uprawnien_full_access/)
+[Delegowanie uprawnień do konta e-mail](../exchange_2013_przyznanie_uprawnien_full_access/)
 
-[Exchange: współdzielenie kalendarza w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
+[współdzielenie kalendarza w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

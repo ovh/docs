@@ -1,28 +1,28 @@
 ---
-title: 'Delegare i diritti su un account Exchange'
-excerpt: 'Come assegnare i diritti del tuo Exchange a un altro account'
+title: 'Delegare i diritti su un account email'
+excerpt: 'Come assegnare i diritti del tuo email a un altro account'
 slug: exchange_2013_assegna_i_diritti_full_access_a_un_account
-legacy_guide_number: g1249
+order: 3
 ---
 
-**Ultimo aggiornamento: 25/02/2019**
+**Ultimo aggiornamento: 24/10/2020**
 
 ## Obiettivo
 
-Il servizio di posta Exchange permette di usufruire di indirizzi email professionali che facilitano il lavoro collaborativo. Tra le funzionalità disponibili, la possibilità di assegnare diritti specifici (ad esempio il permesso di invio o accesso) a diversi account Exchange.
+I servizi Exchange ed Email Pro permettono di usufruire di indirizzi email professionali che facilitano il lavoro collaborativo grazie a diverse funzionalità. Una permette di delegare diritti specifici (come quello di invio o di accesso) a diversi account email.
 
-**Questa guida ti mostra come delegare diritti del tuo servizio Exchange ad altri account.**
+**Questa guida ti mostra come delegare diritti del tuo servizio email ad altri account.**
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/){.external}
-- Disporre di almeno due account attivi e configurati sulla stessa piattaforma Exchange OVH
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Disporre delle credenziali dell’account Exchange a cui verranno delegati i diritti
+- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/) attive 
+- Disporre di almeno due account attivi e configurati sulla stessa piattaforma email OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre delle credenziali dell’account email a cui verranno delegati i diritti
 
 ## Procedura
 
-Prima di iniziare è necessario definire i diritti da delegare. Ti ricordiamo che una delega consiste nel concedere a uno o più account Exchange alcuni diritti aggiuntivi sull’account Exchange in questione.
+Prima di iniziare è necessario definire i diritti da delegare. Ti ricordiamo che una delega consiste nel concedere a uno o più account email alcuni diritti aggiuntivi sull’account email in questione.
 
 |Diritto|Descrizione|
 |---|---|
@@ -39,9 +39,14 @@ Una volta individuato l’account per cui vuoi delegare i diritti, definito i pe
 
 ### Step 1: crea la delega
 
-Per effettuare questa operazione, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca su `Microsoft`{.action} > `Exchange`{.action}, seleziona il nome del servizio in cui si trova l’account per cui vuoi creare la delega e clicca sulla scheda `Account email`{.action}.
+Per effettuare questa operazione, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
 
-Visualizzi una tabella con tutti gli account associati al tuo servizio Exchange. Clicca sui tre puntini in corrispondenza dell’account in questione e seleziona `Gestisci le tue deleghe`{.action}.
+- **Exchange**: Clicca su `Microsoft`{.action} > `Exchange`{.action}. 
+- **Email Pro**: Clicca su `Email Pro`{.action}.
+
+Seleziona il nome del servizio in cui si trova l’account per cui vuoi creare la delega e clicca sulla scheda `Account email`{.action}.
+
+Visualizzi una tabella con tutti gli account associati al tuo servizio email. Clicca sui tre puntini in corrispondenza dell’account in questione e seleziona `Gestisci le tue deleghe`{.action}.
 
 ![Delega](images/delegation-step1.png){.thumbnail}
 
@@ -55,9 +60,9 @@ Una volta configurata, *test@mypersonnaldomain.ovh* potrà effettuare le azioni 
 
 ### Step 2: utilizza i diritti delegati
 
-Ora che la delega è pronta, non resta che utilizzarla. Prima di proseguire, assicurati di avere a disposizione le credenziali associate all’account Exchange a cui hai assegnato i nuovi diritti.
+Ora che la delega è pronta, non resta che utilizzarla. Prima di proseguire, assicurati di avere a disposizione le credenziali associate all’account email a cui hai assegnato i nuovi diritti.
 
-Il procedimento è diverso in base ai diritti delegati e al software o all’interfaccia Web con cui accedi al tuo account Exchange. Continua a consultare questa guida in base al tipo di diritto delegato.
+Il procedimento è diverso in base ai diritti delegati e al software o all’interfaccia Web con cui accedi al tuo account email. Continua a consultare questa guida in base al tipo di diritto delegato.
 
 - [Utilizzare il “diritto di accesso”](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_assegna_i_diritti_full_access_a_un_account/#utilizzare-il-diritto-di-accesso){.external}
 
@@ -74,7 +79,7 @@ Il procedimento è diverso in base ai diritti delegati e al software o all’int
 
 - **Dalla Webmail Outlook Web Application (OWA)**
 
-Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account Exchange con i diritti delegati. Nel menu a sinistra, clicca con il tasto destro sul nome dell’account e seleziona `Aggiungi cartella condivisa...`{.action}.
+Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account email con i diritti delegati. Nel menu a sinistra, clicca con il tasto destro sul nome dell’account e seleziona `Aggiungi cartella condivisa...`{.action}.
 
 Nella nuova finestra, inserisci il nome dell’account con i diritti delegati e poi clicca su `Aggiungi`{.action}. A questo punto l’account viene mostrato nel menu a sinistra ed è possibile visualizzarne il contenuto.
 
@@ -94,7 +99,7 @@ Clicca su `Altre impostazioni...`{.action}. Nella nuova finestra, seleziona la s
 
 - **Dalla Webmail Outlook Web Application (OWA)**
 
-Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account Exchange con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
+Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account email con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
 
 Nella finestra di redazione, clicca sui tre puntini e seleziona `Mostra Da`{.action}. Clicca sul pulsante `Da`{.action} e seleziona l’indirizzo che verrà visualizzato come mittente (per cui disponi del diritto di delega). Se non compare, elimina l’account già inserito e digita quello che desideri. 
 
@@ -116,7 +121,7 @@ A questo punto scrivi il tuo messaggio e invialo.
 
 - **Dalla Webmail Outlook Web Application (OWA)**
 
-Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account Exchange con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
+Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account email con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
 
 Nella finestra di redazione, clicca sui tre puntini e seleziona `Mostra Da`{.action}. Clicca sul pulsante `Da`{.action} e seleziona l’indirizzo che verrà visualizzato come mittente (per cui disponi del diritto di delega). Se non compare, elimina l’account già inserito e digita quello che desideri. 
 

@@ -4,7 +4,7 @@ slug: configuracao-iphone
 routes:
     canonical: 'https://docs.ovh.com/pt/emails/mail_partilhado_guia_configuracao_iphone_ios_91/'
 excerpt: "Aprenda a configurar uma conta E-mail Pro num iPhone ou num iPad através da aplicação Mail"
-section: 'Configuração no smartphone'
+section: 'Configuração do software cliente de e-mail'
 order: 1
 ---
 
