@@ -1,5 +1,5 @@
 ---
-title: Restorer une sauvegarde (EN)
+title: Restaurer une sauvegarde (EN)
 slug: restore-backup
 excerpt: Find out how to restore a backup
 section: Guides généraux
