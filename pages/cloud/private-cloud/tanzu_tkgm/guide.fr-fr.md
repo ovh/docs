@@ -41,7 +41,7 @@ Nous allons installer **VMware Tanzu Kubernetes Grid** dans un cluster **Hosted 
 
 ### Importation du modèle OVA pour **Tanzu KUBERNETES Grid** dans votre infrastructure
 
-VMware fourni une machine virtuelle sous forme de modèle OVA qui contient tout les éléments pour faire fonctionner un nœud du cluster **Tanzu Kubernetes Grid**. 
+VMware fourni une machine virtuelle sous forme de modèle OVA qui contient tous les éléments pour faire fonctionner un nœud du cluster **Tanzu Kubernetes Grid**. 
 
 Télécharger le fichier sur ce lien [TKGm 1.5.4](https://plik.fromsync.net/file/yMsZyou6CyYCqlQn/Es4foCOnmvvWBMsq/photon-3-kube-v1.22.9+vmware.1-tkg.1-06852a87cc9526f5368519a709525c68.ova), ensuite suivez ces instructions :
 
@@ -150,11 +150,11 @@ Sélectionnez un `Stockage partagé en NFS v3`{.action} et cliquez sur `SUIVANT`
 
 ![02 Add Bootstrapvm 08](images/02-add-bootstrap-vm-from-ova08.png){.thumbnail}
 
-Choisissez dans **Réseau de destination** `VLAN10` et cliquez sur `SUIVANT`{.action}.
+Choisissez `VLAN10` pour le réseau de destination et cliquez sur `SUIVANT`{.action}.
 
 ![02 Add Bootstrapvm 09](images/02-add-bootstrap-vm-from-ova09.png){.thumbnail}
 
-Saisissez ces informations dans **Networking**
+Ajoutez ces informations dans **Networking**
 
 * **Hostname** : `bootstrap`
 * **IP Address** : `192.168.0.199`
@@ -178,20 +178,19 @@ Positionnez-vous sur la `Machine virtuelle créée`{.action} et cliquez sur `LAN
 
 ![02 Add Bootstrapvm 13](images/02-add-bootstrap-vm-from-ova13.png){.thumbnail}
 
-Vous verrez la console de la machine virtuelle.
+La console de la machine virtuelle apparait.
 
 ![02 Add Bootstrapvm 14](images/02-add-bootstrap-vm-from-ova14.png){.thumbnail}
-
 
 ### Autorisation d'accès au cluster PCC depuis la machine virtuelle **Bootstrap**
 
 Les outils de configuration et d'administration de **Tanzu Kubernetes Grid** sont installés sur la machine virtuelle nouvellement installée. Cette machine virtuelle doit pouvoir se connecter à Internet et au cluster vSphere.
 
-Notez l'adresse **IP publique** que vous utilisez sur cette machine virtuelle et aidez-vous de ce guide [Autoriser des IP à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) pour donner l'accès à l'interface WEB de vSphere depuis la nouvelle machine virtuelle créée.
+Notez l'adresse **IP publique** que vous utilisez sur cette machine virtuelle et aidez-vous de ce guide [Autoriser des IP à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) pour donner accès au cluster vSphere depuis la nouvelle machine virtuelle.
 
 ### Déploiement du cluster **Tanzu Kubernetes Grid** sur votre infrastructure 
 
-Connectez-vous sur la machine virtuelle `Ubuntu-22.04_TKGm-1.5.4_with_x` ouvrez un terminal et exécutez cette commande pour créér une clé **RSA**
+Connectez-vous sur la machine virtuelle `Ubuntu-22.04_TKGm-1.5.4_with_x` ouvrez un terminal et exécutez cette commande pour créer une clé **RSA**.
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "youremail@yourdomain.com"
@@ -222,7 +221,7 @@ Saisissez ces informations
 
 * **VCENTER SERVER** : `nom FQDN du cluster VMware`.
 * **USERNAME** : `utilisateur du cluster VMware`.
-* **PASSWORD** : `mot de passe de l'utilisateur du  cluster VMware`.
+* **PASSWORD** : `mot de passe de l'utilisateur du cluster VMware`.
 
 Ensuite cliquez sur `CONNECT`{.action}
 
