@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 30/08/2022**
+**Dernière mise à jour le 31/08/2022**
 
 ## Objectif
 
@@ -20,7 +20,7 @@ order: 02
 
 ## Présentation
 
-VMware Tanzu Kubernetes Grid est est une plate-forme Kubernetes maintenu dans le cadre du support **Hosted Private Cloud Powered by VMware**.
+VMware Tanzu Kubernetes Grid est est une plate-forme Kubernetes fournie par **VMware** et maintenue dans le cadre du support **Hosted Private Cloud Powered by VMware**.
 
 Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter de ses fonctionnalités et de son évolutivité.
 
@@ -39,7 +39,7 @@ Nous allons installer **VMware Tanzu Kubernetes Grid** dans un cluster **Hosted 
 * **Etendue DHCP** : `192.168.0.50 -> 192.168.0.100`.
 * **Passerelle** : `192.168.0.254`.
 
-### Intégration du modèle OVA pour **Tanzu KUBERNETES Grid** sous **Photon OS**
+### Importation du modèle OVA pour **Tanzu KUBERNETES Grid** dans votre infrastructure
 
 VMware fourni une machine virtuelle sous forme de modèle OVA qui contient tout les éléments pour faire fonctionner un nœud du cluster **Tanzu Kubernetes Grid**. 
 
@@ -74,11 +74,11 @@ Vérifiez vos informations et cliquez sur `SUIVANT`{.action}.
 
 ![01 integrate TKGM OVA 07](images/01-integrate-tkgm-ova07.png){.thumbnail}
 
-Cochez `J'accepte tous les contrats de license`{.action} et cliquez sur `SUIVANT`{.action}.
+Cochez `J'accepte tous les contrats de licence`{.action} et cliquez sur `SUIVANT`{.action}.
 
 ![01 integrate TKGM OVA 08](images/01-integrate-tkgm-ova08.png){.thumbnail}
 
-Sélectionnez un `Stockage partagé en NFS v3`{.action} et cliquez sur `SUIVANT`{.action}.
+Sélectionnez un `Stockage partagé en NFS v3`{.action} ensuite cliquez sur `SUIVANT`{.action}.
 
 ![01 integrate TKGM OVA 09](images/01-integrate-tkgm-ova09.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Faites un clic droit sur la `Machine virtuelle déployée`{.action} et choisisse
 
 ![01 integrate TKGM OVA 14](images/01-integrate-tkgm-ova14.png){.thumbnail}
 
-Répondez `OUI`{.action} pou convertir la machine virtuelle.
+Répondez `OUI`{.action} pour convertir la machine virtuelle.
 
 ![01 integrate TKGM OVA 15](images/01-integrate-tkgm-ova15.png){.thumbnail}
 
