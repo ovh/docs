@@ -1,7 +1,7 @@
 ---
 title: 'Delegar permissões numa conta de e-mail'
 slug: emailpro-delegation
-section: 'Funcionalidades das contas Exchange'
+section: Introdução
 order: 5
 ---
 
