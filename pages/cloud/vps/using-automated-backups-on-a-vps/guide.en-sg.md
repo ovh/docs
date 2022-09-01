@@ -29,11 +29,28 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), open the `Bare Metal Cloud`{.action} section, and select your server under `Virtual Private Servers`{.action}.
 
-### Step 1: Subscribing to the Automated backups option
+### Step 1: Activating the automated backup option
 
 After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.
 
 In the next step, please take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email. Backups will now be created daily until the option is cancelled again.
+
+#### Configuring the backup time
+
+You can change the time of day at which the backup will take place. 
+
+Click on `...`{.action} above the table and then on `Edit`{.action}.
+
+![autobackupvps](images/backup_vps_time01.png){.thumbnail}
+
+In the window that appears, edit the time of day (24-hour UTC time standard). Click on `Confirm`{.action}.
+
+![autobackupvps](images/backup_vps_time02.png){.thumbnail}
+
+> [!primary]
+>
+Once confirmed in the Control Panel, the change will come into effect after 24 to 48 hours.
+>
 
 ### Step 2: Restoring a backup from the OVHcloud Control Panel
 
