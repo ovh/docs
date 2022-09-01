@@ -16,7 +16,7 @@ La création d'un nom de domaine, son transfert, son changement de propriétaire
 ## Prérequis
 
 - Posséder un ou plusieurs noms de domaine.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être à jour dans les [paiements](https://docs.ovh.com/fr/billing/gerer-factures-ovh/#pay-bills) et [renouvellements](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#renewal-management) de vos noms de domaine.
 
 ## En pratique
@@ -36,7 +36,7 @@ Un tableau vous permet de consulter toutes les opérations liées aux noms de do
 - `État` : État actuel de l'opération.
 
 Toutes les opérations listées dans ce tableau ne nécessitent pas votre intervention pour qu'elles se déroulent normalement.<br>
-Nous allons nous intéresser dans ce guide aux opérations **en erreur** au travers d'exemples fréquents.
+Nous allons nous intéresser dans ce guide aux opérations **en erreur** au travers d'exemples récurrents.
 
 ![domain](images/domain-error-table02.png){.thumbnail}
 
@@ -44,13 +44,13 @@ Nous allons nous intéresser dans ce guide aux opérations **en erreur** au trav
 
 > [!primary]
 >
-> La liste d'exemples ci-dessous est non-exhaustive. Si vous rencontrez une erreur qui n'est pas détaillé dans ce guide :
+> La liste d'exemples ci-dessous est non-exhaustive. Si vous rencontrez une erreur qui n'est pas détaillée dans ce guide :
 >
 > - Vérifiez que vous êtes à jour dans les [paiements](https://docs.ovh.com/fr/billing/gerer-factures-ovh/#pay-bills) et [renouvellements](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#renewal-management) de vos noms de domaine.
 > - Vérifiez si vous pouvez agir en cliquant sur le bouton `...`{.action} à droite de l'opération concernée.
 > - Lisez le message descriptif et vérifiez s'il vous permet de résoudre l'erreur.
 >
-> Si malgré ces vérifications, vous n'êtes pas en capacité d'agir sur le nom de domaine, nous vous invitons à ouvrir un ticket d'assistance depuis votre espace client.
+> Si, malgré ces vérifications, vous n'êtes pas en capacité d'agir sur le nom de domaine, nous vous invitons à ouvrir un ticket d'assistance depuis votre espace client.
 >
 
 #### Demande de documents
@@ -59,7 +59,7 @@ Certaines extensions de noms de domaine nécessitent de justifier leur utilisati
 
 ![domain](images/domain-error01.png){.thumbnail}
 
-Pour fournir le(s) document(s) nécessaire(s), cliquez sur le bouton `...`{.action} à droite de l'opération.<br>
+Pour fournir le(s) document(s) nécessaire(s), cliquez sur le bouton `...`{.action} à droite de l'opération concernée.<br>
 La fenêtre ci-dessous apparait, la partie « Description » vous permettra d'obtenir des détails sur le document à fournir ainsi qu'un bouton pour téléverser votre document.
 
 ![domain](images/domain-error02.png){.thumbnail}
@@ -77,7 +77,7 @@ La fenêtre ci-dessous apparait, complétez les champs avec les informations du 
 
 #### Code de transfert erroné 
 
-Lorsque vous transférez votre nom de domaine vers OVHcloud, vous devez saisir un code de transfert (**authInfo**) lors de la commande. Si ce code est incorrect, l'opération est suspendue mais vous pouvez la relancer avec le bon code.
+Lorsque vous transférez votre nom de domaine vers OVHcloud, vous devez saisir un code de transfert (**authInfo**) lors de la commande. Si ce code est incorrect, l'opération est suspendue mais vous pouvez la relancer en renseignant le bon code.
 
 ![domain](images/domain-error05.png){.thumbnail}
 
@@ -103,7 +103,7 @@ Lorsque vous modifiez vos serveurs DNS, le registre est susceptible de vérifier
 >
 > Ce type de blocage est initié par le registre et non par OVHcloud. Ainsi, même si le nom de domaine est bloqué par le registre, ses serveurs DNS apparaissent comme `Actifs` dans votre espace client OVHcloud.
 
-Pour vérifiez si votre nom de domaine fait l'objet d'un tel blocage, rendez-vous dans le tableau des `Opérations en cours`{.action}.
+Pour vérifier si votre nom de domaine fait l'objet d'un tel blocage, rendez-vous dans le tableau des `Opérations en cours`{.action}.
 
 ![domain](images/domain-error08.png){.thumbnail}
 
@@ -124,10 +124,10 @@ Lorsque vous avez identifié l'origine de l'erreur et que vous l'avez corrigée,
 
 #### Erreur interne OVHcloud
 
-Vous pouvez rencontrer une erreur ayant pour détails « erreur interne ». Celle-ci ne permettra pas d'actions de votre part.<br>
+Vous pouvez rencontrer une erreur ayant pour détails « erreur interne ». Cette erreur ne permet pas d'actions de votre part.<br>
 Vérifiez tout d'abord que votre nom de domaine et les serveurs DNS sont bien actifs. 
 
-Si vous constatez une anomalie qui n'est pas liée à la configuration des serveurs DNS ou de la zone DNS, nous vous invitons à ouvrir un ticket d'assistance auprès du support OVHcloud pour identifier l'origine du dysfonctionnement.
+Si vous constatez une anomalie qui n'est pas liée à la configuration des serveurs DNS ou de la zone DNS, nous vous invitons à ouvrir un ticket d'assistance auprès du support OVHcloud afin d'identifier l'origine du dysfonctionnement.
 
 ![domain](images/domain-error09.png){.thumbnail}
 
