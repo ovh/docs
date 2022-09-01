@@ -61,8 +61,6 @@ Cette option permet d'accéder aux données de sauvegarde au cas où vous ne sou
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >
 
-#### Étape 1 : depuis l'espace client
-
 Cliquez sur `...`{.action} à droite de la sauvegarde souhaitée et sélectionnez `Montage`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}

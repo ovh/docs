@@ -1,9 +1,8 @@
 ---
-title: Änderung der Größe einer Instanz
+title: Änderung der Größe einer Instanz mit Horizon
 excerpt: Erfahren Sie hier, wie Sie die Größe einer Instanz in Horizon ändern
 slug: nderung_der_groe_einer_instanz
 section: 'Horizon'
-legacy_guide_number: g1778
 order: 08
 ---
 
