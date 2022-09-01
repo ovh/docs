@@ -151,7 +151,7 @@ Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i
 ![add key](images/puttygen-04.png){.thumbnail}
 
 
-### Krok 3: tworzenie instancji
+### Krok 3: tworzenie instancji  <a name="create-instance"></a>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

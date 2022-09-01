@@ -295,8 +295,8 @@ Para más información, consulte el apartado [Más información](#gofurther) de 
 
 ## Más información
 
-[Montar un NAS mediante NFS](../nas-nfs/)
+[Montar un NAS mediante NFS](https://docs.ovh.com/es/storage/nas-nfs/)
 
-[Montar un NAS en Windows Server a través de CIFS](../nas-cifs/)
+[Montar un NAS en Windows Server a través de CIFS](https://docs.ovh.com/es/storage/nas/nas-cifs/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -180,6 +180,6 @@ Confirme la acción en la ventana que aparece haciendo clic en `Eliminar la part
 
 [Montar un NAS mediante NFS](https://docs.ovh.com/us/es/storage/nas-nfs/)
 
-[Montar un NAS en Windows Server a través de CIFS](../nas-cifs/)
+[Mount your NAS on Windows Server via CIFS](https://docs.ovh.com/us/en/storage/nas/nas-cifs/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

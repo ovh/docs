@@ -149,7 +149,7 @@ Cliquez sur le bouton `Ajouter une clé SSH`{.action}. Dans la nouvelle fenêtre
 
 ![ajouter une clé](images/puttygen-04.png){.thumbnail}
 
-### Étape 3 : Créer une instance
+### Étape 3 : Créer une instance  <a name="create-instance"></a>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

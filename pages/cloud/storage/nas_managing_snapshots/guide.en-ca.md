@@ -293,8 +293,8 @@ You can find more information in the [Go further](#gofurther) section of this gu
 
 ## Go further
 
-[Mount your NAS via NFS share](../nas-nfs/)
+[Mount your NAS via NFS share](https://docs.ovh.com/ca/en/storage/nas-nfs/)
 
-[Mount your NAS on Windows Server via CIFS](../nas-cifs/)
+[Mount your NAS on Windows Server via CIFS](https://docs.ovh.com/ca/en/storage/nas/nas-cifs/)
 
 Join our community of users on <https://community.ovh.com/en/>.

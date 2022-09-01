@@ -11,7 +11,7 @@ section: 'Network Management'
 
 The OVHcloud [vRack](https://www.ovh.com/world/solutions/vrack/) allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovhcloud.com/en/bare-metal/). But it also allows you to add [Public Cloud instances](https://www.ovhcloud.com/en/public-cloud/) to your private network so that you can create an infrastructure of both physical and virtual resources.
 
-**This guide will show you how to configure private networking between a [Public Cloud instance](https://docs.ovh.com/us/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance) and a [Dedicated Server](https://www.ovhcloud.com/en/bare-metal/).**
+**This guide will show you how to configure private networking between a [Public Cloud instance](https://docs.ovh.com/us/en/public-cloud/public-cloud-first-steps/#create-instance) and a [Dedicated Server](https://www.ovhcloud.com/en/bare-metal/).**
 
 
 ## Requirements
@@ -64,7 +64,7 @@ Two situations may arise:
 
 #### In case of a new instance
 
-If you need assistance, follow this guide first: [Creating your first Public Cloud instance](../../public-cloud/public-cloud-first-steps/#step-3-creating-an-instance). When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
+If you need assistance, follow this guide first: [Creating your first Public Cloud instance](../../public-cloud/public-cloud-first-steps/#create-instance). When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
 
 #### In case of an existing instance
 
@@ -102,7 +102,7 @@ An example: If your instance private network is tagged with VLAN 2, the private 
 
 ### Configure your network interfaces
 
-Next, configure the network interfaces on your new [Public Cloud instance](https://docs.ovh.com/us/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance) and [Dedicated Server](https://www.ovhcloud.com/en/bare-metal/) using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}.
+Next, configure the network interfaces on your new [Public Cloud instance](https://docs.ovh.com/us/en/public-cloud/public-cloud-first-steps/#create-instance) and [Dedicated Server](https://www.ovhcloud.com/en/bare-metal/) using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}.
 
 ## Go further
 

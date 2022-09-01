@@ -180,6 +180,6 @@ Potwierdź operację w oknie, które się wyświetli, klikając `Usuń partycję
 
 [Montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/nas-nfs/)
 
-[Montowanie usługi NAS na systemie Windows Server przy użyciu CIFS](../nas-cifs/)
+[Skonfigurować NAS na serwerze Windows poprzez CIFS](https://docs.ovh.com/pl/storage/nas/nas-cifs/)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
