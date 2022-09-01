@@ -139,39 +139,6 @@ In the BIOS navigate to the `Boot`{.action} tab and change the `UEFI Boot Order 
 
 Lastly, press the `F4` key to save your changes and restart the server.
 
-### Installing an OS using IPMI v2
-
-> [!warning]
-> OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
->
-
-To begin, open [IPMI in a Java applet](./#applet-java) from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). Then, click `Virtual Media`{.action} and select `Virtual Storage`{.action}.
-
-![Virtual_Storage](images/virtual_storage.png){.thumbnail}
-
-From the new screen, select `ISO File` from the "Logical Drive Type" drop-down menu. Next, click `Open Image`{.action} and navigate to your ISO file. Finally, click `Plug-in`{.action} and `OK`{.action} to finish.
-
-![ISO_file](images/iso_file.png){.thumbnail}
-
-In order to be able to boot from our ISO file, we need to access the BIOS and switch our boot options. To do so, select `Power Control`{.action} and click `Set Power Reset`{.action}.
-
-![Power_Reserver](images/power_reset.png){.thumbnail}
-
-> [!primary]
->
-> You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the `Virtual Media`{.action} option from the menu bar at the top of the window. Then, select `Virtual Keyboard`{.action} from the drop-down menu.
->
-
-During the bootup process, press the `DEL` key when prompted to access the BIOS. You may also press the `F11` key and navigate to the BIOS by selecting the option `Enter Setup`{.action}.
-
-![Boot_Menu](images/boot_menu.png){.thumbnail}
-
-In the BIOS navigate to the `Boot`{.action} tab and change the `UEFI Boot Order #1` to `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
-
-![Bios](images/bios.png){.thumbnail}
-
-Lastly, press the `F4` key to save your changes and restart the server.
-
 ### Installing an OS using web browser KVM (only for the latest servers)
 
 > [!warning]
