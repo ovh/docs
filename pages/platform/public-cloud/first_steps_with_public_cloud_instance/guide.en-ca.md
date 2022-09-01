@@ -58,7 +58,7 @@ The new page displays a modified version of the [instance creation options](../p
 
 - **Renaming the instance**: You can give a name to the instance for easier identification.
 - **Changing the image**: You can choose a different operating system for the instance. (Note that reinstalling an instance will delete all data stored on it.)
-- **Changing the template**: You can switch to a different instance model. Please refer to [this guide](../public-cloud-first-steps/#step-3-creating-an-instance) for more information about the options.
+- **Changing the template**: You can switch to a different instance model. Please refer to [this guide](../public-cloud-first-steps/#create-instance) for more information about the options.
 - **Changing the billing type**: You can change the billing period of the instance from hourly to monthly. Please refer to [this guide](../change-public-cloud-billing-rate/) for detailed information).
 
 #### Creating a backup of the instance

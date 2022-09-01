@@ -47,7 +47,7 @@ You will then land on the login page, where you will be prompted to enter your `
 
 You can now manage your server.
 
-### Access via the KVM tool from a web browser (only for the latest servers)
+### Access via the KVM tool from a web browser (only for the latest servers) <a name="kvm-browser"></a>
 
 In the `IPMI`{.action} section of the OVHcloud Control Panel, click on `Via your web browser (KVM)`{.action}:
 
@@ -182,9 +182,6 @@ The ISO file will now be uploaded, then the server will boot from the file.
 
 ![KVM Install](images/kvm_install07.png){.thumbnail}
 
-## Conclusion
-
-IPMI is an important tool for an experienced server administrator. If you need to access the BIOS, install a custom OS, or just access your server directly from the OVHcloud Control Panel, IPMI will allow you to accomplish your most important tasks.
 
 ## Go further
 

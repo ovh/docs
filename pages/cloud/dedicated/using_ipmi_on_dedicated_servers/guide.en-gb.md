@@ -183,10 +183,6 @@ The ISO file will now be uploaded, then the server will boot from the file.
 ![KVM Install](images/kvm_install07.png){.thumbnail}
 
 
-## Conclusion
-
-IPMI is an important tool for an experienced server administrator. If you need to access the BIOS, install a custom OS, or just access your server directly from the OVHcloud Control Panel, IPMI will allow you to accomplish your most important tasks.
-
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

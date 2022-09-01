@@ -291,8 +291,8 @@ Plus d’informations dans la section [Aller plus loin](#gofurther) de ce guide.
 
 ## Aller plus loin
 
-[Montez votre NAS via un partage NFS](../nas-nfs/)
+[Montez votre NAS via un partage NFS](https://docs.ovh.com/fr/storage/nas/nas-nfs/)
 
-[Montez votre NAS sur Windows Server via CIFS](../nas-cifs/)
+[Montez votre NAS sur Windows Server via CIFS](https://docs.ovh.com/fr/storage/nas/nas-cifs/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

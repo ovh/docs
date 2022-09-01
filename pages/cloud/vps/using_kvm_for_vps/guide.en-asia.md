@@ -58,15 +58,15 @@ A graphical menu will open in which you can select a keyboard model.
 
 ![KVM](images/kvm_vps01.png){.thumbnail}
 
-Use the arrow keys to navigate to the option that comes closest to your hardware, then press "Enter". 
-
-![KVM](images/kvm_vps02.png){.thumbnail}
+Use the arrow keys to navigate to the option that comes closest to your hardware, then press "Enter".
 
 In the next menu, choose your country.
 
-![KVM](images/kvm_vps03.png){.thumbnail}
+![KVM](images/kvm_vps02.png){.thumbnail}
 
-In the third selection, you can specify your actual keyboard layout.
+In the third menu, you can specify your actual keyboard layout.
+
+![KVM](images/kvm_vps03.png){.thumbnail}
 
 Depending on your selections, there may be further options showing up after the third menu.
 

@@ -180,6 +180,6 @@ Nella nuova finestra, clicca su `Elimina la partizione`{.action}. Attendi il com
 
 [Eseguire il mount di un NAS tramite NFS](https://docs.ovh.com/it/storage/nas-nfs/)
 
-[Configura il tuo NAS su Windows Server via CIFS](../nas-cifs/)
+[Configura il tuo NAS su Windows Server tramite CIFS](https://docs.ovh.com/it/storage/nas/nas-cifs/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
