@@ -139,7 +139,7 @@ In the BIOS navigate to the `Boot`{.action} tab and change the `UEFI Boot Order 
 
 Lastly, press the `F4` key to save your changes and restart the server.
 
-### Installing an OS using web browser KVM (only for the latest servers)
+### Installing an OS using web browser KVM (only for the latest servers) <a name="kvm-browser"></a>
 
 > [!warning]
 > OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
@@ -182,9 +182,6 @@ The ISO file will now be uploaded, then the server will boot from the file.
 
 ![KVM Install](images/kvm_install07.png){.thumbnail}
 
-## Conclusion
-
-IPMI is an important tool for an experienced server administrator. If you need to access the BIOS, install a custom OS, or just access your server directly from the OVHcloud Control Panel, IPMI will allow you to accomplish your most important tasks.
 
 ## Go further
 
