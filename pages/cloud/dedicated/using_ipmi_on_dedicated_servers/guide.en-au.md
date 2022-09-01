@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 4
 ---
 
-**Last updated 18th March 2021**
+**Last updated 30th August 2022**
 
 ## Objective
 
@@ -138,6 +138,82 @@ In the BIOS navigate to the `Boot`{.action} tab and change the `UEFI Boot Order 
 ![Bios](images/bios.png){.thumbnail}
 
 Lastly, press the `F4` key to save your changes and restart the server.
+
+### Installing an OS using IPMI v2
+
+> [!warning]
+> OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
+>
+
+To begin, open [IPMI in a Java applet](./#applet-java) from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Then, click `Virtual Media`{.action} and select `Virtual Storage`{.action}.
+
+![Virtual_Storage](images/virtual_storage.png){.thumbnail}
+
+From the new screen, select `ISO File` from the "Logical Drive Type" drop-down menu. Next, click `Open Image`{.action} and navigate to your ISO file. Finally, click `Plug-in`{.action} and `OK`{.action} to finish.
+
+![ISO_file](images/iso_file.png){.thumbnail}
+
+In order to be able to boot from our ISO file, we need to access the BIOS and switch our boot options. To do so, select `Power Control`{.action} and click `Set Power Reset`{.action}.
+
+![Power_Reserver](images/power_reset.png){.thumbnail}
+
+> [!primary]
+>
+> You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the `Virtual Media`{.action} option from the menu bar at the top of the window. Then, select `Virtual Keyboard`{.action} from the drop-down menu.
+>
+
+During the bootup process, press the `DEL` key when prompted to access the BIOS. You may also press the `F11` key and navigate to the BIOS by selecting the option `Enter Setup`{.action}.
+
+![Boot_Menu](images/boot_menu.png){.thumbnail}
+
+In the BIOS navigate to the `Boot`{.action} tab and change the `UEFI Boot Order #1` to `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
+
+![Bios](images/bios.png){.thumbnail}
+
+Lastly, press the `F4` key to save your changes and restart the server.
+
+### Installing an OS using web browser KVM (only for the latest servers)
+
+> [!warning]
+> OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
+>
+
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), open the [KVM web browser console](./#kvm-browser).
+
+Here you have access to the same information and functionalities as in in the Java-based IPMI modules.
+
+> [!primary]
+>
+> Be sure to execute the next steps at a good pace. The process might be cancelled if there are longer pauses between actions.
+>
+
+Click on the `Browse File`{.action} button and select your image file.
+
+![KVM Install](images/kvm_install01.png){.thumbnail}
+
+Click on `Start Media`{.action}. This will prepare the ISO for the installation process.
+
+![KVM Install](images/kvm_install02.png){.thumbnail}
+
+The file size displayed is not the actual size. This is normal, since the file is not fully uploaded in this step.
+
+![KVM Install](images/kvm_install03.png){.thumbnail}
+
+Click on `Power`{.action} and select `Reset Server`{.action} from the drop-down menu.
+
+![KVM Install](images/kvm_install04.png){.thumbnail}
+
+Wait for the boot selection screen to appear and press the appropriate key to enter the boot menu (`F11` in this example).
+
+![KVM Install](images/kvm_install05.png){.thumbnail}
+
+In the boot menu, select the optical drive (`UEFI: AMI Virtual CDROM0` in this example) and press `Enter`.
+
+![KVM Install](images/kvm_install06.png){.thumbnail}
+
+The ISO file will now be uploaded, then the server will boot from the file.
+
+![KVM Install](images/kvm_install07.png){.thumbnail}
 
 ## Conclusion
 

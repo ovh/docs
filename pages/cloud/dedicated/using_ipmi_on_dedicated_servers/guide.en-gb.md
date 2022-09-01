@@ -1,12 +1,12 @@
 ---
-title: 'Using the IPMI with Dedicated Servers'
+title: Using the IPMI with Dedicated Servers
 slug: use-ipmi-dedicated-servers
 excerpt: 'With the IPMI, you can log in to your server without having to use any external software.'
 section: 'Getting started'
 order: 4
 ---
 
-**Last updated 18th March 2021**
+**Last updated 30th August 2022**
 
 ## Objective
 
@@ -47,9 +47,9 @@ You will then land on the login page, where you will be prompted to enter your `
 
 You can now manage your server.
 
-### Access via the KVM tool from a web browser (only for the latest servers)
+### Access via the KVM tool from a web browser (only for the latest servers) <a name="kvm-browser"></a>
 
-In the `IPMI`{.action} section of the OVHcloud Control Panel, click on `Via your web browser (KVM)`{.action}:
+In the `IPMI`{.action} section of the OVHcloud Control Panel, click on `Via your web browser (KVM)`{.action}.
 
 ![IPMI browser](images/KVM-web-browser01.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Activation takes a few seconds. You will receive a message confirming that the I
 
 ![IPMI browser](images/KVM-web-browser02.png){.thumbnail}
 
-Then click on `Access the console (KVM)`{.action} to open the console in your web browser.
+Click on `Access the console (KVM)`{.action} to open the console in your web browser.
 
 ![IPMI browser](images/KVM-web-browser03b.png){.thumbnail}
 
@@ -138,6 +138,50 @@ In the BIOS navigate to the `Boot`{.action} tab and change the `UEFI Boot Order 
 ![Bios](images/bios.png){.thumbnail}
 
 Lastly, press the `F4` key to save your changes and restart the server.
+
+### Installing an OS using web browser KVM (only for the latest servers)
+
+> [!warning]
+> OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
+>
+
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), open the [KVM web browser console](./#kvm-browser).
+
+Here you have access to the same information and functionalities as in in the Java-based IPMI modules.
+
+> [!primary]
+>
+> Be sure to execute the next steps at a good pace. The process might be cancelled if there are longer pauses between actions.
+>
+
+Click on the `Browse File`{.action} button and select your image file.
+
+![KVM Install](images/kvm_install01.png){.thumbnail}
+
+Click on `Start Media`{.action}. This will prepare the ISO for the installation process.
+
+![KVM Install](images/kvm_install02.png){.thumbnail}
+
+The file size displayed is not the actual size. This is normal, since the file is not fully uploaded in this step.
+
+![KVM Install](images/kvm_install03.png){.thumbnail}
+
+Click on `Power`{.action} and select `Reset Server`{.action} from the drop-down menu.
+
+![KVM Install](images/kvm_install04.png){.thumbnail}
+
+Wait for the boot selection screen to appear and press the appropriate key to enter the boot menu (`F11` in this example).
+
+![KVM Install](images/kvm_install05.png){.thumbnail}
+
+In the boot menu, select the optical drive (`UEFI: AMI Virtual CDROM0` in this example) and press `Enter`.
+
+![KVM Install](images/kvm_install06.png){.thumbnail}
+
+The ISO file will now be uploaded, then the server will boot from the file.
+
+![KVM Install](images/kvm_install07.png){.thumbnail}
+
 
 ## Conclusion
 
