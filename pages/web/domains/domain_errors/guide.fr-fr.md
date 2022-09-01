@@ -1,5 +1,5 @@
 ---
-title: 'Gérer une erreur sur un nom de domaine'
+title: 'Résoudre une erreur sur un nom de domaine'
 slug: domain-errors
 section: Tâches courantes
 order: 01
