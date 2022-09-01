@@ -30,9 +30,9 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 - Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir un identifiant actif dans vSphere
 - Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
-- Disposer de ces resources :
-    - 8 GO de mémoire , 4vCPU et 250 Go de stockage pour la machine virtuelle **bootstrap**.
-    - 16 Go de mémoire, 4vCPU, 40 Go de stockage par noeud kubernetes (Il faut 6 noeuds pour une installation du controleur en mode production).
+- Disposer de ces ressources :
+    - 8 GO de mémoire, 4 vCPU et 250 Go de stockage pour la machine virtuelle **bootstrap**.
+    - 16 Go de mémoire, 4 vCPU, 40 Go de stockage par nœud Kubernetes (Il faut 6 nœuds pour une installation du cluster d'administration en mode production et 6 nœuds par cluster de **Workload** dans le même mode).
     
 
 ## En pratique
@@ -295,7 +295,7 @@ Cliquez sur `REVIEW CONFIGURATION`{.action}
 ![03 Create TKG CLUSTER 16](images/03-create-tkg-cluster16.png){.thumbnail}
 
 > [!primary]
-> Notez le nom du fichier yaml qui set trouve en dessous de **CLI Command Equivalent** il servira de modèle pour le deploiement d'un cluster de **WorkLoad**.
+> Notez le nom du fichier yaml qui se trouve en dessous de **CLI Command Equivalent** il servira de modèle pour le déploiement d'un cluster de **WorkLoad**.
 >
 
 Vérifiez tous vos paramètres et cliquez sur `DEPLOY MANAGEMENT CLUSTER`{.action} 
@@ -346,7 +346,7 @@ kubectl config use-context tkg-workload-cluster-admin@tkg-workload-cluster
 
 Nous allons installer un package **kube-vip** qui servira de *load-balancer* entre le réseau interne au cluster et le réseau du VLAN10.
 
-exécutez ces commandes :
+Exécutez ces commandes :
 
 ```bash
 # Création d'un dossier pour accueillir l'application kube-vip depuis git
@@ -355,14 +355,14 @@ mkdir ~/kube-vip
 cd ~/kube-vip
 # Récupération des données depuis github
 git clone https://github.com/vrabbi/tkgm-customizations.git
-# Déplacement de le sous dossier de l'application
+# Déplacement dans le sous dossier de l'application
 cd tkgm-customizations/carvel-packages/kube-vip-package/
-# Application de la préconiguration
+# Application de la pré-configuration
 kubectl apply -n tanzu-package-repo-global -f metadata.yml
 kubectl apply -n tanzu-package-repo-global -f package.yaml
 ```
 
-Créer le fichier **~/kube-vip/tkgm-customizations/carvel-packages/kube-vip-package/values.yaml** avec ce contenu qui correpond aux adresses IP utilisable sur le VLAN10 pour déployer une application
+Créer le fichier **~/kube-vip/tkgm-customizations/carvel-packages/kube-vip-package/values.yaml** avec ce contenu qui correspond aux adresses IP utilisable sur le VLAN10 pour déployer une application
 
 ```yaml
 vip_range: 192.168.0.210-192.168.0.250
