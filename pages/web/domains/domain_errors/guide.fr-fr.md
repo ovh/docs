@@ -107,7 +107,7 @@ Lorsque vous avez identifié l'origine de l'erreur et que vous l'avez corrigée,
 
 #### Erreur interne OVHcloud
 
-Vous pouvez rencontrer une erreur ayant pour détails "erreur interne", vous ne pouvez pas agir sur celle-ci. Vérifier toutefois que votre nom de domaine est bien actif, ainsi que les serveurs DNS. Si vous constatez une anomalie qui n'est pas liée à la configuration des serveurs DNS ou de la zone DNS, nous vous invitons à ouvrir auprès du support OVHcloud via votre espace client pour identifier l'origine du dysfonctionnement.
+Vous pouvez rencontrer une erreur ayant pour détails "erreur interne", vous ne pouvez pas agir sur celle-ci. Vérifier toutefois que votre nom de domaine est bien actif, ainsi que les serveurs DNS. Si vous constatez une anomalie qui n'est pas liée à la configuration des serveurs DNS ou de la zone DNS, nous vous invitons à ouvrir un ticket auprès du support OVHcloud via votre espace client pour identifier l'origine du dysfonctionnement.
 
 ![domain](images/domain-error09.png){.thumbnail}
 
