@@ -5,7 +5,7 @@ slug: utilisation-kvm-sur-vps
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 7 septembre 2020**
+**Dernière mise à jour le 30/08/2022**
 
 ## Objectif
 
