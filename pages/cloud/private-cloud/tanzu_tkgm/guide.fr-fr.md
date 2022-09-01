@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 31/08/2022**
+**Dernière mise à jour le 01/09/2022**
 
 ## Objectif
 
@@ -30,6 +30,10 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 - Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir un identifiant actif dans vSphere
 - Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
+- Disposer de ces resources :
+    - 8 GO de mémoire , 4vCPU et 250 Go de stockage pour la machine virtuelle **bootstrap**.
+    - 16 Go de mémoire, 4vCPU, 40 Go de stockage par noeud kubernetes (Il faut 6 noeuds pour une installation du controleur en mode production).
+    
 
 ## En pratique
 
@@ -290,6 +294,10 @@ Cliquez sur `REVIEW CONFIGURATION`{.action}
 
 ![03 Create TKG CLUSTER 16](images/03-create-tkg-cluster16.png){.thumbnail}
 
+> [!primary]
+> Notez le nom du fichier yaml qui set trouve en dessous de **CLI Command Equivalent** il servira de modèle pour le deploiement d'un cluster de **WorkLoad**.
+>
+
 Vérifiez tous vos paramètres et cliquez sur `DEPLOY MANAGEMENT CLUSTER`{.action} 
 
 ![03 Create TKG CLUSTER 17](images/03-create-tkg-cluster17.png){.thumbnail}
@@ -298,7 +306,34 @@ Le déploiement du cluster **Tanzu Kubernetes Grid** est lancé veuillez attendr
 
 ![03 Create TKG CLUSTER 18](images/03-create-tkg-cluster18.png){.thumbnail}
 
-Le cluster est déployé quand toutes les étapes du déploiement sont au vert.
+Le cluster d'administration est déployé quand toutes les étapes du déploiement sont au vert.
+
+### Déploiement d'un cluster de **WORKLOAD**
+
+Maintenant que le cluster d'administration est installé il faut déployer un cluster de *Workload** qui contiendra les applications KUBERNETES.
+
+copiez le fichier qui a servi pour la creation du cluster d'administration dans un fichier nommé tkg-workload-cluster.yaml.
+
+```bash
+cp ~/.config/tanzu/tkg/clusterconfigs/tkgmfile.yaml ~/tkg-workload-cluster.yaml
+```
+
+Modifiez le contenu du fichier **~/tkg-workload-cluster.yaml** avec ces valeurs :
+
+```yaml
+CLUSTER_NAME: tkg-workload-cluster
+VSPHERE_CONTROL_PLANE_ENDPOINT: 192.168.0.11
+```
+
+Lancez cette commande
+
+```bash
+tanzu cluster create --file tkg-workload-cluster.yaml
+```
+
+### Installation du Load-Balancer
+
+### Installation d'une application
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
