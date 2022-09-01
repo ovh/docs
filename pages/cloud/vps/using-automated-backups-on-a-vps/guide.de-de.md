@@ -6,7 +6,7 @@ section: 'Backup Optionen'
 order: 2
 ---
 
-**Letzte Aktualisierung am 01.02.2022**
+**Letzte Aktualisierung am 31.08.2022**
 
 ## Ziel
 
@@ -35,6 +35,22 @@ Nach der Auswahl Ihres VPS klicken Sie auf den Tab `Automatisches Backup`{.actio
 
 Beachten Sie im nächsten Schritt die Kosteninformation und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellvorgang geführt und erhalten eine Bestätigungsmail. Backups werden nun täglich erstellt, bis die Option wieder gekündigt wird.
 
+#### Backup-Zeit konfigurieren
+
+Sie können den Zeitpunkt ändern, zu dem das Backup durchgeführt wird. 
+
+Klicken Sie auf `...`{.action} über der Tabelle und dann auf `Bearbeiten`{.action}.
+
+![autobackupvps](images/backup_vps_time01.png){.thumbnail}
+
+Tragen Sie im neu angezeigten Fenster die Tageszeit ein (Zeitstandard UTC 24 Stunden). Klicken Sie auf `Bestätigen`{.action}.
+
+![autobackupvps](images/backup_vps_time02.png){.thumbnail}
+
+> [!primary]
+>
+> Sobald die Änderung im Kundencenter bestätigt wurde, wird sie innerhalb von 24 bis 48 Stunden wirksam.
+>
 
 ### Schritt 2: Eine Sicherung über das OVHcloud Kundencenter wiederherstellen
 
@@ -65,7 +81,7 @@ Klicken Sie auf `...`{.action} neben dem Backup, auf das Sie zugreifen müssen, 
 
 Nach Abschluss des Vorgangs erhalten Sie eine E-Mail. Sie können jetzt eine Verbindung zu Ihrem VPS herstellen und die Partition hinzufügen, auf der sich Ihr Backup befindet.
 
-#### Unter Secure Shell
+#### Über Secure Shell
 
 Stellen Sie zunächst über SSH eine Verbindung zu Ihrem VPS her.
 
@@ -98,7 +114,7 @@ $ mount /dev/sdb1 /mnt/restore
 
 Sie können jetzt zu diesem Ordner wechseln und auf Ihre Backup-Daten zugreifen.
 
-#### Unter Windows
+#### Mit Windows
 
 Stellen Sie eine RDP-Verbindung (Remote Desktop) mit Ihrem VPS her.
 
