@@ -52,6 +52,36 @@ L'écran KVM s'ouvre. Il s'agit d'une petite fenêtre indiquant la connexion à 
 > Le clavier peut avoir une disposition différente de la vôtre. Assurez-vous de le vérifier, car le clavier peut être AZERTY au lieu de QWERTY, par exemple.
 >
 
+#### Modification de la disposition du clavier
+
+Vous pouvez activer la configuration de clavier que vous préférez pour rendre l'utilisation de la console plus pratique. Entrez la commande suivante :
+
+```bash
+sudo dpkg-reconfigure keyboard-configuration
+```
+
+Un menu graphique s'ouvre et vous permet de sélectionner un modèle de clavier.
+
+![KVM](images/kvm_vps01.png){.thumbnail}
+
+Utilisez les touches fléchées pour accéder à l'option la plus proche de votre matériel, puis appuyez sur "Entrée". 
+
+Dans le menu suivant, choisissez votre pays.
+
+![KVM](images/kvm_vps02.png){.thumbnail}
+
+Le troisième menu vous permet de spécifier la disposition réelle du clavier.
+
+![KVM](images/kvm_vps03.png){.thumbnail}
+
+Selon vos choix, d'autres options peuvent apparaître après ce troisième menu.
+
+De retour à la ligne de commande, entrez la commande suivante pour appliquer les modifications :
+
+```bash
+sudo systemctl restart keyboard-setup
+```
+
 ### Connexion au KVM via les API
 
 Il peut arriver que vous rencontriez des problèmes de connexion au KVM via votre panneau de configuration OVHcloud, en particulier avec les versions plus anciennes. Dans ce cas, vous pouvez utiliser la solution API. Pour ce faire, connectez-vous via l'API [OVHcloud](https://ca.api.ovh.com/).
