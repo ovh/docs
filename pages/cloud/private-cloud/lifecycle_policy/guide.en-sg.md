@@ -131,7 +131,7 @@ To know the lifecycle policy of Veeam products, please refer to the editor's pub
 
 To know the lifecycle policy of Zerto products, please refer to the editor's publication accessible at the following URL:
 
-[Zerto Virtual Replication Product Version Lifecycle Matrix](http://s3.amazonaws.com/zertodownload_docs/Latest/Zerto+Virtual+Replication+Product+Version+Lifecycle+Matrix.pdf)
+[Zerto Virtual Replication Product Version Lifecycle Matrix](https://help.zerto.com/bundle/Lifecycle.Matrix.HTML/page/Content/Lifecycle_Matrix/Lifecycle_Matrix.htm#zerto_virtual_replication_product_version_lifecycle_matrix_r_893035264_1010900)
 
 ## Go further
 
