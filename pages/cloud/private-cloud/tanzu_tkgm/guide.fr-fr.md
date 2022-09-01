@@ -217,7 +217,7 @@ Le navigateur WEB va se lancer.
 
 ![03 Create TKG CLUSTER 02](images/03-create-tkg-cluster02.png){.thumbnail}
 
-En dessous de **VMware vSphere** cliquez sur `Deploy`{.action}
+Cliquez sur `Deploy`{.action} au dessous de **VMware vSphere**
 
 ![03 Create TKG CLUSTER 03](images/03-create-tkg-cluster03.png){.thumbnail}
 
@@ -310,17 +310,17 @@ Le cluster d'administration est déployé quand toutes les étapes du déploieme
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
-### Déploiement d'un cluster de **WORKLOAD**
+### Déploiement d'un cluster de *Workload*
 
-Maintenant que le cluster d'administration est installé il faut déployer un cluster de *Workload** qui contiendra les applications KUBERNETES. Exécutez ces commandes à partir de la machine virtuelle **Bootstrap**
+Nous allons ajouter un cluster de *Workload* qui contiendra les applications *Kubernetes*. Exécutez ces commandes à partir de la machine virtuelle **Bootstrap**
 
-copiez le fichier qui a servi pour la creation du cluster d'administration dans un fichier nommé tkg-workload-cluster.yaml.
+Copiez le fichier qui a servi pour la création du cluster d'administration dans un fichier nommé **tkg-workload-cluster.yaml**.
 
 ```bash
 cp ~/.config/tanzu/tkg/clusterconfigs/tkgmfile.yaml ~/tkg-workload-cluster.yaml
 ```
 
-Modifiez le contenu du fichier **~/tkg-workload-cluster.yaml** avec ces valeurs :
+Modifiez le contenu du fichier **~/tkg-workload-cluster.yaml** en changeant ces valeurs :
 
 ```yaml
 CLUSTER_NAME: tkg-workload-cluster
@@ -333,20 +333,20 @@ Lancez cette commande pour créer le cluster
 tanzu cluster create --file tkg-workload-cluster.yaml
 ```
 
-Nous allons nous connecter au cluster en executant cette suite de commandes
+Nous allons nous connecter au cluster pour exécuter cette suite de commandes
 
 ```bash
-# Autorisation de connexion au cluster
+# Autorisation de la connexion au cluster
 tanzu cluster kubeconfig get tkg-workload-cluster --admin
-# Positionnement sur le cluster tkg-worload-cluster
-# Les comptes d'administration ont toujours cette forme nomcluster-admin@nomcluster
+# Positionnement sur le cluster tkg-workload-cluster
+# Les comptes d'administration ont toujours cette formee nomcluster-admin@nomcluster
 kubectl config use-context tkg-workload-cluster-admin@tkg-workload-cluster
 ```
 ### Installation du Load-Balancer
 
-Maintenant que nous sommes connecté au cluster de **Workload** nous allons installer une application qui servira de loadbalancer entre le réseau interne au cluster et le réseau du VLAN10, pour ceci nous allons ajouter l'application **kube-vip** sur le cluster de **Workload**
+Nous allons installer un package **kube-vip** qui servira de *load-balancer* entre le réseau interne au cluster et le réseau du VLAN10.
 
-exécutez ces commande :
+exécutez ces commandes :
 
 ```bash
 # Création d'un dossier pour accueillir l'application kube-vip depuis git
@@ -379,9 +379,8 @@ tanzu package install kubevip -p kubevip.terasky.com -v 0.3.9 -f values.yaml
 
 ### Installation d'une application
 
-Nous allons installer une application et tester que cette application fonctionne
 
-Lancez ces commandes
+Lancez ces commandes pour installer une nouvelle application dans le cluster de **Workload**
 
 
 ```bash
@@ -396,13 +395,11 @@ kubectl get all -n yelb
 ```
 Les adresses IP internes au cluster KUBERNETES apparaissent dans la colonne **CLUSTER-IP**, les applications qui sont visibles depuis l'extérieur du cluster ont une adresse IP dans la colonne **EXTERNAL-IP**.
 
-Dans cet exemple le site WEB est accessible avec l'adresse 192.168.0.223 sur le port 80 
+Dans cet exemple le site WEB est accessible avec l'adresse **192.168.0.223** sur le port **80** 
 
 ![04 Verify Application 01](images/04-verify-application-01.png){.thumbnail}
 
-Allez sur la console de la machine virtuelle, utilisez le navigateur WEB et allez sur l'URL `http://192.168.0.223`
-
-Vous constaterez que le site WEB est disponible.
+Au travers de la console **Bootstrap** utilisez le navigateur **WEB** pour vous connecter sur l'URL `http://192.168.0.223`
 
 ![04 Verify Application 02](images/04-verify-application-02.png){.thumbnail}
 
