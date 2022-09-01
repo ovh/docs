@@ -6,7 +6,7 @@ section: Sauvegarde
 order: 2
 ---
 
-**Dernière mise à jour le 01/02/2022**
+**Dernière mise à jour le 30/08/2022**
 
 ## Objectif
 
@@ -30,11 +30,11 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
-### Étape 1 : Activer l’option sauvegarde automatisée
+### Étape 1 : Activer l’option de sauvegarde automatisée
 
 Après avoir sélectionné votre VPS, cliquez sur l'onglet `Backup automatisé`{.action} dans le menu horizontal.
 
-Nous vous invitons à prendre connaissance des informations tarifaires à l'étape suivante, puis de cliquer sur le bouton `Commander`{.action}. Vous serez guidé dans le processus de commande et recevrez un e-mail de confirmation. Les sauvegardes seront désormais créées quotidiennement jusqu’à ce que l’option soit à nouveau résiliée.
+Nous vous invitons à prendre connaissance des informations tarifaires à l'étape suivante. Cliquez ensuite sur le bouton `Commander`{.action}. Vous serez guidé dans le processus de commande et recevrez un e-mail de confirmation. Les sauvegardes seront désormais créées quotidiennement jusqu’à ce que l’option soit résiliée.
 
 #### Configurer l’heure du backup
 
@@ -50,7 +50,7 @@ Dans la fenêtre qui s'affiche, modifiez l'heure de la journée (norme de temps 
 
 > [!primary]
 >
-Une fois validé dans l’espace client, le changement sera effectif dans un délai de 24 à 48 heures.
+> Une fois validé dans l’espace client, le changement sera effectif dans un délai de 24 à 48 heures.
 >
 
 ### Étape 2 : restaurer une sauvegarde à partir de l'espace client OVHcloud
