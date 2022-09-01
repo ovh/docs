@@ -379,7 +379,6 @@ tanzu package install kubevip -p kubevip.terasky.com -v 0.3.9 -f values.yaml
 
 ### Installation d'une application
 
-
 Lancez ces commandes pour installer une nouvelle application dans le cluster de **Workload**
 
 
