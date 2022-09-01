@@ -9,7 +9,7 @@ section: 'DNS (servidor y zona)'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 25/02/2021**
+**Última actualización: 28/07/2022**
 
 ## Objetivo
 
@@ -20,10 +20,21 @@ El SPF (Sender Policy Framework) permite que un servidor que recibe un mensaje d
 
 Esto es posible gracias a la información introducida en el propio SPF, que incluye los siguientes datos:
 
-- **servidores o direcciones IP**: esto permitirá identificarlos como fuentes de envío legítimas;
-- **un calificador**: permitirá aconsejar al servidor que reciba los mensajes de correo una forma específica de reaccionar a un mensaje considerado como no legítimo, es decir, procedente de un origen que presente un riesgo .
+- **direcciones de servidores y/o direcciones IP**: para poder identificarlos como fuentes de envío legítimas.
+- **un calificador**: permitirá recomendar al servidor que reciba los mensajes de correo una forma de reaccionar a un mensaje considerado como no legítimo, es decir, procedente de un origen que no está listado.
+
 
 Así pues, usted deberá asegurarse de indicar en el SPF los orígenes de envíos que utilice para enviar emails con su nombre de dominio. Estas fuentes pueden ser su propio servidor, el de su proveedor o una de las soluciones de correo electrónico de OVHcloud.
+
+> **Caso práctico** <br> 
+> Está enviando un email desde su dirección `contact@mydomain.ovh`.
+> Solo el servidor **saliente A** (Outgoing Mail Server **A**) está declarado en el registro SPF del dominio `mydomain.ovh`.
+> Cuando el servidor de recepción (Inbound Mail Server) recibe el mensaje de correo, este lee la zona DNS de su dominio `mydomain.ovh` para inspeccionar el registro SPF.
+>
+> - Dado que el servidor saliente **A** (Outgoing Mail Server **A**) está bien listado en el registro SPF, el mensaje se enviará normalmente a la bandeja de entrada del destinatario.
+> - Al no estar incluido en el registro SPF el servidor saliente **B** (Outgoing Mail Server **B**), el mensaje enviado desde este servidor se marcará como sospechoso en la bandeja de correo entrante. Esto puede traducirse en una mención `[SPAM]` en el asunto del e-mail, la colocación en una carpeta `Correo indeseable`, o una supresión directa, según las reglas del servidor de recepción.
+>
+> ![Dominio](images/spf_records_diagram.png){.thumbnail}
 
 > [!primary]
 >
