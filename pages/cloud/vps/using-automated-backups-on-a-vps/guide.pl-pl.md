@@ -62,8 +62,6 @@ Całkowite zastąpienie istniejącej usługi w wyniku przywrócenia nie jest kon
 >Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja “Sprawdź również” tego przewodnika.
 >
 
-#### Krok 1: Panel klienta
-
 Kliknij ikonę `...`{.action} obok kopii zapasowej, do której chcesz uzyskać dostęp, i wybierz pozycję `Montowanie`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}

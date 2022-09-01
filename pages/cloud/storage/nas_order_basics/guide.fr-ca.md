@@ -177,6 +177,6 @@ Confirmez l'action dans la fenêtre qui apparaît en cliquant sur `Supprimer la 
 
 [Monter votre NAS via un partage NFS](https://docs.ovh.com/ca/fr/storage/nas/nas-nfs/)
 
-[Monter votre NAS sur Windows Server via CIFS](../nas-cifs/)
+[Montez votre NAS sur Windows Server via CIFS](https://docs.ovh.com/ca/fr/storage/nas/nas-cifs/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

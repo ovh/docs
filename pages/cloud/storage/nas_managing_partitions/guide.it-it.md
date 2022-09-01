@@ -283,8 +283,8 @@ Per eliminare una partizione, utilizza questa pagina:
 
 ## Per saperne di più
 
-[Eseguire il mount di un NAS tramite NFS](../nas-nfs/)
+[Eseguire il mount di un NAS tramite NFS](https://docs.ovh.com/it/storage/nas-nfs/)
 
-[Configura il tuo NAS su Windows Server tramite CIFS](../nas-cifs/)
+[Configura il tuo NAS su Windows Server tramite CIFS](https://docs.ovh.com/it/storage/nas/nas-cifs/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

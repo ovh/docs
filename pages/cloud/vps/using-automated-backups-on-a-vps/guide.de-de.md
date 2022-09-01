@@ -59,8 +59,6 @@ Es ist nicht erforderlich, Ihren laufenden Dienst mit einer Wiederherstellung vo
 >Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Weitere Hinweise finden Sie im Teil “Weiterführende Informationen” dieser Anleitung.
 >
 
-#### Schritt 1: Kundencenter 
-
 Klicken Sie auf `...`{.action} neben dem Backup, auf das Sie zugreifen müssen, und wählen Sie `Mounten`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}

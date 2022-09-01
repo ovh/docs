@@ -176,6 +176,6 @@ Confirm the action in the popup window by clicking on `Delete partition`{.action
 
 [Mounting your HA-NAS via NFS share](https://docs.ovh.com/gb/en/storage/nas-nfs/)
 
-[Mounting your HA-NAS on Windows Server via CIFS](../nas-cifs/)
+[Mount your NAS on Windows Server via CIFS](https://docs.ovh.com/gb/en/storage/nas/nas-cifs/)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,6 +1,6 @@
 ---
-title: Änderung der Größe einer Instanz
-excerpt: Erfahren Sie hier, wie Sie die Größe einer Instanz in OVHcloud Kundencenter
+title: Änderung der Größe einer Instanz im Kundencenter
+excerpt: Erfahren Sie hier, wie Sie die Größe einer Instanz in OVHcloud Kundencenter ändern
 slug: resize-an-instance-manager
 section: Verwaltung im OVHcloud Kundencenter
 order: 06

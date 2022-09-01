@@ -28,7 +28,7 @@ As a result of increased activity, or simply new needs, your instance may not be
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](https://docs.ovh.com/asia/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance)
+- An [OVHcloud Public Cloud instance](https://docs.ovh.com/asia/en/public-cloud/public-cloud-first-steps/#create-instance)
 - [Access to the Horizon interface](../configure_user_access_to_horizon/)
 
 ## Instructions

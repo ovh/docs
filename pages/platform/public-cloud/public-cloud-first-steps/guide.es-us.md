@@ -151,7 +151,7 @@ Por último, haga clic en el botón `Añadir una llave SSH`{.action}. Aparecerá
 ![add key](images/puttygen-04.png){.thumbnail}
 
 
-### 3. Crear una instancia
+### 3. Crear una instancia  <a name="create-instance"></a>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

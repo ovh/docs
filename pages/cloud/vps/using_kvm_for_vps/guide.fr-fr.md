@@ -66,13 +66,13 @@ Un menu graphique s'ouvre et vous permet de sélectionner un modèle de clavier.
 
 Utilisez les touches fléchées pour accéder à l'option la plus proche de votre matériel, puis appuyez sur "Entrée". 
 
-![KVM](images/kvm_vps02.png){.thumbnail}
-
 Dans le menu suivant, choisissez votre pays.
 
-![KVM](images/kvm_vps03.png){.thumbnail}
+![KVM](images/kvm_vps02.png){.thumbnail}
 
 Le troisième menu vous permet de spécifier la disposition réelle du clavier.
+
+![KVM](images/kvm_vps03.png){.thumbnail}
 
 Selon vos choix, d'autres options peuvent apparaître après ce troisième menu.
 
