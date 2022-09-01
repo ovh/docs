@@ -9,7 +9,7 @@ order: 01
 
 ## Objectif
 
-Lorsque vous lancez une opération sur un nom de domaine tel qu'un transfert, un changement de propriétaire ou même lors de sa création, vous êtes susceptible de rencontrer des erreurs nécessitant une intervention de votre part.
+La création d'un nom de domaine, son transfert, son changement de propriétaire sont autant d'opérations pour lesquelles une erreur peut survenir. Une intervention de votre part peut alors s'avérer nécessaire.
 
 **Découvrez comment agir lorsqu'une erreur survient sur un nom de domaine.**
 
