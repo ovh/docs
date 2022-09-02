@@ -12,7 +12,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 06-09-2021**
+**Ostatnia aktualizacja z dnia 02-09-2022**
 
 ## Wprowadzenie
 
@@ -70,7 +70,7 @@ Pamiętaj, że OVHcloud nie jest operatorem Twojej domeny w momencie rozpoczęci
 > Po odblokowaniu Twojej domeny otrzymasz siedem (7) dni na transfer do OVHcloud. Po tym czasie Twoja domena zostanie automatycznie zablokowana, jeśli nie złożysz wniosku o zmianę operatora domeny.
 >
 
-### Etap 3: zlecić transfer domeny do OVHcloud
+### Etap 3: zlecić transfer domeny do OVHcloud <a name="step3"></a>
 
 Po odblokowaniu Twojej domeny i uzyskanym kodzie możesz zamówić jej transfer z [naszej strony WWW](https://www.ovhcloud.com/pl/domains/){.external}. Wprowadź nazwę Twojej domeny, po czym postępuj zgodnie z kolejnymi instrukcjami.
 
@@ -112,6 +112,13 @@ Transfer domeny wiąże się z potwierdzeniem przez e-mail. Etap ten może zosta
 >
 > Potwierdzenie transferu poprzez link musi zostać wykonane w ciągu 5 dni od daty zlecenia. Po upływie tego terminu transfer zostanie anulowany.
 >
+
+#### Co zrobić, jeśli nie otrzymałeś e-maila z potwierdzeniem transferu?
+
+Sprawdź adres e-mail właściciela domeny, w tym foldery "SPAM" / "niechciane wiadomości".
+
+Jeśli e-mail do potwierdzenia nie zostanie wykryty, skontaktuj się z pomocą OVHcloud poprzez utworzenie zgłoszenia. Usługi OVH mogą wówczas anulować transfer. Po anulowaniu operacji zmień adres e-mail właściciela domeny, preferując innego dostawcę e-mail.<br>
+Po zmianie adresu e-mail wykonaj [nowy wniosek o transfer](#step3).
 
 ### Etap 5: zarządzaj domeną za pomocą OVHcloud
 
