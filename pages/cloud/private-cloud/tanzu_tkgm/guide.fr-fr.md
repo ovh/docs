@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 01/09/2022**
+**Dernière mise à jour le 02/09/2022**
 
 ## Objectif
 
@@ -28,7 +28,7 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Avoir un identifiant actif dans vSphere
+- Avoir un identifiant actif dans vSphere.
 - Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
 - Disposer de ces ressources :
     - 8 GO de mémoire, 4 vCPU et 250 Go de stockage pour la machine virtuelle **bootstrap**.
@@ -37,7 +37,7 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 
 ## En pratique
 
-Nous allons installer **VMware Tanzu Kubernetes Grid** dans un cluster **Hosted Private Cloud Powered by VMware** sur le VLAN10 avec ces paramètres :
+Nous allons installer **VMware Tanzu Kubernetes Grid** sur un cluster **Hosted Private Cloud Powered by VMware** et utilser le  VLAN10 avec ces paramètres :
 
 * **Lan** : `192.168.0.0/24`.
 * **Etendue DHCP** : `192.168.0.50 -> 192.168.0.100`.
@@ -50,7 +50,7 @@ VMware fourni une machine virtuelle sous forme de modèle OVA qui contient tous 
 Télécharger le fichier sur ce lien [TKGm 1.5.4](https://plik.fromsync.net/file/yMsZyou6CyYCqlQn/Es4foCOnmvvWBMsq/photon-3-kube-v1.22.9+vmware.1-tkg.1-06852a87cc9526f5368519a709525c68.ova), ensuite suivez ces instructions :
 
 
-Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster`{.action}, ensuite choisissez sur `Déployer un modèle OVF`{.action}.
+Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster`{.action}, ensuite choisissez `Déployer un modèle OVF`{.action}.
 
 ![01 integrate TKGM OVA 01](images/01-integrate-tkgm-ova01.png){.thumbnail}
 
@@ -118,9 +118,9 @@ Allez dans `Machines virtuelles (et modèles)`{.action} pour voir le modèle cr�
 
 Suivez ces instructions pour déployer la machine virtuelle **Bootstrap**. 
 
-Cette machine virtuelle a été créée par OVHcloud à partir de cette documentation [Installation manuelle de l'outil CLI pour le déploiement de **Tanzu Kubernetes GRID**](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
+Cette machine virtuelle a été créée par OVHcloud à partir de cette documentation [Installation manuelle de l'outil CLI pour le déploiement de **Tanzu Kubernetes GRID**](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html).
 
-Télécharger le modèle OVA de cette machine virtuelle à partir de cette adresse [Ubuntu & TKGm with Gnome](https://plik.fromsync.net/file/kHp0z2X3lpTJi3RB/4M3KLcF9nJLT9Emm/Ubuntu-22.04_TKGm-1.5.4_with_x.ova)
+Télécharger le modèle OVA de cette machine virtuelle à partir de cette adresse [Ubuntu & TKGm with Gnome](https://plik.fromsync.net/file/kHp0z2X3lpTJi3RB/4M3KLcF9nJLT9Emm/Ubuntu-22.04_TKGm-1.5.4_with_x.ova).
 
 Au travers de l'interface vSphere faites un clic droit sur le `cluster`{.action} et choisissez dans le menu `Déployer un modèle OVF`{.action}.
 
@@ -150,7 +150,7 @@ Cliquez sur `SUIVANT`{.action} pour valider les choix.
 
 ![02 Add Bootstrapvm 07](images/02-add-bootstrap-vm-from-ova07.png){.thumbnail}
 
-Sélectionnez un `Stockage partagé en NFS v3`{.action} et cliquez sur `SUIVANT`{.action}.
+Sélectionnez un `Stockage partagé en NFS v3`{.action} ensuite cliquez sur `SUIVANT`{.action}.
 
 ![02 Add Bootstrapvm 08](images/02-add-bootstrap-vm-from-ova08.png){.thumbnail}
 
@@ -158,13 +158,13 @@ Choisissez `VLAN10` pour le réseau de destination et cliquez sur `SUIVANT`{.act
 
 ![02 Add Bootstrapvm 09](images/02-add-bootstrap-vm-from-ova09.png){.thumbnail}
 
-Ajoutez ces informations dans **Networking**
+Ajoutez ces informations dans **Networking**.
 
-* **Hostname** : `bootstrap`
-* **IP Address** : `192.168.0.199`
-* **Network CIDR Prefix** : `24`
-* **Gateway** : `192.168.0.254`
-* **Dns** : `1.1.1.1,1.0.0.1`
+* **Hostname** : `bootstrap`.
+* **IP Address** : `192.168.0.199`.
+* **Network CIDR Prefix** : `24`.
+* **Gateway** : `192.168.0.254`.
+* **Dns** : `1.1.1.1,1.0.0.1`.
 
 Saisissez et confirmez le mot de passe dans **OS Credentials** ensuite cliquez sur `SUIVANT`{.action}.
 
@@ -188,9 +188,9 @@ La console de la machine virtuelle apparait.
 
 ### Autorisation d'accès au cluster PCC depuis la machine virtuelle **Bootstrap**
 
-Les outils de configuration et d'administration de **Tanzu Kubernetes Grid** sont installés sur la machine virtuelle nouvellement installée. Cette machine virtuelle doit pouvoir se connecter à Internet et au cluster vSphere.
+Les outils de configuration et d'administration de **Tanzu Kubernetes Grid** sont installés sur la machine virtuelle **Bootstrap**. Cette machine virtuelle doit pouvoir se connecter à Internet et au cluster vSphere.
 
-Notez l'adresse **IP publique** que vous utilisez sur cette machine virtuelle et aidez-vous de ce guide [Autoriser des IP à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) pour donner accès au cluster vSphere depuis la nouvelle machine virtuelle.
+Notez l'adresse **IP publique** que vous utilisez sur cette machine virtuelle et aidez-vous de ce guide [Autoriser des adresses IP à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) pour donner accès au cluster vSphere depuis la nouvelle machine virtuelle.
 
 ### Déploiement du cluster **Tanzu Kubernetes Grid** sur votre infrastructure 
 
@@ -217,17 +217,17 @@ Le navigateur WEB va se lancer.
 
 ![03 Create TKG CLUSTER 02](images/03-create-tkg-cluster02.png){.thumbnail}
 
-Cliquez sur `Deploy`{.action} au dessous de **VMware vSphere**
+Cliquez sur `Deploy`{.action} au dessous de **VMware vSphere**.
 
 ![03 Create TKG CLUSTER 03](images/03-create-tkg-cluster03.png){.thumbnail}
 
-Saisissez ces informations 
+Saisissez ces informations :
 
 * **VCENTER SERVER** : `nom FQDN du cluster VMware`.
 * **USERNAME** : `utilisateur du cluster VMware`.
 * **PASSWORD** : `mot de passe de l'utilisateur du cluster VMware`.
 
-Ensuite cliquez sur `CONNECT`{.action}
+Ensuite cliquez sur `CONNECT`{.action}.
 
 ![03 Create TKG CLUSTER 04](images/03-create-tkg-cluster04.png){.thumbnail}
 
@@ -243,7 +243,7 @@ Copiez le contenu du fichier **~.ssh/id_rsa.pub** dans **SSH PUBLIC KEY** et cli
 
 ![03 Create TKG CLUSTER 07](images/03-create-tkg-cluster07.png){.thumbnail}
 
-Choisissez à droite `Production`{.action}, prenez dans **INSTANCE TYPE** `large etc...`.
+Choisissez à droite `Production`{.action} et prenez l'option `large etc...` dans **INSTANCE TYPE** .
 
 Ensuite saisissez ces valeurs :
 
@@ -272,25 +272,25 @@ Ensuite cliquez sur `NEXT`{.action}
 
 ![03 Create TKG CLUSTER 11](images/03-create-tkg-cluster11.png){.thumbnail}
 
-Sélectionnez dans **NETWORK NAME** le `VLAN10`{.action}
+Sélectionnez dans **NETWORK NAME** le `VLAN10`{.action}.
 
-Ensuite cliquez sur `NEXT`{.action} 
+Ensuite cliquez sur `NEXT`{.action}.
 
 ![03 Create TKG CLUSTER 12](images/03-create-tkg-cluster12.png){.thumbnail}
 
-Désactivez l'option `Enable Identity Management Settings`{.action} et cliquez sur `NEXT`{.action} 
+Désactivez l'option `Enable Identity Management Settings`{.action} et cliquez sur `NEXT`{.action}. 
 
 ![03 Create TKG CLUSTER 13](images/03-create-tkg-cluster13.png){.thumbnail}
 
-Sélectionnez l'image OVA intégrée au cluster `photon-3-kube-v1.22.9+vmware.1dans` **OS Image** et cliquez sur `NEXT`{.action} 
+Sélectionnez l'image OVA intégrée au cluster `photon-3-kube-v1.22.9+vmware.1dans` **OS Image** et cliquez sur `NEXT`{.action}.
 
 ![03 Create TKG CLUSTER 14](images/03-create-tkg-cluster14.png){.thumbnail}
 
-Décochez `Participate in the Customer Experience Improvement Program`{.action} et cliquez sur `NEXT`{.action} 
+Décochez `Participate in the Customer Experience Improvement Program`{.action} et cliquez sur `NEXT`{.action}. 
 
 ![03 Create TKG CLUSTER 15](images/03-create-tkg-cluster15.png){.thumbnail}
 
-Cliquez sur `REVIEW CONFIGURATION`{.action} 
+Cliquez sur `REVIEW CONFIGURATION`{.action}.
 
 ![03 Create TKG CLUSTER 16](images/03-create-tkg-cluster16.png){.thumbnail}
 
@@ -306,13 +306,13 @@ Le déploiement du cluster **Tanzu Kubernetes Grid** est lancé veuillez attendr
 
 ![03 Create TKG CLUSTER 18](images/03-create-tkg-cluster18.png){.thumbnail}
 
-Le cluster d'administration est déployé quand toutes les étapes du déploiement sont aux verts.
+Toutes les étapes du déploiement apparaissent ent verts, ce qui signifie que le déploiement est termninée.
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
 ### Déploiement d'un cluster de *Workload*
 
-Nous allons ajouter un cluster de *Workload* qui contiendra les applications *Kubernetes*. Exécutez ces commandes à partir de la machine virtuelle **Bootstrap**
+A partir de la machine virtuelle **Bootstrap** nous allons crééer un cluster de *Workload* dans lequel il sera possible de déployer des applications.
 
 Copiez le fichier qui a servi pour la création du cluster d'administration dans un fichier nommé **tkg-workload-cluster.yaml**.
 
@@ -327,13 +327,13 @@ CLUSTER_NAME: tkg-workload-cluster
 VSPHERE_CONTROL_PLANE_ENDPOINT: 192.168.0.11
 ```
 
-Lancez cette commande pour créer le cluster
+Lancez cette commande pour créer le cluster :
 
 ```bash
 tanzu cluster create --file tkg-workload-cluster.yaml
 ```
 
-Nous allons nous connecter au cluster pour exécuter cette suite de commandes
+Connectez-vous au cluster avec ces commandes :
 
 ```bash
 # Autorisation de la connexion au cluster
@@ -342,9 +342,9 @@ tanzu cluster kubeconfig get tkg-workload-cluster --admin
 # Les comptes d'administration ont toujours cette formee nomcluster-admin@nomcluster
 kubectl config use-context tkg-workload-cluster-admin@tkg-workload-cluster
 ```
-### Installation du Load-Balancer
+### Installation du **Load-Balancer**
 
-Nous allons installer un package **kube-vip** qui servira de *load-balancer* entre le réseau interne au cluster et le réseau du VLAN10.
+Le **Load-Balancer** fait le lien entre le cluster et le réseau local, pour cela nous allons utiliser le package **kube-vip** qui servira de *load-balancer* entre le réseau interne au cluster et le réseau du VLAN10. Vous trouverez plus d'informations sur ce lien [Documentation kube-vip](https://kube-vip.io/).
 
 Exécutez ces commandes :
 
@@ -362,13 +362,13 @@ kubectl apply -n tanzu-package-repo-global -f metadata.yml
 kubectl apply -n tanzu-package-repo-global -f package.yaml
 ```
 
-Créer le fichier **~/kube-vip/tkgm-customizations/carvel-packages/kube-vip-package/values.yaml** avec ce contenu qui correspond aux adresses IP utilisable sur le VLAN10 pour déployer une application
+Créez le fichier **~/kube-vip/tkgm-customizations/carvel-packages/kube-vip-package/values.yaml** avec ce contenu qui correspond aux adresses IP utilisable sur le VLAN10 pour déployer une application
 
 ```yaml
 vip_range: 192.168.0.210-192.168.0.250
 ```
 
-Installez le package à l'aide de cette commande
+Installez le package à l'aide de cette commande.
 
 ```bash
 # Installation
@@ -379,7 +379,7 @@ tanzu package install kubevip -p kubevip.terasky.com -v 0.3.9 -f values.yaml
 
 ### Installation d'une application
 
-Lancez ces commandes pour installer une nouvelle application dans le cluster de **Workload**
+Lancez ces commandes pour installer une nouvelle application dans le cluster de **Workload**.
 
 
 ```bash
@@ -394,11 +394,11 @@ kubectl get all -n yelb
 ```
 Les adresses IP internes au cluster KUBERNETES apparaissent dans la colonne **CLUSTER-IP**, les applications qui sont visibles depuis l'extérieur du cluster ont une adresse IP dans la colonne **EXTERNAL-IP**.
 
-Dans cet exemple le site WEB est accessible avec l'adresse **192.168.0.223** sur le port **80** 
+Dans cet exemple le site WEB est accessible avec l'adresse **192.168.0.223** sur le port **80**.
 
 ![04 Verify Application 01](images/04-verify-application-01.png){.thumbnail}
 
-Au travers de la console **Bootstrap** utilisez le navigateur **WEB** pour vous connecter sur l'URL `http://192.168.0.223`
+Au travers de la console **Bootstrap** utilisez le navigateur **WEB** pour vous connecter sur l'URL `http://192.168.0.223`.
 
 ![04 Verify Application 02](images/04-verify-application-02.png){.thumbnail}
 
