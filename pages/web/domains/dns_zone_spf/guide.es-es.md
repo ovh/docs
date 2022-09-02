@@ -196,14 +196,6 @@ La configuración es la siguiente:
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-### Configuración SPF OVHcloud para Exchange Provider
-
-Para Exchange Provider, la configuración es la siguiente:
-
-```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.biz ~all"
-```
-
 ### Configuración SPF OVHcloud para Private Exchange 
 
 Para la solución Private Exchange, es necesario indicar las direcciones IP del servidor de correo. Para ello, utilice el argumento `ip4` para indicar la dirección IP de su servidor Private Exchange.

@@ -96,7 +96,7 @@ W oknie, które się wyświetli, pojawi się kilka rekordów DNS. Jeśli chcesz 
 
 - [Dodaj rekord TXT](#txtrecord): dla użytkowników, którzy są ostrzeżeni lub mają już pełny wpis. Na przykład, dostawca rozwiązania poczty elektronicznej przekazuje Ci wartość.
 - [Dodaj rekord SPF](#spfrecord): dla użytkowników, którzy nie posiadają całego rekordu. Na przykład dysponujesz tylko adresem IP lub nazwą hosta serwera e-mail.
-- [Dodaj rekord SPF OVHcloud](#spfrecordovhcloud)**i użyj konfiguracji OVHcloud**: dla użytkowników posiadających tylko oferty e-mail OVHcloud dla ich domeny (poza [Private Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external} i Exchange Provider).
+- [Dodaj rekord SPF OVHcloud](#spfrecordovhcloud)**i użyj konfiguracji OVHcloud**: dla użytkowników posiadających tylko oferty e-mail OVHcloud dla ich domeny (poza [Private Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}).
 
 ![domena](images/spf_records_add_entry.png){.thumbnail}
 
@@ -194,14 +194,6 @@ Konfiguracja jest następująca:
 
 ```bash
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
-```
-
-### Konfiguracja SPF OVHcloud dla usługi Exchange Provider
-
-W przypadku oferty Exchange Provider konfiguracja jest następująca:
-
-```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.biz ~all"
 ```
 
 ### Konfiguracja SPF OVHcloud w usłudze Private Exchange 

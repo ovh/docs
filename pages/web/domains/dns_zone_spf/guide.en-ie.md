@@ -94,7 +94,7 @@ In the window that pops up, the configuration assistant offers several different
 
 - [Add a TXT](#txtrecord) record: for users who are notified or already have the full record. For example, your email solution provider will send you the value.
 - [Add an SPF](#spfrecord) record: for users who do not have the entire record. For example, you only have an IP address or the host name of the email server.
-- [Add an OVHcloud](#spfrecordovhcloud) **SPF record and use the OVHcloud** configuration: for users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/){.external} and Exchange Provider).
+- [Add an OVHcloud](#spfrecordovhcloud) **SPF record and use the OVHcloud** configuration: for users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/){.external}).
 
 ![domain](images/spf_records_add_entry.png){.thumbnail}
 
@@ -188,14 +188,6 @@ The configuration is as follows:
 
 ```bash
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
-```
-
-### OVHcloud SPF configuration for Exchange Provider
-
-For the Exchange Provider solution, the configuration is as follows:
-
-```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.biz ~all"
 ```
 
 ### OVHcloud SPF configuration for Private Exchange 

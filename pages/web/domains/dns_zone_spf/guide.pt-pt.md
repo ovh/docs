@@ -94,7 +94,7 @@ Na nova janela, irá visualizar vários registos DNS. Para adicionar um SPF, tem
 
 - [Adicionar um registo TXT](#txtrecord): para utilizadores experientes ou que já disponham do registo completo. Por exemplo, o seu fornecedor de solução de e-mail transmite-lhe o valor.
 - [Adicionar um registo SPF](#spfrecord): para os utilizadores que não possuem a totalidade do registo. Por exemplo, dispõe apenas de um endereço de IP ou do nome do host do servidor de e-mail.
-- [Adicionar um registo SPF OVHcloud ](#spfrecordovhcloud)e utilizar **a configuração da OVHcloud**: para os utilizadores que apenas possuem as ofertas de e-mail OVHcloud no seu nome de domínio (exceto [Private Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external} e Exchange Provider).
+- [Adicionar um registo SPF OVHcloud ](#spfrecordovhcloud)e utilizar **a configuração da OVHcloud**: para os utilizadores que apenas possuem as ofertas de e-mail OVHcloud no seu nome de domínio (exceto [Private Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}).
 
 ![domínio](images/spf_records_add_entry.png){.thumbnail}
 
@@ -186,15 +186,7 @@ A configuração SPF OVHcloud geral aplica-se às seguintes soluções:
 A configuração é a seguinte:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com all
-```
-
-### Configuração SPF OVHcloud para Exchange Provider
-
-Para a oferta Exchange Provider, a configuração é a seguinte:
-
-```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.biz ~all"
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com all"
 ```
 
 ### Configuração SPF OVHcloud para Private Exchange 
