@@ -1,18 +1,18 @@
 ---
-title: OVHclous AntiSpam - Unblocking an IP and Best Practices
+title: OVHcloud AntiSpam - Best Practices and Unblocking an IP
 slug: antispam-best-practices
-excerpt: Find out how to unblock your IP when it is blocked for SPAM and other best practices. 
+excerpt: Find out about our antispam best practices and how to unblock an IP blocked for SPAM. 
 section: Server Management
 order: xxxxx
 ---
 
-**Last updated 15th October 2021**
+**Last updated 30th August 2022**
 
 ## Objective
 
-For every IP available with OVHcloud products and services, as an internet service provider, OVHcloud will register and reserve it with organisations such as RIPE or ARIN. This means that we appear as the IP abuse contact for litigation in the WHOIS database.
+For every IP available with OVHcloud products and services, as an internet service provider, we will register and reserve it with organisations such as [RIPE](https://www.ripe.net/) or [ARIN](https://www.arin.net/). This means that we appear as the IP abuse contact for litigation in the WHOIS database.
 
-If an IP is reported to organisations such as Spamhaus and SpamCop?, which work to combat spam, malicious websites and phishing, then the reputation of the entire OVHcloud network is at stake.
+If an IP is reported to organisations such as Spamhaus and SpamCop, which work to combat spam, malicious websites and phishing, then the reputation of the entire OVHcloud network is at stake.
 
 It is therefore important that OVHcloud takes care of the reputation, quality and security of the network, which also forms an important part of your service.
 
@@ -22,12 +22,12 @@ Our system is based on the Vade Secure anti-spam technology.
 
 ### Blocked for SPAM
 
-Once an IP is blocked for SPAM, an email will be sent to your account containing the following information like the example below:
+Once an IP is blocked for SPAM, an email will be sent to your account containing information like the example below:
 
 > 
 > Dear Customer,
 >
-> Our anti-spam protection layer has detected that your IP 111.111.111.111 is sending spam.
+> Our anti-spam protection layer has detected that your IP 122.122.122.123 is sending spam.
 >
 > In order to protect our network, we have blocked the port 25 of your server, at the
 network level.
@@ -35,64 +35,57 @@ network level.
 > To help you investigate about this problem and fix it, here are a sample
 are some advanced details on your emails:
 >
->Destination IP: 35.35.35.35 - Message-ID: d24aa492-5f37-457f-9595-23ddc9e0f714@xxxxxxxxxxxxx.xx.local - Spam score: 300
-Destination IP: 35.35.35.35 - Message-ID: fc090jdhf934iu09bf084bfo92@xxxxxxxxxxxxx.com - Spam score: 300
-Destination IP: 35.35.35.35 - Message-ID: P0hbfo93407684bfoqljrlqvpLatS3RRB9rZw7e8s@xxxxxxxxxxxx.online - Spam score: 300
-Destination IP: 35.35.35.35 - Message-ID: 6ZUnls843bnf0934StxFasYGmhtDJRo@xxxxxxxxxxxx.online - Spam score: 300
-Destination IP: 35.35.35.35 - Message-ID: zcb.3z54da3kdfkl45802n0c0q98rqcc57e3b8aadfac63b2c408e3f5f9a27.1d44jkgnddfef.166489320375@xxxxxx.xxxx.net - Spam score: 300
-Destination IP: 35.35.35.35 - Message-ID: zcb.3z54da33hn98v9bcq-nrf3r67cc57e3b8aadfac63b2c408e3f5f9a27.1d44jd9340252.1655508652095@xxxxxx.xxxx.net - Spam score: 300
->
-> If you identified and fixed the spam issue, you can unblock
-your IP using your manager, simply by using that link :
-> <https://ca.ovh.com/manager/dedicated/#/ip?serviceName=nsxxxxxx.ip-xx-xx-xx.net>
->
+> Destination IP: 188.95.235.33 - Message-ID: d24aa492-5f37-457f-9595-23ddc9e0f714@xxxxxxxxxxxxx.xx.local - Spam score: 300
+> Destination IP: 188.95.235.33 - Message-ID: fc090jdhf934iu09bf084bfo92@xxxxxxxxxxxxx.com - Spam score: 300
+> Destination IP: 188.95.235.33 - Message-ID: P0hbfo93407684bfoqljrlqvpLatS3RRB9rZw7e8s@xxxxxxxxxxxx.online - Spam score: 300
+> Destination IP: 188.95.235.33 - Message-ID: 6ZUnls843bnf0934StxFasYGmhtDJRo@xxxxxxxxxxxx.online - Spam score: 300
+> Destination IP: 188.95.235.33 - Message-ID: zcb.3z54da3kdfkl45802n0c0q98rqcc57e3b8aadfac63b2c408e3f5f9a27.1d44jkgnddfef.166489320375@xxxxxx.xxxx.net - Spam score: 300
+> Destination IP: 188.95.235.33 - Message-ID: zcb.3z54da33hn98v9bcq-nrf3r67cc57e3b8aadfac63b2c408e3f5f9a27.1d44jd9340252.1655508652095@xxxxxx.xxxx.net - Spam score: 300
+> <br>
+> <br>
 
 ### What to do after receiving the email alert
 
-#### 1. Resolve the issue and unblock your IP
+#### 1. Resolve the issue 
 
-The first step is to identify the issue, then unblock your IP.
+The first step is to identify the issue, resolve it, then unblock your IP.
 
 **Before unblocking an IP**
-
 
 * Stop sending emails (e.g. stop all mail software such as qmail, Postfix, Sendmail etc.).
 
 * Check the email queue (e.g. qmHandle for qmail, postqueue -p for Postfix).
 
-* Analyse your logs using the Message-ID found in the block alert.
+* Analyse your logs using the **Message-ID** found in the block alert.
 
-* Make sure you are not sending SPAM and the emails are legitimate. If that is not the case, we strongly recommend you to resolve the issue before unblocking the IP. Please consult the second part of this guide for best pratices. 
+* If you are indeed sending SPAM or illegitimate emails, we strongly recommend you to resolve the issue before unblocking the IP. Please consult the second part of this guide for email [best pratices](#best-practices). 
 
 Once the issue has been resolved, you can unblock your IP by performing the following steps:
 
 > [!alert]
-> IMPORTANT !!
-Do not unblock the IP under any circumstances without having suspended the sending of emails from your server, otherwise you will immediately get blocked for a second time (and a longer duration). 
+> 
+> Do not unblock the IP under any circumstances without having suspended the sending of emails from your server, otherwise you will immediately get blocked for a second time (and a longer duration). 
 >
 
 #### From the OVHcloud Manager
 
-In your [OVHcloud Control Panel](), go to the `Bare Metal Cloud`{.action} and click on `IP`{.action}.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} and click on `IP`{.action}.
 
-There will be a pop-up message with the IP that has been blocked for SPAM.
+A pop-up message indicates the IP/service that has been blocked for SPAM.
 
-image 
+![Anti spam alert](images/alertantispam.png){.thumbnail}
 
-Next, click on the `...`{.action} and select `anti spam`{.action}
+Next, in the section "My public IP addresses and associated services" , click on the `...`{.action} next to the corresponding IP/service and select `Anti-spam`{.action}.
 
-Image
+![antispam](images/antispam.png){.thumbnail}
 
-In the new tab, click on `Unblock the anti-spam`{.action} and confirm.
+In the new tab, click on `Unblock the anti-spam`{.action} at the bottom and confirm.
+
+![Unblock IP](images/unblockip.png){.thumbnail}
 
 The IP is being released, the operation may take several minutes.
 
 Once done, your IP will be unblocked.
-
-> [!primary]
->
-> If you want the list of message-IDs detected as spam, click on `Details`{.action}. 
->
 
 #### From the OVHcloud API
 
@@ -114,46 +107,43 @@ Here's an example of what you should see:
     "2001:41d0:68:a00::/56",
     "2001:41d0:68:f000::/56",
     "2001:41d0:117:db00::/56",
-    "178.32.171.80/28",
-    "178.33.222.96/28",
-    "176.31.44.80/28",
-    "178.33.92.128/27",
-    "46.105.137.0/27",
-    "178.33.92.64/27" 
+    "122.122.122.122/28",
+    "145.56.222.96/28",
+    "188.81.49.30/28",
 >
 
-Next, search for IPs in a particular state with the following call. If you already know the IP blocked, you can move to the [next step](#unblock-the-ip):
+Next, search for IPs in a particular state with the following call. If you already know the IP blocked, you can move on to the [next step](#unblock-the-ip):
 
 > [!api]
 >
 > @api {GET} /ip/{ip}/spam
 >
 
-**ip**:	Specify the IP block retrieved in the previous step with the netmask. For example 176.31.44.80/28 for a single IP block.
+**ip**:	Specify the IP block retrieved in the previous step with the netmask. For example 122.122.122.122/28.
 **state**: Specify the state you are looking for.
 
-Here's an example result (in this instance, the 176.31.44.80/28 block was selected):
+Here's an example result (in this instance, the 122.122.122.122/28 block was selected):
 
 >
-    "176.31.44.81" 
+    "122.122.122.123" 
 >
 
-If the IP is blocked, you can get information on the blocking with the following call, otherwise, move to the [next step](#unblock-the-ip).
+If the IP is blocked, you can get information on the blocking with the following call, otherwise, move on to the [next step](#unblock-the-ip).
 
 > [!api]
 >
 > @api {GET} /ip/{ip}/spam/{ipSpamming}
 >
 
-**ip**: Specify the IP block retrieved in the previous step with the netmask.
+**ip**: Specify the IP block retrieved in the previous step with the netmask.<br>
 **ipSpamming**: Specify the previously retrieved IP in "blockedForSpam" state, for example.
 
-Here's an example result (in this instance block 176.31.44.80/28 and IP 176.31.44.81 were selected):
+Here's an example result (in this instance block 122.122.122.122/28 and IP 122.122.122.123 were selected):
 
 >
     time: 3600,
     date: "2022-08-29T17:42:50+01:00",
-    ipSpamming: "176.31.44.81",
+    ipSpamming: "122.122.122.123",
     state: "blockedForSpam" 
 >
 
@@ -167,15 +157,16 @@ So:
 >
 
 
-If you wish to obtain the statistics on what has been detected, use the following api call, otherwise move to the [next step](#unblock-the-ip).
+If you wish to obtain the statistics on what has been detected, use the following api call, otherwise move on to the [next step](#unblock-the-ip).
 
 > [!api]
 >
 > @api {GET} /ip/{ip}/spam/{ipSpamming}/stats
 >
 
-**ip**:	Specify the IP block retrieved in the previous step with the netmask
-**ipSpamming**:	Specify the previously retrieved IP in "blockedForSpam" state, for example.
+
+**ip**:	Specify the IP block retrieved in the previous step with the netmask. </br>
+**ipSpamming**:	Specify the previously retrieved IP in "blockedForSpam" state, for example.</br>
 **from and to**: Use the date format used in the previous function (YYYY-MM-DDTHH:MM+01:SS).
 
 
@@ -184,7 +175,7 @@ Here is an example result:
 >
     {
     "messageId": "2PXQSX-3JRAUU-SF@obfuscated.com",
-    "destinationIp": "82.12.242.9",
+    "destinationIp": "188.95.235.33",
     "date": 1385640992,
     "spamscore": 410
     }
@@ -205,8 +196,7 @@ To unblock your IP, use the following call:
 > @api {POST} /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
-
-**ip**: Specify the IP block retrieved in the previous step with the netmask.
+**ip**: Specify the IP block retrieved in the previous step with the netmask.<br>
 **ipSpamming** : Specify the previously retrieved IP in blockedForSpam state, for example.
 
 
@@ -222,7 +212,7 @@ More than 129 seconds later:
 >
     time: 3600,
     date: "2022-08-29T17:42:50+01:00",
-    ipSpamming: "176.31.44.81",
+    ipSpamming: "122.122.122.123",
     state: "unblocking" 
 >
 
@@ -244,7 +234,6 @@ Best practices are recommended methods which are often based on these documents 
 **Sending Volume**
 
 If your outgoing email volume is very high, you are advised to:
-
 
 * reserve an IP block dedicated solely to email usage.
 * provide an 'abuse' address on this block in order to receive complaints.
@@ -276,14 +265,14 @@ This system enables you to follow up on feedback provided by some internet servi
 
 **Authentication**
 
-Some authentication services allow you to protect your reputation.
+Some authentication services allow you to protect your reputation:
 
 
-* Sender-ID: An email authentication technology developed by Microsoft which validates the authenticity of your domain name by verifying the IP address of the sender. This technology is based on the IETF standard: RFC4406
+* **Sender-ID**: An email authentication technology developed by Microsoft which validates the authenticity of your domain name by verifying the IP address of the sender. This technology is based on the IETF standard: RFC4406
 
-* SPF: Sender Policy Framework is a standard for verififying the domain of the sender. It is based on RFC4408 and consists of adding an SPF or TXT field to the domain DNS, which contains the list of IPs authorised to send emails from this domain.
+* **SPF**: Sender Policy Framework is a standard for verififying the domain of the sender. It is based on RFC4408 and consists of adding an SPF or TXT field to the domain DNS, which contains the list of IPs authorised to send emails from this domain.
 
-* Reverse DNS: Reverse enables your IP to be "translated” into your domain. That allows the domain associated with the IP address to be found.
+* **Reverse DNS**: Reverse enables your IP to be "translated” into your domain. That allows the domain associated with the IP address to be found.
 
 * DKIM: This standard is described in [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871).  
 AOL and Google (Gmail) work on this basis. 
@@ -295,8 +284,8 @@ For more information on the above services, please consult our guide on [Optimis
 If your emails do comply, you can inform us by sending a sample of your email (including header). Our technical support team will then assist you with the next steps. Simply create a support ticket from your OVHcloud manager and include the following information:
 
 * The IP of the service blocked for SPAM.
-* An original copie of the email(s) flagged as SPAM (you should be able to identify that with the **message ID** included in the ANTISPAM email). It is crucial to provide only the copy of the email flagged as SPAM.
-* The .EML file of the email provided, this should include the **header** and **footer** of the email. If you are not familiar with how to extract .EML file, please consult the following guide [Retrieving email headers](https://docs.ovh.com/gb/en/emails/shared_mail_guide_to_view_email_headers/).
+* An original copie of the email(s) flagged as SPAM (you should be able to identify that with the **message ID** included in the ANTISPAM email). If not message ID was provided, simply send us a copy of the emails sent before receiving the alert. Please only provide the copy of the email flagged as SPAM.
+* The .EML file of the email provided, this should include the **header** and **footer** of the email. If you are not familiar with how to extract an .EML file, please consult the following guide [Retrieving email headers](https://docs.ovh.com/gb/en/emails/shared_mail_guide_to_view_email_headers/).
 
 
 ## Go further
