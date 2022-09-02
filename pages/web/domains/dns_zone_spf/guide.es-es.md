@@ -148,7 +148,7 @@ Una vez completada la información, haga clic en `Siguiente`{.action}, asegúres
 
 #### Utilizar el registro SPF de OVHcloud <a name="spfrecordovhcloud"></a>
 
-Ha elegido el registro `SPF`{.action} y quiere aplicar la configuración de OVHcloud. que permite incluir todos los servidores de correo salientes de OVHcloud para los siguientes servicios de correo:
+Ha elegido el registro `SPF`{.action} y quiere aplicar la configuración de OVHcloud. Esto le permite incluir todos los servidores de correo saliente de OVHcloud para las siguientes ofertas de correo electrónico:
 
 - Solo MX Plan o incluido en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} .
 - [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/).

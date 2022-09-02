@@ -94,7 +94,7 @@ In the window that pops up, the configuration assistant offers several different
 
 - [Add a TXT](#txtrecord) record: for users who are notified or already have the full record. For example, your email solution provider will send you the value.
 - [Add an SPF](#spfrecord) record: for users who do not have the entire record. For example, you only have an IP address or the host name of the email server.
-- [Add an OVHcloud](#spfrecordovhcloud) **SPF record and use the OVHcloud** configuration: for users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](https://www.ovhcloud.com/en-au/emails/hosted-exchange/){.external} and Exchange Provider).
+- [Add an OVHcloud](#spfrecordovhcloud) **SPF record and use the OVHcloud** configuration: for users who only have OVHcloud email offers on their domain name.
 
 ![domain](images/spf_records_add_entry.png){.thumbnail}
 
@@ -187,33 +187,6 @@ The configuration is as follows:
 ```bash
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
-
-### OVHcloud SPF configuration for Exchange Provider
-
-For the Exchange Provider solution, the configuration is as follows:
-
-```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.biz ~all"
-```
-
-### OVHcloud SPF configuration for Private Exchange 
-
-For the Private Exchange solution, you need to enter your email server’s IP addresses. To do this, use the `ip4` argument to enter the IP address of your Private Exchange server.
-
-```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
-```
-
-In the record below, you can add the argument `include:mx.ovh.com` if you are using [a shared](#ovhcloudspfvalue) email offer.
-
-> [!primary]
-> 
-> To retrieve the IP address of the Private Exchange server, click `Microsoft`{.action}, then `Exchange`{.action}. Next, click on the name of the Private Exchange service concerned.
->
-> In the `General`{.action} information tab, click the `A` in the `Server` diagnostic section. In the window that pops up, raise the value.
->
-> ![domain](images/spf_records_ip.png){.thumbnail}
-
 
 ## Go further
 

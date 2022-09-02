@@ -9,7 +9,7 @@ order: 5
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 
-**Última atualização: 25/02/2021**
+**Última atualização: 25-02-2021**
 
 ## Objetivo
 
@@ -21,8 +21,8 @@ O SPF (Sender Policy Framework) permite ao servidor que recebe um e-mail assegur
 
 Esta ação é possível graças às informações introduzidas num registo SPF, que é na realidade um registo TXT na zona DNS. Os parâmetros incluem:
 
-- **endereços de servidores e/ou vários endereços IP**\: tal permitirá identificá - las como fontes de envio legítimas;
-- **um qualificador**\: permitirá recomendar ao servidor que recebe os e-mails uma forma de reagir a uma mensagem considerada não legítima, isto é, proveniente de uma fonte que não está listada.
+- **endereços de servidores e/ou vários endereços IP**: tal permitirá identificá - las como fontes de envio legítimas;
+- **um qualificador**: permitirá recomendar ao servidor que recebe os e-mails uma forma de reagir a uma mensagem considerada não legítima, isto é, proveniente de uma fonte que não está listada.
 
 Por isso, certifique-se de que as fontes de envio utilizadas para enviar e-mails com o seu domínio sejam inscritas no registo SPF. Estas fontes podem ser o seu próprio servidor de e-mail, o do seu prestador de serviços ou uma das soluções de e-mail da OVHcloud.
 
