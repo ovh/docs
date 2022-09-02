@@ -111,9 +111,9 @@ The domain name transfer procedure requires email validation. This step can be p
 
 #### What if you did not receive the transfer confirmation email?
 
-Check the domain name holder’s email address, including the “SPAM”/“junk email” folders as a priority.
+Check the domain name holder’s email address with your current domain provider, including the “SPAM”/“junk email” folders as a priority.
 
-If the validation email cannot be found, please contact OVHcloud support by creating a support ticket. Our services can then cancel the transfer. Once the cancellation is complete, change the email address of the domain name owner to another email provider.<br>
+If the validation email cannot be found, please contact OVHcloud support by creating a support ticket. Our services can then cancel the transfer. Once the cancellation is complete, change the email address of the domain name owner to another email provider (such as, for example, Gmail, Yahoo, Onet, wp.pl, etc.).<br>
 Once you have modified your email address, order a [new transfer request](#step3).
 
 ### Step 5: manage a domain name with OVHcloud

@@ -111,9 +111,9 @@ La procédure de transfert de nom de domaine implique une validation par e-mail.
 
 #### Que faire si vous n'avez pas reçu l'e-mail de validation du transfert ?
 
-Vérifiez l'adresse e-mail du propriétaire du domaine, y compris et en priorité les dossiers « SPAM » / « courrier indésirable ».
+Vérifiez l'adresse e-mail du propriétaire du domaine chez votre fournisseur de domaine actuel, y compris et en priorité les dossiers « SPAM » / « courrier indésirable ».
 
-Si l'e-mail de validation reste introuvable, contactez le support OVHcloud via la création d'un ticket d'assistance. Nos services pourront alors annuler le transfert. Une fois l'annulation effectuée, modifiez l'adresse e-mail du propriétaire du nom de domaine, en privilégiant un autre fournisseur e-mail.<br>
+Si l'e-mail de validation reste introuvable, contactez le support OVHcloud via la création d'un ticket d'assistance. Nos services pourront alors annuler le transfert. Une fois l'annulation effectuée, modifiez l'adresse e-mail du propriétaire du nom de domaine, en privilégiant un autre fournisseur e-mail (tel que, par exemple, Gmail, Yahoo, Onet, wp.pl, etc.).<br>
 Une fois l'adresse e-mail modifiée, effectuez une [nouvelle demande de transfert](#step3).
 
 ### Étape 5 : gérer son nom de domaine avec OVHcloud
