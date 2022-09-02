@@ -14,17 +14,28 @@ order: 5
 
 ## Obiettivo
 
-Il record SPF (Sender Policy Framework) consente a un server di posta di verificare che le email in entrata provengano da server autorizzati.
-<br>che permette di prevenire eventuali usurpazioni d'identità con gli indirizzi email che utilizzano il tuo dominio (spoofing).
-<br>e permette di autenticare le email inviate.
-<br>Il record SPF viene aggiunto come record in una zona DNS dove sono indicati i server o gli indirizzi IP autorizzati a inviare email al dominio in questione.
+Il record SPF (Sender Policy Framework) permette al server che riceve un'email di assicurarsi che l'email sia stata inviata correttamente da un server affidabile. 
 
-attraverso un elenco di informazioni tra cui:
+- che permette di prevenire eventuali usurpazioni d'identità provenienti da indirizzi email che utilizzano il tuo dominio (spoofing). 
+- e permette di autenticare le email inviate.
+- Il record SPF si aggiunge come record nella zona DNS del dominio.
 
-- **server o indirizzi IP**: ciò permetterà di identificarli come fonti di spedizione legittime;
-- **un qualificatore**: permetterà di consigliare al server che riceve le email un modo specifico di reagire a un messaggio considerato non legittimo, cioè proveniente da una fonte che presenta un rischio.
+Questa operazione è possibile grazie alle informazioni inserite in un record SPF, che è in realtà un record TXT nella zona DNS. tra cui:
 
-Assicurati pertanto di inserire nel record SPF i server SMTP che utilizzi per inviare email del tuo dominio, che possono essere il tuo server, quello del tuo provider o una delle soluzioni email di OVHcloud.
+- **indirizzi di server e/o più indirizzi IP**: ciò permetterà di identificarli come fonti di invio legittime;
+- **un qualificatore**: permetterà di consigliare al server che riceve le email un modo di reagire a un messaggio considerato non legittimo, cioè proveniente da una fonte non elencata.
+
+Assicurati quindi di inserire nel record SPF le sorgenti di invio utilizzate per inviare email con il tuo dominio. che possono essere il tuo server di posta, quello del tuo provider o una delle soluzioni email di OVHcloud.
+
+> **Esempio** <br> 
+> Invia un'email dal tuo indirizzo `contact@mydomain.ovh`.
+> Solo il server in uscita **A** (Outgoing Mail Server **A**) è dichiarato nel record SPF del dominio `mydomain.ovh`.
+> Quando il server di ricezione (Inbound Mail Server) riceve l'email, questo leggi la zona DNS del tuo dominio `midomain.ovh` per effettuare l'ispezione del record SPF.
+>
+> - Dato che il server in uscita **A** (Outgoing Mail Server **A**) è ben indicato nel record SPF, l'email verrà normalmente trasmessa nella casella di ricezione del destinatario.
+> - Poiché il server in uscita **B** (Outgoing Mail Server **B**) non è stato inserito nel record SPF, l'email inviata da questo server sarà contrassegnata come sospetto nella casella di posta in arrivo. Ciò può comportare l'apposizione di un'indicazione `[SPAM]` nell'oggetto dell'email, l'inserimento in una cartella `Posta indesiderabile` o la cancellazione diretta, secondo le regole del server di ricezione.
+>
+> ![dominio](images/spf_records_diagram.png){.thumbnail}
 
 > [!primary]
 >
@@ -47,31 +58,6 @@ Assicurati pertanto di inserire nel record SPF i server SMTP che utilizzi per in
 >
 
 ## Procedura
-
-### La configurazione SPF di OVHcloud
-
-La configurazione OVHcloud si applica alle seguenti soluzioni:
-
-- MX Plan da solo o incluso in un'offerta di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external};
-- [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
-- [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external}
-
-Al momento dell'ordine, ti consigliamo di utilizzare un record SPF con le informazioni di OVHcloud nella zona DNS del dominio. informazioni:
-
-```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
-```
-
-Questa configurazione non si applica alle offerte Provider Exchange o [Private Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external}.
-
-Per l'offerta Exchange Provider, la configurazione è questa:
-
-```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex mail.biz a:gw2.ex mail.biz ~all"
-```
-
-> [!primary]
-> Per l'offerta Private Exchange è necessario inserire gli indirizzi IP del tuo server di posta. Per limitare la dimensione del record SPF, è possibile creare un record SPF che contenga questi indirizzi IP su un sottodominio e un record SPF che lo contenga utilizzando la categoria "include" sul dominio.
 
 ### Verifica la tua configurazione SPF attuale
 
@@ -111,7 +97,7 @@ Nella nuova finestra, vengono proposti diversi record DNS. Per aggiungere un rec
 
 - [Aggiungi un record TXT](#txtrecord): per gli utenti esperti o che dispongono già di una registrazione completa. Ad esempio, il tuo provider di soluzione email ti trasmette il valore.
 - [Aggiungi un record SPF](#spfrecord): per gli utenti che non possiedono la registrazione completa. Ad esempio, disponi solo di un indirizzo IP o del nome host del server di posta.
-- [Aggiungere un record SPF ](#spfrecordovhcloud)**e utilizzare la configurazione OVHcloud**: per gli utenti che dispongono esclusivamente delle soluzioni email OVHcloud sul loro dominio (esclusi [Private Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external} e Exchange Provider).
+- [Aggiungere un record SPF OVHcloud](#spfrecordovhcloud)**e utilizzare la configurazione OVHcloud**: per gli utenti che dispongono esclusivamente delle soluzioni email OVHcloud sul loro dominio (esclusi [Private Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external} e Exchange Provider).
 
 ![dominio](images/spf_records_add_entry.png){.thumbnail}
 
@@ -163,7 +149,11 @@ Clicca su `Seguente`{.action}, verifica che le informazioni siano corrette e poi
 
 #### Utilizza il record SPF OVHcloud <a name="spfrecordovhcloud"></a>
 
-Hai scelto il record `SPF`{.action} e vuoi applicare la configurazione OVHcloud.
+Hai scelto il record `SPF`{.action} e vuoi applicare la configurazione OVHcloud. che permette di includere tutti i server di posta in uscita OVHcloud per queste email:
+
+- MX Plan da solo o incluso in un'offerta di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}.
+- [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/).
+- [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/)
 
 Clicca sul pulsante `Utilizza il record SPF per l'hosting condiviso OVHcloud`{.action} in cima alla finestra di assistenza. Visualizzi le informazioni relative al record SPF di OVHcloud. Clicca poi sul pulsante `Conferma`{.action} per attivare la modifica.
 
@@ -192,6 +182,46 @@ Poi clicca su `Seguente`{.action}, assicurati che il riepilogo delle informazion
 Per modificare il record SPF nella configurazione di OVHcloud del tuo dominio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca su `Domini`{.action} e poi sulla scheda `Zona DNS `{.action}.
 
 La tabella mostra la configurazione OVHcloud del tuo dominio. ogni riga corrisponde a un diverso record DNS. Recupera il tuo record TXT o SPF in questa tabella e clicca su `...`{.action} per modificare il record.
+
+### Configurazione SPF OVHcloud per le soluzioni email condivise <a name="ovhcloudspfvalue"></a>
+
+La configurazione SPF OVHcloud generale si applica alle seguenti soluzioni:
+
+- MX Plan da solo o incluso in un'offerta di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
+- [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/).
+- [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/)
+
+La configurazione è questa:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
+```
+
+### Configurazione SPF OVHcloud per Exchange Provider
+
+Per l'offerta Exchange Provider, la configurazione è questa:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.biz ~all"
+```
+
+### Configurazione SPF OVHcloud per Private Exchange 
+
+Per l'offerta Private Exchange è necessario inserire gli indirizzi IP del tuo server di posta. utilizzando l'argomento `ip4` per inserire l'indirizzo IP del tuo server Private Exchange.
+
+```bash
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
+```
+
+Nel record qui sotto, puoi aggiungere l'argomento `include:mx.ovh.com` se utilizzi [un'offerta email condivisa](#ovhcloudspfvalue).
+
+> [!primary]
+> 
+> Per recuperare l'indirizzo IP del server Private Exchange, clicca su `Microsoft`{.action} e poi su `Exchange`{.action}. Infine clicca sul nome del servizio Private Exchange interessato.
+>
+> Nella scheda `Informazioni generali`{.action}, clicca su `A` nella sezione `Diagnostica server`. Nella nuova finestra, aumenta il valore.
+>
+> ![dominio](images/spf_records_ip.png){.thumbnail}
 
 ## Per saperne di più
 
