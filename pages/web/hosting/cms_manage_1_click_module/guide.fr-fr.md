@@ -71,9 +71,31 @@ Dans les deux cas, un e-mail de réinitialisation de mot de passe vous sera envo
 > - Après avoir cliqué sur le lien, celui-ci n'est valide que pendant 30 minutes.
 >
 
+> [!warning]
+> La modification du mot de passe d’accès à l’interface d’administration de votre CMS depuis l’espace client peut uniquement se faire si les conditions suivantes sont respectées :
+> -	Le CMS a bien été installé à l’aide de l’option « module en 1 clic » lors de la commande de votre hébergement ou depuis l’espace client OVHcloud
+> -	L’utilisateur (nom d’utilisateur, adresse mail, …) n’a pas été modifié via le CMS ou la base de données
+> -	La page d’accès à l’interface d’administration de votre CMS n’a pas été modifiée. Notamment si l’URL d’accès à l’interface d’administration de votre CMS a été changée via le CMS ou que des restrictions sur cette même page ont été mises en place.
+> -	Le « préfixe » des tables présentes dans votre base de données n’a pas été modifié depuis le CMS ou depuis la base de données directement.
+>
+> Dans le cas contraire, vous devrez suivre la documentation officielle du CMS que vous utilisez ou contacter l’éditeur du CMS directement.
+>
+
 Pour modifier le mot de passe d'accès à l'interface d'administration de votre site **via l'espace client OVHcloud**, cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Modules en 1 clic`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur `Modifier le mot de passe`{.action}. Cliquez sur `Valider`{.action}. Vous recevrez sous quelques minutes par e-mail un lien de réinitialisation de votre mot de passe.
+
+> [!primary]
+> Si vous ne pouvez pas changer votre mot de passe d’accès à l’interface d’administration de votre CMS depuis l’espace client OVHcloud pour les raisons citées un peu plus haut, vous trouverez ci-après la documentation officielle (non gérée par OVHcloud) pour les différents CMS proposés en installation sur nos hébergements mutualisés :
+> -	Wordpress : https://wordpress.org/support/article/resetting-your-password/
+> -	Joomla : https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F
+> -	Drupal : L’éditeur de ce logiciel ne propose actuellement pas de documentation pour changer le mot de passe d’accès à l’interface d’administration de Drupal. Nous vous invitons à les contacter directement sur ce sujet. Pour vous aider, vous pouvez vous rendre sur leurs pages officielles [drupal.org](https://www.drupal.org/) ou [drupal.fr](https://www.drupal.fr/).
+> -	Prestashop : L’éditeur de ce logiciel ne propose actuellement pas de documentation pour changer le mot de passe d’accès à l’interface d’administration de Prestashop. Nous vous invitons à les contacter directement sur ce sujet. Pour vous aider, vous pouvez cliquer [ici](https://www.prestashop.com) pour vous rendre sur leur page officielle.
+>
+
+Il est également possible de changer le mot de passe d’accès à l’interface d’administration de votre CMS directement depuis votre base de données. 
+
+Toutefois, nous vous recommanderons vivement d’effectuer l’opération avec l’aide de la documentation proposée par l’éditeur de votre CMS (non gérée par OVHcloud) ou en passant par un « prestataire spécialisé ».
 
 ### Supprimer votre module
 
