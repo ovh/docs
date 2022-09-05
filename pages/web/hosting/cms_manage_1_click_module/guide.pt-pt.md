@@ -41,7 +41,7 @@ A seguir, clique no botão `...`{.action} à direita da linha relativa ao módul
 
 > [!primary]
 >
-> Se o website não for apresentado corretamente após esta operação, consulte os guias *OVHcloud* relativos aos alojamentos partilhados na secção [Diagnóstico](https://docs.ovh.com/pt/hosting/).
+> Se o website não for apresentado corretamente após esta operação, consulte os guias OVHcloud relativos aos alojamentos partilhados na secção [Diagnóstico](https://docs.ovh.com/pt/hosting/).
 >
 
 ### Aceder à interface de administrador
@@ -97,8 +97,8 @@ A seguir, clique no botão `...`{.action} à direita da linha relativa ao seu m�
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
-> - Drupal : O editor deste programa não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do Drupal. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte a página oficial [drupal.org](https://www.drupal.org/) {.external}.
-> - PrestaShop : O editor deste software não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do PrestaShop. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://www.prestashop.com) {.external} para aceder à sua página oficial.
+> - Drupal : O editor deste programa não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do Drupal. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte a página oficial [drupal.org](https://www.drupal.org/){.external}.
+> - PrestaShop : O editor deste software não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do PrestaShop. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://www.prestashop.com){.external} para aceder à sua página oficial.
 >
 Também é possível alterar a palavra-passe de acesso à interface de administração do seu CMS diretamente a partir da sua base de dados.<br>
 No entanto, se encontrar dificuldades, recomendamos vivamente que efetue a operação com a documentação proposta pelo editor do seu CMS ou que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
@@ -120,10 +120,10 @@ Caso contrário, clique no separador `Multisite`{.action}. Tome nota do nome da 
 
 Aceda ao [espaço FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento. Abra a `Pasta raiz` encontrada anteriormente no separador `Multisite`{.action} e procure o ficheiro de configuração do seu módulo:
 
-- Para *WordPress* : **"wp-config.php"** (o nome da base de dados aparece com a menção **"DB_NAME"**).
-- Para *Joomla!* : **"configuration.php"** (o nome da base de dados aparece com a menção **"public $db"**).
-- Para o *Drupal*: **"settings.php"** (Para encontrá-lo, aceda à pasta **"sites"** e **"default"**. O nome da base de dados aparece sob a menção **"database""**).
-- Para *PrestaShop* : **"parameters.php"** (Para o encontrar, aceda à pasta **"app"** e **"config"**. O nome da base do módulo aparece na rubrica **"database_name"**.
+- Para WordPress : **"wp-config.php"** (o nome da base de dados aparece com a menção **"DB_NAME"**).
+- Para Joomla! : **"configuration.php"** (o nome da base de dados aparece com a menção **"public $db"**).
+- Para o Drupal: **"settings.php"** (Para encontrá-lo, aceda à pasta **"sites"** e **"default"**. O nome da base de dados aparece sob a menção **"database""**).
+- Para PrestaShop : **"parameters.php"** (Para o encontrar, aceda à pasta **"app"** e **"config"**. O nome da base do módulo aparece na rubrica **"database_name"**.
 
 #### Etapa 2: guardar o seu módulo
 
@@ -170,6 +170,6 @@ Não instale no seu site plugins ou templates que não foram recomendados pelas 
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes ofertas de suporte (https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -37,7 +37,7 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant vo
 
 > [!primary]
 >
-> Si votre site ne s'affiche pas correctement suite à cette manipulation, consultez les guides *OVHcloud* liés aux hébergements mutualisés dans la section [Diagnostic](https://docs.ovh.com/fr/hosting/).
+> Si votre site ne s'affiche pas correctement suite à cette manipulation, consultez les guides OVHcloud liés aux hébergements mutualisés dans la section [Diagnostic](https://docs.ovh.com/fr/hosting/).
 >
 
 ### Accéder à l'interface administrateur
@@ -115,10 +115,10 @@ Dans le cas contraire, rendez-vous dans l'onglet `Multisite`{.action}. Notez le 
 
 Connectez-vous ensuite à [l'espace FTP de votre hébergement](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Multisite`{.action} et recherchez le fichier de configuration de votre module :
 
-- Pour *WordPress* : **« wp-config.php »** (le nom de la base de données apparaît sous la mention **« DB_NAME »**).
-- Pour *Joomla!* : **« configuration.php »** (le nom de la base de données apparaît sous la mention **« public $db »**).
-- Pour *Drupal* : **« settings.php »** (Pour le retrouver, rendez-vous dans le dossier **« sites »** puis **« default »**. Le nom de la base de données apparaît sous la mention **« database »**).
-- Pour *PrestaShop* : **« parameters.php »** (Pour le retrouver, rendez-vous dans le dossier **« app »** puis **« config »**. Le nom de la base de votre module apparaît sous la mention **« database_name »**).
+- Pour WordPress : **« wp-config.php »** (le nom de la base de données apparaît sous la mention **« DB_NAME »**).
+- Pour Joomla! : **« configuration.php »** (le nom de la base de données apparaît sous la mention **« public $db »**).
+- Pour Drupal : **« settings.php »** (Pour le retrouver, rendez-vous dans le dossier **« sites »** puis **« default »**. Le nom de la base de données apparaît sous la mention **« database »**).
+- Pour PrestaShop : **« parameters.php »** (Pour le retrouver, rendez-vous dans le dossier **« app »** puis **« config »**. Le nom de la base de votre module apparaît sous la mention **« database_name »**).
 
 #### Étape 2 : sauvegarder votre module
 

@@ -22,7 +22,7 @@ Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetow
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -41,7 +41,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 
 > [!primary]
 >
-> Jeśli po wykonaniu tej operacji Twoja strona WWW nie wyświetla się poprawnie, zapoznaj się z przewodnikami *OVHcloud* dotyczącymi hostingu współdzielonego w sekcji [Diagnostyka](https://docs.ovh.com/pl/hosting/).
+> Jeśli po wykonaniu tej operacji Twoja strona WWW nie wyświetla się poprawnie, zapoznaj się z przewodnikami OVHcloud dotyczącymi hostingu współdzielonego w sekcji [Diagnostyka](https://docs.ovh.com/pl/hosting/).
 >
 
 ### Dostęp do interfejsu administratora
@@ -101,7 +101,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 > - PrestaShop : Producent tego oprogramowania nie udostępnia w terminie dokumentacji zmiany hasła dostępu do interfejsu administracyjnego PrestaShop. Prosimy o bezpośredni kontakt z wydawcą na ten temat. Aby uzyskać więcej informacji, kliknij [tutaj](https://www.prestashop.com){.external} i przejdź do oficjalnej strony.
 >
 Możesz również zmienić hasło dostępowe do interfejsu administracyjnego Twojego CMS bezpośrednio z Twojej bazy danych.<br>
-Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygotowaną przez producenta systemu CMS lub skorzystał z pomocy [wyspecjalizowanego usługodawcy] (https://partner.ovhcloud.com/pl/), jeśli masz trudności. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź dalej](#go-further) niniejszego przewodnika.
+Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygotowaną przez producenta systemu CMS lub skorzystał z pomocy [wyspecjalizowanego usługodawcy] (https://partner.ovhcloud.com/pl/), jeśli masz trudności. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź dalej](#go-further) niniejszego przewodnika.
 
 ### Usuń moduł
 
@@ -120,10 +120,10 @@ W przeciwnym razie przejdź do zakładki `MultiSite`{.action}. Zapisz nazwę kat
 
 Zaloguj się do [przestrzeni FTP Twojego hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/). Otwórz `Katalog główny` znajdujący się w zakładce `MultiSite`{.action} i wyszukaj plik konfiguracyjny Twojego modułu:
 
-- *WordPress* : **"wp-config.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"DB_NAME"**).
-- *Joomla!* : **"configuration.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"public $db"**).
-- *Drupal*: **"settings.php"** (Aby go znaleźć, przejdź do folderu **"sites"**, a następnie **"default"**. Nazwa bazy danych pojawia się pod pozycją **"database"**).
-- *PrestaShop* : **"parameters.php"** (Aby go znaleźć, przejdź do folderu **"app"**, a następnie **"config"**. Nazwa bazy modułu pojawia się pod nagłówkiem **"database_name"**).
+- WordPress : **"wp-config.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"DB_NAME"**).
+- Joomla! : **"configuration.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"public $db"**).
+- Drupal: **"settings.php"** (Aby go znaleźć, przejdź do folderu **"sites"**, a następnie **"default"**. Nazwa bazy danych pojawia się pod pozycją **"database"**).
+- PrestaShop : **"parameters.php"** (Aby go znaleźć, przejdź do folderu **"app"**, a następnie **"config"**. Nazwa bazy modułu pojawia się pod nagłówkiem **"database_name"**).
 
 #### Etap 2: zapisz moduł
 

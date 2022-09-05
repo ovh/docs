@@ -36,7 +36,7 @@ Next, click on the `...`{.action} button to the right of the line related to you
 
 > [!primary]
 >
-> If your website does not display properly after this, please refer to the *OVHcloud* web hosting guides in the [Troubleshooting](https://docs.ovh.com/sg/en/hosting/) section.
+> If your website does not display properly after this, please refer to the OVHcloud web hosting guides in the [Troubleshooting](https://docs.ovh.com/sg/en/hosting/) section.
 >
 
 ### Access the administrator interface
@@ -114,10 +114,10 @@ Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this
 
 Then log on to the [FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
 
-- *WordPress* : **"wp-config.php"** (the database name appears as **"DB_NAME"**).
-- *Joomla!* : **"configuration.php"** (the database name appears under **"public $db"**).
-- *Drupal* : **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
-- *PrestaShop* : **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
+- WordPress : **"wp-config.php"** (the database name appears as **"DB_NAME"**).
+- Joomla! : **"configuration.php"** (the database name appears under **"public $db"**).
+- Drupal : **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
+- PrestaShop : **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
 
 #### Step 2: backup your data
 

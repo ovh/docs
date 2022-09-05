@@ -41,7 +41,7 @@ A continuación, haga clic en el botón `...`{.action} a la derecha de la línea
 
 > [!primary]
 >
-> Si su sitio web no aparece correctamente debido a esta operación, consulte las guías de *OVHcloud* relativas a los alojamientos compartidos en la sección [Diagnóstico](https://docs.ovh.com/us/es/hosting/).
+> Si su sitio web no aparece correctamente debido a esta operación, consulte las guías de OVHcloud relativas a los alojamientos compartidos en la sección [Diagnóstico](https://docs.ovh.com/us/es/hosting/).
 >
 
 ### Acceder al panel de administración
@@ -97,8 +97,8 @@ A continuación, haga clic en el botón `...`{.action} a la derecha de la línea
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
-> - Drupal : El editor de este programa no ofrece ninguna documentación en la fecha para cambiar la contraseña de acceso al panel de administración de Drupal. Por favor, contacte directamente con el editor sobre este asunto. Para más información, consulte la página oficial [drupal.org](https://www.drupal.org/) {.external}.
-> - PrestaShop : El editor de este programa no ofrece documentación en la fecha para cambiar la contraseña de acceso al panel de administración de PrestaShop. Por favor, contacte directamente con el editor sobre este asunto. Para más información, haga clic [aquí](https://www.prestashop.com) {.external} para acceder a su página oficial.
+> - Drupal : El editor de este programa no ofrece ninguna documentación en la fecha para cambiar la contraseña de acceso al panel de administración de Drupal. Por favor, contacte directamente con el editor sobre este asunto. Para más información, consulte la página oficial [drupal.org](https://www.drupal.org/){.external}.
+> - PrestaShop : El editor de este programa no ofrece documentación en la fecha para cambiar la contraseña de acceso al panel de administración de PrestaShop. Por favor, contacte directamente con el editor sobre este asunto. Para más información, haga clic [aquí](https://www.prestashop.com){.external} para acceder a su página oficial.
 >
 También es posible cambiar la contraseña de acceso al panel de administración del CMS directamente desde la base de datos.<br>
 No obstante, si necesita ayuda, le recomendamos encarecidamente que utilice la documentación que le ofrezca el editor del CMS o que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/). Nosotros no podremos asistirle. Más información en la sección (#go-further) de esta guía.
@@ -118,10 +118,10 @@ En caso contrario, abra la pestaña `Multisitio`{.action}. Anote el nombre de la
 
 Conéctese al [espacio FTP del alojamiento](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/). Abra la `Carpeta raíz` encontrada anteriormente en la pestaña `Multisitio`{.action} y busque el archivo de configuración de su módulo:
 
-- Para *WordPress* : **"wp-config.php"** (el nombre de la base de datos aparece con el texto **"DB_NAME"**).
-- Para *Joomla!* : **"configuration.php"** (el nombre de la base de datos aparece bajo el término **"public $db"**).
-- Para *Drupal* : **"settings.php"** (para encontrarlo, acceda a la carpeta **"sites"** y luego a **"default"**. El nombre de la base de datos aparece con el **"database"**).
-- Para *PrestaShop* : **"parameters.php"** (para encontrarlo, acceda a la carpeta **"app"** y luego a **"config"**. El nombre de la base de su módulo aparece bajo la mención **"database_name'"**).
+- Para WordPress : **"wp-config.php"** (el nombre de la base de datos aparece con el texto **"DB_NAME"**).
+- Para Joomla! : **"configuration.php"** (el nombre de la base de datos aparece bajo el término **"public $db"**).
+- Para Drupal : **"settings.php"** (para encontrarlo, acceda a la carpeta **"sites"** y luego a **"default"**. El nombre de la base de datos aparece con el **"database"**).
+- Para PrestaShop : **"parameters.php"** (para encontrarlo, acceda a la carpeta **"app"** y luego a **"config"**. El nombre de la base de su módulo aparece bajo la mención **"database_name'"**).
 
 #### Etapa 2: guardar el módulo
 

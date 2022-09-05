@@ -40,7 +40,7 @@ Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modu
 
 > [!primary]
 >
-> Sollte Ihre Website nach diesem Vorgang nicht korrekt angezeigt werden, lesen Sie die zu den Webhosting-Paketen gehörigen *OVHcloud* Anleitungen unter [Diagnose](https://docs.ovh.com/de/hosting/).
+> Sollte Ihre Website nach diesem Vorgang nicht korrekt angezeigt werden, lesen Sie die zu den Webhosting-Paketen gehörigen OVHcloud Anleitungen unter [Diagnose](https://docs.ovh.com/de/hosting/).
 >
 
 ### Administrator-Interface
@@ -95,8 +95,8 @@ Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modu
 >
 > Wenn Sie Ihr Passwort für den Zugang zum Verwaltungsinterface Ihres CMS aus den oben genannten Gründen nicht über das OVHcloud Kundencenter ändern können, finden Sie die offizielle Dokumentation zu den verschiedenen CMS, die auf unseren Webhosting-Angeboten installiert werden:
 >
-> - WordPress : <https://wordpress.org/support/article/resetting-your-password/
-> - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F
+> - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
+> - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
 > - Drupal : Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum Drupal-Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der offiziellen Seite [drupal.org](https://www.drupal.org/){.external}.
 > - PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum PrestaShop Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Für weitere Informationen klicken Sie [hier](https://www.prestashop.com){.external} auf ihre offizielle Seite.
 >
@@ -120,10 +120,10 @@ Andernfalls gehen Sie zum Tab `Multisite`{.action}. Notieren Sie den Namen des `
 
 Loggen Sie sich anschließend in den [FTP-Bereich](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings ein. Öffnen Sie das entsprechende `Wurzelverzeichnis` aus dem Tab `Multisite`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
 
-- *WordPress* : **“wp-config.php“** (Der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
-- *Joomla!* : **“configuration.php“** (Der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
-- *Drupal* : **“settings.php“** (Gehen Sie zum Ordner **“sites“** und dann **“default“**. Der Name der Datenbank erscheint unter der Bezeichnung **“database“**).
-- *PrestaShop* : **“parameters.php“** (Gehen Sie zum Ordner **“app“** und dann **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**).
+- WordPress : **“wp-config.php“** (Der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
+- Joomla! : **“configuration.php“** (Der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
+- Drupal : **“settings.php“** (Gehen Sie zum Ordner **“sites“** und dann **“default“**. Der Name der Datenbank erscheint unter der Bezeichnung **“database“**).
+- PrestaShop : **“parameters.php“** (Gehen Sie zum Ordner **“app“** und dann **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**).
 
 #### Schritt 2: Ihr Modul sichern
 
