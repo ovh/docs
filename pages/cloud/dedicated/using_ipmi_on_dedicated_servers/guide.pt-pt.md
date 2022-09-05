@@ -10,7 +10,7 @@ order: 4
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 18/03/2021**
+**Última atualização: 30/08/2022**
 
 ## Objetivo
 
@@ -57,7 +57,7 @@ De seguida, aceda à página de ligação. Introduza as suas credenciais `root`,
 
 Pode desde já gerir o seu servidor.
 
-### Utilizar o KVM através do seu browser (apenas para os servidores mais recentes)
+### Utilizar o KVM através do seu browser (apenas para os servidores mais recentes) <a name="kvm-browser"></a>
 
 Na secção `IPMI`{.action} da sua Área de Cliente OVHcloud, clique em `A partir do navegador (KVM)`{.action}:
 
@@ -150,6 +150,49 @@ Na BIOS, navegue até ao separador `Boot`{.action} e substitua `UEFI Boot Order 
 ![Bios](images/bios.png){.thumbnail}
 
 Por fim, carregue na tecla `F4` para registar as suas modificações e reiniciar o servidor.
+
+### Instalar um SO utilizando o browser KVM (apenas para os servidores mais recentes)
+
+> [!warning]
+> A OVHcloud não garante a funcionalidade dos sistemas operativos instalados através do IPMI. Este método só deve ser considerado por um administrador de servidores experiente.
+>
+
+Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), abra a [consola KVM](#kvm-browser).
+
+Aqui, tem acesso às mesmas informações e funcionalidades que nos módulos IPMI baseados em Java.
+
+> [!primary]
+>
+> Certifique-se de que executa os próximos passos a um bom ritmo. O processo pode ser anulado se houver pausas mais longas entre as ações.
+>
+
+Clique no botão `Browse File`{.action} e selecione o seu ficheiro de imagem.
+
+![Instalação do KVM](images/kvm_install01.png){.thumbnail}
+
+Clique em `Start Media`{.action}. Isto preparará a ISO para o processo de instalação.
+
+![Instalação do KVM](images/kvm_install02.png){.thumbnail}
+
+O tamanho do ficheiro apresentado não é o tamanho real. É normal, porque o ficheiro não é completamente descarregado nesta etapa.
+
+![Instalação do KVM](images/kvm_install03.png){.thumbnail}
+
+Clique em `Power`{.action} e selecione `Reset Server`{.action} (reinicializar o servidor) no menu pendente.
+
+![Instalação do KVM](images/kvm_install04.png){.thumbnail}
+
+Esperem que o ecrã de seleção de arranque seja apresentado e carreguem a tecla apropriada para entrar no menu de Boot (neste exemplo, `F11`).
+
+![Instalação do KVM](images/kvm_install05.png){.thumbnail}
+
+No menu boot, selecione o leitor óptico (`UEFI: AMI Virtual CDROM0` neste exemplo) e prima a `Entrada`.
+
+![Instalação do KVM](images/kvm_install06.png){.thumbnail}
+
+O ficheiro ISO vai agora ser telecarregado e o servidor vai começar a partir do ficheiro.
+
+![Instalação do KVM](images/kvm_install07.png){.thumbnail}
 
 ## Quer saber mais?
 
