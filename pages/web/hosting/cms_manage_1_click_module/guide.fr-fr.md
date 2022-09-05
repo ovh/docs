@@ -78,7 +78,7 @@ Dans les deux cas, un e-mail de réinitialisation de mot de passe vous sera envo
 > -	La page d’accès à l’interface d’administration de votre CMS n’a pas été modifiée. Notamment si l’URL d’accès à l’interface d’administration de votre CMS a été changée via le CMS ou que des restrictions sur cette même page ont été mises en place.
 > -	Le « préfixe » des tables présentes dans votre base de données n’a pas été modifié depuis le CMS ou depuis la base de données directement.
 >
-> Dans le cas contraire, vous devrez suivre la documentation officielle du CMS que vous utilisez ou contacter l’éditeur du CMS directement.
+> Dans le cas contraire, vous devrez suivre la documentation officielle du CMS que vous utilisez ou contacter l’éditeur du CMS directement. 
 >
 
 Pour modifier le mot de passe d'accès à l'interface d'administration de votre site **via l'espace client OVHcloud**, cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Modules en 1 clic`{.action}.
