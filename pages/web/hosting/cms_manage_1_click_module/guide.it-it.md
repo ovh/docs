@@ -101,7 +101,7 @@ Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo
 > - PrestaShop : L'editor di questo software non offre, alla data, la documentazione necessaria per modificare la password di accesso all'interfaccia di amministrazione di PrestaShop. Ti invitiamo a contattare direttamente l'editor su questo argomento. Per maggiori informazioni, clicca [qui](https://www.prestashop.com){.external} per accedere alla pagina ufficiale.
 >
 È inoltre possibile modificare la password di accesso all'interfaccia di gestione del tuo CMS direttamente dal tuo database.<br>
-Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di eseguire l'operazione utilizzando la documentazione proposta dal tuo CMS o di rivolgerti a uno specialista del settore (https://partner.ovhcloud.com/it/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
+Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di eseguire l'operazione utilizzando la documentazione proposta dal tuo CMS o di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
 
 ### Elimina il tuo modulo
 
