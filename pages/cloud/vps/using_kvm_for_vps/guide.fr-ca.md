@@ -90,16 +90,26 @@ Il peut arriver que vous rencontriez des problèmes de connexion au KVM via votr
 
 Si vous avez un VPS 2014, vous pouvez rencontrer  une *erreur 1006*. Passer en revue l'API à l'aide de l'appel ci-dessous pourrait résoudre ce problème.
 
-> [!api]
+> [!faq]
 >
-> @api {POST} /vps/{serviceName}/openConsoleAccess
+> API:
+>
+>> > [!api]
+>> >
+>> > @api {POST} /vps/{serviceName}/openConsoleAccess
+>> >
+>>
 >
 > Paramètres d'appel API :
 >
->> serviceName *
->>> ID de votre VPS qui ressemble à vpsxxxxx.ovh.net
->> protocole
->>> VNC
+>> > **serviceName**
+>> >
+>> >> ID de votre VPS qui ressemble à vpsxxxxx.ovh.net
+>> >
+>> > **protocol** 
+>> >
+>> >> VNC
+>
 
 Malgré le retour positif de l'API, il est possible que la connexion prenne une ou deux minutes pour s'établir, le temps que le port soit effectivement ouvert.
 
@@ -114,14 +124,21 @@ Utilisez les détails fournis par l'appel API pour vous connecter à distance au
 
 En cas de souci avec le KVM, voici l'API conseillée pour l'accès au KVM :
 
-> [!api]
+> [!faq]
 >
-> @api {POST} /vps/{serviceName}/getConsoleUrl
+> API:
+>
+>> > [!api]
+>> >
+>> > @api {POST} /vps/{serviceName}/getConsoleUrl
+>> >
+>>
 >
 > Paramètres d'appel API :
 >
->> serviceName *
->>> ID de votre VPS qui ressemble à vpsxxxxx.ovh.net
+>> > **serviceName**
+>> >
+>> >> ID de votre VPS qui ressemble à vpsxxxxx.ovh.net
 >
 
 > [!primary]

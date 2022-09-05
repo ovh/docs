@@ -9,7 +9,7 @@ section: Per iniziare
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 7/09/2020**
+**Ultimo aggiornamento: 30/08/2022**
 
 ## Obiettivo
 
@@ -56,6 +56,36 @@ Si apre lo schermo KVM. È una finestra minuscola che indica la connessione al t
 > La tastiera può avere una disposizione diversa dalla sua. Assicurati di verificarlo, ad esempio, perché la tastiera può essere AZERTY invece di QWERTY.
 >
 
+#### Modifica della disposizione della tastiera
+
+Puoi attivare la configurazione di tastiera che preferisci per rendere più pratico l'utilizzo della console. Digita questo comando:
+
+```bash
+sudo dpkg-reconfigure keyboard-configuration
+```
+
+Si apre un menu grafico che ti permette di selezionare un modello di tastiera.
+
+![KVM](images/kvm_vps01.png){.thumbnail}
+
+Utilizza i tasti frecciati per accedere all'opzione più vicina al tuo hardware e clicca su "Enter". 
+
+Nel menu successivo seleziona il tuo paese.
+
+![KVM](images/kvm_vps02.png){.thumbnail}
+
+Il terzo menu ti permette di specificare la disposizione effettiva della tastiera.
+
+![KVM](images/kvm_vps03.png){.thumbnail}
+
+In base alla tua scelta, dopo il terzo menu potrebbero apparire altre opzioni.
+
+Torna alla linea di comando, inserisci questo comando per applicare le modifiche:
+
+```bash
+sudo systemctl restart keyboard-setup
+```
+
 ### Connettiti al KVM via API
 
 Potrebbe verificarsi un problema di connessione al KVM tramite il tuo pannello di configurazione OVHcloud, in particolare con le versioni precedenti. In questo caso, è possibile utilizzare la soluzione API. Per farlo, accedi via API [OVHcloud](https://api.ovh.com/).
@@ -64,16 +94,26 @@ Potrebbe verificarsi un problema di connessione al KVM tramite il tuo pannello d
 
 Se hai un VPS 2014, puoi riscontrare un *errore 1006*. Controllare l'API tramite la chiamata qui sotto potrebbe risolvere questo problema.
 
-> [!api]
+> [!faq]
 >
-> @api {POST} /vps/{serviceName}/openConsoleAccess
+> API:
+>
+>> > [!api]
+>> >
+>> > @api {POST} /vps/{serviceName}/openConsoleAccess
+>> >
+>>
 >
 > Impostazioni di chiamata API:
 >
->> serviceName*
->>> ID del VPS che assomiglia a vpsxxxxx.ovh.net
->> protocollo
->>> VNC
+>> > **serviceName**
+>> >
+>> >> ID del VPS che assomiglia a vpsxxxxx.ovh.net
+>> >
+>> > **protocol** 
+>> >
+>> >> VNC
+>
 
 L’operazione di connessione potrebbe richiedere uno o due minuti, il tempo necessario affinché la porta sia effettivamente aperta.
 
@@ -88,14 +128,21 @@ Utilizza i dettagli forniti dalla chiamata API per connetterti da remoto al VPS 
 
 Con i VPS 2016, l'API consigliata per accedere al KVM è la seguente:
 
-> [!api]
+> [!faq]
 >
-> @api {POST} /vps /{serviceName}/getConsoleUrl
+> API:
+>
+>> > [!api]
+>> >
+>> > @api {POST} /vps/{serviceName}/getConsoleUrl
+>> >
+>>
 >
 > Impostazioni di chiamata API:
 >
->> serviceName*
->>> ID del VPS che assomiglia a vpsxxxxx.ovh.net
+>> > **serviceName**
+>> >
+>> >> ID del VPS che assomiglia a vpsxxxxx.ovh.net
 >
 
 > [!primary]

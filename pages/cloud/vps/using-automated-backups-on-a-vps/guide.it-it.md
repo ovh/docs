@@ -10,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 01/02/2022**
+**Ultimo aggiornamento: 30/08/2022**
 
 ## Obiettivo
 
@@ -38,6 +38,23 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 Dopo aver selezionato il tuo VPS, clicca sulla scheda `Backup automatizzato`{.action} nel menu orizzontale.
 
 Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura d’ordine e riceverai una email di conferma. A questo punto i backup verranno effettuati giornalmente finché l’opzione non verrà nuovamente disattivata.
+
+#### Configura l'ora del backup
+
+Puoi modificare l'orario in cui avrà luogo il backup. 
+
+Clicca sui tre puntini `...`{.action} in alto a sinistra e seleziona `Modifica`{.action}.
+
+![autobackupvps](images/backup_vps_time01.png){.thumbnail}
+
+Nella nuova finestra, modifica l'orario della giornata (orario UTC 24 ore). Clicca su `Conferma`{.action}.
+
+![autobackupvps](images/backup_vps_time02.png){.thumbnail}
+
+> [!primary]
+>
+> Una volta convalidato dallo Spazio Cliente, la modifica diventerà effettiva entro 24-48 ore.
+>
 
 ### Step 2: Ripristinare un backup dallo Spazio Cliente OVHcloud
 

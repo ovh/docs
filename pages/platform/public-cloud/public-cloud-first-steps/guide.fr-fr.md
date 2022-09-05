@@ -25,7 +25,7 @@ Les instances Pubic Cloud OVHcloud nécessitent une approche différente de cell
 
 ### Étape 1 :  Créer des clés SSH
 
-Le protocole SSH assure une communication client-serveur cryptée. L'utilisation des clés SSH améliore encore la sécurité en empêchant toute connexion à partir d'un périphérique qui ne possède pas la clé correspondante. La création d'un jeu de clés SSH vous fournit une clé publique et une clé privée.
+Le protocole SSH assure une communication client-serveur chiffrée. L'utilisation des clés SSH améliore encore la sécurité en empêchant toute connexion à partir d'un périphérique qui ne possède pas la clé correspondante. La création d'un jeu de clés SSH vous fournit une clé publique et une clé privée.
 
 - La **clé publique** sera ajoutée à votre instance Public Cloud lors de son installation.
 

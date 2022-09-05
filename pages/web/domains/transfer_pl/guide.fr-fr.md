@@ -9,7 +9,7 @@ section: Transfert
 order: 1
 ---
 
-**Dernière mise à jour le 27/08/2021**
+**Dernière mise à jour le 02/09/2022**
 
 ## Objectif
 
@@ -66,7 +66,7 @@ Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom 
 > Une fois votre nom de domaine déverrouillé, vous aurez sept (7) jours pour effectuer le transfert vers OVHcloud. Après cette période, votre nom de domaine sera verrouillé automatiquement si vous ne soumettez pas de demande de modification de bureau d'enregistrement de nom de domaine.
 >
 
-### Étape 3 : demander un transfert de nom de domaine vers OVHcloud
+### Étape 3 : demander un transfert de nom de domaine vers OVHcloud <a name="step3"></a>
 
 Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](https://www.ovhcloud.com/fr/domains/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
 
@@ -108,6 +108,14 @@ La procédure de transfert de nom de domaine implique une validation par e-mail.
 >
 > La validation du transfert via le lien doit être effectuée dans les 5 jours suivant la demande. Au-delà, le transfert sera annulé.
 >
+
+#### Que faire si vous n'avez pas reçu l'e-mail de validation du transfert ?
+
+Vérifiez l'adresse e-mail du propriétaire du domaine chez votre fournisseur de domaine actuel.<br>
+Vérifiez également et en priorité les dossiers « SPAM » / « courrier indésirable » des adresses e-mail concernées.
+
+Si l'e-mail de validation reste introuvable, contactez le support OVHcloud via la création d'un ticket d'assistance. Nos services pourront alors annuler le transfert. Une fois l'annulation effectuée, modifiez l'adresse e-mail du propriétaire du nom de domaine, en privilégiant un autre fournisseur e-mail (tel que, par exemple, Gmail, Yahoo, Onet, wp.pl, etc.).<br>
+Une fois l'adresse e-mail modifiée, effectuez une [nouvelle demande de transfert](#step3).
 
 ### Étape 5 : gérer son nom de domaine avec OVHcloud
 
