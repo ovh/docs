@@ -22,7 +22,7 @@ Los módulos en 1 clic permiten la instalación fácil y rápida de un programa 
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -96,10 +96,10 @@ En caso contrario, abra la pestaña `Multisitio`{.action}. Anote el nombre de la
 
 Conéctese al [espacio FTP del alojamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/). Abra la `Carpeta raíz` encontrada anteriormente en la pestaña `Multisitio`{.action} y busque el archivo de configuración de su módulo:
 
-- Para WORDPRESS: **"wp-config.php"** (el nombre de la base de datos aparece con el texto **"DB_NAME"**).
-- Para JOOMLA!: **"configuration.php"** (el nombre de la base de datos aparece bajo el término **"public $db"**).
-- Para DRUPAL: **"settings.php"** (para encontrarlo, acceda a la carpeta **"sites"** y luego a **"default"**. El nombre de la base de datos aparece con el **"database"**).
-- Para PRESTASHOP: **"parameters.php"** (para encontrarlo, acceda a la carpeta **"app"** y luego a **"config"**. El nombre de la base de su módulo aparece bajo la mención **"database_name'"**).
+- Para *WordPress* : **"wp-config.php"** (el nombre de la base de datos aparece con el texto **"DB_NAME"**).
+- Para *Joomla!* : **"configuration.php"** (el nombre de la base de datos aparece bajo el término **"public $db"**).
+- Para *Drupal*: **"settings.php"** (para encontrarlo, acceda a la carpeta **"sites"** y luego a **"default"**. El nombre de la base de datos aparece con el **"database"**).
+- Para *PrestaShop* : **"parameters.php"** (para encontrarlo, acceda a la carpeta **"app"** y luego a **"config"**. El nombre de la base de su módulo aparece bajo la mención **"database_name'"**).
 
 #### Etapa 2: guardar el módulo
 
@@ -140,7 +140,7 @@ No instale en su sitio plugins ni plantillas que no hayan sido recomendados por 
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/es){.external}
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 [Resolver los errores más frecuentes asociados a los módulos en 1 clic](https://docs.ovh.com/es/hosting/errores-frecuentes-modulos-en-1-clic/).
 

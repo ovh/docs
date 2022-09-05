@@ -21,7 +21,7 @@ order: 2
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
@@ -96,10 +96,10 @@ Andernfalls gehen Sie zum Tab `Multisite`{.action}. Notieren Sie den Namen des `
 
 Loggen Sie sich anschließend in den [FTP-Bereich](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings ein. Öffnen Sie das entsprechende `Wurzelverzeichnis` aus dem Tab `Multisite`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
 
-- WordPress: **“wp-config.php“** (Der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
-- Joomla!: **“configuration.php“** (Der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
-- Drupal: **“settings.php“** (Gehen Sie zum Ordner **“sites“** und dann **“default“**. Der Name der Datenbank erscheint unter der Bezeichnung **“database“**).
-- PrestaShop: **“parameters.php“** (Gehen Sie zum Ordner **“app“** und dann **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**).
+- *WordPress* : **“wp-config.php“** (Der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
+- *Joomla!* : **“configuration.php“** (Der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
+- *Drupal*: **“settings.php“** (Gehen Sie zum Ordner **“sites“** und dann **“default“**. Der Name der Datenbank erscheint unter der Bezeichnung **“database“**).
+- *PrestaShop* : **“parameters.php“** (Gehen Sie zum Ordner **“app“** und dann **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**).
 
 #### Schritt 2: Ihr Modul sichern
 
@@ -140,7 +140,7 @@ Installieren Sie auf Ihrer Seite keine Plugins oder Templates, die nicht auf der
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/de){.external}
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Die häufigsten Fehler bei 1-Klick-Modulen beheben](https://docs.ovh.com/de/hosting/fehler-bei-1-klick-modulen/).
 

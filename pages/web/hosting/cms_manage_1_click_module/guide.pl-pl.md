@@ -22,7 +22,7 @@ Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetow
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -96,10 +96,10 @@ W przeciwnym razie przejdź do zakładki `MultiSite`{.action}. Zapisz nazwę kat
 
 Zaloguj się do [przestrzeni FTP Twojego hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/). Otwórz `Katalog główny` znajdujący się w zakładce `MultiSite`{.action} i wyszukaj plik konfiguracyjny Twojego modułu:
 
-- WORDPRESS: **"wp-config.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"DB_NAME"**).
-- JOOMLA: **"configuration.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"public $db"**).
-- DRUPAL: **"settings.php"** (Aby go znaleźć, przejdź do folderu **"sites"**, a następnie **"default"**. Nazwa bazy danych pojawia się pod pozycją **"database"**).
-- PRESTASHOP: **"parameters.php"** (Aby go znaleźć, przejdź do folderu **"app"**, a następnie **"config"**. Nazwa bazy modułu pojawia się pod nagłówkiem **"database_name"**).
+- *WordPress* : **"wp-config.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"DB_NAME"**).
+- *Joomla!* : **"configuration.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"public $db"**).
+- *Drupal*: **"settings.php"** (Aby go znaleźć, przejdź do folderu **"sites"**, a następnie **"default"**. Nazwa bazy danych pojawia się pod pozycją **"database"**).
+- *PrestaShop* : **"parameters.php"** (Aby go znaleźć, przejdź do folderu **"app"**, a następnie **"config"**. Nazwa bazy modułu pojawia się pod nagłówkiem **"database_name"**).
 
 #### Etap 2: zapisz moduł
 
@@ -140,7 +140,7 @@ Nie instaluj na Twojej stronie wtyczek ani szablonów, które nie są zalecane p
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/pl){.external}
 
-## Sprawdź również <a name="gofurther"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](https://docs.ovh.com/pl/hosting/bledy-frameworki-moduly-za-1-kliknieciem/).
 
