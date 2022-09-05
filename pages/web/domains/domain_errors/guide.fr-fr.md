@@ -31,12 +31,12 @@ Un tableau vous permet de consulter toutes les opérations liées aux noms de do
 - `Opération` :  Opération en cours sur le nom de domaine.
 - `Commentaire` : Détails sur l'opération en cours. Instructions.
 - `Date de traitement` : Date de création de l'opération.
-- `Date de mise à jour` :  Horodatage de mise à jour de l'opération en cours.
+- `Date de mise à jour` : Horodatage de mise à jour de l'opération en cours.
 - `Date de fin` : Date de fin de l'opération.
 - `État` : État actuel de l'opération.
 
 Toutes les opérations listées dans ce tableau ne nécessitent pas votre intervention pour qu'elles se déroulent normalement.<br>
-Nous allons nous intéresser dans ce guide aux opérations **en erreur** au travers d'exemples récurrents.
+In dieser Anleitung werden wir uns anhand wiederkehrender Beispiele für Operationen **in Fehlerhaft** interessieren.
 
 ![domain](images/domain-error-table02.png){.thumbnail}
 
@@ -139,4 +139,4 @@ Si vous constatez une anomalie qui n'est pas liée à la configuration des serve
 
 [Modifier les serveurs DNS d’un nom de domaine OVHcloud](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/)
  
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
