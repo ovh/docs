@@ -25,7 +25,7 @@ La creación de un nombre de dominio, su transferencia, su cambio de propietario
 
 ## Procedimiento
 
-Acceda a la sección [Web Cloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) y seleccione `Dominios`{.action} en el área de cliente de OVHcloud` `{.action}. Haga clic en `Operaciones en curso`{.action} sobre la lista de dominios.
+Acceda a la sección `Web Cloud`{.action} y seleccione `Dominios`{.action} en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) . Haga clic en `Operaciones en curso`{.action} sobre la lista de dominios.
 
 Una tabla le permite consultar todas las operaciones relacionadas con los dominios en su área de cliente.
 
@@ -97,7 +97,7 @@ En el ejemplo a continuación, la dirección IP del servidor DNS no responde.
 
 ![Dominio](images/domain-error07.png){.thumbnail}
 
-En la sección `Dominios`{.action}, seleccione el dominio correspondiente y abra la pestaña `Servidores DNS`{.action}. Desde esta pestaña, [modifique sus servidores DNS](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/). 
+En la sección `Dominios`{.action}, seleccione el dominio correspondiente y abra la pestaña `Servidores DNS`{.action}. Desde esta pestaña, [modifique sus servidores DNS](https://docs.ovh.com/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/). 
 
 #### Error en un dominio **.ie**, **.de** o **.it** después de una actualización de DNS
 

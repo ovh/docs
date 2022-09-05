@@ -25,7 +25,7 @@ La creazione di un dominio, il suo trasferimento e la modifica del proprietario 
 
 ## Procedura
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), seleziona la sezione `Web Cloud`{.action} e poi i `domini`{.action}. Clicca su `Operazioni in corso`{.action} sopra la lista dei domini.
+Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona la sezione `Web Cloud`{.action} e poi i `domini`{.action}. Clicca su `Operazioni in corso`{.action} sopra la lista dei domini.
 
 Una tabella ti permette di consultare tutte le operazioni relative ai domini del tuo Spazio Cliente.
 
@@ -51,10 +51,10 @@ In questa guida ci concentreremo sulle operazioni **in errore** attraverso esemp
 > L'elenco degli esempi sotto riportato non è esaustivo. Se riscontri un errore non specificato in questa guida:
 >
 > - Verifica di essere aggiornato sui [pagamenti](https://docs.ovh.com/it/billing/gestire-fatture-ovhcloud/#pay-bills) e sui [rinnovi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#renewal-management) dei tuoi domini.
-> - Per agire, clicca sul pulsante...``{.action} a destra dell'operazione in questione.
+> - Per agire, clicca sul pulsante `...`{.action} a destra dell'operazione in questione.
 > - Leggi il messaggio descrittivo e controlla se ti permette di risolvere l'errore.
 >
-> Se, nonostante queste verifiche, non sei in grado di agire sul dominio, ti invitiamo ad aprire un ticket di assistenza dal tuo Spazio Cliente OVH.
+> Se, nonostante queste verifiche, non sei in grado di agire sul dominio, ti invitiamo ad aprire un ticket di assistenza dal tuo Spazio Cliente OVHcloud.
 >
 
 #### Richiesta di documenti
@@ -63,7 +63,7 @@ Alcune estensioni di domini richiedono una documentazione per giustificarne l'ut
 
 ![dominio](images/domain-error01.png){.thumbnail}
 
-Per fornire il(i) documento(i) necessario(i), clicca sul pulsante...`.`{.action} a destra dell'operazione in questione.<br>
+Per fornire il(i) documento(i) necessario(i), clicca sul pulsante `...`{.action} a destra dell'operazione in questione.<br>
 La finestra che segue mostra, nella sezione "Descrizione" puoi trovare i dettagli del documento da fornire e un pulsante per caricare il documento.
 
 ![dominio](images/domain-error02.png){.thumbnail}
@@ -97,7 +97,7 @@ Nell'esempio qui sotto, l'indirizzo IP del server DNS non risponde.
 
 ![dominio](images/domain-error07.png){.thumbnail}
 
-Nella sezione `Domini`{.action}, seleziona il dominio e clicca sulla scheda `Server DNS`{.action}. Da questa scheda è possibile [modificare i server DNS](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/). 
+Nella sezione `Domini`{.action}, seleziona il dominio e clicca sulla scheda `Server DNS`{.action}. Da questa scheda è possibile [modificare i server DNS](https://docs.ovh.com/it/domains/web_hosting_gestisci_il_tuo_server_dns/). 
 
 #### Errore su un dominio.**ie**, **.de** o **.it** dopo un aggiornamento DNS
 

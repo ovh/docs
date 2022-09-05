@@ -24,14 +24,14 @@ Rejestracja domeny, jej transfer, zmiana właściciela to operacje, w których m
 - Aktualizacja w [płatności](https://docs.ovh.com/pl/billing/zarzadzanie-fakturami-ovhcloud/#pay-bills) i [odnowienie](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#renewal-management) powiązanych usług (domena i hosting)
 ## W praktyce
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) przejdź do sekcji `Web Cloud`{.action}, a następnie `nazwy domen`{.action}. Kliknij `Operacje w toku`{.action} nad listą domen.
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Web Cloud`{.action}, a następnie nazwy `Domeny`{.action}. Kliknij `Operacje w toku`{.action} nad listą domen.
 
 W tabeli możesz sprawdzić operacje związane z domenami w Twoim Panelu klienta.
 
 ![domena](images/domain-error-table01.png){.thumbnail}
 
 - `Domena`: Domena, której dotyczy operacja.
-- `Operacja`:  Trwa wykonywanie operacji dla domeny.
+- `Operacja`: Trwa wykonywanie operacji dla domeny.
 - `Komentarz`: Szczegóły operacji w trakcie. Instrukcje.
 - `Data przetwarzania`: Data utworzenia operacji.
 - `Data aktualizacji`:  Znacznik czasu aktualizacji operacji w trakcie.
@@ -96,7 +96,7 @@ W poniższym przykładzie adres IP serwera DNS nie odpowiada.
 
 ![domena](images/domain-error07.png){.thumbnail}
 
-W sekcji `Domeny`{.action} wybierz odpowiednią domenę, a następnie kliknij zakładkę `Serwery DNS`{.action}. W tej zakładce [zmień serwery DNS](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/). 
+W sekcji `Domeny`{.action} wybierz odpowiednią domenę, a następnie kliknij zakładkę `Serwery DNS`{.action}. W tej zakładce [zmień serwery DNS](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/). 
 
 #### Błąd dotyczący domeny **.ie**,.**de** lub **.it** po aktualizacji DNS
 

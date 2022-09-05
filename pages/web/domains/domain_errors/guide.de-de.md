@@ -25,7 +25,7 @@ Bei der Erstellung eines Domainnamens, dem Transfer oder dem Inhaberwechsel hand
 
 ## In der praktischen Anwendung
 
-Gehen Sie [in Ihrem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) Kundencenter in den Bereich `Web Cloud`{.action} und `dann Domainnamen`{.action}. Klicken `Sie auf`{.action} Laufende Operationen über der Liste der Domainnamen.
+Gehen Sie [in Ihrem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) Kundencenter in den Bereich `Web Cloud`{.action} und dann `Domainnamen`{.action}. Klicken `Sie auf`{.action} Laufende Operationen über der Liste der Domainnamen.
 
 In einer Tabelle können Sie alle Vorgänge im Zusammenhang mit den Domainnamen in Ihrem Kundencenter einsehen.
 
@@ -97,7 +97,7 @@ Im folgenden Beispiel antwortet die IP-Adresse des DNS Servers nicht.
 
 ![domain](images/domain-error07.png){.thumbnail}
 
-Wählen Sie im Bereich `Domainnamen`{.action} die betreffende Domain aus und klicken Sie dann auf den Tab `DNS Server`{.action}. Ändern Sie in diesem Tab [Ihre DNS Server](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/). 
+Wählen Sie im Bereich `Domainnamen`{.action} die betreffende Domain aus und klicken Sie dann auf den Tab `DNS Server`{.action}. Ändern Sie in diesem Tab [Ihre DNS Server](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/). 
 
 #### Fehler bei einer Domain mit der Endung **ie**, **de** oder **it** ** nach einem DNS Update
 
@@ -113,8 +113,8 @@ Um zu überprüfen, ob Ihr Domainname derart gesperrt ist, gehen Sie in die Tabe
 
 Um Ihre Domain zu überprüfen, empfehlen wir Ihnen die Verwendung des von der Registry ausgestellten Tools zur Überprüfung:
 
-- Für eine .de-**Domain**: <https://nast.denic.de/>.
-- Für eine .**it Domain**: <https://dns-check.nic.it/>.
+- Für eine **.de**-Domain: <https://nast.denic.de/>.
+- Für eine **.it**-Domain: <https://dns-check.nic.it/>.
 
 > [!primary]
 >

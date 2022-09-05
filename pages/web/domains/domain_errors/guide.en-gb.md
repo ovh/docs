@@ -20,7 +20,7 @@ When you create a domain name, transfer it, or change its owner, these are all o
 - being up-to-date in the [payments](https://docs.ovh.com/gb/en/billing/manage-ovh-bills/#pay-bills) and [renewals](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management) of related services (domain name and web hosting plan)
 ## Instructions
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) , go to the `Web Cloud`{.action} section, then `Domain`{.action} names. Click `Ongoing`{.action} operations above the list of domain names.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) , go to the `Web Cloud`{.action} section, then `Domain`{.action} names. Click `Ongoing`{.action} operations above the list of domain names.
 
 You can use a table to view all of the domain name operations in your Control Panel.
 
@@ -54,7 +54,7 @@ In this guide, we will focus on **error** operations, using recurring examples.
 
 #### Document requests
 
-Some domain name extensions require you to justify their use by providing documents. If this is the case, you will need to submit the documents from the `Ongoing`{.action} Operations window.
+Some domain name extensions require you to justify their use by providing documents. If this is the case, you will need to submit the documents from the `Ongoing Operations`{.action} window.
 
 ![domain](images/domain-error01.png){.thumbnail}
 
@@ -92,7 +92,7 @@ In the example below, the IP address of the DNS server is not responding.
 
 ![domain](images/domain-error07.png){.thumbnail}
 
-In the `Domain`{.action} names section, select the domain name concerned, then click the `DNS`{.action} Servers tab. In this tab, [edit your DNS](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/) servers. 
+In the `Domain`{.action} names section, select the domain name concerned, then click the `DNS`{.action} Servers tab. In this tab, [edit your DNS](https://docs.ovh.com/gb/en/domains/web_hosting_general_information_about_dns_servers/) servers. 
 
 #### Error on a **.ie**, **.de** or **.it** domain name after a DNS update
 
