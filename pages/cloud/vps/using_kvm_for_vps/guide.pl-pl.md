@@ -9,7 +9,7 @@ section: Pierwsze kroki
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 7/06/2020**
+**Ostatnia aktualizacja z dnia 30/08/2022**
 
 ## Wprowadzenie
 
@@ -55,6 +55,36 @@ Połączenie z siecią
 > Klawiatura może mieć inny układ niż ty. Upewnij się, że to sprawdzić, ponieważ klawiatura może być AZERTY zamiast QWERTY, na przykład.
 >
 
+#### Zmiana ustawienia klawiatury
+
+Możesz włączyć konfigurację klawiatury, którą wolisz, aby korzystanie z konsoli było bardziej praktyczne. Wprowadź następujące polecenie:
+
+```bash
+sudo dpkg-reconfigure keyboard-configuration
+```
+
+Otworzy się menu graficzne, które umożliwia wybranie modelu klawiatury.
+
+![KVM](images/kvm_vps01.png){.thumbnail}
+
+Użyj klawiszy strzałek, aby uzyskać dostęp do opcji zbliżonej do Twojego sprzętu, a następnie naciśnij "Enter". 
+
+W kolejnym menu wybierz kraj.
+
+![KVM](images/kvm_vps02.png){.thumbnail}
+
+Trzecie menu pozwala określić rzeczywisty układ klawiatury.
+
+![KVM](images/kvm_vps03.png){.thumbnail}
+
+W zależności od dokonanego wyboru, po trzecim menu mogą pojawić się inne opcje.
+
+Wróć do wiersza poleceń, wprowadź następującą komendę, aby wprowadzić zmiany:
+
+```bash
+sudo systemctl restart keyboard-setup
+```
+
 ### Połączenie z KVM przez API
 
 Zdarza się, że napotkasz problemy z połączeniem z KVM za pomocą panelu konfiguracyjnego OVHcloud, zwłaszcza w przypadku starszych wersji. W takim przypadku możesz użyć rozwiązania API. W tym celu zaloguj się przez API [OVHcloud](https://api.ovh.com/).
@@ -63,16 +93,27 @@ Zdarza się, że napotkasz problemy z połączeniem z KVM za pomocą panelu konf
 
 Jeśli posiadasz serwer VPS 2014, może wystąpić *błąd 1 06*. Przegląd API za pomocą poniższego zaproszenia może rozwiązać ten problem.
 
-> [!api]
+> [!faq]
 >
-> @api {POST} /vps/{serviceName}/openConsoleAccess
+> API:
+>
+>> > [!api]
+>> >
+>> > @api {POST} /vps/{serviceName}/openConsoleAccess
+>> >
+>>
 >
 > Parametry połączenia API:
 >
->> serviceName
->>> ID serwera VPS, który wygląda jak vpsxxxxx.ovh.net
->> Protokół:
->>> VNC
+>> > **serviceName**
+>> >
+>> >> ID serwera VPS, który wygląda jak vpsxxxxx.ovh.net
+>> >
+>> > **protocol** 
+>> >
+>> >> VNC
+>
+
 
 Pomimo pozytywnego powrotu API połączenie może trwać kilka minut, zanim port zostanie faktycznie otwarty.
 
@@ -87,14 +128,21 @@ Korzystaj ze szczegółowych informacji dostarczonych przez wywołanie API, aby 
 
 W przypadku problemów z KVM, postępuj zgodnie z poleceniem API dotyczącym dostępu do KVM:
 
-> [!api]
+> [!faq]
 >
-> @api {POST} /vps/{serviceName}/getConsoleUrl
+> API:
+>
+>> > [!api]
+>> >
+>> > @api {POST} /vps/{serviceName}/getConsoleUrl
+>> >
+>>
 >
 > Parametry połączenia API:
 >
->> serviceName
->>> ID serwera VPS, który wygląda jak vpsxxxxx.ovh.net
+>> > **serviceName**
+>> >
+>> >> ID serwera VPS, który wygląda jak vpsxxxxx.ovh.net
 >
 
 > [!primary]

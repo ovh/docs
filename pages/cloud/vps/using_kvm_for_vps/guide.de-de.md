@@ -9,13 +9,13 @@ section: Erste Schritte
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 05.09.2020**
+**Letzte Aktualisierung am 30.08.2022**
 
 ## Ziel
 
 Die KVM-Konsole ermöglicht eine direkte Verbindung zu Ihrem VPS, ohne externe Software (Terminal, Putty usw.) installieren zu müssen. Diese Konsole ist sowohl über unser OVHcloud Kundencenter als auch die OVHcloud API zugänglich.  
 
-**Diese Anleitung erläutert die zwei Zugangsmethoden für KVM.**
+**Diese Anleitung erläutert die beiden Zugangsmethoden für KVM.**
 
 ## Voraussetzungen
 
@@ -56,6 +56,36 @@ Der Bildschirm der KVM-Konsole öffnet sich. Dies ist ein kleines Fenster, das d
 > Die Tastaturbelegung kann von der Ihrigen abweichen. Bitte überprüfen Sie dies. Die Tastatur kann beispielsweise auf AZERTY statt QWERTY eingestellt sein.
 >
 
+#### Änderung der Tastaturbelegung
+
+Sie können die von Ihnen bevorzugte Tastaturkonfiguration aktivieren, um die Verwendung der Konsole einfacher zu machen. Geben Sie folgenden Befehl ein:
+
+```bash
+sudo dpkg-reconfigure keyboard-configuration
+```
+
+Es öffnet sich ein grafisches Menü, in dem Sie ein Tastaturmodell auswählen können.
+
+![KVM](images/kvm_vps01.png){.thumbnail}
+
+Verwenden Sie die Pfeiltasten, um die Option zu wählen, die Ihrer Hardware am nächsten kommt, und drücken Sie dann "Enter". 
+
+Wählen Sie im nächsten Menü Ihr Land aus.
+
+![KVM](images/kvm_vps02.png){.thumbnail}
+
+Im dritten Menü können Sie die tatsächliche Anordnung der Tastatur auswählen.
+
+![KVM](images/kvm_vps03.png){.thumbnail}
+
+Je nach Ihrer Auswahl können nach diesem dritten Menü weitere Optionen erscheinen.
+
+Geben Sie zurück in der Kommandozeile folgenden Befehl ein, um die Änderungen zu übernehmen:
+
+```bash
+sudo systemctl restart keyboard-setup
+```
+
 ### Verbindung mit der KVM-Konsole über die API
 
 Es kann zu Problemen bei der Verbindung mit KVM über Ihr OVHcloud Kundencenter kommen, insbesondere wenn Sie ältere Versionen nutzen. In diesem Fall steht Ihnen die API als Lösung zur Verfügung. Verbinden Sie sich dazu zunächst über das [OVHcloud API](https://api.ovh.com/) Interface.
@@ -64,16 +94,26 @@ Es kann zu Problemen bei der Verbindung mit KVM über Ihr OVHcloud Kundencenter 
 
 Wenn Sie einen VPS 2014 nutzen, stellen Sie vielleicht einen *Fehler 1006* fest. Das Problem kann umgangen werden, indem Sie die API mit folgenden Aufruf nutzen:
 
-> [!api]
+> [!faq]
 >
-> @api {POST} /vps/{serviceName}/openConsoleAccess
+> API:
 >
-> Parameter für den API Aufruf:
+>> > [!api]
+>> >
+>> > @api {POST} /vps/{serviceName}/openConsoleAccess
+>> >
+>>
 >
->> serviceName \*
->>> ID Ihres VPS. Sie sieht so aus: vpsxxxxx.ovh.net
->> Protokoll
->>> VNC
+> API Parameter:
+>
+>> > **serviceName**
+>> >
+>> >> ID des VPS im Format vpsxxxxx.ovh.net
+>> >
+>> > **protocol** 
+>> >
+>> >> VNC
+>
 
 Trotz positiver Rückmeldung der API kann es vorkommen, dass der Aufbau der Verbindung ein bis zwei Minuten dauert, bis der Port auch tatsächlich geöffnet ist.
 
@@ -88,14 +128,21 @@ Stellen Sie eine Remote-Verbindung mit dem VPS her. Nutzen Sie dafür die Inform
 
 Bei Problemen mit der KVM-Konsole ist dies die empfohlene Verbindungsmethode:
 
-> [!api]
+> [!faq]
 >
-> @api {POST} /vps/{serviceName}/getConsoleUrl
+> API:
 >
-> Parameter für den API Aufruf:
+>> > [!api]
+>> >
+>> > @api {POST} /vps/{serviceName}/getConsoleUrl
+>> >
+>>
 >
->> serviceName \*
->>> ID Ihres VPS. Sie sieht so aus: vpsxxxxx.ovh.net
+> API Parameter:
+>
+>> > **serviceName**
+>> >
+>> >> ID des VPS im Format vpsxxxxx.ovh.net
 >
 
 > [!primary]
