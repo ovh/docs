@@ -48,7 +48,7 @@ You also need to have [Helm](https://docs.helm.sh/) installed on your workstatio
 
 Your NAS-HA can expose multiple partitions, and supports a variety of protocols. Each partition is accessible only from a specific range of IPs. We will create one exposing NFS and make it accessible from your Kubernetes worker nodes.
 
-Access the UI for OVHcloud NAS-HA by clicking the *NAS and CDN* menu in the [Server section of the OVHcloud Control Panel](https://www.ovh.com/manager/dedicated)
+Access the UI for OVHcloud NAS-HA by clicking the *NAS and CDN* menu in the [Bare Metal Cloud section of the OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 Create a new NFS partition in your Zpool:
 
