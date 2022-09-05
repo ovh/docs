@@ -75,9 +75,33 @@ In beiden Fällen wird Ihnen eine E-Mail zum Zurücksetzen des Passworts zugesan
 > - Nach Klick auf den Link ist er noch 30 Minuten gültig.
 >
 
+> [!warning]
+>
+> Die Änderung des Passworts für den Zugang zum Verwaltungsinterface Ihres CMS über das OVHcloud Kundencenter kann durchgeführt werden **nur wenn folgende Bedingungen erfüllt sind**:
+>
+> - Das CMS wurde mit der Option "1-Klick-Modul" bei der Bestellung Ihres Hostings oder über das OVHcloud Kundencenter installiert.
+> - Der Benutzer (Benutzername, E-Mail-Adresse, usw.) wurde nicht über das CMS oder die Datenbank geändert.
+> - Die Zugriffsseite zum Verwaltungsinterface Ihres CMS wurde nicht geändert. Insbesondere darf die URL für den Zugang zum Verwaltungsinterface Ihres CMS nicht über das CMS geändert worden sein. Auf derselben Seite dürfen keine Beschränkungen bestehen.
+> - Das "Präfix"der Tabellen in Ihrer Datenbank wurde weder über das CMS noch direkt über die Datenbank geändert.
+>
+> Ist das nicht der Fall, folgen Sie der offiziellen Dokumentation des verwendeten CMS oder kontaktieren Sie direkt den Herausgeber des CMS.
+>
+
 Um das Passwort für den Zugang zum Verwaltungsinterface Ihrer Website zu ändern, gehen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.
 
 Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modul und dann auf `Passwort ändern`{.action}. Klicken Sie auf `Bestätigen`{.action}. Sie erhalten in einigen Minuten per E-Mail einen Link um Ihr Passwort zurückzusetzen.
+
+> [!primary]
+>
+> Wenn Sie Ihr Passwort für den Zugang zum Verwaltungsinterface Ihres CMS aus den oben genannten Gründen nicht über das OVHcloud Kundencenter ändern können, finden Sie die offizielle Dokumentation zu den verschiedenen CMS, die auf unseren Webhosting-Angeboten installiert werden:
+>
+> - WordPress : <https://wordpress.org/support/article/resetting-your-password/
+> - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F
+> - Drupal : Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum Drupal-Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der offiziellen Seite [drupal.org](https://www.drupal.org/){.external}.
+> - PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum PrestaShop Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Für weitere Informationen klicken Sie [hier](https://www.prestashop.com){.external} auf ihre offizielle Seite.
+>
+Sie können auch das Passwort für den Zugang zum Verwaltungsinterface Ihres CMS direkt über Ihre Datenbank ändern.<br>
+Wir empfehlen Ihnen jedoch dringend, die Operation mithilfe der vom Herausgeber Ihres CMS zur Verfügung gestellten Dokumentation durchzuführen oder bei Problemen einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen] (#go-further) dieser Anleitung.
 
 ### Ihr Modul löschen
 
@@ -98,7 +122,7 @@ Loggen Sie sich anschließend in den [FTP-Bereich](https://docs.ovh.com/de/hosti
 
 - *WordPress* : **“wp-config.php“** (Der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
 - *Joomla!* : **“configuration.php“** (Der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
-- *Drupal*: **“settings.php“** (Gehen Sie zum Ordner **“sites“** und dann **“default“**. Der Name der Datenbank erscheint unter der Bezeichnung **“database“**).
+- *Drupal* : **“settings.php“** (Gehen Sie zum Ordner **“sites“** und dann **“default“**. Der Name der Datenbank erscheint unter der Bezeichnung **“database“**).
 - *PrestaShop* : **“parameters.php“** (Gehen Sie zum Ordner **“app“** und dann **“config“**. Der Name der Datenbank Ihres Moduls erscheint unter der Bezeichnung **“database_name“**).
 
 #### Schritt 2: Ihr Modul sichern
@@ -145,5 +169,7 @@ Installieren Sie auf Ihrer Seite keine Plugins oder Templates, die nicht auf der
 [Die häufigsten Fehler bei 1-Klick-Modulen beheben](https://docs.ovh.com/de/hosting/fehler-bei-1-klick-modulen/).
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere verschiedenen [Support-Angebote](https://www.ovhcloud.com/de/support-levels/) einsehen.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -41,7 +41,7 @@ A seguir, clique no botão `...`{.action} à direita da linha relativa ao módul
 
 > [!primary]
 >
-> Se o website não for apresentado corretamente após esta operação, consulte os guias OVHcloud relativos aos alojamentos partilhados na secção [Diagnóstico](https://docs.ovh.com/pt/hosting/).
+> Se o website não for apresentado corretamente após esta operação, consulte os guias *OVHcloud* relativos aos alojamentos partilhados na secção [Diagnóstico](https://docs.ovh.com/pt/hosting/).
 >
 
 ### Aceder à interface de administrador
@@ -75,9 +75,33 @@ Em ambos os casos, ser-lhe-á enviado um e-mail de reinicialização da password
 > - Depois de clicar na ligação, esta só é válida durante 30 minutos.
 >
 
+> [!warning]
+>
+> A alteração da palavra-passe de acesso à interface de gestão do seu CMS a partir da Área de Cliente OVHcloud só pode ser efetuada **se forem respeitadas as seguintes condições** :
+>
+> - O CMS foi instalado com a opção "módulo 1 clique" durante a encomenda do alojamento ou a partir da Área de Cliente OVHcloud.
+> O utilizador (nome de utilizador, endereço de e-mail, etc.) não foi modificado através do CMS ou da base de dados.
+> A página de acesso à interface de administração do seu CMS não foi alterada. Em particular, o URL de acesso à interface de administração do seu CMS não deve ter sido alterado através do CMS. Não devem ter sido impostas restrições nesta mesma página.
+> - O "prefixo" das tabelas presentes na sua base de dados não foi modificado a partir do CMS ou da base de dados diretamente.
+>
+> Caso contrário, deverá seguir a documentação oficial do CMS que utiliza ou contactar diretamente o editor do CMS.
+>
+
 Para alterar a palavra-passe de acesso à interface de administração do seu website **através da Área de Cliente OVHcloud**, clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e no separador `Modules "1 clique"`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita da linha relativa ao seu módulo e depois `Alterar palavra-passe`{.action}. Clique em `Validar`{.action}. Receberá dentro de alguns minutos por e-mail um link de reinicialização da sua password.
+
+> [!primary]
+>
+> Se não pode alterar a palavra-passe de acesso à interface de gestão do seu CMS a partir da Área de Cliente OVHcloud pelas razões indicadas acima, poderá consultar a documentação oficial para os diferentes CMS propostos em instalação nos nossos alojamentos partilhados:
+>
+> - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
+> - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
+> - Drupal : O editor deste programa não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do Drupal. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte a página oficial [drupal.org](https://www.drupal.org/) {.external}.
+> - PrestaShop : O editor deste software não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do PrestaShop. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://www.prestashop.com) {.external} para aceder à sua página oficial.
+>
+Também é possível alterar a palavra-passe de acesso à interface de administração do seu CMS diretamente a partir da sua base de dados.<br>
+No entanto, se encontrar dificuldades, recomendamos vivamente que efetue a operação com a documentação proposta pelo editor do seu CMS ou que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
 
 ### Eliminar o módulo
 
@@ -145,5 +169,7 @@ Não instale no seu site plugins ou templates que não foram recomendados pelas 
 [Resolver os erros mais frequentes associados aos módulos 1 clique](https://docs.ovh.com/pt/hosting/erros-frequentes-modulos-em-1-clique/).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes ofertas de suporte (https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -36,7 +36,7 @@ Next, click on the `...`{.action} button to the right of the line related to you
 
 > [!primary]
 >
-> If your website does not display properly, please refer to the OVHcloud web hosting guides of the [Troubleshooting](https://docs.ovh.com/au/en/hosting/) section.
+> If your website does not display properly, please refer to the *OVHcloud* web hosting guides of the [Troubleshooting](https://docs.ovh.com/au/en/hosting/) section.
 >
 
 ### Access the administrator interface
@@ -90,10 +90,10 @@ Then, click on the `...`{.action} button to the right of the line related to you
 >
 > If you cannot change your password for accessing your CMS administration interface from the OVHcloud Control Panel for the reasons listed above, you will find the official documentation below for the different CMSs offered for installation on our shared hosting plans:
 >
-> - WordPress: <https://wordpress.org/support/article/resetting-your-password/>
+> - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
-> - Drupal: The publisher of this software does not currently offer any documentation for changing the password for accessing the Drupal administration interface. Please contact the publisher directly on this subject. For more information, see the official page [drupal.org](https://www.drupal.org/){.external}.
-> - PrestaShop: The software publisher does not currently offer any documentation for changing the password for accessing the PrestaShop administration interface. Please contact the publisher directly on this subject. For more information, click [here](https://www.prestashop.com){.external} to go to their official page.
+> - Drupal : The publisher of this software does not currently offer any documentation for changing the password for accessing the Drupal administration interface. Please contact the publisher directly on this subject. For more information, see the official page [drupal.org](https://www.drupal.org/){.external}.
+> - PrestaShop : The software publisher does not currently offer any documentation for changing the password for accessing the PrestaShop administration interface. Please contact the publisher directly on this subject. For more information, click [here](https://www.prestashop.com){.external} to go to their official page.
 >
 You can also change the password for accessing your CMS admin interface directly from your database.<br>
 However, we strongly recommend using the documentation provided by your CMS publisher, or contacting a [specialist provider](https://partner.ovhcloud.com/en-au/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
@@ -116,7 +116,7 @@ Then log on to the [FTP space](https://docs.ovh.com/au/en/hosting/log-in-to-stor
 
 - *WordPress* : **"wp-config.php"** (the database name appears as **"DB_NAME"**).
 - *Joomla!* : **"configuration.php"** (the database name appears under **"public $db"**).
-- *Drupal*: **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
+- *Drupal* : **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
 - *PrestaShop* : **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
 
 #### Step 2: backup your data
