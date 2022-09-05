@@ -7,7 +7,7 @@ section: Cloud Disk Array
 
 
 ## Using web interface
-First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster. You will see two differents parts: **cluster details** and **cluster health**.
+First, connect to the [Cloud Disk Array manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Under 'Platforms and services' select your Ceph cluster. You will see two differents parts: **cluster details** and **cluster health**.
 
 
 ### Cluster details

@@ -14,7 +14,7 @@ section: Cloud Disk Array
 > Using web interface is the easiest way to create a user.
 > 
 
-First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster. On the bottom left, you will find the **user list**. No user is created by default (except *admin* that you can't use and that is hidden).
+First, connect to the [Cloud Disk Array manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Under 'Platforms and services' select your Ceph cluster. On the bottom left, you will find the **user list**. No user is created by default (except *admin* that you can't use and that is hidden).
 
 
 ![Ceph users](images/create_a_user_1.png){.thumbnail}
