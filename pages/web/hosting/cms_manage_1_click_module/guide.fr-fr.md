@@ -37,7 +37,7 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant vo
 
 > [!primary]
 >
-> Si votre site ne s'affiche pas correctement suite à cette manipulation, consultez les guides OVHCLOUD liés aux hébergements mutualisés dans la section [Diagnostic](https://docs.ovh.com/fr/hosting/).
+> Si votre site ne s'affiche pas correctement suite à cette manipulation, consultez les guides **OVHcloud** liés aux hébergements mutualisés dans la section [Diagnostic](https://docs.ovh.com/fr/hosting/).
 >
 
 ### Accéder à l'interface administrateur
@@ -93,8 +93,8 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant vo
 >
 > -	WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > -	Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
-> -	Drupal : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le mot de passe d’accès à l’interface d’administration de Drupal. Nous vous invitons à contacter directement l'éditeur sur ce sujet. Pour plus d'informations, consultez les pages officielles [drupal.org](https://www.drupal.org/) ou [drupal.fr](https://www.drupal.fr/).
-> -	PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le mot de passe d’accès à l’interface d’administration de PrestaShop. Nous vous invitons à contacter directement l'éditeur sur ce sujet. Pour plus d'informations, cliquez [ici](https://www.prestashop.com) pour vous rendre sur leur page officielle.
+> -	Drupal : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le mot de passe d’accès à l’interface d’administration de Drupal. Nous vous invitons à contacter directement l'éditeur sur ce sujet. Pour plus d'informations, consultez les pages officielles [drupal.org](https://www.drupal.org/){.external} ou [drupal.fr](https://www.drupal.fr/){.external}.
+> -	PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le mot de passe d’accès à l’interface d’administration de PrestaShop. Nous vous invitons à contacter directement l'éditeur sur ce sujet. Pour plus d'informations, cliquez [ici](https://www.prestashop.com){.external} pour vous rendre sur leur page officielle.
 >
 
 Il est également possible de changer le mot de passe d’accès à l’interface d’administration de votre CMS directement depuis votre base de données.<br>
@@ -117,10 +117,10 @@ Dans le cas contraire, rendez-vous dans l'onglet `Multisite`{.action}. Notez le 
 
 Connectez-vous ensuite à [l'espace FTP de votre hébergement](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Multisite`{.action} et recherchez le fichier de configuration de votre module :
 
-- Pour WORDPRESS : **« wp-config.php »** (le nom de la base de données apparaît sous la mention **« DB_NAME »**).
-- Pour JOOMLA : **« configuration.php »** (le nom de la base de données apparaît sous la mention **« public $db »**).
-- Pour DRUPAL : **« settings.php »** (Pour le retrouver, rendez-vous dans le dossier **« sites »** puis **« default »**. Le nom de la base de données apparaît sous la mention **« database »**).
-- Pour PRESTASHOP : **« parameters.php »** (Pour le retrouver, rendez-vous dans le dossier **« app »** puis **« config »**. Le nom de la base de votre module apparaît sous la mention **« database_name »**).
+- Pour *WordPress* : **« wp-config.php »** (le nom de la base de données apparaît sous la mention **« DB_NAME »**).
+- Pour *Joomla!* : **« configuration.php »** (le nom de la base de données apparaît sous la mention **« public $db »**).
+- Pour *Drupal* : **« settings.php »** (Pour le retrouver, rendez-vous dans le dossier **« sites »** puis **« default »**. Le nom de la base de données apparaît sous la mention **« database »**).
+- Pour *PrestaShop* : **« parameters.php »** (Pour le retrouver, rendez-vous dans le dossier **« app »** puis **« config »**. Le nom de la base de votre module apparaît sous la mention **« database_name »**).
 
 #### Étape 2 : sauvegarder votre module
 
