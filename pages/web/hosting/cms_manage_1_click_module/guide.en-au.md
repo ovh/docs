@@ -86,7 +86,7 @@ To change the password of your website’s administration interface **via the OV
 
 Then, click on the `...`{.action} button to the right of the line related to your module, then on `Modify password`{.action} and on `Confirm`{.action}. You will receive an email with a password reset link within a few minutes.
 
- [!primary]
+> [!primary]
 >
 > If you cannot change your password for accessing your CMS administration interface from the OVHcloud Control Panel for the reasons listed above, you will find the official documentation below for the different CMSs offered for installation on our shared hosting plans:
 >
@@ -105,7 +105,7 @@ However, we strongly recommend using the documentation provided by your CMS publ
 > Backing up your data is an essential part of the [securing of your websites](https://docs.ovh.com/au/en/hosting/secure-website/). We recommend you to download regularly your data backup on a local device, such as an USB drive or external hard drive, following the instructions in this [guide](https://docs.ovh.com/au/en/hosting/export-a-website/).
 >
 
-#### Step 1: identify the database linked to your module <a name="step1"></a>
+#### Step 1: Identify the database linked to your module <a name="step1"></a>
 
 To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on the `Databases`{.action} tab.
 
@@ -114,16 +114,16 @@ Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this
 
 Then log on to the [FTP space](https://docs.ovh.com/au/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
 
-- WordPress : **"wp-config.php"** (the database name appears as **"DB_NAME"**).
-- Joomla! : **"configuration.php"** (the database name appears under **"public $db"**).
-- Drupal : **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
-- PrestaShop : **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
+- WordPress: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
+- Joomla!: **"configuration.php"** (the database name appears under **"public $db"**).
+- Drupal: **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
+- PrestaShop: **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
 
-#### Step 2: backup your data
+#### Step 2: Back up your data
 
 To back up your website, follow the instructions of this [guide](https://docs.ovh.com/au/en/hosting/export-a-website/) to retrieve its files from the FTP space of your hosting plan and its database.
 
-#### Step 3: delete your module
+#### Step 3: Delete your module
 
 > [!alert]
 >

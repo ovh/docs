@@ -86,7 +86,7 @@ To change the password of your website’s administration interface **via the OV
 
 Then, click on the `...`{.action} button to the right of the line related to your module, then on `Modify password`{.action} and on `Confirm`{.action}. You will receive an email with a password reset link within a few minutes.
 
-[!primary]
+> [!primary]
 >
 > If you cannot change your password for accessing your CMS administration interface from the OVHcloud Control Panel for the reasons listed above, you will find the official documentation below for the different CMSs offered for installation on our shared hosting plans:
 >

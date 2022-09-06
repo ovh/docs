@@ -86,7 +86,7 @@ To change the password of your website’s administration interface **via the OV
 
 Then, click on the `...`{.action} button to the right of the line related to your module, then on `Modify password`{.action} and on `Confirm`{.action}. You will receive an email with a password reset link within a few minutes.
 
- [!primary]
+> [!primary]
 >
 > If you cannot change your password for accessing your CMS administration interface from the OVHcloud Control Panel for the reasons listed above, you will find the official documentation below for the different CMSs offered for installation on our shared hosting plans:
 >
@@ -105,26 +105,26 @@ However, we strongly recommend using the documentation provided by your CMS publ
 > Backing up your data is an essential part of the [securing of your websites](https://docs.ovh.com/ie/en/hosting/secure-website/). We recommend you to download regularly your data backup on a local device, such as an USB drive or external hard drive, following the instructions in this [guide](https://docs.ovh.com/gb/en/hosting/export-a-website/).
 >
 
-#### Step 1: identify the database linked to your module <a name="step1"></a>
+#### Step 1: Identify the database linked to your module <a name="step1"></a>
 
 To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on the `Databases`{.action} tab.
 
-If you have only one database in this part of your control panel and you do not have a [CloudDB](https://www.ovh.ie/cloud/cloud-databases/) offer, you can consider this to be your website's database.
+If you have only one database in this part of your Control Panel and you do not have a [CloudDB](https://www.ovh.ie/cloud/cloud-databases/) offer, you can consider this to be your website's database.
 
 Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this is the directory where the files that make up your 1-click module are located on the FTP server.
 
 Then log on to the [FTP space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
 
-- WordPress : **"wp-config.php"** (the database name appears as **"DB_NAME"**).
-- Joomla! : **"configuration.php"** (the database name appears under **"public $db"**).
-- Drupal : **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
-- PrestaShop : **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
+- WordPress: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
+- Joomla!: **"configuration.php"** (the database name appears under **"public $db"**).
+- Drupal: **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
+- PrestaShop: **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
 
-#### Step 2: backup your data
+#### Step 2: Back up your data
 
 To back up your website, follow the instructions of this [guide](https://docs.ovh.com/gb/en/hosting/export-a-website/) to retrieve its files from both the FTP space on your hosting plan and its database.
 
-#### Step 3: delete your module
+#### Step 3: Delete your module
 
 > [!alert]
 >
@@ -137,7 +137,7 @@ Then click on the `...`{.action} button to the right of the line related to your
 
 > [!warning]
 >
-> Deleting your 1-click module **will not automatically delete its database**. If you launch the installation of a new CMS without having previously deleted the database from the previous one and if your hosting plan does not allow the automatic creation of another database, the message "[An error has occurred loading the information (You need at least one free database)](https://docs.ovh.com/ie/en/hosting/error-frequently-1-click-modules/#an-error-has-occurred-loading-the-information-you-need-at-least-one-free-database)" will appear in your control panel.
+> Deleting your 1-click module **will not automatically delete its database**. If you launch the installation of a new CMS without having previously deleted the database from the previous one and if your hosting plan does not allow the automatic creation of another database, the message "[An error has occurred loading the information (You need at least one free database)](https://docs.ovh.com/ie/en/hosting/error-frequently-1-click-modules/#an-error-has-occurred-loading-the-information-you-need-at-least-one-free-database)" will appear in your Control Panel.
 >
 > If you have a [Personal Hosting](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) subscription or if you have already created all four databases of your [Professional Hosting](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) or [Performance Hosting](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
 >
