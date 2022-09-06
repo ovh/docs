@@ -69,7 +69,7 @@ Once the issue has been resolved, you can unblock your IP by performing the foll
 
 #### From the OVHcloud Manager
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} and click on `IP`{.action}.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} section and click on `IP`{.action}.
 
 A pop-up message indicates the IP/service that has been blocked for SPAM.
 
