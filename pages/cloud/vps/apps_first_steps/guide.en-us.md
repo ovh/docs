@@ -53,7 +53,7 @@ No further steps are necessary to complete the first configuration of this appli
 > Why set root password?
 >> WHM by default uses the root user for authentication and the one time link allows access to complete first setup and change root password. Next time you log in to WHM you must use the root user and the password you have set.
 > Where is my licence for cPanel?
->> You can purchase a licence from OVHcloud for your VPS via the [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> You can purchase a licence from OVHcloud for your VPS via the [OVHcloud Control Panel](https://ca.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Plesk
 
@@ -73,7 +73,7 @@ No further steps are necessary to complete the first configuration of this appli
 > [!faq]
 >
 > Where is my licence for Plesk?
->> You can purchase a licence from OVHcloud for your VPS via the [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> You can purchase a licence from OVHcloud for your VPS via the [OVHcloud Control Panel](https://ca.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Docker
 

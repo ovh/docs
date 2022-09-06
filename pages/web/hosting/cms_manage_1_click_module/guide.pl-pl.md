@@ -10,7 +10,7 @@ order: 2
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 21-12-2021**
+**Ostatnia aktualizacja z dnia 05-09-2022**
 
 ## Wprowadzenie
 
@@ -22,7 +22,7 @@ Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetow
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -75,9 +75,33 @@ W obu przypadkach otrzymasz e-mail z prośbą o zresetowanie hasła.
 > - Po kliknięciu na link jest on ważny przez 30 minut.
 >
 
+> [!warning]
+>
+> Zmiana hasła dostępu do interfejsu administracyjnego Twojego CMS w Panelu klienta OVHcloud może zostać wykonana **tylko wtedy, gdy spełnione są następujące warunki**:
+>
+> - CMS został zainstalowany w opcji "Moduł za 1 kliknięciem" podczas składania zamówienia na hosting lub w Panelu klienta OVHcloud.
+> - Użytkownik (nazwa użytkownika, adres e-mail, itp.) nie został zmodyfikowany za pośrednictwem CMS lub bazy danych.
+> - Strona dostępu do interfejsu administracyjnego Twojego CMS nie została zmieniona. W szczególności URL dostępu do interfejsu administracyjnego Twojego CMS nie może zostać zmodyfikowany za pomocą CMS. Nie należy wprowadzać ograniczeń na tej samej stronie.
+> - "Prefiks" tabel znajdujących się w Twojej bazie danych nie został zmieniony bezpośrednio z poziomu CMS lub bazy danych.
+>
+> W przeciwnym razie należy postępować zgodnie z oficjalną dokumentacją używanego przez Ciebie CMS lub skontaktować się bezpośrednio z producentem CMS-a.
+>
+
 Aby zmienić hasło dostępu do interfejsu administracyjnego Twojej strony **w Panelu klienta OVHcloud**, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Moduły za 1 kliknięciem`{.action}.
 
 Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie linii dla Twojego modułu, a następnie `Zmień hasło`{.action}. Kliknij `Zatwierdź`{.action}. W ciągu kilku minut otrzymasz e-mail z linkiem do zresetowania hasła.
+
+> [!primary]
+>
+> Jeśli nie możesz zmienić hasła dostępu do interfejsu administracyjnego Twojego CMS z poziomu Panelu klienta OVHcloud z powodów wymienionych powyżej, zapoznaj się z oficjalną dokumentacją dotyczącą poszczególnych systemów CMS proponowanych w instalacji na hostingu:
+>
+> - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
+> - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
+> - Drupal : Producent tego oprogramowania nie może w dniu dzisiejszym dostarczyć dokumentacji umożliwiającej zmianę hasła dostępu do interfejsu administracyjnego Drupal. Prosimy o bezpośredni kontakt z wydawcą na ten temat. Więcej informacji znajduje się na oficjalnej stronie [drupal.org](https://www.drupal.org/){.external}.
+> - PrestaShop : Producent tego oprogramowania nie udostępnia w terminie dokumentacji zmiany hasła dostępu do interfejsu administracyjnego PrestaShop. Prosimy o bezpośredni kontakt z wydawcą na ten temat. Aby uzyskać więcej informacji, kliknij [tutaj](https://www.prestashop.com){.external} i przejdź do oficjalnej strony.
+>
+Możesz również zmienić hasło dostępowe do interfejsu administracyjnego Twojego CMS bezpośrednio z Twojej bazy danych.<br>
+Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygotowaną przez producenta systemu CMS lub skorzystał z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/), jeśli masz trudności. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź dalej](#go-further) niniejszego przewodnika.
 
 ### Usuń moduł
 
@@ -96,10 +120,10 @@ W przeciwnym razie przejdź do zakładki `MultiSite`{.action}. Zapisz nazwę kat
 
 Zaloguj się do [przestrzeni FTP Twojego hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/). Otwórz `Katalog główny` znajdujący się w zakładce `MultiSite`{.action} i wyszukaj plik konfiguracyjny Twojego modułu:
 
-- WORDPRESS: **"wp-config.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"DB_NAME"**).
-- JOOMLA: **"configuration.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"public $db"**).
-- DRUPAL: **"settings.php"** (Aby go znaleźć, przejdź do folderu **"sites"**, a następnie **"default"**. Nazwa bazy danych pojawia się pod pozycją **"database"**).
-- PRESTASHOP: **"parameters.php"** (Aby go znaleźć, przejdź do folderu **"app"**, a następnie **"config"**. Nazwa bazy modułu pojawia się pod nagłówkiem **"database_name"**).
+- WordPress : **"wp-config.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"DB_NAME"**).
+- Joomla! : **"configuration.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"public $db"**).
+- Drupal: **"settings.php"** (Aby go znaleźć, przejdź do folderu **"sites"**, a następnie **"default"**. Nazwa bazy danych pojawia się pod pozycją **"database"**).
+- PrestaShop : **"parameters.php"** (Aby go znaleźć, przejdź do folderu **"app"**, a następnie **"config"**. Nazwa bazy modułu pojawia się pod nagłówkiem **"database_name"**).
 
 #### Etap 2: zapisz moduł
 
@@ -140,10 +164,12 @@ Nie instaluj na Twojej stronie wtyczek ani szablonów, które nie są zalecane p
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/pl){.external}
 
-## Sprawdź również <a name="gofurther"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](https://docs.ovh.com/pl/hosting/bledy-frameworki-moduly-za-1-kliknieciem/).
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z [naszymi ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

@@ -77,7 +77,7 @@ No es necesario realizar ningún otro paso para finalizar la primera configuraci
 > [!faq]
 >
 > ¿Dónde está mi licencia Plesk?
->> Puede contratar una licencia Plesk para su VPS desde [el área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> Puede contratar una licencia Plesk para su VPS desde [el área de cliente de OVHcloud](https://ca.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Docker
 

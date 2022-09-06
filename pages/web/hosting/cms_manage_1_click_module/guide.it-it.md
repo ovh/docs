@@ -10,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 21/12/2021**
+**Ultimo aggiornamento: 05/09/2022**
 
 ## Obiettivo
 
@@ -22,7 +22,7 @@ I moduli in 1 click permettono di installare facilmente e rapidamente un softwar
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) su questa guida.
 >
 
 ## Prerequisiti
@@ -41,7 +41,7 @@ Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo
 
 > [!primary]
 >
-> Se il tuo sito non appare correttamente a seguito di questa operazione, consulta le guide OVHCLOUD relative agli hosting condivisi nella sezione [Diagnostica](https://docs.ovh.com/it/hosting/).
+> Se il tuo sito non appare correttamente a seguito di questa operazione, consulta le guide OVHcloud relative agli hosting condivisi nella sezione [Diagnostica](https://docs.ovh.com/it/hosting/).
 >
 
 ### Accedi all'interfaccia amministratore
@@ -75,9 +75,33 @@ In entrambi i casi, riceverai un'email di reimpostazione della password.
 > - Dopo aver cliccato sul link, questo è valido solo per 30 minuti.
 >
 
+> [!warning]
+>
+> Per modificare la password di accesso all'interfaccia di amministrazione del tuo CMS dallo Spazio Cliente OVHcloud è possibile utilizzare **solo se vengono rispettate le seguenti condizioni**:
+>
+> - Il CMS è stato installato utilizzando l'opzione "Modulo in 1 click" durante l'ordine del tuo hosting o dallo Spazio Cliente OVHcloud.
+> - L'utente (nome utente, indirizzo email, ecc...) non è stato modificato tramite il CMS o il database.
+> - La pagina di accesso all'interfaccia di amministrazione del tuo CMS non è stata modificata. In particolare, l'URL di accesso all'interfaccia di amministrazione del tuo CMS non deve essere stato modificato tramite il CMS. Non devono essere state introdotte restrizioni sulla stessa pagina.
+> - Il "prefisso" delle tabelle presenti nel tuo database non è stato modificato dal CMS o direttamente dal database.
+>
+> In caso contrario, segui la documentazione ufficiale del CMS che utilizzi o contatta direttamente il fornitore del CMS. 
+>
+
 Per modificare la password di accesso all'interfaccia di gestione del tuo sito **attraverso lo Spazio Cliente OVHcloud**, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `CMS in 1 click`{.action}.
 
 Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo e poi su `Modifica la password`{.action}. Clicca su `Conferma`{.action}. Riceverai entro pochi minuti un link per reimpostare la password.
+
+> [!primary]
+>
+> Se non è possibile modificare la password di accesso all'interfaccia di gestione del tuo CMS dallo Spazio Cliente OVHcloud per i motivi citati in precedenza, consulta la documentazione ufficiale dei diversi CMS disponibili sull'hosting condiviso:
+>
+> - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
+> - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
+> - Drupal : L'editor di questo software non offre, alla data, la documentazione per modificare la password di accesso all'interfaccia di amministrazione di Drupal. Ti invitiamo a contattare direttamente l'editor su questo argomento. Per maggiori informazioni, consulta la pagina ufficiale [drupal.org](https://www.drupal.org/){.external}.
+> - PrestaShop : L'editor di questo software non offre, alla data, la documentazione necessaria per modificare la password di accesso all'interfaccia di amministrazione di PrestaShop. Ti invitiamo a contattare direttamente l'editor su questo argomento. Per maggiori informazioni, clicca [qui](https://www.prestashop.com){.external} per accedere alla pagina ufficiale.
+>
+È inoltre possibile modificare la password di accesso all'interfaccia di gestione del tuo CMS direttamente dal tuo database.<br>
+Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di eseguire l'operazione utilizzando la documentazione proposta dal tuo CMS o di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
 
 ### Elimina il tuo modulo
 
@@ -96,10 +120,10 @@ In caso contrario, clicca sulla scheda `Multisito`{.action}. Annota il nome dell
 
 Accedi allo [spazio FTP del tuo hosting](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/). Apri la `Cartella di root` trovata precedentemente nella scheda `Multisito`{.action} e cerca il file di configurazione del tuo modulo:
 
-- Per WORDPRESS: **"wp-config.php"** (il nome del database compare con la dicitura **"DB_NAME"**).
-- Per JOOMLA!: **"configuration.php"** (il nome del database compare con la dicitura **"public $db"**).
-- Per DRUPAL: **"settings.php"** (Per ritrovarlo, accedi alla cartella **"site"** e **"default"**. Il nome del database compare con la dicitura **"database"**.
-- Per PRESTASHOP: **"parameters.php"** (Per ritrovarlo, accedi alla cartella **"app"** e **"config"**. Il nome del database del tuo modulo compare con la dicitura **"database_name"**).
+- Per WordPress : **"wp-config.php"** (il nome del database compare con la dicitura **"DB_NAME"**).
+- Per Joomla! : **"configuration.php"** (il nome del database compare con la dicitura **"public $db"**).
+- Per Drupal : **"settings.php"** (Per ritrovarlo, accedi alla cartella **"site"** e **"default"**. Il nome del database compare con la dicitura **"database"**.
+- Per PrestaShop : **"parameters.php"** (Per ritrovarlo, accedi alla cartella **"app"** e **"config"**. Il nome del database del tuo modulo compare con la dicitura **"database_name"**).
 
 #### Step 2: salvare il tuo modulo (facoltativo)
 
@@ -140,10 +164,12 @@ Non installate sul vostro sito plugin o template che non sono stati consigliati 
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/it){.external}
 
-## Spingiti oltre <a name="gofurther"></a>
+## Spingiti oltre <a name="go-further"></a>
 
 [Risolvere gli errori più frequenti associati ai moduli in 1 click](https://docs.ovh.com/it/hosting/errori-frequenti-moduli-in-1-click/).
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

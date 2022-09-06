@@ -140,8 +140,8 @@ Per aggiungere/eliminare moderatori, puoi:
 - importare i contatti da un file di testo che contiene un indirizzo email per riga cliccando sull’icona del download posta sopra il campo di inserimento.
 
 > [!primary]
-> \- Quando su una mailing list vengono definiti più moderatori, la convalida di un solo moderatore è sufficiente perché l’email sia diffusa agli iscritti.
-> \- Quando un moderatore invia una email alla mailing list, soltanto lui riceve l’email di moderazione.
+> - Quando su una mailing list vengono definiti più moderatori, la convalida di un solo moderatore è sufficiente perché l’email sia diffusa agli iscritti.
+> - Quando un moderatore invia una email alla mailing list, soltanto lui riceve l’email di moderazione.
 > 
 
 L’operazione può richiedere più o meno tempo, in base al numero di contatti da aggiungere.
@@ -216,9 +216,12 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 
 ### Personalizzazione avanzata
 
-In quanto moderatore, puoi personalizzare la maggior parte dei testi della tua mailing list inviando un messaggio vuoto a nome_tua_ML-[edit@tuodominio.com](mailto:edit@votredomaine.com){.external}.
+> [!warning]
+> I valori specificati di seguito sono esempi. Sostituiscili con i tuoi valori.
 
-- Esempio: se la tua mailing list è [newsletter@testinterne.ovh](mailto:newsletter@testinterne.ovh){.external},  invia un messaggio a [newsletter-edit@testinterne.ovh](mailto:newsletter-edit@testinterne.ovh){.external}dal tuo indirizzo email moderatore.
+In quanto moderatore, puoi personalizzare la maggior parte dei testi della tua mailing list inviando un messaggio vuoto a `nome_tua_ML-edit@mydomain.ovh`
+
+- Esempio: se la tua mailing list è `newsletter@mydomain.ovh`, invia un messaggio a `newsletter-edit@mydomain.ovh` dal tuo indirizzo email moderatore.
 
 Riceverai una email con le informazioni necessarie per effettuare le tue modifiche.
 
@@ -253,7 +256,7 @@ Qui di seguito trovi una lista dei file che contengono i testi delle risposte e 
 
 > [!primary]
 >
-> Esempio: per modificare la firma predefinita delle email inviate alla tua mailing list, invia un messaggio all’indirizzo “newsletter-edit.bottom@testinterne.ovh”. Riceverai una nuova email con le informazioni necessarie per la personalizzazione della tua firma.
+> Esempio: per modificare la firma predefinita delle email inviate alla tua mailing list, invia un messaggio all’indirizzo `nome_tua_ML-edit.bottom@mydomain.ovh`. Riceverai una nuova email con le informazioni necessarie per la personalizzazione della tua firma.
 > 
 
 ## Per saperne di più

@@ -140,8 +140,8 @@ Hay dos métodos para añadir o eliminar moderadores:
 - Para importar un archivo de texto que incluye una dirección de correo electrónico por línea, haga clic en el icono de descarga que se encuentra en la parte superior del cuadro de entrada.
 
 > [!primary]
-> \- Cuando una lista de difusión tiene varios moderadores, solo se necesita la validación de uno de ellos para que el correo electrónico se transmita a todos los abonados.
-> \- Cuando un moderador envía un correo electrónico a la lista de difusión, solo ese moderador recibe el correo electrónico de moderación.
+> - Cuando una lista de difusión tiene varios moderadores, solo se necesita la validación de uno de ellos para que el correo electrónico se transmita a todos los abonados.
+> - Cuando un moderador envía un correo electrónico a la lista de difusión, solo ese moderador recibe el correo electrónico de moderación.
 > 
 
 La operación de adición de abonados tardará en función del número de abonados que se vaya a añadir.
@@ -216,10 +216,12 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 
 ### Personalización avanzada
 
-Es posible personalizar la mayoría de los textos de una lista de difusión. Como moderador, debe enviar un correo electrónico vacío a nombre_de_su_LD- [edit@sudominio.com](mailto:edit@sudominio.com){.external}.
+> [!warning]
+> Los valores que se indican a continuación son ejemplos. No olvide reemplazarlos con sus propios valores.
 
-- Por ejemplo: Si su lista de difusión es [newsletter@testinterne.ovh](mailto:newsletter@testinterne.ovh){.external}. Desde su dirección de correo electrónico de moderador, enviará un mensaje a [newsletter-edit@testinterne.ovh](mailto:newsletter-edit@testinterne.ovh){.external}.
+Es posible personalizar la mayoría de los textos de una lista de difusión. Como moderador, debe enviar un correo electrónico vacío a `nombre_de_su_LD-edit@mydomain.ovh`.
 
+- Por ejemplo: Su lista de difusión es `newsletter@mydomain.ovh`. Desde su dirección de correo electrónico de moderador, enviará un mensaje a `newsletter-edit@mydomain.ovh`.
 Luego, recibirá un correo electrónico con la información necesaria para guiarle en la realización de las modificaciones.
 
 A continuación, le presentamos una lista de archivos con los textos de las respuestas y una breve descripción de la utilización de su contenido. Para editar un archivo, simplemente envíe un mensaje a envío-edit.archivo, sustituyendo el nombre del archivo por «archivo». Las instrucciones para la edición se enviarán con el archivo de texto.
@@ -253,7 +255,7 @@ A continuación, le presentamos una lista de archivos con los textos de las resp
 
 > [!primary]
 >
-> Por ejemplo: Si desea modificar el pie de página por defecto de los correos electrónicos enviados a su lista de difusión, envíe un mensaje a la dirección «newsletter-edit.bottom@testinterne.ovh». Luego, recibirá un nuevo correo electrónico en el que se explica cómo personalizar el pie de página.
+> Por ejemplo: Si desea modificar el pie de página por defecto de los correos electrónicos enviados a su lista de difusión, envíe un mensaje a la dirección `nombre_de_su_LD-edit.bottom@mydomain.ovh`. Luego, recibirá un nuevo correo electrónico en el que se explica cómo personalizar el pie de página.
 > 
 
 ## Más información
