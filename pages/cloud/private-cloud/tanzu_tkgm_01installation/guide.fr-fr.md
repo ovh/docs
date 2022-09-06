@@ -20,7 +20,7 @@ order: 02
 
 ## Présentation
 
-VMware Tanzu Kubernetes Grid est est une plate-forme Kubernetes fournie par **VMware** et maintenue dans le cadre du support **Hosted Private Cloud Powered by VMware**.
+VMware Tanzu Kubernetes Grid est une plate-forme Kubernetes fournie par **VMware** et maintenue dans le cadre du support **Hosted Private Cloud Powered by VMware**.
 
 Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter de ses fonctionnalités et de son évolutivité.
 
@@ -31,7 +31,7 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 - Avoir un identifiant actif dans vSphere.
 - Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
 - Disposer de ces ressources :
-    - 8 GO de mémoire, 4 vCPU et 250 Go de stockage pour la machine virtuelle **bootstrap**.
+    - 8 Go de mémoire, 4 vCPU et 250 Go de stockage pour la machine virtuelle **bootstrap**.
     - 16 Go de mémoire, 4 vCPU, 40 Go de stockage par nœud Kubernetes (Il faut 6 nœuds pour une installation du cluster d'administration en mode production et 6 nœuds par cluster de **Workload** dans le même mode).
     
 
@@ -45,7 +45,7 @@ Nous allons installer **VMware Tanzu Kubernetes Grid** sur un cluster **Hosted P
 
 ### Importation du modèle OVA pour **Tanzu KUBERNETES Grid** dans votre infrastructure
 
-VMware fourni une machine virtuelle sous forme de modèle OVA qui contient tous les éléments pour faire fonctionner un nœud du cluster **Tanzu Kubernetes Grid**. 
+VMware fournit une machine virtuelle sous forme de modèle OVA qui contient tous les éléments pour faire fonctionner un nœud du cluster **Tanzu Kubernetes Grid**. 
 
 Télécharger le fichier sur ce lien [TKGm 1.5.4](https://plik.fromsync.net/file/yMsZyou6CyYCqlQn/Es4foCOnmvvWBMsq/photon-3-kube-v1.22.9+vmware.1-tkg.1-06852a87cc9526f5368519a709525c68.ova), ensuite suivez ces instructions :
 
@@ -98,7 +98,7 @@ Allez sur l'onglet `Surveiller`{.action} et cliquez sur `Tâches`{.action}.
 
 ![01 integrate TKGM OVA 12](images/01-integrate-tkgm-ova12.png){.thumbnail}
 
-Attendez que Les tâches `Déployer un modèle OVF` et `Importer un modèle OVF` soient terminées.
+Attendez que les tâches `Déployer un modèle OVF` et `Importer un modèle OVF` soient terminées.
 
 ![01 integrate TKGM OVA 13](images/01-integrate-tkgm-ova13.png){.thumbnail}
 
@@ -306,7 +306,7 @@ Le déploiement du cluster **Tanzu Kubernetes Grid** est lancé veuillez attendr
 
 ![03 Create TKG CLUSTER 18](images/03-create-tkg-cluster18.png){.thumbnail}
 
-Toutes les étapes du déploiement apparaissent ent verts, ce qui signifie que le déploiement est termninée.
+Toutes les étapes du déploiement apparaissent en verts, ce qui signifie que le déploiement est termniné.
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
