@@ -312,7 +312,7 @@ Toutes les étapes du déploiement apparaissent ent verts, ce qui signifie que l
 
 Le déploiement terminée 7 machines virtuelles seront visibles sur votre cluster VMware, 6 sont utilisées pour le fonctionnement du cluster d'administration **TKG** et un autre pour l'administration des clusters **TKG**.
 
-![04 admin cluster diagram](images/04-admin-cluster-diagram01.png)
+![04 admin cluster diagram](images/04-admin-cluster-diagram01.png){.thumbnail}
 
 ## Aller plus loin
 
