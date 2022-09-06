@@ -53,7 +53,7 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 > Pourquoi définir le mot de passe root?
 >> WHM utilise par défaut l'utilisateur root pour l'authentification. L'URL à usage unique permet d'accéder à la première configuration et de modifier le mot de passe root. La prochaine fois que vous vous connecterez à WHM, vous devrez utiliser l'utilisateur root et le mot de passe que vous avez défini.
 > Où est ma licence pour cPanel?
->> Vous pouvez commander votre licence cPanel pour votre VPS depuis [l'espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> Vous pouvez commander votre licence cPanel pour votre VPS depuis [l'espace client OVHcloud](https://ca.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Plesk
 
@@ -73,7 +73,7 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 > [!faq]
 >
 > Où est ma licence Plesk?
->> Vous pouvez commander votre licence Plesk pour votre VPS depuis [l'espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> Vous pouvez commander votre licence Plesk pour votre VPS depuis [l'espace client OVHcloud](https://ca.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Docker
 
