@@ -35,11 +35,11 @@ network level.
 > To help you investigate about this problem and fix it, here are a sample
 are some advanced details on your emails:
 >
-> Destination IP: 188.95.235.33 - Message-ID: d24aa492-5f37-457f-9595-23ddc9e0f714@xxxxxxxxxxxxx.xx.local - Spam score: 300
-> Destination IP: 188.95.235.33 - Message-ID: fc090jdhf934iu09bf084bfo92@xxxxxxxxxxxxx.com - Spam score: 300
-> Destination IP: 188.95.235.33 - Message-ID: P0hbfo93407684bfoqljrlqvpLatS3RRB9rZw7e8s@xxxxxxxxxxxx.online - Spam score: 300
-> Destination IP: 188.95.235.33 - Message-ID: 6ZUnls843bnf0934StxFasYGmhtDJRo@xxxxxxxxxxxx.online - Spam score: 300
-> Destination IP: 188.95.235.33 - Message-ID: zcb.3z54da3kdfkl45802n0c0q98rqcc57e3b8aadfac63b2c408e3f5f9a27.1d44jkgnddfef.166489320375@xxxxxx.xxxx.net - Spam score: 300
+> Destination IP: 188.95.235.33 - Message-ID: d24aa492-5f37-457f-9595-23ddc9e0f714@xxxxxxxxxxxxx.xx.local - Spam score: 300 <br>
+> Destination IP: 188.95.235.33 - Message-ID: fc090jdhf934iu09bf084bfo92@xxxxxxxxxxxxx.com - Spam score: 300<br>
+> Destination IP: 188.95.235.33 - Message-ID: P0hbfo93407684bfoqljrlqvpLatS3RRB9rZw7e8s@xxxxxxxxxxxx.online - Spam score: 300<br>
+> Destination IP: 188.95.235.33 - Message-ID: 6ZUnls843bnf0934StxFasYGmhtDJRo@xxxxxxxxxxxx.online - Spam score: 300<br>
+> Destination IP: 188.95.235.33 - Message-ID: zcb.3z54da3kdfkl45802n0c0q98rqcc57e3b8aadfac63b2c408e3f5f9a27.1d44jkgnddfef.166489320375@xxxxxx.xxxx.net - Spam score: 300<br>
 > Destination IP: 188.95.235.33 - Message-ID: zcb.3z54da33hn98v9bcq-nrf3r67cc57e3b8aadfac63b2c408e3f5f9a27.1d44jd9340252.1655508652095@xxxxxx.xxxx.net - Spam score: 300
 > <br>
 > <br>
@@ -58,7 +58,7 @@ The first step is to identify the issue, resolve it, then unblock your IP.
 
 * Analyse your logs using the **Message-ID** found in the block alert.
 
-* If you are indeed sending SPAM or illegitimate emails, we strongly recommend you to resolve the issue before unblocking the IP. Please consult the second part of this guide for email [best pratices](#best-practices). 
+* If you are indeed sending SPAM or illegitimate emails, we strongly recommend you to resolve the issue before unblocking the IP. Please consult the second part of this guide for email [best practices](#bestpractices). 
 
 Once the issue has been resolved, you can unblock your IP by performing the following steps:
 
@@ -112,7 +112,7 @@ Here's an example of what you should see:
     "188.81.49.30/28",
 >
 
-Next, search for IPs in a particular state with the following call. If you already know the IP blocked, you can move on to the [next step](#unblock-the-ip):
+Next, search for IPs in a particular state with the following call. If you already know the IP blocked, you can move on to the [next step](#unblockip):
 
 > [!api]
 >
@@ -128,7 +128,7 @@ Here's an example result (in this instance, the 122.122.122.122/28 block was sel
     "122.122.122.123" 
 >
 
-If the IP is blocked, you can get information on the blocking with the following call, otherwise, move on to the [next step](#unblock-the-ip).
+If the IP is blocked, you can get information on the blocking with the following call, otherwise, move on to the [next step](#unblockip).
 
 > [!api]
 >
@@ -157,7 +157,7 @@ So:
 >
 
 
-If you wish to obtain the statistics on what has been detected, use the following api call, otherwise move on to the [next step](#unblock-the-ip).
+If you wish to obtain the statistics on what has been detected, use the following api call, otherwise move on to the [next step](#unblockip).
 
 > [!api]
 >
@@ -165,8 +165,8 @@ If you wish to obtain the statistics on what has been detected, use the followin
 >
 
 
-**ip**:	Specify the IP block retrieved in the previous step with the netmask. </br>
-**ipSpamming**:	Specify the previously retrieved IP in "blockedForSpam" state, for example.</br>
+**ip**:	Specify the IP block retrieved in the previous step with the netmask.<br>
+**ipSpamming**:	Specify the previously retrieved IP in "blockedForSpam" state, for example.<br>
 **from and to**: Use the date format used in the previous function (YYYY-MM-DDTHH:MM+01:SS).
 
 
@@ -182,7 +182,7 @@ Here is an example result:
 >
 
 
-#### Unblock the IP
+#### Unblock the IP <a name="unblockip"></a>
 
 > [!alert]
 > IMPORTANT !!
@@ -220,14 +220,14 @@ The IP is being released, the operation may take several minutes.
 
 ### 2. False positives
 
-If you have checked and found that **Message-ID** are from your legitimate email, you should then ensure that your email messages comply with the [RFC](#rfc) and the [Best Practices indicated below](#best-practices).
+If you have checked and found that **Message-ID** are from your legitimate email, you should then ensure that your email messages comply with the [RFC](#rfc) and the [Best Practices indicated below](#bestpractices).
 
-#### RFC
+#### RFC <a name="rfc"></a>
 
 RFCs (Request For Comments) are documents intended to describe technical aspects of the internet. They are produced and published by the IETF (Internet Engineering Task Force), a group which basically produces and defines standards.
 For more information, see: [RFC](https://en.wikipedia.org/wiki/Request_for_Comments), [IETF](https://www.ietf.org/) and [Internet Draft](https://en.wikipedia.org/wiki/Internet_Draft).
 
-#### Best Practices
+#### Best Practices <a name="bestpractices"></a>
 
 Best practices are recommended methods which are often based on these documents and are intended to advise you on the best way to proceed. In this instance, this means the basic rules to follow so that your emails are not marked as spam.
 
@@ -284,8 +284,10 @@ For more information on the above services, please consult our guide on [Optimis
 If your emails do comply, you can inform us by sending a sample of your email (including header). Our technical support team will then assist you with the next steps. Simply create a support ticket from your OVHcloud manager and include the following information:
 
 * The IP of the service blocked for SPAM.
-* An original copie of the email(s) flagged as SPAM (you should be able to identify that with the **message ID** included in the ANTISPAM email). If not message ID was provided, simply send us a copy of the emails sent before receiving the alert. Please only provide the copy of the email flagged as SPAM.
+* An original copie of the email(s) flagged as SPAM (you should be able to identify that with the **message ID** included in the ANTISPAM email). If no message ID is provided, simply send us a copy of the emails sent before receiving the alert. Please only provide the copy of the email flagged as SPAM.
 * The .EML file of the email provided, this should include the **header** and **footer** of the email. If you are not familiar with how to extract an .EML file, please consult the following guide [Retrieving email headers](https://docs.ovh.com/gb/en/emails/shared_mail_guide_to_view_email_headers/).
 
 
 ## Go further
+
+Join our user community on <https://community.ovh.com/en/>.
