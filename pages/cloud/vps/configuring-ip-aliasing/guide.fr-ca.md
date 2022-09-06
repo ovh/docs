@@ -292,7 +292,7 @@ Une fois que vous êtes connecté à votre serveur via SSH, entrez la commande s
 ifconfig ens3:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER up
 ```
 
-Pour tester la connexion, il vous suffit d'envoyer un ping à votre adresse IP fail-over depuis l'extérieur. S'il répond en mode rescue, cela signifie probablement qu'il y a une erreur de configuration. Toutefois, si l'IP ne fonctionne toujours pas, veuillez en informer nos équipes du support en créant un ticket d'assistance depuis votre [espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
+Pour tester la connexion, il vous suffit d'envoyer un ping à votre adresse IP fail-over depuis l'extérieur. S'il répond en mode rescue, cela signifie probablement qu'il y a une erreur de configuration. Toutefois, si l'IP ne fonctionne toujours pas, veuillez en informer nos équipes du support en créant un ticket d'assistance depuis votre [espace client OVHcloud](https://ca.ovh.com/manager/#/dedicated/support/tickets/new).
 
 ## Aller plus loin
 

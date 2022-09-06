@@ -147,7 +147,7 @@ A user can have read or write access to your account, or all of your services. Y
 
 If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](../manage-password/#change-your-password) and [securing it with two-factor authentication](../secure-account-with-2FA/).
 
-If you observe any suspicious activity on your account, please inform our support team by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
+If you observe any suspicious activity on your account, please inform our support team by creating a support request in your [OVHcloud Control Panel](https://ca.ovh.com/manager/#/dedicated/support/tickets/new).
 
 ## Go further
 
