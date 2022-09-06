@@ -132,7 +132,7 @@ Au travers de la console **Bootstrap** utilisez le navigateur **WEB** pour vous 
 
 ![01 Verify Application 02](images/04-verify-application-02.png){.thumbnail}
 
-En plus de 6 machines virtuelles pour le cluster d'administration 6 autres machines virtuelles seront visible pour le cluster de **Workload**.
+En plus des 6 machines virtuelles pour le cluster d'administration 6 autres machines virtuelles sont visible pour le cluster de **Workload**.
 
 ![02 Cluster administration & workload Diagram01](images/02-tkc-mc-wc01.png){.thumbnail}
 
