@@ -6,7 +6,7 @@ section: Fonctionnalités VMware vSphere
 order: 09
 ---
 
-**Dernière mise à jour le 29/08/2022**
+**Dernière mise à jour le 06/09/2022**
 
 ## Objectif
 
@@ -38,7 +38,9 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 
 Il est possible d'exporter la clé **vSphere Native Key provider** et de la réimporter sur un autre cluster.
 
-Dans le détail, lorsque l'on chiffre une machine virtuelle, le Vcenter génère une clé **KDK** (Key Derivation Key), cette clef est poussée aux ESXi et permet de generer une autre clef: la **DEK** (Data Encryption Key), cette clé servira à effectuer le chiffrement des fichiers composant la machine virtuelle et donc de ses données. La clé **DEK** est chiffrée à l'aide de la **KDK**. Elle est stockée chiffrée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
+Dans le détail, lorsque l'on chiffre une machine virtuelle, le Vcenter génère une clé **KDK** (Key Derivation Key).<br>
+Cette clé est poussée aux ESXi et permet de générer une autre clé, la **DEK** (Data Encryption Key) qui servira à effectuer le chiffrement des fichiers composant la machine virtuelle et donc de ses données.<br>
+La clé **DEK** est chiffrée à l'aide de la **KDK**. Elle est stockée et chiffrée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
