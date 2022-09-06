@@ -1,12 +1,12 @@
 ---
 title: Installer Tanzu Kubernetes Grid
-slug: tanzu-ce-install
+slug: tanzu-tkgm-installation
 excerpt: Intégrer Tanzu Kubernetes Grid à votre infrastructure OVHcloud
 section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 02/09/2022**
+**Dernière mise à jour le 06/09/2022**
 
 ## Objectif
 
@@ -310,98 +310,9 @@ Toutes les étapes du déploiement apparaissent ent verts, ce qui signifie que l
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
-### Déploiement d'un cluster de *Workload*
+Le déploiement terminée 7 machines virtuelles seront visibles sur votre cluster VMware, 6 sont utilisées pour le fonctionnement du cluster d'administration **TKG** et un autre pour l'administration des clusters **TKG**.
 
-A partir de la machine virtuelle **Bootstrap** nous allons crééer un cluster de *Workload* dans lequel il sera possible de déployer des applications.
-
-Copiez le fichier qui a servi pour la création du cluster d'administration dans un fichier nommé **tkg-workload-cluster.yaml**.
-
-```bash
-cp ~/.config/tanzu/tkg/clusterconfigs/tkgmfile.yaml ~/tkg-workload-cluster.yaml
-```
-
-Modifiez le contenu du fichier **~/tkg-workload-cluster.yaml** en changeant ces valeurs :
-
-```yaml
-CLUSTER_NAME: tkg-workload-cluster
-VSPHERE_CONTROL_PLANE_ENDPOINT: 192.168.0.11
-```
-
-Lancez cette commande pour créer le cluster :
-
-```bash
-tanzu cluster create --file tkg-workload-cluster.yaml
-```
-
-Connectez-vous au cluster avec ces commandes :
-
-```bash
-# Autorisation de la connexion au cluster
-tanzu cluster kubeconfig get tkg-workload-cluster --admin
-# Positionnement sur le cluster tkg-workload-cluster
-# Les comptes d'administration ont toujours cette formee nomcluster-admin@nomcluster
-kubectl config use-context tkg-workload-cluster-admin@tkg-workload-cluster
-```
-### Installation du **Load-Balancer**
-
-Le **Load-Balancer** fait le lien entre le cluster et le réseau local, pour cela nous allons utiliser le package **kube-vip** qui servira de *load-balancer* entre le réseau interne au cluster et le réseau du VLAN10. Vous trouverez plus d'informations sur ce lien [Documentation kube-vip](https://kube-vip.io/).
-
-Exécutez ces commandes :
-
-```bash
-# Création d'un dossier pour accueillir l'application kube-vip depuis git
-mkdir ~/kube-vip
-# Déplacement dans ce dossier
-cd ~/kube-vip
-# Récupération des données depuis github
-git clone https://github.com/vrabbi/tkgm-customizations.git
-# Déplacement dans le sous dossier de l'application
-cd tkgm-customizations/carvel-packages/kube-vip-package/
-# Application de la pré-configuration
-kubectl apply -n tanzu-package-repo-global -f metadata.yml
-kubectl apply -n tanzu-package-repo-global -f package.yaml
-```
-
-Créez le fichier **~/kube-vip/tkgm-customizations/carvel-packages/kube-vip-package/values.yaml** avec ce contenu qui correspond aux adresses IP utilisable sur le VLAN10 pour déployer une application
-
-```yaml
-vip_range: 192.168.0.210-192.168.0.250
-```
-
-Installez le package à l'aide de cette commande.
-
-```bash
-# Installation
-tanzu package install kubevip -p kubevip.terasky.com -v 0.3.9 -f values.yaml
-# Vérification de la présence du package kubevip
- kubectl get packages -A
-```
-
-### Installation d'une application
-
-Lancez ces commandes pour installer une nouvelle application dans le cluster de **Workload**.
-
-
-```bash
-# Création d'un espace de nom pour cette application
-kubectl create ns yelb
-# Déploiement de l'application depuis une source sur Internet
-kubectl\
- -n yelb apply -f\
- https://raw.githubusercontent.com/lamw/yelb/master/deployments/platformdeployment/Kubernetes/yaml/yelb-k8s-loadbalancer.yaml
-# Vérification de la bonne installation de l'application
-kubectl get all -n yelb
-```
-Les adresses IP internes au cluster KUBERNETES apparaissent dans la colonne **CLUSTER-IP**, les applications qui sont visibles depuis l'extérieur du cluster ont une adresse IP dans la colonne **EXTERNAL-IP**.
-
-Dans cet exemple le site WEB est accessible avec l'adresse **192.168.0.223** sur le port **80**.
-
-![04 Verify Application 01](images/04-verify-application-01.png){.thumbnail}
-
-Au travers de la console **Bootstrap** utilisez le navigateur **WEB** pour vous connecter sur l'URL `http://192.168.0.223`.
-
-![04 Verify Application 02](images/04-verify-application-02.png){.thumbnail}
-
+![04 admin cluster diagram](images/04-admin-cluster-diagram01.png)
 
 ## Aller plus loin
 
