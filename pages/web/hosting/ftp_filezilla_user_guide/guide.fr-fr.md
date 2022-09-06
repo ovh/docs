@@ -1,36 +1,40 @@
 ---
-title: 'Utilisation logiciel FileZilla avec votre hebergement'
+title: 'Tutoriels - Utilisation logiciel FileZilla avec votre hebergement'
 slug: mutualise-guide-utilisation-filezilla
-legacy_guide_number: 1380
 excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hebergement mutualise."
 section: 'FTP et SSH'
+order: 4
 ---
 
-Retrouvez dans ce guide de l'aide concernant l'utilisation du logiciel FileZilla.
+**Dernière mise à jour le 06/09/2022**
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](https://www.ovhcloud.com/fr/web-hosting/){.external} disponibles.
+## Objectif
+
+Vous retrouvez dans ce guide de l'aide concernant l'utilisation du logiciel FileZilla avec nos offres d'hébergements mutualisés.
+
+Ce tutoriel vous permettra notamment de vous connecter à l'espace "FTP" de votre hébergement pour y créer/modifier/supprimer des fichiers.
 
 > [!warning]
 >
 > OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 > 
 
 ## Généralités
 
-### Presentation
+<center><img src="images/2400.png"></center>
+
+### Présentation
+
 FileZilla est un logiciel disponible sur plusieurs systèmes d'exploitations (Windows, MacOS, etc).
 
-Ce dernier vous donne notamment la possibilité de mettre en ligne votre site internet en vous permettant de vous connecter à votre espace d'hébergement (FTP).
+Ce dernier vous donne notamment la possibilité de mettre en ligne votre site internet en vous permettant de vous [connecter à l'espace "FTP"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement.
 
 Pour en bénéficier, veuillez vous reporter au site : [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
-
-![hosting](images/2400.png){.thumbnail}
-
-
 ### Interface
+
 La  **zone 1**  donne des informations sur l'état de la connexion, les transferts, les erreurs de connexions, etc. Généralement les informations qui y sont reprises ne sont pas utiles pour des personnes non initiées.
 
 La  **zone 2**  reprend l'arborescence pour arriver au dossier de votre site (ou des fichiers à transférer) sur votre ordinateur.
@@ -306,6 +310,14 @@ Cette vérification peut par exemple intervenir si vous constatez des lenteurs o
 
 ![hosting](images/2399.png){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
+
+Vous trouverez ci-après le lien vers notre documentation pour [résoudre les erreurs récurrentes lors de l'utilisation d'un logiciel FTP](https://docs.ovh.com/fr/hosting/mutualise-les-problemes-ftp-recurrents/).
+
+Plus généralement, vous pourrez retrouver l'ensemble de nos guides relatifs aux hébergements mutualisés [ici](https://docs.ovh.com/fr/hosting/).
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
