@@ -126,11 +126,11 @@ Les adresses IP internes au cluster KUBERNETES apparaissent dans la colonne **CL
 
 Dans cet exemple le site WEB est accessible avec l'adresse **192.168.0.223** sur le port **80**.
 
-![01 Verify Application 01](images/04-verify-application-01.png){.thumbnail}
+![01 Verify Application 01](images/01-verify-application-01.png){.thumbnail}
 
 Au travers de la console **Bootstrap** utilisez le navigateur **WEB** pour vous connecter sur l'URL `http://192.168.0.223`.
 
-![01 Verify Application 02](images/04-verify-application-02.png){.thumbnail}
+![01 Verify Application 02](images/01-verify-application-02.png){.thumbnail}
 
 En plus des 6 machines virtuelles pour le cluster d'administration 6 autres machines virtuelles sont visible pour le cluster de **Workload**.
 
