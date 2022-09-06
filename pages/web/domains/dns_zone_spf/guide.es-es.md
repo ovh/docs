@@ -96,7 +96,7 @@ Se abrirá una ventana en la que podrá elegir entre varios registros DNS. Para 
 
 - [Añadir un registro TXT](#txtrecord) : para usuarios avanzados o que ya dispongan del registro completo. Por ejemplo, su proveedor de soluciones de correo electrónico transmite el valor.
 - [Añadir un registro SPF](#spfrecord) : para los usuarios que no dispongan del registro completo. Por ejemplo, solo tiene una dirección IP o el nombre del host del servidor de correo.
-- [Añadir un registro SPF ](#spfrecordovhcloud)**y utilizar la configuración de OVHcloud**: para los usuarios que solo posean los productos de correo electrónico de OVHcloud en su dominio (excepto [Private Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external} y Exchange Provider).
+- [Añadir un registro SPF](#spfrecordovhcloud)**y utilizar la configuración de OVHcloud**: para los usuarios que solo posean los productos de correo electrónico de OVHcloud en su dominio (excepto [Private Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external} y Exchange Provider).
 
 ![Dominio](images/spf_records_add_entry.png){.thumbnail}
 
