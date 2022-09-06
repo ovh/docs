@@ -10,7 +10,7 @@ order: 2
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 01/02/2022**
+**Última atualização: 30/08/2022**
 
 ## Sumário
 
@@ -34,11 +34,28 @@ Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e
 
 Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
-### Passo 1: Subscrever a opção Backups automáticos
+### Passo 1: Ativar a opção Backups automáticos
 
 Após selecionar o seu alojamento VPS, clique no separador `Backup automático`{.action} no menu horizontal.
 
 Na etapa seguinte, tome nota da informação relativa ao preço e depois clique em `Encomendar`{.action}. Será então guiado através do processo de encomenda que será confirmado com o envio de um e-mail. Os backups diários serão criados até que a opção volte a ser cancelada.
+
+#### Configurar a hora do backup
+
+Pode modificar a hora a que o backup terá lugar. 
+
+Clique em `...`{.action} acima da tabela e, a seguir, em `Editar`{.action}.
+
+![autobackupvps](images/backup_vps_time01.png){.thumbnail}
+
+Na nova janela, altere a hora do dia (norma UTC 24 horas). Clique em `Confirmar`{.action}.
+
+![autobackupvps](images/backup_vps_time02.png){.thumbnail}
+
+> [!primary]
+>
+> Uma vez validada na Área de Cliente, a alteração será efetiva num prazo de 24 a 48 horas.
+>
 
 ### Passo 2: Restaurar um backup a partir da Área de Cliente OVHcloud
 
@@ -62,8 +79,6 @@ Não é necessário restaurar completamente o seu atual serviço. A opção “M
 >
 >Este guia foi concebido para o ajudar, tanto quanto possível, nas tarefas mais comuns. No entanto, caso tenha alguma dificuldade, recomendamos que contacte um fornecedor especializado e/ou o editor do software do serviço, uma vez que não poderemos assisti-lo pessoalmente. Para mais informações, consulte a secção “Vá mais longe” neste guia.
 >
-
-#### Passo 1: Área de Cliente
 
 Clique em `...`{.action} junto ao backup pretendido e selecione `Montar`{.action}.
 

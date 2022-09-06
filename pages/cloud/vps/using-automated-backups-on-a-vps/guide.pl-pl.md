@@ -10,7 +10,7 @@ order: 2
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia: 01-02-2022**
+**Ostatnia aktualizacja z dnia: 31-08-2022**
 
 ## Wprowadzenie
 
@@ -33,11 +33,28 @@ Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron
 
 Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
-### Krok 1: subskrybowanie opcji automatycznych kopii zapasowych
+### Krok 1: Włącz opcję automatycznych kopii zapasowych
 
 Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Automatyczne kopie zapasowe`{.action} w menu poziomym.
 
 W następnym kroku przeczytaj informację o cenie i kliknij pozycję `Zamów`{.action}. Po przejściu kolejnych kroków procesu zamówienia otrzymasz wiadomość e-mail z potwierdzeniem. Kopie zapasowe będą tworzone codziennie, aż do czasu anulowania tej opcji.
+
+#### Skonfiguruj godzinę kopii zapasowej
+
+Możesz zmienić godzinę wykonywania kopii zapasowej. 
+
+Kliknij `...`{.action} nad tabelą, a następnie `Edytuj`{.action}.
+
+![autobusami](images/backup_vps_time01.png){.thumbnail}
+
+W oknie, które się wyświetla zmień czas dnia (standard czasu UTC 24 godziny). Kliknij na `Zatwierdź`{.action}.
+
+![autobusami](images/backup_vps_time02.png){.thumbnail}
+
+> [!primary]
+>
+> Po zatwierdzeniu w Panelu klienta zmiana zostanie wykonana w ciągu 24-48 godzin.
+>
 
 ### Krok 2: przywracanie kopii zapasowej z Panelu klienta OVHcloud
 
@@ -61,8 +78,6 @@ Całkowite zastąpienie istniejącej usługi w wyniku przywrócenia nie jest kon
 >
 >Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja “Sprawdź również” tego przewodnika.
 >
-
-#### Krok 1: Panel klienta
 
 Kliknij ikonę `...`{.action} obok kopii zapasowej, do której chcesz uzyskać dostęp, i wybierz pozycję `Montowanie`{.action}.
 

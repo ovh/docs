@@ -9,7 +9,7 @@ section: Transfer
 order: 1
 ---
 
-**Last updated 27/08/2021**
+**Last updated 2nd September 2022**
 
 ## Objective
 
@@ -66,7 +66,7 @@ Please note that since OVHcloud is not your domain name’s registrar at the tim
 > Once your domain name has been unlocked, you will have seven (7) days to transfer to OVHcloud. After this period, your domain name will be locked automatically if you do not submit a domain name registrar change request.
 >
 
-### Step 3: Request a domain name transfer to OVHcloud
+### Step 3: Request a domain name transfer to OVHcloud <a name="step3"></a>
 
 Once you have unlocked your domain name and obtained your code, you can order the transfer to OVHcloud from [our website](https://www.ovhcloud.com/en-gb/domains/){.external}. Enter your domain name, then follow the order process.
 
@@ -108,6 +108,14 @@ The domain name transfer procedure requires email validation. This step can be p
 >
 > Transfer validation via the link must be completed within 5 days of the request. After this, the transfer will be cancelled.
 >
+
+#### What if you did not receive the transfer confirmation email?
+
+Check the domain name holder's email address with your current domain provider.<br>
+Also, check the “SPAM”/“junk email” folders in the email addresses concerned as a priority.
+
+If the validation email cannot be found, please contact OVHcloud support by creating a support ticket. Our services can then cancel the transfer. Once the cancellation is complete, change the email address of the domain name owner to another email provider (such as, for example, Gmail, Yahoo, Onet, wp.pl, etc.).<br>
+Once you have modified your email address, order a [new transfer request](#step3).
 
 ### Step 5: manage a domain name with OVHcloud
 

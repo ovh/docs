@@ -10,7 +10,7 @@ order: 2
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 01/02/2022**
+**Última actualización: 30/08/2022**
 
 ## Objetivo
 
@@ -33,11 +33,29 @@ Antes de aplicar las opciones de copia de seguridad, le recomendamos que consult
 
 Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
-### Paso 1: Suscribirse a la opción «Copias de seguridad automatizadas»
+### Paso 1: Activar la opción «Copias de seguridad automatizadas»
 
 Después de seleccionar su servidor virtual privado (VPS), haga clic en la pestaña `Copia de seguridad automatizada`{.action} en el menú horizontal.
 
 En el siguiente paso, tenga en cuenta la información sobre los precios y haga clic en `Contratar`{.action}. Se le guiará por el proceso de contratación y recibirá un mensaje de correo electrónico de confirmación. Las copias de seguridad se crearán ahora diariamente hasta que se vuelva a cancelar la opción.
+
+#### Configurar la hora del backup
+
+Puede cambiar la hora en la que se realizará la copia de seguridad. 
+
+Haga clic en `...`{.action} encima de la tabla y, seguidamente, en `Editar`{.action}.
+
+![autobackups](images/backup_vps_time01.png){.thumbnail}
+
+Se abrirá una ventana en la que podrá cambiar la hora del día (UTC 24 horas). Haga clic en `Confirmar`{.action}.
+
+![autobackups](images/backup_vps_time02.png){.thumbnail}
+
+> [!primary]
+>
+> Una vez validado en el área de cliente, el cambio será efectivo en un plazo de 24 a 48 horas.
+>
+
 
 ### Paso 2: Restaurar una copia de seguridad desde el panel de control de OVHcloud
 
@@ -61,8 +79,6 @@ No es necesario sobrescribir íntegramente el servicio existente con una restaur
 >
 >El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) y/o el editor del <i>software</i> del servicio si tiene alguna dificultad. Nosotros no podremos ayudarle al respecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
 >
-
-#### Paso 1: Panel de control
 
 Haga clic en `...`{.action} junto a la copia de seguridad a la que necesite acceder y seleccione `Montaje`{.action}.
 

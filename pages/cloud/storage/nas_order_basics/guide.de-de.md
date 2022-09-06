@@ -180,6 +180,6 @@ Bestätigen Sie die Aktion im neu angezeigten Fenster, indem Sie auf `Partition 
 
 [HA-NAS via NFS-Freigabe mounten](https://docs.ovh.com/de/storage/nas-nfs/)
 
-[NAS auf Windows Server über CIFS mounten](../nas-cifs/)
+[NAS auf Windows Server über CIFS mounten](https://docs.ovh.com/de/storage/nas/nas-cifs/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

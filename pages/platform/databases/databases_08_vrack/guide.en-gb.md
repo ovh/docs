@@ -95,7 +95,7 @@ The database is now connected to the virtual network, we can use it from any com
 
 ### Step 4 - Adding a Public Cloud Instance to the vRack
 
-Follow this [guide](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance) to create a new Public Cloud Instance
+Follow this [guide](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/#create-instance) to create a new Public Cloud Instance
 
 
 > [!primary]

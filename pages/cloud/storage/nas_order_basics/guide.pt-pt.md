@@ -181,6 +181,6 @@ Confirme a ação na janela que aparecer ao clicar em `Eliminar partição`{.act
 
 [Montar um NAS através de NFS](https://docs.ovh.com/pt/storage/nas-nfs/)
 
-[Montar o seu NAS no Windows Server através do CIFS](../nas-cifs/)
+[Configure o seu NAS no Windows Server através do CIFS](https://docs.ovh.com/pt/storage/nas/nas-cifs/)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

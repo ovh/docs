@@ -10,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 01/02/2022**
+**Ultimo aggiornamento: 30/08/2022**
 
 ## Obiettivo
 
@@ -39,6 +39,23 @@ Dopo aver selezionato il tuo VPS, clicca sulla scheda `Backup automatizzato`{.ac
 
 Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura d’ordine e riceverai una email di conferma. A questo punto i backup verranno effettuati giornalmente finché l’opzione non verrà nuovamente disattivata.
 
+#### Configura l'ora del backup
+
+Puoi modificare l'orario in cui avrà luogo il backup. 
+
+Clicca sui tre puntini `...`{.action} in alto a sinistra e seleziona `Modifica`{.action}.
+
+![autobackupvps](images/backup_vps_time01.png){.thumbnail}
+
+Nella nuova finestra, modifica l'orario della giornata (orario UTC 24 ore). Clicca su `Conferma`{.action}.
+
+![autobackupvps](images/backup_vps_time02.png){.thumbnail}
+
+> [!primary]
+>
+> Una volta convalidato dallo Spazio Cliente, la modifica diventerà effettiva entro 24-48 ore.
+>
+
 ### Step 2: Ripristinare un backup dallo Spazio Cliente OVHcloud
 
 Dopo aver selezionato il tuo VPS, clicca sulla scheda `Backup automatizzato`{.action} nel menu orizzontale. Hai a disposizione un massimo di 7 backup giornalieri (15 backup giornalieri per i VPS di gamme precedenti). Clicca su `...`{.action} accanto al backup che desideri ripristinare e seleziona `Ripristino`{.action}.
@@ -61,8 +78,6 @@ Non è necessario sovrascrivere completamente il tuo servizio esistente con un r
 >
 >Questa guida ti mostra come effettuare le operazioni più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un esperto del settore e/o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni, consulta la sezione “Per saperne di più” di questa guida.
 >
-
-#### Step 1: Spazio Cliente
 
 Clicca su `...`{.action} accanto al backup a cui desideri accedere e seleziona `Montaggio`{.action}.
 

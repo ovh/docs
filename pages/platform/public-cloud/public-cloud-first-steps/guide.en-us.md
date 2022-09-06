@@ -151,7 +151,7 @@ Click on the `Add an SSH key`{.action} button. In the new window, enter a name f
 ![add key](images/puttygen-04.png){.thumbnail}
 
 
-### Step 3: Creating an instance
+### Step 3: Creating an instance  <a name="create-instance"></a>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
