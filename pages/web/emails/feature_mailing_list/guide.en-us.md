@@ -216,9 +216,12 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 
 ### Advanced customisation
 
-You can customise most of the texts in your mailing list. As a moderator, you will need to send an empty email to  name_of_your_ML- [edit@yourdomain.com](mailto:edit@yourdomain.com){.external}.
+> [!warning]
+> The values listed below are examples. Take care to replace them with your own values.
 
-- Example: Your mailing list is [newsletter@yourdomain.com](mailto:newsletter@yourdomain.com){.external}. From your moderator email address, you will need to send an email to [newsletter-edit@yourdomain.com](mailto:newsletter-edit@yourdomain.com){.external} .
+You can customise most of the texts in your mailing list. As a moderator, you will need to send an empty email to `name_of_your_ML-edit@mydomain.ovh`.
+
+- Example: Your mailing list is `newsletter@mydomain.ovh`. From your moderator email address, you will need to send an email to `newsletter-edit@mydomain.ovh`.
 
 You will then receive an email that will guide you on the changes you need to make.
 
@@ -253,7 +256,7 @@ Below is a list of files containing the reply texts, and a brief description of 
 
 > [!primary]
 >
-> Example: If you would like to edit the default footer for emails sent to your mailing list, you will need to send an email to the address “newsletter-edit.bottom@yourdomain.com”.  You will then receive a new email explaining how to customise the footer.
+> Example: If you would like to edit the default footer for emails sent to your mailing list, you will need to send an email to the address `name_of_your_ML-edit.bottom@mydomain.ovh`.  You will then receive a new email explaining how to customise the footer.
 > 
 
 ## Go further

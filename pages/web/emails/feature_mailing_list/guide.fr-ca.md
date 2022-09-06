@@ -39,14 +39,14 @@ L'expéditeur (sender) transmet l'e-mail à la mailing list. Le modérateur (mod
 
 ## Prérequis
 
-- Disposez d'une offre e-mail MX Plan 100 minimum ou d'un [Hébergement Web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} éligible aux listes de diffusion.
+- Disposer d'une offre e-mail MX Plan 100 minimum ou d'un [Hébergement Web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} éligible aux listes de diffusion.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
 ### Créer sa mailing list
 
-Afin de créer votre mailing list, rendez-vous dans votre [Espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}  et sélectionnez l'onglet `Web Cloud`{.action} en haut.
+Afin de créer votre mailing list, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}  et sélectionnez l'onglet `Web Cloud`{.action} en haut.
 
 Une fois connecté, cliquez sur `Emails`{.action} puis sur le nom de domaine concerné. Dirigez-vous sur l'onglet `mailing lists`{.action} de votre service e-mail.
 
@@ -216,9 +216,12 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 
 ### Personnalisation avancée
 
-Vous pouvez personnaliser la plupart des textes de votre mailing list. En tant que modérateur, vous devez envoyer un e-mail vide à nom_de_votre_ML- [edit@votredomaine.com](mailto:edit@votredomaine.com){.external}.
+> [!warning]
+> Les valeurs précisées ci-dessous sont des exemples. Prenez soin de les remplacer par vos propres valeurs.
 
-- Exemple : Votre mailing list est [newsletter@votredomaine.com](mailto:newsletter@votredomaine.com){.external} . Depuis votre adresse e-mail modérateur, il vous faudra envoyer un message à [newsletter-edit@votredomaine.com](mailto:newsletter-edit@votredomaine.com){.external} .
+Vous pouvez personnaliser la plupart des textes de votre mailing list. En tant que modérateur, vous devez envoyer un e-mail vide à `nom_de_votre_ML-edit@mydomain.ovh`.
+
+- Exemple : Votre mailing list est `newsletter@mydomain.ovh`. Depuis votre adresse e-mail modérateur, il vous faudra envoyer un message à `newsletter-edit@mydomain.ovh`.
 
 Vous recevrez alors un e-mail qui vous guidera pour effectuer vos modifications.
 
@@ -253,7 +256,7 @@ Ci-dessous, une liste des fichiers contenant les textes de réponses et une brè
 
 > [!primary]
 >
-> Exemple : Si vous souhaitez modifier le pied de page par défaut des e-mails envoyés à votre mailing list, il vous faudra envoyer un message à l'adresse « nom_de_votre_ML-edit.bottom@votredomaine.com ». Vous recevrez alors un nouvel e-mail vous expliquant comment personnaliser le pied de page.
+> Exemple : Si vous souhaitez modifier le pied de page par défaut des e-mails envoyés à votre mailing list, il vous faudra envoyer un message à l'adresse `nom_de_votre_ML-edit.bottom@mydomain.ovh`. Vous recevrez alors un nouvel e-mail vous expliquant comment personnaliser le pied de page.
 > 
 
 ## Aller plus loin

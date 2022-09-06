@@ -140,8 +140,8 @@ Há 2 métodos para adicionar/eliminar moderadores:
 - a importação de um ficheiro de texto com um endereço de e-mail por linha, clicando no ícone de transferência situado por cima do quadro de introdução.
 
 > [!primary]
-> \- Quando vários moderadores são definidos numa mailing list, basta a validação de um único moderador para que o e-mail seja difundido pelos subscritores.
-> \- Quando um moderador envia um e-mail para a mailing list, só ele é que recebe o e-mail de moderação.
+> - Quando vários moderadores são definidos numa mailing list, basta a validação de um único moderador para que o e-mail seja difundido pelos subscritores.
+> - Quando um moderador envia um e-mail para a mailing list, só ele é que recebe o e-mail de moderação.
 > 
 
 Em função do número de subscritores a adicionar, a realização da operação pode demorar algum tempo.
@@ -216,9 +216,12 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 
 ### Personalização avançada
 
-Pode personalizar a maioria dos textos da sua mailing list. Enquanto moderador, deve enviar um e-mail vazio para nome_da_sua_ML- [edit@votredomaine.com](mailto:edit@votredomaine.com){.external}.
+> [!warning]
+> Os valores indicados abaixo são exemplos. Tenha o cuidado de os substituir pelos seus próprios valores.
 
-- Por exemplo: A sua mailing list é [newsletter@testinterne.ovh](mailto:newsletter@testinterne.ovh){.external} . A partir do seu endereço de e-mail de moderador, terá de enviar uma mensagem para [newsletter-edit@testinterne.ovh](mailto:newsletter-edit@testinterne.ovh){.external} .
+Pode personalizar a maioria dos textos da sua mailing list. Enquanto moderador, deve enviar um e-mail vazio para `nome_da_sua_ML-edit@mydomain.ovh`.
+
+- Por exemplo: A sua mailing list é `newsletter@mydomain.ovh`. A partir do seu endereço de e-mail de moderador, terá de enviar uma mensagem para `newsletter-edit@mydomain.ovh`.
 
 Receberá então um e-mail que o(a) guiará para realizar as suas alterações.
 
@@ -253,7 +256,7 @@ Pode encontrar, em seguida, uma lista dos ficheiros com os textos de resposta e 
 
 > [!primary]
 >
-> Por exemplo: Se pretender alterar o rodapé predefinido dos e-mails enviados para a sua mailing list, terá de enviar uma mensagem para o endereço "newsletter-edit.bottom@testinterne.ovh". Receberá então um novo e-mail a explicar como personalizar o rodapé.
+> Por exemplo: Se pretender alterar o rodapé predefinido dos e-mails enviados para a sua mailing list, terá de enviar uma mensagem para o endereço `nome_da_sua_ML-edit.bottom@mydomain.ovh`. Receberá então um novo e-mail a explicar como personalizar o rodapé.
 > 
 
 ## Saiba mais
