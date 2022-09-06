@@ -214,9 +214,12 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 
 ### Erweiterte Anpassung
 
-Sie können die meisten Texte in Ihrer Mailingliste anpassen. Als Moderator müssen Sie eine leere E-Mail an [Name_Ihrer_ML-edit@yourdomain.com](mailto:edit@votredomaine.com) senden.
+> [!warning]
+> Die unten aufgeführten Werte sind Beispiele. Achten Sie darauf, sie durch Ihre eigenen Werte zu ersetzen.
 
-- Beispiel: Ihre Mailingliste lautet [newsletter@testinterne.ovh](mailto:newsletter@testinterne.ovh). Von Ihrer Moderator-E-Mail-Adresse aus müssen Sie eine Nachricht an [newsletter-edit@testinterne.ovh](mailto:newsletter-edit@testinterne.ovh) senden.
+Sie können die meisten Texte in Ihrer Mailingliste anpassen. Als Moderator müssen Sie eine leere E-Mail an `Name_Ihrer_ML-edit@mydomain.ovh` senden.
+
+- Beispiel: Ihre Mailingliste lautet `newsletter@mydomain.ovh`. Von Ihrer Moderator-E-Mail-Adresse aus müssen Sie eine Nachricht an `newsletter-edit@mydomain.ovh` senden.
 
 Sie erhalten dann eine E-Mail, die Sie anleitet wie Sie Ihre Änderungen vornehmen können.
 
@@ -251,7 +254,7 @@ Unten finden Sie eine Liste der Dateien mit den Antworttexten und eine kurze Bes
 
 > [!primary]
 >
-> Beispiel: Wenn Sie die Standardfußzeile für E-Mails ändern möchten, die an Ihre Mailingliste gesendet werden, müssen Sie eine Nachricht an die Adresse „newsletter-edit.bottom@testinterne.ovh“ senden. Sie erhalten dann eine neue E-Mail, in der erläutert wird, wie Sie die Fußzeile anpassen.
+> Beispiel: Wenn Sie die Standardfußzeile für E-Mails ändern möchten, die an Ihre Mailingliste gesendet werden, müssen Sie eine Nachricht an die Adresse `Name_Ihrer_ML-edit.bottom@mydomain.ovh` senden. Sie erhalten dann eine neue E-Mail, in der erläutert wird, wie Sie die Fußzeile anpassen.
 > 
 
 ## Weiterführende Informationen

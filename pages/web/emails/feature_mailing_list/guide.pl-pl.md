@@ -140,8 +140,8 @@ Istnieją dwie metody dodawania/usuwania moderatorów:
 - zaimportowanie pliku tekstowego zawierającego jeden adres e-mail na wiersz, klikając ikonę pobierania znajdującą się powyżej pola wprowadzania danych.
 
 > [!primary]
-> \- Jeśli do jednej listy mailingowej wyznaczonych jest kilku moderatorów, wystarczy, że jeden z nich zatwierdzi wysłanie wiadomości do abonentów.
-> \- Jeśli moderator wysyła wiadomość e-mail do odbiorców z listy mailingowej, tylko on otrzymuje e-mail dotyczący moderacji.
+> - Jeśli do jednej listy mailingowej wyznaczonych jest kilku moderatorów, wystarczy, że jeden z nich zatwierdzi wysłanie wiadomości do abonentów.
+> - Jeśli moderator wysyła wiadomość e-mail do odbiorców z listy mailingowej, tylko on otrzymuje e-mail dotyczący moderacji.
 > 
 
 W zależności od liczby abonentów do dodania, operacja może zająć trochę czasu.
@@ -216,9 +216,12 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 
 ### Zaawansowana personalizacja
 
-Możesz spersonalizować większość tekstów listy mailingowej. Jako moderator musisz wysłać pustą wiadomość na adres nazwa_twojej_LM- [edit@twojadomena.com](mailto:edit@twojadomena.com){.external}.
+> [!warning]
+> Poniższe wartości są przykładami. Pamiętaj, aby zastąpić je własnymi wartościami.
 
-- Przykład: Twoja lista mailingowa to [newsletter@testinterne.ovh](mailto:newsletter@testinterne.ovh){.external}. Z adresu e-mail moderatora należy wysłać wiadomość na adres [newsletter-edit@testinterne.ovh](mailto:newsletter-edit@testinterne.ovh){.external} .
+Możesz spersonalizować większość tekstów listy mailingowej. Jako moderator musisz wysłać pustą wiadomość na adres `nazwa_twojej_LM-edit@mydomain.ovh`.
+
+- Przykład: Twoja lista mailingowa to `newsletter@mydomain.ovh`. Z adresu e-mail moderatora należy wysłać wiadomość na adres `newsletter-edit@mydomain.ovh`.
 
 Wówczas otrzymasz wiadomość z instrukcją wprowadzania modyfikacji.
 
@@ -253,7 +256,7 @@ Poniżej znajduje się lista plików zawierających teksty odpowiedzi i krótki 
 
 > [!primary]
 >
-> Przykład: Jeśli chcesz zmodyfikować domyślą stopkę wiadomości wysyłanych do abonentów listy mailingowej, musisz wysłać wiadomość na adres „newsletter-edit.bottom@testinterne.ovh”. Otrzymasz wówczas nową wiadomość informującą, jak spersonalizować stopkę.
+> Przykład: Jeśli chcesz zmodyfikować domyślą stopkę wiadomości wysyłanych do abonentów listy mailingowej, musisz wysłać wiadomość na adres `nazwa_twojej_LM-edit.bottom@mydomain.ovh`. Otrzymasz wówczas nową wiadomość informującą, jak spersonalizować stopkę.
 > 
 
 ## Sprawdź również
