@@ -10,7 +10,7 @@ order: 2
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 21.12.2021**
+**Letzte Aktualisierung am 05.09.2022**
 
 ## Ziel
 
@@ -21,7 +21,7 @@ order: 2
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
@@ -75,9 +75,34 @@ In beiden Fällen wird Ihnen eine E-Mail zum Zurücksetzen des Passworts zugesan
 > - Nach Klick auf den Link ist er noch 30 Minuten gültig.
 >
 
+> [!warning]
+>
+> Die Änderung des Passworts für den Zugang zum Verwaltungsinterface Ihres CMS über das OVHcloud Kundencenter kann nur durchgeführt werden **wenn folgende Bedingungen erfüllt sind**:
+>
+> - Das CMS wurde mit der Option "1-Klick-Modul" bei der Bestellung Ihres Hostings oder über das OVHcloud Kundencenter installiert.
+> - Der Benutzer (Benutzername, E-Mail-Adresse, usw.) wurde nicht über das CMS oder die Datenbank geändert.
+> - Die Zugriffsseite zum Verwaltungsinterface Ihres CMS wurde nicht geändert. Insbesondere darf die URL für den Zugang zum Verwaltungsinterface Ihres CMS nicht über das CMS geändert worden sein. Auf dieser Seite dürfen keine Zugangsbeschränkungen liegen.
+> - Das "Präfix" der Tabellen in Ihrer Datenbank wurde weder über das CMS noch direkt über die Datenbank geändert.
+>
+> Ist das nicht der Fall, folgen Sie der offiziellen Dokumentation des verwendeten CMS oder kontaktieren Sie direkt den Herausgeber des CMS.
+>
+
 Um das Passwort für den Zugang zum Verwaltungsinterface Ihrer Website zu ändern, gehen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.
 
 Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modul und dann auf `Passwort ändern`{.action}. Klicken Sie auf `Bestätigen`{.action}. Sie erhalten in einigen Minuten per E-Mail einen Link um Ihr Passwort zurückzusetzen.
+
+> [!primary]
+>
+> Wenn Sie Ihr Passwort für den Zugang zum Verwaltungsinterface Ihres CMS aus den oben genannten Gründen nicht über das OVHcloud Kundencenter ändern können, finden Sie die offizielle Dokumentation zu den von unseren Webhostings unterstützten CMS:
+>
+> - WordPress: <https://wordpress.org/support/article/resetting-your-password/>
+> - Joomla!: <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
+> - Drupal: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum Drupal-Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der offiziellen Seite [drupal.org](https://www.drupal.org/){.external}.
+> - PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung des Zugangspassworts zum PrestaShop Verwaltungsinterface an. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie [hier](https://www.prestashop.com){.external} auf der offiziellen Seite.
+>
+> Sie können auch das Passwort für den Zugang zum Verwaltungsinterface Ihres CMS direkt über Ihre Datenbank ändern.<br>
+> Wir empfehlen Ihnen jedoch dringend, die Operation mithilfe der vom Herausgeber Ihres CMS zur Verfügung gestellten Dokumentation durchzuführen oder bei Problemen einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
+>
 
 ### Ihr Modul löschen
 
@@ -140,10 +165,12 @@ Installieren Sie auf Ihrer Seite keine Plugins oder Templates, die nicht auf der
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/de){.external}
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Die häufigsten Fehler bei 1-Klick-Modulen beheben](https://docs.ovh.com/de/hosting/fehler-bei-1-klick-modulen/).
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere verschiedenen [Support-Angebote](https://www.ovhcloud.com/de/support-levels/) einsehen.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -10,7 +10,7 @@ order: 2
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 21/12/2021**
+**Última atualização: 05/09/2022**
 
 ## Objetivo
 
@@ -22,7 +22,7 @@ Os módulos 1 clique permitem a instalação fácil e rápida de um software on-
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
 >
 
 ## Requisitos
@@ -75,9 +75,33 @@ Em ambos os casos, ser-lhe-á enviado um e-mail de reinicialização da password
 > - Depois de clicar na ligação, esta só é válida durante 30 minutos.
 >
 
+> [!warning]
+>
+> A alteração da palavra-passe de acesso à interface de gestão do seu CMS a partir da Área de Cliente OVHcloud só pode ser efetuada **se forem respeitadas as seguintes condições** :
+>
+> - O CMS foi instalado com a opção "módulo 1 clique" durante a encomenda do alojamento ou a partir da Área de Cliente OVHcloud.
+> O utilizador (nome de utilizador, endereço de e-mail, etc.) não foi modificado através do CMS ou da base de dados.
+> A página de acesso à interface de administração do seu CMS não foi alterada. Em particular, o URL de acesso à interface de administração do seu CMS não deve ter sido alterado através do CMS. Não devem ter sido impostas restrições nesta mesma página.
+> - O "prefixo" das tabelas presentes na sua base de dados não foi modificado a partir do CMS ou da base de dados diretamente.
+>
+> Caso contrário, deverá seguir a documentação oficial do CMS que utiliza ou contactar diretamente o editor do CMS.
+>
+
 Para alterar a palavra-passe de acesso à interface de administração do seu website **através da Área de Cliente OVHcloud**, clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e no separador `Modules "1 clique"`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita da linha relativa ao seu módulo e depois `Alterar palavra-passe`{.action}. Clique em `Validar`{.action}. Receberá dentro de alguns minutos por e-mail um link de reinicialização da sua password.
+
+> [!primary]
+>
+> Se não pode alterar a palavra-passe de acesso à interface de gestão do seu CMS a partir da Área de Cliente OVHcloud pelas razões indicadas acima, poderá consultar a documentação oficial para os diferentes CMS propostos em instalação nos nossos alojamentos partilhados:
+>
+> - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
+> - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
+> - Drupal : O editor deste programa não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do Drupal. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte a página oficial [drupal.org](https://www.drupal.org/){.external}.
+> - PrestaShop : O editor deste software não propõe, à data, documentação para alterar a palavra-passe de acesso à interface de administração do PrestaShop. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://www.prestashop.com){.external} para aceder à sua página oficial.
+>
+Também é possível alterar a palavra-passe de acesso à interface de administração do seu CMS diretamente a partir da sua base de dados.<br>
+No entanto, se encontrar dificuldades, recomendamos vivamente que efetue a operação com a documentação proposta pelo editor do seu CMS ou que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
 
 ### Eliminar o módulo
 
@@ -96,10 +120,10 @@ Caso contrário, clique no separador `Multisite`{.action}. Tome nota do nome da 
 
 Aceda ao [espaço FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento. Abra a `Pasta raiz` encontrada anteriormente no separador `Multisite`{.action} e procure o ficheiro de configuração do seu módulo:
 
-- Para WORDPRESS: **"wp-config.php"** (o nome da base de dados aparece com a menção **"DB_NAME"**).
-- Para JOOMLA: **"configuration.php"** (o nome da base de dados aparece com a menção **"public $db"**).
-- Para o DRUPAL: **"settings.php"** (Para encontrá-lo, aceda à pasta **"sites"** e **"default"**. O nome da base de dados aparece sob a menção **"database""**).
-- Para PRESTASHOP: **"parameters.php"** (Para o encontrar, aceda à pasta **"app"** e **"config"**. O nome da base do módulo aparece na rubrica **"database_name"**.
+- Para WordPress : **"wp-config.php"** (o nome da base de dados aparece com a menção **"DB_NAME"**).
+- Para Joomla! : **"configuration.php"** (o nome da base de dados aparece com a menção **"public $db"**).
+- Para o Drupal: **"settings.php"** (Para encontrá-lo, aceda à pasta **"sites"** e **"default"**. O nome da base de dados aparece sob a menção **"database""**).
+- Para PrestaShop : **"parameters.php"** (Para o encontrar, aceda à pasta **"app"** e **"config"**. O nome da base do módulo aparece na rubrica **"database_name"**.
 
 #### Etapa 2: guardar o seu módulo
 
@@ -140,10 +164,12 @@ Não instale no seu site plugins ou templates que não foram recomendados pelas 
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/pt){.external}
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 [Resolver os erros mais frequentes associados aos módulos 1 clique](https://docs.ovh.com/pt/hosting/erros-frequentes-modulos-em-1-clique/).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -6,7 +6,7 @@ section: CMS
 order: 2
 ---
 
-**Last updated 21st December 2021**
+**Last updated 5th September 2022**
 
 ## Objective
 
@@ -17,7 +17,7 @@ The 1-click modules are a quick and easy way to install an online website creati
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) and/or discuss the issue with our community on if you face difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) and/or discuss the issue with our community on if you face difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -70,9 +70,33 @@ In both cases, you will receive an email containing a link to reset your passwor
 > - Once you click on this link, it will be valid for 30 minutes.
 >
 
+> [!warning]
+>
+> You can change the password for accessing your CMS admin interface via the OVHcloud Control Panel **only if the following conditions are met**:
+>
+> - The CMS was installed with the "1-click module" option when you ordered your hosting package or from the OVHcloud Control Panel.
+> - The user (username, email address, etc.) has not been modified via the CMS or the database.
+> - The access page for your CMS administration interface has not been modified. In particular, the URL for accessing your CMS administration interface must not have been modified via the CMS. Restrictions on this same page should not be in place.
+> - The "prefix" of the tables in your database has not been modified from the CMS or the database directly.
+>
+> Otherwise, you will need to follow the official documentation for the CMS you are using, or contact the CMS publisher directly.
+>
+
 To change the password of your website’s administration interface **via the OVHcloud Control Panel**, click on `Web Cloud`{.action}, `Hosting`{.action}, the concerned hosting plan then on the `1-click modules`{.action} tab.
 
 Then, click on the `...`{.action} button to the right of the line related to your module, then on `Modify password`{.action} and on `Confirm`{.action}. You will receive an email with a password reset link within a few minutes.
+
+> [!primary]
+>
+> If you cannot change your password for accessing your CMS administration interface from the OVHcloud Control Panel for the reasons listed above, you will find the official documentation below for the different CMSs offered for installation on our shared hosting plans:
+>
+> - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
+> - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
+> - Drupal: The publisher of this software does not currently offer any documentation for changing the password for accessing the Drupal administration interface. Please contact the publisher directly on this subject. For more information, see the official page [drupal.org](https://www.drupal.org/){.external}.
+> - PrestaShop : The software publisher does not currently offer any documentation for changing the password for accessing the PrestaShop administration interface. Please contact the publisher directly on this subject. For more information, click [here](https://www.prestashop.com){.external} to go to their official page.
+>
+You can also change the password for accessing your CMS admin interface directly from your database.<br>
+However, we strongly recommend using the documentation provided by your CMS publisher, or contacting a [specialist provider](https://partner.ovhcloud.com/en-ie/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 
 ### Delete your module
 
@@ -81,11 +105,11 @@ Then, click on the `...`{.action} button to the right of the line related to you
 > Backing up your data is an essential part of the [securing of your websites](https://docs.ovh.com/ie/en/hosting/secure-website/). We recommend you to download regularly your data backup on a local device, such as an USB drive or external hard drive, following the instructions in this [guide](https://docs.ovh.com/gb/en/hosting/export-a-website/).
 >
 
-#### Step 1: identify the database linked to your module <a name="step1"></a>
+#### Step 1: Identify the database linked to your module <a name="step1"></a>
 
 To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on the `Databases`{.action} tab.
 
-If you have only one database in this part of your control panel and you do not have a [CloudDB](https://www.ovh.ie/cloud/cloud-databases/) offer, you can consider this to be your website's database.
+If you have only one database in this part of your Control Panel and you do not have a [CloudDB](https://www.ovh.ie/cloud/cloud-databases/) offer, you can consider this to be your website's database.
 
 Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this is the directory where the files that make up your 1-click module are located on the FTP server.
 
@@ -96,11 +120,11 @@ Then log on to the [FTP space](https://docs.ovh.com/ie/en/hosting/log-in-to-stor
 - Drupal: **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
 - PrestaShop: **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
 
-#### Step 2: backup your data
+#### Step 2: Back up your data
 
 To back up your website, follow the instructions of this [guide](https://docs.ovh.com/gb/en/hosting/export-a-website/) to retrieve its files from both the FTP space on your hosting plan and its database.
 
-#### Step 3: delete your module
+#### Step 3: Delete your module
 
 > [!alert]
 >
@@ -113,7 +137,7 @@ Then click on the `...`{.action} button to the right of the line related to your
 
 > [!warning]
 >
-> Deleting your 1-click module **will not automatically delete its database**. If you launch the installation of a new CMS without having previously deleted the database from the previous one and if your hosting plan does not allow the automatic creation of another database, the message "[An error has occurred loading the information (You need at least one free database)](https://docs.ovh.com/ie/en/hosting/error-frequently-1-click-modules/#an-error-has-occurred-loading-the-information-you-need-at-least-one-free-database)" will appear in your control panel.
+> Deleting your 1-click module **will not automatically delete its database**. If you launch the installation of a new CMS without having previously deleted the database from the previous one and if your hosting plan does not allow the automatic creation of another database, the message "[An error has occurred loading the information (You need at least one free database)](https://docs.ovh.com/ie/en/hosting/error-frequently-1-click-modules/#an-error-has-occurred-loading-the-information-you-need-at-least-one-free-database)" will appear in your Control Panel.
 >
 > If you have a [Personal Hosting](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) subscription or if you have already created all four databases of your [Professional Hosting](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) or [Performance Hosting](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
 >
@@ -135,10 +159,12 @@ Do not install plugins or templates that have not been recommended by the offici
 - [Drupal](https://www.drupal.org/community){.external}
 - [PrestaShop](https://www.prestashop.com/en){.external}
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Resolving the most common 1-click module errors](https://docs.ovh.com/ie/en/hosting/error-frequently-1-click-modules/).
 
 For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
