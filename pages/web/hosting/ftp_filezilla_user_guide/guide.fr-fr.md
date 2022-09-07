@@ -307,18 +307,6 @@ Pour modifier ces réglages, rendez-vous dans `Édition`{.action} et ensuite dan
 
 ![hosting](images/1826.png){.thumbnail}
 
-### Connaitre le serveur de connexion
-
-Dans certains cas, notre support peut être amené à vous demander le serveur sur lequel s'est connecté FileZilla.
-
-Cette vérification peut par exemple intervenir si vous constatez des lenteurs ou des anomalies diverses avec votre espace FTP. Pour le retrouver :
-
-- Reportez-vous au cadre en dessous de votre identifiants
-- Remontez tout en haut des logs
-- Relevez le webmXXX
-
-![hosting](images/2399.png){.thumbnail}
-
 ## Aller plus loin <a name="go-further"></a>
 
 Vous trouverez ci-après le lien vers notre documentation pour [résoudre les erreurs récurrentes lors de l'utilisation d'un logiciel FTP](https://docs.ovh.com/fr/hosting/mutualise-les-problemes-ftp-recurrents/).
