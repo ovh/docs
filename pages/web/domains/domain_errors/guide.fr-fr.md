@@ -31,7 +31,7 @@ Un tableau vous permet de consulter toutes les opérations liées aux noms de do
 - `Opération` :  Opération en cours sur le nom de domaine.
 - `Commentaire` : Détails sur l'opération en cours. Instructions.
 - `Date de traitement` : Date de création de l'opération.
-- `Date de mise à jour` :  Horodatage de mise à jour de l'opération en cours.
+- `Date de mise à jour` : Horodatage de mise à jour de l'opération en cours.
 - `Date de fin` : Date de fin de l'opération.
 - `État` : État actuel de l'opération.
 
