@@ -85,7 +85,7 @@ A verde em cima, a fim de estabelecer a ligação ao servidor distante ser-nos-�
 
 
 Após clicar no botão Ligação rápida, irá abrir-se uma caixa de diálogo (ver ao lado) para se certificar da ligação ao host ao qual pretende estabelecer ligação.
-Estando a ligar-se a um host OVH poderá selecionar "Configurar sempre neste host, adicionar esta chave à cache" para que não lhe volte aparecer esta mensagem.
+Estando a ligar-se a um host OVHcloud poderá selecionar "Configurar sempre neste host, adicionar esta chave à cache" para que não lhe volte aparecer esta mensagem.
 
 ![FileZilla](images/1834.png){.thumbnail}
 

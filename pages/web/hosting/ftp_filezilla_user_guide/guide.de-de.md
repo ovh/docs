@@ -85,7 +85,7 @@ Um die Verbindung mit dem Server herzustellen, müssen Sie in dem grünen Rahmen
 
 
 Sobald alle Angaben eingetragen wurden klicken Sie auf Verbinden, um die Verbindung mit dem Server aufzubauen. Es öffnet sich dann ein Dialogfenster (siehe oben) zur Überprüfung der Verbindung mit dem Server.
-Wenn Sie sich mit einem OVH Server verbinden, können Sie ein Häkchen bei "Diesem Server immer vertrauen, diesen Schlüssel speichern" setzen, damit diese Bestätigung zukünftig nicht mehr angefordert wird.
+Wenn Sie sich mit einem OVHcloud Server verbinden, können Sie ein Häkchen bei "Diesem Server immer vertrauen, diesen Schlüssel speichern" setzen, damit diese Bestätigung zukünftig nicht mehr angefordert wird.
 
 ![FileZilla](images/1834.png){.thumbnail}
 

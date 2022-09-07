@@ -83,14 +83,14 @@ Le SFTP (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocole si
 > [!success]
 >
 > SFTP est activable gratuitement pour toutes les
-> offres d'hébergements d'OVH (sauf 60free / demo1g) !
+> offres d'hébergements d'OVHcloud (sauf 60free / demo1g) !
 > 
 
 
 #### Verifiez l'activation de SFTP
 Avant d'aller plus loin, vérifiez tout d'abord que le SFTP est activé pour votre compte.
 
-Rendez-vous dans votre [espace client](https://www.ovh.com/manager/web){.external} > onglet SSH-FTP.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/manager/web){.external}, dans la partie « Web Cloud », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}.
 
 S'il s'agit d'une offre d'hébergement "Start10M", vérifiez que "SFTP" est coché.
 
@@ -99,13 +99,14 @@ S'il s'agit d'une offre d'hébergement "Start10M", vérifiez que "SFTP" est coch
 
 Dans les autres cas :
 
-- Cliquez sur la roue crantée à côté de votre login puis sur `Modifier`{.action}.
+- Cliquez sur les `"..."`{.action} à droite du tableau puis sur `Editer`{.action}.
 
 ![Activation SFTP 1](images/enable_sftp_1.png){.thumbnail}
 
 - Dans la fenêtre qui s'affiche, vérifiez alors que l'une des options suivantes est activée :
-    - "Activé", si vous souhaitez activer le **SSH** (SFTP inclus)
-    - "SFTP", si vous ne souhaitez activer **que le SFTP**.
+
+    - "FTP et SFTP", si vous ne souhaitez activer **que le SFTP** en plus du FTP.
+    - "FTP, SFTP et SSH", si vous souhaitez activer le FTP, le **SFTP** et le **SSH**.
 
 ![Activation SFTP 2](images/enable_sftp_2.png){.thumbnail}
 
@@ -115,12 +116,12 @@ Dans les autres cas :
 #### Lancez la connexion SFTP
 Dans l'encadré vert tout en haut cette fois, afin d'établir la connexion au serveur distant, on vous demandera :
 
-- Hôte : ftp.cluster0XX.hosting.ovh.net
+- Hôte : ftp.clusterXXX.hosting.ovh.net
 - Identifiant : votre login FTP
 - Mot de passe : le mot de passe FTP associé au login
 - Port : 22 cette fois
 
-Après avoir cliqué sur le bouton *Connexion rapide*, une boîte de dialogue s'ouvre (cf. ci-dessus) afin de certifier la connexion à l'hôte sur lequel vous vous apprêtez à vous connecter. En étant connecté sur un hôte OVH, vous pouvez cocher "*Toujours faire confiance à cet hôte, ajouter cette clé au cache*" afin qu'on ne vous le redemande plus à l'avenir.
+Après avoir cliqué sur le bouton *Connexion rapide*, une boîte de dialogue s'ouvre (cf. ci-dessus) afin de certifier la connexion à l'hôte sur lequel vous vous apprêtez à vous connecter. En étant connecté sur un hôte OVHcloud, vous pouvez cocher "*Toujours faire confiance à cet hôte, ajouter cette clé au cache*" afin qu'on ne vous le redemande plus à l'avenir.
 
 
 ![hosting](images/1834.png){.thumbnail}

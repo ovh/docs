@@ -85,7 +85,7 @@ Om verbinding te maken met de remote server, moet u in het groene vak hierboven,
 
 
 Klik op snel verbinden, dit zal een dialoogvenster (zie hierboven) openen om de verbinding met de server te controleren. 
-Als u verbinding maakt met een OVH server, kunt u aanvinken: "Deze host altijd vertrouwen, deze key toevoegen aan de cache", zodat er de volgende keren niet meer om deze bevestiging wordt gevraagd.
+Als u verbinding maakt met een OVHcloud server, kunt u aanvinken: "Deze host altijd vertrouwen, deze key toevoegen aan de cache", zodat er de volgende keren niet meer om deze bevestiging wordt gevraagd.
 
 ![FileZilla](images/1834.png){.thumbnail}
 
