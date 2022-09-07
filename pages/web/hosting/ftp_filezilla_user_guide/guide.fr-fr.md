@@ -311,7 +311,7 @@ Pour modifier ces réglages, rendez-vous dans `Édition`{.action} et ensuite dan
 
 Vous trouverez ci-après le lien vers notre documentation pour [résoudre les erreurs récurrentes lors de l'utilisation d'un logiciel FTP](https://docs.ovh.com/fr/hosting/mutualise-les-problemes-ftp-recurrents/).
 
-Plus généralement, vous pourrez retrouver l'ensemble de nos guides relatifs aux hébergements mutualisés [ici](https://docs.ovh.com/fr/hosting/).
+Plus généralement, [retrouvez l'ensemble de nos guides relatifs aux hébergements mutualisés](https://docs.ovh.com/fr/hosting/).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
