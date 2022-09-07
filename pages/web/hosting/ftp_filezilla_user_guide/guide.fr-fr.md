@@ -33,7 +33,7 @@ Ce dernier vous donne notamment la possibilité de mettre en ligne votre site in
 
 Pour l'installer et en bénéficier, veuillez vous reporter au site : [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
-### L'interface
+### L'interface <a name="interface"></a>
 
 ![hosting](images/1818.png){.thumbnail}
 
@@ -164,7 +164,7 @@ Une vue sur la file d'attente est disponible.
 ![hosting](images/1822.png){.thumbnail}
 
 ### Menu contextuel Serveur
-Si vous réalisez un clic droit sur l'un des fichiers présents (cf **zone 5**).
+Si vous réalisez un clic droit sur l'un des fichiers présents (**zone 5** décrite dans la section de ce tutoriel relative à [l'interface](#interface) de Filezilla).
 
 Un menu contextuel apparait, et plusieurs choix vous sont proposés :
 
@@ -213,15 +213,32 @@ Cela aura pour effet de modifier les droits du dossier en question, ainsi que de
 
 ### Reouverture de site
 
-Ouvrez FileZilla, cliquez sur "Serveur" puis sélectionnez "Saisir une commande personnalisée".
+> [!primary]
+>
+> Indépendamment d'une action de votre part, il est possible que suite à la détection de fichiers malveillants ou non autorisés sur votre hébergement par nos systèmes de sécurité, votre hébergement soit désactivé.
+>
+> Il vous sera alors nécessaire de [sécuriser vos solutions](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/#etape-2-securiser-vos-solutions) tout corrigeant les failles de sécurité évoquées dans la notification de blocaque reçue par mail.
+>
 
-*Dans FileZilla à la place de "Saisir une commande personnalisée" il est possible d'avoir "Entrez une commande FTP".*
+Ouvrez ensuite FileZilla, cliquez sur `Serveur`{.action} puis sélectionnez `Saisir une commande personnalisée`{.action}.
+
+> [!primary]
+>
+> Dans FileZilla à la place de "Saisir une commande personnalisée" il est possible d'avoir `Entrez une commande FTP`{.action}.*
+>
 
 Renseignez la commande :
+
+> [!alert]
+>
+>Cette commande n'est pas fonctionnel en SFTP.
+>
 
 ```bash
 SITE CHMOD 705 /
 ```
+
+![hosting](images/1829.png){.thumbnail}
 
 Si vous obtenez l'erreur suivante :
 
@@ -233,61 +250,65 @@ Il vous faut dans ce cas utiliser la commande :
 SITE CHMOD 705 .
 ```
 
-*Pour vérifier que la réouverture est bien effective, testez tout simplement votre site depuis un navigateur Internet.*
-
-*Cette commande n'est pas fonctionnel en SFTP.*
-
-![hosting](images/1829.png){.thumbnail}
+> [!primary]
+>
+> Pour vérifier que la réouverture est bien effective, testez votre site depuis un navigateur Internet au bout de quelques minutes.
+>
 
 > [!alert]
 >
-> Pour rappel, veillez à tester l'affichage après 3 heures maximum. En effet,
-> nos robots passent toutes les 3 heures pour vérifier les changements d'état.
-> En fonction du moment où la manipulation ci-dessus sera réalisée, le
-> rétablissement de l'affichage de votre site pourra donc être plus ou moins
-> rapide.
-> Si le délai des 3 heures est passé et que votre site n'est toujours pas en
-> ligne, veuillez contacter notre support.
+> Pour rappel, veillez à tester l'affichage après 3 heures maximum. 
+> En effet, nos robots passent toutes les 3 heures pour vérifier les changements d'état.
+> En fonction du moment où la manipulation ci-dessus sera réalisée, le rétablissement de l'affichage de votre site pourra donc être plus ou moins rapide.
+> Si le délai des 3 heures est passé et que votre site n'est toujours pas en ligne nous vous invitons à vérifier que la commande renseignée est bien passée en réitérant l'opération.
+> Si cela ne fonctione toujours pas, veuillez contacter notre support.
 > 
 
 ### Transfert de fichiers binaires
-Pour les fichiers de type binaire, par exemple dans le cas de fichier de type **CGI**  il peut être intéressant de choisir la manière dont le transfert sera réalisé.
 
-Pour modifier cela, sélectionnez "Transfert" dans le menu principal puis "Type de transfert".
+Pour les fichiers de type binaire, comme par exemple des fichiers de type **CGI** : il peut être intéressant de choisir la manière dont le transfert sera réalisé.
+
+Pour modifier cela, sélectionnez `Transfert`{.action} dans le menu principal puis `Type de transfert`{.action}.
 
 ![hosting](images/1832.png){.thumbnail}
 
-### Comparaison de dossier
-Cette option affiche des couleurs dans les  **zones 3**  **et**  **4**  afin de comparer les différences entre les fichiers et dossiers locaux et le serveur. En cliquant droit sur l'icône , vous pouvez changer le mode de comparaison. On vous proposera alors d'activer ou de désactiver l'option, mais également de :
+### Comparaison de dossiers
+
+![hosting](images/1823.png){.thumbnail}
+
+Cette option affiche des couleurs dans les  **zones 3** et  **4** évoquées dans la section de ce tutoriel relative à[l'interface](#interface) de Filezilla afin de comparer les différences entre les fichiers et dossiers locaux avec le serveur. En effectuant un clic-droit sur l'icône, vous pouvez changer le mode de comparaison. On vous proposera alors d'activer ou de désactiver l'option, mais également de :
 
 - Comparer la taille des fichiers
 - Comparer l'horodatage
 - Masquer les fichiers identiques
 
-Couleurs :
+Correspondance des couleurs :
 
 - Jaune : le fichier existe uniquement d'un seul côté
 - Vert : le fichier est plus récent que le fichier non marqué de l'autre côté
 - Rouge : les tailles des fichiers sont différentes
 
-![hosting](images/1823.png){.thumbnail}
+### Préferences
 
-### Preferences
 Il vous est possible de modifier vos paramètres de reconnexion sur le serveur.
 
-Attention toutefois, cela peut être considéré par de l'abus par certains serveurs et pourrait bannir votre adresse IP.
+> [!alert]
+>
+> Attention toutefois, cela peut être considéré par de l'abus par certains serveurs et pourrait bannir votre adresse IP.
+>
 
-Pour modifier ces réglages, rendez-vous dans "Édition" puis "Paramètres" et enfin "Connexion".
+Pour modifier ces réglages, rendez-vous dans `Édition`{.action} puis `Paramètres`{.action} et enfin `Connexion`{.action}.
 
 ![hosting](images/1825.png){.thumbnail}
 
 Il vous est possible de modifier les préférences concernant les actions à exécuter par défaut lors de modification d'un fichier existant.
 
-Pour modifier ces réglages, rendez-vous dans "Édition" et ensuite dans "Paramètres" puis dans "transferts".
+Pour modifier ces réglages, rendez-vous dans `Édition`{.action} et ensuite dans `Paramètres`{.action} puis dans `transferts`{.action}.
 
 ![hosting](images/1826.png){.thumbnail}
 
 ### Connaitre le serveur de connexion
+
 Dans certains cas, notre support peut être amené à vous demander le serveur sur lequel s'est connecté FileZilla.
 
 Cette vérification peut par exemple intervenir si vous constatez des lenteurs ou des anomalies diverses avec votre espace FTP. Pour le retrouver :
