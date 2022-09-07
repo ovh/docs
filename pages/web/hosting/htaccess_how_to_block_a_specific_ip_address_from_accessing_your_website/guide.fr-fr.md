@@ -15,6 +15,8 @@ Ce tutoriel a notamment pour  objectif de prévenir ou corriger d'éventuelles i
 
 Vous pouvez réaliser ceci grâce à un fichier « .htaccess », un fichier texte particulier, détecté par le serveur web (Apache), et qui permet de définir des règles spéciales sur un répertoire et l'ensemble de ses sous-répertoires.
 
+Vous pouvez créer plusieurs fichiers « .htaccess » dans [l'espace FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement mais **un seul** par répertoire ou sous-répertoire afin d'éviter les conflits entre différents fichiers « .htaccess ».
+
 **Découvrez comment bloquer bloquer l'accès à votre site pour certaines adresses IP via un fichier « .htaccess ».**
 
 > [!warning]
@@ -28,7 +30,7 @@ Vous pouvez réaliser ceci grâce à un fichier « .htaccess », un fichier text
 
 > [!primary]
 >
-> Le fichier « .htaccess » peut être placé dans plusieurs dossiers différents.
+> Le fichier « .htaccess » peut être placé dans plusieurs dossiers différents tout en respectant la règle d'un **seul** fichier « .htaccess » par dossier ou sous-dossier.
 >
 > Les paramètres définis par un fichier « .htaccess » s'appliquent au répertoire où il est installé ainsi qu'à tous ses sous-répertoires.
 >
@@ -45,7 +47,7 @@ En cas d'erreur, vous pouvez toujours vous connecter à [l'espace FTP](https://d
 Pour bloquer une adresse IP spécifique, insérez la ligne suivante dans votre fichier « .htaccess » :
 
 ```bash
-Deny from adresse_IP
+Deny from IP_address
 ```
 
 - *Exemple* : si vous souhaitez bloquer l'adresse IP 192.168.1.2, vous devrez écrire la ligne suivante :
@@ -59,7 +61,7 @@ Deny from 192.168.1.2
 Pour bloquer une plage d'adresses IP, insérez la ligne suivante dans votre fichier « .htaccess » :
 
 ```bash
-Deny from plage_IP
+Deny from IP_range
 ```
 
 *Exemple* : si vous souhaitez bloquer toutes les IPs en 192.168.x.x, vous devrez écrire la ligne suivante :
@@ -105,11 +107,11 @@ SetEnvIf GEOIP_COUNTRY_CODE Country_Code BlockCountry
 Deny from env=BlockCountry
 ```
 
-- *Exemple* : si vous souhaitez bloquer les adresses IPs géolocalisées en Russie (RU) et aux USA (US), vous devrez écrire les lignes suivantes :
+- *Exemple* : si vous souhaitez bloquer les adresses IPs géolocalisées aux îles Fidji (FJ) et au Groenland (GR), vous devrez écrire les lignes suivantes :
 
 ```bash
-SetEnvIf GEOIP_COUNTRY_CODE RU BlockCountry
-SetEnvIf GEOIP_COUNTRY_CODE US BlockCountry
+SetEnvIf GEOIP_COUNTRY_CODE FJ BlockCountry
+SetEnvIf GEOIP_COUNTRY_CODE GR BlockCountry
 Deny from env=BlockCountry
 ```
 
@@ -124,7 +126,7 @@ Pour n'autoriser qu'une seule IP à accéder à votre service, insérez les lign
 ```bash
 order deny,allow
 deny from all
-Allow from adresse_IP
+Allow from IP_address
 ```
 
 - *Exemple* : si vous souhaitez autoriser uniquement les IPs 192.168.1.2 et 192.168.1.3 à accéder à votre hébergement, vous devrez écrire les lignes suivantes :
@@ -143,7 +145,7 @@ Pour autoriser une plage d'IPs à accéder à votre service, insérez les lignes
 ```bash
 order deny,allow
 deny from all
-Allow from plage_IP
+Allow from IP_range
 ```
 
 - *Exemple* : Si vous souhaitez autoriser uniquement la plage d'IPs 192.168.1.x à accéder à votre hébergement, vous devrez écrire les lignes suivantes :
@@ -165,13 +167,13 @@ SetEnvIf GEOIP_COUNTRY_CODE Country_Code AllowCountry
 Allow from env=AllowCountry
 ```
 
-- *Exemple* : Si vous souhaitez autoriser uniquement la Russie (RU) et les USA (US) à accéder à votre hébergement, vous devrez écrire les lignes suivantes :
+- *Exemple* : Si vous souhaitez autoriser uniquement lES îles Fidji (FJ) et le Groenland (GR) à accéder à votre hébergement, vous devrez écrire les lignes suivantes :
 
 ```bash
 order deny,allow
 deny from all
-SetEnvIf GEOIP_COUNTRY_CODE RU AllowCountry
-SetEnvIf GEOIP_COUNTRY_CODE US AllowCountry
+SetEnvIf GEOIP_COUNTRY_CODE FJ AllowCountry
+SetEnvIf GEOIP_COUNTRY_CODE GR AllowCountry
 Allow from env=AllowCountry
 ```
 
