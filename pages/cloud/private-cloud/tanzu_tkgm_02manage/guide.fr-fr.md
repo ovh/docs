@@ -20,7 +20,7 @@ order: 02
 
 ## Présentation
 
-VMware Tanzu Kubernetes Grid est est une plate-forme Kubernetes fournie par **VMware** et maintenue dans le cadre du support **Hosted Private Cloud Powered by VMware**.
+VMware Tanzu Kubernetes Grid est une plate-forme Kubernetes fournie par **VMware** et maintenue dans le cadre du support **Hosted Private Cloud Powered by VMware**.
 
 Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter de ses fonctionnalités et de son évolutivité.
 
@@ -42,7 +42,7 @@ Nous allons déployer un cluster de workload sur un cluster d'administration **T
 
 ### Déploiement d'un cluster de *Workload*
 
-A partir de la machine virtuelle **Bootstrap** nous allons crééer un cluster de *Workload* dans lequel il sera possible de déployer des applications.
+A partir de la machine virtuelle **Bootstrap** nous allons créer un cluster de *Workload* dans lequel il sera possible de déployer des applications.
 
 Copiez le fichier qui a servi pour la création du cluster d'administration dans un fichier nommé **tkg-workload-cluster.yaml**.
 
@@ -92,7 +92,7 @@ kubectl apply -n tanzu-package-repo-global -f metadata.yml
 kubectl apply -n tanzu-package-repo-global -f package.yaml
 ```
 
-Créez le fichier **~/kube-vip/tkgm-customizations/carvel-packages/kube-vip-package/values.yaml** avec ce contenu qui correspond aux adresses IP utilisable sur le VLAN10 pour déployer une application
+Créez le fichier **~/kube-vip/tkgm-customizations/carvel-packages/kube-vip-package/values.yaml** avec ce contenu qui correspond aux adresses IP utilisables sur le VLAN10 pour déployer une application
 
 ```yaml
 vip_range: 192.168.0.210-192.168.0.250
@@ -132,7 +132,7 @@ Au travers de la console **Bootstrap** utilisez le navigateur **WEB** pour vous 
 
 ![01 Verify Application 02](images/01-verify-application-02.png){.thumbnail}
 
-En plus des 6 machines virtuelles pour le cluster d'administration 6 autres machines virtuelles sont visible pour le cluster de **Workload**.
+En plus des 6 machines virtuelles pour le cluster d'administration, 6 autres machines virtuelles sont visible pour le cluster de **Workload**.
 
 ![02 Cluster administration & workload Diagram01](images/02-tkc-mc-wc01.png){.thumbnail}
 
