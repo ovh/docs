@@ -167,7 +167,7 @@ SetEnvIf GEOIP_COUNTRY_CODE Country_Code AllowCountry
 Allow from env=AllowCountry
 ```
 
-- *Exemple* : Si vous souhaitez autoriser uniquement lES îles Fidji (FJ) et le Groenland (GR) à accéder à votre hébergement, vous devrez écrire les lignes suivantes :
+- *Exemple* : Si vous souhaitez autoriser uniquement les îles Fidji (FJ) et le Groenland (GR) à accéder à votre hébergement, vous devrez écrire les lignes suivantes :
 
 ```bash
 order deny,allow
