@@ -10,7 +10,7 @@ order: 04
 
 ## Objectif
 
-Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hebergement mutualise.
+Retrouvez ici un tutoriel sur l'utilisation du logiciel Filezilla avec votre hebergement mutualise.
 
 Vous pourrez notamment vous [connecter à l'espace "FTP"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement pour y créer/modifier/supprimer des fichiers.
 
@@ -29,32 +29,35 @@ Vous pourrez notamment vous [connecter à l'espace "FTP"](https://docs.ovh.com/f
 
 FileZilla est un logiciel disponible sur plusieurs systèmes d'exploitations (Windows, MacOS, etc).
 
-Ce dernier vous donne notamment la possibilité de mettre en ligne votre site internet en vous permettant de vous [connecter à l'espace "FTP"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement.
+Ce dernier vous donne notamment la possibilité de mettre en ligne votre site internet (ou simplement des fichiers) en vous permettant de vous [connecter à l'espace "FTP"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement.
 
-Pour en bénéficier, veuillez vous reporter au site : [filezilla-project.org](https://filezilla-project.org/download.php){.external}
+Pour l'installer et en bénéficier, veuillez vous reporter au site : [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
-### Interface
+### L'interface
 
 ![hosting](images/1818.png){.thumbnail}
 
-La  **zone 1**  donne des informations sur l'état de la connexion, les transferts, les erreurs de connexions, etc. Généralement les informations qui y sont reprises ne sont pas utiles pour des personnes non initiées.
+La  **zone 1**  donne des informations sur l'état de la connexion, les transferts, les erreurs de connexions, etc. Généralement, les informations qui y sont reprises ne sont pas utiles pour des personnes non initiées.
 
-La  **zone 2**  reprend l'arborescence de vos dossiers (ou des fichiers à transférer) présents en local sur votre ordinateur sur votre ordinateur.
+La  **zone 2**  reprend l'arborescence de vos dossiers (ou de vos fichiers) à transférer et qui sont présents en local sur votre ordinateur.
 
-La  **zone 3**  reprend l'arborescence pour arriver au dossier où vous êtes actuellement sur le serveur.
+La  **zone 3**  reprend l'arborescence présente sur votre hébergement (serveur) lorsque vous êtes connecté à ce dernier. L'affichage dans cette zone se limite aux dossiers, sous-dossiers et fichiers présents en amont et au même niveau que le dossier dans lequel vous vous positionnez.
 
 La  **zone 4**  liste le répertoire que vous avez ouvert localement sur votre ordinateur, reprenant le nom, la taille, le type et la date de modification des fichiers.
 
-La  **zone 5**  liste le répertoire que vous avez ouvert sur le serveur, reprenant le nom, la taille, le type, la date de modification, les droits et propriétaire des fichiers.
+La  **zone 5**  liste le répertoire que vous avez ouvert sur votre hébergement (serveur).Ceci en reprenant le nom, la taille, le type, la date de modification, les droits et propriétaire des fichiers.
 
 La  **zone 6**  indique la liste d'attente des fichiers qui vont être transférés (ou en cours de transfert) de votre ordinateur vers le serveur (ou inversement).
 
-La partie **encadrée** tout en haut de l'interface reprend le nom d'hôte (serveur sur lequel vous souhaitez vous connecter), ainsi que le nom d'utilisateur du FTP, son mot de passe et le port utilisé.
+La partie **encadrée** tout en haut de l'interface reprend le nom d'hôte (serveur sur lequel vous souhaitez vous connecter), ainsi que le nom d'utilisateur du FTP, son mot de passe et le port utilisé. Tous les paramètres sont disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 
 ## Utiliser FileZilla
 
 ### Connexion FTP
-Dans l'encadré vert tout en haut, afin d'établir la connexion au serveur distant, on vous demandera :
+
+![hosting](images/quickcnt.png){.thumbnail}
+
+Sur la partie haute dans Filezilla et afin d'établir la connexion au serveur distant, on vous demandera :
 
 |Information à renseigner|Détails|
 |---|---|
@@ -67,9 +70,7 @@ Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [
 
 ![hosting](images/loginFTP-SSH.png){.thumbnail}
 
-
 Une fois que tout est correctement saisi dans l'encadré **1** de l'image ci-dessous, cliquez sur *Connexion rapide* afin d'établir la connexion au serveur.
-
 
 ![hosting](images/1819.png){.thumbnail}
 
@@ -78,22 +79,18 @@ Si la connexion a bien été effectuée avec succès, vous retrouvez le statut p
 ### Connexion SFTP
 Le SFTP (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocole similaire au FTP fonctionnant au dessus de SSH, sur le port 22. En plus d'établir une connexion sécurisée, il vous permettra de modifier des droits de fichiers que vous ne pouvez pas exécuter en étant connecté en FTP sur le port 21 par exemple.
 
-
-
 > [!success]
 >
 > SFTP est activable gratuitement pour toutes les
 > offres d'hébergements d'OVHcloud (sauf 60free / demo1g) !
 > 
 
-
-#### Verifiez l'activation de SFTP
-Avant d'aller plus loin, vérifiez tout d'abord que le SFTP est activé pour votre compte.
+#### **Verifiez l'activation de SFTP**
+Avant d'aller plus loin, vérifiez tout d'abord que le SFTP est activé pour votre compte FTP.
 
 Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/manager/web){.external}, dans la partie « Web Cloud », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}.
 
-S'il s'agit d'une offre d'hébergement "Start10M", vérifiez que "SFTP" est coché.
-
+Vérifier ensuite si le "SFTP" est actif dans le tableau en bas de page.
 
 ![Activation SFTP offre start](images/enable_sftp_start.png){.thumbnail}
 
@@ -112,9 +109,11 @@ Dans les autres cas :
 
 - Cliquez ensuite sur `Suivant`{.action} puis sur `Valider`{.action}
 
+#### **Lancez la connexion SFTP**
 
-#### Lancez la connexion SFTP
-Dans l'encadré vert tout en haut cette fois, afin d'établir la connexion au serveur distant, on vous demandera :
+![hosting](images/quickcnt.png){.thumbnail}
+
+Sur la partie haute dans Filezilla et afin d'établir la connexion au serveur distant (hébergement), renseignez les éléments ci-après :
 
 - Hôte : ftp.clusterXXX.hosting.ovh.net
 - Identifiant : votre login FTP
@@ -123,38 +122,35 @@ Dans l'encadré vert tout en haut cette fois, afin d'établir la connexion au se
 
 Après avoir cliqué sur le bouton *Connexion rapide*, une boîte de dialogue s'ouvre (cf. ci-dessus) afin de certifier la connexion à l'hôte sur lequel vous vous apprêtez à vous connecter. En étant connecté sur un hôte OVHcloud, vous pouvez cocher "*Toujours faire confiance à cet hôte, ajouter cette clé au cache*" afin qu'on ne vous le redemande plus à l'avenir.
 
-
 ![hosting](images/1834.png){.thumbnail}
 
-
 ### Erreurs de connexion
-Le message renseigné nous indique une erreur d'identification lors de la connexion en FTP à l'hébergement mutualisé.
 
-Ce type de message est généré par une erreur dans le couple : Login // Mdp
-
-Vérifiez vos identifiants afin de vous assurer qu'aucune erreur ne soit renseignée, cas échéant il vous est possible de modifier le mot de passe de l'accès FTP de votre hébergement, directement dans l'espace client.
-
-*Un guide est disponible concernant la [modification du mot de passe FTP](../modifier-mot-de-passe-utilisateur-ftp/) sur les offres mutualisées.*
-
+Le message affiché ci-dessous nous indique une erreur d'identification lors de la connexion en FTP ou SFTP à l'hébergement mutualisé :
 
 ![hosting](images/1820.png){.thumbnail}
 
-Dans ce cas l'erreur est générée par un nom d'hôte incorrect.
+Ce type de message est généré par une erreur dans le couple : Login // Mot de passe
 
+Vérifiez vos identifiants afin de vous assurer qu'aucune erreur ne soit renseignée, cas échéant il vous est possible de modifier le mot de passe de l'accès FTP de votre hébergement, directement dans l'espace client.
+
+*Un guide est disponible concernant la [modification du mot de passe FTP](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/) sur les offres mutualisées.*
+
+Dans le cas ci-dessous, l'erreur est générée par un nom d'hôte incorrect :
 
 ![hosting](images/1824.png){.thumbnail}
 
+Vous devez donc vérifier ce dernier par rapport au nom d'hôte déclaré dns votre [espace client OVHcloud](https://www.ovh.com/manager/web){.external}.
 
 ### Transfert des fichiers
+
 Pour réaliser le transfert de vos fichiers en FTP, vous pouvez simplement les sélectionner et réaliser un glisser-déposer des fichiers de la fenêtre de gauche *(vos fichiers en local)* vers la fenêtre de droite *(votre espace d'hébergement)*.
 
-- Attention de bien sélectionner le dossier cible dans la fenêtre de droite.
+- Attention à bien sélectionner le dossier cible dans la fenêtre de droite.
 
 Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en file d'attente pour être déposés sur le serveur.
 
-
 ![hosting](images/1821.png){.thumbnail}
-
 
 ### Vue sur la file d'attente
 Une vue sur la file d'attente est disponible.
@@ -165,61 +161,63 @@ Une vue sur la file d'attente est disponible.
 - les fichiers pour lesquels le transfert à échoué.
 - les fichiers pour lesquels le transfert est réussi sur l'hébergement distant.
 
-
 ![hosting](images/1822.png){.thumbnail}
 
-
 ### Menu contextuel Serveur
-Si vous réalisez un clic droit sur l'un des fichiers présents (cf zone 5).
+Si vous réalisez un clic droit sur l'un des fichiers présents (cf **zone 5**).
 
 Un menu contextuel apparait, et plusieurs choix vous sont proposés :
 
-Télécharger : *télécharge le fichier dans le dossier local ouvert.*
-
-Ajouter les fichiers à la file d'attente : *ajoute le fichier à la file d'attente, vous permet par exemple de différer le téléchargement des données.*
-
-Afficher/Éditer : *vous permet d'afficher ou d'éditer directement un fichier présent sur votre hébergement, vous devez cependant avoir un logiciel capable de lire le fichier installé sur votre poste.*
-
-Créer un dossier : *vous permet de créer un nouveau dossier directement sur l'hébergement distant.*
-
-Actualiser : *actualise l'affichage des données afin d'afficher correctement les différents fichiers présents.*
-
-Supprimer : *vous permet de supprimer le fichier sélectionné.*
-
-Renommer : *vous permet de renommer le fichier sélectionné.*
-
-Copier l'(es) adresse(s) dans le presse-papier : *vous permet de copier automatiquement le lien direct vers le fichier sélectionné.* *Exemple d'URL qui peut être générée : ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg*
-
-Permissions de fichier : *vous donne la possibilité de modifier les droits des fichiers (CHMOD)*
-
+- Télécharger : *télécharge le fichier dans le dossier local ouvert.*
+- Ajouter les fichiers à la file d'attente : *ajoute le fichier à la file d'attente, vous permet par exemple de différer le téléchargement des données.*
+- Afficher/Éditer : *vous permet d'afficher ou d'éditer directement un fichier présent sur votre hébergement, vous devez cependant avoir un logiciel capable de lire le fichier installé sur votre poste.*
+- Créer un dossier : *vous permet de créer un nouveau dossier directement sur l'hébergement distant.*
+- Actualiser : *actualise l'affichage des données afin d'afficher correctement les différents fichiers présents.*
+- Supprimer : *vous permet de supprimer le fichier sélectionné.*
+- Renommer : *vous permet de renommer le fichier sélectionné.*
+- Copier l'(es) adresse(s) dans le presse-papier : *vous permet de copier automatiquement le lien direct vers le fichier sélectionné.* *Exemple d'URL qui peut être générée : ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg*
+- Permissions de fichier : *vous donne la possibilité de modifier les droits des fichiers (CHMOD)*
 
 ![hosting](images/1830.png){.thumbnail}
 
-
 ## Informations utiles
 
-### Droits des fichiers &amp; dossiers
-Afin d'accéder à cette interface, réalisez un clic droit sur l'un des fichiers présents sur le serveur, puis sélectionnez "Permissions de fichier".
+### Droits d'accès (Chmod) sur les fichiers et les dossiers
 
-Vous avez la possibilité dans cette interface de modifier les droits (CHMOD) de vos fichiers et de vos dossiers présents sur l'hébergement.
+Afin d'accéder à cette interface, réalisez un clic droit sur l'un des fichiers présents sur le serveur, puis sélectionnez `Permissions de fichier ...`{.action}.
 
-Renseignez les permissions que vous souhaitez attribuer, la valeur CHMOD sera automatiquement mise à jour.
+Vous avez la possibilité dans cette interface de modifier les droits d'accès FTP (Chmod) de vos fichiers et de vos dossiers présents sur l'hébergement.
+
+Généralement, il est plus facile de gérer les droits "Chmod" avec la valeur chiffrée composée de 3 chiffres pouvant aller de "0" à "7" : "XXX". Le panel de permissions peut alors aller de "000" (aucun droits) à "777" (tous les droits).
+
+[!warning]
+>
+> Attention, il n'est pas recommandé de mettre les droits "000" sur vos dossiers ou vos fichiers. En effet, vous n'aurez plus la possibilité (du moins en FTP) de gérer cet élément y compris en tant qu'administrateur FTP de votre hébergement.
+>
+> Il en va de même pour les droits "777" car, à l'inverse du "chmod 000", tout le monde peut agir sur le dossier ou le fichier : ce qui présente une faille de sécurité conséquente pour vos données hébergées.
+>
+
+Le premier des trois chiffres "XXX" définissant le "Chmod" correspond au droits du propriétaire/administrateur, le deuxième aux droits de groupes (rarement utilisé et généralement égal à 0) et le troisième aux "visiteurs" de votre site sur votre hébergement.
+
+Par défaut, nous recommandons de ne pas dépasser les droits "Chmod **705**" pour les dossiers et les droits "Chmod **604**" pour les fichiers.
+
+Plus le chiffre est élevé, plus les permissions sont autorisées.
+
+Renseignez les permissions que vous souhaitez attribuer, la valeur "Chmod" sera automatiquement mise à jour.
 
 Il vous est possible de cocher "Récursion dans les sous-dossiers".
 
 Cela aura pour effet de modifier les droits du dossier en question, ainsi que des dossiers et des fichiers qui pourraient être présents dans celui-ci.
 
-
 ![hosting](images/1831.png){.thumbnail}
 
-
 ### Reouverture de site
+
 Ouvrez FileZilla, cliquez sur "Serveur" puis sélectionnez "Saisir une commande personnalisée".
 
 *Dans FileZilla à la place de "Saisir une commande personnalisée" il est possible d'avoir "Entrez une commande FTP".*
 
 Renseignez la commande :
-
 
 ```bash
 SITE CHMOD 705 /
@@ -231,7 +229,6 @@ Si vous obtenez l'erreur suivante :
 
 Il vous faut dans ce cas utiliser la commande :
 
-
 ```bash
 SITE CHMOD 705 .
 ```
@@ -240,10 +237,7 @@ SITE CHMOD 705 .
 
 *Cette commande n'est pas fonctionnel en SFTP.*
 
-
 ![hosting](images/1829.png){.thumbnail}
-
-
 
 > [!alert]
 >
@@ -256,15 +250,12 @@ SITE CHMOD 705 .
 > ligne, veuillez contacter notre support.
 > 
 
-
 ### Transfert de fichiers binaires
 Pour les fichiers de type binaire, par exemple dans le cas de fichier de type **CGI**  il peut être intéressant de choisir la manière dont le transfert sera réalisé.
 
 Pour modifier cela, sélectionnez "Transfert" dans le menu principal puis "Type de transfert".
 
-
 ![hosting](images/1832.png){.thumbnail}
-
 
 ### Comparaison de dossier
 Cette option affiche des couleurs dans les  **zones 3**  **et**  **4**  afin de comparer les différences entre les fichiers et dossiers locaux et le serveur. En cliquant droit sur l'icône , vous pouvez changer le mode de comparaison. On vous proposera alors d'activer ou de désactiver l'option, mais également de :
@@ -279,9 +270,7 @@ Couleurs :
 - Vert : le fichier est plus récent que le fichier non marqué de l'autre côté
 - Rouge : les tailles des fichiers sont différentes
 
-
 ![hosting](images/1823.png){.thumbnail}
-
 
 ### Preferences
 Il vous est possible de modifier vos paramètres de reconnexion sur le serveur.
@@ -290,16 +279,13 @@ Attention toutefois, cela peut être considéré par de l'abus par certains serv
 
 Pour modifier ces réglages, rendez-vous dans "Édition" puis "Paramètres" et enfin "Connexion".
 
-
 ![hosting](images/1825.png){.thumbnail}
 
 Il vous est possible de modifier les préférences concernant les actions à exécuter par défaut lors de modification d'un fichier existant.
 
 Pour modifier ces réglages, rendez-vous dans "Édition" et ensuite dans "Paramètres" puis dans "transferts".
 
-
 ![hosting](images/1826.png){.thumbnail}
-
 
 ### Connaitre le serveur de connexion
 Dans certains cas, notre support peut être amené à vous demander le serveur sur lequel s'est connecté FileZilla.
@@ -309,7 +295,6 @@ Cette vérification peut par exemple intervenir si vous constatez des lenteurs o
 - Reportez-vous au cadre en dessous de votre identifiants
 - Remontez tout en haut des logs
 - Relevez le webmXXX
-
 
 ![hosting](images/2399.png){.thumbnail}
 
