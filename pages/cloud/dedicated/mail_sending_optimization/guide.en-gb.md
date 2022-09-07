@@ -118,6 +118,13 @@ Once this is done and if your IP appears to be blocked, you can then request to 
 
 For additional information, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656){.external} with Microsoft. 
 
+> [!warning]
+> 
+> **Refusal by Microsoft**
+>
+> It may happen that Microsoft refuses to delist the your IP(s), in which case OVHcloud cannot intervene. It is important to respect the best practices of Microsoft.
+> 
+
 #### To a Gmail server
 
 If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
