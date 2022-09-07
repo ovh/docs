@@ -6,7 +6,7 @@ section: Server Management
 order: xxxxx
 ---
 
-**Last updated 30th August 2022**
+**Last updated September 7th 2022**
 
 ## Objective
 
@@ -27,7 +27,7 @@ Once an IP is blocked for SPAM, an email will be sent to your account containing
 > 
 > Dear Customer,
 >
-> Our anti-spam protection layer has detected that your IP 122.122.122.123 is sending spam.
+> Our anti-spam protection layer has detected that your IP 122.122.122.122 is sending spam.
 >
 > In order to protect our network, we have blocked the port 25 of your server, at the
 network level.
@@ -107,7 +107,7 @@ Here's an example of what you should see:
     "2001:41d0:68:a00::/56",
     "2001:41d0:68:f000::/56",
     "2001:41d0:117:db00::/56",
-    "122.122.122.122/28",
+    "122.122.122.121/28",
     "145.56.222.96/28",
     "188.81.49.30/28",
 >
@@ -122,10 +122,10 @@ Next, search for IPs in a particular state with the following call. If you alrea
 **ip**:	Specify the IP block retrieved in the previous step with the netmask. For example 122.122.122.122/28.
 **state**: Specify the state you are looking for.
 
-Here's an example result (in this instance, the 122.122.122.122/28 block was selected):
+Here's an example result (in this instance, the 122.122.122.121/28 block was selected):
 
 >
-    "122.122.122.123" 
+    "122.122.122.122" 
 >
 
 If the IP is blocked, you can get information on the blocking with the following call, otherwise, move on to the [next step](#unblockip).
@@ -138,12 +138,12 @@ If the IP is blocked, you can get information on the blocking with the following
 **ip**: Specify the IP block retrieved in the previous step with the netmask.<br>
 **ipSpamming**: Specify the previously retrieved IP in "blockedForSpam" state, for example.
 
-Here's an example result (in this instance block 122.122.122.122/28 and IP 122.122.122.123 were selected):
+Here's an example result (in this instance block 122.122.122.121/28 and IP 122.122.122.122 were selected):
 
 >
     time: 3600,
     date: "2022-08-29T17:42:50+01:00",
-    ipSpamming: "122.122.122.123",
+    ipSpamming: "122.122.122.122",
     state: "blockedForSpam" 
 >
 
@@ -212,7 +212,7 @@ More than 129 seconds later:
 >
     time: 3600,
     date: "2022-08-29T17:42:50+01:00",
-    ipSpamming: "122.122.122.123",
+    ipSpamming: "122.122.122.122",
     state: "unblocking" 
 >
 
