@@ -1,22 +1,22 @@
 ---
-title: 'Tutoriels - Utilisation logiciel FileZilla avec votre hebergement'
+title: 'Tutoriels - Utilisation du logiciel FileZilla avec votre hebergement'
 slug: mutualise-guide-utilisation-filezilla
 excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hebergement mutualise."
 section: 'FTP et SSH'
-order: 4
+order: 04
 ---
 
 **Dernière mise à jour le 06/09/2022**
 
 ## Objectif
 
-Vous retrouvez dans ce guide de l'aide concernant l'utilisation du logiciel FileZilla avec nos offres d'hébergements mutualisés.
+Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hebergement mutualise.
 
-Ce tutoriel vous permettra notamment de vous connecter à l'espace "FTP" de votre hébergement pour y créer/modifier/supprimer des fichiers.
+Vous pourrez notamment vous [connecter à l'espace "FTP"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement pour y créer/modifier/supprimer des fichiers.
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 > 
@@ -39,17 +39,17 @@ Pour en bénéficier, veuillez vous reporter au site : [filezilla-project.org](h
 
 La  **zone 1**  donne des informations sur l'état de la connexion, les transferts, les erreurs de connexions, etc. Généralement les informations qui y sont reprises ne sont pas utiles pour des personnes non initiées.
 
-La  **zone 2**  reprend l'arborescence pour arriver au dossier de votre site (ou des fichiers à transférer) sur votre ordinateur.
+La  **zone 2**  reprend l'arborescence de vos dossiers (ou des fichiers à transférer) présents en local sur votre ordinateur sur votre ordinateur.
 
 La  **zone 3**  reprend l'arborescence pour arriver au dossier où vous êtes actuellement sur le serveur.
 
-La  **zone 4**  liste le répertoire que vous avez ouvert sur votre ordinateur, reprenant le nom, la taille, le type et la date de modification des fichiers.
+La  **zone 4**  liste le répertoire que vous avez ouvert localement sur votre ordinateur, reprenant le nom, la taille, le type et la date de modification des fichiers.
 
 La  **zone 5**  liste le répertoire que vous avez ouvert sur le serveur, reprenant le nom, la taille, le type, la date de modification, les droits et propriétaire des fichiers.
 
-La  **zone 6**  indique la liste d'attente des fichiers qui vont être transférés (ou en cours de transfert) vers le serveur ou sur l'ordinateur.
+La  **zone 6**  indique la liste d'attente des fichiers qui vont être transférés (ou en cours de transfert) de votre ordinateur vers le serveur (ou inversement).
 
-La partie tout en haut de l'interface (sous l'encadré vert) reprend le nom d'hôte (serveur sur lequel vous êtes connecté), ainsi que le nom d'utilisateur du FTP, son mot de passe et le port utilisé.
+La partie **encadrée** tout en haut de l'interface reprend le nom d'hôte (serveur sur lequel vous souhaitez vous connecter), ainsi que le nom d'utilisateur du FTP, son mot de passe et le port utilisé.
 
 ## Utiliser FileZilla
 
@@ -58,18 +58,22 @@ Dans l'encadré vert tout en haut, afin d'établir la connexion au serveur dista
 
 |Information à renseigner|Détails|
 |---|---|
-|Serveur FTP|Il s'agit de l'adresse de serveur vous permettant d'accéder à votre espace de stockage.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à : « Serveur », « Adresse de serveur », « Hôte », « Nom d'hôte », ou encore « Host ».|
+|Serveur FTP|Il s'agit de l'adresse de serveur vous permettant d'accéder à votre espace de stockage.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à : « Serveur », « Adresse de serveur », « Hôte », « Nom d'hôte », ou encore « Host ».Pour les hébergements mutualisés, il a généralement cette forme : *ftp.clusterXXX.hosting.ovh.net* (où les "XXX" représentent le numéro de cluster où se trouve votre hébergement mutualisé)|
 |Login FTP|Il s'agit de l'identifiant vous permettant d'accéder à votre espace de stockage.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à : « Utilisateur », « Nom d'utilisateur », « Identifiant », « Login », ou encore « Username ».|
 |Mot de passe de l'utilisateur FTP|Il s'agit du mot de passe associé au login FTP.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».|
 |Port de connexion|Celui-ci est généralement complété automatiquement par le logiciel. Si vous devez le renseigner :<br><br>- utilisez le port « 21 » pour une connexion utilisant le protocole FTP ;<br>- utilisez le port « 22 » pour une connexion utilisant le protocole SFTP (dans le cas où celui-ci est activé).|
 
-Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors.
+Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie « Web Cloud », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors.
 
-Une fois que tout est correctement saisi, cliquez sur *Connexion rapide* afin d'établir la connexion au serveur.
+![hosting](images/loginFTP-SSH.png){.thumbnail}
+
+
+Une fois que tout est correctement saisi dans l'encadré **1** de l'image ci-dessous, cliquez sur *Connexion rapide* afin d'établir la connexion au serveur.
 
 
 ![hosting](images/1819.png){.thumbnail}
 
+Si la connexion a bien été effectuée avec succès, vous retrouvez le statut présent dans l'encadré *2* de l'image ci-dessus. Vous retrouvez également vos dossiers et fichiers déjà présents sur votre hébergement dans l'encadré **3**.
 
 ### Connexion SFTP
 Le SFTP (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocole similaire au FTP fonctionnant au dessus de SSH, sur le port 22. En plus d'établir une connexion sécurisée, il vous permettra de modifier des droits de fichiers que vous ne pouvez pas exécuter en étant connecté en FTP sur le port 21 par exemple.
