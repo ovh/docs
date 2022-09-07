@@ -35,6 +35,8 @@ Pour en bénéficier, veuillez vous reporter au site : [filezilla-project.org](h
 
 ### Interface
 
+![hosting](images/1818.png){.thumbnail}
+
 La  **zone 1**  donne des informations sur l'état de la connexion, les transferts, les erreurs de connexions, etc. Généralement les informations qui y sont reprises ne sont pas utiles pour des personnes non initiées.
 
 La  **zone 2**  reprend l'arborescence pour arriver au dossier de votre site (ou des fichiers à transférer) sur votre ordinateur.
@@ -48,10 +50,6 @@ La  **zone 5**  liste le répertoire que vous avez ouvert sur le serveur, repren
 La  **zone 6**  indique la liste d'attente des fichiers qui vont être transférés (ou en cours de transfert) vers le serveur ou sur l'ordinateur.
 
 La partie tout en haut de l'interface (sous l'encadré vert) reprend le nom d'hôte (serveur sur lequel vous êtes connecté), ainsi que le nom d'utilisateur du FTP, son mot de passe et le port utilisé.
-
-
-![hosting](images/1818.png){.thumbnail}
-
 
 ## Utiliser FileZilla
 
