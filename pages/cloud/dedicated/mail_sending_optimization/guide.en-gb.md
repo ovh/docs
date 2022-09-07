@@ -43,13 +43,13 @@ For further information on the SPF record, refer to the following page: <http://
 
 You can go even further by configuring the SPF record of a specific domain, or by specifying an IPv6 address. You can find out how to do this in our guide to [adding an SPF record](https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/).
 
-### Configure the DKIM record.
+### Configure the DKIM record
 
 By configuring the DKIM (DomainKeys Identified Mail) record, you add extra protection to prevent your emails from getting marked as spam. In simple terms, the DKIM is a signature that enables the sender’s domain to be authenticated.
 
 The authentication is carried out by a DKIM key that needs to be added in your DNS zone. There are different generators for DKIM keys, including: <http://dkimcore.org/tools/keys.html>. Please follow the instructions listed on your chosen generator website.
 
-### Configure the reverse IP.
+### Configure the reverse IP <a name="reverseip"></a>
 
 To further optimise email sending and lower the risk of your emails being blocked, you can also configure a reverse IP with your domain name.
 
@@ -92,7 +92,31 @@ Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.acti
  
 Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server.
 
-To do this, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) with Microsoft. 
+Before starting this procedure, make sure you have a [reverse IP](#reverseip) configured.<br>
+
+Next, you will need to sign the SNDS (Smart Network Data Services) and JMRP (Junk Mail Reporting Partner Program) contracts. To subscribe, create a free account at <https://postmaster.live.com/snds/JMRP.aspx?wa=wsignin1.0>.
+
+Once your account is created, you must fill in the following form: 
+
+**Company name**:
+
+**Contact email address**: (A valid email address where Microsoft can contact you)
+
+**Complaint feedback email address**: (A valid email address where you will receive spam complaints)
+
+Next, add your IP addresse(s) in the section `IP address or range`.
+
+When clicking on `Add new Network`, you will be asked to choose a contact email from their ISP to authorize the request.
+
+The **best practices** want the mail to be in the form: **abuse@mydomain.com**.
+
+Once the information is filled in, click on `Begin Setup` to transmit the request. Microsoft will then send you an `SNDS-JMRP Contract` email, and a second email to **mydomain.com**.
+
+Once the confirmations are approved, the subscription to JMRP/SNDS will be completed.
+
+Once this is done and if your IP appears to be blocked, you can then request to delist it via the [junkmail procedure](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062){.external}: (usually within 48H).
+
+For additional information, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656){.external} with Microsoft. 
 
 #### To a Gmail server
 
