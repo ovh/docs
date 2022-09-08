@@ -199,7 +199,7 @@ As seen using Redis cache you will see a performance gain for your CMS. It will 
 
 [OVHcloud documentation on managed Public Cloud Databases](https://docs.ovh.com/us/en/publiccloud/databases/)
 
-[Redis capabilities](https://docs.ovh.com/us/en/publiccloud/databases/redis/capabilities/)
+[Redis capabilities](https://docs.ovh.com/fr/fr/publiccloud/databases/redis/capabilities/)
 
 [How to connect to Redis with CLI](https://docs.ovh.com/us/en/publiccloud/databases/redis/connect-cli/)
 
