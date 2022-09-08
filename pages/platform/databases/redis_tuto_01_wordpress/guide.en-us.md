@@ -7,7 +7,7 @@ section: Redis - Tutorials
 order: 010
 ---
 
-**Last updated 22nd November 2021**
+**Last updated 08th September 2022**
 
 ## Objective
 
