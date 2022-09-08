@@ -6,7 +6,7 @@ section: Redis - Guides
 order: 030
 ---
 
-**Last updated 24th March 2022**
+**Last updated 08 september 2023**
 
 ## Objective
 
