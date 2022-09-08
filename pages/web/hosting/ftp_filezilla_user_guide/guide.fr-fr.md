@@ -21,6 +21,11 @@ Vous pourrez notamment vous [connecter à l'espace "FTP"](https://docs.ovh.com/f
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 > 
 
+## Prérequis
+
+- Disposer d'un hébergement mutualisé OVHcloud
+- Installer le logiciel Filezilla. Pour l'installer gratuitement, veuillez vous rendre sur le site : [filezilla-project.org](https://filezilla-project.org/download.php){.external}
+
 ## Généralités
 
 <center><img src="images/2400.png"></center>
@@ -30,8 +35,6 @@ Vous pourrez notamment vous [connecter à l'espace "FTP"](https://docs.ovh.com/f
 FileZilla est un logiciel disponible gratuitement sur plusieurs systèmes d'exploitations (Windows, MacOS, etc).
 
 Ce dernier vous donne notamment la possibilité de mettre en ligne votre site internet (ou simplement des fichiers) en vous permettant de vous [connecter à l'espace "FTP"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement.
-
-Pour l'installer et en bénéficier, veuillez vous reporter au site : [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
 ### L'interface <a name="interface"></a>
 
@@ -51,7 +54,7 @@ La **zone 6** indique la liste d'attente des fichiers qui vont être transféré
 
 La partie **encadrée** tout en haut de l'interface reprend le nom d'hôte (serveur sur lequel vous souhaitez vous connecter), ainsi que le nom d'utilisateur du **FTP** (**F**ile **T**ransfer **P**rotocol), son mot de passe et le port utilisé. Tous les paramètres sont disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 
-## Utiliser FileZilla
+## En pratique
 
 ### Connexion FTP
 
