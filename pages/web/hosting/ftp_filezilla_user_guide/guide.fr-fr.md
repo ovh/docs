@@ -6,13 +6,13 @@ section: 'FTP et SSH'
 order: 04
 ---
 
-**Dernière mise à jour le 06/09/2022**
+**Dernière mise à jour le 08/09/2022**
 
 ## Objectif
 
-Retrouvez ici un tutoriel sur l'utilisation du logiciel Filezilla avec votre hébergement mutualisé.
+Apprendre à utiliser le logiciel Filezilla avec votre hébergement mutualisé.
 
-Vous pourrez notamment vous [connecter à l'espace "FTP"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement pour y créer/modifier/supprimer des fichiers.
+Vous pourrez vous [connecter à l'espace "FTP"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement pour y créer/modifier/supprimer des fichiers.
 
 > [!warning]
 >
@@ -24,7 +24,7 @@ Vous pourrez notamment vous [connecter à l'espace "FTP"](https://docs.ovh.com/f
 ## Prérequis
 
 - Disposer d'un hébergement mutualisé OVHcloud
-- Installer le logiciel Filezilla. Pour l'installer gratuitement, veuillez vous rendre sur le site : [filezilla-project.org](https://filezilla-project.org/download.php){.external}
+- Installer le logiciel Filezilla. Pour l'installer gratuitement, rendez-vous sur le site : [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
 ## Généralités
 
@@ -34,25 +34,25 @@ Vous pourrez notamment vous [connecter à l'espace "FTP"](https://docs.ovh.com/f
 
 FileZilla est un logiciel disponible gratuitement sur plusieurs systèmes d'exploitations (Windows, MacOS, etc).
 
-Ce dernier vous donne notamment la possibilité de mettre en ligne votre site internet (ou simplement des fichiers) en vous permettant de vous [connecter à l'espace "FTP"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement.
+Ce dernier permet de mettre en ligne des fichiers ou votre site internet en vous [connectant à l'espace "FTP"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement.
 
 ### L'interface <a name="interface"></a>
 
 ![hosting](images/1818.png){.thumbnail}
 
-La **zone 1** donne des informations sur l'état de la connexion, les transferts, les erreurs de connexions, etc. La plupart des informations qui y sont présentes ne seront pas détaillées dans ce tutoriel. Si vous souhaitez en savoir plus sur le sujet, nous vous invitons à vous rendre sur la [documentation officielle de Filezilla](https://filezilla-project.org/){.external}.
+- **L'encadrée** reprend le nom d'hôte (serveur sur lequel vous souhaitez vous connecter), ainsi que le nom d'utilisateur du **FTP** (**F**ile **T**ransfer **P**rotocol), son mot de passe et le port utilisé. Tous les paramètres sont disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 
-La **zone 2** reprend l'arborescence de vos dossiers (ou de vos fichiers) à transférer, présents en local sur votre ordinateur.
+- **zone 1** donne des informations sur l'état de la connexion, les transferts, les erreurs de connexions, etc. La plupart des informations qui y sont présentes ne seront pas détaillées dans ce tutoriel. Si vous souhaitez en savoir plus sur le sujet, nous vous invitons à vous rendre sur la [documentation officielle de Filezilla](https://filezilla-project.org/){.external}.
 
-La **zone 3** reprend l'arborescence présente sur votre hébergement (serveur) lorsque vous êtes connecté à ce dernier. L'affichage dans cette zone se limite aux répertoires/dossiers, sous-répertoires/sous-dossiers et fichiers présents en amont et au même niveau que le répertoire/dossier dans lequel vous vous positionnez dans votre hébergement.
+- **zone 2** reprend l'arborescence de vos dossiers (ou de vos fichiers) à transférer, présents en local sur votre ordinateur.
 
-La **zone 4** liste le répertoire/dossier que vous avez ouvert localement sur votre ordinateur, reprenant le nom, la taille, le type et la date de modification des fichiers.
+- **zone 3** reprend l'arborescence présente sur votre hébergement (serveur) lorsque vous êtes connecté à ce dernier. L'affichage dans cette zone se limite aux répertoires/dossiers, sous-répertoires/sous-dossiers et fichiers présents en amont et au même niveau que le répertoire/dossier dans lequel vous vous positionnez dans votre hébergement.
 
-La **zone 5** liste le répertoire/dossier que vous avez ouvert sur votre hébergement (serveur).Ceci en reprenant les noms, les tailles, les types, les dates de modification, les droits et les propriétaires des fichiers.
+- **zone 4** liste le répertoire/dossier que vous avez ouvert localement sur votre ordinateur, reprenant le nom, la taille, le type et la date de modification des fichiers.
 
-La **zone 6** indique la liste d'attente des fichiers qui vont être transférés (ou en cours de transfert) de votre ordinateur vers le serveur (ou inversement).
+- **zone 5** liste le répertoire/dossier que vous avez ouvert sur votre hébergement (serveur).Ceci en reprenant les noms, les tailles, les types, les dates de modification, les droits et les propriétaires des fichiers.
 
-La partie **encadrée** tout en haut de l'interface reprend le nom d'hôte (serveur sur lequel vous souhaitez vous connecter), ainsi que le nom d'utilisateur du **FTP** (**F**ile **T**ransfer **P**rotocol), son mot de passe et le port utilisé. Tous les paramètres sont disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- **zone 6** indique la liste d'attente des fichiers qui vont être transférés (ou en cours de transfert) de votre ordinateur vers le serveur (ou inversement).
 
 ## En pratique
 
@@ -64,8 +64,8 @@ Sur la partie haute dans Filezilla et afin d'établir la connexion au serveur di
 
 |Information à renseigner|Détails|
 |---|---|
-|Serveur FTP|Il s'agit de l'adresse de serveur vous permettant d'accéder à votre espace de stockage.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à : « Serveur », « Adresse de serveur », « Hôte », « Nom d'hôte », ou encore « Host ».Pour les hébergements mutualisés, il a généralement cette forme : *ftp.clusterXXX.hosting.ovh.net* (où les "XXX" représentent le numéro de cluster où se trouve votre hébergement mutualisé)|
-|Login FTP|Il s'agit de l'identifiant vous permettant d'accéder à votre espace de stockage.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à : « Utilisateur », « Nom d'utilisateur », « Identifiant », « Login », ou encore « Username ».|
+|Hôte| Adresse du serveur permettant d'accéder à votre espace de stockage.<br><br> En fonction des logiciels, la dénomination peut ressembler à : « Serveur », « Adresse de serveur », « Serveur FTP », « Nom d'hôte », ou encore « Host ». Pour les hébergements mutualisés, il a généralement cette forme : *ftp.clusterXXX.hosting.ovh.net* (où les "XXX" représentent le numéro de cluster où se trouve votre hébergement mutualisé)|
+|Utilisateur|Il s'agit de l'identifiant vous permettant d'accéder à votre espace de stockage.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à : « Login FTP », « Nom d'utilisateur », « Identifiant », « Login », ou encore « Username ».|
 |Mot de passe de l'utilisateur FTP|Il s'agit du mot de passe associé au login FTP.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».|
 |Port de connexion|Celui-ci est généralement complété automatiquement par le logiciel. Si vous devez le renseigner :<br><br>- utilisez le port « 21 » pour une connexion utilisant le protocole FTP ;<br>- utilisez le port « 22 » pour une connexion utilisant le protocole SFTP (dans le cas où celui-ci est activé).|
 
