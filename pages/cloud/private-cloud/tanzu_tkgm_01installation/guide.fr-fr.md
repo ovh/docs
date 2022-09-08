@@ -167,7 +167,7 @@ Ajoutez ces informations dans **Networking**.
 * **IP Address** : `192.168.0.199`.
 * **Network CIDR Prefix** : `24`.
 * **Gateway** : `192.168.0.254`.
-* **Dns** : `1.1.1.1,1.0.0.1`.
+* **Dns** : `213.186.33.99`.
 
 Saisissez et confirmez le mot de passe dans **OS Credentials** ensuite cliquez sur `SUIVANT`{.action}.
 
