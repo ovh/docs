@@ -114,7 +114,7 @@ In case the user doesn't have the right privilege, you will get a *NOPERM* respo
 
 ## Go further
 
-[Redis capabilities and limitations](https://docs.ovh.com/us/en/publiccloud/databases/redis/capabilities/)
+[Redis capabilities and limitations](https://docs.ovh.com/fr/publiccloud/databases/redis/capabilities/)
 
 [Configuring vRack for Public Cloud](https://docs.ovh.com/us/en/public-cloud/public-cloud-vrack/)
 
