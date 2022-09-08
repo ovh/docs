@@ -1,6 +1,6 @@
 ---
 title: Ajouter un nom de domaine sur son service Exchange
-slug: ajouter-domaine-exchange
+slug: add-domain-
 excerpt: Découvrez comment ajouter un nom de domaine à votre service Exchange
 section: Premiers pas avec Exchange
 order: 4
@@ -53,7 +53,7 @@ Sur la fenêtre d'ajout de domaine, vous devrez choisir de :
 
 Une fois votre choix fait, cliquez sur le bouton `Suivant`{.action}.
 
-![Exchange](images/add_domain_exchange_step2.png#center){.thumbnail}
+![Exchange](images/add_domain_exchange_step2.png){.thumbnail}
 
 La fenêtre affiche désormais des informations concernant la configuration des modes.
 
@@ -110,22 +110,28 @@ Une fois les comptes totalement configurés, il ne vous reste plus qu’à les u
 
 Il est possible d'acquérir des licences Outlook dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et des licences Office 365 sur la page [https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/). Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
 
-### Supprimer un nom de domaine du service
+### Supprimer un nom de domaine d'une plateforme
 
-Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange ou E-mail Pro, il est necessaire de vérifier que celui-ci n'est pas lié à un ou plusieurs comptes. Dans ce cas il sera nécessaire de les supprimer.
+Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange ou E-mail Pro, il est necessaire de vérifier que celui-ci n'est pas lié à un ou plusieurs comptes e-mail. Dans ce cas il sera nécessaire d'**attacher ces comptes à un autre nom de domaine** sur votre plateforme ou de les **supprimer**.
 
 > [!warning]
 >
-> Avant de supprimer un compte e-mail et le nom de domaine sur votre plateforme, assurez-vous qu'ils ne soient pas utilisés. Si vous devez effectuer une sauvegarde des comptes e-mail que vous devez supprimer, vous pouvez vous appuyer sur notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/) 
+> Avant de supprimer des comptes e-mail, assurez-vous qu'ils ne soient pas utilisés. une sauvegarde de ces comptes sera peut-être nécessaire. Vous pouvez vous appuyer sur notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/), qui vous décrira comment exporter les données d'un compte depuis votre espace client ou un logiciel de messagerie.
 
-
-Dirigez-vous dans l'onglet `Domaine associés`{.action} de votre service, dans le tableau, vérifiez la colonne `Comptes`, celle-ci vous indiuqe le nombre de comptes associés au domaine de votre liste.
-
-![emailpro](images/add_domain_exchange_step6.png){.thumbnail}
-
-Si des comptes e-mail sont attachés au nom de domaine que vous devez supprimer de votre plateform, dirigez-vous vers l'onglet `Comptes e-mail`{.action}. À droite du compte à supprimer, cliquez sur le bouton `...`{.action}, puis `Réinitialiser ce compte`{.action} ou `Réinitialiser`{.action}
+Dirigez-vous dans l'onglet `Domaine associés`{.action} de votre plateforme, dans le tableau, regardez dans la colonne `Comptes`, celle-ci vous indique le nombre de comptes associés au domaine de votre liste.
 
 ![emailpro](images/add_domain_exchange_step6.png){.thumbnail}
+
+Si des comptes e-mail sont attachés au nom de domaine, vous avez 2 possibilités.
+
+- **Attacher les comptes à un autre nom de domaine**: Dirigez-vous vers l'onglet `Comptes e-mail`{.action}. À droite des comptes à modifier, cliquez sur le bouton `...`{.action}, puis `Modifier`{.action}.
+![emailpro](images/add_domain_exchange_step8.png){.thumbnail}
+Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
+![emailpro](images/add_domain_exchange_step9.png){.thumbnail}
+
+- **Supprimer les comptes de votre plateforme**: Dirigez-vous vers l'onglet `Comptes e-mail`{.action}. À droite du compte à supprimer, cliquez sur le bouton `...`{.action}, puis `Réinitialiser ce compte`{.action} ou `Réinitialiser`{.action}
+![emailpro](images/add_domain_exchange_step7.png){.thumbnail}
+
 
 ## Aller plus loin
 
