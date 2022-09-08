@@ -8,10 +8,14 @@ order: 01
 
 **Dernière mise à jour le 06/09/2022**
 
+## Prérequis
+
+- Disposer d'un hébergement mutualisé OVHcloud
+
 ## Objectif
 
-La sécurité de vos sites présents sur votre hébergement est primordiale.<br>
-Ce tutoriel a notamment pour  objectif de prévenir ou corriger d'éventuelles intrusions ou tentatives d'attaques DDoS (attaques par déni de service).
+Vous aider à sécuriser l'accès à vos sites du réseau extérieur.<br>
+Ce tutoriel a pour objectif de prévenir ou corriger d'éventuelles intrusions ou tentatives d'attaques DDoS (attaques par déni de service).
 
 Vous pouvez réaliser ceci grâce à un fichier « .htaccess », un fichier texte particulier, détecté par le serveur web (Apache), et qui permet de définir des règles spéciales sur un répertoire et l'ensemble de ses sous-répertoires.
 
@@ -42,43 +46,91 @@ Vous pouvez créer plusieurs fichiers « .htaccess » dans [l'espace FTP](https:
 Plusieurs règles sont disponibles afin de bloquer les accès à votre hébergement via le « .htaccess ». Soyez vigilant sur la syntaxe et sur les paramètres que vous bloquez, afin de ne pas vous retrouver bloqué lors de la consultation de vos sites et/ou scripts hébergés.<br>
 En cas d'erreur, vous pouvez toujours vous connecter à [l'espace FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement pour corriger la situation. 
 
+> [!primary]
+>
+> Les hébergements mutualisés fonctionnent actuellement avec **Apache 2.4**. Depuis la version **Apache 2.3**, des variables ont été implémentées et la syntaxe de rédaction sur les restrictions/autorisations d'accès ont évoluées.
+>
+> Du fait que l'ancienne syntaxe est très utilisé, celle-ci est toujours active sur nos infrastructures. Cependant, celle-ci est considérée comme obsolète par *Apache* et pourrait dans prochainement ne plus être disponible. C'est pour cela que vous trouverez ci-après des exemples avec les deux syntaxes.
+>
+> Pour plus de détails sur la nouvelle syntaxe, vous pouvez consulter les pages officielles suivantes :
+>
+> - [Documentation sur le contrôle d'accès Apache 2.4](https://httpd.apache.org/docs/2.4/fr/howto/access.html)
+> - [Documentation sur le module mod_authz_core Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html)
+>
+
 #### Bloquer une IP
 
-Pour bloquer une adresse IP spécifique, insérez la ligne suivante dans votre fichier « .htaccess » :
+Pour bloquer une adresse IP spécifique, insérez lA ligne suivante dans votre fichier « .htaccess » :
 
+*Syntaxe historique* : 
 ```bash
 Deny from IP_address
 ```
 
+ *Syntaxe à partir d'Apache 2.3* :
+```bash
+<RequireAll>
+Require all granted
+Require not ip IP_address
+</RequireAll>
+```
+
 - *Exemple* : si vous souhaitez bloquer l'adresse IP 192.168.1.2, vous devrez écrire la ligne suivante :
 
+*Syntaxe historique* : 
 ```bash
 Deny from 192.168.1.2
+```
+
+ *Syntaxe à partir d'Apache 2.3* :
+```bash
+<RequireAll>
+Require all granted
+Require not ip 192.168.1.2
+</RequireAll>
 ```
 
 #### Bloquer une plage d'IPs
 
 Pour bloquer une plage d'adresses IP, insérez la ligne suivante dans votre fichier « .htaccess » :
 
+*Syntaxe historique* :
 ```bash
 Deny from IP_range
 ```
 
+*Syntaxe à partir d'Apache 2.3* :
+```bash
+<RequireAll>
+Require all granted
+Require not ip IP_range
+</RequireAll>
+```
+
 *Exemple* : si vous souhaitez bloquer toutes les IPs en 192.168.x.x, vous devrez écrire la ligne suivante :
 
+*Syntaxe historique* :
 ```bash
 Deny from 192.168
+```
+
+*Syntaxe à partir d'Apache 2.3* :
+```bash
+<RequireAll>
+Require all granted
+Require not ip 192.168
+</RequireAll>
 ```
 
 #### Bloquer un domaine
 
 Certains domaines peuvent accéder à votre hébergement via des redirections ou des requêtes.
 
-Pour bloquer un domaine, insérez la ligne suivante dans votre fichier « .htaccess » :
+Pour bloquer un domaine, insérez l'une des lignes suivantes dans votre fichier « .htaccess » :
 
 ```bash
 Deny from domain
-```
+ ```
 
 - *Exemple* : si vous souhaitez bloquer le domaine domain.tld, vous devrez écrire la ligne suivante :
 
