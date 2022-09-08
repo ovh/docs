@@ -48,7 +48,7 @@ La configuration d'un champ DKIM (DomainKeys Identified Mail) apporte une protec
 
 Cette authentification s'effectue par une clef DKIM à ajouter dans votre zone DNS. Vous trouverez différents générateurs de clefs DKIM, dont <http://dkimcore.org/tools/keys.html>. Veillez à bien suivre les indications fournies sur le site du générateur de votre choix.
 
-### Configurer le *reverse IP*
+### Configurer le *reverse IP* <a name="reverseip"></a>
 
 Toujours dans le but d'optimiser l'envoi et de réduire les risques de blocage de vos e-mails, un *reverse IP* doit être configuré avec votre nom de domaine.
 
@@ -90,6 +90,34 @@ Entrez votre nom de domaine dans la section `Reverse DNS` et cliquez sur `Valide
 #### Vers un serveur Microsoft (Outlook, etc...)
  
 Microsoft utilise une politique de liste blanche. Cela signifie qu'au départ, tout serveur se trouve sur une liste noire et une procédure spécifique est nécessaire pour faire valider votre serveur e-mail.
+
+Avant de commencer la procédure de Whitelist de votre IP, assurez-vous que vous un reverse[#reverseip] de configuré sur votre IP (pas le reverse par défaut d'OVHcloud)
+
+Ensuite, il vous faut signer les contrats SNDS (Smart Network Data Services) et JMRP (Junk Mail Reporting Partner Program)
+
+Pour souscrire gratuitement au programme, il suffit de créer un compte JMRP/SNDS à l'adresse suivante :
+<https://postmaster.live.com/snds/JMRP.aspx?wa=wsignin1.0>
+
+Une fois le compte activé, vous devez renseigner le formulaire suivant :
+
+**Company name** : (Nom de votre compagnie)
+
+**Contact email address** : (Un courriel valide où Microsoft peut vous contacter)
+
+**Complaint feedback email address** : (Un courriel valide où vous allez recevoir les plaintes de spam)
+
+Puis ajouter vos adresses IP dans la section `IP address or range`.
+
+En cliquant sur `Add new Network`, il vous sera demandé de choisir un courriel de contact de son ISP pour autoriser la demande.
+
+Les **bests practices** veulent que le mail soit sous la forme : **abuse@mondomaine.com**
+
+Une fois les informations renseignées, il faut cliquer sur `Begin Setup` pour transmettre la demande. Microsoft va alors envoyer un courriel `SNDS-JMRP Contract`, puis un second courriel à **mondomaine.com**.
+
+Une fois les confirmations approuvées, la souscription à JMRP/SNDS sera terminée.
+
+Une fois ceci effectué et si l'IP apparaît comme bloquée, vous pourrez alors demander de délistage de ses IPs via la procédure junkmail : (généralement sous 48H)
+https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062
 
 Pour ce faire, veuillez ouvrir une [demande d'assistance](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) auprès de Microsoft.
 

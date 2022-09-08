@@ -92,7 +92,7 @@ Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.acti
  
 Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server.
 
-Before starting this procedure, make sure you have a [reverse IP](#reverseip) configured.<br>
+Before starting the procedure to whitelist your IP, make sure you have a [reverse IP](#reverseip) configured.<br>
 
 Next, you will need to sign the SNDS (Smart Network Data Services) and JMRP (Junk Mail Reporting Partner Program) contracts. To subscribe, create a free account at <https://postmaster.live.com/snds/JMRP.aspx?wa=wsignin1.0>.
 
