@@ -34,14 +34,17 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
     - 8 Go de mémoire, 4 vCPU et 250 Go de stockage pour la machine virtuelle **bootstrap**.
     - 16 Go de mémoire, 4 vCPU, 40 Go de stockage par nœud Kubernetes (Il faut 6 nœuds pour une installation du cluster d'administration en mode production et 6 nœuds par cluster de **Workload** dans le même mode).
     
-
 ## En pratique
 
-Nous allons installer **VMware Tanzu Kubernetes Grid** sur un cluster **Hosted Private Cloud Powered by VMware** et utilser le  VLAN10 avec ces paramètres :
+Nous allons installer **VMware Tanzu Kubernetes Grid** sur un cluster **Hosted Private Cloud Powered by VMware** et utiliser le VLAN 10 avec ces paramètres :
 
 * **Lan** : `192.168.0.0/24`.
 * **Etendue DHCP** : `192.168.0.50 -> 192.168.0.100`.
 * **Passerelle** : `192.168.0.254`.
+
+> [!primary]
+> Ces informations sont données à titre d'exemple il est tout à fait possible d'utiliser une autre étendue et un autre VLAN
+>
 
 ### Importation du modèle OVA pour **Tanzu KUBERNETES Grid** dans votre infrastructure
 

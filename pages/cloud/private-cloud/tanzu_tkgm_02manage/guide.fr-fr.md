@@ -40,6 +40,7 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 Nous allons déployer un cluster de workload sur un cluster d'administration **Tanzu Kubernetes Grid**. et ajouter une application.
 
 
+
 ### Déploiement d'un cluster de *Workload*
 
 A partir de la machine virtuelle **Bootstrap** nous allons créer un cluster de *Workload* dans lequel il sera possible de déployer des applications.
