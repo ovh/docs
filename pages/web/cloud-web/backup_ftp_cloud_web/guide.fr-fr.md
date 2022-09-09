@@ -29,6 +29,51 @@ Votre Cloud Web dispose d'un espace de stockage dans lequel vous pouvez héberge
 
 ## En pratique
 
+### Sauvegardes disponibles
+
+Le Cloud Web peut mettre à disposition jusqu'à 4 dates de sauvegardes automatiques :
+
+- le jour même, effectuée après 0 h 00.
+- la veille, effectuée après 0 h 00.
+- l’avant-veille, effectuée après 0 h 00.
+- le dimanche précédent, effectuée après 01 h 00.
+
+Seuls les sauvegardes citées ci-dessus pourront être proposée par OVHcloud. Sous réserve que votre Cloud Web existait déjà aux dates indiquées et sous réserve des disponibilités de l'infrastructure au moment de la demande de la sauvegarde.
+
+### Générer la sauvegarde
+
+Contrairement aux hébergements mutualisés OVHcloud, il est impossible de faire une restauration FTP "en un clic" depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+
+La sauvgarde est générée puis envoyée par mail à l'adresse mail associée à l'identifiant client "Administrateur" du Cloud Web.
+
+Pour générer la sauvegarde, connectez-vous sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external},rendez-vous dans la partie "Web Cloud", cliquez sur `Hébergements`{.action}, puis sur le Cloud Web concerné. Sélectionnez l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Générer une sauvegarde`{.action} à droite.
+
+![backupftpcw](images/GenerateABackup.png){.thumbnail}
+
+Dans la fenêtre qui s'ouvre, sélectionnez l'une des sauvegardes disponibles puis cliquez sur `Suivant`{.action}.
+
+![backupftpcw](images/GenerateABackup2.png){.thumbnail}
+
+Une seconde fenêtre apparaît en vous précisant que le fichier de sauvegarde vous sera envoyé par e-mail et qu'aucune restauration automatique sur votre Cloud Web ne sera faite par OVHcloud :
+
+![backupftpcw](images/GenerateABackup3.png){.thumbnail}
+
+Il ne vous reste plus qu'à `confirmer`{.action} votre demande.
+
+Si la génération de la sauvegarde est bien lancée, vous devez visualiser l'encard suivant dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} :
+
+![backupftpcw](images/BackupInProgress.png){.thumbnail}
+
+### Récupérer la sauvegarde
+
+Une fois la génération de la sauvegarde finalisée, vous recevez un mail sur l'adresse mail associée à l'identifiant "Administrateur" de votre Cloud Web. Ce dernier contient un lien de téléchargement valable 9 jours à compter de la réception du mail :
+
+![backupftpcw](images/mailBackup.png){.thumbnail}
+
+Le fichier ainsi téléchargé est au format *.tar.gz*.
+
+### Restaurer votre sauvegarde
+
 
 
 ## Aller plus loin
