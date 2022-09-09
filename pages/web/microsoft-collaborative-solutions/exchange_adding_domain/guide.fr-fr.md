@@ -1,24 +1,23 @@
 ---
-title: Ajouter un nom de domaine sur son service Exchange
-slug: add-domain-
-excerpt: Découvrez comment ajouter un nom de domaine à votre service Exchange
+title: Ajouter un nom de domaine sur une plateforme e-mail
+slug: ajouter-domaine-exchange
 section: Premiers pas avec Exchange
 order: 4
 ---
 
-**Dernière mise à jour le 06/01/2022**
+**Dernière mise à jour le 09/09/2022**
 
 ## Objectif
 
-Ajouter un nom de domaine sur un service Exchange est indispensable afin de pouvoir utiliser vos comptes inclus dans ce dernier. Il est également possible d'ajouter plusieurs noms de domaine à un service Exchange.
+Ajouter un nom de domaine sur un service Exchange est indispensable afin de pouvoir utiliser vos comptes inclus dans ce dernier. Il est également possible d'ajouter plusieurs noms de domaine à un service Exchange ou Email Pro.
 
-**Découvrez comment ajouter un nom de domaine à votre service Exchange.**
+**Découvrez comment ajouter un nom de domaine à votre service plateforme Exchange ou Email Pro.**
 
 ## Prérequis
 
 - Disposer d'une solution [Exchange](https://www.ovhcloud.com/fr/emails/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)).
 - Disposer d'un ou plusieurs noms de domaine.
-- Être en mesure de pouvoir modifier la configuration de votre nom de domaine ([zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)).
+- Être en mesure de modifier la configuration de votre nom de domaine ([zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
@@ -40,10 +39,10 @@ Pour ajouter un nom de domaine, cliquez sur l'onglet `Domaine associés`{.action
 
 > [!warning]
 >
-> Toutes les adresses créées sur votre service e-mail e seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander une nouvelle [solution Exchange](https://www.ovhcloud.com/fr/emails/) pour le ou les noms de domaine concernés.
+> Toutes les adresses créées sur votre service e-mail seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander une nouvelle [solution Exchange ou Email Pro](https://www.ovhcloud.com/fr/emails/) pour le ou les noms de domaine concernés.
 >
 
-![Exchange](images/add_domain_exchange_step1.png){.thumbnail}
+![Add Domain](images/add_domain_exchange_step1.png){.thumbnail}
 
 Sur la fenêtre d'ajout de domaine, vous devrez choisir de :
 
@@ -53,7 +52,7 @@ Sur la fenêtre d'ajout de domaine, vous devrez choisir de :
 
 Une fois votre choix fait, cliquez sur le bouton `Suivant`{.action}.
 
-![Exchange](images/add_domain_exchange_step2.png){.thumbnail}
+![Add Domain](images/add_domain_exchange_step2.png){.thumbnail}
 
 La fenêtre affiche désormais des informations concernant la configuration des modes.
 
@@ -73,7 +72,7 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 
 Cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
-![Exchange](images/add_domain_exchange_step3.png){.thumbnail}
+![Add Domain](images/add_domain_exchange_step3.png){.thumbnail}
 
 **Si vous avez sélectionné un nom de domaine géré par OVHcloud dans la liste**, la configuration de ce dernier peut être réalisée automatiquement. Pour cela, cochez les cases et cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
@@ -112,26 +111,31 @@ Il est possible d'acquérir des licences Outlook dans l'[espace client OVHcloud]
 
 ### Supprimer un nom de domaine d'une plateforme
 
-Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange ou E-mail Pro, il est necessaire de vérifier que celui-ci n'est pas lié à un ou plusieurs comptes e-mail. Dans ce cas il sera nécessaire d'**attacher ces comptes à un autre nom de domaine** sur votre plateforme ou de les **supprimer**.
+Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange ou E-mail Pro, il est nécessaire de vérifier que celui-ci n'est pas lié à un ou plusieurs comptes e-mail. Dans ce cas il sera nécessaire d'**attacher ces comptes à un autre nom de domaine** sur votre plateforme ou de les **supprimer**.
 
 > [!warning]
 >
-> Avant de supprimer des comptes e-mail, assurez-vous qu'ils ne soient pas utilisés. une sauvegarde de ces comptes sera peut-être nécessaire. Vous pouvez vous appuyer sur notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/), qui vous décrira comment exporter les données d'un compte depuis votre espace client ou un logiciel de messagerie.
+> Avant de supprimer des comptes e-mail, assurez-vous qu'ils ne soient pas utilisés. Une sauvegarde de ces comptes sera peut-être nécessaire. Vous pouvez vous appuyer du guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/), qui vous décrira comment exporter les données d'un compte depuis votre espace client ou un logiciel de messagerie.
 
-Dirigez-vous dans l'onglet `Domaine associés`{.action} de votre plateforme, dans le tableau, regardez dans la colonne `Comptes`, celle-ci vous indique le nombre de comptes associés au domaine de votre liste.
+Dirigez-vous dans l'onglet `Domaine associés`{.action} de votre plateforme.Depuis le tableau, la colonne `Comptes` vous indique le nombre de comptes associés aux noms de domaine de votre liste.
 
 ![emailpro](images/add_domain_exchange_step6.png){.thumbnail}
 
-Si des comptes e-mail sont attachés au nom de domaine, vous avez 2 possibilités.
+Si des comptes e-mail sont attachés au nom de domaine que vous souhaitez détacher, vous avez 2 possibilités.
 
 - **Attacher les comptes à un autre nom de domaine**: Dirigez-vous vers l'onglet `Comptes e-mail`{.action}. À droite des comptes à modifier, cliquez sur le bouton `...`{.action}, puis `Modifier`{.action}.
-![emailpro](images/add_domain_exchange_step8.png){.thumbnail}
-Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
-![emailpro](images/add_domain_exchange_step9.png){.thumbnail}
+    ![emailpro](images/add_domain_exchange_step8.png){.thumbnail}
+    Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
+    ![emailpro](images/add_domain_exchange_step9.png){.thumbnail}
 
 - **Supprimer les comptes de votre plateforme**: Dirigez-vous vers l'onglet `Comptes e-mail`{.action}. À droite du compte à supprimer, cliquez sur le bouton `...`{.action}, puis `Réinitialiser ce compte`{.action} ou `Réinitialiser`{.action}
-![emailpro](images/add_domain_exchange_step7.png){.thumbnail}
+    ![emailpro](images/add_domain_exchange_step7.png){.thumbnail}
 
+Une fois la réattribution des comptes à un autre nom de domaine ou leur réinitialisation, il est maintenant possible de procéder à la suppression du nom de domaine. 
+
+Depuis l'onglet `Domaine associés`{.action} de votre plateforme, cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Supprimer ce domaine`{.action}.
+
+![emailpro](images/add_domain_exchange_step10.png){.thumbnail}
 
 ## Aller plus loin
 
