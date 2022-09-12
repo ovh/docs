@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 08/09/2022**
+**Dernière mise à jour le 12/09/2022**
 
 ## Objectif
 
@@ -48,7 +48,7 @@ Nous allons installer **VMware Tanzu Kubernetes Grid** sur un cluster **Hosted P
 
 A la fin de l'installation vous sept machines virtuelles supplémentaires seront visibles sur votre cluster VMware, six pour le fonctionnement du cluster d'administration **TKG** et une autre pour son administration.
 
-![04 admin cluster diagram](images/04-admin-cluster-diagram01.png){.thumbnail}
+![00 admin cluster diagram](images/00-admin-cluster-diagram01.png){.thumbnail}
 
 ### Importation du modèle OVA pour **Tanzu KUBERNETES Grid** dans votre infrastructure
 
@@ -316,6 +316,8 @@ Le déploiement du cluster **Tanzu Kubernetes Grid** est lancé veuillez attendr
 Toutes les étapes du déploiement apparaissent en verts, ce qui signifie que le déploiement est termniné.
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
+
+Allez sur l'interface vCenter et 
 
 
 
