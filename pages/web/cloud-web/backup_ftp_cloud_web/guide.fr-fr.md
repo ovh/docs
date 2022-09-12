@@ -74,11 +74,18 @@ Le fichier ainsi téléchargé est au format *.tar.gz*.
 
 ### Restaurer votre sauvegarde
 
+Une fois vos fichiers téléchargés, vous pourrez vous [connecter à votre espace FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide d'un logiciel FTP tel que [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) puis remplacer les fichiers que vous souhaitez remplacer par ceux récupérés.
 
+> [!success]
+>
+> Utilisez bien les ports indiqués dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} pour les connexions en SFTP et SSH car le port 22 ne sera pas fonctionnel pour votre Cloud Web.
+>
 
 ## Aller plus loin
 
 [Se connecter à l’espace de stockage de son hébergement Web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external}
+
+[Se connecter à l'aide du logiciel Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
