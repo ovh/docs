@@ -21,6 +21,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 >
 
 ## Prérequis
+
 - Avoir souscrit une offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à l’interface de gestion vSphere.
@@ -32,7 +33,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 > Il est possible que votre cluster **Hosted Private Cloud powered by VMware** ne soit pas en version 7.0 Update 2. Dans ce cas, contactez le support pour faire évoluer votre infrastructure.
 >
 >
-> Les options de chiffrement **vSAN Data-At-Rest Encryption** et  **vSAN Data-In-Transit Encryption** ne sont pas supportées par défaut sur les clusters vSAN. Si toutefois vous souhaitez mettre en place ces options veuillez contacter votre **Technical Account Manager**.  
+> Les options de chiffrement **vSAN Data-At-Rest Encryption** et  **vSAN Data-In-Transit Encryption** ne sont pas supportées par défaut sur les clusters vSAN. Si toutefois vous souhaitez mettre en place ces options, veuillez contacter votre **Technical Account Manager**.
 >
 
 ## Présentation
