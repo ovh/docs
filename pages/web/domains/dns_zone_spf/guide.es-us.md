@@ -202,7 +202,7 @@ Para la solución Private Exchange, es necesario indicar las direcciones IP del 
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.33.444 ~all"
 ```
 
-Desde el registro anterior, puede añadir el argumento `include:mx.ovh.com` si utiliza [una solución de correo en alojamiento compartido](#ovhcloudspfvalue), obtendrá el valor:
+Si también utiliza [una solución de correo en alojamiento compartido](#ovhcloudspfvalue), puede añadir el argumento `include:mx.ovh.com` al registro anterior, que proporciona el siguiente valor:
 
 ```bash
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
