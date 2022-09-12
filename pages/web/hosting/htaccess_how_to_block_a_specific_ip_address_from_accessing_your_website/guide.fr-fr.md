@@ -23,7 +23,11 @@ Vous pouvez créer plusieurs fichiers « .htaccess » dans [l'espace FTP](https:
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
-> 
+>
+
+## Prérequis
+
+- Disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
 
 ## Prérequis
 
@@ -76,7 +80,6 @@ Require all granted
 Require not ip IP_address
 </RequireAll>
 ```
-
 
 - **Exemple** : si vous souhaitez bloquer l'adresse IP 192.168.1.2, vous devrez écrire l'un des deux codes suivants :
 
@@ -141,7 +144,7 @@ Pour bloquer un domaine, insérez l'un des deux codes suivants dans votre fichie
 
 ```bash
 Deny from domain
- ```
+```
 
 **Syntaxe à partir d'Apache 2.3** :
 
