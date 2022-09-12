@@ -21,7 +21,7 @@ order: 02
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir un identifiant actif dans vSphere.
-- Avoir déployé le cluster d'administration **TKG**. Vous pouvez vous aider de guide [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation)
+- Avoir déployé le cluster d'administration **TKG** à l'aide de ce guide [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation)
 - Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
 - Disposer de ces ressources :
     - 16 Go de mémoire, 4 vCPU, 40 Go de stockage par nœud Kubernetes (Il faut 6 nœuds par cluster de **Workload** dans le même mode).
@@ -36,6 +36,8 @@ A la fin de l'installation vous aurez six nouvelles machines virtuelles en plus 
 ![00 Cluster administration & workload Diagram01](images/00-tkc-mc-wc01.png){.thumbnail}
 
 ### Déploiement d'un cluster de *Workload*
+
+Le cluster de *Workload* doit être sur le même réseau que le cluster d'administration. 
 
 A partir de la machine virtuelle **Bootstrap** nous allons créer un cluster de *Workload* dans lequel il sera possible de déployer des applications.
 
@@ -110,8 +112,9 @@ tanzu package install kubevip -p kubevip.terasky.com -v 0.3.9 -f values.yaml
 
 ### Installation d'une application
 
-Lancez ces commandes pour installer une nouvelle application dans le cluster de **Workload** à partir de la machine virtuelle de **Bootstrap**.
+A titre d'exemple nous allons déployer une application nommée yelb qui utilise 4 pods dont un qui sera disponible via le load-balancer kubevip. vous trouverez plus d'informations sur cet exemple à cette adresse [Application YELB](https://github.com/mreferre/yelb).
 
+Lancez ces commandes pour installer une nouvelle application dans le cluster de **Workload** à partir de la machine virtuelle de **Bootstrap**.
 
 ```bash
 # Création d'un espace de nom pour cette application
@@ -132,11 +135,6 @@ Dans cet exemple le site WEB est accessible avec l'adresse **192.168.0.223** sur
 Au travers de la console **Bootstrap** utilisez le navigateur **WEB** pour vous connecter sur l'URL `http://192.168.0.223`.
 
 ![02 Verify Application 02](images/02-verify-application-02.png){.thumbnail}
-
-En plus des 6 machines virtuelles pour le cluster d'administration, 6 autres machines virtuelles sont visible pour le cluster de **Workload**.
-
-![02 Cluster administration & workload Diagram01](images/02-tkc-mc-wc01.png){.thumbnail}
-
 
 ## Aller plus loin
 

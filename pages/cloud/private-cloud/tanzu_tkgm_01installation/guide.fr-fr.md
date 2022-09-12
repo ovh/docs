@@ -1,7 +1,7 @@
 ---
 title: Installer Tanzu Kubernetes Grid
 slug: tanzu-tkgm-installation
-excerpt: Intégrer Tanzu Kubernetes Grid à votre infrastructure OVHcloud
+excerpt: Intégrer Tanzu Kubernetes Grid à votre infrastructure **Private Cloud Powered by VMware**
 section: Tanzu
 order: 02
 ---
@@ -43,10 +43,10 @@ Nous allons installer **VMware Tanzu Kubernetes Grid** sur un cluster **Hosted P
 * **Passerelle** : `192.168.0.254`.
 
 > [!primary]
-> Ces informations sont données à titre d'exemple il est tout à fait possible d'utiliser une autre étendue et un autre VLAN
+> Ces informations sont données à titre d'exemple il est tout à fait possible d'utiliser une autre étendue et un autre VLAN.
 >
 
-A la fin de l'installation vous aurez sept machines virtuelles supplémentaires sur votre cluster VMware, six pour le fonctionnement du cluster d'administration **TKG** et une autre pour son administration.
+A la fin de l'installation sept machines virtuelles supplémentaires seront sur votre cluster VMware, six pour le fonctionnement du cluster d'administration **TKG** et une autre pour son administration.
 
 ![00 admin cluster diagram](images/00-admin-cluster-diagram01.png){.thumbnail}
 
@@ -123,8 +123,6 @@ Allez dans `Machines virtuelles (et modèles)`{.action} pour voir le modèle cr�
 
 ### Installation de la machine virtuelle **Bootstrap** fourni par OVHcloud
 
-Suivez ces instructions pour déployer la machine virtuelle **Bootstrap**. 
-
 Cette machine virtuelle a été créée par OVHcloud à partir de cette documentation [Installation manuelle de l'outil CLI pour le déploiement de **Tanzu Kubernetes GRID**](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html).
 
 Télécharger le modèle OVA de cette machine virtuelle à partir de cette adresse [Ubuntu & TKGm with Gnome](https://plik.fromsync.net/file/kHp0z2X3lpTJi3RB/4M3KLcF9nJLT9Emm/Ubuntu-22.04_TKGm-1.5.4_with_x.ova).
@@ -185,7 +183,7 @@ Faites un clic droit sur la `Machine virtuelle créée`{.action} allez dans `Ali
 
 ![02 Add Bootstrapvm 12](images/02-add-bootstrap-vm-from-ova12.png){.thumbnail}
 
-Il est possible d'utiliser la console avec l'interface graphique mais la machine virtuelle est aussi disponible en SSH.
+La machine virtuelle démarrée est accessible via la console avec l'interface graphique ou en **SSH**.
 
 Positionnez-vous sur la `Machine virtuelle créée`{.action} et cliquez sur `LANCER LA CONSOLE WEB`{.action}.
 
@@ -223,7 +221,7 @@ tanzu management-cluster create --ui --bind 192.168.0.199:8080
 ```
 > [!primary]
 >
-> Lorsque vous lancez cette commande depuis la console linux avec l'interface graphique, le navigateur WEB se lance, cependant si vous utilisez une connexion ssh il faut utiliser une autre machine virtuelle qui a accès au VLAN 10 avec une interface graphique et un navigateur web et utiliser l'URL `https://192.168.0.199:8080`.
+> Lorsque vous lancez cette commande depuis la console linux avec l'interface graphique, le navigateur WEB se lance et se connecte à l'adresse `https://192.168.0.199:8080`, cependant si vous utilisez une connexion en **ssh** il faut utiliser une autre machine virtuelle qui a accès via un navigateur WEB à l'adresse `https://192.168.0.199:8080`.
 >
 
 ![03 Create TKG CLUSTER 02](images/03-create-tkg-cluster02.png){.thumbnail}
@@ -317,7 +315,7 @@ Le déploiement du cluster **Tanzu Kubernetes Grid** est lancé veuillez attendr
 
 ![03 Create TKG CLUSTER 18](images/03-create-tkg-cluster18.png){.thumbnail}
 
-Toutes les étapes du déploiement apparaissent en verts, ce qui signifie que le déploiement est termniné.
+Toutes les étapes du déploiement apparaissent en verts, ce qui signifie que le déploiement est terminé.
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
