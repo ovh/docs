@@ -6,7 +6,7 @@ section: DNS et zone DNS
 order: 5
 ---
 
-**Dernière mise à jour le 28/07/2022**
+**Dernière mise à jour le 12/09/2022**
 
 ## Objectif
 
