@@ -185,11 +185,13 @@ Faites un clic droit sur la `Machine virtuelle créée`{.action} allez dans `Ali
 
 ![02 Add Bootstrapvm 12](images/02-add-bootstrap-vm-from-ova12.png){.thumbnail}
 
+Il est possible d'utiliser la console avec l'interface graphique mais la machine virtuelle est aussi disponible en SSH.
+
 Positionnez-vous sur la `Machine virtuelle créée`{.action} et cliquez sur `LANCER LA CONSOLE WEB`{.action}.
 
 ![02 Add Bootstrapvm 13](images/02-add-bootstrap-vm-from-ova13.png){.thumbnail}
 
-La console de la machine virtuelle apparait.
+L'interface graphique de la machine virtuelle linux apparait.
 
 ![02 Add Bootstrapvm 14](images/02-add-bootstrap-vm-from-ova14.png){.thumbnail}
 
@@ -219,8 +221,10 @@ Restez sur la console et lancer cette commande :
 ```bash
 tanzu management-cluster create --ui --bind 192.168.0.199:8080
 ```
-
-Le navigateur WEB va se lancer.
+> [!primary]
+>
+> Lorsque vous lancez cette commande depuis la console linux avec l'interface graphique, le navigateur WEB se lance, cependant si vous utilisez une connexion ssh il faut utiliser une autre machine virtuelle qui a accès au VLAN 10 avec une interface graphique et un navigateur web et utiliser l'URL `https://192.168.0.199:8080`.
+>
 
 ![03 Create TKG CLUSTER 02](images/03-create-tkg-cluster02.png){.thumbnail}
 
@@ -328,6 +332,8 @@ Allez sur l'interface vCenter pour voir les sept machines virtuelles créées
 [Présentation de VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
 [Documentation de VMware Tanzu Kubenetes Grid](https://https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
+
+[Administrer un cluster TKG](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management)
 
 [Installation manuelle de l'outil CLI pour le déploiement de Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 

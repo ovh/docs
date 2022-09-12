@@ -1,30 +1,22 @@
 ---
-title: Administrer Tanzu Management Cluster
+title: Administrer Tanzu Management Cluster Grid
 slug: tanzu-tkgm-management
-excerpt: Ajouter un cluster de Workload et une appplication sur votre cluster **Tkg**
+excerpt: Administration de TKG pour créér un cluster de *Workload* et ajouter des applications dans ce cluster.
 section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 08/09/2022**
+**Dernière mise à jour le 12/09/2022**
 
 ## Objectif
 
-**Ce guide vous permet d'installer Tanzu Kubernetes Grid sur votre cluster Hosted Private Cloud Powered by VMware**
+**Ce guide vous permet de créér un cluster de *Workload* et ajouter des applications dans ce cluster.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
-
-## Présentation
-
-VMware Tanzu Kubernetes Grid est une plate-forme Kubernetes fournie par **VMware** et maintenue dans le cadre du support **Hosted Private Cloud Powered by VMware**.
-
-Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter de ses fonctionnalités et de son évolutivité.
-
-## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
@@ -39,7 +31,9 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 
 Nous allons déployer un cluster de workload sur un cluster d'administration **Tanzu Kubernetes Grid**. et ajouter une application.
 
+A la fin de l'installation vous aurez six nouvelles machines virtuelles en plus des sept qui sont necessaire au fonctionnement du cluster de management. 
 
+![00 Cluster administration & workload Diagram01](images/00-tkc-mc-wc01.png){.thumbnail}
 
 ### Déploiement d'un cluster de *Workload*
 
@@ -73,11 +67,17 @@ tanzu cluster kubeconfig get tkg-workload-cluster --admin
 # Les comptes d'administration ont toujours cette formee nomcluster-admin@nomcluster
 kubectl config use-context tkg-workload-cluster-admin@tkg-workload-cluster
 ```
+
+Connectez-vous à votre interface vSphere pour voir les six machines virtuelles du cluster de *Workload*.
+
+![01 vm created 01](images/01-vm-created-after-cwl-deployment01.png){.thumbnail}
+
+
 ### Installation du **Load-Balancer**
 
 Le **Load-Balancer** fait le lien entre le cluster et le réseau local, pour cela nous allons utiliser le package **kube-vip** qui servira de *load-balancer* entre le réseau interne au cluster et le réseau du VLAN10. Vous trouverez plus d'informations sur ce lien [Documentation kube-vip](https://kube-vip.io/).
 
-Exécutez ces commandes :
+Exécutez ces commandes à partir de la machine virtuelle de **Bootstrap** :
 
 ```bash
 # Création d'un dossier pour accueillir l'application kube-vip depuis git
@@ -110,7 +110,7 @@ tanzu package install kubevip -p kubevip.terasky.com -v 0.3.9 -f values.yaml
 
 ### Installation d'une application
 
-Lancez ces commandes pour installer une nouvelle application dans le cluster de **Workload**.
+Lancez ces commandes pour installer une nouvelle application dans le cluster de **Workload** à partir de la machine virtuelle de **Bootstrap**.
 
 
 ```bash
@@ -127,11 +127,11 @@ Les adresses IP internes au cluster KUBERNETES apparaissent dans la colonne **CL
 
 Dans cet exemple le site WEB est accessible avec l'adresse **192.168.0.223** sur le port **80**.
 
-![01 Verify Application 01](images/01-verify-application-01.png){.thumbnail}
+![02 Verify Application 01](images/02-verify-application-01.png){.thumbnail}
 
 Au travers de la console **Bootstrap** utilisez le navigateur **WEB** pour vous connecter sur l'URL `http://192.168.0.223`.
 
-![01 Verify Application 02](images/01-verify-application-02.png){.thumbnail}
+![02 Verify Application 02](images/02-verify-application-02.png){.thumbnail}
 
 En plus des 6 machines virtuelles pour le cluster d'administration, 6 autres machines virtuelles sont visible pour le cluster de **Workload**.
 
