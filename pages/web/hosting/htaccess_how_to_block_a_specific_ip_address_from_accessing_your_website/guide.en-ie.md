@@ -16,7 +16,7 @@ You can do this with a « .htaccess » file, a particular text file, that the we
 
 You can create multiple « .htaccess » files in [the FTP space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting but **only one** per directory or subdirectory to avoid conflicts between different .htaccess files.
 
-**Find out how to block access to your website for certain IP addresses via a .htaccess file.**
+**Find out how to block access to your website for certain IP addresses via a « .htaccess » file.**
 
 > [!warning]
 >
