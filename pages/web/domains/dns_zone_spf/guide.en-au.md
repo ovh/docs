@@ -195,7 +195,11 @@ For the Private Exchange solution, you need to enter your email server’s IP ad
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
 ```
 
-In the record below, you can add the argument `include:mx.ovh.com` if you are using [a shared email offer](#ovhcloudspfvalue).
+From the record above, you can add the argument `include:mx.ovh.com` if you use [a shared email offer](#ovhcloudspfvalue), you get the value:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+```
 
 > [!primary]
 > 

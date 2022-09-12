@@ -204,7 +204,11 @@ W przypadku oferty Private Exchange należy podać adresy IP Twojego serwera e-m
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
 ```
 
-W poniższym rekordzie możesz dodać argument `include:mx.ovh.com`, jeśli korzystasz z [oferty e-mail na hostingu](#ovhcloudspfvalue).
+Od momentu rejestracji powyżej możesz dodać argument `include:mx.ovh.com`, jeśli używasz [oferty e-mail współdzielonej](#ovhcloudspfvalue), uzyskasz wartość:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+```
 
 > [!primary]
 > 

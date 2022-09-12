@@ -201,7 +201,11 @@ Pour l'offre Private Exchange, il est nécessaire de renseigner les adresses IP 
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
 ```
 
-Dans l'enregistrement ci-dessous, vous pouvez ajouter l'argument `include:mx.ovh.com` si vous utilisez [une offre e-mail mutualisée](#ovhcloudspfvalue).
+Depuis l'enregistrement ci-dessus, vous pouvez ajouter l'argument `include:mx.ovh.com` si vous utilisez [une offre e-mail mutualisée](#ovhcloudspfvalue), vous obtenez la valeur:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+```
 
 > [!primary]
 > 
