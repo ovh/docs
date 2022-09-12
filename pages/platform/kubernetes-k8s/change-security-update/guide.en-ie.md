@@ -1,5 +1,5 @@
 ---
-title: Changing security update policy on an OVHcloud Managed Kubernetes cluster
+title: Changing the security update policy on an OVHcloud Managed Kubernetes cluster
 slug: change-security-update
 excerpt: 'Find out how to change the security update policy on an OVHcloud Managed Kubernetes cluster'
 section: User guides
@@ -27,11 +27,12 @@ section: User guides
  }
 </style>
 
-**Last updated 12nd September 2022**
+**Last updated 12th September 2022**
 
 ## Objective
 
-The OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. At OVHcloud, we like to provide you with the best products and services. For us, security is important, that's why by default we apply security updates on your Kubernets clusters, but do you know that you can change this configuration of the security update policy for your cluster?
+The OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. At OVHcloud, we like to provide you with the best products and services. For us, security is important, that's why by default we apply security updates on your Kubernetes clusters. <br>
+**Still, you can change the configuration of the security update policy for your cluster. Learn how to do it in this guide.**
 
 ## Requirements 
 
@@ -47,19 +48,19 @@ Access the administration UI for your OVHcloud Managed Kubernetes clusters by cl
 
 ![Access to the administration UI](images/upgrading-kubernetes-version-000.png){.thumbnail}
 
-Click on the right end button of your Kubernetes cluster and choose `Manage cluster`{.action}
+Click on the `...`{.action} button to the right of your Kubernetes cluster and choose `Manage cluster`{.action}.
 
 ![Click on the right end button and choose Manage cluster](images/upgrading-kubernetes-version-001.png){.thumbnail}
 
-On the *Management* section, click on `Change security policy`{.action}
+On the *Management* section, click on `Change security policy`{.action}.
 
 ![Click on Change the security policy](images/change-security-update-002.png){.thumbnail}
 
-A pop-up display all the options you can have:
+A pop-up displays all the options you can have:
 
 ![List of security policies](images/change-security-update-003.png){.thumbnail}
 
-- **Do not update**. We do not recommend this choice. OVH reserves the right to update Kubernetes components or your nodes on an exceptional basis, in critical cases that limit the security of our infrastructure.
+- **Do not update**. We do not recommend this choice. OVHcloud reserves the right to update Kubernetes components or your nodes on an exceptional basis, in critical cases that limit the security of our infrastructure.
 
 - **Minimum unavailability**. Apply ('patch version') security updates to my Kubernetes service, to guarantee service security and stability. If we cannot avoid downtime while performing a rolling update on your nodes, we will report this to you. We advise sizing your cluster to ensure that it can be updated at any time.
 
@@ -67,14 +68,13 @@ A pop-up display all the options you can have:
 
 Even if we recommand the maximum security, you can choose the security policy that is convenient for you.
 
-Choose one and then click `Confirm`{.action}
+Choose one option and click `Confirm`{.action}.
 
 ![Click on Confirm](images/change-security-update-004.png){.thumbnail}
 
-
 ### Configure security update policy through Terraform
 
-Since the version 0.20+ of our [OVH Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs) you can configure security update policy at cluster creation and update also through Terraform.
+Since the version 0.20+ of our [OVH Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs), you can configure the security update policy at cluster creation and update also through Terraform.
 
 #### Getting your cluster/API tokens information
 
@@ -129,7 +129,6 @@ provider "ovh" {
 }
 ```
 
-
 Terraform 0.12 and earlier:
 
 ```bash
@@ -179,7 +178,7 @@ resource "ovh_cloud_project_kube" "cluster" {
 }
 ```
 
-In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA5 region, using the Kubernetes version 1.24 (the last and recommended version at the time we wrote this tutorial), with a security update policy equals to "Do not update".
+In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA5 region, using the Kubernetes version 1.24 (the last and recommended version at the time we wrote this tutorial), with a security update policy that equals to "Do not update".
 
 Now we need to initialise Terraform, generate a plan, and apply it.
 
@@ -324,7 +323,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 #### Update
 
-Because security is important, if you want to update the security policy, you can also through Terraform. Edit the `ovh_kube_cluster.tf` file with this content:
+Because security is important, if you want to update the security policy, you can also do it through Terraform. Edit the `ovh_kube_cluster.tf` file with this content:
 
 ```bash
 resource "ovh_cloud_project_kube" "cluster" {
@@ -372,7 +371,7 @@ Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
 
 #### Destroy
 
-If you want to delete the Kubernetes cluster you added it through Terraform, have to execute `terraform destroy` command:
+If you want to delete the Kubernetes cluster you added through Terraform, you have to execute the `terraform destroy` command:
 
 ```bash
 $ terraform destroy
