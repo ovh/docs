@@ -317,7 +317,9 @@ Toutes les étapes du déploiement apparaissent en verts, ce qui signifie que le
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
-Allez sur l'interface vCenter et 
+Allez sur l'interface vCenter pour voir les sept machines virtuelles créées 
+
+![04 VM CREATED ADFTER INSTALLATION 01](images/04-vm-created-after-installation01.png){.thumbnail}
 
 
 
