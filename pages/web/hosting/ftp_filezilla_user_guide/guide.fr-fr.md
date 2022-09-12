@@ -6,7 +6,7 @@ section: 'FTP et SSH'
 order: 04
 ---
 
-**Dernière mise à jour le 09/09/2022**
+**Dernière mise à jour le 12/09/2022**
 
 ## Objectif
 
@@ -72,6 +72,11 @@ Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [
 
 ![hosting](images/loginFTP-SSH.png){.thumbnail}
 
+> [!warning]
+>
+> Certaines offres OVHcloud n'utilisent pas le port "22" pour les connexions en SFTP et/ou SSH. Utilisez donc bien les ports qui s'affichent dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+>
+
 Une fois que tout est correctement saisi dans l'encadré **1** de l'image ci-dessous, cliquez sur `Connexion rapide`{.action}.
 
 ![hosting](images/1819.png){.thumbnail}
@@ -91,7 +96,7 @@ Le **SFTP** (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocol
 
 Vérifiez tout d'abord que le SFTP est activé pour votre "Login FTP".
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/manager/web){.external}, dans la partie « Web Cloud », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la partie « Web Cloud », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}.
 
 Vérifier ensuite si le "SFTP" est actif dans le tableau en bas de page.
 
@@ -135,7 +140,7 @@ Le message affiché ci-dessous indique une erreur d'identification lors de la co
 
 Ce type de message est généré par une erreur dans le couple : Login/Mot de passe
 
-Vérifiez vos identifiants afin de vous assurer qu'aucune erreur ne soit renseignée. Le cas échéant, vous pouvez modifier le mot de passe de l'accès FTP de votre hébergement directement dans l'[espace client OVHcloud](https://www.ovh.com/manager/web){.external}.
+Vérifiez vos identifiants afin de vous assurer qu'aucune erreur ne soit renseignée. Le cas échéant, vous pouvez modifier le mot de passe de l'accès FTP de votre hébergement directement dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 *Un guide est disponible concernant la [modification du mot de passe FTP](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/) sur les offres mutualisées.*
 
@@ -143,7 +148,7 @@ Dans le cas ci-dessous, l'erreur est générée par un nom d'hôte incorrect :
 
 ![hosting](images/1824.png){.thumbnail}
 
-Vérifiez alors ce dernier par rapport au nom d'hôte déclaré dans votre [espace client OVHcloud](https://www.ovh.com/manager/web){.external}.
+Vérifiez alors ce dernier par rapport au nom d'hôte déclaré dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ### Transfert des fichiers
 
