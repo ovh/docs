@@ -14,7 +14,7 @@ The aim of this tutorial is to help you secure access to your external network s
 
 You can do this with a « .htaccess » file, a particular text file, that the web server (Apache) detects, and that allows you to define special rules for a directory and all of its subdirectories.
 
-You can create multiple « .htaccess » files in [the FTP space](https://docs.ovh.com/us/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting but **only one** per directory or subdirectory to avoid conflicts between different .htaccess files.
+You can create multiple « .htaccess » files in [the FTP space](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting but **only one** per directory or subdirectory to avoid conflicts between different .htaccess files.
 
 **Find out how to block access to your website for certain IP addresses via a .htaccess file.**
 
@@ -22,12 +22,12 @@ You can create multiple « .htaccess » files in [the FTP space](https://docs.ov
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [`Go further`](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [`Go further`](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- You must have [OVHcloud shared hosting](https://www.ovhcloud.com/en/web-hosting/)
+- You must have [OVHcloud shared hosting](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## In practice
 
@@ -37,14 +37,14 @@ You can create multiple « .htaccess » files in [the FTP space](https://docs.ov
 >
 > The settings defined by a « .htaccess » file apply to the directory where it is installed and to all subdirectories.
 >
-> To edit (or create) these directories, log in to your hosting plan’s FTP space. If you need help with this, please refer to our guide on [Accessing my storage space](https://docs.ovh.com/us/en/hosting/log-in-to-storage-ftp-web-hosting/).
+> To edit (or create) these directories, log in to your hosting plan’s FTP space. If you need help with this, please refer to our guide on [Accessing my storage space](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/).
 >
 
 ### Block an IP, a range of IPs, a domain or all the IPs of a Country
 
 Several rules are available to block access to your hosting plan via « .htaccess ».<br>
 Be careful with the syntax and settings that you block, so that you don’t get stuck viewing your hosted sites and/or scripts yourself.<br>
-In the event of an error, you can always log in to [the FTP space](https://docs.ovh.com/us/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting to correct the situation.
+In the event of an error, you can always log in to [the FTP space](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting to correct the situation.
 
 > [!primary]
 >
@@ -54,7 +54,7 @@ In the event of an error, you can always log in to [the FTP space](https://docs.
 >
 > For more details on the new syntax, you can consult the following official pages:
 >
-> - [Apache 2.4 access control documentation](https://httpd.apache.org/docs/2.4/fr/howto/access.html){.external}
+> - [Apache 2.4 access control documentation](https://httpd.apache.org/docs/2.4/en/howto/access.html){.external}
 > - [Apache 2.4 mod_authz_core module documentation](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html){.external}
 >
 
@@ -363,14 +363,14 @@ To authorise all IPs in a country to access your service, insert one of the foll
 
 Regardless of the security of general access to the hosting, the « .htaccess » file allows you to perform other actions. Below are three other OVHcloud tutorials on the subject:
 
-- [Protect your website’s administration interface via « .htaccess »](https://docs.ovh.com/us/en/hosting/how_to_password_protect_a_directory_on_your_website/).
-- [Rewrite your URLs using mod_rewrite](https://docs.ovh.com/us/en/hosting/htaccess_url_rewriting_using_mod_rewrite/).
-- [Perform other operations with the « .htaccess » file](https://docs.ovh.com/us/en/hosting/what_else_can_you_do_with_the_htaccess_file/).
+- [Protect your website’s administration interface via « .htaccess »](https://docs.ovh.com/asia/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+- [Rewrite your URLs using mod_rewrite](https://docs.ovh.com/asia/en/hosting/htaccess_url_rewriting_using_mod_rewrite/).
+- [Perform other operations with the « .htaccess » file](https://docs.ovh.com/asia/en/hosting/what_else_can_you_do_with_the_htaccess_file/).
 
 ## Go further <a name=`go-further`></a>
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/asia/support-levels/).
 
-Join our community of users on <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
