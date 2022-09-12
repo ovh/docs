@@ -9,7 +9,7 @@ section: 'DNS (servidor y zona)'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 28/07/2022**
+**Última actualización: 12/09/2022**
 
 ## Objetivo
 
@@ -204,7 +204,11 @@ Para la solución Private Exchange, es necesario indicar las direcciones IP del 
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.33.444 ~all"
 ```
 
-En el registro de abajo, puede añadir el argumento `include:mx.ovh.com` si utiliza [una solución de correo en alojamiento compartido](#ovhcloudspfvalue).
+Si también utiliza [una solución de correo en alojamiento compartido](#ovhcloudspfvalue), puede añadir el argumento `include:mx.ovh.com` al registro anterior, que proporciona el siguiente valor:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+```
 
 > [!primary]
 > 

@@ -9,7 +9,7 @@ section: Konfiguracja zaawansowana
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 28-07-2022**
+**Ostatnia aktualizacja z dnia 12-09-2022**
 
 ## Wprowadzenie
 
@@ -204,7 +204,11 @@ W przypadku oferty Private Exchange należy podać adresy IP Twojego serwera e-m
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
 ```
 
-W poniższym rekordzie możesz dodać argument `include:mx.ovh.com`, jeśli korzystasz z [oferty e-mail na hostingu](#ovhcloudspfvalue).
+Jeśli używasz również [oferty e-mail na hostingu](#ovhcloudspfvalue), możesz dodać argument `include:mx.ovh.com` do powyższego rekordu, podając następującą wartość:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+```
 
 > [!primary]
 > 
