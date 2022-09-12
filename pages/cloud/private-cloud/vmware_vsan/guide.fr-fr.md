@@ -6,7 +6,7 @@ section: Fonctionnalités VMware vSphere
 order: 10
 ---
 
-**Dernière mise à jour le 21/12/2021**
+**Dernière mise à jour le 07/09/2022**
 
 ## Objectif
 
@@ -19,6 +19,14 @@ Découvrez comment mettre en oeuvre la puissance de l'hyperconvergence pour vos 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 - Avoir au minimum trois hôtes vSAN
+
+> [!warning]
+>
+> Les options de chiffrements **vSAN Data-At-Rest Encryption** et **vSAN Data-In-Transit Encryption** ne sont pas supportées par défaut sur les clusters vSAN. Si toutefois vous souhaitez mettre en œuvre ces solutions veuillez contacter votre **Technical Account Manager**.
+> 
+> Le chiffrement reste possible au niveau de la machine virtuelle et de ses données comme indiqué dans ce guide [Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](https://docs.ovh.com/fr/private-cloud/vm-encrypt-vnkp/).
+>
+
 
 ## En pratique
 
@@ -127,5 +135,7 @@ Confirmez par un clic sur `Désactiver`{.action} dans la fenêtre suivante.
 vSan est désormais désactivé.
 
 ## Aller plus loin
+
+[Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](https://docs.ovh.com/fr/private-cloud/vm-encrypt-vnkp/).
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

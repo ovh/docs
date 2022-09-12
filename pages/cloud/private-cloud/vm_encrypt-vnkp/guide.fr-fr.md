@@ -6,7 +6,7 @@ section: Fonctionnalités VMware vSphere
 order: 09
 ---
 
-**Dernière mise à jour le 06/09/2022**
+**Dernière mise à jour le 07/09/2022**
 
 ## Objectif
 
@@ -30,6 +30,9 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 > [!warning]
 >
 > Il est possible que votre cluster **Hosted Private Cloud powered by VMware** ne soit pas en version 7.0 Update 2. Dans ce cas, contactez le support pour faire évoluer votre infrastructure.
+>
+>
+> Les options de chiffrement **vSAN Data-At-Rest Encryption** et  **vSAN Data-In-Transit Encryption** ne sont pas supportées par défaut sur les clusters vSAN. Si toutefois vous souhaitez mettre en place ces options veuillez contacter votre **Technical Account Manager**.  
 >
 
 ## Présentation
