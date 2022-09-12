@@ -24,9 +24,8 @@ Découvrez comment mettre en oeuvre la puissance de l'hyperconvergence pour vos 
 >
 > Les options de chiffrements **vSAN Data-At-Rest Encryption** et **vSAN Data-In-Transit Encryption** ne sont pas supportées par défaut sur les clusters vSAN. Si toutefois vous souhaitez mettre en œuvre ces solutions veuillez contacter votre **Technical Account Manager**.
 > 
-> Le chiffrement reste possible au niveau de la machine virtuelle et de ses données comme indiqué dans ce guide [Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](https://docs.ovh.com/fr/private-cloud/vm-encrypt-vnkp/).
+> Le chiffrement reste possible au niveau de la machine virtuelle et de ses données, comme indiqué dans le guide « [Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](https://docs.ovh.com/fr/private-cloud/vm-encrypt-vnkp/) ».
 >
-
 
 ## En pratique
 
