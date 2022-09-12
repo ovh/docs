@@ -6,7 +6,7 @@ section: DNS and DNS Zone
 order: 5
 ---
 
-**Last updated 28th July 2022**
+**Last updated 12th September 2022**
 
 ## Objective
 
@@ -197,7 +197,11 @@ For the Private Exchange solution, you need to enter your email server’s IP ad
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
 ```
 
-In the record below, you can add the argument `include:mx.ovh.com` if you are using [a shared email offer](#ovhcloudspfvalue).
+If you also use a [shared email service](#ovhcloudspfvalue), you can add the argument `include:mx.ovh.com` to the SPF record, with the following result:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+```
 
 > [!primary]
 > 

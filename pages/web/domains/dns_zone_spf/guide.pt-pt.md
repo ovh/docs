@@ -9,7 +9,7 @@ order: 5
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 
-**Última atualização: 25-02-2021**
+**Última atualização: 12-09-2022**
 
 ## Objetivo
 
@@ -197,7 +197,11 @@ Para a oferta Private Exchange, é necessário introduzir os endereços IP do se
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.33.444 ~all"
 ```
 
-No registo abaixo, pode adicionar o argumento `include:mx.ovh.com` se utiliza [uma oferta de e-mail partilhada](#ovhcloudspfvalue).
+Se também utilizar [uma oferta de e-mail partilhada](#ovhcloudspfvalue), pode adicionar o argumento `include:mx.ovh.com` ao registo em baixo, o que dará o seguinte valor:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+```
 
 > [!primary]
 > 

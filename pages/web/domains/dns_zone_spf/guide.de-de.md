@@ -9,7 +9,7 @@ section: DNS und DNS-Zone
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 28.07.2022**
+**Letzte Aktualisierung am 12.09.2022**
 
 ## Ziel
 
@@ -198,7 +198,11 @@ Für das Private Exchange Angebot müssen die IP-Adressen Ihres E-Mail-Servers a
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
 ```
 
-In dem unten stehenden Eintrag können Sie das Argument `include:mx.ovh.com` hinzufügen, wenn Sie zusätzlich einen [Webhosting E-Mail-Dienst verwenden](#ovhcloudspfvalue).
+Falls Sie zusätzlich einen [Webhosting E-Mail-Dienst verwenden](#ovhcloudspfvalue), können Sie das entsprechende Argument `include:mx.ovh.com` zum SPF-Eintrag hinzufügen. Das Ergebnis sollte dann folgendermaßen aussehen:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+```
 
 > [!primary]
 > 
