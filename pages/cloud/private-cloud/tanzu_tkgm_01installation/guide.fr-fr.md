@@ -46,7 +46,7 @@ Nous allons installer **VMware Tanzu Kubernetes Grid** sur un cluster **Hosted P
 > Ces informations sont données à titre d'exemple il est tout à fait possible d'utiliser une autre étendue et un autre VLAN
 >
 
-A la fin de l'installation vous sept machines virtuelles supplémentaires seront visibles sur votre cluster VMware, six pour le fonctionnement du cluster d'administration **TKG** et une autre pour son administration.
+A la fin de l'installation vous aurez sept machines virtuelles supplémentaires sur votre cluster VMware, six pour le fonctionnement du cluster d'administration **TKG** et une autre pour son administration.
 
 ![00 admin cluster diagram](images/00-admin-cluster-diagram01.png){.thumbnail}
 
