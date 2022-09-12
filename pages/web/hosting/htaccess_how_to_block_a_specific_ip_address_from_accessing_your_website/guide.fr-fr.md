@@ -67,84 +67,80 @@ En cas d'erreur, vous pouvez toujours vous connecter à [l'espace FTP](https://d
 Pour bloquer une adresse IP spécifique, insérez l'un des deux codes suivants dans votre fichier « .htaccess » :
 
 > [!tabs]
->
-> **Syntaxe historique**
->> >
->> > ```bash
->> > Deny from IP_address
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** :
->> >
->> > ```bash
->> > <RequireAll>
->> > Require all granted
->> > Require not ip IP_address
->> > </RequireAll>
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> Deny from IP_address
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3
+>>
+>> ```bash
+>> <RequireAll>
+>> Require all granted
+>> Require not ip IP_address
+>> </RequireAll>
+>> ```
+>>
 
 - **Exemple** : si vous souhaitez bloquer l'adresse IP 192.168.1.2, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > Deny from 192.168.1.2
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** :
->> >
->> > ```bash
->> > <RequireAll>
->> > Require all granted
->> > Require not ip 192.168.1.2
->> > </RequireAll>
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> Deny from 192.168.1.2
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3
+>>
+>> ```bash
+>> <RequireAll>
+>> Require all granted
+>> Require not ip 192.168.1.2
+>> </RequireAll>
+>> ```
+>>
 
 #### Bloquer une plage d'IPs
 
 Pour bloquer une plage d'adresses IP, insérez l'un des deux codes suivants dans votre fichier « .htaccess » :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > Deny from IP_range
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** :
->> >
->> > ```bash
->> > <RequireAll>
->> > Require all granted
->> > Require not ip IP_range
->> > </RequireAll>
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> Deny from IP_range
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3
+>>
+>> ```bash
+>> <RequireAll>
+>> Require all granted
+>> Require not ip IP_range
+>> </RequireAll>
+>> ```
+>>
 
 - **Exemple** : si vous souhaitez bloquer toutes les IPs en 192.168.x.x, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > Deny from 192.168
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** :
->> >
->> > ```bash
->> > <RequireAll>
->> > Require all granted
->> > Require not ip 192.168
->> > </RequireAll>
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> Deny from 192.168
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3
+>>
+>> ```bash
+>> <RequireAll>
+>> Require all granted
+>> Require not ip 192.168
+>> </RequireAll>
+>> ```
+>>
 
 #### Bloquer un domaine
 
@@ -153,40 +149,38 @@ Certains domaines peuvent accéder à votre hébergement via des redirections ou
 Pour bloquer un domaine, insérez l'un des deux codes suivants dans votre fichier « .htaccess » :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > Deny from domain
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** :
->> >
->> > ```bash
->> > <RequireAll>
->> > Require not host domain
->> > </RequireAll>
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> Deny from domain
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3
+>>
+>> ```bash
+>> <RequireAll>
+>> Require not host domain
+>> </RequireAll>
+>> ```
+>>
 
 - **Exemple** : si vous souhaitez bloquer le domaine domain.tld, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > Deny from domain.tld
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** :
->> >
->> > ```bash
->> > <RequireAll>
->> > Require not host domain.tld
->> > </RequireAll>
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> Deny from domain.tld
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3
+>>
+>> ```bash
+>> <RequireAll>
+>> Require not host domain.tld
+>> </RequireAll>
+>> ```
+>>
 
 #### Bloquer les IPs d'un pays
 
@@ -205,41 +199,41 @@ Pour bloquer un domaine, insérez l'un des deux codes suivants dans votre fichie
 Pour bloquer l'ensemble des IPs d'un pays, insérez l'un des deux codes suivants dans votre fichier « .htaccess » :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > SetEnvIf GEOIP_COUNTRY_CODE Country_Code BlockCountry
->> > Deny from env=BlockCountry
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** (à placer tout en haut de votre « .htaccess ») :
->> >
->> > ```bash
->> > RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^(Country_Code)$
->> > RewriteRule ^(.*)$ - [F,L]
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> SetEnvIf GEOIP_COUNTRY_CODE Country_Code BlockCountry
+>> Deny from env=BlockCountry
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3 
+>> À placer tout en haut de votre « .htaccess »
+>>
+>> ```bash
+>> RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^(Country_Code)$
+>> RewriteRule ^(.*)$ - [F,L]
+>> ```
+>>
 
 - **Exemple** : si vous souhaitez bloquer les adresses IPs géolocalisées aux îles Fidji (FJ) et au Groenland (GR), vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > SetEnvIf GEOIP_COUNTRY_CODE FJ BlockCountry
->> > SetEnvIf GEOIP_COUNTRY_CODE GR BlockCountry
->> > Deny from env=BlockCountry
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** (à placer tout en haut de votre « .htaccess ») :
->> >
->> > ```bash
->> > RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^(FJ|GR)$
->> > RewriteRule ^(.*)$ - [F,L]
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> SetEnvIf GEOIP_COUNTRY_CODE FJ BlockCountry
+>> SetEnvIf GEOIP_COUNTRY_CODE GR BlockCountry
+>> Deny from env=BlockCountry
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3 
+>> À placer tout en haut de votre « .htaccess »
+>>
+>> ```bash
+>> RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^(FJ|GR)$
+>> RewriteRule ^(.*)$ - [F,L]
+>> ```
+>>
 
 ### Pour autoriser seulement quelques IPs, une plage d'IPs ou l'ensemble des IPs d'un pays
 
@@ -250,126 +244,124 @@ Plutôt que de restreindre l'accès à une ou plusieurs IPs et laisser les autre
 Pour n'autoriser qu'une seule IP à accéder à votre service, insérez l'un des deux codes suivants dans votre fichier « .htaccess » :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > order deny,allow
->> > deny from all
->> > Allow from IP_address
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** :
->> >
->> > ```bash
->> > Require ip IP_address
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> order deny,allow
+>> deny from all
+>> Allow from IP_address
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3
+>>
+>> ```bash
+>> Require ip IP_address
+>> ```
+>>
 
 - **Exemple** : si vous souhaitez autoriser uniquement les IPs 192.168.1.2 et 192.168.1.3 à accéder à votre hébergement, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > order deny,allow
->> > deny from all
->> > Allow from 192.168.1.2
->> > Allow from 192.168.1.3
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** :
->> >
->> > ```bash
->> > Require ip 192.168.1.2 192.168.1.3
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> order deny,allow
+>> deny from all
+>> Allow from 192.168.1.2
+>> Allow from 192.168.1.3
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3
+>>
+>> ```bash
+>> Require ip 192.168.1.2 192.168.1.3
+>> ```
+>>
 
 #### Autoriser une plage d'IPs
 
 Pour autoriser une plage d'IPs à accéder à votre service, insérez l'un des deux codes suivants dans votre fichier « .htaccess » :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > order deny,allow
->> > deny from all
->> > Allow from IP_range
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** (à placer tout en haut de votre « .htaccess ») :
->> >
->> > ```bash
->> > Require ip IP_range
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> order deny,allow
+>> deny from all
+>> Allow from IP_range
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3 
+>> À placer tout en haut de votre « .htaccess »
+>>
+>> ```bash
+>> Require ip IP_range
+>> ```
+>>
 
 - **Exemple** : si vous souhaitez autoriser uniquement la plage d'IPs 192.168.1.x à accéder à votre hébergement, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > order deny,allow
->> > deny from all
->> > Allow from 192.168.1
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** (à placer tout en haut de votre « .htaccess ») :
->> >
->> > ```bash
->> > Require ip 192.168.1
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> order deny,allow
+>> deny from all
+>> Allow from 192.168.1
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3 
+>> À placer tout en haut de votre « .htaccess »
+>>
+>> ```bash
+>> Require ip 192.168.1
+>> ```
+>>
 
 #### Autoriser l'ensemble des IPs d'un pays
 
 Pour autoriser l'ensemble des IPs d'un pays à accéder à votre service, insérez l'un des deux codes suivants dans votre fichier « .htaccess » :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > order deny,allow
->> > deny from all
->> > SetEnvIf GEOIP_COUNTRY_CODE Country_Code AllowCountry
->> > Allow from env=AllowCountry
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** (à placer tout en haut de votre « .htaccess ») :
->> >
->> > ```bash
->> > RewriteCond %{ENV:GEOIP_COUNTRY_CODE} !^(Country_Code)$
->> > RewriteRule ^(.*)$ - [F,L]
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> order deny,allow
+>> deny from all
+>> SetEnvIf GEOIP_COUNTRY_CODE Country_Code AllowCountry
+>> Allow from env=AllowCountry
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3 
+>> À placer tout en haut de votre « .htaccess »
+>>
+>> ```bash
+>> RewriteCond %{ENV:GEOIP_COUNTRY_CODE} !^(Country_Code)$
+>> RewriteRule ^(.*)$ - [F,L]
+>> ```
+>>
 
 - **Exemple** : si vous souhaitez autoriser uniquement les îles Fidji (FJ) et le Groenland (GR) à accéder à votre hébergement, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
->
-> **Syntaxe historique** :
->> >
->> > ```bash
->> > order deny,allow
->> > deny from all
->> > SetEnvIf GEOIP_COUNTRY_CODE FJ AllowCountry
->> > SetEnvIf GEOIP_COUNTRY_CODE GR AllowCountry
->> > Allow from env=AllowCountry
->> > ```
->> >
-> **Syntaxe à partir d'Apache 2.3** (à placer tout en haut de votre « .htaccess ») :
->> >
->> > ```bash
->> > RewriteCond %{ENV:GEOIP_COUNTRY_CODE} !^(FJ|GR)$
->> > RewriteRule ^(.*)$ - [F,L]
->> > ```
->> >
+> Syntaxe historique
+>>
+>> ```bash
+>> order deny,allow
+>> deny from all
+>> SetEnvIf GEOIP_COUNTRY_CODE FJ AllowCountry
+>> SetEnvIf GEOIP_COUNTRY_CODE GR AllowCountry
+>> Allow from env=AllowCountry
+>> ```
+>>
+> Syntaxe à partir d'Apache 2.3 
+>> À placer tout en haut de votre « .htaccess »
+>>
+>> ```bash
+>> RewriteCond %{ENV:GEOIP_COUNTRY_CODE} !^(FJ|GR)$
+>> RewriteRule ^(.*)$ - [F,L]
+>> ```
+>>
 
 ### Compléments sur le fichier « .htaccess »
 
