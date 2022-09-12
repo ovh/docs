@@ -46,6 +46,10 @@ Nous allons installer **VMware Tanzu Kubernetes Grid** sur un cluster **Hosted P
 > Ces informations sont données à titre d'exemple il est tout à fait possible d'utiliser une autre étendue et un autre VLAN
 >
 
+A la fin de l'installation vous sept machines virtuelles supplémentaires seront visibles sur votre cluster VMware, six pour le fonctionnement du cluster d'administration **TKG** et une autre pour son administration.
+
+![04 admin cluster diagram](images/04-admin-cluster-diagram01.png){.thumbnail}
+
 ### Importation du modèle OVA pour **Tanzu KUBERNETES Grid** dans votre infrastructure
 
 VMware fournit une machine virtuelle sous forme de modèle OVA qui contient tous les éléments pour faire fonctionner un nœud du cluster **Tanzu Kubernetes Grid**. 
@@ -313,9 +317,7 @@ Toutes les étapes du déploiement apparaissent en verts, ce qui signifie que le
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
-7 machines virtuelles supplémentaires sont visibles sur votre cluster VMware, 6 pour le fonctionnement du cluster d'administration **TKG** et une autre pour son administration.
 
-![04 admin cluster diagram](images/04-admin-cluster-diagram01.png){.thumbnail}
 
 ## Aller plus loin
 
