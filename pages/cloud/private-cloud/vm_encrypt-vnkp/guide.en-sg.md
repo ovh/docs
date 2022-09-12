@@ -6,7 +6,7 @@ section: VMware vSphere features
 order: 09
 ---
 
-**Last updated 29th August 2022**
+**Last updated 7th September 2022**
 
 ## Objective
 
@@ -32,6 +32,8 @@ The aim of this guide is to explain the implementation details of **vSphere Nati
 >
 > Your **Hosted Private Cloud powered by VMware** cluster may not be in version 7.0 Update 2. If so, please contact support to upgrade your infrastructure.
 >
+> The **vSAN Data-At-Rest Encryption** and **vSAN Data-In-Transit Encryption** encryption options are not supported by default on vSAN clusters.<br>
+> If you would like to implement these options, please contact your **Technical Account Manager**.
 
 ## Presentation
 

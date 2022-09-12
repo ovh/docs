@@ -8,7 +8,7 @@ section: Funcionalidades de VMware vSphere
 order: 10
 ---
 
-**Last updated 21st December 2021**
+**Last updated 7th September 2022**
 
 ## Objective
 
@@ -21,6 +21,13 @@ Find out how to use the power of Hyperconvergence for your virtual machines with
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws))
 - At least three vSAN hosts
+
+> [!warning]
+>
+> The **vSAN Data-At-Rest Encryption** and **vSAN Data-In-Transit Encryption** encryption options are not supported by default on vSAN clusters. If you would like to implement these solutions, please contact your **Technical Account Manager**.
+> 
+> Encryption is still possible at the VM and its data level, as described in the guide [Enabling VM Encryption with vSphere Native Key Provider](https://docs.ovh.com/us/es/private-cloud/vm-encrypt-vnkp/).
+>
 
 ## Instructions
 
