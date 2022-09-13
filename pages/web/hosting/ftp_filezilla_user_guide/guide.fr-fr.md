@@ -13,7 +13,7 @@ order: 04
 FileZilla est un logiciel disponible gratuitement sur plusieurs systèmes d'exploitations (Windows, macOS, etc).
 Il permet de mettre en ligne des fichiers ou votre site internet en vous [connectant à l'espace FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement.
 
-**Apprendre à utiliser le logiciel Filezilla avec votre hébergement mutualisé.**
+**Découvrez comment utiliser le logiciel Filezilla avec votre hébergement mutualisé.**
 
 > [!warning]
 >
@@ -187,7 +187,7 @@ Vous pouvez modifier les droits d'accès (Chmod) de vos fichiers et de vos dossi
 
 Généralement, il est plus facile de gérer les droits Chmod avec la valeur chiffrée `XXX` (composée de 3 chiffres pouvant aller de 0 à 7). Le panel de permissions peut alors aller de `000` (aucun droit) à `777` (tous les droits).
 
-> [!warning]
+> [!alert]
 >
 > Attention, il n'est pas recommandé de mettre les droits Chmod 000 sur vos dossiers ou vos fichiers. En effet, vous n'aurez plus la possibilité (du moins en FTP) de gérer cet élément (y compris en tant qu'administrateur FTP).
 >
