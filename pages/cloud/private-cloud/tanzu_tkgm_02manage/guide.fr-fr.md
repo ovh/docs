@@ -19,9 +19,9 @@ order: 02
 >
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir un identifiant actif dans vSphere.
-- Avoir déployé le cluster d'administration **TKG** à l'aide de ce guide [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation)
+- Avoir déployé le cluster d'administration **TKG** à l'aide de ce guide [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation).
 - Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
 - Disposer de ces ressources :
     - 16 Go de mémoire, 4 vCPU, 40 Go de stockage par nœud Kubernetes (Il faut 6 nœuds par cluster de **Workload** dans le même mode).
@@ -29,7 +29,7 @@ order: 02
 
 ## En pratique
 
-Nous allons déployer un cluster de workload sur un cluster d'administration **Tanzu Kubernetes Grid**. et ajouter une application.
+Nous allons déployer un cluster de *Workload* sur un cluster d'administration **Tanzu Kubernetes Grid**. et ajouter une application.
 
 A la fin de l'installation vous aurez six nouvelles machines virtuelles en plus des sept qui sont necessaires au fonctionnement du cluster de management. 
 
@@ -37,9 +37,7 @@ A la fin de l'installation vous aurez six nouvelles machines virtuelles en plus 
 
 ### Déploiement d'un cluster de *Workload*
 
-Le cluster de *Workload* doit être sur le même réseau que le cluster d'administration. 
-
-A partir de la machine virtuelle **Bootstrap** nous allons créer un cluster de *Workload* dans lequel il sera possible de déployer des applications.
+Le cluster de *Workload* doit être sur le même réseau que le cluster d'administration. Après l'ajout de ce cluster il sera alors possible d'installer des applications. 
 
 Copiez le fichier qui a servi pour la création du cluster d'administration dans un fichier nommé **tkg-workload-cluster.yaml**.
 
