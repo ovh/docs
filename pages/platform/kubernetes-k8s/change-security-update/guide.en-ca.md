@@ -64,7 +64,7 @@ A pop-up displays all the options you can have:
 
 - **Maximum security**. Apply ('patch version') security updates to my Kubernetes service, to guarantee service security and stability. The update may result in your nodes being unavailable for a few minutes, while we perform the rolling update.
 
-By default, **Maximum security** is configured by default. Even if we recommand the maximum security, you can choose the security policy that is convenient for you.
+The security policy **Maximum security** is configured by default. Even if we recommand the maximum security, you can choose the security policy that is convenient for you.
 
 Choose one option and click `Confirm`{.action}.
 
