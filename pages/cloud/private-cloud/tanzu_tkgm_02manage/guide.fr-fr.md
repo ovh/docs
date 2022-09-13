@@ -77,7 +77,7 @@ Connectez-vous à votre interface vSphere pour voir les six machines virtuelles 
 
 ### Installation du **Load-Balancer**
 
-Le **Load-Balancer** fait le lien entre le cluster et le réseau local, pour cela nous allons utiliser le package **kube-vip** qui servira de *load-balancer* entre le réseau interne au cluster et le réseau du VLAN10. Vous trouverez plus d'informations sur ce lien [Documentation kube-vip](https://kube-vip.io/).
+Le **Load-Balancer** fait le lien entre le cluster et le réseau local, pour cela nous allons utiliser le package **kube-vip** qui servira de *load-balancer* entre le réseau interne au cluster et le réseau du VLAN10. Vous trouverez plus d'informations sur ce site [Documentation kube-vip](https://kube-vip.io/).
 
 Exécutez ces commandes à partir de la machine virtuelle de **Bootstrap** :
 
@@ -95,13 +95,13 @@ kubectl apply -n tanzu-package-repo-global -f metadata.yml
 kubectl apply -n tanzu-package-repo-global -f package.yaml
 ```
 
-Créez le fichier **~/kube-vip/tkgm-customizations/carvel-packages/kube-vip-package/values.yaml** avec ce contenu qui correspond aux adresses IP utilisables sur le VLAN10 pour déployer une application
+Créez le fichier **~/kube-vip/tkgm-customizations/carvel-packages/kube-vip-package/values.yaml** avec ce contenu qui correspond aux adresses IP utilisables sur le VLAN10 pour déployer une application.
 
 ```yaml
 vip_range: 192.168.0.210-192.168.0.250
 ```
 
-Installez le package à l'aide de cette commande.
+Installez le package à l'aide de ces commandes :
 
 ```bash
 # Installation
@@ -112,7 +112,7 @@ tanzu package install kubevip -p kubevip.terasky.com -v 0.3.9 -f values.yaml
 
 ### Installation d'une application
 
-A titre d'exemple nous allons déployer une application nommée yelb qui utilise 4 pods dont un qui sera disponible via le load-balancer kubevip. vous trouverez plus d'informations sur cet exemple à cette adresse [Application YELB](https://github.com/mreferre/yelb).
+A titre d'exemple nous allons déployer une application nommée **yelb** qui utilise 4 pods dont un qui sera disponible via le load-balancer kubevip. vous trouverez plus d'informations sur cet exemple à cette adresse [Exemple KUBERNETES YELB](https://github.com/mreferre/yelb).
 
 Lancez ces commandes pour installer une nouvelle application dans le cluster de **Workload** à partir de la machine virtuelle de **Bootstrap**.
 
