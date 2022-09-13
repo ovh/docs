@@ -37,7 +37,7 @@ Un hébergement Cloud Web dispose de sauvegardes automatiques déclenchées aux 
 - l’avant-veille, effectuée après 0 h 00.
 - le dimanche précédent, effectuée après 01 h 00.
 
-Seules les sauvegardes citées ci-dessus pourront être proposée par OVHcloud, sous réserve que votre hébergement Cloud Web existait déjà aux dates indiquées et sous réserve des disponibilités de l'infrastructure au moment de la demande de la sauvegarde.
+Seules les sauvegardes citées ci-dessus pourront être proposées par OVHcloud, sous réserve que votre hébergement Cloud Web existait déjà aux dates indiquées et sous réserve des disponibilités de l'infrastructure au moment de la demande de la sauvegarde.
 
 ### Récupérer une sauvegarde
 
@@ -66,6 +66,8 @@ Cliquez sur `Confirmer`{.action} pour valider votre demande.
 Si la génération de la sauvegarde est bien lancée, le message suivant apparaît dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} :
 
 ![backupftpcw](images/BackupInProgress.png){.thumbnail}
+
+La génération de la sauvegarde prend entre 10 et 15 minutes pour être réalisée.
 
 #### Etape 2 - Récupérer la sauvegarde
 
