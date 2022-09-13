@@ -37,7 +37,7 @@ Un hébergement Cloud Web dispose de sauvegardes automatiques déclenchées aux 
 - l’avant-veille, effectuée après 0 h 00.
 - le dimanche précédent, effectuée après 01 h 00.
 
-Seules les sauvegardes citées ci-dessus pourront être proposées par OVHcloud, sous réserve que votre hébergement Cloud Web existait déjà aux dates indiquées et sous réserve des disponibilités de l'infrastructure au moment de la demande de la sauvegarde.
+Seules les sauvegardes mentionnées ci-dessus pourront être proposées par OVHcloud, sous réserve que votre hébergement Cloud Web existait déjà aux dates indiquées et sous réserve des disponibilités de l'infrastructure au moment de la demande de la sauvegarde.
 
 ### Récupérer une sauvegarde
 
