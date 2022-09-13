@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Jak zablokować dostęp do mojej strony dla niektórych adresów IP za pomocą pliku .htaccess?"
 slug: hosting-htaccess-jak-blokowac-niektóre-ip-na-poziomie-mojej-strony
-excerpt: "Odkryj operacje możliwe przy użyciu pliku ".htaccess", w celu zablokowania dostępu do Twojej strony WWW dla niektórych adresów IP"
+excerpt: "Odkryj operacje możliwe przy użyciu pliku .htaccess, w celu zablokowania dostępu do Twojej strony WWW dla niektórych adresów IP"
 section: Przekierowania i uprawnienia dostępu
 order: 01
 ---
