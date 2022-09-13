@@ -6,7 +6,7 @@ section: Premiers pas
 order: 01
 ---
 
-**Dernière mise à jour le 29/08/2022**
+**Dernière mise à jour le 13/09/2022**
 
 ## Objectif
 
@@ -72,7 +72,7 @@ Cliquez sur `Execute`{.action} pour récupérer les informations de versions.
 
 ![01 Get version 01](images/01-get-supported-version01.png)
 
-Le résultat de la requette apparait en dessous de `availableVersions` apparait les deux versions supportées sur un cluster Nutanix OVHcloud avec en premier la version LTS et en dessous la version STS.
+Le résultat de la requette apparait en dessous de `availableVersions` avec les deux versions supportées sur un cluster Nutanix OVHcloud avec en premier la version LTS et en dessous la version STS.
 
 ![01 Get version 02](images/01-get-supported-version02.png)
 
