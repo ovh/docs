@@ -72,7 +72,7 @@ Si la connexion s'est bien effectuée avec succès, vous en serez informé via l
 
 ### Connexion avec Filezilla en SFTP <a name="sftp"></a>
 
-Le **SFTP** (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocole similaire au **FTP**. Il utilise, comme le SSH, le port 22 par défaut au lieu du port 21. En plus d'établir une connexion sécurisée, il vous permet, par exemple, de modifier des droits de fichiers, ce qu'il n'est pas possible de faire en étant simplement connecté en **FTP** sur le port 21.
+Le **SFTP** (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocole similaire au **FTP**. Il utilise, comme le SSH, le port 22 par défaut au lieu du port 21. Si vous utilisez une offre d'hébergement Cloud Web, vous devez utiliser le port qui s'affiche dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Le port 22 est par sécurité désactivé en SSH et en SFTP pour les hébergements Cloud Web.
 
 > [!success]
 >
@@ -249,7 +249,7 @@ SITE CHMOD 705 .
 > En effet, nos robots passent toutes les 3 heures minimum pour vérifier les changements d'état.<br>
 > En fonction du moment où la manipulation ci-dessus sera réalisée, le rétablissement de l'affichage de votre site pourra donc être plus ou moins rapide.<br>
 > Si le délai des 3 heures est passé et que votre site n'est toujours pas en ligne, vérifiez que la commande renseignée est bien passée en réitérant l'opération.<br>
-> Si cela ne fonctione toujours pas, veuillez contacter notre support.
+> Si cela ne fonctionne toujours pas, veuillez contacter notre support.
 > 
 
 ### Transfert de fichiers binaires
