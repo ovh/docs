@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?"
 slug: webhosting-wie-bestimmte-ip-auf-der-Ebene-meiner-seite-blockieren
-excerpt: "Entdecken Sie die möglichen Aktionen über eine ".htaccess" Datei, um den Zugriff auf Ihre Website für bestimmte IP-Adressen zu blockieren"
+excerpt: "Entdecken Sie die möglichen Aktionen über eine .htaccess Datei, um den Zugriff auf Ihre Website für bestimmte IP-Adressen zu blockieren"
 section: Weiterleitung und Authentifizierung
 order: 01
 ---
