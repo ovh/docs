@@ -37,7 +37,7 @@ Vous pouvez créer plusieurs fichiers « .htaccess » dans [l'espace FTP](https:
 >
 > Les paramètres définis par un fichier « .htaccess » s'appliquent au répertoire où il est installé ainsi qu'à tous ses sous-répertoires.
 >
-> Pour éditer (ou créer) ces répertoires, connectez-vous à l'espace FTP de votre hébergement. Au besoin, aidez-vous du guide « [Accéder à mon espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) ».
+> Pour éditer (ou créer) ces répertoires, connectez-vous à l'espace FTP de votre hébergement. Au besoin, aidez-vous du guide « [Accéder à mon espace de stockage](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) ».
 >
 
 ### Bloquer une IP, une plage d'IPs, un domaine ou toutes les IPs d'un Pays 
