@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated 11th January 2021.**
+**Last updated 13th September 2022.**
 
 ## Before you begin
 
@@ -182,7 +182,9 @@ aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32
 
 #### 1b. [PRIVATE NETWORK ONLY] Get the list of the egress load balancer IPs
 
-We will use this [10.0.0.0/20] CIDR notation later.
+When your Managed Kubernetes cluster is attached to a vrack, load balancers will take two random IP addresses each. **Your egress IP list is your subnet range**.
+
+For the rest of this documentation, we consider our subnet use the [10.0.0.0/20] range. Don't forget to replace it with your own !
 
 ### Patching methods
 
@@ -225,6 +227,11 @@ data:
   real-ip-header: "proxy_protocol"
   proxy-real-ip-cidr: "10.0.0.0/20"
 ```
+
+> [!primary]
+>
+> Note: [10.0.0.0/20] must be replaced with your own subnet range.
+
 
 And apply it in  your cluster:
 
@@ -270,6 +277,10 @@ controller:
     real-ip-header: "proxy_protocol"
     proxy-real-ip-cidr: "10.0.0.0/20"
 ```
+
+> [!primary]
+>
+> Note: [10.0.0.0/20] must be replaced with your own subnet range.
 
 And upgrade your Helm release:
 
