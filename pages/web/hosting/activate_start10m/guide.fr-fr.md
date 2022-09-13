@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 02
 ---
 
-**Dernière mise à jour le 09/09/2022**
+**Dernière mise à jour le 13/09/2022**
 
 ## Objectif
 
@@ -24,7 +24,7 @@ Ce guide vous présente comment activer cette offre sur votre [nom de domaine](h
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, détaché de tout hébergement Web et sans aucun MX Plan associé.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, détaché de tout hébergement Web et sans aucun [MX Plan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/) associé.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
@@ -41,23 +41,23 @@ La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son 
 
 > [!warning]
 >
-> Si vous cochez l'une des deux cases *Entrée DNS A" et "Entrée DNS MX" ou les deux, cela écrasera la configuration initialement mise en place dans la zone DNS de votre domaine.
+> Si vous cochez l'une des deux cases `Entrée DNS A` et `Entrée DNS MX` ou les deux, cela écrasera la configuration initialement mise en place dans la zone DNS de votre domaine.
 >
 > Si votre zone DNS n'est pas gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, vous devrez effectuer les modifications manuellement dans votre zone DNS.
 >
-> Pour plus de détails, regardez notre guide sur [comment éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
+> Pour plus de détails, consultez notre guide sur [l'édition d'une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
 >
 
 | Choix                                       	| Description                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Entrée DNS A                         	| Le nom de domaine pointera vers l'adresse IP de l'hébergement Start 10M.                                               								|
-| Entrée DNS MX 	| Les serveurs e-mail (mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net, etc.) d'OVHcloud seront appliqués au nom de domaine. 	|
+| Entrée DNS MX 	| Les serveurs e-mail (`mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.) d'OVHcloud seront appliqués au nom de domaine. 	|
 
 > [!primary]
 >
-> Si votre projet est amené à évoluer rapidement vers un hébergement disposant d'une base de données, d'un espace de stockage plus important ou davantage d'adresses e-mail, vous pourrez basculer directement et uniquement du start 10M vers une offre d'hébergement "Perso" depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+> Si votre projet est amené à évoluer rapidement vers un hébergement disposant d'une base de données, d'un espace de stockage plus important ou davantage d'adresses e-mail, vous pourrez basculer directement et uniquement du Start 10M vers une offre d'hébergement **Perso** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 >
-> Une bascule vers l'offre "Pro" ou "Performance" nécessite de passer préalablement vers l'offre "Perso" depuis cette offre gratuite.
+> Une bascule vers l'offre **Pro** ou **Performance** nécessite de passer préalablement de l'offre Start 10M à l'offre **Perso**.
 >
 > Vous pouvez aussi choisir de supprimer l'offre gratuite en prenant soin de récupérer au préalable vos données d'hébergement et le contenu de votre adresse mail.
 >
