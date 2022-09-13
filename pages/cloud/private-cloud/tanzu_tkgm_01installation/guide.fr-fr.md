@@ -1,7 +1,7 @@
 ---
 title: Installer Tanzu Kubernetes Grid
 slug: tanzu-tkgm-installation
-excerpt: Intégrer Tanzu Kubernetes Grid à votre infrastructure **Private Cloud Powered by VMware**
+excerpt: Intégrer Tanzu Kubernetes Grid à votre infrastructure Private Cloud Powered by VMware
 section: Tanzu
 order: 02
 ---
@@ -221,7 +221,7 @@ tanzu management-cluster create --ui --bind 192.168.0.199:8080
 ```
 > [!primary]
 >
-> Lorsque vous lancez cette commande depuis la console linux avec l'interface graphique, le navigateur WEB se lance et se connecte à l'adresse `https://192.168.0.199:8080`, cependant si vous utilisez une connexion en **ssh** il faut utiliser une autre machine virtuelle qui a accès via un navigateur WEB à l'adresse `https://192.168.0.199:8080`.
+> Lorsque vous lancez cette commande depuis la console linux avec l'interface graphique, le navigateur WEB se lance et se connecte à l'adresse `https://192.168.0.199:8080`. Si vous avez lancé cette commande depuis une connexion **ssh** il faudra se connecter à l'adresse `https://192.168.0.199:8080` à partir d'
 >
 
 ![03 Create TKG CLUSTER 02](images/03-create-tkg-cluster02.png){.thumbnail}
@@ -327,11 +327,11 @@ Allez sur l'interface vCenter pour voir les sept machines virtuelles créées
 
 ## Aller plus loin
 
+[Administrer un cluster TKG](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management)
+
 [Présentation de VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
 [Documentation de VMware Tanzu Kubenetes Grid](https://https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
-
-[Administrer un cluster TKG](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management)
 
 [Installation manuelle de l'outil CLI pour le déploiement de Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 
