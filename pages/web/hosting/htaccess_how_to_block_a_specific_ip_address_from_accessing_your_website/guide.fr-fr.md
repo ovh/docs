@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Comment bloquer l'accès à mon site pour certaines adresses IP via un fichier .htaccess ?"
 slug: mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site
-excerpt: "Découvrez les actions possibles via un fichier « .htaccess » afin de bloquer l'accès à votre site à certaines adresses IP"
+excerpt: "Découvrez les actions possibles via un fichier .htaccess afin de bloquer l'accès à votre site à certaines adresses IP"
 section: Réécriture et authentification
 order: 01
 ---
