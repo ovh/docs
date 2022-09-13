@@ -1,12 +1,12 @@
 ---
 title: Administrer Tanzu Management Cluster Grid
 slug: tanzu-tkgm-management
-excerpt: Administration de TKG pour créér un cluster de *Workload* et ajouter des applications dans ce cluster.
+excerpt: Administration de TKG pour créér un cluster de Workload et ajouter des applications dans ce cluster.
 section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 12/09/2022**
+**Dernière mise à jour le 13/09/2022**
 
 ## Objectif
 
@@ -31,7 +31,7 @@ order: 02
 
 Nous allons déployer un cluster de workload sur un cluster d'administration **Tanzu Kubernetes Grid**. et ajouter une application.
 
-A la fin de l'installation vous aurez six nouvelles machines virtuelles en plus des sept qui sont necessaire au fonctionnement du cluster de management. 
+A la fin de l'installation vous aurez six nouvelles machines virtuelles en plus des sept qui sont necessaires au fonctionnement du cluster de management. 
 
 ![00 Cluster administration & workload Diagram01](images/00-tkc-mc-wc01.png){.thumbnail}
 
