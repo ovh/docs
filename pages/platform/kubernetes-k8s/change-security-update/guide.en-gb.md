@@ -58,15 +58,13 @@ On the *Management* section, click on `Change security policy`{.action}.
 
 A pop-up displays all the options you can have:
 
-![List of security policies](images/change-security-update-003.png){.thumbnail}
-
 - **Do not update**. We do not recommend this choice. OVHcloud reserves the right to update Kubernetes components or your nodes on an exceptional basis, in critical cases that limit the security of our infrastructure.
 
 - **Minimum unavailability**. Apply ('patch version') security updates to my Kubernetes service, to guarantee service security and stability. If we cannot avoid downtime while performing a rolling update on your nodes, we will report this to you. We advise sizing your cluster to ensure that it can be updated at any time.
 
 - **Maximum security**. Apply ('patch version') security updates to my Kubernetes service, to guarantee service security and stability. The update may result in your nodes being unavailable for a few minutes, while we perform the rolling update.
 
-Even if we recommand the maximum security, you can choose the security policy that is convenient for you.
+By default, **Maximum security** is configured by default. Even if we recommand the maximum security, you can choose the security policy that is convenient for you.
 
 Choose one option and click `Confirm`{.action}.
 
