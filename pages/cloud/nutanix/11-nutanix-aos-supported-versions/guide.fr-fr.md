@@ -42,11 +42,11 @@ OVHcloud intègre au produit **Hosted Private Cloud powered by Nutanix** les ver
 
 Les versions supportées par OVHCloud sont les suivantes :
 
-| Catégorie de version          | Numéro de version                      | 
-| ----------------------------- | -------------------------------------- | 
-| **LTS**                       | 5.20                                   |               
-|                               |                                        | 
-| **STS**                       | 6.1                                    | 
+| Catégorie de version          | Numéro de version                      |
+| ----------------------------- | -------------------------------------- |
+| **LTS**                       | 5.20                                   |
+|                               |                                        |
+| **STS**                       | 6.1                                    |
 |                               |                                        |
 
 Ce guide sera régulièrement mis à jour avec les versions supportées. 
