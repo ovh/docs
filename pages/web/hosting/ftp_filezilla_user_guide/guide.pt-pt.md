@@ -60,7 +60,7 @@ A partir da barra de ligação rápida, complete as informações através da se
 |Palavra-passe|Password associada ao utilizador.|
 |Porta|Geralmente, é automaticamente complementado pelo software. Caso contrário, introduza:<br><br>\- a porta 21 para uma ligação FTP;<br>\- a porta 22 para uma ligação SFTP (no caso de esta estar ativada). Encontre mais informações sobre o SFTP na secção [dedicada deste tutorial](#sftp).|
 
-Se não possuir estas informações, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} na secção "Web Cloud" e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento:
+Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} na secção "Web Cloud" e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento:
 
 ![alojamento](images/loginFTP-SSH.png){.thumbnail}
 
@@ -131,7 +131,7 @@ A mensagem apresentada abaixo indica um erro de identificação aquando da liga�
 
 Este tipo de mensagem é gerada por um erro no binário Login/Palavra-passe.
 
-Verifique os seus dados de acesso para garantir que não há erros. Se necessário, pode alterar a palavra-passe do acesso FTP do seu alojamento diretamente na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+Verifique os seus dados de acesso para garantir que não há erros. Se necessário, pode alterar a palavra-passe do acesso FTP do seu alojamento diretamente na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!success]
 > Está disponível um guia sobre a [alteração da palavra-passe FTP](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/) nas ofertas partilhadas.
