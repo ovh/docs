@@ -1,7 +1,7 @@
 ---
-title: Configuring the API Server flags on an OVHcloud Managed Kubernetes cluster
+title: Configuring the API server flags on an OVHcloud Managed Kubernetes cluster
 slug: apiserver-flags-configuration
-excerpt: 'Find out how to configure the API Server admission plugins on an OVHcloud Managed Kubernetes cluster'
+excerpt: 'Find out how to configure the API server admission plugins on an OVHcloud Managed Kubernetes cluster'
 section: User guides
 ---
 
@@ -32,9 +32,9 @@ section: User guides
 ## Objective
 
 The OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
-At OVHcloud, we like to provide you with the best products and services, that's why we give you the availabilty to customize the managed components of your Kubernetes: CoreDNS, IPVS, and even [API Server admission plugins](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/) to enable and disable on your OVHcloud Managed Kubernetes clusters.
+At OVHcloud, we like to provide you with the best products and services, that's why we give you the availabilty to customize the managed components of your Kubernetes: CoreDNS, IPVS, and even [API server admission plugins](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/) to enable and disable on your OVHcloud Managed Kubernetes clusters.
 
-In this guide we will show you how to enable and disable API Server admission plugins but you can follow the guide for other OVHcloud Managed Kubernetes cluster configuration customization.
+In this guide we will show you how to enable and disable API server admission plugins but you can follow the guide for other OVHcloud Managed Kubernetes cluster configuration customization.
 
 ## Requirements 
 
@@ -45,7 +45,7 @@ In this guide we will show you how to enable and disable API Server admission pl
 > [!warning]
 > Only `NodeRestriction` and `AlwaysPullImages` admission plugins are customizable right now.
 
-### Configure the API Server flags through the API
+### Configure the API server flags through the API
 
 #### The API Explorer
 
@@ -82,7 +82,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
  }
 ```
 
-- Reset a cluster with API Server admission plugins customization:
+- Reset a cluster with API server admission plugins customization:
 
 ```bash
  POST /cloud/project/{serviceName}/kube/{kubeID}/reset
@@ -136,9 +136,9 @@ Result:
   }
 ```
 
-### Configure the API Server flags through Terraform
+### Configure the API server flags through Terraform
 
-Since the version 0.21+ of our [OVH Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs), you can configure your Kubernetes cluster (API Server flags, CoreDNS, IPVS ...) through Terraform.
+Since the version 0.21+ of our [OVH Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs), you can configure your Kubernetes cluster (API server flags, CoreDNS, IPVS ...) through Terraform.
 
 #### Getting your cluster/API tokens information
 
