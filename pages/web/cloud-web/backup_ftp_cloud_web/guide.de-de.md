@@ -20,87 +20,87 @@ Ihr Cloud Web Hosting verfügt über einen Speicherplatz, in dem Sie Ihre Websit
 
 > [!primary]
 > 
-> Die von OVHcloud angebotenen Backups für Cloud Web Hostings sind nicht vertraglich festgelegt. Diese werden zur Ergänzung Ihrer eigenen Backup-Ressourcen in Notsituationen bereitgestellt. Wir empfehlen Ihnen daher, regelmäßig Ihre eigenen Sicherheitsbackups durchzuführen, um eventuelle Datenverluste zu vermeiden.
+> Die von OVHcloud angebotenen Backups für Cloud Web Hostings sind nicht vertraglich festgelegt. Sie werden zur Ergänzung Ihrer eigenen Backup-Ressourcen für Notsituationen bereitgestellt. Wir empfehlen Ihnen, regelmäßig Ihre eigenen Sicherheitsbackups durchzuführen, um Datenverluste zu vermeiden.
 > 
-> Wenn Sie ein Sicherheitsbackup für Ihre Website erstellen und eine Datenbank verwenden, erstellen Sie auch ein Backup dieser Datenbank. Bitte lesen Sie unsere Anleitung, um [ein Backup Ihrer Datenbank abzurufen](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/).
+> Wenn Sie ein Sicherheitsbackup für eine Website erstellen, die eine Datenbank verwendet, erstellen Sie auch ein Backup dieser Datenbank. Lesen Sie dazu unsere Anleitung zum [Abrufen eines Backups Ihrer Datenbank](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/).
 > 
 
 **In dieser Anleitung erfahren Sie, wie Sie ein FTP-Backup Ihres Cloud Web Hostings abrufen und wiederherstellen.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/){.external}
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet.
-- Sie haben Zugriff auf die Kontakt-E-Mail-Adresse Ihrer Kundenkennung.
+- Sie verfügen über ein [Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/){.external}.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf die Kontakt-E-Mail-Adresse Ihres Kunden-Accounts.
 
 ## In der praktischen Anwendung
 
-Ein Cloud Web Hosting verfügt über automatische Backups, die mit folgenden Frequenzen ausgelöst werden:
+Ein Cloud Web Hosting verfügt über automatische Backups von den folgenden relativen Zeitpunkten (24-Stunden-Format):
 
-- am selben Tag, durchgeführt nach 0.00 Uhr.
-- am Tag zuvor, nach 0.00 Uhr.
-- vor dem Tag, der nach 0.00 Uhr erfolgt.
-- am vorhergehenden Sonntag, der nach 01.00 Uhr erfolgt.
+- Am selben Tag, durchgeführt nach 0.00 Uhr
+- Am Tag zuvor, durchgeführt nach 0.00 Uhr
+- Zwei Tage zuvor, durchgeführt nach 0.00 Uhr
+- Am letzten Sonntag, durchgeführt nach 01.00 Uhr
 
-Nur die oben genannten Backups können von OVHcloud angeboten werden, sofern Ihr Cloud Web Hosting bereits zu den angegebenen Zeitpunkten existierte und die Infrastruktur zum Zeitpunkt der Anfrage für das Backup verfügbar war.
+Nur die oben genannten Backups können von OVHcloud angeboten werden, sofern Ihr Cloud Web Hosting bereits zu den angegebenen Zeitpunkten existierte und die Infrastruktur zum Zeitpunkt des angefragten Backups verfügbar war.
 
 ### Backup exportieren
 
-Im Gegensatz zu den Shared Hosting Paketen von OVHcloud ist es unmöglich, den FTP-Bereich mit einem Klick über das [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} wiederherzustellen.
+Im Gegensatz zu den Shared Hosting Paketen von OVHcloud ist es unmöglich, den FTP-Bereich mit einem Klick über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wiederherzustellen.
 
-Es wird ein Link zum Download des Backups erstellt und per E-Mail an die E-Mail-Adresse versandt, die der Administrator-Kundenkennung des Cloud Web Hostings zugeordnet ist.
+Es wird ein Link zum Download des Backups erstellt und per E-Mail an die Adresse gesendet, die der Administrator-Kundenkennung des Cloud Web Hostings zugeordnet ist.
 
 #### Schritt 1 - Den per E-Mail versandten Link zur Wiederherstellung erstellen
 
-Um den Link zur Wiederherstellung zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, gehen Sie in den Bereich `Cloud`{.action}, klicken Sie auf `Hosting`{.action} und dann auf die betreffende Cloud Web. 
+Um den Link zur Wiederherstellung zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und dann auf das betreffende Hosting. 
 
 Wählen Sie den Tab `FTP - SSH`{.action} aus und klicken Sie auf `Backup rechts`{.action} erstellen.
 
 ![backupftpcw](images/GenerateABackup.png){.thumbnail}
 
-Wählen Sie im angezeigten Fenster eines der verfügbaren Backups aus und klicken Sie dann auf `Weiter`{.action}.
+Wählen Sie im neu angezeigten Fenster eines der verfügbaren Backups aus und klicken Sie dann auf `Weiter`{.action}.
 
 ![backupftpcw](images/GenerateABackup2.png){.thumbnail}
 
-Es erscheint ein zweites Fenster, in dem Sie darauf hingewiesen werden, dass Ihnen der Link zur Wiederherstellung der Backup-Datei per E-Mail zugesandt wird und dass OVHcloud keine automatische Wiederherstellung auf Ihrem Cloud Web Hosting durchführen wird.
+Es erscheint ein zweites Fenster, in dem Sie darauf hingewiesen werden, dass Ihnen der Link zur Wiederherstellung der Backup-Datei per E-Mail gesendet wird und dass OVHcloud keine automatische Wiederherstellung auf Ihrem Cloud Web Hosting durchführen wird.
 
 ![backupftpcw](images/GenerateABackup3.png){.thumbnail}
 
 Klicken Sie auf `Bestätigen`{.action}, um Ihre Anfrage zu bestätigen.
 
-Wenn die Erstellung des Backups erfolgreich gestartet wurde, erscheint in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} folgende Nachricht :
+Wenn die Erstellung des Backups erfolgreich gestartet wurde, erscheint in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) folgende Nachricht:
 
 ![backupftpcw](images/BackupInProgress.png){.thumbnail}
 
-Die Erstellung des Backups dauert zwischen 10 und 15 Minuten, um durchgeführt zu werden.
+Die Erstellung des Backups dauert zwischen 10 und 15 Minuten.
 
 #### Schritt 2 - Backup wiederherstellen
 
-Sobald das Backup erstellt wurde erhalten Sie eine E-Mail an die E-Mail-Adresse, die der Administrator-Kennung Ihres Cloud Web Hostings zugewiesen ist.<br>
-Diese E-Mail enthält einen Download-Link, der **9 Tage** nach Eingang der E-Mail gültig ist:
+Wenn das Backup bereit ist, erhalten Sie eine E-Mail an die E-Mail-Adresse, die der Administrator-Kundenkennung Ihres Cloud Web Hostings zugewiesen ist.<br>
+Diese E-Mail enthält einen Download-Link, der **9 Tage** ab Eingang der E-Mail gültig ist:
 
 ![backupftpcw](images/mailBackup.png){.thumbnail}
 
-Die so heruntergeladene Datei ist im .tar.gz *Format*.
+Die heruntergeladene Datei ist im Format *.tar.gz*.
 
 ### Backup wiederherstellen
 
-Sobald Ihre Dateien heruntergeladen wurden, [können Sie sich mit einem FTP](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/)-Programm wie [Filezilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/) mit Ihrem FTP-Bereich verbinden und die gewünschten Dateien durch die abgerufenen ersetzen.
+Sobald Ihre Dateien heruntergeladen wurden, können Sie sich [auf Ihrem FTP-Speicherplatz einloggen](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/), zum Beispiel mit der FTP-Software [Filezilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/), und dann die betreffenden Dateien des Hostings mit denen aus dem Backup ersetzen.
 
 > [!primary]
 >
-> Verwenden Sie die in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angegebenen Ports für SFTP- und SSH-Verbindungen, da Port 22 für Ihr Cloud Web Hosting nicht funktioniert.
+> Verwenden Sie die in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angegebenen Ports für SFTP- und SSH-Verbindungen, da Port 22 für Ihr Cloud Web Hosting nicht funktioniert.
 >
 
 ## Weiterführende Informationen 
 
-[Mit dem Speicherplatz Ihres Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/){.external}
+[Mit dem Speicherplatz Ihres Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/)
 
-[Mit Filezilla verbinden](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
+[Verwendung von Filezilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
 
-Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontaktieren Sie die [OVHcloud Partner](https://partner.ovhcloud.com/de/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/) einsehen.
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
 
