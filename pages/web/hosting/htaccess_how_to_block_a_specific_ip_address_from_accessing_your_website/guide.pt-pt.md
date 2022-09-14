@@ -44,7 +44,7 @@ Pode criar vários ficheiros ".htaccess" no [espaço FTP](https://docs.ovh.com/p
 > Para editar (ou criar) estes diretórios, aceda ao espaço FTP do seu alojamento. Caso seja necessário, consulte o guia "[Aceder ao meu espaço de armazenamento](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/)".
 >
 
-## Bloquear um IP, uma gama de IP, um domínio ou todos os IP de um País 
+### Bloquear um IP, uma gama de IP, um domínio ou todos os IP de um País 
 
 Existem várias regras para bloquear os acessos ao seu alojamento através do ".htaccess".<br>
 Esteja atento à sintaxe e aos parâmetros que bloqueia para não ficar bloqueado durante a consulta dos seus websites e/ou scripts alojados.<br>
@@ -235,11 +235,11 @@ Para bloquear o conjunto dos IPs de um país, insira um dos dois códigos seguin
 >> ```
 >>
 
-### Para autorizar apenas alguns endereços IP, uma gama de endereços IP ou o conjunto de endereços IP de um país
+#### Para autorizar apenas alguns endereços IP, uma gama de endereços IP ou o conjunto de endereços IP de um país
 
 Em vez de restringir o acesso a um ou vários IP e deixar os outros aceder ao seu alojamento, pode efetuar o contrário bloqueando o conjunto dos IP e autorizando apenas um ou vários IP a aceder ao seu serviço.
 
-###### Autorizar um ou vários endereços IP
+##### Autorizar um ou vários endereços IP
 
 Para autorizar apenas um IP a aceder ao seu serviço, insira um dos dois códigos seguintes no seu ficheiro ".htaccess":
 
@@ -278,7 +278,7 @@ Para autorizar apenas um IP a aceder ao seu serviço, insira um dos dois código
 >> ```
 >>
 
-###### Autorizar uma gama de endereços IP
+##### Autorizar uma gama de endereços IP
 
 Para autorizar um intervalo de endereços IP a aceder ao seu serviço, insira um dos dois códigos seguintes no seu ficheiro ".htaccess":
 
@@ -318,7 +318,7 @@ Para autorizar um intervalo de endereços IP a aceder ao seu serviço, insira um
 >> ```
 >>
 
-###### Autorizar o conjunto dos endereços IP de um país
+##### Autorizar o conjunto dos endereços IP de um país
 
 Para autorizar o acesso ao seu serviço a todos os endereços IP de um país, insira um dos seguintes códigos no seu ficheiro ".htaccess":
 
@@ -363,7 +363,7 @@ Para autorizar o acesso ao seu serviço a todos os endereços IP de um país, in
 >> ```
 >>
 
-#### Complementos no ficheiro ".htaccess"
+### Complementos no ficheiro ".htaccess"
 
 Independentemente da segurança do acesso geral ao alojamento, o ficheiro ".htaccess" permite realizar outras ações. Encontrará a seguir outros três tutoriais da OVHcloud sobre o assumpto:
 

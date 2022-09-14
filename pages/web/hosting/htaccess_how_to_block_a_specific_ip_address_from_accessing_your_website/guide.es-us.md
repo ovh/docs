@@ -34,7 +34,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Disponer de un [hosting OVHcloud](https://www.ovhcloud.com/es/web-hosting/)
 
-## En la práctica
+## Procedimiento
 
 > [!primary]
 >
@@ -45,7 +45,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 > Para editar (o crear) estos directorios, conéctese al espacio FTP de su alojamiento. Si lo necesita, consulte la guía "Acceder a mi espacio de almacenamiento" (https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
 >
 
-## Bloquear una IP, un rango de IP, un dominio o todas las IP de un país 
+### Bloquear una IP, un rango de IP, un dominio o todas las IP de un país 
 
 Hay varias reglas disponibles para bloquear los accesos al alojamiento a través del ".htaccess".<br>
 Preste especial atención a la sintaxis y a los parámetros que bloquee para evitar que se bloquee usted mismo durante la consulta de sus sitios web y/o scripts alojados.<br>
@@ -236,7 +236,7 @@ Para bloquear todas las IP de un país, introduzca uno de los siguientes código
 >> ```
 >>
 
-## Para autorizar solo algunas IP, un rango de IP o el conjunto de IP de un país
+### Para autorizar solo algunas IP, un rango de IP o el conjunto de IP de un país
 
 En lugar de restringir el acceso a una o más IP y dejar que el resto acceda al alojamiento, puede hacer lo contrario bloqueando todas las IP y permitiendo el acceso a su servicio a una o más IP.
 
@@ -319,7 +319,7 @@ Para autorizar a un rango de IP a acceder al servicio, introduzca uno de los sig
 >> ```
 >>
 
-### Autorizar el conjunto de IP de un país
+#### Autorizar el conjunto de IP de un país
 
 Para autorizar a todas las IP de un país a acceder al servicio, introduzca uno de los siguientes códigos en el archivo ".htaccess":
 
@@ -371,10 +371,10 @@ Independientemente de la seguridad en el acceso general al alojamiento, el archi
 - [Proteger la interfaz de administración de su sitio web a través del ".htaccess"](https://docs.ovh.com/us/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
 - [Reescribir sus URLs gracias al "mod_rewrite"](https://docs.ovh.com/us/es/hosting/web_hosting_htaccess_reescritura_de_url_con_mod_rewrite/).
 
-## Ir más lejos <a name="go-further"></a>
+## Más información <a name="go-further"></a>
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones (pestañas de soporte)(https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

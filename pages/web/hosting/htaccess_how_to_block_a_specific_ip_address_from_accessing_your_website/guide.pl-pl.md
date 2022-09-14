@@ -6,7 +6,7 @@ section: Przekierowania i uprawnienia dostępu
 order: 01
 ---
 
-**Ostatnia aktualizacja z dnia 12/09/2022**
+**Ostatnia aktualizacja z dnia 12-09-2022**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -44,7 +44,7 @@ Możesz utworzyć kilka plików ".htaccess" w [przestrzeni FTP](https://docs.ovh
 > Aby edytować (lub utworzyć) te katalogi, zaloguj się do przestrzeni FTP Twojego hostingu. W razie potrzeby skorzystaj z przewodnika "[Dostęp do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/)".
 >
 
-## Blokuj IP, zakres adresów IP, domenę lub wszystkie adresy IP w danym kraju 
+### Blokuj IP, zakres adresów IP, domenę lub wszystkie adresy IP w danym kraju 
 
 Aby zablokować dostęp do Twojego hostingu za pomocą ".htaccess".<br>
 Zalecamy ostrożność podczas tworzenia składni oraz ustawień, które blokujesz, aby uniknąć blokady Twojej strony WWW podczas wyświetlania strony i/lub hostowanych skryptów.<br>

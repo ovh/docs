@@ -34,7 +34,7 @@ Puoi creare diversi file ".htaccess" in [lo spazio FTP](https://docs.ovh.com/it/
 
 - Disporre di un [hosting condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
 
-## In pratica
+## Procedura
 
 > [!primary]
 >
@@ -64,7 +64,7 @@ In caso di errore, accedi allo [spazio FTP](https://docs.ovh.com/it/hosting/acce
 >
 >
 
-##### Blocca un IP
+#### Bloccare un IP
 
 Per bloccare un indirizzo IP specifico, inserisci uno dei due codici seguenti nel tuo file ".htaccess":
 
@@ -144,7 +144,7 @@ Per bloccare un intervallo di indirizzi IP, inserisci uno dei due codici seguent
 >> ```
 >>
 
-#### Blocca un dominio
+#### Bloccare un dominio
 
 Alcuni domini possono accedere al tuo hosting tramite reindirizzamenti o richieste.
 
@@ -372,7 +372,7 @@ Indipendentemente dalla sicurezza sull'accesso generale all'hosting, il file ".h
 - [Proteggere l'interfaccia di gestione del tuo sito tramite il ".htaccess"](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/).
 - [Effettuare altre operazioni con il file ".htaccess"](https://docs.ovh.com/it/hosting/hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess/).
 
-## Spingiti oltre <a name="go-further"></a>
+## Per saperne di più <a name="go-further"></a>
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 
