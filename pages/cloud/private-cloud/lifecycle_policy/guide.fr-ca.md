@@ -108,7 +108,7 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 |:-----:|:-----:|:-----:|:-----:|:-----:|
 | 300Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
 | 600Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
-| 900Gb | 2016 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
+| 800Gb | 2016 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
 | 1.2Tb | 2016 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
 
 ## Logiciels intégrés
@@ -118,6 +118,8 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 Pour connaître la politique de cycle de vie des produits VMware, merci de vous référer à la publication de l'éditeur accessible à l'url suivante:
 
 [VMware Lifecycle](https://lifecycle.vmware.com/#/)
+
+Note: VMware a étendu le support de NSX sur les infrastructures OVHcloud jusqu'au 15/01/2023.
 
 ### Cycle de vie Veeam Backup & Replication
 

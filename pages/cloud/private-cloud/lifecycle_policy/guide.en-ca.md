@@ -108,7 +108,7 @@ This table presents a summary of the different phases of the lifecycle of the se
 |:-----:|:-----:|:-----:|:-----:|:-----:|
 | 300Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
 | 600Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
-| 900Gb | 2016 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
+| 800Gb | 2016 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
 | 1.2Tb | 2016 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
 
 ## Integrated Software
@@ -118,6 +118,8 @@ This table presents a summary of the different phases of the lifecycle of the se
 To know the lifecycle policy of VMware products, please refer to the editor's publication accessible at the following URL:
 
 [VMware Product Lifecycle](https://lifecycle.vmware.com/#/)
+
+Note: VMware has extended the support of NSX on OVHcloud infrastructures until 15/01/2023.
 
 ### Veeam Backup & Replication lifecycle policy
 
