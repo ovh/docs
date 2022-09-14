@@ -244,7 +244,7 @@ If you want your **AI Deploy app** to be accessible without the need to authenti
 - You can imagine deploying an AI model with an other tool: **Flask**. Refer to this [tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/).
 - Do you want to use **Streamlit** to create a audio classification app? [Here it is](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

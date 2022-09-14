@@ -170,7 +170,7 @@ As soon as you access your notebook, you will see your different folders contain
 
 ![image](images/ui-notebook-containers.png){.thumbnail}
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

@@ -109,7 +109,7 @@ You can use it directly on OVHcloud AI Notebooks in few minutes.
 - You can also use the **Weights & Biases** tool in an AI Training job by following this [tutorial](https://docs.ovh.com/ie/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
 - It is possible to integrate **Weights and Biases** to compare the performance of pre-trained models like ResNet50 for image classification. Take a look at this [notebook](https://docs.ovh.com/ie/en/publiccloud/ai/notebooks/tuto-transfer-learning-resnet/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

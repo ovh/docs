@@ -69,7 +69,7 @@ Only the HTTP layer is accessible.
 
 -   Public Cloud Object Storage (Any Region)
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

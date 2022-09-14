@@ -107,7 +107,7 @@ Rather than deleting and recreating the token you can renew it. Simply run:
 ovhai token renew <token-id>
 ```
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

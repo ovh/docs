@@ -195,7 +195,7 @@ If your notebook has shut down unexpectedly, it may be due to an issue in our ba
 
 Your ephemeral local storage will be lost.
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

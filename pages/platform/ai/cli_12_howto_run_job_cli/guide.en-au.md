@@ -212,7 +212,7 @@ For more information about the job and its lifecycle refer to the [jobs page](ht
 
 To know more about the CLI and available commands to interact with your job check out the [overview of `ovhai`](https://docs.ovh.com/au/en/publiccloud/ai/cli/overview-cli)
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

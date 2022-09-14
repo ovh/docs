@@ -147,7 +147,7 @@ AI Notebooks can access the public network (Internet).
 AI Notebooks cannot use or access the private network (OVHcloud vRack).
 
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

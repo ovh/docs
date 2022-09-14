@@ -69,7 +69,7 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 - You can compare AI models based on resource consumption, accuracy and training time. Refer to this [tutorial](https://docs.ovh.com/ca/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
 - It is possible to do the same thing with **PyTorch** based on this [notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/pytorch/multi_gpu_benchmark.ipynb).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

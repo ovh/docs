@@ -111,7 +111,7 @@ Users can enable a `cache` feature that allow jobs and notebooks to re-use avail
 
 - You can check how to [launch an AI Training job with attached volumes](https://docs.ovh.com/gb/en/publiccloud/ai/cli/run-job-cli/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

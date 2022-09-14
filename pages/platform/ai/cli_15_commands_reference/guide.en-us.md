@@ -215,7 +215,7 @@ ovhai config set <region>
 > `<region>` is the new region name (`GRA` or `BHS`), in which you want to be placed.
 >
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

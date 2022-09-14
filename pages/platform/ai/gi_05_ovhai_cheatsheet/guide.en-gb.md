@@ -18,7 +18,7 @@ The goal of this cheat sheet is to provide a quick reference to all the commands
 
 [![ovhai CLI cheat sheet - part 02](images/ovhai-cheat-sheet-02.jpg)](https://github.com/ovh/docs/blob/develop/pages/platform/ai/gi_05_ovhai_cheatsheet/ovhai-cheat-sheet.pdf)
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

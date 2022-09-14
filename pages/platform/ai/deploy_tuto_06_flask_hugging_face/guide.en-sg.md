@@ -240,7 +240,7 @@ ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/sentime
 - You can also imagine deploying an Object Detection model with **Flask** in this [tutorial](https://docs.ovh.com/sg/en/publiccloud/ai/deploy/web-service-yolov5/).
 - Discover an other tool to deploy easily AI models: **Gradio**. Refer to this [documentation](https://docs.ovh.com/sg/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

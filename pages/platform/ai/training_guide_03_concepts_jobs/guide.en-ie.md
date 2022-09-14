@@ -55,7 +55,7 @@ During its lifetime the job will transition between the following statuses:
 -   You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/gb/en/storage/pcs/create-container/).
 -   You can check the [OVHcloud documentation on how to submit a job](https://docs.ovh.com/ie/en/publiccloud/ai/training/submit-job)
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

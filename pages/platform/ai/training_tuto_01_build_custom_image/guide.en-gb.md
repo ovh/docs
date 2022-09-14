@@ -157,7 +157,7 @@ A full **Dockerfile** example about building a **Jupyter** notebook image with *
 - You can also build a custom Docker image to deploy a **Streamlit** app. [Here it is](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/build-use-streamlit-image/).
 - You can imagine deploying a Docker image for data processing and training tasks. Refer to this [tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

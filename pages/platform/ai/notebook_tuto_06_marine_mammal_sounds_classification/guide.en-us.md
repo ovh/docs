@@ -87,7 +87,7 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 - If you want to deploy a **Streamlit** app in order to classify marine mammal sounds using your model, please check out this [notebook](https://docs.ovh.com/us/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
 - You can also compare two methods for audio classification task by following this [tutorial](https://docs.ovh.com/us/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

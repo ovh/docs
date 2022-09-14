@@ -166,7 +166,7 @@ Learn how to access your object storage data from your notebooks [here](https://
 
 Learn how to share your notebooks with other people [here](https://docs.ovh.com/ca/en/publiccloud/ai/cli/sharing-notebooks/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

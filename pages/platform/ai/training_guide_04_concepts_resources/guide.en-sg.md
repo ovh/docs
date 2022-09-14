@@ -111,7 +111,7 @@ This panel shows the usage and limit of ephemeral storage allocated to your job.
 > [!warning]
 > If your usage go beyond the limit of the ephemeral storage, your job will be evicted.
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

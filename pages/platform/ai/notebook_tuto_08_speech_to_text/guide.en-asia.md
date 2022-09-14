@@ -117,7 +117,7 @@ Once the repository has been cloned, find your notebook by following this path: 
 
 - With NLP, you can do **sentiment analysis**. For more information, click [here](https://docs.ovh.com/asia/en/publiccloud/ai/notebooks/tuto-hugging-face-sentiment-analysis/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

@@ -73,7 +73,7 @@ Enjoy.
 - Check how to run Tensorflow code with GPUs [here](https://docs.ovh.com/ie/en/publiccloud/ai/training/tensorflow-gpu-examples/).
 - You can compare AI models based on resource consumption, accuracy and training time. Refer to this [tutorial](https://docs.ovh.com/ie/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

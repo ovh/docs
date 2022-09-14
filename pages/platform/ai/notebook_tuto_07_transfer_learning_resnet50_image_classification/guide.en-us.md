@@ -153,7 +153,7 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 - If you want to deploy a Gradio app for **Image classification** or **Sketch recognition**, check out this [documentation](https://docs.ovh.com/us/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 - If you are interested in **Computer Vision**, familiarise yourself with Object Detection by following this [tutorial](https://docs.ovh.com/us/en/publiccloud/ai/notebooks/yolov5-example/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

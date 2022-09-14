@@ -173,7 +173,7 @@ During its lifetime the AI Notebook will transition between the following status
 - `Stopped`: The AI Notebook is stopped and `RW` volumes have been synchronized back to your Object Storage. Compute resources are released.
 - `Deleted`: The AI Notebook data is fully deleted, you don't pay anything.
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

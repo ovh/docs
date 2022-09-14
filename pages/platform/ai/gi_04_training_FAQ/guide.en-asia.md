@@ -68,7 +68,7 @@ Here are the most frequently asked questions about AI Training.
 > > Essential information about building custom Docker container can be found [here](https://docs.ovh.com/asia/en/publiccloud/ai/training/build-use-custom-image). Advanced information can be found [here](https://docs.docker.com/engine/reference/builder/)
 > >
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

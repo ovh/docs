@@ -276,7 +276,7 @@ ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/yolov5_
 - You can imagine deploying a **Flask** app in order to to classify the feelings in a text. Refer to this [tutorial](https://docs.ovh.com/us/en/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/).
 - Another way to create an AI Deploy app is to use **Streamlit**! [Here it is](https://docs.ovh.com/us/en/publiccloud/ai/deploy/build-use-streamlit-image/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

@@ -63,7 +63,7 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-tr
 - Another way to track your training with an AI notebook is to use **Weights & Biases**. Follow this [tutorial](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/tuto-weights-and-biases/).
 - If you want to launch **TensorBoard** in a job, please refer to this [documentation](https://docs.ovh.com/au/en/publiccloud/ai/training/tuto-tensorboard-inside-job).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

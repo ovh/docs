@@ -190,7 +190,7 @@ Once the AI Deploy app is running you can access your Streamlit application dire
 - Do you want to use **Streamlit** to deploy an AI model for audio classification task? [Here it is](https://docs.ovh.com/sg/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
 - You can imagine deploying an AI model with an other tool: **Flask**. Refer to this [tutorial](https://docs.ovh.com/sg/en/publiccloud/ai/deploy/tuto-build-use-flask-image/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

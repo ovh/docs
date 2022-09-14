@@ -167,7 +167,7 @@ A preview of the three notebooks can be found on GitHub [here](https://github.co
 - You can also deploy a **Flask** app to classify text sentiments with **Hugging Face** models. Check this [documentation](https://docs.ovh.com/sg/en/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/).
 - If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](https://docs.ovh.com/sg/en/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/).
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

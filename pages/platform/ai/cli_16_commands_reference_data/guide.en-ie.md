@@ -265,7 +265,7 @@ Use this command to delete a single object with name `file1` inside the containe
 ovhai data delete GRA my-container file1
 ```
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

@@ -112,7 +112,7 @@ After some time your job should go in `interrupted` state meaning that the job h
 >
 > Before going into `interrupted` state, your job may run through `finalizing` state. During this phase all data inside `read & write volumes` are saved inside their linked containers in your object storage.
 
-## Feedback
+## Feedback 
 
 Please send us your questions, feedback and suggestions to improve the service:
 

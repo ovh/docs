@@ -90,6 +90,6 @@ We schematize our AI offers this way:
 | Easily import data from Git/* via UI                                                                               | X                          |                            |                            |
 | Unchanging endpoint URL                                                                                            |                            |                            | X                          |
 
-## Feedback
+## Feedback 
 
 Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
