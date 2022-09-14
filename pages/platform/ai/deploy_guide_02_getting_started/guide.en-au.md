@@ -54,7 +54,7 @@ AI Deploy allows a user to deploy applications from two sources:
 
 In this tutorial, we will select an OVHcloud Docker image to deploy your first **AI Deploy app**.
 
-Enter the name of the image: `ovhcom/ai-deploy-hello-World`
+Enter the name of the image: `ovhcom/ai-deploy-hello-world`
 
 > [!primary]
 >
