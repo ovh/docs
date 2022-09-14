@@ -1,5 +1,5 @@
 ---
-title: OVHcloud unterstützte Nutanix AOS Versionen (EN)
+title: Von OVHcloud unterstützte Nutanix AOS Versionen (EN)
 slug: nutanix-aos-supported-versions
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-aos-supported-versions/'
