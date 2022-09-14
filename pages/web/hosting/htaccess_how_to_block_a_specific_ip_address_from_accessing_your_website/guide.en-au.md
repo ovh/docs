@@ -10,9 +10,9 @@ order: 01
 
 ## Objective
 
-The aim of this tutorial is to help you secure access to your external network sites, and prevent or correct any DDoS intrusions or attempted DDoS attacks.
+The aim of this tutorial is to help you secure access to your websites from external networks, and prevent intrusions and DDoS attacks.
 
-You can do this with a « .htaccess » file, a particular text file, that the web server (Apache) detects, and that allows you to define special rules for a directory and all of its subdirectories.
+You can do this with a ".htaccess" file, a particular text file, that the web server (Apache) detects, and that allows you to define special rules for a directory and all of its subdirectories.
 
 You can create multiple « .htaccess » files in [the FTP space](https://docs.ovh.com/au/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting but **only one** per directory or subdirectory to avoid conflicts between different .htaccess files.
 
@@ -27,9 +27,9 @@ You can create multiple « .htaccess » files in [the FTP space](https://docs.ov
 
 ## Requirements
 
-- You must have [OVHcloud shared hosting](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
 
-## In practice
+## Instructions
 
 > [!primary]
 >

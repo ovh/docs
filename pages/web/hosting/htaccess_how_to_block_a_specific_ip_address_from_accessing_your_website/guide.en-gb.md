@@ -27,7 +27,7 @@ You can create multiple ".htaccess" files in [the FTP space](https://docs.ovh.co
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 
 ## Instructions
 
@@ -373,4 +373,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>. 

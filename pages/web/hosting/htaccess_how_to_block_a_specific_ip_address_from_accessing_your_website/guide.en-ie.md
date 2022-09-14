@@ -10,13 +10,13 @@ order: 01
 
 ## Objective
 
-The aim of this tutorial is to help you secure access to your external network sites, and prevent or correct any DDoS intrusions or attempted DDoS attacks.
+The aim of this tutorial is to help you secure access to your websites from external networks, and prevent intrusions and DDoS attacks.
 
-You can do this with a « .htaccess » file, a particular text file, that the web server (Apache) detects, and that allows you to define special rules for a directory and all of its subdirectories.
+You can do this with a ".htaccess" file, a particular text file, that the web server (Apache) detects, and that allows you to define special rules for a directory and all of its subdirectories.
 
-You can create multiple « .htaccess » files in [the FTP space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting but **only one** per directory or subdirectory to avoid conflicts between different .htaccess files.
+You can create multiple ".htaccess" files in [the FTP space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting but **only one** per directory or subdirectory to avoid conflicts between different .htaccess files.
 
-**Find out how to block access to your website for certain IP addresses via a « .htaccess » file.**
+**Find out how to block access to your website for certain IP addresses via a ".htaccess" file.**
 
 > [!warning]
 >
@@ -27,23 +27,23 @@ You can create multiple « .htaccess » files in [the FTP space](https://docs.ov
 
 ## Requirements
 
-- You must have [OVHcloud shared hosting](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
 
-## In practice
+## Instructions
 
 > [!primary]
 >
-> The « .htaccess » file can be placed in several different folders, while respecting the rule of **only one** « .htaccess » file per folder or subfolder.
+> The ".htaccess" file can be placed in several different folders, while respecting the rule of **only one** ".htaccess" file per folder or subfolder.
 >
-> The settings defined by a « .htaccess » file apply to the directory where it is installed and to all subdirectories.
+> The settings defined by a ".htaccess" file apply to the directory where it is installed and to all subdirectories.
 >
 > To edit (or create) these directories, log in to your hosting plan’s FTP space. If you need help with this, please refer to our guide on [Accessing my storage space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/).
 >
 
 ### Block an IP, a range of IPs, a domain or all the IPs of a Country
 
-Several rules are available to block access to your hosting plan via « .htaccess ».<br>
-Be careful with the syntax and settings that you block, so that you don’t get stuck viewing your hosted sites and/or scripts yourself.<br>
+Several rules are available to block access to your hosting plan via ".htaccess".<br>
+Be careful with the syntax and settings that you block to prevent blocking yourself from viewing your hosted sites and/or scripts.<br>
 In the event of an error, you can always log in to [the FTP space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting to correct the situation.
 
 > [!primary]
@@ -60,7 +60,7 @@ In the event of an error, you can always log in to [the FTP space](https://docs.
 
 ### Block an IP
 
-To block a specific IP address, insert one of the following two codes into your « .htaccess » file:
+To block a specific IP address, insert one of the following two codes into your ".htaccess" file:
 
 > [!tabs]
 > Historical Syntax
@@ -100,7 +100,7 @@ To block a specific IP address, insert one of the following two codes into your 
 
 ### Block an IP range
 
-To block an IP address range, insert one of the following two codes into your « .htaccess » file:
+To block an IP address range, insert one of the following two codes into your ".htaccess" file:
 
 > [!tabs]
 > Historical Syntax
@@ -142,7 +142,7 @@ To block an IP address range, insert one of the following two codes into your «
 
 Some domains can access your hosting via redirections or requests.
 
-To block a domain, insert one of the following two codes into your « .htaccess » file:
+To block a domain, insert one of the following two codes into your ".htaccess" file:
 
 > [!tabs]
 > Historical Syntax
@@ -182,17 +182,17 @@ To block a domain, insert one of the following two codes into your « .htaccess 
 
 > [!primary]
 >
-> All IP addresses (including public IP addresses) have country-wide geolocation. This way, you can get an idea of where an IP's traffic comes from, and physically spot the IP. 
+> All IP addresses (particularly public IP addresses) have country-wide geolocation. This way, you can get an idea of where an IP's traffic comes from, and physically locate the IP. 
 >
-> The « .htaccess » allows, thanks to this element, to block all the geolocated IPs in a country. 
+> The ".htaccess" allows, thanks to this element, to block all the geolocated IPs from a country. 
 > In other words, anyone who tries to visit your site from this country will be blocked (unless they use a VPN connection with a geolocated IP in another country).
 >
-> Blocks via the « .htaccess » are done through the two-letter Country Codes (ISO 3166-1 alpha2 standard) of the countries.
+> Blocks via the ".htaccess" are done through the two-letter Country Codes (ISO 3166-1 alpha2 standard) of the countries.
 >
 > Several websites list the countries and their respective Country Codes, including [https://www.iban.com/country-codes](https://www.iban.com/country-codes){.external} (independent of OVHcloud).
 >
 
-To block all IPs in a country, insert one of the following two codes into your « .htaccess » file:
+To block all IPs in a country, insert one of the following two codes into your ".htaccess" file:
 
 > [!tabs]
 > Historical Syntax
@@ -203,7 +203,7 @@ To block all IPs in a country, insert one of the following two codes into your �
 >> ```
 >>
 > Syntax from Apache 2.3 
->> To be placed at the top of your « .htaccess »
+>> To be placed at the top of your ".htaccess"
 >>
 >> ```bash
 >> RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^(Country_Code)$
@@ -223,7 +223,7 @@ To block all IPs in a country, insert one of the following two codes into your �
 >> ```
 >>
 > Syntax from Apache 2.3 
->> To be placed at the top of your « .htaccess »
+>> To be placed at the top of your ".htaccess"
 >>
 >> ```bash
 >> RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^(FJ|GR)$
@@ -237,7 +237,7 @@ Rather than restricting access to one or more IPs and allowing others to access 
 
 ### Authorise one or more IPs
 
-To authorise only one IP to access your service, insert one of the following two codes into your « .htaccess » file:
+To authorise only one IP to access your service, insert one of the following two codes into your ".htaccess" file:
 
 > [!tabs]
 > Historical Syntax 
@@ -276,7 +276,7 @@ To authorise only one IP to access your service, insert one of the following two
 
 ### Authorise an IP range
 
-To authorise a range of IPs to access your service, insert one of the following two codes into your « .htaccess » file:
+To authorise a range of IPs to access your service, insert one of the following two codes into your ".htaccess" file:
 
 > [!tabs]
 > Historical Syntax
@@ -288,7 +288,7 @@ To authorise a range of IPs to access your service, insert one of the following 
 >> ```
 >>
 > Syntax from Apache 2.3 
->> To be placed at the top of your « .htaccess »
+>> To be placed at the top of your ".htaccess"
 >>
 >> ```bash
 >> Require ip IP_range
@@ -307,7 +307,7 @@ To authorise a range of IPs to access your service, insert one of the following 
 >> ```
 >>
 > Syntax from Apache 2.3 
->> To be placed at the top of your « .htaccess »
+>> To be placed at the top of your ".htaccess"
 >>
 >> ```bash
 >> Require ip 192.168.1
@@ -316,7 +316,7 @@ To authorise a range of IPs to access your service, insert one of the following 
 
 ### Authorise all the IPs of a country
 
-To authorise all IPs in a country to access your service, insert one of the following two codes into your « .htaccess » file:
+To authorise all IPs in a country to access your service, insert one of the following two codes into your ".htaccess" file:
 
 > [!tabs]
 > Historical Syntax
@@ -329,7 +329,7 @@ To authorise all IPs in a country to access your service, insert one of the foll
 >> ```
 >>
 > Syntax from Apache 2.3 
->> To be placed at the top of your « .htaccess »
+>> To be placed at the top of your ".htaccess"
 >>
 >> ```bash
 >> RewriteCond %{ENV:GEOIP_COUNTRY_CODE} !^(Country_Code)$
@@ -351,7 +351,7 @@ To authorise all IPs in a country to access your service, insert one of the foll
 >> ```
 >>
 > Syntax from Apache 2.3 
->> To be placed at the top of your « .htaccess »
+>> To be placed at the top of your ".htaccess"
 >>
 >> ```bash
 >> RewriteCond %{ENV:GEOIP_COUNTRY_CODE} !^(FJ|GR)$
@@ -359,13 +359,13 @@ To authorise all IPs in a country to access your service, insert one of the foll
 >> ```
 >>
 
-### Add-ins to the « .htaccess » file
+### Further actions with the ".htaccess" file
 
-Regardless of the security of general access to the hosting, the « .htaccess » file allows you to perform other actions. Below are three other OVHcloud tutorials on the subject:
+Regardless of the security of general access to the hosting, the ".htaccess" file allows you to perform other actions. Below are three other OVHcloud tutorials on the subject:
 
-- [Protect your website’s administration interface via « .htaccess »](https://docs.ovh.com/ie/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+- [Protect your website’s administration interface via ".htaccess"](https://docs.ovh.com/ie/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 - [Rewrite your URLs using mod_rewrite](https://docs.ovh.com/ie/en/hosting/htaccess_url_rewriting_using_mod_rewrite/).
-- [Perform other operations with the « .htaccess » file](https://docs.ovh.com/ie/en/hosting/what_else_can_you_do_with_the_htaccess_file/).
+- [Perform other operations with the ".htaccess" file](https://docs.ovh.com/ie/en/hosting/what_else_can_you_do_with_the_htaccess_file/).
 
 ## Go further <a name=`go-further`></a>
 
