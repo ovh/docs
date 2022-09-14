@@ -8,7 +8,7 @@ section: FAQ
 order: 3
 ---
 
-**Last updated 30th May 2022**
+**Last updated 14th September 2022**
 
 > [!warning]
 >
@@ -120,6 +120,8 @@ This table presents a summary of the different phases of the lifecycle of the se
 To know the lifecycle policy of VMware products, please refer to the editor's publication accessible at the following URL:
 
 [VMware Product Lifecycle](https://lifecycle.vmware.com/#/)
+
+Note: VMware has extended the support of NSX on OVHcloud infrastructures until 15/01/2023.
 
 ### Veeam Backup & Replication lifecycle policy
 
