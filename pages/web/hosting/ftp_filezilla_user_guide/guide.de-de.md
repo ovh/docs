@@ -1,8 +1,8 @@
 ---
-title: 'Tutorials - FileZilla mit Ihrem OVHcloud Hosting nutzen'
+title: "Tutorials - FileZilla mit Ihrem OVHcloud Hosting nutzen"
 slug: webhosting_hilfe_zur_verwendung_von_filezilla
-excerpt: 'Hier finden Sie ein Tutorial zur Verwendung der Filezilla Software auf Ihrem Webhosting.'
-section: 'FTP und SSH'
+excerpt: "Hier finden Sie ein Tutorial zur Verwendung der Filezilla Software auf Ihrem Webhosting."
+section: FTP und SSH
 order: 04
 ---
 
@@ -29,7 +29,7 @@ Es erlaubt es, Dateien oder Ihre Website online zu stellen, indem Sie sich [mit 
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)angemeldet.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)angemeldet.
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
 - Sie haben das Filezilla-Programm auf Ihrem Computer installiert. Diese ist kostenlos verfügbar auf der Seite [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
@@ -283,7 +283,7 @@ Indem Sie mit der rechten Maustaste auf das Icon klicken, können Sie den Vergle
 - Grün: Die Datei ist aktueller als die farblose Datei auf der anderen Seite.
 - Rot: Die Dateigrößen sind unterschiedlich.
 
-## Mehr <a name="go-further"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 Im Folgenden finden Sie den Link zur [Anleitung zur Behebung wiederholter Fehler bei der Verwendung eines FTP-Programms](https://docs.ovh.com/de/hosting/webhosting_haufige_ftp-probleme/).
 

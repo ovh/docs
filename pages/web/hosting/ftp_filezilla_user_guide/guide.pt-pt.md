@@ -1,8 +1,8 @@
 ---
-title: 'Tutoriais - Utilizar o FileZilla com o seu alojamento OVHcloud'
+title: "Tutoriais - Utilizar o FileZilla com o seu alojamento OVHcloud"
 slug: partilhado_guia_de_utilizacao_do_filezilla
-excerpt: 'Encontre aqui um tutorial para a utilização do software Filezilla no seu alojamento partilhado.'
-section: 'FTP e SSH'
+excerpt: "Encontre aqui um tutorial para a utilização do software Filezilla no seu alojamento partilhado."
+section: FTP e SSH
 order: 04
 ---
 
