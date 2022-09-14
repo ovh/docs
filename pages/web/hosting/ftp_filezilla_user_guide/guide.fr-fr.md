@@ -272,7 +272,7 @@ En effectuant un clic-droit sur l'icône, vous pouvez changer le mode de compara
 - comparer l'horodatage ;
 - masquer les fichiers identiques.
 
-**Signification des couleurs :
+**Signification des couleurs** :
 
 - Jaune : le fichier existe uniquement d'un seul côté.
 - Vert : le fichier est plus récent que le fichier non coloré de l'autre côté.
