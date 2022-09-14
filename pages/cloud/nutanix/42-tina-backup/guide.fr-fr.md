@@ -85,9 +85,9 @@ Une sur un cluster Nutanix au Canada relié en VPN avec pour rôle :
 
 > [!Primary]
 >
-> Le choix fait dans ce guide n'est fourni qu'a titre d'exemple il est plus judicieux d'installer les serveurs de déduplication principal hors du cluster (par exemple : sur un serveur baremetal) mais sur le même réseau que le cluster Nutanix. 
+> Le choix fait dans ce guide n'est fourni qu'a titre d'exemple il est plus judicieux d'installer les serveurs de déduplication principal hors du cluster (par exemple : sur un serveur baremetal) mais sur le même réseau que le cluster Nutanix (sur un même vRack au sein d'OVHcloud)
 >
-> Le serveur de déduplication qui sert pour la réplication devra être lui sur un site distant.
+> Le serveur de déduplication qui sert pour la réplication doit être lui sur un site distant.
 >
 
 <a name="installation"></a>
