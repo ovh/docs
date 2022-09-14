@@ -1,17 +1,17 @@
 ---
-title: Comparative tables between AI Notebooks, AI Training, AI Apps
+title: Comparative tables between AI Notebooks, AI Training, AI Deploy
 slug: ai-comparative-tables
 excerpt: Discover the main differences between each of the OVHcloud AI tools' bricks
 section: General information
 order: 100
 ---
 
-**Last updated January 5th, 2022.**
+**Last updated 1st September, 2022.**
 
 ## Objective
 
-OVHcloud provides a set of managed tools designed for building your machine learning projects. 
-This guide explains the main differences between our AI tools, commonly called AI Notebooks, AI Training and AI Apps.
+OVHcloud provides a set of managed tools designed for building your machine learning projects.
+This guide explains the main differences between our AI tools, commonly called AI Notebooks, AI Training and AI Deploy.
 
 ## Overview
 
@@ -19,7 +19,7 @@ OVHcloud AI tools work inside our Public Cloud ecosystem. Once logged in to your
 
 - **AI Notebooks**
 - **AI Training**
-- **AI Apps**
+- **AI Deploy**
 
 Each of them are autonomous tools, billed per minute and with shared elements, such as security tokens, etc.
 
@@ -31,13 +31,13 @@ We schematize our AI offers this way:
 
 ## Comparative tables
 
-| Product offers              | AI Notebooks                                                                                 | AI Training                                                                                                                   | AI Apps                                                                                                             |
+| Product offers              | AI Notebooks                                                                                 | AI Training                                                                                                                   | AI Deploy                                                                                                             |
 |-------------------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Description       | Managed Jupyter or VSCode notebook, linked to compute resources (CPU or GPU) and storage.    | Automate your trainings, deploy your own Docker container, linked to compute resources (CPU of GPU), and attached storage.    | Deploy with high-availability your own AI application and models via Docker containers or select one from our catalog |
 | Billing Resources | per minute                                                                                   | per minute                                                                                                                    | per minute                                                                                                          |
 
 
-| AI Features                                                                                                        | AI Notebooks               | AI Training                | AI Apps                    |
+| AI Features                                                                                                        | AI Notebooks               | AI Training                | AI Deploy                    |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------|----------------------------|----------------------------|
 | Managed Jupyter Notebook with preinstalled libraries                                                               | X                          |                            |                            |
 | Managed VSCode Notebook with preinstalled libraries                                                                | X                          |                            |                            |
@@ -47,14 +47,14 @@ We schematize our AI offers this way:
 | Deploy AI applications from a catalog made with partners                                                           |                            |                            | X                          |
 
 
-| Management                                                                                                         | AI Notebooks               | AI Training                | AI Apps                    |
+| Management                                                                                                         | AI Notebooks               | AI Training                | AI Deploy                    |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------|----------------------------|----------------------------|
 | Control panel                                                                                                      | X                          | X                          | X                          |
 | API                                                                                                                | X                          | X                          | X                          |
 | CLI                                                                                                                | X                          | X                          | X                          |
 
 
-| Resources                                                                                                          | AI Notebooks                | AI Training                 | AI Apps                     |
+| Resources                                                                                                          | AI Notebooks                | AI Training                 | AI Deploy                     |
 |--------------------------------------------------------------------------------------------------------------------|-----------------------------|-----------------------------|-----------------------------|
 | CPU resources                                                                                                      | X                           | X                           | X                           |
 | CPU flavors available                                                                                              | ai1-1-CPU                   | ai1-1-CPU                   | ai1-1-CPU                   |
@@ -72,7 +72,7 @@ We schematize our AI offers this way:
 | Ability to add a runtime timeout (via CLI)                                                                         |                             | X                           |                             |
 
 
-| Security                                                                                                           | AI Notebooks               | AI Training                | AI Apps                    |
+| Security                                                                                                           | AI Notebooks               | AI Training                | AI Deploy                    |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------|----------------------------|----------------------------|
 | ACL via Openstack user                                                                                             | X                          | X                          | X                          |
 | ACL via tokens                                                                                                     | X                          | X                          | X                          |
@@ -83,7 +83,7 @@ We schematize our AI offers this way:
 | Auto scaling                                                                                                       |                            |                            | Planned                    |
 
 
-| Advanced features and parameters                                                                                   | AI Notebooks               | AI Training                | AI Apps                    |
+| Advanced features and parameters                                                                                   | AI Notebooks               | AI Training                | AI Deploy                    |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------|----------------------------|----------------------------|
 | Labels                                                                                                             | X                          | X                          | X                          |
 | Start / Stop / Resume                                                                                              | X                          |                            | X                          |
@@ -92,4 +92,4 @@ We schematize our AI offers this way:
 
 ## Feedback
 
-Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
