@@ -62,9 +62,11 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
 #### API instructions
 
 - Create a Kubernetes cluster, in the GRA5 region, using the Kubernetes version 1.24 (the last and recommended version at the time we wrote this tutorial) and we disable "AlwaysPullImages" flag in order to not reach anymore Docker Hub quotas:
- 
- ```
+
+```bash
  POST /cloud/project/{serviceName}/kube
+```
+```json
  {
      "region":"GRA5",
      "name": "my-super-cluster",
@@ -78,12 +80,14 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
          }
      }
  }
- ```
+```
 
 - Reset a cluster with API Server admission plugins customization:
 
-```
+```bash
  POST /cloud/project/{serviceName}/kube/{kubeID}/reset
+```
+```json
  {
      "name": "my-super-cluster",
      "version": "1.24",
@@ -96,12 +100,14 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
          }
      }
  }
- ```
+```
 
 - Update customization:
 
-```
+```bash
   PUT /cloud/project/{serviceName}/kube/{kubeID}/customization
+```
+```json
   {
     "apiServer":{
         "admissionPlugins":{
@@ -110,14 +116,16 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
         }
     }
   }
-  ```
+```
 
 - Get customization:
 
-```
+```bash
   GET /cloud/project/{serviceName}/kube/{kubeID}/customization
+```
 
-# Result:
+Result:
+```json
   {
     "apiServer":{
       "admissionPlugins":{
