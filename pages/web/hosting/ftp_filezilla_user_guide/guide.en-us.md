@@ -19,7 +19,7 @@ You can use it to put files or your website online by [connecting to your web ho
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 > 
-> This tutorial is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialist [provider](https://partner.ovhcloud.com/en-us/) and/or the software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [“Go further”](#go-further) section of this tutorial.
+> This tutorial is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialist [provider](https://partner.ovhcloud.com/en/) and/or the software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [“Go further”](#go-further) section of this tutorial.
 > 
 
 ## Requirements 
@@ -286,7 +286,7 @@ More generally, find all [of our guides related to shared](https://docs.ovh.com/
 
 Do not hesitate to consult the official [page of Filezilla](https://filezilla-project.org/).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-us/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 
