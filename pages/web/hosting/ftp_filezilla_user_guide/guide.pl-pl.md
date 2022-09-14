@@ -114,7 +114,7 @@ Aby przenieść pliki, należy je wybrać w oknie z lewej strony (pliki lokalne)
 
 Po wykonaniu tej operacji pliki zostaną automatycznie umieszczone w kolejce transferów.
 
-![FileZilla](images/1821.png){.thumbnail}
+![FileZilla](images/drag-drop-en.png){.thumbnail}
 
 
 ## Widok kolejki oczekującej

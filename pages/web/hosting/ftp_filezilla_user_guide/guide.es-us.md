@@ -121,7 +121,7 @@ Preste atención para seleccionar correctamente la carpeta de destino en el recu
 
 A continuación, los archivos se pondrán automáticamente en la cola para subirlos al servidor.
 
-![Filezilla-user-guide](images/1821.png){.thumbnail}
+![Filezilla-user-guide](images/drag-drop-en.png){.thumbnail}
 
 
 ## Archivos en cola

@@ -116,7 +116,7 @@ Om uw FTP bestanden over te dragen, kunt u deze eenvoudig selecteren en uitvoere
 
 Zodra dit is gebeurd, worden de bestanden automatisch in de wachtrij gezet, zodat het later op de server kan worden geplaatst.
 
-![FileZilla](images/1821.png){.thumbnail}
+![FileZilla](images/drag-drop-en.png){.thumbnail}
 
 
 ## De wachtrij bekijken

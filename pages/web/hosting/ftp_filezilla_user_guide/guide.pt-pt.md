@@ -114,7 +114,7 @@ Para proceder à transferência dos seus ficheiros via FTP pode simplesmente sel
 
 Após realizar esta operação, os seus ficheiros serão automaticamente colocados na ficha de espera para serem transferidos para o servidor.
 
-![FileZilla](images/1821.png){.thumbnail}
+![FileZilla](images/drag-drop-en.png){.thumbnail}
 
 
 ## Vista da fila de espera

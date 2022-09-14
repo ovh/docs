@@ -116,7 +116,7 @@ Um Ihre Dateien per FTP zu übertragen, wählen Sie sie einfach aus und ziehen s
 
 Die ausgewählten Dateien werden dann automatisch in die Warteschlange für die Übertragung auf den Server aufgenommen.
 
-![FileZilla](images/1821.png){.thumbnail}
+![FileZilla](images/drag-drop-en.png){.thumbnail}
 
 
 ## Anzeige der Warteschlange

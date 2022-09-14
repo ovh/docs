@@ -118,7 +118,7 @@ To transfer files using FTP, you can simply select and drag and drop files from 
 
 Once this is done, your files will automatically get queued to be placed on the server.
 
-![FileZilla](images/1821.png){.thumbnail}
+![FileZilla](images/drag-drop-en.png){.thumbnail}
 
 
 ## The queue

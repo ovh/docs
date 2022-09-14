@@ -145,7 +145,7 @@ Faites attention à bien sélectionner le répertoire cible dans la fenêtre de 
 
 Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en file d'attente pour être déposés sur le serveur.
 
-![hosting](images/1821.png){.thumbnail}
+![hosting](images/drag-drop-fr.png){.thumbnail}
 
 ### Vue sur la file d'attente
 

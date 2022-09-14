@@ -116,7 +116,7 @@ Per trasferire i tuoi file in FTP, selezionali e trascinali dalla finestra di si
 
 Dopo aver realizzato questa operazione, i tuoi file vengono automaticamente messi in lista d'attesa per essere salvati sul server.
 
-![FileZilla](images/1821.png){.thumbnail}
+![FileZilla](images/drag-drop-en.png){.thumbnail}
 
 
 ## Lista d'attesa
