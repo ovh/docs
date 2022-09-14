@@ -85,9 +85,9 @@ Une sur un cluster Nutanix au Canada relié en VPN avec pour rôle :
 
 > [!Primary]
 >
-> Le choix fait dans ce guide n'est fourni qu'a titre d'exemple il est plus judicieux d'installer les serveurs de déduplication principal hors du cluster (par exemple : sur un serveur baremetal) mais sur le même réseau que le cluster Nutanix (sur un même vRack au sein d'OVHcloud)
+> Le choix fait dans ce guide n'est fourni qu'a titre d'exemple il est plus judicieux d'installer les serveurs de déduplication principal hors du cluster (par exemple : sur un serveur baremetal) mais sur le même réseau que le cluster Nutanix (sur un même vRack au sein d'OVHcloud).
 >
-> Le serveur de déduplication qui sert pour la réplication doit être lui sur un site distant.
+> Le serveur de déduplication qui sert pour la réplication doit être sur un site distant.
 >
 
 <a name="installation"></a>
@@ -334,7 +334,7 @@ systemctl enable --now vncserver@:1
 reboot
 ```
 <a name="hddconf"></a>
-#### **Etape 2.5 Configuration des disques supplémentaires sur les machines de déduplication**
+#### **Etape 2.5 Configuration des disques supplémentaires sur les machines de déduplications**
 
 
 
@@ -554,7 +554,7 @@ Saisissez le mot de passe de **VNC** et cliquez sur `OK`{.action}.
 Lancez le programme d'installation `Atempo-tina-4.7.0.6413-Server-Agent-Linux-X64`{.action} au travers d'une console texte.
 
 > [!Primary]
-> Le logiciel d'installation doit être fourni par la société Atempo
+> Le logiciel d'installation doit être fourni par la société Atempo.
 >
 
 ![06 tina server installation 03](images/06-install-tina-server03.png){.thumbnail}
@@ -608,7 +608,7 @@ Choisissez ces options :
 
 > [!warning]
 >
-> Notez les informations de connexions, elles vous serviront pour vous authentifier sur le serveur **Tina**
+> Notez les informations de connexions, elles vous serviront pour vous authentifier sur le serveur **Tina**.
 >
 >
 
