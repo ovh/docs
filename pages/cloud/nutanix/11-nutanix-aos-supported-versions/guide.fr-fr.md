@@ -26,18 +26,18 @@ order: 11
 
 ## Présentation des versions supportées sur un cluster Nutanix OVHcloud
 
-Nutanix propose deux versions d'AOS qui sont régulièrement mise à jour :
+Nutanix propose deux versions d'AOS qui sont régulièrement mises à jour :
 
-- **Une version LTS (*Long Term Support*)** mise à jour 1 fois par an. Ces versions sont maintenues pendant une plus longue période et fournissent des corrections de bogues pendant une période prolongée.
+- **Une version LTS (*Long Term Support*)** mise à jour 1 fois par an. Ces versions sont maintenues pendant une plus longue période et fournissent des corrections de bugs pendant une période prolongée.
 - **Une version STS (*Short Term Support*)** mise à jour entre 2 et 4 fois par an. Ces versions proposent des nouvelles fonctionnalités et des mises à niveaux régulières.
 
-OVHcloud intègre au produit **OVHcloud powered by Nutanix** les versions LTS à leurs dates de sortie par Nutanix, une fois par an. En ce qui concerne les versions STS, OVHcloud intègre au produit **OVHcloud powered by Nutanix** un maximum de 3 versions STS par an aux dates de sortie de Nutanix.
+OVHcloud intègre au produit **Hosted Private Cloud powered by Nutanix** les versions LTS à leurs dates de sortie par Nutanix, une fois par an. En ce qui concerne les versions STS, OVHcloud intègre au produit **Hosted Private Cloud powered by Nutanix** un maximum de 3 versions STS par an aux dates de sortie de Nutanix.
 
 > [!warning]
 >
-> Vous pouvez utiliser **LCM** pour faire des mises à jours de correctives des versions **LTS** et **STS**.
+> Vous pouvez utiliser **LCM** pour faire des mises à jours correctives des versions **LTS** et **STS**.
 > 
-> Lors de ces mises à jours, **LCM** peut proposer une nouvelle version qui n'est pas encore qualifiée par OVHcloud, attendez qu'elle soit validée par OVHcloud pour continuer à bénéficier du support.
+> Lors de ces mises à jours, **LCM** peut proposer une nouvelle version qui n'est pas encore qualifiée par OVHcloud. Attendez qu'elle soit validée par OVHcloud pour continuer à bénéficier du support.
 >
 
 Les versions supportées par OVHCloud sont les suivantes :
