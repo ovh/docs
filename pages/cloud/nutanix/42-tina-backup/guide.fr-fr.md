@@ -9,11 +9,13 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 23/08/2022**
+**Dernière mise à jour le 14/09/2022**
 
 ## Objectif
 
-**Apprenez à installer, configurer et utiliser le logiciel de sauvegarde **Tina** sur un cluster Nutanix vers un serveur de déduplication HSS et de configurer une réplication du serveur de déduplication.**
+
+**Apprenez à installer, configurer et utiliser le logiciel de sauvegarde Tina pour la sauvegarde d’un cluster Nutanix vers un stockage dédupliqué (Atempo HSS Pour HyperStream Server) et à configurer la réplication du stockage dédupliqué.** 
+
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -24,13 +26,12 @@ category_l2: Backups
 
 ## Prérequis
 
-- Disposer de deux clusters Nutanix dans votre compte OVHcloud sur deux datacenters différents avec ces paramètres :
-    + 700 Go de Stockage, de 16 Go de Mémoire et de 8 Cœurs pour le serveur Tina et le serveur déduplication.
-    + 600 Go de stockage, de 8 Go de Mémoire et de 4 Cœurs pour le serveur de déduplication en réplication.
+- Disposer d'un cluster Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté sur vos clusters via Prism Central.
+- Être connecté sur votres cluster via Prism Central.
 - Avoir souscrit une offre **Tina** auprès de la société **Atempo** et d'avoir les sources d'installation des logiciel **Tina**. 
 - Avoir un serveur DNS interne administrable (Par exemple le service DNS activé sur un serveur Microsoft Windows).
+- Disposer d'un site distant pour pouvoir mettre en place une réplication de la sauvegarde.
 
 ## En pratique
 
@@ -72,13 +73,22 @@ Dans ce guide nous allons utiliser trois machines virtuelles sous **AlmaLinux** 
 Les trois machines virtuelles seront réparties comme ceci :
 
 Deux sur un cluster Nutanix en France en tant que :
-- serveur de sauvegarde avec sa console d'administration
-- serveur de déduplication en mode **HSS** (Hyper Stream Server : Serveur de bandes virtuelles). 
+- serveur de sauvegarde avec sa console d'administration avec ces paramètres :
+    + 8 Go de mémoire, 4 coeurs et 60 Go de stockage
+- serveur de déduplication principal en mode **HSS** (Hyper Stream Server).
+    + 8 Go de mémoire, 4 coeurs 60 Go de stockage pour le logiciel et 600 Go pour le stockage (Cette taille doit être ajustée en fonction des besoins réels)
 
 Une sur un cluster Nutanix au Canada relié en VPN avec pour rôle :
 - serveur de déduplication en mode **HSS** servant de réplica au serveur de déduplication **HSS** en France.
+    + 8 Go de mémoire, 4 coeurs 60 Go de stockage pour le logiciel et 600 Go pour le stockage (Cette taille doit être ajustée en fonction des besoins réels et devra être identique au serveur de déduplication principal)
 
 
+> [!Primary]
+>
+> Le choix fait dans ce guide n'est fourni qu'a titre d'exemple il est plus judicieux d'installer les serveurs de déduplication principal hors du cluster (par exemple : sur un serveur baremetal) mais sur le même réseau que le cluster Nutanix. 
+>
+> Le serveur de déduplication qui sert pour la réplication devra être lui sur un site distant.
+>
 
 <a name="installation"></a>
 ### Etape 2 Installation et configuration des machines virtuelles
@@ -363,7 +373,7 @@ UUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /data                    xfs     def
 <a name="dedupinstall"></a>
 #### **Etape 3.1 Installation du logiciel de déduplication sur tina-adefr et tina-adecan**
 
-Le logiciel de déduplication **tina-ade** transforme votre serveur en dépôt de stockage pour le serveur **Tina**, nous allons installer deux dépôts :
+Le logiciel de déduplication ADE (Atempo Deduplication Engine) fournit un stockage dédupliqué accessible uniquement au serveur Tina, nous allons installer deux dépôts : 
 
 - L'un en France.
 - L'autre au Canada qui servira de réplica pour celui qui se trouve en France.
@@ -383,6 +393,8 @@ Au travers de la console lancez le programme d'installation `ATL533-linux-x64.bi
 > [!Primary]
 >
 > Le logiciel d'installation doit être fourni par la société Atempo
+>
+> Un serveur de licence devra être installé sur une machine virtuelle accessible à la fois aux serveur **Tina** et aux serveurs de déduplications **HSS** au dela de la période d'éssai de 1 mois. 
 >
 
 ![04 Installing tina ade03](images/04-install-tina-ade03.png){.thumbnail}
@@ -801,6 +813,10 @@ Décochez `Full backup schedule`{.action} dans **Full backup configuration** ens
 Ensuite faites défiler la `barre de défilement`{.action}.
 
 Choisissez `3` à **Parallelism index** pour pouvoir faire trois sauvegardes simultanément, ensuite cochez a case `Authorize on demand backup`{.action} pour autoriser le lancement manuel de la sauvegarde et cliquez sur `FINISH`{.action}.
+
+> [!Primary]
+> Il est possible d'augmenter la valeur de **Parallelism index** pour optimiser la vitesse de sauvegarde en exécutant plus de travaux de sauvegardes à la fois.
+>
 
 ![12 configure nutanix backup 04](images/12-configurenutanixbackup04.png){.thumbnail}
 
