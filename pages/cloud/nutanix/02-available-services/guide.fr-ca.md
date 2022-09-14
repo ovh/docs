@@ -4,10 +4,9 @@ slug: available-services
 excerpt: "Présentation des services et licences inclus dans l'offre Hosted Private Cloud powered by Nutanix"
 section: Premiers pas
 order: 02
-hidden: true
 ---
 
-**Dernière mise à jour le 07/03/2022**
+**Dernière mise à jour le 14/09/2022**
 
 ## Objectif
 
@@ -16,12 +15,12 @@ Cette page vous présente les licences et services Nutanix inclus dans l'offre H
 ## Périmètre des licences et services Nutanix inclus dans l'offre Hosted Private Cloud powered by Nutanix
 
 Seuls les licences et services Nutanix listés sur cette page sont disponibles dans l'offre Hosted Private Cloud powered by Nutanix.<br>
-Si la licence ou le service que vous cherchez n'est pas disponible, nous vous invitons à consulter la roadmap [GitHub Hosted Private Cloud](https://github.com/ovh/hosted-private-cloud-roadmap/projects/3) en première intention.
+Si la licence ou le service que vous cherchez n'est pas disponible, nous vous invitons à consulter la [roadmap GitHub Hosted Private Cloud](https://github.com/ovh/hosted-private-cloud-roadmap/projects/3) en première intention.
 
 Hosted Private Cloud powered by Nutanix propose deux pack de licences :
 
 - **Nutanix Standard Pack**
-- **Nutanix Advanced Pack** qui reprend les licences et services du **Nutanix Standard Pack** auxquelles viennent s'ajouter des licences et services supplémentaires pour supporter des usages plus avancés tels que la réplication plus performante, des possibilités de chiffrement de données avancées et des options de plan de reprise d'activités. 
+- **Nutanix Advanced Pack** qui reprend les licences et services du **Nutanix Standard Pack** auxquelles viennent s'ajouter des licences et services supplémentaires pour supporter des usages plus avancés tels que la réplication plus performante, des sites multiples,des possibilités de chiffrement de données avancées et des options de plan de reprise d'activités. 
 
 ### Socle de licences et services communs aux deux packs de licences **Nutanix Standard** et **Nutanix Advanced**
 
@@ -49,7 +48,7 @@ Les licences et services communs aux deux packs de licences sont les suivants :
 
 - gérer le stockage distribué;
 - faire de l'orchestration avancée;
-- de la réplication Asynchrone avec un *RPO* (Recovery Point Objective) d'une heure.
+- de la réplication asynchrone avec un *RPO* (Recovery Point Objective) d'une heure.
 
 ### Licences et services supplémentaires disponibles avec le pack de licence **Nutanix Advanced**
 
@@ -60,7 +59,7 @@ Les licences et services communs aux deux packs de licences sont les suivants :
     - **Metro Availability** avec un **RPO** à 0 secondes et possible utilisation en continu.
     - **Sync replication** avec un **RPO** à 0 secondes.
 - et une meileure sécurité :
-    - **Software encryption at rest** : chiffrement logiciel.
+    - **Data-at-Rest Encryption** : chiffrement logiciel.
     - **Native KVM** : gestion des clés de chiffrement.
 
 Pour plus d'informations sur les différentes versions d'**AOS**, consultez la page [Nutanix Options AOS](https://www.nutanix.com/products/software-options).

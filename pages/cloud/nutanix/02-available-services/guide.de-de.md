@@ -22,7 +22,7 @@ If the licence or service you are looking for is not available, please refer to 
 Hosted Private Cloud powered by Nutanix offers two licence packs:
 
 - **Nutanix Standard Pack**
-- **Nutanix Advanced Pack** includes licences and services from the **Nutanix Standard Pack**, plus additional licences and services to support more advanced uses such as higher-performance replication, advanced data encryption capabilities, and Disaster Recovery Plan options. 
+- **Nutanix Advanced Pack** includes licences and services from the **Nutanix Standard Pack**, plus additional licences and services to support more advanced uses such as higher-performance replication, multiple sites, advanced data encryption capabilities, and Disaster Recovery Plan options. 
 
 ### Base of common licences and services to both **Nutanix Standard** and **Nutanix Advanced licence packs**
 
@@ -57,11 +57,11 @@ The licences and services common to both licence packs are:
 **Nutanix Advanced** includes the **AOS Ultimate** version of **AOS Storage**, formerly known as **AOS Distributed Storage**, which adds the following capabilities in addition to the standard version:
 
 - Advanced replication with better cluster resilience:
-    - **Nearsync replication** with an **RPO** of 20 seconds.
+    - **Nearsync Replication** with an **RPO** of 20 seconds.
     - **Metro Availability** with an **RPO** of 0 seconds and continuous use.
-    - **Sync replication** with an **RPO** at 0 seconds.
+    - **Sync Replication** with an **RPO** at 0 seconds.
 - and better security:
-    - **Software encryption at rest**: software encryption.
+    - **Data-at-Rest Encryption**: software encryption.
     - **Native KVM**: encryption keys management.
 
 For more information about the different versions of **AOS**, see the [Nutanix AOS options page](https://www.nutanix.com/products/software-options).
