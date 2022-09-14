@@ -25,7 +25,7 @@ You can use it to put files or your website online by [connecting to your web ho
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- An [OVH Web Hosting plan](https://www.ovhcloud.com/en-us/web-hosting/){.external}
+- An [OVH Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external}
 - You need to have installed Filezilla software on your computer. It is available free of charge from the page [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
 ## Interface overview <a name="interface"></a>
@@ -282,12 +282,12 @@ By right-clicking on the icon, you can change the comparison mode. You will then
 
 Below is the link to our documentation for [resolving recurring errors when using FTP](https://docs.ovh.com/us/en/hosting/recurring_ftp_problems/) software.
 
-More generally, find all [of our guides related to shared](https://docs.ovh.com/en-us/hosting/) hosting.
+More generally, find all [of our guides related to shared](https://docs.ovh.com/us/en/hosting/) hosting.
 
 Do not hesitate to consult the official [page of Filezilla](https://filezilla-project.org/).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-us/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-us/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

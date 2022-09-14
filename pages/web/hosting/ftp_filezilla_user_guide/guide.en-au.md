@@ -282,7 +282,7 @@ By right-clicking on the icon, you can change the comparison mode. You will then
 
 Below is the link to our documentation for [resolving recurring errors when using FTP](https://docs.ovh.com/au/en/hosting/recurring_ftp_problems/) software.
 
-More generally, find all [of our guides related to shared](https://docs.ovh.com/en-au/hosting/) hosting.
+More generally, find all [of our guides related to shared](https://docs.ovh.com/au/en/hosting/) hosting.
 
 Do not hesitate to consult the official [page of Filezilla](https://filezilla-project.org/).
 
