@@ -74,13 +74,13 @@ Les trois machines virtuelles seront réparties comme ceci :
 
 Deux sur un cluster Nutanix en France en tant que :
 - serveur de sauvegarde avec sa console d'administration avec ces paramètres :
-    + 8 Go de mémoire, 4 coeurs et 60 Go de stockage
-- serveur de déduplication principal en mode **HSS** (Hyper Stream Server).
-    + 8 Go de mémoire, 4 coeurs 60 Go de stockage pour le logiciel et 600 Go pour le stockage (Cette taille doit être ajustée en fonction des besoins réels)
+    + 8 Go de mémoire, 4 cœurs et 60 Go de stockage.
+- serveur de déduplication principal en mode **HSS** (Hyper Stream Server) avec ces resources.
+    + 8 Go de mémoire, 4 cœurs 60 Go de stockage pour le logiciel et 600 Go pour le stockage (Cette taille doit être ajustée en fonction des besoins réels).
 
 Une sur un cluster Nutanix au Canada relié en VPN avec pour rôle :
-- serveur de déduplication en mode **HSS** servant de réplica au serveur de déduplication **HSS** en France.
-    + 8 Go de mémoire, 4 coeurs 60 Go de stockage pour le logiciel et 600 Go pour le stockage (Cette taille doit être ajustée en fonction des besoins réels et devra être identique au serveur de déduplication principal)
+- serveur de déduplication en mode **HSS** servant de réplica au serveur de déduplication **HSS** en France avec ces ressources :
+    + 8 Go de mémoire, 4 coeurs 60 Go de stockage pour le logiciel et 600 Go pour le stockage (Cette taille doit être ajustée en fonction des besoins réels et devra être identique au serveur de déduplication principal).
 
 
 > [!Primary]
@@ -98,8 +98,8 @@ Téléchargez les sources d'installation d'ALMALINUX à partir de ce lien [Sourc
 Nous allons utiliser un serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine **ad-testing.lan** et rajouter ces adresses : 
 
 - **tina-srv.ad-testing.lan** : Serveur **Tina** en France avec l'adresse IP `192.168.0.210`.
-- **tina-adefr.ad-testing.lan** : Serveur de déduplication en France en mode HSS avec l'adresse IP `192.168.0.211`.
-- **tina-adecan.ad-testing.lan** : Serveur de déduplication au Canada en mode HSS avec l'adresse IP `192.168.10.210` 
+- **tina-adefr.ad-testing.lan** : Serveur de déduplication **HSS** en France eavec l'adresse IP `192.168.0.211`.
+- **tina-adecan.ad-testing.lan** : Serveur de déduplication **HSS** au Canada  avec l'adresse IP `192.168.10.210` 
 
 ![00 DNS Entry Example 01 ](images/00-dnsexample01.png){.thumbnail}
 
@@ -183,8 +183,8 @@ Cliquez sur le bouton `ON/OFF`{.action} pour activer le réseau.
 Saisissez le nom d'hôte dans `Host Name`{.action} avec ces informations suivant la machine virtuelle : 
 
 - tina-srv.ad-testing.lan pour le serveur **Tina**.
-- tina-adefr.ad-testing.lan pour le serveur de déduplication HSS en France.
-- tina-adecan.ad-testing.lan pour le serveur de déduplication HSS au Canada.
+- tina-adefr.ad-testing.lan pour le serveur de déduplication **HSS** en France.
+- tina-adecan.ad-testing.lan pour le serveur de déduplication **HSS** au Canada.
 
 Cliquez sur `Apply`{.action} et cliquez sur `Done`{.action}.
 
