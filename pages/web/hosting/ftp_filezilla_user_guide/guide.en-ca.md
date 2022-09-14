@@ -272,7 +272,7 @@ By right-clicking on the icon, you can change the comparison mode. You will then
 - compare timestamp
 - hide identical files.
 
-**Meaning of colours**:
+**Meaning of colours**: 
 
 - Yellow: the file exists only on one side.
 - Green: the file is newer than the uncoloured file on the other side.

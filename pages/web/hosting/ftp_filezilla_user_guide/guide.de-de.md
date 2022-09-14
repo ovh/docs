@@ -257,7 +257,7 @@ SEITE CHMOD 705
 > Wenn dies noch nicht funktioniert, kontaktieren Sie bitte unseren Support.
 > 
 
-### Transfer von Binärdateien
+### Transfer von Binärdateien 
 
 Bei binären Dateien, wie z. B. **CGI**-Dateien, kann es interessant sein, wie der Transfer ausgeführt wird.
 

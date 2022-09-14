@@ -22,7 +22,7 @@ You can use it to put files or your website online by [connecting to your web ho
 > This tutorial is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialist [provider](https://partner.ovhcloud.com/en-us/) and/or the software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [“Go further”](#go-further) section of this tutorial.
 > 
 
-## Requirements
+## Requirements 
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - An [OVH Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external}

@@ -260,7 +260,7 @@ Pour modifier le type de transfert, sélectionnez `Transfert`{.action} dans le m
 
 ![hosting](images/1832.png){.thumbnail}
 
-### Comparaison de dossiers
+### Comparaison de dossiers 
 
 ![hosting](images/1823.png){.thumbnail}
 
