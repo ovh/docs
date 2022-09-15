@@ -43,7 +43,7 @@ La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son 
 >
 > Si vous cochez l'une des deux cases `Entrée DNS A` et `Entrée DNS MX` ou les deux, cela écrasera la configuration initialement mise en place dans la zone DNS de votre domaine.
 >
-> Si votre zone DNS n'est pas gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, vous devrez effectuer les modifications manuellement dans votre zone DNS.
+> Si votre zone DNS n'est pas gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, vous devrez effectuer les modifications manuellement dans votre zone DNS externe.
 >
 > Pour plus de détails, consultez notre guide sur [l'édition d'une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
 >
