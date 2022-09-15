@@ -41,7 +41,7 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 |---|---|
 |![mailmac](images/mail-mac-exchange01.png){.thumbnail}|Wybierz `Exchange`{.action}|
 |Wpisz **Nazwę** konta e-mail i **adres e-mail**, a następnie kliknij `Zaloguj się`{.action}|![mailmac](images/mail-mac-exchange02.png){.thumbnail}|
-|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|W następnym oknie kliknij `Ręczna`{.action} konfiguracja: <br>- Zdefiniuj **Nazwę**, która wyświetla się w interfejsie nawigacyjnym <br>- Zostaw swój **adres e-mail**<br>- Zostaw **hasło** już wprowadzone <br><br>Aby dokończyć konfigurację, kliknij `Zaloguj się`{.action}|
+|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|W następnym oknie kliknij `Ręczna konfiguracja`{.action}: <br>- Zdefiniuj **Nazwę**, która wyświetla się w interfejsie nawigacyjnym <br>- Zostaw swój **adres e-mail**<br>- Zostaw **hasło** już wprowadzone <br><br>Aby dokończyć konfigurację, kliknij `Zaloguj się`{.action}|
 |Oprócz kont e-mail możesz wybrać inne funkcje Exchange, którymi chcesz zarządzać z poziomu komputera Mac.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
 
 ### Użyj konta e-mail

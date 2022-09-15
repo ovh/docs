@@ -41,7 +41,7 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 |---|---|
 |![mailmac](images/mail-mac-exchange01.png){.thumbnail}|Wählen Sie `Exchange aus`{.action}|
 |Geben Sie den **Namen** Ihres E-Mail-Accounts und Ihrer **E-Mail-Adresse** ein und klicken Sie auf `Anmelden`{.action}|![mailmac](images/mail-mac-exchange02.png){.thumbnail}|
-|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|Klicken Sie im folgenden Fenster auf `Manuelle Configuration`{.action}: <br>- Legen Sie den **Namen** fest, der im Interface für die Navigation angezeigt werden soll <br>- Hinterlassen Sie Ihre **E-Mail-Adresse**<br>- Lassen Sie Ihr **Passwort** bereits eingegeben <br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Anmelden`{.action}|
+|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|Klicken Sie im folgenden Fenster auf `Manuelle Konfiguration`{.action}: <br>- Legen Sie den **Namen** fest, der im Interface für die Navigation angezeigt werden soll <br>- Hinterlassen Sie Ihre **E-Mail-Adresse**<br>- Lassen Sie Ihr **Passwort** bereits eingegeben <br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Anmelden`{.action}|
 |Neben Ihren E-Mails können Sie auch andere Exchange Funktionen auswählen, die Sie über Ihren Mac verwalten möchten.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
 
 ### E-Mail-Adresse verwenden
