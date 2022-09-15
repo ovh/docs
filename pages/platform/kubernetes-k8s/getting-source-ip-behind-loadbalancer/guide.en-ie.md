@@ -182,7 +182,7 @@ aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32
 
 #### 1b. [PRIVATE NETWORK ONLY] Get the list of the egress load balancer IPs
 
-When your Managed Kubernetes cluster is attached to a vrack, load balancers will take two random IP addresses each. **Your egress IP list is your subnet range**.
+When your Managed Kubernetes cluster is attached to a vRack, load balancers will take two random IP addresses each. **Your egress IP list is your subnet range**.
 
 For the rest of this documentation, we consider our subnet uses the `10.0.0.0/20` range. Don't forget to replace it with your own!
 
