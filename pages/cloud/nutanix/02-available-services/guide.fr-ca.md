@@ -31,11 +31,11 @@ Les licences et services communs aux deux packs de licences sont les suivants :
     - **Nutanix Kubernetes Engine** : gestion des containers Kubernetes sous Nutanix, produit anciennement nommé **Karbon** ([présentation de Nutanix Kubernetes Engine](https://www.nutanix.com/products/karbon)).
 
 - **Nutanix Cloud Manager(NCM)**, anciennement **Cloud Management** ([présentation de Nutanix Cloud Management](https://www.nutanix.com/products/cloud-manager/aiops)).
-    - **Intelligent operation**, anciennement **Prism Pro** : surveillance et prévision des besoins.
+    - **Intelligent Operation**, anciennement **Prism Pro** : surveillance et prévision des besoins.
     - **Flow** : virtualisation et micro-segmentation du réseau ([présentation de FLOW](https://www.nutanix.com/products/flow)).
 
 - **Nutanix Unified Storage**, anciennement **Unified Storage**.
-    - **Volumes block storage** : stockage par bloc pour un accès en iSCSI, soit à l’intérieur d'un cluster Nutanix pour un usage particulier, soit à l'extérieur pour donner accès au stockage Nutanix à d'autres ordinateurs ou infrastructures virtualisées.
+    - **Volumes Block Storage** : stockage par bloc pour un accès en iSCSI, soit à l’intérieur d'un cluster Nutanix pour un usage particulier, soit à l'extérieur pour donner accès au stockage Nutanix à d'autres ordinateurs ou infrastructures virtualisées.
 
 - **Framework utilities**
     + **X-ray** : ensemble d'outils de test et de benchmark sur les principales solutions d'hyperconvergences ([présentation Nutanix de X-Ray](https://www.nutanix.com/products/x-ray)).
@@ -73,19 +73,19 @@ Ci-dessous se trouve un tableau récapitulatif des deux offres Nutanix OVHcloud 
 | **Nutanix Standard**          | **AOS Storage**                        | **AOS Pro**                       |               
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |   
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent operation**         | 
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operation**         | 
 |                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes block storage**         | 
-|                               | **Framework utilities**                | **X-ray**                         |
+|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         | 
+|                               | **Framework Utilities**                | **X-ray**                         |
 |                               |                                        | **Move**                          |
 |                               |                                        | **Lcm**                           |
 | **Nutanix Advanced**          | **AOS Storage**                        | **AOS Ultimate**                  |
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |   
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent operation**         | 
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operation**         | 
 |                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes block storage**         | 
-|                               | **Framework utilities**                | **X-ray**                         |
+|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         | 
+|                               | **Framework Utilities**                | **X-ray**                         |
 |                               |                                        | **Move**                          |
 |                               |                                        | **Lcm**                           |
 

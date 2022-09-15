@@ -31,11 +31,11 @@ The licences and services common to both licence packs are:
     - **Nutanix Kubernetes Engine**: management of Kubernetes containers under Nutanix, a product formerly named **Karbon** ([presentation of Nutanix Kubernetes Engine](https://www.nutanix.com/products/karbon)).
 
 - **Nutanix Cloud Manager(NCM)**, formerly **Cloud Management** ([presentation of Nutanix Cloud Management](https://www.nutanix.com/products/cloud-manager/aiops)).
-    - **Intelligent operation**, formerly **Prism Pro**: monitoring and forecasting of requirements.
+    - **Intelligent Operation**, formerly **Prism Pro**: monitoring and forecasting of requirements.
     - **Flow**: network virtualisation and micro-segmentation ([FLOW presentation](https://www.nutanix.com/products/flow)).
 
 - **Nutanix Unified Storage**, formerly **Unified Storage**.
-    - **Block storage volumes**: Block storage for iSCSI access, either inside a Nutanix cluster for a particular use, or outside to provide access to Nutanix storage for other virtualised computers or infrastructures.
+    - **Block Storage Volumes**: Block storage for iSCSI access, either inside a Nutanix cluster for a particular use, or outside to provide access to Nutanix storage for other virtualised computers or infrastructures.
 
 - **Framework utilities**
     + **X-ray**: a set of tools for testing and benchmarking the main hyperconverged solutions ([X-Ray presentation](https://www.nutanix.com/products/x-ray)).
@@ -73,19 +73,19 @@ Below is a summary table of the two OVHcloud Nutanix solutions:
 | **Nutanix Standard**          | **AOS Storage**                        | **AOS Pro**                       |
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent operation**         |
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operation**         |
 |                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes block storage**         |
-|                               | **Framework utilities**                | **X-ray**                         |
+|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         |
+|                               | **Framework Utilities**                | **X-ray**                         |
 |                               |                                        | **Move**                          |
 |                               |                                        | **Lcm**                           |
 | **Nutanix Advanced**          | **AOS Storage**                        | **AOS Ultimate**                  |
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent operation**         |
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operation**         |
 |                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes block storage**         |
-|                               | **Framework utilities**                | **X-ray**                         |
+|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         |
+|                               | **Framework Utilities**                | **X-ray**                         |
 |                               |                                        | **Move**                          |
 |                               |                                        | **Lcm**                           |
 
