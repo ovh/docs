@@ -58,7 +58,7 @@ Only the HTTP layer is accessible.
 
 ### Available hardware for jobs
 
--   Nvidia V100S [pricing available here](https://www.ovhcloud.com/en/public-cloud/prices/#ai-machine-learning)
+-   Nvidia V100S [pricing available here](https://www.ovhcloud.com/asia/public-cloud/prices/#ai-machine-learning)
 
 ### Available regions for jobs
 
@@ -73,4 +73,4 @@ Only the HTTP layer is accessible.
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
