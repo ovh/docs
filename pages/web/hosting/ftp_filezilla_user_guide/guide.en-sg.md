@@ -191,7 +191,7 @@ Generally, it is easier to manage *chmod* rights with the three-digit number for
 >
 > Warning, it is not recommended to set "*chmod* 000" rights on your folders or files. You will no longer be able (at least via FTP) to manage this item (including as an FTP administrator).
 >
-> The same goes for "*chmod* 777" rights, because unlike the "*chmod* 000", anyone can act on the folder or file, which presents a significant security vulnerability for your hosted data.
+> Similarly, do not use "*chmod* 777", because in this case anyone can edit these folders or files. This results in a significant security vulnerability for your hosted data.
 >
 
 The first of the three *chmod* digits corresponds to the owner/administrator rights, the second to group rights (rarely used and generally set to 0) and the third to visitors to your website on your hosting.
@@ -230,10 +230,10 @@ SITE CHMOD 705 /
 
 ![hosting](images/1829.png){.thumbnail}
 
-If you get error `550 would not chance perms on /. not such file or director`, use the following command:
+If you get error `550 would not change perms on /. not such file or directory`, use the following command:
 
 ```bash
-SITE CHMOD 705.
+SITE CHMOD 705 .
 ```
 
 > [!primary]

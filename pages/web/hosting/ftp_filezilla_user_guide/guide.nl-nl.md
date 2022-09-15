@@ -192,7 +192,7 @@ SITE CHMOD 705 /
 
 Als u de volgende foutmelding krijgt:
 
-550 would not chance perms on /. not such file or directory
+550 would not change perms on /. not such file or directory
 
 U moet in dit geval het volgende commando gebruiken:
 

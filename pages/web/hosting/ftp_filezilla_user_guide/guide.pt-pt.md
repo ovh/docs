@@ -237,7 +237,7 @@ SITE CHMOD 705 /
 
 ![alojamento](images/1829.png){.thumbnail}
 
-Se obtiver o erro `550 would not chance perms on /. not such file or director`, utilize o seguinte comando:
+Se obtiver o erro `550 would not change perms on /. not such file or directory`, utilize o seguinte comando:
 
 ```bash
 SÍTIO CHMOD 705
