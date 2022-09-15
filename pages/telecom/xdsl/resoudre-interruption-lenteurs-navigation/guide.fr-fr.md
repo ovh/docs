@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment rétablir votre accès à Internet ou identifier un
 section: 'Diagnostic et dépannage'
 ---
 
-**Dernière mise à jour le 16/02/2021**
+**Dernière mise à jour le 15/09/2022**
 
 ## Objectif
 
@@ -45,7 +45,7 @@ Il se peut qu'un élément perturbe la liaison entre votre modem et votre ordina
 
 - éteignez et/ou éloignez le plus possible toutes les sources électriques proches de votre modem (base téléphonique, enceinte, chargeur, lampe, etc.) ;
 
-- si votre modem et votre ordinateur communiquent en Wi-Fi, connectez-les via un câble Ethernet. S'ils sont trop éloignés, essayez de les rapprocher le plus possible (au minimum dans une même pièce) ;
+- si votre modem et votre ordinateur communiquent en Wi-Fi, connectez-les via un câble Ethernet. Si cela n'est pas possible, essayez de les rapprocher le plus possible (au minimum dans une même pièce) et vérifiez si la situation s'améliore ;
 
 - si vous utilisez un équipement tiers entre votre modem et votre ordinateur (comme un répéteur Wi-Fi, des boîtiers CPL, un switch ou un hub), écartez-le afin de connecter directement votre modem et l'ordinateur.
 
