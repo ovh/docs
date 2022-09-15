@@ -31,10 +31,10 @@ section: User guides
 
 ## Objective
 
-The OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
-At OVHcloud, we like to provide you with the best products and services, that's why we give you the availabilty to customize the managed components of your Kubernetes: CoreDNS, IPVS, and even [API server admission plugins](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/) to enable and disable on your OVHcloud Managed Kubernetes clusters.
+The OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installing or operating them. 
+At OVHcloud, we like to provide you with the best products and services, which is why we give you the ability to customize the managed components of your Kubernetes: CoreDNS, IPVS, and even [API server admission plugins](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/) to enable and disable on your OVHcloud Managed Kubernetes clusters.
 
-In this guide we will show you how to enable and disable API server admission plugins but you can follow the guide for other OVHcloud Managed Kubernetes cluster configuration customization.
+In this guide, we will show you how to enable and disable API server admission plugins, but you can follow the guide for other customizations to the OVHcloud Managed Kubernetes cluster configuration.
 
 ## Requirements 
 
@@ -158,7 +158,7 @@ Specifically, you have to generate these credentials via the [OVHcloud token gen
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
-When you have successfully generated your OVHcloud tokens, please save them as you will have to use them very soon.
+When you have successfully generated your OVHcloud tokens, please save them as you will need to use them very soon.
 
 The last needed information is the `service_name`: it is the ID of your Public Cloud project.
 
@@ -265,9 +265,9 @@ Initializing provider plugins...
 
 Partner and community providers are signed by their developers.
 If you'd like to know more about provider signing, you can read about it here:
-https://www.terraform.io/docs/cli/plugins/signing.html
+<https://www.terraform.io/docs/cli/plugins/signing.html>
 
-Terraform has created a lock file .terraform.lock.hcl to record the provider
+Terraform has created a lock file `.terraform.lock.hcl` to record the provider
 selections it made above. Include this file in your version control repository
 so that Terraform can guarantee to make the same selections by default when
 you run "terraform init" in the future.
