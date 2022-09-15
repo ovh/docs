@@ -240,7 +240,7 @@ SITE CHMOD 705 /
 Se obtiver o erro `550 would not change perms on /. not such file or directory`, utilize o seguinte comando:
 
 ```bash
-SÍTIO CHMOD 705
+SITE CHMOD 705 .
 ```
 
 > [!primary]
