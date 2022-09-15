@@ -17,20 +17,18 @@ Cet article a pour but de vous guider dans le processus de désactivation et d'a
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).
 - Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
-- Savoir utiliser [VMware HA](https://docs.ovh.com/fr/private-cloud/vmware-ha-high-availability/)
 
 ## En pratique
 
 ### Activation/Désactivation de HA via vSphere
 
-Pour commencer, connectez-vous à votre environnement vSphere. Cliquez sur `Menu`{.action} à gauche de l'écran et sélectionnez `Networking and Security`{.action} dans le menu déroulant.
+Pour commencer, connectez-vous à votre environnement vSphere. Cliquez sur `Menu`{.action} à gauche de l'écran et sélectionnez `Mise en réseau et sécurité`{.action} dans le menu déroulant.
 
 ![enableha1.png](images/enableha1.png)
 
-Cliquez ensuite sur `NSX Edges`{.action} dans la colonne de gauche.
+Cliquez ensuite sur `Dispositifs NSX Edge`{.action} dans la colonne de gauche.
 
 ![enableha2.png](images/enableha2.png)
 
@@ -42,7 +40,7 @@ Cliquez sur l'onglet `Configurer`{.action} en haut de la page. Sélectionnez ens
 
 ![enableha4.png](images/enableha4.png)
 
-Sélectionnez `Edit`{.action} à côté de « High Availability Configuration ».
+Sélectionnez `Modifier`{.action} à côté de « Configuration de haute disponibilité ».
 
 ![enableha5.png](images/enableha5.png)
 
@@ -54,7 +52,7 @@ Pour confirmer la désactivation du HA, cliquez sur l'onglet `Configurer`{.actio
 
 ![enableha7.png](images/enableha7.png)
 
-Pour activer HA une fois la mise à jour terminée, sélectionnez à nouveau `Editer`{.action} à côté de « High Availability Configuration » et cliquez sur le curseur à côté de « HA Status » pour le repasser à activé.
+Pour activer HA une fois la mise à jour terminée, sélectionnez à nouveau `Modifier`{.action} à côté de « Configuration de haute disponibilité » et cliquez sur le curseur à côté de « État HA » pour le repasser à activé.
 
 ![enableha8.png](images/enableha8.png)
 
