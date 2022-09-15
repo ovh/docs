@@ -38,12 +38,12 @@ Umożliwia on umieszczanie w Internecie plików lub Twojej strony WWW, [zaloguj�
 ![hosting](images/1818.png){.thumbnail}
 
 - W górnej **ramce** możesz szybko połączyć się z hostingiem podając nazwę **hosta**, nazwę **użytkownika**, **hasło** oraz numer **portu**.
-- **strefa 1**\: szczegółowe informacje na temat historii operacji, logowania do przestrzeni FTP, transferów plików, błędów itp. Więcej informacji znajdziesz w oficjalnej [dokumentacji Filezilla](https://filezilla-project.org/){.external}.
-- **strefa 2**\: drzewo katalogów/plików lokalnych na komputerze.
-- **strefa 3**\: drzewo zdalnych katalogów/plików po zalogowaniu się do hostingu.
-- **strefa 4**\: lista katalogów/plików w katalogu wybranym lokalnie na Twoim komputerze.
-- **strefa 5**\: lista zdalnych katalogów/plików w wybranym katalogu na Twoim hostingu.
-- **strefa 6**\: lista operacji transferu w trakcie, oczekujących lub z błędem między Twoim komputerem i hostingiem.
+- **strefa 1**: szczegółowe informacje na temat historii operacji, logowania do przestrzeni FTP, transferów plików, błędów itp. Więcej informacji znajdziesz w oficjalnej [dokumentacji Filezilla](https://filezilla-project.org/){.external}.
+- **strefa 2**: drzewo katalogów/plików lokalnych na komputerze.
+- **strefa 3**: drzewo zdalnych katalogów/plików po zalogowaniu się do hostingu.
+- **strefa 4**: lista katalogów/plików w katalogu wybranym lokalnie na Twoim komputerze.
+- **strefa 5**: lista zdalnych katalogów/plików w wybranym katalogu na Twoim hostingu.
+- **strefa 6**: lista operacji transferu w trakcie, oczekujących lub z błędem między Twoim komputerem i hostingiem.
 
 ## W praktyce
 
@@ -58,7 +58,7 @@ W tabeli poniżej wpisz informacje korzystając z paska szybkiego połączenia:
 |Host| Adres serwera pozwalający na dostęp do przestrzeni dyskowej Twojego hostingu.<br><br> Dla hostingu współdzielonego zazwyczaj ma taką formę: `ftp.clusterXXX.hosting.ovh.net` (`XXX` to numer klastra, w którym znajduje się Twój hosting)|
 |Użytkownik|Identyfikator pozwalający na dostęp do przestrzeni dyskowej Twojego hostingu.|
 |Hasło|Hasło przypisane do użytkownika.|
-|Port|Jest to zazwyczaj uzupełniane automatycznie przez oprogramowanie. W przeciwnym razie wprowadź:<br><br>\- port "21" dla połączenia FTP;<br>\- port "22" dla połączenia SFTP (w przypadku gdy połączenie jest włączone). Więcej informacji o SFTP znajdziesz w [sekcji poświęconej temu tutorialu](#sftp).|
+|Port|Jest to zazwyczaj uzupełniane automatycznie przez oprogramowanie. W przeciwnym razie wprowadź:<br><br>- port "21" dla połączenia FTP;<br>- port "22" dla połączenia SFTP (w przypadku gdy połączenie jest włączone). Więcej informacji o SFTP znajdziesz w [sekcji poświęconej temu tutorialu](#sftp).|
 
 Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji "Web Cloud" i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej:
 
@@ -77,7 +77,7 @@ Jeśli logowanie przebiegło pomyślnie, zostaniesz o tym poinformowany poprzez 
 
 ### Połączenie z Filezilla przez SFTP <a name="sftp"></a>
 
-SFTP** (**Secure ****File ****Transfer ****Protocol) to protokół podobny do protokołu ****FTP** **. Podobnie jak SSH, używa domyślnego portu 22 zamiast portu 21. Jeśli korzystasz z hostingu Cloud Web, powinieneś użyć portu, który wyświetla się w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Port 22 został dezaktywowany przez bezpieczeństwo poprzez SSH i SFTP dla hostingu Cloud Web.
+SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) to protokół podobny do protokołu **FTP**. Podobnie jak SSH, używa domyślnego portu 22 zamiast portu 21. Jeśli korzystasz z hostingu Cloud Web, powinieneś użyć portu, który wyświetla się w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Port 22 został dezaktywowany przez bezpieczeństwo poprzez SSH i SFTP dla hostingu Cloud Web.
 
 > [!success]
 >
@@ -101,8 +101,8 @@ Jeśli nie jest aktywny:
 ![Włączenie SFTP 1](images/enable_sftp_1.png){.thumbnail}
 
 - W oknie, które się wyświetla sprawdź, czy aktywowana jest jedna z 2 poniższych opcji:
-    - **FTP i SFTP**\: aby włączyć tylko SFTP poza FTP.
-    - **FTP, SFTP i SSH**\: aby włączyć FTP, SFTP i SSH.
+    - **FTP i SFTP**: aby włączyć tylko SFTP poza FTP.
+    - **FTP, SFTP i SSH**: aby włączyć FTP, SFTP i SSH.
 
 ![Włączenie SFTP 2](images/enable_sftp_2.png){.thumbnail}
 
@@ -295,4 +295,4 @@ Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśl
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

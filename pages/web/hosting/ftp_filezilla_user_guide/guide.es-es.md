@@ -38,12 +38,12 @@ Permite publicar archivos o su sitio web [conectándose al espacio FTP](https://
 ![hosting](images/1818.png){.thumbnail}
 
 - La parte superior **del recuadro** permite una conexión rápida al alojamiento, introduciendo el nombre del **host**, el nombre de **usuario**, la **contraseña** asociada y el número de **puerto** utilizado.
-- **zona 1**\: información sobre el historial de operaciones, la conexión al espacio FTP, las transferencias de archivos, los errores, etc. Para más información, consulte la [documentación oficial de Filezilla](https://filezilla-project.org/){.external}.
-- **zona 2**\: árbol de directorios/archivos locales en su ordenador.
-- **zona 3**\: árbol de directorios/ archivos remotos cuando se conecta al alojamiento.
-- **zone 4**\: lista de carpetas/archivos en el directorio seleccionado localmente en su ordenador.
-- **zona 5**\: lista de carpetas/archivos remotos en el directorio seleccionado en su alojamiento.
-- **zona 6**\: lista de las operaciones de transferencia en curso, en espera o en error entre su ordenador y su alojamiento.
+- **zona 1**: información sobre el historial de operaciones, la conexión al espacio FTP, las transferencias de archivos, los errores, etc. Para más información, consulte la [documentación oficial de Filezilla](https://filezilla-project.org/){.external}.
+- **zona 2**: árbol de directorios/archivos locales en su ordenador.
+- **zona 3**: árbol de directorios/ archivos remotos cuando se conecta al alojamiento.
+- **zone 4**: lista de carpetas/archivos en el directorio seleccionado localmente en su ordenador.
+- **zona 5**: lista de carpetas/archivos remotos en el directorio seleccionado en su alojamiento.
+- **zona 6**: lista de las operaciones de transferencia en curso, en espera o en error entre su ordenador y su alojamiento.
 
 ## Procedimiento
 
@@ -58,7 +58,7 @@ Introduzca la información en la siguiente tabla:
 |Host| Dirección del servidor que permite acceder al espacio de almacenamiento de su alojamiento.<br><br> Para los alojamientos compartidos, suele tener esta forma: `ftp.clusterXXX.hosting.ovh.net` (los `XXX` representan el número de cluster en el que se encuentra el alojamiento)|
 |Usuario|Identificador que permite acceder al espacio de almacenamiento del alojamiento.|
 |Contraseña|Contraseña asociada al usuario.|
-|Puerto|Se suele completar automáticamente con el programa. En caso contrario, introduzca:<br><br>\- el puerto "21" para una conexión FTP;<br>\- el puerto "22" para una conexión SFTP (en caso de que esté activada). Más información sobre el SFTP en [la sección dedicada de este tutorial](#sftp).|
+|Puerto|Se suele completar automáticamente con el programa. En caso contrario, introduzca:<br><br>- el puerto "21" para una conexión FTP;<br>- el puerto "22" para una conexión SFTP (en caso de que esté activada). Más información sobre el SFTP en [la sección dedicada de este tutorial](#sftp).|
 
 Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección Web Cloud y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento:
 
@@ -77,7 +77,7 @@ Si la conexión se ha realizado correctamente, se le informará de ello en el re
 
 ### Conexión con Filezilla por SFTP <a name="sftp"></a>
 
-El **SFTP** (para ****Secure ****File ****Transfer ****Protocol) es un protocolo similar al **FTP**. Utiliza, al igual que el SSH, el puerto 22 por defecto en lugar del puerto 21. Si utiliza un plan de hosting Cloud Web, debe utilizar el puerto que se muestra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. El puerto 22 está desactivado por seguridad en SSH y SFTP para los alojamientos Cloud Web.
+El **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) es un protocolo similar al **FTP**. Utiliza, al igual que el SSH, el puerto 22 por defecto en lugar del puerto 21. Si utiliza un plan de hosting Cloud Web, debe utilizar el puerto que se muestra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. El puerto 22 está desactivado por seguridad en SSH y SFTP para los alojamientos Cloud Web.
 
 > [!success]
 >
@@ -96,17 +96,17 @@ Compruebe si el **SFTP** está activo en la tabla de la parte inferior de la pá
 
 Si no está activo:
 
-- Haga clic en el botón `..`{.action} a la derecha de la tabla y, seguidamente, en `Editar`{.action}.
+- Haga clic en el botón `...`{.action} a la derecha de la tabla y, seguidamente, en `Editar`{.action}.
 
 ![Activación SFTP 1](images/enable_sftp_1.png){.thumbnail}
 
 - En la nueva ventana, compruebe que se haya activado una de las dos opciones siguientes:
-    - **FTP y SFTP**\: para activar únicamente el SFTP, además del FTP.
-    - **FTP, SFTP y SSH**\: para activar el FTP, el SFTP y el SSH.
+    - **FTP y SFTP**: para activar únicamente el SFTP, además del FTP.
+    - **FTP, SFTP y SSH**: para activar el FTP, el SFTP y el SSH.
 
 ![Activación SFTP 2](images/enable_sftp_2.png){.thumbnail}
 
-- Haga clic en `Siguiente`{.action} y seleccione `Aceptar.`{.action}
+- Haga clic en `Siguiente`{.action} y seleccione `Aceptar`{.action}.
 
 #### Iniciar la conexión SFTP
 

@@ -38,12 +38,12 @@ Permite publicar ficheiros ou o seu website [acedendo ao espaço FTP](https://do
 ![alojamento](images/1818.png){.thumbnail}
 
 - A parte superior **enquadrada** permite uma ligação rápida ao seu alojamento ao introduzir o seu nome de **host**, o nome de **utilizador**, a sua **password** associada e o número de **porta** utilizado.
-- **zona 1**\: detalhes sobre o histórico de operações, ligação ao espaço FTP, transferência de ficheiros, erros, etc. Para saber mais, aceda à [documentação oficial do Filezilla](https://filezilla-project.org/){.external}.
-- **zona 2**\: arborescência dos diretórios/ficheiros locais no seu computador.
-- **zona 3**\: arborescência de diretórios/ficheiros distantes quando está ligado ao seu alojamento.
-- **zona 4**\: lista dos diretórios/ficheiros no diretório selecionado localmente no seu computador.
-- **zona 5**\: lista dos diretórios/ficheiros distantes no diretório selecionado no seu alojamento.
-- **zona 6**\: lista das operações de transferência em curso, pendentes ou em erro entre o seu computador e o seu alojamento.
+- **zona 1**: detalhes sobre o histórico de operações, ligação ao espaço FTP, transferência de ficheiros, erros, etc. Para saber mais, aceda à [documentação oficial do Filezilla](https://filezilla-project.org/){.external}.
+- **zona 2**: arborescência dos diretórios/ficheiros locais no seu computador.
+- **zona 3**: arborescência de diretórios/ficheiros distantes quando está ligado ao seu alojamento.
+- **zona 4**: lista dos diretórios/ficheiros no diretório selecionado localmente no seu computador.
+- **zona 5**: lista dos diretórios/ficheiros distantes no diretório selecionado no seu alojamento.
+- **zona 6**: lista das operações de transferência em curso, pendentes ou em erro entre o seu computador e o seu alojamento.
 
 ## Instruções
 
@@ -58,7 +58,7 @@ A partir da barra de ligação rápida, complete as informações através da se
 |Host| Endereço do servidor que permite aceder ao espaço de armazenamento do seu alojamento.<br><br> Para os alojamentos partilhados, tem geralmente esta forma: `ftp.clusterXXX.hosting.ovh.net` (os `XXX` representam o número do cluster onde está o seu alojamento)|
 |Utilizador|Identificador que lhe permite aceder ao espaço de armazenamento do seu alojamento.|
 |Palavra-passe|Password associada ao utilizador.|
-|Porta|Geralmente, é automaticamente complementado pelo software. Caso contrário, introduza:<br><br>\- a porta 21 para uma ligação FTP;<br>\- a porta 22 para uma ligação SFTP (no caso de esta estar ativada). Encontre mais informações sobre o SFTP na secção [dedicada deste tutorial](#sftp).|
+|Porta|Geralmente, é automaticamente complementado pelo software. Caso contrário, introduza:<br><br>- a porta 21 para uma ligação FTP;<br>- a porta 22 para uma ligação SFTP (no caso de esta estar ativada). Encontre mais informações sobre o SFTP na secção [dedicada deste tutorial](#sftp).|
 
 Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} na secção "Web Cloud" e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento:
 
@@ -77,7 +77,7 @@ Se a ligação for bem-sucedida, será informado através do estado presente na 
 
 ### Ligação com Filezilla em SFTP <a name="sftp"></a>
 
-O **SFTP** (para ****Secure ****File ****Transfer ****Protocol) é um protocolo semelhante ao **FTP**. Como o SSH, utiliza a porta 22 predefinida em vez da porta 21. Se utiliza uma oferta de alojamento Cloud Web, deve utilizar a porta apresentada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. A porta 22 é desativada por segurança em SSH e SFTP para os alojamentos Cloud Web.
+O **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) é um protocolo semelhante ao **FTP**. Como o SSH, utiliza a porta 22 predefinida em vez da porta 21. Se utiliza uma oferta de alojamento Cloud Web, deve utilizar a porta apresentada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. A porta 22 é desativada por segurança em SSH e SFTP para os alojamentos Cloud Web.
 
 > [!success]
 >
@@ -101,8 +101,8 @@ Se não estiver ativo:
 ![Ativação SFTP 1](images/enable_sftp_1.png){.thumbnail}
 
 - Na nova janela, verifique se está ativada uma das 2 opções seguintes:
-    - **FTP e SFTP**\: para ativar apenas o SFTP além do FTP.
-    - **FTP, SFTP e SSH**\: para ativar o FTP, o SFTP e o SSH.
+    - **FTP e SFTP**: para ativar apenas o SFTP além do FTP.
+    - **FTP, SFTP e SSH**: para ativar o FTP, o SFTP e o SSH.
 
 ![Ativação SFTP 2](images/enable_sftp_2.png){.thumbnail}
 
@@ -190,7 +190,7 @@ clique com o botão direito do rato num dos ficheiros presentes no servidor e se
 
 Pode alterar as permissões de acesso (Chmod) dos seus ficheiros e das pastas presentes no alojamento.
 
-Geralmente, é mais fácil gerir os direitos Chmod com o valor numérico `XXX` (composto de 3 dígitos, podendo ir de 0 a 7). O painel de autorizações pode então ir de `000` (nenhum direito) a `77` (todos os direitos).
+Geralmente, é mais fácil gerir os direitos Chmod com o valor numérico `XXX` (composto de 3 dígitos, podendo ir de 0 a 7). O painel de autorizações pode então ir de `000` (nenhum direito) a `777` (todos os direitos).
 
 > [!alert]
 >
