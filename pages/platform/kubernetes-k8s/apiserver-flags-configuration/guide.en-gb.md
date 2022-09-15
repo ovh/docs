@@ -1,7 +1,7 @@
 ---
 title: Configuring the API server flags on an OVHcloud Managed Kubernetes cluster
 slug: apiserver-flags-configuration
-excerpt: 'Find out how to configure the API server admission plugins on an OVHcloud Managed Kubernetes cluster'
+excerpt: 'Find out how to configure the managed components of your Kubernetes: CoreDNS, IPVS, and even API server admission plugins on an OVHcloud Managed Kubernetes cluster'
 section: User guides
 ---
 
