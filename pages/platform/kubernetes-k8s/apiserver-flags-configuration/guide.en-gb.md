@@ -290,7 +290,7 @@ It’s the first command to execute for a new configuration, or after doing a ch
 The `init` command will:
 
 - Download and install Terraform providers/plugins
-- Initialise backend (if defined)
+- Initialize the backend (if defined)
 - Download and install modules (if defined)
 
 Now, we can generate our plan:
