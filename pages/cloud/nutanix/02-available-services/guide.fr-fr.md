@@ -55,9 +55,9 @@ Les licences et services communs aux deux packs de licences sont les suivants :
 **Nutanix Advanced** inclut la version **AOS Ultimate** de la brique **AOS Storage**, anciennement **AOS Distributed Storage**, qui ajoute, en plus de la version standard, les capacités suivantes :
 
 - Une réplication avancée avec une meilleur résilience entre clusters :
-    - **Nearsync replication** avec un **RPO** à 20 secondes.
+    - **Nearsync Replication** avec un **RPO** à 20 secondes.
     - **Metro Availability** avec un **RPO** à 0 secondes et possible utilisation en continu.
-    - **Sync replication** avec un **RPO** à 0 secondes.
+    - **Sync Replication** avec un **RPO** à 0 secondes.
 - et une meileure sécurité :
     - **Data-at-Rest Encryption** : chiffrement logiciel.
     - **Native KVM** : gestion des clés de chiffrement.
