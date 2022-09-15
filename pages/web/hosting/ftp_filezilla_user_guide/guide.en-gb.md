@@ -172,7 +172,7 @@ A popup menu will appear, and you can choose from:
 - **Refresh**: Refreshes the data display to provide an up-to-date view of the files.
 - **Delete**: Allows you to delete the selected file.
 - **Rename**: Allows you to rename the selected file.
-- **Copy URL(s) to clipboard**: Allows you to automatically copy the direct link to the selected file. Example of a URL that can be generated: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/MY_FOLDER/my_file.jpg`.
+- **Copy URL(s) to clipboard**: Allows you to automatically copy the direct link to the selected file. Example of a URL that can be generated: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/MY_FOLDER/my_file.jpg`
 - **File permissions...**: Allows you to modify access permissions (*chmod*).
 
 ![hosting](images/1830.png){.thumbnail}
@@ -191,7 +191,7 @@ Generally, it is easier to manage *chmod* rights with the three-digit number for
 >
 > Warning, it is not recommended to set "*chmod* 000" rights on your folders or files. You will no longer be able (at least via FTP) to manage this item (including as an FTP administrator).
 >
-> The same goes for "*chmod* 777" rights, because unlike the "*chmod* 000", anyone can act on the folder or file, which presents a significant security vulnerability for your hosted data.
+> Similarly, do not use "*chmod* 777", because in this case anyone can edit these folders or files. This results in a significant security vulnerability for your hosted data.
 >
 
 The first of the three *chmod* digits corresponds to the owner/administrator rights, the second to group rights (rarely used and generally set to 0) and the third to visitors to your website on your hosting.
