@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - ¿Cómo bloquear el acceso a mi sitio web para determinadas direcciones IP a través de un archivo .htaccess?"
-slug: web-htaccess-cómo-bloquear-algunas-ip-a-nivel-de-mi-sitio
+slug: htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website
 excerpt: "Descubra las posibles acciones a través de un archivo .htaccess para bloquear el acceso a su sitio web a determinadas direcciones IP."
 section: Reescritura y autenticación
 order: 01
