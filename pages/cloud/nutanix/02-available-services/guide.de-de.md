@@ -8,7 +8,7 @@ section: Erste Schritte
 order: 02
 ---
 
-**Last updated 7th March 2022**
+**Last updated 15th September 2022**
 
 ## Objective
 
