@@ -52,7 +52,7 @@ Link do pobrania kopii zapasowej jest generowany, a następnie wysyłany e-maile
 
 #### Etap 1 - Wygeneruj link do pobrania wysłany e-mailem
 
-Aby wygenerować link do pobrania, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Web Cloud`{.action}, kliknij Hosting` `{.action}, a następnie odpowiednią usługę Cloud Web. 
+Aby wygenerować link do pobrania, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, a następnie odpowiednią usługę Cloud Web. 
 
 Wybierz kartę `FTP - SSH`{.action} i kliknij przycisk `Wygeneruj kopię zapasową`{.action} po prawej stronie.
 
