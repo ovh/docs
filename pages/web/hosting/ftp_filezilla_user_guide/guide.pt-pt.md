@@ -1,272 +1,298 @@
 ---
-title: 'Partilhado: Guia de utilização do FileZilla'
+title: "Tutoriais - Utilizar o FileZilla com o seu alojamento OVHcloud"
 slug: partilhado_guia_de_utilizacao_do_filezilla
-excerpt: 'Guia de utilização do FileZilla'
-id: '1380'
-legacy_guide_number: g1380
+excerpt: "Encontre aqui um tutorial para a utilização do software Filezilla no seu alojamento partilhado."
+section: FTP e SSH
+order: 04
 ---
 
-## Apresentação
-FileZilla é um software disponível para vários sistemas operativos (Windows, MAcOSm, etc).
+**Última atualização: 13/09/2022**
 
-Este software dá-lhe a possibilidade de colocar online o seu website e permite-lhe a ligação ao seu espaço de alojamento (FTP).
+> [!primary]
+>
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-Para noções sobre como utilizar o software, aceda ao site [url="https://filezilla-project.org/"[blue]do projeto FileZilla[/blue][/url]
+## Objetivo
 
-![FileZilla](images/2400.png){.thumbnail}
+O FileZilla é um software disponível gratuitamente em vários sistemas operativos (Windows, macOS, etc.).
+Permite publicar ficheiros ou o seu website [acedendo ao espaço FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento.
 
+**Saiba como utilizar o software Filezilla com o seu alojamento partilhado.**
 
-## Interface
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Este tutorial está disponível para o acompanhar nas suas operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/) e/ou que contacte o editor do software. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste tutorial.
+> 
 
-## Detalhes sobre a apresentação de dados na ferramenta FileZilla
-A zona 1 fornece informações sobre o estado da ligação, as transferências, os erros de comunicação, etc.
-Geralmente as informações que não são úteis para amadores.
+## Requisitos
 
-A zona 2 tem em conta a hierarquia de ficheiros para chegar à pasta do seu site (ou dos ficheiros a transferir) para o seu computador.
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter um serviço de [alojamento Web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter instalado o software Filezilla no seu computador. Este último está disponível gratuitamente a partir da página [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
-A zona 3 tem em conta a hierarquia de ficheiros para chegar à pasta onde atualmente está no servidor.
+## Apresentação da interface <a name="interface"></a>
 
-A zona 4 lista a diretoria que abriu no seu computador, tendo em conta o nome, o tamanho, o tipo e a data de modificação dos ficheiros.
+![alojamento](images/1818.png){.thumbnail}
 
-A zona 5 lista o diretoria que abriu no servidor, tendo em conta o nome, o tamanho, o tipo, a data de modificação dos ficheiros e a propriedade dos ficheiros.
+- A parte superior **enquadrada** permite uma ligação rápida ao seu alojamento ao introduzir o seu nome de **host**, o nome de **utilizador**, a sua **password** associada e o número de **porta** utilizado.
+- **zona 1**: detalhes sobre o histórico de operações, ligação ao espaço FTP, transferência de ficheiros, erros, etc. Para saber mais, aceda à [documentação oficial do Filezilla](https://filezilla-project.org/){.external}.
+- **zona 2**: arborescência dos diretórios/ficheiros locais no seu computador.
+- **zona 3**: arborescência de diretórios/ficheiros distantes quando está ligado ao seu alojamento.
+- **zona 4**: lista dos diretórios/ficheiros no diretório selecionado localmente no seu computador.
+- **zona 5**: lista dos diretórios/ficheiros distantes no diretório selecionado no seu alojamento.
+- **zona 6**: lista das operações de transferência em curso, pendentes ou em erro entre o seu computador e o seu alojamento.
 
-A zona 6 indica a lista de espera dos ficheiros que transferiu (ou está em curso de transferir) para o servidor ou para o computador.
+## Instruções
 
-Na parte superior da interface (a verde) tem em conta o nome do host (servidor ao qual está ligado), bem com o nome do utilizador FTP, a sua password e a porta utilizada.
+### Ligação com Filezilla em FTP
 
-![FileZilla](images/1818.png){.thumbnail}
+![alojamento](images/quickcnt.png){.thumbnail}
 
-## Separador principal
-O separador principal contém os ícones úteis ao funcionamento básico do software. Não utilizamos todos os botões para proceder à transferência de ficheiros. Consulte em baixo uma breve descrição dos ícones.
- Abrir o gestor de sites
- Apresentar ou ocultar o log (1)
- Apresentar ou ocultar a hierarquia dos ficheiros locais (2)
- Apresentar ou ocultar a hierarquia dos ficheiros distantes (3)
- Apresentar ou ocultar a fila de espera (6)
- Atualizar a lista das pastas e dos ficheiros
- Iniciar ou parar o tratamento da fila de espera
- Anular a operação em curso
- Desligar-me do servidor atualmente visível
- Ligar-me ao último servidor utilizado
- Apresentar a caixa de diálogo da gestão dos filtros das pastas
- Ativar ou desativar a comparação de uma pasta
- Ativar ou desativar a navegação sincronizada
- Procura recursiva de ficheiros
-
-
-## Ligação FTP
-No quadro verde em cima, para que possa estabelecer a ligação ao servidor distante, ser-nos-á pedido pelo software:
+A partir da barra de ligação rápida, complete as informações através da seguinte tabela:
 
 |Informação solicitada|Detalhes|
 |---|---|
-|Servidor FTP|Trata-se do endereço do servidor que lhe permite aceder ao seu espaço de armazenamento.<br><br> Em função do tipo de software, pode denominar-se “servidor”, “endereço de servidor”, “host”, “nome do host”, etc.|
-|Login FTP|Trata-se do endereço do servidor que lhe permite aceder ao seu espaço de armazenamento.<br><br> Em função do tipo de software, pode denominar-se “utilizador”, “nome de utilizador”, “identificador”, “login” ou “username”.|
-|Palavra-passe do utilizador FTP|Trata-se da palavra-passe associada ao login FTP.<br><br> Em função do tipo de software, pode denominar-se “palavra-passe” ou “password”.|
-|Porta de ligação|Este campo é preenchido de forma automática pelo software. Se tiver de preencher alguma informação:<br><br>\- utilize a porta 21 para uma ligação através do protocolo FTP;<br>\- utilize a porta 22 para uma ligação através do protocolo SFTP (caso este esteja ativo).|
+|Host| Endereço do servidor que permite aceder ao espaço de armazenamento do seu alojamento.<br><br> Para os alojamentos partilhados, tem geralmente esta forma: `ftp.clusterXXX.hosting.ovh.net` (os `XXX` representam o número do cluster onde está o seu alojamento)|
+|Utilizador|Identificador que lhe permite aceder ao espaço de armazenamento do seu alojamento.|
+|Palavra-passe|Password associada ao utilizador.|
+|Porta|Geralmente, é automaticamente complementado pelo software. Caso contrário, introduza:<br><br>- a porta 21 para uma ligação FTP;<br>- a porta 22 para uma ligação SFTP (no caso de esta estar ativada). Encontre mais informações sobre o SFTP na secção [dedicada deste tutorial](#sftp).|
 
-Se não possuir estas informações, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. Poderá ver as informações relativas ao seu espaço de armazenamento, assim como uma tabela com os utilizadores FTP e SSH criados no seu alojamento.
+Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} na secção "Web Cloud" e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento:
 
-Após tudo preenchido de forma correta, clique em Ligação rápida para estabelecer a ligação ao servidor.
+![alojamento](images/loginFTP-SSH.png){.thumbnail}
 
-![FileZilla](images/1819.png){.thumbnail}
+> [!warning]
+>
+> Algumas ofertas da OVHcloud não utilizam a porta 22 para as ligações em SFTP e/ou SSH. Utilize as portas que aparecem na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+>
 
+Quando tudo estiver corretamente introduzido na caixa **1** da imagem abaixo, clique em `Ligação rápida`{.action}.
 
-## Ligação SFTP
-O protocolo SFTP (SSH File Transfer Protocol) permite uma ligação FTP à porta 22 através de uma ligação segura.
-Atenção, este tipo de ligação somente é válida a partir da oferta [Pro](http://www.ovh.pt/alojamento-partilhado/).
-Irá conseguir, por exemplo, modificar os direitos de ficheiros que não poderá executar estando ligado via FTP à porta 21.
+![alojamento](images/1819.png){.thumbnail}
 
-A verde em cima, a fim de estabelecer a ligação ao servidor distante ser-nos-á pedido:
+Se a ligação for bem-sucedida, será informado através do estado presente na caixa **2**. Assim, poderá consultar os seus diretórios/pastas e ficheiros já presentes no seu alojamento (caixa **3**).
 
-- Servidor : ftp.seu-dominio.tld ou ftp.cluster0XX.ovh.net ou newftp.cluster0XX.ovh.net
+### Ligação com Filezilla em SFTP <a name="sftp"></a>
+
+O **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) é um protocolo semelhante ao **FTP**. Como o SSH, utiliza a porta 22 predefinida em vez da porta 21. Se utiliza uma oferta de alojamento Cloud Web, deve utilizar a porta apresentada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. A porta 22 é desativada por segurança em SSH e SFTP para os alojamentos Cloud Web.
+
+> [!success]
+>
+> O SFTP pode ser ativado gratuitamente para todas as ofertas de alojamento da OVHcloud (exceto as antigas ofertas 60free/demo1g).
+> 
+
+#### Verificar a ativação de SFTP
+
+Em primeiro lugar, verifique se o SFTP está ativado para o seu **Login FTP**.
+
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção "Web Cloud", e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}.
+
+De seguida, verifique se o **SFTP** está ativo na tabela.
+
+![Ativação SFTP oferta start](images/enable_sftp_start.png){.thumbnail}
+
+Se não estiver ativo:
+
+- Clique no botão `...`{.action} à direita da tabela e, a seguir, em `Editar`{.action}.
+
+![Ativação SFTP 1](images/enable_sftp_1.png){.thumbnail}
+
+- Na nova janela, verifique se está ativada uma das 2 opções seguintes:
+    - **FTP e SFTP**: para ativar apenas o SFTP além do FTP.
+    - **FTP, SFTP e SSH**: para ativar o FTP, o SFTP e o SSH.
+
+![Ativação SFTP 2](images/enable_sftp_2.png){.thumbnail}
+
+- A seguir, clique em `Seguinte`{.action} e depois em `Validar`{.action}
+
+#### Lançar a ligação SFTP
+
+![alojamento](images/quickcnt.png){.thumbnail}
+
+Na secção superior da Filezilla e para estabelecer a ligação ao servidor remoto (alojamento), insira os seguintes elementos:
+
+- Host: `ftp.clusterXXX.hosting.ovh.net` (não se esqueça de substituir os `X` pelos do seu cluster de alojamento)
 - Identificador: o seu login FTP
-- Password: a password FTP associada ao login
-- Porta : 22 esta vez
+- Password: a palavra-passe FTP associada ao login
+- Porta: 22
 
+Depois de clicar no botão `Ligação rápida`{.action}, irá abrir uma caixa de diálogo (ver imagem abaixo) para certificar a ligação ao host ao qual se vai ligar. Uma vez ligado a um host OVHcloud, pode selecionar *Sempre confiar nesse host, adicionar esta chave à cache* para que o software não o peça novamente no futuro.
 
-Após clicar no botão Ligação rápida, irá abrir-se uma caixa de diálogo (ver ao lado) para se certificar da ligação ao host ao qual pretende estabelecer ligação.
-Estando a ligar-se a um host OVH poderá selecionar "Configurar sempre neste host, adicionar esta chave à cache" para que não lhe volte aparecer esta mensagem.
+![alojamento](images/1834.png){.thumbnail}
 
-![FileZilla](images/1834.png){.thumbnail}
+### Erros de ligação
 
+A mensagem apresentada abaixo indica um erro de identificação aquando da ligação em FTP ou SFTP ao alojamento partilhado:
 
-## Erros de ligação
-A mensagem introduzida indica-nos um erro de autenticação aquando da ligação ao FTP do alojamento partilhado.
+![alojamento](images/1820.png){.thumbnail}
 
-Este tipo de mensagem é gerada devido a um erro no par Login // Password
+Este tipo de mensagem é gerada por um erro no binário Login/Palavra-passe.
 
-Verifique os seus dados para que se certifique que não existe nenhum erro aquando da introdução do utilizador/password. É ainda possível que peça no seu Espaço Cliente uma nova password de acesso FTP.
+Verifique os seus dados de acesso para garantir que não há erros. Se necessário, pode alterar a palavra-passe do acesso FTP do seu alojamento diretamente na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-Está disponível um guia que diz respeito à alteração da password FTP nas ofertas partilhadas:[]({legacy}1374)
+> [!success]
+> Está disponível um guia sobre a [alteração da palavra-passe FTP](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/) nas ofertas partilhadas.
 
-![FileZilla](images/1820.png){.thumbnail}
-Neste caso, é gerado um erro devido ao nome do servidor estar incorreto.
+No caso abaixo, o erro é gerado por um nome de host incorreto:
 
-![FileZilla](images/1824.png){.thumbnail}
+![alojamento](images/1824.png){.thumbnail}
 
+Verifique este último em relação ao nome do host declarado na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-## Transferência de ficheiros
-Para proceder à transferência dos seus ficheiros via FTP pode simplesmente selecioná-los e efetuar um copiar-colar dos ficheiros na janela à esquerda (os seus ficheiros que possui localmente) para a janela à direita (o seu espaço de alojamento).
+### Transferência dos ficheiros
 
+Para transferir os seus ficheiros através de FTP, pode selecioná-los e deslizar e descarregar ficheiros/ficheiros a partir da janela da esquerda *(computador)* para a janela da direita *(alojamento)* (**zonas 4 e 5**, descritas na secção deste tutorial relativa à [interface](#interface) do Filezilla).
 
-- Atenção, selecione a pasta alvo na janela à direita.
+Tenha o cuidado de selecionar corretamente o diretório alvo na janela da direita.
 
+Uma vez realizada esta ação, os seus ficheiros serão colocados automaticamente em fila de espera para serem colocados no servidor.
 
-Após realizar esta operação, os seus ficheiros serão automaticamente colocados na ficha de espera para serem transferidos para o servidor.
+![alojamento](images/drag-drop-en.png){.thumbnail}
 
-![FileZilla](images/1821.png){.thumbnail}
+### Vista da fila de espera
 
+Está disponível uma vista na fila (**zona 6** descrita na secção deste tutorial relativa à [interface](#interface) de Filezilla).
 
-## Vista da fila de espera
-Está disponível um mecanismo de visualização da fila de espera
+Nesta zona, encontrará:
 
-Pode consultar:
-
-
-- os ficheiros em lista de espera para serem transferidos para o servidor;
-
+- os ficheiros que aguardam serem colocados no servidor remoto ainda presentes na fila de espera;
 - os ficheiros para os quais a transferência falhou;
+- os ficheiros para os quais a transferência foi bem-sucedida no alojamento remoto.
 
-- os ficheiros que foram transferidos para o alojamento remoto;
+![alojamento](images/1822.png){.thumbnail}
 
+### Menu contextual Servidor
 
+Clique com o botão direito do rato num dos ficheiros presentes na **zona 5** (descrita na secção deste tutorial relativa à [interface](#interface) de Filezilla).
 
-![FileZilla](images/1822.png){.thumbnail}
+Surge um menu contextual e tem várias opções à sua disposição:
 
+- Descarregar: descarregar o ficheiro para a pasta local aberta.
+- Adicionar os ficheiros à fila de espera: adicione o ficheiro à fila de espera, permite-lhe, por exemplo, adiar o download dos dados.
+- Apresentar/Editar: permite-lhe apresentar ou editar diretamente um ficheiro presente no seu alojamento. No entanto, deve ter um software capaz de ler o ficheiro instalado no seu computador.
+- Criar uma pasta: permite-lhe criar uma nova pasta diretamente no alojamento remoto.
+- Atualizar: atualize a visualização dos dados de forma a apresentar corretamente os diferentes ficheiros presentes.
+- Eliminar: permite-lhe eliminar o ficheiro selecionado.
+- Renomear: permite-lhe alterar o nome do ficheiro selecionado.
+- Copiar o(s) endereço(s) na área de transferência: permite-lhe copiar automaticamente o link direto para o ficheiro selecionado. Exemplo de URL que pode ser gerado: `ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg`
+- Permissões de ficheiro: permite-lhe modificar as permissões dos ficheiros (Chmod)
 
-## Menu contextual do Servidor
-Se efetuar um clique com o botão do lado direito do rato num dos ficheiros presentes (cf. zona 5), irá ser apresentado um menu contextual e terá à sua escolha várias opções
+![alojamento](images/1830.png){.thumbnail}
 
-Transferir: transfere o ficheiro para o dossier local aberto.
+## Informações úteis
 
-Adição dos ficheiros à lista de espera: adiciona o ficheiro à lista de espera e permite, por exemplo, difereir o download de dados.
+### Direitos de acesso (Chmod) aos ficheiros e às pastas
 
-Mostrar/Edtar: permite apresentar ou editar diretamente um ficheiro presente no seu alojamento, embora deva possuir um software capaz de ler e editar o ficheiro no seu computador.
+clique com o botão direito do rato num dos ficheiros presentes no servidor e selecione `Permissões de ficheiro...`{.action}.
 
-Criar uma pasta: permite a criação de uma nova pasta no seu alojamento distante.
+Pode alterar as permissões de acesso (Chmod) dos seus ficheiros e das pastas presentes no alojamento.
 
-Atualizar: atualiza a apresentação dos dados para apresentar corretamente os diferentes ficheiros presentes.
+Geralmente, é mais fácil gerir os direitos Chmod com o valor numérico `XXX` (composto de 3 dígitos, podendo ir de 0 a 7). O painel de autorizações pode então ir de `000` (nenhum direito) a `777` (todos os direitos).
 
-Eliminar: permite a eliminação do ficheiro selecionado.
+> [!alert]
+>
+> Atenção, não é recomendado que coloque os direitos Chmod 000 nos seus ficheiros ou pastas. Com efeito, já não terá a possibilidade (pelo menos em FTP) de gerir este elemento (incluindo enquanto administrador FTP).
+>
+> O mesmo se aplica aos direitos Chmod 777 pois, ao contrário do Chmod 000, todos podem agir sobre a pasta ou o ficheiro, o que apresenta uma falha de segurança consequente para os seus dados alojados.
+>
 
-Renomear: permite a alteração do nome do ficheiro selecionado.
+O primeiro dos três números `XXX` que definem o Chmod corresponde aos direitos do proprietário/administrador, o segundo aos direitos de grupo (raramente utilizado e geralmente igual a 0) e o terceiro aos visitantes do seu site no seu alojamento.
 
-Copiar os caminhos URL para a área de transferência: permite copiar de forma automática o link direto para o ficheiro selecionado.
-Exemplo de URL que pode ser gerado: ftp://loginftp@ftp.cluster0XX.ovh.net/www/minhapasta1/meuficheiro.jpg
+Por predefinição, recomendamos que não ultrapasse as permissões Chmod **705** para as pastas e as permissões Chmod **604** para os ficheiros.
 
-Permissões do ficheiro: dá-lhe a possibilidade de modificar os direitos de ficheiros (CHMOD)
+Quanto mais alto for o número, mais elevadas são as permissões.
 
-![FileZilla](images/1830.png){.thumbnail}
+![alojamento](images/1831.png){.thumbnail}
 
+Indique as permissões que deseja atribuir, o valor Chmod será automaticamente atualizado.
 
-## Permissões de pastas e ficheiros
-Para que possa aceder a esta interface faça clique direito com o rato num dos ficheiros presentes no servidor e depois selecione "Permissões do ficheiros".
+Pode selecionar a opção "Cursão nas sub-pastas".
 
-Nesta interface tem a possibilidade de modificar os direitos (CHMOD) dos seus ficheiros e das pastas presentes no alojamento.
+Esta situação terá por efeito alterar os direitos do processo em questão, bem como dos processos e ficheiros que nele possam estar presentes.
 
-Coloque as permissões que deseja atribuir aos ficheiros, o valor CHMOD será atualizado automaticamente.
+### Reabertura de site
 
-Pode ainda selecionar "Aplicar a todos os ficheiros e pastas".
+> [!primary]
+>
+> Independentemente de uma ação da sua parte, o seu alojamento pode ser desativado após a deteção de ficheiros maliciosos ou não autorizados no seu alojamento pelos nossos sistemas de segurança.
+>
+> Deverá [proteger as suas soluções](https://docs.ovh.com/pt/hosting/diagnostico-403-forbidden/) corrigindo as falhas de segurança evocadas na notificação de bloqueio recebida por e-mail.
+>
 
-Esta ação terá como efeito a modificação dos direitos da pasta em questão mas igualmente as pastas e ficheiros presentes na pasta.
-
-![FileZilla](images/1831.png){.thumbnail}
-
-
-## Reabertura de Site
-Abra o software FileZilla, clique em "Servidor" e selecione "Introduzir um comando personalizado".
-
-No software FileZilla, é possível que encontre a designação "Introduzir um comando FTP." ao invés de "Introduzir um comando personalizado".
+A seguir, clique em `Servidor`{.action} e selecione `Introduza um comando personalizado`{.action} (esta opção pode também chamar-se `Introduza um comando FTP`{.action}).
 
 Introduza o seguinte comando:
 
-
-```
+```bash
 SITE CHMOD 705 /
 ```
 
+> [!warning]
+>
+> Este comando não está funcional em SFTP.
+>
 
-Se obtiver o seguinte erro:
+![alojamento](images/1829.png){.thumbnail}
 
-550 would not chance perms on /. not such file or directory
+Se obtiver o erro `550 would not change perms on /. not such file or directory`, utilize o seguinte comando:
 
-será necessário usar o seguinte comando:
-
-
-```
+```bash
 SITE CHMOD 705 .
 ```
 
+> [!primary]
+>
+> Para verificar se a reabertura está efetiva, teste o seu site a partir de um browser ao fim de alguns minutos.
+>
 
-Para verificar que a reabertura do site ocorreu de forma bem sucedida, teste através de um acesso ao site efetuado a partir do seu browser.
+> [!warning]
+>
+> Queira testar a visualização após 3 horas no máximo.<br>
+> De facto, os nossos robôs passam pelo menos a cada 3 horas para verificar as alterações de estado.<br>
+> Em função do momento em que a operação acima for realizada, o restabelecimento da visualização do seu site poderá ser mais ou menos rápido.<br>
+> Se o prazo de 3 horas expirou e o seu site ainda não estiver online, verifique se o comando indicado foi realizado repetindo a operação.<br>
+> Se ainda não funcionar, contacte o nosso suporte.
+> 
 
-Este comando não funciona em SFTP.
+### Transferência de ficheiros binários
 
-![FileZilla](images/1829.png){.thumbnail}
-A apresentação do site deverá passar a ser novamente possível após 3 horas, no máximo.
-Os nossos robôs passam a cada 3 horas para fazer verificações de alterações de estados.O tempo de reestabelecimento varia em função do momento em que solicitou a reabertura.
+Para os ficheiros binários, como por exemplo os ficheiros do tipo **CGI**, pode ser interessante escolher a forma como a transferência será realizada.
 
-Se após 3 horas da ação de reabertura o seu site continuar offline, contacte o serviço de aconselhamento.
+Para alterar o tipo de transferência, selecione `Transferência`{.action} no menu principal e `Tipo de transferência`{.action}.
 
+![alojamento](images/1832.png){.thumbnail}
 
-## Transferência de ficheiros binários
-Para os ficheiros do tipo binário, por exemplo no caso de ficheiros CGI
-pode ser interessante escolher como a transferência se irá realizar.
+### Comparação de dossiers
 
-Para modificar, selecione "Transferências" no menu principal e de seguida clique em "Tipo de transferência".
+![alojamento](images/1823.png){.thumbnail}
 
-![FileZilla](images/1832.png){.thumbnail}
+A opção de comparação de ficheiros apresenta cores nas **zonas 4** e **5** (apresentadas na secção deste tutorial relativa à [interface](#interface) de Filezilla). Esta opção permite salientar as diferenças entre os ficheiros e pastas locais e os do servidor. 
 
+Ao clicar direito no ícone, pode alterar o método de comparação. Ser-lhe-á sugerido que ative ou desative a opção, mas também que:
 
-## Comparação de pastas
-Esta opção apresenta diferentes cores nas zonas 3 e 4 para comparar as diferenças entre os ficheiros e pastas locais e no servidor.
-Ao clicar com o botão direito do rato no ícone  poderá alterar o modo de comparação.
-Propomos que ative ou desative a opção, mas igualmente:
+- comparar o tamanho dos ficheiros;
+- comparar o horário;
+- ocultar os ficheiros idênticos.
 
-- Comparar o tamanho dos ficheiros
-- Comparar o "timestamp"
-- Ocultar ficheiros idênticos
+**Significado das cores:**
 
+- Amarela: o ficheiro existe apenas de um lado.
+- Verde: o ficheiro é mais recente que o ficheiro não colorido do outro lado.
+- Vermelho: os tamanhos dos ficheiros são diferentes.
 
-Cores :
+## Quer saber mais? <a name="go-further"></a>
 
-- Laranja : o ficheiro encontra-se somente num lado
-- Verde: o ficheiro é mais recente que o ficheiro não marcado do outro lado
-- Vermelho: os tamanhos dos ficheiros são diferentes
+A seguir, encontrará o link para o nosso manual para [corrigir erros recorrentes durante a utilização de um programa FTP](https://docs.ovh.com/pt/hosting/partilhando-os-problemas-ftp-recrutamento/).
 
+De forma mais geral, consulte [o conjunto dos nossos guias relativos aos alojamentos partilhados](https://docs.ovh.com/pt/hosting/).
 
+Não hesite em consultar a [página oficial do Filezilla](https://filezilla-project.org/).
 
-![FileZilla](images/1823.png){.thumbnail}
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-## Preferências
-
-## Ligação
-É possível modificar os seus parâmetros de ligação ao servidor.
-
-No entanto, tenha cuidado, pode ser considerado abusivo para certos servidores e poderá ver o seu endereço IP bloqueado.
-
-Para modificar estas regras, aceda a "Edição" e depois "Parâmetros" e finalmente "Ligação".
-
-![FileZilla](images/1825.png){.thumbnail}
-
-## Transferências
-É possível que modifique as preferências no que diz respeito às ações a executar por defeito aquando da modificação de um ficheiro existente.
-
-Para modificar essas regras aceda a "Edição" e depois "Parâmetros" e finalmente "Transferências".
-
-![FileZilla](images/1826.png){.thumbnail}
-
-
-## Conhecer o servidor de ligação
-Em certos casos, o nosso suporte poderá ter de lhe solicitar que indique qual o servidor ao qual se liga com a ferramenta FileZilla.
-
-Esta verificação pode ser necessária, por exemplo, se constatar lentidões ou anomalias diversas no acesso ao seu espaço FTP. Para conhecer qual o servidor:
-
-- Visualize o quadro onde são apresentados os logs da ligação FTP (logo por baixo dos dados de ligação);
-- Anote o nome do servidor identificado como webmXXX
-
-
-
-![FileZilla](images/2399.png){.thumbnail}
-
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

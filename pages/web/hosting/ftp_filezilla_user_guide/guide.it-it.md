@@ -1,269 +1,298 @@
 ---
-title: 'Hosting Condiviso: guida all’utilizzo di FileZilla'
+title: "Tutorial - Utilizzare FileZilla con il tuo hosting OVHcloud"
 slug: hosting_condiviso_guida_allutilizzo_di_filezilla
-excerpt: 'In questa guida ti illustriamo come utilizzare il client FTP FileZilla'
-id: '1380'
-legacy_guide_number: g1380
+excerpt: "Consulta qui una guida all'utilizzo del software Filezilla sul tuo hosting condiviso."
 section: FTP e SSH
+order: 04
 ---
 
-## A cosa serve FileZilla?
-FileZilla è un software disponibile per diversi sistemi operativi (Windows, MacOS, ecc.).
+**Ultimo aggiornamento: 13/09/2022**
 
-Ti permette di mettere online il tuo sito internet connettendoti al tuo spazio hosting (FTP).
+> [!primary]
+>
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-Scaricalo qui:
-[filezilla.it](http://filezilla.it/)
+## Obiettivo
 
-![FileZilla](images/2400.png){.thumbnail}
+FileZilla è un software disponibile gratuitamente su diversi sistemi operativi (Windows, macOS, ecc...).
+Permette di pubblicare online file o sito Internet [accedendo allo spazio FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) del tuo hosting.
 
+**Questa guida ti mostra come utilizzare Filezilla con il tuo hosting condiviso.**
 
-## Interfaccia
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla gestione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/) o contattare l'amministratore del software. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> 
 
-## Introduzione
-La zona 1 fornisce informazioni sullo stato della connessione, i trasferimenti, gli errori di connessione, etc.
-Generalmente, le informazioni qui presenti non sono utili per persone che non dispongono di un background tecnico.
+## Prerequisiti
 
-La zona 2 ripercorre la struttura fino alla cartella del tuo sito (o dei file da trasferire) sul tuo pc.
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
+- Aver installato il software Filezilla sul tuo computer Disponibile gratuitamente sulla pagina [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
-La zona 3 ripercorre la struttura fino alla cartella in cui stai operando sul server.
+## Presentazione dell'interfaccia <a name="interface"></a>
 
-La zona 4 lista la cartella che hai aperto sul tuo pc che riprende nome, dimensione, tipo e data di modifica dei file.
+![hosting](images/1818.png){.thumbnail}
 
-La zona 5 lista la cartella che hai aperto sul server che riprende nome, dimensione, tipo, data di modifica, diritti e proprietario dei file.
+- La parte superiore **incorniciata** permette una connessione rapida al tuo hosting inserendo il nome dell'**hosting**, il nome dell'**utente**, la **password** associata e il numero di **porta** utilizzato.
+- **zona 1**: dettagli sullo storico delle operazioni, sulla connessione allo spazio FTP, sui trasferimenti di file, sugli errori, ecc. Per saperne di più, consulta la [documentazione ufficiale di Filezilla](https://filezilla-project.org/){.external}.
+- **zona 2**: archivia directory/file locali sul tuo computer
+- **zona 3**: archivia directory/file remoti quando sei connesso al tuo hosting.
+- **zona 4**: elenco delle directory/file nella directory selezionata in locale sul tuo computer.
+- **zona 5**: elenco delle directory/file remoti nella directory selezionata sul tuo hosting.
+- **zona 6**: lista delle operazioni di trasferimento in corso, in attesa o in errore tra il tuo computer e il tuo hosting.
 
-La zona 6 indica la lista d'attesa dei file che saranno trasferiti, o in corso di trasferimento, verso il server o sul pc.
+## Procedura
 
-La parte superiore dell'interfaccia (sotto il riquadro verde) riprende il nome dell'host (server al quale sei connesso), il nome utente FTP, la password e la porta che viene utilizzata.
+### Connessione con Filezilla en FTP
 
-![FileZilla](images/1818.png){.thumbnail}
+![hosting](images/quickcnt.png){.thumbnail}
 
-## Barra principale
-La barra principale contiene le icone utili al funzionamento di base del programma. Non utilizziamo tutti i pulsanti per procedere al trasferimento dei file. Ecco una breve descrizione delle icone qui sotto.
- Apre l'interfaccia di gestione dei siti
- Visualizza o nasconde il diario (1)
- Visualizza o nasconde la struttura delle cartelle locali (2)
- Visualizza o nasconde la struttura delle cartelle remote (3)
- Visualizza o nasconde la lista d'attesa (6)
- Aggiorna la lista delle cartelle e dei file
- Avvia o arresta il trattamento di un file in lista d'attesa
- Annulla l'operazione in corso
- Disconnettiti dal server attualmente visibile
- Accedi di nuovo all'ultimo server utilizzato
- Visualizza la finestra di dialogo di gestione dei filtri delle cartelle
- Attiva o disattiva il confronto delle cartelle
- Attiva o disattiva la navigazione sincronizzata
- Ricerca ricorsiva dei file
-
-
-## Connessione FTP
-Nel riquadro verde in alto, per accedere al server remoto, ti chiediamo:
+Dalla barra di connessione rapida, completa le informazioni seguendo la tabella:
 
 |Informazione|Descrizione|
 |---|---|
-|Server FTP|Indirizzo del server che consente l’accesso allo spazio di storage.<br><br> In base al client utilizzato, potrebbe chiamarsi “Server”, “Indirizzo del server”, “Indirizzo”, “Host”, “Hostname”.|
-|Login FTP|Indirizzo del server che consente l’accesso allo spazio di storage.<br><br> In base al client utilizzato, potrebbe chiamarsi “Utente”, “Nome utente”, “Identificativo”, “Login”, “Username”.|
-|Password dell’utente FTP|Password associata all’utente FTP.<br><br> |
-|Porta di connessione|Questo campo, in genere, viene completato automaticamente dal client. In caso contrario:<br><br>\- utilizza la porta 21 per stabilire una connessione via protocollo FTP<br>\- utilizza la porta 22 per stabilire una connessione via protocollo SFTP (se attivo)|
+|Host| Indirizzo del server che permette di accedere allo spazio di archiviazione del tuo hosting.<br><br> Per gli hosting condivisi, ha generalmente questa forma: `ftp.clusterXXX.hosting.ovh.net` (i `XXX` rappresentano il numero di cluster in cui si trova il tuo hosting)|
+|Utente|Identificativo che ti permette di accedere allo spazio di storage del tuo hosting.|
+|Password|Password associata all'utente.|
+|Porta|In genere viene completato automaticamente dal software. Altrimenti, inserisci:<br><br>- la porta "21" per una connessione FTP;<br>- la porta "22" per una connessione SFTP (se attiva). Per maggiori informazioni sul protocollo SFTP, consulta [la sezione dedicata di questo tutorial](#sftp).|
 
-Per recuperare le informazioni necessarie, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca sulla scheda `FTP - SSH`{.action}. Nella nuova pagina, visualizzi tutte le informazioni relative allo storage e una tabella con gli utenti FTP e SSH creati sul tuo hosting.
+Se non ne sei in possesso, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione "Web Cloud" e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. A questo punto visualizzi le informazioni relative al tuo spazio di storage:
 
-Dopo aver inserito tutte le informazioni, clicca su Connessione rapida per accedere al server.
+![hosting](images/loginFTP-SSH.png){.thumbnail}
 
-![FileZilla](images/1819.png){.thumbnail}
+> [!warning]
+>
+> Alcune offerte OVHcloud non utilizzano la porta 22 per le connessioni SFTP e/o SSH. Utilizza le porte che appaiono nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+>
 
+Una volta che tutto è stato inserito correttamente nel riquadro **1** dell'immagine qui sotto, clicca su `Connessione rapida`{.action}.
 
-## Connessione SFTP
-L'SFTP (che sta per SSH File Transfer Protocol) è una connessione FTP sulla porta 22 e permette di accedere in maniera sicura.
-Questo tipo di connessione è possibile soltanto a partire dall'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/).
-Ti permette di modificare i diritti dei file non modificabili in FTP sulla porta 21 ad esempio.
+![hosting](images/1819.png){.thumbnail}
 
-Nel riquadro verde in alto, per accedere al server remoto, ti chiediamo:
+Se la connessione è stata effettuata correttamente, ti informeremo tramite lo stato presente nel riquadro **2** dell'immagine qui sotto. In questo modo è possibile visualizzare le directory/cartelle e file già presenti sul tuo hosting (riquadro **3**).
 
-- Host: ftp.tuo-dominio.tld o ftp.cluster0XX.ovh.net o newftp.cluster0XX.ovh.net
+### Connessione con Filezilla in SFTP <a name="sftp"></a>
+
+Lo **SFTP** (per **S**ecure **F**ile **T**ransfer **P**rotocol) è un protocollo simile al **FTP**. Come SSH, utilizza la porta 22 predefinita invece della porta 21. Se utilizzi un piano di hosting Cloud Web, è necessario utilizzare la porta che appare nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. La porta 22 è disattivata in SSH e SFTP per gli hosting Cloud Web.
+
+> [!success]
+>
+> SFTP è attivabile gratuitamente per tutte le offerte di hosting OVHcloud (tranne le vecchie offerte 60free/demo1g).
+> 
+
+#### Verifica l'attivazione di SFTP
+
+Per prima cosa verifica che l'SFTP sia attivo per il tuo **Login FTP**.
+
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione "Web Cloud" e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}.
+
+Verifica che il **protocollo SFTP** sia attivo nella tabella in basso.
+
+![Attivazione SFTP offerta start](images/enable_sftp_start.png){.thumbnail}
+
+Se non è attivo:
+
+- Clicca sui tre puntini `...`{.action} in corrispondenza della tabella e seleziona `Modifica`{.action}.
+
+![Attivazione SFTP 1](images/enable_sftp_1.png){.thumbnail}
+
+- Nella nuova finestra, verifica che sia attiva una delle 2 opzioni seguenti:
+    - **FTP e SFTP**: per attivare solo il protocollo SFTP oltre al protocollo FTP.
+    - **FTP, SFTP e SSH**: per attivare FTP, SFTP e SSH.
+
+![Attivazione SFTP 2](images/enable_sftp_2.png){.thumbnail}
+
+- Clicca su `Seguente`{.action} e poi su `Conferma`{.action}
+
+#### Avvia la connessione SFTP
+
+![hosting](images/quickcnt.png){.thumbnail}
+
+Nella parte superiore di Filezilla e per stabilire la connessione al server remoto (hosting), inserisci questi elementi:
+
+- Host: `ftp.clusterXXX.hosting.ovh.net` (ricordati di sostituire gli `X` con quelli del tuo cluster di hosting)
 - Identificativo: il tuo login FTP
 - Password: la password FTP associata al login
-- Porta: 22, questa volta
+- Porta: 22
 
+Dopo aver cliccato sul pulsante `Connessione rapida`{.action}, si apre una casella di dialogo (vedi l'immagine qui sotto) per certificare la connessione all'host su cui ti stai per connetterti. Accedendo all'host OVHcloud, seleziona la casella *Sempre di fiducia nell'host, aggiungi la chiave alla cache* affinché il software non te la richieda più in futuro.
 
-Dopo aver cliccato sul pulsante Connessione rapida, si apre una finestra per certificare la connessione all'host al quale stai per connetterti. 
-Se sei connesso a un host OVH, seleziona "Affidati sempre a questo host, aggiungi questa chiave alla cache" per memorizzare la preferenza.
+![hosting](images/1834.png){.thumbnail}
 
-![FileZilla](images/1834.png){.thumbnail}
+### Errori di connessione
 
+Il messaggio visualizzato qui sotto indica un errore di identificazione durante la connessione in FTP o SFTP all'hosting condiviso:
 
-## Problemi di connessione
-Il messaggio ci segnala un problema di accesso FTP all'hosting condiviso.
+![hosting](images/1820.png){.thumbnail}
 
-Questo tipo di messaggio viene generato da un errore in: User // Pw
+Questo tipo di messaggio è generato da un errore nella coppia Login/Password.
 
-Verifica le tue informazioni, puoi modificare la password FTP del tuo hosting direttamente dal tuo Spazio Cliente OVH.
+Verifica le tue credenziali per assicurarti che non vengano inseriti errori. Se necessario, è possibile modificare la password di accesso FTP dell'hosting direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
-Trovi qui una guida sulla modifica della password FTP:[]({legacy}1374)
+> [!success]
+> Per modificare la [password FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/) sulle offerte condivise, consulta questa guida.
 
-![FileZilla](images/1820.png){.thumbnail}
-In questo caso l'errore è generato da un nome host non corretto.
+Nel caso sotto riportato, l'errore è generato da un nome host non valido:
 
-![FileZilla](images/1824.png){.thumbnail}
+![hosting](images/1824.png){.thumbnail}
 
+Verifica la configurazione in relazione all'hostname indicato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
-## Trasferimento di file
-Per trasferire i tuoi file in FTP, selezionali e trascinali dalla finestra di sinistra (i tuoi file in locale) verso la finestra di destra (il tuo spazio di hosting).
+### Trasferimento dei file
 
+Per effettuare il trasferimento dei tuoi file in FTP, selezionali e trascina le directory/file dalla finestra di sinistra *(computer)* alla finestra di destra *(hosting)* (**zone 4 e 5** descritte nella sezione di questo tutorial relativa [all'interfaccia](#interface) di Filezilla).
 
-- Seleziona la cartella di destinazione con attenzione.
+Seleziona la directory di destinazione nella finestra di destra.
 
+Una volta effettuata questa operazione, i tuoi file si metteranno automaticamente in coda per essere depositati sul server.
 
-Dopo aver realizzato questa operazione, i tuoi file vengono automaticamente messi in lista d'attesa per essere salvati sul server.
+![hosting](images/drag-drop-en.png){.thumbnail}
 
-![FileZilla](images/1821.png){.thumbnail}
+### Vista sulla coda di attesa
 
+È disponibile una vista sulla coda di attesa (**zona 6** descritta nella sezione di questo tutorial relativa all'[interfaccia](#interface) di Filezilla).
 
-## Lista d'attesa
-Monitorando la lista d'attesa, puoi trovare:
+In questa zona trovi:
 
+- i file in attesa di essere depositati sul server remoto ancora presenti nella coda di attesa;
+- i file per i quali il trasferimento non è andato a buon fine;
+- i file per i quali il trasferimento è stato effettuato sull'hosting remoto.
 
-- i file in lista d'attesa per essere salvati sul server in remoto.
+![hosting](images/1822.png){.thumbnail}
 
-- i file di cui il trasferimento non è riuscito.
+### Menu contestuale Server
 
-- i file trasferiti correttamente.
+Fai click con il tasto destro su uno dei file presenti nella **zona 5** (descritta nella sezione di questo tutorial relativa [all'interfaccia](#interface) di Filezilla).
 
+Appare un menu contestuale e ti vengono proposte diverse opzioni:
 
+- Scarica: scarica il file nella cartella locale aperta.
+- Aggiungere i file alla coda d'attesa: aggiungi il file alla coda di attesa, ti permette ad esempio di rinviare il download dei dati.
+- Mostra/Modifica: ti permette di visualizzare o modificare direttamente un file presente sul tuo hosting. ma è necessario disporre di un software in grado di leggere il file installato sulla tua postazione.
+- Crea una cartella: ti permette di creare una nuova cartella direttamente sull'hosting remoto.
+- Aggiorna: aggiorna la visualizzazione dei dati per visualizzare correttamente i diversi file presenti.
+- Elimina: permette di eliminare il file selezionato.
+- Rinomina: ti permette di rinominare il file selezionato.
+- Copia l'indirizzo(i) negli appunti: ti permette di copiare automaticamente il link diretto al file selezionato. Esempio di URL che può essere generato: `ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg`
+- Permessi di file: ti dà la possibilità di modificare i diritti dei file (Chmod)
 
-![FileZilla](images/1822.png){.thumbnail}
+![hosting](images/1830.png){.thumbnail}
 
+## Informazioni utili
 
-## Menu contestuale Server
-Cliccando con il tasto destro su uno dei file presenti (cf par. 5), si apre un menu contestuale, con diverse scelte possibili:
+### Diritti di accesso (Chmod) su file e cartelle
 
-Scarica: scarica il file nella cartella locale aperta
+Clicca con il tasto destro su uno dei file presenti sul server e seleziona `Permessi di file...`{.action}.
 
-Aggiungi i file alla lista d'attesa: aggiungi il file alla lista d'attesa. Ti permette di pianificare i caricamenti.
+È possibile modificare i diritti di accesso (Chmod) dei file e delle cartelle presenti sull'hosting.
 
-Visualizza/Modifica: ti permette di visualizzare o modificare direttamente un file presente sul tuo hosting, se disponi di un software in grado di leggere il file.
+In genere, è più facile gestire i diritti Chmod con il valore `XXX` (composto da 3 cifre che possono variare da 0 a 7). Il gruppo di permessi può quindi passare da `000` (nessun diritto) a `777` (tutti i diritti).
 
-Crea una cartella: ti permette di creare una nuova cartella direttamente sull'hosting remoto.
+> [!alert]
+>
+> Attenzione: non è consigliato mettere i diritti Chmod 000 sulle cartelle e sui file. Infatti, non sarà più possibile (almeno in FTP) gestire questo elemento (anche in qualità di amministratore FTP).
+>
+> Lo stesso vale per i diritti Chmod 777 perché, a differenza di Chmod 000, chiunque può agire sulla cartella o sul file, il che presenta una falla di sicurezza conseguente per i tuoi dati ospitati.
+>
 
-Aggiorna: aggiorna i dati per visualizzare correttamente i file presenti.
+Il primo delle tre cifre `XXX` che definisce il Chmod corrisponde ai diritti del proprietario/amministratore, il secondo ai diritti di gruppo (raramente utilizzato e generalmente uguale a 0) e il terzo ai visitatori del tuo sito sul tuo hosting.
 
-Elimina: ti permette di eliminare il file selezionato.
+Di default, ti consigliamo di non oltrepassare i diritti Chmod **705** per le cartelle e i diritti Chmod **604** per i file.
 
-Rinomina: ti permette di rinominare il file selezionato.
+Più la cifra è alta, più i permessi sono importanti.
 
-Genera un URL diretto al file: ti permette di creare un link diretto al file selezionato, come ad esempio: ftp://loginftp@ftp.cluster0XX.ovh.net/www/miacartella1/miofile.jpg
+![hosting](images/1831.png){.thumbnail}
 
-Permessi dei file: ti permette di modificare i diritti dei file (CHMOD)
+Inserisci i permessi da assegnare, il valore Chmod verrà automaticamente aggiornato.
 
-![FileZilla](images/1830.png){.thumbnail}
+Seleziona la casella "Sicurezza nelle sottocartelle".
 
+Ciò comporterà la modifica dei diritti del fascicolo in questione, nonché dei fascicoli e dei file che potrebbero essere presenti in quest'ultimo.
 
-## Diritti su file e cartelle
-Per accedere a questa interfaccia, clicca con il tasto destro su uno dei file presenti sul server e seleziona "Permessi sui file.
+### Riapertura del sito
 
-In questa interfaccia puoi modificare i diritti (CHMOD) sui tuoi file e sulle tue cartelle presenti sull'hosting. 
+> [!primary]
+>
+> Indipendentemente da un intervento da parte tua, il tuo hosting può essere disattivato in seguito al rilevamento di file malevoli o non autorizzati sul tuo hosting dai nostri sistemi di sicurezza.
+>
+> In questo caso, è necessario [proteggere le soluzioni](https://docs.ovh.com/it/hosting/diagnostic-403-forbidden/) correggendo le falle di sicurezza indicate nella notifica di blocco ricevuta via email.
+>
 
-Inserisci i permessi che vuoi attribuire e il valore CHMOD sarà automaticamente aggiornato.
+Clicca su `Server`{.action} e seleziona `Inserisci un ordine personalizzato`{.action} (questa opzione può anche essere chiamata `Inserisci un ordine FTP`{.action}).
 
-Puoi selezionare "Applica alle sottocartelle".
+Inserisci questo comando:
 
-Questa azione modifica i diritti della cartella in questione e delle cartelle e dei file al suo interno.
-
-![FileZilla](images/1831.png){.thumbnail}
-
-
-## Rimettere online il tuo sito
-Apri FileZilla, clicca su "Server" e seleziona "Seleziona un comando personalizzato".
-
-In FileZilla al posto di "Seleziona un comando personalizzato" potresti trovare anche "Inserire un comando FTP".
-
-Inserisci il comando:
-
-
-```
+```bash
 SITE CHMOD 705 /
 ```
 
+> [!warning]
+>
+> Questo comando non funziona con SFTP.
+>
 
-Se compare l'errore:
+![hosting](images/1829.png){.thumbnail}
 
-550 would not chance perms on /. not such file or directory
+Se si ottiene l'errore `550 would not change perms on /. not such file or directory`, esegui il comando:
 
-devi utilizzare il comando:
-
-
-```
+```bash
 SITE CHMOD 705 .
 ```
 
+> [!primary]
+>
+> Per verificare che la riapertura sia effettiva, prova il tuo sito da un browser dopo qualche minuto.
+>
 
-Per verificare che il sito sia di nuovo online, fai un test sul tuo site da un browser Internet.
+> [!warning]
+>
+> Verifica la visualizzazione dopo massimo 3 ore.<br>
+> I nostri robot passano almeno 3 ore per verificare i cambiamenti di stato.<br>
+> A seconda del momento in cui verrà effettuata l'operazione, il ripristino della visualizzazione del sito potrà essere più o meno rapido.<br>
+> Se il tempo di 3 ore è scaduto e il tuo sito non è ancora online, verifica che l'ordine inserito sia stato completato ripetendo l'operazione.<br>
+> Se ancora non funziona, contatta il nostro supporto.
+> 
 
-Questo comando non funziona in SFTP.
+### Trasferimento di file binari
 
-![FileZilla](images/1829.png){.thumbnail}
-Per sicurezza, ricontrolla entro 3 ore. I nostri bot impiegano 3 ore per verificare le modifiche. In base a quando vengono apportate, il ripristino del tuo sito potrà avvenire più o meno velocemente.
+Per i file di tipo binario, come ad esempio i file di tipo **CGI**, può essere interessante scegliere il modo in cui il trasferimento sarà effettuato.
 
-Se dopo 3 ore il tuo sito è offline, contatta il supporto.
+Per modificare il tipo di trasferimento, seleziona `Trasferimento`{.action} nel menu principale e poi `Tipo di trasferimento`{.action}.
 
+![hosting](images/1832.png){.thumbnail}
 
-## Trasferimento di file bancari
-Per i file di tipo binario, come un file di tipo CGI, può essere interessante scegliere la modalità in cui avverrà il trasferimento.
+### Confronto cartelle
 
-Modifica selezionando "Trasferimento" nel menu principale e poi "Tipo di trasferimento".
+![hosting](images/1823.png){.thumbnail}
 
-![FileZilla](images/1832.png){.thumbnail}
+L'opzione di confronto dei file mostra colori nelle **zone 4** e **5** (come mostrato nella sezione di questo tutorial relativa all'[interfaccia](#interface) di Filezilla). Questa opzione permette di evidenziare le differenze tra file e cartelle locali e quelle sul server. 
 
+Cliccando con il tasto destro sull'icona, puoi cambiare il metodo di confronto. Ti verrà chiesto di attivare o disattivare l'opzione, ma anche di:
 
-## Confronta cartelle
-Questa opzione visualizza dei colori nelle zone 3 e 4 per confrontare le differenze fra file e cartelle locali e il server.
-Cliccando con il tasto destro sull'icona , puoi modificare la modalità di confronto.
-Ti viene proposto di attivare o disattivare l'opzione e di:
+- confrontare la dimensione dei file
+- confrontare l'ora
+- nascondi i file identici.
 
-- Confrontare la dimensione dei file
-- Confrontare la datazione
-- Nascondere i file identici
+**Significato dei colori:**
 
+- Giallo: il file esiste solo da un lato.
+- Verde: il file è più recente del file non colorato dall'altro lato.
+- Rosso: le dimensioni dei file sono diverse.
 
-Colori:
+## Per saperne di più <a name="go-further"></a>
 
-- Giallo: il file esiste solo in una copia
-- Verde: il file è più recente del file non marcato nella collocazione differente 
-- Rosso: le dimensioni dei file sono diverse
+Di seguito trovi il link alla nostra guida per [risolvere gli errori ricorrenti nell'utilizzo di un software FTP](https://docs.ovh.com/it/hosting/condividili-problemi-ftp-ricorrenti/).
 
+Più in generale, consulta [le nostre guide relative agli hosting condivisi](https://docs.ovh.com/it/hosting/).
 
+Consulta la [pagina ufficiale di Filezilla](https://filezilla-project.org/).
 
-![FileZilla](images/1823.png){.thumbnail}
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
 
-## Preferenze
-
-## Connessione
-Puoi modificare i parametri di riconnessione al server. 
-
-Alcuni server potrebbero ritenere questa azione un abuso e aggiungere il tuo IP a una blacklist. 
-
-Per modificare queste impostazioni, accedi alla sezione "Modifica", "Impostazioni" e "Connessione".
-
-![FileZilla](images/1825.png){.thumbnail}
-
-## Trasferimenti
-Puoi modificare le preferenze sulle azioni predefinite da eseguire quando modifichi un file esistente.
-
-Per modificare queste impostazioni, accedi alla sezione "Modifica", "Impostazioni" e "Trasferimenti".
-
-![FileZilla](images/1826.png){.thumbnail}
-
-
-## Server di connessione
-In caso di anomalie o rallentamenti del tuo spazio FTP, il nostro supporto ti chiederà a quale server è connesso FileZilla.
-
-Per scoprirlo:
-
-- Torna al riquadro sotto i tuoi dati
-- Accedi ai logs in alto: lì trovi il nome del server webmXXX
-
-
-
-![FileZilla](images/2399.png){.thumbnail}
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

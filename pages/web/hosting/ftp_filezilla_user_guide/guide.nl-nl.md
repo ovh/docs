@@ -85,7 +85,7 @@ Om verbinding te maken met de remote server, moet u in het groene vak hierboven,
 
 
 Klik op snel verbinden, dit zal een dialoogvenster (zie hierboven) openen om de verbinding met de server te controleren. 
-Als u verbinding maakt met een OVH server, kunt u aanvinken: "Deze host altijd vertrouwen, deze key toevoegen aan de cache", zodat er de volgende keren niet meer om deze bevestiging wordt gevraagd.
+Als u verbinding maakt met een OVHcloud server, kunt u aanvinken: "Deze host altijd vertrouwen, deze key toevoegen aan de cache", zodat er de volgende keren niet meer om deze bevestiging wordt gevraagd.
 
 ![FileZilla](images/1834.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Om uw FTP bestanden over te dragen, kunt u deze eenvoudig selecteren en uitvoere
 
 Zodra dit is gebeurd, worden de bestanden automatisch in de wachtrij gezet, zodat het later op de server kan worden geplaatst.
 
-![FileZilla](images/1821.png){.thumbnail}
+![FileZilla](images/drag-drop-en.png){.thumbnail}
 
 
 ## De wachtrij bekijken
@@ -192,7 +192,7 @@ SITE CHMOD 705 /
 
 Als u de volgende foutmelding krijgt:
 
-550 would not chance perms on /. not such file or directory
+550 would not change perms on /. not such file or directory
 
 U moet in dit geval het volgende commando gebruiken:
 
