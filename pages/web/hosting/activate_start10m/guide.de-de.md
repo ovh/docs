@@ -20,7 +20,7 @@ In dieser Anleitung erfahren Sie, wie Sie dieses Angebot auf Ihrem [Domainname](
 >
 > Dieses kostenlose Hosting mit 10 MB ist für eine einfache Präsentationsseite geeignet, es enthält **keine Datenbank**.
 > Es ist auch angezeigt, wenn Sie nicht mehr als eine "MX Plan" E-Mail-Adresse benötigen.
-> Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank wie WordPress, Joomla!, PrestaShop, Drupal usw. benötigt, bestellen Sie direkt über unsere Website oder Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)eines unserer [Webhosting-Angebote](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+> Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank wie WordPress, Joomla!, PrestaShop, Drupal usw. benötigt, bestellen Sie direkt über unsere Website oder Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)eines unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/){.external}.
 >
 
 **Anleitung erklärt, wie Sie Ihr kostenloses "Start 10M" Hosting aktivieren**

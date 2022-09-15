@@ -27,7 +27,7 @@ Con el [Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.ex
 
 ## Requisitos
 
-- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, no asociado a ningún alojamiento web y sin ningún [MX Plan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/) asociado.
+- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, no asociado a ningún alojamiento web y sin ningún [MX Plan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/) asociado.
 - Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
