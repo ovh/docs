@@ -83,7 +83,7 @@ The **SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) is a protocol simil
 
 First, check that SFTP is enabled for your **FTP** login.
 
-Go to the Web Cloud section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then click on `Hosting plans`{.action}. Select the name of the web hosting plan and click on the `FTP - SSH`{.action} tab.
+Go to the Web Cloud section of your Web Cloud section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then click on `Hosting plans`{.action}. Select the name of the web hosting plan and click on the `FTP - SSH`{.action} tab.
 
 Then check if **SFTP** is active in the table at the bottom of the page.
 
