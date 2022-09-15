@@ -12,8 +12,6 @@ order: 07
 
 This tutorial will allow you to use **Transfer Learning** to train an existing model on a custom dataset thanks to **OVHcloud AI Notebooks**.
 
-At the end of this tutorial, you will have learned to master **OVHcloud AI Notebooks** and be able to predict the scores obtained by students as a function of the number of hours worked.
-
 To show how Transfer Learning can be useful, **ResNet50** will be trained on a custom dataset.
 
 ### USE CASE: Flower Classification

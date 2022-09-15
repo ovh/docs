@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - Come bloccare l'accesso al mio sito per alcuni indirizzi IP tramite un file .htaccess?"
-slug: condividi-htaccess-come-bloccare-determinate-ip-al-livello-del-tuo-sito
+slug: htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website
 excerpt: "Scopri le azioni possibili tramite un file .htaccess per bloccare l'accesso al tuo sito ad alcuni indirizzi IP"
 section: Scrittura e autenticazione
 order: 01

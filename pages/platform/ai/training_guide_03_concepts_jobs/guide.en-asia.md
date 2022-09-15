@@ -52,11 +52,11 @@ During its lifetime the job will transition between the following statuses:
 
 ## Going further
 
--   You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/gb/en/storage/pcs/create-container/).
+-   You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/asia/en/storage/pcs/create-container/).
 -   You can check the [OVHcloud documentation on how to submit a job](https://docs.ovh.com/asia/en/publiccloud/ai/training/submit-job)
 
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
