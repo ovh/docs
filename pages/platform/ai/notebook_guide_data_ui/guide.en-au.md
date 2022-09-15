@@ -10,7 +10,7 @@ order: 03
 
 ## Objective
 
-This guide shows how to access Object Storage data from your [**notebooks**](https://docs.ovh.com/asia/en/publiccloud/ai/notebooks/definition/) via the OVHcloud Control Panel.
+This guide shows how to access Object Storage data from your [**notebooks**](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/definition/) via the OVHcloud Control Panel.
 
 ## Requirements
 

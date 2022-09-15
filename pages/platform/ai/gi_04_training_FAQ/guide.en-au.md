@@ -48,7 +48,7 @@ Here are the most frequently asked questions about AI Training.
 > > Depending on how you build your container, make sure that the mapping between your data (/workspace/mybucket for instance) is not already existing within your image.
 > >
 > Why can't I can't access my UI ?
-> > Make sure your job is in a « running » state and that your UI is exposed either on the default port or that you specified the correct port in your URL (see [public ports](https://docs.ovh.com/gb/en/publiccloud/ai/training/capabilities/#available-ports-to-public-network)).
+> > Make sure your job is in a « running » state and that your UI is exposed either on the default port or that you specified the correct port in your URL (see [public ports](https://docs.ovh.com/au/en/publiccloud/ai/training/capabilities/#available-ports-to-public-network)).
 > > Only the HTTP layer is accessible and check that your UI is correctly binded to the network interfaces (e.g. with tensoboard user the `--bind-all` flag).
 > >
 > Why is the image not executed with the expected linux user ?
@@ -72,4 +72,4 @@ Here are the most frequently asked questions about AI Training.
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
