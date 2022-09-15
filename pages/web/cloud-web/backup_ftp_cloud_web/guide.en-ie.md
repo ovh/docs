@@ -1,5 +1,5 @@
 ---
-title: \`Retrieving the backup of the FTP space on your Cloud Web hosting plan\`
+title: "Retrieving the backup of the FTP space on your Cloud Web hosting plan"
 slug: backup_ftp_cloud_web
 section: Backups
 order: 01
@@ -24,20 +24,20 @@ Your Cloud Web hosting plan has a storage space you can use to host your website
 
 ## Requirements
 
-- a Cloud Web [hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/){.external}
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
-- access to the contact email address linked to your NIC handle
+- A [Cloud Web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/){.external}
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the contact email address linked to your OVHcloud customer account
 
 ## Instructions
 
-A Cloud Web hosting plan has automatic backups triggered at the following frequencies:
+A Cloud Web hosting plan has automatic backups available from the following relative dates (24-hour format):
 
-- the same day, after 0:00.
-- the day before, after 0:00.
-- the day before yesterday, after 0:00am.
-- the previous Sunday, after 01:00.
+- The same day, after 0:00
+- The day before, after 0:00
+- The day before yesterday, after 0:00
+- The previous Sunday, after 01:00
 
-Only the backups mentioned above can be offered by OVHcloud, provided that your Cloud Web hosting already existed on the dates indicated, and subject to the infrastructure’s availability at the time the backup was requested.
+Only the backups mentioned above can be offered by OVHcloud, provided that your Cloud Web hosting already existed on the dates indicated, and subject to the infrastructure’s availability at the requested point in time.
 
 ### Retrieve a backup
 
@@ -47,7 +47,7 @@ A link to download the backup is generated, then sent by email to the email addr
 
 #### Step 1 - Generate the recovery link sent by email
 
-To generate the recovery link, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Web Cloud`{.action} section, click `Hosting`{.action}, then click on the Cloud Web concerned. 
+To generate the recovery link, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then click on the Cloud Web concerned. 
 
 Select the `FTP - SSH`{.action} tab and click the `Generate a backup`{.action} button on the right.
 
@@ -63,7 +63,7 @@ A second window will appear, notifying you that the link to retrieve the backup 
 
 Click `Confirm`{.action} to confirm your request.
 
-If you have successfully generated the backup, the following message will appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}:
+If you have successfully generated the backup, the following message will appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie):
 
 ![backupftpcw](images/BackupInProgress.png){.thumbnail}
 
@@ -71,7 +71,7 @@ The backup takes between 10 and 15 minutes to be generated.
 
 #### Step 2 - Retrieve the backup
 
-Once you have generated the backup, you will receive an email via the email address associated with the admin ID for your Cloud Web hosting plan.<br>
+When the backup is ready, you will receive an email via the email address associated with the admin NIC handle for your Cloud Web hosting plan.<br>
 This email contains a download link **valid for 9 days** from receipt of the email:
 
 ![backupftpcw](images/mailBackup.png){.thumbnail}
@@ -80,11 +80,11 @@ The downloaded file is in the format *.tar.gz*.
 
 ### Restore your backup
 
-Once you have downloaded your files, you can [connect to your FTP](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) space using FTP software such as [Filezilla](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/), then replace the files you want with the ones you have recovered.
+Once you have downloaded your files, you can [connect to your FTP space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) using FTP software such as [Filezilla](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/), then replace the respective files on the hosting with the ones from the backup.
 
 > [!primary]
 >
-> Please use the ports listed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} for SFTP and SSH connections, as port 22 will not work for your Cloud Web hosting.
+> Please use the ports listed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) for SFTP and SSH connections, as port 22 will not work for your Cloud Web hosting.
 >
 
 ## Go further 

@@ -92,7 +92,7 @@ Depois de fazer o download dos seus ficheiros, poderá [ligar-se ao seu espaço 
 > Utilize as portas indicadas na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para as ligações SFTP e SSH, pois a porta 22 não estará funcional para o seu alojamento Cloud Web.
 >
 
-## Saiba mais 
+## Quer saber mais? 
 
 [Aceder ao espaço de armazenamento do alojamento Web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external}
 

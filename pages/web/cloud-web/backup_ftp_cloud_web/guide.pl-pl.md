@@ -5,7 +5,7 @@ section: Kopie zapasowe (backup)
 order: 01
 ---
 
-**Ostatnia aktualizacja z dnia 13-09-2022**
+**Ostatnia aktualizacja z dnia 13/09/2022**
 
 > [!primary]
 >

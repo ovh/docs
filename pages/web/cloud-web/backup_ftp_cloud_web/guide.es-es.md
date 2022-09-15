@@ -1,5 +1,5 @@
 ---
-title: Exportar la copia de seguridad del espacio FTP de su hosting Cloud Web
+title: "Exportar la copia de seguridad del espacio FTP de su hosting Cloud Web"
 slug: backup_ftp_cloud_web
 section: Backups
 order: 01
@@ -46,7 +46,7 @@ OVHcloud solo podrá ofrecer las copias de seguridad antes mencionadas, siempre 
 
 ### Obtener una copia de seguridad
 
-A diferencia de los alojamientos compartidos de OVHcloud, no es posible restaurar el espacio FTP en un clic desde [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+A diferencia de los alojamientos compartidos de OVHcloud, no es posible restaurar el espacio FTP en un clic desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 Se genera un enlace de descarga de la copia de seguridad y se envía por correo electrónico a la dirección de correo electrónico asociada al ID de cliente administrador del hosting Cloud Web.
 
