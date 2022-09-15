@@ -1,12 +1,12 @@
 ---
-title: 'Obtenir les identifiants PPPoE'
+title: 'Obtenir les identifiants PPPoE pour utiliser un équipement personnel'
 slug: obtenir-identifiants-ppoe
 excerpt: 'Découvrez comment récupérer les identifiants PPPoE de votre accès à Internet OVHcloud via les API'
 section: 'Configurations techniques avancées'
 order: 6
 ---
 
-**Dernière mise à jour le 16/02/2022**
+**Dernière mise à jour le 15/09/2022**
 
 ## Objectif
 
