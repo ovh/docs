@@ -39,7 +39,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 |---|---|
 |![mailmac](images/mail-mac-exchange01.png){.thumbnail}|Sélectionnez `Exchange`{.action}|
 |Saisissez le **Nom** de votre compte e-mail et votre **Adresse e-mail**, puis cliquez sur `Se connecter`{.action}|![mailmac](images/mail-mac-exchange02.png){.thumbnail}|
-|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|Dans la fenêtre suivante, cliquez sur `Cofiguration manuelle`{.action} : <br>- Définissez le **Nom** qui s'affichera dans l'interface de navigation <br>- Laissez votre **adresse e-mail**<br>- Laissez votre **Mot de passe** déjà saisi <br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
+|![mailmac](images/mail-mac-exchange03.png){.thumbnail}|Dans la fenêtre suivante, cliquez sur `Configuration manuelle`{.action} : <br>- Définissez le **Nom** qui s'affichera dans l'interface de navigation <br>- Laissez votre **adresse e-mail**<br>- Laissez votre **Mot de passe** déjà saisi <br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
 |En plus de vos e-mails, vous pouvez sélectionner d'autres fonctionnalités Exchange que vous souhaitez gérer depuis votre Mac.|![mailmac](images/mail-mac-exchange04.png){.thumbnail}|
 
 ### Utiliser l'adresse e-mail
