@@ -1,7 +1,7 @@
 ---
-title: "Tutoriels - Utiliser FileZilla avec votre hébergement OVHcloud"
+title: "Tutoriel - Utiliser FileZilla avec votre hébergement OVHcloud"
 slug: mutualise-guide-utilisation-filezilla
-excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hebergement mutualise."
+excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hebergement mutualise"
 section: FTP et SSH
 order: 04
 ---
