@@ -69,7 +69,7 @@ Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la
 
 **Lo Step 3** ti ricorda la tariffazione dell'offerta. 
 
-Durante lo step 4***, è necessario prendere visione dei contratti e confermare il tuo ordine.
+Durante **lo step 4**, è necessario prendere visione dei contratti e confermare il tuo ordine.
 
 Una volta confermato l'ordine, riceverai un'email con le informazioni di [connessione FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/){.external} al tuo hosting Start 10M.
 

@@ -19,7 +19,7 @@ Dzięki [Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.exter
 
 > [!warning]
 >
-> Ten darmowy hosting o rozmiarze 10 MB jest odpowiedni do prostej strony WWW w której można wyświetlić serwer bez bazy danych**.
+> Ten darmowy hosting o rozmiarze 10 MB jest odpowiedni do prostej strony WWW w której **można wyświetlić serwer bez bazy danych**.
 > Jest to również właściwe, jeśli nie potrzebujesz więcej niż jednego konta e-mail typu "MX plan". 
 > Jeśli chcesz uruchomić stronę WWW zawierającą kilka stron i wymagającą bazy danych, takich jak CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), zachęcamy do zamówienia jednej z [naszych ofert hostingu www](https://www.ovhcloud.com/pl/web-hosting/) na naszej stronie internetowej lub w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 >
@@ -55,7 +55,7 @@ Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie ofert
 | Wybór                                       	| Opis                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Rekord DNS A                         	| Domena będzie wskazywać na adres IP hostingu Start 10M.                                               								|
-| Rekord DNS MX 	| Do nazwy domeny zostaną zastosowane serwery e-mail ( `mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.). 	|
+| Rekord DNS MX 	| Do nazwy domeny zostaną zastosowane serwery e-mail (`mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.). 	|
 
 > [!primary]
 >

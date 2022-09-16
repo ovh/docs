@@ -54,7 +54,7 @@ Aparecerá a janela de ativação. A **etapa 1** faz menção ao serviço e ao s
 | Escolha                                       	| Descrição                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Entrada DNS A                         	| O domínio ficará associado ao endereço IP do alojamento Start 10M.                                               								|
-| Entrada DNS MX 	| Os servidores de e-mail ( `mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.) da OVHcloud serão aplicados no domínio. 	|
+| Entrada DNS MX 	| Os servidores de e-mail (`mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.) da OVHcloud serão aplicados no domínio. 	|
 
 > [!primary]
 >
@@ -67,9 +67,9 @@ Aparecerá a janela de ativação. A **etapa 1** faz menção ao serviço e ao s
 > Para mais informações, consulte as nossas [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/).
 >
 
-** A etapa 3** recorda-lhe o preço da oferta. 
+**A etapa 3** recorda-lhe o preço da oferta. 
 
-Na etapa 4**, deverá ler os contratos e validar a encomenda.
+Na **etapa 4**, deverá ler os contratos e validar a encomenda.
 
 Depois de validar a encomenda, receberá um e-mail com as informações de [ligação FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external} ao seu alojamento Start 10M.
 
