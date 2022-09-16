@@ -23,8 +23,8 @@ With [Start10M](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.exter
 
 ## Requirements
 
-- You must have [domain name](https://www.ovhcloud.com/en-gb/domains/){.external} in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, detached from any web hosting plan, and with no associated [MX Plan](https://docs.ovh.com/gb/en/emails/web_hosting_an_overview_of_ovh_email/).
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/){.external} in your OVHcloud Control Panel, detached from any web hosting plan, and with no associated [MX Plan](https://docs.ovh.com/gb/en/emails/web_hosting_an_overview_of_ovh_email/).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 
