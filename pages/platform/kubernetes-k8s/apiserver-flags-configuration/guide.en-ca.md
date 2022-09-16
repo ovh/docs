@@ -43,9 +43,10 @@ In this guide, we will show you how to enable and disable API server admission p
 ## Instructions
 
 > [!warning]
-> Only `NodeRestriction` and `AlwaysPullImages` admission plugins are customizable right now.
+> Only the `AlwaysPullImages` admission plugin is customizable for the moment. It is enabled by default for security purposes, but can be disabled to prevent overuse of docker registries (e.g. to avoid reaching the Docker Hub download rate limit).  
+> The `NodeRestriction` admission plugin is enabled by default and must stay enabled for security purposes.
 
-### Configure the API server flags through the API
+### Configure the API server admission plugins through the API
 
 #### The API Explorer
 
@@ -59,84 +60,81 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
 
 ![Kubernetes section of the API Explorer](images/kubernetes-quickstart-api-ovh-com-002.png){.thumbnail}
 
-#### API instructions
+#### API endpoints
 
-- Create a Kubernetes cluster, in the GRA5 region, using the Kubernetes version 1.24 (the last and recommended version at the time we wrote this tutorial) and we disable "AlwaysPullImages" flag in order to not reach anymore Docker Hub quotas:
-
-```bash
- POST /cloud/project/{serviceName}/kube
-```
-```json
- {
-     "region":"GRA5",
-     "name": "my-super-cluster",
-     "version": "1.24",
-     "customization":{
-         "apiServer":{
-             "admissionPlugins":{
-                 "disabled":[],
-                 "enabled":["NodeRestriction","AlwaysPullImages"]
-             }
-         }
-     }
- }
-```
-
-- Reset a cluster with API server admission plugins customization:
+- Get an existing cluster's customization:
 
 ```bash
- POST /cloud/project/{serviceName}/kube/{kubeID}/reset
-```
-```json
- {
-     "name": "my-super-cluster",
-     "version": "1.24",
-     "customization":{
-         "apiServer":{
-             "admissionPlugins":{
-                 "disabled":[],
-                 "enabled":["NodeRestriction","AlwaysPullImages"]
-             }
-         }
-     }
- }
-```
-
-- Update customization:
-
-```bash
-  PUT /cloud/project/{serviceName}/kube/{kubeID}/customization
-```
-```json
-  {
-    "apiServer":{
-        "admissionPlugins":{
-            "disabled":["AlwaysPullImages"],
-            "enabled":["NodeRestriction"]
-        }
-    }
-  }
-```
-
-- Get customization:
-
-```bash
-  GET /cloud/project/{serviceName}/kube/{kubeID}/customization
+GET /cloud/project/{serviceName}/kube/{kubeID}/customization
 ```
 
 Result:
 ```json
-  {
-    "apiServer":{
-      "admissionPlugins":{
-        "enabled":["AlwaysPullImages","NodeRestriction"],
-        "disabled":[]
-      }
+{
+    "apiServer": {
+        "admissionPlugins": {
+            "disabled": [],
+            "enabled": ["AlwaysPullImages", "NodeRestriction"]
+        }
     }
-  }
+}
 ```
 
-### Configure the API server flags through Terraform
+- Update an existing cluster's customization to disable the "AlwaysPullImages" admission plugin (e.g. in order to avoid our kubelet agents from reaching the Docker Hub download rate limit):
+
+```bash
+PUT /cloud/project/{serviceName}/kube/{kubeID}/customization
+```
+```json
+{
+    "apiServer": {
+        "admissionPlugins": {
+            "enabled": ["NodeRestriction"],
+            "disabled": ["AlwaysPullImages"]
+        }
+    }
+}
+```
+
+- Create a Kubernetes cluster in the GRA5 region while disabling the "AlwaysPullImages" admission plugin:
+
+```bash
+POST /cloud/project/{serviceName}/kube
+```
+```json
+{
+    "region": "GRA5",
+    "name": "my-super-cluster",
+    "customization": {
+        "apiServer": {
+            "admissionPlugins": {
+                "enabled": ["NodeRestriction"],
+                "disabled": ["AlwaysPullImages"]
+            }
+        }
+    }
+}
+```
+
+- Reset an existing cluster while disabling the "AlwaysPullImages" admission plugin:
+
+```bash
+POST /cloud/project/{serviceName}/kube/{kubeID}/reset
+```
+```json
+{
+    "customization": {
+        "apiServer": {
+            "admissionPlugins": {
+                "enabled": ["NodeRestriction"],
+                "disabled": ["AlwaysPullImages"]
+            }
+        }
+    }
+}
+```
+
+### Configure the API server admission plugins through Terraform
 
 Since the version 0.21+ of our [OVH Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs), you can configure your Kubernetes cluster (API server flags, CoreDNS, IPVS ...) through Terraform.
 
@@ -249,7 +247,7 @@ resource "ovh_cloud_project_kube" "cluster" {
 }
 ```
 
-In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA5 region, using the Kubernetes version 1.24 (the last and recommended version at the time we wrote this tutorial) and we disable "AlwaysPullImages" flag in order to not reach anymore Docker Hub quotas.
+In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA5 region, using the Kubernetes version 1.24, while disabling the "AlwaysPullImages" admission plugin (e.g. in order to avoid our kubelet agents from reaching the Docker Hub download rate limit).
 
 Now we need to initialise Terraform, generate a plan, and apply it.
 
