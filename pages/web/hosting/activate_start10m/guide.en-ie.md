@@ -15,7 +15,7 @@ With [Start10M](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/){.exter
 > [!warning]
 >
 > This 10 MB free hosting plan is suitable for a simple webpage presentation, it **does not include a database**.
-> It is also suitable if you do not need several "MX plan" email addresses. 
+> It is also suitable if you do not need several "MX plan" email accounts. 
 > If you would like to set up a website with several pages and require a database, such as a CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), please order one of [our web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/) directly from our website or your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 >
 
@@ -54,11 +54,11 @@ The activation window will appear. **Step 1** will detail the plan and its price
 
 > [!primary]
 >
-> If your project will quickly evolve to a hosting plan with a database, larger storage space or more email addresses, you can switch directly and only from Start 10M to a **Personal** hosting plan from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+> If your project will quickly evolve to a hosting plan with a database, larger storage space or more email accounts, you can switch directly and only from Start 10M to a **Personal** hosting plan from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 >
-> To switch to the **Pro** or **Performance** plan, you will need to switch from the Start 10M plan to the Personal** plan beforehand.
+> To switch to the **Professional** or **Performance** plan, you will need to switch from the Start 10M plan to the **Personal** plan beforehand.
 >
-> You can also choose to delete the free offer by taking care to retrieve your hosting data and the content of your email address beforehand.
+> You can also choose to delete the free offer after backing up your hosting data and the contents of your email account.
 >
 > For more details, see our [hosting offers](https://www.ovhcloud.com/en-ie/web-hosting/).
 >
@@ -69,11 +69,11 @@ During **step 4**, you must read the contracts and confirm your order.
 
 Once your order has been confirmed, you will be sent an email with the information for [FTP connection](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/){.external} to your Start 10M hosting plan.
 
-Please refer to our guide on [Creating an MX Plan email account](https://docs.ovh.com/ie/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} to take advantage of the email address included with your Start 10M hosting plan.
+Please refer to our guide on [Creating an MX Plan email account](https://docs.ovh.com/ie/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} to take advantage of the email account included with your Start 10M hosting plan.
 
 ## Go further
 
-[Log in to your Web Hosting plan’s storage space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/){.external}
+[Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/){.external}
 
 [Creating an email address with an MX Plan solution](https://docs.ovh.com/ie/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}
 
