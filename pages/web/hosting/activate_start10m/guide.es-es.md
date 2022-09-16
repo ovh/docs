@@ -3,7 +3,7 @@ title: 'Activar el alojamiento web gratuito Start 10M'
 slug: activar-start10m
 excerpt: 'Esta guía explica cómo activar su alojamiento web Start 10M'
 section: 'Primeros pasos'
-order: 2
+order: 02
 ---
 
 > [!primary]
@@ -34,7 +34,7 @@ Con el [Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.ex
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Dominios`{.action}  en la columna izquierda y seleccione el dominio correspondiente.
 
-En la sección **«Información general»**, acceda al apartado *«Alojamiento web y correo electrónico gratis»*. Haga clic en el botón `...`{.action} a la derecha y, seguidamente, en `«Activar»`{.action}.
+En la sección **« Información general »**, acceda al apartado *«Alojamiento web y correo electrónico gratis»*. Haga clic en el botón `...`{.action} a la derecha y, seguidamente, en `«Activar»`{.action}.
 
 ![start10m](images/start10m-step1-01.png){.thumbnail}
 

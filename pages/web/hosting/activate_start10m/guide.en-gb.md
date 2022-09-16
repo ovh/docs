@@ -3,6 +3,7 @@ title: 'Activating the free Start 10M hosting plan'
 slug: activate-start10m
 excerpt: 'Find out how to activate your Start 10M hosting plan'
 section: 'Getting started'
+order: 02
 ---
 
 **Last updated 15th September 2022**
@@ -14,7 +15,7 @@ With [Start10M](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.exter
 > [!warning]
 >
 > This 10 MB free hosting plan is suitable for a simple webpage presentation, it **does not include a database**.
-> It is also suitable if you do not need several `MX plan` email addresses. 
+> It is also suitable if you do not need several "MX plan" email addresses. 
 > If you would like to set up a website with several pages and require a database, such as a CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), please order one of [our web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/) directly from our website or your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 >
 

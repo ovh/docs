@@ -3,7 +3,7 @@ title: "Attivare l'hosting gratuito Start 10M"
 slug: attivare_start10m
 excerpt: 'Come attivare il piano di hosting Start 10M'
 section: Per iniziare
-order: 2
+order: 02
 ---
 
 > [!primary]
