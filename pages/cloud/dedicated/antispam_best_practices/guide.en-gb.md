@@ -6,7 +6,7 @@ section: Server Management
 order: xxxxx
 ---
 
-**Last updated September 7th 2022**
+**Last updated xxxxxx xx 2022**
 
 ## Objective
 
@@ -54,7 +54,7 @@ The first step is to identify the issue, resolve it, then unblock your IP.
 
 * Stop sending emails (e.g. stop all mail software such as qmail, Postfix, Sendmail etc.).
 
-* Check the email queue (e.g. qmHandle for qmail, postqueue -p for Postfix).
+* Check the email queue (e.g. qmHandle for qmail, postqueue -p for Postfix) and clear it.
 
 * Analyse your logs using the **Message-ID** found in the block alert.
 
@@ -67,7 +67,7 @@ Once the issue has been resolved, you can unblock your IP by performing the foll
 > Do not unblock the IP under any circumstances without having suspended the sending of emails from your server, otherwise you will immediately get blocked for a second time (and a longer duration). 
 >
 
-#### From the OVHcloud Manager
+#### From the OVHcloud Control Panel
 
 In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} section and click on `IP`{.action}.
 
@@ -119,7 +119,7 @@ Next, search for IPs in a particular state with the following call. If you alrea
 > @api {GET} /ip/{ip}/spam
 >
 
-**ip**:	Specify the IP block retrieved in the previous step with the netmask. For example 122.122.122.122/28.
+**ip**:	Specify the IP block retrieved in the previous step with the netmask. For example 122.122.122.121/28.
 **state**: Specify the state you are looking for.
 
 Here's an example result (in this instance, the 122.122.122.121/28 block was selected):
@@ -218,9 +218,9 @@ More than 129 seconds later:
 
 The IP is being released, the operation may take several minutes.
 
-### 2. False positives
+### 2. In case of false positives
 
-If you have checked and found that **Message-ID** are from your legitimate email, you should then ensure that your email messages comply with the [RFC](#rfc) and the [Best Practices indicated below](#bestpractices).
+In some cases, the antispam alert could be false positive. If you have checked and found that **Message-ID** are from your legitimate email, you should then ensure that your email messages comply with the [RFC](#rfc) and the [Best Practices](#bestpractices) indicated below.
 
 #### RFC <a name="rfc"></a>
 
@@ -237,7 +237,7 @@ If your outgoing email volume is very high, you are advised to:
 
 * reserve an IP block dedicated solely to email usage.
 * provide an 'abuse' address on this block in order to receive complaints.
-* configure [Reverses](https://docs.ovh.com/ca/en/dedicated/optimise-email-sending/#configure-the-reverse-ip) on all IPs correctly.
+* configure [Reverses](https://docs.ovh.com/gb/en/dedicated/optimise-email-sending/#configure-the-reverse-ip) on all IPs correctly.
 
 This operation will enable you to simultaneously isolate the IP and domain reputation if you send emails for various domains, to receive the complaints, and thus do what is necessary to get unblocked by various organisations. It also enables you to locate a problem more quickly on a form that uses domain X or Y, as the emails are not sent out from the same IP and don't have the same reverse.
 
@@ -255,9 +255,7 @@ The ratio of text to image and text to link should be high. Do not overload the 
 
 This system enables you to follow up on feedback provided by some internet service providers directly, informing you that their users have flagged your message as illicit, and that it has therefore been classified as spam. This will allow you to interact directly with these ISPs regarding your reputation. Some FBLs include:
 
-* [Yahoo](https://senders.yahooinc.com/)
-
-* [AOL Postmaster]()
+* [Yahoo & AOL Postmaster](https://senders.yahooinc.com/contact)
 
 * [SpamCop](https://www.spamcop.net/)
 
@@ -268,9 +266,9 @@ This system enables you to follow up on feedback provided by some internet servi
 Some authentication services allow you to protect your reputation:
 
 
-* **Sender-ID**: An email authentication technology developed by Microsoft which validates the authenticity of your domain name by verifying the IP address of the sender. This technology is based on the IETF standard: RFC4406
+* **Sender-ID**: An email authentication technology developed by Microsoft which validates the authenticity of your domain name by verifying the IP address of the sender. This technology is based on the IETF standard: [RFC4406](https://datatracker.ietf.org/doc/rfc4406/)
 
-* **SPF**: Sender Policy Framework is a standard for verififying the domain of the sender. It is based on RFC4408 and consists of adding an SPF or TXT field to the domain DNS, which contains the list of IPs authorised to send emails from this domain.
+* **SPF**: Sender Policy Framework is a standard for verififying the domain of the sender. It is based on [RFC4408](https://datatracker.ietf.org/doc/rfc4408/) and consists of adding an SPF or TXT field to the domain DNS, which contains the list of IPs authorised to send emails from this domain.
 
 * **Reverse DNS**: Reverse enables your IP to be "translated” into your domain. That allows the domain associated with the IP address to be found.
 
@@ -287,6 +285,7 @@ If your emails do comply, you can inform us by sending a sample of your email (i
 * An original copie of the email(s) flagged as SPAM (you should be able to identify that with the **message ID** included in the ANTISPAM email). If no message ID is provided, simply send us a copy of the emails sent before receiving the alert. Please only provide the copy of the email flagged as SPAM.
 * The .EML file of the email provided, this should include the **header** and **footer** of the email. If you are not familiar with how to extract an .EML file, please consult the following guide [Retrieving email headers](https://docs.ovh.com/gb/en/emails/shared_mail_guide_to_view_email_headers/).
 
+Once the information is sent, our support team will communicate with Vade Secure for further analysis the case.
 
 ## Go further
 
