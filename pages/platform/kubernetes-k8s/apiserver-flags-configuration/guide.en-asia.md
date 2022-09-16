@@ -75,7 +75,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
          "apiServer":{
              "admissionPlugins":{
                  "disabled":[],
-                 "enabled":["NodeRestriction","AlwaysPulImages"]
+                 "enabled":["NodeRestriction","AlwaysPullImages"]
              }
          }
      }
@@ -95,7 +95,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
          "apiServer":{
              "admissionPlugins":{
                  "disabled":[],
-                 "enabled":["NodeRestriction","AlwaysPulImages"]
+                 "enabled":["NodeRestriction","AlwaysPullImages"]
              }
          }
      }
@@ -111,7 +111,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
   {
     "apiServer":{
         "admissionPlugins":{
-            "disabled":[AlwaysPullImages],
+            "disabled":["AlwaysPullImages"],
             "enabled":["NodeRestriction"]
         }
     }
