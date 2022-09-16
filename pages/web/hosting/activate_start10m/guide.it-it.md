@@ -18,7 +18,7 @@ Con [Start10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external}
 
 > [!warning]
 >
-> Questo hosting gratuito da 10 MB è ideale per una semplice pagina Web di presentazione. **non include database**.
+> Questo hosting gratuito da 10 MB è ideale per una semplice pagina Web di presentazione, **non include database**.
 > È necessario anche se non sono necessari più indirizzi email come "MX Plan". 
 > Per creare un sito Web composto da più pagine e che necessita di database, come un CMS (WordPress, Joomla!, PrestaShop, Drupal, ecc...), ti consigliamo di ordinare direttamente uno [dei nostri hosting Web](https://www.ovhcloud.com/it/web-hosting/) dal nostro sito o dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 >
