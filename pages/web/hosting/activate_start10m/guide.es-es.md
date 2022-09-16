@@ -44,7 +44,7 @@ Se mostrará la ventana de activación. En el **paso 1** se muestra información
 
 > [!warning]
 >
-> Si selecciona una de las dos casillas de verificación 'Entrada DNS A` y ' Entrada DNS MX` o ambas, la configuración inicial se vaciará en la zona DNS del dominio.
+> Si selecciona una de las dos casillas de verificación `Entrada DNS A` y  `Entrada DNS MX` o ambas, la configuración inicial se vaciará en la zona DNS del dominio.
 >
 Si su zona DNS no está gestionada en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, deberá realizar los cambios manualmente en su zona DNS externa.
 >
