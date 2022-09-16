@@ -45,7 +45,7 @@ Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie ofert
 
 > [!warning]
 >
-> Jeśli zaznaczysz jedno z dwóch pól `End DNS` i `End DNS` lub oba te pola, zostanie on usunięty z konfiguracji pierwotnie wprowadzonej w strefie DNS Twojej domeny.
+> Jeśli zaznaczysz jedno z dwóch pól `Rekord DNS A` i `Rekord DNS MX` lub oba te pola, zostanie on usunięty z konfiguracji pierwotnie wprowadzonej w strefie DNS Twojej domeny.
 >
 > Jeśli Twoja strefa DNS nie jest zarządzana w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, wprowadź ręcznie zmiany w zewnętrznej strefie DNS.
 >
