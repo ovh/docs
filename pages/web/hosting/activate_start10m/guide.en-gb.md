@@ -3,30 +3,34 @@ title: 'Activating the free Start 10M hosting plan'
 slug: activate-start10m
 excerpt: 'Find out how to activate your Start 10M hosting plan'
 section: 'Getting started'
+order: 02
 ---
 
-**Last updated 15th June 2021**
+**Last updated 15th September 2022**
 
 ## Objective
 
 With [Start10M](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.external}, OVHcloud offers you a 10 MB web hosting plan, and an email account with 5 GB of storage. This guide will show you how to activate a Start 10M hosting on your [domain name](https://www.ovhcloud.com/en-gb/domains/){.external}.
 
 > [!warning]
-> This 10 MB free hosting plan is suitable for a simple webpage presentation, it **does not include a database**. If you want to set up a website with several pages that requires a database, such as a CMS (e.g. WordPress, Joomla!, PrestaShop, Drupal), please order one of [our Web Hosting plans directly from our website](https://www.ovhcloud.com/en-gb/web-hosting/), or via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+>
+> This 10 MB free hosting plan is suitable for a simple webpage presentation, it **does not include a database**.
+> It is also suitable if you do not need several "MX plan" email accounts. 
+> If you would like to set up a website with several pages and require a database, such as a CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), please order one of [our web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/) directly from our website or your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 >
 
-**This guide explains how to activate your free Start 10M hosting plan.**
+**Find out how to activate your free Start 10M hosting plan**
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
-- a [domain name](https://www.ovhcloud.com/en-gb/domains/){.external} in your OVHcloud Control Panel, not yet attached to any Web Hosting plan 
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/){.external} in your OVHcloud Control Panel, detached from any web hosting plan, and with no associated [MX Plan](https://docs.ovh.com/gb/en/emails/web_hosting_an_overview_of_ovh_email/).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click `Domain names`{.action}, then choose the domain name concerned.
 
-In the **General information** box , you will see *Free web hosting and email*. Click `...`{.action} on the right-hand side, then `Enable`{.action}.
+In the **General information** box, you will see *Free web hosting and email*. Click `...`{.action} on the right-hand side, then `Enable`{.action}.
 
 ![start10m](images/start10m-step1-01.png){.thumbnail}
 
@@ -34,24 +38,47 @@ The activation window will appear. **Step 1** will detail the plan and its price
 
 ![start10m](images/start10m-step1-02.png){.thumbnail}
 
+> [!warning]
+>
+> If you tick one or both of the `DNS A record` and `DNS MX record` boxes, this will overwrite the configuration originally set up in your domain's DNS zone.
+>
+> If your DNS zone is not managed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, you will need to make the modifications manually in your external DNS zone.
+>
+> For more details, please refer to our guide on [Editing an OVHcloud DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+>
+
 | Choice                                       	| Description                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | DNS A record                         	| The domain name will point to the IP address of the Start 10M hosting plan.                                               								|
-| MX DNS record 	| OVHcloud email servers will be applied to the domain name. 	|
+| MX DNS record 	| The email servers (`mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.) of OVHcloud will be applied to the domain name. 	|
 
 > [!primary]
-> As a reminder, no databases are included with the free Start 10M hosting plan. If your project requires one, please choose a suitable [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) which will include at least one database.
+>
+> If your project will quickly evolve to a hosting plan with a database, larger storage space or more email accounts, you can switch directly and only from Start 10M to a **Personal** hosting plan from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+>
+> To switch to the **Professional** or **Performance** plan, you will need to switch from the Start 10M plan to the **Personal** plan beforehand.
+>
+> You can also choose to delete the free offer after backing up your hosting data and the contents of your email account.
+>
+> For more details, see our [hosting offers](https://www.ovhcloud.com/en-gb/web-hosting/).
+>
 
-**Step 3** will remind you of the pricing for the solution. In **step 4**, you will need to acknowledge the contracts and confirm your order.
+**Step 3** reminds you of the pricing of the offer. 
 
-Once your order has been confirmed, you will receive an email with the [FTP connection details](../log-in-to-storage-ftp-web-hosting/) for your Start 10M hosting plan.
+During **step 4**, you must read the contracts and confirm your order.
 
-Please read our guide on [creating an MX Plan email account](../../emails/hosted_email_how_to_set_up_an_email_address/) to make use of the email address included with the Start 10M hosting solution.
+Once your order has been confirmed, you will be sent an email with the information for the [FTP connection](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/){.external} to your Start 10M hosting plan.
+
+Please refer to our guide on [Creating an MX Plan email account](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external} to take advantage of the email account included with your Start 10M hosting plan.
 
 ## Go further
 
-[Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/)
+[Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/){.external}
 
-[Creating an email address with an MX Plan solution](../../emails/hosted_email_how_to_set_up_an_email_address/)
+[Creating an email address with an MX Plan solution](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
