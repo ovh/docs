@@ -37,12 +37,14 @@ Tanzu Kubernetes Grid permet de déployer et d'administrer des clusters Kubernet
 
 Consultez cette documentation pour installer Tanzu Kubernetes Grid [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-installation).
 
-
-Comme indiqué dans la documentation d'installation vous aurez 7 nouvelles machines virtuelles sur votre cluster VMware qui constituerons le cluster Kubernetes et la machine virtuelle dédié à l'administration de **Tanzu Kubernetes Grid**.
+Après l'installation de **Tanzu Kubernetes Grid** le cluster VMware aura 6 nouvelles machines virtuelles pour faire fonctionner le cluster d'administration ainsi qu'une machine virtuelle d'administration.  
 
 ![01 admin cluster diagram](images/01-admin-cluster-diagram01.png){.thumbnail}
 
-Le cluster d'administration de Tanzu Kubernetes Grid ne doit pas être utilisé à autre chose que l'administration des autres clusters Kubernetes.
+> [!warning]
+>
+> Le cluster d'administration de Tanzu Kubernetes Grid doit être utilisé exclusivement pour l'administration de **Tanzu Kubernetes Grid**
+>
 
 ### Déploiement d'un cluster de Workload et installation d'une application
 
@@ -54,9 +56,26 @@ Pour chaque nouveaux clusters Kubernetes de Workdload six nouvelles machines vir
 
 ![02 admin and workload cluster diagram](images/02-tkc-mc-wc01.png){.thumbnail}
 
-à l'intérieur d'un cluster de WorkLoad il est possible d'installer une suite logicielle contenant plusieurs applications qui communiquement entre elles sur le réseau interne au cluster. il est possibe d'ajouter un package à kubernetes comme par exemple **kube-vib** pour avoir la possibilité de publier une application sur le réseau local du cluster VMware.
+à l'intérieur d'un cluster de *WorkLoad* il est possible d'installer une suite logicielle contenant plusieurs applications qui communiquement entre elles sur le réseau interne du cluster Kubernetes. Kubernetes a besoin d'un package supplémentaire comme par exemple **kube-vib** pour pouvoir publier une application sur le réseau local du cluster VMware.
 
 ![03 apps and load balancing](images/03-internetworkcommunication01.png){.thumbnail}
+
+Par défaut lors de l'arrêt ou d'un crash d'un pods les données à l'intérieur de ce pod sont perdues, Pour pouvoir stocker des données de manière permanente il est necessaire de créér des volumes permanents et de le associer aux applications.
+
+
+### Gestion des volumes permanents 
+
+Les volumes permanents sont stockés par défaut à l'interieur du cluster Kubernetes mais il est plus judicieux d'utiliser un sto
+
+> [!warning]
+>
+> Documentation à produire pour la création d'un volume permanent dans le cluster et non à l'intérieur du cluster Kubernentes
+> Et installer une une application qui l'utilise
+>
+
+### Sauvegarde
+
+Une solution de sauvegarde des applications est à l'étude avec le logiciel kasten de veeam.
 
 
 ## Aller plus loin
