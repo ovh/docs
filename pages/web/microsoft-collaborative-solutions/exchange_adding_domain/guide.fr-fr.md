@@ -125,7 +125,7 @@ Dirigez-vous dans l'onglet `Domaines associés`{.action} de votre plateforme. De
 
 Si des comptes e-mail sont attachés au nom de domaine que vous souhaitez détacher, vous avez 2 possibilités :
 
-- **Attacher les comptes à un autre nom de domaine**: Dirigez-vous vers l'onglet `Comptes e-mail`{.action}. À droite des comptes à modifier, cliquez sur le bouton `...`{.action}, puis `Modifier`{.action}.
+- **Attacher les comptes à un autre nom de domaine** : rendez-vous dans l'onglet `Comptes e-mail`{.action}. À droite des comptes à modifier, cliquez sur le bouton `...`{.action}, puis `Modifier`{.action}.
     ![emailpro](images/add_domain_exchange_step8.png){.thumbnail}
     Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
     ![emailpro](images/add_domain_exchange_step9.png){.thumbnail}
