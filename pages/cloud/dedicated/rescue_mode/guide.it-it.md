@@ -10,7 +10,7 @@ section: 'Diagnostica e modalità Rescue'
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 02/05/2022**
+**Ultimo aggiornamento: 20/09/2022**
 
 ## Obiettivo
 
@@ -48,7 +48,13 @@ Cerca "Boot" nel riquadro **Informazioni generali** e clicca su `...`{.action} p
 
 Nella pagina successiva, seleziona **Avviare in Rescue mode**. Se il tuo server utilizza un sistema operativo Linux, seleziona `rescue-customer`{.action} nel menu a tendina. Se il tuo server è Windows, scegli `WinRescue`{.action} (consulta la [sezione della guida qui sotto](#windowsrescue)).
 Se **non** vuoi che le credenziali di accesso siano inviate all'indirizzo principale del tuo account, inserisci un altro indirizzo email.
-<br>Clicca su `Continua`{.action} per procedere al passo successivo, poi su `Conferma`{.action}.
+
+> [!warning]
+>
+> Alcuni account cliente OVHcloud possono essere interessati da un errore relativo alla lingua delle email di recupero: sono inviati in francese invece della lingua scelta per l’account. Sebbene la causa dell'errore sia stata corretta dal 20 settembre 2022, è necessario aggiornare una volta l'indirizzo email per risolvere il problema. Per farlo, inserisci l'indirizzo email del tuo account cliente in questo step prima di attivare la modalità Rescue.
+>
+
+Clicca su `Continua`{.action} per procedere al passo successivo, poi su `Conferma`{.action}.
 
 ![Modalità rescue-customer](images/rescue-mode-08.png){.thumbnail}
 

@@ -9,7 +9,7 @@ section: 'Diagnostyka i tryb Rescue'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 02-05-2022**
+**Ostatnia aktualizacja z dnia 20-09-2022**
 
 ## Wprowadzenie
 
@@ -46,7 +46,13 @@ Wyszukaj "Boot" w sekcji **Informacje ogólne** i kliknij `...`{.action} a nast�
 ![Zmień tryb uruchamiania](images/rescue-mode-001.png){.thumbnail}
 
 Na następnym ekranie wybierz **Uruchom w trybie diagnostycznym (Rescue)**. Jeśli Twój serwer posiada system operacyjny Linux, na rozwijanej liście wybierz `rescue-customer`{.action}. Jeśli Twój serwer znajduje się w systemie Windows, wybierz `WinRescue`{.action} (patrz [sekcja przewodnika poniżej](#windowsrescue)). Określ inny adres e-mail, jeśli nie chcesz, aby dane do logowania zostały wysłane na główny adres Twojego konta OVHcloud.
-<br>Kliknij `Dalej`{.action} i `Zatwierdź`{.action}.
+
+> [!warning]
+>
+> Na niektóre konta klientów OVHcloud może mieć wpływ błąd dotyczący języka e-maili ratunkowych: są one wysyłane w języku francuskim zamiast wybranego języka konta. Mimo że przyczyna błędu została usunięta 20 września 2022, adres e-mail musi zostać zaktualizowany jeden raz, aby rozwiązać ten problem. Aby to zrobić, przed włączeniem trybu ratunkowego wprowadź w tym kroku adres e-mail konta klienta.
+>
+
+Kliknij `Dalej`{.action} i `Zatwierdź`{.action}.
 
 ![Tryb rescue-customer](images/rescue-mode-08.png){.thumbnail}
 
