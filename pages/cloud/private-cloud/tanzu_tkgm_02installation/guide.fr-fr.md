@@ -3,10 +3,10 @@ title: Installer Tanzu Kubernetes Grid
 slug: tanzu-tkgm-installation
 excerpt: Intégrer Tanzu Kubernetes Grid à votre infrastructure Private Cloud Powered by VMware
 section: Tanzu
-order: 02
+order: 03
 ---
 
-**Dernière mise à jour le 13/09/2022**
+**Dernière mise à jour le 19/09/2022**
 
 ## Objectif
 
@@ -22,7 +22,7 @@ order: 02
 
 VMware Tanzu Kubernetes Grid est une plate-forme Kubernetes fournie par **VMware** et maintenue dans le cadre du support **Hosted Private Cloud Powered by VMware**.
 
-Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter de ses fonctionnalités et de son évolutivité.
+Vous pouvez installer ce produit sur votre infrastructure OVHcloud pour profiter de ses fonctionnalités et de son évolutivité.
 
 ## Prérequis
 

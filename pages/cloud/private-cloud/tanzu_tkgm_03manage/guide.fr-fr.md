@@ -3,10 +3,10 @@ title: Administrer Tanzu Management Cluster Grid
 slug: tanzu-tkgm-management
 excerpt: Administration de TKG pour créér un cluster de Workload et ajouter des applications dans ce cluster.
 section: Tanzu
-order: 02
+order: 04
 ---
 
-**Dernière mise à jour le 13/09/2022**
+**Dernière mise à jour le 19/09/2022**
 
 ## Objectif
 
