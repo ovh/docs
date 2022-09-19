@@ -12,7 +12,7 @@ order: 03
 
 The OVHcloud HA-NAS service allows you to manage file storage that can be accessed over a network.
 
-**This guide explains how to access your HA-NAS via NFS on the most common distributions.**
+**This guide explains how to access your HA-NAS via NFS on the most common operating systems.**
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they they function correctly.
@@ -24,7 +24,7 @@ The OVHcloud HA-NAS service allows you to manage file storage that can be access
 
 - An [OVHcloud HA-NAS solution](https://www.ovhcloud.com/en-gb/storage-solutions/nas-ha/)
 - An OVHcloud service with a public IP address attached to it (Hosted Private Cloud, dedicated server, VPS, Public Cloud instance, etc.)
-- A distribution compatible with NFS installed on your server
+- An operating system compatible with NFS installed on your server
 - [A partition created on the service with the NFS protcol enabled](https://docs.ovh.com/gb/en/storage/nas/get-started/#create_partition)
 - [An ACL entry for the server's IP address](https://docs.ovh.com/gb/en/storage/nas/get-started/#access_control)
 - Administrative access (root) to your server via SSH or GUI
@@ -46,7 +46,7 @@ The following notations are used as arguments in the command line sections below
 
 > [!warning]
 >
-> The NFS user is `root`, rights changes with this user can generate conflicts with existing CIFS/SMB rights.
+> The NFS user is `root`; rights changes with this user can generate conflicts with existing CIFS / SMB rights.
 > 
 
 
