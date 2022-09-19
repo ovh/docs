@@ -48,7 +48,7 @@ Sur la fenêtre d'ajout de domaine, vous devrez choisir de :
 
 - **sélectionner un domaine dans la liste** : seuls les noms de domaine utilisant la configuration OVHcloud et renseignés en tant que contacts dans votre identifiant client s'affichent ;
 
-- **saisir un nom de domaine non géré par votre compte OVHcloud** : vous devrez être en mesure de modifier la configuration du nom de domaine (sa zone DNS) afin que le service puisse fonctionner correctement. Une entrée DNS CNAME devra être ajoutée pour ce cas.
+- **saisir un nom de domaine non géré par votre compte OVHcloud** : vous devrez être en mesure de modifier la configuration du nom de domaine (sa zone DNS) afin que le service puisse fonctionner correctement. Dans ce cas de figure, une entrée DNS CNAME devra être ajoutée.
 
 Une fois votre choix fait, cliquez sur le bouton `Suivant`{.action}.
 
