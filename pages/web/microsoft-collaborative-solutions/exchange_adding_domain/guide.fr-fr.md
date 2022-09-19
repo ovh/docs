@@ -113,7 +113,7 @@ Vous pouvez acquérir des licences Outlook dans l'[espace client OVHcloud](https
 
 ### Supprimer un nom de domaine d'une plateforme
 
-Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange ou E-mail Pro, il est nécessaire de vérifier que celui-ci n'est pas lié à des comptes e-mail, alias, ressource, compte partagé, groupe, contact externe ou pied de page toujours configuré. Dans ce cas il sera nécessaire d'**attacher ces comptes à un autre nom de domaine** sur votre plateforme ou de les **supprimer**.
+Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange ou E-mail Pro, vous devez vérifier que celui-ci n'est pas lié à des comptes e-mail, alias, ressources, comptes partagés (uniquement sur Exchange), groupes, contacts externes ou pieds de page toujours configurés. Dans ce cas, il sera nécessaire d'**attacher ces comptes à un autre nom de domaine** sur votre plateforme ou de les **supprimer**.
 
 > [!warning]
 >
