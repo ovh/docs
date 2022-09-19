@@ -95,7 +95,7 @@ Une fois le nom de domaine ajouté en tant que domaine associé, assurez-vous qu
 > La modification de la configuration d'un nom de domaine nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effective.
 >
 
-Pour vérifier que la configuration d'un nom de domaine est correcte, repositionnez-vous sur le tableau `Domaine associés`{.action} de votre service. Si la pastille est à présent verte, le nom de domaine est correctement configuré. Dans le cas contraire, il se peut que la propagation ne soit pas encore terminée.
+Pour vérifier que la configuration d'un nom de domaine est correcte, repositionnez-vous sur le tableau `Domaines associés`{.action} de votre service. Si la pastille est à présent verte, le nom de domaine est correctement configuré. Dans le cas contraire, il se peut que la propagation ne soit pas encore terminée.
 
 ![emailpro](images/add_domain_exchange_step5.png){.thumbnail}
 
