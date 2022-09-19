@@ -11,7 +11,7 @@ order: 4
 
 Ajouter un nom de domaine sur un service Exchange est indispensable afin de pouvoir utiliser vos comptes inclus dans ce dernier. Il est également possible d'ajouter plusieurs noms de domaine à un service Exchange ou Email Pro.
 
-**Découvrez comment ajouter un nom de domaine à votre plateforme Exchange ou Email Pro.**
+**Découvrez comment ajouter un nom de domaine à votre plateforme Exchange ou E-mail Pro.**
 
 ## Prérequis
 
