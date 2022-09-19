@@ -119,7 +119,7 @@ Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange o
 >
 > Avant de supprimer des comptes e-mail, assurez-vous qu'ils ne soient pas utilisés. Une sauvegarde de ces comptes sera peut-être nécessaire. Vous pouvez vous appuyer du guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/), qui vous décrira comment exporter les données d'un compte depuis votre espace client ou un logiciel de messagerie.
 
-Dirigez-vous dans l'onglet `Domaine associés`{.action} de votre plateforme. Depuis le tableau, la colonne `Comptes` vous indique le nombre de comptes associés aux noms de domaine de votre liste.
+Dirigez-vous dans l'onglet `Domaines associés`{.action} de votre plateforme. Depuis le tableau, la colonne `Comptes` vous indique le nombre de comptes associés aux noms de domaine de votre liste.
 
 ![emailpro](images/add_domain_exchange_step6.png){.thumbnail}
 
