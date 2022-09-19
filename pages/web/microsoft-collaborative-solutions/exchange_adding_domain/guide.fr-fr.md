@@ -101,7 +101,7 @@ Pour vérifier que la configuration d'un nom de domaine est correcte, reposition
 
 ### Configurer et utiliser les comptes
 
-Maintenant que vous avez ajouté les noms de domaine souhaités à votre service, vous pouvez à présent configurer vos comptes e-mail avec ces derniers. Cette manipulation s'effectue depuis l'onglet `Comptes e-mail`{.action}. Si besoin, vous pouvez commander des comptes supplémentaires grâce au bouton `Action`{.action}/`Commander des comptes`{.action} ou `Ajouter un compte`{.action}.
+Maintenant que vous avez ajouté les noms de domaine souhaités à votre service, vous pouvez configurer vos comptes e-mail avec ces derniers. Cette manipulation s'effectue depuis l'onglet `Comptes e-mail`{.action}. Si besoin, vous pouvez commander des comptes supplémentaires grâce au bouton `Action`{.action}/`Commander des comptes`{.action} ou `Ajouter un compte`{.action}.
 
 Pour rappel, toutes les adresses créées sur votre service seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent.
 
