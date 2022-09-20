@@ -10,7 +10,7 @@ order: 03
 
 ## Objectif
 
-Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un vRack étendu sur deux site OVHcloud distants avec une latence de moins de 5ms. Le guide montre l'interconnexion entre les datacenters de Graveline et celui de Roubaix. 
+Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un même vRack sur deux sites OVHcloud distants avec une latence de moins de 5ms. Le guide montre l'interconnexion entre les datacenters de Gravelines et celui de Roubaix. 
 
 
 > [!warning]
@@ -32,38 +32,67 @@ Nous allons interconnecter deux clusters Nutanix sur deux sites distants l'un à
 
 ### Préparation des deux clusters avant l'interconnexion
 
+Pour que les deux clusters puissent communiquer correctement il faut qu'ils soient sur le même adresse IP privé dans notre guide nous allons utiliser le plan IP `192.168.0.0/22` avec ces adresses :
 
-- **Plan IP commun aux deux clusters** : 192.168.0.0/22
-
-Nous allons reconfigurer le premier cluster avec ces adresses :
-
-- Serveur 1 : adresse VM **CVM** `192.168.1.1`, adresse IP hyperviseur **AHV** `192.168.1.21`.
-- Serveur 2 : adresse VM **CVM** `192.168.1.2`, adresse IP hyperviseur **AHV** `192.168.1.22`.
-- Serveur 3 : adresse VM **CVM** `192.168.1.3`, adresse IP hyperviseur **AHV** `192.168.1.23`.
-- Adresse virtuelle de **Prism Element** : `192.168.1.110`.
-- Adresse IP  **Prism Central** :`192.168.1.111`.
-- Etendue réservée pour le load balancer : `192.168.1.128 à 192.168.1.159`.
-- Passerelle : `192.168.1.254`.
-- Version du cluster : `6.1`.
-
-Le deuxième cluster aura ces informations :
+ **Cluster1** à Gravelines
 
 - Serveur 1 : adresse VM **CVM** `192.168.2.1`, adresse IP hyperviseur **AHV** `192.168.2.21`.
 - Serveur 2 : adresse VM **CVM** `192.168.2.2`, adresse IP hyperviseur **AHV** `192.168.2.22`.
 - Serveur 3 : adresse VM **CVM** `192.168.2.3`, adresse IP hyperviseur **AHV** `192.168.2.23`.
-- Adresse virtuelle de **Prism Element** : `192.168.2.110`.
-- Adresse IP  **Prism Central** :`192.168.2.111`.
+- Adresse virtuelle de **Prism Element** : `192.168.2.100`.
+- Adresse IP  **Prism Central** :`192.168.2.101`.
 - Etendue réservée pour le load balancer : `192.168.2.128 à 192.168.2.159`.
 - Passerelle : `192.168.2.254`.
 - Version du cluster : `6.1`.
 
-Aidez-vous de ce guide pour redeployer vos deux clusters [Redéploiment personnalisé de votre Cluster](https://docs.ovh.com/fr/nutanix/cluster-custom-redeployment/)
+**Cluster2** à Roubaix
+
+- Serveur 1 : adresse VM **CVM** `192.168.1.1`, adresse IP hyperviseur **AHV** `192.168.1.21`.
+- Serveur 2 : adresse VM **CVM** `192.168.1.2`, adresse IP hyperviseur **AHV** `192.168.1.22`.
+- Serveur 3 : adresse VM **CVM** `192.168.1.3`, adresse IP hyperviseur **AHV** `192.168.1.23`.
+- Adresse virtuelle de **Prism Element** : `192.168.1.100`.
+- Adresse IP  **Prism Central** :`192.168.1.101`.
+- Etendue réservée pour le load balancer : `192.168.1.128 à 192.168.1.159`.
+- Passerelle : `192.168.2.254`.
+- Version du cluster : `6.1`.
+
+Aidez-vous de ce guide pour redéployer vos deux clusters [Redéploiment personnalisé de votre Cluster](https://docs.ovh.com/fr/nutanix/cluster-custom-redeployment/)
+
+### Arret d'une des deux passerelles OVHgateway
+
+la connexion Internet sortante est fournie par les machines virtuelles OVHGateway avec la même adresse IP sur les deux sites nous allons arrêter la machine virtuelle du **Cluster2** à Roubaix.
+
+Au travers de **Prism Central** dans la gestion des machines virtuelles sélectionnez `OVHgateway`, ensuite choisissez `GUest Shutdown`{.action} dans le menu `Actions`{.action}.
+
+![01 OVHgateway Shutdown](images/01-ovhgateway-shutdown01.png){.thumbnail}
+
+
+
+
+
+
+
+
+
+Connectez vous au serveur Prism Central de Roubaix au travers de l'URL https://clustername.nutanix.ovhcloud.net:9440 et 
+
+### Modification de la configuration des vRack
+
+Cette opération consiste à supprimer l'affectation du vRack du deuxième site et d'ensuite d'affecter le vRack du premier site au deuxième site. Cette opération se fait à partir de l'espace client OVHcloud. 
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). 
+
+Allez sur le 
+
+
+
+
 
 
 ### Changement des informations concernant le load balancer
 
 
-### Modification de la configuration des vRack
+
 
 
 
