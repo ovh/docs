@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Dernière mise à jour le 29/08/2022**
+**Dernière mise à jour le 20/09/2022**
 
 **Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (DC ou SDDC) vers un nouveau vDC de destination (Essentials ou Premier).**
 
@@ -116,6 +116,8 @@ Voici quelques lignes directrices pour aider votre décision :
 - Si vous n'avez pas NSX sur votre infrastructure actuelle et que vous n'avez pas besoin de certifications => vous pouvez choisir entre un vDC de destination [Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/) ou [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/). En règle générale, les hosts Essentials ont un meilleur rapport coût/cœur tandis que Premier optimise le rapport coût/RAM. Vous pouvez comparer les [hosts Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) et les [hosts Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/).
 - Les options Veeam Managed Backup et Zerto Disaster Recovery sont disponibles sur Essentials et Premier.
 - Si votre infrastructure actuelle est en AMD-2013, vous ne pourrez pas migrer vers Premier.
+
+Attention, vous ne démarrez pas un nouveau service, il vous faudra commander vos resources à l'unité, la création d'un nouveau vDC n'entraine pas la livraison de 2 hosts et 2 datastores.
 
 ![decision tree](images/ESSorPRE.png){.thumbnail}
 
@@ -607,7 +609,7 @@ Voici comment procéder:
 
 2\. Migrez les machines virtuelles du vDC d'origine vers le vDC de destination.
 
-3\. Exécutez l'API OVHcloud pour vérifier à nouveau la date de sauvegarde:
+3\. Exécutez l'API OVHcloud pour migrer vos backups vers le vDC de destination :
 
 > [!api]
 >
@@ -620,7 +622,7 @@ Voici comment procéder:
 
 4\. Répétez les étapes 2 et 3 pour toutes les machines virtuelles dont les sauvegardes sont activées et qui ont été migrées vers le nouveau vDC.
 
-Désactivez Veeam Backup sur l'ancien vDC. Cela peut se faire via l'appel API suivant :
+Avant de continuer, vous pouvez vérifier visuellement dans le plug in graphique Backup Management sur le nouveau vDC que les piles de backup sont bien présentes et actives. Puis vous pouvez désactiver Veeam Backup sur l'ancien vDC. Cela peut se faire via l'appel API suivant :
 
 > [!api]
 >

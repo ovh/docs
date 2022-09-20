@@ -6,7 +6,7 @@ section: FAQ
 order: 3
 ---
 
-**Dernière mise à jour le 14/09/2022**
+**Dernière mise à jour le 20/09/2022**
 
 > [!warning]
 >
@@ -104,6 +104,15 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 
 ### Datastores (stockage)
 
+Vous pouvez obtenir le profile de vos datastores via le call API suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/filer/{filerId}
+>
+
+Si le full profile de votre datastore ne commence pas par "2020-...", il est nécessaire de passer sur des datastores plus récentes au plus vite. 
+
 | Gamme commerciale | Disponibilité générale | End of Sales | End of Growth  | End of Life |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
 | 300Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
@@ -119,7 +128,11 @@ Pour connaître la politique de cycle de vie des produits VMware, merci de vous 
 
 [VMware Lifecycle](https://lifecycle.vmware.com/#/)
 
-Note: VMware a étendu le support de NSX sur les infrastructures OVHcloud jusqu'au 15/01/2023.
+#### NSX Datacenter for vSphere
+
+Vous pouvez connaitre votre version dans la section "Networking and security", dans l'onglet "about NSX".
+Si vous êtes en version antérieure à 6.4.12, merci de contacter le support afin procéder à la mise à jour de ce composant.
+VMware a étendu le support de NSX Datacenter for vSphere sur les infrastructures OVHcloud jusqu'au 15/01/2023. Vous devrez migrer depuis NSX Datacenter for vSphere vers NSX Transformers avant cette date (15/01/2023).
 
 ### Cycle de vie Veeam Backup & Replication
 
