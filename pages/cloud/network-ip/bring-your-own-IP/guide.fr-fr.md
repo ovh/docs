@@ -6,11 +6,7 @@ section: Bring Your Own IP
 order: 1
 ---
 
-> [!primary]
-> Ce service est disponible en accès restreint pour le moment. Veuillez contacter votre commercial OVHcloud pour plus d'informations.
->
-
-**Dernière mise à jour le 07/06/2022**
+**Dernière mise à jour le 20/09/2022**
 
 ## Objectif
 
