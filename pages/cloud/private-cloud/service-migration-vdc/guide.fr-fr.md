@@ -117,7 +117,7 @@ Voici quelques lignes directrices pour aider votre décision :
 - Les options Veeam Managed Backup et Zerto Disaster Recovery sont disponibles sur Essentials et Premier.
 - Si votre infrastructure actuelle est en AMD-2013, vous ne pourrez pas migrer vers Premier.
 
-Attention, vous ne démarrez pas un nouveau service, il vous faudra commander vos resources à l'unité, la création d'un nouveau vDC n'entraine pas la livraison de 2 hosts et 2 datastores.
+Attention, vous ne démarrez pas un nouveau service, il vous faudra commander vos ressources à l'unité. La création d'un nouveau vDC n'entraine pas la livraison de 2 hosts et 2 datastores.
 
 ![decision tree](images/ESSorPRE.png){.thumbnail}
 
@@ -622,7 +622,7 @@ Voici comment procéder:
 
 4\. Répétez les étapes 2 et 3 pour toutes les machines virtuelles dont les sauvegardes sont activées et qui ont été migrées vers le nouveau vDC.
 
-Avant de continuer, vous pouvez vérifier visuellement dans le plug in graphique Backup Management sur le nouveau vDC que les piles de backup sont bien présentes et actives. Puis vous pouvez désactiver Veeam Backup sur l'ancien vDC. Cela peut se faire via l'appel API suivant :
+Avant de continuer, vous pouvez vérifier visuellement, dans le plug-in graphique Backup Management sur le nouveau vDC, que les piles de backup sont bien présentes et actives. Vous pouvez ensuite désactiver Veeam Backup sur l'ancien vDC. Cela peut se faire via l'appel API suivant :
 
 > [!api]
 >
