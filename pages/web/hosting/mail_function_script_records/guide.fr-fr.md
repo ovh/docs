@@ -10,18 +10,18 @@ order: 01
 
 ## Objectif
 
-Les e-mails automatisés sont des messages envoyés via des scripts. Généralement à l'aide de la fonction "mail()" de PHP. Ils sont par exemple utilisés pour le formulaire de contact de votre site internet et permettent à vos visiteurs de vous envoyer des messages.
+Les e-mails automatisés sont des messages envoyés via des scripts. Généralement à l'aide de la fonction "mail()" de PHP. Ils sont par exemple utilisés pour le formulaire de contact de votre site web et permettent à vos visiteurs de vous envoyer des messages.
 
 > [!primary]
 >
 > Ce guide concerne principalement les e-mails envoyés depuis des scripts situés sur votre [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) à l'aide de la fonction "mail()" de PHP.
 >
-> Si vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}, consultez notre documentation sur les [E-mails mutualisés - MX Plan](https://docs.ovh.com/fr/emails/).
+> Si vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} , consultez notre documentation sur les [E-mails mutualisés - MX Plan](https://docs.ovh.com/fr/emails/).
 >
 
 > [!success]
 >
-> Même si nous vous recommandons vivement d'utiliser la fonction "mail()" de PHP, vous pouvez également envoyer des mails depuis votre hébergement mutualisé en passant par un script utilisant le [protocole SMTP (Simple Mail Transfer Protocol)](#SMTP).
+> Même si nous recommandons vivement d'utiliser la fonction "mail()" de PHP, vous pouvez également envoyer des mails depuis votre hébergement mutualisé en passant par un script utilisant le [protocole SMTP (Simple Mail Transfer Protocol)](#SMTP).
 >
 
 **Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud.**
@@ -43,13 +43,14 @@ La page qui s'affiche alors vous permet de suivre et de gérer les e-mails autom
 
 ![hosting](images/Interface.png){.thumbnail}
 
-La page affiche plusieurs informations vous permettant de visualiser en un coup d’œil l'activité des envois d'e-mails automatisés générés depuis vos scripts :
+La page affiche plusieurs informations vous permettant de visualiser l'activité des envois d'e-mails automatisés générés depuis vos scripts :
 
 - **État du service** : état actuel du service réalisant les envois d'e-mails automatisés de votre hébergement web :
     - S'il est vert (*"Activé"* ou *"Force"*), cela signifie que les envois sont opérationnels. 
     - S'il est rouge (*"Désactivé"*, *"Bounce"* ou *"SPAM"*), les envois ne s'effectuent plus. <br>
 
-Selon cet état, la gestion des envois sera différente.
+    Selon cet état, la gestion des envois sera différente.
+
 - **Rapport d'erreurs à** : recevez-le quotidiennement sur l'adresse e-mail de votre choix. Définissez-là grâce au bouton `Changer le destinataire`{.action}. Ce rapport comporte les e-mails envoyés depuis votre hébergement web revenus en erreur chez OVHcloud. Un bouton `Emails en erreur`{.action} permet également de consulter ces rapports à tout moment sur la droite de la page `Scripts emails`{.action}.
 - **Total des e-mails envoyés** : Nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web OVHcloud.
 - **E-mails envoyés aujourd'hui** : Nombre total des e-mails automatisés envoyés aujourd'hui uniquement.
@@ -66,7 +67,7 @@ Pour réaliser l'action souhaitée, cliquez sur le bouton correspondant, puis su
 
 > [!primary]
 >
-> Afin d'éviter une utilisation non souhaitée des e-mails automatisés de votre hébergement web, nous vous recommandons vivement de mettre en place un système de sécurité, comme un captcha dans les formulaires de votre site internet réalisant des envois d'e-mails (un formulaire de contact par exemple).
+> Afin d'éviter une utilisation non souhaitée des e-mails automatisés de votre hébergement web, nous vous recommandons vivement de mettre en place un système de sécurité, comme un "captcha" dans les formulaires de votre site web réalisant des envois d'e-mails (un formulaire de contact par exemple).
 >
 
 Si vous constatez que les e-mails générés depuis vos scripts ne sont plus envoyés alors que l'état du service permet toujours les envois (*"Activé"* ou *"Force"*), nous vous conseillons de :
@@ -74,6 +75,7 @@ Si vous constatez que les e-mails générés depuis vos scripts ne sont plus env
 - **vérifier les scripts réalisant les envois** : les scripts peuvent ne pas réussir l'envoi des e-mails à cause d'une erreur de syntaxe. Vérifiez le contenu de vos scripts, corrigez-les si nécessaire, puis effectuez un nouvel essai.
 
 - **tester l'envoi d'un e-mail via un script de test** : créez un script de test réalisant l'émission d'un e-mail vers votre adresse personnelle à l'aide du code suivant :
+
 ```bash
 <?php
 $to = "RecipientEmail@adress.tld"; 
@@ -87,11 +89,11 @@ else
 echo "Email did not leave correctly!";
 ?>
 ```
-Pour le *"$headers"*, placez deux fois la même adresse mail émettrice pour plus de facilité.
+Pour le *"$headers"*, placez deux fois la même adresse mail émettrice.
 
-Si vous recevez correctement le message *The email has been sent successfully!* sur l'adresse que vous avez définie pour la ligne *"$to"*, cela indique que vos scripts chargés de vos envois comportent des erreurs.
+Si vous recevez correctement le message *The email has been sent successfully!* sur l'adresse e-mail que vous avez défini pour la ligne *"$to"*, cela indique que les scripts effectuant vos envois comportent des erreurs.
 
-- **Assurez-vous que vos envois n'utilisent pas de serveur SMTP** : ne spécifiez pas de serveur SMTP dans les paramètres de vos scripts lorsque vous utilisez la fonction "mail()" de PHP. Si vous disposez d'une interface pour administrer les envois d'e-mails depuis votre site internet, ce paramètre doit pouvoir être modifié dans la configuration de ce dernier.
+- **Assurez-vous que vos envois n'utilisent pas de serveur SMTP** : ne spécifiez pas de serveur SMTP dans les paramètres de vos scripts lorsque vous utilisez la fonction "mail()" de PHP. Si vous disposez d'une interface pour administrer les envois d'e-mails depuis votre site web, modifiez ce paramètre dans la configuration de ce dernier.
 
 ### Gérer les états "Désactivé", "Bounce" et "SPAM"
 
@@ -115,14 +117,14 @@ Pour débloquer la situation, rendez-vous dans la partie `Web cloud`{.action}, c
 
 Deux options possibles :
 
-- Si vous cliquez sur `Débloquer l'envoi`{.action}, l'état du service passera en *"Force"*. Le ratio autorisé avant un blocage **"mails retournés en erreur"/"nombre total d'envoi de mails envoyés"** sera doublé. L'envoi sera de nouveau opérationnel quelques minutes après le déblocage.
+- Si vous cliquez sur `Débloquer l'envoi`{.action}, l'état du service passera en *"Force"*. Le ratio **"mails retournés en erreur"/"nombre total d'envoi de mails envoyés"** autorisé avant un blocage sera doublé. L'envoi sera de nouveau opérationnel quelques minutes après le déblocage.
 - Si vous cliquez sur `Purger les e-mails`{.action}, cela effacera tous les mails de la file d'attente et l'état du service repassera en *"Activé"* sans doubler le ratio.
 
 #### **L'état "SPAM"**
 
 Cet état survient lorsque des mails considérés comme du SPAM ont été émis depuis votre hébergement.
 
-Généralement, ce blocage est accompagné d'un mail intitulé "Abus avec votre hébergement domain.tld" généré automatiquement par nos robots de sécurité :
+Généralement, ce blocage est accompagné d'un mail intitulé **"Abus avec votre hébergement domain.tld"** généré automatiquement par nos robots de sécurité :
 
 ![hosting](images/AbuseMail.png){.thumbnail}
 
@@ -142,10 +144,10 @@ Une purge est obligatoire dans ce cas pour effacer les SPAM en attente d'envoi.
 
 Pour corriger cette situation, vous devrez effectuer à minima les actions suivantes :
 
-- Analyser des logs pour identifier les failles de sécurité et les fichiers infectés
-- Supprimer ou corriger les fichier(s)/module(s) malveillant(s)
-- Pour les CMS (Wordpress, Joomla, Prestashop, Drupal, ...), vous devrez mettre à jour le CMS, les plugin(s) et le thème associés
-- Sécuriser vos formulaires de contact avec un "captcha"
+- Analysez les [logs de votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) pour identifier les failles de sécurité et les fichiers infectés
+- Supprimez ou corrigez les fichier(s)/module(s) malveillant(s)
+- Pour les CMS (Wordpress, Joomla, Prestashop, Drupal, ...), mettez à jour le CMS, les plugin(s) et le thème associés
+- Sécurisez vos formulaires de contact avec un "captcha"
 
 Si vous utilisez un CMS, privilégiez l'utilisation de plugin(s)/thème(s) "officiel(s)".
 Mettez à jour le CMS, les plugins et le thème associés le plus régulièrement possible pour éviter que cela se reproduise.
@@ -174,7 +176,7 @@ Si vous êtes à l'origine des mails ayant engendré le blocage, vous trouverez 
 - L'e-mail contient des termes pornographique ou s’en rapprochant.
 - L'e-mail contient un exécutable (EXE, BAT, PIF, XML, XLSX ou des documents avec des "macros") même "zippé".
 
-Si malgré cela l'état du service repasse en état "SPAM", répondez au mail automatique que vous avez reçu en précisant que vous avez fait le nécessaire.
+Si malgré cela l'état du service repasse en état *"SPAM"*, répondez au mail automatique que vous avez reçu en précisant que vous avez fait le nécessaire.
 
 Notre service anti-spam analysera la situation et notre support reviendra vers vous pour vous expliquer la procédure de déblocage.
 
@@ -207,10 +209,12 @@ $mail->Password = "YourEmailPassword";
 
 > [!primary]
 >
-> Uniquement si vous utilisez une adresse mail OVHcloud, vous pouvez également utiliser le "SMTPSecure" *"starttls"* ou *"tls*" avec le "Port" *587*. Toutefois, le "SMTPSecure" *"ssl"* avec le "Port" *465* restent à privilégier.
+> Seulement si vous utilisez une adresse mail OVHcloud, vous pouvez également utiliser le "SMTPSecure" *"starttls"* ou *"tls*" avec le "Port" *587*. Toutefois, le "SMTPSecure" *"ssl"* avec le "Port" *465* restent à privilégier.
 > 
 
 ## Aller plus loin <a name="go-further"></a>
+
+[Consulter les logs de votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/)
 
 [Corriger la page "403 Forbidden" qui s'affiche sur votre site](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/)
 
