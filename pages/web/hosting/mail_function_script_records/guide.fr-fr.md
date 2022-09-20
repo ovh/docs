@@ -1,80 +1,223 @@
 ---
-title: 'Suivre et gérer les e-mails automatisés de son hébergement web'
+title: "Suivre et gérer les e-mails automatisés de son hébergement web"
 slug: suivi-emails-automatises
-excerpt: 'Apprenez à suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVH'
+excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
 section: Diagnostic
+order: 01
 ---
 
-**Dernière mise à jour le 12/04/2018**
+**Dernière mise à jour le 20/09/2022**
 
 ## Objectif
 
-Les e-mails automatisés sont des messages envoyés via des scripts. Ils sont par exemple utilisés dans un formulaire de contact de votre site internet et permettent à vos visiteurs de vous envoyer des messages.
-
-**Apprenez à suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVH.**
-
-## Prérequis
-
-- Disposer d'une offre d'[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+Les e-mails automatisés sont des messages envoyés via des scripts. Généralement à l'aide de la fonction "mail()" de PHP. Ils sont par exemple utilisés pour le formulaire de contact de votre site internet et permettent à vos visiteurs de vous envoyer des messages.
 
 > [!primary]
 >
-> Ce guide ne concerne que les e-mails envoyés depuis des scripts situés sur votre hébergement web OVH.
+> Ce guide concerne principalement les e-mails envoyés depuis des scripts situés sur votre [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) à l'aide de la fonction "mail()" de PHP.
 >
-> Vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external} ? Rendez-vous dans la section `Emails`{.action} de votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+> Si vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}, consultez notre documentation sur les [E-mails mutualisés - MX Plan](https://docs.ovh.com/fr/emails/).
 >
+
+> [!success]
+>
+> Même si nous vous recommandons vivement d'utiliser la fonction "mail()" de PHP, vous pouvez également envoyer des mails depuis votre hébergement mutualisé en passant par un script utilisant le [protocole SMTP (Simple Mail Transfer Protocol)](#SMTP).
+>
+
+**Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud.**
+
+## Prérequis
+
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
-Le suivi et la gestion des e-mails automatisés de votre hébergement web OVH s'effectuent depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour cela, connectez-vous à ce dernier, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus +`{.action}, puis sur `Scripts emails`{.action}.
-
-La page qui s'affiche alors vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre hébergement web OVH.
+Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Une fois connecté, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
 
 ![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
-### Suivre les envois d'e-mails automatisés
+La page qui s'affiche alors vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
 
-Toujours positionné dans la partie `Scripts emails`{.action}, la page affiche plusieurs informations vous permettant de visualiser en un coup d’œil l'activité des envois d'e-mails automatisés générés depuis vos scripts.
+### Présentation de la partie "Scripts emails"
 
-|Information|Détails|
-|---|---|
-|État du service|Affiche l'état actuel du service réalisant les envois d'e-mails automatisés de votre hébergement web. Un état dans un cadre vert signifie que les envois sont opérationnels, contrairement à un état dans un cadre rouge qui signifie que les envois ne s'effectuent plus. Selon cet état, la gestion des envois sera différente ; voir [« Gérer les envois d'e-mails automatisés »](https://docs.ovh.com/fr/hosting/suivi-emails-automatises/#gerer-les-envois-de-mails-automatises){.external}.|
-|Rapport d'erreurs à|Recevez un rapport d'erreur quotidien sur l'adresse e-mail de votre choix. Vous pouvez la définir grâce au bouton `Changer le destinataire`{.action}. Ce rapport comporte les e-mails envoyés depuis votre hébergement web revenus en erreur chez OVH car ils n'ont pas pu être desservis. Un bouton `Emails en erreur`{.action} permet également de consulter ces rapports à tout moment depuis votre espace client OVH.|
-|Total des e-mails envoyés|Affiche le nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web OVH.|
-|E-mails envoyés aujourd'hui|Affiche le nombre total des e-mails automatisés envoyés aujourd'hui uniquement.|
-|Total des e-mails en erreur|Affiche le nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web qui sont revenus en erreur chez OVH car ils n'ont pas pu être desservis.|
-|Historique des e-mails envoyés|Affiche un graphique représentant l'historique des e-mails envoyés depuis votre hébergement web sur les jours précédents.|
+![hosting](images/Interface.png){.thumbnail}
+
+La page affiche plusieurs informations vous permettant de visualiser en un coup d’œil l'activité des envois d'e-mails automatisés générés depuis vos scripts :
+
+- **État du service** : état actuel du service réalisant les envois d'e-mails automatisés de votre hébergement web :
+    - S'il est vert (*"Activé"* ou *"Force"*), cela signifie que les envois sont opérationnels. 
+    - S'il est rouge (*"Désactivé"*, *"Bounce"* ou *"SPAM"*), les envois ne s'effectuent plus. <br>
+
+Selon cet état, la gestion des envois sera différente.
+- **Rapport d'erreurs à** : recevez-le quotidiennement sur l'adresse e-mail de votre choix. Définissez-là grâce au bouton `Changer le destinataire`{.action}. Ce rapport comporte les e-mails envoyés depuis votre hébergement web revenus en erreur chez OVHcloud. Un bouton `Emails en erreur`{.action} permet également de consulter ces rapports à tout moment sur la droite de la page `Scripts emails`{.action}.
+- **Total des e-mails envoyés** : Nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web OVHcloud.
+- **E-mails envoyés aujourd'hui** : Nombre total des e-mails automatisés envoyés aujourd'hui uniquement.
+- **Total des e-mails en erreur** : Nombre total des e-mails automatisés envoyés depuis la création de votre hébergement web qui sont revenus en erreur chez OVHcloud.
+- **Historique des e-mails envoyés** : Graphique représentant l'historique des e-mails envoyés depuis votre hébergement web sur les jours précédents.
+
+Sur la droite, plusieurs boutons permettent de gérer les envois d'e-mails automatisés depuis votre hébergement web. Selon l'état du service, certains peuvent ne pas être disponibles.
+
+- **Bloquer l'envoi** : Bloque la distribution des envois d'e-mails automatisés de votre hébergement web. Les e-mails générés par vos scripts après le blocage ne seront pas envoyés, mais conservés dans une file d'attente pendant 72 heures maximum.
+- **Débloquer l'envoi** : Débloque l'envoi des e-mails automatisés de votre hébergement web. Les e-mails présents dans la file d'attente seront également remis en distribution.
+- **Purger les e-mails** : Efface les e-mails présents dans la file d'attente et débloque l'envoi de mails.
+
+Pour réaliser l'action souhaitée, cliquez sur le bouton correspondant, puis sur `Valider`{.action}. Dans certain cas, l'action souhaitée peut nécessiter plusieurs dizaines de minutes pour être pleinement effective.
 
 > [!primary]
 >
 > Afin d'éviter une utilisation non souhaitée des e-mails automatisés de votre hébergement web, nous vous recommandons vivement de mettre en place un système de sécurité, comme un captcha dans les formulaires de votre site internet réalisant des envois d'e-mails (un formulaire de contact par exemple).
 >
 
-![hosting](images/monitoring-automatic-emails-step2.png){.thumbnail}
+Si vous constatez que les e-mails générés depuis vos scripts ne sont plus envoyés alors que l'état du service permet toujours les envois (*"Activé"* ou *"Force"*), nous vous conseillons de :
 
-Si vous constatez que les e-mails générés depuis vos scripts ne sont plus envoyés alors que l'état du service permet toujours les envois, nous vous conseillons de :
+- **vérifier les scripts réalisant les envois** : les scripts peuvent ne pas réussir l'envoi des e-mails à cause d'une erreur de syntaxe. Vérifiez le contenu de vos scripts, corrigez-les si nécessaire, puis effectuez un nouvel essai.
 
-- **vérifier les scripts réalisant les envois** : les scripts peuvent ne pas réussir l'envoi des e-mails à cause d'une erreur de syntaxe. Vérifiez le contenu de vos scripts, corrigez-les si nécessaire, puis effectuez un nouvel essai ;
+- **tester l'envoi d'un e-mail via un script de test** : créez un script de test réalisant l'émission d'un e-mail vers votre adresse personnelle à l'aide du code suivant :
+```bash
+<?php
+$to = "RecipientEmail@adress.tld"; 
+$subject = "Test mail PHP"; 
+$content = "The body/content of the Email";
+$headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
 
-- **tester l'envoi d'un e-mail via un script de test** : créez un script de test réalisant l'émission d'un e-mail vers votre adresse personnelle. Si vous recevez correctement le message, cela indique que vos scripts chargés des envois comportent des erreurs. En fonction de vos connaissances à ce sujet, il est possible de trouver des scripts de test sur internet ;
+if (mail($to, $subject, $content, $headers))
+echo "The email has been sent successfully!";
+else
+echo "Email did not leave correctly!";
+?>
+```
+Pour le *"$headers"*, placez deux fois la même adresse mail émettrice pour plus de facilité.
 
-- **réaliser vos envois sans utiliser de serveur SMTP** : ne spécifiez pas de serveur SMTP dans les paramètres de vos scripts. Si vous disposez d'une interface pour administrer les envois d'e-mails depuis votre site internet, ce paramètre doit pouvoir être modifié dans la configuration de ce dernier.
+Si vous recevez correctement le message *The email has been sent successfully!* sur l'adresse que vous avez définie pour la ligne *"$to"*, cela indique que vos scripts chargés de vos envois comportent des erreurs.
 
-### Gérer les envois d'e-mails automatisés
+- **Assurez-vous que vos envois n'utilisent pas de serveur SMTP** : ne spécifiez pas de serveur SMTP dans les paramètres de vos scripts lorsque vous utilisez la fonction "mail()" de PHP. Si vous disposez d'une interface pour administrer les envois d'e-mails depuis votre site internet, ce paramètre doit pouvoir être modifié dans la configuration de ce dernier.
 
-Toujours positionné dans la partie `Scripts emails`{.action}, plusieurs boutons permettent de gérer les envois d'e-mails automatisés depuis votre hébergement web. Selon l'état du service, certains peuvent ne pas être disponibles.
+### Gérer les états "Désactivé", "Bounce" et "SPAM"
 
-|Actions|Détails|
-|---|---|
-|Bloquer l'envoi|Permet de bloquer la distribution des envois d'e-mails automatisés de votre hébergement web. Les e-mails générés par vos scripts après le blocage ne seront pas envoyés, mais conservés dans une file d'attente pendant 72 heures maximum.|
-|Débloquer l'envoi|Permet de débloquer l'envoi des e-mails automatisés de votre hébergement web. Les e-mails présents dans la file d'attente seront également remis en distribution.|
-|Purger les e-mails|Permet d'effacer les e-mails présents dans la file d'attente et de débloquer leur envoi.|
+#### **L'état "Désactivé"**
 
-Pour réaliser l'action souhaitée, cliquez sur le bouton correspondant, puis sur `Valider`{.action}. Dans certain cas, l'action souhaitée peut nécessiter plusieurs minutes pour être pleinement effective.
+Cette état survient lorsque :
 
-![hosting](images/monitoring-automatic-emails-step3.png){.thumbnail}
+ - trop de mails ont été émis très rapidement
+ - trop de mails sont retournés en erreur
+ - vous avez vous-même désactivé la fonctionnalité depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-## Aller plus loin
+Pour débloquer la situation, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+
+Cliquez enfin sur `Débloquer l'envoi`{.action} puis patientez quelques minutes le temps que le service d'envoi soit de nouveau actif.
+
+#### **L'état "Bounce"**
+
+Cet état survient lorsqu'un certain pourcentage de vos mails envoyés automatiquement est revenu en erreur.
+
+Pour débloquer la situation, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+
+Deux options possibles :
+
+- Si vous cliquez sur `Débloquer l'envoi`{.action}, l'état du service passera en *"Force"*. Le ratio autorisé avant un blocage **"mails retournés en erreur"/"nombre total d'envoi de mails envoyés"** sera doublé. L'envoi sera de nouveau opérationnel quelques minutes après le déblocage.
+- Si vous cliquez sur `Purger les e-mails`{.action}, cela effacera tous les mails de la file d'attente et l'état du service repassera en *"Activé"* sans doubler le ratio.
+
+#### **L'état "SPAM"**
+
+Cet état survient lorsque des mails considérés comme du SPAM ont été émis depuis votre hébergement.
+
+Généralement, ce blocage est accompagné d'un mail intitulé "Abus avec votre hébergement domain.tld" généré automatiquement par nos robots de sécurité :
+
+![hosting](images/AbuseMail.png){.thumbnail}
+
+Trois cas de figure sont possibles par rapport à cette situation :
+
+- **Cas 1 : Exploitation d'un formulaire de contact par un robot** :
+
+Pour corriger cette situation, vous devrez sécuriser l'ensemble des scripts en capacité d'émettre des mails depuis votre hébergement à l'aide d'un système de type "Captcha".
+
+Rendez-vous ensuite dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+
+Vous pourrez ensuite cliquer sur `Purger les e-mails`{.action}, cela effacera tous les mails de la file d'attente et l'état du service repassera en *"Activé"*.
+
+Une purge est obligatoire dans ce cas pour effacer les SPAM en attente d'envoi.
+
+- **Cas 2 : Injection de fichiers malveillants dans votre hébergement** :
+
+Pour corriger cette situation, vous devrez effectuer à minima les actions suivantes :
+
+- Analyser des logs pour identifier les failles de sécurité et les fichiers infectés
+- Supprimer ou corriger les fichier(s)/module(s) malveillant(s)
+- Pour les CMS (Wordpress, Joomla, Prestashop, Drupal, ...), vous devrez mettre à jour le CMS, les plugin(s) et le thème associés
+- Sécuriser vos formulaires de contact avec un "captcha"
+
+Si vous utilisez un CMS, privilégiez l'utilisation de plugin(s)/thème(s) "officiel(s)".
+Mettez à jour le CMS, les plugins et le thème associés le plus régulièrement possible pour éviter que cela se reproduise.
+
+Une fois votre hébergement sécurisé, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+
+Vous pourrez ensuite cliquer sur `Purger les e-mails`{.action}, cela effacera tous les mails de la file d'attente et l'état du service repassera en *"Activé"*.
+
+Une purge est obligatoire dans ce cas pour effacer les SPAM en attente d'envoi.
+
+- **Cas 3 : Envoi de mails légitimes considérés comme du SPAM** :
+
+Si vous êtes à l'origine des mails ayant engendré le blocage, vous trouverez ci-dessous quelques exemples d’**actions à éviter** lors de l'envoi d'un mail (pour qu'il ne soit pas considéré trop "facilement" comme un SPAM):
+
+- 3 mots ou plus en majuscules dans le sujet/objet de l'e-mail.
+- Pas de sujet/texte renseigné dans l'e-mail.
+- L'e-mail contient juste une image de taille supérieure à 1 Mo et quelques mots.
+- Le sujet de l'e-mail commence par : Hi, FREE, BUY, BUYING,....
+- L'e-mail contient plus de 70 % de blanc (abus sur la touche « ESPACE » ou « ENTRER » du clavier).
+- La police d’écriture utilisée pour la rédaction de l'e-mail est extrêmement grande.
+- La couleur d'écriture et la couleur de fond sont identiques pour rédiger l'e-mail.
+- L'adresse IP publique (IP de votre point d'accès internet par exemple) est listée chez des organismes de réputation.
+- L'entête du mail envoyé ne respecte pas les RFC "mails" (normes ou standards mails).
+- Le ou les liens présents dans le mail sont incorrects.
+- Une URL dans le mail est non sécurisée (exemple: déclarée en https:// alors que l'URL n'existe qu'en http://)
+- L'e-mail contient des termes pornographique ou s’en rapprochant.
+- L'e-mail contient un exécutable (EXE, BAT, PIF, XML, XLSX ou des documents avec des "macros") même "zippé".
+
+Si malgré cela l'état du service repasse en état "SPAM", répondez au mail automatique que vous avez reçu en précisant que vous avez fait le nécessaire.
+
+Notre service anti-spam analysera la situation et notre support reviendra vers vous pour vous expliquer la procédure de déblocage.
+
+### Envoi de mails à l'aide d'un scrpit "SMTP" <a name="SMTP"></a>
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition la partie qui va suivre afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+>
+
+Même si nous vous recommandons vivement de privilégier l'utilisation de la fonction "mail()" de PHP, les hébergements mutualisés permettent d'envoyer des mails en passant par un script utilisant le protocole SMTP (Simple Mail Transfer Protocol).
+
+> [!warning]
+> 
+> Les mails émis avec un script utilisant une configuration SMTP ne pourront pas être gérés et suivis depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> 
+
+Pour cela, vous pouvez utiliser intégrer le script suivant en remplaçant uniquement les valeurs "Host", "Username" et "Password" par vos propres paramètres SMTP :
+
+ ```bash
+$mail->Host = "your.smtp.server";
+$mail->SMTPAuth = true; 
+$mail->SMTPSecure = "ssl";
+$mail->Port = 465; 
+$mail->Username = "e-mail@adress.tld"; 
+$mail->Password = "YourEmailPassword"; 
+```
+
+> [!primary]
+>
+> Uniquement si vous utilisez une adresse mail OVHcloud, vous pouvez également utiliser le "SMTPSecure" *"starttls"* ou *"tls*" avec le "Port" *587*. Toutefois, le "SMTPSecure" *"ssl"* avec le "Port" *465* restent à privilégier.
+> 
+
+## Aller plus loin <a name="go-further"></a>
+
+[Corriger la page "403 Forbidden" qui s'affiche sur votre site](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/)
+
+[Restaurer l'espace de stockage FTP de votre hébergement](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

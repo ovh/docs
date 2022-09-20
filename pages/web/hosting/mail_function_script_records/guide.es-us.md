@@ -25,7 +25,7 @@ Los mensajes de correo automatizados son emails enviados mediante scripts. Se ut
 
 ## Procedimiento
 
-El seguimiento y la gestión de los emails automatizados de un alojamiento web de OVH se realizan desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, haga clic en `Más +`{.action} y seleccione `Scripts de correo electrónico`{.action}.
+El seguimiento y la gestión de los emails automatizados de un alojamiento web de OVHcloud se realizan desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, haga clic en `Más +`{.action} y seleccione `Scripts de correo electrónico`{.action}.
 
 En la nueva página podrá gestionar los emails automatizados enviados desde el alojamiento web de OVHcloud y realizar un seguimiento de los envíos.
 

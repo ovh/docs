@@ -12,25 +12,25 @@ section: 'Diagnose'
 
 Automatische E-Mails werden über ein Skript versendet. Sie werden beispielsweise im Kontaktformular auf Ihrer Website verwendet und ermöglichen es, dass die Besucher der Website Ihnen Nachrichten senden.
 
-**Hier erfahren Sie, wie Sie automatische E-Mails verfolgen und verwalten können, die über Ihr OVH Webhosting versendet werden.**
+**Hier erfahren Sie, wie Sie automatische E-Mails verfolgen und verwalten können, die über Ihr OVHcloud Webhosting versendet werden.**
 
 ## Voraussetzungen
 
-- Sie besitzen ein [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
+- Sie besitzen ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 > [!primary]
 >
-> Diese Anleitung bezieht sich nur auf E-Mails, die über Skripte auf Ihrem OVH Webhosting versendet werden.
+> Diese Anleitung bezieht sich nur auf E-Mails, die über Skripte auf Ihrem OVHcloud Webhosting versendet werden.
 >
-> Wenn Sie E-Mail-Adressen aus Ihrem MX Plan Angebot oder Ihrem [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot verwalten möchten, gehen Sie in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `E-Mails`{.action}.
+> Wenn Sie E-Mail-Adressen aus Ihrem MX Plan Angebot oder Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot verwalten möchten, gehen Sie in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `E-Mails`{.action}.
 >
 
 ## Beschreibung
 
-Sie können automatische E-Mails, die von Ihrem Webhosting aus versendet werden, über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verfolgen und verwalten. Loggen Sie sich hierzu im Kundencenter ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Klicken Sie dann auf den Tab `Mehr +`{.action} und auf `E-Mail-Skripte`{.action}.
+Sie können automatische E-Mails, die von Ihrem Webhosting aus versendet werden, über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verfolgen und verwalten. Loggen Sie sich hierzu im Kundencenter ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Klicken Sie dann auf den Tab `Mehr +`{.action} und auf `E-Mail-Skripte`{.action}.
 
-Auf der angezeigten Seite können Sie die von Ihrem OVH Webhosting aus gesendeten automatischen E-Mails verfolgen und verwalten.
+Auf der angezeigten Seite können Sie die von Ihrem OVHcloud Webhosting aus gesendeten automatischen E-Mails verfolgen und verwalten.
 
 ![Hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
@@ -41,10 +41,10 @@ Bleiben Sie im Bereich `E-Mail-Skripte`{.action}. Auf der Seite werden Ihnen auf
 |Information|Details|
 |---|---|
 |Status der Dienstleistung|Zeigt den aktuellen Status des Dienstes an, der automatische E-Mails von Ihrem Webhosting aus versendet. Bei grün hinterlegtem Status ist der Versand aktiv. Ein rot hinterlegter Status bedeutet, dass keine E-Mails gesendet werden. Je nach Status unterscheidet sich die Versandverwaltung; siehe [„Versand automatischer E-Mails verwalten“](https://docs.ovh.com/de/hosting/webhosting_verwaltung_automatischer_e-mails/#versand-automatischer-e-mails-verwalten){.external}.|
-|Fehlerbericht an|Sie können einen täglichen Fehlerbericht an eine E-Mail-Adresse Ihrer Wahl erhalten. Diese können Sie über den Button `Empfänger ändern`{.action} neu festlegen. Im Fehlerbericht werden die von Ihrem Webhosting aus gesendeten E-Mails aufgelistet, bei deren Versand OVH eine Fehlermeldung erhalten hat, da sie nicht zugestellt werden konnten. Die Berichte können Sie außerdem jederzeit in Ihrem OVH Kundencenter über den Button `E-Mails im Fehlerstatus`{.action} einsehen.|
-|Gesamtzahl versandter E-Mails|Zeigt die Gesamtzahl der seit der Erstellung Ihres OVH Webhostings versendeten automatischen E-Mails an.|
+|Fehlerbericht an|Sie können einen täglichen Fehlerbericht an eine E-Mail-Adresse Ihrer Wahl erhalten. Diese können Sie über den Button `Empfänger ändern`{.action} neu festlegen. Im Fehlerbericht werden die von Ihrem Webhosting aus gesendeten E-Mails aufgelistet, bei deren Versand OVHcloud eine Fehlermeldung erhalten hat, da sie nicht zugestellt werden konnten. Die Berichte können Sie außerdem jederzeit in Ihrem OVHcloud Kundencenter über den Button `E-Mails im Fehlerstatus`{.action} einsehen.|
+|Gesamtzahl versandter E-Mails|Zeigt die Gesamtzahl der seit der Erstellung Ihres OVHcloud Webhostings versendeten automatischen E-Mails an.|
 |Heute versandte E-Mails|Zeigt die Gesamtzahl der am aktuellen Tag versendeten automatischen E-Mails an.|
-|Gesamtzahl E-Mails im Fehlerstatus|Zeigt die Gesamtzahl der seit der Erstellung Ihres OVH Webhostings versendeten automatischen E-Mails an, bei deren Versand OVH eine Fehlermeldung erhalten hat, da sie nicht zugestellt werden konnten.|
+|Gesamtzahl E-Mails im Fehlerstatus|Zeigt die Gesamtzahl der seit der Erstellung Ihres OVHcloud Webhostings versendeten automatischen E-Mails an, bei deren Versand OVHcloud eine Fehlermeldung erhalten hat, da sie nicht zugestellt werden konnten.|
 |History der versandten E-Mails|Zeigt eine Grafik an, die die History der von Ihrem Webhosting aus versendeten E-Mails bis zum aktuellen Tag darstellt.|
 
 > [!primary]

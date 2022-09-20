@@ -1,7 +1,7 @@
 ---
 title: 'Monitoring i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu'
 slug: hosting_www_monitorowanie_automatycznych_e-maili
-excerpt: 'Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVH'
+excerpt: 'Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVHcloud'
 section: Diagnostyka
 ---
 
@@ -11,25 +11,25 @@ section: Diagnostyka
 
 Automatyczne wiadomości e-mail są wysyłane za pomocą skryptów. Używane są na przykład w formularzach kontaktowych na stronie WWW.
 
-Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVH.
+Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVHcloud.
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 > [!primary]
 >
-> Tematem tego przewodnika są tylko wiadomości e-mail wysyłane za pośrednictwem skryptów z Twojego hostingu w OVH.
+> Tematem tego przewodnika są tylko wiadomości e-mail wysyłane za pośrednictwem skryptów z Twojego hostingu w OVHcloud.
 >
-> Aby zarządzać adresami e-mail zawartymi w MX Plan lub [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}, przejdź do sekcji `E-maile`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+> Aby zarządzać adresami e-mail zawartymi w MX Plan lub [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}, przejdź do sekcji `E-maile`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 >
 
 ## W praktyce
 
 Możesz monitorować i zarządzać automatycznymi wiadomościami e-mail w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Zaloguj się do Panelu klienta, kliknij `Hosting`{.action}, następnie wybierz z listy odpowiedni hosting. Teraz kliknij zakładkę `Więcej`{.action}, a następnie `Skrypty e-mail`{.action}.
 
-Wyświetli się strona, dzięki której będziesz mógł monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVH
+Wyświetli się strona, dzięki której będziesz mógł monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVHcloud
 
 ![wysyłka wiadomości e-mail ze skryptu](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
@@ -40,7 +40,7 @@ Strona, która wyświetliła się po kliknięciu `Skrypty e-mail`{.action}, poda
 |Informacja|Szczegóły|
 |---|---|
 |Status usługi|Pokazuje aktualny status usługi realizującej wysyłkę automatycznych maili z Twojego hostingu. Status w zielonej ramce oznacza poprawne wysyłanie e-maili, natomiast status w czerwonej ramce wskazuje, że e-maile nie są wysyłane. Od statusu usługi zależał będzie sposób zarządzania wysyłką. Sprawdź informacje na ten temat w poniższej sekcji niniejszego przewodnika [„Zarządzanie wysyłką automatycznych wiadomości e-mail”](https://docs.ovh.com/pl/hosting/hosting_www_monitorowanie_automatycznych_e-maili/#zarzadzanie-wysylka-automatycznych-wiadomosci-e-mail){.external}.|
-|Raporty o błędach|Możesz otrzymywać codzienny raport o błędach na dowolny adres e-mail. Możesz go określić, klikając przycisk `Zmień odbiorcę`{.action}. Raport o błędach zawiera listę wiadomości e-mail wysłanych z Twojego hostingu, które zostały zwrócone do OVH, gdyż nie mogły zostać dostarczone do odbiorców. Możesz także wyświetlić raport o błędach, klikając przycisk `Błędy wysyłki e-maili`{.action} w Panelu klienta.|
+|Raporty o błędach|Możesz otrzymywać codzienny raport o błędach na dowolny adres e-mail. Możesz go określić, klikając przycisk `Zmień odbiorcę`{.action}. Raport o błędach zawiera listę wiadomości e-mail wysłanych z Twojego hostingu, które zostały zwrócone do OVHcloud, gdyż nie mogły zostać dostarczone do odbiorców. Możesz także wyświetlić raport o błędach, klikając przycisk `Błędy wysyłki e-maili`{.action} w Panelu klienta.|
 |Łączna liczba wysłanych wiadomości|Pokazuje łączną liczbę automatycznych wiadomości e-mail wysłanych od momentu skonfigurowania Twojego hostingu.|
 |Wiadomości e-mail wysłane dzisiaj|Pokazuje łączną liczbę automatycznych wiadomości e-mail wysłanych tylko dzisiaj.|
 |Łączna liczba zwróconych wiadomości e-mail|Pokazuje łączną liczbę niedostarczonych automatycznych wiadomości e-mail wysłanych z Twojego hostingu od momentu jego skonfigurowania.|
