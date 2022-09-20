@@ -73,7 +73,7 @@ Below is a summary table of the two OVHcloud Nutanix solutions:
 | **Nutanix Standard**          | **AOS Storage**                        | **AOS Pro**                       |
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operation**         |
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operations**        |
 |                               |                                        | **Flow**                          |
 |                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         |
 |                               | **Framework Utilities**                | **X-ray**                         |
@@ -82,7 +82,7 @@ Below is a summary table of the two OVHcloud Nutanix solutions:
 | **Nutanix Advanced**          | **AOS Storage**                        | **AOS Ultimate**                  |
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operation**         |
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operations**        |
 |                               |                                        | **Flow**                          |
 |                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         |
 |                               | **Framework Utilities**                | **X-ray**                         |

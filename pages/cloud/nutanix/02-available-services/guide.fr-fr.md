@@ -6,7 +6,7 @@ section: Premiers pas
 order: 02
 ---
 
-**Dernière mise à jour le 15/09/2022**
+**Dernière mise à jour le 19/09/2022**
 
 ## Objectif
 
@@ -73,18 +73,18 @@ Ci-dessous se trouve un tableau récapitulatif des deux offres Nutanix OVHcloud 
 | **Nutanix Standard**          | **AOS Storage**                        | **AOS Pro**                       |               
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |   
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent operation**         | 
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operations**         | 
 |                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes block storage**         | 
+|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         | 
 |                               | **Framework Utilities**                | **X-ray**                         |
 |                               |                                        | **Move**                          |
 |                               |                                        | **Lcm**                           |
 | **Nutanix Advanced**          | **AOS Storage**                        | **AOS Ultimate**                  |
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |   
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent operation**         | 
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operations**         | 
 |                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes block storage**         | 
+|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         | 
 |                               | **Framework Utilities**                | **X-ray**                         |
 |                               |                                        | **Move**                          |
 |                               |                                        | **Lcm**                           |
