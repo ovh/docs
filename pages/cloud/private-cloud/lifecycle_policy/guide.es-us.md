@@ -106,14 +106,14 @@ This table presents a summary of the different phases of the lifecycle of the se
 
 ### Datastores (storage)
 
-You can get your datastores profile using the API call :
+You can get your datastore profile using the following API call :
 
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/filer/{filerId}
 >
 
-If your datastore's full profile do not start by "2020-...", it is urgent and mandatory that you upgrade your storage to newer flavors.
+If your datastore's full profile does not start with "2020-...", it is urgent and mandatory that you upgrade your storage to newer flavors.
 
 | Commercial Range | General Availability | End of Sales | End of Growth  | End of Life |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
@@ -132,9 +132,10 @@ To know the lifecycle policy of VMware products, please refer to the editor's pu
 
 #### NSX Datacenter for vSphere (NSX-v)
 
-You can check your version of NSX-v in the vSphere section "Networking and security", tab "about NSX".
-If your version is anterior to 6.4.12, please reach out to the support team to plan your upgrade.
-VMware extended the support of NSX Datacenter for vSphere on OVHcloud's infrastructure until 15/01/2023. If you are using NSX you have to plan your migration to NSX Transformers before this date (15/01/2023).
+You can check your version of NSX-v in the "Networking and security" section of vSphere, in the "about NSX" tab.<br>
+If your version is earlier than 6.4.12, please reach out to the support teams to plan an upgrade.
+
+VMware extended the support of NSX Datacenter for vSphere on OVHcloud infrastructures until 15/01/2023. If you are using NSX, you have to plan your migration to NSX Transformers before this date (15/01/2023).
 
 ### Veeam Backup & Replication lifecycle policy
 
