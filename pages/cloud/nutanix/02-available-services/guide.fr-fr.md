@@ -20,7 +20,7 @@ Si la licence ou le service que vous cherchez n'est pas disponible, nous vous in
 Hosted Private Cloud powered by Nutanix propose deux pack de licences :
 
 - **Nutanix Standard Pack**
-- **Nutanix Advanced Pack** qui reprend les licences et services du **Nutanix Standard Pack** auxquelles viennent s'ajouter des licences et services supplémentaires pour supporter des usages plus avancés tels que la réplication plus performante, des sites multiples,des possibilités de chiffrement de données avancées et des options de plan de reprise d'activités. 
+- **Nutanix Advanced Pack** qui reprend les licences et services du **Nutanix Standard Pack** auxquelles viennent s'ajouter des licences et services supplémentaires pour supporter des usages plus avancés tels que la réplication plus performante, des sites multiples, des possibilités de chiffrement de données avancées et des options de plan de reprise d'activités. 
 
 ### Socle de licences et services communs aux deux packs de licences **Nutanix Standard** et **Nutanix Advanced**
 
