@@ -116,7 +116,7 @@ Here are a few guidelines:
 - Veeam Managed Backup and Zerto Disaster Recovery options are available on both Essentials and Premier
 - If your current infrastructure is in AMD-2013, you will not be able to migrate to Premier.
 
-Please be reminded that you do not create a new service, you will need to order your resources individually. Creating a new vDC will not deliver 2 hosts and 2 datastores..
+Please be reminded that you do not create a new service, you will need to order your resources individually. Creating a new vDC will not deliver 2 hosts and 2 datastores.
 
 ![decision tree](images/ESSorPRE.png){.thumbnail}
 
