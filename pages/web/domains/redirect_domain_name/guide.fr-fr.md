@@ -42,7 +42,7 @@ Ces actions peuvent être réalisées de plusieurs manières :
 > Soyez vigilant quant aux manipulations que vous allez entreprendre ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) dans le référencement si nécessaire.
 >
 
-### Rediriger un nom de domaine depyus l'espace client
+### Rediriger un nom de domaine depuis l'espace client
 
 Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la partie `Web Cloud`{.action}, sélectionnez le domaine à rediriger dans la section `Noms de domaine`{.action} puis cliquez sur l'onglet `Redirection`{.action}.
 
@@ -79,7 +79,7 @@ Cette option permet, après la saisie du domaine redirigé, d'afficher le domain
 > Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 5 étapes.
 
 > [!tabs]
-> **Etape 1**
+> #### Etape 1
 >>
 >> Dans la fenêtre, votre domaine à rediriger apparaît déjà. Renseignez le formulaire **uniquement** si vous souhaitez rediriger un *sous-domaine*.
 >>
@@ -89,7 +89,7 @@ Cette option permet, après la saisie du domaine redirigé, d'afficher le domain
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
 >>
-> **Etape 2**
+> #### Etape 2
 >>
 >> Sélectionnez `Vers une adresse Web`{.action}.
 >>
@@ -97,7 +97,7 @@ Cette option permet, après la saisie du domaine redirigé, d'afficher le domain
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 3.
 >>
-> **Etape 3**
+> #### Etape 3
 >>
 >> Sélectionnez `Avec une redirection visible`{.action} parmi les deux choix indiqués.
 >>
@@ -105,7 +105,7 @@ Cette option permet, après la saisie du domaine redirigé, d'afficher le domain
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 4.
 >>
-> **Etape 4**
+> #### Etape 4
 >>
 >> Sélectionnez `Permanente (301)`{.action} parmi les deux choix indiqués puis saisissez le domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
 >>
@@ -113,7 +113,7 @@ Cette option permet, après la saisie du domaine redirigé, d'afficher le domain
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 5.
 >>
-> **Etape 5**
+> #### Etape 5
 >>
 >> Dans cette dernière étape, assurez-vous que les informations affichées sont bien correctes.
 >>
