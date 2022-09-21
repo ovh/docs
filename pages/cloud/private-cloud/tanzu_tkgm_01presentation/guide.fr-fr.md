@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 19/09/2022**
+**Dernière mise à jour le 21/09/2022**
 
 ## Objectif
 
@@ -26,18 +26,18 @@ order: 02
 
 ## Présentation pas à pas de la solution Tanzu Kubernetes Grid
 
-VMware Tanzu Kubernetes Grid est une plate-forme Kubernetes fournie par **VMware** et maintenue dans le cadre du support **Hosted Private Cloud Powered by VMware**.
+**VMware Tanzu Kubernetes Grid** est une plate-forme Kubernetes fournie par **VMware** et maintenue dans le cadre du support **Hosted Private Cloud Powered by VMware**.
 
 Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter de ses fonctionnalités et de son évolutivité.
 
-Tanzu Kubernetes Grid permet de déployer et d'administrer des clusters Kubernetes au sein de VMware. L'outil d'administration des clusters s'appuie lui même sur Kubernetes. 
+Tanzu Kubernetes Grid permet de déployer et d'administrer un ou plusieurs clusters Kubernetes au sein de votre cluster VMware. L'outil d'administration de ces clusters s'appuie lui même sur Kubernetes. 
 
 
 ### Installation initiale de Tanzu Kubernetes Grid
 
 Consultez cette documentation pour installer Tanzu Kubernetes Grid [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-installation).
 
-Après l'installation de **Tanzu Kubernetes Grid** le cluster VMware aura 6 nouvelles machines virtuelles pour faire fonctionner le cluster d'administration ainsi qu'une machine virtuelle d'administration.  
+L'installation de **Tanzu Kubernetes Grid** sur le cluster VMware nécessite six nouvelles machines virtuelles pour faire fonctionner le cluster d'administration ainsi qu'une machine virtuelle d'administration.  
 
 ![01 admin cluster diagram](images/01-admin-cluster-diagram01.png){.thumbnail}
 
@@ -48,15 +48,21 @@ Après l'installation de **Tanzu Kubernetes Grid** le cluster VMware aura 6 nouv
 
 ### Déploiement d'un cluster de Workload et installation d'une application
 
-Pour pouvoir déployer une application il faut créer des clusters de Workload dédiés aux application, ces clusters sont independants entre eux ce qui permet d'avoir plusieurs versions de Kubernetes installées sur votre infrastructure VMware.
+Pour pouvoir déployer une application il faut créer des clusters de *Workload* dédiés aux applications, ces clusters sont independants entre eux ce qui permet d'avoir plusieurs versions de Kubernetes installées sur votre infrastructure VMware.
 
-Consultez ce guide [Administrer Tanzu Kubernete Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-installation). tous les clusters de WorkLoad sont independants l'un de l'autre ce qui permet d'avoir des versions différentes de Kubernetes sur chacun des clusters de Workload.
+Consultez ce guide [Administrer Tanzu Kubernete Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-installation). pour déployer  
 
-Pour chaque nouveaux clusters Kubernetes de Workdload six nouvelles machines virtuelles sont rajoutées sur l'infrastructure VMware. 
+tous les clusters de WorkLoad sont independants l'un de l'autre ce qui permet d'avoir des versions différentes de Kubernetes sur chacun des clusters de Workload.
+
+Pour chaque nouveaux clusters Kubernetes de **Workload** six nouvelles machines virtuelles sont rajoutées sur l'infrastructure VMware. 
 
 ![02 admin and workload cluster diagram](images/02-tkc-mc-wc01.png){.thumbnail}
 
-à l'intérieur d'un cluster de *WorkLoad* il est possible d'installer une suite logicielle contenant plusieurs applications qui communiquement entre elles sur le réseau interne du cluster Kubernetes. Kubernetes a besoin d'un package supplémentaire comme par exemple **kube-vib** pour pouvoir publier une application sur le réseau local du cluster VMware.
+à l'intérieur d'un cluster de *WorkLoad* il est possible d'installer une suite logicielle contenant plusieurs applications qui communiquement entre elles sur le réseau interne du cluster Kubernetes. Kubernetes a besoin d'un package supplémentaire comme par exemple **kube-vib** pour pouvoir publier une application sur le réseau local du cluster VMware. 
+
+Il est aussi possible de publier les applications d'un cluster de *Workload* à partir de **VMware NSX Advanced Load Balancer**
+
+
 
 ![03 apps and load balancing](images/03-internetworkcommunication01.png){.thumbnail}
 
@@ -65,7 +71,7 @@ Par défaut lors de l'arrêt ou d'un crash d'un pods les données à l'intérieu
 
 ### Gestion des volumes permanents 
 
-Les volumes permanents sont stockés par défaut à l'interieur du cluster Kubernetes mais il est plus judicieux d'utiliser un sto
+Les volumes permanents sont stockés par défaut à l'interieur du cluster Kubernetes mais il est plus judicieux d'utiliser un stockage externe.
 
 > [!warning]
 >
