@@ -100,11 +100,11 @@ Sélectionnez tous les éléments qui se trouvent dans **Votre vRack**.
 
 Revenez dans le menu `Hosted Private Cloud`{.action} choisissez le cluster du premier site dans la catégorie `Nutanix` et notez le nom du **vRack** en dessous de **Réseau privé(vRack)**.
 
-![03 Add to vrack 01](images/03-addtovrack01.png){.thumbnail}
+![03 Add to vrack 03](images/03-addtovrack01.png){.thumbnail}
 
 Allez dans le menu `Bare Metal Cloud` sélectionnez le `vRack`{.action} en dessous de l'option **vRack** dans **Network**.
 
-![03 Add to vrack 02](images/03-addtovrack02.png){.thumbnail}
+![03 Add to vrack 03](images/03-addtovrack02.png){.thumbnail}
 
 Sélectionnez ces éléments du cluster du deuxième site : 
 
