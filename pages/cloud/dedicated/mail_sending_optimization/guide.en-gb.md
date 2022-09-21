@@ -5,7 +5,7 @@ excerpt: 'Find out how to send emails and limit the risk of them being marked as
 section: Tutorial
 ---
 
-**Last updated 08th December 2021**
+**Last updated 7th September 2022**
 
 ## Objective
 

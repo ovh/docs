@@ -5,7 +5,7 @@ slug: optimiser-envoi-emails
 section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 08/12/2021**
+**Dernière mise à jour le 07/09/2022**
 
 ## Objectif
 
