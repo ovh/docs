@@ -73,6 +73,8 @@ Cette option permet, après la saisie du domaine redirigé, d'afficher le domain
 
 - **Exemple** : si vous redirigez `domain1.tld` vers `domain2.tld`, c'est `domain2.tld` qui s'affichera dans la barre d'adresses dans votre navigateur.
 
+![Gif1](images/redirect1.gif){.thumbnail}
+
 > Cette redirection « standard » retournera un code HTTP 301.
 
 > [!success]
@@ -136,6 +138,10 @@ Comme pour l'option 1, cette option permet d'afficher, après la saisie du domai
 Toutefois, celle-ci est à utiliser ponctuellement, par exemple pour des événements éphémères.<br>
 En effet, le positionnement sur les moteurs de recherche est moins performant qu'avec une redirection **visible permanente** de type 301 (code HTTP).
 
+- **Exemple** : si vous redirigez `domain1.tld` vers `domain2.tld`, c'est `domain2.tld` qui s'affichera dans la barre d'adresses dans votre navigateur.
+
+![Gif1](images/redirect1.gif){.thumbnail}
+
 > Cette redirection retournera un code HTTP 302.
 
 > [!success]
@@ -198,6 +204,8 @@ Cette redirection permet, après la saisie du domaine redirigé, de le laisser a
 **Attention, cette action n'est pas compatible avec tous les sites et affecte le référencement de votre site.**.
 
 - **Exemple** : si vous redirigez `domain1.tld` vers `domain2.tld`, c'est `domain1.tld` qui s'affichera dans la barre d'adresses dans votre navigateur.
+
+![Gif2](images/redirect2.gif){.thumbnail}
 
 La redirection invisible fonctionne avec une balise HTML *iFrame*. Celle-ci permet à votre domaine redirigé d'intégrer dans sa propre page HTML le contenu de l'autre page correspondant au domaine cible.
 
