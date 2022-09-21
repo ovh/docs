@@ -248,7 +248,7 @@ Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser
 >> ![Étape 4](images/Step4Invi.png){.thumbnail}
 >>
 >> Trois paramètres optionnels sont mis à votre disposition à cette étape :
->
+>>
 >> - **Titre** : celui de votre site internet. Il s'affichera en tant que titre de page dans l'onglet des navigateurs internet.<br>
 >> - **Mots clés** : ils peuvent être utilisés par les moteurs de recherche pour référencer partiellement la page.<br>
 >> - **Description** : concerne votre site internet. Elle sera utilisée par les moteurs de recherche dans leurs résultats.
