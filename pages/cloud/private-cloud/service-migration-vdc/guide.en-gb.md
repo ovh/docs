@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Last updated 29th August 2022**
+**Last updated 20th september 2022**
 
 **This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC) to a new destination vDC (Essentials or Premier).**
 
@@ -115,6 +115,8 @@ Here are a few guidelines:
 - If you don't have NSX on your current infrastructure and you don't have need for certifications => you can choose between [Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/) and [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/). As a general rule of thumbs, Essentials hosts have a better cost/core ratio while Premier ones optimize cost/RAM ratio. You can compare [Essentials hosts](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) and [Premier hosts](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/)
 - Veeam Managed Backup and Zerto Disaster Recovery options are available on both Essentials and Premier
 - If your current infrastructure is in AMD-2013, you will not be able to migrate to Premier.
+
+Please be reminded that you do not create a new service, you will need to order your resources individually. Creating a new vDC will not deliver 2 hosts and 2 datastores.
 
 ![decision tree](images/ESSorPRE.png){.thumbnail}
 
@@ -593,7 +595,7 @@ Here is how to proceed:
 
 4\. Repeat steps 2 and 3 for all VMs that have backups enabled and have been migrated to the new vDC.
 
-Then, you need to disable Veeam Backup on the old vDC. It can be made with the following API call:
+Before you continue, you can check visually, in the graphic Backup Management plug-in on the new vDC, that the backup jobs are present and active. You can then disable Veeam Backup on the old vDC. You can do this via the following API call:
 
 > [!api]
 >
