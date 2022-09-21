@@ -3,10 +3,10 @@ title: 'Añadir un registro MX a la configuración del dominio'
 slug: anadir-registro-mx-configuracion-dominio
 excerpt: 'Cómo añadir un registro MX a la configuración de un dominio en OVHcloud'
 section: 'DNS (servidor y zona)'
-order: 3
+order: 03
 ---
 
-**Última actualización: 05/05/2020**
+**Última actualización: 21/09/2022**
 
 ## Objetivo
 
@@ -61,7 +61,9 @@ La tabla mostrará la configuración del dominio en OVHcloud. Cada línea corres
 
 Si los registros MX ya existen y quiere sustituirlos, haga clic en el icono con forma de rueda dentada situado al final de la línea y seleccione  `Eliminar el registro`{.action}. No obstante, asegúrese de que siempre haya algún registro MX. Para ello, le recomendamos que vaya creando los nuevos registros MX deseados a medida que elimine los anteriores.
 
-Para crear un nuevo registro MX, haga clic en el botón `Añadir un registro`{.action} y seleccione `MX`{.action}. Complete la información solicitada (en función de la solución de correo de que disponga):
+Para comprobar más rápidamente si ya existen registros MX, seleccione, utilizando el filtro situado sobre la tabla DNS, el campo de tipo **MX** y acepte para mostrar únicamente los registros DNS MX de su zona DNS.
+
+Para crear un nuevo registro MX, haga clic en el botón `Añadir un registro`{.action} a la derecha de la tabla y seleccione `MX`{.action}. Complete la información solicitada (en función de la solución de correo de que disponga):
 
 - **Si tiene contratada una solución de correo de OVHcloud**, consulte la información del paso [2. Conocer la configuración MX de OVHcloud](../anadir-registro-mx-configuracion-dominio/#2-conocer-la-configuracion-mx-de-ovhcloud){.external}.
 
