@@ -339,8 +339,6 @@ ovhai app run \
 > `--cpu 12` indicates that we request 12 CPUs for that app.
 >
 
-If you want your app to be accessible without the need to authenticate, specify it as follows.
-
 > [!primary]
 >
 > Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication.
