@@ -32,9 +32,9 @@ Nous allons interconnecter deux clusters Nutanix sur deux sites distants l'un à
 
 ### Préparation des deux clusters avant l'interconnexion
 
-Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des adresses IP différentes (sauf pour la passerelle) sur une même plage d'adresse IP. Dans notre guide nous allons utiliser cette plage d'adresse `192.168.0.0/22`
+Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des adresses IP différentes (sauf pour la passerelle) sur une même plage d'adresses IP. Dans notre guide nous allons utiliser cette plage d'adresse `192.168.0.0/22`
 
- **Cluster1** à Gravelines :
+ le **Cluster1** à Gravelines utilise ces adresses:
 
 - Serveur 1 : adresse VM **CVM** `192.168.2.1`, adresse IP hyperviseur **AHV** `192.168.2.21`.
 - Serveur 2 : adresse VM **CVM** `192.168.2.2`, adresse IP hyperviseur **AHV** `192.168.2.22`.
@@ -42,6 +42,7 @@ Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des 
 - Adresse virtuelle de **Prism Element** : `192.168.2.100`.
 - Adresse IP  **Prism Central** :`192.168.2.101`.
 - Passerelle : `192.168.2.254`.
+- LoadBalancer : 
 - Version du cluster : `6.1`.
 
 **Cluster2** à Roubaix :
@@ -66,15 +67,17 @@ Allez dans la gestion des machines virtuelles sélectionnez `OVHgateway` au trav
 
 ![01 OVHgateway Shutdown 01](images/01-ovhgateway-shutdown01.png){.thumbnail}
 
-Les éléments du cluster ne pourront plus se connecter à Internet en sortie jusqu'a que la configuration des vRack aura été faite. L'accès à Prism Central est maintenu à l'aide du **Load-Balancer**.
+Les éléments du cluster ne pourront plus se connecter à Internet en sortie jusqu'a que la configuration des **vRack** soit faite. L'accès à Prism Central est maintenu à l'aide du **Load-Balancer**.
 
-### Modification de la configuration des vRack.
+#### Paramétrage des **vRack**
 
-Cette opération consiste à supprimer l'affectation du vRack du deuxième site et ensuite d'étendre le vRack du premier site au deuxième site. Les modifications du **vRack** se font au travers de l'espace client OVHcloud. 
+Cette opération consiste à supprimer l'affectation du **vRack** du deuxième site et ensuite d'étendre le **vRack** de Gravelines vers Roubaix. Les modifications du **vRack** se font au travers de l'espace client OVHcloud. 
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). 
 
-A partir du menu `Hosted Private Cloud`{.action} choisissez le cluster du deuxième site à gauche dans la catégorie `Nutanix` et notez le nom du **vRack** qui se trouve en dessous de **Réseau privé(vRack)**.
+#### Suppression des éléments du **vRack** de Roubaix.
+
+A partir du menu `Hosted Private Cloud`{.action} choisissez le cluster de Roubaix à gauche dans la catégorie `Nutanix` et notez le nom du **vRack** qui se trouve en dessous de **Réseau privé(vRack)**.
 
 ![02 Remove services from vrack 01](images/02-remove-services-fromvrack01.png){.thumbnail}
 
@@ -91,22 +94,22 @@ Sélectionnez tous les éléments qui se trouvent dans **Votre vRack** :
 
 > [!warning]
 > 
-> Cette opération peux durer quelques minutes, veuillez patentez pendant cette période.
+> Cette opération peut durer quelques minutes, veuillez patentez pendant cette période.
 > 
 
 ![02 Remove services from vrack 03](images/02-remove-services-fromvrack03.png){.thumbnail}
 
-### Extension du **vRack** du premier site
+#### Ajout des éléments supprimées du **vRack** de Roubaix vers le **vRack** de Gravelines
 
-Revenez dans le menu `Hosted Private Cloud`{.action} choisissez le cluster du premier site dans la catégorie `Nutanix` et notez le nom du **vRack** en dessous de **Réseau privé(vRack)**.
+Revenez dans le menu `Hosted Private Cloud`{.action} choisissez le cluster de Gravelines dans la catégorie `Nutanix` et notez le nom du **vRack** en dessous de **Réseau privé(vRack)**.
 
 ![03 Add to vrack 01](images/03-addtovrack01.png){.thumbnail}
 
-Allez dans le menu `Bare Metal Cloud` sélectionnez le `vRack`{.action} en dessous de l'option **vRack** dans **Network**.
+Allez dans le menu `Bare Metal Cloud` sélectionnez le `vRack`{.action} de Gravelines en dessous de l'option **vRack** dans **Network**.
 
 ![03 Add to vrack 02](images/03-addtovrack02.png){.thumbnail}
 
-Sélectionnez ces éléments du cluster du deuxième site : 
+Sélectionnez ces éléments du cluster de Roubaix : 
 
 - `Les serveurs physiques`. 
 - `l'IP publique`.
@@ -115,7 +118,7 @@ Ensuite cliquez sur `Ajouter`{.action}
 
 > [!Warning]
 > 
-> Cette opération peux durer quelques minutes , veuillez patienter pendant cette période. 
+> Cette opération peut durer quelques minutes, veuillez patienter pendant cette période. 
 > 
 
 > [!primary]
@@ -133,11 +136,11 @@ Le **vRack** qui était à l'origine uniquement utilisé par les serveurs du clu
 
 L'accès Internet sur le site de Roubaix en sortie est à nouveau disponible au travers du **vRack**.
 
-### Changement des informations concernant le load balancer
+### Modification du load balancer de Roubaix
 
-Nous allons reconfigurer le **Load Balancer** du second site pour qu'il fonctionne avec le **vRack** commun aux deux sites pour pouvoir accéder à **Prism Central** du cluster du deuxième site.
+Nous allons reconfigurer le **Load Balancer** de Roubaix pour qu'il fonctionne avec le **vRack** commun aux deux sites pour pouvoir accéder à **Prism Central** du cluster de Roubaix.
 
-Toujours dans le menu `Bare Metal Cloud` sélectionnez le `Load Balancer du second site`{.action} en dessous de l'option **Load Balancer**.
+Toujours dans le menu `Bare Metal Cloud` sélectionnez le `Load Balancer`{.action} de Roubaix en dessous de l'option **Load Balancer**.
 
 Positionnez-vous sur `Réseaux privés`{.action}, cliquez sur le bouton `...`{.action} à droite du **réseau privé** existant.
 
@@ -167,8 +170,8 @@ Choisissez ces valeurs :
 
 - **Nom (facultatif)** : `Nom du réseau privé`.
 - **VLAN ID** : `VLAN du réseau d'administration de Nutanix normalement le 1`.
-- **Subnet** : `Sous réseau du réseau privé`.
-- **NatIP** :  `Plage d'adresses utilisé par le Load Balancer`.
+- **Subnet** : `Sous réseau du réseau privé 192.168.0.0/22`.
+- **NatIP** :  `Plage d'adresses utilisé par le Load Balancer 192.168.2.128/27`.
 - **Nom** : `NutaCluster-all`.
 
 > [!Warning]
@@ -181,7 +184,7 @@ Ensuite cliquez sur `Ajouter`{.action}
 
 ![04 Modify Load Balancer 07](images/04-modify-loadbalancer07.png){.thumbnail}
 
-Le load balancer est relié au **vRack** commun aux deux sites et l'accès à **Prism Central** du deuxième site est à nouveau disponible.
+Le load balancer est relié au **vRack** commun aux deux sites et l'accès à **Prism Central** de Roubaix est à nouveau disponible.
 
 ![04 Modify Load Balancer 08](images/04-modify-loadbalancer08.png){.thumbnail}
 
