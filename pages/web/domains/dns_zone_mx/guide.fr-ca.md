@@ -3,10 +3,10 @@ title: Ajouter un champ MX à la configuration de son nom de domaine
 slug: mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh
 excerpt: Apprenez à ajouter un champ MX à votre nom de domaine chez OVHcloud
 section: DNS et zone DNS
-order: 4
+order: 04
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 21/09/2022**
 
 ## Objectif
 
@@ -61,7 +61,9 @@ Le tableau affiche la configuration OVHcloud de votre nom de domaine. Chaque lig
 
 Si des champs MX existent déjà et que vous souhaitez les remplacer, cliquez sur le pictogramme en forme de roue dentée à droite de chaque ligne du tableau concernée, puis cliquez sur `Supprimer l'entrée`{.action}. Assurez-vous néanmoins de ne pas laisser votre nom de domaine sans aucun enregistrement MX lorsque vous ajoutez les entrées MX souhaitées.
 
-Pour cela, cliquez sur le bouton `Ajouter une entrée`{.action}, puis choisissez `MX`{.action}. Remplissez les informations demandées en fonction de la solution e-mail choisie :
+Pour vérifier plus rapidement si des champs MX existent déjà, sélectionnez, à l'aide du filtre situé au dessus du tableau DNS, le champ de type **MX** puis validez pour n'afficher que les entrées DNS MX de votre zone DNS.
+
+Cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau, puis choisissez `MX`{.action}. Remplissez les informations demandées en fonction de la solution e-mail choisie :
 
 - **si vous disposez d'une solution e-mail OVHcloud** : reportez-vous aux informations données à l'[étape 2 : « connaître la configuration MX OVHcloud »](./#etape-2-connaitre-la-configuration-mx-dovh){.external} ;
 
@@ -80,4 +82,8 @@ Une fois les informations complétées, finalisez les étapes, puis cliquez sur 
 
 [Éditer une zone DNS OVHcloud](../editer-ma-zone-dns/){.external}
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

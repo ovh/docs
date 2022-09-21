@@ -4,10 +4,10 @@ excerpt: 'Hier erfahren Sie, wie Sie bei OVHcloud einen MX-Eintrag zur Konfigura
 slug: webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh
 legacy_guide_number: g2012
 section: 'DNS und DNS-Zone'
-order: 4
+order: 04
 ---
 
-**Stand 05.12.2018**
+**Stand 21.09.2022**
 
 ## Einleitung
 
@@ -62,7 +62,9 @@ In der Tabelle wird die OVHcloud Konfiguration Ihrer Domain angezeigt. Jede Zeil
 
 Wenn bereits MX-Einträge vorhanden sind und Sie diese ersetzen möchten, klicken Sie rechts am Ende jeder betreffenden Zeile auf das Zahnrad-Symbol und wählen Sie dann `Eintrag löschen`{.action} aus. Achten Sie jedoch darauf, dass für Ihre Domain immer ein MX-Eintrag bestehen bleibt, während Sie neue MX-Einträge hinzufügen.
 
-Um Einträge hinzuzufügen, klicken Sie auf `Eintrag hinzufügen`{.action} und wählen Sie dann `MX`{.action} aus. Tragen Sie die angeforderten Informationen für die ausgewählte E-Mail-Lösung ein:
+Um zu überprüfen, ob bereits MX-Einträge vorhanden sind, wählen Sie mithilfe des Filters oberhalb der DNS-Tabelle den Typ-Eintrag **MX** aus und bestätigen Sie anschließend, um nur die MX-DNS-Einträge Ihrer DNS-Zone anzuzeigen.
+
+Um Einträge hinzuzufügen, klicken Sie rechts auf `Eintrag hinzufügen`{.action} und wählen Sie dann `MX`{.action} aus. Tragen Sie die angeforderten Informationen für die ausgewählte E-Mail-Lösung ein:
 
 - **OVHcloud E-Mail-Lösung**: Lesen Sie in dieser Anleitung „[Schritt 2: OVHcloud MX-Konfiguration kennenlernen](https://docs.ovh.com/de/domains/webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/#schritt-2-ovh-mx-konfiguration-kennenlernen){.external}“.
 
@@ -81,4 +83,8 @@ Wenn Sie alle Informationen eingegeben haben, folgen Sie den nächsten Schritten
 
 [Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

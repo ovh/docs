@@ -1,7 +1,7 @@
 ---
 title: 'Cambiar la versión de PHP de un alojamiento web'
 slug: cambiar-version-php-en-alojamiento-web
-excerpt: 'Cómo cambiar la versión de PHP de un alojamiento web de OVH'
+excerpt: 'Cómo cambiar la versión de PHP de un alojamiento web de OVHcloud'
 section: PHP
 order: 1
 ---
@@ -33,13 +33,13 @@ OVHcloud se encarga de instalar las últimas versiones de PHP en sus servidores.
 
 - Consulte la documentación oficial del CMS. 
 - Compruebe los requisitos técnicos imprescindibles para que funcione el CMS, así como las operaciones necesarias para actualizarlo.
-- Si necesita actualizar su CMS, asegúrese de que la nueva versión es compatible con su alojamiento web de OVH.
+- Si necesita actualizar su CMS, asegúrese de que la nueva versión es compatible con su alojamiento web de OVHcloud.
 
 **Si el sitio web está basado en una solución personalizada:** 
 
 - Contacte con el desarrollador que haya creado el sitio web.
 - Si desea más información sobre las actualizaciones de versión, consulte la documentación oficial de PHP en el siguiente enlace: <http://php.net/manual/en/appendices.php>.
-- Si necesita actualizar el código del sitio web, asegúrese de que la nueva versión es compatible con su alojamiento web de OVH.
+- Si necesita actualizar el código del sitio web, asegúrese de que la nueva versión es compatible con su alojamiento web de OVHcloud.
 
 Puede consultar la versión de PHP que utiliza su alojamiento web de dos formas distintas: 
 
