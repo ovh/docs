@@ -98,11 +98,11 @@ Notez les de ces services dans **Your vRack**.
 
 Revenez dans le menu Hosted `Private Cloud`{.action} choisissez le cluster du premier site dans la barre à gauche en dessous de `Nutanix` et notez le nom du vRack en dessous de **Private network vRack**.
 
-![03 Add to vrack 01](images/02-addtovrack01.png){.thumbnail}
+![03 Add to vrack 01](images/03-addtovrack01.png){.thumbnail}
 
 Allez dans le menu `Bare Metal Cloud` sélectionnez le `le vRack`{.action} en dessous de l'option **vRack** dans **Network**.
 
-![03 Add to vrack 02](images/02-addtovrack02.png){.thumbnail}
+![03 Add to vrack 02](images/03-addtovrack02.png){.thumbnail}
 
 Sélectionnez `Les serveurs physiques` et `l'étendue d'adresses publique` du cluster du deuxième site et cliquez sur `Add`{.action}.
 
@@ -116,7 +116,7 @@ Sélectionnez `Les serveurs physiques` et `l'étendue d'adresses publique` du cl
 > L'ajout de l'étendue **D'adresses publique** n'est pas obligatoire mais peux vous servir. 
 > 
 
-![03 Add to vrack 03](images/02-addtovrack03.png){.thumbnail}
+![03 Add to vrack 03](images/03-addtovrack03.png){.thumbnail}
 
 Le **vRack** du premier site contient :
 
@@ -132,27 +132,27 @@ Toujours dans le menu `Bare Metal Cloud` sélectionnez le `Load Balancer du seco
 
 Positionnez vous sur `Private networks`{.action}, cliquez sur le bouton `...`{.action} à droite du **private network** existant.
 
-![04 Modify Load Balancer 01](images/04-modifyloadbalancer01.png){.thumbnail}
+![04 Modify Load Balancer 01](images/04-modify-loadbalancer01.png){.thumbnail}
 
 Cliquez sur `Delete`{.action}.
 
-![04 Modify Load Balancer 02](images/04-modifyloadbalancer02.png){.thumbnail}
+![04 Modify Load Balancer 02](images/04-modify-loadbalancer02.png){.thumbnail}
 
 Répondez `Delete`{.action} à la demande de confirmation.
 
-![04 Modify Load Balancer 03](images/04-modifyloadbalancer03.png){.thumbnail}
+![04 Modify Load Balancer 03](images/04-modify-loadbalancer03.png){.thumbnail}
 
 Cliquez sur à `Enable`{.action} à droite de **vRack**
 
-![04 Modify Load Balancer 04](images/04-modifyloadbalancer04.png){.thumbnail}
+![04 Modify Load Balancer 04](images/04-modify-loadbalancer04.png){.thumbnail}
 
 Choisissez `Existing` séléctionnez le vRack du premier site et cliquez sur `Enable`{.action}
 
-![04 Modify Load Balancer 05](images/04-modifyloadbalancer05.png){.thumbnail}
+![04 Modify Load Balancer 05](images/04-modify-loadbalancer05.png){.thumbnail}
 
 Cliquez sur `Add private network`{.action}
 
-![04 Modify Load Balancer 06](images/04-modifyloadbalancer06.png){.thumbnail}
+![04 Modify Load Balancer 06](images/04-modify-loadbalancer06.png){.thumbnail}
 
 Choisissez ces valeurs :
 
@@ -164,7 +164,7 @@ Choisissez ces valeurs :
 
 Ensuite cliquez sur `Add`{.action}
 
-![04 Modify Load Balancer 06](images/04-modifyloadbalancer07.png){.thumbnail}
+![04 Modify Load Balancer 06](images/04-modify-loadbalancer07.png){.thumbnail}
 
 Le load balancer est relié au **vRack** du premier site et l'accès à **Prism Central** du deuxième site est disponible.
 
