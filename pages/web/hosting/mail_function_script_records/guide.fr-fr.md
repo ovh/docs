@@ -95,6 +95,8 @@ Si vous recevez correctement le message *The email has been sent successfully!* 
 
 - **Assurez-vous que vos envois n'utilisent pas de serveur SMTP** : ne spécifiez pas de serveur SMTP dans les paramètres de vos scripts lorsque vous utilisez la fonction "mail()" de PHP. Si vous disposez d'une interface pour administrer les envois d'e-mails depuis votre site web, modifiez ce paramètre dans la configuration de ce dernier.
 
+- **Vérifiez que la taille totale de votre mail** : Le mail evoyé ne doit pas dépasser la taille totale de **10 Mo** (encapsulation et en-tête inclus). Le contenu même de votre mail ne devra donc pas excéder les **7/8 Mo**.
+
 ### Gérer les états "Désactivé", "Bounce" et "SPAM"
 
 #### **L'état "Désactivé"**
@@ -189,7 +191,7 @@ Notre service anti-spam analysera la situation et notre support reviendra vers v
 > Nous mettons à votre disposition la partie qui va suivre afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
-Même si nous vous recommandons vivement de privilégier l'utilisation de la fonction "mail()" de PHP, les hébergements mutualisés permettent d'envoyer des mails en passant par un script utilisant le protocole SMTP (Simple Mail Transfer Protocol).
+Même si nous vous recommandons vivement de privilégier l'utilisation de la fonction "mail()" de PHP, les hébergements mutualisés permettent d'envoyer des mails en passant par un script utilisant le protocole SMTP (Simple Mail Transfer Protocol). La taille totale de vos mails ne pourra pas dépasser les **10 Mo** (soit **7/8 Mo hors encapsulation**).
 
 > [!warning]
 > 
