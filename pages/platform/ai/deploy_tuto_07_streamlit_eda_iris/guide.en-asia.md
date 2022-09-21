@@ -43,9 +43,9 @@ In order to do this, you will use [Streamlit](https://streamlit.io/), a Python f
 You are going to follow different steps to build your Streamlit application.
 
 - More information about Streamlit capabilities can be found [here](https://docs.streamlit.io/en/stable/).
-- Direct link to the full Python file can be found here [here](https://github.com/ovh/ai-training-examples/blob/eda-iris/apps/streamlit/eda-classification-iris/app.py).
+- Direct link to the full Python file can be found here [here](https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/eda-classification-iris/app.py).
 
-Here we will mainly discuss how to write the `utils.py` and `app.py` codes, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/eda-iris/apps/streamlit/eda-classification-iris).
+Here we will mainly discuss how to write the `utils.py` and `app.py` codes, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/eda-classification-iris).
 
 ### Create the Streamlit application
 
@@ -53,7 +53,7 @@ Two Python files are created for the purpose of loading the PyTorch model and bu
 
 #### Define the utils.py file
 
-This Python file is dedicated to load the **PyTorch model**. You can find the full code [here](https://github.com/ovh/ai-training-examples/blob/eda-iris/apps/streamlit/eda-classification-iris/utils.py).
+This Python file is dedicated to load the **PyTorch model**. You can find the full code [here](https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/eda-classification-iris/utils.py).
 
 First, we have to define the `Model` class with neural network architecture.
 
@@ -98,7 +98,7 @@ The last function allows us to load the model and get predictions.
 
 > [!primary]
 >
-> You can find the PyTorch model `model_iris_classification.pth` on the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/eda-iris/apps/streamlit/eda-classification-iris).
+> You can find the PyTorch model `model_iris_classification.pth` on the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/eda-classification-iris).
 >
 
 ```python
@@ -208,7 +208,7 @@ def display_img(species):
 > [!primary]
 >
 > All the functions defined above are called in the `main` Python file `app.py` to build the Streamlit app.
-> You can find this part of the code as well as the different functions defined previously on the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/eda-iris/apps/streamlit/eda-classification-iris/app.py).
+> You can find this part of the code as well as the different functions defined previously on the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/eda-classification-iris/app.py).
 >
 
 ### Write the requirements.txt file for the application
