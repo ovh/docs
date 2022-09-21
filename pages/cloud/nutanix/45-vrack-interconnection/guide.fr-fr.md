@@ -6,11 +6,11 @@ section: Plan de reprise d'activité
 order: 03
 ---
 
-**Dernière mise à jour le 19/09/2022**
+**Dernière mise à jour le 21/09/2022**
 
 ## Objectif
 
-Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un même vRack sur deux sites OVHcloud distants avec une latence de moins de 5ms. Le guide montre l'interconnexion entre les datacenters de Gravelines et celui de Roubaix. 
+**Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un même vRack sur deux sites OVHcloud distants. Dans ce l'interconnexion sera faites entre les datacenters de Gravelines et ceux de Roubaix.** 
 
 
 > [!warning]
@@ -60,21 +60,15 @@ Aidez-vous de ce guide pour redéployer vos deux clusters [Redéploiment personn
 
 ### Arret d'une des deux passerelles OVHgateway
 
+Connectez-vous à **Prism Central** sur le cluster de Roubaix
+
 la connexion Internet sortante est fournie par les machines virtuelles OVHGateway avec la même adresse IP sur les deux sites nous allons arrêter la machine virtuelle du **Cluster2** à Roubaix.
 
-Au travers de **Prism Central** dans la gestion des machines virtuelles sélectionnez `OVHgateway`, ensuite choisissez `GUest Shutdown`{.action} dans le menu `Actions`{.action}.
+Au travers de **Prism Central** dans la gestion des machines virtuelles sélectionnez `OVHgateway`, ensuite choisissez `Guest Shutdown`{.action} dans le menu `Actions`{.action}.
 
-![01 OVHgateway Shutdown](images/01-ovhgateway-shutdown01.png){.thumbnail}
+![01 OVHgateway Shutdown 01](images/01-ovhgateway-shutdown01.png){.thumbnail}
 
-
-
-
-
-
-
-
-
-Connectez vous au serveur Prism Central de Roubaix au travers de l'URL https://clustername.nutanix.ovhcloud.net:9440 et 
+Les éléments du cluster ne pourront plus se connecter à Internet en sortie jusqu'a que la configuration des vRack aura été faite. L'accès à Prism Central est maintenu grace au **Load-Balancer**.
 
 ### Modification de la configuration des vRack
 
@@ -82,21 +76,102 @@ Cette opération consiste à supprimer l'affectation du vRack du deuxième site 
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). 
 
-Allez sur le 
+A partir du menu `Hosted Private Cloud`{.action} choisissez le cluster du deuxième site dans la barre à gauche en dessous de `Nutanix` et notez le nom du vRack en dessous de **Private network vRack**.
 
+![02Remove services from vrack 01 ](images/02-remove-services-fromvrack01.png){.thumbnail}
 
+ALlez dans le menu `Bare Metal Cloud` sélectionnez cliquez sur `le vRack`{.action} en dessous de l'option **vRack** dans **Network**.
 
+![02 Remove services from vrack 02](images/02-remove-services-fromvrack02.png){.thumbnail}
 
+Notez les de ces services dans **Your vRack**.
+ - `Les serveurs physiques`.
+ - `l'étendue d'adresses publique`.
+ - `Le Load Balancer`.
 
+ Seléctionnez `tous les service`{.action} de votre **vRack** et cliquez sur le bouton `Remove`{.action} au milieu pour les sortir du **vRack**. 
+
+> [!warning]
+> 
+> Cette opération peux durer quelques minutes , veuillez patentez pendant cette période.
+> 
+
+Revenez dans le menu Hosted `Private Cloud`{.action} choisissez le cluster du premier site dans la barre à gauche en dessous de `Nutanix` et notez le nom du vRack en dessous de **Private network vRack**.
+
+![03 Add to vrack 01](images/02-addtovrack01.png){.thumbnail}
+
+Allez dans le menu `Bare Metal Cloud` sélectionnez le `le vRack`{.action} en dessous de l'option **vRack** dans **Network**.
+
+![03 Add to vrack 02](images/02-addtovrack02.png){.thumbnail}
+
+Sélectionnez `Les serveurs physiques` et `l'étendue d'adresses publique` du cluster du deuxième site et cliquez sur `Add`{.action}.
+
+> [!Warning]
+> 
+> Cette opération peux durer quelques minutes , veuillez patentez pendant cette période. 
+> 
+
+> [!primary]
+> 
+> L'ajout de l'étendue **D'adresses publique** n'est pas obligatoire mais peux vous servir. 
+> 
+
+![03 Add to vrack 03](images/02-addtovrack03.png){.thumbnail}
+
+Le **vRack** du premier site contient :
+
+- Les serveurs physiques des deux clusters
+- Les adresses IP publiques des deux clusters
+- Le load balancer du premier site configuré sur Prism Central du Premier site
 
 ### Changement des informations concernant le load balancer
 
+Nous allons reconfigurer le **Load Balancer** du second site pour qu'il fonctionne avec le **vRack du premier site.
 
+Toujours dans le menu `Bare Metal Cloud` sélectionnez le `Load Balancer du second site`{.action} en dessous de l'option **Load Balancer**.
 
+Positionnez vous sur `Private networks`{.action}, cliquez sur le bouton `...`{.action} à droite du **private network** existant.
 
+![04 Modify Load Balancer 01](images/04-modifyloadbalancer01.png){.thumbnail}
 
+Cliquez sur `Delete`{.action}.
 
+![04 Modify Load Balancer 02](images/04-modifyloadbalancer02.png){.thumbnail}
+
+Répondez `Delete`{.action} à la demande de confirmation.
+
+![04 Modify Load Balancer 03](images/04-modifyloadbalancer03.png){.thumbnail}
+
+Cliquez sur à `Enable`{.action} à droite de **vRack**
+
+![04 Modify Load Balancer 04](images/04-modifyloadbalancer04.png){.thumbnail}
+
+Choisissez `Existing` séléctionnez le vRack du premier site et cliquez sur `Enable`{.action}
+
+![04 Modify Load Balancer 05](images/04-modifyloadbalancer05.png){.thumbnail}
+
+Cliquez sur `Add private network`{.action}
+
+![04 Modify Load Balancer 06](images/04-modifyloadbalancer06.png){.thumbnail}
+
+Choisissez ces valeurs :
+
+- **Name (optional)** : `Nom du réseau privé`.
+- **VLAN ID** : `VLAN du réseau d'administration de Nutanix normalement le 1`.
+- **Subnet** : `Sous réseau du réseau privé`.
+- **NatIP** :  `Plage d'adresses utilisé par le Load Balancer`.
+- **Name** : `Nom proposé`.
+
+Ensuite cliquez sur `Add`{.action}
+
+![04 Modify Load Balancer 06](images/04-modifyloadbalancer07.png){.thumbnail}
+
+Le load balancer est relié au **vRack** du premier site et l'accès à **Prism Central** du deuxième site est disponible.
 
 ## Aller plus loin
+
+[Réplication asynchrone ou NearSync au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
+
+[Réplication avancée avec Leap](https://docs.ovh.com/fr/nutanix/leap-replication/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
