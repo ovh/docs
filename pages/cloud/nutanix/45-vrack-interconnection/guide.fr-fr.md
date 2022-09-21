@@ -1,7 +1,7 @@
 ---
 title: Interconnexion de clusters au travers de vRACK
 slug: nutanix-vrack-interconnection
-excerpt: "Mise en place d'une interconnexion de deux clusters au travers d'un vRACK d'OVHCLOUD"
+excerpt: "Mise en place d'une interconnexion de deux clusters au travers d'un vRACK d'OVHcloud"
 section: Plan de reprise d'activité
 order: 03
 ---
@@ -10,7 +10,7 @@ order: 03
 
 ## Objectif
 
-**Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un même vRack sur deux sites OVHcloud distants. Dans ce l'interconnexion sera faites entre les datacenters de Gravelines et ceux de Roubaix.** 
+**Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un même vRack sur deux sites OVHcloud distants. Dans ce guide l'interconnexion sera faites entre les datacenters de Gravelines et de Roubaix.** 
 
 
 > [!warning]
@@ -21,7 +21,7 @@ order: 03
 
 ## Prérequis
 
-- Disposer de deux clusters Nutanix fournis par OVHcloud, sur des sites différents avec une latence inférieure à 5 millisecondes.
+
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via Prism Central.
 
@@ -32,7 +32,7 @@ Nous allons interconnecter deux clusters Nutanix sur deux sites distants l'un à
 
 ### Préparation des deux clusters avant l'interconnexion
 
-Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des adresses IP différentes (sauf pour la passerelle) sur une même plage d'adresse IP. Dans notre guide nous allons utiliser le cette plage d'adresse `192.168.0.0/22`
+Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des adresses IP différentes (sauf pour la passerelle) sur une même plage d'adresse IP. Dans notre guide nous allons utiliser cette plage d'adresse `192.168.0.0/22`
 
  **Cluster1** à Gravelines :
 
@@ -58,7 +58,7 @@ Aidez-vous de ce guide pour redéployer vos deux clusters [Redéploiement person
 
 ### Arrêt de la machine virtuelle **OVHgateway**.
 
-La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP sur les deux sites nous allons arrêter la machine virtuelle du **Cluster2** à Roubaix. La connexion Internet Sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
+La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP privé sur les deux sites nous allons arrêter la machine virtuelle du **Cluster2** à Roubaix. La connexion Internet Sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
 
 Connectez-vous à l'interface **Prism Central** du cluster situé à Roubaix. 
 
@@ -82,7 +82,7 @@ Allez dans le menu `Bare Metal Cloud` cliquez sur `le vRack`{.action} en dessous
 
 ![02 Remove services from vrack 02](images/02-remove-services-fromvrack02.png){.thumbnail}
 
-Sélectionnez tous les éléments qui se trouvent dans **Votre vRack**.
+Sélectionnez tous les éléments qui se trouvent dans **Votre vRack** :
  - `Les serveurs dédiés`.
  - `les IP`.
  - `le Load Balancer`.
@@ -129,13 +129,13 @@ Le **vRack** qui était à l'origine uniquement utilisé par les serveurs du clu
 
 - Les serveurs physiques des deux clusters.
 - Les adresses IP publiques des deux clusters.
-- Le load balancer de Gravelines utilisé pour **Prism Central** du cluster de Gravelines.
+- Le load balancer de Gravelines qui sert pour **Prism Central**.
 
-L'accès Internet en sortie est à nouveau disponible au travers du **vRack**.
+L'accès Internet sur le site de Roubaix en sortie est à nouveau disponible au travers du **vRack**.
 
 ### Changement des informations concernant le load balancer
 
-Nous allons reconfigurer le **Load Balancer** du second site pour qu'il fonctionne avec le **vRack** commun aux deux sites pour pouvoir accéder à **Prism Central** du deuxième site.
+Nous allons reconfigurer le **Load Balancer** du second site pour qu'il fonctionne avec le **vRack** commun aux deux sites pour pouvoir accéder à **Prism Central** du cluster du deuxième site.
 
 Toujours dans le menu `Bare Metal Cloud` sélectionnez le `Load Balancer du second site`{.action} en dessous de l'option **Load Balancer**.
 
@@ -155,7 +155,7 @@ Cliquez sur `Activer`{.action} à droite de **vRack**.
 
 ![04 Modify Load Balancer 04](images/04-modify-loadbalancer04.png){.thumbnail}
 
-Choisissez `Existant` sélectionnez le **vRack** du premier site et cliquez sur `Activer`{.action}.
+Choisissez `Existant` sélectionnez le **vRack** commun aux deux sites et cliquez sur `Activer`{.action}.
 
 ![04 Modify Load Balancer 05](images/04-modify-loadbalancer05.png){.thumbnail}
 
@@ -171,6 +171,12 @@ Choisissez ces valeurs :
 - **NatIP** :  `Plage d'adresses utilisé par le Load Balancer`.
 - **Nom** : `NutaCluster-all`.
 
+> [!Warning]
+> 
+> La plage choisie par **NatIp** ne doit pas être utilisée par d'autres éléments du réseau privé. 
+> 
+
+
 Ensuite cliquez sur `Ajouter`{.action}
 
 ![04 Modify Load Balancer 07](images/04-modify-loadbalancer07.png){.thumbnail}
@@ -184,6 +190,8 @@ Le load balancer est relié au **vRack** commun aux deux sites et l'accès à **
 [Réplication asynchrone ou NearSync au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
 
 [Réplication avancée avec Leap](https://docs.ovh.com/fr/nutanix/leap-replication/)
+
+
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
