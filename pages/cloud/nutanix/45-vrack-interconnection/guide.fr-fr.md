@@ -60,7 +60,7 @@ Aidez-vous de ce guide pour redéployer vos deux clusters [Redéploiement person
 
 La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP sur les deux sites nous allons arrêter la machine virtuelle du **Cluster2** à Roubaix. La connexion Internet Sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
 
-Connectez-vous au **Prism Central** de Roubaix. 
+Connectez-vous à l'interface **Prism Central** du cluster situé à Roubaix. 
 
 Allez dans la gestion des machines virtuelles sélectionnez `OVHgateway` au travers du menu `Actions`{.action} et cliquez sur `Guest Shutdown`{.action}.
 
@@ -76,7 +76,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 A partir du menu `Hosted Private Cloud`{.action} choisissez le cluster du deuxième site à gauche dans la catégorie `Nutanix` et notez le nom du **vRack** qui se trouve en dessous de **Réseau privé(vRack)**.
 
-![02Remove services from vrack 01](images/02-remove-services-fromvrack01.png){.thumbnail}
+![02 Remove services from vrack 01](images/02-remove-services-fromvrack01.png){.thumbnail}
 
 Allez dans le menu `Bare Metal Cloud` cliquez sur `le vRack`{.action} en dessous de l'option **vRack** dans la catégorie **Network**.
 
@@ -94,7 +94,7 @@ Sélectionnez tous les éléments qui se trouvent dans **Votre vRack**.
 > Cette opération peux durer quelques minutes, veuillez patentez pendant cette période.
 > 
 
-![02 Remove services from vrack 03](images/03-remove-services-fromvrack03.png){.thumbnail}
+![02 Remove services from vrack 03](images/02-remove-services-fromvrack03.png){.thumbnail}
 
 ### Extension du **vRack** du premier site
 
