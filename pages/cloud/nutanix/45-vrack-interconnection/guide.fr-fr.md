@@ -95,12 +95,12 @@ Sélectionnez tous les éléments qui se trouvent dans **Votre vRack** :
 
 > [!warning]
 > 
-> Cette opération peut durer quelques minutes, veuillez patentez pendant cette période.
+> Cette opération peut durer quelques minutes, veuillez patientez pendant cette période.
 > 
 
 ![02 Remove services from vrack 03](images/02-remove-services-fromvrack03.png){.thumbnail}
 
-#### Ajout des éléments supprimées du **vRack** de Roubaix vers le **vRack** de Gravelines
+#### Ajout des éléments supprimées du **vRack** de Roubaix dans le **vRack** de Gravelines
 
 Revenez dans le menu `Hosted Private Cloud`{.action} choisissez le cluster de Gravelines dans la catégorie `Nutanix` et notez le nom du **vRack** en dessous de **Réseau privé(vRack)**.
 
@@ -135,7 +135,7 @@ Le **vRack** qui était uniquement utilisé par les serveurs du cluster de Grave
 - Les adresses IP publiques des deux clusters.
 - Le load balancer de Gravelines qui sert pour **Prism Central**.
 
-L'accès Internet sur le site de Roubaix en sortie est à nouveau disponible au travers du **vRack** et de l'OVHgateway de Gravelines.
+L'accès Internet sur le site de Roubaix en sortie est à nouveau disponible au travers du **vRack** et de la machine virtuelle **OVHgateway** de Gravelines.
 
 ### Modification du load balancer de Roubaix
 
@@ -171,7 +171,7 @@ Choisissez ces valeurs :
 
 - **Nom (facultatif)** : `Nom du réseau privé`.
 - **VLAN ID** : `VLAN du réseau d'administration de Nutanix normalement le 1`.
-- **Subnet** : `Sous réseau du réseau privé 192.168.0.0/22`.
+- **Subnet** : `LAN du réseau privé 192.168.0.0/22`.
 - **NatIP** :  `Plage d'adresses utilisé par le Load Balancer 192.168.2.128/27`.
 - **Nom** : `NutaCluster-all`.
 
