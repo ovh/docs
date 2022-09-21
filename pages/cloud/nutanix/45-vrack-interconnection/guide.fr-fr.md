@@ -32,7 +32,7 @@ Nous allons interconnecter deux clusters Nutanix sur deux sites distants l'un à
 
 ### Préparation des deux clusters avant l'interconnexion
 
-Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des adresses IP différentes (sauf pour la passerelle) sur une même plage d'adresses IP. Dans notre guide nous allons utiliser cette plage d'adresse `192.168.0.0/22`
+Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des adresses IP différentes (sauf pour la passerelle et le load-balancer) sur une même plage d'adresses IP. Dans notre guide nous allons utiliser cette plage d'adresse `192.168.0.0/22`
 
  le **Cluster1** à Gravelines utilise ces adresses:
 
@@ -53,6 +53,7 @@ Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des 
 - Adresse virtuelle de **Prism Element** : `192.168.1.100`.
 - Adresse IP  **Prism Central** :`192.168.1.101`.
 - Passerelle : `192.168.2.254`.
+- LoadBalancer : `192.168.0.128/27`
 - Version du cluster : `6.1`.
 
 Aidez-vous de ce guide pour redéployer vos deux clusters [Redéploiement personnalisé de votre Cluster](https://docs.ovh.com/fr/nutanix/cluster-custom-redeployment/)
@@ -179,14 +180,21 @@ Choisissez ces valeurs :
 > La plage choisie par **NatIp** ne doit pas être utilisée par d'autres éléments du réseau privé. 
 > 
 
-
 Ensuite cliquez sur `Ajouter`{.action}
 
 ![04 Modify Load Balancer 07](images/04-modify-loadbalancer07.png){.thumbnail}
 
+Un bandeau jaune apparait vous indiquant que la configuration n'est pas appliqué cliquez sur `Appliquer la configuration`{.action}.
+
+![04 Modify Load Balancer 08](images/04-modify-loadbalancer08.png){.thumbnail}
+
+Sélectionnez le `Datacenter Roubaix(RBX)`{.action} et clquez sur `Appliquer la configuration`{.action}.
+
+![04 Modify Load Balancer 09](images/04-modify-loadbalancer09.png){.thumbnail}
+
 Le load balancer est relié au **vRack** commun aux deux sites et l'accès à **Prism Central** de Roubaix est à nouveau disponible.
 
-![04 Modify Load Balancer 11](images/04-modify-loadbalancer11.png){.thumbnail}
+![04 Modify Load Balancer 10](images/04-modify-loadbalancer10.png){.thumbnail}
 
 ## Aller plus loin
 
