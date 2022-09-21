@@ -42,7 +42,7 @@ Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des 
 - Adresse virtuelle de **Prism Element** : `192.168.2.100`.
 - Adresse IP  **Prism Central** :`192.168.2.101`.
 - Passerelle : `192.168.2.254`.
-- LoadBalancer : 
+- LoadBalancer : `192.168.0.128/27`
 - Version du cluster : `6.1`.
 
 **Cluster2** à Roubaix :
@@ -186,7 +186,7 @@ Ensuite cliquez sur `Ajouter`{.action}
 
 Le load balancer est relié au **vRack** commun aux deux sites et l'accès à **Prism Central** de Roubaix est à nouveau disponible.
 
-![04 Modify Load Balancer 08](images/04-modify-loadbalancer08.png){.thumbnail}
+![04 Modify Load Balancer 11](images/04-modify-loadbalancer11.png){.thumbnail}
 
 ## Aller plus loin
 
