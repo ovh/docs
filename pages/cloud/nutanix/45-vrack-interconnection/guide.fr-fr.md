@@ -32,9 +32,9 @@ Nous allons interconnecter deux clusters Nutanix sur deux sites distants l'un à
 
 ### Préparation des deux clusters avant l'interconnexion
 
-Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des adresses IP différentes (sauf pour la passerelle et le load-balancer) sur une même plage d'adresses IP. Dans notre guide nous allons utiliser cette plage d'adresse `192.168.0.0/22`
+Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des adresses IP différentes (sauf pour la passerelle et le load-balancer) sur une même plage d'adresses IP. Dans notre guide nous allons utiliser cette plage d'adresse `192.168.0.0/22`.
 
- le **Cluster1** à Gravelines utilise ces adresses:
+ Le cluster de Gravelines utilise ces adresses :
 
 - Serveur 1 : adresse VM **CVM** `192.168.2.1`, adresse IP hyperviseur **AHV** `192.168.2.21`.
 - Serveur 2 : adresse VM **CVM** `192.168.2.2`, adresse IP hyperviseur **AHV** `192.168.2.22`.
@@ -45,7 +45,7 @@ Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des 
 - LoadBalancer : `192.168.0.128/27`
 - Version du cluster : `6.1`.
 
-**Cluster2** à Roubaix :
+Le cluster de Roubaix utilise ces adresses:
 
 - Serveur 1 : adresse VM **CVM** `192.168.1.1`, adresse IP hyperviseur **AHV** `192.168.1.21`.
 - Serveur 2 : adresse VM **CVM** `192.168.1.2`, adresse IP hyperviseur **AHV** `192.168.1.22`.
@@ -60,7 +60,7 @@ Aidez-vous de ce guide pour redéployer vos deux clusters [Redéploiement person
 
 ### Arrêt de la machine virtuelle **OVHgateway**.
 
-La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP privé sur les deux sites nous allons arrêter la machine virtuelle du **Cluster2** à Roubaix. La connexion Internet Sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
+La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP privé sur les deux sites nous allons arrêter la machine virtuelle du **Cluster2** à Roubaix. La connexion Internet sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
 
 Connectez-vous à l'interface **Prism Central** du cluster situé à Roubaix. 
 
@@ -68,11 +68,11 @@ Allez dans la gestion des machines virtuelles sélectionnez `OVHgateway` au trav
 
 ![01 OVHgateway Shutdown 01](images/01-ovhgateway-shutdown01.png){.thumbnail}
 
-Les éléments du cluster ne pourront plus se connecter à Internet en sortie jusqu'a que la configuration des **vRack** soit faite. L'accès à Prism Central est maintenu à l'aide du **Load-Balancer**.
+Les éléments du cluster de Roubaix ne pourront plus se connecter à Internet en sortie jusqu'a que la configuration des **vRack** soit faite. L'accès à Prism Central est maintenu à l'aide du **Load-Balancer**.
 
 #### Paramétrage des **vRack**
 
-Cette opération consiste à supprimer l'affectation du **vRack** du deuxième site et ensuite d'étendre le **vRack** de Gravelines vers Roubaix. Les modifications du **vRack** se font au travers de l'espace client OVHcloud. 
+Cette opération consiste à supprimer l'affectation du **vRack** à Roubaix et ensuite d'étendre le **vRack** de Gravelines vers Roubaix. Les modifications du **vRack** se font au travers de l'espace client OVHcloud. 
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). 
 
@@ -129,13 +129,13 @@ Ensuite cliquez sur `Ajouter`{.action}
 
 ![03 Add to vrack 03](images/03-addtovrack03.png){.thumbnail}
 
-Le **vRack** qui était à l'origine uniquement utilisé par les serveurs du cluster de Gravelines est maintenant utilisé sur les deux sites et contient :
+Le **vRack** qui était uniquement utilisé par les serveurs du cluster de Gravelines est maintenant utilisé sur les deux sites et contient :
 
 - Les serveurs physiques des deux clusters.
 - Les adresses IP publiques des deux clusters.
 - Le load balancer de Gravelines qui sert pour **Prism Central**.
 
-L'accès Internet sur le site de Roubaix en sortie est à nouveau disponible au travers du **vRack**.
+L'accès Internet sur le site de Roubaix en sortie est à nouveau disponible au travers du **vRack** et de l'OVHgateway de Gravelines.
 
 ### Modification du load balancer de Roubaix
 
