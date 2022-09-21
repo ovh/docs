@@ -61,9 +61,9 @@ Le tableau affiche la configuration OVHcloud de votre nom de domaine. Chaque lig
 
 Si des champs MX existent déjà et que vous souhaitez les remplacer, cliquez sur le pictogramme en forme de roue dentée à droite de chaque ligne du tableau concernée, puis cliquez sur `Supprimer l'entrée`{.action}. Assurez-vous néanmoins de ne pas laisser votre nom de domaine sans aucun enregistrement MX lorsque vous ajoutez les entrées MX souhaitées.
 
-Pour vérifier plus rapidement si des champs MX existent déjà, sélectionnez à l'aide du filtre situé au dessus du tableau DNS le champ de type **MX** puis valider pour n'afficher que les entrées DNS MX de votre zone DNS.
+Pour vérifier plus rapidement si des champs MX existent déjà, sélectionnez, à l'aide du filtre situé au dessus du tableau DNS, le champ de type **MX** puis validez pour n'afficher que les entrées DNS MX de votre zone DNS.
 
-Pour cela, cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau, puis choisissez `MX`{.action}. Remplissez les informations demandées en fonction de la solution e-mail choisie :
+Cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau, puis choisissez `MX`{.action}. Remplissez les informations demandées en fonction de la solution e-mail choisie :
 
 - **si vous disposez d'une solution e-mail OVHcloud** : reportez-vous aux informations données à l'[étape 2 : « connaître la configuration MX OVHcloud »](https://docs.ovh.com/fr/domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/#etape-2-connaitre-la-configuration-mx-dovh){.external} ;
 
