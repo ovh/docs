@@ -367,7 +367,7 @@ To verify that Velero is working correctly with Volume Snapshots of Persistent V
 
 Copy the following code into a `nginx-example-with-pv.yml` file:
 
-```bash
+```yaml
 ---
 apiVersion: v1
 kind: Namespace
