@@ -10,7 +10,7 @@ order: 02
 
 ## Objectif
 
-Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bénéficier d'adresses e-mail, vous trouverez ici comment créer et utiliser les comptes disponibles avec votre offre MX Plan .
+Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bénéficier d'adresses e-mail associées à un nom de domaine.
 
 **Découvrez comment créer une adresse e-mail avec votre offre MX Plan.**
 
