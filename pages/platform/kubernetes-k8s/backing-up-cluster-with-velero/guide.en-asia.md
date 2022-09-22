@@ -194,13 +194,13 @@ Deployment/velero: created
 Velero is installed! ⛵ Use 'kubectl logs deployment/velero -n velero' to view the status.
 </code></pre>
 
-In order to allow Velero to do Volume Snapshots, we need to patch the `CSI Volume Snapshot Class` by adding a `velero.io/csi-volumesnapshot-class` label to it, and to set `Retain` as `deletionPolicy`:
+In order to allow Velero to do Volume Snapshots, we need to patch the `CSI Volume Snapshot Class` by adding a `velero.io/csi-volumesnapshot-class` label to it:
 
 ```bash
 kubectl label volumesnapshotclass csi-cinder-snapclass-in-use-v1 velero.io/csi-volumesnapshot-class="true"
 ```
 
-In my case, the rsult look like this:
+In my case, the result look like this:
 
 <pre class="console"><code>$ kubectl label volumesnapshotclass csi-cinder-snapclass-in-use-v1 velero.io/csi-volumesnapshot-class="true"
 kubectl patch VolumeSnapshotClass/csi-cinder-snapclass-in-use-v1 --type=merge -p '{"deletionPolicy":"Retain"}'
