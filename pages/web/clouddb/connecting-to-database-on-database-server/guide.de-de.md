@@ -70,7 +70,7 @@ Wenn die Verbindung erfolgreich ist, erscheint die phpMyAdmin-Startseite.
 
 > [!warning]
 >
-> Wenn Sie ein "Cloud DB"/"SQL Private" Angebot verwenden, vergessen Sie nicht, Ihre IP-Adresse mithilfe der Anleitung [Konfiguration Ihres Datenbankservers](https://docs.ovh.com/de/clouddb/konfigurieren-ihres-datenbank-servers/) zu erlauben.
+> Wenn Sie Cloud DB oder SQL Private für Datenbanken einsetzen, vergessen Sie nicht, Ihrer IP-Adresse mithilfe der Anleitung [Konfiguration Ihres Datenbankservers](https://docs.ovh.com/de/clouddb/konfigurieren-ihres-datenbank-servers/) den Zugriff zu erlauben.
 >
 
 Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie die folgenden Informationen:
