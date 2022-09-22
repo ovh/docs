@@ -23,15 +23,15 @@ This guide shows how to configure a node in your cluster dedicated to analytics-
 
 Let's imagine you're operating a popular recipes website. You might use a MongoDB database to store recipes, some kind of API/backend layer to offer access to that data, and a frontend presentation layer - a website or an app - in order to display those recipes attractively to your end-users.
 
-Now, when an end-user wants to search for and display a recipe, the API/backend layer needs to be able to find and fetch the right document quite quickly, because your end-user is already hungry and we all know a snappy user experience is nicer. And then, since that recipes website is quite popular, you need to be able to serve a large number of end-users at the same time. thus lots of similar queries at the same time. In other words, operational queries often need to meet low latency requirements, tend to be scoped to a small subset of the database as a whole and you might end up running a lot of smaller queries.
+Now, when an end-user wants to search for and display a recipe, the API/backend layer needs to be able to find and fetch the right document quite quickly, because your end-user is already hungry and we all know a snappy user experience is nicer. And then, since that recipes website is quite popular, you need to be able to serve a large number of end-users at the same time, thus lots of similar queries at the same time. In other words, operational queries often need to meet low latency requirements, tend to be scoped to a small subset of the database as a whole and you might end up running a lot of smaller queries.
 
-On the other hand, as the operator of that popular site, you want to understand the usage patterns as a whole. In order to do that, you might need to query your database in order to gain insights on your system state, e.g. Who are the top users? Where are they located? What time of day is your site most active? Those analytical queries have different requirements than the former set: They tend to access a larger set of the database, they are less latency-critical, and you don't want those to disrupt the end-user experience. 
+On the other hand, as the operator of that popular site, you want to understand the usage patterns as a whole. In order to do that, you might need to query your database in order to gain insights on your system state, e.g. Who are the top users? Where are they located? What time of day is your site most active? Those analytical queries have different requirements than the former set: they tend to access a larger set of the database, they are less latency-critical, and you don't want those to disrupt the end-user experience. 
 
 Simply put, an analytics node in your Public Cloud Databases for MongoDB cluster allows you to run those analytical queries while ensuring your operational queries don't suffer, by directing those to a specific node in the cluster.
 
 ## Instructions
 
-### make your cluster offer an Analytics node
+### Make your cluster offer an Analytics node
 
 #### How to create a cluster sporting an Analytics node?
 
@@ -70,23 +70,21 @@ Once again the **role** attribute (`STANDARD` / `ANALYTICS`) allows to make a no
 
 The cluster can now be reached through two different connection strings:
 
-- Use `mongodb+srv://<username>:<password>@<cluster hostname>/admin?replicaSet=replicaset&tls=true` for the operational connections, e.g. in the application configuration,
+- Use `mongodb+srv://<username>:<password>@<cluster hostname>/admin?replicaSet=replicaset&tls=true` for the operational connections, e.g. in the application configuration.
 - Use `mongodb+srv://<username>:<password>@<cluster hostname>/admin?replicaSet=replicaset&tls=true&readPreference=secondary&readPreferenceTags=nodeType:ANALYTICS` for the analytics workload, e.g. in your BI tools.
 
-Notice the extra query parameters `readPreference=secondary` and `readPreferenceTags=nodeType:ANALYTICS`: They direct the queries towards the Analytics node we configured.
+Notice the extra query parameters `readPreference=secondary` and `readPreferenceTags=nodeType:ANALYTICS`: they direct the queries towards the Analytics node we configured.
 
-## constraints & limitations
+## Constraints & limitations
 
 - No matter what, your cluster needs at least 3 non-Analytics nodes. That means the smallest cluster with an Analytics node is a 4-node cluster.
-- A cluster can have at most one Analytics node
-- If one of the first three nodes of a cluster is an Analytics node, then you won't be able to scale down the cluster from 4 nodes to 3 nodes using
+- A cluster can have at most one Analytics node.
+- If one of the first three nodes of a cluster is an Analytics node, then you won't be able to scale down the cluster from 4 nodes to 3 nodes with the following API call, using the `nodeNumber` parameter:
 
 > [!api]
 >
 > @api {PUT} /cloud/project/{serviceName}/database/mongodb/{clusterId}
 >
-
-using the `nodeNumber` parameter.
 
 You can either use the delete node endpoint to remove the Analytics node, or turn that Analytics node into a standard one before scaling down the cluster.
 
