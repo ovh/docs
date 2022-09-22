@@ -3,14 +3,14 @@ title: 'Mit der Datenbank Ihres Datenbankservers verbinden'
 slug: datenbank-verbindung-auf-bdd
 excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrer Datenbank verbinden können'
 section: Konfiguration
-order: 3
+order: 03
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 29.06.2022**
+**Letzte Aktualisierung am 22.09.2022**
 
 ## Ziel
 
@@ -67,6 +67,11 @@ Wenn die Verbindung erfolgreich ist, erscheint die phpMyAdmin-Startseite.
 > <br> - Fehler #2005 bedeutet, dass Sie den Namen des Servers überprüfen sollten. Stellen Sie sicher, dass er korrekt ist.
 
 #### Verbindung zur Datenbank außerhalb des Kundencenters
+
+> [!warning]
+>
+> Wenn Sie ein "Cloud DB"/"SQL Private" Angebot verwenden, vergessen Sie nicht, Ihre IP-Adresse mithilfe der Anleitung [Konfiguration Ihres Datenbankservers](https://docs.ovh.com/de/clouddb/konfigurieren-ihres-datenbank-servers/) zu erlauben.
+>
 
 Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie die folgenden Informationen:
 
@@ -178,4 +183,8 @@ Sie sind nun mit Ihrer Datenbank verbunden.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

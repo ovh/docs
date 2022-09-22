@@ -3,10 +3,10 @@ title: 'Connecting to a database on your database server'
 slug: connecting-to-database-on-database-server
 excerpt: 'Find out how to log in to your database'
 section: Configuration
-order: 3
+order: 03
 ---
 
-**Last updated 29th June 2022**
+**Last updated 22th September 2022**
 
 ## Objective
 
@@ -64,6 +64,11 @@ If the connection succeeds, the next page of phpMyAdmin will appear.
 >
 
 #### Connecting to the database outside the Control Panel
+
+> [!warning]
+>
+> If you use a `Cloud DB`/`Private SQL` offer, do not forget to authorise your IP using the guide on [Configuring your database server](https://docs.ovh.com/ie/en/clouddb/configure-optimise-database-server/).
+>
 
 To connect to your database, please ensure that you have the following information:
 
@@ -174,4 +179,8 @@ You are now connected to your database.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en-ie/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>.
