@@ -372,7 +372,7 @@ NAME                                         DESIRED   CURRENT   READY   AGE
 replicaset.apps/nginx-deployment-f7ccf9478   2         2         2       8s
 </code></pre>
 
-Before continuing, clean the nginx-example namespace
+Before continuing, clean the `nginx-example` namespace:
 
 ```bash
 kubectl delete namespace nginx-example
@@ -570,7 +570,7 @@ Check the backup have been finished successfully:
 velero backup get nginx-backup-with-pv
 ```
 
-Describe the backup to confirm that the CSI volumesnapshots were included in the backup:
+Describe the backup to confirm that the CSI `volumesnapshots` were included in the backup:
 
 ```bash
 velero describe backup nginx-backup-with-pv --details --features=EnableCSI
