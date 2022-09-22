@@ -216,8 +216,6 @@ Apply the new class:
 kubectl apply -f velero-snapclass.yaml
 ```
 
-TODO: xxx
-
 In my case, the result look like this:
 
 <pre class="console"><code>$ kubectl apply -f velero-snapclass.yaml
