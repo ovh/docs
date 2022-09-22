@@ -67,7 +67,7 @@ If the connection succeeds, the next page of phpMyAdmin will appear.
 
 > [!warning]
 >
-> If you use a `Cloud DB`/`Private SQL` offer, do not forget to authorise your IP using the guide on [Configuring your database server](https://docs.ovh.com/ie/en/clouddb/configure-optimise-database-server/).
+> If you use a `Cloud DB` or `Private SQL` service, do not forget to authorise your IP address using the guide on [Configuring your database server](https://docs.ovh.com/ie/en/clouddb/configure-optimise-database-server/).
 >
 
 To connect to your database, please ensure that you have the following information:
