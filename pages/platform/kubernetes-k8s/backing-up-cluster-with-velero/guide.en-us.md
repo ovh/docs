@@ -194,22 +194,41 @@ Deployment/velero: created
 Velero is installed! ⛵ Use 'kubectl logs deployment/velero -n velero' to view the status.
 </code></pre>
 
-In order to allow Velero to do Volume Snapshots, we need to patch the `CSI Volume Snapshot Class` by adding a `velero.io/csi-volumesnapshot-class` label to it:
+In order to allow Velero to do Volume Snapshots, we need to deploy a new `VolumeSnapshotClass`.
+Create a `velero-snapclass.yaml` file with this content:
+
+```yaml
+apiVersion: snapshot.storage.k8s.io/v1
+deletionPolicy: Delete
+driver: cinder.csi.openstack.org
+kind: VolumeSnapshotClass
+metadata:
+  name: csi-cinder-snapclass-in-use-v1-velero
+  labels:
+    velero.io/csi-volumesnapshot-class: "true"
+parameters:
+  force-create: "true"
+```
+
+Apply the new class:
 
 ```bash
-kubectl label volumesnapshotclass csi-cinder-snapclass-in-use-v1 velero.io/csi-volumesnapshot-class="true"
+kubectl apply -f velero-snapclass.yaml
 ```
+
+TODO: xxx
 
 In my case, the result look like this:
 
-<pre class="console"><code>$ kubectl label volumesnapshotclass csi-cinder-snapclass-in-use-v1 velero.io/csi-volumesnapshot-class="true"
+<pre class="console"><code>$ kubectl apply -f velero-snapclass.yaml
 
-volumesnapshotclass.snapshot.storage.k8s.io/csi-cinder-snapclass-in-use-v1 labeled
+volumesnapshotclass.snapshot.storage.k8s.io/csi-cinder-snapclass-in-use-v1-velero created
 
 $ kubectl get volumesnapshotclass --show-labels
-NAME                             DRIVER                     DELETIONPOLICY   AGE    LABELS
-csi-cinder-snapclass-in-use-v1   cinder.csi.openstack.org   Delete           134m   velero.io/csi-volumesnapshot-class=true
-csi-cinder-snapclass-v1          cinder.csi.openstack.org   Delete           134m   <none>
+NAME                                    DRIVER                     DELETIONPOLICY   AGE     LABELS
+csi-cinder-snapclass-in-use-v1          cinder.csi.openstack.org   Delete           4h46m   <none>
+csi-cinder-snapclass-in-use-v1-velero   cinder.csi.openstack.org   Delete           5s      velero.io/csi-volumesnapshot-class=true
+csi-cinder-snapclass-v1                 cinder.csi.openstack.org   Delete           4h46m   <none>
 </code></pre>
 
 ## Verifying Velero is working without Persistent Volumes
@@ -537,8 +556,8 @@ $ echo $POD_NAME
 pod/nginx-deployment-5bfc8c9f6f-xkw5x
 
 $  kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
-51.210.XXX.XX - - [22/Sep/2022:06:40:15 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
-10.2.13.0 - - [22/Sep/2022:06:41:41 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
+10.2.0.0 - - [22/Sep/2022:08:03:53 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
+10.2.1.0 - - [22/Sep/2022:08:03:54 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 </code></pre>
 
 Now we can ask velero to do the backup of the namespace:
@@ -553,25 +572,25 @@ Check the backup have been finished successfully:
 velero backup get nginx-backup-with-pv
 ```
 
-Describe the backup to confirm that the CSI volumesnapshots were included in the backup
+Describe the backup to confirm that the CSI volumesnapshots were included in the backup:
 
 ```bash
 velero describe backup nginx-backup-with-pv --details --features=EnableCSI
 ```
 
-Simulate a disaster
+Simulate a disaster:
 
 ```bash
 kubectl delete namespace nginx-example
 ```
 
-Restore the deleted namespace
+Restore the deleted namespace:
 
 ```bash
 velero restore create --from-backup nginx-backup-with-pv --wait
 ```
 
-Verify that the restore is correctly done
+Verify that the restore is correctly done:
 
 ```bash
 kubectl get all -n nginx-example
