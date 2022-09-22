@@ -3,10 +3,10 @@ title: 'Añadir un registro MX a la configuración del dominio'
 slug: anadir-registro-mx-configuracion-dominio
 excerpt: 'Cómo añadir un registro MX a la configuración de un dominio en OVHcloud'
 section: 'DNS (servidor y zona)'
-order: 3
+order: 03
 ---
 
-**Última actualización: 02/07/2018**
+**Última actualización: 21/09/2022**
 
 ## Objetivo
 
@@ -61,7 +61,9 @@ La tabla mostrará la configuración del dominio en OVHcloud. Cada línea corres
 
 Si los registros MX ya existen y quiere sustituirlos, haga clic en el icono con forma de rueda dentada situado al final de la línea y seleccione  `Eliminar el registro`{.action}. No obstante, asegúrese de que siempre haya algún registro MX. Para ello, le recomendamos que vaya creando los nuevos registros MX deseados a medida que elimine los anteriores.
 
-Para crear un nuevo registro MX, haga clic en el botón `Añadir un registro`{.action} y seleccione `MX`{.action}. Complete la información solicitada (en función de la solución de correo de que disponga):
+Para comprobar más rápidamente si ya existen registros MX, seleccione, utilizando el filtro situado sobre la tabla DNS, el campo de tipo **MX** y acepte para mostrar únicamente los registros DNS MX de su zona DNS.
+
+Para crear un nuevo registro MX, haga clic en el botón `Añadir un registro`{.action} a la derecha de la tabla y seleccione `MX`{.action}. Complete la información solicitada (en función de la solución de correo de que disponga):
 
 - **Si tiene contratada una solución de correo de OVHcloud**, consulte la información del paso [2. Conocer la configuración MX de OVHcloud](https://docs.ovh.com/es/domains/anadir-registro-mx-configuracion-dominio/#2-conocer-la-configuracion-mx-de-ovh){.external}.
 
@@ -79,5 +81,9 @@ Una vez que haya completado la información, siga los pasos que se indican y hag
 [Información general sobre los servidores DNS](https://docs.ovh.com/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
 
 [Editar una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

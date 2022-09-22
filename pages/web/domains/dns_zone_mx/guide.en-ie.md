@@ -1,9 +1,9 @@
 ---
-title: 'Add an MX record to your domain name’s configuration'
+title: "Add an MX record to your domain name’s configuration"
 slug: web_hosting_configuring_mx_with_the_ovh_dns_zone
-excerpt: 'Find out how to add a MX record to your OVHcloud domain name’s configuration'
+excerpt: "Find out how to add a MX record to your OVHcloud domain name’s configuration"
 section: 'DNS and DNS Zone'
-order: 4
+order: 04
 ---
 
 **Last updated 30th May 2018**
@@ -61,7 +61,9 @@ This table displays your domain’s OVHcloud configuration. Each row corresponds
 
 If there are already MX records and you would like to replace them, click the cogwheel icon on the right-hand side of each table row, then click `Delete record`{.action}. Please ensure, however, that you don’t delete all MX records before you add the new ones.
 
-To add a record, click `Add record`{.action}, then select `MX`{.action}. Fill in the information required, depending on the email solution you have ordered:
+To check if MX records already exist, use the filter above the DNS table to select the **MX** field, then confirm to only display the MX DNS records for your DNS zone.
+
+To add a record, click `Add record`{.action} button to the right of the table, then select `MX`{.action}. Fill in the information required, depending on the email solution you have ordered:
 
 - **If you have an OVHcloud email solution:** Please refer to the information provided in [Step 2: Familiarise yourself with the OVHcloud MX configuration](https://docs.ovh.com/ie/en/domains/web_hosting_configuring_mx_with_the_ovh_dns_zone/#step-2-familiarise-yourself-with-the-ovh-mx-configuration){.external}.
 
@@ -79,5 +81,9 @@ Once you have entered the information, finalise the steps, then click `Confirm`{
 [General information about DNS servers](https://docs.ovh.com/ie/en/domains/web_hosting_general_information_about_dns_servers/){.external}
 
 [Web hosting: How to edit your DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
