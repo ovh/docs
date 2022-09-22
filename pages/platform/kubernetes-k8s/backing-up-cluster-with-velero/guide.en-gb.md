@@ -1,6 +1,6 @@
 ---
-title: Backing-up a OVHcloud Managed Kubernetes cluster using Velero
-excerpt: Backing-up a OVHcloud Managed Kubernetes cluster using Velero
+title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
+excerpt: Find out how to backing-up an OVHcloud Managed Kubernetes cluster using Velero
 slug: backing-up-cluster-with-velero
 section: Storage
 order: 2
