@@ -41,6 +41,9 @@ Ces actions peuvent être réalisées de plusieurs manières :
 > La mise en place d'une redirection peut avoir des conséquences sur le référencement de votre site internet. 
 > Soyez vigilant quant aux manipulations que vous allez entreprendre ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) dans le référencement si nécessaire.
 >
+> Attention : une redirection créée depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ne permet pas de rediriger une URL en `https://` vers un autre domaine ou une autre URL. 
+> Pour créer ce type de redirection, vous devrez obligatoirement passer par [une réécriture d'URL](https://docs.ovh.com/fr/hosting/htaccess-reecriture-url-mod-rewrite/) via un fichier « .htaccess » par exemple.
+>
 
 ### Rediriger un nom de domaine depuis l'espace client
 
