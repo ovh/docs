@@ -719,7 +719,7 @@ NAME                                    READY   STATUS    RESTARTS   AGE
 pod/nginx-deployment-5bfc8c9f6f-9s4jq   1/1     Running   0          19s
 
 NAME                    TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
-service/nginx-service   LoadBalancer   10.3.168.192   <pending>     80:30053/TCP   18s
+service/nginx-service   LoadBalancer   10.3.XXX.XXX   <pending>     80:30053/TCP   18s
 
 NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
 deployment.apps/nginx-deployment   1/1     1            1           18s
