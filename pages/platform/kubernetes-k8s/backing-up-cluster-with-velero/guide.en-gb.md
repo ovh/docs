@@ -196,11 +196,8 @@ Velero is installed! ⛵ Use 'kubectl logs deployment/velero -n velero' to view 
 
 In order to allow Velero to do Volume Snapshots, we need to patch the `CSI Volume Snapshot Class` by adding a `velero.io/csi-volumesnapshot-class` label to it, and to set `Retain` as `deletionPolicy`:
 
-TODO: a faire avec high speed et/ ou classic ????
-
 ```bash
 kubectl label volumesnapshotclass csi-cinder-snapclass-in-use-v1 velero.io/csi-volumesnapshot-class="true"
-kubectl patch VolumeSnapshotClass/csi-cinder-snapclass-in-use-v1 --type=merge -p '{"deletionPolicy":"Retain"}'
 ```
 
 In my case, the rsult look like this:
@@ -210,6 +207,11 @@ kubectl patch VolumeSnapshotClass/csi-cinder-snapclass-in-use-v1 --type=merge -p
 
 volumesnapshotclass.snapshot.storage.k8s.io/csi-cinder-snapclass-in-use-v1 labeled
 volumesnapshotclass.snapshot.storage.k8s.io/csi-cinder-snapclass-in-use-v1 patched
+
+$ kubectl get volumesnapshotclass --show-labels
+NAME                             DRIVER                     DELETIONPOLICY   AGE    LABELS
+csi-cinder-snapclass-in-use-v1   cinder.csi.openstack.org   Delete           118m   velero.io/csi-volumesnapshot-class=true
+csi-cinder-snapclass-v1          cinder.csi.openstack.org   Delete           118m   <none>
 </code></pre>
 
 ## Verifying Velero is working without Persistent Volumes
@@ -484,13 +486,13 @@ $ kubectl -n nginx-example get svc nginx-service -w
 NAME            TYPE           CLUSTER-IP    EXTERNAL-IP   PORT(S)        AGE
 nginx-service   LoadBalancer   10.3.219.64   <pending>     80:31157/TCP   26s
 nginx-service   LoadBalancer   10.3.219.64   <pending>     80:31157/TCP   80s
-nginx-service   LoadBalancer   10.3.219.64   51.210.210.26   80:31157/TCP   80s
-nginx-service   LoadBalancer   10.3.219.64   51.210.210.26   80:31157/TCP   83s
+nginx-service   LoadBalancer   10.3.219.64   51.210.XXX.XX   80:31157/TCP   80s
+nginx-service   LoadBalancer   10.3.219.64   51.210.XXX.XX   80:31157/TCP   83s
 
 $ export LB_IP=$(kubectl -n nginx-example get svc nginx-service -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 $ echo $LB_IP
-51.210.210.26
+51.210.XXX.XX
 
 $ curl -I $LB_IP
 HTTP/1.1 200 OK
@@ -539,7 +541,7 @@ pod/nginx-deployment-5bfc8c9f6f-xkw5x
 $  kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
 51.210.187.202 - - [22/Sep/2022:06:40:15 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 10.2.13.0 - - [22/Sep/2022:06:41:41 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
-</code><pre>
+</code></pre>
 
 Now we can ask velero to do the backup of the namespace:
 
@@ -593,8 +595,6 @@ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.lo
 ```
 
 You should have a result like this:
-
-TODO: xxxx
 
 <pre class="console"><code>$ velero backup create nginx-backup-with-pv --include-namespaces nginx-example --wait
 
