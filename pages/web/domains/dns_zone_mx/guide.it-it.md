@@ -4,10 +4,10 @@ excerpt: 'Come creare un nuovo record MX per il tuo dominio OVHcloud'
 slug: aggiungere-record-mx-configurazione-dominio
 legacy_guide_number: g2012
 section: 'DNS e zona DNS'
-order: 4
+order: 04
 ---
 
-**Ultimo aggiornamento: 15/04/2019**
+**Ultimo aggiornamento: 21/09/2022**
 
 ## Obiettivo
 
@@ -62,7 +62,9 @@ Compare una tabella che mostra la configurazione OVHcloud del tuo dominio: ogni 
 
 Nel caso in cui il record MX sia presente e voglia modificarlo, clicca sui tre puntini a destra e clicca su `Elimina record`{.action}. Assicurati di non aver eliminato tutti i record MX prima di aggiungerne di nuovi.
 
-Per eseguire questa operazione, clicca sul pulsante `Aggiungi un record`{.action} e seleziona `MX`{.action}. In base al servizio email scelto, inserisci le informazioni richieste: 
+Per verificare più rapidamente se esistono già record MX, seleziona il record di tipo **MX** con il filtro sopra la tabella DNS e conferma per visualizzare solo i record DNS MX della tua zona DNS.
+
+Per eseguire questa operazione, clicca su `Aggiungi un record`{.action} a destra della tabella e seleziona `MX`{.action}. In base al servizio email scelto, inserisci le informazioni richieste: 
 
 - **se utilizzi una soluzione di posta OVHcloud**, consulta il paragrafo precedente di questa guida: [Step 2: conoscere la configurazione MX di OVHcloud](./#step-2-conoscere-la-configurazione-mx-di-ovh){.external}
 
@@ -81,4 +83,8 @@ Una volta inserite le informazioni, prosegui con gli step successivi e clicca su
 
 [Modificare una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni (offerte di supporto)(https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

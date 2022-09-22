@@ -1,24 +1,22 @@
 ---
-title: 'MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen'
-excerpt: 'Hier erfahren Sie, wie Sie bei OVHcloud einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen.'
+title: "MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen"
+excerpt: "Erfahren Sie hier, wie Sie bei OVHcloud einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen"
 slug: webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh
-legacy_guide_number: g2012
-section: 'DNS und DNS-Zone'
-order: 4
+section: DNS und DNS-Zone
+order: 04
 ---
 
-**Stand 05.12.2018**
+**Letzte Aktualisierung am 21.09.2022**
 
-## Einleitung
+## Ziel
 
 Der MX-Eintrag (Mail Exchange) legt den für die E-Mail-Adressen der Domain zuständigen E-Mail-Server fest. Dadurch wird Servern, die E-Mails an Ihre Adressen versenden, mitgeteilt, wohin sie diese versenden sollen. Möglicherweise verfügt Ihr Anbieter über mehrere E-Mail-Server. Erstellen Sie in diesem Fall auch mehrere MX-Einträge.
 
-**In dieser Anleitung erfahren Sie, wie Sie bei OVHcloud einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen.**
+**Diese Anleitung erklärt, wie Sie bei OVHcloud einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen.**
 
 ## Voraussetzungen
 
 - Sie haben über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Zugriff auf die Verwaltung der betreffenden Domain.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Die betreffende Domain verwendet die OVHcloud Konfiguration (das heißt die OVHcloud DNS-Server).
 
 > [!warning]
@@ -28,7 +26,7 @@ Der MX-Eintrag (Mail Exchange) legt den für die E-Mail-Adressen der Domain zust
 > - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob diese die OVHcloud Konfiguration verwendet. Gehen Sie hierzu in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} zur entsprechenden Domain und anschließend auf den Tab `DNS-Server`{.action}.
 >
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Schritt 1: Den MX-Eintrag verstehen
 
@@ -54,7 +52,7 @@ Verwenden Sie diese MX-Einträge für die DNS-Konfiguration Ihrer Domain. Im nä
 
 ### Schritt 3: MX-Eintrag bearbeiten
 
-Um MX-Einträge in der Konfiguration Ihrer OVHcloud Domain zu ändern, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Gehen Sie in den Bereich `Domains`{.action}, klicken Sie auf die betreffende Domain und anschließend auf den Tab `DNS Zone`{.action}.
+Um MX-Einträge in der Konfiguration Ihrer OVHcloud Domain zu ändern, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Gehen Sie in den Bereich `Domainnamen`{.action}, klicken Sie auf die betreffende Domain und anschließend auf den Tab `DNS Zone`{.action}.
 
 In der Tabelle wird die OVHcloud Konfiguration Ihrer Domain angezeigt. Jede Zeile entspricht einem DNS-Eintrag. Überprüfen Sie über die Filterfunktion zunächst, ob in der DNS-Konfiguration Ihrer Domain bereits MX-Einträge vorhanden sind.
 
@@ -62,7 +60,9 @@ In der Tabelle wird die OVHcloud Konfiguration Ihrer Domain angezeigt. Jede Zeil
 
 Wenn bereits MX-Einträge vorhanden sind und Sie diese ersetzen möchten, klicken Sie rechts am Ende jeder betreffenden Zeile auf das Zahnrad-Symbol und wählen Sie dann `Eintrag löschen`{.action} aus. Achten Sie jedoch darauf, dass für Ihre Domain immer ein MX-Eintrag bestehen bleibt, während Sie neue MX-Einträge hinzufügen.
 
-Um Einträge hinzuzufügen, klicken Sie auf `Eintrag hinzufügen`{.action} und wählen Sie dann `MX`{.action} aus. Tragen Sie die angeforderten Informationen für die ausgewählte E-Mail-Lösung ein:
+Um zu überprüfen, ob bereits MX-Einträge vorhanden sind, wählen Sie mithilfe des Filters oberhalb der DNS-Tabelle den Typ **MX** aus und bestätigen Sie,  damit nur die MX-Einträge Ihrer DNS-Zone angezeigt werden.
+
+Um Einträge hinzuzufügen, klicken Sie rechts auf `Eintrag hinzufügen`{.action} und wählen Sie dann `MX`{.action} aus. Tragen Sie die angeforderten Informationen für die ausgewählte E-Mail-Lösung ein:
 
 - **OVHcloud E-Mail-Lösung**: Lesen Sie in dieser Anleitung „[Schritt 2: OVHcloud MX-Konfiguration kennenlernen](https://docs.ovh.com/de/domains/webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/#schritt-2-ovh-mx-konfiguration-kennenlernen){.external}“.
 
@@ -81,4 +81,8 @@ Wenn Sie alle Informationen eingegeben haben, folgen Sie den nächsten Schritten
 
 [Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -3,14 +3,14 @@ title: Accedere al database del tuo database server
 slug: connessione-database-server-bdd
 excerpt: Come connettersi al database
 section: Configurazione
-order: 3
+order: 03
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 29/06/2022**
+**Ultimo aggiornamento: 22/09/2022**
 
 ## Obiettivo
 
@@ -66,7 +66,12 @@ Se la connessione avrà successo, comparirà la pagina successiva di phpMyAdmin.
 > <br> - Errore #1045, significa che le credenziali non sono corrette. È quindi necessario verificare il nome utente e/o la password.
 > <br> - Errore #2005, ti consigliamo di verificare il nome del server e il suo corretto funzionamento.
 
-#### Accedi al database al di fuori dello Spazio Cliente OVH
+#### Accedi al database al di fuori dello Spazio Cliente OVHcloud
+
+> [!warning]
+>
+> Se utilizzi un'offerta "Cloud DB"/"SQL Privato", non dimenticare di autorizzare il tuo IP utilizzando la guida sulla [configurazione del tuo server database](https://docs.ovh.com/it/clouddb/configurare-ottimizzare-il-tuo-database-server/).
+>
 
 Per connetterti al tuo database, assicurati di recuperare queste informazioni:
 
@@ -179,5 +184,9 @@ Da questo momento sei connesso correttamente al tuo database:
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni (offerte di supporto)(https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.
 
