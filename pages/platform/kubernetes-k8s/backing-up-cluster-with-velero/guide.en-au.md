@@ -216,7 +216,7 @@ csi-cinder-snapclass-v1          cinder.csi.openstack.org   Delete           134
 
 To verify that Velero is working correctly, let's test with one example deployment:
 
-1. Copy the following code into a `nginx-example-without-pv.yml` file:
+Copy the following code into a `nginx-example-without-pv.yml` file:
 
 ```yaml
 ---
