@@ -3,10 +3,10 @@ title: 'Se connecter à la base de données de votre serveur de bases de donnée
 slug: connexion-base-de-donnees-serveur-bdd
 excerpt: 'Découvrez comment se connecter à votre base de données'
 section: Configuration
-order: 3
+order: 03
 ---
 
-**Dernière mise à jour le 29/06/2022**
+**Dernière mise à jour le 22/09/2022**
 
 ## Objectif
 
@@ -64,6 +64,11 @@ Si la connexion aboutit, la page suivante de phpMyAdmin apparaîtra.
 >
 
 #### Connexion à la base de données hors espace client
+
+> [!warning]
+>
+> Si vous utilisez une offre "Cloud DB"/"SQL Privé", n'oubliez pas d'autoriser votre IP à l'aide du guide sur la [configuration de votre serveur de base de données](https://docs.ovh.com/fr/clouddb/configurer-optimiser-son-serveur-de-base-de-donnees/#gerer-vos-acces).
+>
 
 Afin de vous connecter à votre base de données, assurez-vous de récupérer les informations suivantes :
 
@@ -174,6 +179,10 @@ Vous êtes maintenant bien connecté à votre base de données :
 ![config connection](images/4.PNG){.thumbnail}
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
