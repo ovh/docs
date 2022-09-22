@@ -537,7 +537,7 @@ $ echo $POD_NAME
 pod/nginx-deployment-5bfc8c9f6f-xkw5x
 
 $  kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
-51.210.187.202 - - [22/Sep/2022:06:40:15 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
+51.210.XXX.XX - - [22/Sep/2022:06:40:15 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 10.2.13.0 - - [22/Sep/2022:06:41:41 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 </code></pre>
 
