@@ -203,15 +203,13 @@ kubectl label volumesnapshotclass csi-cinder-snapclass-in-use-v1 velero.io/csi-v
 In my case, the result look like this:
 
 <pre class="console"><code>$ kubectl label volumesnapshotclass csi-cinder-snapclass-in-use-v1 velero.io/csi-volumesnapshot-class="true"
-kubectl patch VolumeSnapshotClass/csi-cinder-snapclass-in-use-v1 --type=merge -p '{"deletionPolicy":"Retain"}'
 
 volumesnapshotclass.snapshot.storage.k8s.io/csi-cinder-snapclass-in-use-v1 labeled
-volumesnapshotclass.snapshot.storage.k8s.io/csi-cinder-snapclass-in-use-v1 patched
 
 $ kubectl get volumesnapshotclass --show-labels
 NAME                             DRIVER                     DELETIONPOLICY   AGE    LABELS
-csi-cinder-snapclass-in-use-v1   cinder.csi.openstack.org   Delete           118m   velero.io/csi-volumesnapshot-class=true
-csi-cinder-snapclass-v1          cinder.csi.openstack.org   Delete           118m   <none>
+csi-cinder-snapclass-in-use-v1   cinder.csi.openstack.org   Delete           134m   velero.io/csi-volumesnapshot-class=true
+csi-cinder-snapclass-v1          cinder.csi.openstack.org   Delete           134m   <none>
 </code></pre>
 
 ## Verifying Velero is working without Persistent Volumes
