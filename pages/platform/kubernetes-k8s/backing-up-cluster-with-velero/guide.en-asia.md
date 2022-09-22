@@ -289,37 +289,37 @@ And apply it to your cluster:
 kubectl apply -f nginx-example-without-pv.yml
 ```
 
-Create a backup of the namespace
+Create a backup of the namespace:
 
 ```bash
 velero backup create nginx-backup --include-namespaces nginx-example
 ```
 
-Verify that the backup is done
+Verify that the backup is done:
 
 ```bash
 velero get backup nginx-backup
 ```
 
-Simulate a disaster
+Simulate a disaster:
 
 ```bash
 kubectl delete namespaces nginx-example
 ```
 
-Restore the deleted namespace
+Restore the deleted namespace:
 
 ```bash
 velero restore create --from-backup nginx-backup
 ```
 
-Verify that the restore is correctly done
+Verify that the restore is correctly done:
 
 ```bash
 kubectl get all -n nginx-example
 ```
 
-In my case:
+In my case, the result looks like this:
 
 <pre class="console"><code>$ kubectl apply -f nginx-example-without-pv.yml
 namespace/nginx-example created
