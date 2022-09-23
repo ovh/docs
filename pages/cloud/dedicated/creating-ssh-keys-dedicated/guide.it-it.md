@@ -152,9 +152,9 @@ Dal tuo file “authorized_keys” elimina la chiave corrispondente all’utente
 
 Lo Spazio Cliente OVHcloud consente di salvare le chiavi pubbliche usando uno dei tipi di crittografia supportati (attualmente RSA, ECDSA, ED25519). 
 
-Apri la barra di navigazione, clicca sul tuo nome in alto a destra e utilizza il menu di scelta rapida `Gestione dei servizi`{.action}.
+Apri la barra di navigazione, clicca sul tuo nome in alto a destra e utilizza il menu di scelta rapida `Prodotti e servizi`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2022.png){.thumbnail}
 
 Nel menu “I tuoi servizi”, seleziona la scheda `Chiavi SSH`{.action} e clicca su `Aggiungi una chiave SSH`{.action}.
 
@@ -181,9 +181,9 @@ Se hai aggiunto più chiavi SSH nel tuo Spazio Cliente, è possibile definire un
 > Si prega di notare che una volta che la chiave SSH predefinita è impostata, sarà usata anche come metodo di connessione durante il riavvio di un server in modalità Rescue. Per ricevere una password invece, la chiave predefinita deve essere disattivata prima di riavviare il server in modalità Rescue.
 >
 
-Apri la barra di navigazione, clicca sul tuo nome in alto a destra e utilizza il menu di scelta rapida `Gestione dei servizi`{.action}.
+Apri la barra di navigazione, clicca sul tuo nome in alto a destra e utilizza il menu di scelta rapida `Prodotti e servizi`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2022.png){.thumbnail}
 
 Nella lista delle chiavi, clicca su `Chiave` accanto alla chiave SSH scelta per definirla come chiave predefinita.
 

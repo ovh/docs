@@ -43,7 +43,7 @@ We recommend reading the following guides and focusing on the operations you wis
 
 ### Access your service’s settings
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Click on the name associated with your NIC handle (Customer ID) in the menu bar at the top right-hand corner then choose `Service Management`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Click on the name associated with your NIC handle (Customer ID) in the menu bar at the top right-hand corner then choose `Products and services`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 

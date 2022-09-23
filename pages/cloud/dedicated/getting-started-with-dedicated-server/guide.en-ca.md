@@ -71,9 +71,9 @@ If you are installing a GNU/Linux-based based operating system, you can add your
 
 If you already have an SSH key registered, it will be listed in the drop down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
 
-To achieve this, open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Service management`{.action}.
+To achieve this, open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
 
-![Customise the partition configuration](images/SSH_13.1.png){.thumbnail}
+![Customise the partition configuration](images/SSH_keys_panel_2022.png){.thumbnail}
 
 In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH key`{.action}.
 

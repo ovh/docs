@@ -48,7 +48,7 @@ Recomendamos que consulte os seguintes guias e se concentre nas operações que 
 
 ### Aceder à parametrização dos seus serviços
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no nome associado ao seu ID de cliente na barra de menus no canto superior direito e selecione a opção `Gestão dos serviços`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no nome associado ao seu ID de cliente na barra de menus no canto superior direito e selecione a opção `Produtos e serviços`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 
