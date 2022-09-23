@@ -154,7 +154,7 @@ velero install \
   --snapshot-location-config region=<public cloud region without digit>,enableSharedConfig=true
 ```
 
-In ourcase, with the cluster in the `GRA` region, that meant:
+In our case, with the cluster in the `GRA` region, that meant:
 
 ```bash
 velero install \
@@ -319,7 +319,7 @@ Verify that the restore is correctly done:
 kubectl get all -n nginx-example
 ```
 
-In ourcase, the result looks like this:
+In our case, the result looks like this:
 
 <pre class="console"><code>$ kubectl apply -f nginx-example-without-pv.yml
 namespace/nginx-example created
