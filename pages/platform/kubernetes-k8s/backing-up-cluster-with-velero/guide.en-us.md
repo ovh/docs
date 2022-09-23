@@ -1,6 +1,6 @@
 ---
 title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
-excerpt: Find out how to backing-up an OVHcloud Managed Kubernetes cluster using Velero, included Persistent Volumes
+excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
 slug: backing-up-cluster-with-velero
 section: Storage
 order: 2
@@ -28,7 +28,7 @@ order: 2
  }
 </style>
 
-**Last updated 22th September 2022**
+**Last updated 22nd September 2022**
 
 In this tutorial, we are using [Velero](https://velero.io/){.external} to backup and restore an OVHcloud Managed Kubernetes cluster.
 
@@ -50,7 +50,7 @@ Velero needs a S3 bucket as storage backend to store the data from your cluster.
 
 Before creating your S3 bucket you need to:
 
-- [Prepare your environement to use the OpenStack API](../../public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Prepare your environment to use the OpenStack API](../../public-cloud/prepare_the_environment_for_using_the_openstack_api/)
 
 - [Get Openstack RC File v3 from Horizon](../../public-cloud/access_and_security_in_horizon/)
 
@@ -58,7 +58,7 @@ Before creating your S3 bucket you need to:
 
 You should now have access to your OpenStack RC file, with a filename line `<user_name>-openrc.sh`, and the username and password for your OpenStack account.
 
-Set the environement variables by sourcing the OpenStack RC file:
+Set the environment variables by sourcing the OpenStack RC file:
 
 ```bash
 source <user_name>-openrc.sh
@@ -154,7 +154,7 @@ velero install \
   --snapshot-location-config region=<public cloud region without digit>,enableSharedConfig=true
 ```
 
-In my case, with the cluster in the `GRA` region, that meant:
+In ourcase, with the cluster in the `GRA` region, that meant:
 
 ```bash
 velero install \
@@ -216,7 +216,7 @@ Apply the new class:
 kubectl apply -f velero-snapclass.yaml
 ```
 
-In my case, the result looks like this:
+In ourcase, the result looks like this:
 
 <pre class="console"><code>$ kubectl apply -f velero-snapclass.yaml
 
@@ -319,7 +319,7 @@ Verify that the restore is correctly done:
 kubectl get all -n nginx-example
 ```
 
-In my case, the result looks like this:
+In ourcase, the result looks like this:
 
 <pre class="console"><code>$ kubectl apply -f nginx-example-without-pv.yml
 namespace/nginx-example created
@@ -465,7 +465,7 @@ kubectl apply -f nginx-example-with-pv.yml
 
 > [!primary]
 >
-> If you look attentively to the deployment part of this manifest, you will see that we have defined a `.spec.strategy.type`. It specifies the strategy used to replace old Pods by new ones, and we have set it to `Recreate`, so all existing Pods are killed before new ones are created.
+> Pay attention to the deployment part of this manifest, you will see that we have defined a `.spec.strategy.type`. It specifies the strategy used to replace old Pods by new ones, and we have set it to `Recreate`, so all existing Pods are killed before new ones are created.
 >
 > We do so as the Storage Class we are using, `csi-cinder-high-speed`, only supports a `ReadWriteOnce`, so we can only have one pod writing on the Persistent Volume at any given time.
 
@@ -564,7 +564,7 @@ Now we can ask velero to do the backup of the namespace:
 velero backup create nginx-backup-with-pv --include-namespaces nginx-example --wait
 ```
 
-Check the backup have been finished successfully:
+Check the backup has finished successfully:
 
 ```bash
 velero backup get nginx-backup-with-pv
