@@ -89,37 +89,41 @@ Entrez votre nom de domaine dans la section `Reverse DNS` et cliquez sur `Valide
 
 #### Vers un serveur Microsoft (Outlook, etc...)
  
-Microsoft utilise une politique de liste blanche. Cela signifie qu'au départ, tout serveur se trouve sur une liste noire et une procédure spécifique est nécessaire pour faire valider votre serveur e-mail.
+Microsoft utilise une politique de liste blanche. Cela signifie qu'initialement tout serveur se trouve sur une liste noire et une procédure spécifique est nécessaire pour faire valider votre serveur e-mail.
 
-Avant de commencer la procédure de Whitelist de votre IP, assurez-vous que vous un reverse[#reverseip] de configuré sur votre IP (pas le reverse par défaut d'OVHcloud)
+Avant de commencer la procédure de whitelist de votre IP, assurez-vous d'avoir bien configuré un [reverse](#reverseip) sur votre IP (et non pas le reverse par défaut d'OVHcloud).
 
-Ensuite, il vous faut signer les contrats SNDS (Smart Network Data Services) et JMRP (Junk Mail Reporting Partner Program)
+Vous devez ensuite signer les contrats SNDS (Smart Network Data Services) et JMRP (Junk Mail Reporting Partner Program).
 
 Pour souscrire gratuitement au programme, il suffit de créer un compte JMRP/SNDS à l'adresse suivante :
 <https://postmaster.live.com/snds/JMRP.aspx?wa=wsignin1.0>
 
-Une fois le compte activé, vous devez renseigner le formulaire suivant :
+Une fois le compte activé, vous devez compléter le formulaire suivant :
 
-**Company name** : (Nom de votre compagnie)
+- **Company name** : (nom de votre entreprise)
+- **Contact email address** : (une adresse e-mail valide où Microsoft peut vous contacter)
+- **Complaint feedback email address** : (une adresse e-mail valide où vous pourrez recevoir les plaintes pour spam)
 
-**Contact email address** : (Un courriel valide où Microsoft peut vous contacter)
+Ajoutez ensuite vos adresses IP dans la section `IP address or range`.
 
-**Complaint feedback email address** : (Un courriel valide où vous allez recevoir les plaintes de spam)
+En cliquant sur `Add new Network`, il vous sera demandé de choisir une adresse e-mail de contact chez votre ISP/FAI (Fournisseur d'Accès à Internet) pour autoriser la demande.
 
-Puis ajouter vos adresses IP dans la section `IP address or range`.
+Les **best practices** veulent que l'adresse e-mail soit sous la forme : **abuse@mondomaine.com**
 
-En cliquant sur `Add new Network`, il vous sera demandé de choisir un courriel de contact de son ISP pour autoriser la demande.
-
-Les **bests practices** veulent que le mail soit sous la forme : **abuse@mondomaine.com**
-
-Une fois les informations renseignées, il faut cliquer sur `Begin Setup` pour transmettre la demande. Microsoft va alors envoyer un courriel `SNDS-JMRP Contract`, puis un second courriel à **mondomaine.com**.
+Une fois les informations renseignées, cliquez sur `Begin Setup` pour transmettre la demande. Microsoft enverra alors un e-mail intitulé `SNDS-JMRP Contract`, puis un second e-mail à **mondomaine.com**.
 
 Une fois les confirmations approuvées, la souscription à JMRP/SNDS sera terminée.
 
-Une fois ceci effectué et si l'IP apparaît comme bloquée, vous pourrez alors demander de délistage de ses IPs via la procédure junkmail : (généralement sous 48H)
-https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062
+Une fois ces actions effectuées, si votre IP apparaît comme bloquée, vous pourrez alors demander à la débloquer via la [procédure junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). La procédure prend généralement 48H.
 
-Pour ce faire, veuillez ouvrir une [demande d'assistance](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) auprès de Microsoft.
+Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) auprès de Microsoft.
+
+> [!warning]
+>
+> **Refus de Microsoft**
+>
+> Il est possible que Microsoft refuse de débloquer votre ou vos IP, auquel cas OVHcloud ne pourra pas intervenir. Il est important de respecter les bonnes pratiques de Microsoft.
+>
 
 #### Vers un serveur Gmail
 

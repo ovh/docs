@@ -98,23 +98,21 @@ Next, you will need to sign the SNDS (Smart Network Data Services) and JMRP (Jun
 
 Once your account is created, you must fill in the following form: 
 
-**Company name**:
-
-**Contact email address**: (A valid email address where Microsoft can contact you)
-
-**Complaint feedback email address**: (A valid email address where you will receive spam complaints)
+- **Company name**:
+- **Contact email address**: (A valid email address where Microsoft can contact you)
+- **Complaint feedback email address**: (A valid email address where you will receive spam complaints)
 
 Next, add your IP addresse(s) in the section `IP address or range`.
 
 When clicking on `Add new Network`, you will be asked to choose a contact email from their ISP to authorize the request.
 
-The **best practices** want the mail to be in the form: **abuse@mydomain.com**.
+The **best practices** want the email to be in the form: **abuse@mydomain.com**.
 
 Once the information is filled in, click on `Begin Setup` to transmit the request. Microsoft will then send you an `SNDS-JMRP Contract` email, and a second email to **mydomain.com**.
 
 Once the confirmations are approved, the subscription to JMRP/SNDS will be completed.
 
-Once this is done and if your IP appears to be blocked, you can then request to delist it via the [junkmail procedure](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062){.external}: (usually within 48H).
+Once this is done and if your IP appears to be blocked, you can then request to delist it via the [junkmail procedure](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062){.external} (usually within 48H).
 
 For additional information, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656){.external} with Microsoft. 
 
