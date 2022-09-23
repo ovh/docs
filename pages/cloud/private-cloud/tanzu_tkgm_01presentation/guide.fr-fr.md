@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 22/09/2022**
+**Dernière mise à jour le 23/09/2022**
 
 ## Objectif
 
@@ -30,14 +30,14 @@ order: 02
 
 Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter de ses fonctionnalités et de son évolutivité.
 
-Tanzu Kubernetes Grid permet de déployer et d'administrer un ou plusieurs clusters Kubernetes au sein de votre infrastructure VMware. L'outil d'administration de ces clusters s'appuie lui même sur Kubernetes. 
+Tanzu Kubernetes Grid permet de déployer et d'administrer un ou plusieurs clusters Kubernetes au sein de votre infrastructure VMware. L'outil d'administration de ces clusters s'appuie lui-même sur Kubernetes. 
 
 
 ### Installation initiale de Tanzu Kubernetes Grid
 
-Consultez cette documentation pour installer Tanzu Kubernetes Grid [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-installation).
+Consultez cette documentation [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-installation) pour effectuer l'installation.
 
-L'installation de **Tanzu Kubernetes Grid** sur le cluster VMware nécessite six nouvelles machines virtuelles pour faire fonctionner le cluster d'administration ainsi qu'une machine virtuelle d'administration.
+Le fonctionnement de **Tanzu Kubernetes Grid** sur le cluster VMware nécessite six nouvelles machines virtuelles pour faire fonctionner le cluster d'administration. Une autre machine virtuelle est nécessaire pour l'administration, cette machine virtuelle est fournie par OVHcloud.
 
 ![01 admin cluster diagram](images/01-admin-cluster-diagram01.png){.thumbnail}
 
@@ -46,42 +46,43 @@ L'installation de **Tanzu Kubernetes Grid** sur le cluster VMware nécessite six
 > Le cluster d'administration doit être utilisé exclusivement pour l'administration de **Tanzu Kubernetes Grid**.
 >
 
-### Déploiement d'un cluster de Workload et installation d'une application
+### Déploiement d'un cluster de *Workload* et installation d'une application
 
 Pour pouvoir déployer une application il faut créer des clusters de *Workload* dédiés aux applications.
 
-tous les clusters de WorkLoad sont indépendants l'un de l'autre ce qui permet d'avoir des versions différentes de Kubernetes sur chacun des clusters de Workload.
+Tous les clusters de WorkLoad sont indépendants l'un de l'autre ce qui permet d'avoir des versions différentes de Kubernetes sur chacun des clusters de *Workload*.
 
-Lors de l'installation de **Tanzu Kubernetes Grid** nous avons choisi **kube-vip** pour établir une connexion entre le cluster Kubernetes et le réseau du cluster VMware mais il est aussi possible d'utiliser **Nsx Advanced Load Balancer**.
+Lors de l'installation de **Tanzu Kubernetes Grid** nous avons choisi **kube-vip** pour les interconnexions entre un cluster de *Workload* et le réseau du cluster VMware. Il est aussi possible d'utiliser **Nsx Advanced Load Balancer**.
 
-Consultez ce guide [Administrer Tanzu Kubernete Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-installation). pour déployer un cluster de *Workload* et une application. 
+Consultez ce guide [Administrer Tanzu Kubernete Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-installation) pour déployer un cluster de *Workload* et une application. 
 
-Pour chaque nouveaux clusters Kubernetes de **Workload** installés en mode production six nouvelles machines virtuelles sont rajoutées sur votre infrastructure VMware.
+Pour chaque nouveaux clusters **Workload** installés en mode production six nouvelles machines virtuelles sont rajoutées sur votre infrastructure VMware.
 
 ![02 admin and workload cluster diagram](images/02-tkc-mc-wc01.png){.thumbnail}
 
-Une application peut être constituée de plusieurs PODS qui communiquement entre eux au travers du réseau interne du cluster Kubernetes de *Workflow*, certains ports sont ouvert sur le réseau du cluster **VMware** grace au module **KUBE-VIP**.
+Une application peut être constituée de plusieurs **pods** qui communiquent entre eux au travers du réseau interne du cluster de *Workflow*, certains ports sont ouverts sur le réseau du cluster **VMware** grâce au module **kube-vip**.
 
 ![03 apps and load balancing](images/03-internetworkcommunication01.png){.thumbnail}
 
 ### Gestion des volumes permanents 
 
-Par défaut lors de l'arrêt ou d'un crash d'un pods les données contenues dans ce pod sont perdues. Pour pouvoir stocker des données de manière permanente il est nécessaire de créér des volumes permanents et de les associer aux applications.
+Par défaut lors de l'arrêt ou d'un crash d'un **pods** les données contenues dans ce **pod** sont perdues. Pour pouvoir stocker des données de manière permanente il est nécessaire de créér des volumes permanents et de les associer aux applications.
 
-Les volumes permanents sont stockés par défaut à l'interieur du cluster Kubernetes mais il est plus judicieux d'utiliser un stockage externe au cluster de *Workload*. sur un cluster VMware utilsant **Tanzu Kubernetes Grid** il est possible d'utiliser 
+Les volumes permanents sont stockés par défaut à l'interieur du cluster Kubernetes mais il est possible d'utiliser des volumes permanents dans le stockage local de **VMware**  
 
-Utilisez ce guide [Gestion des volumes permanents dans Tanzu Kubernetes Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-permanent-volumes). pour ajouter une application qui utilise un volume permanent externe.
+Utilisez ce guide [Gestion des volumes permanents dans Tanzu Kubernetes Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-permanent-volumes) pour ajouter une application qui utilise un volume permanent externe.
 
-### Sauvegarde
+### Sauvegarde de vos applications 
 
-Une solution de sauvegarde des applications est à l'étude avec le logiciel kasten de veeam.
-
+Il existe diverses solutions de sauvegarde compatibles avec **Tanzu Kubernetes Grid** dont **kasten** de **Veeam**.
 
 ## Aller plus loin
 
-[Installation d'un cluster TKG](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation)
+[Installation d'un cluster Tanzu Kubernetes GRID](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation)
 
-[Administrer un cluster TKG](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management)
+[Administrer un cluster Tanzu Kubernetes GRID](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management)
+
+[Gestion des volumes sur un cluster Tanzu Kubernetes GRID]
 
 [Présentation de VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
