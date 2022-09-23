@@ -23,6 +23,11 @@ Tapez les commandes suivantes pour monter le système de fichiers distant et dé
 
 ```sh
 mount /dev/sdb1 /mnt
+
+# Si votre partition de boot se situe ailleurs que sur sdb1, montez là également
+# Nous considéreront ici que la partition de boot de votre système est /dev/sdb2
+mount /dev/sdb2 /mnt/boot
+
 mount -o bind /proc /mnt/proc
 mount -o bind /sys /mnt/sys
 mount -o bind /dev /mnt/dev
