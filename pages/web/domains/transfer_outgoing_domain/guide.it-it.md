@@ -3,14 +3,14 @@ title: Trasferire un dominio verso un altro Registrar
 slug: trasferisci_in_uscita_un_dominio_generico_o_geografico
 excerpt: Come effettuare il trasferimento di un dominio OVHcloud verso un altro provider
 section: Trasferimento
-order: 4
+order: 04
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 21/07/2022**
+**Ultimo aggiornamento: 22/09/2022**
 
 ## Obiettivo
 
@@ -87,8 +87,17 @@ Una volta eseguiti gli step precedenti, puoi avviare il processo di trasferiment
 
 Per maggiori informazioni, contatta il tuo nuovo Registrar.
 
+> [!warning]
+>
+> Se il tuo nuovo Registrar richiede un nuovo codice di trasferimento, riattiva la `Protezione contro il trasferimento` per il tuo dominio e disattivala nuovamente pochi minuti dopo. In questo modo è possibile recuperare un nuovo codice di trasferimento.
+>
+
 ## Per saperne di più
 
-[Trasferimento di dominio.co.uk in uscita](../guida_al_trasferimento_in_uscita_di_un_dominio_couk/)
+[Trasferimento di dominio.co.uk in uscita](https://docs.ovh.com/it/domains/guida_al_trasferimento_in_uscita_di_un_dominio_couk/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni (offerte di supporto)(https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

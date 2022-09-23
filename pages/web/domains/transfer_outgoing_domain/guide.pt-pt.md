@@ -10,7 +10,7 @@ section: Transferência
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 21/07/2022**
+**Última atualização: 22/09/2022**
 
 ## Objetivo
 
@@ -87,8 +87,17 @@ Depois de realizar os passos anteriores, pode lançar o processo de transferênc
 
 Para mais informações contacte o seu novo agente de registo.
 
-## Saiba mais
+> [!warning]
+>
+> Se o seu novo agente de registo pedir um novo código de transferência, reative a `Proteção contra a transferência` para o seu domínio e desative-a novamente alguns minutos depois. Assim, poderá recuperar um novo código de transferência.
+>
 
-[Transferência de domínio .co.uk de saída](../transferencia_de_saida_de_um_dominio_couk/)
+## Quer saber mais?
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+[Transferência de domínio .co.uk de saída](https://docs.ovh.com/pt/domains/transferencia_de_saida_de_um_dominio_couk/)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

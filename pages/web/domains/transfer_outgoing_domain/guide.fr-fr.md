@@ -3,10 +3,10 @@ title: Transférer un nom de domaine vers un autre bureau d'enregistrement
 slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
 excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
 section: Transfert
-order: 4
+order: 04
 ---
 
-**Dernière mise à jour le 21/07/2022**
+**Dernière mise à jour le 23/09/2022**
 
 ## Objectif
 
@@ -83,8 +83,17 @@ Une fois les étapes précédentes effectuées, vous pouvez lancer le processus 
 
 Pour plus d'informations, contactez votre nouveau bureau d'enregistrement.
 
+> [!warning]
+>
+> Si votre nouveau bureau d'enregistrement réclame un nouveau code de transfert, réactivez la `Protection contre le transfert` pour votre domaine puis désactivez-là de nouveau quelques minutes après. Vous pourrez ainsi récupérer un nouveau code de transfert.
+>
+
 ## Aller plus loin
 
-[Transfert de nom de domaine .co.uk sortant](../transfert-sortant-dun-nom-de-domaine-couk/)
+[Transfert de nom de domaine .co.uk sortant](https://docs.ovh.com/fr/domains/transfert-sortant-dun-nom-de-domaine-couk/)
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

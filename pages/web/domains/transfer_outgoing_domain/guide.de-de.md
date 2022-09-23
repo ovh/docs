@@ -3,7 +3,7 @@ title: Einen Domainnamen zu einem anderen Registrar transferieren
 slug: ausgehender-transfer-einer-generischen-oder-geografischen-domain
 excerpt: Erfahren Sie hier, wie Sie Ihre Domain von OVHcloud zu einem Provider Ihrer Wahl transferieren
 section: Transfer
-order: 4
+order: 04
 ---
 
 > [!primary]
@@ -88,4 +88,15 @@ Weitere Informationen hierzu erhalten Sie bei Ihren neuen Registrar.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+> [!warning]
+>
+> Wenn Ihr neuer Registrar einen neuen Transfer-Code anfordert, dann können Sie den `Transfer-Schutz` für Ihre Domain erneut aktivieren und ihn einige Minuten später wieder deaktivieren. So können Sie einen neuen Transfer-Code abrufen.
+>
+
+[Transfer einer .co.uk Domain](https://docs.ovh.com/de/domains/transfer-ausgehend-einer-domainnamen-couk/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
