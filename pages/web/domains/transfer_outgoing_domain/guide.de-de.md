@@ -86,12 +86,12 @@ Nach erfolgreicher Durchführung der vorherigen Schritte können Sie den Transfe
 
 Weitere Informationen hierzu erhalten Sie bei Ihren neuen Registrar.
 
-## Weiterführende Informationen
-
 > [!warning]
 >
 > Wenn Ihr neuer Registrar einen neuen Transfer-Code anfordert, dann können Sie den `Transfer-Schutz` für Ihre Domain erneut aktivieren und ihn einige Minuten später wieder deaktivieren. So können Sie einen neuen Transfer-Code abrufen.
 >
+
+## Weiterführende Informationen
 
 [Transfer einer .co.uk Domain](https://docs.ovh.com/de/domains/transfer-ausgehend-einer-domainnamen-couk/)
 
