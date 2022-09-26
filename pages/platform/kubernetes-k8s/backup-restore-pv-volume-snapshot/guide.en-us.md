@@ -1,6 +1,6 @@
 ---
-title: Backing-up and restore your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
-excerpt: Find out how to back-up and restore your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
+title: Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
+excerpt: Find out how to back up and restore your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
 slug: backup-restore-pv-volume-snapshot
 section: Storage
 order: 2
@@ -30,16 +30,17 @@ order: 2
 
 **Last updated 26th September 2022**
 
-In this tutorial, we are using [Kubernetes Volume Snapshots](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) to backup and restore persistent volumes on an OVHcloud Managed Kubernetes cluster.
+In this tutorial, we are using [Kubernetes Volume Snapshots](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) to back up and restore persistent volumes on an OVHcloud Managed Kubernetes cluster.
 
 Volume Snapshots are a Kubernetes feature released in General Availability (GA) on **Kubernetes 1.20**.
+
 They provide the ability to create a “snapshot” of a persistent volume. A snapshot represents a point-in-time copy of a volume. A snapshot can be used either to rehydrate a new volume (pre-populated with the snapshot data) or to restore an existing volume to a previous state (represented by the snapshot).
 
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](https://blog.devrel.ovh/deploying-hello-world/).
 
-The tutorial also supposes that you're familiar with [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/). You also need to know how PVs are handled on OVHcloud Managed Kubernetes service, please refer to the [Persistent Volumes on OVHcloud Managed Kubernetes](https://docs.ovh.com/us/en/kubernetes/ovh-kubernetes-persistent-volumes/) guide.
+The tutorial also supposes that you're familiar with [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/). You also need to know how PVs are handled on the OVHcloud Managed Kubernetes service. Please refer to the [Persistent Volumes on OVHcloud Managed Kubernetes](https://docs.ovh.com/us/en/kubernetes/ovh-kubernetes-persistent-volumes/) guide.
 
 ## Instructions
 
@@ -128,7 +129,7 @@ kubectl apply -f nginx-example-with-pv.yml
 
 > [!primary]
 >
-> If you look attentively to the `deployment` part of this manifest, you will see that we have defined a `.spec.strategy.type`. It specifies the strategy used to replace old Pods by new ones, and we have set it to `Recreate`, so all existing Pods are killed before new ones are created.
+> If you look attentively to the `deployment` part of this manifest, you will see that we have defined a `.spec.strategy.type`. It specifies the strategy used to replace old pods by new ones, and we have set it to `Recreate`, so all existing pods are killed before new ones are created.
 >
 > We do so as the Storage Class we are using, `csi-cinder-high-speed`, only supports a `ReadWriteOnce`, so we can only have one pod writing on the Persistent Volume at any given time.
 
@@ -138,7 +139,7 @@ Wait until you get an external IP:
 kubectl -n nginx-example get svc nginx-service -w
 ```
 
-When you have a Load Balancer External IP, save it:
+When you have a Load Balancer external IP, save it:
 
 ```bash
 export LB_IP=$(kubectl -n nginx-example get svc nginx-service -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
@@ -158,7 +159,7 @@ First, get the name of the Nginx running pod:
 export POD_NAME=$(kubectl get po -n nginx-example -o name)
 ```
 
-And then connect to it and see your access logs:
+And then connect to it and view your access logs:
 
 ```bash
 kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
@@ -240,7 +241,7 @@ And apply it:
 kubectl apply -f nginx-example-snapshot.yml
 ```
 
-You shoud have a result like this:
+You should have a result like this:
 
 <pre class="console"><code>$ kubectl apply -f nginx-example-snapshot.yml
 
@@ -253,7 +254,7 @@ nginx-snapshot   true         nginx-logs                           1Gi          
 
 ### Simulate a disaster
 
-Let’s simulate a disaster scenario, deleting the logs files from the `PVC`:
+Let’s simulate a disaster scenario, deleting the log files from the `PVC`:
 
 ```bash
 kubectl -n nginx-example exec $POD_NAME -c nginx -- rm /var/log/nginx/access.log
@@ -276,7 +277,7 @@ drwx------ 2 root root 16384 Sep 26 06:54 lost+found
 
 To restore from a given snapshot, you need to delete the original `PVC` and then recreate it from the snapshot.
 
-Downscale the deployment to 0 repicas and delete the original `PVC`:
+Downscale the deployment to 0 replicas and delete the original `PVC`:
 
 ```bash
 kubectl -n nginx-example scale deployment/nginx-deployment --replicas=0 
@@ -317,14 +318,14 @@ Verify that the PVC is restored:
 kubectl -n nginx-example get pvc
 ```
 
-The volume should have a status equals to `Bound`. Now you can restore the deployment to its replicas value of 1, and wait until the pod is again `Running`:
+The volume should have a status equal to `Bound`. Now you can restore the deployment to its replica value of 1, and wait until the pod is again `Running`:
 
 ```bash
 kubectl -n nginx-example scale deployment/nginx-deployment --replicas=1 
 kubectl -n nginx-example get pods -w
 ```
 
-Now you can verify that the `acces.log` file is back and its content is still there:
+Now you can verify that the `access.log` file is back and its content is still there:
 
 ```bash
 export POD_NAME=$(kubectl get po -n nginx-example -o name)
@@ -379,9 +380,9 @@ $ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.
 141.94.164.46 - - [26/Sep/2022:06:56:33 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 </code></pre>
 
-## Cleanup
+## Clean-up
 
-At the end you can proceed to clean up by deleting everything, delete the `nginx-example` namespace:
+At the end you can proceed to clean up by deleting everything. Delete the `nginx-example` namespace:
 
 ```bash
 kubectl delete namespace nginx-example
