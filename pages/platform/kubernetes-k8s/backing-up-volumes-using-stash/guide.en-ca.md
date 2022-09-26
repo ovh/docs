@@ -28,7 +28,7 @@ order: 4
  }
 </style>
 
-**Last updated December 21 2021.**
+**Last updated 26th September 2022**
 
 In this tutorial, we are using [Stash](https://stash.run/){.external} to backup and restore persistent volumes on an OVHcloud Managed Kubernetes cluster.
 
@@ -59,7 +59,7 @@ Before creating your S3 bucket you need to:
 
 - [Get Openstack RC File v3 from Horizon](../../public-cloud/access_and_security_in_horizon/)
 
-You should now have access to your OpenStack RC file, with a filename line `<user_name>-openrc.sh`, and the username and password for your OpenStack account.
+You should now have access to your OpenStack RC file, with a filename like `<user_name>-openrc.sh`, and the username and password for your OpenStack account.
 
 ### Set the OpenStack environment variables
 
