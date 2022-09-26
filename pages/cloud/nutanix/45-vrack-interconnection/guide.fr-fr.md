@@ -208,9 +208,6 @@ Le load balancer est relié au **vRack** commun aux deux sites et l'accès à **
 
 [Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/)
 
-
-
-
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
 
