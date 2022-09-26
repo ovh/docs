@@ -56,11 +56,16 @@ Le cluster de Roubaix utilise ces adresses:
 - LoadBalancer : `192.168.0.128/27`
 - Version du cluster : `6.1`.
 
-Aidez-vous de ce guide pour redéployer vos deux clusters [Redéploiement personnalisé de votre Cluster](https://docs.ovh.com/fr/nutanix/cluster-custom-redeployment/)
+Aidez-vous de ce guide pour redéployer vos clusters [Redéploiement personnalisé de votre Cluster](https://docs.ovh.com/fr/nutanix/cluster-custom-redeployment/)
+
+> [!primary]
+>
+> Dans notre exemple nous avons fait le rédéploiement des deux clusters mais il est possible de n'en redéployer qu'un si vous avez déja un cluster Nutanix chez OVHcloud, dans ce cas il faudra adapter le rédeploiement du nouveau cluster en utilisant d'autres adresses IP que celles du cluster d'origine.
+>
 
 ### Arrêt de la machine virtuelle **OVHgateway**.
 
-La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP privé sur les deux sites nous allons arrêter la machine virtuelle du **Cluster2** à Roubaix. La connexion Internet sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
+La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP privée sur les deux sites nous allons arrêter la machine virtuelle du **Cluster2** à Roubaix. La connexion Internet sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
 
 Connectez-vous à l'interface **Prism Central** du cluster situé à Roubaix. 
 
