@@ -28,7 +28,7 @@ order: 2
  }
 </style>
 
-**Last updated 22nd September 2022**
+**Last updated 26th September 2022**
 
 In this tutorial, we are using [Velero](https://velero.io/){.external} to backup and restore an OVHcloud Managed Kubernetes cluster.
 
@@ -56,7 +56,7 @@ Before creating your S3 bucket you need to:
 
 ### Setting the OpenStack environment variables
 
-You should now have access to your OpenStack RC file, with a filename line `<user_name>-openrc.sh`, and the username and password for your OpenStack account.
+You should now have access to your OpenStack RC file, with a filename like `<user_name>-openrc.sh`, and the username and password for your OpenStack account.
 
 Set the environment variables by sourcing the OpenStack RC file:
 
