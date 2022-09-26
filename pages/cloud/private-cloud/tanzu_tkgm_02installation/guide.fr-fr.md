@@ -272,7 +272,7 @@ Cliquez sur `NEXT`{.action}
 
 ![03 Create TKG CLUSTER 09](images/03-create-tkg-cluster09.png){.thumbnail}
 
-Dans l'option **Metadata** dans l'onglet **LABELS** saisissez `tkgm` pour le nom.
+Dans l'option **Metadata** dans l'onglet **LABELS (OPTIONAL)** saisissez `tkgm` pour le nom.
 
 Cliquez sur `NEXT`{.action} 
 
@@ -326,7 +326,7 @@ Le déploiement du cluster **Tanzu Kubernetes Grid** est lancé veuillez attendr
 
 ![03 Create TKG CLUSTER 18](images/03-create-tkg-cluster18.png){.thumbnail}
 
-Une autre indication qui signale que l'installation est terminé se trouve dans la console de la machine virtuelle de **Bootstrap** avec le message **Management cluster created** et **You can now create your first workload cluster etc...**.
+Une autre indication qui signale que l'installation est terminée se trouve dans la console de la machine virtuelle de **Bootstrap** avec le message **Management cluster created** et **You can now create your first workload cluster etc...**.
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
