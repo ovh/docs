@@ -84,7 +84,7 @@ You can contact your provider for more information about this process.
 
 > [!warning]
 >
-> If your new registrar requests a new transfer code, re-enable `Transfer protection` for your domain, then disable it again a few minutes later. You can then retrieve a new transfer code.
+> If your new registrar requests a new transfer code, re-enable `Transfer protection` for your domain, then disable it again a few minutes later. You can then retrieve the new transfer code.
 >
 
 ## Go further
