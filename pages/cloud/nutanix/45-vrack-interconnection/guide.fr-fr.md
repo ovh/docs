@@ -6,7 +6,7 @@ section: Plan de reprise d'activité
 order: 03
 ---
 
-**Dernière mise à jour le 21/09/2022**
+**Dernière mise à jour le 26/09/2022**
 
 ## Objectif
 
@@ -40,18 +40,18 @@ Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des 
 - Serveur 2 : adresse VM **CVM** `192.168.2.2`, adresse IP hyperviseur **AHV** `192.168.2.22`.
 - Serveur 3 : adresse VM **CVM** `192.168.2.3`, adresse IP hyperviseur **AHV** `192.168.2.23`.
 - Adresse virtuelle de **Prism Element** : `192.168.2.100`.
-- Adresse IP  **Prism Central** :`192.168.2.101`.
+- Adresse IP **Prism Central** :`192.168.2.101`.
 - Passerelle : `192.168.2.254`.
 - LoadBalancer : `192.168.0.128/27`
 - Version du cluster : `6.1`.
 
-Le cluster de Roubaix utilise ces adresses:
+Le cluster de Roubaix utilise ces adresses :
 
 - Serveur 1 : adresse VM **CVM** `192.168.1.1`, adresse IP hyperviseur **AHV** `192.168.1.21`.
 - Serveur 2 : adresse VM **CVM** `192.168.1.2`, adresse IP hyperviseur **AHV** `192.168.1.22`.
 - Serveur 3 : adresse VM **CVM** `192.168.1.3`, adresse IP hyperviseur **AHV** `192.168.1.23`.
 - Adresse virtuelle de **Prism Element** : `192.168.1.100`.
-- Adresse IP  **Prism Central** :`192.168.1.101`.
+- Adresse IP **Prism Central** :`192.168.1.101`.
 - Passerelle : `192.168.2.254`.
 - LoadBalancer : `192.168.0.128/27`
 - Version du cluster : `6.1`.
@@ -59,8 +59,7 @@ Le cluster de Roubaix utilise ces adresses:
 Aidez-vous de ce guide pour redéployer vos clusters [Redéploiement personnalisé de votre Cluster](https://docs.ovh.com/fr/nutanix/cluster-custom-redeployment/)
 
 > [!primary]
->
-> Dans notre exemple nous avons fait le rédéploiement des deux clusters mais il est possible de n'en redéployer qu'un si vous avez déja un cluster Nutanix chez OVHcloud, dans ce cas il faudra adapter le rédeploiement du nouveau cluster en utilisant d'autres adresses IP que celles du cluster d'origine.
+> Dans notre exemple nous avons fait le redéploiement des deux clusters mais il est possible de n'en redéployer qu'un si vous avez déjà un cluster Nutanix chez OVHcloud, dans ce cas il faudra adapter le redéploiement du nouveau cluster en utilisant d'autres adresses IP que celles du cluster d'origine sur le même plan IP.
 >
 
 ### Arrêt de la machine virtuelle **OVHgateway**.
