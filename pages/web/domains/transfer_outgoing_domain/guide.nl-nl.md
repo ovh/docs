@@ -4,7 +4,7 @@ title: Overdracht van uw OVH-domeinnaam naar een andere registrar
 excerpt: Leer hoe u een OVH-domeinnaam overdraagt naar de registrar van uw keuze
 slug: uitgaande_overdracht_van_een_generische_of_geografische_domeinnaam
 section: Overdracht
-order: 4
+order: 04
 ---
 
 **Laatste update 21-03-2018**

@@ -3,7 +3,7 @@ title: Transferring a domain name to another registrar
 slug: outgoing-transfer-of-generic-or-geographical-domain-name
 excerpt: Find out how to move a domain name from OVHcloud to a provider of your choice
 section: Transfer
-order: 4
+order: 04
 ---
 
 **Last updated 21st July 2022**
@@ -78,8 +78,17 @@ After completing the previous steps you can initiate the transfer, usually by pl
 
 You can contact your provider for more information about this process.
 
+> [!warning]
+>
+> If your new registrar requests a new transfer code, re-enable `Transfer protection` for your domain, then disable it again a few minutes later. You can then retrieve the new transfer code.
+>
+
 ## Go further
 
-[Transferring a .uk domain name to another registrar](../outgoing_couk_domain_name_transfer/)
+[Transferring a .uk domain name to another registrar](https://docs.ovh.com/au/en/domains/outgoing_couk_domain_name_transfer/)
 
-Join our community of users on <https://community.ovh.com/en/>. 
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en-au/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>.
