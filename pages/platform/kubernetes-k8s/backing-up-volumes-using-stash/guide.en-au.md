@@ -3,7 +3,7 @@ title: Backing-up Persistent Volumes using Stash
 excerpt: Backing-up Persistent Volumes using Stash
 slug: backing-up-volumes-using-stash
 section: Storage
-order: 3
+order: 4
 ---
 
 <style>
