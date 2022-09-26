@@ -85,7 +85,7 @@ Pour plus d'informations, contactez votre nouveau bureau d'enregistrement.
 
 > [!warning]
 >
-> Si votre nouveau bureau d'enregistrement réclame un nouveau code de transfert, réactivez la `Protection contre le transfert` pour votre domaine puis désactivez-là de nouveau quelques minutes après. Vous pourrez ainsi récupérer un nouveau code de transfert.
+> Si votre nouveau bureau d'enregistrement réclame un nouveau code de transfert, réactivez la `Protection contre le transfert` pour votre domaine puis désactivez-la de nouveau quelques minutes après. Vous pourrez ainsi récupérer un nouveau code de transfert.
 >
 
 ## Aller plus loin
