@@ -47,7 +47,7 @@ Wir empfehlen Ihnen, folgende Anleitungen zu verwenden, um die jeweils gewünsch
 
 ### Dienstleistungseinstellungen aufrufen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie oben rechts auf den Namen Ihrer Kundenkennung. Öffnen Sie die `Dienstverwaltung`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie oben rechts auf den Namen Ihrer Kundenkennung. Öffnen Sie die `Produkte und Dienstleistungen`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 

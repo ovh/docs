@@ -67,9 +67,9 @@ Si vous installez un système d'exploitation GNU/Linux, vous pouvez ajouter votr
 
 Si une clé SSH est déjà enregistrée, elle apparaît dans le menu déroulant sous « Clés SSH » en bas. Sinon, vous devrez d'abord en ajouter une dans la section « Mes services ».
 
-Pour ce faire, ouvrez la barre latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Gestion des services`{.action}.
+Pour ce faire, ouvrez la barre latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Produits et services`{.action}.
 
-![Personnaliser la configuration de la partition](images/SSH_13.1.png){.thumbnail}
+![Personnaliser la configuration de la partition](images/SSH_keys_panel_2022.png){.thumbnail}
 
 Dans « Mes services », basculez vers l'onglet `Clés SSH`{.action} et cliquez sur `Ajouter une clé SSH`{.action}.
 

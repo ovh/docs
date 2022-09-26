@@ -48,7 +48,7 @@ Przejdź do opisu operacji, którą chcesz wykonać:
 
 ### Uzyskiwanie dostępu do konfiguracji usług
 
-Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta na pasku menu w prawym górnym rogu, następnie wybierz `Zarządzanie usługami`{.action}.
+Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta na pasku menu w prawym górnym rogu, następnie wybierz `Produkty i usługi`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 

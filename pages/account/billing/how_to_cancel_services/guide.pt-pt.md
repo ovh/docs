@@ -87,7 +87,7 @@ Clique no tipo de produto a rescindir na seguinte lista das principais ofertas O
 
 #### Servidor dedicado <a name="dedicated"></a>
 
-Para rescindir o seu [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir o seu [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -95,7 +95,7 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 #### VPS <a name="vps"></a>
 
-Para rescindir o seu servidor [VPS](https://www.ovhcloud.com/pt/vps/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir o seu servidor [VPS](https://www.ovhcloud.com/pt/vps/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -107,7 +107,7 @@ Para rescindir a sua oferta [Managed bare metal](https://www.ovhcloud.com/pt/man
 
 #### Servidor NAS-HA <a name="nas"></a>
 
-Para rescindir o seu [Servidor NAS-HA](https://www.ovh.pt/nas/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir o seu [Servidor NAS-HA](https://www.ovh.pt/nas/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -115,7 +115,7 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 #### Load Balancer <a name="iplb"></a>
 
-Para rescindir a oferta [Load Balancer](https://www.ovh.pt/solucoes/load-balancer/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir a oferta [Load Balancer](https://www.ovh.pt/solucoes/load-balancer/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -123,7 +123,7 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 #### Licenças <a name="licences"></a>
 
-Para cancelar uma licença subscrita junto da OVHcloud, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para cancelar uma licença subscrita junto da OVHcloud, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita da licença a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -137,7 +137,7 @@ Para rescindir a sua oferta [Hosted Private Cloud powered by VMware](https://www
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
-Para rescindir o serviço [Veeam Cloud Connect](https://www.ovhcloud.com/pt/storage-solutions/veeam-cloud-connect/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir o serviço [Veeam Cloud Connect](https://www.ovhcloud.com/pt/storage-solutions/veeam-cloud-connect/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -162,7 +162,7 @@ Também pode [consultar o seu consumo atual](https://docs.ovh.com/pt/public-clou
 > Após o cancelamento e a assinatura em curso, o seu domínio genérico (.com,.org. net, etc.) fica "reservado" durante o período de "*graça*" (5 dias) e depois durante o período de "*redenção*" (35 a 40 dias suplementares), o que significa que só poderá renová-lo durante esses períodos.
 >
 
-Para rescindir o seu [domínio](https://www.ovhcloud.com/pt/domains/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir o seu [domínio](https://www.ovhcloud.com/pt/domains/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -170,7 +170,7 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 #### Alojamento Web <a name="hosting"></a>
 
-Para rescindir o seu [alojamento Web](https://www.ovhcloud.com/pt/web-hosting/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir o seu [alojamento Web](https://www.ovhcloud.com/pt/web-hosting/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -182,7 +182,7 @@ Não é possível rescindir as ofertas [SSL sectigo](https://www.ovhcloud.com/pt
 
 #### OVHcloud Web Paas powered by Platform.sh <a name="webpaas"></a>
 
-Para rescindir a sua oferta [Web Paas](https://www.ovhcloud.com/pt/web-paas/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir a sua oferta [Web Paas](https://www.ovhcloud.com/pt/web-paas/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -190,7 +190,7 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 #### CloudDB <a name="clouddb"></a>
 
-Para rescindir a sua oferta [CloudDB](https://www.ovh.pt/cloud/cloud-databases/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir a sua oferta [CloudDB](https://www.ovh.pt/cloud/cloud-databases/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -200,7 +200,7 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 Uma oferta MX Plan não está sujeita a subscrição periódica. Não pode ser objeto de rescisão, mas, se for esse o seu desejo, pode suprimir a sua oferta.
 
-Para eliminar a oferta [MX Plan](https://docs.ovh.com/pt/emails/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para eliminar a oferta [MX Plan](https://docs.ovh.com/pt/emails/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Eliminar imediatamente o MX Plan`{.action}.
 
@@ -241,7 +241,7 @@ Se pretender rescindir toda a plataforma, recomendamos que comece pela eliminaç
 * Para eliminar uma conta Sharepoint individual, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na secção `Web Cloud`{.action}. Clique sucessivamente em `Microsoft`{.action}, `Sharepoint`{.action}, e depois na sua plataforma Sharepoint.<br>
 No separador `Utilizadores`{.action}, clique no botão `...`{.action} à direita da conta a eliminar e depois `Desativar o SharePoint`{.action}. Leia as informações e clique em `Validar`{.action}.
 
-* Para rescindir o conjunto da plataforma Sharepoint, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+* Para rescindir o conjunto da plataforma Sharepoint, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita da plataforma Sharepoint a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -251,7 +251,7 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 #### SSL Gateway <a name="ssl_gateway"></a>
 
-Para rescindir a sua oferta [SSL Gateway](https://www.ovh.pt/ssl-gateway/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir a sua oferta [SSL Gateway](https://www.ovh.pt/ssl-gateway/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -264,7 +264,7 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 > Pode anular um pedido de rescisão até 24 horas antes do fim da subscrição.
 >
 
-Para anular um pedido de rescisão, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome no canto superior direito e no botão `Gestão dos serviços`{.action}.
+Para anular um pedido de rescisão, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome no canto superior direito e no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço que é objeto de um pedido de rescisão e, a seguir, em `Anular a rescisão do serviço`{.action} 
 

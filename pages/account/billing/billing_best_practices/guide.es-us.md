@@ -87,7 +87,7 @@ Le informaremos de las etapas de la entrega y sabrá si es necesario realizar al
 
 Si quiere dejar de utilizar uno de sus servicios, puede darlo de baja, pasar la renovación a modo manual o eliminarlo inmediatamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
-Haga clic en su nombre en la esquina superior derecha de su pantalla y, seguidamente, en `Gestión de servicios`{.action}. En el lado derecho de su pantalla, haga clic en el botón `...`{.action} correspondiente al servicio en el que quiera realizar la acción y seleccione uno de los siguientes botones:
+Haga clic en su nombre en la esquina superior derecha de su pantalla y, seguidamente, en `Productos y servicios`{.action}. En el lado derecho de su pantalla, haga clic en el botón `...`{.action} correspondiente al servicio en el que quiera realizar la acción y seleccione uno de los siguientes botones:
 
 - `Configurar la renovación`{.action}: en la siguiente pantalla, podrá pasar el `Modo de renovación` del servicio a `Manual`. Haga clic en `Siguiente`{.action} y `Confirmar`{.action}. Antes de la fecha de expiración del servicio, recibirá varias notificaciones por correo electrónico. Si no renueva el servicio, se eliminará **definitivamente**.
 - `Dar de baja`{.action}: en la siguiente pantalla, indique los motivos de la solicitud de baja y haga clic en `Aceptar`{.action}. La operación se eliminará **definitivamente** en la fecha de expiración del servicio.

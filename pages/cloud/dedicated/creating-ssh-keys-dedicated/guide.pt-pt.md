@@ -152,9 +152,9 @@ Apague do seu ficheiro "authorized_keys" a chave que corresponde ao utilizador q
 
 A Área de Cliente OVHcloud permite-lhe guardar chaves públicas criadas utilizando um dos seguintes tipos de encriptação suportados atualmente (RSA, ECDSA, ED25519). 
 
-Abra a barra de navegação lateral clicando no seu nome no canto superior direito e utilize o atalho `Gestão dos serviços`{.action}.
+Abra a barra de navegação lateral clicando no seu nome no canto superior direito e utilize o atalho `Produtos e serviços`{.action}.
 
-![Painel de gestão de chaves SSH](images/SSH_keys_panel_1.1.png){.thumbnail}
+![Painel de gestão de chaves SSH](images/SSH_keys_panel_2022.png){.thumbnail}
 
 Em “Os meus serviços” passe para o separador `Chaves SSH`{.action} e clique em `Adicionar chave SSH`{.action}.
 
@@ -181,9 +181,9 @@ Se tiver adicionado múltiplas chaves SSH à sua Área de Cliente, é possível 
 > Tenha em conta que, uma vez definida a chave SSH, esta será também utilizada como meio de ligação durante o reboot de um servidor em modo rescue. Para receber uma palavra-passe, a chave predefinida deve ser desativada antes de reiniciar o servidor em modo rescue.
 >
 
-Abra a barra de navegação lateral clicando no seu nome no canto superior direito e utilize o atalho `Gestão dos serviços`{.action}.
+Abra a barra de navegação lateral clicando no seu nome no canto superior direito e utilize o atalho `Produtos e serviços`{.action}.
 
-![Painel de gestão de chaves SSH](images/SSH_keys_panel_1.1.png){.thumbnail}
+![Painel de gestão de chaves SSH](images/SSH_keys_panel_2022.png){.thumbnail}
 
 Na lista de chaves, clique no ícone `Chave` ao lado da chave SSH da sua escolha para a definir como chave predefinida.
 

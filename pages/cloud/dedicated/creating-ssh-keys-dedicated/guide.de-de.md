@@ -165,9 +165,9 @@ Löschen Sie den Schlüssel, der dem Benutzer entspricht, dessen Zugriff entfern
 
 Im OVHcloud Kundencenter können Sie öffentliche Schlüssel speichern, die mit einem der unterstützten Verschlüsselungstypen (derzeit RSA, ECDSA, ED25519) erstellt wurden. 
 
-Öffnen Sie das vertikale Seitenmenü, indem Sie oben rechts auf Ihren Namen klicken und wählen Sie danach den Shortcut `Dienstverwaltung`{.action}.
+Öffnen Sie das vertikale Seitenmenü, indem Sie oben rechts auf Ihren Namen klicken und wählen Sie danach den Shortcut `Produkte und Dienstleistungen`{.action}.
 
-![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_1.1.png){.thumbnail}
+![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_2022.png){.thumbnail}
 
 In “Meine Dienste” wechseln Sie zum Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
 
@@ -194,9 +194,9 @@ Wenn Sie mehrere SSH-Schlüssel in Ihrem Kundencenter hinzugefügt haben, könne
 > Bitte beachten Sie, dass der SSH-Schlüssel nach seiner Standardeinstellung auch beim Neustart eines Servers im Rescue-Modus zum sicheren Login verwendet wird. Um stattdessen ein Passwort zu erhalten, muss der Standardschlüssel deaktiviert werden, bevor der Server im Rescue-Modus neu gestartet wird.
 >
 
-Öffnen Sie das vertikale Seitenmenü, indem Sie oben rechts auf Ihren Namen klicken und wählen Sie danach den Shortcut `Dienstverwaltung`{.action}.
+Öffnen Sie das vertikale Seitenmenü, indem Sie oben rechts auf Ihren Namen klicken und wählen Sie danach den Shortcut `Produkte und Dienstleistungen`{.action}.
 
-![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_1.1.png){.thumbnail}
+![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_2022.png){.thumbnail}
 
 Klicken Sie in der Liste der SSH-Schlüssel neben dem gewünschten Schlüssel auf das `Schlüssel-Icon`, um diesen als Standardschlüssel zu definieren.
 
