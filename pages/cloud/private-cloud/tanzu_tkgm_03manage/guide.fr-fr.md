@@ -29,9 +29,9 @@ order: 04
 
 ## En pratique
 
-Nous allons déployer un cluster de *Workload* sur un cluster d'administration **Tanzu Kubernetes Grid**. et ajouter une application.
+Nous allons déployer un cluster de *Workload* sur un cluster d'administration **Tanzu Kubernetes Grid** et ajouter une application.
 
-A la fin de l'installation vous aurez six nouvelles machines virtuelles en plus des sept qui sont necessaires au fonctionnement du cluster de management. 
+A la fin de l'installation vous aurez six nouvelles machines virtuelles en plus des sept qui sont nécessaires au fonctionnement du cluster de management. 
 
 ![00 Cluster administration & workload Diagram01](images/00-tkc-mc-wc01.png){.thumbnail}
 
