@@ -10,7 +10,7 @@ order: 03
 
 ## Objectif
 
-**Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un même vRack sur deux sites OVHcloud distants. Dans ce guide l'interconnexion sera faites entre les datacenters de Gravelines et de Roubaix.** 
+**Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un même vRack sur deux sites OVHcloud distants. Dans ce guide l'interconnexion est effectuée entre les datacenters de Gravelines et de Roubaix.** 
 
 
 > [!warning]
@@ -28,7 +28,7 @@ order: 03
 
 ## En pratique
 
-Nous allons interconnecter deux clusters Nutanix sur deux sites distants l'un à Gravelines et l'autre à Roubaix au travers du même **vRack**. Pour plus d'informations concernant les vRack OHVcloud vous pouvez consulter cette présentation [vRack](https://www.ovh.com/fr/solutions/vrack/)
+Nous allons interconnecter deux clusters Nutanix distants, l'un à Gravelines et l'autre à Roubaix au travers du même **vRack**. Cliquez sur le ce lien [Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/) pour en savoir plus sur la solution OVHcloud de **vRack**.
 
 ### Préparation des deux clusters avant l'interconnexion
 
@@ -59,7 +59,7 @@ Le cluster de Roubaix utilise ces adresses :
 Aidez-vous de ce guide pour redéployer vos clusters [Redéploiement personnalisé de votre Cluster](https://docs.ovh.com/fr/nutanix/cluster-custom-redeployment/)
 
 > [!primary]
-> Dans notre exemple nous avons fait le redéploiement des deux clusters mais il est possible de n'en redéployer qu'un si vous avez déjà un cluster Nutanix chez OVHcloud, dans ce cas il faudra adapter le redéploiement du nouveau cluster en utilisant d'autres adresses IP que celles du cluster d'origine sur le même plan IP.
+> Ce guide vous propose de redéployer les deux clusters mais vous pouvez n'en redéployer qu'un, le plus important est qu'il ne faut pas avoir d'adresses IP identiques sur le réseau sauf pour la passerelle OVHGateway.
 >
 
 ### Arrêt de la machine virtuelle **OVHgateway**.
@@ -205,6 +205,9 @@ Le load balancer est relié au **vRack** commun aux deux sites et l'accès à **
 [Réplication asynchrone ou NearSync au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
 
 [Réplication avancée avec Leap](https://docs.ovh.com/fr/nutanix/leap-replication/)
+
+[Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/)
+
 
 
 
