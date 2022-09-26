@@ -139,9 +139,9 @@ Voici un exemple de résultat (dans ce cas, le bloc 122.122.122.121/28 et l'IP 1
 
 >
     time: 3600,
-    date : "2022-08-29T17:42:50+01:00",
-    ipSpamming : "122.122.122.122",
-    state : "lockedForSpam" 
+    date: "2022-08-29T17:42:50+01:00",
+    ipSpamming: "122.122.122.122",
+    state: "blockedForSpam" 
 >
 
 Donc :
