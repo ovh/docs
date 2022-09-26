@@ -3,7 +3,7 @@ title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
 slug: backing-up-cluster-with-velero
 section: Storage
-order: 2
+order: 3
 ---
 
 <style>
