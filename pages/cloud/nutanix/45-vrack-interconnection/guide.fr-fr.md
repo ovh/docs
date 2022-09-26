@@ -64,7 +64,7 @@ Aidez-vous de ce guide pour redéployer vos clusters [Redéploiement personnalis
 
 ### Arrêt de la machine virtuelle **OVHgateway**.
 
-La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP privée sur les deux sites nous allons arrêter la machine virtuelle **OVHGateway** du **Cluster2** à Roubaix. La connexion Internet sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
+La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP privée sur les deux sites nous allons arrêter la machine virtuelle **OVHGateway** de Roubaix. La connexion Internet sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
 
 Connectez-vous à l'interface **Prism Central** du cluster situé à Roubaix. 
 
