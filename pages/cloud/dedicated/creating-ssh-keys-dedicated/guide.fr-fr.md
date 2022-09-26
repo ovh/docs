@@ -152,9 +152,9 @@ Supprimez de votre fichier « authorized_keys » la clé qui correspond à l'u
 
 L’espace client OVHcloud vous permet de stocker des clés publiques créées en utilisant l'un des types de chiffrement pris en charge (actuellement RSA, ECDSA, ED25519). 
 
-Ouvrez la barre de navigation latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Gestion des services`{.action}.
+Ouvrez la barre de navigation latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Produits et services`{.action}.
 
-![Espace de gestion des clés SSH](images/SSH_keys_panel_1.1.png){.thumbnail}
+![Espace de gestion des clés SSH](images/SSH_keys_panel_2022.png){.thumbnail}
 
 Dans « Mes services », accédez à l’onglet `Clés SSH`{.action} et cliquez sur `Ajouter une clé SSH`{.action}.
 
@@ -181,9 +181,9 @@ Si vous avez ajouté plusieurs clés SSH dans votre espace client, il est possib
 > Veuillez noter qu'une fois la clé SSH par défaut définie, elle sera également utilisée comme moyen de connexion lors du redémarrage d’un serveur en mode rescue. Pour recevoir un mot de passe à la place, la clé par défaut doit être désactivée avant de redémarrer le serveur en mode rescue.
 >
 
-Ouvrez la barre de navigation latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Gestion des services`{.action}.
+Ouvrez la barre de navigation latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Produits et services`{.action}.
 
-![Espace de gestion des clés SSH](images/SSH_keys_panel_1.1.png){.thumbnail}
+![Espace de gestion des clés SSH](images/SSH_keys_panel_2022.png){.thumbnail}
 
 Dans la liste des clés, cliquez sur l'icône `Clé` à côté de la clé SSH de votre choix pour la définir comme clé par défaut.
 

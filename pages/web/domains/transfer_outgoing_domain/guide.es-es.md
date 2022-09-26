@@ -3,14 +3,14 @@ title: Transferir un dominio a otro agente registrador
 slug: transferencia_saliente_de_un_dominio_generico_o_geografico
 excerpt: Cómo transferir un dominio de OVHcloud al agente registrador que elija
 section: 'Operaciones en los dominios'
-order: 3
+order: 03
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 21/07/2022**
+**Última actualización: 22/09/2022**
 
 ## Objetivo
 
@@ -87,6 +87,17 @@ Una vez que haya realizado los pasos anteriores, puede iniciar la transferencia,
 
 Para más información, contacte con su nuevo agente registrador.
 
+> [!warning]
+>
+> Si su nuevo agente registrador solicita un nuevo código de transferencia, reactive la `Protección contra la transferencia` para su dominio y desactive este de nuevo unos minutos después. Así podrá obtener un nuevo código de transferencia.
+>
+
 ## Más información
+
+[Transferencia del dominio .co.uk saliente](https://docs.ovh.com/es/domains/transferencia-saliente-de-dominio-uk/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

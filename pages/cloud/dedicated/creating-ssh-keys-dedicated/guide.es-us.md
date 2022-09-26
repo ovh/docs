@@ -152,9 +152,9 @@ Elimine la clave del usuario al que se le va a revocar el acceso en el archivo �
 
 El panel de control de OVHcloud le permite almacenar las claves públicas creadas utilizando uno de los tipos de cifrado admitidos (actualmente RSA, ECDSA y ED25519). 
 
-Abra la navegación de la barra lateral haciendo clic en su nombre en la esquina superior derecha y utilice el acceso directo `Gestión de servicios`{.action}.
+Abra la navegación de la barra lateral haciendo clic en su nombre en la esquina superior derecha y utilice el acceso directo `Productos y servicios`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2022.png){.thumbnail}
 
 En «Mis servicios», cambie a la pestaña `Llaves SSH`{.action} y haga clic en `Añadir una llave SSH`{.action}.
 
@@ -181,9 +181,9 @@ Si ha añadido varias llaves SSH al área de cliente, es posible establecer una 
 > Tenga en cuenta que, una vez definida la llave SSH por defecto, también se utilizará como medio de conexión al reiniciar un servidor en modo de rescate. Para recibir una contraseña en su lugar, debe desactivarse la llave por defecto antes de reiniciar el servidor en modo de rescate.
 >
 
-Abra la navegación de la barra lateral haciendo clic en su nombre en la esquina superior derecha y utilice el acceso directo `Gestión de servicios`{.action}.
+Abra la navegación de la barra lateral haciendo clic en su nombre en la esquina superior derecha y utilice el acceso directo `Productos y servicios`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2022.png){.thumbnail}
 
 En la lista de claves, haga clic en el icono `Clave` situado junto a la llave SSH de su elección para asignarla como llave por defecto.
 

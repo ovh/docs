@@ -76,9 +76,9 @@ Wenn Sie ein GNU/Linux-Betriebssystem installieren, können Sie Ihren SSH-Schlü
 
 Wenn ein SSH-Schlüssel bereits hinterlegt ist, erscheint er unten im Drop-down-Menü unter "SSH-Schlüssel". Falls nicht, fügen Sie zuerst einen im Bereich "Meine Dienstleistungen" hinzu.
 
-Öffnen Sie hierzu die Seitenleiste, indem Sie oben rechts auf Ihren Namen klicken und nutzen Sie dann den Shortcut `Dienstverwaltung`{.action}.
+Öffnen Sie hierzu die Seitenleiste, indem Sie oben rechts auf Ihren Namen klicken und nutzen Sie dann den Shortcut `Produkte und Dienstleistungen`{.action}.
 
-![Partitionskonfiguration personalisieren](images/SSH_13.1.png){.thumbnail}
+![Partitionskonfiguration personalisieren](images/SSH_Keys_panel_2022.png){.thumbnail}
 
 Gehen Sie in "Meine Dienste" auf den Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
 

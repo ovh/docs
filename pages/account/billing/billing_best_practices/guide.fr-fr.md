@@ -84,7 +84,7 @@ Vous serez informé des étapes de la livraison et vous saurez si des actions so
 
 Si vous souhaitez ne plus utiliser l'un de vos services, vous pouvez le résilier, passer son renouvellement en mode manuel ou le supprimer immédiatement depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-Cliquez d'abord sur votre nom en haut à droite de votre écran puis sur `Gestion des services`{.action}. Sur le côté droit de votre écran, cliquez sur le bouton `...`{.action} correspondant au service sur lequel vous souhaitez agir puis cliquez sur l'un des boutons suivants :
+Cliquez d'abord sur votre nom en haut à droite de votre écran puis sur `Produits et services`{.action}. Sur le côté droit de votre écran, cliquez sur le bouton `...`{.action} correspondant au service sur lequel vous souhaitez agir puis cliquez sur l'un des boutons suivants :
 
 - `Configurer le renouvellement`{.action} : sur l'écran suivant, vous pourrez passer le `Type de renouvellement` de votre service à `Manuel`. Cliquez ensuite sur `Suivant`{.action} et `Confirmer`{.action}. Avant la date d'expiration de votre service, vous recevrez plusieurs notifications par e-mail. Si vous ne renouvelez pas votre service, il sera supprimé **définitivement**.
 - `Résilier`{.action} : sur l'écran suivant, indiquez les raisons de votre demande de résiliation puis cliquez sur `Confirmer`{.action}. À la date d’expiration de votre service, il sera supprimé **définitivement**.

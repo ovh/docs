@@ -87,7 +87,7 @@ Riceverai gli step della consegna e saprai se hai bisogno di aiuto per effettuar
 
 Per disattivare uno dei tuoi servizi, attivarlo manualmente o eliminarlo immediatamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-Clicca sul tuo nome in alto a destra e poi su `Gestione dei servizi`{.action}. Sul lato destro dello schermo, clicca sui tre puntini in corrispondenza del servizio che intendi utilizzare e seleziona uno dei pulsanti seguenti:
+Clicca sul tuo nome in alto a destra e poi su `Prodotti e servizi`{.action}. Sul lato destro dello schermo, clicca sui tre puntini in corrispondenza del servizio che intendi utilizzare e seleziona uno dei pulsanti seguenti:
 
 - `Configura il rinnovo`{.action}: sullo schermo successivo, potrai passare il `Tipo di rinnovo` del tuo servizio a `Manuale`. Clicca su `Continua`{.action} e `Conferma`{.action}. Prima della data di scadenza del tuo servizio, riceverai diverse notifiche via email. Se non rinnovi il tuo servizio, verrà eliminato **definitivamente**.
 - `Disattiva`{.action}: sulla schermata successiva, indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action}. Alla data di scadenza del tuo servizio, verrà eliminato **definitivamente**.

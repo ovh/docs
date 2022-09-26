@@ -152,9 +152,9 @@ Usuń z pliku “authorized_keys” klucz odpowiadający użytkownikowi, któreg
 
 Panel klienta OVHcloud umożliwia przechowywanie kluczy publicznych utworzonych przy użyciu jednego z obsługiwanych typów szyfrowania (obecnie RSA, ECDSA, ED25519). 
 
-Otwórz nawigację na pasku bocznym, klikając Twoją nazwę w prawym górnym rogu, i użyj skrótu `Zarządzanie usługami`{.action}.
+Otwórz nawigację na pasku bocznym, klikając Twoją nazwę w prawym górnym rogu, i użyj skrótu `Produkty i usługi`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2022.png){.thumbnail}
 
 W obszarze “Moje usługi” przełącz się na kartę `Klucze SSH`{.action} i kliknij pozycję `Dodaj klucz SSH`{.action}.
 
@@ -181,9 +181,9 @@ Jeśli dodałeś kilka kluczy SSH do Panelu klienta, można zdefiniować klucz, 
 > Pamiętaj, że po ustawieniu domyślnego klucza SSH będzie on również używany jako sposób połączenia podczas restartu serwera w trybie Rescue. Aby otrzymywać hasło, domyślny klucz musi zostać wyłączony przed ponownym uruchomieniem serwera w trybie Rescue.
 >
 
-Otwórz nawigację na pasku bocznym, klikając Twoją nazwę w prawym górnym rogu, i użyj skrótu `Zarządzanie usługami`{.action}.
+Otwórz nawigację na pasku bocznym, klikając Twoją nazwę w prawym górnym rogu, i użyj skrótu `Produkty i usługi`{.action}.
 
-![Przestrzeń do zarządzania kluczami SSH](images/SSH_keys_panel_1.1.png){.thumbnail}
+![Przestrzeń do zarządzania kluczami SSH](images/SSH_keys_panel_2022.png){.thumbnail}
 
 Na liście kluczy kliknij ikonę `Klucz` obok wybranego klucza SSH, aby zdefiniować ją jako klucz domyślny.
 

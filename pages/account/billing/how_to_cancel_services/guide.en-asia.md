@@ -70,7 +70,7 @@ Click on the type of product to be cancelled in the following list of main OVHcl
 
 #### Dedicated server <a name="dedicated"></a>
 
-To cancel your [dedicated server](https://www.ovhcloud.com/asia/bare-metal/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Service Management`{.action}.
+To cancel your [dedicated server](https://www.ovhcloud.com/asia/bare-metal/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
 
@@ -78,7 +78,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 #### VPS <a name="vps"></a>
 
-To cancel your [VPS](https://www.ovhcloud.com/asia/vps/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Service Management`{.action}.
+To cancel your [VPS](https://www.ovhcloud.com/asia/vps/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
 
@@ -90,7 +90,7 @@ To cancel your [Managed Bare Metal](https://www.ovhcloud.com/asia/managed-bare-m
 
 #### Licences <a name="licences"></a>
 
-To cancel a licence purchased from OVHcloud, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Service Management`{.action}.
+To cancel a licence purchased from OVHcloud, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
 Next, click on the `...`{.action} button to the right of the licence you want to end, then on `Cancel`{.action}.
 
@@ -104,7 +104,7 @@ To cancel your [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
-To cancel your [Veeam Cloud Connect](https://www.ovhcloud.com/asia/storage-solutions/veeam-cloud-connect/) service, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Service Management`{.action}.
+To cancel your [Veeam Cloud Connect](https://www.ovhcloud.com/asia/storage-solutions/veeam-cloud-connect/) service, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
 
@@ -129,7 +129,7 @@ You can also [view your current resource usage](https://docs.ovh.com/asia/en/pub
 > Following your cancellation and at the end of your current subscription, your generic domain name (.com, .org, .net, etc.) remains "reserved" to you during the grace period (5 days) and then during the period of "redemption" (35 to 40 additional days), which means that only you will be able to renew it during these periods.
 >
 
-To cancel your [domain name](https://www.ovhcloud.com/asia/domains/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Service Management`{.action}.
+To cancel your [domain name](https://www.ovhcloud.com/asia/domains/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
 
@@ -137,7 +137,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 #### Web Hosting <a name="hosting"></a>
 
-To cancel your [Web Hosting](https://www.ovhcloud.com/asia/web-hosting/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Service Management`{.action}.
+To cancel your [Web Hosting](https://www.ovhcloud.com/asia/web-hosting/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
 
@@ -151,7 +151,7 @@ You cannot cancel [Sectigo SSL services](https://www.ovhcloud.com/asia/web-hosti
 
 An MX Plan solution is not subject to a periodic subscription. You cannot cancel your order, but you can delete your service if you wish.
 
-To delete your [MX Plan solution](https://docs.ovh.com/asia/en/emails/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Service Management`{.action}.
+To delete your [MX Plan solution](https://docs.ovh.com/asia/en/emails/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Delete MX Plan immediately`{.action}.
 
@@ -171,7 +171,7 @@ You will then get an email containing the procedure to close your MX Plan, so yo
 > You can cancel a cancellation request up to 24 hours before the subscription end date.
 >
 
-To stop a cancellation request, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then click on `Service Management`{.action}.
+To stop a cancellation request, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then click on `Products and services`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service that is the subject of your cancellation request, then click on `Stop cancellation of service`{.action}.
 

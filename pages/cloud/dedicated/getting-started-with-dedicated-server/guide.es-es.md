@@ -75,9 +75,9 @@ Si instala un sistema operativo GNU/Linux, puede añadir su llave SSH en la últ
 
 Si una llave SSH ya está registrada, aparecerá en el menú desplegable bajo "Llaves SSH" en la parte inferior. En caso contrario, deberá añadir primero una en la sección "Mis servicios".
 
-Para ello, abra la columna izquierda haciendo clic en su nombre en la esquina superior derecha y utilice el acceso rápido `Gestión de servicios`{.action}.
+Para ello, abra la columna izquierda haciendo clic en su nombre en la esquina superior derecha y utilice el acceso rápido `Productos y servicios`{.action}.
 
-![Personalizar la configuración de la partición](images/SSH_13.1.png){.thumbnail}
+![Personalizar la configuración de la partición](images/SSH_Keys_panel_2022.png){.thumbnail}
 
 En "Mis servicios", abra la pestaña `Llaves SSH`{.action} y haga clic en `Añadir una llave SSH`{.action}.
 

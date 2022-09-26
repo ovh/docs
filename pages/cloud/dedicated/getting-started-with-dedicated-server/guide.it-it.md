@@ -75,9 +75,9 @@ Se installi un sistema operativo GNU/Linux, aggiungi la tua chiave SSH all'ultim
 
 Se una chiave SSH è già registrata, appare nel menu a tendina con "Chiavi SSH" in basso. In caso contrario, è necessario aggiungerne una nella sezione "I tuoi servizi".
 
-Per farlo, apri la barra laterale cliccando sul tuo nome nell'angolo in alto a destra e utilizza la scorciatoia `Gestione dei servizi`{.action}.
+Per farlo, apri la barra laterale cliccando sul tuo nome nell'angolo in alto a destra e utilizza la scorciatoia `Prodotti e servizi`{.action}.
 
-![Personalizza la configurazione della partizione](images/SSH_13.1.png){.thumbnail}
+![Personalizza la configurazione della partizione](images/SSH_Keys_panel_2022.png){.thumbnail}
 
 In "I tuoi servizi", passa alla scheda `Chiavi SSH`{.action} e clicca su `Aggiungi una chiave SSH`{.action}.
 

@@ -3,7 +3,7 @@ title: Transfer domeny do innego operatora
 slug: transfer_wychodzacy_domeny_globalnej_lub_geograficznej
 excerpt: Dowiedz się, jak wykonać transfer domeny z OVHcloud do wybranego operatora
 section: Transfer
-order: 4
+order: 04
 ---
 
 > [!primary]
@@ -87,8 +87,17 @@ Po wykonaniu poprzednich etapów, możesz rozpocząć proces transferu, zazwycza
 
 Aby uzyskać więcej informacji, skontaktuj się z nowym operatorem.
 
+> [!warning]
+>
+> Jeśli Twój nowy operator wymaga nowego kodu transferu, aktywuj ponownie `Ochrona przed transferem` dla swojej domeny, a następnie ponownie wyłącz ją kilka minut później. W ten sposób uzyskasz nowy kod transferu.
+>
+
 ## Sprawdź również
 
-[Transfer domeny.co.uk wychodzący](../transfer_wychodzacy_domeny_couk/)
+[Transfer domeny.co.uk wychodzący](https://docs.ovh.com/pl/domains/transfer_wychodzacy_domeny_couk/)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

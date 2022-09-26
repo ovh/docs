@@ -161,9 +161,9 @@ Delete the key which corresponds to the user having their access revoked from yo
 
 The OVHcloud Control Panel allows you to store public keys created using one of the supported encryption types (currently RSA, ECDSA, ED25519). 
 
-Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Service management`{.action}.
+Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2022.png){.thumbnail}
 
 In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH key`{.action}.
 
@@ -190,9 +190,9 @@ If you have added multiple SSH keys in your control panel, it is possible to set
 > Please note that once a default key is set, it will also be used as the means connection once a server is rebooted in rescue mode. To receive a password instead, the default key must be disabled before rebooting the server in rescue mode. 
 > 
 
-Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Service management`{.action}.
+Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2022.png){.thumbnail}
 
 In the list of keys, click on the `Key` icon next to the SSH key of your choice to set it as the default key.
 

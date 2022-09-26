@@ -87,7 +87,7 @@ Sie werden über die Schritte der Ausführung informiert und erfahren, ob auf Ih
 
 Wenn Sie einen Ihrer Dienste nicht mehr nutzen möchten, können Sie ihn kündigen, die Verlängerung auf den manuellen Modus umstellen oder ihn sofort aus Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) löschen.
 
-Klicken Sie zunächst auf Ihren Namen oben rechts neben Ihrem Bildschirm und dann auf `Dienstverwaltung`{.action}. Klicken Sie auf der rechten Seite auf den Button `...`{.action} der dem Dienst entspricht, den Sie bearbeiten möchten, und klicken Sie dann auf einen der folgenden Buttons:
+Klicken Sie zunächst auf Ihren Namen oben rechts neben Ihrem Bildschirm und dann auf `Produkte und Dienstleistungen`{.action}. Klicken Sie auf der rechten Seite auf den Button `...`{.action} der dem Dienst entspricht, den Sie bearbeiten möchten, und klicken Sie dann auf einen der folgenden Buttons:
 
 - `Verlängerung konfigurieren`{.action}: Auf dem folgenden Bildschirm können Sie den `Verlängerungsart` Ihrer Dienstleistung auf `Manuell` umstellen. Klicken Sie anschließend auf `Weiter`{.action} und `Bestätigen`{.action}. Vor Ablauf Ihrer Dienstleistung erhalten Sie mehrere Benachrichtigungen per E-Mail. Wenn Sie Ihren Dienst nicht verlängern, wird er **endgültig** gelöscht.
 - `Kündigen`{.action}: Geben Sie im folgenden Fenster die Gründe für Ihre Kündigungsanfrage ein und klicken Sie dann auf `Bestätigen`{.action}. Am Ablaufdatum Ihrer Dienstleistung wird diese **endgültig** gelöscht.
