@@ -64,7 +64,7 @@ Aidez-vous de ce guide pour redéployer vos clusters [Redéploiement personnalis
 
 ### Arrêt de la machine virtuelle **OVHgateway**.
 
-La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP privée sur les deux sites nous allons arrêter la machine virtuelle du **Cluster2** à Roubaix. La connexion Internet sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
+La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP privée sur les deux sites nous allons arrêter la machine virtuelle **OVHGateway** du **Cluster2** à Roubaix. La connexion Internet sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
 
 Connectez-vous à l'interface **Prism Central** du cluster situé à Roubaix. 
 
@@ -72,11 +72,11 @@ Allez dans la gestion des machines virtuelles sélectionnez `OVHgateway` au trav
 
 ![01 OVHgateway Shutdown 01](images/01-ovhgateway-shutdown01.png){.thumbnail}
 
-Les éléments du cluster de Roubaix ne pourront plus se connecter à Internet en sortie jusqu'a que la configuration des **vRack** soit faite. L'accès à Prism Central est maintenu à l'aide du **Load-Balancer**.
+L'accès à Prism Central est maintenu à l'aide du **Load-Balancer**.
 
 #### Paramétrage des **vRack**
 
-Cette opération consiste à supprimer l'affectation du **vRack** à Roubaix et ensuite d'étendre le **vRack** de Gravelines vers Roubaix. Les modifications du **vRack** se font au travers de l'espace client OVHcloud. 
+Cette opération consiste à supprimer l'affectation du **vRack** à Roubaix et ensuite d'étendre le **vRack** de Gravelines avec Roubaix. Les modifications du **vRack** se font au travers de l'espace client OVHcloud. 
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). 
 
@@ -139,7 +139,7 @@ Le **vRack** qui était uniquement utilisé par les serveurs du cluster de Grave
 - Les adresses IP publiques des deux clusters.
 - Le load balancer de Gravelines qui sert pour **Prism Central**.
 
-L'accès Internet sur le site de Roubaix en sortie est à nouveau disponible au travers du **vRack** et de la machine virtuelle **OVHgateway** de Gravelines.
+L'accès Internet sur le site de Roubaix en sortie est à nouveau disponible au travers du **vRack** et de la machine virtuelle **OVHgateway** de Gravelines. L'accès à Prism Central du cluster de Roubaix est pour l'instant innacessible.
 
 ### Modification du load balancer de Roubaix
 
