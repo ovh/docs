@@ -2,7 +2,7 @@
 title: OVHcloud AntiSpam - Best Practices and Unblocking an IP
 slug: antispam-best-practices
 excerpt: Find out about our antispam best practices and how to unblock an IP blocked for SPAM
-section: Server Management
+section: Server management
 order: 5
 ---
 
@@ -20,8 +20,6 @@ It is therefore important that OVHcloud takes care of the reputation, quality an
 
 Our system is based on the Vade Secure anti-spam technology.
 
-**Blocked for SPAM**
-
 Once an IP is "blocked for SPAM", an email will be sent to your account containing information like the example below:
 
 > 
@@ -29,11 +27,9 @@ Once an IP is "blocked for SPAM", an email will be sent to your account containi
 >
 > Our anti-spam protection layer has detected that your IP 122.122.122.122 is sending spam.
 >
-> In order to protect our network, we have blocked the port 25 of your server, at the
-network level.
+> In order to protect our network, we have blocked the port 25 of your server, at the network level.
 >
-> To help you investigate about this problem and fix it, here are a sample
-are some advanced details on your emails:
+> To help you investigate about this problem and fix it, here is a sample of some advanced details on your emails:
 >
 > Destination IP: 188.95.235.33 - Message-ID: d24aa492-5f37-457f-9595-23ddc9e0f714@xxxxxxxxxxxxx.xx.local - Spam score: 300 <br>
 > Destination IP: 188.95.235.33 - Message-ID: fc090jdhf934iu09bf084bfo92@xxxxxxxxxxxxx.com - Spam score: 300<br>
@@ -48,7 +44,7 @@ are some advanced details on your emails:
 
 **What to do after receiving the email alert?**
 
-The first step is to identify the issue, resolve it, then unblock your IP.
+The process is to identify the issue, resolve it, then unblock your IP.
 
 ### Identify and resolve the issue 
 
@@ -57,9 +53,9 @@ The first step is to identify the issue, resolve it, then unblock your IP.
 - Stop sending emails (e.g. stop all email software such as qmail, Postfix, Sendmail etc.).
 - Check the email queue (e.g. qmHandle for qmail, postqueue -p for Postfix) and clear it.
 - Analyse your logs using the **Message-ID** found in the block alert.
-- If you are indeed sending SPAM or illegitimate emails, we strongly recommend you to resolve the issue before unblocking the IP. Please consult the second part of this guide for email [best practices](#bestpractices). 
+- If you are indeed sending SPAM or illegitimate emails, we strongly recommend you to resolve the issue **before** unblocking the IP. Please consult the second part of this guide for email [best practices](#bestpractices). 
 
-Once the issue has been resolved, you can unblock your IP by performing the following steps:
+Once the issue has been resolved, you can unblock your IP by performing the following steps.
 
 > [!alert]
 > 
@@ -186,7 +182,7 @@ Here is an example result:
 ##### **Unblock the IP** <a name="unblockip"></a>
 
 > [!alert]
-> IMPORTANT !!
+> IMPORTANT!
 Do not unblock the IP under any circumstances without having suspended the sending of emails from your server, otherwise you will immediately get blocked for a second time (and a longer duration). 
 >
 
