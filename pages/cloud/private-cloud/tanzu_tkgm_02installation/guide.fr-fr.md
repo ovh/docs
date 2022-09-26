@@ -65,7 +65,7 @@ Sélectionnez `Fichier local`{.action} ensuite cliquez sur `TÉLÉCHARGER DES FI
 
 ![01 integrate TKGM OVA 02](images/01-integrate-tkgm-ova02.png){.thumbnail}
 
-Choisissez le `fichier`{.action}, ensuite cliquez sur `Ouvrir`{.action}.
+Choisissez le `fichier photon-3-kube-v1.22.9+vmware.1-tkg.etc...ova`{.action}, ensuite cliquez sur `Ouvrir`{.action}.
 
 ![01 integrate TKGM OVA 03](images/01-integrate-tkgm-ova03.png){.thumbnail}
 
@@ -111,13 +111,18 @@ Attendez que les tâches `Déployer un modèle OVF` et `Importer un modèle OVF`
 
 Faites un clic droit sur la `Machine virtuelle déployée`{.action} et choisissez l'option `Convertir au modèle`{.action} depuis le menu `Modèle`{.action}.
 
+
 ![01 integrate TKGM OVA 14](images/01-integrate-tkgm-ova14.png){.thumbnail}
 
 Répondez `OUI`{.action} pour convertir la machine virtuelle.
 
 ![01 integrate TKGM OVA 15](images/01-integrate-tkgm-ova15.png){.thumbnail}
 
-Allez dans `Machines virtuelles (et modèles)`{.action} pour voir le modèle créé. Ce modèle sera utilisé lors du déploiement des clusters **Tanzu Kubernetes Grid** (Celui d'administration et ceux de *Workload*).
+Allez dans `Machines virtuelles (et modèles)`{.action} pour voir le modèle créé. 
+
+> [!primary]
+> Ce modèle sera utilisé lors du déploiement des clusters **Tanzu Kubernetes Grid** (Celui d'administration et ceux de *Workload*). 
+>
 
 ![01 integrate TKGM OVA 16](images/01-integrate-tkgm-ova16.png){.thumbnail}
 
@@ -135,7 +140,7 @@ Sélectionnez `Fichier local`{.action} ensuite cliquez sur `TÉLÉCHARGER DES FI
 
 ![02 Add Bootstrapvm 02](images/02-add-bootstrap-vm-from-ova02.png){.thumbnail}
 
-Choisissez le `fichier`{.action}, ensuite cliquez sur `Ouvrir`{.action}.
+Choisissez le `fichier Ubuntu-22.04_TKGm-1.6_with_x.ova`{.action}, ensuite cliquez sur `Ouvrir`{.action}.
 
 ![02 Add Bootstrapvm 03](images/02-add-bootstrap-vm-from-ova03.png){.thumbnail}
 
@@ -221,7 +226,7 @@ tanzu management-cluster create --ui --bind 192.168.0.199:8080
 ```
 > [!primary]
 >
-> Lorsque vous lancez cette commande depuis la console linux avec l'interface graphique, le navigateur WEB se lance et se connecte à l'adresse `https://192.168.0.199:8080`. Si vous avez lancé cette commande depuis une connexion **ssh** il faudra se connecter à l'adresse `https://192.168.0.199:8080` à partir d'
+> Lorsque vous lancez cette commande depuis la console linux avec l'interface graphique, le navigateur WEB se lance et se connecte à l'adresse `https://192.168.0.199:8080`. Si vous avez lancé cette commande depuis une connexion **ssh** il faudra se connecter à l'adresse `https://192.168.0.199:8080` à partir d'une machine virtuelle qui se trouve sur le même réseau avec une interface graphique et un navigateur WEB opérationnel.
 >
 
 ![03 Create TKG CLUSTER 02](images/03-create-tkg-cluster02.png){.thumbnail}
@@ -267,6 +272,8 @@ Cliquez sur `NEXT`{.action}
 
 ![03 Create TKG CLUSTER 09](images/03-create-tkg-cluster09.png){.thumbnail}
 
+Dans l'option **Metadata** dans l'onglet **LABELS** saisissez `tkgm` pour le nom.
+
 Cliquez sur `NEXT`{.action} 
 
 ![03 Create TKG CLUSTER 10](images/03-create-tkg-cluster10.png){.thumbnail}
@@ -291,7 +298,7 @@ Désactivez l'option `Enable Identity Management Settings`{.action} et cliquez s
 
 ![03 Create TKG CLUSTER 13](images/03-create-tkg-cluster13.png){.thumbnail}
 
-Sélectionnez l'image OVA intégrée au cluster `photon-3-kube-v1.22.9+vmware.1dans` **OS Image** et cliquez sur `NEXT`{.action}.
+Sélectionnez l'image OVA intégrée au cluster `photon-3-kube-v1.22.9+vmware.1` dans **OS Image** et cliquez sur `NEXT`{.action}.
 
 ![03 Create TKG CLUSTER 14](images/03-create-tkg-cluster14.png){.thumbnail}
 
@@ -307,15 +314,19 @@ Cliquez sur `REVIEW CONFIGURATION`{.action}.
 > Notez le nom du fichier yaml qui se trouve en dessous de **CLI Command Equivalent** il servira de modèle pour le déploiement d'un cluster de **WorkLoad**.
 >
 
-Vérifiez tous vos paramètres et cliquez sur `DEPLOY MANAGEMENT CLUSTER`{.action} 
+Faites défiler la fenêtre et cliquez sur `DEPLOY MANAGEMENT CLUSTER`{.action} 
 
 ![03 Create TKG CLUSTER 17](images/03-create-tkg-cluster17.png){.thumbnail}
 
 Le déploiement du cluster **Tanzu Kubernetes Grid** est lancé veuillez attendre qu'il soit terminé.
 
+> [!primary]
+> Le déploiement sera terminé lorsque vous verrez apparaitre dans la fenêtre **Management cluster created** et **Successfully installed all required plugins.
+>
+
 ![03 Create TKG CLUSTER 18](images/03-create-tkg-cluster18.png){.thumbnail}
 
-Toutes les étapes du déploiement apparaissent en verts, ce qui signifie que le déploiement est terminé.
+Une autre indication qui signale que l'installation est terminé se trouve dans la console de la machine virtuelle de **Bootstrap** avec le message **Management cluster created** et **You can now create your first workload cluster etc...**.
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
