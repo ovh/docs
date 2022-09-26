@@ -5,7 +5,7 @@ slug: optimiser-envoi-emails
 section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 07/09/2022**
+**Dernière mise à jour le 26/09/2022**
 
 ## Objectif
 
@@ -104,19 +104,17 @@ Une fois le compte activé, vous devez compléter le formulaire suivant :
 
 - **Company name** : (nom de votre entreprise)
 - **Contact email address** : (une adresse e-mail valide où Microsoft peut vous contacter)
-- **Complaint feedback email address** : (une adresse e-mail valide où vous pourrez recevoir les plaintes pour spam)
+- **Complaint feedback email address** : (une adresse e-mail valide où vous pourrez recevoir les plaintes pour spam, les **best practices** veulent que l'adresse e-mail soit sous la forme : **abuse@mondomaine.com**.)
 
 Ajoutez ensuite vos adresses IP dans la section `IP address or range`.
 
-En cliquant sur `Add new Network`, il vous sera demandé de choisir une adresse e-mail de contact chez votre ISP/FAI (Fournisseur d'Accès à Internet) pour autoriser la demande.
-
-Les **best practices** veulent que l'adresse e-mail soit sous la forme : **abuse@mondomaine.com**
+En cliquant sur `Add new Network`, il vous sera demandé de définir une adresse e-mail de contact valide. Renseignez alors l'adresse du type **abuse@mondomaine.com** destinée à recevoir les plaintes pour spam.
 
 Une fois les informations renseignées, cliquez sur `Begin Setup` pour transmettre la demande. Microsoft enverra alors un e-mail intitulé `SNDS-JMRP Contract`, puis un second e-mail à **mondomaine.com**.
 
-Une fois les confirmations approuvées, la souscription à JMRP/SNDS sera terminée.
+Confirmez les informations et la souscription à JMRP/SNDS sera terminée.
 
-Une fois ces actions effectuées, si votre IP apparaît comme bloquée, vous pourrez alors demander à la débloquer via la [procédure junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). La procédure prend généralement 48H.
+Une fois ces actions effectuées, si votre IP apparaît comme bloquée, vous pourrez alors demander à la débloquer via la [procédure junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). La procédure prend généralement 48 heures.
 
 Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) auprès de Microsoft.
 
@@ -124,7 +122,7 @@ Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://sup
 >
 > **Refus de Microsoft**
 >
-> Il est possible que Microsoft refuse de débloquer votre ou vos IP, auquel cas OVHcloud ne pourra pas intervenir. Il est important de respecter les bonnes pratiques de Microsoft.
+> Il est possible que Microsoft refuse de débloquer votre ou vos adresse(s) IP, auquel cas OVHcloud ne pourra pas intervenir. Il est important de respecter les bonnes pratiques de Microsoft.
 >
 
 #### Vers un serveur Gmail

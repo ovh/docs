@@ -5,7 +5,7 @@ excerpt: 'Find out how to send emails and limit the risk of them being marked as
 section: Tutorial
 ---
 
-**Last updated 7th September 2022**
+**Last updated 26th September 2022**
 
 ## Objective
 
@@ -100,13 +100,11 @@ Once your account is created, you must fill in the following form:
 
 - **Company name**:
 - **Contact email address**: (A valid email address where Microsoft can contact you)
-- **Complaint feedback email address**: (A valid email address where you will receive spam complaints)
+- **Complaint feedback email address**: (A valid email address where you will receive spam complaints. The **best practices** want the email to be in the form: **abuse@mydomain.com**.)
 
 Next, add your IP addresse(s) in the section `IP address or range`.
 
-When clicking on `Add new Network`, you will be asked to choose a contact email from their ISP to authorize the request.
-
-The **best practices** want the email to be in the form: **abuse@mydomain.com**.
+When clicking on `Add new Network`, you will be asked to choose a contact email to authorize the request. Enter the address **abuse@mydomain.com**  (obviously replace it with your own address) previously defined to receive spam complaints.
 
 Once the information is filled in, click on `Begin Setup` to transmit the request. Microsoft will then send you an `SNDS-JMRP Contract` email, and a second email to **mydomain.com**.
 
@@ -120,7 +118,7 @@ For additional information, please open a [support request](https://support.micr
 > 
 > **Refusal by Microsoft**
 >
-> It may happen that Microsoft refuses to delist the your IP(s), in which case OVHcloud cannot intervene. It is important to respect the best practices of Microsoft.
+> It may happen that Microsoft refuses to delist your IP(s), in which case OVHcloud cannot intervene. It is important to respect the best practices of Microsoft.
 > 
 
 #### To a Gmail server
