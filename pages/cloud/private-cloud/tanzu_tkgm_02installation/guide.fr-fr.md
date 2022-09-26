@@ -6,7 +6,7 @@ section: Tanzu
 order: 03
 ---
 
-**Dernière mise à jour le 19/09/2022**
+**Dernière mise à jour le 23/09/2022**
 
 ## Objectif
 
@@ -117,7 +117,7 @@ Répondez `OUI`{.action} pour convertir la machine virtuelle.
 
 ![01 integrate TKGM OVA 15](images/01-integrate-tkgm-ova15.png){.thumbnail}
 
-Allez dans `Machines virtuelles (et modèles)`{.action} pour voir le modèle créé. Ce modèle sera utilisé lors du déploiement du cluster **Tanzu Kubernetes Grid**.
+Allez dans `Machines virtuelles (et modèles)`{.action} pour voir le modèle créé. Ce modèle sera utilisé lors du déploiement des clusters **Tanzu Kubernetes Grid** (Celui d'administration et ceux de *Workload*).
 
 ![01 integrate TKGM OVA 16](images/01-integrate-tkgm-ova16.png){.thumbnail}
 

@@ -21,15 +21,15 @@ order: 04
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir un identifiant actif dans vSphere.
-- Avoir déployé le cluster d'administration **TKG** à l'aide de ce guide [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation).
+- Avoir installé le cluster d'administration **Tanzu Kubernetes GRID** à l'aide de ce guide [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation).
 - Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
 - Disposer de ces ressources :
-    - 16 Go de mémoire, 4 vCPU, 40 Go de stockage par nœud Kubernetes (Il faut 6 nœuds par cluster de **Workload** dans le même mode).
+    - 20 Go de mémoire, 4 vCPU, 40 Go de stockage par nœud Kubernetes (Il faut 6 nœuds par cluster de **Workload** dans le même mode).
     
 
 ## En pratique
 
-Nous allons déployer un cluster de *Workload* sur un cluster d'administration **Tanzu Kubernetes Grid**. et ajouter une application.
+Nous allons déployer un cluster de *Workload* sur un cluster d'administration **Tanzu Kubernetes Grid** et ajouter une application.
 
 A la fin de l'installation vous aurez six nouvelles machines virtuelles en plus des sept qui sont necessaires au fonctionnement du cluster de management. 
 
@@ -75,7 +75,7 @@ Connectez-vous à votre interface vSphere pour voir les six machines virtuelles 
 
 ### Installation du **Load-Balancer**
 
-Le **Load-Balancer** fait le lien entre le cluster et le réseau local, pour cela nous allons utiliser le package **kube-vip** qui servira de *load-balancer* entre le réseau interne au cluster et le réseau du VLAN10. Vous trouverez plus d'informations sur ce site [Documentation kube-vip](https://kube-vip.io/).
+Le **Load-Balancer** fait le lien entre le réseau du cluster de *Workload* et le réseau externe qui se trouve sur le cluster VMware, pour cela nous allons utiliser le package **kube-vip** qui servira de *load-balancer* entre le réseau interne au cluster et le réseau du VLAN10. Vous trouverez plus d'informations sur ce site [Documentation kube-vip](https://kube-vip.io/).
 
 Exécutez ces commandes à partir de la machine virtuelle de **Bootstrap** :
 
