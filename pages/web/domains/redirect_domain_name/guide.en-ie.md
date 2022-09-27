@@ -33,7 +33,7 @@ This feature allows you to redirect a domain/subdomain to:
 
 There are several ways of doing this:
 
-- **From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)**), where a configuration assistant can be used to set your redirection.
+- **From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)**, where a configuration assistant can be used to set your redirection.
 - **Via a method that requires programming**. You will need to create the redirection yourself in a file (usually a [.htaccess](#htaccess_rewrite)).
 
 > [!warning]
