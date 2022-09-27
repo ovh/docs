@@ -68,7 +68,7 @@ Une application peut être constituée de plusieurs **pods** qui communiquent en
 
 Par défaut lors de l'arrêt ou d'un crash d'un **pods** les données contenues dans ce **pod** sont perdues. Pour pouvoir stocker des données de manière permanente il est nécessaire de créér des volumes permanents et de les associer aux applications.
 
-Les volumes permanents sont stockés par défaut à l'intérieur du cluster Kubernetes mais il est possible de faire utiliser les API VMware pour créer des volumes persistant sur l'infrastrcture VMware. (vSAN ou NFS)
+Les volumes permanents sont stockés par défaut à l'intérieur du cluster Kubernetes mais il est possible de faire utiliser les API VMware pour créer des volumes persistants sur l'infrastrcture VMware. (vSAN ou NFS)
 
 
 Utilisez ce guide [Gestion des volumes permanents dans Tanzu Kubernetes Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-permanent-volumes) pour ajouter une application qui utilise un volume permanent externe.
