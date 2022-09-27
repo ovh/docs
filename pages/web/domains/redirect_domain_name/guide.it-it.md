@@ -3,7 +3,7 @@ title: 'Reindirizzare un dominio gestito da OVHcloud'
 slug: reindirizzamento-dominio
 excerpt: 'I diversi tipi di redirect e come creare un reindirizzamento per un dominio gestito da OVHcloud'
 section: Generale
-order: 1
+order: 01
 ---
 
 **Ultimo aggiornamento: 28/01/2019**
