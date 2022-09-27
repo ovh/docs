@@ -134,6 +134,10 @@ Au travers de la console **Bootstrap** utilisez le navigateur **WEB** pour vous 
 
 ![02 Verify Application 02](images/02-verify-application-02.png){.thumbnail}
 
+Une application peut être constituée de plusieurs pods qui communiquent entre eux au travers du réseau interne du cluster de Workflow, certains ports sont ouverts sur le réseau du cluster VMware grâce au module kube-vip.
+
+![03 apps and load balancing](images/03-internetworkcommunication01.png){.thumbnail}
+
 ## Aller plus loin
 
 [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation)
