@@ -37,7 +37,8 @@ A la fin de l'installation vous aurez six nouvelles machines virtuelles en plus 
 
 ### Déploiement d'un cluster de *Workload*
 
-Le cluster de *Workload* doit être sur le même réseau que le cluster d'administration. Après l'ajout de ce cluster il sera alors possible d'installer des applications. 
+Le cluster de *Workload* peut être déployé sur le même réseau que le cluster d'administration ou sur un autre. Dans notre cas nous allons le déployer sur le même réseau pour la démonstration. Si vous voulez changer de réseau, il suffit de mettre le portgroup dans le même YAML de configuration de votre cluster de workload comme expliqué ci-dessous, dans la section "VSPHERE_NETWORK".
+Après l'ajout de ce cluster il sera alors possible d'installer des applications. 
 
 Copiez le fichier qui a servi pour la création du cluster d'administration dans un fichier nommé **tkg-workload-cluster.yaml**.
 
