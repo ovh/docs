@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 23/09/2022**
+**Dernière mise à jour le 27/09/2022**
 
 ## Objectif
 
@@ -83,7 +83,7 @@ Il existe diverses solutions de sauvegarde compatibles avec **Tanzu Kubernetes G
 
 [Administrer un cluster Tanzu Kubernetes GRID](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management)
 
-[Gestion des volumes sur un cluster Tanzu Kubernetes GRID]
+[Gestion des volumes sur un cluster Tanzu Kubernetes GRID](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-permanent-volumes)
 
 [Présentation de VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
