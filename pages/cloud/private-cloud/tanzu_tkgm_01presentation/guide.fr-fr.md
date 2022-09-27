@@ -56,7 +56,7 @@ Lors de l'installation de **Tanzu Kubernetes Grid** nous avons choisi **kube-vip
 
 Consultez ce guide [Administrer Tanzu Kubernete Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-installation) pour déployer un cluster de *Workload* et une application. 
 
-Pour chaque nouveau cluster **Workload** installé en mode production six nouvelles machines virtuelles sont rajoutées sur votre infrastructure VMware.
+Pour chaque nouveau cluster *WorkLoad* installé en mode production six nouvelles machines virtuelles sont rajoutées sur votre infrastructure VMware.
 
 ![02 admin and workload cluster diagram](images/02-tkc-mc-wc01.png){.thumbnail}
 
