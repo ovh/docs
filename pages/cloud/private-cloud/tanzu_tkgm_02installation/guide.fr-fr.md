@@ -121,7 +121,8 @@ Répondez `OUI`{.action} pour convertir la machine virtuelle.
 Allez dans `Machines virtuelles (et modèles)`{.action} pour voir le modèle créé. 
 
 > [!primary]
-> Ce modèle sera utilisé lors du déploiement des clusters **Tanzu Kubernetes Grid** (Celui d'administration et ceux de *Workload*). 
+>
+> Ce modèle sera utilisé lors du déploiement des clusters **Tanzu Kubernetes Grid**. Il sert pour le déploiement initial du cluster d'administration et pour l'installation de clusters de *WorkLoad* supplémentaires. il ne faut pas le supprimer du cluster **VMware**.  
 >
 
 ![01 integrate TKGM OVA 16](images/01-integrate-tkgm-ova16.png){.thumbnail}
