@@ -298,7 +298,7 @@ Diese Verkapselung verhindert, dass Besucher Ihrer Website die Zieldomain anzeig
 ".htaccess" sind Konfigurationsdateien, in denen Befehle spezifiziert werden können. Wenn der Webserver (Apache) den Code Ihrer Website ausführt, werden die Befehle interpretiert und ausgeführt.<br>
 Unter diesen Befehlen können Weiterleitungen erstellt werden.
 
-Wenn Sie eine ".htaccess"-Datei bearbeiten, ist Ihre Website möglicherweise nicht mehr erreichbar. Kontaktieren Sie im Zweifelsfall einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/fr/) .
+Wenn Sie eine ".htaccess"-Datei bearbeiten, ist Ihre Website möglicherweise nicht mehr erreichbar. Kontaktieren Sie im Zweifelsfall einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) .
 
 Die vollständige Dokumentation zum ".htaccess" finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
 
