@@ -50,7 +50,7 @@ Le fonctionnement de **Tanzu Kubernetes Grid** sur le cluster VMware nécessite 
 
 Pour pouvoir déployer une application il est nécessaire de créer des clusters de *Workload* dédiés aux applications.
 
-Tous les clusters de WorkLoad sont indépendants les uns des autres, ce qui permet d'avoir des versions différentes de Kubernetes sur chacun de ces clusters de *Workload*.
+Tous les clusters de *WorkLoad* sont indépendants les uns des autres, ce qui permet d'avoir des versions différentes de Kubernetes sur chacun de ces clusters de *Workload*.
 
 Lors de l'installation de **Tanzu Kubernetes Grid** nous avons choisi **kube-vip** pour les interconnexions entre un cluster de *Workload* et le réseau du cluster VMware. Il est aussi possible d'utiliser **Nsx Advanced Load Balancer**.
 
