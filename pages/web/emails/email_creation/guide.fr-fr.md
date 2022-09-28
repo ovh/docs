@@ -118,7 +118,7 @@ Vérifiez alors les informations qui s'affichent dans le récapitulatif ; si cel
 
 Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition.
 
-#### Consultez les e-mails 
+#### Consulter les e-mails 
 
 Accédez à la page « [Connexion au webmail](https://www.ovh.com/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
