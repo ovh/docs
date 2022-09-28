@@ -6,7 +6,7 @@ section: 'PHP'
 order: 01
 ---
 
-**Last updated 19th September 2O22**
+**Last updated 19th September 2022**
 
 With your [OVHcloud web hosting](https://www.ovhcloud.com/en-gb/web-hosting/){.external} you can host whatever website you want, provided that it is compatible with [our infrastructure configurations](https://webhosting-infos.hosting.ovh.net){.external}. As a result, you may find that you want to modify the PHP version used by your Web Hosting plan.
 
