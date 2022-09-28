@@ -6,7 +6,7 @@ section: Plan de reprise d'activité
 order: 03
 ---
 
-**Dernière mise à jour le 26/09/2022**
+**Dernière mise à jour le 28/09/2022**
 
 ## Objectif
 
@@ -32,7 +32,7 @@ Nous allons interconnecter deux clusters Nutanix distants, l'un à Gravelines et
 
 ### Préparation des deux clusters avant l'interconnexion
 
-Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des adresses IP différentes (sauf pour la passerelle et le load-balancer) sur une même plage d'adresses IP. Dans notre guide nous allons utiliser cette plage d'adresse `192.168.0.0/22`.
+Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des adresses IP différentes (sauf pour la passerelle) sur une même plage d'adresses IP. Dans notre guide nous allons utiliser cette plage d'adresse `192.168.0.0/22`.
 
  Le cluster de Gravelines utilise ces adresses :
 
@@ -42,7 +42,6 @@ Avant d'interconnecter les deux clusters il faut s'assurer qu'ils utilisent des 
 - Adresse virtuelle de **Prism Element** : `192.168.2.100`.
 - Adresse IP **Prism Central** :`192.168.2.101`.
 - Passerelle : `192.168.2.254`.
-- LoadBalancer : `192.168.0.128/27`
 - Version du cluster : `6.1`.
 
 Le cluster de Roubaix utilise ces adresses :
@@ -53,18 +52,19 @@ Le cluster de Roubaix utilise ces adresses :
 - Adresse virtuelle de **Prism Element** : `192.168.1.100`.
 - Adresse IP **Prism Central** :`192.168.1.101`.
 - Passerelle : `192.168.2.254`.
-- LoadBalancer : `192.168.0.128/27`
 - Version du cluster : `6.1`.
 
 Aidez-vous de ce guide pour redéployer vos clusters [Redéploiement personnalisé de votre Cluster](https://docs.ovh.com/fr/nutanix/cluster-custom-redeployment/)
 
 > [!primary]
-> Ce guide vous propose de redéployer les deux clusters mais vous pouvez n'en redéployer qu'un, le plus important est qu'il ne faut pas avoir d'adresses IP identiques sur le réseau sauf pour la passerelle OVHGateway.
+> Ce guide vous propose de redéployer les deux clusters mais vous pouvez n'en redéployer qu'un, le plus important est de ne pas avoir les mêmes d'adresses IP identiques sur l'ensemble du réseau sauf pour la passerelle OVHGateway.
 >
 
 ### Arrêt de la machine virtuelle **OVHgateway**.
 
-La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP privée sur les deux sites nous allons arrêter la machine virtuelle **OVHGateway** de Roubaix. La connexion Internet sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
+La connexion Internet sortante est fournie par les machines virtuelles **OVHGateway** avec la même adresse IP privée sur les deux sites nous allons arrêter la machine virtuelle **OVHGateway** de Roubaix. Cette machine virtuelle ne sera plus nécessaire.
+
+La connexion Internet sortante sera rétablie quand l'interconnexion au travers du **vRack** sera faites.
 
 Connectez-vous à l'interface **Prism Central** du cluster situé à Roubaix. 
 
@@ -72,7 +72,7 @@ Allez dans la gestion des machines virtuelles sélectionnez `OVHgateway` au trav
 
 ![01 OVHgateway Shutdown 01](images/01-ovhgateway-shutdown01.png){.thumbnail}
 
-L'accès à Prism Central est maintenu à l'aide du **Load-Balancer**.
+L'accès à Prism Central est maintenu à l'aide du **Load Balancer**.
 
 #### Paramétrage des **vRack**
 
@@ -104,7 +104,7 @@ Sélectionnez tous les éléments qui se trouvent dans **Votre vRack** :
 
 ![02 Remove services from vrack 03](images/02-remove-services-fromvrack03.png){.thumbnail}
 
-#### Ajout des éléments supprimées du **vRack** de Roubaix dans le **vRack** de Gravelines
+#### Ajout d'éléments supprimés du **vRack** de Roubaix dans le **vRack** de Gravelines
 
 Revenez dans le menu `Hosted Private Cloud`{.action} choisissez le cluster de Gravelines dans la catégorie `Nutanix` et notez le nom du **vRack** en dessous de **Réseau privé(vRack)**.
 
@@ -128,7 +128,7 @@ Ensuite cliquez sur `Ajouter`{.action}
 
 > [!primary]
 > 
-> L'ajout de l'adresse publique n'est pas obligatoire mais elle sera disponible pour de futurs besoins.
+> L'ajout de l'adresse publique n'est pas obligatoire mais elle pourra être disponible pour de futurs besoins.
 > 
 
 ![03 Add to vrack 03](images/03-addtovrack03.png){.thumbnail}
@@ -137,11 +137,11 @@ Le **vRack** qui était uniquement utilisé par les serveurs du cluster de Grave
 
 - Les serveurs physiques des deux clusters.
 - Les adresses IP publiques des deux clusters.
-- Le load balancer de Gravelines qui sert pour **Prism Central**.
+- Le **load Balancer** de Gravelines qui sert pour **Prism Central**.
 
 L'accès Internet sur le site de Roubaix en sortie est à nouveau disponible au travers du **vRack** et de la machine virtuelle **OVHgateway** de Gravelines. L'accès à Prism Central du cluster de Roubaix est pour l'instant innacessible.
 
-### Modification du load balancer de Roubaix
+### Modification du **load Balancer** de Roubaix
 
 Nous allons reconfigurer le **Load Balancer** de Roubaix pour qu'il fonctionne avec le **vRack** commun aux deux sites pour pouvoir accéder à **Prism Central** du cluster de Roubaix.
 
@@ -181,7 +181,7 @@ Choisissez ces valeurs :
 
 > [!Warning]
 > 
-> La plage choisie par **NatIp** ne doit pas être utilisée par d'autres éléments du réseau privé. 
+> La plage choisie par **NatIp** ne doit pas être utilisée par d'autres éléments du réseau privé, notamment la plage prise par le **Load Balancer** de Gravelines.
 > 
 
 Ensuite cliquez sur `Ajouter`{.action}
@@ -196,11 +196,13 @@ Sélectionnez le `Datacenter Roubaix(RBX)`{.action} et clquez sur `Appliquer la 
 
 ![04 Modify Load Balancer 09](images/04-modify-loadbalancer09.png){.thumbnail}
 
-Le load balancer est relié au **vRack** commun aux deux sites et l'accès à **Prism Central** de Roubaix est à nouveau disponible.
+Le **load Balancer** est relié au **vRack** commun aux deux sites et l'accès à **Prism Central** de Roubaix est à nouveau disponible.
 
 ![04 Modify Load Balancer 10](images/04-modify-loadbalancer10.png){.thumbnail}
 
 ## Aller plus loin
+
+[Plan de reprise d'activité sous Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
 
 [Réplication asynchrone ou NearSync au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
 
