@@ -79,7 +79,7 @@ Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous la r
 
 #### Supprimer un compte e-mail
 
-Depuis la nouvelle version MXplan, on parle de réinitialisation de compte lorsque vous devez le supprimer.
+Depuis la nouvelle version MXplan, on parle de *réinitialisation de compte* lorsque vous devez supprimer celui-ci.
 
 > [!warning]
 >
