@@ -53,7 +53,7 @@ Pour obtenir une nouvelle adresse e-mail, positionnez-vous sur l'onglet `Comptes
 
 Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 
-- **Compte e-mail**: Un nom temporaire est déjà prérempli dans la zone de texte : supprimez-le et renseignez celui que portera votre adresse e-mail (votre prénom.nom, par exemple). Le nom de domaine composant l'adresse e-mail est déjà présélectionné dans la liste.
+- **Compte e-mail** : Un nom temporaire est déjà prérempli dans la zone de texte. Remplacez-le par celui que vous souhaitez pour votre adresse e-amil (votre prénom.nom, par exemple). Le nom de domaine composant l'adresse e-mail est déjà présélectionné dans la liste.
 - **Prénom**: Renseignez un prénom.
 - **Nom**: Renseignez un nom.
 - **Nom à afficher**: Indiquez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés avec cette adresse.
