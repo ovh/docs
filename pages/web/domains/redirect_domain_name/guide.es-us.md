@@ -93,7 +93,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 >>
 >> La casilla `Redirigir también`{.action} puede estar marcada para redirigir igualmente su subdominio en `www` hacia el mismo destino que elija para su dominio/subdominio.
 >>
->>>![Etapa 1](images/Step1.png){.thumbnail}
+>> ![Etapa 1](images/Step1.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para ir al etapa 2.
 >>

@@ -8,7 +8,7 @@ order: 01
 
 **Dernière mise à jour le 27/09/2022**
 
-## Objectif
+## Objectif 
 
 La redirection d'un nom de domaine consiste à rediriger celui-ci vers une nouvelle cible. Différents types de redirections existent, répondant chacun à un besoin spécifique.
 

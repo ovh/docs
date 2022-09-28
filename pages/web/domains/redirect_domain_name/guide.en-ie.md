@@ -269,7 +269,7 @@ This encapsulation prevents your site visitors from viewing the target domain
 >>
 >> In this last step, check that the information displayed is correct.
 >>
->>![Step 5](images/Step5Invi.png){.thumbnail}
+>> ![Step 5](images/Step5Invi.png){.thumbnail}
 >>
 >> Click on `Confirm`{.action} to confirm your configuration.
 >> 

@@ -46,7 +46,7 @@ Diese Aktionen können auf mehrere Arten durchgeführt werden:
 > Achten Sie auf die Änderungen, die Sie vornehmen werden, oder kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) in der Referenzierung.
 >
 > Achtung: Eine über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erstellte Weiterleitung erlaubt nicht die Weiterleitung einer URL im Sinne `https://` auf eine andere Domain oder eine andere URL. 
-> Um diese Weiterleitungsart zu erstellen, müssen Sie zum Beispiel [URL Rewriting](https://docs.ovh.com/fr/hosting/htaccess-reecriture-url-mod-rewrite/) über eine ".htaccess"-Datei ausführen.
+> Um diese Weiterleitungsart zu erstellen, müssen Sie zum Beispiel URL Rewriting über eine ".htaccess"-Datei ausführen.
 >
 
 ### Eine Domain über das Kundencenter weiterleiten
@@ -102,7 +102,7 @@ Diese Option erlaubt es, nach der Eingabe der weitergeleiteten Domain die Zieldo
 >>
 >> Wählen Sie eine `Web-Adresse`{.action} aus.
 >>
->>![Schritt 2](images/Step2.png){.thumbnail}
+>> ![Schritt 2](images/Step2.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 3 = überzugehen.
 >>
