@@ -15,14 +15,14 @@ order: 11
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Prérequis
 
 - Disposer d'un Cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté sur la page des [API OVHcloud](https://api.ovh.com/).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté sur la page des [API OVHcloud](https://ca.api.ovh.com/).
 
 ## Présentation des versions supportées sur un cluster Nutanix OVHcloud
 
@@ -57,7 +57,7 @@ Il est possible de voir les versions qualifiées au travers de l'API OVHcloud.
 
 Nous allons vérifier les versions supportées au travers de l'API OVHcloud.
 
-Connectez-vous à l'[API OVHcloud](https://api.ovh.com). Pour plus de détails sur le fonctionnement de l'API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/.)
+Connectez-vous à l'[API OVHcloud](https://ca.api.ovh.com). Pour plus de détails sur le fonctionnement de l'API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/.)
 
 Utilisez l'appel API suivant :
 
@@ -82,6 +82,6 @@ Le résultat de la requête apparaît en dessous de `availableVersions` avec les
 
 [Plan de mise à jours Nutanix AOS](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LIi9CAG)
 
-[Utilisation de l'API OVHcloud](https://docs.ovh.com/fr/api/)
+[Utilisation de l'API OVHcloud](https://docs.ovh.com/ca/fr/api/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
