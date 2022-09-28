@@ -105,7 +105,7 @@ Pour obtenir une nouvelle adresse e-mail, positionnez-vous sur l'onglet `Emails`
 
 Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 
-- **Nom du compte**: Renseignez le nom que portera votre adresse e-mail (votre prénom.nom, par exemple). Le nom de domaine concerné est déjà complété par défaut.|  
+- **Nom du compte**: Renseignez le nom que vous souhaitez pour votre adresse e-mail (votre prénom.nom, par exemple). Le nom de domaine concerné est déjà complété par défaut.|  
 - **Description du compte**: Indiquez une courte description vous permettant de reconnaître ce compte parmi d'autres affichés dans votre espace client OVHcloud.|  
 - **Taille du compte**: Sélectionnez la taille du compte souhaitée. Il s'agit de l'espace dont bénéficiera votre adresse pour stocker les messages.|  
 - **Mot de passe**: Définissez un mot de passe et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.|
