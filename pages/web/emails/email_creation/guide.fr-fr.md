@@ -75,7 +75,7 @@ Lors d'une première connexion au webmail, vous êtes invité à définir la lan
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
-Pour consultez vos e-mails depuis un logiciel de messagerie, référez-vous la rubrique [Consulter un compte e-mail depuis un appareil](#configdevices)
+Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous la rubrique « [Consulter un compte e-mail depuis un appareil](#configdevices) ».
 
 #### Supprimer un compte e-mail
 
