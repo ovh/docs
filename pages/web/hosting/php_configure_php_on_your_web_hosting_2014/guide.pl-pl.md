@@ -1,22 +1,22 @@
 ---
-title: 'Zmiana wersji PHP na hostingu'
+title: "Zmiana wersji PHP na hostingu"
 slug: konfiguracja_php_na_hostingu_www_ovh_2014
-excerpt: 'Dowiedz się, jak zmienić wersję PHP na hostingu OVH'
-id: '1207'
+excerpt: "Dowiedz się, jak zmienić wersję PHP na hostingu OVHcloud"
 section: PHP
+order: 01
 ---
 
-**Ostatnia aktualizacja z dnia 04-10-2018**
+**Ostatnia aktualizacja z dnia 19-09-2022**
 
 ## Wprowadzenie
 
-W sieci istnieje bardzo wiele stron WWW. Twój [hosting](https://www.ovhcloud.com/pl/web-hosting/){.external} umożliwia Ci hostowanie wybranej strony WWW, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVH](https://webhosting-infos.hosting.ovh.net){.external}. Istnieje możliwość, że będziesz chciał zmodyfikować wersję PHP używaną przez Twój hosting.
+W sieci istnieje bardzo wiele stron WWW. Twój [hosting](https://www.ovhcloud.com/pl/web-hosting/){.external} umożliwia Ci hostowanie wybranej strony WWW, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVHcloud](https://webhosting-infos.hosting.ovh.net){.external}. Istnieje możliwość, że będziesz chciał zmodyfikować wersję PHP używaną przez Twój hosting.
 
-**Dowiedz się, jak zmienić wersję PHP na hostingu OVH.**
+**Dowiedz się, jak zmienić wersję PHP na hostingu OVHcloud.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external} (z wyjątkiem Cloud Web)
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} (z wyjątkiem Cloud Web)
 - W zależności od wybranej metody zmiany wersji PHP, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub posiadanie informacji umożliwiających zalogowanie do przestrzeni dyskowej 
 
 ## W praktyce
@@ -33,13 +33,13 @@ OVH zapewnia instalację najnowszych wersji PHP na swoich serwerach, jednak to k
 
 - skorzystaj z oficjalnej dokumentacji stworzonej przez producenta używanego przez Ciebie CMS; 
 - uzyskaj informacje dotyczące wymagań technicznych niezbędnych do prawidłowego działania Twojego CMS oraz instrukcję przeprowadzenia jego aktualizacji;
-- jeśli jest to konieczne, zaktualizuj CMS i upewnij się, czy nowa wersja jest kompatybilna z hostingiem OVH.
+- jeśli jest to konieczne, zaktualizuj CMS i upewnij się, czy nowa wersja jest kompatybilna z hostingiem OVHcloud.
 
 **Używasz strony zbudowanej w oparciu o spersonalizowane rozwiązanie**: 
 
 - skontaktuj się z webmasterem, który zbudował stronę;
 - znajdź więcej informacji o migracji do nowych wersji w oficjalnej dokumentacji PHP dostępnej pod tym linkiem: <http://php.net/manual/en/appendices.php>;
-- jeśli jest to konieczne, zaktualizuj kod Twojej strony WWW i upewnij się, czy jest kompatybilny z hostingiem OVH.
+- jeśli jest to konieczne, zaktualizuj kod Twojej strony WWW i upewnij się, czy jest kompatybilny z hostingiem OVHcloud.
 
 Możesz również sprawdzić wersję PHP aktualnie używaną przez Twój hosting. W tym celu wykorzystaj jedną z dwóch możliwych metod: 
 
@@ -62,7 +62,7 @@ Istnieją dwa sposoby modyfikacji wersji PHP na Twoim hostingu:
 
 - **modyfikując ręcznie plik na przestrzeni dyskowej**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP w celu zmodyfikowania pliku „ovhconfig”. Skorzystaj z instrukcji zawartych w przewodniku OVH: [Konfiguracja pliku .ovhconfig na hostingu WWW](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/){.external}.
 
-Modyfikacja wersji PHP za pomocą pliku .htaccess nie jest już możliwa w najnowszych ofertach [hostingu WWW OVH](https://www.ovhcloud.com/pl/web-hosting//){.external}. Komenda umożliwiająca zmianę wersji PHP w pliku .htaccess nie pozwala używać najnowszych wersji PHP w naszej infrastrukturze. Aby zmienić wersję PHP, należy zatem użyć pliku „.ovhconfig”. Jeśli potrzebujesz wsparcia, skorzystaj z dokumentacji OVH [Konfiguracja pliku .ovhconfig na hostingu WWW](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/){.external}.
+Modyfikacja wersji PHP za pomocą pliku .htaccess nie jest już możliwa w najnowszych ofertach [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting//){.external}. Komenda umożliwiająca zmianę wersji PHP w pliku .htaccess nie pozwala używać najnowszych wersji PHP w naszej infrastrukturze. Aby zmienić wersję PHP, należy zatem użyć pliku „.ovhconfig”. Jeśli potrzebujesz wsparcia, skorzystaj z dokumentacji OVH [Konfiguracja pliku .ovhconfig na hostingu WWW](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/){.external}.
 
 ## Sprawdź również
 
