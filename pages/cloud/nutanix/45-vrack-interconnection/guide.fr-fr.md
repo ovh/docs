@@ -54,7 +54,7 @@ Le cluster de Roubaix utilise ces adresses :
 - Passerelle : `192.168.2.254`.
 - Version du cluster : `6.1`.
 
-Aidez-vous de ce guide pour redéployer vos clusters [Redéploiement personnalisé de votre Cluster](https://docs.ovh.com/fr/nutanix/cluster-custom-redeployment/)
+Aidez-vous de ce guide pour redéployer vos clusters [Redéploiement personnalisé de votre Cluster](https://docs.ovh.com/fr/nutanix/cluster-custom-redeployment/).
 
 > [!primary]
 > Ce guide vous propose de redéployer les deux clusters mais vous pouvez n'en redéployer qu'un, le plus important est de ne pas avoir les mêmes d'adresses IP identiques sur l'ensemble du réseau sauf pour la passerelle OVHGateway.
