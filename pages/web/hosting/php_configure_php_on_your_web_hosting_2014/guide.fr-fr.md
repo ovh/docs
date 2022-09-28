@@ -32,13 +32,13 @@ Plusieurs versions du langage de programmation PHP existent. Les évolutions de 
 
 Même si OVHcloud gère l'installation des dernières versions de PHP sur ses serveurs, il vous revient en tant que webmaster de vous assurer que votre site internet est **toujours à jour** et donc compatible avec les dernières versions de PHP. Afin de vous en assurer, deux possibilités existent selon le site internet que vous utilisez :
 
-**Cas 1 : vous utilisez un site « clés en main » comme un système de gestion de contenu (Content Management System ou CMS)** tel que WordPress, Joomla!, Prestashop ou Drupal : 
+**Cas n°1 : vous utilisez un site « clés en main » comme un système de gestion de contenu (Content Management System ou CMS)** tel que WordPress, Joomla!, PrestaShop ou Drupal : 
 
 - Consultez la documentation officielle créée par l'éditeur du CMS que vous utilisez.
 - Prenez note des informations concernant les prérequis techniques indispensables au fonctionnement de votre CMS, ainsi que la manipulation permettant de le mettre à jour.
 - Si nécessaire, mettez à jour votre CMS en vous assurant que la nouvelle version est compatible avec l'hébergement OVHcloud.
 
-**Cas 2 : vous utilisez un site basé sur une solution personnalisée** : 
+**Cas n°2 : vous utilisez un site basé sur une solution personnalisée** : 
 
 - Rapprochez-vous du webmaster ayant créé le site internet.
 - Aidez-vous de la [documentation officielle PHP](http://php.net/manual/en/appendices.php){.external} donnant plus d'informations sur les migrations de version.
@@ -46,7 +46,7 @@ Même si OVHcloud gère l'installation des dernières versions de PHP sur ses se
 
 Si besoin, vous pouvez connaître la version de PHP actuellement utilisée par votre hébergement de deux façons :
 
-- **via l'espace client OVHcloud** : connectez-vous à votre [l'espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web concerné. Dans l'onglet `Informations générales`{.action}, repérez la version en dessous de *Version PHP globale*. 
+- **via l'espace client OVHcloud** : connectez-vous à [l'espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web concerné. Dans l'onglet `Informations générales`{.action}, repérez la version en dessous de *Version PHP globale*. 
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}
 
@@ -75,7 +75,7 @@ Il existe deux manières de modifier la version de PHP de votre hébergement web
 > Pour cela, vous devrez obligatoirement utiliser le fichier `.ovhconfig` en vous aidant de notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/){.external}.
 >
 
-Certaines versions de PHP ne fonctionnent qu'avec certains environements d'exécution. Vous trouverez ci-après les versions de PHP disponibles sur les hébergements mutualisés OVHcloud et [les environnements d'exécution](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/) compatibles :
+Certaines versions de PHP ne fonctionnent qu'avec certains environnements d'exécution. Vous trouverez ci-après les versions de PHP disponibles sur les hébergements mutualisés OVHcloud et [les environnements d'exécution](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/) compatibles :
 
 |Versions PHP|Environnements d'exécution compatibles|
 |---|---|
@@ -87,7 +87,7 @@ Certaines versions de PHP ne fonctionnent qu'avec certains environements d'exéc
 
 [Modifier la configuration de son hébergement web](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/){.external}
 
-[Configurer le fichier .ovhconfig de mon hébergement web](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/){.external}
+[Configurer le fichier .ovhconfig de son hébergement web](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/){.external}
 
 [Se connecter à l’espace de stockage de son hébergement Web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external}
 
