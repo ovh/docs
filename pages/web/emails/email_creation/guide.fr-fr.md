@@ -99,7 +99,7 @@ Vous possédez donc la version historique de l'offre MX Plan. Voici l'affichage 
 
 #### Créer un compte e-mail
 
-Pour obtenir une nouvelle adresse e-mail, positionnez-vous sur l'onglet `Emails`{.action}. Le tableau qui s'affiche contient toutes les compte e-mail créés dans le cadre de votre offre MX Plan. Cliquez alors sur le bouton `Créer une adresse E-mail`{.action}.
+Pour obtenir une nouvelle adresse e-mail, positionnez-vous sur l'onglet `Emails`{.action}. Le tableau qui s'affiche contient tous les comptes e-mail créés dans le cadre de votre offre MX Plan. Cliquez alors sur le bouton `Créer une adresse E-mail`{.action}.
 
 ![email](images/mxplan-creation-legacy-step2.png){.thumbnail}
 
