@@ -49,7 +49,7 @@ If required, you can find out which PHP version is currently used by your hostin
 
 > [!primary]
 > If a blue circle is present, wait a few minutes for the version to refresh.
->
+> 
 
 - **via a script**: Create a **.php** script containing only the code `<?php phpinfo(); ?>`. Then put it online on your [FTP storage space](https://docs.ovh.com/au/en/hosting/log-in-to-storage-ftp-web-hosting/), then call it by accessing its full address/URL.
 

@@ -17,7 +17,7 @@ With your [OVHcloud web hosting](https://www.ovhcloud.com/en-gb/web-hosting/){.e
 - Have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}, with the exception of a Cloud Web hosting plan.
 - Have access to your Web Hosting plan from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), or you must know the information required to connect to the [FTP storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/). 
 
-## In practice
+## In practice 
 
 Several versions of PHP programming language exist. Version developments include various patches, as well as adding or removing features. OVHcloud offers the latest major versions of PHP, for which you can find a list [here](https://www.ovhcloud.com/en-gb/web-hosting/uc-programming-language/). 
 

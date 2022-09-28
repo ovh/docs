@@ -8,6 +8,10 @@ order: 01
 
 **Última actualización: 19/09/2022**
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 ## Objetivo
 
 Su [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} permite alojar el sitio web que desee, siempre que sea compatible con [la configuración de nuestras infraestructuras](https://webhosting-infos.hosting.ovh.net){.external}. En este sentido, quizá desee modificar la versión de PHP utilizada por su alojamiento web.

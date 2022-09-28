@@ -71,7 +71,7 @@ There are two ways you can modify your Web Hosting plan’s PHP version:
 > The command that changes the PHP version in the .htaccess file cannot be used to use the recent PHP versions on our infrastructures.<br>
 > To do this, you will need to use the `.ovhconfig` file, which you can do by referring to our guide [“Configuring the .ovhconfig file of my Web Hosting plan”](https://docs.ovh.com/ie/en/hosting/configuring-file-ovhconfig/){.external}.
 >
-
+ 
 Some PHP versions only work with certain runtime environments. The following are the PHP versions available on OVHcloud web hosting plans and compatible [runtime environments](https://docs.ovh.com/ie/en/hosting/modify_your_web_hosting_systems_runtime_environment/):
 
 |PHP versions|Compatible runtime environments|

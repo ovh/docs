@@ -89,7 +89,7 @@ Some PHP versions only work with certain runtime environments. The following are
 [Log in to your Web Hosting plan’s storage space](https://docs.ovh.com/us/en/hosting/log-in-to-storage-ftp-web-hosting/){.external}
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/).
-
+ 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>. 

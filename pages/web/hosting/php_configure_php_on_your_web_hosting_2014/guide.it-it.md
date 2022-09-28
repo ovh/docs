@@ -8,6 +8,10 @@ order: 01
 
 **Ultimo aggiornamento: 19/09/2022**
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 ## Obiettivo
 
 Il tuo [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} permette di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](https://webhosting-infos.hosting.ovh.net){.external}. Per questo motivo, potresti voler modificare la versione di PHP utilizzata dal tuo hosting Web.

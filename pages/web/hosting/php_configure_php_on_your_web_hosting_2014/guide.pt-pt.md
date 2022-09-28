@@ -7,6 +7,10 @@ order: 01
 
 **Última atualização: 19/09/2022**
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Objetivo
 
 O seu [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} permite alojar o site que deseja, desde que este seja compatível com a [configuração das nossas infraestruturas](https://webhosting-infos.hosting.ovh.net){.external}. Neste sentido, poderá querer alterar a versão de PHP utilizada pelo seu alojamento web.

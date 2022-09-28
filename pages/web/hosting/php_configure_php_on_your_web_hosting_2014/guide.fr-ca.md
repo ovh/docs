@@ -52,7 +52,7 @@ Si besoin, vous pouvez connaître la version de PHP actuellement utilisée par v
 
 > [!primary]
 > Si un symbole rond de couleur bleue est présent, patientez quelques minutes le temps que la version s'actualise.
->
+> 
 
 - **via un script** : Créez un script **.php** contenant uniquement le code `<?php phpinfo(); ?>`. Mettez-le ensuite en ligne sur votre [espace de stockage FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/), puis appelez-le en accédant à son adresse/URL complète.
 
