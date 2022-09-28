@@ -330,7 +330,7 @@ Esta variable permite redirigir un sitio web en su conjunto, o sólo una parte d
 >> Para redirigir un archivo hacia otro:
 >>
 >>```bash
->Redirect permanent /old_file.php http://domain.tld/new_file.php
+>>Redirect permanent /old_file.php http://domain.tld/new_file.php
 >>```
 >>
 > Código HTTP

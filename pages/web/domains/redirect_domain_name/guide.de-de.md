@@ -258,7 +258,7 @@ Diese Verkapselung verhindert, dass Besucher Ihrer Website die Zieldomain anzeig
 >>
 > **Schritt 4**
 >>
->>> Wählen Sie `Temporär (iframe)`{.action} aus den beiden angegebenen Optionen aus und geben Sie die Zieldomain oder -URL Ihrer Weiterleitung im angezeigten Formular `Web-Adresse`{.action} ein.
+>> Wählen Sie `Temporär (iframe)`{.action} aus den beiden angegebenen Optionen aus und geben Sie die Zieldomain oder -URL Ihrer Weiterleitung im angezeigten Formular `Web-Adresse`{.action} ein.
 >>
 >> ![Schritt 4](images/Step4Invi.png){.thumbnail}
 >>
@@ -344,7 +344,7 @@ Diese Variable erlaubt die Weiterleitung einer Website als Ganzes, oder nur eine
 Diese Variable ist für gelöschte Dateien nützlich. Sie ersetzt die Nachricht *404 Dokument nicht gefunden* durch eine deutlichere Nachricht vom Typ *410 Dokument existiert nicht mehr*. Der Besucher Ihrer Seite wird darüber informiert, dass die Datei, die er anzurufen versucht, nicht mehr existiert.
 
 > [!tabs]
->> Code im ".htaccess" einfügen 
+> Code im ".htaccess" einfügen 
 >>
 >>```bash
 >>Redirect gone /fileDeleted.html
