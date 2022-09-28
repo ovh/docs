@@ -1,7 +1,7 @@
 ---
 title: "PHP-Version eines Webhostings ändern"
 slug: konfiguration_von_php_fur_ein_ovh_webhosting_2014
-excerpt: "So ändern Sie die PHP-Version Ihres OVH Webhostings"
+excerpt: "So ändern Sie die PHP-Version Ihres OVHcloud Webhostings"
 section: 'PHP'
 order: 01
 ---
@@ -12,7 +12,7 @@ order: 01
 
 Im Internet gibt es viele verschiedene Websites. Mit Ihrem [OVHcloud Webhosting](https://www.ovh.com/de/hosting/){.external} können Sie die gewünschte Website hosten, solange diese mit der [Konfiguration unserer Infrastrukturen](https://webhosting-infos.hosting.ovh.net){.external} kompatibel ist. Daher kann es sein, dass Sie die von Ihrem Webhosting verwendete PHP-Version ändern möchten.
 
-**In dieser Anleitung erfahren Sie, wie Sie die PHP-Version Ihres OVH Webhostings ändern.**
+**In dieser Anleitung erfahren Sie, wie Sie die PHP-Version Ihres OVHcloud Webhostings ändern.**
 
 ## Voraussetzungen
 
@@ -21,7 +21,7 @@ Im Internet gibt es viele verschiedene Websites. Mit Ihrem [OVHcloud Webhosting]
 
 ## Beschreibung
 
-Es existieren zurzeit verschiedene Versionen der Programmiersprache PHP. Wie gewöhnlich bringen weiterentwickelte Versionen verschiedene Korrekturen sowie neu hinzugefügte oder entfernte Features. OVH stellt Ihnen die neuesten PHP-Hauptversionen zur Verfügung; die zugehörige Liste finden Sie hier: <>. 
+Es existieren zurzeit verschiedene Versionen der Programmiersprache PHP. Wie gewöhnlich bringen weiterentwickelte Versionen verschiedene Korrekturen sowie neu hinzugefügte oder entfernte Features. OVHcloud stellt Ihnen die neuesten PHP-Hauptversionen zur Verfügung; die zugehörige Liste finden Sie hier: <>. 
 
 Es gibt mehrere Versionen der PHP Programmiersprache. Die Evolutionen der Versionen bringen verschiedene Korrekturen sowie das Hinzufügen oder Anhalten von Funktionen. OVHcloud bietet die neuesten großen PHP-Versionen, die Sie in der Liste finden können [hier](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/). 
 
@@ -56,7 +56,7 @@ Wenn nötig können Sie die aktuell von Ihrem Hosting verwendete PHP-Version auf
 > Ist ein blaues rundes Symbol vorhanden, warten Sie einige Minuten, bis die Version aktualisiert wird.
 >
 
-- **über ein Skript** Erstellen Sie ein Skript **.php**, das ausschließlich den Code `<?php phpinfo(); ?>` enthält. Stellen Sie es dann auf Ihren [FTP Storage](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) online und rufen Sie es unter der Adresse/vollständigen URL an.|
+- **über ein Skript** Erstellen Sie ein Skript **.php**, das ausschließlich den Code `<?php phpinfo(); ?>` enthält. Stellen Sie es dann auf Ihren [FTP Storage](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) online und rufen Sie es unter der Adresse/vollständigen URL an.
 
 Wenn Sie die Kompatibilität Ihrer Website mit der neuen PHP-Version nicht überprüfen können und **Auch wenn wir von dieser Methode ausdrücklich abraten**, können Sie versuchen, die aktuelle Version zu ändern und die Version zurückzudrehen. Dabei riskieren Sie jedoch eine mögliche Fehlfunktion auf Ihrer Website. Selbst wenn die Änderung immer nach der Änderung angezeigt wird, kann es sein, dass eine ihrer spezifischen Funktionen davon betroffen ist und nicht mehr funktioniert. 
 
@@ -81,9 +81,9 @@ Einige PHP Versionen funktionieren nur mit bestimmten Ausführungsumgebungen. Im
 
 |PHP Versionen|Kompatible Ausführungsumgebungen|
 |---|---|
-|5.4, 5.5, 5.6 et 7.0|Legacy, Stable|
-|7.1, 7.2 et 7.3|Stable|
-|7.4, 8.0 et 8.1 (bêta)|stable64|
+|5.4, 5.5, 5.6 und 7.0|Legacy, Stable|
+|7.1, 7.2 und 7.3|Stable|
+|7.4, 8.0 und 8.1 (bêta)|stable64|
 
 ## Weiterführende Informationen
 

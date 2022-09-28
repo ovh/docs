@@ -51,7 +51,7 @@ If required, you can find out which PHP version is currently used by your hostin
 > If a blue circle is present, wait a few minutes for the version to refresh.
 >
 
-- **via a script**: Create a **.php** script containing only the code `<?php phpinfo(); ?>`. Then put it online on your [FTP storage space](https://docs.ovh.com/au/en/hosting/log-in-to-storage-ftp-web-hosting/), then call it by accessing its full address/URL.|
+- **via a script**: Create a **.php** script containing only the code `<?php phpinfo(); ?>`. Then put it online on your [FTP storage space](https://docs.ovh.com/au/en/hosting/log-in-to-storage-ftp-web-hosting/), then call it by accessing its full address/URL.
 
 If you are unable to ensure that your website is compatible with the new PHP version and **even if we strongly advise against this method**, you can try changing the current version and going back. However, you run the risk of potentially causing a technical issue on your website. In fact, even if it is always displayed after the change, it may affect one of its specific features, and it may not work. 
 

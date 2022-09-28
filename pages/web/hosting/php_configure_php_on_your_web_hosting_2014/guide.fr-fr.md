@@ -54,7 +54,7 @@ Si besoin, vous pouvez connaître la version de PHP actuellement utilisée par v
 > Si un symbole rond de couleur bleue est présent, patientez quelques minutes le temps que la version s'actualise.
 >
 
-- **via un script** : Créez un script **.php** contenant uniquement le code `<?php phpinfo(); ?>`. Mettez-le ensuite en ligne sur votre [espace de stockage FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/), puis appelez-le en accédant à son adresse/URL complète.|
+- **via un script** : Créez un script **.php** contenant uniquement le code `<?php phpinfo(); ?>`. Mettez-le ensuite en ligne sur votre [espace de stockage FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/), puis appelez-le en accédant à son adresse/URL complète.
 
 Si vous n'arrivez pas à vous assurer de la compatibilité de votre site internet avec la nouvelle version de PHP et **même si nous déconseillons vivement cette méthode**, vous pouvez essayer de changer la version actuelle et de revenir en arrière. Cependant, vous prenez alors le risque de générer un potentiel dysfonctionnement sur votre site internet. D'ailleurs, même si celui-ci s'affiche toujours après le changement, il se peut que l'une de ses fonctionnalités spécifiques en soit affectée et devienne inopérante. 
 
