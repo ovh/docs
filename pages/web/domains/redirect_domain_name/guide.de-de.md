@@ -401,4 +401,4 @@ Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontakti
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere verschiedenen [Support-Angebote](https://www.ovhcloud.com/de/support-levels/) einsehen.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
