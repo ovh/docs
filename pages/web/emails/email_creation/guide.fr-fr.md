@@ -93,7 +93,7 @@ Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} 
 
 #### Accéder à la gestion du service e-mail
 
-Vous possédez donc la version historique de l'offre MX Plan. Voici l'affichage que vous devez obtenir. Si ce n'est pas le cas, assurez-vous d'avoir suivi le bon cheminement [en vous reportant aux informations ci-dessus](./#en-pratique). 
+Vous possédez donc la version historique de l'offre MX Plan. Voici l'affichage que vous devez obtenir. Si ce n'est pas le cas, assurez-vous d'avoir suivi le bon cheminement [en vous reportant aux informations ci-dessus](#instructions). 
 
 ![email](images/mxplan-creation-legacy-step1.png){.thumbnail}
 
