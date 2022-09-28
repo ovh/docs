@@ -1,7 +1,7 @@
 ---
-title: Interconnexion de clusters au travers de vRACK
+title: Interconnexion de clusters au travers de vRack
 slug: nutanix-vrack-interconnection
-excerpt: "Mise en place d'une interconnexion de deux clusters au travers d'un vRACK d'OVHcloud"
+excerpt: "Mise en place d'une interconnexion de deux clusters au travers d'un vRack d'OVHcloud"
 section: Plan de reprise d'activité
 order: 03
 ---
