@@ -38,7 +38,7 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 >
 
 > [!warning]
-> Se o endereço IP Fail Over, ou um dos endereços IP do bloco, tem um MAC virtual afetado, o servidor alvo deve suportar a funcionalidade dos MAC virtuais.
+> Se o endereço Additional IP, ou um dos endereços IP do bloco, tem um MAC virtual afetado, o servidor alvo deve suportar a funcionalidade dos MAC virtuais.
 > Consulte [este guia](https://docs.ovh.com/pt/dedicated/network-support-virtual-mac/) para saber mais.
 >
 > Caso contrário, os MAC virtuais devem ser eliminados dos Additional IP antes da deslocação.
@@ -79,7 +79,7 @@ Numa primeira fase, é preferível verificar se o endereço IP pode ser migrado.
 >
 
 - `serviceName`: a referência do servidor dedicado de destino
-- `ip`: o endereço IP Fail Over a migrar
+- `ip`: o endereço Additional IP a migrar
 
 Para migrar o endereço IP, utilize a seguinte chamada:
 
@@ -89,7 +89,7 @@ Para migrar o endereço IP, utilize a seguinte chamada:
 >
 
 - `serviceName`: a referência do servidor dedicado de destino
-- `ip`: o endereço IP Fail Over a migrar
+- `ip`: o endereço Additional IP a migrar
 
 ## Quer saber mais?
 

@@ -45,11 +45,11 @@ A OVHcloud permite-lhe associar um endereço MAC virtual a um endereço de IP, d
 
 Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no menu `Bare Metal Cloud`{.action} e abra a secção `IP`{.action}.
 
-![IPFO](images/manageIPOVHcloud.png){.thumbnail}
+![IP](images/manageIPOVHcloud.png){.thumbnail}
 
 De seguida, localize na lista o endereço de Additional IP (ou o bloco) e clique no botão `...`{.action} para exibir a lista de opções.
 
-![IPFO](images/addvmac.png){.thumbnail}
+![IP](images/addvmac.png){.thumbnail}
 
 Quando aparecer a caixa de diálogo “Adicionar um MAC virtual”, selecione um tipo no menu pendente, introduza o nome da máquina virtual e clique em `Confirmar`{.action}.
 
@@ -60,7 +60,7 @@ Quando aparecer a caixa de diálogo “Adicionar um MAC virtual”, selecione um
 > **Nome da máquina virtual**: trata-se do nome desejado para o endereço MAC virtual, para depois se encontrar mais facilmente o par IP/MAC.
 >
 
-![IPFO](images/addvmac2.png){.thumbnail}
+![IP](images/addvmac2.png){.thumbnail}
 
 > [!primary]
 >

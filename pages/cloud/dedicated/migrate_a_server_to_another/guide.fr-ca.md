@@ -75,7 +75,7 @@ Consultez notre guide « [utiliser backup storage sur un serveur dédié](https:
 Si la réputation de vos adresses IP est importante, il est fortement conseillé d'utiliser des [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/), celles-ci pouvant être conservées en cas de migration.
 
 Une fois ces IP en votre possession, il vous suffira de déplacer celles-ci vers le nouveau serveur.<br>
-À cet effet, consultez notre guide dédié : [Déplacer une IP Fail Over](https://docs.ovh.com/ca/fr/dedicated/ip-fo-move/).
+À cet effet, consultez notre guide dédié : [Déplacer une Additional IP](https://docs.ovh.com/ca/fr/dedicated/ip-fo-move/).
 
 > [!alert]
 >

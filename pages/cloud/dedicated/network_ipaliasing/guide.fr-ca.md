@@ -90,11 +90,11 @@ Ou à cela :
 auto eth0
 iface eth0 inet dhcp
 
-# IPFO 1
+# IP 1
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
 pre-down /sbin/ifconfig eth0:0 down
 
-# IPFO 2
+# IP 2
 post-up /sbin/ifconfig eth0:1 ADDITIONAL_IP2 netmask 255.255.255.255 broadcast ADDITIONAL_IP2
 pre-down /sbin/ifconfig eth0:1 down
 ```
@@ -171,11 +171,11 @@ netmask 255.255.255.0
 broadcast xxx.xxx.xxx.255
 gateway xxx.xxx.xxx.254
 
-# IPFO 1
+# IP 1
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP
 pre-down /sbin/ifconfig eth0:0 down
 
-# IPFO 2
+# IP 2
 post-up /sbin/ifconfig eth0:1 IP_IP2 netmask 255.255.255.255 broadcast IP_IP2
 pre-down /sbin/ifconfig eth0:1 down
 ```

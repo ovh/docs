@@ -46,11 +46,11 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 
 Po zalogowaniu się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}.
 
-![IPFO](images/manageIPOVHcloud.png){.thumbnail}
+![IP](images/manageIPOVHcloud.png){.thumbnail}
 
 Zlokalizuj następnie na liście Twój adres Additional IP (lub blok Additional IP), po czym kliknij przycisk `...`{.action}, aby wyświetlić listę opcji.
 
-![IPFO](images/addvmac.png){.thumbnail}
+![IP](images/addvmac.png){.thumbnail}
 
 Po wyświetleniu okna dialogowego "Dodaj wirtualny adres MAC" wybierz typ adresu z rozwijanej listy, wprowadź nazwę maszyny wirtualnej i kliknij `Potwierdź`{.action}.
 
@@ -61,7 +61,7 @@ Po wyświetleniu okna dialogowego "Dodaj wirtualny adres MAC" wybierz typ adresu
 > **Nazwa wirtualnej maszyny**: jest to nazwa dla wirtualnego adresu MAC ułatwiająca odnalezienie pary IP/MAC.
 >
 
-![IPFO](images/addvmac2.png){.thumbnail}
+![IP](images/addvmac2.png){.thumbnail}
 
 
 > [!primary]

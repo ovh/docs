@@ -38,7 +38,7 @@ Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'al
 >
 
 > [!warning]
-> Se l'indirizzo IP Fail Over, o uno degli indirizzi IP del blocco, ha un MAC virtuale compromesso, il server di destinazione deve supportare la funzionalità dei MAC virtuali.
+> Se l'indirizzo Additional IP, o uno degli indirizzi IP del blocco, ha un MAC virtuale compromesso, il server di destinazione deve supportare la funzionalità dei MAC virtuali.
 > Consulta [questa guida](https://docs.ovh.com/it/dedicated/network-support-virtual-mac/) per determinarlo.
 >
 > In caso contrario, i MAC virtuali devono essere eliminati dagli IP FailOver prima dello spostamento.

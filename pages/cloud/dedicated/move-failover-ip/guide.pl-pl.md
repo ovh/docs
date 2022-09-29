@@ -38,7 +38,7 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 >
 
 > [!warning]
-> Jeśli adres IP Fail Over lub jeden z adresów IP bloku, ma przypisany wirtualny adres MAC, serwer docelowy musi obsługiwać funkcje wirtualnych adresów MAC.
+> Jeśli adres Additional IP lub jeden z adresów IP bloku, ma przypisany wirtualny adres MAC, serwer docelowy musi obsługiwać funkcje wirtualnych adresów MAC.
 > Zapoznaj się [z tym przewodnikiem](https://docs.ovh.com/pl/dedicated/network-support-virtual-mac/).
 >
 > W przeciwnym razie wirtualne adresy MAC muszą zostać usunięte z adresów Additional IP przed przeniesieniem.
@@ -84,7 +84,7 @@ Najpierw należy sprawdzić, czy adres IP może zostać przeniesiony.
 >
 
 - `serviceName`: numer serwera dedykowanego docelowego
-- `ip`: adres IP Fail Over do przeniesienia
+- `ip`: adres Additional IP do przeniesienia
 
 Aby przenieść adres IP, użyj następującego połączenia:
 
@@ -94,7 +94,7 @@ Aby przenieść adres IP, użyj następującego połączenia:
 >
 
 - `serviceName`: numer serwera dedykowanego docelowego
-- `ip`: adres IP Fail Over do przeniesienia
+- `ip`: adres Additional IP do przeniesienia
 
 ## Sprawdź również
 

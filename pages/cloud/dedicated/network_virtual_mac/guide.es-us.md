@@ -45,18 +45,18 @@ OVHcloud permite asociar una dirección MAC virtual a una dirección IP para pod
 
 En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda al menú `Bare Metal Cloud`{.action} y abra la sección `IP`{.action}.
 
-![IPFO](images/manageIPOVHcloud.png){.thumbnail}
+![IP](images/manageIPOVHcloud.png){.thumbnail}
 
 Localice su dirección Additional IP (o su bloque) en la lista, haga clic en el botón `···`{.action} situado al final de la línea correspondiente para ver la lista de opciones y seleccione `Añadir una MAC virtual`{.action}.
 
-![IPFO](images/addvmac.png){.thumbnail}
+![IP](images/addvmac.png){.thumbnail}
 
 En el cuadro de diálogo, seleccione un tipo en la lista desplegable, introduzca el nombre de la máquina virtual y haga clic en `Aceptar`{.action}.
 
 - **Tipo**: Elija el tipo de dirección MAC virtual («VMware» para el sistema VMware ESXi y «ovh» para todos los demás sistemas de virtualización).
 - **Nombre de la máquina virtual**: Nombre que quiera asignarle a la dirección MAC virtual, para luego encontrar más fácilmente la pareja IP-MAC.
 
-![IPFO](images/addvmac2.png){.thumbnail}
+![IP](images/addvmac2.png){.thumbnail}
 
 > [!primary]
 >
