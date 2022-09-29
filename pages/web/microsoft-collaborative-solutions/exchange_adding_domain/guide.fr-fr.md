@@ -107,9 +107,9 @@ Pour rappel, toutes les adresses créées sur votre service seront en mesure de 
 
 Une fois les comptes totalement configurés, il ne vous reste plus qu’à les utiliser. Pour cela, OVHcloud met à votre disposition le **webmail** accessible à l’adresse <https://www.ovh.com/fr/mail/>. Pour une utilisation optimale de votre adresse sur un logiciel, assurez-vous de sa bonne compatibilité avec le service. 
 
-Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, ou obtenir de l'aide concernant les fonctionnalités de votre service e-mail, consultez nos documentations accessibles depuis les pages [Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/) et [E-mail Pro](https://docs.ovh.com/fr/microsoft-collaborative-solutions/).
+Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, ou obtenir de l'aide concernant les fonctionnalités de votre service e-mail, consultez nos documentations accessibles depuis les pages [Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/) et [E-mail Pro](https://docs.ovh.com/fr/emails-pro/).
 
-Vous pouvez acquérir des licences Outlook dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et des licences Office 365 sur la page [https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/). Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
+Vous pouvez acquérir des licences Outlook dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et des licences Office 365 sur la page <https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/>. Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
 
 ### Supprimer un nom de domaine d'une plateforme
 
