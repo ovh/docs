@@ -20,13 +20,13 @@ order: 03
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté sur vos clusters via Prism Central.
 
 ## En pratique
 
 Nous allons interconnecter deux clusters Nutanix distants, l'un à Gravelines et l'autre à Roubaix au travers du même vRack.<br>
-Consultez notre [présentation du vRack](https://www.ovh.com/fr/solutions/vrack/) pour en savoir plus sur la solution vRack OVHcloud.
+Consultez notre [présentation du vRack](https://www.ovh.com/ca/fr/solutions/vrack/) pour en savoir plus sur la solution vRack OVHcloud.
 
 ### Préparation des deux clusters avant l'interconnexion
 
@@ -53,7 +53,7 @@ Le cluster de Roubaix utilise ces adresses :
 - Passerelle : `192.168.2.254`.
 - Version du cluster : `6.1`.
 
-Aidez-vous de notre guide dédié au [redéploiement personnalisé de votre Cluster](https://docs.ovh.com/fr/nutanix/cluster-custom-redeployment/).
+Aidez-vous de notre guide dédié au [redéploiement personnalisé de votre Cluster](https://docs.ovh.com/ca/fr/nutanix/cluster-custom-redeployment/).
 
 > [!primary]
 > Le guide mentionné ci-dessus vous propose de redéployer les deux clusters. Néanmoins, vous pouvez n'en redéployer qu'un, le plus important est de ne pas avoir les mêmes adresses IP identiques sur l'ensemble du réseau, sauf pour la passerelle OVHGateway.
@@ -77,7 +77,7 @@ L'accès à Prism Central est maintenu à l'aide du Load Balancer.
 
 Cette opération consiste à supprimer l'affectation du vRack à Roubaix et ensuite à étendre le vRack de Gravelines avec Roubaix. Les modifications du vRack se font au travers de l'espace client OVHcloud. 
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). 
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). 
 
 #### Suppression des éléments du vRack de Roubaix.
 
@@ -202,14 +202,12 @@ Le Load Balancer est relié au vRack commun aux deux sites et l'accès à Prism 
 
 ## Aller plus loin
 
-[Plan de reprise d'activité sous Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
+[Plan de reprise d'activité sous Nutanix](https://docs.ovh.com/ca/fr/nutanix/disaster-recovery-plan-overview/)
 
-[Réplication asynchrone ou NearSync au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
+[Réplication asynchrone ou NearSync au travers de Prism Element](https://docs.ovh.com/ca/fr/nutanix/prism-element-nutanix-replication/)
 
-[Réplication avancée avec Leap](https://docs.ovh.com/fr/nutanix/leap-replication/)
+[Réplication avancée avec Leap](https://docs.ovh.com/ca/fr/nutanix/leap-replication/)
 
-[Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/)
+[Présentation des vRack](https://www.ovh.com/ca/fr/solutions/vrack/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
-
-
