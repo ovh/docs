@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 27/09/2022**
+**Dernière mise à jour le 29/09/2022**
 
 ## Objectif
 
@@ -48,7 +48,7 @@ Le fonctionnement de **Tanzu Kubernetes Grid** sur le cluster VMware nécessite 
 
 ### Déploiement d'un cluster de *Workload* et installation d'une application
 
-Pour pouvoir déployer une application il est nécessaire de créer des clusters de *Workload* dédiés aux applications.
+Pour pouvoir déployer une application il est nécessaire de créer des clusters de *WorkLoad* dédiés aux applications.
 
 Tous les clusters de *WorkLoad* sont indépendants les uns des autres, ce qui permet d'avoir des versions différentes de Kubernetes sur chacun de ces clusters de *Workload*.
 
@@ -64,12 +64,13 @@ Une application peut être constituée de plusieurs **pods** qui communiquent en
 
 ![03 apps and load balancing](images/03-internetworkcommunication01.png){.thumbnail}
 
-### Gestion des volumes permanents 
+### Gestion des volumes persistants
 
 Par défaut lors de l'arrêt ou d'un crash d'un **pods** les données contenues dans ce **pod** sont perdues. Pour pouvoir stocker des données de manière permanente il est nécessaire de créér des volumes permanents et de les associer aux applications.
 
-Les volumes permanents sont stockés par défaut à l'intérieur du cluster Kubernetes mais il est possible de faire utiliser les API VMware pour créer des volumes persistants sur l'infrastrcture VMware. (vSAN ou NFS)
+Les volumes persistants sont stockés par défaut sur le stockage VMware (vSAN ou NFS) qui a servi pour le déploiement du cluster de *WorkLoad* en utilisant les api VMWARE (vSPHERE Cloud Native Storage).
 
+Il est de possible de créer des **Custom Storage Class** pour définir un autre emplacement.
 
 Utilisez ce guide [Gestion des volumes permanents dans Tanzu Kubernetes Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-permanent-volumes) pour ajouter une application qui utilise un volume permanent externe.
 
