@@ -22,7 +22,7 @@ This guide is designed to familiarise you with the management of your containers
 
 ### Using AWS CLI
 
-### Installation
+#### Installation
 
 Enter the following command:
 
@@ -36,12 +36,12 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 > - Install the groff package if you want to use command line help.
 >
 
-### Collect Credentials
+#### Collect Credentials
 
 - You will need your user's Access key* and *Secret key*. You can access this information in the ‘S3 users’ tab in your Control Panel.
 - You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers` tab, then in the details of your bucket. Otherwise, follow this [guide](https://docs.ovh.com/ca/fr/storage/s3/location).
 
-### Configuration
+#### Configuration
 
 Configure the aws client as follows:
 
@@ -84,7 +84,7 @@ Here are the configuration values that you can specifically set:
 | max_bandwidth | Integer | **Default:** None | The maximum bandwidth that will be used to load and download data to and from your buckets. |
 | verify_ssl | Boolean | **Default:** true | Enable / Disable SSL certificate verification |
 
-### Usage
+#### Usage
 
 > [!primary]
 >
