@@ -1,6 +1,6 @@
 ---
-title:  Mover una IP failover
-excerpt: Cómo mover una IP failover desde el área de cliente o a través de la API de OVHcloud
+title:  Mover una Additional IP
+excerpt: Cómo mover una Additional IP desde el área de cliente o a través de la API de OVHcloud
 slug: ip-fo-move
 section: Red e IP
 order: 7
@@ -14,21 +14,21 @@ order: 7
 
 ## Objetivo
 
-Las IP failover pueden moverse entre los servicios que utilice. El objetivo es no perder su reputación, su posicionamiento y mejorar la continuidad del servicio de sus aplicaciones y sistemas.
+Las Additional IP pueden moverse entre los servicios que utilice. El objetivo es no perder su reputación, su posicionamiento y mejorar la continuidad del servicio de sus aplicaciones y sistemas.
 
 Esta tecnología le permite mover las direcciones IP de un servidor a otro en menos de un minuto, prácticamente sin interrupciones para sus usuarios. Asimismo, este mecanismo también puede utilizarse durante la migración de servicios, transfiriendo los proyectos del entorno de desarrollo al de producción, o durante la migración hacia un servidor de respaldo en caso de fallo.
 
 > [!primary]
-> Una IP failover no puede moverse de un país a otro distinto. Por ejemplo, una IP situada en el datacenter SBG (Francia) podrá migrarse a GRA (Francia) o RBX (Francia), pero no podrá migrarse a un servidor localizado en BHS (Canadá).
+> Una Additional IP no puede moverse de un país a otro distinto. Por ejemplo, una IP situada en el datacenter SBG (Francia) podrá migrarse a GRA (Francia) o RBX (Francia), pero no podrá migrarse a un servidor localizado en BHS (Canadá).
 >
 > Los bloques de IPs se tienen que mover en bloque. No es posible dividir un bloque o mover las IPs de un bloque a distintos servidores.
 
-**Cómo mover una IP failover desde el área de cliente de OVHcloud o a través de la API de OVHcloud**
+**Cómo mover una Additional IP desde el área de cliente de OVHcloud o a través de la API de OVHcloud**
 
 ## Requisitos
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} en el área de cliente de OVHcloud.
-- Tener una [dirección IP failover](https://www.ovhcloud.com/es/bare-metal/ip/).
+- Tener una [dirección Additional IP](https://www.ovhcloud.com/es/bare-metal/ip/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 > [!warning]
@@ -37,10 +37,10 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 > Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
 
 > [!warning]
-> Si la dirección IP failover, o una de las direcciones IP del bloque, tiene una MAC virtual asociada, el servidor de destino debe soportar la funcionalidad de las MAC virtuales.
+> Si la dirección Additional IP, o una de las direcciones IP del bloque, tiene una MAC virtual asociada, el servidor de destino debe soportar la funcionalidad de las MAC virtuales.
 > Para ello, consulte [esta guía](https://docs.ovh.com/us/es/dedicated/network-support-virtual-mac/).
 >
-> En caso contrario, las MAC virtuales deben eliminarse de las IP failover antes de transferirlas.
+> En caso contrario, las MAC virtuales deben eliminarse de las Additional IP antes de transferirlas.
 
 ## Procedimiento
 
@@ -56,9 +56,9 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda al menú `Bare Metal Cloud`{.action} y abbra `IP`{.action}.
 
-En el menú desplegable "Servicio" puede seleccionar el tipo de servicio a visualizar. Puede elegir "IP failover" para solamente visualizar las IPs de este tipo.
+En el menú desplegable "Servicio" puede seleccionar el tipo de servicio a visualizar. Puede elegir "Additional IP" para solamente visualizar las IPs de este tipo.
 
-Haga clic en el botón `...`{.action} que está a la derecha de la dirección IP que quiera mover y, seguidamente, en `Mover la IP failover`{.action}.
+Haga clic en el botón `...`{.action} que está a la derecha de la dirección IP que quiera mover y, seguidamente, en `Mover la Additional IP`{.action}.
 
 ![área de cliente](images/manager02.png){.thumbnail}
 
@@ -81,7 +81,7 @@ En primer lugar, es mejor comprobar si la dirección IP se puede mover correctam
 >
 
 - `serviceName`: la referencia del servidor dedicado de destino
-- `ip`: la dirección IP failover a mover
+- `ip`: la dirección Additional IP a mover
 
 Para mover la dirección IP, utilice la siguiente llamada:
 
@@ -91,7 +91,7 @@ Para mover la dirección IP, utilice la siguiente llamada:
 >
 
 - `serviceName`: la referencia del servidor dedicado de destino
-- `ip`: la dirección IP failover a mover
+- `ip`: la dirección Additional IP a mover
 
 ## Más información
 

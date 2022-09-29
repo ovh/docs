@@ -39,7 +39,7 @@ Se está a usar um template Linux fornecido pela OVHcloud para instalar o servid
 
 Por exemplo, se atribuimos ao seu servidor o intervalo IPv6: `2607:5300:xxxx:xxxx:/64` pode utilizar o IPv6 principal do seu servidor como IPv6: `2607:5300:xxxx:xxxx::1/64`.
 
-Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utilizá-lo numa VM) deve dispor de um IP fail-over configurado com um vMAC. Caso contrário, o IPv6 não poderá ser roteado pelos nossos routers/switchs.
+Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utilizá-lo numa VM) deve dispor de um Additional IP configurado com um vMAC. Caso contrário, o IPv6 não poderá ser roteado pelos nossos routers/switchs.
 
 > [!primary]
 >

@@ -1,6 +1,6 @@
 ---
 title:  Trasferisci un IP FailOver
-excerpt: Questa guida ti mostra come spostare un IP Failover dallo Spazio Cliente OVHcloud o via API OVHcloud
+excerpt: Questa guida ti mostra come spostare un Additional IP dallo Spazio Cliente OVHcloud o via API OVHcloud
 slug: ip-fo-move
 section: Rete e IP
 order: 7
@@ -14,21 +14,21 @@ order: 7
 
 ## Obiettivo
 
-Gli IP Failover possono essere trasferiti tra i servizi utilizzati. L'interesse è di non perdere la tua reputazione, la tua referenziazione e migliorare la continuità di servizio delle tue applicazioni e sistemi.
+Gli Additional IP possono essere trasferiti tra i servizi utilizzati. L'interesse è di non perdere la tua reputazione, la tua referenziazione e migliorare la continuità di servizio delle tue applicazioni e sistemi.
 
 Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'altra in meno di un minuto, praticamente senza alcuna interruzione per i tuoi utenti. Può essere utilizzata in caso di migrazione di servizi (ad esempio, spostamento dei progetti dall'ambiente di sviluppo a quello di produzione) o in caso di trasferimento verso un server di backup in caso di guasto.
 
 > [!primary]
-> Un IP Failover non può essere spostato da una zona all'altra. Ad esempio, un IP situato nel datacenter SBG potrà essere spostato verso GRA o RBX ma non potrà essere spostato verso BHS.
+> Un Additional IP non può essere spostato da una zona all'altra. Ad esempio, un IP situato nel datacenter SBG potrà essere spostato verso GRA o RBX ma non potrà essere spostato verso BHS.
 > 
 > Solo l'intero blocco può essere spostato, non è possibile migrare i singoli IP all'interno di un blocco.
 
-**Come migrare un IP Failover dallo Spazio Cliente OVHcloud o tramite le API OVHcloud**
+**Come migrare un Additional IP dallo Spazio Cliente OVHcloud o tramite le API OVHcloud**
 
 ## Prerequisiti
 
 - Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} nello Spazio Cliente OVHcloud
-- Disporre di un [indirizzo IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/)
+- Disporre di un [indirizzo Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 > [!warning]
@@ -57,9 +57,9 @@ Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'al
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul menu `Bare Metal Cloud`{.action} e apri la sezione `IP`{.action}.
 
-Il menu a tendina "Service" ti permette di selezionare solo gli IP Failover.
+Il menu a tendina "Service" ti permette di selezionare solo gli Additional IP.
 
-Clicca sul pulsante `...`{.action} a destra dell'indirizzo IP da spostare e poi su `Sposta l'IP Failover`{.action}.
+Clicca sul pulsante `...`{.action} a destra dell'indirizzo IP da spostare e poi su `Sposta l'Additional IP`{.action}.
 
 ![Spazio Cliente](images/manager02.png){.thumbnail}
 
@@ -82,7 +82,7 @@ Per prima cosa, è meglio verificare se l'indirizzo IP può essere spostato.
 >
 
 - `serviceName`: il riferimento del server dedicato di destinazione
-- `ip`: l'indirizzo IP Failover da spostare
+- `ip`: l'indirizzo Additional IP da spostare
 
 Per spostare l'indirizzo IP, utilizza questa chiamata:
 
@@ -92,7 +92,7 @@ Per spostare l'indirizzo IP, utilizza questa chiamata:
 >
 
 - `serviceName`: il riferimento del server dedicato di destinazione
-- `ip`: l'indirizzo IP Failover da spostare
+- `ip`: l'indirizzo Additional IP da spostare
 
 ## Per saperne di più
 

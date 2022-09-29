@@ -66,25 +66,25 @@ Puoi autorizzare l'accesso allo spazio di backup dal tuo nuovo server. In questo
 
 Per maggiori informazioni, consulta la nostra guida su [utilizzare il Backup Storage su un server dedicato](https://docs.ovh.com/it/dedicated/servizio-backup-storage/).
 
-### Migrazione di un IP Failover (disponibile solo su OVHcloud e So you Start)
+### Migrazione di un Additional IP (disponibile solo su OVHcloud e So you Start)
 
 > [!warning]
 >
 > - L'indirizzo IP principale di un server non può essere migrato verso un altro server.
 >
-> - La migrazione di un IP Failover è possibile da un account So you Start a un account OVHcloud. Questa operazione è fatturata allo stesso modo della creazione di un nuovo IP.
+> - La migrazione di un Additional IP è possibile da un account So you Start a un account OVHcloud. Questa operazione è fatturata allo stesso modo della creazione di un nuovo IP.
 >
 > - Non è possibile trasferire un IP da un account OVHcloud a un account So you Start.
 >
 
-Se la reputazione dei tuoi indirizzi IP è importante, ti consigliamo vivamente di utilizzare indirizzi [IP failover](https://www.ovhcloud.com/it/bare-metal/ip/) perché, in caso di migrazione, possono essere conservati.
+Se la reputazione dei tuoi indirizzi IP è importante, ti consigliamo vivamente di utilizzare indirizzi [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/) perché, in caso di migrazione, possono essere conservati.
 
 Una volta creati questi indirizzi IP, dovete semplicemente spostarli sul nuovo server.
 Per farlo, consulta la nostra guida: [Trasferisci un IP FailOver](https://docs.ovh.com/it/dedicated/ip-fo-move/).
 
 > [!alert]
 >
-> L'eliminazione del server di origine, su cui sono state ordinate una o più opzioni (spazio di backup, IP failover), eliminerà definitivamente queste opzioni.
+> L'eliminazione del server di origine, su cui sono state ordinate una o più opzioni (spazio di backup, Additional IP), eliminerà definitivamente queste opzioni.
 >
 > È quindi necessario apportare tutte le modifiche prima di eliminare il servizio.
 >

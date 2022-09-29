@@ -1,7 +1,7 @@
 ---
-title: 'Assegnare un MAC virtuale a un IP Failover'
+title: 'Assegnare un MAC virtuale a un Additional IP'
 slug: network-virtual-mac
-excerpt: 'Scopri come aggiungere un indirizzo MAC virtuale e come associarlo a un IP Failover'
+excerpt: 'Scopri come aggiungere un indirizzo MAC virtuale e come associarlo a un Additional IP'
 section: 'Rete e IP'
 ---
 
@@ -15,12 +15,12 @@ section: 'Rete e IP'
 
 OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al fine di poter creare VM con una configurazione <i>bridge</i> sul tuo server.
 
-**Questa guida ti mostra come creare un indirizzo MAC virtuale e come associarlo a un IP Failover.**
+**Questa guida ti mostra come creare un indirizzo MAC virtuale e come associarlo a un Additional IP.**
 
 ## Prerequisiti
 
 - Possedere un [server dedicato](https://www.ovh.it/server_dedicati/){.external}
-- Disporre di un [indirizzo IP Failover](https://www.ovh.it/server_dedicati/ip_failover.xml){.external} o di un blocco IP Failover (RIPE)
+- Disporre di un [indirizzo Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/){.external} o di un blocco Additional IP (RIPE)
 - Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[API OVHcloud](https://api.ovh.com/console/)
 - Il tuo server deve supportare i MAC virtuali. Consulta [questa guida](https://docs.ovh.com/it/dedicated/network-support-virtual-mac/) per determinarlo.
 
@@ -47,7 +47,7 @@ Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?acti
 
 ![IPFO](images/manageIPOVHcloud.png){.thumbnail}
 
-Successivamente, individua il tuo indirizzo IP Failover (o il tuo blocco) nella lista, clicca sul pulsante `...`{.action} per visualizzare la lista delle opzioni e seleziona Aggiungi un MAC virtuale.
+Successivamente, individua il tuo indirizzo Additional IP (o il tuo blocco) nella lista, clicca sul pulsante `...`{.action} per visualizzare la lista delle opzioni e seleziona Aggiungi un MAC virtuale.
 
 ![IPFO](images/addvmac.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Utilizza questa chiamata API:
 
 #### Tramite lo Spazio Cliente OVHcloud
 
-Per eliminare un indirizzo MAC virtuale associato a un IP Failover, collegati al tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `IP`{.action}. Seleziona il server per visualizzare gli IP Failover o i blocchi IP associati.
+Per eliminare un indirizzo MAC virtuale associato a un Additional IP, collegati al tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `IP`{.action}. Seleziona il server per visualizzare gli Additional IP o i blocchi IP associati.
 
 Infine clicca sul pulsante `...`{.action} sulla destra e seleziona la voce `Elimina il MAC virtuale`{.action}.
 

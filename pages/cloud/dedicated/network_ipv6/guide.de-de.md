@@ -39,7 +39,7 @@ Wenn Sie Ihren Server mithilfe eines von OVHcloud bereitgestellten Linux-Betrieb
 
 Wenn wir beispielsweise Ihrem Server den IPv6-Bereich `2607:5300:xxxx:xxxx::/64` zugewiesen haben, können Sie folgende Adresse als primäre IPv6 Ihres Servers verwenden: `2607:5300:xxxx:xxxx::1/64`.
 
-Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wenn Sie diese auf einer VM verwenden möchten), müssen Sie jeweils eine Failover-IP mit vMAC einrichten. Andernfalls kann IPv6 nicht von unseren Routern / Switches geroutet werden.
+Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wenn Sie diese auf einer VM verwenden möchten), müssen Sie jeweils eine Additional IP mit vMAC einrichten. Andernfalls kann IPv6 nicht von unseren Routern / Switches geroutet werden.
 
 > [!primary]
 >

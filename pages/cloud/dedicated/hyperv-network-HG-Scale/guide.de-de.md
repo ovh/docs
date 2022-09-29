@@ -14,19 +14,19 @@ order: 5
 
 ## Ziel
 
-Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Failover-IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Failover-IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
+Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Additional IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
 
 **Diese Anleitung erklärt, wie Sie das Netzwerk mit Hyper-V auf Windows Server konfigurieren.**
 
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
-- Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Failover-IP-Block.
+- Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Additional IP-Block.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
 >
-> Im OVHcloud Kundencenter dürfen keine virtuellen MACs für Failover-IPs angelegt werden.
+> Im OVHcloud Kundencenter dürfen keine virtuellen MACs für Additional IPs angelegt werden.
 >
 
 ## In der praktischen Anwendung
@@ -36,7 +36,7 @@ Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Failover-IPs im *Br
 > Bei diesen Serverreihen gibt es 4 Netzwerkkarten: jeweils zwei für das öffentliche und lokale Netzwerk. Um die gesamte Bandbreite zu nutzen, müssen Aggregate erstellt werden.
 >
 
-### Failover-IP im gerouteten Modus auf öffentlichen Netzwerkinterfaces
+### Additional IP im gerouteten Modus auf öffentlichen Netzwerkinterfaces
 
 #### Erläuterungen
 
@@ -171,7 +171,7 @@ Die DNS-Server können Sie selbst auswählen. In unserem Beispiel verwenden wir 
 
 Klicken Sie dann auf `Advanced...` und klicken Sie im neuen Fenster auf `Add...`{.action} unter "IP addresses".
 
-Fügen Sie die IP-Adresse und die Subnetzmaske Ihrer Failover-IP hinzu und klicken Sie auf `Add`{.action}.
+Fügen Sie die IP-Adresse und die Subnetzmaske Ihrer Additional IP hinzu und klicken Sie auf `Add`{.action}.
 
 ![static IP](images/static_ip_6.png){.thumbnail}
 
@@ -231,7 +231,7 @@ network:
 ```
 
 
-### Failover-IP über das vRack
+### Additional IP über das vRack
 
 #### Voraussetzungen
 

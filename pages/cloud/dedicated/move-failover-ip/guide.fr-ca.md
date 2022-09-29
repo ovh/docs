@@ -10,7 +10,7 @@ order: 7
 
 ## Objectif
 
-Les IP fail-over peuvent être déplacées entres les services que vous utilisez. L'intérêt est de ne pas perdre votre réputation, votre référencement et d'améliorer la continuité de service de vos applications et systèmes.
+Les Additional IP peuvent être déplacées entres les services que vous utilisez. L'intérêt est de ne pas perdre votre réputation, votre référencement et d'améliorer la continuité de service de vos applications et systèmes.
 
 Cette technologie vous permet d’échanger les adresses IP d'une solution à l'autre en moins d'une minute, pratiquement sans aucune interruption pour vos utilisateurs. Elle peut être utilisée lors des migrations de services (déplacement des projets de l'environnement de développement à celui de production, par exemple) ou lors du basculement vers un serveur de secours en cas de défaillance.
 
@@ -53,9 +53,9 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur le menu `Bare Metal Cloud`{.action} puis ouvrez la section `IP`{.action}.
 
-Le menu déroulant « Service » vous permet de ne sélectionner que les IP Failover.
+Le menu déroulant « Service » vous permet de ne sélectionner que les Additional IP.
 
-Cliquez sur le bouton `...`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer l'IP failover`{.action}.
+Cliquez sur le bouton `...`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer l'Additional IP`{.action}.
 
 ![espace client](images/manager02.png){.thumbnail}
 

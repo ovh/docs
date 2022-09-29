@@ -18,7 +18,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 ## Requirements
 
 - A dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
-- At least one [failover IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/) attached to the server
+- At least one [Additional IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/) attached to the server
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 > [!warning]
@@ -30,21 +30,21 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 The basic steps are always the same, independent of the underlying system:
 
-- creating a virtual MAC address for a failover IP
+- creating a virtual MAC address for an Additional IP
 - setting the MAC of the VM to that new virtual MAC address
 - configuring the **IP address**, **netmask**, **gateway** and **route to the gateway** inside the VM
 
 Code samples in the following instructions have to be replaced with your own values:
 
 - SERVER_IP = The main IP address of your server
-- FAILOVER_IP = The address of your failover IP
+- ADDITIONAL_IP = The address of your Additional IP
 - GATEWAY_IP = The address of your default gateway
 
 ### Step 1: Assign a virtual MAC address
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu.
 
-The “Service” drop-down menu allows you to filter for Failover IPs.
+The “Service” drop-down menu allows you to filter for Additional IPs.
 
 ![manage IPs](images/manageIPs.png){.thumbnail}
 
@@ -115,9 +115,9 @@ Edit the file so that it reflects the configuration below (please remember to fi
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
-    address FAILOVER_IP
+    address ADDITIONAL_IP
     netmask 255.255.255.255
-    broadcast FAILOVER_IP
+    broadcast ADDITIONAL_IP
     post-up route add GATEWAY_IP dev eth0
     post-up route add default gw GATEWAY_IP
     pre-down route del GATEWAY_IP dev eth0
@@ -130,9 +130,9 @@ iface eth0 inet static
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
-    address FAILOVER_IP
+    address ADDITIONAL_IP
     netmask 255.255.255.255
-    broadcast FAILOVER_IP
+    broadcast ADDITIONAL_IP
     post-up ip route add GATEWAY_IP dev eth0
     post-up ip route add default via GATEWAY_IP
     pre-down ip route del GATEWAY_IP dev eth0
@@ -160,7 +160,7 @@ IPV6INIT=no
 PEERDNS=yes
 TYPE=Ethernet
 NETMASK=255.255.255.255
-IPADDR=FAILOVER_IP
+IPADDR=ADDITIONAL_IP
 GATEWAY=GATEWAY_IP
 ARP=yes
 HWADDR=MY:VI:RT:UA:LM:AC
@@ -194,7 +194,7 @@ IPV6INIT=no
 PEERDNS=yes
 TYPE=Ethernet
 NETMASK=255.255.255.255
-IPADDR=FAILOVER_IP
+IPADDR=ADDITIONAL_IP
 GATEWAY=GATEWAY_IP
 ARP=yes
 HWADDR=MY:VI:RT:UA:LM:AC
@@ -223,7 +223,7 @@ After saving and closing the file, restart your network or reboot the VM.
 Open a terminal on your virtual machine. Open the virtual machine's network configuration file located in `/etc/rc.conf`. Edit the file so that it reflects the configuration below (please remember to fill in your own values). In this example, the interface name is `em0`. Replace this value if it does not apply.
 
 ```console
-ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
+ifconfig_em0="inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP"
 static_routes="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
 route_net2="default GATEWAY_IP"
@@ -253,7 +253,7 @@ network:
     ethernets:
         (interface-name):
             addresses:
-                - FAILOVER_IP/32
+                - ADDITIONAL_IP/32
             nameservers:
                 addresses:
                     - 213.186.33.99
@@ -297,9 +297,9 @@ Select the adapter with the server’s IP, then tick the option `Allow managemen
 >This step is only required once for a Hyper-V server. For all VMs, a **virtual switch** is required to connect the VM’s **virtual network adapters** to the server’s **physical adapter**.
 > 
 
-Next, select the VM you wish to add the failover IP to. Use the Hyper-V Manager to change the settings of the VM and shut it down.
+Next, select the VM you wish to add the Additional IP to. Use the Hyper-V Manager to change the settings of the VM and shut it down.
 
-Expand the network adapter in the left-hand menu and click on `Advanced Features`{.action}. Change the MAC address to `Static`{.action}, and enter the virtual MAC address for the failover IP. Once you have entered these settings, press `OK`{.action} to apply the changes.
+Expand the network adapter in the left-hand menu and click on `Advanced Features`{.action}. Change the MAC address to `Static`{.action}, and enter the virtual MAC address for the Additional IP. Once you have entered these settings, press `OK`{.action} to apply the changes.
 
 ![networkbridging](images/network-bridging-windows-2012-2.jpg){.thumbnail}
 
@@ -309,7 +309,7 @@ Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, and then click on the 
 
 ![networkbridging](images/network-bridging-windows-2012-3.jpg){.thumbnail}
 
-In the IPv4 Properties window, select `Use the following IP address`{.action}. Enter the failover IP into the IP address field, and enter 255.255.255.255 into the subnet mask.
+In the IPv4 Properties window, select `Use the following IP address`{.action}. Enter the Additional IP into the IP address field, and enter 255.255.255.255 into the subnet mask.
 
 Fill in your server’s gateway IP address in the appropriate field below and enter 213.186.33.99 into the `Preferred DNS Server`{.action} field.
 
@@ -317,24 +317,24 @@ Finally, click `OK`{.action}, and ignore the warning message about the gateway I
 
 ![networkbridging](images/network-bridging-windows-2012-4.jpg){.thumbnail}
 
-After rebooting the server, the VM should be connected to the internet using the failover IP.
+After rebooting the server, the VM should be connected to the internet using the Additional IP.
 
 ### Troubleshooting
 
 If you are unable to establish a connection from your VM to the public network and you suspect a networking problem, please reboot the server in rescue mode and set up the bridging network interface directly on the host.
 
-Enter the following command in the rescue mode terminal, in which you replace MAC_ADDRESS with the vMAC address that you have generated in the Control Panel and FAILOVER_IP with your failover IP address:
+Enter the following command in the rescue mode terminal, in which you replace MAC_ADDRESS with the vMAC address that you have generated in the Control Panel and ADDITIONAL_IP with your Additional IP address:
 
 ```bash
 ip link add name test-bridge link eth0 type macvlan
 ip link set dev test-bridge address MAC_ADDRESS
 ip link set test-bridge up
-ip addr add FAILOVER_IP/32 dev test-bridge
+ip addr add ADDITIONAL_IP/32 dev test-bridge
 ```
 
-Next, ping your failover IP address from an external device.
+Next, ping your Additional IP address from an external device.
 
-- If it responds, that probably means that there is a configuration error either on the VM or the host that prevents the failover IP from working in normal mode.
+- If it responds, that probably means that there is a configuration error either on the VM or the host that prevents the Additional IP from working in normal mode.
 
 - If the IP address is still not working, please create a ticket in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) to relay your test results to our support teams.
 

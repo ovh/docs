@@ -14,19 +14,19 @@ order: 6
 
 ## Objetivo
 
-Nas gamas High Grade & SCALE, o funcionamento dos IP Failover em modo bridged (através de MAC virtuais) não é possível. Por isso, é necessário configurar os IP Failover em modo roteado ou através do vRack.
+Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo bridged (através de MAC virtuais) não é possível. Por isso, é necessário configurar os Additional IP em modo roteado ou através do vRack.
 
 **Saiba como configurar a rede em Proxmox VE.**
 
 ## Requisitos
 
 - Dispor de um [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/)
-- Dispor de [IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/)
+- Dispor de [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)
 * Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 > [!warning]
 >
-> Nenhum MAC virtual deve ser aplicado aos IP Failover na Área de Cliente OVHcloud.
+> Nenhum MAC virtual deve ser aplicado aos Additional IP na Área de Cliente OVHcloud.
 >
 
 ## Instruções
@@ -36,7 +36,7 @@ Nas gamas High Grade & SCALE, o funcionamento dos IP Failover em modo bridged (a
 > Nessas gamas de servidores, há 4 placas de rede. As duas primeiras para o público, as duas últimas para o privado. Para beneficiar do conjunto da largura de banda, devem ser criados agregados.
 >
 
-### IP Failover em modo roteado nas interfaces de rede públicas
+### Additional IP em modo roteado nas interfaces de rede públicas
 
 #### Esquema da configuração alvo
 
@@ -92,8 +92,8 @@ iface bond0 inet dhcp
 #Private
 
 auto vmbr0
-# Configure the bridge with a private address and add route(s) to send the failover IPs to it
-# A.B.C.D/X => Subnet of failover IPs assigned to the server, this can be a host with /32
+# Configure the bridge with a private address and add route(s) to send the Additional IPs to it
+# A.B.C.D/X => Subnet of Additional IPs assigned to the server, this can be a host with /32
 iface vmbr0 inet static
 	address 192.168.0.1
         netmask 255.255.255.255
@@ -118,7 +118,7 @@ iface ens18 inet static
     gateway 192.168.0.1
 ```
 
-### IP Failover através do vRack
+### Additional IP através do vRack
 
 #### Requisitos
 

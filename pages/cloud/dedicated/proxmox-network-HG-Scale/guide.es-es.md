@@ -14,19 +14,19 @@ order: 5
 
 ## Objetivo
 
-En las gamas High Grade & SCALE, no es posible el funcionamiento de las IP failover en modo bridged (a través de MAC Virtuales). Por lo tanto, es necesario configurar las IP failover en modo enrutado o a través del vRack.
+En las gamas High Grade & SCALE, no es posible el funcionamiento de las Additional IP en modo bridged (a través de MAC Virtuales). Por lo tanto, es necesario configurar las Additional IP en modo enrutado o a través del vRack.
 
 **Esta guía explica cómo configurar la red en Proxmox VE.**
 
 ## Requisitos
 
 - Tener un [servidor dedicado de OVHcloud](https://www.ovhcloud.com/es-es/bare-metal/).
-- Disponer de [IP Failover](https://www.ovhcloud.com/es-es/bare-metal/ip/).
+- Disponer de [Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/).
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 > [!warning]
 >
-> No debe aplicarse ninguna MAC virtual a las IP failover en el panel de configuración de OVHcloud.
+> No debe aplicarse ninguna MAC virtual a las Additional IP en el panel de configuración de OVHcloud.
 >
 
 ## Procedimiento
@@ -36,7 +36,7 @@ En las gamas High Grade & SCALE, no es posible el funcionamiento de las IP failo
 > En estas gamas de servidores, hay 4 tarjetas de red. Las dos primeras para el público, las dos últimas para el privado. Para disfrutar del conjunto del ancho de banda, es necesario crear agregados.
 >
 
-### IP Failover en modo enrutado en las interfaces de red públicas
+### Additional IP en modo enrutado en las interfaces de red públicas
 
 #### Esquema de la configuración de destino
 
@@ -92,8 +92,8 @@ iface bond0 inet dhcp
 #Private
 
 auto vmbr0
-# Configure the bridge with a private address and add route(s) to send the failover IPs to it
-# A.B.C.D/X => Subnet of failover IPs assigned to the server, this can be a host with /32
+# Configure the bridge with a private address and add route(s) to send the Additional IPs to it
+# A.B.C.D/X => Subnet of Additional IPs assigned to the server, this can be a host with /32
 iface vmbr0 inet static
 	address 192.168.0.1
         netmask 255.255.255.255
@@ -118,7 +118,7 @@ iface ens18 inet static
     gateway 192.168.0.1
 ```
 
-### IP failover a través del vRack
+### Additional IP a través del vRack
 
 #### Requisitos
 

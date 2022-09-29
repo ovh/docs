@@ -1,7 +1,7 @@
 ---
-title: 'Virtuelle MAC-Adresse einer Failover-IP zuweisen'
+title: 'Virtuelle MAC-Adresse einer Additional IP zuweisen'
 slug: network-virtual-mac
-excerpt: 'Erfahren Sie hier, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Failover-IP verbinden'
+excerpt: 'Erfahren Sie hier, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Additional IP verbinden'
 section: 'Netzwerk & IP'
 ---
 
@@ -15,12 +15,12 @@ section: 'Netzwerk & IP'
 
 Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbinden, um virtuelle Maschinen mit Bridge-Konfiguration auf Ihrem Server einzurichten.
 
-**In dieser Anleitung erfahren Sie, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Failover-IP verbinden.**
+**In dieser Anleitung erfahren Sie, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Additional IP verbinden.**
 
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, der [virtuelle MACs unterstützt](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/).
-- Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/).
+- Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder [OVHcloud API](https://api.ovh.com/console/) eingeloggt.
 - Ihr Server muss virtuelle MAC-Adressen unterstützen. Ziehen Sie [unsere Anleitung](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/) zu Rate, um dies zu bestimmen.
 
@@ -47,7 +47,7 @@ Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotom
 
 ![IPFO](images/manageIPOVHcloud.png){.thumbnail}
 
-Suchen Sie nun in der Liste nach Ihrer Failover-IP (oder Ihrem Block) und klicken Sie auf den Button `...`{.action}, um die Optionen anzuzeigen.
+Suchen Sie nun in der Liste nach Ihrer Additional IP (oder Ihrem Block) und klicken Sie auf den Button `...`{.action}, um die Optionen anzuzeigen.
 
 ![IPFO](images/addvmac.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Wenn das Dialogfeld “Virtuelle MAC-Adresse hinzufügen” erscheint, wählen S
 > **Name der virtuellen Maschine**: Das ist der gewünschte Name für die virtuelle MAC-Adresse, damit das IP/MAC-Paar später einfacher gefunden werden kann.
 >
 
-![Failover-IP](images/addvmac2.png){.thumbnail}
+![Additional IP](images/addvmac2.png){.thumbnail}
 
 > [!primary]
 >
@@ -84,7 +84,7 @@ Verwenden Sie folgenden API Aufruf:
 
 #### Über das OVHcloud Kundencenter
 
-Um eine mit einer Failover-IP verbundene virtuelle MAC-Adresse zu löschen, loggen Sie sich in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie im Bereich `Bare Metal Cloud`{.action} auf der linken Seite auf `IP`{.action}. Wählen Sie den betreffenden Server aus, damit die verbundene Failover-IP (oder der mit dem Server verbundene IP-Block) angezeigt wird.
+Um eine mit einer Additional IP verbundene virtuelle MAC-Adresse zu löschen, loggen Sie sich in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie im Bereich `Bare Metal Cloud`{.action} auf der linken Seite auf `IP`{.action}. Wählen Sie den betreffenden Server aus, damit die verbundene Additional IP (oder der mit dem Server verbundene IP-Block) angezeigt wird.
 
 Um den Vorgang abzuschließen, klicken Sie rechts in der Zeile auf den Button `...`{.action} und dann auf `Virtuelle MAC-Adresse löschen`{.action}.
 

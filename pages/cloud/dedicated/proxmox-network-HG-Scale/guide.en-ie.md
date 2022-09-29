@@ -10,7 +10,7 @@ order: 5
 
 ## Objective
 
-On the High Grade & SCALE ranges, it is not possible to operate failover IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure failover IPs in routed mode or via the vRack.
+On the High Grade & SCALE ranges, it is not possible to operate Additional IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
 
 **This guide explains how to configure the network in Proxmox VE.**
 
@@ -18,11 +18,11 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 
 - An [OVHcloud dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- A [failover IP](https://www.ovhcloud.com/en-ie/bare-metal/ip/)
+- An [Additional IP](https://www.ovhcloud.com/en-ie/bare-metal/ip/)
 
 > [!warning]
 >
-> No virtual MACs should be applied to failover IPs in the OVHcloud Control Panel.
+> No virtual MACs should be applied to Additional IPs in the OVHcloud Control Panel.
 >
 
 ## Instructions
@@ -32,7 +32,7 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 > On these server ranges, there are 4 network cards. The first two for the public, the last two for the private network. To get all the bandwidth, aggregates must be created.
 >
 
-### Failover IP in routed mode on public network interfaces
+### Additional IP in routed mode on public network interfaces
 
 #### Target configuration schema
 
@@ -88,8 +88,8 @@ iface bond0 inet dhcp
 #Private
 
 auto vmbr0
-# Configure the bridge with a private address and add route(s) to send the failover IPs to it
-# A.B.C.D/X => Subnet of failover IPs assigned to the server, this can be a host with /32
+# Configure the bridge with a private address and add route(s) to send the Additional IPs to it
+# A.B.C.D/X => Subnet of Additional IPs assigned to the server, this can be a host with /32
 iface vmbr0 inet static
 	address 192.168.0.1
         netmask 255.255.255.255
@@ -114,7 +114,7 @@ iface ens18 inet static
     gateway 192.168.0.1
 ```
 
-### Failover IP via vRack
+### Additional IP via vRack
 
 #### Requirements
 

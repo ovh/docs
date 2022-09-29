@@ -1,7 +1,7 @@
 ---
-title: Assigning a Virtual MAC to a Failover IP
+title: Assigning a Virtual MAC to an Additional IP
 slug: network-virtual-mac
-excerpt: This guide will show you how to create a virtual MAC address and assign it to a failover IP address.
+excerpt: This guide will show you how to create a virtual MAC address and assign it to an Additional IP address.
 section: Network Management
 ---
 
@@ -11,12 +11,12 @@ section: Network Management
 
 OVHcloud allows you to associate a virtual MAC address with an IP address, so that you can set up virtual machines with a bridge configuration on your server.
 
-**This guide will show you how to create a virtual MAC address and assign it to a failover IP address.**
+**This guide will show you how to create a virtual MAC address and assign it to an Additional IP address.**
 
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) that supports [virtual MACs](https://docs.ovh.com/au/en/dedicated/network-support-virtual-mac/)
-- A [failover IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/){.external} or a failover IP block (RIPE)
+- An [Additional IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/){.external} or an Additional IP block (RIPE)
 - Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} or to the [OVHcloud API](https://ca.api.ovh.com/console/).
 - Your server must support virtual MACs. To determine this, consult [this guide](https://docs.ovh.com/au/en/dedicated/network-support-virtual-mac/).
 
@@ -37,11 +37,11 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 #### Via the OVHcloud Control Panel
 
-To assign a virtual MAC address to a failover IP, you first need to connect to your OVHcloud Control Panel. Next, go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu.
+To assign a virtual MAC address to an Additional IP, you first need to connect to your OVHcloud Control Panel. Next, go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu.
 
 ![IPFO](images/manageIPOVHcloud.png){.thumbnail}
 
-Once you're in the IP section, locate your failover IP address (or block) in the list and then click the `...`{.action} button to bring up the list of options.
+Once you're in the IP section, locate your Additional IP address (or block) in the list and then click the `...`{.action} button to bring up the list of options.
 
 ![IPFO](images/addvmac.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Use the following API call:
 
 #### Via the OVHcloud Control Panel
 
-To remove a virtual MAC address associated with a failover IP, you must first connect to your [control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Once connected, go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu. Select the correct server, so that the failover IP (or IP block) attached to it appears.
+To remove a virtual MAC address associated with an Additional IP, you must first connect to your [control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Once connected, go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
 
 Finally, click on the `...`{.action} button on the right, then click `Delete a Virtual MAC`{.action}.
 
