@@ -80,11 +80,11 @@ Object storage endpoints are available across the public network. Object storage
 
 ### Can I manage multiple user profiles?
 
-You can manage multiple user profiles with S3 Policies. A guide is available [here](https://docs.ovh.com/gb/en/storage/s3/debuter-avec-s3/).
+You can manage multiple user profiles with S3 Policies. A guide is available [here](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3/).
 
 ### How do I configure access permissions by object or by bucket?
 
-Access rights can be configured by user profile and by object. A guide is available [here](https://docs.ovh.com/gb/en/storage/s3/gestion-des-identites-et-des-acces/).
+Access rights can be configured by user profile and by object. A guide is available [here](https://docs.ovh.com/gb/en/storage/s3/identity-and-access-management/).
 
 It is not yet possible to configure access permissions by bucket.
 
@@ -198,7 +198,7 @@ Lifecycle options are not yet available. Please follow our public roadmap on Git
 
 ### How do I upload large volumes of data?
 
-To download large volumes of data, it is recommended to parallelise connections. (multithread upload). Several requests are in progress in parallel and the bandwidth is multiplied (1 Gbps per connection). More details on the methodology are available [here](https://docs.ovh.com/gb/en/storage/s3/optimisez-l-envoi-de-vos-fichiers/).
+To download large volumes of data, it is recommended to parallelise connections. (multithread upload). Several requests are in progress in parallel and the bandwidth is multiplied (1 Gbps per connection). More details on the methodology are available [here](https://docs.ovh.com/gb/en/storage/s3/optimise-the-sending-of-your-files/).
 
 ### What bandwidth is available for upload and download?
 
