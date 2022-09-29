@@ -15,17 +15,17 @@ td:nth-of-type(1){
 
 ## General questions
 
-### What is OVHcloud Object Storage?
+#### What is OVHcloud Object Storage?
 
 Object Storage is a family of storage solutions that offer high-performance, scalable and secure storage spaces.
 
 With object storage solutions, you can store static files (videos, images, web files...) in an unlimited space via a public access point, called an endpoint. You can use these files from an application, or you can make them accessible on the web. These storage spaces are accessible via a standard S3 API interface for the Object Storage S3 and Swift storage classes for the Object Storage SWIFT storage classes.
 
-### In what use is an object storage solution used?
+#### In what use is an object storage solution used?
 
 Object storage is adapted to store unstructured data in an unlimited way in volume and time, for use cases such as websites, ecommerce platforms, video streaming, image libraries, analytics, backups, archives.
 
-### What is the difference between S3 object storage classes and SWIFT object storage classes?
+#### What is the difference between S3 object storage classes and SWIFT object storage classes?
 
 The Object Storage S3 storage classes are largely compatible with the S3 protocol and have a recent design, high performance and good bandwidth. This solution is regularly updated with new features.
 
@@ -50,7 +50,7 @@ In our roadmap, new functions are coming, we invite you to regularly consult our
 
 S3 object storage classes offer wide support for S3 APIs. All compatible APIs are described [here](https://docs.ovh.com/gb/en/storage/s3/choosing-a-suitable-storage-class/).
 
-### What tools are compatible with S3 object storage?
+#### What tools are compatible with S3 object storage?
 
 Most of the tools on the market that are compatible with standard S3 storage are compatible with S3 object storage.
 
@@ -58,13 +58,13 @@ Most of the tools on the market that are compatible with standard S3 storage are
 
 Yes, S3 object storage is largely compatible with S3 APIs and can be integrated with market tools such as [Veeam](https://docs.ovh.com/gb/en/storage/s3/veeam/), [Owncloud](https://docs.ovh.com/gb/en/storage/s3/owncloud/), [Nextcloud](https://docs.ovh.com/gb/en/storage/s3/nextcloud/).
 
-### How is the service billed?
+#### How is the service billed?
 
 Object Storage is billed according to the storage space used, with a granularity of 1 GB. To make it easier to read, the price is displayed per GB/month, but the billing granularity is per GB/hour, considering that on average there are 720 hours in a month. Prices are available [here](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
 
 ### Access & security
 
-### By which APIs can I access storage solutions?
+#### By which APIs can I access storage solutions?
 
 We have designed the S3 storage classes to be **compatible with the S3 API**, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via endpoints defined by region and storage class.
 
@@ -76,17 +76,17 @@ The list of endpoints is available [here](https://docs.ovh.com/gb/en/storage/s3/
 
 Object storage endpoints are available across the public network. Object storage class is not available on the private network.
 
-### Can I manage multiple user profiles?
+#### Can I manage multiple user profiles?
 
 You can manage multiple user profiles with S3 Policies. A guide is available [here](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3/).
 
-### How do I configure access permissions by object or by bucket?
+#### How do I configure access permissions by object or by bucket?
 
 Access rights can be configured by user profile and by object. A guide is available [here](https://docs.ovh.com/gb/en/storage/s3/identity-and-access-management/).
 
 It is not yet possible to configure access permissions by bucket.
 
-### Can I encrypt my data?
+#### Can I encrypt my data?
 
 Using server-side encryption with client-provided encryption keys (SSE-C) allows you to define your own encryption keys.
 
@@ -94,7 +94,7 @@ When you load an object, S3 Object Storage uses the encryption key you provide t
 
 A guide is available [here](https://docs.ovh.com/gb/en/storage/s3/encrypt-your-objects-with-sse-c/).
 
-### How do I protect my backups?
+#### How do I protect my backups?
 
 We recommend that you protect your backups with immutability, a function available via the S3 object lock API.
 
@@ -104,7 +104,7 @@ A guide is available [here](https://docs.ovh.com/gb/en/storage/s3/managing-objec
 
 ### Bandwidth
 
-### What is the bandwidth?
+#### What is the bandwidth?
 
 Bandwidth is shared and not guaranteed. We offer a maximum of 1 Gbps/connection in upload and download.
 
@@ -121,7 +121,7 @@ An OVHcloud server is a server operated for an OVHcloud service, e.g. a server f
 
 ### Availability
 
-### What level of availability can I achieve with Object Storage?
+#### What level of availability can I achieve with Object Storage?
 
 When the Service is unavailable or experiencing faults for which OVHcloud may be held responsible, you can contact the OVHcloud teams and open an incident ticket from your OVHcloud Control Panel.
 
@@ -160,13 +160,13 @@ At any time, the metadata remains available instantly and can be consulted free 
 
 ![Cold Archive Illustration](images/highperf-faq-20220927224152816.png)
 
-### How long do I need to unarchive my data?
+#### How long do I need to unarchive my data?
 
 Unarchiving an archive is not free and may take up to 48 hours for the first objects to be available again on the standard class.
 
 Data recovery availability time depends on the amount of data. For example, for a recovery of several hundreds TB, the average time is 48 hours. For a volume of a few TBs, this can range from a few minutes to a few hours.
 
-### How is the Cold Archive service billed?
+#### How is the Cold Archive service billed?
 
 - The standard object storage bill starts when the data is uploaded to the storage class and stops when the bucket is archived (`put archive` API)
 - The Cold Archive storage invoice starts when the `put archive` API is called and is stopped when an `delete archive` API is called.
@@ -175,27 +175,27 @@ The volume is calculated with the total capacity of all compartments in a Public
 
 A discount is applied to all volumes, when available.
 
-### Is there a minimum commitment duration?
+#### Is there a minimum commitment duration?
 
 There is no minimum commitment period, except for the Cold Archive class, for which the minimum duration is 180 days. If an archive is deleted before this time (date = date between 0 days and 180 days), an additional cost calculated by the customer is billed: storage class '[180 days - date] x price'.
 
 ### Upload / download data
 
-### How do I replicate my data from one region to another?
+#### How do I replicate my data from one region to another?
 
 You can choose to synchronise your data from one region to another using rclone [here](https://docs.ovh.com/gb/en/storage/s3/rclone/).
 
-### Is it possible to manage the life cycles of the data?
+#### Is it possible to manage the life cycles of the data?
 
 Lifecycle options are not yet available. Please follow our public roadmap on GitHub to be informed about its release [here](https://github.com/ovh/public-cloud-roadmap/projects/3).
 
 ### Performance
 
-### How do I upload large volumes of data?
+#### How do I upload large volumes of data?
 
 To download large volumes of data, it is recommended to parallelise connections. (multithread upload). Several requests are in progress in parallel and the bandwidth is multiplied (1 Gbps per connection). More details on the methodology are available [here](https://docs.ovh.com/gb/en/storage/s3/optimise-the-sending-of-your-files/).
 
-### What bandwidth is available for upload and download?
+#### What bandwidth is available for upload and download?
 
 The maximum bandwidth is 1gbps per connection.
 
