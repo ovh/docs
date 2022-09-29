@@ -58,6 +58,20 @@ Ci-après un descriptif des éléments pouvant être renseignés dans la DOA :
 
 La validation des e-mails envoyés lors de l'initialisation du changement de propriétaire ne sera pas nécessaire, les deux parties complètent le document et le retournent à OVHcloud en créant un ticket d'assistance depuis leur [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
+La DOA devra également être accompagnée des documents justificatifs de l'ancien propriétaire suivants :
+
+- Si l'ancien propriétaire est une société :
+    - Extrait K-Bis de moins de 3 mois (ou équivalent s'il s'agit d'une société étrangère).
+    - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait K-Bis.
+
+- Si l'ancien propriétaire est une association :
+    - Extrait du journal officiel de moins de 3 mois (ou équivalent s'il s'agit d'une association étrangère).
+    - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait du journal officiel.
+
+- Si l'ancien propriétaire est un particulier :
+    - Photocopie recto-verso d'une pièce d'identité.
+    - Justificatif de domicile de moins de 3 mois (Facture d'électricité par exemple).
+
 > [!warning]
 >
 > Vous devez obligatoirement signer la DOA et renseigner le cachet de la société si nécessaire.
@@ -96,6 +110,7 @@ Si le nouveau propriétaire est une association :
 Si le nouveau propriétaire est un particulier :
 
 - Photocopie recto-verso d'une pièce d'identité.
+- Justificatif de domicile de moins de 3 mois (Facture d'électricité par exemple).
 - Procès verbal en lien avec la décision judiciaire.
 
 #### DOA suite à une liquidation judiciaire : 
@@ -115,7 +130,7 @@ Si le nouveau propriétaire est une association :
 Si le nouveau propriétaire est un particulier :
 
 - Photocopie recto-verso d'une pièce d'identité.
-- Justificatif de domicile.
+- Justificatif de domicile de moins de 3 mois (Facture d'électricité par exemple).
 - Le mandataire judiciaire doit signer la partie concernant l'ancien propriétaire du domaine et fournir une attestation sur l'honneur justifiant son statut.
 
 #### DOA suite à un décès : 
@@ -135,7 +150,7 @@ Si le nouveau propriétaire est une association :
 Si le nouveau propriétaire est un particulier :
 
 - Photocopie recto-verso d'une pièce d'identité.
-- Justificatif de domicile.
+- Justificatif de domicile de moins de 3 mois (Facture d'électricité par exemple).
 - Un acte de décès.
 
 > [!primary]
