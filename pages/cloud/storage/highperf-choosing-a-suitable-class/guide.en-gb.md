@@ -18,15 +18,15 @@ With object storage solutions, you can store static files (videos, images, web f
 
 The Standard storage class offers a scalable object storage service, compatible with the vast majority of use cases, adapted to any type of volume. The solution is based on HDD storage within a resilient architecture in a datacentre. The solution is accessible via an S3 API.
 
-Suitable for use cases: media/content storage & delivery, datalake, website, backup, logs and application metrics.
+Suitable for the following use cases: media/content storage & delivery, datalake, website, backup, logs and application metrics.
 
-## High Performance object storage - S3 API
+### High Performance object storage - S3 API
 
 The High Performance storage class is a high-performance object storage space for applications that have high bandwidth requirements and require extremely fast and intensive read and write access to data. The solution relies on storage on high-performance NVMe SSD disks, within a resilient architecture in a datacentre. The solution is accessible via an S3 API.
 
-Suitable for use cases: AI & Analytics, Datalake, High power Computing Multimedia / Content Platform.
+Suitable for the following use cases: AI & Analytics, Datalake, High power Computing Multimedia / Content Platform.
 
-## Cold Archive
+### Cold Archive
 
 The Cold Archive storage class is a long-term, multi-year, durable and secure storage space for archiving data. This service is adapted to suit this use case. It comes with a very low storage cost, and a 48-hour recovery latency (access time to the first few Bytes), with the cost applied to each data recovery request. Cold archive relies on magnetic tape storage in a highly resilient architecture, with data distributed across four datacentres in France. The solution is accessible via an S3 API.
 
@@ -36,7 +36,7 @@ The Cold Archive storage class is a long-term, multi-year, durable and secure st
 
 The Standard storage class (SWIFT) offers a data storage service with no particular need for performance, within a resilient architecture by triple replication of data within the same datacentre. The solution is accessible via a SWIFT API and an S3 API (less compatible than the new Object Storage S3 solutions).
 
-## Cloud Archive - SWIFT API
+### Cloud Archive - SWIFT API
 
 The Cloud Archive (SWIFT) storage class offers a storage service for long-term data retention for business needs or other obligations. Adapted to suit this use case, the service offers low storage costs and several minutes of latency for data recovery. The solution is accessible via a SWIFT API.
 

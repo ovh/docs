@@ -5,7 +5,7 @@ excerpt:
 section: Object Storage S3 High Performance
 order: 020
 ---
- 
+
 **Dernière mise à jour le 27/09/2022**
 
 ## Objectif
