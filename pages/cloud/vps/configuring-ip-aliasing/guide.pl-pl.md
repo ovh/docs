@@ -1,7 +1,7 @@
 ---
 title: 'Skonfiguruj adres IP jako alias'
 slug: ip-aliasing-vps
-excerpt: 'Dowiedz się, jak dodać adresy IP Failover do konfiguracji VPS'
+excerpt: 'Dowiedz się, jak dodać adresy Additional IP do konfiguracji VPS'
 section: 'Sieć & IP'
 ---
 
@@ -15,7 +15,7 @@ section: 'Sieć & IP'
 
 Alias IP (*IP aliasing* w języku angielskim) to specjalna konfiguracja sieci dla serwerów OVHcloud, która pozwala na przypisanie kilku adresów IP do jednego interfejsu sieciowego.
 
-**Niniejszy przewodnik wyjaśnia, jak dodawać adresy IP Failover do Twojej konfiguracji sieci.**
+**Niniejszy przewodnik wyjaśnia, jak dodawać adresy Additional IP do Twojej konfiguracji sieci.**
 
 > [!warning]
 >
@@ -27,7 +27,7 @@ Alias IP (*IP aliasing* w języku angielskim) to specjalna konfiguracja sieci dl
 ## Wymagania początkowe
 
 - jednego [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
-- adresu [IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/) lub bloku IP Failover
+- adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/) lub bloku Additional IP
 - dostęp administratora (root) przez SSH lub GUI do serwera
 - podstawowa wiedza o sieciach i ich administrowaniu
 
@@ -44,7 +44,7 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 
 |Nazwa|Opis|Przykłady|
 |---|---|---|
-|IP_FAILOVER|Adres IP Failover przypisany do Twojej usługi|169.254.10.254|
+|ADDITIONAL_IP|Adres Additional IP przypisany do Twojej usługi|169.254.10.254|
 |NETWORK_INTERFACE|Nazwa interfejsu sieciowego|*eth0*, *ens3*|
 |ID|ID aliasu IP, zaczynające się od *0* (w zależności od liczby dodatkowych adresów IP do skonfigurowania)|*0*, *1*|
 
@@ -85,7 +85,7 @@ Następnie dodaj następujące wiersze:
 ```bash
 auto NETWORK_INTERFACE:ID
 iface NETWORK_INTERFACE:ID inet static
-address IP_FAILOVER
+address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
@@ -99,7 +99,7 @@ sudo systemctl restart networking
 
 ### Ubuntu 20.04
 
-Plik konfiguracyjny adresów IP Failover znajduje się w katalogu `/etc/netplan/`. W tym przykładzie nosi nazwę "50-cloud-init.yaml". Zanim wprowadzisz zmiany, sprawdź w tym folderze nazwę rzeczywistego pliku. Każdy adres IP Failover wymaga własnej linii w pliku.
+Plik konfiguracyjny adresów Additional IP znajduje się w katalogu `/etc/netplan/`. W tym przykładzie nosi nazwę "50-cloud-init.yaml". Zanim wprowadzisz zmiany, sprawdź w tym folderze nazwę rzeczywistego pliku. Każdy adres Additional IP wymaga własnej linii w pliku.
 
 #### Etap 1: wyłącz automatyczną konfigurację sieci
 
@@ -131,7 +131,7 @@ Otwórz plik konfiguracyjny sieci, aby go zmienić za pomocą następującego po
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Nie zmieniaj istniejących linii w pliku konfiguracyjnym. Dodaj adres IP Failover, dodając drugi blok konfiguracji do interfejsu publicznego, jak w poniższym przykładzie:
+Nie zmieniaj istniejących linii w pliku konfiguracyjnym. Dodaj adres Additional IP, dodając drugi blok konfiguracji do interfejsu publicznego, jak w poniższym przykładzie:
 
 ```yaml
 network:
@@ -148,7 +148,7 @@ network:
                 macaddress: fa:xx:xx:xx:xx:63
             set-name: NETWORK_INTERFACE
             addresses:
-            - IP_FAILOVER/32
+            - ADDITIONAL_IP/32
 ```
 
 > [!warning]
@@ -172,7 +172,7 @@ Jeśli jest poprawna, zastosuj ją za pomocą następującego polecenia:
 sudo netplan apply
 ```
 
-Powtórz tę procedurę dla każdego adresu IP Failover.
+Powtórz tę procedurę dla każdego adresu Additional IP.
 
 ### Windows Server 2016
 
@@ -198,9 +198,9 @@ Otwórz parametry adaptera w Panelu konfiguracyjnym Windows, a następnie otwór
 
 W oknie Właściwości IPv4 wybierz `Użyj następującego`{.action} adresu IP. Wpisz adres IP, który otrzymałeś w pierwszym etapie, po czym kliknij `Zaawansowane`{.action}.
 
-#### Etap 3: dodać adres IP Failover do zaawansowanych ustawień TCP/IP
+#### Etap 3: dodać adres Additional IP do zaawansowanych ustawień TCP/IP
 
-W nowym oknie kliknij `Dodaj...`{.action} pod "Adresy IP". Wpisz adres IP Failover i maskę podsieci (255.255.255.255).
+W nowym oknie kliknij `Dodaj...`{.action} pod "Adresy IP". Wpisz adres Additional IP i maskę podsieci (255.255.255.255).
 
 ![sekcja konfiguracji zaawansowanej](images/image4-4.png){.thumbnail}
 
@@ -220,7 +220,7 @@ Aby go ponownie uruchomić, kliknij prawym przyciskiem myszy, a następnie wybie
 
 #### Etap 5: sprawdź nową konfigurację sieci
 
-Otwórz wiersz poleceń (cmd) i wprowadź `ipconfig`. Konfiguracja musi teraz zawierać nowy adres IP Failover.
+Otwórz wiersz poleceń (cmd) i wprowadź `ipconfig`. Konfiguracja musi teraz zawierać nowy adres Additional IP.
 
 ![sprawdź aktualną konfigurację sieci](images/image8-8.png){.thumbnail}
 
@@ -245,9 +245,9 @@ Dodaj te linie:
 ```bash
 DEVICE=NETWORK_INTERFACE:ID
 BOOTPROTO=static
-IPADDR=IP_FAILOVER
+IPADDR=ADDITIONAL_IP
 NETMASK=255.255.255.255
-BROADCAST=IP_FAILOVER
+BROADCAST=ADDITIONAL_IP
 ONBOOT=yes
 ```
 
@@ -275,27 +275,27 @@ W tej sekcji kliknij przycisk `Add IP Address`{.action}.
 
 ![dodaj informacje IP](images/pleskip2-2.png){.thumbnail}
 
-Wprowadź adres IP Failover w formie `xxx.xxx.xxx.xxx/32` w polu "IP address and subnet mask", a następnie kliknij `OK`{.action}.
+Wprowadź adres Additional IP w formie `xxx.xxx.xxx.xxx/32` w polu "IP address and subnet mask", a następnie kliknij `OK`{.action}.
 
 ![dodaj informacje IP](images/pleskip3-3.png){.thumbnail}
 
 #### Etap 3: sprawdź aktualną konfigurację IP
 
-W sekcji "IP Addresses" sprawdź, czy adres IP Failover został poprawnie dodany.
+W sekcji "IP Addresses" sprawdź, czy adres Additional IP został poprawnie dodany.
 
 ![aktualna konfiguracja IP](images/pleskip4-4.png){.thumbnail}
 
 ### Diagnostyka
 
-Po pierwsze, zrestartuj serwer za pomocą wiersza poleceń lub interfejsu użytkownika. Jeśli nadal nie udaje Ci się nawiązać połączenia między siecią publiczną a adresem IP aliasu i podejrzewasz problem z siecią, zrestartuj serwer w [trybie rescue](../rescue/). Następnie możesz skonfigurować adres IP Failover bezpośrednio na serwerze.
+Po pierwsze, zrestartuj serwer za pomocą wiersza poleceń lub interfejsu użytkownika. Jeśli nadal nie udaje Ci się nawiązać połączenia między siecią publiczną a adresem IP aliasu i podejrzewasz problem z siecią, zrestartuj serwer w [trybie rescue](../rescue/). Następnie możesz skonfigurować adres Additional IP bezpośrednio na serwerze.
 
 Po zalogowaniu się do serwera przez SSH wprowadź następującą komendę:
 
 ```bash
-ifconfig ens3:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER up
+ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Aby przetestować połączenie, wystarczy wysłać ping na adres IP Failover z zewnątrz. Jeśli odpowiada w trybie Rescue, prawdopodobnie oznacza to, że wystąpił błąd w konfiguracji. Jeśli jednak adres IP nadal nie działa, poinformuj o tym zespół pomocy technicznej OVHcloud, wysyłając zgłoszenie serwisowe w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Aby przetestować połączenie, wystarczy wysłać ping na adres Additional IP z zewnątrz. Jeśli odpowiada w trybie Rescue, prawdopodobnie oznacza to, że wystąpił błąd w konfiguracji. Jeśli jednak adres IP nadal nie działa, poinformuj o tym zespół pomocy technicznej OVHcloud, wysyłając zgłoszenie serwisowe w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
  
 ## Sprawdź również
 

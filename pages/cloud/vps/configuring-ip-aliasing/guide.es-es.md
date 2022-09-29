@@ -1,7 +1,7 @@
 ---
 title: 'Configurar una dirección IP como alias'
 slug: ip-aliasing-vps
-excerpt: 'Cómo añadir direcciones IP failover a su configuración VPS'
+excerpt: 'Cómo añadir direcciones Additional IP a su configuración VPS'
 section: 'Red e IP'
 ---
 
@@ -16,7 +16,7 @@ section: 'Red e IP'
 
 El alias de IP (*IP aliasing* en inglés) es una configuración especial de red para los servidores de OVHcloud, que permite asociar varias direcciones IP a una única interfaz de red.
 
-**Esta guía explica cómo añadir direcciones IP failover a su configuración de red.**
+**Esta guía explica cómo añadir direcciones Additional IP a su configuración de red.**
 
 > [!warning]
 >
@@ -28,7 +28,7 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de red 
 ## Requisitos
 
 - un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta OVHcloud
-- una [dirección IP failover](https://www.ovhcloud.com/es-es/bare-metal/ip/) o un bloque IP failover
+- una [dirección Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/) o un bloque Additional IP
 - un acceso de administrador (root) a través de SSH o GUI en su servidor
 - conocimientos básicos de redes y administración
 
@@ -45,7 +45,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 
 |Valor|Descripción|Ejemplos|
 |---|---|---|
-|IP_FAILOVER|Dirección IP de failover atribuida a su servicio|169.254.10.254|
+|ADDITIONAL_IP|Dirección Additional IP atribuida a su servicio|169.254.10.254|
 |NETWORK_INTERFACE|Nombre de la interfaz de red|*eth0*, *ens3*|
 |ID|ID del alias IP, comenzando por *0* (en función del número de direcciones IP adicionales a configurar)|*0*, *1*|
 
@@ -86,7 +86,7 @@ Añada las siguientes líneas:
 ```bash
 auto NETWORK_INTERFACE:ID
 iface NETWORK_INTERFACE:ID inet static
-address IP_FAILOVER
+address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
@@ -100,7 +100,7 @@ sudo systemctl restart networking
 
 ### Ubuntu 20.04
 
-El archivo de configuración de las direcciones IP failover se encuentra en `/etc/netplan/`. En este ejemplo, se llama "50-cloud-init.yaml". Antes de realizar cualquier cambio, compruebe el nombre del archivo real en esta carpeta. Cada dirección IP failover necesita su propia línea en el archivo.
+El archivo de configuración de las direcciones Additional IP se encuentra en `/etc/netplan/`. En este ejemplo, se llama "50-cloud-init.yaml". Antes de realizar cualquier cambio, compruebe el nombre del archivo real en esta carpeta. Cada dirección Additional IP necesita su propia línea en el archivo.
 
 #### 1\. desactivar la configuración automática de red
 
@@ -132,7 +132,7 @@ Abra el archivo de configuración de red para modificarlo con el siguiente coman
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-No modifique las líneas existentes en el archivo de configuración. Añada su dirección IP failover añadiendo un segundo bloque de configuración para la interfaz pública, como se muestra a continuación:
+No modifique las líneas existentes en el archivo de configuración. Añada su dirección Additional IP añadiendo un segundo bloque de configuración para la interfaz pública, como se muestra a continuación:
 
 ```yaml
 network:
@@ -149,7 +149,7 @@ network:
                 macaddress: fa:xx:xx:xx:xx:63
             set-name: NETWORK_INTERFACE
             addresses:
-            - IP_FAILOVER/32
+            - ADDITIONAL_IP/32
 ```
 
 > [!warning]
@@ -173,7 +173,7 @@ Si es correcta, puede aplicarla con el siguiente comando:
 sudo netplan apply
 ```
 
-Repita este procedimiento para cada dirección IP failover.
+Repita este procedimiento para cada dirección Additional IP.
 
 ### Windows Server 2016
 
@@ -199,9 +199,9 @@ Abra la configuración del adaptador en el Panel de control Windows y abra las `
 
 En la ventana Propiedades IPv4, seleccione `Usar la siguiente`{.action} dirección IP. Introduzca la dirección IP que haya obtenido en el primer paso y haga clic en `Avanzado`{.action}.
 
-#### 3\. añadir la dirección IP failover en los Parámetros TCP/IP avanzados
+#### 3\. añadir la dirección Additional IP en los Parámetros TCP/IP avanzados
 
-En la nueva ventana, haga clic en `Añadir...`{.action} en "Direcciones IP". Introduzca su dirección IP failover y la máscara de subred (255.255.255.255).
+En la nueva ventana, haga clic en `Añadir...`{.action} en "Direcciones IP". Introduzca su dirección Additional IP y la máscara de subred (255.255.255.255).
 
 ![sección de configuración avanzada](images/image4-4.png){.thumbnail}
 
@@ -221,7 +221,7 @@ Para reiniciarla, haga clic derecho sobre ella y seleccione `Activar`{.action}.
 
 #### 5\. comprobar la nueva configuración de red
 
-Abra la consola de comandos (cmd) e introduzca `ipconfig`. La configuración debe incluir ahora la nueva dirección IP failover.
+Abra la consola de comandos (cmd) e introduzca `ipconfig`. La configuración debe incluir ahora la nueva dirección Additional IP.
 
 ![comprobar la configuración de red actual](images/image8-8.png){.thumbnail}
 
@@ -246,9 +246,9 @@ Añada las siguientes líneas:
 ```bash
 DEVICE=NETWORK_INTERFACE:ID
 BOOTPROTO=static
-IPADDR=IP_FAILOVER
+IPADDR=ADDITIONAL_IP
 NETMASK=255.255.255.255
-BROADCAST=IP_FAILOVER
+BROADCAST=ADDITIONAL_IP
 ONBOOT=yes
 ```
 
@@ -276,27 +276,27 @@ En esta sección, haga clic en el botón `Add IP Address`{.action}.
 
 ![añadir información IP](images/pleskip2-2.png){.thumbnail}
 
-Introduzca su dirección IP failover como `xxx.xxx.xxx.xxx/32` en el campo "IP address and subnet mask" y haga clic en `OK`{.action}.
+Introduzca su dirección Additional IP como `xxx.xxx.xxx.xxx/32` en el campo "IP address and subnet mask" y haga clic en `OK`{.action}.
 
 ![añadir información IP](images/pleskip3-3.png){.thumbnail}
 
 #### 3\. comprobar la configuración IP actual
 
-En la sección "Direcciones IP", compruebe que la dirección IP failover se haya añadido correctamente.
+En la sección "Direcciones IP", compruebe que la dirección Additional IP se haya añadido correctamente.
 
 ![configuración IP actual](images/pleskip4-4.png){.thumbnail}
 
 ### Diagnóstico
 
-En primer lugar, reinicie el servidor a través de la línea de comandos o la interfaz de usuario. Si todavía no consigue establecer una conexión entre la red pública y su dirección IP de alias y si sospecha que existe algún problema de red, deberá reiniciar el servidor en [modo de rescate](../rescue/). A continuación, podrá configurar la dirección IP failover directamente en el servidor.
+En primer lugar, reinicie el servidor a través de la línea de comandos o la interfaz de usuario. Si todavía no consigue establecer una conexión entre la red pública y su dirección IP de alias y si sospecha que existe algún problema de red, deberá reiniciar el servidor en [modo de rescate](../rescue/). A continuación, podrá configurar la dirección Additional IP directamente en el servidor.
 
 Una vez que se haya conectado al servidor por SSH, introduzca el siguiente comando:
 
 ```bash
-ifconfig ens3:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER up
+ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Para probar la conexión, solo tiene que enviar un ping a su dirección IP failover desde el exterior. Si responde en modo de rescate, probablemente significa que se ha producido un error de configuración. No obstante, si la IP todavía no funciona, informe a nuestro equipo del soporte creando un tíquet de soporte desde el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Para probar la conexión, solo tiene que enviar un ping a su dirección Additional IP desde el exterior. Si responde en modo de rescate, probablemente significa que se ha producido un error de configuración. No obstante, si la IP todavía no funciona, informe a nuestro equipo del soporte creando un tíquet de soporte desde el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Más información
 
