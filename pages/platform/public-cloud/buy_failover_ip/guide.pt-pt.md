@@ -1,7 +1,7 @@
 ---
-title: 'Adicionar um IP failover'
+title: 'Adicionar um Additional IP'
 slug: adicionar-um-ip-failover
-excerpt: 'Descubra como encomendar endereços IP Failover para as suas instâncias'
+excerpt: 'Descubra como encomendar endereços Additional IP para as suas instâncias'
 legacy_guide_number: 2030
 section: Rede
 ---
@@ -14,16 +14,16 @@ section: Rede
 
 ## Objetivo
 
-Pode precisar de configurar um endereço IP Fail Over nas suas instâncias por vários motivos:
+Pode precisar de configurar um endereço Additional IP nas suas instâncias por vários motivos:
 
 - Tem vários sites na sua instância.
 - Aloja projetos internacionais.
 
-Para responder a estas necessidades, pode comprar um endereço IP Fail Over para as suas instâncias Public Cloud.
+Para responder a estas necessidades, pode comprar um endereço Additional IP para as suas instâncias Public Cloud.
 
-Estes endereços IP Failover só poderão ser migrados para as instâncias de um mesmo projeto.
+Estes endereços Additional IP só poderão ser migrados para as instâncias de um mesmo projeto.
 
-**Este guia explica como comprar um IP Failover para o seu projeto Public Cloud da OVHcloud.**
+**Este guia explica como comprar um Additional IP para o seu projeto Public Cloud da OVHcloud.**
 
 
 ## Requisitos
@@ -34,9 +34,9 @@ Estes endereços IP Failover só poderão ser migrados para as instâncias de um
 ## Instruções
 
 Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.<br>
-No menu à esquerda, clique em `Failover IP`{.action} na secção `Network`.
+No menu à esquerda, clique em `Additional IP`{.action} na secção `Network`.
 
-A seguir, clique no botão `Ações`{.action} e selecione a opção `Adquirir IP Failover`{.action}.
+A seguir, clique no botão `Ações`{.action} e selecione a opção `Adquirir Additional IP`{.action}.
 
 ![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
@@ -46,7 +46,7 @@ Surgirá, então, esta página:
 
 Queira introduzir as seguintes informações:
 
-* O número de IP Fail Over (IPFO) pretendidas (os blocos de IP não estão disponíveis de momento).
+* O número de Additional IP pretendidas (os blocos de IP não estão disponíveis de momento).
 * A instância na qual serão roteados os IPs.
 * A geolocalização dos IPs.
 
@@ -85,6 +85,6 @@ Para mais informações, consulte o nosso manual sobre a [gestão das encomendas
 
 ## Quer saber mais?
 
-[Configurar um IP Failover](https://docs.ovh.com/pt/public-cloud/configurer-une-ip-failover/)
+[Configurar um Additional IP](https://docs.ovh.com/pt/public-cloud/configurer-une-ip-failover/)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>

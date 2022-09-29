@@ -1,7 +1,7 @@
 ---
-title: 'Buying a failover IP'
+title: 'Buying an Additional IP'
 slug: buy-a-failover-ip
-excerpt: 'Find out how to order failover IP addresses for your instances'
+excerpt: 'Find out how to order Additional IP addresses for your instances'
 legacy_guide_number: 2030
 section: Networking
 order: 1
@@ -11,16 +11,16 @@ order: 1
 
 ## Objective
 
-You may need to configure a failover IP address on your instances for different reasons. For example, you may be:
+You may need to configure an Additional IP address on your instances for different reasons. For example, you may be:
 
 - Hosting several websites on your instance.
 - Hosting international projects.
 
-To meet these needs, you can order a failover IP address for your Public Cloud instances.
+To meet these needs, you can order an Additional IP address for your Public Cloud instances.
 
-These failover IP addresses can only be migrated to instances in the same project.
+These Additional IP addresses can only be migrated to instances in the same project.
 
-**This guide explains how to buy a failover IP for an OVHcloud Public Cloud project.**
+**This guide explains how to buy an Additional IP for an OVHcloud Public Cloud project.**
 
 ## Requirements
 
@@ -30,9 +30,9 @@ These failover IP addresses can only be migrated to instances in the same projec
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and open your `Public Cloud`{.action} project.
-In the left-hand menu, click on `Failover IP`{.action} in the 'Network' section.
+In the left-hand menu, click on `Additional IP`{.action} in the 'Network' section.
 
-Then click on the `Actions`{.action} button and choose `Buy Cloud failover IPs`{.action}.
+Then click on the `Actions`{.action} button and choose `Buy Cloud Additional IPs`{.action}.
 
 ![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
@@ -42,13 +42,13 @@ A new menu will then appear:
 
 Enter the following information:
 
-- The number of failover IPs you want to order (IP blocks are not currently available)
+- The number of Additional IPs you want to order (IP blocks are not currently available)
 - The instance on which the IPs will be routed
 - The location of the IPs
 
 You will also need to accept the General Terms and Conditions of Service.
 
-Each failover IP will cost you €2 ex. VAT. They will then be renewed automatically and free of charge every month.
+Each Additional IP will cost you €2 ex. VAT. They will then be renewed automatically and free of charge every month.
 
 They are available in the following locations in Europe:
 
@@ -81,6 +81,6 @@ See our guide on [managing OVHcloud orders](https://docs.ovh.com/ca/en/billing/m
 
 ## Go further
 
-[Configuring a failover IP](https://docs.ovh.com/ca/en/public-cloud/configure_a_failover_ip/)
+[Configuring an Additional IP](https://docs.ovh.com/ca/en/public-cloud/configure_a_failover_ip/)
 
 Join our community of users on <https://community.ovh.com/en/>.

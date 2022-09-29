@@ -1,6 +1,6 @@
 ---
-title: 'Migrar una IP Failover'
-excerpt: 'Migrar una IP Failover'
+title: 'Migrar una Additional IP'
+excerpt: 'Migrar una Additional IP'
 slug: migrar_una_ip_failover
 legacy_guide_number: g1890
 section: 'Red e IP'
@@ -21,35 +21,35 @@ Esta guía explica cómo migrar una IP de conmutación de una instancia a otra. 
 ## Requisitos
 
 - Tener al menos dos instancias de Public Cloud ejecutándose
-- Tener una IP Failover
+- Tener una Additional IP
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
 > [!primary]
-> Una IP failover no puede moverse de una zona a otra. Por ejemplo, una IP situada en el datacenter SBG podrá migrarse a GRA o RBX, pero no podrá migrarse a BHS.
+> Una Additional IP no puede moverse de una zona a otra. Por ejemplo, una IP situada en el datacenter SBG podrá migrarse a GRA o RBX, pero no podrá migrarse a BHS.
 >
 
-### Migración de la IP failover
+### Migración de la Additional IP
 
-En primer lugar, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el servicio Public Cloud correspondiente. A continuación, seleccione Failover IP en el apartado **Network** .
-En nuestro ejemplo, una IP failover se enruta hacia "Instancia_A" y queremos redirigirla hacia "Instancia_B".
+En primer lugar, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el servicio Public Cloud correspondiente. A continuación, seleccione Additional IP en el apartado **Network** .
+En nuestro ejemplo, una Additional IP se enruta hacia "Instancia_A" y queremos redirigirla hacia "Instancia_B".
 
-![migrar IP failover](images/failover2022.png){.thumbnail}
+![migrar Additional IP](images/failover2022.png){.thumbnail}
 
-Haga clic en los 3 puntos a la derecha de la IP failover y a seleccione `Modificar la instancia asociada`{.action}.
+Haga clic en los 3 puntos a la derecha de la Additional IP y a seleccione `Modificar la instancia asociada`{.action}.
 
-![migrar IP failover](images/modify1.2022.png){.thumbnail}
+![migrar Additional IP](images/modify1.2022.png){.thumbnail}
 
 Haga clic en la casilla junto al servidor de destino
 
-![migrar IP failover](images/modify1.png){.thumbnail}
+![migrar Additional IP](images/modify1.png){.thumbnail}
 
 - Haga clic en `Asociar`{.action}.
 
 - Pasados unos segundos, el panel de control se actualizará y se mostrará el siguiente mensaje, confirmando que la migración se ha realizado correctamente:
 
-![migrar IP failover](images/modify2.2022.png){.thumbnail}
+![migrar Additional IP](images/modify2.2022.png){.thumbnail}
 
 
 > [!success]
@@ -58,8 +58,8 @@ Haga clic en la casilla junto al servidor de destino
 
 ## Más información
 
-[Configurar una IP failover](https://docs.ovh.com/es/public-cloud/configurer-une-ip-failover/)
+[Configurar una Additional IP](https://docs.ovh.com/es/public-cloud/configurer-une-ip-failover/)
 
-[Importar una IP Failover](https://docs.ovh.com/es/public-cloud/importar_una_ip_failover/)
+[Importar una Additional IP](https://docs.ovh.com/es/public-cloud/importar_una_ip_failover/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

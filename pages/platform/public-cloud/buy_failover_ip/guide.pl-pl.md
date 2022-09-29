@@ -1,6 +1,6 @@
 ---
-title: 'Wykupienie adresu IP Failover'
-excerpt: 'Dowiedz się, jak zamawiać adresy IP Failover dla swoich instancji'
+title: 'Wykupienie adresu Additional IP'
+excerpt: 'Dowiedz się, jak zamawiać adresy Additional IP dla swoich instancji'
 slug: wykupienie_adresu_ip_failover
 legacy_guide_number: g2030
 section: 'Sieć'
@@ -14,16 +14,16 @@ section: 'Sieć'
 
 ## Wprowadzenie
 
-Potrzeba skonfigurowania adresu IP Failover na swoich instancjach może zajść z różnych powodów:
+Potrzeba skonfigurowania adresu Additional IP na swoich instancjach może zajść z różnych powodów:
 
 - Masz kilka stron na swojej instancji.
 - Hostujesz projekty międzynarodowe.
 
-Aby spełnić te potrzeby, możesz wykupić adres IP Failover dla swoich instancji Public Cloud.
+Aby spełnić te potrzeby, możesz wykupić adres Additional IP dla swoich instancji Public Cloud.
 
-Te adresy IP Failover można migrować tylko do instancji tego samego projektu.
+Te adresy Additional IP można migrować tylko do instancji tego samego projektu.
 
-**Z tego przewodnika dowiesz się, jak wykupić adres IP Failover na potrzeby projektu Public Cloud OVHcloud.**
+**Z tego przewodnika dowiesz się, jak wykupić adres Additional IP na potrzeby projektu Public Cloud OVHcloud.**
 
 ## Wymagania początkowe
 
@@ -33,9 +33,9 @@ Te adresy IP Failover można migrować tylko do instancji tego samego projektu.
 ## W praktyce
 
 Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.<br>
-W menu po lewej stronie kliknij `Failover IP`{.action} w sekcji `Network`.
+W menu po lewej stronie kliknij `Additional IP`{.action} w sekcji `Network`.
 
-Następnie kliknij przycisk `Operacje`{.action}, po czym wybierz `Zamów adresy IP Failover`{.action}.
+Następnie kliknij przycisk `Operacje`{.action}, po czym wybierz `Zamów adresy Additional IP`{.action}.
 
 ![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
@@ -45,7 +45,7 @@ Wówczas wyświetli się ta strona:
 
 Wpisz następujące informacje:
 
-* Liczba żądanych IPFO (bloki IP nie są obecnie dostępne).
+* Liczba żądanych Additional IP (bloki IP nie są obecnie dostępne).
 * Instancja, na którą będą przekierowywane adresy IP.
 * Geolokalizacja adresów IP.
 
@@ -84,7 +84,7 @@ Więcej informacji znajdziesz w przewodniku dotyczącym [zarządzania zamówieni
 
 ## Sprawdź również
 
-[Konfiguracja IP Failover](https://docs.ovh.com/pl/public-cloud/konfiguracja-adresu-ip-failover/)
+[Konfiguracja Additional IP](https://docs.ovh.com/pl/public-cloud/konfiguracja-adresu-ip-failover/)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
 

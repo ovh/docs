@@ -85,9 +85,9 @@ Sugerimos que consulte o guia [Configuração do vRack Public Cloud](https://doc
 
 ### Posso alterar o IP público da minha instância?
 
-Os IP públicos são atribuídos automaticamente às instâncias e não podem ser alterados. Para obter o controlo sobre o IP público de uma instância, aconselhamos que utilize um endereço IP Failover. Desta forma, qualquer que seja o endereço público atribuído automaticamente à instância, tem a possibilidade de adicionar um ou vários IP Failover à sua instância.
+Os IP públicos são atribuídos automaticamente às instâncias e não podem ser alterados. Para obter o controlo sobre o IP público de uma instância, aconselhamos que utilize um endereço Additional IP. Desta forma, qualquer que seja o endereço público atribuído automaticamente à instância, tem a possibilidade de adicionar um ou vários Additional IP à sua instância.
 
-Para mais informações, consulte o guia [Adicionar um IP failover](../adicionar-um-ip-failover/).
+Para mais informações, consulte o guia [Adicionar um Additional IP](../adicionar-um-ip-failover/).
 
 ## Quer saber mais?
 

@@ -1,6 +1,6 @@
 ---
-title: 'Przeniesienie adresu IP Fail Over'
-excerpt: 'Przeniesienie adresu IP Fail Over'
+title: 'Przeniesienie adresu Additional IP'
+excerpt: 'Przeniesienie adresu Additional IP'
 slug: przeniesienie_adresu_ip_fail_over
 legacy_guide_number: g1890
 section: 'Zarządzanie w Panelu klienta OVH'
@@ -14,7 +14,7 @@ section: 'Zarządzanie w Panelu klienta OVH'
 
 ## Wprowadzenie
 
-W tym przewodniku wyjaśniono, jak przenieść adres IP Failover (używany w przypadku awarii) z jednej instancji do innej. Dzięki tej operacji można ograniczyć czas niedostępności serwera lub uniknąć sytuacji braku dostępności, a ponadto jest możliwe:
+W tym przewodniku wyjaśniono, jak przenieść adres Additional IP (używany w przypadku awarii) z jednej instancji do innej. Dzięki tej operacji można ograniczyć czas niedostępności serwera lub uniknąć sytuacji braku dostępności, a ponadto jest możliwe:
 
 - przeniesienie wielu stron internetowych do ich “nowych wersji”,
 - prowadzenie działalności na serwerze zreplikowanym przy jednoczesnym przeprowadzaniu konserwacji lub aktualizacji na serwerze produkcyjnym.
@@ -22,23 +22,23 @@ W tym przewodniku wyjaśniono, jak przenieść adres IP Failover (używany w prz
 ## Wymagania początkowe
 
 - Co najmniej dwie działające instancje Public Cloud
-- Adres IP Failover
+- Adres Additional IP
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
 > [!primary]
-> IP Failover nie może być przenoszone między strefami. Na przykład adres IP zlokalizowany w centrum danych SBG może zostać przeniesiony do GRA lub RBX, ale nie może zostać przeniesiony do BHS.
+> Additional IP nie może być przenoszone między strefami. Na przykład adres IP zlokalizowany w centrum danych SBG może zostać przeniesiony do GRA lub RBX, ale nie może zostać przeniesiony do BHS.
 >
 
-### Migracja IP Failover
+### Migracja Additional IP
 
-Po pierwsze zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiednią usługę Public Cloud. Następnie wybierz Failover IP w części **Network**.
-W naszym przykładzie adres IP failover przekierowywany jest na "Instance_A" i chcemy go przekierować na "Instance_B".
+Po pierwsze zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiednią usługę Public Cloud. Następnie wybierz Additional IP w części **Network**.
+W naszym przykładzie adres Additional IP przekierowywany jest na "Instance_A" i chcemy go przekierować na "Instance_B".
 
 ![](images/failover2022.png){.thumbnail}
 
-Kliknij na `...`{.action} obok IP failover i wybierz `Zmień przypisaną instancję`{.action}.
+Kliknij na `...`{.action} obok Additional IP i wybierz `Zmień przypisaną instancję`{.action}.
 
 ![](images/modify1.2022.png){.thumbnail}
 
@@ -55,16 +55,16 @@ Kliknij pole obok serwera docelowego.
 
 > [!success]
 >
-> IP Failover można skonfigurować na serwerze docelowym przed
+> Additional IP można skonfigurować na serwerze docelowym przed
 > wykonać przełączanie, lub po oczywiście. Jeśli jest wstępnie skonfigurowany,
 > odpowiedź rozpoczyna się w momencie zakończenia operacji routingu.
 >
 
 ## Sprawdź również
 
-[Konfiguracja IP Failover](https://docs.ovh.com/pl/public-cloud/konfiguracja-adresu-ip-failover/)
+[Konfiguracja Additional IP](https://docs.ovh.com/pl/public-cloud/konfiguracja-adresu-ip-failover/)
 
-[Importowanie adresu IP Fail Over](https://docs.ovh.com/pl/public-cloud/importowanie_adresu_ip_fail_over/)
+[Importowanie adresu Additional IP](https://docs.ovh.com/pl/public-cloud/importowanie_adresu_ip_fail_over/)
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
 

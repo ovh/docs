@@ -1,6 +1,6 @@
 ---
-title: 'Importowanie adresu IP Fail Over'
-excerpt: 'Dowiedz się, jak zaimportować adres IP Failover do projektu OVHcloud Public Cloud.'
+title: 'Importowanie adresu Additional IP'
+excerpt: 'Dowiedz się, jak zaimportować adres Additional IP do projektu OVHcloud Public Cloud.'
 slug: importowanie_adresu_ip_fail_over
 legacy_guide_number: g1883
 section: 'Zarządzanie w Panelu klienta OVH'
@@ -10,35 +10,35 @@ section: 'Zarządzanie w Panelu klienta OVH'
 
 ## Wprowadzenie
 
-Jeśli chcesz skonfigurować adres IP Failover w swoich instancjach, ponieważ:
+Jeśli chcesz skonfigurować adres Additional IP w swoich instancjach, ponieważ:
 
 - masz w instancji wiele witryn internetowych, 
 - obsługujesz projekty międzynarodowe,
 - chcesz migrować z serwera dedykowanego do instancji Public Cloud,
 
-Można zaimportować adres IP Failover powiązany z inną usługą OVHcloud.
+Można zaimportować adres Additional IP powiązany z inną usługą OVHcloud.
 
-**Dowiedz się, jak zaimportować adres IP Failover do projektu OVHcloud Public Cloud.**
+**Dowiedz się, jak zaimportować adres Additional IP do projektu OVHcloud Public Cloud.**
 
 ## Wymagania początkowe
 
 - [Projekt Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-- [Adres IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/){.external}
+- [Adres Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/){.external}
 
 ## W praktyce
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, wybierz projekt w sekcji `Public Cloud`{.action}. Wybierz pozycję `Failover IP`{.action} w sekcji "Network".
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, wybierz projekt w sekcji `Public Cloud`{.action}. Wybierz pozycję `Additional IP`{.action} w sekcji "Network".
 
 Kliknij przycisk `Operacje`{.action} i wybierz opcję ` Importuj adres IP`{.action}, aby wyświetlić wszystkie adresy IP, które można zaimportować do projektu Public Cloud.
 
 ![IP Section](images/import1.png){.thumbnail}
 
-Jeśli nie posiadasz jeszcze adresu IP Failover w Twoim projekcie Public Cloud, na stronie głównej pojawi się możliwość importu adresu IP.
+Jeśli nie posiadasz jeszcze adresu Additional IP w Twoim projekcie Public Cloud, na stronie głównej pojawi się możliwość importu adresu IP.
 
-Kliknij ikonę z trzema kropkami po prawej stronie adresu IP, który chcesz zaimportować, a następnie kliknij pozycję `Importuj ten IP Failover`{.action}.
+Kliknij ikonę z trzema kropkami po prawej stronie adresu IP, który chcesz zaimportować, a następnie kliknij pozycję `Importuj ten Additional IP`{.action}.
 
-![Import Failover IP](images/import2.png){.thumbnail}
+![Import Additional IP](images/import2.png){.thumbnail}
 
 Kliknij przycisk `Importuj`{.action}:
 
@@ -46,21 +46,21 @@ Kliknij przycisk `Importuj`{.action}:
 
 Spowoduje to ponowne załadowanie strony. Zostanie wyświetlone potwierdzenie migracji adresu IP.
 
-Po zaimportowaniu adresu IP Failover kliknij ikonę z trzema kropkami (po prawej) i wybierz pozycję `Zmodyfikuj powiązaną instancję`{.action}.
+Po zaimportowaniu adresu Additional IP kliknij ikonę z trzema kropkami (po prawej) i wybierz pozycję `Zmodyfikuj powiązaną instancję`{.action}.
 
-![Import Failover IP](images/modifyinstance.png){.thumbnail}
+![Import Additional IP](images/modifyinstance.png){.thumbnail}
 
 Zostanie wyświetlone okno umożliwiające wybranie instancji, do której ma zostać przeniesiony adres IP:
 
-![Import Failover IP](images/modifyinstance1.png){.thumbnail}
+![Import Additional IP](images/modifyinstance1.png){.thumbnail}
 
 Kliknij przycisk `Dołącz`{.action}. Spowoduje to ponowne załadowanie strony i wyświetlenie potwierdzenia, że adres IP został powiązany z instancją:
 
-![Import Failover IP](images/modifycompleted.png){.thumbnail}
+![Import Additional IP](images/modifycompleted.png){.thumbnail}
 
-Adres IP Failover będzie już dołączony do instancji.
+Adres Additional IP będzie już dołączony do instancji.
 
-Następnym krokiem jest skonfigurowanie adresu IP w systemie operacyjnym. Przewodnik jest dostępny tutaj: [Konfiguracja adresu IP Failover](https://docs.ovh.com/pl/public-cloud/konfiguracja-adresu-ip-failover/){.external}.
+Następnym krokiem jest skonfigurowanie adresu IP w systemie operacyjnym. Przewodnik jest dostępny tutaj: [Konfiguracja adresu Additional IP](https://docs.ovh.com/pl/public-cloud/konfiguracja-adresu-ip-failover/){.external}.
 
 ## Sprawdź również
 

@@ -81,9 +81,9 @@ Please read our guide on [Configuring vRack for Public Cloud](../public-cloud-vr
 
 ### Can I change the public IP of my instance?
 
-Public IP addresses are automatically assigned to instances, and therefore cannot be modified. To control an instance's public IP address, we recommend using a failover IP. This way, regardless of the public address assigned to the instance automatically, you can add one or more failover IPs to your instance.
+Public IP addresses are automatically assigned to instances, and therefore cannot be modified. To control an instance's public IP address, we recommend using an Additional IP. This way, regardless of the public address assigned to the instance automatically, you can add one or more Additional IPs to your instance.
 
-For more information, please refer to this guide: [Buying a failover IP](../buy-a-failover-ip/).
+For more information, please refer to this guide: [Buying an Additional IP](../buy-a-failover-ip/).
 
 ## Go further
 

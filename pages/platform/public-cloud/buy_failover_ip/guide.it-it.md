@@ -1,6 +1,6 @@
 ---
-title: 'Acquista un IP Failover'
-excerpt: 'Acquista un IP Failover'
+title: 'Acquista un Additional IP'
+excerpt: 'Acquista un Additional IP'
 slug: acquista_un_ip_failover
 legacy_guide_number: g2030
 section: Rete
@@ -14,16 +14,16 @@ section: Rete
 
 ## Obiettivo
 
-È possibile configurare un indirizzo IP Failover sulle tue istanze Public Cloud per diversi motivi:
+È possibile configurare un indirizzo Additional IP sulle tue istanze Public Cloud per diversi motivi:
 
 - se ospiti più siti sulla tua istanza
 - se ospiti progetti internazionali
 
-Per rispondere a queste esigenze, puoi acquistare un indirizzo IP Failover per le tue istanze.
+Per rispondere a queste esigenze, puoi acquistare un indirizzo Additional IP per le tue istanze.
 
 Questi indirizzi possono essere trasferiti esclusivamente verso le istanze di uno stesso progetto.
 
-**Questa guida ti mostra come acquistare un IP Failover per il tuo progetto Public Cloud OVHcloud.**
+**Questa guida ti mostra come acquistare un Additional IP per il tuo progetto Public Cloud OVHcloud.**
 
 
 ## Prerequisiti
@@ -34,9 +34,9 @@ Questi indirizzi possono essere trasferiti esclusivamente verso le istanze di un
 ## Procedura
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul menu `Public Cloud`{.action} e seleziona il relativo progetto Public Cloud.<br>
-Nel menu a sinistra, clicca su `Failover IP`{.action} nella sezione `Network`.
+Nel menu a sinistra, clicca su `Additional IP`{.action} nella sezione `Network`.
 
-Clicca sul pulsante `Azioni`{.action} e poi su `Acquista IP Failover`{.action}.
+Clicca sul pulsante `Azioni`{.action} e poi su `Acquistan Additional IP`{.action}.
 
 ![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
@@ -46,8 +46,8 @@ Nella nuova finestra:
 
 inserisci le informazioni richieste:
 
-* Il numero di indirizzi IP Failover che vuoi acquistare (i blocchi IP non sono attualmente disponibili).
-* L’istanza a cui vuoi associare i tuoi IP Failover
+* Il numero di indirizzi Additional IP che vuoi acquistare (i blocchi IP non sono attualmente disponibili).
+* L’istanza a cui vuoi associare i tuoi Additional IP
 * La geolocalizzazione degli indirizzi IP 
 
 Infine è necessario accettare le condizioni generali di servizio.
@@ -85,6 +85,6 @@ Per maggiori informazioni, consulta la nostra guida sulla [gestione degli ordini
 
 ## Per saperne di più
 
-[Configura un IP Failover](https://docs.ovh.com/it/public-cloud/configura-un-ip-failover/)
+[Configura un Additional IP](https://docs.ovh.com/it/public-cloud/configura-un-ip-failover/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>
