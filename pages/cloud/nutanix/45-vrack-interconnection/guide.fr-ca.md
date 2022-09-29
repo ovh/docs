@@ -2,7 +2,7 @@
 title: Interconnexion de clusters au travers du vRack
 slug: nutanix-vrack-interconnection
 excerpt: "Mise en place d'une interconnexion de deux clusters au travers d'un vRack OVHcloud"
-section: Plan de reprise d'activité
+section: Plan de Reprise d'Activité
 order: 03
 ---
 
@@ -121,7 +121,7 @@ Sélectionnez ces éléments du cluster de Roubaix :
 
 Cliquez ensuite sur `Ajouter`{.action} .
 
-> [!Warning]
+> [!warning]
 > 
 > Cette opération peut durer quelques minutes, veuillez patienter pendant cette période. 
 > 

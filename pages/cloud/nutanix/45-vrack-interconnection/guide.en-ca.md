@@ -121,7 +121,7 @@ Select these elements from the Roubaix cluster:
 
 Then click `Add`{.action}.
 
-> [!Warning]
+> [!warning]
 > 
 > This operation may take a few minutes, please wait during this period. 
 > 
