@@ -1,5 +1,5 @@
 ---
-title: Choisir une classe de stockage adaptée
+title: Choisir une classe de stockage adaptée à vos besoins
 slug: s3/choosing-a-suitable-storage-class
 section: Object Storage S3 High Performance
 order: 005
@@ -7,29 +7,29 @@ order: 005
 
 **Dernière mise à jour le 27/09/2022**
 
-Le stockage objet « Object Storage » est une famille d’offre de stockage proposant des espaces de stockage performant, scalable et sécurisé.
+Le stockage objet « Object Storage » est une famille d’offres de stockage proposant des espaces de stockage performants, scalables et sécurisés.
 
-Les offres de stockage objet permettent de déposer à travers un point d’accès publique appelé « endpoint » des fichiers statiques (vidéos, images, fichiers web…) dans un espace illimité, pour les exploiter depuis une application ou pour les rendre accessibles sur le web. Ces espaces de stockages sont accessibles via une interface d’API .
+Les offres de stockage objet permettent de déposer à travers un point d’accès public appelé « endpoint » des fichiers statiques (vidéos, images, fichiers web…) dans un espace illimité, pour les exploiter depuis une application ou pour les rendre accessibles sur le web. Ces espaces de stockage sont accessibles via une interface d’API .
 
-## Les offres de stockages objets S3 sont les suivantes :
+## Les offres de stockage objet S3 sont les suivantes :
 
 ### Standard object storage - S3 API
 
-La classe de stockage Standard offre un service de stockage objet scalable, compatible avec la grande majorité des cas d'usages, adapté à tout type de volumétrie. L’offre s’appuie sur un stockage sur disques HDD au sein d'une architecture résiliente dans un datacentre. L’offre est accessible depuis une API S3.
+La classe de stockage Standard offre un service de stockage objet scalable, compatible avec la grande majorité des cas d'usages, adapté à tous types de volumétrie. L’offre s’appuie sur un stockage sur disques HDD au sein d'une architecture résiliente dans un datacentre. L’offre est accessible depuis une API S3.
 
-Adaptée aux cas d'usage : media / content storage & delivery,  datalake, website, backup,  logs et métriques d'applications.
+Cette offre est adaptée aux cas d'usage suivants : media / content storage & delivery,  datalake, website, backup,  logs et métriques d'applications.
 
 ### High Performance object storage - S3 API
 
 La classe de stockage High Performance est un espace de stockage objet hautement performant, pour les applicatifs ayant de gros besoins en bande passante et nécessitant des accès à la donnée en lecture et en écriture extrêmement rapides et intensifs. L’offre s’appuie sur un stockage sur des disques performants de type SSD NVMe au sein d'une architecture résiliente dans un datacentre. L’offre est accessible depuis une API S3.
 
-Adaptée aux cas d'usage : AI & Analytics, Datalake, High power Computing Multimedia / Content Platform.
+Cette offre est adaptée aux cas d'usage suivants : AI & Analytics, Datalake, High power Computing Multimedia / Content Platform.
 
 ### Cold Archive
 
-La classe de stockage Cold Archive est un espace de stockage de long terme sur plusieurs années, durable et sécurisé pour archiver les données. Adaptée à ce cas d’usage, ce service propose un coût du stockage très faible, et une latence à la récupération de 48 heures (temps d’accès aux premiers Octets) et un coût appliqué à chaque demande de récupération de données. Cold archive s’appuie sur un stockage sur bandes magnétiques au sein d'une architecture hautement résiliente, la donnée étant répartie sur quatre datacentres en France. L’offre est accessible depuis une API S3.
+La classe de stockage Cold Archive est un espace de stockage de long terme sur plusieurs années, durable et sécurisé pour archiver les données. Adaptée à ce cas d’usage, ce service propose un coût du stockage très faible, une latence à la récupération de 48 heures (temps d’accès aux premiers Octets) et un coût appliqué à chaque demande de récupération de données. Cold archive s’appuie sur un stockage sur bandes magnétiques au sein d'une architecture hautement résiliente, la donnée étant répartie sur quatre datacentres en France. L’offre est accessible depuis une API S3.
 
-## Les offres de stockages objets SWIFT sont les suivantes :
+## Les offres de stockage objet SWIFT sont les suivantes :
 
 ### Standard object storage - SWIFT API
 
@@ -37,7 +37,7 @@ La classe de stockage Standard (SWIFT) offre un service de stockage de données 
 
 ### Cloud Archive - SWIFT API
 
-La classe de stockage Cloud Archive (SWIFT) offre un service de stockage pour de la conservation long terme de données pour des besoins métier ou d'autres obligations. Adaptée à ce cas d’usage, ce service propose un coût du stockage faible, et une latence à la récupération des données de plusieurs minutes. L’offre est accessible depuis une API SWIFT.
+La classe de stockage Cloud Archive (SWIFT) offre un service de stockage pour de la conservation long terme de données pour des besoins métier ou d'autres obligations. Adapté à ce cas d’usage, ce service propose un coût du stockage faible et une latence à la récupération des données de plusieurs minutes. L’offre est accessible depuis une API SWIFT.
 
 ## Toutes les classes de stockage sont accessibles grâce à l'API standard
 

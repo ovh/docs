@@ -13,8 +13,6 @@ td:nth-of-type(1){
 
 **Last updated September 27<sup>th</sup> 2022**
 
-## Storage and backup - FAQ
-
 ## General questions
 
 ### What is OVHcloud Object Storage?
@@ -29,13 +27,13 @@ Object storage is adapted to store unstructured data in an unlimited way in volu
 
 ### What is the difference between S3 object storage classes and SWIFT object storage classes?
 
-The Object Storage S3 storage classes are largely compatible with the S3 protocol and have a recent design, high performance and good bandwidth. This solution is regularly updated with new features
+The Object Storage S3 storage classes are largely compatible with the S3 protocol and have a recent design, high performance and good bandwidth. This solution is regularly updated with new features.
 
 SWIFT storage classes are older generation classes and no longer benefit from developments. They are accessible through the OpenStack SWIFT protocol.
 
 #### How do I know which storage class is suitable for my uses?
 
-OVHcloud offers 3 S3 storage classes:
+OVHcloud offers three S3 storage classes:
 
 - **High Performance** for your latency and bandwidth intensive applications
 - **Standard** for large storages for which you are looking for a better price/performance ratio, e.g. for websites, image-sharing libraries or backup devices,
@@ -46,7 +44,7 @@ Storage classes are described [here](https://docs.ovh.com/gb/en/storage/s3/choos
 #### What features are available for my S3 storage classes?
 
 Object S3 storage classes have enhanced features to better manage your data: S3 user profile management, object-based access rights configuration, data protection with bucket immutability, version management.
-In roadmap new functions are coming, we invite you to regularly consult our public roadmap GitHub [here](https://github.com/ovh/public-cloud-roadmap/projects/3).
+In our roadmap, new functions are coming, we invite you to regularly consult our public roadmap GitHub [here](https://github.com/ovh/public-cloud-roadmap/projects/3).
 
 #### Which S3 APIs are compatible with Object Storage S3 storage classes?
 
@@ -54,27 +52,27 @@ S3 object storage classes offer wide support for S3 APIs. All compatible APIs ar
 
 ### What tools are compatible with S3 object storage?
 
-Most of the tools on the market that are compatible with standard S3 storage are compatible.
+Most of the tools on the market that are compatible with standard S3 storage are compatible with S3 object storage.
 
-### Can the Storage S3 object work with my backup management tools?
+### Can the S3 object storage work with my backup management tools?
 
 Yes, S3 object storage is largely compatible with S3 APIs and can be integrated with market tools such as [Veeam](https://docs.ovh.com/gb/en/storage/s3/veeam/), [Owncloud](https://docs.ovh.com/gb/en/storage/s3/owncloud/), [Nextcloud](https://docs.ovh.com/gb/en/storage/s3/nextcloud/).
 
 ### How is the service billed?
 
-Object Storage is charged according to the storage space used, with a granularity of 1 GB. To make it easier to read, the price is displayed per GB/month, but the billing granularity is per GB/hour, considering that on average there are 720 hours in a month. Prices are available [here](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+Object Storage is billed according to the storage space used, with a granularity of 1 GB. To make it easier to read, the price is displayed per GB/month, but the billing granularity is per GB/hour, considering that on average there are 720 hours in a month. Prices are available [here](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
 
 ### Access & security
 
 ### By which APIs can I access storage solutions?
 
-We have designed the S3 storage classes to be **compatible with the S3 API**, considered a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via endpoints defined by region and storage class.
+We have designed the S3 storage classes to be **compatible with the S3 API**, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via endpoints defined by region and storage class.
 
-Locate your S3 access keys and access the different storage classes via command line AWS-CLI or s3cmd and others ...
+Locate your S3 access keys and access the different storage classes via command line AWS-CLI or s3cmd and others...
 
 The list of endpoints is available [here](https://docs.ovh.com/gb/en/storage/s3/location/).
 
-### Can you access the service using a private network (vRack)?
+### Can I access the service using a private network (vRack)?
 
 Object storage endpoints are available across the public network. Object storage class is not available on the private network.
 
@@ -94,7 +92,7 @@ Using server-side encryption with client-provided encryption keys (SSE-C) allows
 
 When you load an object, S3 Object Storage uses the encryption key you provide to apply AES-256 encryption to your data. When retrieving an object, you must provide the same encryption key as part of your request. S3 Object Storage first checks that the encryption key you provided matches, then decrypts the object before returning the object data to you.
 
-<https://docs.ovh.com/gb/en/storage/s3/encrypt-your-objects-with-sse-c/>
+A guide is available [here](https://docs.ovh.com/gb/en/storage/s3/encrypt-your-objects-with-sse-c/).
 
 ### How do I protect my backups?
 
@@ -102,19 +100,19 @@ We recommend that you protect your backups with immutability, a function availab
 
 Object locking is a feature that allows you to store objects using a Write Once, Read Many (WORM) template and can be used in scenarios where it is imperative that data is not modified or deleted after writing.
 
-<https://docs.ovh.com/gb/en/storage/s3/managing-object-lock/>
+A guide is available [here](https://docs.ovh.com/gb/en/storage/s3/managing-object-lock/).
 
 ### Bandwidth
 
 ### What is the bandwidth?
 
-Bandwidth is shared and not guaranteed. We offer a maximum of 1 Gbps / connection in upload and download.
+Bandwidth is shared and not guaranteed. We offer a maximum of 1 Gbps/connection in upload and download.
 
-### How is the bandwidth charged?
+### How is the bandwidth billed?
 
-Prices are set and displayed on the web page: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#439>
+Prices are set and displayed on [this web page](https://www.ovhcloud.com/en-gb/public-cloud/prices/#439).
 
-An OVHcloud server is a server operated for an OVHcloud service, e.g. a server from the bare-metal, Public Cloud or Hosted Private Cloud range (Dedicated server/VPS/Public Cloud/Hosted Private Cloud/So you Start/Kimsufi/ADSL)
+An OVHcloud server is a server operated for an OVHcloud service, e.g. a server from the Bare Metal, Public Cloud or Hosted Private Cloud range (Dedicated server/VPS/Public Cloud/Hosted Private Cloud/So you Start/Kimsufi)
 
 - Incoming internal traffic is represented by data downloaded from an OVHcloud server to an OVHcloud server
 - Outgoing internal traffic is represented by data downloaded from an OVHcloud server to an OVHcloud server
@@ -125,7 +123,7 @@ An OVHcloud server is a server operated for an OVHcloud service, e.g. a server f
 
 ### What level of availability can I achieve with Object Storage?
 
-When the Service is unavailable or experiencing faults for which OVHcloud may be held responsible, you can contact the OVHcloud teams and open an Incident Ticket from your Management Interface.
+When the Service is unavailable or experiencing faults for which OVHcloud may be held responsible, you can contact the OVHcloud teams and open an incident ticket from your OVHcloud Control Panel.
 
 OVHcloud agrees to ensure the Service levels for Service availability, as described in the T&Cs you can view [here](https://docs.ovh.com/gb/en/storage/s3/choosing-a-suitable-storage-class/).
 
@@ -147,17 +145,16 @@ As in any environment, the current best practice we recommend to all our custome
 | Object Storage Swift<br>Standard Performance | 99,999 % (5x9) |
 | Object Storage Swift<br>Cloud Archive | 99,999 % (5x9) |
 
-## Archive
+## Cold Archive
 
 #### How do I archive data with the Cold Archive storage class?
 
 Data archiving is done in two steps.
 
 1. First, you upload your data to a bucket in the standard object storage class, in order to receive your archives (endpoint: <https://s3.rbx.archive.cloud.ovh.net/>)
-
 2. You archive your data with the API `put archive`
 
-At any time you can unarchive your data `get archive` or delete your archive `delete archive`
+At any time you can unarchive your data (`get archive`) or delete your archive (`delete archive`).
 
 At any time, the metadata remains available instantly and can be consulted free of charge on the standard object class, allowing you to consult the list of your archives.
 
@@ -167,22 +164,20 @@ At any time, the metadata remains available instantly and can be consulted free 
 
 Unarchiving an archive is not free and may take up to 48 hours for the first objects to be available again on the standard class.
 
-Data recovery availability time depends on the amount of data. For example, for a recovery of several hundred TB, the average time is 48 hours. For a volume of a few TBs, this can range from a few minutes to a few hours
+Data recovery availability time depends on the amount of data. For example, for a recovery of several hundreds TB, the average time is 48 hours. For a volume of a few TBs, this can range from a few minutes to a few hours.
 
 ### How is the Cold Archive service billed?
 
-- The standard object storage bill starts when the data is uploaded to the storage class and stops when the bucket is archived (put-archive API)
-- The cold archive storage invoice starts when the put-archive API is sent and is stopped when an archive-delete API is sent
+- The standard object storage bill starts when the data is uploaded to the storage class and stops when the bucket is archived (`put archive` API)
+- The Cold Archive storage invoice starts when the `put archive` API is called and is stopped when an `delete archive` API is called.
 
-The volume is calculated with the total capacity of all compartments in a Public Cloud project ID  
+The volume is calculated with the total capacity of all compartments in a Public Cloud project ID.
 
-Discount is applied to all volumes, when available.
+A discount is applied to all volumes, when available.
 
 ### Is there a minimum commitment duration?
 
-There is no minimum commitment period.
-
-Except for the Cold Archive class, where the minimum duration is 180 days. If an archive is deleted before this time, date = date between 0 days and 180 days, an additional cost calculated by the customer is charged: storage class '[180 days - date] x price'.
+There is no minimum commitment period, except for the Cold Archive class, for which the minimum duration is 180 days. If an archive is deleted before this time (date = date between 0 days and 180 days), an additional cost calculated by the customer is billed: storage class '[180 days - date] x price'.
 
 ### Upload / download data
 

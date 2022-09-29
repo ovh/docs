@@ -5,7 +5,6 @@ section: Object Storage S3 High Performance
 order: 005
 ---
 
-
 **Last updated September 27<sup>th</sup>2022**
 
 Object Storage is a family of storage solutions that offer high-performance, scalable and secure storage spaces.
@@ -18,13 +17,13 @@ With object storage solutions, you can store static files (videos, images, web f
 
 The Standard storage class offers a scalable object storage service, compatible with the vast majority of use cases, adapted to any type of volume. The solution is based on HDD storage within a resilient architecture in a datacentre. The solution is accessible via an S3 API.
 
-Suitable for the following use cases: media/content storage & delivery, datalake, website, backup, logs and application metrics.
+This offer is suitable for the following use cases: media/content storage & delivery, datalake, website, backup, logs and application metrics.
 
 ### High Performance object storage - S3 API
 
 The High Performance storage class is a high-performance object storage space for applications that have high bandwidth requirements and require extremely fast and intensive read and write access to data. The solution relies on storage on high-performance NVMe SSD disks, within a resilient architecture in a datacentre. The solution is accessible via an S3 API.
 
-Suitable for the following use cases: AI & Analytics, Datalake, High power Computing Multimedia / Content Platform.
+This offer is suitable for the following use cases: AI & Analytics, Datalake, High power Computing Multimedia / Content Platform.
 
 ### Cold Archive
 

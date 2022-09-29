@@ -13,8 +13,8 @@ order: 040
 
 > [!primary]
 >
-> - If you are interested in storage class: ***Standard object storage - SWIFT API***, please follow this [guide](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
-> - If you are interested in storage class: ***Cloud Archive - SWIFT API***, please follow this [guide](https://docs.ovh.com/gb/en/storage/pca/create-container/).
+> - If you are interested in storage class ***Standard object storage - SWIFT API***, please follow this [guide](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
+> - If you are interested in storage class ***Cloud Archive - SWIFT API***, please follow this [guide](https://docs.ovh.com/gb/en/storage/pca/create-container/).
 >
 
 ## Requirements
@@ -26,7 +26,7 @@ order: 040
 
 ### Using the Control Panel
 
-To create an Object Storage bucket, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB) and open your `Public Cloud` project{.action}. Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
+To create an Object Storage bucket, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
 
 ![My Dashboard containers](images/highperf-create-container-2022092808185322.png)
 
@@ -73,7 +73,7 @@ Congratulations, your bucket is created:
 
 ### Where to find the Endpoint URL of a bucket
 
-Click on the name of your bucket to view details and contents:
+Click on the name of your bucket to view its details and content:
 
 ![Bucket details](images/highperf-create-container-20220928091433895.png)
 
