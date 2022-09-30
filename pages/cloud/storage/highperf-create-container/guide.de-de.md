@@ -16,7 +16,7 @@ routes:
 > [!primary]
 >
 > - If you are interested in storage class ***Standard object storage - SWIFT API***, please follow this [guide](https://docs.ovh.com/de/storage/pcs/container-erstellen/)
-> - If you are interested in storage class ***Cloud Archive - SWIFT API***, please follow this [guide](https://docs.ovh.com/de/storage/pca/create-container/).
+> - If you are interested in storage class ***Cloud Archive - SWIFT API***, please follow this [guide](https://docs.ovh.com/de/storage/pca/erstellen-von-containern/).
 >
 
 ## Requirements
