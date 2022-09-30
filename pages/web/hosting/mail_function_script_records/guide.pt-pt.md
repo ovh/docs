@@ -2,7 +2,8 @@
 title: Alojamento partilhado Seguimento dos emails automatizados
 excerpt: Seguimento dos seus emails enviados a partir de um website num alojamento partilhado OVH
 slug: alojamento_partilhado_seguimento_dos_emails_automatizados
-legacy_guide_number: g1974
+section: Diagnóstico
+Order: 09
 ---
 
 

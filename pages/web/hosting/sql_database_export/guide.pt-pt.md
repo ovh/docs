@@ -1,9 +1,9 @@
 ---
 title: 'Recuperar a cópia de segurança da base de dados de um alojamento web'
 excerpt: 'Saiba como recuperar a cópia de segurança de uma base de dados de um alojamento web da OVH'
-id: '1394'
 slug: partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql
-legacy_guide_number: g1394
+section: Bases de dados
+order: 03
 ---
 
 **Última atualização: 14/02/2019**

@@ -1,9 +1,9 @@
 ---
 title: 'CMS, instalar manualmente o Joomla'
 excerpt: Como instalar manualmente o Joomla?
-id: '1978'
 slug: cms_instalar_manualmente_o_joomla
-legacy_guide_number: g1978
+section: CMS
+order: 05
 ---
 
 

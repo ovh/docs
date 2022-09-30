@@ -2,8 +2,8 @@
 title: 'Criar e gerir uma base de dados a partir de um alojamento web'
 slug: criar-base-de-dados
 excerpt: 'Saiba como usar as bases de dados incluídas num plano de alojamento web OVHcloud'
-section: 'Bases de dados'
-order: 1
+section: Bases de dados
+order: 01
 ---
 
 **Última atualização: 03/02/2022**

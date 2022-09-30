@@ -2,8 +2,8 @@
 title: 'Alterar a configuração do alojamento web'
 slug: modificar_o_ambiente_de_execucao_do_meu_alojamento_web
 excerpt: 'Saiba como alterar a configuração do seu alojamento web da OVH'
-section: 'Configuração do alojamento'
-order: 3
+section: Configuração do alojamento
+order: 02
 ---
 
 **Última atualização: 21/01/2019**

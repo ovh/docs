@@ -2,7 +2,8 @@
 title: 'CMS, instalar manualmente Drupal'
 excerpt: Como instalar manualmente Drupal?
 slug: cms_instalar_manualmente_drupal
-legacy_guide_number: g1976
+section: CMS
+order: 04
 ---
 
 

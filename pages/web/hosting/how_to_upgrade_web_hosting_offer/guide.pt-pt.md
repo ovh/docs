@@ -2,8 +2,8 @@
 title: "Fazer evoluir a sua oferta de alojamento web"
 excerpt: "Saiba como alterar a fórmula de subscrição da sua oferta de alojamento OVHcloud"
 slug: how_to_change_web_hosting_offer
-section: Otimizar o meu site
-order: 2
+section: Otimizar o seu site
+order: 02
 ---
 
 > [!primary]
