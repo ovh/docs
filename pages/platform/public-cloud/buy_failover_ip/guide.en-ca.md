@@ -2,12 +2,16 @@
 title: 'Buying an Additional IP'
 slug: buy-a-failover-ip
 excerpt: 'Find out how to order Additional IP addresses for your instances'
-legacy_guide_number: 2030
 section: Networking
 order: 1
 ---
 
 **Last updated 20th December 2021**
+
+> [!primary]
+>
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-ca/network/additional-ip/). This has no further impact on any of its features or the functioning of your services.
+>
 
 ## Objective
 

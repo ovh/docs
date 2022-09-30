@@ -2,7 +2,6 @@
 title: 'Trasferisci il tuo Additional IP'
 excerpt: 'Trasferisci il tuo Additional IP'
 slug: trasferisci_il_tuo_ip_failover
-legacy_guide_number: g1890
 section: Rete
 ---
 
@@ -11,6 +10,11 @@ section: Rete
 >
 
 **Ultimo aggiornamento 06/01/2022**
+
+> [!primary]
+>
+> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](https://www.ovhcloud.com/it/network/additional-ip/). e non ha alcun impatto sulle funzionalità o sul funzionamento dei tuoi servizi.
+>
 
 ## Obiettivo
 Questa guida ti mostra come trasferire un Additional IP da un’istanza all’altra. Questa operazione, che permette generalmente di ridurre o eliminare i casi di indisponibilità del servizio, potrebbe essere necessaria, ad esempio, per:

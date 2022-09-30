@@ -10,6 +10,11 @@ excerpt: 'Dowiedz się, jak dodawać adresy Additional IP do konfiguracji Twojej
 
 **Ostatnia aktualizacja z dnia 27-04-2021**
 
+> [!primary]
+>
+> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/). Nie ma to żadnego wpływu na funkcje ani na działanie usług.
+>
+
 ## Wprowadzenie
 
 Być może będziesz musiał skonfigurować adresy Additional IP na Twoich instancjach, na przykład, jeśli hostujesz dużą liczbę stron WWW na Twojej instancji lub hostujesz projekty międzynarodowe. Adresy Additional IP OVHcloud umożliwiają przypisanie kilku adresów IP do jednego interfejsu sieciowego.

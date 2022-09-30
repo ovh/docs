@@ -11,6 +11,11 @@ section: 'Netzwerk und IP'
 
 **Letzte Aktualisierung am 21.12.2021**
 
+> [!primary]
+>
+> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Dies hat keine weiteren Auswirkungen auf dessen Eigenschaften oder die Funktionalität Ihrer Dienstleistungen.
+>
+
 ## Ziel
 
 Aus verschiedenen Gründen kann es sein, dass Sie eine Additional IP-Adresse auf Ihren Instanzen konfigurieren müssen:

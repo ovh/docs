@@ -2,11 +2,15 @@
 title: 'Additional IP importieren'
 slug: import_einer_failover-ip
 excerpt: 'Erfahren Sie hier, wie Sie eine Additional IP-Adresse in ein Public Cloud Projekt importieren'
-legacy_guide_number: g1883
 section: 'Netzwerk und IP'
 ---
 
 **Letzte Aktualisierung am 10.03.2022**
+
+> [!primary]
+>
+> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Dies hat keine weiteren Auswirkungen auf dessen Eigenschaften oder die Funktionalität Ihrer Dienstleistungen.
+>
 
 ## Ziel
 

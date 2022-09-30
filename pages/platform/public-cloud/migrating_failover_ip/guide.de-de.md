@@ -2,7 +2,6 @@
 title: 'Additional IP migrieren'
 excerpt: 'Erfahren Sie hier, wie Sie eine Additional IP-Adresse zu einer anderen Instanz migrieren'
 slug: umzug_einer_failover-ip
-legacy_guide_number: g1890
 section: 'Netzwerk und IP'
 ---
 
@@ -11,6 +10,11 @@ section: 'Netzwerk und IP'
 >
 
 **Letzte Aktualisierung am 06.01.2022**
+
+> [!primary]
+>
+> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Dies hat keine weiteren Auswirkungen auf dessen Eigenschaften oder die Funktionalität Ihrer Dienstleistungen.
+>
 
 ## Ziel
 
@@ -30,7 +34,7 @@ IP-Adressen migrieren zu können bedeutet, die Möglichkeit eines Dienstausfalls
 > Eine Additional IP kann nicht von einer Zone zur anderen umgezogen werden. So kann beispielsweise eine IP im Rechenzentrum SBG nach GRA oder RBX umgezogen werden, aber nicht nach BHS.
 >
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken im linken Menü auf `Additional IP`{.action} unter **Network**.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Additional IP`{.action} unter **Network**.
 
 In diesem Beispiel soll die auf “Instance_A” geroutete Additional IP zu “Instance_B” migriert werden.
 

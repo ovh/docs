@@ -2,7 +2,6 @@
 title: 'Comprar una Additional IP'
 slug: comprar-una-ip-failover
 excerpt: 'Cómo contratar direcciones Additional IP para sus instancias'
-legacy_guide_number: 2030
 section: 'Red e IP'
 ---
 
@@ -11,6 +10,11 @@ section: 'Red e IP'
 >
 
 **Última actualización: 21/12/2021**
+
+> [!primary]
+>
+> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](https://www.ovhcloud.com/es/network/additional-ip/). Esto no afectará a sus funcionalidades ni al funcionamiento de sus servicios.
+>
 
 ## Objetivo
 

@@ -2,7 +2,6 @@
 title: 'Adicionar um Additional IP'
 slug: adicionar-um-ip-failover
 excerpt: 'Descubra como encomendar endereços Additional IP para as suas instâncias'
-legacy_guide_number: 2030
 section: Rede
 ---
 
@@ -11,6 +10,11 @@ section: Rede
 >
 
 **Última atualização: 21/12/2021**
+
+> [!primary]
+>
+> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](https://www.ovhcloud.com/pt/network/additional-ip/). Isto não tem qualquer impacto nas suas funcionalidades ou no funcionamento dos seus serviços.
+>
 
 ## Objetivo
 

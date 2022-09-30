@@ -2,12 +2,16 @@
 title: 'Acheter une Additional IP'
 slug: acheter-une-ip-failover
 excerpt: 'Découvrez comment commander des adresses Additional IP pour vos instances'
-legacy_guide_number: 2030
 section: 'Réseau'
 order: 1
 ---
 
 **Dernière mise à jour le 14/12/2021**
+
+> [!primary]
+>
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/). Cela n'a aucun impact sur ses fonctionnalités ou le fonctionnement de vos services.
+>
 
 ## Objectif
 

@@ -1,12 +1,16 @@
 ---
 title: 'Basculer une Additional IP'
 slug: basculer-une-ip-fail-over
-legacy_guide_number: 1890
 section: 'Réseau'
 order: 12
 ---
 
 **Dernière mise à jour le 06/01/2022**
+
+> [!primary]
+>
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/). Cela n'a aucun impact sur ses fonctionnalités ou le fonctionnement de vos services.
+>
 
 ## Objectif
 

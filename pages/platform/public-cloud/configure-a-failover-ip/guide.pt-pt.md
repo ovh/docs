@@ -11,6 +11,11 @@ section: Rede
 
 **Última atualização: 27/04/2021**
 
+> [!primary]
+>
+> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](https://www.ovhcloud.com/pt/network/additional-ip/). Isto não tem qualquer impacto nas suas funcionalidades ou no funcionamento dos seus serviços.
+>
+
 ## Objetivo
 
 Poderá ter de configurar endereços Additional IP nas suas instâncias, por exemplo se aloja um grande número de websites na sua instância ou se aloja projetos internacionais. Os endereços Additional IP OVHcloud permitem-lhe associar vários endereços IP a uma única interface de rede.

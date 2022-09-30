@@ -12,6 +12,11 @@ order: 2
 
 **Última actualización: 18/07/2022**
 
+> [!primary]
+>
+> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/). Esto no afectará a sus funcionalidades ni al funcionamiento de sus servicios.
+>
+
 ## Objetivo
 
 Es posible que necesite configurar direcciones Additional IP en sus instancias, por ejemplo, si aloja un gran número de sitios web en su instancia o si aloja proyectos internacionales. Las direcciones Additional IP de OVHcloud permiten asociar varias direcciones IP a una única interfaz de red.

@@ -8,6 +8,11 @@ order: 2
 
 **Dernière mise à jour le 18/07/2022**
 
+> [!primary]
+>
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/). Cela n'a aucun impact sur ses fonctionnalités ou le fonctionnement de vos services.
+>
+
 ## Objectif
 
 Vous devrez peut-être configurer des adresses Additional IP sur vos instances, par exemple si vous hébergez un grand nombre de sites web sur votre intance ou si vous hébergez des projets internationaux. Les adresses Additional IP OVHcloud vous permettent d'associer plusieurs adresses IP à une seule interface réseau.

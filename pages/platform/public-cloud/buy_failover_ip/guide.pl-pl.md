@@ -2,7 +2,6 @@
 title: 'Wykupienie adresu Additional IP'
 excerpt: 'Dowiedz się, jak zamawiać adresy Additional IP dla swoich instancji'
 slug: wykupienie_adresu_ip_failover
-legacy_guide_number: g2030
 section: 'Sieć'
 ---
 
@@ -11,6 +10,11 @@ section: 'Sieć'
 >
 
 **Ostatnia aktualizacja z dnia 21-12-2021**
+
+> [!primary]
+>
+> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/). Nie ma to żadnego wpływu na funkcje ani na działanie usług.
+>
 
 ## Wprowadzenie
 

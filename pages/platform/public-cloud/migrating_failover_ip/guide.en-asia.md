@@ -2,12 +2,16 @@
 title: 'Migrating an Additional IP'
 excerpt: 'Find out how to migrate an Additional IP address to another instance'
 slug: migrating_a_failover_ip
-legacy_guide_number: g1890
 section: Networking
 order: 10
 ---
 
 **Last updated 6th January 2022**
+
+> [!primary]
+>
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/asia/network/additional-ip/). This has no further impact on any of its features or the functioning of your services.
+>
 
 ## Objective
 

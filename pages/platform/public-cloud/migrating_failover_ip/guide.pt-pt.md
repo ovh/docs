@@ -2,7 +2,6 @@
 title: 'Migrar um Additional IP'
 excerpt: 'Migrar um Additional IP'
 slug: migrar_um_ip_failover
-legacy_guide_number: g1890
 section: Rede
 ---
 
@@ -11,6 +10,11 @@ section: Rede
 >
 
 **Última atualização: 06/01/2022**
+
+> [!primary]
+>
+> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](https://www.ovhcloud.com/pt/network/additional-ip/). Isto não tem qualquer impacto nas suas funcionalidades ou no funcionamento dos seus serviços.
+>
 
 ##  Objetivo
 Este guia explica como poderá migrar um Additional IP de uma instância para outra. Esta operação pode ter vários objetivos, permitindo geralmente limitar ou eliminar casos de indisponibilidade de serviço:

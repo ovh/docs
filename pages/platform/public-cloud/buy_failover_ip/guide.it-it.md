@@ -2,7 +2,6 @@
 title: 'Acquista un Additional IP'
 excerpt: 'Acquista un Additional IP'
 slug: acquista_un_ip_failover
-legacy_guide_number: g2030
 section: Rete
 ---
 
@@ -11,6 +10,11 @@ section: Rete
 >
 
 **Ultimo aggiornamento: 21/12/2021**
+
+> [!primary]
+>
+> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](https://www.ovhcloud.com/it/network/additional-ip/). e non ha alcun impatto sulle funzionalità o sul funzionamento dei tuoi servizi.
+>
 
 ## Obiettivo
 

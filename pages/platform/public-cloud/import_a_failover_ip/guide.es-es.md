@@ -2,11 +2,15 @@
 title: 'Importar una Additional IP'
 excerpt: 'Importar una Additional IP'
 slug: importar_una_ip_failover
-legacy_guide_number: g1883
 section: 'Red e IP'
 ---
 
 **Última actualización: 10/03/2022**
+
+> [!primary]
+>
+> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/). Esto no afectará a sus funcionalidades ni al funcionamiento de sus servicios.
+>
 
 ## Objetivo
 

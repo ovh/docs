@@ -7,6 +7,12 @@ section: Networking
 
 **Last updated 18th July 2022**
 
+
+> [!primary]
+>
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-au/network/additional-ip/). This has no further impact on any of its features or the functioning of your services.
+>
+
 ## Objective
 
 You may need to configure Additional IP addresses on your instances, for example if you are hosting multiple websites or international services. OVHcloud Additional IPs allow you to associate multiple IP addresses with a single network interface.
