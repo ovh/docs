@@ -1,5 +1,5 @@
 ---
-title: Création d'une ACL IP 
+title: "Création d'une ACL IP"
 slug: ceph/creer-ip-acl
 excerpt: Ce qui vous présente comment créer une ACL IP pour autoriser l'accès au cluster CEPH.
 section: Cloud Disk Array
@@ -12,7 +12,7 @@ section: Cloud Disk Array
 > [!primary]
 >
 > L'utilisation d'une interface web est le moyen le plus simple de créer un des ACL IP.
-> 
+>
 
 Tout d'abord, connectez-vous à [l’espace client](https://www.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph.
 
@@ -46,7 +46,7 @@ Après la création de la pool d'adresses IP, vous êtes de retour au gestionnai
 > [!api]
 >
 > @api {POST} /dedicated/ceph/{serviceName}/acl
-> 
+>
 serviceName est le fsid de votre cluster.
 
 Vous pouvez vérifier la création d'une ACL en consultant la liste des ACL.
@@ -55,7 +55,7 @@ Vous pouvez vérifier la création d'une ACL en consultant la liste des ACL.
 > [!api]
 >
 > @api {GET} /dedicated/ceph/{serviceName}/acl
-> 
+>
 Example:
 
 
