@@ -2,8 +2,8 @@
 title: What to do if you get a "Your connection is not private" error?
 slug: site-unsafe-connection
 excerpt: How to react to a security error message on your website
-section: Troubleshooting
-order: 3
+section: Diagnostic
+Order: 03
 ---
 
 **Last updated 08/07/2021**

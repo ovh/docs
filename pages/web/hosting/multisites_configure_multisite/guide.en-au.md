@@ -2,8 +2,8 @@
 title: 'Hosting multiple websites on your Web Hosting plan'
 slug: multisites-configuring-multiple-websites
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
-section: 'Getting started'
-order: 3
+section: Getting started
+order: 02
 ---
 
 **Last updated 22nd August 2022**
