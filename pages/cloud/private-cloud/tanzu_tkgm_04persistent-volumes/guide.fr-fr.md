@@ -47,7 +47,7 @@ A partir de la console de la machine virtuelle de BootStrap utiliser ces command
 kubectl config get-contexts
 ```
 
-Sous la colonne **NAME** vous verrez les contextes que vous pourrz utiliser , Si vous n'avez qu'un cluster de *WorkLoad* vous ne verrez que deux contextes un pour le cluster d'administration et l'autre pour le cluster de *WorkLoad*.
+Sous la colonne **NAME** vous verrez les contextes que vous pourrez utiliser , Si vous n'avez qu'un cluster de *WorkLoad* vous ne verrez que deux contextes un pour le cluster d'administration et l'autre pour le cluster de *WorkLoad*.
 
 Saisissez cette commande pour utiliser le cluster de *WorkLoad* :
 
@@ -63,7 +63,7 @@ Nous allons à partir de maintenant travailler sur le cluster de *WorkLoad**
 Pour obtenir des information sur les **Storage Class** d'un cluster de WorkLoad saisissez ces commandes :
 
 ```bash
-# Affichage du des Storage Class
+# Affichage des Storage Class
 kubectl get storageclass
 # Description d'un Storage Class
 kubectl describe storageclass nomclasse
@@ -71,9 +71,9 @@ kubectl describe storageclass nomclasse
 
 ### Création d'un storage class sur un autre VMFS
 
-Il est possible de rajouter une **Storage Class** sur un cluster de *WorkLoad* soit à l'extérieur du cluster VMWARE soit à l'intérieur de votre cluster VMware dans votre stockage NFS ou vSAN. 
+Il est possible de rajouter un **Storage Class** sur un cluster de *WorkLoad* soit à l'extérieur du cluster VMWARE soit à l'intérieur de votre cluster VMware dans votre stockage NFS ou vSAN. 
 
-Sur notre cluster VMware nous avons deux datastore sur des serveur NFS distants , les machines virtuelles du cluster de *WorkLoad* sont stockées sur un des datastores et les **Storage Class** se trouvent aussi sur ce datastore , nous allons donc créer une nouvelle **storage class** sur le deuxième datastore
+Sur notre cluster VMware nous avons deux datastore sur des serveur NFS distants , les machines virtuelles du cluster de *WorkLoad* sont stockées sur un des datastores et les **Storage Class** se trouvent aussi sur ce datastore , nous allons donc créer un nouveau **storage class** sur le deuxième **Datastore**.
 
 Revenez sur votre cluster VMware dana la gestion du stockage , sélectionnez le `second datastore`{.action}, cliquez sur `Summary`{.action} dans les onglet à gauche.
 
@@ -95,7 +95,7 @@ parameters:
 
 Remplacez `ds:///vmfs/volumes/xxxxxxxxxxxxxxxxx/` par l'URL que vous venez de copier.
 
-Ensuite executez cette commande :
+Ensuite exécutez cette commande :
 
 ```bash
 # Création du storageclass à partir du fichier yaml
@@ -130,10 +130,18 @@ spec:
       storage: 2Gi
 ```
 
+la valeur **name** contient le nom du volume permanent dans votre cluster de *WorkLoad**  à coté de storageClassName est indiqué le nom de la **Storage Class** qui sera utilisé pour pour stocker ce volume persistent.
 
+Exécuter cette commande pour créer le volume persistent :
 
-
-
+```bash
+# Create un  espace de nom qui sera utilisé pour mon volume persistant.
+kubectl create namespace myspace
+# Application du fichier de configuration dans l'espace de nom créé.
+kubectl apply -f default-pvc-storage.yaml -n myspace
+# Affichage des volumes persistant de l'espace de nom créé
+kubectl get pv,pvc -n myspace
+```
 
 ## Aller plus loin <a name="gofurther"></a>
 
