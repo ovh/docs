@@ -22,7 +22,7 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 ## Requirements
 
 - A [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
-- A [Additional IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/) or a Additional IP block
+- An [Additional IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/) or an Additional IP block
 - Administrative access (root) via SSH or GUI to your server
 - Basic networking and administration knowledge
 
@@ -199,7 +199,7 @@ In the new window, click on `Add...`{.action} under "IP addresses". Enter your A
 
 Confirm by clicking on `Add`{.action}.
 
-![IP fail over configuration](images/image5-5.png){.thumbnail}
+![Additional IP configuration](images/image5-5.png){.thumbnail}
 
 #### Step 4: Restart the network interface
 

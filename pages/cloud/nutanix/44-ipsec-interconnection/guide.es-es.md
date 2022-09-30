@@ -129,11 +129,11 @@ From the `More` menu at the top, click `Soft Shutdown`{.action}.
 
 Retrieve information about the OVHcloud gateway network settings.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), select your Nutanix cluster, and find the information in the `FOIP` field.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), select your Nutanix cluster, and find the information in the `IPFO` field.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
-What is called **FOIP** is a range of 4 addresses. The first and last are reserved, the third is on OVHcloud hardware and serves as an **internet** gateway. The only usable IP address is the second address in the range. 
+What is called **IPFO** is a range of 4 addresses. The first and last are reserved, the third is on OVHcloud hardware and serves as an **internet** gateway. The only usable IP address is the second address in the range. 
 
 During installation, we will reuse this information to assign it to the new **GW-PFSENSE virtual machine**
 
@@ -144,7 +144,7 @@ XX.XX.XX.N+2 Address to be used as a gateway on the GW-PFSENSE VM WAN interface
 XX.XX.XX.N+3 Reserved broadcast IP address
 ```
 
-For example, if the **FOIP** address displayed on the client site is 123.123.123.4/30, use:
+For example, if the **IPFO** address displayed on the client site is 123.123.123.4/30, use:
 
 - **123.123.123.5** for the **WAN** interface address.
 - **123.123.123.6** for the gateway on the **WAN** interface.
@@ -465,11 +465,11 @@ From the `More` menu at the top, click `Soft Shutdown`{.action}.
 
 Retrieve information about the OVHcloud gateway network settings.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), select your Nutanix cluster, and find the information in the `FOIP` field.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), select your Nutanix cluster, and find the information in the `IPFO` field.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
-What is called **FOIP** is a range of 4 addresses. The first and last are reserved, the third is on OVHcloud hardware and serves as an **Internet** gateway. The only usable IP address is the second address in the range. 
+What is called **IPFO** is a range of 4 addresses. The first and last are reserved, the third is on OVHcloud hardware and serves as an **Internet** gateway. The only usable IP address is the second address in the range. 
 
 During installation, we will reuse this information to assign it to the new **GW-PFSENSE virtual machine**
 
@@ -480,7 +480,7 @@ XX.XX.XX.N+2 Address to be used as a gateway on the GW-PFSENSE virtual machine W
 XX.XX.XX.N+3 Reserved broadcast IP address.
 ```
 
-For example, if the **FOIP** address displayed on the client site is 123.123.123.4/30, use:
+For example, if the **IPFO** address displayed on the client site is 123.123.123.4/30, use:
 
 - **123.123.123.5** for the **WAN** interface address;
 - **123.123.123.6** for the gateway on the **WAN** interface.

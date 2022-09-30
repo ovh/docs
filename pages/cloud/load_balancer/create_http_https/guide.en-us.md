@@ -190,7 +190,7 @@ Go to the `Front-ends`{.action} tab, and click `Add a front-end`{.action}.
 
 Fill in the fields. The only mandatory fields for a basic configuration are *Protocol*, *Port* (80 for a standard HTTP web service) and *Datacentre*. If you want your service to be available across several ports at once, you can specify a list of ports, separated by commas, or a range of ports, in the format "START_PORT-END_PORT".
 
-If you have routed failover IPs to your OVHcloud Load Balancer service, you can also attach a front-end to one or more specific failover IPs.
+If you have routed Additional IPs to your OVHcloud Load Balancer service, you can also attach a front-end to one or more specific Additional IPs.
 
 
 ![Add a front-end](images/add_frontend.png){.thumbnail}
@@ -254,7 +254,7 @@ Whether you choose to configure your service via the API or the Sunrise Control 
 
 If you choose to import an SSL/TLS certificate that you have already ordered and managed yourself, you will need to renew it periodically yourself, and update it in your OVHcloud Load Balancer service. Most certificates are valid for one year. Some remain valid for longer periods of time. However, Let's Encrypt certificates need to be renewed every three months. We recommend using your OVHcloud Load Balancer to automatically manage the service for Let’s Encrypt certificates, so that you do not miss the expiry dates.
 
-If you opt for a certificate managed by the OVHcloud Load Balancer service, it will be automatically ordered, validated, installed and renewed periodically by your OVHcloud Load Balancer. For the validation and renewal operations to work, the domains you are ordering this certificate for need to be routed to your OVHcloud Load Balancer service. This means that your domain’s *A* and *AAAA* DNS records must point to your OVHcloud Load Balancer’s IPv4 and IPv6 fields respectively, or to one of its failover IPs. When you order, you will receive an email that will guide you through the validation steps.
+If you opt for a certificate managed by the OVHcloud Load Balancer service, it will be automatically ordered, validated, installed and renewed periodically by your OVHcloud Load Balancer. For the validation and renewal operations to work, the domains you are ordering this certificate for need to be routed to your OVHcloud Load Balancer service. This means that your domain’s *A* and *AAAA* DNS records must point to your OVHcloud Load Balancer’s IPv4 and IPv6 fields respectively, or to one of its Additional IPs. When you order, you will receive an email that will guide you through the validation steps.
 
 >
 > To ensure that your service remains accessible when you switch your domain to your OVHcloud Load Balancer service’s IP address in order to validate your certificate, it is good practice to start by configuring and testing all of the HTTP configuration on port 80. This way, your website will remain accessible without any interruptions.

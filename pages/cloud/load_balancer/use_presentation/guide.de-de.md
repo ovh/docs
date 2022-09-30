@@ -37,7 +37,7 @@ Folgende Leistungen sind bei dem neuen Dienst inklusive:
  - OVH DDoS-Schutz
  - Unterstützung verschiedener geografischer Zonen (Anycast)
  - erweiterte HTTP/HTTPS-Funktionen (Weiterleitungen, Header, ACL, …)
- - kompatibel mit Failover-IP
+ - kompatibel mit Additional IP
  - vRack Unterstützung
  - Redundanz: Ihr OVH Loadbalancer läuft auf isolierten Instanzen, die ihrerseits auf komplett getrennter und redundanter Hardware laufen
 
@@ -88,9 +88,9 @@ Für geplante Wartungen Ihrer Infrastruktur können Sie eine Farm ganz einfach i
 
 Sie können verschiedene OVH Dienstleistungen im Loadbalancer kombinieren, zum Beispiel:
 
-- Public Cloud Instanzen mit Failover-IP
-- VPS mit Failover-IP
-- Dedicated Server mit Failover-IP
+- Public Cloud Instanzen mit Additional IP
+- VPS mit Additional IP
+- Dedicated Server mit Additional IP
 - vRack
 
 ![Dienste kombinieren](images/mix_and_match.png){.thumbnail}

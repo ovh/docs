@@ -80,7 +80,7 @@ Per maggiori informazioni, consulta la nostra guida su [utilizzare il Backup Sto
 Se la reputazione dei tuoi indirizzi IP è importante, ti consigliamo vivamente di utilizzare indirizzi [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/) perché, in caso di migrazione, possono essere conservati.
 
 Una volta creati questi indirizzi IP, dovete semplicemente spostarli sul nuovo server.
-Per farlo, consulta la nostra guida: [Trasferisci un IP FailOver](https://docs.ovh.com/it/dedicated/ip-fo-move/).
+Per farlo, consulta la nostra guida: [Trasferisci un Additional IP](https://docs.ovh.com/it/dedicated/ip-fo-move/).
 
 > [!alert]
 >

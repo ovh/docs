@@ -34,7 +34,7 @@ Si apre questa finestra:
 
 È possibile definire cognome, nome, numero di telefono e indirizzo email.
 
-Questa finestra permette anche di aggiungere permessi di modifica per indirizzi **IP**, **IP Failover**, **Interfaccia NSX** e attivare il ruolo di **Token validator**, utilizzato per approvare alcune azioni sensibili sulle infrastrutture con opzione di **Sicurezza avanzata** attiva.
+Questa finestra permette anche di aggiungere permessi di modifica per indirizzi **IP**, **Additional IP**, **Interfaccia NSX** e attivare il ruolo di **Token validator**, utilizzato per approvare alcune azioni sensibili sulle infrastrutture con opzione di **Sicurezza avanzata** attiva.
 
 Clicca su `Conferma`{.action} per applicare le modifiche.
 

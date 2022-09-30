@@ -11,7 +11,7 @@ order: 140
 
 OVH Object Storage kann über Rclone synchronisiert werden.
 
-**In dieser Anleitung erfahren Sie, wie Sie Ihren Object Storage über Ihr OVH Kundencenter synchronisieren.**
+**In dieser Anleitung erfahren Sie, wie Sie Ihren Object Storage über Ihr OVHcloud Kundencenter synchronisieren.**
 
 Rclone ist ein externes Synchronisierungsprogramm. Weitere Details zur Nutzung finden Sie direkt in der [offiziellen Dokumentation](https://Rclone.org/).
 

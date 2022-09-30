@@ -16,7 +16,7 @@ section: vRack
 - A [vRack](https://www.ovh.com/sg/solutions/vrack/) compatible dedicated server with Windows Server installed
 - An ISO for the OS that will be installed on your VM (CentOS 7 will be used as an example in this guide)
 - A vRack delivered to your OVHcloud account
-- A Additional IP block of 4 or more IPs
+- An Additional IP block of 4 or more IPs
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 > [!warning]

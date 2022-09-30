@@ -26,7 +26,7 @@ En dicha página, encontrará la siguiente información:
 |Estado|Resumen del Load Balancer, con el nombre asignado al servicio, los frontends, las granjas operativas y los servidores añadidos|
 |Uso|Resumen del uso del Load Balancer|
 |Gráficas|Gráficas del servicio, en conexiones simultáneas o peticiones por minuto|
-|Información|IPv4 y las IP Failover asociadas, así como el número de IPv4 salientes (para ver el detalle, haga clic en los tres puntos)|
+|Información|IPv4 y las Additional IP asociadas, así como el número de IPv4 salientes (para ver el detalle, haga clic en los tres puntos)|
 |Configuración|Personalización del nombre del servicio (que puede ver en la parte superior y en la columna izquierda) y de los ciphers, y datacenter en el que está localizado el Load Balancer|
 |Suscripción|Información administrativa del servicio|
 
@@ -59,7 +59,7 @@ En función de la configuración anterior, aparecerán algunas de las siguientes
 
 |Elemento|Función|
 |---|---|
-|IP Failover dedicada|Lista de las IP Failover de los servidores remotos|
+|Additional IP dedicada|Lista de las Additional IP de los servidores remotos|
 |Permite restringir el acceso a determinadas IP|Lista que permite restringir el acceso remoto al Load Balancer (solo IPv4)|
 |Redirección HTTP|Permite añadir una URL de redirección HTTP|
 |Cabecera HTTP|Permite añadir una cabecera HTTP|

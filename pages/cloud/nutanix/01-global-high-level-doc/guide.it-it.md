@@ -21,11 +21,11 @@ A Nutanix cluster consists of a stack of OVHcloud services:
 - [Dedicated server](https://www.ovhcloud.com/it/bare-metal/)
 - [vRack](https://www.ovh.it/soluzioni/vrack/)
 - [Load Balancer](https://www.ovh.it/soluzioni/load-balancer/)
-- [Failover IP](https://www.ovhcloud.com/it/bare-metal/ip/)
+- [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/)
 
 Dedicated servers (3 minimum) are connected within the vRack which is an L2 network, the hosts (node) private network.
 
-The public IP address of each node is not accessible since the Failover IP is dedicated to the Internet access. This access is ensured by the "OVHGateway" wich is a dedicated VM created by OVHcloud on your cluster.
+The public IP address of each node is not accessible since the Additional IP is dedicated to the Internet access. This access is ensured by the "OVHGateway" wich is a dedicated VM created by OVHcloud on your cluster.
 
 The load balancer is used to expose the **Prism Central** WebUI to the public Internet. For security reasons, you are able to restrict the WebUI to IP addresses of your organisation.
 
@@ -54,7 +54,7 @@ You will need to increase these values if you add new features on your cluster.
 
 ### OVHgateway
 
-**The OVHgateway provides Internet access to the cluster via the Failover IP address.**
+**The OVHgateway provides Internet access to the cluster via the Additional IP address.**
 
 This VM has two NICs, one for the private network (in the vRack) and the other one for the public Internet.
 

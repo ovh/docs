@@ -118,7 +118,7 @@ iface ens18 inet static
     gateway 192.168.0.1
 ```
 
-### IP FailOver via vRack
+### Additional IP via vRack
 
 #### Prerequisiti
 

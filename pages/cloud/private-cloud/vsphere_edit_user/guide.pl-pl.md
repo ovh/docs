@@ -34,7 +34,7 @@ Pojawi się następujące okno:
 
 Wpisz imię, nazwisko, numer telefonu i adres e-mail.
 
-W tym oknie można również dodać prawa do edycji adresu **IP**, **IP Failover**, **InterfaceNSX** oraz uprawnienie **Token validator** używane do zatwierdzania niektórych wrażliwych operacji na infrastrukturze z włączoną opcją **Advanced Security**.
+W tym oknie można również dodać prawa do edycji adresu **IP**, **Additional IP**, **InterfaceNSX** oraz uprawnienie **Token validator** używane do zatwierdzania niektórych wrażliwych operacji na infrastrukturze z włączoną opcją **Advanced Security**.
 
 Kliknij przycisk `Zatwierdź`{.action}, aby potwierdzić zmiany.
 

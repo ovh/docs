@@ -37,7 +37,7 @@ Ce qui est inclus avec ce nouveau service :
 - une protection Anti-DDoS OVHcloud ;
  - un support de zones multiples (Anycast) ;
  - un support HTTP/HTTPS avancé (redirections, headers, ACL...) ;
- - un service compatible avec une IP Fail-over ;
+ - un service compatible avec une Additional IP ;
  - le vRack est supporté ;
  - la redondance : votre Load Balancer fonctionne sur des instances séparées, fonctionnant elles-mêmes sur des équipements séparés et redondants.
 
@@ -88,9 +88,9 @@ En cas de maintenance planifiée sur votre infrastructure, il est désormais fac
 
 Vous pouvez désormais mixer différents services d'OVHcloud dans le Load Balancer, comme par exemple :
 
-- les instances Public Cloud avec IP fail-over ;
-- les VPS avec IP fail-over ;
-- les serveurs dédiés avec IP fail-over ;
+- les instances Public Cloud avec Additional IP ;
+- les VPS avec Additional IP ;
+- les serveurs dédiés avec Additional IP ;
 - les vRack.
 
 ![Mix and match service](images/mix_and_match.png){.thumbnail}
