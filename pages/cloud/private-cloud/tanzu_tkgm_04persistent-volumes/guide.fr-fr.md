@@ -112,7 +112,7 @@ secondstorageclass (default)   csi.vsphere.vmware.com   Delete          Immediat
 tanzu@bootstrap:~$
 ```
 
-### Création d'un volume persistant dans le storage class par défaut
+### Création d'un volume persistant dans le **Storage class** par défaut
 
 Créer un fichier nommé default-pvc-storage.yaml avec ce contenu :
 
@@ -142,6 +142,71 @@ kubectl apply -f default-pvc-storage.yaml -n myspace
 # Affichage des volumes persistant de l'espace de nom créé
 kubectl get pv,pvc -n myspace
 ```
+
+Revenez sur votre interface vCenter dans l'inventaire cliquez à gauche sur l'îcone `dataCenter`{.action} ensuite allez dans l'onglet `Monitor`{.action} à droite et cliquez sur `Container Volumes`{.action} pour voir les volumes persistants.
+
+le volume persistant créé précedemment apparait avec à sa droite le nom du **Datastore** sur lequel il est stocké.
+
+![03 Display PV in vCenter 01](images/03-display-pv-vmware01.png){.thumbnail}
+
+Cliquez sur le l'icone en forme de `Bloc note`{.action} à coté du volume pour afficher les détails
+
+![03 Display PV in vCenter 02](images/03-display-pv-vmware02.png){.thumbnail}
+
+Les informations concernant ce stockage persistant sont affichées et correspondent à ce qui a été créé à partir des commandes Kubernetes
+
+![03 Display PV in vCenter 03](images/03-display-pv-vmware03.png){.thumbnail}
+
+Rendez-vous sur le `Datastore`{.action} qui est utilisé par défaut , ensuite cliquez à droite dans l'onglet sur `FIles`{.action} et faites défiler les dossiers du Datastore jusqu'au dossier `fcd`.
+
+Vous constatez que le dossier contient deux fichiers c'est un fichier vmdk qui contient les données du volumes persistant et un ficher temporaire associé.
+
+![03 Display PV in vCenter 04](images/03-display-pv-vmware04.png){.thumbnail}
+
+### Création d'un volume persistant sur le deuxième **Storage Class**
+
+Revenez sur la machine virtuelle **Bootstrap** en ligne de commande.
+
+Créez un fichier nommé second-storage-pvc.yaml
+
+```yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: second-storage-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: "secondstorageclass"
+  resources:
+    requests:
+      storage: 2Gi
+```
+
+Dans ce fichier à droite de storageClassName est noté secondstorageclass qui correspond au nom du **Storage Class** créé.
+
+Exécutez cette commande pour créer le volume persistant dans l'espace de nom **myspace** :
+
+```bash
+# Application du fichier de configuration dans l'espace de nom créé.
+kubectl apply -f second-storage-pvc.yaml -n myspace
+# Affichage des volumes persistant de l'espace de nom créé
+kubectl get pv,pvc -n myspace
+```
+
+Le volume persitant est créé sur le deuxième Datastore.
+
+Revenez sur vCenter dans le stockage au même endroit que précemment dans le dossier **fcd** vous constarez qu'aucun nouveau fichier apparait.
+
+![04 Display PV2 in vCenter 01](images/04-display-pv-vmware01.png){.thumbnail}
+
+cliquez à droite sur le second `Datastore`{.action} allez dans le dossier `fcd`{.action} de ce datastore. Vous constaterez que vous avait deux nouveaux fichiers comme sur le premier **Datastore**
+
+![04 Display PV2 in vCenter 02](images/04-display-pv-vmware02.png){.thumbnail}
+
+Revenez dans le `Datacenter`{.action} à la racine de datacenter, cliquez sur l'onglet `Monitor`{.action} choisissez `Container Volumes`{.action} pour voir apparaitres les deux volumes persistants avec leurs emplacements dans les *Datastore* 
+
+![04 Display PV2 in vCenter 03](images/04-display-pv-vmware03.png){.thumbnail}
 
 ## Aller plus loin <a name="gofurther"></a>
 
