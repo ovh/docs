@@ -14,9 +14,9 @@ This guide is designed to familiarise you with the management of your containers
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- An [S3 user](https://docs.ovh.com/gb/en/storage/s3/identity-and-access-management/) already created
+- A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- An [S3 user](https://docs.ovh.com/sg/en/storage/s3/identity-and-access-management/) already created
 
 ## Instructions
 
@@ -39,7 +39,7 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 #### Collect Credentials
 
 - You will need your user's Access key* and *Secret key*. You can access this information in the ‘S3 users’ tab in your Control Panel.
-- You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers` tab, then in the details of your bucket. Otherwise, follow this [guide](https://docs.ovh.com/gb/en/storage/s3/location).
+- You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers` tab, then in the details of your bucket. Otherwise, follow this [guide](https://docs.ovh.com/sg/en/storage/s3/location).
 
 #### Configuration
 

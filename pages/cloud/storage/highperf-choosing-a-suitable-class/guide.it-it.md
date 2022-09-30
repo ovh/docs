@@ -1,8 +1,10 @@
 ---
-title: Choosing the right storage class for your needs
+title: Scegliere la classe di archiviazione giusta per le tue esigenze (EN)
 slug: s3/choosing-the-right-storage-class-for-your-needs
 section: Object Storage S3 High Performance
 order: 005
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/choosing-the-right-storage-class-for-your-needs/'
 ---
 
 **Last updated September 27<sup>th</sup>2022**

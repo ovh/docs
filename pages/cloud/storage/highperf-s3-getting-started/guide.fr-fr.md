@@ -1,6 +1,6 @@
 ---
-title: Premiers pas avec AWS CLI
-slug: s3/getting-started-with-aws-cli
+title: Premiers pas avec CLI
+slug: s3/getting-started-with-cli
 excerpt:
 section: Object Storage S3 High Performance
 order: 020
@@ -54,7 +54,7 @@ aws_secret_access_key = <secret_key>
 
 user@host:~$ cat ~/.aws/config
 
-# Delete the next two lines if you don't need to install `awscli-plugin-endpoint`
+# If you have not installed awscli-plugin-endpoint, delete the next two lines
 [plugins]
 endpoint = awscli_plugin_endpoint
 

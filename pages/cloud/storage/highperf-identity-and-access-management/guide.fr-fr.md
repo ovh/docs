@@ -35,7 +35,7 @@ Puis :
 
 > [!primary]
 >
-> Si vous faites le choix de sélectionner un utilisateur existant, assurez-vous que celui-ci dispose du rôle `Object Operator` ou `Administrator`.
+> Si vous faites le choix de sélectionner un utilisateur existant, assurez-vous que celui-ci dispose du rôle `ObjectStore operator` ou `Administrator`.
 >
 
 Sinon, créez un nouvel utilisateur :

@@ -1,8 +1,10 @@
 ---
-title: Location (endpoints)
+title: Posizione (endpoint) (EN)
 slug: s3/location
 section: Object Storage S3 High Performance
 order: 025
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/location/'
 ---
 
 <style>

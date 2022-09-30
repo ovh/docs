@@ -1,9 +1,11 @@
 ---
-title: Identity and access management
+title: Gerenciamento de identidade e acesso (EN)
 slug: s3/identity-and-access-management
 excerpt:
 section: Object Storage S3 High Performance
 order: 030
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/identity-and-access-management/'
 ---
 
 **Last updated September 27<sup>th</sup> 2022**
@@ -14,7 +16,7 @@ The purpose of this guide is to show you how to manage your identities and acces
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account
 - Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB)
 
 ## In practice

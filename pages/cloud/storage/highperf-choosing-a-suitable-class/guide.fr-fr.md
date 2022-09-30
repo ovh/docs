@@ -1,6 +1,6 @@
 ---
 title: Choisir une classe de stockage adaptée à vos besoins
-slug: s3/choosing-a-suitable-storage-class
+slug: s3/choosing-the-right-storage-class-for-your-needs
 section: Object Storage S3 High Performance
 order: 005
 ---
@@ -25,10 +25,6 @@ La classe de stockage High Performance est un espace de stockage objet hautement
 
 Cette offre est adaptée aux cas d'usage suivants : AI & Analytics, Datalake, High power Computing Multimedia / Content Platform.
 
-### Cold Archive
-
-La classe de stockage Cold Archive est un espace de stockage de long terme sur plusieurs années, durable et sécurisé pour archiver les données. Adaptée à ce cas d’usage, ce service propose un coût du stockage très faible, une latence à la récupération de 48 heures (temps d’accès aux premiers Octets) et un coût appliqué à chaque demande de récupération de données. Cold archive s’appuie sur un stockage sur bandes magnétiques au sein d'une architecture hautement résiliente, la donnée étant répartie sur quatre datacentres en France. L’offre est accessible depuis une API S3.
-
 ## Les offres de stockage objet SWIFT sont les suivantes :
 
 ### Standard object storage - SWIFT API
@@ -45,7 +41,6 @@ La classe de stockage Cloud Archive (SWIFT) offre un service de stockage pour de
 | --- | --- | --- | --- |
 | Standard object storage - S3 API | Dernière génération d'offre | oui | non |
 | High Performance object storage - S3 API | Dernière génération d'offre | oui | non |
-| Cold Archive | Dernière génération d'offre | oui | non |
 | Standard object storage - SWIFT API  | Fin de mise en vente proche | partiel | oui |
 | Cloud Archive - SWIFT API | Fin de mise en vente proche | non | oui |
 
