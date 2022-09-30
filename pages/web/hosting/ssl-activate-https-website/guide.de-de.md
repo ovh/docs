@@ -18,7 +18,7 @@ Bei Ihrem OVH Webhosting können Sie ein SSL-Zertifikat verwenden. Damit haben S
 
 - Auf Ihrem [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} ist ein [SSL-Zertifikat](https://www.ovh.de/ssl/){.external} installiert.
 - Sie besitzen mindestens eine Website, die über Ihr OVH Webhosting eingerichtet und zugänglich ist.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
 
@@ -41,7 +41,7 @@ Folgende Tabelle enthält eine Übersicht der verschiedenen Schritte der Umstell
 
 ### Schritt 1: SSL-Zertifikat für das Hosting aktivieren
 
-Die Aktivierung des SSL-Zertifikats für Ihr Webhosting erfolgt über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Zwei getrennte Maßnahmen sind hier notwendig:
+Die Aktivierung des SSL-Zertifikats für Ihr Webhosting erfolgt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Zwei getrennte Maßnahmen sind hier notwendig:
 
 |Aktion|Beschreibung|
 |---|---|
@@ -50,7 +50,7 @@ Die Aktivierung des SSL-Zertifikats für Ihr Webhosting erfolgt über das [OVH K
 
 Wie diese beiden Schritte genau funktionieren, erfahren Sie in unserer Anleitung „[SSL-Zertifikat auf einem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/){.external}“. Wenn Sie Ihr OVH Hosting neu erworben haben, ist möglicherweise ein kostenloses SSL-Zertifikat vorinstalliert und die Multisite verfügt bereits über eine aktive SSL-Verbindung.
 
-Um dies zu überprüfen, loggen Sie sich zunächst in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden. Unter „SSL-Zertifikat“ müsste ein kleines „Ja“ stehen, was anzeigt, dass bereits ein SSL-Zertifikat auf Ihrem Webhosting installiert ist. 
+Um dies zu überprüfen, loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden. Unter „SSL-Zertifikat“ müsste ein kleines „Ja“ stehen, was anzeigt, dass bereits ein SSL-Zertifikat auf Ihrem Webhosting installiert ist. 
 
 ![HTTPS Website](images/activate-https-website-ssl-step2.png){.thumbnail}
 

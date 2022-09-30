@@ -31,7 +31,7 @@ Ces adresses Additional IP ne pourront être migrées que vers les instances d'u
 Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
 Dans le menu de gauche, cliquez sur `Additional IP`{.action} dans la section `Network`.
 
-Cliquez ensuite sur le bouton `Actions`{.action} puis choisissez `Acheter des IPs Failover Cloud`{.action}.
+Cliquez ensuite sur le bouton `Actions`{.action} puis choisissez `Acheter des Additional IPs Cloud`{.action}.
 
 ![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 

@@ -68,13 +68,13 @@ Die Konfiguration Ihrer Domain bleibt unverändert und Ihre Website wird weiterh
 
 #### Schritt 3: Ihre E-Mail-Adressen bei OVH neu erstellen
 
-Nachdem Ihre Website fertig transferiert ist, [erstellen Sie die gleichen E-Mail-Adressen bei OVH](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). In Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `E-Mails`{.action} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
+Nachdem Ihre Website fertig transferiert ist, [erstellen Sie die gleichen E-Mail-Adressen bei OVH](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `E-Mails`{.action} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
 
 Da die Konfiguration Ihrer Domain nicht verändert wurde, werden neue Nachrichten weiterhin über die E-Mail-Adressen bei Ihrem bisherigen Anbieter empfangen. Verwenden Sie diese auch weiterhin für den Versand Ihrer E-Mails.
 
 #### Schritt 4: Die Konfiguration Ihrer Domain bearbeiten
 
-Nun, da Ihre Website transferiert ist und Ihre E-Mail-Adressen bei OVH neu angelegt sind, muss auch die Konfiguration Ihrer Domain angepasst werden. Ersetzen Sie hierzu die bisherigen DNS Server Ihrer Domain mit den OVH DNS Servern (die Angaben wurden Ihnen per E-Mail zugesandt und Sie können sie außerdem in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} einsehen). Durch diese Änderung erreichen Sie zwei Dinge:
+Nun, da Ihre Website transferiert ist und Ihre E-Mail-Adressen bei OVH neu angelegt sind, muss auch die Konfiguration Ihrer Domain angepasst werden. Ersetzen Sie hierzu die bisherigen DNS Server Ihrer Domain mit den OVH DNS Servern (die Angaben wurden Ihnen per E-Mail zugesandt und Sie können sie außerdem in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} einsehen). Durch diese Änderung erreichen Sie zwei Dinge:
 
 - **Ihre Domain ist nun mit den OVH Lösungen verbunden**: Ihr OVH Webhosting wird für die Anzeige Ihrer Website verwendet und der E-Mail-Empfang läuft ab sofort über Ihre OVH E-Mail-Adressen.
 - **Eine mögliche Dienstunterbrechung wird verhindert**: Wenn Ihr Registrar seine eigenen DNS Server sperrt, sobald Sie Ihre Domain transferieren, hat das keine Auswirkungen auf Ihren Dienst, wenn Sie bereits die OVH Konfiguration verwenden.
@@ -137,7 +137,7 @@ Die Konfiguration Ihrer Domain bleibt unverändert und Ihre Website wird weiterh
 
 #### Schritt 3: Ihre E-Mail-Adressen bei OVH neu erstellen
 
-**Sobald der Transfer Ihrer Domain abgeschlossen ist**, erhalten Sie eine E-Mail, die Sie darüber informiert, dass Ihr E-Mail-Dienst und Ihr Webhosting fertig installiert wurden. Anschließend erstellen Sie die gleichen E-Mail-Adressen bei OVH, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). Gehen Sie in Ihrem OVH Kundencenter in den Bereich [E-Mails](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
+**Sobald der Transfer Ihrer Domain abgeschlossen ist**, erhalten Sie eine E-Mail, die Sie darüber informiert, dass Ihr E-Mail-Dienst und Ihr Webhosting fertig installiert wurden. Anschließend erstellen Sie die gleichen E-Mail-Adressen bei OVH, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich [E-Mails](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
 
 Da die Konfiguration Ihrer Domain nicht verändert wurde, werden neue Nachrichten weiterhin über die E-Mail-Adressen bei Ihrem bisherigen Anbieter empfangen, solange die DNS Auflösung aktiv ist. Verwenden Sie diese auch weiterhin für den Versand Ihrer E-Mails.
 
@@ -145,7 +145,7 @@ Da die Konfiguration Ihrer Domain nicht verändert wurde, werden neue Nachrichte
 
 Nun, da Ihre Website transferiert ist, Ihre E-Mail-Adressen bei OVH neu angelegt sind und auch Ihre Domain zu OVH transferiert wurde, muss die Konfiguration Ihrer Domain angepasst werden. Ersetzen Sie hierzu die bisherigen DNS Server Ihrer Domain mit den OVH DNS Servern.
 
-Diese Änderung erfolgt über Ihre [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Hilfreiche Informationen hierzu finden Sie in der Anleitung *[Allgemeine Informationen zu den DNS Servern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/){.external}*.
+Diese Änderung erfolgt über Ihre [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Hilfreiche Informationen hierzu finden Sie in der Anleitung *[Allgemeine Informationen zu den DNS Servern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/){.external}*.
 
 Mit dieser Änderung können Sie folgendes erreichen:
 

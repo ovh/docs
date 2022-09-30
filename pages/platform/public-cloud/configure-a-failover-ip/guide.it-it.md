@@ -299,6 +299,6 @@ Per testare la connessione, ti basta inviare un ping al tuo indirizzo Additional
 
 [Importa un Additional IP](../importa_un_ip_failover/)
 
-[Trasferisci un IP FailOver](../trasferisci_il_tuo_ip_failover/)
+[Trasferisci un Additional IP](../trasferisci_il_tuo_ip_failover/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

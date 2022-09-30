@@ -7,7 +7,7 @@ section: 'Webseitenoptimierung'
 
 
 ## 
-Die Geolokalisierung können Sie über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einrichten.
+Die Geolokalisierung können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einrichten.
 
 Loggen Sie sich ein und klicken Sie links im Bereich Hosting auf den Namen Ihrer Hauptseite.
 

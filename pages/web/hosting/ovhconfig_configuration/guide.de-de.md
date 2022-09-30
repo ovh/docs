@@ -26,7 +26,7 @@ Sie können die .ovhconfig-Datei auf zwei Arten ändern:
 
 - **indem Sie die .ovhconfig-Datei manuell bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. In der vorliegenden Anleitung beschreiben wir ausschließlich diese Methode.
 
-- **über einen Konfigurationsassistenten in Ihrem OVH Kundencenter**: Diese Option ist weniger technisch anspruchsvoll und setzt voraus, dass Sie in Ihrem OVH Kundencenter eingeloggt sind, um dort die gewünschten Änderungen auszuwählen. Befolgen Sie hierzu die Anleitung [„Konfiguration Ihres Webhostings bearbeiten“](../die_laufzeitumgebung_meines_webhostings_andern/){.external}
+- **über einen Konfigurationsassistenten in Ihrem OVHcloud Kundencenter**: Diese Option ist weniger technisch anspruchsvoll und setzt voraus, dass Sie in Ihrem OVHcloud Kundencenter eingeloggt sind, um dort die gewünschten Änderungen auszuwählen. Befolgen Sie hierzu die Anleitung [„Konfiguration Ihres Webhostings bearbeiten“](../die_laufzeitumgebung_meines_webhostings_andern/){.external}
 
 Folgen Sie den Schritten der vorliegenden Anleitung, wenn Sie die .ovhconfig-Datei manuell bearbeiten möchten. 
 
@@ -36,7 +36,7 @@ Folgen Sie den Schritten der vorliegenden Anleitung, wenn Sie die .ovhconfig-Dat
 
 Halten Sie Ihren Haupt-FTP-Benutzer, das zugehörige Passwort sowie die FTP-Serveradresse bereit. Wenn Sie alle notwendigen Login-Daten haben, loggen Sie sich in Ihrem Speicherplatz ein. Weitere Informationen hierzu finden Sie in der Anleitung [„In den Speicherplatz einloggen“](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/#2-in-den-speicherplatz-einloggen){.external}.
 
-**Wenn Sie nicht mehr im Besitz dieser Informationen sind**, loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie auf `Hosting-Pakete`{.action}. Wählen Sie das gewünschte Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Dort finden Sie die erforderlichen Informationen, um sich im Speicherplatz einzuloggen. Um das Passwort des FTP-Benutzers zu erhalten, folgen Sie wenn nötig den entsprechenden Schritten in der Anleitung [„Passwort eines FTP-Benutzers ändern“](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/){.external}.
+**Wenn Sie nicht mehr im Besitz dieser Informationen sind**, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie auf `Hosting-Pakete`{.action}. Wählen Sie das gewünschte Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Dort finden Sie die erforderlichen Informationen, um sich im Speicherplatz einzuloggen. Um das Passwort des FTP-Benutzers zu erhalten, folgen Sie wenn nötig den entsprechenden Schritten in der Anleitung [„Passwort eines FTP-Benutzers ändern“](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/){.external}.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 

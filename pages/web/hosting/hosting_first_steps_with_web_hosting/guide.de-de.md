@@ -124,7 +124,7 @@ Jetzt, da Sie die DNS-Einträge für Ihr OVH Webhosting kennen, können Sie dies
 
 - **Eine Domain zusammen mit einem OVH Webhosting bestellen**
 
-Ihre Domain ist von vorneherein korrekt konfiguriert. Gehen Sie daher zum nächsten Schritt über. Wenn Sie jedoch Änderungen an der DNS-Zone in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} vorgenommen haben, stimmt diese Konfiguration möglicherweise nicht mehr.
+Ihre Domain ist von vorneherein korrekt konfiguriert. Gehen Sie daher zum nächsten Schritt über. Wenn Sie jedoch Änderungen an der DNS-Zone in Ihrem [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} vorgenommen haben, stimmt diese Konfiguration möglicherweise nicht mehr.
     
 Um auf die DNS-Zone Ihrer Domain zuzugreifen, gehen Sie zum Bereich `Domainnamen`{.action} und klicken Sie anschließend auf den jeweiligen Domainnamen. In dem Tab `DNS Zone`{.action} überprüfen Sie dann die Informationen und ändern diese gegebenenfalls ab.
 

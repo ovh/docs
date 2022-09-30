@@ -197,7 +197,7 @@ In the new window, click on `Add...`{.action} under "IP addresses". Enter your A
 
 Confirm by clicking on `Add`{.action}.
 
-![IP fail over configuration](images/image5-5.png){.thumbnail}
+![Additional IP configuration](images/image5-5.png){.thumbnail}
 
 #### Step 4: Restart the network interface
 
