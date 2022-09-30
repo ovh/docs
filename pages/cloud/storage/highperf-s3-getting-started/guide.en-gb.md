@@ -14,11 +14,11 @@ This guide is designed to familiarise you with the management of your containers
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account
-- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.com/ca/fr/\&ovhSubsidiary=qc)
-- You have created a [S3 user] (https://docs.ovh.com/ca/fr/storage/s3/gestion-des-identites-et-des-acces/)
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [S3 user](https://docs.ovh.com/gb/en/storage/s3/identity-and-access-management/) already created
 
-## In practice
+## Instructions
 
 ### Using AWS CLI
 
@@ -26,26 +26,26 @@ This guide is designed to familiarise you with the management of your containers
 
 Enter the following command:
 
-‘bash
+```bash
 user@host:~$ pip3 install awscli awscli-plugin-endpoint
-“
+```
 
 > [!primary]
 >
-> - awscli-plugin-endpoint is optional  
+> - awscli-plugin-endpoint is optional
 > - Install the groff package if you want to use command line help.
 >
 
 #### Collect Credentials
 
 - You will need your user's Access key* and *Secret key*. You can access this information in the ‘S3 users’ tab in your Control Panel.
-- You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers` tab, then in the details of your bucket. Otherwise, follow this [guide](https://docs.ovh.com/ca/fr/storage/s3/location).
+- You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers` tab, then in the details of your bucket. Otherwise, follow this [guide](https://docs.ovh.com/gb/en/storage/s3/location).
 
 #### Configuration
 
 Configure the aws client as follows:
 
-‘bash
+```bash
 user@host:~$ cat ~/.aws/credentials
 
 [default]
@@ -54,7 +54,7 @@ aws_secret_access_key = <secret_key>
 
 user@host:~$ cat ~/.aws/config
 
-# Delete the next two lines if you don't installed `awscli-plugin-endpoint`
+# Delete the next two lines if you don't want to install `awscli-plugin-endpoint`
 [plugins]
 endpoint = awscli_plugin_endpoint
 
@@ -65,12 +65,12 @@ s3 =
   signature_version = s3v4
 s3api =
   endpoint_url = <url_endpoint>
-“
+```
 
 > [!primary]
 >
 > You can also use interactive configuration by running the following command:
->`aws --configure`
+> `aws --configure`
 >
 
 Here are the configuration values that you can specifically set:
@@ -93,23 +93,23 @@ Here are the configuration values that you can specifically set:
 
 > [!primary]
 >
-> If you have more than one profile, add '--profile <profile>' to the command line
+> If you have more than one profile, add `--profile <profile>` to the command line.
 >
 
-**Create a bucket**
+**Creating a bucket**
 
 ```bash
 aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net --profile default s3 mb s3://<bucket_name
+aws --endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
 ```
 
-**List your buckets**
+**Listing your buckets**
 
 ```bash
 aws s3 ls
 ```
 
-**Upload your files as objects in your bucket**
+**Uploading your files as objects in your bucket**
 
 ```bash
 aws s3 cp /datas/test1 s3://<bucket_name>
@@ -121,19 +121,19 @@ aws s3 cp /datas/test1 s3://<bucket_name>
 aws s3 cp /datas/test1 s3://<bucket_name>/other-filename
 ```
 
-**Download an object from a bucket**
+**Downloading an object from a bucket**
 
 ```bash
 aws s3 cp s3://<bucket_name>/test1.
 ```
 
-**Upload an object from one bucket to another bucket**
+**Uploading an object from one bucket to another bucket**
 
 ```bash
 aws s3 cp s3://<bucket_name>/test1 s3://<bucket_name_2
 ```
 
-**Download or upload an entire bucket to the host/bucket**
+**Downloading or uploading an entire bucket to the host/bucket**
 
 ```bash
 aws s3 cp s3://<bucket_name> . --recursive
@@ -147,7 +147,7 @@ aws s3 sync. s3://<bucket_name>
 aws s3 sync s3://<bucket_name> s3://<bucket_name_2>
 ```
 
-**Delete objects and buckets**
+**Deleting objects and buckets**
 
 ```bash
 # Delete an object
@@ -161,7 +161,7 @@ aws s3 rb s3://<bucket_name>
 aws s3 rb s3://<bucket_name> --force
 ```
 
-**Set tags on a bucket**
+**Setting tags on a bucket**
 
 ```bash
 aws s3api put-bucket-tagging --bucket <bucket_name> --tagging 'TagSet=[{Key=myKey,Value=myKeyValue}]'
@@ -170,22 +170,22 @@ aws s3api get-bucket-tagging --bucket <bucket_name>
 
 ```json
 {
-  `TagSet`: [
+  "TagSet": [
     {
-    `Value`: `myKeyValue`,
-    `Key`: `myKey`
+    "Value": "myKeyValue",
+    "Key": "myKey"
     }
   ]
-}
+} 
 ```
 
-**Delete tags on a bucket**
+**Deleting tags on a bucket**
 
 ```bash
 aws s3api s3api delete-bucket-tagging --bucket <bucket_name>
 ```
 
-**Set tags on an object**
+**Setting tags on an object**
 
 ```bash
 aws s3api put-object-tagging --bucket <bucket_name> --key test1 --tagging 'TagSet=[{Key=myKey,Value=myKeyValue}]'
@@ -194,16 +194,16 @@ aws s3api get-bucket-tagging --bucket <bucket_name>
 
 ```json
 {
-  `TagSet`: [
+  "TagSet": [
     {
-    `Value`: `myKeyValue`,
-    `Key`: `myKey`
+    "Value": "myKeyValue",
+    "Key": "myKey"
     }
   ]
-}
+} 
 ```
 
-**Delete tags on an object**
+**Deleting tags on an object**
 
 ```bash
 aws s3api s3api delete-object-tagging --bucket <bucket_name> --key test1

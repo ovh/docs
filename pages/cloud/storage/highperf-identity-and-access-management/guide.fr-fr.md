@@ -15,7 +15,7 @@ Ce guide a pour objectif de vous montrer la gestion de vos identités et accès 
 ## Prérequis
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-- Un accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
 
@@ -23,32 +23,32 @@ Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=go
 
 ### Création d'un utilsateur
 
-Cliquez sur `Créer un utilisateur`{.action}:
+Cliquez sur `Créer un utilisateur`{.action}.
 
-Si vous avez déjà des utilisateurs OpenStack, vous pourrez selectionner un des ceux-ci:
+Si vous avez déjà des utilisateurs OpenStack, vous pouvez selectionner l'un d'entre eux :
 
 ![Add S3 user](images/highperf-identity-and-access-management-20220928085304931.png)
 
-Puis
+Puis :
 
 ![Add S3 user](images/highperf-identity-and-access-management-2022092808554688.png)
 
 > [!primary]
 >
-> Si vous faites le choix de sélectionner un utilisateur existant, assurer que celui-ci dispose de role `Object Operator` ou `Administrator`
+> Si vous faites le choix de sélectionner un utilisateur existant, assurez-vous que celui-ci dispose du rôle `Object Operator` ou `Administrator`.
 >
 
-Autrement:
+Sinon, créez un nouvel utilisateur :
 
 ![Add S3 user](images/highperf-identity-and-access-management-20220928085501719.png)
 
-Une fois votre utilisateur créé, vous verrez les informations d'identification:
+Une fois votre utilisateur créé, vous verrez les informations d'identification :
 
 ![Credentials](images/highperf-identity-and-access-management-20220928085714656.png)
 
 > [!primary]
 >
-> En cliquant sur les `...`{.action} en fin de ligne d'un utilisateur, vous avez la possibilité entre autres de télécharger le fichier de configuration rClone, voir la clé secrète de l'utilisateur, de supprimer l'utilisateur.
+> En cliquant sur le bouton `...`{.action} à droite d'un utilisateur, vous pouvez notamment télécharger le fichier de configuration rClone, voir la clé secrète de l'utilisateur, ou supprimer l'utilisateur.
 >
 
 
@@ -56,7 +56,7 @@ Une fois votre utilisateur créé, vous verrez les informations d'identification
 
 Vous avez la possibilité de définir l'accès à vos buckets via des profils prédéfinis.
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Ajouter un utilisateur à un conteneur`{.action}
+Cliquez sur le bouton `...`{.action} à droite de votre bucket puis sur `Ajouter un utilisateur à un conteneur`{.action}
 
 ![Add a user to a container](images/highperf-identity-and-access-management-20220928090844174.png)
 
@@ -72,7 +72,7 @@ Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Conf
 
 Vous pouvez également définir l'accès à vos objets via des profils prédéfinis.
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre objet puis sur `Ajouter un utilisateur à mon object`{.action}.
+Cliquez sur le bouton `...`{.action} à droite de votre objet puis sur `Ajouter un utilisateur à mon objet`{.action}.
 
 ![object menu](images/highperf-identity-and-access-management-20220928084137918.png)
 
@@ -90,7 +90,7 @@ Vous pouvez cependant affiner les droits via l'import d'un fichier de configurat
 
 ![S3 users](images/highperf-identity-and-access-management-20220928084435242.png)
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre utilisateur puis sur `Importer un fichier JSON`{.action}.
+Cliquez sur le bouton  `...`{.action} à droute de votre utilisateur puis sur `Importer un fichier JSON`{.action}.
 
 > [!primary]
 >

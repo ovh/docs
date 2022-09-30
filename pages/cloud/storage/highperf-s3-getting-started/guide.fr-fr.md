@@ -10,12 +10,12 @@ order: 020
 
 ## Objectif
 
-Ce guide à pour objectif de vous familiariser avec la gestion de vos conteneurs / objets.
+Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets.
 
 ## Prérequis
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-- Un accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir créé un [utilisateur S3](https://docs.ovh.com/fr/storage/s3/gestion-des-identites-et-des-acces/)
 
 ## En pratique
@@ -39,7 +39,7 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 #### Collecter les informatoons d'identification
 
 - Vous aurez besoin de l'*Access key* et de la *Secret key* de votre utilisateur. Ces informations sont accessibles depuis l'onglet `Utilisateurs S3` dans votre espace client.
-- Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs` puis dans les détails du votre bucket. Autrement, suivez ce [guide](https://docs.ovh.com/fr/storage/s3/location).
+- Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs` puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](https://docs.ovh.com/fr/storage/s3/location).
 
 #### Configuration
 
@@ -54,7 +54,7 @@ aws_secret_access_key = <secret_key>
 
 user@host:~$ cat ~/.aws/config
 
-# Delete the next two lines if you don't installed `awscli-plugin-endpoint`
+# Delete the next two lines if you don't need to install `awscli-plugin-endpoint`
 [plugins]
 endpoint = awscli_plugin_endpoint
 
@@ -79,10 +79,10 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 |:--|:--|:--|:--|
 | max_concurrent_requests | Integer | **Défaut :** 10 | Le nombre maximum de requêtes simultanées. |
 | max_queue_size | Integer | **Défaut :** 1000 | Le nombre maximal de tâches dans la file d'attente des tâches. |
-| multipart_threshold | Integer<br>String | **Défaut :** 8MB |  Le seuil de taille que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
-| multipart_chunksize | Integer<br>String | **Défaut :** 8MB<br>**Minimum for uploads:** 5MB |  Lors de l'utilisation de transferts multipart, il s'agit de la taille de morceau que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
+| multipart_threshold | Integer<br>String | **Défaut :** 8MB | Le seuil de taille que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
+| multipart_chunksize | Integer<br>String | **Défaut :** 8MB<br>**Minimum for uploads:** 5MB | Lors de l'utilisation de transferts multipart, il s'agit de la taille de morceau que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
 | max_bandwidth | Integer | **Défaut :** None | La bande passante maximale qui sera consommée pour le chargement et le téléchargement de données vers et depuis vos buckets. |
-|  verify_ssl  | Boolean | **Défaut :** true | Active / Désactive la vérification des certificats SSL |
+| verify_ssl | Boolean | **Défaut :** true | Active / Désactive la vérification des certificats SSL |
 
 #### Utilisation
 
@@ -93,7 +93,7 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 
 > [!primary]
 >
-> Si vous avez défini plusieurs profils, ajoutez `--profile <profil>` à la ligne de commande
+> Si vous avez défini plusieurs profils, ajoutez `--profile <profile>` à la ligne de commande
 >
 
 **Créer un bucket**
@@ -109,7 +109,7 @@ aws --endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net --profile
 aws s3 ls
 ```
 
-**Uploader vos fichiers en tant qu'objets dans votre bucket**
+**Téléverser vos fichiers en tant qu'objets dans votre bucket**
 
 ```bash
 aws s3 cp /datas/test1 s3://<bucket_name>

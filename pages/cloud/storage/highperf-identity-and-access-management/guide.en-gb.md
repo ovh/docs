@@ -23,7 +23,7 @@ Log in to [the OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 ### Creating a user
 
-Click `Create User`{.action}:
+Click `Create User`{.action}.
 
 If you already have OpenStack users, you can select one of these:
 
@@ -35,10 +35,10 @@ then
 
 > [!primary]
 >
-> If you choose to select an existing user, ensure that the user has an Object Operator or Administrator role
+> If you choose to select an existing user, ensure that the user has an Object Operator or Administrator role.
 >
 
-Otherwise:
+Otherwise, create a new user:
 
 ![Add S3 user](images/highperf-identity-and-access-management-20220928085501719.png)
 
@@ -48,15 +48,14 @@ Once your user has been created, you will see the credentials:
 
 > [!primary]
 >
-> By clicking on the '...`{.action} at the end of a user's line, you can, among other things, download the rclone configuration file, see the user's secret key, delete the user.
+> By clicking on the `...`{.action} at the end of a user's line, you can, among other things, download the rclone configuration file, see the user's secret key, delete the user.
 >
-
 
 ### Manage access to a bucket via a profile
 
 You can define access to your buckets via predefined profiles.
 
-Click on the `...`{.action} at the end of your bucket line, then `Add a user to a container`{.action}
+Click on the `...`{.action} at the end of your bucket line, then `Add a user to a container`{.action}.
 
 ![Add a user to a container](images/highperf-identity-and-access-management-20220928090844174.png)
 
@@ -86,7 +85,7 @@ Select the access profile for this user and click `Confirm`{.action}.
 
 ### Advanced resource access management
 
-However, you can refine your permissions by importing a JSON configuration file. To do this, go to the `S3 Policy Users`{.action} tab.
+You can refine your permissions by importing a JSON configuration file. To do this, go to the `S3 Policy Users`{.action} tab.
 
 ![S3 users](images/highperf-identity-and-access-management-20220928084435242.png)
 
@@ -101,55 +100,55 @@ Some examples of JSON configuration files:
 
 **Read/write access to a bucket and its objects**
 
-“json
+```json
 {
-  `Statement`:[{
-    `Sid`:`RWContainer`,
-    `Effect`:`Allow`,
-    `Action`:[`s3:GetObject`,`s3:PutObject`,`s3:DeleteObject`,`s3:ListBucket`,`s3:ListMultipartUploadParts`,`s3:ListBucketMultipartUploads`,`s3:AbortMultipartUpload`,`s3:GetBucketLocation `],
-    `Resource`:[`arn:aws:s3:::hp-bucket`,`arn:aws:s3:::hp-bucket/*`]
+  "Statement":[{
+    "Sid": "RWContainer",
+    "Effect": "Allow",
+    "Action":["s3:GetObject", "s3:PutObject", "s3:DeleteObject", "s3:ListBucket", "s3:ListMultipartUploadParts", "s3:ListBucketMultipartUploads", "s3:AbortMultipartUpload", "s3:GetBucketLocation"],
+    "Resource":["arn:aws:s3:::hp-bucket", "arn:aws:s3:::hp-bucket/*"]
   }]
 }
-“
+```
 
 **Read-only access to a bucket and its objects**
 
-“json
+```json
 {
-  `Statement`:[{
-    `Sid`:`ROContainer`,
-    `Effect`:`Allow`,
-    `Action`:[`s3:GetObject`,`s3:ListBucket`,`s3:ListMultipartUploadParts`,`s3:ListBucketMultipartUploads`],
-    `Resource`:[`arn:aws:s3:::hp-bucket`,`arn:aws:s3:::hp-bucket/*`]
+  "Statement":[{
+    "Sid": "ROContainer",
+    "Effect": "Allow",
+    "Action":["s3:GetObject", "s3:ListBucket", "s3:ListMultipartUploadParts", "s3:ListBucketMultipartUploads"],
+    "Resource":["arn:aws:s3:::hp-bucket", "arn:aws:s3:::hp-bucket/*"]
   }]
 }
-“
+```
 
 **Allow all operations on all project resources**
 
-“json
+```json
 {
-  `Statement`:[{
-    `Sid`:`FullAccess`,
-    `Effect`:`Allow`,
-    `Action`:[`s3:*`],
-    `Resource`:[`*`]
+  "Statement":[{
+    "Sid": "FullAccess",
+    "Effect": "Allow",
+    "Action":["s3:*"],
+    "Resource":["*"]
   }]
 }
-“
+```
 
 **Read/write access to all objects in a specific folder (`/home/user2`) in a specific bucket (`companybucket`)**
 
-“json
+```json
 {
-  `Statement`:[{
-    `Sid`:`RWContainer`,
-    `Effect`:`Allow`,
-    `Action`:[`s3:GetObject`,`s3:PutObject`,`s3:DeleteObject`,`s3:ListBucket`,`s3:ListMultipartUploadParts`,`s3:ListBucketMultipartUploads`,`s3:AbortMultipartUpload`,`s3:GetBucketLocation `],
-    `Resource`:[`arn:aws:s3:::companybucket`,`arn:aws:s3:::companybucket/home/user2/*`]
+  "Statement":[{
+    "Sid": "RWContainer",
+    "Effect": "Allow",
+    "Action":["s3:GetObject", "s3:PutObject", "s3:DeleteObject", "s3:ListBucket", "s3:ListMultipartUploadParts", "s3:ListBucketMultipartUploads", "s3:AbortMultipartUpload", "s3:GetBucketLocation"],
+    "Resource":["arn:aws:s3:::companybucket", "arn:aws:s3:::companybucket/home/user2/*"]
   }]
 }
-“
+```
 
 
 ### List of supported actions
