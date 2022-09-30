@@ -2,7 +2,8 @@
 title: 'Utilizar o acesso SSH do seu alojamento web'
 slug: partilhado_o_ssh_nos_alojamentos_partilhados
 excerpt: 'Saiba como se conectar e utilizar o acesso SSH do seu alojamento web OVHcloud'
-section: 'FTP e SSH'
+section: FTP e SSH
+order: 07
 ---
 
 **Última atualização: 19/01/2022**

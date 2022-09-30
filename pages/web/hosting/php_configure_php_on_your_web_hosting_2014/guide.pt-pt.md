@@ -2,8 +2,8 @@
 title: 'Mudar a versão de PHP do alojamento web'
 slug: configurar_o_php_num_alojamento_web_alojamentos_2014_ovh
 excerpt: 'Saiba como mudar a versão de PHP do seu alojamento web da OVH'
-id: '1207'
-legacy_guide_number: g1207
+section: PHP
+order: 01
 ---
 
 **Última atualização: 24/09/2018**

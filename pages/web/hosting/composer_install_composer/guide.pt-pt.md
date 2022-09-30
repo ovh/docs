@@ -1,8 +1,9 @@
 ---
 title: Instalar Composer num alojamento web
 slug: instalacao_do_composer_nos_alojamentos_partilhados
-legacy_guide_number: 1894
 excerpt: Saiba como instalar e dar os primeiros passos em Composer
+section: PHP
+order: 02
 ---
 
 > [!primary]

@@ -1,9 +1,9 @@
 ---
 title: 'Partilhado: ativação da firewall'
 excerpt: 'Partilhado: ativação da firewall'
-id: '1937'
 slug: partilhado_ativacao_da_firewall
-legacy_guide_number: g1937
+section: Configuração do alojamento
+order: 04
 ---
 
 > [!primary]

@@ -1,9 +1,9 @@
 ---
 title: 'Partilhado: Utilização do Putty em Windows'
 excerpt: 'Partilhado: Utilização do Putty em Windows'
-id: '1964'
 slug: partilhado_utilizacao_do_putty_em_windows
-legacy_guide_number: g1964
+section: FTP e SSH
+order: 08
 ---
 
 

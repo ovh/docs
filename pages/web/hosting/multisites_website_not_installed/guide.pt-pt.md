@@ -3,7 +3,7 @@ title: 'Resolver o erro “Site não instalado”'
 excerpt: 'Saiba como resolver o erro da página “Site não instalado”'
 slug: alojamento_web_erro_de_site_nao_instalado
 section: Diagnóstico
-order: 4
+Order: 05
 ---
 
 > [!primary]

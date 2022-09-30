@@ -1,10 +1,9 @@
 ---
 title: Criar tarefas automatizadas (CRON) no seu alojamento Web
 excerpt: Saiba como criar tarefas CRON para automatizar as tarefas programadas num alojamento web
-section: Tarefas automatizadas (CRON)
-id: '1990'
 slug: alojamento_partilhado_tarefas_agendadas_cron
-legacy_guide_number: g1990
+section: Tarefas automatizadas (CRON)
+order: 01
 ---
 
 > [!primary]
