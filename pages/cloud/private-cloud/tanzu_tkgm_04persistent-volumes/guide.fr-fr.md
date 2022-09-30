@@ -198,15 +198,15 @@ Le volume persitant est créé sur le deuxième Datastore.
 
 Revenez sur vCenter dans le stockage au même endroit que précemment dans le dossier **fcd** vous constarez qu'aucun nouveau fichier apparait.
 
-![04 Display PV2 in vCenter 01](images/04-display-pv-vmware01.png){.thumbnail}
+![04 Display PV2 in vCenter 01](images/04-display-pv2-vmware01.png){.thumbnail}
 
 cliquez à droite sur le second `Datastore`{.action} allez dans le dossier `fcd`{.action} de ce datastore. Vous constaterez que vous avait deux nouveaux fichiers comme sur le premier **Datastore**
 
-![04 Display PV2 in vCenter 02](images/04-display-pv-vmware02.png){.thumbnail}
+![04 Display PV2 in vCenter 02](images/04-display-pv2-vmware02.png){.thumbnail}
 
 Revenez dans le `Datacenter`{.action} à la racine de datacenter, cliquez sur l'onglet `Monitor`{.action} choisissez `Container Volumes`{.action} pour voir apparaitres les deux volumes persistants avec leurs emplacements dans les *Datastore* 
 
-![04 Display PV2 in vCenter 03](images/04-display-pv-vmware03.png){.thumbnail}
+![04 Display PV2 in vCenter 03](images/04-display-pv2-vmware03.png){.thumbnail}
 
 ## Aller plus loin <a name="gofurther"></a>
 
