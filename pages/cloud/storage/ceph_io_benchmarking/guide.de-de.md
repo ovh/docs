@@ -2,7 +2,7 @@
 title: 'Speicher-Benchmark durchführen'
 slug: ceph-io-benchmarking
 excerpt: 'Hier erfahren Sie, wie Sie die Leistung Ihres Cloud Disk Arrays testen.'
-section: 'Storage und Backup'
+section: 'Cloud Disk Array'
 ---
 
 **Stand 16.07.2019**
