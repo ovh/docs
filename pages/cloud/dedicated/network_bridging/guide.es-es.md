@@ -5,11 +5,16 @@ excerpt: El modo bridge IP se utiliza para configurar las maquinas virtuales. Es
 section: Red e IP
 ---
 
-**Última actualización: 21/12/2020**
-
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
+
+**Última actualización: 21/12/2020**
+
+> [!primary]
+>
+> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/). Esto no afectará a sus funcionalidades ni al funcionamiento de sus servicios.
+>
 
 ## Objetivo
 

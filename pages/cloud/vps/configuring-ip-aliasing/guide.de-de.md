@@ -11,6 +11,11 @@ section: 'Netzwerk und IP'
 
 **Letzte Aktualisierung am 30.11.2021**
 
+> [!primary]
+>
+> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Dies hat keine weiteren Auswirkungen auf dessen Eigenschaften oder die Funktionalität Ihrer Dienstleistungen.
+>
+
 ## Ziel
 
 Bei *IP Aliasing* handelt es sich um eine spezielle Netzwerkkonfiguration für bestimme OVHcloud Dienste, mit der Sie mehrere IP-Adressen über ein einziges Netzwerkinterface verbinden können.

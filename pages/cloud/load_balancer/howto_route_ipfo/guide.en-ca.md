@@ -7,6 +7,11 @@ section: Configuration
 
 **Last updated 06th April 2018**
 
+> [!primary]
+>
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-ca/network/additional-ip/). This has no further impact on any of its features or the functioning of your services.
+>
+
 ## Objective
 
 An Additional IP is an IP address that can be switched from one service to another. In doing so, it helps you avoid a wide range of issues for your infrastructure (hardware failures, overload for your services, maintenance, etc.).

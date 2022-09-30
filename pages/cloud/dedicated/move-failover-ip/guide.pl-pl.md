@@ -12,6 +12,11 @@ order: 7
 
 **Ostatnia aktualizacja z dnia 26-07-2022**
 
+> [!primary]
+>
+> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/). Nie ma to żadnego wpływu na funkcje ani na działanie usług.
+>
+
 ## Wprowadzenie
 
 Additional IP mogą być przenoszone między Twoimi usługami. Chodzi o to, aby nie tracić reputacji i lepszego pozycjonowania Twoich aplikacji i systemów.

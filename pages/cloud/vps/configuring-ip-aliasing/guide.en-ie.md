@@ -7,6 +7,11 @@ section: 'Network management'
 
 **Last updated 30th November 2021**
 
+> [!primary]
+>
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-ie/network/additional-ip/). This has no further impact on any of its features or the functioning of your services.
+>
+
 ## Objective
 
 IP aliasing refers to a special network configuration for certain OVHcloud services. Additional IPs allow you to associate multiple IP addresses with a single network interface.

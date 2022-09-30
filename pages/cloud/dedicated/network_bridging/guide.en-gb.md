@@ -7,6 +7,11 @@ section: 'Network management'
 
 **Last updated 13th January 2021**
 
+> [!primary]
+>
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/). This has no further impact on any of its features or the functioning of your services.
+>
+
 ## Objective
 
 Bridged networking can be used to configure your virtual machines. Some tweaking is necessary to make the network configuration work on our network.

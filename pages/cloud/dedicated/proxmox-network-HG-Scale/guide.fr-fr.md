@@ -8,6 +8,11 @@ order: 5
 
 **Dernière mise à jour le 04/10/2021**
 
+> [!primary]
+>
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/). Cela n'a aucun impact sur ses fonctionnalités ou le fonctionnement de vos services.
+>
+
 ## Objectif
 
 Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode bridged (via des MAC Virtuelles) n'est pas possible. Il est donc nécessaire de configurer les Additional IP en mode routé ou via le vRack.

@@ -12,6 +12,11 @@ order: 6
 
 **Última atualização: 04/10/2021**
 
+> [!primary]
+>
+> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](https://www.ovhcloud.com/pt/network/additional-ip/). Isto não tem qualquer impacto nas suas funcionalidades ou no funcionamento dos seus serviços.
+>
+
 ## Objetivo
 
 Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo bridged (através de MAC virtuais) não é possível. Por isso, é necessário configurar os Additional IP em modo roteado ou através do vRack.

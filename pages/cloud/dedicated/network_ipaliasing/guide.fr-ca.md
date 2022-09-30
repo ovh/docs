@@ -7,6 +7,11 @@ section: 'Réseau & IP'
 
 **Dernière mise à jour le 15/09/2021**
 
+> [!primary]
+>
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/). Cela n'a aucun impact sur ses fonctionnalités ou le fonctionnement de vos services.
+>
+
 ## Objectif
 
 L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du réseau de votre serveur dédié, qui vous permet d'associer plusieurs adresses IP sur une seule interface réseau.

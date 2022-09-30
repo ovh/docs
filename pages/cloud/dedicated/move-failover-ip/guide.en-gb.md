@@ -8,6 +8,11 @@ order: 7
 
 **Last updated 26th July 2022**
 
+> [!primary]
+>
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/). This has no further impact on any of its features or the functioning of your services.
+>
+
 ## Objective
 
 Additional IP addresses can be moved between the services you use. This provides an advantage since you can maintain your IP reputation, your SEO and improve the continuity of service of your applications and systems.
