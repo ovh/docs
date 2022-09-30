@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 02
 ---
 
-**Dernière mise à jour le 03/08/2022**
+**Dernière mise à jour le 30/09/2022**
 
 ## Objectif
 
