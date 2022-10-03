@@ -31,7 +31,7 @@ Przekierowanie domeny polega na przekierowaniu jej na nową docelową stronę. I
 Funkcja ta pozwala na przekierowanie domeny/subdomeny na:
 
 - inna już istniejąca domena/subdomena:
-    - **Przykład**: `domain.tld
+    - **Przykład**: `domain.tld`
 - adres URL (Uniform Resource Locator):
     - **Przykłady**: `http://www.domain.tld/welcome/` lub `https://www.domain.tld/welcome/` (jeśli domena docelowa posiada kompatybilny certyfikat SSL).
 
