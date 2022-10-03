@@ -114,7 +114,7 @@ tanzu@bootstrap:~$
 
 ### Création d'un volume persistant dans la **Storage class** par défaut
 
-Créer un fichier nommé default-pvc-storage.yaml avec ce contenu :
+Créer un fichier nommé `default-pvc-storage.yaml` avec ce contenu :
 
 ```yaml
 kind: persistantVolumeClaim
@@ -183,7 +183,7 @@ spec:
       storage: 2Gi
 ```
 
-Dans ce fichier à droite de storageClassName est noté `secondstorageclass` qui correspond au nom du **Storage Class** créé.
+Le fichier utilise la même syntaxe que pour le premier stockage persistant mais avec un nom et une **Storage Class** différente.
 
 Exécutez cette commande pour créer le volume persistant dans l'espace de nom **myspace** :
 
