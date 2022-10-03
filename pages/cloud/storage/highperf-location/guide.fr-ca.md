@@ -25,7 +25,7 @@ Munissez vous de vos clés d'accès S3 et accédez en ligne de commande aux diff
 | Object Storage S3 - High Performance | `https://s3.<region>.perf.cloud.ovh.net` | Gravelines: gra<br>Strasbourg : sbg |
 | Object Storage SWIFT - Standard | `https://s3.<region>.cloud.ovh.net` | Strasbourg : sbg<br>London: uk<br>Francfort: de<br>Warsaw: waw<br><br><i>En cours : Gravelines</i> |
 
-Le point de terminaison des bucket est une URL, par exemple `https://my-bucket.s3.fr-par.scw.cloud.` qui représente un point de terminaison de style « hôte virtuel ».
+Le point de terminaison des bucket est une URL, par exemple `https://my-bucket.s3.gra.perf.cloud.ovh.net` qui représente un point de terminaison de style « hôte virtuel ».
 
 ## Aller plus loin
 
