@@ -54,7 +54,7 @@ Ligue-se à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotoman
 
 A tabela apresenta os reencaminhamentos ativos para o seu domínio. Pode gerir os seus reencaminhamentos existentes utilizando o botão `...`{.action} à direita de cada linha.
 
-Clique no botão ``Para Adicionar um reencaminhamento`{.action}.
+Clique no botão `Para Adicionar um reencaminhamento`{.action}.
 
 ![Apresentação do menu reencaminhamento](images/RedirectionPanel.png){.thumbnail}
 
