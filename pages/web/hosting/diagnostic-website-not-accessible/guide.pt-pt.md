@@ -3,7 +3,7 @@ title: "O que fazer se o meu site está inacessível?"
 slug: erro-servidor-inacessivel
 excerpt: "Diagnóstico das causas da inacessibilidade do seu site"
 section: Diagnóstico
-Order: 1
+Order: 01
 ---
 
 > [!primary]

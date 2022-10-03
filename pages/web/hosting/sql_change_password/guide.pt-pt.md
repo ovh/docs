@@ -3,7 +3,7 @@ title: Alterar a palavra-passe da base de dados de um alojamento web
 slug: alterar-palavra-passe-base-de-dados
 excerpt: Saiba como alterar a palavra-passe de uma base de dados criada num serviço de alojamento web
 section: Bases de dados
-order: 2
+order: 02
 ---
 
 > [!primary]

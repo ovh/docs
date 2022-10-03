@@ -2,8 +2,8 @@
 title: 'Restaurar o espaço de armazenamento do alojamento web'
 slug: restauracao-ftp-filezilla-area-de-cliente
 excerpt: 'Saiba como restaurar um ficheiro ou a totalidade do espaço de armazenamento do seu alojamento web'
-section: 'FTP e SSH'
-order: 3
+section: FTP e SSH
+order: 06
 ---
 
 > [!primary]

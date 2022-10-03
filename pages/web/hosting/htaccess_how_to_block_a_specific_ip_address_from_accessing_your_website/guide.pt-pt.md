@@ -3,7 +3,7 @@ title: 'Tutorial - Como bloquear o acesso ao meu site para alguns endereços IP 
 excerpt: "Descubra as ações possíveis através de um ficheiro .htaccess para bloquear o acesso ao seu site a determinados endereços IP"
 slug: partilhado_htacess_como_impedir_que_certos_ips_acedam_ao_meu_website
 section: Reescrita e autenticação
-order: 01
+order: 01 
 ---
 
 **Última atualização: 12/09/2022**

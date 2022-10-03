@@ -2,6 +2,8 @@
 title: "Proteger a interface de administração do seu site com um ficheiro .htaccess"
 slug: partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao
 excerpt: "Encontre aqui como proteger o acesso à administração do seu site com um ficheiro .htaccess"
+section: Reescrita e autenticação
+order: 02
 ---
 
 > [!primary]

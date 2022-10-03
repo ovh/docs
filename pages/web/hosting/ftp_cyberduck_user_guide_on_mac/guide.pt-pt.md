@@ -1,9 +1,9 @@
 ---
 title: 'Partilhado: guia de utilização do Cyberduck (MAC)'
 excerpt: 'Partilhado: guia de utilização do Cyberduck (MAC)'
-id: '1598'
 slug: partilhado_guia_de_utilizacao_do_cyberduck_mac
-legacy_guide_number: g1598
+section: FTP e SSH
+order: 05
 ---
 
 

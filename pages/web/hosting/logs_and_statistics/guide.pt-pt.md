@@ -1,9 +1,9 @@
 ---
 title: 'Partilhado: Consultar as estatísticas e os logs do meu site'
 excerpt: Acesso às estatísticas do seu site
-id: '1344'
 slug: partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site
-legacy_guide_number: g1344
+section: Otimizar o seu site
+order: 04
 ---
 
 > [!primary]
