@@ -26,7 +26,7 @@ order: 05
 
 ### Présentation
 
-Les volumes persistants sont utilisés pour conserver des données de manière permanente sur un cluster **Kubernetes**, Ce mécanisme s'appuie sur des **Storage Classes**. Il existe diverses **Storage Classes**. Pour plus d'informations sur les **Storage classes** consultez ce guide [Kubernetes Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/).
+Les volumes persistants sont utilisés pour conserver des données de manière permanente sur un cluster **Kubernetes**, Ce mécanisme s'appuie sur des **Storage Classes**. Il existe diverses **Storage Classes**. Vous trouverez plus d'informations sur ce guide [Kubernetes Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/).
 
 Lors du déploiement d'un cluster de **WorkLoad** une **Storage Class** **CSI provisioner** est créée et pointe dans le dossier du **Datastore** qui contient les machines virtuelles du cluster de *WorkLoad*.
 
@@ -67,7 +67,7 @@ kubectl get storageclass
 kubectl describe storageclass nomclasse
 ```
 
-### Création d'un storage class sur un autre VMFS
+### Création d'une storage class sur un autre **DataStore**
 
 Sur notre cluster **VMware** nous avons deux **Datastore** connectés sur des serveur NFS. Un des datastore contient les machines virtuelles du cluster de *WorkLoad* ainsi que le dossier **Fcd** utilisé par la **Storage Class** du cluster de *Workload*. 
 
@@ -110,7 +110,7 @@ secondstorageclass (default)   csi.vsphere.vmware.com   Delete          Immediat
 tanzu@bootstrap:~$
 ```
 
-### Création d'un volume persistant dans le **Storage class** par défaut
+### Création d'un volume persistant dans la **Storage class** par défaut
 
 Créer un fichier nommé default-pvc-storage.yaml avec ce contenu :
 
@@ -128,7 +128,7 @@ spec:
       storage: 2Gi
 ```
 
-la valeur **name** contient le nom du volume persistant dans votre cluster de *WorkLoad**  à coté de storageClassName est indiqué le nom de la **Storage Class** qui sera utilisé pour pour stocker ce volume persistant.
+Le nom du stockage persistant se trouve à coté de **name**. **storageClassName** contient le nom de la **Storage Class** qui est utilisé pour ce volume.
 
 Exécuter cette commande pour créer le volume persistant :
 
