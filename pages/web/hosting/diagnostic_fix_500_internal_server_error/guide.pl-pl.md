@@ -1,10 +1,9 @@
 ---
 title: Co zrobić w przypadku błędu 500 Internal Server Error?
-legacy_guide_number: 1987
-slug: błąd-500-internal-server-error
+slug: 500-internal-server-error
 excerpt: Zdiagnozuj najczęstsze przypadki błędów 500
 section: Diagnostyka
-order: 5
+order: 05
 ---
 
 > [!primary]
