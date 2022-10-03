@@ -25,7 +25,7 @@ Locate your S3 access keys and access the different storage classes via command 
 | Object Storage S3 - High Performance |`https://s3.<region>.perf.cloud.ovh.net` | Gravelines: gra<br>Strasbourg: sbg |
 | Object Storage SWIFT - Standard |`https://s3.<region>.cloud.ovh.net` | Strasbourg: sbg<br>London: uk<br>Frankfurt: de<br>Warsaw: waw<br><br><i>In progress: Gravelines</i> |
 
-The bucket endpoint is a URL, for example `https://my-bucket.s3.fr-par.scw.cloud.` that represents a virtual host style endpoint.
+The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.perf.cloud.ovh.net` that represents a virtual host style endpoint.
 
 ## Go further
 
