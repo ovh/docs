@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 29/09/2022**
+**Dernière mise à jour le 03/10/2022**
 
 ## Objectif
 
@@ -37,7 +37,7 @@ Tanzu Kubernetes Grid permet de déployer et d'administrer un ou plusieurs clust
 
 Consultez cette documentation [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/nutanix/tanzu-tkgm-installation) pour effectuer l'installation.
 
-Le fonctionnement de **Tanzu Kubernetes Grid** sur le cluster VMware nécessite six nouvelles machines virtuelles pour faire fonctionner le cluster d'administration. Une autre machine virtuelle est nécessaire pour l'administration, cette machine virtuelle est fournie par OVHcloud.
+Le fonctionnement de **Tanzu Kubernetes Grid** sur le cluster VMware nécessite six nouvelles machines virtuelles pour faire fonctionner le cluster d'administration. Une autre machine virtuelle est nécessaire pour l'administration, cette machine virtuelle est fournie par OVHcloud et se nomme **Bootstrap**. 
 
 ![01 admin cluster diagram](images/01-admin-cluster-diagram01.png){.thumbnail}
 
@@ -66,7 +66,7 @@ Une application peut être constituée de plusieurs **pods** qui communiquent en
 
 ### Gestion des volumes persistants
 
-Par défaut lors de l'arrêt ou d'un crash d'un **pods** les données contenues dans ce **pod** sont perdues. Pour pouvoir stocker des données de manière permanente il est nécessaire de créér des volumes permanents et de les associer aux applications.
+Par défaut lors de l'arrêt ou d'un crash d'un **pods** les données contenues dans ce **pod** sont perdues. Pour pouvoir stocker des données de manière permanente il est nécessaire de créér des volumes persistants et de les associer aux applications.
 
 Les volumes persistants sont stockés par défaut sur le stockage VMware (vSAN ou NFS) qui a servi pour le déploiement du cluster de *WorkLoad* en utilisant les api VMWARE (vSPHERE Cloud Native Storage).
 
