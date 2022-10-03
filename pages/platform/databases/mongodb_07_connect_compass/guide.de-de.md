@@ -62,6 +62,8 @@ Now you are now interact with your Public Cloud Databases for MongoDB:
 
 [Configuring vRack for Public Cloud](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/)
 
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb) to find how to connect to your database with several languages.
+
 Join our community of users on <https://community.ovh.com/en/>.
 
 ## We want your feedback!
