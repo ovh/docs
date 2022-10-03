@@ -2,7 +2,8 @@
 title: Ativar a otimização do PHP no seu Alojamento Partilhado OVH
 excerpt: Este guia irá ajudá-lo na ativação do PHP-FPM no seu alojamento web partilhado na OVH, com vista a melhorar os tempos de resposta PHP
 slug: ativar_a_otimizacao_do_php_no_seu_alojamento_partilhado_ovh
-legacy_guide_number: g1175
+section: PHP
+order: 03
 ---
 
 

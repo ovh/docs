@@ -2,8 +2,8 @@
 title: 'Partilhar o alojamento entre vários sites'
 slug: multisites-configurar-um-multisite-no-meu-alojamento-web
 excerpt: 'Saiba como alojar diferentes websites no seu alojamento web'
-section: 'Configuração do alojamento'
-order: 1
+section: Primeiros passos
+order: 03
 ---
 
 > [!primary]

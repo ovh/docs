@@ -2,8 +2,8 @@
 title: 'Publicar um site num alojamento web'
 slug: partilhado_colocar_o_meu_website_online
 excerpt: 'Saiba como publicar um site no seu alojamento web da OVH'
-section: Introdução
-legacy_guide_number: g1374
+section: Primeiros passos
+order: 06
 ---
 
 > [!primary]

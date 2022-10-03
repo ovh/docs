@@ -1,14 +1,14 @@
 ---
 title: 'Benchmark - ewaluacja wydajności przestrzeni dyskowej'
 slug: ceph-io-benchmarking
-excerpt: 'Dowiedz się, jak przeprowadzić ewaluację wydajności Cloud Disk Array '
-section: 'Storage i kopie zapasowe'
+excerpt: 'Dowiedz się, jak przeprowadzić ewaluację wydajności Cloud Disk Array'
+section: 'Cloud Disk Array'
 ---
 
 **Ostatnia aktualizacja z dnia 12-07-2019**
 
 ## Wymagania początkowe
-Zanim rozpoczniesz testy wydajności, zapoznaj się z używanym środowiskiem. Pamiętaj, że nawet drobne błędy metodologiczne mogą wpłynąć negatywnie na wiarygodność benchmarku. Na przykład, nie powinno się przeprowadzać testów porównawczych wydajności Cloud Disk Array znajdujących się w różnych centrach danych. Opóźnienia między centrami są zbyt duże, aby wyniki ewaluacji były wiarygodne. 
+Zanim rozpoczniesz testy wydajności, zapoznaj się z używanym środowiskiem. Pamiętaj, że nawet drobne błędy metodologiczne mogą wpłynąć negatywnie na wiarygodność benchmarku. Na przykład, nie powinno się przeprowadzać testów porównawczych wydajności Cloud Disk Array znajdujących się w różnych centrach danych. Opóźnienia między centrami są zbyt duże, aby wyniki ewaluacji były wiarygodne.
 
 Bardzo istotne jest ponadto, abyś wybrał parametry odpowiednie dla Twojego przypadku. Jeśli planujesz hostować bazę danych, całkowita dostępna liczba IOPS dla bloków 8 KiB będzie prawdopodobnie miała większe znaczenie niż całkowita przepustowość I/O dużych bloków. Jeśli planujesz zastosować Hadoop, wymagania przestrzeni dyskowej będą całkowicie inne.
 
@@ -101,7 +101,7 @@ fio --runtime=600 --time_based --group_reporting \
 ```
 
 
-#### Odczyt/zapis mieszany bloków o różnych rozmiarach 
+#### Odczyt/zapis mieszany bloków o różnych rozmiarach
 
 ```bash
 fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \

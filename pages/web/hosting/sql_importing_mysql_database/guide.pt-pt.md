@@ -1,9 +1,9 @@
 ---
 title: 'Importar um backup para a base de dados de um alojamento web'
 excerpt: 'Saiba como importar um backup para a base de dados de um alojamento web da OVH'
-id: '1393'
 slug: partilhado_guia_de_importacao_de_uma_base_de_dados_mysql
-legacy_guide_number: g1393
+section: Bases de dados
+order: 04
 ---
 
 **Última atualização: 11/01/2019**

@@ -1,9 +1,9 @@
 ---
 title: Evitar os erros comuns de SSL no meu website
 excerpt: Evitar os erros comuns de SSL no meu website
-id: '2220'
 slug: evitar_os_erros_comuns_de_ssl_no_meu_website
-legacy_guide_number: g2220
+section: SSL
+order: 04
 ---
 
 

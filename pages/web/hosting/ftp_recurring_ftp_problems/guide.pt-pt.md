@@ -2,9 +2,8 @@
 title: Resolver os erros recorrentes durante a utilização de um programa FTP
 excerpt: Encontre aqui as anomalias mais frequentes associadas ao seu software FTP
 slug: partilhando-os-problemas-ftp-recrutamento
-legacy_guide_number: 1996
 section: FTP e SSH
-order: 3
+order: 04
 ---
 
 > [!primary]
