@@ -16,6 +16,8 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 **This guide explains how to connect to a MongoDB database instance with one of the world's most famous programming language: PHP.**
 
+You can find an example on the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb/php/hello-world).
+
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account

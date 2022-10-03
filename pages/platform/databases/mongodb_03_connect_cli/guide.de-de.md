@@ -118,6 +118,8 @@ replicaset [direct: primary]>
 
 [Configuring vRack for Public Cloud](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/)
 
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb) to find how to connect to your database with several languages.
+
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 Join our community of users on <https://community.ovh.com/en/>.
