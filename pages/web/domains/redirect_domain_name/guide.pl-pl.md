@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Przekierowanie domeny zarządzanej w OVHcloud"
 slug: przekierowanie-domeny
 excerpt: "Poznaj rodzaje przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVHcloud"
