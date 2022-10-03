@@ -1,6 +1,6 @@
 ---
 title: Co zrobić w przypadku błędu 500 Internal Server Error?
-slug: 500-internal-server-error
+slug: web_hosting_how_to_fix_the_500_internal_server_error
 excerpt: Zdiagnozuj najczęstsze przypadki błędów 500
 section: Diagnostyka
 order: 05
