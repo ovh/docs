@@ -24,7 +24,7 @@ order: 04
 - Avoir installé le cluster d'administration **Tanzu Kubernetes GRID** à l'aide de ce guide [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation).
 - Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
 - Disposer de ces ressources :
-    - 20 Go de mémoire, 4 vCPU, 40 Go de stockage par nœud Kubernetes (Il faut 6 nœuds par cluster de **Workload** dans le même mode).
+    - 16 Go de mémoire, 4 vCPU, 40 Go de stockage par nœud Kubernetes (Il faut 6 nœuds par cluster de **Workload** dans le mode de production).
     
 
 ## En pratique
@@ -143,9 +143,9 @@ Une application peut être constituée de plusieurs pods qui communiquent entre 
 
 [Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation)
 
-[Présentation de VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
+[Présentation VMware de Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
-[Documentation de VMware Tanzu Kubenetes Grid](https://https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
+[Documentation VMware de Tanzu Kubenetes Grid](https://https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
 
 [Installation manuelle de l'outil CLI pour le déploiement de Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 
