@@ -1,12 +1,12 @@
 ---
 title: Gestion des volumes persistants dans Tanzu Kubernetes Grid
-slug: tanzu-tkgm-persistent-volumes
+slug: tanzu-tkgm-persistant-volumes
 excerpt: Comment déployer une application dans Tanzu Kubernetes Grid avec des volumes permanents 
 section: Tanzu
 order: 05
 ---
 
-**Dernière mise à jour le 30/09/2022**
+**Dernière mise à jour le 03/10/2022**
 
 ## Objectif
 
@@ -27,27 +27,28 @@ order: 05
 
 ### Présentation
 
-Les volumes persistents servent à conserver des données de manière permanente sur un cluster Kubernetes, ces volumes sont stockés dans des fichier VMDK qui se trouvent dans le dossier FCD à la racine du VMFS ou a été déployé le cluster de *WorkLoad*.
+Les volumes persistants sont utilisés pour conserver des données de manière permanente sur un cluster **Kubernetes**, Ce mécanisme s'appuie sur des **Storage Classes**. Il existe diverses **Storage Classes**. Pour plus d'informations sur les **Storage classes** consultez ce guide [Kubernetes Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/).
 
-A partir de votre cluster VMware rendez-vous dans l'inventaire sélectionnez à gauche `l'icône`{.action} concernant le stockage, positionnez-vous sur le `datastore`{.action} où a été déployé votre cluster de *WorkLoad* allez dans l'onglet `Files`{.action} et cliquez sur le dossier `FCD`{.action}.
+Lors du déploiement d'un cluster de **WorkLoad** une storageclass **CSI provisioner** est créé et pointe dans le dossier du **Datastore** qui contient les machines virtuelles du cluster de **WorkLoad. 
+
+A partir de votre cluster **VMware** rendez-vous dans l'inventaire sélectionnez à gauche `l'icône`{.action} concernant le stockage, positionnez-vous sur le `datastore`{.action} où a été déployé votre cluster de *WorkLoad* allez dans l'onglet `Files`{.action} et cliquez sur le dossier `FCD`{.action}.
+
+Le dossier est vide car le cluster de *WorkLoad* n'utilise pas encore de volumes persistants. 
 
 ![01 Affichage dossier FCD](images/01-display-fcd-folder01.png){.thumbnail}
 
-
-Il est possible de créer des **Storage class** qui utilisent une autre dossier que le dossier par défaut.
+Il est possible de créer d'autres **Storage classes** pour le cluster de *WorkLoad*.
 
 ## En pratique
 
-Nous allons nous connecter à un cluster de *WorkLoad* de **Tanzu Kubernetes Grid** à partir de la console de la machine virtuelle **Bootstrap**. Vous pouvez vous aider de ce guide [Administrer Tanzu Management Cluster Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management) pour créer un cluster de workload et l'administrer.
+Nous allons nous connecter sur un cluster de *WorkLoad* de **Tanzu Kubernetes Grid** à partir de la console de la machine virtuelle **Bootstrap**. Vous pouvez vous aider de ce guide [Administrer Tanzu Management Cluster Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management) pour créer un cluster de workload et l'administrer.
 
-A partir de la console de la machine virtuelle de BootStrap utiliser ces commandes :
+A partir de la console de la machine virtuelle de **Bootstrap** utiliser cette commande pour voir les contextes que l'on peut utiliser sur ce cluster :
 
 ```bash
 # Affichage de tous les contextes de votre cluster TANZU KUBERNETES GRID
 kubectl config get-contexts
 ```
-
-Sous la colonne **NAME** vous verrez les contextes que vous pourrez utiliser , Si vous n'avez qu'un cluster de *WorkLoad* vous ne verrez que deux contextes un pour le cluster d'administration et l'autre pour le cluster de *WorkLoad*.
 
 Saisissez cette commande pour utiliser le cluster de *WorkLoad* :
 
@@ -56,30 +57,28 @@ Saisissez cette commande pour utiliser le cluster de *WorkLoad* :
 kubectl config use-context tkgm-workload-cluster-admin@tkgm-workload-cluster
 ```
 
-Nous allons à partir de maintenant travailler sur le cluster de *WorkLoad**
+### Affichage des **Storage Classes** existantes
 
-### Affichage des **Storage Class** existants
-
-Pour obtenir des information sur les **Storage Class** d'un cluster de WorkLoad saisissez ces commandes :
+Pour obtenir des information sur les **Storage Classes** d'un cluster de WorkLoad saisissez ces commandes :
 
 ```bash
-# Affichage des Storage Class
+# Affichage des Storage Classes
 kubectl get storageclass
-# Description d'un Storage Class
+# Description d'une Storage Class
 kubectl describe storageclass nomclasse
 ```
 
 ### Création d'un storage class sur un autre VMFS
 
-Il est possible de rajouter un **Storage Class** sur un cluster de *WorkLoad* soit à l'extérieur du cluster VMWARE soit à l'intérieur de votre cluster VMware dans votre stockage NFS ou vSAN. 
+Sur notre cluster **VMware** nous avons deux **Datastore** connectés sur des serveur NFS. Un des datastore contient les machines virtuelles du cluster de *WorkLoad* ainsi que le dossier **Fcd** utilisé par la **Storage Class** du cluster de *Workload*. 
 
-Sur notre cluster VMware nous avons deux datastore sur des serveur NFS distants , les machines virtuelles du cluster de *WorkLoad* sont stockées sur un des datastores et les **Storage Class** se trouvent aussi sur ce datastore , nous allons donc créer un nouveau **storage class** sur le deuxième **Datastore**.
+Nous allons créer une nouvelle **Storage Class** sur le deuxième **Datastore**
 
-Revenez sur votre cluster VMware dana la gestion du stockage , sélectionnez le `second datastore`{.action}, cliquez sur `Summary`{.action} dans les onglet à gauche.
+Revenez sur votre cluster **VMware** dana la gestion du stockage, sélectionnez le `second datastore`{.action}, cliquez sur `Résumé`{.action} dans les onglet à gauche.
 
 Copiez l'`URL`{.action} en dessous de Type NFS 3.
 
-Editez un nouveau fichier nommé `secondstorageclass.yaml` avec ce contenu :
+Allez dans la console de la machine virtuelle **Bootstrap**, editez un nouveau fichier nommé `secondstorageclass.yaml` avec ce contenu :
 
 ```yaml
 kind: StorageClass
@@ -117,7 +116,7 @@ tanzu@bootstrap:~$
 Créer un fichier nommé default-pvc-storage.yaml avec ce contenu :
 
 ```yaml
-kind: PersistentVolumeClaim
+kind: persistantVolumeClaim
 apiVersion: v1
 metadata:
   name: default-pvc-storage
@@ -130,9 +129,9 @@ spec:
       storage: 2Gi
 ```
 
-la valeur **name** contient le nom du volume permanent dans votre cluster de *WorkLoad**  à coté de storageClassName est indiqué le nom de la **Storage Class** qui sera utilisé pour pour stocker ce volume persistent.
+la valeur **name** contient le nom du volume persistant dans votre cluster de *WorkLoad**  à coté de storageClassName est indiqué le nom de la **Storage Class** qui sera utilisé pour pour stocker ce volume persistant.
 
-Exécuter cette commande pour créer le volume persistent :
+Exécuter cette commande pour créer le volume persistant :
 
 ```bash
 # Create un  espace de nom qui sera utilisé pour mon volume persistant.
@@ -143,9 +142,9 @@ kubectl apply -f default-pvc-storage.yaml -n myspace
 kubectl get pv,pvc -n myspace
 ```
 
-Revenez sur votre interface vCenter dans l'inventaire cliquez à gauche sur l'îcone `dataCenter`{.action} ensuite allez dans l'onglet `Monitor`{.action} à droite et cliquez sur `Container Volumes`{.action} pour voir les volumes persistants.
+Revenez sur l'inventaire dans votre interface **vCenter** cliquez à gauche sur l'îcone `dataCenter`{.action} ensuite allez dans l'onglet `Surveiller`{.action} à droite et cliquez sur `volume de conteneur`{.action} pour voir les volumes persistants.
 
-le volume persistant créé précedemment apparait avec à sa droite le nom du **Datastore** sur lequel il est stocké.
+le volume persistant qui a été créé est affiché et l'on voit à sa droite le nom du **Datastore** sur lequel il est stocké.
 
 ![03 Display PV in vCenter 01](images/03-display-pv-vmware01.png){.thumbnail}
 
@@ -153,24 +152,24 @@ Cliquez sur le l'icone en forme de `Bloc note`{.action} à coté du volume pour 
 
 ![03 Display PV in vCenter 02](images/03-display-pv-vmware02.png){.thumbnail}
 
-Les informations concernant ce stockage persistant sont affichées et correspondent à ce qui a été créé à partir des commandes Kubernetes
+Les informations concernant ce stockage persistant sont affichées et correspondent à ce qui a été créé à partir des commandes Kubernetes.
 
 ![03 Display PV in vCenter 03](images/03-display-pv-vmware03.png){.thumbnail}
 
-Rendez-vous sur le `Datastore`{.action} qui est utilisé par défaut , ensuite cliquez à droite dans l'onglet sur `FIles`{.action} et faites défiler les dossiers du Datastore jusqu'au dossier `fcd`.
+Rendez-vous sur le `Datastore`{.action} qui est utilisé par défaut , ensuite cliquez à droite dans l'onglet sur `Fichiers`{.action} et faites défiler les dossiers du Datastore jusqu'au dossier `fcd`.
 
-Vous constatez que le dossier contient deux fichiers c'est un fichier vmdk qui contient les données du volumes persistant et un ficher temporaire associé.
+Vous constatez que le dossier contient deux fichiers, un fichier vmdk qui contient les données du volumes persistant et un ficher temporaire associé.
 
 ![03 Display PV in vCenter 04](images/03-display-pv-vmware04.png){.thumbnail}
 
 ### Création d'un volume persistant sur le deuxième **Storage Class**
 
-Revenez sur la machine virtuelle **Bootstrap** en ligne de commande.
+Revenez sur la machine virtuelle **Bootstrap** et utilisez la ligne de commande.
 
 Créez un fichier nommé second-storage-pvc.yaml
 
 ```yaml
-kind: PersistentVolumeClaim
+kind: persistantVolumeClaim
 apiVersion: v1
 metadata:
   name: second-storage-pvc
@@ -183,7 +182,7 @@ spec:
       storage: 2Gi
 ```
 
-Dans ce fichier à droite de storageClassName est noté secondstorageclass qui correspond au nom du **Storage Class** créé.
+Dans ce fichier à droite de storageClassName est noté `secondstorageclass` qui correspond au nom du **Storage Class** créé.
 
 Exécutez cette commande pour créer le volume persistant dans l'espace de nom **myspace** :
 
@@ -194,17 +193,17 @@ kubectl apply -f second-storage-pvc.yaml -n myspace
 kubectl get pv,pvc -n myspace
 ```
 
-Le volume persitant est créé sur le deuxième Datastore.
+Le volume persitant est créé sur le deuxième **Datastore**.
 
-Revenez sur vCenter dans le stockage au même endroit que précemment dans le dossier **fcd** vous constarez qu'aucun nouveau fichier apparait.
+Revenez dans l'interface **vCenter** vous constataterez que dans le dossier 
 
 ![04 Display PV2 in vCenter 01](images/04-display-pv2-vmware01.png){.thumbnail}
 
-cliquez à droite sur le second `Datastore`{.action} allez dans le dossier `fcd`{.action} de ce datastore. Vous constaterez que vous avait deux nouveaux fichiers comme sur le premier **Datastore**
+Cliquez à droite sur le second `Datastore`{.action} allez dans le dossier `fcd`{.action} de ce datastore. Vous constaterez que vous avez deux nouveaux fichiers comme sur le premier **Datastore**
 
 ![04 Display PV2 in vCenter 02](images/04-display-pv2-vmware02.png){.thumbnail}
 
-Revenez dans le `Datacenter`{.action} à la racine de datacenter, cliquez sur l'onglet `Monitor`{.action} choisissez `Container Volumes`{.action} pour voir apparaitres les deux volumes persistants avec leurs emplacements dans les *Datastore* 
+Revenez dans le `Datacenter`{.action} à la racine de datacenter, cliquez sur l'onglet `Surveiller`{.action} choisissez `Volumes de conteneur`{.action} pour voir apparaitre les deux volumes persistants avec leurs emplacements dans les **Datastore**. 
 
 ![04 Display PV2 in vCenter 03](images/04-display-pv2-vmware03.png){.thumbnail}
 
