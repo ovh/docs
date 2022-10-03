@@ -22,16 +22,15 @@ order: 05
 - Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir un identifiant actif dans vSphere.
 - Avoir déployé le cluster de **Workload** **TKG** à l'aide de ce guide [Administrer Tanzu Management Cluster Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management).
-- Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
-    
+  
 
 ### Présentation
 
 Les volumes persistants sont utilisés pour conserver des données de manière permanente sur un cluster **Kubernetes**, Ce mécanisme s'appuie sur des **Storage Classes**. Il existe diverses **Storage Classes**. Pour plus d'informations sur les **Storage classes** consultez ce guide [Kubernetes Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/).
 
-Lors du déploiement d'un cluster de **WorkLoad** une storageclass **CSI provisioner** est créé et pointe dans le dossier du **Datastore** qui contient les machines virtuelles du cluster de **WorkLoad. 
+Lors du déploiement d'un cluster de **WorkLoad** une **Storage Class** **CSI provisioner** est créée et pointe dans le dossier du **Datastore** qui contient les machines virtuelles du cluster de *WorkLoad*.
 
-A partir de votre cluster **VMware** rendez-vous dans l'inventaire sélectionnez à gauche `l'icône`{.action} concernant le stockage, positionnez-vous sur le `datastore`{.action} où a été déployé votre cluster de *WorkLoad* allez dans l'onglet `Files`{.action} et cliquez sur le dossier `FCD`{.action}.
+A partir de votre cluster **VMware** rendez-vous dans l'inventaire sélectionnez à gauche `l'icône`{.action} concernant le stockage, positionnez-vous sur le `datastore`{.action} où a été déployé votre cluster de *WorkLoad* allez dans l'onglet `Fichiers`{.action} et cliquez sur le dossier `FCD`{.action}.
 
 Le dossier est vide car le cluster de *WorkLoad* n'utilise pas encore de volumes persistants. 
 
@@ -59,7 +58,7 @@ kubectl config use-context tkgm-workload-cluster-admin@tkgm-workload-cluster
 
 ### Affichage des **Storage Classes** existantes
 
-Pour obtenir des information sur les **Storage Classes** d'un cluster de WorkLoad saisissez ces commandes :
+Pour obtenir des informations sur les **Storage Classes** d'un cluster de WorkLoad saisissez ces commandes :
 
 ```bash
 # Affichage des Storage Classes
@@ -103,7 +102,7 @@ kubectl apply -f secondstorageclass.yaml
 kubectl get storageclass
 ```
 
-Nous voyons donc apparaitre deux **Storage Class**
+Nous voyons donc apparaitre deux **Storage Classes**
 ```bash
 NAME                           PROVISIONER              RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
 default (default)              csi.vsphere.vmware.com   Delete          Immediate           true                   3d18h
@@ -195,7 +194,7 @@ kubectl get pv,pvc -n myspace
 
 Le volume persitant est créé sur le deuxième **Datastore**.
 
-Revenez dans l'interface **vCenter** vous constataterez que dans le dossier 
+Revenez dans l'interface **vCenter** vous constaterez que dans le dossier `fcd` vous n'avez pas de nouveaux fichiers.
 
 ![04 Display PV2 in vCenter 01](images/04-display-pv2-vmware01.png){.thumbnail}
 
