@@ -28,19 +28,19 @@ order: 05
 
 Les volumes persistants sont utilisés pour conserver des données de manière permanente sur un cluster **Kubernetes**, Ce mécanisme s'appuie sur des **Storage Classes**. Il existe diverses **Storage Classes**. Consultez ce guide [Kubernetes Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) pour approfondir le sujet.
 
-Lors du déploiement d'un cluster de **WorkLoad** une **Storage Class** **CSI provisioner** est créée et pointe dans le dossier du **Datastore** qui contient les machines virtuelles du cluster de *WorkLoad*.
+Lors du déploiement d'un cluster de *WorkLoad* une **Storage Class** **CSI provisioner** est créée et pointe dans le dossier du **Datastore** qui contient les machines virtuelles du cluster de *WorkLoad*.
 
-A partir de votre cluster **VMware** rendez-vous dans l'inventaire sélectionnez à gauche `l'icône`{.action} concernant le stockage, positionnez-vous sur le `datastore`{.action} où a été déployé votre cluster de *WorkLoad* allez dans l'onglet `Fichiers`{.action} et cliquez sur le dossier `FCD`{.action}.
+A partir de votre cluster **VMware** rendez-vous dans l'inventaire sélectionnez à gauche `l'icône`{.action} concernant le stockage, positionnez-vous sur le `datastore`{.action} où a été déployé votre cluster de *WorkLoad* allez dans l'onglet `Fichiers`{.action} et cliquez sur le dossier `fcd`{.action}.
 
 Le dossier est vide car le cluster de *WorkLoad* n'utilise pas encore de volumes persistants. 
 
 ![01 Affichage dossier FCD](images/01-display-fcd-folder01.png){.thumbnail}
 
-Il est possible de créer d'autres **Storage classes** pour le cluster de *WorkLoad*.
+Il est possible de créer d'autres **Storage classes** pour chaque cluster de *WorkLoad*.
 
 ## En pratique
 
-Nous allons nous connecter sur un cluster de *WorkLoad* de **Tanzu Kubernetes Grid** à partir de la console de la machine virtuelle **Bootstrap**. Vous pouvez vous aider de ce guide [Administrer Tanzu Management Cluster Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management) pour créer un cluster de workload et l'administrer.
+Nous allons nous connecter sur un cluster de *WorkLoad* à partir de la console de la machine virtuelle **Bootstrap**. Vous pouvez vous aider de ce guide [Administrer Tanzu Management Cluster Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management) pour créer un cluster de workload et l'administrer.
 
 A partir de la console de la machine virtuelle de **Bootstrap** utiliser cette commande pour voir les contextes que l'on peut utiliser sur ce cluster :
 
@@ -69,7 +69,7 @@ kubectl describe storageclass nomclasse
 
 ### Création d'une storage class sur un autre **Datastore**
 
-Sur notre cluster **VMware** nous avons deux **Datastore** connectés sur des serveur NFS. Un des datastores contient les machines virtuelles du cluster de *WorkLoad* ainsi que le dossier **Fcd** utilisé par la **Storage Class** du cluster de *Workload*. 
+Sur notre cluster **VMware** nous avons deux **Datastore** connectés sur des serveur NFS. Un des datastores contient les machines virtuelles du cluster de *WorkLoad* ainsi que le dossier **fcd** utilisé par la **Storage Class** du cluster de *Workload*. 
 
 Nous allons créer une nouvelle **Storage Class** sur le deuxième **Datastore**
 
@@ -93,7 +93,7 @@ parameters:
   datastoreurl: "ds:///vmfs/volumes/xxxxxxxxxxxxxxxxx/"
 ```
 
-Remplacez `ds:///vmfs/volumes/xxxxxxxxxxxxxxxxx/` par l'URL que vous venez de copier.
+Modifier le fichier en remplaçant `ds:///vmfs/volumes/xxxxxxxxxxxxxxxxx/` par l'URL que vous venez de copier.
 
 Ensuite exécutez cette commande :
 
@@ -139,7 +139,7 @@ Exécuter cette commande pour créer le volume persistant :
 kubectl create namespace myspace
 # Application du fichier de configuration dans l'espace de nom créé.
 kubectl apply -f default-pvc-storage.yaml -n myspace
-# Affichage des volumes persistant de l'espace de nom créé
+# Affichage des volumes persistants de l'espace de nom créé
 kubectl get pv,pvc -n myspace
 ```
 
@@ -149,7 +149,7 @@ Le volume persistant qui a été créé est affiché et l'on voit à sa droite l
 
 ![03 Display PV in vCenter 01](images/03-display-pv-vmware01.png){.thumbnail}
 
-Cliquez sur le l'icône en forme de `Bloc note`{.action} à côté du volume pour afficher les détails
+Cliquez sur le l'icône en forme de `Bloc note`{.action} à gauche du volume pour afficher les détails.
 
 ![03 Display PV in vCenter 02](images/03-display-pv-vmware02.png){.thumbnail}
 
@@ -190,7 +190,7 @@ Exécutez cette commande pour créer le volume persistant dans l'espace de nom *
 ```bash
 # Application du fichier de configuration dans l'espace de nom créé.
 kubectl apply -f second-storage-pvc.yaml -n myspace
-# Affichage des volumes persistant de l'espace de nom créé
+# Affichage des volumes persistants de l'espace de nom créé
 kubectl get pv,pvc -n myspace
 ```
 
