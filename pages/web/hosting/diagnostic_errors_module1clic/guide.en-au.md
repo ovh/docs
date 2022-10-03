@@ -2,7 +2,7 @@
 title: Resolving the most common 1-click module errors
 slug: error-frequently-1-click-modules
 excerpt: Find out how to diagnose the most common cases of 1-click module creation errors
-section: Diagnostic
+section:  Troubleshooting
 Order: 02
 ---
 

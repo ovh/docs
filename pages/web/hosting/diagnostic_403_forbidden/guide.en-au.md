@@ -2,7 +2,7 @@
 title: What do I do if I have a 403 forbidden page?
 excerpt: How to get your website back online if it displays a 403 forbidden page
 slug: diagnostic-403-forbidden
-section: Diagnostic
+section:  Troubleshooting
 Order: 08
 ---
 
