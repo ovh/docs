@@ -90,7 +90,7 @@ Vous pouvez cependant affiner les droits via l'import d'un fichier de configurat
 
 ![S3 users](images/highperf-identity-and-access-management-20220928084435242.png)
 
-Cliquez sur le bouton  `...`{.action} à droute de votre utilisateur puis sur `Importer un fichier JSON`{.action}.
+Cliquez sur le bouton  `...`{.action} à droite de votre utilisateur puis sur `Importer un fichier JSON`{.action}.
 
 > [!primary]
 >

@@ -47,7 +47,7 @@ Vous devez lier un utilisateur au bucket :
 
 ![Link a user](images/highperf-create-container-20220928082210758.png)
 
-Pour cela, vous pouvez soit lier un utilisateur S3 existant :
+Pour cela, vous pouvez lier un utilisateur S3 existant :
 
 ![Link a user](images/highperf-create-container-20220928082306958.png)
 
@@ -55,7 +55,7 @@ Vous pouvez voir les informations d'identification de l'utilisateur, en cliquant
 
 ![view credentials](images/highperf-create-container-20220928082435427.png)
 
-Ou vous pouvez créer un nouvel utilisateur S3 :
+Si vous n'en avez pas déjà, vous pouvez créer un nouvel utilisateur S3 :
 
 ![Create S3 user](images/highperf-create-container-20220928082604314.png)
 

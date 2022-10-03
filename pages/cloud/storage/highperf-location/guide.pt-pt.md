@@ -1,5 +1,5 @@
 ---
-title: Localização (pontos de extremidade) (EN)
+title: Localização (endpoints) (EN)
 slug: s3/location
 section: Object Storage S3 High Performance
 order: 025

@@ -17,7 +17,7 @@ Les offres de stockage objet permettent de déposer à travers un point d’acc�
 
 La classe de stockage Standard offre un service de stockage objet scalable, compatible avec la grande majorité des cas d'usages, adapté à tous types de volumétrie. L’offre s’appuie sur un stockage sur disques HDD au sein d'une architecture résiliente dans un datacentre. L’offre est accessible depuis une API S3.
 
-Cette offre est adaptée aux cas d'usage suivants : media / content storage & delivery,  datalake, website, backup,  logs et métriques d'applications.
+Cette offre est adaptée aux cas d'usage suivants : media / content storage & delivery, datalake, website, backup, logs et métriques d'applications.
 
 ### High Performance object storage - S3 API
 

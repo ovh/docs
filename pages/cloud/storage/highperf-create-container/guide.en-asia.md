@@ -22,7 +22,7 @@ order: 040
 - A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 - Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB)
 
-## In practice
+## Instructions
 
 ### Using the Control Panel
 

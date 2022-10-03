@@ -14,7 +14,7 @@ section: Cloud Disk Array
 > L'utilisation d'une interface web est le moyen le plus simple de créer un IP LCAs.
 >
 
-Tout d'abord, connectez-vous au [l’espace client].(https://ca.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph.
+Tout d'abord, connectez-vous au [l’espace client](https://ca.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph.
 
 Vous trouverez ici la LCA existante, par défaut il n'y a pas de LCA.
 

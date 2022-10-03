@@ -11,7 +11,7 @@ section: Cloud Disk Array
 
 > [!primary]
 >
-> L'utilisation d'une interface web est le moyen le plus simple de créer un des ACL IP.
+> L'utilisation d'une interface web est le moyen le plus simple de créer un ACL IP.
 >
 
 Tout d'abord, connectez-vous à [l’espace client](https://www.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph.

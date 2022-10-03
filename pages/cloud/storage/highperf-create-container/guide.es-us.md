@@ -24,7 +24,7 @@ routes:
 - A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
 - Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
-## In practice
+## Instructions
 
 ### Using the Control Panel
 
