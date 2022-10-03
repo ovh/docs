@@ -118,6 +118,8 @@ In case the user doesn't have the right privilege, you will get a *NOPERM* respo
 
 [Configuring vRack for Public Cloud](https://docs.ovh.com/ie/en/public-cloud/public-cloud-vrack/)
 
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/redis) to find how to connect to your database with several languages.
+
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
