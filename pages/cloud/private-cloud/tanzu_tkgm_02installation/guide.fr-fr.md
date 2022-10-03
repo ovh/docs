@@ -31,7 +31,7 @@ Vous pouvez installer ce produit sur votre infrastructure OVHcloud pour profiter
 - Avoir un identifiant actif dans vSphere.
 - Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
 - Disposer de ces ressources :
-    - 8 Go de mémoire, 4 vCPU et 250 Go de stockage pour la machine virtuelle **bootstrap**.
+    - 8 Go de mémoire, 4 vCPU et 250 Go de stockage pour la machine virtuelle d'administration nommmée **Bbootstrap**.
     - 16 Go de mémoire, 4 vCPU, 40 Go de stockage par nœud Kubernetes (Il faut 6 nœuds pour une installation du cluster d'administration en mode production et 6 nœuds par cluster de **Workload** dans le même mode).
     
 ## En pratique
@@ -273,7 +273,7 @@ Cliquez sur `NEXT`{.action}
 
 ![03 Create TKG CLUSTER 09](images/03-create-tkg-cluster09.png){.thumbnail}
 
-Dans l'option **Metadata** dans l'onglet **LABELS (OPTIONAL)** saisissez `tkgm` pour le nom.
+Dans l'option **Metadata** dans l'onglet **LABELS (OPTIONAL)** saisissez `tkgm` pour le nom et sa valeur.
 
 Cliquez sur `NEXT`{.action} 
 
@@ -328,6 +328,13 @@ Le déploiement du cluster **Tanzu Kubernetes Grid** est lancé veuillez attendr
 ![03 Create TKG CLUSTER 18](images/03-create-tkg-cluster18.png){.thumbnail}
 
 Une autre indication qui signale que l'installation est terminée se trouve dans la console de la machine virtuelle de **Bootstrap** avec le message **Management cluster created** et **You can now create your first workload cluster etc...**.
+
+> [!Warning]
+> 
+> Notez ou copier le nom du fichier **yaml** qui se trouve dans le dossier /home/tanzu/.config/tanzu/tkg/clusterconfigs il servira à la création d'un fichier de configuration pour l'installation d'un cluster de *WorkLoad*
+>
+
+
 
 ![03 Create TKG CLUSTER 19](images/03-create-tkg-cluster19.png){.thumbnail}
 
