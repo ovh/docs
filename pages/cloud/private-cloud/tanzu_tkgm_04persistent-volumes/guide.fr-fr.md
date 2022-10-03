@@ -58,7 +58,7 @@ kubectl config use-context tkgm-workload-cluster-admin@tkgm-workload-cluster
 
 ### Affichage des **Storage Classes** existantes
 
-Pour obtenir des informations sur les **Storage Classes** d'un cluster de WorkLoad saisissez ces commandes :
+Pour obtenir des informations sur les **Storage Classes** d'un cluster de *WorkLoad* saisissez ces commandes :
 
 ```bash
 # Affichage des Storage Classes
@@ -73,7 +73,7 @@ Sur notre cluster **VMware** nous avons deux **Datastore** connectés sur des se
 
 Nous allons créer une nouvelle **Storage Class** sur le deuxième **Datastore**
 
-Revenez sur votre cluster **VMware** dana la gestion du stockage, sélectionnez le `second datastore`{.action}, cliquez sur `Résumé`{.action} dans les onglet à gauche.
+Revenez sur votre cluster **VMware** dans la gestion du stockage, sélectionnez le `second datastore`{.action}, cliquez sur `Résumé`{.action} dans les onglet à gauche.
 
 Copiez l'`URL`{.action} en dessous de Type NFS 3.
 
@@ -145,7 +145,7 @@ kubectl get pv,pvc -n myspace
 
 Revenez sur l'inventaire dans votre interface **vCenter** cliquez à gauche sur l'îcone `dataCenter`{.action} ensuite allez dans l'onglet `Surveiller`{.action} à droite et cliquez sur `volume de conteneur`{.action} pour voir les volumes persistants.
 
-le volume persistant qui a été créé est affiché et l'on voit à sa droite le nom du **Datastore** sur lequel il est stocké.
+Le volume persistant qui a été créé est affiché et l'on voit à sa droite le nom du **Datastore** sur lequel il est stocké.
 
 ![03 Display PV in vCenter 01](images/03-display-pv-vmware01.png){.thumbnail}
 
