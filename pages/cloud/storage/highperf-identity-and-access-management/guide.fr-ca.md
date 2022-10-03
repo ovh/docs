@@ -1,12 +1,12 @@
 ---
 title: Gestion des identités et des accès
-slug: s3/gestion-des-identites-et-des-acces
+slug: s3/identity-and-access-management
 excerpt:
 section: Object Storage S3 High Performance
 order: 030
 ---
 
-**Dernière mise à jour le 08/12/2021**
+**Dernière mise à jour le 27/09/2022**
 
 ## Objectif
 
@@ -14,54 +14,83 @@ Ce guide a pour objectif de vous montrer la gestion de vos identités et accès 
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-- Avoir créé un [utilisateur S3](https://docs.ovh.com/ca/fr/storage/s3/debuter-avec-s3/).
+- Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
 
-### Actions possibles via l'espace client
-
 Connectez-vous à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans le menu de gauche.
 
-#### Gestion des accès à un bucket via un profil
+### Création d'un utilsateur
+
+Cliquez sur `Créer un utilisateur`{.action}.
+
+Si vous avez déjà des utilisateurs OpenStack, vous pouvez selectionner l'un d'entre eux :
+
+![Add S3 user](images/highperf-identity-and-access-management-20220928085304931.png)
+
+Puis :
+
+![Add S3 user](images/highperf-identity-and-access-management-2022092808554688.png)
+
+> [!primary]
+>
+> Si vous faites le choix de sélectionner un utilisateur existant, assurez-vous que celui-ci dispose du rôle `ObjectStore operator` ou `Administrator`.
+>
+
+Sinon, créez un nouvel utilisateur :
+
+![Add S3 user](images/highperf-identity-and-access-management-20220928085501719.png)
+
+Une fois votre utilisateur créé, vous verrez les informations d'identification :
+
+![Credentials](images/highperf-identity-and-access-management-20220928085714656.png)
+
+> [!primary]
+>
+> En cliquant sur le bouton `...`{.action} à droite d'un utilisateur, vous pouvez notamment télécharger le fichier de configuration rClone, voir la clé secrète de l'utilisateur, ou supprimer l'utilisateur.
+>
+
+
+### Gestion des accès à un bucket via un profil
 
 Vous avez la possibilité de définir l'accès à vos buckets via des profils prédéfinis.
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Ajouter un utilisateur à un conteneur`{.action}
+Cliquez sur le bouton `...`{.action} à droite de votre bucket puis sur `Ajouter un utilisateur à un conteneur`{.action}
 
-![Add a user to a container](images/HighPerf-Identity-and-Access-Management-20211110113315479.png)
+![Add a user to a container](images/highperf-identity-and-access-management-20220928090844174.png)
 
 Sélectionnez l'utilisateur à ajouter à votre bucket et cliquez sur `Suivant`{.action}.
 
-![Add a user to my container](images/HighPerf-Identity-and-Access-Management-20211110113404779.png)
+![Add a user to my container](images/highperf-identity-and-access-management-20220928083641625.png)
 
 Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Confirmer`{.action}.
 
-![Add a user to my container - Role](images/HighPerf-Identity-and-Access-Management-20211110113419531.png)
+![Add a user to my container - Role](images/highperf-identity-and-access-management-20220928083800300.png)
 
-#### Gestion des accès à un objet via un profil
+### Gestion des accès à un objet via un profil
 
 Vous pouvez également définir l'accès à vos objets via des profils prédéfinis.
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre objet puis sur `Ajouter un utilisateur à mon object`{.action}.
+Cliquez sur le bouton `...`{.action} à droite de votre objet puis sur `Ajouter un utilisateur à mon objet`{.action}.
 
-![object menu](images/HighPerf-Identity-and-Access-Management-20211110120219742.png)
+![object menu](images/highperf-identity-and-access-management-20220928084137918.png)
 
 Sélectionnez l'utilisateur et cliquez sur `Suivant`{.action}.
 
-![add user to my object](images/HighPerf-Identity-and-Access-Management-20211110120309990.png)
+![add user to my object](images/highperf-identity-and-access-management-20220928084222940.png)
 
 Sélectionnez le profil d'accès pour cet utilisateur et cliquez sur `Confirmer`{.action}.
 
-![add role to my object](images/HighPerf-Identity-and-Access-Management-20211110120401943.png)
+![add role to my object](images/highperf-identity-and-access-management-20220928084308265.png)
 
-#### Gestion avancée des accès aux ressources
+### Gestion avancée des accès aux ressources
 
 Vous pouvez cependant affiner les droits via l'import d'un fichier de configuration JSON. Pour cela, rendez-vous dans l'onglet `Utilisateurs de stratégies S3`{.action}.
 
-![utilisateurs s3](images/HighPerf-Identity-and-Access-Management-20211110113756874.png)
+![S3 users](images/highperf-identity-and-access-management-20220928084435242.png)
 
-Cliquez sur les `...`{.action} à la fin de la ligne de votre utilisateur puis sur `Importer un fichier JSON`{.action}.
+Cliquez sur le bouton  `...`{.action} à droite de votre utilisateur puis sur `Importer un fichier JSON`{.action}.
 
 > [!primary]
 >
