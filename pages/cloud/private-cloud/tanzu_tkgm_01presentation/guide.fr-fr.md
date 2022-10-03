@@ -10,7 +10,7 @@ order: 02
 
 ## Objectif
 
-**Ce guide vous présente Tanzu Kubernetes Grid et vous indique les possibilités d'intégration dans votre solution Hosted Private Cloud Powered by VMware**
+**Ce guide vous présente Tanzu Kubernetes Grid et vous indique les possibilités d'intégration dans votre solution Hosted Private Cloud Powered by VMware.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -66,7 +66,7 @@ Une application peut être constituée de plusieurs **pods** qui communiquent en
 
 ### Gestion des volumes persistants
 
-Par défaut lors de l'arrêt ou d'un crash d'un **pods** les données contenues dans ce **pod** sont perdues. Pour pouvoir stocker des données de manière permanente il est nécessaire de créér des volumes persistants et de les associer aux applications.
+Par défaut lors de l'arrêt ou d'un crash d'un **pod** les données contenues dans ce **pod** sont perdues. Pour pouvoir stocker des données de manière permanente il est nécessaire de créér des volumes persistants et de les associer aux applications.
 
 Les volumes persistants sont stockés par défaut sur le stockage VMware (vSAN ou NFS) qui a servi pour le déploiement du cluster de *WorkLoad* en utilisant les api VMWARE (vSPHERE Cloud Native Storage).
 
