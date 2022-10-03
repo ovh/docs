@@ -77,7 +77,7 @@ Encontre aqui os três tipos de reencaminhamentos detalhados etapa a etapa.
 
 Esta opção permite, após a introdução do domínio reencaminhado, apresentar o domínio alvo na barra de endereços do seu browser em vez do domínio reencaminhado.
 
-- **Exemplo**: se reencaminhar `domain1.tld` para `domain2.tld`, é, é `domain2.tld` que se encontra na barra de endereços do seu browser.
+- **Exemplo**: se reencaminhar `domain1.tld` para `domain2.tld`, é que está a apontar para a barra de endereços no seu browser.
 
 ![Gif1](images/redirect1.gif){.thumbnail}
 
@@ -144,7 +144,7 @@ Tal como para a opção 1, esta opção permite apresentar, após a introdução
 No entanto, esta deve ser utilizada de forma pontual, por exemplo para acontecimentos efémeros.<br>
 De facto, o posicionamento nos motores de busca é menos eficiente do que com um reencaminhamento **visível permanente** do tipo 301 (código HTTP).
 
-- **Exemplo**: se reencaminhar `domain1.tld` para `domain2.tld`, é, é `domain2.tld` que se encontra na barra de endereços do seu browser.
+- **Exemplo**: se reencaminhar `domain1.tld` para `domain2.tld`, é que está a apontar para a barra de endereços no seu browser.
 
 ![Gif1](images/redirect1.gif){.thumbnail}
 
