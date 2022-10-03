@@ -67,7 +67,7 @@ kubectl get storageclass
 kubectl describe storageclass nomclasse
 ```
 
-### Création d'une storage class sur un autre **DataStore**
+### Création d'une storage class sur un autre **Datastore**
 
 Sur notre cluster **VMware** nous avons deux **Datastore** connectés sur des serveur NFS. Un des datastore contient les machines virtuelles du cluster de *WorkLoad* ainsi que le dossier **Fcd** utilisé par la **Storage Class** du cluster de *Workload*. 
 
@@ -77,7 +77,9 @@ Revenez sur votre cluster **VMware** dana la gestion du stockage, sélectionnez 
 
 Copiez l'`URL`{.action} en dessous de Type NFS 3.
 
-Allez dans la console de la machine virtuelle **Bootstrap**, editez un nouveau fichier nommé `secondstorageclass.yaml` avec ce contenu :
+![02 Select URL01](images/02-display-datastore-url01.png)
+
+Allez dans la console de la machine virtuelle **Bootstrap**, éditez un nouveau fichier nommé `secondstorageclass.yaml` avec ce contenu :
 
 ```yaml
 kind: StorageClass
