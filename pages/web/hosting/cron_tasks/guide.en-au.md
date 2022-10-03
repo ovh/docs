@@ -2,8 +2,8 @@
 title: 'Using automated tasks on a Web Hosting plan'
 excerpt: 'Find out how to configure scheduled jobs on your Web Hosting'
 slug: hosting_automated_taskscron
-legacy_guide_number: g1990
-section: 'Automated tasks (CRON)'
+section: Automated tasks (CRON)
+order: 01
 ---
 
 **Last updated 22nd September 2020**
