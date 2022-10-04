@@ -1,9 +1,9 @@
 ---
 title: 'Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée'
 slug: mutualise-consulter-les-statistiques-et-les-logs-de-mon-site
-legacy_guide_number: 1344
 excerpt: 'Découvrez comment consulter les statistiques et logs de votre site internet'
 section: 'Optimiser son site'
+order: 04
 ---
 **Dernière mise à jour le 05/01/2021**
 
