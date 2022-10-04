@@ -37,7 +37,7 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/
 |![email](images/mxplan-creation-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-creation-new-step1.png){.thumbnail}<br>Repérez la `Référence serveur` dans le cadre « Résumé »|
 |Poursuivre vers « [Version historique de l'offre MX Plan](./#version-historique-de-loffre-mx-plan_2) »|Poursuivre vers « [Nouvelle version de l'offre MX Plan](./#nouvelle-version-de-loffre-mx-plan) »|
 
-### Nouvelle version de l'offre MX Plan
+### Nouvelle version de l'offre MX Plan <a name="newmxplan"></a>
 
 #### Accéder à la gestion du service e-mail
 
@@ -89,7 +89,7 @@ Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} 
 
 ![email](images/mxplan-new-reset.png){.thumbnail}
 
-### Version historique de l'offre MX Plan
+### Version historique de l'offre MX Plan <a name="mxplanlegacy"></a>
 
 #### Accéder à la gestion du service e-mail
 
