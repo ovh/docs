@@ -3,10 +3,10 @@ title: 'Passer son site internet en HTTPS grâce au SSL'
 slug: passer-site-internet-https-ssl
 excerpt: 'Découvrez comment passer votre site internet en HTTPS grâce au SSL'
 section: SSL
-order: 2
+order: 02
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 04/10/2022**
 
 ## Objectif
 
@@ -135,6 +135,16 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
+> [!warning]
+>
+> Pour les offres d'hébergement "Cloud Web",  le script à utiliser est le suivant :
+> ```
+> RewriteEngine On
+> RewriteCond %{ENV:HTTPS} !on
+> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+> ```
+>
+
 ### Étape 4 : vérifier le bon fonctionnement de votre site
 
 Une fois que vous avez activé le HTTPS sur votre site internet, vérifiez que celui-ci fonctionne correctement et que tout son contenu s'affiche comme avant la manipulation. Pour cela, essayez d'accéder à ce dernier, vérifiez si aucun message ou avertissement n'apparaît et prenez quelques instants pour examiner la mise en page de plusieurs parties de votre site. 
@@ -144,5 +154,9 @@ Si vous constatez le moindre dysfonctionnement, nous vous recommandons vivement 
 Si votre site s'affiche correctement et qu'aucun avertissement ne s'affiche après le passage en HTTPS, vous avez correctement effectué la manipulation. Si vous souhaitez activer le HTTPS sur un autre site, vous devrez réitérer l'intégralité des manipulations décrites dans cette documentation.
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

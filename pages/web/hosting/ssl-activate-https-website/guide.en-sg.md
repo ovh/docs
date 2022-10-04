@@ -3,10 +3,10 @@ title: 'Activating HTTPS on your website with an SSL certificate'
 slug: activate-https-website-ssl
 excerpt: 'Find out how to activate HTTPS on your website with an SSL certificate'
 section: SSL
-order: 2
+order: 02
 ---
 
-**Last updated 5th May 2020**
+**Last updated 4th October 2022**
 
 ## Objective
 
@@ -135,6 +135,16 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
+> [!warning]
+>
+> For "Cloud Web" hosting plans, the script to use is as follows:
+> ```
+> RewriteEngine On
+> RewriteCond %{ENV:HTTPS} !on
+> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+> ```
+>
+
 ### Step 4: Check that your website is working properly.
 
 Once you have activated HTTPS on your website, please check that it works properly, and that all of your content displays the same way it did before you made any changes. To do this, try loading the website and check that no messages or warnings appear. Then take a few moments to check the layout and formatting for different areas of your website. 
@@ -144,5 +154,9 @@ If you notice that something is not working or displaying properly, we strongly 
 If your website loads and displays properly, and there are no warning messages appearing once you activate HTTPS, then you have carried out the operation correctly. If you would like to activate HTTPS for another website, you will need to follow all of the steps described in this guide again for it.
 
 ## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en-sg/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
