@@ -3,20 +3,20 @@ title: 'Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL'
 slug: aktywacja-https-ssl-na-stronie-WWW
 excerpt: 'Dowiedz się, jak aktywować protokół HTTPS na stronie WWW za pomocą certyfikatu SSL'
 section: SSL
-order: 2
+order: 02
 ---
 
-**Ostatnia aktualizacja z dnia 29-11-2018**
+**Ostatnia aktualizacja z dnia 04-10-2022**
 
 ## Wprowadzenie
 
-Jeśli wykupiłeś hosting w OVH, możesz uzyskać bezpłatny certyfikat SSL. Certyfikat ten gwarantuje poufność przesyłanych danych, a Twoje strony WWW stają się dostępne za pomocą połączenia HTTPS. Aby Twoje strony WWW mogły korzystać z bezpiecznego połączenia, wykonaj wcześniej kroki opisane w niniejszej dokumentacji.
+Jeśli wykupiłeś hosting w OVHcloud, możesz uzyskać bezpłatny certyfikat SSL. Certyfikat ten gwarantuje poufność przesyłanych danych, a Twoje strony WWW stają się dostępne za pomocą połączenia HTTPS. Aby Twoje strony WWW mogły korzystać z bezpiecznego połączenia, wykonaj wcześniej kroki opisane w niniejszej dokumentacji.
 
 **Dowiedz się, jak aktywować protokół HTTPS na stronie WWW za pomocą certyfikatu SSL.**
 
 ## Wymagania początkowe
 
-- Posiadanie [certyfikatu SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external} zainstalowanego na [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
+- Posiadanie [certyfikatu SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external} zainstalowanego na [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Posiadanie co najmniej jednej strony WWW zainstalowanej i dostępnej na Twoim hostingu OVH
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
 
@@ -45,10 +45,10 @@ Aktywacja certyfikatu SSL na Twoim hostingu jest wykonywana w [Panelu klienta](h
 
 |Operacja|Opis |
 |---|---|
-|Aktywacja certyfikatu SSL na hostingu|Umożliwia OVH instalację certyfikatu SSL na Twoim hostingu. Wybierz jeden z typów certyfikatów. Upewnij się, że wybierasz certyfikat najbardziej odpowiedni dla Twojego projektu.|
+|Aktywacja certyfikatu SSL na hostingu|Umożliwia OVHcloud instalację certyfikatu SSL na Twoim hostingu. Wybierz jeden z typów certyfikatów. Upewnij się, że wybierasz certyfikat najbardziej odpowiedni dla Twojego projektu.|
 |Aktywacja SSL na stronie w opcji MultiSite|Strona WWW, na której chcesz aktywować HTTPS musi być skonfigurowana na Twoim hostingu jako „MultiSite”. Upewnij się, że certyfikat SSL jest aktywny dla tego hostingu. |
 
-Dokładny opis realizacji tych dwóch operacji dostępny jest w naszej dokumentacji [Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/){.external}. Jeśli właśnie wykupiłeś hosting w OVH, możliwe, że jest już na nim zainstalowany bezpłatny certyfikat SSL oraz że jest on już aktywny dla stron w opcji MultiSite.
+Dokładny opis realizacji tych dwóch operacji dostępny jest w naszej dokumentacji [Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/){.external}. Jeśli właśnie wykupiłeś hosting w OVHcloud, możliwe, że jest już na nim zainstalowany bezpłatny certyfikat SSL oraz że jest on już aktywny dla stron w opcji MultiSite.
 
 Aby to sprawdzić, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie przejdź do sekcji`Informacje ogólne`{.action}. Pod napisem „Certyfikat SSL” powinna pojawić się informacja „Tak” wskazująca, że certyfikat SSL jest zainstalowany na Twoim hostingu. 
 
@@ -68,9 +68,9 @@ Zalecamy zatem zastosowanie podanych niżej wskazówek. Pamiętaj, że celem tyc
 
 > [!warning]
 >
-> OVH udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+> OVHcloud udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”. 
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”. 
 >
 
 #### 2.1 Unikanie mieszania treści HTTP i HTTPS
@@ -135,6 +135,16 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
+> [!warning]
+>
+> W przypadku pakietów hostingowych [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/) użyj następującego skryptu:
+> ```
+> RewriteEngine On
+> RewriteCond %{ENV:HTTPS} !on
+> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+> ```
+>
+
 ### Etap 4: sprawdzenie prawidłowego działania Twojej strony WWW
 
 Po aktywowaniu HTTPS na Twojej stronie WWW sprawdź, czy strona działa prawidłowo, i czy jej zawartość wyświetla się tak samo, jak przed operacją. W tym celu spróbuj uzyskać dostęp do strony, sprawdź, czy nie wyświetla się żaden komunikat lub ostrzeżenie i poświęć chwilę, aby sprawdzić layout poszczególnych części Twojej strony. 
@@ -145,4 +155,8 @@ Jeśli Twoja strona wyświetla się poprawnie i nie pojawia się żadne ostrzeż
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na  stronie <https://community.ovh.com/en/>
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

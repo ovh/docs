@@ -28,7 +28,9 @@ order: 3
  }
 </style>
 
-**Last updated 26th September 2022**
+**Last updated 4th October 2022**
+
+## Objective
 
 In this tutorial, we are using [Velero](https://velero.io/){.external} to backup and restore an OVHcloud Managed Kubernetes cluster.
 
@@ -42,11 +44,13 @@ For Persistent Volumes backup, we are using the [CSI snapshot support for Velero
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
-## Creating the S3 bucket for Velero
+## Instructions
+
+### Creating the S3 bucket for Velero
 
 Velero needs a S3 bucket as storage backend to store the data from your cluster. In this section you will create your S3 bucket on OVHcloud Object Storage.
 
-### Prepare your working environment
+#### Preparing your working environment
 
 Before creating your S3 bucket you need to:
 
@@ -54,7 +58,7 @@ Before creating your S3 bucket you need to:
 
 - [Get Openstack RC File v3 from Horizon](../../public-cloud/access_and_security_in_horizon/)
 
-### Setting the OpenStack environment variables
+#### Setting the OpenStack environment variables
 
 You should now have access to your OpenStack RC file, with a filename like `<user_name>-openrc.sh`, and the username and password for your OpenStack account.
 
@@ -70,7 +74,7 @@ The shell will ask you for your OpenStack password:
 Please enter your OpenStack Password for project <project_name> as user <user_name>:
 </code></pre>
 
-### Create EC2 credentials
+#### Creating EC2 credentials
 
 S3 tokens are different, you need 2 parameters (**access** and **secret**) to generate a S3 token.
 
@@ -94,7 +98,7 @@ Please write down the **access** and **secret** parameters:
 | user_id    | d74d05ff121b44bea9216495e7f0df61
 +------------+----------------------------------------------------------------------------------------------------------------------------+</code></pre>
 
-### Configure awscli client
+#### Configuring awscli client
 
 Install the `awscli` client:
 
@@ -119,7 +123,7 @@ s3api =
   endpoint_url = https://s3.<public_cloud_region_without_digit>.cloud.ovh.net
 ```
 
-### Create a S3 bucket for Velero
+#### Create a S3 bucket for Velero
 
 Create a new bucket:
 
@@ -127,7 +131,7 @@ Create a new bucket:
 aws --profile default s3 mb s3://velero-s3
 ```
 
-## Installing Velero
+### Installing Velero
 
 We strongly recommend that you use an [official release of Velero](https://github.com/vmware-tanzu/velero/releases). The tarballs for each release contain the velero command-line client. Expand the tarball and add it to your PATH.
 
@@ -229,7 +233,7 @@ csi-cinder-snapclass-in-use-v1-velero   cinder.csi.openstack.org   Delete       
 csi-cinder-snapclass-v1                 cinder.csi.openstack.org   Delete           4h46m   <none>
 </code></pre>
 
-## Verifying Velero is working without Persistent Volumes
+### Verifying Velero is working without Persistent Volumes
 
 To verify that Velero is working correctly, let's test with one example deployment:
 
@@ -378,7 +382,7 @@ Before continuing, clean the `nginx-example` namespace:
 kubectl delete namespace nginx-example
 ```
 
-## Verifying Velero is working with Persistent Volumes
+### Verifying Velero is working with Persistent Volumes
 
 To verify that Velero is working correctly with Volume Snapshots of Persistent Volumes, let's test with one example deployment:
 
@@ -457,7 +461,7 @@ spec:
   type: LoadBalancer
 ```
 
-And apply it to the cluster:
+Apply it to the cluster:
 
 ```bash
 kubectl apply -f nginx-example-with-pv.yml
@@ -756,7 +760,62 @@ $ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.
 
 Your namespace with resources and PVC have been correctly restored.
 
-## Cleanup
+### Scheduling backup with Velero
+
+With Velero you can schedule backups regularly, a good solution for disaster recovery.
+
+In this guide you will create a `schedule` Velero resource that will create regular backups.
+
+Copy the following code into a `schedule.yml` file:
+
+```yaml
+apiVersion: velero.io/v1
+kind: Schedule
+metadata:
+  name: daily-snapshot
+  namespace: velero
+spec:
+  schedule: '*/10 * * * *'
+  template:
+    defaultVolumesToRestic: false
+
+    includedNamespaces:
+    - nginx-example
+
+    ttl: 168h0m0s
+    storageLocation: default
+```
+
+Apply it to the cluster:
+
+```bash
+kubectl apply -f schedule.yml
+```
+
+Verify that the schedule is correctly created:
+
+```bash
+velero schedule get
+```
+
+Wait several minutes and verify that a backup has been created automatically:
+
+```bash
+velero backup get
+```
+
+You should have a result like this:
+
+<pre class="console"><code>$ velero schedule get
+NAME             STATUS    CREATED                          SCHEDULE       BACKUP TTL   LAST BACKUP   SELECTOR
+daily-snapshot   Enabled   2022-10-04 09:12:05 +0200 CEST   */10 * * * *   168h0m0s     4m ago        <none>
+
+$ velero backup get
+NAME                            STATUS             ERRORS   WARNINGS   CREATED                          EXPIRES   STORAGE LOCATION   SELECTOR
+daily-snapshot-20221004072023   Completed          0        1          2022-10-04 09:20:23 +0200 CEST   6d        default            <none>
+</code></pre>
+
+### Cleanup
 
 Clean the `nginx-example` namespace:
 

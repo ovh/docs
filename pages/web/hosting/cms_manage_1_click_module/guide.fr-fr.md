@@ -3,7 +3,7 @@ title: Comment gérer votre module en 1 clic ?
 excerpt: Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud
 slug: 1-click-module-management
 section: CMS
-order: 2
+order: 02
 ---
 
 **Dernière mise à jour le 05/09/2022**
