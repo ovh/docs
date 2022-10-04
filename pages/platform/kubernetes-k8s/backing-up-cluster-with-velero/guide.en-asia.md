@@ -28,7 +28,7 @@ order: 3
  }
 </style>
 
-**Last updated 26th September 2022**
+**Last updated 04th October 2022**
 
 In this tutorial, we are using [Velero](https://velero.io/){.external} to backup and restore an OVHcloud Managed Kubernetes cluster.
 
@@ -755,6 +755,61 @@ $ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.
 </code></pre>
 
 Your namespace with resources and PVC have been correctly restored.
+
+## Scheduling backup with Velero
+
+With Velero you can schedule backups regularly, a good solution for disaster recovery.
+
+In this guide you will create a `schedule` Velero's resource that will create regular backups.
+
+Copy the following code into a `schedule.yml` file:
+
+```yaml
+apiVersion: velero.io/v1
+kind: Schedule
+metadata:
+  name: daily-snapshot
+  namespace: velero
+spec:
+  schedule: '*/10 * * * *'
+  template:
+    defaultVolumesToRestic: false
+
+    includedNamespaces:
+    - nginx-example
+
+    ttl: 168h0m0s
+    storageLocation: default
+```
+
+And apply it to the cluster:
+
+```bash
+kubectl apply -f schedule.yml
+```
+
+Verify that the schedule is correctly created:
+
+```bash
+velero schedule get
+```
+
+Wait several minutes and verify that a backup have been created automatically:
+
+```bash
+velero backup get
+```
+
+You should have a result like this:
+
+<pre class="console"><code>$ velero schedule get
+NAME             STATUS    CREATED                          SCHEDULE       BACKUP TTL   LAST BACKUP   SELECTOR
+daily-snapshot   Enabled   2022-10-04 09:12:05 +0200 CEST   */10 * * * *   168h0m0s     4m ago        <none>
+
+$ velero backup get
+NAME                            STATUS             ERRORS   WARNINGS   CREATED                          EXPIRES   STORAGE LOCATION   SELECTOR
+daily-snapshot-20221004072023   Completed          0        1          2022-10-04 09:20:23 +0200 CEST   6d        default            <none>
+</code></pre>
 
 ## Cleanup
 
