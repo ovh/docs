@@ -137,7 +137,7 @@ RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 
 > [!warning]
 >
-> Für die "Cloud Web" Hosting-Angebote ist folgendes Skript zu verwenden:
+> Für die [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) Hosting-Angebote ist folgendes Skript zu verwenden:
 > ```
 > RewriteEngine On
 > RewriteCond %{ENV:HTTPS} !on

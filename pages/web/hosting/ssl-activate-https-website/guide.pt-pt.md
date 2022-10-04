@@ -136,6 +136,16 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
+> [!warning]
+>
+> Para as ofertas de alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/), o script a utilizar é o seguinte:
+> ```
+> RewriteEngine On
+> RewriteCond %{ENV:HTTPS} !on
+> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+> ```
+>
+
 ### 4 - Verificar o bom funcionamento do website
 
 Quando tiver ativado o protocolo HTTPS no website, verifique que este está a funcionar corretamente e que todo o conteúdo é apresentado como antes da manipulação. Para isso, aceda ao website, verifique se não há nenhuma mensagem de aviso e examine as diferentes secções verificando que não há problemas de visualização. 
@@ -143,16 +153,6 @@ Quando tiver ativado o protocolo HTTPS no website, verifique que este está a fu
 Se encontrar algum problema, recomendamos-lhe vivamente que tente resolvê-lo de imediato ou que desative o protocolo HTTPS até identificar a sua origem. Em caso de verdadeira necessidade, pode utilizar o backup completo do website realizado no passo anterior.
 
 Se o conteúdo do website se apresentar corretamente em HTTPS e não aparecer nenhuma mensagem de aviso, significa que a alteração foi bem-sucedida. Se desejar ativar o HTTPS noutro website do mesmo alojamento, deverá repetir todas as operações descritas neste manual.
-
-> [!warning]
->
-> Para as ofertas de alojamento "Cloud Web", o script a utilizar é o seguinte:
-> ```
-> RewriteEngine On
-> RewriteCond %{ENV:HTTPS} !on
-> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-> ```
->
 
 ## Quer saber mais?
 

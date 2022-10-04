@@ -133,17 +133,7 @@ Sostituisci le informazioni generiche presenti nello script con il tuo dominio e
 
 > [!warning]
 >
-> Pour les offres d'hébergement "Cloud Web",  le script à utiliser est le suivant :
-> ```
-> RewriteEngine On
-> RewriteCond %{ENV:HTTPS} !on
-> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-> ```
->
-
-> [!warning]
->
-> Per le offerte di hosting "Cloud Web", utilizza questo script:
+> Per le offerte di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/), utilizza questo script:
 > ```
 > RewriteEngine On
 > RewriteCond %{ENV:HTTPS} !on

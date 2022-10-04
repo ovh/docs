@@ -135,16 +135,6 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
-> [!warning]
->
-> Para los planes de hosting "Cloud Web", utilice el siguiente script:
-> ```
-> RewriteEngine On
-> RewriteCond %{ENV:HTTPS} !on
-> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-> ```
->
-
 ### 4. Comprobar que el sitio web funcione correctamente
 
 Una vez que haya activado el protocolo HTTPS en el sitio web, compruebe que este último funciona correctamente y que se sigue mostrando todo el contenido. Para ello, acceda al sitio web, compruebe si aparece algún mensaje de aviso y examine las distintas secciones verificando que no haya problemas de visualización. 
