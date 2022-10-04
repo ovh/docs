@@ -47,14 +47,15 @@ category_l2: Backups
 &ensp;&ensp;[Etape 3.2 Configuration des serveurs de déduplications](#dedupconf)<br />
 &ensp;&ensp;[Etape 3.3 Installation du logiciel Tina sur tina-srv](#tinainstall)<br />
 [Etape 4 Mise en place de la réplication entre serveurs de déduplication](#replication)<br />
-[Etape 5 Configuration du serveur Tina](#configuretina)<br />
-&ensp;&ensp;[Etape 5.1 Ajout de la destination de sauvegarde](#addrepo)<br />
-&ensp;&ensp;[Etape 5.2 Ajout du cluster Nutanix en tant que source de sauvegarde](#nutanixconf)<br />
-&ensp;&ensp;[Etape 5.3 Création d'un nouveau planning de sauvegarde](#scheduleconf)<br />
-&ensp;&ensp;[Etape 5.4 Configuration de l'agent pour automatiser la sauvegarde](#agentconfiguration)<br />
-&ensp;&ensp;[Etape 5.5 Test du travail de sauvegarde](#testbackup)<br />
-&ensp;&ensp;[Etape 5.6 Configuration de la sauvegarde du catalogue](#catalogbackup)<br />
-[Etape 6 Restauration](#restore)<br />
+[Etape 5 Configuration de Prism Element](#configpe)
+[Etape 6 Configuration du serveur Tina](#configuretina)<br />
+&ensp;&ensp;[Etape 6.1 Ajout de la destination de sauvegarde](#addrepo)<br />
+&ensp;&ensp;[Etape 6.2 Ajout du cluster Nutanix en tant que source de sauvegarde](#nutanixconf)<br />
+&ensp;&ensp;[Etape 6.3 Création d'un nouveau planning de sauvegarde](#scheduleconf)<br />
+&ensp;&ensp;[Etape 6.4 Configuration de l'agent pour automatiser la sauvegarde](#agentconfiguration)<br />
+&ensp;&ensp;[Etape 6.5 Test du travail de sauvegarde](#testbackup)<br />
+&ensp;&ensp;[Etape 6.6 Configuration de la sauvegarde du catalogue](#catalogbackup)<br />
+[Etape 7 Restauration](#restore)<br />
 
 
 
@@ -673,8 +674,28 @@ La réplication est active, toutes les nouvelles données stockées sur le serve
 
 ![07 Configure replication 04](images/07-configure-replication04.png){.thumbnail}
 
+<a name="configpe"></a>
+### Etape 5 Configuration de Prism Element**
+
+Il est necessaire de rajouter une adresse IP pour **ISCSI Data Services IP** pour que les sauvegardes fonctionnent.
+
+Connectez vous à l'interface **Prism Element** du cluster. Vous pouvez vous aider de ce guide [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/).
+
+Cliquez à sur le `nom du cluster`{.action} en haut à gauche à coté du sigle de Nutanix.
+
+[08a Add iSCSI 01](images/08a-configurepe01.png)
+
+Faites défiler la fenêtre.
+
+[08a Add iSCSI 02](images/08a-configurepe02.png)
+
+Saisisssez une `Adresse IP `{.action} non utilisée sur le réseau privé d'administration dans l'option **ISCSI Data Services IP**. et cliquez sur  `Save`{.action}.
+
+[08a Add iSCSI 03](images/08a-configurepe03.png)
+
+
 <a name="configuretina"></a>
-### Etape 5 Configuration du serveur **Tina**
+### Etape 6 Configuration du serveur **Tina**
 
 Connectez-vous au serveur au travers d'un navigateur WEB sur l'adresse privé **https://tina-srv:22088**.
 
@@ -697,7 +718,7 @@ Le tableau de bord apparait.
 ![08 tina connection 03](images/08-tina-connection03.png){.thumbnail}
 
 <a name="addrepo"></a>
-#### **Etape 5.1 Ajout de la destination de sauvegarde**
+#### **Etape 6.1 Ajout de la destination de sauvegarde**
 
 Nous allons configurer le serveur **tina-adefr** en tant que dépôt de sauvegarde.
 
@@ -748,7 +769,7 @@ Cliquez sur `OK`{.action}.
 ![09 configure repository 06](images/09-configure-repository06.png){.thumbnail}
 
 <a name="nutanixconf"></a>
-#### **Etape 5.2 Ajout du cluster Nutanix en tant que source de sauvegarde**
+#### **Etape 6.2 Ajout du cluster Nutanix en tant que source de sauvegarde**
 
 Nous allons configurer l'agent installé avec le serveur **tina-srv** pour qu'il se connecte au cluster Nutanix.
 
@@ -776,7 +797,7 @@ Cliquez sur `FINISH`{.action}.
 ![10 configure nutanix agent 04](images/10-configure-nutanix-agent04.png){.thumbnail}
 
 <a name="scheduleconf"></a>
-#### **Etape 5.3 Création d'un nouveau planning de sauvegarde**
+#### **Etape 6.3 Création d'un nouveau planning de sauvegarde**
 
 Restez à gauche dans `Backup` et cliquez sur `Backup schedules`{.action}.
 
@@ -796,7 +817,7 @@ Et cliquez sur `Save`{.action}.
 ![11 configure schedule 03](images/11-configure-schedule03.png){.thumbnail}
 
 <a name="agentconfiguration"></a>
-#### **Etape 5.4 Configuration de l'agent pour automatiser la sauvegarde**
+#### **Etape 6.4 Configuration de l'agent pour automatiser la sauvegarde**
 
 Cliquez à gauche sur `Agents`, cliquez sur `Not configured`{.action} pour voir les agents non configurés, ensuite cliquez sur le `signe +`{.action} à gauche à côté de l'agent pour Nutanix.
 
@@ -854,7 +875,7 @@ La configuration du travail de sauvegarde est terminée, cliquez sur la `croix`{
 ![12 configure nutanix backup 11](images/12-configurenutanixbackup11.png){.thumbnail}
 
 <a name="testbackup"></a>
-#### **Etape 5.5 Test du travail de sauvegarde**
+#### **6.5 Test du travail de sauvegarde**
 
 Il est possible de lancer la sauvegarde manuellement, pour ceci restez sur `Agents`{.action} à droite, cochez le `travail de sauvegarde`{.action} et cliquez sur la flèche `exécution`{.action} pour lancer un travail de sauvegarde.
 
@@ -877,7 +898,7 @@ Cliquez à gauche sur `Jobs`{.action} pour voir l'état d'avancement du travail 
 ![13 test backup 03](images/13-test-backup04.png){.thumbnail}
 
 <a name="catalogbackup"></a>
-#### **Etape 5.6 Configuration de la sauvegarde du catalogue**
+#### **Etape 6.6 Configuration de la sauvegarde du catalogue**
 
 Pour des raisons de sureté il est prudent de sauvegarder le catalogue. Il existe un agent de sauvegarde **catalog.cat** installé mais pas configuré par défaut. Nous allons le configurer pour faire une sauvegarde tous les jours à midi.
 
@@ -952,7 +973,7 @@ Cliquez sur `Configured`{.action} pour voir le travail de sauvegarde **catalog.c
 ![14 config-catalog-backup15](images/14-config-catalog-backup15.png){.thumbnail}
 
 <a name="restore"></a>
-### Etape 6 Restauration d'une sauvegarde
+### Etape 7 Restauration d'une sauvegarde
 
 Le logiciel **Tina** permet la restauration d'une machine virtuelle entière au travers de l'agent Nutanix. Si l'on souhaite des restaurations granulaires au niveau des fichiers ou des bases de données il faut installer un agent sur le serveur à restaurer et de créer un travail de sauvegarde supplémentaire.
 
