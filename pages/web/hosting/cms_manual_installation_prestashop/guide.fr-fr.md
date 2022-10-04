@@ -1,9 +1,9 @@
 ---
 title: Installer manuellement PrestaShop
 slug: installer-manuellement-prestashop
-legacy_guide_number: 1979
 excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS
 section: CMS
+order: 06
 ---
 
 
