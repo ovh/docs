@@ -1,58 +1,71 @@
 ---
-title: "Installer manuellement WordPress"
+title: "Tutoriel - Installer manuellement WordPress"
 slug: installer-manuellement-wordpress
 excerpt: "Découvrez comment installer manuellement votre CMS WordPress"
 section: CMS
 order: 07
 ---
 
+**Dernière mise à jour le 04/10/2022**
+
+## Objectif
+
+Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) WordPress.
+
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
-> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+>
 
-Pour vous aider, chacune des étapes est détaillée. Pour toute demande précise liée au CMS, nous vous invitons à vous rapprocher de l'éditeur du CMS, ou des communautés en rapport avec celui-ci.
+> [!primary]
+>
+> Pour toute demande précise liée au CMS, nous vous invitons à vous rapprocher de [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external}, ou des communautés en rapport avec celui-ci.
+>
 
-Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide](../mutualise-installer-manuellement-mon-cms/).
+Pour installer manuellement un autre CMS (Joomla!, Drupal, Prestashop), consultez [ce guide](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
-Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
+> [!success]
+>
+> Pour installer WordPress de manière automatique depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'installation d'un [module "en un clic"](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+>
 
-Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+## Prérequis
 
-*Si vous souhaitez installer WordPress de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [](../modules-en-1-clic/)
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) qui contient au moins une base de données.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
 
+## En pratique
 
-## WordPress
+### Partie 1 : préparation de l'installation
 
-### Partie 1 : preparation de linstallation
-Pour installer la plateforme  **WordPress**  sur votre offre d'hébergement mutualisé, nous vous conseillons de vous munir d'un logiciel  **FTP**  tel que **FileZilla**  (gratuit). *Assurez-vous d'être en possession de votre identifiant client (nic-handle) et de votre mot de passe, pour pouvoir vous connecter à votre espace client OVH si nécessaire.*
+Pour installer la plateforme  **WordPress**  sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), effectuez les actions suivantes :
 
-- Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
-- Il est aussi nécessaire d'avoir en votre possession votre identifiant et le mot de passe de la base de données SQL qui vous permettent de vous connecter dans la base de données.
+- Installez le client **FTP** [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/).
+
+- Récupérez [les informations nécessaires pour vous connecter à l'espace FTP de votre hébergement web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter)
+- Récupérez les accès à la base de données de votre offre d'hébergement Web si elle existe déjà ou créez-en une à l'aide de notre [documentation](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
 
 ![hosting](images/3125.png){.thumbnail}
 
 
-### Partie 2 : recuperation des fichiers sources
-- Rendez-vous sur le site du développeur de [WordPress](http://fr.wordpress.org/){.external} .
+### Partie 2 : récuperation des fichiers sources
+- Rendez-vous sur le site du développeur de [WordPress](http://fr.wordpress.org/){.external}.
 
-**compressé**  (zippé), il faudra être en mesure de le  **décompresser**  (extraire) sur votre ordinateur. Vous trouverez sur Internet différentes aides à ce sujet.
-
+Le fichier récupéré est **compressé** (zippé), vous devrez le  **décompresser** (extraire) dans un dossier sur votre ordinateur. Vous trouverez sur Internet différentes aides à ce sujet.
 
 ![hosting](images/3126.png){.thumbnail}
 
 
-### Partie 3 : mise en place des fichiers sur l'hebergement via FTP
+### Partie 3 : mise en place des fichiers sur l'hébergement via FTP
+
 Ouvrez le dossier dans lequel vous avez téléchargé le dossier compressé.
 
 Réalisez un clic droit sur le dossier en question, puis sélectionnez "Extraire tout...".
 
 Indiquez une destination afin d'extraire vos fichiers dans un nouveau dossier.
-
-*De nombreux tutoriels et logiciels de décompression sont disponibles sur internet pour vous aider à réaliser ces manipulations. Consultez-les si vous êtes bloqués à cette étape.*
 
 Le dossier cible sera intitulé " **wordpress** "
 
@@ -215,6 +228,10 @@ La cause est simple : la dernière version du PHP n'a pas été activée.
 ![hosting](images/3140.png){.thumbnail}
 
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
