@@ -1,14 +1,14 @@
 ---
-title: Installer manuellement WordPress
+title: "Installer manuellement WordPress"
 slug: installer-manuellement-wordpress
-legacy_guide_number: 1977
-excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS WordPress.
+excerpt: "Découvrez comment installer manuellement votre CMS WordPress"
 section: CMS
+order: 07
 ---
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -26,7 +26,7 @@ Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovhcloud.c
 
 ## WordPress
 
-### Partie 1 &#58; preparation de linstallation
+### Partie 1 : preparation de linstallation
 Pour installer la plateforme  **WordPress**  sur votre offre d'hébergement mutualisé, nous vous conseillons de vous munir d'un logiciel  **FTP**  tel que **FileZilla**  (gratuit). *Assurez-vous d'être en possession de votre identifiant client (nic-handle) et de votre mot de passe, pour pouvoir vous connecter à votre espace client OVH si nécessaire.*
 
 - Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
@@ -36,7 +36,7 @@ Pour installer la plateforme  **WordPress**  sur votre offre d'hébergement mutu
 ![hosting](images/3125.png){.thumbnail}
 
 
-### Partie 2 &#58; recuperation des fichiers sources
+### Partie 2 : recuperation des fichiers sources
 - Rendez-vous sur le site du développeur de [WordPress](http://fr.wordpress.org/){.external} .
 
 **compressé**  (zippé), il faudra être en mesure de le  **décompresser**  (extraire) sur votre ordinateur. Vous trouverez sur Internet différentes aides à ce sujet.
@@ -45,7 +45,7 @@ Pour installer la plateforme  **WordPress**  sur votre offre d'hébergement mutu
 ![hosting](images/3126.png){.thumbnail}
 
 
-### Partie 3 &#58; mise en place des fichiers sur l'hebergement via FTP
+### Partie 3 : mise en place des fichiers sur l'hebergement via FTP
 Ouvrez le dossier dans lequel vous avez téléchargé le dossier compressé.
 
 Réalisez un clic droit sur le dossier en question, puis sélectionnez "Extraire tout...".
@@ -104,7 +104,7 @@ Cette opération conclut la partie consacrée au dépôt des fichiers sur le FTP
 ![hosting](images/3131.png){.thumbnail}
 
 
-### Partie 4 &#58; lien avec la base de donnees
+### Partie 4 : lien avec la base de donnees
 - Avant de continuer l'installation, videz le cache de votre navigateur internet, afin d'éviter toute erreur.
 
 Afin de réaliser le lien entre votre base de données et WordPress, nous devons suivre les étapes d'installation du CMS. Rendez-vous sur votre nom de domaine.
@@ -183,7 +183,7 @@ Vous trouverez ici un aperçu du panel d'administration de WordPress.
 
 ### Informations utiles
 
-**Le support d'OVH ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre WordPress.**
+**Le support d'OVHcloud ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre WordPress.**
 
 Nous vous invitons à consulter les forums dédiés à la solution WordPress.
 
@@ -192,11 +192,11 @@ d'entraide](http://www.wordpress-fr.net/support/){.external} dédié à ce CMS.
 
 Vous avez mis en place vos fichiers sur le FTP, cependant la page "site en construction" est toujours affichée.
 
-À l'installation de votre hébergement, OVH met en place une page d'attente, le temps que vous déposiez les fichiers de votre site internet.
+À l'installation de votre hébergement, OVHcloud met en place une page d'attente, le temps que vous déposiez les fichiers de votre site internet.
 
-Si vous déposez simplement vos fichiers dans le dossier  **"www"**  sans supprimer le contenu déposé par OVH, vous risquez de rencontrer ce souci.
+Si vous déposez simplement vos fichiers dans le dossier  **"www"**  sans supprimer le contenu déposé par OVHcloud, vous risquez de rencontrer ce souci.
 
-Afin de corriger cela, vous devez supprimer ou renommer le fichier "index.html" mis en place par OVH sur votre hébergement.
+Afin de corriger cela, vous devez supprimer ou renommer le fichier "index.html" mis en place par OVHcloud sur votre hébergement.
 
 *Il peut être intéressant de simplement le renommer afin de vous permettre de le réactiver à tout moment et de vous en servir comme page d'attente.*
 
