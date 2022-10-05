@@ -9,7 +9,7 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 14/09/2022**
+**Dernière mise à jour le 05/10/2022**
 
 ## Objectif
 
@@ -47,7 +47,7 @@ category_l2: Backups
 &ensp;&ensp;[Etape 3.2 Configuration des serveurs de déduplications](#dedupconf)<br />
 &ensp;&ensp;[Etape 3.3 Installation du logiciel Tina sur tina-srv](#tinainstall)<br />
 [Etape 4 Mise en place de la réplication entre serveurs de déduplication](#replication)<br />
-[Etape 5 Configuration de Prism Element](#configpe)
+[Etape 5 Configuration de Prism Element](#configpe)<br />
 [Etape 6 Configuration du serveur Tina](#configuretina)<br />
 &ensp;&ensp;[Etape 6.1 Ajout de la destination de sauvegarde](#addrepo)<br />
 &ensp;&ensp;[Etape 6.2 Ajout du cluster Nutanix en tant que source de sauvegarde](#nutanixconf)<br />
@@ -683,15 +683,15 @@ Connectez vous à l'interface **Prism Element** du cluster. Vous pouvez vous aid
 
 Cliquez à sur le `nom du cluster`{.action} en haut à gauche à coté du sigle de Nutanix.
 
-[08a Add iSCSI 01](images/08a-configurepe01.png)
+![08a Add iSCSI 01](images/08a-configurepe01.png)
 
 Faites défiler la fenêtre.
 
-[08a Add iSCSI 02](images/08a-configurepe02.png)
+![08a Add iSCSI 02](images/08a-configurepe02.png)
 
 Saisisssez une `Adresse IP `{.action} non utilisée sur le réseau privé d'administration dans l'option **ISCSI Data Services IP**. et cliquez sur  `Save`{.action}.
 
-[08a Add iSCSI 03](images/08a-configurepe03.png)
+![08a Add iSCSI 03](images/08a-configurepe03.png)
 
 
 <a name="configuretina"></a>
