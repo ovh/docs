@@ -49,12 +49,13 @@ category_l2: Backups
 [Etape 4 Mise en place de la réplication entre serveurs de déduplication](#replication)<br />
 [Etape 5 Configuration de Prism Element](#configpe)<br />
 [Etape 6 Configuration du serveur Tina](#configuretina)<br />
-&ensp;&ensp;[Etape 6.1 Ajout de la destination de sauvegarde](#addrepo)<br />
-&ensp;&ensp;[Etape 6.2 Ajout du cluster Nutanix en tant que source de sauvegarde](#nutanixconf)<br />
-&ensp;&ensp;[Etape 6.3 Création d'un nouveau planning de sauvegarde](#scheduleconf)<br />
-&ensp;&ensp;[Etape 6.4 Configuration de l'agent pour automatiser la sauvegarde](#agentconfiguration)<br />
-&ensp;&ensp;[Etape 6.5 Test du travail de sauvegarde](#testbackup)<br />
-&ensp;&ensp;[Etape 6.6 Configuration de la sauvegarde du catalogue](#catalogbackup)<br />
+&ensp;&ensp;[Etape 6.1 Ajout d'un paramètre d'optimisation dans la configuration](#addoptim)<br />
+&ensp;&ensp;[Etape 6.2 Ajout de la destination de sauvegarde](#addrepo)<br />
+&ensp;&ensp;[Etape 6.3 Ajout du cluster Nutanix en tant que source de sauvegarde](#nutanixconf)<br />
+&ensp;&ensp;[Etape 6.4 Création d'un nouveau planning de sauvegarde](#scheduleconf)<br />
+&ensp;&ensp;[Etape 6.5 Configuration de l'agent pour automatiser la sauvegarde](#agentconfiguration)<br />
+&ensp;&ensp;[Etape 6.6 Test du travail de sauvegarde](#testbackup)<br />
+&ensp;&ensp;[Etape 6.7 Configuration de la sauvegarde du catalogue](#catalogbackup)<br />
 [Etape 7 Restauration](#restore)<br />
 
 
@@ -717,8 +718,49 @@ Le tableau de bord apparait.
 
 ![08 tina connection 03](images/08-tina-connection03.png){.thumbnail}
 
+<a name="addoptim"></a>
+#### **Etape 6.1 Ajout d'un paramètre d'optimisation dans la configuration**
+
+Dans le tableau de bord cliquez en bas à gauche sur `l'engrenage`{.action}.
+
+![09a configure advanced parameter 01](images/09a-configure-advanced-param01.png){.thumbnail}
+
+Cliquez sur `Tunables`{.action}.
+
+![09a configure advanced parameter 02](images/09a-configure-advanced-param02.png){.thumbnail}
+
+Cliquez en bas sur `Add new tunable`{.action}.
+
+![09a configure advanced parameter 03](images/09a-configure-advanced-param03.png){.thumbnail}
+
+Cliquez en haut sur `Internal`{.action}.
+
+![09a configure advanced parameter 04](images/09a-configure-advanced-param04.png){.thumbnail}
+
+Cochez la case `Advanced`{.action} et cliquez en haut sur `Apply`{.action}.
+
+![09a configure advanced parameter 05](images/09a-configure-advanced-param05.png){.thumbnail}
+
+Dans Filter saisissez `dtm`{.action} ensuite cochez `dtm_default_block_size`{.action} et cliquez sur `Next`{.action}.
+
+![09a configure advanced parameter 06](images/09a-configure-advanced-param06.png){.thumbnail}
+
+Saisissez dans **Tunable value** `4096`{.action} et cliquez sur `Finish`{.action}.
+
+![09a configure advanced parameter 07](images/09a-configure-advanced-param07.png){.thumbnail}
+
+Cliquez sur `OK`{.action}.
+
+![09a configure advanced parameter 08](images/09a-configure-advanced-param08.png){.thumbnail}
+
+Le nouveau paramètre apparait dans la liste et est activé.
+
+![09a configure advanced parameter 09](images/09a-configure-advanced-param09.png){.thumbnail}
+
+
+
 <a name="addrepo"></a>
-#### **Etape 6.1 Ajout de la destination de sauvegarde**
+#### **Etape 6.2 Ajout de la destination de sauvegarde**
 
 Nous allons configurer le serveur **tina-adefr** en tant que dépôt de sauvegarde.
 
@@ -769,7 +811,7 @@ Cliquez sur `OK`{.action}.
 ![09 configure repository 06](images/09-configure-repository06.png){.thumbnail}
 
 <a name="nutanixconf"></a>
-#### **Etape 6.2 Ajout du cluster Nutanix en tant que source de sauvegarde**
+#### **Etape 6.3 Ajout du cluster Nutanix en tant que source de sauvegarde**
 
 Nous allons configurer l'agent installé avec le serveur **tina-srv** pour qu'il se connecte au cluster Nutanix.
 
@@ -797,7 +839,7 @@ Cliquez sur `FINISH`{.action}.
 ![10 configure nutanix agent 04](images/10-configure-nutanix-agent04.png){.thumbnail}
 
 <a name="scheduleconf"></a>
-#### **Etape 6.3 Création d'un nouveau planning de sauvegarde**
+#### **Etape 6.4 Création d'un nouveau planning de sauvegarde**
 
 Restez à gauche dans `Backup` et cliquez sur `Backup schedules`{.action}.
 
@@ -817,7 +859,7 @@ Et cliquez sur `Save`{.action}.
 ![11 configure schedule 03](images/11-configure-schedule03.png){.thumbnail}
 
 <a name="agentconfiguration"></a>
-#### **Etape 6.4 Configuration de l'agent pour automatiser la sauvegarde**
+#### **Etape 6.5 Configuration de l'agent pour automatiser la sauvegarde**
 
 Cliquez à gauche sur `Agents`, cliquez sur `Not configured`{.action} pour voir les agents non configurés, ensuite cliquez sur le `signe +`{.action} à gauche à côté de l'agent pour Nutanix.
 
@@ -875,7 +917,7 @@ La configuration du travail de sauvegarde est terminée, cliquez sur la `croix`{
 ![12 configure nutanix backup 11](images/12-configurenutanixbackup11.png){.thumbnail}
 
 <a name="testbackup"></a>
-#### **6.5 Test du travail de sauvegarde**
+#### **Etape 6.6 Test du travail de sauvegarde**
 
 Il est possible de lancer la sauvegarde manuellement, pour ceci restez sur `Agents`{.action} à droite, cochez le `travail de sauvegarde`{.action} et cliquez sur la flèche `exécution`{.action} pour lancer un travail de sauvegarde.
 
@@ -898,7 +940,7 @@ Cliquez à gauche sur `Jobs`{.action} pour voir l'état d'avancement du travail 
 ![13 test backup 03](images/13-test-backup04.png){.thumbnail}
 
 <a name="catalogbackup"></a>
-#### **Etape 6.6 Configuration de la sauvegarde du catalogue**
+#### **Etape 6.7 Configuration de la sauvegarde du catalogue**
 
 Pour des raisons de sureté il est prudent de sauvegarder le catalogue. Il existe un agent de sauvegarde **catalog.cat** installé mais pas configuré par défaut. Nous allons le configurer pour faire une sauvegarde tous les jours à midi.
 
