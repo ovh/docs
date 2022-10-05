@@ -2,7 +2,7 @@
 title: '.htaccess, URL rewriting using mod_rewrite'
 excerpt: Mod_rewrite is available on all web hosting packages
 slug: htaccess_url_rewriting_using_mod_rewrite
-section: Rewrite and authentication
+section: Rewriting and authentication
 order: 03
 ---
 

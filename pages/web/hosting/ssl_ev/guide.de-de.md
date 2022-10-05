@@ -2,9 +2,10 @@
 title: Ein EV SSL-Zertifikat auf Ihrer Website einrichten
 slug: ev-ssl
 excerpt: Das EV SSL-Zertifikat garantiert Ihren Nutzern die rechtliche Existenz des Unternehmens und belegt die absolute Vertrauenswürdigkeit Ihrer Seite
-section: 'SSL'
+section: SSL
+order: 03
 ---
-
+ 
 
 ## Allgemeine Informationen
 Die durch OVH vertriebenen EV SSL-Zertifikate sind von der Comodo Group freigegeben. Die Comodo Group ist zuständig für die Überprüfung und den Beweis der tatsächlichen Existenz Ihres Unternehmens.

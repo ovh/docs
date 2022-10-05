@@ -3,7 +3,7 @@ title: 'Mettre en ligne un site internet sur son hébergement web'
 slug: mettre-mon-site-en-ligne
 excerpt: 'Découvrez comment mettre en ligne un site internet sur votre hébergement web OVHcloud'
 section: 'Premiers pas'
-order: 2
+order: 06
 ---
 
 **Dernière mise à jour le 21/07/2022**

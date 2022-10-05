@@ -2,8 +2,8 @@
 title: 'Installing Joomla! manually'
 excerpt: How to install Joomla! manually
 slug: cms_manually_install_joomla
-legacy_guide_number: g1978
-section: 'CMS'
+section: CMS
+order: 05
 ---
 
 

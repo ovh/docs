@@ -2,7 +2,8 @@
 title: Geolocation on web hosting packages
 excerpt: ''
 slug: geolocation_on_web_hosting_packages
-legacy_guide_number: g1880
+section: Optimise your website
+order: 05
 ---
 
 **Last updated 5th May 2020**

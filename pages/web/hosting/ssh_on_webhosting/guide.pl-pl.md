@@ -1,14 +1,14 @@
 ---
 title: 'Korzystanie z dostępu do hostingu WWW przez SSH'
-id: '1962'
 slug: hosting_www_ssh_na_hostingu
 excerpt: 'Dowiedz się jak się podłączyć i korzystać z dostępu do Twojego hostingu OVHcloud przez protokół SSH'
 section: 'FTP i SSH'
+order: 07
 ---
 
 **Ostatnia aktualizacja z dnia 19/01/2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej umożliwiającej umieszczanie w Internecie plików z Twoich stron www lub Twoich aplikacji. Do przestrzeni dyskowej możesz zalogować się używając, między innymi, protokołu FTP lub SSH oraz odpowiadających im haseł.
 

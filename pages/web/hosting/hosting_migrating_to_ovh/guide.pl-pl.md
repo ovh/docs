@@ -3,11 +3,12 @@ title: Przeniesienie strony WWW i kont e-mail do OVH
 slug: przeniesienie-strony-www-do-ovh
 excerpt: Dowiedz się, jak migrować stronę WWW oraz konta e-mail do OVH bez przerwy dostępie do usług
 section: Pierwsze kroki
+order: 08
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-08**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Niniejszy przewodnik prezentuje poszczególne etapy migracji strony WWW, jednej lub kilku baz danych oraz kont e-mail z dowolnej platformy do OVH. Procedura migracji może być inna, jeśli chcesz dokonać migracji bez przerwy w dostępności wymienionych wyżej usług.
 

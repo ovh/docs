@@ -1,10 +1,9 @@
 ---
 title: 'Web hosting: PuTTY en Windows'
 excerpt: 'Web hosting: PuTTY en Windows'
-id: '1964'
 slug: web_hosting_putty_en_windows
-legacy_guide_number: g1964
 section: FTP y SSH
+order: 08
 ---
 
 

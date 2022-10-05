@@ -2,7 +2,8 @@
 title: '.htaccess, URL rewriting using mod_rewrite'
 excerpt: Mod_rewrite is available at OVH on all web hosting packages (apart from 20gp packages)
 slug: htaccess_url_rewriting_using_mod_rewrite
-legacy_guide_number: g1971
+section: Rewriting and authentication
+order: 03
 ---
 
 

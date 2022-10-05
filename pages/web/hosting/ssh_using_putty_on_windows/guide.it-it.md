@@ -1,10 +1,9 @@
 ---
 title: 'Hosting condiviso: utilizza Putty su Windows'
 excerpt: 'Hosting condiviso: utilizza Putty su Windows'
-id: '1964'
 slug: hosting_condiviso_utilizza_putty_su_windows
-legacy_guide_number: g1964
 section: FTP e SSH
+order: 08
 ---
 
 

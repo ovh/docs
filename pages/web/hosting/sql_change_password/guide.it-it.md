@@ -3,7 +3,7 @@ title: Modificare la password del database di un hosting Web
 slug: modificare-password-database
 excerpt: Scopri come modificare la password di un database creata nell'ambito di un piano di hosting Web
 section: Database
-order: 2
+order: 02
 ---
 
 > [!primary]

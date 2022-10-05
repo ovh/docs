@@ -3,7 +3,7 @@ title: Iniziare a utilizzare un hosting Web
 excerpt: Come eseguire le prime operazioni su un hosting Web
 slug: configura_il_tuo_hosting_web
 section: Per iniziare
-order: 1
+order: 02
 ---
 
 **Ultimo aggiornamento: 26/02/2018**

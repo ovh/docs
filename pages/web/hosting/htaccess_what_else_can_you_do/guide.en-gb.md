@@ -2,8 +2,8 @@
 title: Using .htaccess for advanced purposes
 excerpt: Find out what else you can do with the .htaccess file
 slug: what_else_can_you_do_with_the_htaccess_file
-legacy_guide_number: g1972
-section: 'Redirection and authentication'
+section: Rewriting and authentication
+order: 04
 ---
 
 

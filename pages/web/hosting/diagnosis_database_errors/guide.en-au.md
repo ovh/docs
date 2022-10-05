@@ -2,8 +2,8 @@
 title: Troubleshooting common database errors
 excerpt: Find out how to diagnose the most common cases of database errors
 slug: database-frequent-errors
-section: Diagnostic
-Order: 04
+section: Troubleshooting
+order: 04
 ---
 
 **Last updated 8th October 2021**

@@ -4,7 +4,7 @@ title: 'Wijziging van het wachtwoord voor een webhosting-database'
 slug: wijzigen-wachtwoord-database
 excerpt: 'Ontdek hoe u het wachtwoord kunt wijzigen voor een database die is gecreëerd als onderdeel van een webhostingplan'
 section: Databases
-order: 2
+order: 02
 ---
 
 **Laatste update 31-05-2018**

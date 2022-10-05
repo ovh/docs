@@ -2,7 +2,8 @@
 title: Install "Composer" on web hosting packages
 excerpt: How to install "Composer" on web hosting packages
 slug: install_composer_on_web_hosting_packages
-legacy_guide_number: g1894
+section: PHP
+order: 02
 ---
 
 **Last updated 5th May 2020**

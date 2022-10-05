@@ -3,7 +3,7 @@ title: 'Importar una copia de seguridad en la base de datos de un alojamiento we
 slug: web_hosting_importacion_de_una_base_de_datos_mysql
 excerpt: 'Cómo importar una copia de seguridad en la base de datos de un alojamiento web de OVHcloud'
 section: 'Bases de datos'
-order: 4
+order: 04
 ---
 
 **Última actualización: 05/05/2020**

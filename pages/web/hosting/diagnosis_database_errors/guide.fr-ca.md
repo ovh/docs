@@ -3,7 +3,7 @@ title: Résoudre les erreurs les plus fréquentes liées aux bases de données
 excerpt: "Diagnostiquez les cas les plus courants d'erreurs liées aux bases de données"
 slug: erreurs-frequentes-bases-de-donnees
 section: Diagnostic
-order: 4
+order: 04
 ---
 
 **Dernière mise à jour le 08/10/2021**

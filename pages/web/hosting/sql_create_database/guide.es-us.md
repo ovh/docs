@@ -3,7 +3,7 @@ title: 'Crear una base de datos en un alojamiento web'
 slug: crear-base-de-datos
 excerpt: 'Cómo crear una base de datos en un alojamiento web de OVHcloud'
 section: 'Bases de datos'
-order: 1
+order: 01
 ---
 
 **Última actualización: 05/05/2020**

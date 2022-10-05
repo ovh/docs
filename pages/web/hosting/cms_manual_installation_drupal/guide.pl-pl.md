@@ -1,13 +1,13 @@
 ---
 title: CMS - ręczna instalacja modułu Drupal
 excerpt: Jak ręcznie zainstalować moduł Drupal?
-id: '1976'
 slug: cms_-_reczna_instalacja_modulu_drupal
 section: CMS
+order: 04
 ---
 
 
-## Część 1: przygotowanie instalacji
+## Część 1: przygotowanie instalacji  
 Niezbędne narzędzia
 
 Aby móc zainstalować platformę Drupal na hostingu www, skorzystaj z programu FTP takiego jak FileZilla (program darmowy).

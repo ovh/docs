@@ -1,9 +1,9 @@
 ---
 title: Installer manuellement mon CMS sur mon hebergement
 slug: mutualise-installer-manuellement-mon-cms
-legacy_guide_number: 1375
 excerpt: Retrouvez ici la demarche pour installer manuellement
 section: CMS
+order: 03
 ---
 
 **Dernière mise à jour le 05/05/2020**

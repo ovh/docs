@@ -3,7 +3,7 @@ title: 'Creare e gestire un database su un hosting Web'
 slug: creare-database
 excerpt: 'Come creare un database sul tuo hosting Web OVHcloud'
 section: Database
-order: 1
+order: 01
 ---
 
 **Ultimo aggiornamento 03/02/2022**

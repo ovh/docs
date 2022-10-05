@@ -3,6 +3,7 @@ title: 'Technical specifications of Web Hostings'
 slug: technical-specifications-web-hosting
 excerpt: 'Find out details about the technical capabilities of your Web Hosting plan '
 section: 'Web Hosting configuration'
+order: 05
 ---
 
 **Last updated 28th July 2022**

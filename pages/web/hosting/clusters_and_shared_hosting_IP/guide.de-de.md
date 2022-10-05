@@ -3,11 +3,12 @@ title: 'Verzeichnis von IP-Adressen für die Webhosting Cluster'
 excerpt: 'Erfahren Sie hier, welche IP-Adresse für Ihr OVHcloud Webhosting zu verwenden ist'
 slug: verzeichnis-der-ip-adressen-web-hosting-cluster
 section: 'Webhosting-Konfiguration'
+order: 01
 ---
 
 **Letzte Aktualisierung am 08.01.2021**
 
-## Ziel
+## Ziel 
 
 Es kann notwendig werden, Zugriffseinstellungen für Dienste manuell anzupassen. Hierfür benötigen Sie dann die korrekte IP-Adresse, die zur spezifischen Konfiguration Ihres Webhostings gehört. Das ist etwa der Fall beim Konfigurieren von DNS-Zonen, ACLs oder OVHcloud Zusatzleistungen wie CDN, Länder-IPs oder SSL-Zertifikate.
 

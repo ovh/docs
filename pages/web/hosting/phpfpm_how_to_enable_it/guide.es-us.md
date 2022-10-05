@@ -2,8 +2,8 @@
 title: Activar la optimización de PHP en un alojamiento compartido OVHcloud
 excerpt: Esta guía explica cómo activar PHP-FPM en un alojamiento de OVHcloud para mejorar los tiempos de respuesta de PHP
 slug: activar_la_optimizacion_de_php_en_un_alojamiento_compartido_ovhcloud
-legacy_guide_number: g1175
 section: PHP
+order: 03
 ---
 
 

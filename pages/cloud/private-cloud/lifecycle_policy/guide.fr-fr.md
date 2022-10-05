@@ -95,10 +95,10 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 
 | Gamme commerciale | Disponibilité générale | End of Sales | End of Growth | End of Life |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
-| DC2011 (AMD Opteron) | 2011 | 28/02/2015 | 28/02/2022 | 31/07/2022 |
-| DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | 31/07/2022 |
-| DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 31/07/2022 |
-| DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 31/07/2022 |
+| DC2011 (AMD Opteron) | 2011 | 28/02/2015 | 28/02/2022 | 30/09/2022 |
+| DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | 30/09/2022 |
+| DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 30/09/2022 |
+| DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 30/09/2022 |
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2024 | 31/08/2024 |
 | SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | 31/08/2024 |
 

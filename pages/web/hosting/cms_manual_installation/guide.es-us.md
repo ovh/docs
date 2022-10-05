@@ -1,10 +1,9 @@
 ---
 title: 'Web hosting: Instalar un CMS manualmente'
 excerpt: Instalar un CMS manualmente
-id: '1375'
 slug: web_hosting_instalar_un_cms_manualmente
-legacy_guide_number: g1375
 section: CMS
+order: 03
 ---
 
 

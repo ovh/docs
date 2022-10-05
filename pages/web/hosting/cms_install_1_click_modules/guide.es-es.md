@@ -3,6 +3,7 @@ title: Instalar un sitio web con un módulo en un clic
 slug: modulos-en-un-clic
 excerpt: Cómo instalar un sitio web con los módulos en un clic de OVH
 section: CMS
+order: 01
 ---
 
 **Última actualización: 03/02/2022**

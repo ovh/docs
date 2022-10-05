@@ -3,6 +3,7 @@ title: 'Configuring IPv6 for your website'
 slug: configure-ipv6-for-your-website
 excerpt: Find out how to make your website compatible with IPv6
 section: 'Web Hosting configuration'
+order: 06
 ---
 
 **Last updated 27th November 2020**

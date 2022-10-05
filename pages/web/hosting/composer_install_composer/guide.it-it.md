@@ -1,9 +1,9 @@
 ---
 title: Installare Composer su un hosting Web
 slug: installare-di-comporre-sugli-hosting-condivisi
-legacy_guide_number: 1894
 excerpt: Scopri come installare e fare i primi passi su Composer.
 section: PHP
+order: 02
 ---
 
 > [!primary]

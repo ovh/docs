@@ -1,10 +1,9 @@
 ---
 title: 'Hosting condiviso: guida all’utilizzo di Cyberduck (MAC)'
 excerpt: In questa guida ti mostriamo come utilizzare Cyberduck
-id: '1598'
 slug: hosting_condiviso_guida_allutilizzo_di_cyberduck_mac
-legacy_guide_number: g1598
 section: FTP e SSH
+order: 05
 ---
 
 

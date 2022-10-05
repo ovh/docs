@@ -3,12 +3,12 @@ title: 'Konfiguracja pliku .ovhconfig na hostingu'
 slug: konfiguracja-pliku-ovhconfig
 excerpt: 'Poznaj plik .ovhconfig i dowiedz się, jak go modyfikować'
 section: 'Konfiguracja hostingu'
-order: 4
+order: 03
 ---
 
 **Ostatnia aktualizacja z dnia 03-01-2019**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Możesz chcieć z różnych powodów zmienić konfigurację [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}. Aby Ci to umożliwić, firma OVH udostępniła plik **.ovhconfig** pozwalający zmienić niektóre ustawienia.
 

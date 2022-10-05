@@ -3,6 +3,7 @@ title: Web Hosting FAQ
 excerpt: Find the answers to the most frequently asked questions about OVHcloud Web Hosting plans
 slug: web-hosting-faq
 section: Getting started
+order: 05
 ---
 
 **Last updated 7th April 2022**

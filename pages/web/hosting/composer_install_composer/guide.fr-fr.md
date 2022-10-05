@@ -1,9 +1,9 @@
 ---
 title: Installer Composer sur un hebergement web
 slug: installation-de-composer-sur-les-hebergements-mutualises
-legacy_guide_number: 1894
 excerpt: Découvrez comment installer et faire vos premiers pas sur Composer.
 section: PHP
+order: 02
 ---
 
 **Dernière mise à jour le 30/11/2020**
