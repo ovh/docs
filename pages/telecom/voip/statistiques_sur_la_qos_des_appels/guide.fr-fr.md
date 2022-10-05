@@ -176,7 +176,7 @@ statisticsControllers.controller('StatisticsCtrl', ['$scope', '$http', function(
 ```
 
 
-Enfin, il ne reste plus qu'à créer le script Perl qui sera executé par le Javascript. Celui-ci utilise la librairie OvhApi.pm disponible [ici](https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip).
+Enfin, il ne reste plus qu'à créer le script Perl qui sera executé par le Javascript. Celui-ci utilise la librairie OvhApi.pm disponible [ici](https://github.com/ovh/perl-ovh).
 
 getStatistics.cgi
 
