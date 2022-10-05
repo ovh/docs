@@ -2,7 +2,7 @@
 title: Geolokalizacja na hostingu www
 excerpt: ''
 slug: geolokalizacja_na_hostingu_www
-section: Adresacja IP w OVHcloud
+section: Optymalizacja strony WWW
 order: 05
 ---
 
