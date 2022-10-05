@@ -10,57 +10,57 @@ order: 01
 
 ## Objective
 
-Redirecting a domain name is to redirect it to a new target. Different types of redirections exist, each responding to a specific need.
+Redirecting a domain name is to point it to a new target. Different types of redirections exist, each responding to a specific need.
 
-**Find out more ways to redirect your domain name**
+**This guide explains how to redirect your domain name.**
 
 ## Requirements
 
-- Have [a domain name](https://www.ovhcloud.com/en-gb/domains/)
-- To be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
-- To be logged in to your web hosting plan (for redirection via a [.htaccess](#htaccess_rewrite) file).
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/) registered with OVHcloud
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the necessary permissions to manage the domain name
+- The login credentials required to connect to your storage space via SSH (optional, for redirection via a [.htaccess](#htaccess_rewrite) file).
 
 ## Instructions
 
-### Understand domain name redirection
+### Understanding domain name redirection
 
-This feature allows you to redirect a domain/subdomain to:
+This feature allows you to redirect a domain or subdomain to:
 
-- another domain/subdomain already existing:
+- Another domain/subdomain already existing
     - **Example**: `domain.tld`
-- a website URL (Uniform Resource Locator):
-    - **Examples**: `http://www.domain.tld/welcome/` or `https://www.domain.tld/welcome/` (if the target domain has a compatible SSL certificate).
+- A website URL (Uniform Resource Locator)
+    - **Examples**: `http://www.domain.tld/welcome/` or `https://www.domain.tld/welcome/` (if the target domain has a compatible SSL certificate)
 
 There are several ways of doing this:
 
 - **From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)**, where a configuration assistant can be used to set your redirection.
-- **Via a method that requires programming**. You will need to create the redirection yourself in a file (usually a [.htaccess](#htaccess_rewrite)).
+- **Via a method that requires programming**, in which case you will need to create the redirection yourself in a file (usually a [.htaccess](#htaccess_rewrite)).
 
 > [!warning]
 >
 > Setting up a redirection can affect your SEO ranking. 
-> Be careful about the changes you are going to make, or contact a [specialised provider](https://partner.ovhcloud.com/en-gb/) for SEO if necessary.
+> Be careful about the changes you apply, or contact a [specialised provider](https://partner.ovhcloud.com/en-gb/) for SEO if necessary.
 >
-> Warning: A redirection created from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) does not redirect an URL as `https://` to another domain or URL. 
-> To create this type of redirection, you will have to go through [a URL rewrite](https://docs.ovh.com/gb/en/hosting/htaccess_url_rewriting_using_mod_rewrite/) via a ".htaccess" file, for example.
+> Warning: A redirection created from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) does not redirect a URL as `https://` to another domain or URL.
+> To create this type of redirection, you will have to apply [a URL rewrite](https://docs.ovh.com/gb/en/hosting/htaccess_url_rewriting_using_mod_rewrite/), for example by editing a ".htaccess" file. 
 >
 
-### Redirect a domain name from the Control Panel
+### Redirecting a domain name from the Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Web Cloud`{.action} section, select the domain to redirect in the `Domain names`{.action} section, then click on the `Redirection`{.action} tab.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Web Cloud`{.action} section, select the domain to redirect from `Domain names`{.action}, then click on the `Redirection`{.action} tab.
 
-The table displays active redirections for your domain name. You can manage your existing redirections there using the `...`{.action} button to the right of each line.
+The table displays active redirections for your domain name. You can manage your existing redirections using the `...`{.action} button to the right of each line.
 
-Click the `Add Redirection`{.action} button.
+Click the `Add a redirection`{.action} button.
 
 ![Introduction to the redirection menu](images/RedirectionPanel.png){.thumbnail}
 
 Three redirection options are available from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and each of them is made up of **5 successive steps**. 
 
-> The `Redirection`{.action} tab contains a fourth option that allows your domain to be quickly pointed to DNS A, AAAA and CNAME records.<br>
+> The `Redirection`{.action} tab contains a fourth option that allows your domain to be quickly pointed to A, AAAA and CNAME DNS records.<br>
 > Since this is not strictly a "redirection", this option will not be detailed in this guide.
 >
-> For more information on DNS records, see our [DNS records](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/) documentation .
+> For more information on DNS records, see our [DNS zone documentation](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/).
 >
 
 Below are the three types of redirections detailed step by step.
@@ -69,25 +69,25 @@ Below are the three types of redirections detailed step by step.
 >
 > Whichever redirection option you choose, the change can take between 4 and a maximum of 24 hours to propagate fully.
 
-### Option 1: permanent visible redirection to a web address
+### Option 1: Permanent visible redirection to a web address
 
-After entering the redirected domain, this option displays the target domain in your browser's address bar instead of the redirected domain.
+After entering the domain which is being redirected into a browser's address bar, the target domain will be displayed instead.
 
-- **Example**: if you redirect `domain1.tld` to `domain2.tld`, `domain2.tld` will appear in the address bar in your browser.
+- **Example**: If you redirect `domain1.tld` to `domain2.tld`, `domain2.tld` will appear in the address bar in your browser.
 
 ![Gif1](images/redirect1.gif){.thumbnail}
 
 > This "standard" redirection will return a HTTP 301 code.
 
 > [!success]
-> Click the tabs below to view each of the 5 steps in turn.
+> Click on the tabs below to view each of the 5 steps in turn.
 
 > [!tabs]
 > **Step 1**
 >>
->> In the window, your domain to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
+>> In the popup window, your domain to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
 >>
->> The `also redirect`{.action} box can be checked to also redirect your subdomain to the same target you choose for your domain/subdomain.
+>> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain/subdomain.
 >>
 >> ![Step 1](images/Step1.png){.thumbnail}
 >>
@@ -133,11 +133,11 @@ After entering the redirected domain, this option displays the target domain in 
 >> >
 >>
 
-### Option 2: temporary visible redirection to a web address
+### Option 2: Temporary visible redirection to a web address
 
 As with option 1, this option displays the target domain in your browser's address bar instead of the redirected domain after you enter the redirected domain.
 
-However, this should be used occasionally, for example for temporary events.<br>
+However, this option is the appropriate choice for non-permanent redirections, for example temporary events.<br>
 Positioning on search engines is less efficient than with a **permanent visible** redirection of type 301 (HTTP code).
 
 - **Example**: if you redirect `domain1.tld` to `domain2.tld`, `domain2.tld` will appear in the address bar in your browser.
@@ -147,14 +147,14 @@ Positioning on search engines is less efficient than with a **permanent visible*
 > This redirection will return a HTTP 302 code.
 
 > [!success]
-> Click the tabs below to view each of the 5 steps in turn.
+> Click on the tabs below to view each of the 5 steps in turn.
 
 > [!tabs]
 > **Step 1**
 >>
->> In the window, your domain to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
+>> In the popup window, your domain to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
 >>
->> The `also redirect`{.action} box can be checked to also redirect your subdomain to the same target you choose for your domain/subdomain.
+>> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain/subdomain.
 >>
 >> ![Step 1](images/Step1.png){.thumbnail}
 >>
@@ -178,7 +178,7 @@ Positioning on search engines is less efficient than with a **permanent visible*
 >>
 > **Step 4**
 >>
->> Select `Temporary (302)`{.action} from the two choices listed, then enter the target domain or URL for your redirection in the `Web Address`{.action} form that appears.
+>> Select `Temporary (302)`{.action} from the two choices listed, then enter the target domain or URL for your redirection in the `Web address`{.action} form that appears.
 >>
 >> ![Step 4](images/Step4VisiTempo.png){.thumbnail}
 >>
@@ -200,24 +200,24 @@ Positioning on search engines is less efficient than with a **permanent visible*
 >> >
 >>
 
-### Option 3: invisible redirection to a web address
+### Option 3: Invisible redirection to a web address
 
-With this redirection, you can leave the redirected domain in your browser’s address bar after you have entered it, rather than replacing it with the target domain.<br>
+With this redirection, you can keep the redirected domain in your browser’s address bar after you have entered it, rather than replacing it with the target domain.<br>
 **Warning, this action is not compatible with all sites and affects the SEO of your site.**
 
-- **Example**: if you redirect `domain1.tld` to `domain2.tld`, `domain1.tld` will appear in the address bar in your browser.
+- **Example**: If you redirect `domain1.tld` to `domain2.tld`, `domain1.tld` will appear in the address bar in your browser.
 
 ![Gif2](images/redirect2.gif){.thumbnail}
 
 Invisible redirection works with an *iFrame* HTML tag. This allows your redirected domain to integrate the content of the other page corresponding to the target domain into its own HTML page.
 
-This encapsulation prevents your site visitors from viewing the target domain
+This type of embedded content prevents your site visitors from viewing the target domain.
 
 > This option will return an HTTP 200 code.
 
 > [!warning]
 >
-> Warning, pages encapsulated with an *iFrame* tag may not be read on smartphones. Their content is generally not taken into account by search engines for the SEO and indexing of your site.
+> Warning, pages embedded with an *iFrame* tag may not be read on smartphones. Their content is generally not taken into account by search engines for the SEO and indexing of your site.
 >
 
 > [!success]
@@ -229,7 +229,7 @@ This encapsulation prevents your site visitors from viewing the target domain
 >>
 >> In the window, your domain to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
 >>
->> The `also redirect`{.action} box can be checked to also redirect your subdomain to the same target you choose for your domain/subdomain.
+>> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain/subdomain.
 >>
 >> ![Step 1](images/Step1.png){.thumbnail}
 >>
@@ -253,15 +253,15 @@ This encapsulation prevents your site visitors from viewing the target domain
 >>
 > **Step 4**
 >>
->> Select `Temporary (iframe)`{.action} from the two choices listed, then enter the target domain or URL for your redirection in the `Web Address`{.action} form that appears.
+>> Select `Temporary (iframe)`{.action} from the two choices listed, then enter the target domain or URL for your redirection in the `Web address`{.action} form that appears.
 >>
 >> ![Step 4](images/Step4Invi.png){.thumbnail}
 >>
 >> Three optional settings are available at this stage:
 >>
->> - **Title**: the one on your website. It will appear as a page title in the browser tab.<br>
->> - **Keywords**: they can be used by search engines to partially reference the page.<br>
->> - **Description**: concerns your website. It will be used by search engines in their results.
+>> - **Title**: The title of your website. It will appear as a page title in the browser tab.<br>
+>> - **Keywords**: They can be used by search engines to partially reference the page.<br>
+>> - **Description**: A website description that will be used by search engines in their results.
 >>
 >> Click `Next`{.action} to proceed to step 5.
 >>
@@ -286,16 +286,16 @@ This encapsulation prevents your site visitors from viewing the target domain
 > [!warning]
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
-> 
-> This part of the guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/) if you encounter any difficulties. We will not be able to assist you with any of the steps listed below. You can find more information in the ["Go further"](#go-further) section of this guide.
+>
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ".htaccess" files are configuration files in which commands can be specified. When the web server (Apache) runs your website’s code, the commands are interpreted, then executed.<br>
-Among these commands, you can create redirections.
+You can use such commands to create redirections.
 
-Handling a .htaccess file can make your website inaccessible. If in doubt, contact a [specialist provider](https://partner.ovhcloud.com/en-gb/).
+A faulty .htaccess file can make your website inaccessible. If in doubt, contact a [specialist provider](https://partner.ovhcloud.com/en-gb/).
 
-You can find all of our documentation on .htaccess in the ["Go further"](#go-further) section of this guide.
+You can find all of our documentation on .htaccess in the [Go further](#go-further) section of this guide.
 
 > [!success]
 >
@@ -336,7 +336,7 @@ This variable allows you to redirect a site as a whole, or only a part of a site
 
 #### Variable 2 - "Redirect gone"
 
-This variable is useful for deleted files. It replaces the message *404 document not found* with a more explicit message such as *410 document no longer exists*. Your website visitor will be informed that the file they are trying to call no longer exists.
+This variable is useful for deleted files. It replaces the message *404 document not found* with a more explicit message such as *410 document no longer exists*. Your website visitor will be informed that the file they are requesting no longer exists.
 
 > [!tabs]
 > Code to place in the ".htaccess"
@@ -384,18 +384,18 @@ This variable can be used when you temporarily move files to another site. Visit
 
 ## Go further <a name="go-further"></a>
 
-[Block access to my website for certain IP addresses via a .htaccess file](https://docs.ovh.com/gb/en/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+[Tutorial - How do I block access to my website for certain IP addresses via a .htaccess file?](https://docs.ovh.com/gb/en/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 
-[Protect your website's administration interface via the ".htaccess"](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+[Protecting your website’s administration interface with a .htaccess file](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 
-[Rewrite your URLs using mod_rewrite](https://docs.ovh.com/gb/en/hosting/htaccess_url_rewriting_using_mod_rewrite/).
+[URL rewriting using mod_rewrite](https://docs.ovh.com/gb/en/hosting/htaccess_url_rewriting_using_mod_rewrite/).
 
-[Perform other operations with the .htaccess file](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/).
+[Using .htaccess for advanced purposes](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/).
 
-[How do I edit my DNS zone?](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/)
+[Editing an OVHcloud DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
