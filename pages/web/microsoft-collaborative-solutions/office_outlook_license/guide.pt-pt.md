@@ -11,7 +11,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 07/09/2021**
+**Última atualização: 05/10/2022**
 
 ## Objetivo
 
@@ -21,11 +21,8 @@ A OVHcloud oferece-lhe o cliente de e-mails Outlook ao preço de 2€ s/IVA por 
 
 Após a subscrição, pode descarregar o Outlook entre as 6 versões seguintes:
 
-- Outlook 2013 pour Windows 32 bits.
-- Outlook 2013 pour Windows 64 bits.
 - Outlook 2016 para Windows 32 bits.
 - Outlook 2016 pour Windows 64 bits.
-- Outlook 2011 para MAC 64 bits.
 - Outlook 2016 para MAC 64 bits.
 
 **Saiba como subscrever e instalar uma licença Outlook a partir da plataforma Exchange OVHcloud.**

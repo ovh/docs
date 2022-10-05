@@ -7,7 +7,7 @@ section: Office
 order: 1
 ---
 
-**Dernière mise à jour le 07/09/2021**
+**Dernière mise à jour le 05/10/2022**
 
 ## Objectif
 
@@ -17,11 +17,8 @@ OVHcloud vous propose le client de messagerie Outlook au tarif de 2 euros HT par
 
 Après votre souscription, vous pouvez télécharger Outlook parmi l'une des 6 versions suivantes:
 
-- Outlook 2013 pour Windows 32 bits.
-- Outlook 2013 pour Windows 64 bits.
 - Outlook 2016 pour Windows 32 bits.
 - Outlook 2016 pour Windows 64 bits.
-- Outlook 2011 pour MAC 64 bits.
 - Outlook 2016 pour MAC 64 bits.
 
 **Découvrez comment souscrire une licence Outlook depuis votre plateforme Exchange OVHcloud et l'installer.**

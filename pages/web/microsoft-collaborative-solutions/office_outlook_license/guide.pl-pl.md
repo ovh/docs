@@ -11,7 +11,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 07-09-2021**
+**Ostatnia aktualizacja z dnia 05-10-2022**
 
 ## Wprowadzenie
 
@@ -21,11 +21,8 @@ OVHcloud oferuje program pocztowy Outlook w cenie 2 euro netto miesięcznie. Zos
 
 Po zamówieniu programu Outlook możesz pobrać jedną z 6 wersji:
 
-- Outlook 2013 na Windows 32 bit.
-- Outlook 2013 na Windows 64 bit.
 - Outlook 2016 na Windows 32 bit.
 - Outlook 2016 na Windows 64 bit.
-- Outlook 2011 na 64-bitowy MAC.
 - Outlook 2016 na 64-bitowy MAC.
 
 **Dowiedz się, jak zamówić licencję Outlook z platformy Exchange OVHcloud i zainstalować ją.**
