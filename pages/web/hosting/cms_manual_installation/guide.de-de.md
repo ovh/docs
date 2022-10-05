@@ -8,7 +8,7 @@ order: 03
 
 **Letzte Aktualisierung am 04.02.2020**
 
-## Ziel
+## Ziel 
 
 Unsere Webhosting-Dienste sind mit einigen der beliebtesten Content-Management-Systeme (CMS) kompatibel, die eine Vielzahl von Anwendungsfällen abdecken können.
 

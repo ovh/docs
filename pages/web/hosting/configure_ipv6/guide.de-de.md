@@ -22,7 +22,7 @@ Da die Anzahl der verfügbaren IPv4-Adressen knapp ist, wird es immer schwierige
 
 Weitere Informationen finden Sie im Wikipedia-Artikel zum [IPv6-Protokoll](https://de.wikipedia.org/wiki/IPv6){.external}.
 
-## Ziel
+## Ziel 
 
 Unsere Webhostings sind seit 2011 mit IPv6 kompatibel, doch die Aktivierung dieses Protokolls war bis vor kurzem lediglich eine optionale Konfigurationseinstellung. 
 

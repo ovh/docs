@@ -12,7 +12,7 @@ order: 05
 
 **Letzte Aktualisierung am 07.04.2022**
 
-## Verwaltung Ihres Angebots
+## Verwaltung Ihres Angebots 
 
 ### Wie konfiguriere ich mein Webhosting?
 

@@ -8,7 +8,7 @@ order: 03
 ---
 
 **Stand 27.11.2018**
-
+ 
 ## Einleitung
 
 Fast alle Content Management Systeme (CMS) wie WordPress oder Joomla! verwenden heutzutage Datenbanken, um sogenannte dynamische Inhalte wie beispielsweise Kommentare oder Artikel zu speichern. Es kann aus verschiedenen Gründen erforderlich sein, ein Backup Ihrer Datenbank zu erstellen, um deren Inhalt zu exportieren.

@@ -12,7 +12,7 @@ order: 04
 
 **Letzte Aktualisierung am 22.01.2021**
 
-## Ziel
+## Ziel 
 
 Die Webserver-Protokolle und Website-Statistiken sind in Ihrem Webhosting inklusive und über das OVHcloud Kundencenter komfortabel abrufbar.
 

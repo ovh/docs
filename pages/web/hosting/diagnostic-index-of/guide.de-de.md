@@ -12,7 +12,7 @@ order: 07
 
 **Letzte Aktualisierung am 10.05.2022**
 
-## Ziel
+## Ziel 
 
 Eine Fehlkonfiguration der `Multisite`-Einstellungen kann dazu führen, dass Ihre Website eine Seite namens **"Index of"** anzeigt.
 

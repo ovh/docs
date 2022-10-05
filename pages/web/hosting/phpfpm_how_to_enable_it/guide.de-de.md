@@ -6,7 +6,7 @@ section: PHP
 order: 03
 ---
 
-
+ 
 ## Was ist PHP-FPM?
 Wir haben PHP-FPM an unsere Web-Infrastruktur angepasst, damit Sie es nutzen können, um die Antwortzeiten von PHP zu verbessern.
 

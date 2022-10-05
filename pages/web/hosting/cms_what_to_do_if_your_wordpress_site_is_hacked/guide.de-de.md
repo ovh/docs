@@ -6,7 +6,6 @@ section: 'Anwendungsbeispiele'
 order: 01
 ---
 
-
 ## 
 Sie haben eine bei OVH gehostete Webseite und stellen fest, dass Ihre Webseite nicht mehr angezeigt wird, dass sie auf eine andere Webseite weitergeleitet wird oder dass auf Ihrer Seite unerwünschte Werbung angezeigt wird.
 

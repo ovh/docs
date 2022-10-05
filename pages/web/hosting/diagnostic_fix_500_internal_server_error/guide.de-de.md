@@ -12,7 +12,7 @@ order: 06
 
 **Letzte Aktualisierung am 21.07.2022**
 
-## Ziel
+## Ziel 
 
 Der Fehlertyp "500 Internal Server Error" kann Ihre gesamte Website oder nur Teile davon betreffen. Er kann dauerhaft sein, sporadisch auftreten oder zu einer leeren Seite führen.
 

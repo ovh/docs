@@ -12,7 +12,7 @@ order: 01
 
 **Letzte Aktualisierung am 15.09.2022**
 
-## Ziel
+## Ziel 
 
 Mit dem [Start 10M](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} bietet Ihnen OVHcloud ein Webhosting mit 10 MB und einen E-Mail-Account mit 5 GB Speicherplatz.
 

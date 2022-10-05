@@ -8,7 +8,7 @@ order: 01
 
 **Letzte Aktualisierung am 03.02.2022**
 
-## Ziel
+## Ziel 
 
 Datenbanken (DBs) werden verwendet, um sogenannte dynamische Elemente wie Kommentare oder Artikel zu speichern. Diese Datenbanken werden heutzutage in praktisch allen modernen Content Management Systemen (CMS) wie WordPress oder Joomla! eingesetzt.
 

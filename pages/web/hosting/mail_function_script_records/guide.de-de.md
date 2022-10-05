@@ -8,7 +8,7 @@ order: 09
 
 **Stand 24.09.2018**
 
-## Einleitung
+## Einleitung 
 
 Automatische E-Mails werden über ein Skript versendet. Sie werden beispielsweise im Kontaktformular auf Ihrer Website verwendet und ermöglichen es, dass die Besucher der Website Ihnen Nachrichten senden.
 

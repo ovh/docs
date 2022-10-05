@@ -12,7 +12,7 @@ order: 07
 
 **Letzte Aktualisierung am 17.08.2020**
 
-## Ziel
+## Ziel 
 
 Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu verbinden, müssen die im Angebot beinhalteten optionalen E-Mail-Adressen manuell aktiviert werden. Sie können diese mit einem Domainnamen Ihrer Wahl verbinden.
 

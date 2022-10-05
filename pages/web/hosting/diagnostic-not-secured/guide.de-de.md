@@ -12,7 +12,7 @@ order: 03
 
 **Letzte Aktualisierung am 08.07.2021**
  
-## Ziel <a name="objective"></a>
+## Ziel  <a name="objective"></a>
 
 Es können verschiedene Fehlermeldungen auftreten, wenn Ihre Website nicht erreichbar ist. Die nachfolgenden Beispiele zeigen an, dass Ihr Webhosting kein [SSL-Zertifikat](../ssl-zertifikate-auf-webhostings-verwalten/) enthält (wenn Ihre Website keine der in dieser Anleitung beschriebenen Fehlermeldungen anzeigt, gehen Sie zum Abschnitt [“Weiterführende Informationen“](#gofurther) in dieser Anleitung): 
 

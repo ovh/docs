@@ -12,7 +12,7 @@ order: 01
 
 **Letzte Aktualisierung am 10.12.2021**
 
-## Ziel
+## Ziel 
 
 Diese Anleitung bietet Ihnen grundlegendes Wissen, um die Verfügbarkeit Ihrer Dienstleistungen zu gewährleisten, die Integrität Ihrer Daten zu schützen und den Zugang zu Ihren Lösungen zu sichern. Die Maßnahmen wie hier beschrieben betreffen nur Webseiten, die auf OVHcloud [Webhosting-Diensten](https://www.ovhcloud.com/de/web-hosting/) gehostet werden.
 

@@ -8,7 +8,7 @@ order: 06
 
 **Letzte Aktualisierung am 03.02.2022**
 
-## Ziel
+## Ziel 
 Diese Anleitung richtet sich an Kunden, die die Performance ihrer Webauftritte optimieren möchten.
 Die erläuterten Stichpunkte helfen Ihnen dabei, ein grundlegendes Verständnis dafür zu erlangen, welche Kriterien die Geschwindigkeit von Webseiten beeinflussen können.
 

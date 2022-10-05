@@ -8,7 +8,7 @@ order: 02
 
 **Letzte Aktualisierung am 19.01.2022**
 
-## Ziel
+## Ziel 
 
 Mit OVHcloud Webhosting Angeboten verfügen Sie über einen Speicherplatz für das Online-Stellen der Dateien Ihrer Websites und Anwendungen. Auf diesen können Sie mit den entsprechenden Passwörtern via SSH oder als FTP-Benutzer zugreifen.
 

@@ -13,7 +13,7 @@ order: 01
 
 **Letzte Aktualisierung am 22.09.2020**
 
-## Ziel
+## Ziel 
 
 Auf Ihrem OVHcloud Webhosting können Sie Skripte verwenden, um bestimmte Operationen zu automatisieren. Die Erstellung eines geplanten Tasks ("CRON job") ist die einfachste Methode sicherzustellen, dass Ihre Skripte zu bestimmten Zeiten ausgeführt werden, ohne dass weitere Aktionen Ihrerseits erforderlich sind. 
 

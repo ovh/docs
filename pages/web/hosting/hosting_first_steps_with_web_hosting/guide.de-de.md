@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 02
 ---
 
-**Stand 19.03.2018**
+**Stand 19.03.2018** 
 
 ## Einleitung
 

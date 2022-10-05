@@ -12,7 +12,7 @@ order: 06
 
 **Letzte Aktualisierung am 20.06.2022**
 
-## Ziel
+## Ziel 
 
 Über Ihr OVHcloud Webhosting haben Sie Zugriff auf einen Speicherplatz, auf dem Sie Ihre Websites hosten können. Aus verschiedenen Gründen kann es vorkommen, dass die gesamten Daten Ihres Speicherplatzes oder auch nur eine darin gespeicherte Datei wiederhergestellt werden müssen. Das ist beispielsweise der Fall, wenn eine Datei gelöscht oder bearbeitet wurde und die Website nicht mehr erreichbar ist.
 

@@ -12,7 +12,7 @@ order: 02
 
 **Letzte Aktualisierung am 20.09.2021**
 
-## Ziel
+## Ziel 
 
 Es kann notwendig sein, den Zugang zu einem Teil Ihrer Website mittels Zugangsdaten zu schützen. Sie können hierzu eine Datei namens ".htaccess" anlegen, um den Zugang zu Ihrer Administratoroberfläche zu schützen.
 

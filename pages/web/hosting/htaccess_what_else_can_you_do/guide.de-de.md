@@ -9,7 +9,7 @@ order: 04
 
 ## Verzeichnis-Browsing verhindern
 Wenn Sie nicht wollen, dass Internetuser den Inhalt eines Verzeichnisses ohne Index-Datei (index.cgi, index.html, index.php, etc.) "durchstöbern" können, erstellen Sie eine .htaccess-Datei mit folgender Zeile:
-
+ 
 
 ```
 Options -Indexes

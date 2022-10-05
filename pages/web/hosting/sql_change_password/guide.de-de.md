@@ -12,7 +12,7 @@ order: 02
 
 **Letzte Aktualisierung am 26.01.2022**
 
-## Ziel
+## Ziel 
 
 Die meisten Websites verwenden eine **Datenbank**, um ihre Artikel, Kommentare oder E-Mail-Adressen zu speichern.
 

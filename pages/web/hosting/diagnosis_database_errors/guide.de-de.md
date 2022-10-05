@@ -12,7 +12,7 @@ order: 04
 
 **Letzte Aktualisierung am 03.02.2022**
 
-## Ziel
+## Ziel 
 
 Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler beim Datenbankzugriff werden entweder direkt auf Ihrer Website oder in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) sowie im [phpMyAdmin Interface](https://docs.ovh.com/de/hosting/datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) angezeigt.
 

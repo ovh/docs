@@ -12,7 +12,7 @@ order: 08
 
 **Letzte Aktualisierung am 16.06.2022**
 
-## Ziel
+## Ziel 
 
 Änderungen der Zugriffsrechte auf Ihre Website-Dateien, die Bearbeitung der **.htaccess** Datei oder die Installation einer Sicherheitserweiterung können unter Umständen in einer "**403 forbidden**" Seite resultieren.
 

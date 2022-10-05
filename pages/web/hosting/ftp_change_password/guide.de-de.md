@@ -12,7 +12,7 @@ order: 03
 
 **Letzte Aktualisierung am 18.08.2022**
 
-## Ziel
+## Ziel 
 
 Die OVHcloud Webhosting Angebote bieten Zugriff auf einen Online-Speicherplatz für Dateien, der über das **FTP**-Protokoll nutzbar ist.<br>Zugriff auf diesen Bereich ist über einen FTP-Benutzer und das zugehörige Passwort möglich.
 <br>Mit diesem Zugang können Sie [Ihre Website online stellen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/).
