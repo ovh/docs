@@ -3,7 +3,7 @@ title: Rozwiąż najczęstsze błędy związane z bazami danych
 excerpt: "Zdiagnozuj najczęstsze przypadki błędów związanych z bazami danych"
 slug: blad-baz-danych
 section: Diagnostyka
-order: 4
+order: 04
 ---
 
 > [!primary]

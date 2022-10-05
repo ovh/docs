@@ -2,8 +2,8 @@
 title: 'Using Cyberduck (on Mac)'
 excerpt: 'Cyberduck user guide'
 slug: web_hosting_cyberduck_user_guide_on_mac
-legacy_guide_number: g1598
-section: 'FTP and SSH'
+section: FTP and SSH
+order: 05
 ---
 
 

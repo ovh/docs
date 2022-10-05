@@ -3,6 +3,7 @@ title: Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen
 slug: hosting-htaccess-authentifizierung
 excerpt: Erfahren Sie hier, wie Sie den Zugang zur Verwaltung Ihrer Website mit einer .htaccess Datei schützen.
 section: Weiterleitung und Authentifizierung
+order: 02
 ---
 
 > [!primary]

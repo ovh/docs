@@ -1,9 +1,9 @@
 ---
 title: Composer auf einem Webhosting installieren
 slug: composer-installieren-hosting
-legacy_guide_number: 1894
 excerpt: Erfahren Sie hier, wie Composer installieren und erste Schritte ausführen
 section: PHP
+order: 02
 ---
 
 > [!primary]

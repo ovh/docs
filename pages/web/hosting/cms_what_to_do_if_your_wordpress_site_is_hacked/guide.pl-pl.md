@@ -2,7 +2,8 @@
 title: 'Włamanie na stronę z modułem WordPress: porady i przykłady zastosowania'
 excerpt: ''
 slug: wlamanie_na_strone_z_modulem_wordpress_porady_i_przyklady_zastosowania
-section: Diagnostyka
+section: Przykłady zastosowania
+order: 01
 ---
 
 Dysponujesz stroną opartą o moduł WordPress w OVH i zauważyłeś, że Twoja strona się nie wyświetla, że przekierowuje na inną stronę lub że jest wypełniona reklamami. 

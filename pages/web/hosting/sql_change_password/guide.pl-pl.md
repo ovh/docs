@@ -3,7 +3,7 @@ title: Zmiana hasła do bazy danych na hostingu
 slug: zmiana-hasla-do-bazy-danych
 excerpt: Dowiedz się, jak zmienić hasło do bazy danych utworzonej w ramach pakietu hostingowego
 section: Bazy danych
-order: 2
+order: 02
 ---
 
 > [!primary]

@@ -2,9 +2,8 @@
 title: Häufige FTP-Probleme beheben
 excerpt: Erfahren Sie hier, wie Sie Fehlermeldungen bei FTP-Verbindungen beheben 
 slug: webhosting_haufige_ftp-probleme
-legacy_guide_number: 1996
 section: FTP und SSH
-order: 3
+order: 04
 ---
 
 > [!primary]

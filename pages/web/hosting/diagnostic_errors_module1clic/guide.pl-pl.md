@@ -3,7 +3,7 @@ title: Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 klikni�
 slug: bledy-frameworki-moduly-za-1-kliknieciem
 excerpt: Zdiagnozuj najczęstsze przypadki błędów związanych z modułami za pomocą 1 kliknięcia
 section: Diagnostyka
-order: 2
+order: 02
 ---
 
 > [!primary]

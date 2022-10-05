@@ -1,9 +1,9 @@
 ---
 title: Instalacja Composer na hostingu
 slug: instalacja_oprogramowania_composer_na_hostingu_www
-legacy_guide_number: 1894
 excerpt: Dowiedz się, jak zainstalować i zrobić pierwsze kroki w Composer.
 section: PHP
+order: 02
 ---
 
 > [!primary]

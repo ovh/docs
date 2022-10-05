@@ -1,10 +1,9 @@
 ---
 title: 'Was tun, wenn Ihre WordPress Seite gehackt wurde?'
 excerpt: ''
-id: '1874'
 slug: was_tun_wenn_ihre_wordpress_seite_gehackt_wurde
-legacy_guide_number: g1874
-section: 'Diagnose'
+section: 'Anwendungsbeispiele'
+order: 01
 ---
 
 

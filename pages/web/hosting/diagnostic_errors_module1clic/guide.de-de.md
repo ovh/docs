@@ -3,7 +3,7 @@ title: Die häufigsten Fehler bei 1-Klick-Modulen beheben
 slug: fehler-bei-1-klick-modulen
 excerpt: Erfahren Sie hier, wie Sie die häufigsten Fehler bei der Erstellung von 1-Klick-Modulen beheben können
 section: Diagnose
-order: 2
+order: 02
 ---
 
 > [!primary]

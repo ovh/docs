@@ -2,8 +2,8 @@
 title: Activating geolocation on a Web Hosting plan
 excerpt: 'Find out how to use country IP addresses'
 slug: geolocation_on_web_hosting_packages
-legacy_guide_number: g1880
-section: 'Website optimisation'
+section: Optimise your website
+order: 05
 ---
 
 

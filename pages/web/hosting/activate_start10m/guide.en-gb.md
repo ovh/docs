@@ -3,7 +3,7 @@ title: 'Activating the free Start 10M hosting plan'
 slug: activate-start10m
 excerpt: 'Find out how to activate your Start 10M hosting plan'
 section: 'Getting started'
-order: 02
+order: 01
 ---
 
 **Last updated 15th September 2022**

@@ -3,7 +3,7 @@ title: 'Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL'
 slug: aktywacja-https-ssl-na-stronie-WWW
 excerpt: 'Dowiedz się, jak aktywować protokół HTTPS na stronie WWW za pomocą certyfikatu SSL'
 section: SSL
-order: 2
+order: 02
 ---
 
 **Ostatnia aktualizacja z dnia 29-11-2018**

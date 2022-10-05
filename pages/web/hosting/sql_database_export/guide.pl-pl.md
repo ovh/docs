@@ -3,6 +3,7 @@ title: 'Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW'
 excerpt: 'Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hostingu WWW OVH'
 slug: eksport-bazy-danych
 section: 'Bazy danych'
+order: 03
 ---
 
 **Ostatnia aktualizacja dnia 2018-08-/07**

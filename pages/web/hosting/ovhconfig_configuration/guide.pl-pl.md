@@ -3,7 +3,7 @@ title: 'Konfiguracja pliku .ovhconfig na hostingu'
 slug: konfiguracja-pliku-ovhconfig
 excerpt: 'Poznaj plik .ovhconfig i dowiedz się, jak go modyfikować'
 section: 'Konfiguracja hostingu'
-order: 4
+order: 03
 ---
 
 **Ostatnia aktualizacja z dnia 03-01-2019**

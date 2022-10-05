@@ -2,8 +2,8 @@
 title: 'SSL-Zertifikat auf einem Webhosting verwalten'
 slug: ssl-zertifikate-auf-webhostings-verwalten
 excerpt: 'Erfahren Sie hier, wie Sie ein SSL-Zertifikat auf Ihrem OVHcloud Webhosting verwalten'
-section: 'SSL'
-order: 1
+section: SSL
+order: 01
 ---
 
 > [!primary]

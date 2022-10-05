@@ -3,7 +3,7 @@ title: Co zrobić w przypadku strony "403 forbidden"?
 excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę "403 forbidden"
 slug: diagnostyka-403-forbidden
 section: Diagnostyka
-order: 7
+order: 08
 ---
 
 > [!primary]

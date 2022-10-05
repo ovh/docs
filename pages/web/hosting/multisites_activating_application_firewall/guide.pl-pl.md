@@ -1,9 +1,9 @@
 ---
 title: 'Aktywacja zapory systemowej'
 excerpt: 'Hosting www: Aktywacja zapory systemowej'
-id: '1937'
 slug: hosting_www_aktywacja_zapory_systemowej
 section: 'Optymalizacja strony WWW'
+order: 04
 ---
 
 > [!primary]

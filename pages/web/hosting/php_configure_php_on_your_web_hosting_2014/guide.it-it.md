@@ -3,9 +3,7 @@ title: 'Modificare la versione di PHP su un hosting Web'
 slug: configura_php_sul_tuo_hosting_web_condiviso_2014_ovh
 excerpt: 'Come configurare una nuova versione di PHP su un hosting Web OVH'
 section: PHP
-order: 1
-id: '1207'
-legacy_guide_number: g1207
+order: 01
 ---
 
 **Ultimo aggiornamento: 26/06/2019**

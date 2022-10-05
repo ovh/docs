@@ -2,8 +2,8 @@
 title: 'Wdrożenie certyfikatu SSL na istniejącej stronie WWW'
 slug: unikanie_pulapek_ssl_na_stronie_www
 excerpt: 'Dowiedz się, na co zwrócić uwagę przy wdrożeniu certyfikatu SSL na stronie internetowej'
-id: '2220'
-section: 'FTP i SSH - zdalny dostęp'
+section: SSL
+order: 04
 ---
 
 **Ostatnia aktualizacja dnia 20-09-2018**

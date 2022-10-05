@@ -1,9 +1,9 @@
 ---
 title: 'Przewodnik dotyczący usługi CDN na hostingu www'
 excerpt: 'Zoptymalizuj Twoją witrynę internetową, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN'
-id: '1290'
 slug: przewodnik_dotyczacy_uslugi_geocache_na_hostingu_www
 section: 'Optymalizacja strony WWW'
+order: 03
 ---
 
 > [!primary]

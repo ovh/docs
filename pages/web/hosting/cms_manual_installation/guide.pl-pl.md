@@ -1,9 +1,9 @@
 ---
 title: 'Ręczna instalacja modułu CMS w ramach hostingu WWW'
 excerpt: 'Dowiedz się więcej o systemach CMS kompatybilnych z hostingiem WWW'
-id: '1375'
 slug: hosting_www_reczna_instalacja_modulu_cms
 section: CMS
+order: 03
 ---
 
 **Ostatnia aktualizacja: 04-02-2020**

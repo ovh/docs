@@ -3,7 +3,7 @@ title: Was tun bei dem Fehler "Dies ist keine sichere Verbindung"?
 slug: fehler-website-nicht-gesichert
 excerpt: Erfahren Sie hier, wie Sie bei sicherheitsrelevanten Fehlermeldungen auf Ihrer Website vorgehen
 section: Diagnose
-order: 3
+order: 03
 ---
 
 > [!primary]

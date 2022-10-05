@@ -3,7 +3,7 @@ title: 'Die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren'
 slug: webhosting-email-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren können'
 section: 'Erste Schritte'
-order: 3
+order: 07
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: FAQ Web Hosting
 excerpt: Hier finden Sie die Antworten zu den am häufigsten gestellten Fragen rund um OVHcloud Webhostings
 slug: webhosting-faq
 section: Erste Schritte
+order: 05
 ---
 
 > [!primary]

@@ -2,8 +2,8 @@
 title: 'Gestire l’invio delle email automatiche'
 excerpt: 'Come monitorare e gestire le email automatiche inviate da un hosting Web OVH'
 slug: hosting_web_gestisci_linvio_delle_tue_email_automatiche
-legacy_guide_number: g1974
 section: Diagnostica
+order: 09
 ---
 
 **Ultimo aggiornamento: 27/03/2019**

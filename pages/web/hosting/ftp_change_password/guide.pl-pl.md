@@ -3,7 +3,7 @@ title: Zmiana hasła do konta FTP
 slug: zmiana-hasla-konto-ftp
 excerpt: Dowiedz się, jak zmienić hasło dla użytkownika FTP utworzonego na Twoim hostingu
 section: FTP i SSH
-order: 2
+order: 03
 ---
 
 > [!primary]

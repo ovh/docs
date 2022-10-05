@@ -3,7 +3,7 @@ title: 'Informacje techniczne związane z hostingiem współdzielonym'
 slug: hosting_www_informacje_techniczne_zwiazane_z_hostingiem_www
 excerpt: 'Zapoznaj się z różnego rodzaju informacjami technicznymi dotyczącymi hostingu współdzielonego'
 section: 'Konfiguracja hostingu'
-order: 6
+order: 05
 ---
 
 > [!primary]

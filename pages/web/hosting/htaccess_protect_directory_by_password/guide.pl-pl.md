@@ -3,6 +3,7 @@ title: "Chroń interfejs administracyjny Twojej strony za pomocą pliku .htacces
 slug: hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu
 excerpt: "Dowiedz się, jak zabezpieczyć dostęp do strony WWW za pomocą pliku .htaccess"
 section: Przekierowania i uprawnienia dostępu
+order: 02
 ---
 
 > [!primary]

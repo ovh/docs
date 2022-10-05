@@ -3,6 +3,7 @@ title: Tworzenie automatycznych zadań (CRON) na Twoim hostingu
 excerpt: Dowiedz się, jak utworzyć zadania CRON do automatyzacji zaplanowanych zadań na hostingu
 slug: hosting_www_automatyczne_zadania_cron
 section: 'CRON -  automatyzacja zadań'
+order: 01
 ---
 
 > [!primary]

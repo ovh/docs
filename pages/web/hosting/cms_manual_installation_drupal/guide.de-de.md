@@ -2,8 +2,8 @@
 title: 'Manuelle Installation von Drupal'
 excerpt: Wie funktioniert die manuelle Installation von Drupal?
 slug: cms_manuelle_installation_von_drupal
-legacy_guide_number: g1976
-section: 'CMS'
+section: CMS
+order: 04
 ---
 
 

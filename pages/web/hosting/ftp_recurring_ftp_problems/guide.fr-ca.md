@@ -2,9 +2,8 @@
 title: "Résoudre les erreurs récurrentes lors de l’utilisation d’un logiciel FTP"
 excerpt: "Retrouvez ici les anomalies les plus fréquentes liées à votre logiciel FTP"
 slug: mutualise-les-problemes-ftp-recurrents
-legacy_guide_number: 1996
 section: FTP et SSH
-order: 3
+order: 04
 ---
 
 **Dernière mise à jour le 05/01/2022**

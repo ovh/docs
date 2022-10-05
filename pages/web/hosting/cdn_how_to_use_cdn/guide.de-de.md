@@ -3,7 +3,7 @@ title: 'Ihre Webseiten mit CDN beschleunigen'
 excerpt: 'Erfahren Sie hier, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern'
 slug: verwendung_des_geocache_boosters_auf_einem_webhosting
 section: 'Webseitenoptimierung'
-order: 1
+order: 03
 ---
 
 > [!primary]

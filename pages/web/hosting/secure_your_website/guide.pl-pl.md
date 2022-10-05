@@ -3,7 +3,7 @@ title: Jak zabezpieczyć Twoją stronę WWW?
 excerpt: Dowiedz się, jak zwiększyć bezpieczeństwo Twojej strony WWW
 slug: secure-website
 section: Optymalizacja strony WWW 
-order: 1
+order: 01
 ---
 
 > [!primary]

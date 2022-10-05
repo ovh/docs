@@ -3,6 +3,7 @@ title: 'IPv6 für Ihre Webseiten konfigurieren'
 slug: ipv6-konfigurieren-hosting
 excerpt: Erfahren Sie hier, wie Sie Ihre Webseiten für IPv6-Kompatibilität einrichten
 section: 'Webhosting-Konfiguration'
+order: 06
 ---
 
 > [!primary]

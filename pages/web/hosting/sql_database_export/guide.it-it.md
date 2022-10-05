@@ -1,10 +1,9 @@
 ---
 title: 'Recuperare il backup del database di un hosting Web'
 excerpt: 'Come ripristinare il backup di un database di un hosting Web OVH'
-id: '1394'
 slug: web_hosting_come_esportare_un_database
-legacy_guide_number: g1394
 section: Database
+order: 03
 ---
 
 **Ultimo aggiornamento: 25/02/2019**

@@ -3,6 +3,7 @@ title: 'Instalacja kilku stron WWW na jednym hostingu'
 slug: konfiguracja-multisite-na-hostingu
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
 section: 'Pierwsze kroki'
+order: 03
 ---
 
 > [!primary]

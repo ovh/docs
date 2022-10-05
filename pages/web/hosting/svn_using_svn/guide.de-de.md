@@ -1,9 +1,9 @@
 ---
 title: SVN verwenden
 slug: webhosting_verwendung_von_svn
-legacy_guide_number: 1961
 excerpt: So verwenden Sie SVN via SSH auf Ihrem Webhosting
 section: FTP und SSH
+order: 09
 ---
 
 **Letzte Aktualisierung am 06.01.2021**

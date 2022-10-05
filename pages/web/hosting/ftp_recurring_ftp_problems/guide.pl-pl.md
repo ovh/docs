@@ -2,9 +2,8 @@
 title: Usuwanie powtarzających się błędów podczas korzystania z programu FTP
 excerpt: Odnajdziesz tutaj najczęstsze nieprawidłowości związane z Twoim oprogramowaniem FTP
 slug: rozdzielenie-problemow-ftp-recents
-legacy_guide_number: 1996
 section: FTP i SSH
-order: 3
+order: 04
 ---
 
 > [!primary]

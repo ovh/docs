@@ -1,9 +1,9 @@
 ---
 title: Geolokalizacja na hostingu www
 excerpt: ''
-id: '1880'
 slug: geolokalizacja_na_hostingu_www
-section: Adresacja IP w OVH
+section: Adresacja IP w OVHcloud
+order: 05
 ---
 
 

@@ -1,10 +1,9 @@
 ---
 title: 'Verwendung von PuTTY für Windows'
 excerpt: 'Webhosting: Verwendung von PuTTY für Windows'
-id: '1964'
 slug: webhosting_verwendung_von_putty_fur_windows
-legacy_guide_number: g1964
 section: 'FTP und SSH'
+order: 08
 ---
 
 

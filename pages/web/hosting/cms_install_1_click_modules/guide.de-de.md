@@ -2,8 +2,8 @@
 title: Installation Ihrer Website mit 1-Klick-Modulen
 excerpt: So installieren Sie Ihre Website mithilfe unserer 1-Klick-Module
 slug: webhosting_installation_von_webhosting-modulen
-section: 'CMS'
-order: 1
+section: CMS
+order: 01
 ---
 
 **Stand 03.02.2022**

@@ -3,7 +3,7 @@ title: 'Den Speicherplatz Ihres Webhostings wiederherstellen'
 slug: webhosting-speicherplatz-wiederherstellen
 excerpt: Erfahren Sie hier, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen
 section: 'FTP und SSH'
-order: 3
+order: 06
 ---
 
 > [!primary]

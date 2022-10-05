@@ -3,7 +3,7 @@ title: "Co zrobić w przypadku błędu « Połączenie nie jest prywatne »?"
 excerpt: "Reagowanie w przypadku wiadomości z błędem związanej z bezpieczeństwem strony"
 slug: blad-strona-nie-bezpieczna
 section: Diagnostyka
-order: 3
+order: 03
 ---
 
 > [!primary]

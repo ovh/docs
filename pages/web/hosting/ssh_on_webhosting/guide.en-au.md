@@ -3,7 +3,7 @@ title: 'Accessing a web hosting plan via SSH'
 slug: web_hosting_ssh_on_web_hosting_packages
 excerpt: 'Find out how to connect and use SSH access on an OVHcloud web hosting plan'
 section: FTP and SSH
-order: 06
+order: 07
 ---
 
 **Last updated 19th January 2022**

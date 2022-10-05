@@ -3,7 +3,7 @@ title: Pierwsze kroki z hostingiem OVH
 slug: pierwsze-kroki-hosting
 excerpt: Zobacz, jak właściwie rozpocząć korzystanie z hostingu
 section: Pierwsze kroki
-order: 1
+order: 02
 ---
 
 **Ostatnia aktualizacja dnia 2018-01-16**

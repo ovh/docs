@@ -2,7 +2,8 @@
 title: 'Changing a Web Hosting plan’s PHP version'
 slug: how_to_configure_php_on_your_ovh_web_hosting_package_2014
 excerpt: 'Find out how to change the PHP version on an OVHcloud Web Hosting plan'
-legacy_guide_number: g1207
+section: PHP
+order: 01
 ---
 
 **Last updated 5th May 2020**

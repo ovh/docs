@@ -3,7 +3,7 @@ title: 'Fehler "Seite nicht installiert" beheben'
 excerpt: 'Erfahren Sie hier, wie Sie den Fehler "Seite nicht installiert" beheben'
 slug: webhosting_fehler_-_webseite_ist_nicht_installiert
 section: Diagnose
-order: 4
+order: 05
 ---
 
 > [!primary]

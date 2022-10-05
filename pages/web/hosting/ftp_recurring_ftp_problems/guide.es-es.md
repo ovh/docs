@@ -2,9 +2,8 @@
 title: Resolver los errores recurrentes durante el uso de un programa FTP
 excerpt: Encuentre aquí las anomalías más frecuentes asociadas a su programa FTP
 slug: agrupe-los-problemes-ftp-recurrents
-legacy_guide_number: 1996
 section: FTP y SSH
-order: 3
+order: 04
 ---
 
 > [!primary]

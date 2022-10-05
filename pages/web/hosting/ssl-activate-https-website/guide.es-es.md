@@ -3,7 +3,7 @@ title: 'Habilitar HTTPS en un sitio web con certificado SSL'
 slug: activar-https-en-un-sitio-web-con-ssl
 excerpt: 'Cómo activar el protocolo HTTPS en un sitio web que dispone de un certificado SSL'
 section: SSL
-order: 2
+order: 02
 ---
 
 **Última actualización: 05/12/2018**

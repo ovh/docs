@@ -3,7 +3,7 @@ title: Optimising the security of your website
 excerpt: Find out how to make your website more secure
 slug: secure-website
 section: Website optimisation
-order: 1
+order: 01
 ---
 
 **Last updated 10th December 2021**

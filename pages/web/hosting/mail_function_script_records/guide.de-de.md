@@ -2,8 +2,8 @@
 title: 'Automatische E-Mails eines Webhostings verwalten'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie über ein Webhosting versendete automatische E-Mails verfolgen und verwalten'
 slug: webhosting_verwaltung_automatischer_e-mails
-legacy_guide_number: g1974
 section: 'Diagnose'
+order: 09
 ---
 
 **Stand 24.09.2018**

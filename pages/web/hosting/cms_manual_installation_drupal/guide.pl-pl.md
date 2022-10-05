@@ -1,9 +1,9 @@
 ---
 title: CMS - ręczna instalacja modułu Drupal
 excerpt: Jak ręcznie zainstalować moduł Drupal?
-id: '1976'
 slug: cms_-_reczna_instalacja_modulu_drupal
 section: CMS
+order: 04
 ---
 
 

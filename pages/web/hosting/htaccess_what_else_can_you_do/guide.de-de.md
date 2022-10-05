@@ -2,8 +2,8 @@
 title: Fortgeschrittene Operationen mit .htaccess Dateien
 excerpt: In dieser Hilfe erfahren Sie, welche anderen Operationen mit .htaccess-Dateien möglich sind
 slug: webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich
-legacy_guide_number: g1972
 section: 'Weiterleitung und Authentifizierung'
+order: 04
 ---
 
 

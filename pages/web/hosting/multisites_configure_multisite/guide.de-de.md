@@ -3,7 +3,7 @@ title: 'Mehrere Websites auf einem Webhosting einrichten'
 slug: multisites-mehrere-websites-konfigurieren
 excerpt: 'Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden'
 section: 'Erste Schritte'
-order: 3
+order: 03
 ---
 
 > [!primary]

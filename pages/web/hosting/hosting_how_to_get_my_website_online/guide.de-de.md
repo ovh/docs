@@ -4,7 +4,7 @@ slug: webhosting_meine_seite_online_stellen
 legacy_guide_number: g1374
 excerpt: 'So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online'
 section: 'Erste Schritte'
-order: 2
+order: 06
 ---
 
 > [!primary]

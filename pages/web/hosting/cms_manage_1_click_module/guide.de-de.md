@@ -3,7 +3,7 @@ title: 1-Klick-Module verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten
 slug: 1-click-module-management
 section: CMS
-order: 2
+order: 02
 ---
 
 > [!primary]

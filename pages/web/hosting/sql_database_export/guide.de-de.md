@@ -4,7 +4,7 @@ excerpt: 'Hier erfahren Sie, wie Sie ein Backup einer Datenbank Ihres OVH Webhos
 slug: webhosting_hilfe_zum_export_von_datenbanken
 legacy_guide_number: g1394
 section: 'Datenbanken'
-order: 3
+order: 03
 ---
 
 **Stand 27.11.2018**

@@ -3,7 +3,7 @@ title: Passwort eines FTP-Benutzers ändern
 slug: ftp-benutzer-passwort-aendern
 excerpt: Erfahren Sie hier, wie Sie das Passwort eines auf Ihrem OVHcloud Webhosting erstellten FTP-Benutzers ändern
 section: FTP und SSH
-order: 2
+order: 03
 ---
 
 > [!primary]

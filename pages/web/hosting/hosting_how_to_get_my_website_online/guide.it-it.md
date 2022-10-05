@@ -3,8 +3,7 @@ title: 'Mettere online un sito Internet su un hosting Web'
 slug: hosting_condiviso_come_mettere_online_il_tuo_sito
 excerpt: 'Come pubblicare un sito su un hosting Web OVHcloud'
 section: 'Per iniziare'
-order: 2
-legacy_guide_number: g1374
+order: 06
 ---
 
 > [!primary]

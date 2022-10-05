@@ -1,10 +1,9 @@
 ---
 title: 'Install a CMS manually on your Web Hosting plan'
 excerpt: 'Find out more about some of the compatible CMS for Web Hostings'
-id: '1375'
 slug: hosting_install_your_cms_manually
 section: CMS
-legacy_guide_number: g1375
+order: 03
 ---
 
 **Last updated 5th May 2020**

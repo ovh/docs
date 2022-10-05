@@ -3,7 +3,7 @@ title: "Was tun, wenn Ihre Website nicht erreichbar ist?"
 slug: fehler-server-nicht-erreichbar
 excerpt: Diagnose der Ursachen für die Unverfügbarkeit Ihrer Website
 section: Diagnose
-Order: 1
+order: 01
 ---
 
 > [!primary]

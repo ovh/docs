@@ -3,7 +3,7 @@ title: 'Włączanie darmowego hostingu Start 10M'
 slug: wlaczanie_start10m
 excerpt: 'Dowiedz się, jak włączyć hosting Start 10M'
 section: 'Pierwsze kroki'
-order: 02
+order: 01
 ---
 
 

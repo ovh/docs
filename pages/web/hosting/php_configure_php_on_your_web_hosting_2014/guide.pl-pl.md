@@ -2,8 +2,8 @@
 title: 'Zmiana wersji PHP na hostingu'
 slug: konfiguracja_php_na_hostingu_www_ovh_2014
 excerpt: 'Dowiedz się, jak zmienić wersję PHP na hostingu OVH'
-id: '1207'
 section: PHP
+order: 01
 ---
 
 **Ostatnia aktualizacja z dnia 04-10-2018**

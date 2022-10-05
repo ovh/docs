@@ -3,6 +3,7 @@ title: 'Automatische Tasks mit einem Webhosting verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie automatisierte Tasks auf Ihrem Webhosting konfigurieren'
 slug: webhosting_automatisierte_aufgaben_cron
 section: 'Automatische Tasks (CRON)'
+order: 01
 ---
 
 > [!primary]

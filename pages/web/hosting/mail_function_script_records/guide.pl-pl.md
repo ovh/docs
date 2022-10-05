@@ -3,6 +3,7 @@ title: 'Monitoring i zarządzanie automatycznymi wiadomościami e-mail na Twoim 
 slug: hosting_www_monitorowanie_automatycznych_e-maili
 excerpt: 'Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVH'
 section: Diagnostyka
+order: 09
 ---
 
 **Ostatnia aktualizacja dnia 2018-05-14**

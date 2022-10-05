@@ -2,6 +2,8 @@
 title: 'Jak uruchomić certyfikat SSL EV dla Twojej strony internetowej?'
 slug: ssl-ev
 excerpt: 'Certyfikat SSL EV zapewnia Twoich użytkowników o prawnym istnieniu Twojej firmy i pozwala im na bezpieczne wykonywanie zakupów na Twojej stronie'
+section: SSL
+order: 03
 ---
 
 ## Informacje ogólne

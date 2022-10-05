@@ -3,7 +3,7 @@ title: 'Das kostenlose Start 10M Hosting aktivieren'
 slug: start10m-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihr Start 10M Hosting aktivieren'
 section: 'Erste Schritte'
-order: 02
+order: 01
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: 'Verzeichnis von IP-Adressen für die Webhosting Cluster'
 excerpt: 'Erfahren Sie hier, welche IP-Adresse für Ihr OVHcloud Webhosting zu verwenden ist'
 slug: verzeichnis-der-ip-adressen-web-hosting-cluster
 section: 'Webhosting-Konfiguration'
+order: 01
 ---
 
 **Letzte Aktualisierung am 08.01.2021**

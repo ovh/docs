@@ -3,7 +3,7 @@ title: Was tun bei dem Fehler "403 forbidden"?
 excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn “403 forbidden“ angezeigt wird
 slug: diagnose-403-forbidden
 section: Diagnose
-order: 7
+order: 08
 ---
 
 > [!primary]

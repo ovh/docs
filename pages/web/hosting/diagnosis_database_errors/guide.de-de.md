@@ -3,7 +3,7 @@ title: Die häufigsten Datenbankfehler beheben
 excerpt: Erfahren Sie hier, wie Sie Fehler in Zusammenhang mit Datenbanken beheben
 slug: datenbanken-fehler-beheben
 section: Diagnose
-order: 4
+order: 04
 ---
 
 > [!primary]

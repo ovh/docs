@@ -4,7 +4,7 @@ title: 'Een backup van een webhosting-database ophalen'
 slug: export-databases
 excerpt: 'Ontdek hoe u een backup van de database van een OVH webhostingplan kunt verkrijgen'
 section: Databases
-order: 3
+order: 03
 ---
 
 **Laatste update 29-06-2018**

@@ -1,9 +1,9 @@
 ---
 title: CMS - ręczna instalacja modułu Joomla
 excerpt: Jak ręcznie zainstalować moduł Joomla?
-id: '1978'
 slug: cms_-_reczna_instalacja_modulu_joomla
 section: CMS
+order: 05
 ---
 
 

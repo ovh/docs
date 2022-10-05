@@ -3,7 +3,7 @@ title: "Zmiana oferty hostingowej"
 excerpt: "Dowiedz się, jak zmienić formułę subskrypcji hostingu OVHcloud"
 slug: how_to_change_hosting_offer
 section: Optymalizacja strony WWW
-order: 2
+order: 02
 ---
 
 > [!primary]

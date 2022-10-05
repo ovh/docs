@@ -1,9 +1,9 @@
 ---
 title: 'Hosting: Statystyki i logi strony'
 excerpt: Dostęp do statystyk strony www
-id: '1344'
 slug: hosting_statystyki_i_logi_strony
 section: Optymalizacja strony WWW
+order: 04
 ---
 
 > [!primary]

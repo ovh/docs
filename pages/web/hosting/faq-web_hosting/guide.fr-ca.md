@@ -3,7 +3,7 @@ title: FAQ Web Hosting
 excerpt: Retrouvez les questions les plus fréquemment posées sur les hébergements web OVHcloud
 slug: faq-hebergement
 section: Premiers pas
-order: 2
+order: 05
 ---
 
 **Dernière mise à jour le 07/04/2022**

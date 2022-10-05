@@ -3,7 +3,7 @@ title: Was tun, wenn eine “Index of“-Seite angezeigt wird?
 excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn eine “Index of“-Seite angezeigt wird
 slug: diagnose-index-of
 section: Diagnose
-order: 6
+order: 07
 ---
 
 > [!primary]

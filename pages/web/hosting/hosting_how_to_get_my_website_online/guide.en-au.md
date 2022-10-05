@@ -3,7 +3,7 @@ title: 'Publishing a website on your Web Hosting plan'
 slug: web_hosting_how_to_get_my_website_online
 excerpt: 'Find how to publish a website on your OVHcloud Web Hosting plan'
 section: Getting started
-order: 05
+order: 06
 ---
 
 **Last updated 21st July 2022**

@@ -2,8 +2,8 @@
 title: 'Activating HTTPS on your website with an SSL certificate'
 slug: activate-https-website-ssl
 excerpt: 'Find out how to activate HTTPS on your website with an SSL certificate'
-section: 'SSL'
-order: 2
+section: SSL
+order: 02
 ---
 
 **Last updated 5th December 2018**

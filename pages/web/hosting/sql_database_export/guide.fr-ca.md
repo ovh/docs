@@ -3,7 +3,7 @@ title: "Récupérer la sauvegarde de la base de données d'un hébergement web"
 slug: exportation-bases-donnees
 excerpt: "Découvrez comment récupérer la sauvegarde d'une base de données de votre hébergement web OVHcloud"
 section: 'Bases de données'
-order: 3
+order: 03
 ---
 
 **Dernière mise à jour le 05/05/2020**

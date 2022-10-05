@@ -3,7 +3,7 @@ title: "Tutorial - Korzystanie z FileZilla na Twoim hostingu OVHcloud"
 slug: hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla
 excerpt: "Zapoznaj się z przewodnikiem dotyczącym korzystania z oprogramowania Filezilla na hostingu"
 section: "FTP i SSH"
-order: 04
+order: 01
 ---
 
 > [!primary]

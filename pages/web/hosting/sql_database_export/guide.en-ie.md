@@ -3,7 +3,7 @@ title: 'Retrieving the backup of a Web Hosting plan’s database'
 excerpt: 'Find out how to retrieve a database backup from your OVH Web Hosting plan'
 slug: web_hosting_database_export_guide
 section: Databases
-order: 3
+order: 03
 ---
 
 **Last updated 15th June 2018**

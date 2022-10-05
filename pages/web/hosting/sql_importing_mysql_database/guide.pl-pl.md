@@ -3,7 +3,7 @@ title: 'Import kopii zapasowej do bazy danych hostingu'
 slug: hosting_www_importowanie_bazy_danych_mysql
 excerpt: 'Dowiedz się, jak importować kopię zapasową do bazy danych Twojego hostingu WWW OVH'
 section: 'Bazy danych'
-order: 4
+order: 04
 ---
 
 **Ostatnia aktualizacja dnia 2018-06-29**

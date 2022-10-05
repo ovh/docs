@@ -2,9 +2,8 @@
 title: "Risolvere gli errori ricorrenti nell'utilizzo di un software FTP"
 excerpt: Ritrova qui le anomalie più frequenti associate al tuo software FTP
 slug: condividili-problemi-ftp-ricorrenti
-legacy_guide_number: 1996
 section: FTP e SSH
-order: 3
+order: 04
 ---
 
 > [!primary]

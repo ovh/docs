@@ -3,7 +3,7 @@ title: 'Attivare HTTPS su un sito Internet tramite il certificato SSL'
 slug: attivare-https-su-sito-internet-tramite-certificato-ssl
 excerpt: 'Come abilitare il protocollo HTTPS sul tuo sito grazie al certificato SSL'
 section: SSL
-order: 2
+order: 02
 ---
 
 **Ultimo aggiornamento: 12/04/2019**

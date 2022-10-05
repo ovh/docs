@@ -2,9 +2,8 @@
 title: 'Zmiana konfiguracji hostingu'
 slug: zmiana_srodowiska_uruchomieniowego_dla_hostingu_www
 excerpt: 'Dowiedz się, jak zmienić konfigurację hostingu OVH'
-id: '2149'
 section: 'Konfiguracja hostingu'
-order: 3
+order: 03
 ---
 
 **Ostatnia aktualizacja z dnia 28-01-2019**

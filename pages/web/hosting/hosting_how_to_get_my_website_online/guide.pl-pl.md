@@ -3,7 +3,7 @@ title: 'Uruchomienie strony WWW na hostingu'
 slug: hosting_www_umieszczenie_strony_w_internecie
 description: 'Dowiedz się, jak uruchomić stronę WWW na Twoim hostingu OVHcloud'
 section: 'Pierwsze kroki'
-order: 2
+order: 06
 ---
 
 > [!primary]

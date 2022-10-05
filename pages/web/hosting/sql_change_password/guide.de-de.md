@@ -3,7 +3,7 @@ title: Passwort einer Webhosting-Datenbank ändern
 slug: datenbank-passwort-aendern
 excerpt: Erfahren Sie hier, wie Sie Passwörter von zu Webhostings gehörigen Datenbanken ändern
 section: Datenbanken
-order: 2
+order: 02
 ---
 
 > [!primary]

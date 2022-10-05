@@ -3,6 +3,7 @@ title: 'Skonfiguruj IPv6 dla swojej strony www'
 slug: konfiguracja-ipv6-dla-twojej-strony
 excerpt: Dowiedz się, jak stworzyć stronę WWW kompatybilną z IPv6
 section: 'Konfiguracja hostingu'
+order: 06
 ---
 
 > [!primary]

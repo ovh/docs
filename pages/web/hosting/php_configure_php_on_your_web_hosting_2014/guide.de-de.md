@@ -2,8 +2,8 @@
 title: 'PHP-Version eines Webhostings ändern'
 slug: konfiguration_von_php_fur_ein_ovh_webhosting_2014
 excerpt: 'So ändern Sie die PHP-Version Ihres OVH Webhostings'
-section: 'PHP'
-order: 1
+section: PHP
+order: 01
 ---
 
 **Stand 08.10.2018**

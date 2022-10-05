@@ -1,9 +1,9 @@
 ---
 title: CMS - ręczna instalacja modułu WordPress
 excerpt: Jak ręcznie zainstalować moduł WordPress?
-id: '1977'
 slug: cms_-_reczna_instalacja_modulu_wordpress
 section: CMS
+order: 07
 ---
 
 

@@ -3,7 +3,7 @@ title: 'Zarządzanie certyfikatem SSL na hostingu'
 slug: certyfikaty-ssl-na-hostingu
 excerpt: 'Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud'
 section: SSL
-order: 1
+order: 01
 ---
 
 > [!primary]

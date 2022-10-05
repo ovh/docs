@@ -3,7 +3,7 @@ title: 'Przywracanie plików z kopii zapasowej OVHcloud'
 slug: hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla
 excerpt: 'Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu'
 section: 'FTP i SSH'
-order: 3
+order: 06
 ---
 
 > [!primary]

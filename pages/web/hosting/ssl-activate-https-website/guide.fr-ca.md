@@ -3,7 +3,7 @@ title: 'Passer son site internet en HTTPS grâce au SSL'
 slug: passer-site-internet-https-ssl
 excerpt: 'Découvrez comment passer votre site internet en HTTPS grâce au SSL'
 section: SSL
-order: 2
+order: 02
 ---
 
 **Dernière mise à jour le 05/05/2020**
