@@ -180,7 +180,7 @@ Depois de obter as três chaves (**AK**, **AS**, **CK**), pode assinar os pedido
 Para simplificar o desenvolvimento das suas aplicações, a OVHcloud fornece-lhe wrappers API em várias linguagens.
 Utilizá-los-á para que não se preocupe com o cálculo da assinatura e se concentre no desenvolvimento da sua aplicação.
 
-- *Perl* : <https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip>
+- *Perl* : <https://github.com/ovh/perl-ovh>
 - *Python* : <https://github.com/ovh/python-ovh>
 - *PHP* : <https://github.com/ovh/php-ovh>
 - *Node.js* : <https://github.com/ovh/node-ovh>
