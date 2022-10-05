@@ -14,10 +14,10 @@ Ce document a pour but de vous permettre de créer votre première page web sur 
 
 ## Prérequis
 
-- acheter un nom de domaine chez [OVHCloud](https://www.ovhcloud.com/fr/domains/)
-- avoir activé votre Start 10M "gratuit" ou disposer d'une offre d'hébergement [Web OVHcloud](https://www.ovh.com/fr/hebergement-web/)
-- disposer d'un éditeur de texte (Bloc-notes, TextEdit, Notepad++)
-- avoir installé un client FTP pour téléverser (déposer sur le serveur) ses fichiers sur son espace dédié ([Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php)).
+- posséder un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
+- disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/) ou d'un [hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/)
+- avoir un éditeur de texte (Bloc-notes, TextEdit, Notepad++, etc.)
+- avoir installé un client FTP pour téléverser (déposer sur l'hébergement) ses fichiers sur son espace dédié ([Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.).
 
 ## En pratique
 
@@ -25,27 +25,27 @@ Ce document a pour but de vous permettre de créer votre première page web sur 
 
 #### De quoi est faite une page web ?
 
-Le contenu d'un site web est constitué souvent de plusieurs pages web. Une page web affiche un contenu, figé ou non, qui a été mis en forme pour servir une expérience de navigation. Les pages que vous visualisez sur votre navigateur sont le résultat de trois composants que nous allons détailler :
-- Le HTML (HyperText Markup Language) est le langage qui est utilisé pour structurer vos pages. Par structuration, on entend définition des éléments et leur organisation : un titre de document sera suivi d'un sous-titre, par exemple, puis de un ou plusieurs paragraphes.
-Les éléments utilisés pour structurer votre convenu sont appelés « balises » et s'écrivent en utilisant des chevrons ouvrant et fermant. La balise `<p>` désigne celle qui débute un paragraphe, le même paragraphe étant fermé par la balise fermante `</p>`. L'écriture du HTML obéit à des règles simples en terme de syntaxe. Toute balise ouverte doit être fermée, les balises ne se chevauchent pas (elles se ferment dans l'ordre inverse de leur ouverture) et ne peuvent être interprétées que les balises HTML (hors de question d'inventer les votres).
+Le contenu d'un site web est souvent constitué de plusieurs pages web. Une page web affiche un contenu, figé ou non, qui a été mis en forme pour servir une expérience de navigation. Les pages que vous visualisez sur votre navigateur sont le résultat de trois composants que nous allons détailler :
+- Le HTML (HyperText Markup Language) est un langage utilisé pour structurer vos pages. Par structuration, on entend définir des éléments et leur organisation : un titre de document sera suivi d'un sous-titre, par exemple, et d'un ou plusieurs paragraphes.
+Les éléments utilisés pour structurer votre contenu sont appelés « balises » et s'écrivent en utilisant des chevrons ouvrant et fermant. La balise `<p>` désigne celle qui débute un paragraphe, le même paragraphe étant fermé par la balise fermante `</p>`. L'écriture du HTML obéit à des règles simples en termes de syntaxe. Pour toute balise ouverte, une balise fermée doit etre créé. Les balises ne se chevauchent pas (elles se ferment dans l'ordre inverse de leur ouverture) et ne peuvent pas être interprétées autre que par des balises HTML.
 Il existe plus d'une centaine de balises disponibles, mais vous pourrez parfaitement réaliser votre site avec quelques-unes ;
 - Le CSS (Cascading Style Sheet, feuilles de style en cascade) est un langage décrivant la façon dont vont être affichés les éléments HTML : positionnement, dimensions, couleurs, comportements. Ces règles peuvent s'appliquer pour des éléments génériques (la même couleur pour tous les titres du site, ou encore la police qui sera utilisée pour l'ensemble des textes) ou pour des éléments précis (le texte contenu dans le footer, le comportement au survol du menu de navigation) ;
-- Le JavaScript est un langage qui permet d'enrichir les interactions sur un site web (ou une application web). Bien qu'étant devenu incontournable pour les développeurs web, il reste possible de réaliser des sites sans nécessairement y avoir recours.
-Si vous n'êtes pas familier avec le code dans les différents langages que nous venons de citer, pas d'inquiétude : vous pouvez copier/coller les exemples de code qui sont fournis dans ce guide, ils vous permettront d'avoir déjà un site web exploitable sur votre hébergement.
+- Le JavaScript est un langage qui permet d'enrichir les interactions sur un site web (ou une application web). Bien qu'étant devenu incontournable pour les développeurs web, il est possible de réaliser des sites sans nécessairement y avoir recours.
+Si vous n'êtes pas familier avec le code dans les différents langages cités, pas d'inquiétude : vous pouvez copier/coller les exemples de code qui sont fournis dans ce guide, ils vous permettront d'avoir déjà un site web exploitable sur votre hébergement.
 
 #### Quels outils utiliser ?
 
-Pour créer une page web, il faut commencer par écrire dans un fichier ce que l'on appelle son code source, c'est à dire le contenu d'un ou plusieurs des trois composants vus précédement. Voici leur principales nom d'extensions  : *.html (pour vos fichiers HTML), *.css (pour vos fichiers CSS), *.js (pour vos fichiers JavaScript).
+Pour créer une page web, il faut commencer par écrire dans un fichier ce que l'on appelle son code source, c'est-à-dire le contenu d'un ou plusieurs des trois composants vus précédemment. Voici leur principales nom d'extensions  : *.html (pour vos fichiers HTML), *.css (pour vos fichiers CSS), *.js (pour vos fichiers JavaScript).
 
-Les fichiers peuvent être écrits dans de simples éditeurs de texte, y compris ceux disponibles par défaut sur votre système d'exploitation (Bloc-notes, TextEdit). Il existe de nombreuses solutions open source et gratuites qui proposent des fonctionnalités supplémentaires : [Notepad++](https://notepad-plus-plus.org/), [Brackets](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) ou encore [micro](https://micro-editor.github.io/). Il est également possible d'utiliser un IDE (Integrated Development Environment, environnement de développement intégré) tel que [Visual Studio Code](https://code.visualstudio.com/) ou [Geany](https://www.geany.org/).
+Les fichiers peuvent être écrits dans de simples éditeurs de texte, y compris ceux qui sont disponibles par défaut sur votre système d'exploitation (Bloc-notes, TextEdit). Il existe de nombreuses solutions open source et gratuites qui proposent des fonctionnalités supplémentaires : [Notepad++](https://notepad-plus-plus.org/), [Brackets](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) ou encore [micro](https://micro-editor.github.io/). Il est également possible d'utiliser un IDE (Integrated Development Environment, environnement de développement intégré) tel que [Visual Studio Code](https://code.visualstudio.com/) ou [Geany](https://www.geany.org/).
 
-Pour visualiser et ajuster vos pages avant de les déposer sur votre serveur, vous pourrez utiliser votre navigateur web. Pour cela il vous suffit d'ouvrir votre fichier, depuis son emplacement local, directement sur votre navigateur.
+Pour visualiser et ajuster vos pages avant de les déposer sur votre l'hébergement, vous pourrez utiliser votre navigateur web. Pour cela il vous suffit d'ouvrir votre fichier, depuis son emplacement local, directement sur votre navigateur.
 
-#### Site statique ? Site dynamique ?
+#### Site **statique** ? Site **dynamique** ?
 
-Un site web est dit statique lorsque les pages que vous visualisez avec votre navigateur sont toujours identiques et n'offrent pas d'interactions particulières autres que les effets (menus déroulants, par exemple), animations et vidéos.
+Un site web est dit **statique** lorsque les pages que vous visualisez avec votre navigateur sont toujours identiques et n'offrent pas d'interactions particulières autres que les effets (menus déroulants, par exemple), animations et vidéos.
 
-Par opposition, un site web dynamique sous-entend que les pages que vous visualisez sont générées à la volée par le serveur, lequel exécute du code côté serveur, accède à une base de données, pour livrer un résultat qui sera en fonction des requêtes faites par l'utilisateur (consultation de rubriques, authentification, envoi de données vie un formulaire, consultation de stocks ou d'inventaires, _etc._).
+Par opposition, un site web **dynamique** sous-entend que les pages que vous visualisez sont générées à la volée par le serveur web, lequel exécute du code côté serveur, accède à une base de données, pour livrer un résultat qui sera en fonction des requêtes faites par l'utilisateur (consultation de rubriques, authentification, envoi de données vie un formulaire, consultation de stocks ou d'inventaires, _etc._).
 
 #### Qu'est-ce que le langage PHP ?
 
@@ -55,21 +55,23 @@ Le PHP _(PHP Hypertext Preprocessor)_ est un langage majoritaire utilisé dans l
 
 #### Élaborez le contenu de votre page en le structurant à l'aide du code HTML
 
-Pour réaliser votre première page web, vous allez avoir besoin dans un premier temps de définir un répertoire dans lequel vont se trouver tous vos fichiers. Peu importe l'emplacement de ce répertoire sur votre ordinateur.
+Pour réaliser votre première page web, vous allez avoir besoin de définir un répertoire dans lequel se trouveront tous vos fichiers. Peu importe l'emplacement de ce répertoire sur votre ordinateur.
 
-Le premier fichier que nous allons créer, et qui contiendra votre code HTML, s'appellera index.html. Il s'agit d'un usage : les serveurs HTTP sont configurés par défaut pour que la requête faite sur votre serveur (en tapant votre nom de domaine dans la barre d'adresse d'un navigateur) lise le fichier index.
-Ouvrez votre éditeur de texte et sauvegardez votre fichier de travail. Nous recommandons de conserver plusieurs copies de ce répertoire de travail pour effectuer des sauvegardes. Le site sera disponible sur nos serveurs, mais vous serez sereins quant à la pérennité de vos données si vous gardez une copie locale et des backups sur d'autres supports tels que des disques durs externes.
+Le premier fichier que l'on nommera `index.html`, contiendra du code HTML. Il s'agit d'un usage : les serveurs HTTP sont configurés par défaut pour que la requête faite sur votre l'hébergement (en tapant votre nom de domaine dans la barre d'adresse d'un navigateur) liste le fichier « index ».
+
+Ouvrez votre éditeur de texte et sauvegardez votre fichier de travail. Nous recommandons de conserver plusieurs copies de ce répertoire de travail pour effectuer des sauvegardes. Le site sera disponible sur votre hébergement, mais vous serez sereins quant à la pérennité de vos données si vous gardez une copie locale et des backups sur d'autres supports tels que des disques durs externes.
 
 ##### **Composition d'un page HTML type**
 
 Les pages HTML sont toujours structurées de la même façon :
 - une déclaration DOCTYPE qui indique au navigateur de lire le contenu qui suit en respectant au maximum les standards
 - une balise `<html>` qui va encadrer toutes les autres balises du document
-- une balise `<head>` et une balise `<body>`.
+- une balise `<head>` 
+- une balise `<body>`.
 
-Vous pouvez taper ce code dans votre fichier index.html :
+Vous pouvez taper ce code dans votre fichier `index.html` :
 
-```
+```html
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -87,32 +89,32 @@ Vous pouvez taper ce code dans votre fichier index.html :
 Vous remarquerez que certaines balises comportent plus d'informations que d'autres, comme la balise `<html lang="en">` de l'exemple. On parle d'attributs qui vont permettre de préciser certains éléments. Dans ce cas précis, il s'agit d'indiquer quelle est la langue principale de la page web. Certains de ces attributs sont universels et pourront être utilisés sur toutes les balises (à quelques exceptions près), d'autres sont spécifiques.
 
 La balise `<head>` inclut des éléments qui ne seront pas affichés à l'écran. Les balises `<meta>` vont donner des indications au navigateur, mais aussi aux moteurs de recherche, comme l'encodage des caractères utilisés dans le document (UTF 8 ici) ou des informations sur l'affichage sur mobile ("viewport").
-La balise `<title>` est très importante : elle vous permet d'indiquer le titre de votre page qui apparaîtra sur l'onglet de votre navigateur, mais, et surtout, qui sera indexé par les moteurs de recherche. Ceci permet, par exemple, d'apparaître dans les résultats de recherche sur Google, duckduckGo, etc. Remonter haut dans ces résultats est tout un art défini par les règle SEO (Search Engine Optimization) qui n'est pas une discipline que nous couvrirons dans et article, mais dans un autre tutoriel.
+La balise `<title>` est très importante : elle vous permet d'indiquer le titre de votre page qui apparaîtra sur l'onglet de votre navigateur, mais, et surtout, qui sera indexé par les moteurs de recherche. Ceci permet, par exemple, d'apparaître dans les résultats de recherche sur Google, duckduckGo, etc. Ce placer au plus haut dans ces résultats est un exercice défini par les règles SEO (Search Engine Optimization) qui n'est pas une discipline que nous couvrirons dans cet article.
 
 Quant à la balise `<body>`, elle va contenir les autres balises HTML qui vont structurer votre document.
 
 ##### **Compléter avec un titre, un sous-titre et du contenu**
 
-Nous allons maintenant éditer le contenu textuel de notre page, toujours en respectant la structure standard du HTML, pour y ajouter un titre, un sous-titre, des paragraphes et des listes de texte.
+Nous allons maintenant éditer le contenu textuel de votre page, toujours en respectant la structure standard du HTML, pour y ajouter un titre, un sous-titre, des paragraphes et des listes de texte.
 
 ###### **Balises `<h1>`... `<h6>`**
 
 Les titres s'écrivent entre balises `<h...>`, lesquelles sont hiérarchisées comme sur n'importe quel document : d'abord `<h1>`, puis `<h2>`, etc., la dernière étant la balise `<h6>`. La balise `<h1>` est donc indispensable si vous voulez écrire une balise `<h2>`. Toutefois, si vous ne respectez pas cette règle, le navigateur affichera le résultat sans erreur.
 
-```
+```html
 <body>
     <h1>Bienvenue sur ma page personnelle</h1>
     <h2>Créez rapidement et facilement votre site web</h2>
 </body>
 ```
 
-Vous pouvez regarder le résultat, il suffit, à nouveau, d'ouvrir le fichier HTML depuis votre ordinateur : les deux chaînes de caractères seront affichées avec des tailles différentes.
+Vous pouvez observer le résultat en ouvrant le fichier HTML via un navigateur internet (Firefox, Chrome, Safarie, etc.): les deux chaînes de caractères seront affichées avec des tailles différentes.
 
 ###### **Balise `<p>`**
 
 Cette balise est utilisée pour mettre du texte ("p" pour paragraphe). Il est possible d'en positionner plusieurs :
 
-```
+```html
 <body>
     <h1>Bienvenue sur ma page personnelle</h1>
     <h2>Créez rapidement et facilement votre site web</h2>
@@ -124,7 +126,7 @@ Cette balise est utilisée pour mettre du texte ("p" pour paragraphe). Il est po
 
 Vous pouvez, en HTML, utiliser des listes. Nous prendrons l'exemple de listes simples, dites non ordonnées (telles que vous pouvez les avoir sur un traitement de texte). Pour déclarer une liste, on utilise la balise `<ul>` (pour unordered list). Cette balise va encadrer d'autres éléments, les balises `<li>`, qui contiendront le contenu des vos listes :
 
-```
+```html
 <body>
     <h1>Bienvenue sur ma page personnelle</h1>
     <h2>Créez rapidement et facilement votre site web</h2>
@@ -146,13 +148,13 @@ Vous pouvez voir le résultat dans votre navigateur : par défaut, les élément
 
 ##### **Ajouter des images pour rendre votre page plus attrayante**
 
-Le web est un média se voulant avant tout visuel, nous allons voir dans cette partie comment insérer des images dans votre contenu. L'offre Start 10M vous propose un espace de stockage de 10 Mo. Suffisant pour vos pages HTML et CSS, il peut être limité si vous souhaitez mettre beaucoup d'images sur votre site. Nous vous suggérons, dans ce cas, de souscrire à une de nos [offres « Hébergement web »](https://www.ovhcloud.com/fr/web-hosting/) qui vous permettront de bénéficier d'un stockage plus important.
+Le web est un média se voulant avant tout visuel, nous allons voir dans cette partie comment insérer des images dans votre contenu. L'offre Start 10M vous propose un espace de stockage de 10 Mo. Suffisant pour vos pages HTML et CSS, il peut être limité si vous souhaitez mettre beaucoup d'images sur votre site. Nous vous suggérons, dans ce cas, de souscrire à une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) qui vous permettront de bénéficier d'un stockage plus important.
 
 La balise HTML utilisée pour afficher une image est la balise `<img>`. Contrairement aux balises que nous avons vues précédemment, il n'y a pas d'ouverture et de fermeture de cet élément. On parlera de balise autofermante. Ce sont les attributs de cette balise qui permettront de donner le lien de l'emplacement du fichier et le texte descriptif de l'image.
 
 ###### **Optimiser ses images**
 
-Une image de grande taille, c'est une image qui mettra du temps à être chargée par votre navigateur, particulièrement si vos visiteurs utilisent en smartphone ou une tablette connectés au réseau 4 ou 5G.
+Une image de grande taille, c'est une image qui mettra du temps à être chargée par votre navigateur, particulièrement si vos visiteurs utilisent un smartphone ou une tablette connectés au réseau 4 ou 5G.
 En règle générale, vous devez optimiser vos images et en limiter le poids. Ce poids d'une image est exprimé en octets. Les unités généralement utilisées sont les kilo-octet (1 ko = 1.000 octets) ou le méga-octet (1 Mo = 1.000.000 octets). Une image qui pèse plus que quelques dizaines de ko est considérée comme lourde et mérite d'être optimisée. Si vos images pèsent 1Mo vous serez limités à moins de 10 images sur votre hébergement Start10M alors qu'en parvenant à les réduire entre 50 ko et 200 ko, vous pourriez en présenter une cinquantaine ou une centaine sur votre page web.
 
 Quelques conseils pour que vos fichiers soient les plus légers possibles :
@@ -161,9 +163,9 @@ Quelques conseils pour que vos fichiers soient les plus légers possibles :
 - changer la résolution (le web utilise une résolution par défaut de 72 dpi)
 - privilégier les formats compressés tels que JPEG, PNG ou Webp
 - il est possible également d'utiliser un format vectoriel (SVG)
-- éviter les format non compressés (BPM, TIFF).
+- éviter les formats non compressés (BPM, TIFF).
 
-##### **Stocker ses images sur son serveur**
+##### **Stocker ses images sur son l'hébergement**
 
 Pour les raisons de lisibilité, il convient de stocker ses images dans un répertoire dédié :
 
@@ -175,7 +177,7 @@ Prenons le cas d'un fichier au format PNG. Placez-le dans le répertoire « imag
 
 Nous allons maintenant créer un nouveau paragraphe dans lequel nous placerons l'image (dans cet exemple, nous ne précisons pas la taille d'affichage de l'image en pixels. Le navigateur l'affichera donc selon sa taille originale sous forme de fichier).
 
-```
+```html
 <body>
     <h1>Bienvenue sur ma page personnelle</h1>
     <h2>Créez rapidement et facilement votre site web</h2>
@@ -199,7 +201,7 @@ Le résultat sur votre navigateur devrait être le suivant :
 
 #### Appliquer une mise en forme à votre contenu grâce aux styles CSS
 
-Nous avons vu comment structurer notre contenu en HTML. Le résultat est minimaliste avec un style qui se limite à des tailles de titres et de sous-titres définis par défaut.
+Nous avons vu comment structurer votre contenu en HTML. Le résultat est minimaliste avec un style qui se limite à des tailles de titres et de sous-titres définis par défaut.
 Les feuilles de style permettent de changer l'apparence et le comportement des éléments codés en HTML.
 
 ##### **Principe**
@@ -210,9 +212,9 @@ Comme pour les fichiers HTML, les fichiers CSS peuvent être créés avec n'impo
 
 ![Placement fichier CSS](images/create_your_personal_webpage_4.png)
 
-Nous devons maintenant lier ce fichier CSS, que nous avons nommé par convention style.css, à notre page HTML. Ce lien se fait en ajoutant une balise `<link>` dans la balise `<head>` dans le fichier index.html :
+Nous devons maintenant lier ce fichier CSS, que nous avons nommé par convention style.css, à votre page HTML. Ce lien se fait en ajoutant une balise `<link>` dans la balise `<head>` dans le fichier index.html :
 
-```
+```html
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -222,9 +224,9 @@ Nous devons maintenant lier ce fichier CSS, que nous avons nommé par convention
 </head>
 ```
 
-Pour vérifier, nous allons déclarer dans notre feuille de style une couleur définie pour chaque élément `<h1>` de notre page web. Modifiez le fichier style.css en ajoutant ces lignes :
+Pour vérifier, nous allons déclarer dans votre feuille de style une couleur définie pour chaque élément `<h1>` de votre page web. Modifiez le fichier style.css en ajoutant ces lignes :
 
-```
+```html
 h1 {
     color: red;
 }
@@ -232,9 +234,9 @@ h1 {
 
 Cet ensemble d'instruction est appelé « règle CSS » et signifie : tous les éléments HTML `<h1>` auront la couleur _(color)_ rouge _(red)_.
 
-Vous pouvez tester une autre couleur sur l'élement `<h2>`, les paragraphes et les éléments de listes :
+Vous pouvez tester une autre couleur sur l'élément `<h2>`, les paragraphes et les éléments de listes :
 
-```
+```html
 h1 {
     color: red;
 }
@@ -256,7 +258,7 @@ Rafraîchissez la page de votre navigateur en appuyant sur F5 : votre titre appa
 
 Les navigateurs ont des styles par défaut, notamment des règles spécifiques pour le positionnement des éléments. Nous allons modifier le fichier CSS en conséquence et préciser une règle qui s'appliquera à tous les éléments HTML affichés par le navigateur. On utilise le sélecteur * (étoile), appelé sélecteur universel, que l'on place au début du fichier CSS :
 
-```
+```html
 * {
     padding: 0;
     margin: 0;
@@ -271,7 +273,7 @@ La propriété padding définit le bord tournant (marge intérieure), marging l'
 
 #### Améliorer la structure HTML du document
 
-Nous avons positionné des éléments basiques dans notre balise `<body>` : `h1`, `h2`, `p`, `ul` et `li`.
+Nous avons positionné des éléments basiques dans votre balise `<body>` : `h1`, `h2`, `p`, `ul` et `li`.
 
 Dans sa dernière itération, le langage [HTML5](https://html.spec.whatwg.org/) propose de nouvelles balises permettant de mieux structurer un document et de l'enrichir d'un point de vue sémantique. Un document classique (y compris sur un support traditionnel) comprend des blocs visuellement identifiables que l'on peut reproduire en HTML :
 - Un entête, qui figurera dans une balise `<header>` (à ne pas confondre avec la balise `<head>`)
@@ -285,7 +287,7 @@ Chacun de ces éléments pourra être utilisé pour des usages précis :
 
 Votre code HTML se présentera selon la structure suivante :
 
-```
+```html
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -318,11 +320,11 @@ Votre code HTML se présentera selon la structure suivante :
 </html>
 ```
 
-#### Rendre un élément cliquable
+#### Rendre un élément interactif
 
-Les liens permettant de naviguer d'une page à l'autre sur un site sont des élements essentiels du web. Pour les mettre en œuvre, il faut utiliser la balise `<a>` (_anchor_, ancre), qui rend un élément cliquable, accompagnée d'un attribut href qui contiendra l'URL vers laquelle pointer. Dans notre exemple, nous allons rendre cliquable le logo contenu dans la balise `<header>` :
+Les liens permettant de naviguer d'une page à l'autre sur un site sont des éléments essentiels du web. Pour les mettre en œuvre, il faut utiliser la balise `<a>` (_anchor_, ancre), qui rend un élément interactif, accompagné d'un attribut `href` qui contiendra l'URL vers laquelle pointer. Dans l'exemple suivant, nous allons rendre interactif le logo contenu dans la balise `<header>` :
 
-```
+```html
 <header> 
     <a href="index.html">
         <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
@@ -330,35 +332,35 @@ Les liens permettant de naviguer d'une page à l'autre sur un site sont des éle
 </header>
 ```
 
-Nous pouvons le faire de la même façon pour rendre du texte cliquable :
+Nous pouvons le faire de la même façon pour rendre du texte interactif :
 
-```
+```html
 <p>L'offre <a href="https://www.ovhcloud.com/fr/domains/">"Nom de domaine"</a> comprend :</p>
 ```
 
-Pour afficher la cible du lien dans un nouvel onglet, il vous suffit de rajouter un attribut target dans votre balise `<a>` :
+Pour afficher la cible du lien dans un nouvel onglet, il vous suffit de rajouter un attribut `target` dans votre balise `<a>` :
 
-```
+```html
 <p>L'offre <a href="https://www.ovhcloud.com/fr/domains/" target="_blank">"Nom de domaine"</a> comprend :</p>
 ```
 
-#### Comment stocker mes contenus sur mon serveur ?
+#### Comment stocker du contenu sur mon hébergement ?
 
-Pour que vos pages, et donc votre site, soient visible pour tout le monde, vous devez les déposer sur votre serveur (vous devez activer votre hébergement comme indiqué dans ce [guide](https://docs.ovh.com/fr/hosting/activer-start10m/)).
+Pour que vos pages, et donc votre site, soient visibles pour tout le monde, vous devez les déposer sur votre hébergement (vous devez activer votre hébergement comme indiqué dans ce [guide](https://docs.ovh.com/fr/hosting/activer-start10m/)).
 
-Le transfert des fichiers se fait simplement via un protocole dédié : le FTP (pour File Transfert Protocole). Vous devez utiliser un logiciel dédié pour cette opération, tel que [FileZilla](https://filezilla-project.org/download.php?type=client) ou encore [Cyberduck](https://cyberduck.io/download/).
+Le transfert des fichiers se fait simplement via un protocole dédié : le **FTP** (pour **F**ile **T**ransfert **P**rotocole). Vous devez utiliser un logiciel dédié pour cette opération, tel que [FileZilla](https://filezilla-project.org/download.php?type=client) ou encore [Cyberduck](https://cyberduck.io/download/).
 
 #### Déployer son site en FTP
 
-Pour déposer vos fichiers sur votre serveur, veuillez vous reporter au guide sur l'utilisation de FileZilla : [https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/#connexion-avec-filezilla-en-ftp](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/#connexion-avec-filezilla-en-ftp).
+Pour déposer vos fichiers sur votre hébergement, veuillez vous reporter au guide sur l'utilisation de FileZilla : [https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/#connexion-avec-filezilla-en-ftp](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/#connexion-avec-filezilla-en-ftp).
 
-Une fois les fichiers totalement transférés sur le serveur, vous pouvez visualiser le résultat en tapant votre nom de domaine dans la barre d'adresse de votre navigateur ou en appuyant sur la touche F5 de votre clavier pour recharger la page si vous êtes déjà sur votre site.
+Une fois les fichiers totalement transférés sur votre hébergement, vous pouvez visualiser le résultat en tapant votre nom de domaine dans la barre d'adresse de votre navigateur ou en appuyant sur la touche F5 de votre clavier pour recharger la page si vous êtes déjà sur votre site.
 
 N.B. : notre infrastructure comprend un système de cache permettant à vos pages de s'afficher avec le moins de latence possible. Lorsque vous déployez, il est possible que vous ne visualisiez pas immédiatement les modifications faites sur votre navigateur. Dans ce cas, attendez quelques secondes et n'hésitez pas également à rafraîchir le cache de votre navigateur avec la combinaison de touches Ctrl + F5.
 
 ### Améliorer son site avec un _template_
 
-Le CSS et le HTML sont des langages faciles à appréhender pour un résultat rapide. Cependant, ces langages, et particulièrement le CSS, ont considérablement évolué. Si les feuilles de styles en cascade offrent plus de fonctionnalités (animations, dégradés, position des éléments sur la page, _etc._), elles sont devenues plus complexe à coder.
+Le CSS et le HTML sont des langages faciles à appréhender pour un résultat rapide. Cependant, ces langages, et particulièrement le CSS, ont considérablement évolué. Si les feuilles de styles en cascade offrent plus de fonctionnalités (animations, dégradés, position des éléments sur la page, _etc._), elles sont devenues plus complexes à coder.
 
 Pour gagner du temps sur l'apparence de votre site et vous permettre de vous concentrer sur le contenu, et donc ce qui sera référencé, il est courant d'avoir recours à des _templates_ pour gagner du temps et avoir un résultat de qualité tant graphiquement que fonctionnellement (design, ergonomie, visibilité sur smartphone et tablette).
 
@@ -366,13 +368,13 @@ Pour gagner du temps sur l'apparence de votre site et vous permettre de vous con
 
 Un _template_ est un modèle ou un exemple que l'on peut réutiliser, en l'adaptant ou non. Le recours aux _templates_ permet de gagner du temps sur la conception d'un site en adaptant des éléments déjà conçus, tout en offrant les qualités que l'on peut exiger d'un site « professionnel ». Le mot « thème » peut être également utilisé.
 
-Il existe sur nombreuses solutions gratuites et open source disponibles sur internet parmi lesquelles [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) ou [Semantic UI](https://semantic-ui.com/). Ces outils sont désignés sous l'appellation framework : il s'agit de libraries facilitant la création de sites ou d'applications web. Ils proposent des éléments standardisés, personnalisables et réutilisables et toute la communauté proposes des _templates_ réutilisables, gratuitement ou non.
+Il existe des solutions gratuites et open source disponibles sur internet, comme [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) ou encore [Semantic UI](https://semantic-ui.com/). Ces outils sont désignés sous l'appellation framework : il s'agit de librairies facilitant la création de sites ou d'applications web. Ils proposent des éléments standardisés, personnalisables et réutilisables et toute la communauté proposes des _templates_ réutilisables.
 
 #### Bootstrap
 
-Parmi les outils utilisés par les développeurs web, Bootstrap est le framework qui est le plus répandu. Développé à l'origine en 2010 par des ingénieurs travaillant chez Twitter pour harmoniser le développement des interfaces développées en interne. Disponible sous licence open source depuis 2011, Bootstrap n'a cessé d'évoluer au gré des changements technologiques (évolution des technologies et des usages) et reste incontournable.
+Parmi les outils utilisés par les développeurs web, Bootstrap est le framework le plus commun. Développé à l'origine en 2010 par des ingénieurs travaillant pour Twitter afin d'harmoniser le développement des interfaces développées en interne. Disponible sous licence open source depuis 2011, Bootstrap n'a cessé d'évoluer au gré des changements technologiques (évolution des technologies et des usages) et reste incontournable.
 
-Quelques exemple de sites et d'application web réalisés avec Bootstrap :
+Quelques exemples de sites et d'application web réalisés avec Bootstrap :
 - [https://themes.getbootstrap.com/](https://themes.getbootstrap.com/)
 - [https://bootswatch.com/](https://bootswatch.com/)
 - [https://bootstrapmade.com/](https://bootstrapmade.com/)
@@ -381,9 +383,9 @@ Quelques exemple de sites et d'application web réalisés avec Bootstrap :
 
 ## Aller plus loin
 
-### Tutoriels
+### d'autres Tutoriels
 
-Vous trouverez beaucoup de ressources sur le web pour apprendre et améliorer votre pratique ou encore pour copier des éléments entier de code, ou des portions de code, pour ajouter des fonctionnalités à votre site sans risquer d'avoir des erreurs ou des dysfonctionnements (ne réinventez pas la roue !). Voici quelques sites de référence :
+Vous trouverez beaucoup de ressources sur le web pour apprendre et améliorer votre pratique ou encore pour copier des éléments entier de code, ou des portions de code, pour ajouter des fonctionnalités à votre site sans risquer d'avoir des erreurs ou des dysfonctionnements. Voici quelques sites de référence :
 - [Commencer avec le HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 - [Guide de référence sur les balises HTML](https://developer.mozilla.org/fr/docs/Web/HTML)
 - [Tutoriel W3Schools sur le HTML](https://www.w3schools.com/html/)
