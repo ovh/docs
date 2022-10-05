@@ -8,7 +8,7 @@ order: 01
 
 **Ostatnia aktualizacja z dnia 04-10-2018**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 W sieci istnieje bardzo wiele stron WWW. Twój [hosting](https://www.ovhcloud.com/pl/web-hosting/){.external} umożliwia Ci hostowanie wybranej strony WWW, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVH](https://webhosting-infos.hosting.ovh.net){.external}. Istnieje możliwość, że będziesz chciał zmodyfikować wersję PHP używaną przez Twój hosting.
 

@@ -13,7 +13,7 @@ Aby internauci nie mogli listować plików zawartych w danym katalogu, w którym
 ```
 Options -Indexes
 ```
-
+ 
 
 
 

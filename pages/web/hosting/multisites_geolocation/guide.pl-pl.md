@@ -6,7 +6,7 @@ section: Adresacja IP w OVHcloud
 order: 05
 ---
 
-
+ 
 ## 
 Opcja geolokalizacji jest dostępna w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 

@@ -8,7 +8,7 @@ order: 06
 
 **Ostatnia aktualizacja dnia 03-02-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 Ten przewodnik jest przeznaczony dla klientów, którzy chcą poprawić wydajność witryny internetowej.
 Zawiera podstawowe informacje o tym, co wpływa na wydajność witryn internetowych.
 

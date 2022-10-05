@@ -10,7 +10,7 @@ order: 03
 
 - Edytuj plik .htaccess:
 
-
+ 
 ```
 RewriteEngine On
 RewriteRule .* testing.php

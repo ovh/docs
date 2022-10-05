@@ -8,7 +8,7 @@ order: 09
 
 **Ostatnia aktualizacja dnia 2018-05-14**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Automatyczne wiadomości e-mail są wysyłane za pomocą skryptów. Używane są na przykład w formularzach kontaktowych na stronie WWW.
 

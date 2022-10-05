@@ -12,7 +12,7 @@ order: 02
 
 **Ostatnia aktualizacja z dnia 26/01/2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Większość stron internetowych używa **bazy danych** do przechowywania artykułów, komentarzy lub adresów e-mail użytkowników.
 

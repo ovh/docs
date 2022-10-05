@@ -6,7 +6,7 @@ section: SSL
 order: 03
 ---
 
-## Informacje ogólne
+## Informacje ogólne 
 Certyfikaty SSL EV sprzedawane przez OVH są wydawane przez instytucję certyfikującą Comodo. Instytucja ta weryfikuje status prawny Twojej firmy.
 
 Informacje na temat oferty znajdują się na stronie: [https://www.ovhcloud.com/pl/web-hosting/options/ssl/](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}.

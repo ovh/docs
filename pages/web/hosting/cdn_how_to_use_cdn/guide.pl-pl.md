@@ -12,7 +12,7 @@ order: 03
 
 **Ostatnia aktualizacja z dnia 23-12-2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Jeśli chcesz poprawić doświadczenia użytkowników Twojej witryny, przyspieszając jej działanie, najskuteczniejszym sposobem będzie aktywacja usługi GeoCache. Umożliwia ona przeniesienie do pamięci podręcznej plików statycznych, takich jak obrazy, pliki CSS i JavaScript, na serwerach znajdujących się najbliżej klientów.
 

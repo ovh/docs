@@ -12,7 +12,7 @@ order: 05
 
 **Ostatnia aktualizacja z dnia 28-07-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 **Niniejszy przewodnik zawiera szczegółowe informacje techniczne dotyczące infrastruktury hostingu WWW OVHcloud, zebrane na podstawie najczęściej zadawanych pytań**
 

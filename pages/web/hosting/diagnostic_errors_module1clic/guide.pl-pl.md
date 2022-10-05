@@ -12,7 +12,7 @@ order: 02
 
 **Ostatnia aktualizacja z dnia 08/10/2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Utworzenie [modułu za pomocą 1 kliknięcia](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/) w trybie prostym lub zaawansowanym może spowodować różne nieprawidłowości.
 

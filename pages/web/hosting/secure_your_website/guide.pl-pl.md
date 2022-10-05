@@ -12,7 +12,7 @@ order: 01
 
 **Ostatnia aktualizacja z dnia 29-08-2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Z tego przewodnika dowiesz się, jak zapewnić dostępność usług, bezpieczeństwo danych oraz dostęp do rozwiązań. Dotyczy on wyłącznie stron WWW hostowanych na [rozwiązaniach hostingowych OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
 

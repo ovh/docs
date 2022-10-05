@@ -12,7 +12,7 @@ order: 03
 
 **Ostatnia aktualizacja z dnia 18-08-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej plików online, z której możesz korzystać przy użyciu protokołu **FTP**.<br>Dostęp do przestrzeni dyskowej jest możliwy przez użytkownika FTP i powiązane z nim hasło.
 <br>W ten sposób będziesz mógł umieścić [Twoją stronę WWW w Internecie](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/#3-zapisanie-plikow-na-przestrzeni-dyskowej).

@@ -12,7 +12,7 @@ order: 06
 
 **Ostatnia aktualizacja dnia 20-06-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 W ramach usługi hostingu OVHcloud otrzymujesz dostęp do przestrzeni dyskowej, na której możesz hostować Twoje strony WWW. Może się zdarzyć, że z jakiegoś powodu, na przykład w wyniku usunięcia lub modyfikacji pliku, Twoja strona WWW stanie się niedostępna i będziesz potrzebował przywrócić pojedynczy plik lub wszystkie dane przechowywane na przestrzeni dyskowej.
 

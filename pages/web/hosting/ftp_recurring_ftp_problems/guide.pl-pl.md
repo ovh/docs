@@ -12,7 +12,7 @@ order: 04
 
 **Ostatnia aktualizacja z dnia 05/01/2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Korzystanie z oprogramowania FTP podczas logowania do [hostingu Cloud](https://www.ovhcloud.com/pl/web-hosting/) może spowodować różne nieprawidłowości. Niniejszy przewodnik pozwoli Ci rozwiązać najczęstsze z nich.
 

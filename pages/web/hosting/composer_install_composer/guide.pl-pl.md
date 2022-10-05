@@ -12,7 +12,7 @@ order: 02
 
 **Ostatnia aktualizacja z dnia 30-11-2020**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 [Composer](https://getcomposer.org/){.external} jest menedżerem zależności stworzonym dla języka PHP. Pozwala deweloperom PHP na umieszczanie w programach zewnętrznych bibliotek. "Komponowanie" umożliwiło projektom PHP uproszczenie dystrybucji bibliotek i utrzymania ich kodu. Poza tym, od momentu utworzenia tego narzędzia, w ramach społeczności PHP udostępniano liczne dobre praktyki rozwoju, które poprawiły biblioteki społeczności PHP. Te dobre praktyki są dokumentowane w formie [PSR](http://www.php-fig.org/){.external}.
 

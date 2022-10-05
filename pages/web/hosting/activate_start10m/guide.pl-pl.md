@@ -13,7 +13,7 @@ order: 01
 
 **Ostatnia aktualizacja z dnia 15/09/2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Dzięki [Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external}, OVHcloud oferuje hosting WWW o rozmiarze 10 MB oraz konto e-mail o pojemności 5 GB. Z tego przewodnika dowiesz się, jak włączyć hosting Start 10M w swojej [domenie](https://www.ovhcloud.com/pl/domains/){.external}.
 

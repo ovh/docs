@@ -13,7 +13,7 @@ order: 06
 **Ostatnia aktualizacja z dnia 21-07-2022**
 
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Błędy 500 "Internal Server Error" mogą dotyczyć całości lub części Twojej strony, być losowe lub stałe. Mogą również pojawić się w postaci białej strony.
 

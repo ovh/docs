@@ -8,7 +8,7 @@ order: 08
 
 **Ostatnia aktualizacja dnia 2018-03-08**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Niniejszy przewodnik prezentuje poszczególne etapy migracji strony WWW, jednej lub kilku baz danych oraz kont e-mail z dowolnej platformy do OVH. Procedura migracji może być inna, jeśli chcesz dokonać migracji bez przerwy w dostępności wymienionych wyżej usług.
 

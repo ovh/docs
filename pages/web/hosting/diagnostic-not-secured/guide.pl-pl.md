@@ -12,7 +12,7 @@ order: 03
 
 **Ostatnia aktualizacja z dnia 08/07/2021**
  
-## Wprowadzenie <a name="objective"></a>
+## Wprowadzenie  <a name="objective"></a>
 
 W przypadku niedostępności Twojej strony może wystąpić kilka komunikatów o błędzie. Poniższe przykłady wskazują, że Twój hosting WWW nie zawiera [certyfikatu SSL](../certyfikaty-ssl-na-hostingu/) (jeśli Twoja strona nie wyświetla żadnego z anomalii opisanych w tym przewodniku, sprawdź sekcję « [Sprawdź również](#gofurther) »):
 

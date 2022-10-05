@@ -8,7 +8,7 @@ order: 01
 
 **Ostatnia aktualizacja: 03-02-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Baza danych (DB, ang. database) służy do przechowywania tak zwanych elementów dynamicznych, takich jak komentarze lub artykuły. Bazy danych są używane praktycznie we wszystkich nowoczesnych systemach zarządzania treścią (CMS, ang. Content Management System), takich jak Joomla! czy WordPress.
 

@@ -8,7 +8,7 @@ order: 02
 
 **Ostatnia aktualizacja z dnia 29-11-2018**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Jeśli wykupiłeś hosting w OVH, możesz uzyskać bezpłatny certyfikat SSL. Certyfikat ten gwarantuje poufność przesyłanych danych, a Twoje strony WWW stają się dostępne za pomocą połączenia HTTPS. Aby Twoje strony WWW mogły korzystać z bezpiecznego połączenia, wykonaj wcześniej kroki opisane w niniejszej dokumentacji.
 

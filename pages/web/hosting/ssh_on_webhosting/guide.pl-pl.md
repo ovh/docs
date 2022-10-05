@@ -8,7 +8,7 @@ order: 07
 
 **Ostatnia aktualizacja z dnia 19/01/2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej umożliwiającej umieszczanie w Internecie plików z Twoich stron www lub Twoich aplikacji. Do przestrzeni dyskowej możesz zalogować się używając, między innymi, protokołu FTP lub SSH oraz odpowiadających im haseł.
 

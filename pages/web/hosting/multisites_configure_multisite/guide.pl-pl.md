@@ -12,7 +12,7 @@ order: 03
 
 **Ostatnia aktualizacja z dnia 22-08-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny nie są zarejestrowane w OVHcloud.
 

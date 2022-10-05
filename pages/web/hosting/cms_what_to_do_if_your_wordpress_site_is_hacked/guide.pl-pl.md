@@ -6,7 +6,7 @@ section: Przykłady zastosowania
 order: 01
 ---
 
-Dysponujesz stroną opartą o moduł WordPress w OVH i zauważyłeś, że Twoja strona się nie wyświetla, że przekierowuje na inną stronę lub że jest wypełniona reklamami. 
+Dysponujesz stroną opartą o moduł WordPress w OVH i zauważyłeś, że Twoja strona się nie wyświetla, że przekierowuje na inną stronę lub że jest wypełniona reklamami.  
 
 OVH nie zapewnia pomocy w zakresie korzystania z produktu WordPress. Możemy jednak wskazać kroki do podjęcia w przypadku włamania.
 

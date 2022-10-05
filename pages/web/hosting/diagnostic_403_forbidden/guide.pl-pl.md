@@ -12,7 +12,7 @@ order: 08
 
 **Ostatnia aktualizacja z dnia 16/06/2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Modyfikacje dotyczące uprawnień dostępu do plików strony, pliku **.htaccess** lub instalacji wtyczki bezpieczeństwa mogą czasem skutkować stroną **"403 forbidden"**.
 

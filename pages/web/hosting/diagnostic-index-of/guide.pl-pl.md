@@ -12,7 +12,7 @@ order: 07
 
 **Ostatnia aktualizacja z dnia 10-05-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Jeśli konfiguracja `MultiSite` nie jest poprawnie skonfigurowana, Twoja strona może wyświetlić stronę **"Index of"**.
 

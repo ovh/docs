@@ -12,7 +12,7 @@ order: 05
 
 **Ostatnia aktualizacja z dnia 18/05/2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 W przeglądarce internetowej możesz wyświetlić nie zainstalowaną stronę **błędu**, zwłaszcza podczas pierwszej instalacji strony.
 

@@ -12,7 +12,7 @@ order: 01
 
 **Ostatnia aktualizacja z dnia 22-09-2020**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Na Twoim hostingu OVHcloud możesz użyć skryptów do automatyzacji niektórych operacji. Utworzenie zaplanowanego zadania ("zadanie CRON") to najprostszy sposób, aby upewnić się, że Twoje skrypty są wykonywane w określonych momentach, bez konieczności podejmowania dalszych działań. 
 

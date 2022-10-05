@@ -8,7 +8,7 @@ order: 03
 
 **Ostatnia aktualizacja z dnia 03-01-2019**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Możesz chcieć z różnych powodów zmienić konfigurację [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}. Aby Ci to umożliwić, firma OVH udostępniła plik **.ovhconfig** pozwalający zmienić niektóre ustawienia.
 

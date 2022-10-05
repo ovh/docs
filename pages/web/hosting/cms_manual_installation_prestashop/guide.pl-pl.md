@@ -7,7 +7,7 @@ order: 06
 ---
 
 
-## Część 1: przygotowanie instalacji
+## Część 1: przygotowanie instalacji 
 
 ## Niezbędne narzędzia
 Aby móc zainstalować platformę PrestaShop na hostingu www, skorzystaj z programu FTP takiego jak FileZilla (program darmowy).

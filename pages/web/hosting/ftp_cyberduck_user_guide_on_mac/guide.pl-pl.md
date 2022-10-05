@@ -6,7 +6,7 @@ section: 'FTP i SSH'
 order: 05
 ---
 
-## Wprowadzenie
+## Wprowadzenie 
 Cyberduck to aplikacja dostępna dla systemu MAC. 
 
 Za pomocą tego programu masz możliwość umieszczenia swojej strony w Internecie poprzez połączenie z przestrzenią hostingu (FTP).

@@ -12,7 +12,7 @@ order: 02
 
 **Ostatnia aktualizacja z dnia 05-09-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetowego oprogramowania wspierającego tworzenie strony internetowej (zwanego dalej "CMS"). OVHcloud oferuje jedne z najpopularniejszych ofert: WordPress, PrestaShop, Drupal i Joomla!.
 

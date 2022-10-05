@@ -8,7 +8,7 @@ order: 04
 
 **Ostatnia aktualizacja dnia 2018-06-29**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Bazy danych, wykorzystywane obecnie przez niemal wszystkie systemy zarządzania treścią ( Content Management System lub CMS), na przykład WordPress czy Joomla!, umożliwiają przechowywanie elementów dynamicznych, takich jak komentarze czy artykuły. Możesz z różnych powodów potrzebować zaimportować dane do jednej z Twoich baz, aby zmodyfikować lub zastąpić jej zawartość.
 

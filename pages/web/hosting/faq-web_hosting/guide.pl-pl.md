@@ -13,7 +13,7 @@ order: 05
 **Ostatnia aktualizacja z dnia 07-04-2022**
 
 ## Zarządzanie usługą
-
+ 
 ### W jaki sposób skonfigurować moją usługę hostingu?
 
 W celu skonfigurowania Twojej usługi hostingu, udaj się najpierw do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W sekcji `Hosting` możesz zarządzać certyfikatami SSL, wersjami PHP, opcją CDN, stronami podpiętymi w opcji MultiSite, bazami danych, itp.

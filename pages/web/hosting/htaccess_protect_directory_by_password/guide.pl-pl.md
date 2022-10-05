@@ -12,7 +12,7 @@ order: 02
 
 **Ostatnia aktualizacja z dnia 20/09/2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Czasami konieczne może okazać się zabezpieczenie dostępu do części Twojej strony za pomocą identyfikatorów. W szczególności możesz uruchomić plik ".htaccess", aby chronić dostęp do interfejsu administracyjnego.
 

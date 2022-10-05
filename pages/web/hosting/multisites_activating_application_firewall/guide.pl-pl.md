@@ -12,7 +12,7 @@ order: 04
 
 **Ostatnia aktualizacja z dnia 26-04-2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 *ModSecurity* to uzupełniający moduł Apache, który filtruje wszystkie zapytania kierowane do serwera WWW. Wzmacnia bezpieczeństwo przed znanymi podatnościami poprzez przechwytywanie i filtrowanie wniosków, zanim zostaną one przetworzone przez skrypty.
 

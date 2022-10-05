@@ -14,7 +14,7 @@ order: 03
 >Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja „Sprawdź również” tego przewodnika.
 >
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Nasze usługi hostingu WWW są kompatybilne z popularnymi systemami zarządzania treścią (CMS), które obejmują wielu zastosowań.
 

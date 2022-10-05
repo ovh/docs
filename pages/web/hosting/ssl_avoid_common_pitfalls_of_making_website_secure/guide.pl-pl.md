@@ -8,7 +8,7 @@ order: 04
 
 **Ostatnia aktualizacja dnia 20-09-2018**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 W ramach hostingu w OVH możesz skorzystać z certyfikatów SSL dla wszystkich stron WWW. Certyfikat SSL zapewnia poufność i integralność danych przesyłanych przez Internet, np. za pośrednictwem formularza na stronie WWW czy poczty elektronicznej, oraz zawiera informacje o domenie. O obecności certyfikatu SSL świadczy ikona kłódki oraz protokół HTTPS w pasku adresu strony internetowej. Przesył danych pomiędzy komputerem użytkownika a serwerem jest wtedy szyfrowany.
 

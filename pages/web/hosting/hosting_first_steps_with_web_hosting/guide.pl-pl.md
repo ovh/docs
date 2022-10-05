@@ -8,7 +8,7 @@ order: 02
 
 **Ostatnia aktualizacja dnia 2018-01-16**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Właśnie kupiłeś hosting, aby stworzyć swoją stronę internetową. Umożliwia on zbudowanie strony opartej na gotowych rozwiązaniach (WordPress, PrestaShop, Joomla!, Drupal) lub własnej strony WWW działającej na stale dostępnych serwerach OVH. Dziękujemy za zaufanie. Przewodnik, który dla Ciebie udostępniamy, zawiera informacje, jak w prosty sposób stworzyć własną stronę internetową.
 

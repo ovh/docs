@@ -8,7 +8,7 @@ order: 04
 
 **Ostatnia aktualizacja z dnia 03-02-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Niniejszy przewodnik przedstawia etapy procedury eksportu wszystkich elementów Twojej witryny internetowej w standardowym formacie z poziomu [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 

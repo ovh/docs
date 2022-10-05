@@ -12,7 +12,7 @@ order: 04
 
 **Ostatnia aktualizacja z dnia 05-01-2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Dostęp do logów i statystyk Twojej strony WWW jest zawarty w ofercie hostingu WWW dostępnej w Panelu klienta OVHcloud.
 

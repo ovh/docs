@@ -22,7 +22,7 @@ Ponieważ liczba adresów IPv4 jest niska, coraz trudniej jest dodać nowe zasob
 
 Więcej informacji znajdziesz w artykule [Wikipedii](https://pl.wikipedia.org/wiki/IPv6){.external} na temat protokołu IPv6.
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Nasze pakiety hostingowe są kompatybilne z IPv6 od 2011 roku. Aktywacja tego protokołu była jednak do niedawna opcjonalną opcją podczas konfiguracji. 
 

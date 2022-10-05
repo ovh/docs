@@ -13,7 +13,7 @@ order: 01
 
 **Ostatnia aktualizacja z dnia 13/09/2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 FileZilla to oprogramowanie dostępne bezpłatnie w wielu systemach operacyjnych (Windows, macOS, etc).
 Umożliwia on umieszczanie w Internecie plików lub Twojej strony WWW, [zalogując się do przestrzeni FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu.

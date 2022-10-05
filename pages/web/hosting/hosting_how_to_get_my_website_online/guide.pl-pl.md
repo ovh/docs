@@ -12,7 +12,7 @@ order: 06
 
 **Ostatnia aktualizacja z dnia 21-07-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 W sieci istnieje bardzo wiele rodzajów stron WWW. 
 

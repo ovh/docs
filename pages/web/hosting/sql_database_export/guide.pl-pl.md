@@ -8,7 +8,7 @@ order: 03
 
 **Ostatnia aktualizacja dnia 2018-08-/07**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Bazy danych, wykorzystywane obecnie przez niemal wszystkie systemy zarządzania treścią ( Content Management System lub CMS), na przykład WordPress czy Joomla!, umożliwiają przechowywanie elementów dynamicznych, takich jak komentarze czy artykuły. Mogą zaistnieć sytuacje, w których będziesz potrzebował wykonać kopię zapasową bazy danych w celu późniejszego odzyskania jej zawartości.
 
