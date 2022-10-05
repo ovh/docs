@@ -2,7 +2,7 @@
 title: 'Optymalizacja wydajności witryny internetowej'
 excerpt: 'Dowiedz się, jak analizować opóźnienia w witrynie internetowej i ulepszyć jej działanie'
 slug: hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony
-section: 'Przekierowania i uprawnienia dostępu'
+section: 'Optymalizacja strony WWW'
 order: 06
 ---
 
