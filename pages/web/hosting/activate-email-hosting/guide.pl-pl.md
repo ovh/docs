@@ -3,12 +3,12 @@ title: Aktywacja kont e-mail zawartych w hostingu
 slug: aktywacja-kont-email-zawartych-w-hostingu
 excerpt: Dowiedz się, jak aktywować konta e-mail zawarte w hostingu
 section: 'Pierwsze kroki'
-order: 3
+order: 07
 ---
 
 **Ostatnia aktualizacja dnia 07-09-2020**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny, pakiet e-mail dołączony do hostingu aktywuj ręcznie. Powiąż pakiet z wybraną przez Ciebie nazwą domeny.
 

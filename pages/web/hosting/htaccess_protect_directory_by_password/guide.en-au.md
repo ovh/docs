@@ -2,7 +2,7 @@
 title: "Protecting your website's administration interface with a .htaccess file"
 slug: how_to_password_protect_a_directory_on_your_website
 excerpt: "Find out how to protect access to your website's administration with a .htaccess file"
-section: Rewrite and authentication
+section: Rewriting and authentication
 order: 02
 ---
 

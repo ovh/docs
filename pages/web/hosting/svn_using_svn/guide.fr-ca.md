@@ -1,9 +1,9 @@
 ---
 title: Utiliser SVN
 slug: utiliser-svn
-legacy_guide_number: 1961
 excerpt: Ce guide montre la facon d'utiliser svn via l'acces ssh de l'hebergement grace aux cles publique/privée.
 section: FTP et SSH
+order: 09
 ---
 
 **Dernière mise à jour le 28/10/2020**

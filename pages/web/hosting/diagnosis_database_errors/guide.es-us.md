@@ -3,7 +3,7 @@ title: Resolver los errores más frecuentes asociados a las bases de datos
 excerpt: Diagnóstico de los errores más comunes relacionados con las bases de datos
 slug: error-requentes-base-de-datos
 section: Diagnóstico
-order: 4
+order: 04
 ---
 
 > [!primary]

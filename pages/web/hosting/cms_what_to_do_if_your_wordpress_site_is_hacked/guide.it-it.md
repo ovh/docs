@@ -1,10 +1,9 @@
 ---
 title: 'Hacking del tuo sito WordPress: consigli e casi pratici'
 excerpt: ''
-id: '1874'
 slug: hacking_del_tuo_sito_wordpress_consigli_e_casi_pratici
-legacy_guide_number: g1874
 section: Casi d'uso
+order: 01
 ---
 
 

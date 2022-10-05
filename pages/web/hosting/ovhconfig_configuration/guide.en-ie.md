@@ -2,8 +2,8 @@
 title: 'Configuring the .ovhconfig file of your Web Hosting plan'
 slug: configuring-file-ovhconfig
 excerpt: 'This guide explains the.ovhconfig file and how to edit it'
-section: 'Configuring the Web Hosting plan'
-order: 4
+section: 'Web Hosting configuration'
+order: 03
 ---
 
 **Last updated 3rd January 2019**

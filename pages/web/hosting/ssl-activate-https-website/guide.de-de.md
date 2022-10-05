@@ -2,7 +2,7 @@
 title: 'Website mit SSL-Zertifikat auf HTTPS umstellen'
 slug: website-umstellen-https-ssl
 excerpt: 'Hier erfahren Sie, wie Sie Ihre Website mit einem SSL-Zertifikat auf HTTPS umstellen.'
-section: 'SSL'
+section: SSL
 order: 02
 ---
 

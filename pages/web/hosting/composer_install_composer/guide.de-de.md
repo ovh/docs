@@ -1,9 +1,9 @@
 ---
 title: Composer auf einem Webhosting installieren
 slug: composer-installieren-hosting
-legacy_guide_number: 1894
 excerpt: Erfahren Sie hier, wie Composer installieren und erste Schritte ausführen
 section: PHP
+order: 02
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ section: PHP
 
 **Letzte Aktualisierung am 30.11.2020**
 
-## Ziel
+## Ziel 
 
 [Composer](https://getcomposer.org/){.external} ist ein für PHP erstellter Dependency Manager. PHP-Entwickler können externe Bibliotheken in ihre Programme einbinden. Composer vereinfacht die Verteilung von Bibliotheken und die Wartung des Codes von PHP-Projekten . Seit der Veröffentlichung dieses Tools wurden zahlreiche Best Practices für die Entwickliung vorgeschlagen und somit die Bibliotheken der PHP-Community verbessert. Diese bewährten Verfahren werden in der Form [SRP](http://www.php-fig.org/){.external} dokumentiert.
 

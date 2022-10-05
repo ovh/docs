@@ -2,13 +2,13 @@
 title: 'PHP-Version eines Webhostings ändern'
 slug: konfiguration_von_php_fur_ein_ovh_webhosting_2014
 excerpt: 'So ändern Sie die PHP-Version Ihres OVH Webhostings'
-section: 'PHP'
-order: 1
+section: PHP
+order: 01
 ---
 
 **Stand 08.10.2018**
 
-## Einleitung
+## Einleitung 
 
 Im Internet gibt es viele verschiedene Websites. Mit Ihrem [OVH Webhosting](https://www.ovh.com/de/hosting/){.external} können Sie Ihre eigene Seite ins Internet stellen, sofern diese mit der [Konfiguration unserer Infrastrukturen](https://webhosting-infos.hosting.ovh.net){.external} kompatibel ist. Daher kann es sein, dass Sie die von Ihrem Webhosting verwendete PHP-Version ändern möchten.
 

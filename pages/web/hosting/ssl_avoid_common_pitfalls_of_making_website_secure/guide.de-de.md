@@ -1,13 +1,12 @@
 ---
 title: SSL-Probleme mit einer Webseite vermeiden
 excerpt: SSL-Probleme mit einer Webseite vermeiden
-id: '2220'
 slug: ssl-probleme_mit_meiner_webseite_vermeiden
-legacy_guide_number: g2220
-section: 'SSL'
+section: SSL
+order: 04
 ---
 
-
+ 
 ## Mixed Content
 Ihre Webseite kann externe Elemente, etwa Facebook- oder Twitter-Buttons, nicht laden? Die Datenkommunikation auf Ihrer Webseite funktioniert nicht mehr wie mit HTTP? Dann liegt das vermutlich an "Mixed Content".
 

@@ -2,7 +2,8 @@
 title: Using an EV SSL certificate on your website
 slug: ssl-ev
 excerpt: EV SSL certificates establish the legitimacy of your company and reassure users that they can safely purchase on your website
-section: 'SSL'
+section: SSL
+order: 03
 ---
 
 

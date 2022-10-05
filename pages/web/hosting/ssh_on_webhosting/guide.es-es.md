@@ -1,10 +1,9 @@
 ---
 title: 'Utilizar SSH en un web hosting'
 excerpt: 'Cómo conectarse y utilizar el acceso SSH en un alojamiento web de OVHcloud'
-id: '1962'
 slug: web_hosting_ssh_en_alojamiento_compartido
-legacy_guide_number: g1962
 section: FTP y SSH
+order: 07
 ---
 
 **Última actualización: 19/01/2022**

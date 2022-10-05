@@ -1,13 +1,13 @@
 ---
 title: CMS - ręczna instalacja modułu PrestaShop
 excerpt: Jak ręcznie zainstalować moduł PrestaShop?
-id: '1979'
 slug: cms_-_reczna_instalacja_modulu_prestashop
 section: CMS
+order: 06
 ---
 
 
-## Część 1: przygotowanie instalacji
+## Część 1: przygotowanie instalacji 
 
 ## Niezbędne narzędzia
 Aby móc zainstalować platformę PrestaShop na hostingu www, skorzystaj z programu FTP takiego jak FileZilla (program darmowy).

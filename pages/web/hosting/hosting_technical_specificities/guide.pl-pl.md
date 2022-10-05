@@ -3,7 +3,7 @@ title: 'Informacje techniczne związane z hostingiem współdzielonym'
 slug: hosting_www_informacje_techniczne_zwiazane_z_hostingiem_www
 excerpt: 'Zapoznaj się z różnego rodzaju informacjami technicznymi dotyczącymi hostingu współdzielonego'
 section: 'Konfiguracja hostingu'
-order: 6
+order: 05
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 6
 
 **Ostatnia aktualizacja z dnia 28-07-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 **Niniejszy przewodnik zawiera szczegółowe informacje techniczne dotyczące infrastruktury hostingu WWW OVHcloud, zebrane na podstawie najczęściej zadawanych pytań**
 

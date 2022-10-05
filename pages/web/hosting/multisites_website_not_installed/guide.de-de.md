@@ -3,7 +3,7 @@ title: 'Fehler "Seite nicht installiert" beheben'
 excerpt: 'Erfahren Sie hier, wie Sie den Fehler "Seite nicht installiert" beheben'
 slug: webhosting_fehler_-_webseite_ist_nicht_installiert
 section: Diagnose
-order: 4
+order: 05
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 4
 
 **Letzte Aktualisierung am 18.05.2021**
 
-## Ziel
+## Ziel 
 
 Die Fehlermeldung `Seite nicht installiert` bedeutet entweder, dass die DNS-Zone Ihrer Domain nicht die korrekten Werte enthält oder dass die Konfiguration des Webhostings noch angepasst werden muss.
 

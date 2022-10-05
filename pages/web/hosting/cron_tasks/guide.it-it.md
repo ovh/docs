@@ -1,9 +1,9 @@
 ---
 title: Crea task automatizzati (CRON) sul tuo hosting Web
 slug: hosting_web_task_automatizzaticron
-legacy_guide_number: 1990
 excerpt: Scopri come creare task CRON per automatizzare le operazioni pianificate su un hosting Web
 section: Operazioni automatiche (CRON)
+order: 01
 ---
 
 > [!primary]

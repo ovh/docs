@@ -3,7 +3,7 @@ title: Migrating your website and emails to OVHcloud
 slug: migrating-website-to-ovh
 excerpt: Find out how to migrate your website and emails to OVHcloud without any service interruptions
 section: Getting started
-order: 07
+order: 08
 ---
 
 **Last updated 5th May 2020**

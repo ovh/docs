@@ -1,10 +1,9 @@
 ---
 title: 'Accedere in SSH a un hosting Web'
 excerpt: 'Come utilizzare il protocollo SSH per accedere al tuo hosting Web OVHcloud'
-id: '1962'
 slug: hosting_condiviso_il_protocollo_ssh
 section: FTP e SSH
-legacy_guide_number: g1962
+order: 07
 ---
 
 

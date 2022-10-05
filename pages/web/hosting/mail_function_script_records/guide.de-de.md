@@ -2,13 +2,13 @@
 title: 'Automatische E-Mails eines Webhostings verwalten'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie über ein Webhosting versendete automatische E-Mails verfolgen und verwalten'
 slug: webhosting_verwaltung_automatischer_e-mails
-legacy_guide_number: g1974
 section: 'Diagnose'
+order: 09
 ---
 
 **Stand 24.09.2018**
 
-## Einleitung
+## Einleitung 
 
 Automatische E-Mails werden über ein Skript versendet. Sie werden beispielsweise im Kontaktformular auf Ihrer Website verwendet und ermöglichen es, dass die Besucher der Website Ihnen Nachrichten senden.
 

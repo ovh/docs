@@ -3,7 +3,7 @@ title: ¿Cómo proteger su sitio web?
 excerpt: Esta guía explica cómo aumentar la seguridad de su sitio web
 slug: secure-website
 section: Optimización del sitio web 
-order: 1
+order: 01
 ---
 
 > [!primary]

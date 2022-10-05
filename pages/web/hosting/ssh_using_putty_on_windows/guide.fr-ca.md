@@ -1,9 +1,9 @@
 ---
 title: Utilisation de Putty sur Windows
 slug: utilisation-putty-windows
-legacy_guide_number: 1964
 excerpt: Vous trouverez dans ce guide differentes informations et aides concernant l’installation de Putty sur Windows.
 section: FTP et SSH
+order: 08
 ---
 
 **Dernière mise à jour le 05/05/2020**

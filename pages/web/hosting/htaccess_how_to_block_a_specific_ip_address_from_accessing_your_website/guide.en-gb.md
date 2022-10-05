@@ -2,7 +2,7 @@
 title: "Tutorial - How do I block access to my website for certain IP addresses via a .htaccess file?"
 slug: htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website
 excerpt: "Find out about the actions you can take via a .htaccess file to block access to your website for certain IP addresses"
-section: Redirection and authentication
+section: Rewriting and authentication
 order: 01
 ---
 

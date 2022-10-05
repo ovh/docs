@@ -2,13 +2,13 @@
 title: 'Optymalizacja wydajności witryny internetowej'
 excerpt: 'Dowiedz się, jak analizować opóźnienia w witrynie internetowej i ulepszyć jej działanie'
 slug: hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony
-section: 'Przekierowania i uprawnienia dostępu'
-legacy_guide_number: g1396
+section: 'Optymalizacja strony WWW'
+order: 06
 ---
 
 **Ostatnia aktualizacja dnia 03-02-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 Ten przewodnik jest przeznaczony dla klientów, którzy chcą poprawić wydajność witryny internetowej.
 Zawiera podstawowe informacje o tym, co wpływa na wydajność witryn internetowych.
 
