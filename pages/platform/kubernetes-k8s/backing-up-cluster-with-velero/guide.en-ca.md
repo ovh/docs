@@ -28,7 +28,7 @@ order: 3
  }
 </style>
 
-**Last updated 4th October 2022**
+**Last updated 5th October 2022**
 
 ## Objective
 
@@ -151,7 +151,7 @@ Install Velero, including all prerequisites, into the cluster and start the depl
 velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.4.0,velero/velero-plugin-for-csi:v0.2.0 \
+  --plugins velero/velero-plugin-for-aws:v1.5.1,velero/velero-plugin-for-csi:v0.3.1 \
   --bucket <your bucket name> \
   --secret-file ./credentials-velero \
   --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net \
@@ -164,7 +164,7 @@ In our case, with the cluster in the `GRA` region, that meant:
 velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.4.0,velero/velero-plugin-for-csi:v0.2.0 \
+  --plugins velero/velero-plugin-for-aws:v1.5.1,velero/velero-plugin-for-csi:v0.3.1 \
   --bucket velero-s3 \
   --secret-file ./credentials-velero \
   --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net \
@@ -174,7 +174,7 @@ velero install \
 <pre class="console"><code>$ velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.4.0,velero/velero-plugin-for-csi:v0.2.0 \
+  --plugins velero/velero-plugin-for-aws:v1.5.1,velero/velero-plugin-for-csi:v0.3.1 \
   --bucket velero-s3 \
   --secret-file ./credentials-velero \
   --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net \
@@ -775,14 +775,14 @@ metadata:
   name: daily-snapshot
   namespace: velero
 spec:
-  schedule: '*/10 * * * *'
+  schedule: '15 0 * * *' # Every day at 00:15 am
   template:
     defaultVolumesToRestic: false
 
     includedNamespaces:
     - nginx-example
 
-    ttl: 168h0m0s
+    ttl: 168h0m0s # Keep the backup 7 days
     storageLocation: default
 ```
 
@@ -807,8 +807,8 @@ velero backup get
 You should have a result like this:
 
 <pre class="console"><code>$ velero schedule get
-NAME             STATUS    CREATED                          SCHEDULE       BACKUP TTL   LAST BACKUP   SELECTOR
-daily-snapshot   Enabled   2022-10-04 09:12:05 +0200 CEST   */10 * * * *   168h0m0s     4m ago        <none>
+NAME             STATUS    CREATED                          SCHEDULE     BACKUP TTL   LAST BACKUP   SELECTOR
+daily-snapshot   Enabled   2022-10-04 09:12:05 +0200 CEST   15 0 * * *   168h0m0s     9h ago        <none>
 
 $ velero backup get
 NAME                            STATUS             ERRORS   WARNINGS   CREATED                          EXPIRES   STORAGE LOCATION   SELECTOR
