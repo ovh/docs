@@ -5,7 +5,7 @@ slug: etcd-quota-error
 section: Diagnostics
 ---
 
-**Last updated 19<sup>th</sup> October 2021.**
+**Last updated 04<sup>rth</sup> October 2022.**
 
 ## Objective
 
@@ -89,8 +89,34 @@ If cert-manager is not the root cause, you should turn to the other running oper
 We have found that the following resources can sometimes be generated continuously by existing operators:
 
 - `backups.velero.io`
+
+```bash
+kubectl get backups.velero.io -A | wc -l
+```
+
 - `ingress.networking.k8s.io`
+
+```bash
+kubectl get ingress.networking.k8s.io -A | wc -l
+```
+
 - `ingress.extensions`
+
+```bash
+kubectl get ingress.extensions -A | wc -l
+```
+
+- `authrequests.dex.coreos.com`
+
+```bash
+kubectl get authrequests.dex.coreos.com -A | wc -l
+```
+
+- `podvolumebackups`
+
+```bash
+kubectl get podvolumebackups -A | wc -l
+```
 
 If that still does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.  
 Then you should delete the resources in excess and fix the process responsible for their creation.

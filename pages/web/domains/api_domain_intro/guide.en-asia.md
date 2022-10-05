@@ -43,7 +43,7 @@ We have released SDKs for several languages, to help you use the API:
 - Go : [https://github.com/ovh/go-ovh](https://github.com/ovh/go-ovh)
 - C#: [https://github.com/ovh/csharp-ovh](https://github.com/ovh/csharp-ovh)
 - PHP: [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
-- Perl: [https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip](https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip)
+- Perl: [https://github.com/ovh/perl-ovh](https://github.com/ovh/perl-ovh)
 - Swift: [https://github.com/ovh/swift-ovh](https://github.com/ovh/swift-ovh)
 
 <!-- prettier-ignore -->

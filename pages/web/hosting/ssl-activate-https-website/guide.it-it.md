@@ -6,19 +6,19 @@ section: SSL
 order: 02
 ---
 
-**Ultimo aggiornamento: 12/04/2019**
+**Ultimo aggiornamento: 04/10/2022**
 
 ## Obiettivo
 
-Gli [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} includono di default un certificato SSL gratuito, grazie al quale i siti Internet possono stabilire una connessione sicura alla rete ed essere accessibili in HTTPS. Per attivare questo canale di comunicazione sicuro, sono necessari diversi step.
+Gli [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} includono di default un certificato SSL gratuito, grazie al quale i siti Internet possono stabilire una connessione sicura alla rete ed essere accessibili in HTTPS. Per attivare questo canale di comunicazione sicuro, sono necessari diversi step.
 
 **Questa guida ti mostra come abilitare il protocollo HTTPS sul tuo sito utilizzando un certificato SSL.**
 
 ## Prerequisiti
 
-- Disporre di un [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} con [certificato SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external} attivo
+- Disporre di un [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} con [certificato SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external} attivo
 - Disporre di almeno un sito Internet installato e accessibile sul proprio hosting Web OVH
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
 
 ## Procedura
 
@@ -41,16 +41,16 @@ Nella tabella qui sotto sono riportati gli step necessari per abilitare la conne
 
 ### Step 1: attiva il certificato SSL sull’hosting
 
-L’attivazione del certificato SSL sull’hosting Web, possibile direttamente dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, richiede due operazioni distinte:
+L’attivazione del certificato SSL sull’hosting Web, possibile direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, richiede due operazioni distinte:
 
 |Operazione|Descrizione|
 |---|---|
-|Attivazione del certificato SSL sull’hosting|Una volta scelto il certificato SSL più adatto alle proprie esigenze tra le diverse tipologie proposte, OVH provvederà alla sua installazione sull'hosting.  |
+|Attivazione del certificato SSL sull’hosting|Una volta scelto il certificato SSL più adatto alle proprie esigenze tra le diverse tipologie proposte, OVHcloud provvederà alla sua installazione sull'hosting.  |
 |Attivazione del certificato SSL sul multisito corrispondente|Il sito su cui si vuole utilizzare l’HTTPS deve essere configurato sull’hosting come “multisito”: assicurati che il certificato SSL sia attivo per questa funzionalità.|
 
-Per maggiori informazioni sulla procedura completa da seguire per effettuare queste due operazioni, consulta la nostra guida [Gestire un certificato SSL su un hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/){.external}. Se hai appena attivato un hosting OVH, è possibile che sia già installato un certificato SSL gratuito e che il multisito disponga già di una connessione SSL attiva.
+Per maggiori informazioni sulla procedura completa da seguire per effettuare queste due operazioni, consulta la nostra guida [Gestire un certificato SSL su un hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/){.external}. Se hai appena attivato un hosting OVHcloud, è possibile che sia già installato un certificato SSL gratuito e che il multisito disponga già di una connessione SSL attiva.
 
-Per verificarlo, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca nella scheda `Informazioni generali`{.action}. Nel riquadro <b>Configurazione</b>, verifica se sotto <b>Certificato SSL</b> compare la voce <b>Sì</b>: in questo caso, significa che sull’hosting Web è già installato un certificato SSL. 
+Per verificarlo, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca nella scheda `Informazioni generali`{.action}. Nel riquadro <b>Configurazione</b>, verifica se sotto <b>Certificato SSL</b> compare la voce <b>Sì</b>: in questo caso, significa che sull’hosting Web è già installato un certificato SSL. 
 
 ![httpswebsite](images/activate-https-website-ssl-step2.png){.thumbnail}
 
@@ -68,7 +68,7 @@ Le informazioni contenute in questa guida potrebbero esserti di aiuto per effett
 
 > [!warning]
 >
-> OVH mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.  
+> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.  
 >
 > Questa guida ti aiuta a eseguire le operazioni necessarie per attivare l’HTTPS sul tuo sito. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare uno specialista del settore o il fornitore del servizio. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida. 
 >
@@ -131,6 +131,16 @@ RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 Sostituisci le informazioni generiche presenti nello script con il tuo dominio e adattalo, se necessario.
 
+> [!warning]
+>
+> Per le offerte di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/), utilizza questo script:
+> ```
+> RewriteEngine On
+> RewriteCond %{ENV:HTTPS} !on
+> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+> ```
+>
+
 ### Step 4: verifica il corretto funzionamento del sito
 
 Una volta attivato l’HTTPS, accertati che le pagine Web siano raggiungibili e che il loro contenuto venga mostrato correttamente: accedi al sito, verifica la presenza di eventuali messaggi e controlla il layout delle varie sezioni. 
@@ -145,4 +155,8 @@ Per attivare il protocollo HTTPS su un altro sito, ripeti la procedura descritta
 
 [Gestire un certificato SSL su un hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

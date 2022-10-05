@@ -6,7 +6,7 @@ section: SSL
 order: 02
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 04/10/2022**
 
 ## Objectif
 
@@ -144,5 +144,9 @@ Si vous constatez le moindre dysfonctionnement, nous vous recommandons vivement 
 Si votre site s'affiche correctement et qu'aucun avertissement ne s'affiche après le passage en HTTPS, vous avez correctement effectué la manipulation. Si vous souhaitez activer le HTTPS sur un autre site, vous devrez réitérer l'intégralité des manipulations décrites dans cette documentation.
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

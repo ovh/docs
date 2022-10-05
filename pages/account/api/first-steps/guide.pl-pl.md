@@ -178,7 +178,7 @@ Po uzyskaniu trzech kluczy (**AK**, **AS**, **CK**) możesz podpisać zlecenia A
 Aby uprościć programowanie aplikacji, OVHcloud udostępnia wrappery API w kilku językach.
 Dzięki nim nie będziesz martwił się o obliczenia podpisu i będziesz mógł skupić się na rozwoju Twojej aplikacji.
 
-- *Perl* : <https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip>
+- *Perl* : <https://github.com/ovh/perl-ovh>
 - *Python* : <https://github.com/ovh/python-ovh>
 - *PHP* : <https://github.com/ovh/php-ovh>
 - *Node.js* : <https://github.com/ovh/node-ovh>
