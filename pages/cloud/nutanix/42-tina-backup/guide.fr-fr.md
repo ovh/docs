@@ -721,7 +721,7 @@ Le tableau de bord apparait.
 <a name="addoptim"></a>
 #### **Etape 6.1 Ajout d'un paramètre d'optimisation dans la configuration**
 
-Dans le tableau de bord cliquez en bas à gauche sur `l'engrenage`{.action}.
+Dans le tableau de bord cliquez en bas à gauche sur `Settings`{.action}.
 
 ![09a configure advanced parameter 01](images/09a-configure-advanced-param01.png){.thumbnail}
 
