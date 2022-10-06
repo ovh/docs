@@ -123,7 +123,7 @@ iface18 inet static
     gateway 192.168.0.1
 ```
 
-### Additional IP über das vRack einrichen
+### Additional IP über das vRack einrichten
 
 #### Voraussetzungen
 

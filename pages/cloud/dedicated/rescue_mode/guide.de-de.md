@@ -48,7 +48,7 @@ Suchen Sie "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `.
 Auf der nächsten Seite, wählen Sie **Im Rescue-Modus booten**. Wenn Ihr Server über ein Linux-Betriebssystem verfügt, wählen Sie `rescue-customer`{.action} im Drop-down-Menü aus. Wenn Ihr Server auf Windows läuft, können Sie auch `WinRescue`{.action} wählen ([vgl. Abschnitt unten](#windowsrescue)). Geben Sie eine alternative E-Mail-Adresse an, wenn Sie *nicht* möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Kunden-Accounts gesendet werden.
 
 > [!warning]
-> OVHcloud Kunden-Accounts können zum Teil von einem Fehler bezüglich der Sprache der Rescue-E-Mails betroffen sein: französische Sprache statt deutsche Sprache. Obowhl die Fehlerursache seit dem 20. September 2022 korrigiert ist, muss die E-Mail-Adresse einmal aktualisiert werden, um das Problem endgültig zu beheben: Geben Sie dazu die E-Mail-Adresse Ihres Kunden-Accounts in diesem Schritt ein, bevor Sie den Rescue-Modus aktivieren.
+> OVHcloud Kunden-Accounts können zum Teil von einem Fehler bezüglich der Sprache der Rescue-E-Mails betroffen sein: französische Sprache statt deutsche Sprache. Obwohl die Fehlerursache seit dem 20. September 2022 korrigiert ist, muss die E-Mail-Adresse einmal aktualisiert werden, um das Problem endgültig zu beheben: Geben Sie dazu die E-Mail-Adresse Ihres Kunden-Accounts in diesem Schritt ein, bevor Sie den Rescue-Modus aktivieren.
 >
 
 Klicken Sie auf `Weiter`{.action} um mit dem nächsten Schritt fortzufahren, und dann auf `Bestätigen`{.action}.
