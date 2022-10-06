@@ -1,170 +1,408 @@
-﻿---
-title: Przekierowanie domeny zarządzanej w OVHcloud
+---
+title: "Przekierowanie domeny zarządzanej w OVHcloud"
 slug: przekierowanie-domeny
-excerpt: Poznaj rodzaje przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVHcloud
+excerpt: "Poznaj rodzaje przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVHcloud"
 section: Informacje ogólne
+order: 01
 ---
 
-**Ostatnia aktualizacja dnia 02-02-2018**
+**Ostatnia aktualizacja z dnia 06-10-2022**
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
 
 ## Wprowadzenie
 
-Przekierowanie nazwy domeny pozwala na skierowanie jej na nową stronę docelową. Istnieją różne rodzaje przekierowań, które odpowiadają na szczególne potrzeby.
+Przekierowanie domeny polega na przekierowaniu jej na nową docelową stronę. Istnieją różne rodzaje przekierowań, z których każdy odpowiada konkretnej potrzebie.
 
-**Poznaj typy przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVHcloud.**
+**Sprawdź różne sposoby przekierowania domeny**
 
 ## Wymagania początkowe
 
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Nawiązane połączenie z hostingiem przez ftp (jeżeli chcesz dodać plik .htaccess).
+- Połączenie z hostingiem (przekierowanie za pomocą pliku [.htaccess](#htaccess_rewrite))
 
 ## W praktyce
 
-### Zastosowanie przekierowania domeny
+### Poznaj przekierowanie domeny
 
-Zanim utworzysz przekierowanie dla swojej nazwy domeny, musisz wiedzieć, w jakich sytuacjach może się przydać. Nazwę domeny możesz przekierować na nową docelową stronę, czyli zazwyczaj na inną nazwę domeny. 
+Funkcja ta pozwala na przekierowanie domeny/subdomeny na:
 
-W wielu przypadkach, przekierowanie może okazać się właściwym wyborem. Najczęściej ma to miejsce w sytuacji, gdy zmieniasz nazwę strony internetowej. W takim przypadku, przekierowanie pozwala na automatyczne skierowanie internautów, odwiedzających starą stronę internetową, na nową.
+- inna już istniejąca domena/subdomena:
+    - **Przykład**: `domain.tld`
+- adres URL (Uniform Resource Locator):
+    - **Przykłady**: `http://www.domain.tld/welcome/` lub `https://www.domain.tld/welcome/` (jeśli domena docelowa posiada kompatybilny certyfikat SSL).
 
-Taką konfigurację domeny można wykonać na kilka sposobów:
+Działania te mogą być przeprowadzane na kilka sposobów:
 
-- **w Panelu klienta OVHcloud**: asystent konfiguracji pozwoli Ci na ustawienie parametrów przekierowania;
+- **Z poziomu[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)**, gdzie asystent konfiguracji pozwala na ustawienie przekierowania.
+- **Za pomocą metody wymagającej programowania**. Musisz samodzielnie utworzyć przekierowanie w pliku (zazwyczaj [.htaccess](#htaccess_rewrite)).
 
-- **za pomocą kodu w plikach na serwerze**: sam tworzysz kod przekierowania w pliku (zazwyczaj jest to plik .htaccess).
+> [!warning]
+>
+> Uruchomienie przekierowania może mieć wpływ na pozycjonowanie Twojej strony WWW. 
+> Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) w celu pozycjonowania strony, jeśli to konieczne.
+>
+> Uwaga: przekierowanie utworzone w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) nie pozwala na przekierowanie adresu URL na `https://` na inną domenę lub adres URL. 
+> Aby utworzyć ten rodzaj przekierowania, należy obowiązkowo przejść przez [wpisanie adresu URL](https://docs.ovh.com/pl/hosting/hosting_www_htaccess_-_generowanie_adresow_za_pomoca_mod_rewrite/), na przykład przez plik ".htaccess".
 
-Pamiętaj, że stworzenie przekierowania może mieć wpływ na pozycjonowanie Twojej strony internetowej. Prosimy o zachowanie szczególnej ostrożności podczas wykonywania tych czynności lub o skontaktowanie się ze specjalistą zajmującym się pozycjonowaniem stron.
+### Przekieruj domenę w Panelu klienta
 
-### Przekierowanie domeny w Panel klienta
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Web Cloud`{.action}, wybierz domenę, którą chcesz przekierować do sekcji `Domeny`{.action}, następnie kliknij zakładkę `Przekierowanie`{.action}.
 
-Kiedy już zalogujesz się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w menu usług po lewej stronie, przejdź do sekcji `Domeny`{.action} , a następnie do zakładki `Przekierowanie`{.action}.
 
-Tabela wyświetli aktywne przekierowania dla Twojej nazwy domeny. 
+Tabela wyświetla aktywne przekierowania dla Twojej domeny. Możesz zarządzać istniejącymi przekierowaniami za pomocą przycisku `...`{.action} znajduje się po prawej stronie każdej linii.
 
-W celu dodania przekierowania, kliknij na przycisk `Dodaj przekierowanie`{.action} .
+Kliknij przycisk `Dodaj przekierowanie`{.action}.
 
-W oknie, ktόre się wyświetli, podaj nazwę domeny (lub subdomeny), ktόrą chcesz przekierować. Jest to nazwa domeny źródłowej czyli przekierowywanej.
+![Prezentacja przekierowania menu](images/RedirectionPanel.png){.thumbnail}
 
-![Etap 1: domena przekierowywana](images/adding_redirection_1.png){.thumbnail}
+Trzy opcje przekierowania są dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Każda z nich składa się z **5 kolejnych etapów**. 
 
-Na tym etapie, powinieneś wybrać adres, na który chcesz przekierować wskazaną nazwę domeny. Dostępne są dwie możliwości: 
+> W zakładce `Przekierowanie`{.action} znajduje się czwarta opcja umożliwiająca szybkie przekierowanie domeny na rekordy DNS A, AAAA i CNAME.<br>
+> Ponieważ w tym przypadku nie chodzi o "przekierowanie", w tym przewodniku nie zostanie szczegółowo opisany ten wariant.
+>
+> Więcej informacji na temat wpisów DNS znajdziesz w dokumentacji dotyczącej [rekordy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
+>
 
-- **przekierowanie na adres strony WWW**
-
-Przekierujesz w ten sposób nazwę domeny na inną. To rozwiązanie sprawdzi się, w przypadku gdy zmieniasz nazwę Twojej strony WWW;
-
-- **przekierowanie na serwer w OVHcloud lub u innego dostawcy**
-
-Ten wariant wymaga zmiany konfiguracji DNS danej domeny na inną wartość docelową (pole A, AAAA lub CNAME). To rozwiązanie jest idealne, w przypadku gdy Twoja strona internetowa nie jest już hostowana w tym samym miejscu, przy czym nazwa domeny jest podobna. 
-Jeżeli Twoja nazwa domeny wykorzystuje konfigurację OVHcloud, możesz również wykonać tę czynność poprzez wprowadzenie zmiany w Panelu klienta OVHcloud (sprawdź przewodnik: [Jak edytować strefę DNS?](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external})
-
-Od tego momentu, przewodnik omawia tylko i wyłącznie przekierowanie na inny adres WWW.  W kwestii drugiej możliwości, skontaktuj się ze swoim dostawcą usług w celu uzyskania informacji na temat tego, jakie wpisy DNS należy zmienić, tak aby skierować domenę na wybrany serwer. 
-
-![Etap 2: rodzaje przekierowań](images/adding_redirection_2.png){.thumbnail}
-
-W celu dokonania **przekierowania na inną stronę WWW**, wybierz teraz rodzaj przekierowania, jaki chcesz zastosować. Dostępne są dwie możliwości.
-
-|Rodzaj przekierowania|Opis|
-|---|---|
-|Widoczne|Nazwa domeny, ktόrą wpiszesz do przeglądarki internetowej (stary adres) zostanie przekierowana na nową nazwę domeny. Adres WWW, ktόry jest widoczny w pasku przeglądarki internetowej, zostanie zmieniony na nowy adres.|
-|Niewidoczne|Nazwa domeny, ktόrą wpiszesz do przeglądarki internetowej (stary adres) nie zostanie przekierowana na nową nazwę domeny. Nadal będziesz widział w pasku przeglądarki stary adres, ktόry za pomocą ramki nazywanej *iframe*, wyświetli stronę WWW hostowaną pod nową nazwą domeny. Uwaga: może okazać się, że ten typ przekierowania nie jest kompatybilny ze wszystkimi stronami WWW i może on mieć wpływ na pozycjonowanie Twojej strony.|
-
-![Dokonanie wyboru między przekierowaniem widocznym i niewidocznym](images/redirection_3xx_1.png){.thumbnail}
-
-#### Przekierowanie widoczne
-
-W przypadku przekierowania widocznego, masz dwie możliwości konfigutracji.
-
-|Rodzaj przekierowania|Kod HTTP|Opis|
-|---|---|---|
-|Przekierowane widoczne stałe |301|Jest to „standardowy” rodzaj przekierowania.|
-|Przekierowanie widoczne tymczasowe.|302|Z tego rodzaju przekierowania należy korzystać okazjonalnie (w ramach tymczasowych wydarzeń lub sezonowo, na przykład). Pozycjonowanie w wyszukiwarkach daje gorsze wyniki niż w przypadku przekierowania 301.|
-
-Po dokonaniu wyboru, należy wpisać adres przekierowania (adres WWW, na ktόry ma przekierowywać stara domena). 
-
-![Dokonanie wyboru między przekierowaniem widocznym, stałym lub tymczasowym](images/redirection_3xx_2.png){.thumbnail}
-
-Po podaniu informacji, kliknij `Dalej`{.action}, po czym sprawdź czy wyświetlone informacje są poprawne, i następnie kliknij `Zatwierdź`{.action}. 
+Poniżej znajdziesz trzy rodzaje przekierowań opisanych krok po kroku.
 
 > [!primary]
 >
-> W związku z wprowadzoną zmianą, należy wziąć pod uwagę czas propagacji, ktόry wynosi od 1 do 24 godzin maksimum. Po tym czasie, zmiana będzie w pełni aktywna. 
+> Bez względu na wybraną opcję przekierowania, zanim zmiana stanie się w pełni skuteczna, niezbędny jest czas propagacji wynoszący maksymalnie 4-24 godzin.
 >
 
-#### Przekierowanie niewidoczne 
+### Opcja 1: stałe przekierowanie widoczne na adres www
 
-W przypadku przekierowania niewidocznego (kod HTTP 200), uzupełnij informacje, ktόre są wyświetlone (adres WWW oraz opcje), i następnie kliknij `Dalej`{.action}. Sprawdź czy wyświetlone informacje są poprawne i następnie kliknij `Zatwierdź`{.action}. 
+Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny docelowej na pasku adresowym przeglądarki internetowej zamiast przekierowanej domeny.
 
-|Pola|Opis|
-|---|---|
-|Tytuł|Wpisz tytuł Twojej strony WWW. Tytuł pojawi się jako tytuł strony w belce przeglądarek internetowych, na przykład.|
-|Kluczowe słowa|Kluczowe słowa mogą być wykorzystane przez wyszukiwarki w celu pozycjonowania strony.|
-|Opis|Dodaj opis Twojej strony WWW. Opis ten jest wykorzystany w wynikach wyszukiwarek.|
+- **Przykład**: jeśli przekierujesz `domain1.tld` na `domain2.tld`, to `domain2.tld` wyświetli się w pasku adresowym w Twojej przeglądarce.
 
-> [!primary]
+![Gif1](images/redirect1.gif){.thumbnail}
+
+> To przekierowanie "standard" zwróci kod HTTP 301.
+
+> [!success]
+> Kliknij na poniższe zakładki, aby kolejno wyświetlić każdy z 5 etapów.
+
+> [!tabs]
+> **Etap 1**
+>>
+>> W oknie pojawi się Twoja domena do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
+>>
+>> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla domeny/subdomeny.
+>>
+>> ![Etap 1](images/Step1.png){.thumbnail}
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 2.
+>>
+> **Etap 2**
+>>
+>> Wybierz `Na adres Web`{.action}.
+>>
+>> ![Etap 2](images/Step2.png){.thumbnail}
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 3.
+>>
+> **Etap 3**
+>>
+>> Wybierz `Z przekierowaniem widocznym`{.action} spośród dwóch wskazanych opcji.
+>>
+>> ![Etap 3](images/Step3Visi.png){.thumbnail}
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 4.
+>>
+> **Etap 4**
+>>
+>> Wybierz `Permanente (301)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową domenę lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
+>>
+>> ![Etap 4](images/Step4VisiPerma.png){.thumbnail}
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 5.
+>>
+> **Etap 5**
+>>
+>> W tym ostatnim etapie upewnij się, że wyświetlane informacje są poprawne.
+>>
+>> ![Etap 5](images/Step5VisiPerma.png){.thumbnail}
+>>
+>> Kliknij na `Potwierdź`{.action}, aby zatwierdzić Twoją konfigurację.
+>> 
+>> > [!primary]
+>> >
+>> > Jeśli wyświetla się komunikat "*Istnieją przekierowania z domen, które chcesz przekierować, które wchodzą w konflikt z przekierowaniami, które chcesz dodać*", możesz zaznaczyć kratkę `Potwierdź usunięcie istniejącego przekierowania`{.action}, aby wymusić zastosowanie przekierowania.
+>> >
+>> > Uwaga: poprzednia konfiguracja zostanie wyłączona i usunięta.
+>> >
+>>
+
+### Opcja 2: tymczasowe przekierowanie widoczne na adres www
+
+Podobnie jak w przypadku opcji 1, ta opcja pozwala na wyświetlenie domeny docelowej na pasku adresowym przeglądarki internetowej, a nie przekierowanej domeny po wpisaniu przekierowanego.
+
+Należy je jednak stosować doraźnie, na przykład w przypadku zdarzeń ulotnych.<br>
+Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **przekierowania widocznego** typu 301 (kod HTTP).
+
+- **Przykład**: jeśli przekierujesz `domain1.tld` na `domain2.tld`, to `domain2.tld` wyświetli się w pasku adresowym w Twojej przeglądarce.
+
+![Gif1](images/redirect1.gif){.thumbnail}
+
+> Przekierowanie zwraca kod HTTP 302.
+
+> [!success]
+> Kliknij na poniższe zakładki, aby kolejno wyświetlić każdy z 5 etapów.
+
+> [!tabs]
+> **Etap 1**
+>>
+>> W oknie pojawi się Twoja domena do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
+>>
+>> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla domeny/subdomeny.
+>>
+>> ![Etap 1](images/Step1.png){.thumbnail}
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 2.
+>>
+> **Etap 2**
+>>
+>> Wybierz `Na adres Web`{.action}.
+>>
+>> ![Etap 2](images/Step2.png){.thumbnail}
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 3.
+>>
+> **Etap 3**
+>>
+>> Wybierz `Z przekierowaniem widocznym`{.action} spośród dwóch wskazanych opcji.
+>>
+>> ![Etap 3](images/Step3Visi.png){.thumbnail}
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 4.
+>>
+> **Etap 4**
+>>
+>> Wybierz `Tymczasowe (302)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową domenę lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
+>>
+>> ![Etap 4](images/Step4VisiTempo.png){.thumbnail}
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 5.
+>>
+> **Etap 5**
+>>
+>> W tym ostatnim etapie upewnij się, że wyświetlane informacje są poprawne.
+>>
+>> ![Etap 5](images/Step5VisiTempo.png){.thumbnail}
+>>
+>> Kliknij na `Potwierdź`{.action}, aby zatwierdzić Twoją konfigurację.
+>> 
+>> > [!primary]
+>> >
+>> > Jeśli wyświetla się komunikat "*Istnieją przekierowania z domen, które chcesz przekierować, które wchodzą w konflikt z przekierowaniami, które chcesz dodać*", możesz zaznaczyć kratkę `Potwierdź usunięcie istniejącego przekierowania`{.action}, aby wymusić zastosowanie przekierowania.
+>> >
+>> > Uwaga: poprzednia konfiguracja zostanie wyłączona i usunięta.
+>> >
+>>
+
+### Opcja 3: przekierowanie niewidoczne na adres www
+
+To przekierowanie pozwala na pozostawienie domeny na pasku adresowym przeglądarki internetowej, zamiast zastępowania jej domeną docelową.<br>
+**Uwaga, ta operacja nie jest kompatybilna ze wszystkimi stronami i wpływa na pozycjonowanie Twojej strony.**.
+
+- **Przykład**: jeśli przekierujesz `domain1.tld` na `domain2.tld`, to `domain1.tld` wyświetli się w pasku adresowym w Twojej przeglądarce.
+
+![Gif2](images/redirect2.gif){.thumbnail}
+
+Przekierowanie niewidoczne działa na znaczniku HTML *iFrame*. Pozwala ona domenie przekierowanej na zintegrowanie zawartości innej strony odpowiadającej domenie docelowej ze swoją stroną HTML.
+
+Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić docelową domenę
+
+> Ta opcja zwróci kod HTTP 200.
+
+> [!warning]
 >
-> W związku z wprowadzoną zmianą, należy wziąć pod uwagę czas propagacji, ktόry wynosi od 1 do 24 godzin maksimum. Po tym czasie, zmiana będzie w pełni aktywna. 
+> Uwaga, strony zamknięte znacznikiem *iFrame* mogą nie być odczytywane na smartfonach. Ich zawartość nie jest zazwyczaj brana pod uwagę przez wyszukiwarki podczas indeksowania i indeksowania Twojej strony.
 >
 
-![Tworzenie niewidocznego przekierowania](images/invisible_redirection.png){.thumbnail}
-
-### Przekierowanie domeny za pomocą pliku .htaccess
-
-Pliki .htaccess są plikami konfiguracyjnymi, w których można wpisać odpowiedni. W czasie wykonywania kodu Twojej strony WWW na serwerze web (Apache), polecenia zostaną zinterpretowane i tym samym wykonane. Istnieje możliwość utworzenia przekierowań za pomocą kodu. 
-
-Jeżeli korzystasz z podkatalogόw na swoim serwerze hostingowym, modyfikacja pliku .htaccess wymaga kompetencji technicznych, z tego względu, iż nieprawidłowo wykonana czynność może spowodować, że jedna lub kilka stron WWW będą niedostępne. W razie wątpliwości, i jeżeli chcesz skorzystać z pomocy w związku z modyfikacją pliku .htaccess, zalecamy skontaktowanie się z programistą specjalizującym się w tym zagadnieniu. 
-
-Możesz także skorzystać z naszej dokumentacji [Wszystko na temat pliku .htaccess](, w ktόrym znajdziesz porady odnośnie jego zastosowania. 
-
-> [!primary]
->
-> Zanim przejdziesz do kolejnego etapu i zanim wprowadzisz zmiany w pliku .htaccess, radzimy Ci zrobić zapasową kopię tego pliku, co w razie potrzeby pozwoli na odzyskanie poprzedniej wersji. 
+> [!success]
+> Kliknij na poniższe zakładki, aby kolejno wyświetlić każdy z 5 etapów.
 >
 
-- **Redirect permanent**
+> [!tabs]
+> **Etap 1**
+>>
+>> W oknie pojawi się Twoja domena do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
+>>
+>> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla domeny/subdomeny.
+>>
+>> ![Etap 1](images/Step1.png){.thumbnail}
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 2.
+>>
+> **Etap 2**
+>>
+>> Wybierz `Na adres Web`{.action}.
+>>
+>> ![Etap 2](images/Step2.png){.thumbnail}
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 3.
+>>
+> **Etap 3**
+>>
+>> Wybierz `Z niewidocznym przekierowaniem`{.action} spośród dwóch wskazanych opcji.
+>>
+>> ![Etap 3](images/Step3Invi.png){.thumbnail}
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 4.
+>>
+> **Etap 4**
+>>
+>> Wybierz `Tymczasowe (iframe)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową domenę lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
+>>
+>> ![Etap 4](images/Step4Invi.png){.thumbnail}
+>>
+>> Trzy opcjonalne parametry są dostępne na tym etapie:
+>>
+>> - **Tytuł**: Twojej strony WWW. Pojawi się jako nazwa strony w zakładce przeglądarek internetowych.<br>
+>> - **Słowa kluczowe**: mogą być używane przez wyszukiwarki do częściowego pozycjonowania strony.<br>
+>> - **Opis**: dotyczy Twojej strony WWW. Zostanie ona użyta przez wyszukiwarki w ich wynikach.
+>>
+>> Kliknij na `Dalej`{.action}, aby przejść do etapu 5.
+>>
+> **Etap 5**
+>>
+>> W tym ostatnim etapie upewnij się, że wyświetlane informacje są poprawne.
+>>
+>> ![Etap 5](images/Step5Invi.png){.thumbnail}
+>>
+>> Kliknij na `Potwierdź`{.action}, aby zatwierdzić Twoją konfigurację.
+>> 
+>> > [!primary]
+>> >
+>> > Jeśli wyświetla się komunikat "*Istnieją przekierowania z domen, które chcesz przekierować, które wchodzą w konflikt z przekierowaniami, które chcesz dodać*", możesz zaznaczyć kratkę `Potwierdź usunięcie istniejącego przekierowania`{.action}, aby wymusić zastosowanie przekierowania.
+>> >
+>> > Uwaga: poprzednia konfiguracja zostanie wyłączona i usunięta.
+>> >
+>>
 
-Kod, ktόry zostanie wysłany będzie kodem HTTP 301. Kod ten wysyła informacje do robotόw wyszukiwarek internetowych o tym, że należy aktualizować linki do nowego adresu strony.
+### Przekieruj nazwę domeny za pomocą pliku ".htaccess" <a name="htaccess_rewrite"></a>
 
-Poniżej składnia, ktόrą należy zastosować w celu przekierowania strony WWW w całości:
+> [!warning]
+>
+> OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+> 
+> Oddajemy do Twojej dyspozycji tę część przewodnika, aby jak najlepiej wesprzeć Cię w bieżących zadaniach. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/). Niestety firma OVHcloudnie będzie w stanie udzielić wsparcia w zakresie opisanych poniżej udokumentowanych etapów. Więcej informacji znajdziesz w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+>
 
-```
-Redirect permanent / http://nowa-strona.pl/
-```
+Pliki ".htaccess" to pliki konfiguracyjne, w których można określić komendy. Podczas wykonywania kodu Twojej strony WWW na serwerze WWW (Apache) polecenia zostaną zinterpretowane i tym samym wykonane.<br>
+Wśród tych poleceń możesz utworzyć przekierowania.
 
-W celu zmiany katalogu lub pliku:
+Manipulowanie plikiem ".htaccess" może spowodować niedostępność Twojej strony WWW. W przypadku wątpliwości należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/).
 
-```
-Redirect permanent /stary_katalog http://nowa-strona.tld/nowy_katalog
-Redirect permanent /stary_plik.php http://strona.pl/nowy_plik.php
-```
+Pełna dokumentacja dotycząca ".htaccess" znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 
-- **Redirect gone**
+> [!success]
+>
+> Zalecamy **wykonanie kopii zapasowej pliku .htaccess** przed wprowadzeniem zmian. W przypadku nieprawidłowej operacji będziesz mógł przywrócić wcześniejszą wersję pliku.
+>
 
-W sytuacji kiedy jakiś plik już nie istnieje, komunikat o kodzie *404” - nie odnaleziono strony o podanym adresie*, lepiej zastąpić bardziej precyzyjnym komunikatem typu *410” – strona o podanym adresie już nie istnieje*.
+Poniżej znajdziesz 4 zmiennych do wykonywania przekierowań za pomocą pliku ".htaccess".
 
-```
-Redirect gone /usuniety.html
-```
+#### Zmienna 1 - "Redirect permanent"
 
-- **Redirect seeother**
+Ta zmienna pozwala na przekierowanie strony jako całości lub tylko jej części na inną stronę WWW lub jej część. Odwiedzający są automatycznie przekierowywani na prawidłowy adres/URL, gdy próbują uzyskać dostęp do Twojej strony za pośrednictwem historycznego adresu/URL.
 
-Jeśli zmienisz rozszerzenie pliku, *seeother* pozwala na zmianę typu pliku poprzez wysłanie kodu HTTP 303:
+> [!tabs]
+> Kod do umieszczenia w ".htaccess" 
+>>
+>> Przekierowanie strony www:
+>>
+>>```bash
+>>Redirect permanent / http://domainTarget.tld/
+>>```
+>>
+>> Aby przekierować katalog na inny:
+>>
+>>```bash
+>>Redirect permanent /old_folder http://domain.tld/new_folder
+>>```
+>>
+>> Aby przekierować plik na inny:
+>>
+>>```bash
+>>Redirect permanent /old_file.php http://domain.tld/new_file.php
+>>```
+>>
+> Kod HTTP
+>>
+>> Skrypt wyśle kod HTTP 301. Zapobiegnie to robotom wyszukiwarek, że należy zaktualizować ich linki do nowego adresu/URL.
+>>
 
-```
-Redirect seeother /przyklad.doc http://strona.pl/przyklad.pdf
-```
+#### Zmienna 2 - "Redirect gone"
 
-- **Redirect Temp**
+Ta zmienna jest użyteczna dla usuniętych plików. Zastępuje komunikat *404 nieodnaleziony dokument* wyraźniejszym komunikatem typu *410 dokument już nie istnieje*. Osoba odwiedzająca Twoją stronę zostanie poinformowana, że plik, do którego zamierzasz zadzwonić, już nie istnieje.
 
-W sytuacji, kiedy tymczasowo przenosisz pliki na inną stronę WWW, możesz zastosować tymczasowe przekierowanie typu HTTP 302 .
+> [!tabs]
+> Kod do umieszczenia w ".htaccess" 
+>>
+>>```bash
+>>Redirect gone /fileDeleted.html
+>>```
+>>
+> Kod HTTP
+>>
+>> Skrypt wyśle kod HTTP 410.
+>>
 
-```
-Redirect temp / http://inna_strona.pl/site/
-```
+#### Zmienna 3 - "Redirect seeother"
+
+Jeśli zmienisz rozszerzenie pliku, zmienna *seeother* umożliwia zmianę typu pliku. Osoba, która stara się uzyskać dostęp do starego pliku, zostanie automatycznie przekierowana na ten plik, który ma odpowiednie rozszerzenie.
+
+> [!tabs]
+> Kod do umieszczenia w ".htaccess" 
+>>
+>>```bash
+>>Redirect seeother /example.doc http://domain.tld/example.pdf
+>>```
+>>
+> Kod HTTP
+>>
+>> Skrypt wyśle kod HTTP 303.
+>>
+
+#### Zmienna 4 - "Redirect Temp"
+
+Ta zmienna może być używana podczas tymczasowego przenoszenia plików na inną stronę. Odwiedzający, którzy próbują uzyskać dostęp do Twojej strony poprzez historyczny adres/URL, są automatycznie przekierowywani na nowy tymczasowy adres/URL.
+
+> [!tabs]
+> Kod do umieszczenia w ".htaccess" 
+>>
+>>```bash
+>>Redirect temp / http://OtherWebsite.tld/site/
+>>```
+>>
+> Kod HTTP
+>>
+>> Skrypt wyśle kod HTTP 302.
+>>
 
 ## Sprawdź również
 
-[Wszystko na temat pliku .htaccess](https://docs.ovh.com/pl/hosting/hosting_www_plik_htaccess/){.external}
+<a name="go-further"></a>
 
-[Jak edytować strefę DNS?](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}
+[Zablokować dostęp do mojej strony dla niektórych adresów IP przez plik ".htaccess" ](https://docs.ovh.com/pl/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 
-Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com](https://community.ovh.com){.external}
+[Chroń interfejs administracyjny swojej strony za pomocą ".htaccess" ](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/).
+
+[Stworzenie adresów URL za pomocą mod_rewrite](https://docs.ovh.com/pl/hosting/hosting_www_htaccess_-_generowanie_adresow_za_pomoca_mod_rewrite/)
+
+[Wykonywanie innych operacji za pomocą pliku ".htaccess" ](https://docs.ovh.com/pl/hosting/hosting_www_htaccess_-_inne_operacje/).
+
+[Jak edytować strefę DNS?](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi ofertami pomocy (https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

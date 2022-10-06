@@ -1,171 +1,403 @@
 ---
-title: 'Weiterleitung einer bei OVHcloud verwalteten Domain'
+title: "Weiterleitung von OVHcloud verwalteten Domainnamen"
 slug: domainweiterleitung
-excerpt: 'In dieser Anleitung lernen Sie die verschiedenen Weiterleitungsarten kennen und erfahren, wie Sie diese für von OVHcloud verwaltete Domains einrichten.'
-section: DNS und DNS-Zone
+excerpt: "Erfahren Sie hier, wie Sie verschiedene Weiterleitungsarten für einen von OVHcloud verwalteten Domainnamen erstellen"
+section: Allgemeine Verwendung
+order: 01
 ---
 
-**Stand 27.11.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
+**Letzte Aktualisierung am 06.10.2022**
 
 ## Ziel
 
-Eine Domainweiterleitung wird verwendet, um eine Domain auf ein neues Ziel umzuleiten. Dafür stehen verschiedene, den jeweiligen Anforderungen entsprechende Weiterleitungsarten zur Verfügung.
+Bei der Weiterleitung eines Domainnamens wird dieser auf ein neues Ziel umgeleitet. Es gibt verschiedene Arten von Weiterleitungen, die jeweils einem bestimmten Bedarf entsprechen.
 
-**Hier lernen Sie die verschiedenen Weiterleitungsarten kennen und erfahren, wie Sie diese für von OVHcloud verwaltete Domains einrichten.**
+**Diese Anleitung erklärt, wie Sie verschiedene Arten der Weiterleitung Ihres Domainnamens einsetzen.**
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt.
-- Sie sind mit Ihrem Webhosting verbunden (nur wenn Sie eine [.htaccess-Datei](https://docs.ovh.com/de/hosting/webhosting_alles_uber_die_datei_htaccess/){.external} hinzufügen möchten).
+- Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über die erforderlichen Informationen, um sich auf Ihrem Webhosting-Speicherplatz einzuloggen (optional, für Weiterleitungen über eine [.htaccess Datei](#htaccess_rewrite)).
 
 ## In der praktischen Anwendung
 
-### Domainweiterleitung verstehen
+### Domain-Weiterleitungen verstehen
 
-Bevor Sie für Ihre Domain eine Weiterleitung einrichten, ist es wichtig zu verstehen, wozu diese dient. Domainweiterleitungen werden dann vorgenommen, wenn eine Domain auf ein neues Ziel umgeleitet werden soll (in der Regel auf eine andere Domain).
+Mit dieser Funktion können Sie eine Domain/Subdomain umleiten:
 
-Das kann in verschiedenen Fällen notwendig sein. Meistens muss eine Weiterleitung eingerichtet werden, wenn der Name der Website geändert wurde. Durch die Weiterleitung werden die Besucher beim Aufruf des alten Domainnamens dann automatisch zum neuen Domainnamen weitergeleitet.
+- Auf eine andere bereits bestehende Domain/Subdomain.
+    - **Beispiel**: `domain.tld`
+- Auf eine URL (Uniform Resource Locator) für eine Website.
+    - **Beispiele**: `http://www.domain.tld/welcome/` oder `https://www.domain.tld/welcome/` (wenn die Zieldomain über ein kompatibles SSL-Zertifikat verfügt)
 
-Die Weiterleitung kann auf verschiedene Arten eingerichtet werden:
+Diese Weiterleitungen können auf mehrere Arten erreicht werden:
 
-- **Über das OVHcloud Kundencenter**: Sie können die Weiterleitung mithilfe eines Konfigurationsassistenten einrichten.
+- **Über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)**, in dem ein Konfigurationsassistent Ihre Weiterleitung einrichten kann.
+- **Über eine codegestüzte Methode**, indem Sie die Weiterleitung manuell in einer Datei hinterlegen (in der Regel [.htaccess](#htaccess_rewrite)).
 
-- **Weiterleitung selbst einrichten**: Bei dieser Methode erstellen Sie die Weiterleitung selbst in einer Datei (meist eine *.htaccess*-Datei). Hierzu sind Programmierkenntnisse erforderlich.
+> [!warning]
+>
+> Die Einrichtung einer Weiterleitung kann Auswirkungen auf das Suchmaschinen-Ranking haben. 
+> Achten Sie auf die Änderungen, die Sie vornehmen, oder kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) für SEO.
+>
+> Achtung: Eine über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erstellte Weiterleitung erlaubt nicht die Weiterleitung einer URL als `https://` auf eine andere Domain oder URL. 
+> Um diese Weiterleitungsart zu erstellen, müssen Sie "URL Rewrite" verwenden, zum Beispiel mithilfe der ".htaccess"-Datei.
+>
 
-Beachten Sie, dass die Einrichtung einer Weiterleitung Auswirkungen auf das SEO-Ranking Ihrer Website haben kann. Gehen Sie bei Änderungen bitte vorsichtig vor und kontaktieren Sie einen Spezialisten für SEO-Ranking, wenn Sie Hilfe brauchen.
+### Eine Domain über das Kundencenter weiterleiten
 
-### Domainweiterleitung über das Kundencenter einrichten
+Loggen Sie sich in das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, gehen Sie in den Bereich `Web Cloud`{.action}, wählen Sie die umzuleitende Domain unter `Domainnamen`{.action} aus, und klicken Sie dann auf den Tab `Weiterleitung`{.action}.
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} Ihren Domainnamen unter `Domainnamen`{.action} aus. Wechseln Sie zum Tab `Weiterleitung`{.action}.
+Die Tabelle zeigt die für Ihre Domain aktiven Weiterleitungen an. Sie können Ihre existierenden Weiterleitungen mit dem Button `...`{.action} rechts in den Zeilen verwalten.
 
-Die Tabelle zeigt alle für Ihre Domain aktiven Weiterleitungen an.
+Klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}.
 
-Um eine Weiterleitung hinzuzufügen, klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}.
+![Vorstellung des Menüs zur Weiterleitung](images/RedirectionPanel.png){.thumbnail}
 
-Geben Sie im angezeigten Fenster die Domain (bzw. die Subdomain) ein, die Sie umleiten möchten. Dadurch legen Sie die Quell-Domain für die Weiterleitung fest.
+Über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) sind drei Weiterleitungsoptionen verfügbar, von denen jede aus **fünf aufeinander folgenden Schritten** besteht. 
 
-![Schritt 1 Weiterleitung hinzufügen](images/adding_redirection_1.png){.thumbnail}
+> Der Tab `Weiterleitung`{.action} zeigt eine vierte Option, die Ihre Domain auf DNS-Einträge vom Typ A, AAAA und CNAME zeigen lassen kann.<br>
+> Da es sich hierbei nicht um eine "Weiterleitung" im engeren Sinn handelt, wird diese Option hier nicht näher erläutert.
+>
+> Mehr Informationen zu DNS-Einträgen finden Sie in unserer Dokumentation zum [Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
+>
 
-Wählen Sie nun das Ziel aus, auf das Sie die ausgewählte Domain weiterleiten möchten. Sie haben zwei Möglichkeiten:
-
-- **Weiterleitung auf eine Webadresse**
-
-Leiten Sie Ihre Domain auf eine andere Domain um. Wählen Sie diese Option, wenn Sie den Domainnamen Ihrer Website geändert haben.
-
-- **Weiterleitung auf einen OVHcloud Server oder auf externe Server**
-
-Ändern Sie die DNS-Konfiguration der Domain und geben Sie ein anderes Ziel ein (Eintrag A, AAAA oder CNAME). Wählen Sie diese Option, wenn Ihre Website an einem anderen Ort (zum Beispiel bei einem anderen Anbieter) gehostet wird, der Domainname aber bestehen bleibt.
-Wenn Ihre Domain die OVHcloud Konfiguration verwendet, können Sie diese Änderung auch über das Kundencenter vornehmen (siehe [Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}).
-
-Die vorliegende Anleitung beschreibt von hier an ausschließlich die **Weiterleitung auf eine Webadresse**. Wenden Sie sich für die Weiterleitung auf einen anderen Server an Ihren Hosting-Anbieter. Die notwendigen Änderungen in Ihrer DNS-Konfiguration können Sie dort erfragen.
-
-![Schritt 2 Weiterleitung hinzufügen](images/adding_redirection_2.png){.thumbnail}
-
-Für die **Weiterleitung auf eine Webadresse** wählen Sie zunächst die Weiterleitungsart, die Sie einrichten möchten. Sie haben zwei Möglichkeiten:
-
-|Weiterleitungsart|Beschreibung|
-|---|---|
-|Sichtbar (HTTP-Weiterleitung)|Der im Webbrowser eingegebene Domainname (die vorherige Webadresse) wird auf den neuen Domainnamen (Zieldomain) umgeleitet. Dabei wird die eingegebene Adresse (URL) in der Adresszeile des Browsers durch die neue Adresse ersetzt.|
-|Unsichtbar (Frame-Weiterleitung)|Der im Webbrowser eingegebene Domainname (die vorherige Webadresse) wird nicht auf den neuen Domainnamen (Zieldomain) umgeleitet. Sie greifen weiterhin auf die vorherige Webadresse zu, die die auf der neuen Domain gehostete Website über eine Overlay-Ebene (*iframe*) anzeigt. Beachten Sie bitte, dass diese Möglichkeit nicht mit allen Websites kompatibel ist. Außerdem kann das SEO-Ranking Ihrer Website beeinträchtigt werden.|
-
-![Auswahl sichtbare oder unsichtbare Weiterleitung](images/redirection_3xx_1.png){.thumbnail}
-
-#### Sichtbare Weiterleitung
-
-Für eine **sichtbare Weiterleitung** haben Sie zwei Möglichkeiten.
-
-|Weiterleitungsart|HTTP-Code|Beschreibung|
-|---|---|---|
-|Permanent|301|Dies ist die Standard-Weiterleitung und gibt an, dass eine Seite dauerhaft umgezogen ist.|
-|Temporär|302|Wählen Sie diese Weiterleitungsart für vorübergehende Weiterleitungen (beispielsweise für temporäre oder saisonale Ereignisse). Das SEO-Ranking wird in diesem Fall schlechter sein als bei einer 301-Weiterleitung.|
-
-Nachdem Sie die Weiterleitungsart ausgewählt haben, geben Sie Ihre Zieldomain ein (die URL, auf die Sie weiterleiten möchten).
-
-![Auswahl zwischen permanenter oder temporärer Weiterleitung](images/redirection_3xx_2.png){.thumbnail}
-
-Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Überprüfen Sie, dass die angezeigten Informationen korrekt sind, und klicken Sie dann auf `Bestätigen`{.action}.
+Nachfolgend finden Sie die drei Arten der Weiterleitung Schritt für Schritt erläutert.
 
 > [!primary]
 >
-> Die Änderung erfordert eine Propagationszeit zwischen 4 und maximal 24 Stunden, bis sie voll wirksam ist.
+> Unabhängig von der gewählten Weiterleitungsoption benötigt die Änderung eine Propagationszeit von 4 bis maximal 24 Stunden, bis sie voll wirksam ist.
 >
 
-#### Unsichtbare Weiterleitung (Frame-Weiterleitung)
+#### Option 1: Sichtbare permanente Weiterleitung auf eine Web-Adresse
 
-Geben Sie für eine unsichtbare Weiterleitung (HTTP-200-Code) die angeforderten Informationen ein (Webadresse und Optionen) und klicken Sie dann auf `Weiter`{.action}. Vergewissern Sie sich, dass die angezeigten Informationen korrekt sind, bevor Sie auf `Bestätigen`{.action} klicken.
+Mit dieser Option wird nach Aufruf der weitergeleiteten Domain die Zieldomain in der Adresszeile Ihres Browsers angezeigt, anstelle der weitergeleiteten Domain.
 
-|Felder|Beschreibung|
-|---|---|
-|Titel|Geben Sie hier den Seitentitel Ihrer Website ein. Dieser wird beispielsweise im Tab des Webbrowsers angezeigt, wenn Sie Ihre Seite aufrufen.|
-|Keywords|Diese Schlüsselwörter werden von Suchmaschinen für das Ranking Ihrer Website genutzt.|
-|Beschreibung|Geben Sie hier eine Beschreibung Ihrer Website ein. Diese kann von Suchmaschinen bei der Anzeige der Suchergebnisse genutzt werden.|
+- **Beispiel**: Wenn Sie `domain1.tld` auf `domain2.tld` weiterleiten, wird die in der Adresszeile `domain2.tld` angezeigt.
 
-> [!primary]
+![GIF1](images/redirect1.gif){.thumbnail}
+
+> Diese "Standard-Weiterleitung" wird einen HTTP 301 Code zurückgeben.
+
+> [!success]
+> Klicken Sie auf die nachstehenden Tabs, um alle 5 Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Im Assistenten-Fenster wird Ihre umzuleitende Domain bereits angezeigt. Füllen Sie das Eingabefeld **nur dann** aus, wenn Sie eine *Subdomain* weiterleiten möchten.
+>>
+>> Die Option `Ebenfalls weiterleiten`{.action} kann angehakt werden, um auch die Subdomain `www` Ihrer Domain/Subdomain weiterzuleiten.
+>>
+>> ![Schritt 1](images/Step1.png){.thumbnail}
+>>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 2 überzugehen.
+>>
+> **Schritt 2**
+>>
+>> Wählen Sie `Zu einer Web-Adresse`{.action} aus.
+>>
+>> ![Schritt 2](images/Step2.png){.thumbnail}
+>>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 3 überzugehen.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie `Mit einer sichtbaren Weiterleitung`{.action} aus den beiden Optionen.
+>>
+>> ![Schritt 3](images/Step3Visi.png){.thumbnail}
+>>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 4 überzugehen.
+>>
+> **Schritt 4**
+>>
+>> Wählen Sie `Permanent (301)`{.action} aus den beiden Auswahlmöglichkeiten und geben Sie die Zieldomain oder -URL Ihrer Weiterleitung im Feld `Web-Adresse`{.action} ein.
+>>
+>> ![Schritt 4](images/Step4VisiPerma.png){.thumbnail}
+>>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 5 überzugehen.
+>>
+> **Schritt 5**
+>>
+>> Überprüfen Sie im letzten Schritt, ob die angezeigten Informationen korrekt sind.
+>>
+>> ![Schritt 5](images/Step5VisiPerma.png){.thumbnail}
+>>
+>> Klicken Sie auf `Bestätigen`{.action}, um Ihre Konfiguration zu validieren.
+> >
+>> > [!primary]
+>> >
+>> > Wenn die Nachricht "*Es gibt Weiterleitungen von Domains, die mit den Weiterleitungen, die Sie hinzufügen möchten in Konflikt stehen*" angezeigt wird, können Sie die Option `Überschreiben der existierenden Weiterleitung bestätigen`{.action} aktivieren, um die Anwendung Ihrer Weiterleitung zu erzwingen.
+>> >
+>> > Achtung, die alte Konfiguration wird daraufhin deaktiviert und gelöscht.
+>> >
+>>
+
+#### Option 2: Temporäre sichtbare Weiterleitung auf eine Web-Adresse
+
+Wie bei Option 1 wird nach Aufruf der weitergeleiteten Domain die Zieldomain in der Adresszeile Ihres Browsers anstatt der weitergeleiteten Domain angezeigt.
+
+Diese ist jedoch punktuell zu verwenden, zum Beispiel für kurzfristige Ereignisse.<br>
+Die Positionierung in Suchmaschinen ist weniger effizient als bei einer **sichtbaren permanenten** Weiterleitung vom Typ 301 (HTTP-Code).
+
+- **Beispiel**: Wenn Sie `domain1.tld` auf `domain2.tld` weiterleiten, wird die in der Adresszeile `domain2.tld` angezeigt.
+
+![GIF1](images/redirect1.gif){.thumbnail}
+
+> Diese Weiterleitung wird einen HTTP 302 Code zurückgeben.
+
+> [!success]
+> Klicken Sie auf die nachstehenden Tabs, um alle 5 Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Im Assistenten-Fenster wird Ihre umzuleitende Domain bereits angezeigt. Füllen Sie das Eingabefeld **nur dann** aus, wenn Sie eine *Subdomain* weiterleiten möchten.
+>>
+>> Die Option `Ebenfalls weiterleiten`{.action} kann angehakt werden, um auch die Subdomain `www` Ihrer Domain/Subdomain weiterzuleiten.
+>>
+>> ![Schritt 1](images/Step1.png){.thumbnail}
+>>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 2 überzugehen.
+>>
+> **Schritt 2**
+>>
+>> Wählen Sie `Zu einer Web-Adresse`{.action}.
+>>
+>> ![Schritt 2](images/Step2.png){.thumbnail}
+>>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 3 überzugehen.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie `Mit einer sichtbaren Weiterleitung`{.action} aus den beiden Optionen.
+>>
+>> ![Schritt 3](images/Step3Visi.png){.thumbnail}
+>>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 4 überzugehen.
+>>
+> **Schritt 4**
+>>
+>> Wählen Sie `Temporär (302)`{.action} aus den beiden Auswahlmöglichkeiten und geben Sie die Zieldomain oder -URL Ihrer Weiterleitung im Feld `Web-Adresse`{.action} ein.
+>>
+>> ![Schritt 4](images/Step4VisiTempo.png){.thumbnail}
+>>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 5 überzugehen.
+>>
+> **Schritt 5**
+>>
+>> Überprüfen Sie im letzten Schritt, ob die angezeigten Informationen korrekt sind.
+>>
+>> ![Schritt 5](images/Step5VisiTempo.png){.thumbnail}
+>>
+>> Klicken Sie auf `Bestätigen`{.action}, um Ihre Konfiguration zu validieren.
+>>
+>> > [!primary]
+>> >
+>> > Wenn die Nachricht "*Es gibt Weiterleitungen von Domains, die mit den Weiterleitungen, die Sie hinzufügen möchten in Konflikt stehen*" angezeigt wird, können Sie die Option `Überschreiben der existierenden Weiterleitung bestätigen`{.action} aktivieren, um die Anwendung Ihrer Weiterleitung zu erzwingen.
+>> >
+>> > Achtung, die alte Konfiguration wird daraufhin deaktiviert und gelöscht.
+>> >
+>>
+
+#### Option 3: Unsichtbare Weiterleitung auf eine Web-Adresse
+
+Diese Weiterleitung erlaubt es, nach der Eingabe der weitergeleiteten Domain, diese in der Adresszeile Ihres Browsers angezeigt zu lassen, anstatt sie durch die Zieldomain zu ersetzen<br>.
+**Achtung, diese Aktion ist nicht mit allen Seiten kompatibel und beeinträchtigt das Ranking Ihrer Website.**
+
+- **Beispiel**: Wenn Sie `domain1.tld` auf `domain2.tld` weiterleiten, wird `domain1.tld` in der Adresszeile Ihres Browsers angezeigt.
+
+![GIF2](images/redirect2.gif){.thumbnail}
+
+Die unsichtbare Weiterleitung funktioniert über einen *iFrame* `HTML tag`. Damit kann Ihre weitergeleitete Domain den Inhalt der Zieldomain-Webseite in ihre eigene HTML-Seite integrieren.
+
+Diese Einbettung von Inhalten verhindert, dass Besuchern Ihrer Website die Zieldomain angezeigt wird.
+
+> Diese Option führt zu einem HTTP 200 Code.
+
+> [!warning]
 >
-> Die Änderung erfordert eine Propagationszeit zwischen 4 und maximal 24 Stunden, bis sie voll wirksam ist.
+> Achtung: Mit *iFrame* eingebettete Seiten werden möglicherweise nicht auf Smartphones gelesen. Derartige Inhalte werden von Suchmaschinen im Allgemeinen nicht für die Indexierung Ihrer Seite berücksichtigt.
 >
 
-![Unsichtbare Weiterleitung einrichten](images/invisible_redirection.png){.thumbnail}
-
-### Domainweiterleitung via .htaccess-Datei einrichten
-
-.htaccess-Dateien sind Konfigurationsdateien, in denen Befehle angegeben werden können. Führt der Webserver (Apache) den Code Ihrer Website aus, werden diese Befehle interpretiert und entsprechend ausgeführt. Über diese Befehle können auch Weiterleitungen eingerichtet werden.
-
-Für die Änderung einer .htaccess-Datei sind technische Kenntnisse erforderlich. Fehler bei der Anpassung der Datei können dazu führen, dass Ihre Website (bzw. Websites, wenn Sie in Unterverzeichnissen Ihres Webhostings mehrere Seiten hosten), nicht mehr erreichbar sind. Wenn Sie Zweifel haben oder bei Änderungen der .htaccess-Datei Hilfe brauchen, kontaktieren Sie bitte einen spezialisierten Webentwickler.
-
-Weitere Tipps zu .htaccess-Dateien finden Sie in unserer Anleitung [Webhosting: Alles über die Datei .htaccess](https://docs.ovh.com/de/hosting/webhosting_alles_uber_die_datei_htaccess/){.external}.
-
-> [!primary]
->
-> **Erstellen Sie vor jeder Änderung unbedingt eine Sicherungskopie Ihrer .htaccess-Datei.** So können Sie bei Bedarf die vorherige Version wiederherstellen.
+> [!success]
+> Klicken Sie auf die nachstehenden Tabs, um alle 5 Schritte anzuzeigen.
 >
 
-- **Redirect permanent**
+> [!tabs]
+> **Schritt 1**
+>>
+>> Im Assistenten-Fenster wird Ihre umzuleitende Domain bereits angezeigt. Füllen Sie das Eingabefeld **nur dann** aus, wenn Sie eine *Subdomain* weiterleiten möchten.
+>>
+>> Die Option `Ebenfalls weiterleiten`{.action} kann angehakt werden, um auch die Subdomain `www` Ihrer Domain/Subdomain weiterzuleiten.
+>>
+>> ![Schritt 1](images/Step1.png){.thumbnail}
+>>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 2 überzugehen.
+>>
+> **Schritt 2**
+>>
+>> Wählen Sie `Zu einer Web-Adresse`{.action} aus.
+>>
+>> ![Schritt 2](images/Step2.png){.thumbnail}
+>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 3 überzugehen.
+>>
+> **Schritt 3**
+>>
+>> Wählen Sie `Mit einer unsichtbaren Weiterleitung`{.action} aus den beiden angegebenen Optionen.
+>>
+>> ![Schritt 3](images/Step3Invi.png){.thumbnail}
+>>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 4 überzugehen.
+>>
+> **Schritt 4**
+>>
+>> Wählen Sie `Temporär (302)`{.action} aus den beiden Auswahlmöglichkeiten und geben Sie die Zieldomain oder -URL Ihrer Weiterleitung im Feld `Web-Adresse`{.action} ein.
+>>
+>> ![Schritt 4](images/Step4Invi.png){.thumbnail}
+>>
+>> Für diesen Schritt stehen Ihnen drei optionale Einstellungen zur Verfügung:
+>>
+>> - **Titel**: Ihr Seitentitel, der im Tab des Webbrowsers angezeigt wird.<br>
+>> - **Schlüsselwörter**: Sie können von Suchmaschinen verwendet werden, um die Seite teilweise zu referenzieren.<br>
+>> - **Beschreibung**: Eine Webseiten-Beschreibung, die von Suchmaschinen in deren Ergebnissen verwendet wird.
+>>
+>> Klicken Sie auf `Weiter`{.action}, um zu Schritt 5 überzugehen.
+>>
+> **Schritt 5**
+>>
+>> Überprüfen Sie im letzten Schritt, ob die angezeigten Informationen korrekt sind.
+>>
+>> ![Schritt 5](images/Step5Invi.png){.thumbnail}
+>>
+>> Klicken Sie auf `Bestätigen`{.action}, um Ihre Konfiguration zu validieren.
+>>
+>> > [!primary]
+>> >
+>> > Wenn die Nachricht "*Es gibt Weiterleitungen von Domains, die mit den Weiterleitungen, die Sie hinzufügen möchten in Konflikt stehen*" angezeigt wird, können Sie die Option `Überschreiben der existierenden Weiterleitung bestätigen`{.action} aktivieren, um die Anwendung Ihrer Weiterleitung zu erzwingen.
+>> >
+>> > Achtung, die alte Konfiguration wird daraufhin deaktiviert und gelöscht.
+>> >
+>>
 
-Für eine permanente Weiterleitung wird ein HTTP-301-Code übermittelt. Er teilt den Suchmaschinen mit, dass sie ihre Links auf die neue URL aktualisieren müssen.
+#### Eine Domain über eine .htaccess Datei weiterleiten <a name="htaccess_rewrite"></a>
 
-Fügen Sie den folgenden Code hinzu, um Ihre gesamte Website umzuleiten:
+> [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+>
 
-```
-Redirect permanent /http://neue-seite.tld/
-```
+Dateien mit dem Dateinamen ".htaccess" sind Konfigurationsdateien, in denen Befehle spezifiziert werden können. Wenn der Webserver (Apache) den Code Ihrer Website verarbeitet, werden die Befehle interpretiert und ausgeführt.<br>
+Sie können solche Befehle verwenden, um Weiterleitungen zu erstellen.
 
-Fügen Sie den folgenden Code hinzu, um ein Verzeichnis/eine Datei zu ändern:
+Eine fehlerhafte ".htaccess" Datei kann Ihre Website unerreichbar machen. Kontaktieren Sie im Zweifelsfall einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) .
 
-```
-Redirect permanent /altes_verzeichnis http://neue-seite.tld/neues_verzeichnis
-Redirect permanent /alte_datei.php http://neue-seite.tld/neue_datei.php
-```
+Unsere Dokumentation zum Thema ".htaccess" finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
 
-- **Redirect gone**
+> [!success]
+>
+> Wir empfehlen Ihnen, **vor der Bearbeitung eine Sicherung Ihrer ".htaccess" Datei durchzuführen**. So können Sie im Falle eines Fehlers die vorherige Version der Datei wiederherstellen.
+>
 
-Wenn eine Datei nicht mehr existiert, ersetzen Sie die Fehlermeldung *404 Dokument nicht gefunden* am besten mit einer eindeutigen Meldung wie *410 Dokument existiert nicht mehr*:
+Nachfolgend finden Sie 4 Variablen, um Weiterleitungen über die Datei ".htaccess" durchzuführen.
 
-```
-Redirect gone /löschen.html
-```
+#### Variable 1 - "Redirect permanent"
 
-- **Redirect seeother**
+Diese Variable erlaubt die Weiterleitung einer Website als Ganzes, oder nur eines Teils einer Website, auf eine andere Website oder einen anderen Teil einer Website. Die Besucher werden dann automatisch auf die richtige Adresse/URL weitergeleitet, wenn sie versuchen, über die historische Adresse/URL auf Ihre Website zuzugreifen.
 
-Wenn Sie eine Dateiendung ändern möchten, verwenden Sie `seeother`, um den Dateityp über einen HTTP-303-Code zu ändern:
+> [!tabs]
+> Einzufügender Code in ".htaccess"
+>>
+>> Um eine ganze Website weiterzuleiten:
+>>
+>>```bash
+>>Redirect permanent / http://domainTarget.tld/
+>>```
+>>
+>> Um ein Verzeichnis auf ein anderes weiterzuleiten:
+>>
+>>```bash
+>>Redirect permanent /old_folder http://domain.tld/new_folder
+>>```
+>>
+>> Um eine Datei auf eine andere weiterzuleiten:
+>>
+>>```bash
+>>Redirect permanent /old_file.php http://domain.tld/new_file.php
+>>```
+>>
+> HTTP-Code
+>>
+>> Das Skript sendet einen HTTP 301 Code. Dies warnt die Roboter der Suchmaschinen, dass ihre Links zur neuen Adresse/URL aktualisiert werden müssen.
+>>
 
-```
-Redirect seeother/beispiel.doc http://seite.tld/beispiel.pdf
-```
+#### Variable 2 - "Redirect gone"
 
-- **Redirect Temp**
+Diese Variable ist für gelöschte Dateien nützlich. Sie ersetzt die Nachricht *404 document not found* durch eine deutlichere Nachricht vom Typ *410 document no longer exists*. Besucher Ihrer Seite werden somit informiert, dass die angeforderte Datei nicht mehr existiert.
 
-Verwenden Sie einen HTTP-302-Code für eine temporäre Weiterleitung, wenn Sie Dateien vorübergehend auf eine andere Website übertragen.
+> [!tabs]
+> Einzufügender Code in ".htaccess" 
+>>
+>>```bash
+>>Redirect gone /fileDeleted.html
+>>```
+>>
+> HTTP-Code
+>>
+>> Das Skript wird einen HTTP 410 Code zurückgeben.
+>>
 
-```
-Redirect temp / http://andere_website.tld/seite/
-```
+#### Variable 3 - "Redirect seeother"
 
-## Weiterführende Informationen
+Wenn Sie die Dateiendung ändern, kann mit *seeother* der Dateityp geändert werden. Wenn Besucher auf die alte Datei zugreifen, wird automatisch auf die Datei mit der richtigen Endung weitergeleitet.
 
-[Webhosting: Alles über die Datei .htaccess](https://docs.ovh.com/de/hosting/webhosting_alles_uber_die_datei_htaccess/){.external}
+> [!tabs]
+> Einzufügender Code in ".htaccess" 
+>>
+>>```bash
+>>Redirect seeother /example.doc http://domain.tld/example.pdf
+>>```
+>>
+> HTTP-Code
+>>
+>> Das Skript wird einen HTTP 303 Code zurückgeben.
+>>
 
-[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
+#### Variable 4 - "Redirect temp"
+
+Diese Variable kann verwendet werden, wenn Sie Dateien vorübergehend auf eine andere Seite verschieben. Besucher, die über die historische URL/Adresse auf Ihre Website zugreifen möchten, werden automatisch auf die neue temporäre URL weitergeleitet.
+
+> [!tabs]
+> Einzufügender Code in ".htaccess" 
+>>
+>>```bash
+>>Redirect temp / http://OtherWebsite.tld/site/
+>>```
+>>
+> HTTP-Code
+>>
+>> Das Skript wird einen HTTP 302 Code zurückgeben.
+>>
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+[Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?](https://docs.ovh.com/de/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+
+[Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/).
+
+[Fortgeschrittene Operationen mit .htaccess Dateien](https://docs.ovh.com/de/hosting/webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich/).
+
+[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
