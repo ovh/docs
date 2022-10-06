@@ -10,7 +10,7 @@ section: 'Red e IP'
 > 
 
 
-**Última actualización: 30/11/2021**
+**Última actualización: 06/10/2022**
 
 > [!primary]
 >

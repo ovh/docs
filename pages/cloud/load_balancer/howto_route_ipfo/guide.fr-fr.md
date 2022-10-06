@@ -5,7 +5,7 @@ excerpt: 'Ce guide vous explique comment utiliser une Additional IP avec le serv
 section: Configuration
 ---
 
-**Dernière mise à jour le 07/02/2022**
+**Dernière mise à jour le 06/10/2022**
 
 > [!primary]
 >

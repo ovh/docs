@@ -5,7 +5,7 @@ slug: importar_una_ip_failover
 section: 'Red e IP'
 ---
 
-**Última actualización: 10/03/2022**
+**Última actualización: 06/10/2022**
 
 > [!primary]
 >

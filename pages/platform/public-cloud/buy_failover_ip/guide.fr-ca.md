@@ -6,7 +6,7 @@ section: 'Réseau'
 order: 1
 ---
 
-**Dernière mise à jour le 14/12/2021**
+**Dernière mise à jour le 06/10/2022**
 
 > [!primary]
 >

@@ -6,7 +6,7 @@ section: 'Utilisation avancée'
 order: 5
 ---
 
-**Dernière mise à jour le 04/10/2021**
+**Dernière mise à jour le 06/10/2022**
 
 > [!primary]
 >

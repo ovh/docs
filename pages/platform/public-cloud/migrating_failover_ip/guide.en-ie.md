@@ -5,7 +5,7 @@ slug: migrating_a_failover_ip
 section: Networking
 ---
 
-**Last updated 6th January 2022**
+**Last updated 6th October 2022**
 
 > [!primary]
 >

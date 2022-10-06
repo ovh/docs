@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment ajouter des adresses Additional IP à votre configu
 section: 'Réseau et IP'
 ---
 
-**Dernière mise à jour le 30/11/2021**
+**Dernière mise à jour le 06/10/2022**
 
 > [!primary]
 >

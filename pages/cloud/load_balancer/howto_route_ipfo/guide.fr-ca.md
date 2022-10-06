@@ -5,7 +5,7 @@ excerpt: 'Router une Additional IP'
 section: Configuration
 ---
 
-**Dernière mise à jour le 06/04/2018**
+**Dernière mise à jour le 06/10/2022**
 
 > [!primary]
 >

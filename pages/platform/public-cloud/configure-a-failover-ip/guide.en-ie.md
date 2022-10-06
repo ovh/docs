@@ -5,7 +5,7 @@ excerpt: Find out how to add Additional IP addresses to your instance's configur
 section: Networking
 ---
 
-**Last updated 18th July 2022**
+**Last updated 6th October 2022**
 
 > [!primary]
 >

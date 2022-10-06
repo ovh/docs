@@ -5,7 +5,7 @@ excerpt: "Find out how to import an Additional IP address into your Public Cloud
 section: Networking
 ---
 
-**Last updated 10th March 2022**
+**Last updated 6th October 2022**
 
 > [!primary]
 >

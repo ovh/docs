@@ -6,7 +6,7 @@ section: 'Réseau & IP'
 order: 7
 ---
 
-**Dernière mise à jour le 09/12/2021**
+**Dernière mise à jour le 06/10/2022**
 
 > [!primary]
 >

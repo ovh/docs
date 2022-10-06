@@ -5,7 +5,7 @@ slug: importowanie_adresu_ip_fail_over
 section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
-**Ostatnia aktualizacja: 10-03-2022**
+**Ostatnia aktualizacja: 06-10-2022**
 
 > [!primary]
 >

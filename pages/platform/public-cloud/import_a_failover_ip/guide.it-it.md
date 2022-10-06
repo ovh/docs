@@ -5,7 +5,7 @@ slug: importa_un_ip_failover
 section: Rete
 ---
 
-**Ultimo aggiornamento 10/03/2022**
+**Ultimo aggiornamento 06/10/2022**
 
 > [!primary]
 >

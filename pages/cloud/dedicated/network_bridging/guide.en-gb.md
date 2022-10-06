@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure your virtual machines for access to the publ
 section: 'Network management'
 ---
 
-**Last updated 13th January 2021**
+**Last updated 6th October 2022**
 
 > [!primary]
 >

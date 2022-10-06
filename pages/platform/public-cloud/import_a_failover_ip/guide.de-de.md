@@ -5,7 +5,7 @@ excerpt: 'Erfahren Sie hier, wie Sie eine Additional IP-Adresse in ein Public Cl
 section: 'Netzwerk und IP'
 ---
 
-**Letzte Aktualisierung am 10.03.2022**
+**Letzte Aktualisierung am 06.10.2022**
 
 > [!primary]
 >

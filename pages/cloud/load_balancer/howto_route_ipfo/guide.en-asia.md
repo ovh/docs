@@ -5,7 +5,7 @@ excerpt: 'Find out how to route an Additional IP and link it to the OVH Load Bal
 section: Configuration
 ---
 
-**Last updated 06th April 2018**
+**Last updated 6th October 2022**
 
 > [!primary]
 >
