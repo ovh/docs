@@ -2,8 +2,8 @@
 title: 'Hosting condiviso: consulta le statistiche e i log del tuo sito'
 excerpt: Accedi alle statistiche del tuo sito
 slug: hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito
-legacy_guide_number: g1344
 section: Ottimizza il tuo sito
+order: 04
 ---
 
 > [!primary]

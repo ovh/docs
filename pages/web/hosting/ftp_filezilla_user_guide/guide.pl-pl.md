@@ -3,7 +3,7 @@ title: "Tutorial - Korzystanie z FileZilla na Twoim hostingu OVHcloud"
 slug: hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla
 excerpt: "Zapoznaj się z przewodnikiem dotyczącym korzystania z oprogramowania Filezilla na hostingu"
 section: "FTP i SSH"
-order: 04
+order: 01
 ---
 
 > [!primary]
@@ -13,7 +13,7 @@ order: 04
 
 **Ostatnia aktualizacja z dnia 13/09/2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 FileZilla to oprogramowanie dostępne bezpłatnie w wielu systemach operacyjnych (Windows, macOS, etc).
 Umożliwia on umieszczanie w Internecie plików lub Twojej strony WWW, [zalogując się do przestrzeni FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu.

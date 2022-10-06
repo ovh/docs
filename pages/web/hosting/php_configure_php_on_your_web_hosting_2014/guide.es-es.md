@@ -3,7 +3,7 @@ title: 'Cambiar la versión de PHP de un alojamiento web'
 slug: cambiar-version-php-en-alojamiento-web
 excerpt: 'Cómo cambiar la versión de PHP de un alojamiento web de OVH'
 section: PHP
-order: 1
+order: 01
 ---
 
 **Última actualización: 27/09/2018**

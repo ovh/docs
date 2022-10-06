@@ -3,7 +3,7 @@ title: Como gerir o seu módulo em 1 clique?
 excerpt: Saiba como gerir o módulo 1 clique na Área de Cliente OVHcloud
 slug: 1-click-module-management
 section: CMS
-order: 2
+order: 02
 ---
 
 > [!primary]

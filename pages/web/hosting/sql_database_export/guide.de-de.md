@@ -4,11 +4,11 @@ excerpt: 'Hier erfahren Sie, wie Sie ein Backup einer Datenbank Ihres OVH Webhos
 slug: webhosting_hilfe_zum_export_von_datenbanken
 legacy_guide_number: g1394
 section: 'Datenbanken'
-order: 3
+order: 03
 ---
 
 **Stand 27.11.2018**
-
+ 
 ## Einleitung
 
 Fast alle Content Management Systeme (CMS) wie WordPress oder Joomla! verwenden heutzutage Datenbanken, um sogenannte dynamische Inhalte wie beispielsweise Kommentare oder Artikel zu speichern. Es kann aus verschiedenen Gründen erforderlich sein, ein Backup Ihrer Datenbank zu erstellen, um deren Inhalt zu exportieren.

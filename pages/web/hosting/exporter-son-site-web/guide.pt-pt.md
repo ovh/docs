@@ -2,8 +2,8 @@
 title: 'Exportar o seu website'
 slug: exportar-o-seu-website
 excerpt: 'Descubra como exportar o seu website OVHcloud'
-section: Introdução
-order: 2
+section: Primeiros passos
+order: 04
 ---
 
 **Última atualização: 03/02/2022**

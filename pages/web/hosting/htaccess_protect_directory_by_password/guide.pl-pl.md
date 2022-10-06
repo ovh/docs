@@ -3,6 +3,7 @@ title: "Chroń interfejs administracyjny Twojej strony za pomocą pliku .htacces
 slug: hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu
 excerpt: "Dowiedz się, jak zabezpieczyć dostęp do strony WWW za pomocą pliku .htaccess"
 section: Przekierowania i uprawnienia dostępu
+order: 02
 ---
 
 > [!primary]
@@ -11,7 +12,7 @@ section: Przekierowania i uprawnienia dostępu
 
 **Ostatnia aktualizacja z dnia 20/09/2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Czasami konieczne może okazać się zabezpieczenie dostępu do części Twojej strony za pomocą identyfikatorów. W szczególności możesz uruchomić plik ".htaccess", aby chronić dostęp do interfejsu administracyjnego.
 

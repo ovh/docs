@@ -3,10 +3,10 @@ title: Erste Schritte mit Ihrem Webhosting
 slug: erste-schritte-mit-webhosting
 excerpt: So starten Sie mit Ihrem Webhosting
 section: 'Erste Schritte'
-order: 1
+order: 02
 ---
 
-**Stand 19.03.2018**
+**Stand 19.03.2018** 
 
 ## Einleitung
 

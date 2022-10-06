@@ -1,10 +1,9 @@
 ---
 title: Co zrobić w przypadku błędu 500 Internal Server Error?
-legacy_guide_number: 1987
-slug: błąd-500-internal-server-error
+slug: web_hosting_how_to_fix_the_500_internal_server_error
 excerpt: Zdiagnozuj najczęstsze przypadki błędów 500
 section: Diagnostyka
-order: 5
+order: 06
 ---
 
 > [!primary]
@@ -14,7 +13,7 @@ order: 5
 **Ostatnia aktualizacja z dnia 21-07-2022**
 
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Błędy 500 "Internal Server Error" mogą dotyczyć całości lub części Twojej strony, być losowe lub stałe. Mogą również pojawić się w postaci białej strony.
 

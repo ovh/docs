@@ -1,8 +1,8 @@
 ---
 title: 'Lista dos endereços IP dos clusters e alojamentos web'
 slug: lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web
-section: 'Configuração do alojamento'
-order: 3
+section: Configuração do alojamento
+order: 01
 ---
 
 **Última atualização: 08/01/2021**

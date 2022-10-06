@@ -1,9 +1,9 @@
 ---
 title: .htaccess&#58; reecriture d’URL grace au mod_rewrite
-legacy_guide_number: 1971
 slug: htaccess-reecriture-url-mod-rewrite
 excerpt: Mod_rewrite est disponible chez OVH sur l'ensemble des hebergements mutualises (sauf 20gp). En savoir plus sur le site d'Apache.
 section: Réécriture et authentification
+order: 03
 ---
 
 > [!warning]

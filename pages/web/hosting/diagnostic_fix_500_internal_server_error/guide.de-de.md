@@ -3,7 +3,7 @@ title: 'Beheben des Fehlers “500 Internal Server Error”'
 excerpt: Erfahren Sie hier, welche Maßnahmen Sie bei einem Fehlercode 500 anwenden können
 slug: webhosting_bei_einem_fehler_500_internal_server_error
 section: 'Diagnose'
-order: 5
+order: 06
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 5
 
 **Letzte Aktualisierung am 21.07.2022**
 
-## Ziel
+## Ziel 
 
 Der Fehlertyp "500 Internal Server Error" kann Ihre gesamte Website oder nur Teile davon betreffen. Er kann dauerhaft sein, sporadisch auftreten oder zu einer leeren Seite führen.
 

@@ -1,9 +1,9 @@
 ---
 title: Instalar Composer en un alojamiento web
 slug: install_composer_on_web_hosting_packages
-legacy_guide_number: 1894
 excerpt: Esta guía explica cómo instalar y dar los primeros pasos en Composer.
 section: PHP
+order: 02
 ---
 
 **Última actualización: 30/11/2020**

@@ -1,9 +1,9 @@
 ---
 title: Geolocaliser votre site
 slug: geolocaliser-site
-legacy_guide_number: 1880
 excerpt: En choisissant l’IP d’un pays pour votre site, vous optimisez votre referencement dans les moteurs de recherche locaux.
 section: Optimiser son site
+order: 05
 ---
 
 Si vous créez des sites à vocation internationale, vous vous intéressez fortement à leur référencement dans les moteurs de recherche des pays ciblés. Le positionnement dans beaucoup de moteurs de recherche dépend du pays d'hébergement de l'IP du site.

@@ -2,8 +2,8 @@
 title: Como proteger o seu website?
 excerpt: Saiba como reforçar a segurança do seu website 
 slug: secure-website
-section: Otimizar o meu site
-order: 1
+section: Otimizar o seu site
+order: 01
 ---
 
 > [!primary]

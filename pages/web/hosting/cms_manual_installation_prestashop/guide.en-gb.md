@@ -2,8 +2,8 @@
 title: 'Installing PrestaShop manually'
 excerpt: How to manually install PrestaShop
 slug: cms_manually_install_prestashop
-legacy_guide_number: g1979
-section: 'CMS'
+section: CMS
+order: 06
 ---
 
 

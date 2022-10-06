@@ -3,7 +3,7 @@ title: Getting started with a Web Hosting plan
 excerpt: Building your website and setting up your email addresses 
 slug: get_started_with_a_web_hosting_package
 section: Getting started
-order: 1
+order: 02
 ---
 
 **Last updated 5th March 2018**

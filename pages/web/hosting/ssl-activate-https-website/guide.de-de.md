@@ -2,22 +2,22 @@
 title: 'Website mit SSL-Zertifikat auf HTTPS umstellen'
 slug: website-umstellen-https-ssl
 excerpt: 'Hier erfahren Sie, wie Sie Ihre Website mit einem SSL-Zertifikat auf HTTPS umstellen.'
-section: 'SSL'
-order: 2
+section: SSL
+order: 02
 ---
 
-**Stand 29.03.2019**
+**Stand 04.10.2022**
 
 ## Einleitung
 
-Bei Ihrem OVH Webhosting können Sie ein SSL-Zertifikat verwenden. Damit haben Sie die Möglichkeit, eine oder mehrere Ihrer Websites mit einer sicheren Verbindung auszustatten und über HTTPS verfügbar zu machen. Bevor Sie allerdings alle Vorteile der sicheren SSL-Verbindung nutzen können, sind noch ein paar Schritte nötig.
+Bei Ihrem OVHcloud Webhosting können Sie ein SSL-Zertifikat verwenden. Damit haben Sie die Möglichkeit, eine oder mehrere Ihrer Websites mit einer sicheren Verbindung auszustatten und über HTTPS verfügbar zu machen. Bevor Sie allerdings alle Vorteile der sicheren SSL-Verbindung nutzen können, sind noch ein paar Schritte nötig.
 
 **In dieser Anleitung erfahren Sie, wie Sie mit einem SSL-Zertifikat Ihre Website auf HTTPS umstellen.**
 
 ## Voraussetzungen
 
-- Auf Ihrem [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} ist ein [SSL-Zertifikat](https://www.ovh.de/ssl/){.external} installiert.
-- Sie besitzen mindestens eine Website, die über Ihr OVH Webhosting eingerichtet und zugänglich ist.
+- Auf Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} ist ein [SSL-Zertifikat](https://www.ovh.de/ssl/){.external} installiert.
+- Sie besitzen mindestens eine Website, die über Ihr OVHcloud Webhosting eingerichtet und zugänglich ist.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
@@ -45,10 +45,10 @@ Die Aktivierung des SSL-Zertifikats für Ihr Webhosting erfolgt über das [OVHcl
 
 |Aktion|Beschreibung|
 |---|---|
-|SSL-Zertifikat auf Ihrem Hosting aktivieren|Erlaubt OVH die Installation eines SSL-Zertifikats auf Ihrem Hosting. Dabei haben Sie die Wahl zwischen verschiedenen Arten von Zertifikaten. Bitte wählen Sie das für Sie passende Angebot aus.|
+|SSL-Zertifikat auf Ihrem Hosting aktivieren|Erlaubt OVHcloud die Installation eines SSL-Zertifikats auf Ihrem Hosting. Dabei haben Sie die Wahl zwischen verschiedenen Arten von Zertifikaten. Bitte wählen Sie das für Sie passende Angebot aus.|
 |SSL für die betreffende Multisite aktivieren|Die Website, für die Sie HTTPS verwenden möchten, muss auf Ihrem Hosting als „Multisite“ konfiguriert sein. Stellen Sie sicher, dass SSL für die Seite aktiviert und funktional ist.|
 
-Wie diese beiden Schritte genau funktionieren, erfahren Sie in unserer Anleitung „[SSL-Zertifikat auf einem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/){.external}“. Wenn Sie Ihr OVH Hosting neu erworben haben, ist möglicherweise ein kostenloses SSL-Zertifikat vorinstalliert und die Multisite verfügt bereits über eine aktive SSL-Verbindung.
+Wie diese beiden Schritte genau funktionieren, erfahren Sie in unserer Anleitung „[SSL-Zertifikat auf einem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/){.external}“. Wenn Sie Ihr OVHcloud Hosting neu erworben haben, ist möglicherweise ein kostenloses SSL-Zertifikat vorinstalliert und die Multisite verfügt bereits über eine aktive SSL-Verbindung.
 
 Um dies zu überprüfen, loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden. Unter „SSL-Zertifikat“ müsste ein kleines „Ja“ stehen, was anzeigt, dass bereits ein SSL-Zertifikat auf Ihrem Webhosting installiert ist. 
 
@@ -68,9 +68,9 @@ Wir empfehlen Ihnen jedoch dringend, die unten aufgeführten Aspekte zu berücks
 
 > [!warning]
 >
-> OVH stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVH leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung. 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung. 
 >
 
 #### 2.1 Mischen von HTTP- und HTTPS-Inhalten vermeiden
@@ -135,6 +135,16 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
+> [!warning]
+>
+> Für die [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) Hosting-Angebote ist folgendes Skript zu verwenden:
+> ```
+> RewriteEngine On
+> RewriteCond %{ENV:HTTPS} !on
+> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+> ```
+>
+
 ### Schritt 4: Korrektes Funktionieren der Website überprüfen
 
 Nachdem Sie HTTPS für Ihre Website aktiviert haben, überprüfen Sie, ob diese weiterhin korrekt funktioniert und alle Inhalte wie vor der Änderung angezeigt werden. Versuchen Sie hierfür, die Seite zu laden und achten Sie darauf, ob Meldungen oder Warnhinweise erscheinen. Nehmen Sie sich dann noch kurz Zeit, um Layout und Formatierung verschiedener Bereiche Ihrer Website zu kontrollieren. 
@@ -144,5 +154,9 @@ Wir empfehlen Ihnen, schon bei der kleinsten Fehlfunktion diese schnellstmöglic
 Wenn Ihre Website korrekt angezeigt und nach der Umstellung auf HTTPS kein Warnhinweis angezeigt wird, haben Sie alles korrekt ausgeführt. Wenn Sie HTTPS für eine andere Website aktivieren möchten, führen Sie alle in dieser Anleitung beschriebenen Schritte erneut aus.
 
 ## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

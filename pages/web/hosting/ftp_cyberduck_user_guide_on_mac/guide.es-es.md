@@ -1,10 +1,9 @@
 ---
 title: 'Web hosting: Guía de uso de Cyberduck (Mac)'
 excerpt: Esta guía explica cómo utilizar la aplicación Cyberduck.
-id: '1598'
 slug: web_hosting_guia_de_uso_de_cyberduck_mac
-legacy_guide_number: g1598
 section: FTP y SSH
+order: 05
 ---
 
 

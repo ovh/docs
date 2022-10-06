@@ -1,9 +1,9 @@
 ---
 title: 'Optimisation des performances de votre site'
 slug: optimisation-performances-site
-legacy_guide_number: 1396
 excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
 section: 'Optimiser son site'
+order: 06
 ---
 
 **Dernière mise à jour le 03/02/2022**

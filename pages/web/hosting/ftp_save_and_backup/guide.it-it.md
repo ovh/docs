@@ -2,9 +2,8 @@
 title: 'Ripristinare i dati dello spazio di storage di un hosting Web'
 excerpt: 'Come recuperare un file o l’intero contenuto dello spazio di storage di un hosting Web OVHcloud'
 slug: web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla
-legacy_guide_number: g1593
 section: 'FTP e SSH'
-order: 3
+order: 06
 ---
 
 > [!primary]

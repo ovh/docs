@@ -3,7 +3,7 @@ title: "Faire évoluer son offre d'hébergement web"
 excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'hébergement OVHcloud"
 slug: how_to_change_web_hosting_offer
 section: Optimiser son site
-order: 2
+order: 02
 ---
 
 **Dernière mise à jour le 19/05/2022**

@@ -3,7 +3,7 @@ title: "¿Qué hacer en caso de error « La conexión no es privada »?"
 excerpt: "Responder en caso de que aparezca un mensaje de error relacionado con la seguridad de su sitio web"
 slug: error-sitio-no-seguridad
 section: Diagnóstico
-order: 3
+order: 03
 ---
 
 > [!primary]

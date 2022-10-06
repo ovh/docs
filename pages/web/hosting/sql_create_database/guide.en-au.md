@@ -3,7 +3,7 @@ title: 'Creating a database in your Web Hosting plan'
 slug: creating-database
 excerpt: 'Find out how to create a database in your OVHcloud Web Hosting plan'
 section: Databases
-order: 1
+order: 01
 ---
 
 **Last updated 5th May 2020**

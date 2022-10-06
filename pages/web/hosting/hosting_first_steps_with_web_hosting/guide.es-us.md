@@ -3,7 +3,7 @@ title: 'Primeros pasos en un alojamiento web'
 slug: primeros_pasos_en_un_alojamiento_web
 excerpt: 'Cómo empezar con un alojamiento web'
 section: 'Primeros pasos'
-order: 1
+order: 02
 ---
 
 **Última actualización: à(/05/2020**

@@ -3,9 +3,10 @@ title: '.ovhconfig-Datei Ihres Webhostings konfigurieren'
 slug: ovhconfig-datei-konfigurieren
 excerpt: 'In dieser Anleitung erfahren Sie, wozu die .ovhconfig-Datei verwendet wird und wie Sie diese bearbeiten.'
 section: 'Webhosting-Konfiguration'
+order: 03
 ---
 
-**Stand 03.01.2019**
+**Stand 03.01.2019** 
 
 ## Einleitung
 

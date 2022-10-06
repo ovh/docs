@@ -1,13 +1,11 @@
 ---
 title: 'Backup in eine Webhosting-Datenbank importieren'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie ein Backup in die Datenbank Ihres OVH Webhostings importieren.'
-id: '1393'
 slug: webhosting_import_einer_mysql-datenbank
-legacy_guide_number: g1393
 section: 'Datenbanken'
-order: 4
+order: 04
 ---
-
+ 
 **Stand 14.09.2018**
 
 ## Einleitung

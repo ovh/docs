@@ -2,9 +2,8 @@
 title: Usuwanie powtarzających się błędów podczas korzystania z programu FTP
 excerpt: Odnajdziesz tutaj najczęstsze nieprawidłowości związane z Twoim oprogramowaniem FTP
 slug: rozdzielenie-problemow-ftp-recents
-legacy_guide_number: 1996
 section: FTP i SSH
-order: 3
+order: 04
 ---
 
 > [!primary]
@@ -13,7 +12,7 @@ order: 3
 
 **Ostatnia aktualizacja z dnia 05/01/2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Korzystanie z oprogramowania FTP podczas logowania do [hostingu Cloud](https://www.ovhcloud.com/pl/web-hosting/) może spowodować różne nieprawidłowości. Niniejszy przewodnik pozwoli Ci rozwiązać najczęstsze z nich.
 

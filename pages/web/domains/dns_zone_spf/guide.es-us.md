@@ -79,7 +79,7 @@ Para encontrar la línea correspondiente al SPF de OVHcloud, puede utilizar un f
 
 > [!primary]
 >
-> Un SPF se compone siempre de la forma siguiente : "v=spf1 `orígenes` `calificador`". Por ejemplo, el SPF de OVHcloud es: "v=spf1 include:mx.ovh.com ~all".
+> Un SPF se compone siempre de la forma siguiente : "v=spf1 `orígenes` `calificador`". Por ejemplo, el SPF de OVHcloud es: "v=spf1 include:mx.ovh.ca ~all".
 >
 
 ![Dominio](images/spf_records_check_OVH_configuration.png){.thumbnail}
@@ -129,7 +129,7 @@ En lo relativo a la pregunta «**¿Hay otros servidores que envíen correo del d
 |ptr|Introduzca aquí los nombres de hosts cuyo registro *inverso* sea funcional (gracias al registro PTR en la zona DNS). para identificarlos como origen de envío legítimo.|
 |ip4|Indique la IP o rango de IP (IPv4) autorizados a enviar correo con sus direcciones.|
 |ip6|Indique la IP o rango de IP (IPv6) autorizados a enviar correo con sus direcciones.|
-|include|Introduzca aquí los dominios con sus propias reglas SPF. Esto permitirá que estas direcciones sean compatibles con su propio dominio. Por ejemplo, OVHcloud utiliza este método en su configuración SPF:  "v=spf1 include:mx.ovh.com ~all", lo que permite a OVHcloud gestionar el SPF de mx.ovh.com y permitir a sus clientes utilizarlo.|
+|include|Introduzca aquí los dominios con sus propias reglas SPF. Esto permitirá que estas direcciones sean compatibles con su propio dominio. Por ejemplo, OVHcloud utiliza este método en su configuración SPF:  "v=spf1 include:mx.ovh.ca ~all", lo que permite a OVHcloud gestionar el SPF de mx.ovh.ca y permitir a sus clientes utilizarlo.|
 
 Por último, en lo relativo a la pregunta «**¿La información que ha indicado describe todos los hosts que envían correo del dominio?**», dispone de tres opciones:
 
@@ -191,7 +191,7 @@ La configuración SPF de OVHcloud general se aplica a las siguientes soluciones:
 La configuración es la siguiente:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.ca ~all"
 ```
 
 ### Configuración SPF OVHcloud para Private Exchange 
@@ -202,10 +202,10 @@ Para la solución Private Exchange, es necesario indicar las direcciones IP del 
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.33.444 ~all"
 ```
 
-Si también utiliza [una solución de correo en alojamiento compartido](#ovhcloudspfvalue), puede añadir el argumento `include:mx.ovh.com` al registro anterior, que proporciona el siguiente valor:
+Si también utiliza [una solución de correo en alojamiento compartido](#ovhcloudspfvalue), puede añadir el argumento `include:mx.ovh.ca` al registro anterior, que proporciona el siguiente valor:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.ca ~all"
 ```
 
 > [!primary]

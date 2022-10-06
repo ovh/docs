@@ -3,9 +3,10 @@ title: Geolokalisierung auf Webhostings
 excerpt: 'Geolokalisierung auf Webhostings'
 slug: geolokalisierung_auf_webhostings
 section: 'Webseitenoptimierung'
+order: 05
 ---
 
-
+ 
 ## 
 Die Geolokalisierung können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einrichten.
 

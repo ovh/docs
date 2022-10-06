@@ -1,9 +1,9 @@
 ---
 title: 'Otimizar o desempenho do seu website'
 excerpt: 'Saiba como analisar a latência do seu website e como a melhorar'
-id: '1396'
 slug: partilhado_guia_de_otimizacao_das_performances_do_seu_site
-legacy_guide_number: g1396
+section: Otimizar o seu site
+order: 06
 ---
 
 **Última atualização: 03/02/2022**

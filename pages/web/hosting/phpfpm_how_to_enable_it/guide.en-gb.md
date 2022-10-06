@@ -2,8 +2,8 @@
 title: Enabling PHP optimisation with a Web Hosting plan
 excerpt: Find out how to enable PHP-FPM on your hosting
 slug: enable_php_optimisation_with_ovh_web_hosting
-legacy_guide_number: g1175
-section: 'PHP'
+section: PHP
+order: 03
 ---
 
 

@@ -3,6 +3,7 @@ title: 'Technische Eigenschaften von Webhostings'
 slug: technische-eigenschaften-web-hosting
 excerpt: 'Erfahren Sie hier mehr zum technischen Leistungsvermögen Ihrer Hosting-Lösung'
 section: 'Webhosting-Konfiguration'
+order: 05
 ---
 
 > [!primary]
@@ -11,7 +12,7 @@ section: 'Webhosting-Konfiguration'
 
 **Letzte Aktualisierung am 28.07.2022**
 
-## Ziel
+## Ziel 
 
 **Diese Anleitung beschreibt technische Details der OVHcloud Webhosting Infrastruktur mit Hinblick auf die am häufigsten gestellten Fragen.**
 

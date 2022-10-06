@@ -3,7 +3,7 @@ title: Jak zabezpieczyć Twoją stronę WWW?
 excerpt: Dowiedz się, jak zwiększyć bezpieczeństwo Twojej strony WWW
 slug: secure-website
 section: Optymalizacja strony WWW 
-order: 1
+order: 01
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 1
 
 **Ostatnia aktualizacja z dnia 29-08-2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Z tego przewodnika dowiesz się, jak zapewnić dostępność usług, bezpieczeństwo danych oraz dostęp do rozwiązań. Dotyczy on wyłącznie stron WWW hostowanych na [rozwiązaniach hostingowych OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
 

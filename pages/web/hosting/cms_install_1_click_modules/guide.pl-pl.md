@@ -3,11 +3,12 @@ title: Automatyczna instalacja strony WWW za pomocą modułu CMS
 slug: hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www
 excerpt: Dowiedz się, jak stworzyć stronę internetową za pomocą modułów OVH
 section: CMS
+order: 01
 ---
 
 **Ostatnia aktualizacja dnia 03-02-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Moduły OVHcloud umożliwiają łatwe i szybkie postawienie strony internetowej (bez konieczności posiadania umiejętności technicznych), przy pomocy narzędzi w Panelu klienta OVH. Automatyczna instalacja jest dostępna dla: WordPress, PrestaShop, Drupal i Joomla!.
 

@@ -155,6 +155,7 @@ URL: https://www.postgresql.org/docs/13/sql-createdatabase.html
 
 [Getting started with Public Cloud Databases](https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/)
 
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql) to find how to connect to your database with several languages.
 
 ## We want your feedback!
 

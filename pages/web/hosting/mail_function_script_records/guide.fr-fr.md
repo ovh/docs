@@ -3,6 +3,7 @@ title: 'Suivre et gérer les e-mails automatisés de son hébergement web'
 slug: suivi-emails-automatises
 excerpt: 'Apprenez à suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVH'
 section: Diagnostic
+order: 09
 ---
 
 **Dernière mise à jour le 12/04/2018**

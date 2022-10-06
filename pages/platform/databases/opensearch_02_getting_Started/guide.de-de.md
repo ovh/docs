@@ -325,4 +325,6 @@ You service is now configured. To go further,
 
 [OpenSearch Official documentation](https://opensearch.org/docs/latest){.external}
 
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/opensearch) to find how to connect to your database with several languages.
+
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.

@@ -3,6 +3,7 @@ title: "Proteggi l'interfaccia di gestione del tuo sito con un file.htaccess"
 slug: condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione
 excerpt: "Come proteggere l'accesso alla gestione del tuo sito con un file .htaccess"
 section: Scrittura e autenticazione
+order: 02
 ---
 
 > [!primary]

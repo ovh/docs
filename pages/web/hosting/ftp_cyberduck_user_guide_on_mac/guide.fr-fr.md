@@ -1,9 +1,9 @@
 ---
 title: Utilisation Cyberduck (MAC)
 slug: utilisation-cyberduck-mac
-legacy_guide_number: 1598
 excerpt: Retrouvez dans ce guide de l’aide concernant l’utilisation de l’application Cyberduck.
 section: FTP et SSH
+order: 05
 ---
 
 Ce guide a été réalisé avec une version gratuite de l'applicatif en version 4.5.2 téléchargée depuis le site officiel.

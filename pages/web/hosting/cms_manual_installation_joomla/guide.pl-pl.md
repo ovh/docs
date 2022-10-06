@@ -1,13 +1,13 @@
 ---
 title: CMS - ręczna instalacja modułu Joomla
 excerpt: Jak ręcznie zainstalować moduł Joomla?
-id: '1978'
 slug: cms_-_reczna_instalacja_modulu_joomla
 section: CMS
+order: 05
 ---
 
 
-## Część 1: przygotowanie instalacji
+## Część 1: przygotowanie instalacji 
 
 ## Niezbędne narzędzia
 Aby móc zainstalować platformę Joomla! na hostingu www, skorzystaj z programu FTP takiego jak FileZilla (program darmowy).

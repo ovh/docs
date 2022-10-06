@@ -1,9 +1,9 @@
 ---
 title: SVN
 slug: hosting_www_korzystanie_z_svn
-legacy_guide_number: 1961
 excerpt: Dowiedz się, jak korzystać z SVN przez SSH na Twoim hostingu
 section: FTP i SSH
+order: 09
 ---
 
 **Ostatnia aktualizacja z dnia 28-10-2020**
@@ -12,7 +12,7 @@ section: FTP i SSH
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-## Wprowadzenie
+## Wprowadzenie 
 
 SVN, który jest skrótem od "subwersji", jest systemem zarządzania wersjami. 
 

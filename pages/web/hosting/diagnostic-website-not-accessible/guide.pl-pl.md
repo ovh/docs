@@ -3,7 +3,7 @@ title: "Co zrobić, jeśli moja strona jest niedostępna?"
 slug: blad-serwer-niedostepny
 excerpt: "Zdiagnozuj przyczyny niedostępności Twojej strony WWW"
 section: Diagnostyka
-Order: 1
+Order: 01
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ Order: 1
 
 **Ostatnia aktualizacja z dnia 02/08/2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce kilka zwrotów błędów. Poniższe przykłady wskazują na nieprawidłową konfigurację Twoich [DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zrozumienie-pojecia-dns) lub domeny zawieszonej (jeśli Twoja strona nie wyświetla żadnego z komunikatów o błędzie opisanych tutaj, sprawdź sekcję [Sprawdź również](#gofurther)):
 

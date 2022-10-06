@@ -2,12 +2,12 @@
 title: 'Manuelle Installation von Drupal'
 excerpt: Wie funktioniert die manuelle Installation von Drupal?
 slug: cms_manuelle_installation_von_drupal
-legacy_guide_number: g1976
-section: 'CMS'
+section: CMS
+order: 04
 ---
 
 
-## Teil 1: Installation vorbereiten
+## Teil 1: Installation vorbereiten 
 Benötigte Tools
 
 Bevor Sie das CMS Drupal auf Ihrem Webhosting installieren, empfehlen wir Ihnen den Download einer FTP-Software, etwa FileZilla (kostenlos).
