@@ -10,23 +10,28 @@ order: 5
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 04/10/2021**
+**Ultimo aggiornamento: 06/10/2022**
+
+> [!primary]
+>
+> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](https://www.ovhcloud.com/it/network/additional-ip/). e non ha alcun impatto sulle funzionalità o sul funzionamento dei tuoi servizi.
+>
 
 ## Obiettivo
 
-Sulle gamme High Grade & SCALE, il funzionamento degli IP Failover in modalità bridged (tramite MAC Virtuali) non è possibile. È quindi necessario configurare gli IP Failover in modalità routing o tramite la vRack.
+Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalità bridged (tramite MAC Virtuali) non è possibile. È quindi necessario configurare gli Additional IP in modalità routing o tramite la vRack.
 
 **Questa guida ti mostra come configurare la rete con Proxmox VE.**
 
 ## Prerequisiti
 
 - Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
-- Disporre di un [IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/)
+- Disporre di un [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 > [!warning]
 >
-> Nello Spazio Cliente OVHcloud non è necessario applicare MAC virtuale sugli IP Failover.
+> Nello Spazio Cliente OVHcloud non è necessario applicare MAC virtuale sugli Additional IP.
 >
 
 ## Procedura
@@ -36,7 +41,7 @@ Sulle gamme High Grade & SCALE, il funzionamento degli IP Failover in modalità 
 > Su queste gamme di server, ci sono 4 schede di rete. Le prime due per il pubblico, le ultime due per il privato. Per usufruire di tutta la banda passante, è necessario creare degli aggregati.
 >
 
-### IP Failover in modalità routing sulle interfacce di rete pubbliche
+### Additional IP in modalità routing sulle interfacce di rete pubbliche
 
 #### Schema della configurazione di destinazione
 
@@ -92,8 +97,8 @@ iface bond0 inet dhcp
 #Private
 
 auto vmbr0
-# Configure the bridge with a private address and add route(s) to send the failover IPs to it
-# A.B.C.D/X => Subnet of failover IPs assigned to the server, this can be a host with /32
+# Configure the bridge with a private address and add route(s) to send the Additional IPs to it
+# A.B.C.D/X => Subnet of Additional IPs assigned to the server, this can be a host with /32
 iface vmbr0 inet static
 	address 192.168.0.1
         netmask 255.255.255.255
@@ -118,7 +123,7 @@ iface ens18 inet static
     gateway 192.168.0.1
 ```
 
-### IP FailOver via vRack
+### Additional IP via vRack
 
 #### Prerequisiti
 

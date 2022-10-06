@@ -19,15 +19,15 @@ Fast alle Content-Management-Systeme (CMS) wie WordPress oder Joomla! verwenden 
 - Sie haben ein [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
 - Ihr [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot beinhaltet eine Datenbank.
 - Sie haben Zugriff auf das Backup, das Sie in Ihre Datenbanken importieren möchten.
-- Je nach der verwendeten Import-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhosting Angebots über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, oder die erforderlichen Login-Daten, um sich mit der Datenbank zu verbinden.
+- Je nach der verwendeten Import-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhosting Angebots über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, oder die erforderlichen Login-Daten, um sich mit der Datenbank zu verbinden.
 
 ## Beschreibung
 
 Bevor Sie beginnen, wählen Sie die Methode aus, die Sie für den Import des Backups in die betreffende Datenbank anwenden möchten. Entsprechend Ihrer technischen Kenntnisse zu diesem Thema stehen Ihnen mehrere Möglichkeiten zur Verfügung.
 
-- **Eine ältere Version Ihrer Datenbank mit wenigen Klicks wiederherstellen**: Dank der regelmäßigen Sicherungen des Backup-Tools von OVH können Sie den Inhalt Ihrer Datenbanken wiederherstellen. Hierzu sind keine besonderen technischen Kenntnisse erforderlich und Sie können das Backup über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ausführen.
+- **Eine ältere Version Ihrer Datenbank mit wenigen Klicks wiederherstellen**: Dank der regelmäßigen Sicherungen des Backup-Tools von OVH können Sie den Inhalt Ihrer Datenbanken wiederherstellen. Hierzu sind keine besonderen technischen Kenntnisse erforderlich und Sie können das Backup über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ausführen.
 
-- **Ihre eigene Backup-Datei mit wenigen Klicks importieren**: Sie können Ihre eigene, von Ihnen zuvor erstellte Backup-Datei in eine Ihrer Datenbanken importieren. Loggen Sie sich hierfür in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein.
+- **Ihre eigene Backup-Datei mit wenigen Klicks importieren**: Sie können Ihre eigene, von Ihnen zuvor erstellte Backup-Datei in eine Ihrer Datenbanken importieren. Loggen Sie sich hierfür in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein.
 
 - **Backup über das phpMyAdmin-Webinterface importieren**: Loggen Sie sich im phpMyAdmin-Interface ein, um dort den Import durchzuführen. Für diese Methode benötigen Sie Grundkenntnisse im Umgang mit phpMyAdmin. Außerdem darf Ihre Backup-Datei eine bestimmte Größe nicht überschreiten.
 
@@ -48,7 +48,7 @@ Folgen Sie dieser Anleitung nun entsprechend der von Ihnen gewählten Import-Met
 
 ### Backup über das Kundencenter wiederherstellen
 
-Loggen Sie sich hierfür im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich hierfür im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie nun auf die drei Punkte rechts neben der Datenbank, die Sie wieder auf eine ältere Version zurücksetzen möchten, und wählen Sie dann `Eine Sicherung wiederherstellen`{.action}. Bitte beachten Sie, dass der aktuelle Inhalt der Datenbank durch den Inhalt des ausgewählten Backups ersetzt wird.
 
@@ -62,7 +62,7 @@ Klicken Sie auf die drei Punkte rechts neben dem Backup, das Sie wiederherstelle
 
 ### Eigene Backup-Datei über das Kundencenter importieren
 
-Loggen Sie sich hierfür im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich hierfür im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie nun auf die drei Punkte rechts neben der Datenbank, in die Sie die Daten importieren möchten, und wählen Sie dann `Datei importieren`{.action}.
 
@@ -95,7 +95,7 @@ Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf `Bestätigen`{.action}
 
 ### Backup über das phpMyAdmin-Webinterface importieren
 
-Loggen Sie sich auf phpMyAdmin ein, um den Import durchzuführen. Loggen Sie sich hierfür zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich auf phpMyAdmin ein, um den Import durchzuführen. Loggen Sie sich hierfür zunächst im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie auf die drei Punkte rechts neben der betreffenden Datenbank und gehen Sie dann auf `Zugang zu phpMyAdmin`{.action}.
 

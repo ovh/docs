@@ -48,7 +48,7 @@ Geben Sie nun die Einstellungen des Eingangsservers ein. Manche Felder werden ge
 |Domain/Nutzername|Geben Sie die vollständige E-Mail-Adresse ein.|  
 |Passwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
 |Clientzertifikat|Wählen Sie nichts aus.|
-|Server|Tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Sie finden die Angaben zum Server im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, indem Sie den entsprechenden Exchange Dienst auswählen, auf den Tab `Allgemeine Informationen`{.action} tippen und dort in den Bereich `Verbindung`{.action} gehen.|
+|Server|Tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Sie finden die Angaben zum Server im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, indem Sie den entsprechenden Exchange Dienst auswählen, auf den Tab `Allgemeine Informationen`{.action} tippen und dort in den Bereich `Verbindung`{.action} gehen.|
 |Port|Tragen Sie den Port „443“ ein.|  
 |Sicherheitstyp|Wählen Sie „SSL/TLS“ aus.|
 

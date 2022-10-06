@@ -29,7 +29,7 @@ On this home page, you will find the following information:
 |Status|Summary of your Load Balancer with IP, front-ends, operational farms and added servers|
 |Usage|A summary of your LoadBalancer usage|
 |Graphs|Here you will find the graphs in relation to your service and based on simultaneous connections or the number of requests per minute|
-|Details|Your IPv4 and the fail-over IPs attached as well as the number of outbound IPv4 (details available by clicking on the ellipsis)|
+|Details|Your IPv4 and the Additional IPs attached as well as the number of outbound IPv4 (details available by clicking on the ellipsis)|
 |Configuration|This is where you can customize the name of your service (which will appear at the top in the left column) The cipher(s), which are customizable, as well as the data centre where your Load Balancer is located|
 |Subscription|You will find below all the administrative details pertaining to your offer|
 
@@ -62,7 +62,7 @@ You also have access to advanced settings:
 
 |Element|Function|
 |---|---|
-|Dedicated failover IP|List of failover IPs for remote servers|
+|Dedicated Additional IP|List of Additional IPs for remote servers|
 |Restricting access to some IPs|List that allows restricting remote access to the Load Balancer, only in IPv4|
 |HTTP redirection|Adding an HTTP redirect URL|
 |HTTP header|Add an HTTP header here|

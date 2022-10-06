@@ -35,7 +35,7 @@ If you are using an OVHcloud-provided Linux OS template to install your server, 
 
 For example, if we have assigned to your server the IPv6 range: `2607:5300:xxxx:xxxx::/64` you may use as main IPv6 of your server the IPv6: `2607:5300:xxxx:xxxx::1/64`.
 
-If you want to have more than one IPv6 configured on your server (or want to use it on a VM) you will need to have a failover IP configured with a vMAC. Otherwise, the IPv6 cannot be routed by our routers/switches.
+If you want to have more than one IPv6 configured on your server (or want to use it on a VM) you will need to have an Additional IP configured with a vMAC. Otherwise, the IPv6 cannot be routed by our routers/switches.
 
 > [!primary]
 >
@@ -141,7 +141,7 @@ Your server's network configuration file is located in `/etc/sysconfig/network-s
 
 #### Step 3: Amend the network configuration file
 
-Amend the file so that it looks like the example below. In this example, the network interface is called eth0. The interface on your server may differ. Also, we have omitted the IPv4 Failover configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
+Amend the file so that it looks like the example below. In this example, the network interface is called eth0. The interface on your server may differ. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
 
 ```console
 IPV6INIT=yes

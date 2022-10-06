@@ -36,7 +36,7 @@ Será redirigido a la siguiente ventana:
 
 Desde ahí podrá introducir su nombre, apellido, número de teléfono y dirección de correo electrónico.
 
-Asimismo, podrá agregar permisos de edición a la dirección **IP**, **IP Failover** y el permiso **Token validator** necesario para confirmar acciones sensibles en aquellas infraestructuras con la opción de **Seguridad avanzada** activada.
+Asimismo, podrá agregar permisos de edición a la dirección **IP**, **Additional IP** y el permiso **Token validator** necesario para confirmar acciones sensibles en aquellas infraestructuras con la opción de **Seguridad avanzada** activada.
 
 Haga clic en `Aceptar`{.action} para confirmar los cambios.
 

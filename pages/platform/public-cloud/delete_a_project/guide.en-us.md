@@ -39,7 +39,7 @@ Click on the button `Delete project`{.action}.
 
 ![delete project](images/deleteproject1.png){.thumbnail}
 
-A confirmation message will appear, informing you about the removal of the project's resources, with the exception of any failover IP addresses attached. Click on `Delete project`{.action} to proceed. 
+A confirmation message will appear, informing you about the removal of the project's resources, with the exception of any Additional IP addresses attached. Click on `Delete project`{.action} to proceed. 
 
 ![delete project](images/deleteproject2.png){.thumbnail}
 

@@ -1,6 +1,6 @@
 ---
-title: Eine Failover-IP umziehen
-excerpt: Erfahren Sie hier, wie Sie eine Failover-IP über Ihr Kundencenter oder die OVHcloud API umziehen
+title: Eine Additional IP umziehen
+excerpt: Erfahren Sie hier, wie Sie eine Additional IP über Ihr Kundencenter oder die OVHcloud API umziehen
 slug: ip-fo-move
 section: Netzwerk & IP
 order: 7
@@ -10,25 +10,30 @@ order: 7
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 26.07.2022**
+**Letzte Aktualisierung am 06.10.2022**
+
+> [!primary]
+>
+> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Dies hat keine weiteren Auswirkungen auf dessen Eigenschaften oder die Funktionalität Ihrer Dienstleistungen.
+>
 
 ## Ziel
 
-Failover-IP-Adressen können zwischen den von Ihnen verwendeten Diensten verschoben werden. Dies bietet einen Vorteil, da Sie Ihre IP-Reputation und SEO beibehalten und die Kontinuität des Dienstes Ihrer Anwendungen und Systeme verbessern können.
+Additional IP-Adressen können zwischen den von Ihnen verwendeten Diensten verschoben werden. Dies bietet einen Vorteil, da Sie Ihre IP-Reputation und SEO beibehalten und die Kontinuität des Dienstes Ihrer Anwendungen und Systeme verbessern können.
 
 Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in weniger als einer Minute austauschen, praktisch ohne Unterbrechung für Ihre Nutzer. Dies ist nützlich für Service-Migrationen (z.B. Verschieben von Projekten von der Entwicklung in die Produktion) oder beim Wechsel zu einem Sicherungsserver während eines technischen Problems.
 
 > [!primary]
-> Eine Failover-IP kann nicht von einer Zone zur anderen umgezogen werden. So kann beispielsweise eine IP im Rechenzentrum SBG nach GRA oder RBX umgezogen werden, aber nicht nach BHS.
+> Eine Additional IP kann nicht von einer Zone zur anderen umgezogen werden. So kann beispielsweise eine IP im Rechenzentrum SBG nach GRA oder RBX umgezogen werden, aber nicht nach BHS.
 >
 > Migration funktioniert nur für ganze Blöcke. Es ist nicht möglich, einzelne IPs innerhalb eines Blocks zu migrieren.
 
-**Diese Anleitung erklärt, wie Sie eine Failover-IP über Ihr OVHcloud Kundencenter oder die OVHcloud API umziehen.**
+**Diese Anleitung erklärt, wie Sie eine Additional IP über Ihr OVHcloud Kundencenter oder die OVHcloud API umziehen.**
 
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
-- Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/).
+- Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
@@ -38,10 +43,10 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 >
 
 > [!warning]
-> Wenn die Failover-IP oder eine der IP-Adressen des Blocks eine virtuelle MAC-Adresse hat, muss der Zielserver die vMAC-Funktionalität unterstützen.
+> Wenn die Additional IP oder eine der IP-Adressen des Blocks eine virtuelle MAC-Adresse hat, muss der Zielserver die vMAC-Funktionalität unterstützen.
 > Weitere Informationen finden Sie in [dieser Anleitung](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/).
 >
-> Andernfalls müssen die vMACs vor dem Transfer von den Failover-IPs entfernt werden.
+> Andernfalls müssen die vMACs vor dem Transfer von den Additional IPs entfernt werden.
 
 ## In der praktischen Anwendung
 
@@ -57,9 +62,9 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}.
 
-Das Drop-down-Menü "Dienst" erlaubt es Ihnen, nach Failover-IP-Adressen zu filtern.
+Das Drop-down-Menü "Dienst" erlaubt es Ihnen, nach Additional IP-Adressen zu filtern.
 
-Klicken Sie auf `...`{.action} rechts neben der umzuziehenden IP-Adresse und dann auf `Failover-IP umziehen`{.action}.
+Klicken Sie auf `...`{.action} rechts neben der umzuziehenden IP-Adresse und dann auf `Additional IP umziehen`{.action}.
 
 ![Kundencenter](images/manager02.png){.thumbnail}
 
@@ -82,7 +87,7 @@ Es ist am besten, zunächst zu prüfen, ob die IP-Adresse umgezogen werden kann.
 >
 
 - `serviceName`: die Referenz des Zielservers
-- `ip`: die umzuziehende Failover-IP
+- `ip`: die umzuziehende Additional IP
 
 Um die IP-Adresse umzuziehen, verwenden Sie folgenden Call:
 
@@ -92,7 +97,7 @@ Um die IP-Adresse umzuziehen, verwenden Sie folgenden Call:
 >
 
 - `serviceName`: die Referenz des Zielservers
-- `ip`: die umzuziehende Failover-IP
+- `ip`: die umzuziehende Additional IP
 
 ## Weiterführende Informationen
 

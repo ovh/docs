@@ -164,7 +164,7 @@ Il ne reste qu'à appliquer la configuration dans la zone concernée et le tour 
 ### Router en fonction d'un domaine (VHost)
 C'est la fonctionnalité qui a rendu possible l'essor du web quand il en était à ses balbutiements, avec la possibilité d'exposer plusieurs sites derrière une même adresse IP grâce au champ "Host" des En-Têtes HTTP.
 
-Par exemple, si votre infrastructure est composée d'un VPS par site Internet et d'un service OVH Load Balancer pour assurer la terminaison SSL/TLS et la redirection vers une page de maintenance avec un serveur de "backup" dans les Farms, il était auparavant nécessaire de disposer d'une IP Failover par site, routée vers votre service OVH Load Balancer et un Frontend par IP.
+Par exemple, si votre infrastructure est composée d'un VPS par site Internet et d'un service OVH Load Balancer pour assurer la terminaison SSL/TLS et la redirection vers une page de maintenance avec un serveur de "backup" dans les Farms, il était auparavant nécessaire de disposer d'une Additional IP par site, routée vers votre service OVH Load Balancer et un Frontend par IP.
 
 Avec les routes, il devient possible de mutualiser le même Frontend et choisir la Farm de serveurs dynamiquement en fonction du champ "Host".
 
@@ -200,8 +200,8 @@ Et sur cette route, on vient attacher une règle :
 Il ne reste qu'à appliquer la configuration.
 
 
-### Réserver une IP Failover à un site en particulier
-Si l'on reste sur le scénario de l'hébergement à base de VPS, on peut souhaiter dédier une adresse IP à un client donné. Rendre l'IP disponible se fait facilement en la routant vers votre service OVH Load Balancer puis en configurant un Frontend dédié attaché à cette adresse IP Failover et ayant comme defaultFarmId le VPS cible de ce client.
+### Réserver une Additional IP à un site en particulier
+Si l'on reste sur le scénario de l'hébergement à base de VPS, on peut souhaiter dédier une adresse IP à un client donné. Rendre l'IP disponible se fait facilement en la routant vers votre service OVH Load Balancer puis en configurant un Frontend dédié attaché à cette adresse Additional IP et ayant comme defaultFarmId le VPS cible de ce client.
 
 Néanmoins, que se passe-t-il si un autre client détecte cela et configure son domaine pour pointer vers l'adresse IP du client premium ? Par défaut, cela fonctionnera et son site sera routé vers l'autre VPS. S'il y a un certificat SSL/TLS, cela fonctionnera quand même car l'ensemble des certificats sont automatiquement disponibles pour l'ensemble des Frontends.
 

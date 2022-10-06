@@ -38,7 +38,7 @@ Klicken Sie auf den Button `Projekt löschen`{.action}.
 
 ![Projekt löschen](images/deleteproject1.png){.thumbnail}
 
-Eine Bestätigungsmeldung erscheint, die Sie über das Entfernen aller Projektressourcen informiert, mit Ausnahme der verknüpften Failover-IP-Adressen. Klicken Sie auf `Projekt löschen`{.action}, um fortzufahren.
+Eine Bestätigungsmeldung erscheint, die Sie über das Entfernen aller Projektressourcen informiert, mit Ausnahme der verknüpften Additional IP-Adressen. Klicken Sie auf `Projekt löschen`{.action}, um fortzufahren.
 
 ![Projekt löschen](images/deleteproject2.png){.thumbnail}
 

@@ -24,7 +24,7 @@ Bei OVH können Sie [Dedicated Server](https://www.ovh.de/dedicated_server/){.ex
 
 * Sie verfügen über einen [Hybridserver von OVH](https://www.ovh.de/dedicated_server/){.external}.
 * Sie haben Zugriff auf die [OVH API](https://api.ovh.com/console/){.external}.
-* Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
+* Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 > [!warning]
 >
@@ -89,7 +89,7 @@ Wenn Sie alle Angaben gemacht haben, klicken Sie auf `Execute`{.action}:
 
 ![Installation](images/install-01.png){.thumbnail}
 
-Ihr Betriebssystem wird nun installiert. Den Fortschritt der Installation können Sie überprüfen, indem Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} die Seite des betreffenden Servers aktualisieren. Alternativ können Sie folgenden API-Aufruf verwenden, im Feld **serviceName** den Namen Ihres Servers angeben und anschließend auf `Execute`{.action} klicken:
+Ihr Betriebssystem wird nun installiert. Den Fortschritt der Installation können Sie überprüfen, indem Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} die Seite des betreffenden Servers aktualisieren. Alternativ können Sie folgenden API-Aufruf verwenden, im Feld **serviceName** den Namen Ihres Servers angeben und anschließend auf `Execute`{.action} klicken:
 
 > [!api]
 >

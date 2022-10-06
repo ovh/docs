@@ -13,7 +13,7 @@ Benötigte Tools
 Bevor Sie das CMS Drupal auf Ihrem Webhosting installieren, empfehlen wir Ihnen den Download einer FTP-Software, etwa FileZilla (kostenlos).
 
 ## Für die Installation benötigte Daten
-Sie sollten Ihre Kundenkennung (nic-handle) und Ihr Passwort bereithalten, um sich nötigenfalls in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen zu können.
+Sie sollten Ihre Kundenkennung (nic-handle) und Ihr Passwort bereithalten, um sich nötigenfalls in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen zu können.
 
 
 - Halten Sie auch Ihr FTP-Login und das Passwort bereit, mit denen Sie sich in Ihr Webhosting einloggen können.

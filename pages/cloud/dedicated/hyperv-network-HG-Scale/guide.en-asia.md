@@ -10,7 +10,7 @@ order: 5
 
 ## Objective
 
-On the High Grade & SCALE ranges, it is not possible to operate failover IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure failover IPs in routed mode or via the vRack.
+On the High Grade & SCALE ranges, it is not possible to operate Additional IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
 
 **This guide explains how to configure the network in  Windows Server with Hyper-V.**
 
@@ -18,11 +18,11 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 
 - An [OVHcloud dedicated server](https://www.ovhcloud.com/asia/bare-metal/)
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- A [failover IP](https://www.ovhcloud.com/asia/bare-metal/ip/)
+- An [Additional IP](https://www.ovhcloud.com/asia/bare-metal/ip/)
 
 > [!warning]
 >
-> No virtual MACs should be applied to failover IPs in the OVHcloud Control Panel.
+> No virtual MACs should be applied to Additional IPs in the OVHcloud Control Panel.
 >
 
 ## Instructions
@@ -32,7 +32,7 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 > On these server ranges, there are 4 network cards. The first two for the public, the last two for the private network. To get all the bandwidth, aggregates must be created.
 >
 
-### Failover IP in routed mode on public network interfaces
+### Additional IP in routed mode on public network interfaces
 
 #### Explanations
 
@@ -167,7 +167,7 @@ For DNS servers, you can choose your own. For our example we are using 213.186.3
 
 Next click on the `Advanced...`{.action} button and in the new Window click `Add...`{.action} under IP addresses.
 
-Add your IP address and subnet mask for your Failover IP and click `Add`{.action}.
+Add your IP address and subnet mask for your Additional IP and click `Add`{.action}.
 
 ![Static IP](images/static_ip_6.png){.thumbnail}
 
@@ -227,7 +227,7 @@ network:
                                   on-link: true
 ```
 
-### Failover IP via vRack
+### Additional IP via vRack
 
 #### Requirements
 

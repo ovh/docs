@@ -14,19 +14,19 @@ order: 5
 
 ## Objetivo
 
-Nas gamas High Grade & SCALE, o funcionamento dos IP fail-over em modo *bridged* (através de MAC virtuais) não é possível. Por isso, é necessário configurar os IP Failover em modo roteado ou através do vRack.
+Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo *bridged* (através de MAC virtuais) não é possível. Por isso, é necessário configurar os Additional IP em modo roteado ou através do vRack.
 
 **Saiba como configurar a rede em Windows Server com Hyper-V.**
 
 ## Requisitos
 
 * Dispor de um [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/)
-* Dispor de um endereço [IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/)
+* Dispor de um endereço [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)
 * Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 > [!warning]
 >
-> Nenhum MAC virtual deve ser aplicado aos IP Failover na Área de Cliente OVHcloud.
+> Nenhum MAC virtual deve ser aplicado aos Additional IP na Área de Cliente OVHcloud.
 >
 
 ## Instruções
@@ -36,7 +36,7 @@ Nas gamas High Grade & SCALE, o funcionamento dos IP fail-over em modo *bridged*
 > Nessas gamas de servidores, há 4 placas de rede. As duas primeiras para o público, as duas últimas para o privado. Para beneficiar do conjunto da largura de banda, devem ser criados agregados.
 >
 
-### IP Failover em modo roteado nas interfaces de rede pública
+### Additional IP em modo roteado nas interfaces de rede pública
 
 #### Explicações
 
@@ -171,7 +171,7 @@ Para os servidores DNS, pode escolher os seus. No nosso exemplo, utilizamos 213.
 
 A seguir, clique no botão `Advanced...` e, na nova janela, em `Add...`{.action} e em endereços IP.
 
-Adicione o endereço IP e a máscara de sub-rede correspondente ao seu IP Failover e clique em `Add`{.action}
+Adicione o endereço IP e a máscara de sub-rede correspondente ao seu Additional IP e clique em `Add`{.action}
 
 ![Static IP](images/static_ip_6.png){.thumbnail}
 
@@ -231,7 +231,7 @@ network:
 ```
 
 
-### IP Failover através do vRack
+### Additional IP através do vRack
 
 #### Requisitos
 

@@ -44,7 +44,7 @@ Clicca sul pulsante `Elimina il progetto`{.action}.
 
 ![elimina il progetto](images/deleteproject1.png){.thumbnail}
 
-Compare un messaggio di conferma che ti informa dell'eliminazione delle risorse del progetto, ad eccezione degli indirizzi IP Failover associati. 
+Compare un messaggio di conferma che ti informa dell'eliminazione delle risorse del progetto, ad eccezione degli indirizzi Additional IP associati. 
 
 Clicca su `Elimina il progetto`{.action} per continuare. 
 

@@ -14,19 +14,19 @@ order: 5
 
 ## Wprowadzenie
 
-W ofercie High Grade & SCALE nie jest możliwe działanie adresów IP Failover w trybie *bridged* (za pomocą wirtualnych adresów MAC). Konieczne jest zatem skonfigurowanie IP Failover w trybie routera lub vRack.
+W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP w trybie *bridged* (za pomocą wirtualnych adresów MAC). Konieczne jest zatem skonfigurowanie Additional IP w trybie routera lub vRack.
 
 **Dowiedz się, jak skonfigurować sieć w systemie Windows Server przy użyciu Hyper-V.**
 
 ## Wymagania początkowe
 
 * Posiadanie [serwera dedykowanego OVHcloud](https://www.ovhcloud.com/pl/bare-metal/)
-* Posiadanie adresu [IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/)
+* Posiadanie adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
 * Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 > [!warning]
 >
-> W Panelu klienta OVHcloud nie ma konieczności stosowania wirtualnego adresu MAC dla IP Failover.
+> W Panelu klienta OVHcloud nie ma konieczności stosowania wirtualnego adresu MAC dla Additional IP.
 >
 
 ## W praktyce
@@ -36,7 +36,7 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów IP Failover w
 > W tej gamie serwerów znajdują się 4 karty sieciowe. Pierwsze dwa dla publiczności, dwa dla prywatnego. Aby korzystać z całej przepustowości, należy utworzyć agregaty.
 >
 
-### IP Failover w trybie routera w publicznych interfejsach sieciowych
+### Additional IP w trybie routera w publicznych interfejsach sieciowych
 
 #### Wyjaśnienia
 
@@ -171,7 +171,7 @@ Dla serwerów DNS możesz wybrać własne. W naszym przykładzie używamy 213.18
 
 Następnie kliknij przycisk `Advanced...` i w nowym oknie kliknij `Add...`{.action} pod adresami IP.
 
-Dodaj adres IP oraz maskę podsieci przypisaną do Twojego IP Failover i kliknij `Add`{.action}
+Dodaj adres IP oraz maskę podsieci przypisaną do Twojego Additional IP i kliknij `Add`{.action}
 
 ![Status IP](images/static_ip_6.png){.thumbnail}
 
@@ -230,7 +230,7 @@ network:
                                   on-link: true
 ```
 
-### IP Failover w sieci vRack
+### Additional IP w sieci vRack
 
 #### Wymagania początkowe
 

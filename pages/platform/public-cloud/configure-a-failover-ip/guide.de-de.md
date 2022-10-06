@@ -1,7 +1,7 @@
 ---
-title: 'Eine Failover-IP konfigurieren'
+title: 'Eine Additional IP konfigurieren'
 slug: failover-ip-konfigurieren-pci
-excerpt: 'Erfahren Sie hier, wie Sie Failover-IPs in Ihre Instanzen einbinden'
+excerpt: 'Erfahren Sie hier, wie Sie Additional IPs in Ihre Instanzen einbinden'
 section: Netzwerk und IP
 order: 2
 ---
@@ -10,13 +10,19 @@ order: 2
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 18.07.2022**
+**Letzte Aktualisierung am 06.10.2022**
+
+> [!primary]
+>
+> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Dies hat keine weiteren Auswirkungen auf dessen Eigenschaften oder die Funktionalität Ihrer Dienstleistungen.
+>
+
 
 ## Ziel
 
-Es kann nowendig werden, Failover-IPs auf Ihren Instanzen konfigurieren, zum Beispiel, wenn Sie eine große Anzahl an Websites oder internationale Projekte hosten. Mit den Failover-IPs von OVHcloud können Sie mehrere IP-Adressen einem einzigen Netzwerkinterface zuweisen.
+Es kann nowendig werden, Additional IPs auf Ihren Instanzen konfigurieren, zum Beispiel, wenn Sie eine große Anzahl an Websites oder internationale Projekte hosten. Mit den Additional IPs von OVHcloud können Sie mehrere IP-Adressen einem einzigen Netzwerkinterface zuweisen.
 
-**In dieser Anleitung erfahren Sie, wie Sie Failover-IPs zu Ihrer Netzwerkkonfiguration hinzufügen.**
+**In dieser Anleitung erfahren Sie, wie Sie Additional IPs zu Ihrer Netzwerkkonfiguration hinzufügen.**
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
@@ -27,7 +33,7 @@ Es kann nowendig werden, Failover-IPs auf Ihren Instanzen konfigurieren, zum Bei
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Account.
-- Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Failover-IP-Block.
+- Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Additional IP-Block.
 - Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH oder GUI. 
 - Sie haben Grundkenntnisse in Administration und Netzwerkkonfiguration.
 
@@ -44,9 +50,9 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 
 |Bezeichnung|Beschreibung|Beispiele|
 |---|---|---|
-|IP_FAILOVER|Ihrem Dienst zugewiesene Failover-IP|169.254.10.254|
+|ADDITIONAL_IP|Ihrem Dienst zugewiesene Additional IP|169.254.10.254|
 |NETWORK_INTERFACE|Name des Netzwerkinterfaces|*eth*, *ens3*|
-|ID|ID der Failover-IP, beginnend mit *0* (abhängig von der Anzahl der zu konfigurierenden zusätzlichen IP-Adressen)|*0*, *1*|
+|ID|ID der Additional IP, beginnend mit *0* (abhängig von der Anzahl der zu konfigurierenden zusätzlichen IP-Adressen)|*0*, *1*|
 
 ### Debian 11
 
@@ -85,7 +91,7 @@ Fügen Sie folgende Zeilen hinzu:
 ```bash
 auto NETWORK_INTERFACE:ID
 iface NETWORK_INTERFACE:ID inet static
-address IP_FAILOVER
+address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
@@ -99,7 +105,7 @@ sudo systemctl restart networking
 
 ### Ubuntu 22.04
 
-Die Konfigurationsdatei für Ihre Failover-IPs befindet sich in `/etc/netplan/`. In diesem Beispiel heißt sie "50-cloud-init.yaml". Bevor Sie Änderungen vornehmen, überprüfen Sie am besten den tatsächlichen Dateinamen in diesem Ordner. Jede Failover-IP benötigt in der Datei eine eigene Zeile.
+Die Konfigurationsdatei für Ihre Additional IPs befindet sich in `/etc/netplan/`. In diesem Beispiel heißt sie "50-cloud-init.yaml". Bevor Sie Änderungen vornehmen, überprüfen Sie am besten den tatsächlichen Dateinamen in diesem Ordner. Jede Additional IP benötigt in der Datei eine eigene Zeile.
 
 #### Schritt 1: Automatische Netzwerkkonfiguration deaktivieren
 
@@ -131,7 +137,7 @@ ip a
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Ändern Sie nicht die vorhandenen Zeilen in der Datei; fügen Sie Ihre Failover-IP wie folgt hinzu:
+Ändern Sie nicht die vorhandenen Zeilen in der Datei; fügen Sie Ihre Additional IP wie folgt hinzu:
 
 ```yaml
 network:
@@ -143,7 +149,7 @@ network:
                 macaddress: fa:xx:xx:xx:xx:63
             set-name: NETWORK_INTERFACE
             addresses:
-            - IP_FAILOVER/32
+            - ADDITIONAL_IP/32
 ```
 
 > [!warning]
@@ -167,7 +173,7 @@ Ist die Änderung korrekt, verwenden Sie folgenden Befehl, um sie anzuwenden:
 sudo netplan apply
 ```
 
-Wiederholen Sie diesen Vorgang für jede Failover-IP.
+Wiederholen Sie diesen Vorgang für jede Additional IP.
 
 ### Windows Server (2016)
 
@@ -197,15 +203,15 @@ Die IP-Eigenschaften müssen nun zu einer statischen Konfiguration geändert wer
 
 Wählen Sie in den IPv4-Eigenschaften `Folgende IP-Adresse verwenden`{.action}. Geben Sie die IP-Adresse ein, die Sie im ersten Schritt ausgelesen haben, und klicken Sie dann auf `Erweitert`{.action}.
 
-#### Schritt 3: Die Failover-IP in "Erweiterte TCP/IP Einstellungen" hinzufügen
+#### Schritt 3: Die Additional IP in "Erweiterte TCP/IP Einstellungen" hinzufügen
 
-Klicken Sie im neuen Fenster auf `Hinzufügen...`{.action} unter "IP-Adressen". Geben Sie Ihre Failover-IP und die Subnetzmaske (255.255.255.255) ein.
+Klicken Sie im neuen Fenster auf `Hinzufügen...`{.action} unter "IP-Adressen". Geben Sie Ihre Additional IP und die Subnetzmaske (255.255.255.255) ein.
 
 ![Konfiguration](images/image4-4.png){.thumbnail}
 
 Bestätigen Sie, indem Sie auf `Hinzufügen`{.action} klicken.
 
-![Konfiguration Failover-IP](images/image5-5.png){.thumbnail}
+![Konfiguration Additional IP](images/image5-5.png){.thumbnail}
 
 #### Schritt 4: Netzwerk-Interface neu starten
 
@@ -219,7 +225,7 @@ Um es neu zu starten klicken Sie mit der rechten Maustaste darauf und wählen Si
 
 #### Schritt 5: Überprüfung der neuen Netzwerkkonfiguration
 
-Öffnen Sie die Eingabeaufforderung (cmd) und geben Sie `ipconfig` ein. Die Konfiguration sollte nun die neue Failover-IP enthalten.
+Öffnen Sie die Eingabeaufforderung (cmd) und geben Sie `ipconfig` ein. Die Konfiguration sollte nun die neue Additional IP enthalten.
 
 ![Aktuelle Netzwerkkonfiguration überprüfen](images/image8-8.png){.thumbnail}
 
@@ -244,9 +250,9 @@ Fügen Sie folgende Zeilen hinzu:
 ```bash
 DEVICE=NETWORK_INTERFACE:ID
 BOOTPROTO=static
-IPADDR=IP_FAILOVER
+IPADDR=ADDITIONAL_IP
 NETMASK=255.255.255.255
-BROADCAST=IP_FAILOVER
+BROADCAST=ADDITIONAL_IP
 ONBOOT=yes
 ```
 
@@ -274,32 +280,32 @@ Klicken Sie in diesem Abschnitt auf den Button `Add IP Address`{.action}.
 
 ![IP-Informationen hinzufügen](images/pleskip2-2.png){.thumbnail}
 
-Geben Sie Ihre Failover-IP in der Form `xxx.xxx.xxx.xxx/32` in das Feld "IP address and subnet mask" ein und klicken Sie dann auf `OK`{.action}.
+Geben Sie Ihre Additional IP in der Form `xxx.xxx.xxx.xxx/32` in das Feld "IP address and subnet mask" ein und klicken Sie dann auf `OK`{.action}.
 
 ![IP-Informationen hinzufügen](images/pleskip3-3.png){.thumbnail}
 
 #### Schritt 3: Aktuelle IP-Konfiguration überprüfen
 
-Überprüfen Sie im Bereich "IP Addresses" ob die Failover-IP korrekt hinzugefügt wurde.
+Überprüfen Sie im Bereich "IP Addresses" ob die Additional IP korrekt hinzugefügt wurde.
 
 ![aktuelle IP-Konfiguration](images/pleskip4-4.png){.thumbnail}
 
 ### Diagnose
 
-Starten Sie zunächst Ihre Instanz neu, über das Betriebssystem oder im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Wenn Sie dann immer noch keine Verbindung zwischen dem öffentlichen Netzwerk und Ihrer Failover-IP-Adresse herstellen können und ein Netzwerkproblem vermuten, ist es notwendig, die Instanz im [Rescue-Modus neu zu starten](../umstellung_einer_instanz_auf_den_rescue-modus/). Anschließend können Sie die Failover-IP direkt auf der Instanz konfigurieren.
+Starten Sie zunächst Ihre Instanz neu, über das Betriebssystem oder im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Wenn Sie dann immer noch keine Verbindung zwischen dem öffentlichen Netzwerk und Ihrer Additional IP-Adresse herstellen können und ein Netzwerkproblem vermuten, ist es notwendig, die Instanz im [Rescue-Modus neu zu starten](../umstellung_einer_instanz_auf_den_rescue-modus/). Anschließend können Sie die Additional IP direkt auf der Instanz konfigurieren.
 
 Wenn Sie über SSH im Rescue-Modus eingeloggt sind, geben Sie folgenden Befehl ein:
 
 ```bash
-ifconfig ens3:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER up
+ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Um die Verbindung zu testen senden Sie einfach von außerhalb einen Ping an Ihre Failover-IP. Wenn sie im Rescue-Modus antwortet, bedeutet dies wahrscheinlich, dass ein Konfigurationsfehler vorliegt. Wenn die IP jedoch noch nach wie vor nicht funktioniert, informieren Sie bitte unsere Support-Teams, indem Sie ein Support-Ticket über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erstellen.
+Um die Verbindung zu testen senden Sie einfach von außerhalb einen Ping an Ihre Additional IP. Wenn sie im Rescue-Modus antwortet, bedeutet dies wahrscheinlich, dass ein Konfigurationsfehler vorliegt. Wenn die IP jedoch noch nach wie vor nicht funktioniert, informieren Sie bitte unsere Support-Teams, indem Sie ein Support-Ticket über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erstellen.
 
 ## Weiterführende Informationen
 
-[Failover-IP importieren](../import_einer_failover-ip/)
+[Additional IP importieren](../import_einer_failover-ip/)
 
-[Wechsel einer Failover-IP](../umzug_einer_failover-ip/)
+[Wechsel einer Additional IP](../umzug_einer_failover-ip/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>

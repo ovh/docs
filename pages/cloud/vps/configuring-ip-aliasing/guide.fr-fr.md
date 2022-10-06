@@ -1,17 +1,22 @@
 ---
 title: 'Configurer une adresse IP en alias'
 slug: ip-aliasing-vps
-excerpt: 'Découvrez comment ajouter des adresses IP fail-over à votre configuration VPS'
+excerpt: 'Découvrez comment ajouter des adresses Additional IP à votre configuration VPS'
 section: 'Réseau et IP'
 ---
 
-**Dernière mise à jour le 30/11/2021**
+**Dernière mise à jour le 06/10/2022**
+
+> [!primary]
+>
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/). Cela n'a aucun impact sur ses fonctionnalités ou le fonctionnement de vos services.
+>
 
 ## Objectif
 
 L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du réseau pour vos serveurs OVHcloud, qui vous permet d'associer plusieurs adresses IP sur une seule interface réseau.
 
-**Ce guide explique comment ajouter des adresses IP fail-over à votre configuration réseau.**
+**Ce guide explique comment ajouter des adresses Additional IP à votre configuration réseau.**
 
 > [!warning]
 >
@@ -23,7 +28,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 ## Prérequis
 
 - un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
-- une [adresse IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/) ou un bloc IP fail-over
+- une [adresse Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/) ou un bloc Additional IP
 - un accès administrateur (root) via SSH ou GUI sur votre serveur
 - des connaissances de base sur les réseaux et leur administration
 
@@ -40,7 +45,7 @@ En ce qui concerne les différentes versions de distributions, veuillez noter qu
 
 |Terme|Description|Exemples|
 |---|---|---|
-|IP_FAILOVER|Adresse IP de fail-over attribuée à votre service|169.254.10.254|
+|ADDITIONAL_IP|Adresse Additional IP attribuée à votre service|169.254.10.254|
 |NETWORK_INTERFACE|Nom de l'interface réseau|*eth0*, *ens3*|
 |ID|ID de l'alias IP, commençant par *0* (en fonction du nombre d'adresses IP supplémentaires à configurer)|*0*, *1*|
 
@@ -81,7 +86,7 @@ Ajoutez ensuite les lignes suivantes :
 ```bash
 auto NETWORK_INTERFACE:ID
 iface NETWORK_INTERFACE:ID inet static
-address IP_FAILOVER
+address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
@@ -95,7 +100,7 @@ sudo systemctl restart networking
 
 ### Ubuntu 20.04
 
-Le fichier de configuration de vos adresses IP fail-over se trouve dans `/etc/netplan/`. Dans cet exemple, il s'appelle « 50-cloud-init.yaml ». Avant d'apporter des modifications, vérifiez le nom de fichier réel dans ce dossier. Chaque adresse IP fail-over nécessite sa propre ligne dans le fichier.
+Le fichier de configuration de vos adresses Additional IP se trouve dans `/etc/netplan/`. Dans cet exemple, il s'appelle « 50-cloud-init.yaml ». Avant d'apporter des modifications, vérifiez le nom de fichier réel dans ce dossier. Chaque adresse Additional IP nécessite sa propre ligne dans le fichier.
 
 #### Etape 1 : désactiver la configuration automatique du réseau
 
@@ -127,7 +132,7 @@ Ouvrez le fichier de configuration réseau pour le modifier à l'aide de la comm
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Ne modifiez pas les lignes existantes dans le fichier de configuration. Ajoutez votre adresse IP fail-over en ajoutant un deuxième bloc de configuration pour l'interface publique, comme dans l'exemple ci-dessous :
+Ne modifiez pas les lignes existantes dans le fichier de configuration. Ajoutez votre adresse Additional IP en ajoutant un deuxième bloc de configuration pour l'interface publique, comme dans l'exemple ci-dessous :
 
 ```yaml
 network:
@@ -144,7 +149,7 @@ network:
                 macaddress: fa:xx:xx:xx:xx:63
             set-name: NETWORK_INTERFACE
             addresses:
-            - IP_FAILOVER/32
+            - ADDITIONAL_IP/32
            
 ```
 
@@ -169,7 +174,7 @@ Si elle est correcte, appliquez-la à l'aide de la commande suivante :
 sudo netplan apply
 ```
 
-Répétez cette procédure pour chaque adresse IP fail-over.
+Répétez cette procédure pour chaque adresse Additional IP.
 
 ### Windows Server 2016
 
@@ -195,9 +200,9 @@ Ouvrez les paramètres de l'adaptateur dans le Panneau de configuration Windows,
 
 Dans la fenêtre Propriétés IPv4, sélectionnez `Utiliser l'adresse IP suivante`{.action}. Entrez l'adresse IP que vous avez récupérée à la première étape, puis cliquez sur `Avancé`{.action}.
 
-#### Etape 3 : ajouter l'adresse IP fail-over dans les Paramètres TCP/IP avancés
+#### Etape 3 : ajouter l'adresse Additional IP dans les Paramètres TCP/IP avancés
 
-Dans la nouvelle fenêtre, cliquez sur `Ajouter...`{.action} sous « Adresses IP ». Entrez votre adresse IP fail-over et le masque de sous-réseau (255.255.255.255).
+Dans la nouvelle fenêtre, cliquez sur `Ajouter...`{.action} sous « Adresses IP ». Entrez votre adresse Additional IP et le masque de sous-réseau (255.255.255.255).
 
 ![section de configuration avancée](images/image4-4.png){.thumbnail}
 
@@ -217,7 +222,7 @@ Pour la redémarrer, faites un nouveau clic droit dessus, puis sélectionnez `Ac
 
 #### Etape 5 : vérifier la nouvelle configuration réseau
 
-Ouvrez l'invite de commandes (cmd) et entrez `ipconfig`. La configuration doit maintenant inclure la nouvelle adresse IP fail-over.
+Ouvrez l'invite de commandes (cmd) et entrez `ipconfig`. La configuration doit maintenant inclure la nouvelle adresse Additional IP.
 
 ![vérifier la configuration réseau actuelle](images/image8-8.png){.thumbnail}
 
@@ -242,9 +247,9 @@ Ajoutez ensuite ces lignes :
 ```bash
 DEVICE=NETWORK_INTERFACE:ID
 BOOTPROTO=static
-IPADDR=IP_FAILOVER
+IPADDR=ADDITIONAL_IP
 NETMASK=255.255.255.255
-BROADCAST=IP_FAILOVER
+BROADCAST=ADDITIONAL_IP
 ONBOOT=yes
 ```
 
@@ -272,27 +277,27 @@ Dans cette section, cliquez sur le bouton `Add IP Address`{.action}.
 
 ![ajouter des informations IP](images/pleskip2-2.png){.thumbnail}
 
-Entrez votre adresse IP fail-over sous la forme `xxx.xxx.xxx.xxx/32` dans le champ « IP address and subnet mask », puis cliquez sur `OK`{.action}.
+Entrez votre adresse Additional IP sous la forme `xxx.xxx.xxx.xxx/32` dans le champ « IP address and subnet mask », puis cliquez sur `OK`{.action}.
 
 ![ajouter des informations IP](images/pleskip3-3.png){.thumbnail}
 
 #### Etape 3 : vérifier la configuration IP actuelle
 
-Dans la section « IP Addresses », vérifiez que l'adresse IP fail-over a été correctement ajoutée.
+Dans la section « IP Addresses », vérifiez que l'adresse Additional IP a été correctement ajoutée.
 
 ![configuration IP actuelle](images/pleskip4-4.png){.thumbnail}
 
 ### Diagnostic
 
-Tout d'abord, redémarrez votre serveur via la ligne de commande ou son interface utilisateur. Si vous ne parvenez toujours pas à établir une connexion entre le réseau public et votre adresse IP d'alias et que vous suspectez un problème réseau, vous devez redémarrer le serveur en [mode rescue](../mode-rescue-vps/). Vous pouvez ensuite configurer l'adresse IP fail-over directement sur le serveur.
+Tout d'abord, redémarrez votre serveur via la ligne de commande ou son interface utilisateur. Si vous ne parvenez toujours pas à établir une connexion entre le réseau public et votre adresse IP d'alias et que vous suspectez un problème réseau, vous devez redémarrer le serveur en [mode rescue](../mode-rescue-vps/). Vous pouvez ensuite configurer l'adresse Additional IP directement sur le serveur.
 
 Une fois que vous êtes connecté à votre serveur via SSH, entrez la commande suivante:
 
 ```bash
-ifconfig ens3:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER up
+ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Pour tester la connexion, il vous suffit d'envoyer un ping à votre adresse IP fail-over depuis l'extérieur. S'il répond en mode rescue, cela signifie probablement qu'il y a une erreur de configuration. Toutefois, si l'IP ne fonctionne toujours pas, veuillez en informer nos équipes du support en créant un ticket d'assistance depuis votre [espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
+Pour tester la connexion, il vous suffit d'envoyer un ping à votre adresse Additional IP depuis l'extérieur. S'il répond en mode rescue, cela signifie probablement qu'il y a une erreur de configuration. Toutefois, si l'IP ne fonctionne toujours pas, veuillez en informer nos équipes du support en créant un ticket d'assistance depuis votre [espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
 
 ## Aller plus loin
 

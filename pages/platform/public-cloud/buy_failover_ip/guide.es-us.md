@@ -1,8 +1,7 @@
 ---
-title: 'Comprar una IP failover'
+title: 'Comprar una Additional IP'
 slug: comprar-una-ip-failover
-excerpt: 'Cómo contratar direcciones IP failover para sus instancias'
-legacy_guide_number: 2030
+excerpt: 'Cómo contratar direcciones Additional IP para sus instancias'
 section: 'Red e IP'
 ---
 
@@ -10,20 +9,25 @@ section: 'Red e IP'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 21/12/2021**
+**Última actualización: 06/10/2022**
+
+> [!primary]
+>
+> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](https://www.ovhcloud.com/es/network/additional-ip/). Esto no afectará a sus funcionalidades ni al funcionamiento de sus servicios.
+>
 
 ## Objetivo
 
-Es posible que necesite configurar una dirección IP failover en sus instancias por diferentes razones:
+Es posible que necesite configurar una dirección Additional IP en sus instancias por diferentes razones:
 
 - Tiene varios sitios en su instancia.
 - Aloja proyectos internacionales.
 
-Para satisfacer estas necesidades, puede comprar una dirección IP failover para sus instancias Public Cloud.
+Para satisfacer estas necesidades, puede comprar una dirección Additional IP para sus instancias Public Cloud.
 
-Estas direcciones IP failover solo pueden migrar a las instancias de un mismo proyecto.
+Estas direcciones Additional IP solo pueden migrar a las instancias de un mismo proyecto.
 
-**Esta guía explica cómo comprar una IP failover para su proyecto Public Cloud OVHcloud.**
+**Esta guía explica cómo comprar una Additional IP para su proyecto Public Cloud OVHcloud.**
 
 
 ## Requisitos
@@ -34,9 +38,9 @@ Estas direcciones IP failover solo pueden migrar a las instancias de un mismo pr
 ## Procedimiento
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. 
-En el menú de la izquierda, haga clic en `Failover IP`{.action} en la sección `Network`.
+En el menú de la izquierda, haga clic en `Additional IP`{.action} en la sección `Network`.
 
-Haga clic en el botón `Acciones`{.action} y seleccione `Comprar direcciones IP Failover`{.action}.
+Haga clic en el botón `Acciones`{.action} y seleccione `Comprar direcciones Additional IP`{.action}.
 
 ![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
@@ -46,7 +50,7 @@ Se abrirá esta página:
 
 Introduzca la siguiente información:
 
-* El número de direcciones IP failover (IPFO) deseadas (los bloques de IP no están disponibles por el momento).
+* El número de direcciones Additional IP deseadas (los bloques de IP no están disponibles por el momento).
 * La instancia en la que se enrutarán las IP.
 * La geolocalización de las IP.
 
@@ -85,6 +89,6 @@ Para más información, consulte nuestra guía sobre [gestión de pedidos de OVH
 
 ## Más información
 
-[Configurar una IP Failover](https://docs.ovh.com/us/es/public-cloud/configurer-une-ip-failover/)
+[Configurar una Additional IP](https://docs.ovh.com/us/es/public-cloud/configurer-une-ip-failover/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

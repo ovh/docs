@@ -61,25 +61,25 @@ Vous pouvez autoriser l'accès à ce stockage depuis votre nouveau serveur. Ains
 
 Consultez notre guide « [utiliser backup storage sur un serveur dédié](https://docs.ovh.com/fr/dedicated/services-backup-storage/){.external} » pour plus d'informations.
 
-### Migrer son IP fail-over (disponible uniquement sur OVHcloud et So you Start)
+### Migrer son Additional IP (disponible uniquement sur OVHcloud et So you Start)
 
 > [!warning]
 >
 > - L'adresse IP principale d'un serveur ne peut être migrée vers un autre serveur.
 >
-> - La migration d'une IP failover est possible depuis un compte So you Start vers un compte OVHcloud. Cette opération est facturée au même titre que la création d'une nouvelle IP.
+> - La migration d'une Additional IP est possible depuis un compte So you Start vers un compte OVHcloud. Cette opération est facturée au même titre que la création d'une nouvelle IP.
 >
 > - Il n'est pas possible d'effectuer la migration d'une IP depuis un compte OVHcloud vers un compte So you Start.
 >
 
-Si la réputation de vos adresses IP est importante, il est fortement conseillé d'utiliser des [IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/), celles-ci pouvant être conservées en cas de migration.
+Si la réputation de vos adresses IP est importante, il est fortement conseillé d'utiliser des [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/), celles-ci pouvant être conservées en cas de migration.
 
 Une fois ces IP en votre possession, il vous suffira de déplacer celles-ci vers le nouveau serveur.<br>
-À cet effet, consultez notre guide dédié : [Déplacer une IP Fail Over](https://docs.ovh.com/fr/dedicated/ip-fo-move/).
+À cet effet, consultez notre guide dédié : [Déplacer une Additional IP](https://docs.ovh.com/fr/dedicated/ip-fo-move/).
 
 > [!alert]
 >
-> La suppression du serveur d'origine, sur lequel une ou plusieurs options ont été commandées (Backup Storage, IP fail-over), entraine la suppression définitive de ces options.
+> La suppression du serveur d'origine, sur lequel une ou plusieurs options ont été commandées (Backup Storage, Additional IP), entraine la suppression définitive de ces options.
 >
 > Il est donc nécessaire d'effectuer toutes les manipulations avant de supprimer le service.
 >

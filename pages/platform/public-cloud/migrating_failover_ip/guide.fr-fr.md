@@ -1,16 +1,20 @@
 ---
-title: 'Basculer une IP Fail Over'
+title: 'Basculer une Additional IP'
 slug: basculer-une-ip-fail-over
-legacy_guide_number: 1890
 section: 'Réseau'
 order: 12
 ---
 
-**Dernière mise à jour le 06/01/2022**
+**Dernière mise à jour le 06/10/2022**
+
+> [!primary]
+>
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/). Cela n'a aucun impact sur ses fonctionnalités ou le fonctionnement de vos services.
+>
 
 ## Objectif
 
-Ce guide vous explique comment basculer une IP Failover d'une instance à une autre. Cette opération peut avoir plusieurs applications, permettant généralement de limiter ou de supprimer les éventuels cas d'indisponibilité de service :
+Ce guide vous explique comment basculer une Additional IP d'une instance à une autre. Cette opération peut avoir plusieurs applications, permettant généralement de limiter ou de supprimer les éventuels cas d'indisponibilité de service :
 
 - basculer sur un site dans sa "nouvelle version" ;
 - faire tourner votre production sur un serveur répliqué pendant que vous faites une maintenance, une mise à jour, sur le serveur de production.
@@ -18,23 +22,23 @@ Ce guide vous explique comment basculer une IP Failover d'une instance à une au
 
 ## Prérequis
 - Au moins deux instances Public Cloud démarrées
-- Une IP Failover
+- Une Additional IP
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique 
 
 > [!primary]
-> Une IP Fail Over ne peut pas être déplacée d'une zone à l'autre. Par exemple, une IP située dans le datacenter SBG pourra être déplacée vers GRA ou RBX mais ne pourra pas être déplacée vers BHS.
+> Une Additional IP ne peut pas être déplacée d'une zone à l'autre. Par exemple, une IP située dans le datacenter SBG pourra être déplacée vers GRA ou RBX mais ne pourra pas être déplacée vers BHS.
 >
 
-### Migration de l'IP Fail Over
+### Migration de l'Additional IP
 
-Tout d’abord, connectez-vous à l’[Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le service Public Cloud concerné. Sélectionnez ensuite Failover IP dans la partie **Network** .
-Dans notre exemple, une IP failover est routée vers "Instance_A" et nous voulons la rediriger vers "Instance_B".
+Tout d’abord, connectez-vous à l’[Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le service Public Cloud concerné. Sélectionnez ensuite Additional IP dans la partie **Network** .
+Dans notre exemple, une Additional IP est routée vers "Instance_A" et nous voulons la rediriger vers "Instance_B".
 
 ![migrating failover ip](images/failover2022.png){.thumbnail}
 
-Cliquez sur les 3 points à droite de l’IP failover, puis sur `Modifier l’instance associée`{.action}.
+Cliquez sur les 3 points à droite de l’Additional IP, puis sur `Modifier l’instance associée`{.action}.
 
 ![migrating failover ip](images/modify1.2022.png){.thumbnail}
 
@@ -52,15 +56,15 @@ Cliquez sur la case à côté du serveur de destination.
 
 > [!success]
 >
-> L'IP Fail Over peut être configurée sur le serveur de destination avant
+> L'Additional IP peut être configurée sur le serveur de destination avant
 > d'effectuer le basculement, ou après bien sûr. Si elle est pré-configurée,
 > elle se met à répondre dès que l'opération de routage est terminée.
 > 
 
 ## Aller plus loin
 
-[Configurer une IP fail-over](https://docs.ovh.com/fr/public-cloud/configurer_une_ip_failover/)
+[Configurer une Additional IP](https://docs.ovh.com/fr/public-cloud/configurer_une_ip_failover/)
 
-[Importer une IP Fail Over](https://docs.ovh.com/fr/public-cloud/importer-une-ip-fail-over/)
+[Importer une Additional IP](https://docs.ovh.com/fr/public-cloud/importer-une-ip-fail-over/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

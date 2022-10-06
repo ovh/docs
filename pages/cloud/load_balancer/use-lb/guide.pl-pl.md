@@ -30,7 +30,7 @@ Na stronie głównej znajdują się następujące informacje:
 |Status|Podsumowanie usługi Load Balancer zawierające adres IP, front-endy, farmy serwerów oraz dodane serwery|
 |Zużycie|Raport o wykorzystanym przesyle danych LoadBalancer|
 |Wykresy|Tu znajdują się wykresy dotyczące usługi pokazujące ilość jednoczesnych logowań lub ilość żądań na minutę|
-|Informacje|Twoje IPv4 i powiązane adresy IP Failover oraz ilość IPv4 wyjściowych (szczegóły po kliknięciu wielokropka)|
+|Informacje|Twoje IPv4 i powiązane adresy Additional IP oraz ilość IPv4 wyjściowych (szczegóły po kliknięciu wielokropka)|
 |Konfiguracja|Tu możesz nadać swojej usłudze własną nazwę (która pojawi się u góry w lewej kolumnie), ustawić szyfrowanie oraz określić centrum danych, w którym znajduje się Twój Load Balancer|
 |Abonament|Tu znajdują się szczegóły administracyjne Twojej oferty|
 
@@ -58,7 +58,7 @@ Masz również dostęp do ustawień zaawansowanych:
 
 |Element|Opis|
 |---|---|
-|Dedykowany IP Failover|Lista adresów IP Failover serwerów zdalnych|
+|Dedykowany Additional IP|Lista adresów Additional IP serwerów zdalnych|
 |Ograniczenie dostępu po IP|Lista umożliwiająca ograniczenie dostępu zdalnego wyłącznie do Load Balancer, IPv4|
 |Przekierowanie HTTP|Dodanie adresu URL przekierowania HTTP|
 |Nagłówek HTTP|Tu dodaje się nagłówek HTTP|

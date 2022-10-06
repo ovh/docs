@@ -95,7 +95,7 @@ W przypadku każdego użytkownika znajdziesz jego uprawnienia i różne informac
 - numer telefonu (opcjonalnie),
 - uprawnienie *token validator* pozwalające na zatwierdzanie wrażliwych operacji w infrastrukturach Private Cloud dysponujących opcją HDS lub PCI-DSS,
 - uprawnienie *Ip* pozwalające na uzyskanie dostępu do wtyczki OVH network,
-- uprawnienie *Ip Failover* pozwalające na zarządzanie trybem IP Failover związanym z infrastrukturą Private Cloud,
+- uprawnienie *Additional IP* pozwalające na zarządzanie trybem Additional IP związanym z infrastrukturą Private Cloud,
 - uprawnienie *Interface NSX* pozwalające na uzyskanie dostępu do interfejsu NSX, jeśli odpowiednia opcja jest aktywna w usłudze Private Cloud,
 - stan (Diagnostyka) pozwalający sprawdzić, czy użytkownik został prawidłowo utworzony.
 
