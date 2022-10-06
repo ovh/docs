@@ -6,29 +6,24 @@ section: CMS
 order: 07
 ---
 
-**Dernière mise à jour le 04/10/2022**
+**Dernière mise à jour le 06/10/2022**
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) WordPress.
+Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Content Management System) WordPress en quelques étapes.
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ou [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
-
-> [!primary]
->
-> Pour toute demande précise liée au CMS, nous vous invitons à vous rapprocher de [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external}, ou des communautés en rapport avec celui-ci.
->
-
-Pour installer manuellement un autre CMS (Joomla!, Drupal, Prestashop), consultez [ce guide](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
 > [!success]
 >
-> Pour installer WordPress de manière automatique depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'installation d'un [module "en un clic"](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+> Pour installer WordPress automatiquement depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module "en un clic"](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+>
+> Pour installer manuellement un autre CMS (Joomla!, Drupal, Prestashop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 >
 
 ## Prérequis
@@ -38,86 +33,109 @@ Pour installer manuellement un autre CMS (Joomla!, Drupal, Prestashop), consulte
 
 ## En pratique
 
-### Partie 1 : préparation de l'installation
+### Etape 1 : préparer l'installation <a name="step1"></a>
 
-Pour installer la plateforme  **WordPress**  sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), effectuez les actions suivantes :
+Pour installer le CMS  **WordPress**  sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
 
-- Installez le client **FTP** [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/).
+#### 1.1 : vérifier la déclaration du "dossier racine"
+
+Le "dossier racine" correspond au répertoire dans lequel votre futur CMS sera installé dans votre hébergement. Il est recommandé de choisir un répertoire vide pour éviter les conflits avec vos autres éventuels multisites. 
+
+Consultez notre documentation qui explique [comment ajouter un multisite sur son hébergement web](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) pour configurer le dossier racine à utiliser pour votre WordPress.
+
+> [!primary]
+>
+> Si vous renseignez un nom de "dossier racine" pour votre domaine qui n'existe pas déjà dans votre hébergement web, ce dernier sera créé automatiquement dans l'espace de stockage FTP de votre hébergement.
+>
+
+#### 1.2 : vérifier le "pointage" du nom de domaine
+
+Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre WordPress ainsi que son sous-domaine en "www" pointent bien vers l'adresse IP de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+
+Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}. Dans l'encadré `Informations générales`{.action} sur votre droite, vous trouverez l'adresse IP de votre hébergement web dans le formulaire `'IPv4`{.action}. 
+
+Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine à l'aide de notre documentation sur les [zones DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
+
+> [!warning]
+>
+> Si vous avez activé les options `CDN`{.action} ou `IP du pays`{.action} avec votre domaine, utilisez l'adresse IP adaptée à l'aide de notre documentation recensant [l'ensemble des adresses IP de nos hébergements mutualisés](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/).
+>
+> Pour retrouver le cluster où se trouve votre hébergement web, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `hébergements`{.action}, sélectionnez votre hébergement puis l'onglet `FTP-SSH`{.action}. Vous visualiserez le numéro du cluster dans le formulaire **"Serveur FTP et SFTP"** : ftp.cluster0XX.ovh.net (où les "X" représentent le numéro de cluster).
+>
+
+Si non, contactez l'hébergeur de votre zone DNS active pour mettre à jour le pointage de votre nom de domaine.
+
+> [!warning]
+>
+> Toutes les modifications effectuées dans votre zone DNS entraîne un délai de propagation de 4 à 24 heures.
+>
 
 - Récupérez [les informations nécessaires pour vous connecter à l'espace FTP de votre hébergement web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter)
 - Récupérez les accès à la base de données de votre offre d'hébergement Web si elle existe déjà ou créez-en une à l'aide de notre [documentation](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
+#### 1.3 : Installer le client FTP gratuit "Filezilla"
 
-![hosting](images/3125.png){.thumbnail}
+Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utilisation dans notre documentation sur l'[utilisation de Filezilla avec votre offre d'hébergement OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 
+#### 1.4 : préparer une base de données
 
-### Partie 2 : récuperation des fichiers sources
-- Rendez-vous sur le site du développeur de [WordPress](http://fr.wordpress.org/){.external}.
+Les CMS ont besoin d'une base de données pour fonctionner. La plupart de nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) en contiennent.
 
-Le fichier récupéré est **compressé** (zippé), vous devrez le  **décompresser** (extraire) dans un dossier sur votre ordinateur. Vous trouverez sur Internet différentes aides à ce sujet.
+Utilisez notre documentation pour [créer une base de données depuis votre offre d'hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
-![hosting](images/3126.png){.thumbnail}
+Si vous disposez d'une offre SQL Privé/Cloud DB en "MySQL" et que vous souhaitez l'utiliser pour installer manuellement votre WordPress, retrouvez notre documentation sur la [création d'une base de données sur un SQL Privé/Cloud DB](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/#creer-une-base-de-donnees).
 
+Une fois créée, récupérez les paramètres de connexion à votre base de données (serveur, nom de la base de données, nom d'utilisateur et mot de passe).
 
-### Partie 3 : mise en place des fichiers sur l'hébergement via FTP
+> [!primary]
+> 
+> Si vous souhaitez installer votre CMS WordPress avec une base de données déjà existante, récupérez vos paramètres de connexion à votre base de données directement dans les fichiers du site pour lequel elle est déjà utilisée.
+>
+> S'il s'agit aussi d'un CMS comme celui que vous vous apprêtez à installer, vous pouvez vous aider de [ce guide](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/#etape-3-modifier-le-mot-de-passe-de-la-base-de-donnees-de-votre-site-dans-son-fichier-de-configuration) pour identifier les fichiers de configuration dans votre [espace de stockage FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+>
+> Connectez-vous ensuite à votre base de données pour recenser les "préfixes" des tables déjà présentes à l'intérieur. Ceci afin de ne pas choisir un "préfixe" de table déjà utilisé par un autre de vos sites.
+>
+> - Pour vous connecter à votre base de données liée à votre offre d'hébergement web : <https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin>
+> - Pour vous connecter à une base de données présente sur un SQL Privé/Cloud DB : <https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/>
+>
 
-Ouvrez le dossier dans lequel vous avez téléchargé le dossier compressé.
+### Etape 2 : démarrer l'installation manuelle
 
-Réalisez un clic droit sur le dossier en question, puis sélectionnez "Extraire tout...".
+#### 2.1 : récupérer les fichiers sources de WordPress
 
-Indiquez une destination afin d'extraire vos fichiers dans un nouveau dossier.
+Rendez-vous sur le site du développeur de [WordPress](http://fr.wordpress.org/){.external} pour télécherger sur votre appareil les fichiers sources du CMS.
 
-Le dossier cible sera intitulé " **wordpress** "
+#### 2.2 : décompresser les fichiers sources téléchargés dans un nouveau dossier
 
+Le fichier téléchargé est dans un format **compressé** (zippé), créez un dossier intitulé "**wordpress**" sur votre ordinateur puis **décompressez** le contenu du fichier téléchargé à l'intérieur du dossier "**wordpress**". 
+
+Pour cela, ouvrez le dossier dans lequel vous avez téléchargé le fichier compressé, réalisez un clic droit sur le fichier en question, puis sélectionnez "Extraire tout...".
+
+Indiquez le dossier "**wordpress**" en destination afin d'extraire vos fichiers dans ce dossier.
+
+Si besoin, vous trouverez sur Internet différentes aides concernant la décompression de fichiers.
 
 ![hosting](images/3127.png){.thumbnail}
 
-Pour déposer les fichiers de  **WordPress**  sur votre hébergement, vous devez tout d'abord vous connecter à celui-ci.
+#### 2.3 : déplacer les fichiers sources du dossier "WordPress" vers le "dossier racine" sur votre hébergement web
 
-*Consultez notre guide pour [se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/)*
+Une fois les fichiers décompressés dans votre dossier "**wordpress**", [connectez-vous en FTP à votre espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide du [client FTP Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) puis copiez les fichiers contenus dans le dossier "**wordpress**" dans le "dossier racine" que vous avez défini sur votre hébergement lors de l'[étape 1](#step1) de ce guide.
 
-
-![hosting](images/3128.png){.thumbnail}
-
-Suivez ces étapes pour déposer vos fichiers sur le FTP. Une fois connecté à FileZilla.
-
-Dans la partie "Site local", qui correspond à la liste des fichiers présents sur votre ordinateur, ouvrez le dossier décompressé intitulé "wordpress" dans lequel sont présents les fichiers du CMS.
-
-Dans la partie "Site distant" qui correspond dans ce cas à votre hébergement mutualisé OVH, ouvrez le dossier "www". C'est dans ce dossier que tous les fichiers du CMS devront être déposés.
-
-*Si ce dossier n'existe pas il vous est possible de le créer.*
-
-*Vos fichiers doivent obligatoirement être déposés dans le dossier "www" sinon la procédure d'installation ne sera pas accessible depuis votre nom de domaine.*
-
-
-![hosting](images/3129.png){.thumbnail}
-
-Une fois ces dossiers ouverts :
-
-Dans la partie "Site local", vous retrouvez tous les fichiers nécessaires à l'installation du CMS WordPress.
-
-Pour tous les sélectionner, réaliser la combinaison de touche  **CTRL+A** .
-
-Réalisez ensuite le glisser-déposer des fichiers vers la partie "Site distant" dans le dossier "www".
-
-*Il est fort probable que le dossier "www" ne soit pas vide. Il n'est pas obligatoire de supprimer les fichiers présents dedans. Nous reviendrons sur ce point dans la suite de ce guide.*
-
-
-![hosting](images/3130.png){.thumbnail}
-
-Le transfert des fichiers est en cours.
-
-Attendez que la totalité des fichiers soit déposés sur le serveur FTP distant. Cela peut prendre quelques minutes.
-
-Une fois le transfert terminé, assurez-vous que tous les fichiers et les dossiers ont été correctement transférés.
-
-Cette opération conclut la partie consacrée au dépôt des fichiers sur le FTP.
-
+>[!primary]
+>
+> Si le "dossier racine" que vous avez défini n'a pas été créé automatiquement grâce aux actions décrites dans l'[étape 1](#step1), il vous est possible de le créer via Filezilla.
+>
+>
+> Le dépôt des fichiers sur votre hébergement peut prendre quelques minutes.
+>
+> Une fois le transfert terminé, assurez-vous que tous les éléments présents dans le dossier local "**wordpress**" ont été correctement transférés dans le "dossier racine" présent sur votre hébergement web.
+>
 
 ![hosting](images/3131.png){.thumbnail}
 
 
-### Partie 4 : lien avec la base de donnees
+### Etape 3 : finaliser l'installation manuelle
+
 - Avant de continuer l'installation, videz le cache de votre navigateur internet, afin d'éviter toute erreur.
 
 Afin de réaliser le lien entre votre base de données et WordPress, nous devons suivre les étapes d'installation du CMS. Rendez-vous sur votre nom de domaine.
