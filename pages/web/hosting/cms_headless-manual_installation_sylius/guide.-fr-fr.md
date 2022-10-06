@@ -14,6 +14,12 @@ Sylius est un _CMS Headless_ basé sur la framework PHP [Symfony](https://symfon
 
 ## Prérequis
 
+Pour avoir des performances optimales, nous préconisons notre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/). Cette solution inclut, entre autres, un accès SSH qui va vous permettre d'installer une ou plusieurs solutions alternatives à celles proposées dans l'offre.
+
+Pour mettre en place votre solution Sylius, vous devrez intégrer les éléments suivants :
+- être familier de la ligne de commande et de l'utilisation d'un terminal
+- avoir paramétré votre zone DNS pour faire pointer votre nom de domaine (ou votre sous-domaine) sur votre serveur.
+
 ## En pratique
 
 ## Aller plus loin
