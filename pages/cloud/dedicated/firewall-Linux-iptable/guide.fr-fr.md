@@ -112,7 +112,7 @@ Pour autoriser le trafic Web HTTP, saisissez la commande suivante :
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 ```
 
-Pour autoriser uniquement le trafic SSH (Secure Shell) entrant, saisissez ce qui suit :
+Pour autoriser uniquement le trafic SSH (Secure Shell) entrant, saisissez ce qui suit (Veuillez noter que nous utilisons le port 22, qui est le numéro du port SSH par défaut. Si votre numéro de port est différent, veillez à l'ajuster au numéro approprié) :
 
 ```bash
 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
