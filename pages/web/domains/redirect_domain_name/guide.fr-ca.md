@@ -6,7 +6,7 @@ section: "Tâches courantes"
 order: 01
 ---
 
-**Dernière mise à jour le 27/09/2022**
+**Dernière mise à jour le 06/10/2022**
 
 ## Objectif 
 
