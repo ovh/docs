@@ -41,7 +41,7 @@ There are several ways of doing this:
 > Setting up a redirection can affect your SEO ranking. 
 > Be careful about the changes you apply, or contact a [specialised provider](https://partner.ovhcloud.com/en-gb/) for SEO if necessary.
 >
-> Warning: A redirection created from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) does not redirect a URL as `https://` to another domain or URL.
+> Warning: A redirection created from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) does not redirect an URL as `https://` to another domain or URL.
 > To create this type of redirection, you will have to apply [a URL rewrite](https://docs.ovh.com/gb/en/hosting/htaccess_url_rewriting_using_mod_rewrite/), for example by editing a ".htaccess" file. 
 >
 
@@ -221,13 +221,13 @@ This type of embedded content prevents your site visitors from viewing the targe
 >
 
 > [!success]
-> Click the tabs below to view each of the 5 steps in turn.
+> Click on the tabs below to view each of the 5 steps in turn.
 >
 
 > [!tabs]
 > **Step 1**
 >>
->> In the window, your domain to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
+>> In the popup window, your domain to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
 >>
 >> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain/subdomain.
 >>
