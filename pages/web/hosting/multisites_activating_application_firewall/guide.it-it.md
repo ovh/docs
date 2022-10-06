@@ -1,10 +1,9 @@
 ---
 title: 'Hosting condiviso: attiva un firewall applicativo'
 excerpt: 'Hosting condiviso: attiva un firewall applicativo'
-id: '1937'
 slug: hosting_condiviso_attiva_un_firewall_applicativo
-legacy_guide_number: g1937
 section: Configurazione dell’hosting
+order: 04
 ---
 
 > [!primary]

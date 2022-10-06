@@ -3,12 +3,12 @@ title: 'Tworzenie bazy danych i zarządzanie nią w hostingu WWW'
 slug: tworzenie-bazy-danych
 excerpt: 'Dowiedz się, jak korzystać z baz danych zawartych w usłudze hostingu WWW OVHcloud'
 section: 'Bazy danych'
-order: 1
+order: 01
 ---
 
 **Ostatnia aktualizacja: 03-02-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Baza danych (DB, ang. database) służy do przechowywania tak zwanych elementów dynamicznych, takich jak komentarze lub artykuły. Bazy danych są używane praktycznie we wszystkich nowoczesnych systemach zarządzania treścią (CMS, ang. Content Management System), takich jak Joomla! czy WordPress.
 

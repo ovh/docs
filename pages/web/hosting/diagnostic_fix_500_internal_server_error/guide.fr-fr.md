@@ -1,10 +1,9 @@
 ---
 title: Que faire en cas d’erreur 500 Internal Server Error ?
-legacy_guide_number: 1987
 slug: erreur-500-internal-server-error
 excerpt: Diagnostiquez les cas les plus courants d'erreurs 500
 section: Diagnostic
-order: 6
+order: 06
 ---
 
 **Dernière mise à jour le 21/07/2022**

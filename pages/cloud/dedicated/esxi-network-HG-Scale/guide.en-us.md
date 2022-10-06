@@ -10,7 +10,7 @@ order: 6
 
 ## Objective
 
-On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure failover IPs in routed mode or via the vRack.
+On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
 
 > [!primary]
 >
@@ -42,7 +42,7 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 > There's currently a known issue with the ESXi graphical user interface and performing these steps in the interface will result in a non-working configuration. It is absolutely necessary to apply this configuration using the command line interface in SSH.
 >
 
-### Failover IP via vRack
+### Additional IP via vRack
 
 First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and open the `vRack`{.action} menu.
 

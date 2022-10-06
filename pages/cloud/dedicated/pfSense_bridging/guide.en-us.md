@@ -14,7 +14,7 @@ Bridged networking can be used to configure your pfSense virtual machine to be a
 ## Requirements
 
 - A dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/){.external}, [Proxmox](https://www.proxmox.com/en/proxmox-ve){.external}, etc.)
-- At least one [failover IP](https://www.ovhcloud.com/en/bare-metal/ip/) address attached to the server 
+- At least one [Additional IP](https://www.ovhcloud.com/en/bare-metal/ip/) address attached to the server 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} 
 
 ## Recommendations for your pfSense virtual machine
@@ -36,7 +36,7 @@ If you encounter any difficulties performing these actions, please contact a [sp
 
 For the pfSense virtual machines network configuration, we will use the following values which should be replaced with your own values:
 
-- FAILOVER_IP = The address of your failover IP
+- ADDITIONAL_IP = The address of your Additional IP
 - Virtual MAC address = The MAC address created in the OVHcloud Control Panel
 - GATEWAY_IP = The address of your default gateway
 
@@ -44,11 +44,11 @@ For the pfSense virtual machines network configuration, we will use the followin
 
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu. 
 
-The “Service” drop-down menu allows you to filter for Failover IPs. 
+The “Service” drop-down menu allows you to filter for Additional IPs. 
 
 ![Add a virtual MAC (1)](images/manageIPs.png){.thumbnail} 
 
-Next, locate your failover IP address in the table and click on the three dots to open the `Context`{.action} menu. Select `Add a virtual MAC`{.action}.
+Next, locate your Additional IP address in the table and click on the three dots to open the `Context`{.action} menu. Select `Add a virtual MAC`{.action}.
 
 ![Add a virtual MAC (1)](images/addvmac.png){.thumbnail}
 
@@ -165,7 +165,7 @@ At the stage, the pfSense VM doesn’t have a public IP. Click on the menu icon 
 
 ![pfSense setup 4](images/pfsense-vm-10_1.png){.thumbnail}
 
-Make sure the settings are matching from what is shown in the below screenshots and enter your `Failover IP`. `The IPv4 Upstream gateway` will be configured later.
+Make sure the settings are matching from what is shown in the below screenshots and enter your `Additional IP`. `The IPv4 Upstream gateway` will be configured later.
 
 ![pfSense setup 5](images/pfsense-vm-10_2.png){.thumbnail}
 

@@ -3,7 +3,7 @@ title: 'Activer l’hébergement gratuit Start 10M'
 slug: activer-start10m
 excerpt: 'Découvrez comment activer votre hébergement Start 10M '
 section: 'Premiers pas'
-order: 02
+order: 01
 ---
 
 **Dernière mise à jour le 15/09/2022**

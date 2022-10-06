@@ -1,9 +1,9 @@
 ---
 title: Installing Composer on a Web Hosting plan
 slug: install_composer_on_web_hosting_packages
-legacy_guide_number: 1894
 excerpt: Find out how to install and take your first steps with Composer
 section: PHP
+order: 02
 ---
 
 **Last updated 30th November 2020**

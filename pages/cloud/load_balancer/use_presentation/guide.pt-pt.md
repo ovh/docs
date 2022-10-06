@@ -37,7 +37,7 @@ Características do serviço:
 - proteção Anti-DDoS OVH;
  - replicação DNS em várias zonas geográficas (Anycast);
  - funções avançadas para HTTP/HTTPS (reencaminhamento, headers, ACL...);
- - compatibilidade com IP Failover;
+ - compatibilidade com Additional IP;
  - compatibilidade com vRack;
  - redundância: o Load Balancer funciona em instâncias diferentes, alojadas em equipamentos separados, protegidos por sistemas redundantes.
 
@@ -88,9 +88,9 @@ A infraestrutura tem uma tarefa de manutenção agendada? Agora é possível des
 
 O Load Balancer permite usar ou combinar diferentes serviços da OVH, como por exemplo:
 
-- instâncias Public Cloud com IP Failover;
-- VPS com IP Failover;
-- servidores dedicados com IP Failover;
+- instâncias Public Cloud com Additional IP;
+- VPS com Additional IP;
+- servidores dedicados com Additional IP;
 - vRack (redes privadas).
 
 ![Combinar diferentes serviços](images/mix_and_match.png){.thumbnail}

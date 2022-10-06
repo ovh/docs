@@ -35,7 +35,7 @@ The following window appears:
 
 You can set your name, first name, phone number and email address.
 
-This window also allows you to add editing rights to **IP**, **Failover IP**, **NSX Interface** and the **Token validator** used to approve certain sensitive actions on infrastructures that have the **Advanced Security** option enabled.
+This window also allows you to add editing rights to **IP**, **Additional IP**, **NSX Interface** and the **Token validator** used to approve certain sensitive actions on infrastructures that have the **Advanced Security** option enabled.
 
 Click on `Confirm`{.action} to validate the modifications.
 

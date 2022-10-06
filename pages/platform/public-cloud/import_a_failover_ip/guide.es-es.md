@@ -1,12 +1,16 @@
 ---
-title: 'Importar una IP Failover'
-excerpt: 'Importar una IP Failover'
+title: 'Importar una Additional IP'
+excerpt: 'Importar una Additional IP'
 slug: importar_una_ip_failover
-legacy_guide_number: g1883
 section: 'Red e IP'
 ---
 
-**Última actualización: 10/03/2022**
+**Última actualización: 06/10/2022**
+
+> [!primary]
+>
+> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/). Esto no afectará a sus funcionalidades ni al funcionamiento de sus servicios.
+>
 
 ## Objetivo
 
@@ -29,17 +33,17 @@ Puede importar una dirección IP de conmutación que esté asociada a otro servi
 ## Procedimiento
 
 Primero, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione su proyecto en la sección `Public Cloud`{.action}. 
-A continuación, seleccione `Failover IP`{.action} en la sección "Network".
+A continuación, seleccione `Additional IP`{.action} en la sección "Network".
 
 Haga clic en `Acciones`{.action} y seleccione `Importar una IP`{.action} para mostrar todas las direcciones IP que se pueden importar en su proyecto de Public Cloud.
 
 ![IP Section](images/import1.png){.thumbnail}
 
-Si todavía no tiene ninguna IP Failover en su proyecto de Public Cloud, la opción de importar una IP se mostrará en la página de inicio.
+Si todavía no tiene ninguna Additional IP en su proyecto de Public Cloud, la opción de importar una IP se mostrará en la página de inicio.
 
-Haga clic en los tres puntos a la derecha de la IP que quiere importar y haga clic en `Importar esta IP Failover`{.action}.
+Haga clic en los tres puntos a la derecha de la IP que quiere importar y haga clic en `Importar esta Additional IP`{.action}.
 
-![Import Failover IP](images/import2.png){.thumbnail}
+![Import Additional IP](images/import2.png){.thumbnail}
 
 Haga clic en `Importar`{.action}:
 
@@ -49,19 +53,19 @@ A continuación, se volverá a cargar la página y se mostrará la siguiente inf
 
 Una vez importada la IP de conmutación, haga clic en los tres puntos a la derecha y, después, en `Modificar la instancia asociada`{.action}.
 
-![Import Failover IP](images/modifyinstance.png){.thumbnail}
+![Import Additional IP](images/modifyinstance.png){.thumbnail}
 
 Se abrirá una ventana emergente donde podrá elegir la instancia a la que desea migrar su IP:
 
-![Import Failover IP](images/modifyinstance1.png){.thumbnail}
+![Import Additional IP](images/modifyinstance1.png){.thumbnail}
 
 Haga clic en `Asociar`{.action}. A continuación, se volverá a cargar la página con una confirmación de que la IP se ha asociado a la instancia:
 
-![Import Failover IP](images/modifycompleted.png){.thumbnail}
+![Import Additional IP](images/modifycompleted.png){.thumbnail}
 
 Ahora, su IP de conmutación está asociada a su instancia.
 
-El siguiente paso será configurar la IP en su sistema operativo. Puede consultar nuestra guía a continuación: [Configurar una IP failover](https://docs.ovh.com/es/public-cloud/configurer-une-ip-failover/){.external}.
+El siguiente paso será configurar la IP en su sistema operativo. Puede consultar nuestra guía a continuación: [Configurar una Additional IP](https://docs.ovh.com/es/public-cloud/configurer-une-ip-failover/){.external}.
 
 ## Más información
 

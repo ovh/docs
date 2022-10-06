@@ -4,6 +4,7 @@ title: 'De opslagruimte van uw webhosting herstellen'
 slug: herstel-ftp-filezilla-control-panel
 excerpt: 'Leer hoe u een bestand of de volledige inhoud van uw opslagruimte van uw webhosting kunt herstellen.'
 section: 'FTP en SSH'
+order: 06
 ---
 
 **Laatste update 25-09-2018**

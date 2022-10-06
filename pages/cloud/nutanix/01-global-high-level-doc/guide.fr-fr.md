@@ -21,11 +21,11 @@ Un cluster Nutanix est constitué d’un ensemble de services OVHcloud :
 - [Serveur dédié](https://www.ovhcloud.com/fr/bare-metal/)
 - [vRack](https://www.ovh.com/fr/solutions/vrack/)
 - [Load Balancer](https://www.ovh.com/fr/solutions/load-balancer/)
-- [IP Failover](https://www.ovhcloud.com/fr/bare-metal/ip/)
+- [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
 
 Les serveurs dédiés (3 minimum) sont connectés au sein du vRack qui est un réseau L2, le réseau privé des hosts (noeud ou *node*).
 
-L'adresse IP publique de chaque noeud n'est pas accessible car l'IP Failover est dédiée à l'accès Internet. Cet accès est assuré par la passerelle « OVHgateway » qui est une VM dédiée créée par OVHcloud sur votre cluster.
+L'adresse IP publique de chaque noeud n'est pas accessible car l'Additional IP est dédiée à l'accès Internet. Cet accès est assuré par la passerelle « OVHgateway » qui est une VM dédiée créée par OVHcloud sur votre cluster.
 
 Le load balancer est utilisé pour exposer l'interface web utilisateur (*WebUI*) **Prism Central** sur Internet de façon publique. Pour des raisons de sécurité, vous pouvez restreindre l'interface utilisateur Web aux seules adresses IP de votre organisation.
 
@@ -54,7 +54,7 @@ Ces valeurs doivent être augmentées si vous ajoutez de nouvelles fonctionnalit
 
 ### OVHgateway
 
-**La passerelle OVHgateway permet d’accéder à Internet sur le cluster via l’adresse IP Failover.**
+**La passerelle OVHgateway permet d’accéder à Internet sur le cluster via l’adresse Additional IP.**
 
 Cette VM a deux NIC, l’un pour le réseau privé (dans le vRack) et l’autre pour l’Internet public.
 

@@ -3,7 +3,7 @@ title: Die Sicherheit Ihrer Website optimieren
 excerpt: Erfahren Sie hier, wie Sie die Sicherheit Ihrer Website erhöhen
 slug: website-absichern
 section: Webseitenoptimierung 
-order: 1
+order: 01
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 1
 
 **Letzte Aktualisierung am 10.12.2021**
 
-## Ziel
+## Ziel 
 
 Diese Anleitung bietet Ihnen grundlegendes Wissen, um die Verfügbarkeit Ihrer Dienstleistungen zu gewährleisten, die Integrität Ihrer Daten zu schützen und den Zugang zu Ihren Lösungen zu sichern. Die Maßnahmen wie hier beschrieben betreffen nur Webseiten, die auf OVHcloud [Webhosting-Diensten](https://www.ovhcloud.com/de/web-hosting/) gehostet werden.
 

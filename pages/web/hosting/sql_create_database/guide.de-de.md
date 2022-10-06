@@ -3,12 +3,12 @@ title: 'Eine Datenbank auf Ihrem Webhosting erstellen und verwalten'
 slug: datenbank-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden'
 section: 'Datenbanken'
-order: 1
+order: 01
 ---
 
 **Letzte Aktualisierung am 03.02.2022**
 
-## Ziel
+## Ziel 
 
 Datenbanken (DBs) werden verwendet, um sogenannte dynamische Elemente wie Kommentare oder Artikel zu speichern. Diese Datenbanken werden heutzutage in praktisch allen modernen Content Management Systemen (CMS) wie WordPress oder Joomla! eingesetzt.
 

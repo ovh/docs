@@ -1,34 +1,39 @@
 ---
-title: "Routage d'une IP Failover"
+title: "Routage d'une Additional IP"
 slug: route-ipfo
-excerpt: 'Ce guide vous explique comment utiliser une IP fail-over avec le service OVHcloud Load Balancer'
+excerpt: 'Ce guide vous explique comment utiliser une Additional IP avec le service OVHcloud Load Balancer'
 section: Configuration
 ---
 
-**Dernière mise à jour le 07/02/2022**
+**Dernière mise à jour le 06/10/2022**
+
+> [!primary]
+>
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/). Cela n'a aucun impact sur ses fonctionnalités ou le fonctionnement de vos services.
+>
 
 ## Objectif
 
-Une IP fail-over (IPFO) est une adresse IP basculable d'un service à l'autre. Elle offre donc la possibilité de disposer d'une infrastructure résistant à une grande diversité de problèmes (pannes matérielles, surcharges de vos services, maintenance...).
+Une Additional IP est une adresse IP basculable d'un service à l'autre. Elle offre donc la possibilité de disposer d'une infrastructure résistant à une grande diversité de problèmes (pannes matérielles, surcharges de vos services, maintenance...).
 
-Pour plus d'informations sur l'IP fail-over, nous vous recommandons la lecture du [document de présentation](https://www.ovhcloud.com/fr/bare-metal/ip/).
+Pour plus d'informations sur l'Additional IP, nous vous recommandons la lecture du [document de présentation](https://www.ovhcloud.com/fr/bare-metal/ip/).
 
-Le service OVHcloud Load Balancer offre quant à lui des fonctionnalités de répartition de charge sur différents protocoles : HTTP, HTTPS, TCP et UDP. Associé à une IP fail-over, il devient possible de basculer votre infrastructure existante vers un Load Balancer sans perturber ou interrompre les services de vos clients. En effet il n'y aura désormais plus de changement d'adresse IP dans la mesure où vous utiliserez toujours l'IP fail-over, donc pas de délai de propagation des DNS.
+Le service OVHcloud Load Balancer offre quant à lui des fonctionnalités de répartition de charge sur différents protocoles : HTTP, HTTPS, TCP et UDP. Associé à une Additional IP, il devient possible de basculer votre infrastructure existante vers un Load Balancer sans perturber ou interrompre les services de vos clients. En effet il n'y aura désormais plus de changement d'adresse IP dans la mesure où vous utiliserez toujours l'Additional IP, donc pas de délai de propagation des DNS.
 
 Pour plus d'informations sur le service OVHcloud Load Balancer, nous vous conseillons de consulter la [présentation générale de l'offre](https://docs.ovh.com/fr/load-balancer/iplb-presentation/).
 
-**Ce guide vous explique comment utiliser une IP fail-over avec le service OVHcloud Load Balancer.**
+**Ce guide vous explique comment utiliser une Additional IP avec le service OVHcloud Load Balancer.**
 
 ## Prérequis
 
 - Disposer d'un [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/) correctement configuré.
-- Disposer d'une [IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/).
+- Disposer d'une [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/).
 
 > [!primary]
 >
 > **Configuration du Load Balancer requise**
 >
-> Afin de valider le changement dans la liste des IPs fail-over associées au Load Balancer, il est nécessaire de pouvoir actualiser celui-ci. Pour ce faire, plusieurs conditions doivent être réunies :
+> Afin de valider le changement dans la liste des Additional IPs associées au Load Balancer, il est nécessaire de pouvoir actualiser celui-ci. Pour ce faire, plusieurs conditions doivent être réunies :
 > 
 > - Si le Load Balancer est dans un vRack, toutes les fermes doivent être dans le vRack. De plus, le Load Balancer doit disposer de son vLAN. Sinon, aucune ferme ne doit être dans un vRack.
 >
@@ -44,10 +49,10 @@ Pour plus d'informations sur le service OVHcloud Load Balancer, nous vous consei
 
 Dans la suite de ce document, nous allons voir 2 cas d'usages distincts.
 
-- Associer une IP fail-over à votre service OVHcloud Load Balancer.
-- Associer une IP fail-over à un seul et unique frontend de votre service OVHcloud Load Balancer.
+- Associer une Additional IP à votre service OVHcloud Load Balancer.
+- Associer une Additional IP à un seul et unique frontend de votre service OVHcloud Load Balancer.
 
-### Ajouter une IP fail-over
+### Ajouter une Additional IP
 
 Depuis l'[API OVHcloud](https://api.ovh.com){.external}, vous pouvez associer ces IPs avec votre service OVHcloud Load Balancer.
 
@@ -58,20 +63,20 @@ Voici l'appel API pour cela :
 > @api {POST} /ip/{ip}/move
 > 
 
-Vous pouvez ensuite lister les IPs fail-over attachées à votre OVHcloud Load Balancer à l'aide de l'appel suivant :
+Vous pouvez ensuite lister les Additional IPs attachées à votre OVHcloud Load Balancer à l'aide de l'appel suivant :
 
 > [!api]
 >
 > @api {GET} /ipLoadbalancing/{serviceName}/failover
 >
 
-Les IPs fail-over attachées à votre Load Balancer seront disponibles pour tous vos frontends.
-Contrairement au cas suivant dans lequel nous allons attacher une IP fail-over à un seul frontend.
+Les Additional IPs attachées à votre Load Balancer seront disponibles pour tous vos frontends.
+Contrairement au cas suivant dans lequel nous allons attacher une Additional IP à un seul frontend.
 
-### IP fail-over dédiée
+### Additional IP dédiée
 
-Quel que soit le type de frontend que vous souhaitez utiliser, il est possible de définir une liste d'IPs fail-over dédiées qui lui seront attachées.
-À noter que, dans ce cas précis, votre IPFO sera rattachée à un seul et unique frontend.
+Quel que soit le type de frontend que vous souhaitez utiliser, il est possible de définir une liste d'Additional IPs dédiées qui lui seront attachées.
+À noter que, dans ce cas précis, votre Additional IP sera rattachée à un seul et unique frontend.
 Elle ne permettra donc d'accéder qu'aux services fournis par ce frontend.
 Les services de vos autres frontends restent quant à eux accessibles via l'adresse IP de votre IPLB.
 
@@ -79,7 +84,7 @@ Les services de vos autres frontends restent quant à eux accessibles via l'adre
 
 ##### **Création d'un frontend**
 
-Depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs IPs fail-over sur un frontend pendant sa création :
+Depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs Additional IPs sur un frontend pendant sa création :
 
 - protocole HTTP
 
@@ -105,7 +110,7 @@ Depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivant vous pe
 
 ##### **Mise à jour d'un frontend**
 
-Toujours depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs IPs fail-over sur un frontend existant :
+Toujours depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs Additional IPs sur un frontend existant :
 
 - protocole HTTP
 
@@ -130,11 +135,11 @@ Toujours depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivan
 
 #### Depuis l'espace client OVHcloud
 
-Vous pouvez définir vos IPs fail-over dédiées depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la partie `Bare metal Cloud`{.action} puis dans `Load Balancer`{.action}.
+Vous pouvez définir vos Additional IPs dédiées depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la partie `Bare metal Cloud`{.action} puis dans `Load Balancer`{.action}.
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier, créez un nouveau frontend, ou éditez-en un existant.
 
-Dans les `Paramètres avancés`{.action}, vous pourrez choisir la ou les IPs fail-over que vous souhaitez associer à votre frontend.
+Dans les `Paramètres avancés`{.action}, vous pourrez choisir la ou les Additional IPs que vous souhaitez associer à votre frontend.
 
 ![Configurer le frontend en associant une IP Fail-Over](images/iplb_frontend.png){.thumbnail}
 

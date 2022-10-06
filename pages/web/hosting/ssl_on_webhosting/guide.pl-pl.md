@@ -3,7 +3,7 @@ title: 'Zarządzanie certyfikatem SSL na hostingu'
 slug: certyfikaty-ssl-na-hostingu
 excerpt: 'Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud'
 section: SSL
-order: 1
+order: 01
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 1
 
 **Ostatnia aktualizacja z dnia 26-07-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Hosting umożliwia zarządzanie certyfikatem SSL. Certyfikat możesz uzyskać za pośrednictwem OVHcloud lub we własnym zakresie poprzez import certyfikatu na Twój hosting. Kiedy certyfikat zostanie zainstalowany na hostingu, strona lub strony WWW uzyskają bezpieczne połączenie SSL i zaczną używać protokołu HTTPS. 
 

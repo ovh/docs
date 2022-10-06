@@ -1,10 +1,9 @@
 ---
 title: Evitar las trampas del SSL en un sitio web
 excerpt: Evitar las trampas del SSL en un sitio web
-id: '2220'
 slug: evitar_las_trampas_del_ssl_en_un_sitio_web
-legacy_guide_number: g2220
 section: SSL
+order: 04
 ---
 
 

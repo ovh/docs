@@ -1,9 +1,9 @@
 ---
 title: 'Ręczna instalacja modułu CMS w ramach hostingu WWW'
 excerpt: 'Dowiedz się więcej o systemach CMS kompatybilnych z hostingiem WWW'
-id: '1375'
 slug: hosting_www_reczna_instalacja_modulu_cms
 section: CMS
+order: 03
 ---
 
 **Ostatnia aktualizacja: 04-02-2020**
@@ -14,7 +14,7 @@ section: CMS
 >Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja „Sprawdź również” tego przewodnika.
 >
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Nasze usługi hostingu WWW są kompatybilne z popularnymi systemami zarządzania treścią (CMS), które obejmują wielu zastosowań.
 

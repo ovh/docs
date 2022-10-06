@@ -1,8 +1,8 @@
 ---
 title: 'Direcciones IP de los clusters y alojamientos web'
 slug: lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web
-legacy_guide_number: 2328
 section: 'Configuración del alojamiento'
+order: 01
 ---
 
 **Última actualización: 08/01/2021**

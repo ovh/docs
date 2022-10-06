@@ -65,25 +65,25 @@ Sie können Zugriff auf den Backup Storage von Ihrem neuen Server aus erlauben. 
 
 Weitere Informationen dazu finden Sie in unserer Anleitung "[Backup Storage auf einem Dedicated Server verwenden](https://docs.ovh.com/de/dedicated/dienste-storage-backup/)".
 
-### Migration einer Failover-IP (nur verfügbar für OVHcloud und So you Start)
+### Migration einer Additional IP (nur verfügbar für OVHcloud und So you Start)
 
 > [!warning]
 >
 > - Die Haupt-IP-Adresse eines Servers kann nicht migriert werden und wird mit dem Auslaufen des alten Server-Abos verloren gehen.
 >
-> - Sie können eine Failover-IP von einem So you Start Account zu einem OVHcloud Kunden-Account migrieren. Bei diesem Vorgang entstehen die regulären IP-Einrichtungsgebühren.
+> - Sie können eine Additional IP von einem So you Start Account zu einem OVHcloud Kunden-Account migrieren. Bei diesem Vorgang entstehen die regulären IP-Einrichtungsgebühren.
 >
-> - Es ist nicht möglich, eine Failover-IP von einem OVHcloud Kunden-Account zu einem So you Start Account zu migrieren.
+> - Es ist nicht möglich, eine Additional IP von einem OVHcloud Kunden-Account zu einem So you Start Account zu migrieren.
 >
 
-Wenn IP-Adressen-Reputation für Sie wichtig ist, empfehlen wir Ihnen dringend die Verwendung von [Failover-IPs](https://www.ovhcloud.com/de/bare-metal/ip/), da diese bei einer Migration beibehalten werden können.
+Wenn IP-Adressen-Reputation für Sie wichtig ist, empfehlen wir Ihnen dringend die Verwendung von [Additional IPs](https://www.ovhcloud.com/de/bare-metal/ip/), da diese bei einer Migration beibehalten werden können.
 
 Wenn Sie diese IP-Adressen in Ihrem Kunden-Account haben, können Sie diese einfach auf den neuen Server umziehen.
-Lesen Sie hierzu unsere Anleitung: [Eine Failover-IP umziehen](https://docs.ovh.com/de/dedicated/ip-fo-move/).
+Lesen Sie hierzu unsere Anleitung: [Eine Additional IP umziehen](https://docs.ovh.com/de/dedicated/ip-fo-move/).
 
 > [!alert]
 >
-> Beim Löschen des Quell-Servers, für den eine oder mehrere Optionen bestellt wurden (Backup-Storage, Failover-IP), werden diese Optionen endgültig gelöscht.
+> Beim Löschen des Quell-Servers, für den eine oder mehrere Optionen bestellt wurden (Backup-Storage, Additional IP), werden diese Optionen endgültig gelöscht.
 >
 > Alle Änderungen müssen daher abgeschlossen werden, bevor der Dienst gelöscht wird.
 >

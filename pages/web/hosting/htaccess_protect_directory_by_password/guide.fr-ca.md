@@ -3,6 +3,7 @@ title: "Protéger l'interface d'administration de votre site par un fichier .hta
 slug: mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification
 excerpt: "Retrouvez ici comment protéger l'accès à l'administration de votre site avec un fichier .htaccess"
 section: Réécriture et authentification
+order: 02
 ---
 
 **Dernière mise à jour le 20/09/2021**

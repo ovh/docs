@@ -1,10 +1,9 @@
 ---
 title: Geolocalización en alojamientos compartidos
 excerpt: ''
-id: '1880'
 slug: geolocalizacion_en_alojamientos_compartidos
-legacy_guide_number: g1880
 section: Optimización del sitio web
+order: 05
 ---
 
 

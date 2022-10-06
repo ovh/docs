@@ -1,10 +1,9 @@
 ---
 title: 'CMS: Instalar manualmente WordPress'
 excerpt: ¿Cómo instalar manualmente WordPress?
-id: '1977'
 slug: cms_instalar_manualmente_wordpress
-legacy_guide_number: g1977
 section: CMS
+order: 07
 ---
 
 

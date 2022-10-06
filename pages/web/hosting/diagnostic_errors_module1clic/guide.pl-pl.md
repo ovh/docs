@@ -3,7 +3,7 @@ title: Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 klikni�
 slug: bledy-frameworki-moduly-za-1-kliknieciem
 excerpt: Zdiagnozuj najczęstsze przypadki błędów związanych z modułami za pomocą 1 kliknięcia
 section: Diagnostyka
-order: 2
+order: 02
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 2
 
 **Ostatnia aktualizacja z dnia 08/10/2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Utworzenie [modułu za pomocą 1 kliknięcia](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/) w trybie prostym lub zaawansowanym może spowodować różne nieprawidłowości.
 

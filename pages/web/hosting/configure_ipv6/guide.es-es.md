@@ -3,6 +3,7 @@ title: 'Configure IPv6 para su sitio web'
 slug: configurar-ipv6-para-su-sitio
 excerpt: Cómo hacer compatible su sitio web con IPv6
 section: 'Configuración del alojamiento'
+order: 06
 ---
 
 > [!primary]

@@ -44,7 +44,7 @@ Haga clic en el botón `Eliminar proyecto`{.action}.
 
 ![eliminar el proyecto](images/deleteproject1.png){.thumbnail}
 
-Se mostrará un mensaje de confirmación informándole de la eliminación de los recursos del proyecto, a excepción de las direcciones IP failover asociadas. 
+Se mostrará un mensaje de confirmación informándole de la eliminación de los recursos del proyecto, a excepción de las direcciones Additional IP asociadas. 
 
 Haga clic en `Eliminar proyecto`{.action} para continuar. 
 

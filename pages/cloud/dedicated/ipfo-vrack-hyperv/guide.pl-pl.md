@@ -1,6 +1,6 @@
 ---
-title: "Korzystanie z Hyper-V z adresów IP Failover w sieci vRack"
-excerpt: "Dowiedz się, jak skonfigurować wirtualną maszynę z IP Failover i Hyper-V w sieci vRack"
+title: "Korzystanie z Hyper-V z adresów Additional IP w sieci vRack"
+excerpt: "Dowiedz się, jak skonfigurować wirtualną maszynę z Additional IP i Hyper-V w sieci vRack"
 slug: ipfo-vrack-hyperv
 section: vRack 
 ---
@@ -13,9 +13,9 @@ section: vRack
 
 ## Wprowadzenie
 
-Postępuj zgodnie z instrukcjami procesu instalacji Hyper-V, połączenia wirtualnego switcha i konfiguracji wirtualnej maszyny, aby działać z IP Failover w sieci vRack.
+Postępuj zgodnie z instrukcjami procesu instalacji Hyper-V, połączenia wirtualnego switcha i konfiguracji wirtualnej maszyny, aby działać z Additional IP w sieci vRack.
 
-**Dowiedz się, jak skonfigurować wirtualną maszynę z adresami IP Failover i Hyper-V w sieci vRack.**
+**Dowiedz się, jak skonfigurować wirtualną maszynę z adresami Additional IP i Hyper-V w sieci vRack.**
 
 ## Wymagania początkowe
 

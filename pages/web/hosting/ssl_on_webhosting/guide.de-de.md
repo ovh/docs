@@ -2,8 +2,8 @@
 title: 'SSL-Zertifikat auf einem Webhosting verwalten'
 slug: ssl-zertifikate-auf-webhostings-verwalten
 excerpt: 'Erfahren Sie hier, wie Sie ein SSL-Zertifikat auf Ihrem OVHcloud Webhosting verwalten'
-section: 'SSL'
-order: 1
+section: SSL
+order: 01
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 1
 
 **Letzte Aktualisierung am 01.08.2022**
 
-## Ziel
+## Ziel 
 
 Sie haben bei Ihrem Webhosting die Möglichkeit, ein SSL-Zertifikat einzurichten. Das Zertifikat können Sie entweder direkt bei OVHcloud bestellen oder eines auf Ihr Hosting importieren. Sobald das Zertifikat auf Ihrem Webhosting installiert und fertig eingerichtet ist, können Sie eine oder mehrere Ihrer Websites mit einer sicheren SSL-Verbindung und somit über HTTPS betreiben.
 

@@ -1,9 +1,9 @@
 ---
 title: Installer manuellement Joomla
 slug: installer-manuellement-joomla
-legacy_guide_number: 1978
 excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS Joomla!.
 section: CMS
+order: 05
 ---
 
 **Dernière mise à jour le 05/05/2020**

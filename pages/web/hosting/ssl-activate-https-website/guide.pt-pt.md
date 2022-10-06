@@ -6,19 +6,19 @@ section: SSL
 order: 02
 ---
 
-**Última atualização: 04/02/2019**
+**Última atualização: 04/10/2022**
 
 ## Sumário
 
-Graças ao alojamento web da OVH, pode beneficiar de um certificado SSL. Este último permite estabelecer uma ligação segura com um ou vários websites e que, por isso, sejam acessíveis através de HTTPS. Assim, para poder disfrutar desta ligação segura, é necessário configurar previamente no website.
+Graças ao alojamento web da OVHcloud, pode beneficiar de um certificado SSL. Este último permite estabelecer uma ligação segura com um ou vários websites e que, por isso, sejam acessíveis através de HTTPS. Assim, para poder disfrutar desta ligação segura, é necessário configurar previamente no website.
 
 **Saiba como ativar o HTTPS num website que dispõe de um certificado SSL.**
 
 ## Requisitos
 
-- Ter um [certificado SSL](https://www.ovh.com/pt/ssl/){.external} instalado no [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter um [certificado SSL](https://www.ovh.com/pt/ssl/){.external} instalado no [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Dispor de, pelo menos, um website instalado e acessível no alojamento web da OVH.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 
 ## Instruções
@@ -42,16 +42,16 @@ A tabela abaixo permite-lhe compreender de forma mais clara este processo.
 
 ### 1 - Ativar o certificado SSL no alojamento
 
-A ativação do certificado SSL no alojamento web é feita a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Nesse sentido, tem de realizar as seguintes operações:
+A ativação do certificado SSL no alojamento web é feita a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Nesse sentido, tem de realizar as seguintes operações:
 
 |Operação|Descrição|
 |---|---|
-|Ativar o certificado SSL no alojamento|Permite que a OVH ative o certificado SSL no alojamento. Tem de escolher entre vários tipos de certificados. Certifique-se de que seleciona o que melhor se adapta à sua situação.|
+|Ativar o certificado SSL no alojamento|Permite que a OVHcloud ative o certificado SSL no alojamento. Tem de escolher entre vários tipos de certificados. Certifique-se de que seleciona o que melhor se adapta à sua situação.|
 |Ativar o SSL no multi-site correspondente|O website no qual pretende utilizar o HTTPS deve ser configurado enquanto “multi-site” no alojamento. Certifique-se de que o SSL foi ativado para este último.|
 
-Para mais informações sobre estas ações, consulte o manual [Gerir um certificado SSL no alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/){.external}. Se acabou de contratar o seu alojamento web com a OVH, é possível que já tenha um certificado SSL instalado e que a ligação SSL para o multi-site já esteja ativa.
+Para mais informações sobre estas ações, consulte o manual [Gerir um certificado SSL no alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/){.external}. Se acabou de contratar o seu alojamento web com a OVHcloud, é possível que já tenha um certificado SSL instalado e que a ligação SSL para o multi-site já esteja ativa.
 
-Para o verificar, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Certifique-se de que está no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve estar indicado “Sim”, o que significa que já está instalado no alojamento web um certificado SSL. 
+Para o verificar, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Certifique-se de que está no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve estar indicado “Sim”, o que significa que já está instalado no alojamento web um certificado SSL. 
 
 ![httpswebsite](images/activate-https-website-ssl-step2.png){.thumbnail}
 
@@ -69,7 +69,7 @@ Assim, recomendamos vivamente que tenha em consideração os elementos apresenta
 
 > [!warning]
 >
-> A responsabilidade sobre a configuração e a gestão dos serviços que a OVH disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
 > Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se tiver alguma dúvida, recomendamos que recorra a um fornecedor de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção “Quer saber mais?” deste manual. 
 >
@@ -136,6 +136,16 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
+> [!warning]
+>
+> Para as ofertas de alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/), o script a utilizar é o seguinte:
+> ```
+> RewriteEngine On
+> RewriteCond %{ENV:HTTPS} !on
+> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+> ```
+>
+
 ### 4 - Verificar o bom funcionamento do website
 
 Quando tiver ativado o protocolo HTTPS no website, verifique que este está a funcionar corretamente e que todo o conteúdo é apresentado como antes da manipulação. Para isso, aceda ao website, verifique se não há nenhuma mensagem de aviso e examine as diferentes secções verificando que não há problemas de visualização. 
@@ -146,4 +156,8 @@ Se o conteúdo do website se apresentar corretamente em HTTPS e não aparecer ne
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/)
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

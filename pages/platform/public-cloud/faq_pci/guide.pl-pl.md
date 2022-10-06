@@ -85,9 +85,9 @@ Zapraszamy do zapoznania się z przewodnikiem [Konfiguracja usługi vRack Public
 
 ### Czy mogę zmienić publiczny adres IP mojej instancji?
 
-Publiczne adresy IP są automatycznie przypisane do instancji i dlatego nie można ich zmienić. Zalecamy użycie adresu IP Failover, aby zarządzać publicznym adresem IP instancji. W ten sposób, bez względu na publiczny adres przypisany automatycznie do instancji, możesz dodać jeden lub kilka adresów IP failover do Twojej instancji.
+Publiczne adresy IP są automatycznie przypisane do instancji i dlatego nie można ich zmienić. Zalecamy użycie adresu Additional IP, aby zarządzać publicznym adresem IP instancji. W ten sposób, bez względu na publiczny adres przypisany automatycznie do instancji, możesz dodać jeden lub kilka adresów Additional IP do Twojej instancji.
 
-Zapraszamy do zapoznania się z przewodnikiem [Wykupienie adresu IP Failover](../wykupienie_adresu_ip_failover/).
+Zapraszamy do zapoznania się z przewodnikiem [Wykupienie adresu Additional IP](../wykupienie_adresu_ip_failover/).
 
 ## Sprawdź również
 

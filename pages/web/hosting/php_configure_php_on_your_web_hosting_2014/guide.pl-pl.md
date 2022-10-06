@@ -14,7 +14,7 @@ order: 01
 
 **Dowiedz się, jak zmienić wersję PHP na hostingu OVHcloud.**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Twój [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} umożliwia Ci hostowanie wybranej strony internetowej, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVH](https://webhosting-infos.hosting.ovh.net){.external}. W tym celu może być konieczne zmodyfikowanie wersji PHP używanej przez Twój hosting.
 

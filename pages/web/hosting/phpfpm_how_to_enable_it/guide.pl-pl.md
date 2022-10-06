@@ -3,8 +3,9 @@ title: Aktywacja optymalizacji PHP na hostingu OVH
 excerpt: Ten przewodnik pomoże Ci w aktywacji funkcji PHP-FPM na hostingu www OVH, w celu ulepszenia czasu odpowiedzi PHP.
 slug: aktywacja_optymalizacji_php_na_hostingu_ovh
 section: PHP
+order: 03
 ---
-
+ 
 
 ## Czym jest PHP-FPM?
 Dostosowaliśmy PHP-FPM do naszej infrastruktury www, abyś mógł korzystać z tej funkcji do przyspieszenia odpowiedzi PHP. 

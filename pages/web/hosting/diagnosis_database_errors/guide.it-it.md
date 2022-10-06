@@ -3,7 +3,7 @@ title: Risolvi gli errori più frequenti associati ai database
 excerpt: "Diagnostica i casi di errore più frequenti associati ai database"
 slug: errori-frequenti-database
 section: Diagnostica
-order: 4
+order: 04
 ---
 
 > [!primary]

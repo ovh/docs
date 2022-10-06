@@ -97,7 +97,7 @@ Per ogni utente troverai informazioni relative all’utente e ai permessi applic
 - numero di telefono (facoltativo)
 - il permesso *token validator*, che consente di confermare le operazioni sensibili sui servizi Private Cloud dotati dell’opzione HDS o PCI-DSS.
 - il permesso *Ip*, che consente di accedere al plugin OVH network
-- il permesso *Ip Failover*, che consente di gestire gli IP Failover associati al tuo Private Cloud.
+- il permesso *Additional IP*, che consente di gestire gli Additional IP associati al tuo Private Cloud.
 - il permesso*Interface NSX*, che consente di accedere all’interfaccia NSX se l’opzione è attiva nel tuo Private Cloud.
 - lo stato (Diagnostica), che consente di vedere se l’utente è stato creato.
 

@@ -14,7 +14,7 @@ order: 7
 
 ## Objetivo
 
-Nas gamas High Grade & SCALE, o funcionamento dos IP fail-over em modo *bridged* (através de MAC virtuais) não é possível. Por isso, é necessário configurar os IP Failover em modo roteado ou através do vRack.
+Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo *bridged* (através de MAC virtuais) não é possível. Por isso, é necessário configurar os Additional IP em modo roteado ou através do vRack.
 
 > [!primary]
 >
@@ -46,7 +46,7 @@ Nas gamas High Grade & SCALE, o funcionamento dos IP fail-over em modo *bridged*
 > Um defeito conhecido está presente na interface gráfica ESXi do utilizador. Assim, a execução destas etapas nesta interface resultaria numa configuração não funcional. É absolutamente necessário aplicar esta configuração utilizando a interface de linha de comando em SSH.
 >
 
-### IP Failover através do vRack
+### Additional IP através do vRack
 
 Primeiro, adicione o seu bloco público de endereços IP ao vRack. Para isso, aceda à secção `Bare Metal Cloud`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e abra o menu `vRack`{.action}.
 

@@ -3,7 +3,7 @@ title: How to manage your 1-click module
 excerpt: Find out how to manage your 1-click module in the OVHcloud Control Panel
 slug: 1-click-module-management
 section: CMS
-order: 2
+order: 02
 ---
 
 **Last updated 5th September 2022**

@@ -10,19 +10,19 @@ order: 5
 
 ## Objectif
 
-Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode *bridged* (via des MAC Virtuelles) n'est pas possible. Il est donc nécessaire de configurer les IP fail-over en mode routé ou via le vRack.
+Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode *bridged* (via des MAC Virtuelles) n'est pas possible. Il est donc nécessaire de configurer les Additional IP en mode routé ou via le vRack.
 
 **Découvrez comment configurer le réseau sous Windows Server avec Hyper-V.**
 
 ## Prérequis
 
 * Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
-* Disposer d'une adresse [IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/)
+* Disposer d'une adresse [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 > [!warning]
 >
-> Aucune MAC virtuelle ne doit être appliquée sur les IP fail-over dans l'espace client OVHcloud.
+> Aucune MAC virtuelle ne doit être appliquée sur les Additional IP dans l'espace client OVHcloud.
 >
 
 ## En pratique
@@ -32,7 +32,7 @@ Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode *b
 > Sur ces gammes de serveurs, il y a 4 cartes réseaux. Les deux premières pour le public, les deux dernières pour le privé. Pour profiter de l'ensemble de la bande passante, des agrégats doivent être créés.
 >
 
-### IP fail-over en mode routé sur les interfaces réseaux publiques
+### Additional IP en mode routé sur les interfaces réseaux publiques
 
 #### Explications
 
@@ -167,7 +167,7 @@ Pour les serveurs DNS, vous pouvez choisir les vôtres. Dans notre exemple, nous
 
 Cliquez ensuite sur le bouton `Advanced...` et, dans la nouvelle fenêtre, cliquez sur `Add...`{.action} sous les adresses IP.
 
-Ajoutez l'adresse IP et le masque de sous-réseau correspondant à votre IP fail-over et cliquez sur `Add`{.action}
+Ajoutez l'adresse IP et le masque de sous-réseau correspondant à votre Additional IP et cliquez sur `Add`{.action}
 
 ![Static IP](images/static_ip_6.png){.thumbnail}
 
@@ -226,7 +226,7 @@ network:
                                   on-link: true
 ```
 
-### IP fail-over via le vRack
+### Additional IP via le vRack
 
 #### Prérequis
 

@@ -2,9 +2,8 @@
 title: Häufige FTP-Probleme beheben
 excerpt: Erfahren Sie hier, wie Sie Fehlermeldungen bei FTP-Verbindungen beheben 
 slug: webhosting_haufige_ftp-probleme
-legacy_guide_number: 1996
 section: FTP und SSH
-order: 3
+order: 04
 ---
 
 > [!primary]
@@ -13,7 +12,7 @@ order: 3
 
 **Letzte Aktualisierung am 05.01.2022**
 
-## Ziel
+## Ziel 
 
 Die Verwendung von FTP-Software beim Login auf Ihr [Hosting-Pakete](https://www.ovhcloud.com/de/web-hosting/) kann zu verschiedenen Anomalien führen. In dieser Anleitung können Sie die gängigsten Lösungen auswählen.
 

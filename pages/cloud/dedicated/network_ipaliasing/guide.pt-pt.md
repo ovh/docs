@@ -1,7 +1,7 @@
 ---
 title: Como configurar um IP alias
 slug: network-ipaliasing
-excerpt: Saiba como adicionar endereços IP Failover à configuração de rede
+excerpt: Saiba como adicionar endereços Additional IP à configuração de rede
 section: Redes & IP
 ---
 
@@ -9,7 +9,12 @@ section: Redes & IP
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização no dia 16/09/2021**
+**Última atualização no dia 06/10/2022**
+
+> [!primary]
+>
+> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](https://www.ovhcloud.com/pt/network/additional-ip/). Isto não tem qualquer impacto nas suas funcionalidades ou no funcionamento dos seus serviços.
+>
 
 ## Sumário
 
@@ -20,7 +25,7 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 ## Requisitos
 
 - Ter um servidor dedicado ([VPS](https://www.ovh.pt/vps/){.external}, [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external} ou [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}).
-- Dispor de um ou vários endereços [IP Failover](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external}.
+- Dispor de um ou vários endereços [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/){.external}.
 - Estar ligado ao servidor usando o protocolo SSH.
 
 > [!warning]
@@ -55,18 +60,18 @@ De seguida, adicione uma interface secundária:
 ```bash
 auto eth0:0
 iface eth0:0 inet static
-address IP_FAILOVER
+address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
 Para garantir que a interface secundária é ativada ao mesmo tempo que a interface `eth0`, adicione esta instrução à configuração de eth0:
 
 ```bash
-post-up /sbin/ifconfig eth0:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER
+post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
-Se quiser adicionar dois IP Failover, o ficheiro /etc/network/interfaces.d/50-cloud-init deve ter um conteúdo semelhante a este:
+Se quiser adicionar dois Additional IP, o ficheiro /etc/network/interfaces.d/50-cloud-init deve ter um conteúdo semelhante a este:
 
 ```bash
 auto eth0
@@ -74,12 +79,12 @@ iface eth0 inet dhcp
 
 auto eth0:0
 iface eth0:0 inet static
-address FAILOVER_IP1
+address ADDITIONAL_IP1
 netmask 255.255.255.255
 
 auto eth0:1
 iface eth0:1 inet static
-address FAILOVER_IP2
+address ADDITIONAL_IP2
 netmask 255.255.255.255
 ```
 Ou assim:
@@ -88,12 +93,12 @@ Ou assim:
 auto eth0
 iface eth0 inet dhcp
 
-# IPFO 1
-post-up /sbin/ifconfig eth0:0 FAILOVER_IP1 netmask 255.255.255.255 broadcast FAILOVER_IP1
+# IP 1
+post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
 pre-down /sbin/ifconfig eth0:0 down
 
-# IPFO 2
-post-up /sbin/ifconfig eth0:1 FAILOVER_IP2 netmask 255.255.255.255 broadcast FAILOVER_IP2
+# IP 2
+post-up /sbin/ifconfig eth0:1 ADDITIONAL_IP2 netmask 255.255.255.255 broadcast ADDITIONAL_IP2
 pre-down /sbin/ifconfig eth0:1 down
 ```
 
@@ -129,18 +134,18 @@ De seguida, adicione uma interface secundária:
 ```bash
 auto eth0:0
 iface eth0:0 inet static
-address IP_FAILOVER
+address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
 Para garantir que a interface secundária é ativada ao mesmo tempo que a interface `eth0`, adicione esta instrução à configuração de eth0:
 
 ```bash
-post-up /sbin/ifconfig eth0:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER
+post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
-Se quiser adicionar dois IP Failover, o ficheiro /etc/network/interfaces deve ter um conteúdo semelhante a este:
+Se quiser adicionar dois Additional IP, o ficheiro /etc/network/interfaces deve ter um conteúdo semelhante a este:
 
 ```bash
 auto eth0
@@ -152,22 +157,22 @@ gateway xxx.xxx.xxx.254
 
 auto eth0:0
 iface eth0:0 inet static
-address IP_FAILOVER1
+address ADDITIONAL_IP1
 netmask 255.255.255.255
 
 auto eth0:1
 iface eth0:1 inet static
-address IP_FAILOVER2
+address ADDITIONAL_IP2
 netmask 255.255.255.255
 
 Ou assim:
 
-# IPFO 1
-post-up /sbin/ifconfig eth0:0 IP_FAILOVER1 netmask 255.255.255.255 broadcast IP_FAILOVER1
+# IP 1
+post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
 pre-down /sbin/ifconfig eth0:0 down
 
-# IPFO 2
-post-up /sbin/ifconfig eth0:1 IP_FAILOVER2 netmask 255.255.255.255 broadcast IP_FAILOVER2
+# IP 2
+post-up /sbin/ifconfig eth0:1 ADDITIONAL_IP2 netmask 255.255.255.255 broadcast ADDITIONAL_IP2
 pre-down /sbin/ifconfig eth0:1 down
 ```
 
@@ -194,7 +199,7 @@ cp /etc/systemd/network/50-default.network /etc/systemd/network/50-default.netwo
 
 #### 2 - Alterar o ficheiro de configuração
 
-O IP Failover deve ser adicionado ao ficheiro da seguinte forma:
+O Additional IP deve ser adicionado ao ficheiro da seguinte forma:
 
 ```sh
 nano /etc/systemd/network/50-default.network
@@ -206,7 +211,7 @@ Address=22.33.44.55/32
 Label=failover1 # optional
 ```
 
-O «label» é facultativo. Este serve apenas para ordenar os vários IP Failover.
+O «label» é facultativo. Este serve apenas para ordenar os vários Additional IP.
 
 #### 3 - Reiniciar a interface de rede
 
@@ -235,15 +240,15 @@ Altere o ficheiro eth0:0 para substituir o IP:
 editor /etc/sysconfig/network-scripts/ifcfg-eth0:0
 ```
 
-Substitua o nome do `Device` e, de seguida, o IP existente pelo IP Failover:
+Substitua o nome do `Device` e, de seguida, o IP existente pelo Additional IP:
 
 ```bash
 DEVICE="eth0:0"
 ONBOOT="yes"
 BOOTPROTO="none" # For CentOS use "static"
-IPADDR="IP_FAILOVER"
+IPADDR="ADDITIONAL_IP"
 NETMASK="255.255.255.255"
-BROADCAST="IP_FAILOVER"
+BROADCAST="ADDITIONAL_IP"
 ```
 
 #### 3 - Reiniciar a interface de rede
@@ -267,14 +272,14 @@ cp /etc/conf.d/net /etc/conf.d/net.bak
 
 #### 2 - Alterar o ficheiro de configuração
 
-Agora, altere o ficheiro para adicionar o IP Failover. Com o Gentoo, o IP alias é adicionado diretamente à interface eth0. Neste caso, não é necessário criar a interface eth0:0 (como no caso do Red Hat ou do CentOS).
+Agora, altere o ficheiro para adicionar o Additional IP. Com o Gentoo, o IP alias é adicionado diretamente à interface eth0. Neste caso, não é necessário criar a interface eth0:0 (como no caso do Red Hat ou do CentOS).
 
 > [!warning]
 >
 > Para garantir o correto funcionamento de algumas configurações OVH, o IP original do servidor e a instrução config_eth0= devem ficar na mesma linha
 > 
 
-Depois tem que inserir o IP Failover na linha abaixo da netmask **255.255.255.0** (substitua SERVER_IP pelo IP principal do seu servidor).
+Depois tem que inserir o Additional IP na linha abaixo da netmask **255.255.255.0** (substitua SERVER_IP pelo IP principal do seu servidor).
 
 ```sh
 editor /etc/conf.d/net
@@ -283,7 +288,7 @@ editor /etc/conf.d/net
 Agora, adicione a seguinte instrução:
 
 ```bash
-config_eth0=( "SERVER_IP netmask 255.255.255.0" "IP_FAILOVER netmask 255.255.255.255 brd IP_FAILOVER" )
+config_eth0=( "SERVER_IP netmask 255.255.255.0" "ADDITIONAL_IP netmask 255.255.255.255 brd ADDITIONAL_IP" )
 ```
 
 O ficheiro /etc/conf.d/net deve conter a instrução:
@@ -295,11 +300,11 @@ O ficheiro /etc/conf.d/net deve conter a instrução:
 # please review /etc/conf.d/net.example and save your configuration
 # in /etc/conf.d/net (this file :]!).
 config_eth0=( "SERVER_IP netmask 255.255.255.0"
-"IP_FAILOVER netmask 255.255.255.255 brd IP_FAILOVER" )
+"ADDITIONAL_IP netmask 255.255.255.255 brd ADDITIONAL_IP" )
 routes_eth0=( "default gw SERVER_IP.254" )
 ```
 
-Para fazer ping ao IP Failover, basta reiniciar a interface de rede.
+Para fazer ping ao Additional IP, basta reiniciar a interface de rede.
 
 
 #### 3 - Reiniciar a interface de rede
@@ -326,7 +331,7 @@ cp /etc/sysconfig/network/ifcfg-ens32 /etc/sysconfig/network/ifcfg-ens32.bak
 Agora, altere o ficheiro /etc/sysconfig/network/ifcfg-ens32 da seguinte forma:
 
 ```bash
-IPADDR_1=FIP_FAILOVER
+IPADDR_1=FADDITIONAL_IP
 NETMASK_1=255.255.255.255
 LABEL_1=ens32:0
 ```
@@ -349,14 +354,14 @@ De seguida, altere o ficheiro /etc/ips da seguinte forma:
 ```sh
 editor /etc/ips
 ```
-Agora adicione o IP Failover:
+Agora adicione o Additional IP:
 
 ```bash
-IP_FAILOVER:255.255.255.255:IP_FAILOVER
+ADDITIONAL_IP:255.255.255.255:ADDITIONAL_IP
 ```
 Por fim, acrescente o IP em `/etc/ipaddrpool`:
 ```bash
-IP_FAILOVER
+ADDITIONAL_IP
 ```
 
 #### 3 - Reiniciar a interface de rede
@@ -369,7 +374,7 @@ Agora, execute este comando para reiniciar a interface:
 
 ### Windows Server
 
-Os servidores Windows costumam usar a configuração de rede DHCP (configuração predefinida). Caso tenha configurado um IP Failover ou alterado a configuração para usar um IP fixo, ignore esta etapa.
+Os servidores Windows costumam usar a configuração de rede DHCP (configuração predefinida). Caso tenha configurado um Additional IP ou alterado a configuração para usar um IP fixo, ignore esta etapa.
 
 Se não, tem que alterar a configuração de rede para usar IP fixo em vez da configuração DHCP.
 
@@ -400,7 +405,7 @@ Nos comandos indicados abaixo, deve substituir:
 |IP_ADDRESS| Endereço IP do servidor (no nosso exemplo: 94.23.229.151)|
 |SUBNET_MASK| Máscara de sub-rede (no nosso exemplo: 255.255.255.0)|
 |GATEWAY| *Gateway* predefinido (no nosso exemplo: 94.23.229.254)|
-|IP_ADDRESS_FAILOVER| Endereço IP Failover que deseja adicionar|
+|ADDITIONAL_IP| Endereço Additional IP que deseja adicionar|
 
 > [!warning]
 >
@@ -420,13 +425,13 @@ netsh interface ipv4 set address name="NETWORK_ADAPTER" static IP_ADDRESS SUBNET
 ```sh
 netsh interface ipv4 set dns name="NETWORK_ADAPTER" static 213.186.33.99
 ```
-- Adicionar IP failover
+- Adicionar Additional IP
 
 ```sh
-netsh interface ipv4 add address "NETWORK_ADAPTER" IP_ADDRESS_FAILOVER 255.255.255.255
+netsh interface ipv4 add address "NETWORK_ADAPTER" ADDITIONAL_IP 255.255.255.255
 ```
 
-O IP failover está a funcionar.
+O Additional IP está a funcionar.
 
 
 #### Através da interface gráfica
@@ -453,13 +458,13 @@ Na parte `Endereço IP`{.action}, clique em `Adicionar`{.action}:
 
 ![Advanced TCP/IPv4 Settings](images/guides-network-ipaliasing-windows-2008-3.png){.thumbnail}
 
-Introduza o IP Failover e a máscara de sub-rede **255.255.255.255**.
+Introduza o Additional IP e a máscara de sub-rede **255.255.255.255**.
 
 ![TCP/IP Address](images/guides-network-ipaliasing-windows-2008-4.png){.thumbnail}
 
 Clique em `Adicionar`{.action}.
 
-O IP failover está a funcionar.
+O Additional IP está a funcionar.
 
 
 ### FreeBSD
@@ -509,9 +514,9 @@ Altere o ficheiro /etc/rc.conf, usando o seguinte comando:
 editor /etc/rc.conf
 ```
 
-De seguida, adicione esta linha no final do ficheiro: ifconfig_INTERFACE_alias0=`inet IP_FAIL_OVER netmask 255.255.255.255 broadcast IP_FAIL_OVER`.
+De seguida, adicione esta linha no final do ficheiro: ifconfig_INTERFACE_alias0=`inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP`.
 
-Substitua **INTERFACE** e **IP_FAILOVER** pelo nome da interface (indicado no passo 1) e pelo endereço IP Failover. Exemplo:
+Substitua **INTERFACE** e **ADDITIONAL_IP** pelo nome da interface (indicado no passo 1) e pelo endereço Additional IP. Exemplo:
 
 
 ```bash
@@ -556,7 +561,7 @@ editor /etc/hostname.e1000g0:1
 
 #### 3 - Alterar ficheiro de configuração
 
-Adicione a seguinte informação ao ficheiro: **IP_FAIL_OVER/32 up**, em que **IP_FAIL_OVER** corresponde ao seu IP failover. Por exemplo:
+Adicione a seguinte informação ao ficheiro: **ADDITIONAL_IP/32 up**, em que **ADDITIONAL_IP** corresponde ao seu Additional IP. Por exemplo:
 
 ```bash
 188.165.171.40/32 up

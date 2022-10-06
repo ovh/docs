@@ -96,7 +96,7 @@ Aparece la información de cada usuario, así como los permisos relativos al ser
 - Número de teléfono (opcional).
 - permiso *token validator*,que permite confirmar las operaciones sensibles.
 - El permiso *Ip*, que da acceso al plugin OVHcloud network.
-- El permiso *Ip Failover*, para gestionar las direcciones IP Failover asociadas al servicio Managed Bare Metal.
+- El permiso *Additional IP*, para gestionar las direcciones Additional IP asociadas al servicio Managed Bare Metal.
 - El estado (Diagnóstico), que permite ver si el usuario se ha creado correctamente.
 
 Al hacer clic en el botón `...`{.action} situado a la derecha de la tabla, aparecen varias opciones:

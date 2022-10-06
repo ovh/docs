@@ -1,9 +1,9 @@
 ---
 title: 'Hosting: Statystyki i logi strony'
 excerpt: Dostęp do statystyk strony www
-id: '1344'
 slug: hosting_statystyki_i_logi_strony
 section: Optymalizacja strony WWW
+order: 04
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ section: Optymalizacja strony WWW
 
 **Ostatnia aktualizacja z dnia 05-01-2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Dostęp do logów i statystyk Twojej strony WWW jest zawarty w ofercie hostingu WWW dostępnej w Panelu klienta OVHcloud.
 

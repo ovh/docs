@@ -2,7 +2,8 @@
 title: Avoid the common pitfalls of making your website secure with SSL
 excerpt: Avoid the common pitfalls of making your website secure with SSL
 slug: avoid_the_common_pitfalls_of_making_your_website_secure_with_ssl
-legacy_guide_number: g2220
+section: SSL
+order: 04
 ---
 
 

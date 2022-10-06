@@ -66,25 +66,25 @@ Możesz zezwolić na dostęp do usługi backup storage z Twojego nowego serwera.
 
 Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem dotyczącym [Korzystanie z Backup Storage na serwerze dedykowanym](https://docs.ovh.com/pl/dedicated/usluga-backup-storage/#korzystanie-z-backup-storage){.external}.
 
-### Przeniesienie adresu IP Failover (dostępnego tylko w OVHcloud i So you Start)
+### Przeniesienie adresu Additional IP (dostępnego tylko w OVHcloud i So you Start)
 
 > [!warning]
 >
 > - Główny adres IP serwera nie może zostać przeniesiony na inny serwer.
 >
-> - Migracja adresu IP failover z konta So you Start na konto OVHcloud. Operacja ta jest fakturowana podobnie jak utworzenie nowego adresu IP.
+> - Migracja adresu Additional IP z konta So you Start na konto OVHcloud. Operacja ta jest fakturowana podobnie jak utworzenie nowego adresu IP.
 >
 > - Migracja adresu IP z konta OVHcloud do konta So you Start nie jest możliwa.
 >
 
-Jeśli reputacja Twoich adresów IP jest ważna, zalecamy korzystanie z adresów [IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/), które możesz zachować w przypadku migracji.
+Jeśli reputacja Twoich adresów IP jest ważna, zalecamy korzystanie z adresów [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/), które możesz zachować w przypadku migracji.
 
 Po otrzymaniu tych adresów IP wystarczy je przenieść na nowy serwer.
-W tym celu zapoznaj się z naszym przewodnikiem: [Przenieś IP Failover](https://docs.ovh.com/pl/dedicated/ip-fo-move/).
+W tym celu zapoznaj się z naszym przewodnikiem: [Przenieś Additional IP](https://docs.ovh.com/pl/dedicated/ip-fo-move/).
 
 > [!alert]
 >
-> Usunięcie oryginalnego serwera, na którym zamówiono jedną lub więcej opcji (Backup Storage, IP Failover), spowoduje definitywne usunięcie tych opcji.
+> Usunięcie oryginalnego serwera, na którym zamówiono jedną lub więcej opcji (Backup Storage, Additional IP), spowoduje definitywne usunięcie tych opcji.
 >
 > Przed usunięciem usługi należy wykonać wszystkie operacje.
 >

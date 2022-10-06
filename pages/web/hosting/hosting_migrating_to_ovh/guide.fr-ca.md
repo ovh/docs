@@ -3,6 +3,7 @@ title: Migrer son site et ses e-mails vers OVHcloud
 slug: migrer-mon-site-chez-ovh
 excerpt: Découvrez comment migrer votre site internet et vos e-mails vers OVHcloud sans interruption
 section: Premiers pas
+order: 08
 ---
 
 **Dernière mise à jour le 05/05/2020**

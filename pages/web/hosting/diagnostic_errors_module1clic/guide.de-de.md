@@ -3,7 +3,7 @@ title: Die häufigsten Fehler bei 1-Klick-Modulen beheben
 slug: fehler-bei-1-klick-modulen
 excerpt: Erfahren Sie hier, wie Sie die häufigsten Fehler bei der Erstellung von 1-Klick-Modulen beheben können
 section: Diagnose
-order: 2
+order: 02
 ---
 
 > [!primary]
@@ -13,7 +13,7 @@ order: 2
 
 **Letzte Aktualisierung am 08.10.2021**
 
-## Ziel
+## Ziel 
 
 Die Erstellung eines [1-Klick-Moduls](../webhosting_installation_von_webhosting-modulen/) im einfachen oder fortgeschrittenen Modus kann verschiedene Anomalien verursachen.
 

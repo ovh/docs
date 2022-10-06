@@ -23,7 +23,7 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 ## Requirements
 
-- You must have an OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovh.com/asia/dedicated-servers/){.external}, [VPS](https://www.ovh.com/asia/vps/){.external}, [Public Cloud instance](https://www.ovh.com/asia/public-cloud/instances/){.external}, [Hosted Private Cloud](https://www.ovh.com/asia/private-cloud/){.external},  [Failover IP](https://www.ovh.com/asia/dedicated-servers/ip_failover.xml){.external}, etc.)
+- You must have an OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovh.com/asia/dedicated-servers/){.external}, [VPS](https://www.ovh.com/asia/vps/){.external}, [Public Cloud instance](https://www.ovh.com/asia/public-cloud/instances/){.external}, [Hosted Private Cloud](https://www.ovh.com/asia/private-cloud/){.external},  [Additional IP](https://www.ovhcloud.com/asia/bare-metal/ip/){.external}, etc.)
 - You must have access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}.
 - You must have basic network skills
 

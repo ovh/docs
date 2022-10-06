@@ -196,7 +196,7 @@ Go to the `+ Front-ends`{.action} tab, and click `+TCP/TLS`{.action}.
 
 Fill in the fields. The only mandatory fields for a basic configuration are *Port* (25 for a standard SMTP service), *Zone* and *Probe*, if you configured a probe on your farm. If you want your service to be available across several ports at once, you can specify a list of ports, separated by commas, or a range of ports, in the format "start_port-end_port".
 
-If you have routed failover IPs to your OVH Load Balancer service, you can also attach a front-end to one or more specific failover IPs.
+If you have routed Additional IPs to your OVH Load Balancer service, you can also attach a front-end to one or more specific Additional IPs.
 
 Please remember to specify the farm you created earlier as a “default farm”.
 

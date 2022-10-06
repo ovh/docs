@@ -3,7 +3,7 @@ title: "Que faire en cas d'erreur « Votre connexion n'est pas privée » ?"
 excerpt: "Réagir en cas de message d'erreur lié à la sécurité de votre site"
 slug: erreur-site-non-securise
 section: Diagnostic
-order: 3
+order: 03
 ---
 
 **Dernière mise à jour le 08/07/2021**

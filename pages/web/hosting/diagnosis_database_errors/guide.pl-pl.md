@@ -3,7 +3,7 @@ title: Rozwiąż najczęstsze błędy związane z bazami danych
 excerpt: "Zdiagnozuj najczęstsze przypadki błędów związanych z bazami danych"
 slug: blad-baz-danych
 section: Diagnostyka
-order: 4
+order: 04
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 4
 
 **Ostatnia aktualizacja z dnia 03-02-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej stronie WWW lub w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), jak również w interfejsie [phpMyAdmin](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin).
 

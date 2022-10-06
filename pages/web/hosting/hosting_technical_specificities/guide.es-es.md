@@ -2,8 +2,8 @@
 title: 'Particularidades técnicas de los alojamientos compartidos'
 slug: web_hosting_particularidades_tecnicas_de_los_alojamientos_compartidos
 excerpt: 'Esta guía ofrece toda la información relativa a las particularidades técnicas de los alojamientos compartidos'
-legacy_guide_number: g1463
 section: 'Configuración del alojamiento'
+order: 05
 ---
 
 > [!primary]

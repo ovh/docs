@@ -3,7 +3,7 @@ title: Risolvere gli errori più frequenti associati ai moduli in 1 click
 slug: errori-frequenti-moduli-in-1-click
 excerpt: Diagnostica i casi più comuni di errore associati alla creazione di moduli in 1 click
 section: Diagnostica
-order: 2
+order: 02
 ---
 
 **Ultimo aggiornamento: 08/10/2021**

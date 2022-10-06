@@ -11,7 +11,7 @@ Ziel dieser Anleitung ist es, Sie bei der erstmaligen Verwendung des Loadbalance
 
 ## Voraussetzungen
 
-- Zugang zu Ihrem OVH Kundencenter
+- Zugang zu Ihrem OVHcloud Kundencenter
 - Bestellung des [Loadbalancers](https://www.ovh.com/fr/solutions/load-balancer)
 
 ## Beschreibung
@@ -29,7 +29,7 @@ Auf der Hauptseite finden Sie folgende Informationen:
 |Status|Zusammenfassung Ihres Loadbalancers mit dem Namen des Dienstes, den Frontends, den funktionsfähigen Farmen und den hinzugefügten Servern|
 |Verwendung|Zusammenfassung der Verwendung Ihres Loadbalancers|
 |Graphen|Hier finden Sie die mit Ihrer Dienstleistung verbundenen Graphen zur Anzahl der Simultanverbindungen oder der Anfragen pro Minute|
-|Informationen|Ihre IPv4 und die verbundenen Failover-IPs sowie die Anzahl der ausgehenden IPv4 (Details durch Klicken auf die Auslassungspunkte)|
+|Informationen|Ihre IPv4 und die verbundenen Additional IPs sowie die Anzahl der ausgehenden IPv4 (Details durch Klicken auf die Auslassungspunkte)|
 |Konfiguration|Hier können Sie den Namen Ihres Angebots (er erscheint oben und in der Spalte links) sowie die Ciphers anpassen. Außerdem wird hier das Rechenzentrum Ihres Loadbalancers angezeigt.|
 |Abo|Hier finden Sie die administrativen Details zu Ihrem Angebot|
 
@@ -62,7 +62,7 @@ Sie haben außerdem Zugriff auf die erweiterten Einstellungen:
 
 |Element|Funktion|
 |---|---|
-|Dedicated Failover-IP|Liste der Failover-IPs der Remote-Server|
+|Dedicated Additional IP|Liste der Additional IPs der Remote-Server|
 |Zugang auf bestimmte IPs begrenzen|Liste, die den Remote-Zugriff auf den Loadbalancer beschränkt, nur bei IPv4|
 |HTTP-Weiterleitung|Hinzufügen einer URL zur HTTP-Weiterleitung|
 |HTTP-Header|Hier fügen Sie einen HTTP-Header hinzu|

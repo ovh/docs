@@ -3,7 +3,7 @@ title: Was tun bei dem Fehler "Dies ist keine sichere Verbindung"?
 slug: fehler-website-nicht-gesichert
 excerpt: Erfahren Sie hier, wie Sie bei sicherheitsrelevanten Fehlermeldungen auf Ihrer Website vorgehen
 section: Diagnose
-order: 3
+order: 03
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 3
 
 **Letzte Aktualisierung am 08.07.2021**
  
-## Ziel <a name="objective"></a>
+## Ziel  <a name="objective"></a>
 
 Es können verschiedene Fehlermeldungen auftreten, wenn Ihre Website nicht erreichbar ist. Die nachfolgenden Beispiele zeigen an, dass Ihr Webhosting kein [SSL-Zertifikat](../ssl-zertifikate-auf-webhostings-verwalten/) enthält (wenn Ihre Website keine der in dieser Anleitung beschriebenen Fehlermeldungen anzeigt, gehen Sie zum Abschnitt [“Weiterführende Informationen“](#gofurther) in dieser Anleitung): 
 

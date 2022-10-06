@@ -6,7 +6,7 @@ section: "Tâches courantes"
 order: 01
 ---
 
-**Dernière mise à jour le 21/09/2022**
+**Dernière mise à jour le 06/10/2022**
 
 ## Objectif
 
@@ -367,7 +367,7 @@ Si vous changez l’extension d’un fichier, la variable *seeother* permet d'en
 >> Le script renverra un code HTTP 303.
 >>
 
-#### Variable 4 - « Redirect Temp »
+#### Variable 4 - « Redirect Temp » 
 
 Cette variable peut être utilisée lorsque vous déplacez temporairement des fichiers sur un autre site. Les visiteurs qui tentent d'accéder à votre site via l'adresse/URL historique sont automatiquement redirigés vers la nouvelle adresse/URL temporaire.
 

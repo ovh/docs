@@ -1,9 +1,9 @@
 ---
 title: 'Accélérer mon site web en utilisant le CDN'
 slug: accelerer-mon-site-web-en-utilisant-le-cdn
-legacy_guide_number: 1290
 excerpt: 'Améliorez votre site en accélérant son chargement sur votre hébergement Web grâce au CDN'
 section: 'Optimiser son site'
+order: 03
 ---
 
 **Dernière mise à jour le 23/12/2021**

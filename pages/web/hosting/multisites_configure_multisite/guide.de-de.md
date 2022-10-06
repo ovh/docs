@@ -3,7 +3,7 @@ title: 'Mehrere Websites auf einem Webhosting einrichten'
 slug: multisites-mehrere-websites-konfigurieren
 excerpt: 'Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden'
 section: 'Erste Schritte'
-order: 3
+order: 03
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 3
 
 **Letzte Aktualisierung am 22.08.2022**
 
-## Ziel
+## Ziel 
 
 Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch wenn die Domainnamen nicht bei OVHcloud registriert sind.
 

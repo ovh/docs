@@ -1,6 +1,6 @@
 ---
-title: "Setting up a Virtual Machine using Failover IPs and Hyper-V over a vRack"
-excerpt: "How to use Hyper-V with Failover-IPs over a vRack"
+title: "Setting up a Virtual Machine using Additional IPs and Hyper-V over a vRack"
+excerpt: "How to use Hyper-V with Additional IPs over a vRack"
 slug: foip-vrack-hyperv
 section: vRack
 ---
@@ -9,14 +9,14 @@ section: vRack
 
 ## Objective
 
-**This guide will take you through the process of installing Hyper-V, associating a virtual switch, and configuring a VM to work with Failover IPs over a vRack.**
+**This guide will take you through the process of installing Hyper-V, associating a virtual switch, and configuring a VM to work with Additional IPs over a vRack.**
 
 ## Requirements
 
 - A [vRack](https://www.ovh.ie/solutions/vrack/) compatible dedicated server with Windows Server installed
 - An ISO for the OS that will be installed on your VM (CentOS 7 will be used as an example in this guide)
 - A vRack delivered to your OVHcloud account
-- A Failover IP block of 4 or more IPs
+- An Additional IP block of 4 or more IPs
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 > [!warning]
