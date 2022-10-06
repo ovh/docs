@@ -10,6 +10,8 @@ order: 08
 
 ## Objectif
 
+Sylius est un _CMS Headless_ basé sur la framework PHP [Symfony](https://symfony.com/). L'outil propose les fonctionnalités habituelles que l'on peut rencontrer sur une plateforme e-commerce avec un _back office_ permettant de régler précisément tous les éléments du site. Enfin, son approche _headless_ permet de personnaliser au mieux la partie _front_de l'application.
+
 ## Prérequis
 
 ## En pratique
