@@ -92,7 +92,7 @@ W przypadku każdego użytkownika znajdziesz jego uprawnienia i różne informac
 - numer telefonu (opcjonalnie),
 - uprawnienie *token validator* pozwalające na zatwierdzanie wrażliwych operacji w infrastrukturach Managed Bare Metal,
 - uprawnienie *Ip* pozwalające na uzyskanie dostępu do wtyczki OVH network,
-- uprawnienie *Ip Failover* pozwalające na zarządzanie trybem IP Failover związanym z infrastrukturą Managed Bare Metal,
+- uprawnienie *Additional IP* pozwalające na zarządzanie trybem Additional IP związanym z infrastrukturą Managed Bare Metal,
 - stan (Diagnostyka) pozwalający sprawdzić, czy użytkownik został prawidłowo utworzony.
 
 Po kliknięciu przycisku `...`{.action} po prawej stronie tabeli pojawiają się następujące opcje:

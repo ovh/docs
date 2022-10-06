@@ -29,7 +29,7 @@ Nesta página principal serão apresentadas as seguintes informações:
 |Estado|Resumo do Load Balancer com IP, Frontends, Farms ativas e servidores adicionados|
 |Utilização|Resumo da utilização do Load Balancer|
 |Gráficos|Gráficos associados à atividade do serviço em termos de ligações simultâneas ou de pedidos de ligação por minuto|
-|Informações|Detalhes sobre os IPv4 e IP Failover associados, e sobre o número do IPv4 de saída (para ver mais info, clique nos três pontos)|
+|Informações|Detalhes sobre os IPv4 e Additional IP associados, e sobre o número do IPv4 de saída (para ver mais info, clique nos três pontos)|
 |Configuração|Opções de personalização do nome da oferta (visível em cima e na coluna à esquerda), da(s) cipher(s), do datacenter do Load Balancer|
 |Subscrição|Detalhes administrativos do serviço|
 
@@ -62,7 +62,7 @@ A gestão dos Frontends tem opções de configuração avançada.
 
 |Elemento|Função|
 |---|---|
-|IP Failover dedicado|Lista dos IP Failover dos servidores remotos|
+|Additional IP dedicado|Lista dos Additional IP dos servidores remotos|
 |Limitar acesso a IP|Lista que permite limitar os acessos remotos ao Load Balancer (só IPv4)|
 |Reencaminhamento HTTP|Adicionar um URL de reencaminhamento HTTP|
 |Cabeçalho HTTP|Adicionar cabeçalho HTTP|

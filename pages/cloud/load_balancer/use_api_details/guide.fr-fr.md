@@ -2800,9 +2800,9 @@ Accéder aux éléments relatifs au protocole UDP (frontend, ferme, etc.).
 
 ## Autres fonctionnalités
 
-### IP Failover
+### Additional IP
 
-#### Lister les IP Failovers routées sur un service Load Balancer OVHcloud
+#### Lister les Additional IPs routées sur un service Load Balancer OVHcloud
 
 > [!faq]
 >

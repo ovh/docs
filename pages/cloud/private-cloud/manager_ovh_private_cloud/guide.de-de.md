@@ -97,7 +97,7 @@ Zu jedem Benutzer finden Sie verschiedene Benutzerinformationen sowie die für d
 - Telefon-/Faxnummer (optional)
 - *token validator*-Berechtigung, erlaubt die Bestätigung kritischer Operationen auf Hosted Private Clouds mit HDS- oder PCI-DSS-Option
 - *IP*-Berechtigung, erlaubt Zugriff auf das "OVH Network Plugin"
-- *Failover-IP*-Berechtigung, erlaubt die Verwaltung von mit Ihrer Hosted Private Cloud verbundenen Failover-IPs
+- *Additional IP*-Berechtigung, erlaubt die Verwaltung von mit Ihrer Hosted Private Cloud verbundenen Additional IPs
 - *NSX-Interface*-Berechtigung, erlaubt Zugriff auf das NSX-Interface, wenn diese Option in Ihrer Hosted Private Cloud aktiviert ist
 - Status (Diagnose), zeigt an, ob der Benutzer erfolgreich erstellt wurde
 

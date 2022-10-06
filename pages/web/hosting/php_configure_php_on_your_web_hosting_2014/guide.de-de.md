@@ -17,7 +17,7 @@ Im Internet gibt es viele verschiedene Websites. Mit Ihrem [OVH Webhosting](http
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot (ausgenommen Cloud Web).
-- Je nach der verwendeten Methode benötigen Sie Zugriff auf die Verwaltung des Webhosting Angebots über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder die nötigen Login-Daten, um sich mit Ihrem Speicherplatz zu verbinden. 
+- Je nach der verwendeten Methode benötigen Sie Zugriff auf die Verwaltung des Webhosting Angebots über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder die nötigen Login-Daten, um sich mit Ihrem Speicherplatz zu verbinden. 
 
 ## Beschreibung
 
@@ -45,7 +45,7 @@ Außerdem können Sie die aktuell von Ihrem Webhosting verwendete PHP-Version au
 
 |Methode|Beschreibung|
 |---|---|
-|Über das Kundencenter|Loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Im Tab `Allgemeine Informationen`{.action} finden Sie die aktuelle Version unter „**Globale PHP Version**“. Erscheint ein blaues, rundes Symbol neben der Version, warten Sie einen Moment ab, bis die Versionsanzeige aktualisiert ist.|
+|Über das Kundencenter|Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Im Tab `Allgemeine Informationen`{.action} finden Sie die aktuelle Version unter „**Globale PHP Version**“. Erscheint ein blaues, rundes Symbol neben der Version, warten Sie einen Moment ab, bis die Versionsanzeige aktualisiert ist.|
 |Über ein Skript|Erstellen Sie ein **.php**-Skript, das ausschließlich den Code `<?php phpinfo(); ?>` enthält. Stellen Sie das Skript auf Ihrem Speicherplatz online und rufen Sie es auf, indem Sie auf die vollständige URL zugreifen.|
 
 ![php version](images/change-php-version-step1.png){.thumbnail}
@@ -58,7 +58,7 @@ Wenn Sie bereit sind, um die Änderung vorzunehmen, gehen Sie zum nächsten Schr
 
 Sie haben zwei Möglichkeiten, um die PHP-Version Ihres Webhostings zu ändern:
 
-- **über einen Konfigurationsassistenten in Ihrem Kundencenter**: Diese Option ist weniger technisch anspruchsvoll und setzt voraus, dass Sie in Ihrem OVH Kundencenter eingeloggt sind, um dort die gewünschten PHP-Version auszuwählen. Befolgen Sie hierzu die Anweisungen in der Anleitung [„Konfiguration Ihres Webhostings bearbeiten“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/){.external}.
+- **über einen Konfigurationsassistenten in Ihrem Kundencenter**: Diese Option ist weniger technisch anspruchsvoll und setzt voraus, dass Sie in Ihrem OVHcloud Kundencenter eingeloggt sind, um dort die gewünschten PHP-Version auszuwählen. Befolgen Sie hierzu die Anweisungen in der Anleitung [„Konfiguration Ihres Webhostings bearbeiten“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/){.external}.
 
 - **indem Sie manuell eine Datei auf Ihrem Speicherplatz bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind, um dort die Datei „.ovhconfig“ zu bearbeiten. Befolgen Sie hierzu die Anweisungen in der Anleitung [„.ovhconfig-Datei Ihres Webhostings konfigurieren“](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/){.external}.
 

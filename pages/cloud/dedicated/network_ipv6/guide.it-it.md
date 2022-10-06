@@ -39,7 +39,7 @@ Se per installare il tuo server utilizzi un template per il sistema operativo Li
 
 Ad esempio, se abbiamo assegnato al tuo server l'intervallo IPv6: `2607:5300:xxxx:xxxx::/64` è possibile utilizzare come IPv6 principale del tuo server l'IPv6: `2607:5300:xxxx:xxx::1/64`.
 
-Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM), è necessario disporre di un IP Failover configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch.
+Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM), è necessario disporre di un Additional IP configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch.
 
 > [!primary]
 >

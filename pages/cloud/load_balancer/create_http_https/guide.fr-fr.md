@@ -181,7 +181,7 @@ Dans l'onglet `Frontends`{.action}, cliquez sur le bouton `Ajouter un frontend`{
 
 Remplissez les champs. Les seuls champs obligatoires pour une configuration simple sont le *Protocole*, le *Port* (80 pour un service web HTTP standard) et le *Datacentre*. Si vous souhaitez que votre service soit disponible sur plusieurs ports en même temps, vous pouvez spécifier une liste de ports séparés par des virgules ou une plage de ports de la forme « START_PORT-END_PORT ».
 
-Si vous avez routé des IP Failover vers votre service OVHcloud Load Balancer, vous pouvez également attacher un frontend à une ou plusieurs IP Failover spécifiques.
+Si vous avez routé des Additional IP vers votre service OVHcloud Load Balancer, vous pouvez également attacher un frontend à une ou plusieurs Additional IP spécifiques.
 
 ![Ajout d'un frontend](images/add_frontend.png){.thumbnail}
 
@@ -243,7 +243,7 @@ Que vous optiez pour une configuration via l'API ou via l'espace client OVHcloud
 Si vous optez pour l'importation d'un certificat SSL/TLS commandé et géré par vos soins, vous devrez le renouveler périodiquement vous-même et le mettre à jour dans votre service OVHcloud Load Balancer. La majorité des certificats sont valides pour 1 an. Certains peuvent l'être plus longtemps. Les certificats Let's Encrypt ne sont quant à eux valides que 3 mois. Il est recommandé d'utiliser le service géré automatiquement par votre OVHcloud Load Balancer pour les certificats Let's Encrypt afin de ne pas accidentellement rater une échéance.
 
 Si vous optez pour un certificat géré par votre service OVHcloud Load Balancer, celui-ci sera automatiquement commandé, validé, installé et renouvelé périodiquement par votre OVHcloud Load Balancer.<br>
-Pour que les opération de validation et de renouvellement fonctionnent, il est nécessaire que le ou les domaines pour lesquels vous commandez ce certificat soient routés vers votre service OVHcloud Load Balancer. Cela implique que les champs *A* et *AAAA* de votre domaine pointent respectivement sur l'IPv4 et l'IPv6 de votre OVHcloud Load Balancer ou l'une de ses IP Failovers. Lors de la commande, vous recevrez un email qui vous guidera dans les étapes de la validation.
+Pour que les opération de validation et de renouvellement fonctionnent, il est nécessaire que le ou les domaines pour lesquels vous commandez ce certificat soient routés vers votre service OVHcloud Load Balancer. Cela implique que les champs *A* et *AAAA* de votre domaine pointent respectivement sur l'IPv4 et l'IPv6 de votre OVHcloud Load Balancer ou l'une de ses Additional IPs. Lors de la commande, vous recevrez un email qui vous guidera dans les étapes de la validation.
 
 > [!primary]
 >

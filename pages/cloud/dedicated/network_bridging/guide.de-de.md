@@ -9,7 +9,12 @@ section: Netzwerk & IP
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 14.01.2021**
+**Letzte Aktualisierung am 06.10.2022**
+
+> [!primary]
+>
+> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Dies hat keine weiteren Auswirkungen auf dessen Eigenschaften oder die Funktionalität Ihrer Dienstleistungen.
+>
 
 ## Ziel
 
@@ -22,7 +27,7 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) mit installiertem Hypervisor ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.).
-- Sie verfügen über mindestens eine mit dem Server verbundene [Failover IP](https://www.ovhcloud.com/de/bare-metal/ip/).
+- Sie verfügen über mindestens eine mit dem Server verbundene [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
@@ -34,21 +39,21 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 
 Die Grundschritte sind unabhängig von dem darunterliegenden System immer gleich:
 
-- Erstellung einer virtuellen MAC-Adresse für eine Failover IP
+- Erstellung einer virtuellen MAC-Adresse für eine Additional IP
 - Ändern der MAC-Adresse der virtuellen Maschine (VM) auf diese neue Adresse
 - Konfuguration von **IP-Adresse**, **Netzmaske**, **Gateway** und **Route zum Gateway** innerhalb der VM
 
 Die Codebeispiele in den folgenden Anweisungen sind durch Ihre eigenen Werte zu ersetzen:
 
 - "SERVER_IP": die Haupt-IP-Adresse Ihres Servers
-- "FAILOVER_IP": Ihre Failover IP-Adresse
+- "ADDITIONAL_IP": Ihre Additional IP-Adresse
 - "GATEWAY_IP": die Adresse des Default-Gateways
 
 ### Schritt 1: Eine virtuelle MAC-Adresse zuweisen
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, gehen Sie zum Bereich `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}.
 
-Das Drop-down-Menü “Dienst” erlaubt es Ihnen, nach Failover-IP-Adressen zu filtern.
+Das Drop-down-Menü “Dienst” erlaubt es Ihnen, nach Additional IP-Adressen zu filtern.
 
 ![manage IPs](images/manageIPs.png){.thumbnail}
 
@@ -119,9 +124,9 @@ Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (De
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
-    address FAILOVER_IP
+    address ADDITIONAL_IP
     netmask 255.255.255.255
-    broadcast FAILOVER_IP
+    broadcast ADDITIONAL_IP
     post-up route add GATEWAY_IP dev eth0
     post-up route add default gw GATEWAY_IP
     pre-down route del GATEWAY_IP dev eth0
@@ -134,9 +139,9 @@ iface eth0 inet static
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
-    address FAILOVER_IP
+    address ADDITIONAL_IP
     netmask 255.255.255.255
-    broadcast FAILOVER_IP
+    broadcast ADDITIONAL_IP
     post-up ip route add GATEWAY_IP dev eth0
     post-up ip route add default via GATEWAY_IP
     pre-down ip route del GATEWAY_IP dev eth0
@@ -164,7 +169,7 @@ IPV6INIT=no
 PEERDNS=yes
 TYPE=Ethernet
 NETMASK=255.255.255.255
-IPADDR=FAILOVER_IP
+IPADDR=ADDITIONAL_IP
 GATEWAY=GATEWAY_IP
 ARP=yes
 HWADDR=MY:VI:RT:UA:LM:AC
@@ -198,7 +203,7 @@ IPV6INIT=no
 PEERDNS=yes
 TYPE=Ethernet
 NETMASK=255.255.255.255
-IPADDR=FAILOVER_IP
+IPADDR=ADDITIONAL_IP
 GATEWAY=GATEWAY_IP
 ARP=yes
 HWADDR=MY:VI:RT:UA:LM:AC
@@ -227,7 +232,7 @@ Speichern und schließen Sie die Datei und starten Sie den Netzwerkdienst oder d
 Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/rc.conf` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.) In diesem Beispiel lautet der Name des Interface "em0". Ersetzen Sie diesen Wert nötigenfalls.
 
 ```console
-ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
+ifconfig_em0="inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP"
 static_routes="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
 route_net2="default GATEWAY_IP"
@@ -257,7 +262,7 @@ network:
     ethernets:
         (interface-name):
             addresses:
-                - FAILOVER_IP/32
+                - ADDITIONAL_IP/32
             nameservers:
                 addresses:
                     - 213.186.33.99
@@ -301,9 +306,9 @@ Wählen Sie den Adapter mit der IP-Adresse des Servers aus und haken Sie die Opt
 >Dieser Schritt ist nur einmal für einen Hyper-V Server erforderlich. Für alle VMs ist ein **virtueller Switch** erforderlich, um die **virtuellen Netzwerkkarten** der VM mit dem **physischen Adapter** des Servers zu verbinden.
 > 
 
-Wählen Sie nun die VM aus, zu der Sie die Failover IP hinzufügen möchten. Verwenden Sie den Hyper-V Manager, um die Einstellungen der virtuellen Maschine zu ändern, und fahren Sie sie herunter.
+Wählen Sie nun die VM aus, zu der Sie die Additional IP hinzufügen möchten. Verwenden Sie den Hyper-V Manager, um die Einstellungen der virtuellen Maschine zu ändern, und fahren Sie sie herunter.
 
-Erweitern Sie den Netzwerkadapter im linken Menü und klicken Sie auf `Erweiterte Einstellungen`{.action}. Ändern Sie die MAC-Adresse auf `Statisch`{.action} und geben Sie die virtuelle MAC-Adresse für die Failover IP ein. Klicken Sie anschließend auf `OK`{.action}, um die Änderungen anzuwenden.
+Erweitern Sie den Netzwerkadapter im linken Menü und klicken Sie auf `Erweiterte Einstellungen`{.action}. Ändern Sie die MAC-Adresse auf `Statisch`{.action} und geben Sie die virtuelle MAC-Adresse für die Additional IP ein. Klicken Sie anschließend auf `OK`{.action}, um die Änderungen anzuwenden.
 
 ![networkbridging](images/network-bridging-windows-2012-2.jpg){.thumbnail}
 
@@ -313,7 +318,7 @@ Wählen Sie `Internet Protocol Version 4 (TCP/IPv4)`{.action} aus und klicken Si
 
 ![networkbridging](images/network-bridging-windows-2012-3.jpg){.thumbnail}
 
-Wählen Sie im Fenster mit den IPv4-Eigenschaften `Die folgende IP-Adresse verwenden`{.action}. Tragen Sie die Failover IP im IP-Adressfeld ein und geben Sie als Subnetzmaske "255.255.255.255" ein.
+Wählen Sie im Fenster mit den IPv4-Eigenschaften `Die folgende IP-Adresse verwenden`{.action}. Tragen Sie die Additional IP im IP-Adressfeld ein und geben Sie als Subnetzmaske "255.255.255.255" ein.
 
 Geben Sie anschließend die IP-Adresse des Gateways Ihres Servers im zugehörigen Feld ein und tragen Sie im Feld `Bevorzugter DNS Server`{.action} "213.186.33.99" ein.
 
@@ -321,24 +326,24 @@ Klicken Sie auf `OK`{.action} und ignorieren Sie die nachfolgende Warnmeldung.
 
 ![networkbridging](images/network-bridging-windows-2012-4.jpg){.thumbnail}
 
-Nach Neustart des Servers sollte die VM über die Failover IP mit dem Internet verbunden sein.
+Nach Neustart des Servers sollte die VM über die Additional IP mit dem Internet verbunden sein.
 
 #### Troubleshooting
 
 Wenn Sie nicht in der Lage sind, eine Verbindung zwischen Ihrer VM und dem öffentlichen Netzwerk herzustellen, und Sie Netzwerkprobleme vermuten, starten Sie den Server im Rescue-Modus neu und konfigurieren Sie das Bridging-Netzwerk direkt auf dem Host.
 
-Hierzu geben Sie die folgenden Befehle ein, wobei Sie die Parameter "MAC_ADDRESS" mit der im Kundencenter erzeugten vMAC ersetzen und "FAILOVER_IP" mit Ihrer Failover IP:
+Hierzu geben Sie die folgenden Befehle ein, wobei Sie die Parameter "MAC_ADDRESS" mit der im Kundencenter erzeugten vMAC ersetzen und "ADDITIONAL_IP" mit Ihrer Additional IP:
 
 ```bash
 ip link add name test-bridge link eth0 type macvlan
 ip link set dev test-bridge address MAC_ADDRESS
 ip link set test-bridge up
-ip addr add FAILOVER_IP/32 dev test-bridge
+ip addr add ADDITIONAL_IP/32 dev test-bridge
 ```
 
-Pingen Sie nun Ihre Failover IP von einem externen Gerät aus an. 
+Pingen Sie nun Ihre Additional IP von einem externen Gerät aus an. 
 
-- Wenn der Host antwortet, bedeutet das wahrscheinlich, dass es auf der virtuellen Maschine oder dem Host einen Konfigurationsfehler gibt, der die Failover IP daran hindert, im normalen Betrieb zu funktionieren.
+- Wenn der Host antwortet, bedeutet das wahrscheinlich, dass es auf der virtuellen Maschine oder dem Host einen Konfigurationsfehler gibt, der die Additional IP daran hindert, im normalen Betrieb zu funktionieren.
 
 - Wenn die IP-Adresse immer noch nicht reagiert, erstellen Sie ein Ticket in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), um Ihre Testergebnisse an unsere Support-Teams weiterzuleiten. 
 

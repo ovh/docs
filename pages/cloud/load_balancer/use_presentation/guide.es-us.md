@@ -37,7 +37,7 @@ Este nuevo servicio incluye:
 - protección anti-DDoS de OVHcloud
 - soporte de zonas múltiples (Anycast)
 - soporte HTTP/HTTPS avanzado (redireccionamiento, cabeceras, ACL...)
-- compatibilidad con una IP Failover
+- compatibilidad con una Additional IP
 - compatibilidad con el vRack
 - redundancia: el Load Balancer funciona en instancias separadas, que a su vez funcionan en equipos separados y redundantes
 
@@ -88,9 +88,9 @@ En caso de mantenimiento planificado en su infraestructura, es posible deshabili
 
 Es posible combinar diferentes servicios de OVHcloud en el Load Balancer, como por ejemplo:
 
-- instancias de Public Cloud con IP Failover
-- VPS con IP Failover
-- servidores dedicados con IP Failover
+- instancias de Public Cloud con Additional IP
+- VPS con Additional IP
+- servidores dedicados con Additional IP
 - vRack
 
 ![Combinar servicios](images/mix_and_match.png){.thumbnail}

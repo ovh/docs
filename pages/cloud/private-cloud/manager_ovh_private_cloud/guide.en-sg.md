@@ -95,7 +95,7 @@ For each user, their general information and the rights granted to them are spec
 - the phone number (optional)
 - the right *token validator*, which allows to validate sensitive operations on a Hosted Private Cloud with the options HDS or PCI-DSS
 - the right *IP*, which allows access with the OVHcloud Network plugin
-- the right *Failover IP*, which allows to manage Failover IPs on the Hosted Private Cloud
+- the right *Additional IP*, which allows to manage Additional IPs on the Hosted Private Cloud
 - the right *NSX Interface*, which allows access to the NSX interface if this option is activated on your Private Cloud
 - the *Diagnosis* status, informing you whether this user is actually enabled
 

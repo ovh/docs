@@ -66,7 +66,7 @@ Durch die Wiederherstellung werden die Dateien durch das Backup ersetzt.
 
 
 ## Wiederherstellung der Dateien via FTP
-Über das OVH Kundencenter können Sie Ihren gesamten FTP-Bereich wiederherstellen. Dies kann aber kompliziert sein, wenn mehrere Domains mit demselben Hosting verbunden sind.
+Über das OVHcloud Kundencenter können Sie Ihren gesamten FTP-Bereich wiederherstellen. Dies kann aber kompliziert sein, wenn mehrere Domains mit demselben Hosting verbunden sind.
 
 In solchen Fällen ist es sinnvoller, nur das betroffene Verzeichnis wiederherzustellen. Eine Hilfe dazu finden Sie [hier](https://www.ovh.de/g1593.webhosting_abruf_einer_vollstandigen_sicherung_oder_einer_bestimmten_datei_per_ftp_mit_filezilla).
 
@@ -106,9 +106,9 @@ Wenn mehrere Webseiten auf demselben Hosting platziert sind, muss der Dateitrans
 
 Die wp-config.php-Datei muss ebenfalls geändert werden, damit die Verbindung zur Datenbank funktioniert.
 
-Rufen Sie hierfür die E-Mail wieder auf, die Sie nach Erstellung Ihrer Datenbank erhalten haben. Sie finden diese E-Mail in Ihrem OVH Kundencenter, Bereich "Mein Account" > "Empfangene E-Mails". Darin sind alle notwendigen Informationen enthalten, mit Ausnahme des Passworts, das nur Sie alleine kennen.
+Rufen Sie hierfür die E-Mail wieder auf, die Sie nach Erstellung Ihrer Datenbank erhalten haben. Sie finden diese E-Mail in Ihrem OVHcloud Kundencenter, Bereich "Mein Account" > "Empfangene E-Mails". Darin sind alle notwendigen Informationen enthalten, mit Ausnahme des Passworts, das nur Sie alleine kennen.
 
-Wenn Sie das Passwort Ihrer Datenbank vergessen haben, können Sie es über das OVH Kundencenter ändern. Wie das geht, erfahren Sie in [dieser Hilfe](https://www.ovh.de/g1374.webhosting_meine_seite_online_stellen).
+Wenn Sie das Passwort Ihrer Datenbank vergessen haben, können Sie es über das OVHcloud Kundencenter ändern. Wie das geht, erfahren Sie in [dieser Hilfe](https://www.ovh.de/g1374.webhosting_meine_seite_online_stellen).
 Denken Sie daran, anschließend über Ihr WordPress Admin-Interface nach möglichen Updates zu suchen.
 
 

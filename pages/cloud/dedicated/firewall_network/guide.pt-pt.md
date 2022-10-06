@@ -28,7 +28,7 @@ Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OV
 
 ## Requisitos
 
-- Dispor de um serviço OVHcloud com Network Firewall incluída: [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/pt/vps/){.external}, [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/){.external}, etc.
+- Dispor de um serviço OVHcloud com Network Firewall incluída: [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/pt/vps/){.external}, [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/){.external}, etc.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!warning]

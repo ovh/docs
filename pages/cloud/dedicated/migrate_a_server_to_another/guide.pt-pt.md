@@ -66,25 +66,25 @@ Pode autorizar o acesso ao armazenamento de backup a partir do seu novo servidor
 
 Para mais informações, consulte o nosso guia sobre [utilizar o Backup Storage num servidor dedicado](https://docs.ovh.com/pt/dedicated/servicos-backup-storage/){.external}.
 
-### Migração de um IP Failover (disponível apenas na OVHcloud e So you Start)
+### Migração de um Additional IP (disponível apenas na OVHcloud e So you Start)
 
 > [!warning]
 >
 > - O endereço IP principal de um servidor não pode ser migrado para outro servidor.
 >
-> - A migração de um IP failover é possível a partir de uma conta So you Start para uma conta OVHcloud. Esta operação é faturada da mesma forma que a criação de um novo IP.
+> - A migração de um Additional IP é possível a partir de uma conta So you Start para uma conta OVHcloud. Esta operação é faturada da mesma forma que a criação de um novo IP.
 >
 > - Não é possível efetuar a migração de um IP a partir de uma conta OVHcloud para uma conta So you Start.
 >
 
-Se a reputação dos seus endereços IP é importante, recomendamos vivamente que utilize endereços [IP failover](https://www.ovhcloud.com/pt/bare-metal/ip/)migração, pois estes podem ser conservados se efetuar uma migração.
+Se a reputação dos seus endereços IP é importante, recomendamos vivamente que utilize endereços [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)migração, pois estes podem ser conservados se efetuar uma migração.
 
 Quando tiver estes endereços IP, basta migrá-los para o novo servidor.
-Para isso, consulte o nosso guia sobre: [Migrar um IP Failover](https://docs.ovh.com/pt/dedicated/ip-fo-move/).
+Para isso, consulte o nosso guia sobre: [Migrar um Additional IP](https://docs.ovh.com/pt/dedicated/ip-fo-move/).
 
 > [!alert]
 >
-> A eliminação do servidor de origem, no qual foram encomendadas uma ou várias opções (Backup storage, IP failover), eliminará definitivamente estas opções.
+> A eliminação do servidor de origem, no qual foram encomendadas uma ou várias opções (Backup storage, Additional IP), eliminará definitivamente estas opções.
 >
 > Por isso, é necessário efetuar todas as modificações antes de eliminar o serviço.
 >

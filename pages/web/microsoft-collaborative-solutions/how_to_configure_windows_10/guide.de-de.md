@@ -46,7 +46,7 @@ Geben Sie nun folgende Informationen ein:
 |Kennwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
 |Benutzername|Geben Sie die vollständige E-Mail-Adresse ein.|
 |Domain|Nichts eingeben.|
-|Server|Tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Sie finden die Angaben zum Server im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, indem Sie den entsprechenden Exchange Dienst auswählen, auf den Tab `Allgemeine Informationen`{.action} klicken und dort in den Bereich `Verbindung`{.action} gehen.|
+|Server|Tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Sie finden die Angaben zum Server im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, indem Sie den entsprechenden Exchange Dienst auswählen, auf den Tab `Allgemeine Informationen`{.action} klicken und dort in den Bereich `Verbindung`{.action} gehen.|
 |Server erfordert eine verschlüsselte Verbindung (SSL)|Lassen Sie diesen Haken gesetzt.|
 |Kontoname|Geben Sie einen Namen für diesen Account ein, damit Sie ihn später von anderen Accounts in Ihrer Mail App unterscheiden können.|
 

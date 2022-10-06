@@ -67,25 +67,25 @@ Puedes autorizar el acceso al Backup Storage desde tu nuevo servidor. De este mo
 
 Para más información, consulte nuestra guía sobre [utilizar Backup Storage en un servidor dedicado](https://docs.ovh.com/es/dedicated/servicio-backup-storage/).
 
-### Migración de una dirección IP failover (disponible únicamente en OVHcloud y So you Start)
+### Migración de una dirección Additional IP (disponible únicamente en OVHcloud y So you Start)
 
 > [!warning]
 >
 > - La dirección IP principal de un servidor no puede migrarse a otro servidor.
 >
-> - Es posible migrar una IP failover desde una cuenta de So you Start a una cuenta de OVHcloud. Esta operación se factura al igual que la creación de una nueva IP.
+> - Es posible migrar una Additional IP desde una cuenta de So you Start a una cuenta de OVHcloud. Esta operación se factura al igual que la creación de una nueva IP.
 >
 > - No es posible migrar una IP desde una cuenta de OVHcloud a una cuenta de So you Start.
 >
 
-Si la reputación de sus direcciones IP es importante, le recomendamos encarecidamente que utilice las direcciones [IP failover](https://www.ovhcloud.com/es-es/bare-metal/ip/), ya que pueden conservarse si se migra.
+Si la reputación de sus direcciones IP es importante, le recomendamos encarecidamente que utilice las direcciones [Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/), ya que pueden conservarse si se migra.
 
-Una vez que disponga de estas direcciones IP failover, solo tiene que moverlas al nuevo servidor.
-Para ello, consulte nuestra guía: [Mover una IP failover](https://docs.ovh.com/es/dedicated/ip-fo-move/).
+Una vez que disponga de estas direcciones Additional IP, solo tiene que moverlas al nuevo servidor.
+Para ello, consulte nuestra guía: [Mover una Additional IP](https://docs.ovh.com/es/dedicated/ip-fo-move/).
 
 > [!alert]
 >
-> La eliminación del servidor de origen, en el que se han contratado una o más opciones (Backup storage, dirección IP failover), eliminará definitivamente estas opciones.
+> La eliminación del servidor de origen, en el que se han contratado una o más opciones (Backup storage, dirección Additional IP), eliminará definitivamente estas opciones.
 >
 > Es necesario realizar todos los cambios antes de eliminar el servicio.
 >

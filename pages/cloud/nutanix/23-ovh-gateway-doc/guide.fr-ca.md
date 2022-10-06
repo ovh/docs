@@ -31,7 +31,7 @@ La VM est basée sur Ubuntu 20.04 LTS (« The Focal Fossa »).
 
 La passerelle OVHgateway a un design léger, avec 2 NICs, 1 vCPU, 1 GB de mémoire et 20 GiB d'espace-disque.
 
-`ens3` est l'interface pour le réseau externe et possède l'adresse IP Failover.<br>
+`ens3` est l'interface pour le réseau externe et possède l'adresse Additional IP.<br>
 `ens4` est l'interface pour le réseau interne.
 
 > [!primary]
@@ -129,15 +129,15 @@ final_message: "The system is finally up, after $UPTIME seconds"
 
 Pour redéployer la VM de la passerelle, vous aurez besoin des éléments suivants :
 
-- Adresse IP Failover
+- Adresse Additional IP
 - Sous-réseau LAN (sous-réseau des hyperviseurs CVM, Prism Central, AHV)
 - Nom du sous-réseau
 
-##### **Vérifier l'adresse IP failover**
+##### **Vérifier l'adresse Additional IP**
 
-Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et accédez à la gestion de votre [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}. Vérifiez l'adresse IP failover utilisée par le cluster Nutanix.
+Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et accédez à la gestion de votre [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}. Vérifiez l'adresse Additional IP utilisée par le cluster Nutanix.
 
-![ip failover](images/check_subnet0.png){.thumbnail}
+![Additional IP](images/check_subnet0.png){.thumbnail}
 
 > [!primary]
 > Les instructions suivantes vont utiliser le bloc IP 123.45.6.78/30 à titre d'exemple.
@@ -268,15 +268,15 @@ Cliquez sur `Next`{.action}, puis sur `Create VM`{.action}.
 
 Pour redéployer la VM de la passerelle, vous aurez besoin des éléments suivants :
 
-- Adresse IP Failover
+- Adresse Additional IP
 - Sous-réseau LAN (sous-réseau des hyperviseurs CVM, Prism Central, AHV)
 - Nom du sous-réseau
 
-##### **Vérifier l'adresse IP failover**
+##### **Vérifier l'adresse Additional IP**
 
-Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et accédez à la gestion de votre [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}. Vérifiez l'adresse IP failover utilisée par le cluster Nutanix.
+Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et accédez à la gestion de votre [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}. Vérifiez l'adresse Additional IP utilisée par le cluster Nutanix.
 
-![ip failover](images/check_subnet0.png){.thumbnail}
+![Additional IP](images/check_subnet0.png){.thumbnail}
 
 > [!primary]
 > Les instructions suivantes vont utiliser le bloc IP 123.45.6.78/30 à titre d'exemple.

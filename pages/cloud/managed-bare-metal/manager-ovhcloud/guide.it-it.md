@@ -96,7 +96,7 @@ Per ogni utente troverai informazioni relative all’utente e ai permessi applic
 - numero di telefono (facoltativo)
 - il permesso *token validator*, che consente di confermare le operazioni sensibili.
 - il permesso *Ip*, che consente di accedere al plugin OVH network
-- il permesso *Ip Failover*, che consente di gestire gli IP Failover associati al tuo Managed Bare Metal.
+- il permesso *Additional IP*, che consente di gestire gli Additional IP associati al tuo Managed Bare Metal.
 - lo stato (Diagnostica), che consente di vedere se l’utente è stato creato.
 
 cliccando sui tre puntini `...`{.action} in corrispondenza dell’utente, vengono mostrate diverse opzioni che permettono di:

@@ -14,7 +14,7 @@ order: 6
 
 ## Ziel
 
-Bei den High Grade & SCALE Reihen ist der Betrieb von Failover-IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Failover-IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
+Bei den High Grade & SCALE Reihen ist der Betrieb von Additional IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Additional IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
 
 > [!primary]
 >
@@ -47,7 +47,7 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Failover-IPs im *Bridged*-
 > Derzeit ist ein bekannter Fehler in der grafischen Benutzeroberfläche von ESXi vorhanden. Die Ausführung der Schritte in diesem Interface würde daher zu einer nicht funktionalen Konfiguration führen. Es ist absolut notwendig, diese Konfiguration über das SSH-Kommandozeileninterface anzuwenden.
 >
 
-### Failover-IP über vRack
+### Additional IP über vRack
 
 Fügen Sie Ihren öffentlichen IP-Adressblock zum vRack hinzu. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und öffnen Sie `vRack`{.action}.
 

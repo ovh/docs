@@ -28,7 +28,7 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 
 ## Wymagania początkowe
 
-- Korzystanie z usługi OVHcloud ze zintegrowaną zaporą ogniową, Network Firewall: ([Serwer Dedykowany](https://www.ovhcloud.com/pl/bare-metal/){.external}, [serwer VPS](https://www.ovhcloud.com/pl/vps/){.external}, [instancje Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/){.external}, etc.)
+- Korzystanie z usługi OVHcloud ze zintegrowaną zaporą ogniową, Network Firewall: ([Serwer Dedykowany](https://www.ovhcloud.com/pl/bare-metal/){.external}, [serwer VPS](https://www.ovhcloud.com/pl/vps/){.external}, [instancje Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/){.external}, etc.)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 > [!warning]
