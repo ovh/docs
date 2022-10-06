@@ -127,7 +127,7 @@ Esta opção permite, após a introdução do domínio reencaminhado, apresentar
 >>
 >> ![Etapa 5](images/Step5VisiPerma.png){.thumbnail}
 >>
->> Clique em `Confirmer`{.action} para validar a sua configuração.
+>> Clique em `Validar`{.action} para validar a sua configuração.
 >> 
 >> > [!primary]
 >> >
@@ -194,7 +194,7 @@ De facto, o posicionamento nos motores de busca é menos eficiente do que com um
 >>
 >> ![Etapa 5](images/Step5VisiTempo.png){.thumbnail}
 >>
->> Clique em `Confirmer`{.action} para validar a sua configuração.
+>> Clique em `Validar`{.action} para validar a sua configuração.
 >> 
 >> > [!primary]
 >> >
@@ -257,7 +257,7 @@ Esta encapsulação permite impedir os visitantes do seu site de visualizar o do
 >>
 > **Etapa 4**
 >>
->> Selecione `Temporaire (iframe)`{.action} de entre as duas opções indicadas e introduza o domínio ou o URL alvo do seu reencaminhamento no formulário `Endereço web`{.action} que é apresentado.
+>> Selecione `Temporário (iframe)`{.action} de entre as duas opções indicadas e introduza o domínio ou o URL alvo do seu reencaminhamento no formulário `Endereço web`{.action} que é apresentado.
 >>
 >>![Etapa 4](images/Step4Invi.png){.thumbnail}
 >>
@@ -275,7 +275,7 @@ Esta encapsulação permite impedir os visitantes do seu site de visualizar o do
 >>
 >>![Etapa 5](images/Step5Invi.png){.thumbnail}
 >>
->> Clique em `Confirmer`{.action} para validar a sua configuração.
+>> Clique em `Validar`{.action} para validar a sua configuração.
 >> 
 >> > [!primary]
 >> >

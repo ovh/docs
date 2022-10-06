@@ -299,7 +299,7 @@ Tra questi comandi, è possibile creare reindirizzamenti.
 
 Gestire un file ".htaccess" può rendere il tuo sito inaccessibile. In caso di dubbio, contatta uno dei [fornitori specializzati](https://partner.ovhcloud.com/it/).
 
-Per maggiori informazioni, consulta la nostra guida sul.htaccess nella sezione ["Per saperne di più"](#go-further) di questa guida.
+Per maggiori informazioni, consulta la nostra guida sul .htaccess nella sezione ["Per saperne di più"](#go-further) di questa guida.
 
 > [!success]
 >

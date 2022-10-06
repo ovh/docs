@@ -166,7 +166,7 @@ En efecto, el posicionamiento en los motores de búsqueda es menos potente que c
 >>
 > **Etapa 2**
 >>
->> Seleccione `Hacia una dirección Web`{.action}".
+>> Seleccione `Hacia una dirección Web`{.action}.
 >>
 >> ![Etapa 2](images/Step2.png){.thumbnail}
 >>
@@ -229,7 +229,7 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 >
 
 > [!tabs]
-> **Etape 1**
+> **Etapa 1**
 >>
 >> En la ventana, su dominio a redirigir ya aparece. Introduzca el formulario **únicamente** si desea redirigir un *subdominio*.
 >>
@@ -241,7 +241,7 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 >>
 > **Etapa 2**
 >>
->> Seleccione `Hacia una dirección Web`{.action}".
+>> Seleccione `Hacia una dirección Web`{.action}.
 >>
 >> ![2](images/Step2.png){.thumbnail}
 >>
