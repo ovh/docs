@@ -150,7 +150,7 @@ Pode configurar o seu endereço de e-mail no dispositivo que desejar (smartphone
 > [!tabs]
 > **Windows**
 >>
->> - [Correio no Windows 10(EN)](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)
+>> - [Correio no Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)(EN)
 >> - [Outlook](https://docs.ovh.com/pt/emails/configuracao-outlook-2016/)
 >> - [Thunderbird](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/)
 >>
@@ -163,11 +163,11 @@ Pode configurar o seu endereço de e-mail no dispositivo que desejar (smartphone
 >>
 > **Android**
 >>
->> - [Android(EN)](https://docs.ovh.com/gb/en/emails/configuration-android/)
+>> - [Android](https://docs.ovh.com/gb/en/emails/configuration-android/)(EN)
 >>
 > **Outro**
 >>
->> - [Interface Gmail(EN)](https://docs.ovh.com/gb/en/emails/gmail-configuration/)
+>> - [Interface Gmail](https://docs.ovh.com/gb/en/emails/gmail-configuration/)(EN)
 >>
 
 Se pretender obter mais informações sobre os elementos necessários para configurar o seu endereço de e-mail, consulte as configurações que deverá utilizar:
