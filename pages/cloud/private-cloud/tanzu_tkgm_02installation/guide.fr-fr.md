@@ -52,10 +52,7 @@ A la fin de l'installation sept machines virtuelles supplémentaires seront sur 
 
 ### Importation du modèle OVA pour **Tanzu KUBERNETES Grid** dans votre infrastructure
 
-VMware fournit une machine virtuelle sous forme de modèle OVA qui contient tous les éléments pour faire fonctionner un nœud du cluster **Tanzu Kubernetes Grid**. 
-
-Télécharger le fichier sur ce lien [TKGm 1.6](https://plik.fromsync.net/file/N2lNlyPmbnpIPgy6/NtXXkn9kOCyTh7pc/photon-3-kube-v1.23.8+vmware.2-tkg.2-81d1a7892ad39f017fbaf59f9907cbe7.ova), ensuite suivez ces instructions :
-
+VMware fournit une machine virtuelle sous forme de modèle OVA qui contient tous les éléments pour faire fonctionner un nœud du cluster **Tanzu Kubernetes Grid**. Ce modèle est disponible dans les modèles fournies par OVHcloud. 
 
 Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster`{.action}, ensuite choisissez `Déployer un modèle OVF`{.action}.
 
@@ -121,9 +118,9 @@ Allez dans `Machines virtuelles (et modèles)`{.action} pour voir le modèle cr�
 
 ### Installation de la machine virtuelle **Bootstrap** fourni par OVHcloud
 
-Cette machine virtuelle a été créée par OVHcloud à partir de cette documentation [Installation manuelle de l'outil CLI pour le déploiement de **Tanzu Kubernetes GRID**](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html).
+Cette machine virtuelle a été créée par OVHcloud à partir de cette documentation [Installation manuelle de l'outil CLI pour le déploiement de **Tanzu Kubernetes GRID**](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html). 
 
-Télécharger le modèle OVA de cette machine virtuelle à partir de cette adresse [Bootstrap Ubuntu & TKGm with Gnome](https://plik.fromsync.net/file/KaTpyPAT7NIUGG2E/UvZfTQjNrXl7JnnX/Ubuntu-22.04_TKGm-1.6_with_x.ova).
+Cette machine virtuelles est disponible dans les **OVHTemplates**.
 
 Au travers de l'interface vSphere faites un clic droit sur le `cluster`{.action} et choisissez dans le menu `Déployer un modèle OVF`{.action}.
 
