@@ -60,8 +60,6 @@ Si la zone DNS active de votre domaine est gérée dans votre [espace client OVH
 >
 > Si vous avez activé les options `CDN`{.action} ou `IP du pays`{.action} avec votre domaine, utilisez l'adresse IP adaptée à l'aide de notre documentation recensant [l'ensemble des adresses IP de nos hébergements mutualisés](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/).
 >
-> Pour retrouver le cluster où se trouve votre hébergement web, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `hébergements`{.action}, sélectionnez votre hébergement puis l'onglet `FTP-SSH`{.action}. Vous visualiserez le numéro du cluster dans le formulaire **"Serveur FTP et SFTP"** : ftp.cluster0XX.ovh.net (où les "X" représentent le numéro de cluster).
->
 
 Si non, contactez l'hébergeur de votre zone DNS active pour mettre à jour le pointage de votre nom de domaine.
 
@@ -103,7 +101,23 @@ Une fois créée, récupérez les paramètres de connexion à votre base de donn
 
 #### 2.1 : récupérer les fichiers sources de WordPress
 
-Rendez-vous sur le site du développeur de [WordPress](http://fr.wordpress.org/){.external} pour télécherger sur votre appareil les fichiers sources du CMS.
+Rendez-vous sur le site du développeur de [WordPress](https://wordpress.org/download/#download-install){.external} pour télécharger sur votre appareil les fichiers sources du CMS.
+
+![hosting](images/downloadWP.png){.thumbnail}
+
+> [!Primary]
+> 
+> Profitez-en pour récupérer sur la page de téléchargement la version "PHP" ainsi que la version "MySQL" ou "MariaDB" requise pour faire fonctionner votre WordPress.
+>
+> Configurez ensuite la version de "PHP" de votre hébergement web à l'aide de notre documentation sur [le changement de version PHP de son hébergement web](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
+>
+> Si vous utilisez déjà une version de "PHP" suppérieure ou égale à celle requise, n'effectuez pas de changements.
+>
+
+> [!Warning]
+> 
+> Si vous avez d'autres sites hébergés sur votre offre d'hébergement web, vérifiez que ces derniers sont compatibles avec la version de "PHP" que vous choisirez pour votre WordPress.
+>
 
 #### 2.2 : décompresser les fichiers sources téléchargés dans un nouveau dossier
 
@@ -114,8 +128,6 @@ Pour cela, ouvrez le dossier dans lequel vous avez téléchargé le fichier comp
 Indiquez le dossier "**wordpress**" en destination afin d'extraire vos fichiers dans ce dossier.
 
 Si besoin, vous trouverez sur Internet différentes aides concernant la décompression de fichiers.
-
-![hosting](images/3127.png){.thumbnail}
 
 #### 2.3 : déplacer les fichiers sources du dossier "WordPress" vers le "dossier racine" sur votre hébergement web
 
