@@ -131,9 +131,6 @@ Une fois les fichiers décompressés dans votre dossier "**wordpress**", [connec
 > Une fois le transfert terminé, assurez-vous que tous les éléments présents dans le dossier local "**wordpress**" ont été correctement transférés dans le "dossier racine" présent sur votre hébergement web.
 >
 
-![hosting](images/3131.png){.thumbnail}
-
-
 ### Etape 3 : finaliser l'installation manuelle
 
 - Avant de continuer l'installation, videz le cache de votre navigateur internet, afin d'éviter toute erreur.
