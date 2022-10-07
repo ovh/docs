@@ -129,7 +129,7 @@ Clicca sulla scheda `Domini associati`{.action} della tua piattaforma. Dalla tab
 
 Se al dominio da scollegare sono associati account email, è possibile:
 
-- **Associa gli account a un altro dominio**: accedi alla scheda `Account email`{.action}. A destra degli account da modificare, clicca sul pulsante `...`{.action} e poi `su Modifica`{.action}.
+- **Associa gli account a un altro dominio**: accedi alla scheda `Account email`{.action}. A destra degli account da modificare, clicca sul pulsante `...`{.action} e poi su `Modifica`{.action}.
     ![emailpro](images/add_domain_exchange_step8.png){.thumbnail}
     Dalla finestra di modifica è possibile modificare il dominio associato all'account tramite il menu a tendina.
     ![emailpro](images/add_domain_exchange_step9.png){.thumbnail}
