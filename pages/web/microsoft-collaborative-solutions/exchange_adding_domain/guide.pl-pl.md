@@ -134,7 +134,7 @@ Jeśli konta e-mail są przypisane do domeny, którą chcesz odłączyć, masz 2
     W oknie modyfikacji możesz zmienić nazwę domeny przypisanej do konta w rozwijanym menu.
     ![emailpro](images/add_domain_exchange_step9.png){.thumbnail}
 
-- **Usuń konta z Twojej platformy**: przejdź do zakładki `Konta e-mail`{.action}. Po prawej stronie konta, które chcesz usunąć, kliknij przycisk `...`{.action}, a następnie `Zresetuj to konto`{.action} lub `Zresetuj`{.action}
+- **Usuń konta z Twojej platformy**: przejdź do zakładki `Konta e-mail`{.action}. Po prawej stronie konta, które chcesz usunąć, kliknij przycisk `...`{.action}, a następnie `Zresetuj to konto`{.action} lub `Zresetuj`{.action}.
     ![emailpro](images/add_domain_exchange_step7.png){.thumbnail}
 
 Po ponownym przypisaniu kont do innej domeny lub jej zresetowaniu, możesz usunąć domenę. 
