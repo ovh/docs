@@ -23,7 +23,7 @@ Su [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.e
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}, a excepción de un plan de hosting Cloud Web.
 - Tener acceso a su plan de hosting desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) o conocer la información necesaria para conectarse al[espacio de almacenamiento FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/). 
 
-## En la práctica
+## Procedimiento
 
 Existen varias versiones del lenguaje de programación PHP. La evolución de las versiones aporta varios parches, así como la adición o interrupción de las funcionalidades. OVHcloud ofrece las últimas versiones mayores de PHP, que puede consultar en la lista [aquí](https://www.ovhcloud.com/es-es/web-hosting/uc-programming-language/). 
 
