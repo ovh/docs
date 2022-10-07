@@ -70,7 +70,7 @@ Existem duas formas de alterar a versão de PHP do seu alojamento web:
 
 - **através de um assistente de configuração a partir da sua Área de Cliente**: uma vez ligado ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), poderá escolher a nova versão de PHP pretendida entre outros parâmetros. Consulte o nosso manual ["Alterar a configuração do alojamento web"](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/){.external} para realizar esta operação.
 
-- **alterando manualmente um ficheiro no seu espaço de armazenamento**: esta solução é mais técnica e precisa de aceder ao seu [espaço de armazenamento FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) onde deverá modificar o ficheiro ^.ovhconfig`. Consulte o nosso manual [Configurar o ficheiro .ovhconfig do alojamento web](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/){.external} para o fazer.
+- **alterando manualmente um ficheiro no seu espaço de armazenamento**: esta solução é mais técnica e precisa de aceder ao seu [espaço de armazenamento FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) onde deverá modificar o ficheiro `.ovhconfig`. Consulte o nosso manual [Configurar o ficheiro .ovhconfig do alojamento web](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/){.external} para o fazer.
 
 > [!primary]
 >
