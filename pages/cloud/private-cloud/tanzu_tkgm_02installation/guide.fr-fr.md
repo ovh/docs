@@ -137,17 +137,8 @@ Au travers de l'interface vSphere faites un clic droit sur le `cluster`{.action}
 
 ![02 Add Bootstrapvm 01](images/02-add-bootstrap-vm-from-ova01.png){.thumbnail}
 
-Sélectionnez `Fichier local`{.action} ensuite cliquez sur `TÉLÉCHARGER DES FICHIERS`{.action}.
 
-![02 Add Bootstrapvm 02](images/02-add-bootstrap-vm-from-ova02.png){.thumbnail}
-
-Choisissez le `fichier Ubuntu-22.04_TKGm-1.6_with_x.ova`{.action}, ensuite cliquez sur `Ouvrir`{.action}.
-
-![02 Add Bootstrapvm 03](images/02-add-bootstrap-vm-from-ova03.png){.thumbnail}
-
-Cliquez sur `SUIVANT`{.action}.
-
-![02 Add Bootstrapvm 04](images/02-add-bootstrap-vm-from-ova04.png){.thumbnail}
+Sélectionnez `URL`{.action} et saisissez cette **URL**  `URL` `https://templatefactory.par1c.pcc.ovh.net/Linux/PhotonOs/photon-3-kube-v1.22.9+vmware.1.ovf` ensuite clique sur `SUIVANT`{.action}.
 
 Laissez le positionnement par défaut et cliquez sur `SUIVANT`{.action}.
 
