@@ -150,7 +150,7 @@ Pode configurar o seu endereço de e-mail no dispositivo que desejar (smartphone
 > [!tabs]
 > **Windows**
 >>
->> - [Correio no Windows 10](https://docs.ovh.com/pl/emails/konfiguracja-poczta-windows-10/)
+>> - [Correio no Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)
 >> - [Outlook](https://docs.ovh.com/pt/emails/configuracao-outlook-2016/)
 >> - [Thunderbird](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/)
 >>
@@ -163,7 +163,7 @@ Pode configurar o seu endereço de e-mail no dispositivo que desejar (smartphone
 >>
 > **Android**
 >>
->> - [Android](https://docs.ovh.com/pl/emails/konfiguracja-android/)
+>> - [Android](https://docs.ovh.com/gb/en/emails/configuration-android/)
 >>
 > **Outro**
 >>
