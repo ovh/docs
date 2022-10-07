@@ -19,9 +19,9 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 ## Wymagania początkowe
 
-- Posiadanie rozwiązania [Exchange](https://www.ovhcloud.com/pl/emails/) lub [Email Pro](https://www.ovhcloud.com/pl/emails/email-pro/))
+- Posiadanie rozwiązania [Exchange](https://www.ovhcloud.com/pl/emails/) lub [Email Pro](https://www.ovhcloud.com/pl/emails/email-pro/)
 - Zarejestrowana domena lub kilka domen.
-- Możliwość modyfikacji konfiguracji Twojej domeny ([strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/))
+- Możliwość modyfikacji konfiguracji Twojej domeny [strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
