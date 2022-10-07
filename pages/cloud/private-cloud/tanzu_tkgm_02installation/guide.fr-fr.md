@@ -6,7 +6,7 @@ section: Tanzu
 order: 03
 ---
 
-**Dernière mise à jour le 26/09/2022**
+**Dernière mise à jour le 07/10/2022**
 
 ## Objectif
 
@@ -139,6 +139,8 @@ Au travers de l'interface vSphere faites un clic droit sur le `cluster`{.action}
 
 
 Sélectionnez `URL`{.action} et saisissez cette **URL**  `URL` `https://templatefactory.par1c.pcc.ovh.net/Linux/PhotonOs/photon-3-kube-v1.22.9+vmware.1.ovf` ensuite clique sur `SUIVANT`{.action}.
+
+![02 Add Bootstrapvm 05](images/02-add-bootstrap-vm-from-ova02.png){.thumbnail}
 
 Laissez le positionnement par défaut et cliquez sur `SUIVANT`{.action}.
 
