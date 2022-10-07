@@ -76,7 +76,7 @@ Existen dos formas de modificar la versión de PHP de un alojamiento web:
 >
 > La modificación de la versión de PHP a través de un archivo ".htaccess" ya no es posible en los últimos planes de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.<br>
 > El comando que permite cambiar la versión de PHP en el archivo ".htaccess" no permite utilizar las versiones recientes de PHP en nuestras infraestructuras.<br>
-> Para ello, deberá utilizar obligatoriamente el archivo.`ovhconfig` con ayuda de nuestra documentación ["Configurar el archivo .ovhconfig de mi alojamiento web"](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/){.external}.
+> Para ello, deberá utilizar obligatoriamente el archivo `.ovhconfig` con ayuda de nuestra documentación ["Configurar el archivo .ovhconfig de mi alojamiento web"](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/){.external}.
 >
 
 Algunas versiones de PHP sólo funcionan con algunos entornos de ejecución. A continuación encontrará las versiones de PHP disponibles en los alojamientos compartidos de OVHcloud y [los entornos de ejecución](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/) compatibles:
