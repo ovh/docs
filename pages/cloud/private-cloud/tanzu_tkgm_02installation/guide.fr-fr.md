@@ -52,7 +52,9 @@ A la fin de l'installation sept machines virtuelles supplémentaires seront sur 
 
 ### Importation du modèle OVA pour **Tanzu KUBERNETES Grid** dans votre infrastructure
 
-VMware fournit une machine virtuelle sous forme de modèle OVA qui contient tous les éléments pour faire fonctionner un nœud du cluster **Tanzu Kubernetes Grid**. Ce modèle est disponible dans les modèles fournies par OVHcloud. 
+VMware fournit une machine virtuelle sous forme de modèle OVA qui contient tous les éléments pour faire fonctionner un nœud du cluster **Tanzu Kubernetes Grid**. 
+
+Un fichier au format **OVF** est disponible dans les **OVHTemplates**.
 
 Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster`{.action}, ensuite choisissez `Déployer un modèle OVF`{.action}.
 
@@ -120,7 +122,7 @@ Allez dans `Machines virtuelles (et modèles)`{.action} pour voir le modèle cr�
 
 Cette machine virtuelle a été créée par OVHcloud à partir de cette documentation [Installation manuelle de l'outil CLI pour le déploiement de **Tanzu Kubernetes GRID**](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html). 
 
-Cette machine virtuelles est disponible dans les **OVHTemplates**.
+Un fichier au format **OVF** est disponible dans les **OVHTemplates**.
 
 Au travers de l'interface vSphere faites un clic droit sur le `cluster`{.action} et choisissez dans le menu `Déployer un modèle OVF`{.action}.
 
