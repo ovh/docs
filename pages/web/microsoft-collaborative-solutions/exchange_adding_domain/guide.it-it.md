@@ -1,8 +1,8 @@
 ---
-title: 'Dodanie domeny do usługi Exchange'
-slug: dodanie-domeny-exchange
-excerpt: 'Dowiedz się, jak dodać domenę do Twojej usługi Exchange'
-section: 'Konfiguracja usługi Exchange'
+title: 'Aggiungi un dominio su una piattaforma email'
+slug: aggiungere-dominio-su-exchange
+section: 'Configurazione dell’offerta Exchange'
+order: 4
 ---
 
 > [!primary]
@@ -19,9 +19,9 @@ Aggiungere un dominio su Exchange è un’operazione fondamentale per utilizzare
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/))
+- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/)
 - Aver registrato uno o più domini
-- Poter modificare la configurazione del dominio ([zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/))
+- Poter modificare la configurazione del dominio [zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
