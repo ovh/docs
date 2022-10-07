@@ -11,11 +11,11 @@ legacy_guide_number: g1343
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 30/09/2022**
+**Ultimo aggiornamento: 07/10/2022**
 
 ## Obiettivo
 
-Hai appena acquistato una soluzione email MX Plan. che permette di usufruire di indirizzi email associati a un dominio.
+Una soluzione email MX Plan è stata appena creata per usufruire di indirizzi email associati a un dominio.
 
 **Questa guida ti mostra come creare un indirizzo email con la soluzione MX Plan.**
 
@@ -33,9 +33,9 @@ Hai appena acquistato una soluzione email MX Plan. che permette di usufruire di 
 
 ## Procedura <a name="instructions"></a>
 
-In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovhcloud.com/it/web-hosting/mxplan-migration/){.external}, la versione disponibile sarà differente. Per verificare quella attiva 
+In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovhcloud.com/it/web-hosting/mxplan-migration/){.external}, la versione disponibile sarà differente. Prima di procedere, è necessario identificarla.
 
-accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}. Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}. Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|
@@ -69,7 +69,7 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}.
 
 ![email](images/mxplan-creation-new-step3.png){.thumbnail}
 
-verifica la correttezza delle informazioni inserite e poi clicca su Conferma. Il nuovo account comparirà nella tabella e sarà disponibile all’utilizzo entro pochi minuti.
+Verifica la correttezza delle informazioni inserite e poi clicca su Conferma. Il nuovo account comparirà nella tabella e sarà disponibile all’utilizzo entro pochi minuti.
 
 Ripeti questa operazione per tutti gli account che vuoi creare, in base al numero a tua disposizione.
 

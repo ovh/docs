@@ -43,7 +43,7 @@ To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?act
 
 #### Step 1: Log in to your email service’s management interface.
 
-Since you are using the new version of the MX Plan solution, your display should look like this. If not, please ensure that you are following the right set of instructions [by referring to the information above](./#instructions).  
+Since you are using the new version of the MX Plan solution, your display should look like this. If not, please ensure that you are following the right set of instructions [by referring to the information above](#instructions).  
 
 ![email](images/mxplan-creation-new-step1.png){.thumbnail}
 
@@ -116,7 +116,7 @@ If you just need the information required to configure your email address, the s
 
 #### Step 1: Log in to your email service’s management interface.
 
-If you are using the legacy version of the MX Plan solution, your display should look like this. If not, please ensure that you are following the right set of instructions [by referring to the information above](./#instructions). 
+If you are using the legacy version of the MX Plan solution, your display should look like this. If not, please ensure that you are following the right set of instructions [by referring to the information above](#instructions). 
 
 ![email](images/mxplan-creation-legacy-step1.png){.thumbnail}
 

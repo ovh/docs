@@ -10,7 +10,7 @@ order: 02
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 30-09-2022**
+**Ostatnia aktualizacja z dnia 07-10-2022**
 
 ## Wprowadzenie
 
@@ -45,7 +45,7 @@ W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?a
 
 #### Dostęp do interfejsu zarządzania usługą e-mail
 
-Posiadasz nową wersję usługi MX Plan. Strona usługi e-mail w Panelu klienta powinna wyglądać jak poniżej. Jeśli tak nie jest, upewnij się, czy wybrałeś właściwą ścieżkę, [sprawdzając powyższe informacje](./#instructions).  
+Posiadasz nową wersję usługi MX Plan. Strona usługi e-mail w Panelu klienta powinna wyglądać jak poniżej. Jeśli tak nie jest, upewnij się, czy wybrałeś właściwą ścieżkę, [sprawdzając powyższe informacje](#instructions).
 
 ![email](images/mxplan-creation-new-step1.png){.thumbnail}
 

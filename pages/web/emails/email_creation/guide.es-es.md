@@ -10,17 +10,17 @@ order: 02
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 30/09/2022**
+**Última actualización: 07/10/2022**
 
 ## Objetivo
 
-La solución de correo MX Plan ya está disponible. que permite disfrutar de direcciones de correo asociadas a un dominio.
+La solución MX Plan le permite disfrutar de direcciones de correo asociadas a un dominio.
 
 **Esta guía explica cómo crear una dirección de correo electrónico en un MX Plan.**
 
 ## Requisitos
 
-- Tener una solución MX Plan (incluida en un [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}, en un [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} o contratada por separado).
+- Tener una solución MX Plan (incluida en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}, en un [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} o contratada por separado).
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
 
 > [!primary]
@@ -130,7 +130,7 @@ A continuación, podrá consultar su bandeja de entrada. Para más información,
 
 ![Correo electrónico](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
-Para consultar sus mensajes de correo desde un cliente de correo, consulte la sección [Consultar una cuenta de correo desde un dispositivo.](#configdevices)
+Para consultar sus mensajes de correo desde un cliente de correo, consulte la sección [Consultar una cuenta de correo desde un dispositivo](#configdevices).
 
 #### Eliminar una cuenta de correo
 
@@ -138,7 +138,7 @@ Para consultar sus mensajes de correo desde un cliente de correo, consulte la se
 >
 > Antes de eliminar las cuentas de correo, asegúrese de que no se utilizan. Es posible que necesite guardar estas cuentas. Si lo necesita, consulte la guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/), en la que se explica cómo exportar los datos de una cuenta desde el área de cliente o desde un cliente de correo.
 
-En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la cuenta que desea eliminar y luego en `Eliminar la cuenta.`{.action}
+En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la cuenta que desea eliminar y luego en `Eliminar la cuenta`{.action}.
 
 ![Correo electrónico](images/mxplan-legacy-reset.png){.thumbnail}
 
