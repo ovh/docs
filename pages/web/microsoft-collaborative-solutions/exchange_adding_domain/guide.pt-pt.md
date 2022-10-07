@@ -1,6 +1,6 @@
 ---
 title: Adicionar um domínio a uma plataforma de e-mail
-slug: adicionar-dominio-exchange
+slug: adding-domain-exchange
 section: Introdução ao Exchange
 order: 4
 ---
@@ -19,9 +19,9 @@ Adicionar um domínio a um serviço Exchange é indispensável para poder utiliz
 
 ## Requisitos
 
-- Dispor de uma solução [Exchange](https://www.ovhcloud.com/pt/emails/) ou [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/)).
+- Dispor de uma solução [Exchange](https://www.ovhcloud.com/pt/emails/) ou [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
 - Dispor de um ou vários domínios.
-- Ter a possibilidade de alterar a configuração do domínio ([zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/)).
+- Ter a possibilidade de alterar a configuração do domínio [zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
@@ -66,8 +66,8 @@ A janela apresenta agora informações sobre a configuração dos modos.
 
 |Modo|Descrição|
 |---|---|
-|Authoritative|Para usar o seu domínio apenas com o Exchange ou o E-mail Pro. Não permite a utilização de outra solução de e-mail com o seu serviço.|
-|Non-Authoritative|Para usar o serviço Exchange ou E-mail Pro juntamente com outra solução de e-mail, Deverá introduzir o servidor da sua outra solução de e-mail.|
+|Autorytatywny|Para usar o seu domínio apenas com o Exchange ou o E-mail Pro. Não permite a utilização de outra solução de e-mail com o seu serviço.|
+|Nieautorytatywny|Para usar o serviço Exchange ou E-mail Pro juntamente com outra solução de e-mail, Deverá introduzir o servidor da sua outra solução de e-mail.|
 
 > [!primary]
 >
@@ -134,7 +134,7 @@ Se existirem contas de e-mail associadas ao nome de domínio que pretende desass
     Na janela de alteração, pode alterar o domínio associado à conta através do menu pendente.
     ![emailpro](images/add_domain_exchange_step9.png){.thumbnail}
 
-- **Eliminar as contas da sua plataforma**: aceda ao separador `Contas de e-mail`{.action}. À direita da conta a eliminar, clique no botão `...`{.action} e, a seguir, `Renovar esta conta`{.action} ou `Reinicializar`{.action}
+- **Eliminar as contas da sua plataforma**: aceda ao separador `Contas de e-mail`{.action}. À direita da conta a eliminar, clique no botão `...`{.action} e, a seguir, `Renovar esta conta`{.action} ou `Reinicializar`{.action}.
     ![emailpro](images/add_domain_exchange_step7.png){.thumbnail}
 
 Uma vez efetuada a reatribuição das contas a outro nome de domínio, ou a sua reinicialização, é agora possível proceder à eliminação do nome de domínio. 
