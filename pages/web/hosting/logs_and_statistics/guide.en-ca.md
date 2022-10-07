@@ -2,8 +2,8 @@
 title: 'Accessing a website’s logs and statistics on a Web Hosting'
 excerpt: Find out how to review statistics and logs of your websites
 slug: shared_view_my_websites_logs_and_statistics
-legacy_guide_number: g1344
-section: 'Website optimisation'
+section: Optimise your website
+order: 04
 ---
 
 **Last updated 5th January 2021**

@@ -3,7 +3,7 @@ title: Activation du pare-feu applicatif
 slug: activation-pare-feu-applicatif
 excerpt: "Découvez comment activer le pare-feu applicatif sur un offre d'hébergement Web."
 section: "Configuration de l'hébergement"
-order: 5
+order: 04
 ---
 
 **Dernière mise à jour le 26 avril 2021**

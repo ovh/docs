@@ -1,10 +1,9 @@
 ---
 title: 'Web hosting: Consultar las estadísticas y logs de un sitio web'
 excerpt: Acceso a las estadísticas de su sitio
-id: '1344'
 slug: web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web
-legacy_guide_number: g1344
 section: Optimización del sitio web
+order: 04
 ---
 
 > [!primary]

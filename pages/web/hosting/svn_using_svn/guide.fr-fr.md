@@ -1,9 +1,9 @@
 ---
 title: Utiliser SVN
 slug: utiliser-svn
-legacy_guide_number: 1961
 excerpt: Découvrez comment utiliser SVN en SSH sur votre hebergement web
 section: FTP et SSH
+order: 09
 ---
 
 **Dernière mise à jour le 28/10/2020**

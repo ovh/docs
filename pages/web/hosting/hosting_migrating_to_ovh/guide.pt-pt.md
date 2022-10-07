@@ -2,7 +2,8 @@
 title: Como migrar um site e e-mails para a OVH?
 slug: migrar-site-para-ovh
 excerpt: Saiba como transferir um site e os e-mails para a OVH sem interromper os serviços
-section: Introdução
+section: Primeiros passos
+order: 08
 ---
 
 **Última atualização: 19/02/2018**

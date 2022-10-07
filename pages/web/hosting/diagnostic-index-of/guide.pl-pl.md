@@ -3,7 +3,7 @@ title: Co zrobić w przypadku strony « Index of »?
 excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę « Index of »
 slug: diagnostyka-index-of
 section: Diagnostyka
-order: 6
+order: 07
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 6
 
 **Ostatnia aktualizacja z dnia 10-05-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Jeśli konfiguracja `MultiSite` nie jest poprawnie skonfigurowana, Twoja strona może wyświetlić stronę **"Index of"**.
 

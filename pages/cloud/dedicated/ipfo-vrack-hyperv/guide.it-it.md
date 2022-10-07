@@ -1,6 +1,6 @@
 ---
-title: "Utilizza Hyper-V con indirizzi IP Failover su una vRack"
-excerpt: "Scopri come configurare una macchina virtuale con IP Failover e Hyper-V su una vRack"
+title: "Utilizza Hyper-V con indirizzi Additional IP su una vRack"
+excerpt: "Scopri come configurare una macchina virtuale con Additional IP e Hyper-V su una vRack"
 slug: ipfo-vrack-hyperv
 section: vRack 
 ---
@@ -13,9 +13,9 @@ section: vRack
 
 ## Obiettivo
 
-Segui il processo di installazione di Hyper-V, l'associazione di uno switch virtuale e la configurazione di una macchina virtuale per funzionare con gli IP Failover su una vRack.
+Segui il processo di installazione di Hyper-V, l'associazione di uno switch virtuale e la configurazione di una macchina virtuale per funzionare con gli Additional IP su una vRack.
 
-**Questa guida ti mostra come configurare una macchina virtuale con IP Failover e Hyper-V su una vRack.**
+**Questa guida ti mostra come configurare una macchina virtuale con Additional IP e Hyper-V su una vRack.**
 
 ## Prerequisiti
 

@@ -1,10 +1,9 @@
 ---
 title: 'Pirateo de su sitio web WordPress: Consejos y casos prácticos'
 excerpt: ''
-id: '1874'
 slug: pirateo_de_su_sitio_web_wordpress_consejos_y_casos_practicos
-legacy_guide_number: g1874
 section: Casos de uso
+order: 01
 ---
 
 

@@ -3,7 +3,7 @@ title: "Co zrobić w przypadku błędu « Połączenie nie jest prywatne »?"
 excerpt: "Reagowanie w przypadku wiadomości z błędem związanej z bezpieczeństwem strony"
 slug: blad-strona-nie-bezpieczna
 section: Diagnostyka
-order: 3
+order: 03
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 3
 
 **Ostatnia aktualizacja z dnia 08/07/2021**
  
-## Wprowadzenie <a name="objective"></a>
+## Wprowadzenie  <a name="objective"></a>
 
 W przypadku niedostępności Twojej strony może wystąpić kilka komunikatów o błędzie. Poniższe przykłady wskazują, że Twój hosting WWW nie zawiera [certyfikatu SSL](../certyfikaty-ssl-na-hostingu/) (jeśli Twoja strona nie wyświetla żadnego z anomalii opisanych w tym przewodniku, sprawdź sekcję « [Sprawdź również](#gofurther) »):
 

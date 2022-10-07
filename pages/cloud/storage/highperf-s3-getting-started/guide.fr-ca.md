@@ -1,113 +1,24 @@
 ---
-title: Débuter avec S3 Object Storage
-slug: s3/debuter-avec-s3
+title: Premiers pas avec CLI
+slug: s3/getting-started-with-cli
 excerpt:
 section: Object Storage S3 High Performance
 order: 020
 ---
 
-**Dernière mise à jour le 21/07/2022**
+**Dernière mise à jour le 27/09/2022**
 
 ## Objectif
 
-Ce guide à pour objectif de vous familiariser avec la gestion de vos conteneurs / objets.
+Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets.
 
 ## Prérequis
 
+- Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Avoir créé un [utilisateur OpenStack](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
+- Avoir créé un [utilisateur S3](https://docs.ovh.com/ca/fr/storage/s3/gestion-des-identites-et-des-acces/)
 
 ## En pratique
-
-### Gestion des utilisateurs
-
-Une fois que votre utilisateur a été créé avec le rôle `ObjectStore operator` ou avec le rôle `Administrator`, vous devez générer ses informations d'identification S3.
-
-![User menu](images/highperf-s3-getting-started-20220721141708221.png){.thumbnail}
-
-> [!primary]
->
-> Veillez à enregistrer les clés *access* et *secret*, uniquement affichées à ce moment précis dans le cadre vert, dans un gestionnaire de mots de passe.
->
-
-![Result](images/highperf-s3-getting-started-20220721141829843.png){.thumbnail}
-
-### Gestion des buckets
-
-#### Création d'un bucket depuis l'espace client
-
-> [!primary]
->
-> Il n'est pas possible de créer de bucket Public Cloud Archive.
->
-
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez `Public Cloud`{.action} dans la barre de menu supérieure.
-
-Sélectionnez `Object Storage`{.action} dans le menu à gauche puis cliquez sur `Créer un conteneur d'objets`{.action}
-
-S'il s'agit de votre premier bucket, vous devriez voir cet affichage :
-
-![S3 Object Storage Dashboard](images/create-container-20211005102334181.png){.thumbnail}
-
-S'il ne s'agit pas de votre premier bucket :
-
-![S3 Object Storage Dashboard](images/create-container-20211005115040834.png){.thumbnail}
-
-Sélectionnez la solution High Performance et cliquez sur `Suivant`{.action} :
-
-![Select High Performance Solution](images/highperf-s3-getting-started-20220502112813860.png){.thumbnail}
-
-
-Sélectionnez la région de votre bucket et cliquez sur `Suivant`{.action} :
-
-![Select a region](images/HighPerf-S3-getting-started-20211028090916484.png){.thumbnail}
-
-Nommez votre bucket et cliquez sur `Ajouter le conteneur`{.action} :  
-
-![Container name](images/HighPerf-S3-getting-started-20211028091015710.png){.thumbnail}  
-
-> [!warning]
->
-> - Les noms de bucket peuvent comporter entre 3 et 63 caractères.  
-> - Les noms de bucket peuvent être composés uniquement de lettres minuscules, de chiffres, de points (.) et de traits d'union (-).  
-> - Les noms de bucket doivent commencer et se terminer par une lettre ou un chiffre.  
-> - Les noms de buckets ne doivent pas utiliser le même format que les adresses IP (par ex., 192.168.5.4).  
-> - Les noms de bucket doivent être uniques au sein d'une même région.  
->
-
-#### Liaison d'un utilisateur à un bucket
-
-À ce stade, vous ne pouvez pas interagir avec votre bucket car aucun utilisateur S3 n'y est associé.
-
-Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Ajouter un utilisateur à un conteneur`{.action}.
-
-![Add a user to a container](images/HighPerf-S3-getting-started-20211028091254996.png){.thumbnail}
-
-Sélectionnez l'utilisateur à ajouter à votre bucket et cliquez sur `Suivant`{.action} :
-
-![Add a user to my container](images/HighPerf-S3-getting-started-20211028091356617.png){.thumbnail}
-
-Définissez les accès à votre bucket pour cet utilisateur et cliquez sur `Suivant`{.action} :
-
-![Add a user to my container - Role](images/HighPerf-S3-getting-started-20211028091456850.png){.thumbnail}
-
-### Gestion des objets
-
-Cliquez sur les `...`{.action} à la fin de la ligne de votre bucket puis sur `Afficher les objets`{.action}.
-
-![Object Storage Dashboard](images/HighPerf-S3-getting-started-20211028093009189.png){.thumbnail}
-
-Cliquez sur `+ Ajouter des objets`{.action}
-
-![Add objects](images/HighPerf-S3-getting-started-20211028093103226.png){.thumbnail}
-
-Si besoin, définissez un préfixe, cliquez sur `Sélectionnez les fichiers`{.action} puis sur `Importer`{.action}
-
-![Select files](images/HighPerf-S3-getting-started-2021102809321218.png){.thumbnail}
-
-Vous pouvez maintenant interagir avec votre objet :
-
-![Object actions](images/HighPerf-S3-getting-started-20211028093408437.png){.thumbnail}
 
 ### Utilisation de AWS CLI
 
@@ -121,9 +32,14 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 
 > [!primary]
 >
-> `awscli-plugin-endpoint` est optionel  
-> Installez le package `groff` si vous souhaitez utiliser l'aide en ligne de commande.
+> - `awscli-plugin-endpoint` est optionel  
+> - Installez le package `groff` si vous souhaitez utiliser l'aide en ligne de commande.
 >
+
+#### Collecter les informatoons d'identification
+
+- Vous aurez besoin de l'*Access key* et de la *Secret key* de votre utilisateur. Ces informations sont accessibles depuis l'onglet `Utilisateurs S3` dans votre espace client.
+- Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs` puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](https://docs.ovh.com/fr/storage/s3/location).
 
 #### Configuration
 
@@ -138,17 +54,17 @@ aws_secret_access_key = <secret_key>
 
 user@host:~$ cat ~/.aws/config
 
-# Delete the next two lines if you don't installed `awscli-plugin-endpoint`
+# If you have not installed awscli-plugin-endpoint, delete the next two lines
 [plugins]
 endpoint = awscli_plugin_endpoint
 
 [profile default]
 region = <region_in_lowercase>
 s3 =
-  endpoint_url = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
+  endpoint_url = <url_endpoint>
   signature_version = s3v4
 s3api =
-  endpoint_url = https://s3.<region_in_lowercase>.perf.cloud.ovh.net
+  endpoint_url = <url_endpoint>
 ```
 
 > [!primary]
@@ -163,10 +79,10 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 |:--|:--|:--|:--|
 | max_concurrent_requests | Integer | **Défaut :** 10 | Le nombre maximum de requêtes simultanées. |
 | max_queue_size | Integer | **Défaut :** 1000 | Le nombre maximal de tâches dans la file d'attente des tâches. |
-| multipart_threshold | Integer<br>String | **Défaut :** 8MB |  Le seuil de taille que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
-| multipart_chunksize | Integer<br>String | **Défaut :** 8MB<br>**Minimum for uploads:** 5MB |  Lors de l'utilisation de transferts multipart, il s'agit de la taille de morceau que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
+| multipart_threshold | Integer<br>String | **Défaut :** 8MB | Le seuil de taille que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
+| multipart_chunksize | Integer<br>String | **Défaut :** 8MB<br>**Minimum for uploads:** 5MB | Lors de l'utilisation de transferts multipart, il s'agit de la taille de morceau que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
 | max_bandwidth | Integer | **Défaut :** None | La bande passante maximale qui sera consommée pour le chargement et le téléchargement de données vers et depuis vos buckets. |
-|  verify_ssl  | Boolean | **Défaut :** true | Active / Désactive la vérification des certificats SSL |
+| verify_ssl | Boolean | **Défaut :** true | Active / Désactive la vérification des certificats SSL |
 
 #### Utilisation
 
@@ -177,7 +93,7 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 
 > [!primary]
 >
-> Si vous avez défini plusieurs profils, ajoutez `--profile <profil>` à la ligne de commande
+> Si vous avez défini plusieurs profils, ajoutez `--profile <profile>` à la ligne de commande
 >
 
 **Créer un bucket**
@@ -193,7 +109,7 @@ aws --endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net --profile
 aws s3 ls
 ```
 
-**Uploader vos fichiers en tant qu'objets dans votre bucket**
+**Téléverser vos fichiers en tant qu'objets dans votre bucket**
 
 ```bash
 aws s3 cp /datas/test1 s3://<bucket_name>

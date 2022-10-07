@@ -2,11 +2,11 @@
 title: Die PHP-Optimierung eines Webhostings aktivieren
 excerpt: In dieser Hilfe wird beschrieben, wie Sie PHP-FPM für Ihr Webhosting aktivieren können, um die Antwortzeiten von PHP zu verbessern
 slug: die_php-optimierung_beim_ovh_webhosting_aktivieren
-legacy_guide_number: g1175
-section: 'PHP'
+section: PHP
+order: 03
 ---
 
-
+ 
 ## Was ist PHP-FPM?
 Wir haben PHP-FPM an unsere Web-Infrastruktur angepasst, damit Sie es nutzen können, um die Antwortzeiten von PHP zu verbessern.
 

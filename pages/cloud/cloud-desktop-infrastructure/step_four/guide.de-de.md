@@ -17,7 +17,7 @@ Jetzt, da [Ihr Pool erstellt ist](https://docs.ovh.com/de/cloud-desktop-infrastr
 
 ## Voraussetzungen
 
-- Sie haben Benutzer in Active Directory angelegt, falls zuvor [eine Vertrauensstellung (Trust) erstellt wurde](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/approval-ad/){.external} (Englisch), oder Sie haben Benutzer im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erstellt.
+- Sie haben Benutzer in Active Directory angelegt, falls zuvor [eine Vertrauensstellung (Trust) erstellt wurde](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/approval-ad/){.external} (Englisch), oder Sie haben Benutzer im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erstellt.
 - Sie sind im VMware Horizon 7.1 Interface eingeloggt.
 
 

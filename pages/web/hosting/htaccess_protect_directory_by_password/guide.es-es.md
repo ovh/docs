@@ -3,6 +3,7 @@ title: Proteger el panel de administración del sitio web con un archivo .htacce
 slug: compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion
 excerpt: Cómo proteger el acceso a la administración de su sitio web con un archivo .htaccess
 section: Reescritura y autenticación
+order: 02
 ---
 
 > [!primary]

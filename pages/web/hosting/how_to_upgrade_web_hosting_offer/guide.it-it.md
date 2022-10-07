@@ -3,7 +3,7 @@ title: "Fai evolvere la tua offerta di hosting Web"
 excerpt: Come modificare la formula di abbonamento della tua offerta di hosting OVHcloud
 slug: how_to_change_web_hosting_offer
 section: Ottimizza il tuo sito
-order: 2
+order: 02
 ---
 
 > [!primary]

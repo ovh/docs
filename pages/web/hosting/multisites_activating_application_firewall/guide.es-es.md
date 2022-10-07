@@ -1,10 +1,9 @@
 ---
 title: Activación del firewall de aplicación
-legacy_guide_number: 1937
 slug: web_hosting_activating_an_application_firewall
 excerpt: Cómo activar el firewall de aplicación en un plan de hosting.
 section: Configuración del alojamiento
-order: 5
+order: 04
 ---
 
 > [!primary]

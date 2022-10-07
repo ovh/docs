@@ -3,6 +3,7 @@ title: "Módulos 1 clique: como instalar um CMS para criar um site"
 slug: partilhado_guias_dos_modulos_dos_alojamentos_partilhados
 excerpt: Saiba como instalar um CMS com os módulos 1 clique da OVH
 section: CMS
+order: 01
 ---
 
 **Última atualização: 03/02/2022**

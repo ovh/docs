@@ -2,9 +2,8 @@
 title: Troubleshooting recurring errors when using FTP software
 excerpt: Find out how to resolve the most common FTP software related issues
 slug: recurring_ftp_problems
-legacy_guide_number: 1996
 section: FTP and SSH
-order: 3
+order: 04
 ---
 
 **Last updated 5th January 2022**

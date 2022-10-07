@@ -2,8 +2,8 @@
 title: 'Speeding up your website with CDN'
 excerpt: 'Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN'
 slug: guide_to_using_the_geocache_accelerator_on_a_web_hosting_package
-legacy_guide_number: g1290
-section: 'Website optimisation'
+section: Optimise your website
+order: 03
 ---
 
 **Last updated 23rd December 2021**

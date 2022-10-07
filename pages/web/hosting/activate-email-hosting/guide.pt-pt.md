@@ -2,8 +2,8 @@
 title: 'Ativar os endereços de e-mail incluídos no seu alojamento web'
 slug: ativar-e-mail-alojamento-web
 excerpt: 'Saiba como ativar os endereços de e-mail incluídos na sua oferta de alojamento web'
-section: Introdução
-order: 3
+section: Primeiros passos
+order: 07
 ---
 
 **Última atualização: 02/09/2020**

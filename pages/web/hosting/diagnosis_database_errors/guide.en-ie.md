@@ -3,7 +3,7 @@ title: Troubleshooting common database errors
 excerpt: Find out how to diagnose the most common cases of database errors
 slug: database-frequent-errors
 section: Troubleshooting
-order: 4
+order: 04
 ---
 
 **Last updated 3rd February 2022**

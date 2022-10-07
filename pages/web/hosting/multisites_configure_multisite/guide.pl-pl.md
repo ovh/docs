@@ -3,6 +3,7 @@ title: 'Instalacja kilku stron WWW na jednym hostingu'
 slug: konfiguracja-multisite-na-hostingu
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
 section: 'Pierwsze kroki'
+order: 03
 ---
 
 > [!primary]
@@ -11,7 +12,7 @@ section: 'Pierwsze kroki'
 
 **Ostatnia aktualizacja z dnia 22-08-2022**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny nie są zarejestrowane w OVHcloud.
 

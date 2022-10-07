@@ -2,8 +2,8 @@
 title: 'Configurar o ficheiro .ovhconfig do alojamento web'
 slug: configurar-ficheiro-ovhconfig
 excerpt: 'Descubra o ficheiro .ovhconfig e saiba como alterá-lo'
-section: 'Configuração do alojamento'
-order: 4
+section: Configuração do alojamento
+order: 03
 ---
 
 **Última atualização: 03/01/2019**

@@ -44,7 +44,7 @@ Kliknij przycisk `Usuń projekt`{.action}.
 
 ![usuń projekt](images/deleteproject1.png){.thumbnail}
 
-Wyświetli się komunikat potwierdzający usunięcie zasobów projektu, z wyjątkiem przypisanych adresów IP Failover. 
+Wyświetli się komunikat potwierdzający usunięcie zasobów projektu, z wyjątkiem przypisanych adresów Additional IP. 
 
 Kliknij na `Usuń projekt`{.action}, aby kontynuować. 
 

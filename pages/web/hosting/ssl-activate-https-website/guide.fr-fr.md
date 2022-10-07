@@ -1,24 +1,24 @@
 ---
-title: 'Passer son site internet en HTTPS grâce au SSL'
+title: "Passer son site internet en HTTPS grâce au SSL"
 slug: passer-site-internet-https-ssl
-excerpt: 'Découvrez comment passer votre site internet en HTTPS grâce au SSL'
+excerpt: "Découvrez comment passer votre site internet en HTTPS grâce au SSL"
 section: SSL
-order: 2
+order: 02
 ---
 
-**Dernière mise à jour le 02/11/2018**
+**Dernière mise à jour le 04/10/2022**
 
 ## Objectif
 
-Grâce à votre hébergement web OVH, vous pouvez bénéficier d'un certificat SSL. Ce dernier permet à un ou plusieurs de vos sites internet de disposer d'une connexion sécurisée en étant par conséquent accessibles en HTTPS. Pour cela, plusieurs étapes sont nécessaires avant que vos sites puissent utiliser cette connexion sécurisée.
+Grâce à votre hébergement web OVHcloud, vous pouvez bénéficier d'un certificat SSL. Ce dernier permet à un ou plusieurs de vos sites internet de disposer d'une connexion sécurisée en étant par conséquent accessibles en HTTPS. Pour cela, plusieurs étapes sont nécessaires avant que vos sites puissent utiliser cette connexion sécurisée.
 
 **Découvrez comment passer votre site internet en HTTPS grâce au certificat SSL.**
 
 ## Prérequis
 
-- Disposer d'un [certificat SSL](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external} installé sur votre [hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Disposer d'un [certificat SSL](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external} installé sur votre [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Disposer d'au moins un site internet installé et accessible sur votre hébergement web OVH.
-- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 
@@ -41,16 +41,16 @@ Le tableau ci-dessous vous permet de mieux appréhender le changement que vous a
 
 ### Étape 1 : activer le certificat SSL sur l'hébergement
 
-L'activation du certificat SSL sur votre hébergement web s'effectue depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour cela, vous devrez réaliser deux manipulations distinctes :
+L'activation du certificat SSL sur votre hébergement web s'effectue depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour cela, vous devrez réaliser deux manipulations distinctes :
 
 |Manipulation|Description|
 |---|---|
-|Activer un certificat SSL sur votre hébergement.|Permet à OVH d'installer un certificat SSL sur votre hébergement. Vous devrez choisir entre plusieurs types de certificats. Assurez-vous de sélectionner le plus adapté à votre situation.|
+|Activer un certificat SSL sur votre hébergement.|Permet à OVHcloud d'installer un certificat SSL sur votre hébergement. Vous devrez choisir entre plusieurs types de certificats. Assurez-vous de sélectionner le plus adapté à votre situation.|
 |Activer le SSL sur le multisite concerné.|Le site internet pour lequel vous souhaitez utiliser le HTTPS doit être configuré en tant que « multisite » sur votre hébergement. Assurez-vous alors que le SSL est bien actif pour celui-ci.|
 
-La marche à suivre complète de ces deux manipulations est accessible sur notre documentation « [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/){.external} ». Si vous venez d'acquérir votre hébergement OVH, il est cependant possible qu'un certificat SSL gratuit y soit déjà installé et que le multisite bénéficie déjà d'une connexion SSL active.
+La marche à suivre complète de ces deux manipulations est accessible sur notre documentation « [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/){.external} ». Si vous venez d'acquérir votre hébergement OVHcloud, il est cependant possible qu'un certificat SSL gratuit y soit déjà installé et que le multisite bénéficie déjà d'une connexion SSL active.
 
-Pour le vérifier, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. En dessous de « Certificat SSL », la mention « Oui » devrait apparaître, vous indiquant qu'un certificat SSL est installé sur votre hébergement web. 
+Pour le vérifier, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. En dessous de « Certificat SSL », la mention « Oui » devrait apparaître, vous indiquant qu'un certificat SSL est installé sur votre hébergement web. 
 
 ![httpswebsite](images/activate-https-website-ssl-step2.png){.thumbnail}
 
@@ -68,7 +68,7 @@ Ainsi, nous vous recommandons vivement de prendre en considération les élémen
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d’informations dans la section « Aller plus loin » de ce guide. 
 >
@@ -135,6 +135,16 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
+> [!warning]
+>
+> Pour les offres d'hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/), le script à utiliser est le suivant :
+> ```
+> RewriteEngine On
+> RewriteCond %{ENV:HTTPS} !on
+> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+> ```
+>
+
 ### Étape 4 : vérifier le bon fonctionnement de votre site
 
 Une fois que vous avez activé le HTTPS sur votre site internet, vérifiez que celui-ci fonctionne correctement et que tout son contenu s'affiche comme avant la manipulation. Pour cela, essayez d'accéder à ce dernier, vérifiez si aucun message ou avertissement n'apparaît et prenez quelques instants pour examiner la mise en page de plusieurs parties de votre site. 
@@ -144,5 +154,9 @@ Si vous constatez le moindre dysfonctionnement, nous vous recommandons vivement 
 Si votre site s'affiche correctement et qu'aucun avertissement ne s'affiche après le passage en HTTPS, vous avez correctement effectué la manipulation. Si vous souhaitez activer le HTTPS sur un autre site, vous devrez réitérer l'intégralité des manipulations décrites dans cette documentation.
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

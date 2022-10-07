@@ -3,6 +3,7 @@ title: Using SVN
 slug: use-svn
 excerpt: Find out how to use SVN via SSH on your Web Hosting plan
 section: FTP and SSH
+order: 09
 ---
 
 **Last updated 6th January 2021**

@@ -2,11 +2,12 @@
 title: 'Lista adresów IP klastrów i hostingów WWW'
 slug: lista-adresow-ip-klastrow-i-hostingow-www
 section: 'Konfiguracja hostingu'
+order: 01
 ---
 
 **Ostatnia aktualizacja z dnia 08-01-2021**
 
-## Wprowadzenie
+## Wprowadzenie 
 
 W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięki temu dowiesz się na przykład, jaki adres IP wpisać w strefach DNS w zależności od elementów takich jak:
 

@@ -3,6 +3,7 @@ title: 'Migrare un sito e un servizio di posta in OVH'
 slug: migrare-un-sito-in-ovh
 excerpt: 'Scopri come migrare il tuo sito Web e le tue email verso OVH senza interruzioni del servizio'
 section: 'Per iniziare'
+order: 08
 ---
 
 **Ultimo aggiornamento: 26/06/2018**

@@ -1,10 +1,9 @@
 ---
 title: Crear tareas automatizadas (CRON) en un alojamiento web
 excerpt: Cómo crear tareas CRON para automatizar las tareas programadas en un alojamiento web
-id: '1990'
 slug: web_hosting_tareas_automatizadas_cron
-legacy_guide_number: g1990
 section: Tareas automatizadas (Cron)
+order: 01
 ---
 
 > [!primary]

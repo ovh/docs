@@ -3,7 +3,7 @@ title: Cambiar la contraseña de la base de datos de un alojamiento web
 slug: cambiar-contrasena-base-de-datos
 excerpt: Cómo cambiar la contraseña de una base de datos creada en un plan de hosting
 section: Bases de datos
-order: 2
+order: 02
 ---
 
 > [!primary]

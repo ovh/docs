@@ -2,7 +2,8 @@
 title: Partilhado htaccess, Rescrita de URLs graças ao mod_write
 excerpt: O Mod_rewrite está disponível na OVH no conjunto dos alojamentos partilhados (exceto 20gp)
 slug: partilhado_htaccess_rescrita_de_urls_gracas_ao_mod_write
-legacy_guide_number: g1971
+section: Reescrita e autenticação
+order: 03
 ---
 
 

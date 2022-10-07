@@ -153,6 +153,7 @@ URL: https://www.mysql.org/docs/13/sql-createdatabase.html
 
 [Getting started with Public Cloud Databases](https://docs.ovh.com/de/publiccloud/databases/getting-started/)
 
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mysql) to find how to connect to your database with several languages.
 
 ## We want your feedback!
 

@@ -39,7 +39,7 @@ Jeśli instalujesz serwer przy użyciu udostępnionego przez OVHcloud szablonu s
 
 Przykładowo, jeśli przypisaliśmy do Twojego serwera zakres IPv6: `2607:5300:xxxx:xxxx::/64` możesz używać jako głównego adresu IPv6 Twojego serwera IPv6: `2607:5300:xxxx:xxxx::1/64`.
 
-Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli chcesz z niego korzystać na wirtualnej maszynie), musisz mieć skonfigurowany adres IP Failover z vMAC. W przeciwnym razie nie będziemy mogli przekierować adresu IPv6 przez routery/switche.
+Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli chcesz z niego korzystać na wirtualnej maszynie), musisz mieć skonfigurowany adres Additional IP z vMAC. W przeciwnym razie nie będziemy mogli przekierować adresu IPv6 przez routery/switche.
 
 > [!primary]
 >

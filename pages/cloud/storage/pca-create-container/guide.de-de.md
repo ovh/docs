@@ -2,7 +2,7 @@
 title: Erstellung von Public Cloud Archive Containern
 slug: pca/erstellen-von-containern
 excerpt: Erfahren Sie hier, wie Sie Ihre Public Cloud Archive Container über Ihr OVHcloud Kundencenter erstellen
-section: Public Cloud Archiv
+section: Public Cloud Archive
 order: 020
 ---
 
@@ -21,7 +21,7 @@ Public Cloud Archive ist eine unbegrenzte Speicherlösung mit einfacher Abrechnu
 - für öffentliches Hosting (zur Speicherung von allen öffentlich zugänglichen Daten)
 - für Cold Storage (Archivierung)
 
-Der erste Schritt ist die Erstellung eines Containers, der Ihre Dateien zusammenfasst. 
+Der erste Schritt ist die Erstellung eines Containers, der Ihre Dateien zusammenfasst.
 
 **Diese Anleitung erklärt, wie Sie über Ihr OVHcloud Kundencenter einen Container erstellen.**
 

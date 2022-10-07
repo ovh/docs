@@ -2,9 +2,8 @@
 title: 'Modificare la configurazione di un hosting Web'
 excerpt: 'Come cambiare l’ambiente di esecuzione del tuo hosting Web dallo Spazio Cliente OVH'
 slug: modifica_lambiente_di_esecuzione_del_tuo_hosting_web
-legacy_guide_number: g2149
 section: 'Configurazione dell’hosting'
-order: 3
+order: 03
 ---
 
 **Ultimo aggiornamento: 11/04/2019**

@@ -3,7 +3,7 @@ title: 'Activar el alojamiento web gratuito Start 10M'
 slug: activar-start10m
 excerpt: 'Esta guía explica cómo activar su alojamiento web Start 10M'
 section: 'Primeros pasos'
-order: 02
+order: 01
 ---
 
 > [!primary]

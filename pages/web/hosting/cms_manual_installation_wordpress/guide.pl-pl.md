@@ -1,13 +1,13 @@
 ---
 title: CMS - ręczna instalacja modułu WordPress
 excerpt: Jak ręcznie zainstalować moduł WordPress?
-id: '1977'
 slug: cms_-_reczna_instalacja_modulu_wordpress
 section: CMS
+order: 07
 ---
 
 
-## Część 1: przygotowanie instalacji
+## Część 1: przygotowanie instalacji 
 
 ## Niezbędne narzędzia
 Aby móc zainstalować platformę WordPress na hostingu www, skorzystaj z programu FTP takiego jak FileZilla (program darmowy).

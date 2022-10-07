@@ -3,6 +3,7 @@ title: 'Automatische Tasks mit einem Webhosting verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie automatisierte Tasks auf Ihrem Webhosting konfigurieren'
 slug: webhosting_automatisierte_aufgaben_cron
 section: 'Automatische Tasks (CRON)'
+order: 01
 ---
 
 > [!primary]
@@ -12,7 +13,7 @@ section: 'Automatische Tasks (CRON)'
 
 **Letzte Aktualisierung am 22.09.2020**
 
-## Ziel
+## Ziel 
 
 Auf Ihrem OVHcloud Webhosting können Sie Skripte verwenden, um bestimmte Operationen zu automatisieren. Die Erstellung eines geplanten Tasks ("CRON job") ist die einfachste Methode sicherzustellen, dass Ihre Skripte zu bestimmten Zeiten ausgeführt werden, ohne dass weitere Aktionen Ihrerseits erforderlich sind. 
 

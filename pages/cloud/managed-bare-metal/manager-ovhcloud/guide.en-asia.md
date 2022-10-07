@@ -96,7 +96,7 @@ For each user, their general information and the rights granted to them are spec
 - the phone number (optional)
 - the right *token validator*, which allows to validate sensitive operations
 - the right *IP*, which allows access with the OVHcloud Network plugin
-- the right *Failover IP*, which allows to manage Failover IPs on the Managed Bare Metal
+- the right *Additional IP*, which allows to manage Additional IPs on the Managed Bare Metal
 - the *Diagnosis* status, informing you whether this user is actually enabled
 
 You have several options when you click on the `...`{.action} button next to a user:

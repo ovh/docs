@@ -1,9 +1,9 @@
 ---
 title: Installer manuellement WordPress
 slug: installer-manuellement-wordpress
-legacy_guide_number: 1977
 excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS WordPress.
 section: CMS
+order: 07
 ---
 
 **Dernière mise à jour le 05/05/2020**

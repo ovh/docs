@@ -2,6 +2,8 @@
 title: Como implementar um certificado SSL EV no meu website?
 slug: ssl-ev
 excerpt: O certificado SSL EV garante aos seus utilizadores a existencia juridica da sua empresa e permite-lhes adquirir produtos no seu website com total confianca.
+section: SSL
+order: 03
 ---
 
 

@@ -10,23 +10,28 @@ order: 5
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 04.10.2021**
+**Letzte Aktualisierung am 06.10.2022**
+
+> [!primary]
+>
+> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Dies hat keine weiteren Auswirkungen auf dessen Eigenschaften oder die Funktionalität Ihrer Dienstleistungen.
+>
 
 ## Ziel
 
-Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Failover-IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Failover-IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
+Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Additional IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
 
 **Diese Anleitung erklärt, wie Sie das Netzwerk mit Proxmox VE konfigurieren.**
 
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
-- Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Failover-IP-Block.
+- Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Additional IP-Block.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
 >
-> Im OVHcloud Kundencenter dürfen keine virtuellen MACs für Failover-IPs angelegt werden.
+> Im OVHcloud Kundencenter dürfen keine virtuellen MACs für Additional IPs angelegt werden.
 >
 
 ## In der praktischen Anwendung
@@ -36,7 +41,7 @@ Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Failover-IPs im *Br
 > Bei diesen Serverreihen gibt es 4 Netzwerkkarten: jeweils zwei für das öffentliche und lokale Netzwerk. Um die gesamte Bandbreite zu nutzen, müssen Aggregate erstellt werden.
 >
 
-### Failover-IP im gerouteten Modus auf öffentlichen Netzwerkinterfaces
+### Additional IP im gerouteten Modus auf öffentlichen Netzwerkinterfaces
 
 #### Schema der Zielkonfiguration
 
@@ -92,8 +97,8 @@ iface bond0 inet dhcp
 #Private
 
 auto vmbr0
-# Configure the bridge with a private address and add route(s) to send the failover IPs to it
-# A.B.C.D/X => Subnet of failover IPs assigned to the server, this can be a host with /32
+# Configure the bridge with a private address and add route(s) to send the Additional IPs to it
+# A.B.C.D/X => Subnet of Additional IPs assigned to the server, this can be a host with /32
 iface vmbr0 inet static
 	address 192.168.0.1
         netmask 255.255.255.255
@@ -118,7 +123,7 @@ iface18 inet static
     gateway 192.168.0.1
 ```
 
-### Failover-IP über das vRack einrichen
+### Additional IP über das vRack einrichen
 
 #### Voraussetzungen
 

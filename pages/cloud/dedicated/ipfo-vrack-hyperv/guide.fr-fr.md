@@ -1,6 +1,6 @@
 ---
-title: "Utiliser Hyper-V avec des adresses IP fail-over sur un vRack"
-excerpt: "Découvrez comment configurer une machine virtuelle avec des IPs fail-over et Hyper-V sur un vRack"
+title: "Utiliser Hyper-V avec des adresses Additional IP sur un vRack"
+excerpt: "Découvrez comment configurer une machine virtuelle avec des IPs Additional IP et Hyper-V sur un vRack"
 slug: ipfo-vrack-hyperv
 section: vRack 
 ---
@@ -9,9 +9,9 @@ section: vRack
 
 ## Objectif
 
-Suivez le processus d'installation d'Hyper-V, l'association d'un switch virtuel et la configuration d'une machine virtuelle pour fonctionner avec les IPs fail-over sur un vRack.
+Suivez le processus d'installation d'Hyper-V, l'association d'un switch virtuel et la configuration d'une machine virtuelle pour fonctionner avec les IPs Additional IP sur un vRack.
 
-**Découvrez comment configurer une machine virtuelle avec des IPs fail-over et Hyper-V sur un vRack.**
+**Découvrez comment configurer une machine virtuelle avec des IPs Additional IP et Hyper-V sur un vRack.**
 
 ## Prérequis
 

@@ -6,69 +6,97 @@ section: Object Storage S3 High Performance
 order: 030
 ---
 
-**Last updated 8th December 2021**
+**Last updated September 27<sup>th</sup> 2022**
 
 ## Objective
 
-Learn how to manage your identity and access to your S3 Object Storage resources.
+The purpose of this guide is to show you how to manage your identities and access your S3 Object Storage resources.
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- a [S3 user](https://docs.ovh.com/asia/en/storage/s3/getting-started-with-s3/)
+- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB)
 
 ## Instructions
 
-### Possible actions via the OVHcloud Control Panel
+Log in to [the OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Then click on `Object Storage`{.action} in the left-hand menu.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Select `Object Storage`{.action} in the left-hand menu.
+### Creating a user
 
-#### Managing access to a bucket via a profile
+Click `Create User`{.action}.
 
-You can define access to your buckets via predefined profiles.
+If you already have OpenStack users, you can select one of these:
 
-Click on the `...`{.action} at the end of your bucket line and then `Add a user to a container`{.action}.
+![Add S3 user](images/highperf-identity-and-access-management-20220928085304931.png)
 
-![Add a user to a container](images/HighPerf-Identity-and-Access-Management-20211110113315479.png)
+then
 
-Select the user to add to your bucket and click `Next`{.action}.
-
-![Add a user to my container](images/HighPerf-Identity-and-Access-Management-20211110113404779.png)
-
-Set the accesses to your bucket for this user and click `Confirm`{.action}.
-
-![Add a user to my container - Role](images/HighPerf-Identity-and-Access-Management-20211110113419531.png)
-
-#### Managing access to an object via a profile
-
-You can also define access to your objects via predefined profiles.
-
-Click on the `...`{.action} at the end of the line of your object and then on `Add a user to my object`{.action}.
-
-![object menu](images/HighPerf-Identity-and-Access-Management-20211110120219742.png)
-
-Select the user and click `Next`{.action}.
-
-![add user to my object](images/HighPerf-Identity-and-Access-Management-20211110120309990.png)
-
-Select the access profile for this user and click `Confirm`{.action}.
-
-![add role to my object](images/HighPerf-Identity-and-Access-Management-20211110120401943.png)
-
-#### Advanced resource access management
-
-You can however refine the rights by importing a JSON configuration file. To do this, go to the `S3 Users` tab.
-
-![S3 User Menu](images/HighPerf-Identity-and-Access-Management-20211110113756874.png)
-
-Click on the `...`{.action} at the end of the line of your user and then click `Import JSON file`{.action}.
+![Add S3 user](images/highperf-identity-and-access-management-2022092808554688.png)
 
 > [!primary]
 >
-> If you want to change the rights of a user, you may want to download the JSON configuration file first by clicking on `Download JSON file`{.action}.
+> If you choose to select an existing user, ensure that the user has an `ObjectStore operator` or `Administrator` role.
 >
 
-Find below some examples of JSON configuration files:
+Otherwise, create a new user:
+
+![Add S3 user](images/highperf-identity-and-access-management-20220928085501719.png)
+
+Once your user has been created, you will see the credentials:
+
+![Credentials](images/highperf-identity-and-access-management-20220928085714656.png)
+
+> [!primary]
+>
+> By clicking on the `...`{.action} at the end of a user's line, you can, among other things, download the rclone configuration file, see the user's secret key, delete the user.
+>
+
+### Manage access to a bucket via a profile
+
+You can define access to your buckets via predefined profiles.
+
+Click on the `...`{.action} at the end of your bucket line, then `Add a user to a container`{.action}.
+
+![Add a user to a container](images/highperf-identity-and-access-management-20220928090844174.png)
+
+Select the user to add to your bucket and click `Next`{.action}.
+
+![Add a user to my container](images/highperf-identity-and-access-management-20220928083641625.png)
+
+Set access to your bucket for this user and click on `Confirm`{.action}.
+
+![Add a user to my container - Role](images/highperf-identity-and-access-management-20220928083800300.png)
+
+### Manage access to an object via a profile
+
+You can also set access to your objects via predefined profiles.
+
+Click on the `...`{.action} at the end of your object line, then `Add user to my object`{.action}.
+
+![object menu](images/highperf-identity-and-access-management-20220928084137918.png)
+
+Select the user and click `Next`{.action}.
+
+![add user to my object](images/highperf-identity-and-access-management-20220928084222940.png)
+
+Select the access profile for this user and click `Confirm`{.action}.
+
+![add role to my object](images/highperf-identity-and-access-management-20220928084308265.png)
+
+### Advanced resource access management
+
+You can refine your permissions by importing a JSON configuration file. To do this, go to the `S3 Policy Users`{.action} tab.
+
+![S3 users](images/highperf-identity-and-access-management-20220928084435242.png)
+
+Click on the `...`{.action} at the end of your user's line, then `Import JSON file`{.action}.
+
+> [!primary]
+>
+> If you want to change a user's rights, you may need to download the JSON configuration file in advance by selecting `Download JSON File`{.action}.
+>
+
+Some examples of JSON configuration files:
 
 **Read/write access to a bucket and its objects**
 
@@ -96,7 +124,7 @@ Find below some examples of JSON configuration files:
 }
 ```
 
-**Allow all operations on all resources in a project**
+**Allow all operations on all project resources**
 
 ```json
 {
@@ -109,7 +137,7 @@ Find below some examples of JSON configuration files:
 }
 ```
 
-**Read/write access to all objects in a specific folder ("/home/user2") in a specific bucket ("companybucket")**
+**Read/write access to all objects in a specific folder (`/home/user2`) in a specific bucket (`companybucket`)**
 
 ```json
 {
@@ -122,10 +150,11 @@ Find below some examples of JSON configuration files:
 }
 ```
 
+
 ### List of supported actions
 
-| Action  | Scope  |
-|:--|:--|
+| Action | Scope |
+|------|:------|
 | s3:AbortMultipartUpload | Object |
 | s3:CreateBucket | Bucket |
 | s3:DeleteBucket | Bucket |
@@ -139,4 +168,4 @@ Find below some examples of JSON configuration files:
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/).

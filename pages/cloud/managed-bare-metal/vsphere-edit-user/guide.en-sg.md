@@ -37,7 +37,7 @@ The following window appears:
 
 You can set your name, first name, phone number and email address.
 
-This window also allows you to add editing rights to **IP**, **Failover IP** and the **Token validator** used to approve certain sensitive actions on infrastructures.
+This window also allows you to add editing rights to **IP**, **Additional IP** and the **Token validator** used to approve certain sensitive actions on infrastructures.
 
 Click on `Confirm`{.action} to validate the modifications.
 

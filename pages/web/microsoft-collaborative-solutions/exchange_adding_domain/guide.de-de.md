@@ -91,7 +91,6 @@ Am Ende der Konfiguration werden Sie aufgefordert, die angezeigten Informationen
 Sobald die Domain als assoziierte Domain hinzugefügt ist, überprüfen Sie bitte in der angezeigten Tabelle, dass die Konfiguration korrekt ist. Ein grünes Kästchen zeigt an, dass die Domain korrekt konfiguriert ist. Falls das Kästchen rot ist:
 
 - **wenn Sie beim Hinzufügen der Domain eine automatische Konfiguration gewählt haben**: Es kann einige Augenblicke dauern, bis die Anzeige im OVHcloud Kundencenter aktualisiert wird.
-
 - **wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Klicken Sie auf das rote Kästchen, um die notwendigen Änderungen anzuzeigen. Verwendet die Domain nicht die OVH Konfiguration (d. h. die DNS-Server von OVH), nehmen Sie bitte die notwendigen Änderungen in dem Verwaltungsinterface vor, dass Sie für die Konfiguration Ihrer Domain verwenden. Zur Bearbeitung eines CNAME-Eintrags finden Sie weitere Informationen in der Dokumentation [CNAME-Eintrag zu einer assoziierten Domain hinzufügen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_einen_cname_eintrag_hinzufugen/){.external}.
 
 > [!primary]

@@ -88,9 +88,9 @@ Lesen Sie die Anleitung [vRack Public Cloud](https://docs.ovh.com/gb/en/public-c
 
 ### Kann ich die öffentliche IP-Adresse meiner Instanz ändern?
 
-Die öffentlichen IPs werden den Instanzen automatisch zugewiesen und können daher nicht geändert werden. Um die öffentliche IP-Adresse einer Instanz zu verwalten, empfehlen wir die Verwendung von Failover-IPs. So können Sie unabhängig von einer der Instanz automatisch zugewiesenen öffentlichen Adresse eine oder mehrere Failover-IP-Adressen zu Ihrer Instanz hinzufügen.
+Die öffentlichen IPs werden den Instanzen automatisch zugewiesen und können daher nicht geändert werden. Um die öffentliche IP-Adresse einer Instanz zu verwalten, empfehlen wir die Verwendung von Additional IPs. So können Sie unabhängig von einer der Instanz automatisch zugewiesenen öffentlichen Adresse eine oder mehrere Additional IP-Adressen zu Ihrer Instanz hinzufügen.
 
-Weitere Informationen finden Sie in der Anleitung [Eine Failover-IP erwerben](../eine-failover-ip-erwerben/).
+Weitere Informationen finden Sie in der Anleitung [Eine Additional IP erwerben](../eine-failover-ip-erwerben/).
 
 
 ## Weiterführende Informationen

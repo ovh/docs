@@ -37,7 +37,7 @@ Di seguito le funzionalità di OVH Load Balancer:
  - protezione Anti-DDoS OVH
  - supporto multi-zona (Anycast)
  - supporto avanzato HTTP/HTTPS (reindirizzamenti, header, ACL, ecc...)
- - servizio compatibile con un IP Failover
+ - servizio compatibile con un Additional IP
  - supporto della vRack
  - ridondanza: OVH Load Balancer funziona su istanze separate che lavorano a loro volta su dispositivi separati e ridondanti
 
@@ -88,9 +88,9 @@ In caso di una manutenzione prevista sulla tua infrastruttura, adesso è possibi
 
 Ora è possibile combinare diversi servizi OVH grazie al Load Balancer, per esempio:
 
-- le istanze Public Cloud con l’IP Failover
-- i VPS con l’IP Failover
-- i server dedicati con l’IP Failover
+- le istanze Public Cloud con l’Additional IP
+- i VPS con l’Additional IP
+- i server dedicati con l’Additional IP
 - le vRack
 
 ![Mix and match service](images/mix_and_match.png){.thumbnail}

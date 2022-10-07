@@ -1,12 +1,12 @@
 ---
 title: Geolokalizacja na hostingu www
 excerpt: ''
-id: '1880'
 slug: geolokalizacja_na_hostingu_www
-section: Adresacja IP w OVH
+section: Optymalizacja strony WWW
+order: 05
 ---
 
-
+ 
 ## 
 Opcja geolokalizacji jest dostępna w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 

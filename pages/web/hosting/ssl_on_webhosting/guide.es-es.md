@@ -3,7 +3,7 @@ title: 'Gestionar un certificado SSL en un alojamiento web'
 slug: gestionar-un-certificado-ssl-en-un-alojamiento-web
 excerpt: 'Operaciones relativas a los certificados SSL en los alojamientos web de OVHcloud'
 section: SSL
-order: 1
+order: 01
 ---
 
 > [!primary]

@@ -95,7 +95,7 @@ Zu jedem Benutzer finden Sie verschiedene Benutzerinformationen sowie die für d
 - Telefon-/Faxnummer (optional)
 - *token validator*-Berechtigung, erlaubt die Bestätigung kritischer Operationen auf Managed Bare Metal Diensten
 - *IP*-Berechtigung, erlaubt Zugriff auf das "OVH Network Plugin"
-- *Failover-IP*-Berechtigung, erlaubt die Verwaltung von mit dem Managed Bare Metal Dienst verbundenen Failover-IPs
+- *Additional IP*-Berechtigung, erlaubt die Verwaltung von mit dem Managed Bare Metal Dienst verbundenen Additional IPs
 - Status (Diagnose), zeigt an, ob der Benutzer erfolgreich erstellt wurde
 
 Wenn Sie rechts in der Tabelle auf den Button `...`{.action} klicken, werden Ihnen mehrere Optionen angezeigt:

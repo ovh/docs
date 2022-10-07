@@ -1,10 +1,9 @@
 ---
 title: 'Installare manualmente un CMS'
 excerpt: 'CMS compatibili con il tuo hosting Web OVHcloud'
-id: '1375'
 slug: web_hosting_installa_manualmente_il_tuo_cms
-legacy_guide_number: g1375
 section: CMS
+order: 03
 ---
 
 **Ultimo aggiornamento: 04/02/2020**

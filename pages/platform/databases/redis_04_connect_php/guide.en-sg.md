@@ -14,6 +14,8 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 **This guide explains how to connect to a Redis database instance with one of the world's most famous programming language: PHP.**
 
+You can find an example on the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/redis/php/hello-world).
+
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)

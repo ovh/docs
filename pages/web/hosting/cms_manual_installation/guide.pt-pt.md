@@ -1,9 +1,9 @@
 ---
 title: 'Partilhado: Instalar manualmente o meu CMS'
 excerpt: 'Instalar de forma manual o meu CMS'
-id: '1375'
 slug: partilhado_instalar_manualmente_o_meu_cms
-legacy_guide_number: g1375
+section: CMS
+order: 03
 ---
 
 **Última atualização: 4 de fevereiro de 2020**

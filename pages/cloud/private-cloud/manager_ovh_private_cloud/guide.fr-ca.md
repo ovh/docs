@@ -97,7 +97,7 @@ Pour chaque utilisateur vous trouverez différentes informations sur l'utilisate
 - le numéro de téléphone (facultatif).
 - le droit *token validator*, permettant de valider des opérations sensibles sur des Private Cloud disposant de l'option HDS ou PCI-DSS.
 - Le droit *Ip*, permettant d'accèder au plugin OVH network.
-- Le droit *Ip Failover*, permettant de gérer les IPs Failover relié à votre Private Cloud.
+- Le droit *Additional IP*, permettant de gérer les Additional IPs relié à votre Private Cloud.
 - Le droit *Interface NSX*, permettant d'accèder à l'interface NSX si l'option est activé dans votre Private Cloud.
 - le statut (Diagnostic), permettant de voir si votre utilisateur est bien créé.
 

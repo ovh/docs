@@ -3,7 +3,7 @@ title: 'Den Speicherplatz Ihres Webhostings wiederherstellen'
 slug: webhosting-speicherplatz-wiederherstellen
 excerpt: Erfahren Sie hier, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen
 section: 'FTP und SSH'
-order: 3
+order: 06
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 3
 
 **Letzte Aktualisierung am 20.06.2022**
 
-## Ziel
+## Ziel 
 
 Über Ihr OVHcloud Webhosting haben Sie Zugriff auf einen Speicherplatz, auf dem Sie Ihre Websites hosten können. Aus verschiedenen Gründen kann es vorkommen, dass die gesamten Daten Ihres Speicherplatzes oder auch nur eine darin gespeicherte Datei wiederhergestellt werden müssen. Das ist beispielsweise der Fall, wenn eine Datei gelöscht oder bearbeitet wurde und die Website nicht mehr erreichbar ist.
 

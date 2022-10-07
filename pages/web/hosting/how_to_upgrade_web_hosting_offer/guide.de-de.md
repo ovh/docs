@@ -12,7 +12,7 @@ order: 2
 
 **Letzte Aktualisierung am 22.06.2022**
 
-## Ziel
+## Ziel 
 
 Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erlaubt es Ihnen, [die Kapazitäten Ihrer Webhosting Dienste](https://www.ovhcloud.com/de/web-hosting/) zu erhöhen, um über mehr Rechenleistung, Speicherplatz, Datenbanken, E-Mail-Adressen zu verfügen. Zusätzliche Funktionen wie [Mailinglisten](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/) (ab [Pro Dienst](https://www.ovhcloud.com/de/web-hosting/professional-offer/)) oder [Private SQL](https://www.ovhcloud.com/de/web-hosting/options/private-sql/) (inkludiert in Webhostings der Reihe [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/)) werden mit einem Upgrade ebenfalls verfügbar.
 

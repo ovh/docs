@@ -2,8 +2,8 @@
 title: 'Especificidades técnicas relacionadas com os alojamentos partilhados'
 slug: especificidades-tecnicas-alojamentos-partilhados
 excerpt: 'Neste guia encontrará as diferentes informações e especificidades técnicas relacionadas com os alojamentos partilhados'
-section: 'Configuração do alojamento'
-order: 4
+section: Configuração do alojamento
+order: 05
 ---
 
 > [!primary]

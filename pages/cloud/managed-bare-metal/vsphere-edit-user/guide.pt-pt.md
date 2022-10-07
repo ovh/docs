@@ -36,7 +36,7 @@ Aparecerá a seguinte janela:
 
 Pode definir o nome, sobrenome, número de telefone e endereço de e-mail.
 
-Esta janela permite igualmente adicionar direitos de edição aos endereços **IP**, **IP Failover**, assim como o direito **Token validator** utilizado para aprovar certas ações sensíveis em infraestruturas com a opção **Segurança avançada** ativada.
+Esta janela permite igualmente adicionar direitos de edição aos endereços **IP**, **Additional IP**, assim como o direito **Token validator** utilizado para aprovar certas ações sensíveis em infraestruturas com a opção **Segurança avançada** ativada.
 
 Clique no botão Validar para confirmar as suas modificações.
 

@@ -1,9 +1,9 @@
 ---
 title: Geolocaliser votre site
 slug: geolocaliser-site
-legacy_guide_number: 1880
 excerpt: En choisissant l’IP d’un pays pour votre site, vous optimisez votre referencement dans les moteurs de recherche locaux.
 section: Optimiser son site
+order: 05
 ---
 
 **Dernière mise à jour le 05/05/2020**

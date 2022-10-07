@@ -3,7 +3,7 @@ title: 'Activer les adresses e-mails incluses dans votre hébergement web'
 slug: activer-email-hebergement-web
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
 section: 'Premiers pas'
-order: 3
+order: 07
 ---
 
 **Dernière mise à jour le 17/08/2020**

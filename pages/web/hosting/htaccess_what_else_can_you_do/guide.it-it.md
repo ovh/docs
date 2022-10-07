@@ -2,8 +2,8 @@
 title: Hosting condiviso altre operazioni possibili con il file .htaccess
 excerpt: Questa guida ti mostra le altre operazioni che possono essere effettuate con il file .htaccess
 slug: hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess
-legacy_guide_number: g1972
 section: Scrittura e autenticazione
+order: 04
 ---
 
 

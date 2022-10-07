@@ -101,6 +101,8 @@ Select the `Users`{.action} tab to get the username or reset a user password.
 
 [MongoDB capabilities](https://docs.ovh.com/asia/en/publiccloud/databases/mongodb/capabilities/)
 
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb) to find how to connect to your database with several languages.
+
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 Join our community of users on <https://community.ovh.com/en/>.

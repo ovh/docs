@@ -3,7 +3,7 @@ title: "Was tun, wenn Ihre Website nicht erreichbar ist?"
 slug: fehler-server-nicht-erreichbar
 excerpt: Diagnose der Ursachen für die Unverfügbarkeit Ihrer Website
 section: Diagnose
-Order: 1
+order: 01
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ Order: 1
 
 **Letzte Aktualisierung am 02.08.2022**
 
-## Ziel
+## Ziel 
 
 Im Browser können mehrere Fehlermeldungen auftreten, wenn Ihre Website nicht erreichbar ist. Die folgenden Beispiele zeigen eine fehlerhafte [DNS-Konfiguration](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-konzept-verstehen) oder eine angebrochene Domain an (wenn Ihre Website keine der hier beschriebenen Fehlermeldungen zeigt, lesen Sie den Abschnitt [Weiterführende Informationen](#gofurther)):
 

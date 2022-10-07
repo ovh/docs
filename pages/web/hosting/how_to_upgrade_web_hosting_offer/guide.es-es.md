@@ -3,7 +3,7 @@ title: Mejorar la solución de alojamiento web
 excerpt: Cómo cambiar la fórmula de suscripción de un plan de hosting de OVHcloud
 slug: how_to_change_web_hosting_offer
 section: Optimización del sitio web
-order: 2
+order: 02
 ---
 
 > [!primary]

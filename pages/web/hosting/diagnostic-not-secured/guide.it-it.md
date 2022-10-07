@@ -3,7 +3,7 @@ title: "Cosa fare in caso di errore « La connessione non è privata »?"
 excerpt: "Reagire in caso di messaggio di errore relativo alla sicurezza del tuo sito"
 slug: errore-sito-non-sicuro
 section: Diagnostica
-order: 3
+order: 03
 ---
 
 > [!primary]

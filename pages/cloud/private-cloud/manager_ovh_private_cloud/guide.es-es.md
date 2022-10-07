@@ -95,7 +95,7 @@ Aparece la información de cada usuario, así como los permisos relativos al ser
 - Número de teléfono (opcional).
 - permiso *token validator*,que permite confirmar las operaciones sensibles en los Private Cloud que tengan la certificación HDS o PCI-DSS.
 - El permiso *Ip*, que da acceso al plugin OVHcloud network.
-- El permiso *Ip Failover*, para gestionar las direcciones IP Failover asociadas al servicio Private Cloud.
+- El permiso *Additional IP*, para gestionar las direcciones Additional IP asociadas al servicio Private Cloud.
 - El permiso *Interfaz NSX*,que da acceso a la interfaz NSX siempre y cuando la opción esté activada en el servicio Private Cloud.
 - El estado (Diagnóstico), que permite ver si el usuario se ha creado correctamente.
 

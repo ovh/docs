@@ -33,7 +33,7 @@ Nowa usługa oferuje:
 - ochronę Anty-DDoS,
 - wsparcie dla różnych regionów (Anycast),
 - zaawansowane wsparcie HTTP/HTTPS (przekierowania, nagłówki, ACL, etc.),
-- kompatybilność z IP Failover,
+- kompatybilność z Additional IP,
 - kompatybilność z technologią wykorzystaną w vRack,
 - redundancję: Twój Load Balancer działa na odizolowanych instancjach, które również pracują w oparciu o oddzielone i redundantne urządzenia. 
 
@@ -81,9 +81,9 @@ W przypadku zaplanowanych prac konserwacyjnych infrastruktury możesz wyłączy�
 
 Korzystając z rozwiązania Load Balancer, możesz łączyć ze sobą różne typy usług w ramach jednej infrastruktury np.: 
 
-- instancje Public Cloud z IP Failover,
-- serwery VPS z IP Failover,
-- serwery dedykowane z IP Failover,
+- instancje Public Cloud z Additional IP,
+- serwery VPS z Additional IP,
+- serwery dedykowane z Additional IP,
 - vRack.
 
 ![Łączenie usług](images/mix_and_match.png){.thumbnail}

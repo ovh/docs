@@ -36,7 +36,7 @@ With this new solution, you will get:
 - OVH anti-DDoS protection
 - your services replicated worldwide (Anycast)
 - advanced HTTP/HTTPS support (redirections, headers, ACL, etc.)
-- a service compatible with a failover IP
+- a service compatible with an Additional IP
 - vRack supported
 - redundancy - your Load Balancer functions on separate instances, working individually on isolated, redundant hardware
 
@@ -88,9 +88,9 @@ If there is any maintenance scheduled for your solution, you can now easily plac
 
 You can now combine various OVH services in the Load Balancer, for example:
 
-- Public Cloud instances with failover IPs
-- VPS with failover IPs
-- Dedicated servers with failover IPs
+- Public Cloud instances with Additional IPs
+- VPS with Additional IPs
+- Dedicated servers with Additional IPs
 - vRacks
 
 ![Combine your services](images/mix_and_match.png){.thumbnail}

@@ -76,7 +76,7 @@ To find the row for the OVHcloud SPF record, a display filter can be applied to 
 
 > [!primary]
 >
-> An SPF record always follows this form: "v=spf1 `sources` `qualifier`". For example, the OVHcloud SPF is: "v=spf1 include:mx.ovh.com ~all".
+> An SPF record always follows this form: "v=spf1 `sources` `qualifier`". For example, the OVHcloud SPF is: "v=spf1 include:mx.ovh.ca ~all".
 >
 
 ![domain](images/spf_records_check_OVH_configuration.png){.thumbnail}
@@ -120,7 +120,7 @@ Regarding the question: "**Do the emails of your domain originate from other ser
 |ptr|Enter the host names for which the *reverse* path works (using a PTR record in the DNS zone). They will thus be identified as a legitimate sending source.|
 |ip4|Indicates IP addresses or RIPE blocks (IPv4) authorised to send emails with your addresses.|
 |ip6|Indicates IP addresses or RIPE blocks (IPv6) authorised to send emails with your addresses.|
-|include|Enter domain names here that include their own SPF rules. This will enable these for your own domain. For example, OVHcloud uses this method in its SPF configuration: "v=spf1 include:mx.ovh.com ~all". It allows OVHcloud to manage the SPF of mx.ovh.com and let customers use it for their services.|
+|include|Enter domain names here that include their own SPF rules. This will enable these for your own domain. For example, OVHcloud uses this method in its SPF configuration: "v=spf1 include:mx.ovh.ca ~all". It allows OVHcloud to manage the SPF of mx.ovh.ca and let customers use it for their services.|
 
 Regarding the question: "**Does the data you have entered describe all hosts that send email from your domain?**", three choices are possible:
 
@@ -184,7 +184,7 @@ The general OVHcloud SPF configuration applies to the solutions below:
 The configuration is as follows:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.ca ~all"
 ```
 
 ### OVHcloud SPF configuration for Private Exchange 
@@ -195,11 +195,11 @@ For the Private Exchange solution, you need to enter your email server’s IP ad
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
 ```
 
-If you also use a [shared email service](#ovhcloudspfvalue), you can add the argument `include:mx.ovh.com` to the SPF record, with the following result:
+If you also use a [shared email service](#ovhcloudspfvalue), you can add the argument `include:mx.ovh.ca` to the SPF record, with the following result:
 
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.ca ~all"
 ```
 
 > [!primary]

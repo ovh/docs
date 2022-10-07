@@ -3,7 +3,7 @@ title: "Importer une sauvegarde dans la base de données d'un hébergement web"
 slug: mutualise-guide-importation-dune-base-de-donnees-mysql
 excerpt: 'Découvrez comment importer une sauvegarde dans la base de données de votre hébergement web OVH'
 section: 'Bases de données'
-order: 4
+order: 04
 ---
 
 **Dernière mise à jour le 29/05/2018**

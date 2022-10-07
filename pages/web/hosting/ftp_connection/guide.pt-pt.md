@@ -2,8 +2,8 @@
 title: 'Aceder ao espaço de armazenamento do alojamento web'
 slug: aceder-espaco-de-armazenamento-ftp-alojamento-web
 excerpt: 'Saiba como aceder ao espaço de armazenamento do seu alojamento web da OVHcloud'
-section: 'FTP e SSH'
-order: 1
+section: FTP e SSH
+order: 02
 ---
 
 **Última atualização: 19/01/2022**

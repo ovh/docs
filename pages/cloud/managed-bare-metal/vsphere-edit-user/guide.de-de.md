@@ -36,7 +36,7 @@ Das folgende Fenster wird angezeigt:
 
 Sie können Ihren Namen, Vornamen, Ihre Telefonnummer und E-Mail-Adresse festlegen.
 
-In diesem Fenster können Sie ebenfalls Bearbeitungsrechte hinzufügen: Für **IP** Adressen, **Failover-IP**, sowie das Recht **Token Validator**. Es wird verwendet, um bestimmte kritische Aktionen in Infrastrukturen mit aktivierter Option zu **erweiterter Sicherheit** zu genehmigen.
+In diesem Fenster können Sie ebenfalls Bearbeitungsrechte hinzufügen: Für **IP** Adressen, **Additional IP**, sowie das Recht **Token Validator**. Es wird verwendet, um bestimmte kritische Aktionen in Infrastrukturen mit aktivierter Option zu **erweiterter Sicherheit** zu genehmigen.
 
 Klicken Sie auf den Button `Bestätigen`{.action}, um Ihre Änderungen zu bestätigen.
 

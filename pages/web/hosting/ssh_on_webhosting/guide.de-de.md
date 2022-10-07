@@ -1,16 +1,14 @@
 ---
 title: 'SSH-Zugang Ihres Webhostings verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie den SSH-Zugang zur Verbindung mit Ihrem OVHcloud Webhosting nutzen'
-id: '1962'
 slug: webhosting_ssh_auf_ihren_webhostings
-legacy_guide_number: g1962
 section: 'FTP und SSH'
-order: 4
+order: 07
 ---
 
 **Letzte Aktualisierung am 19.01.2022**
 
-## Ziel
+## Ziel 
 
 Mit OVHcloud Webhosting Angeboten erhalten Sie einen Speicherplatz zum Online-Stellen der Dateien Ihrer Websites und Anwendungen. Auf diesen können Sie mithilfe eines SSH- oder FTP-Benutzers und den zugehörigen Passwörtern zugreifen.
 
