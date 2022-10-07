@@ -50,7 +50,7 @@ Per aggiungere un dominio, clicca sulla scheda `Domini associati`{.action}, Visu
 
 Scegli una delle opzioni disponibili:
 
-- **seleziona un dominio dalla lista**: vengono mostrati solo i domini configurati con OVHcloud e associati al tuo identificativo cliente
+- **Seleziona un dominio dalla lista**: vengono mostrati solo i domini configurati con OVHcloud e associati al tuo identificativo cliente
 
 - **Inserisci un dominio non gestito dal tuo account OVHcloud**: per il corretto funzionamento del servizio, assicurati di essere in grado di modificare la configurazione del dominio (zona DNS). In questo caso, è necessario aggiungere un record DNS CNAME.
 
