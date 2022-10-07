@@ -1,73 +1,97 @@
 ---
-title: 'Changing a Web Hosting plan’s PHP version'
+title: "Changing a Web Hosting plan’s PHP version"
 slug: how_to_configure_php_on_your_ovh_web_hosting_package_2014
-excerpt: 'Find out how to change the PHP version on an OVHcloud Web Hosting plan'
+excerpt: "Find out how to change the PHP version on an OVHcloud Web Hosting plan"
 section: PHP
 order: 01
 ---
 
-**Last updated 5th May 2020**
+**Last updated 19th September 2022**
 
-## Objective
-
-There are many different types of website published online. With an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external}, you can host whatever kind of website you want, provided it is compatible with [our infrastructures’ configuration](https://webhosting-infos.hosting.ovh.net){.external}. As a result, you may find that you want to modify the PHP version used by your Web Hosting plan.
+With your [OVHcloud web hosting](https://www.ovhcloud.com/asia/web-hosting/){.external} you can host whatever website you want, provided that it is compatible with [our infrastructure configurations](https://webhosting-infos.hosting.ovh.net){.external}. In this regard, you may find that you want to modify the PHP version used by your Web Hosting plan.
 
 **Find out how to change the PHP version on an OVHcloud Web Hosting plan.**
 
-## Requirements
+## Requirements 
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external} (excluding Cloud Web)
-- the ability to manage the Web Hosting plan from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), or access to the information you need to connect to the storage space 
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external}, with the exception of a Cloud Web Hosting plan
+- Access to your Web Hosting plan in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), with the exception of a Cloud Web Hosting plan
+- Access to your Web Hosting plan in the [OVHcloud Control Panel](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/). 
 
 ## Instructions
 
-There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVHcloud offers the very latest PHP versions, a list of which can be found here: <https://www.ovhcloud.com/asia/web-hosting/uc-programming-language/>. 
+Several versions of PHP programming language exist. Version developments include various patches, as well as adding or removing features. OVHcloud offers the latest major versions of PHP, for which you can find a list [here](https://www.ovhcloud.com/asia/web-hosting/uc-programming-language/). 
 
-Because some features cannot be maintained in newer versions, **please ensure that the new PHP version you want to use is compatible with your website before you start making any changes.**
+> [!primary]
+>
+> Since some features may not be maintained with newer versions, **make sure, before you make any changes, that the new PHP version you want is compatible with your website.**
+>
 
-### Step 1: Ensure that your website is compatible.
+### Step 1: Ensure that your website is compatible
 
-Although OVHcloud manages setup for the latest PHP versions on its servers, as a webmaster, you are responsible for ensuring that your website is up-to-date and compatible with the latest PHP versions. There are two ways of doing this, depending on the type of website you are using.
+Although OVHcloud manages the setup of the latest PHP versions on its servers, it is up to you as a webmaster to ensure that your website is **always up to date** and therefore compatible with the latest PHP versions. There are two ways of doing this, depending on which website you are using:
 
-**If you are using a turn-key website, based on a CMS (e.g. WordPress or Joomla!):** 
+**Case 1: A turn-key website, such as a Content Management System (CMS)** (e.g. WordPress, Joomla!, PrestaShop, Drupal): 
 
-- Check the official documentation released by your CMS's publisher. 
-- Note down the information concerning essential technical requirements for your CMS to work, as well as the changes you need to make in order to update your CMS.
-- If necessary, update your CMS and check that the new version is compatible with your OVHcloud Web Hosting plan.
+- Consult the official documentation created by the publisher of the CMS you are using.
+- Please note down the information on the technical requirements you need for your CMS to work, as well as the changes you need to make in order to update your CMS.
+- If necessary, update your CMS and check that the new version is compatible with OVHcloud hosting services.
 
-**If you are using a website based on a custom solution:** 
+**Case 2: A website based on a custom solution**: 
 
-- Get in touch with the webmaster who built the website.
-- Check the official PHP documentation, which provides more information on the version migrations. The official documentation is available here: <http://php.net/manual/en/appendices.php>.
-- If necessary, update your website’s code and check that it remains compatible with your OVHcloud Web Hosting plan.
+- Get in touch with the webmaster who created the website.
+- Use the [official PHP documentation](http://php.net/manual/en/appendices.php){.external} for more information on version migrations.
+- If necessary, update your website’s code and ensure that it remains compatible with OVHcloud hosting services.
 
-If you need to see which PHP version is currently used by your OVHcloud Web Hosting plan, there are two ways of doing so: 
+If required, you can find out which PHP version is currently used by your hosting system in two ways:
 
-|Method|Description|
-|---|---|
-|Via the OVHcloud Control Panel|Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click `Web hosting`{.action}, then choose the Web Hosting plan concerned. In the `General information`{.action} tab, note down the version listed below **Global PHP version**. If a blue circle appears instead, please wait a few moments for the version to load.|
-|Via a script|Create a **.php** script, containing only the code `<?php phpinfo(); ?>`. You need to put the script online on your storage space, then run it by accessing its full URL. |
+- **In the OVHcloud Control Panel**: Log in to [the OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action} then select the Web Hosting plan concerned. In the `General information`{.action} tab, locate the version number below *Global PHP version*.
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}
 
-If you are unable to ensure that your website is compatible with the new PHP version, you can try to change the current version and undo your changes if necessary. **Please note, however, we strongly advise against adopting this method.** By doing this, you run the risk of your website experiencing some technical issues. It is also important to keep in mind that even if the website displays properly once you have changed the PHP version, specific features may be affected, and may no longer work properly. 
+> [!primary]
+> If a blue circle is present, wait a few minutes for the version to refresh.
+> 
 
-Once you are ready to change the PHP version, please move to the next step.
+- **Using a script**: Create a **.php** script containing only the code `<?php phpinfo(); ?>`. Upload it to your [FTP storage space](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/), then call it by accessing its full address/URL.
 
-### Step 2: Change the PHP version on your Web Hosting plan.
+If you are unable to ensure that your website is compatible with the new PHP version, you can try changing the current version by downgrading it. **We strongly advise against this method** because you run the risk of causing a technical issue on your website. Even if the website seems to work after the change, it may affect one of its specific features, causing errors.
 
-There are several ways you can modify your Web Hosting plan’s PHP version:
+Once you are ready to make the change, continue to step 2.
 
-- **Through a configuration wizard in the OVHcloud Control Panel.** This solution is less technical, and you will need to be logged in to the OVHcloud Control Panel, where you can choose the new PHP version along with other settings. Please refer to the instructions set out in this guide if you would like to use this method: [Modifying the configuration of a Web Hosting plan](../modify_your_web_hosting_systems_runtime_environment/).
+### Step 2: Modify your Web Hosting plan’s PHP version
 
-- **By manually modifying a file in your storage space.** This solution is more technical, and you will need to be logged in to your storage space, so that you can modify the .ovhconfig file. Please refer to the instructions set out in this guide if you would like to use this method: [Configuring the .ovhconfig file of your Web Hosting plan](../configuring-file-ovhconfig/){.external}.
+There are two ways to modify your Web Hosting plan’s PHP version:
 
-If you are more technically experienced, please note that you can no longer modify the PHP version via an .htaccess file on the latest [OVHcloud Web Hosting plans](https://www.ovhcloud.com/asia/web-hosting/). The command that changes the PHP version in .htaccess files cannot be used to switch to the latest PHP versions on our infrastructures. Instead, you will need to edit the .ovhconfig file, which you can do by following this guide: [Configuring the .ovhconfig file of your Web Hosting plan]../configuring-file-ovhconfig/).
+- **Using the configuration assistant in your Control Panel**: Once you have logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), you can choose the new PHP version you want from other settings. Please refer to the instructions set out in our guide [“Modifying the configuration of a Web Hosting plan”](https://docs.ovh.com/asia/en/hosting/modify_your_web_hosting_systems_runtime_environment/){.external} to use this method.
+
+- **By manually editing a file in your storage space**: This solution is more technical. You need to log in to your [FTP storage](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/) and edit the .ovhconfig file. Please refer to the instructions set out in our guide [“Configuring the .ovhconfig file of your Web Hosting plan”](https://docs.ovh.com/asia/en/hosting/configuring-file-ovhconfig/){.external} to do this.
+
+> [!primary]
+>
+> You can no longer modify the PHP version via a .htaccess file on the latest [OVHcloud web hosting](https://www.ovhcloud.com/asia/web-hosting/){.external} offers.<br>
+> The command that changes the PHP version in the .htaccess file cannot be used to use the recent PHP versions on our infrastructures.<br>
+> To do this, you will need to use the `.ovhconfig` file as explained our guide [“Configuring the .ovhconfig file of your Web Hosting plan”](https://docs.ovh.com/asia/en/hosting/configuring-file-ovhconfig/){.external}.
+>
+
+Some PHP versions only work with certain runtime environments. The following are the PHP versions available on OVHcloud web hosting plans and compatible [runtime environments](https://docs.ovh.com/asia/en/hosting/modify_your_web_hosting_systems_runtime_environment/):
+
+|PHP versions|Compatible runtime environments|
+|---|---|
+|5.4, 5.5, 5.6 and 7.0|Legacy, Stable|
+|7.1, 7.2 and 7.3|Stable|
+|7.4, 8.0 and 8.1 (beta)|stable64|
 
 ## Go further
 
-[Modifying the configuration of a Web Hosting plan](../modify_your_web_hosting_systems_runtime_environment/)
+[Modifying the configuration of a Web Hosting plan](https://docs.ovh.com/asia/en/hosting/modify_your_web_hosting_systems_runtime_environment/){.external}
 
-[Configuring the .ovhconfig file of your Web Hosting plan](../configuring-file-ovhconfig/)
+[Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/asia/en/hosting/configuring-file-ovhconfig/){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+[Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/){.external}
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 
