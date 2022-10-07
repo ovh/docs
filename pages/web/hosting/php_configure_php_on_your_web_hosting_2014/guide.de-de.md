@@ -1,5 +1,5 @@
 ---
-title: "PHP Version eines Webhostings ändern"
+title: "PHP Version eines Webhostings andern"
 slug: konfiguration_von_php_fur_ein_ovh_webhosting_2014
 excerpt: "Erfahren Sie hier, wie Sie die PHP-Version Ihres OVHcloud Webhostings ändern"
 section: PHP
