@@ -132,7 +132,7 @@ Allez dans `Machines virtuelles (et modèles)`{.action} pour voir le modèle cr�
 
 ### Installation de la machine virtuelle **Bootstrap** fourni par OVHcloud
 
-Cette machine virtuelle a été créée par OVHcloud à partir de cette documentation [Installation manuelle de l'outil CLI pour le déploiement de **Tanzu Kubernetes GRID**](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html). Cette machine virtuelle est disponible dans les **OVHTemplates** d'OVHcloud.
+Cette machine virtuelle a été créée par OVHcloud à partir de cette documentation [Installation manuelle de l'outil CLI pour le déploiement de **Tanzu Kubernetes GRID**](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html). Ele est disponible sous forme de modèle dans les **OVHTemplates** d'OVHcloud.
 
 Connectez-vous à la page d'accueil OVHcloud de votre cluster VMware et cliquez à droite sur `OVH Templates`{.action}.
 
