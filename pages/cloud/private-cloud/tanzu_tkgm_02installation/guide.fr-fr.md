@@ -58,11 +58,11 @@ Connectez-vous à la page d'accueil OVHcloud de votre cluster VMware et cliquez 
 
 ![01 integrate TKGM OVA 01](images/01-integrate-tkgm-ova01.png){.thumbnail}
 
-Au travers de la fenêtre **Select a template** choisissez le troisième `modèle`{.action} en partant du haut nommé **Linux** en version **3**.
+Au travers de la fenêtre **Select a template** choisissez le quatrième `modèle`{.action} en partant du haut nommé **Linux** en version **3**.
 
 ![01 integrate TKGM OVA 02](images/01-integrate-tkgm-ova02.png){.thumbnail}
 
-Cliquez sur l'icône `copier`{.action} à droite pour copier l'URL qui doit se terminer par **photon-3-kube-v1.23.8+vmware.1.ovf** dans le presse-papier ensuite cliquez sur `Close`{.action}.
+Cliquez sur l'icône `copier`{.action} à droite pour copier l'URL dont le nom doit se terminer par **photon-3-kube-v1.23.8+vmware.1.ovf** dans le presse-papier ensuite cliquez sur `Close`{.action}.
 
 ![01 integrate TKGM OVA 03](images/01-integrate-tkgm-ova03.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster
 
 ![01 integrate TKGM OVA 03b](images/01-integrate-tkgm-ova03b.png){.thumbnail}
 
-Sélectionnez `URL`{.action} et `copiez`{.action} l'URL et cliquez sur `SUIVANT`{.action}.
+Sélectionnez `URL`{.action}, `copiez`{.action} l'URL à partir du presse-papier et cliquez sur `SUIVANT`{.action}.
 
 ![01 integrate TKGM OVA 04](images/01-integrate-tkgm-ova04.png){.thumbnail}
 
@@ -138,7 +138,7 @@ Connectez-vous à la page d'accueil OVHcloud de votre cluster VMware et cliquez 
 
 ![02 Add Bootstrapvm 01](images/02-add-bootstrap-vm-from-ova01.png){.thumbnail}
 
-Au travers de la fenêtre **Select a template** choisissez la troisième `image`{.action} en partant du haut nommée **Linux** distribution **Ubuntu** en version **22**.
+Au travers de la fenêtre **Select a template** choisissez le troisième `modèle`{.action} en partant du haut nommé **Linux** distribution **Ubuntu** en version **22**.
 
 ![02 Add Bootstrapvm 02](images/02-add-bootstrap-vm-from-ova02.png){.thumbnail}
 
@@ -146,15 +146,13 @@ Cliquez sur l'icône `copier`{.action} à droite pour copier l'URL qui doit se t
 
 ![02 Add Bootstrapvm 03](images/02-add-bootstrap-vm-from-ova03.png){.thumbnail}
 
-Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster`{.action}, ensuite choisissez `Déployer un modèle OVF`{.action}.
-
 Au travers de l'interface vSphere faites un clic droit sur le `cluster`{.action} et choisissez dans le menu `Déployer un modèle OVF`{.action}.
 
 ![02 Add Bootstrapvm 03b](images/02-add-bootstrap-vm-from-ova03b.png){.thumbnail}
 
-Sélectionnez `URL`{.action} et saisissez cette **URL** `https://templatefactory.par1c.pcc.ovh.net/Linux/PhotonOs/photon-3-kube-v1.22.9+vmware.1.ovf` ensuite clique sur `SUIVANT`{.action}.
+Sélectionnez `URL`{.action} copiez l'URL venant du presse-papier et cliquez sur `SUIVANT`{.action}.
 
-![02 Add Bootstrapvm 05](images/02-add-bootstrap-vm-from-ova04.png){.thumbnail}
+![02 Add Bootstrapvm 04](images/02-add-bootstrap-vm-from-ova04.png){.thumbnail}
 
 Laissez le positionnement par défaut et cliquez sur `SUIVANT`{.action}.
 
