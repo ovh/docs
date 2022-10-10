@@ -90,7 +90,7 @@ order: 08
 > - [Configurer une Additional IP](https://docs.ovh.com/fr/public-cloud/configurer_une_ip_failover/)
 > - [Basculer une Additional IP](https://docs.ovh.com/fr/public-cloud/basculer-une-ip-fail-over/)
 > - [Configurer IPv6 sur une instance Public Cloud](https://docs.ovh.com/fr/public-cloud/configurer-ipv6/)
-> - [Modifier les serveurs DNS d'une instante Public Cloud](https://docs.ovh.com/fr/public-cloud/modifier-les-serveurs-dns-dune-instance/)
+> - [Modifier les serveurs DNS d'une instance Public Cloud](https://docs.ovh.com/fr/public-cloud/modifier-les-serveurs-dns-dune-instance/)
 > - [Configurer le reverse DNS d’une instance Public Cloud](https://docs.ovh.com/fr/public-cloud/configurer-le-reverse-dns-dune-instance/)
 > - [vRack - Configuration du vRack Public Cloud](https://docs.ovh.com/fr/public-cloud/public-cloud-vrack/)
 > - [vRack - Configuration du vRack Public Cloud depuis les APIv6 OVHcloud](https://docs.ovh.com/fr/public-cloud/public-cloud-vrack-apiv6/)
