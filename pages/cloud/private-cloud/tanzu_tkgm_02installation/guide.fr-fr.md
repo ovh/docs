@@ -61,7 +61,7 @@ Connectez-vous à la page d'accueil OVHcloud de votre cluster VMware et cliquez 
 Au travers de la fenêtre **Select a template** choisissez le quatrième `modèle`{.action} en partant du haut qui a ces informations :
 
 * **Family** : Linux.
-* **Distribution** : Pas de version indiquée.
+* **Distribution** : Information non indiquée
 * **Version** : 3
 
 ![01 integrate TKGM OVA 02](images/01-integrate-tkgm-ova02.png){.thumbnail}
