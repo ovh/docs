@@ -142,7 +142,7 @@ Au travers de la fenêtre **Select a template** choisissez le troisième `modèl
 
 ![02 Add Bootstrapvm 02](images/02-add-bootstrap-vm-from-ova02.png){.thumbnail}
 
-Cliquez sur l'icône `copier`{.action} à droite pour copier l'URL qui doit se terminer par **photon-3-kube-v1.23.8+vmware.1.ovf** dans le presse-papier ensuite cliquez sur `Close`{.action}.
+Cliquez sur l'icône `copier`{.action} à droite pour copier l'URL qui doit se terminer par **Ubuntu-22.04_TKGm-1.6_with_x.ovh** dans le presse-papier ensuite cliquez sur `Close`{.action}.
 
 ![02 Add Bootstrapvm 03](images/02-add-bootstrap-vm-from-ova03.png){.thumbnail}
 
