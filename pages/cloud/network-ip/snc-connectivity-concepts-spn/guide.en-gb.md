@@ -6,7 +6,7 @@ section: SecNumCloud Connectivity
 order: 02
 ---
 
-**Last updated 18th November, 2021**
+**Last updated 27th September, 2022**
 
 ## Objective
 
@@ -45,6 +45,29 @@ Attaching subnets to SPN depends on two rules:
 **Behavior using next-hop feature:**
 
 ![next-hop feature](images/SNC-SPN-Subnet-NH.svg){.thumbnail}
+
+#### BGP configuration
+
+BGP is required on VPN-SPN and optional in a SPN. Enabling BGP in a SPN disables VRRP configuration, meaning the first IP address of the subnet won't be reachable anymore.
+
+- Configuration needs an AS. This AS must be independent from the customer BGP AS to form an eBGP relation. The recommended value is in the range 64512-65534.
+- eBGP Multihop is not supported
+- With several neighbors, ECMP is automatically enabled. MED and/or AS-PATH must be tuned to have path selection.
+- Each SPN supports up to 4 BGP peers.
+- Up to 50 prefixes can be announced per BGP session.
+- For each SPN you must establish a BGP session with ‘A’ device and ‘B’ device.
+- By default, BFD is activated on all BGP sessions. This protocol is higly recommended to have a faster convergence.
+
+Expected topology:
+
+![Topology BGP](images/SNC-SPN-BGP-v0.svg){.thumbnail}
+
+* SPN is configured with A.B.C.D/X subnet
+* Ra and Rb devices have their own IP address, respectively 2nd and 3rd of the subnet
+* Rc is customer routing device
+* Rc must have an eBGP session with Ra and Rb
+* Local subnet Q.R.S.T/X will be learned through BGP on devices Ra and Rb then announce to be forwarded on SPN Connector (so destinating to InterDC and/or VPN-SPN)
+* Ra and Rb devices forward announces from InterDC and/or VPN-SPN
 
 ## Go further
 
