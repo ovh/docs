@@ -5,7 +5,7 @@ section: Premiers pas
 order: 1
 ---
 
-**Dernière mise à jour le 26/11/2020** 
+**Dernière mise à jour le 10/10/2022** 
 
 ## Objectif
 
@@ -17,13 +17,13 @@ Dès réception de votre modem, nous vous invitons à brancher le câble qui rel
 
 #### Trucs et astuces :
 
-si vous ne disposez pas d'une installation téléphonique récente, il est souvent nécessaire d'ajouter un filtre ADSL. Pour plus de renseignements, consultez le guide suivant : [La desserte interne](../la-desserte-interne/).
+Si vous ne disposez pas d'une installation téléphonique récente, il est souvent nécessaire d'ajouter un filtre ADSL. Pour plus de renseignements, consultez le guide suivant : [La desserte interne](https://docs.ovh.com/fr/xdsl/la-desserte-interne/).
 
 ### Un technicien peut-il venir installer mon modem ?
 
 Dans le cadre d'une installation SDSL, un technicien se déplace sur site afin de procéder aux branchements et à la configuration du modem.
 
-Pour un accès ADSL, VDSL ou fibre, aucune installation sur site n'est nécessaire pour le branchement du modem car celui-ci est livré prêt à l’emploi.
+Pour un accès ADSL, VDSL ou FTTH, aucune installation sur site n'est nécessaire pour le branchement du modem car celui-ci est livré prêt à l’emploi.
 
 ### OVHcloud peut-il se charger de l'installation d'une prise téléphonique supplémentaire dans mes locaux ? 
 
@@ -33,13 +33,13 @@ Dans le cas d'une installatiion de la fibre FTTH, un technicien se déplace chez
 
 ### Comment puis-je activer mes services inclus ?
 
-Dès que vous recevez la confirmation que votre accès (ADSL, VDSL ou fibre OVH Télécom) est opérationnel, vous pouvez procéder à l'activation des services inclus dans votre pack via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Dès que vous recevez la confirmation que votre accès (ADSL, VDSL ou FTTH) est opérationnel, vous pouvez procéder à l'activation des services inclus dans votre pack via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 Une fois connecté, rendez-vous dans l'univers `Telecom`{.action} puis `Accès Internet`{.action}. Vous y retrouverez votre offre.
 
 Cliquez dessus, s'affiche alors l'ensemble de vos services inclus. Il vous sera alors possible de les activer et les paramétrer à votre convenance.
 
-Pour plus d'informations, consultez le guide [Comment activer mes lignes téléphoniques ?](../comment-activer-mes-lignes-telephoniques-offre-adsl-vdsl/).
+Pour plus d'informations, consultez le guide [Comment activer mes lignes téléphoniques ?](https://docs.ovh.com/fr/xdsl/comment-activer-mes-lignes-telephoniques-offre-adsl-vdsl/).
 
 ### Pourquoi ai-je une erreur d'authentification lors de ma connexion à Internet ?
 
@@ -47,7 +47,7 @@ Une erreur d'authentification est généralement liée à la mauvaise saisie du 
 
 Si vous utilisez un modem OVHcloud, sachez que ce dernier est configuré pour se sonnecter automatiquement. Il vous suffit alors de réaliser une réinitialisation de votre modem afin de générer de nouveaux identifiants qui seront automatiquement pris en compte par votre modem.
 
-Vous trouverez de plus amples informations en vous rendant sur le guide [Rétablir son service suite à une coupure complète ou partielle](../interruption-de-service/).
+Vous trouverez de plus amples informations en vous rendant sur le guide [Rétablir son service suite à une coupure complète ou partielle](https://docs.ovh.com/fr/xdsl/interruption-de-service/).
 
 #### Trucs et astuces : 
 
@@ -61,7 +61,7 @@ Si la liaison ne remonte pas, vous avez la possibilité d’utiliser notre assis
 
 Si cela ne fonctionne toujours pas, nous vous invitons à consulter la [carte des incidents en cours](https://www.ovhtelecom.fr/xdsl/incident/#/) pour vérifier les éventuels incidents génériques pouvant affecter votre connexion.
 
-Enfin vous pouvez également réaliser les vérifications que vous trouverez dans le guide [Rétablir son service suite à une coupure complète ou partielle](../interruption-de-service/).
+Enfin vous pouvez également réaliser les vérifications que vous trouverez dans le guide [Rétablir son service suite à une coupure complète ou partielle](https://docs.ovh.com/fr/xdsl/interruption-de-service/).
 
 #### Trucs et astuces :
 
@@ -69,13 +69,13 @@ De nombreux conseils sont également proposés par les membres de notre communau
 
 ### Pourquoi mon débit est trop faible ?
 
-En cas de débit trop faible, testez tout d'abord votre connexion en effectuant un test neutre. Ne branchez qu'un seul ordinateur sur l'un des ports ethernet (RJ45) de votre modem, sans utiliser un éventuel switch ou autre équipement intermédiaire. [Désactivez le Wi-Fi sur votre modem](../configuration_du_modem_a_partir_de_votre_espace_client/#22-configuration-generale) puis rendez-vous sur [proof.ovh.net](https://proof.ovh.net/) pour effectuer un test de débit (speedtest).
+En cas de débit trop faible, testez tout d'abord votre connexion en effectuant un test neutre. Ne branchez qu'un seul ordinateur sur l'un des ports ethernet (RJ45) de votre modem, sans utiliser un éventuel switch ou autre équipement intermédiaire. [Désactivez le Wi-Fi sur votre modem](https://docs.ovh.com/fr/xdsl/configuration_du_modem_a_partir_de_votre_espace_client/#22-configuration-generale) puis rendez-vous sur [proof.ovh.net](https://proof.ovh.net/) pour effectuer un test de débit (speedtest).
 
-Si votre débit reste trop bas, pensez à redémarrer votre modem. Vous pouvez également le réinitialiser. Consultez les méthodes de redémarrage et de réinitialisation applicables à votre modem sur notre guide [Redémarrer ou réinitialiser une box OVHcloud](../redemarrer-reinitialiser-modem-adsl-ovh/).
+Si votre débit reste trop bas, pensez à redémarrer votre modem. Vous pouvez également le réinitialiser. Consultez les méthodes de redémarrage et de réinitialisation applicables à votre modem sur notre guide [Redémarrer ou réinitialiser une box OVHcloud](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/).
 
 #### Trucs et astuces :
 
-Pensez également à vérifier votre desserte interne à l'aide du guide [Résoudre une interruption ou des lenteurs de navigation](../resoudre-interruption-lenteurs-navigation/)
+Pensez également à vérifier votre desserte interne à l'aide du guide [Résoudre une interruption ou des lenteurs de navigation](https://docs.ovh.com/fr/xdsl/resoudre-interruption-lenteurs-navigation/)
 
 ### Comment rétablir une ligne xDSL écrasée ?
 
@@ -84,6 +84,10 @@ Votre venez de recevoir un e-mail vous informant de l'écrasement de votre ligne
 #### Trucs et astuces :
 
 Ne tenez pas compte de l'e-mail que vous venez de recevoir si cet écrasement fait suite à votre demande de changement d'opérateur.
+
+### Comment passer d’un dégroupage partiel à un dégroupage total ? <a name="degroupage"></a>
+
+Nous vous invitons à [nous contacter](https://www.ovh.com/fr/support/nous-contacter/moyens-de-contact.xml) si votre offre xDSL actuelle est en dégroupage partiel et que vous souhaitez la passer en dégroupage total.
 
 ## Aller plus loin
 

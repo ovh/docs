@@ -6,7 +6,7 @@ section: Gestion de mon offre
 odrder: 1
 ---
 
-**Dernière mise à jour le 16/02/2022**
+**Dernière mise à jour le 10/10/2022**
 
 ## Objectif
 
@@ -17,8 +17,8 @@ Déménager un accès xDSL/FTTH vous permet de recréer votre accès internet à
 
 ## Prérequis
 
-- Disposer d'un abonnement xDSL(ADSL/VDSL)ou FTTH actif.
-- Disposer d'une offre xDSL récente (offres Connect, Express, Entreprise, Serenity).
+- Disposer d'un abonnement xDSL(ADSL/VDSL) ou FTTH actif.
+- Disposer d'une offre xDSL ou FTTH récente (offres Pro, Connect, Express, Entreprise, Serenity).
 - La nouvelle adresse doit-être différente de l'ancienne.
 
 > [!primary]
@@ -85,20 +85,17 @@ Pour cela, il vous suffit de cliquer sur le bouton `Choisir cette offre`{.action
 
 Si vous souhaitez conserver votre offre et vos options actuelles (lignes VoIP supplémentaires, comptes Exchange, nom de domaine, etc...), prenez soin de vérifier qu'elles sont intégralement reprises à cette étape. 
 
-![Choix de l'offre](images/move07-edit.png){.thumbnail}
+> [!primary]
+>
+> Les options suivantes ne peuvent pas être conservées en tant qu'**options incluses** dans les nouvelles offres FTTH Pro et xDSL Pro :
+> 
+> - Nom de domaine
+> - EcoFax Pro
+> - Compte(s) Exchange
+>
+> Lors d'un changement d'offre vers les nouvelles offres FTTH Pro et xDSL Pro, vous pourrez soit résilier ces options ou choisir de les conserver aux tarifs en vigueur.
 
-#### Choix du type de dégroupage
-
-Si vous avez renseigné un numéro de ligne active au début de votre demande, il vous sera demandé de choisir entre 2 types de dégroupage à votre nouvelle adresse.
-Vous devrez choisir entre « Dégroupage total » et « Dégroupage partiel ».
-
-Le dégroupage partiel signifie que vous souhaitez conserver la ligne analogique à cette adresse.
-Vous aurez donc un abonnement OVHcloud pour l'accès à Internet ainsi qu'un abonnement chez Orange pour cette ligne analogique. 
-<br>Le dégroupage total signifie que vous n'aurez que l'accès internet à votre nouvelle adresse (soit uniquement l'abonnement OVHcloud).
-
-Cochez la case correspondant à votre choix puis cliquez sur le bouton `Confirmer la sélection`{.action}.
-
-![Choix du dégroupage](images/move08-edit.png){.thumbnail}
+![Choix de l'offre](images/move07-2022.png){.thumbnail}
 
 #### Conservation des numéros
 
@@ -130,10 +127,9 @@ Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour valider ce
 
 #### Validation du déménagement
 
-Une nouvelle fenêtre s'affiche, vous invitant à valider le réengagement de 12 mois lié à ce déménagement, la résiliation de votre accès actuel ainsi qu'à consulter les conditions générales de vente de l'offre. Cochez alors les cases correspondantes et cliquez sur `Valider le déménagement`{.action}. Cette action valide la demande de déménagement.
+Une nouvelle fenêtre s'affiche, vous invitant à valider le réengagement de 12 mois lié à ce déménagement, la résiliation de votre accès actuel ainsi qu'à consulter les conditions générales de vente de l'offre. 
 
-![Validation déménagement](images/move11-edit.png){.thumbnail}
-
+Cochez alors les cases correspondantes et cliquez sur `Valider le déménagement`{.action}.
 
 ### Suite à la demande de déménagement
 
