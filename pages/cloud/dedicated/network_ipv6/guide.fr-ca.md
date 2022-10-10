@@ -9,7 +9,7 @@ section: Réseau & IP
 
 ## Objectif
 
-Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version 4 (IPv4). Mis en place pour résoudre l’épuisement des adresses IPv4, IPv6 utilise des adresses de 128-octets au lieu d’adresses de 32-octets. Tous les serveurs dédiés d’OVHCloud comprennent un bloc /64 IPv6. Ceci représente plus de 18 quintillions d’adresses IP dont vous pouvez disposer à votre guise.
+Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version 4 (IPv4). Mis en place pour résoudre l’épuisement des adresses IPv4, IPv6 utilise des adresses de 128 bits au lieu d’adresses de 32 bits. Tous les serveurs dédiés d’OVHCloud comprennent un bloc /64 IPv6. Ceci représente plus de 18 quintillions d’adresses IP dont vous pouvez disposer à votre guise.
 
 **Ce guide vous explique comment configurer des adresses IPv6 sur votre serveur.**
 
