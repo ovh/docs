@@ -5,7 +5,7 @@ excerpt: Découvrez comment demander la résiliation de votre accès Internet
 section: Gestion de mon offre
 ---
 
-**Dernière mise à jour le 16/02/2022**
+**Dernière mise à jour le 10/10/2022**
 
 ## Objectif
 
@@ -42,13 +42,11 @@ Il vous sera alors possible de demander à conserver certains services liés à 
 - compte Exchange (si pack xDSL Entreprise)
 - nom de domaine (si pack xDSL Entreprise)
 
-Pour cela, il vous suffit de cocher les cases correspondants aux services que vous souhaitez conserver.
+Pour cela, il vous suffit de cocher les cases correspondant aux services que vous souhaitez conserver.
 
 ![Conservation service](images/Resiliation03-edit-2022.png){.thumbnail}
 
 Une fois vos choix effectués, cliquez sur le bouton `Résilier`{.action} en bas de page.
-
-![Validation resiliation](images/Resiliation04-edit.png){.thumbnail}
 
 Vous recevrez un e-mail vous confirmant la prise en compte de la demande de résiliation ainsi qu'un e-mail contenant le bon de retour de votre modem.
 
