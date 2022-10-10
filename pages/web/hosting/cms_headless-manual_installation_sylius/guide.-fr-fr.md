@@ -131,5 +131,14 @@ node/bin/node -v
 
 Vous verrez alors la version de NodeJS qui a été téléchargée s'afficher (v16.17.1 pour notre exemple).
 
+#### Installer Sylius
+
+Sylius nécessite que l'allocation mémoire faite pour l'exécution des scripts ait une valeur supérieure ou égale à 1024M.
+
+Pour installer Sylius dans un répertoire dédié à la racine de votre serveur, en supprimant la limite d'allocation mémoire par défaut, tapez la commande suivante :
+```sh
+php -d memory_limit=-1 composer.phar create-project sylius/sylius-standard sylius --no-scripts
+```
+
 ## Aller plus loin
 
