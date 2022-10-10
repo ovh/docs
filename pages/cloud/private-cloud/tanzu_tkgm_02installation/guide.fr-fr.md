@@ -6,7 +6,7 @@ section: Tanzu
 order: 03
 ---
 
-**Dernière mise à jour le 07/10/2022**
+**Dernière mise à jour le 10/10/2022**
 
 ## Objectif
 
@@ -60,7 +60,7 @@ Connectez-vous à la page d'accueil OVHcloud de votre cluster VMware et cliquez 
 
 ![01 integrate TKGM OVA 01](images/01-integrate-tkgm-ova01.png){.thumbnail}
 
-Au travers de la fenêtre **Select a template** choisissez la la quatrième `image`{.action} en partant du haut nommé **Linux** en version **3**.
+Au travers de la fenêtre **Select a template** choisissez la quatrième `image`{.action} en partant du haut nommé **Linux** en version **3**.
 
 ![01 integrate TKGM OVA 02](images/01-integrate-tkgm-ova02.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Cliquez sur l'icône `copier`{.action} à droite pour copier l'image dans le pre
 
 Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster`{.action}, ensuite choisissez `Déployer un modèle OVF`{.action}.
 
-![01 integrate TKGM OVA 03](images/01-integrate-tkgm-ova03b.png){.thumbnail}
+![01 integrate TKGM OVA 03b](images/01-integrate-tkgm-ova03b.png){.thumbnail}
 
 Sélectionnez `URL`{.action} et `copiez`{.action} l'URL qui doit se terminer par **photon-3-kube-v.23.8.+vmware1.ovf** et cliquez sur `SUIVANT`{.action}.
 
