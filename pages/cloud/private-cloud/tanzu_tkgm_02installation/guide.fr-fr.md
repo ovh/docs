@@ -56,13 +56,25 @@ VMware fournit une machine virtuelle sous forme de modèle OVA qui contient tous
 
 Un fichier au format **OVF** est disponible dans les **OVHTemplates**.
 
-Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster`{.action}, ensuite choisissez `Déployer un modèle OVF`{.action}.
+Connectez-vous à la page d'accueil OVHcloud de votre cluster VMware et cliquez à droite sur `OVH Templates`{.action}.
 
 ![01 integrate TKGM OVA 01](images/01-integrate-tkgm-ova01.png){.thumbnail}
 
-Sélectionnez `URL`{.action} et saisissez cette **URL** `https://templatefactory.par1c.pcc.ovh.net/Linux/PhotonOs/photon-3-kube-v1.23.8+vmware.1.ovf` ensuite clique sur `SUIVANT`{.action}.
+Au travers de la fenêtre **Select a template** choisissez la la quatrième `image`{.action} en partant du haut nommé **Linux** en version **3**.
 
 ![01 integrate TKGM OVA 02](images/01-integrate-tkgm-ova02.png){.thumbnail}
+
+Cliquez sur l'icône `copier`{.action} à droite pour copier l'image dans le presse-papier. ensuite cliquez sur `Close`{.action}.
+
+![01 integrate TKGM OVA 03](images/01-integrate-tkgm-ova03.png){.thumbnail}
+
+Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster`{.action}, ensuite choisissez `Déployer un modèle OVF`{.action}.
+
+![01 integrate TKGM OVA 03](images/01-integrate-tkgm-ova03b.png){.thumbnail}
+
+Sélectionnez `URL`{.action} et `copiez`{.action} l'URL qui doit se terminer par **photon-3-kube-v.23.8.+vmware1.ovf** et cliquez sur `SUIVANT`{.action}.
+
+![01 integrate TKGM OVA 04](images/01-integrate-tkgm-ova04.png){.thumbnail}
 
 Laissez l'emplacement par défaut et cliquez sur `SUIVANT`{.action}.
 
