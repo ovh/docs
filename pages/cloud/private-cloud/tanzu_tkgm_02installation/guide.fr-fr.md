@@ -60,9 +60,9 @@ Connectez-vous à la page d'accueil OVHcloud de votre cluster VMware et cliquez 
 
 Au travers de la fenêtre **Select a template** choisissez le quatrième `modèle`{.action} en partant du haut qui a ces informations :
 
-**Family** : Linux.
-**Distribution** : Pas de version indiquée.
-**Version** : 3
+* **Family** : Linux.
+* **Distribution** : Pas de version indiquée.
+* **Version** : 3
 
 ![01 integrate TKGM OVA 02](images/01-integrate-tkgm-ova02.png){.thumbnail}
 
@@ -144,9 +144,9 @@ Connectez-vous à la page d'accueil OVHcloud de votre cluster VMware et cliquez 
 
 Au travers de la fenêtre **Select a template** choisissez le troisième `modèle`{.action} en partant du haut qui contient ces informations :
 
-**Family** : Linux.
-**Distribution** : Ubuntu.
-**Version** : 22
+* **Family** : Linux.
+* **Distribution** : Ubuntu.
+* **Version** : 22
 
 ![02 Add Bootstrapvm 02](images/02-add-bootstrap-vm-from-ova02.png){.thumbnail}
 
