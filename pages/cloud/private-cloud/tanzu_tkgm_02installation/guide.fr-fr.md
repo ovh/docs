@@ -64,7 +64,7 @@ Au travers de la fenêtre **Select a template** choisissez la quatrième `image`
 
 ![01 integrate TKGM OVA 02](images/01-integrate-tkgm-ova02.png){.thumbnail}
 
-Cliquez sur l'icône `copier`{.action} à droite pour copier l'image dans le presse-papier. ensuite cliquez sur `Close`{.action}.
+Cliquez sur l'icône `copier`{.action} à droite pour copier l'URL qui doit se terminer par **photon-3-kube-v1.23.8+vmware.1.ovf** dans le presse-papier. ensuite cliquez sur `Close`{.action}.
 
 ![01 integrate TKGM OVA 03](images/01-integrate-tkgm-ova03.png){.thumbnail}
 
@@ -72,7 +72,7 @@ Connectez-vous à votre console vSphere, faites un clic droit sur votre `cluster
 
 ![01 integrate TKGM OVA 03b](images/01-integrate-tkgm-ova03b.png){.thumbnail}
 
-Sélectionnez `URL`{.action} et `copiez`{.action} l'URL qui doit se terminer par **photon-3-kube-v.23.8.+vmware1.ovf** et cliquez sur `SUIVANT`{.action}.
+Sélectionnez `URL`{.action} et `copiez`{.action} l'URL et cliquez sur `SUIVANT`{.action}.
 
 ![01 integrate TKGM OVA 04](images/01-integrate-tkgm-ova04.png){.thumbnail}
 
