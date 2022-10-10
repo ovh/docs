@@ -45,14 +45,14 @@ Consultez notre documentation qui explique [comment ajouter un multisite sur son
 
 > [!primary]
 >
-> Si vous renseignez un nom de "dossier racine" pour votre domaine qui n'existe pas déjà dans votre hébergement web, ce dernier sera créé automatiquement dans l'espace de stockage FTP de votre hébergement.
+> Si vous renseignez un nom de "dossier racine" pour votre domaine qui n'existe pas déjà dans votre hébergement web, ce dernier sera créé automatiquement dans l'espace de stockage FTP de votre hébergement web.
 >
 
 #### 1.2 : vérifier le "pointage" du nom de domaine
 
 Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre WordPress ainsi que son sous-domaine en "www" pointent bien vers l'adresse IP de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
 
-Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}. Dans l'encadré `Informations générales`{.action} sur votre droite, vous trouverez l'adresse IP de votre hébergement web dans le formulaire `'IPv4`{.action}. 
+Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}. Dans l'encadré `Informations générales`{.action} sur votre droite, vous trouverez l'adresse IP de votre hébergement web dans le formulaire `IPv4`{.action}. 
 
 Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine à l'aide de notre documentation sur les [zones DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
 
@@ -75,7 +75,7 @@ Si non, contactez l'hébergeur de votre zone DNS active pour mettre à jour le p
 
 Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utilisation dans notre documentation sur l'[utilisation de Filezilla avec votre offre d'hébergement OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 
-#### 1.4 : préparer une base de données
+#### 1.4 : préparer une base de données <a name="step1-4"></a>
 
 Les CMS ont besoin d'une base de données pour fonctionner. La plupart de nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) en contiennent.
 
@@ -83,7 +83,7 @@ Utilisez notre documentation pour [créer une base de données depuis votre offr
 
 Si vous disposez d'une offre SQL Privé/Cloud DB en "MySQL" et que vous souhaitez l'utiliser pour installer manuellement votre WordPress, retrouvez notre documentation sur la [création d'une base de données sur un SQL Privé/Cloud DB](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/#creer-une-base-de-donnees).
 
-Une fois créée, récupérez les paramètres de connexion à votre base de données (serveur, nom de la base de données, nom d'utilisateur et mot de passe).
+Une fois créée, récupérez les paramètres de connexion à votre base de données (serveur, nom de la base de données, nom d'utilisateur et mot de passe) et mettez-les de côté pour [l'étape 3](#step3) de ce guide.
 
 > [!primary]
 > 
@@ -121,17 +121,24 @@ Rendez-vous sur le site du développeur de [WordPress](https://wordpress.org/dow
 
 #### 2.2 : décompresser les fichiers sources téléchargés dans un nouveau dossier
 
-Le fichier téléchargé est dans un format **compressé** (zippé), créez un dossier intitulé "**wordpress**" sur votre ordinateur puis **décompressez** le contenu du fichier téléchargé à l'intérieur du dossier "**wordpress**". 
+Le fichier téléchargé est dans un format **compressé** (zippé), créez un dossier intitulé "* *WordPress**" sur votre ordinateur puis **décompressez** le contenu du fichier téléchargé à l'intérieur du dossier "* *WordPress**". 
 
 Pour cela, ouvrez le dossier dans lequel vous avez téléchargé le fichier compressé, réalisez un clic droit sur le fichier en question, puis sélectionnez "Extraire tout...".
 
-Indiquez le dossier "**wordpress**" en destination afin d'extraire vos fichiers dans ce dossier.
+Indiquez le dossier "* *WordPress**" en destination afin d'extraire vos fichiers dans ce dossier.
 
 Si besoin, vous trouverez sur Internet différentes aides concernant la décompression de fichiers.
 
 #### 2.3 : déplacer les fichiers sources du dossier "WordPress" vers le "dossier racine" sur votre hébergement web
 
-Une fois les fichiers décompressés dans votre dossier "**wordpress**", [connectez-vous en FTP à votre espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide du [client FTP Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) puis copiez les fichiers contenus dans le dossier "**wordpress**" dans le "dossier racine" que vous avez défini sur votre hébergement lors de l'[étape 1](#step1) de ce guide.
+Une fois les fichiers décompressés dans votre dossier "* *WordPress**", [connectez-vous en FTP à votre espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide du [client FTP Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) puis copiez les fichiers contenus dans le dossier "* *WordPress**" dans le "dossier racine" que vous avez défini sur votre hébergement lors de l'[étape 1](#step1) de ce guide.
+
+![hosting](images/wpfl2.png){.thumbnail}
+
+>[!warning]
+>
+> Nous vous recommandons vivement d'utiliser un "dossier racine" vide pour éviter tout conflit avec un autre site. Assurez-vous avant de déplacer les fichiers que le dossier de destination ne contient aucun éléments.
+>
 
 >[!primary]
 >
@@ -140,122 +147,113 @@ Une fois les fichiers décompressés dans votre dossier "**wordpress**", [connec
 >
 > Le dépôt des fichiers sur votre hébergement peut prendre quelques minutes.
 >
-> Une fois le transfert terminé, assurez-vous que tous les éléments présents dans le dossier local "**wordpress**" ont été correctement transférés dans le "dossier racine" présent sur votre hébergement web.
+> Une fois le transfert terminé, assurez-vous que tous les éléments présents dans le dossier local "* *WordPress**" ont été correctement transférés dans le "dossier racine" présent sur votre hébergement web.
 >
 
-### Etape 3 : finaliser l'installation manuelle
+### Etape 3 : finaliser l'installation manuelle <a name="step3"></a>
 
-- Avant de continuer l'installation, videz le cache de votre navigateur internet, afin d'éviter toute erreur.
+> [!success]
+>
+> Avant de continuer l'installation, videz le cache de votre navigateur internet, afin d'éviter toute erreur.
+>
 
-Afin de réaliser le lien entre votre base de données et WordPress, nous devons suivre les étapes d'installation du CMS. Rendez-vous sur votre nom de domaine.
+#### 3.1 : Se rendre sur votre site Wordpress via votre navigateur
 
-Ce message va apparaître.
+Saisissez votre domaine dans la barre de recherche de votre navigateur Internet.
 
-Cliquez sur "Créer un fichier de configuration" pour continuer.
+Si les fichiers sources de Wordpress ont été placés correctement dans votre dossier racine, la page Wordpress permettant de sélectionner la langue apparaît :
 
+![hosting](images/WPselectlangue.png){.thumbnail}
 
-![hosting](images/3132.png){.thumbnail}
+Sélectionnez la langue du site puis cliquez sur `Continuer`{.action}.
 
-Munissez-vous des identifiants de votre base de données (une aide à ce sujet est disponible dans le début de ce guide).
+#### 3.2 : Lier votre Wordpress et votre base de données
 
-Cliquez sur "C'est parti !" pour accéder à l'étape suivante.
+Wordpress va demander de récupérer les identifiants de connexion à votre base de données :
 
+![hosting](images/WPstart.png){.thumbnail}
 
-![hosting](images/3133.png){.thumbnail}
+Munissez-vous des identifiants de votre base de données à l'aide de [l'étape 1.4](#step1-4) de ce guide puis cliquez sur `C'est parti !`{.action} pour continuer.
+
+La page suivante apparaît : 
+
+![hosting](images/WPdb.png){.thumbnail}
 
 Renseignez les informations demandées concernant la base de données :
 
-Nom de la base de données : choisi lors de sa création dans l'espace client.
+- Nom de la base de données : choisi lors de sa création dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-Identifiant : identique au nom de la base de données.
+- Identifiant : identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
+Pour les bases créées sur un SQL Privé/Cloud DB, référez-vous aux informations indiquées dans [l'étape 1.4](#step1-4) de ce guide.
 
-Mot de passe : vous a été envoyé par mail lors de la création de la base de données – il est possible que vous l'ayez modifié.
+- Mot de passe : envoyé par mail lors de la création de la base de données – il est possible que vous l'ayez modifié entre temps.
 
-Adresse de la base de données : renseignez le nom du serveur de votre base de données, indiqué dans le mail d'installation ou dans votre espace client.
+- Adresse de la base de données : renseignez le nom du serveur de votre base de données, indiqué dans le mail d'installation ou dans votre espace client. 
 
-Préfixe des tables : utile pour réaliser plusieurs installations de WordPress sur la même base de données. Dans ce cas, il faudra renseigner un préfixe différent pour chacune des installations.
+> [!Primary]
+> 
+> Pour les bases de données incluses avec votre offre d'hébergement Web, il a généralement cette forme : **"NameOfYourDatabase".mysql.db**. Pour les SQL Privé/Cloud DB, il a la forme suivante : **"NicHandle(Without-ovh)"-XXX.eu.clouddb.ovh.net** où les **"X"** sont à remplacer par les chiffres de votre service.
+>
 
-*Important : les identifiants de la base de données ne sont pas automatiquement envoyés lors de l'installation de l'hébergement. Pour les recevoir, vous devez activer la base de données dans votre espace client.*
+- Préfixe des tables : si l'installation se fait avec une toute nouvelle base de données, renseignez le "préfixe" de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à [l'étape 1.4](#step1-4) de ce guide pour ne pas renseigner un "préfixe" de table déjà utilisé dans votre base de données.
 
-Cliquez sur "Envoyer" pour valider les informations de connexion à la base de données.
+Cliquez sur `Soumettre`{.action} pour valider les informations de connexion à la base de données.
 
-- Ces étapes finalisent la création du lien entre votre base de données et WordPress. Ne reste qu'à finaliser l'installation proprement dite.
+Si tout c'est bien passé, la page suivante apparaît : 
 
+![hosting](images/WPafterDB.png){.thumbnail}
 
-![hosting](images/3134.png){.thumbnail}
+Cliquez sur `Lancer l'installation`{.action} pour poursuivre.
 
+#### 3.3 : Définir l'accès "Administrateur" au "back-office" de votre Wordpress et votre e-mail de contact
 
-### Finalisation
-Afin de terminer l'installation du blog WordPress, continuez les étapes d'installations. Cliquez sur "Lancer l'installation" pour poursuivre.
+Une fois l'installation réalisée, Wordpress va vous demander des informations sur votre futur dont la création de votre identifiant "Administrateur" Wordpress.
 
+Ce dernier vous permettra ensuite d'accéder à l'espace d'administration communément appelé "Back-office" de votre CMS Wordpress.
 
-![hosting](images/3135.png){.thumbnail}
+![hosting](images/WPafterDB2.png){.thumbnail}
 
-Renseignez les informations demandées concernant l'administration de votre blog WordPress :
+Renseignez les informations demandées :
 
-Titre du site : renseignez le titre de votre blog.
+- Titre du site : renseignez le titre de votre site.
 
-Identifiant : choisissez l'identifiant de connexion pour administrer votre blog.
+- Identifiant : choisissez l'identifiant "Administrateur" de votre CMS.
 
-Mot de passe, deux fois : renseignez deux fois le mot de passe désiré pour vous connecter à l'administration de votre blog WordPress.
+- Mot de passe : choisissez votre mot de passe "Administrateur".
 
-Votre adresse de messagerie : renseignez un e-mail valide.
+Votre adresse de messagerie : renseignez une adresse e-mail valide.
 
-Vie privée : si la case est cochée, les moteurs de recherche référenceront le blog.
+Vie privée : si la case est cochée, les moteurs de recherche référenceront votre Wordpress.
 
-Pour lancer l'installation de WordPress cliquez sur "Installer WordPress".
+Cliquez sur `Installer WordPress`{.action} dès que tout est correctement renseigné.
 
+#### 3.3 : Finaliser l'installation manuelle et tester l'accès "Administrateur"
 
-![hosting](images/3136.png){.thumbnail}
+L'installation est termninée si la page suivante s'affiche :
 
-L'installation de votre blog WordPress est à présent terminée !
+![hosting](images/WPend.png){.thumbnail}
 
-Vous pouvez à présent vous identifier et commencer à travailler sur votre blog en cliquant sur "Se connecter".
+Il ne vous reste plus qu'à cliquer sur le bouton `Se connecter`{.action} pour tester l'accès au "Back-office" de votre nouveau CMS Wordpress à l'aide des identifiants "Administrateur" préalablement créé lors de l'étape 3.2 juste avant.
 
+> [!primary]
+>
+> OVHcloud étant spécialisé uniquement dans l'hébergement de données, nous serons dans l'incapacité de vous accompagner sur l'utilisation ou la configuration de votre CMS Wordpress.
+>
+> Pour cela, nous vous invitons à consulter les forums dédiés à la solution WordPress.
+>
 
-![hosting](images/3137.png){.thumbnail}
+Une fois connecté, la page suivante apparaît :
 
-Vous trouverez ici un aperçu du panel d'administration de WordPress.
+![hosting](images/WPadminInterface.png){.thumbnail}
 
-
-![hosting](images/3138.png){.thumbnail}
-
-
-### Informations utiles
-
-**Le support d'OVHcloud ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre WordPress.**
-
-Nous vous invitons à consulter les forums dédiés à la solution WordPress.
-
-- Voici un lien vers un [forum
-d'entraide](http://www.wordpress-fr.net/support/){.external} dédié à ce CMS.
-
-Vous avez mis en place vos fichiers sur le FTP, cependant la page "site en construction" est toujours affichée.
-
-À l'installation de votre hébergement, OVHcloud met en place une page d'attente, le temps que vous déposiez les fichiers de votre site internet.
-
-Si vous déposez simplement vos fichiers dans le dossier  **"www"**  sans supprimer le contenu déposé par OVHcloud, vous risquez de rencontrer ce souci.
-
-Afin de corriger cela, vous devez supprimer ou renommer le fichier "index.html" mis en place par OVHcloud sur votre hébergement.
-
-*Il peut être intéressant de simplement le renommer afin de vous permettre de le réactiver à tout moment et de vous en servir comme page d'attente.*
-
-Autre information utile : les fichiers de votre site doivent être déposés dans le dossier "www" afin d'être pris en compte.
-
-
-![hosting](images/3139.png){.thumbnail}
-
-Il s'agit ici d'une erreur concernant la version PHP de votre serveur.
-
-La cause est simple : la dernière version du PHP n'a pas été activée.
-
-*Un guide est disponible concernant la [modification de la version PHP sur l'offre mutualisée](../configurer-le-php-sur-son-hebergement-web-mutu-2014/).*
-
-
-![hosting](images/3140.png){.thumbnail}
-
+> [!success]
+>
+> Vous pouvez maintenant démarrer la création du contenu de votre site Wordpress !
+>
 
 ## Aller plus loin <a name="go-further"></a>
+
+[Site officiel WordPress](https://wordpress.org)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
