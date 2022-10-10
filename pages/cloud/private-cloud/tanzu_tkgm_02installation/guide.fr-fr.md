@@ -31,7 +31,7 @@ Vous pouvez installer ce produit sur votre infrastructure OVHcloud pour profiter
 - Avoir un identifiant actif dans vSphere.
 - Avoir un VLAN qui possède un accès à internet et un serveur DHCP.
 - Disposer de ces ressources :
-    - 8 Go de mémoire, 4 vCPU et 250 Go de stockage pour la machine virtuelle d'administration nommmée **Bbootstrap**.
+    - 8 Go de mémoire, 4 vCPU et 250 Go de stockage pour la machine virtuelle d'administration nommmée **Bootstrap**.
     - 16 Go de mémoire, 4 vCPU, 40 Go de stockage par nœud Kubernetes (Il faut 6 nœuds pour une installation du cluster d'administration en mode production et 6 nœuds par cluster de **Workload** dans le même mode).
     
 ## En pratique
@@ -58,7 +58,7 @@ Connectez-vous à la page d'accueil OVHcloud de votre cluster VMware et cliquez 
 
 ![01 integrate TKGM OVA 01](images/01-integrate-tkgm-ova01.png){.thumbnail}
 
-Au travers de la fenêtre **Select a template** choisissez le quatrième `modèle`{.action} en partant du haut nommé **Linux** en version **3**.
+Au travers de la fenêtre **Select a template** choisissez le quatrième `modèle`{.action} en partant du haut qui se nomme **Linux** en version **3**.
 
 ![01 integrate TKGM OVA 02](images/01-integrate-tkgm-ova02.png){.thumbnail}
 
@@ -138,7 +138,7 @@ Connectez-vous à la page d'accueil OVHcloud de votre cluster VMware et cliquez 
 
 ![02 Add Bootstrapvm 01](images/02-add-bootstrap-vm-from-ova01.png){.thumbnail}
 
-Au travers de la fenêtre **Select a template** choisissez le troisième `modèle`{.action} en partant du haut nommé **Linux** distribution **Ubuntu** en version **22**.
+Au travers de la fenêtre **Select a template** choisissez le troisième `modèle`{.action} en partant du haut qui porte comme nom  **Linux** distribution **Ubuntu** en version **22**.
 
 ![02 Add Bootstrapvm 02](images/02-add-bootstrap-vm-from-ova02.png){.thumbnail}
 
