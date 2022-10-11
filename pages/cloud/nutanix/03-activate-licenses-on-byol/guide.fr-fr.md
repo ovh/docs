@@ -1,6 +1,6 @@
 ---
 title: Ajouter des licences dans votre cluster Nutanix  BYOL
-slug: activate-license-on-byol-cluster
+slug: activate-license-on-nutanix-byol
 excerpt: "Comment ajouter des licences dans un cluster Nutanix OVHcloud dans l'offre BYOL"
 section: Premiers pas
 order: 04
@@ -22,7 +22,7 @@ order: 04
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via **Prism Central**.
-- Avoir un accès au portail de licences Nutanix avec ces propres licences.
+- Avoir un accès au portail de licences Nutanix avec ses propres licences.
 
 ## Présentation
 
@@ -87,9 +87,6 @@ Saisissez vos informations d'indentification du portail Nutanix et cliquez sur `
 Vous êtes maintenant connecté au gestionnaire de licences Nutanix.
 
 ![01 portal connection 03](images/01-portal-connection03.png){.thumbnail}
-
-
-
 
 
 
