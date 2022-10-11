@@ -5,7 +5,7 @@ excerpt: 'Come ripristinare il volume RAID di un server in seguito al malfunzion
 section: 'RAID e dischi'
 ---
 
-**Ultimo aggiornamento: 05/08/2019**
+**Ultimo aggiornamento: 11/10/2022**
 
 ## Obiettivo
 
@@ -17,10 +17,12 @@ Il livello RAID implementato di default sui server OVHcloud è RAID 1, un sistem
 
 ## Prerequisiti
 
-* Disporre di un [server dedicato](https://www.ovh.it/server_dedicati/){.external} con configurazione RAID software
-* Avere accesso al server via SSH con l’utente root
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} con configurazione RAID software
+- Avere accesso al server via SSH con l’utente root
 
 ## Procedura
+
+### Rimozione del disco
 
 Per verificare lo stato corrente del RAID è necessario eseguire questo comando:
 
@@ -209,6 +211,8 @@ Working Devices: 2
        1       8       18        1      active sync   /dev/sdb2
        2       8       34        2      active sync   /dev/sdc2
 ```
+
+### Ricostruzione del RAID
 
 Una volta sostituito il disco, copia la tabella delle partizioni da un disco funzionante (nell’esempio, “sdb”) in quello nuovo (“sda”) con il comando: 
 

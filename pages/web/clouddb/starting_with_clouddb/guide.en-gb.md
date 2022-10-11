@@ -24,7 +24,7 @@ Your CloudDB solution is linked to the OVHcloud web hosting network by default. 
 
 ### CloudDB server activation included with your Web Hosting plan
 
-If your hosting plan includes the CloudDB option, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. In the `Web Cloud`{.action} section, click `Web Hosting`{.action} in the left-hand column.
+If your hosting plan includes the CloudDB option, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. In the `Web Cloud`{.action} section, click `Hosting plans`{.action} in the left-hand column.
 
 In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **CloudDB**. Then click `Enable`{.action} to start the activation process.
 

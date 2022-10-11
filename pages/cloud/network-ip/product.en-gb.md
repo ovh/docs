@@ -18,7 +18,7 @@ order: 08
 > ### Our network & IP guides for VPS
 >
 > - [Configuring the reverse DNS of a VPS](https://docs.ovh.com/gb/en/vps/configure-reverse-dns-vps/)
-> - [Configuring IPv6 on a VPS](https://docs.ovh.com/fr/vps/configurer-ipv6/)
+> - [Configuring IPv6 on a VPS](https://docs.ovh.com/gb/en/vps/configuring-ipv6/)
 > - [Configuring IP aliasing](https://docs.ovh.com/gb/en/vps/network-ipaliasing-vps/)
 >
 
@@ -43,7 +43,7 @@ order: 08
 > - [High Grade & SCALE ranges - Configuring the network on Proxmox VE](https://docs.ovh.com/gb/en/dedicated/proxmox-network-hg-scale/)
 > - [High Grade & SCALE ranges - Configuring the network on ESXi](https://docs.ovh.com/gb/en/dedicated/esxi-network-hg-scale/)
 > - [High Grade & SCALE ranges - Configuring the network on Windows Server with Hyper-V](https://docs.ovh.com/gb/en/dedicated/hyperv-network-hg-scale/)
-> - [OVHcloud Link Aggregation - Configurer l'agrégation de liens OLA dans votre espace client](https://docs.ovh.com/fr/dedicated/ola-manager/)
+> - [OVHcloud Link Aggregation - Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](https://docs.ovh.com/gb/en/dedicated/ola-manager/)
 > - [OVHcloud Link Aggregation - How to Configure Your NIC for OLA on Debian 9](https://docs.ovh.com/gb/en/dedicated/ola-debian9/)
 > - [OVHcloud Link Aggregation - How to Configure Your NIC for OLA on CentOS 7](https://docs.ovh.com/gb/en/dedicated/ola-centos7/)
 > - [OVHcloud Link Aggregation - How to Configure Your NIC for OLA on Windows Server 2019](https://docs.ovh.com/gb/en/dedicated/ola-w2k19/)
