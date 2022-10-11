@@ -10,7 +10,7 @@ order: 02
 > Une version en langue anglaise de cette page est disponible [ici](https://docs.ovh.com/gb/en/network-ip/secnumcloud-connectivity-spn-concept/).
 >
 
-**Dernière mise à jour le 27 septembre 2022**
+**Dernière mise à jour le 10/10/2022**
 
 ## Objectif
 
