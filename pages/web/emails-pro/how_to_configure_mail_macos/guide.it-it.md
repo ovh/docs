@@ -77,14 +77,14 @@ Nell'ambito di una configurazione **IMAP**, i valori sono i seguenti:
 |Tipo di server|Nome del server|Metodo di cifratura|Porta|
 |---|---|---|---|
 |In entrata (IMAP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|SSL/TLS|993|
-|Uscita (SMTP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|SSL/TLS|465|
+|Uscita (SMTP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|STARTTLS|587|
 
 Nell'ambito di una configurazione in **POP**, i valori sono i seguenti:
 
 |Tipo di server|Nome del server|Metodo di cifratura|Porta|
 |---|---|---|---|
 |In entrata (POP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|SSL/TLS|995|
-|Uscita (SMTP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|SSL/TLS|465|
+|Uscita (SMTP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|STARTTLS|587|
 
 > [!primary]
 >
