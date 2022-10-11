@@ -19,7 +19,7 @@ order: 08
 >
 > - [Configurer le reverse DNS d'un VPS](https://docs.ovh.com/ca/fr/vps/configurer-le-reverse-dns-vps/)
 > - [Configurer l'IPv6 sur un serveur VPS](https://docs.ovh.com/ca/fr/vps/configurer-ipv6/)
-> - [Configurer une adresse IP en alias](https://docs.ovh.com/ca/fr/vps/ip-aliasing-vps/)
+> - [Configurer une adresse IP en alias](https://docs.ovh.com/ca/fr/vps/network-ipaliasing-vps/)
 >
 
 > [!product-section]
@@ -57,7 +57,7 @@ order: 08
 > - [Ajouter un bloc IP](https://docs.ovh.com/ca/fr/private-cloud/ajout-de-bloc-ip/)
 > - [Création de VLANs](https://docs.ovh.com/ca/fr/private-cloud/creation-vlan/)
 > - [vRack - Compatibilité du vRack avec Hosted Private Cloud](https://docs.ovh.com/ca/fr/private-cloud/gestion-vrack-hosted-private-cloud/)
-> - [vRack - Utiliser Hosted Private Cloud au sein d'un vRack](https://docs.ovh.com/ca/fr/private-cloud/utiliser-le-private-cloud-au-sein-d-un-vrack/)
+> - [vRack - Utiliser Hosted Private Cloud au sein d'un vRack](https://docs.ovh.com/ca/fr/private-cloud/hosted-private-cloud-vrack/)
 > - [Utiliser le plugin OVH Network](https://docs.ovh.com/ca/fr/private-cloud/plugin-ovh-network/)
 > - [NSX - Accéder à l'interface de gestion NSX](https://docs.ovh.com/ca/fr/private-cloud/acceder-a-l-interface-de-gestion-nsx/)
 > - [NSX - Comment déployer une NSX Edge Gateway](https://docs.ovh.com/ca/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
