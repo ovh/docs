@@ -106,7 +106,7 @@ Sha1 n'est pas supporté.
 
 #### Routage sur tunnel
 
-Le mode dynamique est la configuration recommandée pour assurer une haute disponibilité avec les deux équipements VPN.
+Le mode dynamique est la configuration nécessaire pour assurer une haute disponibilité avec les deux équipements VPN.
 
 Une session eBGP doit être configurée dans le tunnel IPsec :
 

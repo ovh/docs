@@ -10,7 +10,7 @@ order: 02
 > Une version en langue anglaise de cette page est disponible [ici](https://docs.ovh.com/gb/en/network-ip/secnumcloud-connectivity-spn-concept/).
 >
 
-**Dernière mise à jour le 18/11/2021**
+**Dernière mise à jour le 10/10/2022**
 
 ## Objectif
 
@@ -51,6 +51,32 @@ Attacher des sous-réseaux au SPN dépend de deux règles :
 Voici un comportement utilisant la fonctionnalité next-hop :
 
 ![fonctionnalité next-hop](images/SNC-SPN-Subnet-NH.svg){.thumbnail}
+
+La fonctionnalité next-hop configure une route statique pour ce subnet à destination du next-hop configuré. Cette route statique est re-diffusée via le SPN-Connector au VPN-SPN et via l'interDC.
+
+#### Configuration BGP
+
+Le protocole BGP est nécessaire avec l'option VPN-SPN et facultatif dans le SPN. L'activation du protocole BGP dans le SPN désactive la configuration VRRP, c'est-à-dire la 1ère adresse IP du subnet.
+
+* La configuration nécessite un AS. Cet AS doit être indépendant de l'AS BGP du client pour former une relation eBGP.
+La valeur recommandée est dans la plage 64512-65534.
+* Multihop eBGP n'est pas supporté
+* Avec plusieurs neighbors, ECMP est automatiquement activé. MED et/ou AS-PATH doivent être réglés pour que le chemin soit sélectionné.
+* Chaque SPN prend en charge jusqu'à 4 peers BGP.
+* Jusqu'à 50 préfixes peuvent être annoncés par session BGP.
+* Pour chaque SPN, vous devez établir une session BGP avec un équipement « A » et un équipement « B ».
+* Par défaut, le protocole BFD est activé sur toutes les sessions BGP. Ce protocole est fortement recommandé pour avoir une convergence plus rapide.
+
+Topologie classique:
+
+![Topologie BGP](images/SNC-SPN-BGP-v0.svg){.thumbnail}
+
+* Le SPN est ici configuré avec un subnet A.B.C.D/X
+* Les routeurs Ra et Rb ont chacun une adresse IP, respectivement la 2e et 3e du subnet
+* Rc est l'appliance de routage du client
+* Rc doit avoir une session eBGP avec Ra et Rb
+* Le réseau local Q.R.S.T/X sera appris par BGP sur les routeurs Ra et Rb et l'annonce renvoyée via le SPN Connector (donc vers InterDC et/ou VPN-SPN)
+* Les Ra et Rb envoient les annonces reçues depuis InterDC et/ou VPN-SPN
 
 ## Aller plus loin
 
