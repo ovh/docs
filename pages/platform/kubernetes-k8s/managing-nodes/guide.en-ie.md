@@ -68,7 +68,7 @@ In the *Node pools* tab, click on the button `Add a node pool`{.action}.
 
 Fill the fields to create a new node pool.
 
-> [warning]
+> [!warning]
 > In the **name of node pool** field, you can’t use “_” or “.” characters as a separator.
 
 The subsequent node pool configuration steps are described in [Creating a cluster](../creating-a-cluster/).
