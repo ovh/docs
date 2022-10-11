@@ -6,7 +6,7 @@ section: SecNumCloud Connectivity
 order: 02
 ---
 
-**Last updated 27th September, 2022**
+**Last updated 10th October, 2022**
 
 ## Objective
 
