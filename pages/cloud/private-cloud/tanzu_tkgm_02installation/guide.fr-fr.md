@@ -6,7 +6,7 @@ section: Tanzu
 order: 03
 ---
 
-**Dernière mise à jour le 10/10/2022**
+**Dernière mise à jour le 11/10/2022**
 
 ## Objectif
 
@@ -189,6 +189,11 @@ Ajoutez ces informations dans **Networking**.
 * **Network CIDR Prefix** : `24`.
 * **Gateway** : `192.168.0.254`.
 * **Dns** : `213.186.33.99`.
+
+> [!primary]
+>
+> Le serveur DNS choisi dans ce guide est celui d'OVHcloud.  
+>
 
 Saisissez et confirmez le mot de passe dans **OS Credentials** ensuite cliquez sur `SUIVANT`{.action}.
 
