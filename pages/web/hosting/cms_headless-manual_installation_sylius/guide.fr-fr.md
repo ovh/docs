@@ -26,6 +26,12 @@ Il faudra, de plus, installer des applicatifs nécessaires à l'installation de 
 
 ### Préparer l'environnement
 
+#### Configurer le pointage de son nom de domaine
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Préciser !!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 #### Base de données
 
 Votre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) dispose d'un serveur SQL privé.
@@ -63,7 +69,8 @@ ssh login@ssh.clusterxxx.hosting.ovh.net
 >Attention : la saisie du mot de passe n'a aucun effet à l'écran pour des raisons de sécurité.
 
 Une fois connecté à votre serveur, vous aurez une fenêtre similaire à celle-ci :
-![Accès SSH](images/cms_headless-manual_installation_sylius%20%5B1%5D.png)
+
+![Accès SSH](images/cms_headless-manual_installation_sylius%5B1%5D.png)
 
 ### Installations
 
@@ -91,6 +98,7 @@ Télécharger l'installeur depuis le site de Composert et changer le nom après 
  ```sh
  php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
  ```
+
 >[!warning]
 >La chaîne de caractères en hexidécimal est un hashage fourni par le site et qui servira pour comparer le résultat du hashage du fichier téléchargé.
 >Cette chaîne changera avec la version de Composer, veillez à prendre celle qui est sur le site officiel.
@@ -140,5 +148,105 @@ Pour installer Sylius dans un répertoire dédié à la racine de votre serveur,
 php -d memory_limit=-1 composer.phar create-project sylius/sylius-standard sylius --no-scripts
 ```
 
-## Aller plus loin
+L'ensemble des fichiers sera installé dans le répertoire `sylius` :
 
+![Répertoire Sylius](images/cms_headless-manual_installation_sylius%5B2%5D.png)
+
+#### Configurer Sylius
+
+##### **Accès à la base de données**
+
+Avant de lancer Sylius pour la première fois, il faut configurer la connexion à la base de données que nous avons configurée précédemment.
+
+Cette configuration se fait dans le fichier `.env` situé à la racine de votre projet Sylius :
+
+![Localisation fichier .env](images/cms_headless-manual_installation_sylius%5B3%5D.png)
+
+Pour éditer ce fichier, nous allons utiliser nano, un éditeur disponible nativement sur votre serveur, en lançant la commande :
+
+```sh
+nano sylius/.env
+```
+
+Votre éditeur s'ouvre et vous pouvez découvrir le fichier de configuration installé par défaut :
+
+![Édition fichier .env dans nano](images/cms_headless-manual_installation_sylius%5B4%5D.png)
+
+La ligne qui nous intéresse est la suivante :
+
+```sh
+DATABASE_URL=mysql://root@127.0.0.1/sylius_%kernel.environment%
+```
+
+Il s'agit de remplacer les éléments définis par défaut par vos paramètres (les valeurs indiquées sont à remplacer par celles disponibles sur votre manager) :
+
+```sh
+DATABASE_URL=mysql://username:password@host:port/bdd
+```
+
+- username : votre accès à votre base de données
+- password : le mot de passe qui a été défini
+- host : adresse de l'hôte
+- port : le port qui a été attribué
+- bdd : le nom de votre base de données.
+
+##### **Installation de Doctrine**
+
+Doctrine est un ORM _(object-relational mapping)_ fonctionnant nativement avec le _framework_ Symfony permettant de d'établir une couche d'abstraction entre le code en PHP et la base de données relationnelle choisie.
+
+Il faut d'abord se déplacer dans le répertoire du projet :
+```sh
+cd sylius
+```
+
+Puis lancer l'installation avec Composer :
+```sh
+php ../composer.phar require doctrine/dbal:"^2.6"
+```
+
+##### **Installer Sylius**
+
+Maintenant que tous les éléments nécessaires au fonctionnement de Sylius sont en place, nous allons pouvoir procéder à son installation :
+
+```sh
+php bin/console sylius:install
+```
+
+Vous aurez alors cet affichage :
+
+![Installation Sylius, étape 1](images/cms_headless-manual_installation_sylius%5B5%5D.png)
+
+Répondez « N » à la première question pour créer ou écraser la base de données, vous l'avez déjà créée sur votre Manager :
+
+```sh
+Would you like to reset it? (y/N)
+```
+
+À la question suivante, répondre « y » pour effacer la base de données
+
+```sh
+Warning! This action will erase your database.
+Do you want to reset it? (y/N)
+```
+
+Il est vous est demandé de saisir dans quelle monnaie vous voulez configurer votre site. Saisissez « EUR » :
+
+```sh
+Currency (press enter to use USD): EUR
+```
+
+Puis la langue que vous souhaitez utiliser :
+
+```sh
+Language (press enter to use en_US): fr_FR
+```
+
+Il suffit, ensuite, de répondre aux différents éléments demandés par l'application :
+
+- l'adresse mail du compte administrateur
+- le login à utiliser pour se connecter au compte (laisser vide pour utiliser l'adresse mail précédemment saisie)
+- un mot de passe et sa confirmation.
+
+Votre installation est terminée !
+
+## Aller plus loin
