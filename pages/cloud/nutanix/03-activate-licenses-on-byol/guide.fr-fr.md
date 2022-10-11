@@ -10,7 +10,7 @@ order: 04
 
 ## Objectif
 
-Ce document rappelle le fonctionnement d'une solution d'hyperconvergence Nutanix et propose une découverte de l'interface Prim Central et PRISM element.
+**Ce Document vous montre comment activer vos licences sur une solution Nutanix by OVHcloud en mode BYOL**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -20,32 +20,35 @@ Ce document rappelle le fonctionnement d'une solution d'hyperconvergence Nutanix
 
 ## Prérequis
 
-- Le client doit avoir souscrit à l'offre Nutanix BYOL d'OVHcloud.
-- Le client doit avoir ses propres licences et un accès au portail de licences Nutanix.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté sur vos clusters via **Prism Central**.
+- Avoir un accès au portail de licences Nutanix avec ces propres licences.
 
 ## Présentation
 
 > [!warning]
 >
 > OVHcloud propose Nutanix en version BYOL (Bring your Own License) ce qui signifie que les licences du cluster doivent être fournis par le client d'OVHcloud.
-> Lorsque le cluster Nutanix est commandé par le client mode BYOL le cluster est livré avec une version d'essai de 90 jours, il faut que le client installe ses licences dans cette période.
+> Lorsque le cluster Nutanix est commandé en mode BYOL, le cluster est livré avec une version d'essai de 90 jours, il faut que le client installe ses licences dans cette période.
 >
 
-Il existe trois types de licences :
+Il existe trois types de licences pour :
 
-* Celles pour **Prism Element** : Ces licences s'installent au travers de la console Prism Element.
-* Celles pour **Prism Central** : Ces licencs s'install.ent au travers de la console Prism Central
-* Celles pour **Les licences Add On** : Ces licences s'installent au travers de la console Prism Element
+* **Prism Element**. 
+* **Prism Central**. 
+* **Les Add On**.
+
+Il est possible d'installer toutes les licences à partir de **Prism Central**.
 
 ## En Pratique
 
 ### Installation des licences
 
-#### Récuperation des fichiers contenant le résumé des configuration dans un fichier
+#### Récupération des fichiers contenant le résumé de votre configuration dans un fichier
 
-Avant d'installer des licences sur un cluster Nutanix il faut générer un rapport de configuration du cluster qui contient les informations de licence de votre cluster, il est possible de récupérer toutes ces informations à partir de Prism Central.
+Nous allons récupérer le résumé de la configuration du cluster pour le déposer sur le portail Nutanix et générer des licences.
 
-Au travers d'interface de **Prism Central** allez dans les paramètres en cliquant sur l'icône en forme d'`engrenage`{.action}.
+Au travers de **Prism Central** et cliquer sur l'icône en forme d'`engrenage`{.action} pour aller dans les paramètres.
 
 ![01 generate-report report 01](images/01-generate-report01.png){.thumbnail}
 
@@ -61,11 +64,11 @@ Cliquez sur `Download`{.action} pour récupérer le fichier contenant les inform
 
 ![01 generate-report report 04](images/01-generate-report04.png){.thumbnail}
 
-Cliquez en haut à droite sur  `Show all downloads`{.action}
+Cliquez en haut à droite sur `Show all downloads`{.action}
 
 ![01 generate-report report 05](images/01-generate-report05.png){.thumbnail}
 
-Vous trouverez dans vos fichiers téléchargés un document commençant par **ntnx** qui est un résumé de votre configuration, il vous servira pour générer un fichier de licence au travers du portail Nutanix.
+Vous trouverez dans vos fichiers téléchargés un document commençant par **ntnx** qui est le résumé de votre configuration qu'il faudra déposer sur le portail de licences Nutanix.
 
 ![01 generate-report report 06](images/01-generate-report06.png){.thumbnail}
 
@@ -77,11 +80,11 @@ Restez dans **Prism Central** sur la page des licences et cliquez sur `Licenses 
 
 Le navigateur WEB se lance et vous propose de vous connecter au portail Nutanix.
 
-Saisisissez vos informations d'indentification chez Nutanix et cliquez sur `Log in`{.action}
+Saisissez vos informations d'indentification du portail Nutanix et cliquez sur `Log in`{.action}
 
 ![01 portal connection 02](images/01-portal-connection02.png){.thumbnail}
 
-Vous êtes maintenant sur le gestionnaire de licences Nutanix.
+Vous êtes maintenant connecté au gestionnaire de licences Nutanix.
 
 ![01 portal connection 03](images/01-portal-connection03.png){.thumbnail}
 
