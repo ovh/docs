@@ -21,6 +21,7 @@ Ce document rappelle le fonctionnement d'une solution d'hyperconvergence Nutanix
 ## Prérequis
 
 - Le client doit avoir souscrit à l'offre Nutanix BYOL d'OVHcloud.
+- Le client doit avoir ses propres licences et un accès au portail de licences Nutanix.
 
 ## Présentation
 
@@ -78,9 +79,11 @@ Le navigateur WEB se lance et vous propose de vous connecter au portail Nutanix.
 
 Saisisissez vos informations d'indentification chez Nutanix et cliquez sur `Log in`{.action}
 
-![01 portal connection 02](images/01-portal-connection03.png){.thumbnail}
+![01 portal connection 02](images/01-portal-connection02.png){.thumbnail}
 
+Vous êtes maintenant sur le gestionnaire de licences Nutanix.
 
+![01 portal connection 03](images/01-portal-connection03.png){.thumbnail}
 
 
 
