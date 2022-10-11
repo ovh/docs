@@ -50,7 +50,7 @@ Consultez notre documentation qui explique [comment ajouter un multisite sur son
 
 #### 1.2 : vérifier le "pointage" du nom de domaine
 
-Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre WordPress ainsi que son sous-domaine en "www" pointent bien vers l'adresse IP de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+- Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre WordPress ainsi que son sous-domaine en "www" pointent bien vers l'adresse IP de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
 
 Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}. Dans l'encadré `Informations générales`{.action} sur votre droite, vous trouverez l'adresse IP de votre hébergement web dans le formulaire `IPv4`{.action}. 
 
@@ -65,13 +65,13 @@ Si non, contactez l'hébergeur de votre zone DNS active pour mettre à jour le p
 
 > [!warning]
 >
-> Toutes les modifications effectuées dans votre zone DNS entraîne un délai de propagation de 4 à 24 heures.
+> Toutes les modifications effectuées dans votre zone DNS entraînent un délai de propagation de 4 à 24 heures.
 >
 
 - Récupérez [les informations nécessaires pour vous connecter à l'espace FTP de votre hébergement web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter)
 - Récupérez les accès à la base de données de votre offre d'hébergement Web si elle existe déjà ou créez-en une à l'aide de notre [documentation](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
-#### 1.3 : Installer le client FTP gratuit "Filezilla"
+#### 1.3 : installer le client FTP gratuit "Filezilla"
 
 Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utilisation dans notre documentation sur l'[utilisation de Filezilla avec votre offre d'hébergement OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 
@@ -83,13 +83,13 @@ Utilisez notre documentation pour [créer une base de données depuis votre offr
 
 Si vous disposez d'une offre SQL Privé/Cloud DB en "MySQL" et que vous souhaitez l'utiliser pour installer manuellement votre WordPress, retrouvez notre documentation sur la [création d'une base de données sur un SQL Privé/Cloud DB](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/#creer-une-base-de-donnees).
 
-Une fois créée, récupérez les paramètres de connexion à votre base de données (serveur, nom de la base de données, nom d'utilisateur et mot de passe) et mettez-les de côté pour [l'étape 3](#step3) de ce guide.
+Une fois créée, récupérez les paramètres de connexion à votre base de données (serveur, nom de la base de données, nom d'utilisateur et mot de passe) et conservez-les pour [l'étape 3](#step3) de ce guide.
 
 > [!primary]
 > 
 > Si vous souhaitez installer votre CMS WordPress avec une base de données déjà existante, récupérez vos paramètres de connexion à votre base de données directement dans les fichiers du site pour lequel elle est déjà utilisée.
 >
-> S'il s'agit aussi d'un CMS comme celui que vous vous apprêtez à installer, vous pouvez vous aider de [ce guide](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/#etape-3-modifier-le-mot-de-passe-de-la-base-de-donnees-de-votre-site-dans-son-fichier-de-configuration) pour identifier les fichiers de configuration dans votre [espace de stockage FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+> S'il s'agit aussi d'un CMS comme celui que vous vous apprêtez à installer, vous pouvez utiliser [ce guide](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/#etape-3-modifier-le-mot-de-passe-de-la-base-de-donnees-de-votre-site-dans-son-fichier-de-configuration) pour identifier les fichiers de configuration dans votre [espace de stockage FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
 >
 > Connectez-vous ensuite à votre base de données pour recenser les "préfixes" des tables déjà présentes à l'intérieur. Ceci afin de ne pas choisir un "préfixe" de table déjà utilisé par un autre de vos sites.
 >
@@ -121,17 +121,17 @@ Rendez-vous sur le site du développeur de [WordPress](https://wordpress.org/dow
 
 #### 2.2 : décompresser les fichiers sources téléchargés dans un nouveau dossier
 
-Le fichier téléchargé est dans un format **compressé** (zippé), créez un dossier intitulé "* *WordPress**" sur votre ordinateur puis **décompressez** le contenu du fichier téléchargé à l'intérieur du dossier "* *WordPress**". 
+Le fichier téléchargé est dans un format **compressé** (zippé), créez un dossier intitulé "**WordPress**" sur votre ordinateur puis **décompressez** le contenu du fichier téléchargé à l'intérieur du dossier "**WordPress**". 
 
 Pour cela, ouvrez le dossier dans lequel vous avez téléchargé le fichier compressé, réalisez un clic droit sur le fichier en question, puis sélectionnez "Extraire tout...".
 
-Indiquez le dossier "* *WordPress**" en destination afin d'extraire vos fichiers dans ce dossier.
+Indiquez le dossier "**WordPress**" en destination afin d'extraire vos fichiers dans ce dossier.
 
 Si besoin, vous trouverez sur Internet différentes aides concernant la décompression de fichiers.
 
 #### 2.3 : déplacer les fichiers sources du dossier "WordPress" vers le "dossier racine" sur votre hébergement web
 
-Une fois les fichiers décompressés dans votre dossier "* *WordPress**", [connectez-vous en FTP à votre espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide du [client FTP Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) puis copiez les fichiers contenus dans le dossier "* *WordPress**" dans le "dossier racine" que vous avez défini sur votre hébergement lors de l'[étape 1](#step1) de ce guide.
+Une fois les fichiers décompressés dans votre dossier "**WordPress**", [connectez-vous en FTP à votre espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide du [client FTP Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) puis copiez les fichiers contenus dans le dossier "**WordPress**" dans le "dossier racine" que vous avez défini sur votre hébergement lors de l'[étape 1](#step1) de ce guide.
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -147,7 +147,7 @@ Une fois les fichiers décompressés dans votre dossier "* *WordPress**", [conne
 >
 > Le dépôt des fichiers sur votre hébergement peut prendre quelques minutes.
 >
-> Une fois le transfert terminé, assurez-vous que tous les éléments présents dans le dossier local "* *WordPress**" ont été correctement transférés dans le "dossier racine" présent sur votre hébergement web.
+> Une fois le transfert terminé, assurez-vous que tous les éléments présents dans le dossier local "**WordPress**" ont été correctement transférés dans le "dossier racine" présent sur votre hébergement web.
 >
 
 ### Etape 3 : finaliser l'installation manuelle <a name="step3"></a>
