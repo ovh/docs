@@ -15,7 +15,7 @@ section: User guides
    font-family: monospace;
    padding: 5px;
    margin-bottom: 5px;
- }q
+ }
  pre.console code {
    border: solid 0px transparent;
    font-family: monospace !important;
@@ -27,7 +27,7 @@ section: User guides
  }
 </style>
 
-**Last updated 10th October 2022**
+**Last updated 11th October 2022**
 
 ## Objective
 
