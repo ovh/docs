@@ -45,7 +45,7 @@ At OVHcloud, we like to provide you with the best products and services, and we 
 
 ### Display the CoreDNS default configuration
 
-The DNS in an OVHcloud Managed Kubernetes cluster is handle thanks to CoreDNS.
+The DNS in an OVHcloud Managed Kubernetes cluster are handled by CoreDNS.
 To see the default configuration you can take a look to the `ConfigMap`.
 
 ```bash
@@ -100,7 +100,7 @@ To understand what this CoreDNS configuration means, please take a look on the [
 
 ### Customize the CoreDNS configuration
 
-If you want to edit and personnalized the CoreDNS configuration, principally to add new configuration, you have to take a look to the `coredns-custom` ConfigMap:
+If you want to edit and customize the CoreDNS configuration, it can be done by editing the `coredns-custom` ConfigMap, which will never be altered by OVHCloud's services:
 
 ```bash
 $ kubectl get cm coredns-custom -n kube-system -o yaml
