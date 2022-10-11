@@ -25,7 +25,7 @@ In dieser Anleitung erfahren Sie, wie Sie dieses Angebot für Ihren [Domainnamen
 > Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank wie WordPress, Joomla!, PrestaShop, Drupal usw. benötigt, bestellen Sie direkt über unsere Website oder Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eines unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/){.external}.
 >
 
-**Anleitung erklärt, wie Sie Ihr kostenloses "Start 10M" Hosting aktivieren**
+**Diese Anleitung erklärt, wie Sie Ihr kostenloses "Start 10M" Hosting aktivieren.**
 
 ## Voraussetzungen
 

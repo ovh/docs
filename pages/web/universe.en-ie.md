@@ -1,7 +1,7 @@
 ---
 title: Web Cloud
 slug: web
-excerpt: All about OVH Web products
+excerpt: All about OVHcloud Web products
 color: green
 img: icn-confluence-web.png
 order: 1

@@ -54,7 +54,7 @@ Es wird ein Link zum Download des Backups erstellt und per E-Mail an die Adresse
 
 Um den Link zur Wiederherstellung zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und dann auf das betreffende Hosting. 
 
-Wählen Sie den Tab `FTP - SSH`{.action} aus und klicken Sie auf `Backup rechts`{.action} erstellen.
+Wählen Sie den Tab `FTP - SSH`{.action} aus und klicken Sie rechts auf `Backup erstellen`{.action}.
 
 ![backupftpcw](images/GenerateABackup.png){.thumbnail}
 

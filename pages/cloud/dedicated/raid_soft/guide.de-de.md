@@ -1,26 +1,28 @@
 ---
 title: Software-RAID
 slug: soft-raid
-excerpt: 'Hier erfahren Sie, wie Sie das RAID-Array Ihres Servers im Fall von Störungen oder Festplattenschaden konfigurieren.'
+excerpt: 'Erfahren Sie hier, wie Sie das RAID Array Ihres Servers im Fall von Störungen oder Festplattenschaden rekonfigurieren'
 section: 'RAID & Festplatten'
 ---
 
-**Stand 11.07.2019**
+**Letzte Aktualisierung am 11.10.2022**
 
-## Einleitung
+## Ziel
 
 Das RAID (Redundant Array of Independent Disks) ist ein System, das Datenverlust auf Servern entgegenwirkt, indem es diese Daten auf mehreren Festplatten speichert.
 
 Das RAID-Level für OVHcloud Server-Installationen ist standardmäßig RAID-1, was den von Ihren Daten verbrauchten Speicherplatz verdoppelt und somit den nutzbaren Festplattenplatz halbiert.
 
-**In dieser Anleitung erfahren Sie, wie Sie das Matrix-RAID Ihres Servers konfigurieren, falls dieses aufgrund von Störungen oder Festplattenschaden neu eingerichtet werden muss.**
+**Diese Anleitung erklärt, wie Sie das RAID Array Ihres Servers konfigurieren, falls dieses aufgrund von Störungen oder Festplattenschaden neu eingerichtet werden muss.**
 
 ## Voraussetzungen
 
-* Sie verfügen über einen [dedizierten Server](https://www.ovh.de/dedicated_server/){.external} mit Software-RAID-Konfiguration.
-* Sie haben als Administrator (Root) via SSH Zugriff auf Ihren Server.
+- Sie verfügen über einen [dedizierten Server](https://www.ovhcloud.com/de/bare-metal/){.external} mit Software-RAID-Konfiguration.
+- Sie haben als Administrator (Root) via SSH Zugriff auf Ihren Server.
 
 ## Beschreibung
+
+## In der praktischen Anwendung
 
 Den aktuellen Status des RAID erhalten Sie über folgenden Befehl:
 
@@ -208,6 +210,8 @@ Working Devices : 2
        1       8       18        1      active sync   /dev/sdb2
        2       8       34        2      active sync   /dev/sdc2
 ```
+
+### RAID neu einrichten
 
 Wenn die Festplatte ersetzt wurde, kopieren Sie die Partitionstabelle einer funktionsfähigen Festplatte (in unserem Beispiel “sdb”) mit folgendem Befehl in die neue (“sda”): 
 
