@@ -59,7 +59,6 @@ apiVersion: v1
 data:
   Corefile: |
     .:53 {
-        log
         errors
         health {
             lameduck 5s
@@ -80,6 +79,7 @@ data:
         reload
         loadbalance
         import custom/*.include
+        log
     }
     import custom/*.server
 kind: ConfigMap
