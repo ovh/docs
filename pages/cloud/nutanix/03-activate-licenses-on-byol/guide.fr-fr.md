@@ -74,7 +74,11 @@ Restez dans **Prism Central** sur la page des licences et cliquez sur `Licenses 
 
 ![01 portal connection 01](images/01-portal-connection01.png){.thumbnail}
 
+Le navigateur WEB se lance et vous propose de vous connecter au portail Nutanix.
 
+Saisisissez vos informations d'indentification chez Nutanix et cliquez sur `Log in`{.action}
+
+![01 portal connection 02](images/01-portal-connection03.png){.thumbnail}
 
 
 
