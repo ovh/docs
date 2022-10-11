@@ -142,6 +142,18 @@ And here is an example of a command you could run to run the same job after uplo
 $ ./ovh-spark-submit --projectid yourProjectId --upload ./spark-examples.jar --class org.apache.spark.examples.SparkPi --driver-cores 1 --driver-memory 4G --executor-cores 1 --executor-memory 4G --num-executors 1 swift://odp/spark-examples.jar 1000
 ```
 
+#### Optionally configure your job ExitCode
+
+When your job execution status is complete, by default the ExitCode returns by the CLI Spark-Submit will be zero.
+In some case you may want to return an exitcode other than 0, if you do once your job is processed the CLI will return with your code.
+
+By example a job counting a number of error will run successfully and will ends with the exit code 0.
+You may customize the exit code to have the CLI exit with a return code "2" if at least one error is found.
+Then the Spark-Submit CLI will exit with it.
+
+[Python sys.exit](https://docs.python.org/3/library/sys.html#sys.exit)
+
+[Java exit](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/lang/System.html#exit(int))
 ## Go further
 
 To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
