@@ -304,6 +304,36 @@ In the last window, click `Finish`{.action} to format the disk.
 
 The disk will be available as a drive in File Explorer after the operation.
 
+
+### Detaching a volume
+
+If you wish to detach a volume from your instance, the best practice is to umount the volume from within the instance before detaching it from your control panel.
+
+Establish an [SSH connection to your instance](../public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
+
+```bash
+~$ admin@server-1:~$ lsblk
+
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda 254:0 0 10G 0 disk
+└─vda1 254:1 0 10G 0 part /
+vdb       8:0    0   10G  0 disk
+└─vdb1    8:1    0   10G  0 part /mnt/disk
+```
+
+Unmount the partition using the command below:
+
+```bash
+~$ admin@server-1:~$ sudo umount /dev/sdb1
+```
+
+Remove the device ID from the fstab to complete the unmount process, if this is not done, the partition will be mounted right back after a reboot.
+
+```bash
+~$ admin@server-1:~$ sudo nano /etc/fstab
+``` 
+
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
