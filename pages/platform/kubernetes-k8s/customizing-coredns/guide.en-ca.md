@@ -35,7 +35,7 @@ The OVHcloud Managed Kubernetes service provides you with Kubernetes clusters wi
 
 The OVHcloud Managed Kubernetes clusters are using [CoreDNS](https://coredns.io/) as a DNS server for Service Discovery.
 
-At OVHcloud, we like to provide you with the best products and services, and we listen to our users, which is why we give you the ability to customize the CoreDNS configuration, thanks to the expansion mechanism in a special ConfigMap which is not modified by a redeployment.
+At OVHcloud, we listen to our users and improve our products and services accordingly, which is why we give you the ability to customize the CoreDNS configuration, thanks to the expansion mechanism in a special ConfigMap which is not modified by a redeployment.
 
 ## Requirements 
 
@@ -43,16 +43,17 @@ At OVHcloud, we like to provide you with the best products and services, and we 
 
 ## Instructions
 
-### Display the CoreDNS default configuration
+### Displaying the CoreDNS default configuration
 
-The DNS in an OVHcloud Managed Kubernetes cluster are handled by CoreDNS.
-To see the default configuration you can take a look to the `ConfigMap`.
+In an OVHcloud Managed Kubernetes cluster the DNS are handled by CoreDNS.
+
+Take a look at the `ConfigMap` to see the default configuration.
 
 ```bash
 kubectl get configmap coredns -n kube-system -o yaml
 ```
 
-The result should be like this:
+The result should be similar to the following:
 
 <pre class="console"><code>$ kubectl get configmap coredns -n kube-system -o yaml
 apiVersion: v1
@@ -94,13 +95,13 @@ metadata:
 </code</pre>
 
 > [!warning]
-> When the Kubernetes Control Plane is redeployed or when the cluster is upgrading to the lastest patch, this default CoreDNS configuration is restored to the default one. 
+> When the Kubernetes Control Plane is redeployed or when the cluster is upgrading to the latest patch, this default CoreDNS configuration is restored to the default one. 
 
-To understand what this CoreDNS configuration means, please take a look on the [CoreDNS official documentation and CoreDNS plugins documentation](https://coredns.io/plugins/).
+To understand what this CoreDNS configuration means, please read the [CoreDNS official documentation and CoreDNS plugins documentation](https://coredns.io/plugins/).
 
-### Customize the CoreDNS configuration
+### Customizing the CoreDNS configuration
 
-If you want to edit and customize the CoreDNS configuration, it can be done by editing the `coredns-custom` ConfigMap, which will never be altered by OVHCloud's services:
+If you want to edit and customize the CoreDNS configuration, it can be done by editing the `coredns-custom` ConfigMap, which will never be altered by OVHCloud services:
 
 ```bash
 $ kubectl get cm coredns-custom -n kube-system -o yaml
@@ -121,7 +122,7 @@ metadata:
   uid: 95c51a5d-c413-4520-b84d-a16892626620
 ```
 
-You can add new configuration in `data.example.include` and `data.example.server` blocks.
+You can add some new configuration in `data.example.include` and `data.example.server` blocks.
 
 Edit the `coredns-custom` ConfigMap with the following command:
 
@@ -129,7 +130,7 @@ Edit the `coredns-custom` ConfigMap with the following command:
 kubectl edit cm coredns-custom -n kube-system  
 ```
 
-For example, if you want to use a custom nameserver that will point to your private DNS all FQDN resolutions `*.myprivatedomain.com`:
+For example, if you want to use a custom nameserver that will point to your private DNS all FQDN resolutions for `*.myprivatedomain.com`:
 
 <pre class="console"><code>$ kubectl edit cm coredns-custom -n kube-system
 # Please edit the object below. Lines beginning with a '#' will be ignored,
@@ -155,7 +156,7 @@ metadata:
   uid: 95c51a5d-c413-4520-b84d-a16892626620
 </code></pre>
 
-Check the logs to make sure that the customization have been applied:
+Check the logs to make sure that the customization has been applied:
 
 ```bash
 kubectl logs -n kube-system -l k8s-app=kube-dns -f
@@ -163,19 +164,19 @@ kubectl logs -n kube-system -l k8s-app=kube-dns -f
 
 ## Known limitations
 
-* Full private DNS resolution is not possible, only private domain can be resolved. This means that public FQDN are resolved by the public OVHcloud DNS. For example when resolving `kubernetes.io` from a Pod, first the CoreDNS resolve to `.:53` which is default nameserver then it resolve the `/etc/resolv.conf` of the underlying worker Node then it resolve the public OVHcloud DNS (which is configured by the OVHcloud Managed Kubernetes).
+* Full private DNS resolution is not possible, only private domain can be resolved. This means that public FQDN are resolved by the public OVHcloud DNS. For example, when resolving `kubernetes.io` from a Pod, first the CoreDNS resolves to `.:53` which is the default nameserver then it resolves the `/etc/resolv.conf` of the underlying worker Node. Then it resolves the public OVHcloud DNS (which is configured by the OVHcloud Managed Kubernetes).
 
-* When upgrading the cluster Nodes (or when a node restart), then the CoreDNS pod can be restarted and take the new configuration. That's for this reason you need to customize the configuration through the `coredns-custom` ConfigMap.
+* When upgrading the cluster Nodes (or when a node restarts), the CoreDNS pod can be restarted and takes the new configuration. That's for this reason you need to customize the configuration through the `coredns-custom` ConfigMap.
 
-* CoreDNS is configured to reload its configuration (ConfigMap here) each 30 seconds.
+* CoreDNS is configured to reload its configuration (ConfigMap here) every 30 seconds.
 
-* New Kubernetes clusters will have the new CoreDNS Deployment & ConfigMaps, whereas the old one will need to update their control plane to the latest patch.
+* New Kubernetes clusters will have the new CoreDNS Deployment & ConfigMaps, whereas the old ones will need to update their control plane to the latest patch.
 
 
 ## Go further
 
 To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
-To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](../).
+To learn more about how to use your Kubernetes cluster the practical way, we invite you to read our [tutorials](../).
 
 Join our [community of users](https://community.ovh.com/en/).
