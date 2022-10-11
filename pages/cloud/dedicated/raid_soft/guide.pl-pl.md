@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak odbudować macierz RAID Twojego serwera w przypadku 
 section: 'RAID & dyski'
 ---
 
-**Ostatnia aktualizacja z dnia 03-07-2019**
+**Ostatnia aktualizacja z dnia 11-10-2022**
 
 ## Wprowadzenie
 
@@ -17,10 +17,12 @@ Domyślny poziom RAID dla serwerów OVHcloud to RAID 1. Dzięki temu przestrzeń
 
 ## Wymagania początkowe
 
-* Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external} ze skonfigurowaną programową macierzą RAID
-* Dostęp do serwera przez SSH przy użyciu uprawnień administratora (root)
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} ze skonfigurowaną programową macierzą RAID
+- Dostęp do serwera przez SSH przy użyciu uprawnień administratora (root)
 
 ## W praktyce
+
+### Usuwanie dysku
 
 Weryfikacja aktualnego stanu RAID za pomocą polecenia:
 
@@ -208,6 +210,8 @@ Working Devices : 2
        1       8       18        1      active sync   /dev/sdb2
        2       8       34        2      active sync   /dev/sdc2
 ```
+
+### Rekonstrukcja RAID
 
 Po wymianie dysku skopiuj tablicę partycji ze zdrowego dysku, (w tym przykładzie dysk “sdb”) do nowego dysku “sda” za pomocą następującego polecenia: 
 

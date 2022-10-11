@@ -5,7 +5,7 @@ excerpt: 'Apprenez à configurer la baie RAID de votre serveur en cas de panne o
 section: 'RAID & disques'
 ---
 
-**Dernière mise à jour le 23/05/2019**
+**Dernière mise à jour le 11/10/2022**
 
 ## Objectif
 
@@ -17,10 +17,12 @@ Le niveau RAID par défaut pour les installations de serveurs OVHcloud est RAID 
 
 ## Prérequis
 
-* Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} avec une configuration RAID logiciel.
-* Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
+- Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} avec une configuration RAID logiciel.
+- Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
 
 ## En pratique
+
+### Retrait du disque
 
 La vérification de l’état actuel du RAID s’effectue via la commande suivante :
 
@@ -208,6 +210,8 @@ Working Devices : 2
        1       8       18        1      active sync   /dev/sdb2
        2       8       34        2      active sync   /dev/sdc2
 ```
+
+### Reconstruction du RAID
 
 Une fois le disque remplacé, copiez la table de partition à partir d'un disque sain, « sdb » dans cet exemple, à la nouvelle, « sda » avec la commande suivante : 
 
