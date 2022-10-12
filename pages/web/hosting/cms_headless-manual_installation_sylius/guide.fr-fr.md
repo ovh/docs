@@ -194,6 +194,16 @@ DATABASE_URL=mysql://username:password@host:port/bdd
 - port : le port qui a été attribué
 - bdd : le nom de votre base de données.
 
+##### **Configurer l'application en mode « production »**
+
+Symfony, et donc Sylius, possède plusieurs modes de fonctionnement dont deux majeurs : un mode « développement » et un mode « production ».
+
+Dans le premier cas, des outils de débogage sont mis à disposition du développeur. La contrepartie est une lenteur d'exécution. Nous allons donc modifier ce même fichier ```.env``` en ajustant la directive nous permettant de choisir l'un ou l'autre mode :
+
+```sh
+APP_ENV=prod
+```
+
 ##### **Installation de Doctrine**
 
 Doctrine est un ORM _(object-relational mapping)_ fonctionnant nativement avec le _framework_ Symfony permettant de d'établir une couche d'abstraction entre le code en PHP et la base de données relationnelle choisie.
