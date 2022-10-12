@@ -6,11 +6,11 @@ section: Serviços e opções OVHcloud
 order: 04
 ---
 
-**Última atualização: 10/06/2022**
+**Última atualização: 12/10/2022**
 
 ## Objetivo
 
-A OVHcloud disponibiliza-lhe uma interface segura para validar as operações sensíveis (alteração de palavra-passe, adição de utilizador, etc.) realizadas por utilizadores ou terceiros no seu Private Cloud HDS ou PCI-DSS.
+A OVHcloud disponibiliza-lhe uma interface segura para validar as operações sensíveis (alteração de palavra-passe, adição de utilizador, etc.) realizadas por utilizadores ou terceiros no seu Hosted Private Cloud HDS ou PCI-DSS.
 
 **Este manual explica o funcionamento da interface para validar essas operações.**
 
@@ -95,7 +95,7 @@ De seguida, será enviado um token aos utilizadores com a autorização [token v
 
 ### Reinicializar uma palavra-passe
 
-Este procedimento só está disponível para os utilizadores com a autorização **token validator**.
+Este procedimento só está disponível para os utilizadores com a autorização **token validator**. Um utilizador que não disponha desta autorização obterá um erro 400.
 
 > [!primary]
 >
