@@ -8,6 +8,10 @@ order: 01
 
 **Letzte Aktualisierung am 12.10.2022**
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
 ## Ziel
 
 Automatische E-Mails sind Nachrichten, die über Skripte versendet werden. In der Regel mithilfe der "mail()"-Funktion von PHP. Sie werden beispielsweise für das Kontaktformular Ihrer Website verwendet und ermöglichen es Ihren Besuchern, Ihnen Nachrichten zu versenden.
@@ -35,13 +39,13 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden. In de
 
 Die Überwachung und Verwaltung der automatisierten E-Mails Ihres OVHcloud Webhostings erfolgt über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=dec){.external}. Gehen Sie nach dem Login in den Bereich `Web Cloud`{.action}, klicken Sie auf Hosting-Pakete`{.action} und wählen Sie das betreffende `Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Plus`{.action} und dann auf die `E-Mail-Skripte`{.action}.
 
-![hosting](images/monitoring-automatic-emails-step1.png) {.thumbnail}
+![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
-Auf der angezeigten Seite können Sie die von Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/fr-ca/web-hosting/) versendeten automatischen E-Mails verfolgen und verwalten.
+Auf der angezeigten Seite können Sie die von Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) versendeten automatischen E-Mails verfolgen und verwalten.
 
 ### Vorstellung des Teils "E-Mail-Skripte"
 
-![hosting](images/Interface.png) {.thumbnail}
+![hosting](images/Interface.png){.thumbnail}
 
 Auf der Seite werden mehrere Informationen angezeigt, die es Ihnen ermöglichen, die Aktivität des von Ihren Skripten generierten automatischen E-Mail-Versands nachzuverfolgen:
 
@@ -116,7 +120,7 @@ Klicken Sie dann auf `Versand entsperren`{.action} und warten Sie einige Minuten
 
 Dieser Zustand tritt ein, wenn ein bestimmter Prozentsatz Ihrer automatisch versandten E-Mails zurückkehrt.
 
-Gehen Sie zum Entsperren in den Bereich Web Cloud {.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Plus`{.action} und dann auf die `E-Mail-Skripte`{.action}.
+Gehen Sie zum Entsperren in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Plus`{.action} und dann auf die `E-Mail-Skripte`{.action}.
 
 Es sind zwei Optionen möglich:
 
@@ -129,7 +133,7 @@ Dieser Zustand tritt ein, wenn E-Mails, die als SPAM angesehen werden, von Ihrem
 
 Im Allgemeinen wird diese Sperrung begleitet durch den Versand einer E-Mail mit dem Titel **"Missbrauch mit Ihrem Hosting domain.tld"**, die automatisch von unseren Sicherheitsrobotern generiert wird:
 
-![hosting](images/AbuseMail.png) {.thumbnail}
+![hosting](images/AbuseMail.png){.thumbnail}
 
 Drei Szenarien sind möglich:
 
@@ -215,7 +219,7 @@ $mail->Password = "YourEmailPassword";
 > Wenn Sie eine OVHcloud E-Mail-Adresse verwenden und nur in diesem Fall, können Sie auch den `SMTPSecure` *"starttls"* oder *"tls"* mit dem `Port` **587** verwenden. `SMTPSecure` *"ssl"* mit dem `Port` **465*** bleiben jedoch weiterhin bevorzugt.
 > 
 
-## Weiterführende Informationen <a name="go-further"></a>
+## Weiterführende Informationen <a name="go-further"></a> 
 
 [Die Logs Ihres Hostings einsehen](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/)
 

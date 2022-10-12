@@ -215,7 +215,7 @@ $mail->Password = "YourEmailPassword";
 > If you use an OVHcloud email address and only in this case, you can also use the `SMTPSecure` *"startls"* or *"tls"* with the `Port` **587**. However, the `SMTPSecure` *"ssl"* with the `Port` **465** should be preferred.
 > 
 
-## Go further <a name=`go-further`></a>
+## Go further <a name="go-further"></a>  
 
 [View your hosting logs](https://docs.ovh.com/gb/en/hosting/shared_view_my_websites_logs_and_statistics/)
 
