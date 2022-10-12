@@ -14,9 +14,9 @@ Automated emails are messages sent via scripts. Usually using PHP's "mail()" fun
 
 > [!primary]
 >
-> This guide mainly applies to emails sent from scripts located on your [OVHcloud web hosting](https://www.ovhcloud.com/en-us/web-hosting/) using PHP's "mail()" function.
+> This guide mainly applies to emails sent from scripts located on your [OVHcloud web hosting](https://www.ovhcloud.com/en/web-hosting/) using PHP's "mail()" function.
 >
-> If you would like to manage the email addresses included in your MX Plan package or in your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-us/web-hosting/){.external} package, please refer to our [MX Plan](https://docs.ovh.com/us/en/emails/) documentation.
+> If you would like to manage the email addresses included in your MX Plan package or in your [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external} package, please refer to our [MX Plan](https://docs.ovh.com/us/en/emails/) documentation.
 >
 
 > [!success]
@@ -28,7 +28,7 @@ Automated emails are messages sent via scripts. Usually using PHP's "mail()" fun
 
 # Requirements
 
-- Have an [OVHcloud web hosting](https://www.ovhcloud.com/en-us/web-hosting/){.external} solution.
+- Have an [OVHcloud web hosting](https://www.ovhcloud.com/en/web-hosting/){.external} solution.
 - Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
 
 ## In practice
@@ -37,7 +37,7 @@ You can monitor and manage automated emails from your OVHcloud Web Hosting plan 
 
 ![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
-The page that opens will enable you to monitor and manage automated emails sent from your [OVHcloud web hosting](https://www.ovhcloud.com/en-us/web-hosting/).
+The page that opens will enable you to monitor and manage automated emails sent from your [OVHcloud web hosting](https://www.ovhcloud.com/en/web-hosting/).
 
 ### Overview of the “Email scripts” section
 
@@ -227,4 +227,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en>.
+Join our community of users on <https://community.ovh.com/en/>.
