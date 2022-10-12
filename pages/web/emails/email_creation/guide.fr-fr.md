@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 02
 ---
 
-**Dernière mise à jour le 07/10/2022**
+**Dernière mise à jour le 30/09/2022**
 
 ## Objectif
 
@@ -177,10 +177,10 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 >>
 > **Pour une configuration en POP**
 >>
->>|Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
->>|---|---|---|---|
->>|Entrant|SSL0.OVH.NET|995|110|
->>|Sortant|SSL0.OVH.NET|465|587|
+>> |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
+>> |---|---|---|---|
+>> |Entrant|SSL0.OVH.NET|995|110|
+>> |Sortant|SSL0.OVH.NET|465|587|
 >>
 
 > [!warning]
