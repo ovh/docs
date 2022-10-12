@@ -6,7 +6,7 @@ section: How to
 order: 7
 ---
 
-**Last updated 14<sup>th</sup> November, 2020**
+**Last updated 11<sup>th</sup> October, 2022**
 
 ## Objective
 This guide helps you to upload your application code to Object Storage and submit an Apache Spark job using the Data Processing CLI.
