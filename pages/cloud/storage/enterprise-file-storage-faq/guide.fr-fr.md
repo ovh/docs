@@ -6,7 +6,7 @@ section: Enterprise File Storage
 order: 7
 ---
 
-**Dernière mise à jour le 21/03/2022**
+**Dernière mise à jour le 12/10/2022**
 
 ## Objectif
 
@@ -90,6 +90,10 @@ Enteprise File Storage est fourni avec un débit garanti de 64Mo/s par TiB et de
 
 Par exemple, lors de la livraison d'un pool de 10 TiB, vous bénéficiez d'une bande passante de 640Mo/s et de 40000 IOPS.
 
+### Est-il possible d'étendre manuellement la capacité d'un service une fois celui-ci livré ?
+
+Une fois livré, la capacité d'un service Enterprise File Storage ne peut être modifiée. Cependant, cette fonctionnalité est en roadmap et sera bientôt disponible. 
+
 ## Snapshots et sauvegardes
 
 ### Comment peut-on restaurer les fichiers d'une précédente version ?
@@ -128,11 +132,16 @@ Vos snapshots sont stockés au même niveau que votre service. Les snapshots son
 
 Il n’existe pas encore de métriques intégrées pour suivre l’utilisation des pools et des volumes. 
 
-## Tarification
+## Gestion du service & Tarification
 
 ### Quel type de tarification est lié au service ?
 
 Enterprise File Storage est un service facturé mensuellement au volume (de 1 à 58 To par paliers de 1 To). Il est également possible, optionnellement, de s'engager sur une durée d'utilisation du service (12, 24 ou 36 mois).
+
+### Comment puis-je résilier mon service ?
+
+Pour résilier votre service Enterprise File Storage, accédez à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis au raccourci `Produits et Services`{.action}. Vous pourrez retrouver la liste de tous vos services et choisir l'action `Résilier`{.action} sur le service concerné.
+
 
 ## Aller plus loin
 
