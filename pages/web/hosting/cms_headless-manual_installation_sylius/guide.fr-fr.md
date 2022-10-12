@@ -6,7 +6,7 @@ section: CMS
 order: 08
 ---
 
-**Dernière mise à jour le 06/10/2022**
+**Dernière mise à jour le 12/10/2022**
 
 ## Objectif
 
@@ -121,14 +121,13 @@ php -r "unlink('composer-setup.php');"
 L'installation de NodeJS est nécessaire pour utiliser de gestionnaire de paquet `npm` _(Node Package Manager)_.
 Vous ne disposez pas de droits adminstrateur sur la serveur, mais vous avez néanmoins la possibilité d'ajouter `npm` en le téléchargeant et en le déployant dans un répertoire dédié.
 
-Il faut d'abord télécharger la dernière version LTS _(long term support)_ de NodeJs à l'aide de la commande `curl` :
+Il faut d'abord télécharger la dernière version LTS _(long term support)_ de la version 12 de NodeJs à l'aide de la commande `curl` :
 ```sh
-curl -sLO https://nodejs.org/dist/latest-v16.x/node-v16.17.1-linux-x64.tar.xz
+curl -sLO https://nodejs.org/dist/latest-v12.x/node-v12.22.12-linux-x64.tar.xz
 ```
 
 >[!warning]
->NodeJS évolue régulièrement. Vous devrez modifier cette URL pour avoir la dernière version de la librairie.
->Il est recommandé de privilégier la version LTS _(long-term support)_.
+>Les version plus récentes de NodeJS posent actuellement des problèmes dans cette configuration pour la suite de l'installation.
 
 On crée un répertoire pour y décompresser le fichier téléchargée :
 ```sh
