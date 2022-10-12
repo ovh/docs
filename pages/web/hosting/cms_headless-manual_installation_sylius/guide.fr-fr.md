@@ -132,7 +132,7 @@ curl -sLO https://nodejs.org/dist/latest-v12.x/node-v12.22.12-linux-x64.tar.xz
 On crée un répertoire pour y décompresser le fichier téléchargée :
 ```sh
 mkdir node
-tar xJf node-v16.17.1-linux-x64.tar.xz --strip-components=1 --no-same-owner -C node
+tar xJf node-v12.22.12-linux-x64.tar.xz --strip-components=1 --no-same-owner -C node
 ```
 
 On peut vérifier le bon fonctionnement de NodeJS en tapant la commande suivante :
