@@ -6,7 +6,7 @@ section: User guides
 order: 0
 ---
 
-**Last updated 10th August 2021**
+**Last updated 12th October 2022**
 
 ## Objective
 
@@ -22,7 +22,7 @@ In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (gr
 
 When you order a new cluster, it is created with a default node pool. Refer to our guide on [creating a cluster](../creating-a-cluster/) for more information.
 
-In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb).
 
 ## Instructions
 
@@ -30,13 +30,11 @@ Access our administration UI for your OVHcloud Managed Kubernetes clusters by cl
 
 ![Access to the administration UI](images/managing_nodes-01.png){.thumbnail}
 
-In this administration UI you have five tabs:
+In this administration UI you have several tabs:
 
 - **Service**: Here you will have a global view of your cluster, with important information like the status, the API URL or the `kubectl` configuration file.
 
 - **Node pools**: You will find here the active node pools of your cluster. You will be able to add, resize or remove node pools.
-
-- **Containers and services** (in development): Soon, you will be able to see all of the containers and services running in your Kubernetes cluster here.
 
 - **APIServer access**: You can add IPv4 ranges in order to restrict access to your cluster’s APIServer.
 
@@ -67,6 +65,11 @@ In the popup window, you can re-size your node pool by adding nodes. You can alt
 In the *Node pools* tab, click on the button `Add a node pool`{.action}.
 
 ![Creating a node pool](images/managing_nodes-06.png){.thumbnail}
+
+Fill the fields to create a new node pool.
+
+> [!warning]
+> The **name of node pool** should be in lowercase. The “_” and “.” characters are not allowed. The node pool name cannot begin with a number.
 
 The subsequent node pool configuration steps are described in [Creating a cluster](../creating-a-cluster/).
 
