@@ -147,7 +147,7 @@ $ ./ovh-spark-submit --projectid yourProjectId --upload ./spark-examples.jar --c
 When your job execution status is complete, by default the ExitCode returned by the CLI Spark-Submit will be zero.
 In some cases you may want the returned exitcode  to be different from 0. If you do this once your job is processed, the CLI will return your code.
 
-By example a job counting a number of error will run successfully and will ends with the exit code 0.
+For example, a job counting a number of errors will run successfully and will end with the exit code 0.
 You may customize the exit code to have the CLI exit with a return code "2" if at least one error is found.
 Then the Spark-Submit CLI will exit with it.
 
