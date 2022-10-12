@@ -22,11 +22,11 @@ In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (gr
 
 When you order a new cluster, it is created with a default node pool. Refer to our guide on [creating a cluster](../creating-a-cluster/) for more information.
 
-In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb).
+In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
 ## Instructions
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb). In the table, select a cluster by clicking on the cluster name.
+Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). In the table, select a cluster by clicking on the cluster name.
 
 ![Access to the administration UI](images/managing_nodes-01.png){.thumbnail}
 
@@ -69,7 +69,7 @@ In the *Node pools* tab, click on the button `Add a node pool`{.action}.
 Fill the fields to create a new node pool.
 
 > [!warning]
-> In the **name of node pool** field, you can’t use “_” or “.” characters as a separator.
+> The **name of node pool** field, should be in lowercase and the “_” or “.” characters are not allowed. Moreover, you cannot start the node pool name with a number.
 
 The subsequent node pool configuration steps are described in [Creating a cluster](../creating-a-cluster/).
 
