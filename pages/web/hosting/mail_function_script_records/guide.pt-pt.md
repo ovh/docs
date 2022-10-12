@@ -3,7 +3,7 @@ title: Alojamento partilhado Seguimento dos emails automatizados
 excerpt: Seguimento dos seus emails enviados a partir de um website num alojamento partilhado OVHcloud
 slug: alojamento_partilhado_seguimento_dos_emails_automatizados
 section: Diagnóstico
-order: 01
+Order: 09
 ---
 
 **Última atualização: 12/10/2022**

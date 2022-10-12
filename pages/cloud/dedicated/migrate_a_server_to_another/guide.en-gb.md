@@ -62,25 +62,25 @@ You can authorise access to the Backup Storage from your new server. This way, y
 
 See our guide on [using Backup Storage on a dedicated server](https://docs.ovh.com/gb/en/dedicated/services-backup-storage/){.external} for more information.
 
-### Migrating a failover IP (only available on OVHcloud and So you Start)
+### Migrating an Additional IP (only available on OVHcloud and So you Start)
 
 > [!warning]
 >
 > - The primary IP address of a server can't be migrated to a new one.
 >
-> - You can migrate a failover IP from a So you Start account to an OVHcloud account. This operation is billed as a new IP creation.
+> - You can migrate an Additional IP from a So you Start account to an OVHcloud account. This operation is billed as a new IP creation.
 >
 > - It is not possible to migrate an IP from an OVHcloud account to a So you Start account.
 >
 
-If the reputation of your IP addresses is important, we strongly recommend using [failover IPs](https://www.ovhcloud.com/en-gb/bare-metal/ip/), as they can be kept if you migrate.
+If the reputation of your IP addresses is important, we strongly recommend using [Additional IPs](https://www.ovhcloud.com/en-gb/bare-metal/ip/), as they can be kept if you migrate.
 
 Once you have these IPs, you simply need to move them to the new server.
-To do this, please refer to our dedicated guide: [Moving a failover IP](https://docs.ovh.com/gb/en/dedicated/ip-fo-move/).
+To do this, please refer to our dedicated guide: [Moving an Additional IP](https://docs.ovh.com/gb/en/dedicated/ip-fo-move/).
 
 > [!alert]
 >
-> Deleting the original server, on which one or more options have been ordered (Backup Storage, failover IP), will permanently delete these options.
+> Deleting the original server, on which one or more options have been ordered (Backup Storage, Additional IP), will permanently delete these options.
 >
 > It is therefore necessary to make all the changes before deleting the service.
 >

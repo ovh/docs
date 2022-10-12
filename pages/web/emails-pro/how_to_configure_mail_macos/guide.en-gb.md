@@ -73,14 +73,14 @@ For an **IMAP** configuration, the values are:
 |Server type|Server name|Encryption method|Port|
 |---|---|---|---|
 |Incoming (IMAP)|pro<b>?</b>.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|993|
-|Outgoing (SMTP)|pro<b>?</b>.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|465|
+|Outgoing (SMTP)|pro<b>?</b>.mail.ovh.net (Replace "**?**" with your server number.)|STARTTLS|587|
 
 For **POP** configuration, the values are:
 
 |Server type|Server name|Encryption method|Port|
 |---|---|---|---|
 |Incoming (POP)|pro<b>?</b>.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|995|
-|Outgoing (SMTP)|pro<b>?</b>.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|465|
+|Outgoing (SMTP)|pro<b>?</b>.mail.ovh.net (Replace "**?**" with your server number.)|STARTTLS|587|
 
 > [!primary]
 >

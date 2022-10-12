@@ -80,7 +80,7 @@ Haga clic en el tipo de producto que desea dar de baja en la siguiente lista de 
 
 #### Servidor dedicado <a name="dedicated"></a>
 
-Para dar de baja su [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para dar de baja su [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 
@@ -88,7 +88,7 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 #### VPS <a name="vps"></a>
 
-Para dar de baja su servidor [VPS](https://www.ovhcloud.com/es/vps/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para dar de baja su servidor [VPS](https://www.ovhcloud.com/es/vps/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 
@@ -100,7 +100,7 @@ Para dar de baja su servicio [Managed bare metal](https://www.ovhcloud.com/es/ma
 
 #### Servidor NAS-HA <a name="nas"></a>
 
-Para dar de baja su [servidor NAS-HA](https://www.ovh.com/world/es/nas/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para dar de baja su [servidor NAS-HA](https://www.ovh.com/world/es/nas/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 
@@ -108,7 +108,7 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 #### Load Balancer <a name="iplb"></a>
 
-Para dar de baja el servicio [Load Balancer](https://www.ovh.com/world/es/soluciones/load-balancer/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para dar de baja el servicio [Load Balancer](https://www.ovh.com/world/es/soluciones/load-balancer/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 
@@ -116,7 +116,7 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 #### Licencias <a name="licences"></a>
 
-Para dar de baja una licencia contratada con OVHcloud, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para dar de baja una licencia contratada con OVHcloud, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} a la derecha de la licencia que desea dar de baja y, seguidamente, en `Dar de baja`{.action}.
 
@@ -130,7 +130,7 @@ Para dar de baja su servicio [Hosted Private Cloud powered by VMware](https://ww
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
-Para dar de baja su servicio [Veeam Cloud Connect](https://www.ovhcloud.com/es/storage-solutions/veeam-cloud-connect/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para dar de baja su servicio [Veeam Cloud Connect](https://www.ovhcloud.com/es/storage-solutions/veeam-cloud-connect/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 
@@ -155,7 +155,7 @@ También puede [consultar su consumo actual](https://docs.ovh.com/us/es/public-c
 > Una vez haya dado de baja el servicio y finalice la suscripción, su dominio genérico (.com, .org). net, etc.) se queda "reservado" durante el período denominado "de *gracia*" (5 días) y después durante el de "*redención*" (35 a 40 días adicionales), lo que significa que solo usted podrá renovarlo durante estos períodos.
 >
 
-Para dar de baja su [dominio](https://www.ovhcloud.com/es/domains/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para dar de baja su [dominio](https://www.ovhcloud.com/es/domains/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 
@@ -163,7 +163,7 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 #### Alojamiento web <a name="hosting"></a>
 
-Para dar de baja el servicio [Alojamiento web](https://www.ovhcloud.com/es/web-hosting/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para dar de baja el servicio [Alojamiento web](https://www.ovhcloud.com/es/web-hosting/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 
@@ -177,7 +177,7 @@ No es posible dar de baja las ofertas [SSL sectigo](https://www.ovhcloud.com/es/
 
 Una solución MX Plan no está sujeta a una suscripción periódica. Por lo tanto, no puede dar de baja el servicio, pero, si así lo desea, puede eliminar el servicio.
 
-Para eliminar la solución [MX Plan](https://docs.ovh.com/us/es/emails/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para eliminar la solución [MX Plan](https://docs.ovh.com/us/es/emails/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} a la derecha del servicio que desea dar de baja y, seguidamente, en `Eliminar inmediatamente el MX Plan`{.action}.
 
@@ -198,7 +198,7 @@ Para dar de baja su servicio [Hosted Exchange](https://www.ovhcloud.com/es/email
 
 #### SSL Gateway <a name="ssl_gateway"></a>
 
-Para dar de baja su servicio [SSL Gateway](https://www.ovh.com/world/es/ssl-gateway/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para dar de baja su servicio [SSL Gateway](https://www.ovh.com/world/es/ssl-gateway/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 
@@ -211,7 +211,7 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 > Puede anular una solicitud de baja hasta 24 horas antes de la fecha de finalización de la suscripción.
 >
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} a la derecha del servicio objeto de la solicitud de baja y, seguidamente, en `Cancelar la baja del servicio.`{.action} 
 

@@ -48,7 +48,7 @@ Ti consigliamo di leggere queste guide e concentrarti sulle operazioni che vuoi 
 
 ### Accedere alle impostazioni dei servizi
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul nome associato al tuo identificativo cliente nella barra dei menu in alto a destra e seleziona `Gestione dei servizi`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul nome associato al tuo identificativo cliente nella barra dei menu in alto a destra e seleziona `Prodotti e servizi`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 

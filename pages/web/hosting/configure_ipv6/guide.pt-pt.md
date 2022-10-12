@@ -2,7 +2,8 @@
 title: 'Configure o IPv6 para o seu website'
 slug: configurar-ipv6-para-o-site
 excerpt: Saiba como tornar o seu website compatível com IPv6
-section: 'Configuração do alojamento'
+section: Configuração do alojamento
+order: 06
 ---
 
 > [!primary]

@@ -3,14 +3,14 @@ title: 'Logowanie do bazy danych Twojego serwera baz danych'
 slug: polaczenie-bazy-danych-serwer-bdd
 excerpt: 'Dowiedz się, jak się zalogować do bazy danych'
 section: Konfiguracja
-order: 3
+order: 03
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 29-06-2022**
+**Ostatnia aktualizacja z dnia 22-09-2022**
 
 ## Wprowadzenie
 
@@ -68,6 +68,11 @@ Jeśli połączenie zakończy się pomyślnie, wyświetli się następna strona 
 > <br> - błędu #2005, zalecamy sprawdzenie nazwy serwera i jego funkcjonalności.
 
 #### Logowanie do bazy danych poza Panelem klienta
+
+> [!warning]
+>
+> Jeśli korzystasz z oferty "Cloud DB"/"Prywatny SQL", pamiętaj, aby zezwolić na IP w przewodniku dotyczącym [konfiguracji serwera bazy danych](https://docs.ovh.com/pl/clouddb/konfiguracja-optymalizacja-serwera-bazy-danych/).
+>
 
 Aby zalogować się do bazy danych, upewnij się, że pobrałeś następujące informacje:
 
@@ -179,5 +184,9 @@ Jesteś teraz zalogowany do bazy danych:
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
 

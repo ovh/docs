@@ -30,7 +30,7 @@ Sur la page de résumé de votre service Load Balancer, vous trouverez les menus
 |Statut|Résumé de votre Load Balancer avec le nom du service, les frontends, les fermes fonctionnelles et les serveurs ajoutés|
 |Utilisation|Un récapitulatif de l'utilisation de votre LoadBalancer|
 |Graphiques|Des graphiques présentant le nombre de connexions simultanées ou le nombre de requêtes par minute|
-|Informations|Votre IPv4 et les IP fail-over liées, ainsi que le nombre d'IPv4 de sortie (obtenez des détails en cliquant sur le bouton `...`{.action})|
+|Informations|Votre IPv4 et les Additional IP liées, ainsi que le nombre d'IPv4 de sortie (obtenez des détails en cliquant sur le bouton `...`{.action})|
 |Configuration|Personnalisez ici le nom de votre offre. Retrouvez aussi le(s) cipher(s), qui sont personnalisables, ainsi que le datacenter où se situe votre Load Balancer|
 |Abonnement|Vous trouverez ici les détails administratifs de votre offre|
 
@@ -58,7 +58,7 @@ Vous avez également accès à des paramètres avancés :
 
 |Élément|Fonction|
 |---|---|
-|Dedicated IP failover|La liste des IP fail-over des serveurs distants|
+|Dedicated Additional IP|La liste des Additional IP des serveurs distants|
 |Restreindre l'accès à des IPs|Liste permettant de restreindre l'accès distant au Load Balancer, uniquement en IPv4|
 |Redirection HTTP|Ajout d'une URL de redirection HTTP|
 |Entête HTTP|Ajout d'un en-tête HTTP|

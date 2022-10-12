@@ -29,10 +29,10 @@ Sometimes it may be useful to know the status of your OVHcloud Load Balancer.
 The different statuses of the OVHcloud Load Balancer can be `running`{.action} (Active), `reload`{.action} (Refresh in progress), `unknown`{.action} (Not yet started), or `dead`{.action} (inactive).
 
 
-## How to add a failover IP to the OVHcloud Load Balancer?
-A failover IP is an additional IP in which can be joined with your primary IP. The failover IP can be switched from one server to another in seconds.
+## How to add an Additional IP to the OVHcloud Load Balancer?
+An Additional IP is an additional IP in which can be joined with your primary IP. The Additional IP can be switched from one server to another in seconds.
 
-- To add a failover IP to an OVHcloud Load Balancer service :
+- To add an Additional IP to an OVHcloud Load Balancer service :
 
 > [!api]
 >
@@ -47,7 +47,7 @@ A failover IP is an additional IP in which can be joined with your primary IP. T
 > 
 
 
-## How to list the failover IPs routed to the OVHcloud Load Balancer?
+## How to list the Additional IPs routed to the OVHcloud Load Balancer?
 
 > [!api]
 >

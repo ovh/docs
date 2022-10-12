@@ -3,7 +3,7 @@ title: 'Das kostenlose Start 10M Hosting aktivieren'
 slug: start10m-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihr Start 10M Hosting aktivieren'
 section: 'Erste Schritte'
-order: 02
+order: 01
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 02
 
 **Letzte Aktualisierung am 15.09.2022**
 
-## Ziel
+## Ziel 
 
 Mit dem [Start 10M](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} bietet Ihnen OVHcloud ein Webhosting mit 10 MB und einen E-Mail-Account mit 5 GB Speicherplatz.
 
@@ -25,7 +25,7 @@ In dieser Anleitung erfahren Sie, wie Sie dieses Angebot für Ihren [Domainnamen
 > Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank wie WordPress, Joomla!, PrestaShop, Drupal usw. benötigt, bestellen Sie direkt über unsere Website oder Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eines unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/){.external}.
 >
 
-**Anleitung erklärt, wie Sie Ihr kostenloses "Start 10M" Hosting aktivieren**
+**Diese Anleitung erklärt, wie Sie Ihr kostenloses "Start 10M" Hosting aktivieren.**
 
 ## Voraussetzungen
 

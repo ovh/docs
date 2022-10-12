@@ -1,6 +1,6 @@
 ---
-title:  Migrar um IP Failover
-excerpt: Saiba como migrar um IP Failover a partir da Área de Cliente ou através das API OVHcloud
+title:  Migrar um Additional IP
+excerpt: Saiba como migrar um Additional IP a partir da Área de Cliente ou através das API OVHcloud
 slug: ip-fo-move
 section: Redes & IP
 order: 7
@@ -10,25 +10,30 @@ order: 7
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em “Contribuir” nesta página.
 >
 
-**Última atualização: 26/07/2022**
+**Última atualização: 06/10/2022**
+
+> [!primary]
+>
+> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](https://www.ovhcloud.com/pt/network/additional-ip/). Isto não tem qualquer impacto nas suas funcionalidades ou no funcionamento dos seus serviços.
+>
 
 ## Objetivo
 
-Os IP Failover podem ser migrados entre os serviços que utiliza. O interesse é não perder a sua reputação, o seu referenciamento e melhorar a continuidade do serviço das suas aplicações e sistemas.
+Os Additional IP podem ser migrados entre os serviços que utiliza. O interesse é não perder a sua reputação, o seu referenciamento e melhorar a continuidade do serviço das suas aplicações e sistemas.
 
 Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra em menos de um minuto, praticamente sem qualquer interrupção para os seus utilizadores. Pode ser utilizada durante as migrações de serviços (deslocação dos projetos do ambiente de desenvolvimento para o de produção, por exemplo) ou aquando da migração para um servidor de recurso em caso de falha.
 
 > [!primary]
-> Um IP Failover não pode ser migrado de uma zona para outra. Por exemplo, um IP situado no datacenter SBG poderá ser migrado para GRA ou RBX mas não poderá ser migrado para BHS.
+> Um Additional IP não pode ser migrado de uma zona para outra. Por exemplo, um IP situado no datacenter SBG poderá ser migrado para GRA ou RBX mas não poderá ser migrado para BHS.
 >
 > A migração só funciona para blocos inteiros, não é possível migrar IPs individuais dentro de um bloco.
 
-**Saiba como migrar um IP Failover a partir da Área de Cliente OVHcloud ou através das API OVHcloud**
+**Saiba como migrar um Additional IP a partir da Área de Cliente OVHcloud ou através das API OVHcloud**
 
 ## Requisitos
 
 - Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} na Área de Cliente OVHcloud.
-- Dispor de um [endereço IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/).
+- Dispor de um [endereço Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 > [!warning]
@@ -38,10 +43,10 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 >
 
 > [!warning]
-> Se o endereço IP Fail Over, ou um dos endereços IP do bloco, tem um MAC virtual afetado, o servidor alvo deve suportar a funcionalidade dos MAC virtuais.
+> Se o endereço Additional IP, ou um dos endereços IP do bloco, tem um MAC virtual afetado, o servidor alvo deve suportar a funcionalidade dos MAC virtuais.
 > Consulte [este guia](https://docs.ovh.com/pt/dedicated/network-support-virtual-mac/) para saber mais.
 >
-> Caso contrário, os MAC virtuais devem ser eliminados dos IP Failover antes da deslocação.
+> Caso contrário, os MAC virtuais devem ser eliminados dos Additional IP antes da deslocação.
 
 ## Instruções
 
@@ -54,9 +59,9 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no menu `Bare Metal Cloud`{.action} e abra a secção `IP`{.action}.
 
-O menu pendente "Service" permite-lhe selecionar apenas os endereços IP Failover.
+O menu pendente "Service" permite-lhe selecionar apenas os endereços Additional IP.
 
-Clique no botão `...`{.action} à direita do endereço IP a migrar e, a seguir, em `Migrar o IP failover`{.action}.
+Clique no botão `...`{.action} à direita do endereço IP a migrar e, a seguir, em `Migrar o Additional IP`{.action}.
 
 ![Área de Cliente](images/manager02.png){.thumbnail}
 
@@ -79,7 +84,7 @@ Numa primeira fase, é preferível verificar se o endereço IP pode ser migrado.
 >
 
 - `serviceName`: a referência do servidor dedicado de destino
-- `ip`: o endereço IP Fail Over a migrar
+- `ip`: o endereço Additional IP a migrar
 
 Para migrar o endereço IP, utilize a seguinte chamada:
 
@@ -89,7 +94,7 @@ Para migrar o endereço IP, utilize a seguinte chamada:
 >
 
 - `serviceName`: a referência do servidor dedicado de destino
-- `ip`: o endereço IP Fail Over a migrar
+- `ip`: o endereço Additional IP a migrar
 
 ## Quer saber mais?
 

@@ -14,7 +14,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer votre mac
 ## Prérequis
 
 - Avoir un serveur dédié avec un hyperviseur installé, par exemple [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/){.external}, [Proxmox](https://www.proxmox.com/en/proxmox-ve){.external}, etc.
-- Avoir au moins une adresse [IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/) connectée au serveur 
+- Avoir au moins une adresse [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/) connectée au serveur 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## Recommandations pour votre machine virtuelle pfSense
@@ -36,7 +36,7 @@ Si vous rencontrez des difficultés lors de l'exécution de ces actions, merci d
 
 Pour la configuration réseau des machines virtuelles pfSense, nous utiliserons les valeurs suivantes, qui doivent être remplacées par vos propres valeurs :
 
-- FAILOVER_IP = L'adresse de votre IP fail-over
+- ADDITIONAL_IP = L'adresse de votre Additional IP
 - Adresse MAC Virtuelle = L'adresse MAC créée dans votre espace client OVHcloud
 - GATEWAY_IP = L'adresse de votre passerelle par défaut
 
@@ -44,11 +44,11 @@ Pour la configuration réseau des machines virtuelles pfSense, nous utiliserons 
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et ouvrez le menu `IP`{.action}.
 
-Le menu déroulant `Service` vous permet de filtrer les IPs fail-over. 
+Le menu déroulant `Service` vous permet de filtrer les IPs Additional IP. 
 
 ![Ajouter une MAC virtuelle (1)](images/manageIPs.png){.thumbnail} 
 
-Cliquez sur les `...`{.action} à côté de l'IP fail-over de votre choix puis sur `Ajouter une MAC virtuelle`{.action}.
+Cliquez sur les `...`{.action} à côté de l'Additional IP de votre choix puis sur `Ajouter une MAC virtuelle`{.action}.
 
 ![Ajouter une MAC virtuelle (1)](images/addvmac.png){.thumbnail}
 
@@ -175,7 +175,7 @@ A ce stade, la VM pfSense n'a pas d'IP publique. Cliquez sur l'icône de menu en
 
 ![Configuration pfSense 4](images/pfsense-vm-10_1.png){.thumbnail}
 
-Assurez-vous que les paramètres correspondent à ceux affichés dans les captures d'écran ci-dessous et entrez votre `IP fail-over`. La `passerelle IPv4 Upstream` (en amont) sera configurée ultérieurement.
+Assurez-vous que les paramètres correspondent à ceux affichés dans les captures d'écran ci-dessous et entrez votre `Additional IP`. La `passerelle IPv4 Upstream` (en amont) sera configurée ultérieurement.
 
 ![Configuration de pfSense 5](images/pfsense-vm-10_2.png){.thumbnail}
 

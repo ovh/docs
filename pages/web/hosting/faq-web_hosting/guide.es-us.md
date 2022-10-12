@@ -3,6 +3,7 @@ title: FAQ Web Hosting
 excerpt: Encuentre las respuestas a las preguntas más frecuentes sobre alojamiento web
 slug: faq-web-hosting
 section: Primeros pasos
+order: 05
 ---
 
 > [!primary]

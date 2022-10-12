@@ -5,11 +5,11 @@ excerpt: 'Find out how to use the secure interface to confirm sensitive operatio
 section: 'OVHcloud services and options'
 ---
 
-**Last updated 10th June 2022**
+**Last updated 12th October 2022**
 
 ## Objective
 
-Through the secure interface, you can validate sensitive operations (such as changing passwords, adding a user, etc.) performed by users or third-parties on your Private Cloud Healthcare (HDS) or PCI DSS.
+Through the secure interface, you can validate sensitive operations (such as changing passwords, adding a user, etc.) performed by users or third-parties on your Hosted Private Cloud Healthcare (HDS) or PCI DSS.
 
 **Find out how to use the secure interface to validate sensitive operations.**
 
@@ -92,7 +92,7 @@ A token will then be sent to users with the [token validator](./#confirm-an-oper
 
 ### Reset a password
 
-This procedure is only available to users with the **token validator** permission.
+This procedure is only available to users with the **token validator** permission. A user without this permission will get a 400 error. A user without this permission will get a 400 error.
 
 > [!primary]
 >

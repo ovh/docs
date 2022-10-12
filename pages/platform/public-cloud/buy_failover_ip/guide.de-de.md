@@ -1,7 +1,7 @@
 ---
-title: 'Eine Failover-IP erwerben'
+title: 'Eine Additional IP erwerben'
 slug: eine-failover-ip-erwerben
-excerpt: 'Erfahren Sie hier, wie Sie für Ihre Instanzen Failover-IP-Adressen bestellen können'
+excerpt: 'Erfahren Sie hier, wie Sie für Ihre Instanzen Additional IP-Adressen bestellen können'
 section: 'Netzwerk und IP'
 ---
 
@@ -9,20 +9,25 @@ section: 'Netzwerk und IP'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 21.12.2021**
+**Letzte Aktualisierung am 06.10.2022**
+
+> [!primary]
+>
+> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Dies hat keine weiteren Auswirkungen auf dessen Eigenschaften oder die Funktionalität Ihrer Dienstleistungen.
+>
 
 ## Ziel
 
-Aus verschiedenen Gründen kann es sein, dass Sie eine Failover-IP-Adresse (IPFO) auf Ihren Instanzen konfigurieren müssen:
+Aus verschiedenen Gründen kann es sein, dass Sie eine Additional IP-Adresse auf Ihren Instanzen konfigurieren müssen:
 
 - Sie haben auf Ihrer Instanz mehrere Websites.
 - Sie hosten internationale Projekte.
 
-Um diesen Anforderungen zu entsprechen, können Sie eine Failover-IP-Adresse für Ihre Public Cloud Instanzen erwerben.
+Um diesen Anforderungen zu entsprechen, können Sie eine Additional IP-Adresse für Ihre Public Cloud Instanzen erwerben.
 
-Diese IPFOs können nur für Instanzen desselben Projekts migriert werden.
+Diese Additional IPs können nur für Instanzen desselben Projekts migriert werden.
 
-**Diese Anleitung erklärt, wie Sie eine Failover-IP-Adresse für Ihr OVHcloud Public Cloud Projekt erwerben können.**
+**Diese Anleitung erklärt, wie Sie eine Additional IP-Adresse für Ihr OVHcloud Public Cloud Projekt erwerben können.**
 
 
 ## Voraussetzungen
@@ -33,9 +38,9 @@ Diese IPFOs können nur für Instanzen desselben Projekts migriert werden.
 ## In der praktischen Anwendung
 
 Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
-Klicken Sie im Menü auf der linken Seite im Abschnitt `Network` auf `Failover IP`{.action}.
+Klicken Sie im Menü auf der linken Seite im Abschnitt `Network` auf `Additional IP`{.action}.
 
-Klicken Sie dann auf die Schaltfläche `Aktionen`{.action} und wählen Sie `Failover-IPs kaufen`{.action}.
+Klicken Sie dann auf die Schaltfläche `Aktionen`{.action} und wählen Sie `Additional IPs kaufen`{.action}.
 
 ![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
@@ -45,7 +50,7 @@ Es erscheint diese Seite:
 
 Geben Sie die folgenden Informationen an:
 
-- Die Anzahl der gewünschten IPFOs (IP-Blöcke sind zur Zeit nicht verfügbar).
+- Die Anzahl der gewünschten Additional IPs (IP-Blöcke sind zur Zeit nicht verfügbar).
 - Die Instanz, auf der die IPs geroutet sind.
 - Die Geolokalisierung der IPs.
 
@@ -83,6 +88,6 @@ Weitere Informationen finden Sie in unserer Anleitung zur [Verwaltung der OVHclo
 
 ## Weiterführende Informationen
 
-[Eine Failover-IP konfigurieren](../persistente_konfiguration_der_failover-ip/)
+[Eine Additional IP konfigurieren](../persistente_konfiguration_der_failover-ip/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

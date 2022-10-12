@@ -3,7 +3,7 @@ title: Getting started with a Web Hosting plan
 excerpt: Building your website and setting up your email addresses 
 slug: get_started_with_a_web_hosting_package
 section: Getting started
-order: 1
+order: 02
 ---
 
 **Last updated 5th May 2020**
@@ -47,7 +47,7 @@ Once you have clearly defined your project, you just have to build it on your We
 
 This solution uses OVHcloud 1-click modules, a tool you can use to install a CMS quickly and easily. OVHcloud sets up your website, and provides you with your admin credentials.
 
-To ensure that the OVHcloud module's installation is successful, please ensure that its installation directory is empty (which should be the case if you have not connected to your storage space). To install a 1-click module, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Web Hosting`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `1-click modules`{.action} tab, click the `Add a module`{.action} button.
+To ensure that the OVHcloud module's installation is successful, please ensure that its installation directory is empty (which should be the case if you have not connected to your storage space). To install a 1-click module, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `1-click modules`{.action} tab, click the `Add a module`{.action} button.
 
 ![Access to 1-click modules](images/access_to_the_1_click_modules_section.png){/thumbnail}
 
@@ -66,7 +66,7 @@ To ensure that the OVHcloud module installation is successful, please check that
 - the module’s installation directory is empty (which should be the case if you have not connected to your storage space)
 - you have already created a database in your Web Hosting plan (go to the `Databases`{.action} tab, then `Create a database`{.action} to do this)
 
-To create a database, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Web Hosting`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
+To create a database, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
 
 ![Access to 1-click modules](images/create_a_database.png){/thumbnail}
 
@@ -108,7 +108,7 @@ There are several OVHcloud DNS records. We will focus on two particular records 
 
 - **The A record, for the website**
 
-To check the A record that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Web Hosting`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `General information`{.action} tab, copy the IP address that appears next to "IPv4".
+To check the A record that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `General information`{.action} tab, copy the IP address that appears next to "IPv4".
 
 ![Edit the A record](images/know_the_OVH_A_records.png){/thumbnail}
 

@@ -4,7 +4,7 @@ title: 'Configuratie van het .ovhconfig-bestand op uw webhosting '
 slug: ovhconfig-bestand-bewerken
 excerpt: 'Ontdek hoe u het .ovhconfig-bestand kunt bewerken'
 section: 'Configuratie van het webhostingplan'
-order: 4
+order: 03
 ---
 
 **Laatste update 03-01-2019**

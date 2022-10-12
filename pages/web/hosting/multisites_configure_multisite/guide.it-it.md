@@ -3,7 +3,7 @@ title: 'Ospitare più siti su uno stesso hosting'
 slug: configurare-un-multisito-su-un-hosting-web
 excerpt: 'Come condividere il tuo hosting Web tra più siti Internet'
 section: Per iniziare
-order: 1
+order: 03
 ---
 
 > [!primary]

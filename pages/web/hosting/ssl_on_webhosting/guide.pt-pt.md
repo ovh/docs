@@ -3,7 +3,7 @@ title: 'Gerir um certificado SSL num alojamento web'
 slug: os-certificados-ssl-nos-alojamentos-web
 excerpt: 'Saiba como gerir um certificado SSL no alojamento web da OVHcloud'
 section: SSL
-order: 1
+order: 01
 ---
 
 > [!primary]

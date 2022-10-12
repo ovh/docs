@@ -98,7 +98,7 @@ Pour chaque utilisateur vous trouverez différentes informations sur l'utilisate
 - le numéro de téléphone (facultatif).
 - le droit *token validator*, permettant de valider des opérations sensibles.
 - Le droit *IP*, permettant d'accèder au plugin OVH network.
-- Le droit *Ip Failover*, permettant de gérer les IPs Failover relié à votre Managed Bare Metal.
+- Le droit *Additional IP*, permettant de gérer les Additional IPs relié à votre Managed Bare Metal.
 - le statut (Diagnostic), permettant de voir si votre utilisateur est bien créé.
 
 En cliquant sur le bouton `...`{.action} à droite du tableau, plusieurs choix se présentent à vous :

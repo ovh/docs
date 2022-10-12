@@ -3,7 +3,7 @@ title: Premiers pas avec un hébergement web
 slug: premiers-pas-avec-hebergement-web
 excerpt: Découvrez comment bien débuter avec un hébergement web
 section: Premiers pas
-order: 1
+order: 02
 ---
 
 **Dernière mise à jour le 24/11/2017**

@@ -170,7 +170,7 @@ Next, apply the configuration to the zone concerned, and the rule will begin to 
 
 This feature helped propel the expansion of the web at its very early stages, by exposing several websites behind a single IP address using the “host” field of HTTP headers.
 
-For example, if your infrastructure is made up of a VPS for your website, an OVH Load Balancer to ensure SSL/TLS termination, and redirection to a maintenance page with a backup server in the farms, you would originally have needed one failover IP per website, routed to your OVH Load Balancer, and one front-end per IP.
+For example, if your infrastructure is made up of a VPS for your website, an OVH Load Balancer to ensure SSL/TLS termination, and redirection to a maintenance page with a backup server in the farms, you would originally have needed one Additional IP per website, routed to your OVH Load Balancer, and one front-end per IP.
 
 With routes, you can share the same front-end, and choose the server farm dynamically, with the “host” field.
 
@@ -206,9 +206,9 @@ And on this route, we will attach a rule:
 Finally, apply the configuration.
 
 
-### Reserve a failover IP to a particular website.
+### Reserve an Additional IP to a particular website.
 
-If you are hosting a website on a VPS, you may want to dedicate an IP address to a specific customer. You can easily make the IP available by routing it to your OVH Load Balancer service, then configuring a dedicated front-end attached to this failover IP address, and having the customer’s target VPS set as a defaultFarmId.
+If you are hosting a website on a VPS, you may want to dedicate an IP address to a specific customer. You can easily make the IP available by routing it to your OVH Load Balancer service, then configuring a dedicated front-end attached to this Additional IP address, and having the customer’s target VPS set as a defaultFarmId.
 
 But what will happen if another customer detects this, and configures their domain to point to the premium customer’s IP address? By default, this will work, and its website will be routed to the other VPS. If there is an SSL/TLS certificate, it will still work as all of the certificates are automatically available for all of the front-ends.
 

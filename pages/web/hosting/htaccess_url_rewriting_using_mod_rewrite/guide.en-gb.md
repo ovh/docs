@@ -2,8 +2,8 @@
 title: 'URL rewriting using mod_rewrite'
 excerpt: Find out how to use .htaccess to rewrite URLs
 slug: htaccess_url_rewriting_using_mod_rewrite
-legacy_guide_number: g1971
-section: 'Redirection and authentication'
+section: Rewriting and authentication
+order: 03
 ---
 
 

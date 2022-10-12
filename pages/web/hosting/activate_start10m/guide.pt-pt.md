@@ -2,8 +2,8 @@
 title: 'Ativar o alojamento gratuito Start 10M'
 slug: ativar-start10m
 excerpt: 'Saiba como ativar o alojamento Start 10M'
-section: Introdução
-order: 02
+section: Primeiros passos
+order: 01
 ---
 
 > [!primary]

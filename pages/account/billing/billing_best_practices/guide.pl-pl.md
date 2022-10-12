@@ -87,7 +87,7 @@ Będziesz informowany o etapach dostawy i będziesz wiedzieć, czy konieczne są
 
 Jeśli chcesz przestać korzystać z którejkolwiek z Twoich usług, możesz je anulować, przełączyć na tryb ręczny lub usunąć natychmiast w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Najpierw kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie `Zarządzanie usługami`{.action}. Po prawej stronie ekranu kliknij przycisk `...`{.action} odnoszący się do usługi, na którą chcesz działać, po czym kliknij jeden z poniższych przycisków:
+Najpierw kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie `Produkty i usługi`{.action}. Po prawej stronie ekranu kliknij przycisk `...`{.action} odnoszący się do usługi, na którą chcesz działać, po czym kliknij jeden z poniższych przycisków:
 
 - `Skonfiguruj odnowienie`{.action}: na następnym ekranie będziesz mógł przenieść `Sposób odnowienia` usługi do `Recznie`. Następnie kliknij `Dalej`{.action} i `Zatwierdź`{.action}. Przed wygaśnięciem usługi otrzymasz kilka powiadomień e-mailem. Jeśli nie odnowiesz usługi, zostanie ona **definitywnie** usunięta.
 - `Zrezygnuj`{.action}: w kolejnym oknie podaj powody rezygnacji, a następnie kliknij `Zatwierdź`{.action}. W dniu wygaśnięcia Twojej usługi zostanie ona **definitywnie** usunięta.

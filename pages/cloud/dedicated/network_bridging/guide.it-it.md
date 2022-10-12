@@ -5,10 +5,15 @@ excerpt: Come configurare l'accesso a Internet delle macchine virtuali utilizzan
 section: 'Rete e IP'
 ---
 
-**Ultimo aggiornamento: 21/12/2020**
-
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 06/10/2022**
+
+> [!primary]
+>
+> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](https://www.ovhcloud.com/it/network/additional-ip/). e non ha alcun impatto sulle funzionalità o sul funzionamento dei tuoi servizi.
 >
 
 ## Obiettivo
@@ -22,7 +27,7 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 ## Prerequisiti
 
 - Disporre di un server dedicato con un hypervisor installato (ad esempio [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox)
-- Disporre di almeno un indirizzo [IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/) connesso al server
+- Disporre di almeno un indirizzo [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/) connesso al server
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]
@@ -41,14 +46,14 @@ Gli step di base sono sempre gli stessi, indipendentemente dai sistemi utilizzat
 Per questo esempio, nei nostri esempi di codice utilizzeremo i seguenti valori: che dovranno essere sostituiti dai tuoi valori:
 
 - "SERVER_IP": indirizzo IP principale del tuo server
-- "FAILOVER_IP": il tuo indirizzo IP Failover
+- "ADDITIONAL_IP": il tuo indirizzo Additional IP
 - "GATEWAY_IP": l'indirizzo del vostro gateway predefinito.
 
 ### Assegna un indirizzo MAC virtuale
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul menu `Bare Metal Cloud`{.action} e apri il menu `IP`{.action}.
 
-Il menu a tendina “Service” ti permette di selezionare solo gli IP Failover.
+Il menu a tendina “Service” ti permette di selezionare solo gli Additional IP.
 
 ![manage IPs](images/manageIPs.png){.thumbnail}
 
@@ -119,9 +124,9 @@ Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
-    address FAILOVER_IP
+    address ADDITIONAL_IP
     netmask 255.255.255.255
-    broadcast FAILOVER_IP
+    broadcast ADDITIONAL_IP
     post-up route add GATEWAY_IP dev eth0
     post-up route add default gw GATEWAY_IP
     pre-down route del GATEWAY_IP dev eth0
@@ -134,9 +139,9 @@ iface eth0 inet static
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
-    address FAILOVER_IP
+    address ADDITIONAL_IP
     netmask 255.255.255.255
-    broadcast FAILOVER_IP
+    broadcast ADDITIONAL_IP
     post-up ip route add GATEWAY_IP dev eth0
     post-up ip route add default via GATEWAY_IP
     pre-down ip route del GATEWAY_IP dev eth0
@@ -164,7 +169,7 @@ IPV6INIT=no
 PEERDNS=yes
 TYPE=Ethernet
 NETMASK=255.255.255.255
-IPADDR=FAILOVER_IP
+IPADDR=ADDITIONAL_IP
 GATEWAY=GATEWAY_IP
 ARP=yes
 HWADDR=MY:VI:RT:UA:LM:AC
@@ -199,7 +204,7 @@ IPV6INIT=no
 PEERDNS=yes
 TYPE=Ethernet
 NETMASK=255.255.255.255
-IPADDR=FAILOVER_IP
+IPADDR=ADDITIONAL_IP
 GATEWAY=GATEWAY_IP
 ARP=yes
 HWADDR=MY:VI:RT:UA:LM:AC
@@ -230,7 +235,7 @@ Dopo aver salvato e chiuso il file, riavvia la tua rete o la tua macchina virtua
 Apri un terminale sulla tua macchina virtuale. Una volta connesso, apri il file di configurazione di rete della macchina virtuale, che si trova nella cartella `/etc/rc.conf`. Modifica il file in modo che rispecchi la configurazione qui sotto. In questo esempio, il nome dell'interfaccia è "em0". Se necessario, è possibile modificarlo.
 
 ```console
-ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
+ifconfig_em0="inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP"
 static_route="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
 route_net2="default GATEWAY_IP"
@@ -259,7 +264,7 @@ network:
     ethernets:
         (nome dell'interfaccia):
             addresses:
-                - FAILOVER_IP/32
+                - ADDITIONAL_IP/32
             nameservers:
                 addresses:
                     - 213.186.33.99
@@ -303,9 +308,9 @@ Seleziona l'adattatore con l'indirizzo IP del server e spunta `Autorizza il sist
 >Questo step è necessario una sola volta per un server Hyper-V. Per tutte le macchine virtuali è necessario un interruttore virtuale per collegare le schede di rete virtuali della macchina virtuale alla scheda fisica del server.
 > 
 
-In seguito, seleziona la macchina virtuale alla quale vuoi aggiungere l'IP Failover. Utilizza il pannello di configurazione Hyper-V per modificare le impostazioni della macchina virtuale e chiudilo.
+In seguito, seleziona la macchina virtuale alla quale vuoi aggiungere l'Additional IP. Utilizza il pannello di configurazione Hyper-V per modificare le impostazioni della macchina virtuale e chiudilo.
 
-In seguito, utilizza la scheda di rete e clicca su `Advanced Features`{.action}, definisci l'indirizzo MAC su `Static`{.action} e inserisci l'indirizzo MAC virtuale per l'indirizzo IP Failover. Una volta inserite queste impostazioni, clicca su `OK`{.action} per applicare le modifiche.
+In seguito, utilizza la scheda di rete e clicca su `Advanced Features`{.action}, definisci l'indirizzo MAC su `Static`{.action} e inserisci l'indirizzo MAC virtuale per l'indirizzo Additional IP. Una volta inserite queste impostazioni, clicca su `OK`{.action} per applicare le modifiche.
 
 ![networkbridging](images/network-bridging-windows-2012-2.jpg){.thumbnail}
 
@@ -315,13 +320,13 @@ Seleziona `Internet Protocol Version 4 (TCP/IPv4)`{.action} e clicca sul pulsant
 
 ![networkbridging](images/network-bridging-windows-2012-3.jpg){.thumbnail}
 
-Nella finestra delle proprietà dell'IPv4 seleziona `Use the following IP address`{.action}. Inserisci l'indirizzo IP Failover nel campo indirizzi IP e inserisci "255.255.255.255" nella maschera di sottorete.
+Nella finestra delle proprietà dell'IPv4 seleziona `Use the following IP address`{.action}. Inserisci l'indirizzo Additional IP nel campo indirizzi IP e inserisci "255.255.255.255" nella maschera di sottorete.
 
 In seguito, inserisci l'indirizzo IP del gateway del tuo server in gateway predefinito (ad esempio, l'IP del tuo server termina con 254) e inserisci "213.186.33.99" nel campo `Preferred DNS Server`{.action}.
 
 Clicca su `OK`{.action} e ignora il messaggio di avviso relativo all'indirizzo IP del gateway e all'indirizzo IP assegnato che non figurano nella stessa sottorete.
 
-Riavvia il server La macchina virtuale deve essere collegata a Internet utilizzando l'indirizzo IP Failover.
+Riavvia il server La macchina virtuale deve essere collegata a Internet utilizzando l'indirizzo Additional IP.
 
 ![networkbridging](images/network-bridging-windows-2012-4.jpg){.thumbnail}
 
@@ -335,12 +340,12 @@ Una volta riavviato il server in Rescue mode, esegui questi comandi:
 ip link add name test-bridge link eth0 type macvlan
 ip link set dev test-bridge address MAC_ADDRESS
 ip link set test-bridge up
-ip addr add FAILOVER_IP/32 dev test-bridge
+ip addr add ADDITIONAL_IP/32 dev test-bridge
 ```
 
-Sostituisci "MAC_ADDRESS" con l'indirizzo MAC virtuale generato nel pannello di configurazione e "FAILOVER_IP" con l'IP Failover reale.
+Sostituisci "MAC_ADDRESS" con l'indirizzo MAC virtuale generato nel pannello di configurazione e "ADDITIONAL_IP" con l'Additional IP reale.
 
-In seguito, è sufficiente effettuare un ping sul tuo IP Failover dall'esterno. Se funziona, significa probabilmente che sulla macchina virtuale o sull'host si è verificato un errore di configurazione che impedisce all'IP Failover di funzionare in modalità normale. Se invece l'IP non funziona ancora, apri un ticket al team di assistenza tramite il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} per ulteriori indagini.
+In seguito, è sufficiente effettuare un ping sul tuo Additional IP dall'esterno. Se funziona, significa probabilmente che sulla macchina virtuale o sull'host si è verificato un errore di configurazione che impedisce all'Additional IP di funzionare in modalità normale. Se invece l'IP non funziona ancora, apri un ticket al team di assistenza tramite il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} per ulteriori indagini.
 
 ## Per saperne di più
 

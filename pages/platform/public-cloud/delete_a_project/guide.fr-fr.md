@@ -40,7 +40,7 @@ Cliquez sur le bouton `Supprimer le projet`{.action}.
 
 ![supprimer le projet](images/deleteproject1.png){.thumbnail}
 
-Un message de confirmation s'affiche, vous informant de la suppression des ressources du projet, à l'exception des adresses IP fail-over attachées. 
+Un message de confirmation s'affiche, vous informant de la suppression des ressources du projet, à l'exception des adresses Additional IP attachées. 
 
 Cliquez sur `Supprimer le projet`{.action} pour continuer. 
 

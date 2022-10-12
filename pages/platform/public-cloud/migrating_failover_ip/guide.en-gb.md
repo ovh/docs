@@ -1,62 +1,66 @@
 ---
-title: 'Migrating a failover IP'
-excerpt: 'Find out how to migrate a failover IP address to another instance'
+title: 'Migrating an Additional IP'
+excerpt: 'Find out how to migrate an Additional IP address to another instance'
 slug: migrating_a_failover_ip
-legacy_guide_number: g1890
 section: Networking
 order: 10
 ---
 
-**Last updated 6th January 2022**
+**Last updated 6th October 2022**
+
+> [!primary]
+>
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/). This has no further impact on any of its features or the functioning of your services.
+>
 
 ## Objective
 
 Being able to migrate IP addresses generally limits or removes the possibility that your service becomes unavailable. For example, you can effectively update a whole website to a new version or you can keep a replicated server active while running maintenance or installing updates on your production server.
 
-**This guide explains how to migrate a failover IP from one OVHcloud Public Cloud instance to another.**
+**This guide explains how to migrate an Additional IP from one OVHcloud Public Cloud instance to another.**
 
 ## Prerequisites
 
 - At least two [Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- A failover IP address
+- An Additional IP address
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 > [!warning]
 >
-> A failover IP cannot be moved from one zone to another. For example, an IP located in the SBG data centre can be moved to GRA or RBX, but cannot be moved to BHS.
+> An Additional IP cannot be moved from one zone to another. For example, an IP located in the SBG data centre can be moved to GRA or RBX, but cannot be moved to BHS.
 >
 
-First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Then, select Failover IP in the **Network** section.
+First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Then, select Additional IP in the **Network** section.
 
-In our example, a failover IP is routed to "Instance_A" and we want to redirect it towards "Instance_B".
+In our example, an Additional IP is routed to "Instance_A" and we want to redirect it towards "Instance_B".
 
-![migrating failover IP](images/failover2022.png){.thumbnail}
+![migrating Additional IP](images/failover2022.png){.thumbnail}
 
-Click on `...`{.action} next to the failover IP and select `Modify associated instance`{.action}.
+Click on `...`{.action} next to the Additional IP and select `Modify associated instance`{.action}.
 
-![migrating failover IP](images/modify1.2022.png){.thumbnail}
+![migrating Additional IP](images/modify1.2022.png){.thumbnail}
 
 Choose the destination server from the list by clicking the checkbox.
 
-![migrating failover IP](images/modify1.png){.thumbnail}
+![migrating Additional IP](images/modify1.png){.thumbnail}
 
 Confirm by clicking on `Attach`{.action}.
 
 After a few seconds the Control Panel will be updated and a confirmation message will be displayed if the migration was done sucessfully.
 
-![migrating failover IP](images/modify2.2022.png){.thumbnail}
+![migrating Additional IP](images/modify2.2022.png){.thumbnail}
 
 > [!primary]
 >
-The failover IP can be configured on the destination server before or after carrying out the migration. If it was preconfigured, it will begin to respond as soon as the routing operation is completed.
+The Additional IP can be configured on the destination server before or after carrying out the migration. If it was preconfigured, it will begin to respond as soon as the routing operation is completed.
 >
 
 ## Go further
 
-[Configure a failover IP](../configure_a_failover_ip)
+[Configure an Additional IP](../configure_a_failover_ip)
 
-[Importing a failover IP](../import_a_failover_ip)
+[Importing an Additional IP](../import_a_failover_ip)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -3,6 +3,7 @@ title: Installare i moduli in 1 click OVH
 excerpt: Come creare il tuo sito utilizzando i moduli in 1 click
 slug: hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi
 section: CMS
+order: 01
 ---
 
 **Ultimo aggiornamento: 03/02/2022**

@@ -25,13 +25,13 @@ Si vous souhaitez créer un frontend web ou un reverse proxy pour créer une pil
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Disposer des identifiants de connexion et l'URL de Prism Central, reçus par mail après l'installation
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Disposer d'une adresse IP failover disponible
+- Disposer d'une adresse Additional IP disponible
 
 ## En pratique
 
-### Ajouter une nouvelle IP failover à votre vRack
+### Ajouter une nouvelle Additional IP à votre vRack
 
-Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et ajoutez une adresse IP failover à votre [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
+Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et ajoutez une adresse Additional IP à votre [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
 
 > [!primary]
 > Les instructions suivantes vont utiliser le bloc IP 123.45.6.78/30 à titre d'exemple.

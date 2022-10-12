@@ -8,7 +8,7 @@ section: Per iniziare
 order: 02
 ---
 
-**Last updated 7th March 2022**
+**Last updated 20th September 2022**
 
 ## Objective
 
@@ -22,7 +22,7 @@ If the licence or service you are looking for is not available, please refer to 
 Hosted Private Cloud powered by Nutanix offers two licence packs:
 
 - **Nutanix Standard Pack**
-- **Nutanix Advanced Pack** includes licences and services from the **Nutanix Standard Pack**, plus additional licences and services to support more advanced uses such as higher-performance replication, advanced data encryption capabilities, and Disaster Recovery Plan options. 
+- **Nutanix Advanced Pack** includes licences and services from the **Nutanix Standard Pack**, plus additional licences and services to support more advanced uses such as higher-performance replication, multiple sites, advanced data encryption capabilities, and Disaster Recovery Plan options. 
 
 ### Base of common licences and services to both **Nutanix Standard** and **Nutanix Advanced licence packs**
 
@@ -33,11 +33,11 @@ The licences and services common to both licence packs are:
     - **Nutanix Kubernetes Engine**: management of Kubernetes containers under Nutanix, a product formerly named **Karbon** ([presentation of Nutanix Kubernetes Engine](https://www.nutanix.com/products/karbon)).
 
 - **Nutanix Cloud Manager(NCM)**, formerly **Cloud Management** ([presentation of Nutanix Cloud Management](https://www.nutanix.com/products/cloud-manager/aiops)).
-    - **Intelligent operation**, formerly **Prism Pro**: monitoring and forecasting of requirements.
+    - **Intelligent Operation**, formerly **Prism Pro**: monitoring and forecasting of requirements.
     - **Flow**: network virtualisation and micro-segmentation ([FLOW presentation](https://www.nutanix.com/products/flow)).
 
 - **Nutanix Unified Storage**, formerly **Unified Storage**.
-    - **Block storage volumes**: Block storage for iSCSI access, either inside a Nutanix cluster for a particular use, or outside to provide access to Nutanix storage for other virtualised computers or infrastructures.
+    - **Block Storage Volumes**: Block storage for iSCSI access, either inside a Nutanix cluster for a particular use, or outside to provide access to Nutanix storage for other virtualised computers or infrastructures.
 
 - **Framework utilities**
     + **X-ray**: a set of tools for testing and benchmarking the main hyperconverged solutions ([X-Ray presentation](https://www.nutanix.com/products/x-ray)).
@@ -57,11 +57,11 @@ The licences and services common to both licence packs are:
 **Nutanix Advanced** includes the **AOS Ultimate** version of **AOS Storage**, formerly known as **AOS Distributed Storage**, which adds the following capabilities in addition to the standard version:
 
 - Advanced replication with better cluster resilience:
-    - **Nearsync replication** with an **RPO** of 20 seconds.
+    - **Nearsync Replication** with an **RPO** of 20 seconds.
     - **Metro Availability** with an **RPO** of 0 seconds and continuous use.
-    - **Sync replication** with an **RPO** at 0 seconds.
+    - **Sync Replication** with an **RPO** at 0 seconds.
 - and better security:
-    - **Software encryption at rest**: software encryption.
+    - **Data-at-Rest Encryption**: software encryption.
     - **Native KVM**: encryption keys management.
 
 For more information about the different versions of **AOS**, see the [Nutanix AOS options page](https://www.nutanix.com/products/software-options).
@@ -75,19 +75,19 @@ Below is a summary table of the two OVHcloud Nutanix solutions:
 | **Nutanix Standard**          | **AOS Storage**                        | **AOS Pro**                       |
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent operation**         |
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operations**         |
 |                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes block storage**         |
-|                               | **Framework utilities**                | **X-ray**                         |
+|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         |
+|                               | **Framework Utilities**                | **X-ray**                         |
 |                               |                                        | **Move**                          |
 |                               |                                        | **Lcm**                           |
 | **Nutanix Advanced**          | **AOS Storage**                        | **AOS Ultimate**                  |
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent operation**         |
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operations**         |
 |                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes block storage**         |
-|                               | **Framework utilities**                | **X-ray**                         |
+|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         |
+|                               | **Framework Utilities**                | **X-ray**                         |
 |                               |                                        | **Move**                          |
 |                               |                                        | **Lcm**                           |
 

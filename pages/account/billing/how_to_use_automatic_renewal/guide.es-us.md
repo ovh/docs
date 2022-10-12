@@ -47,7 +47,7 @@ Le recomendamos que lea las guías siguientes y que se centre en las operaciones
 
 ### Acceder a la configuración de los servicios
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en el nombre asociado a su ID de cliente en la esquina superior derecha y seleccione `Gestión de servicios`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en el nombre asociado a su ID de cliente en la esquina superior derecha y seleccione `Productos y servicios`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 

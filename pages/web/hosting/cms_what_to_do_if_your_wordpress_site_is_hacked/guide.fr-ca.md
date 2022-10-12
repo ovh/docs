@@ -1,9 +1,9 @@
 ---
 title: 'Conseils suite au piratage de votre site WordPress'
 slug: piratage-de-votre-site-wordpress-conseils-et-cas-dusages
-legacy_guide_number: 1874
 excerpt: 'Ce guide vous donne des conseils lorsque votre site WordPress s’est fait pirate'
 section: "Cas d'usage"
+order: 01
 ---
 
 **Dernière mise à jour le 05/05/2020**

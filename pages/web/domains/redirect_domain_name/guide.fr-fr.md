@@ -1,171 +1,402 @@
 ---
-title: 'Rediriger un nom de domaine géré par OVHcloud'
+title: "Rediriger un nom de domaine géré par OVHcloud"
 slug: redirection-nom-de-domaine
-excerpt: 'Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVHcloud'
-section: 'Tâches courantes'
-order: 1
+excerpt: "Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVHcloud"
+section: "Tâches courantes"
+order: 01
 ---
 
-**Dernière mise à jour le 25/01/2018**
+**Dernière mise à jour le 06/10/2022**
 
 ## Objectif
 
-La redirection d'un nom de domaine permet de rediriger celui-ci vers une nouvelle cible. Il existe différents types de redirections qui répondent à des besoins spécifiques.
+La redirection d'un nom de domaine consiste à rediriger celui-ci vers une nouvelle cible. Différents types de redirections existent, répondant chacun à un besoin spécifique.
 
-**Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVHcloud.**
+**Découvrez différentes manières de rediriger votre nom de domaine**
 
 ## Prérequis
 
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-- Être connecté à votre hébergement web (si vous souhaitez ajouter un [fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-tout-sur-le-fichier-htaccess/){.external}).
+- Être connecté à votre hébergement web (pour une redirection via un fichier [.htaccess](#htaccess_rewrite)).
 
 ## En pratique
 
 ### Comprendre la redirection d'un nom de domaine
 
-Avant de créer une redirection pour votre nom de domaine, il est important d'en comprendre l'utilité. Elle permet de rediriger votre nom de domaine vers une nouvelle cible, généralement un autre nom de domaine.
+Cette fonctionnalité permet de rediriger un domaine/sous-domaine vers :
 
-Il existe plusieurs cas où une redirection peut être pertinente, le plus courant étant celui lié au changement de nom d'un site internet. Dans ce cas, la redirection permet de guider automatiquement les visiteurs accédant encore à l'ancien nom de domaine vers le nouveau.
+- un autre domaine/sous-domaine déjà existant :
+    - **Exemple** : `domain.tld`
+- une URL (Uniform Resource Locator) de site internet :
+    - **Exemples** : `http://www.domain.tld/welcome/` ou `https://www.domain.tld/welcome/` (si le domaine cible dispose d'un certificat SSL compatible).
 
-Cette action peut être réalisée de plusieurs manières :
+Ces actions peuvent être réalisées de plusieurs manières :
 
-- **depuis l'espace client OVHcloud** : un assistant de configuration vous permettra de paramétrer votre redirection ;
+- **Depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)** où un assistant de configuration permet de paramétrer votre redirection.
+- **Via une méthode nécessitant de la programmation**. Vous devrez créer vous-même la redirection dans un fichier (généralement un [.htaccess](#htaccess_rewrite)).
 
-- **depuis une méthode nécessitant de la programmation** : vous devrez créer vous-même la redirection dans un fichier (généralement un *.htaccess*).
+> [!warning]
+>
+> La mise en place d'une redirection peut avoir des conséquences sur le référencement de votre site internet. 
+> Soyez vigilant quant aux manipulations que vous allez entreprendre ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) dans le référencement si nécessaire.
+>
+> Attention : une redirection créée depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ne permet pas de rediriger une URL en `https://` vers un autre domaine ou une autre URL. 
+> Pour créer ce type de redirection, vous devrez obligatoirement passer par [une réécriture d'URL](https://docs.ovh.com/fr/hosting/htaccess-reecriture-url-mod-rewrite/) via un fichier « .htaccess » par exemple.
+>
 
-Sachez que la mise en place d'une redirection peut avoir un impact sur le référencement de votre site internet. Nous vous invitons à être vigilant quant aux manipulations que vous allez entreprendre et à contacter un spécialiste du référencement si nécessaire.
+### Rediriger un nom de domaine depuis l'espace client
 
-### Rediriger un nom de domaine via l'espace client
+Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la partie `Web Cloud`{.action}, sélectionnez le domaine à rediriger dans la section `Noms de domaine`{.action} puis cliquez sur l'onglet `Redirection`{.action}.
 
-Une fois connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la section `Noms de domaine`{.action} , puis sur l'onglet `Redirection`{.action} .
+Le tableau affiche les redirections actives pour votre nom de domaine. Vous pouvez y gérer vos redirections existantes à l'aide du bouton `...`{.action} situé à droite de chaque ligne.
 
-Le tableau affiche les redirections actives pour votre nom de domaine.
+Cliquez sur le bouton `Ajouter une redirection`{.action}.
 
-Pour ajouter une redirection, cliquez sur le bouton `Ajouter une redirection`{.action}.
+![Présentation du menu redirection](images/RedirectionPanel.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, vous devrez définir le nom de domaine (ou le sous-domaine) que vous souhaitez rediriger. Il s'agit de la source de la redirection.
+Trois options de redirections sont disponibles depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et chacune d'entre elles se compose de **5 étapes** successives. 
 
-![Étape 1 pour l'ajout d'une redirection](images/adding_redirection_1.png){.thumbnail}
+> L'onglet `Redirection`{.action} présente une quatrième option permettant de faire pointer rapidement votre domaine vers les entrées DNS A, AAAA et CNAME.<br>
+> Du fait qu'il ne s'agit pas là à proprement parler d'une « redirection », cette option ne sera pas détaillée dans ce guide.
+>
+> Pour plus d'informations sur les entrées DNS, consultez notre documentation sur les [enregistrements DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#les-enregistrements-dns).
+>
 
-Vous devez à présent choisir vers quelle cible vous souhaitez rediriger le nom de domaine sélectionné. Deux choix s'offrent à vous :
-
-- **redirection vers une adresse web**
-
-Redirigez un nom de domaine vers un autre. Cette solution est idéale lorsque vous changez le nom de domaine de votre site internet ;
-
-- **redirection vers un serveur OVHcloud ou ailleurs**
-
-Modifiez la configuration DNS d'un nom de domaine pour une autre cible (champ A, AAAA ou CNAME). Cette solution est idéale si votre site internet n'est plus hébergé au même endroit, mais que le nom de domaine reste similaire.
-Vous pouvez également réaliser cette action si votre nom de domaine utilise la configuration OVHcloud en la modifiant depuis l'espace client (voir : [Comment éditer ma zone DNS ?](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}).
-
-À partir de ce point, ce guide abordera uniquement la redirection **vers une adresse web**. Concernant l'autre possibilité, rapprochez-vous de votre prestataire afin de connaître les enregistrements DNS que vous devrez modifier avant de poursuivre la démarche.
-
-![Étape 2 pour l'ajout d'une redirection](images/adding_redirection_2.png){.thumbnail}
-
-Pour une redirection **vers une adresse web**, choisissez à présent le type de redirection que vous souhaitez mettre en place. Deux choix s'offrent à vous.
-
-|Type de redirection|Description|
-|---|---|
-|Visible|Le nom de domaine que vous tapez dans votre navigateur internet (l'ancienne adresse) sera redirigé vers le nouveau nom de domaine. Cela aura pour effet de modifier l'adresse web qui s'affiche dans le navigateur internet pour la nouvelle adresse.|
-|Invisible|Le nom de domaine que vous tapez dans votre navigateur internet (l'ancienne adresse) ne sera pas redirigé vers le nouveau nom de domaine. Vous accéderez toujours à l'ancienne adresse, qui par le biais d'un calque appelé *iframe*, affichera le site internet hébergé sur le nouveau nom de domaine. Attention, cette action peut ne pas être compatible avec tous les sites internet et affecter le référencement de ce dernier.|
-
-![Choix entre redirection visible et invisible](images/redirection_3xx_1.png){.thumbnail}
-
-#### Pour une redirection visible
-
-Vous disposez de deux choix concernant la **redirection visible**.
-
-|Type de redirection|Code HTTP|Description|
-|---|---|---|
-|Visible permanente|301|C'est le type de redirection « standard ».|
-|Visible temporaire|302|Ce type de redirection est à utiliser ponctuellement (dans le cadre d'évènements temporaires ou de saison par exemple). Le positionnement sur les moteurs de recherche est moins bon qu'avec une redirection de type 301.|
-
-Une fois votre choix fait, vous devez renseigner la cible de la redirection (l'adresse web vers lequel la redirection devra rediriger).
-
-![Choix entre redirection visible permanente ou temporaire](images/redirection_3xx_2.png){.thumbnail}
-
-Une fois les informations complétées, cliquez sur `Suivant`{.action}, assurez-vous que les informations affichées soient bien correctes, puis cliquez sur `Confirmer`{.action}.
+Retrouvez ci-dessous les trois types de redirections détaillés étape par étape.
 
 > [!primary]
 >
-> La modification nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effective.
+> Quelle que soit l'option de redirection choisie, la modification nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effective.
 >
 
-#### Pour une redirection invisible
+#### Option 1 : redirection visible permanente vers une adresse web
 
-Concernant la redirection invisible (code HTTP 200), complétez les informations qui s'affichent (adresse web et options) puis cliquez sur `Suivant`{.action}. Assurez-vous que les informations affichées soient correctes avant de cliquer sur `Confirmer`{.action}.
+Cette option permet, après la saisie du domaine redirigé, d'afficher le domaine cible dans la barre d'adresses de votre navigateur internet au lieu du domaine redirigé.
 
-|Champs|Description|
-|---|---|
-|Titre|Il s'agit du titre de votre site internet. Ce dernier s'affichera en tant que titre de page dans l'onglet des navigateurs internet par exemple.|
-|Mots clés|Ces mots clés peuvent être utilisés par les moteurs de recherche pour référencer la page.|
-|Description|Il s'agit d'une description concernant votre site internet. Cette dernière pourra être utilisé par les moteurs de recherche dans leurs résultats.|
+- **Exemple** : si vous redirigez `domain1.tld` vers `domain2.tld`, c'est `domain2.tld` qui s'affichera dans la barre d'adresses dans votre navigateur.
 
-> [!primary]
+![Gif1](images/redirect1.gif){.thumbnail}
+
+> Cette redirection « standard » retournera un code HTTP 301.
+
+> [!success]
+> Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 5 étapes.
+
+> [!tabs]
+> **Etape 1**
+>>
+>> Dans la fenêtre, votre domaine à rediriger apparaît déjà. Renseignez le formulaire **uniquement** si vous souhaitez rediriger un *sous-domaine*.
+>>
+>> La case `Rediriger aussi`{.action} peut être cochée pour rediriger également votre sous-domaine en `www` vers la même cible que vous choisirez pour votre domaine/sous-domaine.
+>>
+>> ![Étape 1](images/Step1.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
+>>
+> **Etape 2**
+>>
+>> Sélectionnez `Vers une adresse Web`{.action}.
+>>
+>> ![Étape 2](images/Step2.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 3.
+>>
+> **Etape 3**
+>>
+>> Sélectionnez `Avec une redirection visible`{.action} parmi les deux choix indiqués.
+>>
+>> ![Étape 3](images/Step3Visi.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 4.
+>>
+> **Etape 4**
+>>
+>> Sélectionnez `Permanente (301)`{.action} parmi les deux choix indiqués puis saisissez le domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
+>>
+>> ![Étape 4](images/Step4VisiPerma.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 5.
+>>
+> **Etape 5**
+>>
+>> Dans cette dernière étape, assurez-vous que les informations affichées sont bien correctes.
+>>
+>> ![Étape 5](images/Step5VisiPerma.png){.thumbnail}
+>>
+>> Cliquez sur `Confirmer`{.action} pour valider votre configuration.
+>> 
+>> > [!primary]
+>> >
+>> > Si le message « *Il existe des redirections à partir des domaines que vous souhaitez rediriger qui entrent en conflit avec les redirections que vous souhaitez ajouter* » s'affiche, vous pouvez cocher la case `Confirmer l'écrasement de la redirection existante`{.action} pour forcer l'application de votre redirection.
+>> >
+>> > Attention, l'ancienne configuration sera donc désactivée et supprimée.
+>> >
+>>
+
+#### Option 2 : redirection visible temporaire vers une adresse web
+
+Comme pour l'option 1, cette option permet d'afficher, après la saisie du domaine redirigé, le domaine cible dans la barre d'adresses de votre navigateur internet au lieu du domaine redirigé.
+
+Toutefois, celle-ci est à utiliser ponctuellement, par exemple pour des événements éphémères.<br>
+En effet, le positionnement sur les moteurs de recherche est moins performant qu'avec une redirection **visible permanente** de type 301 (code HTTP).
+
+- **Exemple** : si vous redirigez `domain1.tld` vers `domain2.tld`, c'est `domain2.tld` qui s'affichera dans la barre d'adresses dans votre navigateur.
+
+![Gif1](images/redirect1.gif){.thumbnail}
+
+> Cette redirection retournera un code HTTP 302.
+
+> [!success]
+> Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 5 étapes.
+
+> [!tabs]
+> **Etape 1**
+>>
+>> Dans la fenêtre, votre domaine à rediriger apparaît déjà. Renseignez le formulaire **uniquement** si vous souhaitez rediriger un *sous-domaine*.
+>>
+>> La case `Rediriger aussi`{.action} peut être cochée pour rediriger également votre sous-domaine en `www` vers la même cible que vous choisirez pour votre domaine/sous-domaine.
+>>
+>> ![Étape 1](images/Step1.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
+>>
+> **Etape 2**
+>>
+>> Sélectionnez `Vers une adresse Web`{.action}.
+>>
+>> ![Étape 2](images/Step2.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 3.
+>>
+> **Etape 3**
+>>
+>> Sélectionnez `Avec une redirection visible`{.action} parmi les deux choix indiqués.
+>>
+>> ![Étape 3](images/Step3Visi.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 4.
+>>
+> **Etape 4**
+>>
+>> Sélectionnez `Temporaire (302)`{.action} parmi les deux choix indiqués puis saisissez le domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
+>>
+>> ![Étape 4](images/Step4VisiTempo.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 5.
+>>
+> **Etape 5**
+>>
+>> Dans cette dernière étape, assurez-vous que les informations affichées sont bien correctes.
+>>
+>> ![Étape 5](images/Step5VisiTempo.png){.thumbnail}
+>>
+>> Cliquez sur `Confirmer`{.action} pour valider votre configuration.
+>> 
+>> > [!primary]
+>> >
+>> > Si le message « *Il existe des redirections à partir des domaines que vous souhaitez rediriger qui entrent en conflit avec les redirections que vous souhaitez ajouter* » s'affiche, vous pouvez cocher la case `Confirmer l'écrasement de la redirection existante`{.action} pour forcer l'application de votre redirection.
+>> >
+>> > Attention, l'ancienne configuration sera donc désactivée et supprimée.
+>> >
+>>
+
+#### Option 3 : redirection invisible vers une adresse web
+
+Cette redirection permet, après la saisie du domaine redirigé, de le laisser affiché dans la barre d'adresses de votre navigateur internet au lieu de le remplacer par le domaine cible.<br>
+**Attention, cette action n'est pas compatible avec tous les sites et affecte le référencement de votre site.**.
+
+- **Exemple** : si vous redirigez `domain1.tld` vers `domain2.tld`, c'est `domain1.tld` qui s'affichera dans la barre d'adresses dans votre navigateur.
+
+![Gif2](images/redirect2.gif){.thumbnail}
+
+La redirection invisible fonctionne avec une balise HTML *iFrame*. Celle-ci permet à votre domaine redirigé d'intégrer dans sa propre page HTML le contenu de l'autre page correspondant au domaine cible.
+
+Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser le domaine cible
+
+> Cette option retournera un code HTTP 200.
+
+> [!warning]
 >
-> La modification nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effective.
+> Attention, les pages encapsulées avec une balise *iFrame* peuvent ne pas être lues sur les smartphones. Leur contenu n'est généralement pas pris en compte par les moteurs de recherche pour le référencement et l'indexation de votre site.
 >
 
-![Création d'une redirection invisible](images/invisible_redirection.png){.thumbnail}
-
-### Rediriger un nom de domaine via un fichier .htaccess
-
-Les fichiers .htaccess sont des fichiers de configuration dans lesquels des commandes peuvent être spécifiées. Lors de l’exécution du code de votre site internet par le serveur web (Apache), les commandes seront interprétées et ainsi exécutées. Parmi celles-ci, il est possible de créer des redirections.
-
-Modifier un fichier .htaccess peut nécessiter des compétences techniques du fait qu'une manipulation incorrecte peut rendre inaccessible un ou plusieurs sites internet si vous utilisez des sous-répertoires sur votre hébergement. En cas de doute, et si vous désirez obtenir de l’aide concernant la modification d'un fichier .htaccess, nous vous recommandons de faire appel à un développeur web spécialisé sur la question.
-
-Vous pouvez également vous reporter à notre documentation [Tout sur le fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-tout-sur-le-fichier-htaccess/){.external} qui vous donnera quelques astuces concernant son utilisation.
-
-> [!primary]
->
-> Avant de poursuivre, nous vous conseillons de **réaliser une sauvegarde de votre fichier .htaccess** avant d'y effectuer des modifications pour rétablir la version antérieure si besoin.
+> [!success]
+> Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 5 étapes.
 >
 
-- **Redirect permanent**
+> [!tabs]
+> **Etape 1**
+>>
+>> Dans la fenêtre, votre domaine à rediriger apparaît déjà. Renseignez le formulaire **uniquement** si vous souhaitez rediriger un *sous-domaine*.
+>>
+>> La case `Rediriger aussi`{.action} peut être cochée pour rediriger également votre sous-domaine en `www` vers la même cible que vous choisirez pour votre domaine/sous-domaine.
+>>
+>> ![Étape 1](images/Step1.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
+>>
+> **Etape 2**
+>>
+>> Sélectionnez `Vers une adresse Web`{.action}.
+>>
+>> ![Étape 2](images/Step2.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 3.
+>>
+> **Etape 3**
+>>
+>> Sélectionnez `Avec une redirection invisible`{.action} parmi les deux choix indiqués.
+>>
+>> ![Étape 3](images/Step3Invi.png){.thumbnail}
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 4.
+>>
+> **Etape 4**
+>>
+>> Sélectionnez `Temporaire (iframe)`{.action} parmi les deux choix indiqués puis saisissez le domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
+>>
+>> ![Étape 4](images/Step4Invi.png){.thumbnail}
+>>
+>> Trois paramètres optionnels sont mis à votre disposition à cette étape :
+>>
+>> - **Titre** : celui de votre site internet. Il s'affichera en tant que titre de page dans l'onglet des navigateurs internet.<br>
+>> - **Mots clés** : ils peuvent être utilisés par les moteurs de recherche pour référencer partiellement la page.<br>
+>> - **Description** : concerne votre site internet. Elle sera utilisée par les moteurs de recherche dans leurs résultats.
+>>
+>> Cliquez sur `Suivant`{.action} pour passer à l'étape 5.
+>>
+> **Etape 5**
+>>
+>> Dans cette dernière étape, assurez-vous que les informations affichées sont bien correctes.
+>>
+>> ![Étape 5](images/Step5Invi.png){.thumbnail}
+>>
+>> Cliquez sur `Confirmer`{.action} pour valider votre configuration.
+>> 
+>> > [!primary]
+>> >
+>> > Si le message « *Il existe des redirections à partir des domaines que vous souhaitez rediriger qui entrent en conflit avec les redirections que vous souhaitez ajouter* » s'affiche, vous pouvez cocher la case `Confirmer l'écrasement de la redirection existante`{.action} pour forcer l'application de votre redirection.
+>> >
+>> > Attention, l'ancienne configuration sera donc désactivée et supprimée.
+>> >
+>>
 
-Le code envoyé sera un code HTTP 301. Il prévient les robots des moteurs de recherche qu'il faut mettre à jour leurs liens vers la nouvelle adresse.
+### Rediriger un nom de domaine via un fichier « .htaccess » <a name="htaccess_rewrite"></a>
 
-Voici le code à ajouter pour rediriger le site entier :
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition cette partie du guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur les étapes documentées ci-dessous. Retrouvez plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+>
 
-```
-Redirect permanent / http://nouveau-site.tld/
-```
+Les fichiers « .htaccess » sont des fichiers de configuration dans lesquels des commandes peuvent être spécifiées. Lors de l’exécution du code de votre site internet par le serveur web (Apache), les commandes seront interprétées et ainsi exécutées.<br>
+Parmi ces commandes, il est possible de créer des redirections.
 
-Pour changer un répertoire/fichier :
+Manipuler un fichier « .htaccess »  peut rendre votre site inaccessible. En cas de doute, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) .
 
-```
-Redirect permanent /ancien_repertoire http://nouveau-site.tld/nouveau_repertoire
-Redirect permanent /ancien_fichier.php http://site.tld/nouveau_fichier.php
-```
+Retrouvez l'ensemble de notre documentation sur le « .htaccess »  dans la section [« Aller plus loin »](#go-further) de ce guide.
 
-- **Redirect gone**
+> [!success]
+>
+> Nous vous conseillons de **réaliser une sauvegarde de votre fichier .htaccess** avant d'y effectuer des modifications. Vous pourrez ainsi rétablir la version antérieure du fichier en cas de mauvaise manipulation.
+>
 
-Si un fichier n’existe plus, il est préférable de remplacer le message *404 document non trouvé* par un message plus explicite de type *410 le document n’existe plus* :
+Vous trouverez ci-dessous 4 variables pour réaliser des redirections via le fichier « .htaccess ».
 
-```
-Redirect gone /supprime.html
-```
+#### Variable 1 - « Redirect permanent »
 
-- **Redirect seeother**
+Cette variable permet de rediriger un site dans son ensemble, ou seulement une partie d'un site, vers un autre site ou une autre partie d'un site. Les visiteurs sont alors automatiquement redirigés vers la bonne adresse/URL lorsqu'ils tentent d'accéder à votre site via l'adresse/URL historique.
 
-Si vous changez l’extension d’un fichier, *seeother* permet d'en modifier le type en envoyant un code HTTP 303 :
+> [!tabs]
+> Code à placer dans le « .htaccess » 
+>>
+>> Pour rediriger un site en entier :
+>>
+>>```bash
+>>Redirect permanent / http://domainTarget.tld/
+>>```
+>>
+>> Pour rediriger un répertoire vers un autre :
+>>
+>> ```bash
+>>Redirect permanent /old_folder http://domain.tld/new_folder
+>>```
+>>
+>> Pour rediriger un fichier vers un autre :
+>>
+>> ```bash
+>>Redirect permanent /old_file.php http://domain.tld/new_file.php
+>>```
+>>
+> Code HTTP
+>>
+>> Le script renverra un code HTTP 301. Cela préviendra les robots des moteurs de recherche qu'il faut mettre à jour leurs liens vers la nouvelle adresse/URL.
+>>
 
-```
-Redirect seeother /exemple.doc http://site.tld/exemple.pdf
-```
+#### Variable 2 - « Redirect gone »
 
-- **Redirect Temp**
+Cette variable est utile pour les fichiers supprimés. Elle remplace le message *404 document non trouvé* par un message plus explicite de type *410 le document n’existe plus*. Le visiteur de votre site est informé que le fichier qu'il tente d'appeler n'existe plus.
 
-Une redirection temporaire de type HTTP 302 peut être utilisée lorsque vous déplacez temporairement des fichiers sur un autre site :
+> [!tabs]
+> Code à placer dans le « .htaccess » 
+>>
+>>```bash
+>>Redirect gone /fileDeleted.html
+>>```
+>>
+> Code HTTP
+>>
+>> Le script renverra un code HTTP 410.
+>>
 
-```
-Redirect temp / http://autre_site_web.tld/site/
-```
+#### Variable 3 - « Redirect seeother »
 
-## Aller plus loin
+Si vous changez l’extension d’un fichier, la variable *seeother* permet d'en modifier le type. Le visiteur qui tente d'accéder à l'ancien fichier sera automatiquement redirigé vers celui avec la bonne extension.
 
-[Tout sur le fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-tout-sur-le-fichier-htaccess/){.external}.
+> [!tabs]
+> Code à placer dans le « .htaccess » 
+>>
+>>```bash
+>>Redirect seeother /example.doc http://domain.tld/example.pdf
+>>```
+>>
+> Code HTTP
+>>
+>> Le script renverra un code HTTP 303.
+>>
 
-[Comment éditer ma zone DNS ?](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}
+#### Variable 4 - « Redirect Temp » 
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Cette variable peut être utilisée lorsque vous déplacez temporairement des fichiers sur un autre site. Les visiteurs qui tentent d'accéder à votre site via l'adresse/URL historique sont automatiquement redirigés vers la nouvelle adresse/URL temporaire.
+
+> [!tabs]
+> Code à placer dans le « .htaccess » 
+>>
+>>```bash
+>>Redirect temp / http://OtherWebsite.tld/site/
+>>```
+>>
+> Code HTTP
+>>
+>> Le script renverra un code HTTP 302.
+>>
+
+## Aller plus loin <a name="go-further"></a>
+
+[Bloquer l’accès à mon site pour certaines adresses IP via un fichier « .htaccess » ](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
+
+[Protéger l'interface d'administration de votre site via le « .htaccess » ](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/).
+
+[Réécrire vos URLs grâce au « mod_rewrite »](https://docs.ovh.com/fr/hosting/htaccess-reecriture-url-mod-rewrite/).
+
+[Effectuer d'autres opérations avec le fichier « .htaccess » ](https://docs.ovh.com/fr/hosting/mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess/).
+
+[Comment éditer ma zone DNS ?](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

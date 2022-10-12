@@ -3,11 +3,12 @@ title: 'Optimierung der Performance Ihrer Webseite'
 excerpt: 'Erfahren Sie hier, wie Sie Latenzen auf Webseiten analysieren und verbessern können'
 slug: webhosting_optimierung_der_performance_ihrer_webseite
 section: 'Webseitenoptimierung'
+order: 06
 ---
 
 **Letzte Aktualisierung am 03.02.2022**
 
-## Ziel
+## Ziel 
 Diese Anleitung richtet sich an Kunden, die die Performance ihrer Webauftritte optimieren möchten.
 Die erläuterten Stichpunkte helfen Ihnen dabei, ein grundlegendes Verständnis dafür zu erlangen, welche Kriterien die Geschwindigkeit von Webseiten beeinflussen können.
 

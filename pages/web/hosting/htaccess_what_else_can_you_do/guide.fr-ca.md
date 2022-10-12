@@ -1,9 +1,9 @@
 ---
 title: Les operations secondaires realisables avec des fichiers .htaccess
 slug: mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess
-legacy_guide_number: 1972
 excerpt: Retrouvez ici toutes les operations possibles avec votre .htaccess autre que la protection de dossier.
 section: Réécriture et authentification
+order: 04
 ---
 
 **Dernière mise à jour le 05/05/2020**

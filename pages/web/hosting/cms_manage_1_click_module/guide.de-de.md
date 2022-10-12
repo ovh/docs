@@ -3,7 +3,7 @@ title: 1-Klick-Module verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten
 slug: 1-click-module-management
 section: CMS
-order: 2
+order: 02
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 2
 
 **Letzte Aktualisierung am 05.09.2022**
 
-## Ziel
+## Ziel 
 
 1-Klick-Module ermöglichen die einfache und schnelle Installation von Online-Software zur Erstellung von Websites (auch “CMS“ genannt). OVHcloud bietet Ihnen die meist verbreiteten: WordPress, PrestaShop, Drupal und Joomla!.
 

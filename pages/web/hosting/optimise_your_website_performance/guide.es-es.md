@@ -2,8 +2,8 @@
 title: 'Optimizar el rendimiento de su sitio web'
 excerpt: 'Cómo analizar la latencia de su sitio web y cómo mejorarla'
 slug: web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web
-legacy_guide_number: g1396
 section: 'Optimización del sitio web'
+order: 06
 ---
 
 **Última actualización: 03/02/2022**

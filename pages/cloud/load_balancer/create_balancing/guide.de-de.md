@@ -15,7 +15,7 @@ Der neue OVH Loadbalancer bietet Ihnen mehrere Lastverteilungstypen für Ihre Di
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Sie haben eine Serverfarm erstellt.
 
 

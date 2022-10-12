@@ -3,7 +3,7 @@ title: 'Retrieving the backup of a Web Hosting plan’s database'
 slug: web_hosting_database_export_guide
 excerpt: 'Find out how to retrieve a database backup from your OVHcloud Web Hosting plan'
 section: Databases
-order: 3
+order: 03
 ---
 
 **Last updated 5th May 2020**
@@ -45,7 +45,7 @@ We recommend reading this guide, and focusing on the backup method you wish to u
 
 ### Retrieve a backup using the OVHcloud tool.
 
-To access the OVHcloud backup tool, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, click `Web Hosting`{.action}, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
+To access the OVHcloud backup tool, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, click `Hosting plans`{.action}, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. You can now choose to create a new backup and/or retrieve an existing backup, in two separate steps.
 
@@ -75,7 +75,7 @@ To download a backup, click the three dots to the right of the backup you want t
 
 ### Retrieve a backup via the phpMyAdmin web interface
 
-To use this method, you will need to log in to phpMyAdmin. To get the access link for this interface, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, click `Web Hosting`{.action}, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
+To use this method, you will need to log in to phpMyAdmin. To get the access link for this interface, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, click `Hosting plans`{.action}, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. In this table, click the three dots to the right of the database concerned, then `Go to phpMyAdmin`{.action}.
 

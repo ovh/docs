@@ -1,7 +1,7 @@
 ---
 title: "Fehler bei Domain-Operationen beheben"
 slug: domain-errors
-section: Aktuelle Tasks
+section: Allgemeine Verwendung
 order: 01
 ---
 

@@ -6,7 +6,7 @@ section: FAQ
 order: 3
 ---
 
-**Dernière mise à jour le 14/09/2022**
+**Dernière mise à jour le 05/10/2022**
 
 > [!warning]
 >
@@ -95,21 +95,30 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 
 | Gamme commerciale | Disponibilité générale | End of Sales | End of Growth | End of Life |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
-| DC2011 (AMD Opteron) | 2011 | 28/02/2015 | 28/02/2022 | 31/07/2022 |
-| DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | 31/07/2022 |
-| DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 31/07/2022 |
-| DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 31/07/2022 |
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2023 | 31/08/2023 |
+| DC2011 (AMD Opteron) | 2011 | 28/02/2015 | 28/02/2022 | 30/09/2022 |
+| DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | 30/09/2022 |
+| DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 30/09/2022 |
+| DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 30/09/2022 |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2024 | 31/08/2024 |
 | SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | 31/08/2024 |
 
 ### Datastores (stockage)
 
+Vous pouvez obtenir le profil de vos datastores via l'appel API suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/filer/{filerId}
+>
+
+Si le profil complet de votre datastore ne commence pas par « 2020-... », il est nécessaire de passer sur des datastores plus récents au plus vite. 
+
 | Gamme commerciale | Disponibilité générale | End of Sales | End of Growth  | End of Life |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
-| 300Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
-| 600Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
-| 800Gb | 2016 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
-| 1.2Tb | 2016 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
+| 300Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
+| 600Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
+| 800Gb | 2016 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
+| 1.2Tb | 2016 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
 
 ## Logiciels intégrés
 
@@ -119,7 +128,12 @@ Pour connaître la politique de cycle de vie des produits VMware, merci de vous 
 
 [VMware Lifecycle](https://lifecycle.vmware.com/#/)
 
-Note: VMware a étendu le support de NSX sur les infrastructures OVHcloud jusqu'au 15/01/2023.
+#### NSX Datacenter for vSphere
+
+Vous pouvez connaître votre version de NSX-v dans la section « Networking and security » de vSphere, puis dans l'onglet « about NSX ».<br>
+Si la version est antérieure à 6.4.12, nous vous invitons à contacter nos équipes du support afin de procéder à la mise à jour de ce composant.
+
+VMware a étendu le support de NSX Datacenter for vSphere sur les infrastructures OVHcloud jusqu'au 15/01/2023. Vous devrez migrer depuis NSX Datacenter for vSphere vers NSX Transformers avant cette date (15/01/2023).
 
 ### Cycle de vie Veeam Backup & Replication
 

@@ -5,7 +5,7 @@ excerpt: 'Saiba como configurar o RAID de um servidor em caso de avaria ou de fa
 section: 'RAID e discos'
 ---
 
-**Última atualização: 22/07/2019**
+**Última atualização: 11/10/2022**
 
 ## Sumário
 
@@ -17,10 +17,12 @@ O nível de RAID predefinido nos servidores da OVHcloud é RAID 1, ou seja, o do
 
 ## Requisitos
 
-* Dispor de um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external} com uma configuração RAID por software.
-* Ter acesso ao servidor através de SSH enquanto administrador (root).
+- Dispor de um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} com uma configuração RAID por software.
+- Ter acesso ao servidor através de SSH enquanto administrador (root).
 
 ## Instruções
+
+### Retirada do disco
 
 A verificação do estado atual do RAID pode ser efetuado através do seguinte comando:
 
@@ -208,6 +210,8 @@ Working Devices : 2
        1       8       18        1      active sync   /dev/sdb2
        2       8       34        2      active sync   /dev/sdc2
 ```
+
+### Reconstrução do RAID
 
 Uma vez substituído o disco, copie a tabela de partição a partir de um disco são (“sdb”) para a nova (“sda”), com o seguinte comando: 
 

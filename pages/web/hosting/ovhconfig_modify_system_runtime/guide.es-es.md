@@ -3,7 +3,7 @@ title: 'Modificar la configuración de un alojamiento web'
 slug: cambiar_el_entorno_de_ejecucion_de_un_alojamiento
 excerpt: 'Cómo modificar la configuración de un alojamiento web de OVH'
 section: 'Configuración del alojamiento'
-order: 3
+order: 03
 ---
 
 **Última actualización: 20/12/2018**

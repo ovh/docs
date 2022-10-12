@@ -3,14 +3,14 @@ title: 'Conectarse a la base de datos de su servidor de bases de datos'
 slug: coneccion-base-de-datos-servidor-bdd
 excerpt: 'Cómo conectarse a la base de datos'
 section: Configuración
-order: 3
+order: 03
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 29/06/2022**
+**Última actualización: 22/09/2022**
 
 ## Objetivo
 
@@ -68,6 +68,11 @@ Si la conexión se ha completado, se mostrará la siguiente página de phpMyAdmi
 > <br> - Error #2005, le recomendamos que compruebe el nombre del servidor y si este está en funcionamiento.
 
 #### Conexión a la base de datos fuera del área de cliente
+
+> [!warning]
+>
+> Si utiliza una solución Cloud DB/ SQL Privado, no olvide autorizar su IP utilizando la guía sobre la [configuración de su servidor de bases de datos](https://docs.ovh.com/es/clouddb/configurar-optimizar-su-servidor-de-base-de-datos/).
+>
 
 Para conectarse a la base de datos, asegúrese de que dispone de la siguiente información:
 
@@ -182,6 +187,10 @@ Se establecerá la conexión a la base de datos:
 ![](images/4.PNG){.thumbnail} conexión a la base de datos
 
 ## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
 

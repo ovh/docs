@@ -1,22 +1,18 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
-excerpt: Découvrez comment importer facilement votre propre adresse IP comme IP fail-over dans votre compte OVHcloud
+excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
 slug: bring-your-own-ip
 section: Bring Your Own IP
 order: 1
 ---
 
-> [!primary]
-> Ce service est disponible en accès restreint pour le moment. Veuillez contacter votre commercial OVHcloud pour plus d'informations.
->
-
-**Dernière mise à jour le 07/06/2022**
+**Dernière mise à jour le 20/09/2022**
 
 ## Objectif
 
-La fonctionnalité [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/fr/network/byoip/) vous permet d'utiliser les plages d'adresses IP que vous possédez déjà en tant qu'adresses IP fail-over, directement sur le réseau et les produits OVHcloud.
+La fonctionnalité [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/fr/network/byoip/) vous permet d'utiliser les plages d'adresses IP que vous possédez déjà en tant qu'adresses Additional IP, directement sur le réseau et les produits OVHcloud.
 
-Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taille /24 et se comporteront comme une adresse [IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/) OVHcloud.
+Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taille /24 et se comporteront comme une adresse [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/) OVHcloud.
 
 ## Prérequis
 
@@ -128,10 +124,10 @@ Sur le RIR où la plage d'adresses IP est inscrite, il faudra créer un objet de
 
 ### Comment utiliser les adresses IP
 
-Les adresses IP importées se comporteront comme le produit IP fail-over OVHcloud. Une plage d'adresses IP importée sera fractionnée en blocs de /24 pouvant être déplacés vers n’importe quel service d’un même campus.
+Les adresses IP importées se comporteront comme le produit Additional IP OVHcloud. Une plage d'adresses IP importée sera fractionnée en blocs de /24 pouvant être déplacés vers n’importe quel service d’un même campus.
 
 > [!warning]
-> Certaines opérations disponibles sur l'offre IP fail-over ne seront pas disponibles sur l'offre BYOIP.
+> Certaines opérations disponibles sur l'offre Additional IP ne seront pas disponibles sur l'offre BYOIP.
 >
 > Par exemple, il ne vous sera pas possible de personnaliser le WHOIS de vos blocs via l'espace client ou l'API OVHcloud, car OVHcloud n'en est pas propriétaire.
 >

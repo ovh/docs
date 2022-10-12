@@ -85,9 +85,9 @@ Per maggiori informazioni, consulta la guida [Configurazione della vRack Public 
 
 ### È possibile modificare l'IP pubblico della tua istanza?
 
-Gli IP pubblici sono assegnati automaticamente alle istanze e non sono quindi modificabili. Per utilizzare il controllo dell'IP pubblico di un'istanza, ti consigliamo di utilizzare un IP Failover. In questo modo, indipendentemente dall'indirizzo pubblico assegnato automaticamente all'istanza, hai la possibilità di aggiungere uno o più IP Failover alla tua istanza.
+Gli IP pubblici sono assegnati automaticamente alle istanze e non sono quindi modificabili. Per utilizzare il controllo dell'IP pubblico di un'istanza, ti consigliamo di utilizzare un Additional IP. In questo modo, indipendentemente dall'indirizzo pubblico assegnato automaticamente all'istanza, hai la possibilità di aggiungere uno o più Additional IP alla tua istanza.
 
-Per maggiori informazioni, consulta la guida [Acquista un IP Failover](../acquista_un_ip_failover/).
+Per maggiori informazioni, consulta la guida [Acquista un Additional IP](../acquista_un_ip_failover/).
 
 ## Per saperne di più
 

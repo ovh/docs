@@ -3,10 +3,10 @@ title: 'Dodanie rekordu MX w konfiguracji domeny'
 slug: hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh
 excerpt: 'Dowiedz się, jak dodać rekord MX do strefy DNs domeny'
 section: 'DNS i strefa DNS'
-order: 4
+order: 04
 ---
 
-**Ostatnia aktualizacja dnia 2018-04-03**
+**Ostatnia aktualizacja dnia 2022-09-21**
 
 ## Wprowadzenie
 
@@ -61,7 +61,9 @@ W tabeli, która się wyświetli znajdziesz konfigurację Twojej domeny OVHcloud
 
 Jeśli w konfiguracji są już zapisane rekordy MX i chcesz je zastąpić, kliknij ikonkę koła zębatego po prawej stronie każdego wiersza w tabeli odpowiadającego rekordowi, a następnie kliknij `Usuń rekord`{.action}. Jednocześnie zadbaj, aby domena cały czas posiadała co najmniej jeden rekord MX.
 
-Kliknij przycisk `Dodaj rekord`{.action}, następnie wybierz `MX`{.action}. Wpisz wymagane informacje w zależności od wybranego rozwiązania poczty elektronicznej:
+Aby sprawdzać szybciej, czy rekordy MX już istnieją, za pomocą filtra znajdującego się nad tabelą DNS wybierz pole typu **MX**, a następnie zatwierdź, aby wyświetlić tylko wpisy DNS MX w strefie DNS.
+
+Kliknij przycisk `Dodaj rekord`{.action} po prawej stronie tabeli, następnie wybierz `MX`{.action}. Wpisz wymagane informacje w zależności od wybranego rozwiązania poczty elektronicznej:
 
 - **jeśli używasz rozwiązania poczty elektronicznej OVHcloud**: wykorzystaj informacje opisane w [etapie 2: znajomość konfiguracji MX OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh/#etap-2-znajomosc-konfiguracji-mx-ovh){.external};
 
@@ -80,4 +82,8 @@ Po wpisaniu informacji zakończ ostatni etap, następnie kliknij `Zatwierdź`{.a
 
 [Modyfikacja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

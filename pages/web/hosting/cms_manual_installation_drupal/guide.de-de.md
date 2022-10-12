@@ -2,18 +2,18 @@
 title: 'Manuelle Installation von Drupal'
 excerpt: Wie funktioniert die manuelle Installation von Drupal?
 slug: cms_manuelle_installation_von_drupal
-legacy_guide_number: g1976
-section: 'CMS'
+section: CMS
+order: 04
 ---
 
 
-## Teil 1: Installation vorbereiten
+## Teil 1: Installation vorbereiten 
 Benötigte Tools
 
 Bevor Sie das CMS Drupal auf Ihrem Webhosting installieren, empfehlen wir Ihnen den Download einer FTP-Software, etwa FileZilla (kostenlos).
 
 ## Für die Installation benötigte Daten
-Sie sollten Ihre Kundenkennung (nic-handle) und Ihr Passwort bereithalten, um sich nötigenfalls in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen zu können.
+Sie sollten Ihre Kundenkennung (nic-handle) und Ihr Passwort bereithalten, um sich nötigenfalls in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen zu können.
 
 
 - Halten Sie auch Ihr FTP-Login und das Passwort bereit, mit denen Sie sich in Ihr Webhosting einloggen können.

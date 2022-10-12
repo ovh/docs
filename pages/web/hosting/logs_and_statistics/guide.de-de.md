@@ -3,6 +3,7 @@ title: Statistiken und Logs eines Webhostings einsehen
 excerpt: Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Webseiten abrufen
 slug: webhosting_die_statistiken_und_logs_meiner_website_einsehen
 section: 'Webseitenoptimierung'
+order: 04
 ---
 
 > [!primary]
@@ -11,7 +12,7 @@ section: 'Webseitenoptimierung'
 
 **Letzte Aktualisierung am 22.01.2021**
 
-## Ziel
+## Ziel 
 
 Die Webserver-Protokolle und Website-Statistiken sind in Ihrem Webhosting inklusive und über das OVHcloud Kundencenter komfortabel abrufbar.
 

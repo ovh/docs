@@ -1,9 +1,9 @@
 ---
 title: 'Guia de utilização do acelerador CDN num alojamento web'
 slug: guia_de_utilizacao_do_acelerador_geocache_num_alojamento_web
-legacy_guide_number: g1290
 excerpt: 'Melhore o seu site acelerando o seu carregamento no alojamento Web graças ao CDN'
-section: 'Otimizar o meu site'
+section: Otimizar o seu site
+order: 03
 ---
 
 > [!primary]

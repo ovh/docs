@@ -1,9 +1,9 @@
 ---
 title: 'Web hosting: Cyberduck user guide (on Mac)'
 excerpt: Insert Here A Short Desc
-id: '1598'
 slug: web_hosting_cyberduck_user_guide_on_mac
-legacy_guide_number: g1598
+section: FTP and SSH
+order: 05
 ---
 
 

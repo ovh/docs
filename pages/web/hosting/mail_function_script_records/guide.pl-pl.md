@@ -3,7 +3,7 @@ title: "Monitoring i zarządzanie automatycznymi wiadomościami e-mail na Twoim 
 slug: hosting_www_monitorowanie_automatycznych_e-maili
 excerpt: "Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVHcloud"
 section: Diagnostyka
-order: 01
+order: 09
 ---
 
 **Ostatnia aktualizacja dnia 2022-10-12**
@@ -12,7 +12,7 @@ order: 01
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-## Wprowadzenie
+## Wprowadzenie 
 
 Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj za pomocą funkcji "mail()" w PHP. Są one wykorzystywane na przykład do formularza kontaktowego na Twojej stronie WWW i umożliwiają Twoim użytkownikom wysyłanie wiadomości.
 

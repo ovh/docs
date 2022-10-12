@@ -2,8 +2,8 @@
 title: "Monitoring and managing automated emails in your Web Hosting plan"
 slug: web_hosting_monitoring_automatic_emails
 excerpt: "Find out how to monitor and manage automated emails sent from your OVHcloud Web Hosting plan"
-section: Troubleshooting
-order: 01
+section:  Troubleshooting
+Order: 09
 ---
 
 **Last updated 12th October 2022**

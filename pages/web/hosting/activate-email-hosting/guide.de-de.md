@@ -3,7 +3,7 @@ title: 'Die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren'
 slug: webhosting-email-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren können'
 section: 'Erste Schritte'
-order: 3
+order: 07
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ order: 3
 
 **Letzte Aktualisierung am 17.08.2020**
 
-## Ziel
+## Ziel 
 
 Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu verbinden, müssen die im Angebot beinhalteten optionalen E-Mail-Adressen manuell aktiviert werden. Sie können diese mit einem Domainnamen Ihrer Wahl verbinden.
 

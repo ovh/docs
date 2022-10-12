@@ -2,8 +2,8 @@
 title: Attiva l’ottimizzazione PHP sul tuo hosting condiviso OVH
 excerpt: Questa guida ti mostra come attivare PHP-FPM sul tuo hosting condiviso OVH, per migliorare i tempi di risposta PHP
 slug: attiva_lottimizzazione_php_sul_tuo_hosting_condiviso_ovh
-legacy_guide_number: g1175
 section: PHP
+order: 03
 ---
 
 

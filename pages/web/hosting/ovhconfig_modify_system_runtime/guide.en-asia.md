@@ -2,7 +2,8 @@
 title: 'Modifying the configuration of a Web Hosting plan'
 slug: modify_your_web_hosting_systems_runtime_environment
 excerpt: 'Find out how to modify the configuration of an OVHcloud Web Hosting plan'
-legacy_guide_number: g2149
+section: Web Hosting configuration
+order: 02
 ---
 
 **Last updated 5th May 2020**
@@ -33,7 +34,7 @@ When you modify your Web Hosting plan’s configuration, you will also change th
 
 #### Step 1: Access the Web Hosting plan’s configuration management.
 
-First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click `Web Hosting`{.action}, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Next, click on the three dots, then, `Modify configuration`{.action}.
+First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click `Hosting plans`{.action}, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Next, click on the three dots, then, `Modify configuration`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 

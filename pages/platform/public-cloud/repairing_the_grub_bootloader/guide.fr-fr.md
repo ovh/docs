@@ -5,7 +5,7 @@ excerpt: 'Guide de réparation du bootloader GRUB sur une instance'
 section: Tutoriels
 ---
 
-**Dernière mise à jour le 22/11/2020**
+**Dernière mise à jour le 26/09/2022**
 
 ## Objectif
 
@@ -23,6 +23,21 @@ Tapez les commandes suivantes pour monter le système de fichiers distant et dé
 
 ```sh
 mount /dev/sdb1 /mnt
+mount -o bind /proc /mnt/proc
+mount -o bind /sys /mnt/sys
+mount -o bind /dev /mnt/dev
+chroot /mnt /bin/bash
+```
+
+> [!primary]
+>
+> Si votre partition de boot se situe ailleurs que sur sdb1, voud devrez la monter également. 
+> Par exemple, si la partition de boot de votre système est /dev/sdb2, tapez les commandes ci-dessous.
+>
+
+```sh
+mount /dev/sdb1 /mnt
+mount /dev/sdb2 /mnt/boot
 mount -o bind /proc /mnt/proc
 mount -o bind /sys /mnt/sys
 mount -o bind /dev /mnt/dev

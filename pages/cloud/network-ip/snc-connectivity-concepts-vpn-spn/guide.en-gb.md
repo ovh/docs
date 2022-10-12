@@ -101,7 +101,7 @@ Sha1 is not supported
 
 #### Routing over tunnel
 
-Dynamic mode is the recommended setup to provide high availability with the two VPN devices.
+Dynamic mode is the required setup to provide high availability with the two VPN devices.
 
 A eBGP session is to be configured inside IPsec tunnel:
 

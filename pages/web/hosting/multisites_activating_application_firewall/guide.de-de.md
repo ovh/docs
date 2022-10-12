@@ -1,10 +1,9 @@
 ---
 title: 'Aktivieren der Web Application Firewall'
 excerpt: 'Aktivieren der Web Application Firewall'
-id: '1937'
 slug: webhosting_aktivieren_der_web_application_firewall
-legacy_guide_number: g1937
 section: 'Webhosting-Konfiguration'
+order: 04
 ---
 
 > [!primary]
@@ -13,7 +12,7 @@ section: 'Webhosting-Konfiguration'
 
 **Letzte Aktualisierung am 26.04.2021**
 
-## Ziel
+## Ziel 
 
 *ModSecurity* ist ein zusätzliches Apache-Modul, das alle auf Ihrem Webserver eingehenden Anfragen filtert. Es erhöht die Sicherheit gegen bekannte Schwachstellen, indem es Anfragen abfängt und filtert, bevor sie von Skripten verbeitet werden.
 

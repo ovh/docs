@@ -87,7 +87,7 @@ Clicca sul tipo di prodotto da disattivare nella lista delle principali offerte 
 
 #### Server dedicato <a name="dedicated"></a>
 
-Per disattivare il tuo [server dedicato](https://www.ovhcloud.com/it/bare-metal/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare il tuo [server dedicato](https://www.ovhcloud.com/it/bare-metal/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 
@@ -95,7 +95,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 #### VPS <a name="vps"></a>
 
-Per disattivare il server [VPS](https://www.ovhcloud.com/it/vps/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare il server [VPS](https://www.ovhcloud.com/it/vps/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 
@@ -107,7 +107,7 @@ Per disattivare la soluzione [Managed bare metal](https://www.ovhcloud.com/it/ma
 
 #### Server NAS-HA <a name="nas"></a>
 
-Per disattivare il tuo [server NAS-HA](https://www.ovh.it/nas/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare il tuo [server NAS-HA](https://www.ovh.it/nas/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 
@@ -115,7 +115,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 #### Load Balancer <a name="iplb"></a>
 
-Per disattivare la soluzione [Load Balancer](https://www.ovh.it/soluzioni/load-balancer/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare la soluzione [Load Balancer](https://www.ovh.it/soluzioni/load-balancer/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 
@@ -123,7 +123,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 #### Licenze <a name="licences"></a>
 
-Per disattivare una licenza sottoscritta presso OVHcloud, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare una licenza sottoscritta presso OVHcloud, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza della licenza da disattivare e poi su `Disattiva`{.action}.
 
@@ -137,7 +137,7 @@ Per disattivare la soluzione [Hosted Private Cloud powered by VMware](https://ww
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
-Per disattivare il servizio [Veeam Cloud Connect](https://www.ovhcloud.com/it/storage-solutions/veeam-cloud-connect/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare il servizio [Veeam Cloud Connect](https://www.ovhcloud.com/it/storage-solutions/veeam-cloud-connect/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 
@@ -162,7 +162,7 @@ Accedi allo Spazio Cliente OVHcloud per [consultare i tuoi consumi correnti](htt
 > In seguito alla tua rescissione e al completamento dell'abbonamento in corso, il tuo dominio generico (.com, .org...) net, ecc... ti resta "riservato" durante il periodo detto "di *grazia*" (5 giorni) e durante quello di "*redemption*" (35-40 giorni supplementari), il che significa che sarai in grado di rinnovarlo durante questi periodi.
 >
 
-Per disattivare il tuo [dominio](https://www.ovhcloud.com/it/domains/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare il tuo [dominio](https://www.ovhcloud.com/it/domains/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 
@@ -170,7 +170,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 #### Hosting Web <a name="hosting"></a>
 
-Per disattivare il tuo [hosting Web](https://www.ovhcloud.com/it/web-hosting/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare il tuo [hosting Web](https://www.ovhcloud.com/it/web-hosting/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 
@@ -182,7 +182,7 @@ Le offerte [SSL Sectigo](https://www.ovhcloud.com/it/web-hosting/options/ssl/) n
 
 #### OVHcloud Web Paas powered by Platform.sh <a name="webpaas"></a>
 
-Per disattivare la tua offerta [Web Paas](https://www.ovhcloud.com/it/web-paas/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare la tua offerta [Web Paas](https://www.ovhcloud.com/it/web-paas/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 
@@ -190,7 +190,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 #### CloudDB <a name="clouddb"></a>
 
-Per disattivare la tua offerta [CloudDB](https://www.ovh.it/cloud/cloud-databases/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare la tua offerta [CloudDB](https://www.ovh.it/cloud/cloud-databases/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 
@@ -200,7 +200,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 Un'offerta MX Plan non è soggetta a sottoscrizione periodica. e non è possibile disattivarla ma, se lo desideri, puoi eliminare la tua offerta.
 
-Per eliminare la soluzione [MX Plan](https://docs.ovh.com/it/emails/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per eliminare la soluzione [MX Plan](https://docs.ovh.com/it/emails/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Elimina subito MX Plan`{.action}.
 
@@ -241,7 +241,7 @@ Per disattivare l'intera piattaforma, ti consigliamo di iniziare con l'eliminazi
 * Per eliminare un account Sharepoint individuale, accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Microsoft`{.action}, `Sharepoint`{.action} e poi sulla tua piattaforma Sharepoint<br>
 Nella scheda `Utenti`{.action}, clicca sul pulsante `...`{.action} a destra dell'account da eliminare, quindi su `Disattiva SharePoint`{.action}. Leggi le informazioni e clicca su `Conferma`{.action}.
 
-* Per disattivare l'intera piattaforma Sharepoint, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+* Per disattivare l'intera piattaforma Sharepoint, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza della piattaforma Sharepoint da disattivare e seleziona `Disattiva`{.action}.
 
@@ -251,7 +251,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 #### SSL Gateway <a name="ssl_gateway"></a>
 
-Per disattivare la tua offerta [SSL Gateway](https://www.ovh.it/ssl-gateway/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare la tua offerta [SSL Gateway](https://www.ovh.it/ssl-gateway/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 
@@ -264,7 +264,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 > Puoi annullare una richiesta di disattivazione del servizio fino a 24 ore prima della data di scadenza dell'abbonamento.
 >
 
-Per annullare una richiesta di disattivazione, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per annullare una richiesta di disattivazione, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio richiesto e seleziona `Annulla la disattivazione del servizio`{.action} 
 

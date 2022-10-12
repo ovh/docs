@@ -6,7 +6,7 @@ section: Premiers pas
 order: 02
 ---
 
-**Dernière mise à jour le 07/03/2022**
+**Dernière mise à jour le 20/09/2022**
 
 ## Objectif
 
@@ -20,7 +20,7 @@ Si la licence ou le service que vous cherchez n'est pas disponible, nous vous in
 Hosted Private Cloud powered by Nutanix propose deux pack de licences :
 
 - **Nutanix Standard Pack**
-- **Nutanix Advanced Pack** qui reprend les licences et services du **Nutanix Standard Pack** auxquelles viennent s'ajouter des licences et services supplémentaires pour supporter des usages plus avancés tels que la réplication plus performante, des possibilités de chiffrement de données avancées et des options de plan de reprise d'activités. 
+- **Nutanix Advanced Pack** qui reprend les licences et services du **Nutanix Standard Pack** auxquelles viennent s'ajouter des licences et services supplémentaires pour supporter des usages plus avancés tels que la réplication plus performante, des sites multiples, des possibilités de chiffrement de données avancées et des options de plan de reprise d'activités. 
 
 ### Socle de licences et services communs aux deux packs de licences **Nutanix Standard** et **Nutanix Advanced**
 
@@ -31,11 +31,11 @@ Les licences et services communs aux deux packs de licences sont les suivants :
     - **Nutanix Kubernetes Engine** : gestion des containers Kubernetes sous Nutanix, produit anciennement nommé **Karbon** ([présentation de Nutanix Kubernetes Engine](https://www.nutanix.com/products/karbon)).
 
 - **Nutanix Cloud Manager(NCM)**, anciennement **Cloud Management** ([présentation de Nutanix Cloud Management](https://www.nutanix.com/products/cloud-manager/aiops)).
-    - **Intelligent operation**, anciennement **Prism Pro** : surveillance et prévision des besoins.
+    - **Intelligent Operation**, anciennement **Prism Pro** : surveillance et prévision des besoins.
     - **Flow** : virtualisation et micro-segmentation du réseau ([présentation de FLOW](https://www.nutanix.com/products/flow)).
 
 - **Nutanix Unified Storage**, anciennement **Unified Storage**.
-    - **Volumes block storage** : stockage par bloc pour un accès en iSCSI, soit à l’intérieur d'un cluster Nutanix pour un usage particulier, soit à l'extérieur pour donner accès au stockage Nutanix à d'autres ordinateurs ou infrastructures virtualisées.
+    - **Volumes Block Storage** : stockage par bloc pour un accès en iSCSI, soit à l’intérieur d'un cluster Nutanix pour un usage particulier, soit à l'extérieur pour donner accès au stockage Nutanix à d'autres ordinateurs ou infrastructures virtualisées.
 
 - **Framework utilities**
     + **X-ray** : ensemble d'outils de test et de benchmark sur les principales solutions d'hyperconvergences ([présentation Nutanix de X-Ray](https://www.nutanix.com/products/x-ray)).
@@ -48,18 +48,18 @@ Les licences et services communs aux deux packs de licences sont les suivants :
 
 - gérer le stockage distribué;
 - faire de l'orchestration avancée;
-- de la réplication Asynchrone avec un *RPO* (Recovery Point Objective) d'une heure.
+- de la réplication asynchrone avec un *RPO* (Recovery Point Objective) d'une heure.
 
 ### Licences et services supplémentaires disponibles avec le pack de licence **Nutanix Advanced**
 
 **Nutanix Advanced** inclut la version **AOS Ultimate** de la brique **AOS Storage**, anciennement **AOS Distributed Storage**, qui ajoute, en plus de la version standard, les capacités suivantes :
 
 - Une réplication avancée avec une meilleur résilience entre clusters :
-    - **Nearsync replication** avec un **RPO** à 20 secondes.
+    - **Nearsync Replication** avec un **RPO** à 20 secondes.
     - **Metro Availability** avec un **RPO** à 0 secondes et possible utilisation en continu.
-    - **Sync replication** avec un **RPO** à 0 secondes.
+    - **Sync Replication** avec un **RPO** à 0 secondes.
 - et une meileure sécurité :
-    - **Software encryption at rest** : chiffrement logiciel.
+    - **Data-at-Rest Encryption** : chiffrement logiciel.
     - **Native KVM** : gestion des clés de chiffrement.
 
 Pour plus d'informations sur les différentes versions d'**AOS**, consultez la page [Nutanix Options AOS](https://www.nutanix.com/products/software-options).
@@ -73,19 +73,19 @@ Ci-dessous se trouve un tableau récapitulatif des deux offres Nutanix OVHcloud 
 | **Nutanix Standard**          | **AOS Storage**                        | **AOS Pro**                       |               
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |   
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent operation**         | 
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operations**         | 
 |                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes block storage**         | 
-|                               | **Framework utilities**                | **X-ray**                         |
+|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         | 
+|                               | **Framework Utilities**                | **X-ray**                         |
 |                               |                                        | **Move**                          |
 |                               |                                        | **Lcm**                           |
 | **Nutanix Advanced**          | **AOS Storage**                        | **AOS Ultimate**                  |
 |                               | **Nutanix Cloud Infrastructure (NCI)** | **AHV Virtualization**            |
 |                               |                                        | **Nutanix Kubernetes Engine**     |   
-|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent operation**         | 
+|                               | **Nutanix Cloud Manager(NCM)**         | **Intelligent Operations**         | 
 |                               |                                        | **Flow**                          |
-|                               | **Nutanix Unified Storage**            | **Volumes block storage**         | 
-|                               | **Framework utilities**                | **X-ray**                         |
+|                               | **Nutanix Unified Storage**            | **Volumes Block Storage**         | 
+|                               | **Framework Utilities**                | **X-ray**                         |
 |                               |                                        | **Move**                          |
 |                               |                                        | **Lcm**                           |
 

@@ -17,7 +17,7 @@ Sie haben bereits einen [Pool erstellt](https://docs.ovh.com/de/cloud-desktop-in
 ## Voraussetzungen
 
 - Sie haben den VMware Horizon Client oder einen Browser geöffnet.
-- Sie kennen die Adresse (URL) des Zugangspunkts, verfügbar in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}.
+- Sie kennen die Adresse (URL) des Zugangspunkts, verfügbar in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}.
 - [Sie haben den Benutzern Zugriffsrechte zu den virtuellen Desktops erteilt](https://docs.ovh.com/de/cloud-desktop-infrastructure/virtuelle-desktops-zuweisen/){.external}.
 
 

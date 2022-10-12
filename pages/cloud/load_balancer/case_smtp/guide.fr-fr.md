@@ -183,7 +183,7 @@ Dans l'onglet `+Frontends`{.action}, cliquez sur le bouton `+TCP/TLS`{.action}.
 
 Remplissez les différents champs. Les seuls champs obligatoires pour une configuration simple sont le *Port* (25 pour un service SMTP standard), la *Zone* et la *Sonde* si vous en avez configuré une dans votre Ferme. Si vous souhaitez que votre service soit disponible sur plusieurs ports en même temps, vous pouvez spécifier une liste de ports séparés par des virgules ou une plage de ports de la forme "<port_de_départ>-<port_de_fin>".
 
-Si vous avez routé des IP Failover vers votre service OVHcloud Load Balancer, vous pouvez également attacher un frontend à une ou plusieurs IP Failover spécifiques.
+Si vous avez routé des Additional IP vers votre service OVHcloud Load Balancer, vous pouvez également attacher un frontend à une ou plusieurs Additional IP spécifiques.
 
 N'oubliez pas de spécifier comme « Ferme par défaut » la ferme créée précédemment.
 

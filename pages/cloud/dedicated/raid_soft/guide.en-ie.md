@@ -5,7 +5,7 @@ excerpt: 'This guide will help you configure your server’s RAID array in the e
 section: 'Server Management'
 ---
 
-**Last updated 18th June 2018**
+**Last updated 11th October 2022**
 
 ## Objective
 
@@ -17,10 +17,12 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.co.uk/dedicated_servers/) with a software RAID configuration
-* administrative (root) access to the server via SSH
+- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) with a software RAID configuration
+- Administrative (root) access to the server via SSH
 
 ## Instructions
+
+### Removing the disk
 
 In a command line session, type the following code to determine the current RAID status:
 
@@ -209,6 +211,8 @@ Working Devices : 2
        1       8       18        1      active sync   /dev/sdb2
        2       8       34        2      active sync   /dev/sdc2
 ```
+
+### Rebuilding the RAID
 
 Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command: 
 

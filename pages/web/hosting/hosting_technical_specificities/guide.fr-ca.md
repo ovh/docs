@@ -3,7 +3,7 @@ title: 'Spécificités techniques liées aux hébergements mutualisés'
 slug: specificites-techniques-hebergements-mutualises
 excerpt: 'Vous trouverez dans ce guide différentes informations et spécificités techniques liées aux hébergements mutualisés.'
 section: "Configuration de l'hébergement"
-order: 6
+order: 05
 ---
 
 **Dernière mise à jour le 28/07/2022**

@@ -3,7 +3,7 @@ title: Comment sécuriser votre site Web ?
 excerpt: Apprenez à renforcer la sécurité de votre site Web
 slug: secure-website
 section: Optimiser son site
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 10/12/2021**

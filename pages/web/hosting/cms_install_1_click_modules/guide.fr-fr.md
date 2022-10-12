@@ -3,7 +3,7 @@ title: 'Installer son site avec les modules en 1 clic'
 slug: modules-en-1-clic
 excerpt: 'Découvrez comment installer votre site via nos modules en 1 clic'
 section: CMS
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 03/02/2022**

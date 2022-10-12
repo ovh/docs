@@ -4,7 +4,7 @@ title: 'Creatie van een database in uw webhostingplan'
 slug: database-creatie
 excerpt: 'Leer hoe u een database in uw webhostingplan kunt maken'
 section: Databases
-order: 1
+order: 01
 ---
 
 **Laatste update 15-06-2018**

@@ -2804,9 +2804,9 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 
 ## Autres fonctionnalités
 
-### IP Failover
+### Additional IP
 
-#### Lister les IP Failovers routées sur un service Load Balancer OVH
+#### Lister les Additional IPs routées sur un service Load Balancer OVH
 
 > [!faq]
 >

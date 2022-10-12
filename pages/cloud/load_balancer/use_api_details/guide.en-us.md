@@ -2804,9 +2804,9 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 
 ## Other features
 
-### IP Failover
+### Additional IP
 
-#### List IP Failovers routed on a Load Balancer OVH service
+#### List Additional IPs routed on a Load Balancer OVH service
 
 > [!faq]
 >

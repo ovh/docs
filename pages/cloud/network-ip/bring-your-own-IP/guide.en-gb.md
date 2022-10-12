@@ -1,22 +1,18 @@
 ---
 title: How to use the Bring Your Own IP feature
 slug: bring-your-own-ip
-excerpt: Find out how to easily import your own IP as failover IP to your OVHcloud account
+excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
 section: Bring Your Own IP
 order: 1
 ---
 
-> [!primary]
-> This service is currently available in restricted access mode. Please contact your OVHcloud sales representative for more information.
->
-
-**Last updated 7th June 2022**
+**Last updated 20th September 2022**
 
 ## Objective
 
-The [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/en-gb/network/byoip/) feature allows you to use IP addresses ranges that you already own, as failover IPs directly on the OVHcloud network and products.
+The [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/en-gb/network/byoip/) feature allows you to use IP addresses ranges that you already own, as Additional IPs directly on the OVHcloud network and products.
 
-These IP addresses will be imported in the form of a /24 IP block size and will behave like a regular OVHcloud [failover IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/) block product.
+These IP addresses will be imported in the form of a /24 IP block size and will behave like a regular OVHcloud [Additional IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/) block product.
 
 ## Requirements
 
@@ -126,10 +122,10 @@ On the RIR where the IP range is registered, you will need to create a **route**
 
 ### How to use the product
 
-The imported IPs will behave like the current failover IP product. An imported IP range will be split into /24 blocks that will be movable to any service in the same campus.
+The imported IPs will behave like the current Additional IP product. An imported IP range will be split into /24 blocks that will be movable to any service in the same campus.
 
 > [!warning]
-> Some operations available on the failover IP product will not be available on the BYOIP product.
+> Some operations available on the Additional IP product will not be available on the BYOIP product.
 >
 > For example, you will not be able to customize your blocks' WHOIS via the OVHcloud Control Panel/API, because OVHcloud does not own them.
 >
