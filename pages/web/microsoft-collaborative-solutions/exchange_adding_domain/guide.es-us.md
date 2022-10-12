@@ -9,7 +9,7 @@ section: 'Configuración de Exchange'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 09/09/2022**
+**Última actualización: 07/10/2022**
 
 ## Objetivo
 
@@ -22,13 +22,13 @@ Añadir un dominio a un servicio Exchange es un requisito indispensable para pod
 - Tener una [solución Exchange](https://www.ovhcloud.com/es/emails/) o [Email Pro](hhttps://www.ovhcloud.com/es/emails/email-pro/).
 - Tener uno o más dominios.
 - Estar en condiciones de modificar la configuración del dominio ([zona DNS](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/)).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
 ### Acceder a la gestión del servicio
 
-Una vez que el servicio Exchange o Email Pro haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Una vez que el servicio Exchange o Email Pro haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 En la sección `Web Cloud`{.action}:
 
@@ -66,8 +66,8 @@ Se mostrará un mensaje informativo relativo al modo de configuración del domin
 
 |Modo|Descripción|
 |---|---|
-|Autónomo|Es conveniente si solo utiliza su solución Exchange o Email Pro con su nombre de dominio. No permite utilizar otra solución de correo conjuntamente con el servicio.|
-|No autónomo|Es el modo adecuado cuando utiliza con su dominio la solución Exchange o Email Pro conjuntamente con otra solución de correo. Debe indicar el servidor de su otra solución de correo.|
+|Autoritario|Es conveniente si solo utiliza su solución Exchange o Email Pro con su nombre de dominio. No permite utilizar otra solución de correo conjuntamente con el servicio.|
+|No autoritario|Es el modo adecuado cuando utiliza con su dominio la solución Exchange o Email Pro conjuntamente con otra solución de correo. Debe indicar el servidor de su otra solución de correo.|
 
 > [!primary]
 >
@@ -109,11 +109,11 @@ Una vez que haya añadido los dominios, ya puede configurar sus cuentas de corre
 
 Le recordamos que todas las direcciones creadas en su servicio podrán ver en el directorio el conjunto de direcciones de este servicio, incluidas aquellas que posean un nombre de dominio diferente.
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el **webmail** disponible en la dirección <https://www.ovh.com/fr/mail/>. Para un uso óptimo de su dirección en un programa, asegúrese de que sea compatible con el servicio. 
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el **webmail** disponible en la dirección <https://www.ovhcloud.com/es/mail/>. Para un uso óptimo de su dirección en un programa, asegúrese de que sea compatible con el servicio. 
 
 Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo (smartphone o tablet) u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte la documentación disponible en las páginas [Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/) y [Email Pro](https://docs.ovh.com/us/es/emails-pro/).
 
-Puede adquirir licencias Outlook en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y licencias de Office 365 en la página <https://www.ovhcloud.com/es/collaborative-tools/microsoft-365/>. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
+Puede adquirir licencias Outlook en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y licencias de Office 365 en la página <https://www.ovhcloud.com/es/collaborative-tools/microsoft-365/>. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 
 ### Eliminar un dominio de una plataforma
 

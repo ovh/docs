@@ -5,7 +5,7 @@ section: Premiers pas avec Exchange
 order: 4
 ---
 
-**Dernière mise à jour le 09/09/2022**
+**Dernière mise à jour le 07/10/2022**
 
 ## Objectif
 
