@@ -25,7 +25,7 @@ Anti-spam policies are becoming increasingly strict. To ensure that your emails 
 
 ## Instructions
 
-### Configure the SPF record.
+### Configure the SPF record <a name="spfrecord"></a>
 
 If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Public Cloud instance or Hosted Private Cloud VM), the optimal SPF record is: `v=spf1 ip4:server_ipv4 ~all`. Please remember to replace 'server_ipv4' with your server's IPv4 address.
 
@@ -94,6 +94,8 @@ Microsoft uses a whitelist policy. This means that initially, everything starts 
 
 Before starting the procedure to whitelist your IP, make sure you have a [reverse IP](#reverseip) configured.<br>
 
+Microsoft also checks the SPF field, so we recommend having set an [SPF record](#spfrecord) as well.
+
 Next, you will need to sign the SNDS (Smart Network Data Services) and JMRP (Junk Mail Reporting Partner Program) contracts. To subscribe, create a free account at <https://postmaster.live.com/snds/JMRP.aspx?wa=wsignin1.0>.
 
 Once your account is created, you must fill in the following form: 
@@ -111,6 +113,8 @@ Once the information is filled in, click on `Begin Setup` to transmit the reques
 Once the confirmations are approved, the subscription to JMRP/SNDS will be completed.
 
 Once this is done and if your IP appears to be blocked, you can then request to delist it via the [junkmail procedure](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062){.external} (usually within 48H).
+
+In some cases, Microsoft may ask the date of the first billing of your IP/server. In this situation, you can send a copy of your bill and add your IP/server (ex : host nsXXX).
 
 For additional information, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656){.external} with Microsoft. 
 
