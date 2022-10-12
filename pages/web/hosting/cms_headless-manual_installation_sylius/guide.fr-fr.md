@@ -140,6 +140,11 @@ On peut vérifier le bon fonctionnement de NodeJS en tapant la commande suivante
 node/bin/node -v
 ```
 
+Pour simplifier l'utilisation de NodeJS et de `npm`, nous allons l'ajouter dans le _path_ :
+```sh
+export PATH=~/node/bin:$PATH
+```
+
 Vous verrez alors la version de NodeJS qui a été téléchargée s'afficher (v16.17.1 pour notre exemple).
 
 #### Installer Sylius
@@ -260,6 +265,8 @@ Il suffit, ensuite, de répondre aux différents éléments demandés par l'appl
 - le login à utiliser pour se connecter au compte (laisser vide pour utiliser l'adresse mail précédemment saisie)
 - un mot de passe et sa confirmation.
 
+Enfin, réponsez par l'affirmative lorsqu'il vous est demandé si vous souhaitez que l'installeur génère un _token_ d'authentification.
+
 L'installation de Sylius sur votre serveur est terminée, mais il faut encore configurer quelques éléments pour le rendre pleinement opérationnel.
 
 #### Configurer Sylius - Partie _front end_
@@ -270,18 +277,18 @@ Sylius est installé, la base de données renseignée, mais à ce stage, si vous
 
 Pour la gestion des assets (feuilles de style, JavaScript), Sylius utilise [Gulp](https://gulpjs.com/), une librairie JavaScript permettant l'automatisation de certaines tâches répétitives. Yarn est un gestionnaire de dépendance pour NodeJS (à l'image de ce qu'est Composer pour PHP).
 
-Installer Yarn à la racine du projet :
+Installer `yarn` avec `npm` :
 
 ```sh
-../node/bin/npm install yarn
+npm install -g yarn
 ```
 
+Une fois yarn installé, à la racine du projet, lancer les deux commandes suivantes :
+```sh
+yarn install
+yarn build
+```
 
-
-
-
-
-
-
+Votre application est maintenant installé, vous n'avez plus qu'à aller voir le résultat sur le domaine qui pointe vers votre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/).
 
 ## Aller plus loin
