@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Endpoints et geodisponibilité de l’Object Storage
+title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
 slug: s3/location
 section: Informations générales
 order: 025
