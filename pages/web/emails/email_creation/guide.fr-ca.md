@@ -22,8 +22,6 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 
 ## En pratique <a name="instructions"></a>
 
-Selon la date d'activation de votre service ou si [celui-ci a été récemment migré](https://www.ovhcloud.com/fr-ca/web-hosting/mxplan-migration/){.external}, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 
-
 Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}. Cliquez sur `Emails`{.action}.
 
 ### Accéder à la gestion du service e-mail

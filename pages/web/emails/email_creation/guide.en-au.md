@@ -19,9 +19,7 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 - An MX Plan solution, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-au/web-hosting/)
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, in the `Web Cloud`{.action} section
 
-## Instructions <a name="instructions"></a>
-
-Depending on the date your service was activated and whether [it was recently migrated](https://www.ovhcloud.com/en-au/web-hosting/mxplan-migration/){.external}, you are using either the legacy version or the new version of the MX Plan solution. Before you proceed with this guide, you need to check which version you are using. 
+## Instructions <a name="instructions"></a> 
 
 To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, and open the `Web Cloud`{.action} section. Click on `Emails`{.action}.
 
