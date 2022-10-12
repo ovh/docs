@@ -10,48 +10,46 @@ order: 02
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 03/08/2022**
+**Última actualización: 07/10/2022**
 
 ## Objetivo
 
-Las direcciones de correo de la solución MX Plan permiten enviar y recibir mensajes desde cualquier dispositivo.
+La solución MX Plan le permite disfrutar de direcciones de correo asociadas a un dominio.
 
 **Esta guía explica cómo crear una dirección de correo electrónico en un MX Plan.**
 
 ## Requisitos
 
 - Tener una solución MX Plan (incluida en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}, en un [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} o contratada por separado).
-- Poder crear más direcciones de correo electrónico en su MX Plan.
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
 
 > [!primary]
 >
->**Casos particulares**
+> **Casos particulares**
 >
-> - En un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}, es necesario activar la solución MX Plan incluida antes de continuar leyendo esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo electrónico incluidas en su alojamiento web](https://docs.ovh.com/es/hosting/activar-correo-hosting-web/).
-> - En el caso del hosting gratuito Start 10M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, accediendo al dominio correspondiente.
->
+> - En el caso del hosting gratuito Start 10M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, accediendo al dominio correspondiente.
+> - Si tiene un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}, deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](https://docs.ovh.com/es/hosting/activar-correo-hosting-web/).
 
-## Procedimiento
+## Procedimiento <a name="instructions"></a>
 
-En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovh.co.uk/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovhcloud.com/es-es/web-hosting/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
 Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
-|![Correo electrónico](images/mxplan-creation-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro **Suscripción**, en el epígrafe **Producto**.|![Correo electrónico](images/mxplan-creation-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro **Resumen**, en el epígrafe **Referencia del servidor**.|
-|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](./#version-historica-de-la-solucion-mx-plan_2).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](./#nueva-version-de-la-solucion-mx-plan).|
+|![Correo electrónico](images/mxplan-creation-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro Suscripción, en el epígrafe Producto.|![Correo electrónico](images/mxplan-creation-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro `Resumen`, en el epígrafe `Referencia del servidor`.|
+|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](#mxplanlegacy).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](#newmxplan).|
 
-### Nueva versión de la solución MX Plan
+### Nueva versión de la solución MX Plan <a name="newmxplan"></a>
 
-#### 1. Acceder a la gestión del servicio de correo
+#### Acceder a la gestión del servicio de correo
 
-Si dispone de la nueva versión de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución.  
+Si dispone de la nueva versión de la solución MX Plan, la pestaña Información general del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](#instructions) y asegúrese de que esta es su versión de la solución.  
 
 ![Correo electrónico](images/mxplan-creation-new-step1.png){.thumbnail}
 
-#### 2. Crear una dirección de correo electrónico
+#### Crear una cuenta de correo
 
 Para crear una dirección de correo electrónico, abra la pestaña `Cuentas de correo`{.action}. Se mostrarán las cuentas de correo ya creadas y el número de cuentas que puede crear. Para crear una nueva, haga clic en el botón `Añadir una cuenta`{.action}.
 
@@ -59,13 +57,11 @@ Para crear una dirección de correo electrónico, abra la pestaña `Cuentas de c
 
 A continuación, introduzca la información solicitada:
 
-|Campo|Descripción|  
-|---|---|  
-|Cuenta de correo|Este campo se autocompletará con un nombre temporal. Bórrelo e introduzca el nombre que quiera asignar a la dirección de correo (por ejemplo, «nombre.apellido»). El dominio que formará la dirección de correo completa aparecerá preseleccionado en la lista.|  
-|Nombre|Introduzca un nombre.|  
-|Apellidos|Introduzca los apellidos.|  
-|Nombre mostrado|Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.|
-|Contraseña|Introduzca una contraseña y luego confírmela en el último campo. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.|
+- **Cuenta de correo**: Un nombre temporal se autocompletará en el cuadro de texto. Sustituya por el que quiera para su dirección de correo electrónico (por ejemplo, nombre.apellido). El dominio que formará la dirección de correo completa aparecerá preseleccionado en la lista.
+- **Nombre**: Introduzca un nombre.
+- **Nombre**: Introduzca los apellidos.
+- **Nombre mostrado**: Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.
+- **Contraseña**: Introduzca una contraseña y luego confírmela en el último campo. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
 Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}. 
 
@@ -73,71 +69,50 @@ Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}.
 
 Compruebe que la información indicada en el resumen es correcta. Si lo es, haga clic en `Aceptar`{.action}. La cuenta que acaba de crear aparecerá en la tabla. Espere a que la cuenta esté disponible.
 
-Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas de que disponga.
+Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas a su disposición.
 
-#### 3. Utilizar las direcciones de correo
+#### Consultar los mensajes de correo
 
-Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. Para ello, puede utilizar el webmail o configurar la cuenta en un dispositivo.
+Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-##### 3.1. Utilizar el webmail Outlook Web Access (OWA)
-
-Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
-
-La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde Outlook en la Web](../uso-outlook-en-la-web/){.external}.
+La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web Access (OWA)"](https://docs.ovh.com/es/emails/uso-outlook-en-la-web/){.external}.
 
 ![Correo electrónico](images/mxplan-creation-new-step5.png){.thumbnail}
 
-##### 3.2. Configurar la dirección de correo en un dispositivo
+Para consultar su correo desde un cliente de correo, consulte la sección "[Consultar una cuenta de correo desde un dispositivo](#configdevices)".
 
-Puede configurar su dirección de correo en el dispositivo que desee (smartphone o tablet, por ejemplo). Si lo necesita, consulte la guía correspondiente:
+#### Eliminar una cuenta de correo
 
-|Windows|Outlook|Apple|Android|Otros|
-|---|---|---|---|---|
-|[Windows 10](../configuracion-correo-windows-10/){.external}|[Outlook 2016](../configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](../correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](../configuracion-android/){.external}|[Gmail](../configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/){.external}|
-
-A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
-
-- **Configuración en IMAP (recomendada)**
-
-|Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
-|---|---|---|---|
-|Entrante|SSL0.OVH.NET|993|143|
-|Saliente|SSL0.OVH.NET|465|587|
-
-- **Configuración en POP**
-
-|Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
-|---|---|---|---|
-|Entrante|SSL0.OVH.NET|995|110|
-|Saliente|SSL0.OVH.NET|465|587|
+Desde la nueva versión MXplan, cuando debe eliminarla, se habla de *reinicialización de la cuenta*.
 
 > [!warning]
 >
-> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](../) o contacte con el editor de la aplicación que utilice.
->
+> Antes de eliminar las cuentas de correo, asegúrese de que no se utilizan. Es posible que necesite guardar estas cuentas. Si lo necesita, consulte la guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/), en la que se explica cómo exportar los datos de una cuenta desde el área de cliente o desde un cliente de correo.
 
-### Versión histórica de la solución MX Plan
+En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la cuenta que desea eliminar y luego en `Restaurar la cuenta`{.action}.
 
-#### 1. Acceder a la gestión del servicio de correo
+![Correo electrónico](images/mxplan-new-reset.png){.thumbnail}
 
-Si dispone de la versión histórica de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución. 
+### Versión histórica de la solución MX Plan <a name="mxplanlegacy"></a>
+
+#### Acceder a la gestión del servicio de correo
+
+Si dispone de la versión histórica de la solución MX Plan, la pestaña Información general del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](#instructions) y asegúrese de que esta es su versión de la solución. 
 
 ![Correo electrónico](images/mxplan-creation-legacy-step1.png){.thumbnail}
 
-#### 2. Crear una dirección de correo electrónico
+#### Crear una cuenta de correo
 
-Para crear una dirección de correo, abra la pestaña `Correo electrónico`{.action}. Se mostrará una tabla con todas las direcciones de correo electrónico creadas en el MX Plan. Haga clic en el botón `Crear una dirección de correo`{.action}.
+Para crear una dirección de correo, abra la pestaña `Correo electrónico`{.action}. Se mostrará una tabla con todas las cuentas de correo creadas en la solución MX Plan. Haga clic en el botón `Crear una dirección de correo`{.action}.
 
 ![Correo electrónico](images/mxplan-creation-legacy-step2.png){.thumbnail}
 
 A continuación, introduzca la información solicitada:
 
-|Campo|Descripción|  
-|---|---|  
-|Nombre de la cuenta|Introduzca el nombre que quiera asignar a la dirección de correo (por ejemplo, «nombre.apellido»). El dominio aparecerá ya completado.|  
-|Descripción de la cuenta|Introduzca una descripción que le permita diferenciar esta cuenta de las otras cuentas de su área de cliente de OVHcloud.|  
-|Tamaño de la cuenta|Seleccione el tamaño de la cuenta de correo, es decir, su capacidad para almacenar mensajes de correo electrónico.|  
-|Contraseña|Introduzca una contraseña y luego confírmela en el último campo. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.|
+- **Nombre de la cuenta**: Introduzca el nombre que quiera asignarle a la dirección de correo electrónico (por ejemplo, el nombre.apellido). El dominio en cuestión ya se ha completado por defecto.|  
+- **Descripción de la cuenta**: Introduzca una descripción que le permita diferenciar su cuenta del resto de cuentas de su área de cliente de OVHcloud.|  
+- **Tamaño de la cuenta**: Seleccione el tamaño de la cuenta de correo, es decir, Es el espacio del que dispondrá su dirección para almacenar los mensajes.|  
+- **Contraseña**: Introduzca una contraseña y luego confírmela en el último campo. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que elija una que no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos y fecha de nacimiento, por ejemplo) y que la cambie regularmente.|
 
 Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}. 
 
@@ -145,43 +120,72 @@ Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}.
 
 Compruebe que la información indicada en el resumen es correcta. Si lo es, haga clic en `Siguiente`{.action}. Por último, haga clic en `Aceptar`{.action} para terminar de crear la dirección de correo y espere a que la cuenta esté disponible.
 
-Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas de que disponga.
+Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas a su disposición.
 
-#### 3. Utilizar las direcciones de correo
+#### Consultar los mensajes de correo 
 
-Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. Para ello, puede utilizar el webmail o configurar la cuenta en un dispositivo.
+Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-##### 3.1. Utilizar el webmail Roundcube
-
-Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
-
-A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](../webmail_guia_de_uso_de_roundcube/){.external}.
+A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](https://docs.ovh.com/es/emails/webmail_guia_de_uso_de_roundcube/){.external}.
 
 ![Correo electrónico](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
-##### 3.2. Configurar la dirección de correo en un dispositivo
+Para consultar sus mensajes de correo desde un cliente de correo, consulte la sección [Consultar una cuenta de correo desde un dispositivo](#configdevices).
 
-Puede configurar su dirección de correo en el dispositivo que desee (smartphone o tablet, por ejemplo). Para ello, puede consultar nuestras guías:
+#### Eliminar una cuenta de correo
 
-|Windows|Outlook|Apple|Android|Otros|
-|---|---|---|---|---|
-|[Windows 10](../configuracion-correo-windows-10/){.external}|[Outlook 2016](../configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](../correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](../configuracion-android/){.external}|[Gmail](../configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/){.external}|
+> [!warning]
+>
+> Antes de eliminar las cuentas de correo, asegúrese de que no se utilizan. Es posible que necesite guardar estas cuentas. Si lo necesita, consulte la guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/), en la que se explica cómo exportar los datos de una cuenta desde el área de cliente o desde un cliente de correo.
+
+En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la cuenta que desea eliminar y luego en `Eliminar la cuenta`{.action}.
+
+![Correo electrónico](images/mxplan-legacy-reset.png){.thumbnail}
+
+### Consultar una cuenta de correo desde un dispositivo <a name="configdevices"></a>
+
+Puede configurar su dirección de correo en el dispositivo que desee (smartphone o tablet, por ejemplo). Si lo necesita, consulte la guía correspondiente:
+
+> [!tabs]
+> **Windows**
+>>
+>> - [Correo en Windows 10](https://docs.ovh.com/es/emails/configuracion-correo-windows-10/)
+>> - [Outlook](https://docs.ovh.com/es/emails/configuracion-outlook-2016/)
+>> - [Thunderbird](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/)
+>>
+> **Apple**
+>>
+>> - [Mail de macOS](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/)
+>> - [Correo electrónico para iPhone o iPad](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_iphone_ios_91/)
+>> - [Outlook Mac OS](https://docs.ovh.com/es/emails/configuracion-outlook-2016-mac/)
+>> - [Thunderbird](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/)
+>>
+> **Android**
+>>
+>> - [Android](https://docs.ovh.com/es/emails/configuracion-android/)
+>>
+> **Otros**
+>>
+>> - [Interfaz Gmail](https://docs.ovh.com/es/emails/configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/)
+>>
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 
-- **Configuración en IMAP (recomendada)**
-
-|Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
-|---|---|---|---|
-|Entrante|SSL0.OVH.NET|993|143|
-|Saliente|SSL0.OVH.NET|465|587|
-
-- **Configuración en POP**
-
-|Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
-|---|---|---|---|
-|Entrante|SSL0.OVH.NET|995|110|
-|Saliente|SSL0.OVH.NET|465|587|
+> [!tabs]
+> **Configuración en IMAP (recomendada)**
+>>
+>> |Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
+>> |---|---|---|---|
+>> |Entrante|SSL0.OVH.NET|993|143|
+>> |Saliente|SSL0.OVH.NET|465|587|
+>>
+> **Configuración en POP**
+>>
+>> |Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
+>> |---|---|---|---|
+>> |Entrante|SSL0.OVH.NET|995|110|
+>> |Saliente|SSL0.OVH.NET|465|587|
+>>
 
 > [!warning]
 >
@@ -189,5 +193,5 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 >
 
 ## Más información
-
+  
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
