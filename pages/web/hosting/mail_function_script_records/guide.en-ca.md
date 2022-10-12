@@ -1,80 +1,230 @@
 ---
-title: 'Monitoring and managing automated emails in your Web Hosting plan'
+title: "Monitoring and managing automated emails in your Web Hosting plan"
 slug: web_hosting_monitoring_automatic_emails
-excerpt: 'Find out how to monitor and manage automated emails sent from your OVHcloud Web Hosting plan'
+excerpt: "Find out how to monitor and manage automated emails sent from your OVHcloud Web Hosting plan"
 section: Troubleshooting
+order: 01
 ---
 
-**Last updated 5th May 2020**
+**Last updated 12th October 2022**
 
 ## Objective
 
-Automated emails are messages that are sent via scripts. For example, they are used in contact forms on your website, and allow your web users to send you emails.
-
-**Find out how to monitor and manage automated emails sent from your OVHcloud Web Hosting plan.**
-
-## Requirements
-
-- You must have an[OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/).
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+Automated emails are messages sent via scripts. Usually using PHP's "mail()" function. For example, they are used for your website’s contact form, and allow your visitors to send you messages.
 
 > [!primary]
 >
-> This guide is only relevant for emails sent using scripts located on your OVHcloud Web Hosting plan.
+> This guide mainly applies to emails sent from scripts located on your [OVHcloud web hosting](https://www.ovhcloud.com/en-ca/web-hosting/) using PHP's "mail()" function.
 >
-> Are you looking to manage email addresses included in your MX Plan solution, or in your [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/){.external}? Go to the `Emails`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+> If you would like to manage the email addresses included in your MX Plan package or in your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/){.external} package, please refer to our [MX Plan](https://docs.ovh.com/ca/en/emails/) documentation.
 >
 
-## Instructions
+> [!success]
+>
+> Although we strongly recommend using PHP's "mail()" function, you can also send emails from your shared hosting by going through a script using [Simple Mail Transfer Protocol (SMTP)](#SMTP).
+>
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, you can monitor and manage automated emails sent from your OVHcloud Web Hosting plan. To do this, log in to your Control Panel, click `Web hosting`{.action}, then choose the Web Hosting plan concerned from the list. Next, click `More +`{.action}, then `Email scripts`{.action}.
+**Find out how to monitor and manage automated emails sent from your OVHcloud web hosting plan.**
 
-On the page that opens at this stage, you can monitor and manage automated emails sent from your OVHcloud Web Hosting plan.
+# Requirements
+
+- Have an [OVHcloud web hosting](https://www.ovhcloud.com/en-ca/web-hosting/){.external} solution.
+- Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+
+## In practice
+
+You can monitor and manage automated emails from your OVHcloud Web Hosting plan in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Once you have logged in, go to the `Web cloud`{.action} section, click on `Hosting plan`{.action}, then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
 
 ![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
-### Monitor automated emails being sent
+The page that opens will enable you to monitor and manage automated emails sent from your [OVHcloud web hosting](https://www.ovhcloud.com/en-ca/web-hosting/).
 
-The `Email scripts`{.action} page provides several different types of information, which you can use to view script-generated automated email activity at a glance.
+### Overview of the “Email scripts” section
 
-|Information|Details|
-|---|---|
-|Service status|Shows the current status of a service that sends automated emails from your Web Hosting plan. A status in a green box means that email sending is operational, whilst a status in a red box means that emails are no longer being sent. Depending on this status, the way that email sending is managed will vary. For more information on this, please refer to the [Managing send statuses for automated emails](../web_hosting_monitoring_automatic_emails/#managing-send-statuses-for-automated-emails){.external} section of this guide.|
-|Send error reports to|Receive daily error reports on an email address of your choice. You can define an email address for this by clicking the `Change recipient`{.action} button. This report will contain emails sent from your Web Hosting plan that bounced back to OVHcloud with errors, because they could not reach a recipient. By clicking the `Emails with errors`{.action} button, you can read reports on such emails at any time, via your OVHcloud Control Panel.|
-|Total number of emails sent|Shows the total number of automated emails sent since you ordered your OVHcloud Web Hosting plan.|
-|Emails sent today|Shows the total number of automated emails sent today only.|
-|Total number of emails with errors|Shows the total number of automated emails sent since you ordered your Web Hosting plan that bounced back to OVHcloud with errors because they could not reach recipients.|
-|Log of emails sent|Shows a graph representing the log of emails sent from your Web Hosting plan over the course of previous days.|
+![hosting](images/Interface.png){.thumbnail}
+
+The page displays several pieces of information that you can use to view automated email activity generated from your scripts:
+
+- **Service status**: the current status of the service sending automated emails from your web hosting plan:
+    - If it is green (*"Enabled"* or *"Force"*), it means that the outgoing is operational. 
+    - If it is red (*“Disabled”*, *“Bounce”* or *“SPAM”*), the sending will stop. <br>
+
+    Depending on this status, the outgoing process will be different.
+
+- **Error report to**: receive it daily on the email address of your choice. Set it by clicking the `Change recipient`{.action} button. This report will include emails sent from your web hosting plan that bounced back with an error at OVHcloud. A `Emails with errors`{.action} button also allows you to view these reports at any time on the right of the `Email scripts`{.action} page.
+- **Total emails sent**: the total number of automated emails sent since you created your OVHcloud web hosting plan.
+- **Emails sent today**: total number of automated emails sent today only.
+- **Total number of emails with errors**: the total number of automated emails sent since you created your Web Hosting plan that returned an error to OVHcloud.
+- **Sent email history**: graph showing the log of emails sent from your web hosting plan over the previous days.
+
+On the right, there are several buttons you can use to manage automated emails sent from your Web Hosting plan. Depending on the service status, some options may not be available.
+
+- **Block sending**: blocks the distribution of automated emails from your Web Hosting plan. The emails generated by your scripts after the blocking will not be sent, but will be stored in a queue for a maximum of 72 hours.
+- **Unblock sending**: unblocks the sending of automated emails from your Web Hosting plan. The emails in the queue will also be redistributed.
+- **Purge emails**: clears the emails in the queue and unblocks the sending of emails.
+
+To perform the desired action, click the corresponding button, then click `Confirm`{.action}. In some cases, the desired action may take several minutes to be fully effective.
 
 > [!primary]
 >
-> To stop your Web Hosting plan’s automated email system from being abused, we strongly recommend setting up a security system (e.g. a captcha test) for the forms on your website that are used to send emails (contact forms, for example).
+> To avoid unwanted use of automated emails from your Web Hosting plan, we strongly recommend setting up a security system, such as a captcha in the forms on your website that send emails (a contact form, for example).
 >
 
-![hosting](images/monitoring-automatic-emails-step2.png){.thumbnail}
+If you notice that the emails generated from your scripts are no longer sent, but the service status still allows the emails to be sent (*“Enabled”* or *“Force”*), we recommend:
 
-If you notice that your script-generated emails are no longer being sent, but the service status still enables email sending, we advise:
+- **check the scripts sending the email**: the scripts may not be able to send the emails due to a syntax error. Check the content of your scripts, correct them if necessary, then try again.
 
-- **Checking the email sending scripts.** The scripts may not be able to send the emails due to a syntax error. Check the content of your scripts, correct them if required, then try again.
+- **test email sending via test script**: create a test script that sends an email to your personal email address using the following code:
 
-- **Testing email sending via a test script.** Write a test script that sends an email to your personal email address. If you are able to receive the email, it will mean that your email sending scripts contain errors. If your scriptwriting knowledge is basic, you can find test scripts available on the internet.
+```bash
+<?php
+$to = "RecipientEmail@adress.tld"; 
+$subject = "Test mail PHP"; 
+$content = "The body/content of the Email";
+$headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
 
-- **Sending emails without using the SMTP server.** Don’t specify a SMTP server in your script parameters. If you have an interface for managing email sending from your website, you need to ensure that this parameter can be modified in your website’s configuration.
+if (mail($to, $subject, $content, $headers))
+echo "The email has been sent successfully!";
+else
+echo "Email did not leave correctly!";
+?>
+```
 
-### Managing send statuses for automated emails
+For `$headers`, enter the same sending email address twice.
 
-On the `Email scripts`{.action} page, there are several buttons you can use to manage automated emails sent from your Web Hosting plan. Depending on the service status, some options may not be available.
+If you receive correctly the message *The email has been sent successfully!* on the email address you have defined in line `$to`, this indicates that the scripts sending your emails contain errors.
 
-|Actions|Details|
-|---|---|
-|Block sending|Blocks automated emails from being sent from your Web Hosting plan. Once you have blocked sending, script-generated emails will not be sent, and will be stored in a 'pending' queue for a maximum of 72 hours.|
-|Unblock sending|Unblocks automated emails from being sent from your Web Hosting plan. This will also cause any emails stored in the 'pending' queue to be sent out to recipients.|
-|Purge emails|Deletes the emails stored in the 'pending' queue, and unblocks emails from being sent.|
+- **Make sure that your outgoing messages do not use an SMTP server**: Do not specify an SMTP server in your script parameters when using the PHP "mail()" function. If you have an interface for managing emails from your website, change this setting in your website’s configuration.
 
-To perform any of these actions, click the corresponding button, then `Confirm`{.action}. In some cases, the action you want to perform will take several minutes to become fully effective.
+- **Check the total size of your email**: The email sent must not exceed the total size of **10 MB** (encapsulation and header included). The content of your email must not exceed **7/8 MB**.
 
-![hosting](images/monitoring-automatic-emails-step3.png){.thumbnail}
+### Manage "Disabled", "Bounce" and "SPAM" states
 
-## Go further
+### The "Disabled" status
 
-Join our community of users on <https://community.ovh.com/en/>.
+This state occurs when:
+
+- too many emails were sent very quickly
+- too many emails are returned in error
+- You have yourself disabled the feature from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+
+To unblock the situation, go to the `Web cloud`{.action} section, click on `Hosting plan`{.action}, then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
+
+Then click `Unblock sending`{.action}, and wait a few minutes for the sending service to become active again.
+
+### The "Bounce" status
+
+This state occurs when a certain percentage of your emails sent automatically return with errors.
+
+To unblock the situation, go to the `Web cloud`{.action} section, click on `Hosting plan`{.action}, then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
+
+There are two options:
+
+- If you click on `Unblock sending`{.action}, the service status will change to *"Force"*. The ratio of **returned emails to the total number of sent emails** authorised before a block will be doubled. The shipment will be operational again a few minutes after the unblocking.
+- If you click on `Purge Emails`{.action}, this will erase all emails from the queue and the service status will change back to *"Enabled"* without doubling the ratio.
+
+### The "SPAM" report
+
+This state occurs when spam emails are sent from your hosting.
+
+Generally, this block is accompanied by the sending of an email titled **“Abuse with your domain.tld hosting”** generated automatically by our security robots:
+
+![hosting](images/AbuseMail.png){.thumbnail}
+
+There are three possible scenarios for this situation:
+
+- **Case 1: robot operation of a contact form**:
+
+To resolve this issue, you will need to secure all scripts that can send emails from your hosting space, using a "Captcha" type system.
+
+Go to the `Web cloud`{.action} section, click on `Hosting plan`{.action} then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
+
+Then click `Purge Emails`{.action}, this will erase all emails from the queue and the service status will change back to *"Enabled"*.
+
+In this case, a purge is required to delete the SPAM that is waiting to be sent.
+
+- **Case 2: injecting malicious files into your hosting system**:
+
+To correct this, you must do at least the following:
+
+- Analyse [your hosting logs](https://docs.ovh.com/ca/en/hosting/shared_view_my_websites_logs_and_statistics/) to identify security vulnerabilities and infected files.
+- Delete or correct the malicious file(s)/module(s).
+- For CMSs (WordPress, Joomla!, PrestaShop, Drupal, ...), update the CMS, plugin(s) and associated theme.
+- Secure your contact forms with a captcha.
+
+If you are using a CMS, use the “official” plugin(s)/theme(s) instead.
+Update the CMS, plugins and associated theme as regularly as possible to avoid this happening again.
+
+Once you have secured your hosting plan, go to the `Web cloud`{.action} section, click on `Hosting plan`{.action} then select the concerned hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
+
+Then click `Purge Emails`{.action}, this will erase all emails from the queue and the service status will change back to *"Enabled"*.
+
+In this case, a purge is required to delete the SPAM that is waiting to be sent.
+
+- **Case 3: Sending of legitimate emails considered as SPAM**:
+
+If you are the originator of the emails that caused the block, below are some examples of **uses to avoid** when sending an email (so that it is not considered too "easily" as a SPAM):
+
+- 3 or more words in upper case in the subject/subject of the email.
+- No subject/text entered in the email.
+- The e-mail only contains an image larger than 1 MB and a few words.
+- The subject of the email starts with: Hi, FREE, BUY, BUYING,....
+- The email contains more than 70% white (abuse of the "SPACE" or "ENTER" key on the keyboard).
+- The font used to write the email is extremely large.
+- The writing colour and the background colour are the same for writing the email.
+- The public IP address (IP of your internet access point for example) is listed with reputable organisations.
+- The header of the sent email does not respect the RFC "emails" (norms or standards email).
+- The link(s) in the email are incorrect.
+- A URL in the email is not secure (example: declared as `https://`, while the URL only exists as `http://`)
+- The e-mail contains terms of a pornographic nature or similar.
+- The email contains an executable (EXE, BAT, PIF, XML, XLSX or documents with "macros"), even if it is "zipped".
+
+If your service is still in a *“SPAM”* state, reply to the automatic email you received, specifying that you have taken the necessary measures.
+
+Our anti-spam service will analyse the situation, and our support team will get back to you to explain the unblock procedure.
+
+### Send emails using an "SMTP" script <a name="SMTP"></a>
+
+> [!warning]
+>
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+> 
+> We will provide you with the next section to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+>
+
+Although we strongly recommend using PHP’s "mail()" function, shared hosting allows you to send emails via a script that uses Simple Mail Transfer Protocol (SMTP). The total size of your email can not exceed **10 MB** (i.e. **7/8 MB excluding encapsulation**).
+
+> [!warning]
+> 
+> Emails sent with a script that uses an SMTP configuration cannot be managed and tracked from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+> 
+
+To do this, you can use the following script by replacing only the `Host`, `Username` and `Password` values with your own SMTP settings:
+
+```bash
+$mail->Host = "your.smtp.server";
+$mail->SMTPAuth = true; 
+$mail->SMTPSecure = "ssl";
+$mail->Port = 465; 
+$mail->Username = "e-mail@adress.tld"; 
+$mail->Password = "YourEmailPassword"; 
+```
+
+> [!primary]
+>
+> If you use an OVHcloud email address and only in this case, you can also use the `SMTPSecure` *"startls"* or *"tls"* with the `Port` **587**. However, the `SMTPSecure` *"ssl"* with the `Port` **465** should be preferred.
+> 
+
+## Go further <a name=`go-further`></a>
+
+[View your hosting logs](https://docs.ovh.com/ca/en/hosting/shared_view_my_websites_logs_and_statistics/)
+
+[Fix the 403 Forbidden page that appears on your website](https://docs.ovh.com/ca/en/hosting/diagnostic-403-forbidden/)
+
+[Restore your web hosting plan’s FTP storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en>.
