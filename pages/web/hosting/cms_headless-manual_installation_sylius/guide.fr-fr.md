@@ -126,6 +126,10 @@ Il faut d'abord télécharger la dernière version LTS _(long term support)_ de 
 curl -sLO https://nodejs.org/dist/latest-v16.x/node-v16.17.1-linux-x64.tar.xz
 ```
 
+>[!warning]
+>NodeJS évolue régulièrement. Vous devrez modifier cette URL pour avoir la dernière version de la librairie.
+>Il est recommandé de privilégier la version LTS _(long-term support)_.
+
 On crée un répertoire pour y décompresser le fichier téléchargée :
 ```sh
 mkdir node
@@ -152,7 +156,7 @@ L'ensemble des fichiers sera installé dans le répertoire `sylius` :
 
 ![Répertoire Sylius](images/cms_headless-manual_installation_sylius%5B2%5D.png)
 
-#### Configurer Sylius
+#### Configurer Sylius - Partie _back end_
 
 ##### **Accès à la base de données**
 
@@ -247,6 +251,28 @@ Il suffit, ensuite, de répondre aux différents éléments demandés par l'appl
 - le login à utiliser pour se connecter au compte (laisser vide pour utiliser l'adresse mail précédemment saisie)
 - un mot de passe et sa confirmation.
 
-Votre installation est terminée !
+L'installation de Sylius sur votre serveur est terminée, mais il faut encore configurer quelques éléments pour le rendre pleinement opérationnel.
+
+#### Configurer Sylius - Partie _front end_
+
+Sylius est installé, la base de données renseignée, mais à ce stage, si vous allez sur votre site, vous n'aurez qu'une interface minimaliste : le lien vers les feuilles de style de fonctionne pas (erreur 404).
+
+##### **Installer Yarn**
+
+Pour la gestion des assets (feuilles de style, JavaScript), Sylius utilise [Gulp](https://gulpjs.com/), une librairie JavaScript permettant l'automatisation de certaines tâches répétitives. Yarn est un gestionnaire de dépendance pour NodeJS (à l'image de ce qu'est Composer pour PHP).
+
+Installer Yarn à la racine du projet :
+
+```sh
+../node/bin/npm install yarn
+```
+
+
+
+
+
+
+
+
 
 ## Aller plus loin
