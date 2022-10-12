@@ -142,7 +142,7 @@ And here is an example of a command you could run to run the same job after uplo
 $ ./ovh-spark-submit --projectid yourProjectId --upload ./spark-examples.jar --class org.apache.spark.examples.SparkPi --driver-cores 1 --driver-memory 4G --executor-cores 1 --executor-memory 4G --num-executors 1 swift://odp/spark-examples.jar 1000
 ```
 
-#### Optionally configure your job ExitCode
+#### Optional - Configure your ExitCode job
 
 When your job execution status is complete, by default the ExitCode returned by the CLI Spark-Submit will be zero.
 In some cases you may want the returned exitcode  to be different from 0. If you do this once your job is processed, the CLI will return your code.
