@@ -36,17 +36,17 @@ Jfrog Artifactory is one of the major solution to manage dependencies and packag
 ## Requirements 
 
 - An OVHcloud Managed Kubernetes cluster
-- The Helm client installed and configured. You can follow the OVHcloud tutorial: [Installing Helm on OVHcloud Managed Kubernetes](../installing-helm/).
+- The Helm client installed and configured. You can follow OVHcloud tutorial: [Installing Helm on OVHcloud Managed Kubernetes](../installing-helm/).
 - The `kubectl` client installed and configured. You can follow the OVHcloud tutorial: [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl-on-an-ovh-managed-kubernetes-cluster/)
 
 ## Instructions
 
-> You can find more detailled documentation about differents ways to install Jfrog Artifactory in the official [documentation](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-HelmInstallation).
+> You can find more detailed documentation about different ways to install Jfrog Artifactory in the official [documentation](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-HelmInstallation).
 > The following tutorial explain how to install a single node installation, for more advanced installation (like HA see the [documentation](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-HAInstallation)).
 
-### Configure Helm to use the Jfrog chart
+### Configure Helm to use the Jfrog Helm chart
 
-In a terminal add the Jfrog repository to your Helm installation:
+In a terminal add the Jfrog Helm repository to your Helm installation:
 
 ```bash
 $ helm repo add jfrog https://charts.jfrog.io
@@ -71,9 +71,9 @@ Update Complete. ⎈Happy Helming!⎈
 
 ### Configure the master key and the join key
 
-At this stage it's strongly recommended that you configure your master key and join key, more informations about these keys in the official [documentation](https://www.jfrog.com/confluence/display/JFROG/Managing+Keys).
+At this stage, it's highly recommended that you configure your master key and join key, more information on these keys in the official [documentation](https://www.jfrog.com/confluence/display/JFROG/Managing+Keys).
 
-In a terminal configure the master key ad follow:
+In a terminal, configure the master key as follows:
 
 ```bash
 $ export MASTER_KEY=$(openssl rand -hex 32)
@@ -92,12 +92,12 @@ xxxxxxxxfffffffffffffxxxxxxxxxxxxxxxxxxxxxgggggggggggggxxxxxxxxxx
 </code>
 </pre>
 
-Next configure the join key as follow:
+Next, configure the join key as follows:
 
 ```bash
 $ export JOIN_KEY=$(openssl rand -hex 32)
 
-$ echo ${MASTER_KEY}
+$ echo ${JOIN_KEY}
 ```
 
 Output should be like this:
@@ -106,20 +106,20 @@ Output should be like this:
 <code>
 $ export JOIN_KEY=$(openssl rand -hex 32)
 
-$ echo ${MASTER_KEY}
+$ echo ${JOIN_KEY}
 xxxxxxxxyyyyyyyyyyyyyxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyxxxxxxxxxx
 </code>
 </pre>
 
-### Install Jfrog Artifcatory with Helm
+### Install Jfrog Artifactory with Helm
 
-First you need to create the `artifactory` namespace:
+First, you need to create the `artifactory` namespace:
 
 ```bash
 $ kubectl create ns artifactory
 ```
 
-Next you can install Jfrog Artifactory with the following helm command:
+Next, you can install Jfrog Artifactory with the following helm command:
 
 ```bash
 $ helm upgrade --install artifactory --set artifactory.masterKey=${MASTER_KEY} --set artifactory.joinKey=${JOIN_KEY} --namespace artifactory jfrog/artifactory
@@ -154,7 +154,7 @@ Congratulations. You have just deployed JFrog Artifactory!
 </code>
 </pre>
 
-Next wait that all Pods status are `Running` and _ready_ (i.e the number of desired Pods is equal to the actual in the `Ready` column):
+Next, wait until the status of all Pods status are `Running` and _ready_ (i.e the number of Pods desired equals to the actual number in the `Ready` column):
 
 ```bash
 $ kubectl get pods -n artifactory
@@ -182,11 +182,40 @@ Open the service URL in a browser and enter the default credentials `admin` and 
 >
 > Do not forget to change the default password!
 
-And that's it you can start to use your Jfrog Artifactory instance:
+And that's it, you can start using your Jfrog Artifactory instance:
 
 ![Artifactory welcome page](images/artifactory-welcome-page.png){.thumbnail}
 
+After completing the configuration steps (see official [documentation](https://www.jfrog.com/confluence/display/JFROG/Repository+Management)), your Jfrog Artifactory is ready for use:
+
+![Artifactory Maven repositories](images/artifactory-maven-repositories.png){.thumbnail}
+
+### Uninstall Jfrog Artifactory
+
+Like the other steps, the uninstallation is done with Helm command:
+
+```bash
+$ helm uninstall artifactory -n artifactory
+```
+
+Output should be like this:
+
+<pre class="console">
+<code>
+$ helm uninstall artifactory -n artifactory
+
+release "artifactory" uninstalled
+</code>
+</pre>
+
+Then delete the `artifactory` namespace:
+
+```bash
+$ kubectl delete ns artifactory
+```
 ## Go further
+
+For more details on how to use the Jfrog Artifactory see the official [documentations](https://www.jfrog.com/confluence/site/documentation).
 
 To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
