@@ -6,7 +6,7 @@ section: Servicios y opciones de OVHcloud
 order: 04
 ---
 
-**Última actualización: 10/06/2022**
+**Última actualización: 12/10/2022**
 
 ## Objetivo
 
@@ -95,7 +95,7 @@ Los usuarios con permiso [token validator](./#confirmar-una-operacion-con-un-tok
 
 ### Restaurar una contraseña
 
-Esta operación solo está disponible para los usuarios que dispongan del permiso **token validator**.
+Esta operación solo está disponible para los usuarios que dispongan del permiso **token validator**. Un usuario que no disponga de esta autorización recibirá un error 400.
 
 > [!primary]
 >

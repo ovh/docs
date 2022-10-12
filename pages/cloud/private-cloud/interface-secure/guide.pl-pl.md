@@ -6,11 +6,11 @@ section: 'Usługi i opcje OVHcloud'
 order: 04
 ---
 
-**Ostatnia aktualizacja z dnia 10-06-2022**
+**Ostatnia aktualizacja z dnia 12-10-2022**
 
 ## Wprowadzenie
 
-OVHcloud zapewnia bezpieczny interfejs umożliwiający potwierdzanie wrażliwych operacji (takich jak zmiana hasła, dodanie użytkownika itp.) realizowanych przez użytkowników lub osoby trzecie mające dostęp do Twojej infrastruktury Private Cloud HDS lub PCI-DSS.
+OVHcloud zapewnia bezpieczny interfejs umożliwiający potwierdzanie wrażliwych operacji (takich jak zmiana hasła, dodanie użytkownika itp.) realizowanych przez użytkowników lub osoby trzecie mające dostęp do Twojej infrastruktury Hosted Private Cloud HDS lub PCI-DSS.
 
 **Z tego przewodnika dowiesz się, jak zatwierdzać wrażliwe operacje przy użyciu bezpiecznego interfejsu.**
 
@@ -95,7 +95,7 @@ Do użytkowników posiadających uprawnienie [token validator](./#zatwierdzenie-
 
 ### Reset hasła
 
-Ta procedura jest dostępna wyłącznie dla użytkowników posiadających uprawnienie **token validator**.
+Ta procedura jest dostępna wyłącznie dla użytkowników posiadających uprawnienie **token validator**. Użytkownik, który nie posiada tej zgody, otrzyma błąd 400.
 
 > [!primary]
 >

@@ -6,11 +6,11 @@ section: 'Servizi e opzioni OVHcloud'
 order: 4
 ---
 
-**Ultimo aggiornamento: 10/06/2022**
+**Ultimo aggiornamento: 12/10/2022**
 
 ## Obiettivo
 
-L’interfaccia sicura è un sistema che permette di confermare le operazioni sensibili (come modificare la password o aggiungere nuovi account) effettuate da altri utenti o da terzi sui servizi Private Cloud con certificazione HDS o PCI-DSS.
+L’interfaccia sicura è un sistema che permette di confermare le operazioni sensibili (come modificare la password o aggiungere nuovi account) effettuate da altri utenti o da terzi sui servizi Hosted Private Cloud con certificazione HDS o PCI-DSS.
 
 **Questa guida ti mostra come utilizzare l’interfaccia per convalidare questo tipo di operazioni.**
 
@@ -95,7 +95,7 @@ Gli utenti  con permesso [token validator](./#confermare-un-operazione-tramite-t
 
 ### Reimpostare una password
 
-Questa procedura è valida soltanto per gli utenti che dispongono del diritto **token validator**.
+Questa procedura è valida soltanto per gli utenti che dispongono del diritto **token validator**. Un utente che non dispone di questa autorizzazione otterrà un errore 400.
 
 > [!primary]
 >

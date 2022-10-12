@@ -5,11 +5,11 @@ excerpt: Erfahren Sie hier, wie Sie das sichere Interface verwenden, um kritisch
 section: OVHcloud Dienste und Optionen
 ---
 
-**Letzte Aktualisierung am 10.06.2022**
+**Letzte Aktualisierung am 12.10.2022**
 
 ## Ziel
 
-OVHcloud stellt Ihnen ein sicheres Interface zur Verfügung, über welches Sie sensible Operationen (Passwortänderungen, Hinzufügen eines Benutzers etc.) bestätigen können, die von Benutzern oder Dritten auf Ihrer HDS oder PCI-DSS Private Cloud durchgeführt wurden.
+OVHcloud stellt Ihnen ein sicheres Interface zur Verfügung, über welches Sie sensible Operationen (Passwortänderungen, Hinzufügen eines Benutzers etc.) bestätigen können, die von Benutzern oder Dritten auf Ihrer HDS oder PCI-DSS Hosted Private Cloud durchgeführt wurden.
 
 **Diese Anleitung erklärt, wie Sie das sichere Interface verwenden, um diese Operationen zu bestätigen.**
 
@@ -94,7 +94,7 @@ Anschließend wird ein Token an die Benutzer mit [token validator](./#operation-
 
 ### Passwort zurücksetzen
 
-Diese Operation ist nur für Benutzer mit **token validator**-Berechtigung verfügbar.
+Diese Operation ist nur für Benutzer mit **token validator**-Berechtigung verfügbar. Ein Benutzer, der nicht über diese Berechtigung verfügt, erhält einen Fehler 400.
 
 > [!primary]
 >
