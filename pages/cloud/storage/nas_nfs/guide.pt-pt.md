@@ -48,7 +48,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 > [!primary]
 >
 > Pode automatizar a montagem do NAS ao iniciar a sua distribuição através da seguinte linha que deve adicionar ao ficheiro /etc/fstab:
-> 
+>
 > ```
 > IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw,_netdev,mountproto=tcp 0 0
 > ```
@@ -101,7 +101,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CAMINHO_NFS /PASTA_MONTAGEM
 > [!primary]
 >
 > Pode automatizar a montagem do NAS ao iniciar a sua distribuição através da seguinte linha que deve adicionar ao ficheiro /etc/fstab:
-> 
+>
 > ```
 > IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw,_netdev,mountproto=tcp 0 0
 > ```
@@ -142,13 +142,13 @@ mount -t nfs IP_NAS:/CAMINHO_NFS /PASTA_MONTAGEM
 > [!primary]
 >
 > Pode automatizar a montagem do NAS ao iniciar a sua distribuição através da seguinte linha que deve adicionar ao ficheiro /etc/fstab:
-> 
+>
 > ```
 > IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
 > ```
-> 
+>
 > E colocar o serviço "nfsmount" ao iniciar o servidor com o seguinte comando:
-> 
+>
 > ```
 > rc-update add nfsmount default
 > ```
@@ -183,7 +183,7 @@ Para montar um NFS em Proxmox, é necessário:
 > [!primary]
 >
 > Pode automatizar a montagem do NAS ao iniciar a sua distribuição através da seguinte linha que deve adicionar ao ficheiro /etc/fstab:
-> 
+>
 > ```
 > IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
 > ```
@@ -194,7 +194,7 @@ Para montar um NFS em Proxmox, é necessário:
 Para montar um NFS em ESXI, é necessário:
 
 - Aceder ao servidor através do vSphere
-- No painel de gestão, clique em `Inventory`{.action}: 
+- No painel de gestão, clique em `Inventory`{.action}:
 
 
 ![configuration](images/esxi_1.jpg){.thumbnail}
@@ -227,7 +227,7 @@ Terá de preencher o formulário:
 > [!alert]
 >
 > O utilizador NFS é `root` e as alterações de direitos deste utilizador podem gerar conflitos com os direitos CIFS/SMB existentes.
-> 
+>
 
 ## Quer saber mais?
 

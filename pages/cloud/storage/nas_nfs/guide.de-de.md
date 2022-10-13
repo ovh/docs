@@ -142,13 +142,13 @@ mount -t nfs IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 > [!primary]
 >
 > Um den NAS-Mount beim Start Ihrer Distribution zu automatisieren, fügen Sie die folgende Zeile zur Datei /etc/fstab hinzu:
-> 
+>
 > ```
 > IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0
 > ```
-> 
+>
 > Fügen Sie anschließend mit folgendem Befehl den Dienst “nfsmount" zum Start Ihres Servers hinzu:
-> 
+>
 > ```
 > rc-update add nfsmount default
 > ```
@@ -183,7 +183,7 @@ Voraussetzungen zum Mounten einer NFS-Freigabe unter Proxmox:
 > [!primary]
 >
 > Um den NAS-Mount beim Start Ihrer Distribution zu automatisieren, fügen Sie die folgende Zeile zur Datei /etc/fstab hinzu:
-> 
+>
 > ```
 > IP_NAS:/CNFS_PATH /MOUNTING_FOLDER nfs rw 0 0
 > ```
@@ -194,7 +194,7 @@ Voraussetzungen zum Mounten einer NFS-Freigabe unter Proxmox:
 Voraussetzungen zum Mounten einer NFS-Freigabe unter ESXi:
 
 - Sie können via vSphere auf Ihren Server zugreifen.
-- Sie befinden sich im Verwaltungspanel im Tab `Inventory`{.action}. 
+- Sie befinden sich im Verwaltungspanel im Tab `Inventory`{.action}.
 
 
 ![Konfiguration](images/esxi_1.jpg){.thumbnail}
@@ -227,7 +227,7 @@ Füllen Sie das nun angezeigte Formular aus:
 > [!alert]
 >
 > Der NFS-Benutzer ist `root`-Benutzer. Rechteänderungen mit diesem Benutzer können daher Konflikte mit vorhandenen CIFS/SMB-Rechten verursachen.
-> 
+>
 
 ## Weiterführende Informationen
 

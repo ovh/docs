@@ -19,7 +19,7 @@ Ce guide vous permet de réaliser un montage NFS sur les distributions les plus 
 
 ### Linux
 
-Compatibilité : Debian & Ubuntu 
+Compatibilité : Debian & Ubuntu
 
 Pour monter un partage NFS sous Linux, il faut :
 
@@ -48,7 +48,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 > [!primary]
 >
 > Vous pouvez automatiser le montage du NAS au démarrage de votre distribution via la ligne suivante à ajouter dans le fichier /etc/fstab :
-> 
+>
 > ```
 > IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw,_netdev,mountproto=tcp 0 0
 > ```
@@ -101,7 +101,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 > [!primary]
 >
 > Vous pouvez automatiser le montage du NAS au démarrage de votre distribution via la ligne suivante à ajouter dans le fichier /etc/fstab :
-> 
+>
 > ```
 > IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw,_netdev,mountproto=tcp 0 0
 > ```
@@ -142,13 +142,13 @@ mount -t nfs IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 > [!primary]
 >
 > Vous pouvez automatiser le montage du NAS au démarrage de votre distribution via la ligne suivante à ajouter dans le fichier /etc/fstab :
-> 
+>
 > ```
 > IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
 > ```
-> 
+>
 > Puis mettre le service "nfsmount" au démarrage du serveur avec la commande suivante :
-> 
+>
 > ```
 > rc-update add nfsmount default
 > ```
@@ -183,7 +183,7 @@ Pour monter un partage NFS sous Proxmox, il faut :
 > [!primary]
 >
 > Vous pouvez automatiser le montage du NAS au démarrage de votre distribution via la ligne suivante à ajouter dans le fichier /etc/fstab :
-> 
+>
 > ```
 > IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
 > ```
@@ -194,7 +194,7 @@ Pour monter un partage NFS sous Proxmox, il faut :
 Pour monter un partage NFS sous ESXI, il faut :
 
 - Un accès au serveur via vSphere
-- Sur le panel de gestion, cliquez sur `Inventory`{.action} : 
+- Sur le panel de gestion, cliquez sur `Inventory`{.action} :
 
 
 ![configuration](images/esxi_1.jpg){.thumbnail}
@@ -227,7 +227,7 @@ Vous aurez alors accès à un formulaire à complêter :
 > [!alert]
 >
 > L'utilisateur NFS est `root`, les modifications de droits avec cet utilisateur peuvent générer des conflits avec des droits CIFS/SMB existants.
-> 
+>
 
 ## Aller plus loin
 

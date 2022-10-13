@@ -47,7 +47,7 @@ The following notations are used as arguments in the command line sections below
 > [!warning]
 >
 > The NFS user is `root`; rights changes with this user can generate conflicts with existing CIFS / SMB rights.
-> 
+>
 
 
 ### Debian / Ubuntu
@@ -76,7 +76,7 @@ You can now access your mounted partition at the specified folder.
 > [!primary]
 >
 > In order to automate the mounting process for each time the server boots, add the following line to the file `/etc/fstab`:
-> 
+>
 > `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw,_netdev,mountproto=tcp 0 0`
 >
 
@@ -114,7 +114,7 @@ You can now access your mounted partition at the specified folder.
 > [!primary]
 >
 > In order to automate the mounting process for each time the server boots, add the following line to the file `/etc/fstab`:
-> 
+>
 > `IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER nfs rw,_netdev,mountproto=tcp 0 0`
 >
 
@@ -147,7 +147,7 @@ In the Proxmox administration interface, click on `Storage`{.action} in the vert
 
 ![proxmox](images/proxmox1.png){.thumbnail}
 
-Click on the button `Add`{.action} and select `NFS`{.action}. 
+Click on the button `Add`{.action} and select `NFS`{.action}.
 
 In the popup window, enter the following details.
 
@@ -162,7 +162,7 @@ In the popup window, enter the following details.
 
 Click on `Add`{.action} to mount your partition.
 
-### VMware ESXI 
+### VMware ESXI
 
 In the VMware ESXI administration interface, click on `Storage`{.action} in the menu on the left.
 

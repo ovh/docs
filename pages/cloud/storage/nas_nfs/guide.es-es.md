@@ -31,7 +31,7 @@ Para montar un recurso compartido por NFS en Linux:
 aptitude install nfs-client
 ```
 
-A continuación, utilice el siguiente comando para montarlo: 
+A continuación, utilice el siguiente comando para montarlo:
 
 
 ```sh
@@ -48,7 +48,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE
 > [!primary]
 >
 > Puede automatizar el montaje del NAS al arrancar su distribución añadiendo la siguiente línea al archivo **/etc/fstab**:
-> 
+>
 > ```
 > IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE nfs rw,_netdev,mountproto=tcp 0 0
 > ```
@@ -85,7 +85,7 @@ A continuación, reinicie el servicio rpcbind mediante el siguiente comando:
 /etc/init.d/rpcbind start
 ```
 
-A continuación, utilice el siguiente comando para montarlo: 
+A continuación, utilice el siguiente comando para montarlo:
 
 ```sh
 mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE
@@ -101,7 +101,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE
 > [!primary]
 >
 > Puede automatizar el montaje del NAS al arrancar su distribución añadiendo la siguiente línea al archivo **/etc/fstab**:
-> 
+>
 > ```
 > IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE nfs rw,_netdev,mountproto=tcp 0 0
 > ```
@@ -142,13 +142,13 @@ mount -t nfs IP_NAS:/RUTA_NFS /CARPETA_MONTAJE
 > [!primary]
 >
 > Puede automatizar el montaje del NAS al arrancar su distribución añadiendo la siguiente línea al archivo **/etc/fstab**:
-> 
+>
 > ```
 > IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE nfs rw 0 0
 > ```
-> 
+>
 > A continuación, para que el servicio nfsmount se inicie al arrancar el servidor, utilice el siguiente comando:
-> 
+>
 > ```
 > rc-update add nfsmount default
 > ```
@@ -183,7 +183,7 @@ Para montar un recurso compartido por NFS en Proxmox:
 > [!primary]
 >
 > Puede automatizar el montaje del NAS al arrancar su distribución añadiendo la siguiente línea al archivo **/etc/fstab**:
-> 
+>
 > ```
 > IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE nfs rw 0 0
 > ```
@@ -194,7 +194,7 @@ Para montar un recurso compartido por NFS en Proxmox:
 Para montar un recurso compartido por NFS en ESXi:
 
 - Conéctese al servidor mediante vSphere.
-- En el panel de control, haga clic en `Inventory`{.action}: 
+- En el panel de control, haga clic en `Inventory`{.action}:
 
 
 ![Configuración](images/esxi_1.jpg){.thumbnail}
@@ -227,7 +227,7 @@ Complete los siguientes campos en el formulario:
 > [!alert]
 >
 > El usuario NFS es «root». Las modificaciones de permisos con este usuario pueden generar conflictos con permisos CIFS/SMB existentes.
-> 
+>
 
 ## Más información
 

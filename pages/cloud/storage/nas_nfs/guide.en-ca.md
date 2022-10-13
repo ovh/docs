@@ -19,7 +19,7 @@ This guide allows you to mount NFS on the most common distributions. To mount an
 
 ### Linux
 
-Compatibility: Debian & Ubuntu 
+Compatibility: Debian & Ubuntu
 
 To mount an NFS share on Linux, you must:
 
@@ -41,14 +41,14 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 |Argument|Description|
 |---|---|
 |IP_NAS|Corresponds to NAS name or IP|
-|/NFS_PATH|Path to NFS server for sharing (Ex: "nas-000YY/partition")|
+|/NFS_PATH|Path to NFS server for sharing (Ex: `/zpool-000YY/partition`)|
 |MOUNTING_FOLDER|Corresponds to the folder where you will mount your NFS share on your server|
 
 
 > [!primary]
 >
 > In order to automate the NAS mount when your distribution starts up, add the following line to the /etc/fstab file:
-> 
+>
 > ```
 > IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw,_netdev,mountproto=tcp 0 0
 > ```
@@ -66,7 +66,7 @@ mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName 
 |/NFS_PATH|zpool-999888/PartitionName|
 |MOUNTING_FOLDER|/media/NasHA -v|
 
-### CentOS 
+### CentOS
 
 Compatibility: CentOS
 
@@ -137,20 +137,20 @@ mount -t nfs IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 |Argument|Description|
 |---|---|
 |IP_NAS|Corresponds to NAS name or IP|
-|/NFS_PATH|Path to NFS server for sharing (Ex: "nas-000YY/partition")|
+|/NFS_PATH|Path to NFS server for sharing (Ex: `/zpool-000YY/partition`)|
 |MOUNTING_FOLDER|Corresponds to the folder where you will mount your NFS share on your server|
 
 
 > [!primary]
 >
 > In order to automate the NAS mount when your distribution starts up, add the following line to the /etc/fstab file:
-> 
+>
 > ```
 > IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0
 > ```
-> 
-> Then put the "nfsmount" service to the server starting up, with the following command. 
-> 
+>
+> Then put the "nfsmount" service to the server starting up, with the following command.
+>
 > ```
 > rc-update add nfsmount default
 > ```
@@ -185,7 +185,7 @@ Configuration
 > [!primary]
 >
 > In order to automate the mounting of the NAS when your distribution starts up, add the following line to the /etc/fstab file:
-> 
+>
 > ```
 > IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0
 > ```
@@ -196,7 +196,7 @@ Configuration
 To mount an NFS share under ESXI, you must have:
 
 - Server access via vSphere.
-- In the control panel, click on `Inventory`{.action}: 
+- In the control panel, click on `Inventory`{.action}:
 
 
 Configuration
@@ -219,7 +219,7 @@ Configuration
 |Argument|Description|
 |---|---|
 |server:|Corresponds to NAS name or IP|
-|Folder|Path to NFS server for sharing (Ex: "/nas-000YY/partition")|
+|Folder|Path to NFS server for sharing (Ex: `/zpool-000YY/partition`)|
 |Datastore|This is the name you want to give to the datastore|
 
 
@@ -230,7 +230,7 @@ Configuration
 > [!alert]
 >
 > The NFS user is `root`, rights changes with this user can generate conflicts with existing CIFS/SMB rights.
-> 
+>
 
 ## Go further
 
