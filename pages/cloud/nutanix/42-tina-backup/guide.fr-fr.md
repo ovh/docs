@@ -9,7 +9,7 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 05/10/2022**
+**Dernière mise à jour le 13/10/2022**
 
 ## Objectif
 
