@@ -85,7 +85,7 @@ Une fois le nom de domaine ajouté en tant que domaine associé, assurez-vous qu
 
 - **si vous avez choisi une configuration automatique lors de l'ajout du domaine** : l’affichage dans l’espace client OVHcloud peut prendre quelques instants pour s'actualiser ;
 
-- **si vous avez renseigné un nom de domaine non géré par OVHcloud** : cliquez sur la pastille de couleur rouge pour afficher les modifications que vous devez réaliser. Si ce nom de domaine n’utilise pas la configuration d’OVH (ses serveurs DNS), vous devrez réaliser les modifications depuis l’interface vous permettant de gérer la configuration de votre nom de domaine. Dans le cadre d'un paramétrage CNAME, vous pouvez en apprendre plus depuis la documentation intitulée [Créer un champ CNAME à l’ajout d’un domaine associé](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-ajouter-un-champ-de-type-cname/).
+- **si vous avez renseigné un nom de domaine non géré par OVHcloud** : cliquez sur la pastille de couleur rouge pour afficher les modifications que vous devez réaliser. Si ce nom de domaine n’utilise pas la configuration d’OVH (ses serveurs DNS), vous devrez réaliser les modifications depuis l’interface vous permettant de gérer la configuration de votre nom de domaine. Dans le cadre d'un paramétrage CNAME, vous pouvez en apprendre plus depuis la documentation intitulée [Créer un champ CNAME à l’ajout d’un domaine associé](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-ajouter-champ-cname-dns/).
 
 > [!primary]
 >
@@ -138,7 +138,7 @@ Depuis l'onglet `Domaine associés`{.action} de votre plateforme, cliquez sur le
 
 ## Aller plus loin
 
-[Créer un champ CNAME à l’ajout d’un domaine associé](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-ajouter-un-champ-de-type-cname/)
+[Créer un champ CNAME à l’ajout d’un domaine associé](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-ajouter-champ-cname-dns/)
 
 [Éditer une zone DNS OVHcloud](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/)
 

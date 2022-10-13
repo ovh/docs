@@ -83,7 +83,7 @@ Once the domain name has been added as an associated domain, make sure that its 
 
 - **If you chose automatic configuration when adding the domain**: Wait a few minutes until the changes are applied in the OVHcloud Control Panel.
 
-- **If you have entered a non-OVHcloud domain name**: Click the red box to view the changes you need to make. If this domain name does not use the OVHcloud configuration (its DNS servers), you must carry out the modifications in the interface you use to manage your domain name’s configuration. If you need to modify the CNAME record, you can find out more by referring to [this documentation](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/).
+- **If you have entered a non-OVHcloud domain name**: Click the red box to view the changes you need to make. If this domain name does not use the OVHcloud configuration (its DNS servers), you must carry out the modifications in the interface you use to manage your domain name’s configuration. If you need to modify the CNAME record, you can find out more by referring to [this documentation](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/).
 
 > [!primary]
 >
