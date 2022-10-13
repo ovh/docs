@@ -39,8 +39,8 @@ The following notations are used as arguments in the command line sections below
 
 |Argument|Description|
 |---|---|
-|IP_HA-NAS|The IP address of the HA-NAS (Example: 10.1.1.1)|
-|NFS_PATH|The path to the HA-NAS partition to mount, consisting of the service name and your partitions' name (Example: zpool-123456/partition01)|
+|IP_HA-NAS|The IP address of the HA-NAS (Example: `10.1.1.1`)|
+|NFS_PATH|The path to the HA-NAS partition to mount, consisting of the service name and your partitions' name (Example: `zpool-123456/partition01`)|
 |MOUNTING_FOLDER|The local folder for your mounted partition|
 
 
@@ -50,7 +50,7 @@ The following notations are used as arguments in the command line sections below
 >
 
 
-### Debian / Ubuntu
+### Debian based distributions
 
 Install the package `nfs-common`:
 
@@ -154,7 +154,7 @@ In the popup window, enter the following details.
 |Detail|Description|
 |---|---|
 |ID|An identifier for the share|
-|Server|The IP address of the HA-NAS (Example: 10.1.1.1)|
+|Server|The IP address of the HA-NAS (Example: `10.1.1.1`)|
 |Export|The path to the HA-NAS partition (It should be detected by the automatic scan; select it from the list.)|
 |Content|Content types for this NFS share (Disk image, ISO image, Container template, VZDump backup file, Container, Snippets)|
 
@@ -179,8 +179,8 @@ Complete the form with the following details.
 |Detail|Description|
 |---|---|
 |Name|An identifier for the share|
-|NFS server|The IP address of the HA-NAS (Example: 10.1.1.1)|
-|NFS share|The path to the HA-NAS partition to mount (Example: zpool-123456/partition01)|
+|NFS server|The IP address of the HA-NAS (Example: `10.1.1.1`)|
+|NFS share|The path to the HA-NAS partition to mount (Example: `zpool-123456/partition01`)|
 
 ![ESXI](images/esxi3.png){.thumbnail}
 
