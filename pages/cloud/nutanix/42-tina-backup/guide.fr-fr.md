@@ -69,7 +69,7 @@ Dans ce guide nous allons utiliser trois machines virtuelles sous **AlmaLinux** 
 
 > [!Primary]
 >
-> Dans le cas d'une exploitation en production il serait judicieux d'utiliser une **Redhat Enterprise Linux Server** disposant d'un support logiciel à la place de la distribution **AlmaLinux**.
+> Dans le cas d'une exploitation en production il serait judicieux d'utiliser une distribution **Redhat Enterprise Linux Server** disposant d'un support logiciel à la place d' **AlmaLinux**.
 >
 
 Les trois machines virtuelles seront réparties comme ceci :
@@ -141,7 +141,7 @@ Utilisez ces valeurs pour les deux VM de déduplication :
 <a name="almalinuxinstallation"></a>
 #### **Etape 2.3 Installation d'ALMALINUX**
 
-Cette installation devra se faire 3 fois, pour chaque machine virtuelle créée :
+Cette installation devra être répétée trois fois à chaque machine virtuelle créée :
 
 Sur le cluster Nutanix en France :
 - tina-srv.
@@ -442,7 +442,7 @@ Cliquez sur `Done`{.action}.
 
 Suivez ces instructions sur les machine virtuelles **tina-adefr** et **tina-adecan**.
 
-Maintenant que l'installation est terminée utilisez un navigateur WEB et allez sur l'adresse `https://tina-adexxx:8181`. Le configurateur va se lancer.
+Maintenant que l'installation est terminée utilisez un navigateur WEB et allez sur l'adresse `https://tina-adefr:8181`. Le configurateur va se lancer.
 
 Sélectionnez le dossier `/home`pour le paramètre **Database** et cliquez sur le bouton `Suivant`{.action} en bas.
 
@@ -478,7 +478,7 @@ Cliquez sur `OK`{.action} pour redémarrer le programme avec les nouveaux param�
 
 ![05 Configure tina ade07](images/05-configure-tina-ade07.png){.thumbnail}
 
-Revenez sur l'URL `https://tinaadexx:8181`. Une fenêtre d'authentification apparait. 
+Revenez sur l'URL `https://tinafr:8181`. Une fenêtre d'authentification apparait. 
 
 Saisissez le nom d'utilisateur `superadmin` et le mot de passe par défaut `superadmin` ensuite cliquez sur `login`{.action}.
 
@@ -544,6 +544,12 @@ Saisissez deux fois le mot de passe, ensuite cliquez sur le bouton `validation`{
 #### **Etape 3.3 Installation du logiciel **Tina** sur tina-srv**
 
 Connectez-vous sur **tina-srv** avec un client vnc sur cette adresse `tina-srv:5901`{.action}.
+
+> [!Warning]
+>
+> l'adresse IP de tina-srv est privée il est nécessaire de se connecter à partir du réseau interne du cluster
+>
+
 
 Si vous utilisez Windows vous pouvez installer le logiciel [TightVNC](https://www.tightvnc.com/download.php).
 
@@ -653,6 +659,11 @@ Cliquez sur `Done`{.action} pour valider la fin de l'installation.
 Nous allons configurer la réplication à partir du serveur qui se trouve en France **tina-adefr** vers le serveur se trouvant au Canada **tina-adecan** pour avoir une sauvegarde sur un site distant.
 
 Connectez-vous à l'adresse https://tina-adefr:8181.
+
+> [!Warning]
+>
+> l'adresse IP de tina-adefr est privée il est nécessaire de se connecter à partir du réseau interne du cluster
+>
 
 Cliquez sur l'onglet `Server`{.action}, Choisissez `Replication`{.action} depuis le menu `Configuration`.
 
