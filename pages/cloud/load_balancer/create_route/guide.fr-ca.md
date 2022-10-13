@@ -675,7 +675,7 @@ Seuls les codes d'état HTTP de redirection peuvent être spécifiés. Les plus 
 |---|---|
 |301|Redirection permanente. La redirection peut être enregistrée par le navigateur.|
 |302 (default)|Redirection temporaire. La redirection doit être revalidée à chaque requête par le navigateur.|
-|307|Comme le 302 et force l'utilisation de la méthode HTTP GET.|
+|303|Comme le 302 et force l'utilisation de la méthode HTTP GET.|
 |307|Comme le 302 et force le ré-utilisation de la même méthode HTTP (GET, POST, ...).|
 |308|Comme le 301 et force le ré-utilisation de la même méthode HTTP (GET, POST, ...).|
 

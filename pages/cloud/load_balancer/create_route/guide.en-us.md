@@ -694,7 +694,7 @@ Only the HTTP redirection status codes can be specified. The most common codes a
 |---|---|
 |301|Permanent redirection. The redirection can be saved by the browser.|
 |302 (default)|Temporary redirection. The redirection must be revalidated for each request by the browser.|
-|307|Works like a 302, and forces the use of the HTTP GET method.|
+|303|Works like a 302, and forces the use of the HTTP GET method.|
 |307|Works like a 302, and forces the same HTTP method to be reused (GET, POST, etc.).|
 |308|Works like a 301, and forces the same HTTP method to be reused (GET, POST, etc.).|
 
