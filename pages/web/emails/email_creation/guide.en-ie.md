@@ -1,187 +1,191 @@
 ---
 title: 'Creating an email address with an MX Plan solution'
 slug: hosted_email_how_to_set_up_an_email_address
-excerpt: 'Find out how to create an email address with your MX Plan package'
+excerpt: 'Find out how to create an email address with an MX Plan solution'
 section: 'Getting started'
 order: 02
 ---
 
-**Last updated 3rd August 2022**
+**Last updated 11th October 2022**
 
 ## Objective
 
-You can use an email address in your MX Plan solution to send and receive emails through your preferred device.
+You have just purchased an MX Plan email solution. It allows you to benefit from email addresses associated with a domain name.
 
 **Find out how to create an email address with an MX Plan solution.**
 
 ## Requirements
 
-- an MX Plan solution, available via a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, [a free Start 10M hosting solution](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/){.external} including a domain name (activated in advance), or the MX Plan solution, ordered separately
-- the ability to create email addresses as part of your solution
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- An MX Plan solution, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), the [free Start 10M hosting solution](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/) included with a domain name (activated in advance), or ordered separately as a standalone solution
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Web Cloud`{.action} section
 
 > [!primary]
 >
->**Special cases**
+> **Special cases**
 >
-> - For web [hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, you will need to activate your MX Plan package before reading this guide. To do this, please refer to our guide on how to [Activate the email addresses included in your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/activate-email-web-hosting/).
-> - Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email address. You can do this via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} by going to the domain name concerned.
->
+> - Regarding the free Start 10M hosting solution, you will need to [activate it](https://docs.ovh.com/ie/en/hosting/activate-start10m/) in order to create an email account. You can do this from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by selecting the domain name concerned.
+> - For [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, you will need to activate your MX Plan package before continuing to follow this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](https://docs.ovh.com/ie/en/hosting/activate-email-web-hosting/).
 
-## Instructions
+## Instructions <a name="instructions"></a>
 
-Depending on when your service was activated or if [it was recently migrated](https://www.ovh.co.uk/mxplan-migration/){.external}, you will have either the legacy version or the new version of the MX Plan solution. Before you proceed any further, you will need to establish which version you are using. 
+Depending on the date your service was activated and whether [it was recently migrated](https://www.ovhcloud.com/en-ie/web-hosting/mxplan-migration/){.external}, you are using either the legacy version or the new version of the MX Plan solution. Before you proceed with this guide, you need to check which version you are using. 
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and go to the `Web Cloud`{.action} section. Click `Emails`{.action}, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and open the `Web Cloud`{.action} section. Click on `Emails`{.action}, then choose the name of the MX Plan service concerned. Continue with the next steps, depending on which version you own.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
 |![email](images/mxplan-creation-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box|![email](images/mxplan-creation-new-step1.png){.thumbnail}<br>Locate the `Server model` in the "Summary" box|
-|Go to [MX Plan legacy version](./#mx-plan-legacy-version_2)|Go to [MX Plan new version](./#mx-plan-new-version)|
+|Go to [MX Plan legacy version](#mxplanlegacy)|Go to [MX Plan new version](#newmxplan)|
 
-### MX Plan new version
+### MX Plan new version <a name="newmxplan"></a>
 
-#### Step 1: Log in to your email service’s management interface.
+#### Access the email service management
 
-Since you are using the new version of the MX Plan solution, your display should look like this. If not, please ensure that you are following the right set of instructions [by referring to the information above](./#instructions).  
+If you are using the new version of the MX Plan solution, your display should correspond to the following image. If this section looks different for you, please double-check that you are following the right set of instructions [by referring to the information above](./#instructions).  
 
 ![email](images/mxplan-creation-new-step1.png){.thumbnail}
 
-#### Step 2: Create your email addresses.
+#### Create an email account
 
-To set up a new email address, go to the `Email accounts`{.action} tab. The window that opens will display the email accounts that are already available, as well as those you can still create. Next, click the `Add an account`{.action} button.
+To set up a new email account, go to the `Email accounts`{.action} tab. The window that opens will display the email accounts that are already available, as well as those you can still create. Next, click the `Add Account`{.action} button.
 
 ![email](images/mxplan-creation-new-step2.png){.thumbnail}
 
-In the pop-up window, enter the following information:
+In the popup window, enter the following information:
 
-|Information|Description|  
-|---|---|  
-|Email account|A temporary name is already auto-filled in the text box. You can delete it and enter the name you want your email address to include (e.g. firstname.surname). The domain name for the email address is already pre-selected in the list.|  
-|First name|Enter a first name.|  
-|Name|Enter a surname.|  
-|Display name|Enter the name you want to be displayed as a sender when you send emails from this address.|
-|Password|Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name, and date of birth) and we also recommend renewing it regularly.|
+- **Email account**: A temporary name is already prefilled in the text box. Replace it with the name you would like for your email address (firstname.lastname, for example). The domain name for the email address is already pre-selected in the list.
+- **First name**: Enter a first name.
+- **Name**: Enter a surname.
+- **Name to display**: Enter the name you want to be displayed as a sender when you send emails from this address.
+- **Password**: Type in a password and confirm it. For security reasons, we recommend not using the same password twice and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing it regularly.
 
-Once you have filled in all of the required fields, click `Next`{.action}. 
+Once you have filled in all of the required fields, click `Next`{.action}.
 
 ![email](images/mxplan-creation-new-step3.png){.thumbnail}
 
 Next, check that all the information displayed in the summary is correct. If it is, click `Confirm`{.action}. The account you have just added will now appear in the table. You will need to wait a few minutes for the account to become available.
 
-Repeat this step as necessary according to the number of accounts you have.
+Repeat this step as necessary according to the number of accounts to create.
 
-#### Step 3: Use your email addresses.
+#### View emails
 
-Once you have created your email addresses, you can start using them straight away. There are two ways you can do this.
+On the [Webmail login page](https://www.ovhcloud.com/en-ie/mail/){.external}, enter your email address and password. Then click the `Login`{.action} button.
 
-##### 1. Use Outlook Web Access (OWA) webmail.
-
-Go to the [Webmail login](https://www.ovh.co.uk/mail/){.external} page, then enter your email address and password. Then click the `Login`{.action} button.
-
-When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}.
+When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via Outlook Web App (OWA) webmail, use our guide ["Using the Outlook Web App with an email account"](https://docs.ovh.com/ie/en/emails/using-owa/){.external}.
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
-##### 2. Use a device of your choice.
+To view your emails using an email client, please refer to the section ["View an email account from a device"](#configdevices).
 
-You will need to configure your email address on the device you want to use (e.g. a smartphone or tablet). To do this, you can use our configuration guides:
+#### Delete an email account
 
-|Windows|Outlook|Apple|Android|Other|
-|---|---|---|---|---|
-|[Windows 10](../mail-configuration-on-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/)|[MacOS Mail (latest version)](../guide-configuring-mail-on-macos/)|[Android (latest version)](../configuration-android/)|[Gmail](../gmail-configuration/)|[Mail for iPhone and iPad (iOS 7 and later)](../email_hosting_iphone_ios_91_configuration/)|
-
-If you just need the information required to configure your email address, the settings to use are listed below:
-
-- **For IMAP configuration (recommended)**
-
-|Server type|Server name|Port (with SSL)|Port (without SSL)|
-|---|---|---|---|
-|Incoming|SSL0.OVH.NET|993|143|
-|Outgoing|SSL0.OVH.NET|465|587|
-
-- **For POP configuration**
-
-|Server type|Server name|Port (with SSL)|Port (without SSL)|
-|---|---|---|---|
-|Incoming|SSL0.OVH.NET|995|110|
-|Outgoing|SSL0.OVH.NET|465|587|
+With a new MXplan service, deleting an account is referred to as *resetting an account*.
 
 > [!warning]
 >
-> If you have any problems configuring your email address on your device, we recommend using our configuration guides or getting in touch with the publishers of the application you are using, because you may need to make a change that is specific to the application.
->
+> Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](https://docs.ovh.com/ie/en/emails/migrate-email-addresses-manually/), which explains how to export account data from your Control Panel or email software.
 
-### MX Plan legacy version
+In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Reset this account`{.action}.
 
-#### Step 1: Log in to your email service’s management interface.
+![email](images/mxplan-new-reset.png){.thumbnail}
 
-If you are using the legacy version of the MX Plan solution, your display should look like this. If not, please ensure that you are following the right set of instructions [by referring to the information above](./#instructions). 
+### MX Plan legacy version <a name="mxplanlegacy"></a>
+
+#### Access the email service management
+
+If you are using the legacy version of the MX plan solution, your display should correspond to the following image. If this section looks different for you, please double-check that you are following the right set of instructions [by referring to the information above](./#instructions).
 
 ![email](images/mxplan-creation-legacy-step1.png){.thumbnail}
 
-#### Step 2: Create your email addresses.
+#### Create an email account
 
-To create a new email address, go to the `Emails`{.action} tab. The table shown contains all the email addresses created as part of your MX Plan package. Then click the `Create Email Address`{.action} button.
+To create a new email address, go to the `Emails`{.action} tab. The table displayed will contain all of the email accounts created as part of your MX Plan solution. Then click the `Create an email address`{.action} button.
 
 ![email](images/mxplan-creation-legacy-step2.png){.thumbnail}
 
 In the pop-up window, enter the following information:
 
-|Information|Description|  
-|---|---|  
-|User name|Enter the name for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
-|Account description|Enter a short description that will distinguish this account from any other accounts added in the OVHcloud Control Panel.|  
-|Account size|Select the size of account you want. This size refers to the space available to your account for storing messages.|  
-|Password|Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name, and date of birth) and we also recommend renewing it regularly.|
+- **Account name**: Enter the name you want for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
+- **Account description**: Enter a short description that will distinguish this account from any other accounts added in the OVHcloud Control Panel.|  
+- **Account size**: Select the size of account you want. This is the available space for the account to store messages.|  
+- **Password**: Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.|
 
 Once you have filled in all of the required fields, click `Next`{.action}. 
 
 ![email](images/mxplan-creation-legacy-step3.png){.thumbnail}
 
-Check that all the information displayed in the summary is correct. If it is, click on `Next`{.action} again. Finally, click `Confirm`{.action} to launch the creation of the email address. You will need to wait a few minutes for it to become available.
+Check that all the information displayed in the summary is correct; if it is, click on `Next`{.action} again. Finally, click `Confirm`{.action} to launch the creation of the email account. You will need to wait a few minutes for it to become available.
 
-Repeat this step as necessary, according to the number of accounts you have.
+Repeat this step as necessary according to the number of accounts to create.
 
-#### Step 3: Use your email addresses.
+#### View emails 
 
-Once you have created your email addresses, you can start using them straight away. There are two ways you can do this.
+On the [Webmail login page](https://www.ovhcloud.com/en-ie/mail/){.external}, enter your email address and password. Then click the `Login`{.action} button.
 
-##### 1. Use Roundcube webmail.
-
-Go to the [Webmail login](https://www.ovh.ie/mail/){.external} page, then enter your email address and password. Then click the `Login`{.action} button.
-
-Your inbox will then appear.
+Your inbox will then appear. You can find more information in our guide on [Using your email account via the RoundCube webmail interface](https://docs.ovh.com/ie/en/emails/roundcube-userguide/).
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
-##### 2. Use a device of your choice.
+To view your emails using an email client, please refer to the section ["View an email account using a device"](#configdevices).
 
-You will need to configure your email address on the device you want to use (e.g. a smartphone or tablet). To do this, you can refer to our configuration guides:
-
-|Windows|Outlook|Apple|Android|Other|
-|---|---|---|---|---|
-|[Windows 10](../mail-configuration-on-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[MacOS Mail (latest version)](../guide-configuring-mail-on-macos/){.external}|[Android (latest version)](../configuration-android/)|[Gmail]../gmail-configuration/)|[Mail for iPhone and iPad (iOS 7 and later)](../email_hosting_iphone_ios_91_configuration/)|
-
-If you just need the information required to configure your email address, the settings to use are listed below:
-
-- **For IMAP configuration (recommended)**
-
-|Server type|Server name|Port (with SSL)|Port (without SSL)|
-|---|---|---|---|
-|Incoming|SSL0.OVH.NET|993|143|
-|Outgoing|SSL0.OVH.NET|465|587|
-
-- **For POP configuration**
-
-|Server type|Server name|Port (with SSL)|Port (without SSL)|
-|---|---|---|---|
-|Incoming|SSL0.OVH.NET|995|110|
-|Outgoing|SSL0.OVH.NET|465|587|
+#### Delete an email account
 
 > [!warning]
 >
-> If you have any problems configuring your email address on your device, we recommend using our configuration guides or getting in touch with the publishers of the application you are using, because you may need to make a change that is specific to the application.
+> Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](https://docs.ovh.com/ie/en/emails/migrate-email-addresses-manually/), which explains how to export account data from your Control Panel or email software.
+
+In the `Emails`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Disable account`{.action}
+
+![email](images/mxplan-legacy-reset.png){.thumbnail}
+
+### View an email account from a device <a name="configdevices"></a>
+
+You will need to configure your email address on the device you want to use (e.g. a smartphone or tablet). To do this, you can use our configuration guides:
+
+> [!tabs]
+> **Windows**
+>>
+>> - [Mail on Windows 10](https://docs.ovh.com/ie/en/emails/mail-configuration-windows-10/)
+>> - [Outlook](https://docs.ovh.com/ie/en/emails/configuration-outlook-2016/)
+>> - [Thunderbird](https://docs.ovh.com/ie/en/emails/configure-email-for-thunderbird-windows/)
+>>
+> **Apple**
+>>
+>> - [macOS email](https://docs.ovh.com/ie/en/emails/guide-configuring-mail-on-macos/)
+>> - [Mail for iPhone or iPad](https://docs.ovh.com/ie/en/emails/email_hosting_iphone_ios_91_configuration/)
+>> - [Outlook Mac OS](https://docs.ovh.com/ie/en/emails/configuration-outlook-2016-mac/)
+>> - [Thunderbird](https://docs.ovh.com/ie/en/emails/configure-email-for-thunderbird-mac/)
+>>
+> **Android**
+>>
+>> - [Android](https://docs.ovh.com/ie/en/emails/configuration-android/)
+>>
+> **Other**
+>>
+>> - [Gmail interface](https://docs.ovh.com/ie/en/emails/gmail-configuration/)
+>>
+
+If you just need the information required to configure your email address, the settings to use are listed below:
+
+> [!tabs]
+> **For IMAP configuration (recommended)**
+>>
+>> |Server type|Server name|Port (with SSL)|Port (without SSL)|
+>> |---|---|---|---|
+>> |Incoming|SSL0.OVH.NET|993|143|
+>> |Outgoing|SSL0.OVH.NET|465|587|
+>>
+> **For POP configuration**
+>>
+>> |Server type|Server name|Port (with SSL)|Port (without SSL)|
+>> |---|---|---|---|
+>> |Incoming|SSL0.OVH.NET|995|110|
+>> |Outgoing|SSL0.OVH.NET|465|587|
+>>
+
+> [!warning]
+>
+> If you have any problems configuring your email address on your device, we recommend using our [configuration guides](../) or contacting the publisher of the application you are using, because you may need to make a change that is specific to the application.
 >
 
 ## Go further

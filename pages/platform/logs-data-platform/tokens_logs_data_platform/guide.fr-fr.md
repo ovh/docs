@@ -6,7 +6,7 @@ excerpt: If you want to give access to your logs to a software or automatize som
 section: Features
 ---
 
-**Last updated 23rd july, 2020**
+**Last updated 13th October, 2022**
 
 ## Objective
 
@@ -184,12 +184,12 @@ Finally to delete your token, use the following call:
 
 ### Using your tokens
 
-Using your token is no different of using your credentials. You just have to replace your username with your token and your password with the word **token**.
+Using your token is no different of using your credentials. You just have to replace your username with the word **token** and your password with the token (the opposite works too).
 For example to issue a search against the Graylog API with the token obtained above, you can do the following:
 
 
 ```shell-session
-$ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token -XGET "https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd"
+$ curl -u token:kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q -XGET "https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd"
 ```
 
 Note that you have to replace the stream value in the filter parameter by the Graylog Id of your stream. The Graylog id can be found in the URL of your stream search page in Graylog.
@@ -205,7 +205,7 @@ The value **5ab52dc43ce3010451deacd1** is the Graylog Id of your stream.
 To issue a search against the OpenSearch API, you also use the same credentials.
 
 ```shell-session
-$ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token "https://<your_cluster>.logs.ovh.com:9200/your_alias/_search?pretty"
+$ curl -u token:kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q "https://<your_cluster>.logs.ovh.com:9200/your_alias/_search?pretty"
 ```
 
 This call will launch a quick search (to retrieve the count and a sample of your documents) against the alias **your_alias**. Replace the alias by the one you have setup in you Logs Data Platform console. Note that these credentials are usable in place of your account credentials in Grafana (or any tool that supports Basic Authentication with OpenSearch).
