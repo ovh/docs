@@ -6,7 +6,7 @@ excerpt: Use the power of OpenSearch without managing a cluster.
 section: Features
 ---
 
-**Last updated 13th June, 2022**
+**Last updated 13th October, 2022**
 
 ## Objective
 
@@ -17,7 +17,7 @@ OpenSearch is one of the main components of the Logs Data Platform, regarded as 
 This is what you need to know to get you started:
 
 - You have created a [Logs Data Platform account](../quick-start){.ref}
-- Your have access to the port 9200 of your cluster (head to the **Home** page in manager to know the address of your cluster).
+- You have access to the port 9200 of your cluster (head to the **Home** page in manager to know the address of your cluster).
 
 ## Instructions
 
@@ -55,8 +55,9 @@ Whatever method you use, you will be able to query and visualize your documents 
 
 Logs Data Platform OpenSearch indices are compatible with the [OpenSearch REST API](https://opensearch.org/docs/latest/opensearch/rest-api/index/){.external}. Therefore, you can use simple http requests to index and search your data. The API is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](../tokens-logs-data-platform){.ref} to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `<ldp-cluster>.logs.ovh.com`.
 
+
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
+$ curl -u token:<your-token-value> -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
 ```
 
 Here is a quick explanation of this command:
@@ -92,14 +93,14 @@ This command will return with a simple payload indicating if the document has be
 There are multiple ways to search your data, this is one area where the OpenSearch REST API excels. You can either get your data directly by using a GET request, or search it with the Search APIs. To get your document indexed previously, use the following curl request:
 
 ```shell-session
-$ curl -XGET -u <your-token-value>:token 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1'
+$ curl -XGET -u token:<your-token-value> 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1'
 {"_id":"1","_index":"logs-<username>-i-<suffix>","_primary_term":1,"_seq_no":0,"_source":{"company":"OVH","message":"Hello World !","post_date":"1999-11-02T23:01:00","user":"Oles"},"_type":"_doc","_version":1,"found":true}
 ```
 
 To issue a simple search you can either use the [Query DSL](https://opensearch.org/docs/latest/opensearch/query-dsl/index/){.external} or a URI search. Here is a simple example with an URI search:
 
 ```shell-session
-$ curl -XGET -u <your-token-value>:token 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_search?q=user:Oles'
+$ curl -XGET -u token:<your-token-value> 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_search?q=user:Oles'
 {"_shards":{"failed":0,"skipped":0,"successful":1,"total":1},"hits":{"hits":[{"_id":"1","_index":"newindice","_score":0.2876821,"_source":{"company":"OVH","message":"Hello World !","post_date":"1999-11-02T23:01:00","user":"Oles"},"_type":"_doc"}],"max_score":0.2876821,"total":1},"timed_out":false,"took":31}
 ```
 
@@ -168,13 +169,13 @@ A bulk request is a succession of JSON objects with this structure:
 You can in one request ask OpenSearch to index, update, delete several documents. Save the content of the previous commands in a file named **bulk** and use the following call to index these 3 users:
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
+$ curl -u token:<your-token-value> -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
 ```
 
 This call will take the content of the bulk file and execute each index operation. Note that you have to use the option **--data-binary** and no **-d** to preserve the newline after each JSON. You can check that your data are properly indexed with the following call:
 
 ```shell-session
-$ curl -u <your-token-value>:token -XGET 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/_search?pretty=true'
+$ curl -u token:<your-token-value> -XGET 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/_search?pretty=true'
 ```
 
 This will give you back the documents of your index:
@@ -305,8 +306,8 @@ The most important part in this configuration is the filter part:
 elasticsearch {
     hosts => ["https://gra2.logs.ovh.com:9200"]
     index => "logs-<username>-i-<suffix>"
-    user => "y762pm8j2yhge9c2idpdaqs456dshr78nb2313eaze4656oue45psla"
-    password => "token"
+    user => "token"
+    password => "y762pm8j2yhge9c2idpdaqs456dshr78nb2313eaze4656oue45psla"
     enable_sort => false
     query => "userId:%{[userId]}"
     fields  => {
@@ -374,7 +375,7 @@ The **maximum size** of your index is fixed and is dependent on the number of sh
 Note that you can monitor yourself the size of the index by using the following curl query:
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_stats/store?pretty' --data-binary "@bulk"
+$ curl -u token:<your-token-value> -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_stats/store?pretty' --data-binary "@bulk"
 ```
 
 This command will give you a document with the following format:
@@ -520,12 +521,12 @@ Index as a service has some specificities on our platforms. This additional and 
 - You are not allowed to change the settings of your index.
 - You can create an **alias** on Logs Data Platform and attach it to one or several indices.
 - Unlike indices, aliases are **read-only**, you cannot write through an alias yet.
-- If there is a feature missing, feel free to contact us on the [community hub](https://community.ovh.com/c/platform/data-platforms){.external}.
+- If there is a feature missing, feel free to contact us on the [community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
 
 
 ## Go further
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
