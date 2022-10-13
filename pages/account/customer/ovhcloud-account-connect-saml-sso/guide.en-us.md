@@ -183,7 +183,7 @@ Then, let's take a look at the mapping:
 
 ![ADFS relying party trust mapping](images/adfs_relying_party_trusts_mapping_4.png){.thumbnail}
 
-Here, the "Group" attribute sent back by the Active Directory for the user "John Doe" is "title". That corresponds to his "job title", so `manager@federation.ovh`.
+Here, the "Group" attribute sent back by the Active Directory for the user "John Doe" is "title". That corresponds to his "job title", so `manager@<my-domain>.com`.
 
 You can also check it in the SAML assertion:
 
