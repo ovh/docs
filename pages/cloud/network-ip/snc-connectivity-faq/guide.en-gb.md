@@ -5,7 +5,7 @@ section: SecNumCloud Connectivity
 order: 05
 ---
 
-**Last updated 23rd November, 2021**
+**Last updated 13th October, 2022**
 
 ## FAQ SecNumCloud Connectivity
 
@@ -51,11 +51,11 @@ The Inter DC link relies on MACsec technology and hence is end-to-end encrypted.
 
 ### What is the SLA for the SPN ?
 
-The SPN satisfies SecNumCloud Hosted Private Cloud SLA, which guarantees 99,99% availability rate of the Hosted Private Cloud hosts.
+The SPN satisfies SecNumCloud Hosted Private Cloud SLA, which guarantees 99,9% availability rate of the Hosted Private Cloud hosts.
 
 ### What is the SLA for my Inter DC link ?
 
-The Inter DC link satisfies SecNumCloud Hosted Private Cloud SLA, which guarantees 99,99% availability rate of the Hosted Private Cloud hosts.
+The Inter DC link satisfies SecNumCloud Hosted Private Cloud SLA, which guarantees 99,9% availability rate of the Hosted Private Cloud hosts.
 
 ### What is the SLA for the VPN gateway ?
 
