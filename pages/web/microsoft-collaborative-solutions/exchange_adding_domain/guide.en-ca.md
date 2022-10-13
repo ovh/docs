@@ -15,7 +15,7 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ## Requirements
 
-- An [Exchange](https://www.ovhcloud.com/en-ca/emails/)
+- An [Exchange](https://www.ovhcloud.com/en-ca/emails/) solution
 - One or more domain names
 - Administrative access to your domain name’s configuration (in order to [modify the DNS zone](https://docs.ovh.com/ca/en/domains/web_hosting_how_to_edit_my_dns_zone/))
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
