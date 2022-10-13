@@ -63,7 +63,8 @@ category_l2: Backups
 <a name="presentation"></a>
 ### Etape 1 Présentation
 
-Le logiciel **Tina** est un logiciel de sauvegarde modulaire composé de divers éléments que l'on peut installer sur des machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix. Il peut être utilisé avec plusieurs types de stockages différents. Pour plus d'informations sur la liste des matériels compatibles cliquez sur ce lien [Aller plus loin](#gofurther).
+Le logiciel **Tina** est un logiciel de sauvegarde modulaire composé de divers éléments que l'on peut installer sur des machines virtuelles ou physiques. Ce logiciel permet la sauvegarde d'un cluster sous Nutanix. Il peut être utilisé avec plusieurs types de stockages différents. Pour plus d'informations sur la liste des matériels compatibles cliquez sur ce lien [Guide de compatibilité Tina 2022](https://www.atempo.com/wp-content/uploads/2022/01/COMPATIBILITY-GUIDE_en_Tina_469_24-01-2022.pdf)
+(#gofurther).
 
 Dans ce guide nous allons utiliser trois machines virtuelles sous **AlmaLinux** en version 8.6.
 
@@ -87,7 +88,7 @@ Une sur un cluster Nutanix au Canada relié en VPN avec pour rôle :
 
 > [!Primary]
 >
-> Le choix fait dans ce guide n'est fourni qu'a titre d'exemple il est plus judicieux d'installer les serveurs de déduplication principal hors du cluster (par exemple : sur un serveur baremetal) mais sur le même réseau que le cluster Nutanix (sur un même vRack au sein d'OVHcloud).
+> Le choix fait dans ce guide n'est fourni qu'a titre d'exemple il est plus judicieux d'installer le serveur de déduplication principal hors du cluster (par exemple : sur un serveur baremetal) en étant sur le même vRack.
 >
 > Le serveur de déduplication qui sert pour la réplication doit être sur un site distant.
 >
@@ -382,7 +383,12 @@ Le logiciel de déduplication ADE (Atempo Deduplication Engine) fournit un stock
 
 Suivez ces instructions sur les machines virtuelles **tina-adefr** et **tina-ade**
 
-Connectez-vous avec un client vnc sur le serveur `tina-adexx:5901`.
+Connectez-vous avec un client vnc sur le serveur `tina-adefr:5901`.
+
+> [!Primary]
+> Cette adresse IP est privée vous ne pouvez y accéder que depuis le réseau INTERNE.
+>
+
 
 ![04 Installing tina ade01](images/04-install-tina-ade01.png){.thumbnail}
 
