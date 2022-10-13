@@ -37,7 +37,7 @@ A questo punto, utilizza il comando:
 
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/PERCORSO_NFS /CARTELLA_MOUNT
+mount -t nfs  IP_NAS:/PERCORSO_NFS /CARTELLA_MOUNT
 ```
 
 |Argomento|Descrizione|
@@ -52,14 +52,14 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/PERCORSO_NFS /CARTELLA_MOUNT
 > Per abilitare il mount del NAS all'avvio del sistema, aggiungi al file `/etc/fstab` questa riga di comando:
 >
 > ```
-> IP_NAS:/PERCORSO_NFS /CARTELLA_MOUNT nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/PERCORSO_NFS /CARTELLA_MOUNT nfs rw 0 0
 > ```
 >
 
 Esempio:
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
+mount -t nfs  10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
 ```
 
 |Argomento|Descrizione|
@@ -90,7 +90,7 @@ Riavvia il servizio `rpcbind` con il comando:
 A questo punto, utilizza il comando:
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/PERCORSO_NFS /CARTELLA_MOUNT
+mount -t nfs  IP_NAS:/PERCORSO_NFS /CARTELLA_MOUNT
 ```
 
 |Argomento|Descrizione|
@@ -105,7 +105,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/PERCORSO_NFS /CARTELLA_MOUNT
 > Per abilitare il mount del NAS all'avvio del sistema, aggiungi al file `/etc/fstab` questa riga di comando:
 >
 > ```
-> IP_NAS:/PERCORSO_NFS /CARTELLA_MOUNT nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/PERCORSO_NFS /CARTELLA_MOUNT nfs rw 0 0
 > ```
 >
 

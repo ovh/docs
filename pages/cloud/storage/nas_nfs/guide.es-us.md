@@ -35,7 +35,7 @@ A continuación, utilice el siguiente comando para montarlo:
 
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE
+mount -t nfs  IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE
 ```
 
 |Argumento|Descripción|
@@ -50,14 +50,14 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE
 > Puede automatizar el montaje del NAS al arrancar su distribución añadiendo la siguiente línea al archivo **/etc/fstab**:
 >
 > ```
-> IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE nfs rw 0 0
 > ```
 >
 
 **Ejemplo:**
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
+mount -t nfs  10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
 ```
 
 |Argumento|Descripción|
@@ -88,7 +88,7 @@ A continuación, reinicie el servicio rpcbind mediante el siguiente comando:
 A continuación, utilice el siguiente comando para montarlo:
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE
+mount -t nfs  IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE
 ```
 
 |Argumento|Descripción|
@@ -103,7 +103,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE
 > Puede automatizar el montaje del NAS al arrancar su distribución añadiendo la siguiente línea al archivo **/etc/fstab**:
 >
 > ```
-> IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/RUTA_NFS /DIRECTORIO_MONTAJE nfs rw 0 0
 > ```
 >
 

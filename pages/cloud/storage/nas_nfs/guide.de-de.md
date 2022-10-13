@@ -19,7 +19,7 @@ In dieser Anleitung erfahren Sie, wie Sie auf den gängigsten Distributionen ein
 
 ### Linux
 
-Kompatibilität: Debian & Ubuntu 
+Kompatibilität: Debian & Ubuntu
 
 Voraussetzungen zum Mounten einer NFS-Freigabe unter Linux:
 
@@ -35,7 +35,7 @@ Verwenden Sie anschließend folgenden Mount-Befehl:
 
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
+mount -t nfs  IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 |Argument|Beschreibung|
@@ -48,16 +48,16 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 > [!primary]
 >
 > Um den NAS-Mount beim Start Ihrer Distribution zu automatisieren, fügen Sie die folgende Zeile zur Datei /etc/fstab hinzu:
-> 
+>
 > ```
-> IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0
 > ```
 >
 
 *Beispiel:*
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
+mount -t nfs  10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
 ```
 
 |Argument|Beschreibung|
@@ -88,7 +88,7 @@ Starten Sie anschließend den Dienst `rpcbind` mit folgendem Befehl neu:
 Verwenden Sie anschließend folgenden Mount-Befehl:
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
+mount -t nfs  IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 |Argument|Beschreibung|
@@ -101,9 +101,9 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 > [!primary]
 >
 > Um den NAS-Mount beim Start Ihrer Distribution zu automatisieren, fügen Sie die folgende Zeile zur Datei /etc/fstab hinzu:
-> 
+>
 > ```
-> IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0
 > ```
 >
 

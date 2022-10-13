@@ -61,13 +61,13 @@ ubuntu@server:~$ sudo apt install nfs-common
 Then use the following mount command:
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs -o _netdev,mountproto=tcp IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Example:**
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs -o _netdev,mountproto=tcp 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
 ```
 
 You can now access your mounted partition at the specified folder.
@@ -77,7 +77,7 @@ You can now access your mounted partition at the specified folder.
 >
 > In order to automate the mounting process for each time the server boots, add the following line to the file `/etc/fstab`:
 >
-> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw,_netdev,mountproto=tcp 0 0`
+> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
 
@@ -100,13 +100,13 @@ centos@server:~$ sudo systemctl restart rpcbind
 To mount your partition, use the following command:
 
 ```bash
-centos@server:~$ sudo mount -t nfs -o _netdev,mountproto=tcp IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+centos@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Example:**
 
 ```bash
-centos@server:~$ sudo mount -t nfs -o _netdev,mountproto=tcp 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+centos@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
 ```
 
 You can now access your mounted partition at the specified folder.
@@ -115,7 +115,7 @@ You can now access your mounted partition at the specified folder.
 >
 > In order to automate the mounting process for each time the server boots, add the following line to the file `/etc/fstab`:
 >
-> `IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER nfs rw,_netdev,mountproto=tcp 0 0`
+> `IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
 ### Fedora

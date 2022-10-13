@@ -35,7 +35,7 @@ De seguida, utilize o seguinte comando de montagem:
 
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
+mount -t nfs  IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 ```
 
 |Argumento|Descrição|
@@ -50,14 +50,14 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 > Pode automatizar a montagem do NAS ao iniciar a sua distribuição através da seguinte linha que deve adicionar ao ficheiro /etc/fstab:
 >
 > ```
-> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
 > ```
 >
 
 *Por exemplo:*
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
+mount -t nfs  10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
 ```
 
 |Argumento|Descrição|
@@ -88,7 +88,7 @@ A seguir, reinicie o serviço `rpcbind` através do seguinte comando:
 De seguida, utilize o seguinte comando de montagem:
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CAMINHO_NFS /PASTA_MONTAGEM
+mount -t nfs  IP_NAS:/CAMINHO_NFS /PASTA_MONTAGEM
 ```
 
 |Argumento|Descrição|
@@ -103,7 +103,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CAMINHO_NFS /PASTA_MONTAGEM
 > Pode automatizar a montagem do NAS ao iniciar a sua distribuição através da seguinte linha que deve adicionar ao ficheiro /etc/fstab:
 >
 > ```
-> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
 > ```
 >
 

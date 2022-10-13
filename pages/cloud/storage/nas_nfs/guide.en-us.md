@@ -35,7 +35,7 @@ Then use the following mount command:
 
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
+mount -t nfs  IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 |Argument|Description|
@@ -50,14 +50,14 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 > In order to automate the NAS mount when your distribution starts up, add the following line to the /etc/fstab file:
 >
 > ```
-> IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0
 > ```
 >
 
 *For example:*
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
+mount -t nfs  10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
 ```
 
 |Argument|Description|
@@ -90,7 +90,7 @@ Then restart the `rpcbind` service with the following command:
 Then use the following mount command:
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
+mount -t nfs  IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 |Argument|Description|
@@ -105,7 +105,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 > In order to automate the NAS mount when your distribution starts up, add the following line to the /etc/fstab file:
 >
 > ```
-> IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0
 > ```
 >
 

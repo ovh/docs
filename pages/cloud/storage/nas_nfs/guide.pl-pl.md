@@ -36,7 +36,7 @@ Następnie użyj polecenia:
 
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
+mount -t nfs  IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 ```
 
 |Argument|Opis |
@@ -51,14 +51,14 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 > Przestrzeń NAS może być montowana automatycznie w momencie uruchamiania dystrybucji. W tym celu dodaj poniższe polecenie do pliku /etc/fstab:
 >
 > ```
-> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
 > ```
 >
 
 *Przykład:*
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
+mount -t nfs  10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
 ```
 
 |Argument|Opis |
@@ -89,7 +89,7 @@ Następnie zrestartuj usługę `rpcbind` przy użyciu polecenia:
 Teraz zastosuj polecenie:
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
+mount -t nfs  IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 ```
 
 |Argument|Opis |
@@ -104,7 +104,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 > Przestrzeń NAS może być montowana automatycznie w momencie uruchamiania dystrybucji. W tym celu dodaj poniższe polecenie do pliku /etc/fstab:
 >
 > ```
-> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
 > ```
 >
 
