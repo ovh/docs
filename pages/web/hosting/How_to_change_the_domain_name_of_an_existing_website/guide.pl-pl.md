@@ -24,37 +24,37 @@ Tutorial wyjaśnia, jakie kroki należy podjąć w przypadku zmiany domeny dost�
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/fr/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovhcloud.com/fr/domains/)
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
 > [!warning]
 >
 > Zmiana nazwy domeny dotycząca dostępu do Twojej strony WWW może mieć wpływ na jej pozycjonowanie. 
-> Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/fr/) w celu pozycjonowania strony, jeśli to konieczne.
+> Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) w celu pozycjonowania strony, jeśli to konieczne.
 >
 
 Aby zmienić domenę dostępu do Twojej strony WWW, należy wykonać kilka kroków w określonej kolejności.
 
 ### Etap 1 - zadeklarowanie nowej domeny na hostingu <a name="step1"></a>
 
-Nowa domena zostanie zarejestrowana w dokumentacji OVH dotyczącej dodania strony podpiętej w [opcji MultiSite na hostingu www](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/). Zgłoś również subdomenę `www`, jeśli chcesz, na przykład, że `www.NewDomain.tld` wyświetla również Twoją stronę obok `NewDomain.tld`.
+Nowa domena zostanie zarejestrowana w dokumentacji OVH dotyczącej dodania strony podpiętej w [opcji MultiSite na hostingu www](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/). Zgłoś również subdomenę `www`, jeśli chcesz, na przykład, że `www.NewDomain.tld` wyświetla również Twoją stronę obok `NewDomain.tld`.
 
 Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 
 - Twoja nowa domena musi wskazywać na ten sam "folder główny", który jest używany do łączenia się ze stroną WWW.
-- Sprawdź, czy Twoja nowa domena wskazuje prawidłowy adres IP hostingu. Aby pobrać adres IP, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), przejdź do sekcji `Web cloud`{.action}, kliknij przycisk 'Hosting`{.action}, wybierz hosting i pobierz **IPv4** w zakładce `Informacje ogólne`{.action}.
+- Sprawdź, czy Twoja nowa domena wskazuje prawidłowy adres IP hostingu. Aby pobrać adres IP, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Web cloud`{.action}, kliknij przycisk 'Hosting`{.action}, wybierz hosting i pobierz **IPv4** w zakładce `Informacje ogólne`{.action}.
 
 > [!warning]
 >
-> Jeśli aktywujesz opcje **IP kraju** lub **CDN** dla swojej nowej domeny, użyj właściwego adresu IP w naszej dokumentacji zawierającej listę [wszystkie adresy IP hostingu współdzielonego](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/).
+> Jeśli aktywujesz opcje **IP kraju** lub **CDN** dla swojej nowej domeny, użyj właściwego adresu IP w naszej dokumentacji zawierającej listę [wszystkie adresy IP hostingu współdzielonego](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/).
 >
 > Aby odnaleźć numer klastra, w którym znajduje się Twój hosting, przejdź do części `Web cloud`{.action}, kliknij `Hosting`{.action}, wybierz hosting, a następnie zakładkę `FTP-SSH`{.action}. Numer klastra będziesz wyświetlał w formularzu **Serwer FTP i SFTP**: `ftp.cluster0XX.ovh.net` (gdzie `X` oznacza numer klastra).
 >
@@ -62,8 +62,8 @@ Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 > **Certyfikaty SSL**
 >
 > Jeśli domena używana do uzyskania dostępu do Twojej strony WWW dysponuje certyfikatem SSL, zapoznaj się z naszymi przewodnikami, aby wykonać lub sprawdzić działania opisane poniżej tych dwóch linków:
-> - [Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
-> - [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/)
+> - [Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/)
+> - [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](https://docs.ovh.com/pl/hosting/aktywacja-https-ssl-na-stronie-WWW/)
 >
 > W przypadku certyfikatu SSL *Let's Encrypt* za darmo, wystarczy aktywować opcję `SSL` **od tej pory** dla Twojej nowej domeny w zakładce `MultiSite`{.action} na Twoim hostingu. Następnie kliknij przycisk `Operacje`{.action} nad tabelą wskazującą Twoje pliki multimedialne, a następnie kliknij polecenie `Ponownie wygeneruj certyfikat SSL`{.action}. Regeneracja powinna trwać co najmniej 2 godziny.
 >
@@ -91,9 +91,9 @@ Większość stron używa baz danych do działania. Drzewo ostatnich jest zazwyc
 
 > [!warning]
 >
-> Uwaga: Operacje opisane w etapie 2 są niezwykle wrażliwe i mogą mieć poważne konsekwencje dla Twojej strony WWW, jeśli nie są przeprowadzane z zachowaniem ostrożności. W razie wątpliwości nie należy podejmować prób i zwracać się do [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/fr/).
+> Uwaga: Operacje opisane w etapie 2 są niezwykle wrażliwe i mogą mieć poważne konsekwencje dla Twojej strony WWW, jeśli nie są przeprowadzane z zachowaniem ostrożności. W razie wątpliwości nie należy podejmować prób i zwracać się do [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/).
 >
-> Przed podjęciem jakichkolwiek działań zalecamy pobranie [kopii zapasowej przestrzeni dyskowej FTP](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) oraz [kopii zapasowej bazy danych](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/). W przypadku nieprawidłowej operacji przywrócisz Twoją stronę WWW.
+> Przed podjęciem jakichkolwiek działań zalecamy pobranie [kopii zapasowej przestrzeni dyskowej FTP](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/) oraz [kopii zapasowej bazy danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/). W przypadku nieprawidłowej operacji przywrócisz Twoją stronę WWW.
 >
 
 Rozróżnimy dwa rodzaje strony internetowej: 
@@ -111,15 +111,15 @@ Ponieważ systemy CMS są tworzone przez organizacje zewnętrzne niezarządzane 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
 - Joomla! : Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, sprawdź oficjalne strony [docs.joomla.org](https://docs.joomla.org/){.external} lub [forum.joomla.org](https://forum.joomla.org/){.external}.
 - Drupal: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, sprawdź oficjalne strony [drupal.org](https://drupal.org){.external} lub [drupal.fr](https://drupal.fr){.external}.
-- PrestaShop: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, kliknij [tutaj](https://help-center.prestashop.com/fr){.external} i przejdź na oficjalną stronę.
+- PrestaShop: Producent tego oprogramowania nie udostępnia w terminie dokumentacji umożliwiającej zmianę domeny dostępu do Twojej strony WWW. Prosimy o bezpośredni kontakt z producentem oprogramowania. Aby uzyskać więcej informacji, kliknij [tutaj](https://help-center.prestashop.com){.external} i przejdź na oficjalną stronę.
 
-Pamiętaj, że w przypadku tych systemów CMS możesz wprowadzić również zmiany bezpośrednio [w bazie danych](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin). W tabeli programu zmień link dostępowy do Twojej strony WWW.
+Pamiętaj, że w przypadku tych systemów CMS możesz wprowadzić również zmiany bezpośrednio [w bazie danych](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/). W tabeli programu zmień link dostępowy do Twojej strony WWW.
 
 W przypadku innych systemów zarządzania treścią, które nie są oferowane do automatycznej instalacji przez OVHcloud, zachęcamy również do zapoznania się z ich odpowiednimi obsługami, aby przeprowadzić bezpieczną operację. 
 
 #### Sprawa nr 2: twoja strona www to strona "domowa"
 
-Aby przepisać adresy URL dla nowej domeny [zaloguj się do bazy danych Twojej strony](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin), następnie zastąp starą domenę nową w odpowiedniej tabeli. 
+Aby przepisać adresy URL dla nowej domeny [zaloguj się do bazy danych Twojej strony](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/), następnie zastąp starą domenę nową w odpowiedniej tabeli. 
 
 Pamiętaj, aby sprawdzić w pliku `.htaccess`, czy zapisy URL nie są aktualizowane z nową domeną.
 
@@ -132,27 +132,27 @@ Jeśli korzystałeś z usług dostawcy podczas tworzenia strony, skontaktuj się
 
 ### Etap 3 - usunięcie poprzedniej nazwy domeny <a name="step3"></a>
 
-Aby uniknąć duplicate-content*, a nowa domena jest w pełni aktywna na Twojej stronie WWW, należy usunąć zgłoszenie w opcji MultiSite ze starego domeny w przewodniku dotyczącym zarządzania [MultiSite na hostingu](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+Aby uniknąć duplicate-content*, a nowa domena jest w pełni aktywna na Twojej stronie WWW, należy usunąć zgłoszenie w opcji MultiSite ze starego domeny w przewodniku dotyczącym zarządzania [MultiSite na hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/).
 
 > [!warning]
 >
 > Pamiętaj, aby zająć się certyfikatem SSL *Sectigo EV*, *Sectigo DV* lub *Custom* zgodnie z opisem w [krok 1](#step1).
 >
 
-Po usunięciu starej domeny z zakładki MultiSite i jej zarejestrowaniu w OVHcloud, możesz ją przekierować za pomocą [stałego, widocznego przekierowania 301](https://docs.ovh.com/fr/domains/redirection-nom-de-domaine/). Pozwoli to użytkownikom na automatyczne przekierowanie do strony WWW poprzez wyświetlenie nowej domeny na pasku adresu/URL przeglądarki.
+Po usunięciu starej domeny z zakładki MultiSite i jej zarejestrowaniu w OVHcloud, możesz ją przekierować za pomocą [stałego, widocznego przekierowania 301](https://docs.ovh.com/pl/domains/przekierowanie-domeny/). Pozwoli to użytkownikom na automatyczne przekierowanie do strony WWW poprzez wyświetlenie nowej domeny na pasku adresu/URL przeglądarki.
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Lista adresów IP hostingu www](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/)
+[Lista adresów IP hostingu www](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/)
 
-[Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
+[Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/)
 
-[Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/)
+[Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](https://docs.ovh.com/pl/hosting/aktywacja-https-ssl-na-stronie-WWW/)
 
-[Przekierowanie domeny](https://docs.ovh.com/fr/domains/redirection-nom-de-domaine/)
+[Przekierowanie domeny](https://docs.ovh.com/pl/domains/przekierowanie-domeny/)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/fr/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/fr/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

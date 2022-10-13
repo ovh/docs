@@ -25,37 +25,37 @@ Este tutorial explica los pasos que debe seguir para cambiar el dominio de su si
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/fr/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 ## Requisitos
 
-- Tener un [dominio](https://www.ovhcloud.com/fr/domains/).
-- Disponer de un [hosting OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Tener un [dominio](https://www.ovhcloud.com/es/domains/).
+- Disponer de un [hosting OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
+- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
 > [!warning]
 >
 > El cambio del dominio para acceder a su sitio puede tener consecuencias en su posicionamiento. 
-> Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](https://partner.ovhcloud.com/fr/) en el posicionamiento, si es necesario.
+> Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) en el posicionamiento, si es necesario.
 >
 
 Para cambiar el dominio de acceso al sitio web, deberá realizar diversas acciones en un orden adecuado.
 
 ### Etape 1 - declarar el nuevo dominio en su alojamiento compartido <a name="step1"></a>
 
-Declare su nuevo dominio con ayuda de nuestra documentación sobre el[adición de un multisitio a su alojamiento compartido](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/). Declare también su subdominio en `wwx` si desea, por ejemplo, que ` www.NewDomain.tld` muestre también su sitio web además de `NewDomain.tld`.
+Declare su nuevo dominio con ayuda de nuestra documentación sobre el[adición de un multisitio a su alojamiento compartido](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/). Declare también su subdominio en `wwx` si desea, por ejemplo, que ` www.NewDomain.tld` muestre también su sitio web además de `NewDomain.tld`.
 
 Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 
 - El nuevo dominio debe apuntar hacia la misma "carpeta raíz" que el dominio utilizado actualmente para acceder a su sitio web.
-- Compruebe que su nuevo dominio apunta correctamente a la dirección IP correcta de su alojamiento compartido. Para obtener la dirección IP, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), acceda a la sección `Web cloud`{.action}, haga clic en `Alojamientos`{.action}, seleccione su alojamiento y recupere **l IPv4** en la pestaña `Información general`{.action}.
+- Compruebe que su nuevo dominio apunta correctamente a la dirección IP correcta de su alojamiento compartido. Para obtener la dirección IP, conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Web cloud`{.action}, haga clic en `Alojamientos`{.action}, seleccione su alojamiento y recupere **l IPv4** en la pestaña `Información general`{.action}.
 
 > [!warning]
 >
-> Si activa las opciones **IP del país** o **CDN** con su nuevo dominio, utilice la dirección IP correcta con nuestra documentación que recoge [todas las direcciones IP de nuestros alojamientos compartidos](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/).
+> Si activa las opciones **IP del país** o **CDN** con su nuevo dominio, utilice la dirección IP correcta con nuestra documentación que recoge [todas las direcciones IP de nuestros alojamientos compartidos](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/).
 >
 > Para consultar el número del cluster en el que se encuentra el alojamiento, acceda a la sección `Web cloud`{.action}, haga clic en `Alojamientos`{.action}, seleccione el alojamiento y abra la pestaña `FTP-SSH`{.action}. Podrá ver el número del cluster en el formulario **Servidor FTP y SFTP** : `ftp.cluster0XX.ovh.net` (donde los `X` representan el número de cluster).
 >
@@ -63,8 +63,8 @@ Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 > **Certificados SSL***
 >
 > Si el dominio inicialmente utilizado para acceder a su sitio web dispone de un certificado SSL, consulte nuestras dos guías para efectuar o verificar las acciones descritas justo debajo de estos dos enlaces :
-> - [Gestionar un certificado SSL en un alojamiento web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
-> - [Habilitar HTTPS en un sitio web con certificado SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/)
+> - [Gestionar un certificado SSL en un alojamiento web](https://docs.ovh.com/us/es/hosting/gestionar-un-certificado-ssl-en-un-alojamiento-web/)
+> - [Habilitar HTTPS en un sitio web con certificado SSL](https://docs.ovh.com/us/es/hosting/activar-https-en-un-sitio-web-con-ssl/)
 >
 > Para el certificado SSL *Let's Encrypt* gratuito, solo tiene que activar la opción `SSL` **ya** para su nuevo dominio a través de la pestaña `Multisitios`{.action} de su alojamiento. Haga clic en el botón `Acciones`{.action} situado sobre la tabla que muestra los multisitios y seleccione `Regenerar el certificado SSL`{.action}. La regeneración tardará al menos 2 horas en realizarse.
 >
@@ -92,9 +92,9 @@ La mayoría de los sitios web utilizan bases de datos para funcionar. El árbol 
 
 > [!warning]
 >
-> Atención, las operaciones descritas en el paso 2 son extremadamente sensibles y pueden tener consecuencias graves para su sitio web si no se efectúan con precaución. Si tiene alguna duda, no intente nada y contacte con un [proveedor especializado](https://partner.ovhcloud.com/fr/).
+> Atención, las operaciones descritas en el paso 2 son extremadamente sensibles y pueden tener consecuencias graves para su sitio web si no se efectúan con precaución. Si tiene alguna duda, no intente nada y contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/).
 >
-Antes de realizar cualquier acción, le recomendamos que obtenga una [copia de seguridad de su espacio de almacenamiento FTP](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) y una [copia de seguridad de su base de datos](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/). para restaurar el sitio web en caso de manipulación incorrecta.
+Antes de realizar cualquier acción, le recomendamos que obtenga una [copia de seguridad de su espacio de almacenamiento FTP](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/) y una [copia de seguridad de su base de datos](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/). para restaurar el sitio web en caso de manipulación incorrecta.
 >
 
 Vamos a diferenciar dos tipos de sitios web: 
@@ -112,15 +112,15 @@ Los CMS son desarrollados por terceros no gestionados por OVHcloud. A continuaci
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>
 - Joomla! : El editor de este programa no propone, en la fecha prevista, ninguna documentación para cambiar el dominio de acceso a su sitio web. Por favor, contacte directamente con el editor sobre este asunto. Para más información, consulte las páginas oficiales [docs.joomla.org](https://docs.joomla.org/){.external} o [forum.joomla.org](https://forum.joomla.org/){.external}.
 - Drupal: El editor de este programa no propone, en la fecha prevista, ninguna documentación para cambiar el dominio de acceso a su sitio web. Por favor, contacte directamente con el editor sobre este asunto. Para más información, consulte las páginas oficiales [drupal.org](https://drupal.org){.external} o [drupal.fr](https://drupal.fr){.external}.
-- PrestaShop: El editor de este programa no propone, en la fecha prevista, ninguna documentación para cambiar el dominio de acceso a su sitio web. Por favor, contacte directamente con el editor sobre este asunto. Para más información, haga clic [aquí](https://help-center.prestashop.com/fr){.external} para acceder a su página oficial.
+- PrestaShop: El editor de este programa no propone, en la fecha prevista, ninguna documentación para cambiar el dominio de acceso a su sitio web. Por favor, contacte directamente con el editor sobre este asunto. Para más información, haga clic [aquí](https://help-center.prestashop.com){.external} para acceder a su página oficial.
 
-Tenga en cuenta que en estos CMS también es posible realizar sus modificaciones directamente [en la base de datos](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin). Deberá cambiar la URL de acceso al sitio web en la tabla que se indica a tal efecto.
+Tenga en cuenta que en estos CMS también es posible realizar sus modificaciones directamente [en la base de datos](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/). Deberá cambiar la URL de acceso al sitio web en la tabla que se indica a tal efecto.
 
 Para los demás CMS que OVHcloud no ofrece con instalación automática, también le recomendamos que se ponga en contacto con sus respectivos soportes para realizar la reescritura con total seguridad. 
 
 #### Caso n°2: su sitio web es un sitio "casero"
 
-Para reescribir sus URL con su nuevo dominio, [conéctese a la base de datos de su sitio web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) y, a continuación, sustituya su antiguo dominio por el nuevo en la tabla correspondiente. 
+Para reescribir sus URL con su nuevo dominio, [conéctese a la base de datos de su sitio web](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/) y, a continuación, sustituya su antiguo dominio por el nuevo en la tabla correspondiente. 
 
 Compruebe en su archivo `.htaccess` si las reescrituras de URL no deben actualizarse con su nuevo dominio.
 
@@ -133,27 +133,27 @@ Si ha contratado a un proveedor para que cree su sitio web, deberá ponerse en c
 
 ### Etape 3 - retirar el antiguo nombre de dominio <a name="step3"></a>
 
-Para evitar el "*Duplicate-content*" y cuando su nuevo dominio esté plenamente operativo con su sitio web, deberá eliminar la declaración en multisitio para su antiguo dominio utilizando la guía sobre la gestión de [multisitios en su alojamiento compartido](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+Para evitar el "*Duplicate-content*" y cuando su nuevo dominio esté plenamente operativo con su sitio web, deberá eliminar la declaración en multisitio para su antiguo dominio utilizando la guía sobre la gestión de [multisitios en su alojamiento compartido](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/).
 
 > [!warning]
 >
 > No olvide contratar su certificado SSL *Sectigo EV*, *Sectigo DV* o *Custom* como se especifica en [el paso 1](#step1).
 >
 
-Una vez que el antiguo dominio haya sido eliminado de la pestaña multisitio, y si está registrado en OVHcloud, podrá redirigirlo utilizando una [redirección visible permanente 301](https://docs.ovh.com/fr/domains/redirection-nom-de-domaine/). De este modo, sus visitas podrán ser automáticamente redirigidas hacia su sitio web visualizando su nuevo dominio en la barra de direcciones/URL de su navegador.
+Una vez que el antiguo dominio haya sido eliminado de la pestaña multisitio, y si está registrado en OVHcloud, podrá redirigirlo utilizando una [redirección visible permanente 301](https://docs.ovh.com/us/es/domains/redireccion-dominio/). De este modo, sus visitas podrán ser automáticamente redirigidas hacia su sitio web visualizando su nuevo dominio en la barra de direcciones/URL de su navegador.
 
 ## Más información <a name="go-further"></a>
 
-[Lista de las IP de nuestros alojamientos compartidos](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/)
+[Lista de las IP de nuestros alojamientos compartidos](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/)
 
-[Gestionar un certificado SSL en un alojamiento web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
+[Gestionar un certificado SSL en un alojamiento web](https://docs.ovh.com/us/es/hosting/gestionar-un-certificado-ssl-en-un-alojamiento-web/)
 
-[Habilitar HTTPS en un sitio web con certificado SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/)
+[Habilitar HTTPS en un sitio web con certificado SSL](https://docs.ovh.com/us/es/hosting/activar-https-en-un-sitio-web-con-ssl/)
 
-[Redirigir un dominio](https://docs.ovh.com/fr/domains/redirection-nom-de-domaine/)
+[Redirigir un dominio](https://docs.ovh.com/us/es/domains/redireccion-dominio/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/fr/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/fr/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

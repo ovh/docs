@@ -20,37 +20,37 @@ Ce tutoriel a pour objectif de vous expliquer les principales étapes à suivre 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
-- Disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
+- Disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## En pratique
 
 > [!warning]
 >
 > Le changement du nom de domaine pour accéder à votre site peut avoir des conséquences sur son référencement. 
-> Soyez vigilant quant aux manipulations que vous allez entreprendre ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) dans le référencement si nécessaire.
+> Soyez vigilant quant aux manipulations que vous allez entreprendre ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) dans le référencement si nécessaire.
 >
 
 Pour changer le nom de domaine d'accès à votre site web, plusieurs étapes sont à réaliser dans un ordre bien précis.
 
 ### Etape 1 - déclarer le nouveau domaine sur votre hébergement mutualisé <a name="step1"></a>
 
-Déclarez votre nouveau nom de domaine à l'aide de notre documentation sur l'[ajout d'un multisite sur votre hébergement mutualisé](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/). Déclarez également son sous-domaine en `www` si vous souhaitez, par exemple, que `www.NewDomain.tld` affiche aussi votre site en plus de `NewDomain.tld`.
+Déclarez votre nouveau nom de domaine à l'aide de notre documentation sur l'[ajout d'un multisite sur votre hébergement mutualisé](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/). Déclarez également son sous-domaine en `www` si vous souhaitez, par exemple, que `www.NewDomain.tld` affiche aussi votre site en plus de `NewDomain.tld`.
 
 Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
 - Votre nouveau domaine doit pointer vers le même « dossier racine » que le domaine utilisé actuellement pour accéder à votre site.
-- Vérifiez que votre nouveau domaine pointe bien vers la bonne adresse IP de votre hébergement mutualisé. Pour récupérer l'adresse IP, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, sélectionnez votre hébergement puis récupérez **l'IPv4** dans l'onglet `Informations générales`{.action}.
+- Vérifiez que votre nouveau domaine pointe bien vers la bonne adresse IP de votre hébergement mutualisé. Pour récupérer l'adresse IP, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, sélectionnez votre hébergement puis récupérez **l'IPv4** dans l'onglet `Informations générales`{.action}.
 
 > [!warning]
 >
-> Si vous activez les options **IP du pays** ou **CDN** avec votre nouveau domaine, utilisez bien la bonne adresse IP à l'aide de notre documentation recensant [l'ensemble des adresses IP de nos hébergements mutualisés](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/).
+> Si vous activez les options **IP du pays** ou **CDN** avec votre nouveau domaine, utilisez bien la bonne adresse IP à l'aide de notre documentation recensant [l'ensemble des adresses IP de nos hébergements mutualisés](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
 >
 > Pour retrouver le numéro du cluster où se trouve votre hébergement, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, sélectionnez votre hébergement puis l'onglet `FTP-SSH`{.action}. Vous visualiserez le numéro du cluster dans le formulaire **Serveur FTP et SFTP** : `ftp.cluster0XX.ovh.net` (où les `X` représentent le numéro de cluster).
 >
@@ -58,8 +58,8 @@ Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 > **Certificats SSL**
 >
 > Si le domaine initialement utilisé pour accéder à votre site dispose d'un certificat SSL, consultez nos deux guides afin d'effectuer ou de vérifier les actions décrites juste en dessous de ces deux liens :
-> - [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
-> - [Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/)
+> - [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/ca/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
+> - [Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/ca/fr/hosting/passer-site-internet-https-ssl/)
 >
 > Pour le certificat SSL *Let's Encrypt* gratuit, il vous suffit d'activer l'option `SSL` **dès à présent** pour votre nouveau domaine via l'onglet `Multisites`{.action} de votre hébergement. Cliquez ensuite sur le bouton `Actions`{.action} au dessus du tableau indiquant vos multistes puis sur `Régénérer le certificat SSL`{.action}. La régénération prendra au minimum 2 heures pour être réalisée.
 >
@@ -87,9 +87,9 @@ La plupart des sites utilisent des bases de données pour fonctionner. L'arbores
 
 > [!warning]
 >
-> Attention, les opérations décrites dans l'étape 2 sont extrêmement sensibles et peuvent avoir des conséquences graves pour votre site web si elle ne sont pas effectuées avec précaution. Si vous avez le moindre doute, ne tentez rien et faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
+> Attention, les opérations décrites dans l'étape 2 sont extrêmement sensibles et peuvent avoir des conséquences graves pour votre site web si elle ne sont pas effectuées avec précaution. Si vous avez le moindre doute, ne tentez rien et faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/).
 >
-> Avant d'effectuer toute action, nous vous conseillons de récupérer une [sauvegarde de votre espace de stockage FTP](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) ainsi qu'une [sauvegarde de votre base de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/). Cela vous permettra de restaurer votre site en cas de mauvaise manipulation.
+> Avant d'effectuer toute action, nous vous conseillons de récupérer une [sauvegarde de votre espace de stockage FTP](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) ainsi qu'une [sauvegarde de votre base de données](https://docs.ovh.com/ca/fr/hosting/exportation-bases-donnees/). Cela vous permettra de restaurer votre site en cas de mauvaise manipulation.
 >
 
 Nous allons distinguer deux types de site web : 
@@ -107,15 +107,15 @@ Les CMS étant développés par des organismes tiers non gérés par OVHcloud, v
 - WordPress : <https://wordpress.org/support/article/changing-the-site-url/>
 - Joomla! : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, consultez les pages officielles [docs.joomla.org](https://docs.joomla.org/){.external} ou [forum.joomla.org](https://forum.joomla.org/){.external}.
 - Drupal : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, consultez les pages officielles [drupal.org](https://drupal.org){.external} ou [drupal.fr](https://drupal.fr){.external}.
-- PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, cliquez [ici](https://help-center.prestashop.com/fr){.external} pour vous rendre sur leur page officielle.
+- PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, cliquez [ici](https://help-center.prestashop.com){.external} pour vous rendre sur leur page officielle.
 
-Notez que pour ces CMS, il est également possible d'effectuer ses modifications directement [en base de données](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin). Vous devrez changer l'URL d'accès à votre site dans la table prévue à cet effet.
+Notez que pour ces CMS, il est également possible d'effectuer ses modifications directement [en base de données](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/). Vous devrez changer l'URL d'accès à votre site dans la table prévue à cet effet.
 
 Pour les autres CMS non proposés en installation automatique par OVHcloud, nous vous invitons également à vous rapprocher de leurs supports respectifs pour effectuer cette réécriture en toute sécurité. 
 
 #### Cas n°2 : votre site web est un site « fait maison »
 
-Pour réécrire vos URLs avec votre nouveau domaine, [connectez-vous à la base de données de votre site](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) puis remplacez votre ancien domaine par le nouveau dans la table correspondante. 
+Pour réécrire vos URLs avec votre nouveau domaine, [connectez-vous à la base de données de votre site](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/) puis remplacez votre ancien domaine par le nouveau dans la table correspondante. 
 
 N'oubliez pas de vérifier dans votre fichier `.htaccess` si des réécritures d'URL ne sont pas à mettre à jour avec votre nouveau domaine.
 
@@ -128,27 +128,27 @@ Si vous avez fait appel à un prestataire pour la création de votre site, conta
 
 ### Etape 3 - retirer l'ancien nom de domaine <a name="step3"></a>
 
-Pour éviter le  « *Duplicate-content* » et lorsque votre nouveau domaine est pleinement opérationnel avec votre site, vous devrez supprimer la déclaration en multisites pour votre ancien domaine à l'aide du guide sur la gestion des [multisites sur votre hébergement mutualisé](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+Pour éviter le  « *Duplicate-content* » et lorsque votre nouveau domaine est pleinement opérationnel avec votre site, vous devrez supprimer la déclaration en multisites pour votre ancien domaine à l'aide du guide sur la gestion des [multisites sur votre hébergement mutualisé](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
 
 > [!warning]
 >
 > N'oubliez pas de vous occuper de votre certificat SSL *Sectigo EV*, *Sectigo DV* ou *Custom* comme précisé dans [l'étape 1](#step1).
 >
 
-Une fois votre ancien domaine retiré de l'onglet multisites et s'il est enregistré chez OVHcloud, vous pourrez rediriger ce dernier à l'aide d'une [redirection visible permanente 301](https://docs.ovh.com/fr/domains/redirection-nom-de-domaine/). Cela permettra à vos visiteurs d'être automatiquement redirigé vers votre site en visualisant votre nouveau domaine dans la barre d'adresse/URL de leur navigateur.
+Une fois votre ancien domaine retiré de l'onglet multisites et s'il est enregistré chez OVHcloud, vous pourrez rediriger ce dernier à l'aide d'une [redirection visible permanente 301](https://docs.ovh.com/ca/fr/domains/redirection-nom-de-domaine/). Cela permettra à vos visiteurs d'être automatiquement redirigé vers votre site en visualisant votre nouveau domaine dans la barre d'adresse/URL de leur navigateur.
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Liste des IPs de nos hébergements mutualisés](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/)
+[Liste des IPs de nos hébergements mutualisés](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/)
 
-[Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
+[Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/ca/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
 
-[Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/)
+[Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/ca/fr/hosting/passer-site-internet-https-ssl/)
 
-[Rediriger un domaine](https://docs.ovh.com/fr/domains/redirection-nom-de-domaine/)
+[Rediriger un domaine](https://docs.ovh.com/ca/fr/domains/redirection-nom-de-domaine/)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
