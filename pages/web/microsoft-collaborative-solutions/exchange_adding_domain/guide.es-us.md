@@ -19,7 +19,7 @@ Añadir un dominio a un servicio Exchange es un requisito indispensable para pod
 
 ## Requisitos
 
-- Tener una [solución Exchange](https://www.ovhcloud.com/es/emails/) o [Email Pro](hhttps://www.ovhcloud.com/es/emails/email-pro/).
+- Tener una [solución Exchange](https://www.ovhcloud.com/es/emails/).
 - Tener uno o más dominios.
 - Estar en condiciones de modificar la configuración del dominio ([zona DNS](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/)).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
@@ -111,7 +111,7 @@ Le recordamos que todas las direcciones creadas en su servicio podrán ver en el
 
 Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el **webmail** disponible en la dirección <https://www.ovhcloud.com/es/mail/>. Para un uso óptimo de su dirección en un programa, asegúrese de que sea compatible con el servicio. 
 
-Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo (smartphone o tablet) u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte la documentación disponible en las páginas [Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/) y [Email Pro](https://docs.ovh.com/us/es/emails-pro/).
+Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo (smartphone o tablet) u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte la documentación disponible en las páginas [Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/).
 
 Puede adquirir licencias Outlook en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y licencias de Office 365 en la página <https://www.ovhcloud.com/es/collaborative-tools/microsoft-365/>. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 
@@ -145,11 +145,11 @@ En la pestaña `Dominios asociados`{.action} de su plataforma, haga clic en el b
 
 ## Más información
 
-[Crear un registro CNAME al añadir un dominio asociado](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange_20132016_anadir_un_registro_cname/)
+[Crear un registro CNAME al añadir un dominio asociado](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_anadir_un_registro_cname/)
 
 [Editar una zona DNS de OVHcloud](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte.](https://www.ovhcloud.com/es/support-levels/)
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte.](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -9,13 +9,13 @@ order: 4
 
 ## Objectif
 
-Ajouter un nom de domaine sur un service Exchange est indispensable afin de pouvoir utiliser vos comptes inclus dans ce dernier. Il est également possible d'ajouter plusieurs noms de domaine à un service Exchange ou E-mail Pro.
+Ajouter un nom de domaine sur un service Exchange est indispensable afin de pouvoir utiliser vos comptes inclus dans ce dernier. Il est également possible d'ajouter plusieurs noms de domaine à un service Exchange.
 
-**Découvrez comment ajouter un nom de domaine à votre plateforme Exchange ou E-mail Pro.**
+**Découvrez comment ajouter un nom de domaine à votre plateforme Exchange.**
 
 ## Prérequis
 
-- Disposer d'une solution [Exchange](https://www.ovhcloud.com/fr-ca/emails/) ou [Email Pro](https://www.ovhcloud.com/fr-ca/emails/email-pro/)).
+- Disposer d'une solution [Exchange](https://www.ovhcloud.com/fr-ca/emails/).
 - Disposer d'un ou plusieurs noms de domaine.
 - Être en mesure de modifier la configuration de votre nom de domaine ([zone DNS](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/)).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
@@ -24,12 +24,9 @@ Ajouter un nom de domaine sur un service Exchange est indispensable afin de pouv
 
 ### Accéder à la gestion de votre service
 
-Une fois votre service Exchange ou E-mail Pro créé et disponible, vous pouvez le gérer depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+Une fois votre service Exchange créé et disponible, vous pouvez le gérer depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
-Dans la section `Web Cloud`{.action}:
-
-- **Exchange**: Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. 
-- **Email Pro**: Cliquez sur `Email Pro`{.action}.
+Dans la section `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. 
 
 Sélectionnez enfin le nom du service concerné.
 
@@ -39,7 +36,7 @@ Pour ajouter un nom de domaine, cliquez sur l'onglet `Domaine associés`{.action
 
 > [!warning]
 >
-> Toutes les adresses créées sur votre service e-mail seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander une nouvelle [solution Exchange ou Email Pro](https://www.ovhcloud.com/fr-ca/emails/) pour le ou les noms de domaine concernés.
+> Toutes les adresses créées sur votre service e-mail seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander une nouvelle [solution Exchange](https://www.ovhcloud.com/fr-ca/emails/) pour le ou les noms de domaine concernés.
 >
 
 ![Add Domain](images/add_domain_exchange_step1.png){.thumbnail}
@@ -62,8 +59,8 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 
 |Mode|Description|
 |---|---|
-|Autoritatif|Convient si vous utilisez uniquement votre solution Exchange ou E-mail Pro avec votre nom de domaine. Ne permet pas l'usage d'une autre solution de messagerie avec votre service.|
-|Non-autoritatif|Convient si vous utilisez avec votre nom de domaine la solution Exchange ou E-mail Pro conjointement à une autre solution e-mail. Vous devrez renseigner le serveur de votre autre solution e-mail.|
+|Autoritatif|Convient si vous utilisez uniquement votre solution Exchange avec votre nom de domaine. Ne permet pas l'usage d'une autre solution de messagerie avec votre service.|
+|Non-autoritatif|Convient si vous utilisez avec votre nom de domaine la solution Exchange conjointement à une autre solution e-mail. Vous devrez renseigner le serveur de votre autre solution e-mail.|
 
 > [!primary]
 >
@@ -78,7 +75,7 @@ Cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
 **Si vous avez renseigné un nom de domaine non géré par OVHcloud** , la configuration devra être réalisée durant l'étape suivante.
 
-![emailpro](images/add_domain_exchange_step4.png){.thumbnail}
+![Add Domain](images/add_domain_exchange_step4.png){.thumbnail}
 
 En fin de configuration, nous vous invitons à vérifier les informations qui s'affichent, puis à cliquer sur le bouton `Confirmer`{.action} pour valider l'ajout du domaine. Réalisez cette étape autant de fois que nécessaire si vous souhaitez ajouter plusieurs noms de domaine.
 
@@ -97,7 +94,7 @@ Une fois le nom de domaine ajouté en tant que domaine associé, assurez-vous qu
 
 Pour vérifier que la configuration d'un nom de domaine est correcte, repositionnez-vous sur le tableau `Domaines associés`{.action} de votre service. Si la pastille est à présent verte, le nom de domaine est correctement configuré. Dans le cas contraire, il se peut que la propagation ne soit pas encore terminée.
 
-![emailpro](images/add_domain_exchange_step5.png){.thumbnail}
+![Add Domain](images/add_domain_exchange_step5.png){.thumbnail}
 
 ### Configurer et utiliser les comptes
 
@@ -107,13 +104,13 @@ Pour rappel, toutes les adresses créées sur votre service seront en mesure de 
 
 Une fois les comptes totalement configurés, il ne vous reste plus qu’à les utiliser. Pour cela, OVHcloud met à votre disposition le **webmail** accessible à l’adresse <https://www.ovh.com/fr/mail/>. Pour une utilisation optimale de votre adresse sur un logiciel, assurez-vous de sa bonne compatibilité avec le service. 
 
-Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, ou obtenir de l'aide concernant les fonctionnalités de votre service e-mail, consultez nos documentations accessibles depuis les pages [Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/) et [E-mail Pro](https://docs.ovh.com/ca/fr/emails-pro/).
+Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, ou obtenir de l'aide concernant les fonctionnalités de votre service e-mail, consultez nos documentations accessibles depuis les pages [Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/).
 
 Vous pouvez acquérir des licences Outlook dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et des licences Office 365 sur la page <https://www.ovhcloud.com/fr-ca/collaborative-tools/microsoft-365/>. Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
 
 ### Supprimer un nom de domaine d'une plateforme
 
-Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange ou E-mail Pro, vous devez vérifier que celui-ci n'est pas lié à des comptes e-mail, alias, ressources, comptes partagés (uniquement sur Exchange), groupes, contacts externes ou pieds de page toujours configurés. Dans ce cas, il sera nécessaire d'**attacher ces comptes à un autre nom de domaine** sur votre plateforme ou de les **supprimer**.
+Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange, vous devez vérifier que celui-ci n'est pas lié à des comptes e-mail, alias, ressources, comptes partagés (uniquement sur Exchange), groupes, contacts externes ou pieds de page toujours configurés. Dans ce cas, il sera nécessaire d'**attacher ces comptes à un autre nom de domaine** sur votre plateforme ou de les **supprimer**.
 
 > [!warning]
 >
@@ -121,23 +118,23 @@ Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange o
 
 Dirigez-vous dans l'onglet `Domaines associés`{.action} de votre plateforme. Depuis le tableau, la colonne `Comptes` vous indique le nombre de comptes associés aux noms de domaine de votre liste.
 
-![emailpro](images/add_domain_exchange_step6.png){.thumbnail}
+![Add Domain](images/add_domain_exchange_step6.png){.thumbnail}
 
 Si des comptes e-mail sont attachés au nom de domaine que vous souhaitez détacher, vous avez 2 possibilités :
 
 - **Attacher les comptes à un autre nom de domaine** : rendez-vous dans l'onglet `Comptes e-mail`{.action}. À droite des comptes à modifier, cliquez sur le bouton `...`{.action}, puis `Modifier`{.action}.
-    ![emailpro](images/add_domain_exchange_step8.png){.thumbnail}
+    ![Add Domain](images/add_domain_exchange_step8.png){.thumbnail}
     Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
-    ![emailpro](images/add_domain_exchange_step9.png){.thumbnail}
+    ![Add Domain](images/add_domain_exchange_step9.png){.thumbnail}
 
 - **Supprimer les comptes de votre plateforme** : rendez-vous dans l'onglet `Comptes e-mail`{.action}. À droite du compte à supprimer, cliquez sur le bouton `...`{.action}, puis `Réinitialiser ce compte`{.action} ou `Réinitialiser`{.action}
-    ![emailpro](images/add_domain_exchange_step7.png){.thumbnail}
+    ![Add Domain](images/add_domain_exchange_step7.png){.thumbnail}
 
 Une fois la réattribution des comptes à un autre nom de domaine effectuée, ou leur réinitialisation, il est maintenant possible de procéder à la suppression du nom de domaine. 
 
 Depuis l'onglet `Domaine associés`{.action} de votre plateforme, cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Supprimer ce domaine`{.action}.
 
-![emailpro](images/add_domain_exchange_step10.png){.thumbnail}
+![Add Domain](images/add_domain_exchange_step10.png){.thumbnail}
 
 ## Aller plus loin
 
@@ -146,6 +143,6 @@ Depuis l'onglet `Domaine associés`{.action} de votre plateforme, cliquez sur le
 [Éditer une zone DNS OVHcloud](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/)
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
