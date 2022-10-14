@@ -114,6 +114,8 @@ When you are done, click the `Finish`{.action} button.
 
 ![ADFS relying party trust mapping step 4](images/adfs_relying_party_trusts_mapping_4.png){.thumbnail}
 
+![ADFS relying party trust mapping step 5](images/adfs_relying_party_trusts_mapping_5.png){.thumbnail}
+
 Click the `Apply`{.action} button and confirm with `OK`{.action}.
 
 ![ADFS relying party trust mapping step 6](images/adfs_relying_party_trusts_mapping_6.png){.thumbnail}
