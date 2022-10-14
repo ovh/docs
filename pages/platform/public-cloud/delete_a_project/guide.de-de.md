@@ -6,7 +6,7 @@ legacy_guide_number: g2129
 section: 'Projektverwaltung'
 ---
 
-**Letzte Aktualisierung am 11.11.2021**
+**Letzte Aktualisierung am 14.10.2022**
 
 ## Ziel
 
@@ -43,7 +43,11 @@ Eine Bestätigungsmeldung erscheint, die Sie über das Entfernen aller Projektre
 ![Projekt löschen](images/deleteproject2.png){.thumbnail}
 
 Nach Klick auf den Button wird eine E-Mail an Sie gesendet, in der Sie aufgefordert werden, das Löschen des Projekts entweder zu bestätigen oder abzubrechen. Der Bestätigungslink leitet Sie zu einer Webseite weiter, auf der Sie Ihr OVHcloud Account-Passwort eingeben müssen.
-<br>Nach Eingabe und Bestätigung Ihres Passworts wird das Projekt gelöscht.
+<br>Sobald Sie Ihr Passwort eingegeben und bestätigt haben, tritt Ihr Projekt in die Löschphase ein.
+
+> [!warning]
+> Bitte beachten Sie, dass ein Projekt, das in die Löschphase eintritt, 7 Tage lang im Aussetzungsstatus verbleibt. Das Projekt wird daher nicht sofort gelöscht. Wenn Sie von dieser Situation betroffen sind, zum Beispiel wenn Ihr Projektquota begrenzt ist, kontaktieren Sie bitte unsere Support-Teams.
+>
 
 ## Weiterführende Informationen
 
