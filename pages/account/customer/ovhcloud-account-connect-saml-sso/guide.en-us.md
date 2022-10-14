@@ -108,7 +108,7 @@ Select "Active Directory" as "Attribute store".
 
 > [!primary]
 >
-> The following settings can be configured freely, but there are some standards to respect to make sure Active Directory LDAP data can be read correctly by most service providers. You can refer to the image below as an example.
+> The following settings can be configured freely in order for the Active Directory LDAP data to be read correctly by the service provider. You can refer to the image below as an example.
 
 When you are done, click the `Finish`{.action} button.
 
