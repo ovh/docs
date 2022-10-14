@@ -27,7 +27,7 @@ With the Hosted Exchange service, you can get professional emails to use for col
 
 Once your Hosted Exchange service has been created and is available, you can manage it from your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 
-To do this, log in and click `Microsoft`{.action}, then `Exchange`{.action}. The click on the name of the Hosted Exchange service concerned.
+To do this, log in and click `Bare Metal Cloud`{.action}, then `Microsoft Exchange`{.action}. The click on the name of the Hosted Exchange service concerned.
 
 > [!primary]
 >
