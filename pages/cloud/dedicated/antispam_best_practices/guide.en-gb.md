@@ -268,7 +268,7 @@ For more information on the above services, please consult our guide on [Optimis
 
 **To a Microsoft server (Outlook, etc.)**
 
-Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](../optimise-emai**l-sending/#to-a-microsoft-server-outlook-etc) of the corresponding guide.
+Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](../optimise-email-sending/#to-a-microsoft-server-outlook-etc) of the corresponding guide.
 
 **To a Gmail server**
 

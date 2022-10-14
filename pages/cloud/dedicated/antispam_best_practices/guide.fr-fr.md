@@ -6,7 +6,7 @@ section : Diagnostic et mode Rescue
 order : 04
 ---
 
-**Dernière mise à jour le 26/092022**
+**Dernière mise à jour le 11/10/2022**
 
 ## Objectif
 
@@ -259,6 +259,19 @@ Certains services d'authentification vous permettent de protéger votre réputat
 - **DKIM** : Cette norme est décrite dans la [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871). AOL et Google (Gmail) fonctionnent sur cette base. 
 
 Pour plus d'informations sur les services ci-dessus, consultez notre guide « [Optimiser l’envoi d’e-mails](https://docs.ovh.com/fr/dedicated/optimiser-envoi-emails/) ».
+
+#### Cas spécifiques d'envois d'e-mails
+
+**Vers un serveur Microsoft (Outlook, etc...)**
+ 
+Microsoft utilise une politique de liste blanche. Cela signifie qu'au départ, tout serveur se trouve sur une liste noire et une procédure spécifique est nécessaire pour faire valider votre serveur e-mail. Pour plus d’informations, nous vous invitons à consulter [cette section](../optimiser-envoi-emails/#vers-un-serveur-microsoft-outlook-etc) du guide correspondant.
+
+**Vers **un serveur Gmail**
+
+L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire est chez Gmail. Voici un article de Google qui peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr){.external}.
+
+Google dispose également d'un [article dédié](https://support.google.com/mail/answer/81126?hl=en){.external}
+concernant la prévention du spam pour les utilisateurs de Gmail.
 
 ### Déclarer un faux positif
 
