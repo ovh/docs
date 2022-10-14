@@ -1,5 +1,5 @@
 ---
-title: Migrer son site et ses e-mails vers OVH
+title: Migrer son site et ses e-mails vers OVHcloud
 slug: migrer-mon-site-chez-ovh
 excerpt: Découvrez comment migrer votre site internet et vos e-mails vers OVHcloud sans interruption
 section: Premiers pas
@@ -16,15 +16,15 @@ Ce guide vous présente les différentes étapes de la migration d'un site inter
 
 ## Prérequis
 
-- Pouvoir gérer le nom de domaine concerné.
-- Avoir accès aux fichiers du site.
-- Avoir accès à la base de données du site, le cas échéant.
-- Être en possession des informations (utilisateur, mot de passe, serveurs) permettant de se connecter aux adresses e-mail actuelles.
+- Gérer le nom de domaine concerné.
+- Accéder aux fichiers de votre site chez votre hébergeur actuel.
+- Accéder à la base de données de votre site, le cas échéant.
+- Posséder les informations (utilisateur, mot de passe, serveurs) permettant de se connecter aux adresses e-mail actuelles.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
-Migrer votre site internet et vos e-mails vers OVHcloud nécessite l'application d'une procédure de migration précise. Cette dernière peut être divisée en plusieurs étapes.
+Migrer votre site internet et vos e-mails vers OVHcloud nécessite d'appliquer une procédure précise en plusieurs étapes.
 
 |Étapes|Description| 
 |---|---| 
