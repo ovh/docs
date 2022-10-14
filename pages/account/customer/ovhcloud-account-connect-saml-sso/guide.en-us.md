@@ -109,8 +109,6 @@ Select "Active Directory" as "Attribute store".
 > [!primary]
 >
 > The following settings can be configured freely, but there are some standards to respect to make sure Active Directory LDAP data can be read correctly by most service providers. You can refer to the image below as an example.
->
-> ![ADFS relying party trust mapping step 5](images/adfs_relying_party_trusts_mapping_5.png){.thumbnail}
 
 When you are done, click the `Finish`{.action} button.
 
