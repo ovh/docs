@@ -203,7 +203,7 @@ You can then check that the group is added to your OVHcloud account in the `Grou
 
 ![ADFS user management groups](images/ovhcloud_user_management_groups_3.png){.thumbnail}
 
-When you connect with the Active Directory user "johndoe" now, your OVHcloud account will recognise that the user has the "REGULAR" role, specified by its group.
+When you connect with the Active Directory user "johndoe" now, your OVHcloud account will recognize that the user has the "REGULAR" role, specified by its group.
 
 You can then disconnect from your account and log in again with your ADFS as identity provider.
 
