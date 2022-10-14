@@ -163,7 +163,7 @@ The `...`{.action} button enables you to update or delete the SSO, and to see de
 The trust of your ADFS as identity provider is thus established but you still have to add groups to your OVHcloud account.
 
 > [!warning]
-> If you try to connect at this stage via SSO, you will probably receive a "Not in valid groups" error message.
+> If you try to connect at this stage via SSO, you will probably receive a `Not in valid groups` error message.
 >
 > That is because your OVHcloud account checks if the authenticating user belongs to a group that actually exists on the account.
 >
