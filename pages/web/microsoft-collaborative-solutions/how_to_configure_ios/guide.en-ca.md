@@ -34,7 +34,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 > [!primary]
 >
-> In our example, we use as the hostname: ex**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
+> In our example, we use as the hostname: ex**?**.mail.ovh.ca. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
 > You can find this information in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action}. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
@@ -51,7 +51,7 @@ On your device’s home screen, go to `Settings`{.action} (cogwheel icon). There
 |---|---|
 |![iPhone](images/configuration-mailex-ios-step01.gif){.thumbnail}|1. In `Settings`, go to `Mail`. <br><br> 2. Tap `Accounts`.<br><br> 3. Tap `Add Account`.<br><br> 4. Choose `Microsoft Exchange`.|
 |5. Enter your email **address** and email account **description**, tap `Next`.<br><br>6. Select `Configure Manually`.<br><br>|![Exchange](images/configuration-mailex-ios-step02.png){.thumbnail}|
-|![Exchange](images/configuration-mailex-ios-step03.png){.thumbnail}|7. Enter: <br>- the server **ex?.mail.ovh.net** (replace the **?** by [your Exchange server number](#addaccount))<br>-your **full email address** as username <br>- your account password|
+|![Exchange](images/configuration-mailex-ios-step03.png){.thumbnail}|7. Enter: <br>- the server **ex?.mail.ovh.ca** (replace the **?** by [your Exchange server number](#addaccount))<br>-your **full email address** as username <br>- your account password|
 |8. Please ensure that you leave `Mail`{.action} activated, so that the application can use this account. Other applications (e.g. *Calendars* and *Notes*) can use some of Exchange’s collaborative features.<br><br>9. Tap `Save` to finish adding your Exchange account.|![Exchange](images/configuration-mailex-ios-step04.png){.thumbnail}|
 
 To check that the account has been correctly configured, you can send a test email.
