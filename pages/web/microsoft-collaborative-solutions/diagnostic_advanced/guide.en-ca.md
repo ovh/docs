@@ -81,9 +81,9 @@ This error indicates that emails cannot be received and it is also linked to the
 
 Depending on your Exchange service usage, the following MX servers are valid:
 
-- Exchange only: mx0.mail.ovh.net, mx1.mail.ovh.net, mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
-- Exchange & POP/IMAP email hosted by OVHcloud: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
-- Exchange & POP/IMAP email not hosted by OVHcloud: ex<b>?</b>.mail.ovh.net
+- Exchange only: mx0.mail.ovh.ca, mx1.mail.ovh.ca, mx2.mail.ovh.ca, mx3.mail.ovh.ca & mx4.mail.ovh.ca
+- Exchange & POP/IMAP email hosted by OVHcloud: mx0.mail.ovh.ca, mx1.mail.ovh.ca mx2.mail.ovh.ca, mx3.mail.ovh.ca & mx4.mail.ovh.ca
+- Exchange & POP/IMAP email not hosted by OVHcloud: ex<b>?</b>.mail.ovh.ca
 <a name="hostname"></a>
 
 > [!warning]
@@ -106,7 +106,7 @@ Field        | Value
 Priority     | 0
 Weight       | 0
 Port         | 443
-Target       | [Your hostname](#hostname) (ex<b>?</b>.mail.ovh.net)
+Target       | [Your hostname](#hostname) (ex<b>?</b>.mail.ovh.ca)
 
 ### The test email could not be sent from this account 
 
