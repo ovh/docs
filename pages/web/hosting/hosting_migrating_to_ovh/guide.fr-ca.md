@@ -6,7 +6,7 @@ section: Premiers pas
 order: 08
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 14/10/2022**
 
 ## Objectif
 
@@ -61,15 +61,15 @@ Plusieurs sous-étapes sont à réaliser.
 |---|---|---|
 |1|Récupérer une sauvegarde du site|Il s'agit d'une sauvegarde intégrale de votre site internet incluant les fichiers ainsi que la base de données (le cas échéant). Cette sauvegarde complète est essentielle pour migrer votre site chez OVHcloud.|
 |2|Mettre en ligne votre site chez OVHcloud|Connectez-vous à votre espace de stockage (FTP) afin d'y importer les fichiers de votre site. Vous devrez les mettre en ligne dans le dossier **"www"**. Les identifiants de connexion au FTP vous sont transmis par e-mail.|
-|3|Création d'une base de données OVHcloud|Si votre site fonctionne avec une base de données, vous devrez en [créer une nouvelle chez OVHcloud](../creer-base-de-donnees/){.external} depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.|
-|4|Importer les données de la base|Importez la sauvegarde de votre base de données en utilisant [l'outil OVHcloud mis à disposition dans votre espace client](../mutualise-guide-importation-dune-base-de-donnees-mysql/){.external}.|
+|3|Création d'une base de données OVHcloud|Si votre site fonctionne avec une base de données, vous devrez en [créer une nouvelle chez OVHcloud](https://docs.ovh.com/ca/fr/creer-base-de-donnees/){.external} depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.|
+|4|Importer les données de la base|Importez la sauvegarde de votre base de données en utilisant [l'outil OVHcloud mis à disposition dans votre espace client](https://docs.ovh.com/ca/fr/mutualise-guide-importation-dune-base-de-donnees-mysql/){.external}.|
 |5|Lier le site à la nouvelle base|Les informations de votre ancienne base de données sont toujours présentes dans le fichier de configuration de votre site. Sur votre espace de stockage OVHcloud, modifiez ce fichier en y renseignant les informations de la base de données OVHcloud.|
 
 La configuration de votre nom de domaine restant inchangée, l'hébergement utilisé pour afficher votre site internet reste toujours celui de votre prestataire actuel.
 
 #### Étape 3 : recréer vos adresses e-mail chez OVHcloud
 
-Une fois le site internet transféré, vous devez [recréer chez OVHcloud les mêmes adresses](../../emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail){.external} que vous utilisez chez votre prestataire actuel. Celles-ci devront porter le même nom. Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, rendez-vous dans la section `E-mails`{.action}, puis sur l'hébergement web que vous venez de commander (portant le même intitulé que votre nom de domaine). Suivez les étapes de création en cliquant sur le bouton `Créer une adresse e-mail`{.action}.
+Une fois le site internet transféré, vous devez [recréer chez OVHcloud les mêmes adresses](https://docs.ovh.com/ca/fr/https://docs.ovh.com/ca/fr/emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail){.external} que vous utilisez chez votre prestataire actuel. Celles-ci devront porter le même nom. Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, rendez-vous dans la section `E-mails`{.action}, puis sur l'hébergement web que vous venez de commander (portant le même intitulé que votre nom de domaine). Suivez les étapes de création en cliquant sur le bouton `Créer une adresse e-mail`{.action}.
 
 La configuration de votre nom de domaine restant inchangée, la réception des nouveaux messages s'effectue toujours sur les adresses e-mail créées chez votre prestataire actuel. Vous devez toujours utiliser ces dernières pour réaliser vos envois.
 
@@ -92,7 +92,7 @@ Plusieurs sous-étapes sont à réaliser.
 |Sous-étapes|Description|Détails|
 |---|---|---|
 |1|Migrer le contenu des adresses chez OVHcloud|Utilisez l’outil [OVHcloud Mail Migrator (OMM)](https://omm.ovh.net/){.external} qui vous permet de copier le contenu des adresses e-mail enregistrées chez votre ancien prestataire vers celles créées chez OVHcloud.|
-|2|Utiliser vos adresses|Vos adresses e-mail OVHcloud sont accessibles depuis une application en ligne ([webmail](https://www.ovh.com/ca/fr/mail/){.external}). Si vous aviez paramétré l'une des adresses sur un client de messagerie (comme Outlook), vous devez la configurer de nouveau pour y renseigner [les serveurs d'OVHcloud](../../emails/generalites-sur-les-emails-mutualises/) à la place de ceux de votre ancien prestataire.|
+|2|Utiliser vos adresses|Vos adresses e-mail OVHcloud sont accessibles depuis une application en ligne ([webmail](https://www.ovh.com/ca/fr/mail/){.external}). Si vous aviez paramétré l'une des adresses sur un client de messagerie (comme Outlook), vous devez la configurer de nouveau pour y renseigner [les serveurs d'OVHcloud](https://docs.ovh.com/ca/fr/https://docs.ovh.com/ca/fr/emails/generalites-sur-les-emails-mutualises/) à la place de ceux de votre ancien prestataire.|
 
 #### Étape 6 : transférer votre nom de domaine vers OVHcloud
 
@@ -130,15 +130,15 @@ Plusieurs sous-étapes sont à réaliser.
 |---|---|---|
 |1|Récupérer une sauvegarde du site|Il s'agit d'une sauvegarde intégrale de votre site internet incluant les fichiers ainsi que la base de données (le cas échéant). Cette sauvegarde complète est essentielle pour migrer votre site chez OVHcloud.|
 |2|Mettre en ligne le site chez OVHcloud|Connectez-vous à votre espace de stockage (FTP) afin d'y importer les fichiers de votre site. Vous devrez les mettre en ligne dans le dossier **"www"**. Les identifiants de connexion au FTP vous sont transmis par e-mail.|
-|3|Création d'une base de données OVHcloud|Si votre site fonctionne avec une base de données, vous devrez en [créer une nouvelle chez OVHcloud](../creer-base-de-donnees/){.external} depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.|
-|4|Importer les données de la base|Importez la sauvegarde de votre base de données en utilisant [l'outil OVHcloud mis à disposition dans votre espace client](../mutualise-guide-importation-dune-base-de-donnees-mysql/){.external}.|
+|3|Création d'une base de données OVHcloud|Si votre site fonctionne avec une base de données, vous devrez en [créer une nouvelle chez OVHcloud](https://docs.ovh.com/ca/fr/creer-base-de-donnees/){.external} depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.|
+|4|Importer les données de la base|Importez la sauvegarde de votre base de données en utilisant [l'outil OVHcloud mis à disposition dans votre espace client](https://docs.ovh.com/ca/fr/mutualise-guide-importation-dune-base-de-donnees-mysql/){.external}.|
 |5|Lier le site à la nouvelle base|Les informations de votre ancienne base de données sont toujours présentes dans le fichier de configuration de votre site. Sur votre espace de stockage OVHcloud, modifiez ce fichier en y renseignant les informations de la base de données OVHcloud.|
 
 La configuration de votre nom de domaine restant inchangée, l'hébergement utilisé pour afficher votre site internet reste toujours celui de votre prestataire actuel si la résolution DNS est toujours active.
 
 #### Étape 3 : recréer vos adresses e-mail chez OVHcloud
 
-**Une fois le transfert de votre domaine terminé**, vous recevrez un e-mail vous informant que le service e-mail lié à votre hébergement vient d'être installé. Dès lors, vous devez [recréer chez OVHcloud les mêmes adresses e-mail](../../emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail){.external} que celles que vous utilisez chez votre prestataire actuel (elles devront porter le même nom). Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, rendez-vous dans la section `E-mails`{.action}, puis sur l'hébergement web que vous venez de commander (portant le même nom que votre domaine). Suivez les étapes de création en cliquant sur le bouton `Créer une adresse e-mail`{.action}.
+**Une fois le transfert de votre domaine terminé**, vous recevrez un e-mail vous informant que le service e-mail lié à votre hébergement vient d'être installé. Dès lors, vous devez [recréer chez OVHcloud les mêmes adresses e-mail](https://docs.ovh.com/ca/fr/https://docs.ovh.com/ca/fr/emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail){.external} que celles que vous utilisez chez votre prestataire actuel (elles devront porter le même nom). Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, rendez-vous dans la section `E-mails`{.action}, puis sur l'hébergement web que vous venez de commander (portant le même nom que votre domaine). Suivez les étapes de création en cliquant sur le bouton `Créer une adresse e-mail`{.action}.
 
 La configuration de votre nom de domaine restant inchangée, la réception des nouveaux messages s'effectue toujours sur les adresses e-mail créées chez votre prestataire actuel si la résolution DNS est toujours effective. Utilisez toujours ces dernières pour réaliser vos envois.
 
@@ -146,7 +146,7 @@ La configuration de votre nom de domaine restant inchangée, la réception des n
 
 Maintenant que votre site internet est transféré, vos adresses e-mail recréées et votre nom de domaine transféré chez OVHcloud, il est nécessaire de modifier la configuration de ce dernier. Cela passe par la modification des serveurs DNS de votre nom de domaine pour ceux d'OVHcloud.
 
-Vous devrez les modifier depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Une documentation intitulée *[Généralités sur les serveurs DNS](../../domains/generalites-serveurs-dns/){.external}* peut vous accompagner dans cette démarche.
+Vous devrez les modifier depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Une documentation intitulée *[Généralités sur les serveurs DNS](https://docs.ovh.com/ca/fr/https://docs.ovh.com/ca/fr/domains/generalites-serveurs-dns/){.external}* peut vous accompagner dans cette démarche.
 
 Cette manipulation peut avoir plusieurs conséquences :
 
@@ -165,20 +165,24 @@ Plusieurs sous-étapes sont à réaliser.
 |Sous-étapes|Description|Détails|
 |---|---|---|
 |1|Migrer le contenu des adresses chez OVHcloud|Utilisez l’outil [OVHcloud Mail Migrator (OMM)](https://omm.ovh.net/){.external} qui vous permet de copier le contenu des adresses e-mail créées chez votre ancien prestataire vers celles créées chez OVHcloud.|
-|2|Utiliser vos adresses|Vos adresses e-mail OVHcloud sont accessibles depuis une application en ligne [Webmail](https://www.ovh.com/ca/fr/mail/){.external}. Si vous aviez paramétré l'une de vos adresses sur un client de messagerie (comme Outlook), vous devez la configurer de nouveau pour y renseigner [les serveurs d'OVHcloud](../../emails/generalites-sur-les-emails-mutualises/) à la place de ceux de votre ancien prestataire.|
+|2|Utiliser vos adresses|Vos adresses e-mail OVHcloud sont accessibles depuis une application en ligne [Webmail](https://www.ovh.com/ca/fr/mail/){.external}. Si vous aviez paramétré l'une de vos adresses sur un client de messagerie (comme Outlook), vous devez la configurer de nouveau pour y renseigner [les serveurs d'OVHcloud](https://docs.ovh.com/ca/fr/https://docs.ovh.com/ca/fr/emails/generalites-sur-les-emails-mutualises/) à la place de ceux de votre ancien prestataire.|
 
 Votre site internet, vos adresses e-mail et votre nom de domaine ont bien été migré vers OVHcloud !
 
 ## Aller plus loin
 
-[Généralités sur les e-mails mutualisés](../../emails/generalites-sur-les-emails-mutualises/){.external}.
+[Généralités sur les e-mails mutualisés](https://docs.ovh.com/ca/fr/https://docs.ovh.com/ca/fr/emails/generalites-sur-les-emails-mutualises/){.external}.
 
-[Généralités sur les serveurs DNS](../../domains/generalites-serveurs-dns/){.external}.
+[Généralités sur les serveurs DNS](https://docs.ovh.com/ca/fr/https://docs.ovh.com/ca/fr/domains/generalites-serveurs-dns/){.external}.
 
-[Créer une adresse e-mail mutualisé](../../emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail){.external}.
+[Créer une adresse e-mail mutualisé](https://docs.ovh.com/ca/fr/https://docs.ovh.com/ca/fr/emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail){.external}.
 
-[Importation d’une base de donnees MySQL](../mutualise-guide-importation-dune-base-de-donnees-mysql/){.external}.
+[Importation d’une base de donnees MySQL](https://docs.ovh.com/ca/fr/mutualise-guide-importation-dune-base-de-donnees-mysql/){.external}.
 
-[Créer une base de données sur son hébergement web](../creer-base-de-donnees/){.external}.
+[Créer une base de données sur son hébergement web](https://docs.ovh.com/ca/fr/creer-base-de-donnees/){.external}.
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
