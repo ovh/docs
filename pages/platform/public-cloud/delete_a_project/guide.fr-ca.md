@@ -7,7 +7,7 @@ section: 'Gestion de projets'
 order: 2
 ---
 
-**Dernière mise à jour le 17/11/2021**
+**Dernière mise à jour le 14/10/2022**
 
 ## Objectif
 
@@ -48,7 +48,11 @@ Cliquez sur `Supprimer le projet`{.action} pour continuer.
 
 En cliquant sur ce bouton, un e-mail vous sera envoyé, à l’adresse de contact, afin de confirmer ou d’annuler la suppression du projet.<br>
 Après avoir cliqué sur le lien de confirmation affiché dans cet e-mail, vous serez redirigé vers une page web où vous devrez renseigner le mot de passe de votre compte.<br>
-Une fois votre mot de passe saisi et confirmé, votre projet sera supprimé.
+Une fois votre mot de passe saisi et confirmé, votre projet entrera en phase de suppression.
+
+> [!warning]
+> Veuillez noter que lorsqu'un projet entre dans cette phase de suppression, il reste dans un statut de suspension pendant 7 jours. Le projet n'est donc pas immédiatement supprimé. Si cette situation vous affecte, par exemple si votre quota de projets est limité, veuillez contacter nos équipes d'assistance.
+>
 
 ## Aller plus loin
 
