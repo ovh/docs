@@ -49,7 +49,7 @@ Select `Claims aware`{.action} and confirm with the `Start`{.action} button.
 
 ![ADFS add relying party trust step 1](images/adfs_add_relying_party_trust_1.png){.thumbnail}
 
-Here you can enter the relying party information manually or import it from a file.
+Here you can enter the relying party information manually or import it from a metadata file.
 
 #### Importing the OVHcloud SP metadata
 
