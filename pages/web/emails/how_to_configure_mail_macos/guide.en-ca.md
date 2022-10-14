@@ -44,7 +44,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 |---|---|
 |![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Select `Add Other Account`{.action}, then click on `Mail account`{.action}.|
 |Enter the following information in the "**Add Mail Account**" window: <br>- your email account **name** <br>- Your **Email address** <br>- Your email **password**|![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
-|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|In the next window, enter the information: <br>- Leave your **Email address** already entered <br>- Enter your full email address in **Username** <br>- Leave your **Password** already entered <br>- Select `POP` or `IMAP`(recommended) in **Account type**<br>- Type `ssl0.ovh.net` in **Incoming Mail Server**<br>- Also enter `ssl0.ovh.net` in **Outgoing Mail Server**<br><br>To complete the configuration, click on `Sign in`{.action}|
+|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|In the next window, enter the information: <br>- Leave your **Email address** already entered <br>- Enter your full email address in **Username** <br>- Leave your **Password** already entered <br>- Select `POP` or `IMAP`(recommended) in **Account type**<br>- Type `pop.mail.ovh.ca` for `POP` or type `imap.mail.ovh.ca` for `IMAP`  in **Incoming Mail Server**<br>- Also enter `smtp.mail.ovh.ca` in **Outgoing Mail Server**<br><br>To complete the configuration, click on `Sign in`{.action}|
 
 ### Use email address
 
@@ -71,15 +71,15 @@ For an **IMAP** configuration, the values are:
 
 |Server type|Server name|Encryption method|Port|
 |---|---|---|---|
-|Incoming(IMAP)|ssl0.ovh.net|SSL/TLS|993|
-|Outgoing(SMTP)|ssl0.ovh.net|SSL/TLS|465|
+|Incoming(IMAP)|imap.mail.ovh.ca|SSL/TLS|993|
+|Outgoing(SMTP)|smtp.mail.ovh.ca|SSL/TLS|465|
 
 For **POP** configuration, the values are:
 
 |Server type|Server name|Encryption method|Port|
 |---|---|---|---|
-|Incoming(POP)|ssl0.ovh.net|SSL/TLS|995|
-|Outgoing(SMTP)|ssl0.ovh.net|SSL/TLS|465|
+|Incoming(POP)|pop.mail.ovh.ca|SSL/TLS|995|
+|Outgoing(SMTP)|smtp.mail.ovh.ca|SSL/TLS|465|
 
 > [!primary]
 >
