@@ -17,8 +17,8 @@ You can use **single sign-on** (SSO) to connect to your OVHcloud account. To ena
 ## Requirements
 
 - Active Directory Federation Services (ADFS) running on your server
-- An [OVHcloud account](https://docs.ovh.com/us/en/customer/create-ovhcloud-account/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- An [OVHcloud account](https://docs.ovh.com/ca/en/customer/create-ovhcloud-account/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
@@ -85,6 +85,7 @@ Click the `Close`{.action} button in the last window. The OVHcloud relying party
 > With OVHcloud added as trusted relying party, you should be able to log in via an SSO connection already. However, any information about the identity of the user (in terms of the SAML "assertion") will remain unavailable until you configure a policy to map Active Directory LDAP fields to the attributes in the SAML assertion.
 >
 
+
 #### Mapping LDAP attributes to SAML attributes
 
 Click on the OVHcloud relying party trust entry.
@@ -123,9 +124,9 @@ With the mapping completed, your ADFS now trusts OVHcloud as a service provider.
 
 ### Establishing OVHcloud account trust and configuring the connection
 
-Adding your ADFS as a trusted identity provider is done in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) where you can provide the identity provider metadata.
+Adding your ADFS as a trusted identity provider is done in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) where you can provide the identity provider metadata.
 
-[Log in](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and click on your profile in the top-right corner.
+[Log in](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and click on your profile in the top-right corner.
 
 ![OVHcloud top menu](images/ovhcloud_top_menu.png){.thumbnail}
 
@@ -208,7 +209,7 @@ You can then disconnect from your account and log in again with your ADFS as ide
 
 ### Connect via SSO
 
-On the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), enter your [NIC handle](https://docs.ovh.com/us/en/customer/create-ovhcloud-account/#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
+On the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), enter your [NIC handle](https://docs.ovh.com/ca/en/customer/create-ovhcloud-account/#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
 
 ![OVHcloud federation login](images/ovhcloud_federation_login_1.png){.thumbnail}
 
@@ -222,12 +223,12 @@ You are now logged in with the same NIC handle, but via your Active Directory us
 
 ## Go further
 
-[Creating an OVHcloud account](https://docs.ovh.com/us/en/customer/create-ovhcloud-account/)
+[Creating an OVHcloud account](https://docs.ovh.com/ca/en/customer/create-ovhcloud-account/)
 
-[Securing my OVHcloud account and manage my personal information](https://docs.ovh.com/us/en/customer/all-about-your-username/)
+[Securing my OVHcloud account and manage my personal information](https://docs.ovh.com/ca/en/customer/all-about-your-username/)
 
-[Setting and managing an account password](https://docs.ovh.com/us/en/customer/manage-password/)
+[Setting and managing an account password](https://docs.ovh.com/ca/en/customer/manage-password/)
 
-[Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/us/en/customer/secure-account-with-2FA/)
+[Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/ca/en/customer/secure-account-with-2FA/)
 
 Join our community of users on <https://community.ovh.com/en/>.
