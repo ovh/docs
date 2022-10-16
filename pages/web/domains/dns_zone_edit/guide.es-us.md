@@ -132,7 +132,7 @@ Dicho de otro modo, el registro DNAME indica que *dname.mydomain.ovh* y *xxx.myd
 
 #### Registros de correo
 
-- **MX** (**M**ail e**X**changer): Conecta un dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.net* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del dominio](../anadir-registro-mx-configuracion-dominio/).
+- **MX** (**M**ail e**X**changer): Conecta un dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.ca* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del dominio](../anadir-registro-mx-configuracion-dominio/).
 
 > [!warning]
 >
@@ -140,7 +140,7 @@ Dicho de otro modo, el registro DNAME indica que *dname.mydomain.ovh* y *xxx.myd
 > De hecho, si ya tiene servicios de correo con otro proveedor de correo y añade al mismo tiempo (sin sustituir) los servidores de correo de su nuevo proveedor de correo, puede recibir mensajes de correo al azar en uno de sus dos proveedores.
 > 
 
-- **SPF** (**S**ender **P**olicy **F**ramework): Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su dominio (*spoofing*). Por ejemplo, el registro `v=spf1 include:mx.ovh.com ~all` indica que solo los servidores de envío asociados a su solución de correo de OVHcloud pueden considerarse legítimos por el servidor de recepción. Puede introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática. Para más información, consulte nuestra guía [Añadir un registro SPF a la configuración del dominio](../web_hosting_el_registro_spf/).
+- **SPF** (**S**ender **P**olicy **F**ramework): Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su dominio (*spoofing*). Por ejemplo, el registro `v=spf1 include:mx.ovh.ca ~all` indica que solo los servidores de envío asociados a su solución de correo de OVHcloud pueden considerarse legítimos por el servidor de recepción. Puede introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática. Para más información, consulte nuestra guía [Añadir un registro SPF a la configuración del dominio](../web_hosting_el_registro_spf/).
 
 - **DKIM** (**D**omain**K**eys **I**dentified **M**ail): Permite verificar la autenticidad del nombre de dominio del remitente y garantizar la integridad del mensaje de correo electrónico enviado. El registro DKIM se presenta como una clave de varios caracteres. La clave DKIM la proporciona su proveedor de correo electrónico (si esta funcionalidad la ofrece este último). Puede introducirla en forma de registro TXT.
 
