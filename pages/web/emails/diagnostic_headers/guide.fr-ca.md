@@ -139,22 +139,6 @@ L'en-tête complet de l'e-mail apparaît dans une fenêtre séparée. Vous pouve
 
 ### Récupérer un en-tête sur un webmail <a name="webmail"></a>
 
-#### Roundcube
-
-##### **Récupérer l'en-tête**
-
-Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix. Cliquez sur le bouton  `... Plus`{.action} puis sur `< > Voir la source`{.action}.
-
-![emails](images/roundcube01.png){.thumbnail}
-
-Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail. Vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
-
-##### **Récupérer le fichier .eml**
-
-Pour télécharger le fichier `.eml`, sélectionnez l'e-mail de votre choix. Cliquez sur le bouton  `... Plus`{.action} puis sur `Télécharger (.eml)`{.action}.
-
-![emails](images/roundcube02.png){.thumbnail}
-
 #### Outlook Web Application (OWA) <a name="owa"></a>
 
 ##### **Récupérer l'en-tête**
