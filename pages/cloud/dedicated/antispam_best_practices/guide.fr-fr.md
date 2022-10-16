@@ -6,7 +6,7 @@ section : Diagnostic et mode Rescue
 order : 04
 ---
 
-**Dernière mise à jour le 11/10/2022**
+**Dernière mise à jour le 17/10/2022**
 
 ## Objectif
 
@@ -262,16 +262,15 @@ Pour plus d'informations sur les services ci-dessus, consultez notre guide « [O
 
 #### Cas spécifiques d'envois d'e-mails
 
-**Vers un serveur Microsoft (Outlook, etc...)**
- 
-Microsoft utilise une politique de liste blanche. Cela signifie qu'au départ, tout serveur se trouve sur une liste noire et une procédure spécifique est nécessaire pour faire valider votre serveur e-mail. Pour plus d’informations, nous vous invitons à consulter [cette section](../optimiser-envoi-emails/#vers-un-serveur-microsoft-outlook-etc) du guide correspondant.
+- **Vers un serveur Microsoft (Outlook, etc.)**
 
-**Vers **un serveur Gmail**
+Microsoft utilise une politique de liste blanche. Cela signifie que tout serveur se trouve initialement sur une liste noire. Une procédure spécifique est alors nécessaire pour faire valider votre serveur e-mail. Pour plus d’informations, nous vous invitons à consulter [cette section](https://docs.ovh.com/fr/dedicated/optimiser-envoi-emails/#vers-un-serveur-microsoft-outlook-etc) du guide correspondant.
 
-L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire est chez Gmail. Voici un article de Google qui peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr){.external}.
+- **Vers un serveur Gmail**
 
-Google dispose également d'un [article dédié](https://support.google.com/mail/answer/81126?hl=en){.external}
-concernant la prévention du spam pour les utilisateurs de Gmail.
+L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire a une adresse Gmail. La documentation suivante de Google peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr){.external}.
+
+Google propose également un [article dédié](https://support.google.com/mail/answer/81126?hl=en){.external} à la prévention du spam pour les utilisateurs de Gmail.
 
 ### Déclarer un faux positif
 

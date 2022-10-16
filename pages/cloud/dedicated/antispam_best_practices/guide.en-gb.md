@@ -6,7 +6,7 @@ section: Server management
 order: 5
 ---
 
-**Last updated 11th October 2022**
+**Last updated 17th October 2022**
 
 ## Objective
 
@@ -266,16 +266,15 @@ For more information on the above services, please consult our guide on [Optimis
 
 #### Specific types of email sending
 
-**To a Microsoft server (Outlook, etc.)**
+- **To a Microsoft server (Outlook, etc.)**
 
-Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](../optimise-email-sending/#to-a-microsoft-server-outlook-etc) of the corresponding guide.
+Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](https://docs.ovh.com/gb/en/dedicated/optimise-email-sending/#to-a-microsoft-server-outlook-etc) of the corresponding guide.
 
-**To a Gmail server**
+- **To a Gmail server**
 
 If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
 
-Google also has a [dedicated article](https://support.google.com/mail/answer/81126?hl=en){.external}
-regarding spam prevention to Gmail users.
+Google also has a [dedicated article](https://support.google.com/mail/answer/81126?hl=en){.external} regarding spam prevention to Gmail users.
 
 ### Reporting a false positive
 
