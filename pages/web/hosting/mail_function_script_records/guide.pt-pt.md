@@ -11,7 +11,7 @@ Order: 09
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-  
+
 ## Objetivo
 
 Os e-mails automatizados são mensagens enviadas através de scripts. Geralmente com a ajuda da função "mail()" de PHP. São utilizados, por exemplo, para o formulário de contacto do seu website e permitem que os seus visitantes lhe enviem mensagens.
@@ -29,15 +29,15 @@ Os e-mails automatizados são mensagens enviadas através de scripts. Geralmente
 >
 
 **Descubra como seguir e gerir os e-mails automatizados enviados a partir do seu alojamento web da OVHcloud.**
-  
+
 ## Requisitos
 
 - Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Ter acesso ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-  
+
 ## Instruções
-  
-O acompanhamento e a gestão dos e-mails automatizados do seu alojamento web OVHcloud efetuam-se a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Uma vez conectado, aceda à secção `Web cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
+
+O acompanhamento e a gestão dos e-mails automatizados do seu alojamento web OVHcloud efetuam-se a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Uma vez conectado, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
 
 ![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
@@ -102,9 +102,9 @@ Se receber corretamente a mensagem *The email has been sent successfully!* no en
 
 - **Verifique o tamanho total do seu e-mail**: O e-mail enviado não deve ultrapassar o tamanho total de **10 MB** (incluindo encapsulamento e cabeçalho). Assim, o conteúdo do seu e-mail não deverá exceder **7/8 MB**.
 
-#### Gerir os estados "Desativado", "Bouence" e "SPAM"
+### Gerir os estados "Desativado", "Bouence" e "SPAM"
 
-##### O estado "Desativado"
+#### O estado "Desativado"
 
 Este estado ocorre quando:
 
@@ -112,22 +112,22 @@ Este estado ocorre quando:
 - demasiados e-mails foram devolvidos em erro;
 - desativou a funcionalidade a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-Para desbloquear a situação, aceda à secção `Web cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
+Para desbloquear a situação, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
 
 Finalmente, clique em `Libertar o envio`{.action} e aguarde alguns minutos para que o serviço de envio fique novamente ativo.
 
-###### O estado "Bolsa"
+#### O estado "Bolsa"
 
 Esta situação ocorre quando uma determinada percentagem dos seus e-mails enviados automaticamente volta em erro.
 
-Para desbloquear a situação, aceda à secção `Web cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
+Para desbloquear a situação, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
 
 Duas opções são possíveis:
 
 - Se clicar em `Libertar o envio`{.action}, o estado do serviço passará para *"Força"*. O rácio **e-mails devolvidos em erro / número total de envios de e-mails enviados** autorizado antes de um bloqueio será duplicado. O envio estará de novo operacional alguns minutos após o desbloqueio.
 - Se clicar em `Purger os e-mails`{.action}, este sistema apagará todos os e-mails da fila de espera e o estado do serviço passará a *"Ativado"* sem duplicar o rácio.
 
-###### O estado "SPAM"
+#### O estado "SPAM"
 
 Este estado ocorre quando os e-mails considerados como SPAM são enviados a partir do seu alojamento.
 
@@ -141,7 +141,7 @@ São possíveis três casos relativamente a esta situação:
 
 Para corrigir esta situação, deve proteger todos os scripts com capacidade para enviar e-mails a partir do seu alojamento, utilizando um sistema do tipo "Captcha".
 
-De seguida, aceda à secção `Web cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
+De seguida, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
 
 A seguir, clique em `Purger os e-mails`{.action}, e o estado do serviço eliminará todos os e-mails da fila de espera. O estado do serviço será novamente indicado em *"Ativado"*.
 
@@ -159,7 +159,7 @@ Para corrigir esta situação, deve realizar pelo menos as seguintes ações:
 Se utilizar um CMS, escolha plugin(s)/tema(s) "oficial(ais)".
 Atualize o CMS, os plugins e o tema associados o mais regularmente possível para evitar que isso se repita.
 
-Depois de proteger o alojamento, aceda à secção `Web cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
+Depois de proteger o alojamento, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
 
 A seguir, clique em `Purger os e-mails`{.action}, e o estado do serviço eliminará todos os e-mails da fila de espera. O estado do serviço será novamente indicado em *"Ativado"*.
 
@@ -218,7 +218,7 @@ $mail->Password = "YourEmailPassword";
 >
 > Se utilizar um endereço de e-mail da OVHcloud e apenas neste caso, pode também utilizar o `SMTPSecure` *"startls"* ou *"tls"* através do `Port` **587**. No entanto, o `SMTPSecure` *"ssl"* com o `Port` **465** deve ser privilegiado.
 >
-  
+
 ## Quer saber mais? <a name="go-further"></a>
 
 [Consultar os logs do seu alojamento](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/)

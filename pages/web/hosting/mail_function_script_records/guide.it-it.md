@@ -37,7 +37,7 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 
 ## Procedura
 
-Il monitoraggio e la gestione delle email automatiche dell'hosting Web OVHcloud sono disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Accedi alla sezione `Web cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+Il monitoraggio e la gestione delle email automatiche dell'hosting Web OVHcloud sono disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
 ![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
@@ -112,7 +112,7 @@ Questo stato si verifica quando:
 - troppe email sono tornate in errore
 - hai disattivato la funzionalità dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-Per sbloccare la situazione, accedi alla sezione `Web cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+Per sbloccare la situazione, accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
 Infine clicca su `Sblocca l'invio`{.action} e attendi qualche minuto fino a quando il servizio di invio non sarà nuovamente attivo.
 
@@ -120,7 +120,7 @@ Infine clicca su `Sblocca l'invio`{.action} e attendi qualche minuto fino a quan
 
 Questa condizione si verifica quando una certa percentuale delle tue email inviate automaticamente è tornata in errore.
 
-Per sbloccare la situazione, accedi alla sezione `Web cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+Per sbloccare la situazione, accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
 Sono possibili due opzioni:
 
@@ -141,7 +141,7 @@ A fronte di questa situazione, sono possibili tre casi:
 
 Per correggere questa situazione, è necessario proteggere tutti gli script in grado di inviare email dal tuo hosting, con l'aiuto di un sistema di tipo "Captcha".
 
-Accedi alla sezione `Web cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
 Clicca su `Rimuovi le email`{.action}, cancella tutte le email dalla coda di attesa e il servizio torna in*"Attivato"*.
 
@@ -159,7 +159,7 @@ Per correggere questa situazione, è necessario effettuare almeno le seguenti az
 Se utilizzi un CMS, scegli i plugin/i/i/i tema/i "ufficiale/i".
 Aggiorna il CMS, i plugin e il tema associati il più regolarmente possibile per evitare che si ripeta.
 
-Una volta attivato l'hosting, accedi alla sezione `Web cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+Una volta attivato l'hosting, accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
 Clicca su `Rimuovi le email`{.action}, cancella tutte le email dalla coda di attesa e il servizio torna in*"Attivato"*.
 

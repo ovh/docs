@@ -37,7 +37,7 @@ Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj
 
 ## W praktyce
 
-Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu odbywa się z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Po zalogowaniu się przejdź do sekcji `Web cloud`{.action}, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
+Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu odbywa się z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Po zalogowaniu się przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
 
 ![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
@@ -112,7 +112,7 @@ Stan ten występuje, gdy:
 - zbyt dużo e-maili zwróconych w błąd;
 - samodzielnie wyłączyłeś funkcję z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Aby odblokować sytuację, przejdź do sekcji `Web cloud`{.action}, kliknij przycisk `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
+Aby odblokować sytuację, przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
 
 Następnie kliknij polecenie `Odblokuj wysyłkę`{.action} i odczekaj kilka minut, aż usługa wysyłania e-maili stanie się aktywna.
 
@@ -120,7 +120,7 @@ Następnie kliknij polecenie `Odblokuj wysyłkę`{.action} i odczekaj kilka minu
 
 Status ten pojawia się, gdy pewna część Twoich e-maili wysłanych automatycznie powróci w błąd.
 
-Aby odblokować sytuację, przejdź do sekcji `Web cloud`{.action}, kliknij przycisk `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
+Aby odblokować sytuację, przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
 
 Istnieją dwie możliwości:
 
@@ -141,7 +141,7 @@ W porównaniu z tą sytuacją możliwe są trzy przypadki:
 
 Aby to naprawić, musisz zabezpieczyć wszystkie skrypty mogące wysyłać e-maile z Twojego hostingu za pomocą systemu typu "Captcha".
 
-Następnie przejdź do sekcji `Web cloud`{.action}, kliknij przycisk `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, a następnie `Scripts e-mail`{.action}.
+Następnie przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, a następnie `Scripts e-mail`{.action}.
 
 Następnie kliknij polecenie `Czyszczenie e-maili`{.action}, usunie wszystkie e-maile z kolejki i stan usługi przejdzie do *"Włączony"*.
 
@@ -159,7 +159,7 @@ W celu poprawienia tej sytuacji należy wykonać co najmniej następujące czynn
 Jeśli korzystasz z CMS-a, skorzystaj z "oficjalnej" wtyczki/szablonów.
 Zaktualizuj CMS, wtyczki i powiązane z nimi tematy tak często, jak to tylko możliwe, aby nie powtórzyło się.
 
-Po zabezpieczeniu Twojego hostingu przejdź do sekcji `Web cloud`{.action}, kliknij przycisk `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, a następnie `Scripts e-mail`{.action}.
+Po zabezpieczeniu Twojego hostingu przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, a następnie `Scripts e-mail`{.action}.
 
 Następnie kliknij polecenie `Czyszczenie e-maili`{.action}, usunie wszystkie e-maile z kolejki i stan usługi przejdzie do *"Włączony"*.
 

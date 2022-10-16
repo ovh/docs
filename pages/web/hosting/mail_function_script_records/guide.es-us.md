@@ -37,7 +37,7 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 
 ## Procedimiento
 
-El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Una vez que se haya conectado, acceda al apartado `Web cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Una vez que se haya conectado, acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
 ![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
@@ -112,7 +112,7 @@ Este estado se produce cuando:
 - se han devuelto demasiados mensajes de correo.
 - usted mismo ha desactivado la funcionalidad desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
-Para desbloquear la situación, acceda a la sección `Web cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+Para desbloquear la situación, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
 Haga clic en `Desbloquear el envío`{.action} y espere unos minutos a que vuelva a activar el servicio de envío.
 
@@ -120,7 +120,7 @@ Haga clic en `Desbloquear el envío`{.action} y espere unos minutos a que vuelva
 
 Este estado se produce cuando un cierto porcentaje de los mensajes de correo enviados automáticamente se ha vuelto a error.
 
-Para desbloquear la situación, acceda a la sección `Web cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+Para desbloquear la situación, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
 Existen dos opciones:
 
@@ -141,7 +141,7 @@ Existen tres posibles situaciones en relación con esta situación:
 
 Para corregir esta situación, debe proteger todos los scripts que puedan enviar correo desde su alojamiento utilizando un sistema de tipo "Captcha".
 
-Acceda a la sección `Web cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+Acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
 A continuación, haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *"Activado"*.
 
@@ -159,7 +159,7 @@ Para corregir esta situación, debe realizar al menos las siguientes acciones:
 Si utiliza un CMS, priorice el uso de plugin/tema(s) "oficial(s)".
 Actualice el CMS, los plugins y el tema asociados con la mayor frecuencia posible para evitar que esto vuelva a suceder.
 
-Una vez que haya contratado un plan de hosting seguro, acceda a la sección `Web cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+Una vez que haya contratado un plan de hosting seguro, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
 A continuación, haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *"Activado"*.
 

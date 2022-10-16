@@ -16,7 +16,7 @@ Automated emails are messages sent via scripts. Usually using PHP's "mail()" fun
 >
 > This guide mainly applies to emails sent from scripts located on your [OVHcloud web hosting](https://www.ovhcloud.com/en/web-hosting/) using PHP's "mail()" function.
 >
-> If you would like to manage the email addresses included in your MX Plan package or in your [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external} package, please refer to our [MX Plan](https://docs.ovh.com/us/en/emails/) documentation.
+> If you would like to manage the email addresses included in your MX Plan package or in your [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external} package, please refer to our [MX Plan documentation](https://docs.ovh.com/us/en/emails/).
 >
 
 > [!success]
@@ -28,12 +28,12 @@ Automated emails are messages sent via scripts. Usually using PHP's "mail()" fun
 
 # Requirements
 
-- Have an [OVHcloud web hosting](https://www.ovhcloud.com/en/web-hosting/){.external} solution.
-- Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- An [OVHcloud web hosting](https://www.ovhcloud.com/en/web-hosting/){.external} solution.
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
-## In practice
+## Instructions
 
-You can monitor and manage automated emails from your OVHcloud Web Hosting plan in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Once you have logged in, go to the `Web cloud`{.action} section, click on `Hosting plan`{.action}, then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
+You can monitor and manage automated emails from your OVHcloud Web Hosting plan in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Once you have logged in, go to the `Web Cloud`{.action} section, click on `Hosting plan`{.action}, then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
 
 ![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
@@ -51,7 +51,7 @@ The page displays several pieces of information that you can use to view automat
 
     Depending on this status, the outgoing process will be different.
 
-- **Error report to**: receive it daily on the email address of your choice. Set it by clicking the `Change recipient`{.action} button. This report will include emails sent from your web hosting plan that bounced back with an error at OVHcloud. A `Emails with errors`{.action} button also allows you to view these reports at any time on the right of the `Email scripts`{.action} page.
+- **Error report to**: receive it daily on the email address of your choice. Set it by clicking the `Change recipient`{.action} button. This report will include emails sent from your web hosting plan that bounced back with an error at OVHcloud. An `Emails with errors`{.action} button also allows you to view these reports at any time on the right of the `Email scripts`{.action} page.
 - **Total emails sent**: the total number of automated emails sent since you created your OVHcloud web hosting plan.
 - **Emails sent today**: total number of automated emails sent today only.
 - **Total number of emails with errors**: the total number of automated emails sent since you created your Web Hosting plan that returned an error to OVHcloud.
@@ -72,9 +72,9 @@ To perform the desired action, click the corresponding button, then click `Confi
 
 If you notice that the emails generated from your scripts are no longer sent, but the service status still allows the emails to be sent (*“Enabled”* or *“Force”*), we recommend:
 
-- **check the scripts sending the email**: the scripts may not be able to send the emails due to a syntax error. Check the content of your scripts, correct them if necessary, then try again.
+- **checking the scripts sending the email**: the scripts may not be able to send the emails due to a syntax error. Check the content of your scripts, correct them if necessary, then try again.
 
-- **test email sending via test script**: create a test script that sends an email to your personal email address using the following code:
+- **testing email sending via test script**: create a test script that sends an email to your personal email address using the following code:
 
 ```bash
 <?php
@@ -108,7 +108,7 @@ This state occurs when:
 - too many emails are returned in error
 - You have yourself disabled the feature from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
-To unblock the situation, go to the `Web cloud`{.action} section, click on `Hosting plan`{.action}, then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
+To unblock the situation, go to the `Web Cloud`{.action} section, click on `Hosting plan`{.action}, then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
 
 Then click `Unblock sending`{.action}, and wait a few minutes for the sending service to become active again.
 
@@ -116,7 +116,7 @@ Then click `Unblock sending`{.action}, and wait a few minutes for the sending se
 
 This state occurs when a certain percentage of your emails sent automatically return with errors.
 
-To unblock the situation, go to the `Web cloud`{.action} section, click on `Hosting plan`{.action}, then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
+To unblock the situation, go to the `Web Cloud`{.action} section, click on `Hosting plan`{.action}, then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
 
 There are two options:
 
@@ -137,7 +137,7 @@ There are three possible scenarios for this situation:
 
 To resolve this issue, you will need to secure all scripts that can send emails from your hosting space, using a "Captcha" type system.
 
-Go to the `Web cloud`{.action} section, click on `Hosting plan`{.action} then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
+Go to the `Web Cloud`{.action} section, click on `Hosting plan`{.action} then select the relevant hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
 
 Then click `Purge Emails`{.action}, this will erase all emails from the queue and the service status will change back to *"Enabled"*.
 
@@ -155,7 +155,7 @@ To correct this, you must do at least the following:
 If you are using a CMS, use the “official” plugin(s)/theme(s) instead.
 Update the CMS, plugins and associated theme as regularly as possible to avoid this happening again.
 
-Once you have secured your hosting plan, go to the `Web cloud`{.action} section, click on `Hosting plan`{.action} then select the concerned hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
+Once you have secured your hosting plan, go to the `Web Cloud`{.action} section, click on `Hosting plan`{.action} then select the concerned hosting plan from the list. Then click on the `More`{.action} tab, then `Email scripts`{.action}.
 
 Then click `Purge Emails`{.action}, this will erase all emails from the queue and the service status will change back to *"Enabled"*.
 
@@ -183,7 +183,7 @@ If your service is still in a *“SPAM”* state, reply to the automatic email y
 
 Our anti-spam service will analyse the situation, and our support team will get back to you to explain the unblock procedure.
 
-### Send emails using an "SMTP" script <a name="SMTP"></a>
+### Sending emails using an "SMTP" script <a name="SMTP"></a>
 
 > [!warning]
 >

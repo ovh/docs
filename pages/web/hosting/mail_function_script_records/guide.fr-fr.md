@@ -33,7 +33,7 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 
 ## En pratique
 
-Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Une fois connecté, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
 
 ![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Cet état survient lorsque :
 - trop d'e-mails sont retournés en erreur ;
 - vous avez vous-même désactivé la fonctionnalité depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-Pour débloquer la situation, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+Pour débloquer la situation, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
 
 Cliquez enfin sur `Débloquer l'envoi`{.action} puis patientez quelques minutes le temps que le service d'envoi soit de nouveau actif.
 
@@ -116,7 +116,7 @@ Cliquez enfin sur `Débloquer l'envoi`{.action} puis patientez quelques minutes 
 
 Cet état survient lorsqu'un certain pourcentage de vos e-mails envoyés automatiquement est revenu en erreur.
 
-Pour débloquer la situation, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+Pour débloquer la situation, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
 
 Deux options sont possibles :
 
@@ -137,7 +137,7 @@ Trois cas de figure sont possibles par rapport à cette situation :
 
 Pour corriger cette situation, vous devez sécuriser l'ensemble des scripts en capacité d'émettre des e-mails depuis votre hébergement, à l'aide d'un système de type « Captcha ».
 
-Rendez-vous ensuite dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action} puis sur `Scripts emails`{.action}.
+Rendez-vous ensuite dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action} puis sur `Scripts emails`{.action}.
 
 Cliquez alors sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »*.
 
@@ -155,7 +155,7 @@ Pour corriger cette situation, vous devez effectuer au moins les actions suivant
 Si vous utilisez un CMS, privilégiez l'utilisation de plugin(s)/thème(s) « officiel(s) ».
 Mettez à jour le CMS, les plugins et le thème associés le plus régulièrement possible pour éviter que cela se reproduise.
 
-Une fois votre hébergement sécurisé, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action} puis sur `Scripts emails`{.action}.
+Une fois votre hébergement sécurisé, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action} puis sur `Scripts emails`{.action}.
 
 Cliquez alors sur `Purger les e-mails`{.action}, cela effacera tous les e-mails de la file d'attente et l'état du service repassera en *« Activé »*.
 
