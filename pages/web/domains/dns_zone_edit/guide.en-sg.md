@@ -129,7 +129,7 @@ In other words, the DNAME record indicates that *dname.mydomain.ovh* and *xxx.my
 
 #### Email records
 
-- **MX** (**M**ail e**X**changer): Links a domain name to an email server. For example, the address *10 mx1.mail.ovh.net* corresponds to one of the OVHcloud email servers when you have an OVHcloud email solution. Your email provider may have several email servers: Several MX fields must therefore be created. Please read our guide on [Adding an MX record to your domain name’s configuration](../web_hosting_configuring_mx_with_the_ovh_dns_zone/).
+- **MX** (**M**ail e**X**changer): Links a domain name to an email server. For example, the address *10 mx1.mail.ovh.ca* corresponds to one of the OVHcloud email servers when you have an OVHcloud email solution. Your email provider may have several email servers: Several MX fields must therefore be created. Please read our guide on [Adding an MX record to your domain name’s configuration](../web_hosting_configuring_mx_with_the_ovh_dns_zone/).
 
 > [!warning]
 >
@@ -137,7 +137,7 @@ In other words, the DNAME record indicates that *dname.mydomain.ovh* and *xxx.my
 > If you already have email services from another email provider and you are adding your new email provider’s servers in parallel (without replacing them), you risk randomly receiving your emails from either of your two email providers.
 > 
 
-- **SPF** (**S**ender **P**olicy **F**ramework): Avoids potential identity theft on email addresses using your domain name (spoofing). For example, the record `v=spf1 include:mx.ovh.com ~all` indicates that only outgoing servers linked to your OVHcloud mail service can be considered legitimate by the incoming server. You can enter this record as a TXT record, or via our automatic configuration system. For further information, please refer to our guide on [Adding an SPF record to your domain name’s configuration](../web_hosting_the_spf_record/).
+- **SPF** (**S**ender **P**olicy **F**ramework): Avoids potential identity theft on email addresses using your domain name (spoofing). For example, the record `v=spf1 include:mx.ovh.ca ~all` indicates that only outgoing servers linked to your OVHcloud mail service can be considered legitimate by the incoming server. You can enter this record as a TXT record, or via our automatic configuration system. For further information, please refer to our guide on [Adding an SPF record to your domain name’s configuration](../web_hosting_the_spf_record/).
 
 - **DKIM** (**D**omain**K**eys **I**dentified **M**ail): Checks the authenticity of the sender’s domain name, and ensures the integrity of the email sent. The DKIM record is a key that consists of several characters. The DKIM key is provided by your email service provider (if this feature is offered by them). You can enter it as a TXT record.
 

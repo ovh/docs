@@ -35,7 +35,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : ex**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : ex**?**.mail.ovh.ca. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 >
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, dans la rubrique `Web Cloud`{.action} puis `Microsoft`{.action}.
 > Cliquez sur `Exchange`{.action}, puis sur la plateforme Exchange souhaitée. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
@@ -53,7 +53,7 @@ Sur l'écran d'accueil de votre appareil, rendez-vous sur `Réglages`{.action} (
 |---|---|
 |![exchange](images/configuration-mailex-ios-step01.gif){.thumbnail}|1. Dans  `Réglages`, allez sur `Mail`. <br><br> 2. Appuyez sur `Comptes`.<br><br> 3. Appuyez sur `Ajouter un compte`.<br><br> 4. Choisissez `Microsoft Exchange`.|
 |5. Saisissez votre **adresse e-mail** et une **description** de votre compte e-mail, appuyez sur `Suivant`.<br><br>6. Sélectionnez `Configuration manuelle`.<br><br>|![exchange](images/configuration-mailex-ios-step02.png){.thumbnail}|
-|![exchange](images/configuration-mailex-ios-step03.png){.thumbnail}|7. Saisissez: <br>- le serveur **ex?.mail.ovh.net** ( remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount)) <br>- votre **adresse e-mail complète** dans nom d'utilisateur <br>- le mot de passe de votre adresse e-mail|
+|![exchange](images/configuration-mailex-ios-step03.png){.thumbnail}|7. Saisissez: <br>- le serveur **ex?.mail.ovh.ca** ( remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount)) <br>- votre **adresse e-mail complète** dans nom d'utilisateur <br>- le mot de passe de votre adresse e-mail|
 |8. Assurez-vous de bien laisser au minimum `Mail`{.action} coché afin que l'application puisse utiliser ce compte. Les autres applications (comme *Calendrier* et *Notes*) peuvent utiliser certaines des fonctions collaboratives inhérentes à Exchange.<br><br>9. Appuyez sur `Enregistrer` pour finaliser l'ajout de votre compte exchange.|![exchange](images/configuration-mailex-ios-step04.png){.thumbnail}|
 
 Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctement paramétré.

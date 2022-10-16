@@ -86,14 +86,14 @@ Este error indica que los mensajes de correo no pueden ser recibidos y que tambi
 
 En función del uso de su servicio Exchange, son válidos los siguientes servidores MX:
 
-- Solo Exchange: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
-- Exchange + Correo POP/IMAP alojado en OVHcloud: mx0.mail.ovh.net, mx1.mail.ovh.net mx2.mail.ovh.net, mx3.mail.ovh.net & mx4.mail.ovh.net
-- Exchange + Correo POP/IMAP no alojado en OVHcloud: ex<b>?</b>.mail.ovh.net
+- Solo Exchange: mx0.mail.ovh.ca, mx1.mail.ovh.ca mx2.mail.ovh.ca, mx3.mail.ovh.ca & mx4.mail.ovh.ca
+- Exchange + Correo POP/IMAP alojado en OVHcloud: mx0.mail.ovh.ca, mx1.mail.ovh.ca mx2.mail.ovh.ca, mx3.mail.ovh.ca & mx4.mail.ovh.ca
+- Exchange + Correo POP/IMAP no alojado en OVHcloud: ex<b>?</b>.mail.ovh.ca
 
 <a name="hostname"></a>
 
 > [!warning]
-> En nuestras guías utilizamos como nombre de servidor: ex<b>?</b>.mail.ovh.net. Debe reemplazar el "?" por el número correspondiente al servidor de su servicio Exchange.<br>
+> En nuestras guías utilizamos como nombre de servidor: ex<b>?</b>.mail.ovh.ca. Debe reemplazar el "?" por el número correspondiente al servidor de su servicio Exchange.<br>
 > Puede consultar esta información en el área de cliente de OVHcloud, en la sección `Web Cloud`{.action}. Abra `Microsoft`{.action} y seleccione `Exchange`{.action}. El nombre del servidor aparece en la pestaña **Conexión** de la `Información general`{.action}.
 >
 
@@ -115,7 +115,7 @@ Campo | Valor
 Prioridad | 0
 Peso | 0
 Puerto | 443
-Destino | [ex<b>?</b>.mail.ovh.net](#hostname) (sustituya "?" por el número correspondiente al servidor de su servicio Exchange)
+Destino | [ex<b>?</b>.mail.ovh.ca](#hostname) (sustituya "?" por el número correspondiente al servidor de su servicio Exchange)
 
 ### El mensaje de correo de prueba no se ha podido enviar desde la cuenta
 

@@ -87,7 +87,7 @@ Depending on your Exchange service usage, the following MX servers are valid:
 <a name="hostname"></a>
 
 > [!warning]
-> In our guides, we use as the server name: ex<b>?</b>.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server  for your Exchange service.
+> In our guides, we use as the server name: ex<b>?</b>.mail.ovh.ca. You will need to replace the "?" with the actual number indicating the appropriate server  for your Exchange service.
 >
 > You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} section: Open `Microsoft`{.action}, then `Exchange`{.action} and select your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
