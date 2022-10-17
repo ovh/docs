@@ -20,4 +20,22 @@ Pour mettre en place votre solution Sylius, vous devrez intégrer les éléments
 - être familier de la ligne de commande et de l'utilisation d'un terminal
 - avoir paramétré votre zone DNS pour faire pointer votre nom de domaine (ou votre sous-domaine) sur votre serveur.
 
+Vous devez également avoir installé [Composer](https://getcomposer.org/) et avoir votre fichier `composer.phar` à la racine de votre serveur où dans n'importe quel répertoire accessible.
+
 ## En pratique
+
+### Préparations
+
+#### Créer le répertoire dans lequel seront vos fichiers
+
+Votre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permet de gérer plusieurs sites sur votre serveur.
+
+Une fois connecté en SSH à votre serveur, créez un répertoire à la racine avec la commande :
+```sh
+mkdir monsitestatique
+```
+
+Puis allez dans votre ce répertoire :
+```sh
+cd monsitestatique
+```
