@@ -64,8 +64,8 @@ Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "apache-airflow" chart repository
 ...Successfully got an update from the "ingress-nginx" chart repository
 ...Successfully got an update from the "jfrog" chart repository
-Update Complete. ⎈Happy Helming!⎈</code>
-</pre>
+Update Complete. ⎈Happy Helming!⎈
+</code></pre>
 
 ### Configure the master key and the join key
 
@@ -85,8 +85,8 @@ Output should be like this:
 <code>$ export MASTER_KEY=$(openssl rand -hex 32)
 
 $ echo ${MASTER_KEY}
-xxxxxxxxfffffffffffffxxxxxxxxxxxxxxxxxxxxxgggggggggggggxxxxxxxxxx</code>
-</pre>
+xxxxxxxxfffffffffffffxxxxxxxxxxxxxxxxxxxxxgggggggggggggxxxxxxxxxx
+</code></pre>
 
 Next, configure the join key as follows:
 
@@ -102,8 +102,8 @@ Output should be like this:
 <code>$ export JOIN_KEY=$(openssl rand -hex 32)
 
 $ echo ${JOIN_KEY}
-xxxxxxxxyyyyyyyyyyyyyxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyxxxxxxxxxx</code>
-</pre>
+xxxxxxxxyyyyyyyyyyyyyxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyxxxxxxxxxx
+</code></pre>
 
 ### Install Jfrog Artifactory with Helm
 
@@ -146,8 +146,8 @@ Congratulations. You have just deployed JFrog Artifactory!
 2. Open Artifactory in your browser
    Default credential for Artifactory:
    user: admin
-   password: password</code>
-</pre>
+   password: password
+</code></pre>
 
 Next, wait until the status of all Pods status are `Running` and _ready_ (i.e the number of Pods desired equals to the actual number in the `Ready` column):
 
@@ -162,8 +162,8 @@ Output should be like this:
 NAME                                             READY   STATUS    RESTARTS   AGE
 artifactory-0                                    1/1     Running   0          8m11s
 artifactory-artifactory-nginx-7c556cb56b-x5wvm   1/1     Running   0          8m11s
-artifactory-postgresql-0                         1/1     Running   0          8m11s</code>
-</pre>
+artifactory-postgresql-0                         1/1     Running   0          8m11s
+</code></pre>
 
 ### Test the fresh installed Jfrog artifactory
 
@@ -196,8 +196,8 @@ Output should be like this:
 <pre class="console"><code>$ helm uninstall artifactory -n artifactory
 <code>$ helm uninstall artifactory -n artifactory
 
-release "artifactory" uninstalled</code>
-</pre>
+release "artifactory" uninstalled
+</code></pre>
 
 Then delete the `artifactory` namespace:
 
