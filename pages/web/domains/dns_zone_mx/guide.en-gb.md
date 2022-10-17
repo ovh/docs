@@ -31,7 +31,7 @@ An MX record is used to point a domain name to an email server. It enables serve
 
 ### Step 1: Understand the basic purpose of MX records
 
-An MX record links your domain name to your email service provider’s servers (e.g. OVH’s servers). When you are sent an email, the server sending the email will use the MX record to find out which server it should deliver to.
+An MX record links your domain name to your email service provider’s servers (e.g. OVHcloud’s servers). When you are sent an email, the server sending the email will use the MX record to find out which server it should deliver to.
 
 You can add multiple MX records to a single domain name, so you will need to define a priority for each record. By doing so, the servers sending emails to your email address will know which server they should deliver them to, by priority. However, please note that when you add multiple MX records, the servers they point to must belong to the same service provider.
 
@@ -59,7 +59,7 @@ This table displays your domain’s OVHcloud configuration. Each row corresponds
 
 ![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
-If there are already MX records and you would like to replace them, click the cogwheel icon on the right-hand side of each table row, then click `Delete record`{.action}. Please ensure, however, that you don’t delete all MX records before you add the new ones.
+If there are already MX records and you would like to replace them, click on the `...`{.action} icon  on the right-hand side of each table row, then click `Delete record`{.action}. Please ensure, however, that you don’t delete all MX records before you add the new ones.
 
 To check if MX records already exist, use the filter above the DNS table to select the **MX** field, then confirm to only display the MX DNS records for your DNS zone.
 
