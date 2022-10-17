@@ -6,7 +6,7 @@ section: Plan de Reprise d'Activité
 order: 06
 ---
 
-**Dernière mise à jour le 06/10/2022**
+**Dernière mise à jour le 13/10/2022**
 
 ## Objectif
 
@@ -25,17 +25,81 @@ order: 06
 
 ## Présentation
 
-Nous allons voir comment mettre en place une réplication synchrone entre deux sites et activer un plan de reprise d'activité à l'aide d'un témoin de cluster (Metro AHV) en utilisant un troisième cluster distant.
+Nous allons mettre en place un plan de reprise d'activité bi-directionnel entre deux clusters avec ce matériel :
 
-- Le troisième cluster servira de témoin pour le cluster il hébergera la machine virtuelle Prism Central des trois clusters. 
-- Les machines virtuelles seront répliqués entre Roubaix et Gravelines dans les deux sens
-- Un plan de reprise d'activité sera mise en place en cas de défaillance d'un cluster des clusters répliquées ou de Prism Central.
+- Un cluster Nutanix à ROUBAIX
+- Un cluster Nutanix à GRAVELINES
+- Un cluster Nutanix à ERTITH uniquement pour héberger Prism Central 
+
+
+Nous n'utiliserons qu'un seul vRack qui contiendra
+
+- Les clusters Nutanix.
+- Les loadbalancers.
+- Le serveur Standalone avec Prism Central.
+- les adresses IP additionnelles sur le rtvRack.
+
+Vous trouverez ci-dessous le schéma de cette configuration sur trois sites:
+
+![00 - Metro Availability Diagram 01](images/00-metro-availability-diagram01.png)
 
 ## En pratique
 
+Voici la marche à suivre pour mettre en place notre solution de P.R.A. (Plan de reprise d'activité)
+
+Le informations techniques utilisés par notre guide sont les suivantes :
+
+- Cluster de ROUBAIX
+    + Serveur 1 : adresse VM **CVM** `192.168.0.1`, adresse IP hyperviseur **AHV** `192.168.0.21`.
+    + Serveur 2 : adresse VM **CVM** `192.168.0.2`, adresse IP hyperviseur **AHV** `192.168.0.22`.
+    + Serveur 3 : adresse VM **CVM** `192.168.0.3`, adresse IP hyperviseur **AHV** `192.168.0.23`.
+    + Adresse virtuelle de **Prism Element** : `192.168.0.100`.
+    + Adresse IP **Prism Central** :`192.168.0.101`.
+    + Passerelle : `192.168.3.254`.
+    + Masque : `255.255.252.0`
+    + Version du cluster : `6.5`
+
+- Cluster de GRAVELINES
+    + Serveur 1 : adresse VM **CVM** `192.168.1.1`, adresse IP hyperviseur **AHV** `192.168.1.21`.
+    + Serveur 2 : adresse VM **CVM** `192.168.1.2`, adresse IP hyperviseur **AHV** `192.168.1.22`.
+    + Serveur 3 : adresse VM **CVM** `192.168.1.3`, adresse IP hyperviseur **AHV** `192.168.1.23`.
+    + Adresse virtuelle de **Prism Element** : `192.168.1.100`.
+    + Adresse IP **Prism Central** :`192.168.1.101`.
+    + Passerelle : `192.168.3.254`.
+    + Masque : `255.255.252.0`
+    + Version du cluster : `6.5`.
+
+- Cluster de ERITH
+    + Serveur 1 : adresse VM **CVM** `192.168.2.1`, adresse IP hyperviseur **AHV** `192.168.2.21`.
+    + Serveur 2 : adresse VM **CVM** `192.168.2.2`, adresse IP hyperviseur **AHV** `192.168.2.22`.
+    + Serveur 3 : adresse VM **CVM** `192.168.2.3`, adresse IP hyperviseur **AHV** `192.168.2.23`.
+    + Adresse virtuelle de **Prism Element** : `192.168.2.100`.
+    + Adresse IP **Prism Central** :`192.168.2.101`.
+    + Passerelle : `192.168.3.254`.
+    + Masque : `255.255.252.0`
+    + Version du cluster : `6.5`.
+
+
+
+
+
+
+
 ### Interconnexion des trois clusters
 
+
+
+Aidez-vous de ce guide pour interconnecter les deux premiers clusters [https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/].
+
+Pour configurer le troisième cluster à Erith il faudra réutiliser la procédure pour l'interconnexion des deux clusters mais cette fois ce sera ERITH -> GRAVELINES à la place de ROUBAIX -> GRAVELINES
+
 ### Deconnexion du Prism Central d'origine sur les deux clusters qui seront répliqués
+
+
+
+
+
+
 
 ### Connexion des deux clusters au Prism Central distant servant de témoin
 
@@ -45,6 +109,9 @@ Nous allons voir comment mettre en place une réplication synchrone entre deux s
 
 ### Test de bon fonctionnement
 
+#### Utilisation de la configuration de test dans plan de reprise
+
+#### Mise en indisponibilité sur 
 
 
 
