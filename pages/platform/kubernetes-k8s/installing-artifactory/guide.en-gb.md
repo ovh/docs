@@ -222,7 +222,7 @@ $ kubectl delete ns artifactory
 ```
 ## Go further
 
-For more details on how to use the Jfrog Artifactory see the official [documentations](https://www.jfrog.com/confluence/site/documentation).
+For more details on how to use the JFrog Artifactory see the official [documentations](https://www.jfrog.com/confluence/site/documentation).
 
 To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
