@@ -138,22 +138,6 @@ The full email header appears in a separate window. You can select the entire te
 
 ### Retrieving a header on webmail <a name="webmail"></a>
 
-#### Roundcube
-
-##### **Retrieving the header**
-
-To display the header, select the email you want. Click on the button `... More`{.action} then on `< > Show source`{.action}.
-
-![emails](images/roundcube01.png){.thumbnail}
-
-A new window will open with the full email header. You can select the entire text and copy it to a file.
-
-##### **Retrieving the .eml file**
-
-To download the `.eml` file, select the email you want. Click on the button `... More`{.action} then on `Download (.eml)`{.action}.
-
-![emails](images/roundcube02.png){.thumbnail}
-
 #### Outlook Web Application (OWA) <a name="owa"></a>
 
 ##### **Retrieving the header**

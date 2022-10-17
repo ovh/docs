@@ -142,22 +142,6 @@ La cabecera completa del correo se muestra en una ventana separada. Puede selecc
 
 ### Obtener una cabecera en un webmail <a name="webmail"></a>
 
-#### Roundcube
-
-##### **Obtener la cabecera**
-
-Para ver la cabecera, seleccione la dirección de correo electrónico que desee. Haga clic en el botón `... Más`{.action} tarde, haga clic en `< > Ver fuente`{.action}.
-
-![correo electrónico](images/roundcube01.png){.thumbnail}
-
-Se abrirá una nueva ventana con el encabezado completo del email. Puede seleccionar todo el texto y copiarlo a un archivo.
-
-##### **Obtener el archivo .eml**
-
-Para descargar el archivo `.eml`, seleccione el email que desee. Haga clic en el botón `... Más`{.action} tarde, haga clic en `Descargar (.eml)`{.action}.
-
-![correo electrónico](images/roundcube02.png){.thumbnail}
-
 #### Outlook Web Application (OWA) <a name="owa"></a>
 
 ##### **Obtener la cabecera**
