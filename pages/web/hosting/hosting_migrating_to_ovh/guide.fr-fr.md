@@ -1,7 +1,7 @@
 ---
 title: Migrer son site et ses e-mails vers OVHcloud
 slug: migrer-mon-site-chez-ovh
-excerpt: Découvrez comment migrer votre site internet et vos e-mails vers OVHcloud sans interruption
+excerpt: Découvrez comment migrer votre site internet, vos e-mails et votre domaine chez OVHcloud sans interruption
 section: Premiers pas
 order: 08
 ---
@@ -10,47 +10,94 @@ order: 08
 
 ## Objectif
 
-Ce guide vous présente les différentes actions à réaliser pour migrer l'ensemble de votre site web, votre domaine et vos bases de données chez OVHcloud.
+Ce guide vous présente les différentes actions à réaliser pour migrer l'ensemble de votre site web, votre domaine et vos adresses e-mail chez OVHcloud sans interruption de service.
 
-**Découvrez comment migrer votre site internet et vos e-mails vers OVHcloud sans interruption de service.**
+> [!success]
+>
+> Les informations qui vont suivre font appel à divers produits de l'univers Web, nous vous recommandons de lire ce guide une première fois en entier avant de vous lancer dans la migration de vos services chez OVHcloud.
+>
+
+**Découvrez comment migrer votre site internet, vos e-mails et votre domaine chez OVHcloud sans interruption de service.**
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+>
 
 ## Prérequis
 
-- Gérer le nom de domaine concerné.
-- Accéder aux fichiers et à la base de données de votre site web chez votre hébergeur actuel.
-- Disposer des identifiants (utilisateur, mot de passe, serveurs) de vos adresses e-mail actuelles.
+- Gérer le nom de domaine de votre site Web.
+- Accéder à la zone DNS (Domain Name System) active de votre domaine
+- Accéder aux fichiers et à la base de données de votre site Web chez votre hébergeur actuel.
+- Disposer des identifiants (utilisateur, mot de passe, serveur) de vos adresses e-mail actuelles.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
-Migrer votre site internet et vos e-mails vers OVHcloud nécessite d'appliquer une procédure précise en plusieurs étapes.
+Migrer votre site internet et vos e-mails vers OVHcloud **sans interruption de service** nécessite d'appliquer une procédure précise en 10 étapes :
 
-|Étapes|Description| 
-|---|---| 
-|Commander l'hébergement|Permet de disposer de l'hébergement OVHcloud dans lequel vous hébergerez votre site internet et bénéficierez d'adresses e-mail.| 
-|Transférer le site|En récupérant une sauvegarde complète de ce dernier, vous pourrez le transférer sur votre nouvel hébergement OVHcloud.| 
-|Transférer les adresses e-mail|En recréant au préalable les mêmes adresses e-mail chez OVHcloud, vous pourrez transférer le contenu de ces dernières de votre ancien prestataire vers OVHcloud.| 
-|Changer la configuration DNS du domaine|En changeant la configuration de votre domaine, ce dernier utilisera l'hébergement OVHcloud (pour votre site internet et vos adresses e-mail) et non plus les services de votre ancien prestataire.| 
-|Transférer le domaine|Changer le bureau d’enregistrement de votre domaine pour choisir OVHcloud.| 
+- [Etape 1 : Commander l'hébergement et les adresses e-mail chez OVHcloud](#step1)
+- [Etape 2 : Créer et pré-configurer une zone DNS pour votre domaine chez OVHcloud](#step2)
+- [Etape 3 : Récupérer une sauvegarde complète de votre site Web](#step3)
+- [Etape 4 : Installer la sauvegarde de votre site Web sur votre offre d'hébergement OVHcloud](#step4)
+- [Etape 5 : Recréer vos adresses e-mail à l'identique chez OVHcloud](#step5)
+- [Etape 6 : Déclarer les serveurs mail OVHcloud dans la zone DNS active de votre nom de domaine](#step6)
+- [Etape 7 : Transférer le contenu de vos anciennes adresses e-mail dans vos nouvelles chez OVHcloud](#step7)
+- [Etape 8 : Changer les serveurs DNS actifs de votre domaine par ceux d'OVHcloud](#step8)
+- [Etape 9 : Transférer votre nom de domaine chez OVHcloud](#step9)
+- [Etape 10 : Reconfiguration de vos logiciels de messagerie](#step10)
 
-Selon le bureau d'enregistrement dans lequel est déposé votre nom de domaine, l'ordre des étapes ci-dessus peut être différent.
-
-> [!warning]
+> [!Primary]
 >
-> Certains bureaux d'enregistrement coupent la résolution DNS de votre nom de domaine, si cette dernière est configurée chez eux, dès qu'ils reçoivent une demande de transfert sortant.
-> Ceci a pour effet de rendre inaccessible votre nom de domaine et donc les services qui en dépendent, comme votre site internet et vos adresses e-mail. Nous vous invitons vivement à prendre contact avec le bureau d'enregistrement de votre nom de domaine afin de vous assurer de sa politique lors d'un transfert sortant.
+> En suivant **dans l'ordre** ces 10 étapes, vous n'aurez pas d'interruption de service sur l'accès à votre site Web et sur la réception de vos nouveaux mails.
+>
+> Cependant et en fonction de votre bureau d'enregistrement, votre fournisseur d'hébergement ou votre fournisseur de services mail, il est possible que ces derniers coupent l'accès à vos anciens services s'ils constatent que votre domaine n'est plus configuré avec eux.
+>
+> Dans ce cas, il est possible que vous rencontriez tout de même une interruption de service.
+>
+> Si cette interruption a lieu, notre documentation est construite de telle sorte à ce que celle-ci soit la plus courte possible.
 >
 
-Tenant compte de cette probabilité, nous mettons à disposition deux procédures de migration :
+### Etape 1 : Commander l'hébergement et les adresses e-mail chez OVHcloud <a name="step1"></a>
 
-- une migration sans interruption de vos services ;
-- une migration avec probable interruption de vos services.
+Il existe plusieurs offres d'hébergement mutualisé chez OVHcloud qui contiennent une offre e-mail "MX Plan". Cette offre e-mail permet de créer des adresses e-mail POP/IMAP avec un espace de stockage de 5Go maximum pour chaque adresse. Choisissez parmi les offres d'hébergement ci-dessous en fonction de la version PHP, de la version SQL, du nombre d'adresses e-mail dont vous avez besoin et de la taille de votre site à migrer :
 
-### Migration sans interruption de service
+- L'hébergement [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) avec 10 adresses e-mail "MX Plan"
+- L'hébergement [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) avec 100 adresses e-mail "MX Plan"
+- L'hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) avec 1000 adresses e-mail "MX Plan" : offre déclinée en 4 "sous-offres"
+- L'hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) avec 200 adresses e-mail "MX Plan" : offre utilisée par les développeurs d'applications.
 
-#### Étape 1 : commander votre hébergement chez OVHcloud
+Si vous n'êtes pas encore client OVHcloud et une fois votre offre d'hébergement choisie, cliquez sur le bouton `Commander`{.action} présent sur chacune des pages commerciales ci-dessus ou sur <https://www.ovh.com> puis poursuivez les étapes du tunnel de commande **sans demander le transfert de votre domaine**.
 
-Depuis le site d'[OVHcloud](https://ovh.com/){.external}, réalisez la commande de votre hébergement web. Assurez-vous de ne pas demander le transfert de votre domaine, vous le réaliserez par la suite. Dès réception de votre règlement, l'installation de l'hébergement débutera. Vous recevrez un e-mail vous confirmant l'installation de ce dernier.
+Si non, vous pouvez effectuer la commande depuis votre [Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois connecté, cliquez sur la partie `Web Cloud`{.action}, cliquez ensuite sur le bouton bleu `Commander`{.action} puis sur le carré dans lequel est mentionné `Hébergement`{.action}. Poursuivez ensuite les étapes du tunnel de commande **sans demander le transfert de votre domaine**.
+
+Une fois le paiement validé, l'installation de l'hébergement va démarrer. Un e-mail sera envoyé à votre adresse mail de contact contenant les identifiants d'accès à l'espace de stockage FTP (File Transfert Protocol) de votre hébergement Web.
+
+> [!Primary]
+>
+> OVHcloud propose d'autres offres mail en plus de l'offre "MX Plan". Vous pouvez par exemple combiner à des adresses mail "MX Plan" des adresses ["Email-Pro"](https://www.ovhcloud.com/fr/emails/email-pro/) ou des comptes ["Exchange"](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
+>
+
+
+### Etape 2 : Créer et pré-configurer une zone DNS pour votre domaine chez OVHcloud <a name="step2"></a>
+
+### Etape 3 : Récupérer une sauvegarde complète de votre site Web <a name="step3"></a>
+
+### Etape 4 : Installer la sauvegarde de votre site Web sur votre offre d'hébergement OVHcloud <a name="step4"></a>
+
+### Etape 5 : Recréer vos adresses e-mail à l'identique chez OVHcloud <a name="step5"></a>
+
+### Etape 6 : Déclarer les serveurs mail OVHcloud dans la zone DNS active de votre nom de domaine <a name="step6"></a>
+
+### Etape 7 : Transférer le contenu de vos anciennes adresses e-mail dans vos nouvelles chez OVHcloud <a name="step7"></a>
+
+### Etape 8 : Changer les serveurs DNS actifs de votre domaine par ceux d'OVHcloud <a name="step8"></a>
+
+### Etape 9 : Transférer votre nom de domaine chez OVHcloud <a name="step9"></a>
+
+### Etape 10 : Reconfiguration de vos logiciels de messagerie <a name="step10"></a>
 
 #### Étape 2 : transférer votre site internet
 
@@ -178,7 +225,7 @@ Plusieurs sous-étapes sont à réaliser.
 
 Votre site internet, vos adresses e-mail et votre nom de domaine ont bien été migré vers OVHcloud !
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Généralités sur les e-mails mutualisés](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/){.external}.
 
