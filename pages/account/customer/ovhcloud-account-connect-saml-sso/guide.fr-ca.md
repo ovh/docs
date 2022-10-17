@@ -10,13 +10,13 @@ order: 02
 
 ## Objectif
 
-Vous pouvez utiliser l'authentification SSO **unique** (*Single Sign-On*) pour vous connecter à votre compte OVHcloud. Pour activer ces connexions, votre compte et vos services ADFS (Active Directory Federation Services) doivent être configurés à l'aide des authentifications SAML (*Security Assertion Markup Language*).
+Vous pouvez utiliser l'authentification SSO (*Single Sign-On*) **unique** pour vous connecter à votre compte OVHcloud. Pour activer ces connexions, votre compte et vos services ADFS (*Active Directory Federation Services*) doivent être configurés à l'aide des authentifications SAML (*Security Assertion Markup Language*).
 
 **Ce guide vous explique comment associer votre compte OVHcloud à un Active Directory externe.**
 
 ## Prérequis
 
-- Les services ADFS (Active Directory Federation Services) doivent s'exécutent sur votre serveur
+- Les services ADFS (Active Directory Federation Services) doivent s'exécuter sur votre serveur
 - Disposer d'un [compte OVHcloud](https://docs.ovh.com/ca/fr/customer/creer-compte-ovhcloud/)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
@@ -101,7 +101,7 @@ Cliquez sur le bouton `Add Rule...`{.action}.
 
 Cliquez sur `Next`{.action}.
 
-Renseignez un nom de règle puis définissez votre mapping.
+Renseignez un nom de règle puis définissez votre tableau de correspondances.
 
 Sélectionnez `Active Directory` comme `Attribute store`.
 
@@ -119,7 +119,7 @@ Cliquez sur le bouton `Apply`{.action} et validez avec `OK`{.action}.
 
 ![Mappage d'approbation étape 6](images/adfs_relying_party_trusts_mapping_6.png){.thumbnail}
 
-Une fois le mappage terminé, votre service ADFS fait désormais confiance à OVHcloud en tant que fournisseur de services. L'étape suivante consiste à vous assurer que le compte OVHcloud fait confiance à votre ADFS en tant que fournisseur d'identité.
+Une fois le tableau de correspondances terminé, votre service ADFS fait désormais confiance à OVHcloud en tant que fournisseur de services. L'étape suivante consiste à vous assurer que le compte OVHcloud fait confiance à votre ADFS en tant que fournisseur d'identité.
 
 ### Établir la confiance du compte OVHcloud et configurer la connexion
 
@@ -139,25 +139,25 @@ Ouvrez l'onglet `Gestion des utilisateurs`{.action}.
 
 Cliquez sur le bouton `Login SSO`{.action} .
 
-![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
+![OVHcloud connexion SSO étape 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
 Renseignez les métadonnées XML de votre service ADFS. Le champ `Nom d'attribut de groupe` est facultatif dans ce cas. Cliquez sur `Confirmer`{.action}.
 
-![OVHcloud connect SSO step 2](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
+![OVHcloud connexion SSO étape 2](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
 Vous devez maintenant retrouver votre ADFS en tant que fournisseur d'identité, ainsi que les groupes par défaut.
 
-![OVHcloud connect SSO step 3](images/ovhcloud_user_management_connect_sso_3.png){.thumbnail}
+![OVHcloud connexion SSO étape 3](images/ovhcloud_user_management_connect_sso_3.png){.thumbnail}
 
 Pour plus d'informations, cliquez sur le lien situé sous l'`URL du service SSO`.
 
-![OVHcloud connect SSO step 4](images/ovhcloud_user_management_connect_sso_4.png){.thumbnail}
+![OVHcloud connexion SSO étape 4](images/ovhcloud_user_management_connect_sso_4.png){.thumbnail}
 
-![OVHcloud connect SSO step 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
+![OVHcloud connexion SSO étape 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
 Le bouton `...`{.action} permet de mettre à jour ou de supprimer le SSO, et d’en consulter les détails.
 
-![OVHcloud connect SSO step 6](images/ovhcloud_user_management_connect_sso_6.png){.thumbnail}
+![OVHcloud connexion SSO étape 6](images/ovhcloud_user_management_connect_sso_6.png){.thumbnail}
 
 Votre ADFS est maintenant considéré comme fournisseur d'identité de confiance. Cependant, vous devez tout de même ajouter des groupes à votre compte OVHcloud.
 
@@ -173,7 +173,7 @@ Prenez pour exemple celui d'un utilisateur « John Doe » de votre Active Direct
 
 ![Utilisateur ADFS](images/adfs_user.png){.thumbnail}
 
-Vérifiez le mappage dans ADFS :
+Vérifiez le tableau de correspondances dans ADFS :
 
 ![Mappage d'approbation de partie de confiance ADFS](images/adfs_relying_party_trusts_mapping_4.png){.thumbnail}
 

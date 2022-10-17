@@ -2,7 +2,7 @@
 title: Enabling SSO connections with your OVHcloud account
 slug: connect-saml-sso
 excerpt: "Find out how to link your ADFS to your OVHcloud account using SAML 2.0"
-Section: 'Advanced use'
+section: 'Advanced use'
 order: 02
 ---
 
