@@ -190,7 +190,7 @@ $ helm uninstall artifactory -n artifactory
 
 Output should be like this:
 
-<pre class="console">
+<pre class="console"><code>$ helm uninstall artifactory -n artifactory
 <code>$ helm uninstall artifactory -n artifactory
 
 release "artifactory" uninstalled</code>
