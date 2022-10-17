@@ -165,7 +165,7 @@ $ kubectl get pods -n artifactory -w
 Output should be like this:
 
 <pre class="console">
-<code>$ kubectl get pods -n artifactory
+<code>$ kubectl get pods -n artifactory -w
 NAME                                             READY   STATUS    RESTARTS   AGE
 artifactory-0                                    1/1     Running   0          8m11s
 artifactory-artifactory-nginx-7c556cb56b-x5wvm   1/1     Running   0          8m11s
