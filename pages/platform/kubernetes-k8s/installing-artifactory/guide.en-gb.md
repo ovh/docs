@@ -180,8 +180,6 @@ echo http://$SERVICE_IP/
 
 Open the service URL in a browser and enter the default credentials: `admin` for *Username* and `password` for *Password*:
 
-Open the service URL in a browser and enter the default credentials `admin` and `password`:
-
 ![Artifactory login page](images/artifactory-login-page.png){.thumbnail}
 
 > [!primary]
