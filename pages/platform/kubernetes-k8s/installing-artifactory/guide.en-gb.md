@@ -167,6 +167,15 @@ artifactory-postgresql-0                         1/1     Running   0          8m
 
 ### Test the fresh installed Jfrog artifactory
 
+Get the URL of the administration console:
+
+```
+export SERVICE_IP=$(kubectl get svc --namespace artifactory artifactory-artifactory-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+echo http://$SERVICE_IP/
+```
+
+Open the service URL in a browser and enter the default credentials: `admin` for *Username* and `password` for *Password*:
+
 Open the service URL in a browser and enter the default credentials `admin` and `password`:
 
 ![Artifactory login page](images/artifactory-login-page.png){.thumbnail}
