@@ -97,7 +97,7 @@ We will distinguish two types of website:
 - CMSs (*Content Management System*) such as WordPress, Joomla!, PrestaShop, Drupal, etc.
 - classic websites designed by you or your service provider.
 
-### Case 1: your website is a CMS
+#### Case 1: your website is a CMS
 
 Most CMSs can directly replace the domain originally declared for your website with another one via their *back-office* admin panel.
 
@@ -113,7 +113,7 @@ Please note that for these CMSs, you can also edit them directly [in the databas
 
 For other CMSs that are not offered for automatic installation by OVHcloud, please also contact their respective support teams to carry out this rewrite in total security. 
 
-### Case 2: your website is a “home-made” website
+#### Case 2: your website is a “home-made” website
 
 To rewrite your URLs with your new domain, [log in to your website database](https://docs.ovh.com/sg/en/hosting/creating-database/) then replace your old domain with the new one in the corresponding table. 
 

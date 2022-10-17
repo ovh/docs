@@ -43,7 +43,7 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 
 Para alterar o domínio de acesso ao seu website, deverá realizar várias etapas por uma ordem precisa.
 
-#### Etapa 1 - declarar o novo domínio no seu alojamento partilhado <a name="step1"></a>
+### Etapa 1 - declarar o novo domínio no seu alojamento partilhado <a name="step1"></a>
 
 Declare o seu novo nome de domínio através da nossa documentação sobre a [adição de um multi-site no seu alojamento partilhado](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/). Declare também o seu sub-domínio em `www` se deseja, por exemplo, que `www.NewDomain.tld` apareça também o seu website `NewDomain.tld`.
 
@@ -85,7 +85,7 @@ Se todas as ações foram corretamente realizadas, as declarações em multi-sit
 
 Se o seu website não utiliza bases de dados e/ou não efetuar uma re-escritura de URL para o seu website, este deve já ser apresentado corretamente com o seu novo domínio. Neste caso, passe diretamente para [etapa 3](#step3) deste guia. Caso contrário, consulte o passo 2 abaixo.
 
-#### Etapa 2 - reescrita dos URLs no seu website com o novo domínio
+### Etapa 2 - reescrita dos URLs no seu website com o novo domínio
 
 A maioria dos sites utiliza bases de dados para funcionar. A arborescência destas últimas é geralmente construída em torno do domínio inicialmente utilizado para o seu site. São necessárias ações suplementares para estes websites.
 

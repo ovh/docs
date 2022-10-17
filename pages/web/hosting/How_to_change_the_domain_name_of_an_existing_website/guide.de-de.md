@@ -131,7 +131,7 @@ Wenn Sie einen Dienstleister für die Erstellung Ihrer Website beauftragt haben,
 > Sobald Schritt 2 abgeschlossen ist, muss Ihre Website mit Ihrer neuen Domain angezeigt werden.
 >
 
-## Schritt 3 - Die alte Domain <a name="step3"></a> entfernen
+### Schritt 3 - Die alte Domain <a name="step3"></a> entfernen
 
 Um "*Duplicate-content*"zu vermeiden und wenn Ihre neue Domain mit Ihrer Website voll funktionsfähig ist, müssen Sie die Multisite-Meldung für Ihre alte Domain mithilfe der Anleitung zur Verwaltung von [Multisites auf Ihrem Webhosting](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) löschen.
 
