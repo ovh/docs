@@ -291,4 +291,40 @@ yarn build
 
 Votre application est maintenant installé, vous n'avez plus qu'à aller voir le résultat sur le domaine qui pointe vers votre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/).
 
+#### Configurer Sylius - API
+
+L'installation basique de Sylius propose une interface web minimaliste. La plateforme e-commerce est avant tout _headless_ et dispose d'une API avancée pour être utilisée, entre autres, avec un _front_ statique.
+
+##### **Générer un _token_ JWT**
+
+Depuis la version 1.8, Sylius utilise [API Platform](https://api-platform.com/), un framework écrit sur une base [Symfony](https://symfony.com/).
+Lors de l'installation, il vous a été demandé si vous souhaitiez générer un _token_ JWT. Si vous ne l'avez pas fait ou que vous souhaitez le faire à nouveau, allez à la racine de votre projet et tapez la commande suivante :
+
+```sh
+php bin/console sylius:install:jwt-setup
+```
+
+##### Rendre l'API disponible
+
+Pour rendre l'API disponible, il va falloir modifier la configuration de Sylius. Ouvrez le fichier `_sylius.yaml` situé dans le répertoire `config/packages` :
+
+```sh
+nano config/packages/_sylius.yaml
+```
+
+Ajoutez la directive pour acitiver l'accès à l'API dans la directive `parameters` :
+
+```sh
+parameters:
+        sylius_core.public_dir: '%kernel.project_dir%/public'
+        sylius_api.enabled: true
+```
+
+Supprimez le cache :
+```sh
+php bin/console cache:clear
+```
+
+Vous pouvez vérifiez le bon fonctionnement de l'API en vous rendant sur l'URL de votre site suivi de `/api/v2`. Vous arriverez alors sur une documentation générée Swagger.
+
 ## Aller plus loin
