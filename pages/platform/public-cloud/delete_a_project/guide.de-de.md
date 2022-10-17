@@ -2,7 +2,6 @@
 title: 'Ein Public Cloud Projekt löschen'
 excerpt: 'Erfahren Sie hier, wie Sie Ihr Public Cloud Projekt löschen'
 slug: ein_projekt_loschen
-legacy_guide_number: g2129
 section: 'Projektverwaltung'
 ---
 
@@ -46,7 +45,7 @@ Nach Klick auf den Button wird eine E-Mail an Sie gesendet, in der Sie aufgeford
 <br>Sobald Sie Ihr Passwort eingegeben und bestätigt haben, tritt Ihr Projekt in die Löschphase ein.
 
 > [!warning]
-> Bitte beachten Sie, dass ein Projekt, das in die Löschphase eintritt, 7 Tage lang im Aussetzungsstatus verbleibt. Das Projekt wird daher nicht sofort gelöscht. Wenn Sie von dieser Situation betroffen sind, zum Beispiel wenn Ihr Projektquota begrenzt ist, kontaktieren Sie bitte unsere Support-Teams.
+> Beachten Sie, dass ein Projekt, das in die Löschphase eintritt, 7 Tage lang im Aussetzungsstatus verbleibt. Das Projekt wird daher nicht sofort gelöscht. Falls die Löschung beschleunigt stattfinden muss, zum Beispiel wenn Ihre Projektquota begrenzt ist, kontaktieren Sie bitte unsere Support-Teams.
 >
 
 ## Weiterführende Informationen
