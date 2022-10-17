@@ -110,6 +110,7 @@ xxxxxxxxyyyyyyyyyyyyyxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyxxxxxxxxxx
 > [!info]
 >
 > The two warning messages are not important.
+>
 
 ### Install Jfrog Artifactory with Helm
 
