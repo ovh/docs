@@ -44,7 +44,7 @@ section: Tutorials
 > You can find more detailed documentation about different ways to install Jfrog Artifactory in the official [documentation](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-HelmInstallation).
 > The following tutorial explain how to install a single node installation, for more advanced installation (like HA see the [documentation](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-HAInstallation)).
 
-### Configure Helm to use the Jfrog Helm chart
+### Configure Helm to use the JFrog Helm chart
 
 In a terminal add the JFrog Helm repository to your Helm installation:
 
