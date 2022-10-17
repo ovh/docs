@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Verwaltung Ihrer Archive mit Rsync
+title: Cloud Archive Swift - Verwaltung Ihrer Archive mit Rsync
 slug: pca/rsync
 excerpt: Erfahren Sie hier, wie Sie mit Rsync auf Ihre Public Cloud Archive zugreifen
 section: OpenStack Swift Archive Storage Class Specifics

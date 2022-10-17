@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Descongelar los datos almacenados en Public Cloud Archive
+title: Cloud Archive Swift - Descongelar los datos almacenados en Public Cloud Archive
 slug: pca/unlock
 excerpt: Cómo desbloquear los archivos
 section: OpenStack Swift Archive Storage Class Specifics

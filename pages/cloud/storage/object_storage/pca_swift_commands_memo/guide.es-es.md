@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Swift Command Memo (EN)
+title: Cloud Archive Swift - Swift Command Memo (EN)
 slug: pca/swift-commands-memo
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/pca/swift-commands-memo/'

@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Verwaltung der Archive via SFTP/SCP Client
+title: Cloud Archive Swift - Verwaltung der Archive via SFTP/SCP Client
 slug: pca/sftp
 excerpt: Hier erfahren Sie, wie Sie Ihre Public Cloud Archive verwalten und verwalten.
 section: OpenStack Swift Archive Storage Class Specifics
