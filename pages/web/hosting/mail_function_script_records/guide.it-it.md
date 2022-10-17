@@ -50,8 +50,8 @@ La nuova pagina ti permette di seguire e gestire le email automatiche inviate da
 Visualizzi una serie di informazioni per visualizzare l'attività dell'invio di email automatiche generate dai tuoi script:
 
 - **Stato del servizio**: stato attuale del servizio che esegue l'invio di email automatiche dal tuo hosting Web:
-    - Se è verde (*"Attivato"* o *"Force"*), significa che gli invii sono operativi. 
-    - Se è rosso (*"Disattivato"*, *"Banda"* o *"SPAM"*), gli invii non sono più effettuati. <br>
+    - Se è verde (*"Attivo"* o *"Force"*), significa che gli invii sono operativi. 
+    - Se è rosso (*"Non attivo"*, *"Bounce"* o *"SPAM"*), gli invii non sono più effettuati. <br>
 
     In base a questo stato, la gestione degli invii sarà diversa.
 
@@ -74,7 +74,7 @@ Per effettuare l'azione desiderata, clicca sul pulsante corrispondente e poi su 
 > Per evitare un utilizzo improprio delle email automatiche dell'hosting, ti consigliamo vivamente di configurare un sistema di sicurezza, ad esempio un "captcha da inserire nei form di contatto del tuo sito Web.
 >
 
-Se rilevi che le email generate dai tuoi script non sono più inviate mentre lo stato del servizio consente sempre l'invio (*"Attivato"* o *"Forza"*), ti consigliamo di:
+Se rilevi che le email generate dai tuoi script non sono più inviate mentre lo stato del servizio consente sempre l'invio (*"Attivo"* o *"Force"*), ti consigliamo di:
 
 - **verificare gli script che eseguono gli invii**: gli script potrebbero non riuscire a inviare le email a causa di un errore di sintassi. Verifica il contenuto dei tuoi script, correggili se necessario ed effettua un nuovo test.
 
@@ -102,9 +102,9 @@ Se ricevete correttamente il messaggio *The email has been sent successfully!* s
 
 - **Verifica la dimensione totale della tua email**: L'email inviata non deve superare la dimensione totale di **10 MB** (inclusa incapsulazione e intestazione). Il contenuto stesso della tua email non dovrà quindi superare i **7/8 MB**.
 
-### gestire gli stati "Disattivato", "Bouance" e "SPAM"
+### gestire gli stati "Non attivo", "Bounce" e "SPAM"
 
-#### Lo stato "Disattivato"
+#### Lo stato "Non attivo"
 
 Questo stato si verifica quando:
 
@@ -116,7 +116,7 @@ Per sbloccare la situazione, accedi alla sezione `Web Cloud`{.action}, clicca su
 
 Infine clicca su `Sblocca l'invio`{.action} e attendi qualche minuto fino a quando il servizio di invio non sarà nuovamente attivo.
 
-#### Lo stato "Bouance"
+#### Lo stato "Bounce"
 
 Questa condizione si verifica quando una certa percentuale delle tue email inviate automaticamente è tornata in errore.
 
@@ -125,7 +125,7 @@ Per sbloccare la situazione, accedi alla sezione `Web Cloud`{.action}, clicca su
 Sono possibili due opzioni:
 
 - Se clicchi su `Sblocca l'invio`{.action}, lo stato del servizio passerà in *"Force"*. Il rapporto **email fuorviato / numero totale di invio di email inviate** autorizzato prima di un blocco sarà raddoppiato. L'invio sarà nuovamente operativo pochi minuti dopo lo sblocco.
-- Se clicchi su `Rimuovi le email`{.action}, eliminerai tutte le email dalla coda di attesa e il servizio tornerà in *"Attivato"* senza raddoppiare il rapporto.
+- Se clicchi su `Rimuovi le email`{.action}, eliminerai tutte le email dalla coda di attesa e il servizio tornerà in *"Attivo"* senza raddoppiare il rapporto.
 
 #### Lo stato "SPAM"
 
@@ -143,7 +143,7 @@ Per correggere questa situazione, è necessario proteggere tutti gli script in g
 
 Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
-Clicca su `Rimuovi le email`{.action}, cancella tutte le email dalla coda di attesa e il servizio torna in*"Attivato"*.
+Clicca su `Rimuovi le email`{.action}, cancella tutte le email dalla coda di attesa e il servizio torna in*"Attivo"*.
 
 In questo caso è necessario effettuare un spurgo per cancellare gli SPAM in attesa di invio.
 
@@ -161,7 +161,7 @@ Aggiorna il CMS, i plugin e il tema associati il più regolarmente possibile per
 
 Una volta attivato l'hosting, accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
-Clicca su `Rimuovi le email`{.action}, cancella tutte le email dalla coda di attesa e il servizio torna in*"Attivato"*.
+Clicca su `Rimuovi le email`{.action}, cancella tutte le email dalla coda di attesa e il servizio torna in*"Attivo"*.
 
 In questo caso è necessario effettuare un spurgo per cancellare gli SPAM in attesa di invio.
 

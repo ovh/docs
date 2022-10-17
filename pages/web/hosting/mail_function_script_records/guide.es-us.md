@@ -50,8 +50,8 @@ Se abrirá una página en la que podrá consultar y gestionar los mensajes de co
 La página muestra varios datos que le permiten visualizar la actividad del envío de mensajes de correo automatizados generados desde sus scripts:
 
 - **Estado del servicio**: estado actual del servicio que realiza el envío de mensajes de correo automatizados de su alojamiento web:
-    - Si es verde (*"Activado"* o *"Force"*), significa que los envíos están operativos. 
-    - Si es rojo (*"Desactivado"*, *"Bounce"* o *"SPAM"*), los envíos ya no se efectúan. <br>
+    - Si es verde (*"Activo"* o *"Force"*), significa que los envíos están operativos. 
+    - Si es rojo (*"Inactivo"*, *"Bounce"* o *"SPAM"*), los envíos ya no se efectúan. <br>
 
     Según el estado, la gestión de los envíos será diferente.
 
@@ -74,7 +74,7 @@ Para realizar la acción deseada, haga clic en el botón correspondiente y selec
 Para evitar un uso no deseado de los mensajes de correo automatizados de su alojamiento web, le recomendamos encarecidamente que establezca un sistema de seguridad, como un "captcha", en los formularios de su sitio web que envíen mensajes de correo electrónico (por ejemplo, un formulario de contacto).
 >
 
-Si el estado del servicio permite el envío de mensajes de correo electrónico generados desde sus scripts (*"Activado"* o *"Fuerza"*), le recomendamos que realice las siguientes acciones:
+Si el estado del servicio permite el envío de mensajes de correo electrónico generados desde sus scripts (*"Activo"* o *"Force"*), le recomendamos que realice las siguientes acciones:
 
 - **Comprobar los scripts de envío**: los scripts no pueden enviar mensajes de correo electrónico debido a un error de sintaxis. Compruebe el contenido de sus scripts, corríjalo si es necesario y vuelva a intentarlo.
 
@@ -102,9 +102,9 @@ Si recibe el mensaje correctamente *The email has been sent successfully!* en la
 
 - **Compruebe el tamaño total de su email**: El mensaje de correo electrónico enviado no debe superar el tamaño total de **10 MB** (encapsulación y cabecera incluidos). El contenido del mensaje de correo electrónico no deberá exceder de **7/8 MB**.
 
-### Gestionar los estados "Desactivado", "Bounce" y "SPAM"
+### Gestionar los estados "Inactivo", "Bounce" y "SPAM"
 
-#### El estado "Desactivado"
+#### El estado "Inactivo"
 
 Este estado se produce cuando:
 
@@ -125,7 +125,7 @@ Para desbloquear la situación, acceda a la sección `Web Cloud`{.action}, haga 
 Existen dos opciones:
 
 - Si hace clic en `Desbloquear el envío`{.action}, el estado del servicio pasará a *"Force"*. El ratio **e-mails devueltos a error / número total de mensajes enviados** autorizado antes de un bloqueo se duplicará. El envío volverá a estar operativo unos minutos después del desbloqueo.
-- Si hace clic en `Purgar los mensajes de correo`{.action}, se borrarán todos los mensajes de la cola de espera y el estado del servicio pasará a *"Activado"* sin duplicar la relación.
+- Si hace clic en `Purgar los mensajes de correo`{.action}, se borrarán todos los mensajes de la cola de espera y el estado del servicio pasará a *"Activo"* sin duplicar la relación.
 
 #### El estado "SPAM"
 
@@ -143,7 +143,7 @@ Para corregir esta situación, debe proteger todos los scripts que puedan enviar
 
 Acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
-A continuación, haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *"Activado"*.
+A continuación, haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *"Activo"*.
 
 En este caso, es obligatorio realizar una purga para eliminar los spam pendientes de envío.
 
@@ -161,7 +161,7 @@ Actualice el CMS, los plugins y el tema asociados con la mayor frecuencia posibl
 
 Una vez que haya contratado un plan de hosting seguro, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
-A continuación, haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *"Activado"*.
+A continuación, haga clic en `Purgar los mensajes de correo`{.action}. Esto borrará todos los mensajes de la cola de espera y el estado del servicio pasará a *"Activo"*.
 
 En este caso, es obligatorio realizar una purga para eliminar los spam pendientes de envío.
 

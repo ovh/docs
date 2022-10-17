@@ -50,8 +50,8 @@ A página que aparece permite-lhe seguir e gerir os e-mails automatizados enviad
 A página apresenta várias informações que lhe permitem visualizar a atividade dos envios de e-mails automatizados gerados a partir dos seus scripts:
 
 - **Estado do serviço**: estado atual do serviço que efetua os envios de e-mails automatizados do seu alojamento web:
-    - Se for verde (*"Ativado"* ou * "Force"*), significa que os envios estão operacionais. 
-    - Se for vermelho (*"Desativado"*, * "Bola"* ou * "SPAM"*), os envios deixam de ser efetuados. <br>
+    - Se for verde (*"Ativo"* ou * "Force"*), significa que os envios estão operacionais. 
+    - Se for vermelho (*"Inativo"*, * "Bounce"* ou * "SPAM"*), os envios deixam de ser efetuados. <br>
 
     De acordo com este estado, a gestão dos envios será diferente.
 
@@ -74,7 +74,7 @@ Para realizar a ação desejada, clique no botão correspondente e depois em `Va
 > Para evitar uma utilização indesejável dos e-mails automatizados do seu alojamento web, recomendamos vivamente que implemente um sistema de segurança, como um "captcha" nos formulários do seu website que enviam e-mails (um formulário de contacto, por exemplo).
 >
 
-Se verificar que os e-mails gerados a partir dos seus scripts já não são enviados quando o estado do serviço permite sempre os envios (*"Ativado"* ou *"Force"*), recomendamos que:
+Se verificar que os e-mails gerados a partir dos seus scripts já não são enviados quando o estado do serviço permite sempre os envios (*"Ativo"* ou *"Force"*), recomendamos que:
 
 - **verificar os scripts que realizam os envios**: os scripts podem não ser bem sucedidos no envio dos e-mails devido a um erro de sintaxe. Verifique o conteúdo dos seus scripts, corrija-os se necessário e efetue um novo ensaio.
 
@@ -102,9 +102,9 @@ Se receber corretamente a mensagem *The email has been sent successfully!* no en
 
 - **Verifique o tamanho total do seu e-mail**: O e-mail enviado não deve ultrapassar o tamanho total de **10 MB** (incluindo encapsulamento e cabeçalho). Assim, o conteúdo do seu e-mail não deverá exceder **7/8 MB**.
 
-### Gerir os estados "Desativado", "Bouence" e "SPAM"
+### Gerir os estados "Inativo", "Bounce" e "SPAM"
 
-#### O estado "Desativado"
+#### O estado "Inativo"
 
 Este estado ocorre quando:
 
@@ -116,7 +116,7 @@ Para desbloquear a situação, aceda à secção `Web Cloud`{.action}, clique em
 
 Finalmente, clique em `Libertar o envio`{.action} e aguarde alguns minutos para que o serviço de envio fique novamente ativo.
 
-#### O estado "Bolsa"
+#### O estado "Bounce"
 
 Esta situação ocorre quando uma determinada percentagem dos seus e-mails enviados automaticamente volta em erro.
 
@@ -124,8 +124,8 @@ Para desbloquear a situação, aceda à secção `Web Cloud`{.action}, clique em
 
 Duas opções são possíveis:
 
-- Se clicar em `Libertar o envio`{.action}, o estado do serviço passará para *"Força"*. O rácio **e-mails devolvidos em erro / número total de envios de e-mails enviados** autorizado antes de um bloqueio será duplicado. O envio estará de novo operacional alguns minutos após o desbloqueio.
-- Se clicar em `Purger os e-mails`{.action}, este sistema apagará todos os e-mails da fila de espera e o estado do serviço passará a *"Ativado"* sem duplicar o rácio.
+- Se clicar em `Libertar o envio`{.action}, o estado do serviço passará para *"Force"*. O rácio **e-mails devolvidos em erro / número total de envios de e-mails enviados** autorizado antes de um bloqueio será duplicado. O envio estará de novo operacional alguns minutos após o desbloqueio.
+- Se clicar em `Purger os e-mails`{.action}, este sistema apagará todos os e-mails da fila de espera e o estado do serviço passará a *"Ativo"* sem duplicar o rácio.
 
 #### O estado "SPAM"
 
@@ -143,7 +143,7 @@ Para corrigir esta situação, deve proteger todos os scripts com capacidade par
 
 De seguida, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
 
-A seguir, clique em `Purger os e-mails`{.action}, e o estado do serviço eliminará todos os e-mails da fila de espera. O estado do serviço será novamente indicado em *"Ativado"*.
+A seguir, clique em `Purger os e-mails`{.action}, e o estado do serviço eliminará todos os e-mails da fila de espera. O estado do serviço será novamente indicado em *"Ativo"*.
 
 Neste caso, é obrigatória uma purga para eliminar os SPAM que aguardam envio.
 
@@ -161,13 +161,13 @@ Atualize o CMS, os plugins e o tema associados o mais regularmente possível par
 
 Depois de proteger o alojamento, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
 
-A seguir, clique em `Purger os e-mails`{.action}, e o estado do serviço eliminará todos os e-mails da fila de espera. O estado do serviço será novamente indicado em *"Ativado"*.
+A seguir, clique em `Purger os e-mails`{.action}, e o estado do serviço eliminará todos os e-mails da fila de espera. O estado do serviço será novamente indicado em *"Ativo"*.
 
 Neste caso, é obrigatória uma purga para eliminar os SPAM que aguardam envio.
 
 - **Caso n°3: Envio de e-mails legítimos considerados como SPAM** :
 
-Se é o responsável pelos e-mails que causaram o bloqueio, encontrará abaixo alguns exemplos de**usos a evitar** aquando do envio de um e-mail (para que não seja considerado demasiado "facilmente" como SPAM):
+Se é o responsável pelos e-mails que causaram o bloqueio, encontrará abaixo alguns exemplos de **usos a evitar** aquando do envio de um e-mail (para que não seja considerado demasiado "facilmente" como SPAM):
 
 - 3 palavras ou mais em maiúsculas no assumpto/objeto do e-mail.
 - Não há assumpto/texto indicado no e-mail.

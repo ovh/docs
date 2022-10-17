@@ -50,8 +50,8 @@ Auf der angezeigten Seite können Sie die von Ihrem [OVHcloud Webhosting](https:
 Auf der Seite werden mehrere Informationen angezeigt, die es Ihnen ermöglichen, die Aktivität des von Ihren Skripten generierten automatischen E-Mail-Versands nachzuverfolgen:
 
 - **Stand der Dienstleistung**: aktueller Status des Dienstes, der den automatischen Versand von E-Mails von Ihrem Webhosting aus durchführt:
-    - Wenn grün (*"Aktiviert"* oder *"Kraft"*), bedeutet dies, dass die Sendungen betriebsbereit sind. 
-    - Wenn rot (*"deaktiviert"*, *"Bounce"* oder *"SPAM"*) ist, werden die E-Mails nicht mehr versendet. <br>
+    - Wenn grün (*"Aktiv"* oder *"Force"*), bedeutet dies, dass die Sendungen betriebsbereit sind. 
+    - Wenn rot (*"Inaktiv"*, *"Bounce"* oder *"SPAM"*) ist, werden die E-Mails nicht mehr versendet. <br>
 
     Je nach Status unterscheidet sich die Verwaltung der Sendungen.
 
@@ -74,7 +74,7 @@ Um die gewünschte Aktion durchzuführen klicken Sie auf den `entsprechenden`{.a
 > Wir empfehlen Ihnen dringend, ein Sicherheitssystem wie ein "Captcha" in den Formularen Ihrer Webseite einzurichten, die E-Mails versenden (z. B. ein Kontaktformular), um eine unerwünschte Nutzung der automatisierten E-Mails Ihres Webhostings zu vermeiden.
 >
 
-Wenn Sie feststellen, dass die von Ihren Skripten generierten E-Mails nicht mehr versendet werden, obwohl der Status des Dienstes weiterhin den Versand erlaubt (*"Aktiviert"* oder *"Kraft"*), empfehlen wir Ihnen:
+Wenn Sie feststellen, dass die von Ihren Skripten generierten E-Mails nicht mehr versendet werden, obwohl der Status des Dienstes weiterhin den Versand erlaubt (*"Aktiv"* oder *"Force"*), empfehlen wir Ihnen:
 
 - **Versandskripte überprüfen**: Skripte können aufgrund eines Syntachfehler den Versand von E-Mails nicht erfolgreich abschließen. Überprüfen Sie den Inhalt Ihrer Skripte, korrigieren Sie diese bei Bedarf und führen Sie anschließend einen weiteren Versuch durch.
 
@@ -102,9 +102,9 @@ Wenn Sie die E-Mail *The email has been sent successfully!* an die E-Mail-Adress
 
 - **Überprüfen Sie die Gesamtgröße Ihrer E-Mail**: Die geprüfte E-Mail darf die Gesamtgröße von **10 MB** (Verkapselung und Header inklusive) nicht überschreiten. Der Inhalt Ihrer E-Mail sollte daher nicht größer sein als **7/8 MB**.
 
-### Die Zustände "Deaktiviert", "Bounce" und "SPAM" verwalten
+### Die Zustände "Inaktiv", "Bounce" und "SPAM" verwalten
 
-#### Der Zustand "deaktiviert"
+#### Der Zustand "Inaktiv"
 
 Dieser Zustand tritt ein, wenn :
 
@@ -124,7 +124,7 @@ Gehen Sie zum Entsperren in den Bereich `Web Cloud`{.action}, klicken Sie auf `H
 
 Es sind zwei Optionen möglich:
 
-- Wenn Sie auf `Entsperren der Sendung`{.action} klicken, wird der Status der Dienstleistung auf *"Kraft"* geändert. Das Verhältnis **E-Mails, die im Fehlerstatus zurückgegeben wurden, / Gesamtzahl der vor einer Sperrung autorisierten versandten E-Mails** wird verdoppelt. Der Versand wird einige Minuten nach der Entsperrung wieder betriebsbereit sein.
+- Wenn Sie auf `Entsperren der Sendung`{.action} klicken, wird der Status der Dienstleistung auf *"Force"* geändert. Das Verhältnis **E-Mails, die im Fehlerstatus zurückgegeben wurden, / Gesamtzahl der vor einer Sperrung autorisierten versandten E-Mails** wird verdoppelt. Der Versand wird einige Minuten nach der Entsperrung wieder betriebsbereit sein.
 - Wenn Sie auf `E-Mails bereinigen`{.action} klicken, werden alle E-Mails in der Warteschleife gelöscht, und der Status des Dienstes wird wieder auf *"aktiviert"* verschoben, ohne dass sich das Verhältnis verdoppelt.
 
 #### Der Zustand "SPAM"
@@ -143,7 +143,7 @@ Um diesen Zustand zu beheben, müssen Sie alle Skripte, die über die Möglichke
 
 Gehen Sie dann in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Plus`{.action} und dann auf die `E-Mail-Skripte`{.action}.
 
-Klicken Sie dann auf `E-Mails löschen`{.action}, dann werden alle E-Mails in der Warteschleife gelöscht, und der Status des Dienstes wird erneut auf *"Aktiviert"* geändert.
+Klicken Sie dann auf `E-Mails löschen`{.action}, dann werden alle E-Mails in der Warteschleife gelöscht, und der Status des Dienstes wird erneut auf *"Aktiv"* geändert.
 
 In diesem Fall ist ein Löschen erforderlich, um SPAM-Meldungen, die noch nicht versandt werden, zu löschen.
 
@@ -161,7 +161,7 @@ Aktualisieren Sie das CMS, die dazugehörigen Plugins und Themes so regelmäßig
 
 Gehen Sie nach der Sicherung Ihres Hostings in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Plus`{.action} und dann auf die `E-Mail-Skripte`{.action}.
 
-Klicken Sie dann auf `E-Mails löschen`{.action}, dann werden alle E-Mails in der Warteschleife gelöscht, und der Status des Dienstes wird erneut auf *"Aktiviert"* geändert.
+Klicken Sie dann auf `E-Mails löschen`{.action}, dann werden alle E-Mails in der Warteschleife gelöscht, und der Status des Dienstes wird erneut auf *"Aktiv"* geändert.
 
 In diesem Fall ist ein Löschen erforderlich, um SPAM-Meldungen, die noch nicht versandt werden, zu löschen.
 

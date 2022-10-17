@@ -50,8 +50,8 @@ Wyświetli się strona, na której możesz monitorować i zarządzać automatycz
 Na stronie wyświetla się kilka informacji umożliwiających wyświetlenie aktywności wysyłanych z skryptów automatycznych wiadomości e-mail:
 
 - **Status usługi**: aktualny stan usługi realizującej wysyłkę automatycznych wiadomości e-mail z Twojego hostingu:
-    - Jeśli jest zielony (*"Aktywowany"* lub *"Siła"*), oznacza to, że wysyłka jest operacyjna. 
-    - Jeśli jest czerwony (*"Wyłączone"*, *"Bounce"* lub *"SPAM"*), przesyłki nie są wysyłane. <br>
+    - Jeśli jest zielony (*"Aktywny"* lub *"Force"*), oznacza to, że wysyłka jest operacyjna. 
+    - Jeśli jest czerwony (*"Nieaktywny"*, *"Bounce"* lub *"SPAM"*), przesyłki nie są wysyłane. <br>
 
     W zależności od statusu, zarządzanie wysyłką będzie inne.
 
@@ -74,7 +74,7 @@ Aby wykonać wybraną operację, kliknij odpowiedni przycisk, po czym kliknij `Z
 > Aby uniknąć niepożądanego użycia automatycznych wiadomości e-mail z Twojego hostingu, zalecamy wdrożenie systemu bezpieczeństwa, takiego jak "captcha" w formularzach na Twojej stronie WWW, które przesyłają wiadomości (np. formularz kontaktowy).
 >
 
-Jeśli Twoje e-maile nie są wysyłane za pomocą skryptów, podczas gdy status usługi pozwala na wysyłkę (*"Aktywny"* lub *"Siła"*), zalecamy, aby:
+Jeśli Twoje e-maile nie są wysyłane za pomocą skryptów, podczas gdy status usługi pozwala na wysyłkę (*"Aktywny"* lub *"Force"*), zalecamy, aby:
 
 - **sprawdź skrypty do wysyłki**: skrypty mogą nie wysyłać e-maili z powodu błędu składni. Sprawdź zawartość skryptów, w razie potrzeby ich poprawiaj, a następnie spróbuj ponownie.
 
@@ -102,9 +102,9 @@ Jeśli otrzymasz wiadomość *The e-mail has been sent successfully!* na adres e
 
 - **Sprawdź całkowity rozmiar wiadomości e-mail**: Wysłany e-mail nie może przekraczać całkowitego rozmiaru **10 MB** (w tym kapsułka i nagłówek). Treść Twojej wiadomości e-mail nie powinna zatem przekraczać **7/8 MB**.
 
-### Zarządzaj statusami "Wyłączone", "Bounce" i "SPAM"
+### Zarządzaj statusami "Nieaktywny", "Bounce" i "SPAM"
 
-### Stan "Wyłączone"
+### Stan "Nieaktywny"
 
 Stan ten występuje, gdy:
 
