@@ -167,7 +167,7 @@ W tym przypadku obowiązkowe jest czyszczenie SPAM oczekujących na wysyłkę.
 
 - **Przypadek nr 3: Wysyłka prawidłowych wiadomości e-mail uznanych za SPAM**:
 
-Poniżej znajdziesz kilka przykładów użycia**sposobów, których należy unikać** podczas wysyłania wiadomości e-mail (aby nie był on uważany za zbyt "łatwy" jako SPAM):
+Poniżej znajdziesz kilka przykładów użycia **sposobów, których należy unikać** podczas wysyłania wiadomości e-mail (aby nie był on uważany za zbyt "łatwy" jako SPAM):
 
 - 3 lub więcej wielkich liter w temacie/obiekcie wiadomości.
 - Brak tematu/tekstu wpisanego w e-mailu.
