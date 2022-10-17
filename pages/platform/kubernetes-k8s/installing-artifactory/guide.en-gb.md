@@ -128,7 +128,10 @@ $ helm upgrade --install artifactory \
 Output should be like this:
 
 <pre class="console">
-<code>$ helm upgrade --install artifactory --set artifactory.masterKey=${MASTER_KEY} --set artifactory.joinKey=${JOIN_KEY} --namespace artifactory jfrog/artifactory
+<code>$ helm upgrade --install artifactory \
+--set artifactory.masterKey=${MASTER_KEY} \
+--set artifactory.joinKey=${JOIN_KEY} \
+--namespace artifactory jfrog/artifactory
 
 Release "artifactory" does not exist. Installing it now.
 NAME: artifactory
