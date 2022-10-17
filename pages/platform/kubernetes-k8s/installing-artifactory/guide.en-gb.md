@@ -31,7 +31,7 @@ section: Tutorials
 
 ## Objective
 
-Jfrog Artifactory is one of the major solution to manage dependencies and packaged binaries. All this kind of objects are called _artefacts_.
+[Jfrog Artifactory](https://jfrog.com/fr/artifactory/) is one of the major solution to manage dependencies and packaged binaries. All this kind of objects are called _artefacts_.
 
 ## Requirements 
 
