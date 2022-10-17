@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Auf Public Cloud Archive gespeicherte Daten freigeben
+title: Cloud Archive Swift - Auf Public Cloud Archive gespeicherte Daten freigeben
 slug: pca/unlock
 excerpt: Erfahren Sie hier, wie Sie Ihre Archive freigeben
 section: OpenStack Swift Archive Storage Class Specifics

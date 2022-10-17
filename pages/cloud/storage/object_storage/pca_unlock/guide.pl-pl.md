@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Odblokuj dane przechowywane w systemie Public Cloud Archive
+title: Cloud Archive Swift - Odblokuj dane przechowywane w systemie Public Cloud Archive
 slug: pca/unlock
 excerpt: Sprawdź, jak odblokować archiwa
 section: OpenStack Swift Archive Storage Class Specifics

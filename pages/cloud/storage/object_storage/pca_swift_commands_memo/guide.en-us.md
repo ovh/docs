@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Swift Command Memo
+title: Cloud Archive Swift - Swift Command Memo
 slug: pca/swift-commands-memo
 excerpt: Find here the main swift commands to manage your Public Cloud Archive object containers
 section: OpenStack Swift Archive Storage Class Specifics

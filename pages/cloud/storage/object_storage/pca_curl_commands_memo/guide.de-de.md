@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Curl Command Memo (EN)
+title: Cloud Archive Swift - Curl Command Memo (EN)
 slug: pca/curl-commands-memo
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/pca/curl-commands-memo/'
