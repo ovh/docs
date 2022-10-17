@@ -188,7 +188,7 @@ Open the service URL in a browser and enter the default credentials `admin` and 
 >
 > Do not forget to change the default password!
 
-And that's it, you can start using your Jfrog Artifactory instance:
+And that's it, you can start using your JFrog Artifactory instance:
 
 ![Artifactory welcome page](images/artifactory-welcome-page.png){.thumbnail}
 
