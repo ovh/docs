@@ -116,7 +116,10 @@ $ kubectl create ns artifactory
 Next, you can install Jfrog Artifactory with the following helm command:
 
 ```bash
-$ helm upgrade --install artifactory --set artifactory.masterKey=${MASTER_KEY} --set artifactory.joinKey=${JOIN_KEY} --namespace artifactory jfrog/artifactory
+$ helm upgrade --install artifactory \
+--set artifactory.masterKey=${MASTER_KEY} \
+--set artifactory.joinKey=${JOIN_KEY} \
+--namespace artifactory jfrog/artifactory
 ```
 Output should be like this:
 
