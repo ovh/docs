@@ -69,7 +69,7 @@ Update Complete. ⎈Happy Helming!⎈</code>
 
 ### Configure the master key and the join key
 
-At this stage, it's highly recommended that you configure your master key and join key, more information on these keys in the official [documentation](https://www.jfrog.com/confluence/display/JFROG/Managing+Keys).
+At this point, it is strongly recommended to configure your master key and your join key, more information on these keys in the official [documentation](https://www.jfrog.com/confluence/display/JFROG/Managing+Keys).
 
 In a terminal, configure the master key as follows:
 
