@@ -5,7 +5,7 @@ slug: optimiser-envoi-emails
 section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 26/09/2022**
+**Dernière mise à jour le 17/10/2022**
 
 ## Objectif
 
@@ -26,7 +26,7 @@ Les politiques anti-spam sont de plus en plus strictes. Afin de fluidifier vos e
 
 ## En pratique
 
-### Configurer le champ SPF
+### Configurer le champ SPF <a name="spfrecord"></a>
 
 Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public Cloud ou Hosted Private Cloud), le champ SPF optimal se présente sous la forme :  `v=spf1 ip4:ipv4_du_serveur ~all`.
 
@@ -95,6 +95,8 @@ Microsoft utilise une politique de liste blanche. Cela signifie qu'initialement 
 
 Avant de commencer la procédure de whitelist de votre IP, assurez-vous d'avoir bien configuré un [reverse](#reverseip) sur votre IP (et non pas le reverse par défaut d'OVHcloud).
 
+Microsoft vérifie également le champ SPF, il est donc recommandé de configuré également un [champ SPF](#spfrecord).
+
 Vous devez ensuite signer les contrats SNDS (Smart Network Data Services) et JMRP (Junk Mail Reporting Partner Program).
 
 Pour souscrire gratuitement au programme, il suffit de créer un compte JMRP/SNDS à l'adresse suivante :
@@ -115,6 +117,8 @@ Une fois les informations renseignées, cliquez sur `Begin Setup` pour transmett
 Confirmez les informations et la souscription à JMRP/SNDS sera terminée.
 
 Une fois ces actions effectuées, si votre IP apparaît comme bloquée, vous pourrez alors demander à la débloquer via la [procédure junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). La procédure prend généralement 48 heures.
+
+Dans certains cas, Microsoft peut vous demander la date de la première facturation de votre IP/serveur. Dans ce cas, vous pouvez leur envoyer une copie de votre facture et ajouter votre IP/serveur (ex : host nsXXX) dans votre réponse.
 
 Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) auprès de Microsoft.
 
