@@ -10,16 +10,15 @@ order: 08
 
 ## Objectif
 
-Ce guide vous présente les différentes étapes de la migration d'un site internet, d'une ou plusieurs bases de données et de vos adresses e-mail depuis n'importe quelle plateforme chez OVHcloud. La procédure de migration peut différer si vous souhaitez migrer ces derniers sans interruption.
+Ce guide vous présente les différentes actions à réaliser pour migrer l'ensemble de votre site web, votre domaine et vos bases de données chez OVHcloud.
 
 **Découvrez comment migrer votre site internet et vos e-mails vers OVHcloud sans interruption de service.**
 
 ## Prérequis
 
 - Gérer le nom de domaine concerné.
-- Accéder aux fichiers de votre site chez votre hébergeur actuel.
-- Accéder à la base de données de votre site, le cas échéant.
-- Posséder les informations (utilisateur, mot de passe, serveurs) permettant de se connecter aux adresses e-mail actuelles.
+- Accéder aux fichiers et à la base de données de votre site web chez votre hébergeur actuel.
+- Disposer des identifiants (utilisateur, mot de passe, serveurs) de vos adresses e-mail actuelles.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
