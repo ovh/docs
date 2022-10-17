@@ -46,7 +46,7 @@ section: Tutorials
 
 ### Configure Helm to use the Jfrog Helm chart
 
-In a terminal add the Jfrog Helm repository to your Helm installation:
+In a terminal add the JFrog Helm repository to your Helm installation:
 
 ```bash
 $ helm repo add jfrog https://charts.jfrog.io
