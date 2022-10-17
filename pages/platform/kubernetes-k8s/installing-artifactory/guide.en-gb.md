@@ -149,7 +149,7 @@ Congratulations. You have just deployed JFrog Artifactory!
 Next, wait until the status of all Pods status are `Running` and _ready_ (i.e the number of Pods desired equals to the actual number in the `Ready` column):
 
 ```bash
-$ kubectl get pods -n artifactory
+$ kubectl get pods -n artifactory -w
 ```
 
 Output should be like this:
