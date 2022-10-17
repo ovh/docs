@@ -56,8 +56,7 @@ $ helm repo update
 Output should be like this:
 
 <pre class="console">
-<code>
-$ helm repo add jfrog https://charts.jfrog.io
+<code>$ helm repo add jfrog https://charts.jfrog.io
 "jfrog" has been added to your repositories
 
 $ helm repo update
@@ -84,8 +83,7 @@ $ echo ${MASTER_KEY}
 Output should be like this:
 
 <pre class="console">
-<code>
-$ export MASTER_KEY=$(openssl rand -hex 32)
+<code>$ export MASTER_KEY=$(openssl rand -hex 32)
 
 $ echo ${MASTER_KEY}
 xxxxxxxxfffffffffffffxxxxxxxxxxxxxxxxxxxxxgggggggggggggxxxxxxxxxx
@@ -103,8 +101,7 @@ $ echo ${JOIN_KEY}
 Output should be like this:
 
 <pre class="console">
-<code>
-$ export JOIN_KEY=$(openssl rand -hex 32)
+<code>$ export JOIN_KEY=$(openssl rand -hex 32)
 
 $ echo ${JOIN_KEY}
 xxxxxxxxyyyyyyyyyyyyyxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyxxxxxxxxxx
@@ -127,8 +124,7 @@ $ helm upgrade --install artifactory --set artifactory.masterKey=${MASTER_KEY} -
 Output should be like this:
 
 <pre class="console">
-<code>
-$ helm upgrade --install artifactory --set artifactory.masterKey=${MASTER_KEY} --set artifactory.joinKey=${JOIN_KEY} --namespace artifactory jfrog/artifactory
+<code>$ helm upgrade --install artifactory --set artifactory.masterKey=${MASTER_KEY} --set artifactory.joinKey=${JOIN_KEY} --namespace artifactory jfrog/artifactory
 
 Release "artifactory" does not exist. Installing it now.
 NAME: artifactory
@@ -163,8 +159,7 @@ $ kubectl get pods -n artifactory
 Output should be like this:
 
 <pre class="console">
-<code>
-$ kubectl get pods -n artifactory
+<code>$ kubectl get pods -n artifactory
 NAME                                             READY   STATUS    RESTARTS   AGE
 artifactory-0                                    1/1     Running   0          8m11s
 artifactory-artifactory-nginx-7c556cb56b-x5wvm   1/1     Running   0          8m11s
@@ -201,8 +196,7 @@ $ helm uninstall artifactory -n artifactory
 Output should be like this:
 
 <pre class="console">
-<code>
-$ helm uninstall artifactory -n artifactory
+<code>$ helm uninstall artifactory -n artifactory
 
 release "artifactory" uninstalled
 </code>
