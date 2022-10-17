@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Zarzadzaj swoimi archiwami za pomoca interfejsu Swift (Cyberduck)
+title: Cloud Archive Swift - Zarzadzaj swoimi archiwami za pomoca interfejsu Swift (Cyberduck)
 slug: pca/cyberduck
 excerpt: Przewodnik ten pokazuje, jak zarzadzac usuga Public Cloud Archive.
 section: OpenStack Swift Archive Storage Class Specifics

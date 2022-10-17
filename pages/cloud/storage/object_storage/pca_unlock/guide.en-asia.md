@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Unfreezing your data stored in the Public Cloud Archive
+title: Cloud Archive Swift - Unfreezing your data stored in the Public Cloud Archive
 slug: pca/unlock
 excerpt: Find out how to unfreeze your archives
 section: OpenStack Swift Archive Storage Class Specifics

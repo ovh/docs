@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Set up an Access Control List on Public Cloud Archive (EN)
+title: Cloud Archive Swift - Set up an Access Control List on Public Cloud Archive (EN)
 slug: pca/acl
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/pcs/acl'

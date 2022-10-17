@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Capacités et limitations
+title: Cloud Archive Swift - Capacités et limitations
 slug: pca/capabilities-and-limitations
 routes:
     canonical: 'https://docs.ovh.com/fr/storage/pcs/capabilities-and-limitations/'

@@ -1,5 +1,5 @@
 ---
-title: Object Storage Swift - Rendi disponibili i tuoi dati salvati su Public Cloud Archive
+title: Cloud Archive Swift - Rendi disponibili i tuoi dati salvati su Public Cloud Archive
 slug: pca/unlock
 excerpt: Come sbloccare i tuoi archivi
 section: OpenStack Swift Archive Storage Class Specifics
