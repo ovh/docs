@@ -117,7 +117,7 @@ First, you need to create the `artifactory` namespace:
 $ kubectl create ns artifactory
 ```
 
-Next, you can install Jfrog Artifactory with the following helm command:
+Next, you can install JFrog Artifactory with the following Helm command:
 
 ```bash
 $ helm upgrade --install artifactory \
