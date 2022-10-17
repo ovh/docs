@@ -16,7 +16,7 @@ Vous pouvez utiliser l'authentification SSO **unique** (*Single Sign-On*) pour v
 
 ## Prérequis
 
-- Les services ADFS (Active Directory Federation Services) doivent s'exécutent sur votre serveur
+- Les services ADFS (Active Directory Federation Services) doivent s'exécuter sur votre serveur
 - Disposer d'un [compte OVHcloud](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
