@@ -109,7 +109,7 @@ xxxxxxxxyyyyyyyyyyyyyxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyxxxxxxxxxx
 
 > The two warning messages are not important and have no impact.
 
-### Install Jfrog Artifactory with Helm
+### Install JFrog Artifactory with Helm
 
 First, you need to create the `artifactory` namespace:
 
