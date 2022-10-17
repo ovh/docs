@@ -27,7 +27,7 @@ section: Getting started
  }
 </style>
 
-**Last updated 28th March 2022**
+**Last updated 17th October 2022**
 
 ## Before you begin
 
@@ -35,7 +35,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 > [!warning]
-> When a __PersistentVolume__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it.
+> When a __PersistentVolume__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it, with a lifespan depending on the parent cluster's lifespan.
 > This volume is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/en-ca/public-cloud/prices/#storage)
 
 ## PersistentVolumes
@@ -70,7 +70,7 @@ When you need a PersistentVolume, you create a PersistentVolumeClaim, and choose
 
 We currently support several Storage Classes on OVHcloud Managed Kubernetes:
 
-- `csi-cinder-classic` 
+- `csi-cinder-classic`
 - `csi-cinder-high-speed`
 
 You can display them with the `kubectl get storageclass` command:
