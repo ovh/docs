@@ -107,7 +107,7 @@ $ echo ${JOIN_KEY}
 xxxxxxxxyyyyyyyyyyyyyxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyxxxxxxxxxx
 </code></pre>
 
-> The two warning messages are not important.
+> The two warning messages are not important and have no impact.
 
 ### Install Jfrog Artifactory with Helm
 
