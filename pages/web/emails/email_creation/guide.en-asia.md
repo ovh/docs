@@ -107,15 +107,15 @@ If you just need the information required to configure your email address, the s
 >>
 >> |Server type|Server name|Port (with SSL)|Port (without SSL)|
 >> |---|---|---|---|
->> |Incoming|SSL0.OVH.NET|993|143|
->> |Outgoing|SSL0.OVH.NET|465|587|
+>> |Incoming|imap.mail.ovh.ca|993|143|
+>> |Outgoing|smtp.mail.ovh.ca|465|587|
 >>
 > **For POP configuration**
 >>
 >> |Server type|Server name|Port (with SSL)|Port (without SSL)|
 >> |---|---|---|---|
->> |Incoming|SSL0.OVH.NET|995|110|
->> |Outgoing|SSL0.OVH.NET|465|587|
+>> |Incoming|pop.mail.ovh.ca|995|110|
+>> |Outgoing|smtp.mail.ovh.ca|465|587|
 >>
 
 > [!warning]

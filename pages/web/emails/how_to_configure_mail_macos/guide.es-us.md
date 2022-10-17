@@ -42,7 +42,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 |---|---|
 |![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Seleccione `Otra cuenta de correo`{.action} y haga clic en `Cuentas de correo`{.action}.|
 |Introduzca en la ventana "**Añadir cuenta de correo**" la siguiente información: <br>- el **nombre** de su cuenta de correo <br>- Su **dirección de correo electrónico** <br>- La **contraseña** de su dirección de correo electrónico |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
-|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Introduzca la información en la siguiente ventana: <br>- Deje su **dirección de correo electrónico** ya introducida <br>- Introduzca su dirección de correo electrónico completa en el **Nombre de usuario** <br>- Deje su **contraseña** ya introducida <br>\- Seleccione `POP` o `IMAP` (recomendado) en **Tipo de cuenta**<br>- Introduzca `ssl0.ovh.net` en el **servidor de recepción** <br>- Introduzca también `ssl0.ovh.net` en el **servidor de envío**<br><br>Para finalizar la configuración, haga clic en `Conectar`{.action}|
+|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Introduzca la información en la siguiente ventana: <br>- Deje su **dirección de correo electrónico** ya introducida <br>- Introduzca su dirección de correo electrónico completa en el **Nombre de usuario** <br>- Deje su **contraseña** ya introducida <br>\- Seleccione `POP` o `IMAP` (recomendado) en **Tipo de cuenta**<br>- Introduzca `imap.mail.ovh.ca` en el **servidor de recepción** <br>- Introduzca también `smtp.mail.ovh.ca` en el **servidor de envío**<br><br>Para finalizar la configuración, haga clic en `Conectar`{.action}|
 
 ### Utilizar la dirección de correo
 
@@ -69,15 +69,15 @@ En una configuración de **IMAP**, los valores son los siguientes:
 
 |Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
 |---|---|---|---|
-|Entrada (IMAP)|ssl0.ovh.net|SSL/TLS|993|
-|Saliente(SMTP)|ssl0.ovh.net|SSL/TLS|465|
+|Entrada (IMAP)|imap.mail.ovh.ca|SSL/TLS|993|
+|Saliente(SMTP)|smtp.mail.ovh.ca|SSL/TLS|465|
 
 En una configuración en **POP**, los valores son los siguientes:
 
 |Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
 |---|---|---|---|
-|Entrant(POP)|ssl0.ovh.net|SSL/TLS|995|
-|Saliente(SMTP)|ssl0.ovh.net|SSL/TLS|465|
+|Entrada (POP)|pop.mail.ovh.ca|SSL/TLS|995|
+|Saliente(SMTP)|smtp.mail.ovh.ca|SSL/TLS|465|
 
 > [!primary]
 >
