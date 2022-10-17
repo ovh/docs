@@ -199,7 +199,7 @@ After completing the configuration steps (see official [documentation](https://w
 
 ![Artifactory Maven repositories](images/artifactory-maven-repositories.png){.thumbnail}
 
-### Uninstall Jfrog Artifactory
+### Uninstall JFrog Artifactory
 
 Like the other steps, the uninstallation is done with Helm command:
 
