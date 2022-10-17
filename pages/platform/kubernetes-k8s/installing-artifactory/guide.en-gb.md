@@ -195,7 +195,7 @@ And that's it, you can start using your JFrog Artifactory instance:
 
 ![Artifactory welcome page](images/artifactory-welcome-page.png){.thumbnail}
 
-After completing the configuration steps (see official [documentation](https://www.jfrog.com/confluence/display/JFROG/Repository+Management)), your Jfrog Artifactory is ready to use:
+After completing the configuration steps (see official [documentation](https://www.jfrog.com/confluence/display/JFROG/Repository+Management)), your JFrog Artifactory is ready to use:
 
 ![Artifactory Maven repositories](images/artifactory-maven-repositories.png){.thumbnail}
 
