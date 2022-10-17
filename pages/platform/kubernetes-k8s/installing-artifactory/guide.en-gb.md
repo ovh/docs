@@ -172,7 +172,7 @@ artifactory-artifactory-nginx-7c556cb56b-x5wvm   1/1     Running   0          8m
 artifactory-postgresql-0                         1/1     Running   0          8m11s
 </code></pre>
 
-### Test the fresh installed Jfrog artifactory
+### Test the fresh installed JFrog artifactory
 
 Get the URL of the administration console:
 
