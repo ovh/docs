@@ -83,6 +83,7 @@ Output should be like this:
 
 <pre class="console">
 <code>$ export MASTER_KEY=$(openssl rand -hex 32)
+WARNING: can't open config file: /usr/local/etc/openssl/openssl.cnf
 
 $ echo ${MASTER_KEY}
 xxxxxxxxfffffffffffffxxxxxxxxxxxxxxxxxxxxxgggggggggggggxxxxxxxxxx
@@ -100,10 +101,15 @@ Output should be like this:
 
 <pre class="console">
 <code>$ export JOIN_KEY=$(openssl rand -hex 32)
+WARNING: can't open config file: /usr/local/etc/openssl/openssl.cnf
 
 $ echo ${JOIN_KEY}
 xxxxxxxxyyyyyyyyyyyyyxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyxxxxxxxxxx
 </code></pre>
+
+> [!info]
+>
+> The two warning messages are not important.
 
 ### Install Jfrog Artifactory with Helm
 
