@@ -95,7 +95,7 @@ Microsoft utilise une politique de liste blanche. Cela signifie qu'initialement 
 
 Avant de commencer la procédure de whitelist de votre IP, assurez-vous d'avoir bien configuré un [reverse](#reverseip) sur votre IP (et non pas le reverse par défaut d'OVHcloud).
 
-Microsoft vérifie également le champ SPF, il est donc recommandé de configuré également un [champ SPF](#spfrecord).
+Microsoft vérifie également le champ SPF, il est donc recommandé d'en [configurer un également](#spfrecord).
 
 Vous devez ensuite signer les contrats SNDS (Smart Network Data Services) et JMRP (Junk Mail Reporting Partner Program).
 
@@ -118,7 +118,7 @@ Confirmez les informations et la souscription à JMRP/SNDS sera terminée.
 
 Une fois ces actions effectuées, si votre IP apparaît comme bloquée, vous pourrez alors demander à la débloquer via la [procédure junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). La procédure prend généralement 48 heures.
 
-Dans certains cas, Microsoft peut vous demander la date de la première facturation de votre IP/serveur. Dans ce cas, vous pouvez leur envoyer une copie de votre facture et ajouter votre IP/serveur (ex : host nsXXX) dans votre réponse.
+Microsoft peut parfois vous demander la date de la première facturation de votre IP/serveur. Dans ce cas de figure, envoyez à Microsoft une copie de votre facture et mentionnez votre IP/serveur (ex : host nsXXX) dans votre réponse.
 
 Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) auprès de Microsoft.
 
