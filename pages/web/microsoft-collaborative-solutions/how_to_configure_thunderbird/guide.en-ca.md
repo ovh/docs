@@ -32,7 +32,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 > [!primary]
 >
-> In this guide, we use as the hostname: ex**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we use as the hostname: ex**?**.mail.ovh.ca. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
 > You can find this information in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action}. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
@@ -46,8 +46,8 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 | | |
 |---|---|
 |![Thunderbird](images/thunderbird-win-exchange01.png){.thumbnail}|In the window that appears, enter the following information: <br>\- Your display name<br>\- Email <br>\- Password|
-|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>- Server **ex?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentication **Normal password** <br>- Username **Full email address**|![Thunderbird](images/thunderbird-win-exchange02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-exchange03.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>- Server **ex?.mail.ovh.net** (replace “**?**” with your server number)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentication **Normal password** <br>- Username **Full email address**<br><br>To complete the configuration, click `Done`{.action}|
+|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>- Server **ex?.mail.ovh.ca** (replace “**?**” with your server number)<br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentication **Normal password** <br>- Username **Full email address**|![Thunderbird](images/thunderbird-win-exchange02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-exchange03.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>- Server **ex?.mail.ovh.ca** (replace “**?**” with your server number)<br>- Port **587** <br>- SSL **STARTTLS** <br>- Authentication **Normal password** <br>- Username **Full email address**<br><br>To complete the configuration, click `Done`{.action}|
 
 
 
@@ -55,8 +55,8 @@ For **POP** configuration, the values are:
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|
-|Incoming|ex**?**.mail.ovh.net (replace "?" with your server number)|SSL/TLS|995|
-|Outgoing|ex**?**.mail.ovh.net (replace "?" with your server number)|STARTTLS|587|
+|Incoming|ex**?**.mail.ovh.ca (replace "?" with your server number)|SSL/TLS|995|
+|Outgoing|ex**?**.mail.ovh.ca (replace "?" with your server number)|STARTTLS|587|
 
 ### Using your email address
 
@@ -72,7 +72,7 @@ If you need to make a change that could lead to the loss of your email account d
 
 > [!primary]
 >
-> In this guide, we use as the hostname: ex**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we use as the hostname: ex**?**.mail.ovh.ca. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
 > You can find this information in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action}. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
