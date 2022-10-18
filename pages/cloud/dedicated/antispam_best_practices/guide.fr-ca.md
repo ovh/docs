@@ -148,7 +148,7 @@ Donc :
 
 ```bash
 - L’IP est bloquée pendant 1 heure (ou 3600 secondes).
-- L’IP à été bloquée le 29/08/2022 à 17:42.
+- L’IP a été bloquée le 29/08/2022 à 17:42.
 - Son état actuel est bloqué.
 ```
 
