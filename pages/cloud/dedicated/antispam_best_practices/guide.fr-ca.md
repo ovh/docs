@@ -99,15 +99,15 @@ Récupérez tout d'abord la liste des IPs de chaque service OVHcloud (Hosted Pri
 
 Voici un exemple de résultat :
 
->
-    "2001:41d0:67:d200::/56",
-    "2001:41d0:68:a00::/56",
-    "2001:41d0:68:f000::/56",
-    "2001:41d0:117:db00::/56",
-    "122.122.122.121/28",
-    "145.56.222.96/28",
-    "188.81.49.30/28",
->
+```bash
+"2001:41d0:67:d200::/56",
+"2001:41d0:68:a00::/56",
+"2001:41d0:68:f000::/56",
+"2001:41d0:117:db00::/56",
+"122.122.122.121/28",
+"145.56.222.96/28",
+"188.81.49.30/28",
+```
 
 Recherchez ensuite les IPs dans un état particulier grâce à l'appel suivant. Si vous connaissez déjà l'adresse IP bloquée, vous pouvez passer à l'[étape suivante](#unblockip) :
 
@@ -121,9 +121,9 @@ Recherchez ensuite les IPs dans un état particulier grâce à l'appel suivant. 
 
 Voici un exemple de résultat (dans ce cas, le bloc 122.122.122.121/28 a été sélectionné) :
 
->
-    "122.122.122.122" 
->
+```bash
+"122.122.122.122" 
+```
 
 Vous pouvez obtenir des informations sur le blocage avec l'appel suivant, sinon passez à l'[étape suivante](#unblockip).
 
@@ -137,20 +137,20 @@ Vous pouvez obtenir des informations sur le blocage avec l'appel suivant, sinon 
 
 Voici un exemple de résultat (dans ce cas, le bloc 122.122.122.121/28 et l'IP 122.122.122.122 ont été sélectionnés) :
 
->
-    time: 3600,
-    date: "2022-08-29T17:42:50+01:00",
-    ipSpamming: "122.122.122.122",
-    state: "blockedForSpam" 
->
+```bash
+time: 3600,
+date: "2022-08-29T17:42:50+01:00",
+ipSpamming: "122.122.122.122",
+state: "blockedForSpam" 
+```
 
 Donc :
 
->  
-    * L'IP est bloquée pendant 1 heure (ou 3600 secondes).
-    * L'IP à été bloquée le 29/08/2022 à 17:42.
-    * Son état actuel est bloqué. 
->
+```bash
+- L’IP est bloquée pendant 1 heure (ou 3600 secondes).
+- L’IP à été bloquée le 29/08/2022 à 17:42.
+- Son état actuel est bloqué.
+```
 
 Si vous souhaitez obtenir les statistiques sur ce qui a été détecté, utilisez l'appel api suivant, sinon passez à l'[étape suivante](#unblockip).
 
@@ -165,14 +165,14 @@ Si vous souhaitez obtenir les statistiques sur ce qui a été détecté, utilise
 
 Voici un exemple de résultat :
 
->
-    {
-    "messageId": "2PXQSX-3JRAUU-SF@obfuscated.com",
-    "destinationIp": "188.95.235.33",
-    "date": 1385640992,
-    "spamscore": 410
-    }
->
+```bash
+{
+"messageId": "2PXQSX-3JRAUU-SF@obfuscated.com",
+"destinationIp": "188.95.235.33",
+"date": 1385640992,
+"spamscore": 410
+}
+```
 
 ##### **Débloquer l'IP** <a name="unblockip"></a>
 
@@ -193,18 +193,18 @@ Pour débloquer votre adresse IP, utilisez l'appel suivant :
 
 Voici un exemple de résultat :
 
->
-    "message": "This IP address is still blocked for 129 seconds"
->
+```bash
+"message": "This IP address is still blocked for 129 seconds"
+```
 
 Et un résultat un peu plus de 129 secondes plus tard :
 
->
-    time: 3600,
-    date : "2022-08-29T17:42:50+01:00",
-    ipSpamming : "122.122.122.122",
-    state : "unblocking" 
->
+```bash
+time: 3600,
+date : "2022-08-29T17:42:50+01:00",
+ipSpamming : "122.122.122.122",
+state : "unblocking" 
+```
 
 L'adresse IP est alors en cours de déblocage, l'opération peut prendre plusieurs minutes.
 

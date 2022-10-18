@@ -99,15 +99,15 @@ First, retrieve the list of IPs for each OVHcloud service (Dedicated Server/Host
 
 Here's an example of what you should see:
 
->
-    "2001:41d0:67:d200::/56",
-    "2001:41d0:68:a00::/56",
-    "2001:41d0:68:f000::/56",
-    "2001:41d0:117:db00::/56",
-    "122.122.122.121/28",
-    "145.56.222.96/28",
-    "188.81.49.30/28",
->
+```bash
+"2001:41d0:67:d200::/56",
+"2001:41d0:68:a00::/56",
+"2001:41d0:68:f000::/56",
+"2001:41d0:117:db00::/56",
+"122.122.122.121/28",
+"145.56.222.96/28",
+"188.81.49.30/28",
+```
 
 Next, search for IPs in a particular state with the following call. If you already know the IP blocked, you can move on to the [next step](#unblockip):
 
@@ -121,9 +121,9 @@ Next, search for IPs in a particular state with the following call. If you alrea
 
 Here's an example result (in this instance, the 122.122.122.121/28 block was selected):
 
->
-    "122.122.122.122" 
->
+```bash
+"122.122.122.122" 
+```
 
 If the IP is blocked, you can get information on the blocking with the following call. Otherwise, move on to the [next step](#unblockip).
 
@@ -137,12 +137,12 @@ If the IP is blocked, you can get information on the blocking with the following
 
 Here's an example result (in this instance block 122.122.122.121/28 and IP 122.122.122.122 were selected):
 
->
-    time: 3600,
-    date: "2022-08-29T17:42:50+01:00",
-    ipSpamming: "122.122.122.122",
-    state: "blockedForSpam" 
->
+```bash
+time: 3600,
+date: "2022-08-29T17:42:50+01:00",
+ipSpamming: "122.122.122.122",
+state: "blockedForSpam" 
+```
 
 
 So:
@@ -169,14 +169,14 @@ If you wish to obtain the statistics on what has been detected, use the followin
 
 Here is an example result:
 
->
-    {
-    "messageId": "2PXQSX-3JRAUU-SF@obfuscated.com",
-    "destinationIp": "188.95.235.33",
-    "date": 1385640992,
-    "spamscore": 410
-    }
->
+```bash
+{
+"messageId": "2PXQSX-3JRAUU-SF@obfuscated.com",
+"destinationIp": "188.95.235.33",
+"date": 1385640992,
+"spamscore": 410
+}
+```
 
 
 ##### **Unblock the IP** <a name="unblockip"></a>
@@ -199,19 +199,19 @@ To unblock your IP, use the following call:
 
 Here is an example result:
 
->
-    "message": "This IP address is still blocked for 129 seconds"
->
+```bash
+"message": "This IP address is still blocked for 129 seconds"
+```
 
 
 More than 129 seconds later:
 
->
-    time: 3600,
-    date: "2022-08-29T17:42:50+01:00",
-    ipSpamming: "122.122.122.122",
-    state: "unblocking" 
->
+```bash
+time: 3600,
+date: "2022-08-29T17:42:50+01:00",
+ipSpamming: "122.122.122.122",
+state: "unblocking" 
+```
 
 The IP is being released, the operation may take several minutes.
 
@@ -268,7 +268,7 @@ For more information on the above services, please consult our guide on [Optimis
 
 - **To a Microsoft server (Outlook, etc.)**
 
-Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](https://docs.ovh.com/gb/en/dedicated/optimise-email-sending/#to-a-microsoft-server-outlook-etc) of the corresponding guide.
+Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](https://docs.ovh.com/ie/en/dedicated/optimise-email-sending/#to-a-microsoft-server-outlook-etc) of the corresponding guide.
 
 - **To a Gmail server**
 
