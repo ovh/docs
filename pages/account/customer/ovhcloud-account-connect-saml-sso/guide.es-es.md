@@ -1,7 +1,7 @@
 ---
 title: Activar las conexiones SSO con su cuenta OVHcloud
 slug: conect-saml-sso
-excerpt: "Cómo asociar el servicio ADFS a su cuenta de OVHcloud a través de SAML 2.0".
+excerpt: "Cómo asociar el servicio ADFS a su cuenta de OVHcloud a través de SAML 2.0"
 section: Uso avanzado
 order: 02
 ---
