@@ -325,6 +325,6 @@ Supprimez le cache :
 php bin/console cache:clear
 ```
 
-Vous pouvez vérifiez le bon fonctionnement de l'API en vous rendant sur l'URL de votre site suivi de `/api/v2`. Vous arriverez alors sur une documentation générée Swagger.
+Vous pouvez vérifiez le bon fonctionnement de l'API en vous rendant sur l'URL de votre site suivi de `/api/v2`. Vous arriverez alors sur la documentation de l'API générée par [Swagger](https://swagger.io/solutions/api-documentation/).
 
 ## Aller plus loin
