@@ -10,7 +10,7 @@ order: 01
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 31.01.2022**
+**Letzte Aktualisierung am 18.10.2022**
 
 ## Ziel
 
@@ -116,7 +116,7 @@ Um HTTP-Web-Traffic zu erlauben geben Sie folgenden Befehl ein:
 sudo iptables -A INPUT -p tcp -—dport 80 -j ACCEPT
 ```
 
-Um eingehenden SSH-Traffic (Secure Shell) zu erlauben geben Sie Folgendes ein:
+Um eingehenden SSH-Traffic (Secure Shell) zu erlauben geben Sie Folgendes ein (beachten Sie, dass wir den Anschluss 22 verwenden, der die Standardnummer des SSH-Anschlusses ist. Wenn Ihre Portnummer anders lautet, achten Sie darauf, die folgenden Befehle entsprechend anzupassen):
 
 ```bash
 sudo iptables -A INPUT -p tcp -—dport 22 -j ACCEPT

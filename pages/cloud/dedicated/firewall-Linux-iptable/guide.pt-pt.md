@@ -10,7 +10,7 @@ order: 01
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 31/01/2022**
+**Última atualização: 18/10/2022**
 
 ## Objetivo
 
@@ -117,7 +117,7 @@ Para autorizar o tráfego Web HTTP, introduza o seguinte comando:
 sudo iptables -A INPUT -p tcp —dport 80 -j ACCEPT
 ```
 
-Para autorizar apenas o tráfego SSH (Secure Shell) de entrada, introduza o seguinte:
+Para autorizar apenas o tráfego SSH (Secure Shell) de entrada, introduza o seguinte (note que utilizamos a porta 22, que é o número padrão da porta SSH. Se o seu número de porta for diferente, certifique-se de ajustar os seguintes comandos em conformidade):
 
 ```bash
 sudo iptables -A INPUT -p tcp —dport 22 -j ACCEPT
