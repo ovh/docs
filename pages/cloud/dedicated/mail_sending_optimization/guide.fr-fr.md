@@ -95,7 +95,7 @@ Microsoft utilise une politique de liste blanche. Cela signifie qu'initialement 
 
 Avant de commencer la procédure de whitelist de votre IP, assurez-vous d'avoir bien configuré un [reverse](#reverseip) sur votre IP (et non pas le reverse par défaut d'OVHcloud).
 
-Microsoft vérifie également le champ SPF, il est donc recommandé d'en [configurer un également](#spfrecord).
+Microsoft vérifie également le champ SPF, il est donc recommandé d'en [configurer un](#spfrecord).
 
 Vous devez ensuite signer les contrats SNDS (Smart Network Data Services) et JMRP (Junk Mail Reporting Partner Program).
 
