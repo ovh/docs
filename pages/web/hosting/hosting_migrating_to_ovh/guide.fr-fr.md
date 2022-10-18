@@ -45,9 +45,9 @@ Migrer votre site internet et vos e-mails vers OVHcloud **sans interruption de s
 - [Etape 5 : Recréer vos adresses e-mail à l'identique chez OVHcloud](#step5)
 - [Etape 6 : Déclarer les serveurs mail OVHcloud dans la zone DNS active de votre nom de domaine](#step6)
 - [Etape 7 : Transférer le contenu de vos anciennes adresses e-mail dans vos nouvelles chez OVHcloud](#step7)
-- [Etape 8 : Changer les serveurs DNS actifs de votre domaine par ceux d'OVHcloud](#step8)
-- [Etape 9 : Transférer votre nom de domaine chez OVHcloud](#step9)
-- [Etape 10 : Reconfiguration de vos logiciels de messagerie](#step10)
+- [Etape 8 : Reconfiguration de vos logiciels de messagerie](#step8)
+- [Etape 9 : Changer les serveurs DNS actifs de votre domaine par ceux d'OVHcloud](#step9)
+- [Etape 10 : Transférer votre nom de domaine chez OVHcloud](#step10)
 
 > [!Primary]
 >
@@ -118,7 +118,7 @@ Pour installer la sauvegarde de l'espace de stockage FTP récupérée chez votre
 > Si votre fichier de sauvegarde est compressé (zippé), décompressez-le dans un dossier vide sur votre ordinateur avant de téléverser vos fichiers sur l'hébergement OVHcloud.
 >
 
-Pour la sauegarde de votre base de données, [créez une nouvelle base de données](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/) puis [Importer votre sauvegarde de base de données](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/) à l'intérieur.
+Pour la sauvegarde de votre base de données, [créez une nouvelle base de données](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/) puis [Importer votre sauvegarde de base de données](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/) à l'intérieur.
 
 > [!primary]
 >
@@ -135,34 +135,99 @@ Pour cela, remplacez les informations de connexion de votre ancienne base de don
 
 ### Etape 5 : Recréer vos adresses e-mail à l'identique chez OVHcloud <a name="step5"></a>
 
+Recréez à l'identique les adresses mail présentes chez votre fournisseur de mails à l'aide de notre guide sur la [création d'addresses e-mail "MX Plan"](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/).
+
+> [!Primary]
+>
+> Si vous avez opté pour une solution "Email-Pro" ou "Exchange", consultez notre documentation sur le sujet pour créer vos adresses e-mail :
+>
+> - Pour "Email-Pro" : <https://docs.ovh.com/fr/emails-pro/premiere-configuration/>
+> - Pour "Exchange" : <https://docs.ovh.com/fr/microsoft-collaborative-solutions/premiere-configuration-exchange/>
+>
+
 ### Etape 6 : Déclarer les serveurs mail OVHcloud dans la zone DNS active de votre nom de domaine <a name="step6"></a>
 
-### Etape 7 : Transférer le contenu de vos anciennes adresses e-mail dans vos nouvelles chez OVHcloud <a name="step7"></a>
+Cette étape consiste à effectuer le changement des serveurs mails "MX" dans la zone DNS active de votre nom de domaine.
+Cela aura pour effet de réceptionner vos nouveaux mails sur vos nouvelles adresses mail OVHcloud.
 
-### Etape 8 : Changer les serveurs DNS actifs de votre domaine par ceux d'OVHcloud <a name="step8"></a>
+Remplacez (sans laisser les anciennes entrées) chez votre fournisseur vos anciennes entrées "MX" par les trois entrées MX suivantes :
 
-### Etape 9 : Transférer votre nom de domaine chez OVHcloud <a name="step9"></a>
-
-### Etape 10 : Reconfiguration de vos logiciels de messagerie <a name="step10"></a>
-
-
-#### Étape 3 : recréer vos adresses e-mail chez OVHcloud
-
-Une fois le site internet transféré, vous devez [recréer chez OVHcloud les mêmes adresses](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external} que vous utilisez chez votre prestataire actuel. Celles-ci devront porter le même nom. Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la section `E-mails`{.action}, puis sur l'hébergement web que vous venez de commander (portant le même intitulé que votre nom de domaine). Suivez les étapes de création en cliquant sur le bouton `Créer une adresse e-mail`{.action}.
-
-La configuration de votre nom de domaine restant inchangée, la réception des nouveaux messages s'effectue toujours sur les adresses e-mail créées chez votre prestataire actuel. Vous devez toujours utiliser ces dernières pour réaliser vos envois.
-
-#### Étape 4 : modifier la configuration de votre nom de domaine
-
-Maintenant que votre site internet est transféré et vos adresses e-mail recréées chez OVHcloud, il est nécessaire de modifier la configuration de votre nom de domaine. Cela passe par la modification des serveurs DNS de ce dernier pour ceux d'OVHcloud (envoyés par e-mail et également affichés dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}). Cette manipulation a deux effets :
-
-- **lier techniquement votre domaine aux solutions OVHcloud** : votre hébergement OVHcloud sera utilisé pour afficher votre site internet et la réception des nouveaux messages s'effectuera sur vos adresses e-mail OVHcloud ;
-- **empêcher une interruption de service** : si votre bureau d'enregistrement décide de couper sa propre configuration DNS lorsque vous transférerez votre nom de domaine, cela n'aura pas d'incidence étant donné que vous utiliserez déjà la configuration OVHcloud.
+- Votre nom de domaine (sans les "www") vers la cible de type "MX" : "mx1.mail.ovh.net.".
+- Votre nom de domaine (sans les "www") vers la cible de type "MX" : "mx2.mail.ovh.net.".
+- Votre nom de domaine (sans les "www") vers la cible de type "MX" : "mx3.mail.ovh.net.".
 
 > [!warning]
 >
-> Le changement des serveurs DNS se réalise dans le bureau d'enregistrement actuel de votre nom de domaine et nécessite un temps de propagation de 24 à 48 heures maximum avant d’être pleinement effectif.
+> Le changement des serveurs "MX" se réalise dans le bureau d'enregistrement actuel de votre nom de domaine et nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effectif.
 >
+> Cela signifie que pendant la propagation DNS de la modification, vos mails seront reçus de moins en moins sur vos anciennes adresses mail et de plus en plus sur vos nouvelles adresses mail OVHcloud.
+>
+> Une fois la propagation terminée, tous les nouveaux mail reçus seront réceptionnés sur vos adresses mail OVHcloud.
+
+> [!primary]
+>
+> Nous vous conseillons de faire le changement des entrées "MX" **avant** d'effectuer la migration du contenu des adresses mail.
+>
+> En effet, avec cette méthode, cela vous évite de refaire une migration pour les quelques mails reçus sur vos anciennes adresses mail pendant la propagation DNS.
+>
+
+### Etape 7 : Transférer le contenu de vos anciennes adresses e-mail dans vos nouvelles chez OVHcloud <a name="step7"></a>
+
+Vos nouveaux mails sont désormais reçus sur vos nouvelles adresses mail mais vos anciens mails sont toujours enregistrés sur votre ancien serveur mail.
+
+Pour migrer le contenu de vos anciennes adresses, deux possibilités s'offrent à vous.
+
+**Possibilité 1** : Utilisez notre outil [OVHcloud Mail Migrator (OMM)](https://omm.ovh.net/){.external} permettant de copier le contenu des adresses e-mail enregistrées chez votre ancien prestataire vers celles créées chez OVHcloud.
+
+> [!warning]
+>
+> Nous vous conseillons de ne pas utiliser dans la partie `Compte source`{.action} le `Type de serveur`{.action} *POP*.
+>
+> En effet, ce protocole efface les mails de votre ancien serveur pour les envoyer vers le serveur OVHcloud de destination.
+>
+> Vous ne pourrez alors plus comparer le contenu de l'ancienne et de la nouvelle adresse mail.
+>
+
+Pour la partie `Compte de destination`{.action}, renseignez uniquement l'adresse mail OVHcloud concernée et son mot de passe associé.
+Ceci en laissant le premier formulaire en `Hosted by OVH (Autodetect)`{.action}.
+
+Une fois la migration terminée, connectez-vous à votre adresse mail OVHcloud à l'aide du [Webmail OVHcloud](https://www.ovhcloud.com/fr/mail/) pour vérifier que tous vos mails sont bien présents dans le nouveau compte.
+
+Réitérez l'opération pour l'ensemble de vos comptes mail.
+
+> [!primary]
+>
+> Vous devez posséder les identifiants d'accès de tous vos anciens comptes mail ainsi que le nom du serveur mail de votre ancien prestaraire pour réaliser cette action. 
+>
+> Si vos adresses mail étaient configurées en POP sans conservation de copies des mails sur votre ancien serveur mail ou si vous disposez des mails enregistrés "en local" sur vos appareils, seul la **possibilité 2** pourra être réalisée.
+>
+
+**Posibilité 2** : Effectuez une sauvegarde du contenu de vos adresses mail à l'aide d'un logiciel de messagerie (Outlook, Mail de Mac, ...), reconfigurez votre logiciel de messagerie puis importez la sauvegarde dans votre nouvelle adresse mail OVHcloud.
+
+> [!success]
+>
+> Pour connaître les paramètres de configuration d'un logiciel de messagerie avec une adresse mail OVHcloud, rendez-vous à l'[Etape 8 : Reconfiguration de vos logiciels de messagerie](#step8) de ce guide.
+>
+
+### Etape 8 : Reconfiguration de vos logiciels de messagerie <a name="step8"></a>
+
+Une fois vos anciennes adresses mail migrées chez OVHcloud, reconfigurez vos logiciels de messagerie à l'aide de l'ensemble de nos guides sur le sujet.
+
+#### Pour les adresses mail "MX Plan" : 
+
+- Retrouvez l'ensemble des paramètres de configuration dans la section **"2. Utiliser le logiciel de votre choix"** du guide indiquant les [généralités sur les e-mails "MX Plan"](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/#2-utiliser-le-logiciel-de-votre-choix). Vous y trouverez également les liens vers les guides de configuration personalisés pour les principaux logiciels de messagerie. 
+
+#### Pour les adresses mail "Email-Pro" :
+
+- 
+
+#### Pour les comptes mail "Exchange" :
+
+- 
+
+### Etape 9 : Changer les serveurs DNS actifs de votre domaine par ceux d'OVHcloud <a name="step9"></a>
+
+### Etape 10 : Transférer votre nom de domaine chez OVHcloud <a name="step10"></a>
 
 #### Étape 5 : transférer le contenu de vos adresses e-mail
 
@@ -186,72 +251,6 @@ Il ne reste plus qu'à transférer votre nom de domaine vers OVHcloud ! Pour cel
 |5|Valider ou attendre la validation du transfert| Cette étape diffère selon l'extension de votre domaine. Lorsqu'une validation est requise, une demande par e-mail est généralement envoyée. La procédure à suivre y est renseignée. Vous devrez suivre ces étapes menant à la confirmation de la demande de transfert.| 
 
 Une fois le transfert arrivé à son terme, votre site internet, vos adresses e-mail et votre nom de domaine ont bien été migrés vers OVHcloud sans interruption de service !
-
-### Migration avec probable interruption de service
-
-#### Étape 1 : commander le transfert et l'hébergement de vos services chez OVHcloud
-
-Plusieurs sous-étapes sont à réaliser.
-
-|Sous-étapes|Description|Détails|
-|---|---|---|
-|1|Déverrouiller votre domaine|Le verrouillage d'un domaine empêche de le transférer dans un autre bureau d'enregistrement comme OVHcloud. Il est donc nécessaire de le déverrouiller au préalable dans votre bureau d'enregistrement actuel.|
-|2|Récupérer le code de transfert|Le code de transfert vous est remis par votre bureau d'enregistrement actuel lorsque vous déverrouillez votre domaine.|
-|3|Réaliser la commande chez OVHcloud|Depuis le site d'[OVHcloud](https://ovh.com/){.external}, réalisez votre commande de transfert de nom de domaine et d'hébergement web. Vous devrez y renseigner le code de transfert obtenu précédemment. Lors du choix des serveurs DNS, précisez ceux de votre prestataire actuel.|
-|4|Payer la commande|Dès réception de votre règlement, le transfert de votre nom de domaine débutera ainsi que l'installation de votre hébergement. **Selon la politique interne du bureau d'enregistrement actuel de votre nom de domaine, la résolution DNS de ce dernier peut être stoppée, rendant inaccessible l'ensemble des services qui en dépendent (site internet et adresses e-mail notamment).**|
-|5|Valider ou attendre la validation du transfert|Cette étape diffère selon l'extension de votre domaine. Lorsqu'une validation est requise, une demande par e-mail est envoyée. La procédure à suivre y est renseignée. Vous devrez suivre ces étapes menant à la confirmation de la demande de transfert.|
-
-#### Étape 2 : transférer votre site internet
-
-Plusieurs sous-étapes sont à réaliser.
-
-|Sous-étapes|Description|Détails|
-|---|---|---|
-|1|Récupérer une sauvegarde du site|Il s'agit d'une sauvegarde intégrale de votre site internet incluant les fichiers ainsi que la base de données (le cas échéant). Cette sauvegarde complète est essentielle pour migrer votre site chez OVHcloud.|
-|2|Mettre en ligne le site chez OVHcloud|Connectez-vous à votre espace de stockage (FTP) afin d'y importer les fichiers de votre site. Vous devrez les mettre en ligne dans le dossier **"www"**. Les identifiants de connexion au FTP vous sont transmis par e-mail.|
-|3|Création d'une base de données OVHcloud|Si votre site fonctionne avec une base de données, vous devrez en [créer une nouvelle chez OVHcloud](https://docs.ovh.com/fr/hosting/gestion-dune-base-de-donnees-depuis-un-hebergement-mutualise/){.external} depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.|
-|4|Importer les données de la base|Importez la sauvegarde de votre base de données en utilisant [l'outil OVHcloud mis à disposition dans votre espace client](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/){.external}.|
-|5|Lier le site à la nouvelle base|Les informations de votre ancienne base de données sont toujours présentes dans le fichier de configuration de votre site. Sur votre espace de stockage OVHcloud, modifiez ce fichier en y renseignant les informations de la base de données OVHcloud.|
-
-> [!success]
->
-> Pour la section **5** du tableau ci-dessus et si vous utilisez un Content Management System (CMS) comme WordPress, Joomla!, Drupal ou PrestaShop, retrouvez des informations sur leurs fichiers de configuration grâce à **l'étape 2** du guide sur la [modification du mot de passe d'une base de données](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/)
->
-
-La configuration de votre nom de domaine restant inchangée, l'hébergement utilisé pour afficher votre site internet reste toujours celui de votre prestataire actuel si la résolution DNS est toujours active.
-
-#### Étape 3 : recréer vos adresses e-mail chez OVHcloud
-
-**Une fois le transfert de votre domaine terminé**, vous recevrez un e-mail vous informant que le service e-mail lié à votre hébergement vient d'être installé. Dès lors, vous devez [recréer chez OVHcloud les mêmes adresses e-mail](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external} que celles que vous utilisez chez votre prestataire actuel (elles devront porter le même nom). Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la section `E-mails`{.action}, puis sur l'hébergement web que vous venez de commander (portant le même nom que votre domaine). Suivez les étapes de création en cliquant sur le bouton `Créer une adresse e-mail`{.action}.
-
-La configuration de votre nom de domaine restant inchangée, la réception des nouveaux messages s'effectue toujours sur les adresses e-mail créées chez votre prestataire actuel si la résolution DNS est toujours effective. Utilisez toujours ces dernières pour réaliser vos envois.
-
-#### Étape 4 : modifier la configuration de votre nom de domaine
-
-Maintenant que votre site internet est transféré, vos adresses e-mail recréées et votre nom de domaine transféré chez OVHcloud, il est nécessaire de modifier la configuration de ce dernier. Cela passe par la modification des serveurs DNS de votre nom de domaine pour ceux d'OVHcloud.
-
-Vous devrez les modifier depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Une documentation intitulée *[Généralités sur les serveurs DNS](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/){.external}* peut vous accompagner dans cette démarche.
-
-Cette manipulation peut avoir plusieurs conséquences :
-
-- **lier techniquement votre domaine aux solutions OVHcloud** : votre hébergement OVHcloud sera utilisé pour afficher votre site internet et la réception des nouveaux messages s'effectuera sur vos adresses e-mail OVHcloud ;
-- **résoudre une interruption de service** : si votre bureau d'enregistrement a coupé sa propre configuration DNS lorsque vous avez transféré votre nom de domaine, ceci permettra à ce dernier d'être de nouveau joignable.
-
-> [!warning]
->
-> Le changement des serveurs DNS d'un nom de domaine nécessite un temps de propagation de 24 à 48 heures maximum avant d’être pleinement effectif.
->
-
-#### Étape 5 : transférer le contenu de vos adresses e-mail
-
-Plusieurs sous-étapes sont à réaliser.
-
-|Sous-étapes|Description|Détails|
-|---|---|---|
-|1|Migrer le contenu des adresses chez OVHcloud|Utilisez l’outil [OVHcloud Mail Migrator (OMM)](https://omm.ovh.net/){.external} qui vous permet de copier le contenu des adresses e-mail créées chez votre ancien prestataire vers celles créées chez OVHcloud.|
-|2|Utiliser vos adresses|Vos adresses e-mail OVHcloud sont accessibles depuis une application en ligne [Webmail](https://mail.ovh.net/){.external}. Si vous aviez paramétré l'une de vos adresses sur un client de messagerie (comme Outlook), vous devez la configurer de nouveau pour y renseigner [les serveurs d'OVHcloud](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/) à la place de ceux de votre ancien prestataire.|
-
-Votre site internet, vos adresses e-mail et votre nom de domaine ont bien été migré vers OVHcloud !
 
 ## Aller plus loin <a name="go-further"></a>
 
