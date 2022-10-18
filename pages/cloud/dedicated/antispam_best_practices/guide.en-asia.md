@@ -145,13 +145,11 @@ state: "blockedForSpam"
 ```
 
 
-So:
-
->  
-    * The IP is blocked for 1 hour (or 3600 seconds).
-    * It was blocked on 29/08/2022 at 5:42 p.m.
-    * Its current state is blocked. 
->
+```bash
+- The IP is blocked for 1 hour (or 3600 seconds).
+- It was blocked on 29/08/2022 at 5:42 p.m.
+- Its current state is blocked.
+```
 
 
 If you wish to obtain the statistics on what has been detected, use the following api call, otherwise move on to the [next step](#unblockip).
