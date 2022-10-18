@@ -18,7 +18,7 @@ La plupart du temps, une émission/réception d'e-mails impossible est liée à 
 
 Suite à l'envoi d'un e-mail sur votre compte mail, recevez-vous un message d'erreur ? Si oui, repérez le message d'erreur, il pourra vous en préciser la raison (boite pleine, boite non existante ...).
 
-Vous pouvez également vérifier que votre nom de domaine livre les e-mails au bon endroit. Pour cela, depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, sélectionnez la zone DNS de votre nom de domaine et regardez les enregistrements de type MX mis en place. Ces enregistrements doivent être sous la forme « mx*.mail.ovh.net. » (remplacez * par un chiffre entre 0 et 3). 
+Vous pouvez également vérifier que votre nom de domaine livre les e-mails au bon endroit. Pour cela, depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, sélectionnez la zone DNS de votre nom de domaine et regardez les enregistrements de type MX mis en place. Ces enregistrements doivent être sous la forme « mx*.mail.ovh.ca. » (remplacez * par un chiffre entre 0 et 3). 
 Si les enregistrements MX sont différents, c'est que vous avez potentiellement une offre e-mail d'un autre opérateur qu'OVHcloud.
 
 **Trucs et Astuces** : Si la connexion à votre webmail est impossible, votre mot de passe est peut-être erroné. Vérifiez-le et, si nécessaire, nous vous invitons à le modifier depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et à renouveler votre connexion.
