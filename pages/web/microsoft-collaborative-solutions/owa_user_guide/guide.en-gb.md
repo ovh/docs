@@ -127,7 +127,7 @@ For more detailed instructions about creating inbox rules, please refer to our g
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Click on the cog in the top right-hand corner, then click on "Options". In the left-hand column, follow the "Mail" tree under "Accounts", then "Block or authorise".
+Click on the gear icon at the top right-hand corner, then click `Options`{.action}. In the left-hand column, follow the "Mail" tree under "Accounts", then "Block or authorise".
 
 In the "**Blocked Senders**" section, type an email address or domain name to block, and then click the `+`{.action} button to add it to the list.
 
