@@ -37,7 +37,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 > [!warning]
 >
-> En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
+> En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.ca. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
 > Encontrará esta cifra en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
 > 
@@ -51,15 +51,15 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 | | |
 |---|---|
 |![Thunderbird](images/thunderbird-win-exchange01.png){.thumbnail}|En la nueva ventana, introduzca los siguientes 3 datos: <br>- Su nombre completo (Nombre mostrado)<br>- Dirección de correo electrónico <br>- Contraseña.|
-|Haga clic en `Configurar manualmente...`{.action} para introducir la configuración del servidor **ENTRANT**: <br>- Protocolo **IMAP** <br>- Servidor **ex?.mail.ovh.net** (sustituya "**?**" por el número del servidor)<br>- Puerto **993** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**|![Thunderbird](images/thunderbird-win-exchange02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-exchange03.png){.thumbnail}|Introduzca la configuración del servidor **SALIENTE**: <br>- Protocolo **SMTP** <br>- Servidor **ex?.mail.ovh.net** (sustituya "**?**" por el número del servidor)<br>- Puerto **587** <br>- SSL **STARTTLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**<br><br>Para finalizar la configuración, haga clic en `Finalizado.`{.action}|
+|Haga clic en `Configurar manualmente...`{.action} para introducir la configuración del servidor **ENTRANT**: <br>- Protocolo **IMAP** <br>- Servidor **ex?.mail.ovh.ca** (sustituya "**?**" por el número del servidor)<br>- Puerto **993** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**|![Thunderbird](images/thunderbird-win-exchange02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-exchange03.png){.thumbnail}|Introduzca la configuración del servidor **SALIENTE**: <br>- Protocolo **SMTP** <br>- Servidor **ex?.mail.ovh.ca** (sustituya "**?**" por el número del servidor)<br>- Puerto **587** <br>- SSL **STARTTLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**<br><br>Para finalizar la configuración, haga clic en `Finalizado.`{.action}|
 
 En una configuración en **POP**, los valores son los siguientes:
 
 |Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
 |---|---|---|---|
-|Entrante|ex**?***.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|995|
-|Saliente|ex**?***.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|STARTTLS|587|
+|Entrante|ex**?***.mail.ovh.ca (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|995|
+|Saliente|ex**?***.mail.ovh.ca (la mención **"?"** debe sustituirse por el número de su servidor)|STARTTLS|587|
 
 ### Utilizar la dirección de correo
 
@@ -75,7 +75,7 @@ Si necesita realizar alguna operación que pueda provocar la pérdida de los dat
 
 > [!warning]
 >
-> En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
+> En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.ca. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
 > Encontrará esta cifra en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}.
 > en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.

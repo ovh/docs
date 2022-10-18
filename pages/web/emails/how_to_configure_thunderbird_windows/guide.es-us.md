@@ -43,8 +43,8 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 | | |
 |---|---|
 |![Thunderbird](images/thunderbird-win-mxplan01.png){.thumbnail}|En la nueva ventana, introduzca los siguientes 3 datos: <br>- Su nombre completo (Nombre mostrado)<br>- Dirección de correo electrónico <br>- Contraseña.|
-|Haga clic en `Configurar manualmente...`{.action} para introducir la configuración del servidor **ENTRANT**: <br>- Protocolo **IMAP** <br>- Servidor **ssl0.ovh.net** <br>- Puerto **993** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**|![Thunderbird](images/thunderbird-win-mxplan02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-mxplan03.png){.thumbnail}|Introduzca la configuración del servidor **SALIENTE**: <br>- Protocolo **SMTP** <br>- Servidor **ssl0.ovh.net** <br>- Puerto **465** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**<br><br>Para finalizar la configuración, haga clic en `Finalizado.`{.action}|
+|Haga clic en `Configurar manualmente...`{.action} para introducir la configuración del servidor **ENTRANT**: <br>- Protocolo **IMAP** <br>- Servidor **imap.mail.ovh.ca** <br>- Puerto **993** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**|![Thunderbird](images/thunderbird-win-mxplan02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-mxplan03.png){.thumbnail}|Introduzca la configuración del servidor **SALIENTE**: <br>- Protocolo **SMTP** <br>- Servidor **smtp.mail.ovh.ca** <br>- Puerto **465** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**<br><br>Para finalizar la configuración, haga clic en `Finalizado.`{.action}|
 
 
 
@@ -52,8 +52,8 @@ En una configuración en **POP**, los valores son los siguientes:
 
 |Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|SSL/TLS|995|
-|Saliente|ssl0.ovh.net|SSL/TLS|465|
+|Entrante|pop.mail.ovh.ca|SSL/TLS|995|
+|Saliente|smtp.mail.ovh.ca|SSL/TLS|465|
 
 ### Utilizar la dirección de correo
 

@@ -38,8 +38,8 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 | | |
 |---|---|
 |![Thunderbird](images/thunderbird-win-mxplan01.png){.thumbnail}|In the window that appears, enter the following information: <br>\- Your display name<br>\- Email <br>\- Password|
-|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>\- Server **ssl0.ovh.net** <br>\- Port **993** <br>\- SSL **SSL/TLS** <br>\- Authentication **Normal password** <br>\- Username **Full email address**|![Thunderbird](images/thunderbird-win-mxplan02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-mxplan03.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>\- Server **ssl0.ovh.net** <br>\- Port **465** <br>\- SSL **SSL/TLS** <br>\- Authentication **Normal password** <br>\- Username **Full email address**<br><br>To complete the configuration, click `Done`{.action}|
+|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>\- Server **imap.mail.ovh.ca** <br>\- Port **993** <br>\- SSL **SSL/TLS** <br>\- Authentication **Normal password** <br>\- Username **Full email address**|![Thunderbird](images/thunderbird-win-mxplan02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-mxplan03.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>\- Server **smtp.mail.ovh.ca** <br>\- Port **465** <br>\- SSL **SSL/TLS** <br>\- Authentication **Normal password** <br>\- Username **Full email address**<br><br>To complete the configuration, click `Done`{.action}|
 
 
 
@@ -47,8 +47,9 @@ For **POP** configuration, the values are:
 
 |Server type|Server name|Encryption method|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|SSL/TLS|995|
-|Outgoing|ssl0.ovh.net|SSL/TLS|465|
+|Incoming|pop.mail.ovh.ca|SSL/TLS|995|
+|Outgoing|smtp.mail.ovh.ca|SSL/TLS|465|
+
 
 ### Using your email address
 
