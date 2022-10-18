@@ -2,7 +2,6 @@
 title: 'Eliminare un progetto Public Cloud'
 excerpt: 'Come eliminare il tuo progetto Public Cloud'
 slug: elimina_il_tuo_progetto_public_cloud
-legacy_guide_number: g2129
 section: Gestione del progetto
 order: 2
 ---
@@ -11,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 17/11/2021**
+**Ultimo aggiornamento: 14/10/2022**
 
 ## Obiettivo
 
@@ -52,7 +51,11 @@ Clicca su `Elimina il progetto`{.action} per continuare.
 
 Cliccando su questo pulsante, riceverai un'email all'indirizzo di contatto per confermare o annullare la rimozione del progetto.<br>
 Una volta cliccato sul link di conferma visualizzato in questa email, verrai reindirizzato verso una pagina Web in cui sarà necessario inserire la password del tuo account.<br>
-Una volta inserita e confermata la password, il tuo progetto verrà eliminato.
+Una volta inserita e confermata la password, il progetto entrerà nella fase di cancellazione.
+
+
+> [!warning]
+> Ti ricordiamo che, quando un progetto entra in questa fase di cancellazione, rimane in stato di sospensione per 7 giorni. Il progetto non viene quindi immediatamente eliminato. Se questa situazione ti colpisce, ad esempio se la tua quota di progetti è limitata, contatta i nostri team di assistenza.
 
 ## Per saperne di più
 

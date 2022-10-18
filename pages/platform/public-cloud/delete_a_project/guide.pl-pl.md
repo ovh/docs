@@ -2,7 +2,6 @@
 title: 'Usuwanie projektu Public Cloud'
 excerpt: 'Dowiedz się, jak usunąć projekt Public Cloud'
 slug: usuwanie_projektu
-legacy_guide_number: g2129
 section: 'Zarządzanie projektami'
 order: 2
 ---
@@ -11,7 +10,7 @@ order: 2
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 17-11-2021**
+**Ostatnia aktualizacja z dnia 14-10-2022**
 
 ## Wprowadzenie
 
@@ -52,7 +51,11 @@ Kliknij na `Usuń projekt`{.action}, aby kontynuować.
 
 Po kliknięciu tego przycisku otrzymasz e-mail na adres kontaktowy, w celu potwierdzenia lub anulowania usunięcia projektu.<br>
 Po kliknięciu linku z potwierdzeniem zamieszczonego w tym e-mailu zostaniesz przekierowany do strony WWW, na której będziesz musiał wpisać hasło do Twojego konta.<br>
-Po wpisaniu hasła i potwierdzeniu Twój projekt zostanie usunięty.
+Po wprowadzeniu i potwierdzeniu hasła, Twój projekt wejdzie w fazę usuwania.
+
+> [!warning]
+> Pamiętaj, że w momencie, gdy projekt wchodzi w etap usuwania, status zawieszenia trwa 7 dni. Projekt nie zostaje zatem natychmiast usunięty. Jeśli sytuacja ta Cię dotyka, na przykład jeśli Twój limit projektów jest ograniczony, skontaktuj się z zespołem pomocy.
+>
 
 ## Sprawdź również
 
