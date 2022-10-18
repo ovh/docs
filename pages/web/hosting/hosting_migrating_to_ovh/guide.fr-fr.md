@@ -83,9 +83,55 @@ Une fois le paiement validé, l'installation de l'hébergement va démarrer. Un 
 
 ### Etape 2 : Créer et pré-configurer une zone DNS pour votre domaine chez OVHcloud <a name="step2"></a>
 
+Lorsque votre hébergement est créé, connectez-vous à votre [Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis créez une zone DNS pour votre nom de domaine **sans préciser les "www"**.
+Ceci à l'aide de notre guide sur la [création d'une zone DNS chez OVHcloud](https://docs.ovh.com/fr/domains/creer-une-zone-dns-pour-un-domaine-externe/).
+
+Une fois la zone DNS créée, rendez-vous su celle-ci à l'aide de notre guide sur la [gestion d'un zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) puis ajouter à l'intérieur les entrées suivantes si elles ne sont pas déjà placées :
+
+- Votre nom de domaine (sans les "www") vers la cible de type "MX" : "mx1.mail.ovh.net.".
+- Votre nom de domaine (sans les "www") vers la cible de type "MX" : "mx2.mail.ovh.net.".
+- Votre nom de domaine (sans les "www") vers la cible de type "MX" : "mx3.mail.ovh.net.".
+- Votre nom de domaine (sans les "www") vers l'adresse IP cible de type "A" de votre hébergement OVHcloud. Pour récupérer la bonne adresse IP, consultez notre guide listant les [adresses IP des différents clusters d'hébergemet mutualisés](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/).
+- Votre nom de domaine (avec les "www") vers votre nom de domaine (sans les "www") à l'aide d'une entrée de type "CNAME".
+
+**Exemple** : Si on prend le domaine "domain.tld" le rendu doit être le suivant :
+
+![hosting](images/DNSzone.png){.thumbnail}
+
 ### Etape 3 : Récupérer une sauvegarde complète de votre site Web <a name="step3"></a>
 
+Récupérez le contenu de l'espace de stockage FTP de votre hébergement actuel ainsi qu'une sauvegarde de votre base de données si votre site en utilise une pour fonctioner. 
+
+> [!Primary]
+>
+> Ces opérations se font exclusivement auprès de votre fournisseur d'hébergement actuel, contactez-le si vous éprouvez des difficultés à récupérer une sauvegarde complète de votre site Web.
+>
+
 ### Etape 4 : Installer la sauvegarde de votre site Web sur votre offre d'hébergement OVHcloud <a name="step4"></a>
+
+Pour installer la sauvegarde de l'espace de stockage FTP récupérée chez votre ancien prestataire, [connectez-vous à l'espace de stockage FTP de votre hébergement OVHcloud](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) et placez la sauvegarde dans le dossier racine "www" (ou dans un autre dossier racine que vous devrez préalablement créer dans votre espace de stockage FTP).
+
+> [!primary]
+>
+> Nous vous recommandons d'utiliser le logiciel gratuit [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) pour téléverser votre sauvegarde FTP à l'intérieur de votre hébergement.
+>
+> Si votre fichier de sauvegarde est compressé (zippé), décompressez-le dans un dossier vide sur votre ordinateur avant de téléverser vos fichiers sur l'hébergement OVHcloud.
+>
+
+Pour la sauegarde de votre base de données, [créez une nouvelle base de données](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/) puis [Importer votre sauvegarde de base de données](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/) à l'intérieur.
+
+> [!primary]
+>
+> OVHcloud propose des serveurs de base de données SQL Privé/Cloud DB. Si vous souhaitez utiliser cette offre avec votre site web, retrouvez l'ensemble de notre documentation sur ce produit [ici](https://docs.ovh.com/fr/clouddb/).
+>
+
+Liez ensuite votre base de données OVHcloud avec les fichiers présents dans l'espace de stockage FTP de votre hébergement OVHcloud.
+Pour cela, remplacez les informations de connexion de votre ancienne base de données par celles de votre nouvelle base de données OVHcloud. Ces informations se trouvent dans le fichier de "configuration/connexion à votre base de données" de votre site web.
+
+> [!success]
+>
+> Pour lier votre nouvelle base de données et si vous utilisez un Content Management System (CMS) comme WordPress, Joomla!, Drupal ou PrestaShop, retrouvez des informations sur leurs fichiers de configuration grâce à **l'étape 2** du guide sur la [modification du mot de passe d'une base de données](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/)
+>
 
 ### Etape 5 : Recréer vos adresses e-mail à l'identique chez OVHcloud <a name="step5"></a>
 
@@ -99,24 +145,6 @@ Une fois le paiement validé, l'installation de l'hébergement va démarrer. Un 
 
 ### Etape 10 : Reconfiguration de vos logiciels de messagerie <a name="step10"></a>
 
-#### Étape 2 : transférer votre site internet
-
-Plusieurs sous-étapes sont à réaliser.
-
-|Sous-étapes|Description|Détails|
-|---|---|---|
-|1|Récupérer une sauvegarde du site|Il s'agit d'une sauvegarde intégrale de votre site internet incluant les fichiers ainsi que la base de données (le cas échéant). Cette sauvegarde complète est essentielle pour migrer votre site chez OVHcloud.|
-|2|Mettre en ligne votre site chez OVHcloud|Connectez-vous à votre espace de stockage (FTP) afin d'y importer les fichiers de votre site. Vous devrez les mettre en ligne dans le dossier **"www"**. Les identifiants de connexion au FTP vous sont transmis par e-mail.|
-|3|Création d'une base de données OVHcloud|Si votre site fonctionne avec une base de données, vous devrez en [créer une nouvelle chez OVHcloud](https://docs.ovh.com/fr/hosting/gestion-dune-base-de-donnees-depuis-un-hebergement-mutualise/){.external} depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.|
-|4|Importer les données de la base|Importez la sauvegarde de votre base de données en utilisant [l'outil OVHcloud mis à disposition dans votre espace client](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/){.external}.|
-|5|Lier le site à la nouvelle base|Les informations de votre ancienne base de données sont toujours présentes dans le fichier de configuration de votre site. Sur votre espace de stockage OVHcloud, modifiez ce fichier en y renseignant les informations de la base de données OVHcloud.|
-
-> [!success]
->
-> Pour la section **5** du tableau ci-dessus et si vous utilisez un Content Management System (CMS) comme WordPress, Joomla!, Drupal ou PrestaShop, retrouvez des informations sur leurs fichiers de configuration grâce à **l'étape 2** du guide sur la [modification du mot de passe d'une base de données](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/)
->
-
-La configuration de votre nom de domaine restant inchangée, l'hébergement utilisé pour afficher votre site internet reste toujours celui de votre prestataire actuel.
 
 #### Étape 3 : recréer vos adresses e-mail chez OVHcloud
 
