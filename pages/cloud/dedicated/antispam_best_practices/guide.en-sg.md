@@ -144,6 +144,7 @@ ipSpamming: "122.122.122.122",
 state: "blockedForSpam" 
 ```
 
+So:
 
 ```bash
 - The IP is blocked for 1 hour (or 3600 seconds).
