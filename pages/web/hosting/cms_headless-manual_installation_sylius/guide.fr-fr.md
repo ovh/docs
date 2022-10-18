@@ -304,7 +304,7 @@ Lors de l'installation, il vous a été demandé si vous souhaitiez générer un
 php bin/console sylius:install:jwt-setup
 ```
 
-##### Rendre l'API disponible
+##### **Rendre l'API disponible**
 
 Pour rendre l'API disponible, il va falloir modifier la configuration de Sylius. Ouvrez le fichier `_sylius.yaml` situé dans le répertoire `config/packages` :
 
@@ -327,4 +327,24 @@ php bin/console cache:clear
 
 Vous pouvez vérifiez le bon fonctionnement de l'API en vous rendant sur l'URL de votre site suivi de `/api/v2`. Vous arriverez alors sur la documentation de l'API générée par [Swagger](https://swagger.io/solutions/api-documentation/).
 
+##### **Tester l'API**
+
+Rendez-vous sur la page d'accueil de l'API :
+
+![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B6%5D.png)
+
+Cliquez ensuite sur le premier lien, dans _AdminUser Token_, `/api/v2/admin/authentication-token` :
+
+![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B7%5D.png)
+
+Cliquez sur le bouton Try it out et remplacez alors les paramètres `email` et `password` par ceux que vous avez défini lors de l'installation, puis sur _Execute_ :
+
+![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B8%5D.png)
+
+Si vos identifiants sont corrects, vous aurez alors une code HTTP 200 en retour et le token correspondant à votre compte.J
+
 ## Aller plus loin
+
+- La documentation de [Sylius](https://docs.sylius.com/en/1.11/)
+- [API Platform](https://docs.sylius.com/en/1.11/)
+- [Swagger UI](https://swagger.io/tools/swagger-ui/)
