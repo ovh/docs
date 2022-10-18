@@ -320,9 +320,9 @@ parameters:
         sylius_api.enabled: true
 ```
 
-Supprimez le cache :
+Reconstruisez le cache :
 ```sh
-php bin/console cache:clear
+php bin/console cache:warmup
 ```
 
 Vous pouvez vérifiez le bon fonctionnement de l'API en vous rendant sur l'URL de votre site suivi de `/api/v2`. Vous arriverez alors sur la documentation de l'API générée par [Swagger](https://swagger.io/solutions/api-documentation/).
