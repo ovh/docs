@@ -116,7 +116,7 @@ Next, search for IPs in a particular state with the following call. If you alrea
 > @api {GET} /ip/{ip}/spam
 >
 
-**ip**:	Specify the IP block retrieved in the previous step with the netmask. For example 122.122.122.121/28.
+**ip**:	Specify the IP block retrieved in the previous step with the netmask. For example 122.122.122.121/28.<br>
 **state**: Specify the state you are looking for.
 
 Here's an example result (in this instance, the 122.122.122.121/28 block was selected):
@@ -194,7 +194,7 @@ To unblock your IP, use the following call:
 >
 
 **ip**: Specify the IP block retrieved in the previous step with the netmask.<br>
-**ipSpamming** : Specify the previously retrieved IP in blockedForSpam state.
+**ipSpamming** : Specify the previously retrieved IP in "blockedForSpam" state.
 
 
 Here is an example result:
@@ -236,7 +236,7 @@ If your outgoing email volume is very high, you are advised to:
 - provide an 'abuse' address on this block in order to receive complaints.
 - configure [Reverses](https://docs.ovh.com/asia/en/dedicated/optimise-email-sending/#configure-the-reverse-ip) on all IPs correctly.
 
-This operation will enable you to simultaneously isolate the IP and domain reputation if you send emails for various domains, to receive the complaints, and thus do what is necessary to get unblocked by various organisations. It also enables you to locate a problem more quickly on a form that uses domain X or Y, as the emails are not sent out from the same IP and don't have the same reverse.
+This operation will enable you to simultaneously isolate the IP and domain reputation if you send emails from various domains, to receive the complaints, and thus do what is necessary to get unblocked by various organisations. It also enables you to locate a problem more quickly on a form that uses domain X or Y, as the emails are not sent out from the same IP and don't have the same reverse.
 
 **Email Content**
 
@@ -258,9 +258,9 @@ This system enables you to follow up on feedback provided by some internet servi
 Some authentication services allow you to protect your reputation:
 
 - **Sender-ID**: An email authentication technology developed by Microsoft which validates the authenticity of your domain name by verifying the IP address of the sender. This technology is based on the IETF standard: [RFC4406](https://datatracker.ietf.org/doc/rfc4406/)
-- **SPF**: Sender Policy Framework is a standard for verififying the domain of the sender. It is based on [RFC4408](https://datatracker.ietf.org/doc/rfc4408/) and consists of adding an SPF or TXT field to the domain DNS, which contains the list of IPs authorised to send emails from this domain.
+- **SPF**: Sender Policy Framework is a standard for verifying the domain of the sender. It is based on [RFC4408](https://datatracker.ietf.org/doc/rfc4408/) and consists of adding an SPF or TXT field to the domain DNS, which contains the list of IPs authorised to send emails from this domain.
 - **Reverse DNS**: Reverse enables your IP to be "translated” into your domain. That allows the domain associated with the IP address to be found.
-- DKIM: This standard is described in [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871). AOL and Google (Gmail) work on this basis. 
+- **DKIM**: This standard is described in [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871). AOL and Google (Gmail) work on this basis. 
 
 For more information on the above services, please consult our guide on [Optimising the sending of emails](https://docs.ovh.com/asia/en/dedicated/optimise-email-sending/).
 
@@ -278,10 +278,10 @@ Google also has a [dedicated article](https://support.google.com/mail/answer/811
 
 ### Reporting a false positive
 
-If your emails do comply, you can inform us by sending a sample of your email (including header). Our technical support team will then assist you with the next steps. Simply create a support ticket from your OVHcloud Control Pabek and include the following information:
+If your emails do comply, you can inform us by sending a sample of your email (including header). Our technical support team will then assist you with the next steps. Simply create a support ticket from your OVHcloud Control Panel and include the following information:
 
 - The IP of the service blocked for SPAM.
-- An original copy of the email(s) flagged as SPAM (you should be able to identify that with the **message ID** included in the ANTISPAM email). If no message ID is provided, simply send us a copy of the emails sent before receiving the alert. Please only provide the copy of the email flagged as SPAM.
+- An original copy of the email(s) flagged as SPAM (you should be able to identify that with the **message ID** included in the ANTISPAM email). If no **message ID** is provided, simply send us a copy of the emails sent before receiving the alert. Please only provide the copy of the email flagged as SPAM.
 - The .EML file of the email provided, this should include the **header** and **footer** of the email. If you are not familiar with how to extract an .EML file, please consult the following guide: [Retrieving email headers](https://docs.ovh.com/asia/en/emails/shared_mail_guide_to_view_email_headers/).
 
 Once the information is sent, our support team will communicate with Vade Secure for further analysis of the case.
