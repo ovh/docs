@@ -82,10 +82,10 @@ Cliquez sur le bouton `Close`{.action} dans la dernière fenêtre. L'approbation
 
 > [!primary]
 >
-> Avec OVHcloud ajouté en tant qu'organisme tiers de confiance, vous devriez déjà pouvoir vous connecter via une connexion SSO. Cependant, toutes les informations relatives à l'identité de l'utilisateur (en termes d' « assertion » SAML) resteront indisponibles jusqu'à ce que vous configuriez une stratégie pour mapper les champs LDAP Active Directory aux attributs de l'assertion SAML.
+> Avec OVHcloud ajouté en tant qu'organisme tiers de confiance, vous devriez déjà pouvoir vous connecter via une connexion SSO. Cependant, toutes les informations relatives à l'identité de l'utilisateur (en termes d' « assertion » SAML) resteront indisponibles jusqu'à ce que vous configuriez une stratégie pour faire correspondre les champs LDAP Active Directory aux attributs de l'assertion SAML.
 >
 
-#### Mappage des attributs LDAP aux attributs SAML
+#### Correspondance des attributs LDAP aux attributs SAML
 
 Cliquez sur l'entrée OVHcloud dans la partie « Relying Party Trusts ».
 
@@ -137,7 +137,7 @@ Ouvrez l'onglet `Gestion des utilisateurs`{.action}.
 
 ![Profil menu OVHcloud](images/ovhcloud_profile_menu.png){.thumbnail}
 
-Cliquez sur le bouton `Login SSO`{.action} .
+Cliquez sur le bouton `Login SSO`{.action}.
 
 ![OVHcloud connexion SSO étape 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
@@ -167,7 +167,7 @@ Votre ADFS est maintenant considéré comme fournisseur d'identité de confiance
 > En effet, votre compte OVHcloud vérifie si l'utilisateur s'authentifiant appartient à un groupe existant sur le compte.
 >
 
-Pour résoudre cela, vérifiez les informations mappées à l'attribut « Group » retourné par votre service ADFS.
+Pour résoudre cela, vérifiez les informations correspondant à l'attribut « Group » retourné par votre service ADFS.
 
 Prenez pour exemple celui d'un utilisateur « John Doe » de votre Active Directory, comme indiqué dans l'image ci-dessous.
 
@@ -228,6 +228,6 @@ Vous êtes maintenant connecté avec le même identifiant client, mais via votre
 
 [Définition et gestion du mot de passe de votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/)
 
-[Sécuriser son compte OVHcloud avec la double authentification](hhttps://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/)
+[Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
