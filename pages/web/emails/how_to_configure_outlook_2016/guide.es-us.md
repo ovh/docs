@@ -55,7 +55,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 |![Outlook](images/config-outlook-mxplan02.png){.thumbnail}|Entre los distintos tipos de cuenta, elija IMAP o POP. <br>Le recomendamos que utilice IMAP.|
 |Introduzca la contraseña de su dirección de correo electrónico y haga clic en `Siguiente`{.action}. |![Outlook](images/config-outlook-mxplan03.png){.thumbnail}|
 |![Outlook](images/config-outlook-mxplan04.png){.thumbnail}|Si Outlook no ha podido configurar su dirección de forma automática, se abrirá esta ventana. <br>Haga clic en `Modificar los parámetros de la cuenta`{.action} |
-|Escriba en el **Correo entrante**: <br>- el servidor **ssl0.ovh.net** <br>- Port **993**<br>- Método de cifrado **SSL/TLS**<br><br>Escriba en **Correo saliente**: <br>- el servidor **ssl0.ovh.net** <br>- Port **465**<br>- Método de cifrado **SSL/TLS**<br><br>Haga clic en `Siguiente`{.action} para aceptar. |![Outlook](images/config-outlook-mxplan05.png){.thumbnail}|
+|Escriba en el **Correo entrante**: <br>- el servidor **ssl0.ovh.net** <br>- Port **993**<br>- Método de cifrado **SSL/TLS**<br><br>Escriba en **Correo saliente**: <br>- el servidor **ssl0.ovh.net** <br>- Port **465**<br>- Método de cifrado **SSL/TLS**<br><br>Haga clic en `Siguiente`{.action} para aceptar. |![Outlook](images/config-outlook-mxplan05-ca.png){.thumbnail}|
 
 
 En una configuración en **POP**, los valores son los siguientes:
@@ -88,7 +88,7 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 
 La ventana está dividida en dos partes, **Correo entrante** y **Correo saliente**. Haga clic en uno u otro para poder modificarlo.
 
-![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+![Outlook](images/config-outlook-mxplan07-ca.png){.thumbnail}
 
 ## Más información
 
