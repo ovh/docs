@@ -63,4 +63,20 @@ Vous aurez alors à renseigner certains éléments :
 
 ![Installation Cecil](images/static_website_installation_cecil%5B1%5D.png)
 
+Une fois ces éléments renseignés, vous devez maintenant déployer le site en tapant la commande :
+```sh
+php cecil.phar build
+```
 
+En affichant le contenu du répertoire, vous constaterez la création d'un répertoire `_site` qui contiendra l'ensemble des fichiers HTML et des assets, répetoire sur lequel pointe votre nom de domaine :
+
+![Installation Cecil](images/static_website_installation_cecil%5B2%5D.png)
+
+Vous pouvez maintenant voir le résultat en allant sur votre nom de domaine :
+
+![Installation Cecil](images/static_website_installation_cecil%5B3%5D.png)
+
+## Aller plus loin
+
+- la [page](https://daringfireball.net/projects/markdown/) du créateur du format Markdown
+- un [guide](https://www.markdownguide.org/) sur ce format
