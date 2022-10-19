@@ -79,18 +79,20 @@ Le informations techniques utilisés par notre guide sont les suivantes :
     + Masque : `255.255.252.0`
     + Version du cluster : `6.5`.
 
+une partie du  paramètrage sera faite à partir des interfaces WEB **Prism Central** & **Prism Element**, une autre à partir de l'espace client OVHcloud et d'autres en ligne de commande sur **Prism Central** ou **Prism Element**. En plus de ce guide vous pouvez vous appuyer sur ces guides [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) et [Outils avancées](https://docs.ovh.com/fr/nutanix/advanced-tools/) pour vous aider.
+
 
 ### Interconnexion des trois clusters
 
 Aidez-vous de ce guide pour interconnecter les deux premiers clusters [https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/].
 
-Pour configurer le troisième cluster à Erith il faudra réutiliser la procédure utilisée pour l'interconnexion des deux clusters mais cette fois ce sera entre ERITH et GRAVELINES à la place de ROUBAIX et GRAVELINES.
+Pour configurer le troisième cluster à Erith il faudra réutiliser la procédure utilisée pour l'interconnexion des deux clusters mais cette fois ce sera entre Erith et GRAVELINES à la place de ROUBAIX et GRAVELINES.
 
 Après avoir interconnectés vos 3 serveurs et fini la configurations des **Loadbalancer** vous verrez dans la configuration du vRack 
 
 - 9 Dedicated servers (3 par cluster)
-- 3 adresses IP
-- 3 Load Balancer
+- 3 adresses IP publiques
+- 3 Load Balancers
 
 ![01 - vRack Configuration 01](images/00-vrack-configuration01.png)
 
@@ -110,6 +112,9 @@ Connectez-vous en SSH au cluster **Prism Element** de Roubaix.
 ```bash
 ssh nutanix@adresse_ip_pe_roubaix
 saisissez le mot de passe de Prism Element
+```
+Exécutez cette commande pour sortir Prism Element de Prism Central:
+
 ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=adresse_ip_privee_prism_central\
 username=admin password=mdp_pe_roubaix force=true
 ```
@@ -128,11 +133,16 @@ ncli cluster info
 
 Notez la valeur de **Cluster UUID** qui doit avoir cette forme **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**.
 
-Deconnectez-vous de **Prism Element** et connectez vous en SSH sur la machine virtuelle **Prism Central** de Roubaix.
+Déconnectez-vous de **Prism Element** et connectez vous en SSH sur la machine virtuelle **Prism Central** de Roubaix.
 
 ```bash
 ssh nutanix@adresse_ip_pc_roubaix
 saisissez le mot de passe de Prism Central
+```
+
+Saisissez cette commande :
+
+```bash
 python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_pe_roubaix
 ```
 
@@ -143,6 +153,10 @@ Connectez-vous en SSH au cluster **Prism Element** de Gravelines.
 ```bash
 ssh nutanix@adresse_ip_pe_gravelines
 saisissez le mot de passe de Prism Element
+```
+Saisissez cette commande :
+
+```bash
 ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=adresse_ip_privee_prism_central_gravelines\
 username=admin password=mdp_pe_gravelines force=true
 ```
@@ -159,7 +173,7 @@ Saisissez cette commande
 ncli cluster info
 ```
 
-Notez la valeur de **Cluster UUID* qui doit avoir cette forme xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+Notez la valeur de **Cluster UUID* qui doit avoir cette forme **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**
 
 Deconnectez-vous de **Prism Element** et connectez vous en SSH sur la machine virtuelle **Prism Central** de Gravelines
 
@@ -178,7 +192,7 @@ ssh nutanix@adresse_ip_pe_roubaix
 ncli multicluster register-to-prism-central username=admin password=passwod_admin\ external-ip-address-or-svm-ips=adresse_ip_privee_prism_central_erith
 ```
 
-Ce message apparait
+Ce message apparait :
 
 ```console
 Cluster registration is currently in progress. This operation may take a while.
@@ -211,6 +225,12 @@ Connectez-vous en ssh sur **Prism Element** de Gravelines :
 
 ```bash
 ssh nutanix@adresse_ip_pe_gravelines
+Saisissez le mot de passe de Prism Element de Gravelines
+```
+
+Executez cette commande :
+
+```bash
 ncli multicluster register-to-prism-central username=admin password=passwod_admin_erith external-ip-address-or-svm-ips=adresse_ip_priveeprism_central_erith
 ```
 
@@ -242,40 +262,142 @@ Registered Cluster Count: 1
     Remote Connection Exists  : true
 ```
 
-A partir d'un navigateur WEB connectez vous sur l'URL de Prism-Central à ERITH, vous verrez les trois clusters.
+A partir d'un navigateur WEB connectez vous sur l'URL de Prism-Central à ERITH, vous verrez les trois clusters d'ERITH.
 
-![01 - Prism Central Dashboard 01](images/01-prismcentral-dashboard01.png)
+![02 - Prism Central Dashboard 02](images/02-show-prismcentral01.png)
 
-### Création de deux **Storage Containers** sur chacun des clusters
+### ajout des connexions ISCSI sur les trois clusters
+
+A partir du tableau de bord cliquez sur le lien vers le `cluster d'Erith`{.action}.
+
+![03 - Add iscsi address erith 01](images/03-add-iscsi-address-erith01.png)
+
+Cliquez en haut à gauche sur le `nom du cluster`{.action}.
+
+![03 - Add iscsi address erith 02](images/03-add-iscsi-address-erith02.png)
+
+Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur  `Save`{.action}.
+
+![03 - Add iscsi address erith 03](images/03-add-iscsi-address-erith03.png)
+
+
+A partir du tableau de bord cliquez sur le lien vers le `cluster de Gravelines`{.action}.
+
+![03 - Add iscsi address gravelines 01](images/03-add-iscsi-address-gravelines01.png)
+
+Cliquez en haut à gauche sur le `nom du cluster  `{.action}.
+
+![03 - Add iscsi address gravelines 02](images/03-add-iscsi-address-gravelines02.png)
+
+Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur  `Save`{.action}.
+
+![03 - Add iscsi address graveline 03](images/03-add-iscsi-address-gravelines03.png)
+
+A partir du tableau de bord cliquez sur le lien vers le `cluster de Roubaix`{.action}.
+
+![03 - Add iscsi address roubaix 01](images/03-add-iscsi-address-roubaix01.png)
+
+Cliquez en haut à gauche sur le `nom du cluster  `{.action}.
+
+![03 - Add iscsi address gravelines 02](images/03-add-iscsi-address-gravelines02.png)
+
+Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur  `Save`{.action}.
+
+![03 - Add iscsi address gravelines 03](images/03-add-iscsi-address-gravelines03.png)
+
+### Création de deux **Storage Containers** sur les clusters de Roubaix et de Gravelines
+
+Nous allons créer deux **Storage Containers** avec le même nom. Restez sur **Prism Central** pour l'ajout des **Storage Containers**. 
+
+Depuis le menu principal, cliquez sur `Storage Containers`{.action} dans le sous-menu **Compute & Storage**.
+
+![05 - Add-storage-container 01](images/05-add-storage-container01.png)
+
+Cliquez sur `Create Storage Container`{.action}.
+
+![05 - Add-storage-container 02](images/05-add-storage-container02.png)
+
+Saisissez `UsedForDR` dans **Name**, Choisissez le `cluster de Roubaix` dans **Cluster** et cliquez sur `Create`{.action}.
+
+![05 - Add-storage-container 03](images/05-add-storage-container03.png)
+
+
+Cliquez sur `Create Storage Container`{.action}.
+
+![05 - Add-storage-container 04](images/05-add-storage-container02.png)
+
+Saisissez `UsedForDR` dans **Name**, Choisissez le `cluster de Gravelines` dans **Cluster** et cliquez sur `Create`{.action}.
+
+![05 - Add-storage-container 05](images/05-add-storage-container03.png)
+
+Dans la liste des **Storages Containers** vous verrez deux **Storage Containers** portant le même Nom
+
+
+### Déplacement des machines virtuelles dans le **Storage Container**
+
+Nous allons déplacer le stockage des machines virtuelles sur les **Storage Container** que nous avons créé.
+
+Connectez-vous en SSH sur **Prism Element** du cluster de Roubaix :
+
+```bash
+ssh nutanix@adresse_ip_privee_Prism_element_roubaix
+Saisissez le mot de passe du compte Nutanix de Prism Element
+```
+
+Executez cette commmande pour chaque VM que nous allons déplacer dans le **Storage Container** en remplaçant **nomvm** par le nom de la machine virtuelle (Dans notre Plan de reprise d'activité nous avons deux machines virtuelles à Roubaix une avec Windows et un autre sous Linux).
+
+```bash
+acli vm.update_container nomvm container=UsedForDR
+Saisissez le mot de passe du compte Nutanix de Prism Element
+```
+
+Connectez-vous en SSH sur **Prism Element** du cluster de Gravelines :
+
+```bash
+ssh nutanix@adresse_ip_privee_Prism_element_gravelines
+Saisissez le mot de passe du compte Nutanix de Prism Element
+```
+
+Executez cette commmande pour chaque VM que nous allons déplacer dans le **Storage Container** en remplaçant **nomvm** par le nom de la machine virtuelle (Dans notre Plan de reprise d'activité nous avons trois machines virtuelles à Graveline une avec Windows et un autre sous Linux plus la gateway qui donne accès à Internet). 
+
+```bash
+acli vm.update_container nomvm container=UsedForDR
+Saisissez le mot de passe du compte Nutanix de Prism Element
+```
 
 ### Création d'un catégorie qui servira lors de la mise en place du P.R.A
 
+Nons allons créer une catégorie avec deux valeurs dans **Prism Central** pour affectuer les machines virtuelles concernées par la réplications.
+
+Faites défiler le menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
+
+![06 - Add Categorie 01](images/06-addcategories01.png)
+
+Cliquez sur `New Category`{.action}.
+
+![06- Add Categorie 02](images/06-addcategories02.png)
+
+Saisissez  `Protected VM` dans **Name** ajouter ces valeurs `Roubaix` et `Gravelines` ensuite cliquez sur `Save`{.action}.
+
+![06 - Add Categorie 03](images/06-addcategories03.png)
+
+La catégorie apparait dans la liste et elle est prête à être utilisé.
+
+![06 - Add Categorie 04](images/06-addcategories03.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Activation de la réplication synchrone
-
-#### Déplacement des machines virtuelles dans le **Storage Container** 
-
-Connectez-vous à **Prism Element** de Roubaix et exécuter cette commande pour déplacer une machine virtuelle dans le **Storage Container** qui sera utilsé lors du plan de reprise d'activité. 
-
-```bash
-ssh nutanix@adresse_ip_pe_roubaix
-acli vm.update_container nomvmmembrepra container=UsedForDR
-```
-
-> [Primary]
-> Cette opération sera à faire sur chaque VM qui devra être répliquée
->
-
-Connectez-vous à **Prism Element** de Gravelines et exécuter cette commande pour déplacer une machine virtuelle dans le **Storage Container** qui sera utilsé lors du plan de reprise d'activité. 
-
-```bash
-ssh nutanix@adresse_ip_pe_gravelines
-acli vm.update_container nomvmmembrepra container=UsedForDR
-```
-
-> [Primary]
-> Cette opération sera à faire sur chaque VM qui devra être répliquée
->
-
 
 
 
