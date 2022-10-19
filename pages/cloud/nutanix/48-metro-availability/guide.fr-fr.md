@@ -269,11 +269,11 @@ Registered Cluster Count: 1
     Remote Connection Exists  : true
 ```
 
-A partir d'un navigateur WEB connectez vous sur l'URL de Prism-Central à ERITH, vous verrez les trois clusters d'ERITH.
+A partir d'un navigateur WEB connectez vous sur l'URL de Prism-Central à ERITH, vous verrez les trois clusters.
 
 ![02 - Prism Central Dashboard 02](images/02-show-prismcentral01.png)
 
-### ajout des connexions ISCSI sur les trois clusters
+### Ajout des adresses IP pour les connexions iSCSI sur les trois clusters
 
 A partir du tableau de bord cliquez sur le lien vers le `cluster d'Erith`{.action}.
 
@@ -331,13 +331,15 @@ Saisissez `UsedForDR` dans **Name**, Choisissez le `cluster de Roubaix` dans **C
 
 Cliquez sur `Create Storage Container`{.action}.
 
-![05 - Add-storage-container 04](images/05-add-storage-container02.png)
+![05 - Add-storage-container 04](images/05-add-storage-container04.png)
 
 Saisissez `UsedForDR` dans **Name**, Choisissez le `cluster de Gravelines` dans **Cluster** et cliquez sur `Create`{.action}.
 
-![05 - Add-storage-container 05](images/05-add-storage-container03.png)
+![05 - Add-storage-container 05](images/05-add-storage-container05.png)
 
-Dans la liste des **Storages Containers** vous verrez deux **Storage Containers** portant le même Nom
+Dans la liste des **Storages Containers** vous verrez deux **Storage Containers** portant le même Nom.
+
+![05 - Add-storage-container 06](images/05-add-storage-container06.png)
 
 
 ### Déplacement des machines virtuelles dans le **Storage Container**
