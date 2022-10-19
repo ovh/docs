@@ -3,12 +3,21 @@ title: Transférer un nom de domaine vers un autre bureau d'enregistrement
 slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
 excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
 section: Transfert
-order: 04
+order: 03
 ---
 
-**Dernière mise à jour le 23/09/2022**
+**Dernière mise à jour le 19/10/2022**
 
 ## Objectif
+
+> [!warning]
+>
+> Attention, si le domaine est déjà enregistré chez OVHcloud, il faut effectuer en réalité non pas un transfert sortant mais [un changement des contacts « administrateur », « technique » et/ou « facturation »](https://docs.ovh.com/fr/customer/gestion-des-contacts/) pour votre nom de domaine.
+>
+> En effet, les véritables transferts de nom de domaine ne s'effectuent qu'entre les bureaux d'enregistrements tels qu'OVHcloud.
+>
+> Si la propriété du domaine doit changer également, n'oubliez pas d'effectuer cette action **avant** de changer les contacts de votre domaine à l'aide de notre documentation sur le [changement de propriétaire d'un nom de domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
+>
 
 Un **transfert de domaine** fait référence au déplacement d'un nom de domaine d'un bureau d'enregistrement à un autre. Par exemple, si vous avez commandé un nom de domaine sur notre site Web, OVHcloud est son bureau d'enregistrement actuel. Un transfert de domaine sortant doit être initié par le nouveau bureau d'enregistrement.
 
