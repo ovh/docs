@@ -6,7 +6,7 @@ section: Plan de Reprise d'Activité
 order: 06
 ---
 
-**Dernière mise à jour le 13/10/2022**
+**Dernière mise à jour le 19/10/2022**
 
 ## Objectif
 
@@ -84,21 +84,25 @@ Le informations techniques utilisés par notre guide sont les suivantes :
 
 Aidez-vous de ce guide pour interconnecter les deux premiers clusters [https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/].
 
-Pour configurer le troisième cluster à Erith il faudra réutiliser la procédure pour l'interconnexion des deux clusters mais cette fois ce sera ERITH -> GRAVELINES à la place de ROUBAIX -> GRAVELINES
+Pour configurer le troisième cluster à Erith il faudra réutiliser la procédure utilisée pour l'interconnexion des deux clusters mais cette fois ce sera entre ERITH et GRAVELINES à la place de ROUBAIX et GRAVELINES.
 
-Après avoir interconnectés vos 3 serveurs et finit la configurations des **Loadbalancer** vous verrez dans la configuration du vRack 
+Après avoir interconnectés vos 3 serveurs et fini la configurations des **Loadbalancer** vous verrez dans la configuration du vRack 
 
 - 9 Dedicated servers (3 par cluster)
 - 3 adresses IP
 - 3 Load Balancer
 
-vous pous pourrez vous connecter aux URL des machines virtuelles **Prism Central** depuis l'extérieur avec les URL d'origine de chaque cluster qui ont la forme **https://cluster-XXXX.nutanix.ovh.net:9440**
+![01 - vRack Configuration 01](images/00-vrack-configuration01.png)
+
+Vous pouvez vous connecter aux URL des machines virtuelles **Prism Central** depuis l'extérieur avec les URL d'origine de chaque cluster qui ont la forme **https://cluster-XXXX.nutanix.ovh.net:9440**
 
 ### Deconnexion du Prism Central d'origine sur les deux clusters qui seront répliqués
 
-Maintenant que les trois clusters sont reliés sur le même vRack nous dissocier le cluster de Roubaix et Celui de Gravelines de leur machine virtuelle **Prism Central** pour la connecter à la machine virtuelle **Prism Central** du site d'ERITH
+Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il est est necessaire de n'utiliser qu'une Machine virtualle **Prism Central** commune au 3 clusters, 2 pour la réplication et l'autre en tant que témoin. Prism Central sera connecté au cluster d'Erith. 
 
-Ces opérations se font en ligne de commande en ssh avec l'adresse IP de **Prism Element**, vous pouvez utiliser le **Load Balancer** pour ajouter une connexion en ssh vers l'adresse IP de **Prism Element** vous pouvez vous aider de l'ensemble de ces guides [OVHcloud Load Balancer](https://docs.ovh.com/fr/load-balancer/)
+Dans un premier temps il faut deconnecter les machines virtuelles **Prism Central** des clusters de Roubaix et Gravelines.
+
+Ces opérations se font en ligne de commande en ssh en se connectant l'adresse IP privée de **Prism Element**, vous pouvez utiliser le **Load Balancer** pour ajouter une connexion en ssh vers l'adresse IP de **Prism Element** et vous aider de l'ensemble de ces guides [OVHcloud Load Balancer](https://docs.ovh.com/fr/load-balancer/)
 
 connectez-vous sur l'adresse IP privé du Prism Element de Roubaix à l'aide de ces commandes :
 
