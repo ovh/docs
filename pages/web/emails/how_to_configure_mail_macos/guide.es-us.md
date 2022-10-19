@@ -42,7 +42,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 |---|---|
 |![mailmac](images/mail-mac-mxplan01.png){.thumbnail}|Seleccione `Otra cuenta de correo`{.action} y haga clic en `Cuentas de correo`{.action}.|
 |Introduzca en la ventana "**Añadir cuenta de correo**" la siguiente información: <br>- el **nombre** de su cuenta de correo <br>- Su **dirección de correo electrónico** <br>- La **contraseña** de su dirección de correo electrónico |![mailmac](images/mail-mac-mxplan02.png){.thumbnail}|
-|![mailmac](images/mail-mac-mxplan03.png){.thumbnail}|Introduzca la información en la siguiente ventana: <br>- Deje su **dirección de correo electrónico** ya introducida <br>- Introduzca su dirección de correo electrónico completa en el **Nombre de usuario** <br>- Deje su **contraseña** ya introducida <br>\- Seleccione `POP` o `IMAP` (recomendado) en **Tipo de cuenta**<br>- Introduzca `imap.mail.ovh.ca` en el **servidor de recepción** <br>- Introduzca también `smtp.mail.ovh.ca` en el **servidor de envío**<br><br>Para finalizar la configuración, haga clic en `Conectar`{.action}|
+|![mailmac](images/mail-mac-mxplan03-ca.png){.thumbnail}|Introduzca la información en la siguiente ventana: <br>- Deje su **dirección de correo electrónico** ya introducida <br>- Introduzca su dirección de correo electrónico completa en el **Nombre de usuario** <br>- Deje su **contraseña** ya introducida <br>\- Seleccione `POP` o `IMAP` (recomendado) en **Tipo de cuenta**<br>- Introduzca `imap.mail.ovh.ca` en el **servidor de recepción** <br>- Introduzca también `smtp.mail.ovh.ca` en el **servidor de envío**<br><br>Para finalizar la configuración, haga clic en `Conectar`{.action}|
 
 ### Utilizar la dirección de correo
 
@@ -61,7 +61,7 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 - En la parte superior de la pantalla, haga clic en `Correo electrónico`{.action} y seleccione `Preferencias`{.action}.
 - Seleccione la cuenta correspondiente en la columna de la izquierda y haga clic en `Ajustes del servidor`{.action}.
 
-![mailmac](images/mail-mac-mxplan04.png){.thumbnail}
+![mailmac](images/mail-mac-mxplan04-ca.png){.thumbnail}
 
 ### Información adicional
 
