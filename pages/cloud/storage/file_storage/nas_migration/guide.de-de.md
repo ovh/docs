@@ -20,7 +20,7 @@ Diese Anleitung erklärt, wie Sie Daten von einem HA-NAS auf ein anderes übertr
 
 - OVHcloud HA-NAS.
 - Eine mit NFS kompatible Distribution.
-- Sie haben Ihr NAS bereits gemountet, nach [dieser Anleitung](https://docs.ovh.com/de/storage/nas-nfs/).
+- Sie haben Ihr NAS bereits gemountet, nach [dieser Anleitung](https://docs.ovh.com/de/storage/file-storage/nas/nfs/).
 
 ## In der praktischen Anwendung
 

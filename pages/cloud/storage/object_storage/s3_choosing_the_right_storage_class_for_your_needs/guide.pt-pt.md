@@ -4,7 +4,7 @@ slug: s3/choosing-the-right-storage-class-for-your-needs
 section: General information
 order: 005
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/choosing-the-right-storage-class-for-your-needs/'
+    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/s3/choosing-the-right-storage-class-for-your-needs/'
 ---
 
 **Last updated September 27<sup>th</sup>2022**

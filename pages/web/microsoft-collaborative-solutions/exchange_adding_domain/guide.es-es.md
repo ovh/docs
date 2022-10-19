@@ -19,7 +19,7 @@ Añadir un dominio a un servicio Exchange es un requisito indispensable para pod
 
 ## Requisitos
 
-- Tener una [solución Exchange](https://www.ovhcloud.com/es-es/emails/) o [Email Pro](hhttps://www.ovhcloud.com/es-es/emails/email-pro/).
+- Tener una [solución Exchange](https://www.ovhcloud.com/es-es/emails/) o [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/).
 - Tener uno o más dominios.
 - Estar en condiciones de modificar la configuración del dominio ([zona DNS](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/)).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).

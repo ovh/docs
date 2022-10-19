@@ -22,7 +22,7 @@ W tym przewodniku szybko uruchamiania dowiesz się, jak rozpocząć korzystanie 
 
 - Posiadanie oferty OVHcloud Enterprise File Storage
 - Dostęp do strony [API OVHcloud](https://api.ovh.com/)
-- Umiejętność [montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/nas-nfs/)
+- Umiejętność [montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/file-storage/nas/nfs/)
 
 ## Podstawowe
 

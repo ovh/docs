@@ -18,7 +18,7 @@ Cette solution offre plusieurs fonctionnalités, dont la synchronisation entre p
 ## Requirements
 
 - Le fichier OpenRC, obtenu depuis l'[espace client OVHcloud](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/) ou [Horizon](https://docs.ovh.com/ca/fr/public-cloud/presentation-dhorizon/)
-- [Espace de stockage](https://docs.ovh.com/ca/fr/storage/pcs/creation-de-conteneur/) dédié à ownCloud
+- [Espace de stockage](https://docs.ovh.com/ca/fr/storage/object-storage/pcs/create-container/) dédié à ownCloud
 
 
 ## Instructions

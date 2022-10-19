@@ -31,7 +31,7 @@ HYCU for Nutanix est un logiciel de sauvegarde disponible pour Nutanix.
 - Être connecté sur le cluster via Prism Central. 
 - Avoir un projet Public Cloud avec un bucket de stockage de type High Performance Object Storage ainsi qu'un utilisateur ayant les droits en lecture et écriture sur ce bucket. Vous trouverez plus d'informations sur la création d'un projet Public Cloud et sur l’utilisation du service High Performance Object Storage sur les pages suivantes :
     - [Création d'un projet Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/creer-un-projet-public-cloud/)
-    - [Débuter avec S3 High Performance](https://docs.ovh.com/ca/fr/storage/s3/debuter-avec-s3/).
+    - [Débuter avec S3 High Performance](https://docs.ovh.com/ca/fr/storage/object-storage/s3/getting-started-with-object-storage/).
 - Disposer, sur votre Cluster Nutanix, de 60 Go de Stockage, de 8 Go de Mémoire et de 8 Cœurs.
 
 ## En pratique

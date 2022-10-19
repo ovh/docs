@@ -51,7 +51,7 @@ Une fois votre service Enterprise File Storage commandé, vous avez à votre dis
 > - La taille d'un volume est évolutive, tant à la hausse qu'à la baisse.
 >
 
-Retrouvez plus d'informations sur le guide [« Gérer vos volumes »](https://docs.ovh.com/ca/fr/storage/netapp-volumes/).
+Retrouvez plus d'informations sur le guide [« Gérer vos volumes »](https://docs.ovh.com/ca/fr/storage/file-storage/netapp/volumes/).
 
 ### Principe de fonctionnement des ACL
 
@@ -66,7 +66,7 @@ Ces règles sont constituées d'une adresse IP source de votre réseau au format
 > Vous pouvez créer une ou plusieurs règles par volume.
 >
 
-Retrouvez plus d'informations sur le guide [« Gérer les ACL d'un volume »](https://docs.ovh.com/ca/fr/storage/netapp-volume-acl/).
+Retrouvez plus d'informations sur le guide [« Gérer les ACL d'un volume »](https://docs.ovh.com/ca/fr/storage/file-storage/netapp/volume-acl/).
 
 ### Principe de fonctionnement des snapshots
 
@@ -82,7 +82,7 @@ La consommation quotidienne constatée des snapshots est comprise entre 1 et 5 %
 
 ![Enterprise File Storage 4](images/Netapp_Concept_4.PNG)
 
-Retrouvez plus d'informations sur le guide [« Gérer les snapshots d'un volume »](https://docs.ovh.com/ca/fr/storage/netapp-volume-snapshots/).
+Retrouvez plus d'informations sur le guide [« Gérer les snapshots d'un volume »](https://docs.ovh.com/ca/fr/storage/file-storage/netapp/volume-snapshots/).
 
 ### Limites de l'offre Enterprise File Storage 
 

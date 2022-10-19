@@ -150,7 +150,7 @@ La commande de montage sera différente, suivant le protocole choisi pour le vol
 
 > [!primary]
 >
-> Pour NFS, vous trouverez les instructions de montage dans le guide [Monter votre NAS via un partage NFS](https://docs.ovh.com/fr/storage/nas/nas-nfs/).
+> Pour NFS, vous trouverez les instructions de montage dans le guide [Monter votre NAS via un partage NFS](https://docs.ovh.com/fr/storage/file-storage/nas/nfs/).
 > À noter que le chemin de montage récupéré remplace IP_NAS/NFS_PATH dans cette documentation.
 >  
 

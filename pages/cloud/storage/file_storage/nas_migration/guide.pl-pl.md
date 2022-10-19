@@ -22,7 +22,7 @@ Aby wykonać transfer danych, musisz:
 
 - NAS-HA OVHcloud
 - Dystrybucja kompatybilna z NFS
-- Uruchomienie usługi NAS-HA przed jej rozpoczęciem zgodnie z instrukcją [montowania usługi NAS-HA przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/nas-nfs/){.external}.
+- Uruchomienie usługi NAS-HA przed jej rozpoczęciem zgodnie z instrukcją [montowania usługi NAS-HA przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/file-storage/nas/nfs/){.external}.
 
 ## W praktyce
 

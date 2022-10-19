@@ -109,7 +109,7 @@ Once you have finished configuring your accounts, you can now start using them. 
 
 If you need help with configuring your email account on an email client or a device (e.g. a smartphone or tablet) or have questions about email service features, please refer to our documentation which you can access from the [Exchange](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/) and [Email Pro](https://docs.ovh.com/ie/en/emails-pro/) pages.
 
-You can purchase Outlook licences in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and Office 365 licences on the following page: <https://www.ovhcloud.com/en-ie/collaborative-tools/microsoft-365/]>.
+You can purchase Outlook licences in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and Office 365 licences on the following page: <https://www.ovhcloud.com/en-ie/collaborative-tools/microsoft-365/>.
 
 We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
