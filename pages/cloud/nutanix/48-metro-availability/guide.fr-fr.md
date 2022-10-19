@@ -234,7 +234,42 @@ Registered Cluster Count: 1
     Remote Connection Exists  : true
 ```
 
-### Activation de la réplication
+Connectez-vous au Prism Central sur site d'ERITH, vous verrez trois clusters Dans le panneau **Cluster Quick Access**. Nous allons mettre en place la solution de P.R.A (Plan de reprise d'activité) entre les deux clusters qui sont distant de ce Prism Central à Roubaix et Gravelines
+
+### Création de deux **Storage Containers** sur chacun des clusters
+
+### Création d'un catégorie qui servira lors de la mise en place du P.R.A
+
+### Activation de la réplication synchrone
+
+#### Déplacement des machines virtuelles dans le **Storage Container** 
+
+Connectez-vous à **Prism Element** de Roubaix et exécuter cette commande pour déplacer une machine virtuelle dans le **Storage Container** qui sera utilsé lors du plan de reprise d'activité. 
+
+```bash
+ssh nutanix@adresse_ip_pe_roubaix
+acli vm.update_container nomvmmembrepra container=UsedForDR
+```
+
+> [Primary]
+> Cette opération sera à faire sur chaque VM qui devra être répliquée
+>
+
+Connectez-vous à **Prism Element** de Gravelines et exécuter cette commande pour déplacer une machine virtuelle dans le **Storage Container** qui sera utilsé lors du plan de reprise d'activité. 
+
+```bash
+ssh nutanix@adresse_ip_pe_gravelines
+acli vm.update_container nomvmmembrepra container=UsedForDR
+```
+
+> [Primary]
+> Cette opération sera à faire sur chaque VM qui devra être répliquée
+>
+
+
+
+
+
 
 ### Activation du plan de reprise d'activité
 
