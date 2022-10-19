@@ -116,7 +116,7 @@ Recherchez ensuite les IPs dans un état particulier grâce à l'appel suivant. 
 > @api {GET} /ip/{ip}/spam
 >
 
-**ip** : spécifiez le bloc IP récupéré à l'étape précédente avec le masque de réseau. Par exemple 122.122.122.121/28.
+**ip** : spécifiez le bloc IP récupéré à l'étape précédente avec le masque de réseau. Par exemple 122.122.122.121/28.<br>
 **state** : spécifiez l'état que vous recherchez.
 
 Voici un exemple de résultat (dans ce cas, le bloc 122.122.122.121/28 a été sélectionné) :
@@ -160,7 +160,7 @@ Si vous souhaitez obtenir les statistiques sur ce qui a été détecté, utilise
 >
 
 **ip** : spécifiez le bloc IP récupéré à l'étape précédente avec le masque de réseau.<br>
-**ipSpamming** : indiquez l'IP précédemment récupérée dans l'état "lockedForSpam" par exemple.<br>
+**ipSpamming** : indiquez l'IP précédemment récupérée dans l'état "blockedForSpam" par exemple.<br>
 **from and to** : utilisez le format de date utilisé dans la fonction précédente (YYYY-MM-DDTHH:MM+01:SS).
 
 Voici un exemple de résultat :
@@ -189,7 +189,7 @@ Pour débloquer votre adresse IP, utilisez l'appel suivant :
 >
 
 **ip** : spécifiez le bloc d'adresses IP récupéré à l'étape précédente avec le masque de réseau.<br>
-**ipSpamming** : spécifiez l'adresse IP précédemment récupérée dans l'état *lockedForSpam*, par exemple.
+**ipSpamming** : spécifiez l'adresse IP précédemment récupérée dans l'état "blockedForSpam", par exemple.
 
 Voici un exemple de résultat :
 
@@ -232,7 +232,7 @@ Si le volume de vos e-mails sortants est très important, il est conseillé de :
 - fournir une adresse *abuse* sur ce bloc afin de recevoir les plaintes.
 - configurer correctement les [Reverses](https://docs.ovh.com/ca/fr/dedicated/optimiser-envoi-emails/#configurer-le-reverse-ip) sur toutes les adresses IP. 
 
-Cette dernière opération vous permettra d’isoler simultanément l’IP et la réputation du domaine si vous envoyez des e-mails pour différents domaines, de recevoir les plaintes et ainsi de faire le nécessaire pour être débloqué par les différentes organisations. Le reverse permet également de localiser plus rapidement un problème sur un formulaire utilisant le domaine X ou Y, car les e-mails ne sont pas envoyés depuis la même IP et n'ont pas le même *reverse*.
+Cette dernière opération vous permettra d’isoler simultanément l’IP et la réputation du domaine si vous envoyez des e-mails de différents domaines, de recevoir les plaintes et ainsi de faire le nécessaire pour être débloqué par les différentes organisations. Le *reverse* permet également de localiser plus rapidement un problème sur un formulaire utilisant le domaine X ou Y, car les e-mails ne sont pas envoyés depuis la même IP et n'ont pas le même *reverse*.
 
 **Contenu de votre e-mail**
 
@@ -256,7 +256,7 @@ Certains services d'authentification vous permettent de protéger votre réputat
 - **Sender-ID** : il s'agit d'une technologie d'authentification des e-mails développée par Microsoft qui valide l'authenticité de votre nom de domaine en vérifiant l'adresse IP de l'expéditeur. Cette technologie est basée sur la norme IETF : [RFC4406](https://datatracker.ietf.org/doc/rfc4406/).
 - **SPF** : *Sender Policy Framework* est un standard de vérification du domaine de l’expéditeur. Elle est basée sur la [RFC4408](https://datatracker.ietf.org/doc/rfc4408/) et consiste à ajouter un champ SPF ou TXT au DNS du domaine, qui contient la liste des IP autorisées à envoyer des e-mails depuis ce domaine.
 - **Reverse DNS ou Reverse IP** : Le *reverse* permet de « traduire » une IP en un domaine. Cela permet de retrouver le domaine associé à l'adresse IP.
-- **DKIM** : Cette norme est décrite dans la [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871). AOL et Google (Gmail) fonctionnent sur cette base. 
+- ****DKIM**** : Cette norme est décrite dans la [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871). AOL et Google (Gmail) fonctionnent sur cette base. 
 
 Pour plus d'informations sur les services ci-dessus, consultez notre guide « [Optimiser l’envoi d’e-mails](https://docs.ovh.com/ca/fr/dedicated/optimiser-envoi-emails/) ».
 

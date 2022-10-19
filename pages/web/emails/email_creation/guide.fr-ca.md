@@ -108,15 +108,15 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 >>
 >> |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
 >> |---|---|---|---|
->> |Entrant|SSL0.OVH.NET|993|143|
->> |Sortant|SSL0.OVH.NET|465|587|
+>> |Entrant|imap.mail.ovh.ca|993|143|
+>> |Sortant|smtp.mail.ovh.ca|465|587|
 >>
 > **Pour une configuration en POP**
 >>
 >> |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
 >> |---|---|---|---|
->> |Entrant|SSL0.OVH.NET|995|110|
->> |Sortant|SSL0.OVH.NET|465|587|
+>> |Entrant|pop.mail.ovh.ca|995|110|
+>> |Sortant|smtp.mail.ovh.ca|465|587|
 >>
 
 > [!warning]

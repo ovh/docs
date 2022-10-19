@@ -2,7 +2,7 @@
 deprecated: true
 title: 'Monitoring en beheer van geautomatiseerde e-mails in uw webhosting'
 slug: web_hosting_monitoren_van_automatische_e-mails
-excerpt: 'Ontdek hoe u geautomatiseerde e-mails, die vanuit uw OVH-webhosting worden verzonden, kunt monitoren en beheren'
+excerpt: 'Ontdek hoe u geautomatiseerde e-mails, die vanuit uw OVHcloud-webhosting worden verzonden, kunt monitoren en beheren'
 section: Diagnostisch
 ---
 
@@ -12,25 +12,25 @@ section: Diagnostisch
 
 Geautomatiseerde e-mails zijn berichten die via scripts worden verzonden. Ze worden bijvoorbeeld gebruikt in contactformulieren op uw website en stellen uw webgebruikers in staat u e-mails te sturen.
 
-Deze handleiding legt uit hoe u geautomatiseerde e-mails, die vanuit uw OVH-webhosting worden verzonden, kunt monitoren en beheren.
+Deze handleiding legt uit hoe u geautomatiseerde e-mails, die vanuit uw OVHcloud-webhosting worden verzonden, kunt monitoren en beheren.
 
 ## Vereisten
 
-- U moet beschikken over een [OVH-webhosting plan](https://www.ovh.com/nl/shared-hosting/){.external}.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
+- U moet beschikken over een [OVHcloud-webhosting plan](https://www.ovh.com/nl/shared-hosting/){.external}.
+- U moet ingelogd zijn op uw [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 > [!primary]
 >
-> Deze handleiding is alleen relevant voor e-mails die worden verzonden met behulp van scripts die zich bevinden in uw OVH-webhostingsplan.
+> Deze handleiding is alleen relevant voor e-mails die worden verzonden met behulp van scripts die zich bevinden in uw OVHcloud-webhostingsplan.
 >
-> Wilt u e-mailadressen beheren die zijn opgenomen in uw MX Plan of in uw [OVH-webhosting](https://www.ovh.com/nl/shared-hosting/){.external}? Ga naar het gedeelte `Emails`{.action} van uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
+> Wilt u e-mailadressen beheren die zijn opgenomen in uw MX Plan of in uw [OVHcloud-webhosting](https://www.ovh.com/nl/shared-hosting/){.external}? Ga naar het gedeelte `Emails`{.action} van uw [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 >
 
 ## Instructies
 
-In uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} kunt u geautomatiseerde e-mails controleren en beheren die vanuit uw OVH-webhosting zijn verzonden. Log eerst in op uw OVH Control Panel, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhosting. Klik vervolgens op `Meer +`{.action} en vervolgens op `E-mailscripts`{.action}.
+In uw [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} kunt u geautomatiseerde e-mails controleren en beheren die vanuit uw OVHcloud-webhosting zijn verzonden. Log eerst in op uw OVHcloud Control Panel, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhosting. Klik vervolgens op `Meer +`{.action} en vervolgens op `E-mailscripts`{.action}.
 
-Met deze handleiding kunt u leren hoe u geautomatiseerde e-mails, die vanuit uw OVH-webhosting worden verzonden, kunt monitoren en beheren.
+Met deze handleiding kunt u leren hoe u geautomatiseerde e-mails, die vanuit uw OVHcloud-webhosting worden verzonden, kunt monitoren en beheren.
 
 ![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
 
@@ -41,10 +41,10 @@ De `E-mailscripts`{.action}-pagina bevat verschillende soorten informatie, die u
 |Informatie|Details|
 |---|---|
 |Service status|Toont de huidige status van een dienst die geautomatiseerde e-mails verzendt vanuit uw webhosting. Een status in een groen vakje betekent dat e-mailverzending operationeel is, terwijl een status in een rood vakje betekent dat e-mails niet langer worden verzonden. Afhankelijk van deze status, varieert de manier waarop e-mail wordt verzonden. Raadpleeg voor meer informatie hierover het gedeelte [Verzending van geautomatiseerde e-mails beheren](https://docs.ovh.com/nl/hosting/web_hosting_monitoren_van_automatische_e-mails/#verzendstatus-beheren-voor-geautomatiseerde-e-mails){.external} in de handleiding.|
-|Stuur foutmeldingen naar|Ontvang dagelijks foutmeldingen op een e-mailadres van uw keuze. U kunt hiervoor een e-mailadres instellen door op de knop `Ontvanger wijzigen`{.action} te klikken. Dit rapport bevat e-mails die zijn verzonden vanuit uw webhosting en naar OVH zijn teruggestuurd, omdat ze geen ontvanger konden bereiken. Door op de knop `E-mails met foutmeldingen`{.action} te klikken, kunt u ook op elk gewenst moment rapporten lezen via uw OVH Control Panel.|
-|Totaal aantal verzonden e-mails|Geeft het totale aantal geautomatiseerde e-mails weer dat is verzonden sinds de creatie van uw OVH-webhosting.|
+|Stuur foutmeldingen naar|Ontvang dagelijks foutmeldingen op een e-mailadres van uw keuze. U kunt hiervoor een e-mailadres instellen door op de knop `Ontvanger wijzigen`{.action} te klikken. Dit rapport bevat e-mails die zijn verzonden vanuit uw webhosting en naar OVHcloud zijn teruggestuurd, omdat ze geen ontvanger konden bereiken. Door op de knop `E-mails met foutmeldingen`{.action} te klikken, kunt u ook op elk gewenst moment rapporten lezen via uw OVHcloud Control Panel.|
+|Totaal aantal verzonden e-mails|Geeft het totale aantal geautomatiseerde e-mails weer dat is verzonden sinds de creatie van uw OVHcloud-webhosting.|
 |Vandaag verzonden e-mails |Toont het totale aantal geautomatiseerde e-mails dat alleen vandaag is verzonden.|
-|Totaal aantal e-mails met foutmeldingen|Geeft het totale aantal geautomatiseerde e-mails weer dat is verzonden sinds u uw webhosting bestelde, maar werd teruggestuurd naar OVH met foutmeldingen omdat deze de ontvangers niet konden bereiken.|
+|Totaal aantal e-mails met foutmeldingen|Geeft het totale aantal geautomatiseerde e-mails weer dat is verzonden sinds u uw webhosting bestelde, maar werd teruggestuurd naar OVHcloud met foutmeldingen omdat deze de ontvangers niet konden bereiken.|
 |Log van verzonden e-mails|Geeft een grafiek weer die het logbestand vertegenwoordigt van e-mails die in de loop van de vorige dagen zijn verzonden vanuit uw webhosting.|
 
 > [!primary]

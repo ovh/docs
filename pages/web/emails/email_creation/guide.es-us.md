@@ -111,15 +111,15 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 >>
 >> |Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
 >> |---|---|---|---|
->> |Entrante|SSL0.OVH.NET|993|143|
->> |Saliente|SSL0.OVH.NET|465|587|
+>> |Entrante|imap.mail.ovh.ca|993|143|
+>> |Saliente|smtp.mail.ovh.ca|465|587|
 >>
 > **Configuración en POP**
 >>
 >> |Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
 >> |---|---|---|---|
->> |Entrante|SSL0.OVH.NET|995|110|
->> |Saliente|SSL0.OVH.NET|465|587|
+>> |Entrante|pop.mail.ovh.ca|995|110|
+>> |Saliente|smtp.mail.ovh.ca|465|587|
 >>
 
 > [!warning]
