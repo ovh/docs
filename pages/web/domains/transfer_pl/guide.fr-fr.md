@@ -9,9 +9,18 @@ section: Transfert
 order: 1
 ---
 
-**Dernière mise à jour le 02/09/2022**
+**Dernière mise à jour le 19/10/2022**
 
 ## Objectif
+
+> [!warning]
+>
+> Attention, si le domaine est déjà enregistré chez OVHcloud, il faut effectuer en réalité non pas un transfert entrant mais [un changement des contacts « administrateur », « technique » et/ou « facturation »](https://docs.ovh.com/fr/customer/gestion-des-contacts/) pour votre nom de domaine.
+>
+> En effet, les véritables transferts de nom de domaine ne s'effectuent qu'entre les bureaux d'enregistrements tels qu'OVHcloud.
+>
+> Si la propriété du domaine doit changer également, n'oubliez pas d'effectuer cette action **avant** de changer les contacts de votre domaine à l'aide de notre documentation sur le [changement de propriétaire d'un nom de domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
+>
 
 Votre nom de domaine en .pl est actuellement déposé dans un bureau d’enregistrement et vous souhaitez le basculer vers OVHcloud ? C'est possible, via une procédure de transfert.
 
