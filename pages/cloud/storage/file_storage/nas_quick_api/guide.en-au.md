@@ -206,8 +206,8 @@ Use the following route to delete a partition:
 
 ## Go further
 
-[Mount your NAS via NFS share](https://docs.ovh.com/au/en/storage/nas-nfs)
+[Mount your NAS via NFS share](https://docs.ovh.com/au/en/storage/file-storage/nas/nfs/)
 
-[Mount your NAS on Windows Server via CIFS](https://docs.ovh.com/au/en/storage/nas/nas-cifs)
+[Mount your NAS on Windows Server via CIFS](https://docs.ovh.com/au/en/storage/file-storage/nas/cifs/)
 
 Join our community of users on <https://community.ovh.com/en/>.

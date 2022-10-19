@@ -17,7 +17,7 @@ Este manual explica-lhe como configurar um domínio nos seus containers para fac
 
 ### Requisitos
 
-- Consulte o guia [Criação de container de armazenamento](https://docs.ovh.com/fr/storage/pcs/creation-de-conteneur/)
+- Consulte o guia [Criação de container de armazenamento](https://docs.ovh.com/fr/storage/object-storage/pcs/create-container/)
 - Um domínio
 
 ## Como funciona?

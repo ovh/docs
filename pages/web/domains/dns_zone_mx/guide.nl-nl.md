@@ -40,7 +40,7 @@ Over het algemeen is het **wijzigen van MX-records een lastige taak**. Als u fou
 
 ### Stap 2: Kennis van de OVH MX-configuratie
 
-In de onderstaande tabel hebben we de OVH MX-configuratie vermeld die we kunnen gebruiken voor onze MX Plan-oplossingen (beide als een op zichzelf staande oplossing of opgenomen als onderdeel van onze [OVH-webhostingsplannen](https://www.ovhcloud.com/nl/web-hosting/){.external}, [Email Pro](https://www.ovhcloud.com/nl/emails/email-pro/){.external} en [Exchange](hhttps://www.ovhcloud.com/nl/emails/){.external}-oplossingen. Onze e-mailservers hebben ook antispam en antivirus.
+In de onderstaande tabel hebben we de OVH MX-configuratie vermeld die we kunnen gebruiken voor onze MX Plan-oplossingen (beide als een op zichzelf staande oplossing of opgenomen als onderdeel van onze [OVH-webhostingsplannen](https://www.ovhcloud.com/nl/web-hosting/){.external}, [Email Pro](https://www.ovhcloud.com/nl/emails/email-pro/){.external} en [Exchange](https://www.ovhcloud.com/nl/emails/){.external}-oplossingen. Onze e-mailservers hebben ook antispam en antivirus.
 
 |Domein|TTL|Soort Record|Prioriteit|Target|
 |---|---|---|---|---|

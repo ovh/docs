@@ -204,8 +204,8 @@ Utilisez la route suivante pour supprimer une partition :
 
 ## Aller plus loin
 
-[Montez votre NAS via un partage NFS](https://docs.ovh.com/ca/fr/storage/nas/nas-nfs)
+[Montez votre NAS via un partage NFS](https://docs.ovh.com/ca/fr/storage/file-storage/nas/nfs/)
 
-[Montez votre NAS sur Windows Server via CIFS](https://docs.ovh.com/ca/fr/storage/nas/nas-cifs)
+[Montez votre NAS sur Windows Server via CIFS](https://docs.ovh.com/ca/fr/storage/file-storage/nas/cifs/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

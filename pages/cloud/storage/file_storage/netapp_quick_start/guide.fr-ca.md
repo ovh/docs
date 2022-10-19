@@ -18,7 +18,7 @@ Dans ce guide de démarrage rapide, découvrez comment débuter sur votre offre 
 
 - Disposer d'une offre OVHcloud Enterprise File Storage
 - Être connecté sur la page des [API OVHcloud](https://ca.api.ovh.com/)
-- Savoir [monter un partage NFS](https://docs.ovh.com/ca/fr/storage/nas/nas-nfs/)
+- Savoir [monter un partage NFS](https://docs.ovh.com/ca/fr/storage/file-storage/nas/nfs/)
 
 ## L'essentiel
 

@@ -296,8 +296,8 @@ Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten p
 
 ## Sprawdź również
 
-[Montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/nas-nfs)
+[Montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/file-storage/nas/nfs/)
 
-[Skonfigurować NAS na serwerze Windows poprzez CIFS](https://docs.ovh.com/pl/storage/nas/nas-cifs)
+[Skonfigurować NAS na serwerze Windows poprzez CIFS](https://docs.ovh.com/pl/storage/file-storage/nas/cifs/)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

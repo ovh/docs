@@ -38,8 +38,8 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 | | |
 |---|---|
 |![Thunderbird](images/thunderbird-win-mxplan01.png){.thumbnail}|In the window that appears, enter the following information: <br>\- Your display name<br>\- Email <br>\- Password|
-|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>\- Server **imap.mail.ovh.ca** <br>\- Port **993** <br>\- SSL **SSL/TLS** <br>\- Authentication **Normal password** <br>\- Username **Full email address**|![Thunderbird](images/thunderbird-win-mxplan02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-mxplan03.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>\- Server **smtp.mail.ovh.ca** <br>\- Port **465** <br>\- SSL **SSL/TLS** <br>\- Authentication **Normal password** <br>\- Username **Full email address**<br><br>To complete the configuration, click `Done`{.action}|
+|Then click `Configure manually...`{.action} to enter the **INCOMING** server settings: <br>- Protocol **IMAP** <br>\- Server **imap.mail.ovh.ca** <br>\- Port **993** <br>\- SSL **SSL/TLS** <br>\- Authentication **Normal password** <br>\- Username **Full email address**|![Thunderbird](images/thunderbird-win-mxplan02-ca.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-mxplan03-ca.png){.thumbnail}|Enter **OUTGOING** server settings: <br>- Protocol **SMTP** <br>\- Server **smtp.mail.ovh.ca** <br>\- Port **465** <br>\- SSL **SSL/TLS** <br>\- Authentication **Normal password** <br>\- Username **Full email address**<br><br>To complete the configuration, click `Done`{.action}|
 
 
 
@@ -71,12 +71,12 @@ If your email account has already been set up and you need to access the account
 
 - To change the settings for **receiving** your emails, click `Server Settings`{.action} in the left-hand column below your email address.
 
-![Thunderbird](images/thunderbird-win-mxplan05.png){.thumbnail}
+![Thunderbird](images/thunderbird-win-mxplan05-ca.png){.thumbnail}
 
 - To change the settings for **sending** emails, click `Outgoing Server (SMTP)`{.action} at the bottom of the left-hand column.
 - Select the email address in the list, and then click on `Edit`{.action}.
 
-![Thunderbird](images/thunderbird-win-mxplan06.png){.thumbnail}
+![Thunderbird](images/thunderbird-win-mxplan06-ca.png){.thumbnail}
 
 
 ## Go further <a name="gofurther"></a>

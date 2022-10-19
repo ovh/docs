@@ -39,8 +39,8 @@ Les comptes MX Plan peuvent être configurés sur différents logiciels de messa
 | | |
 |---|---|
 |![Thunderbird](images/thunderbird-win-mxplan01.png){.thumbnail}|Dans la fenêtre qui s'affiche, saisissez les 3 informations suivantes: <br>- Votre nom complet (Nom d'affichage)<br>- Adresse électronique <br>- Mot de passe.|
-|Cliquez ensuite sur `Configurer manuellement...`{.action} pour saisir les paramètres de serveur **ENTRANT**: <br>- Protocole **IMAP** <br>- Serveur **imap.mail.ovh.ca** <br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**|![Thunderbird](images/thunderbird-win-mxplan02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-mxplan03.png){.thumbnail}|Saisir les paramètres de serveur **SORTANT**: <br>- Protocole **SMTP** <br>- Serveur **smtp.mail.ovh.ca** <br>- Port **465** <br>- SSL **SSL/TLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**<br><br>Pour finaliser la configuration, cliquez sur `Terminé`{.action}|
+|Cliquez ensuite sur `Configurer manuellement...`{.action} pour saisir les paramètres de serveur **ENTRANT**: <br>- Protocole **IMAP** <br>- Serveur **imap.mail.ovh.ca** <br>- Port **993** <br>- SSL **SSL/TLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**|![Thunderbird](images/thunderbird-win-mxplan02-ca.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-win-mxplan03-ca.png){.thumbnail}|Saisir les paramètres de serveur **SORTANT**: <br>- Protocole **SMTP** <br>- Serveur **smtp.mail.ovh.ca** <br>- Port **465** <br>- SSL **SSL/TLS** <br>- Authentification **Mot de passe normal** <br>- Identifiant **votre adresse e-mail complète**<br><br>Pour finaliser la configuration, cliquez sur `Terminé`{.action}|
 
 
 
@@ -72,12 +72,12 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 
 - Pour modifier les paramètres liés à la **réception** de vos e-mails, cliquez sur `Paramètres serveur`{.action} dans la colonne de gauche sous votre adresse e-mail.
 
-![Thunderbird](images/thunderbird-win-mxplan05.png){.thumbnail}
+![Thunderbird](images/thunderbird-win-mxplan05-ca.png){.thumbnail}
 
 - Pour modifier les paramètres liés à **l'envoi** de vos e-mails, cliquez sur `Serveur sortant (SMTP)`{.action} tout en bas de la colonne de gauche.
 - Cliquez sur l'adresse e-mail concernée dans la liste, puis cliquez sur `Modifier`{.action}.
 
-![Thunderbird](images/thunderbird-win-mxplan06.png){.thumbnail}
+![Thunderbird](images/thunderbird-win-mxplan06-ca.png){.thumbnail}
 
 
 ## Aller plus loin

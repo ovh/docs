@@ -22,7 +22,7 @@ In dieser Schnellstart-Anleitung geben wir einen Überblick über die Verwendung
 
 - Sie verfügen über einen OVHcloud Enterprise File Storage
 - Sie sind zur Verwendung der [OVHcloud API](https://api.ovh.com/) eingeloggt
-- Grundlegendes Verständnis der [NFS-Freigabe](https://docs.ovh.com/de/storage/nas-nfs/)
+- Grundlegendes Verständnis der [NFS-Freigabe](https://docs.ovh.com/de/storage/file-storage/nas/nfs/)
 
 ## Grundlagen
 

@@ -95,7 +95,7 @@ If the word "Yes" is visible, an SSL certificate has already been set up on the 
 
 ![managessl](images/manage-ssl-step1.png){.thumbnail}
 
-In the window that appears, select the SSL certificate you would like to order. Depending on the [Web Hosting plan](hhttps://www.ovhcloud.com/en/web-hosting/){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
+In the window that appears, select the SSL certificate you would like to order. Depending on the [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
 
 ![managessl](images/manage-ssl-step2.png){.thumbnail}
 

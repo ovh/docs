@@ -313,7 +313,7 @@ This will save the report in your working directory:
 
 You can also export the generated report to an OVHcloud Object Storage container, as they are compatible with S3 API. It's like a AWS S3 bucket but on the OVHcloud infrastructure.
 
-First, you need to have an Object Storage container, if you don't already had one, you can follow the [Creating an Object Storage container](../../storage/pcs/create-container/) guide.
+First, you need to have an Object Storage container, if you don't already had one, you can follow the [Creating an Object Storage container](https://docs.ovh.com/sg/en/storage/object-storage/pcs/create-container/) guide.
 
 For this guide, our Object Storage container is named `popeye` and its region is `GRA`.
 

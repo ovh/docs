@@ -84,7 +84,7 @@ Pour ce faire, vous devez configurer un `backend` dans vos fichiers de configura
 
 ### Création d'un conteneur/bucket Object Storage
 
-Vous devez d’abord disposer d’un conteneur Object Storage. Si ce n’est pas le cas, suivez le tutoriel [Création d’un conteneur Object Storage](https://docs.ovh.com/fr/storage/pcs/creation-de-conteneur/).
+Vous devez d’abord disposer d’un conteneur Object Storage. Si ce n’est pas le cas, suivez le tutoriel [Création d’un conteneur Object Storage](https://docs.ovh.com/fr/storage/object-storage/pcs/create-container/).
 
 Pour ce guide, notre conteneur Object Storage s'appelle `terraform-state` et sa région `GRA`.
 

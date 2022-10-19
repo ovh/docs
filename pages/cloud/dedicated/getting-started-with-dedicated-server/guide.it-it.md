@@ -77,7 +77,7 @@ Se una chiave SSH è già registrata, appare nel menu a tendina con "Chiavi SSH"
 
 Per farlo, apri la barra laterale cliccando sul tuo nome nell'angolo in alto a destra e utilizza la scorciatoia `Prodotti e servizi`{.action}.
 
-![Personalizza la configurazione della partizione](images/SSH_Keys_panel_2022.png){.thumbnail}
+![Personalizza la configurazione della partizione](images/SSH_keys_panel_2022.png){.thumbnail}
 
 In "I tuoi servizi", passa alla scheda `Chiavi SSH`{.action} e clicca su `Aggiungi una chiave SSH`{.action}.
 

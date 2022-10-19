@@ -153,7 +153,7 @@ Je nach gewähltem Protokoll für das Volume muss der Mountbefehl verschieden se
 
 > [!primary]
 >
-> Die Anleitung für NFS finden Sie [hier](https://docs.ovh.com/de/storage/nas-nfs/).
+> Die Anleitung für NFS finden Sie [hier](https://docs.ovh.com/de/storage/file-storage/nas/nfs/).
 >
 > Beachten Sie, dass der abgerufene Mountpfad IP_NAS/NFS_PATH in dieser Anleitung ersetzt.
 >  

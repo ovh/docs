@@ -74,7 +74,7 @@ Sobald Ihr Enterprise File Storage in Betrieb ist, können Sie ein oder mehrere 
 > - Die Größe eines Volumes kann sowohl nach oben und nach unten angepasst werden.
 >
 
-Weitere Informationen finden Sie in der Anleitung ["Volumes verwalten"](https://docs.ovh.com/de/storage/netapp-volumes/).
+Weitere Informationen finden Sie in der Anleitung ["Volumes verwalten"](https://docs.ovh.com/de/storage/file-storage/netapp/volumes/).
 
 ### Funktionsweise der ACL
 
@@ -89,7 +89,7 @@ Diese Regeln bestehen aus einer Quell-IP Ihres Netzwerks im x.x.x.x/x Format und
 > Sie können eine oder mehrere Regeln pro Volume erstellen.
 >
 
-Weitere Informationen finden Sie in der Anleitung ["Volume ACLs verwalten"](https://docs.ovh.com/de/storage/netapp-volume-acl/).
+Weitere Informationen finden Sie in der Anleitung ["Volume ACLs verwalten"](https://docs.ovh.com/de/storage/file-storage/netapp/volume-acl/).
 
 ### Funktionsprinzip von Snapshots
 
@@ -105,7 +105,7 @@ Der festgestellte tägliche Verbrauch der Snapshots liegt für viele Anwendungen
 
 ![Enterprise File Storage 4](images/Netapp_Concept_4.PNG)
 
-Weitere Informationen finden Sie in der Anleitung ["Volume Snapshots verwalten"](https://docs.ovh.com/de/storage/netapp-volume-snapshots/).
+Weitere Informationen finden Sie in der Anleitung ["Volume Snapshots verwalten"](https://docs.ovh.com/de/storage/file-storage/netapp/volume-snapshots/).
 
 ### Begrenzung des Dienstes für die externe Testphase (Beta)
 

@@ -74,7 +74,7 @@ Una volta attivata la soluzione Enterprise File Storage, è possibile creare uno
 > - La dimensione di un volume è scalabile, sia verso l'alto che verso il basso.
 >
 
-Per maggiori informazioni, consulta la guida ["Gestire i tuoi volumi"](https://docs.ovh.com/it/storage/netapp-volumes/).
+Per maggiori informazioni, consulta la guida ["Gestire i tuoi volumi"](https://docs.ovh.com/it/storage/file-storage/netapp/volumes/).
 
 ### Principio di funzionamento delle ACL
 
@@ -89,7 +89,7 @@ Queste regole sono costituite da un indirizzo IP sorgente della tua rete in form
 > È possibile creare una o più regole per volume.
 >
 
-Per maggiori informazioni, consulta la guida ["Gestire le ACL di un volume"](https://docs.ovh.com/it/storage/netapp-volume-acl/).
+Per maggiori informazioni, consulta la guida ["Gestire le ACL di un volume"](https://docs.ovh.com/it/storage/file-storage/netapp/volume-acl/).
 
 ### Principio di funzionamento degli Snapshot
 
@@ -105,7 +105,7 @@ Il consumo giornaliero constatato degli Snapshot è compreso tra l'1 e il 5% del
 
 ![Enterprise File Storage 4](images/Netapp_Concept_4.PNG)
 
-Per maggiori informazioni, consulta la guida ["Gestire gli Snapshot di un volume"](https://docs.ovh.com/it/storage/netapp-volume-snapshots/).
+Per maggiori informazioni, consulta la guida ["Gestire gli Snapshot di un volume"](https://docs.ovh.com/it/storage/file-storage/netapp/volume-snapshots/).
 
 ### Limiti dell'offerta Enterprise File Storage per la fase di test esterni (Beta)
 

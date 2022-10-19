@@ -73,7 +73,7 @@ Jeśli klucz SSH jest już zarejestrowany, pojawi się on w rozwijanym menu w po
 
 Aby to zrobić, otwórz pasek boczny klikając swoją nazwę w prawym górnym rogu i użyj skrótu `Produkty i usługi`{.action}.
 
-![Spersonalizuj konfigurację partycji](images/SSH_Keys_panel_2022.png){.thumbnail}
+![Spersonalizuj konfigurację partycji](images/SSH_keys_panel_2022.png){.thumbnail}
 
 W sekcji "Moje usługi" przejdź do zakładki `Klucze SSH`{.action} i kliknij `Dodaj klucz SSH`{.action}.
 

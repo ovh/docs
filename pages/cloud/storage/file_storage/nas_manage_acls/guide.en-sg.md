@@ -165,8 +165,8 @@ To delete an IP address or address range from the ACL, use the following route:
 
 ## Go further
 
-[Mount your NAS via NFS share](https://docs.ovh.com/sg/en/storage/nas-nfs)
+[Mount your NAS via NFS share](https://docs.ovh.com/sg/en/storage/file-storage/nas/nfs/)
 
-[Mount your NAS on Windows Server via CIFS](https://docs.ovh.com/sg/en/storage/nas/nas-cifs)
+[Mount your NAS on Windows Server via CIFS](https://docs.ovh.com/sg/en/storage/file-storage/nas/cifs/)
 
 Join our community of users on <https://community.ovh.com/en/>.

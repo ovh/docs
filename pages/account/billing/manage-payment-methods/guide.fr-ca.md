@@ -91,7 +91,7 @@ Si vous ne souhaitez plus utiliser l'un de vos moyens de paiement, vous pouvez l
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Si vous souhaitez supprimer l'intégralité de vos moyens de paiement, l'ensemble de vos services doit être en [renouvellement manuel](hhttps://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#le-renouvellement-manuel).
+Si vous souhaitez supprimer l'intégralité de vos moyens de paiement, l'ensemble de vos services doit être en [renouvellement manuel](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#le-renouvellement-manuel).
 
 #### Supprimer un moyen de paiement via les API OVHcloud
 

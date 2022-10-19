@@ -10,7 +10,7 @@ order: 2
 
 ## Objective
 
-Enterprise File Storage services can be managed [via the OVHcloud API](https://docs.ovh.com/sg/en/storage/netapp-quickstart/) or in the OVHcloud Control Panel.
+Enterprise File Storage services can be managed [via the OVHcloud API](https://docs.ovh.com/sg/en/storage/file-storage/netapp/quick-start/) or in the OVHcloud Control Panel.
 
 **This guide explains how to manage Enterprise File Storage volumes and snapshots in the OVHcloud Control Panel.**
 
@@ -28,7 +28,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 The `General information`{.action} tab displays some technical information, general subscription details and a shortcut to [create a volume](#create_volume).
 
 > [!primary]
-> Please visit the [concepts page](https://docs.ovh.com/sg/en/storage/netapp-concepts/) for detailed information on the technical properties of Enterprise File Storage.
+> Please visit the [concepts page](https://docs.ovh.com/sg/en/storage/file-storage/netapp/concepts/) for detailed information on the technical properties of Enterprise File Storage.
 >
 
 ### Managing volumes <a name="manage_volume"></a>
@@ -142,12 +142,12 @@ If you are new to using Enterprise File Storage, you can follow this sequence of
 
 ## Go further <a name="gofurther"></a>
 
-[API Quickstart](https://docs.ovh.com/sg/en/storage/netapp-quickstart)
+[API Quickstart](https://docs.ovh.com/sg/en/storage/file-storage/netapp/quick-start/)
 
-[Managing volumes via API](https://docs.ovh.com/sg/en/storage/netapp-volumes)
+[Managing volumes via API](https://docs.ovh.com/sg/en/storage/file-storage/netapp/volumes/)
 
-[Managing volume ACLs via API](https://docs.ovh.com/sg/en/storage/netapp-volume-acl)
+[Managing volume ACLs via API](https://docs.ovh.com/sg/en/storage/file-storage/netapp/volume-acl/)
 
-[Managing volume snapshots via API](https://docs.ovh.com/sg/en/storage/netapp-volume-snapshots)
+[Managing volume snapshots via API](https://docs.ovh.com/sg/en/storage/file-storage/netapp/volume-snapshots/)
 
 Join our community of users on <https://community.ovh.com/en/>.

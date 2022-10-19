@@ -13,7 +13,7 @@ order: 040
 
 > [!primary]
 >
-> - Si vous êtes intéressé par la classe de stockage ***Standard object storage - SWIFT API***, veuillez suivre ce [guide](https://docs.ovh.com/fr/storage/pcs/creation-de-conteneur/).
+> - Si vous êtes intéressé par la classe de stockage ***Standard object storage - SWIFT API***, veuillez suivre ce [guide](https://docs.ovh.com/fr/storage/object-storage/pcs/create-container/).
 > - Si vous êtes intéressé par la classe de stockage ***Cloud Archive - SWIFT API***, veuillez suivre ce [guide](https://docs.ovh.com/fr/storage/pca/creation-de-conteneur/).
 >
 

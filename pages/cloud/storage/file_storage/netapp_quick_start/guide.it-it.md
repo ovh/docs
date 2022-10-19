@@ -22,7 +22,7 @@ In questa guida, scopri come iniziare a utilizzare la soluzione Enterprise File 
 
 - Disporre di una soluzione OVHcloud Enterprise File Storage
 - Essere connesso alla pagina delle [API OVHcloud](https://api.ovh.com/)
-- Saper [eseguire il mount di un NAS tramite NFS](https://docs.ovh.com/it/storage/nas-nfs/)
+- Saper [eseguire il mount di un NAS tramite NFS](https://docs.ovh.com/it/storage/file-storage/nas/nfs/)
 
 ## L'essenziale
 

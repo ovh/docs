@@ -68,7 +68,7 @@ Estas son las opciones que puede elegir:
 
 Una vez introducidos los datos, haga clic en el botón `Añadir cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta. 
 
-![MX Plan](images/configuration-gmail-web-step3.png){.thumbnail}
+![MX Plan](images/configuration-gmail-web-step3-ca.png){.thumbnail}
 
 A continuación, si quiere enviar mensajes con su dirección de correo de OVHcloud desde la interfaz web de Gmail, marque la casilla `Sí, deseo poder enviar mensajes como`{.action} y haga clic en `Paso siguiente`{.action}. 
 
@@ -87,7 +87,7 @@ Introduzca a continuación la configuración del servidor SMTP (servidor de sali
 
 Una vez introducidos los datos, marque la casilla `Conexión segura mediante TLS`{.action} y haga clic en `Añadir cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta. 
 
-![MX Plan](images/configuration-gmail-web-step5.png){.thumbnail}
+![MX Plan](images/configuration-gmail-web-step5-ca.png){.thumbnail}
 
 Por último, debe validar la operación mediante un código de confirmación que recibirá en su dirección de correo de OVHcloud. Para solicitar este código, conéctese a su dirección de correo desde nuestra interfaz web disponible en <https://www.ovh.com/world/es/mail/>. 
 

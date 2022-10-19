@@ -20,7 +20,7 @@ Vous pouvez trouver plus d'informations directement sur leur [Site Web](http://w
 ## Prérequis
 
 - [Configurer l'utilisateur](https://docs.ovh.com/ca/fr/public-cloud/charger-les-variables-denvironnement-openstack/)
-- [Ajouter de l'espace de stockage](https://docs.ovh.com/ca/fr/storage/pcs/creation-de-conteneur/)
+- [Ajouter de l'espace de stockage](https://docs.ovh.com/ca/fr/storage/object-storage/pcs/create-container/)
 
 > [!primary]
 >

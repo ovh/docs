@@ -13,10 +13,10 @@ Il existe différentes façons d'utiliser votre grappe Ceph. Nous allons décrir
 
 Vous devez d'abord vous assurer que vous avez bien effectué ces démarches :
 
-- [Créer un pool](https://docs.ovh.com/fr/storage/ceph/creer-un-pool/)
-- [Créer-un-utilisateur](https://docs.ovh.com/fr/storage/ceph/creer-un-utilisateur/)
-- [Ajouter des droits à un utilisateur sur un pool](https://docs.ovh.com/fr/storage/ceph/changer-droits-utilisateurs/)
-- [Ajouter un IP ACL](https://docs.ovh.com/fr/storage/ceph/creer-ip-acl/) pour permettre à votre serveur de contacter le cluster
+- [Créer un pool](https://docs.ovh.com/fr/storage/block-storage/ceph/create-a-pool/)
+- [Créer-un-utilisateur](https://docs.ovh.com/fr/storage/block-storage/ceph/create-a-user/)
+- [Ajouter des droits à un utilisateur sur un pool](https://docs.ovh.com/fr/storage/block-storage/ceph/change-user-rights/)
+- [Ajouter un IP ACL](https://docs.ovh.com/fr/storage/block-storage/ceph/create-an-ip-acl/) pour permettre à votre serveur de contacter le cluster
 
 ## En pratique
 

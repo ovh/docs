@@ -1,15 +1,23 @@
 ---
 title: 'Transférer un nom de domaine .uk vers OVHcloud'
-legacy_guide_number: 2026
 slug: transferer-domaine-couk
 excerpt: 'Vous trouverez dans ce guide différentes informations concernant le transfert d’un nom de domaine .uk ou assimilé vers OVHcloud'
 section: Transfert
-order: 4
+order: 04
 ---
 
-**Dernière mise à jour le 17/06/2022**
+**Dernière mise à jour le 19/10/2022**
 
 ## Objectif
+
+> [!warning]
+>
+> Attention, si le domaine est déjà enregistré chez OVHcloud, il faut effectuer en réalité non pas un transfert entrant mais [un changement des contacts « administrateur », « technique » et/ou « facturation »](https://docs.ovh.com/fr/customer/gestion-des-contacts/) pour votre nom de domaine.
+>
+> En effet, les véritables transferts de nom de domaine ne s'effectuent qu'entre les bureaux d'enregistrements tels qu'OVHcloud.
+>
+> Si la propriété du domaine doit changer également, n'oubliez pas d'effectuer cette action **avant** de changer les contacts de votre domaine à l'aide de notre documentation sur le [changement de propriétaire d'un nom de domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
+>
 
 Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une démarche spécifique.
 
