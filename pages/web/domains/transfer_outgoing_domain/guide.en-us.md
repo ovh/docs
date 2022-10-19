@@ -12,11 +12,11 @@ order: 04
 
 > [!warning]
 >
-> Warning, if the domain is already registered with OVHcloud, you do not need to make an outgoing transfer but [a change of "administrator", "technical" and/or "billing" contacts](https://docs.ovh.com/us/en/customer/managing-contacts/) for your domain name.
+> Be careful, if the domain is already registered with OVHcloud, you don't actually need to make an outgoing transfer but [a change of "administrator", "technical" and/or "billing" contacts](https://docs.ovh.com/us/en/customer/managing-contacts/) for your domain name.
 >
-> Effectively, domain name transfers only take place between registrars such as OVHcloud.
+> In fact, real domain name transfers are only carried out between registrars such as OVHcloud.
 >
-> If the domain name ownership must also change, don't forget to **before** changing the contacts for your domain using our documentation on [changing domain name owner](https://docs.ovh.com/us/en/domains/how-to-change-domain-name-holder/).
+> If the ownership of the domain needs to be changed as well, don't forget to do this **before** changing the contacts of your domain using our [changing domain name owner](https://docs.ovh.com/us/en/domains/how-to-change-domain-name-holder/) documentation.
 >
 
 **Domain transfer** refers to the process of moving a registered domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain transfer needs to be initiated by the new registrar. 

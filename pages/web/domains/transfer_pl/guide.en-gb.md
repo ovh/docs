@@ -15,11 +15,11 @@ order: 1
 
 > [!warning]
 >
-> Warning, if the domain is already registered with OVHcloud, you do not need to make an outgoing transfer but [a change of "administrator", "technical" and/or "billing" contacts](https://docs.ovh.com/gb/en/customer/managing-contacts/) for your domain name.
+> Be careful, if the domain is already registered with OVHcloud, you don't actually need to make an outgoing transfer but [a change of "administrator", "technical" and/or "billing" contacts](https://docs.ovh.com/gb/en/customer/managing-contacts/) for your domain name.
 >
-> Effectively, domain name transfers only take place between registrars such as OVHcloud.
+> In fact, real domain name transfers are only carried out between registrars such as OVHcloud.
 >
-> If the domain name ownership must also change, don't forget to **before** changing the contacts for your domain using our documentation on [changing domain name owner](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/).
+> If the ownership of the domain needs to be changed as well, don't forget to do this **before** changing the contacts of your domain using our [changing domain name owner](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/) documentation.
 >
 
 Your .pl domain name is currently filed with a registrar, and you want to switch it to OVHcloud? You can do this by following a transfer procedure.
