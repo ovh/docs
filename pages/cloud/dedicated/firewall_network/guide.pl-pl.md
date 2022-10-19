@@ -151,6 +151,8 @@ Następnie przejdź do menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.
 
 Na następnym ekranie kliknij przycisk `Dodaj regułę`{.action}, aby dodać regułę do Armor.
 
+Do dyspozycji masz **30 reguł dla każdego adresu IP**.
+
 ![Konfiguruj_Armor](images/ConfigureArmor2021.png){.thumbnail}
 
 Włącz porty zgodnie z Twoimi potrzebami na kolejnym ekranie i kliknij przycisk `Zatwierdź`{.action}, gdy zakończysz dodawanie reguł. Firewall Armor został już skonfigurowany.

@@ -157,6 +157,8 @@ Gehen Sie anschließend in das Menü `IP`{.action} und klicken Sie auf `...`{.ac
 
 Klicken Sie auf dem folgenden Bildschirm auf den Button `Regel hinzufügen`{.action}, um Armor hinzuzufügen.
 
+Sie können bis zu **30 Regeln für jede IP-Adresse** festlegen.
+
 ![configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
 
 Aktivieren Sie die Ports nach Bedarf auf dem folgenden Bildschirm und klicken Sie auf `Bestätigen`{.action}, wenn Sie Ihre Regeln hinzugefügt haben. Die Armor Firewall wurde nun erfolgreich konfiguriert.

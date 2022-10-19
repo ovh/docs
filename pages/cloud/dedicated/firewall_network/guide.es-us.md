@@ -152,6 +152,8 @@ A continuación, acceda al menú `Bare Metal Cloud`{.action} y abra la sección 
 
 En la siguiente pantalla, haga clic en el botón `Añadir una regla`{.action} para añadir una regla a Armor.
 
+Es posible añadir hasta **20 reglas por IP**.
+
 ![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
 
 Active los puertos según sus necesidades en la siguiente pantalla y haga clic en el botón `Confirmar`{.action} cuando haya terminado de añadir las reglas. El firewall Armor se ha configurado correctamente.

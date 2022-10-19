@@ -146,6 +146,8 @@ Ensuite, rendez-vous dans le menu `Bare Metal Cloud`{.action} et cliquez sur la 
 
 Sur l’écran suivant, cliquez sur le bouton `Ajouter une règle`{.action} pour ajouter une règle à Armor.
 
+Vous pouvez configurer jusqu'à **30 règles par adresse IP**.
+
 ![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
 
 Activez les ports selon vos besoins sur l'écran suivant et cliquez sur le bouton `Confirmer`{.action} lorsque vous avez fini d'ajouter vos règles. Le pare-feu Armor a maintenant été configuré avec succès.

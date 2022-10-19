@@ -146,6 +146,8 @@ Go to the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click o
 
 On the following screen, click the `Add a rule`{.action} button to add a rule to Armor.
 
+You can set up to **30 rules per IP**.
+
 ![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
 
 Enable the ports as needed on the following screen and click on the `Confirm`{.action} button when you are finished adding your rules. You have now successfully configured Armor.
