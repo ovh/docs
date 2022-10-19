@@ -106,9 +106,9 @@ Vous pouvez vous connecter aux URL des machines virtuelles **Prism Central** dep
 
 ### Suppression des enregistrements **Prism Central** pour les cluster de Roubaix et Gravelines.
 
-Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il est est nécessaire de n'utiliser qu'une Machine virtualle **Prism Central** commune au 3 clusters. Prism Central sera connecté au cluster d'Erith. 
+Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il est est nécessaire de n'utiliser qu'une Machine virtuelle **Prism Central** commune au 3 clusters. les trois cluster seront connectés à Prism Central du cluster d'Erith. 
 
-Dans un premier temps il faut deconnecter les machines virtuelles **Prism Central** des clusters de Roubaix et Gravelines.
+Dans un premier temps il faut retirer **Prism Element** des clusters des machines virtuelles **Prism Central** de Roubaix et Gravelines.
 
 
 #### Désactivation de **Prism Central** sur le cluster de Roubaix
@@ -121,6 +121,7 @@ saisissez le mot de passe de Prism Element
 ```
 Exécutez cette commande pour sortir Prism Element de Prism Central:
 
+```
 ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=adresse_ip_privee_prism_central\
 username=admin password=mdp_pe_roubaix force=true
 ```
