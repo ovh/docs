@@ -96,7 +96,7 @@ Si vous recevez correctement le message *The email has been sent successfully!* 
 
 - **Assurez-vous que vos envois n'utilisent pas de serveur SMTP** : ne spécifiez pas de serveur SMTP dans les paramètres de vos scripts lorsque vous utilisez la fonction « mail() » de PHP. Si vous disposez d'une interface pour administrer les envois d'e-mails depuis votre site web, modifiez ce paramètre dans la configuration de ce dernier.
 
-- **Vérifiez la taille totale de votre e-mail** : L'e-mail evoyé ne doit pas dépasser la taille totale de **10 Mo** (encapsulation et en-tête inclus). Le contenu même de votre e-mail ne devra donc pas excéder les **7/8 Mo**.
+- **Vérifiez la taille totale de votre e-mail** : L'e-mail envoyé ne doit pas dépasser la taille totale de **10 Mo** (encapsulation et en-tête inclus). Le contenu même de votre e-mail ne devra donc pas excéder les **7/8 Mo**.
 
 ### Gérer les états « Désactivé », « Bounce » et « SPAM »
 
