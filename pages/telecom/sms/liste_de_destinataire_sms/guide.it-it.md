@@ -89,11 +89,11 @@ Attribuisci un nome alla lista di destinatari e importa il file locale nello Spa
 
 ### Step 3: inviare un SMS alla tua lista di destinatari
 
-Adesso che hai importato la tua lista, segui la guida [Inviara SMS dal tuo Spazio Cliente](hhttps://docs.ovh.com/it/sms/inviare_sms_dallo_spazio_cliente/) per inviare un SMS ai destinatari della lista.
+Adesso che hai importato la tua lista, segui la guida [Inviara SMS dal tuo Spazio Cliente](https://docs.ovh.com/it/sms/inviare_sms_dallo_spazio_cliente/) per inviare un SMS ai destinatari della lista.
 
 ## Per saperne di più
 
-[Inviara SMS dal tuo Spazio Cliente](hhttps://docs.ovh.com/it/sms/inviare_sms_dallo_spazio_cliente/)
+[Inviara SMS dal tuo Spazio Cliente](https://docs.ovh.com/it/sms/inviare_sms_dallo_spazio_cliente/)
 
 [Gestire le rubriche indirizzi SMS](https://docs.ovh.com/it/sms/gestire_rubriche_sms/)
 

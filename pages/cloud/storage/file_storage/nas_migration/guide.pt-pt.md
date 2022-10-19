@@ -22,7 +22,7 @@ Para efetuar a transferência dos seus dados, é necessário:
 
 - Un NAS-HA OVHcloud
 - Uma distribuição compatível NFS
-- Ter montado previamente o NAS-HA seguindo as instruções para [montar o NAS-HA através de NFS](https://docs.ovh.com/pt/storage/nas-nfs/){.external}.
+- Ter montado previamente o NAS-HA seguindo as instruções para [montar o NAS-HA através de NFS](https://docs.ovh.com/pt/storage/file-storage/nas/nfs/){.external}.
 
 ## Instruções
 

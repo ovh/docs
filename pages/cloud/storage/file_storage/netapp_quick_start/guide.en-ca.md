@@ -24,7 +24,7 @@ You're able to choose file volume size, manage accesses using ACLs or create sna
 
 - An Enterprise File Storage service
 - You should be logged in to the [OVHcloud API](https://ca.api.ovh.com)
-- Basic understanding of how to [mount a NFS volume](https://docs.ovh.com/ca/en/storage/nas-nfs/)
+- Basic understanding of how to [mount a NFS volume](https://docs.ovh.com/ca/en/storage/file-storage/nas/nfs/)
 
 ## Instructions
 

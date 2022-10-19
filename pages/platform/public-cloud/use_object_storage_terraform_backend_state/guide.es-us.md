@@ -86,7 +86,7 @@ In order to do that you need to configure a `backend` in your Terraform HCL conf
 
 ### Creating an Object Storage container/bucket
 
-First, you need to have an Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](https://docs.ovh.com/us/es/storage/pcs/creacion-de-contenedor/) tutorial.
+First, you need to have an Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](https://docs.ovh.com/us/es/storage/object-storage/pcs/create-container/) tutorial.
 
 For this guide, our Object Storage container is named `terraform-state` and its region is `GRA`.
 

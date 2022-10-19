@@ -22,7 +22,7 @@ Dieser ist mit dem Object Storage der OVHcloud Public Cloud kompatibel und erlau
 
 ## Voraussetzungen
 
-- [Erstellung von Object Storage Containern](https://docs.ovh.com/de/storage/pcs/container-erstellen/)
+- [Erstellung von Object Storage Containern](https://docs.ovh.com/de/storage/object-storage/pcs/create-container/)
 - [Einen Zugang zu Horizon erstellen](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/#erstellung-eines-openstack-benutzers)
 
 ## In der praktischen Anwendung

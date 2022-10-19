@@ -26,7 +26,7 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 > Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
 
 > [!primary]
-> Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](hhttps://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) ».
+> Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) ».
 
 ## En pratique
 

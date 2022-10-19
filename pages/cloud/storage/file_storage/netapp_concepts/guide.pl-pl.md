@@ -74,7 +74,7 @@ Po uruchomieniu usługi Enterprise File Storage możesz utworzyć jeden lub kilk
 > - Wielkość wolumenu jest skalowalna, zarówno w górę, jak i w dół.
 >
 
-Więcej informacji znajdziesz w przewodniku ["Zarządzanie wolumenami"](https://docs.ovh.com/pl/storage/netapp-volumes/).
+Więcej informacji znajdziesz w przewodniku ["Zarządzanie wolumenami"](https://docs.ovh.com/pl/storage/file-storage/netapp/volumes/).
 
 ### Zasada działania właściwych organów
 
@@ -89,7 +89,7 @@ Reguły te składają się z adresu IP źródłowego Twojej sieci w formacie x.x
 > Możesz utworzyć jedną lub kilka reguł na wolumen.
 >
 
-Więcej informacji znajdziesz w przewodniku ["Zarządzanie ACL wolumenu"](https://docs.ovh.com/pl/storage/netapp-volume-acl/).
+Więcej informacji znajdziesz w przewodniku ["Zarządzanie ACL wolumenu"](https://docs.ovh.com/pl/storage/file-storage/netapp/volume-acl/).
 
 ### Zasada działania snapshotów
 
@@ -105,7 +105,7 @@ Zobserwowane dzienne zużycie snapshotów to od 1 do 5% pojemności wolumenu dla
 
 ![Enterprise File Storage 4](images/Netapp_Concept_4.PNG)
 
-Więcej informacji znajdziesz w przewodniku ["Zarządzanie snapshotami wolumenu"](https://docs.ovh.com/pl/storage/netapp-volume-snapshots/).
+Więcej informacji znajdziesz w przewodniku ["Zarządzanie snapshotami wolumenu"](https://docs.ovh.com/pl/storage/file-storage/netapp/volume-snapshots/).
 
 ### Ograniczenia oferty Enterprise File Storage dla fazy testów zewnętrznych (Beta)
 

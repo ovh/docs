@@ -154,7 +154,7 @@ Polecenie montowania będzie inne, w zależności od protokołu wybranego dla wo
 
 > [!primary]
 >
-> Instrukcje montażu NFS znajdziesz w przewodniku [Montowanie usługi NAS przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/nas-nfs/).
+> Instrukcje montażu NFS znajdziesz w przewodniku [Montowanie usługi NAS przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/file-storage/nas/nfs/).
 > Pamiętaj, że odzyskana ścieżka montowania zastępuje IP_NAS/NFS_PATH w tym przewodniku.
 >  
 

@@ -2,7 +2,7 @@
 title: Object Storage Swift - Setting up CORS on Object Storage (EN)
 slug: pcs/cors
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/pcs/cors'
+    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/pcs/cors/'
 excerpt: Find here the concepts to implement CORS
 section: OpenStack Swift Storage Class Specifics
 order: 050

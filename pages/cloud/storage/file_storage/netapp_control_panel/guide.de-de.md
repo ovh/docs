@@ -14,7 +14,7 @@ order: 2
 
 ## Ziel
 
-Enterprise File Storage Dienste können über die [OVHcloud API](https://docs.ovh.com/de/storage/netapp-quickstart/) oder in Ihrem OVHcloud Kundencenter verwaltet werden.
+Enterprise File Storage Dienste können über die [OVHcloud API](https://docs.ovh.com/de/storage/file-storage/netapp/quick-start/) oder in Ihrem OVHcloud Kundencenter verwaltet werden.
 
 **In dieser Anleitung erfahren Sie, wie Sie Enterprise File Storage Volumes und Snapshots in Ihrem Kundencenter verwalten.**
 
@@ -32,7 +32,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 Im Tab `Allgemeine Informationen`{.action} werden technische Informationen zu Ihrem Dienst, allgemeine Details zum Abonnement sowie ein Shortcut zur [Erstellung eines Volumes](#create_volume) angezeigt.
 
 > [!primary]
-> Detaillierte Informationen zu den technischen Eigenschaften der Enterprise File Storage Lösung finden Sie auf der Seite [Enterprise File Storage - Konzepte](https://docs.ovh.com/de/storage/netapp-concepts/).
+> Detaillierte Informationen zu den technischen Eigenschaften der Enterprise File Storage Lösung finden Sie auf der Seite [Enterprise File Storage - Konzepte](https://docs.ovh.com/de/storage/file-storage/netapp/concepts/).
 >
 
 ### Verwaltung der Volumes <a name="manage_volume"></a>
@@ -144,12 +144,12 @@ Wenn Sie mit der Enterprise File Storage Lösung nicht noch nicht vertraut sind,
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Enterprise File Storage - Quickstart API](https://docs.ovh.com/de/storage/netapp-quickstart)
+[Enterprise File Storage - Quickstart API](https://docs.ovh.com/de/storage/file-storage/netapp/quick-start/)
 
-[Enterprise File Storage - Verwaltung der Volumes](https://docs.ovh.com/de/storage/netapp-volumes)
+[Enterprise File Storage - Verwaltung der Volumes](https://docs.ovh.com/de/storage/file-storage/netapp/volumes/)
 
-[Enterprise File Storage - Verwaltung der Volume ACL](https://docs.ovh.com/de/storage/netapp-volume-acl)
+[Enterprise File Storage - Verwaltung der Volume ACL](https://docs.ovh.com/de/storage/file-storage/netapp/volume-acl/)
 
-[Enterprise File Storage - Verwaltung der Volume Snapshots](https://docs.ovh.com/de/storage/netapp-volume-snapshots)
+[Enterprise File Storage - Verwaltung der Volume Snapshots](https://docs.ovh.com/de/storage/file-storage/netapp/volume-snapshots/)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

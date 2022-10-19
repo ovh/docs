@@ -163,8 +163,8 @@ Pour supprimer une adresse IP ou une plage d'adresses de l'ACL, utilisez la rout
 
 ## Aller plus loin
 
-[Montez votre NAS via un partage NFS](https://docs.ovh.com/fr/storage/nas/nas-nfs)
+[Montez votre NAS via un partage NFS](https://docs.ovh.com/fr/storage/file-storage/nas/nfs/)
 
-[Montez votre NAS sur Windows Server via CIFS](https://docs.ovh.com/fr/storage/nas/nas-cifs)
+[Montez votre NAS sur Windows Server via CIFS](https://docs.ovh.com/fr/storage/file-storage/nas/cifs/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

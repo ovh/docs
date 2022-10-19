@@ -77,7 +77,7 @@ Si una llave SSH ya está registrada, aparecerá en el menú desplegable bajo "L
 
 Para ello, abra la columna izquierda haciendo clic en su nombre en la esquina superior derecha y utilice el acceso rápido `Productos y servicios`{.action}.
 
-![Personalizar la configuración de la partición](images/SSH_Keys_panel_2022.png){.thumbnail}
+![Personalizar la configuración de la partición](images/SSH_keys_panel_2022.png){.thumbnail}
 
 En "Mis servicios", abra la pestaña `Llaves SSH`{.action} y haga clic en `Añadir una llave SSH`{.action}.
 

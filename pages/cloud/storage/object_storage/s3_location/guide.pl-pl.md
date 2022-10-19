@@ -4,7 +4,7 @@ slug: s3/location
 section: General information
 order: 025
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/location/'
+    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/s3/location/'
 ---
 
 <style>

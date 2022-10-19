@@ -39,7 +39,7 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 #### Collecter les informatoons d'identification
 
 - Vous aurez besoin de l'*Access key* et de la *Secret key* de votre utilisateur. Ces informations sont accessibles depuis l'onglet `Utilisateurs S3` dans votre espace client.
-- Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs` puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](https://docs.ovh.com/fr/storage/s3/location/).
+- Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs` puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](https://docs.ovh.com/fr/storage/object-storage/s3/location/).
 
 #### Configuration
 

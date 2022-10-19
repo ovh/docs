@@ -282,8 +282,8 @@ Utilize a seguinte rota para eliminar uma partição:
 
 ## Quer saber mais?
 
-[Montar um NAS através de NFS](https://docs.ovh.com/pt/storage/nas-nfs)
+[Montar um NAS através de NFS](https://docs.ovh.com/pt/storage/file-storage/nas/nfs/)
 
-[Configure o seu NAS no Windows Server através do CIFS](https://docs.ovh.com/pt/storage/nas/nas-cifs)
+[Configure o seu NAS no Windows Server através do CIFS](https://docs.ovh.com/pt/storage/file-storage/nas/cifs/)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

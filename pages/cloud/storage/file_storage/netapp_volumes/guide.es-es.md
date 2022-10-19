@@ -154,7 +154,7 @@ El comando de montaje será diferente, según el protocolo elegido para el volum
 
 > [!primary]
 >
-> Para NFS, consulte las instrucciones de montaje en la guía [Montar un NAS mediante NFS](https://docs.ovh.com/es/storage/nas-nfs/) compartido.
+> Para NFS, consulte las instrucciones de montaje en la guía [Montar un NAS mediante NFS](https://docs.ovh.com/es/storage/file-storage/nas/nfs/) compartido.
 > Tenga en cuenta que la ruta de montaje recuperada sustituye a IP_NAS/NFS_PATH en esta guía.
 >  
 

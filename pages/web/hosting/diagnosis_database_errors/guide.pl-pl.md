@@ -179,7 +179,7 @@ Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcj
 
 Upewnij się, że baza danych jest pusta w zakładce `Bazy danych`{.action} odpowiedniego hostingu (kliknij przycisk `...`{.action} a następnie na `Przelicz kwotę`{.action}) w celu [zapisz obecne dane](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/).
 
-Możesz również zaznaczyć kratkę `Wyczyść aktualną bazę danych`{.action} tuż przed [uruchomieniem importu](hhttps://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/#import-twojej-kopii-zapasowej-w-panelu-klienta):
+Możesz również zaznaczyć kratkę `Wyczyść aktualną bazę danych`{.action} tuż przed [uruchomieniem importu](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/#import-twojej-kopii-zapasowej-w-panelu-klienta):
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 

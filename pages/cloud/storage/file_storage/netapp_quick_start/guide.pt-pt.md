@@ -22,7 +22,7 @@ Neste guia de arranque rápido, saiba como começar na oferta Enterprise File St
 
 - Ter uma oferta OVHcloud Enterprise File Storage
 - Ter acesso à página das [API OVHcloud](https://api.ovh.com/)
-- Saber [montar um NAS através de NFS](https://docs.ovh.com/pt/storage/nas-nfs/)
+- Saber [montar um NAS através de NFS](https://docs.ovh.com/pt/storage/file-storage/nas/nfs/)
 
 ## O essencial
 

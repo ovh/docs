@@ -121,7 +121,7 @@ Una vez validados el pedido y el código de transferencia, el actual agente regi
 
 Si el actual agente registrador rechaza la solicitud, contacte con él para conocer el motivo por el que la rechazó.
 
-El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Seleccione `Web Cloud`{.action} y acceda a la sección `Dominios`{.action} y haga clic en `Operaciones en curso`{.action}.
+El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Seleccione `Web Cloud`{.action} y acceda a la sección `Dominios`{.action} y haga clic en `Operaciones en curso`{.action}.
 
 ### 5. gestionar su dominio con OVHcloud
 

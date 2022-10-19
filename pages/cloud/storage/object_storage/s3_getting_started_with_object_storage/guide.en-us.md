@@ -39,7 +39,7 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 #### Collect Credentials
 
 - You will need your user's Access key* and *Secret key*. You can access this information in the ‘S3 users’ tab in your Control Panel.
-- You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers` tab, then in the details of your bucket. Otherwise, follow this [guide](https://docs.ovh.com/us/en/storage/s3/location/).
+- You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers` tab, then in the details of your bucket. Otherwise, follow this [guide](https://docs.ovh.com/us/en/storage/object-storage/s3/location/).
 
 #### Configuration
 

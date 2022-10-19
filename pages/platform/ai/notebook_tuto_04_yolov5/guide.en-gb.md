@@ -31,7 +31,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/a
 
 ![image](images/new-object-container.png){.thumbnail}
 
-If you want to run it with the CLI, just follow this [guide][https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/]. You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow this [guide](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
 ovhai data upload <region> <container> <paths>
