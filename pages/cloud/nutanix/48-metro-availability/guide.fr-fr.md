@@ -94,7 +94,7 @@ Après avoir interconnectés vos 3 serveurs et fini la configurations des **Load
 - 3 adresses IP publiques
 - 3 Load Balancers
 
-![01 - vRack Configuration 01](images/00-vrack-configuration01.png)
+![01 - vRack Configuration 01](images/01-vrack-configuration01.png)
 
 Vous pouvez vous connecter aux URL des machines virtuelles **Prism Central** depuis l'extérieur avec les URL d'origine de chaque cluster qui ont la forme **https://cluster-XXXX.nutanix.ovh.net:9440**
 
@@ -384,12 +384,6 @@ Saisissez  `Protected VM` dans **Name** ajouter ces valeurs `Roubaix` et `Gravel
 La catégorie apparait dans la liste et elle est prête à être utilisé.
 
 ![06 - Add Categorie 04](images/06-addcategories03.png)
-
-
-
-
-
-
 
 
 
