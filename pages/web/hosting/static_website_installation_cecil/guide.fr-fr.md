@@ -18,6 +18,7 @@ Pour avoir des temps de réponse optimaux, nous préconisons notre [Hébergement
 
 Pour mettre en place la solution, vous devrez intégrer les éléments suivants :
 - être familier de la ligne de commande et de l'utilisation d'un terminal
+- savoir transférer ses fichiers en FTP avec un client comme [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 - avoir paramétré votre zone DNS pour faire pointer votre nom de domaine (ou votre sous-domaine) sur votre serveur.
 
 Vous devez également avoir installé [Composer](https://getcomposer.org/) et avoir votre fichier `composer.phar` à la racine de votre serveur où dans n'importe quel répertoire accessible.
@@ -75,6 +76,42 @@ En affichant le contenu du répertoire, vous constaterez la création d'un répe
 Vous pouvez maintenant voir le résultat en allant sur votre nom de domaine :
 
 ![Installation Cecil](images/static_website_installation_cecil%5B3%5D.png)
+
+### Créer sa première page
+
+La création des pages qui contiendront les données de votre site se fait via des fichiers au format _Markdown_. Ces pages sont personnalisables : Cecil utilise le moteur de _template_ [Twig](https://twig.symfony.com/) qui est utilisé par défaut avec le _framework_ [Symfony](https://symfony.com/).
+
+#### Organisation des fichiers
+
+- `assets` contiendra les éléments graphiques, les scripts et les fichiers [Sass](https://sass-lang.com/)
+- `layouts` est le répertoire dans lequel seront le ou les _templates_
+- `pages` sera l'endroit où seront vos fichiers _Markdown_
+- `_site` est le répertoire qui contiendra les fichiers générés et qui sera pointé par votre nom de domaine
+- `static` pour tous les fichiers statiques type PDF.
+
+#### Créer un fichier _Markdown_ en ligne de commande
+
+À la racine du site, tapez la commande :
+
+```sh
+php cecil.phar new:page mapage.md
+```
+
+Un fichier `mapage.md` est alors créé à la racine du répertoire `/pages
+
+![Installation Cecil](images/static_website_installation_cecil%5B4%5D.png)
+
+#### Gérérer les fichiers statiques
+
+Toujours à la racine, tapez la commande :
+
+```sh
+php cecil.phar build
+```
+
+Votre fichier se trouve dans le répertoire `_site/mapage/` :
+
+![Installation Cecil](images/static_website_installation_cecil%5B5%5D.png)
 
 ## Aller plus loin
 
