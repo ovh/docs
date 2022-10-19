@@ -96,20 +96,21 @@ Après avoir interconnectés vos 3 serveurs et fini la configurations des **Load
 
 Vous pouvez vous connecter aux URL des machines virtuelles **Prism Central** depuis l'extérieur avec les URL d'origine de chaque cluster qui ont la forme **https://cluster-XXXX.nutanix.ovh.net:9440**
 
-### Deconnexion du Prism Central d'origine sur les deux clusters qui seront répliqués
+### Suppression des enregistrements **Prism Central** pour les cluster de Roubaix et Gravelines.
 
-Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il est est necessaire de n'utiliser qu'une Machine virtualle **Prism Central** commune au 3 clusters, 2 pour la réplication et l'autre en tant que témoin. Prism Central sera connecté au cluster d'Erith. 
+Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il est est nécessaire de n'utiliser qu'une Machine virtualle **Prism Central** commune au 3 clusters. Prism Central sera connecté au cluster d'Erith. 
 
 Dans un premier temps il faut deconnecter les machines virtuelles **Prism Central** des clusters de Roubaix et Gravelines.
 
-Ces opérations se font en ligne de commande en ssh en se connectant l'adresse IP privée de **Prism Element**, vous pouvez utiliser le **Load Balancer** pour ajouter une connexion en ssh vers l'adresse IP de **Prism Element** et vous aider de l'ensemble de ces guides [OVHcloud Load Balancer](https://docs.ovh.com/fr/load-balancer/)
 
-connectez-vous sur l'adresse IP privé du Prism Element de Roubaix à l'aide de ces commandes :
+#### Désactivation de **Prism Central** sur le cluster de Roubaix
+
+Connectez-vous en SSH au cluster **Prism Element** de Roubaix.
 
 ```bash
 ssh nutanix@adresse_ip_pe_roubaix
-saississez le mot de passe de Prism Element
-ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=192.168.0.101\
+saisissez le mot de passe de Prism Element
+ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=adresse_ip_privee_prism_central\
 username=admin password=mdp_pe_roubaix force=true
 ```
 
@@ -119,28 +120,30 @@ Ce message apparait lors de la deconnexion à Prism Central.
 Cluster unregistration is currently in progress. This operation may take a while.
 ```
 
-Saisissez cette commande
+Saisissez cette commande :
 
 ```bash
 ncli cluster info
 ```
 
-Notez la valeur de **Cluster UUID* qui doit avoir cette forme xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+Notez la valeur de **Cluster UUID** qui doit avoir cette forme **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**.
 
-Deconnectez-vous de **Prism Element** et connectez vous en SSH sur **Prism Central**
+Deconnectez-vous de **Prism Element** et connectez vous en SSH sur la machine virtuelle **Prism Central** de Roubaix.
 
 ```bash
 ssh nutanix@adresse_ip_pc_roubaix
-saississez le mot de passe de Prism Central
-python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_pe
+saisissez le mot de passe de Prism Central
+python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_pe_roubaix
 ```
 
-connectez-vous sur l'adresse IP privé du Prism Element de Gravelines à l'aide de ces commandes
+#### Désactivation de **Prism Central** sur le cluster de Gravelines
+
+Connectez-vous en SSH au cluster **Prism Element** de Gravelines.
 
 ```bash
 ssh nutanix@adresse_ip_pe_gravelines
-saississez le mot de passe de Prism Element
-ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=192.168.0.101\
+saisissez le mot de passe de Prism Element
+ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=adresse_ip_privee_prism_central_gravelines\
 username=admin password=mdp_pe_gravelines force=true
 ```
 
@@ -158,21 +161,21 @@ ncli cluster info
 
 Notez la valeur de **Cluster UUID* qui doit avoir cette forme xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
-Deconnectez-vous de **Prism Element** et connectez vous en SSH sur le **Prism Central** de Gravelines
+Deconnectez-vous de **Prism Element** et connectez vous en SSH sur la machine virtuelle **Prism Central** de Gravelines
 
 ```bash
 ssh nutanix@adresse_ip_pc_gravelines
-saississez le mot de passe de Prism Central
-python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_pe
+saisissez le mot de passe de Prism Central
+python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_pe_gravelines
 ```
                                                 
-### Connexion des deux clusters au Prism Central distant servant de témoin
+### Enregistrement des deux clusters au Prism Central se trouvant sur le site d'ERITH
 
-Connectez-vous en ssh sur le  **Prism Element de Roubaix** :
+Connectez-vous en ssh sur **Prism Element** de Roubaix :
 
 ```bash
 ssh nutanix@adresse_ip_pe_roubaix
-ncli multicluster register-to-prism-central username=admin password=passwod_admin external-ip-address-or-svm-ips=adresse_ip_pc_erith
+ncli multicluster register-to-prism-central username=admin password=passwod_admin\ external-ip-address-or-svm-ips=adresse_ip_privee_prism_central_erith
 ```
 
 Ce message apparait
@@ -203,14 +206,15 @@ Registered Cluster Count: 1
     Remote Connection Exists  : true
 ```
 
-Connectez-vous en ssh sur le  **Prism Element de Gravelines** :
+
+Connectez-vous en ssh sur **Prism Element** de Gravelines :
 
 ```bash
 ssh nutanix@adresse_ip_pe_gravelines
-ncli multicluster register-to-prism-central username=admin password=passwod_admin_erith external-ip-address-or-svm-ips=adresse_ip_pc_erith
+ncli multicluster register-to-prism-central username=admin password=passwod_admin_erith external-ip-address-or-svm-ips=adresse_ip_priveeprism_central_erith
 ```
 
-Ce message apparait
+Ce message apparait :
 
 ```console
 Cluster registration is currently in progress. This operation may take a while.
@@ -222,7 +226,7 @@ Patientez et saisissez cette commande
 ncli multicluster get-cluster-state
 ```
 
-Si le cluster est bien connecté à **Prism Central** d'Erith vous verrez appparaitre ces informations :
+Si le cluster est bien connecté au **Prism Central** d'Erith vous verrez appparaitre ces informations :
 
 ```console
 Registered Cluster Count: 1
@@ -238,7 +242,9 @@ Registered Cluster Count: 1
     Remote Connection Exists  : true
 ```
 
-Connectez-vous au Prism Central sur site d'ERITH, vous verrez trois clusters Dans le panneau **Cluster Quick Access**. Nous allons mettre en place la solution de P.R.A (Plan de reprise d'activité) entre les deux clusters qui sont distant de ce Prism Central à Roubaix et Gravelines
+A partir d'un navigateur WEB connectez vous sur l'URL de Prism-Central à ERITH, vous verrez les trois clusters.
+
+![01 - Prism Central Dashboard 01](images/01-prismcentral-dashboard01.png)
 
 ### Création de deux **Storage Containers** sur chacun des clusters
 
