@@ -103,10 +103,12 @@ Here are the mandatory values for an Exchange service:
 
 Field        | Value
 ------------ | -------------
+Sub-domain     | _autodiscover._tcp
 Priority     | 0
 Weight       | 0
 Port         | 443
 Target       | [Your hostname](#hostname) (ex<b>?</b>.mail.ovh.net)
+
 
 ### The test email could not be sent from this account 
 
