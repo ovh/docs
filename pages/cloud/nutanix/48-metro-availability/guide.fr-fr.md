@@ -22,17 +22,18 @@ order: 06
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via Prism Central.
+- Avoir les deux clusters qui seront répliqués avec un latence de moins de 5ms.
 
 ## Présentation
 
 Nous allons mettre en place un plan de reprise d'activité bi-directionnel entre deux clusters avec ce matériel :
 
-- Un cluster Nutanix à ROUBAIX
-- Un cluster Nutanix à GRAVELINES
-- Un cluster Nutanix à ERTITH uniquement pour héberger Prism Central 
+- Un cluster Nutanix à ROUBAIX en France.
+- Un cluster Nutanix à GRAVELINES en France.
+- Un cluster Nutanix à ERITH en Angleterre uniquement pour héberger Prism Central.
 
 
-Nous n'utiliserons qu'un seul vRack qui contiendra
+Nous n'utiliserons qu'un seul vRack qui contiendra :
 
 - Les clusters Nutanix.
 - Les loadbalancers.
@@ -45,7 +46,7 @@ Vous trouverez ci-dessous le schéma de cette configuration sur trois sites:
 
 ## En pratique
 
-Voici la marche à suivre pour mettre en place notre solution de P.R.A. (Plan de reprise d'activité)
+Nous allons étape par étape mettre en place ce P.R.A (Plan de reprise d'activité)
 
 Le informations techniques utilisés par notre guide sont les suivantes :
 
@@ -54,6 +55,7 @@ Le informations techniques utilisés par notre guide sont les suivantes :
     + Serveur 2 : adresse VM **CVM** `192.168.0.2`, adresse IP hyperviseur **AHV** `192.168.0.22`.
     + Serveur 3 : adresse VM **CVM** `192.168.0.3`, adresse IP hyperviseur **AHV** `192.168.0.23`.
     + Adresse virtuelle de **Prism Element** : `192.168.0.100`.
+    + Adresse iScsi de **Prism Element** : `192.168.0.102`.
     + Adresse IP **Prism Central** :`192.168.0.101`.
     + Passerelle : `192.168.3.254`.
     + Masque : `255.255.252.0`
@@ -64,6 +66,7 @@ Le informations techniques utilisés par notre guide sont les suivantes :
     + Serveur 2 : adresse VM **CVM** `192.168.1.2`, adresse IP hyperviseur **AHV** `192.168.1.22`.
     + Serveur 3 : adresse VM **CVM** `192.168.1.3`, adresse IP hyperviseur **AHV** `192.168.1.23`.
     + Adresse virtuelle de **Prism Element** : `192.168.1.100`.
+    + Adresse iScsi de **Prism Element** : `192.168.1.102`.
     + Adresse IP **Prism Central** :`192.168.1.101`.
     + Passerelle : `192.168.3.254`.
     + Masque : `255.255.252.0`
@@ -74,6 +77,7 @@ Le informations techniques utilisés par notre guide sont les suivantes :
     + Serveur 2 : adresse VM **CVM** `192.168.2.2`, adresse IP hyperviseur **AHV** `192.168.2.22`.
     + Serveur 3 : adresse VM **CVM** `192.168.2.3`, adresse IP hyperviseur **AHV** `192.168.2.23`.
     + Adresse virtuelle de **Prism Element** : `192.168.2.101`.
+    + Adresse iScsi de **Prism Element** : `192.168.2.102`.   
     + Adresse IP **Prism Central** :`192.168.2.100`.
     + Passerelle : `192.168.3.254`.
     + Masque : `255.255.252.0`
@@ -83,6 +87,8 @@ une partie du  paramètrage sera faite à partir des interfaces WEB **Prism Cent
 
 
 ### Interconnexion des trois clusters
+
+La première étape est de réaliser l'interconnexion des trois clusters. 
 
 Aidez-vous de ce guide pour interconnecter les deux premiers clusters [https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/].
 
