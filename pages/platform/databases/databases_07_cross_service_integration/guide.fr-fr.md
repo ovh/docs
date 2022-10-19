@@ -4,12 +4,11 @@ slug: cross-service-integration
 excerpt: Find out how to use Cross Service Integration for Public Cloud Databases engines
 section: Guides généraux
 order: 060
-hidden: true
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/cross-service-integration/'
 ---
 
-**Last updated July 8th, 2022**
+**Last updated October 19th, 2022**
 
 ## Objective
 
@@ -27,8 +26,8 @@ Cross Service Integration allows you to expose your Public Cloud Databases Logs 
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account   
-- A database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/fr/publiccloud/databases/getting-started/) can help you to meet this requirement)   
+- A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
+- A database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/fr/publiccloud/databases/getting-started/) can help you to meet this requirement)
 - Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) or to the [OVHcloud API](https://api.ovh.com/console/)
 
 ## Concept
