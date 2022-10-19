@@ -1,15 +1,23 @@
 ---
 title: "Transférer un nom de domaine .uk vers un autre bureau d'enregistrement"
-legacy_guide_number: 2225
 slug: transfert-sortant-dun-nom-de-domaine-couk
 excerpt: "Découvrez comment effectuer le transfert sortant d’un nom de domaine UK vers un autre registrar"
 section: Transfert
-order: 5
+order: 05
 ---
 
-**Dernière mise à jour le 12/07/2021**
+**Dernière mise à jour le 19/10/2022**
 
 ## Objectif
+
+> [!warning]
+>
+> Attention, si le domaine est déjà enregistré chez OVHcloud, il faut effectuer en réalité non pas un transfert sortant mais [un changement des contacts « administrateur », « technique » et/ou « facturation »](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/) pour votre nom de domaine.
+>
+> En effet, les véritables transferts de nom de domaine ne s'effectuent qu'entre les bureaux d'enregistrements tels qu'OVHcloud.
+>
+> Si la propriété du domaine doit changer également, n'oubliez pas d'effectuer cette action **avant** de changer les contacts de votre domaine à l'aide de notre documentation sur le [changement de propriétaire d'un nom de domaine](https://docs.ovh.com/ca/fr/domains/changement-proprietaire-domaine/).
+>
 
 Le processus de changement de bureau d'enregistrement (*registrar*) pour les domaines de premier niveau (*top-level domain*, ou **TLD**) de l'indicatif de pays **UK** (**.uk**) diffère de celui détaillé dans notre [guide de transfert des TLD génériques](../transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/). Les instructions ci-dessous concernent les extensions suivantes :
 

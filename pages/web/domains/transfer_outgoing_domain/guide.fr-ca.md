@@ -6,15 +6,25 @@ section: Transfert
 order: 04
 ---
 
-**Dernière mise à jour le 22/09/2022**
+**Dernière mise à jour le 19/10/2022**
 
 ## Objectif
+
+> [!warning]
+>
+> Attention, si le domaine est déjà enregistré chez OVHcloud, il faut effectuer en réalité non pas un transfert sortant mais [un changement des contacts « administrateur », « technique » et/ou « facturation »](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/) pour votre nom de domaine.
+>
+> En effet, les véritables transferts de nom de domaine ne s'effectuent qu'entre les bureaux d'enregistrements tels qu'OVHcloud.
+>
+> Si la propriété du domaine doit changer également, n'oubliez pas d'effectuer cette action **avant** de changer les contacts de votre domaine à l'aide de notre documentation sur le [changement de propriétaire d'un nom de domaine](https://docs.ovh.com/ca/fr/domains/changement-proprietaire-domaine/).
+>
 
 Le transfert d’un nom de domaine permet de changer le bureau d’enregistrement de ce dernier. Ce transfert est possible vers un autre bureau d'enregistrement.
 
 **Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix.**
 
 ## Prérequis
+
 - Disposer d'un nom de domaine enregistré chez OVHcloud.
 - Être habilité à demander le transfert du nom de domaine : le propriétaire et/ou les personnes l'administrant doivent être informés de la demande du transfert.
 - Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
