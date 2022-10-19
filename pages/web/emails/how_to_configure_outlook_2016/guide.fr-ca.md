@@ -51,7 +51,7 @@ Les comptes MX Plan  peuvent être configurés sur différents logiciels de mess
 |![Outlook](images/config-outlook-mxplan02.png){.thumbnail}|Parmi les différents types de comptes, choisissez entre IMAP et POP. <br>Nous vous conseillons une utilisation en IMAP.|
 |Saisissez le mot de passe de votre adresse e-mail, puis cliquez sur `Suivant`{.action}. |![Outlook](images/config-outlook-mxplan03.png){.thumbnail}|
 |![Outlook](images/config-outlook-mxplan04.png){.thumbnail}|Si Outlook n'est pas parvenu à configurer automatiquement votre adresse, cette fenêtre s'affiche. <br>Cliquez sur `Modifier les paramètres du compte`{.action} |
-|Saisissez dans **Courrier entrant**: <br>- le serveur **imap.mail.ovh.ca** <br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **smtp.mail.ovh.ca** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider. |![Outlook](images/config-outlook-mxplan05.png){.thumbnail}|
+|Saisissez dans **Courrier entrant**: <br>- le serveur **imap.mail.ovh.ca** <br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **smtp.mail.ovh.ca** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider. |![Outlook](images/config-outlook-mxplan05-ca.png){.thumbnail}|
 
 
 Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
@@ -84,7 +84,7 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 
 La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sortant**. Cliquez sur l'un ou l'autre pour pouvoir les modifier.
 
-![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+![Outlook](images/config-outlook-mxplan07-ca.png){.thumbnail}
 
 ## Aller plus loin
 

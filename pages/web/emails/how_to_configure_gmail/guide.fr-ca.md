@@ -68,7 +68,7 @@ Concernant les choix que vous pouvez cocher :
 
 Une fois les informations complétées, cliquez sur le bouton `Ajouter un compte`{.action}. Si les informations sont correctes, la connexion à l'adresse e-mail réussira. 
 
-![mxplan](images/configuration-gmail-web-step3.png){.thumbnail}
+![mxplan](images/configuration-gmail-web-step3-ca.png){.thumbnail}
 
 Dès lors, si vous souhaitez également envoyer des e-mails avec votre adresse OVHcloud depuis l'interface en ligne de Gmail, cochez la case `Oui, j'aimerais envoyer des e-mails depuis l'adresse`{.action}, puis cliquez sur `Suivant`{.action}. 
 
@@ -87,7 +87,7 @@ Indiquez maintenant les paramètres du serveur SMTP (serveur sortant) de votre a
 
 Une fois les informations complétées, cochez la case à côté de `Connexion sécurisée TLS`{.action}, puis cliquez sur le bouton `Ajouter un compte`{.action}. Si les informations sont correctes, la connexion à l'adresse e-mail réussira. 
 
-![mxplan](images/configuration-gmail-web-step5.png){.thumbnail}
+![mxplan](images/configuration-gmail-web-step5-ca.png){.thumbnail}
 
 Il ne vous reste plus qu'à valider cet ajout en renseignant un code de confirmation envoyé à votre adresse e-mail OVHcloud. Pour l'obtenir, connectez-vous à celle-ci comme d'habitude depuis notre interface en ligne accessible depuis : <https://www.ovh.com/ca/fr/mail/>. 
 

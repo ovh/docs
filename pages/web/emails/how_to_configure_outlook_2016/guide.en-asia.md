@@ -50,7 +50,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 |![Outlook](images/config-outlook-mxplan02.png){.thumbnail}|Choose between IMAP and POP from the list of account types. <br>We recommend using IMAP.|
 |Enter your email password, then click `Next`{.action}. |![Outlook](images/config-outlook-mxplan03.png){.thumbnail}|
 |![Outlook](images/config-outlook-mxplan04.png){.thumbnail}|If Outlook was unable to automatically configure your address, this window will appear. <br>Click `Change Account Settings`{.action} |
-|Enter in **Incoming mail**: <br>- Server **imap.mail.ovh.ca** <br>- Port **993**<br>- Encryption method **SSL/TLS**<br><br>Enter in **Outgoing mail**: <br>- Server **smtp.mail.ovh.ca** <br>- Port **465**<br>- Encryption method **SSL/TLS**<br><br>Click `Next`{.action} to confirm. |![Outlook](images/config-outlook-mxplan05.png){.thumbnail}|
+|Enter in **Incoming mail**: <br>- Server **imap.mail.ovh.ca** <br>- Port **993**<br>- Encryption method **SSL/TLS**<br><br>Enter in **Outgoing mail**: <br>- Server **smtp.mail.ovh.ca** <br>- Port **465**<br>- Encryption method **SSL/TLS**<br><br>Click `Next`{.action} to confirm. |![Outlook](images/config-outlook-mxplan05-ca.png){.thumbnail}|
 
 
 For **POP** configuration, the values are:
@@ -83,7 +83,7 @@ If your email account has already been set up and you need to access the account
 
 The window is divided into two parts, **Incoming Mail** and **Outgoing Mail**. Click either to edit them.
 
-![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+![Outlook](images/config-outlook-mxplan07-ca.png){.thumbnail}
 
 
 ## Go further <a name="gofurther"></a>

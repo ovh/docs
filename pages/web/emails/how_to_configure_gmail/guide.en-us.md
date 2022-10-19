@@ -68,7 +68,7 @@ Regarding the options you can select:
 
 Once you have entered this information, click `Add Account`{.action}. If all the information is correct, the connection to the email address will be successful. 
 
-![mxplan](images/configuration-gmail-web-step3.png){.thumbnail}
+![mxplan](images/configuration-gmail-web-step3-ca.png){.thumbnail}
 
 Next, if you would also like to send emails from your OVHcloud email address using the Gmail online interface, tick the `Yes, I want to be able to send mail as [...]`{.action}, then click `Next`{.action}. 
 
@@ -87,7 +87,7 @@ Now enter the settings for the SMTP server (outgoing server) of your OVHcloud em
 
 Once you have filled in the information requested, tick the box next to `Secured connection using TLS`{.action}, then click `Add Account`{.action}. If all the information is correct, the connection to the email address will be successful. 
 
-![mxplan](images/configuration-gmail-web-step5.png){.thumbnail}
+![mxplan](images/configuration-gmail-web-step5-ca.png){.thumbnail}
 
 At this stage, you simply need to confirm this addition by entering the confirmation code sent to your OVHcloud email address. To receive it, log on to our online interface as usual, via: <https://www.ovh.com/world/mail/>. 
 
