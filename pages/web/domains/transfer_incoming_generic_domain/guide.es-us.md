@@ -3,16 +3,25 @@ title: 'Transferir un dominio a OVHcloud'
 slug: transferir-un-dominio-generico
 excerpt: 'Cómo realizar la transferencia de un dominio a OVHcloud'
 section: 'Operaciones en los dominios'
-order: 1
+order: 01
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 17/06/2022**
+**Última actualización: 20/10/2022**
 
 ## Objetivo
+
+> [!warning]
+>
+> Atención, si el dominio ya está registrado en OVHcloud, en realidad no es necesario efectuar una transferencia entrante sino [un cambio de los contactos "administrador", "técnico" y/o "facturación"](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/) para su nombre de dominio.
+>
+> En efecto, las verdaderas transferencias de dominios solo se efectúan entre los agentes registradores, como OVHcloud.
+>
+> Si la propiedad del dominio debe cambiar también, no olvide realizar esta acción **antes** para cambiar los contactos de su dominio utilizando nuestra documentación sobre el [cambio de propietario de un dominio](https://docs.ovh.com/us/es/domains/cambio-propietario-dominio/).
+>
 
 Si tiene un dominio registrado con otro proveedor y quiere transferirlo a OVHcloud, puede transferirlo a OVHcloud.
 

@@ -10,9 +10,18 @@ order: 5
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 12/07/2021**
+**Última actualización: 20/10/2022**
 
 ## Objetivo
+
+> [!warning]
+>
+> Atención, si el dominio ya está registrado en OVHcloud, en realidad no es necesario efectuar una transferencia saliente sino [un cambio de los contactos "administrador", "técnico" y/o "facturación"](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/) para su nombre de dominio.
+>
+> En efecto, las verdaderas transferencias de dominios solo se efectúan entre los agentes registradores, como OVHcloud.
+>
+> Si la propiedad del dominio debe cambiar también, no olvide realizar esta acción **antes** para cambiar los contactos de su dominio utilizando nuestra documentación sobre el [cambio de propietario de un dominio](https://docs.ovh.com/us/es/domains/cambio-propietario-dominio/).
+>
 
 El proceso de cambio de agente registrador (*registrador*) para los dominios de primer nivel (*top-level domain*, o **TLD**) del indicativo de país **UK** (**.uk**) difiere del descrito en nuestra [guía de transferencia de los TLD genéricos](../transferencia_saliente_de_un_dominio_generico_o_geografico/). Las siguientes instrucciones se aplican a las siguientes extensiones:
 

@@ -1,17 +1,25 @@
 ---
 title: Trasferire un dominio.uk in OVHcloud
-legacy_guide_number: 2026
 slug: hosting_condiviso_guida_al_trasferimento_di_un_dominio_couk
 excerpt: Questa guida ti mostra come trasferire un dominio.uk o equiparato a OVHcloud.
 section: Trasferimento
-order: 4
+order: 04
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 17/06/2022**
+**Ultimo aggiornamento: 20/1O/2022**
+
+> [!warning]
+>
+> Attenzione: se il dominio è già registrato in OVHcloud, in realtà non è necessario effettuare un trasferimento in entrata ma [modifica i contatti "amministratore", "tecnico" e/o "fatturazione"](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/) per il tuo dominio.
+>
+> Infatti, i veri trasferimenti di domini avvengono solo tra gli uffici di registrazione come OVHcloud.
+>
+> Se la proprietà del dominio deve cambiare anche, ricordati di effettuare questa azione **prima** di modificare i contatti del tuo dominio con l'aiuto della nostra documentazione sul [cambiamento di proprietario di un dominio](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
+>
 
 ## Obiettivo
 

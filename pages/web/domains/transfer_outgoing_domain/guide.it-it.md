@@ -10,9 +10,18 @@ order: 04
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22/09/2022**
+**Ultimo aggiornamento: 20/10/2022**
 
 ## Obiettivo
+
+> [!warning]
+>
+> Attenzione, se il dominio è già registrato in OVHcloud, in realtà non è necessario effettuare un trasferimento in uscita ma [un cambiamento dei contatti "amministratore", "tecnico" e/o "fatturazione"](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/) per il tuo dominio.
+>
+> Infatti, i veri trasferimenti di domini avvengono solo tra gli uffici di registrazione come OVHcloud.
+>
+> Se la proprietà del dominio deve cambiare anche, ricordati di effettuare questa azione **prima** di modificare i contatti del tuo dominio con l'aiuto della nostra documentazione sul [cambiamento di proprietario di un dominio](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
+>
 
 **Trasferimento di dominio** si riferisce allo spostamento di un dominio da un Registrar a un altro. Ad esempio, se hai ordinato un dominio sul nostro sito Web, OVHcloud è il suo attuale Registrar. Il trasferimento del dominio in uscita deve essere avviato dal nuovo Registrar.
 

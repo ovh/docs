@@ -1,17 +1,25 @@
 ---
 title: 'Transfer domeny.uk do OVHcloud'
-legacy_guide_number: 2026
 slug: uslugi_www_transfer_domeny_couk
 excerpt: 'W tym przewodniku znajdziesz różne informacje dotyczące transferu domeny .uk lub podobnej do OVHcloud'
 section: Transfer
-order: 4
+order: 04
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 17/06/2022**
+**Ostatnia aktualizacja z dnia 20/10/2022**
+
+> [!warning]
+>
+> Uwaga, jeśli domena jest już zarejestrowana w OVHcloud, nie wykonaj transferu przychodzącego, ale [zmiana kontaktów "administrator", "techniczny" i/lub "księgowy"](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/) dla Twojej domeny.
+>
+> Rzeczywiście, rzeczywiste transfery domen odbywają się tylko między rejestratorami, takimi jak OVHcloud.
+>
+> Jeśli właściciel domeny również ma zmienić właściciela, pamiętaj o przeprowadzeniu tej operacji **przed*** zmiany kontaktów domeny w dokumentacji dotyczącej [zmiana właściciela domeny](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
+>
 
 ## Wprowadzenie
 

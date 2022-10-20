@@ -3,14 +3,23 @@ title: "Transfer domeny .uk do innego operatora"
 slug: transfer_wychodzacy_domeny_couk
 excerpt: "Dowiedz się, jak wykonać transfer domeny wychodzącej z domeny UK do innego operatora"
 section: Transfer
-order: 5
+order: 05
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 12-07-2021**
+**Ostatnia aktualizacja z dnia 20-10-2022**
+
+> [!warning]
+>
+> Uwaga, jeśli domena jest już zarejestrowana w OVHcloud, nie musisz wykonywać transferu wychodzącego, ale [zmiana kontaktów "administrator", "techniczny" i/lub "księgowy"](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/) dla Twojej domeny.
+>
+> Rzeczywiście, rzeczywiste transfery domen odbywają się tylko między rejestratorami, takimi jak OVHcloud.
+>
+> Jeśli właściciel domeny również ma zmienić właściciela, pamiętaj o przeprowadzeniu tej operacji **przed*** zmiany kontaktów domeny w dokumentacji dotyczącej [zmiana właściciela domeny](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
+>
 
 ## Wprowadzenie
 

@@ -3,14 +3,23 @@ title: "Trasferire un dominio.uk verso un altro Registrar"
 slug: guida_al_trasferimento_in_uscita_di_un_dominio_couk
 excerpt: Come effettuare il trasferimento in uscita di un dominio UK verso un altro registrar
 section: Trasferimento
-order: 5
+order: 05
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 12/07/2021**
+**Ultimo aggiornamento: 20/10/2022**
+
+> [!warning]
+>
+> Attenzione, se il dominio è già registrato in OVHcloud, in realtà non è necessario effettuare un trasferimento in uscita ma [un cambiamento dei contatti "amministratore", "tecnico" e/o "fatturazione"](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/) per il tuo dominio.
+>
+> Infatti, i veri trasferimenti di domini avvengono solo tra gli uffici di registrazione come OVHcloud.
+>
+> Se la proprietà del dominio deve cambiare anche, ricordati di effettuare questa azione **prima** di modificare i contatti del tuo dominio con l'aiuto della nostra documentazione sul [cambiamento di proprietario di un dominio](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
+>
 
 ## Obiettivo
 

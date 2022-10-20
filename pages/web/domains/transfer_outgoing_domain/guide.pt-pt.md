@@ -2,15 +2,24 @@
 title: Transferir um domínio para outro agente de registo
 excerpt: Saiba como transferir um domínio da OVHcloud para o agente de registo da sua escolha
 slug: transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico
-legacy_guide_number: g1869
 section: Transferência
+order: 04
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22/09/2022**
+**Última atualização: 20/10/2022**
+
+> [!warning]
+>
+> Atenção, se o domínio já está registado na OVHcloud, é necessário efetuar, na realidade, não uma transferência de saída, mas [uma alteração dos contactos "administrador", "técnico" e/ou "faturação"](https://docs.ovh.com/pt/customer/gestao_dos_contactos/) para o seu nome de domínio.
+>
+> Com efeito, as verdadeiras transferências de nome de domínio só se efetuam entre os escritórios de registos tais como a OVHcloud.
+>
+> Se a propriedade do domínio também tiver de ser alterada, não se esqueça de efetuar esta ação **antes** que os contactos do seu domínio sejam alterados através da nossa documentação sobre a [mudança de proprietário de um nome de domínio](https://docs.ovh.com/pt/domains/alteracao-titular-dominio/).
+>
 
 ## Objetivo
 
