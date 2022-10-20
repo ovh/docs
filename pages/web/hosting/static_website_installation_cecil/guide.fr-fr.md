@@ -113,7 +113,29 @@ Votre fichier se trouve dans le répertoire `_site/mapage/` :
 
 ![Installation Cecil](images/static_website_installation_cecil%5B5%5D.png)
 
+Et vous pouvez la visualiser sur votre serveur en tapant l'URL de votre site, suivi de `/mapage/` :
+
+![Résultat navigateur](images/static_website_installation_cecil%5B6%5D.png)
+
+#### Modifier ses fichiers
+
+##### **Modification sur le serveur**
+
+L'édition des fichiers _Markdown_ peut se faire directement sur le serveur. Sur votre offre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), votre accès SSH pour permet d'utiliser indifféremment [GNU nano](https://nano-editor.org/), [vi](https://ex-vi.sourceforge.net/l) ou [vim](https://www.vim.org/).
+Les captures d'écran du présent guide ont été réalisées sous GNU nano.
+
+Éditez le fichier `mapage.md` situé dans le répertoire `pages` en tapant la commande suivante si vous êtes à la racine de votre site :
+
+```sh
+ nano pages/mapage.md
+```
+
+![Édition du fichier dans GNU nano](images/static_website_installation_cecil%5B6%5D.png)
+
+##### **Modification sur votre poste de travail**
+
 ## Aller plus loin
 
 - la [page](https://daringfireball.net/projects/markdown/) du créateur du format Markdown
 - un [guide](https://www.markdownguide.org/) sur ce format
+- notre guide sur l'[utilisation de FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
