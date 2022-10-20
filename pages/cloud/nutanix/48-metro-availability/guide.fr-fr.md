@@ -793,7 +793,7 @@ Ensuite cliquez sur `Failover`{.action}
 
 ![15 - livemigration Roubaix to Gravelines 02](images/15-livemigration-roubaix-to-gravelines02.png)
 
-Saisissez `Failover`{.action} et cliquez sur `Failover`{.action}
+Saisissez `Failover`{.action} et cliquez sur `Failover`
 
 ![15 - livemigration Roubaix to Gravelines 03](images/15-livemigration-roubaix-to-gravelines03.png)
 
@@ -811,9 +811,65 @@ Vous pouvez revenir sur la machine virtuelle et constater que le ping continue �
 
 ### Opérations à effectuer après une migration à chaud
 
+Après une migration à chaud il est nécessaire d'inverser la réplication et le fonctionnement du plan de reprise d'activité
 
+#### Inversion du de la réplication
 
+Au travers du menu principal de **Prism Central** cliquez sur `Protections Policies`{.action} dans le sous-menu **Data Protection**.
 
+![16 - invert replication after failover 01](images/16-invert-replication-after-failover01.png)
+
+Cliquez sur le plan de protection nommé `ROUBAIX TO GRAVELINES`{.action}.
+
+![16 - invert replication aftr failover 02](images/16-invert-replication-after-failover02.png)
+
+cliquez sur `Update`{.action}.
+
+![16 - invert replication after failover 03](images/16-invert-replication-after-failover03.png)
+
+Positionnez la souris en dessous du nom du cluster de Roubaix dans **Primary Location** et cliquez sur `Edit`{.action}.
+
+![16 - invert replication after failover 04](images/16-invert-replication-after-failover04.png)
+
+Cochez le cluster de `Gravelines`{.action} à la place de celui de Roubaix.
+
+![16 - invert replication after failover 05](images/16-invert-replication-after-failover05.png)
+
+Cliquez sur `Save`{.action}.
+
+![16 - invert replication after failover 06](images/16-invert-replication-after-failover06.png)
+
+Cliquez sur `Update Location`{.action}.
+
+![16 - invert replication after failover 07](images/16-invert-replication-after-failover07.png)
+
+Positionnez la souris en dessous du nom du cluster de Graveline dans **Recovery Location** et cliquez sur `Edit`{.action}.
+
+![16 - invert replication after failover 08](images/16-invert-replication-after-failover08.png)
+
+Sélectionnez le cluster de `Roubaix`{.action} à la place de celui de Gravelines.
+
+![16 - invert replication after failover 09](images/16-invert-replication-after-failover09.png)
+
+Cliquez sur `Save`{.action}.
+
+![16 - invert replication after failover 10](images/16-invert-replication-after-failover10.png)
+
+Cliquez sur `Update Location`{.action}.
+
+![16 - invert replication after failover 11](images/16-invert-replication-after-failover11.png)
+
+Cliquez sur `Next`{.action}.
+
+![16 - invert replication after failover 12](images/16-invert-replication-after-failover12.png)
+
+Cliquez sur `Update`{.action}.
+
+![16 - invert replication after failover 12](images/16-invert-replication-after-failover13.png)
+
+La réplication est inversée cliquez sur la `croix`{.action} pour fermer le plan de protection.
+
+#### Inversion du plan de reprise
 
 
 
