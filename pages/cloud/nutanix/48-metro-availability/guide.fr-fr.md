@@ -749,7 +749,7 @@ Le plan de de reprise est validé, cliquez sur `Close`{.action}
 
 ### Test du plan de reprise d'activité
 
-Il est possible de tester le plan de reprise d'activité sans impacter la production, lorsque l'on active un test des machines virtuelles de tests sont activés sur le cluster de secours sur les VLAN de test.
+Il est possible de tester le plan de reprise d'activité sans impacter la production, lorsque l'on active un test des machines virtuelles de tests sont activés sur le cluster de secours dans les VLAN de test.
 
 Cliquez sur `Test`{.action}
 
@@ -767,7 +767,7 @@ Cliquez sur `Execute Anyway`{.action}
 
 ![14 - Validate test recovery plan 07](images/14-validate-test-recovery-plan07.png){.thumbnail}
 
-Allez dans le tableau de bord des VM dans **Prism Central et vous verrez les machines virtuelles de tests qui sont créés avec les données répliquées.
+Allez dans le tableau de bord des VM dans **Prism Central** et vous verrez les machines virtuelles de tests qui sont créés avec les données répliquées.
 
 ![14 - Validate test recovery plan 08](images/14-validate-test-recovery-plan08.png){.thumbnail}
 
@@ -781,9 +781,9 @@ cliquez sur `Clean Up`{.action}
 
 ### Live migration des machines virtuelles de Roubaix sur Gravelines
 
-Si l'infrastructure est opérationnelle il est possible de faire des migrations à chaud sans coupure des machines virtuells qui sont sur un cluster vers l'autre cluster du plan de reprise.
+Si l'infrastructure est entirèrement opérationnelle il est possible de faire des migrations à chaud sans coupure des machines virtuelles qui sont sur un cluster vers l'autre cluster du plan de reprise.
 
-Sur une machine virtuelle qui se trouve à Roubaix et qui fait partie du plan de reprise nous allons lancer un ping vers le serveur DNS OVHcloud **213.186.33.99**.
+Allez sur une machine virtuelle qui se trouve à Roubaix et qui fait partie du plan de reprise nous allons lancer un ping vers le serveur DNS OVHcloud **213.186.33.99**.
 
 ![15 - livemigration Roubaix to Gravelines 00](images/15-livemigration-roubaix-to-gravelines00.png){.thumbnail}
 
@@ -919,20 +919,7 @@ Et cliquez sur `Done`{.action}.
 > Pour revenir à la situation d'origine il faut effectuer à nouveau une migration à chaud et inverser la réplication et le plan de reprise d'activité.
 > Il est possible d'utiliser cette partie du guide en cas de déclenchement du plan de reprise d'activité en raison d'une indisponibilité d'un cluster.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Analyse du fonctionnement du plan de reprise en cas d'indisponibilité d'un des deux clusters répliqués.
 
 
 
@@ -955,7 +942,7 @@ Et cliquez sur `Done`{.action}.
 
 [Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/)
 
-[AHV Metro (Witness Option)][https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-witness-syncrep-pc-c.html]
+[AHV Metro - Witness Option][https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-witness-syncrep-pc-c.html]
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
