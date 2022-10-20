@@ -21,7 +21,7 @@ You might need to configure an Additional IP address on your instances because:
 - You host international projects.
 - You want to migrate from a Dedicated Server to a Public Cloud instance.
 
-Instead oy buying additional ones, you can import an Additional IP address that is linked to a different OVHcloud service.
+Instead of buying additional ones, you can import an Additional IP address that is linked to a different OVHcloud service.
 
 **This guide explains how to import this Additional IP into your OVHcloud Public Cloud project.**
 
