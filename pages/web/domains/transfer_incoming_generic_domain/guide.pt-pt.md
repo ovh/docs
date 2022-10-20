@@ -3,22 +3,32 @@ title: 'Transferir o nome de domínio para a OVHcloud'
 slug: transferir-o-dominio-generico
 excerpt: 'Saiba como transferir um nome de domínio para a OVHcloud'
 section: Transferência
-order: 1
+order: 01
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 17/06/2022**
+**Última atualização: 20/10/2022**
 
 ## Objetivo
+
 
 O seu domínio está atualmente registado num agente de registo e deseja transferi-lo para a OVHcloud? pode transferi-lo para a OVHcloud.
 
 A transferência de um domínio permite alterar o agente registador que o gere. Pode transferir o seu domínio para a OVHcloud através da criação de uma encomenda. Esta operação demorará entre um a dez dias.
 
 **Saiba como transferir um domínio genérico para a OVHcloud.**
+
+> [!warning]
+>
+> Se o domínio em curso de modificação está atualmente registado na OVHcloud, a transferência de entrada de domínio não é o procedimento adequado. Este procedimento aplica-se apenas à alteração do nome de domínio registado (OVHcloud).
+>
+> Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é *uma alteração de contactos*. O procedimento está descrito no [guia](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
+>
+> Se também tem de mudar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre a [alteração de proprietário dos nomes de domínio](https://docs.ovh.com/pt/domains/alteracao-titular-dominio/).
+>
 
 ## Requisitos
 

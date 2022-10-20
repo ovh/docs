@@ -3,14 +3,14 @@ title: "Trasferire un dominio.uk verso un altro Registrar"
 slug: guida_al_trasferimento_in_uscita_di_un_dominio_couk
 excerpt: Come effettuare il trasferimento in uscita di un dominio UK verso un altro registrar
 section: Trasferimento
-order: 5
+order: 05
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 12/07/2021**
+**Ultimo aggiornamento: 20/10/2022**
 
 ## Obiettivo
 
@@ -27,6 +27,15 @@ Il processo di modifica del Registrar (*registrar*) per i domini di primo livell
 - .sch.uk
 
 **Questa guida ti mostra come avviare un trasferimento in uscita per questi TLD dal tuo Spazio Cliente OVHcloud.**
+
+> [!warning]
+>
+> Se il dominio in questione deve restare registrato in OVHcloud ma modificato nelle modalità di gestione o proprietà, il trasferimento in uscita dal dominio non è la procedura appropriata.
+>
+> Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, il metodo più adatto è la *modifica dei contatti*. La procedura è descritta in [guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+>
+> Se è necessario modificare il **proprietario** del dominio, è necessario farlo **prima** di modificare i contatti del dominio. Segui le istruzioni descritte nella nostra guida sul [cambiamento di proprietario dei domini](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
+>
 
 ## Prerequisiti
 

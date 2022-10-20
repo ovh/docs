@@ -10,15 +10,6 @@ order: 05
 
 ## Objective
 
-> [!warning]
->
-> Be careful, if the domain is already registered with OVHcloud, you don't actually need to make an outgoing transfer but [a change of "administrator", "technical" and/or "billing" contacts](https://docs.ovh.com/gb/en/customer/managing-contacts/) for your domain name.
->
-> In fact, real domain name transfers are only carried out between registrars such as OVHcloud.
->
-> If the ownership of the domain needs to be changed as well, don't forget to do this **before** changing the contacts of your domain using our [changing domain name owner](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/) documentation.
->
-
 The process of changing the registrar for Top Level Domains (TLD) of the **UK** country code (**.uk**) differs from the one explained in our [guide regarding generic TLDs](../outgoing-transfer-of-generic-or-geographical-domain-name/). The instructions below concern the following extensions:
 
 - .uk
@@ -32,6 +23,15 @@ The process of changing the registrar for Top Level Domains (TLD) of the **UK** 
 - .sch.uk
 
 **This guide explains how to initiate an outgoing transfer for these TLDs in the OVHcloud Control Panel.**
+
+> [!warning]
+>
+> If the domain name in question should stay registered at OVHcloud but modified in terms of its management or ownership, an outgoing domain transfer is not the appropriate procedure.
+
+> To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [this guide](https://docs.ovh.com/gb/en/customer/managing-contacts/).
+>
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/) instructions.
+>
 
 ## Requirements
 

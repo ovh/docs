@@ -13,20 +13,20 @@ order: 1
 
 ## Objectif
 
-> [!warning]
->
-> Attention, si le domaine est déjà enregistré chez OVHcloud, il faut effectuer en réalité non pas un transfert entrant mais [un changement des contacts « administrateur », « technique » et/ou « facturation »](https://docs.ovh.com/fr/customer/gestion-des-contacts/) pour votre nom de domaine.
->
-> En effet, les véritables transferts de nom de domaine ne s'effectuent qu'entre les bureaux d'enregistrements tels qu'OVHcloud.
->
-> Si la propriété du domaine doit changer également, n'oubliez pas d'effectuer cette action **avant** de changer les contacts de votre domaine à l'aide de notre documentation sur le [changement de propriétaire d'un nom de domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
->
-
 Votre nom de domaine en .pl est actuellement déposé dans un bureau d’enregistrement et vous souhaitez le basculer vers OVHcloud ? C'est possible, via une procédure de transfert.
 
 En transférant votre nom de domaine, vous changerez de registre pour celui-ci. Vous pouvez transférer votre nom de domaine vers OVHcloud en créant une commande. Ce processus prend généralement entre un et dix jours.
 
 **Découvrez comment transférer un nom de domaine générique vers OVHcloud.**
+
+> [!warning]
+
+> Si le nom de domaine en question doit rester enregistré chez OVHcloud mais modifié dans ses modalités de gestion ou de propriété, un transfert sortant de domaine n'est pas la procédure appropriée.
+
+> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](https://docs.ovh.com/fr/customer/gestion-des-contacts/).
+>
+> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
+>
 
 ## Prérequis
 

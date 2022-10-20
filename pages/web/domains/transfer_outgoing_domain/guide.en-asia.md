@@ -10,20 +10,20 @@ order: 04
 
 ## Objective
 
-> [!warning]
->
-> Be careful, if the domain is already registered with OVHcloud, you don't actually need to make an outgoing transfer but [a change of "administrator", "technical" and/or "billing" contacts](https://docs.ovh.com/asia/en/customer/managing-contacts/) for your domain name.
->
-> In fact, real domain name transfers are only carried out between registrars such as OVHcloud.
->
-> If the ownership of the domain needs to be changed as well, don't forget to do this **before** changing the contacts of your domain using our [changing domain name owner](https://docs.ovh.com/asia/en/domains/how-to-change-domain-name-holder/) documentation.
->
-
 **Domain transfer** refers to the process of moving a registered domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain transfer needs to be initiated by the new registrar. 
 
 In order to prevent unauthorised domain transfers, domain names are usually locked by having the status *clientTransferProhibited* set. This protection must be lifted in the OVHcloud Control Panel before starting a transfer.
 
 **This guide explains how to prepare your domain name for an outgoing transfer.**
+
+> [!warning]
+>
+> If the domain name in question should stay registered at OVHcloud but modified in terms of its management or ownership, an outgoing domain transfer is not the appropriate procedure.
+
+> To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [this guide](https://docs.ovh.com/asia/en/customer/managing-contacts/).
+>
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](https://docs.ovh.com/asia/en/domains/how-to-change-domain-name-holder/) instructions.
+>
 
 ## Requirements
 
