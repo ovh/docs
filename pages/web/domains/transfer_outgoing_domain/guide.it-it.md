@@ -14,20 +14,20 @@ order: 04
 
 ## Obiettivo
 
-> [!warning]
->
-> Attenzione, se il dominio è già registrato in OVHcloud, in realtà non è necessario effettuare un trasferimento in uscita ma [un cambiamento dei contatti "amministratore", "tecnico" e/o "fatturazione"](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/) per il tuo dominio.
->
-> Infatti, i veri trasferimenti di domini avvengono solo tra gli uffici di registrazione come OVHcloud.
->
-> Se la proprietà del dominio deve cambiare anche, ricordati di effettuare questa azione **prima** di modificare i contatti del tuo dominio con l'aiuto della nostra documentazione sul [cambiamento di proprietario di un dominio](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
->
-
 **Trasferimento di dominio** si riferisce allo spostamento di un dominio da un Registrar a un altro. Ad esempio, se hai ordinato un dominio sul nostro sito Web, OVHcloud è il suo attuale Registrar. Il trasferimento del dominio in uscita deve essere avviato dal nuovo Registrar.
 
 Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente bloccati dallo stato *clientTransferProhibited*. Prima di avviare il trasferimento, è necessario rimuovere questa protezione dallo Spazio Cliente OVHcloud.
 
 **Questa guida ti mostra come preparare il tuo dominio per il trasferimento in uscita.**
+
+> [!warning]
+>
+> Se il dominio in questione deve restare registrato in OVHcloud ma modificato nelle modalità di gestione o proprietà, il trasferimento in uscita dal dominio non è la procedura appropriata.
+>
+> Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, il metodo più adatto è la *modifica dei contatti*. La procedura è descritta in [guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+>
+> Se è necessario modificare il **proprietario** del dominio, è necessario farlo **prima** di modificare i contatti del dominio. Segui le istruzioni descritte nella nostra guida sul [cambiamento di proprietario dei domini](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
+>
 
 ## Prerequisiti
 

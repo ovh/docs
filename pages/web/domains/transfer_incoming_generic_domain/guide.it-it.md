@@ -12,15 +12,6 @@ order: 01
 
 **Ultimo aggiornamento: 20/10/2022**
 
-> [!warning]
->
-> Attenzione: se il dominio è già registrato in OVHcloud, in realtà non è necessario effettuare un trasferimento in entrata ma [modifica i contatti "amministratore", "tecnico" e/o "fatturazione"](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/) per il tuo dominio.
->
-> Infatti, i veri trasferimenti di domini avvengono solo tra gli uffici di registrazione come OVHcloud.
->
-> Se la proprietà del dominio deve cambiare anche, ricordati di effettuare questa azione **prima** di modificare i contatti del tuo dominio con l'aiuto della nostra documentazione sul [cambiamento di proprietario di un dominio](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
->
-
 ## Obiettivo
 
 Il tuo dominio è registrato presso un provider esterno? è necessario avviare la procedura di trasferimento.
@@ -28,6 +19,15 @@ Il tuo dominio è registrato presso un provider esterno? è necessario avviare l
 L’operazione di trasferimento consente di spostare un dominio da un Registrar a un altro. Per trasferire il tuo dominio in OVHcloud è possibile creare un ordine. le fasi del processo possono richiedere da uno a dieci giorni.
 
 **Questa guida ti mostra come trasferire un dominio generico in OVHcloud.**
+
+> [!warning]
+>
+> Se il dominio in corso di modifica è registrato in OVHcloud, il trasferimento in entrata del dominio non è la procedura appropriata. Questa procedura si applica esclusivamente alla modifica del dominio registrato (OVHcloud).
+>
+> Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, la modalità corretta è una *modifica dei contatti*. La procedura è descritta in [guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+>
+> Se è necessario modificare il **proprietario** del dominio, è necessario farlo **prima** di modificare i contatti del dominio. Segui le istruzioni descritte nella nostra guida sul [cambiamento di proprietario dei domini](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
+>
 
 ## Prerequisiti
 

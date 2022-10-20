@@ -12,15 +12,6 @@ order: 05
 
 **Ultimo aggiornamento: 20/10/2022**
 
-> [!warning]
->
-> Attenzione, se il dominio è già registrato in OVHcloud, in realtà non è necessario effettuare un trasferimento in uscita ma [un cambiamento dei contatti "amministratore", "tecnico" e/o "fatturazione"](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/) per il tuo dominio.
->
-> Infatti, i veri trasferimenti di domini avvengono solo tra gli uffici di registrazione come OVHcloud.
->
-> Se la proprietà del dominio deve cambiare anche, ricordati di effettuare questa azione **prima** di modificare i contatti del tuo dominio con l'aiuto della nostra documentazione sul [cambiamento di proprietario di un dominio](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
->
-
 ## Obiettivo
 
 Il processo di modifica del Registrar (*registrar*) per i domini di primo livello (*top-level domain*, o **TLD**) del prefisso nazionale **UK** (**.uk**) differisce da quello dettagliato nella nostra [guida al trasferimento delle TLD generiche](../trasferisci_in_uscita_un_dominio_generico_o_geografico/). Le istruzioni riportate qui sotto riguardano queste estensioni:
@@ -36,6 +27,15 @@ Il processo di modifica del Registrar (*registrar*) per i domini di primo livell
 - .sch.uk
 
 **Questa guida ti mostra come avviare un trasferimento in uscita per questi TLD dal tuo Spazio Cliente OVHcloud.**
+
+> [!warning]
+>
+> Se il dominio in questione deve restare registrato in OVHcloud ma modificato nelle modalità di gestione o proprietà, il trasferimento in uscita dal dominio non è la procedura appropriata.
+>
+> Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, il metodo più adatto è la *modifica dei contatti*. La procedura è descritta in [guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+>
+> Se è necessario modificare il **proprietario** del dominio, è necessario farlo **prima** di modificare i contatti del dominio. Segui le istruzioni descritte nella nostra guida sul [cambiamento di proprietario dei domini](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
+>
 
 ## Prerequisiti
 

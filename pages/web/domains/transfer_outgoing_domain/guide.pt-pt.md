@@ -12,15 +12,6 @@ order: 04
 
 **Última atualização: 20/10/2022**
 
-> [!warning]
->
-> Atenção, se o domínio já está registado na OVHcloud, é necessário efetuar, na realidade, não uma transferência de saída, mas [uma alteração dos contactos "administrador", "técnico" e/ou "faturação"](https://docs.ovh.com/pt/customer/gestao_dos_contactos/) para o seu nome de domínio.
->
-> Com efeito, as verdadeiras transferências de nome de domínio só se efetuam entre os escritórios de registos tais como a OVHcloud.
->
-> Se a propriedade do domínio também tiver de ser alterada, não se esqueça de efetuar esta ação **antes** que os contactos do seu domínio sejam alterados através da nossa documentação sobre a [mudança de proprietário de um nome de domínio](https://docs.ovh.com/pt/domains/alteracao-titular-dominio/).
->
-
 ## Objetivo
 
 **Transferência de domínio** refere-se à transferência de um domínio de um agente de registo para outro. Por exemplo, se encomendou um domínio para o nosso website, a OVHcloud é o seu agente de registo atual. O novo agente registador deve iniciar uma transferência de domínio para fora.
@@ -28,6 +19,15 @@ order: 04
 De modo a impedir as transferências de domínio não autorizadas, os nomes de domínio são geralmente bloqueados por um estatuto de *clientTransferProhibited*. Esta proteção deve ser levantada na Área de Cliente OVHcloud antes de começar qualquer transferência.
 
 **Este manual explica-lhe como preparar o seu domínio para uma transferência de saída.**
+
+> [!warning]
+>
+> Se o domínio em questão deve permanecer registado na OVHcloud mas alterado nas suas modalidades de gestão ou de propriedade, uma transferência de domínio não é o procedimento adequado.
+>
+> Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é uma alteração de contactos. O procedimento está descrito no [presente guia](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
+>
+> Se também tem de mudar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre a [alteração de proprietário dos nomes de domínio](https://docs.ovh.com/pt/domains/alteracao-titular-dominio/).
+>
 
 ## Requisitos
 
