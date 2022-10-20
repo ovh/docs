@@ -55,6 +55,10 @@ With this technology, you can switch IP addresses from one solution to another i
 
 ### Moving an IP from the OVHcloud Control Panel
 
+> [!warning]
+> It is only possible to move a single size block (/32) from a Dedicated server to a VPS.
+>
+
 Log in to the [OVHcloud Control](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} menu and open `IP`{.action}.
 
 

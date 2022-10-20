@@ -57,6 +57,10 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 ### Déplacer une IP depuis l'espace client OVHcloud
 
+> [!warning]
+> Il est uniquement possible de déplacer un bloc de taille unique (/32) d'un serveur dédié vers un VPS.
+>
+
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur le menu `Bare Metal Cloud`{.action} puis ouvrez la section `IP`{.action}.
 
 Le menu déroulant « Service » vous permet de ne sélectionner que les Additional IP.
