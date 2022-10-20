@@ -38,7 +38,7 @@ Because, behind the scenes, the "OVH Terraform provider" is doing requests to OV
 
 In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) tutorial.
 
-Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
@@ -61,7 +61,7 @@ In order to create a new MongoDB cluster, you will need to specify at least:
 - the _version_ (e.g. "5.0")
 - the _region_ (e.g. "DE")
 - the _plan_ (e.g. "business")
-- the _flavor_ of the cluster (e.g. "db1.7")
+- the _flavor_ of the cluster (e.g. "db1-7")
 
 ### Step 3: Create Terraform files
 
@@ -132,7 +132,7 @@ variable "product" {
     name       = "mongodb-terraform"
     project_id = ""
     region     = "DE"
-    plan       = "essential"
+    plan       = "business"
     flavor     = "db1-7"
     version    = "5.0"
   }
@@ -149,9 +149,8 @@ variable "access" {
 
 Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API. Other endpoints exist, depending on your needs:
 
-- `ovh-eu` for OVHcloud Europe API
-- `ovh-us` for OVHcloud US API
-- `ovh-ca` for OVHcloud North-America API
+* `ovh-eu` for OVHcloud Europe API
+* `ovh-ca` for OVHcloud North-America API
 
 Then, create a `secrets.tfvars` file containing the required variables values:
 
@@ -167,20 +166,20 @@ product = {
   project_id = "<service_name>"
   name       = "mongodb-terraform"
   region     = "DE"
-  plan       = "essential"
+  plan       = "business"
   flavor     = "db1-7"
   version    = "5.0"
 }
 
 access = {
   name = "johndoe"
-  ip = "$(curl -fs ifconfig.me)/32"
+  ip = "<ip_range>"
 }
 ```
 
 > [!primary]
 >
-> Don't forget to replace `<service_name>`, `<application_key>`, `<application_secret>` and `<consumer_key>` by the real data.
+> Don't forget to replace `<service_name>`, `<application_key>`, `<application_secret>`, `<consumer_key>`, `<ip_range>` by the real data.
 
 Finally, create an `outputs.tf` file defining the resources that will be exported:
 
@@ -207,7 +206,7 @@ Now we need to initialise Terraform, generate a plan, and apply it.
 $ terraform init
 ```
 
-The `init` command will initialize your working directory which contains `.tf` configuration files.
+The [init](https://www.terraform.io/cli/commands/init) command will initialize your working directory which contains `.tf` configuration files.
 
 It’s the first command to execute for a new configuration, or after doing a checkout of an existing configuration in a given git repository for example.
 
@@ -241,9 +240,17 @@ export URI=$(terraform output -raw cluster_uri)
 
 And, voilà, the MongoDB cluster is created.
 
-## Go further
+## How to with other databases?
 
-Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples) to find out how to create other databases clusterswith Terraform.
+In this guide, we explained how to deploy a MongoDB service but you can find example for other database engine here and tweak them according to your needs :
+
+* [MySQL](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mysql/terraform/hello-world)
+* [PostgreSQL](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql/terraform/hello-world)
+* [Kafka](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka/terraform/hello-world)
+* [Cassandra](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra/terraform/hello-world)
+
+
+## Go further
 
 [MongoDB capabilities](https://docs.ovh.com/fr/publiccloud/databases/mongodb/capabilities/)
 
