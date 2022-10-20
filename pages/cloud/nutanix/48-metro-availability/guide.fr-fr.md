@@ -6,11 +6,11 @@ section: Plan de Reprise d'Activité
 order: 06
 ---
 
-**Dernière mise à jour le 19/10/2022**
+**Dernière mise à jour le 20/10/2022**
 
 ## Objectif
 
-** Ce guide vous présente la solution Metro qui permet un plan de reprise d'activité automatisé** 
+** Ce guide vous présente la Metro Availability qui permet un plan de reprise d'activité automatisé** 
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -88,13 +88,13 @@ une partie du  paramètrage sera faite à partir des interfaces WEB **Prism Cent
 
 ### Interconnexion des trois clusters
 
-La première étape est de réaliser l'interconnexion des trois clusters. 
+La première étape est de réaliser l'interconnexion des trois clusters sur le même vRack OVHcloud. 
 
 Aidez-vous de ce guide pour interconnecter les deux premiers clusters [https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/].
 
-Pour configurer le troisième cluster à Erith il faudra réutiliser la procédure utilisée pour l'interconnexion des deux clusters mais cette fois ce sera entre Erith et GRAVELINES à la place de ROUBAIX et GRAVELINES.
+Pour configurer le troisième cluster à Erith il faudra réutiliser la procédure utilisée pour l'interconnexion des deux clusters mais cette fois ce sera entre Erith et Gravelines à la place de Roubaix et Gravelines.
 
-Après avoir interconnectés vos 3 serveurs et fini la configurations des **Loadbalancer** vous verrez dans la configuration du vRack 
+Après avoir interconnectés vos 3 serveurs et fini la configurations des **Loadbalancer** vous verrez dans la configuration du vRack. 
 
 - 9 Dedicated servers (3 par cluster)
 - 3 adresses IP publiques
@@ -106,7 +106,7 @@ Vous pouvez vous connecter aux URL des machines virtuelles **Prism Central** dep
 
 ### Suppression des enregistrements **Prism Central** pour les cluster de Roubaix et Gravelines.
 
-Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il est est nécessaire de n'utiliser qu'une Machine virtuelle **Prism Central** commune au 3 clusters. les trois cluster seront connectés à Prism Central du cluster d'Erith. 
+Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il est est nécessaire de n'utiliser qu'une Machine virtuelle **Prism Central** commune aux 3 clusters. **Prism Central** sera sur le site d'ERITH qui ne contient pas de machines virtuelles concernées par le P.R.A.
 
 Dans un premier temps il faut retirer **Prism Element** des clusters des machines virtuelles **Prism Central** de Roubaix et Gravelines.
 
@@ -116,10 +116,10 @@ Dans un premier temps il faut retirer **Prism Element** des clusters des machine
 Connectez-vous en SSH au cluster **Prism Element** de Roubaix.
 
 ```bash
-ssh nutanix@adresse_ip_pe_roubaix
-saisissez le mot de passe de Prism Element
+ssh nutanix@adresse_ip_privee_prism_element_roubaix
+Saisissez le mot de passe de Prism Element
 ```
-Exécutez cette commande pour sortir Prism Element de Prism Central:
+Exécutez cette commande pour retirer Prism Element de la configuration de Prism Central:
 
 ```
 ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=adresse_ip_privee_prism_central\
@@ -143,14 +143,14 @@ Notez la valeur de **Cluster UUID** qui doit avoir cette forme **xxxxxxxx-xxxx-x
 Déconnectez-vous de **Prism Element** et connectez vous en SSH sur la machine virtuelle **Prism Central** de Roubaix.
 
 ```bash
-ssh nutanix@adresse_ip_pc_roubaix
+ssh nutanix@adresse_ip_privee_prism_central
 saisissez le mot de passe de Prism Central
 ```
 
 Saisissez cette commande :
 
 ```bash
-python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_pe_roubaix
+python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_roubaix
 ```
 
 #### Désactivation de **Prism Central** sur le cluster de Gravelines
@@ -185,9 +185,9 @@ Notez la valeur de **Cluster UUID* qui doit avoir cette forme **xxxxxxxx-xxxx-xx
 Deconnectez-vous de **Prism Element** et connectez vous en SSH sur la machine virtuelle **Prism Central** de Gravelines
 
 ```bash
-ssh nutanix@adresse_ip_pc_gravelines
+ssh nutanix@adresse_ip_privee_prism_central_gravelines
 saisissez le mot de passe de Prism Central
-python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_pe_gravelines
+python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_gravelines
 ```
                                                 
 ### Enregistrement des deux clusters au Prism Central se trouvant sur le site d'ERITH
@@ -195,7 +195,13 @@ python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_pe_gravelines
 Connectez-vous en ssh sur **Prism Element** de Roubaix :
 
 ```bash
-ssh nutanix@adresse_ip_pe_roubaix
+ssh nutanix@adresse_ip_privee_prism_element_roubaix
+saisissez le mot de passe de Prism Element
+```
+
+Executer cette commande :
+
+```bash
 ncli multicluster register-to-prism-central username=admin password=passwod_admin\ external-ip-address-or-svm-ips=adresse_ip_privee_prism_central_erith
 ```
 
@@ -217,9 +223,9 @@ Si le cluster est bien connecté à **Prism Central** d'Erith vous verrez apppar
 Registered Cluster Count: 1
 
     Cluster Id                : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-    Cluster Name              : FQDN-Prism-Central-Erith
+    Cluster Name              : Prism-Central-Erith-FQDN
     Is Multicluster           : true
-    Controller VM IP Addre... : [adresse_ip_PC_Erith]
+    Controller VM IP Addre... : [adresse_ip_privee_prisme_central_Erith]
     External or Masqueradi... :
     Cluster FQDN              :
     Controller VM NAT IP A... :
@@ -231,14 +237,14 @@ Registered Cluster Count: 1
 Connectez-vous en ssh sur **Prism Element** de Gravelines :
 
 ```bash
-ssh nutanix@adresse_ip_pe_gravelines
+ssh nutanix@adresse_ip_prism_element_gravelines
 Saisissez le mot de passe de Prism Element de Gravelines
 ```
 
 Executez cette commande :
 
 ```bash
-ncli multicluster register-to-prism-central username=admin password=passwod_admin_erith external-ip-address-or-svm-ips=adresse_ip_priveeprism_central_erith
+ncli multicluster register-to-prism-central username=admin password=passwod_admin_erith external-ip-address-or-svm-ips=adresse_ip_privee_prism_central_erith
 ```
 
 Ce message apparait :
@@ -259,9 +265,9 @@ Si le cluster est bien connecté au **Prism Central** d'Erith vous verrez apppar
 Registered Cluster Count: 1
 
     Cluster Id                : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-    Cluster Name              : FQDN-Prism-Central-Erith
+    Cluster Name              : Prism-Central-Erith-FQDN
     Is Multicluster           : true
-    Controller VM IP Addre... : [adresse_ip_PC_Erith]
+    Controller VM IP Addre... : [adresse_ip_privee_prism_central_Erith]
     External or Masqueradi... :
     Cluster FQDN              :
     Controller VM NAT IP A... :
@@ -287,7 +293,6 @@ Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à 
 
 ![03 - Add iscsi address erith 03](images/03-add-iscsi-address-erith03.png)
 
-
 A partir du tableau de bord cliquez sur le lien vers le `cluster de Gravelines`{.action}.
 
 ![03 - Add iscsi address gravelines 01](images/03-add-iscsi-address-gravelines01.png)
@@ -306,11 +311,11 @@ A partir du tableau de bord cliquez sur le lien vers le `cluster de Roubaix`{.ac
 
 Cliquez en haut à gauche sur le `nom du cluster  `{.action}.
 
-![03 - Add iscsi address gravelines 02](images/03-add-iscsi-address-gravelines02.png)
+![03 - Add iscsi address roubaix 02](images/03-add-iscsi-address-roubaix02.png)
 
 Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur  `Save`{.action}.
 
-![03 - Add iscsi address gravelines 03](images/03-add-iscsi-address-gravelines03.png)
+![03 - Add iscsi address roubaix 03](images/03-add-iscsi-address-roubaix03.png)
 
 ### Création de deux **Storage Containers** sur les clusters de Roubaix et de Gravelines
 
