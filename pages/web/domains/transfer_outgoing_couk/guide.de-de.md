@@ -30,7 +30,7 @@ Der Transferprozess für Top Level Domains (TLDs) des Ländercodes **UK** (**.uk
 
 > [!warning]
 >
-> Sollte die betreffende Domain bei OVHcloud registriert bleiben, aber in den Verwaltungs- oder Eigentumsverhältnissen geändert werden, ist ein ausgehender Transfer der Domain nicht der geeignete Vorgang.
+> Soll der betreffende Domainname bei OVHcloud registriert bleiben, aber hinsichtlich der Verwaltungs- oder Eigentumsverhältnisse bearbeitet werden, ist ein ausgehender Transfer der Domain nicht der geeignete Vorgang.
 >
 > Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) beschrieben.
 >
