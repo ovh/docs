@@ -1,12 +1,12 @@
 ---
-title: Cold Archive - Getting started with Cold Archive (Alpha)
+title: Cold Archive - Getting started with Cold Archive (Beta)
 slug: s3/getting-started-with-cold-archive
 excerpt: This guide shows you how to manage your data with Cold Archive
 section: Cold Archive Storage Class Specifics
 order: 200
 ---
 
-**Last updated 15th March 2022**
+**Last updated 19th October 2022**
 
 ## Objective
 
@@ -16,13 +16,9 @@ Restoration can take some time as it needs to be read on tapes.
 
 **This guide explains how to set up storage on tapes with Cold Archive.**
 
-> [!primary]
->
-> During the the Alpha period, tapes are not used.
-
 ## Requirements
 
-- [Getting started with AWS CLI](https://docs.ovh.com/asia/en/storage/s3/getting-started-with-s3/#using-the-aws-cli)
+- [Getting started with Object Storage](https://docs.ovh.com/asia/en/storage/object-storage/s3/getting-started-with-object-storage/#using-aws-cli)
 - `awscli` version >= 1.16.62
 
 ## Instructions
@@ -72,24 +68,19 @@ Allowed actions are adding and listing objects.
 Archive a bucket:
 
 ```bash
-aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net put-ovh-archive <bucket_name>
+aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net put-ovh-archive <bucket_name>
 ```
 
 After this request, the bucket is not archived yet.<br>
 It will take some time before it is archived on the tapes.<br>
 From this command and until a restoration, the bucket cannot accept any read or write requests on objects (listing objects is still allowed).
 
-> [!primary]
->
-> During the Alpha period, nothing is stored on tapes.
->
-
 ### Bucket restoring
 
 Restore a bucket:
 
 ```bash
-aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net put-ovh-restore <bucket_name>
+aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net put-ovh-restore <bucket_name>
 ```
 
 After this request, the bucket is not restored yet.<br>
@@ -100,12 +91,12 @@ It will take some time before it is restored and for the objects to be accessibl
 Delete an intelligent-tiering configuration and objects of a bucket:
 
 ```bash
-aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net delete-ovh-archive <bucket_name>
+aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net delete-ovh-archive <bucket_name>
 ```
 
 After this request, the objects of the bucket are not deleted yet.<br>
 It will take some time before objects are deleted.<br>
-Once objects are deleted, the bucket can be released: 
+Once objects are deleted, the bucket can be released:
 
 ```bash
 aws s3 rb s3://<bucket_name>
@@ -116,17 +107,15 @@ aws s3 rb s3://<bucket_name>
 Once an intelligent-tiering configuration has been pushed (via a `put-bucket-intelligent-tiering-configuration` operation) and until it is removed (via a `delete-bucket-intelligent-tiering-configuration` operation), the status of a bucket is readable through:
 
 ```bash
-aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net get-ovh-bucket-status <bucket_name> | jq '.IntelligentTieringConfiguration.Status'
+aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net get-ovh-bucket-status <bucket_name> | jq '.IntelligentTieringConfiguration.Status'
 ```
 
 #### List of bucket statuses
 
 | Status      | Description                                                                      | Objects permissions    |
 |-------------|----------------------------------------------------------------------------------|------------------------|
-| `None`      | No Intelligent-Tiering configuration pushed on the bucket yet.                   | Write-only + Listing   |
-| `Locked`    | Archive process asked from user. Waiting for the robot to deal with the request. | Listing                |
+| `None`      | No Intelligent-Tiering configuration pushed on the bucket yet.                   | All                    |
 | `Archiving` | Archiving in progress on tapes.                                                  | Listing                |
-| `Draining`  | Objects stored on tapes and currently being removed from the disks.              | Listing                |
 | `Archived`  | Objects archived on tapes only.                                                  | Listing                |
 | `Restoring` | Restoration in progress from tapes.                                              | Listing                |
 | `Restored`  | Objects restored and accessible.                                                 | Read-only + Listing    |
