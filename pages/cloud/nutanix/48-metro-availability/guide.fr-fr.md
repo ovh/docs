@@ -90,11 +90,14 @@ une partie du  paramètrage sera faite à partir des interfaces WEB **Prism Cent
 
 La première étape est de réaliser l'interconnexion des trois clusters sur le même vRack OVHcloud. 
 
-Aidez-vous de ce guide pour interconnecter les deux premiers clusters [https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/].
+Aidez-vous de ce guide pour interconnecter vos clusters [Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/).
 
-Pour configurer le troisième cluster à Erith il faudra réutiliser la procédure utilisée pour l'interconnexion des deux clusters mais cette fois ce sera entre Erith et Gravelines à la place de Roubaix et Gravelines.
+Le guide explique la connexion entre deux clusters dans notre cas il faut connecter 3 serveurs suivez les instructions dans ce sens :
 
-Après avoir interconnectés vos 3 serveurs et fini la configurations des **Loadbalancer** vous verrez dans la configuration du vRack. 
+- Gravelines vers Roubaix
+- Gravelines vers Erith
+
+Lorsque vous aurez terminé la configuration vous verrez dans votre vRack ces éléments :
 
 - 9 Dedicated servers (3 par cluster)
 - 3 adresses IP publiques
@@ -281,11 +284,11 @@ A partir d'un navigateur WEB connectez vous sur l'URL de Prism-Central à ERITH,
 
 ### Ajout des adresses IP pour les connexions iSCSI sur les trois clusters
 
-A partir du tableau de bord cliquez sur le lien vers le `cluster d'Erith`{.action}.
+A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `cluster d'Erith`{.action}.
 
 ![03 - Add iscsi address erith 01](images/03-add-iscsi-address-erith01.png)
 
-Cliquez en haut à gauche sur le `nom du cluster`{.action}.
+Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `nom du cluster`{.action}.
 
 ![03 - Add iscsi address erith 02](images/03-add-iscsi-address-erith02.png)
 
@@ -293,11 +296,11 @@ Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à 
 
 ![03 - Add iscsi address erith 03](images/03-add-iscsi-address-erith03.png)
 
-A partir du tableau de bord cliquez sur le lien vers le `cluster de Gravelines`{.action}.
+A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `cluster de Gravelines`{.action}.
 
 ![03 - Add iscsi address gravelines 01](images/03-add-iscsi-address-gravelines01.png)
 
-Cliquez en haut à gauche sur le `nom du cluster  `{.action}.
+Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `nom du cluster  `{.action}.
 
 ![03 - Add iscsi address gravelines 02](images/03-add-iscsi-address-gravelines02.png)
 
@@ -305,11 +308,11 @@ Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à 
 
 ![03 - Add iscsi address graveline 03](images/03-add-iscsi-address-gravelines03.png)
 
-A partir du tableau de bord cliquez sur le lien vers le `cluster de Roubaix`{.action}.
+A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `cluster de Roubaix`{.action}.
 
 ![03 - Add iscsi address roubaix 01](images/03-add-iscsi-address-roubaix01.png)
 
-Cliquez en haut à gauche sur le `nom du cluster  `{.action}.
+Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `nom du cluster  `{.action}.
 
 ![03 - Add iscsi address roubaix 02](images/03-add-iscsi-address-roubaix02.png)
 
@@ -319,9 +322,9 @@ Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à 
 
 ### Création de deux **Storage Containers** sur les clusters de Roubaix et de Gravelines
 
-Nous allons créer deux **Storage Containers** avec le même nom. Restez sur **Prism Central** pour l'ajout des **Storage Containers**. 
-
-Depuis le menu principal, cliquez sur `Storage Containers`{.action} dans le sous-menu **Compute & Storage**.
+Nous allons créer deux **Storage Containers** portant le même nom à Roubaix et Gravelines. 
+ 
+Depuis le menu principal de **Prism Elemetn** cliquez sur `Storage Containers`{.action} dans le sous-menu **Compute & Storage**.
 
 ![05 - Add-storage-container 01](images/05-add-storage-container01.png)
 
@@ -332,7 +335,6 @@ Cliquez sur `Create Storage Container`{.action}.
 Saisissez `UsedForDR` dans **Name**, Choisissez le `cluster de Roubaix` dans **Cluster** et cliquez sur `Create`{.action}.
 
 ![05 - Add-storage-container 03](images/05-add-storage-container03.png)
-
 
 Cliquez sur `Create Storage Container`{.action}.
 
@@ -372,7 +374,7 @@ ssh nutanix@adresse_ip_privee_Prism_element_gravelines
 Saisissez le mot de passe du compte Nutanix de Prism Element
 ```
 
-Executez cette commmande pour chaque VM que nous allons déplacer dans le **Storage Container** en remplaçant **nomvm** par le nom de la machine virtuelle (Dans notre Plan de reprise d'activité nous avons trois machines virtuelles à Graveline une avec Windows et un autre sous Linux plus la gateway qui donne accès à Internet). 
+Executez cette commmande pour chaque VM que nous allons déplacer dans le **Storage Container** en remplaçant **nomvm** par le nom de la machine virtuelle (Dans notre Plan de reprise d'activité nous avons trois machines virtuelles à Gravelines une avec Windows et un autre sous Linux ainsi que la gateway qui donne accès à Internet). 
 
 ```bash
 acli vm.update_container nomvm container=UsedForDR
@@ -385,24 +387,19 @@ Nons allons créer une catégorie avec deux valeurs dans **Prism Central** pour 
 
 Faites défiler le menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
 
-![06 - Add Categorie 01](images/06-addcategories01.png)
+![06 - Add Categorie 01](images/06-add-categories01.png)
 
 Cliquez sur `New Category`{.action}.
 
-![06- Add Categorie 02](images/06-addcategories02.png)
+![06- Add Categorie 02](images/06-add-categories02.png)
 
 Saisissez  `Protected VM` dans **Name** ajouter ces valeurs `Roubaix` et `Gravelines` ensuite cliquez sur `Save`{.action}.
 
-![06 - Add Categorie 03](images/06-addcategories03.png)
+![06 - Add Categorie 03](images/06-add-categories03.png)
 
 La catégorie apparait dans la liste et elle est prête à être utilisé.
 
-![06 - Add Categorie 04](images/06-addcategories03.png)
-
-
-
-
-
+![06 - Add Categorie 04](images/06-add-categories03.png)
 
 
 ### Activation de la réplication synchrone
