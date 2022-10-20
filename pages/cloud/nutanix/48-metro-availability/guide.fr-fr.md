@@ -44,7 +44,7 @@ Nous n'utiliserons qu'un seul vRack qui contiendra :
 
 Vous trouverez ci-dessous le schéma de cette configuration sur trois sites:
 
-![00 - Metro Availability Diagram 01](images/00-metro-availability-diagram01.png)
+![00 - Metro Availability Diagram 01](images/00-metro-availability-diagram01.png){.thumbnail}
 
 ## En pratique
 
@@ -105,7 +105,7 @@ Lorsque vous aurez terminé la configuration vous verrez dans votre vRack ces é
 - 3 adresses IP publiques
 - 3 Load Balancers
 
-![01 - vRack Configuration 01](images/01-vrack-configuration01.png)
+![01 - vRack Configuration 01](images/01-vrack-configuration01.png){.thumbnail}
 
 Vous pouvez vous connecter aux URL des machines virtuelles **Prism Central** depuis l'extérieur avec les URL d'origine de chaque cluster qui ont la forme **https://cluster-XXXX.nutanix.ovh.net:9440**
 
@@ -282,45 +282,45 @@ Registered Cluster Count: 1
 
 A partir d'un navigateur WEB connectez vous sur l'URL de Prism-Central à ERITH, vous verrez les trois clusters.
 
-![02 - Prism Central Dashboard 02](images/02-show-prismcentral01.png)
+![02 - Prism Central Dashboard 02](images/02-show-prismcentral01.png){.thumbnail}
 
 ### Ajout des adresses IP pour les connexions iSCSI sur les trois clusters
 
 A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `cluster d'Erith`{.action}.
 
-![03 - Add iscsi address erith 01](images/03-add-iscsi-address-erith01.png)
+![03 - Add iscsi address erith 01](images/03-add-iscsi-address-erith01.png){.thumbnail}
 
 Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `nom du cluster`{.action}.
 
-![03 - Add iscsi address erith 02](images/03-add-iscsi-address-erith02.png)
+![03 - Add iscsi address erith 02](images/03-add-iscsi-address-erith02.png){.thumbnail}
 
 Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur  `Save`{.action}.
 
-![03 - Add iscsi address erith 03](images/03-add-iscsi-address-erith03.png)
+![03 - Add iscsi address erith 03](images/03-add-iscsi-address-erith03.png){.thumbnail}
 
 A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `cluster de Gravelines`{.action}.
 
-![03 - Add iscsi address gravelines 01](images/03-add-iscsi-address-gravelines01.png)
+![03 - Add iscsi address gravelines 01](images/03-add-iscsi-address-gravelines01.png){.thumbnail}
 
 Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `nom du cluster  `{.action}.
 
-![03 - Add iscsi address gravelines 02](images/03-add-iscsi-address-gravelines02.png)
+![03 - Add iscsi address gravelines 02](images/03-add-iscsi-address-gravelines02.png){.thumbnail}
 
 Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur  `Save`{.action}.
 
-![03 - Add iscsi address graveline 03](images/03-add-iscsi-address-gravelines03.png)
+![03 - Add iscsi address graveline 03](images/03-add-iscsi-address-gravelines03.png){.thumbnail}
 
 A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `cluster de Roubaix`{.action}.
 
-![03 - Add iscsi address roubaix 01](images/03-add-iscsi-address-roubaix01.png)
+![03 - Add iscsi address roubaix 01](images/03-add-iscsi-address-roubaix01.png){.thumbnail}
 
 Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `nom du cluster  `{.action}.
 
-![03 - Add iscsi address roubaix 02](images/03-add-iscsi-address-roubaix02.png)
+![03 - Add iscsi address roubaix 02](images/03-add-iscsi-address-roubaix02.png){.thumbnail}
 
 Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur  `Save`{.action}.
 
-![03 - Add iscsi address roubaix 03](images/03-add-iscsi-address-roubaix03.png)
+![03 - Add iscsi address roubaix 03](images/03-add-iscsi-address-roubaix03.png){.thumbnail}
 
 ### Création de deux **Storage Containers** sur les clusters de Roubaix et de Gravelines
 
@@ -328,27 +328,27 @@ Nous allons créer deux **Storage Containers** portant le même nom à Roubaix e
  
 Depuis le menu principal de **Prism Elemetn** cliquez sur `Storage Containers`{.action} dans le sous-menu **Compute & Storage**.
 
-![05 - Add-storage-container 01](images/05-add-storage-container01.png)
+![05 - Add-storage-container 01](images/05-add-storage-container01.png){.thumbnail}
 
 Cliquez sur `Create Storage Container`{.action}.
 
-![05 - Add-storage-container 02](images/05-add-storage-container02.png)
+![05 - Add-storage-container 02](images/05-add-storage-container02.png){.thumbnail}
 
 Saisissez `UsedForDR` dans **Name**, Choisissez le `cluster de Roubaix` dans **Cluster** et cliquez sur `Create`{.action}.
 
-![05 - Add-storage-container 03](images/05-add-storage-container03.png)
+![05 - Add-storage-container 03](images/05-add-storage-container03.png){.thumbnail}
 
 Cliquez sur `Create Storage Container`{.action}.
 
-![05 - Add-storage-container 04](images/05-add-storage-container04.png)
+![05 - Add-storage-container 04](images/05-add-storage-container04.png){.thumbnail}
 
 Saisissez `UsedForDR` dans **Name**, Choisissez le `cluster de Gravelines` dans **Cluster** et cliquez sur `Create`{.action}.
 
-![05 - Add-storage-container 05](images/05-add-storage-container05.png)
+![05 - Add-storage-container 05](images/05-add-storage-container05.png){.thumbnail}
 
 Dans la liste des **Storages Containers** vous verrez deux **Storage Containers** portant le même Nom.
 
-![05 - Add-storage-container 06](images/05-add-storage-container06.png)
+![05 - Add-storage-container 06](images/05-add-storage-container06.png){.thumbnail}
 
 
 ### Déplacement des machines virtuelles dans le **Storage Container**
@@ -389,19 +389,19 @@ Nons allons créer une catégorie avec deux valeurs dans **Prism Central** pour 
 
 Faites défiler le menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
 
-![06 - Add Categorie 01](images/06-add-categories01.png)
+![06 - Add Categorie 01](images/06-add-categories01.png){.thumbnail}
 
 Cliquez sur `New Category`{.action}.
 
-![06- Add Categorie 02](images/06-add-categories02.png)
+![06- Add Categorie 02](images/06-add-categories02.png){.thumbnail}
 
 Saisissez `Protected VM` dans **Name** ajouter ces valeurs `Roubaix` et `Gravelines` dans **Values** ensuite cliquez sur `Save`{.action}.
 
-![06 - Add Categorie 03](images/06-add-categories03.png)
+![06 - Add Categorie 03](images/06-add-categories03.png){.thumbnail}
 
 La catégorie apparait dans la liste et elle est prête à être utilisé.
 
-![06 - Add Categorie 04](images/06-add-categories03.png)
+![06 - Add Categorie 04](images/06-add-categories03.png){.thumbnail}
 
 ### Ajout des machines virtuelles dans les catégories
 
@@ -409,23 +409,23 @@ Nous allons affecter deux machines virtuelles sur le cluster de Roubaix dans une
 
 Au travers du menu principal de **Prism Central** cliquez sur `Vms`{.action} dans le sous menu **Compute & Storage**.
 
-![07 - Add Categorie to VM ROUBAIX 01](images/07-add-categorie-to-vm-roubaix01.png)
+![07 - Add Categorie to VM ROUBAIX 01](images/07-add-categorie-to-vm-roubaix01.png){.thumbnail}
 
 Sélectionnez à gauche `les deux machines virtuelles`{.action} de Roubaix, Ensuite au travers du menu **Actions** cliquez sur `Manage Categories`{.action}
 
-![07 - Add Categorie to VM ROUBAIX 02](images/07-add-categorie-to-vm-roubaix02.png)
+![07 - Add Categorie to VM ROUBAIX 02](images/07-add-categorie-to-vm-roubaix02.png){.thumbnail}
 
 Ajouter la catégorie `ProcectedVM: Roubaix`, ensuite cliquez sur `Save`{.action}
 
-![07 - Add Categorie to VM ROUBAIX 03](images/07-add-categorie-to-vm-roubaix03.png)
+![07 - Add Categorie to VM ROUBAIX 03](images/07-add-categorie-to-vm-roubaix03.png){.thumbnail}
 
 Sélectionnez à gauche `les trois machines virtuelles`{.action} de Gravelines, Ensuite au travers du menu **Actions** cliquez sur `Manage Categories`{.action}
 
-![08 - Add Categorie to VM GRAVELINES 01](images/08-add-categorie-to-vm-gravelines01.png)
+![08 - Add Categorie to VM GRAVELINES 01](images/08-add-categorie-to-vm-gravelines01.png){.thumbnail}
 
 Ajouter la catégorie `ProcectedVM: Gravelines`, ensuite cliquez sur `Save`{.action}
 
-![08 - Add Categorie to VM GRAVELINES 02](images/08-add-categorie-to-vm-gravelines02.png)
+![08 - Add Categorie to VM GRAVELINES 02](images/08-add-categorie-to-vm-gravelines02.png){.thumbnail}
 
 ### Mise en place des réplications synchrones entre Roubaix et Gravelines
 
@@ -435,65 +435,65 @@ Nous allons mettre en place la réplication synchrone entre Roubaix et Graveline
 
 Au travers du menu principal de **Prism Central** cliquez sur `Protection Policies`{.action} dans le sous menu **Data Protection**
 
-![09 - Create Protection Policy Roubaix 01](images/09-create-data-protection-roubaix01.png)
+![09 - Create Protection Policy Roubaix 01](images/09-create-data-protection-roubaix01.png){.thumbnail}
 
 Cliquez sur `Create Protection Policy`{.action}
 
-![09 - Create Protection Policy Roubaix 02](images/09-create-data-protection-roubaix02.png)
+![09 - Create Protection Policy Roubaix 02](images/09-create-data-protection-roubaix02.png){.thumbnail}
 
 Saisissez `ROUBAIX-TO-GRAVELINES`{.action} dans **Policy name**, gardez **Local AZ** et cliquez sur `Select Cluster`{.action} dans **Primary Location**.
 
-![09 - Create Protection Policy Roubaix 03](images/09-create-data-protection-roubaix03.png)
+![09 - Create Protection Policy Roubaix 03](images/09-create-data-protection-roubaix03.png){.thumbnail}
 
 Choisissez le cluster de Roubaix et cliquez sur `Save`{.action}.
 
-![09 - Create Protection Policy Roubaix 04](images/09-create-data-protection-roubaix04.png)
+![09 - Create Protection Policy Roubaix 04](images/09-create-data-protection-roubaix04.png){.thumbnail}
 
 En haut à gauche à coté de Disaster Recovery cliquez sur `Enable`{.action}. 
 
-![09 - Create Protection Policy Roubaix 05](images/09-create-data-protection-roubaix05.png)
+![09 - Create Protection Policy Roubaix 05](images/09-create-data-protection-roubaix05.png){.thumbnail}
 
 Le système contrôle que tout est correct avant d'activer l'option **Disaster Recovery**
 
-![09 - Create Protection Policy Roubaix 06](images/09-create-data-protection-roubaix06.png)
+![09 - Create Protection Policy Roubaix 06](images/09-create-data-protection-roubaix06.png){.thumbnail}
 
 Cliquez sur `Enable`{.action} pour activer l'option **Disaster Recovery**. 
 
-![09 - Create Protection Policy Roubaix 07](images/09-create-data-protection-roubaix07.png)
+![09 - Create Protection Policy Roubaix 07](images/09-create-data-protection-roubaix07.png){.thumbnail}
 
 Cliquez à nouveau sur `Enable`{.action}. 
 
-![09 - Create Protection Policy Roubaix 07](images/09-create-data-protection-roubaix07.png)
+![09 - Create Protection Policy Roubaix 07](images/09-create-data-protection-roubaix07.png){.thumbnail}
 
 L'activation de l'option **Disaster Recovery** est en cours.
 
 Garder **Local AZ**, sélectionnez le cluster dans **Recovery Location** et cliquez sur `Save`{.action}.
 
-![09 - Create Protection Policy Roubaix 08](images/09-create-data-protection-roubaix08.png)
+![09 - Create Protection Policy Roubaix 08](images/09-create-data-protection-roubaix08.png){.thumbnail}
 
 Cliquez sur `+ Add Schedule`{.action}.
 
-![09 - Create Protection Policy Roubaix 10](images/09-create-data-protection-roubaix10.png)
+![09 - Create Protection Policy Roubaix 10](images/09-create-data-protection-roubaix10.png){.thumbnail}
 
 Choisissez ces options  `Synchronous`{.action} pour **Protection Type** et  `Automatic`{.action} pour **Failure Detection Mode**, ensuite cliquez sur `Save Schedule`{.action}.
 
-![09 - Create Protection Policy Roubaix 11](images/09-create-data-protection-roubaix11.png)
+![09 - Create Protection Policy Roubaix 11](images/09-create-data-protection-roubaix11.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![09 - Create Protection Policy Roubaix 12](images/09-create-data-protection-roubaix12.png)
+![09 - Create Protection Policy Roubaix 12](images/09-create-data-protection-roubaix12.png){.thumbnail}
 
 Sélectionnez la catégorie `ProtectedVM : Roubaix`{.action} et cliquez sur `Add`{.action}.
 
-![09 - Create Protection Policy Roubaix 13](images/09-create-data-protection-roubaix13.png)
+![09 - Create Protection Policy Roubaix 13](images/09-create-data-protection-roubaix13.png){.thumbnail}
 
 Cliquez sur `Create`{.action}.
 
-![09 - Create Protection Policy Roubaix 14](images/09-create-data-protection-roubaix14.png)
+![09 - Create Protection Policy Roubaix 14](images/09-create-data-protection-roubaix14.png){.thumbnail}
 
 Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines, après une première réplication complête les données seront synhronisés en permanence de Roubaix vers Gravelines.
 
-![09 - Create Protection Policy Roubaix 15](images/09-create-data-protection-roubaix15.png)
+![09 - Create Protection Policy Roubaix 15](images/09-create-data-protection-roubaix15.png){.thumbnail}
 
 #### Mise en place de réplication entre Gravelines et Roubaix
 
@@ -501,45 +501,45 @@ La réplication peut être bidirectionnelle nous allons maintenant créer une r�
 
 Cliquez sur `Create Protection Policy`{.action}.
 
-![10 - Create Protection Policy Gravelines 01](images/10-create-data-protection-gravelines01.png)
+![10 - Create Protection Policy Gravelines 01](images/10-create-data-protection-gravelines01.png){.thumbnail}
 
 Choisissez comme nom `GRAVELINES-TO-ROUBAIX` dans **Policy Name**, gardez **Local AZ** et choisissez le cluster de Gravelines dans **Primary Location**, ensuite cliquez sur `Save`{.action}.
 
-![10 - Create Protection Policy Gravelines 02](images/10-create-data-protection-gravelines02.png)
+![10 - Create Protection Policy Gravelines 02](images/10-create-data-protection-gravelines02.png){.thumbnail}
 
 Conservez **Local AZ** , sélectionnez le cluster de Roubaix et cliquez sur  sur `Save`{.action}.
 
-![10 - Create Protection Policy Gravelines 03](images/10-create-data-protection-gravelines03.png)
+![10 - Create Protection Policy Gravelines 03](images/10-create-data-protection-gravelines03.png){.thumbnail}
 
 Cliquez sur `+ Add Schedule`{.action}.
 
-![10 - Create Protection Policy Gravelines 04](images/10-create-data-protection-gravelines04.png)
+![10 - Create Protection Policy Gravelines 04](images/10-create-data-protection-gravelines04.png){.thumbnail}
 
 Choisissez ces options  `Synchronous`{.action} pour **Protection Type** et  `Automatic`{.action} pour **Failure Detection Mode**, ensuite cliquez sur `Save Schedule`{.action}.
 
-![10 - Create Protection Policy Gravelines 05](images/10-create-data-protection-gravelines05.png)
+![10 - Create Protection Policy Gravelines 05](images/10-create-data-protection-gravelines05.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![10 - Create Protection Policy Gravelines 06](images/10-create-data-protection-gravelines06.png)
+![10 - Create Protection Policy Gravelines 06](images/10-create-data-protection-gravelines06.png){.thumbnail}
 
 Sélectionnez la catégorie `ProtectedVM : Gravelines`{.action} et cliquez sur `Add`{.action}.
 
-![10 - Create Protection Policy Gravelines 07](images/10-create-data-protection-gravelines07.png)
+![10 - Create Protection Policy Gravelines 07](images/10-create-data-protection-gravelines07.png){.thumbnail}
 
 Cliquez sur `Create`{.action}.
 
-![10 - Create Protection Policy Gravelines 08](images/10-create-data-protection-gravelines08.png)
+![10 - Create Protection Policy Gravelines 08](images/10-create-data-protection-gravelines08.png){.thumbnail}
 
 Une deuxième stratégie de protection est en place.
 
-![10 - Create Protection Policy Gravelines 09](images/10-create-data-protection-gravelines09.png)
+![10 - Create Protection Policy Gravelines 09](images/10-create-data-protection-gravelines09.png){.thumbnail}
 
 ### Création de sous réseaux de test pour les plan de reprise
 
 Nous allons créer des sous-réseaux qui serviront pour les test de plan de reprises intégrés dans Nutanix
 
-Il faut un sous réseau de test par sous réseau de production sur nos clusters noux avons 3 sous réseaux
+Il faut un sous réseau de test par sous réseau de production sur nos clusters noux avons 3 sous réseaux de production.
 
 - **base** sur le VLAN 0
 - **infra** sur le VLAN 1
@@ -555,7 +555,7 @@ Aidez-vous de ce guide pour créer des VLAN sur vos clusters Nutanix [Isoler les
 
 six nouveaux sous-réseaux sont visibles au travers de votre interface **Prism Central** dans le tableau de bord **Subnets**
 
-![11 - Create Test Subnet 01](images/11-create-testsubnet01.png)
+![11 - Create Test Subnet 01](images/11-create-testsubnet01.png){.thumbnail}
 
 ### Mise en place des plans de reprises d'activités
 
@@ -569,19 +569,19 @@ Maintenant que les réplications et les sous réseaux de test sont en place nous
 
 Au travers du menu principal de **Prism Central** cliquez sur `Recovery Plans`{.action} dans le sous-menu **Data Protection**. 
 
-![12 - Create Recovery Plan Roubaix 01](images/12-create-roubaix-recovery-plan01.png)
+![12 - Create Recovery Plan Roubaix 01](images/12-create-roubaix-recovery-plan01.png){.thumbnail}
 
 Cliquez à Gauche sur `Enable Disaster Recovery`{.action}.
 
-![12 - Create Recovery Plan Roubaix 02](images/12-create-roubaix-recovery-plan02.png)
+![12 - Create Recovery Plan Roubaix 02](images/12-create-roubaix-recovery-plan02.png){.thumbnail}
 
 Normalement le plande de reprise doit être activé comme indiqué par le message **Disaster Recovery enabled**, cliquez sur la `croix`{.action} à droite pour fermer cette fenêtre. 
 
-![12 - Create Recovery Plan Roubaix 03](images/12-create-roubaix-recovery-plan03.png)
+![12 - Create Recovery Plan Roubaix 03](images/12-create-roubaix-recovery-plan03.png){.thumbnail}
 
 Cliquez sur `Create New Recovery Plan`{.action}.
 
-![12 - Create Recovery Plan Roubaix 04](images/12-create-roubaix-recovery-plan04.png)
+![12 - Create Recovery Plan Roubaix 04](images/12-create-roubaix-recovery-plan04.png){.thumbnail}
 
 Choisissez ces informations :
 
@@ -598,31 +598,31 @@ Choisissez ces informations :
 
 Ensuite cliquez sur `Next`{.action}.
 
-![12 - Create Recovery Plan Roubaix 05](images/12-create-roubaix-recovery-plan05.png)
+![12 - Create Recovery Plan Roubaix 05](images/12-create-roubaix-recovery-plan05.png){.thumbnail}
 
 Cliquez sur `+ Add VM(s)`{.action}.
 
-![12 - Create Recovery Plan Roubaix 06](images/12-create-roubaix-recovery-plan06.png)
+![12 - Create Recovery Plan Roubaix 06](images/12-create-roubaix-recovery-plan06.png){.thumbnail}
 
 Sélectionnez les deux machines virtuelles et cliquez sur `Add`{.action}.
 
-![12 - Create Recovery Plan Roubaix 07](images/12-create-roubaix-recovery-plan07.png)
+![12 - Create Recovery Plan Roubaix 07](images/12-create-roubaix-recovery-plan07.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![12 - Create Recovery Plan Roubaix 08](images/12-create-roubaix-recovery-plan08.png)
+![12 - Create Recovery Plan Roubaix 08](images/12-create-roubaix-recovery-plan08.png){.thumbnail}
 
 Cliquez sur `OK. Got it`{.action}.
 
-![12 - Create Recovery Plan Roubaix 09](images/12-create-roubaix-recovery-plan09.png)
+![12 - Create Recovery Plan Roubaix 09](images/12-create-roubaix-recovery-plan09.png){.thumbnail}
 
 Cliquez sur `Stretch networks`{.action}.
 
-![12 - Create Recovery Plan Roubaix 10](images/12-create-roubaix-recovery-plan10.png)
+![12 - Create Recovery Plan Roubaix 10](images/12-create-roubaix-recovery-plan10.png){.thumbnail}
 
 Cliquez sur `Proceed`{.action}.
 
-![12 - Create Recovery Plan Roubaix 11](images/12-create-roubaix-recovery-plan11.png)
+![12 - Create Recovery Plan Roubaix 11](images/12-create-roubaix-recovery-plan11.png){.thumbnail}
 
 Choisissez les VLAN qui seront utilisés lors du P.R.A comme ceci
 
@@ -635,13 +635,13 @@ Choisissez les VLAN qui seront utilisés lors du P.R.A comme ceci
 
 Ensuite cliquez sur `Done`{.action}.
 
-![12 - Create Recovery Plan Roubaix 12](images/12-create-roubaix-recovery-plan12.png)
+![12 - Create Recovery Plan Roubaix 12](images/12-create-roubaix-recovery-plan12.png){.thumbnail}
 
 #### Création du plan de reprise d'activité pour le cluster de Roubaix
 
 Le plan de reprise d'activité est créé pour le site de Roubaix. cliquez sur `Create Recovery Plan`{.action} pour créer le plan de reprise d'activité de Gravelines.
 
-![12 - Create Recovery Plan Roubaix 13](images/12-create-roubaix-recovery-plan13.png)
+![12 - Create Recovery Plan Roubaix 13](images/12-create-roubaix-recovery-plan13.png){.thumbnail}
 
 Choisissez ces informations :
 
@@ -658,27 +658,27 @@ Choisissez ces informations :
 
 Ensuite cliquez sur `Next`{.action}.
 
-![13 - Create Recovery Plan Gravelines 01](images/12-create-gravelines-recovery-plan01.png)
+![13 - Create Recovery Plan Gravelines 01](images/13-create-gravelines-recovery-plan01.png){.thumbnail}
 
 Cliquez sur `+ Add VM(s)`{.action}.
 
-![13 - Create Recovery Plan Gravelines 02](images/12-create-gravelines-recovery-plan02.png)
+![13 - Create Recovery Plan Gravelines 02](images/13-create-gravelines-recovery-plan02.png){.thumbnail}
 
 Sélectionnez les trois machines virtuelles et cliquez sur `Add`{.action}.
 
-![13 - Create Recovery Plan Gravelines 03](images/12-create-gravelines-recovery-plan03.png)
+![13 - Create Recovery Plan Gravelines 03](images/13-create-gravelines-recovery-plan03.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![13 - Create Recovery Plan Gravelines 04](images/12-create-gravelines-recovery-plan04.png)
+![13 - Create Recovery Plan Gravelines 04](images/13-create-gravelines-recovery-plan04.png){.thumbnail}
 
 Cliquez sur `Stretch networks`{.action}.
 
-![13 - Create Recovery Plan Gravelines 05](images/12-create-gravelines-recovery-plan05.png)
+![13 - Create Recovery Plan Gravelines 05](images/13-create-gravelines-recovery-plan05.png){.thumbnail}
 
 Cliquez sur `Proceed`{.action}.
 
-![13 - Create Recovery Plan Gravelines 06](images/12-create-gravelines-recovery-plan06.png)
+![13 - Create Recovery Plan Gravelines 06](images/13-create-gravelines-recovery-plan06.png){.thumbnail}
 
 Choisissez ces informations :
 
@@ -691,7 +691,7 @@ Choisissez ces informations :
 
 Ensuite cliquez sur `+ Add Network Mapping`{.action}.
 
-![13 - Create Recovery Plan Gravelines 07](images/12-create-gravelines-recovery-plan07.png)
+![13 - Create Recovery Plan Gravelines 07](images/13-create-gravelines-recovery-plan07.png){.thumbnail}
 
 Choisissez ces informations :
 
@@ -704,7 +704,7 @@ Choisissez ces informations :
 
 Ensuite cliquez sur `+ Add Network Mapping`{.action}.
 
-![13 - Create Recovery Plan Gravelines 08](images/12-create-gravelines-recovery-plan08.png)
+![13 - Create Recovery Plan Gravelines 08](images/13-create-gravelines-recovery-plan08.png){.thumbnail}
 
 Choisissez ces informations :
 
@@ -717,7 +717,7 @@ Choisissez ces informations :
 
 Ensuite cliquez sur `Done`{.action}.
 
-![13 - Create Recovery Plan Gravelines 09](images/12-create-gravelines-recovery-plan09.png)
+![13 - Create Recovery Plan Gravelines 09](images/13-create-gravelines-recovery-plan09.png){.thumbnail}
 
 > [!primary]
 > 3 réseaux ont été rajoutés dans ce plan de reprise d'activité pour la machine virtuelle Gateway qui utilise ces trois réseaux.
@@ -725,7 +725,7 @@ Ensuite cliquez sur `Done`{.action}.
 
 Les deux plans de reprises d'activités sont en productions.
 
-![13 - Create Recovery Plan Gravelines 10](images/12-create-gravelines-recovery-plan10.png)
+![13 - Create Recovery Plan Gravelines 10](images/13-create-gravelines-recovery-plan10.png){.thumbnail}
 
 ### Validation et test d'un plan de reprise d'activité
 
@@ -733,19 +733,19 @@ Il est possible de demander à Prism Central de valider le plan de reprise.
 
 Cliquez sur le `Recovery VM from ROUBAIX`{.action} à valider et tester.
 
-![14 - Validate test recovery plan 01](images/14-create-gravelines-recovery-plan01.png)
+![14 - Validate test recovery plan 01](images/14-create-gravelines-recovery-plan01.png){.thumbnail}
 
 Cliquez sur `Validate`{.action}
 
-![14 - Validate test recovery plan 02](images/14-create-gravelines-recovery-plan02.png)
+![14 - Validate test recovery plan 02](images/14-create-gravelines-recovery-plan02.png){.thumbnail}
 
 Sélectionnez le cluster de Roubaix pour **Entity Failing Over From** et le cluster de Gravelines pour **Entity Failing Over To**. Ensuite cliquez sur `Proceed`{.action}
 
-![14 - Validate test recovery plan 03](images/14-create-gravelines-recovery-plan03.png)
+![14 - Validate test recovery plan 03](images/14-create-gravelines-recovery-plan03.png){.thumbnail}
 
 Le plan de de reprise est validé, cliquez sur `Close`{.action}
 
-![14 - Validate test recovery plan 04](images/14-create-gravelines-recovery-plan04.png)
+![14 - Validate test recovery plan 04](images/14-create-gravelines-recovery-plan04.png){.thumbnail}
 
 ### Test du plan de reprise d'activité
 
@@ -753,11 +753,11 @@ Il est possible de tester le plan de reprise d'activité sans impacter la produc
 
 Cliquez sur `Test`{.action}
 
-![14 - Validate test recovery plan 05](images/14-create-gravelines-recovery-plan05.png)
+![14 - Validate test recovery plan 05](images/14-create-gravelines-recovery-plan05.png){.thumbnail}
 
 Sélectionnez le cluster de Roubaix pour **Entity Failing Over From** et le cluster de Gravelines pour **Entity Failing Over To**. Ensuite cliquez sur `Test`{.action}
 
-![14 - Validate test recovery plan 06](images/14-create-gravelines-recovery-plan06.png)
+![14 - Validate test recovery plan 06](images/14-create-gravelines-recovery-plan06.png){.thumbnail}
 
 > [!primary]
 > Assurez-vous d'avoir les bonnes licences, Si vous avec choisi un cluster avec des licences chez OVHcloud il est nécessaire d'avoir souscrit le pack Advanced sur le cluster de Roubaix et Gravelines.
@@ -765,19 +765,19 @@ Sélectionnez le cluster de Roubaix pour **Entity Failing Over From** et le clus
 
 Cliquez sur `Execute Anyway`{.action}
 
-![14 - Validate test recovery plan 07](images/14-create-gravelines-recovery-plan07.png)
+![14 - Validate test recovery plan 07](images/14-create-gravelines-recovery-plan07.png){.thumbnail}
 
 Allez dans le tableau de bord des VM dans **Prism Central et vous verrez les machines virtuelles de tests qui sont créés avec les données répliquées.
 
-![14 - Validate test recovery plan 08](images/14-create-gravelines-recovery-plan08.png)
+![14 - Validate test recovery plan 08](images/14-create-gravelines-recovery-plan08.png){.thumbnail}
 
 Revenez sur votre plan de reprise et cliquez sur `Clean-up test Entities`{.action}
 
-![14 - Validate test recovery plan 09](images/14-create-gravelines-recovery-plan09.png)
+![14 - Validate test recovery plan 09](images/14-create-gravelines-recovery-plan09.png){.thumbnail}
 
 cliquez sur `Clean Up`{.action}
 
-![14 - Validate test recovery plan 10](images/14-create-gravelines-recovery-plan10.png)
+![14 - Validate test recovery plan 10](images/14-create-gravelines-recovery-plan10.png){.thumbnail}
 
 ### Live migration des machines virtuelles de Roubaix sur Gravelines
 
@@ -785,11 +785,11 @@ Si l'infrastructure est opérationnelle il est possible de faire des migrations 
 
 Sur une machine virtuelle qui se trouve à Roubaix et qui fait partie du plan de reprise nous allons lancer un ping vers le serveur DNS OVHcloud **213.186.33.99**.
 
-![15 - livemigration Roubaix to Gravelines 00](images/15-livemigration-roubaix-to-gravelines00.png)
+![15 - livemigration Roubaix to Gravelines 00](images/15-livemigration-roubaix-to-gravelines00.png){.thumbnail}
 
 Revenez sur votre plan de reprise et cliquez sur `Failover`{.action} dans le menu `More`.
 
-![15 - livemigration Roubaix to Gravelines 01](images/15-livemigration-roubaix-to-gravelines01.png)
+![15 - livemigration Roubaix to Gravelines 01](images/15-livemigration-roubaix-to-gravelines01.png){.thumbnail}
 
 Choisissez `Planned Failover`{.action}, cochez `Live Migrate Entities`{.action}.
 
@@ -797,23 +797,23 @@ Prenez le cluster de Roubaix pour **Entity Failing Over From** et le cluster de 
 
 Ensuite cliquez sur `Failover`{.action}
 
-![15 - livemigration Roubaix to Gravelines 02](images/15-livemigration-roubaix-to-gravelines02.png)
+![15 - livemigration Roubaix to Gravelines 02](images/15-livemigration-roubaix-to-gravelines02.png){.thumbnail}
 
 Saisissez `Failover`{.action} et cliquez sur `Failover`
 
-![15 - livemigration Roubaix to Gravelines 03](images/15-livemigration-roubaix-to-gravelines03.png)
+![15 - livemigration Roubaix to Gravelines 03](images/15-livemigration-roubaix-to-gravelines03.png){.thumbnail}
 
 La migration à chaud est en cours.
 
-![15 - livemigration Roubaix to Gravelines 04](images/15-livemigration-roubaix-to-gravelines04.png)
+![15 - livemigration Roubaix to Gravelines 04](images/15-livemigration-roubaix-to-gravelines04.png){.thumbnail}
 
 La migration s'est terminée avec succès sans coupure de service.
 
-![15 - livemigration Roubaix to Gravelines 05](images/15-livemigration-roubaix-to-gravelines05.png)
+![15 - livemigration Roubaix to Gravelines 05](images/15-livemigration-roubaix-to-gravelines05.png){.thumbnail}
 
 Vous pouvez revenir sur la machine virtuelle et constater que le ping continue à fonctionner même si la machine virtuelle a été déplacé d'un cluster à l'autre.
 
-![15 - livemigration Roubaix to Gravelines 06](images/15-livemigration-roubaix-to-gravelines06.png)
+![15 - livemigration Roubaix to Gravelines 06](images/15-livemigration-roubaix-to-gravelines06.png){.thumbnail}
 
 ### Opérations à effectuer après une migration à chaud
 
@@ -823,55 +823,55 @@ Après une migration à chaud il est nécessaire d'inverser la réplication et l
 
 Au travers du menu principal de **Prism Central** cliquez sur `Protections Policies`{.action} dans le sous-menu **Data Protection**.
 
-![16 - invert replication after failover 01](images/16-invert-replication-after-failover01.png)
+![16 - invert replication after failover 01](images/16-invert-replication-after-failover01.png){.thumbnail}
 
 Cliquez sur le plan de protection nommé `ROUBAIX TO GRAVELINES`{.action}.
 
-![16 - invert replication aftr failover 02](images/16-invert-replication-after-failover02.png)
+![16 - invert replication aftr failover 02](images/16-invert-replication-after-failover02.png){.thumbnail}
 
 cliquez sur `Update`{.action}.
 
-![16 - invert replication after failover 03](images/16-invert-replication-after-failover03.png)
+![16 - invert replication after failover 03](images/16-invert-replication-after-failover03.png){.thumbnail}
 
 Positionnez la souris en dessous du nom du cluster de Roubaix dans **Primary Location** et cliquez sur `Edit`{.action}.
 
-![16 - invert replication after failover 04](images/16-invert-replication-after-failover04.png)
+![16 - invert replication after failover 04](images/16-invert-replication-after-failover04.png){.thumbnail}
 
 Cochez le cluster de `Gravelines`{.action} à la place de celui de Roubaix.
 
-![16 - invert replication after failover 05](images/16-invert-replication-after-failover05.png)
+![16 - invert replication after failover 05](images/16-invert-replication-after-failover05.png){.thumbnail}
 
 Cliquez sur `Save`{.action}.
 
-![16 - invert replication after failover 06](images/16-invert-replication-after-failover06.png)
+![16 - invert replication after failover 06](images/16-invert-replication-after-failover06.png){.thumbnail}
 
 Cliquez sur `Update Location`{.action}.
 
-![16 - invert replication after failover 07](images/16-invert-replication-after-failover07.png)
+![16 - invert replication after failover 07](images/16-invert-replication-after-failover07.png){.thumbnail}
 
 Positionnez la souris en dessous du nom du cluster de Graveline dans **Recovery Location** et cliquez sur `Edit`{.action}.
 
-![16 - invert replication after failover 08](images/16-invert-replication-after-failover08.png)
+![16 - invert replication after failover 08](images/16-invert-replication-after-failover08.png){.thumbnail}
 
 Sélectionnez le cluster de `Roubaix`{.action} à la place de celui de Gravelines.
 
-![16 - invert replication after failover 09](images/16-invert-replication-after-failover09.png)
+![16 - invert replication after failover 09](images/16-invert-replication-after-failover09.png){.thumbnail}
 
 Cliquez sur `Save`{.action}.
 
-![16 - invert replication after failover 10](images/16-invert-replication-after-failover10.png)
+![16 - invert replication after failover 10](images/16-invert-replication-after-failover10.png){.thumbnail}
 
 Cliquez sur `Update Location`{.action}.
 
-![16 - invert replication after failover 11](images/16-invert-replication-after-failover11.png)
+![16 - invert replication after failover 11](images/16-invert-replication-after-failover11.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![16 - invert replication after failover 12](images/16-invert-replication-after-failover12.png)
+![16 - invert replication after failover 12](images/16-invert-replication-after-failover12.png){.thumbnail}
 
 Cliquez sur `Update`{.action}.
 
-![16 - invert replication after failover 12](images/16-invert-replication-after-failover13.png)
+![16 - invert replication after failover 12](images/16-invert-replication-after-failover13.png){.thumbnail}
 
 La réplication est inversée cliquez sur la `croix`{.action} pour fermer le plan de protection.
 
@@ -879,27 +879,27 @@ La réplication est inversée cliquez sur la `croix`{.action} pour fermer le pla
 
 Au travers du menu principal de **Prism Central** cliquez sur `Recovery Plans`{.action} dans le sous menu **Data Protection**.
 
-![17 - invert recovery plan after failover 01](images/17-invert-recovery-plan-after-failover01.png)
+![17 - invert recovery plan after failover 01](images/17-invert-recovery-plan-after-failover01.png){.thumbnail}
 
 Cliquez sur Cliquez sur `Recovery VM from ROUBAIX to GRAVELINEs`{.action}.
 
-![17 - invert recovery plan after failover 02](images/17-invert-recovery-plan-after-failover02.png)
+![17 - invert recovery plan after failover 02](images/17-invert-recovery-plan-after-failover02.png){.thumbnail}
 
 Au travers du menu **More** cliquez sur `Update`{.action}.
 
-![17 - invert recovery plan after failover 03](images/17-invert-recovery-plan-after-failover03.png)
+![17 - invert recovery plan after failover 03](images/17-invert-recovery-plan-after-failover03.png){.thumbnail}
 
 Dans locations modifiez mettez le cluster de Gravelines dans **Primary CLusters** et le cluster de Roubaix dans **Recovery Clusters**. et cliquez sur `Next`{.action}.
 
-![17 - invert recovery plan after failover 04](images/17-invert-recovery-plan-after-failover04.png)
+![17 - invert recovery plan after failover 04](images/17-invert-recovery-plan-after-failover04.png){.thumbnail}
 
 Cliquez sur `Proceed`{.action}.
 
-![17 - invert recovery plan after failover 05](images/17-invert-recovery-plan-after-failover05.png)
+![17 - invert recovery plan after failover 05](images/17-invert-recovery-plan-after-failover05.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![17 - invert recovery plan after failover 06](images/17-invert-recovery-plan-after-failover06.png)
+![17 - invert recovery plan after failover 06](images/17-invert-recovery-plan-after-failover06.png){.thumbnail}
 
 Choisissez ces informations:
 
@@ -912,7 +912,7 @@ Choisissez ces informations:
 
 Et cliquez sur `Done`{.action}.
 
-![17 - invert recovery plan after failover 07](images/17-invert-recovery-plan-after-failover07.png)
+![17 - invert recovery plan after failover 07](images/17-invert-recovery-plan-after-failover07.png){.thumbnail}
 
 > [!primary]
 > Les réplications et le plan de reprise ont été inversés suite à un migration des machines virtuelles de ROUBAIX vers GRAVELINES.
