@@ -3,14 +3,14 @@ title: "Transferir um domínio .uk para outro agente de registo"
 slug: transferencia_de_saida_de_um_dominio_couk
 excerpt: "Saiba como transferir um domínio UK para outro registar"
 section: Transferência
-order: 5
+order: 05
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 12/07/2021**
+**Última atualização: 20/10/2022**
 
 ## Objetivo
 
@@ -27,6 +27,15 @@ O processo de mudança de agente de registo (*registar*) para os domínios de pr
 - .sch.uk
 
 **Este manual explica-lhe como iniciar uma transferência de saída para estes TLD a partir da Área de Cliente OVHcloud.**
+
+> [!warning]
+>
+> Se o domínio em questão deve permanecer registado na OVHcloud mas alterado nas suas modalidades de gestão ou de propriedade, uma transferência de domínio não é o procedimento adequado.
+>
+> Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é uma alteração de contactos. O procedimento está descrito no [presente guia](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
+>
+> Se também tem de mudar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre a [alteração de proprietário dos nomes de domínio](https://docs.ovh.com/pt/domains/alteracao-titular-dominio/).
+>
 
 ## Requisitos
 

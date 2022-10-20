@@ -13,20 +13,20 @@ order: 1
 
 ## Objective
 
-> [!warning]
->
-> Be careful, if the domain is already registered with OVHcloud, you don't actually need to make an outgoing transfer but [a change of "administrator", "technical" and/or "billing" contacts](https://docs.ovh.com/gb/en/customer/managing-contacts/) for your domain name.
->
-> In fact, real domain name transfers are only carried out between registrars such as OVHcloud.
->
-> If the ownership of the domain needs to be changed as well, don't forget to do this **before** changing the contacts of your domain using our [changing domain name owner](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/) documentation.
->
-
 Your .pl domain name is currently filed with a registrar, and you want to switch it to OVHcloud? You can do this by following a transfer procedure.
 
 By transferring your domain name, you will change your registry. You can transfer your domain name to OVHcloud by creating an order. This process usually takes between one and ten days.
 
 **Find out how to transfer a generic domain name to OVHcloud.**
+
+> [!warning]
+>
+> If the domain name in question should stay registered at OVHcloud but modified in terms of its management or ownership, an outgoing domain transfer is not the appropriate procedure.
+
+> To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [this guide](https://docs.ovh.com/gb/en/customer/managing-contacts/).
+>
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/) instructions.
+>
 
 ## Requirements
 

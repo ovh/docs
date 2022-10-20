@@ -10,7 +10,7 @@ order: 5
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 12/07/2021**
+**Última actualización: 20/10/2022**
 
 ## Objetivo
 
@@ -27,6 +27,15 @@ El proceso de cambio de agente registrador (*registrador*) para los dominios de 
 - .sch.uk
 
 **Esta guía explica cómo iniciar una transferencia saliente para estas TLD desde el área de cliente de OVHcloud.**
+
+> [!warning]
+>
+> Si el dominio en cuestión debe permanecer registrado en OVHcloud, pero modificado en sus modalidades de gestión o de propiedad, una transferencia saliente de dominio no es el procedimiento adecuado.
+>
+> Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un cambio de contactos. El procedimiento se describe en [esta guía](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/).
+>
+Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](https://docs.ovh.com/us/es/domains/cambio-propietario-dominio/).
+>
 
 ## Requisitos
 

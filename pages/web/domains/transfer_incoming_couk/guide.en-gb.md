@@ -10,23 +10,23 @@ order: 04
 
 ## Objective
 
-> [!warning]
->
-> Be careful, if the domain is already registered with OVHcloud, you don't actually need to make an incoming transfer but [a change of "administrator", "technical" and/or "billing" contacts](https://docs.ovh.com/gb/en/customer/managing-contacts/) for your domain name.
->
-> In fact, real domain name transfers are only carried out between registrars such as OVHcloud.
->
-> If the ownership of the domain needs to be changed as well, don't forget to do this **before** changing the contacts of your domain using our [changing domain name owner](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/) documentation.
->
-
 Transferring a .uk (or similar) domain name requires a specific approach.
-
-**This guide explains how to transfer a .uk (or similar) domain name to OVHcloud.**
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
 > This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you face difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>
+
+**This guide explains how to transfer a .uk (or similar) domain name to OVHcloud.**
+
+> [!warning]
+>
+> If the domain name being modified is currently registered with OVHcloud, incoming domain transfer is not the appropriate procedure. This procedure only applies to the change of the domain name registry (OVHcloud).
+>
+> To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [this guide](https://docs.ovh.com/gb/en/customer/managing-contacts/).
+>
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/) instructions.
 >
 
 ## Requirements

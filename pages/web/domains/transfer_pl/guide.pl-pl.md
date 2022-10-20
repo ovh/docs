@@ -12,7 +12,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 02-09-2022**
+**Ostatnia aktualizacja z dnia 20-10-2022**
 
 ## Wprowadzenie
 
@@ -21,6 +21,15 @@ Twoja domena. pl jest aktualnie zarejestrowana u innego operatora i chcesz ją p
 Transfer domeny umożliwia jej przeniesienie do innego operatora. Możesz przenieść domenę do OVHcloud, składając zamówienie. Zajmie to od jednego do pięciu dni.
 
 **Dowiedz się, jak przenieść domenę .pl do OVHcloud.**
+
+> [!warning]
+>
+> Jeśli domena ma pozostać zarejestrowana w OVHcloud, ale została zmieniona w sposób umożliwiający zarządzanie domeną lub jej własność, transfer wychodzący z domeny nie jest właściwą procedurą.
+>
+> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy zmienić kontakt. Procedurę opisano w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+>
+> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
+>
 
 ## Wymagania początkowe
 

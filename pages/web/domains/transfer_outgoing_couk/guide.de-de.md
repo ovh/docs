@@ -3,14 +3,14 @@ title: "Einen .uk-Domainnamen zu einem anderen Registrar transferieren"
 slug: transfer-ausgehend-einer-domainnamen-couk
 excerpt: "Erfahren Sie hier, wie Sie Domainnamen mit UK-Ländercode zu einem anderen Provider transferieren"
 section: Transfer
-order: 5
+order: 05
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 12.07.2021**
+**Letzte Aktualisierung am 20.10.2022**
 
 ## Ziel
 
@@ -27,6 +27,15 @@ Der Transferprozess für Top Level Domains (TLDs) des Ländercodes **UK** (**.uk
 - .sch.uk
 
 **Diese Anleitung erklärt, wie Sie einen ausgehenden Transfer für .uk-TLDs über Ihr OVHcloud Kundencenter starten.**
+
+> [!warning]
+>
+> Soll der betreffende Domainname bei OVHcloud registriert bleiben, aber hinsichtlich der Verwaltungs- oder Eigentumsverhältnisse bearbeitet werden, ist ein ausgehender Transfer der Domain nicht der geeignete Vorgang.
+>
+> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) beschrieben.
+>
+> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu unsere Anleitung zum [Inhaberwechsel für Domainnamen](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
+>
 
 ## Voraussetzungen
 

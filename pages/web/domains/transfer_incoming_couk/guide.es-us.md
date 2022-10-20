@@ -1,29 +1,37 @@
 ---
 title: 'Transferir un dominio .uk a OVHcloud'
-legacy_guide_number: 2026
 slug: web_hosting_transferencia_de_un_dominio_couk
 excerpt: 'En esta guía encontrará información relativa a la transferencia de un dominio .uk o asociado a OVHcloud'
 section: Operaciones en los dominios
-order: 4
+order: 04
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 17/06/2022**
+**Última actualización: 20/10/2022**
 
 ## Objetivo
 
 La transferencia de un dominio .uk (o asimilado) debe respetar un procedimiento específico.
-
-**Cómo transferir un dominio .uk (o asimilado) a OVHcloud**
 
 > [!warning]
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+>
+
+**Cómo transferir un dominio .uk (o asimilado) a OVHcloud**
+
+> [!warning]
+>
+> Si el dominio que está siendo modificado se encuentra registrado en OVHcloud, la transferencia entrante de dominio no es el procedimiento adecuado. Este procedimiento solo se aplica al cambio de dominio registrado (OVHcloud).
+>
+> Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un *cambio de contactos*. El procedimiento se describe en [esta guía](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/).
+>
+Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](https://docs.ovh.com/us/es/domains/cambio-propietario-dominio/).
 >
 
 ## Requisitos
