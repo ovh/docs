@@ -561,9 +561,9 @@ six nouveaux sous-réseaux sont visibles au travers de votre interface **Prism C
 
 Maintenant que les réplications et les sous réseaux de test sont en place nous allons mettre en oeuvre des plans de reprises d'activités automatisés ou manuel à la demande pour :
 
-- Migrer des machines virtuelles à chaud entre les deux clusters
-- Tester que la réplication fonctionne correctement
-- Redémarrer automatiquement en cas de défaillance d'un deux deux clusters de P.R.A
+- Migrer des machines virtuelles à chaud entre les deux clusters.
+- Tester que la réplication fonctionne correctement.
+- Redémarrer automatiquement en cas de défaillance d'un deux deux clusters de P.R.A.
 
 #### Création du plan de reprise d'activité pour le cluster de Roubaix
 
@@ -921,6 +921,54 @@ Et cliquez sur `Done`{.action}.
 
 ### Analyse du fonctionnement du plan de reprise en cas d'indisponibilité d'un des deux clusters répliqués.
 
+Nous allons simuler une perte totale de connexion à Gravelines où  se trouve trois machines virtuelles dans le plan de reprise, la passerelle Internet et deux autres machines sous Windows.
+
+Nous allons faire un ping sur la passserelle à Gravelines avant le crash
+
+```bash
+ping xx.xx.xx.xx
+Reply from xx.xx.xx.xx: bytes=32 time=21ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=21ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=23ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=21ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=21ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+```
+
+```bash
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=21ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=19ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=19ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+```
+
+```bash
+Request timed out.
+Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=19ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=18ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=18ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=19ms TTL=58
+Reply from xx.xx.xx.xx: bytes=32 time=19ms TTL=58
+```
 
 
 
