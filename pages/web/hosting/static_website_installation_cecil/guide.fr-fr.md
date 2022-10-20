@@ -148,6 +148,16 @@ Puis retournez sur votre page pour voir le résultat :
 
 ##### **Modification sur votre poste de travail**
 
+Si vous préférez utiliser votre éditeur de code habituel, connectez-vous avec un client FTP sur votre serveur pour récupérer les fichiers sur votre ordinateurs :
+
+![Téléchargement avec FileZilla](images/static_website_installation_cecil%5B10%5D.png)
+
+Vous pouvez maintenant éditer les fichiers dans votre I.D.E. :
+
+![Affichage dans Visual Studio Code](images/static_website_installation_cecil%5B11%5D.png)
+
+Il vous suffit de renvoyer vos fichiers modifiés ou vos nouveaux fichiers sur votre serveur et de rebuilder pour avoir vos pages en ligne.
+
 ## Aller plus loin
 
 - le site de l'application [Cecil](https://cecil.app/)
