@@ -193,7 +193,7 @@ saisissez le mot de passe de Prism Central
 python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_gravelines
 ```
                                                 
-### Enregistrement des deux clusters au Prism Central se trouvant sur le site d'ERITH
+### Enregistrement des deux clusters au Prism Central se trouvant sur le site d'Erith
 
 Connectez-vous en ssh sur **Prism Element** de Roubaix :
 
@@ -393,7 +393,7 @@ Cliquez sur `New Category`{.action}.
 
 ![06- Add Categorie 02](images/06-add-categories02.png)
 
-Saisissez  `Protected VM` dans **Name** ajouter ces valeurs `Roubaix` et `Gravelines` ensuite cliquez sur `Save`{.action}.
+Saisissez `Protected VM` dans **Name** ajouter ces valeurs `Roubaix` et `Gravelines` dans **Values** ensuite cliquez sur `Save`{.action}.
 
 ![06 - Add Categorie 03](images/06-add-categories03.png)
 
@@ -401,20 +401,107 @@ La catégorie apparait dans la liste et elle est prête à être utilisé.
 
 ![06 - Add Categorie 04](images/06-add-categories03.png)
 
+### Ajout des machines virtuelles dans les catégories
 
-### Activation de la réplication synchrone
+Nous allons affecter deux machines virtuelles sur le cluster de Roubaix dans une catégorie et trois machines virtuelles sur le cluster de Gravelines dans une autre catégorie.
+
+Au travers du menu principal de **Prism Central** cliquez sur `Vms`{.action} dans le sous menu **Compute & Storage**.
+
+![07 - Add Categorie to VM ROUBAIX 01](images/07-add-categorie-to-vm-roubaix01.png)
+
+Sélectionnez à gauche `les deux machines virtuelles`{.action} de Roubaix, Ensuite au travers du menu **Actions** cliquez sur `Manage Categories`{.action}
+
+![07 - Add Categorie to VM ROUBAIX 02](images/07-add-categorie-to-vm-roubaix02.png)
+
+Ajouter la catégorie `ProcectedVM: Roubaix`, ensuite cliquez sur `Save`{.action}
+
+![07 - Add Categorie to VM ROUBAIX 03](images/07-add-categorie-to-vm-roubaix-03.png)
+
+Sélectionnez à gauche `les trois machines virtuelles`{.action} de Gravelines, Ensuite au travers du menu **Actions** cliquez sur `Manage Categories`{.action}
+
+![08 - Add Categorie to VM GRAVELINES 01](images/08-add-categorie-to-vm-gravelines-01.png)
+
+Ajouter la catégorie `ProcectedVM: Gravelines`, ensuite cliquez sur `Save`{.action}
+
+![08 - Add Categorie to VM GRAVELINES 02](images/08-add-categorie-to-vm-gravelines03.png)
+
+### Mise en place des réplications synchrones entre Roubaix et Gravelines
+
+Nous allons mettre en place la réplication synchrone entre Roubaix et Gravelines.
+
+#### Mise en place de réplication entre Roubaix et Gravelines
+
+Au travers du menu principal de **Prism Central** cliquez sur `Protection Policies`{.action} dans le sous menu **Data Protection**
+
+![09 - Create Protection Policy Roubaix 01](images/09-create-data-protection-roubaix01.png)
+
+Cliquez sur `Create Protection Policy`{.action}
+
+![09 - Create Protection Policy Roubaix 02](images/09-create-data-protection-roubaix02.png)
+
+Saisissez `ROUBAIX-TO-GRAVELINES`{.action} dans **Policy name**, gardez **Local AZ** et cliquez sur `Select Cluster`{.action} dans **Primary Location**.
+
+![09 - Create Protection Policy Roubaix 03](images/09-create-data-protection-roubaix03.png)
+
+Choisissez le cluster de Roubaix et cliquez sur `Save`{.action}.
+
+![09 - Create Protection Policy Roubaix 04](images/09-create-data-protection-roubaix04.png)
+
+En haut à gauche à coté de Disaster Recovery cliquez sur `Enable`{.action}. 
+
+![09 - Create Protection Policy Roubaix 05](images/09-create-data-protection-roubaix05.png)
+
+Le système contrôle que tout est correct avant d'activer l'option **Disaster Recovery**
+
+![09 - Create Protection Policy Roubaix 06](images/09-create-data-protection-roubaix06.png)
+
+Cliquez sur `Enable`{.action} pour activer l'option **Disaster Recovery**. 
+
+![09 - Create Protection Policy Roubaix 07](images/09-create-data-protection-roubaix07.png)
+
+Cliquez à nouveau sur `Enable`{.action}. 
+
+![09 - Create Protection Policy Roubaix 07](images/09-create-data-protection-roubaix07.png)
+
+L'activation de l'option **Disaster Recovery** est en cours.
+
+Garder **Local AZ**, sélectionnez le cluster dans **Recovery Location** et cliquez sur `Save`{.action}.
+
+![09 - Create Protection Policy Roubaix 08](images/09-create-data-protection-roubaix08.png)
+
+Cliquez sur `+ Add Schedule`{.action}.
+
+![09 - Create Protection Policy Roubaix 10](images/09-create-data-protection-roubaix10.png)
+
+Choisissez ces options  `Synchronous`{.action} pour **Protection Type** et  `Automatic`{.action} pour **Failure Detection Mode**, ensuite cliquez sur `Save Schedule`{.action}.
+
+![09 - Create Protection Policy Roubaix 11](images/09-create-data-protection-roubaix11.png)
+
+Cliquez sur `Next`{.action}.
+
+![09 - Create Protection Policy Roubaix 12](images/09-create-data-protection-roubaix12.png)
+
+Sélectionnez la catégorie `ProtectedVM : Roubaix`{.action} et cliquez sur `Add`{.action}.
+
+![09 - Create Protection Policy Roubaix 13](images/09-create-data-protection-roubaix13.png)
+
+Cliquez sur `Create`{.action}.
+
+![09 - Create Protection Policy Roubaix 14](images/09-create-data-protection-roubaix14.png)
+
+Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines, après une première réplication complête les données seront synhronisés en permanence de Roubaix vers Gravelines.
 
 
 
 
 
-### Activation du plan de reprise d'activité
 
-### Test de bon fonctionnement
 
-#### Utilisation de la configuration de test dans plan de reprise
 
-#### Mise en indisponibilité sur 
+
+
+
+
 
 
 
