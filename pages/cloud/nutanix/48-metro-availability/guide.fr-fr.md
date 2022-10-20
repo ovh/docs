@@ -491,6 +491,85 @@ Cliquez sur `Create`{.action}.
 
 Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines, après une première réplication complête les données seront synhronisés en permanence de Roubaix vers Gravelines.
 
+![09 - Create Protection Policy Roubaix 15](images/09-create-data-protection-roubaix15.png)
+
+#### Mise en place de réplication entre Gravelines et Roubaix
+
+La réplication peut être bidirectionnelle nous allons maintenant créer une réplication de Gravelines vers Roubaix.
+
+Cliquez sur `Create Protection Policy`{.action}.
+
+![10 - Create Protection Policy Gravelines 01](images/10-create-data-protection-gravelines01.png)
+
+Choisissez comme nom `GRAVELINES-TO-ROUBAIX` dans **Policy Name**, gardez **Local AZ** et choisissez le cluster de Gravelines dans **Primary Location**, ensuite cliquez sur `Save`{.action}.
+
+![10 - Create Protection Policy Gravelines 02](images/10-create-data-protection-gravelines02.png)
+
+Conservez **Local AZ** , sélectionnez le cluster de Roubaix et cliquez sur  sur `Save`{.action}.
+
+![10 - Create Protection Policy Gravelines 03](images/10-create-data-protection-gravelines03.png)
+
+Cliquez sur `+ Add Schedule`{.action}.
+
+![10 - Create Protection Policy Gravelines 04](images/10-create-data-protection-gravelines04.png)
+
+Choisissez ces options  `Synchronous`{.action} pour **Protection Type** et  `Automatic`{.action} pour **Failure Detection Mode**, ensuite cliquez sur `Save Schedule`{.action}.
+
+![10 - Create Protection Policy Gravelines 05](images/10-create-data-protection-gravelines05.png)
+
+Cliquez sur `Next`{.action}.
+
+![10 - Create Protection Policy Gravelines 06](images/10-create-data-protection-gravelines06.png)
+
+Sélectionnez la catégorie `ProtectedVM : Gravelines`{.action} et cliquez sur `Add`{.action}.
+
+![10 - Create Protection Policy Gravelines 07](images/10-create-data-protection-gravelines07.png)
+
+Cliquez sur `Create`{.action}.
+
+![10 - Create Protection Policy Gravelines 08](images/10-create-data-protection-gravelines08.png)
+
+Une deuxième stratégie de protection est en place.
+
+![10 - Create Protection Policy Gravelines 09](images/10-create-data-protection-gravelines09.png)
+
+### Création de sous réseaux de test pour les plan de reprise
+
+Nous allons créer des sous-réseaux qui serviront pour les test de plan de reprises intégrés dans Nutanix
+
+Il faut un sous réseau de test par sous réseau de production sur nos clusters noux avons 3 sous réseaux
+
+- **base** sur le VLAN 0
+- **infra** sur le VLAN 1
+- **production*** sur le VLAN 2
+
+Nous allons donc créer 3 sous-réseaux supplémentaires avec ces noms sur le cluster de Gravelines et celui de Roubaix
+
+- **testbase** sur le VLAN 100
+- **testinfra** sur le VLAN 101
+- **production** sur le VLAN 102
+
+Aidez-vous de ce guide pour créer des VLAN sur vos clusters Nutanix [Isoler les machines de gestion de la production](https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/).
+
+six nouveaux sous-réseaux sont visibles au travers de votre interface **Prism Central** dans le tableau de bord **Subnets**
+
+![11 - Create Test Subnet 01](images/11-create-testsubnet01.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
