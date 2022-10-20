@@ -10,18 +10,18 @@ order: 04
 
 ## Objectif
 
-> [!warning]
->
-> Attention, si le domaine est déjà enregistré chez OVHcloud, il faut effectuer en réalité non pas un transfert entrant mais [un changement des contacts « administrateur », « technique » et/ou « facturation »](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/) pour votre nom de domaine.
->
-> En effet, les véritables transferts de nom de domaine ne s'effectuent qu'entre les bureaux d'enregistrements tels qu'OVHcloud.
->
-> Si la propriété du domaine doit changer également, n'oubliez pas d'effectuer cette action **avant** de changer les contacts de votre domaine à l'aide de notre documentation sur le [changement de propriétaire d'un nom de domaine](https://docs.ovh.com/ca/fr/domains/changement-proprietaire-domaine/).
->
-
 Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une démarche spécifique.
 
 **Découvrez comment transférer un nom de domaine .uk (ou assimilé) vers OVHcloud**
+
+> [!warning]
+>
+> Si le nom de domaine en cours de modification est actuellement enregistré chez OVHcloud, le transfert entrant de domaine n'est pas la procédure appropriée. Cette procédure s’applique uniquement au changement de nom de domaine enregistré (OVHcloud).
+>
+> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/).
+>
+> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](https://docs.ovh.com/ca/fr/domains/changement-proprietaire-domaine/).
+>
 
 > [!warning]
 >

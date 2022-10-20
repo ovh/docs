@@ -10,15 +10,6 @@ order: 05
 
 ## Objectif
 
-> [!warning]
->
-> Attention, si le domaine est déjà enregistré chez OVHcloud, il faut effectuer en réalité non pas un transfert sortant mais [un changement des contacts « administrateur », « technique » et/ou « facturation »](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/) pour votre nom de domaine.
->
-> En effet, les véritables transferts de nom de domaine ne s'effectuent qu'entre les bureaux d'enregistrements tels qu'OVHcloud.
->
-> Si la propriété du domaine doit changer également, n'oubliez pas d'effectuer cette action **avant** de changer les contacts de votre domaine à l'aide de notre documentation sur le [changement de propriétaire d'un nom de domaine](https://docs.ovh.com/ca/fr/domains/changement-proprietaire-domaine/).
->
-
 Le processus de changement de bureau d'enregistrement (*registrar*) pour les domaines de premier niveau (*top-level domain*, ou **TLD**) de l'indicatif de pays **UK** (**.uk**) diffère de celui détaillé dans notre [guide de transfert des TLD génériques](../transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/). Les instructions ci-dessous concernent les extensions suivantes :
 
 - .uk
@@ -32,6 +23,15 @@ Le processus de changement de bureau d'enregistrement (*registrar*) pour les dom
 - .sch.uk
 
 **Ce guide vous explique comment initier un transfert sortant pour ces TLD depuis votre espace client OVHcloud.**
+
+> [!warning]
+
+> Si le nom de domaine en question doit rester enregistré chez OVHcloud mais modifié dans ses modalités de gestion ou de propriété, un transfert sortant de domaine n'est pas la procédure appropriée.
+
+> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/).
+>
+> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](https://docs.ovh.com/ca/fr/domains/changement-proprietaire-domaine/).
+>
 
 ## Prérequis
 
