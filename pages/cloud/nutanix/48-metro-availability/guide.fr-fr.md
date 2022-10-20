@@ -22,7 +22,9 @@ order: 06
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via Prism Central.
+- Avoir 3 clusters Nutanix chez OVhcloud avoir les licences Pack Advance si vous avez une offre packagée sur les deux clusters du P.R.A.
 - Avoir les deux clusters qui seront répliqués avec un latence de moins de 5ms.
+
 
 ## Présentation
 
@@ -555,8 +557,259 @@ six nouveaux sous-réseaux sont visibles au travers de votre interface **Prism C
 
 ![11 - Create Test Subnet 01](images/11-create-testsubnet01.png)
 
+### Mise en place des plans de reprises d'activités
 
+Maintenant que les réplications et les sous réseaux de test sont en place nous allons mettre en oeuvre des plans de reprises d'activités automatisés ou manuel à la demande pour :
 
+- Migrer des machines virtuelles à chaud entre les deux clusters
+- Tester que la réplication fonctionne correctement
+- Redémarrer automatiquement en cas de défaillance d'un deux deux clusters de P.R.A
+
+#### Création du plan de reprise d'activité pour le cluster de Roubaix
+
+Au travers du menu principal de **Prism Central** cliquez sur `Recovery Plans`{.action} dans le sous-menu **Data Protection**. 
+
+![12 - Create Recovery Plan Roubaix 01](images/12-create-roubaix-recovery-plan01.png)
+
+Cliquez à Gauche sur `Enable Disaster Recovery`{.action}.
+
+![12 - Create Recovery Plan Roubaix 02](images/12-create-roubaix-recovery-plan02.png)
+
+Normalement le plande de reprise doit être activé comme indiqué par le message **Disaster Recovery enabled**, cliquez sur la `croix`{.action} à droite pour fermer cette fenêtre. 
+
+![12 - Create Recovery Plan Roubaix 03](images/12-create-roubaix-recovery-plan03.png)
+
+Cliquez sur `Create New Recovery Plan`{.action}.
+
+![12 - Create Recovery Plan Roubaix 04](images/12-create-roubaix-recovery-plan04.png)
+
+Choisissez ces informations :
+
+* **Recovery Plan Name** : `Recovery VM from ROUBAIX to GRAVELINES`.
+
+* **Primary Location**: `Local AZ`.
+* **Primary Cluster**: `cluster de Roubaix`.
+
+* **Recovery Location**: `Local AZ`.
+* **Recovery Cluster**: `cluster de Gravelines`.
+
+* **Failure Execution Mode** : `Automatic`.
+* **Execute failover after disconnectivity of** : `30 seconds`.
+
+Ensuite cliquez sur `Next`{.action}.
+
+![12 - Create Recovery Plan Roubaix 05](images/12-create-roubaix-recovery-plan05.png)
+
+Cliquez sur `+ Add VM(s)`{.action}.
+
+![12 - Create Recovery Plan Roubaix 06](images/12-create-roubaix-recovery-plan06.png)
+
+Sélectionnez les deux machines virtuelles et cliquez sur `Add`{.action}.
+
+![12 - Create Recovery Plan Roubaix 07](images/12-create-roubaix-recovery-plan07.png)
+
+Cliquez sur `Next`{.action}.
+
+![12 - Create Recovery Plan Roubaix 08](images/12-create-roubaix-recovery-plan08.png)
+
+Cliquez sur `OK. Got it`{.action}.
+
+![12 - Create Recovery Plan Roubaix 09](images/12-create-roubaix-recovery-plan09.png)
+
+Cliquez sur `Stretch networks`{.action}.
+
+![12 - Create Recovery Plan Roubaix 10](images/12-create-roubaix-recovery-plan10.png)
+
+Cliquez sur `Proceed`{.action}.
+
+![12 - Create Recovery Plan Roubaix 11](images/12-create-roubaix-recovery-plan11.png)
+
+Choisissez les VLAN qui seront utilisés lors du P.R.A comme ceci
+
+* **Primary**
+    + **Production** : `production`
+    + **Test Failback** : `testproduction`
+* **Recovery**
+    + **Production** : `production`
+    + **Test Failback** : `testproduction`
+
+Ensuite cliquez sur `Done`{.action}.
+
+![12 - Create Recovery Plan Roubaix 12](images/12-create-roubaix-recovery-plan12.png)
+
+#### Création du plan de reprise d'activité pour le cluster de Roubaix
+
+Le plan de reprise d'activité est créé pour le site de Roubaix. cliquez sur `Create Recovery Plan`{.action} pour créer le plan de reprise d'activité de Gravelines.
+
+![12 - Create Recovery Plan Roubaix 13](images/12-create-roubaix-recovery-plan13.png)
+
+Choisissez ces informations :
+
+* **Recovery Plan Name** : `Recovery VM from GRAVELINES to ROUBAIX`.
+
+* **Primary Location**: `Local AZ`.
+* **Primary Cluster**: `cluster de Gravelines`.
+
+* **Recovery Location**: `Local AZ`.
+* **Recovery Cluster**: `cluster de Roubaix`.
+
+* **Failure Execution Mode** : `Automatic`.
+* **Execute failover after disconnectivity of** : `30 seconds`.
+
+Ensuite cliquez sur `Next`{.action}.
+
+![13 - Create Recovery Plan Gravelines 01](images/12-create-gravelines-recovery-plan01.png)
+
+Cliquez sur `+ Add VM(s)`{.action}.
+
+![13 - Create Recovery Plan Gravelines 02](images/12-create-gravelines-recovery-plan02.png)
+
+Sélectionnez les trois machines virtuelles et cliquez sur `Add`{.action}.
+
+![13 - Create Recovery Plan Gravelines 03](images/12-create-gravelines-recovery-plan03.png)
+
+Cliquez sur `Next`{.action}.
+
+![13 - Create Recovery Plan Gravelines 04](images/12-create-gravelines-recovery-plan04.png)
+
+Cliquez sur `Stretch networks`{.action}.
+
+![13 - Create Recovery Plan Gravelines 05](images/12-create-gravelines-recovery-plan05.png)
+
+Cliquez sur `Proceed`{.action}.
+
+![13 - Create Recovery Plan Gravelines 06](images/12-create-gravelines-recovery-plan06.png)
+
+* **Primary**
+    + **Production** : `base`
+    + **Test Failback** : `testbase`
+* **Recovery**
+    + **Production** : `base`
+    + **Test Failback** : `testbase`
+
+Ensuite cliquez sur `+ Add Network Mapping`{.action}.
+
+![13 - Create Recovery Plan Gravelines 07](images/12-create-gravelines-recovery-plan07.png)
+
+* **Primary**
+    + **Production** : `infra`
+    + **Test Failback** : `testinfra`
+* **Recovery**
+    + **Production** : `infra`
+    + **Test Failback** : `testinfra`
+
+Ensuite cliquez sur `+ Add Network Mapping`{.action}.
+
+![13 - Create Recovery Plan Gravelines 08](images/12-create-gravelines-recovery-plan08.png)
+
+* **Primary**
+    + **Production** : `production`
+    + **Test Failback** : `testproduction`
+* **Recovery**
+    + **Production** : `production`
+    + **Test Failback** : `testproduction`
+
+Ensuite cliquez sur `Done`{.action}.
+
+![13 - Create Recovery Plan Gravelines 09](images/12-create-gravelines-recovery-plan09.png)
+
+> [!primary]
+> 3 réseaux ont été rajoutés dans ce plan de reprise d'activité pour la machine virtuelle Gateway qui utilise ces trois réseaux.
+>
+
+Les deux plans de reprises d'activités sont en productions.
+
+![13 - Create Recovery Plan Gravelines 10](images/12-create-gravelines-recovery-plan10.png)
+
+### Validation et test d'un plan de reprise d'activité
+
+Il est possible de demander à Prism Central de valider le plan de reprise.
+
+Cliquez sur le `Recovery VM from ROUBAIX`{.action} à valider et tester.
+
+![14 - Validate test recovery plan 01](images/14-create-gravelines-recovery-plan01.png)
+
+Cliquez sur `Validate`{.action}
+
+![14 - Validate test recovery plan 02](images/14-create-gravelines-recovery-plan02.png)
+
+Sélectionnez le cluster de Roubaix pour **Entity Failing Over From** et le cluster de Gravelines pour **Entity Failing Over To**. Ensuite cliquez sur `Proceed`{.action}
+
+![14 - Validate test recovery plan 03](images/14-create-gravelines-recovery-plan03.png)
+
+Le plan de de reprise est validé, cliquez sur `Close`{.action}
+
+![14 - Validate test recovery plan 04](images/14-create-gravelines-recovery-plan04.png)
+
+### Test du plan de reprise d'activité
+
+Il est possible de tester le plan de reprise d'activité sans impacter la production, lorsque l'on active un test des machines virtuelles de tests sont activés sur le cluster de secours sur les VLAN de test.
+
+Cliquez sur `Test`{.action}
+
+![14 - Validate test recovery plan 05](images/14-create-gravelines-recovery-plan05.png)
+
+Sélectionnez le cluster de Roubaix pour **Entity Failing Over From** et le cluster de Gravelines pour **Entity Failing Over To**. Ensuite cliquez sur `Test`{.action}
+
+![14 - Validate test recovery plan 06](images/14-create-gravelines-recovery-plan06.png)
+
+> [!primary]
+> Assurez-vous d'avoir les bonnes licences, Si vous avec choisi un cluster avec des licences chez OVHcloud il est nécessaire d'avoir souscrit le pack Advanced sur le cluster de Roubaix et Gravelines.
+>
+
+Cliquez sur `Execute Anyway`{.action}
+
+![14 - Validate test recovery plan 07](images/14-create-gravelines-recovery-plan07.png)
+
+Allez dans le tableau de bord des VM dans **Prism Central et vous verrez les machines virtuelles de tests qui sont créés avec les données répliquées.
+
+![14 - Validate test recovery plan 08](images/14-create-gravelines-recovery-plan08.png)
+
+Revenez sur votre plan de reprise et cliquez sur `Clean-up test Entities`{.action}
+
+![14 - Validate test recovery plan 09](images/14-create-gravelines-recovery-plan09.png)
+
+cliquez sur `Clean Up`{.action}
+
+![14 - Validate test recovery plan 10](images/14-create-gravelines-recovery-plan10.png)
+
+### Live migration des machines virtuelles de Roubaix sur Gravelines
+
+Si l'infrastructure est opérationnelle il est possible de faire des migrations à chaud sans coupure des machines virtuells qui sont sur un cluster vers l'autre cluster du plan de reprise.
+
+Sur une machine virtuelle qui se trouve à Roubaix et qui fait partie du plan de reprise nous allons lancer un ping vers le serveur DNS OVHcloud **213.186.33.99**.
+
+![15 - livemigration Roubaix to Gravelines 00](images/15-livemigration-roubaix-to-gravelines00.png)
+
+Revenez sur votre plan de reprise et cliquez sur `Failover`{.action} dans le menu `More`.
+
+![15 - livemigration Roubaix to Gravelines 01](images/15-livemigration-roubaix-to-gravelines01.png)
+
+Choisissez `Planned Failover`{.action}, cochez `Live Migrate Entities`{.action}.
+
+Prenez le cluster de Roubaix pour **Entity Failing Over From** et le cluster de Gravelines pour **Entity Failing Over To**.
+
+Ensuite cliquez sur `Failover`{.action}
+
+![15 - livemigration Roubaix to Gravelines 02](images/15-livemigration-roubaix-to-gravelines02.png)
+
+Saisissez `Failover`{.action} et cliquez sur `Failover`{.action}
+
+![15 - livemigration Roubaix to Gravelines 03](images/15-livemigration-roubaix-to-gravelines03.png)
+
+La migration à chaud est en cours.
+
+![15 - livemigration Roubaix to Gravelines 04](images/15-livemigration-roubaix-to-gravelines04.png)
+
+La migration s'est terminée avec succès sans coupure de service.
+
+![15 - livemigration Roubaix to Gravelines 05](images/15-livemigration-roubaix-to-gravelines05.png)
+
+Vous pouvez revenir sur la machine virtuelle et constater que le ping continue à fonctionner même si la machine virtuelle a été déplacé d'un cluster à l'autre.
+
+![15 - livemigration Roubaix to Gravelines 06](images/15-livemigration-roubaix-to-gravelines06.png)
+
+### Opérations à effectuer après une migration à chaud
 
 
 
