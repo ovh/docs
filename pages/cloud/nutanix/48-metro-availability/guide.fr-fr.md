@@ -680,6 +680,8 @@ Cliquez sur `Proceed`{.action}.
 
 ![13 - Create Recovery Plan Gravelines 06](images/12-create-gravelines-recovery-plan06.png)
 
+Choisissez ces informations :
+
 * **Primary**
     + **Production** : `base`
     + **Test Failback** : `testbase`
@@ -691,6 +693,8 @@ Ensuite cliquez sur `+ Add Network Mapping`{.action}.
 
 ![13 - Create Recovery Plan Gravelines 07](images/12-create-gravelines-recovery-plan07.png)
 
+Choisissez ces informations :
+
 * **Primary**
     + **Production** : `infra`
     + **Test Failback** : `testinfra`
@@ -701,6 +705,8 @@ Ensuite cliquez sur `+ Add Network Mapping`{.action}.
 Ensuite cliquez sur `+ Add Network Mapping`{.action}.
 
 ![13 - Create Recovery Plan Gravelines 08](images/12-create-gravelines-recovery-plan08.png)
+
+Choisissez ces informations :
 
 * **Primary**
     + **Production** : `production`
@@ -871,6 +877,42 @@ La réplication est inversée cliquez sur la `croix`{.action} pour fermer le pla
 
 #### Inversion du plan de reprise
 
+Au travers du menu principal de **Prism Central** cliquez sur `Recovery Plans`{.action} dans le sous menu **Data Protection**.
+
+![17 - invert recovery plan after failover 01](images/17-invert-recovery-plan-after-failover01.png)
+
+Cliquez sur Cliquez sur `Recovery VM from ROUBAIX to GRAVELINEs`{.action}.
+
+![17 - invert recovery plan after failover 02](images/17-invert-recovery-plan-after-failover02.png)
+
+Au travers du menu **More** cliquez sur `Update`{.action}.
+
+![17 - invert recovery plan after failover 03](images/17-invert-recovery-plan-after-failover03.png)
+
+Dans locations modifiez mettez le cluster de Gravelines dans **Primary CLusters** et le cluster de Roubaix dans **Recovery Clusters**. et cliquez sur `Next`{.action}.
+
+![17 - invert recovery plan after failover 04](images/17-invert-recovery-plan-after-failover04.png)
+
+Cliquez sur `Proceed`{.action}.
+
+![17 - invert recovery plan after failover 05](images/17-invert-recovery-plan-after-failover05.png)
+
+Cliquez sur `Next`{.action}.
+
+![17 - invert recovery plan after failover 06](images/17-invert-recovery-plan-after-failover06.png)
+
+Choisissez ces informations:
+
+* **Primary**
+    + **Production** : `production`
+    + **Test Failback** : `testproduction`
+* **Recovery**
+    + **Production** : `production`
+    + **Test Failback** : `testproduction`
+
+Et cliquez sur `Done`{.action}.
+
+![17 - invert recovery plan after failover 07](images/17-invert-recovery-plan-after-failover07.png)
 
 
 
