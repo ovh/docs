@@ -3,14 +3,23 @@ title: Domainnamen zu OVHcloud transferieren
 slug: transfer-einer-generischen-domain
 excerpt: Erfahren Sie hier, wie Sie Ihren Domainnamen zu OVHcloud transferieren
 section: Transfer
-order: 1
+order: 01
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 17.06.2022**
+**Letzte Aktualisierung am 20.10.2022**
+
+> [!warning]
+>
+> Achtung, wenn die Domain bereits bei OVHcloud registriert ist, muss eigentlich kein eingehender Transfer durchgeführt werden, sondern [eine Änderung der Kontakte "Administrator", "technisch" und/oder "Abrechnung"](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) für Ihre Domain durchgeführt werden.
+>
+> Tatsächlich erfolgt der tatsächliche Transfer von Domainnamen nur zwischen Registern wie OVHcloud.
+>
+> Wenn sich auch das Eigentum an der Domain ändern muss, denken Sie daran, diese Aktion durchzuführen, **bevor** Sie die Kontakte Ihrer Domain ändern, und verwenden Sie hierzu unsere Anleitung zur [Änderung des Inhabers einer Domain](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
+>
 
 ## Ziel
 
