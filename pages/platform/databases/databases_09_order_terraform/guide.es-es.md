@@ -224,9 +224,9 @@ Now, we can generate our plan:
 $ terraform plan -var-file=secrets.tfvars
 ```
 
-Thanks to the `plan` command, we can check what Terraform wants to create, modify or remove.
+Thanks to the [plan](https://www.terraform.io/cli/commands/plan) command, we can check what Terraform wants to create, modify or remove.
 
-The plan is OK for us, so let's apply it:
+The plan is OK for us, so let's [apply](https://www.terraform.io/cli/commands/apply) it:
 
 ```bash
 $ terraform apply -var-file=secrets.tfvars -auto-approve
@@ -246,10 +246,15 @@ And, voilà, the MongoDB cluster is created.
 
 In this guide, we explained how to deploy a MongoDB service but you can find example for other database engine here and tweak them according to your needs :
 
-* [MySQL](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mysql/terraform/hello-world)
-* [PostgreSQL](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql/terraform/hello-world)
-* [Kafka](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka/terraform/hello-world)
-* [Cassandra](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra/terraform/hello-world)
+> [!tabs]
+> MySQL
+>> [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mysql/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mysql/terraform/hello-world)
+> PostgreSQL
+>> [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql/terraform/hello-world)
+> Kafka
+>> [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka/terraform/hello-world)
+> Cassandra
+>> [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra/terraform/hello-world)
 
 
 ## Go further
