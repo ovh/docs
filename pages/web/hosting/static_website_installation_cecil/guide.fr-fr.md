@@ -130,12 +130,27 @@ Les captures d'écran du présent guide ont été réalisées sous GNU nano.
  nano pages/mapage.md
 ```
 
-![Édition du fichier dans GNU nano](images/static_website_installation_cecil%5B6%5D.png)
+![Édition du fichier dans GNU nano](images/static_website_installation_cecil%5B7%5D.png)
+
+Ajoutez quelques lignes en respectant la syntaxe _Markdown_ :
+
+![Ajout de contenu dans le fichier](images/static_website_installation_cecil%5B8%5D.png)
+
+Rebuildez vos pages après avoir sauvegardé votre fichier :
+
+```sh
+php cecil.phar build
+```
+
+Puis retournez sur votre page pour voir le résultat :
+
+![Page mise à jour](images/static_website_installation_cecil%5B9%5D.png)
 
 ##### **Modification sur votre poste de travail**
 
 ## Aller plus loin
 
+- le site de l'application [Cecil](https://cecil.app/)
 - la [page](https://daringfireball.net/projects/markdown/) du créateur du format Markdown
 - un [guide](https://www.markdownguide.org/) sur ce format
 - notre guide sur l'[utilisation de FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
