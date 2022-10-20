@@ -545,7 +545,7 @@ Il faut un sous réseau de test par sous réseau de production sur nos clusters 
 - **infra** sur le VLAN 1
 - **production*** sur le VLAN 2
 
-Nous allons donc créer 3 sous-réseaux supplémentaires avec ces noms sur le cluster de Gravelines et celui de Roubaix
+Nous allons donc créer 3 sous-réseaux supplémentaires sur les cluster de Gravelines et de Roubaix avec ces noms :
 
 - **testbase** sur le VLAN 100
 - **testinfra** sur le VLAN 101
@@ -691,7 +691,7 @@ Choisissez ces informations :
 
 Ensuite cliquez sur `+ Add Network Mapping`{.action}.
 
-![13 - Create Recovery Plan Gravelines 07](images/13-create-gravelines-recovery-plan07.png){.thumbnail}
+![13 - Create Recovery Plan Gravelines 07](image.png){.thumbnail}s/13-create-gravelines-recovery-plan07.png){.thumbnail}
 
 Choisissez ces informations :
 
@@ -729,23 +729,23 @@ Les deux plans de reprises d'activités sont en productions.
 
 ### Validation et test d'un plan de reprise d'activité
 
-Il est possible de demander à Prism Central de valider le plan de reprise.
+Il est possible de demander à Prism Central de valider le plan de reprise d'activités.
 
 Cliquez sur le `Recovery VM from ROUBAIX`{.action} à valider et tester.
 
-![14 - Validate test recovery plan 01](images/14-create-gravelines-recovery-plan01.png){.thumbnail}
+![14 - Validate test recovery plan 01](images/14-validate-test-recovery-plan01.png){.thumbnail}
 
 Cliquez sur `Validate`{.action}
 
-![14 - Validate test recovery plan 02](images/14-create-gravelines-recovery-plan02.png){.thumbnail}
+![14 - Validate test recovery plan 02](images/14-validate-test-recovery-plan02.png){.thumbnail}
 
 Sélectionnez le cluster de Roubaix pour **Entity Failing Over From** et le cluster de Gravelines pour **Entity Failing Over To**. Ensuite cliquez sur `Proceed`{.action}
 
-![14 - Validate test recovery plan 03](images/14-create-gravelines-recovery-plan03.png){.thumbnail}
+![14 - Validate test recovery plan 03](images/14-validate-test-recovery-plan03.png){.thumbnail}
 
 Le plan de de reprise est validé, cliquez sur `Close`{.action}
 
-![14 - Validate test recovery plan 04](images/14-create-gravelines-recovery-plan04.png){.thumbnail}
+![14 - Validate test recovery plan 04](images/14-validate-test-recovery-plan04.png){.thumbnail}
 
 ### Test du plan de reprise d'activité
 
@@ -753,11 +753,11 @@ Il est possible de tester le plan de reprise d'activité sans impacter la produc
 
 Cliquez sur `Test`{.action}
 
-![14 - Validate test recovery plan 05](images/14-create-gravelines-recovery-plan05.png){.thumbnail}
+![14 - Validate test recovery plan 05](images/14-validate-test-recovery-plan05.png){.thumbnail}
 
 Sélectionnez le cluster de Roubaix pour **Entity Failing Over From** et le cluster de Gravelines pour **Entity Failing Over To**. Ensuite cliquez sur `Test`{.action}
 
-![14 - Validate test recovery plan 06](images/14-create-gravelines-recovery-plan06.png){.thumbnail}
+![14 - Validate test recovery plan 06](images/14-validate-test-recovery-plan06.png){.thumbnail}
 
 > [!primary]
 > Assurez-vous d'avoir les bonnes licences, Si vous avec choisi un cluster avec des licences chez OVHcloud il est nécessaire d'avoir souscrit le pack Advanced sur le cluster de Roubaix et Gravelines.
@@ -765,19 +765,19 @@ Sélectionnez le cluster de Roubaix pour **Entity Failing Over From** et le clus
 
 Cliquez sur `Execute Anyway`{.action}
 
-![14 - Validate test recovery plan 07](images/14-create-gravelines-recovery-plan07.png){.thumbnail}
+![14 - Validate test recovery plan 07](images/14-validate-test-recovery-plan07.png){.thumbnail}
 
 Allez dans le tableau de bord des VM dans **Prism Central et vous verrez les machines virtuelles de tests qui sont créés avec les données répliquées.
 
-![14 - Validate test recovery plan 08](images/14-create-gravelines-recovery-plan08.png){.thumbnail}
+![14 - Validate test recovery plan 08](images/14-validate-test-recovery-plan08.png){.thumbnail}
 
 Revenez sur votre plan de reprise et cliquez sur `Clean-up test Entities`{.action}
 
-![14 - Validate test recovery plan 09](images/14-create-gravelines-recovery-plan09.png){.thumbnail}
+![14 - Validate test recovery plan 09](images/14-validate-test-recovery-plan09.png){.thumbnail}
 
 cliquez sur `Clean Up`{.action}
 
-![14 - Validate test recovery plan 10](images/14-create-gravelines-recovery-plan10.png){.thumbnail}
+![14 - Validate test recovery plan 10](images/14-validate-test-recovery-plan10.png){.thumbnail}
 
 ### Live migration des machines virtuelles de Roubaix sur Gravelines
 
