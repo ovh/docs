@@ -417,7 +417,7 @@ Sélectionnez à gauche `les deux machines virtuelles`{.action} de Roubaix, Ensu
 
 Ajouter la catégorie `ProcectedVM: Roubaix`, ensuite cliquez sur `Save`{.action}
 
-![07 - Add Categorie to VM ROUBAIX 03](images/07-add-categorie-to-vm-roubaix-03.png)
+![07 - Add Categorie to VM ROUBAIX 03](images/07-add-categorie-to-vm-roubaix01.png)
 
 Sélectionnez à gauche `les trois machines virtuelles`{.action} de Gravelines, Ensuite au travers du menu **Actions** cliquez sur `Manage Categories`{.action}
 
@@ -914,6 +914,10 @@ Et cliquez sur `Done`{.action}.
 
 ![17 - invert recovery plan after failover 07](images/17-invert-recovery-plan-after-failover07.png)
 
+> [!primary]
+> Les réplications et le plan de reprise ont été inversés suite à un migration des machines virtuelles de ROUBAIX vers GRAVELINES.
+> Pour revenir à la situation d'origine il faut effectuer à nouveau une migration à chaud et inverser la réplication et le plan de reprise d'activité.
+> Il est possible d'utiliser cette partie du guide en cas de déclenchement du plan de reprise d'activité en raison d'une indisponibilité d'un cluster.
 
 
 
