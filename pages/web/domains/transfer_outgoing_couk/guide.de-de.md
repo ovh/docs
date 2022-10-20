@@ -12,15 +12,6 @@ order: 05
 
 **Letzte Aktualisierung am 20.10.2022**
 
-> [!warning]
->
-> Achtung, wenn die Domain bereits bei OVHcloud registriert ist, muss eigentlich kein ausgehender Transfer durchgeführt werden, sondern [eine Änderung der Kontakte "Administrator", "technisch" und/oder "Abrechnung"](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) für Ihre Domain durchgeführt werden.
->
-> Tatsächlich erfolgt der tatsächliche Transfer von Domainnamen nur zwischen Registern wie OVHcloud.
->
-> Wenn sich auch das Eigentum an der Domain ändern muss, denken Sie daran, diese Aktion durchzuführen, **bevor** Sie die Kontakte Ihrer Domain ändern, und verwenden Sie hierzu unsere Anleitung zur [Änderung des Inhabers einer Domain](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
->
-
 ## Ziel
 
 Der Transferprozess für Top Level Domains (TLDs) des Ländercodes **UK** (**.uk**) unterscheidet sich von dem, der in unserer [Anleitung zu generischen TLDs](../ausgehender-transfer-einer-generischen-oder-geografischen-domain/) erklärt wird. Die nachfolgenden Anweisungen betreffen diese Endungen:
@@ -36,6 +27,15 @@ Der Transferprozess für Top Level Domains (TLDs) des Ländercodes **UK** (**.uk
 - .sch.uk
 
 **Diese Anleitung erklärt, wie Sie einen ausgehenden Transfer für .uk-TLDs über Ihr OVHcloud Kundencenter starten.**
+
+> [!warning]
+>
+> Sollte die betreffende Domain bei OVHcloud registriert bleiben, aber in den Verwaltungs- oder Eigentumsverhältnissen geändert werden, ist ein ausgehender Transfer der Domain nicht der geeignete Vorgang.
+>
+> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) beschrieben.
+>
+> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu unsere Anleitung zum [Inhaberwechsel für Domainnamen](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
+>
 
 ## Voraussetzungen
 

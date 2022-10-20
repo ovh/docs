@@ -12,15 +12,6 @@ order: 04
 
 **Ostatnia aktualizacja z dnia 20-10-2022**
 
-> [!warning]
->
-> Uwaga, jeśli domena jest już zarejestrowana w OVHcloud, nie musisz wykonywać transferu wychodzącego, ale [zmiana kontaktów "administrator", "techniczny" i/lub "księgowy"](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/) dla Twojej domeny.
->
-> Rzeczywiście, rzeczywiste transfery domen odbywają się tylko między rejestratorami, takimi jak OVHcloud.
->
-> Jeśli właściciel domeny również ma zmienić właściciela, pamiętaj o przeprowadzeniu tej operacji **przed*** zmiany kontaktów domeny w dokumentacji dotyczącej [zmiana właściciela domeny](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
->
-
 ## Wprowadzenie
 
 **Transfer domeny** odnosi się do przeniesienia domeny z jednego operatora na drugi. Na przykład, jeśli zamówiłeś domenę na naszej stronie internetowej, OVHcloud jest jej aktualnym operatorem. Transfer domeny wychodzącej musi zostać zainicjowany przez nowego operatora.
@@ -28,6 +19,15 @@ order: 04
 Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane przez status *clientTransferProhibited*. Ochrona ta musi zostać usunięta w Panelu klienta OVHcloud przed rozpoczęciem transferu.
 
 **Niniejszy przewodnik wyjaśnia, jak przygotować domenę do transferu wychodzącego.**
+
+> [!warning]
+>
+> Jeśli domena ma pozostać zarejestrowana w OVHcloud, ale została zmieniona w sposób umożliwiający zarządzanie domeną lub jej własność, transfer wychodzący z domeny nie jest właściwą procedurą.
+>
+> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy zmienić kontakt. Procedurę opisano w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+>
+> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
+>
 
 ## Wymagania początkowe
 

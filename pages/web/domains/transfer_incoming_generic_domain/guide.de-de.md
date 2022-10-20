@@ -14,11 +14,11 @@ order: 01
 
 > [!warning]
 >
-> Achtung, wenn die Domain bereits bei OVHcloud registriert ist, muss eigentlich kein eingehender Transfer durchgeführt werden, sondern [eine Änderung der Kontakte "Administrator", "technisch" und/oder "Abrechnung"](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) für Ihre Domain durchgeführt werden.
+> Wenn der zu ändernde Domainname aktuell bei OVHcloud registriert ist, ist ein eingehender Domaintransfer nicht der passende Vorgang. Die vorliegende Anleitung betrifft lediglich den Wechsel des Registrars (OVHcloud) des Domainnamens.
 >
-> Tatsächlich erfolgt der tatsächliche Transfer von Domainnamen nur zwischen Registern wie OVHcloud.
+> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) beschrieben.
 >
-> Wenn sich auch das Eigentum an der Domain ändern muss, denken Sie daran, diese Aktion durchzuführen, **bevor** Sie die Kontakte Ihrer Domain ändern, und verwenden Sie hierzu unsere Anleitung zur [Änderung des Inhabers einer Domain](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
+> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu unsere Anleitung zum [Inhaberwechsel für Domainnamen](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
 >
 
 ## Ziel

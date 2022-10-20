@@ -14,20 +14,20 @@ order: 03
 
 ## Objetivo
 
-> [!warning]
->
-> Atención, si el dominio ya está registrado en OVHcloud, en realidad no es necesario efectuar una transferencia saliente sino [un cambio de los contactos "administrador", "técnico" y/o "facturación"](https://docs.ovh.com/es/customer/gestion-de-los-contactos/) para su nombre de dominio.
->
-> En efecto, las verdaderas transferencias de dominios solo se efectúan entre los agentes registradores, como OVHcloud.
->
-> Si la propiedad del dominio debe cambiar también, no olvide realizar esta acción **antes** para cambiar los contactos de su dominio utilizando nuestra documentación sobre el [cambio de propietario de un dominio](https://docs.ovh.com/es/domains/cambio-propietario-dominio/).
->
-
 **Transferencia de dominio** hace referencia a la transferencia de un dominio de un agente registrador a otro. Por ejemplo, si ha contratado un dominio en nuestro sitio web, OVHcloud es su actual agente registrador. El nuevo agente registrador debe iniciar una transferencia de dominio saliente.
 
 Para evitar las transferencias de dominio no autorizadas, los dominios suelen estar bloqueados por un estado de *clientTransferProhibited*. Es necesario eliminar esta protección desde el área de cliente de OVHcloud antes de iniciar la transferencia.
 
 **Esta guía explica cómo preparar un dominio para una transferencia saliente.**
+
+> [!warning]
+>
+> Si el dominio en cuestión debe permanecer registrado en OVHcloud, pero modificado en sus modalidades de gestión o de propiedad, una transferencia saliente de dominio no es el procedimiento adecuado.
+>
+> Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un cambio de contactos. El procedimiento se describe en [esta guía](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).
+>
+Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](https://docs.ovh.com/es/domains/cambio-propietario-dominio/).
+>
 
 ## Requisitos
 

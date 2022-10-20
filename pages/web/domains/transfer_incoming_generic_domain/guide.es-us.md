@@ -14,20 +14,20 @@ order: 01
 
 ## Objetivo
 
-> [!warning]
->
-> Atención, si el dominio ya está registrado en OVHcloud, en realidad no es necesario efectuar una transferencia entrante sino [un cambio de los contactos "administrador", "técnico" y/o "facturación"](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/) para su nombre de dominio.
->
-> En efecto, las verdaderas transferencias de dominios solo se efectúan entre los agentes registradores, como OVHcloud.
->
-> Si la propiedad del dominio debe cambiar también, no olvide realizar esta acción **antes** para cambiar los contactos de su dominio utilizando nuestra documentación sobre el [cambio de propietario de un dominio](https://docs.ovh.com/us/es/domains/cambio-propietario-dominio/).
->
-
 Si tiene un dominio registrado con otro proveedor y quiere transferirlo a OVHcloud, puede transferirlo a OVHcloud.
 
 La transferencia de un dominio permite cambiar el agente registrador que lo gestiona. Puede transferir su dominio a OVHcloud creando un pedido. Esta operación suele tardar entre uno y diez días.
 
 **Esta guía explica cómo transferir un dominio genérico a OVHcloud.**
+
+> [!warning]
+>
+> Si el dominio que está siendo modificado se encuentra registrado en OVHcloud, la transferencia entrante de dominio no es el procedimiento adecuado. Este procedimiento solo se aplica al cambio de dominio registrado (OVHcloud).
+>
+> Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un *cambio de contactos*. El procedimiento se describe en [esta guía](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/).
+>
+Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](https://docs.ovh.com/us/es/domains/cambio-propietario-dominio/).
+>
 
 ## Requisitos
 

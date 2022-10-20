@@ -12,26 +12,26 @@ order: 04
 
 **Ostatnia aktualizacja z dnia 20/10/2022**
 
-> [!warning]
->
-> Uwaga, jeśli domena jest już zarejestrowana w OVHcloud, nie wykonaj transferu przychodzącego, ale [zmiana kontaktów "administrator", "techniczny" i/lub "księgowy"](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/) dla Twojej domeny.
->
-> Rzeczywiście, rzeczywiste transfery domen odbywają się tylko między rejestratorami, takimi jak OVHcloud.
->
-> Jeśli właściciel domeny również ma zmienić właściciela, pamiętaj o przeprowadzeniu tej operacji **przed*** zmiany kontaktów domeny w dokumentacji dotyczącej [zmiana właściciela domeny](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
->
-
 ## Wprowadzenie
 
 Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
-
-**Dowiedz się, jak przenieść domenę .uk (lub podobną) na OVHcloud**
 
 > [!warning]
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
 > Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+>
+
+**Dowiedz się, jak przenieść domenę .uk (lub podobną) na OVHcloud**
+
+> [!warning]
+>
+> Jeśli nazwa domeny w trakcie modyfikacji jest aktualnie zarejestrowana w OVHcloud, transfer przychodzący domeny nie jest właściwą procedurą. Procedura ta dotyczy wyłącznie zmiany zarejestrowanej domeny (OVHcloud).
+>
+> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy wykonać *zmianę kontaktów*. Procedura jest opisana w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+>
+> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
 >
 
 ## Wymagania początkowe

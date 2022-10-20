@@ -12,15 +12,6 @@ order: 01
 
 **Ostatnia aktualizacja z dnia 20-10-2022**
 
-> [!warning]
->
-> Uwaga, jeśli domena jest już zarejestrowana w OVHcloud, nie wykonaj transferu przychodzącego, ale [zmiana kontaktów "administrator", "techniczny" i/lub "księgowy"](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/) dla Twojej domeny.
->
-> Rzeczywiście, rzeczywiste transfery domen odbywają się tylko między rejestratorami, takimi jak OVHcloud.
->
-> Jeśli właściciel domeny również ma zmienić właściciela, pamiętaj o przeprowadzeniu tej operacji **przed*** zmiany kontaktów domeny w dokumentacji dotyczącej [zmiana właściciela domeny](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
->
-
 ## Wprowadzenie
 
 Twoja domena jest aktualnie zarejestrowana u innego operatora. Chcesz ją przenieść do OVHcloud? Jest to możliwe dzięki zastosowaniu procedury transferu.
@@ -28,6 +19,15 @@ Twoja domena jest aktualnie zarejestrowana u innego operatora. Chcesz ją przeni
 Transfer domeny umożliwia jej przeniesienie do innego operatora.  Możesz przenieść domenę do OVHcloud, składając zamówienie. Zajmie to od jednego do dziesięciu dni.
 
 **Dowiedz się, jak przenieść domenę globalną do OVHcloud.**
+
+> [!warning]
+>
+> Jeśli nazwa domeny w trakcie modyfikacji jest aktualnie zarejestrowana w OVHcloud, transfer przychodzący domeny nie jest właściwą procedurą. Procedura ta dotyczy wyłącznie zmiany zarejestrowanej domeny (OVHcloud).
+>
+> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy wykonać *zmianę kontaktów*. Procedura jest opisana w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+>
+> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
+>
 
 ## Wymagania początkowe
 
