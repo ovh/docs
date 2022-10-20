@@ -240,7 +240,7 @@ export URI=$(terraform output -raw cluster_uri)
 
 And, voilà, the MongoDB cluster is created.
 
-## How to with other databases?
+## How to deploy with other engines
 
 In this guide, we explained how to deploy a MongoDB service but you can find example for other database engine here and tweak them according to your needs :
 
