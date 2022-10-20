@@ -1,9 +1,11 @@
 ---
-title: Getting started with Public Cloud Databases via Terraform
+title: Getting started with Public Cloud Databases via Terraform (EN)
 excerpt: Find out how to order and manage your Public Cloud managed database service using Terraform
 slug: order-terraform
 section: General guides
 order: 020
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/order-terraform/'
 ---
 
 **Last updated October 19<sup>th</sup>, 2022**
@@ -16,29 +18,29 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 
 ## Requirements
 
-- [terraform >= 0.17.1](https://www.terraform.io/) installed
-- access to the [OVHcloud API](https://api.ovh.com/console/) (create your credentials by consulting [this guide](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/))
-- a [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
+- [Terraform >= 0.17.1](https://www.terraform.io/) installed
+- Access to the [OVHcloud API](https://ca.api.ovh.com/console/) (create your credentials by consulting [this guide](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/))
+- A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
 
 ## Instructions
 
-### Step 1: Gather the OVH required parameters
+### Step 1: Gather the OVHcloud required parameters
 
 #### Getting your cluster/API tokens information
 
 The "OVH provider" needs to be configured with a set of credentials:
 
-* an `application_key`
-* an `application_secret`
-* a `consumer_key`
+- an `application_key`
+- an `application_secret`
+- a `consumer_key`
 
 **Why?**
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/) tutorial.
 
-Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://ca.api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
@@ -56,17 +58,16 @@ You will also use this information in Terraform resources definition files.
 
 ### Step 2: Gather the set of required parameters
 
-In order to create a new MongoDB cluster, you will need to specify at minimum:
+In order to create a new MongoDB cluster, you will need to specify at least:
 
 - the _version_ (e.g. "5.0")
 - the _region_ (e.g. "DE")
 - the _plan_ (e.g. "business")
 - the _flavor_ of the cluster (e.g. "db1.7")
 
-
 ### Step 3: Create Terraform files
 
-First, create a `main.tf` defining the resources that would be created
+First, create a `main.tf` file defining the resources that will be created
 
 ```bash
 terraform {
@@ -114,7 +115,8 @@ resource "ovh_cloud_project_database_ip_restriction" "iprestriction" {
 }
 ```
 
-Then, create a `variables.tf` defining the variables use in `main.tf`
+Then, create a `variables.tf` file defining the variables used in `main.tf`:
+
 ```bash
 variable "ovh" {
   type = map(string)
@@ -147,14 +149,15 @@ variable "access" {
 }
 ```
 
-Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API, but other endpoints exist, depending on your needs:
+Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API. Other endpoints exist, depending on your needs:
 
-* `ovh-eu` for OVHcloud Europe API
-* `ovh-us` for OVHcloud US API
-* `ovh-ca` for OVHcloud North-America API
+- `ovh-eu` for OVHcloud Europe API
+- `ovh-us` for OVHcloud US API
+- `ovh-ca` for OVHcloud North-America API
 
-Then, create a `secrets.tfvars` containing the required variables values
-```
+Then, create a `secrets.tfvars` file containing the required variables values:
+
+```bash
 ovh = {
   endpoint           = "ovh-eu"
   application_key    = "<application_key>"
@@ -181,9 +184,9 @@ access = {
 >
 > Don't forget to replace `<service_name>`, `<application_key>`, `<application_secret>` and `<consumer_key>` by the real data.
 
-Finally, create `outputs.tf` defining the resources that would be exported
+Finally, create an `outputs.tf` file defining the resources that will be exported:
 
-```
+```bash
 output "cluster_uri" {
   value = ovh_cloud_project_database.service.endpoints.0.uri
 }
@@ -238,17 +241,17 @@ export USER=$(terraform output -raw user_name)
 export URI=$(terraform output -raw cluster_uri)
 ```
 
-And, voila, the mongodb cluster is created.
+And, voilà, the MongoDB cluster is created.
 
 ## Go further
 
-Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples) to find how to create other databases cluster with Terraform.
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples) to find out how to create other databases clusterswith Terraform.
 
-[MongoDB capabilities](https://docs.ovh.com/us/en/publiccloud/databases/mongodb/capabilities/)
+[MongoDB capabilities](https://docs.ovh.com/us/es/publiccloud/databases/mongodb/capabilities/)
 
-[Managing a MongoDB service from the OVHcloud Control Panel](https://docs.ovh.com/us/en/publiccloud/databases/mongodb/managing-service/)
+[Managing a MongoDB service from the OVHcloud Control Panel](https://docs.ovh.com/us/es/publiccloud/databases/mongodb/managing-service/)
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/us/en/public-cloud/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-vrack/)
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
