@@ -12,6 +12,12 @@ order: 01
 
 **Letzte Aktualisierung am 20.10.2022**
 
+## Ziel
+
+Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können Ihren Domainnamen zu OVHcloud übertragen, indem Sie eine Bestellung erzeugen; der Vorgang dauert anschließend zwischen 1 und 10 Tagen.
+
+**Diese Anleitung erklärt, wie Sie einen generischen Domainnamen zu OVHcloud transferieren.**
+
 > [!warning]
 >
 > Wenn der zu ändernde Domainname aktuell bei OVHcloud registriert ist, ist ein eingehender Domaintransfer nicht der passende Vorgang. Die vorliegende Anleitung betrifft lediglich den Wechsel des Registrars (OVHcloud) des Domainnamens.
@@ -20,12 +26,6 @@ order: 01
 >
 > Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu unsere Anleitung zum [Inhaberwechsel für Domainnamen](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
 >
-
-## Ziel
-
-Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können Ihren Domainnamen zu OVHcloud übertragen, indem Sie eine Bestellung erzeugen; der Vorgang dauert anschließend zwischen 1 und 10 Tagen.
-
-**Diese Anleitung erklärt, wie Sie einen generischen Domainnamen zu OVHcloud transferieren.**
 
 ## Voraussetzungen
 
