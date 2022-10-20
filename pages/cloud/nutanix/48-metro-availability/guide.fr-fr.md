@@ -417,15 +417,15 @@ Sélectionnez à gauche `les deux machines virtuelles`{.action} de Roubaix, Ensu
 
 Ajouter la catégorie `ProcectedVM: Roubaix`, ensuite cliquez sur `Save`{.action}
 
-![07 - Add Categorie to VM ROUBAIX 03](images/07-add-categorie-to-vm-roubaix01.png)
+![07 - Add Categorie to VM ROUBAIX 03](images/07-add-categorie-to-vm-roubaix03.png)
 
 Sélectionnez à gauche `les trois machines virtuelles`{.action} de Gravelines, Ensuite au travers du menu **Actions** cliquez sur `Manage Categories`{.action}
 
-![08 - Add Categorie to VM GRAVELINES 01](images/08-add-categorie-to-vm-gravelines-01.png)
+![08 - Add Categorie to VM GRAVELINES 01](images/08-add-categorie-to-vm-gravelines01.png)
 
 Ajouter la catégorie `ProcectedVM: Gravelines`, ensuite cliquez sur `Save`{.action}
 
-![08 - Add Categorie to VM GRAVELINES 02](images/08-add-categorie-to-vm-gravelines03.png)
+![08 - Add Categorie to VM GRAVELINES 02](images/08-add-categorie-to-vm-gravelines02.png)
 
 ### Mise en place des réplications synchrones entre Roubaix et Gravelines
 
