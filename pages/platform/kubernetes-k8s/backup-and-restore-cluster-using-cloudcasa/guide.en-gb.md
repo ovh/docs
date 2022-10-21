@@ -36,7 +36,7 @@ In this quick start guide you will learn how to deploy CloudCasa to your OVH Man
 
 [CloudCasa™ by Catalogic](https://cloudcasa.io){.external} is a powerful and easy to use Kubernetes and cloud database backup service for DevOps and IT Ops teams. 
 With CloudCasa, you do not need to be a storage or data protection expert to backup and restore your Kubernetes clusters. 
-Let CloudCasa do all the arduous work of protecting your cluster resources and persistent data from human error, security breaches, and service failures, to provide the business continuity and compliance that your business requires. 
+Let CloudCasa helps you with arduous work of protecting your cluster resources and persistent data from human error, security breaches, and service failures, to provide the business continuity and compliance that your business requires. 
 
 Setup and configuration of CloudCasa for your OVHcloud Managed Kubernetes cluster is a simple 6 steps procedure:
 
@@ -54,7 +54,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 The kubectl tool must be installed and configured. 
 You will need cluster administrative access to install the CloudCasa agent on your cluster. While registering your cluster in the user interface (UI), each cluster will be given a unique YAML file to be applied to your cluster.  
-Network access from your cluster outgoing to the CloudCasa service (agent.cloudcasa.io) on port 443. 
+You have to allow network access from your cluster outgoing to the CloudCasa service (agent.cloudcasa.io) on port 443 (this port is open by default). 
 
 ## Instructions
 
@@ -219,7 +219,7 @@ For the backup operation, choose whether to snapshot your PVs. Then select one o
 - Snapshot and copy 
 The “Snapshot and copy” option is only available with a paid subscription 
 
-*If you want to run pre- and post-backup commands to enable application consistent backups, select Enable app hooks and enter the appropriate pre- and post-backup app hook definitions. You will need to have defined custom hooks under Configuration/App Hooks to quiesce the application and filesystem. This isn’t necessary for all applications. If you need assistance with these, use the in-product chat or get in contact with us via casa@cloudcasa.io. 
+*If you want to run pre- and post-backup commands to enable application consistent backups, select Enable app hooks and enter the appropriate pre- and post-backup app hook definitions. You will need to have defined custom hooks under Configuration/App Hooks to quiesce the application and filesystem. This isn’t necessary for all applications. If you need assistance with these, use the in-product chat or get in contact with casa@cloudcasa.io. 
  
 On the next page, enable Run now to run the Backup operation immediately and provide Retention days (the retention period is just for this ad-hoc run). Click on the Create button. This will create a Backup definition. 
 
