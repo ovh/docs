@@ -141,7 +141,7 @@ Lorsque vous aurez terminé la configuration vous verrez dans votre vRack ces é
 Les trois clusters sont pour l'instant accessible à partir des l'URL **Prism Central** de chaques clusters.
 
 <a name="supprpc"></a>
-#### Suppression des enregistrements **Prism Central** pour les cluster de Roubaix et Gravelines.
+#### Etape 3.1.2 Suppression des enregistrements **Prism Central** pour les cluster de Roubaix et Gravelines.
 
 Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il est est nécessaire de n'utiliser qu'une Machine virtuelle **Prism Central** commune aux 3 clusters. **Prism Central** sera sur le site d'Erith qui ne contient pas de machines virtuelles concernées par le P.R.A.
 
