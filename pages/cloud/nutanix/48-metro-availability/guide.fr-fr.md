@@ -18,6 +18,31 @@ order: 06
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
+[Etape 1 Prérequis](#prerequis)<br /> 
+[Etape 2 Présentation](#presentation)<br />
+[Etape 3 En Pratique](#enpratique)<br />
+&ensp;&ensp;[Etape 3.1 Interconnexion des trois clusters](#dedupinstall)<br />
+&ensp;&ensp;[Etape 3.2 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)<br />
+&ensp;&ensp;[Etape 3.3 Enregistrement des deux clusters au Prism Central se trouvant sur le site d'Erith](#enregpc)<br />
+&ensp;&ensp;[Etape 3.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)<br />
+&ensp;&ensp;[Etape 3.5 Création de deux Storage Containers sur les clusters de Roubaix et de Gravelines](#addsc)<br />
+&ensp;&ensp;[Etape 3.6 Déplacement des machines virtuelles dans le Storage Container](#deplst)<br />
+&ensp;&ensp;[Etape 3.7 Création d'un catégorie qui servira lors de la mise en place du P.R.A](#deplst)<br />
+&ensp;&ensp;[Etape 3.8 Ajout des machines virtuelles dans les catégories](#deplst)<br />
+&ensp;&ensp;[Etape 3.9 Mise en place des réplications synchrones entre Roubaix et Gravelines](#deplst)<br />
+&ensp;&ensp;[Etape 3.10 Création de sous réseaux de test pour les plans de reprise d'activité](#deplst)<br />
+&ensp;&ensp;[Etape 3.11 Mise en place des plans de reprises d'activités](#deplst)<br />
+&ensp;&ensp;[Etape 3.12 Validation et test d'un plan de reprise d'activité](#deplst)<br />
+
+
+
+
+Ajout des machines virtuelles dans les catégories
+Mise en place des réplications synchrones entre Roubaix et Gravelines
+Création de sous réseaux de test pour les plans de reprise d'activité
+Mise en place des plans de reprises d'activités
+Validation et test d'un plan de reprise d'activité
+
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
@@ -30,10 +55,9 @@ order: 06
 
 Nous allons mettre en place un plan de reprise d'activité bi-directionnel entre deux clusters avec ce matériel :
 
-- Un cluster Nutanix à Roubaix en France avec des machines virtuelles répliquées à Gravelines
-- Un cluster Nutanix à Gravelines en France avec des machines virtuelles répliquées à Roubaix
+- Un cluster Nutanix à Roubaix en France avec des machines virtuelles répliquées à Gravelines.
+- Un cluster Nutanix à Gravelines en France avec des machines virtuelles répliquées à Roubaix.
 - Un cluster Nutanix à Erith en Angleterre pour Prism Central.
-
 
 Nous n'utiliserons qu'un seul vRack qui contiendra :
 
@@ -45,6 +69,7 @@ Nous n'utiliserons qu'un seul vRack qui contiendra :
 Vous trouverez ci-dessous le schéma de cette configuration sur trois sites:
 
 ![00 - Metro Availability Diagram 01](images/00-metro-availability-diagram01.png){.thumbnail}
+
 
 ## En pratique
 
@@ -85,7 +110,10 @@ Le informations techniques utilisés par notre guide sont les suivantes :
     + Masque : `255.255.252.0`
     + Version du cluster : `6.5`.
 
-une partie du  paramètrage sera faite à partir des interfaces WEB **Prism Central** & **Prism Element**, une autre à partir de l'espace client OVHcloud et d'autres en ligne de commande sur **Prism Central** ou **Prism Element**. En plus de ce guide vous pouvez vous appuyer sur ces guides [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) et [Outils avancées](https://docs.ovh.com/fr/nutanix/advanced-tools/) pour vous aider.
+
+Une partie du  paramètrage est faite à partir des interfaces WEB **Prism Central** & **Prism Element**, une autre à partir de l'espace client OVHcloud et d'autres en ligne de commande sur les machines virtuelles **Prism Central** ou **Prism Element**. 
+
+En plus de ce guide vous pouvez vous appuyer sur ces documentations [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) et [Outils avancées](https://docs.ovh.com/fr/nutanix/advanced-tools/) pour vous aider.
 
 
 ### Interconnexion des trois clusters
@@ -288,15 +316,15 @@ A partir d'un navigateur WEB connectez vous sur l'URL de Prism-Central à Erith,
 
 A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `cluster d'Erith`{.action}.
 
-![03 - Add iscsi address Erith 01](images/03-add-iscsi-address-Erith01.png){.thumbnail}
+![03 - Add iscsi address Erith 01](images/03-add-iscsi-address-erith01.png){.thumbnail}
 
 Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `nom du cluster`{.action}.
 
-![03 - Add iscsi address Erith 02](images/03-add-iscsi-address-Erith02.png){.thumbnail}
+![03 - Add iscsi address Erith 02](images/03-add-iscsi-address-erith02.png){.thumbnail}
 
 Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur  `Save`{.action}.
 
-![03 - Add iscsi address Erith 03](images/03-add-iscsi-address-Erith03.png){.thumbnail}
+![03 - Add iscsi address Erith 03](images/03-add-iscsi-address-erith03.png){.thumbnail}
 
 A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `cluster de Gravelines`{.action}.
 
