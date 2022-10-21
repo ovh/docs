@@ -20,24 +20,24 @@ order: 06
 
 [Etape 1 Prérequis](#prerequis)<br /> 
 [Etape 2 Présentation](#presentation)<br />
-[Etape 3 En Pratique](#enpratique)<br />
+[Etape 3 En pratique](#enpratique)<br />
 &ensp;&ensp;[Etape 3.1 Configuration](#configuration)<br />
-&emsp;&emsp;[Etape 3.1.1 Inter-connexion des trois clusters](#connectcl)<br />
-&emsp;&emsp;[Etape 3.1.1 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)<br />
-&emsp;&emsp;[Etape 3.1.2 Enregistrement des deux clusters au Prism Central se trouvant sur le site d'Erith](#enregpc)<br />
-&emsp;&emsp;[Etape 3.1.3 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)<br />
-&emsp;&emsp;[Etape 3.1.4 Création de deux Storage Containers sur les clusters de Roubaix et de Gravelines](#addsc)<br />
-&emsp;&emsp;[Etape 3.1.5 Déplacement des machines virtuelles dans le Storage Container](#deplst)<br />
-&emsp;&emsp;[Etape 3.1.6 Création d'un catégorie qui servira lors de la mise en place du P.R.A](#creacat)<br />
-&emsp;&emsp;[Etape 3.1.7 Ajout des machines virtuelles dans les catégories](#addvmcat)<br />
-&emsp;&emsp;[Etape 3.1.8 Mise en place des réplications synchrones entre Roubaix et Gravelines](#confreplsync)<br />
-&emsp;&emsp;[Etape 3.1.9 Création de sous réseaux de test pour les plans de reprise d'activité](#addsublan)<br />
-&emsp;&emsp;[Etape 3.1.10 Mise en place des plans de reprises d'activités](#adddr)<br />
+&emsp;&emsp;[Etape 3.1.1 Interconnexion des trois clusters](#connectcl)<br />
+&emsp;&emsp;[Etape 3.1.2 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)<br />
+&emsp;&emsp;[Etape 3.1.3 Enregistrement des deux clusters sur le **Prism Central** d'Erith](#enregpc)<br />
+&emsp;&emsp;[Etape 3.1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)<br />
+&emsp;&emsp;[Etape 3.1.5 Création de deux Storage Containers sur les clusters de Roubaix et de Gravelines](#addsc)<br />
+&emsp;&emsp;[Etape 3.1.6 Déplacement des machines virtuelles dans le Storage Container](#deplst)<br />
+&emsp;&emsp;[Etape 3.1.7 Création d'une catégorie qui servira lors de la mise en place du P.R.A](#creacat)<br />
+&emsp;&emsp;[Etape 3.1.8 Ajout des machines virtuelles dans les catégories](#addvmcat)<br />
+&emsp;&emsp;[Etape 3.1.9 Mise en place des réplications synchrones entre Roubaix et Gravelines](#confreplsync)<br />
+&emsp;&emsp;[Etape 3.1.10 Création de sous-réseaux nécessaires au plan de reprise d'activité](#addsublan)<br />
+&emsp;&emsp;[Etape 3.1.11 Mise en place des plans de reprises d'activités](#adddr)<br />
 &ensp;&ensp;[Etape 3.2 Validation du plan de reprise d'activité](#validation)<br />
 &emsp;&emsp;[Etape 3.2.1 Contrôle du plan de reprise d'activité](#ctrldr)<br />
 &emsp;&emsp;[Etape 3.2.2 Live migration des machines virtuelles de Roubaix sur Gravelines](#livemigration)<br />
 &emsp;&emsp;[Etape 3.2.3 Opérations à effectuer après une migration](#aftermigration)<br />
-&emsp;&emsp;[Etape 3.2.4 Execution du plan de reprise d'activité en condition réélle](#epmcr)<br />
+&emsp;&emsp;[Etape 3.2.4 Exécution du plan de reprise d'activité en condition réélle](#epmcr)<br />
 [Etape 3 Aller plus loin](#gofurther)<br />
 
 
@@ -46,27 +46,27 @@ order: 06
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via Prism Central.
-- Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloud avoir les licences Pack Advance si vous avez une offre packagée sur les deux clusters du P.R.A.
-- Avoir les deux clusters qui seront répliqués avec un latence de moins de 5ms.
-- Avoir les licences requises sur tous vos clusters.
+- Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloud avec des licences **Pack Advanced** si vous avez une offre packagée sur les deux clusters du P.R.A.
+- Avoir une latence de moins de 5ms entre les deux clusters répliqués.
+
 
 <a name="presentation"></a>
 ## Etape 2 Présentation
 
-Nous allons mettre en place un plan de reprise d'activité bi-directionnel entre deux clusters avec ce matériel :
+Nous allons mettre en place un plan de reprise d'activité bidirectionnel entre deux clusters avec ce matériel :
 
 - Un cluster Nutanix à Roubaix en France avec des machines virtuelles répliquées à Gravelines.
 - Un cluster Nutanix à Gravelines en France avec des machines virtuelles répliquées à Roubaix.
 - Un cluster Nutanix à Erith en Angleterre pour Prism Central.
 
-Nous n'utiliserons qu'un seul vRack qui contiendra :
+Nous n'utiliserons qu'un seul **vRack** qui contiendra :
 
 - Les trois clusters Nutanix.
 - Les loadbalancers.
 - Le serveur Standalone avec Prism Central.
-- les adresses IP additionnelles sur le rtvRack.
+- les adresses IP additionnelles sur le **rtvRack**.
 
-Vous trouverez ci-dessous le schéma de cette configuration sur trois sites:
+Vous trouverez ci-dessous le schéma de cette configuration sur trois sites :
 
 ![00 - Metro Availability Diagram 01](images/00-metro-availability-diagram01.png){.thumbnail}
 
@@ -75,7 +75,7 @@ Vous trouverez ci-dessous le schéma de cette configuration sur trois sites:
 
 Nous allons étape par étape mettre en place ce P.R.A (Plan de reprise d'activité).
 
-Le informations techniques utilisés par notre guide sont les suivantes :
+Les informations de configuration des clusters utilisés par notre guide sont les suivantes :
 
 - Cluster de Roubaix :
     + Serveur 1 : adresse VM **CVM** `192.168.0.1`, adresse IP hyperviseur **AHV** `192.168.0.21`.
@@ -83,7 +83,7 @@ Le informations techniques utilisés par notre guide sont les suivantes :
     + Serveur 3 : adresse VM **CVM** `192.168.0.3`, adresse IP hyperviseur **AHV** `192.168.0.23`.
     + Adresse virtuelle de **Prism Element** : `192.168.0.100`.
     + Adresse iScsi de **Prism Element** : `192.168.0.102`.
-    + Adresse IP **Prism Central** :`192.168.0.101`.
+    + Adresse IP **Prism Central** : `192.168.0.101`.
     + Passerelle : `192.168.3.254`.
     + Masque : `255.255.252.0`
     + Version du cluster : `6.5`
@@ -94,7 +94,7 @@ Le informations techniques utilisés par notre guide sont les suivantes :
     + Serveur 3 : adresse VM **CVM** `192.168.1.3`, adresse IP hyperviseur **AHV** `192.168.1.23`.
     + Adresse virtuelle de **Prism Element** : `192.168.1.100`.
     + Adresse iScsi de **Prism Element** : `192.168.1.102`.
-    + Adresse IP **Prism Central** :`192.168.1.101`.
+    + Adresse IP **Prism Central** : `192.168.1.101`.
     + Passerelle : `192.168.3.254`.
     + Masque : `255.255.252.0`
     + Version du cluster : `6.5`.
@@ -105,13 +105,11 @@ Le informations techniques utilisés par notre guide sont les suivantes :
     + Serveur 3 : adresse VM **CVM** `192.168.2.3`, adresse IP hyperviseur **AHV** `192.168.2.23`.
     + Adresse virtuelle de **Prism Element** : `192.168.2.101`.
     + Adresse iScsi de **Prism Element** : `192.168.2.102`.   
-    + Adresse IP **Prism Central** :`192.168.2.100`.
+    + Adresse IP **Prism Central** : `192.168.2.100`.
     + Passerelle : `192.168.3.254`.
     + Masque : `255.255.252.0`
     + Version du cluster : `6.5`.
 
-
-Une partie du  paramètrage est faite à partir des interfaces WEB **Prism Central** & **Prism Element**, une autre à partir de l'espace client OVHcloud et d'autres en ligne de commande sur les machines virtuelles **Prism Central** ou **Prism Element**. 
 
 En plus de ce guide vous pouvez vous appuyer sur ces documentations [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) et [outils avancées](https://docs.ovh.com/fr/nutanix/advanced-tools/) pour vous aider.
 
@@ -119,16 +117,16 @@ En plus de ce guide vous pouvez vous appuyer sur ces documentations [Hyperconver
 ### Etape 3.1 Configuration
 
 <a name="connectcl"></a>
-#### Etape 3.1.1 Inter-connexion des trois clusters
+#### Etape 3.1.1 Interconnexion des trois clusters
 
-La première étape est de réaliser l'interconnexion des trois clusters sur le même vRack OVHcloud. 
+La première étape est de réaliser l'interconnexion des trois clusters sur le même **vRack** **OVHcloud**. 
 
 Aidez-vous de ce guide pour interconnecter vos clusters [Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/).
 
-Le guide explique la connexion entre deux clusters dans notre cas il faut connecter 3 serveurs suivez les instructions dans ce sens :
+Le guide explique la connexion entre deux clusters. Pour la connexion des trois clusters utilisez les instructions du guide dans ce sens :
 
-- Les clusters de Roubaix dans le vRack dédié à Gravelines.
-- Les clusters de Erith dans le vRack dédié à Gravelines.
+- Les clusters de Roubaix dans le **vRack** dédié à Gravelines.
+- Les clusters de Erith dans le **vRack** dédié à Gravelines.
 
 Lorsque vous aurez terminé la configuration vous verrez dans votre vRack ces éléments :
 
@@ -141,7 +139,7 @@ Lorsque vous aurez terminé la configuration vous verrez dans votre vRack ces é
 Les trois clusters sont pour l'instant accessible à partir des l'URL **Prism Central** de chaques clusters.
 
 <a name="supprpc"></a>
-#### Etape 3.1.2 Suppression des enregistrements **Prism Central** pour les cluster de Roubaix et Gravelines.
+#### Etape 3.1.2 Suppression des enregistrements **Prism Central** pour les clusters de Roubaix et Gravelines.
 
 Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il est est nécessaire de n'utiliser qu'une Machine virtuelle **Prism Central** commune aux 3 clusters. **Prism Central** sera sur le site d'Erith qui ne contient pas de machines virtuelles concernées par le P.R.A.
 
@@ -156,14 +154,14 @@ Connectez-vous en SSH au cluster **Prism Element** de Roubaix.
 ssh nutanix@adresse_ip_privee_prism_element_Roubaix
 Saisissez le mot de passe de Prism Element
 ```
-Exécutez cette commande pour retirer Prism Element de la configuration de Prism Central:
+Exécutez cette commande pour retirer Prism Element de la configuration de Prism Central :
 
 ```
-ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=adresse_ip_privee_prism_central\
+ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=adresse_ip_privee_prism_central_roubaix\
 username=admin password=mdp_pe_Roubaix force=true
 ```
 
-Ce message apparait lors de la deconnexion à Prism Central.
+Ce message apparait lors de la déconnexion à Prism Central.
 
 ```console
 Cluster unregistration is currently in progress. This operation may take a while.
@@ -177,11 +175,11 @@ ncli cluster info
 
 Notez la valeur de **Cluster UUID** qui doit avoir cette forme **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**.
 
-Déconnectez-vous de **Prism Element** et connectez vous en SSH sur la machine virtuelle **Prism Central** de Roubaix.
+Déconnectez-vous de **Prism Element** et connectez-vous en SSH sur la machine virtuelle **Prism Central** de Roubaix.
 
 ```bash
-ssh nutanix@adresse_ip_privee_prism_central
-saisissez le mot de passe de Prism Central
+ssh nutanix@adresse_ip_privee_prism_central_roubaix
+Saisissez le mot de passe de Prism Central
 ```
 
 Saisissez cette commande :
@@ -195,7 +193,7 @@ python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_Ro
 Connectez-vous en SSH au cluster **Prism Element** de Gravelines.
 
 ```bash
-ssh nutanix@adresse_ip_pe_Gravelines
+ssh nutanix@adresse_ip_prism_element_Gravelines
 saisissez le mot de passe de Prism Element
 ```
 Saisissez cette commande :
@@ -205,7 +203,7 @@ ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=adress
 username=admin password=mdp_pe_Gravelines force=true
 ```
 
-Ce message apparait lors de la deconnexion à Prism Central.
+Ce message apparait lors de la déconnexion à Prism Central.
 
 ```console
 Cluster unregistration is currently in progress. This operation may take a while.
@@ -219,7 +217,7 @@ ncli cluster info
 
 Notez la valeur de **Cluster UUID* qui doit avoir cette forme **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**
 
-Deconnectez-vous de **Prism Element** et connectez vous en SSH sur la machine virtuelle **Prism Central** de Gravelines
+Deconnectez-vous de **Prism Element** et connectez-vous en SSH sur la machine virtuelle **Prism Central** de Gravelines.
 
 ```bash
 ssh nutanix@adresse_ip_privee_prism_central_Gravelines
@@ -227,7 +225,7 @@ saisissez le mot de passe de Prism Central
 python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_Gravelines
 ```
 <a name="enregpc"></a>                                               
-#### Etape 3.1.2 Enregistrement des deux clusters au Prism Central se trouvant sur le site d'Erith
+#### Etape 3.1.3 Enregistrement des deux clusters sur le **Prism Central** d'Erith
 
 Connectez-vous en ssh sur **Prism Element** de Roubaix :
 
@@ -248,13 +246,13 @@ Ce message apparait :
 Cluster registration is currently in progress. This operation may take a while.
 ```
 
-Patientez et saisissez cette commande
+Patientez et saisissez cette commande :
 
 ```bash
 ncli multicluster get-cluster-state
 ```
 
-Si le cluster est bien connecté à **Prism Central** d'Erith vous verrez appparaitre ces informations :
+Si le cluster est bien connecté à **Prism Central** d'Erith vous verrez apparaitre ces informations :
 
 ```console
 Registered Cluster Count: 1
@@ -278,7 +276,7 @@ ssh nutanix@adresse_ip_prism_element_Gravelines
 Saisissez le mot de passe de Prism Element de Gravelines
 ```
 
-Executez cette commande :
+Exécutez cette commande :
 
 ```bash
 ncli multicluster register-to-prism-central username=admin password=passwod_admin_Erith external-ip-address-or-svm-ips=adresse_ip_privee_prism_central_Erith
@@ -290,7 +288,7 @@ Ce message apparait :
 Cluster registration is currently in progress. This operation may take a while.
 ```
 
-Patientez et saisissez cette commande
+Patientez et saisissez cette commande :
 
 ```bash
 ncli multicluster get-cluster-state
@@ -312,12 +310,12 @@ Registered Cluster Count: 1
     Remote Connection Exists  : true
 ```
 
-A partir d'un navigateur WEB connectez vous sur l'URL de Prism-Central à Erith, vous verrez les trois clusters.
+A partir d'un navigateur WEB connectez-vous sur l'URL de Prism-Central à Erith, vous verrez les trois clusters.
 
 ![02 - Prism Central Dashboard 02](images/02-show-prismcentral01.png){.thumbnail}
 
 <a name="paramiscsi"></a>
-#### Etape 3.1.3 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters
+#### Etape 3.1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters
 
 A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `cluster d'Erith`{.action}.
 
@@ -327,7 +325,7 @@ Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `no
 
 ![03 - Add iscsi address Erith 02](images/03-add-iscsi-address-erith02.png){.thumbnail}
 
-Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur  `Save`{.action}.
+Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur `Save`{.action}.
 
 ![03 - Add iscsi address Erith 03](images/03-add-iscsi-address-erith03.png){.thumbnail}
 
@@ -335,11 +333,11 @@ A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `clust
 
 ![03 - Add iscsi address Gravelines 01](images/03-add-iscsi-address-gravelines01.png){.thumbnail}
 
-Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `nom du cluster  `{.action}.
+Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `nom du cluster`{.action}.
 
 ![03 - Add iscsi address Gravelines 02](images/03-add-iscsi-address-gravelines02.png){.thumbnail}
 
-Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur  `Save`{.action}.
+Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur `Save`{.action}.
 
 ![03 - Add iscsi address graveline 03](images/03-add-iscsi-address-gravelines03.png){.thumbnail}
 
@@ -356,11 +354,11 @@ Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à 
 ![03 - Add iscsi address Roubaix 03](images/03-add-iscsi-address-roubaix03.png){.thumbnail}
 
 <a name="addsc"></a>
-#### Etape 3.1.4 Création de deux **Storage Containers** sur les clusters de Roubaix et de Gravelines
+#### Etape 3.1.5 Création de deux **Storage Containers** sur les clusters de Roubaix et de Gravelines
 
 Nous allons créer deux **Storage Containers** portant le même nom à Roubaix et Gravelines. 
  
-Depuis le menu principal de **Prism Elemetn** cliquez sur `Storage Containers`{.action} dans le sous-menu **Compute & Storage**.
+Depuis le menu principal de **Prism Element** cliquez sur `Storage Containers`{.action} dans le sous-menu **Compute & Storage**.
 
 ![05 - Add-storage-container 01](images/05-add-storage-container01.png){.thumbnail}
 
@@ -385,7 +383,7 @@ Dans la liste des **Storages Containers** vous verrez deux **Storage Containers*
 ![05 - Add-storage-container 06](images/05-add-storage-container06.png){.thumbnail}
 
 <a name="deplst"></a>
-#### Etape 3.1.5 Déplacement des machines virtuelles dans le **Storage Container**
+#### Etape 3.1.6 Déplacement des machines virtuelles dans le **Storage Container**
 
 Nous allons déplacer le stockage des machines virtuelles sur les **Storage Container** que nous avons créé.
 
@@ -396,7 +394,7 @@ ssh nutanix@adresse_ip_privee_Prism_element_Roubaix
 Saisissez le mot de passe du compte Nutanix de Prism Element
 ```
 
-Executez cette commmande pour chaque VM que nous allons déplacer dans le **Storage Container** en remplaçant **nomvm** par le nom de la machine virtuelle (Dans notre Plan de reprise d'activité nous avons deux machines virtuelles à Roubaix une avec Windows et un autre sous Linux).
+Exécutez cette commande pour chaque VM que nous allons déplacer dans le **Storage Container** en remplaçant **nomvm** par le nom de la machine virtuelle (Dans notre Plan de reprise d'activité nous avons deux machines virtuelles à Roubaix une avec Windows et un autre sous Linux).
 
 ```bash
 acli vm.update_container nomvm container=UsedForDR
@@ -417,9 +415,9 @@ acli vm.update_container nomvm container=UsedForDR
 Saisissez le mot de passe du compte Nutanix de Prism Element
 ```
 <a name="creacat"></a>
-#### Etape 3.1.6 Création d'un catégorie qui servira lors de la mise en place du P.R.A
+#### Etape 3.1.7 Création d'une catégorie qui servira lors de la mise en place du P.R.A
 
-Nons allons créer une catégorie avec deux valeurs dans **Prism Central** pour affectuer les machines virtuelles concernées par la réplications.
+Nons allons créer une catégorie avec deux valeurs dans **Prism Central** pour affectuer les machines virtuelles concernées par la réplication.
 
 Faites défiler le menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
 
@@ -429,16 +427,16 @@ Cliquez sur `New Category`{.action}.
 
 ![06- Add Categorie 02](images/06-add-categories02.png){.thumbnail}
 
-Saisissez `Protected VM` dans **Name** ajouter ces valeurs `Roubaix` et `Gravelines` dans **Values** ensuite cliquez sur `Save`{.action}.
+Saisissez `Protected VM` dans **Name**, ajouter ces valeurs `Roubaix` et `Gravelines` dans **Values** ensuite cliquez sur `Save`{.action}.
 
 ![06 - Add Categorie 03](images/06-add-categories03.png){.thumbnail}
 
 La catégorie apparait dans la liste et elle est prête à être utilisé.
 
-![06 - Add Categorie 04](images/06-add-categories03.png){.thumbnail}
+![06 - Add Categorie 04](images/06-add-categories04.png){.thumbnail}
 
 <a name="addvmcat"></a>
-#### Etape 3.1.7 Ajout des machines virtuelles dans les catégories
+#### Etape 3.1.8 Ajout des machines virtuelles dans les catégories
 
 Nous allons affecter deux machines virtuelles sur le cluster de Roubaix dans une catégorie et trois machines virtuelles sur le cluster de Gravelines dans une autre catégorie.
 
@@ -463,13 +461,13 @@ Ajouter la catégorie `ProcectedVM: Gravelines`, ensuite cliquez sur `Save`{.act
 ![08 - Add Categorie to VM Gravelines 02](images/08-add-categorie-to-vm-gravelines02.png){.thumbnail}
 
 <a name="confreplsync"></a>
-#### Etape 3.1.8 Mise en place des réplications synchrones entre Roubaix et Gravelines
+#### Etape 3.1.9 Mise en place des réplications synchrones entre Roubaix et Gravelines
 
 Nous allons mettre en place la réplication synchrone entre Roubaix et Gravelines.
 
 ##### Mise en place de réplication entre Roubaix et Gravelines
 
-Au travers du menu principal de **Prism Central** cliquez sur `Protection Policies`{.action} dans le sous menu **Data Protection**
+Au travers du menu principal de **Prism Central** cliquez sur `Protection Policies`{.action} dans le sous menu **Data Protection**.
 
 ![09 - Create Protection Policy Roubaix 01](images/09-create-data-protection-roubaix01.png){.thumbnail}
 
@@ -489,7 +487,7 @@ En haut à gauche à coté de Disaster Recovery cliquez sur `Enable`{.action}.
 
 ![09 - Create Protection Policy Roubaix 05](images/09-create-data-protection-roubaix05.png){.thumbnail}
 
-Le système contrôle que tout est correct avant d'activer l'option **Disaster Recovery**
+Le système contrôle que tout est correct avant d'activer l'option **Disaster Recovery**.
 
 ![09 - Create Protection Policy Roubaix 06](images/09-create-data-protection-roubaix06.png){.thumbnail}
 
@@ -499,19 +497,19 @@ Cliquez sur `Enable`{.action} pour activer l'option **Disaster Recovery**.
 
 Cliquez à nouveau sur `Enable`{.action}. 
 
-![09 - Create Protection Policy Roubaix 07](images/09-create-data-protection-roubaix07.png){.thumbnail}
+![09 - Create Protection Policy Roubaix 07](images/09-create-data-protection-roubaix08.png){.thumbnail}
 
 L'activation de l'option **Disaster Recovery** est en cours.
 
 Garder **Local AZ**, sélectionnez le cluster dans **Recovery Location** et cliquez sur `Save`{.action}.
 
-![09 - Create Protection Policy Roubaix 08](images/09-create-data-protection-Roubaix08.png){.thumbnail}
+![09 - Create Protection Policy Roubaix 08](images/09-create-data-protection-roubaix09.png){.thumbnail}
 
 Cliquez sur `+ Add Schedule`{.action}.
 
 ![09 - Create Protection Policy Roubaix 10](images/09-create-data-protection-roubaix10.png){.thumbnail}
 
-Choisissez ces options  `Synchronous`{.action} pour **Protection Type** et  `Automatic`{.action} pour **Failure Detection Mode**, ensuite cliquez sur `Save Schedule`{.action}.
+Choisissez ces options `Synchronous`{.action} pour **Protection Type** et `Automatic`{.action} pour **Failure Detection Mode**, ensuite cliquez sur `Save Schedule`{.action}.
 
 ![09 - Create Protection Policy Roubaix 11](images/09-create-data-protection-roubaix11.png){.thumbnail}
 
@@ -521,13 +519,13 @@ Cliquez sur `Next`{.action}.
 
 Sélectionnez la catégorie `ProtectedVM : Roubaix`{.action} et cliquez sur `Add`{.action}.
 
-![09 - Create Protection Policy Roubaix 13](images/09-create-data-protection-Roubaix13.png){.thumbnail}
+![09 - Create Protection Policy Roubaix 13](images/09-create-data-protection-roubaix13.png){.thumbnail}
 
 Cliquez sur `Create`{.action}.
 
 ![09 - Create Protection Policy Roubaix 14](images/09-create-data-protection-roubaix14.png){.thumbnail}
 
-Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines, après une première réplication complête les données seront synhronisés en permanence de Roubaix vers Gravelines.
+Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines, après une première réplication complète, les données seront sychronisés en permanence de Roubaix vers Gravelines.
 
 ![09 - Create Protection Policy Roubaix 15](images/09-create-data-protection-roubaix15.png){.thumbnail}
 
@@ -539,11 +537,11 @@ Cliquez sur `Create Protection Policy`{.action}.
 
 ![10 - Create Protection Policy Gravelines 01](images/10-create-data-protection-gravelines01.png){.thumbnail}
 
-Choisissez comme nom `Gravelines-TO-Roubaix` dans **Policy Name**, gardez **Local AZ** et choisissez le cluster de Gravelines dans **Primary Location**, ensuite cliquez sur `Save`{.action}.
+Choisissez comme nom `GRAVELINES-TO-ROUBAIX` dans **Policy Name**, gardez **Local AZ** et choisissez le cluster de Gravelines dans **Primary Location**, ensuite cliquez sur `Save`{.action}.
 
 ![10 - Create Protection Policy Gravelines 02](images/10-create-data-protection-gravelines02.png){.thumbnail}
 
-Conservez **Local AZ** , sélectionnez le cluster de Roubaix et cliquez sur  sur `Save`{.action}.
+Conservez **Local AZ**, sélectionnez le cluster de Roubaix et cliquez sur  sur `Save`{.action}.
 
 ![10 - Create Protection Policy Gravelines 03](images/10-create-data-protection-gravelines03.png){.thumbnail}
 
@@ -572,21 +570,21 @@ Une deuxième stratégie de protection est en place.
 ![10 - Create Protection Policy Gravelines 09](images/10-create-data-protection-gravelines09.png){.thumbnail}
 
 <a name="addsublan"></a>
-#### Etape 3.1.9 Création de sous réseaux de test pour les plan de reprise
+#### Etape 3.1.10 Création de sous-réseaux nécessaires au plan de reprise d'activité
 
 Nous allons créer des sous-réseaux qui serviront pour les test de plan de reprises intégrés dans Nutanix
 
-Il faut un sous réseau de test par sous réseau de production sur nos clusters noux avons 3 sous réseaux de production.
+Il faut un sous réseau de test par sous réseau existant sur nos clusters, nous avons 3 sous réseaux de production.
 
-- **base** sur le VLAN 0
-- **infra** sur le VLAN 1
-- **production*** sur le VLAN 2
+- **base** sur le VLAN 0.
+- **infra** sur le VLAN 1.
+- **production*** sur le VLAN 2.
 
-Nous allons donc créer 3 sous-réseaux supplémentaires sur les cluster de gravelines et de Roubaix avec ces noms :
+Nous allons donc créer 3 sous-réseaux supplémentaires sur les clusters de Gravelines et de Roubaix avec ces noms :
 
-- **testbase** sur le VLAN 100
-- **testinfra** sur le VLAN 101
-- **production** sur le VLAN 102
+- **testbase** sur le VLAN 100.
+- **testinfra** sur le VLAN 101.
+- **production** sur le VLAN 102.
 
 Aidez-vous de ce guide pour créer des VLAN sur vos clusters Nutanix [Isoler les machines de gestion de la production](https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/).
 
@@ -595,13 +593,13 @@ six nouveaux sous-réseaux sont visibles au travers de votre interface **Prism C
 ![11 - Create Test Subnet 01](images/11-create-testsubnet01.png){.thumbnail}
 
 <a name="adddr"></a>
-#### Etape 3.1.10 Mise en place des plans de reprises d'activités
+#### Etape 3.1.11 Mise en place des plans de reprises d'activités
 
-Maintenant que les réplications et les sous réseaux de test sont en place nous allons mettre en oeuvre des plans de reprises d'activités automatisés ou manuel à la demande pour :
+Maintenant que les réplications et les sous-réseaux sont en place nous allons mettre en œuvre des plans de reprises d'activités automatisés ou manuel à la demande pour :
 
 - Migrer des machines virtuelles à chaud entre les deux clusters.
 - Tester que la réplication fonctionne correctement.
-- Redémarrer automatiquement en cas de défaillance d'un deux deux clusters de P.R.A.
+- Redémarrer automatiquement les machine virtuelles membres du P.R.A en cas de défaillance d'un deux clusters. 
 
 ##### Création du plan de reprise d'activité pour le cluster de Roubaix
 
@@ -619,17 +617,17 @@ Normalement le plan de de reprise doit être activé comme indiqué par le messa
 
 Cliquez sur `Create New Recovery Plan`{.action}.
 
-![12 - Create Recovery Plan Roubaix 04](images/12-create-Roubaix-recovery-plan04.png){.thumbnail}
+![12 - Create Recovery Plan Roubaix 04](images/12-create-roubaix-recovery-plan04.png){.thumbnail}
 
 Choisissez ces informations :
 
 * **Recovery Plan Name** : `Recovery VM from ROUBAIX to GRAVELINES`.
 
-* **Primary Location**: `Local AZ`.
-* **Primary Cluster**: `cluster de Roubaix`.
+* **Primary Location** : `Local AZ`.
+* **Primary Cluster** : `cluster de Roubaix`.
 
-* **Recovery Location**: `Local AZ`.
-* **Recovery Cluster**: `cluster de Gravelines`.
+* **Recovery Location** : `Local AZ`.
+* **Recovery Cluster** : `cluster de Gravelines`.
 
 * **Failure Execution Mode** : `Automatic`.
 * **Execute failover after disconnectivity of** : `30 seconds`.
@@ -662,7 +660,7 @@ Cliquez sur `Proceed`{.action}.
 
 ![12 - Create Recovery Plan Roubaix 11](images/12-create-roubaix-recovery-plan11.png){.thumbnail}
 
-Choisissez les VLAN qui seront utilisés lors du P.R.A comme ceci
+Choisissez les VLAN qui seront utilisés lors du P.R.A comme ceci :
 
 * **Primary**
     + **Production** : `production`
@@ -729,7 +727,7 @@ Choisissez ces informations :
 
 Ensuite cliquez sur `+ Add Network Mapping`{.action}.
 
-![13 - Create Recovery Plan Gravelines 07](13-create-gravelines-recovery-plan07.png){.thumbnail}
+![13 - Create Recovery Plan Gravelines 07](images/13-create-gravelines-recovery-plan07.png){.thumbnail}
 
 Choisissez ces informations :
 
@@ -758,7 +756,7 @@ Ensuite cliquez sur `Done`{.action}.
 ![13 - Create Recovery Plan Gravelines 09](images/13-create-gravelines-recovery-plan09.png){.thumbnail}
 
 > [!primary]
-> 3 réseaux ont été rajoutés dans ce plan de reprise d'activité pour la machine virtuelle Gateway qui utilise ces trois réseaux.
+> 3 réseaux ont été rajoutés dans ce plan de reprise d'activité pcar la machine virtuelle Gateway utilise ces trois réseaux.
 >
 
 Les deux plans de reprises d'activités sont en productions.
@@ -770,7 +768,7 @@ Les deux plans de reprises d'activités sont en productions.
 ### Etape 3.2 Validation du plan de reprise d'activité 
 
 <a name="ctrldr"></a>
-#### Etape 3.2.1  Contrôle du plan de reprise d'activité
+#### Etape 3.2.1 Contrôle du plan de reprise d'activité
 
 ##### Utilisation de l'option validation dans le plan de reprise d'activité
 
@@ -794,9 +792,9 @@ Le plan de de reprise est validé, cliquez sur `Close`{.action}
 
 ##### Test du plan de reprise d'activité
 
-Il est possible de tester le plan de reprise d'activité sans impacter la production, lorsque l'on active un test des machines virtuelles de tests sont activés sur le cluster de secours dans les VLAN de test.
+Il est possible de tester le plan de reprise d'activité sans impacter la production. Le test crée des machines virtuelles avec des nomz différents sur le cluster secondaire dans les VLAN créé précédemment. 
 
-Cliquez sur `Test`{.action}
+Cliquez sur `Test`{.action}.
 
 ![14 - Validate test recovery plan 05](images/14-validate-test-recovery-plan05.png){.thumbnail}
 
@@ -805,10 +803,10 @@ Sélectionnez le cluster de Roubaix pour **Entity Failing Over From** et le clus
 ![14 - Validate test recovery plan 06](images/14-validate-test-recovery-plan06.png){.thumbnail}
 
 > [!primary]
-> Assurez-vous d'avoir les bonnes licences, Si vous avec choisi un cluster avec des licences chez OVHcloud il est nécessaire d'avoir souscrit le pack Advanced sur le cluster de Roubaix et Gravelines.
+> Assurez-vous d'avoir les bonnes licences, Si vous avez choisi un cluster avec des licences chez OVHcloud il est nécessaire d'avoir souscrit le pack **Nutanix Advanced** sur le cluster de Roubaix et Gravelines.
 >
 
-Cliquez sur `Execute Anyway`{.action}
+Cliquez sur `Execute Anyway`{.action}.
 
 ![14 - Validate test recovery plan 07](images/14-validate-test-recovery-plan07.png){.thumbnail}
 
@@ -816,7 +814,7 @@ Allez dans le tableau de bord des VM dans **Prism Central** et vous verrez les m
 
 ![14 - Validate test recovery plan 08](images/14-validate-test-recovery-plan08.png){.thumbnail}
 
-Revenez sur votre plan de reprise et cliquez sur `Clean-up test Entities`{.action}
+Revenez sur votre plan de reprise et cliquez sur `Clean-up test Entities`{.action}. pour supprimer les machines virtuelles de test.
 
 ![14 - Validate test recovery plan 09](images/14-validate-test-recovery-plan09.png){.thumbnail}
 
@@ -827,7 +825,7 @@ cliquez sur `Clean Up`{.action}
 <a name="livemigration"></a>
 #### Etape 3.2.2 Live migration des machines virtuelles de Roubaix sur Gravelines
 
-Si l'infrastructure est entirèrement opérationnelle il est possible de faire des migrations à chaud sans coupure des machines virtuelles qui sont sur un cluster vers l'autre cluster du plan de reprise.
+Si l'infrastructure est entièrement opérationnelle il est possible de faire des migrations à chaud sans coupure des machines virtuelles qui sont sur un cluster vers l'autre cluster du plan de reprise.
 
 Allez sur une machine virtuelle qui se trouve à Roubaix et qui fait partie du plan de reprise nous allons lancer un ping vers le serveur DNS OVHcloud **213.186.33.99**.
 
@@ -864,7 +862,7 @@ Vous pouvez revenir sur la machine virtuelle et constater que le ping continue �
 <a name="aftermigration"></a>
 #### Etape 3.2.3 Opérations à effectuer après une migration à chaud
 
-Après une migration à chaud il est nécessaire d'inverser la réplication et le fonctionnement du plan de reprise d'activité
+Après une migration il est nécessaire d'inverser la réplication et le fonctionnement du plan de reprise d'activité.
 
 
 ##### Inversion du de la réplication
@@ -897,7 +895,7 @@ Cliquez sur `Update Location`{.action}.
 
 ![16 - invert replication after failover 07](images/16-invert-replication-after-failover07.png){.thumbnail}
 
-Positionnez la souris en dessous du nom du cluster de Graveline dans **Recovery Location** et cliquez sur `Edit`{.action}.
+Positionnez la souris en dessous du nom du cluster de Gravelines dans **Recovery Location** et cliquez sur `Edit`{.action}.
 
 ![16 - invert replication after failover 08](images/16-invert-replication-after-failover08.png){.thumbnail}
 
@@ -929,7 +927,7 @@ Au travers du menu principal de **Prism Central** cliquez sur `Recovery Plans`{.
 
 ![17 - invert recovery plan after failover 01](images/17-invert-recovery-plan-after-failover01.png){.thumbnail}
 
-Cliquez sur Cliquez sur `Recovery VM from Roubaix to Gravelines`{.action}.
+Cliquez sur `Recovery VM from Roubaix to Gravelines`{.action}.
 
 ![17 - invert recovery plan after failover 02](images/17-invert-recovery-plan-after-failover02.png){.thumbnail}
 
@@ -949,7 +947,7 @@ Cliquez sur `Next`{.action}.
 
 ![17 - invert recovery plan after failover 06](images/17-invert-recovery-plan-after-failover06.png){.thumbnail}
 
-Choisissez ces informations:
+Choisissez ces informations :
 
 * **Primary**
     + **Production** : `production`
@@ -964,15 +962,17 @@ Et cliquez sur `Done`{.action}.
 
 > [!primary]
 > Les réplications et le plan de reprise ont été inversés suite à un migration des machines virtuelles de Roubaix vers Gravelines.
+>
 > Pour revenir à la situation d'origine il faut effectuer à nouveau une migration à chaud et inverser la réplication et le plan de reprise d'activité.
-> Il est possible d'utiliser cette partie du guide en cas de déclenchement du plan de reprise d'activité en raison d'une indisponibilité d'un cluster.
+> Il est possible d'utiliser cette partie du guide en cas de déclenchement du plan de reprise d'activité en raison de l'indisponibilité d'un cluster.
+>
 
 <a name="epmcr"></a>
-#### Etape 3.2.4 Execution du plan de reprise d'activité en condition réélle
+#### Etape 3.2.4 Exécution du plan de reprise d'activité en condition réelle.
 
 Nous allons simuler une perte totale de connexion à Gravelines où  se trouve trois machines virtuelles dans le plan de reprise d'activité (la passerelle Internet et deux autres machines virtuelles).
 
-connectez-vous en ligne de commande et executer un ping permanent vers l'adresse publique de la passerelle.
+Connectez-vous en ligne de commande et exécuter un ping permanent vers l'adresse publique de la passerelle.
 
 ```bash
 ## Ping à partir d'un console linux distante
@@ -983,7 +983,7 @@ Reply from xx.xx.xx.xx: bytes=32 time=23ms TTL=58
 Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
 ```
 
-Laisser la commande ping tourner permanence et retournez dans **Prism Central**
+Laisser la commande ping tourner en permanence et retournez dans **Prism Central**
 
 Au travers du menu principal cliquez sur `VMs`{.action}. dans le sous-menu **Compute & Storage** 
 
@@ -993,10 +993,10 @@ Les trois machines virtuelles du plan de reprise d'activité sont fonctionnelles
 
 ![18 - fail on Gravelines 02](images/18-fail-on-gravelines02.png){.thumbnail}
 
-Une deconnexion des trois noeuds du cluster de Gravelines a été faites.
+Une déconnexion des trois noeuds du cluster de Gravelines va être faites.
 
 > [!primary]
-> La deconnexion est effectuée en supprimant des vRack les 3 noeuds du cluster de Gravelines.
+> La déconnexion est effectuée en supprimant du vRack les 3 nœuds du cluster de Gravelines.
 >
 
 Revenez sur la console qui exécute le ping vers la passerelle, vous allez constater une perte de connexion.
@@ -1018,10 +1018,11 @@ Cliquez en haut à droite sur les `tâches`{.action} dans **Prism Central pour a
 ![18 - fail on Gravelines 03](images/18-fail-on-gravelines03.png){.thumbnail}
 
 > [!warning]
-> Lors d'un incident sur la totalité d'un cluster (Nombres de noeud insuffisants pour fonctionner, ou une coupure réseau) les machines virtuelles qui font partie du P.R.A et qui sont sur ce cluster vont être démarré sur l'autre cluster. 
+> Lors d'un incident sur la totalité d'un cluster (Nombres de nœud insuffisants pour fonctionner, ou une coupure réseau) les machines virtuelles qui font partie du P.R.A et qui sont sur ce cluster vont être démarré sur l'autre cluster. 
 > Le RPO est de 0 (Recovery Point Objective) ce qui signifie qu'aucune perte de données ne sera à déplorer.
-> Par contre les machines virtuelles vont mettre un certain temps à redémarrer sur l'autre cluster dans ce guide 3 machines virtuelles sont redemarrés sur le cluster distant , 4 minutes sont necessaire le démarrage des machines virtuelles. Ce temps sera mesurable en effectuant un test sur le plan de reprise d'activité.
-
+>
+> Par contre les machines virtuelles vont mettre un certain temps à redémarrer sur l'autre cluster dans ce guide 3 machines virtuelles sont redémarrées sur le cluster distant, 4 minutes sont nécessaire pour le démarrage des machines virtuelles. Ce temps sera mesurable en effectuant un test sur le plan de reprise d'activité.
+>
 
 Revenez sur la console texte et vous allez voir que le ping fonctionne à nouveau.
 
@@ -1035,34 +1036,29 @@ Reply from xx.xx.xx.xx: bytes=32 time=19ms TTL=58
 Reply from xx.xx.xx.xx: bytes=32 time=19ms TTL=58
 ```
 
-Allez sur **Prism Central** dans la gestion des machines virtuelles, vous verrez les trois machines virtuelles du plan de reprise en double, elles sont notés comme démarrées mais réellement ce ne sont que celles qui ont redemarrés sur Roubaix qui fonctionnent.
+Allez sur **Prism Central** dans la gestion des machines virtuelles, vous verrez les trois machines virtuelles du plan de reprise en double, elles sont notées comme démarrées mais réellement ce ne sont que celles qui ont redémarrés sur Roubaix qui fonctionnent.
 
 ![18 - fail on Gravelines 04](images/18-fail-on-gravelines04.png){.thumbnail}
 
-Nous allons reconnecter les trois noeuds dans le vRack pour revenir en mode normal.
+Nous allons reconnecter les trois nœuds dans le vRack pour revenir en mode normal.
 
-Après le retour à la normale les machines virtuelles qui se trouvent sur le cluster d'origine sont toujours visibles mais éteinte.
+Après le retour à la normale les machines virtuelles qui se trouvent sur le cluster d'origine sont toujours visibles mais éteinte. Vous pouvez les supprimer ou les conserver pour en cas de problèmes sur les machines virtuelles qui ont redémarré.
 
 ![18 - fail on Gravelines 05](images/18-fail-on-gravelines05.png){.thumbnail}
 
-Il est possible de voir tout l'historique de **Disaster Recovery** dans **Prism Central**.
+Il est possible de voir l'historique de **Disaster Recovery** dans **Prism Central**.
 
 Cliquez sur `l'engrenage`{.action} en haut à droite pour aller dans la configuration de **Prism Central**.
 
 ![19 - show Witness information 01](images/19-show-witness-information01.png){.thumbnail}
 
-Cliquez à gauche sur `Witness`{.action} et ciiquez sur `View Usage History`{.action}.
+Cliquez à gauche sur `Witness`{.action} et cliquez sur `View Usage History`{.action}.
 
 ![19 - show Witness information 02](images/19-show-witness-information02.png){.thumbnail}
 
-La liste des évenemments survenus apparait, cliquez sur `Close pour fermer`{.action}.
+La liste des événemments survenus apparait, cliquez sur `Close pour fermer`{.action}.
 
 ![19 - show Witness information 03](images/19-show-witness-information03.png){.thumbnail}
-
-
-
-
-
 
 
 <a name="gofurther"></a>
