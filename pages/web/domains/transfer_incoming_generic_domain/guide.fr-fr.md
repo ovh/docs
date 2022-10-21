@@ -6,7 +6,7 @@ section: Transfert
 order: 01
 ---
 
-**Dernière mise à jour le 19/10/2022**
+**Dernière mise à jour le 21/10/2022**
 
 ## Objectif
 
@@ -127,6 +127,16 @@ Une fois la commande et le code de transfert validés, le bureau d'enregistremen
 Si un refus est émis par le bureau d'enregistrement actuel, contactez le pour savoir pourquoi il l'a refusée.
 
 Le processus de transfert peut être redémarré à partir de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Sélectionnez `Web Cloud`{.action} et accédez à la section `Noms de domaine`{.action}, puis cliquez sur `Opérations en cours`{.action}.
+
+> [!Primary]
+>
+> Le transfert d'un domaine avec l'extension en ".fr" diffère légèrement du processus décrit ci-dessus. Vous devez déverrouiller votre domaine et récupérer son code de transfert auprès de votre bureau d'enregistrement actuel.
+> Réalisez ensuite la commande de transfert et renseignez votre code de transfert comme décrit précédemment dans ce guide.
+>
+> Une fois le transfert initié, le délai total du **transfert d'un domaine en ".fr" prend minimum 8 jours incompressibles.**
+>
+> En cas d'**opposition au transfert par le bureau d'enregistrement actuel**, le transfert **s'effectuera tout de même** mais il prendra **minimum 22 jours incompressibles** pour être finalisé.
+>
 
 ### Étape 5 : gérer son nom de domaine avec OVHcloud
 
