@@ -37,7 +37,7 @@ order: 06
 &emsp;&emsp;[Etape 3.2.1 Contrôle du plan de reprise d'activité](#ctrldr)<br />
 &emsp;&emsp;[Etape 3.2.2 Live migration des machines virtuelles de Roubaix sur Gravelines](#livemigration)<br />
 &emsp;&emsp;[Etape 3.2.3 Opérations à effectuer après une migration](#aftermigration)<br />
-&emsp;&emsp;[Etape 3.2.4 Exécution du plan de reprise d'activité en condition réélle](#epmcr)<br />
+&emsp;&emsp;[Etape 3.2.4 Exécution du plan de reprise d'activité en condition réelle](#epmcr)<br />
 [Etape 3 Aller plus loin](#gofurther)<br />
 
 
@@ -217,7 +217,7 @@ ncli cluster info
 
 Notez la valeur de **Cluster UUID* qui doit avoir cette forme **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**
 
-Deconnectez-vous de **Prism Element** et connectez-vous en SSH sur la machine virtuelle **Prism Central** de Gravelines.
+Déconnectez-vous de **Prism Element** et connectez-vous en SSH sur la machine virtuelle **Prism Central** de Gravelines.
 
 ```bash
 ssh nutanix@adresse_ip_privee_prism_central_Gravelines
@@ -444,11 +444,11 @@ Au travers du menu principal de **Prism Central** cliquez sur `Vms`{.action} dan
 
 ![07 - Add Categorie to VM Roubaix 01](images/07-add-categorie-to-vm-roubaix01.png){.thumbnail}
 
-Sélectionnez à gauche `les deux machines virtuelles`{.action} de Roubaix, Ensuite au travers du menu **Actions** cliquez sur `Manage Categories`{.action}
+Sélectionnez à gauche `les deux machines virtuelles`{.action} de Roubaix, Ensuite au travers du menu **Actions** cliquez sur `Manage Categories`{.action}.
 
 ![07 - Add Categorie to VM Roubaix 02](images/07-add-categorie-to-vm-roubaix02.png){.thumbnail}
 
-Ajouter la catégorie `ProcectedVM: Roubaix`, ensuite cliquez sur `Save`{.action}
+Ajouter la catégorie `ProcectedVM: Roubaix`, ensuite cliquez sur `Save`{.action}.
 
 ![07 - Add Categorie to VM Roubaix 03](images/07-add-categorie-to-vm-roubaix03.png){.thumbnail}
 
@@ -471,7 +471,7 @@ Au travers du menu principal de **Prism Central** cliquez sur `Protection Polici
 
 ![09 - Create Protection Policy Roubaix 01](images/09-create-data-protection-roubaix01.png){.thumbnail}
 
-Cliquez sur `Create Protection Policy`{.action}
+Cliquez sur `Create Protection Policy`{.action}.
 
 ![09 - Create Protection Policy Roubaix 02](images/09-create-data-protection-roubaix02.png){.thumbnail}
 
