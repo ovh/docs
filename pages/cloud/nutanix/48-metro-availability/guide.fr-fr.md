@@ -22,7 +22,7 @@ order: 06
 [Etape 2 Présentation](#presentation)<br />
 [Etape 3 En Pratique](#enpratique)<br />
 &ensp;&ensp;[Etape 3.1 Configuration](#configuration)<br />
-&emsp;&emsp;[Etape 3.1.1 Inter-connexion des trois clusters](#dedupinstall)<br />
+&emsp;&emsp;[Etape 3.1.1 Inter-connexion des trois clusters](#connectl)<br />
 &emsp;&emsp;[Etape 3.1.1 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)<br />
 &emsp;&emsp;[Etape 3.1.2 Enregistrement des deux clusters au Prism Central se trouvant sur le site d'Erith](#enregpc)<br />
 &emsp;&emsp;[Etape 3.1.3 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)<br />
