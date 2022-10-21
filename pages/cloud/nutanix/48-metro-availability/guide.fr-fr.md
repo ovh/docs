@@ -6,7 +6,7 @@ section: Plan de Reprise d'Activité
 order: 06
 ---
 
-**Dernière mise à jour le 20/10/2022**
+**Dernière mise à jour le 21/10/2022**
 
 ## Objectif
 
@@ -923,19 +923,34 @@ Et cliquez sur `Done`{.action}.
 
 Nous allons simuler une perte totale de connexion à Gravelines où  se trouve trois machines virtuelles dans le plan de reprise, la passerelle Internet et deux autres machines sous Windows.
 
-Nous allons faire un ping sur la passserelle à Gravelines avant le crash
+connectez-vous en ligne de commande et executer un ping permanent vers l'adresse publique de la passerelle.
 
 ```bash
+## Ping à partir d'un console linux distante
 ping xx.xx.xx.xx
 Reply from xx.xx.xx.xx: bytes=32 time=21ms TTL=58
 Reply from xx.xx.xx.xx: bytes=32 time=21ms TTL=58
 Reply from xx.xx.xx.xx: bytes=32 time=23ms TTL=58
 Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
-Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
-Reply from xx.xx.xx.xx: bytes=32 time=21ms TTL=58
-Reply from xx.xx.xx.xx: bytes=32 time=21ms TTL=58
-Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
 ```
+
+Laisser la commande ping tourner permanence et nous allons retourner dans **Prism Central**
+
+Au travers du menu principal cliquez sur `VMs`{.action}. dans le sous-menu **Compute & Storage** 
+
+![18 - fail on gravelines 01](images/18-fail-on-gravelines01.png){.thumbnail}
+
+Les trois machines virtuelles du plan de reprise d'activité sont fonctionnelles.
+
+![18 - fail on gravelines 02](images/18-fail-on-gravelines02.png){.thumbnail}
+
+Une deconnexion des trois noeuds du cluster de Gravelines a été faites.
+
+> [!primary]
+> La deconnexion est effectuée en supprimant des vRack les 3 noeuds du cluster de Gravelines.
+>
+
+Revenez sur la console qui exécute le ping vers la passerelle, vous allez constater une perte de connexion.
 
 ```bash
 Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
@@ -943,22 +958,23 @@ Reply from xx.xx.xx.xx: bytes=32 time=21ms TTL=58
 Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
 Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
 Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
-Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
-Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
-Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
-Reply from xx.xx.xx.xx: bytes=32 time=19ms TTL=58
-Reply from xx.xx.xx.xx: bytes=32 time=19ms TTL=58
-Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
-Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
 Request timed out.
 Request timed out.
 Request timed out.
 Request timed out.
 ```
+
+Cliquez en haut à droite sur les `tâches`{.action} dans **Prism Central pour afficher le lancement des tâches et notamment **Recovery plan execute**.
+
+![18 - fail on gravelines 03](images/18-fail-on-gravelines03.png){.thumbnail}
+
+> [!warning]
+> Lors d'un incident sur la totalité d'un cluster (Nombres de noeud insuffisants pour fonctionner, ou une coupure réseau) les machines virtuelles qui font partie du P.R.A et qui sont sur ce cluster vont être démarré sur l'autre cluster. 
+> Le RPO est de 0 (Recovery Point Objective) ce qui signifie qu'aucune perte de données ne sera à déplorer.
+> Par contre les machines virtuelles vont mettre un certain temps à redemarrer sur l'autre cluster dans ce guide 3 machines virtuelles sont redemarrés sur le cluster distant , 4 minutes ont été necessaire pour avoir mes trois machine virtuelles démarrées. Ce temps sera mesurable en effectuant un test sur le plan de reprise d'activité.
+
+
+Revenez sur la console texte et vous allez voir que le ping fonctionne à nouveau.
 
 ```bash
 Request timed out.
@@ -970,7 +986,13 @@ Reply from xx.xx.xx.xx: bytes=32 time=19ms TTL=58
 Reply from xx.xx.xx.xx: bytes=32 time=19ms TTL=58
 ```
 
+Allez sur **Prism Central** dans la gestion des machines virtuelles, vous verrez les trois machines virtuelles du plan de reprise en double, elles sont notés comme démarrées mais réellement ce ne sont que celles qui ont redemarrés sur Roubaix qui fonctionnent.
 
+![18 - fail on gravelines 04](images/18-fail-on-gravelines04.png){.thumbnail}
+
+Nous allons reconnecter les trois noeuds dans le vRack pour revenir en mode normal.
+
+Après le retour à la normale les machines virtuelles qui se trouvent sur le cluster d'origine sont toujours visibles mais éteinte.
 
 
 
