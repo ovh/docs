@@ -6,7 +6,7 @@ section: Security
 order: 02
 ---
 
-**Last updated 31st January 2022**
+**Last updated 18th October 2022**
 
 ## Objective
 
@@ -112,7 +112,7 @@ To allow HTTP Web traffic, enter the following command:
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 ```
 
-To allow only inbound SSH (Secure Shell) traffic, enter the following:
+To allow only inbound SSH (Secure Shell) traffic, enter the following (note that we use the default SSH port number 22. If your port number is different, make sure to adjust the commands accordingly):
 
 ```bash
 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT

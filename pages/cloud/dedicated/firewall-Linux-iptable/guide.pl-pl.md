@@ -10,7 +10,7 @@ order: 01
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 31-01-2022**
+**Ostatnia aktualizacja z dnia 18-10-2022**
 
 ## Wprowadzenie
 
@@ -117,7 +117,7 @@ Aby zezwolić na ruch sieciowy HTTP, wprowadź następujące polecenie:
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 ```
 
-Aby zezwolić tylko na ruch przychodzący przez SSH (Secure Shell), wprowadź:
+Aby zezwolić tylko na ruch przychodzący przez SSH (Secure Shell), wprowadź (zauważ, że używamy portu 22, który jest domyślnym numerem portu SSH. Jeśli Twój numer portu jest inny, pamiętaj, aby odpowiednio dostosować poniższe polecenia):
 
 ```bash
 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
