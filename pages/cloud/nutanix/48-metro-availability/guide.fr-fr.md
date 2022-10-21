@@ -22,7 +22,7 @@ order: 06
 [Etape 2 Présentation](#presentation)<br />
 [Etape 3 En Pratique](#enpratique)<br />
 &ensp;&ensp;[Etape 3.1 Configuration](#configuration)<br />
-&emsp;&emsp;[Etape 3.1.1 Inter-connexion des trois clusters](#connectl)<br />
+&emsp;&emsp;[Etape 3.1.1 Inter-connexion des trois clusters](#connectcl)<br />
 &emsp;&emsp;[Etape 3.1.1 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)<br />
 &emsp;&emsp;[Etape 3.1.2 Enregistrement des deux clusters au Prism Central se trouvant sur le site d'Erith](#enregpc)<br />
 &emsp;&emsp;[Etape 3.1.3 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)<br />
@@ -356,7 +356,7 @@ Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à 
 ![03 - Add iscsi address Roubaix 03](images/03-add-iscsi-address-roubaix03.png){.thumbnail}
 
 <a name="addsc"></a>
-#### Création de deux **Storage Containers** sur les clusters de Roubaix et de Gravelines
+#### Etape 3.1.4 Création de deux **Storage Containers** sur les clusters de Roubaix et de Gravelines
 
 Nous allons créer deux **Storage Containers** portant le même nom à Roubaix et Gravelines. 
  
