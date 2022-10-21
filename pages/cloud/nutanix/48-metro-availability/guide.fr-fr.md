@@ -1045,6 +1045,25 @@ Après le retour à la normale les machines virtuelles qui se trouvent sur le cl
 
 ![18 - fail on Gravelines 05](images/18-fail-on-gravelines05.png){.thumbnail}
 
+Il est possible de voir tout l'historique de **Disaster Recovery** dans **Prism Central**.
+
+Cliquez sur `l'engrenage`{.action} en haut à droite pour aller dans la configuration de **Prism Central**.
+
+![19 - show Witness information 01](images/19-show-witness-information01.png){.thumbnail}
+
+Cliquez à gauche sur `Witness`{.action} et ciiquez sur `View Usage History`{.action}.
+
+![19 - show Witness information 02](images/19-show-witness-information02.png){.thumbnail}
+
+La liste des évenemments survenus apparait, cliquez sur `Close pour fermer`{.action}.
+
+![19 - show Witness information 03](images/19-show-witness-information03.png){.thumbnail}
+
+
+
+
+
+
 
 <a name="gofurther"></a>
 ## Aller plus loin
