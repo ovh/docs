@@ -21,28 +21,27 @@ order: 06
 [Etape 1 Prérequis](#prerequis)<br /> 
 [Etape 2 Présentation](#presentation)<br />
 [Etape 3 En Pratique](#enpratique)<br />
-&ensp;&ensp;[Etape 3.1 Interconnexion des trois clusters](#dedupinstall)<br />
-&ensp;&ensp;[Etape 3.2 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)<br />
-&ensp;&ensp;[Etape 3.3 Enregistrement des deux clusters au Prism Central se trouvant sur le site d'Erith](#enregpc)<br />
-&ensp;&ensp;[Etape 3.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)<br />
-&ensp;&ensp;[Etape 3.5 Création de deux Storage Containers sur les clusters de Roubaix et de Gravelines](#addsc)<br />
-&ensp;&ensp;[Etape 3.6 Déplacement des machines virtuelles dans le Storage Container](#deplst)<br />
-&ensp;&ensp;[Etape 3.7 Création d'un catégorie qui servira lors de la mise en place du P.R.A](#deplst)<br />
-&ensp;&ensp;[Etape 3.8 Ajout des machines virtuelles dans les catégories](#deplst)<br />
-&ensp;&ensp;[Etape 3.9 Mise en place des réplications synchrones entre Roubaix et Gravelines](#deplst)<br />
-&ensp;&ensp;[Etape 3.10 Création de sous réseaux de test pour les plans de reprise d'activité](#deplst)<br />
-&ensp;&ensp;[Etape 3.11 Mise en place des plans de reprises d'activités](#deplst)<br />
-&ensp;&ensp;[Etape 3.12 Validation et test d'un plan de reprise d'activité](#deplst)<br />
+&ensp;&ensp;[Etape 3.1 Configuration](#configuration)<br />
+&emsp;&emsp;[Etape 3.1.1 Interconnexion des trois clusters](#dedupinstall)<br />
+&emsp;&emsp;[Etape 3.1.1 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)<br />
+&emsp;&emsp;[Etape 3.1.2 Enregistrement des deux clusters au Prism Central se trouvant sur le site d'Erith](#enregpc)<br />
+&emsp;&emsp;[Etape 3.1.3 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)<br />
+&emsp;&emsp;[Etape 3.1.4 Création de deux Storage Containers sur les clusters de Roubaix et de Gravelines](#addsc)<br />
+&emsp;&emsp;[Etape 3.1.5 Déplacement des machines virtuelles dans le Storage Container](#deplst)<br />
+&emsp;&emsp;[Etape 3.1.6 Création d'un catégorie qui servira lors de la mise en place du P.R.A](#creacat)<br />
+&emsp;&emsp;[Etape 3.1.7 Ajout des machines virtuelles dans les catégories](#addvmcat)<br />
+&emsp;&emsp;[Etape 3.1.8 Mise en place des réplications synchrones entre Roubaix et Gravelines](#confreplsync)<br />
+&emsp;&emsp;[Etape 3.1.9 Création de sous réseaux de test pour les plans de reprise d'activité](#addsublan)<br />
+&emsp;&emsp;[Etape 3.1.10 Mise en place des plans de reprises d'activités](#adddr)<br />
+&ensp;&ensp;[Etape 3.2 Validation du plan de reprise d'activité](#validation)<br />
+&emsp;&emsp;[Etape 3.2.1 Contrôle du plan de reprise d'activité](#ctrldr)<br />
+&emsp;&emsp;[Etape 3.2.2 Live migration des machines virtuelles de Roubaix sur Gravelines](#livemigration)<br />
+&emsp;&emsp;[Etape 3.2.3 Opérations à effectuer après une migration](#aftermigration)<br />
+&emsp;&emsp;[Etape 3.2.4 Execution du plan de reprise d'activité en condition réélle](#deplst)<br />
 
 
 
-
-Ajout des machines virtuelles dans les catégories
-Mise en place des réplications synchrones entre Roubaix et Gravelines
-Création de sous réseaux de test pour les plans de reprise d'activité
-Mise en place des plans de reprises d'activités
-Validation et test d'un plan de reprise d'activité
-
+<a name="prerequis"></a>
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
@@ -114,6 +113,8 @@ Le informations techniques utilisés par notre guide sont les suivantes :
 Une partie du  paramètrage est faite à partir des interfaces WEB **Prism Central** & **Prism Element**, une autre à partir de l'espace client OVHcloud et d'autres en ligne de commande sur les machines virtuelles **Prism Central** ou **Prism Element**. 
 
 En plus de ce guide vous pouvez vous appuyer sur ces documentations [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) et [Outils avancées](https://docs.ovh.com/fr/nutanix/advanced-tools/) pour vous aider.
+
+
 
 
 ### Interconnexion des trois clusters
@@ -775,7 +776,7 @@ Le plan de de reprise est validé, cliquez sur `Close`{.action}
 
 ![14 - Validate test recovery plan 04](images/14-validate-test-recovery-plan04.png){.thumbnail}
 
-### Test du plan de reprise d'activité
+#### Test du plan de reprise d'activité
 
 Il est possible de tester le plan de reprise d'activité sans impacter la production, lorsque l'on active un test des machines virtuelles de tests sont activés sur le cluster de secours dans les VLAN de test.
 
