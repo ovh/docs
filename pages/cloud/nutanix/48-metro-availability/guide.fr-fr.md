@@ -41,7 +41,7 @@ order: 06
 [Etape 3 Aller plus loin](#gofurther)<br />
 
 
-<a name="Etape 1 prerequis"></a> 
+<a name="prerequis"></a> 
 ## Etape 1 Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
@@ -50,7 +50,7 @@ order: 06
 - Avoir les deux clusters qui seront répliqués avec un latence de moins de 5ms.
 - Avoir les licences requises sur tous vos clusters.
 
-<a name="Etape 2 presentation"></a>
+<a name="presentation"></a>
 ## Etape 2 Présentation
 
 Nous allons mettre en place un plan de reprise d'activité bi-directionnel entre deux clusters avec ce matériel :
