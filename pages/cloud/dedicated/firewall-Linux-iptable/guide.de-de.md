@@ -116,7 +116,7 @@ Um HTTP-Web-Traffic zu erlauben geben Sie folgenden Befehl ein:
 sudo iptables -A INPUT -p tcp -—dport 80 -j ACCEPT
 ```
 
-Um eingehenden SSH-Traffic (Secure Shell) zu erlauben geben Sie Folgendes ein (beachten Sie, dass wir den Anschluss 22 verwenden, der die Standardnummer des SSH-Anschlusses ist. Wenn Ihre Portnummer anders lautet, achten Sie darauf, die folgenden Befehle entsprechend anzupassen):
+Um eingehenden SSH-Traffic (Secure Shell) zu erlauben, geben Sie Folgendes ein. (Beachten Sie dabei, dass der Standardport 22 im Beispiel verwendet wird. Wenn Sie eine andere Portnummer nutzen müssen die Befehle entsprechend angepasst werden.)
 
 ```bash
 sudo iptables -A INPUT -p tcp -—dport 22 -j ACCEPT
