@@ -26,7 +26,7 @@ order: 06
 &emsp;&emsp;[Etape 3.1.2 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)<br />
 &emsp;&emsp;[Etape 3.1.3 Enregistrement des deux clusters sur le **Prism Central** d'Erith](#enregpc)<br />
 &emsp;&emsp;[Etape 3.1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)<br />
-&emsp;&emsp;[Etape 3.1.5 Création de deux Storage Containers sur les clusters de Roubaix et de Gravelines](#addsc)<br />
+&emsp;&emsp;[Etape 3.1.5 Création de deux Storage Containers](#addsc)<br />
 &emsp;&emsp;[Etape 3.1.6 Déplacement des machines virtuelles dans le Storage Container](#deplst)<br />
 &emsp;&emsp;[Etape 3.1.7 Création d'une catégorie qui servira lors de la mise en place du P.R.A](#creacat)<br />
 &emsp;&emsp;[Etape 3.1.8 Ajout des machines virtuelles dans les catégories](#addvmcat)<br />
@@ -140,7 +140,7 @@ Les trois clusters sont pour l'instant accessibles à partir des l'URL **Prism C
 <a name="supprpc"></a>
 #### Etape 3.1.2 Suppression des enregistrements **Prism Central** pour les clusters de Roubaix et Gravelines.
 
-Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il faut un témoin de cluster qui assure une automatisation des tâches de reprise d'activité en cas d'indisponibilité d'un des clusters. Le témoin de cluster sous **AHV** est une machine virtuelle **Prism Central**
+Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il faut un témoin de cluster qui assure l'automatisation des tâches de reprise d'activité en cas d'indisponibilité d'un des clusters. Le témoin de cluster est une machine virtuelle **Prism Central**.
 
 Les trois clusters doivent être connectés à une seule machine virtuelle **Prism Central**.
 
@@ -314,10 +314,15 @@ A partir d'un navigateur WEB connectez-vous sur l'URL de Prism-Central à Erith,
 
 ![02 - Prism Central Dashboard 01](images/02-show-prismcentral01.png){.thumbnail}
 
-Sélectionnez les machines virtuelles de **Prism Central** de Gravelines et Roubaix, cliquez sur `Guest Shutdown`{.action} à partir du menu `Actions`{.action}
+Les machines virtuelles **Prism Central** de Gravelines et Roubaix ne servent plus, vous pouvez les arrêter.
 
-![02 - Shutdow Prism Central Gravelines Roubaix ](images/02-shutdown-prism-central01.png){.thumbnail}
+Au travers du menu principal cliquez sur `Vms`{.action} dans le sous-menu **Compute & Storage**.
 
+![02b - Shutdow Prism Central Gravelines Roubaix 01](images/02-shutdown-prism-central02.png){.thumbnail}
+
+Sélectionnez les machines virtuelles de **Prism Central** de Gravelines et Roubaix etcliquez sur `Guest Shutdown`{.action} à partir du menu `Actions`{.action}
+
+![02b - Shutdow Prism Central Gravelines Roubaix 02](images/02-shutdown-prism-central02.png){.thumbnail}
 
 
 <a name="paramiscsi"></a>
@@ -360,9 +365,9 @@ Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à 
 ![03 - Add iscsi address Roubaix 03](images/03-add-iscsi-address-roubaix03.png){.thumbnail}
 
 <a name="addsc"></a>
-#### Etape 3.1.5 Création de deux **Storage Containers** sur les clusters de Roubaix et de Gravelines
+#### Etape 3.1.5 Création de deux **Storage Containers** 
 
-Nous allons créer deux **Storage Containers** portant le même nom à Roubaix et Gravelines. 
+Nous allons créer deux **Storage Containers** portant le même nom, un à Roubaix et l'autre à Gravelines. 
  
 Depuis le menu principal de **Prism Element** cliquez sur `Storage Containers`{.action} dans le sous-menu **Compute & Storage**.
 
@@ -414,7 +419,7 @@ ssh nutanix@adresse_ip_privee_Prism_element_Gravelines
 Saisissez le mot de passe du compte Nutanix de Prism Element
 ```
 
-Executez cette commmande pour chaque VM que nous allons déplacer dans le **Storage Container** en remplaçant **nomvm** par le nom de la machine virtuelle (Dans notre Plan de reprise d'activité nous avons trois machines virtuelles à Gravelines une avec Windows et un autre sous Linux ainsi que la gateway qui donne accès à Internet). 
+Executez cette commmande pour chaque VM que nous allons déplacer dans le **Storage Container** en remplaçant **nomvm** par le nom de la machine virtuelle (Dans notre Plan de reprise d'activité nous avons trois machines virtuelles à Gravelines une avec Windows, une autre sous Linux ainsi que la gateway qui donne accès à Internet). 
 
 ```bash
 acli vm.update_container nomvm container=UsedForDR
@@ -531,7 +536,7 @@ Cliquez sur `Create`{.action}.
 
 ![09 - Create Protection Policy Roubaix 14](images/09-create-data-protection-roubaix14.png){.thumbnail}
 
-Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines, après une première réplication complète, les données seront sychronisés en permanence de Roubaix vers Gravelines.
+Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines, après une première copie complète, les données seront synchronisés en permanence de Roubaix vers Gravelines.
 
 ![09 - Create Protection Policy Roubaix 15](images/09-create-data-protection-roubaix15.png){.thumbnail}
 
@@ -578,7 +583,7 @@ Une deuxième stratégie de protection est en place.
 <a name="addsublan"></a>
 #### Etape 3.1.10 Création de sous-réseaux nécessaires au plan de reprise d'activité
 
-Nous allons créer des sous-réseaux qui serviront pour les test de plan de reprises intégrés dans Nutanix
+Nous allons créer des sous-réseaux qui serviront pour les tests de plans de reprises d'activité intégrés dans Nutanix
 
 Il faut un sous réseau de test par sous réseau existant sur nos clusters, nous avons 3 sous réseaux de production.
 
@@ -617,7 +622,7 @@ Cliquez à Gauche sur `Enable Disaster Recovery`{.action}.
 
 ![12 - Create Recovery Plan Roubaix 02](images/12-create-roubaix-recovery-plan02.png){.thumbnail}
 
-Normalement le plan de de reprise doit être activé comme indiqué par le message **Disaster Recovery enabled**, cliquez sur la `croix`{.action} à droite pour fermer cette fenêtre. 
+Normalement le plan de de reprise doit être activé comme indiqué avec ce message **Disaster Recovery enabled**, cliquez sur la `croix`{.action} à droite pour fermer cette fenêtre. 
 
 ![12 - Create Recovery Plan Roubaix 03](images/12-create-roubaix-recovery-plan03.png){.thumbnail}
 
@@ -798,7 +803,7 @@ Le plan de de reprise est validé, cliquez sur `Close`{.action}
 
 ##### Test du plan de reprise d'activité
 
-Il est possible de tester le plan de reprise d'activité sans impacter la production. Le test crée des machines virtuelles avec des nomz différents sur le cluster secondaire dans les VLAN créé précédemment. 
+Il est possible de tester le plan de reprise d'activité sans impacter la production. Le test crée des machines virtuelles avec des noms différents sur le cluster secondaire dans les VLAN créés précédemment. 
 
 Cliquez sur `Test`{.action}.
 
@@ -967,7 +972,7 @@ Et cliquez sur `Done`{.action}.
 ![17 - invert recovery plan after failover 07](images/17-invert-recovery-plan-after-failover07.png){.thumbnail}
 
 > [!primary]
-> Les réplications et le plan de reprise ont été inversés suite à un migration des machines virtuelles de Roubaix vers Gravelines.
+> La réplication et le plan de reprise ont été inversés suite à une migration des machines virtuelles de Roubaix vers Gravelines.
 >
 > Pour revenir à la situation d'origine il faut effectuer à nouveau une migration à chaud et inverser la réplication et le plan de reprise d'activité.
 > Il est possible d'utiliser cette partie du guide en cas de déclenchement du plan de reprise d'activité en raison de l'indisponibilité d'un cluster.
