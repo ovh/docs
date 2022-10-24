@@ -307,7 +307,7 @@ The disk will be available as a drive in File Explorer after the operation.
 
 ### Detaching a volume
 
-If you wish to detach a volume from your instance, the best practice is to umount the volume from within the instance before detaching it from your control panel.
+If you wish to detach a volume from your instance, the best practice is to unmount the volume from within the instance before detaching it from your control panel.
 
 Establish an [SSH connection to your instance](../public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
 
