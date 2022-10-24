@@ -58,7 +58,7 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 #### Nodes and replicas
 
-- **Essential**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Essential**: The cluster is delivered with 3 nodes by default.
 - **Business**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
 - **Enterprise**: The cluster is delivered with 6 nodes by default. Adding read replicas is planned.
 
