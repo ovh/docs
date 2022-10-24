@@ -6,7 +6,7 @@ section: Spécificités de la classe de stockage OpenStack Swift
 order: 060
 ---
 
-**Dernière mise à jour le 27/10/2021**
+**Dernière mise à jour le 24/10/2022**
 
 ## Objectif
 
@@ -22,7 +22,7 @@ Si vous souhaitez déplacer vos objets d'un data-centre à un autre, ou même d'
 
 > [!primary]
 >
-> Si votre conteneur contient des objets dont la taille est supérieure à 5Gb, il faut que vos deux conteneurs aient le même nom.
+> Si votre conteneur contient des objets dont la taille est supérieure à 5Gb, il faut que vos deux conteneurs aient le même nom. De plus il faut également appliquer la configuration de synchronisation sur le containeur portant les segments.
 >
 
 ### Configuration de la synchronisation
