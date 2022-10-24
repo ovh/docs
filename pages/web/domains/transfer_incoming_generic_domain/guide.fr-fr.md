@@ -130,7 +130,7 @@ Le processus de transfert peut être redémarré à partir de l'[espace client O
 
 > [!Primary]
 >
-> Le transfert d'un domaine avec l'extension en ".fr" diffère légèrement du processus décrit ci-dessus. Vous devez déverrouiller votre domaine et récupérer son code de transfert auprès de votre bureau d'enregistrement actuel.
+> Le transfert d'un domaine avec l'extension ".fr" diffère légèrement du processus décrit ci-dessus. Vous devez déverrouiller votre nom de domaine et récupérer son code de transfert auprès du bureau d'enregistrement actuel.
 > Réalisez ensuite la commande de transfert et renseignez votre code de transfert comme décrit précédemment dans ce guide.
 >
 > Une fois le transfert initié, le délai total du **transfert d'un domaine en ".fr" prend minimum 8 jours incompressibles.**
