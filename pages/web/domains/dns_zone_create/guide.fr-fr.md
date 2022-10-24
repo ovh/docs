@@ -20,7 +20,6 @@ Pour diverses raisons, vous pouvez être amené à créer une zone DNS pour votr
 
 - Disposer d’un nom de domaine.
 - Le nom de domaine concerné ne doit pas déjà disposer d'une zone DNS OVHcloud ou faire l'objet d'une opération ou d'une commande en cours chez OVHcloud.
-- La configuration technique du nom de domaine doit être correcte (état, SOA, etc.).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
