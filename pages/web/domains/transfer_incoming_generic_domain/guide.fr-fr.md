@@ -135,7 +135,7 @@ Le processus de transfert peut être redémarré à partir de l'[espace client O
 >
 > Une fois le transfert initié, le délai total du **transfert d'un nom de domaine en ".fr" prend minimum 8 jours incompressibles.**
 >
-> En cas d'**opposition au transfert par le bureau d'enregistrement actuel**, le transfert **s'effectuera tout de même** mais il prendra **minimum 22 jours incompressibles** pour être finalisé.
+> En cas d'**opposition au transfert par le bureau d'enregistrement actuel**, le transfert **s'effectuera tout de même** mais il prendra un **minimum de 22 jours incompressibles** pour être finalisé.
 >
 
 ### Étape 5 : gérer son nom de domaine avec OVHcloud
