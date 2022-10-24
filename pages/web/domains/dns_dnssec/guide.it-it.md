@@ -7,7 +7,11 @@ order: 1
 legacy_guide_number: g609
 ---
 
-**Ultimo aggiornamento: 18/07/2018**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 19/10/2022**
 
 ## Obiettivo
 
@@ -28,7 +32,9 @@ Attivare DNSSEC è possibile seguendo due modalità:
 
 - **se il dominio utilizza server DNS OVHcloud**, l’operazione è disponibile direttamente dallo Spazio Cliente
 
-- **se il dominio non utilizza server DNS OVHcloud**, contatta il provider responsabile della sua configurazione. Se ti occupi personalmente della gestione installa manualmente DNSSEC consultando, se necessario, la documentazione disponibile online.
+- **se il tuo dominio non utilizza i server DNS OVHcloud**, contatta il provider che gestisce la configurazione dei DNS e richiedi tutti i parametri. Accedi alla sezione `Web Cloud`{.action} Seleziona `Domini`{.action}, quindi seleziona il dominio in questione dalla lista.
+Clicca sulla scheda `Record DS`{.action}, quindi sul pulsante Modifica a destra e infine sul pulsante `+`{.action}.
+Puoi ora completare i 4 campi, "Tag chiave", "Contrassegno", "Algoritmo", "Chiave pubblica (codificata in Base64)", con i dati forniti dal tuo provider attuale.
 
 > [!primary]
 >
@@ -37,7 +43,7 @@ Attivare DNSSEC è possibile seguendo due modalità:
 
 ### Step 1: accedi alla gestione del dominio
 
-Accedi alla sezione `Web Cloud` dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca su `Hosting`{.action}.
+Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca su `Hosting`{.action}.
 
 Visualizzi una tabella con tutte le informazioni generali del dominio. 
 

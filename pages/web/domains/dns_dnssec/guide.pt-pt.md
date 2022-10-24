@@ -6,7 +6,11 @@ legacy_guide_number: g609
 section: Segurança
 ---
 
-**Última atualização: 02/05/2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 19/10/2022**
 
 ## Sumário
 
@@ -27,7 +31,9 @@ Para compreender como funciona esta proteção, aconselhamos que consulte a segu
 
 - **se o nome de domínio utilizar os servidores DNS da OVHcloud**: a ativação é realizada diretamente na Área de Cliente;
 
-- **se o nome de domínio não utilizar os servidores DNS da OVHcloud**: deverá contactar o prestador responsável pela respetiva configuração DNS. Se gerir a configuração DNS, deverá instalar manualmente o DNSSEC utilizando a documentação disponível online.
+- **se o seu domínio não utilizar os servidores DNS da OVHcloud**, será necessário entrar em contacto com o fornecedor responsável pela gestão da configuração dos DNS e pedir-lhe todos os parâmetros. De seguida, aceda à secção `Cloud Web`{.action}. Clique em `Domínios`{.action} e escolha o domínio em questão na lista.
+Clique no separador `DS records`{.action} e, de seguida, no botão Editar à direita, clique no botão `+`{.action}.
+Pode agora preencher os 4 campos, "Key tag", "Flag", "Algorithm", "Public key (encoded in base64)", com os dados fornecidos pelo seu fornecedor atual.
 
 > [!primary]
 >
@@ -35,7 +41,7 @@ Para compreender como funciona esta proteção, aconselhamos que consulte a segu
 
 ### 1 - Aceder à gestão do nome de domínio
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”. A seguir, clique em Alojamentos e, em seguida, selecione o domínio correspondente.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. A seguir, clique em `Alojamentos`{.action} e, em seguida, selecione o domínio correspondente.
 
 Poderá consultar as informações gerais do domínio na nova janela que irá aparecer.
 

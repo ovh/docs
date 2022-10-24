@@ -6,7 +6,11 @@ section: 'Protección y seguridad'
 order: 1
 ---
 
-**Última actualización: 04/05/2020**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 19/10/2022**
 
 ## Objetivo
 
@@ -26,7 +30,9 @@ Existen dos formas de activar DNSSEC:
 
 - **Si el dominio utiliza los servidores DNS de OVHcloud**, puede realizar la activación directamente desde el área de cliente.
 
-- **Si el dominio no utiliza los servidores DNS de OVHcloud**, debe ponerse en contacto con el proveedor que gestione su configuración DNS. Si usted mismo gestiona la configuración DNS, deberá instalar manualmente DNSSEC ayudándose de la documentación disponible en internet.
+- **Si su dominio no utiliza los servidores DNS de OVHcloud**, debe ponerse en contacto con el proveedor que gestiona la configuración DNS y solicitarle todos los parámetros. A continuación, acceda a la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y, a continuación, seleccione el dominio correspondiente en la lista.
+Haga clic en la pestaña `Registros DS`{.action}, a continuación, haga clic en el botón Editar de la derecha y, por último, en el botón `+`{.action}.
+Rellene los 4 campos "Key tag", "Flag", "Algorithm", "Public key (codificado en base 64)" con los datos que le ofrece su actual proveedor.
 
 > [!primary]
 >
@@ -35,7 +41,7 @@ Existen dos formas de activar DNSSEC:
 
 ### 1. Acceder a la gestión del dominio
 
-En la sección **Web** del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
+En la sección `Web Cloud`{.action} del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
 
 Se mostrará la información general del dominio. 
 

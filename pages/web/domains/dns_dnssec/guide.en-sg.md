@@ -7,7 +7,7 @@ section: 'Protection and security'
 order: 1
 ---
 
-**Last updated 26th March 2018**
+**Last updated 19th October 2022**
 
 ## Objective
 
@@ -28,7 +28,9 @@ DNSSEC can be activated in two ways:
 
 - **if your domain name uses OVHcloud DNS servers**, activation is done in one click from the OVHcloud Control Panel
 
-- **if your domain name does not use OVHcloud DNS servers**, you will need to contact the service provider managing its DNS configuration If you manage this yourself, you will need to manually install the DNSSEC service. If this is the case, please use the documentation available online.
+- **if your domain name does not use OVHcloud DNS servers**, you will need to contact the service provider managing its DNS configuration and ask them all the parameters. Then go to the `Web Cloud`{.action} section. Click `Domains`{.action}, then choose the domain name concerned from the list.
+Click `DS records`{.action} tab, then click the Edit button on the right then click the  `+`{.action} button.
+You can now fill in the 4 fields, "Key tag", "Flag","Algorithm","Public key (encoded in base64)", with the data provided by your current service provider.
 
 > [!primary]
 >
@@ -37,7 +39,7 @@ DNSSEC can be activated in two ways:
 
 ### Step 1: Access the domain name management section.
 
-To start with, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, and go to the "Web" section. Click `Web hosting`{.action}, then choose the domain name concerned from the list.
+To start with, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, and go to the `Web Cloud`{.action} section. Click `Domains`{.action}, then choose the domain name concerned from the list.
 
 The page that appears displays the general information. 
 
