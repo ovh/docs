@@ -318,9 +318,9 @@ Les machines virtuelles **Prism Central** de Gravelines et Roubaix ne servent pl
 
 Au travers du menu principal cliquez sur `Vms`{.action} dans le sous-menu **Compute & Storage**.
 
-![02b - Shutdow Prism Central Gravelines Roubaix 01](images/02-shutdown-prism-central02.png){.thumbnail}
+![02b - Shutdow Prism Central Gravelines Roubaix 01](images/02-shutdown-prism-central01.png){.thumbnail}
 
-Sélectionnez les machines virtuelles de **Prism Central** de Gravelines et Roubaix etcliquez sur `Guest Shutdown`{.action} à partir du menu `Actions`{.action}
+Sélectionnez les machines virtuelles de **Prism Central** de Gravelines et Roubaix et cliquez sur `Guest Shutdown`{.action} à partir du menu `Actions`{.action}
 
 ![02b - Shutdow Prism Central Gravelines Roubaix 02](images/02-shutdown-prism-central02.png){.thumbnail}
 
