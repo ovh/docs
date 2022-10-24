@@ -6,7 +6,7 @@ section: CMS
 order: 08
 ---
 
-**Dernière mise à jour le 12/10/2022**
+**Dernière mise à jour le 24/10/2022**
 
 ## Objectif
 
@@ -32,6 +32,20 @@ Sylius repose sur le _framework_ Symfony. Lors de l'installation, plusieurs fich
 Vous devez donc modifier le pointage de votre nom de domaine vers ce répertoire comme dans l'exemple suivante :
 
 ![Redirection vers /public](images/cms_headless-manual_installation_sylius%5B1%5D.png)
+
+#### Rediriger le visiteur en HTTPS
+
+La redirection va se faire en créant un fichier _.htaccess_ à la racine de votre projet :
+```sh
+nano .htaccess
+```
+
+Insérez les lignes suivantes, puis sauvegardez :
+```sh
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://mapage.ovh/$1 [R,L]
+```
 
 #### Base de données
 
