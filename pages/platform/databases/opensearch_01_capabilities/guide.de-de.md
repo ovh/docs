@@ -53,13 +53,13 @@ Three plans are available:
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Additional Read replicas | Network                |
-| ------------ | -------------------------- | ------------------------ | ---------------------- |
-| *Essential*  | 1                          | No                       | Public only            |
-| *Business*   | 3                          | Planned                  | Public & Private vRack |
-| *Enterprise* | 6                          | Planned                  | Public & Private vRack |
+| Plan         | Number of nodes by default | Additional Read replicas |
+| ------------ | -------------------------- | ------------------------ |
+| *Essential*  | 1                          | No                       |
+| *Business*   | 3                          | Planned                  |
+| *Enterprise* | 6                          | Planned                  |
 
-Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network and backup retention.
+Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as backup retention.
 
 #### Nodes and replicas
 
@@ -138,9 +138,7 @@ Here is the list of plugins enabled by default:
 
 OpenSearch clusters are reachable through port specified in the control panel or API, for example 23125.
 
-Public networking can be used for all the offers.
-
-Private networking (vRack) is available for *Business* and *Enterprise*.
+Public as well as private networking (vRack) can be used for all the offers.
 
 When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
 
