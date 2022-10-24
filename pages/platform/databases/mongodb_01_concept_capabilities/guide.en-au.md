@@ -79,7 +79,7 @@ Here are the node types you can choose from:
 | db1-15  | 100       | 4     | 15          |
 | db1-30  | 200       | 8     | 30          |
 | db1-60  | 400       | 16    | 60          |
-| db1-120 | 400       | 32    | 120         |
+| db1-120 | 800       | 32    | 120         |
 
 Right now, all nodes of a given cluster should be of the same type and live in the same regions.
 
