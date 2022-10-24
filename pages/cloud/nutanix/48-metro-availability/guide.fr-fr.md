@@ -6,11 +6,11 @@ section: Plan de Reprise d'Activité
 order: 06
 ---
 
-**Dernière mise à jour le 21/10/2022**
+**Dernière mise à jour le 24/10/2022**
 
 ## Objectif
 
-**Ce guide vous présente Metro Availability qui permet un plan de reprise d'activité automatisé** 
+**Ce guide vous présente Metro Availability qui permet un plan de reprise d'activité automatisé.** 
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -63,10 +63,9 @@ Nous n'utiliserons qu'un seul **vRack** qui contiendra :
 
 - Les trois clusters Nutanix.
 - Les loadbalancers.
-- Le serveur Standalone avec Prism Central.
 - les adresses IP additionnelles sur le **rtvRack**.
 
-Vous trouverez ci-dessous le schéma de cette configuration sur trois sites :
+Vous trouverez ci-dessous le schéma représentant les trois sites :
 
 ![00 - Metro Availability Diagram 01](images/00-metro-availability-diagram01.png){.thumbnail}
 
@@ -78,9 +77,9 @@ Nous allons étape par étape mettre en place ce P.R.A (Plan de reprise d'activi
 Les informations de configuration des clusters utilisés par notre guide sont les suivantes :
 
 - Cluster de Roubaix :
-    + Serveur 1 : adresse VM **CVM** `192.168.0.1`, adresse IP hyperviseur **AHV** `192.168.0.21`.
-    + Serveur 2 : adresse VM **CVM** `192.168.0.2`, adresse IP hyperviseur **AHV** `192.168.0.22`.
-    + Serveur 3 : adresse VM **CVM** `192.168.0.3`, adresse IP hyperviseur **AHV** `192.168.0.23`.
+    + Serveur 1 : adresse VM **CVM** `192.168.0.21`, adresse IP hyperviseur **AHV** `192.168.0.1`.
+    + Serveur 2 : adresse VM **CVM** `192.168.0.22`, adresse IP hyperviseur **AHV** `192.168.0.2`.
+    + Serveur 3 : adresse VM **CVM** `192.168.0.23`, adresse IP hyperviseur **AHV** `192.168.0.3`.
     + Adresse virtuelle de **Prism Element** : `192.168.0.100`.
     + Adresse iScsi de **Prism Element** : `192.168.0.102`.
     + Adresse IP **Prism Central** : `192.168.0.101`.
@@ -89,9 +88,9 @@ Les informations de configuration des clusters utilisés par notre guide sont le
     + Version du cluster : `6.5`
 
 - Cluster de Gravelines :
-    + Serveur 1 : adresse VM **CVM** `192.168.1.1`, adresse IP hyperviseur **AHV** `192.168.1.21`.
-    + Serveur 2 : adresse VM **CVM** `192.168.1.2`, adresse IP hyperviseur **AHV** `192.168.1.22`.
-    + Serveur 3 : adresse VM **CVM** `192.168.1.3`, adresse IP hyperviseur **AHV** `192.168.1.23`.
+    + Serveur 1 : adresse VM **CVM** `192.168.1.21`, adresse IP hyperviseur **AHV** `192.168.1.1`.
+    + Serveur 2 : adresse VM **CVM** `192.168.1.22`, adresse IP hyperviseur **AHV** `192.168.1.2`.
+    + Serveur 3 : adresse VM **CVM** `192.168.1.23`, adresse IP hyperviseur **AHV** `192.168.1.3`.
     + Adresse virtuelle de **Prism Element** : `192.168.1.100`.
     + Adresse iScsi de **Prism Element** : `192.168.1.102`.
     + Adresse IP **Prism Central** : `192.168.1.101`.
@@ -100,9 +99,9 @@ Les informations de configuration des clusters utilisés par notre guide sont le
     + Version du cluster : `6.5`.
  
 - Cluster de Erith :
-    + Serveur 1 : adresse VM **CVM** `192.168.2.1`, adresse IP hyperviseur **AHV** `192.168.2.21`.
-    + Serveur 2 : adresse VM **CVM** `192.168.2.2`, adresse IP hyperviseur **AHV** `192.168.2.22`.
-    + Serveur 3 : adresse VM **CVM** `192.168.2.3`, adresse IP hyperviseur **AHV** `192.168.2.23`.
+    + Serveur 1 : adresse VM **CVM** `192.168.2.21`, adresse IP hyperviseur **AHV** `192.168.2.1`.
+    + Serveur 2 : adresse VM **CVM** `192.168.2.22`, adresse IP hyperviseur **AHV** `192.168.2.2`.
+    + Serveur 3 : adresse VM **CVM** `192.168.2.23`, adresse IP hyperviseur **AHV** `192.168.2.3`.
     + Adresse virtuelle de **Prism Element** : `192.168.2.101`.
     + Adresse iScsi de **Prism Element** : `192.168.2.102`.   
     + Adresse IP **Prism Central** : `192.168.2.100`.
@@ -123,7 +122,7 @@ La première étape est de réaliser l'interconnexion des trois clusters sur le 
 
 Aidez-vous de ce guide pour interconnecter vos clusters [Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/).
 
-Le guide explique la connexion entre deux clusters. Pour la connexion des trois clusters utilisez les instructions du guide dans ce sens :
+Le guide explique la connexion entre deux clusters. Pour la connexion des trois clusters utilisez les instructions fournies sur le guide dans ce sens :
 
 - Les clusters de Roubaix dans le **vRack** dédié à Gravelines.
 - Les clusters de Erith dans le **vRack** dédié à Gravelines.
@@ -136,15 +135,16 @@ Lorsque vous aurez terminé la configuration vous verrez dans votre vRack ces é
 
 ![01 - vRack Configuration 01](images/01-vrack-configuration01.png){.thumbnail}
 
-Les trois clusters sont pour l'instant accessible à partir des l'URL **Prism Central** de chaques clusters.
+Les trois clusters sont pour l'instant accessibles à partir des l'URL **Prism Central** de chaques clusters.
 
 <a name="supprpc"></a>
 #### Etape 3.1.2 Suppression des enregistrements **Prism Central** pour les clusters de Roubaix et Gravelines.
 
-Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il est est nécessaire de n'utiliser qu'une Machine virtuelle **Prism Central** commune aux 3 clusters. **Prism Central** sera sur le site d'Erith qui ne contient pas de machines virtuelles concernées par le P.R.A.
+Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il faut un témoin de cluster qui assure une automatisation des tâches de reprise d'activité en cas d'indisponibilité d'un des clusters. Le témoin de cluster sous **AHV** est une machine virtuelle **Prism Central**
 
-Dans un premier temps il faut retirer **Prism Element** des clusters des machines virtuelles **Prism Central** de Roubaix et Gravelines.
+Les trois clusters doivent être connectés à une seule machine virtuelle **Prism Central**.
 
+La machine virtuelle qui servira de **Prism Central** pour l'administration des clusters et de témoin de cluster sera celle d'Erith, les machines virtuelles de **Prism Element** des sites de Roubaix et de Gravelines seront détachées du **Prism Central** d'origine pour être connectées au **Prism Central** d'Erith. 
 
 ##### Désactivation de **Prism Central** sur le cluster de Roubaix
 
@@ -312,7 +312,13 @@ Registered Cluster Count: 1
 
 A partir d'un navigateur WEB connectez-vous sur l'URL de Prism-Central à Erith, vous verrez les trois clusters.
 
-![02 - Prism Central Dashboard 02](images/02-show-prismcentral01.png){.thumbnail}
+![02 - Prism Central Dashboard 01](images/02-show-prismcentral01.png){.thumbnail}
+
+Sélectionnez les machines virtuelles de **Prism Central** de Gravelines et Roubaix, cliquez sur `Guest Shutdown`{.action} à partir du menu `Actions`{.action}
+
+![02 - Shutdow Prism Central Gravelines Roubaix ](images/02-shutdown-prism-central01.png){.thumbnail}
+
+
 
 <a name="paramiscsi"></a>
 #### Etape 3.1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters
