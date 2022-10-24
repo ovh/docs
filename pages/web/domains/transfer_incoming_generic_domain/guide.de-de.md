@@ -10,7 +10,7 @@ order: 01
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 20.10.2022**
+**Letzte Aktualisierung am 24.10.2022**
 
 ## Ziel
 
@@ -128,6 +128,16 @@ Sobald die Bestellung und der Transfer-Code bestätigt sind, wird der aktuelle R
 Wird eine Ablehnung vom aktuellen Registrar ausgesprochen, kontaktieren Sie den Registrar, um die Gründe dafür zu erfahren.
 
 Der Transferprozess kann über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu gestartet werden. Wählen Sie `Web Cloud`{.action} aus und gehen Sie in den Bereich `Domainnamen`{.action}. Klicken Sie dann auf `Laufende Operationen`{.action}.
+
+> [!primary]
+>
+> Der Transfer einer Domain mit der Endung ".fr"unterscheidet sich geringfügig von dem oben beschriebenen Vorgang. Sie müssen Ihre Domain freigeben und ihren Transfer-Code beim aktuellen Registrar einsehen.
+> Initiieren Sie die Bestellung des Transfers und geben Sie den Transfer-Code wie oben beschrieben ein.
+>
+> Nach dem Transfer dauert die Gesamtfrist für den **Transfer einer Domain auf ".fr" mindestens 8 Tage, die nicht komprimiert werden können.**
+>
+>**Im Falle eines Widerspruchs gegen den Transfer durch den bisherigen Registrar** wird der Transfer **trotzdem durchgeführt**, es dauert jedoch einen **Mindestzeitraum von 22 Tagen**, bis er abgeschlossen ist.
+>
 
 ### Schritt 5: Domainnamen bei OVHcloud verwalten
 

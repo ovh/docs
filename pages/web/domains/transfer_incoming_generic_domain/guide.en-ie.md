@@ -6,7 +6,7 @@ section: Transfer
 order: 01
 ---
 
-**Last updated 19h October 2022**
+**Last updated 24 October 2022**
 
 ## Objective
 
@@ -129,6 +129,15 @@ If a refusal is issued by the current registrar, contact them to find out why th
 
 The transfer process can be restarted from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Select `Web Cloud`{.action} and go to the `Domain names`{.action}, then click on `Ongoing operations`{.action}.
 
+> [!Primary]
+>
+> The transfer of a domain with the extension ".fr" differs slightly from the process described above. You will need to unlock your domain name and retrieve its transfer code from your current domain name registrar.
+> Initiate the transfer order and enter the transfer code as described above.
+>
+> Once the transfer process has been initiated, the total time it takes to **transfer a domain name to ".fr" will take at least 8 incompressible days.**
+>
+> In case of **opposition to the transfer by the current registrar**, the transfer **will still be carried out** but it will take a **minimum of 22 incompressible days** to be finalised.
+>
 
 ### Step 5: Manage your domain at OVHcloud
 
