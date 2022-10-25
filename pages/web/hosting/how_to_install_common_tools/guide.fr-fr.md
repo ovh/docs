@@ -39,7 +39,9 @@ Déplacez-vous dans ce répertoire :
 cd tools
 ```
 
-### Installer Composer
+### Composer
+
+#### Installation
 
 [Composer](https://getcomposer.org/) est un gestionnaire de dépendances permettant d'installer les bibliothèques dont on a besoin pour le déploiement d'un projet PHP.
 
@@ -68,6 +70,13 @@ Une fois ce fichier exécuté, vous avez un nouveau fichier créé : composer.ph
 Supprimez le fichier `composer-setup` :
 ```php
 php -r "unlink('composer-setup.php');"
+```
+
+#### Utilisation
+
+Pour utiliser Composer dans n'importe quel projet pour installer un composant, saisir la commande sous cette forme (pour installer Bootstrap dans l'exemple) :
+```sh
+php ~/tools/composer.phar require twbs/bootstrap
 ```
 
 ## Aller plus loin
