@@ -50,27 +50,27 @@ Nous allons récupérer le résumé de la configuration du cluster pour le dépo
 
 Dans **Prism Central**, cliquez sur l'icône en forme d'`engrenage`{.action} pour aller dans les paramètres.
 
-![01 generate-report report 01](images/01-generate-report01.png){.thumbnail}
+![01 generate-report report 01](images/01-generate-report-pc01.png){.thumbnail}
 
 Cliquez à gauche sur `Licensing`{.action}.
 
-![01 generate-report report 02](images/01-generate-report02.png){.thumbnail}
+![01 generate-report report 02](images/01-generate-report-pc02.png){.thumbnail}
 
 Cliquez à gauche sur `Update Licenses`{.action}.
 
-![01 generate-report report 03](images/01-generate-report03.png){.thumbnail}
+![01 generate-report report 03](images/01-generate-report-pc03.png){.thumbnail}
 
 Cliquez sur `Download`{.action} pour récupérer le fichier contenant les informations sur votre cluster.
 
-![01 generate-report report 04](images/01-generate-report04.png){.thumbnail}
+![01 generate-report report 04](images/01-generate-report-pc04.png){.thumbnail}
 
 Cliquez en haut à droite sur `Show all downloads`{.action}
 
-![01 generate-report report 05](images/01-generate-report05.png){.thumbnail}
+![01 generate-report report 05](images/01-generate-report-pc05.png){.thumbnail}
 
 Vous trouverez dans vos fichiers téléchargés un document dont le nom commence par **ntnx** et qui est le résumé de votre configuration. Il vous faudra déposer de fichier sur le portail de licences Nutanix.
 
-![01 generate-report report 06](images/01-generate-report06.png){.thumbnail}
+![01 generate-report report 06](images/01-generate-report-pc06.png){.thumbnail}
 
 ### Connexion au portail Nutanix 
 
