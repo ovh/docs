@@ -25,7 +25,7 @@ By transferring your domain name, you will change your domain name registrar. Yo
 
 ## Requirements
 
-- A domain name registered, with another registrar.
+- A domain name registered with another registrar.
 - The domain name is more than 60 days old.
 - The domain name has not been transferred or changed owners within the last 60 days.
 - The domain name status is "OK" or "Transferable".
@@ -56,7 +56,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 - **If the information is correct:** go to the next step of this guide.
 
-- **If the information is incorrect, or not visible:** contact your domain name registrar to check and/or modify it.
+- **If the information is incorrect or not visible:** contact your domain name registrar to check and/or modify it.
 
 > [!primary]
 >
@@ -136,9 +136,9 @@ The transfer process can be restarted from the [OVHcloud Control Panel](https://
 > The transfer of a domain with the extension ".fr" differs slightly from the process described above. You will need to unlock your domain name and retrieve its transfer code from your current domain name registrar.
 > Initiate the transfer order and enter the transfer code as described above.
 >
-> Once the transfer process has been initiated, the total time it takes to **transfer a domain name to ".fr" will take at least 8 incompressible days.**
+> Once the transfer process has been initiated, the total time it takes to **transfer a ".fr" domain name will take an irreducible minimum of 8 days.**
 >
-> In case of **opposition to the transfer by the current registrar**, the transfer **will still be carried out** but it will take a **minimum of 22 incompressible days** to be finalised.
+> In case of **opposition to the transfer by the current registrar**, the transfer **will still be carried out** but it will take **an irreducible minimum of 22 days** to be finalised.
 >
 
 ### Step 5: Manage your domain at OVHcloud
