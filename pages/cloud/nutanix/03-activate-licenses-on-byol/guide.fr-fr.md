@@ -146,51 +146,51 @@ Choisissez `Licensing`{.action} à gauche et cliquez sur `Update Licences`{.acti
 
 Cliquez sur `Download`{.action}.
 
-![05 generate report with licences 03](images/05-generate-report-with-licenses03.png){.thumbnail}
+![05 generate report with licenses 03](images/05-generate-report-with-licenses03.png){.thumbnail}
 
 CLiquez sur `Enregistrer`{.action} pour enregistrer le fichier de configuration sur votre ordinateur.
 
-![05 generate report with licences 04](images/05-generate-report-with-licenses04.png){.thumbnail}
+![05 generate report with licenses 04](images/05-generate-report-with-licenses04.png){.thumbnail}
 
 Cliquez sur `Licenses page`{.action} pour vous connecter à votre portail de licences **Nutanix**.
 
-![05 generate report with licences 05](images/05-generate-report-with-licenses05.png){.thumbnail}
+![05 generate report with licenses 05](images/05-generate-report-with-licenses05.png){.thumbnail}
 
 Au travers du portail de licences **Nutanix** cliquez sur `Manage Licenses`{.action}.
 
-![06 generate nsf with licences removed 01](images/06-nsf-with-license-removed01.png){.thumbnail}
+![06 generate nsf with licenses removed 01](images/06-generate-nsf-with-license-removed01.png){.thumbnail}
 
 Cliquez sur `Upload File`{.action}.
 
-![06 generate nsf with licences removed 02](images/06-nsf-with-license-removed02.png){.thumbnail}
+![06 generate nsf with licenses removed 02](images/06-generate-nsf-with-license-removed02.png){.thumbnail}
 
 Cliquez sur `Ouvrir`{.action}.
 
-![06 generate nsf with licences removed 03](images/06-nsf-with-license-removed03.png){.thumbnail}
+![06 generate nsf with licenses removed 03](images/06-generate-nsf-with-license-removed03.png){.thumbnail}
 
 Cliquez sur la barre de `défilement`{.action}.
 
-![06 generate nsf with licences removed 04](images/06-nsf-with-license-removed04.png){.thumbnail}
+![06 generate nsf with licenses removed 04](images/06-generate-nsf-with-license-removed04.png){.thumbnail}
 
 Cliquez sur `Unselect License`{.action} dans la rubrique **NCM (Nutanix Cloud Manager)**.
 
-![06 generate nsf with licences removed 05](images/06-nsf-with-license-removed05.png){.thumbnail}
+![06 generate nsf with licenses removed 05](images/06-generate-nsf-with-license-removed05.png){.thumbnail}
 
 Cliquez sur `Unlicense`{.action}.
 
-![06 generate nsf with licences removed 06](images/06-nsf-with-license-removed06.png){.thumbnail}
+![06 generate nsf with licenses removed 06](images/06-generate-nsf-with-license-removed06.png){.thumbnail}
 
 La demande de retrait de la licence est prise en charge cliquez sur `Next`{.action}.
 
-![06 generate nsf with licences removed 07](images/06-nsf-with-license-removed07.png){.thumbnail}
+![06 generate nsf with licenses removed 07](images/06-generate-nsf-with-license-removed07.png){.thumbnail}
 
 CLiquez sur `Confirm`{.action}.
 
-![06 generate nsf with licences removed 08](images/06-nsf-with-license-removed08.png){.thumbnail}
+![06 generate nsf with licenses removed 08](images/06-generate-nsf-with-license-removed08.png){.thumbnail}
 
 Cliquez sur `Enregistrer`{.action}. pour sauvegarder le fichier de licence sur votre poste.
 
-![06 generate nsf with licences removed 09](images/06-nsf-with-license-removed09.png){.thumbnail}
+![06 generate nsf with licenses removed 09](images/06-generate-nsf-with-license-removed09.png){.thumbnail}
 
 Revenez dans la gestion des licences sur **Prism Central**. 
 
