@@ -38,7 +38,7 @@ In diesem Tutorial erklären wir Ihnen die wichtigsten Schritte, die Sie bei der
 > [!warning]
 >
 > Die Änderung des Domainnamens, über den auf Ihre Website zugegriffen wird, kann Auswirkungen auf deren SEO haben. 
-> Achten Sie daher genau auf die Änderungen, die Sie vornehmen, und kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) für SEO.
+> Achten Sie daher genau auf die Änderungen, die Sie vornehmen, und kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) für SEO.
 >
 
 Um den Domainnamen für den Zugang zu Ihrer Website zu ändern, müssen mehrere Schritte in einer bestimmten Reihenfolge durchgeführt werden.
@@ -91,7 +91,7 @@ Die meisten Websites verwenden Datenbanken, um zu funktionieren. Die Baumstruktu
 
 > [!warning]
 >
-> Achtung, die in Schritt 2 beschriebenen Operationen sind äußerst sensibel und können schwerwiegende Folgen für Ihre Website haben, wenn sie nicht mit Vorsicht durchgeführt werden. Sollten Sie Zweifel haben, wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/).
+> Achtung, die in Schritt 2 beschriebenen Operationen sind äußerst sensibel und können schwerwiegende Folgen für Ihre Website haben, wenn sie nicht mit Vorsicht durchgeführt werden. Sollten Sie Zweifel haben, wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
 >
 > Wir empfehlen Ihnen, vor jeder Aktion eine [Sicherung Ihres FTP-Speicherplatzes](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/) sowie eine [Sicherung Ihrer Datenbank](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/) abzurufen. So können Sie Ihre Website im Fall eines Fehlers wiederherstellen.
 >

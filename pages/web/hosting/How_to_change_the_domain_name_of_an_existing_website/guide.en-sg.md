@@ -147,7 +147,7 @@ Once your old domain has been removed from the multisites tab, and if it is regi
 
 [Redirecting a domain name](https://docs.ovh.com/sg/en/domains/redirect-domain-name/)
 
-[IP address list for Web Hosting clusters](https://docs.ovh.com/gb/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/)
+[IP address list for Web Hosting clusters](https://docs.ovh.com/sg/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
 
