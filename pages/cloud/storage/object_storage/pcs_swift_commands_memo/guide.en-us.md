@@ -6,7 +6,7 @@ section: OpenStack Swift Storage Class Specifics
 order: 100
 ---
 
-**Last updated 24st October 2022**
+**Last updated 24th October 2022**
 
 ## Objective
 
@@ -416,11 +416,11 @@ swift capabilities
 ### Limit container size
 
 To limit the size of a container, simply add the metadata 'X-Container-Meta-Quota-Bytes' associated with the limit to set up:
-```
+```bash
 swift post -H "X-Container-Meta-Quota-Bytes:<limit-in-bytes>" <container>
 ```
 If the limit is exceeded, the following error is returned:
-```
+```bash
 swift upload test2 logo_ovh.png
 Object PUT failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<account>/test2/logo_ovh.png 413 Request Entity Too Large b'Upload exceeds quota.' (txn: txee1f2b77c26a424ebbda8-0062a1aa7f)
 Consider using the --segment-size option to chunk the object
