@@ -22,7 +22,7 @@ Si vous souhaitez déplacer vos objets d'un data-centre à un autre, ou même d'
 
 > [!primary]
 >
-> Si votre conteneur contient des objets dont la taille est supérieure à 5Gb, il faut que vos deux conteneurs aient le même nom. De plus il faut également appliquer la configuration de synchronisation sur le containeur portant les segments.
+> Si votre conteneur contient des objets dont la taille est supérieure à 5Gb, vos deux conteneurs devront avoir le même nom. De plus, vous devrez appliquer la configuration de synchronisation sur le containeur portant les segments.
 >
 
 ### Configuration de la synchronisation
