@@ -49,7 +49,7 @@ We are also in constant communication with MongoDB team, in order to provide fas
 
 ### Private network
 
-When available, Public Cloud Databases provide interconnection with your private network. This option allows you to connect your database to other services in your private network, isolating your service from the outside.
+Public Cloud Databases provide interconnection with your private network. This option allows you to connect your database to other services in your private network, isolating your service from the outside.
 
 ### IP restriction
 

@@ -65,7 +65,7 @@ Follow this [guide](https://docs.ovh.com/fr/publiccloud/databases/getting-starte
 
 > [!primary]
 >
-> The use of private networks with databases is allowed for **Business** and **Enterprise** plans.
+> Choose the plan that best fits your needs. The use of private networking with databases is available with all plans.
 >
 > ![Choose plan](images/databases_01_order_control_panel-2022072719143198.png){.thumbnail}
 >

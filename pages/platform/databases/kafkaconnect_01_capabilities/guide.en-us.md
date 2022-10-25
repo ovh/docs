@@ -39,13 +39,13 @@ Three plans are available:
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes | Additional nodes | Network            |
-| ------------ | --------------- | ---------------- | ------------------ |
-| *Essential*  | 1               | No               | Public only        |
-| *Business*   | 3               | No               | Public and Private |
-| *Enterprise* | 6               | No               | Public and Private |
+| Plan         | Number of nodes | Additional nodes |
+| ------------ | --------------- | ---------------- |
+| *Essential*  | 1               | No               |
+| *Business*   | 3               | No               |
+| *Enterprise* | 6               | No               |
 
-Your choice of plan affects the number of nodes your cluster run, the SLA, and a few other features such as private networking.
+Your choice of plan affects the number of nodes your cluster run or the SLA.
 
 #### Nodes
 
@@ -69,9 +69,7 @@ All nodes of a given cluster should be of the same type and distributed in the s
 
 #### Network
 
-Public networking can be used with all the offers.
-
-Private networking (vRack) is available for *Business* and *Enterprise* class clusters.
+Public as well as private networking (vRack) can be used for all the offers.
 
 When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
 

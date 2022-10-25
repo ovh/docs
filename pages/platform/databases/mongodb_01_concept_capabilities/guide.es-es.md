@@ -51,11 +51,11 @@ Three plans are available:
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes | MongoDB License | Network                    | BI Connector  | Compass   |
-| ------------ | --------------- | --------------- | -------------------------- | ------------  | --------- |
-| *Essential*  | 1               | Community       | Public only                | Not available | Available |
-| *Business*   | 3 to 8          | Community       | Public and Private (vRack) | Not available | Available |
-| *Enterprise* | 3 to 8          | Enterprise      | Public and Private (vRack) | Available     | Available |
+| Plan         | Number of nodes | MongoDB License | BI Connector  | Compass   |
+| ------------ | --------------- | --------------- | ------------  | --------- |
+| *Essential*  | 1               | Community       | Not available | Available |
+| *Business*   | 3 to 8          | Community       | Not available | Available |
+| *Enterprise* | 3 to 8          | Enterprise      | Available     | Available |
 
 Your choice of plan affects the number of nodes your cluster can run as well as the MongoDB license type.
 
@@ -81,7 +81,7 @@ Here are the node types you can choose from:
 | db1-15  | 100       | 4     | 15          |
 | db1-30  | 200       | 8     | 30          |
 | db1-60  | 400       | 16    | 60          |
-| db1-120 | 400       | 32    | 120         |
+| db1-120 | 800       | 32    | 120         |
 
 Right now, all nodes of a given cluster should be of the same type and live in the same regions.
 
@@ -101,9 +101,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 
 MongoDB clusters are reachable through default port 27017.
 
-Public networking can be used for all the offers.
-
-Private Networking (vRack) is available for *Business* and *Enterprise*.
+Public as well as private networking (vRack) can be used for all the offers.
 
 When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
 

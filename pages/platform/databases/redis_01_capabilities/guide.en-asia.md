@@ -51,13 +51,13 @@ Three plans are available:
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes | Network                |
-| ------------ | -------------------------- | ---------------- | ---------------------- |
-| *Essential*  | 1                          | No               | Public only            |
-| *Business*   | 2                          | No               | Public & Private vRack |
-| *Enterprise* | 3                          | No               | Public & Private vRack |
+| Plan         | Number of nodes by default | Additional nodes |
+| ------------ | -------------------------- | ---------------- |
+| *Essential*  | 1                          | No               |
+| *Business*   | 2                          | No               |
+| *Enterprise* | 3                          | No               |
 
-Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network, read replicas and backup retention.
+Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
 #### Nodes and replicas
 
@@ -90,9 +90,7 @@ Right now, all nodes of a given cluster should be of the same type and distribut
 
 Redis clusters are reachable through default port 20182.
 
-Public networking can be used for all the offers.
-
-Private networking (vRack) is available for *Business* and *Enterprise*.
+Public as well as private networking (vRack) can be used for all the offers.
 
 When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
 
