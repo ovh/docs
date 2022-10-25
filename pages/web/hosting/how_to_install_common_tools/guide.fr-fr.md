@@ -6,7 +6,7 @@ section: PHP
 order: 3
 ---
 
-**Dernière mise à jour le 24/10/2022**
+**Dernière mise à jour le 25/10/2022**
 
 ## Objectif
 
@@ -79,4 +79,54 @@ Pour utiliser Composer dans n'importe quel projet pour installer un composant, s
 php ~/tools/composer.phar require twbs/bootstrap
 ```
 
+### NodeJS
+
+NodeJS peut s'avérer nécessaire pour utiliser la commande `npm` qui permettra d'installer certains utilitaires.
+
+#### Installation
+
+Dans le répertoire `tools`, téléchargez la dernière version _Long Term Support (LTS)_ :
+
+```sh
+curl -sLO https://nodejs.org/dist/latest-v16.x/node-v16.18.0-linux-x64.tar.xz
+```
+
+Créez un répertoire `node` :
+
+```sh
+mkdir node
+```
+
+Décompressez le fichier téléchargé dans ce répertoire :
+
+```sh
+tar xJf node-v16.18.0-linux-x64.tar.xz --strip-components=1 --no-same-owner -C node
+```
+
+Vérifiez le contenu de votre répertoire :
+
+```sh
+ls -la ~/tools/node
+```
+
+![list command node's directory](images/how_to_install_common_tools%5B2%5D.png)
+
+#### Utilisation
+
+Ajoutez le répertoire contenant le programme `npm` dans le path :
+
+```sh
+export PATH=~/tools/node/bin:$PATH
+```
+
+Verifiez :
+
+```sh
+which npm
+```
+
 ## Aller plus loin
+
+- [Composer](https://getcomposer.org/)
+- [Packagist](https://packagist.org/), dépôt regroupant les paquets installables avec Composer
+- installer [Yarn](https://classic.yarnpkg.com/en/docs/install) avec npm
