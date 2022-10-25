@@ -9,7 +9,7 @@ order: 171
 
 ## Objectif
 
-Ce guide a pour objectif de vous montrer comment configurer Tina pour utiliser votre espace de stockage **High Perf Object Storage**.
+Ce guide a pour objectif de vous montrer comment configurer le logiciel de sauvegarde Tina pour utiliser votre espace de stockage **High Perf Object Storage**.
 
 > [!warning]
 >
