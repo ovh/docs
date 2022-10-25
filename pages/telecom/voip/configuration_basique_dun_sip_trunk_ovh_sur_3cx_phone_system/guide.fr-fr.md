@@ -43,6 +43,7 @@ Vous trouverez la version gratuite de 3CX via ce lien. [(3CX Phone)](https://www
 >
 
 ### Création du Trunk dans 3CX Phone System
+
 Nous allons configurer à l'aide du Template le trunk sur 3CX. 
 
 - Connectez-vous à l'interface d'administration de 3CX.
@@ -89,6 +90,7 @@ Enfin, nous allons associer nos DDI au trunk, cliquez sur l'onglet en haut de la
 La configuration du trunk sur 3CX est maintenant terminée !
 
 ### Création et configuration des extensions
+
 L'objectif de cette étape est de configurer les extensions 1000 et 1001.
 Tout d’abord, configurez l’extension 1000 pour lui permettre de présenter le DDI 01 83 64 11 26.  
 
@@ -125,12 +127,13 @@ Créez des règles d'appel entrant lorsque les DDI sont appelés.
 
 Pour configurer le second DDI il vous faut appliquer la même procédure, à la différence que vous devez changer le DDI présenté et l'extension cible de l'appel.
 
-###
+### Modifier le délai d'enregistrement 
+
 Le temps d’enregistrement minimum conseillé est de 1800 secondes. Pour modifier ce paramètre suivez ces étapes :
 
 - Connectez-vous à l'interface d'administration de 3CX.
 
-![3CX Phone Systeme](images/img_2182.jpg){.thumbnail}
+![3CX Phone Systeme](images/3cx_phone_system-login.png){.thumbnail}
 
 - Cliquez sur "Opérateurs VoIP"
 
