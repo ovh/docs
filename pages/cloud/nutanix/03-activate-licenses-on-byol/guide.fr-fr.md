@@ -68,7 +68,8 @@ Cliquez en haut à droite sur `Show all downloads`{.action}
 
 ![01 generate-report report 05](images/01-generate-report-pc05.png){.thumbnail}
 
-Vous trouverez dans vos fichiers téléchargés un document dont le nom commence par **ntnx** et qui est le résumé de votre configuration. Il vous faudra déposer de fichier sur le portail de licences Nutanix.
+Le fichier **CSF** se trouve sur votre poste.
+
 
 ![01 generate-report report 06](images/01-generate-report-pc06.png){.thumbnail}
 
@@ -102,6 +103,8 @@ Dans la rubrique **NCM Ultimate** cliquez sur `Select Licences`{.action}.
 
 ![03 create NSF for PC 04](images/03-create-nsf-for-pc04.png){.thumbnail}
 
+Nous allons maintenant enregistrer le fichier **LSF (License Summary File)** qui contient la licence sur votre poste. 
+
 Sélectionnez votre `votre cluster`{.action} et cliquez sur `Save`{.action}.
 
 ![03 create NSF for PC 05](images/03-create-nsf-for-pc05.png){.thumbnail}
@@ -118,7 +121,7 @@ Cliquez sur `Enregistrer`{.action} pour sauver le fichier de licence sur votre o
 
 ![03 create NSF for PC 08](images/03-create-nsf-for-pc08.png){.thumbnail}
 
-Revenez sur sur **Prism Central** dans la gestion des licences et cliquez sur `Upload`{.action} pour installer le fichier de licences. Ce fichier est le fichier **LSF (License Summary File)**.
+Revenez sur sur **Prism Central** dans la gestion des licences et cliquez sur `Upload`{.action} pour installer le fichier de licences.
 
 ![04 Add license to PC 01](images/04-add-license-to-pc01.png){.thumbnail}
 
@@ -148,7 +151,7 @@ Cliquez sur `Download`{.action}.
 
 ![05 generate report with licenses 03](images/05-generate-report-with-licenses03.png){.thumbnail}
 
-Cliquez sur `Enregistrer`{.action} pour sauvegarder le fichier **LSF** contenant le résumé des licences sur votre ordinateur.
+Cliquez sur `Enregistrer`{.action} pour sauvegarder le fichier **CSF** contenant le résumé de la configuration de votre cluster avec les licences installés.
 
 ![05 generate report with licenses 04](images/05-generate-report-with-licenses04.png){.thumbnail}
 
