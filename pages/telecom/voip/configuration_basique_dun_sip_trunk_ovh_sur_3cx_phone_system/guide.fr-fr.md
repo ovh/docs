@@ -1,8 +1,7 @@
 ---
-title: '3CX - configuration et utilisation'
+title: '3CX - Configuration et utilisation'
 excerpt: "Découvrez comment configurer un SIP Trunk OVHcloud avec l'IPBX 3CX et deux DDI"
 slug: configuration_basique_dun_sip_trunk_ovh_sur_3cx_phone_system
-legacy_guide_number: g1575
 section: IPBX
 ---
 
