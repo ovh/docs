@@ -139,7 +139,7 @@ Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](
 >
 > Po uruchomieniu transferu, całkowity czas **transferu domeny ".fr" wynosi co najmniej 8 dni.**
 >
-> W przypadku**sprzeciwu wobec transferu ze strony aktualnego rejestratora**, przeniesienie **nastąpi mimo wszystko**, ale do sfinalizowania operacja ta zajmie **minimum 22 dni**.
+> W przypadku **sprzeciwu wobec transferu ze strony aktualnego rejestratora**, przeniesienie **nastąpi mimo wszystko**, ale do sfinalizowania operacja ta zajmie **minimum 22 dni**.
 >
 
 ### Etap 5: zarządzaj domeną za pomocą OVHcloud

@@ -139,7 +139,7 @@ Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](https://w
 >
 > Una volta avviato il trasferimento, il termine totale del **trasferimento di un dominio in ".fr" richiede almeno 8 giorni incompressibili.**
 >
-> In caso di**opposizione al trasferimento da parte dell'attuale Registrar**, il trasferimento **si effettuerà comunque**, ma richiederà un **minimo di 22 giorni incompressibili** per essere completato.
+> In caso di **opposizione al trasferimento da parte dell'attuale Registrar**, il trasferimento **si effettuerà comunque**, ma richiederà un **minimo di 22 giorni incompressibili** per essere completato.
 >
 
 ### Step 5: gestire il dominio con OVHcloud

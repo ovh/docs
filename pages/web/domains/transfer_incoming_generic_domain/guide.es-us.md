@@ -139,7 +139,7 @@ El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcl
 >
 > Una vez iniciada la transferencia, el plazo total de **transferencia de un nombre de dominio a ".fr" tarda al menos 8 días incompresibles**.
 >
-> En caso de *** oposición a la transferencia por el actual agente registrador**, la transferencia **se realizará de todas formas**, pero tardará un **mínimo de 22 días en completarse**.
+> En caso de **oposición a la transferencia por el actual agente registrador**, la transferencia **se realizará de todas formas**, pero tardará un **mínimo de 22 días en completarse**.
 >
 
 ### 5. gestionar su dominio con OVHcloud
