@@ -151,7 +151,7 @@ Cliquez sur `Download`{.action}.
 
 ![05 generate report with licenses 03](images/05-generate-report-with-licenses03.png){.thumbnail}
 
-Cliquez sur `Enregistrer`{.action} pour sauvegarder le fichier **CSF** contenant le résumé de la configuration de votre cluster avec les licences installés.
+Cliquez sur `Enregistrer`{.action} pour sauvegarder le fichier **CSF** contenant le résumé de la configuration de votre cluster avec les licences installées.
 
 ![05 generate report with licenses 04](images/05-generate-report-with-licenses04.png){.thumbnail}
 
@@ -205,7 +205,7 @@ Cliquez sur `Ouvrir`{.action} après avoir séléctionné le fichier généré d
 
 ![07 update license 02](images/07-update-license02.png){.thumbnail}
 
-Cliquez sur `Apply License`{.action}
+Cliquez sur `Apply License`{.action}.
 
 ![07 update license 03](images/07-update-license02.png){.thumbnail}
 
