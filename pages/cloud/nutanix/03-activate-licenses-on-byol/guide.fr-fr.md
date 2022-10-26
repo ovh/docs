@@ -46,7 +46,7 @@ Vous pouvez installer toutes les licences à partir de **Prism Central**.
 
 #### Récupération du résumé de votre configuration
 
-Nous allons récupérer le résumé de la configuration du cluster pour le déposer sur le portail Nutanix et générer des licences. Ce fichier est un fichier **CSF (Cluster Summary  File)**.
+Nous allons récupérer le fichier **CSF (Cluster Summary  File)** qui contient le résumé de la configuration du cluster.
 
 Dans **Prism Central**, cliquez sur l'icône en forme d'`engrenage`{.action} pour aller dans les paramètres.
 
