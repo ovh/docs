@@ -47,11 +47,11 @@ The only plan available is *Essential*.
 
 Here is an overview of the *Essential* plan capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes | Network                |
-| ------------ | -------------------------- | ---------------- | ---------------------- |
-| *Essential*  | 1                          | No               | Public                 |
+| Plan         | Number of nodes by default | Additional nodes |
+| ------------ | -------------------------- | ---------------- |
+| *Essential*  | 1                          | No               |
 
-The *Essential* plan offer an automatic  backup retention of 2 days and doesn't support private networks (vRack)
+The *Essential* plan offer an automatic backup retention of 2 days. It supports public or private networks (vRack).
 
 #### Nodes and replicas
 

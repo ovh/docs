@@ -53,13 +53,13 @@ Three plans are available:
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Read replicas | MySQL License   | Network                |
-| ------------ | -------------------------- | ------------- | --------------- | ---------------------- |
-| *Essential*  | 1                          | No            | Community       | Public only            |
-| *Business*   | 2                          | Planned       | Community       | Public & Private vRack |
-| *Enterprise* | 3                          | Planned       | Community       | Public & Private vRack |
+| Plan         | Number of nodes by default | Read replicas | MySQL License   |
+| ------------ | -------------------------- | ------------- | --------------- |
+| *Essential*  | 1                          | No            | Community       |
+| *Business*   | 2                          | Planned       | Community       |
+| *Enterprise* | 3                          | Planned       | Community       |
 
-Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network, read replicas and backup retention.
+Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
 #### Nodes and replicas
 
@@ -102,9 +102,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 
 MySQL clusters are reachable through default port 3306.
 
-Public networking can be used for all the offers.
-
-Private networking (vRack) is available for *Business* and *Enterprise*.
+Public as well as private networking (vRack) can be used for all the offers.
 
 When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
 

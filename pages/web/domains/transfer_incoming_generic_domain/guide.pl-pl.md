@@ -10,7 +10,7 @@ order: 01
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 20-10-2022**
+**Ostatnia aktualizacja z dnia 24-10-2022**
 
 ## Wprowadzenie
 
@@ -131,6 +131,16 @@ Po zatwierdzeniu zamówienia i kodu transferu aktualny operator (którym nie jes
 Jeśli odmowa została wydana przez aktualny operator rejestracji, skontaktuj się z nim, aby dowiedzieć się, dlaczego odmówił rejestracji.
 
 Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz `Web Cloud`{.action} i przejdź do sekcji `Domeny`{.action}, następnie kliknij `Operacje w toku`{.action}.
+
+> [!Primary]
+>
+> Transfer domeny z rozszerzeniem ".fr" różni się nieznacznie od opisanego powyżej procesu. Odblokuj domenę i pobierz jej kod transferu od aktualnego operatora.
+> Złóż zamówienie na transfer i wprowadź kod transferu, jak opisano powyżej.
+>
+> Po uruchomieniu transferu, całkowity czas **transferu domeny ".fr" wynosi co najmniej 8 dni.**
+>
+> W przypadku **sprzeciwu wobec transferu ze strony aktualnego rejestratora**, przeniesienie **nastąpi mimo wszystko**, ale do sfinalizowania operacja ta zajmie **minimum 22 dni**.
+>
 
 ### Etap 5: zarządzaj domeną za pomocą OVHcloud
 

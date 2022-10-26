@@ -10,11 +10,11 @@ order: 01
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 20.10.2022**
+**Letzte Aktualisierung am 24.10.2022**
 
 ## Ziel
 
-Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können Ihren Domainnamen zu OVHcloud übertragen, indem Sie eine Bestellung erzeugen; der Vorgang dauert anschließend zwischen 1 und 10 Tagen.
+Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können Ihren Domainnamen zu OVHcloud übertragen, indem Sie eine Bestellung erzeugen; der Vorgang dauert anschließend bis zu 10 Tage.
 
 **Diese Anleitung erklärt, wie Sie einen generischen Domainnamen zu OVHcloud transferieren.**
 
@@ -35,12 +35,12 @@ Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können I
 - Der Zustand des Domainnamens ist "OK" oder "Transferable".
 - Der Domainname ist nicht abgelaufen und hat ein Ablaufdatum, das den Transfer noch ermöglicht (empfohlen sind mehr als 60 Tage).
 - Der Domainname ist zum Transfer entsperrt und Sie haben bereits den Transfer-Code oder können ihn anfordern.
-- Sie besitzen die Verfügungsberechtigung, um den Transfer des Domainnamen zu veranlassen.
+- Sie besitzen die Verfügungsberechtigung, um den Transfer des Domainnamens zu veranlassen.
 - Der Domaininhaber und/oder dessen Administratoren sind über den Transfer informiert.
 
 ## In der praktischen Anwendung
 
-Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahme mit Ihrem aktuellen Registrar und OVHcloud. Die folgende Tabelle enthält die zu kontaktierenden Personen sowie die Dauer der verschiedenen Schritte des Transfervorgangs.
+Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahme mit Ihrem aktuellen Registrar und OVHcloud. Die folgende Tabelle enthält die zu kontaktierenden Stellen sowie die Dauer der verschiedenen Schritte des Transfervorgangs.
 
 |Schritt|Beschreibung|Wer ist betroffen?|Wo?|Dauer|
 |---|---|---|---|---|
@@ -128,6 +128,16 @@ Sobald die Bestellung und der Transfer-Code bestätigt sind, wird der aktuelle R
 Wird eine Ablehnung vom aktuellen Registrar ausgesprochen, kontaktieren Sie den Registrar, um die Gründe dafür zu erfahren.
 
 Der Transferprozess kann über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu gestartet werden. Wählen Sie `Web Cloud`{.action} aus und gehen Sie in den Bereich `Domainnamen`{.action}. Klicken Sie dann auf `Laufende Operationen`{.action}.
+
+> [!primary]
+>
+> Der Transfer eines Domainnamens mit der Endung ".fr" unterscheidet sich geringfügig von dem oben beschriebenen Vorgang. Sie müssen den Domainnamen freigeben und ihren Transfer-Code beim aktuellen Registrar beziehen.
+> Initiieren Sie die Bestellung des Transfers und geben Sie den Transfer-Code wie oben beschrieben ein.
+>
+> Anschließend beträgt die Gesamtfrist für den **Transfer eines ".fr" Domainnamens mindestens 8 nicht reduzierbare Tage.**
+>
+>Im Fall einer **Ablehnung des Transfers seitens des aktuellen Registrars** wird der Transfer **trotzdem durchgeführt**, benötigt jedoch **mindestens 22 nicht reduzierbare Tage**, bis er abgeschlossen ist.
+>
 
 ### Schritt 5: Domainnamen bei OVHcloud verwalten
 

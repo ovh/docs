@@ -10,7 +10,7 @@ order: 01
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 20/10/2022**
+**Ultimo aggiornamento: 24/10/2022**
 
 ## Obiettivo
 
@@ -131,6 +131,16 @@ Una volta convalidato l'ordine e il codice di trasferimento, il Registrar attual
 Se il provider attuale emette un rifiuto, contatta il provider per sapere perché l'ha rifiutata.
 
 Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Web Cloud`{.action} e accedi alla sezione `Domini`{.action}, poi clicca su `Operazioni in corso`{.action}.
+
+> [!Primary]
+>
+> Il trasferimento di un dominio con l'estensione ".fr" differisce leggermente dal processo descritto sopra. È necessario sbloccare il dominio e recuperare il codice di trasferimento presso l'attuale Registrar.
+> Avvia l'ordine di trasferimento e inserisci il codice di trasferimento come descritto in precedenza.
+>
+> Una volta avviato il trasferimento, il termine totale del **trasferimento di un dominio in ".fr" richiede almeno 8 giorni incompressibili.**
+>
+> In caso di **opposizione al trasferimento da parte dell'attuale Registrar**, il trasferimento **si effettuerà comunque**, ma richiederà un **minimo di 22 giorni incompressibili** per essere completato.
+>
 
 ### Step 5: gestire il dominio con OVHcloud
 

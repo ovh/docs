@@ -10,7 +10,7 @@ order: 01
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 20/10/2022**
+**Última atualização: 24/10/2022**
 
 ## Objetivo
 
@@ -132,6 +132,16 @@ Depois de validar a encomenda e o código de transferência, o agente registador
 Se o agente registador atual recusar o pedido, contacte o agente registador para saber por que razão o recusou.
 
 O processo de transferência pode ser reiniciado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `Web Cloud`{.action} e aceda à secção `Nomes de domínio`{.action} e clique em `Operações em curso`{.action}.
+
+> [!Primary]
+>
+> A transferência de um domínio com a extensão ".fr" difere ligeiramente do processo descrito acima. Deve desbloquear o seu nome de domínio e recuperar o código de transferência junto do agente de registo atual.
+> Inicie o comando da transferência e introduza o código de transferência como descrito anteriormente.
+>
+> Uma vez iniciada a transferência, o prazo total de **transferência de um nome de domínio para ".fr" demora, no mínimo, 8 dias incompressíveis**.
+>
+> Em caso de **oposição à transferência pelo agente de registo atual**, a transferência **será efetuada no entanto**, mas o prazo de transferência será de pelo **menos 22 dias úteis** para ser finalizado.
+>
 
 ### Etapa 5: gerir o seu domínio com a OVHcloud
 
