@@ -135,7 +135,7 @@ Lorsque vous aurez terminé la configuration vous verrez dans votre vRack ces é
 
 ![01 - vRack Configuration 01](images/01-vrack-configuration01.png){.thumbnail}
 
-Les trois clusters sont pour l'instant accessibles à partir des l'URL **Prism Central** de chaques clusters.
+Les trois clusters sont pour l'instant accessibles à partir des l'URL **Prism Central** de chaque clusters.
 
 <a name="supprpc"></a>
 #### Etape 3.1.2 Suppression des enregistrements **Prism Central** pour les clusters de Roubaix et Gravelines.
@@ -194,7 +194,7 @@ Connectez-vous en SSH au cluster **Prism Element** de Gravelines.
 
 ```bash
 ssh nutanix@adresse_ip_prism_element_Gravelines
-saisissez le mot de passe de Prism Element
+Saisissez le mot de passe de Prism Element
 ```
 Saisissez cette commande :
 
@@ -209,7 +209,7 @@ Ce message apparait lors de la déconnexion à Prism Central.
 Cluster unregistration is currently in progress. This operation may take a while.
 ```
 
-Saisissez cette commande
+Saisissez cette commande :
 
 ```bash
 ncli cluster info
@@ -419,7 +419,7 @@ ssh nutanix@adresse_ip_privee_Prism_element_Gravelines
 Saisissez le mot de passe du compte Nutanix de Prism Element
 ```
 
-Executez cette commmande pour chaque VM que nous allons déplacer dans le **Storage Container** en remplaçant **nomvm** par le nom de la machine virtuelle (Dans notre Plan de reprise d'activité nous avons trois machines virtuelles à Gravelines une avec Windows, une autre sous Linux ainsi que la gateway qui donne accès à Internet). 
+Exécutez cette commande pour chaque VM que nous allons déplacer dans le **Storage Container** en remplaçant **nomvm** par le nom de la machine virtuelle (Dans notre Plan de reprise d'activité nous avons trois machines virtuelles à Gravelines une avec Windows, une autre sous Linux ainsi que la gateway qui donne accès à Internet). 
 
 ```bash
 acli vm.update_container nomvm container=UsedForDR
@@ -428,7 +428,7 @@ Saisissez le mot de passe du compte Nutanix de Prism Element
 <a name="creacat"></a>
 #### Etape 3.1.7 Création d'une catégorie qui servira lors de la mise en place du P.R.A
 
-Nons allons créer une catégorie avec deux valeurs dans **Prism Central** pour affectuer les machines virtuelles concernées par la réplication.
+Nous allons créer une catégorie avec deux valeurs dans **Prism Central** pour affectuer les machines virtuelles concernées par la réplication.
 
 Faites défiler le menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
 
@@ -494,7 +494,7 @@ Choisissez le cluster de Roubaix et cliquez sur `Save`{.action}.
 
 ![09 - Create Protection Policy Roubaix 04](images/09-create-data-protection-roubaix04.png){.thumbnail}
 
-En haut à gauche à coté de Disaster Recovery cliquez sur `Enable`{.action}. 
+En haut à gauche à coté de **Disaster Recovery** cliquez sur `Enable`{.action}. 
 
 ![09 - Create Protection Policy Roubaix 05](images/09-create-data-protection-roubaix05.png){.thumbnail}
 
