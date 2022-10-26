@@ -1,6 +1,6 @@
 ---
 title: '3CX - configuration et utilisation'
-excerpt: "Configuration basique d'un SIP Trunk OVHcloud avec l'IPBX 3CX et deux DDI."
+excerpt: "Découvrez comment configurer un SIP Trunk OVHcloud avec l'IPBX 3CX et deux DDI"
 slug: configuration_basique_dun_sip_trunk_ovh_sur_3cx_phone_system
 legacy_guide_number: g1575
 section: IPBX
@@ -10,17 +10,20 @@ section: IPBX
 
 ## Objectif
 
-Découvrez comment configurer 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **D**ialling **I**nward). Voici le scénario : 
+Pour configurer 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **D**ialling **I**nward), nous allons suivre le sénario suivant : 
 
-- 1 SIP Trunk : XX XX XX XX 90
-- 2 DDI : XX XX XX XX 26 et XX XX XX XX 10
-- 2 Extensions : 1000 et 1001
+>
+> - 1 SIP Trunk : XX XX XX XX 90
+> - 2 DDI : XX XX XX XX 26 et XX XX XX XX 10
+> - 2 Extensions : 1000 et 1001
+>
+> Les deux extensions peuvent passer des appels sortants via le trunk. 
+> L'extension 100 reçoit les appels du DDI XX XX XX XX 26 et présente ce DDI en appel sortant.
+> L'extension 101 reçoit les appels du DDI XX XX XX XX 10 et présente ce DDI en appel sortant.
+> Les appels reçus directement sur le numéro du trunk sont redirigés vers le répondeur de l'extension 100.
+>
 
-Les deux extensions peuvent passer des appels sortants via le trunk. 
-L'extension 100 reçoit les appels du DDI XX XX XX XX 26 et présente ce DDI en appel sortant.
-L'extension 101 reçoit les appels du DDI XX XX XX XX 10 et présente ce DDI en appel sortant.
-
-Les appels reçus directement sur le numéro du trunk sont redirigés vers le répondeur de l'extension 100.
+**Découvrez comment configurer un SIP Trunk OVHcloud avec l'IPBX 3CX et deux DDI.**
 
 ## Prérequis
 
