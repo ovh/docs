@@ -1,0 +1,67 @@
+---
+title: Premier pas avec l'interface NSX-T
+slug: nsx-t-first-steps
+excerpt: Découvrez l'interface de NSX-T
+section: NSX-T
+order: 01
+---
+
+**Dernière mise à jour le 26/10/2022**
+
+> [!warning]
+> Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, il seront finalisées 
+>
+
+
+
+## Objectif
+
+**Ce guide est une introduction à l'interface NSX-T**
+
+NSX-T est une solution de gestion de réseau logiciel **Sofware Defined networking (SDN)** fourni par VMware, OVHcloud propose ce service vient en remplacement de de NSX-V. Il est intégré dans les solutions **VMware on OVHcloud**. 
+
+
+> [!warning]
+> OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+>
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+>
+
+
+
+## Prérequis
+
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhS
+ubsidiary=fr))
+
+## En pratique
+
+### Connexion à l'interface d'administration de NSX-T
+
+La connexion à NSX-T se fait à partir de l'URL de votre cluster VMware fourni par OVHcloud de la forme **https://pcc-xxxxx.ovh.xx".
+
+Sur la page d'accueil de votre cluster cliquez sur l'icône **NSX NSX-T**.
+
+![01 NSX-T Connection 01](images/01-nsxt-connection01.png)
+
+Saisissez vos informations d'identifications et cliquez sur `LOG IN`{.action}.
+
+> [!warning]
+> Le compte utilisateur est celui de votre cluster VMWARE suivi de **@nom-fqdn-votre-pcc** 
+>
+
+![01 NSX-T Connection 02](images/01-nsxt-connection02.png)
+
+
+
+
+
+
+
+
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
