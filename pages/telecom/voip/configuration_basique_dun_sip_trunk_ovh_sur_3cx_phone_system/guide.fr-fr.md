@@ -60,7 +60,7 @@ Nous allons configurer le trunk sur 3CX, à l'aide du Template.
 
 Complétez le formulaire pour sélectionner le template OVHcloud. 
 
-- Dans le champ **Choisir un Pays** sélectionnez le pays de votre Trunk. Dans ce guide nous sélectionnons `FR`.
+- Dans le champ **Choisir un Pays**, sélectionnez le pays de votre Trunk. Dans ce guide nous sélectionnons `FR`.
 - Dans le champ **Sélectionner un opérateur de votre pays**, sélectionnez `OVH`.
 - Dans **Numéro principal**, entrez le numéro de votre trunk (ici, `0033XXXXXXX90`).
 - Vérifiez les informations et cliquez sur `OK`{.action}.
@@ -72,8 +72,8 @@ L'écran suivant affiche les informations de configuration du Trunk (Proxy, port
 Veuillez saisir les informations d'authentification du trunk dans le formulaire suivant : 
 
 - Dans le champ **ID d'authentification (aka SIP User ID)**, saisissez le nom d'utilisateur de votre trunk. (Dans notre exemple 0033XXXXXXX90)
-- Dans le champ **Mot de passe d'authentification** mettez le mot de passe SIP de votre trunk. 
-- Dans le champ **Nombre d'appels simultanés maximum** saisissez la valeur correspondante à votre trunk. 
+- Dans le champ **Mot de passe d'authentification**, tapez le mot de passe SIP de votre trunk. 
+- Dans le champ **Nombre d'appels simultanés maximum**, saisissez la valeur correspondante à votre trunk. 
 
 Choisissez ensuite la terminaison des appels passés directement sur le trunk. Dans l'exemple, l'option `Messagerie vocale de l'extension` est sélectionnée avec l'extension `1000...`. 
 
@@ -96,7 +96,7 @@ Configurez l’extension 1000 pour lui permettre de présenter le DDI XX XX XX X
 
 - Dans l'interface d'administration de 3CX, rendez-vous sur la catégorie `Utilisateurs`{.action}
 - Double cliquez sur l'extension `1000`
-- Dans le champ **Numéro présenté** mettez le DDI à présenter. Dans notre cas : 0033XXXXXXX26
+- Dans le champ **Numéro présenté**, saisissez le DDI à présenter. Dans notre cas : 0033XXXXXXX26
 - Cliquez sur `OK`{.action} pour prendre en compte la modification.
 
 ![3CX Phone Systeme](images/3cx_phone_system-trunk05.png){.thumbnail}
@@ -107,7 +107,7 @@ Créez et configurez l'extension 1001 :
 - Cliquez sur le bouton `Ajouter`{.action}.
 - Dans le champ **Extension**, Saisissez `1001`.
 - Saisissez ensuite les Nom, Prénom, Adresse mail et le numéro de mobile sur la fiche de création de l'extension. 
-- Dans le champ **Identifiant d'appelant transmis** mettez le DDI à présenter. Dans l'exemple du guide, il s'agit du 0033XXXXXXX10.
+- Dans le champ **Identifiant d'appelant transmis**, saisissez le DDI à présenter. Dans l'exemple du guide, il s'agit du 0033XXXXXXX10.
 - Cliquez sur `Appliquer`{.action} pour prendre en compte la modification.
 
 ![3CX Phone Systeme](images/3cx_phone_system-trunk06.png){.thumbnail}
@@ -118,8 +118,8 @@ Créez des règles d'appel entrant lorsque les DDI sont appelés.
 
 - Dans l'interface d'administration de 3CX, rendez-vous sur la catégorie `Règles Entrantes`{.action}.
 - Cliquez sur le bouton `Ajouter une règle SDA`{.action}.
-- Dans le champ **Nom** mettez le nom de la route. Dans notre cas nous mettons `Call-In-XXXXXXX26`.
-- Dans le champ **SDA/DID** sélectionnez le DDI 0033XXXXXXX26.
+- Dans le champ **Nom**, saisissez le nom de la route. Dans notre cas nous mettons `Call-In-XXXXXXX26`.
+- Dans le champ **SDA/DID**, sélectionnez le DDI 0033XXXXXXX26.
 - Dans le champ **Extension**, choisissez la 1000.
 - Cliquez sur `OK`{.action} pour valider la configuration.
 
