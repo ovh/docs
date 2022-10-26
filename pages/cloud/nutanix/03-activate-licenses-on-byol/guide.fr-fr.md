@@ -46,7 +46,7 @@ Vous pouvez installer toutes les licences à partir de **Prism Central**.
 
 #### Récupération du résumé de votre configuration
 
-Nous allons récupérer le résumé de la configuration du cluster pour le déposer sur le portail Nutanix et générer des licences.
+Nous allons récupérer le résumé de la configuration du cluster pour le déposer sur le portail Nutanix et générer des licences. Ce fichier est un fichier **CSF (Cluster Summary  File)**.
 
 Dans **Prism Central**, cliquez sur l'icône en forme d'`engrenage`{.action} pour aller dans les paramètres.
 
@@ -90,7 +90,7 @@ Dans votre espace client **Nutanix** cliquez sur `Manage Licenses`{.action}
 
 ![03 create NSF for PC 01](images/03-create-nsf-for-pc01.png){.thumbnail}
 
-Ouvrez le fichier `ntnx_csf...` que vous avez généré à partir de **Prism Central**.
+Ouvrez le fichier **CSF** généré par **Prism Central** qui commence par `ntnx_csf...`.
 
 ![03 create NSF for PC 02](images/03-create-nsf-for-pc02.png){.thumbnail}
 
@@ -118,7 +118,7 @@ Cliquez sur `Enregistrer`{.action} pour sauver le fichier de licence sur votre o
 
 ![03 create NSF for PC 08](images/03-create-nsf-for-pc08.png){.thumbnail}
 
-Revenez sur sur **Prism Central** dans la gestion des licences et cliquez sur `Upload`{.action} pour installer le fichier de licences.
+Revenez sur sur **Prism Central** dans la gestion des licences et cliquez sur `Upload`{.action} pour installer le fichier de licences. Ce fichier est le fichier **LSF (License Summary File)**.
 
 ![04 Add license to PC 01](images/04-add-license-to-pc01.png){.thumbnail}
 
@@ -148,7 +148,7 @@ Cliquez sur `Download`{.action}.
 
 ![05 generate report with licenses 03](images/05-generate-report-with-licenses03.png){.thumbnail}
 
-CLiquez sur `Enregistrer`{.action} pour enregistrer le fichier de configuration sur votre ordinateur.
+Cliquez sur `Enregistrer`{.action} pour sauvegarder le fichier **LSF** contenant le résumé des licences sur votre ordinateur.
 
 ![05 generate report with licenses 04](images/05-generate-report-with-licenses04.png){.thumbnail}
 
@@ -188,7 +188,7 @@ CLiquez sur `Confirm`{.action}.
 
 ![06 generate nsf with licenses removed 08](images/06-generate-nsf-with-license-removed08.png){.thumbnail}
 
-Cliquez sur `Enregistrer`{.action} pour sauvegarder le fichier de licence sur votre poste.
+Cliquez sur `Enregistrer`{.action} pour sauvegarder le fichier **LSF** contenant la licence mise à jour sur votre poste.
 
 ![06 generate nsf with licenses removed 09](images/06-generate-nsf-with-license-removed09.png){.thumbnail}
 
