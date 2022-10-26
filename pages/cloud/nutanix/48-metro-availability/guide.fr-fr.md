@@ -536,7 +536,7 @@ Cliquez sur `Create`{.action}.
 
 ![09 - Create Protection Policy Roubaix 14](images/09-create-data-protection-roubaix14.png){.thumbnail}
 
-Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines, après une première copie complète, les données seront synchronisés en permanence de Roubaix vers Gravelines.
+Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines, après une première copie complète, les données seront synchronisées en permanence de Roubaix vers Gravelines.
 
 ![09 - Create Protection Policy Roubaix 15](images/09-create-data-protection-roubaix15.png){.thumbnail}
 
@@ -552,7 +552,7 @@ Choisissez comme nom `GRAVELINES-TO-ROUBAIX` dans **Policy Name**, gardez **Loca
 
 ![10 - Create Protection Policy Gravelines 02](images/10-create-data-protection-gravelines02.png){.thumbnail}
 
-Conservez **Local AZ**, sélectionnez le cluster de Roubaix et cliquez sur  sur `Save`{.action}.
+Conservez **Local AZ**, sélectionnez le cluster de Roubaix et cliquez sur `Save`{.action}.
 
 ![10 - Create Protection Policy Gravelines 03](images/10-create-data-protection-gravelines03.png){.thumbnail}
 
@@ -560,7 +560,7 @@ Cliquez sur `+ Add Schedule`{.action}.
 
 ![10 - Create Protection Policy Gravelines 04](images/10-create-data-protection-gravelines04.png){.thumbnail}
 
-Choisissez ces options  `Synchronous`{.action} pour **Protection Type** et  `Automatic`{.action} pour **Failure Detection Mode**, ensuite cliquez sur `Save Schedule`{.action}.
+Choisissez ces options `Synchronous`{.action} pour **Protection Type** et  `Automatic`{.action} pour **Failure Detection Mode**, ensuite cliquez sur `Save Schedule`{.action}.
 
 ![10 - Create Protection Policy Gravelines 05](images/10-create-data-protection-gravelines05.png){.thumbnail}
 
@@ -599,7 +599,7 @@ Nous allons donc créer 3 sous-réseaux supplémentaires sur les clusters de Gra
 
 Aidez-vous de ce guide pour créer des VLAN sur vos clusters Nutanix [Isoler les machines de gestion de la production](https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/).
 
-six nouveaux sous-réseaux sont visibles au travers de votre interface **Prism Central** dans le tableau de bord **Subnets**
+Six nouveaux sous-réseaux sont visibles au travers de votre interface **Prism Central** dans le tableau de bord **Subnets**
 
 ![11 - Create Test Subnet 01](images/11-create-testsubnet01.png){.thumbnail}
 
