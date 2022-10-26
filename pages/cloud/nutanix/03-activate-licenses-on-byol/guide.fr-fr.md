@@ -6,7 +6,7 @@ section: Premiers pas
 order: 04
 ---
 
-**Dernière mise à jour le 17/10/2022**
+**Dernière mise à jour le 26/10/2022**
 
 ## Objectif
 
@@ -28,7 +28,7 @@ order: 04
 
 > [!warning]
 >
-> OVHcloud propose Nutanix en version  *Bring Your Own Licence* (BYOL), ce qui signifie que vous devez, en tant que client OVHcloud, fournir les licences du cluster.
+> OVHcloud propose Nutanix en version *Bring Your Own Licence* (BYOL), ce qui signifie que vous devez, en tant que client OVHcloud, fournir les licences du cluster.
 > Lorsque le cluster Nutanix est commandé en mode BYOL, le cluster est livré avec une version d'essai de 90 jours. Vous devez donc, en tant que client, installer vos licences pendant cette période.
 >
 
@@ -80,7 +80,7 @@ Toujours dans **Prism Central**, rendez-vous sur la page des licences et cliquez
 
 Le navigateur web se lance et vous propose de vous connecter au portail Nutanix.
 
-Saisissez vos informations d'identification et connectez-vous au portail.
+Saisissez vos informations d'identification pour vous connecter.
 
 ![02 portal connection 02](images/02-portal-connection02.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Dans la rubrique **NCM Ultimate** cliquez sur `Select Licences`{.action}.
 
 ![03 create NSF for PC 04](images/03-create-nsf-for-pc04.png){.thumbnail}
 
-Cochez la case à coté de votre `votre cluster`{.action} et cliquez sur `Save`{.action}.
+Sélectionnez votre `votre cluster`{.action} et cliquez sur `Save`{.action}.
 
 ![03 create NSF for PC 05](images/03-create-nsf-for-pc05.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Cliquez sur `Confirm`{.action}.
 
 ![03 create NSF for PC 07](images/03-create-nsf-for-pc07.png){.thumbnail}
 
-Cliquez sur `Sauvegardez`{.action} pour sauver le fichier de licence sur votre ordinateur.
+Cliquez sur `Enregistrer`{.action} pour sauver le fichier de licence sur votre ordinateur.
 
 ![03 create NSF for PC 08](images/03-create-nsf-for-pc08.png){.thumbnail}
 
@@ -132,11 +132,11 @@ Cliquez sur `Apply License`{.action}
 
 La licence est installée sur votre cluster.
 
-### Desinstallation des licences
+### Désinstallation des licences
 
-Il est parfois nécessaire de desinstaller des licences pour les reinstaller sur un autre cluster, si le cluster qui contient les licences est encore disponible vous devez libérer vos licences à partir de **Prism Central**.
+Il est parfois nécessaire de désinstaller des licences pour les réinstaller sur un autre cluster, si le cluster qui contient les licences est encore disponible vous devez libérer vos licences à partir de **Prism Central**.
 
-Au travers de **Prism Central** cliquez sur `l'engrenage`{.action} en haut à droite pour aller dans les paramètrages.
+Au travers de **Prism Central** cliquez sur `l'engrenage`{.action} en haut à droite pour aller dans les paramètres.
 
 ![05 generate report with licences 01](images/05-generate-report-with-licenses01.png){.thumbnail}
 
@@ -168,7 +168,7 @@ Cliquez sur `Ouvrir`{.action}.
 
 ![06 generate nsf with licenses removed 03](images/06-generate-nsf-with-license-removed03.png){.thumbnail}
 
-Cliquez sur la barre de `défilement`{.action}.
+Cliquez sur la barre de `défilement`{.action} pour aller au bas de la fenêtre.
 
 ![06 generate nsf with licenses removed 04](images/06-generate-nsf-with-license-removed04.png){.thumbnail}
 
@@ -188,7 +188,7 @@ CLiquez sur `Confirm`{.action}.
 
 ![06 generate nsf with licenses removed 08](images/06-generate-nsf-with-license-removed08.png){.thumbnail}
 
-Cliquez sur `Enregistrer`{.action}. pour sauvegarder le fichier de licence sur votre poste.
+Cliquez sur `Enregistrer`{.action} pour sauvegarder le fichier de licence sur votre poste.
 
 ![06 generate nsf with licenses removed 09](images/06-generate-nsf-with-license-removed09.png){.thumbnail}
 
