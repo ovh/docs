@@ -23,7 +23,7 @@ Este tutorial explica los pasos que debe seguir para cambiar el dominio de su si
 
 > [!warning]
 >
-La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+>La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
 > Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
@@ -46,7 +46,7 @@ Para cambiar el dominio de acceso al sitio web, deberá realizar diversas accion
 
 ### Etape 1 - declarar el nuevo dominio en su alojamiento compartido <a name="step1"></a>
 
-Declare su nuevo dominio con ayuda de nuestra documentación sobre el[adición de un multisitio a su alojamiento compartido](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/). Declare también su subdominio en `wwx` si desea, por ejemplo, que ` www.NewDomain.tld` muestre también su sitio web además de `NewDomain.tld`.
+Declare su nuevo dominio con ayuda de nuestra documentación sobre el[adición de un multisitio a su alojamiento compartido](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/). Declare también su subdominio en `wwx` si desea, por ejemplo, que `www.NewDomain.tld` muestre también su sitio web además de `NewDomain.tld`.
 
 Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 
@@ -66,9 +66,9 @@ Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 > - [Gestionar un certificado SSL en un alojamiento web](https://docs.ovh.com/us/es/hosting/gestionar-un-certificado-ssl-en-un-alojamiento-web/)
 > - [Habilitar HTTPS en un sitio web con certificado SSL](https://docs.ovh.com/us/es/hosting/activar-https-en-un-sitio-web-con-ssl/)
 >
-> Para el certificado SSL *Let's Encrypt* gratuito, solo tiene que activar la opción `SSL` **ya** para su nuevo dominio a través de la pestaña `Multisitios`{.action} de su alojamiento. Haga clic en el botón `Acciones`{.action} situado sobre la tabla que muestra los multisitios y seleccione `Regenerar el certificado SSL`{.action}. La regeneración tardará al menos 2 horas en realizarse.
+> Para el certificado SSL *Let's Encrypt* gratuito, solo tiene que activar la opción `SSL` **desde ahora** para su nuevo dominio a través de la pestaña `Multisitios`{.action} de su alojamiento. Haga clic en el botón `Acciones`{.action} situado sobre la tabla que muestra los multisitios y seleccione `Regenerar el certificado SSL`{.action}. La regeneración tardará al menos 2 horas en realizarse.
 >
-> Para los certificados SSL de pago *Sectigo DV* y *Sectigo EV* propuestos por OVHcloud, estos últimos solo son válidos para un único nombre de dominio y su subdominio en `www.< br>
+> Para los certificados SSL de pago *Sectigo DV* y *Sectigo EV* propuestos por OVHcloud, estos últimos solo son válidos para un único nombre de dominio y su subdominio en `www`.<br>
 > **Cuando llegue al [paso 3](#step3) de esta guía**, deberá eliminar su certificado SSL de pago para contratar otro para su nuevo dominio.<br>
 > *Atención: La eliminación es irreversible y no se realizará ninguna devolución por el tiempo restante de su antiguo certificado SSL. Asegúrese de que los pasos 1 y 2 se han realizado correctamente.*
 >
@@ -94,7 +94,7 @@ La mayoría de los sitios web utilizan bases de datos para funcionar. El árbol 
 >
 > Atención, las operaciones descritas en el paso 2 son extremadamente sensibles y pueden tener consecuencias graves para su sitio web si no se efectúan con precaución. Si tiene alguna duda, no intente nada y contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/).
 >
-Antes de realizar cualquier acción, le recomendamos que obtenga una [copia de seguridad de su espacio de almacenamiento FTP](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/) y una [copia de seguridad de su base de datos](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/). para restaurar el sitio web en caso de manipulación incorrecta.
+> Antes de realizar cualquier acción, le recomendamos que obtenga una [copia de seguridad de su espacio de almacenamiento FTP](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/) y una [copia de seguridad de su base de datos](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/). Para restaurar el sitio web en caso de manipulación incorrecta.
 >
 
 Vamos a diferenciar dos tipos de sitios web: 

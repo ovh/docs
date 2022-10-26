@@ -67,7 +67,7 @@ Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 >
 > Para o certificado SSL *Let's Encrypt* gratuito, basta-lhe ativar a opção `SSL` **a a partir de agora** para o seu novo domínio através do separador `multi-sites`{.action} do seu alojamento. A seguir, clique no botão `ações`{.action} na parte superior da tabela, indicando os seus multistas e depois `Regenerar o certificado SSL`{.action}. A regeneração demorará, no mínimo, 2 horas para ser realizada.
 >
-> Para os certificados SSL pagos *Sectigo DV* e *Sectigo EV* propostos pela OVHcloud, estes últimos são válidos apenas para um domínio e o seu subdomínio em 'ww`.<br>
+> Para os certificados SSL pagos *Sectigo DV* e *Sectigo EV* propostos pela OVHcloud, estes últimos são válidos apenas para um domínio e o seu subdomínio em `www`.<br>
 > **Uma vez chegado a [etapa 3](#step3) deste guia**, deverá eliminar o seu certificado SSL pago a fim de subscrever outro para o seu novo domínio.<br>
 > *Atenção, a eliminação é irreversível e nenhum reembolso será efetuado durante o resto do tempo do seu antigo certificado SSL. Certifique-se de que os passos 1 e 2 estão a ser realizados corretamente.*
 >
