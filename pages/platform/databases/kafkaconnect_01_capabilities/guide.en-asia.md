@@ -6,7 +6,7 @@ section: Kafka Connect - Guides
 order: 010
 ---
 
-**Last updated April 4<sup>th</sup>, 2022**
+**Last updated October 26, 2022**
 
 ## Objective
 

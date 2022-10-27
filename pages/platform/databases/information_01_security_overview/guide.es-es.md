@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/concepts-security-overview/'
 ---
 
-**Last updated 23rd December 2021**
+**Last updated October 26, 2022**
 
 ## Objective
 
