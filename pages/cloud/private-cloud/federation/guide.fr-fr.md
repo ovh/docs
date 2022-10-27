@@ -5,7 +5,7 @@ excerpt: "Découvrez comment utiliser votre serveur Active Directory comme sourc
 section: Fonctionnalités VMware vSphere
 ---
 
-**Dernière mise à jour le 10/02/2022**
+**Dernière mise à jour le 27/10/2022**
 
 ## Objectif
 
@@ -37,7 +37,7 @@ Afin de préparer la mise en place de la configuration, vous devez récupèrer l
 - Base DN (Base Distinguished Name) pour les groupes. Il s'agit du DN à partir duquel seront recherchés les groupes. Par exemple, cn=Groups,dc=example,dc=com
 - Identifiant et mot de passe d'un utilisateur du domaine qui sera utilisé pour la connection au serveur LDAPS. Il doit être au minimum en lecture seule sur la section du serveur Active Directory pour les deux « Base DN » choisis précédemment. Identifiant pre-Windows 2000 sous la forme UPN (user@example.com).
 
-Pour plus d'informations, vous pouvez vous réfèrer à la [documentation VMware à ce sujet](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.psc.doc/GUID-98B36135-CDC1-435C-8F27-5E0D0187FF7E.html){.external}.
+Pour plus d'informations, vous pouvez vous réfèrer à la [documentation VMware à ce sujet](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.authentication.doc/GUID-98B36135-CDC1-435C-8F27-5E0D0187FF7E.html){.external}.
 
 En complément des informations précédentes, vous devez récupèrer l'empreinte du certificat SSL (SHA1 Fingerprint) du serveur LDAPS Active Directory.
 
@@ -51,20 +51,20 @@ Get-ChildItem -Path Cert:\LocalMachine\MY | Select-Object -property FriendlyName
 
 Ici, il s'agit de la valeur à droite du signe deux-points ( : ) :
 
-```shell
+```powershell
 > Thumbprint : BB:46:CA:6B:FC:92:4E:96:B4:BB:6E:44:7E:8F:AD:4C:C9:32:AB:AB
 ```
 
 - Vous pouvez aussi utiliser la commande OpenSSL suivante (depuis une machine Linux/Unix/Mac distante) :
 
-```shell
+```powershell
 openssl s_client -connect ad.example.com:636 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 ```
 
 Ici, il s'agit de la valeur à droite du signe égal ( = ) :
 
 ```shell
-> SHA1 Fingerprint=BB:46:CA:6B:FC:92:4E:96:B4:BB:6E:44:7E:8F:AD:4C:C9:32:AB:AB
+> SHA1 Fingerprint=XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:Xx
 ```
 
 ### Autoriser la connexion au serveur Active Directory depuis votre Hosted Private Cloud
@@ -73,19 +73,19 @@ Récupérez l'adresse IP de votre Hosted Private Cloud par la méthode de votre 
 
 Via cette commande sur le serveur Active Directory ou une machine Windows distante :
 
-```shell
+```bash
 nslookup pcc-198-51-100-121.ovh.com
 ```
 
 Ici, il s'agit de la valeur à la fin de la dernière ligne :
 
-```shell
+```console
 > Address:  198.51.100.121
 ```
 
 Il est également possible d'utiliser la commande suivante (depuis une machine Linux/Unix/Mac distante) :
 
-```shell
+```bash
 host pcc-198-51-100-121.ovh.com
 ```
 
@@ -109,27 +109,11 @@ Adaptez cette configuration à votre entreprise et mettez en place la régle de 
 
 ### Ajouter votre serveur Active Directory comme source d'authentification
 
-La mise en place d'un serveur Active Directory comme source d'authentification peut être effectuée grâce à l'API OVHcloud.
+A partir de votre espace client OVHcloud allez dans 
 
-Récupérez votre « serviceName » en utilisant l'appel API suivant :
 
-> [!api]
->
-> @api {GET} /dedicatedCloud
->
 
-Effectuez ensuite la mise en place du serveur Active Directory comme source d'authentification.
 
-Vous devrez spécifier les informations récupérées précédemment. Ne cochez pas la case « noSsl ».
-
-> [!api]
->
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory
->
-
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/federation_create.png){.thumbnail}
-
-Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.
 
 > [!primary]
 >
@@ -139,29 +123,10 @@ Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la s
 
 ### Autoriser un utilisateur Active Directory à accéder à votre Hosted Private Cloud
 
-Vous avez la possibilité d'autoriser un utilisateur issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud, grâce à l'API OVHcloud.
+Maintenant que votre cluster VMware est connecté à votre annuaire active directory vous pouvez rajouter des utisateurs de cet annuaire pour se connecter sur votre cluster VMware.
 
-Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
 
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
->
 
-Effectuez l'ajout de l'utilisateur issu de votre Active Directory.
-
-Vous devrez spécifier le nom d'utilisateur « pre-Windows 2000 » tel qu'indiqué dans votre Active Directory.
-
-> [!api]
->
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser
-
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser](images/federation_grant_user.png){.thumbnail}
-
-Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
-Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
-
-Une fois autorisé, l'utilisateur et ses permissions seront modifiables directement depuis votre espace client OVHcloud comme n'importe quel utilisateur de votre Hosted Private Cloud.
 
 > [!primary]
 >
@@ -170,25 +135,8 @@ Une fois autorisé, l'utilisateur et ses permissions seront modifiables directem
 
 ### Autoriser un groupe Active Directory à accéder à votre Hosted Private Cloud
 
-Vous avez la possibilité d'autoriser directement un ensemble d'utilisateurs (groupe) issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud, grâce à l'API OVHcloud.
+Vous avez la possibilité d'autoriser directement un ensemble d'utilisateurs (groupe) issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud au travers de l'espace client OVHcloud.
 
-Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
-
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
->
-
-Effectuez l'ajout du groupe issu de votre Active Directory.
-
-Vous devrez spécifier le nom du groupe « pre-Windows 2000 » tel qu'indiqué dans votre Active Directory.
-
-> [!api]
->
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup
-
-
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/federation_grant_group.png){.thumbnail}
 
 Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
 Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
