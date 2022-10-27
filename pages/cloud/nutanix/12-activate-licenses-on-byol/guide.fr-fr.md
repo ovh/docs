@@ -10,12 +10,12 @@ order: 12
 
 ## Objectif
 
-**Ce document vous montre comment activer vos licences sur une solution Nutanix on OVHcloud en mode *Bring Your Own Licence* (BYOL)**
+**Découvrez comment activer vos licences sur une solution Nutanix on OVHcloud en mode *Bring Your Own Licence* (BYOL)**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Prérequis
@@ -24,11 +24,13 @@ order: 12
 - Être connecté sur vos clusters via **Prism Central**.
 - Posséder des licences Nutanix et les avoir à disposition sur le portail Nutanix.
 
-## Présentation
+## En pratique
+
+### Présentation
 
 > [!warning]
 >
-> OVHcloud propose Nutanix en version *Bring Your Own Licence* (BYOL), ce qui signifie que vous devez, en tant que client OVHcloud, fournir les licences du cluster.
+> OVHcloud vous propose Nutanix en version *Bring Your Own Licence* (BYOL), ce qui signifie que vous devez, en tant que client OVHcloud, fournir les licences du cluster.
 > Lorsque le cluster Nutanix est commandé en mode BYOL, le cluster est livré avec une version d'essai de 90 jours. Vous devez donc, en tant que client, installer vos licences pendant cette période.
 >
 
@@ -39,8 +41,6 @@ Trois types de licences existent, pour :
 - **Les add-ons**.
 
 Vous pouvez installer toutes les licences à partir de **Prism Central**.
-
-## En pratique
 
 ### Installation des licences
 
@@ -70,7 +70,6 @@ Cliquez en haut à droite sur `Show all downloads`{.action}
 
 Le fichier **CSF** se trouve sur votre poste.
 
-
 ![01 generate-report report 06](images/01-generate-report-pc06.png){.thumbnail}
 
 #### Connexion au portail Nutanix 
@@ -95,7 +94,7 @@ Ouvrez le fichier **CSF** généré par **Prism Central** qui commence par `ntnx
 
 ![03 create NSF for PC 02](images/03-create-nsf-for-pc02.png){.thumbnail}
 
-Faites défiler `la fenêtre`{.action}. pour ajouter vos licences de clusters. 
+Faites défiler la fenêtre. pour ajouter vos licences de clusters. 
 
 ![03 create NSF for PC 03](images/03-create-nsf-for-pc03.png){.thumbnail}
 
@@ -103,7 +102,7 @@ Dans la rubrique **NCM Ultimate** cliquez sur `Select Licences`{.action}.
 
 ![03 create NSF for PC 04](images/03-create-nsf-for-pc04.png){.thumbnail}
 
-Nous allons maintenant enregistrer le fichier **LSF (License Summary File)** qui contient la licence sur votre poste. 
+Enregistrez maintenant le fichier **LSF (License Summary File)** qui contient la licence sur votre poste. 
 
 Sélectionnez votre `votre cluster`{.action} et cliquez sur `Save`{.action}.
 
