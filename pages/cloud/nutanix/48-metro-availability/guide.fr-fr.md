@@ -1,8 +1,8 @@
  ---
-title: Configuration d'un plan de reprise d'activité avec Metro
+title: "Configuration d'un plan de reprise d'activité avec Metro"
 slug: metro-availability
 excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
-section: Plan de Reprise d'Activité
+section: "Plan de Reprise d'Activité"
 order: 06
 ---
 
@@ -18,27 +18,27 @@ order: 06
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
-[Etape 1 Prérequis](#prerequis)<br /> 
-[Etape 2 Présentation](#presentation)<br />
-[Etape 3 En pratique](#enpratique)<br />
-&ensp;&ensp;[Etape 3.1 Configuration](#configuration)<br />
-&emsp;&emsp;[Etape 3.1.1 Interconnexion des trois clusters](#connectcl)<br />
-&emsp;&emsp;[Etape 3.1.2 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)<br />
-&emsp;&emsp;[Etape 3.1.3 Enregistrement des deux clusters sur le **Prism Central** d'Erith](#enregpc)<br />
-&emsp;&emsp;[Etape 3.1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)<br />
-&emsp;&emsp;[Etape 3.1.5 Création de deux Storage Containers](#addsc)<br />
-&emsp;&emsp;[Etape 3.1.6 Déplacement des machines virtuelles dans le Storage Container](#deplst)<br />
-&emsp;&emsp;[Etape 3.1.7 Création d'une catégorie qui servira lors de la mise en place du P.R.A](#creacat)<br />
-&emsp;&emsp;[Etape 3.1.8 Ajout des machines virtuelles dans les catégories](#addvmcat)<br />
-&emsp;&emsp;[Etape 3.1.9 Mise en place des réplications synchrones entre Roubaix et Gravelines](#confreplsync)<br />
-&emsp;&emsp;[Etape 3.1.10 Création de sous-réseaux nécessaires au plan de reprise d'activité](#addsublan)<br />
-&emsp;&emsp;[Etape 3.1.11 Mise en place des plans de reprises d'activités](#adddr)<br />
-&ensp;&ensp;[Etape 3.2 Validation du plan de reprise d'activité](#validation)<br />
-&emsp;&emsp;[Etape 3.2.1 Contrôle du plan de reprise d'activité](#ctrldr)<br />
-&emsp;&emsp;[Etape 3.2.2 Live migration des machines virtuelles de Roubaix sur Gravelines](#livemigration)<br />
-&emsp;&emsp;[Etape 3.2.3 Opérations à effectuer après une migration](#aftermigration)<br />
-&emsp;&emsp;[Etape 3.2.4 Exécution du plan de reprise d'activité en condition réelle](#epmcr)<br />
-[Etape 3 Aller plus loin](#gofurther)<br />
+[Etape 1 Prérequis](#prerequis)
+[Etape 2 Présentation](#presentation)
+[Etape 3 En pratique](#enpratique)
+    - [Etape 3.1 Configuration](#configuration)
+        - [Etape 3.1.1 Interconnexion des trois clusters](#connectcl)
+        - [Etape 3.1.2 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)
+        - [Etape 3.1.3 Enregistrement des deux clusters sur le **Prism Central** d'Erith](#enregpc)
+        - [Etape 3.1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)
+        - [Etape 3.1.5 Création de deux Storage Containers](#addsc)
+        - [Etape 3.1.6 Déplacement des machines virtuelles dans le Storage Container](#deplst)
+        - [Etape 3.1.7 Création d'une catégorie qui servira lors de la mise en place du P.R.A](#creacat)
+        - [Etape 3.1.8 Ajout des machines virtuelles dans les catégories](#addvmcat)
+        - [Etape 3.1.9 Mise en place des réplications synchrones entre Roubaix et Gravelines](#confreplsync)
+        - [Etape 3.1.10 Création de sous-réseaux nécessaires au plan de reprise d'activité](#addsublan)
+        - [Etape 3.1.11 Mise en place des plans de reprises d'activités](#adddr)
+- [Etape 3.2 Validation du plan de reprise d'activité](#validation)
+        - [Etape 3.2.1 Contrôle du plan de reprise d'activité](#ctrldr)
+        - [Etape 3.2.2 Live migration des machines virtuelles de Roubaix sur Gravelines](#livemigration)
+        - [Etape 3.2.3 Opérations à effectuer après une migration](#aftermigration)
+        - [Etape 3.2.4 Exécution du plan de reprise d'activité en condition réelle](#epmcr)
+[Etape 3 Aller plus loin](#gofurther)
 
 
 <a name="prerequis"></a> 
@@ -116,7 +116,7 @@ En plus de ce guide vous pouvez vous appuyer sur ces documentations [Hyperconver
 ### Etape 3.1 Configuration
 
 <a name="connectcl"></a>
-#### Etape 3.1.1 Interconnexion des trois clusters
+#### **Etape 3.1.1 Interconnexion des trois clusters**
 
 La première étape est de réaliser l'interconnexion des trois clusters sur le même **vRack** **OVHcloud**. 
 
@@ -138,13 +138,13 @@ Lorsque vous aurez terminé la configuration vous verrez dans votre vRack ces é
 Les trois clusters sont pour l'instant accessibles à partir des l'URL **Prism Central** de chaque clusters.
 
 <a name="supprpc"></a>
-#### Etape 3.1.2 Suppression des enregistrements **Prism Central** pour les clusters de Roubaix et Gravelines.
+#### **Etape 3.1.2 Suppression des enregistrements Prism Central pour les clusters de Roubaix et Gravelines.**
 
 Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il faut un témoin de cluster qui assure l'automatisation des tâches en cas d'indisponibilité d'un des clusters. Le témoin de cluster se trouve sur une machine virtuelle **Prism Central**.
 
 Le cluster d'Erith hébergera la machine virtuelle **Prism Central** pour les trois clusters et servira de témoin de clusters pour le plan de reprise d'activité entre Roubaix et Gravelines. 
 
-##### Désactivation de **Prism Central** sur le cluster de Roubaix
+##### **Désactivation de **Prism Central** sur le cluster de Roubaix**
 
 Connectez-vous en SSH au cluster **Prism Element** de Roubaix.
 
@@ -186,7 +186,7 @@ Saisissez cette commande :
 python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_Roubaix
 ```
 
-###### Désactivation de **Prism Central** sur le cluster de Gravelines
+###### **Désactivation de **Prism Central** sur le cluster de Gravelines**
 
 Connectez-vous en SSH au cluster **Prism Element** de Gravelines.
 
@@ -223,7 +223,7 @@ saisissez le mot de passe de Prism Central
 python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_Gravelines
 ```
 <a name="enregpc"></a>                                               
-#### Etape 3.1.3 Enregistrement des deux clusters sur le **Prism Central** d'Erith
+#### **Etape 3.1.3 Enregistrement des deux clusters sur le **Prism Central** d'Erith**
 
 Connectez-vous en ssh sur **Prism Element** de Roubaix :
 
@@ -324,7 +324,7 @@ Sélectionnez les machines virtuelles de **Prism Central** de Gravelines et Roub
 
 
 <a name="paramiscsi"></a>
-#### Etape 3.1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters
+#### **Etape 3.1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters**
 
 A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `cluster d'Erith`{.action}.
 
@@ -363,7 +363,7 @@ Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à 
 ![03 - Add iscsi address Roubaix 03](images/03-add-iscsi-address-roubaix03.png){.thumbnail}
 
 <a name="addsc"></a>
-#### Etape 3.1.5 Création de deux **Storage Containers** 
+#### **Etape 3.1.5 Création de deux **Storage Containers**** 
 
 Nous allons créer deux **Storage Containers** portant le même nom, un à Roubaix et l'autre à Gravelines. 
  
@@ -392,7 +392,7 @@ Dans la liste des **Storages Containers** vous verrez deux **Storage Containers*
 ![05 - Add-storage-container 06](images/05-add-storage-container06.png){.thumbnail}
 
 <a name="deplst"></a>
-#### Etape 3.1.6 Déplacement des machines virtuelles dans le **Storage Container**
+#### **Etape 3.1.6 Déplacement des machines virtuelles dans le **Storage Container****
 
 Nous allons déplacer le stockage des machines virtuelles sur les **Storage Container** que nous avons créé.
 
@@ -424,7 +424,7 @@ acli vm.update_container nomvm container=UsedForDR
 Saisissez le mot de passe du compte Nutanix de Prism Element
 ```
 <a name="creacat"></a>
-#### Etape 3.1.7 Création d'une catégorie qui servira lors de la mise en place du P.R.A
+#### **Etape 3.1.7 Création d'une catégorie qui servira lors de la mise en place du P.R.A**
 
 Nous allons créer une catégorie avec deux valeurs dans **Prism Central** pour affectuer les machines virtuelles concernées par la réplication.
 
@@ -445,7 +445,7 @@ La catégorie apparait dans la liste et elle est prête à être utilisé.
 ![06 - Add Categorie 04](images/06-add-categories04.png){.thumbnail}
 
 <a name="addvmcat"></a>
-#### Etape 3.1.8 Ajout des machines virtuelles dans les catégories
+#### **Etape 3.1.8 Ajout des machines virtuelles dans les catégories**
 
 Nous allons affecter deux machines virtuelles sur le cluster de Roubaix dans une catégorie et trois machines virtuelles sur le cluster de Gravelines dans une autre catégorie.
 
@@ -470,11 +470,11 @@ Ajouter la catégorie `ProcectedVM: Gravelines`, ensuite cliquez sur `Save`{.act
 ![08 - Add Categorie to VM Gravelines 02](images/08-add-categorie-to-vm-gravelines02.png){.thumbnail}
 
 <a name="confreplsync"></a>
-#### Etape 3.1.9 Mise en place des réplications synchrones entre Roubaix et Gravelines
+#### **Etape 3.1.9 Mise en place des réplications synchrones entre Roubaix et Gravelines**
 
 la réplication synchrone permet une réplication permanente avec 0 secondes de pertes de données.
 
-##### Mise en place de réplication entre Roubaix et Gravelines
+##### **Mise en place de réplication entre Roubaix et Gravelines**
 
 Au travers du menu principal de **Prism Central** cliquez sur `Protection Policies`{.action} dans le sous menu **Data Protection**.
 
@@ -538,7 +538,7 @@ Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines
 
 ![09 - Create Protection Policy Roubaix 15](images/09-create-data-protection-roubaix15.png){.thumbnail}
 
-##### Mise en place de réplication entre Gravelines et Roubaix
+##### **Mise en place de réplication entre Gravelines et Roubaix**
 
 La réplication peut être bidirectionnelle nous allons maintenant créer une réplication de Gravelines vers Roubaix.
 
@@ -579,7 +579,7 @@ Une deuxième stratégie de protection est en place.
 ![10 - Create Protection Policy Gravelines 09](images/10-create-data-protection-gravelines09.png){.thumbnail}
 
 <a name="addsublan"></a>
-#### Etape 3.1.10 Création de sous-réseaux nécessaires au plan de reprise d'activité
+#### **Etape 3.1.10 Création de sous-réseaux nécessaires au plan de reprise d'activité**
 
 Nous allons créer des sous-réseaux qui serviront pour les tests de plans de reprises d'activité intégrés dans Nutanix
 
@@ -602,7 +602,7 @@ Six nouveaux sous-réseaux sont visibles au travers de votre interface **Prism C
 ![11 - Create Test Subnet 01](images/11-create-testsubnet01.png){.thumbnail}
 
 <a name="adddr"></a>
-#### Etape 3.1.11 Mise en place des plans de reprises d'activités
+#### **Etape 3.1.11 Mise en place des plans de reprises d'activités**
 
 Maintenant que les réplications et les sous-réseaux sont en place nous allons mettre en œuvre des plans de reprises d'activités automatisés ou manuel à la demande pour :
 
@@ -610,7 +610,7 @@ Maintenant que les réplications et les sous-réseaux sont en place nous allons 
 - Tester que la réplication fonctionne correctement.
 - Redémarrer automatiquement les machine virtuelles membres du P.R.A en cas de défaillance d'un deux clusters. 
 
-##### Création du plan de reprise d'activité pour le cluster de Roubaix
+##### **Création du plan de reprise d'activité pour le cluster de Roubaix**
 
 Au travers du menu principal de **Prism Central** cliquez sur `Recovery Plans`{.action} dans le sous-menu **Data Protection**. 
 
@@ -682,7 +682,7 @@ Ensuite cliquez sur `Done`{.action}.
 
 ![12 - Create Recovery Plan Roubaix 12](images/12-create-roubaix-recovery-plan12.png){.thumbnail}
 
-##### Création du plan de reprise d'activité pour le cluster de Roubaix
+##### **Création du plan de reprise d'activité pour le cluster de Roubaix**
 
 Le plan de reprise d'activité est créé pour le site de Roubaix. cliquez sur `Create Recovery Plan`{.action} pour créer le plan de reprise d'activité de Gravelines.
 
@@ -777,9 +777,9 @@ Les deux plans de reprises d'activités sont en productions.
 ### Etape 3.2 Validation du plan de reprise d'activité 
 
 <a name="ctrldr"></a>
-#### Etape 3.2.1 Contrôle du plan de reprise d'activité
+#### **Etape 3.2.1 Contrôle du plan de reprise d'activité**
 
-##### Utilisation de l'option validation dans le plan de reprise d'activité
+##### **Utilisation de l'option validation dans le plan de reprise d'activité**
 
 Il est possible de valider le plan de reprise d'activité au travers de **Prism Central**.
 
@@ -799,7 +799,7 @@ Le plan de de reprise est validé, cliquez sur `Close`{.action}
 
 ![14 - Validate test recovery plan 04](images/14-validate-test-recovery-plan04.png){.thumbnail}
 
-##### Test du plan de reprise d'activité
+##### **Test du plan de reprise d'activité**
 
 Nous avons la possibilité de tester le plan de reprise d'activité sans impacter la production. Le test crée des machines virtuelles avec des noms différents sur le cluster de destination dans les VLAN créés précédemment.
 
@@ -832,7 +832,7 @@ cliquez sur `Clean Up`{.action}
 ![14 - Validate test recovery plan 10](images/14-validate-test-recovery-plan10.png){.thumbnail}
 
 <a name="livemigration"></a>
-#### Etape 3.2.2 Live migration des machines virtuelles de Roubaix sur Gravelines
+#### **Etape 3.2.2 Live migration des machines virtuelles de Roubaix sur Gravelines**
 
 Sur une infrastructure entièrement opérationnelle il est possible de déplacer des machines virtuelles d'un cluster à l'autre sans coupure de service.
 
@@ -869,12 +869,12 @@ Vous pouvez revenir sur la machine virtuelle et constater que le ping continue �
 ![15 - livemigration Roubaix to Gravelines 06](images/15-livemigration-roubaix-to-gravelines06.png){.thumbnail}
 
 <a name="aftermigration"></a>
-#### Etape 3.2.3 Opérations à effectuer après une migration à chaud
+#### **Etape 3.2.3 Opérations à effectuer après une migration à chaud**
 
 Après une migration il est nécessaire d'inverser la réplication et le fonctionnement du plan de reprise d'activité.
 
 
-##### Inversion du de la réplication
+##### **Inversion de la réplication**
 
 Au travers du menu principal de **Prism Central** cliquez sur `Protections Policies`{.action} dans le sous-menu **Data Protection**.
 
@@ -930,7 +930,7 @@ Cliquez sur `Update`{.action}.
 
 La réplication est inversée cliquez sur la `croix`{.action} pour fermer le plan de protection.
 
-##### Inversion du plan de reprise
+##### **Inversion du plan de reprise d'activité**
 
 Au travers du menu principal de **Prism Central** cliquez sur `Recovery Plans`{.action} dans le sous menu **Data Protection**.
 
@@ -977,7 +977,7 @@ Et cliquez sur `Done`{.action}.
 >
 
 <a name="epmcr"></a>
-#### Etape 3.2.4 Exécution du plan de reprise d'activité en condition réelle.
+#### **Etape 3.2.4 Exécution du plan de reprise d'activité en condition réelle**
 
 Nous allons simuler une perte totale de connexion à Gravelines où se trouve trois machines virtuelles dans le plan de reprise d'activité (la passerelle Internet et deux autres machines virtuelles).
 
