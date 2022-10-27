@@ -28,7 +28,7 @@ Lorsque vous commandez, via votre compte OVHcloud, un service Enterprise File St
 
 Le compte OVHcloud est par défaut le contact administrateur, technique et facturation du service. Retrouvez plus d’informations sur notre guide « [Gérer les contacts de ses services»](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/) ».
 
-![Enterprise File Storage 1](images/Netapp_Concept_1.PNG)
+![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
 > [!primary]
 >
@@ -40,7 +40,7 @@ Le compte OVHcloud est par défaut le contact administrateur, technique et factu
 Une fois votre service Enterprise File Storage commandé, vous avez à votre disposition un service correspondant à une capacité de stockage. Dans ce service, vous pouvez créer un ou plusieurs volumes, chaque volume correspond à une partition.  
 <br>Ces volumes vous permettent de stocker des fichiers et sont accessibles en réseau via une adresse IP fournie par OVHcloud. 
 
-![Enterprise File Storage 2](images/Netapp_Concept_2.PNG)
+![Enterprise File Storage 2](images/Netapp_Concept_2.png)
 
 > [!primary]
 >
@@ -59,7 +59,7 @@ Par sécurité, un volume n'est pas immédiatement accessible via son chemin d'a
 
 Ces règles sont constituées d'une adresse IP source de votre réseau au format x.x.x.x/x et d'un type de droits, soit lecture seule (RO) soit lecture/écriture (RW).
 
-![Enterprise File Storage 3](images/Netapp_Concept_3.PNG)
+![Enterprise File Storage 3](images/Netapp_Concept_3.png)
 
 > [!primary]
 >
@@ -80,7 +80,7 @@ Le snapshot est une copie des métadonnées du volume à un instant donné (inst
 
 La consommation quotidienne constatée des snapshots est comprise entre 1 et 5 % de la capacité du volume pour de nombreuses applications. Par conséquent, à chaque création de volume, OVHcloud réserve 5% de sa capacité pour les snapshots de celui-ci.
 
-![Enterprise File Storage 4](images/Netapp_Concept_4.PNG)
+![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
 Retrouvez plus d'informations sur le guide [« Gérer les snapshots d'un volume »](https://docs.ovh.com/ca/fr/storage/file-storage/netapp/volume-snapshots/).
 
