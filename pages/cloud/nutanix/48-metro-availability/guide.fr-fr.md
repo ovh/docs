@@ -18,9 +18,9 @@ order: 06
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
-[Etape 1 Prérequis](#prerequis)
-[Etape 2 Présentation](#presentation)
-[Etape 3 En pratique](#enpratique)
+- [Etape 1 Prérequis](#prerequis)
+- [Etape 2 Présentation](#presentation)
+- [Etape 3 En pratique](#enpratique)
     - [Etape 3.1 Configuration](#configuration)
         - [Etape 3.1.1 Interconnexion des trois clusters](#connectcl)
         - [Etape 3.1.2 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)
@@ -33,12 +33,12 @@ order: 06
         - [Etape 3.1.9 Mise en place des réplications synchrones entre Roubaix et Gravelines](#confreplsync)
         - [Etape 3.1.10 Création de sous-réseaux nécessaires au plan de reprise d'activité](#addsublan)
         - [Etape 3.1.11 Mise en place des plans de reprises d'activités](#adddr)
-- [Etape 3.2 Validation du plan de reprise d'activité](#validation)
+    - [Etape 3.2 Validation du plan de reprise d'activité](#validation)
         - [Etape 3.2.1 Contrôle du plan de reprise d'activité](#ctrldr)
         - [Etape 3.2.2 Live migration des machines virtuelles de Roubaix sur Gravelines](#livemigration)
         - [Etape 3.2.3 Opérations à effectuer après une migration](#aftermigration)
         - [Etape 3.2.4 Exécution du plan de reprise d'activité en condition réelle](#epmcr)
-[Etape 3 Aller plus loin](#gofurther)
+- [Etape 3 Aller plus loin](#gofurther)
 
 
 <a name="prerequis"></a> 
