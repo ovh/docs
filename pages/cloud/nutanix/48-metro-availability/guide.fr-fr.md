@@ -767,7 +767,7 @@ Ensuite cliquez sur `Done`{.action}.
 ![13 - Create Recovery Plan Gravelines 09](images/13-create-gravelines-recovery-plan09.png){.thumbnail}
 
 > [!primary]
-> 3 réseaux ont été rajoutés dans ce plan de reprise d'activité pcar la machine virtuelle Gateway utilise ces trois réseaux.
+> 3 réseaux ont été rajoutés dans ce plan de reprise d'activité car la machine virtuelle Gateway utilise ces trois réseaux.
 >
 
 Les deux plans de reprises d'activités sont en productions.
@@ -783,7 +783,7 @@ Les deux plans de reprises d'activités sont en productions.
 
 ##### Utilisation de l'option validation dans le plan de reprise d'activité
 
-Il est possible de demander à Prism Central de valider le plan de reprise d'activités.
+Il est possible de demander à **Prism Central** de valider le plan de reprise d'activités.
 
 Cliquez sur le `Recovery VM from Roubaix`{.action} à valider et tester.
 
@@ -814,7 +814,7 @@ Sélectionnez le cluster de Roubaix pour **Entity Failing Over From** et le clus
 ![14 - Validate test recovery plan 06](images/14-validate-test-recovery-plan06.png){.thumbnail}
 
 > [!primary]
-> Assurez-vous d'avoir les bonnes licences, Si vous avez choisi un cluster avec des licences chez OVHcloud il est nécessaire d'avoir souscrit le pack **Nutanix Advanced** sur le cluster de Roubaix et Gravelines.
+> Assurez-vous d'avoir les bonnes licences, Si vous avez choisi un cluster avec des licences chez OVHcloud il est nécessaire d'avoir souscrit le pack **Nutanix Advanced** sur les clusters de Roubaix et Gravelines.
 >
 
 Cliquez sur `Execute Anyway`{.action}.
@@ -825,7 +825,7 @@ Allez dans le tableau de bord des VM dans **Prism Central** et vous verrez les m
 
 ![14 - Validate test recovery plan 08](images/14-validate-test-recovery-plan08.png){.thumbnail}
 
-Revenez sur votre plan de reprise et cliquez sur `Clean-up test Entities`{.action}. pour supprimer les machines virtuelles de test.
+Revenez sur votre plan de reprise et cliquez sur `Clean-up test Entities`{.action} pour supprimer les machines virtuelles de test.
 
 ![14 - Validate test recovery plan 09](images/14-validate-test-recovery-plan09.png){.thumbnail}
 
@@ -886,7 +886,7 @@ Cliquez sur le plan de protection nommé `ROUBAIX TO GRAVELINES`{.action}.
 
 ![16 - invert replication aftr failover 02](images/16-invert-replication-after-failover02.png){.thumbnail}
 
-cliquez sur `Update`{.action}.
+Cliquez sur `Update`{.action}.
 
 ![16 - invert replication after failover 03](images/16-invert-replication-after-failover03.png){.thumbnail}
 
@@ -946,7 +946,7 @@ Au travers du menu **More** cliquez sur `Update`{.action}.
 
 ![17 - invert recovery plan after failover 03](images/17-invert-recovery-plan-after-failover03.png){.thumbnail}
 
-Dans locations modifiez mettez le cluster de Gravelines dans **Primary CLusters** et le cluster de Roubaix dans **Recovery Clusters**. et cliquez sur `Next`{.action}.
+Dans **locations** mettez le cluster de Gravelines dans **Primary CLusters** et le cluster de Roubaix dans **Recovery Clusters** et cliquez sur `Next`{.action}.
 
 ![17 - invert recovery plan after failover 04](images/17-invert-recovery-plan-after-failover04.png){.thumbnail}
 
@@ -972,7 +972,7 @@ Et cliquez sur `Done`{.action}.
 ![17 - invert recovery plan after failover 07](images/17-invert-recovery-plan-after-failover07.png){.thumbnail}
 
 > [!primary]
-> La réplication et le plan de reprise ont été inversés suite à une migration des machines virtuelles de Roubaix vers Gravelines.
+> La réplication et le plan de reprise ont été inversés à la suite d'une migration des machines virtuelles de Roubaix vers Gravelines.
 >
 > Pour revenir à la situation d'origine il faut effectuer à nouveau une migration à chaud et inverser la réplication et le plan de reprise d'activité.
 > Il est possible d'utiliser cette partie du guide en cas de déclenchement du plan de reprise d'activité en raison de l'indisponibilité d'un cluster.
@@ -981,7 +981,7 @@ Et cliquez sur `Done`{.action}.
 <a name="epmcr"></a>
 #### Etape 3.2.4 Exécution du plan de reprise d'activité en condition réelle.
 
-Nous allons simuler une perte totale de connexion à Gravelines où  se trouve trois machines virtuelles dans le plan de reprise d'activité (la passerelle Internet et deux autres machines virtuelles).
+Nous allons simuler une perte totale de connexion à Gravelines où se trouve trois machines virtuelles dans le plan de reprise d'activité (la passerelle Internet et deux autres machines virtuelles).
 
 Connectez-vous en ligne de commande et exécuter un ping permanent vers l'adresse publique de la passerelle.
 
@@ -1029,10 +1029,10 @@ Cliquez en haut à droite sur les `tâches`{.action} dans **Prism Central pour a
 ![18 - fail on Gravelines 03](images/18-fail-on-gravelines03.png){.thumbnail}
 
 > [!warning]
-> Lors d'un incident sur la totalité d'un cluster (Nombres de nœud insuffisants pour fonctionner, ou une coupure réseau) les machines virtuelles qui font partie du P.R.A et qui sont sur ce cluster vont être démarré sur l'autre cluster. 
-> Le RPO est de 0 (Recovery Point Objective) ce qui signifie qu'aucune perte de données ne sera à déplorer.
+> Lors d'un incident sur la totalité d'un cluster (Nombres de nœud insuffisants pour fonctionner, ou une coupure réseau) les machines virtuelles qui font partie du P.R.A et qui sont sur ce cluster vont être démarrées sur l'autre cluster. 
+> Le RPO est de 0 secondes (Recovery Point Objective) ce qui signifie qu'aucunes pertes de données ne sera à déplorer.
 >
-> Par contre les machines virtuelles vont mettre un certain temps à redémarrer sur l'autre cluster dans ce guide 3 machines virtuelles sont redémarrées sur le cluster distant, 4 minutes sont nécessaire pour le démarrage des machines virtuelles. Ce temps sera mesurable en effectuant un test sur le plan de reprise d'activité.
+> Par contre le redémarragage des machines virtuelles sur l'autre cluster va mettre un certain temps. Dans ce guide 3 machines virtuelles sont redémarrées sur le cluster distant, 4 minutes sont nécessaire pour le démarrage des machines virtuelles. Ce temps est mesurable en effectuant régulièrerment des tests sur les plans de reprise d'activité.
 >
 
 Revenez sur la console texte et vous allez voir que le ping fonctionne à nouveau.
@@ -1053,11 +1053,11 @@ Allez sur **Prism Central** dans la gestion des machines virtuelles, vous verrez
 
 Nous allons reconnecter les trois nœuds dans le vRack pour revenir en mode normal.
 
-Après le retour à la normale les machines virtuelles qui se trouvent sur le cluster d'origine sont toujours visibles mais éteinte. Vous pouvez les supprimer ou les conserver pour en cas de problèmes sur les machines virtuelles qui ont redémarré.
+Après le retour à la normale les machines virtuelles qui se trouvent sur le cluster d'origine sont toujours visibles mais éteintes. Vous pouvez les supprimer ou les conserver pour en cas de problèmes sur les machines virtuelles qui sont redémarrées.
 
 ![18 - fail on Gravelines 05](images/18-fail-on-gravelines05.png){.thumbnail}
 
-Il est possible de voir l'historique de **Disaster Recovery** dans **Prism Central**.
+Il est possible de voir l'historique de actions de **Disaster Recovery** dans **Prism Central**.
 
 Cliquez sur `l'engrenage`{.action} en haut à droite pour aller dans la configuration de **Prism Central**.
 
