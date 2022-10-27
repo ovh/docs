@@ -99,7 +99,7 @@ The database is now connected to the virtual network, we can use it from any com
 
 ### Step 4 - Adding a Public Cloud Instance to the vRack
 
-Follow this [guide](https://docs.ovh.com/de/public-cloud/public-cloud-first-steps/#create-instance) to create a new Public Cloud Instance
+Follow this [guide](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/) to create a new Public Cloud Instance
 
 
 > [!primary]
@@ -116,7 +116,7 @@ Follow this [guide](https://docs.ovh.com/de/public-cloud/public-cloud-first-step
 
 ### Step 5 - Example of verification with a Public Cloud Databases for Redis
 
-We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/de/public-cloud/public-cloud-first-steps/) page.
+We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/) page.
 
 Connect to the instance via SSH:
 
