@@ -1,4 +1,4 @@
- ---
+---
 title: "Configuration d'un plan de reprise d'activité avec Metro"
 slug: metro-availability
 excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
