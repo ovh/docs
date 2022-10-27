@@ -50,7 +50,7 @@ Quando encomenda, através da sua conta OVHcloud, um serviço Enterprise File St
 
 A conta OVHcloud é por predefinição o contacto administrador, técnico e faturação do serviço. Para mais informações, consulte o nosso manual ["Como gerir os contactos (gestores) dos serviços OVHcloud"](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
 
-![Enterprise File Storage 1](images/Netapp_Concept_1.PNG)
+![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
 > [!primary]
 >
@@ -63,7 +63,7 @@ Uma vez a oferta Enterprise File Storage em serviço, pode criar um ou vários v
 <br>Estes volumes permitem-lhe armazenar ficheiros e são acessíveis em rede através de um endereço IP fornecido pela OVHcloud.
 <br>A criação de um volume aciona automaticamente a criação de um caminho de acesso principal, bem como três caminhos de acesso secundários.
 
-![Enterprise File Storage 2](images/Netapp_Concept_2.PNG)
+![Enterprise File Storage 2](images/Netapp_Concept_2.png)
 
 > [!primary]
 >
@@ -82,7 +82,7 @@ Por razões de segurança, um volume não é imediatamente acessível através d
 
 Estas regras são constituídas por um endereço de IP source da sua rede em formato x.x.x.x/x e um tipo de permissões, seja leitura apenas (RO) ou leitura/escrita (RW).
 
-![Enterprise File Storage 3](images/Netapp_Concept_3.PNG)
+![Enterprise File Storage 3](images/Netapp_Concept_3.png)
 
 > [!primary]
 >
@@ -103,7 +103,7 @@ O snapshot é uma cópia dos metadados do volume num determinado momento (instan
 
 O consumo diário das snapshots varia entre 1 % e 5 % da capacidade do volume para numerosas aplicações. Por isso, a OVHcloud reserva 5% da sua capacidade para cada criação de volume.
 
-![Enterprise File Storage 4](images/Netapp_Concept_4.PNG)
+![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
 Para mais informações, consulte o guia ["Gerir as snapshots de um volume"](https://docs.ovh.com/pt/storage/file-storage/netapp/volume-snapshots/).
 
