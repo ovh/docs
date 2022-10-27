@@ -1,4 +1,4 @@
----
+ ---
 title: Configuration d'un plan de reprise d'activité avec Metro
 slug: metro-availability
 excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
@@ -98,7 +98,7 @@ Les informations de configuration des clusters utilisées par notre guide sont l
     + Masque : `255.255.252.0`
     + Version du cluster : `6.5`.
  
-- Cluster de Erith :
+- Cluster d'Erith :
     + Serveur 1 : adresse VM **CVM** `192.168.2.21`, adresse IP hyperviseur **AHV** `192.168.2.1`.
     + Serveur 2 : adresse VM **CVM** `192.168.2.22`, adresse IP hyperviseur **AHV** `192.168.2.2`.
     + Serveur 3 : adresse VM **CVM** `192.168.2.23`, adresse IP hyperviseur **AHV** `192.168.2.3`.
@@ -1083,7 +1083,7 @@ La liste des événemments survenus apparait, cliquez sur `Close pour fermer`{.a
 
 [Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/)
 
-[AHV Metro - Witness Option](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-witness-syncrep-pc-c.html]
+[AHV Metro - Witness Option](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-witness-syncrep-pc-c.html)
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
