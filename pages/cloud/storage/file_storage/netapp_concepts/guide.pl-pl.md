@@ -50,7 +50,7 @@ Po zamówieniu usługi Enterprise File Storage od 1 do 29 TB za pośrednictwem k
 
 Konto OVHcloud jest domyślnie kontaktem administracyjnym, technicznym i księgowym dla usługi. Więcej informacji znajdziesz w naszym przewodniku ["Zarządzanie kontaktami swoich usług"](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
 
-![Enterprise File Storage 1](images/Netapp_Concept_1.PNG)
+![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
 > [!primary]
 >
@@ -63,7 +63,7 @@ Po uruchomieniu usługi Enterprise File Storage możesz utworzyć jeden lub kilk
 <br>Wolumeny te umożliwiają przechowywanie plików i są dostępne w sieci za pośrednictwem adresu IP dostarczonego przez OVHcloud.
 <br>Tworzenie wolumenu automatycznie uruchamia tworzenie głównej ścieżki dostępu oraz trzech dodatkowych ścieżek dostępu.
 
-![Enterprise File Storage 2](images/Netapp_Concept_2.PNG)
+![Enterprise File Storage 2](images/Netapp_Concept_2.png)
 
 > [!primary]
 >
@@ -82,7 +82,7 @@ Ze względów bezpieczeństwa wolumen nie jest natychmiast dostępny poprzez jeg
 
 Reguły te składają się z adresu IP źródłowego Twojej sieci w formacie x.x.x/x oraz z jednego typu uprawnień, odczytu lub zapisu (RO).
 
-![Enterprise File Storage 3](images/Netapp_Concept_3.PNG)
+![Enterprise File Storage 3](images/Netapp_Concept_3.png)
 
 > [!primary]
 >
@@ -103,7 +103,7 @@ Snapshot jest kopią metadanych wolumenu w danej chwili (zrzut tabeli inodes).
 
 Zobserwowane dzienne zużycie snapshotów to od 1 do 5% pojemności wolumenu dla wielu aplikacji. W związku z tym, przy każdym utworzeniu wolumenu, OVHcloud rezerwuje 5% swojej pojemności na snapshoty wolumenu.
 
-![Enterprise File Storage 4](images/Netapp_Concept_4.PNG)
+![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
 Więcej informacji znajdziesz w przewodniku ["Zarządzanie snapshotami wolumenu"](https://docs.ovh.com/pl/storage/file-storage/netapp/volume-snapshots/).
 

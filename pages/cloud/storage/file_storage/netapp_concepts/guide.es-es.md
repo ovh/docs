@@ -50,7 +50,7 @@ Cuando contrata un servicio Enterprise File Storage, a través de su cuenta de O
 
 La cuenta de OVHcloud es por defecto el contacto administrador, técnico y de facturación del servicio. Para más información, consulte nuestra guía ["Gestionar los contactos de los servicios"](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).
 
-![Enterprise File Storage 1](images/Netapp_Concept_1.PNG)
+![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
 > [!primary]
 >
@@ -63,7 +63,7 @@ Una vez que haya contratado Enterprise File Storage, podrá crear uno o más vol
 <br>Estos volúmenes permiten almacenar archivos y son accesibles en red a través de una dirección IP proporcionada por OVHcloud.
 <br>La creación de un volumen desencadena automáticamente la creación de una ruta de acceso principal, así como tres caminos de acceso secundarios.
 
-![Enterprise File Storage 2](images/Netapp_Concept_2.PNG)
+![Enterprise File Storage 2](images/Netapp_Concept_2.png)
 
 > [!primary]
 >
@@ -82,7 +82,7 @@ Por seguridad, no es posible acceder inmediatamente a un volumen a través de su
 
 Estas reglas están formadas por una dirección IP de origen de la red en formato x.x.x/x y por un tipo de permisos, ya sea de solo lectura (RO) o de lectura-escritura (RW).
 
-![Enterprise File Storage 3](images/Netapp_Concept_3.PNG)
+![Enterprise File Storage 3](images/Netapp_Concept_3.png)
 
 > [!primary]
 >
@@ -103,7 +103,7 @@ El snapshot es una copia de los metadatos del volumen en un momento dado (instan
 
 El consumo diario constatado de los snapshots oscila entre el 1 y el 5% de la capacidad del volumen para numerosas aplicaciones. Por lo tanto, cada vez que se crean volúmenes, OVHcloud reserva el 5% de su capacidad para realizar snapshots de los volúmenes.
 
-![Enterprise File Storage 4](images/Netapp_Concept_4.PNG)
+![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
 Para más información, consulte la guía ["Gestionar los snapshots de un volumen"](https://docs.ovh.com/es/storage/file-storage/netapp/volume-snapshots/).
 

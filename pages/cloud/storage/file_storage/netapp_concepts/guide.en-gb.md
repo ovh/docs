@@ -28,7 +28,7 @@ When you order an Enterprise File Storage service between 1 and 58 TiB via your 
 
 By default, the OVHcloud account is the administrative, technical and billing contact for the service. You can find more information in our guide [“Managing contacts for your services”](https://docs.ovh.com/gb/en/customer/managing-contacts/).
 
-![Enterprise File Storage 1](images/Netapp_Concept_1.PNG)
+![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
 > [!primary]
 >
@@ -40,7 +40,7 @@ By default, the OVHcloud account is the administrative, technical and billing co
 Once you have ordered your Enterprise File Storage service, you will have a service corresponding to your storage capacity. In this service, you can create one or more volumes, each volume corresponds to a partition.
 <br>These volumes allow you to store files, and are networked through an IP address provided by OVHcloud.
 
-![Enterprise File Storage 2](images/Netapp_Concept_2.PNG)
+![Enterprise File Storage 2](images/Netapp_Concept_2.png)
 
 > [!primary]
 >
@@ -59,7 +59,7 @@ For security reasons, a volume is not immediately accessible via its path. You n
 
 A rule consists of a source IP address of your network in the format x.x.x.x/x and the type of access, either read-only (RO) or read/write (RW).
 
-![Enterprise File Storage 3](images/Netapp_Concept_3.PNG)
+![Enterprise File Storage 3](images/Netapp_Concept_3.png)
 
 > [!primary]
 >
@@ -80,7 +80,7 @@ The snapshot is a copy of the metadata of the volume at a given point in time (a
 
 The daily observed consumption of snapshots is between 1% and 5% of the volume's capacity for many applications. As a result, OVHcloud reserves 5% of its capacity for volume snapshots each time a volume is created.
 
-![Enterprise File Storage 4](images/Netapp_Concept_4.PNG)
+![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
 You can find more information in the [“Managing volume snapshots”](https://docs.ovh.com/gb/en/storage/file-storage/netapp/volume-snapshots/) guide.
 
