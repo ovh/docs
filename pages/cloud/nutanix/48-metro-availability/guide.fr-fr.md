@@ -57,7 +57,7 @@ Nous allons mettre en place un plan de reprise d'activité bidirectionnel entre 
 
 - Un cluster Nutanix à Roubaix en France avec des machines virtuelles répliquées à Gravelines.
 - Un cluster Nutanix à Gravelines en France avec des machines virtuelles répliquées à Roubaix.
-- Un cluster Nutanix à Erith en Angleterre pour Prism Central.
+- Un cluster Nutanix à Erith en Angleterre avec **Prism Central** qui servira de témoin dans le plan de reprise d'activité.
 
 Nous n'utiliserons qu'un seul **vRack** qui contiendra :
 
@@ -140,11 +140,9 @@ Les trois clusters sont pour l'instant accessibles à partir des l'URL **Prism C
 <a name="supprpc"></a>
 #### Etape 3.1.2 Suppression des enregistrements **Prism Central** pour les clusters de Roubaix et Gravelines.
 
-Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il faut un témoin de cluster qui assure l'automatisation des tâches de reprise d'activité en cas d'indisponibilité d'un des clusters. Le témoin de cluster est une machine virtuelle **Prism Central**.
+Pour pouvoir mettre en place une solution de plan de reprise d'activité avec **Metro Availability** il faut un témoin de cluster qui assure l'automatisation des tâches en cas d'indisponibilité d'un des clusters. Le témoin de cluster se trouve sur une machine virtuelle **Prism Central**.
 
-Les trois clusters doivent être connectés à une seule machine virtuelle **Prism Central**.
-
-La machine virtuelle qui servira de **Prism Central** pour l'administration des clusters et de témoin de cluster sera celle d'Erith, les machines virtuelles de **Prism Element** des sites de Roubaix et de Gravelines seront détachées du **Prism Central** d'origine pour être connectées au **Prism Central** d'Erith. 
+Le cluster d'Erith hébergera la machine virtuelle **Prism Central** pour les trois clusters et servira de témoin de clusters pour le plan de reprise d'activité entre Roubaix et Gravelines. 
 
 ##### Désactivation de **Prism Central** sur le cluster de Roubaix
 
