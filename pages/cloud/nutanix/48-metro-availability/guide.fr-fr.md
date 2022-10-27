@@ -6,7 +6,7 @@ section: Plan de Reprise d'Activité
 order: 06
 ---
 
-**Dernière mise à jour le 24/10/2022**
+**Dernière mise à jour le 27/10/2022**
 
 ## Objectif
 
@@ -46,7 +46,7 @@ order: 06
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via Prism Central.
-- Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloud avec des licences **Pack Advanced** si vous avez une offre packagée sur les deux clusters du P.R.A.
+- Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloudavec des licences **Pack Advanced** si vous avez une offre packagée sur les deux clusters du P.R.A. Ces 3 clusters devont être sur des sites distants pour assurer un maximum de sureté.
 - Avoir une latence de moins de 5ms entre les deux clusters répliqués.
 
 
@@ -74,7 +74,7 @@ Vous trouverez ci-dessous le schéma représentant les trois sites :
 
 Nous allons étape par étape mettre en place ce P.R.A (Plan de reprise d'activité).
 
-Les informations de configuration des clusters utilisés par notre guide sont les suivantes :
+Les informations de configuration des clusters utilisées par notre guide sont les suivantes :
 
 - Cluster de Roubaix :
     + Serveur 1 : adresse VM **CVM** `192.168.0.21`, adresse IP hyperviseur **AHV** `192.168.0.1`.
@@ -354,11 +354,11 @@ A partir du tableau de bord **Prism Central** cliquez sur le lien vers le `clust
 
 ![03 - Add iscsi address Roubaix 01](images/03-add-iscsi-address-roubaix01.png){.thumbnail}
 
-Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `nom du cluster  `{.action}.
+Sur le tableau de bord de **Prism Element** cliquez en haut à gauche sur le `nom du cluster`{.action}.
 
 ![03 - Add iscsi address Roubaix 02](images/03-add-iscsi-address-roubaix02.png){.thumbnail}
 
-Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur  `Save`{.action}.
+Faites défilez la fenêtre, ajouter une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur `Save`{.action}.
 
 ![03 - Add iscsi address Roubaix 03](images/03-add-iscsi-address-roubaix03.png){.thumbnail}
 
@@ -472,7 +472,7 @@ Ajouter la catégorie `ProcectedVM: Gravelines`, ensuite cliquez sur `Save`{.act
 <a name="confreplsync"></a>
 #### Etape 3.1.9 Mise en place des réplications synchrones entre Roubaix et Gravelines
 
-Nous allons mettre en place la réplication synchrone entre Roubaix et Gravelines.
+la réplication synchrone permet une réplication permanente avec 0 secondes de pertes de données.
 
 ##### Mise en place de réplication entre Roubaix et Gravelines
 
@@ -781,7 +781,7 @@ Les deux plans de reprises d'activités sont en productions.
 
 ##### Utilisation de l'option validation dans le plan de reprise d'activité
 
-Il est possible de demander à **Prism Central** de valider le plan de reprise d'activités.
+Il est possible de valider le plan de reprise d'activité au travers de **Prism Central**.
 
 Cliquez sur le `Recovery VM from Roubaix`{.action} à valider et tester.
 
@@ -801,7 +801,7 @@ Le plan de de reprise est validé, cliquez sur `Close`{.action}
 
 ##### Test du plan de reprise d'activité
 
-Il est possible de tester le plan de reprise d'activité sans impacter la production. Le test crée des machines virtuelles avec des noms différents sur le cluster secondaire dans les VLAN créés précédemment. 
+Nous avons la possibilité de tester le plan de reprise d'activité sans impacter la production. Le test crée des machines virtuelles avec des noms différents sur le cluster de destination dans les VLAN créés précédemment.
 
 Cliquez sur `Test`{.action}.
 
@@ -834,7 +834,7 @@ cliquez sur `Clean Up`{.action}
 <a name="livemigration"></a>
 #### Etape 3.2.2 Live migration des machines virtuelles de Roubaix sur Gravelines
 
-Si l'infrastructure est entièrement opérationnelle il est possible de faire des migrations à chaud sans coupure des machines virtuelles qui sont sur un cluster vers l'autre cluster du plan de reprise.
+Sur une infrastructure entièrement opérationnelle il est possible de déplacer des machines virtuelles d'un cluster à l'autre sans coupure de service.
 
 Allez sur une machine virtuelle qui se trouve à Roubaix et qui fait partie du plan de reprise nous allons lancer un ping vers le serveur DNS OVHcloud **213.186.33.99**.
 
