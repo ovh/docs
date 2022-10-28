@@ -196,4 +196,8 @@ If you would like to configure your email address on an email client or device (
 
 [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/multisites-configuring-multiple-websites/){.external}
 
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+
 Join our community of users on <https://community.ovh.com/en/>.

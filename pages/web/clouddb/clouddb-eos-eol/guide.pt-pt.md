@@ -30,3 +30,11 @@ Para mais informações, consulte a [política de fim de vida das bases de dados
 |PostgreSQL 12|A definir|A definir|A definir|
 |Redis 4.0|2021-09-07|2021-12-15|2022-03-16|
 |Redis 6.0|A definir|A definir|A definir|
+
+## Quer saber mais?
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

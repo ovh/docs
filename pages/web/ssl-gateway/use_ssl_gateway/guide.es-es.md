@@ -272,3 +272,11 @@ real_ip_header X-Forwarded-For;
 ```
 
 En la [documentación oficial](http://nginx.org/en/docs/http/ngx_http_realip_module.html){.external} (en inglés) encontrará más información sobre esta funcionalidad de Nginx.
+
+## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

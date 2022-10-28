@@ -124,4 +124,8 @@ cat nazwa_bazy.sql | mysql --host=serwer --user=użytkownik --port=port --passwo
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

@@ -305,4 +305,8 @@ Evita di utilizzare **"HAVING"**, ad esempio. Aumenta le tue richieste. Allo ste
 
 [Elenco degli indirizzi IP di cluster e hosting Web](https://docs.ovh.com/it/hosting/lista-indirizzi-ip-di-cluster-e-hosting-web/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

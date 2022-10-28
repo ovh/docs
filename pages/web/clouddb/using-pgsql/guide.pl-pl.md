@@ -106,3 +106,11 @@ pg_dump --host=serwer --port=port --user=użytkownik --password=password nazwa_b
 ```bash
 psql --host=serwer --port=port --user=użytkownik --password=password nazwa_bazy < nazwa_bazy.sql
 ```
+
+## Sprawdź również
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -10,7 +10,6 @@ excerpt: Sichern Sie die Verbindungen zu Ihrer Website
 
 ### Voraussetzungen
 
-
 > [!primary]
 >
 > - Sie haben bereits ein SSL Gateway bestellt <docs/web/ssl-gateway/order-ssl-gateway>.
@@ -19,7 +18,6 @@ excerpt: Sichern Sie die Verbindungen zu Ihrer Website
 
 ## Verwendung
 Hier erfahren Sie, wie Sie Ihr SSL Gateway verwenden.
-
 
 ### Konfiguration Ihrer Dienstleistung
 - Loggen Sie sich in [Ihr Kundencenter](https://www.ovh.com/manager){.external} ein.
@@ -70,8 +68,6 @@ Hier erfahren Sie, wie Sie Ihr SSL Gateway verwenden.
 |Einschränkungen der Quell-IPs|Wenn dieses Feld ausgefüllt ist, können sich nur die eingetragenen IPs und Netzwerke mit dem SSL Gateway verbinden|
 |Cipher-Konfiguration [[4]](#id8){.note-ref #id4}|Ermöglicht es Ihnen, verschiedene Sicherheitslevel für Ihr SSL/TLS-Zertifikat auszuwählen|
 
-
-
 > [!primary]
 >
 > [[1]](#){.note-ref #id5} - ([1](#id1){.fn-backref}) 
@@ -86,7 +82,6 @@ Hier erfahren Sie, wie Sie Ihr SSL Gateway verwenden.
 > [[4]](#){.note-ref #id8} - ([1](#id4){.fn-backref}) 
 > <cite>Das höchste Cipher-Level sorgt auch für den besten Schutz, funktioniert allerdings möglicherweise nicht mit älteren Browser-Versionen. Weitere Informationen zu Ciphers</cite>
 >
-
 
 ### Konfiguration Ihrer Domain
 Der folgende Block enthält 4 Tabs:
@@ -134,7 +129,6 @@ In dem Tab **„Domains“** können Sie Ihre Domains und Subdomains zu Ihrem SS
 
 ![Free Domain hinzufügen](images/11.PNG){.thumbnail}
 
-
 > [!faq]
 >
 > Sie haben ein SSL Gateway **„Advanced“**
@@ -154,20 +148,17 @@ In dem Tab **„Domains“** können Sie Ihre Domains und Subdomains zu Ihrem SS
 
 ![Advanced Domain hinzufügen](images/12.PNG){.thumbnail}
 
-
 > [!warning]
 >
 > Wenn Sie eine Domain oder Subdomain hinzufügen, erhalten Sie automatisch eine E-Mail mit dem Hinweis, die jeweilige Domain innerhalb von 3 Tagen auf die IP des SSL Gateways verweisen zu lassen.
 > Das ist notwendig, um die Erstellung des SSL/TLS-Zertifikats zu bestätigen.
 > 
 
-
 In dem Tab **„Server“** können Sie die IP-Adresse(n) des bzw. der Server verwalten, auf denen Ihre Website gehostet wird.
 
 - Klicken Sie auf `+ Server`{.action}, um eine IP-Adresse und den entsprechenden Port zu dem Server hinzuzufügen, auf dem sich Ihre Website befindet.
 
 ![Tab Server](images/13.PNG){.thumbnail}
-
 
 > [!faq]
 >
@@ -198,7 +189,6 @@ In dem Tab **„Server“** können Sie die IP-Adresse(n) des bzw. der Server ve
 
 >
 
-
 > [!warning]
 >
 > Es ist momentan noch nicht möglich, IPv6-Adressen auf Ihren Servern hinzuzufügen.
@@ -206,13 +196,9 @@ In dem Tab **„Server“** können Sie die IP-Adresse(n) des bzw. der Server ve
 > Ihr SSL Gateway konvertiert dann den IPv6-Traffic und leitet ihn völlig transparent zur IPv4-Adresse Ihres Servers.
 > 
 
-
 In dem Tab **„Tasks“** können Sie die laufenden Operationen auf Ihrem SSL Gateway einsehen.
 
-
 ![Tab Tasks](images/13-bis.PNG){.thumbnail}
-
-
 
 > [!warning]
 >
@@ -222,7 +208,6 @@ In dem Tab **„Tasks“** können Sie die laufenden Operationen auf Ihrem SSL G
 > ![HTTP only](images/14.PNG){.thumbnail}
 >
 In dem Tab **„Graphen“** werden die Verbindungen und Anfragen auf Ihr SSL Gateway pro Minute grafisch dargestellt.
-
 
 ![Tab Graphen](images/17.PNG){.thumbnail}
 
@@ -247,11 +232,9 @@ In dem Tab **„Graphen“** werden die Verbindungen und Anfragen auf Ihr SSL Ga
 >> 
 >
 
-
 ## Verlangerung des SSL-Zertifikats
 
 ### Wichtiger Hinweis
-
 
 > [!primary]
 >
@@ -285,7 +268,6 @@ Zum Zeitpunkt der Erstellung dieser Anleitung lauten diese Adressen **10.108.0.0
 
 Wenn Ihr Server die Option zulässt, können Sie einstellen, dass er diese Information automatisch anstelle der IP des SSL Gateways verwendet.
 
-
 #### Apache
 - Erstellen Sie folgende Datei:
 /etc/apache2/conf-available/remoteip.conf
@@ -297,7 +279,6 @@ Wenn Ihr Server die Option zulässt, können Sie einstellen, dass er diese Infor
 RemoteIPHeader X-Forwarded-For
 RemoteIPInternalProxy 213.32.4.0/24
 ```
-
 
 Sie können jetzt die Variablen %h mit %a in den LogFormat Anweisungen der Apache-Konfiguration ersetzen.
 
@@ -312,9 +293,7 @@ a2enconf remoteip
 service apache2 restart
 ```
 
-
 Weitere Informationen zu diesem Thema finden Sie in der [offiziellen Dokumentation von Apache](https://httpd.apache.org/docs/current/de/mod/mod_remoteip.html){.external}.
-
 
 #### Nginx
 - Öffnen Sie die Konfigurationsdatei der zu sichernden Seite. Sie finden diese in der Regel unter:
@@ -328,5 +307,12 @@ set_real_ip_from 213.32.4.0/24;
 real_ip_header X-Forwarded-For;
 ```
 
-
 Weitere Informationen zu diesem Thema finden Sie in der [offiziellen Dokumentation von Nginx](http://nginx.org/en/docs/http/ngx_http_realip_module.html){.external}.
+
+## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -93,3 +93,11 @@ Una vez que nuestra infraestrura haya detectado los cambios, recibirá un mensaj
 >
 > Cualquier cambio en la zona DNS puede tardar hasta 24 horas en aplicarse debido a la caché de los proveedores de acceso a internet.
 > 
+
+## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

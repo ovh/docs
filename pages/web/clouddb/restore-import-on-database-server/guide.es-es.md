@@ -163,4 +163,8 @@ psql —host=servidor —port=puerto —user=usuario —password=contraseña nom
 
 ## Más información
 
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

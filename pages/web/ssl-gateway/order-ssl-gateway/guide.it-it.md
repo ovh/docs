@@ -115,3 +115,11 @@ Una volta effettuate le operazioni necessarie, riceverai un'altra email con la c
 >
 > La propagazione delle modifiche della tua zona DNS può richiedere fino a 24 ore a causa delle informazioni memorizzate in cache presso i provider Internet.
 > 
+
+## Per saperne di più
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

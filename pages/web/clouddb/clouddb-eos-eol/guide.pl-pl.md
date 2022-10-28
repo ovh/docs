@@ -30,3 +30,11 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 |PostgreSQL 12|Do określenia|Do określenia|Do określenia|
 |Redis 4.0|2021-09-07|2021-12-15|2022-03-16|
 |Redis 6.0|Do określenia|Do określenia|Do określenia|
+
+## Sprawdź również
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

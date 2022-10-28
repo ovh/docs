@@ -89,4 +89,8 @@ To delete a database on your database server, go to the `Databases` tab, then cl
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>.
