@@ -25,3 +25,11 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 |PostgreSQL 12|À définir|À définir|À définir|
 |Redis 4.0|2021-09-07|2021-12-15|2022-03-16|
 |Redis 6.0|À définir|À définir|À définir|
+
+## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

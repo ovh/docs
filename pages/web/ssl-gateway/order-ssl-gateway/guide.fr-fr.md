@@ -16,8 +16,9 @@ order: 01
 > - Disposer d'un accès à la zone DNS de celui-ci.
 > 
 
+## En pratique
 
-## Commande
+### Commande
 - Afin de commander notre offre SSL Gateway, [cliquez ici](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external}.
 - Choisissez votre offre, et cliquez ensuite sur `Activer maintenant`{.action} ou `Commander`{.action}.
 
@@ -64,7 +65,7 @@ Notre système va ensuite détecter automatiquement la ou les adresses IP de vot
 - Laissez-vous guider et validez votre bon de commande.
 
 
-## Configuration de votre zone DNS
+### Configuration de votre zone DNS
 Une fois votre bon de commande validé, si vous n'avez pas coché la case de modification automatique, un e-mail vous sera envoyé afin de vous demander de faire pointer votre domaine ou sous-domaine vers l'infrastructure OVH dans un délai de 3 jours.
 
 
@@ -97,3 +98,11 @@ Une fois votre modification prise en compte par notre infrastructure, vous recev
 >
 > Toute modification de votre zone DNS peut prendre jusqu'à 24h avant de fonctionner, en raison du cache présent chez les fournisseurs d'accès internet.
 > 
+
+## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

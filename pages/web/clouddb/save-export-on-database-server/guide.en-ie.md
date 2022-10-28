@@ -119,4 +119,8 @@ pg_dump --host=server --port=port --user=usernmame --password=password database_
 
 [Restoring and importing a database to your database server](../restore-import-database)
 
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+
 Join our community of users on <https://community.ovh.com/en/>.
