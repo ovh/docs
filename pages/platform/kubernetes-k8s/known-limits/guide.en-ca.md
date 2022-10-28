@@ -130,9 +130,7 @@ In Openstack terms
 >> |---|---|---|---|---|---|
 >> | Ingress | IPv4 | TCP | Any | 10.2.0.0/16 | Allow trafic from pods|
 >> | Ingress | IPv4 | TCP | Any | 10.3.0.0/16 | Allow trafic from services|
-> It will allow on every nodes the trafic from the other nodes of your cluster.
->
-> It allow you to trust the internal trafic of all your cluster to every port on every nodes.
+> It allow you to trust the internal trafic between pods and services within the cluster.
 
 For more details, please refer to the [Creating and configuring a security group in Horizon documentation](../../public-cloud/setup_security_group/).
 
