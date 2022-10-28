@@ -93,7 +93,7 @@ La colonne `Diagnostic`{.action} vous permet de contrôler la configuration DNS 
 
 Pour configurer vos adresses e-mail, positionnez-vous sur l'onglet `Comptes e-mail`{.action}. Le tableau affiche les comptes que vous avez commandés sous la forme “*@configureme.me*”.
 
-Pour les configurer, cliquez sur le logo en forme de crayon.
+Pour les configurer, cliquez sur le bouton `...`{.action}, puis sur `Modifier`{.action}.
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
 

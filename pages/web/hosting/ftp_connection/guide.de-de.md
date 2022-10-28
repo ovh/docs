@@ -16,8 +16,8 @@ Mit OVHcloud Webhosting Angeboten verfügen Sie über einen Speicherplatz für d
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account (Um mehrere FTP Benutzer zu aktivieren benötigen Sie mindestens ein Pro oder Performance Webhosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). 
 
 ## In der praktischen Anwendung
 
@@ -42,6 +42,9 @@ Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVHclou
 Hier werden alle zum Speicherplatz gehörigen Informationen sowie eine Tabelle angezeigt, in der die für Ihr Webhosting angelegten FTP- und SSH-Benutzer aufgelistet werden.
 
 ![ftp login](images/connect-ftp-step1.png){.thumbnail}
+
+Wenn Sie einen neuen FTP/SSH-Benutzer von derselben Seite aus erstellen möchten, klicken Sie auf den Button "Benutzer erstellen" rechts.
+Wählen Sie den "Benutzer" und "Wurzelverzeichnis" aus und klicken Sie dann auf "Weiter". Wählen Sie ein Passwort für dieses neue Konto aus und klicken Sie auf "Weiter" und "Bestätigen".
 
 In den angezeigten Informationen finden Sie alle Elemente, die Sie für die Verbindung mit Ihrem Speicherplatz brauchen. Wenn nötig, lesen Sie die nachstehende Tabelle, um die Informationen zu identifizieren. Beachten Sie, dass je nach Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot eventuell nicht alle Angaben angezeigt werden.
 

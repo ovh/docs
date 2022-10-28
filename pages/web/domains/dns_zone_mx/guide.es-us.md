@@ -59,7 +59,7 @@ La tabla mostrará la configuración del dominio en OVHcloud. Cada línea corres
 
 ![Registro MX en la zona DNS](images/mx-records-dns-zone.png){.thumbnail}
 
-Si los registros MX ya existen y quiere sustituirlos, haga clic en el icono con forma de rueda dentada situado al final de la línea y seleccione  `Eliminar el registro`{.action}. No obstante, asegúrese de que siempre haya algún registro MX. Para ello, le recomendamos que vaya creando los nuevos registros MX deseados a medida que elimine los anteriores.
+Si los registros MX ya existen y quiere sustituirlos, haga clic en el botón `...`{.action}. a la derecha de cada línea de la tabla correspondiente y seleccione  `Eliminar el registro`{.action}. No obstante, asegúrese de que siempre haya algún registro MX. Para ello, le recomendamos que vaya creando los nuevos registros MX deseados a medida que elimine los anteriores.
 
 Para comprobar más rápidamente si ya existen registros MX, seleccione, utilizando el filtro situado sobre la tabla DNS, el campo de tipo **MX** y acepte para mostrar únicamente los registros DNS MX de su zona DNS.
 

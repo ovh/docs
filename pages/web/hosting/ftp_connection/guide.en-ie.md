@@ -16,7 +16,7 @@ OVH Web Hosting plans provide you with access to a storage space you can use to 
 
 ## Requirements
 
-- an [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}
+- an [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} (to activate multiple FTP users you need at least a Professional or Performance hosting).
 - access to the `Web Cloud`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
@@ -42,6 +42,9 @@ If you don’t have this information, log in to the [OVH Control Panel](https://
 The information about your storage space will appear, along with a table listing the FTP and SSH users created on your Web Hosting plan.
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
+
+If you want to create a new FTP/SSH user from the same page click `Create User`{.action} button on the right.
+Choose the `User`{.action} and `Root folder`{.action}, then click `Next`{.action}, choose a password for this new account and click `Next`{.action} and click `Confirm`{.action}.
 
 With this information, you should be able to find the items you need to log in to the storage space. If you are having trouble identifying this information, you can use the table below. Please note that some information may not appear, depending on which [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} you are using.
 

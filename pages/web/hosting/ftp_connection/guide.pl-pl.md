@@ -16,7 +16,7 @@ Wraz z pakietami hostingowymi OVHcloud otrzymujesz dostęp do przestrzeni dyskow
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} (aby aktywować wielu użytkowników FTP trzeba co najmniej Professional lub Performance hosting).
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce

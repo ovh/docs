@@ -93,7 +93,7 @@ You can use the `Diagnosis`{.action} column to modify the domain name’s DNS co
 
 To configure your email addresses, go to the `Email accounts`{.action} tab. The table displays the accounts that you have ordered in this format: “*@configureme.me*”.
 
-To configure them, click the `...`{.action} icon then "Edit".
+To configure them, click the `...`{.action} icon then `Edit`{.action}.
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
 

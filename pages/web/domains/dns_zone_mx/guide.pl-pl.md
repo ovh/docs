@@ -58,8 +58,7 @@ Aby zmodyfikować rekordy MX w konfiguracji OVHcloud Twojej domeny, zaloguj się
 W tabeli, która się wyświetli znajdziesz konfigurację Twojej domeny OVHcloud. Każdy wiersz odpowiada jednemu rekordowi DNS. Zalecamy sprawdzenie w pierwszym kroku, czy jakieś rekordy MX zostały już wcześniej dodane do konfiguracji DNS Twojej domeny. Możesz posłużyć się w tym celu oknem filtrowania.
 
 ![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
-
-Jeśli w konfiguracji są już zapisane rekordy MX i chcesz je zastąpić, kliknij ikonkę koła zębatego po prawej stronie każdego wiersza w tabeli odpowiadającego rekordowi, a następnie kliknij `Usuń rekord`{.action}. Jednocześnie zadbaj, aby domena cały czas posiadała co najmniej jeden rekord MX.
+Jeśli istnieją już pola MX i chcesz je zastąpić, kliknij przycisk `...`{.action} po prawej stronie każdego wiersza tabeli, po czym kliknij `Usuń rekord`{.action} wpis. Pamiętaj, aby podczas dodawania żądanych wpisów MX nie pozostawiać domeny bez rekordu MX.
 
 Aby sprawdzać szybciej, czy rekordy MX już istnieją, za pomocą filtra znajdującego się nad tabelą DNS wybierz pole typu **MX**, a następnie zatwierdź, aby wyświetlić tylko wpisy DNS MX w strefie DNS.
 

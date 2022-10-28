@@ -58,7 +58,7 @@ In der Tabelle wird die OVHcloud Konfiguration Ihrer Domain angezeigt. Jede Zeil
 
 ![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
-Wenn bereits MX-Einträge vorhanden sind und Sie diese ersetzen möchten, klicken Sie rechts am Ende jeder betreffenden Zeile auf das Zahnrad-Symbol und wählen Sie dann `Eintrag löschen`{.action} aus. Achten Sie jedoch darauf, dass für Ihre Domain immer ein MX-Eintrag bestehen bleibt, während Sie neue MX-Einträge hinzufügen.
+Wenn bereits MX-Einträge vorhanden sind und Sie diese ersetzen möchten, klicken Sie auf "..." rechts von jeder Zeile der betreffenden Tabelle und wählen Sie dann `Eintrag löschen`{.action} aus. Achten Sie jedoch darauf, dass für Ihre Domain immer ein MX-Eintrag bestehen bleibt, während Sie neue MX-Einträge hinzufügen.
 
 Um zu überprüfen, ob bereits MX-Einträge vorhanden sind, wählen Sie mithilfe des Filters oberhalb der DNS-Tabelle den Typ **MX** aus und bestätigen Sie,  damit nur die MX-Einträge Ihrer DNS-Zone angezeigt werden.
 

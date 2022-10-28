@@ -16,7 +16,7 @@ Les offres d'hébergement web d'OVHcloud vous donnent accès à un espace de sto
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}(pour activer plusieurs utilisateurs FTP, vous avez besoin au minimum d’un hébergement Pro ou Performance).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique

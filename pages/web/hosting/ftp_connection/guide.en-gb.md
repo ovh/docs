@@ -16,7 +16,7 @@ OVHcloud Web Hosting plans provide you with access to a storage space you can us
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} (to activate multiple FTP users you need at least a Professional or Performance hosting)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} (to activate multiple FTP users you need at least a Professional or Performance hosting).
 - access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
