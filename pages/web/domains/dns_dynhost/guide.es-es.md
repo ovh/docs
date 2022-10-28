@@ -3,7 +3,7 @@ title: 'Configurar un DNS dinámico en un dominio'
 slug: web_hosting_dynhost
 excerpt: 'Cómo configurar un registro DNS dinámico (DynHost) en un dominio de OVHcloud'
 section: 'DNS (servidor y zona)'
-order: 6
+order: 06
 ---
 
 **Última actualización: 05/09/2018**

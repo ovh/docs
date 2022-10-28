@@ -3,7 +3,7 @@ title: Ripristinare e importare un database sul tuo server di database
 slug: ripristinare-importare-database
 excerpt: Come ripristinare e importare il database
 section: Configurazione
-order: 5
+order: 05
 ---
 
 > [!primary]

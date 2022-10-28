@@ -2,7 +2,7 @@
 title: 'Resolver um erro num domínio'
 slug: domain-errors
 section: Tarefas correntes
-order: 01
+order: 02
 ---
 
 > [!primary]

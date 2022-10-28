@@ -3,7 +3,7 @@ title: Salvare ed esportare un database sul tuo server di database
 slug: salvare-esportare-un-database
 excerpt: Come salvare ed esportare il tuo database
 section: Configurazione
-order: 4
+order: 04
 ---
 
 > [!primary]

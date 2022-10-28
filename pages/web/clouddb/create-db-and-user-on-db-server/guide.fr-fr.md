@@ -3,7 +3,7 @@ title: 'Créer vos bases de données et vos utilisateurs sur votre serveur de ba
 slug: creer-bases-de-donnees-et-utilisateurs
 excerpt: 'Découvrez comment créer une base de données sur votre serveur de bases de données.'
 section: Configuration
-order: 2
+order: 02
 ---
 
 **Dernière mise à jour le 23/06/2022**

@@ -3,7 +3,7 @@ title: Transferir un dominio .uk a otro agente registrador
 slug: transferencia-saliente-de-dominio-uk
 excerpt: "Descubra cómo transferir la salida de un dominio UK a otro registrador"
 section: 'Operaciones en los dominios'
-order: 5
+order: 05
 ---
 
 > [!primary]

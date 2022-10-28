@@ -3,7 +3,7 @@ title: 'Ghost auf einem Cloud Web Hosting installieren'
 slug: ghost-auf-cloud-web-installieren
 excerpt: 'Hier erfahren Sie, wie Sie mit der Ghost-Engine einen Blog auf Cloud Web einrichten.'
 section: Tutorials
-order: 1
+order: 01
 ---
 
 > [!primary]

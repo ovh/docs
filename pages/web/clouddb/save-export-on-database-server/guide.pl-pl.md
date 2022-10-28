@@ -3,7 +3,7 @@ title: 'Tworzenie i eksportowanie bazy danych na serwerze baz danych'
 slug: kopia-zapasowa-eksportowa-bazy-danych
 excerpt: 'Dowiedz się, jak tworzyć kopie zapasowe i eksportować bazę danych'
 section: 'Konfiguracja'
-order: 4
+order: 04
 ---
 
 > [!primary]

@@ -2,7 +2,7 @@
 title: Tutorial - Verwendung von Zonemaster
 slug: ovhcloud-domain-zonemaster-tutorial
 section: DNS und DNS-Zone
-order: 8
+order: 08
 ---
 
 > [!primary]

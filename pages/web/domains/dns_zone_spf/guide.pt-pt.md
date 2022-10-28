@@ -3,7 +3,7 @@ title: Como configurar o registo SPF de um domínio
 excerpt: Saiba como adicionar um registo SPF à zona DNS do seu domínio
 slug: partilhado_o_campo_spf
 section: DNS e zona DNS
-order: 5
+order: 05
 ---
 
 > [!primary]

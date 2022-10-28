@@ -3,7 +3,7 @@ title: Configura il tuo database server
 slug: configurare-ottimizzare-il-tuo-database-server
 excerpt: Come configurare e ottimizzare il tuo database server
 section: Configurazione
-order: 6
+order: 06
 ---
 
 > [!primary]

@@ -3,7 +3,7 @@ title: "Transfer a Domain Name"
 slug: api-transfer
 excerpt: "Use the OVHcloud public API to transfer your domain names"
 section: "Domains API"
-order: 9
+order: 09
 ---
 
 **Last updated 21st July 2022**

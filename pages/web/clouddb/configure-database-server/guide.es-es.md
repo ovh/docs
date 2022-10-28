@@ -3,7 +3,7 @@ title: 'Configurar el servidor de bases de datos'
 slug: configurar-optimizar-su-servidor-de-base-de-datos
 excerpt: 'Cómo configurar y optimizar el servidor de bases de datos'
 section: Configuración
-order: 6
+order: 06
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: Pierwsze kroki z hostingiem Cloud Web
 slug: pierwsze-kroki-z-cloud-web
 excerpt: Dowiedz się, jak rozpocząć korzystanie z hostingu Cloud Web
 section: Pierwsze kroki
+order: 01
 ---
 
 > [!primary]

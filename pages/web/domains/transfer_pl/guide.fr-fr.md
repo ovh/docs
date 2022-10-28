@@ -6,7 +6,7 @@ routes:
 hidden: true
 excerpt: "Découvrez comment réaliser le transfert d'un nom de domaine en .pl vers OVHcloud"
 section: Transfert
-order: 1
+order: 09
 ---
 
 **Dernière mise à jour le 19/10/2022**

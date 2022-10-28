@@ -3,7 +3,7 @@ title: 'Guardar y exportar una base de datos en un servidor de bases de datos'
 slug: guardar-exportar-una-base-de-datos
 excerpt: 'Cómo realizar el backup y la exportación de la base de datos'
 section: 'Configuración'
-order: 4
+order: 04
 ---
 
 > [!primary]

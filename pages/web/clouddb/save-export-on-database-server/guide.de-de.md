@@ -3,7 +3,7 @@ title: 'Eine Datenbank Ihres Datenbankservers sichern und exportieren'
 slug: backup-eine-datenbank-exportieren
 excerpt: 'Hier erfahren Sie, wie Sie Ihre Datenbank sichern und exportieren können'
 section: Konfiguration
-order: 4
+order: 04
 ---
 
 > [!primary]

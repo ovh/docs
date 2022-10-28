@@ -3,7 +3,7 @@ title: 'Backup e exportação de uma base de dados no servidor de bases de dados
 slug: backup-exportacao-base-de-dados
 excerpt: 'Saiba como fazer o backup e a exportação de uma base de dados'
 section: 'Configuração'
-order: 4
+order: 04
 ---
 
 > [!primary]

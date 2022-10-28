@@ -3,7 +3,7 @@ title: 'Modificare una zona DNS di OVHcloud'
 excerpt: 'Come modificare una zona DNS OVHcloud dallo Spazio Cliente'
 slug: web_hosting_modifica_la_tua_zona_dns
 section: 'DNS e zona DNS'
-order: 3
+order: 03
 ---
 
 > [!primary]

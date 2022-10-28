@@ -2,7 +2,7 @@
 title: 'Usunięcie błędu dla domeny'
 slug: domena-errors
 section: Zadania bieżące
-order: 01
+order: 02
 ---
 
 > [!primary]

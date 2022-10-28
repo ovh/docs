@@ -3,7 +3,7 @@ title: Przywracanie i importowanie bazy danych na serwer baz danych
 slug: przywracanie-importowanie-bazy-danych
 excerpt: 'Dowiedz się, jak przywrócić i importować bazę danych'
 section: 'Konfiguracja'
-order: 5
+order: 05
 ---
 
 > [!primary]
