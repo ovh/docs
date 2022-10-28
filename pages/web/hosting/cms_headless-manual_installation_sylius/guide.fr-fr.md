@@ -146,7 +146,7 @@ Pour simplifier l'utilisation de NodeJS et de `npm`, nous allons l'ajouter dans 
 export PATH=~/node/bin:$PATH
 ```
 
-Vous verrez alors la version de NodeJS qui a été téléchargée s'afficher (v16.17.1 pour notre exemple).
+Vous verrez alors la version de NodeJS qui a été téléchargée s'afficher (v12.22.12 pour notre exemple).
 
 #### Installer Sylius
 
