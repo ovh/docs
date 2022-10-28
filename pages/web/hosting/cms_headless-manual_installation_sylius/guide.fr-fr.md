@@ -223,20 +223,6 @@ Dans le premier cas, des outils de débogage sont mis à disposition du dévelop
 APP_ENV=prod
 ```
 
-##### **Installation de Doctrine**
-
-Doctrine est un ORM _(object-relational mapping)_ fonctionnant nativement avec le _framework_ Symfony permettant de d'établir une couche d'abstraction entre le code en PHP et la base de données relationnelle choisie.
-
-Il faut d'abord se déplacer dans le répertoire du projet :
-```sh
-cd sylius
-```
-
-Puis lancer l'installation avec Composer :
-```sh
-php ../composer.phar require doctrine/dbal:"^2.6"
-```
-
 ##### **Installer Sylius**
 
 Maintenant que tous les éléments nécessaires au fonctionnement de Sylius sont en place, nous allons pouvoir procéder à son installation :
