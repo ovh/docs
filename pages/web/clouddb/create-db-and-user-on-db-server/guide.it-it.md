@@ -3,7 +3,7 @@ title: Crea i tuoi database e i tuoi utenti sul tuo database server
 slug: creare-database-e-utente
 excerpt: Come creare un database sul tuo database server
 section: Configurazione
-order: 2
+order: 02
 ---
 
 > [!primary]

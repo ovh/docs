@@ -3,7 +3,7 @@ title: "Order a Domain Name"
 slug: api-order
 excerpt: "Use the OVHcloud public API to order your domain names"
 section: "Domains API"
-order: 2
+order: 02
 ---
 
 **Last updated 5th May 2022**

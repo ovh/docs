@@ -4,7 +4,7 @@ slug: crea_una_zona_dns_per_un_dominio_esterno
 excerpt: 'Come creare una zona DNS per il tuo dominio dallo Spazio Cliente'
 legacy_guide_number: g2229
 section: 'DNS e zona DNS'
-order: 2
+order: 02
 ---
 
 **Ultimo aggiornamento: 30/11/2018**

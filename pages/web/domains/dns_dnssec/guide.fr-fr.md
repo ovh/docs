@@ -3,7 +3,7 @@ title: 'Sécuriser votre nom de domaine avec DNSSEC'
 slug: securiser-votre-domaine-avec-dnssec
 excerpt: 'Protégez votre nom de domaine du Cache Poisoning en activant le DNSSEC'
 section: 'Protection et sécurité'
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 26/03/2018**

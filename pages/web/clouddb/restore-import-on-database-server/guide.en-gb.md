@@ -3,7 +3,7 @@ title: 'Restoring and importing a database to your database server'
 slug: restore-import-database
 excerpt: 'Find out how to restore and import your database'
 section: Configuration
-order: 5
+order: 05
 ---
 
 **Last updated 29th June 2022**

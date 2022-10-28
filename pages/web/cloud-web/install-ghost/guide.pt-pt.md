@@ -3,7 +3,7 @@ title: 'Instalar o Ghost num alojamento Cloud Web'
 slug: instalar-o-ghost-cloud-web
 excerpt: 'Saiba como instalar um blogue com a plataforma Ghost num alojamento Cloud Web'
 section: Tutoriais
-order: 1
+order: 01
 ---
 
 > [!primary]

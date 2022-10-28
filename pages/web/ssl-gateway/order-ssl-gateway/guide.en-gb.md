@@ -3,6 +3,7 @@ title: Order an SSL Gateway
 slug: order-ssl-gateway
 excerpt: Secure connections to your website
 section: Getting Started
+order: 01
 ---
 
 

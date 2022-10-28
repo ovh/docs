@@ -4,7 +4,7 @@ slug: web_hosting_gestisci_il_tuo_server_dns
 excerpt: 'Come modificare i server DNS di un dominio OVHcloud'
 legacy_guide_number: g2015
 section: 'DNS e zona DNS'
-order: 1
+order: 01
 ---
 
 > [!primary]

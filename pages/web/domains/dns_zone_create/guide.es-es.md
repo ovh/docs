@@ -3,7 +3,7 @@ title: 'Crear una zona DNS en OVHcloud para un dominio'
 slug: crear-una-zona-dns-para-un-dominio-externo
 excerpt: 'Cómo crear una zona DNS en OVHcloud para un dominio desde el área de cliente'
 section: 'DNS (servidor y zona)'
-order: 2
+order: 02
 ---
 
 **Última actualización: 31/08/2018**

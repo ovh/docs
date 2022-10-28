@@ -3,7 +3,7 @@ title: 'Installare Ghost su un hosting Cloud Web'
 slug: installare-ghost-cloud-web
 excerpt: 'Come creare un blog con la piattaforma Ghost sul tuo hosting Cloud Web'
 section: Tutorial
-order: 1
+order: 01
 ---
 
 > [!primary]

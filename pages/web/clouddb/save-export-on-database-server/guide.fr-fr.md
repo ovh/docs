@@ -3,7 +3,7 @@ title: 'Sauvegarder et exporter une base de données sur votre serveur de bases 
 slug: sauvegarder-exporter-une-base-de-donnees
 excerpt: 'Découvrez comment sauvegarder et exporter votre base de données'
 section: 'Configuration'
-order: 4
+order: 04
 ---
 
 **Dernière mise à jour le 23/06/2022**

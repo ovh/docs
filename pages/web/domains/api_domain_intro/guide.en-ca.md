@@ -3,7 +3,7 @@ title: "Introduction"
 slug: api
 excerpt: "General presentation of the OVHcloud public API for domain names"
 section: "Domains API"
-order: 1
+order: 01
 ---
 
 **Last updated 5th May 2022**

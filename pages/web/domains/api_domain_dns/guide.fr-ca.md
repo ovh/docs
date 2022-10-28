@@ -3,7 +3,7 @@ title: "Configurer les DNS de son nom de domaine"
 slug: api-dns
 excerpt: "Utiliser l'API publique OVHcloud pour configurer les DNS de votre nom de domaine"
 section: "API domaines"
-order: 8
+order: 08
 ---
 
 **Dernière mise à jour le 05/05/2022**

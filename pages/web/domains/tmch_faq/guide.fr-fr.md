@@ -4,7 +4,7 @@ legacy_guide_number: 1638
 slug: faq-tmch-trademark-clearinghouse
 excerpt: Apprenez-en plus sur le TMCH grâce à cette FAQ
 section: Protection et sécurité
-order: 2
+order: 02
 ---
 
 ## Qu'est-ce que le Trademark Clearinghouse (TMCH) ?

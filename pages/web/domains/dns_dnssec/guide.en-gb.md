@@ -4,7 +4,7 @@ excerpt: 'Protect your domain name from cache poisoning by activating DNSSEC'
 slug: secure_your_domain_with_dnssec
 legacy_guide_number: g609
 section: 'Security'
-order: 1
+order: 01
 ---
 
 **Last updated 26th March 2018**

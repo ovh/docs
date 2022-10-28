@@ -3,7 +3,7 @@ title: 'Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren'
 slug: datenbank-importieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Datenbank wiederherstellen und importieren'
 section: Konfiguration
-order: 5
+order: 05
 ---
 
 **Letzte Aktualisierung am 29.06.2022**

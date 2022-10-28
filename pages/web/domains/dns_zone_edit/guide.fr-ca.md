@@ -3,7 +3,7 @@ title: 'Éditer une zone DNS OVHcloud'
 slug: editer-ma-zone-dns
 excerpt: 'Découvrez comment éditer une zone DNS OVHcloud via votre espace client'
 section: 'DNS et zone DNS'
-order: 3
+order: 03
 ---
 
 **Dernière mise à jour le 01/06/2022**

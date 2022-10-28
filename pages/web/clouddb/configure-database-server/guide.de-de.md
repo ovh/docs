@@ -3,7 +3,7 @@ title: 'Konfigurieren Ihres Datenbankservers'
 slug: konfigurieren-ihres-datenbank-servers
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Datenbankserver konfigurieren und optimieren können'
 section: Konfiguration
-order: 6
+order: 06
 ---
 
 > [!primary]

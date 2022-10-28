@@ -3,7 +3,7 @@ title: "Manage Contacts of a Domain Name"
 slug: api-contact
 excerpt: "Use the OVHcloud public API to manage contacts for your domain names"
 section: "Domains API"
-order: 5
+order: 05
 ---
 
 **Last updated 5th May 2022**

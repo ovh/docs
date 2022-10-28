@@ -4,7 +4,7 @@ title: 'Een domeinnaam overdragen naar OVH'
 slug: overdracht-generiek-domein
 excerpt: 'De benodigde stappen voor overdracht van uw generieke domeinnaam naar OVH'
 section: 'Overdrachten (transfers)'
-order: 1
+order: 01
 ---
 
 **Laatste update 10-09-2018**

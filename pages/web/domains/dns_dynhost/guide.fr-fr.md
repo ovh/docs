@@ -3,7 +3,7 @@ title: 'Paramétrer un DNS dynamique pour son nom de domaine'
 slug: utilisation-dynhost
 excerpt: 'Apprenez à paramétrer un enregistrement DNS dynamique (DynHost) pour votre nom de domaine OVHcloud'
 section: 'DNS et zone DNS'
-order: 6
+order: 06
 ---
 
 **Dernière mise à jour le 06/06/2018**

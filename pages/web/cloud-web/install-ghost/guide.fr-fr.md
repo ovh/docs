@@ -3,7 +3,7 @@ title: 'Installer Ghost sur son hébergement Cloud Web'
 slug: installer-ghost-cloud-web
 excerpt: 'Découvrez comment installer un blog avec le moteur Ghost sur Cloud Web'
 section: Tutoriels
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 04/05/2022**

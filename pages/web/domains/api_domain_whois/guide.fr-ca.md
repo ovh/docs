@@ -3,7 +3,7 @@ title: "Configurer l'affichage de ses données dans le Whois"
 slug: api-whois
 excerpt: "Utilisez l'API publique OVHcloud pour configurer l'affichage de vos données dans le Whois"
 section: "API domaines"
-order: 7
+order: 07
 ---
 
 **Dernière mise à jour le 05/05/2022**

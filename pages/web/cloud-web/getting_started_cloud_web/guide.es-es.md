@@ -3,6 +3,7 @@ title: Primeros pasos con un hosting Cloud Web
 slug: primeros-pasos-hosting-cloud-web
 excerpt: Cómo empezar con un alojamiento Cloud Web
 section: Primeros pasos
+order: 01
 ---
 
 > [!primary]

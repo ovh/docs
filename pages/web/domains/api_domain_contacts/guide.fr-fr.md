@@ -3,7 +3,7 @@ title: "Gestion des contacts d'un nom de domaine"
 slug: api-contact
 excerpt: "Utilisez l'API publique OVHcloud pour gérer les contacts de vos noms de domaines"
 section: "API domaines"
-order: 5
+order: 05
 ---
 
 **Dernière mise à jour le 05/05/2022**

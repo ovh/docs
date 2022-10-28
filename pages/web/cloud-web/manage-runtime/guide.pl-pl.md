@@ -3,6 +3,7 @@ title: 'Zarządzanie frameworkami na Cloud Web'
 slug: zarzadzanie-framework-runtime-cloud-web
 excerpt: 'Dowiedz się, jak zarządzać frameworkami dostępnymi w ramach hostingu Cloud Web'
 section: 'Konfiguracja hostingu'
+order: 01
 ---
 
 > [!primary]

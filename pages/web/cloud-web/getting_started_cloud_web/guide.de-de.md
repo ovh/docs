@@ -3,6 +3,7 @@ title: 'Erste Schritte mit Cloud Web Hosting'
 slug: erste-schritte-mit-cloud-web
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie richtig mit Ihrem Cloud Web Hosting starten'
 section: 'Erste Schritte'
+order: 01
 ---
 
 > [!primary]

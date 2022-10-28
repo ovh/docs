@@ -3,7 +3,7 @@ title: 'Backing up and exporting a database of your database server'
 slug: backup-export-database-server
 excerpt: 'Find out how to back up and export your database'
 section: Configuration
-order: 4
+order: 04
 ---
 
 **Last updated 27th June 2022**

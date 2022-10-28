@@ -3,7 +3,7 @@ title: 'Modyfikacja strefy DNS'
 slug: hosting_www_jak_edytowac_strefe_dns
 excerpt: 'Dowiedz się, jak edytować strefę DNS w Panelu klienta'
 section: 'DNS i strefa DNS'
-order: 3
+order: 03
 ---
 
 > [!primary]

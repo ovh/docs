@@ -3,7 +3,7 @@ title: "Managing Eligibility Rules"
 slug: api-rules
 excerpt: "Description of the technical format of the domain name eligibility rules"
 section: "Domains API"
-order: 6
+order: 06
 ---
 
 **Last updated 5th May 2022**
