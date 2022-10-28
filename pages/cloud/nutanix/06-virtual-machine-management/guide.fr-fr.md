@@ -3,7 +3,7 @@ title: Gestion des machines virtuelles
 slug: virtual-machine-management
 excerpt: "Découvrez la gestion des machines virtuelles dans Prism Central"
 section: Premiers pas
-order: 06
+order: 09
 ---
 
 **Dernière mise à jour le 10/05/2022**
@@ -15,7 +15,7 @@ Découvrez comment gérer des machines virtuelles dans un cluster Nutanix et com
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 > Certains logiciels nécessitent une licence comme les produits Microsoft il faudra alors s'assurer que tous les systèmes et logiciels installés possèdent ces licences.
 
@@ -97,7 +97,7 @@ Cliquez sur `Attach Disk`{.action}.
 
 ![Création d'une machine virtuelle - Etape 6](images/CreateVM06.PNG){.thumbnail}
 
-Modifiez les paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **Nutanix-VirtIO-1.1.7**.
+Modifiez les paramètres `Type`{.action} en **CD-ROM**, `Operation`{.action} en **Clone from Image**, `Image`{.action} en **Nutanix-VirtIO-1.1.7.iso**.
 
 Cliquez sur `Save`{.action}.
 
