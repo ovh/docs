@@ -103,7 +103,7 @@ In any case, there are some ports that you shouldn't block on your instances if 
 - UDP Port 123 (*systemd-timesync*): needed to allow NTP servers synchronization
 - TCP/UDP Port 53 (*systemd-resolve*): needed to allow domain name resolution
 - TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
-- TCP Port 4443 (metrics server): needed to list the metrcis of the nodes and pods
+- TCP Port 4443 (metrics server): needed for communication between the metrics server and the Kubernetes API server
 
 ### Ports to open from others worker nodes (INPUT/OUPUT)
 
@@ -111,21 +111,17 @@ In any case, there are some ports that you shouldn't block on your instances if 
 - UDP Port 4789 (*kube-dns internal usage*): needed for DNS resolution between nodes
 - TCP Port 10250 (*kubelet*): needed for [communication between apiserver and worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
 
-### Openstack security group point of view
+### About Openstack security groups
 
-In case you want to add Openstack security group on your nodes, it is mendatory to add the above ports in the ruleset with `0.0.0.0/24 CIDR`.
-
-In Openstack terms
-- Input will be Ingress
-- Output will be Egress
+In case you want to apply OpenStack security groups onto your nodes, it is mandatory to add the above ports in a ruleset concerning the `0.0.0.0/24` CIDR.
 
 > [!warning]
-> If you remove the default rule accepting the input and output on all ip
-> when creating a new security group ; be sure to add the port needed by your application in your rules.
+> If you remove the default rules accepting all input and output
+> when creating a new security group, be sure to allow the ports needed by your application, as well as the mandatory ports mentioned above.
 >
 
 > [!info]
-> To simplify the management of the rules for your cluster internal network you can add theses rules :
+> In order to simplify your policy, you can add these rules which do not specify any port and will allow all internal traffic between pods and services within the cluster:
 >> | Direction | Ether Type | IP Protocol | Port Range | Remote IP Prefix | Description |
 >> |---|---|---|---|---|---|
 >> | Ingress | IPv4 | TCP | Any | 10.2.0.0/16 | Allow trafic from pods|
