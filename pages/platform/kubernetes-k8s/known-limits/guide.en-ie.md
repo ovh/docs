@@ -91,7 +91,6 @@ In any case, there are some ports that you shouldn't block on your instances if 
 ### Ports to open from public network (INPUT)
 
 - TCP Port 22 (*ssh*): needed for nodes management by OVHcloud
-- TCP Port 10250 (*kubelet*): needed for [communication from apiserver to worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
 - TCP Ports from 30000 to 32767 (*NodePort* services port range): needed for [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) and [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) services
 - TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
 
@@ -104,11 +103,38 @@ In any case, there are some ports that you shouldn't block on your instances if 
 - UDP Port 123 (*systemd-timesync*): needed to allow NTP servers synchronization
 - TCP/UDP Port 53 (*systemd-resolve*): needed to allow domain name resolution
 - TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
+- TCP Port 4443 (metrics server): needed to list the metrcis of the nodes and pods
 
 ### Ports to open from others worker nodes (INPUT/OUPUT)
 
 - UDP Port 8472 (*flannel*): needed for communication between pods
 - UDP Port 4789 (*kube-dns internal usage*): needed for DNS resolution between nodes
+- TCP Port 10250 (*kubelet*): needed for [communication between apiserver and worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
+
+### Openstack security group point of view
+
+In case you want to add Openstack security group on your nodes, it is mendatory to add the above ports in the ruleset with `0.0.0.0/24 CIDR`.
+
+In Openstack terms
+- Input will be Ingress
+- Output will be Egress
+
+> [!warning]
+> If you remove the default rule accepting the input and output on all ip
+> when creating a new security group ; be sure to add the port needed by your application in your rules.
+>
+
+> [!info]
+> To simplify the management of the rules for your cluster internal network you can add theses rules :
+>> | Direction | Ether Type | IP Protocol | Port Range | Remote IP Prefix | Description |
+>> |---|---|---|---|---|---|
+>> | Ingress | IPv4 | TCP | Any | 10.2.0.0/16 | Allow trafic from pods|
+>> | Ingress | IPv4 | TCP | Any | 10.3.0.0/16 | Allow trafic from services|
+> It will allow on every nodes the trafic from the other nodes of your cluster.
+>
+> It allow you to trust the internal trafic of all your cluster to every port on every nodes.
+
+For more details, please refer to the [Creating and configuring a security group in Horizon documentation](../../public-cloud/setup_security_group/).
 
 ## Private Networks
 
