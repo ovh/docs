@@ -71,6 +71,23 @@ Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP
 
 It's rather cumbersome to use `NodePort` `Services` in production. As you are using non-standard ports, you often need to set up an external load balancer that listens on standard ports and redirects the traffic to the `<NodeIp>:<NodePort>`.
 
+> [!warning]
+> In our OVHcloud Managed Kubernetes you have an easy way to access `NodePort` services. You need to get the *nodes* URL, an URL solving via round-robin DNS to one random node of your cluster. As `NodePort` services are exposed in the same port on every Node, you can use this *nodes* URL to access them.
+> 
+> In order to get the nodes URL, you get the *control plane* URL (the one given on `kubectl cluster-info`) and add the `nodes` element between the first and the second element of the URL
+> 
+> Example:
+> 
+> ```
+> $ kubectl cluster-info
+> Kubernetes control plane is running at https://xxxxxx.c1.gra9.k8s.ovh.net
+> CoreDNS is running at https://xxxxxxx.c1.gra9.k8s.ovh.net/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+> Metrics-server is running at https://xxxxxx.c1.gra9.k8s.ovh.net/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
+> ```
+>
+> In this case the *nodes* URL will be `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net` and a service deployed on NodePort 30123 can be accessed on `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net:30123`
+
+
 ### Exposing services as LoadBalancer
 
 Declaring a service of type `LoadBalancer` exposes it externally using a cloud provider’s load balancer. The cloud provider will provision a load balancer for the `Service`, and map it to its automatically assigned `NodePort`. How the traffic from that external load balancer is routed to the `Service` pods depends on the cluster provider.
