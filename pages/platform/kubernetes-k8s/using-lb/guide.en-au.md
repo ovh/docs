@@ -5,7 +5,7 @@ slug: using-lb
 section: Getting started
 ---
 
-**Last updated 24th June 2022**
+**Last updated 31st October 2022**
 
 <style>
  pre {
@@ -85,7 +85,7 @@ It's rather cumbersome to use `NodePort` `Services` in production. As you are us
 > Metrics-server is running at https://xxxxxx.c1.gra9.k8s.ovh.net/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
 > ```
 >
-> In this case the *nodes* URL will be `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net` and a service deployed on NodePort 30123 can be accessed on `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net:30123`
+> In this case the *nodes* URL will be `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net` and a service deployed on NodePort 30123 can be accessed on `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net:30123`.
 
 
 ### Exposing services as LoadBalancer
