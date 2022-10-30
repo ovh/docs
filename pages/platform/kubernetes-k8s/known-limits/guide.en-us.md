@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated 4th August 2022.**
+**Last updated 31st October 2022.**
 
 <style>
  pre {
@@ -116,17 +116,16 @@ In any case, there are some ports that you shouldn't block on your instances if 
 In case you want to apply OpenStack security groups onto your nodes, it is mandatory to add the above ports in a ruleset concerning the `0.0.0.0/24` CIDR.
 
 > [!warning]
-> If you remove the default rules accepting all input and output
-> when creating a new security group, be sure to allow the ports needed by your application, as well as the mandatory ports mentioned above.
+> If you remove the default rules accepting all input and output when creating a new security group, make sure to allow the ports needed by your application, as well as the mandatory ports mentioned above.
 >
 
-> [!info]
+> [!primary]
 > In order to simplify your policy, you can add these rules which do not specify any port and will allow all internal traffic between pods and services within the cluster:
 >> | Direction | Ether Type | IP Protocol | Port Range | Remote IP Prefix | Description |
 >> |---|---|---|---|---|---|
->> | Ingress | IPv4 | TCP | Any | 10.2.0.0/16 | Allow trafic from pods|
->> | Ingress | IPv4 | TCP | Any | 10.3.0.0/16 | Allow trafic from services|
-> It allow you to trust the internal trafic between pods and services within the cluster.
+>> | Ingress | IPv4 | TCP | Any | 10.2.0.0/16 | Allow traffic from pods|
+>> | Ingress | IPv4 | TCP | Any | 10.3.0.0/16 | Allow traffic from services|
+> It allows you to trust the internal traffic between pods and services within the cluster.
 
 For more details, please refer to the [Creating and configuring a security group in Horizon documentation](../../public-cloud/setup_security_group/).
 
