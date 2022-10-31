@@ -1,8 +1,10 @@
 ---
-title: Adding licences to your Nutanix BYOL cluster
+title: Adicionar licenças no seu cluster Nutanix BYOL (EN)
 slug: activate-licence-on-nutanix-byol
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/nutanix/activate-licence-on-nutanix-byol/'
 excerpt: 'How to add licences in an OVHcloud Nutanix cluster in the BYOL solution'
-section: Getting started
+section: Primeiros passos
 order: 12
 ---
 
@@ -15,12 +17,12 @@ order: 12
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/pt/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Access to your clusters via **Prism Central**
 - You must have Nutanix licences and have them available on the Nutanix portal.
 
