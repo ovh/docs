@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated 4th August 2022.**
+**Last updated 31st October 2022.**
 
 <style>
  pre {
@@ -91,7 +91,6 @@ In any case, there are some ports that you shouldn't block on your instances if 
 ### Ports to open from public network (INPUT)
 
 - TCP Port 22 (*ssh*): needed for nodes management by OVHcloud
-- TCP Port 10250 (*kubelet*): needed for [communication from apiserver to worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
 - TCP Ports from 30000 to 32767 (*NodePort* services port range): needed for [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) and [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) services
 - TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
 
@@ -104,11 +103,31 @@ In any case, there are some ports that you shouldn't block on your instances if 
 - UDP Port 123 (*systemd-timesync*): needed to allow NTP servers synchronization
 - TCP/UDP Port 53 (*systemd-resolve*): needed to allow domain name resolution
 - TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
+- TCP Port 4443 (metrics server): needed for communication between the metrics server and the Kubernetes API server
 
 ### Ports to open from others worker nodes (INPUT/OUPUT)
 
 - UDP Port 8472 (*flannel*): needed for communication between pods
 - UDP Port 4789 (*kube-dns internal usage*): needed for DNS resolution between nodes
+- TCP Port 10250 (*kubelet*): needed for [communication between apiserver and worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
+
+### About Openstack security groups
+
+In case you want to apply OpenStack security groups onto your nodes, it is mandatory to add the above ports in a ruleset concerning the `0.0.0.0/24` CIDR.
+
+> [!warning]
+> If you remove the default rules accepting all input and output when creating a new security group, make sure to allow the ports needed by your application, as well as the mandatory ports mentioned above.
+>
+
+> [!primary]
+> In order to simplify your policy, you can add these rules which do not specify any port and will allow all internal traffic between pods and services within the cluster:
+>> | Direction | Ether Type | IP Protocol | Port Range | Remote IP Prefix | Description |
+>> |---|---|---|---|---|---|
+>> | Ingress | IPv4 | TCP | Any | 10.2.0.0/16 | Allow traffic from pods|
+>> | Ingress | IPv4 | TCP | Any | 10.3.0.0/16 | Allow traffic from services|
+> It allows you to trust the internal traffic between pods and services within the cluster.
+
+For more details, please refer to the [Creating and configuring a security group in Horizon documentation](../../public-cloud/setup_security_group/).
 
 ## Private Networks
 
