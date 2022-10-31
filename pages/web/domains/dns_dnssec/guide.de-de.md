@@ -4,7 +4,7 @@ excerpt: 'Schützen Sie Ihre Domain mit DNSSEC vor Cache Poisoning'
 slug: sichern_sie_ihre_domain_mit_dnssec_ab
 legacy_guide_number: g609
 section: 'Sicherheit'
-order: 1
+order: 01
 ---
 
 **Stand 19.06.2019**

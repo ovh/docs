@@ -4,7 +4,7 @@ title: Toevoeging van een MX-veld aan de configuratie van uw domeinnaam
 slug: dns-zone-mx-configuratie-handleiding
 excerpt: Ontdek hoe u een MX-veld kunt toevoegen aan de configuratie van uw domeinnaam
 section: DNS en DNS-zone
-order: 4
+order: 04
 ---
 
 **Laatste update 21-03-2018**

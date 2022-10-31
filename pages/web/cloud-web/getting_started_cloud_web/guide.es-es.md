@@ -3,6 +3,7 @@ title: Primeros pasos con un hosting Cloud Web
 slug: primeros-pasos-hosting-cloud-web
 excerpt: Cómo empezar con un alojamiento Cloud Web
 section: Primeros pasos
+order: 01
 ---
 
 > [!primary]
@@ -195,5 +196,9 @@ Para más información sobre el uso de Roundcube, consulte nuestra [Guía de uso
 [Instalar un sitio web con un módulo en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}
 
 [Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/){.external}
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

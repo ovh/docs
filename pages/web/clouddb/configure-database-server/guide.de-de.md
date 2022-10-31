@@ -3,7 +3,7 @@ title: 'Konfigurieren Ihres Datenbankservers'
 slug: konfigurieren-ihres-datenbank-servers
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Datenbankserver konfigurieren und optimieren können'
 section: Konfiguration
-order: 6
+order: 06
 ---
 
 > [!primary]
@@ -304,4 +304,8 @@ Verwenden Sie beispielsweise nicht **"HAVING"**. Dies erhöht die Zahl der Abfra
 
 [Verzeichnis von IP-Adressen für die Webhosting Cluster](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

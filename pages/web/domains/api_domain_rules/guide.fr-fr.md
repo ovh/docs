@@ -3,7 +3,7 @@ title: "Gestion des règles d'éligibilité"
 slug: api-rules
 excerpt: "Description du format technique des règles d'éligibilité aux noms de domaine"
 section: "API domaines"
-order: 6
+order: 06
 ---
 
 **Dernière mise à jour le 05/05/2022**

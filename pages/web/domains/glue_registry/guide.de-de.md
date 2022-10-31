@@ -3,7 +3,7 @@ title: 'DNS-Server einer Domain anpassen'
 slug: glue-registry
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie die DNS-Server Ihrer OVHcloud Domain anpassen'
 section: 'DNS und DNS-Zone'
-order: 7
+order: 07
 ---
 
 **Stand 19.07.2019**

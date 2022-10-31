@@ -3,7 +3,7 @@ title: 'DNS-Server einer OVHcloud Domain ändern'
 slug: webhosting_allgemeine_informationen_zu_den_dns_servern
 excerpt: 'Erfahren Sie hier, wie Sie DNS-Server im OVHcloud Kundencenter bearbeiten'
 section: 'DNS und DNS-Zone'
-order: 1
+order: 01
 ---
 
 > [!primary]

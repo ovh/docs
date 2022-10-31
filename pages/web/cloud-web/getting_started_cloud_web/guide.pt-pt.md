@@ -3,6 +3,7 @@ title: 'Alojamento Cloud Web: primeira utilização'
 slug: primeiros-passos-com-cloud-web
 excerpt: 'Saiba como começar num plano de alojamento Cloud Web'
 section: Introdução
+order: 01
 ---
 
 > [!primary]
@@ -204,4 +205,8 @@ Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](
 
 [Utilização do RoundCube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/){.external}
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

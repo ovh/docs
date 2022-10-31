@@ -2,7 +2,7 @@
 title: 'Resolver un error en un dominio'
 slug: domain-errors
 section: Tareas habituales
-order: 01
+order: 02
 ---
 
 > [!primary]

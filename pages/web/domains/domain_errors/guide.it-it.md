@@ -2,7 +2,7 @@
 title: Risolvere un errore su un dominio
 slug: domain-errors
 section: Operazioni correnti
-order: 01
+order: 02
 ---
 
 > [!primary]

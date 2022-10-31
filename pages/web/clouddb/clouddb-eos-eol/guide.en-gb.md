@@ -25,3 +25,11 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 |PostgreSQL 12|To be defined|To be defined|To be defined|
 |Redis 4.0|2021-09-07|2021-12-15|2022-03-16|
 |Redis 6.0|To be defined|To be defined|To be defined|
+
+## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 

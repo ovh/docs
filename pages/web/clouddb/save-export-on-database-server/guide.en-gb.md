@@ -3,7 +3,7 @@ title: 'Backing up and exporting a database of your database server'
 slug: backup-export-database-server
 excerpt: 'Find out how to back up and export your database'
 section: Configuration
-order: 4
+order: 04
 ---
 
 **Last updated 27th June 2022**
@@ -121,4 +121,8 @@ pg_dump --host=server --port=port --user=usernmame --password=password database_
 
 [Restoring and importing a database to your database server](../restore-import-database)
 
-Join our community of users on <https://community.ovh.com/en/>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 

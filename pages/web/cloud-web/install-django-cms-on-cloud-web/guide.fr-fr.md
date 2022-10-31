@@ -3,6 +3,7 @@ title: 'Comment installer Django CMS sur son hébergement Cloud Web'
 slug: installer-django-cms-cloud-web
 excerpt: "Apprenez à installer Django CMS avec Python sur votre hébergement Cloud Web OVHcloud"
 section: Tutoriels
+order: 04
 ---
 
 **Dernière mise à jour le 04/05/2022**
@@ -318,4 +319,8 @@ Vous trouverez plus d'informations sur Django CMS et ses fonctionnalités dans l
 
 [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

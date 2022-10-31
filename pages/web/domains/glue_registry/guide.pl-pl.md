@@ -4,7 +4,7 @@ slug: glue_registry
 excerpt: 'Dowiedz się, jak personalizować serwery DNS domeny OVHcloud'
 legacy_guide_number: g1568
 section: 'DNS i strefa DNS'
-order: 7
+order: 07
 ---
 
 **Ostatnia aktualizacja z dnia 10-10-2018**

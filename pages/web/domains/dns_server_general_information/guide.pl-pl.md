@@ -3,7 +3,7 @@ title: 'Zmiana serwerów DNS domeny w OVHcloud'
 slug: hosting_www_informacje_na_temat_serwerow_dns
 excerpt: 'Dowiedz się, jak zmodyfikować serwery DNS Twojej domeny w OVHcloud'
 section: 'DNS i strefa DNS'
-order: 1
+order: 01
 ---
 
 > [!primary]

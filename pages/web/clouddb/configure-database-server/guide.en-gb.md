@@ -3,7 +3,7 @@ title: 'Configuring your database server'
 slug: configure-optimise-database-server
 excerpt: 'Find out how to configure and optimise your database server'
 section: Configuration
-order: 6
+order: 06
 ---
 
 **Last updated 30th June 2022**
@@ -302,4 +302,8 @@ Avoid using **"HAVING"** for example. It increases your requests. Similarly, avo
 
 [IP address list for Web Hosting clusters](https://docs.ovh.com/gb/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/)
 
-Join our community of users on <https://community.ovh.com>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>.

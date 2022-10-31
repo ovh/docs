@@ -3,7 +3,7 @@ title: 'Guardar y exportar una base de datos en un servidor de bases de datos'
 slug: guardar-exportar-una-base-de-datos
 excerpt: 'Cómo realizar el backup y la exportación de la base de datos'
 section: 'Configuración'
-order: 4
+order: 04
 ---
 
 > [!primary]
@@ -123,5 +123,9 @@ pg_dump —host=servidor —port=puerto —user=usuario —password=contraseña 
 ## Más información
 
 [Restaurar e importar una base de datos en su servidor de bases de datos](../restaurar-importar-base-de-datos)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

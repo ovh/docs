@@ -3,7 +3,7 @@ title: 'Installing Ghost on a Cloud Web hosting plan'
 slug: install-ghost-cloud-web
 excerpt: 'Find out how to set up a blog with the Ghost platform on Cloud Web'
 section: Tutorials
-order: 1
+order: 01
 ---
 
 **Last updated 4th May 2022**
@@ -276,4 +276,8 @@ Step by step, we have covered how to install a Node.js application on a Cloud We
 
 [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 

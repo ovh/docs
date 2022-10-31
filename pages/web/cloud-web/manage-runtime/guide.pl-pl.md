@@ -3,6 +3,7 @@ title: 'Zarządzanie frameworkami na Cloud Web'
 slug: zarzadzanie-framework-runtime-cloud-web
 excerpt: 'Dowiedz się, jak zarządzać frameworkami dostępnymi w ramach hostingu Cloud Web'
 section: 'Konfiguracja hostingu'
+order: 01
 ---
 
 > [!primary]
@@ -146,4 +147,8 @@ Po dokonaniu wyboru wykonaj poszczególne kroki aż do zakończenia operacji.
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

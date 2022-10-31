@@ -3,7 +3,7 @@ title: Crea i tuoi database e i tuoi utenti sul tuo database server
 slug: creare-database-e-utente
 excerpt: Come creare un database sul tuo database server
 section: Configurazione
-order: 2
+order: 02
 ---
 
 > [!primary]
@@ -100,4 +100,8 @@ Per eliminare un database sul tuo database server, vai nella scheda `Database`, 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

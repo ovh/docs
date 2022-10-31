@@ -3,7 +3,7 @@ title: 'Dynamisches DNS für eine Domain konfigurieren'
 slug: verwendung-dynhost
 excerpt: 'Hier erfahren Sie, wie Sie einen dynamischen DNS-Eintrag (DynHost) für Ihre OVHcloud Domain konfigurieren.'
 section: 'DNS und DNS-Zone'
-order: 6
+order: 06
 ---
 
 **Stand 30.11.2018**

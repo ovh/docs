@@ -3,7 +3,7 @@ title: 'Configuring a dynamic DNS for a domain name'
 excerpt: 'Find out how to configure a dynamic DNS record (DynHost) for your OVHcloud domain name'
 slug: hosting_dynhost
 section: 'DNS and DNS Zone'
-order: 6
+order: 06
 ---
 
 **Last updated 19th July 2018**

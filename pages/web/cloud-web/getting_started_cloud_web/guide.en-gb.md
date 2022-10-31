@@ -3,6 +3,7 @@ title: 'Getting started with a Cloud Web hosting plan'
 slug: getting-started-with-cloud-web
 excerpt: 'Find out how to get started with a Cloud Web hosting plan'
 section: 'Getting started'
+order: 01
 ---
 
 **Last updated 4th May 2022**
@@ -194,4 +195,8 @@ If you would like to configure your email address on an email client or device (
 
 [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 

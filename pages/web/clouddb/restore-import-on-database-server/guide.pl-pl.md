@@ -3,7 +3,7 @@ title: Przywracanie i importowanie bazy danych na serwer baz danych
 slug: przywracanie-importowanie-bazy-danych
 excerpt: 'Dowiedz się, jak przywrócić i importować bazę danych'
 section: 'Konfiguracja'
-order: 5
+order: 05
 ---
 
 > [!primary]
@@ -162,4 +162,8 @@ psql —host=serwer —port=port —user=uzytkownik —password=password nazwa_b
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

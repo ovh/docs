@@ -31,3 +31,11 @@ Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Da
 |PostgreSQL 12|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |Redis 4.0|2021-09-07|2021-12-15|2022-03-16|
 |Redis 6.0|Noch festzulegen|Noch festzulegen|Noch festzulegen|
+
+## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

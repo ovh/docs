@@ -6,7 +6,7 @@ section: 'Utilisation avancée'
 order: 5
 ---
 
-**Dernière mise à jour le 06/10/2022**
+**Dernière mise à jour le 28/10/2022**
 
 > [!primary]
 >
@@ -66,10 +66,12 @@ iface lo inet loopback
 # interface publique 1
 auto ens33f0
 iface ens33f0 inet manual
+	bond-master bond0
 
 # interface publique 2
 auto ens33f1
 iface ens33f1 inet manual
+	bond-master bond0
 
 # interface privée 1
 auto ens35f0
@@ -83,25 +85,26 @@ auto bond0
 # Agrégat LACP sur les interfaces publiques
 # configuré en mode DHCP sur cet exemple
 # Porte l'IP Publique du serveur
-iface bond0 inet dhcp
+iface bond0 inet static
 	bond-slaves ens33f0 ens33f1
-        bond-miimon 100
+    bond-miimon 100
 	bond-mode 802.3ad
-        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
-        post-up echo 1 > /proc/sys/net/ipv4/ip_forward
-
+	hwaddress AB:CD:EF:12:34:56
+    
 #Private
 
 auto vmbr0
 # Configuration du bridge avec une adresse privée et l'ajout de route(s) pour y envoyer les Additional IP
 # A.B.C.D/X  => Subnet des Additional IP affectées au serveur, cela peut être un host avec du /32
-iface vmbr0 inet static
-	address 192.168.0.1
-        netmask 255.255.255.255
-	bridge-ports none
+iface vmbr0 inet dhcp
+	bridge-ports bond0
 	bridge-stp off
 	bridge-fd 0
-        post-up ip route add A.B.C.D/X dev vmbr0
+	hwaddress AB:CD:EF:12:34:56
+
+post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+post-up ip route add A.B.C.D/X dev vmbr0
+
 ```
 
 A ce stade, relancez les services réseau ou redémarrez le serveur.
@@ -116,7 +119,7 @@ iface lo inet loopback
 iface ens18 inet static
     address IP_FO
     netmask 255.255.255.255
-    gateway 192.168.0.1
+    gateway 100.64.0.1
 ```
 
 ### Additional IP via le vRack

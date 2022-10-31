@@ -10,7 +10,7 @@ order: 5
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 06.10.2022**
+**Letzte Aktualisierung am 28.10.2022**
 
 > [!primary]
 >
@@ -70,10 +70,12 @@ iface lo inet loopback
 # public interface 1
 auto ens33f0
 iface ens33f0 inet manual
+	bond-master bond0
 
 # public interface 2
 auto ens33f1
 iface ens33f1 inet manual
+	bond-master bond0
 
 # private interface 1
 auto ens35f0
@@ -87,25 +89,25 @@ auto bond0
 # LACP aggregate on public interfaces
 # configured in DHCP mode on this example
 # Has the server's public IP
-iface bond0 inet dhcp
+iface bond0 inet static
 	bond-slaves ens33f0 ens33f1
-        bond-miimon 100
+    bond-miimon 100
 	bond-mode 802.3ad
-        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
-        post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+	hwaddress AB:CD:EF:12:34:56
 
 #Private
 
 auto vmbr0
 # Configure the bridge with a private address and add route(s) to send the Additional IPs to it
 # A.B.C.D/X => Subnet of Additional IPs assigned to the server, this can be a host with /32
-iface vmbr0 inet static
-	address 192.168.0.1
-        netmask 255.255.255.255
-	bridge-ports none
+iface vmbr0 inet dhcp
+	bridge-ports bond0
 	bridge-stp off
 	bridge-fd 0
-        post-up ip route add A.B.C.D/X dev vmbr0
+	hwaddress AB:CD:EF:12:34:56
+	
+post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+post-up ip route add A.B.C.D/X dev vmbr0
 ```
 
 Starten Sie anschließend den Netzwerkdienst neu oder rebooten Sie den Server.
@@ -203,25 +205,25 @@ iface ens33f1 inet manual
 # private interface 1
 auto ens35f0
 iface ens35f0 inet manual
+	bond-master bond1
 
 # private interface 2
 auto ens35f1
 iface ens35f1 inet manual
+	bond-master bond1
 
 auto bond0
 iface bond0 inet dhcp
 	bond-slaves ens33f0 ens33f1
-        bond-miimon 100
+    bond-miimon 100
 	bond-mode 802.3ad
-        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
-        post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 auto bond1
 # LACP Aggregate on private interfaces
 # No IPs on it
 iface bond1 inet manual
 	bond-slaves ens35f0 ens35f1
-        bond-miimon 100
+    bond-miimon 100
 	bond-mode 802.3ad
 
 
@@ -234,6 +236,8 @@ iface vmbr1 inet manual
 	bridge-ports bond1
 	bridge-stp off
 	bridge-fd 0
+
+post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 ```
 

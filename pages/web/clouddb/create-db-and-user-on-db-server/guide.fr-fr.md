@@ -3,7 +3,7 @@ title: 'Créer vos bases de données et vos utilisateurs sur votre serveur de ba
 slug: creer-bases-de-donnees-et-utilisateurs
 excerpt: 'Découvrez comment créer une base de données sur votre serveur de bases de données.'
 section: Configuration
-order: 2
+order: 02
 ---
 
 **Dernière mise à jour le 23/06/2022**
@@ -95,5 +95,8 @@ Pour supprimer une base de données sur votre serveur de bases de données, diri
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

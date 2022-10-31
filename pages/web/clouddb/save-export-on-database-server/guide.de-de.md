@@ -3,7 +3,7 @@ title: 'Eine Datenbank Ihres Datenbankservers sichern und exportieren'
 slug: backup-eine-datenbank-exportieren
 excerpt: 'Hier erfahren Sie, wie Sie Ihre Datenbank sichern und exportieren können'
 section: Konfiguration
-order: 4
+order: 04
 ---
 
 > [!primary]
@@ -127,5 +127,9 @@ pg_dump --host=server --port=port --user=benutzername --password=passwort datenb
 ## Weiterführende Informationen
 
 [Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren](../datenbank-importieren)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

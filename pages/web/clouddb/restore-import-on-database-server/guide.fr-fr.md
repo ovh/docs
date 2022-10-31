@@ -3,7 +3,7 @@ title: 'Restaurer et importer une base de données sur votre serveur de bases de
 slug: restaurer-importer-base-de-donnees
 excerpt: 'Découvrez comment restaurer et importer votre base de données'
 section: 'Configuration'
-order: 5
+order: 05
 ---
 
 **Dernière mise à jour le 29/06/2022**
@@ -156,6 +156,10 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
 >
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

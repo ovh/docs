@@ -3,7 +3,7 @@ title: "Commander un nom de domaine"
 slug: api-order
 excerpt: "Utilisez l'API publique OVHcloud pour commander vos noms de domaines"
 section: "API domaines"
-order: 2
+order: 02
 ---
 
 **Dernière mise à jour le 05/05/2022**

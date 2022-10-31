@@ -3,7 +3,7 @@ title: "Gestion des tâches"
 slug: api-tasks
 excerpt: "Fonctionnement des tâches asynchrones sur les noms de domaines"
 section: "API domaines"
-order: 4
+order: 04
 ---
 
 **Dernière mise à jour le 05/05/2022**

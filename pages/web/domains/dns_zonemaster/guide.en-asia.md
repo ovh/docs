@@ -2,7 +2,7 @@
 title: Tutorial - Using Zonemaster
 slug: ovhcloud-domain-zonemaster-tutorial
 section: DNS and DNS Zone
-order: 8
+order: 08
 ---
 
 **Last updated 12th September 2022**

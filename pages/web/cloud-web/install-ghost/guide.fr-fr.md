@@ -3,7 +3,7 @@ title: 'Installer Ghost sur son hébergement Cloud Web'
 slug: installer-ghost-cloud-web
 excerpt: 'Découvrez comment installer un blog avec le moteur Ghost sur Cloud Web'
 section: Tutoriels
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 04/05/2022**
@@ -276,4 +276,8 @@ Nous avons vu comment installer une application Node.js sur un hébergement Clou
 
 [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -5,7 +5,7 @@ slug: creeer_een_dns_zone_voor_een_domein_dat_niet_geregistreerd_is_bij_ovh
 excerpt: 'Ontdek hoe u via uw Control Panel een OVH DNS-zone voor uw domeinnaam kunt aanmaken'
 legacy_guide_number: g2229
 section: 'DNS en DNS-zone'
-order: 2
+order: 02
 ---
 
 **Laatste update 06-07-2018**

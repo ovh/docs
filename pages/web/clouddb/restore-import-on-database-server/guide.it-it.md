@@ -3,7 +3,7 @@ title: Ripristinare e importare un database sul tuo server di database
 slug: ripristinare-importare-database
 excerpt: Come ripristinare e importare il database
 section: Configurazione
-order: 5
+order: 05
 ---
 
 > [!primary]
@@ -162,4 +162,8 @@ psql —host=server —port=port —user=utente —password=password nome_databa
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

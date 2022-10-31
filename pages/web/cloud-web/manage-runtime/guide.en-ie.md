@@ -3,6 +3,7 @@ title: 'Managing Cloud Web runtime software applications'
 slug: manage-cloud-web-runtime-software-applications
 excerpt: 'Find out how to manage your Web Hosting plan’s runtime software applications, and complete your projects successfully'
 section: 'Configuring the web hosting plan'
+order: 01
 ---
 
 **Last updated 27th July 2022**
@@ -144,5 +145,9 @@ Once you have selected it, follow the remaining steps.
 ![cloudweb](images/cloud-web-runtime-step6.png){.thumbnail}
 
 ## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

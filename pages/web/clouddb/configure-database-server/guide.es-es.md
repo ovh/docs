@@ -3,7 +3,7 @@ title: 'Configurar el servidor de bases de datos'
 slug: configurar-optimizar-su-servidor-de-base-de-datos
 excerpt: 'Cómo configurar y optimizar el servidor de bases de datos'
 section: Configuración
-order: 6
+order: 06
 ---
 
 > [!primary]
@@ -305,6 +305,8 @@ Evite usar **"HAVING"**, por ejemplo. Está consulta incrementará el número de
 
 [Lista de direcciones IP de los clusters y alojamientos web](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/)
 
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
-
-

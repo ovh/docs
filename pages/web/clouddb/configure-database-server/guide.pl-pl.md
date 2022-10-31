@@ -3,7 +3,7 @@ title: 'Konfiguracja serwera baz danych'
 slug: konfiguracja-optymalizacja-serwera-bazy-danych
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
 section: 'Konfiguracja'
-order: 6
+order: 06
 ---
 
 > [!primary]
@@ -302,4 +302,8 @@ Unikanie na przykład stosowania **"HAVING"**. Zwiększa to liczbę twoich zapyt
 
 [Lista adresów IP klastrów i hostingów](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

@@ -3,7 +3,7 @@ title: 'Tworzenie i eksportowanie bazy danych na serwerze baz danych'
 slug: kopia-zapasowa-eksportowa-bazy-danych
 excerpt: 'Dowiedz się, jak tworzyć kopie zapasowe i eksportować bazę danych'
 section: 'Konfiguracja'
-order: 4
+order: 04
 ---
 
 > [!primary]
@@ -127,4 +127,8 @@ pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de
 
 [Przywracanie i importowanie bazy danych na serwer baz danych](../przywracanie-importowanie-bazy-danych)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

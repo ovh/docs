@@ -3,7 +3,7 @@ title: 'Editing the DNS servers for an OVHcloud domain name'
 slug: web_hosting_general_information_about_dns_servers
 excerpt: 'Find out how to modify DNS servers via the OVHcloud Control Panel'
 section: 'DNS and DNS Zone'
-order: 1
+order: 01
 ---
 
 **Last updated 18th February 2021**

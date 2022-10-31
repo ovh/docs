@@ -3,7 +3,7 @@ title: 'Personalizar los servidores DNS de un dominio'
 slug: glue_record
 excerpt: 'Cómo personalizar los servidores DNS de un dominio en OVHcloud'
 section: 'DNS (servidor y zona)'
-order: 7
+order: 07
 ---
 
 **Última actualización: 05/05/2020**

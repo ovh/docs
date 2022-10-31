@@ -4,7 +4,7 @@ excerpt: 'Dowiedz się, jak chronić domeny przed atakiem DNS (Cache Poisoning) 
 slug: jak_skonfigurowac_strefe_dnssec_dla_domeny
 legacy_guide_number: g609
 section: Bezpieczeństwo
-order: 1
+order: 01
 ---
 
 **Ostatnia aktualizacja z dnia 24-04-2019**
