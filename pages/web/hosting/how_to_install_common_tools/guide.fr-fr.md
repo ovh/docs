@@ -18,27 +18,6 @@ Vous devez disposer d'un [Hébergement Performance](https://www.ovhcloud.com/fr/
 
 ## En pratique
 
-### Créer un répertoire tools
-
-Pour mutualiser les outils que vous installerez sur votre hébergement, nous allons les disposer dans un répetoire qui sera situé à la racine de votre serveur :
-
-```sh
-mkdir tools
-```
-
-Vous pouvez vérifier la création du répertoire à l'aide de la commande `ls` (list) :
-```sh
-ls -la
-```
-
-![list command](images/how_to_install_common_tools%5B1%5D.png)
-
-Déplacez-vous dans ce répertoire :
-
-```sh
-cd tools
-```
-
 ### Composer
 
 #### Installation
@@ -59,7 +38,7 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a6110855
 
 La chaîne de caractères en hexidécimal est un hashage fourni par le site et qui servira pour comparer le résultat du hashage du fichier téléchargé. Cette chaîne changera avec la version de Composer, veillez à prendre celle qui est sur le [site officiel](https://getcomposer.org/).
 
-On exécute le fichier téléchargé :
+Exécutez le fichier téléchargé :
 
 ```sh
 php composer-setup.php
@@ -76,7 +55,7 @@ php -r "unlink('composer-setup.php');"
 
 Pour utiliser Composer dans n'importe quel projet pour installer un composant, saisir la commande sous cette forme (pour installer Bootstrap dans l'exemple) :
 ```sh
-php ~/tools/composer.phar require twbs/bootstrap
+php ~/composer.phar require twbs/bootstrap
 ```
 
 ### NodeJS
@@ -106,17 +85,15 @@ tar xJf node-v16.18.0-linux-x64.tar.xz --strip-components=1 --no-same-owner -C n
 Vérifiez le contenu de votre répertoire :
 
 ```sh
-ls -la ~/tools/node
+ls -la ~/node
 ```
-
-![list command node's directory](images/how_to_install_common_tools%5B2%5D.png)
 
 #### Utilisation
 
 Ajoutez le répertoire contenant le programme `npm` dans le path :
 
 ```sh
-export PATH=~/tools/node/bin:$PATH
+export PATH=~/node/bin:$PATH
 ```
 
 Verifiez :
@@ -129,4 +106,3 @@ which npm
 
 - [Composer](https://getcomposer.org/)
 - [Packagist](https://packagist.org/), dépôt regroupant les paquets installables avec Composer
-- installer [Yarn](https://classic.yarnpkg.com/en/docs/install) avec npm
