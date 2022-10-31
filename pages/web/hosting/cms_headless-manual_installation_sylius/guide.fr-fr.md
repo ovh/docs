@@ -292,6 +292,23 @@ yarn build
 
 Votre application est maintenant installé, vous n'avez plus qu'à aller voir le résultat sur le domaine qui pointe vers votre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/).
 
+#### Rediriger HTTP vers HTTPS
+
+Ouvrez le fichier `htaccess` se situant dans le répertoire `public` :
+
+```sh
+nano public/.htaccess
+```
+
+Dans le fichier, repérez la balise `<IfModule mod_rewrite.c>` et placez-vous à la fin du bloc, après la directive `RewriteRule ^ %{ENV:BASE}/index.php [L]`. Ajoutez les deux lignes suivantes :
+
+```sh
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://monsite.ovh/$1 [R,L]
+```
+
+![Redirection HTTP vers HTTPS](images/cms_headless-manual_installation_sylius%5B7%5D.png)
+
 #### Configurer Sylius - API
 
 L'installation basique de Sylius propose une interface web minimaliste. La plateforme e-commerce est avant tout _headless_ et dispose d'une API avancée pour être utilisée, entre autres, avec un _front_ statique.
@@ -332,15 +349,15 @@ Vous pouvez vérifiez le bon fonctionnement de l'API en vous rendant sur l'URL d
 
 Rendez-vous sur la page d'accueil de l'API :
 
-![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B7%5D.png)
+![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B8%5D.png)
 
 Cliquez ensuite sur le premier lien, dans _AdminUser Token_, `/api/v2/admin/authentication-token` :
 
-![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B8%5D.png)
+![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B9%5D.png)
 
 Cliquez sur le bouton Try it out et remplacez alors les paramètres `email` et `password` par ceux que vous avez défini lors de l'installation, puis sur _Execute_ :
 
-![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B9%5D.png)
+![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B10%5D.png)
 
 Si vos identifiants sont corrects, vous aurez alors une code HTTP 200 en retour et le token correspondant à votre compte.J
 
