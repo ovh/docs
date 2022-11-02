@@ -1,6 +1,7 @@
 ---
-title: Débuter avec l’API Nova
+title: "Débuter avec l’API OpenStack"
 slug: debuter-avec-lapi-nova
+excerpt: "Découvrez comment gérer vos instances à l'aide du client Python OpenStack"
 legacy_guide_number: 1935
 section: Gestion via OpenStack
 order: 3
@@ -8,44 +9,40 @@ order: 3
 
 **Dernière mise à jour le 13 Octobre 2022**
 
+## Objectif
 
-## Préambule
-Afin d'automatiser vos opérations sur le Public Cloud, il est possible d'utiliser les API d'OpenStack afin de générer différents scripts. 
+Afin d'automatiser vos opérations sur le Public Cloud, vous pouvez utiliser les API OpenStack afin de générer différents scripts. 
 
-> [!info]
+> [!primary]
 >
-> Le client Nova était utilisé pour gérer vos instances ainsi que leur disque. Il est maintenant déprécié et les commandes ont été intégrées au sein du client Python OpenStack.
+> Le client Nova était précédemment utilisé pour gérer vos instances ainsi que leurs disques. Ce client est maintenant déprécié et les commandes ont été intégrées au sein du client Python OpenStack.
 >
 
-Vous pourrez par exemple lancer la création d'instance supplémentaire lorsque vos outils de monitoring détecteront un pic de charge afin d'éviter une saturation sur votre infrastructure. Il est aussi possible de programmer la création d'instantané de manière régulière par la même occasion.
+Vous pourrez par exemple lancer la création d'instances supplémentaires lorsque vos outils de monitoring détectent un pic de charge, afin d'éviter une saturation sur votre infrastructure. Il est aussi possible de programmer la création de snapshots de manière régulière.
 
 Ce guide vous aidera à prendre en main les API OpenStack afin de gérer vos instances à l'aide du client Python OpenStack.
 
-
-### Prérequis
+## Prérequis
 
 - [Préparer l'environnement pour utiliser l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
 - [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
 
 
-### Documentation Nova
-Il est possible d'obtenir la liste des commandes possible en lisant la documentation du client :
+## En pratique
 
+Vous pouvez obtenir la liste des commandes possible en lisant la documentation du client :
 
 ```bash
 admin@serveur-1:~$ openstack command list
 ```
 
-
-Vous pouvez filter les commandes affichées en indiquant le groupe. 
-
+Vous pouvez filtrer les commandes affichées en indiquant le groupe : 
 
 ```bash
 admin@serveur-1:~$ openstack command list --group compute
 ```
 
-Il est aussi possible d'avoir des informations concernant une commande en ajoutant "help" devant celle ci :
-
+Il est aussi possible d'avoir des informations concernant une commande en ajoutant `help` devant celle ci :
 
 ```bash
 admin@serveur-1:~$ openstack help flavor list 
@@ -59,21 +56,17 @@ usage: openstack flavor list [-h] [-f {csv,json,table,value,yaml}] [-c COLUMN]
                              [--marker <flavor-id>] [--limit <num-flavors>]
 
 List flavors ...
-
 ```
-
-
 
 > [!success]
 >
-> Il est aussi possible d'avoir la documentation du client directement sur le
-> site [OpenStack](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
+> Consultez la documentation du client directement sur le [site OpenStack](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
 > 
 
+### Opérations basiques
 
-## Operations basiques
+#### Ajout d'une clé SSH publique
 
-### Ajout d'une cle SSH publique
 Dans un premier temps, il est nécessaire d'ajouter une clé SSH publique qui permettra de se connecter sur les instances.
 
 - Lister les commandes liées aux clés SSH :
@@ -102,14 +95,11 @@ admin@serveur-1:~$ openstack keypair list
 +---------------+-------------------------------------------------+------+
 | SSHKEY        | 5c:fd:9d:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:3a | ssh  |
 +---------------+-------------------------------------------------+------+
-
 ```
 
+#### Lister les modèles d'instances
 
-
-### Lister les modeles d'instances
 Il faudra ensuite récupérer l'ID du modèle que l'on souhaite utiliser :
-
 
 ```bash
 admin@serveur-1:~$ openstack flavor list
@@ -129,10 +119,9 @@ admin@serveur-1:~$ openstack flavor list
 +--------------------------------------+-----------------+--------+------+-----------+-------+-----------+
 ```
 
+#### Lister les images disponibles
 
-### Lister les images disponibles
 Pour finir, il suffit de récupérer l'ID de l'image qui sera utilisée pour l'instance :
-
 
 ```bash
 admin@serveur-1:~$ openstack image list 
@@ -151,10 +140,9 @@ admin@serveur-1:~$ openstack image list
 +--------------------------------------+-----------------------------------------------+--------+
 ```
 
+#### Creation d'une instance
 
-### Creation d'une instance
-Avec les éléments récupérés précédemment, il est possible de créer une instance :
-
+Avec les éléments récupérés précédemment, vous pouvez créer une instance :
 
 ```bash
 admin@serveur-1:~$ openstack server create --key-name SSHKEY --flavor d2-2 --image "Ubuntu 22.04" InstanceTest
@@ -189,11 +177,9 @@ admin@serveur-1:~$ openstack server create --key-name SSHKEY --flavor d2-2 --ima
 | user_id                     | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    |
 | volumes_attached            |                                                     |
 +-----------------------------+-----------------------------------------------------+
-
 ```
 
-Après quelques instants on peut vérifier la liste des instances existantes afin de retrouver l'instance créée :
-
+Après quelques instants, on peut vérifier la liste des instances existantes afin de retrouver l'instance nouvellement créée :
 
 ```bash
 admin@serveur-1:~$ openstack server list                                                                 
@@ -204,15 +190,13 @@ admin@serveur-1:~$ openstack server list
 +--------------------------------------+--------------+--------+-------------------------------------+--------------+--------+
 ```
 
+#### Suppression d'une instance
 
-### Suppression d'une instance
-Il est possible de supprimer une instance grâce à la commande suivante :
-
+Vous pouvez supprimer une instance grâce à la commande suivante :
 
 ```bash
 admin@serveur-1:~$ openstack server delete InstanceTest
 ```
-
 
 ## Aller plus loin
 

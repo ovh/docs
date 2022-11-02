@@ -1,6 +1,6 @@
 ---
-title: Starting with Nova API
-excerpt: Find out how to use Nova with the OpenStack API
+title: Getting started with the OpenStack API
+excerpt: Find out how to manage your instances using the Python OpenStack client
 slug: starting-with-nova-api
 section: OpenStack
 order: 3
@@ -12,9 +12,9 @@ order: 3
 
 In order to automate your operations on the Public Cloud, it is possible to use OpenStack APIs to generate different scripts. 
 
-> [!info]
+> [!primary]
 >
-> The Nova client was used to manage your instances and their disk. It is now deprecated and the commands have been merged into the Python OpenStack client.
+> The Nova client was previously used to manage your instances and their disks. It is now deprecated and the commands have been merged into the Python OpenStack client.
 >
 
 For example, you can start creating an additional instance when your monitoring tools detect a peak load in order to avoid saturation on your infrastructure. It is also possible to schedule snapshot creation on a regular basis at the same time.
@@ -28,7 +28,7 @@ Please refer to the following guides:
 - [Preparing an environment for using the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/){.external}
 - [Setting OpenStack environment variables](../set-openstack-environment-variables/){.external}
 
-## Nova Documentation
+## Instructions
 
 You can obtain the list of possible commands by reading the embedded documentation:
 
@@ -58,13 +58,14 @@ List flavors ...
 
 > [!success]
 >
-> It is also possible to obttain the Nova Client documentation from the [OpenStack Website](https://docs.openstack.org/python-openstackclient/latest/cli/index.html).
+> You can obtain the Python Client documentation from the [OpenStack Website](https://docs.openstack.org/python-openstackclient/latest/cli/index.html).
 >
 
-## Basic Operations
+### Basic Operations
 
-### Adding an SSH Public Key
-As a first step, it is necessary to a Public SSH key to connect to the instances.
+#### Adding an SSH Public Key
+
+As a first step, it is necessary to add a Public SSH key to connect to the instances.
 
 - List commands associated with SSH keys
 
@@ -93,8 +94,9 @@ admin@server-1:~$ openstack keypair list
 +---------------+-------------------------------------------------+------+
 ```
 
-### List the instance models
-Next, you will need to obtain the ID of the model that we would like to use:
+#### Listing the instance models
+
+Next, you will need to obtain the ID of the model that you would like to use:
 
 ```bash
 admin@server-1:~$ openstack flavor list
@@ -114,8 +116,9 @@ admin@server-1:~$ openstack flavor list
 +--------------------------------------+-----------------+--------+------+-----------+-------+-----------+
 ```
 
-### List the available images
-Finally, we will need to obtain the ID of the image we want to use on the instance:
+#### Listing available images
+
+Finally, you need to obtain the ID of the image you want to use on the instance:
 
 ```bash
 admin@server-1:~$ openstack image list 
@@ -134,8 +137,9 @@ admin@server-1:~$ openstack image list
 +--------------------------------------+-----------------------------------------------+--------+
 ```
 
-### Creating an instance
-With the information that we previousl obtained, it is now possible to create an instance:
+#### Creating an instance
+
+With the information that has been previously obtained, it is now possible to create an instance:
 
 ```bash
 admin@server-1:~$ openstack server create --key-name SSHKEY --flavor d2-2 --image "Ubuntu 22.04" InstanceTest
@@ -172,7 +176,7 @@ admin@server-1:~$ openstack server create --key-name SSHKEY --flavor d2-2 --imag
 +-----------------------------+-----------------------------------------------------+
 ```
 
-After a few moments we can verify the list of instanes to find the created instance:
+After a few moments, you can verify the list of instances to find the newly created instance:
 
 ```bash
 admin@server-1:~$ openstack server list                                                                 
@@ -183,8 +187,9 @@ admin@server-1:~$ openstack server list
 +--------------------------------------+--------------+--------+-------------------------------------+--------------+--------+
 ```
 
-### Deleting an instance
-It is possible to delete an instance with the following command:
+#### Deleting an instance
+
+You can delete an instance with the following command:
 
 ```bash
 admin@server-1:~$ openstack server delete InstanceTest
