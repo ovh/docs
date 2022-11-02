@@ -18,6 +18,11 @@ For example, your email address is **john.smith@mydomain.ovh** and you create an
 
 **This guide explains how to add an alias address to an email account in the OVHcloud Control Panel.**
 
+> [!warning]
+>
+> Please note: OVHcloud aliases only work for incoming emails. It is not possible to send emails using the alias as the sender of an e-mail.
+>
+
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
@@ -31,7 +36,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 - **Exchange**: Open `Microsoft`{.action}, then `Exchange`{.action}, and select the service concerned. Click on the `Email accounts`{.action} tab.
 
-- **Email Pro**: Open `Professional Email`{.action}, select the service concerned, then click on the `Email accounts`{.action} tab.
+- **Email Pro**: Open `Email Pro`{.action}, select the service concerned, then click on the `Email accounts`{.action} tab.
 
 - **Emails** (MXplan): Open `Emails`{.action}, select the service concerned, then click on the `Email accounts`{.action} tab.
 

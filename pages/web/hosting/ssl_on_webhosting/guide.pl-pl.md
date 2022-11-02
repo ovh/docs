@@ -110,7 +110,7 @@ W zależności od wybranego rozwiązania mogą pojawić się dodatkowe etapy:
 
 - **jeśli wybrałeś płatny certyfikat SSL**: wykonaj kolejne kroki zamówienia, które się wyświetlają. W przypadku niektórych typów certyfikatów SSL może być wymagana specjalna weryfikacja. Możesz otrzymać jedną lub kilka wiadomości e-mail w związku z tym etapem. Postępuj zgodnie z instrukcjami zawartymi w przesłanych wiadomościach, aż do zakończenia instalacji;
 
-- **jeśli wybrałeś import certyfikatu SSL**: wprowadź informacje w odpowiednich polach, które się wyświetlają. Wykorzystaj w tym celu informacje podane przez dostawcę, który wystawił Ci certyfikat. 
+- **jeśli wybrałeś import certyfikatu SSL**: wprowadź informacje w odpowiednich polach, które się wyświetlają. Wykorzystaj w tym celu informacje podane przez dostawcę, który wystawił Ci certyfikat. Zazwyczaj dostarczają 3 plików: certificate.crt, private.key i ca_bundle.crt. Po wybraniu opcji `Importuj certyfikat SSL`{.action} kliknij przycisk `Dalej`{.action}. W pierwszej sekcji "Kopiuj zawartość certyfikatu (Tylko RSA):" skopiuj zawartość pliku "certificate.crt", w drugiej sekcji "Kopiuj zawartość klucza prywatnego (niezaszyfrowanego):" skopiuj zawartość pliku "private.key", a w trzeciej sekcji "Kopiuj zawartość łańcucha certyfikatów:" skopiuj zawartość pliku "ca_bundle.crt" i kliknij `Potwierdź`{.action}.
 
 Wdrożenie certyfikatu może zająć od kilku minut do kilku dni, w zależności od typu wybranego certyfikatu. Aby sprawdzić, czy certyfikat SSL jest zainstalowany na Twoim hostingu, przejdź do zakładki `Informacje ogólne`{.action} w Twoim Panelu klienta. Informacja „Tak” powinna pojawić się poniżej sekcji „Certyfikat SSL”.
 

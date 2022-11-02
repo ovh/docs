@@ -108,7 +108,7 @@ A seconda dell’opzione selezionata, potrebbero essere necessari alcuni step ag
 
 - i **certificati SSL a pagamento** richiedono il completamento degli step del processo d’ordine per essere generati. Per alcune tipologie sono necessarie convalide specifiche ed è quindi possibile che vengano inviate una o più email a questo proposito. Segui le indicazioni contenute in questi messaggi per completare l’installazione.
 
-- l’**importazione di un certificato SSL** richiede l’inserimento di alcune informazioni aggiuntive. Segui le indicazioni fornite dal provider che lo ha generato.
+- l’**importazione di un certificato SSL** richiede l’inserimento di alcune informazioni aggiuntive. Segui le indicazioni fornite dal provider che lo ha generato. Di solito forniscono 3 file: certificate.crt, private.key e ca_bundle.crt. Dopo aver selezionato `Importa il tuo certificato SSL`{.action}, clicca su `Avanti`{.action}. Nella prima sezione "Copia il contenuto del tuo certificato (solo RSA):" copia il contenuto del file "certificato.crt", nella seconda sezione "Copia il contenuto della tua chiave privata (non cifrata):" copia il contenuto del file "chiave.privata" e nella terza sezione "Copia il contenuto della tua catena di certificati:" copia il contenuto del file "ca_bundle.crt" e clicca su `Conferma`{.action}.
 
 In base alla tipologia di certificato scelta, l’installazione può durare da pochi minuti a diversi giorni. Per verificare che l’operazione sia stata effettuata correttamente, ritorna alla scheda `Informazioni generali`{.action} dello Spazio Cliente OVHcloud e verifica che nel riquadro **Configurazione** sotto **Certificato SSL** compaia la voce “Sì”.
 

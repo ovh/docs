@@ -35,7 +35,7 @@ Die Lizenzen gelten für folgende Software:
 
 Gehen auf unserer [OVHcloud.com Website](https://www.ovh.de/office-365/){.external} zu "Tools für Teamarbeit" im Bereich "Web Cloud". 
 
-Sie können auch eine Lizenz über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) bestellen. Wenn Sie eingeloggt sind, klicken Sie auf `Bestellen`{.action} und `O365`{.action}.
+Sie können auch eine Lizenz über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) bestellen. Wenn Sie eingeloggt sind, klicken Sie auf `Bestellen`{.action} und `Office 365`{.action}.
 
 - Wählen Sie aus den verfügbaren Angeboten "Apps for business" oder "Apps for enterprise".
 - Legen Sie das Verlängerungsintervall Ihrer Lizenzgruppe fest.

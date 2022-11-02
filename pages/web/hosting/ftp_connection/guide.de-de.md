@@ -43,8 +43,8 @@ Hier werden alle zum Speicherplatz gehörigen Informationen sowie eine Tabelle a
 
 ![ftp login](images/connect-ftp-step1.png){.thumbnail}
 
-Wenn Sie einen neuen FTP/SSH-Benutzer von derselben Seite aus erstellen möchten, klicken Sie auf den Button "Benutzer erstellen" rechts.
-Wählen Sie den "Benutzer" und "Wurzelverzeichnis" aus und klicken Sie dann auf "Weiter". Wählen Sie ein Passwort für dieses neue Konto aus und klicken Sie auf "Weiter" und "Bestätigen".
+Wenn Sie einen neuen FTP/SSH-Benutzer von derselben Seite aus erstellen möchten, klicken Sie auf den Button `Benutzer erstellen`{.action} rechts.
+Wählen Sie den `Benutzer`{.action} und `Wurzelverzeichnis`{.action} aus und klicken Sie dann auf `Weiter`{.action}. Wählen Sie ein Passwort für dieses neue Konto aus und klicken Sie auf `Weiter`{.action} und `Bestätigen`{.action}.
 
 In den angezeigten Informationen finden Sie alle Elemente, die Sie für die Verbindung mit Ihrem Speicherplatz brauchen. Wenn nötig, lesen Sie die nachstehende Tabelle, um die Informationen zu identifizieren. Beachten Sie, dass je nach Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot eventuell nicht alle Angaben angezeigt werden.
 

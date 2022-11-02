@@ -43,6 +43,9 @@ Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
 
+Aby utworzyć nowego użytkownika FTP/SSH na tej samej stronie, kliknij przycisk Utwórz użytkownika po prawej stronie.
+Wybierz `Użytkownik`{.action} i `Folder główny`{.action}, a następnie kliknij `Dalej`{.action}, wybierz hasło dla tego nowego konta i kliknij `Dalej`{.action} i kliknij `Potwierdź`{.action}.
+
 Dzięki tym danym będziesz mógł odnaleźć dane wymagane do logowania się do przestrzeni dyskowej. Jeśli nie udaje ci się ich odnaleźć, skorzystaj z tabeli. Pamiętaj, że niektóre informacje mogą się nie wyświetlić. Zależy to od oferty, którą wykupiłeś.
 
 - **Serwer FTP i SFTP**: Jest to adres serwera umożliwiający dostęp do Twojej przestrzeni dyskowej przy użyciu programu FTP przy użyciu protokołu FTP lub SFTP.

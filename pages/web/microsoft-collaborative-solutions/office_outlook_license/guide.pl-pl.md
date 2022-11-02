@@ -19,7 +19,7 @@ Chcesz korzystać z licencji Outlook, aby przeglądać i zarządzać kontem Exch
 
 OVHcloud oferuje program pocztowy Outlook w cenie 2 euro netto miesięcznie. Zostanie przypisany do konta Exchange OVHcloud, którym zarządzasz.
 
-Po zamówieniu programu Outlook możesz pobrać jedną z 6 wersji:
+Po zamówieniu programu Outlook możesz pobrać jedną z 3 wersji:
 
 - Outlook 2016 na Windows 32 bit.
 - Outlook 2016 na Windows 64 bit.

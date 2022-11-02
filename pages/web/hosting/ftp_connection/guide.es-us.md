@@ -43,6 +43,9 @@ Se mostrará la información relativa a su espacio de almacenamiento, así como 
 
 ![Conexión FTP](images/connect-ftp-step1.png){.thumbnail}
 
+Si quiere crear un nuevo usuario FTP/SSH desde la misma página, haga clic en el botón "Crear usuario" de la derecha.
+Seleccione el "Usuario" y la "Carpeta raíz", haga clic en "Siguiente", introduzca una contraseña para la nueva cuenta, haga clic en "Siguiente" y, por último, en "Confirmar".
+
 Entre esa información se encuentran los datos necesarios para conectarse a su espacio de almacenamiento. Si necesita ayuda para identificarlos, consulte la tabla de abajo. Tenga en cuenta que algunos datos podrían no aparecer en función del [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} contratado.
 
 - **Servidor FTP y SFTP**: Es la dirección del servidor que permite acceder al espacio de almacenamiento utilizando un programa FTP a través del protocolo FTP o SFTP.

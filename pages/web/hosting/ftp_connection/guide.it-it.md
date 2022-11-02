@@ -43,6 +43,9 @@ Nella nuova pagina, visualizzi tutte le informazioni relative allo storage e una
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
 
+Per creare un nuovo utente FTP/SSH a partire dalla stessa pagina, clicca sul pulsante `Crea utente`{.action} a destra.
+Scegli l’`Utente`{.action} e la `Cartella di root`{.action}, quindi clicca su `Avanti`{.action}, scegli una password per questo nuovo account, clicca su `Avanti`{.action} e clicca su `Conferma`{.action}.
+
 In questa interfaccia dovresti trovare i dati richiesti per eseguire l’accesso. Se non riesci a identificarli, consulta la tabella qui sotto tenendo presente che, in base alla soluzione di hosting attivata, alcuni di essi potrebbero non essere disponibili.
 
 - **Server FTP e SFTP**: Indirizzo del server che consente l'accesso allo spazio di storage utilizzando un software FTP tramite il protocollo FTP o SFTP.

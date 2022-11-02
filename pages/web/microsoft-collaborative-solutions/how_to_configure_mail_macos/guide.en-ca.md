@@ -45,7 +45,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.com/ca/en/mail/>. You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using the Outlook Web App with an Exchange account](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovhcloud.com/en-ca/mail/>. You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using the Outlook Web App with an Exchange account](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
 
 ### Retrieve a backup of your email address
 

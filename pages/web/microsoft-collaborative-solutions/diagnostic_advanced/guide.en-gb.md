@@ -103,7 +103,7 @@ Here are the mandatory values for an Exchange service:
 
 Field        | Value
 ------------ | -------------
-Sub-domain     | _autodiscover._tcp
+Sub-domain   | _autodiscover._tcp
 Priority     | 0
 Weight       | 0
 Port         | 443

@@ -18,7 +18,7 @@ This Exchange feature allows you to set up automatic responses to emails sent to
 ## Requirements
 
 - an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [OVHcloud Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) already set up
-- access to your Exchange/Email Pro account (email address and password)
+- access to your email account (email address and password)
 
 
 ## Instructions

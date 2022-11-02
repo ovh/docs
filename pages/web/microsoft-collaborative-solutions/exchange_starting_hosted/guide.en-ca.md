@@ -19,19 +19,19 @@ With the Hosted Exchange service, you can get professional emails to use for col
 - You need to have a subscription to a [Hosted Exchange](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/){.external} solution.
 - You need to have received an email confirming that your Hosted Exchange solution has been set up.
 - You must have a domain name.
-- You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 
 ## Instructions
 
 ### Step 1: Log in to your service's interface
 
-Once your Hosted Exchange service has been created and is available, you can manage it from your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+Once your Hosted Exchange service has been created and is available, you can manage it from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 
 To do this, log in and click `Microsoft`{.action}, then `Exchange`{.action}. The click on the name of the Hosted Exchange service concerned.
 
 > [!primary]
 >
-> The name of a Hosted Exchange service in your OVH Control Panel begins with **hostedbhs-**, contains part of your NIC handle and ends with a figure (1 for the first Hosted Exchange service installed, 2 for the second, etc.).
+> The name of a Hosted Exchange service in your OVHcloud Control Panel begins with **hostedbhs-**, contains part of your NIC handle and ends with a figure (1 for the first Hosted Exchange service installed, 2 for the second, etc.).
 >
 
 ### Step 2: Configure your service for the first time
@@ -57,7 +57,7 @@ Once you have finished configuring your domain, you can also configure additiona
 > In the directory, all of the addresses created on your Exchange service can view all other addresses associated with it, including those that have different domain names. To stop different domain names from being displayed this way, you will need to order a new Hosted Exchange solution for the domain name(s) concerned.
 >
 
-To add a new domain name, select the Hosted Exchange concerned in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and click on `Associated domains`{.action}. You will see a table showing all of the domain names currently configured, or about to be configured on your service. To add new ones, click on the `Add a domain`{.action} button, then follow the various steps of the process.
+To add a new domain name, select the Hosted Exchange concerned in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and click on `Associated domains`{.action}. You will see a table showing all of the domain names currently configured, or about to be configured on your service. To add new ones, click on the `Add a domain`{.action} button, then follow the various steps of the process.
 
 To find out more, please refer to this guide on [Adding a domain name to an Exchange service](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/adding-domain-exchange/){.external}.
 
@@ -72,20 +72,20 @@ To find out more, please refer to this guide on [Adding a domain name to an Exch
 
 You can configure additional accounts if you wish, and if you have not already done so via the assistant.
 
-To do this, click on the Hosted Exchange service concerned in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, then on `Email accounts`{.action}. You will see a table showing all of the accounts currently configured, or about to be configured on your service.
+To do this, click on the Hosted Exchange service concerned in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, then on `Email accounts`{.action}. You will see a table showing all of the accounts currently configured, or about to be configured on your service.
 
 The accounts that have not yet been configured configuration will appear in the table as “*@configureme.me*”. To configure them, click on the pencil icon, then follow the steps.
 
 > [!primary]
 >
-> Repeat this step as necessary according to the number of accounts you have. You can order new ones using the `Order accounts`{.action} button.
+> Repeat this step as necessary according to the number of accounts you have. You can order new ones using the `Actions`{.action} button and next click `Order accounts`{.action} .
 >
 
 ![Add an account](images/first-steps-hosted-exchange-add-account.png){.external}
 
 ### Step 5: Use your email addresses
 
-Once you have configured your accounts, you can now start using them. To do this, OVH offers the **Outlook Web Application** (OWA) webmail app. You can access this via the following address: <https://ex.mail.ovh.ca/>. To log in, enter your email address credentials. If you require any assistance using OWA, please refer to our documentation via this link: <https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/>.
+Once you have configured your accounts, you can now start using them. To do this, OVHcloud offers the **Outlook Web Application** (OWA) webmail app. You can access this via the following address: <https://ex.mail.ovh.ca/>. To log in, enter your email address credentials. If you require any assistance using OWA, please refer to our documentation via this link: <https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/>.
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our documentation via this portal: <https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/>. To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service.
 
@@ -98,9 +98,9 @@ If you would like to configure your email address on an email client or device (
 
 ### Step 6: Configuring collaborative features (optional)
 
-Now that your Hosted Exchange service is configured and fully functional, you can set up the service’s collaborative features in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. You can use these features to create resources (meeting rooms, equipment, etc.), groups, and much more.
+Now that your Hosted Exchange service is configured and fully functional, you can set up the service’s collaborative features in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. You can use these features to create resources (meeting rooms, equipment, etc.), groups, and much more.
 
-To enable these features, select the Hosted Exchange service concerned in your  [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, then choose from the tabs that show which action will be carried out.
+To enable these features, select the Hosted Exchange service concerned in your  [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, then choose from the tabs that show which action will be carried out.
 
 ![Collaborative features](images/first-steps-hosted-exchange-intro-to-functions.png){.external}
 

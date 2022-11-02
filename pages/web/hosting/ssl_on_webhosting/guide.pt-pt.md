@@ -106,7 +106,7 @@ Em função da solução que selecionou, poderá ter de realizar alguns passos a
 
 - **Se selecionou um certificado SSL pago:** deverá concluir o processo de encomenda para receber um certificado. Pode ser necessária uma validação específica para certos tipos de certificados SSL. Poderá receber um ou vários e-mails sobre este assunto. Se tal for o caso, leia as informações enviadas e siga as instruções fornecidas para concluir a configuração;
 
-- **Se optou por importar um certificado SSL:** deverá inserir os detalhes do certificado nas zonas apresentadas. Consulte as informações enviadas pelo fornecedor junto do qual adquiriu o certificado.
+- **Se optou por importar um certificado SSL:** deverá inserir os detalhes do certificado nas zonas apresentadas. Consulte as informações enviadas pelo fornecedor junto do qual adquiriu o certificado. Normalmente, eles fornecem 3 arquivos: certificate.crt, private.key e ca_bundle.crt. Após selecionar `Importar certificado SSL`{.action}, clique em `Seguinte`{.action}. Na primeira secção "Copiar o conteúdo do seu certificado (apenas RSA):" copie o conteúdo do ficheiro "certificate.crt", na segunda secção "Copiar o conteúdo da sua chave privada (não encriptada):" copie o conteúdo do ficheiro "private.key" e na terceira secção "Copiar o conteúdo da sua cadeia de certificados:" copie o conteúdo do ficheiro "ca_bundle.crt" e clique em `Confirmar`{.action}.
 
 A configuração do certificado pode demorar alguns minutos ou vários dias, dependendo no tipo de certificado selecionado. Para verificar se o certificado SSL já está configurado no alojamento web, aceda à Área de Cliente OVHcloud e clique no separador `Informações gerais`{.action}. A menção “Sim” deve aparecer junto de “Certificado SSL”.
 
