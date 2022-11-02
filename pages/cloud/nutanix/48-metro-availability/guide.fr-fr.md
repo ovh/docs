@@ -12,6 +12,7 @@ order: 06
 
 **Ce guide vous présente Metro Availability qui permet un plan de reprise d'activité automatisé.** 
 
+
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
@@ -24,7 +25,7 @@ order: 06
     - [Etape 3.1 Configuration](#configuration)
         - [Etape 3.1.1 Interconnexion des trois clusters](#connectcl)
         - [Etape 3.1.2 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)
-        - [Etape 3.1.3 Enregistrement des deux clusters sur le **Prism Central** d'Erith](#enregpc)
+        - [Etape 3.1.3 Enregistrement des deux clusters sur Prism Central à Erith](#enregpc)
         - [Etape 3.1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)
         - [Etape 3.1.5 Création de deux Storage Containers](#addsc)
         - [Etape 3.1.6 Déplacement des machines virtuelles dans le Storage Container](#deplst)
@@ -120,14 +121,12 @@ En plus de ce guide vous pouvez vous appuyer sur ces documentations [Hyperconver
 
 La première étape est de réaliser l'interconnexion des trois clusters sur le même **vRack** **OVHcloud**. 
 
-Aidez-vous de ce guide pour interconnecter vos clusters [Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/).
-
-Le guide explique la connexion entre deux clusters. Pour la connexion des trois clusters utilisez les instructions fournies sur le guide dans ce sens :
+Aidez-vous de ce guide pour interconnecter vos clusters [Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/). Pour connecter des trois clusters utilisez les instructions fournies sur le guide dans ce sens :
 
 - Les clusters de Roubaix dans le **vRack** dédié à Gravelines.
 - Les clusters de Erith dans le **vRack** dédié à Gravelines.
 
-Lorsque vous aurez terminé la configuration vous verrez dans votre vRack ces éléments :
+Lorsque vous aurez terminé la configuration vous aurez dans votre vRack ces éléments :
 
 - 9 Dedicated servers (3 par cluster)
 - 3 adresses IP publiques
@@ -258,7 +257,7 @@ Registered Cluster Count: 1
     Cluster Id                : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
     Cluster Name              : Prism-Central-Erith-FQDN
     Is Multicluster           : true
-    Controller VM IP Addre... : [adresse_ip_privee_prisme_central_Erith]
+    Controller VM IP Addre... : [adresse_ip_privee_prism_central_Erith]
     External or Masqueradi... :
     Cluster FQDN              :
     Controller VM NAT IP A... :
@@ -387,7 +386,7 @@ Saisissez `UsedForDR` dans **Name**, Choisissez le `cluster de Gravelines` dans 
 
 ![05 - Add-storage-container 05](images/05-add-storage-container05.png){.thumbnail}
 
-Dans la liste des **Storages Containers** vous verrez deux **Storage Containers** portant le même Nom.
+Dans la liste des **Storages Containers** vous verrez deux **Storage Containers** portant le même Nom. Un sur le cluster de Roubaix et l'autre sur le cluster de Gravelines.
 
 ![05 - Add-storage-container 06](images/05-add-storage-container06.png){.thumbnail}
 
@@ -453,7 +452,7 @@ Au travers du menu principal de **Prism Central** cliquez sur `Vms`{.action} dan
 
 ![07 - Add Categorie to VM Roubaix 01](images/07-add-categorie-to-vm-roubaix01.png){.thumbnail}
 
-Sélectionnez à gauche `les deux machines virtuelles`{.action} de Roubaix, Ensuite au travers du menu **Actions** cliquez sur `Manage Categories`{.action}.
+Sélectionnez à gauche `les deux machines virtuelles`{.action} de Roubaix, ensuite au travers du menu **Actions** cliquez sur `Manage Categories`{.action}.
 
 ![07 - Add Categorie to VM Roubaix 02](images/07-add-categorie-to-vm-roubaix02.png){.thumbnail}
 
@@ -461,7 +460,7 @@ Ajouter la catégorie `ProcectedVM: Roubaix`, ensuite cliquez sur `Save`{.action
 
 ![07 - Add Categorie to VM Roubaix 03](images/07-add-categorie-to-vm-roubaix03.png){.thumbnail}
 
-Sélectionnez à gauche `les trois machines virtuelles`{.action} de Gravelines, Ensuite au travers du menu **Actions** cliquez sur `Manage Categories`{.action}
+Sélectionnez à gauche `les trois machines virtuelles`{.action} de Gravelines et au travers du menu **Actions** cliquez sur `Manage Categories`{.action}
 
 ![08 - Add Categorie to VM Gravelines 01](images/08-add-categorie-to-vm-gravelines01.png){.thumbnail}
 
@@ -534,7 +533,7 @@ Cliquez sur `Create`{.action}.
 
 ![09 - Create Protection Policy Roubaix 14](images/09-create-data-protection-roubaix14.png){.thumbnail}
 
-Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines, après une première copie complète, les données seront synchronisées en permanence de Roubaix vers Gravelines.
+Les machines virtuelles de Roubaix sont à présent répliquées vers Gravelines. Il faut attendre une première réplication complète pour avoir une réplication permanente.
 
 ![09 - Create Protection Policy Roubaix 15](images/09-create-data-protection-roubaix15.png){.thumbnail}
 
@@ -581,9 +580,10 @@ Une deuxième stratégie de protection est en place.
 <a name="addsublan"></a>
 #### **Etape 3.1.10 Création de sous-réseaux nécessaires au plan de reprise d'activité**
 
-Nous allons créer des sous-réseaux qui serviront pour les tests de plans de reprises d'activité intégrés dans Nutanix
+Nous allons créer des sous-réseaux qui serviront pour les tests dez plans de reprises d'activité.
 
-Il faut un sous réseau de test par sous réseau existant sur nos clusters, nous avons 3 sous réseaux de production.
+Pour chaque sous-réseau existant il est nécessaire d'avoir un réseau de test. Sur les deux clusters du plan de reprise d'activité nous avons trois sous-réseau de production.
+
 
 - **base** sur le VLAN 0.
 - **infra** sur le VLAN 1.
@@ -597,7 +597,7 @@ Nous allons donc créer 3 sous-réseaux supplémentaires sur les clusters de Gra
 
 Aidez-vous de ce guide pour créer des VLAN sur vos clusters Nutanix [Isoler les machines de gestion de la production](https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/).
 
-Six nouveaux sous-réseaux sont visibles au travers de votre interface **Prism Central** dans le tableau de bord **Subnets**
+Au travers de **Prism Central** dans le tableau de bord **Subnets** vous verrez six nouveaux sous réseaux.
 
 ![11 - Create Test Subnet 01](images/11-create-testsubnet01.png){.thumbnail}
 
@@ -1027,10 +1027,10 @@ Cliquez en haut à droite sur les `tâches`{.action} dans **Prism Central pour a
 ![18 - fail on Gravelines 03](images/18-fail-on-gravelines03.png){.thumbnail}
 
 > [!warning]
-> Lors d'un incident sur la totalité d'un cluster (Nombres de nœud insuffisants pour fonctionner, ou une coupure réseau) les machines virtuelles qui font partie du P.R.A et qui sont sur ce cluster vont être démarrées sur l'autre cluster. 
+> Lors d'un incident sur la totalité d'un cluster (Nombres de nœud insuffisants pour fonctionner, ou une coupure réseau) les machines virtuelles qui font partie du P.R.A et qui se trouvent sur ce cluster vont être démarrées sur l'autre cluster. 
 > Le RPO est de 0 secondes (Recovery Point Objective) ce qui signifie qu'aucunes pertes de données ne sera à déplorer.
 >
-> Par contre le redémarragage des machines virtuelles sur l'autre cluster va mettre un certain temps. Dans ce guide 3 machines virtuelles sont redémarrées sur le cluster distant, 4 minutes sont nécessaire pour le démarrage des machines virtuelles. Ce temps est mesurable en effectuant régulièrerment des tests sur les plans de reprise d'activité.
+> Par contre le redémarragage des machines virtuelles sur l'autre cluster va mettre un certain temps. Dans ce guide 3 machines virtuelles sont redémarrées sur le cluster distant, 4 minutes sont nécessaires pour le démarrage des machines virtuelles. Ce temps est mesurable en effectuant régulièrerment des tests sur les plans de reprise d'activité.
 >
 
 Revenez sur la console texte et vous allez voir que le ping fonctionne à nouveau.
@@ -1051,7 +1051,7 @@ Allez sur **Prism Central** dans la gestion des machines virtuelles, vous verrez
 
 Nous allons reconnecter les trois nœuds dans le vRack pour revenir en mode normal.
 
-Après le retour à la normale les machines virtuelles qui se trouvent sur le cluster d'origine sont toujours visibles mais éteintes. Vous pouvez les supprimer ou les conserver pour en cas de problèmes sur les machines virtuelles qui sont redémarrées.
+Après le retour à la normale les machines virtuelles qui se trouvent sur le cluster d'origine sont toujours visibles mais éteintes. Vous pouvez les supprimer ou les conserver en cas de problèmes sur les machines virtuelles qui sont redémarrées.
 
 ![18 - fail on Gravelines 05](images/18-fail-on-gravelines05.png){.thumbnail}
 
@@ -1065,7 +1065,7 @@ Cliquez à gauche sur `Witness`{.action} et cliquez sur `View Usage History`{.ac
 
 ![19 - show Witness information 02](images/19-show-witness-information02.png){.thumbnail}
 
-La liste des événemments survenus apparait, cliquez sur `Close pour fermer`{.action}.
+La liste des événements survenus apparait, cliquez sur `Close pour fermer`{.action}.
 
 ![19 - show Witness information 03](images/19-show-witness-information03.png){.thumbnail}
 
@@ -1083,7 +1083,7 @@ La liste des événemments survenus apparait, cliquez sur `Close pour fermer`{.a
 
 [Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/)
 
-[AHV Metro - Witness Option](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-witness-syncrep-pc-c.html)
+[Documentation Nutanix AHV Metro - Witness Option](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-witness-syncrep-pc-c.html)
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
