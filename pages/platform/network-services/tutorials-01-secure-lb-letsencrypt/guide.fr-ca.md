@@ -23,7 +23,7 @@ Une fois votre Load Balancer mis en place, vous pouvez le configurer avec un cer
 - Avoir installé le [client Openstack Octavia](https://docs.openstack.org/python-octaviaclient/latest/install/index.html) et [Openstack Barbican](https://docs.openstack.org/python-barbicanclient/latest/install/index.html)
 - Un Load Balancer actif dans votre projet
 
-Si vous n'êtes pas encore familier avec la création du Load Balancer, veuillez consulter notre guide « [Premiers pas avec le service Load Balancer Public Cloud](https://docs.ovh.com/fr-ca/publiccloud/network-services/getting-started-with-load-balancer-public-cloud/) » avant de poursuivre la lecture de ce guide.
+Si vous n'êtes pas encore familier avec la création du Load Balancer, veuillez consulter notre guide « [Premiers pas avec le service Load Balancer Public Cloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/getting-started-with-load-balancer-public-cloud/) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 
@@ -114,7 +114,7 @@ Vous pouvez maintenant accéder à votre Load Balancer de manière sécurisée a
 
 ## Aller plus loin
 
-[Premiers pas avec le service Load Balancer pour Public Cloud](https://docs.ovh.com/fr-ca/publiccloud/network-services/getting-started-with-load-balancer-public-cloud/)
+[Premiers pas avec le service Load Balancer pour Public Cloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/getting-started-with-load-balancer-public-cloud/)
 
 [Documentation officielle d'Openstack Octavia](https://docs.openstack.org/octavia/latest/)
 
