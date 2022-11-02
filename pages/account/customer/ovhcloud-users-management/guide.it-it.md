@@ -2,8 +2,8 @@
 title: 'Gestire gli utenti dei servizi OVHcloud'
 slug: gestisci_gli_utenti
 excerpt: 'Come aggiungere nuovi utenti dal tuo account OVHcloud'
-section: 'Per iniziare'
-order: 5
+section: Utilizzo avanzato
+order: 01
 ---
 
 **Ultimo aggiornamento: 20/05/2020**

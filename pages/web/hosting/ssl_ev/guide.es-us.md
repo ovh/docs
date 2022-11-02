@@ -164,7 +164,7 @@ Una vez que Comodo haya comprobado que su empresa existe y que usted está facul
 
 
 ## Que condiciones hay que cumplir?
-En la siguiente página se indican las condiciones para poder contratar un certificado SSL EV: [https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/](https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/){.external}
+En la siguiente página se indican las condiciones para poder contratar un certificado SSL EV: [https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
 Solo pueden optar a él las empresas.
 

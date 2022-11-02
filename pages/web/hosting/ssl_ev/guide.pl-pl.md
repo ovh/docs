@@ -7,7 +7,7 @@ order: 03
 ---
 
 ## Informacje ogólne 
-Certyfikaty SSL EV sprzedawane przez OVH są wydawane przez instytucję certyfikującą Comodo. Instytucja ta weryfikuje status prawny Twojej firmy.
+Certyfikaty SSL EV sprzedawane przez OVHcloud są wydawane przez instytucję certyfikującą Comodo. Instytucja ta weryfikuje status prawny Twojej firmy.
 
 Informacje na temat oferty znajdują się na stronie: [https://www.ovhcloud.com/pl/web-hosting/options/ssl/](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}.
 
@@ -23,7 +23,7 @@ Certyfikat SSL EV
 
 ![hosting - certyfikat SSL EV](images/ssl_EV.png){.thumbnail}
 
-## Jak zamówić certyfikat SSL EV w OVH?
+## Jak zamówić certyfikat SSL EV w OVHcloud?
 
 ### Jeśli masz już stronę internetową w OVH
 Zaloguj się do Panelu klienta, aby złożyć zamówienie na certyfikat SSL EV.
@@ -44,7 +44,7 @@ Wystarczy podać informacje dotyczące Twojej firmy:
 ![hosting - certyfikat SSL EV](images/step4.png){.thumbnail}
 
 ## Jak potwierdzić istnienie firmy
-Po złożeniu zamówienia w OVH, otrzymasz e-mail od Comodo:
+Po złożeniu zamówienia w OVHcloud, otrzymasz e-mail od Comodo:
 
 ```
  Subject : "ORDER #xxxxxxxxxx - Agreement"
@@ -107,7 +107,7 @@ Po złożeniu zamówienia w OVH, otrzymasz e-mail od Comodo:
  best practices or security compliance requirements.
 ```
 
-Należy kliknąć link potwierdzający, który pozwoli na realizację zamówienia. Należy również określić swoje stanowisko w ramach firmy oraz zatwierdzić adres e-mail przypisany do Twojego konta w OVH (za pomocą dostępnego linku).
+Należy kliknąć link potwierdzający, który pozwoli na realizację zamówienia. Należy również określić swoje stanowisko w ramach firmy oraz zatwierdzić adres e-mail przypisany do Twojego konta w OVHcloud (za pomocą dostępnego linku).
 
 Jeśli Twoja firma jest zarejestrowana w rejestrze KRS, COMODO skontaktuje się z Tobą telefonicznie, w celu weryfikacji danych.
 
@@ -146,14 +146,14 @@ Jeśli informacje o Twojej firmie nie są dostępne w tym rejestrze, otrzymasz o
  COMODO Validation Team
 ```
 
-Po potwierdzeniu przez COMODO istnienia firmy oraz faktu, że reprezentujesz firmę, OVH otrzyma automatycznie Twój certyfikat SSL EV i wdroży go na Twojej stronie WWW.
+Po potwierdzeniu przez COMODO istnienia firmy oraz faktu, że reprezentujesz firmę, OVHcloud otrzyma automatycznie Twój certyfikat SSL EV i wdroży go na Twojej stronie WWW.
 
 ## Jakie warunki należy spełnić?
-Na tej stronie znajdują się wszystkie wymagania: [https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/](https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/){.external}
+Na tej stronie znajdują się wszystkie wymagania: [https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
 Usługa jest przeznaczona wyłącznie dla firm.
 
-Należy dysponować kontem klienta w OVH założonym na dane firmowe. Podczas składania zamówienia trzeba będzie podać numer NIP/Regon.
+Należy dysponować kontem klienta w OVHcloud założonym na dane firmowe. Podczas składania zamówienia trzeba będzie podać numer NIP/Regon.
 
 Weryfikowane są:
 
@@ -166,6 +166,6 @@ Weryfikowane są:
 
 > [!alert]
 >
-> OVH nie będzie mogło wykonać zwrotu płatności za certyfikat, jeśli nie spełniasz warunków.
+> OVHcloud nie będzie mogło wykonać zwrotu płatności za certyfikat, jeśli nie spełniasz warunków.
 > Jest to usługa wysoce spersonalizowana przeznaczona dla firm, w przypadku której nie przysługuje prawo do odstąpienia od umowy.
 > 
