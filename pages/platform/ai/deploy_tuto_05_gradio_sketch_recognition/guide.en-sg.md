@@ -6,11 +6,13 @@ section: AI Deploy tutorials
 order: 05
 ---
 
-**Last updated August 29th, 2022**
+**Last updated 3rd November, 2022.**
 
-> [!success]
+> [!primary]
 >
-> AI Apps changes name to AI Deploy.
+> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
+>
+> AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/0a19c8e-Conditions_particulieres_OVH_Stack-FR-11.0.pdf)**.
 >
 
 ## Objective
