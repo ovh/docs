@@ -4,7 +4,7 @@ slug: issp
 section: Security policies
 ---
 
-**Last updated 21th July 2022**
+**Last updated 21st July 2022**
 
 ## Objective
 
