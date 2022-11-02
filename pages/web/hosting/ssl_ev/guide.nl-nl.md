@@ -7,7 +7,7 @@ excerpt: EV SSL certificaten garanderen de betrouwbaarheid van uw bedrijf en ver
 
 
 ## Overzicht
-Door OVH aangeboden EV SSL certificaten worden uitgegeven door de certificaatautoriteit Comodo. Comodo waarborgt de legitimiteit van uw bedrijf.
+Door OVHcloud aangeboden EV SSL certificaten worden uitgegeven door de certificaatautoriteit Comodo. Comodo waarborgt de legitimiteit van uw bedrijf.
 
 U kunt alle commerciële details vinden op onze site: [https://www.ovhcloud.com/nl/web-hosting/options/ssl/](https://www.ovhcloud.com/nl/web-hosting/options/ssl/){.external}
 
@@ -26,9 +26,9 @@ EV SSL certificaat
 ![hosting](images/ssl_EV.png){.thumbnail}
 
 
-## Hoe bestel ik een EV SSL certificaat bij OVH?
+## Hoe bestel ik een EV SSL certificaat bij OVHcloud?
 
-### Als uw site al door OVH gehost wordt
+### Als uw site al door OVHcloud gehost wordt
 Bestel een EV SSL certificaat vanaf uw control panel.
 
 
@@ -53,7 +53,7 @@ U hoeft vervolgens slechts uw bedrijfsgegevens in te vullen:
 
 
 ## Hoe wordt mijn bedrijf gevalideerd?
-Nadat uw bestelling bij OVH geplaatst is ontvangt u een e-mail van Comodo
+Nadat uw bestelling bij OVHcloud geplaatst is ontvangt u een e-mail van Comodo
 
 ```
  Subject : "ORDER #xxxxxxxxxx - Agreement"
@@ -116,7 +116,7 @@ Nadat uw bestelling bij OVH geplaatst is ontvangt u een e-mail van Comodo
  best practices or security compliance requirements.
 ```
 
-Klik op de validatielink om uw bestelling te bevestigen. U zult ook uw autoriteit binnen uw bedrijf moeten aangeven en het met uw OVH account geassocieerde e-mailadres verifieren, via een link.
+Klik op de validatielink om uw bestelling te bevestigen. U zult ook uw autoriteit binnen uw bedrijf moeten aangeven en het met uw OVHcloud account geassocieerde e-mailadres verifieren, via een link.
 
 Als uw bedrijf zich op een derde partij database bevindt (zoals Dun & Bradstreet [http://www.dnb.com/](http://www.dnb.com/){.external},)  dan zal Comodo u bellen om aanvullende informatie op te vragen.
 
@@ -155,17 +155,17 @@ Als uw bedrijf niet gevonden kan worden op een derde partij database dan zal Com
  COMODO Validation Team
 ```
 
-Zodra COMODO uw bedrijf, en uw autoriteit om het te vertegenwoordigen, heeft gevalideerd, ontvangt OVH automatisch uw EV SSL certificaat en zal het deze automatisch op uw website implementeren.
+Zodra COMODO uw bedrijf, en uw autoriteit om het te vertegenwoordigen, heeft gevalideerd, ontvangt OVHcloud automatisch uw EV SSL certificaat en zal het deze automatisch op uw website implementeren.
 
 
 ## Aan welke voorwaarden moet worden voldaan om in aanmerking te komen?
 Hier kunt u de voorwaarden vinden:
 
-[https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/](https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/){.external}
+[https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
 Alleen bedrijven kunnen in aanmerking komen.
 
-U moet een OVH klantaccount hebben en geregistreerd zijn als bedrijf.
+U moet een OVHcloud klantaccount hebben en geregistreerd zijn als bedrijf.
 
 Het volgende zal worden gecontroleerd ter validatie:
 
@@ -180,5 +180,5 @@ Het volgende zal worden gecontroleerd ter validatie:
 
 > [!alert]
 >
-> Als u niet in aanmerking komt kan OVH de kosten voor uw certificaat niet terugstorten.
+> Als u niet in aanmerking komt kan OVHcloud de kosten voor uw certificaat niet terugstorten.
 > 

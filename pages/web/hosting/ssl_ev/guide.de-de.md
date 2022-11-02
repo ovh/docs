@@ -8,7 +8,7 @@ order: 03
  
 
 ## Allgemeine Informationen
-Die durch OVH vertriebenen EV SSL-Zertifikate sind von der Comodo Group freigegeben. Die Comodo Group ist zuständig für die Überprüfung und den Beweis der tatsächlichen Existenz Ihres Unternehmens.
+Die durch OVHcloud vertriebenen EV SSL-Zertifikate sind von der Comodo Group freigegeben. Die Comodo Group ist zuständig für die Überprüfung und den Beweis der tatsächlichen Existenz Ihres Unternehmens.
 
 Weitere Informationen unter [https://www.ovh.de/ssl/](https://www.ovh.de/ssl/){.external}.
 
@@ -27,9 +27,9 @@ EV SSL- Zertifikat
 ![hosting](images/ssl_EV.png){.thumbnail}
 
 
-## Ein EV SSL-Zertifikat bei OVH bestellen
+## Ein EV SSL-Zertifikat bei OVHcloud bestellen
 
-### Ihre Website wird bereits bei OVH gehostet
+### Ihre Website wird bereits bei OVHcloud gehostet
 Gehen Sie zu der entsprechenden Seite im Kundencenter und bestellen Sie Ihr EV SSL Zertifikat.
 
 
@@ -54,7 +54,7 @@ Sie müssen dann nur noch die notwendigen Angaben zu Ihrem Unternehmen ergänzen
 
 
 ## Mein Unternehmen verifizieren
-Nachdem Sie das Zertifikat bei OVH angefordert haben, erhalten Sie eine E-Mail von Comodo:
+Nachdem Sie das Zertifikat bei OVHcloud angefordert haben, erhalten Sie eine E-Mail von Comodo:
 
 ```
  Subject : "ORDER #xxxxxxxxxx - Agreement"
@@ -117,7 +117,7 @@ Nachdem Sie das Zertifikat bei OVH angefordert haben, erhalten Sie eine E-Mail v
  best practices or security compliance requirements.
 ```
 
-Klicken Sie auf den Validierungslink, um Ihre Bestellung zu bestätigen und belegen Sie anschließend, dass Sie über die notwendige Berechtigung in Ihrem Unternehmen verfügen.  Daraufhin wird die in Ihrem OVH Konto angegebene E-Mail-Adresse über den bereitgestellten Link verifiziert.
+Klicken Sie auf den Validierungslink, um Ihre Bestellung zu bestätigen und belegen Sie anschließend, dass Sie über die notwendige Berechtigung in Ihrem Unternehmen verfügen.  Daraufhin wird die in Ihrem OVHcloud Konto angegebene E-Mail-Adresse über den bereitgestellten Link verifiziert.
 
 Wenn Ihr Unternehmen bereits im Verzeichnis des Handelsregisters eingetragen ist ([http://www.firmenwissen.de/index.html](http://www.firmenwissen.de/index.html){.external}) und über eine D-U-N-S Nummer verfügt ([https://www.upik.de/](https://www.upik.de/){.external}), erhalten Sie daraufhin von Comodo eine Aufforderung, Ihre Angaben weiter zu ergänzen.
 
@@ -156,15 +156,15 @@ Ist Ihr Unternehmen noch nicht im Handelsregister eingetragen, erhalten Sie von 
  COMODO Validation Team
 ```
 
-Sobald Comodo bestätigt hat, dass Ihr Unternehmen existiert und Sie die Berechtigung haben, dieses zu repräsentieren, erhält OVH automatisch Ihr EV SSL-Zertifikat und richtet es umgehend ein.
+Sobald Comodo bestätigt hat, dass Ihr Unternehmen existiert und Sie die Berechtigung haben, dieses zu repräsentieren, erhält OVHcloud automatisch Ihr EV SSL-Zertifikat und richtet es umgehend ein.
 
 
 ## Die Qualifizierungsbedingungen fur EV SSL
-Im Folgenden eine kurze Zusammenfassung der im untenstehenden Link angegebenen Qualifizierungsbedingungen: [https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/](https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/){.external}
+Im Folgenden eine kurze Zusammenfassung der im untenstehenden Link angegebenen Qualifizierungsbedingungen: [https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
 Ausschließlich Unternehmen können ein EV SSL-Zertifikat beantragen.
 
-Darüber hinaus muss ein Konto bei OVH für das Unternehmen angelegt sein und die HRA-bzw. HRB-Nummer bei der Bestellung angegeben werden.
+Darüber hinaus muss ein Konto bei OVHcloud für das Unternehmen angelegt sein und die HRA-bzw. HRB-Nummer bei der Bestellung angegeben werden.
 
 Folgende Angaben werden verifiziert:
 
@@ -179,6 +179,6 @@ Folgende Angaben werden verifiziert:
 
 > [!alert]
 >
-> Mit Ausnahme der formalen Prüfung bei der Bestellung führt OVH keine Prüfung der Berechtigung durch. OVH ist nicht dazu verpflichtet, die Kosten des SSL-Zertifikats zu erstatten, sollte das bestellende Unternehmen nicht für EV SSL qualifiziert sein.
+> Mit Ausnahme der formalen Prüfung bei der Bestellung führt OVHcloud keine Prüfung der Berechtigung durch. OVHcloud ist nicht dazu verpflichtet, die Kosten des SSL-Zertifikats zu erstatten, sollte das bestellende Unternehmen nicht für EV SSL qualifiziert sein.
 > Bei der Erstellung des SSL-Zertifikats für einen Domainnamen handelt es sich um eine Lieferung personalisierter Waren, daher besteht kein Rücktrittsrecht.
 > 

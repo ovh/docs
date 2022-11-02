@@ -8,7 +8,7 @@ order: 03
 
 
 ## Informacoes gerais
-Os certificados SSL EV comercializados pela OVH são emitidos pela autoridade de certificação Comodo. Ela fica encarregue de verificar a existência jurídica da sua empresa.
+Os certificados SSL EV comercializados pela OVHcloud são emitidos pela autoridade de certificação Comodo. Ela fica encarregue de verificar a existência jurídica da sua empresa.
 
 Encontre todas as informações comerciais no nosso website : [https://www.ovhcloud.com/pt/web-hosting/options/ssl/](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external}.
 
@@ -27,7 +27,7 @@ Certificado SSL EV
 ![hosting](images/ssl_EV.png){.thumbnail}
 
 
-## Como encomendar um certificado SSL EV na OVH ?
+## Como encomendar um certificado SSL EV na OVHcloud ?
 
 ### Se o seu website ja se encontra na OVH
 Aceda ao seu Espaço Cliente para poder efetuar a encomenda do seu futuro certificado SSL EV.
@@ -42,7 +42,7 @@ Apenas terá de seguir as diferentes etapas.
 
 
 ### Se o seu website ainda nao existe
-A OVH propõe-lhe diretamente aquando da encomenda de um novo nome de domínio com o seu futuro alojamento, se desejar subscrever a um certificado SSL EV.
+A OVHcloud propõe-lhe diretamente aquando da encomenda de um novo nome de domínio com o seu futuro alojamento, se desejar subscrever a um certificado SSL EV.
 
 
 ![hosting](images/step3.png){.thumbnail}
@@ -54,7 +54,7 @@ Basta que especifique as informações da sua empresa:
 
 
 ## Como validar a minha empresa ?
-Após ter efetuado uma encomenda na OVH, receberá um e-mail da parte da Comodo :
+Após ter efetuado uma encomenda na OVHcloud, receberá um e-mail da parte da Comodo :
 
 ```
  Subject : "ORDER #xxxxxxxxxx - Agreement"
@@ -117,7 +117,7 @@ Após ter efetuado uma encomenda na OVH, receberá um e-mail da parte da Comodo 
  best practices or security compliance requirements.
 ```
 
-Deverá clicar no link de validação que lhe permitirá confirmar a sua encomenda. Deverá igualemnte precisar a sua autoridade no seio da sua empresa e será necessário a validação do endereço de e-mail associado à sua conta OVH graças ao link clicável. Se a sua empresa está presente no anuário das empresas comerciais ( [https://bde.portaldocidadao.pt/evo/landingpage.aspx](https://bde.portaldocidadao.pt/evo/landingpage.aspx){.external} ), receberá uma chamada da parte da COMODO para efetuar verificações suplementares.
+Deverá clicar no link de validação que lhe permitirá confirmar a sua encomenda. Deverá igualemnte precisar a sua autoridade no seio da sua empresa e será necessário a validação do endereço de e-mail associado à sua conta OVHcloud graças ao link clicável. Se a sua empresa está presente no anuário das empresas comerciais ( [https://bde.portaldocidadao.pt/evo/landingpage.aspx](https://bde.portaldocidadao.pt/evo/landingpage.aspx){.external} ), receberá uma chamada da parte da COMODO para efetuar verificações suplementares.
 
 Se a sua empresa não está presente neste anuário, receberá um e-mail da parte da COMODO para que se registe. A COMODO procurará contactá-lo via um número de telefone disponível neste anuário:
 
@@ -154,15 +154,15 @@ Se a sua empresa não está presente neste anuário, receberá um e-mail da part
  COMODO Validation Team
 ```
 
-Assim que a Comodo validar que a sua empresa existe e que pode representá-la, a OVH receberá automaticamente o seu certificado SSL EV e o implementará automaticamente no seu website.
+Assim que a Comodo validar que a sua empresa existe e que pode representá-la, a OVHcloud receberá automaticamente o seu certificado SSL EV e o implementará automaticamente no seu website.
 
 
 ## Quais sao as condicoes de elegibilidade ?
-Como definidos no seguinte link, deixamos um resumo das condições de elegibilidade : [https://support.comodo.com/index.php?/comodo/Knowledgebase/Article/View/702/28/](https://support.comodo.com/index.php?/comodo/Knowledgebase/Article/View/702/28/){.external}
+Como definidos no seguinte link, deixamos um resumo das condições de elegibilidade : [https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
 Apenas as empresas são elegíveis.
 
-É obrigatório que disponha junto da OVH uma conta de cliente registada como empresa e com o respetivo NIF.
+É obrigatório que disponha junto da OVHcloud uma conta de cliente registada como empresa e com o respetivo NIF.
 
 É verificado :
 
@@ -178,6 +178,6 @@ Apenas as empresas são elegíveis.
 
 > [!alert]
 >
-> A OVH não efetua o reembolso do certificado caso não seja elegível.
+> A OVHcloud não efetua o reembolso do certificado caso não seja elegível.
 > Saiba que se trata de um produto altamente personalizável e como tal, não tem direito aos 15 dias de período de retratação.
 > 
