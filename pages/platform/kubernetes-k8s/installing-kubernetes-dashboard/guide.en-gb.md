@@ -152,6 +152,35 @@ It should display something like this:
 clusterrolebinding.rbac.authorization.k8s.io/admin-user created
 </code></pre>
 
+### Create a Secret ServiceAccountToken
+
+In Kubernetes v1.24.0 Secret API objects containing service account tokens are no longer auto-generated for every ServiceAccount. Because of this, we'll need to create it ourselves.
+
+To do this, please copy the following YAML into `service-account-token.yml` file:
+
+```yaml
+apiVersion: v1
+kind: Secret
+type: kubernetes.io/service-account-token
+metadata:
+  name: admin-user-token
+  namespace: kubernetes-dashboard
+  annotations:
+    kubernetes.io/service-account.name: admin-user
+```
+
+You should then apply the file to add the `Secret` to your cluster:
+
+```bash
+kubectl apply -f service-account-token.yml
+```
+
+It should display something like this
+
+<pre class="console"><code>$ kubectl apply -f dashboard-cluster-role-binding.yml
+secret/admin-user-token created
+</code></pre>
+
 ### Bearer Token
 
 Next step is recovering the bearer token you will use to log in your Dashboard. Execute the following command:
