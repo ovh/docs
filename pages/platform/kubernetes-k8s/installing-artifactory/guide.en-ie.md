@@ -31,22 +31,25 @@ section: Tutorials
 
 ## Objective
 
-[JFrog Artifactory](https://jfrog.com/fr/artifactory/) is one of the major solution to manage dependencies and packaged binaries. All this kind of objects are called _artefacts_.
+[JFrog Artifactory](https://jfrog.com/fr/artifactory/) is one of the major solution to manage dependencies and packaged binaries. All these objects are called _artefacts_.
 
 ## Requirements 
 
 - An OVHcloud Managed Kubernetes cluster
-- The Helm client installed and configured. You can follow OVHcloud tutorial: [Installing Helm on OVHcloud Managed Kubernetes](../installing-helm/).
-- The `kubectl` client installed and configured. You can follow the OVHcloud tutorial: [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl-on-an-ovh-managed-kubernetes-cluster/)
+- The Helm client installed and configured. For more information, follow this OVHcloud tutorial: [Installing Helm on OVHcloud Managed Kubernetes](../installing-helm/).
+- The `kubectl` client installed and configured. For more information, follow this OVHcloud tutorial: [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl-on-an-ovh-managed-kubernetes-cluster/)
 
 ## Instructions
 
-> You can find more detailed documentation about different ways to install JFrog Artifactory in the official [documentation](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-HelmInstallation).
-> The following tutorial explain how to install a single node installation, for more advanced installation (like HA see the [documentation](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-HAInstallation)).
+> [!primary]
+>
+> You can find more detailed steps about the different ways to install JFrog Artifactory in the [official documentation](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-HelmInstallation).
+>
+> The following tutorial explains how to install a single node installation. For a more advanced installation (such as HA), read the [official documentation](https://www.jfrog.com/confluence/display/JFROG/Installing+Artifactory#InstallingArtifactory-HAInstallation).
 
 ### Configure Helm to use the JFrog Helm chart
 
-In a terminal add the JFrog Helm repository to your Helm installation:
+In a terminal, add the JFrog Helm repository to your Helm installation:
 
 ```bash
 $ helm repo add jfrog https://charts.jfrog.io
@@ -69,7 +72,7 @@ Update Complete. ⎈Happy Helming!⎈
 
 ### Configure the master key and the join key
 
-At this point, it is strongly recommended to configure your master key and your join key, more information on these keys in the official [documentation](https://www.jfrog.com/confluence/display/JFROG/Managing+Keys).
+At this point, it is strongly recommended to configure your master key and your join key. Find more information on these keys in the [official documentation](https://www.jfrog.com/confluence/display/JFROG/Managing+Keys).
 
 In a terminal, configure the master key as follows:
 
@@ -125,6 +128,7 @@ $ helm upgrade --install artifactory \
 --set artifactory.joinKey=${JOIN_KEY} \
 --namespace artifactory jfrog/artifactory
 ```
+
 Output should be like this:
 
 <pre class="console">
@@ -172,7 +176,7 @@ artifactory-artifactory-nginx-7c556cb56b-x5wvm   1/1     Running   0          8m
 artifactory-postgresql-0                         1/1     Running   0          8m11s
 </code></pre>
 
-### Test the fresh installed JFrog artifactory
+### Test the freshly installed JFrog artifactory
 
 Get the URL of the administration console:
 
@@ -193,13 +197,13 @@ And that's it, you can start using your JFrog Artifactory instance:
 
 ![Artifactory welcome page](images/artifactory-welcome-page.png){.thumbnail}
 
-After completing the configuration steps (see official [documentation](https://www.jfrog.com/confluence/display/JFROG/Repository+Management)), your JFrog Artifactory is ready to use:
+After completing the configuration steps (see the [official documentation](https://www.jfrog.com/confluence/display/JFROG/Repository+Management)), your JFrog Artifactory is ready to use:
 
 ![Artifactory Maven repositories](images/artifactory-maven-repositories.png){.thumbnail}
 
 ### Uninstall JFrog Artifactory
 
-Like the other steps, the uninstallation is done with Helm command:
+Similarly to the other steps, the uninstallation is done with a Helm command:
 
 ```bash
 $ helm uninstall artifactory -n artifactory
@@ -218,9 +222,10 @@ Then delete the `artifactory` namespace:
 ```bash
 $ kubectl delete ns artifactory
 ```
+
 ## Go further
 
-For more details on how to use the JFrog Artifactory see the official [documentations](https://www.jfrog.com/confluence/site/documentation).
+For more details on how to use the JFrog Artifactory, read the [official documentations](https://www.jfrog.com/confluence/site/documentation).
 
 To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
