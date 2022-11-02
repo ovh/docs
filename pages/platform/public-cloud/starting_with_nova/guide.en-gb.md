@@ -1,20 +1,25 @@
 ---
-title: Starting with Nova API
-excerpt: Find out how to use Nova with the OpenStack API
+title: Getting started with the OpenStack API
+excerpt: Find out how to manage your instances using the Python OpenStack client
 slug: starting-with-nova-api
 section: OpenStack
 order: 3
 ---
 
-**Last updated 18th June 2020**
+**Last updated 13th October 2022**
 
 ## Objective
 
-In order to automate your operations on the Public Cloud, it is possible to use OpenStack APIs to generate different scripts. The OpenStack Nova client will allow you to interact and manage your instances and their disks.
+In order to automate your operations on the Public Cloud, it is possible to use OpenStack APIs to generate different scripts. 
+
+> [!primary]
+>
+> The Nova client was previously used to manage your instances and their disks. It is now deprecated and the commands have been merged into the Python OpenStack client.
+>
 
 For example, you can start creating an additional instance when your monitoring tools detect a peak load in order to avoid saturation on your infrastructure. It is also possible to schedule snapshot creation on a regular basis at the same time.
 
-**This guide will help you take the OpenStack APIs into your hands to manage your instances using the Python Nova client.**
+**This guide will help you take the OpenStack APIs into your hands to manage your instances using the Python OpenStack client.**
 
 ## Requirements
 
@@ -23,140 +28,173 @@ Please refer to the following guides:
 - [Preparing an environment for using the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
 - [Setting OpenStack environment variables](../set-openstack-environment-variables/)
 
-## Nova Documentation
+## Instructions
 
 You can obtain the list of possible commands by reading the embedded documentation:
 
-```sh
-admin@server-1~$: nova help
+```bash
+admin@server-1:~$ openstack command list
+```
+
+You can filter the commands displayed by indicating the group.
+
+```bash
+admin@server-1:~$ openstack command list --group compute
 ```
 
 It is also possible to get information about a command by adding "help" in front of it:
 
-``bash
-admin@serverr-1:~$ nova help flavor-list
-
-usage: nova flavor-list [--extra-specs] [--all]
-
-Print a list of available 'flavors' (sizes of servers).
-
-Optional arguments:
-  --extra-specs  Get extra-specs of each flavor.
-  --all          Display all flavors (Admin only).
+```bash
+admin@server-1:~$ openstack help flavor list 
+usage: openstack flavor list [-h] [-f {csv,json,table,value,yaml}] [-c COLUMN]
+                             [--quote {all,minimal,none,nonnumeric}] [--noindent]
+                             [--max-width <integer>] [--fit-width] [--print-empty]
+                             [--sort-column SORT_COLUMN]
+                             [--sort-ascending | --sort-descending] [--public | --private | --all]
+                             [--min-disk <min-disk>] [--min-ram <min-ram>] [--long]
+                             [--marker <flavor-id>] [--limit <num-flavors>]
+List flavors ...
 ```
 
 > [!success]
 >
-> It is also possible to obttain the Nova Client documentation from the Openstack Website.> 
+> You can obtain the Python Client documentation from the [OpenStack Website](https://docs.openstack.org/python-openstackclient/latest/cli/index.html).
 >
 
-## Basic Operations
+### Basic Operations
 
-### Adding an SSH Public Key
-As a first step, it is necessary to a Public SSH key to connect to the instances.
+#### Adding an SSH Public Key
+
+As a first step, it is necessary to add a Public SSH key to connect to the instances.
 
 - List commands associated with SSH keys
 
-```sh
-admin@server-1:~$ nova help | grep keypair
-    keypair-add                 Create a new key pair for use with servers.
-    keypair-delete              Delete keypair given by its name.
-    keypair-list                Print a list of keypairs for a user
-    keypair-show                Show details about the given keypair.
+```bash
+admin@server-1:~$ openstack help | grep keypair         
+  keypair create  Create new public or private key for server ssh access
+  keypair delete  Delete public or private key(s)
+  keypair list    List key fingerprints
+  keypair show    Display key details
 ```
 
 - Add a Public SSH key
 
-```sh
-admin@server-1:~$ nova keypair-add --pub-key .ssh.id_rsa.pub SSHKEY
+```bash
+admin@server-1:~$ openstack keypair create --public-key ~/.ssh/id_rsa.pub SSHKEY
+```
 
 - List available SSH Keys:
 
-```sh
-admin@server-1:~$ nova keypair-list
-+--------+-------------------------------------------------+
-| Name   | Fingerprint                                     |
-+--------+-------------------------------------------------+
-| SSHKEY | 0e:93:fb:90:82:xx:xx:xx:xx:xx:xx:6e:22:42:c3:ea |
-+--------+-------------------------------------------------+
+```bash
+admin@server-1:~$ openstack keypair list
++---------------+-------------------------------------------------+------+
+| Name          | Fingerprint                                     | Type |
++---------------+-------------------------------------------------+------+
+| SSHKEY        | 5c:fd:9d:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:3a | ssh  |
++---------------+-------------------------------------------------+------+
 ```
 
-### List the instance models
-Next, you will need to obtain the ID of the model that we would like to use:
+#### Listing the instance models
 
-```sh
-admin@server-1"~$ nova flavor-list
-+--------------------------------------+-----------------+-----------+------+-----------+------+-------+-------------+-----------+
-| ID                                   | Name            | Memory_MB | Disk | Ephemeral | Swap | VCPUs | RXTX_Factor | Is_Public |
-+--------------------------------------+-----------------+-----------+------+-----------+------+-------+-------------+-----------+
-| 0032b17b-75a1-4120-9b44-755331729979 | win-r2-15-flex  | 15000     | 50   | 0         |      | 2     | 1.0         | True      |
-| 003d504f-289d-48d1-ac83-1796e44927b7 | c2-15           | 15000     | 100  | 0         |      | 4     | 1.0         | True      |
-| 021296e6-0004-4ee5-bb73-52ac2d16bd79 | b2-120-flex     | 120000    | 50   | 0         |      | 32    | 1.0         | True      |
-| 30614907-f5dd-4c83-8c08-986ce20fe282 | b2-60           | 60000     | 400  | 0         |      | 16    | 1.0         | True      |
-| 307f3bd0-bcaf-4415-9479-29f0dda9381e | win-c2-30       | 30000     | 200  | 0         |      | 8     | 1.0         | True      |
-| 36efce42-d885-4a09-b4dc-a321a1a0c92e | r2-15           | 15000     | 50   | 0         |      | 2     | 1.0         | True      |
-| 3ff106e4-92d9-4f6f-95b2-be88b70dbd05 | c2-7            | 7000      | 50   | 0         |      | 2     | 1.0         | True      |
-| 52e13ee4-8bc3-4e65-9464-6dccdc3d861d | win-b2-15       | 15000     | 100  | 0         |      | 4     | 1.0         | True      |
-| 539c1407-46a4-43c4-96c3-32e645dd815d | win-r2-240      | 240000    | 400  | 0         |      | 16    | 1.0         | True      |
-| 58fef987-cf20-4d19-956d-c44451cff1c7 | win-c2-7        | 7000      | 50   | 0         |      | 2     | 1.0         | True      |
-| 59f4794c-f909-4b8f-8b07-26720ba5d521 | r2-120-flex     | 120000    | 50   | 0         |      | 8     | 1.0         | True      |
-| 5b3b14a7-8cad-4821-8d7c-ba1b0525728c | c2-7-flex       | 7000      | 50   | 0         |      | 2     | 1.0         | True      |
-| 5bbf9a5a-041a-451f-84a3-105c37e385dd | win-c2-60       | 60000     | 400  | 0         |      | 16    | 1.0         | True      |
-| 778aba94-608e-438d-a1b8-2c9a04ef6f75 | r2-30-flex      | 30000     | 50   | 0         |      | 2     | 1.0         | True      |
-| 7d0b03ec-ed60-4d74-a224-e3494c1d39f0 | c2-120-flex     | 120000    | 50   | 0         |      | 32    | 1.0         | True      |
-| 88503fd4-a913-4801-8fb3-a1a37a97496c | win-r2-15       | 15000     | 50   | 0         |      | 2     | 1.0         | True      |
-| a762797b-fcd3-4d69-86f7-a1fcbd313c4a | b2-7            | 7000      | 50   | 0         |      | 2     | 1.0         | True      |
-| b6c0e144-51cf-4aa6-ab7f-99b4c3a1e958 | b2-7-flex       | 7000      | 50   | 0         |      | 2     | 1.0         | True      |
-| b76066de-fb05-4832-b188-c958a534380a | r2-120          | 120000    | 200  | 0         |      | 8     | 1.0         | True      |
-| b77011ce-d7a0-47f0-bf63-38770fcb0998 | r2-60-flex      | 60000     | 50   | 0         |      | 4     | 1.0         | True      |
-| ...                                  | ...             | ...       | ..   | ...       |      | ...   | ...         | ...       |
-+--------------------------------------+-----------------+-----------+------+-----------+------+-------+-------------+-----------+
+Next, you will need to obtain the ID of the model that you would like to use:
+
+```bash
+admin@server-1:~$ openstack flavor list
++--------------------------------------+-----------------+--------+------+-----------+-------+-----------+
+| ID                                   | Name            |    RAM | Disk | Ephemeral | VCPUs | Is Public |
++--------------------------------------+-----------------+--------+------+-----------+-------+-----------+
+| 0062dad0-f93c-4d7d-bde7-6add4ad6baaa | win-b2-15-flex  |  15000 |   50 |         0 |     4 | True      |
+| 022f8ac5-b6a7-4365-9db8-c69775d67a2d | t2-180          | 180000 |   50 |         0 |    60 | True      |
+| 07124b62-dd6d-4bf2-80d7-d9ea3c923cf3 | i1-180          | 180000 |   50 |         0 |    32 | True      |
+| 0cb50da2-cd4d-4a14-8a22-bbc59d94c814 | c2-120-flex     | 120000 |   50 |         0 |    32 | True      |
+| 0d338e52-cfba-4e32-914e-c2ea19d2a9df | d2-4            |   4000 |   50 |         0 |     2 | True      |
+| 0dbcff05-2da0-40a6-87dc-96a1e98d9ffc | b2-30           |  30000 |  200 |         0 |     8 | True      |
+| 11530c24-bc02-48c3-b272-802791795176 | i1-45           |  45000 |   50 |         0 |     8 | True      |
+| 11fc4ed3-5198-4043-b093-063787a144e1 | c2-7            |   7000 |   50 |         0 |     2 | True      |
+| 13d9146d-f519-4f8b-b87c-245d76bd21b0 | b2-120-flex     | 120000 |   50 |         0 |    32 | True      |
+| ...                                  | ...             | ...    | ..   | ...       |       | ...       |
++--------------------------------------+-----------------+--------+------+-----------+-------+-----------+
 ```
 
-### List the available images
-Finally, we will need to obtain the ID of the image we want to use on the instance:
+#### Listing available images
 
-```sh
-admin@server-1:~$ glance image-list
-+--------------------------------------+------------------------+--------+--------+
-| ID                                   | Name                   | Status | Server |
-+--------------------------------------+------------------------+--------+--------+
-| c17f13b5-587f-4304-b550-eb939737289a | Centos 7               | ACTIVE |        |
-| 73958794-ecf6-4e68-ab7f-1506eadac05b | Debian 7               | ACTIVE |        |
-| bdcb5042-3548-40d0-b06f-79551d3b4377 | Debian 8               | ACTIVE |        |
-| 7250cc02-ccc1-4a46-8361-a3d6d9113177 | Fedora 19              | ACTIVE |        |
-| 57b9722a-e6e8-4a55-8146-3e36a477eb78 | Fedora 20              | ACTIVE |        |
-| 3bda2a66-5c24-4b1d-b850-83333b580674 | Ubuntu 12.04           | ACTIVE |        |
-| 9bfac38c-688f-4b63-bf3b-69155463c0e7 | Ubuntu 14.04           | ACTIVE |        |
-| 6a123897-a5bb-46cd-8f5d-ecf9ab9877f2 | Windows-Server-2012-r2 | ACTIVE |        |
-+--------------------------------------+------------------------+--------+--------+
+Finally, you need to obtain the ID of the image you want to use on the instance:
+
+```bash
+admin@server-1:~$ openstack image list 
++--------------------------------------+-----------------------------------------------+--------+
+| ID                                   | Name                                          | Status |
++--------------------------------------+-----------------------------------------------+--------+
+| 8990fbbb-bd7e-4c57-8b19-a162e12c5195 | AlmaLinux 8                                   | active |
+| f1d2e56e-faec-4fd4-8493-dcf4c4201b40 | AlmaLinux 8 - UEFI                            | active |
+| a243240a-ca1f-4a53-a3bd-30c4f96b241f | AlmaLinux 8 - cPanel                          | active |
+| 1be04371-252f-48be-81fb-1cb89ea55778 | AlmaLinux 9                                   | active |
+| df89529f-8b4f-4534-9ddc-0092e30bcc97 | AlmaLinux 9 - UEFI                            | active |
+| 81c5ebbc-04fd-40f8-83aa-9b2bae8769f2 | Centos 7                                      | active |
+| b753f820-37cd-437a-b301-3423caf27637 | Centos 7 - Analytics - Ambari pre-warmed      | active |
+| 81ddd059-41b0-493e-a1e2-a278139b7bbb | Centos 7 - Analytics - Base image             | active |
+| ...                                  | ...                                           | ...    |
++--------------------------------------+-----------------------------------------------+--------+
 ```
 
-### Creating an instance
-With the information that we previousl obtained, it is now possible to create an instance:
+#### Creating an instance
 
-```sh
-admin@server-1:~$ nova boot --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image bdcb5042-3548-40d0-b06f-79551d3b4377 Instance1
+With the information that has been previously obtained, it is now possible to create an instance:
+
+```bash
+admin@server-1:~$ openstack server create --key-name SSHKEY --flavor d2-2 --image "Ubuntu 22.04" InstanceTest
++-----------------------------+-----------------------------------------------------+
+| Field                       | Value                                               |
++-----------------------------+-----------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                              |
+| OS-EXT-AZ:availability_zone |                                                     |
+| OS-EXT-STS:power_state      | NOSTATE                                             |
+| OS-EXT-STS:task_state       | scheduling                                          |
+| OS-EXT-STS:vm_state         | building                                            |
+| OS-SRV-USG:launched_at      | None                                                |
+| OS-SRV-USG:terminated_at    | None                                                |
+| accessIPv4                  |                                                     |
+| accessIPv6                  |                                                     |
+| addresses                   |                                                     |
+| adminPass                   | xxxxxxxxxxxx                                        |
+| config_drive                |                                                     |
+| created                     | 2022-10-13T19:05:54Z                                |
+| flavor                      | d2-2 (14c5fa3f-fdad-45c4-9cd1-14dd99c341ee)         |
+| hostId                      |                                                     |
+| id                          | xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx                |
+| image                       | Ubuntu 22.04 (0ea24976-fb6c-46ef-acb5-0cb88b0493aa) |
+| key_name                    | SSHKEY                                              |
+| name                        | InstanceTest                                        |
+| progress                    | 0                                                   |
+| project_id                  | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    |
+| properties                  |                                                     |
+| security_groups             | name='default'                                      |
+| status                      | BUILD                                               |
+| updated                     | 2022-10-13T19:05:55Z                                |
+| user_id                     | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    |
+| volumes_attached            |                                                     |
++-----------------------------+-----------------------------------------------------+
 ```
 
-After a few moments we can verify the list of instanes to find the created instance:
+After a few moments, you can verify the list of instances to find the newly created instance:
 
-```
-admin@server-1:~$ nova list
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
-| ID                                   | Name                                   | Status | Task State | Power State | Networks                |
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
-| 81d01a19-b2d5-454d-98d9-bd8992ec2037 | Instance1                              | ACTIVE | -          | Running     | Ext-Net=149.xxx.xxx.192 |
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
+```bash
+admin@server-1:~$ openstack server list                                                                 
++--------------------------------------+--------------+--------+-------------------------------------+--------------+--------+
+| ID                                   | Name         | Status | Networks                            | Image        | Flavor |
++--------------------------------------+--------------+--------+-------------------------------------+--------------+--------+
+| xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx | InstanceTest | ACTIVE | Ext-Net=xxxx:xxxx::xxxx, 51.xx.xx.x | Ubuntu 22.04 | d2-2   |
++--------------------------------------+--------------+--------+-------------------------------------+--------------+--------+
 ```
 
-### Deleting an instance
-It is possible to delete an instance with the following command:
+#### Deleting an instance
 
-```sh
-admin@server-1:~$ nove delete Instance1
-Request to delete server Instance1 has been accepted.
+You can delete an instance with the following command:
+
+```bash
+admin@server-1:~$ openstack server delete InstanceTest
 ```
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
