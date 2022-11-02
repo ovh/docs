@@ -4,7 +4,7 @@ slug: issp
 section: Security policies
 ---
 
-**Last updated 15th February 2021**
+**Last updated 21st July 2022**
 
 ## Objective
 
@@ -64,7 +64,7 @@ The threats targeting OVHcloud are primarily of external origin. However, our te
 
 #### Customers and Partners
 
-OVHcloud is responsible for operating infrastructure, platforms and software within our data centers, on behalf of our customers and partners . The proper functioning of these services is key for their information systems and digital activities. OVHcloud's customers operate their own services to third parties in a rich and complex ecosystem. The players involved in this supply chain and the end users expect OVHcloud to have the expertise and operational control of the services provided. Our commitment to ensuring the security of hosted data and processes must be complete and permanent.
+OVHcloud is responsible for operating infrastructure, platforms and software within our data centers, on behalf of our customers and partners . The proper functioning of these services is key for their information systems and digital activities. OVHcloud's customers operate their own services to third parties in a rich and complex ecosystem. The players involved in this supply chain and the end users expect OVHcloud to have the expertise and operational control of the services provided.
 
 #### Industry specific authorities and regulators
 
@@ -72,9 +72,9 @@ The authorities define the framework for the protection of citizens and business
 
 #### Employees, management of OVHcloud and shareholders
 
-OVHcloud employees design, maintain and operate systems and processes in support of OVHcloud services. Any security incident has a direct impact and generates operational disruptions. It can also challenge the reliability of customer service, the expertise and professionalism of teams. Operating secure information systems enhances OVHcloud's innovation, passion, team engagement and service quality.
+OVHcloud employees design, maintain and operate systems and processes in support of OVHcloud services. Any security incident has a direct negative impact on operations, but also challenge the value of the services, the expertise and professionalism of teams. Operating secure information systems enhances OVHcloud's innovation, passion, team engagement and service quality.
 
-OVHcloud, as an alternative cloud provider, must ensure strong growth to support innovation and development internationally strengthening its credibility. Our customers' confidence, the main driver of this growth, is directly linked to OVHcloud's ability to protect their data and treatments. Security is therefore one of the pillars in support of the development strategy carried out by the management and shareholders of OVHcloud.
+OVHcloud, as an alternative cloud provider in a very competitive environment, must ensure strong growth to support innovation and development internationally strengthening its credibility. Our customers' confidence, the main driver of this growth, is directly linked to OVHcloud's ability to protect their data workloads. Cyber-security is therefore one of the pillars in support of the development strategy carried out by the management and shareholders of OVHcloud.
 
 #### Subcontractors and outsourcing
 
@@ -82,7 +82,7 @@ OVHcloud is managing certain processes and projects with the assistance of subco
 
 ## OVHcloud Security Commitments
 
-### Deploying a Large-Scale Industrial Approach to Security
+### Deploy a Large-Scale Industrial Approach to Security
 
 OVHcloud teams are committed to innovating continuously to meet the ever-changing needs of customers in terms of technology, functionality and performance. Security is integrated into the life cycle of product development. The security team is constantly involved in challenging and assisting all decisions that may have an impact on security.
 
@@ -106,7 +106,7 @@ We are constantly challenging our security. We implement a structured program of
 
 OVHcloud offers its solutions to any type of client in all fields of activity: startup, SME, large business, administration, multinational. Every OVHcloud client has a particular security approach, depending of its business or sovereignty context that we need to take into account. Security is one of the pillars in support of our customers trust.
 
-The security of a system in the cloud is a shared responsibility between the cloud provider and the client. OVHcloud provides security for the services provided and the underlying infrastructure. Our customers are responsible for the security of their information systems in the cloud. We offer them a high level of transparency on the security measures included in their services to help them make the right choices. We clearly define their areas of responsibility in order to avoid any vulnerability arising from insufficient awareness.
+The security of a system in the cloud is a shared responsibility between the cloud provider and the client. OVHcloud provides security measures on the services provided and the underlying infrastructures. Our customers are ultimately responsible for the security of their information systems in the cloud. We offer them a high level of transparency on the security measures implemented by OVHcloud to support them in their global security risk mitigation plan. We clearly define their areas of responsibility in order to avoid any vulnerability arising from insufficient awareness.
 
 OVHcloud provides and develops a set of tools, features and configurations to improve the security of client systems in the cloud. Most security features are included for all customers. Additional security features are also available to help our customers reduce the specific risks they face.
 

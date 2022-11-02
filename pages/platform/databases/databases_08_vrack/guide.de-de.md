@@ -93,8 +93,6 @@ Follow the *Configure your \<database> instance to accept incoming connections* 
 >![Add virtual network subnet](images/redis_08_vrack_19.png){.thumbnail}
 >
 
-![](images/databases_08_vrack-20220830153420143.png)
-
 The database is now connected to the virtual network, we can use it from any component that is connected to the same vRack.
 
 ### Step 4 - Adding a Public Cloud Instance to the vRack

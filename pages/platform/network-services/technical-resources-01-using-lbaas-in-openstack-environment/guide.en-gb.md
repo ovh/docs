@@ -319,6 +319,6 @@ The public Gateway is defined by an L3 router attached to a private network with
 
 [OpenStack Floating IP](https://docs.openstack.org/ocata/user-guide/cli-manage-ip-addresses.html)
 
-Join our community of users on <https://community.ovh.com/en>.
+Join our community of users on <https://community.ovh.com/en/>.
 
 Join our [Discord](https://discord.gg/PwPqWUpN8G) to discuss with the OVHcloud team and other users.

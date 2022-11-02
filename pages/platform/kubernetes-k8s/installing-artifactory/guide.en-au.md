@@ -37,7 +37,7 @@ section: Tutorials
 
 - An OVHcloud Managed Kubernetes cluster
 - The Helm client installed and configured. For more information, follow this OVHcloud tutorial: [Installing Helm on OVHcloud Managed Kubernetes](../installing-helm/).
-- The `kubectl` client installed and configured. For more information, follow this OVHcloud tutorial: [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl-on-an-ovh-managed-kubernetes-cluster/)
+- The `kubectl` client installed and configured. For more information, follow this OVHcloud tutorial: [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/)
 
 ## Instructions
 
