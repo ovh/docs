@@ -2,8 +2,8 @@
 title: 'Zarządzanie użytkownikami'
 slug: zarzadzanie_uzytkownikami
 excerpt: 'Dowiedz się, jak dodawać użytkowników z poziomu konta OVHcloud'
-section: Pierwsze kroki
-order: 5
+section: Poziom zaawansowany
+order: 01
 ---
 
 **Ostatnia aktualizacja z dnia 27-05-2020**

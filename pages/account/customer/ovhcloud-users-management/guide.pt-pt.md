@@ -2,8 +2,8 @@
 title: 'Gestão de utilizadores'
 slug: gestao-utilizadores
 excerpt: 'Saiba como adicionar utilizadores a partir da sua conta OVHcloud'
-section: Introdução
-order: 5
+section: Utilização avançada
+order: 01
 ---
 
 **Última atualização: 20/05/2020**
