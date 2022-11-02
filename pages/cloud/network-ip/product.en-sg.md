@@ -76,13 +76,7 @@ order: 08
 >
 > ### Our network & IP guides for Public Cloud
 >
-> - [Buying an Additional IP](https://docs.ovh.com/sg/en/public-cloud/buy-a-failover-ip/)
-> - [Importing an Additional IP](https://docs.ovh.com/sg/en/public-cloud/import_a_failover_ip/)
-> - [Configuring an Additional IP](https://docs.ovh.com/sg/en/public-cloud/configure_a_failover_ip/)
-> - [Migrating an Additional IP](https://docs.ovh.com/sg/en/public-cloud/migrating_a_failover_ip/)
-> - [Configuring IPv6 on a Public Cloud instance](https://docs.ovh.com/sg/en/public-cloud/configuring-ipv6/)
+> - [All our Public Cloud Network Services guides](https://docs.ovh.com/sg/en/publiccloud/network-services/)
 > - [Changing the DNS servers of Public Cloud instances](https://docs.ovh.com/sg/en/public-cloud/change-instance-dns-servers/)
 > - [Configuring the reverse DNS of a Public Cloud instance](https://docs.ovh.com/sg/en/public-cloud/configure-reverse-dns-instance/)
-> - [Configuring vRack for Public Cloud](https://docs.ovh.com/sg/en/public-cloud/public-cloud-vrack/)
-> - [Configuring vRack for Public Cloud using OVHcloud APIv6](https://docs.ovh.com/sg/en/public-cloud/public-cloud-vrack-apiv6/)
 >
