@@ -72,7 +72,7 @@ The authorities define the framework for the protection of citizens and business
 
 #### Employees, management of OVHcloud and shareholders
 
-OVHcloud employees design, maintain and operate systems and processes in support of OVHcloud services. Any security incident as a direct negative impact on operations, but also challenge the value of the service, the expertise and professionalism of teams. Operating secure information systems enhances OVHcloud's innovation, passion, team engagement and service quality.
+OVHcloud employees design, maintain and operate systems and processes in support of OVHcloud services. Any security incident as a direct negative impact on operations, but also challenge the value of the services, the expertise and professionalism of teams. Operating secure information systems enhances OVHcloud's innovation, passion, team engagement and service quality.
 
 OVHcloud, as an alternative cloud provider in a very competitive environment, must ensure strong growth to support innovation and development internationally strengthening its credibility. Our customers' confidence, the main driver of this growth, is directly linked to OVHcloud's ability to protect their data workloads. Cyber-security is therefore one of the pillars in support of the development strategy carried out by the management and shareholders of OVHcloud.
 
