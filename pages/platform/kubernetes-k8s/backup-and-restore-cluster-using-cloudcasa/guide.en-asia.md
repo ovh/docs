@@ -201,7 +201,7 @@ metadata:
   uid: 2040b84b-b10a-46fe-8d30-2507a12edd58 
 parameters: 
   force-create: "true" 
-  ```
+```
 
 ### Step 4 – Setup a backup policy 
 
