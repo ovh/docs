@@ -8,7 +8,7 @@ order: 03
 
 
 ## Informazioni generali
-I certificati SSL EV commercializzati da OVH vengono rilasciati dall'autorità di certificazione Comodo, incaricata di verificare l’esistenza giuridica della tua azienda.
+I certificati SSL EV commercializzati da OVHcloud vengono rilasciati dall'autorità di certificazione Comodo, incaricata di verificare l’esistenza giuridica della tua azienda.
 
 Per maggiori informazioni, accedi alla pagina Web del nostro sito: [https://www.ovhcloud.com/it/web-hosting/options/ssl/](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external}.
 
@@ -27,10 +27,10 @@ Certificato SSL EV
 ![hosting](images/ssl_EV.png){.thumbnail}
 
 
-## Come ordinare un certificato SSL EV in OVH?
+## Come ordinare un certificato SSL EV in OVHcloud?
 
 ### Se il tuo sito Internet e ospitato in OVH
-Per generare l’ordine del certificato SSL EV, accedi al tuo Spazio Cliente OVH.
+Per generare l’ordine del certificato SSL EV, accedi al tuo Spazio Cliente OVHcloud.
 
 
 ![hosting](images/step1.png){.thumbnail}
@@ -121,7 +121,7 @@ Una volta effettuato l’ordine, ricevi un’email da parte di Comodo:
  best practices or security compliance requirements.
 ```
 
-Clicca sul link per confermare l’ordine. Dovrai inoltre specificare il tuo ruolo all’interno dell’azienda. L’indirizzo email associato al tuo account OVH verrà convalidato tramite un link cliccabile.
+Clicca sul link per confermare l’ordine. Dovrai inoltre specificare il tuo ruolo all’interno dell’azienda. L’indirizzo email associato al tuo account OVHcloud verrà convalidato tramite un link cliccabile.
 
 Se la tua azienda è registrata alla Camera di commercio ([http://www.registroimprese.it/](http://www.registroimprese.it/){.external}), COMODO provvederà a contattarti per eseguire ulteriori verifiche.
 
@@ -160,15 +160,15 @@ Se la tua azienda non è ancora registrata, COMODO ti invierà un’email per ch
  COMODO Validation Team
 ```
 
-Una volta che Comodo avrà accertato l’esistenza della tua azienda e l’idoneità della tua carica, OVH riceverà automaticamente il certificato SSL EV e lo attiverà sul tuo sito Web.
+Una volta che Comodo avrà accertato l’esistenza della tua azienda e l’idoneità della tua carica, OVHcloud riceverà automaticamente il certificato SSL EV e lo attiverà sul tuo sito Web.
 
 
 ## Quali sono i requisiti necessari per ottenere un certificato SSL EV?
-Al link seguente trovi un riepilogo dei requisiti necessari: [https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/](https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/){.external}
+Al link seguente trovi un riepilogo dei requisiti necessari: [https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
 Questo tipo di certificato è riservato alle aziende.
 
-È necessario disporre di un account cliente OVH registrato come società e di un numero SIRET, che ti verrà richiesto durante il processo d’ordine.
+È necessario disporre di un account cliente OVHcloud registrato come società e di un numero SIRET, che ti verrà richiesto durante il processo d’ordine.
 
 Informazioni verificate:
 
@@ -183,5 +183,5 @@ Informazioni verificate:
 
 > [!alert]
 >
-> OVH non è tenuta a effettuare alcun rimborso nel caso in cui la procedura di convalida non vada a buon fine. Inoltre, trattandosi di un prodotto altamente personalizzato, il periodo di recesso di 15 giorni non può essere applicato.
+> OVHcloud non è tenuta a effettuare alcun rimborso nel caso in cui la procedura di convalida non vada a buon fine. Inoltre, trattandosi di un prodotto altamente personalizzato, il periodo di recesso di 15 giorni non può essere applicato.
 > 

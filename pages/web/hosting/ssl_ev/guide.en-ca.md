@@ -163,11 +163,11 @@ Once COMODO has verified that your company exists and that you have the authorit
 
 
 ## What are the eligibility conditions?
-Click here for a summary of eligibility conditions: [https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/](https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/702/28/)
+Click here for a summary of eligibility conditions: [https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
 Only companies are eligible.
 
-You must have a customer account at OVH and be registered as a company. The following will be verified:
+You must have a customer account at OVHcloud and be registered as a company. The following will be verified:
 
 - The existence of your company in a third party database.
 - Your company telephone number.
