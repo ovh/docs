@@ -94,7 +94,7 @@ There are sets of pre-defined permissions ("Permission level") to choose from. I
 
 ![sharefolder](images/exchange-folder-step3.png){.thumbnail}
 
-Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Right-click on your account name in the left-hand navigation and select `Add shared folder...`{.action} from the context menu. In the new window, provide the account name from which a folder was shared. Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search directory`{.action}. Confirm by clicking on `Add`{.action}. The new shared folder will immediately appear underneath your other folders.
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovhcloud.com/en-gb/mail). Right-click on your account name in the left-hand navigation and select `Add shared folder...`{.action} from the context menu. In the new window, provide the account name from which a folder was shared. Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search directory`{.action}. Confirm by clicking on `Add`{.action}. The new shared folder will immediately appear underneath your other folders.
 
 
 ## Go further
