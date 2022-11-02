@@ -1,5 +1,5 @@
 ---
-title: Création de conteneur Object Storage
+title: Object Storage Swift - Création de conteneur Object Storage
 slug: pcs/create-container
 excerpt: Découvrez comment créer vos conteneurs Object Storage depuis votre espace client OVHcloud
 section: Spécificités de la classe de stockage OpenStack Swift

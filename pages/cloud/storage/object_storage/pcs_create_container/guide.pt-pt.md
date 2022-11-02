@@ -1,5 +1,5 @@
 ---
-title: Criação de container Object Storage
+title: Object Storage Swift - Criação de container Object Storage
 slug: pcs/create-container
 excerpt: Saiba como criar os seus containers Object Storage a partir da Área de Cliente OVHcloud
 section: OpenStack Swift Storage Class Specifics
@@ -21,7 +21,7 @@ A oferta Object Storage para o Public Cloud oferece uma solução de armazenamen
 - alojamento público (para armazenar tudo o que é acessível ao público);
 - para armazenamento a frio (arquivo).
 
-O primeiro passo é a criação de um container que irá agrupar os seus ficheiros. 
+O primeiro passo é a criação de um container que irá agrupar os seus ficheiros.
 
 **Este guia explica como criar o serviço a partir da Área de Cliente OVHcloud e da interface Horizon Openstack.**
 
@@ -65,10 +65,10 @@ Dê um nome ao seu container e clique em `Adicionar o container`{.action}:
 
 > [!warning]
 >
-> Se deseja associar o seu container a um nome de domínio, o nome do seu container de dados não deve conter os seguintes caracteres: 
+> Se deseja associar o seu container a um nome de domínio, o nome do seu container de dados não deve conter os seguintes caracteres:
 >
-> - [ . ] 
-> - [ _ ] 
+> - [ . ]
+> - [ _ ]
 > - e não deve utilizar maiúsculas.
 >
 > Para mais informações, consulte o nosso guia "[Associar um container a um nome de domínio](https://docs.ovh.com/gb/en/storage/pcs/link-domain/) (EN)".
