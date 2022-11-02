@@ -14,8 +14,8 @@ Ce guide va vous permettre de paramétrer votre CMS Sylius pour qu'il ne soit ac
 
 ## Prérequis
 
+Vous devez avoir installé le CMS headless Sylius sur votre [Hébergement Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et permis l'accès à l'API.
 
 ## En pratique
-
 
 ## Aller plus loin
