@@ -10,6 +10,7 @@ order: 09
 
 ## Objectif
 
+Ce guide va vous permettre de paramétrer votre CMS Sylius pour qu'il ne soit accessible que via les API disponibles et non plus par l'interface web proposée par défaut.
 
 ## Prérequis
 
