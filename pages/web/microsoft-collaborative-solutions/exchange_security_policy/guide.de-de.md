@@ -54,8 +54,8 @@ Hier können Sie festlegen, ob E-Mail-Accounts nach einer bestimmten Anzahl fehl
 Geben Sie hierzu die Informationen aus der nachstehenden Tabelle ein:
 
 - **Schwelle für die Sperrung**: Geben Sie die Anzahl der fehlgeschlagenen Login-Versuche ein, nach denen der Account gesperrt werden soll. Geben Sie „0“ ein, wenn der Account nie gesperrt werden soll.
-- **Zeit bis zum Zurücksetzen**: Dieses Feld wird nur angezeigt, wenn eine Schwelle für die Sperrung festgelegt wurde. Geben Sie den Zeitraum in Minuten an, bis der Zähler für gescheiterte Verbindungsversuche auf Null zurückgesetzt wird.
-- **Dauer der Sperrung**: Dieses Feld wird nur angezeigt, wenn eine Schwelle für die Sperrung festgelegt wurde. Geben Sie die Dauer in Minuten an, während der der E-Mail-Account gesperrt bleibt, wenn die Schwelle für die Sperrung erreicht wurde.
+- **Zeit bis zum Zurücksetzen**: Dieses Feld erscheint nur, wenn ein Schwellenwert für die Sperrung festgelegt wurde. Geben Sie den Zeitraum in Minuten an, bis der Zähler für fehlgeschlagene Login-Versuche auf Null zurückgesetzt wird.
+- **Dauer der Sperrung**: Dieses Feld wird nur angezeigt, wenn ein Schwellenwert für die Sperrung festgelegt wurde. Geben Sie den Zeitraum in Minuten an, wie lange der E-Mail-Account nach Erreichen des Schwellenwerts gesperrt bleibt.
 
 Wenn Sie alle Informationen angegeben haben, bestätigen Sie die Änderungen für „E-Mail“- und „E-Mail Pro“-Lösungen, indem Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action} klicken. Klicken Sie für Exchange auf `Änderungen speichern`{.action}.
 
