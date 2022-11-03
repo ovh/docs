@@ -79,7 +79,7 @@ Die Accounts, deren Konfiguration in Bearbeitung ist, werden in der Tabelle mit 
 
 > [!primary]
 >
-> Wiederholen Sie diesen Schritt je nach Anzahl Ihrer Accounts. Sie können neue Accounts über die Schaltfläche `Aktionen`{.action} bestellen und anschließend auf `Accounts bestellen`{.action} klicken.
+> Wiederholen Sie diesen Schritt je nach Anzahl Ihrer Accounts. Sie können neue Accounts über die Schaltfläche `Aktionen`{.action} bestellen, indem Sie  auf `Accounts bestellen`{.action} klicken.
 >
 
 ![Einen Account hinzufügen](images/first-steps-hosted-exchange-add-account.png){.external}
