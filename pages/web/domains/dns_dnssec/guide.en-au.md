@@ -13,7 +13,8 @@ order: 1
 
 DNS servers store DNS configurations for domain names. DNS records are usually used to link your domain name to the server (or servers) that host your website and email addresses. In a conventional use, this configuration allows you to link your domain name to the server(s) that host your website and email addresses. In recent years, hackers have developed methods to poison DNS servers, allowing them to divert traffic to other servers. There is a way to protect your domain name from these actions: DNSSEC.
 
-**Learn how to enable DNSSEC on your domain name to protect it against Poisoning Cache.**  
+**Learn how to enable DNSSEC on your domain name to protect it against Cache Poisoning.**
+
 To understand how this protection works, we recommend reading this page: [Understanding the DNSSEC service](https://www.ovhcloud.com/en-gb/domains/dnssec/){.external}.
 
 ## Requirements
@@ -26,11 +27,11 @@ To understand how this protection works, we recommend reading this page: [Unders
 
 DNSSEC can be activated in two ways:
 
-- **if your domain name uses OVHcloud DNS servers**, activation is done in one click from the OVHcloud Control Panel
+- **If your domain name uses OVHcloud DNS servers**, activation is done in one click from the OVHcloud Control Panel.
 
-- **if your domain name does not use OVHcloud DNS servers**, you will need to contact the service provider managing its DNS configuration and ask them all the parameters. Then go to the `Web Cloud`{.action} section. Click `Domains`{.action}, then choose the domain name concerned from the list.
-Click `DS records`{.action} tab, then click the Edit button on the right then click the  `+`{.action} button.
-You can now fill in the 4 fields, "Key tag", "Flag","Algorithm","Public key (encoded in base64)", with the data provided by your current service provider.
+- **If your domain name does not use OVHcloud DNS servers**, you will need to contact the service provider managing its DNS configuration and ask them all the parameters. Then go to the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned from the list.
+Open the `DS records`{.action} tab, click the `Edit`{.action} button on the right then click the  `+`{.action} button.
+You can now fill in the 4 fields, "Key tag", "Flag", "Algorithm", "Public key (encoded in base64)", with the data provided by your current service provider.
 
 > [!primary]
 >
