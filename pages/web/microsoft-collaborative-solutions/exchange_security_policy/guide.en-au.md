@@ -10,14 +10,14 @@ order: 6
 
 ## Objective
 
-With the Exchange service, you can set up Email Pro addresses, and use them with a range of features for collaborative work. In order to maintain this environment, you can manage the global security settings of your Exchange accounts.
+With the Exchange service, you can set up professional email accounts, and use them with a range of features for collaborative work. In order to maintain this environment, you can manage the global security settings of your Exchange accounts.
 
 **Find out how to manage the security policy of your Exchange service.**
 
 ## Requirements
 
-- an [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external} service
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- An [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external} service
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
 
