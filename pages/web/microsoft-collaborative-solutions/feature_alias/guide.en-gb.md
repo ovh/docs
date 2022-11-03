@@ -20,7 +20,7 @@ For example, your email address is **john.smith@mydomain.ovh** and you create an
 
 > [!warning]
 >
-> Please note: OVHcloud aliases only work for incoming emails. It is not possible to send emails using the alias as the sender of an e-mail.
+> Please note: OVHcloud aliases only work for incoming emails. It is not possible to send emails using the alias as the sender of an email.
 >
 
 ## Requirements
