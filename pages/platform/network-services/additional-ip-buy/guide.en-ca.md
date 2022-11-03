@@ -8,8 +8,6 @@ order: 02
 
 **Last updated 2nd November 2022**
 
->>>>>>> 96f442b81fa52eb3281c4cb2dbee2340ffe68973:pages/platform/public-cloud/buy_failover_ip/guide.en-ca.md
-
 > [!primary]
 >
 > Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-ca/network/additional-ip/). This has no further impact on any of its features or the functioning of your services.
