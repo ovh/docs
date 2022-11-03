@@ -62,12 +62,12 @@ Per verificare la corretta configurazione dell’account esegui un test di invio
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
+OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}. Accedi a questo link <https://www.ovhcloud.com/it/mail/> utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 
 [Configurare un indirizzo email incluso nella soluzione MX Plan o in una soluzione di hosting Web con l’applicazione Posta per Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/){.external}
 
-[Configurare un account Email Pro con l’applicazione Posta per Windows 10](https://docs.ovh.com/gb/en/emails-pro/mail-configuration-windows-10//){.external} (in inglese)
+[Configurare un account Email Pro con l’applicazione Posta per Windows 10](https://docs.ovh.com/gb/en/emails-pro/mail-configuration-windows-10/){.external} (in inglese)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

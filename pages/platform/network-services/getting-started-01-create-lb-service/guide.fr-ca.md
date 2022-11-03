@@ -107,5 +107,3 @@ Vous pouvez maintenant accéder à votre Load Balancer via l'adresse Floating IP
 [Cookbook Openstack Octavia](https://docs.openstack.org/octavia/latest/user/guides/basic-cookbook.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
-
-**Pour discuter avec les autres utilisateurs du lab et avec l'équipe OVHcloud, venez sur [notre room Gitter](https://gitter.im/ovh/octavia-loadbalancer)**

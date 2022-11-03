@@ -14,7 +14,7 @@ With Logs Data Platform, there are 3 ways to query your logs.
 
 - The [Graylog Web Interface](https://gra1.logs.ovh.com){.external}
 - The [Graylog API](https://gra1.logs.ovh.com/api/api-browser/global/index.html#!/search47universal47relative/searchRelative){.external}
-- The [OpenSearch API](https://opensearch.org/docs/latest/opensearch/query-dsl/index/){.external} located at the port 9200 of your cluster (find its address in the **Home** Page) against your [alias](../using-kibana-with-logs){.ref}.
+- The [OpenSearch API](https://opensearch.org/docs/latest/opensearch/query-dsl/index/){.external} located at the port 9200 of your cluster (find its address in the **Home** Page) against your [alias](../opensearch-dashboards/){.ref}.
 
 So you can pop up a [Grafana](../using-grafana-with-logs){.ref} or even [a terminal Dashboard for Graylog](https://github.com/Graylog2/cli-dashboard){.external}.
 

@@ -54,8 +54,8 @@ Questa azione permette di definire se gli account di posta elettronica devono es
 Per farlo, completa le informazioni indicate nella seguente tabella:  
 
 - **Limite di blocco**: Imposta il numero di tentativi di connessione non riusciti tollerati prima di bloccare l’account. Se il valore inserito è “0”, non viene applicato nessun limite di blocco.
-- **Tempo di attesa prima della reinizializzazione**: Questo campo compare soltanto se viene impostato un limite di blocco. Indica l’intervallo di tempo che deve trascorrere prima che il contatore dei tentativi di connessione non riusciti venga azzerato.
-- **Durata del blocco**: Questo campo compare soltanto se viene impostato un limite di blocco. Indica l’intervallo di tempo in cui l’account email resterà bloccato in caso di raggiungimento del limite di blocco.
+- **Termine per la reinizializzazione**: Questo campo compare solo se è stato definito un limite di blocco. Indica il tempo necessario in minuti affinché il contatore dei tentativi di connessione non riusciti si rimetta a zero.
+- **Durata del blocco**: Questo campo compare solo se è stato definito un limite di blocco. Indica il tempo in minuti durante il quale l'account email resterà bloccato se il limite di blocco è stato raggiunto.
 
 Una volta completate le informazioni, clicca su `Seguente`{.action} > `Conferma`{.action} per applicare le modifiche relativamente alle soluzioni “Emails” e “Email Pro”. Clicca su `Salva le modifiche`{.action}per la soluzione Exchange. 
 

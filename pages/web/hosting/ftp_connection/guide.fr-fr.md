@@ -15,7 +15,7 @@ Les offres d'hébergement web OVHcloud vous donnent accès à un espace de stock
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}(pour activer plusieurs utilisateurs FTP, vous avez besoin au minimum d’un hébergement Pro ou Performance).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
@@ -41,6 +41,9 @@ Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [
 Les informations liées à votre espace de stockage apparaissent alors, ainsi qu'un tableau listant les utilisateurs FTP et SSH créés sur votre hébergement.
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
+
+Si vous souhaitez créer un nouvel utilisateur FTP/SSH depuis la même page, cliquez sur le bouton `Créer un utilisateur`{.action} situé à droite.
+Choisissez `Utilisateur`{.action} et `Dossier racine`{.action}, puis cliquez sur `Suivant`{.action}, choisissez un mot de passe pour ce nouveau compte et cliquez sur `Suivant`{.action} et cliquez sur `Confirmer`{.action}.
 
 Grâce à ces informations, vous devriez pouvoir retrouver les éléments requis pour vous connecter à l'espace de stockage. Si besoin, aidez-vous du tableau ci-dessous si vous n'arrivez pas à les identifier. À noter que certaines informations peuvent ne pas apparaître selon l'offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} que vous possédez.
 

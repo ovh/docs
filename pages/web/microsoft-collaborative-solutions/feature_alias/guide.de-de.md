@@ -22,6 +22,11 @@ Ihre E-Mail-Adresse lautet beispielsweise **john.smith@mydomain.ovh** und Ihr Al
 
 **Diese Anleitung erklärt, wie Sie im OVHcloud Kundencenter eine Alias-Adresse zu einem Mailaccount hinzufügen.**
 
+> [!warning]
+>
+> Bitte beachten Sie: OVHcloud Alias funktionieren nur für eingehende E-Mails. Es ist nicht möglich, E-Mails mit dem Alias als Absender einer E-Mail zu versenden.
+>
+
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).

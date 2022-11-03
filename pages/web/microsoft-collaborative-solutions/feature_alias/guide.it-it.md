@@ -22,6 +22,11 @@ Ad esempio, il tuo indirizzo email è **john.smith@mydomain.ovh** e il tuo alias
 
 **Come aggiungere un alias a un indirizzo email dallo Spazio Cliente OVHcloud**
 
+> [!warning]
+>
+> Gli alias OVHcloud funzionano solo per le email in entrata. Non è possibile inviare email utilizzando l'alias come mittente di un'email.
+>
+
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)

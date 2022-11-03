@@ -16,7 +16,7 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} (para activar varios usuarios FTP, necesitará como mínimo un hosting Profesional o Performance)
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
@@ -42,6 +42,9 @@ Si no dispone de esta información, conéctese al [área de cliente de OVHcloud]
 Se mostrará la información relativa a su espacio de almacenamiento, así como una tabla con los usuarios FTP y SSH creados en el alojamiento.
 
 ![Conexión FTP](images/connect-ftp-step1.png){.thumbnail}
+
+Si quiere crear un nuevo usuario FTP/SSH desde la misma página, haga clic en el botón "Crear usuario`{.action} de la derecha.
+Seleccione el `Usuario`{.action} y la `Carpeta raíz`{.action}, haga clic en `Siguiente`{.action}, introduzca una contraseña para la nueva cuenta, haga clic en `Siguiente`{.action} y, por último, en `Confirmar`{.action}.
 
 Entre esa información se encuentran los datos necesarios para conectarse a su espacio de almacenamiento. Si necesita ayuda para identificarlos, consulte la tabla de abajo. Tenga en cuenta que algunos datos podrían no aparecer en función del [alojamiento web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} contratado.
 

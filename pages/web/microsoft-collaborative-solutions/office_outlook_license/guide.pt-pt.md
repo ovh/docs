@@ -19,7 +19,7 @@ Deseja beneficiar de uma licença Outlook para consultar e gerir os seus e-mails
 
 A OVHcloud oferece-lhe o cliente de e-mails Outlook ao preço de 2€ s/IVA por mês. Será associado a uma conta Exchange OVHcloud cuja gestão tem.
 
-Após a subscrição, pode descarregar o Outlook entre as 6 versões seguintes:
+Após a subscrição, pode descarregar o Outlook entre as 3 versões seguintes:
 
 - Outlook 2016 para Windows 32 bits.
 - Outlook 2016 pour Windows 64 bits.

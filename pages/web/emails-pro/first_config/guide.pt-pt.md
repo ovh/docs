@@ -95,7 +95,7 @@ A coluna `Diagnóstico`{.action} permite-lhe controlar a configuração DNS do d
 
 Para configurar os endereços de e-mail, aceda a `Contas de e-mail`{.action}. Na tabela, as contas contratadas apresentam o seguinte formato: “*@configureme.me*”.
 
-Para as configurar, clique no ícone em forma de lápis.
+Para as configurar, clique no botão `...`{.action} e, a seguir, em `Alterar`{.action}.
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
 

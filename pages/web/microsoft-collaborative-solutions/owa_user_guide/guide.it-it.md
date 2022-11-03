@@ -128,7 +128,7 @@ Per istruzioni più dettagliate sulla creazione di regole di posta in arrivo, fa
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Clicca sull'icona a forma di ingranaggio in alto a destra e seleziona "Opzioni". Nella colonna di sinistra, clicca su "Posta" > "Account" > "Blocca o autorizza".
+Clicca sull'icona dell'ingranaggio in alto a destra e poi su `Opzioni`{.action}. Sempre nella colonna di sinistra, clicca su "Posta" sotto "Account" e poi "Blocca o autorizza".
 
 Nella sezione "**Mittenti bloccati**", inserisci un indirizzo email o un dominio da bloccare e clicca sul pulsante `+`{.action} per aggiungerlo nella lista.
 

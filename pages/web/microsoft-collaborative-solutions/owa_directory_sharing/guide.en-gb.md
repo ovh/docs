@@ -22,15 +22,15 @@ It is not always appropriate to delegate the usage of an entire email account. T
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) already set up
-- access to your Exchange account (email address and password)
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [OVHcloud Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) already set up
+- access to your Exchange/Email Pro account (email address and password)
 
 
 ## Instructions
 
 ### Step 1: Defining access permissions to a folder
 
-Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Right-click on the folder to be shared and select `Permissions...`{.action} from the context menu.
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovhcloud.com/en-gb/mail/). Right-click on the folder to be shared and select `Permissions...`{.action} from the context menu.
 
 ![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 
@@ -94,7 +94,7 @@ There are sets of pre-defined permissions ("Permission level") to choose from. I
 
 ![sharefolder](images/exchange-folder-step3.png){.thumbnail}
 
-Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Right-click on your account name in the left-hand navigation and select `Add shared folder...`{.action} from the context menu. In the new window, provide the account name from which a folder was shared. Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search directory`{.action}. Confirm by clicking on `Add`{.action}. The new shared folder will immediately appear underneath your other folders.
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovhcloud.com/en-gb/mail). Right-click on your account name in the left-hand navigation and select `Add shared folder...`{.action} from the context menu. In the new window, provide the account name from which a folder was shared. Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search directory`{.action}. Confirm by clicking on `Add`{.action}. The new shared folder will immediately appear underneath your other folders.
 
 
 ## Go further

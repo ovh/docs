@@ -128,7 +128,7 @@ Szczegółowe instrukcje tworzenia reguł skrzynki odbiorczej zawiera przewodnik
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Kliknij koło zębate w prawym górnym rogu, a następnie "Opcje". W lewej kolumnie wpisz drzewo "Poczta", "Konta", a następnie "Zablokuj lub autoryzuj".
+Kliknij ikonę koła zębatego w prawym górnym rogu, a następnie kliknij przycisk `Opcje`{.action}. W lewej kolumnie, po drzewie "Mail" w "Konta", a następnie "Zablokuj lub autoryzuj".
 
 W sekcji "**Nadawcy zablokowani**" wpisz adres e-mail lub nazwę domeny, którą chcesz zablokować, następnie kliknij przycisk `+`{.action}, aby dodać ją do listy.
 

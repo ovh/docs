@@ -112,6 +112,7 @@ Estos son los valores para un servicio Exchange:
 
 Campo | Valor
 ------------ | -------------
+Subdominio | _autodiscover._tcp
 Prioridad | 0
 Peso | 0
 Puerto | 443

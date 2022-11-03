@@ -22,6 +22,11 @@ Na przykład adres e-mail to **john.smith@mydomain.ovh** oraz alias **anonymous@
 
 **Dowiedz się, jak dodać alias do konta e-mail w Panelu klienta OVHcloud**
 
+> [!ostrzeżenie]
+>
+> Aliasy OVHcloud działają tylko dla przychodzących wiadomości e-mail. Nie można wysyłać wiadomości e-mail przy użyciu aliasu jako nadawcy wiadomości e-mail.
+>
+
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).

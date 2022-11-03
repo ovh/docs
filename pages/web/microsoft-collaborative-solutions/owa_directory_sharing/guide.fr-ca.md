@@ -6,119 +6,103 @@ excerpt: Retrouvez ici la procedure de partage d’un dossier depuis votre compt
 section: Utilisation d'Outlook Web Application (OWA)
 order: 5
 ---
+**Dernière mise à jour le 07/04/2020**
 
-## Mise en place sur Outlook Web Application 2016 et ultérieur
+## Objectif
 
-### Point de vue de l'utilisateur qui partage le dossier
+Déléguer l'utilisation de tout un compte e-mail n’est pas toujours la bonne solution. La fonction de partage de dossiers Exchange vous permet d'accorder à d'autres utilisateurs l'accès à des dossiers sélectionnés sur votre compte en leur attribuant des autorisations spécifiques.
 
-#### Partie 1
-Dans notre exemple, un dossier sera partagé depuis le compte [ovhguide@support](mailto:ovhguide@support){.external}- exchange.eu vers [ovhguide2@support-exchange.eu](mailto:ovhguide2@support-exchange.eu){.external}. En premier lieu : donnez les autorisations de partage sur votre boite e-mail. Pour cela, réalisez un clic droit sur le nom de la boîte e-mail et cliquez sur "autorisations". Une nouvelle fenêtre apparaît.
+**Découvrez comment partager des dossiers et définir leurs autorisations d'accès à l'aide de l'application web Outlook (OWA).**
 
-![emails](images/2976.png){.thumbnail}
+> [!primary]
+>
+> Bien que ce guide fasse référence à nos services Exchange, vous pouvez également suivre ces instructions pour les comptes [Email Pro](https://www.ovhcloud.com/fr-ca/emails/email-pro/).
+>
 
-#### Partie 2
-Cliquez sur le  **+**  afin d'ajouter un collaborateur qui recevra le partage du compte e-mail. Une nouvelle interface apparaît ensuite.
 
-![emails](images/2982.png){.thumbnail}
+## Prérequis
 
-#### Partie 3
-Ajoutez l'utilisateur comme cela est décrit dans les 3 étapes ci-contre, puis cliquez sur "ajouter".
+- Disposer d'une offre [Exchange OVHcloud ](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)
+- Avoir accès à votre compte Exchange (adresse e-mail et mot de passe)
 
-![emails](images/2983.png){.thumbnail}
 
-#### Partie 4
-Ensuite, donnez à cet utilisateur les droits nécessaires :
+## Instructions
 
-Vous souhaitez que l'utilisateur [ovhguide2@support-exchange.eu](mailto:ovhguide2@support-exchange.eu){.external} n'accède uniquement qu'au dossier  **"brouillons"**  de la boite : [ovhguide@support](mailto:ovhguide@support){.external}- exchange.eu.
+### Étape 1 : Définir les autorisations d’accès à un dossier
 
-Concernant les autorisations :
+Connectez-vous à votre compte Exchange via le [webmail OVHcloud](https://www.ovhcloud.com/fr-ca/mail). Faites un clic droit sur le dossier à partager et sélectionnez `Autorisations...`{.action} dans le menu contextuel.
 
-Niveau d'autorisation : Aucun Il est nécessaire de cocher : Dossier visible.
+![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 
-Les autorisations ne seront données que sur le dossier en question.
+Dans l'interface suivante, ajoutez d'abord un utilisateur en cliquant sur l'icône `+`{.action}. Commencez à saisir votre contact pour afficher des suggestions. Entrez une adresse e-mail complète ou lancez une recherche sur le `Répertoire de recherche`{.action}.
 
-Validez en cliquant sur le bouton  "ok".
+Il existe des ensembles d'autorisations prédéfinies (« niveaux d'autorisation ») parmi lesquelles choisir. Il est plus facile de sélectionner d'abord l'un de ces rôles, par exemple "Auteur", pour voir quelles autorisations seront accordées. Ensuite, personnalisez-les en fonction de vos besoins en modifiant les cases à cocher.
 
-![emails](images/2985.png){.thumbnail}
+![sharefolder](images/exchange-folder-step2aag.gif){.thumbnail}
 
-#### Partie 5
+#### Détails des autorisations
 
-Donnez maintenant les droits sur un dossier, en l'occurrence le dossier "Brouillons"
+- **Lecture**
 
-De la même manière que précédemment, cliquez droit sur le dossier "Brouillons" puis cliquez sur "autorisations".
+|Autorisation|Description|
+|---|---|
+|Aucun|L’utilisateur ne peut pas voir le contenu du dossier.|
+|Tous les détails|L’utilisateur peut voir le contenu du dossier.|
 
-Il vous est possible de réaliser la manipulation avec le dossier de votre choix.
 
-Vous devrez réaliser les mêmes manipulations que précédemment, à savoir ajouter un collaborateur puis lui donner des droits nécessaires sur le dossier en question.
+- **Supprimer des éléments**
 
-Vous pouvez donner différents droits comme :  Propriétaire, Éditeur, Auteur, Collaborateur...
+|Autorisation|Description|
+|---|---|
+|Aucun|L’utilisateur ne peut supprimer aucun élément.|
+|Personnels|L’utilisateur peut supprimer les éléments qu’il a créés.|
+|Tous|L’utilisateur peut supprimer n’importe quel élément du dossier.|
 
-![emails](images/2986.png){.thumbnail}
 
-### Point de vue de l'utilisateur qui recoit le dossier partage
+- **Écriture**
 
-#### Partie 1
-Sur le [Webmail Exchange](https://ex.mail.ovh.ca/owa/){.external} du second utilisateur, ajoutez le dossier partagé.
+|Autorisation|Description|
+|---|---|
+|Création d’éléments|L’utilisateur peut créer de nouveaux éléments dans le dossier.|
+|Création de sous-dossiers|L’utilisateur peut créer de nouveaux sous-dossiers dans le dossier partagé.|
+|Modification des éléments personnels|L’utilisateur peut modifier les éléments qu’il a créés.|
+|Modification de tous les éléments|L’utilisateur peut modifier n’importe quel élément du dossier.|
 
-Réalisez un clic droit sur votre compte e-mail, puis sélectionnez "ajouter un dossier partagé".
 
-![emails](images/2988.png){.thumbnail}
+- **Autre**
 
-Renseignez le compte de l'utilisateur ayant réalisé le partage du dossier. Notre dossier "brouillons" apparaît maintenant correctement dans [OWA](https://ex.mail.ovh.ca/owa/){.external}.
+|Autorisation|Description|
+|---|---|
+|Propriétaire du dossier|L’utilisateur a les mêmes autorisations que le propriétaire du dossier (c’est-à-dire toutes les autorisations).|
+|Contact pour le dossier|L'utilisateur peut recevoir des notifications et des demandes concernant le dossier (changements de statut, demandes d'autorisation, messages d'erreur).|
+|Dossier visible|Le dossier apparaît sur le compte de l’utilisateur.|
 
-![emails](images/2989.png){.thumbnail}
+> [!primary]
+>**Sous-dossiers**
+> 
+> - Les sous-dossiers créés dans un dossier partagé héritent automatiquement des autorisations du dossier parent. Si vous accordez de nouvelles autorisations sur un dossier et que ses sous-dossiers doivent également être partagés, des autorisations doivent être définies **pour chaque sous-dossier**.
+> 
+> - Si vous partagez un **sous-dossier** d'un dossier existant qui lui-même n'a pas d’autorisations définies, assurez-vous de cocher au moins « Dossier visible » sur le **dossier parent**. Sans cela, le sous-dossier n'apparaîtra pas sur le compte de l'autre utilisateur. (L'utilisateur ne pourra pas voir le contenu du dossier parent, à moins que vous n'accordiez également l'autorisation « Lecture »).
+> 
+> - Les utilisateurs ne peuvent pas supprimer les sous-dossiers qu'ils n'ont pas créés eux-mêmes.
+> 
+> - Les utilisateurs disposant de l’autorisation « Propriétaire du dossier » sur un sous-dossier peuvent le renommer et lui accorder des autorisations.
+>
 
-## Mise en place sur Outlook Web Application 2013
 
-### Point de vue de l'utilisateur qui partage le dossier
+### Étape 2 : Récupérer un dossier partagé
 
-#### Partie 1
-D'abord, donnez les autorisations de partage sur votre boite e-mail. Pour cela, réalisez un clic droit sur le nom de la boîte e-mail et cliquez sur "autorisations". Une nouvelle fenêtre apparaît.
+![sharefolder](images/exchange-folder-step3.png){.thumbnail}
 
-En haut à droite de l'interface, "eettt" est le nom notre premier utilisateur
+Connectez-vous à votre compte Exchange via le [webmail OVHcloud](https://www.ovhcloud.com/fr-ca/mail). Faites un clic droit sur le nom de votre compte dans l’onglet de navigation à gauche et sélectionnez `Ajouter un dossier partagé...`{.action} depuis le menu contextuel. Dans la nouvelle fenêtre, indiquez le nom du compte à partir duquel un dossier a été partagé. Commencez à saisir du texte pour afficher des suggestions de vos contacts. Entrez des adresses e-mail complètes ou bien lancez une recherche sur le `Répertoire de recherche`{.action}. Confirmez et cliquez sur `Ajouter`{.action}. Le nouveau dossier partagé apparaît alors immédiatement sous vos autres dossiers.
 
-![emails](images/1008.png){.thumbnail}
 
-#### Partie 2
-Cliquez sur le  **+**  afin d'ajouter un collaborateur qui recevra le partage du compte e-mail. Une nouvelle interface apparaît ensuite.
+## Aller plus loin
 
-![emails](images/1009.png){.thumbnail}
+[Consulter son compte Exchange depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/)
 
-#### Partie 3
-Ajoutez l'utilisateur comme cela est décrit dans les 3 étapes ci-contre, puis cliquez sur "ajouter".
+[Déléguer des droits sur un compte Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/)
 
-![emails](images/1012.png){.thumbnail}
+[Partager un calendrier depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
 
-#### Partie 4
-Ensuite, donnez à cet utilisateur les droits nécessaires, par exemple éditeur principal.
-
-Validez en cliquant sur le bouton  "ok".
-
-![emails](images/1013.png){.thumbnail}
-
-#### Partie 5
-Donnez maintenant les droits sur un dossier, en l'occurrence le dossier "Eléments envoyés"
-
-De la même manière que précédemment, cliquez droit sur le dossier "Eléments envoyés" puis cliquez sur "autorisations"
-
-Il vous est possible de réaliser la manipulation avec le dossier de votre choix.
-
-Vous devrez réaliser les mêmes manipulations que précédemment, à savoir ajouter un collaborateur puis lui donner des droits nécessaires sur le dossier en question.
-
-![emails](images/1014.png){.thumbnail}
-
-### Point de vue de l'utilisateur qui recoit le dossier partage
-
-Sur le [Webmail Exchange](https://ex.mail.ovh.ca/owa/){.external} du second utilisateur, ajoutez le dossier partagé.
-
-Réalisez un clic droit sur votre compte e-mail, puis sélectionnez "ajouter un dossier partagé".
-
-![emails](images/1015.png){.thumbnail}
-
-Renseignez le compte de l'utilisateur ayant réalisé le partage du dossier.
-
-![emails](images/1016.png){.thumbnail}
-
-Notre dossier "Eléments envoyés" apparaît maintenant correctement dans [OWA](https://ex.mail.ovh.ca/owa/){.external}.
-
-![emails](images/1017.png){.thumbnail}
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

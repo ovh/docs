@@ -4,7 +4,7 @@ slug: pssi
 section: Politiques de sécurité
 ---
 
-**Dernière mise à jour le 15/02/2021**
+**Dernière mise à jour le 21/07/2022**
 
 ## Objectifs
 
@@ -70,11 +70,11 @@ Les clients et partenaires d'OVHcloud nous confient la responsabilité d'opérer
 
 Les autorités définissent le cadre assurant la protection des citoyens et des entreprises sous leurs juridictions. Cette protection s’étend aux données et traitements des citoyens et des entreprises. OVHcloud prend en compte ces exigences dans toutes les géographies où le service est opéré pour assurer un service adapté aux écosystèmes locaux. Les régulateurs sectoriels formulent également des exigences pour l'hébergement de certains types de données et de traitements, associés à des risques particuliers. OVHcloud peut proposer des services spécifiquement adaptés à ces exigences. Dans ce cas, OVHcloud s'engage sur la couverture des exigences sectorielles et des risques spécifiques au secteur.
 
-#### Les salariés, la direction d'OVHcloud et les actionnaires
+#### Les employés, la direction d'OVHcloud et les actionnaires
 
-Les salariés d'OVHcloud conçoivent, maintiennent et opèrent les systèmes et processus en support des services d'OVHcloud. Tout incident de sécurité a un impact direct et génère des perturbations dans les opérations. Il peut aussi remettre en question la fiabilité des services rendus aux clients, l'expertise et le professionnalisme des équipes. Opérer des systèmes d'information sécurisés permet de mettre en valeur les innovations, la passion, l'engagement des équipes et la qualité des services d'OVHcloud.
+Les salariés d'OVHcloud conçoivent, maintiennent et opèrent les systèmes et processus en support des services d'OVHcloud. Tout incident de sécurité a un impact négatif direct sur les opérations, il peut également remettre en question la valeur du service, l'expertise et le professionnalisme des équipes. Opérer des systèmes d'information sécurisés permet de mettre en valeur les innovations, la passion, l'engagement des équipes et la qualité des services d'OVHcloud.
 
-OVHcloud, en tant que fournisseur de cloud alternatif, doit assurer une croissance forte pour soutenir l'innovation et le développement à l'international renforçant sa crédibilité. La confiance de nos clients, principal vecteur de cette croissance, est directement liée à la capacité d'OVHcloud à protéger leurs données et traitements. La sécurité est donc un des piliers en support de la stratégie de développement portée par la direction et les actionnaires d'OVHcloud.
+OVHcloud, en tant que fournisseur de cloud alternatif dans un environnement très compétitif, doit assurer une croissance forte pour soutenir l'innovation et le développement à l'international renforçant sa crédibilité. La confiance de nos clients, principal vecteur de cette croissance, est directement liée à la capacité d'OVHcloud à protéger leurs données et charges de traitements. La cybersécurité est donc un des piliers en support de la stratégie de développement portée par la direction et les actionnaires d'OVHcloud.
 
 ## Nos engagements sécurité
 
@@ -90,7 +90,7 @@ Une gestion formelle des risques de sécurité permet de prendre en compte les s
 
 Enfin, OVHcloud opère un dispositif d'analyse permanent des menaces lié à une surveillance permanente des systèmes. Ainsi, nous adaptons systématiquement les pratiques opérationnelles aux risques immédiats et réagissons efficacement aux incidents de sécurité. L'organisation des équipes sécurité permet de mobiliser au plus vite les experts pour investiguer et résoudre les incidents de sécurité. De cette manière, nous minimisons les impacts potentiels et mettons en place les actions correctives au plus vite de manière pérenne.
 
-### Placer OVHcloud comme un acteur de confiance au sein de l'écosystème
+### Positionner OVHcloud comme un acteur de confiance au sein de l'écosystème
 
 En tant que fournisseur mondial de cloud, OVHcloud a une grande responsabilité dans la lutte contre les menaces de sécurité. Nous déployons des outils de protection à grande échelle. Nous automatisons la protection des systèmes de nos clients contre ces menaces. Nous détectons les systèmes vulnérables. Nous partageons nos innovations et nos connaissances avec la communauté de la sécurité. Nous gérons plusieurs millions d'adresses IP publiques pour le compte de nos clients. Ces adresses sont des actifs essentiels des systèmes d'informations dans le cloud et leurs réputations est l'une de nos préoccupations.
 
@@ -102,7 +102,7 @@ Nous challengeons continuellement notre sécurité. Nous mettons en œuvre un pr
 
 OVHcloud propose ses solutions à tout type de client dans tous les domaines d'activités : startup, PME, grande entreprise, administration, multinationale. Chaque client d'OVHcloud a une approche de la sécurité particulière dépendante de son contexte métier ou de ses besoins de souveraineté que nous devons prendre en compte. La sécurité est un des pilliers de la confiance de nos clients.
 
-La sécurité d'un système dans le cloud est une responsabilité partagée entre le fournisseur de cloud et le client. OVHcloud assure la sécurité des services fournis et des infrastructures sous-jacentes. Nos clients sont responsables de la sécurité de leurs systèmes d'information dans le cloud. Nous leur offrons un niveau de transparence important sur les mesures de sécurité incluses dans leurs services pour les aider à faire les bons choix. Nous définissons clairement leurs domaines de responsabilité afin d'éviter toute vulnérabilité découlant d'une prise de conscience insuffisante.
+La sécurité d'un système dans le cloud est une responsabilité partagée entre le fournisseur de cloud et le client. OVHcloud assure la sécurité des services fournis et des infrastructures sous-jacentes. Nos clients sont toutefois responsables de la sécurité de leurs systèmes d'information dans le cloud. Nous leur offrons un haut niveau de transparence sur les mesures de sécurité implémentées par OVHcloud pour les aider dans leur plan global de mitigation des risques sécurité. Nous définissons clairement leurs domaines de responsabilité afin d'éviter toute vulnérabilité découlant d'une prise de conscience insuffisante.
 
 OVHcloud fournit et développe un ensemble d'outils, de fonctionnalités et de configurations afin d'améliorer la sécurité des systèmes des clients dans le cloud. La plupart des fonctions de sécurité sont incluses pour tous les clients. Des fonctions de sécurité supplémentaires sont également proposées pour aider nos clients à réduire les risques spécifiques auxquels ils sont confrontés.
 

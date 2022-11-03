@@ -112,6 +112,7 @@ Die folgende Tabelle enthält die Werte für einen Exchange Dienst:
 
 Feld | Wert
 ------------ | -------------
+Subdomain | _autodiscover._tcp
 Priorität | 0
 Gewichtung | 0
 Port | 443

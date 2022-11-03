@@ -19,7 +19,6 @@ Es kann aus verschiedenen Gründen erforderlich sein, dass Sie eine DNS-Zone fü
 
 - Sie besitzen eine Domain.
 - Die betreffende Domain hat noch keine OVHcloud DNS-Zone und ist nicht Teil eines laufenden Vorgangs oder einer aktuellen Bestellung bei OVHcloud.
-- Die technische Konfiguration der Domain ist korrekt (Status, SOA usw.).
 - Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 

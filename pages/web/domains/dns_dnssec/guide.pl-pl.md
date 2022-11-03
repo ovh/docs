@@ -7,7 +7,11 @@ section: Bezpieczeństwo
 order: 01
 ---
 
-**Ostatnia aktualizacja z dnia 24-04-2019**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 19-10-2022**
 
 ## Wprowadzenie
 
@@ -28,7 +32,9 @@ Aktywacja DNSSEC jest możliwa w dwóch przypadkach:
 
 - **Twoja domena korzysta z serwerów DNS OVHcloud**: aktywacji dokonujesz w prosty sposób w Panelu klienta;
 
-- **Twoja domena nie używa serwerów DNS OVHcloud**: zwróć się do administratora zarządzającego jej konfiguracją DNS.  Jeśli sam zarządzasz domeną, zainstaluj DNSSEC ręcznie. W tym przypadku skorzystaj z dokumentacji technicznej dostępnej online.
+- **jeśli nazwa domeny nie korzysta z serwerów DNS OVHcloud**, należy skontaktować się z dostawcą usług zarządzającym konfiguracją DNS i poprosić go o wszystkie parametry. Następnie przejdź do sekcji `Web Cloud`{.action}. Kliknij przycisk `Domeny`{.action}, a następnie wybierz nazwę domeny z listy.
+Kliknij zakładkę `rekordy DS`{.action}, następnie kliknij przycisk `Edytuj`{.action} po prawej stronie, a następnie kliknij przycisk `+`{.action}.
+Teraz możesz wypełnić 4 pól "Key tag", "Flag", "Algorithm","Public key (encoded in base64)" danymi dostarczonymi przez bieżącego usługodawcę.
 
 > [!primary]
 >

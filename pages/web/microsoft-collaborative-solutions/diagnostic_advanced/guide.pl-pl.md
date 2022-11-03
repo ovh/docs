@@ -112,6 +112,7 @@ Oto wartości dla usługi Exchange:
 
 Pole | Wartość
 ------------ | -------------
+Subdomena | _autodiscover._tcp
 Priorytet | 0
 Waga | 0
 Port | 443

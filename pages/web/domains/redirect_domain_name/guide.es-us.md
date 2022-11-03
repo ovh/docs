@@ -137,7 +137,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 >> >
 >>
 
-##### Opción 2: redirección visible temporal hacia una dirección web
+#### Opción 2: redirección visible temporal hacia una dirección web
 
 Al igual que con la opción 1, esta opción permite mostrar, una vez introducido el dominio redirigido, el dominio destino en la barra de direcciones de su navegador de internet en lugar del dominio redirigido.
 

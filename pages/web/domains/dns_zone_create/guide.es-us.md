@@ -20,7 +20,6 @@ Existen diversos motivos por los que podría necesitar crear una zona DNS para u
 
 - Tener un dominio.
 - No debe existir una operación o un pedido asociados al dominio, y este no debe disponer de otra zona DNS en OVHcloud.
-- La configuración técnica del dominio debe ser correcta (estado, SOA...).
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
