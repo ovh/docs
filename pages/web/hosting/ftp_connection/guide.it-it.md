@@ -16,7 +16,7 @@ Le soluzioni di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} (per attivare più utenti FTP è necessario disporre almeno di un hosting Pro o Performance).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
 
 ## Procedura
@@ -42,6 +42,9 @@ Per recuperare le informazioni necessarie, accedi allo [Spazio Cliente OVHcloud]
 Nella nuova pagina, visualizzi tutte le informazioni relative allo storage e una tabella con gli utenti FTP e SSH creati sul tuo hosting.
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
+
+Per creare un nuovo utente FTP/SSH a partire dalla stessa pagina, clicca sul pulsante `Crea utente`{.action} a destra.
+Scegli l’`Utente`{.action} e la `Cartella di root`{.action}, quindi clicca su `Avanti`{.action}, scegli una password per questo nuovo account, clicca su `Avanti`{.action} e clicca su `Conferma`{.action}.
 
 In questa interfaccia dovresti trovare i dati richiesti per eseguire l’accesso. Se non riesci a identificarli, consulta la tabella qui sotto tenendo presente che, in base alla soluzione di hosting attivata, alcuni di essi potrebbero non essere disponibili.
 

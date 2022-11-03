@@ -16,7 +16,7 @@ Os planos de alojamento web da OVHcloud dão-lhe acesso a um espaço de armazena
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} (para ativar vários utilizadores FTP, deve dispor de um alojamento Pro ou Performance).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 ## Instruções
@@ -42,6 +42,9 @@ Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https:
 Poderá ver as informações relativas ao seu espaço de armazenamento, assim como uma tabela com os utilizadores FTP e SSH criados no seu alojamento.
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
+
+Se deseja criar um novo utilizador FTP/SSH a partir da mesma página, clique no botão `Criar utilizador`{.action} à direita.
+Escolha o `Utilizador`{.action} e a `Pasta raiz`{.action} e depois clique em `Seguinte`{.action}, escolha a password para a nova conta, clique em `Seguinte`{.action} e depois em `Confirmar`{.action}.
 
 Graças a estas informações, terá a possibilidade de encontrar os elementos necessários para aceder ao seu espaço de armazenamento. Caso seja necessário, consulte a tabela abaixo para saber como identificá-los. Lembre-se de que algumas informações podem não aparecer, dependendo do plano de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} que possuir.
 

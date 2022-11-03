@@ -31,7 +31,7 @@ Here is the list of software included in the suite:
 
 Go to our [OVHcloud.com website](https://www.ovhcloud.com/en-ie/collaborative-tools/microsoft-365/){.external} and select “Collaborative tools” in our “Web Cloud” section. 
 
-You can also order a licence from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Once you have logged in, select `Web Cloud`{.action} in the top menu, then click the `Order`{.action} button and choose `O365`{.action}.
+You can also order a licence from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Once you have logged in, select `Web Cloud`{.action} in the top menu, then click the `Order`{.action} button and choose `Office 365`{.action}.
 
 - Choose from our available offers, namely Apps for business and Apps for enterprise.
 - Set the renewal frequency for your licence group.

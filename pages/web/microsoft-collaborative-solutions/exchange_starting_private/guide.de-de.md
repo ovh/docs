@@ -17,7 +17,7 @@ Nach Bestellung einer Private Exchange Plattform sind einige Punkte zu beachten,
 
 ## Voraussetzungen
 
-- Sie haben einen [Private Exchange](https://www.ovhcloud.com/de/emails/) Dienst in Ihrem Kunden-Account.
+- Sie haben einen [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) Dienst in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

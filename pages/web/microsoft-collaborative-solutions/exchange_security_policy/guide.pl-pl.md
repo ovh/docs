@@ -53,10 +53,9 @@ Możesz ustalić, czy konta e-mail mają być blokowane po określonej liczbie 
 
 W tym celu uzupełnij informacje podane w poniższej tabeli:
 
-
 - **Próg blokady|**: Określi liczbę nieudanych prób logowania, po której konto zostanie zablokowane. Wpisz „0”, jeśli nie chcesz ustalać progu blokady.|
-- **Czas resetowania**: Pole to pojawia się jedynie, gdy został ustalony próg blokady. Określ czas, po którym licznik nieudanych prób logowania zostanie zresetowany.|
-- **Czas blokowania**: Pole to pojawia się jedynie, gdy został ustalony próg blokady. Określ czas, przez jaki konto e-mail pozostanie zablokowane, jeśli osiągnięty zostanie próg blokady.|
+- **Czas resetu**: Pole to pojawia się tylko wtedy, gdy został określony próg blokady. Określ czas potrzebny na przywrócenie licznika nieudanych prób logowania.
+- **Czas blokady**: Pole to pojawia się tylko wtedy, gdy został określony próg blokady. Określ czas, przez jaki konto e-mail pozostanie zablokowane, jeśli osiągnięty zostanie próg blokady.
 
 Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{.action}, a następnie `Zatwierdź`{.action} w przypadku ofert „E-maile” i „E-mail Pro”. W przypadku oferty Exchange kliknij `Zapisz zmiany`{.action}.
 

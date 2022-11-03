@@ -16,7 +16,7 @@ Se hai appena ordinato una soluzione Private Exchange, segui questi passaggi per
 
 ## Prerequisiti
 
-- Aver ordinato una [soluzione Private Exchange OVHcloud](https://www.ovhcloud.com/it/emails/){.external}.
+- Aver ordinato una [soluzione Private Exchange OVHcloud](https://www.ovhcloud.com/it/emails/private-exchange/){.external}.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura

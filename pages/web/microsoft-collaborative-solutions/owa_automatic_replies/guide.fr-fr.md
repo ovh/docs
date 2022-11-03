@@ -18,8 +18,8 @@ Cette fonctionnalité d’Exchange vous permet de configurer des réponses autom
 
 ## Prérequis
 
-- Avoir installé une [solution OVHcloud Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) 
-- Avoir accès à votre compte Exchange (adresse e-mail et mot de passe)
+- Avoir installé une solution e-mail OVHcloud [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/) 
+- Avoir accès à votre compte e-mail (adresse e-mail et mot de passe)
 
 
 ## En pratique

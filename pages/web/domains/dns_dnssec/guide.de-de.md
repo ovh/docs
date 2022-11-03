@@ -2,12 +2,15 @@
 title: 'Domain mit DNSSEC sichern'
 excerpt: 'Schützen Sie Ihre Domain mit DNSSEC vor Cache Poisoning'
 slug: sichern_sie_ihre_domain_mit_dnssec_ab
-legacy_guide_number: g609
 section: 'Sicherheit'
 order: 01
 ---
 
-**Stand 19.06.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 19.10.2022**
 
 ## Ziel
 
@@ -18,18 +21,20 @@ Um zu verstehen, wie dieses Verfahren funktioniert, lesen Sie folgende Seite: �
 
 ## Voraussetzungen
 
-- Sie besitzen eine bei OVHcloud registrierte Domain.
+- Sie verfügen über eine bei OVHcloud registrierte Domain.
 - Die betreffende Domain hat eine mit DNSSEC kompatible Endung.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
 ## In der praktischen Anwendung
 
 DNSSEC kann auf zwei Arten aktiviert werden:
 
-- **Wenn Ihre Domain DNS-Server von OVHcloud verwendet**, kann DNSSEC mit einem Klick über Ihr Kundencenter aktiviert werden.
+- **Wenn Ihr Domainname DNS-Server von OVHcloud verwendet**, kann DNSSEC mit einem Klick über Ihr Kundencenter aktiviert werden.
 
-- **Wenn Ihre Domain nicht die OVHcloud DNS-Server verwendet**, informieren Sie sich für die Vorgehensweise bei dem Anbieter, der die DNS-Konfiguration Ihrer Domain verwaltet. Wenn Sie die Konfiguration selbst verwalten, muss DNSSEC manuell von Ihnen installiert werden. Ist das der Fall, nutzen Sie bitte die Dokumentation im Internet.
+- **Wenn Ihr Domainname keine DNS-Server von OVHcloud verwendet**, kontaktieren Sie den Anbieter, der die DNS-Konfiguration verwaltet, und fragen Sie nach allen notwendigen Parametern. Gehen Sie anschließend in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Domainnamen`{.action} und wählen Sie dann den betreffenden Domainnamen aus der Liste aus.
+Öffnen Sie `DS-Records`{.action}, klicken Sie dann rechts auf die Schaltfläche `Bearbeiten`{.action} und anschließend auf die Schaltfläche `+`{.action}.
+Sie können nun die 4 Felder „Key Tag“, „Flag“, „Algorithm“, „Public Key (Base64-codiert)“ mit den Daten Ihres aktuellen Anbieters füllen.
 
 > [!primary]
 >

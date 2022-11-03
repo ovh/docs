@@ -17,8 +17,8 @@ Questa funzionalità di Exchange consente di impostare risposte automatiche alle
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) attiva
-- Accedere all’account Exchange (indirizzo email e password)
+ - Aver installato una soluzione email OVHcloud [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)
+- Accedere all’account email (indirizzo email e password)
 
 ## Procedura
 

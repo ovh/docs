@@ -45,9 +45,9 @@ Im Konfigurationsassistenten können Sie mehrere Einstellungen vornehmen. Je nac
 |Einstellung|Beschreibung|
 |---|---|
 |Wahl der Domain|Legen Sie die Domain fest, die für Ihre Exchange E-Mail-Adressen verwendet wird. Diese ist Teil Ihrer E-Mail-Adresse (zum Beispiel kontakt@meinepersönlichedomain.ovh).|
-|Konfiguration Ihrer Domain|Die von Ihnen eingegebene Domain wird automatisch konfiguriert, wenn diese von OVH unter derselben Kundenkennung (NIC-Handle) verwaltet wird wie Ihr Hosted Exchange. Ist dies nicht der Fall, konfigurieren Sie die Domain manuell selbst.|
+|Konfiguration Ihrer Domain|Die von Ihnen eingegebene Domain wird automatisch konfiguriert, wenn diese von OVHcloud unter derselben Kundenkennung (NIC-Handle) verwaltet wird wie Ihr Hosted Exchange. Ist dies nicht der Fall, konfigurieren Sie die Domain manuell selbst.|
 |Konfiguration der Exchange Accounts|Legen Sie den Namen Ihrer Exchange E-Mail-Adressen fest und fügen Sie zusätzliche Informationen hinzu.|
-|Datenmigration (falls zutreffend)|Wenn Sie Ihre E-Mail-Adressen von einer anderen OVH E-Mail-Lösung (MX Plan oder E-Mail Pro) auf Hosted Exchange migrieren möchten, können Sie den Migrationsvorgang über diesen Assistenten starten. Wenn Sie einen E-Mail-Client verwenden, müssen Ihre Accounts außerdem erneut konfiguriert werden.|
+|Datenmigration (falls zutreffend)|Wenn Sie Ihre E-Mail-Adressen von einer anderen OVHcloud E-Mail-Lösung (MX Plan oder E-Mail Pro) auf Hosted Exchange migrieren möchten, können Sie den Migrationsvorgang über diesen Assistenten starten. Wenn Sie einen E-Mail-Client verwenden, müssen Ihre Accounts außerdem erneut konfiguriert werden.|
 
 ### Schritt 3: Domains hinzufügen (optional)
 
@@ -64,7 +64,7 @@ Für weitere Informationen, lesen Sie bitte die Anleitung [Eine Domain zu Ihrem 
 
 > [!primary]
 >
-> Wenn für die Konfiguration einer Domain eine besondere Aktion erforderlich ist, erscheint in der Tabelle ein rotes Kästchen in der Spalte `Diagnose`{.action}. Klicken Sie auf dieses Kästchen, um die notwendigen Aktionen anzuzeigen. Verwendet die Domain nicht die OVH Konfiguration (d. h. die DNS-Server von OVH), nehmen Sie bitte die notwendigen Änderungen in dem Verwaltungsinterface vor, dass Sie für die Konfiguration Ihrer Domain verwenden. 
+> Wenn für die Konfiguration einer Domain eine besondere Aktion erforderlich ist, erscheint in der Tabelle ein rotes Kästchen in der Spalte `Diagnose`{.action}. Klicken Sie auf dieses Kästchen, um die notwendigen Aktionen anzuzeigen. Verwendet die Domain nicht die OVHcloud Konfiguration (d. h. die DNS-Server von OVHcloud), nehmen Sie bitte die notwendigen Änderungen in dem Verwaltungsinterface vor, dass Sie für die Konfiguration Ihrer Domain verwenden. 
 >
 
 ![Eine Domain hinzufügen](images/first-steps-hosted-exchange-add-domain.png){.external}
@@ -79,18 +79,18 @@ Die Accounts, deren Konfiguration in Bearbeitung ist, werden in der Tabelle mit 
 
 > [!primary]
 >
-> Führen Sie diesen Schritt aus, sooft dies notwendig ist (je nach Anzahl Ihrer Accounts). Sie können weitere Accounts bestellen, indem Sie auf den Button `Accounts bestellen`{.action} klicken.
+> Wiederholen Sie diesen Schritt je nach Anzahl Ihrer Accounts. Sie können neue Accounts über die Schaltfläche `Aktionen`{.action} bestellen, indem Sie  auf `Accounts bestellen`{.action} klicken.
 >
 
 ![Einen Account hinzufügen](images/first-steps-hosted-exchange-add-account.png){.external}
 
 ### Schritt 5: Ihre E-Mail-Adressen verwenden
 
-Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwenden. Hierfür steht Ihnen die **Outlook Web Application** (OWA), das Webmail-Interface von OVH, zur Verfügung. Sie können sich über folgenden Link einloggen: [https://www.ovh.cz/mail/](https://www.ovh.de/mail/){.external}. Geben Sie hierzu die Zugangsdaten zu Ihrer E-Mail-Adresse ein. Weitere Anleitungen zur Verwendung von OWA finden Sie in unserer Dokumentation unter folgendem Link: [https://docs.ovh.com/de/microsoft-collaborative-solutions/](https://docs.ovh.com/de/microsoft-collaborative-solutions/){.external}.
+Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwenden. Hierfür steht Ihnen die **Outlook Web Application** (OWA), das Webmail-Interface von OVHcloud, zur Verfügung. Sie können sich über folgenden Link einloggen: <https://www.ovh.de/mail/>. Geben Sie hierzu die Zugangsdaten zu Ihrer E-Mail-Adresse ein. Weitere Anleitungen zur Verwendung von OWA finden Sie in unserer Dokumentation unter folgendem Link: [https://docs.ovh.com/de/microsoft-collaborative-solutions/](https://docs.ovh.com/de/microsoft-collaborative-solutions/){.external}.
 
 Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder auf einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, finden Sie die entsprechende Dokumentation unter [https://docs.ovh.com/de/microsoft-collaborative-solutions/](https://docs.ovh.com/de/microsoft-collaborative-solutions/){.external}. Vergewissern Sie sich, dass der E-Mail-Client mit Ihrer Dienstleistung kompatibel ist, damit Ihre Exchange Adresse optimal funktioniert.
 
-OVH bietet Ihnen Outlook Lizenzen über Ihr [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} sowie Office 365 Lizenzen auf der Webseite [https://www.ovh.de/office-365/](https://www.ovh.de/office-365/){.external}. Wir empfehlen Ihnen, eine dieser Lösungen zu verwenden, wenn Sie den Outlook E-Mail-Client oder weitere Software der Office Suite nutzen möchten.
+OVHcloud bietet Ihnen Outlook Lizenzen über Ihr [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} sowie Office 365 Lizenzen auf der Webseite <https://www.ovh.de/office-365/>. Wir empfehlen Ihnen, eine dieser Lösungen zu verwenden, wenn Sie den Outlook E-Mail-Client oder weitere Software der Office Suite nutzen möchten.
 
 > [!primary]
 >
@@ -110,4 +110,4 @@ Weitere Anleitungen zu den Funktionen finden Sie in unserer Dokumentation unter 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

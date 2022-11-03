@@ -53,8 +53,8 @@ Permite indicar si las cuentas de correo deben bloquearse al cabo de un cierto n
 Para ello, debe completar los datos que se detallan a continuación:
 
 - **Umbral de bloqueo**: Introduzca el número de intentos de conexión fallidos permitidos antes de que se bloquee la cuenta. Indique «0» si no desea que se bloquee la cuenta.
-- **Intervalo de puesta a cero del contador**: Este campo aparece al establecer un umbral de bloqueo. Indique el tiempo en minutos que debe transcurrir para que el contador de intentos de conexión fallidos se ponga a cero.
-- **Duración de bloqueo**: Este campo aparece al establecer un umbral de bloqueo. Indique el tiempo en minutos que la cuenta de correo permanecerá bloqueada después de haber alcanzado el umbral de bloqueo.
+- **Intervalo de puesta a cero del contador**: Este campo solo aparece si se ha establecido un umbral de bloqueo. Indique el tiempo en minutos que tarda el contador de intentos de conexión fallidos en volver a cero.
+- **Duración de bloqueo**: Este campo solo aparece si se ha establecido un umbral de bloqueo. Indique el tiempo en minutos que la cuenta de correo permanecerá bloqueada después de haber alcanzado el umbral de bloqueo.
 
 Una vez que haya completado esta información, acepte los cambios haciendo clic en el botón `Siguiente`{.action} y luego en `Aceptar`{.action} para los servicios «Correo electrónico» y «Email Pro». Haga clic en `Guardar los cambios`{.action} para el servicio Exchange.
 

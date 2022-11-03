@@ -94,7 +94,7 @@ Nella colonna `Diagnostica`{.action} è possibile assicurarsi della corretta con
 
 Per procedere con la configurazione degli indirizzi email, seleziona la scheda `Account email`{.action}.  Visualizzi una tabella con tutti gli account ordinati, nel formato “*@configureme.me*”.
 
-Clicca sui tre puntini in corrispondenza dell’account in questione e seleziona Modifica.
+Per configurarli, clicca sul pulsante `...`{.action} e poi su `Modifica`{.action}.
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
 

@@ -54,8 +54,8 @@ Esta ação permite-lhe indicar se as contas de e-mail devem ser bloqueadas apó
 Para isso, complete as informações mencionadas no quadro abaixo:
 
 - **Limite de bloqueio**: Indique o número de tentativas de ligações sem efeito que deve ser atingido para que a conta seja bloqueada. Indique “0” para não aplicar nenhum limite de bloqueio.
-- **Atraso de reinicialização**: Este campo aparece apenas se um limite de bloqueio tiver sido definido. Precise o prazo necessário para que o contador de tentativas de ligações sem efeito seja reposto a zero.|
-- ***Duração do bloqueio**: Este campo aparece apenas se um limite de bloqueio tiver sido definido. Especifique o tempo durante o qual a conta de e-mail ficará bloqueada se o limite de bloqueio for atingido.|
+- **Prazo de reinicialização**: Este campo aparece apenas se um limite de bloqueio tiver sido definido. Especifique o tempo necessário, em minutos, para que o contador de tentativas de ligações sem efeito volte a zero.
+- **Duração do bloqueio**: Este campo aparece apenas se um limite de bloqueio tiver sido definido. Especifique o tempo em minutos durante o qual a conta de e-mail ficará bloqueada se o limite de bloqueio for atingido.
 
 Depois de preencher estas informações, valide estas alterações clicando em `Seguinte`{.action} e, a seguir, em `Validar`{.action}, relativamente às ofertas «E-mails» e «E-mail Pro». Clique em `Registar as modificações`{.action}, relativamente à oferta Exchange.
 

@@ -2,7 +2,6 @@
 title: 'Einrichten einer automatischen Antwort in OWA'
 excerpt: 'Erfahren Sie hier, wie Sie automatische Antworten in OWA erstellen'
 slug: exchange_2016_einrichten_einer_automatischen_antwort_in_owa
-legacy_guide_number: g1922
 section: 'Outlook Web App (OWA)'
 order: 3
 ---
@@ -18,8 +17,8 @@ Mit dieser Exchange-Funktion können Sie für verschiedene Anwendungsfälle auto
 
 ## Voraussetzungen
 
-- Sie haben bereits einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
-- Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
+ - Sie verfügen über OVHcloud [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/).
+- Sie haben die Login-Informationen für den E-Mail-Account, die Sie konfigurieren möchten.
 
 
 ## In der praktischen Anwendung

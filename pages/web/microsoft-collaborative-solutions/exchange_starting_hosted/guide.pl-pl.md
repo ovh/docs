@@ -19,13 +19,13 @@ Usługa Hosted Exchange pozwala na korzystanie z profesjonalnej poczty elektroni
 - Wykupienie usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}.
 - Otrzymanie wiadomość e-mail z potwierdzeniem, że usługa Hosted Exchange została zainstalowana.
 - Zarejestrowana domena.
-- Dostęp [do Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp [do Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
 ### Etap 1: dostęp do panelu zarządzania usługą Exchange
 
-Po utworzeniu i udostępnieniu usługi Hosted Exchange, można nią zarządzać poprzez [Panel klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Po utworzeniu i udostępnieniu usługi Hosted Exchange, można nią zarządzać poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 W tym celu zaloguj się w Panelu klienta, kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. W kolejnym kroku kliknij wybraną nazwę usługi  Hosted Exchange.
 
@@ -45,9 +45,9 @@ Asystent konfiguracji umożliwia przeprowadzenie kilku działań. Niniejsza tabe
 |Operacja|Opis|
 |---|---|
 |Wybór nazwy domeny|Wybierz nazwę domeny, która będzie używana w Twoich adresach e-mail Exchange. Nazwa ta jest jednym z elementów tworzących Twój adres e-mail (przykład: kontakt@mypersonaldomain.ovh).|
-|Konfiguracja nazwy domeny|Wpisana nazwa domeny zostanie skonfigurowana automatycznie, jeśli domena jest zarejestrowana w OVH na tym samym koncie klienta, co Twoja usługa Exchange. W przeciwnym razie będziesz musiał przeprowadzić ręczną konfigurację.|
+|Konfiguracja nazwy domeny|Wpisana nazwa domeny zostanie skonfigurowana automatycznie, jeśli domena jest zarejestrowana w OVHcloud na tym samym koncie klienta, co Twoja usługa Exchange. W przeciwnym razie będziesz musiał przeprowadzić ręczną konfigurację.|
 |Konfiguracja kont Exchange|Nadaj nazwy Twoich adresom e-mail Exchange i dodaj informacje uzupełniające.|
-|Migracja danych (jeśli dotyczy)|Jeśli przeprowadzasz migrację Twoich adresów e-mail z jednego z rozwiązań OVH (MX Plan lub E-mail Pro), możesz ją zainicjować za pomocą asystenta. Jeśli używasz programu pocztowego, będziesz musiał również od początku skonfigurować Twoje konta. |
+|Migracja danych (jeśli dotyczy)|Jeśli przeprowadzasz migrację Twoich adresów e-mail z jednego z rozwiązań OVHcloud (MX Plan lub E-mail Pro), możesz ją zainicjować za pomocą asystenta. Jeśli używasz programu pocztowego, będziesz musiał również od początku skonfigurować Twoje konta. |
 
 ### Etap 3: konfiguracja dodatkowej domeny (opcjonalnie)
 
@@ -64,7 +64,7 @@ Więcej informacji znajdziesz w dokumentacji [Dodawanie domeny do usługi Exchan
 
 > [!primary]
 >
-> Jeśli któraś z domen wymaga wykonania jakiegoś szczególnego działania związanego z jej konfiguracją, w kolumnie `Diagnostyka`{.action} w tabeli zobaczysz czerwony przycisk. Po kliknięciu w czerwony przycisk wyświetlą się modyfikacje, jakie należy przeprowadzić. Jeśli domena nie korzysta z serwerów DNS OVH, powinieneś przeprowadzić modyfikacje w interfejsie do konfiguracji Twojej domeny. 
+> Jeśli któraś z domen wymaga wykonania jakiegoś szczególnego działania związanego z jej konfiguracją, w kolumnie `Diagnostyka`{.action} w tabeli zobaczysz czerwony przycisk. Po kliknięciu w czerwony przycisk wyświetlą się modyfikacje, jakie należy przeprowadzić. Jeśli domena nie korzysta z serwerów DNS OVHcloud, powinieneś przeprowadzić modyfikacje w interfejsie do konfiguracji Twojej domeny. 
 >
 
 ![Dodanie domeny](images/first-steps-hosted-exchange-add-domain.png){.external}
@@ -79,18 +79,18 @@ Konta oczekujące na konfigurację wyświetlane są w tabeli w postaci “*@conf
 
 > [!primary]
 >
-> Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od liczby kont, które posiadasz. Możesz zamówić nowe konta, klikając w przycisk `Zamówienie kont`{.action}.
+> Powtórz ten krok w razie potrzeby, zależnie od liczby posiadanych kont. Możesz zamówić nowe za pomocą przycisku `Akcje`{.action} i następnie kliknij przycisk `Zamów konta`{.action}.
 >
 
 ![Dodanie konta](images/first-steps-hosted-exchange-add-account.png){.external}
 
 ### Etap 5: korzystanie z kont e-mail
 
-Po skonfigurowaniu Twoich kont możesz zacząć ich używać. OVH udostępnia w tym celu interfejs webmail **Outlook Web Application** (OWA). Znajdziesz go pod linkiem [https://www.ovh.pl/mail/](https://www.ovh.com/fr/mail/){.external}. Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z naszej dokumentacji dostępnej pod linkiem: [https://docs.ovh.com/pl/microsoft-collaborative-solutions/](https://docs.ovh.com/pl/microsoft-collaborative-solutions/){.external}.
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. OVHcloud udostępnia w tym celu interfejs webmail **Outlook Web Application** (OWA). Znajdziesz go pod linkiem [https://www.ovh.pl/mail/](https://www.ovh.com/fr/mail/){.external}. Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z naszej dokumentacji dostępnej pod linkiem: [https://docs.ovh.com/pl/microsoft-collaborative-solutions/](https://docs.ovh.com/pl/microsoft-collaborative-solutions/){.external}.
 
 Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym, skorzystaj z naszej dokumentacji dostępnej tutaj: [https://docs.ovh.com/pl/microsoft-collaborative-solutions/](https://docs.ovh.com/pl/microsoft-collaborative-solutions/){.external}. Abyś mógł korzystać z konta Exchange w sposób optymalny, upewnij się, czy jest ono kompatybilne z Twoim programem pocztowym.
 
-OVH oferuje licencje Outlook w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a ponadto licencje Office 365 na stronie [https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/){.external}. Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
+OVHcloud oferuje licencje Outlook w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a ponadto licencje Office 365 na stronie [https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/){.external}. Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
 
 > [!primary]
 >
