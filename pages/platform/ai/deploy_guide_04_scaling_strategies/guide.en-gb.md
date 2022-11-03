@@ -89,7 +89,7 @@ First, we choose an `Autoscaling`.
 
 Then, we set the trigger threshold to `75%` of **CPU**.
 
-In this case, the app will be scaled when the average CPU usage across all its replicas is above **> 1.5 CPU (2*0.75)**, and it will be scaled when the average CPU usage falls below **< 1.5**.
+In this case, the app will be scaled up when the average CPU usage across all its replicas is above **> 1.5 CPU (2*0.75)**, and it will be scaled down when the average CPU usage falls below **< 1.5**.
 
 ### Example 2
 
