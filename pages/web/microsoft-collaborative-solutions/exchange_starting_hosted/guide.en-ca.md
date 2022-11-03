@@ -78,7 +78,7 @@ The accounts that have not yet been configured configuration will appear in the 
 
 > [!primary]
 >
-> Repeat this step as necessary according to the number of accounts you have. You can order new ones using the `Actions`{.action} button and next click `Order accounts`{.action} .
+> Repeat this step as necessary according to the number of accounts you have. You can order new ones by clicking on the `Actions`{.action} button and then `Order accounts`{.action}.
 >
 
 ![Add an account](images/first-steps-hosted-exchange-add-account.png){.external}
