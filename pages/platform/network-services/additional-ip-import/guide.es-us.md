@@ -65,7 +65,7 @@ Haga clic en `Asociar`{.action}. A continuación, se volverá a cargar la págin
 
 Ahora, su IP de conmutación está asociada a su instancia.
 
-El siguiente paso será configurar la IP en su sistema operativo. Puede consultar nuestra guía a continuación: [Configurar una Additional IP](https://docs.ovh.com/us/es/public-cloud/publiccloud/network-services/configure-additional-ip/).
+El siguiente paso será configurar la IP en su sistema operativo. Puede consultar nuestra guía a continuación: [Configurar una Additional IP](https://docs.ovh.com/us/es/publiccloud/network-services/configure-additional-ip/).
 
 ## Más información
 

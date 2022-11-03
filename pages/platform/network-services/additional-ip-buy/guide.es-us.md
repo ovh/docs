@@ -34,7 +34,7 @@ Estas direcciones Additional IP solo pueden migrar a las instancias de un mismo 
 ## Requisitos
 
 - Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
-- Disponer al menos de una instancia. A tal efecto, consulte [la guía para crear una instancia desde el área de cliente](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
+- Disponer al menos de una instancia. A tal efecto, consulte [la guía para crear una instancia desde el área de cliente](https://docs.ovh.com/us/es/public-cloud/crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
 
 ## Procedimiento
 
@@ -89,6 +89,6 @@ Para más información, consulte nuestra guía sobre [gestión de pedidos de OVH
 
 ## Más información
 
-[Configurar una Additional IP](https://docs.ovh.com/us/es/public-cloud/publiccloud/network-services/configure-additional-ip/)
+[Configurar una Additional IP](https://docs.ovh.com/us/es/publiccloud/network-services/configure-additional-ip/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
