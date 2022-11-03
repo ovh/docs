@@ -32,7 +32,7 @@ Para compreender como funciona esta proteção, aconselhamos que consulte a segu
 - **se o nome de domínio utilizar os servidores DNS da OVHcloud**: a ativação é realizada diretamente na Área de Cliente;
 
 - **se o seu domínio não utilizar os servidores DNS da OVHcloud**, será necessário entrar em contacto com o fornecedor responsável pela gestão da configuração dos DNS e pedir-lhe todos os parâmetros. De seguida, aceda à secção `Cloud Web`{.action}. Clique em `Domínios`{.action} e escolha o domínio em questão na lista.
-Clique no separador `DS records`{.action} e, de seguida, no botão Editar à direita, clique no botão `+`{.action}.
+Clique no separador `DS records`{.action} e, de seguida, no botão `Editar`{.action} à direita, clique no botão `+`{.action}.
 Pode agora preencher os 4 campos, "Key tag", "Flag", "Algorithm", "Public key (encoded in base64)", com os dados fornecidos pelo seu fornecedor atual.
 
 > [!primary]

@@ -10,7 +10,7 @@ order: 6
 
 ## Objective
 
-With OVHcloud email services, you can create Email Pro accounts. In order to secure this environment, you can manage the global security settings of your email accounts.
+With OVHcloud email services, you can create professional email accounts. In order to secure this environment, you can manage the global security settings of your email accounts.
 
 **Find out how to manage the security policy of your email service.**
 

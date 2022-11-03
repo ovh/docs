@@ -43,8 +43,8 @@ Les informations liées à votre espace de stockage apparaissent alors, ainsi qu
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
 
-Si vous souhaitez créer un nouvel utilisateur FTP/SSH depuis la même page, cliquez sur le bouton "Créer un utilisateur" situé à droite.
-Choisissez "Utilisateur" et "Dossier racine", puis cliquez sur "Suivant", choisissez un mot de passe pour ce nouveau compte et cliquez sur "Suivant" et cliquez sur "Confirmer".
+Si vous souhaitez créer un nouvel utilisateur FTP/SSH depuis la même page, cliquez sur le bouton `Créer un utilisateur`{.action} situé à droite.
+Choisissez `Utilisateur`{.action} et `Dossier racine`{.action}, puis cliquez sur `Suivant`{.action}, choisissez un mot de passe pour ce nouveau compte et cliquez sur `Suivant`{.action} et cliquez sur `Confirmer`{.action}.
 
 Grâce à ces informations, vous devriez pouvoir retrouver les éléments requis pour vous connecter à l'espace de stockage. Si besoin, aidez-vous du tableau ci-dessous si vous n'arrivez pas à les identifier. À noter que certaines informations peuvent ne pas apparaître selon l'offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} que vous possédez.
 

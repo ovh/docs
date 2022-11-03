@@ -80,7 +80,7 @@ Les comptes en attente de configuration s'affichent dans le tableau sous la form
 
 > [!primary]
 >
-> Répétez cette étape autant de fois que nécessaire selon le nombre de comptes que vous possédez. Vous pouvez en commander de nouveaux grâce au bouton `Actions`{.action} et cliquez ensuite sur `Commander des comptes`{.action}.
+> Répétez cette étape autant de fois que nécessaire selon le nombre de comptes que vous possédez. Vous pouvez en commander de nouveaux grâce au bouton `Actions`{.action} puis en cliquant sur `Commander des comptes`{.action}.
 >
 
 ![Ajout d'un compte](images/first-steps-hosted-exchange-add-account.png){.external}

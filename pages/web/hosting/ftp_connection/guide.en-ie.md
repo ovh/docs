@@ -1,7 +1,7 @@
 ---
 title: 'Logging in to your Web Hosting plan’s storage space'
 slug: log-in-to-storage-ftp-web-hosting
-excerpt: 'Find out how to log in to your OVH Web Hosting plan’s storage space'
+excerpt: 'Find out how to log in to your OVHcloud Web Hosting plan’s storage space'
 section: 'FTP and SSH'
 order: 02
 ---
@@ -10,13 +10,13 @@ order: 02
 
 ## Objective
 
-OVH Web Hosting plans provide you with access to a storage space you can use to put your website and application files online. You can access this space using an FTP or SSH user account and password.
+OVHcloud Web Hosting plans provide you with access to a storage space you can use to put your website and application files online. You can access this space using an FTP or SSH user account and password.
 
-**Find out how to log in to your OVH Web Hosting plan’s storage space.**
+**Find out how to log in to your OVHcloud Web Hosting plan’s storage space.**
 
 ## Requirements
 
-- an [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} (to activate multiple FTP users you need at least a Professional or Performance hosting).
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} (to activate multiple FTP users, you need at least a Professional or Performance hosting).
 - access to the `Web Cloud`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
@@ -43,10 +43,10 @@ The information about your storage space will appear, along with a table listing
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
 
-If you want to create a new FTP/SSH user from the same page click `Create User`{.action} button on the right.
-Choose the `User`{.action} and `Root folder`{.action}, then click `Next`{.action}, choose a password for this new account and click `Next`{.action} and click `Confirm`{.action}.
+If you want to create a new FTP/SSH user from the same page, click the `Create User`{.action} button on the right.
+Choose the `User`{.action} and `Root folder`{.action}, then click `Next`{.action}. Choose a password for this new account and click `Next`{.action} then click `Confirm`{.action}.
 
-With this information, you should be able to find the items you need to log in to the storage space. If you are having trouble identifying this information, you can use the table below. Please note that some information may not appear, depending on which [OVH Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} you are using.
+With this information, you should be able to find the items you need to log in to the storage space. If you are having trouble identifying this information, you can use the table below. Please note that some information may not appear, depending on which [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} you are using.
 
 - **FTP and SFTP** server: This is the server address that allows you to access your storage space using FTP software via FTP or SFTP protocol.
 

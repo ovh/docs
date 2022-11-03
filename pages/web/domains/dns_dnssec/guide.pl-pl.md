@@ -33,7 +33,7 @@ Aktywacja DNSSEC jest możliwa w dwóch przypadkach:
 - **Twoja domena korzysta z serwerów DNS OVHcloud**: aktywacji dokonujesz w prosty sposób w Panelu klienta;
 
 - **jeśli nazwa domeny nie korzysta z serwerów DNS OVHcloud**, należy skontaktować się z dostawcą usług zarządzającym konfiguracją DNS i poprosić go o wszystkie parametry. Następnie przejdź do sekcji `Web Cloud`{.action}. Kliknij przycisk `Domeny`{.action}, a następnie wybierz nazwę domeny z listy.
-Kliknij zakładkę `rekordy DS`{.action}, następnie kliknij przycisk Edytuj po prawej stronie, a następnie kliknij przycisk `+`{.action}.
+Kliknij zakładkę `rekordy DS`{.action}, następnie kliknij przycisk `Edytuj`{.action} po prawej stronie, a następnie kliknij przycisk `+`{.action}.
 Teraz możesz wypełnić 4 pól "Key tag", "Flag", "Algorithm","Public key (encoded in base64)" danymi dostarczonymi przez bieżącego usługodawcę.
 
 > [!primary]
