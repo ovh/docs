@@ -147,7 +147,7 @@ Dans la fenêtre **Select a template**, choisissez le troisième modèle en part
 
 ![02 Add Bootstrapvm 02](images/02-add-bootstrap-vm-from-ova02.png){.thumbnail}
 
-Cliquez sur l'icône `Copier`{.action} à droite pour copier dans le presse-papier l'URL qui doit se terminer par **Ubuntu-22.04_TKGm-1.6_with_x.ovh** . Cliquez ensuite sur `Close`{.action}.
+Cliquez sur l'icône `Copier`{.action} à droite pour copier dans le presse-papier l'URL qui doit se terminer par **Ubuntu-22.04_TKGm-1.6_with_x.ovf** . Cliquez ensuite sur `Close`{.action}.
 
 ![02 Add Bootstrapvm 03](images/02-add-bootstrap-vm-from-ova03.png){.thumbnail}
 
