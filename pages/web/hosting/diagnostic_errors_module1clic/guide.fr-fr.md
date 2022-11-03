@@ -194,6 +194,10 @@ Cette anomalie peut avoir plusieurs causes :
 
 - Votre nom de domaine est toujours relié à votre ancien hébergement. Modifiez dans ce cas votre [Zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) ou vos [serveurs DNS](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns) ou contactez votre ancien hébergeur à ce sujet.
 
+### Le mot de passe « Administrateur » d'accès au « back-office » de votre module en 1 clic ne fonctionne plus
+
+Si le mot de passe d'accès à l’interface d’administration de votre CMS ne fonctionne plus avec votre mot de passe actuel, consultez le paragraphe « Modifier le mot de passe de votre module » présent dans notre documentation sur la [gestion de votre module en 1 clic](https://docs.ovh.com/fr/hosting/1-click-module-management/).
+
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
 [Installer son site avec les modules en 1 clic](../modules-en-1-clic/)
