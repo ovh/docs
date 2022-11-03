@@ -17,7 +17,7 @@ order: 04
 
 ## Objective
 
-This guide covers the use of the different scaling strategies for AI Deploy. The aim is to understand the difference between **static scaling** and **autoscaling** to be able to choose the best solution depending on the use case and type of deployment.
+This guide covers the use of the different scaling strategies for AI Deploy. The objective is to explain the difference between **static scaling** and **autoscaling** so that you can choose the best solution depending on the use case and type of deployment.
 
 ## Requirements
 
