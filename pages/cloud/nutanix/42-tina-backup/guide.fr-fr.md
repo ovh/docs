@@ -9,7 +9,7 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 13/10/2022**
+**Dernière mise à jour le 03/11/2022**
 
 ## Objectif
 
@@ -35,7 +35,7 @@ category_l2: Backups
 
 ## En pratique
 
-- [Etape 1 Présentation de la solution](#presentation) 
+- [Etape 1 Présentation](#presentation) 
 - [Etape 2 Installation et configuration des machines virtuelles](#installation)
     - [Etape 2.1 Création de la machine virtuelle d'administration Tina](#createvmtina)
     - [Etape 2.2 Création des machines virtuelles pour les serveur de déduplications](#createvmdedup)
