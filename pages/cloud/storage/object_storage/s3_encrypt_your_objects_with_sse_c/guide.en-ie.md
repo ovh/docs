@@ -39,7 +39,7 @@ When you upload an object, S3 Object Storage uses the encryption key you provide
 - A user with the required access rights on the bucket
 - Have installed and configured aws-cli
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/ie/en/storage/s3/getting-started-with-s3/) guide.
+See our [Getting started with S3 Object Storage](https://docs.ovh.com/ie/en/storage/object-storage/s3/getting-started-with-object-storage/) guide.
 
 ## Instructions
 

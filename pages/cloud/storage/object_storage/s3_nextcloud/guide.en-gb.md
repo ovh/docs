@@ -27,7 +27,7 @@ Nextcloud is a suite of client-server software for creating and using file hosti
 - A user with the required access rights on the bucket
 - Your S3 credentials (access_key and secret_access_key)
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3/) guide.
+See our [Getting started with S3 Object Storage](https://docs.ovh.com/gb/en/storage/object-storage/s3/getting-started-with-object-storage/) guide.
 
 ## Instructions
 

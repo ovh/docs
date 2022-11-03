@@ -27,7 +27,7 @@ S3cmd is a free command line tool and client for managing data in storage spaces
 - A user with the required access rights on the bucket
 - Your S3 credentials (access_key and secret_access_key).
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/ie/en/storage/s3/getting-started-with-s3/) guide.
+See our [Getting started with S3 Object Storage](https://docs.ovh.com/ie/en/storage/object-storage/s3/getting-started-with-object-storage/) guide.
 
 ## Instructions
 

@@ -51,7 +51,7 @@ Legal hold provides the same protection as a retention period, but it has no exp
 - Your S3 credentials (access_key and secret_access_key)
 - Aws cli installed and configured
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/pl/storage/s3/getting-started-with-s3/) guide for more information.
+See our [Getting started with S3 Object Storage](https://docs.ovh.com/pl/storage/object-storage/s3/getting-started-with-object-storage/) guide for more information.
 
 ## Instructions
 
@@ -59,7 +59,7 @@ See our [Getting started with S3 Object Storage](https://docs.ovh.com/pl/storage
 >
 > All the following examples will use aws cli.
 >
-> To learn more about aws cli, please read this [guide](https://docs.ovh.com/pl/storage/s3/getting-started-with-s3/).
+> To learn more about aws cli, please read this [guide](https://docs.ovh.com/pl/storage/object-storage/s3/getting-started-with-object-storage/).
 >
 
 ### Permissions

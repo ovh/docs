@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - FileZilla mit Ihrem OVHcloud Hosting nutzen"
-slug: webhosting_hilfe_zur_verwendung_von_FileZilla
+slug: webhosting_hilfe_zur_verwendung_von_filezilla
 excerpt: "Verwendung der FileZilla Software mit Ihrem Webhosting"
 section: FTP und SSH
 order: 01
