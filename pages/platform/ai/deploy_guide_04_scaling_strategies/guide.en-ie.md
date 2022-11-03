@@ -42,11 +42,11 @@ The minimum number of replicas is **1** and the maximum is **10**.
 > It is recommended to deploy on a **minimum of 2 replicas** to have high availability!
 >
 
-**When using static scaling?**
+**When to choose static scaling?**
 
 - Static scaling can be used if you want to have fixed costs.
 
-- This scaling strategy is also useful when your consumption or inference load is fixed.
+- This scaling strategy is also useful when your consumption or inference load are fixed.
 
 ### Autoscaling
 
@@ -64,7 +64,7 @@ It is also possible to choose the metric to be monitored. This will act as a tri
 
 The threshold for the percentage of average use can also be chosen. It is an integer between 1 and 100%.
 
-The threshold of the average usage percentage that will trigger the scaling (up or down) of the app replicas.
+The threshold of the average usage percentage will trigger the scaling (up or down) of the app replicas.
 
 > [!primary]
 >
@@ -73,9 +73,9 @@ The threshold of the average usage percentage that will trigger the scaling (up 
 > Conversely, it will remove instances when this average resource utilisation falls below the threshold.
 >
 
-**When using autoscaling?**
+**When to choose autoscaling?**
 
-- You can use autoscaling when you have irregular or sawtooth inference loads.
+- You can use autoscaling if you have irregular or sawtooth inference loads.
 
 ## Scaling example
 
@@ -89,7 +89,7 @@ First, we choose an `Autoscaling`.
 
 Then, we set the trigger threshold to `75%` of **CPU**.
 
-In this case, the app will be scaled when the average CPU usage across all its replicas is above **> 1.5 CPU (2*0.75)**, and it will be scaled when the average CPU usage falls below **< 1.5**.
+In this case, the app will be scaled up when the average CPU usage across all its replicas is above **> 1.5 CPU (2*0.75)**, and it will be scaled down when the average CPU usage falls below **< 1.5**.
 
 ### Example 2
 
