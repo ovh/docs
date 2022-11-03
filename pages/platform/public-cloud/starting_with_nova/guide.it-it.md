@@ -1,190 +1,201 @@
 ---
-title: Come utilizzare l’API Nova
-excerpt: Come utilizzare l'API Nova
-slug: come_utilizzare_lapi_nova
+title: Come utilizzare l’API OpenStack
+excerpt: Come utilizzare l'API OpenStack
+slug: Come gestire le tue istanze con il client Python OpenStack
 legacy_guide_number: g1935
 section: Gestione via OpenStack
 ---
 
+**Ultimo aggiornamento: 03/11/2022**
 
-## 
+## Obiettivo
+
 Se vuoi automatizzare le tue operazioni sul Public Cloud, puoi utilizzare le API di OpenStack per creare diversi script.
-Il client Nova di OpenStack ti consente di gestire le tue istanze e i tuoi dischi.
+
+> [!primary]
+>
+> Il client Nova era stato utilizzato in precedenza per gestire le istanze e i dischi. Questo cliente ha subito una riduzione di valore e gli ordini sono stati integrati nel client Python OpenStack.
+>
 
 Ad esempio, puoi craere istanze aggiuntive per evitare un sovraccarico della tua infrastruttura quando i tuoi sistemi di monitoring rilevano picchi di carico, oppure pianificare la creazione di Snapshot.
 
-Questa guida ti mostra come utilizzare le API OpenStack per gestire le tue istanze con il client Python Nova.
+Questa guida ti mostra come utilizzare le API OpenStack per gestire le tue istanze con il client Python OpenStack.
 
 
-## Requisiti necessari
+## Prerequisiti
 
-- [Prepara il tuo ambiente di sviluppo per utilizzare l'API OpenStack]({legacy}1851)
-- [Imposta le variabili d'ambiente OpenStack]({legacy}1852)
-
-
+- [Preparare l'ambiente di sviluppo per utilizzare l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
+- [Impostare le variabili d'ambiente OpenStack](../charger-les-variables-denvironnement-openstack/)
 
 
-## Documentazione Nova
-Per visualizzare la lista dei comandi disponibili, consulta la documentazione del client:
+## Procedura
 
+Per ottenere la lista dei comandi disponibili, consulta la documentazione del client:
 
-```
-admin@server-1:~$ nova help
+```bash
+admin@server-1:~$ openstack command list
 ```
 
+Puoi filtrare i comandi visualizzati indicando il gruppo: 
 
-Per visualizzare le informazioni relative a un comando specifico, aggiungi "help" all'inizio:
-
-
-```
-admin@server-1:~$ nova help flavor-list
-
-usage: nova flavor-list [--extra-specs] [--all]
-
-Print a list of available 'flavors' (sizes of servers).
-
-Optional arguments:
---extra-specs Get extra-specs of each flavor.
---all Display all flavors (Admin only).
+```bash
+admin@server-1:~$ openstack command list —group compute
 ```
 
+Per maggiori informazioni su un comando, aggiungi `help` davanti al comando:
 
-La documentazione del client Nova è disponibile anche sul [sito OpenStack](http://docs.openstack.org/cli-reference/content/novaclient_commands.html)
-
-
-## Aggiungi una chiave SSH pubblica
-Prima di tutto, aggiungi una chiave SSH pubblica per accedere alle istanze.
-
-
-- Visualizza la lista dei comandi associati alla chiave SSH:
-
-
-```
-admin@server-1:~$ nova help | grep keypair
-
-keypair-add Create a new key pair for use with servers.
-keypair-delete Delete keypair given by its name.
-keypair-list Print a list of keypairs for a user
-keypair-show Show details about the given keypair.
+```bash
+admin@server-1:~$ openstack help flavor list 
+usage: openstack flavor list [-h] [-f {csv,json,table,value,yaml}] [-c COLUMN]
+                             [--quote {all,minimal,none,nonnumeric}] [--noindent]
+                             [--max-width <integer>] [--fit-width] [--print-empty]
+                             [--sort-column SORT_COLUMN]
+                             [--sort-ascending | --sort-descending] [--public | --private | --all]
+                             [--min-disk <min-disk>] [--min-ram <min-ram>] [--long]
+                             [--marker <flavor-id>] [--limit <num-flavors>]
+List flavors ...
 ```
 
+> [!success]
+>
+> Consulta la documentazione del cliente direttamente sul [sito OpenStack](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
+> 
+
+
+### Operazioni base
+
+#### Aggiunta di una chiave SSH pubblica
+
+Per prima cosa, è necessario aggiungere una chiave SSH pubblica che permetterà di connettersi alle istanze.
+
+- Lista gli ordini associati alle chiavi SSH:
+
+```bash
+admin@server-1:~$ openstack help | grep keypair         
+  keypair create  Create new public or private key for server ssh access
+  keypair delete  Delete public or private key(s)
+  keypair list    List key fingerprints
+  keypair show    Display key details
+```
 
 - Aggiungi la chiave SSH pubblica:
 
-
-```
-admin@server-1:~$ nova keypair-add --pub-key .ssh/id_rsa.pub SSHKEY
-```
-
-
-- Visualizza la lista delle chiavi SSH disponibili:
-
-
-```
-admin@server-1:~$ nova keypair-list
-
-+--------+-------------------------------------------------+
-| Name | Fingerprint |
-+--------+-------------------------------------------------+
-| SSHKEY | 0e:93:fb:90:82:xx:xx:xx:xx:xx:xx:6e:22:42:c3:ea |
-+--------+-------------------------------------------------+
+```bash
+admin@server-1:~$ openstack keypair create --public-key ~/.ssh/id_rsa.pub SSHKEY
 ```
 
+- Lista le chiavi SSH disponibili:
 
-
-
-
-## Visualizza la lista dei modelli di istanze
-Recupera l'ID del modello che vuoi utilizzare eseguendo questo comando:
-
-
-```
-admin@server-1:~$ nova flavor-list
-+--------------------------------------+------------+-----------+------+-----------+---------+-------+-------------+-----------+
-| ID | Name | Memory_MB | Disk | Ephemeral | Swap_MB | VCPUs | RXTX_Factor | Is_Public |
-+--------------------------------------+------------+-----------+------+-----------+---------+-------+-------------+-----------+
-| 0c36bb1d-bd1e-4294-ac75-60fd727054c8 | win-eg-15 | 15000 | 400 | 0 | | 4 | 1.0 | True |
-| 0e2b8841-d764-49b4-b2ac-24c8df2c6806 | sp-30 | 30000 | 200 | 0 | | 2 | 1.0 | True |
-| 169e7020-0436-4e8c-b2c8-213a57a044b5 | win-sp-120 | 120000 | 800 | 0 | | 8 | 1.0 | True |
-| 18811d09-053e-4ad0-b297-3c11ceefd136 | sp-60 | 60000 | 400 | 0 | | 4 | 1.0 | True |
-| 1e2c13fc-4ba9-4773-a13e-75ce96fb4e96 | eg-120 | 120000 | 1600 | 0 | | 32 | 1.0 | True |
-| 1e5a7cf5-d58c-4633-8069-5aba49b00be1 | win-sp-240 | 240000 | 1600 | 0 | | 16 | 1.0 | True |
-| 22096e9d-5150-4f54-bb8d-6c8b243a28bb | win-sp-60 | 60000 | 400 | 0 | | 4 | 1.0 | True |
-| 23ec7924-483c-4414-9aaf-bf03575f0bfe | eg-15 | 15000 | 400 | 0 | | 4 | 1.0 | True |
-| 24c1f706-3278-4ca7-a773-7df7f999cf14 | win-eg-60 | 60000 | 1600 | 0 | | 16 | 1.0 | True |
-| 30b43ca1-131f-4b0d-8087-e03bc99f7ec6 | sp-120 | 120000 | 800 | 0 | | 8 | 1.0 | True |
-| 3502c448-8c96-4062-bf78-c5d2ac962e6d | win-eg-120 | 120000 | 1600 | 0 | | 32 | 1.0 | True |
-| 3a9711d2-a4fb-4d2f-a3cd-1972fd53eb5e | vps-ssd-3 | 8000 | 40 | 0 | | 2 | 1.0 | True |
-| 6763bd1b-5d23-4c87-aca7-d46e35d343a4 | win-eg-7 | 7000 | 200 | 0 | | 2 | 1.0 | True |
-| 7eacbe7c-5033-4123-8eec-d61bf27359f9 | win-sp-30 | 30000 | 200 | 0 | | 2 | 1.0 | True |
-| 8f08b006-a68b-4eed-80cf-36f8212f8d73 | win-eg-30 | 30000 | 800 | 0 | | 8 | 1.0 | True |
-| 98c1e679-5f2c-4069-b4da-4a4f7179b758 | vps-ssd-1 | 2000 | 10 | 0 | | 1 | 1.0 | True |
-| a42a6051-16c7-4563-9cca-9c1abf36e460 | sp-240 | 240000 | 1600 | 0 | | 16 | 1.0 | True |
-| b41c89be-7b7d-4ecc-9cd8-bea145bbbd76 | eg-7 | 7000 | 200 | 0 | | 2 | 1.0 | True |
-| b62d1735-774d-4983-9ed6-283c921d29d7 | eg-30 | 30000 | 800 | 0 | | 8 | 1.0 | True |
-| c3d1d22a-03b3-4fa4-bcc4-1dff4e2b2d32 | vps-ssd-2 | 4000 | 20 | 0 | | 1 | 1.0 | True |
-| ccb922b6-04ad-422d-a8bc-7aff1eae6954 | eg-60 | 60000 | 1600 | 0 | | 16 | 1.0 | True |
-+--------------------------------------+------------+-----------+------+-----------+---------+-------+-------------+-----------+
+```bash
+admin@server-1:~$ openstack keypair list
++---------------+-------------------------------------------------+------+
+| Name          | Fingerprint                                     | Type |
++---------------+-------------------------------------------------+------+
+| SSHKEY        | 5c:fd:9d:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:3a | ssh  |
++---------------+-------------------------------------------------+------+
 ```
 
+#### Lista i modelli di istanze
 
+A questo punto, recupera l'ID del modello che vuoi utilizzare:
 
-
-## Visualizza la lista delle immagini disponibili
-Per recuperare l'ID dell'immagine che verrà utilizzata per la tua istanza, esegui questo comando:
-
-[code]admin@server-1:~$ glance image-list
-+--------------------------------------+------------------------+--------+--------+
-|ID|Name|Status|Server|
-
-+--------------------------------------+------------------------+--------+--------+
-|c17f13b5-587f-4304-b550-eb939737289a|Centos 7|ACTIVE||
-|73958794-ecf6-4e68-ab7f-1506eadac05b|Debian 7|ACTIVE||
-|bdcb5042-3548-40d0-b06f-79551d3b4377|Debian 8|ACTIVE||
-|7250cc02-ccc1-4a46-8361-a3d6d9113177|Fedora 19|ACTIVE||
-|57b9722a-e6e8-4a55-8146-3e36a477eb78|Fedora 20|ACTIVE||
-|3bda2a66-5c24-4b1d-b850-83333b580674|Ubuntu 12.04|ACTIVE||
-|9bfac38c-688f-4b63-bf3b-69155463c0e7|Ubuntu 14.04|ACTIVE||
-|6a123897-a5bb-46cd-8f5d-ecf9ab9877f2|Windows-Server-2012-r2|ACTIVE||
-
-+--------------------------------------+------------------------+--------+--------+
-
-
-## Crea un'istanza
-Crea l'istanza utilizzando i dati recuperati:
-
-
-```
-admin@server-1:~$ nova boot --key_name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image bdcb5042-3548-40d0-b06f-79551d3b4377 Instance1
+```bash
+admin@server-1:~$ openstack flavor list
++--------------------------------------+-----------------+--------+------+-----------+-------+-----------+
+| ID                                   | Name            |    RAM | Disk | Ephemeral | VCPUs | Is Public |
++--------------------------------------+-----------------+--------+------+-----------+-------+-----------+
+| 0062dad0-f93c-4d7d-bde7-6add4ad6baaa | win-b2-15-flex  |  15000 |   50 |         0 |     4 | True      |
+| 022f8ac5-b6a7-4365-9db8-c69775d67a2d | t2-180          | 180000 |   50 |         0 |    60 | True      |
+| 07124b62-dd6d-4bf2-80d7-d9ea3c923cf3 | i1-180          | 180000 |   50 |         0 |    32 | True      |
+| 0cb50da2-cd4d-4a14-8a22-bbc59d94c814 | c2-120-flex     | 120000 |   50 |         0 |    32 | True      |
+| 0d338e52-cfba-4e32-914e-c2ea19d2a9df | d2-4            |   4000 |   50 |         0 |     2 | True      |
+| 0dbcff05-2da0-40a6-87dc-96a1e98d9ffc | b2-30           |  30000 |  200 |         0 |     8 | True      |
+| 11530c24-bc02-48c3-b272-802791795176 | i1-45           |  45000 |   50 |         0 |     8 | True      |
+| 11fc4ed3-5198-4043-b093-063787a144e1 | c2-7            |   7000 |   50 |         0 |     2 | True      |
+| 13d9146d-f519-4f8b-b87c-245d76bd21b0 | b2-120-flex     | 120000 |   50 |         0 |    32 | True      |
+| ...                                  | ...             | ...    | ..   | ...       |       | ...       |
++--------------------------------------+-----------------+--------+------+-----------+-------+-----------+
 ```
 
+#### Lista le immagini disponibili
 
-Dopo qualche minuto, controlla la lista delle istanze esistenti per trovare quella appena creata:
+Infine, è sufficiente recuperare l'ID dell'immagine che verrà utilizzata per l'istanza:
 
-
-```
-admin@server-1:~$ nova list
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
-| ID | Name | Status | Task State | Power State | Networks |
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
-| 81d01a19-b2d5-454d-98d9-bd8992ec2037 | Instance1 | ACTIVE | - | Running | Ext-Net=149.xxx.xxx.192 |
-+--------------------------------------+----------------------------------------+--------+------------+-------------+-------------------------+
-```
-
-
-
-
-## Elimina un'istanza
-Per eliminare un'istanza, utilizza questo comando:
-
-```
-admin@serveur-1:~$ nova delete Instance1
-Request to delete server Instance1 has been accepted.
+```bash
+admin@serveur-1:~$ openstack image list 
++--------------------------------------+-----------------------------------------------+--------+
+| ID                                   | Name                                          | Status |
++--------------------------------------+-----------------------------------------------+--------+
+| 8990fbb-bd7e-4c57-8b19-a162e12c5195 | AlmaLinux 8                                   | active |
+| f1d2e56e-faec-4fd4-8493-dcf4c4201b40 | AlmaLinux 8 - UEFI                            | active |
+| a243240a-ca1f-4a53-a3bd-30c4f96b241f | AlmaLinux 8 - cPanel                          | active |
+| 1be04371-252f-48be-81fb-1cb89ea55778 | AlmaLinux 9                                   | active |
+| df89529f-8b4f-4534-9ddc-0092e30bcc97 | AlmaLinux 9 - UEFI                            | active |
+| 81c5ebbc-04fd-40f8-83aa-9b2bae8769f2 | Centos 7                                      | active |
+| b753f820-37cd-437a-b301-3423caf27637 | Centos 7 - Analytics - Ambari pre-warmed      | active |
+| 81ddd059-41b0-493e-a1e2-a278139b7bbb | Centos 7 - Analytics - Base image             | active |
+| ...                                  | ...                                           | ...    |
++--------------------------------------+-----------------------------------------------+--------+
 ```
 
+#### Crea un'istanza
 
+Con gli elementi recuperati precedentemente, potete creare un'istanza:
 
+```bash
+admin@server-1:~$ openstack server create --key-name SSHKEY --flavor d2-2 --image "Ubuntu 22.04" InstanceTest
++-----------------------------+-----------------------------------------------------+
+| Field                       | Value                                               |
++-----------------------------+-----------------------------------------------------+
+| OS-DCF:diskConfig           | MANUAL                                              |
+| OS-EXT-AZ:availability_zone |                                                     |
+| OS-EXT-STS:power_state      | NOSTATE                                             |
+| OS-EXT-STS:task_state       | scheduling                                          |
+| OS-EXT-STS:vm_state         | building                                            |
+| OS-SRV-USG:launched_at      | None                                                |
+| OS-SRV-USG:terminated_at    | None                                                |
+| accessIPv4                  |                                                     |
+| accessIPv6                  |                                                     |
+| addresses                   |                                                     |
+| adminPass                   | xxxxxxxxxxxx                                        |
+| config_drive                |                                                     |
+| created                     | 2022-10-13T19:05:54Z                                |
+| flavor                      | d2-2 (14c5fa3f-fdad-45c4-9cd1-14dd99c341ee)         |
+| hostId                      |                                                     |
+| id                          | xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx                |
+| image                       | Ubuntu 22.04 (0ea24976-fb6c-46ef-acb5-0cb88b0493aa) |
+| key_name                    | SSHKEY                                              |
+| name                        | InstanceTest                                        |
+| progress                    | 0                                                   |
+| project_id                  | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    |
+| properties                  |                                                     |
+| security_groups             | name='default'                                      |
+| status                      | BUILD                                               |
+| updated                     | 2022-10-13T19:05:55Z                                |
+| user_id                     | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                    |
+| volumes_attached            |                                                     |
++-----------------------------+-----------------------------------------------------+
+```
 
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
+Dopo pochi minuti, puoi verificare la lista delle istanze esistenti per trovare l'istanza appena creata:
 
+```bash
+admin@server-1:~$ openstack server list                                                                 
++--------------------------------------+--------------+--------+-------------------------------------+--------------+--------+
+| ID                                   | Name         | Status | Networks                            | Image        | Flavor |
++--------------------------------------+--------------+--------+-------------------------------------+--------------+--------+
+| xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx | InstanceTest | ACTIVE | Ext-Net=xxxx:xxxx::xxxx, 51.xx.xx.x | Ubuntu 22.04 | d2-2   |
++--------------------------------------+--------------+--------+-------------------------------------+--------------+--------+
+```
+
+#### Elimina un'istanza
+
+Per eliminare un'istanza, esegui questo comando:
+
+```bash
+admin@server-1:~$ openstack server delete InstanceTest
+```
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
