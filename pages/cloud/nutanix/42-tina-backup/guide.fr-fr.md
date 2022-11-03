@@ -35,28 +35,28 @@ category_l2: Backups
 
 ## En pratique
 
-[Etape 1 Présentation de la solution](#presentation)<br /> 
-[Etape 2 Installation et configuration des machines virtuelles](#installation)<br />
-&ensp;&ensp;[Etape 2.1 Création de la machine virtuelle d'administration Tina](#createvmtina)<br />
-&ensp;&ensp;[Etape 2.2 Création des machines virtuelles pour les serveur de déduplications](#createvmdedup)<br />
-&ensp;&ensp;[Etape 2.3 Installation d'ALMALINUX](#almalinuxinstallation)<br />
-&ensp;&ensp;[Etape 2.4 Personnalisation des machines virtuelles](#vmcustomization)<br />
-&ensp;&ensp;[Etape 2.5 Configuration des disques supplémentaires sur les machines de déduplication](#hddconf)<br />
-[Etape 3 Installation et configuration des logiciels Atempo](#atempoinstall)<br />
-&ensp;&ensp;[Etape 3.1 Installation du logiciel de déduplication sur tina-adefr et tina-adecan](#dedupinstall)<br />
-&ensp;&ensp;[Etape 3.2 Configuration des serveurs de déduplications](#dedupconf)<br />
-&ensp;&ensp;[Etape 3.3 Installation du logiciel Tina sur tina-srv](#tinainstall)<br />
-[Etape 4 Mise en place de la réplication entre serveurs de déduplication](#replication)<br />
-[Etape 5 Configuration de Prism Element](#configpe)<br />
-[Etape 6 Configuration du serveur Tina](#configuretina)<br />
-&ensp;&ensp;[Etape 6.1 Ajout d'un paramètre d'optimisation dans la configuration](#addoptim)<br />
-&ensp;&ensp;[Etape 6.2 Ajout de la destination de sauvegarde](#addrepo)<br />
-&ensp;&ensp;[Etape 6.3 Ajout du cluster Nutanix en tant que source de sauvegarde](#nutanixconf)<br />
-&ensp;&ensp;[Etape 6.4 Création d'un nouveau planning de sauvegarde](#scheduleconf)<br />
-&ensp;&ensp;[Etape 6.5 Configuration de l'agent pour automatiser la sauvegarde](#agentconfiguration)<br />
-&ensp;&ensp;[Etape 6.6 Test du travail de sauvegarde](#testbackup)<br />
-&ensp;&ensp;[Etape 6.7 Configuration de la sauvegarde du catalogue](#catalogbackup)<br />
-[Etape 7 Restauration](#restore)<br />
+- [Etape 1 Présentation de la solution](#presentation) 
+- [Etape 2 Installation et configuration des machines virtuelles](#installation)
+    - [Etape 2.1 Création de la machine virtuelle d'administration Tina](#createvmtina)
+    - [Etape 2.2 Création des machines virtuelles pour les serveur de déduplications](#createvmdedup)
+    - [Etape 2.3 Installation d'ALMALINUX](#almalinuxinstallation)
+    - [Etape 2.4 Personnalisation des machines virtuelles](#vmcustomization)
+    - [Etape 2.5 Configuration des disques supplémentaires sur les machines de déduplication](#hddconf)
+- [Etape 3 Installation et configuration des logiciels Atempo](#atempoinstall)
+    - [Etape 3.1 Installation du logiciel de déduplication sur tina-adefr et tina-adecan](#dedupinstall)
+    - [Etape 3.2 Configuration des serveurs de déduplications](#dedupconf)
+    - [Etape 3.3 Installation du logiciel Tina sur tina-srv](#tinainstall)
+- [Etape 4 Mise en place de la réplication entre serveurs de déduplication](#replication)
+- [Etape 5 Configuration de Prism Element](#configpe)
+- [Etape 6 Configuration du serveur Tina](#configuretina)
+    - [Etape 6.1 Ajout d'un paramètre d'optimisation dans la configuration](#addoptim)
+    - [Etape 6.2 Ajout de la destination de sauvegarde](#addrepo)
+    - [Etape 6.3 Ajout du cluster Nutanix en tant que source de sauvegarde](#nutanixconf)
+    - [Etape 6.4 Création d'un nouveau planning de sauvegarde](#scheduleconf)
+    - [Etape 6.5 Configuration de l'agent pour automatiser la sauvegarde](#agentconfiguration)
+    - [Etape 6.6 Test du travail de sauvegarde](#testbackup)
+    - [Etape 6.7 Configuration de la sauvegarde du catalogue](#catalogbackup)
+[Etape 7 Restauration](#restore)
 
 
 
