@@ -125,6 +125,7 @@ In case you want to apply OpenStack security groups onto your nodes, it is manda
 >> |---|---|---|---|---|---|
 >> | Ingress | IPv4 | TCP | Any | 10.2.0.0/16 | Allow traffic from pods|
 >> | Ingress | IPv4 | TCP | Any | 10.3.0.0/16 | Allow traffic from services|
+>
 > It allows you to trust the internal traffic between pods and services within the cluster.
 
 For more details, please refer to the [Creating and configuring a security group in Horizon documentation](../../public-cloud/configure-security-group-horizon/).
