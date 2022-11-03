@@ -141,12 +141,12 @@ On peut vérifier le bon fonctionnement de NodeJS en tapant la commande suivante
 node/bin/node -v
 ```
 
+Vous verrez alors la version de NodeJS qui a été téléchargée s'afficher (v12.22.12 pour notre exemple).
+
 Pour simplifier l'utilisation de NodeJS et de `npm`, nous allons l'ajouter dans le _path_ :
 ```sh
 export PATH=~/node/bin:$PATH
 ```
-
-Vous verrez alors la version de NodeJS qui a été téléchargée s'afficher (v12.22.12 pour notre exemple).
 
 #### Installer Sylius
 
@@ -163,19 +163,32 @@ L'ensemble des fichiers sera installé dans le répertoire `sylius` :
 
 #### Rediriger le visiteur en HTTPS
 
-La redirection va se faire en créant un fichier _.htaccess_ à la racine de votre projet :
+Ouvrez le fichier `htaccess` se situant dans le répertoire `public` :
+
 ```sh
-nano .htaccess
+nano public/.htaccess
 ```
 
-Insérez les lignes suivantes, puis sauvegardez :
+Dans le fichier, repérez la balise `<IfModule mod_rewrite.c>` et placez-vous à la fin du bloc, après la directive `RewriteRule ^ %{ENV:BASE}/index.php [L]`. Ajoutez les deux lignes suivantes :
+
 ```sh
-RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://mapage.ovh/$1 [R,L]
+RewriteRule ^(.*)$ https://monsite.ovh/$1 [R,L]
 ```
+
+![Redirection HTTP vers HTTPS](images/cms_headless-manual_installation_sylius%5B7%5D.png)
 
 #### Configurer Sylius - Partie _back end_
+
+##### **Configurer l'application en mode « production »**
+
+Symfony, et donc Sylius, possède plusieurs modes de fonctionnement dont deux majeurs : un mode « développement » et un mode « production ».
+
+Dans le premier cas, des outils de débogage sont mis à disposition du développeur. La contrepartie est une lenteur d'exécution. Nous allons donc modifier ce même fichier ```.env``` en ajustant la directive nous permettant de choisir l'un ou l'autre mode :
+
+```sh
+APP_ENV=prod
+```
 
 ##### **Accès à la base de données**
 
@@ -188,7 +201,7 @@ Cette configuration se fait dans le fichier `.env` situé à la racine de votre 
 Pour éditer ce fichier, nous allons utiliser nano, un éditeur disponible nativement sur votre serveur, en lançant la commande :
 
 ```sh
-nano sylius/.env
+nano .env
 ```
 
 Votre éditeur s'ouvre et vous pouvez découvrir le fichier de configuration installé par défaut :
@@ -212,16 +225,6 @@ DATABASE_URL=mysql://username:password@host:port/bdd
 - host : adresse de l'hôte
 - port : le port qui a été attribué
 - bdd : le nom de votre base de données.
-
-##### **Configurer l'application en mode « production »**
-
-Symfony, et donc Sylius, possède plusieurs modes de fonctionnement dont deux majeurs : un mode « développement » et un mode « production ».
-
-Dans le premier cas, des outils de débogage sont mis à disposition du développeur. La contrepartie est une lenteur d'exécution. Nous allons donc modifier ce même fichier ```.env``` en ajustant la directive nous permettant de choisir l'un ou l'autre mode :
-
-```sh
-APP_ENV=prod
-```
 
 ##### **Installer Sylius**
 
@@ -291,23 +294,6 @@ yarn build
 ```
 
 Votre application est maintenant installé, vous n'avez plus qu'à aller voir le résultat sur le domaine qui pointe vers votre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/).
-
-#### Rediriger HTTP vers HTTPS
-
-Ouvrez le fichier `htaccess` se situant dans le répertoire `public` :
-
-```sh
-nano public/.htaccess
-```
-
-Dans le fichier, repérez la balise `<IfModule mod_rewrite.c>` et placez-vous à la fin du bloc, après la directive `RewriteRule ^ %{ENV:BASE}/index.php [L]`. Ajoutez les deux lignes suivantes :
-
-```sh
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://monsite.ovh/$1 [R,L]
-```
-
-![Redirection HTTP vers HTTPS](images/cms_headless-manual_installation_sylius%5B7%5D.png)
 
 #### Configurer Sylius - API
 
