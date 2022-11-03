@@ -415,7 +415,7 @@ For OVHcloud and the purpose of the tutorial, it makes sense to rely on the `S3`
 OVHcloud provides two types of S3 compatible Object Storage solutions:
 
 - To create Target for the `OVHcloud Object Storage using S3 Swift API`, use [this link](https://docs.ovh.com/asia/en/storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel).
-- To create Target for the `OVHcloud Object Storage using High Performance`, use [this link](https://docs.ovh.com/asia/en/storage/s3/getting-started-with-s3/)
+- To create Target for the `OVHcloud Object Storage using High Performance`, use [this link](https://docs.ovh.com/asia/en/storage/object-storage/s3/getting-started-with-object-storage/)
 
 Create an S3 user in the tab next to Object Storage Container. Now, from `Users and Roles`{.action}, assign the Administrator priviledges to the S3 user.
 
@@ -423,7 +423,7 @@ Next, create an Access Key and Secret Key to access the S3 Object Storage Contai
  
 > [!primary]
 >
-> If you have created a container with High Performance then follow the [Getting started with S3 High Performance](https://docs.ovh.com/asia/en/storage/s3/getting-started-with-s3/#using-the-aws-cli) documentation.
+> If you have created a container with High Performance then follow the [Getting started with S3 High Performance](https://docs.ovh.com/asia/en/storage/object-storage/s3/getting-started-with-object-storage/#using-aws-cli) documentation.
 
 Save the Access key and Secret key used in AWS CLI `~/.aws/credentails` file. It is required to create a target `secret` later.
 Take a note of the S3 endpoint URL `s3.endpoint_url`, and the region name `region` provided in the AWS CLI `~/.aws/config` file. It is required to create a `Target` later.

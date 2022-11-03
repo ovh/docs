@@ -14,7 +14,7 @@ Learn how to optimise the sending of your files to your bucket.
 
 ## Requirements
 
-- [awscli](https://docs.ovh.com/au/en/storage/s3/getting-started-with-s3/) installed
+- [awscli](https://docs.ovh.com/au/en/storage/object-storage/s3/getting-started-with-object-storage/) installed
 
 ## Instructions
 
