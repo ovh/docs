@@ -52,7 +52,8 @@ Get-ChildItem -Path Cert:\LocalMachine\MY | Select-Object -property FriendlyName
 Ici, il s'agit de la valeur à droite du signe deux-points ( : ) :
 
 ```powershell
-> Thumbprint : BB:46:CA:6B:FC:92:4E:96:B4:BB:6E:44:7E:8F:AD:4C:C9:32:AB:AB
+> Thumbprint : XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX
+                
 ```
 
 - Vous pouvez aussi utiliser la commande OpenSSL suivante (depuis une machine Linux/Unix/Mac distante) :
