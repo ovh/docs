@@ -21,7 +21,7 @@ This guide covers the use of the different scaling strategies for AI Deploy. The
 
 ## Requirements
 
-- a **Public cloud** project
+- a **Public Cloud** project
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - start deploying an app and get to **Step 3**: `Resources`
 
@@ -45,7 +45,6 @@ The minimum number of replicas is **1** and the maximum is **10**.
 **When to choose static scaling?**
 
 - Static scaling can be used if you want to have fixed costs.
-
 - This scaling strategy is also useful when your consumption or inference load are fixed.
 
 ### Autoscaling
@@ -87,7 +86,7 @@ In case an app is based on the `AI1-1-CPU` flavor with a resource size of 2 (i.e
 
 First, we choose an `Autoscaling`.
 
-Then, we set the trigger threshold to `75%` of **CPU**.
+Then we set the trigger threshold to `75%` of **CPU**.
 
 In this case, the app will be scaled up when the average CPU usage across all its replicas is above **> 1.5 CPU (2*0.75)**, and it will be scaled down when the average CPU usage falls below **< 1.5**.
 
@@ -95,7 +94,7 @@ In this case, the app will be scaled up when the average CPU usage across all it
 
 In this second example, we choose an `Autoscaling`.
 
-Then, we set the trigger threshold to `60%` of **RAM**.
+Then we set the trigger threshold to `60%` of **RAM**.
 
 In this example, the app will be scaled up when the average RAM usage across all its replicas is above **> 4.8 GB (8*0.60)**, and it will be scaled down when the average RAM usage falls below **< 4.8 GB** again.
 
