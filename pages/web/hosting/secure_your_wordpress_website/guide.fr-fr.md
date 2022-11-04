@@ -10,7 +10,7 @@ order:
 
 ## Objectif
 
-WordPress est, actuellement, le CMS _(Content Management System ou Système de Gestion de Contenu)_ le plus utilisé pour réaliser un site web. De par son exposition (plus de 40% des tous les sites web) et son écosystème de thèmes et d’extensions (gratuits ou payants), WordPress comprend des failles qui peuvent être exploitées avec des conséquences telles que des vols de données, du défacement ou l’arrêt simple du fonctionnement d’un site. Nous allons voir ce qui peut être rapidement en œuvre pour le sécuriser.
+WordPress est le Système de Gestion de Contenu (CMS pour Content Management System) le plus utilisé pour réaliser un site web. Par son exposition (plus de 40% des tous les sites web) et son écosystème de thèmes et d’extensions (gratuits ou payants), WordPress comprend des failles qui peuvent être exploitées avec des conséquences telles que des vols de données, du défacement ou l’arrêt simple du fonctionnement d’un site. Nous allons voir un éventail d’actions qui peuvent être rapidement mises en œuvre pour le sécuriser.
 
 ## Prérequis
 
@@ -20,7 +20,7 @@ Vous devez disposer d'un [hébergement web](https://www.ovhcloud.com/fr/web-host
 
 ### À quel moment appliquer les mises à jour WordPress ?
 
-Un point essentiel est de veiller à **toujours utiliser les dernières versions de WordPress, de vos thèmes et de vos extensions**. Les mises à jour corrigent notamment les failles de sécurité détectées préalablement. Vous pouvez, pour cela, suivre régulièrement les informations communiquées sur la [version française du CMS](https://fr.wordpress.org/news/), mais aussi suivre les communications de l’[ANSSI](https://cert.ssi.gouv.fr/alerte/) et interroger les bases de données recensant les failles de sécurité trouvées sur divers outils tel que [Exploit Database](https://www.exploit-db.com/). 
+Un point essentiel est de veiller à **toujours utiliser les dernières versions de WordPress, de vos thèmes et de vos extensions**. Les mises à jour permettent de corriger les failles de sécurité. Vous pouvez, pour cela, suivre régulièrement les informations communiquées sur la [version française du CMS](https://fr.wordpress.org/news/), les communications de l’[ANSSI](https://cert.ssi.gouv.fr/alerte/) et interroger les bases de données recensant les failles de sécurité trouvées sur divers outils tel que [Exploit Database](https://www.exploit-db.com/). 
 
 En soi la règle à suivre est simple : dès qu’une mise à jour apparaît sur votre WordPress, il faut la faire ! Mieux encore, vous pouvez activer la mise à jour automatique de vos thèmes et extensions !
 
@@ -45,7 +45,7 @@ Il est également important d’utiliser la dernière version de PHP disponible 
 ![Roadmap langage PHP](images/secure_your_wordpress_website_3.png)
 
 A l'heure de la rédaction ces lignes, il vous est recommandé de configurer votre hébergement OVHcloud en :
-- Environnement d’exécution: Stable 64
+- Environnement d’exécution : Stable 64
 - Version de PHP: 8.1
 - Moteur : PHP
 - Mode : Production
@@ -70,6 +70,8 @@ Nous vous proposons ici quelques extensions populaires de WordPress, qui de ce f
 
 ### Comment configurer votre WordPress entièrement en HTTPS ?
 
+Pensez à consulter notre guide [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
+
 « Really Simple SSL » détecte automatiquement vos réglages et configure votre site web pour qu’il fonctionne avec le protocole HTTPS (protocole privilégié par les moteurs de recherche).
 
 Point important : Elle nécessitera au préalable d’avoir installé un certificat SSL sur son hébergement et de l’avoir activé. Je vous renvoie au guide si vous n’en avez pas encore un : [https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
@@ -82,7 +84,7 @@ Il ne reste plus qu’à activer le SSL ! Rien de plus simple, il suffit de cliq
 
 ![Activer SSL](images/secure_your_wordpress_website_6.png)
 
-C’est parfait : le SSL est désormais actif par défaut sur votre site internet. Il ne reste plus qu’à faire quelques réglages comme activer la redirection 301 via _.htaccess_ :
+Le SSL est désormais actif par défaut sur votre site internet. Il ne reste plus qu’à faire quelques réglages comme activer la redirection 301 via _.htaccess_ :
 
 ![Activer la redirection 301 via .htaccess](images/secure_your_wordpress_website_7.png)
 
@@ -123,6 +125,8 @@ L’utilisation conventionnelle d’un login et d’un mot de passe est insuffis
 
 La mise en place d’un processus d’authentification à double facteur (2FA pour _Two Factor Authentication_) renforcera la sécurité d’accès à votre interface d’administration. Le fonctionnement est simple : outre le couple login/mot de passe conventionnel, il vous sera demandé une authentification avec un facteur supplémentaire (code à durée limitée, authentification sur un smartphone, SMS, reçu, _passphrase_). Vous protégerez et sécuriserez vos accès admin, et éviterez ainsi de compromettre la sécurité de votre site.
 Même si utilisateur malveillant vient à récupérer votre mot de passe de manière malveillante, la sécurité de vos accès ne sera pas compromise.
+
+Pensez à sécuriser votre compte OVHcloud en activant l'authentification à deux facteurs (2FA) sur notre guide [Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/).
 
 Parmi ces facteurs 2FA que vous pouvez utiliser l’application Google Authenticator (ou toute application équivalente).
 Lors de la création de votre compte, un QR Code sera affiché à l’écran. Il vous suffira de le scanner avec votre smartphone via l’application Google Authenticator. Une nouvelle entrée apparaîtra dans votre application générant un code (par défaut à 6 chiffres) qui changera régulièrement (30 secondes). C’est ce code que vous devrez fournir lors de votre authentification sur votre interface d’administration.
