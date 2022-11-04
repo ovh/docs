@@ -9,7 +9,7 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 03/11/2022**
+**Dernière mise à jour le 04/11/2022**
 
 ## Objectif
 
@@ -101,12 +101,12 @@ Téléchargez les sources d'installation d'ALMALINUX à partir de ce lien [Sourc
 Nous allons utiliser un serveur DNS interne avec comme adresse **192.168.0.200** et un nom de domaine **ad-testing.lan** et rajouter ces adresses : 
 
 - **tina-srv.ad-testing.lan** : Serveur **Tina** en France avec l'adresse IP `192.168.0.210`.
-- **tina-adefr.ad-testing.lan** : Serveur de déduplication **HSS** en France eavec l'adresse IP `192.168.0.211`.
+- **tina-adefr.ad-testing.lan** : Serveur de déduplication **HSS** en France avec l'adresse IP `192.168.0.211`.
 - **tina-adecan.ad-testing.lan** : Serveur de déduplication **HSS** au Canada  avec l'adresse IP `192.168.10.210` 
 
 ![00 DNS Entry Example 01 ](images/00-dnsexample01.png){.thumbnail}
 
-L'adresse IP interne de **Prism Element** est **192.168.0.111** elle servira lors de la configuration de l'agent.
+Notez l'adresse IP privée de **Prism Element** . Cette adresse servira lors de la configuration du logiciel de sauvegarde.
 
 Aidez-vous de ce guide pour créer une machine virtuelle sous Nutanix [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/).
 
@@ -129,7 +129,7 @@ Choisissez ces paramètres :
 
 Utilisez ces valeurs pour les deux VM de déduplication : 
 
-- Nom des machines virtuelle `tina-adefr`. et `tina-adecan`.
+- Nom des machines virtuelles `tina-adefr`. et `tina-adecan`.
 - Un disque de `60Go`.
 - Un deuxième disque de `500Go`.
 - 4 `vCPU`.
@@ -183,7 +183,7 @@ Ensuite cliquez sur `Save`{.action}.
 
 Cliquez sur le bouton `ON/OFF`{.action} pour activer le réseau. 
 
-Saisissez le nom d'hôte dans `Host Name`{.action} avec ces informations suivant la machine virtuelle : 
+Saisissez le nom d'hôte dans `Host Name`{.action} qui doit correspondre au nom de la machine : 
 
 - tina-srv.ad-testing.lan pour le serveur **Tina**.
 - tina-adefr.ad-testing.lan pour le serveur de déduplication **HSS** en France.
@@ -400,7 +400,7 @@ Au travers de la console lancez le programme d'installation `ATL533-linux-x64.bi
 
 > [!Primary]
 >
-> Le logiciel d'installation doit être fourni par la société Atempo
+> Le logiciel d'installation doit être fourni par la société Atempo.
 >
 > Un serveur de licence devra être installé sur une machine virtuelle accessible à la fois aux serveur **Tina** et aux serveurs de déduplications **HSS** au dela de la période d'éssai de 1 mois. 
 >
@@ -462,7 +462,7 @@ Laissez les options par défaut dans **Port** et cliquez sur le bouton `Suivant`
 
 ![05 Configure tina ade03](images/05-configure-tina-ade03.png){.thumbnail}
 
-Choisissez ces options pour **Products**:
+Choisissez ces options pour **Products** :
 
 - **Activate HyperStream** sur `Yes`.
 - **Activate Lina** sur `No`.
@@ -758,7 +758,7 @@ Cochez la case `Advanced`{.action} et cliquez en haut sur `Apply`{.action}.
 
 ![09a configure advanced parameter 05](images/09a-configure-advanced-param05.png){.thumbnail}
 
-Dans Filter saisissez `dtm`{.action} ensuite cochez `dtm_default_block_size`{.action} et cliquez sur `Next`{.action}.
+Saisissez `dtm`{.action} dans la zone de saisie **Filter**, cochez `dtm_default_block_size`{.action} et cliquez sur `Next`{.action}.
 
 ![09a configure advanced parameter 06](images/09a-configure-advanced-param06.png){.thumbnail}
 
@@ -840,7 +840,7 @@ Sélectionnez `Declare a new application`, choisissez dans la liste `Nutanix Vir
 
 ![10 configure nutanix agent 02](images/10-configure-nutanix-agent02.png){.thumbnail}
 
-Modifier **Status** en `Enabled`{.action} et modifier ces paramètres :
+Cliquez sur `Enabled`{.action} dans **Status** et modifier ces paramètres :
 
 - **Virtualisation server** : `Adresse IP privée de Prism Element`.
 - **Virtualization user** : `Utilisateur administrateur de Prism Element`.
@@ -904,7 +904,7 @@ Cliquez sur `Configured`{.action} pour voir apparaitre les travaux configurés, 
 
 ![12 configure nutanix backup 05](images/12-configurenutanixbackup05.png){.thumbnail}
 
-Positionnez-vous sur `Backup selections`{.action} à gauche ensuite cliquez sur `Add new backup selection`{.action}
+Positionnez-vous sur `Backup selections`{.action} à gauche ensuite cliquez sur `Add new backup selection`{.action}.
 
 ![12 configure nutanix backup 06](images/12-configurenutanixbackup06.png){.thumbnail}
 
@@ -936,7 +936,9 @@ La configuration du travail de sauvegarde est terminée, cliquez sur la `croix`{
 <a name="testbackup"></a>
 #### **Etape 6.6 Test du travail de sauvegarde**
 
-Il est possible de lancer la sauvegarde manuellement, pour ceci restez sur `Agents`{.action} à droite, cochez le `travail de sauvegarde`{.action} et cliquez sur la flèche `exécution`{.action} pour lancer un travail de sauvegarde.
+Il est possible de lancer la sauvegarde manuellement.
+
+Restez sur `Agents`{.action} à droite, cochez le `travail de sauvegarde`{.action} et cliquez sur la flèche `exécution`{.action} pour exécuter une sauvegarde manuelle.
 
 ![13 test backup 01](images/13-test-backup01.png){.thumbnail}
 
@@ -981,7 +983,7 @@ Modifiez la variable **Path to Disk Backup Copy** par `un dossier local sur le s
 
 > [!primary]
 >
-> Le catalogue sera à la fois sauvegardé sur le dépôt et aussi en local sur le serveur de sauvegarde
+> Le catalogue sera à la fois sauvegardé dans le dépôt et aussi en local sur le serveur de sauvegarde.
 > 
 
 ![14 config-catalog-backup05](images/14-config-catalog-backup05.png){.thumbnail}
