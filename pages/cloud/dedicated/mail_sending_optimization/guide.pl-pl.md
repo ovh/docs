@@ -70,15 +70,15 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 W rozwijanym menu **Usługa** wybierz usługę z adresem IPv4:
 
-![Rewers IP](images/servicedropmenu.png)
+![Rewers IP](images/servicedropmenu.png){.thumbnail}
 
 Kliknij przycisk `...`{.action} po prawej stronie odpowiedniej linii, a następnie `Zmień rewers`{.action}:
 
-![Rewers IP](images/setreversedns.png)
+![Rewers IP](images/setreversedns.png){.thumbnail}
 
 Wprowadź nazwę Twojej domeny w sekcji `Rewers` i kliknij `Zatwierdź`{.action}.
 
-![Rewers IP](images/enterreverse.png)
+![Rewers IP](images/enterreverse.png){.thumbnail}
 
 > [!primary]
 > Po wpisaniu domeny do rewers sprawdzi on natychmiast, czy rekordu A odnosi się do tego samego IP. Jest to używane w procedurach antyspamowych, więc rekordu A musi być ważne i propagowane. Podczas wprowadzania rewers obowiązują następujące zasady:

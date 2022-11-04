@@ -70,15 +70,15 @@ Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fro
 
 Nel menu a tendina **Servizio**, seleziona un servizio con un indirizzo IPv4:
 
-![Reverse IP](images/servicedropmenu.png)
+![Reverse IP](images/servicedropmenu.png){.thumbnail}
 
 Clicca sul pulsante `...`{.action} a destra della riga corrispondente e poi su `Modifica il reverse`{.action}:
 
-![Reverse IP](images/setreversedns.png)
+![Reverse IP](images/setreversedns.png){.thumbnail}
 
 Inserisci il tuo dominio nella sezione `Reverse` e clicca su `Conferma`{.action}.
 
-![Reverse IP](images/enterreverse.png)
+![Reverse IP](images/enterreverse.png){.thumbnail}
 
 > [!primary]
 > Quando inserisci il tuo dominio nel reverse, verifica immediatamente se il record A restituisce lo stesso IP. Questa operazione viene utilizzata nelle procedure anti-spam e il record A deve essere valido e divulgato. Per inserire il reverse, è necessario seguire alcune regole:

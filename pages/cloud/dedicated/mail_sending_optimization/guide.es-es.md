@@ -66,15 +66,15 @@ En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 En el menú desplegable **Servicio**, seleccione un servicio con una dirección IPv4:
 
-![IP inversa](images/servicedropmenu.png)
+![IP inversa](images/servicedropmenu.png){.thumbnail}
 
 Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Cambiar el registro inverso`{.action}:
 
-![IP inversa](images/setreversedns.png)
+![IP inversa](images/setreversedns.png){.thumbnail}
 
 Introduzca su dominio en la sección `Registro inverso` y haga clic en `Aceptar`{.action}.
 
-![IP inversa](images/enterreverse.png)
+![IP inversa](images/enterreverse.png){.thumbnail}
 
 > [!primary]
 > Al introducir su dominio en el registro inverso, comprueba de inmediato si el registro A devuelve la misma IP. Se utiliza en los procedimientos antispam, por lo que el registro A debe ser válido y propagado. Existen algunas reglas a seguir al introducir el registro inverso:

@@ -65,15 +65,15 @@ In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fro
 
 In the **“Service”** drop-down menu, select a service with an IPv4 address:
 
-![Reverse IP](images/servicedropmenu.png)
+![Reverse IP](images/servicedropmenu.png){.thumbnail}
 
 Click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
 
-![Reverse IP](images/setreversedns.png)
+![Reverse IP](images/setreversedns.png){.thumbnail}
 
 Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.action}
 
-![Reverse IP](images/enterreverse.png)
+![Reverse IP](images/enterreverse.png){.thumbnail}
 
 > [!primary]
 > When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be  valid and propagated. There are certain rules to follow while entering the reverse:

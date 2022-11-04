@@ -66,15 +66,15 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 Dans le menu déroulant **Service**, sélectionnez un service avec une adresse IPv4 :
 
-![Reverse IP](images/servicedropmenu.png)
+![Reverse IP](images/servicedropmenu.png){.thumbnail}
 
 Cliquez sur le bouton `...`{.action} à droite de la ligne correspondante puis sur `Modifier le reverse`{.action} :
 
-![Reverse IP](images/setreversedns.png)
+![Reverse IP](images/setreversedns.png){.thumbnail}
 
 Entrez votre nom de domaine dans la section `Reverse DNS` et cliquez sur `Valider`{.action}.
 
-![Reverse IP](images/enterreverse.png)
+![Reverse IP](images/enterreverse.png){.thumbnail}
 
 > [!primary]
 > Lorsque vous entrez votre nom de domaine dans le *reverse*, il vérifie immédiatement si l'enregistrement A renvoie à la même IP. Ceci est utilisé dans les procédures anti-spam, donc votre enregistrement A doit être valide et propagé. Il y a certaines règles à suivre lors de la saisie du *reverse* :
