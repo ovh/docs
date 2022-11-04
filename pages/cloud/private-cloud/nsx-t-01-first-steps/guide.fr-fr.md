@@ -68,13 +68,13 @@ Au travers de l'interface **NSX-T** cliquez sur l'onglet `Networking`{.action}.
 
 ![02 Display network topology 01](images/02-display-network-topology01.png)
 
-Un vue de l'ensemble du réseau est affichée.
+Une vue de l'ensemble des éléments du réseau est affichée.
 
 Cliquez à gauche sur `Network Topology`{.action}.
 
 ![02 Display network topology 02](images/02-display-network-topology02.png)
 
-Une vue de la topologie réseau est disponible avec deux adresses IP publiques connectées à la passerelle **ovh-T0-gateway** ainsi que la connexion à la passerelle **ovh-T1-gateway**.
+Un schéma représentant la topologie réseau est disponible avec deux adresses IP publiques connectées à la passerelle **ovh-T0-gateway** ainsi que la connexion à la passerelle **ovh-T1-gateway**.
 
 Dans la configuration initiale il n'existe aucun lien entre votre infrastructure WMware et Internet. 
 

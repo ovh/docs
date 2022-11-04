@@ -67,13 +67,13 @@ In the **NSX-T** interface, click on the `Networking`{.action} tab.
 
 ![02 Display network topology 01](images/02-display-network-topology01.png)
 
-A view of the entire network is displayed.
+A view of all network elements is displayed.
 
 Left-click on `Network Topology`{.action}.
 
 ![02 Display network topology 02](images/02-display-network-topology02.png)
 
-A network topology view is available with two public IP addresses connected to the gateway **ovh-T0-gateway** and the connection to the gateway **ovh-T1-gateway**.
+A network topology diagram is available with two public IP addresses connected to the **ovh-T0-gateway** and the connection to the **ovh-T1-gateway**.
 
 Inside initial configuration, there is no link between your VMware infrastructure and the internet.
 
