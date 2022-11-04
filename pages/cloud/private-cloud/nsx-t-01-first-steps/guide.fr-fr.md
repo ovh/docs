@@ -1,5 +1,5 @@
 ---
-title: Premier pas avec l'interface NSX-T
+title: Premier pas avec NSX-T
 slug: nsx-t-first-steps
 excerpt: Découvrez l'interface de NSX-T
 section: NSX-T
@@ -11,7 +11,6 @@ order: 01
 > [!warning]
 > Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, il seront modifiés lors de la sortie en version BETA et finalisés quand la sortie définitive sera prête. 
 >
-
 
 
 ## Objectif
@@ -30,7 +29,6 @@ Lorsque un client souscrit à l'offre NSX-T et quelle est activée certains para
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
-
 
 
 ## Prérequis
