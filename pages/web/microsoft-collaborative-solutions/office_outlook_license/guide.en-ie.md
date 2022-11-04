@@ -15,7 +15,7 @@ With an Outlook licence you can use the Outlook email client to view and manage 
 
 OVHcloud offers the Outlook licence for a monthly cost of €2 ex VAT. It will be linked to an OVHcloud Exchange account that you manage.
 
-After subscribing, you can download the Outlook client as one of the following 6 versions:
+After subscribing, you can download the Outlook client as one of the following 3 versions:
 
 - Outlook 2016 for Windows 32 bit
 - Outlook 2016 for Windows 64 bit

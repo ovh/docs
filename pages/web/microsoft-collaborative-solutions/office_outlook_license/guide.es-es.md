@@ -19,7 +19,7 @@ Desea disfrutar de una licencia Outlook para consultar y gestionar sus emails en
 
 OVHcloud le ofrece el cliente de correo Outlook al precio de 2 euros (+IVA) al mes. Estará asociado a una cuenta Exchange de OVHcloud de la que usted es responsable.
 
-Una vez contratada, puede descargar Outlook de una de las 6 versiones siguientes:
+Una vez contratada, puede descargar Outlook de una de las 3 versiones siguientes:
 
 - Outlook 2016 para Windows 32 bits.
 - Outlook 2016 para Windows 64 bits.

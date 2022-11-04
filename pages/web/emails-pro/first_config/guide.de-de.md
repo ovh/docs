@@ -89,7 +89,7 @@ In der Spalte `Diagnose`{.action} können Sie sehen, ob die Konfiguration der MX
 
 Zur Konfiguration Ihrer E-Mail-Adressen gehen Sie in den Tab `E-Mail-Accounts`{.action}. Die Tabelle zeigt die bestellten Accounts als “*@configureme.me*” an.
 
-Um sie zu konfigurieren, klicken Sie bitte auf das Bleistift-Symbol.
+Um sie zu konfigurieren klicken Sie auf `...`{.action} und dann auf `Ändern`{.action}.
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
 

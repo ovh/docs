@@ -53,8 +53,8 @@ Ceci vous permet de définir si les comptes e-mail doivent se verrouiller après
 Pour cela, complétez les informations mentionnées dans le tableau ci-dessous :
 
 - **Seuil de verrouillage**: Définissez le nombre de tentatives de connexion infructueuses à atteindre pour que le compte se verrouille. Inscrivez « 0 » pour ne pas appliquer de seuil de verrouillage.
-- **Délai de réinitialisation**: Ce champ apparaît uniquement si un seuil de verrouillage a été défini. Précisez le délai nécessaire pour que le compteur de tentatives de connexion infructueuses se remette à zéro.
-- **Durée de verrouillage**: Ce champ apparaît uniquement si un seuil de verrouillage a été défini. Précisez le délai durant lequel le compte e-mail restera verrouillé si le seuil de verrouillage a été atteint.
+- **Délai de réinitialisation**: Ce champ apparaît uniquement si un seuil de verrouillage a été défini. Précisez le délai nécessaire en minutes pour que le compteur de tentatives de connexion infructueuses se remette à zéro.
+- **Durée de verrouillage**: Ce champ apparaît uniquement si un seuil de verrouillage a été défini. Précisez le délai en minutes durant lequel le compte e-mail restera verrouillé si le seuil de verrouillage a été atteint.
 
 Une fois ces informations complétées, validez ces changements en cliquant sur `Suivant`{.action}, puis sur `Valider`{.action} pour les offres « E-mails » et « E-mail Pro ». Cliquez sur `Enregistrer les modifications`{.action} pour l'offre Exchange.
 

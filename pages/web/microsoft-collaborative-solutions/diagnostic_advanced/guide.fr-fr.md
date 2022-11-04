@@ -109,6 +109,7 @@ Voici les valeurs pour un service Exchange:
 
 Champ | Valeur
 ------------ | -------------
+Sous domaine | _autodiscover._tcp
 Priorité | 0
 Poids | 0
 Port | 443

@@ -5,7 +5,7 @@ slug: exchange_diagnostic_what_to_do_if_you_encounter_an_error
 section: Exchange Diagnostics
 ---
 
-**Last updated 8th July 2022**
+**Last updated 19th October 2022**
 
 ## Objective
 
@@ -103,10 +103,12 @@ Here are the mandatory values for an Exchange service:
 
 Field        | Value
 ------------ | -------------
+Sub-domain   | _autodiscover._tcp
 Priority     | 0
 Weight       | 0
 Port         | 443
 Target       | [Your hostname](#hostname) (ex<b>?</b>.mail.ovh.net)
+
 
 ### The test email could not be sent from this account 
 

@@ -18,11 +18,11 @@ Office 365 for Resellers (CSP2) is a service that allows you to get different ty
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - An MPN ID (Microsoft Partner Network Identifier)
-- You must be registered in the Microsoft Cloud Solution Provider (CSP) programme as an indirect reseller in the region where you operate (e.g.: “EU” for Europe)
+- You must be registered in the Microsoft Cloud Solution Provider (CSP) program as an indirect reseller in the region where you operate (e.g.: “EU” for Europe)
 
 > [!warning]
 >
-> From July 1st 2022, all Office 365 reseller (CSP2) services that do not have an MPN ID registered in the `CSP indirect reseller` programme will be disabled by Microsoft.
+> From July 1st 2022, all Office 365 reseller (CSP2) services that do not have an MPN ID registered in the `CSP indirect reseller` program will be disabled by Microsoft.
 >
 > An MPN ID is now mandatory for all new subscriptions.
 >
@@ -130,7 +130,7 @@ Use the `pencil icon` to change the total number of licences in the subscription
 
 Now that you have your licences available, you need to manage the users who will use them. You can do this directly via the [Microsoft administrative portal](https://portal.office.com/Admin/Default.aspx){.external}.
 
-To log in, enter your NIC handle and the password from the email OVHcloud sent you confirming the installation of your licence group. This information is sent to the address provided when the licence group was created.
+To log in, enter the username and the password from the email OVHcloud sent you confirming the installation of your licence group. This information is sent to the address provided when the licence group was created.
 
 ## Go further
 

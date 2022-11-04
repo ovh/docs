@@ -200,4 +200,4 @@ We have only scratched the surface of what Logs Data Platform can do for you. yo
 - If you want to master Graylog, this is the place to go: [Graylog documentation](https://docs.graylog.org/docs/queries){.external}
 - Documentation: [Guides](../){.ref}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
-- Join our community of users on [https://community.ovh.com](https://community.ovh.com/c/Platform/data-platforms){.external}
+- Join our community of users on [https://community.ovh.com](https://community.ovh.com/){.external}

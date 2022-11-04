@@ -18,7 +18,7 @@ This guide is for customers who have just ordered a Private Exchange platform. I
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- an [OVHcloud Private Exchange solution](https://www.ovhcloud.com/en-ie/emails/)
+- an [OVHcloud Private Exchange solution](https://www.ovhcloud.com/en-ie/emails/private-exchange/)
 
 ## Instructions
 

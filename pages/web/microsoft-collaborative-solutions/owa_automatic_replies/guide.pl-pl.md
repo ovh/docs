@@ -18,8 +18,8 @@ Ta funkcja programu Exchange umożliwia skonfigurowanie automatycznych odpowiedz
 
 ## Wymagania początkowe
 
-- skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
-- dostęp do konta Exchange (adres e-mail i hasło)
+ - Instalacja rozwiązania poczty elektronicznej OVHcloud [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) lub [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)
+- dostęp do konta e-mail (adres e-mail i hasło)
 
 
 ## W praktyce

@@ -17,7 +17,7 @@ Vous venez d'effectuer la commande d'une plateforme Private Exchange. Ce guide d
 
 ## Prérequis
 
-- Avoir commandé une [offre Private Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/){.external}.
+- Avoir commandé une [offre Private Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/private-exchange/){.external}.
 - Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique

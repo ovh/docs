@@ -21,7 +21,6 @@ Questa guida ti mostra come creare una zona DNS OVHcloud dal tuo Spazio Cliente.
 
 - Disporre di un dominio
 - Il dominio in questione non deve disporre già di una zona DNS OVHcloud o essere associato a operazioni e buoni d’ordine in corso
-- La configurazione tecnica del dominio deve essere corretta (stato, SOA, ecc...)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura

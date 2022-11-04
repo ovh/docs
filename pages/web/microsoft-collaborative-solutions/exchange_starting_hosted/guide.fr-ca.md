@@ -19,19 +19,19 @@ Le service Exchange Hébergé permet de bénéficier d’adresses e-mail profess
 - Avoir souscrit une offre [Exchange Hébergé](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}.
 - Avoir reçu l’e-mail vous confirmant l’installation de votre solution Exchange Hébergé.
 - Disposer d'un nom de domaine.
-- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion de votre service
 
-Une fois votre service Exchange Hébergé créé et disponible, vous pouvez le gérer depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+Une fois votre service Exchange Hébergé créé et disponible, vous pouvez le gérer depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 Pour cela, connectez-vous à ce dernier, cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Cliquez enfin sur le nom du service Exchange Hébergé concerné.
 
 > [!primary]
 >
-> Le nom d'un service Exchange Hébergé dans votre espace client OVH débute par **hostedbhs-**, puis contient une partie de votre référence client et se termine par un chiffre (1 pour le premier service Exchange Hébergé installé, 2 pour le deuxième, etc.).
+> Le nom d'un service Exchange Hébergé dans votre espace client OVHcloud débute par **hostedbhs-**, puis contient une partie de votre référence client et se termine par un chiffre (1 pour le premier service Exchange Hébergé installé, 2 pour le deuxième, etc.).
 >
 
 ### Étape 2 : effectuer la première configuration du service
@@ -57,7 +57,7 @@ Une fois la première configuration de votre domaine terminée, vous pouvez éga
 > Toutes les adresses créées sur votre service Exchange seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander un nouveau service Exchange Hébergé pour le ou les noms de domaine concernés.
 >
 
-Pour ajouter un nouveau nom de domaine, sélectionnez le service Exchange Hébergé concerné dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et cliquez sur l'onglet `Domaines associés`{.action}. Le tableau affiche les noms de domaines actuellement configurés ou en passe de l'être sur votre service. Pour en ajouter de nouveaux, cliquez sur le bouton `Ajouter un domaine`{.action}, puis suivez les différentes étapes du processus.
+Pour ajouter un nouveau nom de domaine, sélectionnez le service Exchange Hébergé concerné dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et cliquez sur l'onglet `Domaines associés`{.action}. Le tableau affiche les noms de domaines actuellement configurés ou en passe de l'être sur votre service. Pour en ajouter de nouveaux, cliquez sur le bouton `Ajouter un domaine`{.action}, puis suivez les différentes étapes du processus.
 
 Pour en apprendre plus, vous pouvez consulter la documentation intitulée [Ajouter un nom de domaine sur son service Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/ajouter-domaine-exchange/){.external}.
 
@@ -72,20 +72,20 @@ Pour en apprendre plus, vous pouvez consulter la documentation intitulée [Ajout
 
 Vous pouvez configurer des comptes additionnels si vous le souhaitez et si vous ne l'avez pas déjà fait via l'assistant.
 
-Pour cela, cliquez sur le service Exchange Hébergé concerné dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, puis sur l'onglet `Comptes courriel`{.action}. Le tableau affiche les comptes actuellement configurés ou en attente de l'être sur votre service.
+Pour cela, cliquez sur le service Exchange Hébergé concerné dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, puis sur l'onglet `Comptes courriel`{.action}. Le tableau affiche les comptes actuellement configurés ou en attente de l'être sur votre service.
 
 Les comptes en attente de configuration s'affichent dans le tableau sous la forme “*@configureme.me*”. Pour les configurer, cliquez sur le logo représentant trois points, cliquez sur `Modifier`{.action}, puis suivez les étapes.
 
 > [!primary]
 >
-> Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition. Vous pouvez en commander de nouveaux grâce au bouton `Commander des comptes`{.action}.
+> Répétez cette étape autant de fois que nécessaire selon le nombre de comptes que vous possédez. Vous pouvez en commander de nouveaux grâce au bouton `Actions`{.action} puis en cliquant sur `Commander des comptes`{.action}.
 >
 
 ![Ajout d'un compte](images/first-steps-hosted-exchange-add-account.png){.external}
 
 ### Étape 5 : utiliser vos adresses e-mail
 
-Une fois vos comptes configurés, il ne reste plus qu’à les utiliser. Pour cela, OVH met à disposition le webmail **Outlook Web Application** (OWA). Ce dernier est accessible à l’adresse <https://ex.mail.ovh.ca/>. Pour y accéder, vous devez y renseigner les identifiants relatifs à votre adresse e-mail. Si vous souhaitez obtenir de l'aide sur l'utilisation de OWA, consultez notre documentation disponible sur ce lien : <https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/>.
+Une fois vos comptes configurés, il ne reste plus qu’à les utiliser. Pour cela, OVHcloud met à disposition le webmail **Outlook Web Application** (OWA). Ce dernier est accessible à l’adresse <https://ex.mail.ovh.ca/>. Pour y accéder, vous devez y renseigner les identifiants relatifs à votre adresse e-mail. Si vous souhaitez obtenir de l'aide sur l'utilisation de OWA, consultez notre documentation disponible sur ce lien : <https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/>.
 
 Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, consultez notre documentation accessible depuis ce portail : <https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/>. Pour une utilisation optimale de votre adresse Exchange sur un logiciel, assurez-vous de sa bonne compatibilité avec le service.
 
@@ -98,9 +98,9 @@ Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie 
 
 ### Étape 6 : paramétrer les fonctions collaboratives (facultatif)
 
-Maintenant que votre service Exchange Hébergé est configuré et fonctionnel, vous pouvez mettre en place les fonctionnalités collaboratives inhérentes au service dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Celles-ci peuvent vous donner la possibilité de créer des ressources (salles de réunion, équipements, etc.), mais aussi des groupes, entre autres.
+Maintenant que votre service Exchange Hébergé est configuré et fonctionnel, vous pouvez mettre en place les fonctionnalités collaboratives inhérentes au service dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Celles-ci peuvent vous donner la possibilité de créer des ressources (salles de réunion, équipements, etc.), mais aussi des groupes, entre autres.
 
-Pour activer ces différentes fonctions, sélectionnez le service Exchange Hébergé concerné dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, puis choisissez parmi les onglets qui s'affichent l'action à effectuer.
+Pour activer ces différentes fonctions, sélectionnez le service Exchange Hébergé concerné dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, puis choisissez parmi les onglets qui s'affichent l'action à effectuer.
 
 ![Fonctions collaboratives](images/first-steps-hosted-exchange-intro-to-functions.png){.external}
 

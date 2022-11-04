@@ -58,13 +58,13 @@ Na tabela pode ver a configuração OVHcloud do seu domínio. Cada linha corresp
 
 ![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
-Se já existirem e pretender substituí-los, clique no ícone dos três pontos à direita da linha correspondente e clique em `Eliminar entrada`{.action}. Contudo, certifique-se de que não deixa o seu domínio sem registos MX quando adicionar os registos MX pretendidos.
+Se já existem campos MX e pretende substituí-los, clique no botão `...`{.action} à direita de cada linha da tabela em causa, e clique em `Eliminar entrada` {.action}. No entanto, certifique-se de que não deixa o seu domínio sem nenhum registo MX quando adicionar os registos MX pretendidos.
 
 Para verificar mais rapidamente se já existem campos MX, selecione, com o filtro situado acima da tabela DNS, o campo do tipo **MX** e valide para só apresentar as entradas DNS MX da sua zona DNS.
 
 Para isso, clique no botão `Adicionar uma entrada`{.action} à direita da tabela e selecione a opção `MX`{.action}. Introduza as informações necessárias em função da solução de e-mail selecionada:
 
-- **se possuir uma solução de e-mail da OVHcloud**: consulte as informações no passo [“2 - Conhecer a configuração MX da OVH”](https://docs.ovh.com/pt/domains/e-mail-partilhado-manual-de-configuracao-mx-com-zona-dns-ovh/#2-conhecer-a-configuracao-mx-da-ovh){.external};
+- **se possuir uma solução de e-mail da OVHcloud**: consulte as informações no passo [“2 - Conhecer a configuração MX da OVHcloud”](https://docs.ovh.com/pt/domains/e-mail-partilhado-manual-de-configuracao-mx-com-zona-dns-ovh/#2-conhecer-a-configuracao-mx-da-ovh){.external};
 
 - **se possuir outra solução de e-mail**: consulte as informações comunicadas pelo seu fornecedor de serviço de e-mail.
 

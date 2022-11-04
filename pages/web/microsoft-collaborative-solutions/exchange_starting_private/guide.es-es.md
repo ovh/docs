@@ -17,7 +17,7 @@ Usted acaba de realizar el pedido de una plataforma Private Exchange. Esta guía
 
 ## Requisitos
 
-- Haber contratado el [plan Private Exchange de OVHcloud](https://www.ovhcloud.com/es-es/emails/){.external}.
+- Haber contratado el [plan Private Exchange de OVHcloud](https://www.ovhcloud.com/es-es/emails/private-exchange/){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento

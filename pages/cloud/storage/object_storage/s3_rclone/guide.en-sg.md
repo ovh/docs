@@ -27,7 +27,7 @@ Rclone is a backup tool that can sync to and from various storage backends, and 
 - A user and defined the required access rights on the bucket
 - Your S3 credentials (access_key and secret_access_key)
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/sg/en/storage/s3/getting-started-with-s3/) guide.
+See our [Getting started with S3 Object Storage](https://docs.ovh.com/sg/en/storage/object-storage/s3/getting-started-with-object-storage/) guide.
 
 ## Instructions
 

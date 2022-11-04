@@ -10,14 +10,14 @@ order: 6
 
 ## Objective
 
-With the Exchange service, you can set up professional email addresses, and use them with a range of features for collaborative work. In order to maintain this environment, you can manage the global security settings of your Exchange accounts.
+With the Exchange service, you can set up professional email accounts, and use them with a range of features for collaborative work. In order to maintain this environment, you can manage the global security settings of your Exchange accounts.
 
 **Find out how to manage the security policy of your Exchange service.**
 
 ## Requirements
 
-- an [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external} service
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- An [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external} service
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
@@ -48,8 +48,8 @@ This allows you to define whether Exchange accounts should lock after a number o
 To make this change, on the page that appears, enter the information set out in the table below:
 
 - **Lockout threshold**: Set the number of unsuccessful log-in attempts before the account locks. Enter "0" to not apply a lockout threshold.
-- **Lockout counter reset time**: This field will only appear if a lockout threshold has been set. Specify the time it takes for the failed connection attempt counter to reset.
-- **Account lockout duration**: This field will only appear if a lockout threshold has been set. Specify the time period during which the Exchange account will remain locked if the lockout threshold has been reached.
+- **Lockout counter reset time**: This field will only appear if a lockout threshold has been set. Specify the time in minutes it takes for the failed connection attempt counter to reset.
+- **Account lockout duration**: This field will only appear if a lockout threshold has been set. Specify the time period in minutes during which the Exchange account will remain locked if the lockout threshold has been reached.
 
 Once this information has been entered, you can immediately validate these changes by clicking on `Next`{.action}, then `Confirm`{.action}. You can then continue to the next part.
 
@@ -85,7 +85,7 @@ This allows you to define whether unwanted messages you receive on your Exchange
 To make this change, on the page that appears, enter the information set out in the table below:
 
 - **Identify SPAM email**: Specify whether our servers should add a tag to identify received messages that are considered "unwanted" as spam.
-- **Move SPAM to junk**: Specify whether our servers should automatically move any "unwanted" messages to the trash.
+- **Move SPAM to junk**: Specify whether our servers should automatically move any "unwanted" messages to the "Junk Email" folder.
 
 Once this information has been entered, you can immediately validate these changes by clicking on `Next`{.action}, then `Confirm`{.action}.
 

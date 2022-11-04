@@ -128,7 +128,7 @@ Para obtener instrucciones más detalladas sobre la creación de reglas de la ba
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2jia2s1_oIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Haga clic en la rueda dentada situada en la esquina superior derecha y seleccione "Opciones". En la columna de la izquierda, haga clic en Correo y seleccione "Cuentas". A continuación, haga clic en "Bloquear o autorizar".
+Haga clic en el símbolo de engranaje en la esquina superior derecha y seleccione `Opciones`{.action}. En la columna de la izquierda, siga el árbol "Correo" en "Cuentas" > "Bloquear o autorizar".
 
 En la sección "**Remitentes bloqueados**", escriba una dirección de correo electrónico o un nombre de dominio que desea bloquear y haga clic en el botón `+`{.action} para añadirlo a la lista.
 

@@ -60,7 +60,7 @@ Compare una tabella che mostra la configurazione OVHcloud del tuo dominio: ogni 
 
 ![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
-Nel caso in cui il record MX sia presente e voglia modificarlo, clicca sui tre puntini a destra e clicca su `Elimina record`{.action}. Assicurati di non aver eliminato tutti i record MX prima di aggiungerne di nuovi.
+Se i record MX esistono già e vuoi sostituirli, clicca sul pulsante `...`{.action} in corrispondenza di ciascuna riga della tabella e clicca su `Elimina record`{.action}. Assicurati di non lasciare il tuo dominio senza record MX quando aggiungi i record MX richiesti.
 
 Per verificare più rapidamente se esistono già record MX, seleziona il record di tipo **MX** con il filtro sopra la tabella DNS e conferma per visualizzare solo i record DNS MX della tua zona DNS.
 

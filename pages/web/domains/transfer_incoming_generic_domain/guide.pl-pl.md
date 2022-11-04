@@ -132,7 +132,7 @@ Jeśli odmowa została wydana przez aktualny operator rejestracji, skontaktuj si
 
 Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz `Web Cloud`{.action} i przejdź do sekcji `Domeny`{.action}, następnie kliknij `Operacje w toku`{.action}.
 
-> [!Primary]
+> [!primary]
 >
 > Transfer domeny z rozszerzeniem ".fr" różni się nieznacznie od opisanego powyżej procesu. Odblokuj domenę i pobierz jej kod transferu od aktualnego operatora.
 > Złóż zamówienie na transfer i wprowadź kod transferu, jak opisano powyżej.

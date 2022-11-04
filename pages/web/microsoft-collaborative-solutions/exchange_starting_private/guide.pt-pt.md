@@ -16,7 +16,7 @@ Acaba de efetuar a encomenda de uma plataforma Private Exchange. Este guia expli
 
 ## Requisitos
 
-- Ter encomendado uma [solução Private Exchange OVHcloud](https://www.ovh.com/pt/emails/){.external}.
+- Ter encomendado uma [solução Private Exchange OVHcloud](https://www.ovh.com/pt/emails/private-exchange/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções

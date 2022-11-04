@@ -19,7 +19,7 @@ Vuoi usufruire di una licenza Outlook per consultare e gestire le tue email sul 
 
 OVHcloud propone il client di posta Outlook alla tariffa di 2 euro IVA esclusa al mese. Sarà associato a un account Exchange OVHcloud gestito da te.
 
-Dopo la sottoscrizione, puoi scaricare Outlook tra una delle 6 versioni seguenti:
+Dopo la sottoscrizione, puoi scaricare Outlook tra una delle 3 versioni seguenti:
 
 - Outlook 2016 per Windows 32 bits.
 - Outlook 2016 per Windows 64 bits.

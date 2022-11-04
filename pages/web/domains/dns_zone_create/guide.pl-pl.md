@@ -19,7 +19,6 @@ Strefa Domain Name System (DNS) to plik konfiguracyjny domeny. Zawiera on inform
 
 - Zarejestrowana domena
 - Domena nie może mieć strefy DNS OVHcloud i nie może być przedmiotem trwającej operacji lub zamówienia w OVHcloud
-- Prawidłowa konfiguracja techniczna domeny (status, SOA, etc.)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce

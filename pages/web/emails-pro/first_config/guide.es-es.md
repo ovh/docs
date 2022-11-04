@@ -93,7 +93,7 @@ En la columna `Diagnóstico`{.action}, podrá ver si la configuración DNS del n
 
 Para configurar las direcciones de correo, abra la pestaña `Cuentas de correo`{.action}. La tabla muestra las cuentas que haya contratado con el formato «*@configureme.me*».
 
-Para configurarlas, haga clic en el icono con forma de lápiz.
+Para configurarlos, haga clic en el botón `...`{.action} y, seguidamente, en `Modificar`{.action}.
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
 

@@ -32,7 +32,7 @@ Es ist nicht immer sinnvoll, anderen Benutzern die Verwendung eines gesamten E-M
 
 ### Schritt 1: Zugriffsrechte eines Ordners festlegen
 
-Loggen Sie sich über das [OVHcloud Webmail](https://www.ovh.de/mail) in Ihrem Exchange Account ein. Klicken Sie mit der rechten Maustaste auf den freizugebenden Ordner und wählen Sie `Berechtigungen`{.action} im Kontextmenü aus.
+Loggen Sie sich über das [OVHcloud Webmail](https://www.ovhcloud.com/de/mail) in Ihrem Exchange Account ein. Klicken Sie mit der rechten Maustaste auf den freizugebenden Ordner und wählen Sie `Berechtigungen`{.action} im Kontextmenü aus.
 
 ![Ordner freigeben](images/exchange-folder-step1.png){.thumbnail}
 
@@ -96,7 +96,7 @@ Es stehen mehrere vordefinierte Berechtigungsgruppen („Berechtigungsstufe“) 
 
 ![Ordner freigeben](images/exchange-folder-step3.png){.thumbnail}
 
-Loggen Sie sich über das [OVHcloud Webmail](https://www.ovh.de/mail) in Ihrem Exchange Account ein. Klicken Sie in der linken Serviceleiste mit der rechten Maustaste auf Ihren Account-Namen und wählen Sie im Kontextmenü `Freigegebenen Ordner hinzufügen...`{.action} aus. Geben Sie im neuen Fenster den Namen des Accounts ein, von dem ein Ordner freigegeben wurde. Beginnen Sie mit der Eingabe, um Vorschläge aus Ihren Kontakten anzuzeigen, geben Sie eine vollständige E-Mail-Adresse ein oder verwenden Sie die Suchoption über das `Suchverzeichnis`{.action}. Bestätigen Sie den Vorgang, indem Sie auf `Hinzufügen`{.action} klicken. Der neue freigegebene Ordner erscheint direkt unter Ihren anderen Ordnern.
+Loggen Sie sich über das [OVHcloud Webmail](https://www.ovhcloud.com/de/mail) in Ihrem Exchange Account ein. Klicken Sie in der linken Serviceleiste mit der rechten Maustaste auf Ihren Account-Namen und wählen Sie im Kontextmenü `Freigegebenen Ordner hinzufügen...`{.action} aus. Geben Sie im neuen Fenster den Namen des Accounts ein, von dem ein Ordner freigegeben wurde. Beginnen Sie mit der Eingabe, um Vorschläge aus Ihren Kontakten anzuzeigen, geben Sie eine vollständige E-Mail-Adresse ein oder verwenden Sie die Suchoption über das `Suchverzeichnis`{.action}. Bestätigen Sie den Vorgang, indem Sie auf `Hinzufügen`{.action} klicken. Der neue freigegebene Ordner erscheint direkt unter Ihren anderen Ordnern.
 
 
 ## Weiterführende Informationen

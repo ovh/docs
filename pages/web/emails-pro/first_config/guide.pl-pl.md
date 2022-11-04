@@ -91,7 +91,7 @@ W kolumnie `Diagnostyka`{.action} możesz sprawdzić konfigurację DNS domeny. J
 
 Skonfiguruj konta e-mail w karcie `Konta e-mail`{.action}. Konta, które zamówiłeś wyświetlają się w tabeli w postaci “*@configureme.me*”.
 
-Aby przeprowadzić konfigurację kont, kliknij ikonę ołówka.
+Aby je skonfigurować, kliknij przycisk `...`{.action}, a następnie `Zmień`{.action}.
 
 ![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
 

@@ -20,7 +20,6 @@ For a number of reasons, you may need to create a DNS zone for your domain name 
 ## Requirements
 
 - a domain name that does not already have an OVHcloud DNS zone, and is not part of an operation or order currently being processed at OVHcloud
-- correct technical configuration for your domain name (status, SOA, etc.)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
