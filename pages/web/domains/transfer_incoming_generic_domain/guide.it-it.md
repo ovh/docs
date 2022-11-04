@@ -132,7 +132,7 @@ Se il provider attuale emette un rifiuto, contatta il provider per sapere perch�
 
 Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Web Cloud`{.action} e accedi alla sezione `Domini`{.action}, poi clicca su `Operazioni in corso`{.action}.
 
-> [!Primary]
+> [!primary]
 >
 > Il trasferimento di un dominio con l'estensione ".fr" differisce leggermente dal processo descritto sopra. È necessario sbloccare il dominio e recuperare il codice di trasferimento presso l'attuale Registrar.
 > Avvia l'ordine di trasferimento e inserisci il codice di trasferimento come descritto in precedenza.
