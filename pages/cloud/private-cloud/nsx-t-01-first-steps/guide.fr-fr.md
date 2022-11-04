@@ -63,7 +63,7 @@ L'interface NSX-T s'affiche.
 
 ### Affichage de la configuration par défaut
 
-Nous allons voir la topologie de la configuration réseau
+Nous allons voir la topologie du réseau configurée par défaut lors du déploiement du service **NSX-T**.
 
 Au travers de l'interface **NSX-T** cliquez sur l'onglet `Networking`{.action}.
 
