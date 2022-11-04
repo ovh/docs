@@ -28,7 +28,7 @@ category_l2: Backups
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté sur votres cluster via Prism Central.
+- Être connecté sur votre cluster via Prism Central.
 - Avoir souscrit une offre **Tina** auprès de la société **Atempo** et d'avoir les sources d'installation des logiciel **Tina**. 
 - Avoir un serveur DNS interne administrable (Par exemple le service DNS activé sur un serveur Microsoft Windows).
 - Disposer d'un site distant pour pouvoir mettre en place une réplication de la sauvegarde.
@@ -693,7 +693,7 @@ La réplication est active, toutes les nouvelles données stockées sur le serve
 ![07 Configure replication 04](images/07-configure-replication04.png){.thumbnail}
 
 <a name="configpe"></a>
-### Etape 5 Configuration de Prism Element**
+### Etape 5 Configuration de **Prism Element**
 
 Il est necessaire de rajouter une adresse IP pour **ISCSI Data Services IP** pour que les sauvegardes fonctionnent.
 
