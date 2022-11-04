@@ -111,7 +111,7 @@ Par exemple, si vous ne souhaitez finalement pas conserver l'enregistrement DNS 
 
 Après avoir cliqué sur l'API de votre choix, la section **Parameters** permet d'attribuer les variables relatives à son application.
  
-Par exemple, pour l'ajout d'un enregistrement TXT dans votre zone DNS, vous optiendrez les paramètres suivants :
+Par exemple, pour l'ajout d'un enregistrement TXT dans votre zone DNS, vous obtiendrez les paramètres suivants :
  	
 ![API](images/parameters.png){.thumbnail} 
  
