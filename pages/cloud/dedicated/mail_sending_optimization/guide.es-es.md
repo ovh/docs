@@ -9,7 +9,7 @@ section: Uso avanzado
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 16/12/2021**
+**Última actualización: 04/11/2022**
 
 ## Objectivo
 
@@ -28,7 +28,7 @@ Las políticas antispam cada vez son más estrictas. Para asegurarse que sus cor
 
 ## Requisitos
 
-### Configurar el registro SPF
+### Configurar el registro SPF <a name="spfrecord"></a>
 
 Si usted está usando una infraestructura dedicada (ejem. Un servidor dedicado, VPS, instancia cloud publica o privada), el SPF optimo es: `v=spf1 ip4:server_ipv4 ~all`. Recuerde cambiar 'server_ipv4' con la dirección IPv4 de su servidor.
 
@@ -52,7 +52,7 @@ Configurando el registro DKIM (DomainKeys Identified Mail), añade protección e
 
 La autenticación se lleva a cabo médiente una clave DKIM que debe de añadir a su zona DNS. Existen diferente generadores para claves DKIM, incluyendo: <http://dkimcore.org/tools/keys.html>. Por favor, siga las instrucciones que figuran en el sitio web.
 
-### Configurar el Registro inverso
+### Configurar el Registro inverso <a name="reverseip"></a>
 
 Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il Registro inverso con su nombre de dominio.
 
@@ -66,15 +66,15 @@ En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 En el menú desplegable **Servicio**, seleccione un servicio con una dirección IPv4:
 
-![IP inversa](images/servicedropmenu.png)
+![IP inversa](images/servicedropmenu.png){.thumbnail}
 
 Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Cambiar el registro inverso`{.action}:
 
-![IP inversa](images/setreversedns.png)
+![IP inversa](images/setreversedns.png){.thumbnail}
 
 Introduzca su dominio en la sección `Registro inverso` y haga clic en `Aceptar`{.action}.
 
-![IP inversa](images/enterreverse.png)
+![IP inversa](images/enterreverse.png){.thumbnail}
 
 > [!primary]
 > Al introducir su dominio en el registro inverso, comprueba de inmediato si el registro A devuelve la misma IP. Se utiliza en los procedimientos antispam, por lo que el registro A debe ser válido y propagado. Existen algunas reglas a seguir al introducir el registro inverso:
@@ -94,7 +94,42 @@ Introduzca su dominio en la sección `Registro inverso` y haga clic en `Aceptar`
 
 Microsoft utiliza una política de lista blanca (whitelist). Esto significa que inicialmente, todo empieza en una blacklist, y se requiere un procedimiento específico para validar los correos en el servidor.
 
-Para realizar esto, por favor debe de [abrir un ticket de soporte](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) con Microsoft. 
+Antes de iniciar el procedimiento de whitelist de su IP, asegúrese de haber configurado correctamente un [registro inverso](#reverseip) en su IP (y no el registro inverso por defecto de OVHcloud).
+
+Microsoft también verifica el registro SPF, por lo que se recomienda [configurar uno](#spfrecord).
+
+A continuación, debe firmar los contratos SNDS (Smart Network Data Services) y JMRP (Junk Mail Reporting Partner Program).
+
+Para contratar gratuitamente el programa, basta con crear una cuenta JMRP/SNDS en la siguiente dirección:
+<https://postmaster.live.com/snds/JMRP.aspx?wa=wsignin1.0>
+
+Una vez activada la cuenta, deberá completar el siguiente formulario:
+
+- **Company name**: (nombre de su empresa)
+- **Contact email address**: (una dirección de correo electrónico válida en la que Microsoft puede contactar con usted)
+- **Complaint feedback email address**: (una dirección de correo electrónico válida en la que podrá recibir las quejas por spam, las *best practices* quieren que la dirección de correo electrónico sea la siguiente: **abuse@mydomain.com**.)
+
+A continuación, añada sus direcciones IP a la sección `IP address or range`.
+
+Al hacer clic en `Add new Network`, se le pedirá que establezca una dirección de correo electrónico de contacto válida. Introduzca la dirección del tipo **abuse@mydomain.com** para recibir las denuncias por spam.
+
+Una vez introducidos los datos, haga clic en `Begin Setup` para enviar la solicitud. Microsoft enviará entonces un email titulado `SNDS-JMRP Contract` y, a continuación, un segundo email a **mydomain.com**.
+
+Confirme la información y la suscripción a JMRP/SNDS se completará.
+
+Una vez que haya realizado estas acciones, si su IP aparece bloqueada, podrá solicitar su desbloqueo a través del [procedimiento junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). El procedimiento suele tardar 48 horas.
+
+Microsoft puede a veces solicitarle la fecha de la primera facturación de su IP/servidor. En ese caso, envíe a Microsoft una copia de su factura e indique su IP/servidor (p. ej.: host nsXXX) en su respuesta.
+
+Para más información, [solicite ayuda](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) a Microsoft.
+
+> [!warning]
+>
+> **La negación de Microsoft**
+>
+> Es posible que Microsoft se niegue a desbloquear su dirección o direcciones IP, en cuyo caso OVHcloud no podrá intervenir. Es importante respetar las buenas prácticas de Microsoft.
+>
+
 
 #### Desde el servidor de Gmail
 
