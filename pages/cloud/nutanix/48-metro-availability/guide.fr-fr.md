@@ -18,14 +18,13 @@ order: 06
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
-
 <a name="prerequis"></a>
 
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via Prism Central.
-- Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloudavec des licences **Pack Advanced** si vous avez une offre packagée sur les deux clusters du P.R.A. Ces 3 clusters devont être sur des sites distants pour assurer un maximum de sureté.
+- Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloud avec des licences **Pack Advanced** si vous avez une offre packagée sur les deux clusters du P.R.A. Ces 3 clusters devont être sur des sites distants pour assurer un maximum de sûreté.
 - Avoir une latence de moins de 5ms entre les deux clusters répliqués.
 
 <a name="presentation"></a>
@@ -54,7 +53,7 @@ Vous trouverez ci-dessous le schéma représentant les trois sites :
 
 - [Etape 1 Configuration](#configuration)
     - [Etape 1.1 Interconnexion des trois clusters](#connectcl)
-    - [Etape 1.2 Suppression des enregistrements Prism Central pour les cluster de Roubaix et Gravelines](#supprpc)
+    - [Etape 1.2 Suppression des enregistrements Prism Central pour les clusters de Roubaix et Gravelines](#supprpc)
     - [Etape 1.3 Enregistrement des deux clusters sur Prism Central à Erith](#enregpc)
     - [Etape 1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)
     - [Etape 1.5 Création de deux Storage Containers](#addsc)
@@ -108,7 +107,7 @@ Les informations de configuration des clusters utilisées par notre guide sont l
     - Version du cluster : `6.5`.
 
 
-En plus de ce guide vous pouvez vous appuyer sur ces documentations [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) et [outils avancées](https://docs.ovh.com/fr/nutanix/advanced-tools/) pour vous aider.
+En plus de ce guide vous pouvez vous appuyer sur ces documentations [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) et [outils avancés](https://docs.ovh.com/fr/nutanix/advanced-tools/) pour vous aider.
 
 <a name="configuration"></a>
 
@@ -982,7 +981,7 @@ Et cliquez sur `Done`{.action}.
 > [!primary]
 > La réplication et le plan de reprise ont été inversés à la suite d'une migration des machines virtuelles de Roubaix vers Gravelines.
 >
-> Pour revenir à la situation d'origine il faut effectuer à nouveau une migration à chaud et inverser la réplication et le plan de reprise d'activité.
+> Pour revenir à la situation d'origine, il faut effectuer à nouveau une migration à chaud et inverser la réplication et le plan de reprise d'activité.
 > Il est possible d'utiliser cette partie du guide en cas de déclenchement du plan de reprise d'activité en raison de l'indisponibilité d'un cluster.
 >
 
@@ -990,9 +989,9 @@ Et cliquez sur `Done`{.action}.
 
 #### Etape 2.4 Exécution du plan de reprise d'activité en condition réelle
 
-Nous allons simuler une perte totale de connexion à Gravelines où se trouve trois machines virtuelles dans le plan de reprise d'activité (la passerelle Internet et deux autres machines virtuelles).
+Nous allons simuler une perte totale de connexion à Gravelines où se trouvent trois machines virtuelles dans le plan de reprise d'activité (la passerelle Internet et deux autres machines virtuelles).
 
-Connectez-vous en ligne de commande et exécuter un ping permanent vers l'adresse publique de la passerelle.
+Connectez-vous en ligne de commande et exécutez un ping permanent vers l'adresse publique de la passerelle.
 
 ```bash
 ## Ping à partir d'une console linux distante
@@ -1003,7 +1002,7 @@ Reply from xx.xx.xx.xx: bytes=32 time=23ms TTL=58
 Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
 ```
 
-Laisser la commande ping tourner en permanence et retournez dans Prism Central
+Laissez la commande ping tourner en permanence et retournez dans Prism Central.
 
 Au travers du menu principal cliquez sur `VMs`{.action}. dans le sous-menu **Compute & Storage** 
 
