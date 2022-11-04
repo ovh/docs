@@ -17,7 +17,7 @@ order: 01
 
 **Ce guide est une introduction à l'interface NSX-T**
 
-NSX-T est une solution de gestion de réseau logiciel **Sofware Defined networking (SDN)** fourni par VMware, OVHcloud propose ce service en remplacement de NSX-V. Il est intégré dans les solutions **VMware on OVHcloud**. 
+NSX-T est une solution de gestion de réseau logiciel **Sofware Defined networking (SDN)** fournie par VMware, OVHcloud propose ce service en remplacement de NSX-V. Ce service est disponible dans les solutions **VMware on OVHcloud**. 
 
 Lorsque un client souscrit à l'offre NSX-T et quelle est activée certains paramètres sont déja actifs comme : 
 
@@ -43,7 +43,8 @@ ubsidiary=fr))
 
 La connexion à NSX-T se fait à partir de l'URL de votre cluster VMware fourni par OVHcloud de la forme **https://pcc-xxxxx.ovh.xx".
 
-Sur la page d'accueil de votre cluster cliquez sur l'icône **NSX NSX-T**.
+A partir de la page d'accueil de votre cluster cliquez sur l'icône `NSX NSX-T`{.action}.
+
 
 ![01 NSX-T Connection 01](images/01-nsxt-connection01.png)
 
