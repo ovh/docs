@@ -65,23 +65,23 @@ Les pays suivants sont disponibles pour la géolocalisation des IP :
 >
 > La géolocalisation d’IP est uniquement basée sur des organismes de référence.
 > 
-> Par exemple, le [RIPE NCC](https://www.ripe.net/){.external} sert l'Europe en tant que registre Internet régional.
+> Par exemple, le [RIPE NCC](https://www.ripe.net/){.external} dessert l'Europe en tant que Registre Internet Régional.
 >
-> Si vous avez besoin de vérifier la géolocalisation autrement, contactez directement les organisations concernées. OVHcloud ne peut être impliqué à ce titre.
+> Si vous avez besoin de vérifier la géolocalisation d'une autre manière, contactez directement les organisations concernées. OVHcloud ne pourra vous founir d'assistance à ce sujet.
 
 Une fois le pays sélectionné, cliquez sur `Suivant`{.action}.
 
-Dernière étape, sélectionnez votre instance dans le menu déroulant. Cliquez ensuite sur `Générer le bon de commande`{.action}.
+A la dernière étape, sélectionnez votre instance dans le menu déroulant. Cliquez ensuite sur `Générer le bon de commande`{.action}.
 
 ![Ajout IP](images/buyaddIP_04.png){.thumbnail}
 
 Le bon de commande s'ouvrira automatiquement afin de finaliser votre achat.
 
-Consultez notre guide sur la [gestion des commandes](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/) OVHcloud pour plus de détails.
+Consultez notre guide sur la [gestion des commandes OVHcloud](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/) pour plus de détails.
 
 Vous pouvez également retrouver le bon de commande dans votre espace client, rubrique `Tableau de bord`{.action}, en cliquant sur `Voir mes commandes`{.action}.
 
-La prochaine étape portera sur la configuration de l’IP dans votre système d'exploitation, et vous pouvez [consulter notre guide ici](https://docs.ovh.com/fr/publiccloud/network-services/configure-additional-ip/).
+La prochaine étape consiste à configurer l’IP dans votre système d'exploitation. Consultez [notre guide dédié à cette configuration](https://docs.ovh.com/fr/publiccloud/network-services/configure-additional-ip/).
 
 ## Aller plus loin
 

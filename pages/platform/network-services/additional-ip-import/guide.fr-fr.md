@@ -33,7 +33,7 @@ Il est possible d’importer une adresse Additional IP liée à un autre service
 
 ## En pratique
 
-Tout d’abord, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez votre projet dans la section `Public Cloud `{.action}. Ouvrez `Public IPs`{.action} dans "**Network**" dans le menu de gauche.
+Tout d’abord, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez votre projet dans la section `Public Cloud `{.action}. Ouvrez `Public IPs`{.action} dans « **Network** » dans le menu de gauche.
 
 Ouvrez l'onglet `Additional IP`{.action} et cliquez sur le bouton `Actions`{.action}. Sélectionnez `Importer une Additional IP`{.action} pour afficher toutes les adresses IP pouvant être importées dans votre projet Public Cloud.
 
@@ -45,11 +45,11 @@ Cliquez sur `...`{.action} à côté de l'adresse IP que vous souhaitez importer
 
 ![Importer IP supplémentaire](images/import22_02.png){.thumbnail}
 
-Validez alors avec `Importer`{.action}.
+Validez alors en cliquant sur `Importer`{.action}.
 
 ![Import confirm](images/import22_03.png){.thumbnail}
 
-Patientez quelques minutes le temps que l'importation se réalise. Ouvrez l'onglet `Additional IP`{.action} pour rechercher l'adresse Additional IP importée. Actualisez la page si nécessaire.
+Patientez quelques minutes le temps que l'importation soit réalisée. Ouvrez l'onglet `Additional IP`{.action} pour rechercher l'adresse Additional IP importée. Actualisez la page si nécessaire.
 
 Cliquez sur `...`{.action} à droite et sélectionnez `Modifier l'instance associée`{.action}.
 
@@ -59,7 +59,7 @@ Une fenêtre contextuelle apparaîtra pour choisir l'instance à laquelle votre 
 
 ![Importer IP supplémentaire](images/import22_05.png){.thumbnail}
 
-Cliquez sur `Joindre`{.action} pour confirmer. La page affiche un message de modification.
+Cliquez sur `Joindre`{.action} pour confirmer. La page affiche alors un message de modification.
 
 > [!warning]
 >
@@ -68,7 +68,7 @@ Cliquez sur `Joindre`{.action} pour confirmer. La page affiche un message de mod
 
 Votre adresse Additional IP sera maintenant attachée à votre instance.
 
-La prochaine étape portera sur la configuration de l’IP dans votre système d'exploitation, et vous pouvez consulter notre guide ici : [Configurer une Additional IP](https://docs.ovh.com/fr/publiccloud/network-services/configure-additional-ip/).
+La prochaine étape consiste à configurer l’IP dans votre système d'exploitation. Consultez [notre guide dédié à cette configuration](https://docs.ovh.com/fr/publiccloud/network-services/configure-additional-ip/).
 
 ## Aller plus loin
 
