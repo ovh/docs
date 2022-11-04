@@ -133,7 +133,7 @@ Se o agente registador atual recusar o pedido, contacte o agente registador para
 
 O processo de transferência pode ser reiniciado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `Web Cloud`{.action} e aceda à secção `Nomes de domínio`{.action} e clique em `Operações em curso`{.action}.
 
-> [!Primary]
+> [!primary]
 >
 > A transferência de um domínio com a extensão ".fr" difere ligeiramente do processo descrito acima. Deve desbloquear o seu nome de domínio e recuperar o código de transferência junto do agente de registo atual.
 > Inicie o comando da transferência e introduza o código de transferência como descrito anteriormente.
