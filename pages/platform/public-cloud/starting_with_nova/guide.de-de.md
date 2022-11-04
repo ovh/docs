@@ -1,25 +1,29 @@
 ---
-title: Mit der OpenStack-API starten
+title: Erste Schritte mit der OpenStack API
 slug: getting-started-openstack-api
-excerpt: Erfahren Sie, wie Sie Ihre Instanzen mithilfe des OpenStack Python-Clients verwalten.
-section: Verwaltung via OpenStack
+excerpt: Erfahren Sie hier, wie Sie Ihre Instanzen mithilfe des OpenStack Python Clients verwalten
+section: OpenStack
 order: 3
 ---
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
+>
 
 **Letzte Aktualisierung am 03.11.2022**
 
 ## Ziel
 
-Um Ihre Operationen in der Public Cloud zu automatisieren, können Sie die OpenStack-APIs verwenden, um verschiedene Skripte zu erstellen. 
+Um Ihre Operationen in der Public Cloud zu automatisieren, können Sie die OpenStack API verwenden, mit der verschiedene Skripte erstellt werden können. 
 
 > [!primary]
 >
-> Der Nova Client wurde zuvor für die Verwaltung Ihrer Instanzen und deren Festplatten verwendet. Dieser Kunde wurde nun abgewertet und die Bestellungen wurden in den OpenStack-Python-Client integriert.
+> Der Nova Client wurde bislang für die Verwaltung Ihrer Instanzen und deren Disks verwendet. Dieser Client wird nicht mehr weiterentwickelt und die Funktionen wurden in den Python Client von OpenStack integriert.
 >
 
-Sie können zum Beispiel die Erstellung zusätzlicher Instanzen starten, wenn Ihre Monitoring-Tools Lastspitzen erkennen, um eine Überlastung Ihrer Infrastruktur zu vermeiden. Die Erstellung von Snapshots kann auch regelmäßig programmiert werden.
+Sie können zum Beispiel die Erstellung zusätzlicher Instanzen starten, wenn Ihre Monitoring-Tools Lastspitzen erkennen, um eine Überlastung Ihrer Infrastruktur zu vermeiden. Die regelmßige Erstellung von Snapshots kann ebenfalls eingerichtet werden.
 
-Diese Anleitung hilft Ihnen dabei, die OpenStack-APIs zu verwenden, um Ihre Instanzen mithilfe des OpenStack-Python-Clients zu verwalten.
+**Diese Anleitung hilft Ihnen dabei, die OpenStack API zu verwenden, um Ihre Instanzen mithilfe des OpenStack Python Clients zu verwalten.**
 
 ## Voraussetzungen
 
@@ -29,19 +33,19 @@ Diese Anleitung hilft Ihnen dabei, die OpenStack-APIs zu verwenden, um Ihre Inst
 
 ## In der praktischen Anwendung
 
-Sie erhalten die Liste der Bestellungen, die Sie in der Kundendokumentation erhalten können:
+Sie können die verfügbaren Befehle auflisten:
 
 ```bash
 admin@server-1:~$ openstack command list
 ```
 
-Sie können die angezeigten Befehle filtern, indem Sie die Gruppe angeben: 
+Sie können die aufzulistenden Befehle filtern, indem Sie die Gruppe angeben: 
 
 ```bash
 admin@server-1:~$ openstack command list --group compute
 ```
 
-Sie können auch Informationen zu einer Bestellung erhalten, indem Sie vor dieser Bestellung `help` hinzufügen:
+Sie können Informationen zu Befehlen erhalten, indem Sie jeweils `help` voranstellen:
 
 ```bash
 admin@server-1:~$ openstack help flavor list 
@@ -59,7 +63,7 @@ List flavors ...
 
 > [!success]
 >
-> Die Dokumentation des Kunden finden Sie direkt auf der [OpenStack-Seite](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
+> Die Benutzerdokumentation finden Sie auf der [OpenStack-Seite](https://docs.openstack.org/python-openstackclient/latest/cli/index.html).
 > 
 
 ### Grundlegende Operationen
@@ -68,7 +72,7 @@ List flavors ...
 
 Zunächst muss ein öffentlicher SSH-Schlüssel hinzugefügt werden, damit Sie sich mit den Instanzen verbinden können.
 
-- Bestellungen für SSH-Schlüssel auflisten:
+- Befehle für SSH-Schlüssel auflisten:
 
 ```bash
 admin@server-1:~$ openstack help | grep keypair         
@@ -98,7 +102,7 @@ admin@server-1:~$ openstack keypair list
 
 #### Die Instanz-Modelle auflisten
 
-Die ID des gewünschten Modells muss dann abgerufen werden:
+Die ID des gewünschten Modells muss zuerst abgerufen werden:
 
 ```bash
 admin@server-1:~$ openstack flavor list
@@ -120,7 +124,7 @@ admin@server-1:~$ openstack flavor list
 
 #### Die verfügbaren Images auflisten
 
-Um den Vorgang abzuschließen, rufen Sie einfach die ID des Images ab, das für die Instanz verwendet wird:
+Um die Vorbereitung abzuschließen, rufen Sie die ID des Images ab, das für die Instanz verwendet werden soll:
 
 ```bash
 admin@server-1:~$ openstack image list 
@@ -141,7 +145,7 @@ admin@server-1:~$ openstack image list
 
 #### Instanz erstellen
 
-Mit den zuvor abgerufenen Elementen können Sie eine Instanz erstellen:
+Mit den zuvor abgerufenen Elementen können Sie nun eine Instanz erstellen:
 
 ```bash
 admin@server-1:~$ openstack server create --key-name SSHKEY --flavor d2-2 --image "Ubuntu 22.04" InstanceTest
@@ -178,7 +182,7 @@ admin@server-1:~$ openstack server create --key-name SSHKEY --flavor d2-2 --imag
 +-----------------------------+-----------------------------------------------------+
 ```
 
-Nach einigen Augenblicken kann die Liste der existierenden Instanzen überprüft werden, um die neu erstellte Instanz wiederzufinden:
+Nach kurzer Wartezeit kann die Liste der existierenden Instanzen folgendermaßen überprüft werden, um die neu erstellte Instanz anzuzeigen:
 
 ```bash
 admin@server-1:~$ openstack server list                                                                 
