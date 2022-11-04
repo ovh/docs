@@ -6,10 +6,10 @@ section: NSX-T
 order: 01
 ---
 
-**Dernière mise à jour le 26/10/2022**
+**Dernière mise à jour le 04/11/2022**
 
 > [!warning]
-> Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, il seront finalisées 
+> Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, il seront modifiés lors de la sortie en version BETA et finalisés quand la sortie définitive sera prête. 
 >
 
 
@@ -18,8 +18,12 @@ order: 01
 
 **Ce guide est une introduction à l'interface NSX-T**
 
-NSX-T est une solution de gestion de réseau logiciel **Sofware Defined networking (SDN)** fourni par VMware, OVHcloud propose ce service vient en remplacement de de NSX-V. Il est intégré dans les solutions **VMware on OVHcloud**. 
+NSX-T est une solution de gestion de réseau logiciel **Sofware Defined networking (SDN)** fourni par VMware, OVHcloud propose ce service en remplacement de NSX-V. Il est intégré dans les solutions **VMware on OVHcloud**. 
 
+Lorsque un client souscrit à l'offre NSX-T et quelle est activée certains paramètres sont déja actifs comme : 
+
+- Une passerelle externe nommée **ovh-T0-gw** qui est connectée à Internet et à une autre passerelle interne.
+- Une passerelle interne nommée **ovh-T1-gw** qui est connectée à la passerelle externe.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -48,19 +52,34 @@ Sur la page d'accueil de votre cluster cliquez sur l'icône **NSX NSX-T**.
 Saisissez vos informations d'identifications et cliquez sur `LOG IN`{.action}.
 
 > [!warning]
-> Le compte utilisateur est celui de votre cluster VMWARE suivi de **@nom-fqdn-votre-pcc** 
+> Le compte utilisateur est celui de votre cluster VMware suivi de **@nom-fqdn-votre-pcc** 
 >
 
 ![01 NSX-T Connection 02](images/01-nsxt-connection02.png)
 
+L'interface NSX-T s'affiche.
 
+![01 NSX-T Connection 03](images/01-nsxt-connection03.png)
 
+### Affichage de la configuration par défaut
 
+Nous allons voir la topologie de la configuration réseau
 
+Au travers de l'interface **NSX-T** cliquez sur l'onglet `Networking`{.action}.
 
+![02 Display network topology 01](images/02-display-network-topology01.png)
 
+Un vue de l'ensemble du réseau est affichée.
 
+Cliquez à gauche sur `Network Topology`{.action}.
 
+![02 Display network topology 02](images/02-display-network-topology02.png)
+
+Une vue de la topologie résau est disponible avec deux adresses IP publiques connectées à la passerelle **ovh-T0-gateway** ainsi que la connexion à la passerelle **ovh-T1-gateway**.
+
+A l'heure actuelle il n'existe aucun lien entre votre infrastructure WMware et Internet. 
+
+![03 Display network topology 03](images/02-display-network-topology03.png)
 
 ## Aller plus loin
 
