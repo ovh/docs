@@ -9,7 +9,7 @@ section: Utilizzo avanzato
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 > 
 
-**Ultimo aggiornamento: 18/10/2022**
+**Ultimo aggiornamento: 04/11/2022**
 
 ## Obiettivo
 
@@ -109,8 +109,8 @@ Per sottoscrivere gratuitamente il programma, è sufficiente creare un account J
 Una volta attivato l'account, è necessario completare questo form:
 
 - **Company name**: (nome della tua azienda)
-- **Contatto email address**: (un indirizzo email valido in cui Microsoft può contattarti)
-- **Commendante feedback email address**: (un indirizzo email valido dove potrai ricevere i reclami per spam, le **migliori pratiche** vogliono che l'indirizzo email sia nella forma: **abuse@mydomain.com**)
+- **Contact email address**: (un indirizzo email valido in cui Microsoft può contattarti)
+- **Complaint feedback email address**: (un indirizzo email valido dove potrai ricevere i reclami per spam, le *best practices* vogliono che l'indirizzo email sia nella forma: **abuse@mydomain.com**)
 
 Aggiungi i tuoi indirizzi IP nella sezione `IP address or range`.
 

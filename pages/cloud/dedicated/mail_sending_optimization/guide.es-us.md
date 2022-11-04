@@ -9,7 +9,7 @@ section: Uso avanzado
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 18/10/2022**
+**Última actualización: 04/11/2022**
 
 ## Objectivo
 
@@ -108,8 +108,8 @@ Para contratar gratuitamente el programa, basta con crear una cuenta JMRP/SNDS e
 Una vez activada la cuenta, deberá completar el siguiente formulario:
 
 - **Company name**: (nombre de su empresa)
-- **Contacto email address**: (una dirección de correo electrónico válida en la que Microsoft puede contactar con usted)
-- **Comquejation feedback email address**: (una dirección de correo electrónico válida en la que podrá recibir las quejas por spam, las **buenas prácticas** quieren que la dirección de correo electrónico sea la siguiente: **abuse@mydomain.com**.)
+- **Contact email address**: (una dirección de correo electrónico válida en la que Microsoft puede contactar con usted)
+- **Complaint feedback email address**: (una dirección de correo electrónico válida en la que podrá recibir las quejas por spam, las *best practices* quieren que la dirección de correo electrónico sea la siguiente: **abuse@mydomain.com**.)
 
 A continuación, añada sus direcciones IP a la sección `IP address or range`.
 

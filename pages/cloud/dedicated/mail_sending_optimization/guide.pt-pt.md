@@ -9,7 +9,7 @@ section: Utilização avançada
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 18/10/2022**
+**Última atualização: 04/11/2022**
 
 ## Objetivo
 
@@ -70,15 +70,15 @@ Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&
 
 No menu pendente do **Serviço**, selecione um serviço com um endereço IPv4:
 
-![Reverse IP](images/servicedropmenu.png)
+![Reverse IP](images/servicedropmenu.png){.thumbnail}
 
 Clique no botão `...`{.action} à direita da linha correspondente e, a seguir, em `Modificar a reverse`{.action}:
 
-![Reverse IP](images/setreversedns.png)
+![Reverse IP](images/setreversedns.png){.thumbnail}
 
 Introduza o seu domínio na secção `Reverse` e clique em `Validar`{.action}.
 
-![Reverse IP](images/enterreverse.png)
+![Reverse IP](images/enterreverse.png){.thumbnail}
 
 > [!primary]
 > Ao introduzir o seu nome de domínio na reverse, este verifica imediatamente se o registo A remete para o mesmo IP. Isto é utilizado nos procedimentos antisspam, pelo que o seu registo A deve ser válido e propagado. Há certas regras a seguir aquando da introdução da reverse:
@@ -108,9 +108,9 @@ Para subscrever gratuitamente o programa, basta criar uma conta JMRP/SNDS no seg
 
 Uma vez a conta ativada, deve preencher o seguinte formulário:
 
-- **Company name**\: (nome da sua empresa)
-- **Contacto de e-mail**: (um endereço de e-mail válido onde a Microsoft pode contactá-lo)
-- **Complant feedback email address**: (um endereço de e-mail válido onde poderá receber as queixas por spam, las **mejores prácticas** exigen que o endereço de e-mail seja o seguinte: **abuse@mydomain.com**.)
+- **Company name**: (nome da sua empresa)
+- **Contact email address**: (um endereço de e-mail válido onde a Microsoft pode contactá-lo)
+- **Complaint feedback email address**: (um endereço de e-mail válido onde poderá receber as queixas por spam, las *best practices* exigen que o endereço de e-mail seja o seguinte: **abuse@mydomain.com**.)
 
 A seguir, adicione os endereços IP à secção `IP address or range`.
 
