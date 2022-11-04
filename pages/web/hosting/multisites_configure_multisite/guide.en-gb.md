@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 03
 ---
 
-**Last updated 22nd August 2022**
+**Last updated 04th November 2022**
 
 ## Objective
 
@@ -74,6 +74,11 @@ You will now need to customise the way you add your domain or subdomain. Some of
 |Enable firewall|Enables a firewall (request analysis) for the selected domain. To find out more about this, go to [our ModSecurity page](https://www.ovhcloud.com/en-gb/web-hosting/options/){.external}.|
 |Separate logs|Activates a new space for logs on the selected domain. You will need to choose a domain name from the list. The selected domain will be used as an access name for this new space. Find out more about this on [our detailed statistics page](https://www.ovhcloud.com/en-gb/web-hosting/uc-website-traffic-analysis/){.external}.|
 
+> [!warning]
+>
+> You cannot enable separate logs for external domains, it is only possible for domains registered with OVHcloud.
+>
+
 Once you have entered this information, click `Next`{.action}. Then check the summary that appears.
 
 ![multisite](images/add-multisite-step3.png){.thumbnail}
@@ -101,7 +106,7 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 >
 > |Field|Where to find this information|Action to take|
 > |---|---|---|
-> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.mydomain.ovh) in the DNS zone authoritative for the domain name to be added.<br></br>To find the right zone, find the [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/#understanding-dns) your domain is linked to. You will need to validate only the primary domain, not all subdomains.|
+> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.mydomain.ovh) in the DNS zone authoritative for the domain name to be added.<br></br It is important to note that if you want to add blog.mydomain.ovh you have to create the record for the subdomain ovhcontrol.mydomain.ovh and not ovhcontrol.blog.mydomain.ovh <br></br>To find the right zone, find the [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/#understanding-dns) your domain is linked to. You will need to validate only the primary domain, not all subdomains.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -147,7 +152,7 @@ However, if you would like to set up your website manually, you can put it onlin
 >
 > If you would like to add several websites, you will need to repeat this step.
 >
-> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. Our [Web Hosting page](https://www.ovhcloud.com/en-gb/web-hosting/){.external} shows the number of websites you can host on your plan.
+> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. Our [Web Hosting page](https://www.ovhcloud.com/en-gb/web-hosting/){.external} shows the recommended number of websites you can host on your plan.
 >
 
 ## Go further
