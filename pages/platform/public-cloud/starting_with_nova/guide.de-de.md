@@ -23,8 +23,8 @@ Diese Anleitung hilft Ihnen dabei, die OpenStack-APIs zu verwenden, um Ihre Inst
 
 ## Voraussetzungen
 
-- [Umgebung für die Verwendung der OpenStack API vorbereiten](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
-- [Die OpenStack Umgebungsvariablen laden](../charger-les-variables-denvironnement-openstack/)
+- [Umgebung für die Verwendung der OpenStack-API vorbereiten](../vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
+- [OpenStack Umgebungsvariablen einrichten](../die-variablen-der-umgebung-openstack-laden/)
 
 
 ## In der praktischen Anwendung

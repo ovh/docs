@@ -25,8 +25,8 @@ Este guia ajudá-lo-á a gerir as suas instâncias com a ajuda do cliente Python
 
 ## Requisitos
 
-- [Preparar o ambiente para utilizar a API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
-- [Carregar as variáveis de ambiente OpenStack](../charger-les-variables-denvironnement-openstack/)
+- [Preparar o ambiente para utilizar a API OpenStack](../preparar_o_ambiente_para_utilizar_a_api_openstack/)
+- [Carregar as variáveis de ambiente OpenStack](../carregar-as-variaveis-de-ambiente-openstack/)
 
 
 ## Instruções

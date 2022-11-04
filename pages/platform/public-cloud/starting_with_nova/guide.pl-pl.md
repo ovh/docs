@@ -25,8 +25,8 @@ Niniejszy przewodnik pomoże Ci w korzystaniu z API OpenStack w zarządzaniu ins
 
 ## Wymagania początkowe
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
-- [Pobranie zmiennych środowiskowych OpenStack](../charger-les-variables-denvironnement-openstack/)
+- [Przygotowanie środowiska do korzystania z API OpenStack](../przygotowanie_srodowiska_dla_api_openstack/)
+- [Zmienne środowiskowe OpenStack](../zmienne-srodowiskowe-openstack/)
 
 
 ## W praktyce
