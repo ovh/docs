@@ -23,7 +23,7 @@ You might need to configure an Additional IP address on your instances because:
 
 Instead of buying additional ones, you can import an Additional IP address that is linked to a different OVHcloud service.
 
-**This guide explains how to import this Additional IP into your OVHcloud Public Cloud project.**
+**This guide explains how to import Additional IP addresses into your OVHcloud Public Cloud project.**
 
 ## Requirements
 
@@ -33,44 +33,44 @@ Instead of buying additional ones, you can import an Additional IP address that 
 
 ## Instructions
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), select your project from the `Public Cloud`{.action} section. Then select `Additional IP`{.action} in the "Network" section.
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), select your project from the `Public Cloud`{.action} section. Open `Public IPs`{.action} under "**Network**" in the left-hand menu.
 
-Click on `Actions`{.action} and select `Import an IP`{.action} to display all the IP addresses that can be imported into your Public Cloud project.
+Open the `Additional IP`{.action} tab and click on the `Actions`{.action} button. Select `Import an Additional IP`{.action} to display all the IP addresses that can be imported into your Public Cloud project.
 
-![IP Section](images/import1.png){.thumbnail}
+![IP Section](images/import22_01.png){.thumbnail}
 
-If you do not currently have an Additional IP on your Public Cloud project, the option to import an IP will be displayed on the homepage.
+If you do not currently have an Additional IP on your Public Cloud project, the option to import one will be displayed on the homepage.
 
 Click on `...`{.action} next to the IP address you would like to import and click `Import this Additional IP`{.action}.
 
-![Import Additional IP](images/import2.png){.thumbnail}
+![Import Additional IP](images/import22_02.png){.thumbnail}
 
 Confirm by clicking on `Import`{.action}.
 
-![Import confirm](images/importconfirm.png){.thumbnail}
+![Import confirm](images/import22_03.png){.thumbnail}
 
-The page will refresh and the information that the IP address was migrated successfully will appear.
+Allow a few minutes for the import process to complete. Open the `Additional IP`{.action} tab to find the imported Additional IP address. Refresh the page if necessary.
 
-When the Additional IP has been successfully imported, click on `...`{.action} on the right and select `Modify the associated instance`{.action}.
+Click on `...`{.action} on the right and select `Update attached instance`{.action}.
 
-![Import Additional IP](images/modifyinstance.png){.thumbnail}
+![Import Additional IP](images/import22_04.png){.thumbnail}
 
-A pop-up will appear to choose the instance to which your IP address should be attached.
+A popup window will appear to choose the instance to which your IP address should be attached.
 
-![Import Additional IP](images/modifyinstance1.png){.thumbnail}
+![Import Additional IP](images/import22_05.png){.thumbnail}
 
 Click on `Attach`{.action} to confirm. The page will display a modification message.
 
 > [!warning]
 >
-> An Additional IP cannot be moved between different zones. For example, an IP located in the SBG data center can be moved to GRA or RBX, but cannot be moved to BHS.
+> An Additional IP cannot be moved between different zones. For example, an IP located in the SBG data centre can be moved to GRA or RBX, but cannot be moved to BHS.
 >
-
-![Import Additional IP](images/modifycompleted.png){.thumbnail}
 
 The IP address is now associated with your instance.
 The next step will be the IP configuration in your OS; please refer to our [guide](https://docs.ovh.com/sg/en/publiccloud/network-services/configure-additional-ip/).
 
 ## Go further
+
+[Configuring an Additional IP](https://docs.ovh.com/sg/en/publiccloud/network-services/configure-additional-ip/)
 
 Join our community of users on <https://community.ovh.com/en/>.
