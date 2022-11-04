@@ -32,7 +32,7 @@ Below are examples of existing models that can be deployed with **AI Deploy**. H
 *References:*
 
 - YOLOv5 [repository](https://github.com/ultralytics/yolov5)
-- YOLOv7 [repository]((https://github.com/WongKinYiu/yolov7)
+- YOLOv7 [repository](https://github.com/WongKinYiu/yolov7)
 - Access and load YOLOv5 trained models from [PyTorch Hub](https://pytorch.org/hub/ultralytics_yolov5/)
 
 ### DALL-E mini
