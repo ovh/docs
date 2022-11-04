@@ -75,7 +75,7 @@ Cliquez à gauche sur `Network Topology`{.action}.
 
 Une vue de la topologie résau est disponible avec deux adresses IP publiques connectées à la passerelle **ovh-T0-gateway** ainsi que la connexion à la passerelle **ovh-T1-gateway**.
 
-A l'heure actuelle il n'existe aucun lien entre votre infrastructure WMware et Internet. 
+Dans la configuration initiale il n'existe aucun lien entre votre infrastructure WMware et Internet. 
 
 ![03 Display network topology 03](images/02-display-network-topology03.png)
 
