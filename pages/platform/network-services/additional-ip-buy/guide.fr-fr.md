@@ -6,7 +6,7 @@ section: Additional IP
 order: 02
 ---
 
-**Dernière mise à jour le 02/11/2022**
+**Dernière mise à jour le 06/11/2022**
 
 > [!primary]
 >
@@ -32,52 +32,56 @@ Ces adresses Additional IP ne pourront être migrées que vers les instances d'u
 
 ## En pratique
 
-Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
-Dans le menu de gauche, cliquez sur `Additional IP`{.action} dans la section `Network`.
+Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
-Cliquez ensuite sur le bouton `Actions`{.action} puis choisissez `Acheter des Additional IPs Cloud`{.action}.
+Dans le menu de gauche, ouvrez `Public IPs`{.action} dans `Network`.
 
-![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
+Ouvrez l'onglet `Additional IP`{.action} et cliquez sur le bouton `Actions`{.action}. Sélectionnez `Ajouter une nouvelle IP`{.action}.
 
-Un nouveau menu apparaîtra alors :
+![Ajout IP](images/buyaddIP_01.png){.thumbnail}
 
-![failoverIP](images/buyfailoverip2-2021.png){.thumbnail}
+À l'étape 1 de la commande, cliquez sur `Suivant`{.action}.
 
-Renseignez les informations suivantes :
+![Ajout IP](images/buyaddIP_02.png){.thumbnail}
 
-* Le nombre d'Additional IP souhaitées.
-* L'instance sur laquelle seront routées les adresses IP.
-* La géolocalisation des adresses IP.
+L'étape 2 permet de sélectionner un pays pour la nouvelle adresse IP.
 
-Vous devrez également accepter les conditions générales de service.
+![Ajout IP](images/buyaddIP_03.png){.thumbnail}
 
-Les géolocalisations disponibles en Europe sont :
+Les pays suivants sont disponibles pour la géolocalisation des IP :
 
-|          |          |          |           |                    |
-|:--------:|:--------:|:--------:|:---------:|:------------------:|
-| Belgique | Finlande |  France  | Allemagne | République Tchèque |
-|  Irlande |  Italie  | Lituanie |  Pays-bas |     Royaume-Uni    |
-| Portugal |  Espagne |  Pologne |  Lituanie |                    |
-
+|          |          |          |           |                |
+|:--------:|:--------:|:--------:|:---------:|:--------------:|
+| Belgique  | Finlande  | France   | Allemagne   | République Tchèque |
+| Irelande  |  Italie   | Lituanie | Pays-bas | Royaume-Uni    |
+| Portugal |  Espagne   |  Pologne |  Suisse |                 |
 
 > [!primary] **Disponibilité**
 > 
-> Il est possible que certains des pays ci dessus ne soient pas présents en fonction des disponibilités des adresses IP.
+> Il est possible que certains de ces pays ne soient pas listés, en fonction de la disponibilité actuelle des adresses IPv4.
 > 
 
-> [!primary] **Géolocalisation**
+> [!primary] **Location**
 >
-> La géolocalisation se base uniquement sur les organismes de référence.
+> La géolocalisation d’IP est uniquement basée sur des organismes de référence.
 > 
-> Par exemple, pour RIPE : [https://www.ripe.net/](https://www.ripe.net/){.external}
+> Par exemple, le [RIPE NCC](https://www.ripe.net/){.external} sert l'Europe en tant que registre Internet régional.
 >
-> En cas de vérification sur d'autres bases, merci de vous rapprocher directement des organismes en question. OVHcloud n'interviendra pas auprès de ceux-ci.
+> Si vous avez besoin de vérifier la géolocalisation autrement, contactez directement les organisations concernées. OVHcloud ne peut être impliqué à ce titre.
 
-Cliquez sur `Générer le bon de commande`{.action} pour être redirigé automatiquement vers celui-ci (l'affichage des pop-ups doit être autorisé sur votre navigateur).
+Une fois le pays sélectionné, cliquez sur `Suivant`{.action}.
 
-Vous pourrez également retrouver le bon de commande dans votre espace client, en vous rendant dans le `Tableau de bord`{.action} puis en cliquant sur `Voir mes commandes`{.action}.
+Dernière étape, sélectionnez votre instance dans le menu déroulant. Cliquez ensuite sur `Générer le bon de commande`{.action}.
 
-Consultez notre guide sur la [gestion des commandes OVHcloud](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/) pour plus de détails.
+![Ajout IP](images/buyaddIP_04.png){.thumbnail}
+
+Le bon de commande s'ouvrira automatiquement afin de finaliser votre achat.
+
+Consultez notre guide sur la [gestion des commandes](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/) OVHcloud pour plus de détails.
+
+Vous pouvez également retrouver le bon de commande dans votre espace client, rubrique `Tableau de bord`{.action}, en cliquant sur `Voir mes commandes`{.action}.
+
+La prochaine étape portera sur la configuration de l’IP dans votre système d'exploitation, et vous pouvez [consulter notre guide ici](https://docs.ovh.com/fr/publiccloud/network-services/configure-additional-ip/).
 
 ## Aller plus loin
 
