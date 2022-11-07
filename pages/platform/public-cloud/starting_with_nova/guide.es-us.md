@@ -2,7 +2,7 @@
 title: Empezar con la API de OpenStack
 slug: getting-started-openstack-api
 excerpt: Cómo gestionar sus instancias con ayuda del cliente Python OpenStack
-section: Gestión a través de OpenStack
+section: OpenStack
 order: 3
 ---
 
