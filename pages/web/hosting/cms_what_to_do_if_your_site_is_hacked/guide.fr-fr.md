@@ -6,7 +6,7 @@ section: "Cas d'usage"
 order: 01
 ---
 
-**Dernière mise à jour le 27/10/2022**
+**Dernière mise à jour le 07/11/2022**
 
 ## Objectif
 
