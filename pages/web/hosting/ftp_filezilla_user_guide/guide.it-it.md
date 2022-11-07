@@ -182,7 +182,7 @@ Appare un menu contestuale e ti vengono proposte diverse opzioni:
 
 ![hosting](images/1830.png){.thumbnail}
 
-## Informazioni utili
+## Informazioni utili <a name="useful-information"></a>
 
 ### Diritti di accesso (Chmod) su file e cartelle
 

@@ -81,7 +81,7 @@ Se il tuo hosting è stato chiuso meno di due settimane fa e contiene diversi si
 
 Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provider specializzato](https://partner.ovhcloud.com/it/) per effettuare un audit di sicurezza delle tue soluzioni. 
 
-### Step 4: riattivare il tuo hosting Web
+### Step 4: riattivare il tuo hosting Web <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >

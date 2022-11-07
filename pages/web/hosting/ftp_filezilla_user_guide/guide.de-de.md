@@ -182,7 +182,7 @@ Es erscheint ein Kontextmenü mit mehreren Optionen:
 
 ![Hosting](images/1830.png){.thumbnail}
 
-## Nützliche Informationen
+## Nützliche Informationen <a name="useful-information"></a>
 
 ### Zugriffsrechte auf Dateien und Ordner (CHMOD)
 

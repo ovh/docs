@@ -85,7 +85,7 @@ Jeśli Twój hosting został zamknięty mniej niż dwa tygodnie temu i zawiera k
 
 Jeśli Twój hosting został zamknięty dwa tygodnie temu, skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) usług hostingowych w celu przeprowadzenia audytu bezpieczeństwa swoich rozwiązań. 
 
-### Etap 4: reaktywacja hostingu
+### Etap 4: reaktywacja hostingu <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >

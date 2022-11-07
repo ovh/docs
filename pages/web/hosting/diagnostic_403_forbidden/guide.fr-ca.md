@@ -81,7 +81,7 @@ Si votre hébergement a été fermé il y a moins de deux semaines et qu'il cont
 
 Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) afin d'effectuer un audit de sécurité de vos solutions. 
 
-### Étape 4 : réactiver votre hébergement web
+### Étape 4 : réactiver votre hébergement web <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >
