@@ -5,7 +5,7 @@ excerpt: 'Find out how to send emails and limit the risk of them being marked as
 section: Tutorial
 ---
 
-**Last updated 08th December 2021**
+**Last updated 4th November 2022**
 
 ## Objective
 
@@ -16,7 +16,7 @@ Anti-spam policies are becoming increasingly strict. To ensure that your emails 
 > [!warning]
 >
 > OVHcloud provides services that you are responsible for. In fact, as we do not not have administrative access to these machines, we are not administrators and we cannot provide you with support. This means that it is up to you to manage the software and security daily. 
-We have provided you with this guide in order to help you with common tasks. However, we advise contacting a specialist provider if you experience any difficulties or doubts about administration, usage or server security.
+> We have provided you with this guide in order to help you with common tasks. However, we advise contacting a specialist provider if you experience any difficulties or doubts about administration, usage or server security.
 >
 
 ## Requirements
@@ -25,7 +25,7 @@ We have provided you with this guide in order to help you with common tasks. How
 
 ## Instructions
 
-### Configure the SPF record.
+### Configure the SPF record <a name="spfrecord"></a>
 
 If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Public Cloud instance or Hosted Private Cloud VM), the optimal SPF record is: `v=spf1 ip4:server_ipv4 ~all`. Please remember to replace 'server_ipv4' with your server's IPv4 address.
 
@@ -43,13 +43,13 @@ For further information on the SPF record, refer to the following page: <http://
 
 You can go even further by configuring the SPF record of a specific domain, or by specifying an IPv6 address. You can find out how to do this in our guide to [adding an SPF record](https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/).
 
-### Configure the DKIM record.
+### Configure the DKIM record
 
 By configuring the DKIM (DomainKeys Identified Mail) record, you add extra protection to prevent your emails from getting marked as spam. In simple terms, the DKIM is a signature that enables the sender’s domain to be authenticated.
 
 The authentication is carried out by a DKIM key that needs to be added in your DNS zone. There are different generators for DKIM keys, including: <http://dkimcore.org/tools/keys.html>. Please follow the instructions listed on your chosen generator website.
 
-### Configure the reverse IP.
+### Configure the reverse IP <a name="reverseip"></a>
 
 To further optimise email sending and lower the risk of your emails being blocked, you can also configure a reverse IP with your domain name.
 
@@ -65,15 +65,15 @@ In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fro
 
 In the **“Service”** drop-down menu, select a service with an IPv4 address:
 
-![Reverse IP](images/servicedropmenu.png)
+![Reverse IP](images/servicedropmenu.png){.thumbnail}
 
 Click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
 
-![Reverse IP](images/setreversedns.png)
+![Reverse IP](images/setreversedns.png){.thumbnail}
 
 Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.action}
 
-![Reverse IP](images/enterreverse.png)
+![Reverse IP](images/enterreverse.png){.thumbnail}
 
 > [!primary]
 > When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be valid and propagated. There are certain rules to follow while entering the reverse:
@@ -92,7 +92,38 @@ Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.acti
  
 Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server.
 
-To do this, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) with Microsoft. 
+Before starting the procedure to whitelist your IP, make sure you have a [reverse IP](#reverseip) configured.<br>
+
+Microsoft also checks the SPF field, so we recommend having set an [SPF record](#spfrecord) as well.
+
+Next, you will need to sign the SNDS (Smart Network Data Services) and JMRP (Junk Mail Reporting Partner Program) contracts. To subscribe, create a free account at <https://postmaster.live.com/snds/JMRP.aspx?wa=wsignin1.0>.
+
+Once your account is created, you must fill in the following form: 
+
+- **Company name**:
+- **Contact email address**: (A valid email address where Microsoft can contact you)
+- **Complaint feedback email address**: (A valid email address where you will receive spam complaints. The **best practices** want the email to be in the form: **abuse@mydomain.com**.)
+
+Next, add your IP addresse(s) in the section `IP address or range`.
+
+When clicking on `Add new Network`, you will be asked to choose a contact email to authorize the request. Enter the address **abuse@mydomain.com**  (obviously replace it with your own address) previously defined to receive spam complaints.
+
+Once the information is filled in, click on `Begin Setup` to transmit the request. Microsoft will then send you an `SNDS-JMRP Contract` email, and a second email to **mydomain.com**.
+
+Once the confirmations are approved, the subscription to JMRP/SNDS will be completed.
+
+Once this is done and if your IP appears to be blocked, you can then request to delist it via the [junkmail procedure](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062){.external} (usually within 48H).
+
+In some cases, Microsoft may ask the date of the first billing of your IP/server. In this situation, you can send a copy of your bill and add your IP/server (ex : host nsXXX) in your reply.
+
+For additional information, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656){.external} with Microsoft. 
+
+> [!warning]
+> 
+> **Refusal by Microsoft**
+>
+> It may happen that Microsoft refuses to delist your IP(s), in which case OVHcloud cannot intervene. It is important to respect the best practices of Microsoft.
+> 
 
 #### To a Gmail server
 

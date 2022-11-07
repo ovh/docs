@@ -131,7 +131,7 @@ If a refusal is issued by the current registrar, contact them to find out why th
 
 The transfer process can be restarted from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. Select `Web Cloud`{.action} and go to the `Domain names`{.action}, then click on `Ongoing operations`{.action}.
 
-> [!Primary]
+> [!primary]
 >
 > The transfer of a domain with the extension ".fr" differs slightly from the process described above. You will need to unlock your domain name and retrieve its transfer code from your current domain name registrar.
 > Initiate the transfer order and enter the transfer code as described above.

@@ -6,7 +6,7 @@ section: Additional IP
 order: 02
 ---
 
-**Last updated 2nd November 2022**
+**Last updated 6th November 2022**
 
 > [!primary]
 >
@@ -24,62 +24,64 @@ To meet these needs, you can order an Additional IP address for your Public Clou
 
 These Additional IP addresses can only be migrated to instances in the same project.
 
-**This guide explains how to buy an Additional IP for an OVHcloud Public Cloud project.**
+**This guide explains how to obtain an Additional IP for an OVHcloud Public Cloud project.**
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
-- A [Public Cloud instance](https://docs.ovh.com/us/en/public-cloud/public-cloud-first-steps/) in your OVHcloud account.
+- A [Public Cloud instance](https://docs.ovh.com/us/en/public-cloud/public-cloud-first-steps/) in your Public Cloud project
 
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and open your `Public Cloud`{.action} project.
-In the left-hand menu, click on `Additional IP`{.action} in the 'Network' section.
+In the left-hand menu, open `Public IPs`{.action} under `Network`.
 
-Then click on the `Actions`{.action} button and choose `Buy Cloud Additional IPs`{.action}.
+Open the `Additional IP`{.action} tab and click on the `Actions`{.action} button. Select `Add a new IP`{.action}.
 
-![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
+![Adding IP](images/buyaddIP_01.png){.thumbnail}
 
-A new menu will then appear:
+In step 1 of the order process, click on `Next`{.action}.
 
-![failoverIP](images/buyfailoverip2-2021.png){.thumbnail}
+![Adding IP](images/buyaddIP_02.png){.thumbnail}
 
-Enter the following information:
+Step 2 allows you to select a country for the new IP address.
 
-- The number of Additional IPs you want to order
-- The instance on which the IPs will be routed
-- The location of the IPs
+![Adding IP](images/buyaddIP_03.png){.thumbnail}
 
-You will also need to accept the General Terms and Conditions of Service.
-
-They are available in the following locations in Europe:
+The following countries are available for IP geolocation:
 
 |          |          |          |           |                |
 |:--------:|:--------:|:--------:|:---------:|:--------------:|
 | Belgium  | Finland  | France   | Germany   | Czech Republic |
 | Ireland  |  Italy   | Lithuania | Netherlands | United Kingdom    |
-| Portugal |  Spain   |  Poland |  Lithuania |                    |
-
+| Portugal |  Spain   |  Poland |  Switzerland |                 |
 
 > [!primary] **Availability**
 > 
-> Some of the countries listed above may not be listed, depending on the 
-> availability of IP addresses.
+> Some of these countries may not be listed, depending on the current availability of IPv4 addresses.
 > 
 
 > [!primary] **Location**
 >
-> Location is only based on benchmark organisations.
+> IP geolocation is solely based on benchmark organisations.
 > 
-> For example, for RIPE blocks: [https://www.ripe.net/](https://www.ripe.net/){.external}
+> For example, [RIPE NCC](https://www.ripe.net/){.external} is serving Europe as the Regional Internet Registry.
 >
-> If you need to check this for other organisations, please contact them directly. OVHcloud cannot be involved in this regard.
+> If you need to verify geolocation otherwise, contact the concerned organisations directly. OVHcloud cannot be involved in this regard.
 
-Click on `Generate purchase order`{.action} to be automatically redirected to it (pop-ups must be authorised on your browser).
+Once you have selected a country, click on `Next`{.action}.
 
-You can also find the purchase order in your customer area, by going to the `Dashboard`{.action} section and clicking on `View my orders`{.action}.
+In the final step, select your instance from the drop-down menu. Then click on `Generate purchase order`{.action}.
+
+![Adding IP](images/buyaddIP_04.png){.thumbnail}
+
+The purchase order will open automatically for you to complete your purchase.
 
 See our guide on [managing OVHcloud orders](https://docs.ovh.com/us/en/billing/managing-ovh-orders/) for more details.
+
+You can also find the purchase order in your Control Panel, by going to the `Dashboard`{.action} section and clicking on `View my orders`{.action}.
+
+The next step will be the IP configuration in your OS; please refer to our [guide](https://docs.ovh.com/us/en/publiccloud/network-services/configure-additional-ip/).
 
 ## Go further
 

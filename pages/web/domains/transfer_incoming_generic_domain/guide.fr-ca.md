@@ -128,7 +128,7 @@ Si un refus est émis par le bureau d'enregistrement actuel, contactez le pour s
 
 Le processus de transfert peut être redémarré à partir de [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Sélectionnez `Web Cloud`{.action} et accédez à la section `Noms de domaine`{.action}, puis cliquez sur `Opérations en cours`{.action}.
 
-> [!Primary]
+> [!primary]
 >
 > Le transfert d'un domaine avec l'extension ".fr" diffère légèrement du processus décrit ci-dessus. Vous devez déverrouiller votre nom de domaine et récupérer son code de transfert auprès du bureau d'enregistrement actuel.
 > Initiez la commande du transfert et renseignez le code de transfert comme décrit précédemment.
