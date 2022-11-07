@@ -6,6 +6,8 @@ section: Administratif
 order: 4
 ---
 
+<link rel="stylesheet" href="https://fpillotovh.github.io/icons/icons.css">
+
 **Dernière mise à jour le 20/07/2022**
 
 ## Objectif
