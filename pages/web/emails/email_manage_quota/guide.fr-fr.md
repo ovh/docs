@@ -48,17 +48,17 @@ Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Vous pouvez observer l'état de consommation du stockage de votre adresse e-mail dans la colonne `Taille`.<br>
+>> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Vous pouvez observer l'état de consommation du stockage de votre adresse e-mail dans la colonne `Taille`.<br><br>
 >>![email](images/email-quota-quotacontrolpanel01.png){.thumbnail}<br>
 >>
 > **Email Pro**
 >>
->> Cliquez sur `E-mail Pro`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Vous pouvez observer l'état de consommation du stockage de votre adresse e-mail dans la colonne `Taille`.<br>
+>> Cliquez sur `E-mail Pro`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Vous pouvez observer l'état de consommation du stockage de votre adresse e-mail dans la colonne `Taille`.<br><br>
 >>![email](images/email-quota-quotacontrolpanel02.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
->> Cliquez sur `Microsoft`{.action} / `Exchange`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Vous pouvez observer l'état de consommation du stockage de votre adresse e-mail dans la colonne `Taille`.<br>
+>> Cliquez sur `Microsoft`{.action} / `Exchange`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Vous pouvez observer l'état de consommation du stockage de votre adresse e-mail dans la colonne `Taille`.<br><br>
 >>![email](images/email-quota-quotacontrolpanel03.png){.thumbnail}<br>
 >>
 
@@ -69,12 +69,12 @@ Pour vous connecter au webmail, dirigez-vous vers la page <https://www.ovhcloud.
 > [!tabs]
 > **OWA** : **Emails (MXplan)** / **Email Pro** / **Exchange**
 >>
->> Cliquez sur le bouton <i class=".icons-gear-concept icons-masterbrand-blue"></i> en haut à droite de votre écran, cliquez sur `Options`{.action}. Cliquez sur `Mon compte`{.action} dans la section `Général`{.action} dans la colonne de gauche. Vous pouvez visualiser le quota actuel de votre compte dans la partie inférieure droite du formulaire.<br>
+>> Cliquez sur le bouton <i class=".icons-gear-concept icons-masterbrand-blue"></i> en haut à droite de votre écran, cliquez sur `Options`{.action}. Cliquez sur `Mon compte`{.action} dans la section `Général`{.action} dans la colonne de gauche. Vous pouvez visualiser le quota actuel de votre compte dans la partie inférieure droite du formulaire.<br><br>
 >>![email](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
 > **Roundcube** : **Emails (MXplan)**
 >>
->> Lorsque vous êtes connecté à Roundcube, le quota est visible dans la partie inférieure gauche, matérialisé par un camembert et le pourcentage consommé.<br>
+>> Lorsque vous êtes connecté à Roundcube, le quota est visible dans la partie inférieure gauche, matérialisé par un camembert et le pourcentage consommé.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
 >>
 
@@ -103,7 +103,7 @@ Il est possible d'augmenter la capacité de stockage de votre compte e-mail, si 
 >>
 >> Un compte Mxplan peut faire entre 2,5Mo et 5Go. Si votre compte e-mail est saturé, que sa capacité est inférieure 5Go, vous pouvez modifier sa capacité via l'espace client.<br>
 >> Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Modifier`{.action}.
->> Depuis la case `Quota`{.action}, sélectionner la taille qui vous convient, cliquez sur `suivant`{.action} puis `Valider`{.action}.<br>
+>> Depuis la case `Quota`{.action}, sélectionner la taille qui vous convient, cliquez sur `suivant`{.action} puis `Valider`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
 >>
 > **Email Pro**
@@ -113,7 +113,7 @@ Il est possible d'augmenter la capacité de stockage de votre compte e-mail, si 
 > **Exchange**
 >>
 >> Si votre compte Exchange arrive à saturation de ses 50Go, il est possible de souscrire à une option d'extension pour étendre sa capacité à 300Go.<br>
->> Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Augmenter la capacité à 300Go`{.action}. Choisissez le mode de facturation qui vous convient et cliquez sur `valider`{.action}.<br>
+>> Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Augmenter la capacité à 300Go`{.action}. Choisissez le mode de facturation qui vous convient et cliquez sur `valider`{.action}.<br><br>
 >>![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
 
@@ -137,33 +137,33 @@ Vous trouverez ci-dessous, une liste non-exhaustive des guides de configuration 
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Configuration d'un comtpe MXplan sur **Windows**<br>
+>> Configuration d'un comtpe MXplan sur **Windows** :<br><br>
 >> - [Courrier sur Windows 10](https://docs.ovh.com/fr/emails/configuration-courrier-sur-windows-10/) (inclus avec Windows)<br>
 >> - [Outlook pour Mxplan](https://docs.ovh.com/fr/emails/configuration-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/) (Gratuit)<br>
->> Configuration d'un comtpe MXplan sur **macOS**<br>
+>> - [Thunderbird](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/) (Gratuit)<br><br>
+>> Configuration d'un comtpe MXplan sur **macOS** :<br><br>
 >> - [Mail](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-el-capitan/) (inclus avec macOS)<br>
 >> - [Outlook](https://docs.ovh.com/fr/emails/configuration-outlook-2016-mac/)<br>
 >> - [Thunderbird](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/) (Gratuit)<br>
 >>
 > **E-mail Pro**
 >>
->> Configuration d'un comtpe E-mail Pro sur **Windows**<br>
+>> Configuration d'un comtpe E-mail Pro sur **Windows** :<br><br>
 >> - [Courrier sur Windows 10](https://docs.ovh.com/fr/emails-pro/configuration-courrier-windows-10/) (inclus avec Windows)<br>
 >> - [Outlook](https://docs.ovh.com/fr/emails-pro/configuration-outlook-2016/)<br>
->> - [Thunderbird](https://docs.ovh.com/fr/emails-pro/configuration-thunderbird-45-8-0/) (Gratuit)<br>
->> Configuration d'un comtpe E-mail Pro sur **macOS**<br>
+>> - [Thunderbird](https://docs.ovh.com/fr/emails-pro/configuration-thunderbird-45-8-0/) (Gratuit)<br><br>
+>> Configuration d'un comtpe E-mail Pro sur **macOS** :<br><br>
 >> - [Mail](https://docs.ovh.com/fr/emails-pro/configurer-email-pro-mail-macos/) (inclus avec macOS)<br>
 >> - [Outlook](https://docs.ovh.com/fr/emails-pro/configuration-outlook-2016-mac/)<br>
 >> - [Thunderbird](https://docs.ovh.com/fr/emails-pro/configuration-thunderbird-macos/) (Gratuit)<br>
 >>
 > **Exchange**
 >>
->> Configuration d'un comtpe Exchange sur **Windows**<br>
+>> Configuration d'un comtpe Exchange sur **Windows** :<br><br>
 >> - [Courrier sur Windows 10](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configuration-courrier-windows-10/) (inclus avec Windows)<br>
 >> - [Outlook](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/)<br>
->> - [Thunderbird](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-de-thunderbird/) (Gratuit)<br>
->> Configuration d'un comtpe Exchange sur ***macOS**<br>
+>> - [Thunderbird](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-de-thunderbird/) (Gratuit)<br><br>
+>> Configuration d'un comtpe Exchange sur **macOS** :<br><br>
 >> - [Mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-mail-mac/) (inclus avec macOS)<br>
 >> - [Outlook](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configuration-outlook-2016-mac/)<br>
 >> - [Thunderbird](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-de-thunderbird-mac/) (Gratuit)<br>
@@ -174,18 +174,18 @@ Une fois votre logiciel de messagerie installé, suivez les instructions suivant
 > [!tabs]
 > **Outlook**
 >>
->> Sur Outlook, assurez-vous que dans votre colonne de gauche, le dossier « archive » ou « sur mon ordinateur » soit présent pour pouvoir y déposer les éléments que vous souhaitez garder en locale sur votre ordinateur. Consulter la documentation de Microsoft pour préparer votre dossier d'archive:<br>
+>> Sur Outlook, assurez-vous que dans votre colonne de gauche, le dossier « archive » ou « sur mon ordinateur » soit présent pour pouvoir y déposer les éléments que vous souhaitez garder en locale sur votre ordinateur. Consulter la documentation de Microsoft pour préparer votre dossier d'archive :<br><br>
 >> - [Archivage dans Outlook pour Windows](https://support.microsoft.com/fr-fr/office/archivage-dans-outlook-pour-windows-25f75777-3cdc-4c77-9783-5929c7b47028)<br>
 >> - [À propos des dossiers sur mon ordinateur dans Outlook pour Mac](https://support.microsoft.com/fr-fr/office/%C3%A0-propos-des-dossiers-sur-mon-ordinateur-dans-outlook-pour-mac-c91b8729-924d-4c25-a5f6-38883d0f763d)<br>
 >>
 > **Mail macOS**
 >>
->> Depuis Mail sur mac OS, créez un dossier qui apparaîtra dans la section « Sur mon Mac » dans la colonne de gauche. Pour se faire, suivez la documentation d'Apple:<br>
+>> Depuis Mail sur mac OS, créez un dossier qui apparaîtra dans la section « Sur mon Mac » dans la colonne de gauche. Pour se faire, suivez la documentation d'Apple :<br><br>
 >> - [Créer ou supprimer des boites aux lettres dans Mail sur Mac](https://support.apple.com/fr-fr/guide/mail/mlhlp1021/15.0/mac/12.0)<br>
 >>
 > **Thunderbird**
 >>
->> Via thunderbird depuis Windows, macOS ou Linux vous pouvez déplacer vos e-mails dans un dossier du volet de gauche.<br>
+>> Via thunderbird depuis Windows, macOS ou Linux vous pouvez déplacer vos e-mails dans un dossier du volet de gauche. Appuyez-vous sur la documentation de Mozilla :<br><br>
 >> - [Archivage des messages](https://support.mozilla.org/fr/kb/archivage-des-messages)<br>
 >>
 
@@ -200,14 +200,23 @@ Sélectionnez dans le menu, ci-dessous, l'offre actuelle de votre compte e-mail 
 >>
 > **Email Pro**
 >>
->> L'offre Email Pro dispose d'une capacité unique de 10Go. Vous pouvez opter pour une migration vers une offre [**Hosted Exchange** de 50Go](https://www.ovhcloud.com/fr/emails/hosted-exchange/). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation [« Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange »](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-adresse-e-mail-mutualisee-vers-exchange/).
+>> L'offre Email Pro dispose d'une capacité unique de 10Go. Vous pouvez opter pour une migration vers une offre [**Hosted Exchange** de 50Go](https://www.ovhcloud.com/fr/emails/hosted-exchange/). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation [« Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre »](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-email-platform/).
 >>
 > **Exchange**
 >>
 >> Si votre compte Exchange arrive à saturation des 50Go d'espace, il est possible de souscrire à une option d'extension pour étendre sa capacité à 300Go.<br>
->> Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme Exchange, cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Augmenter la capacité à 300Go`{.action}.
+>> Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme Exchange, cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Augmenter la capacité à 300Go`{.action}.<br><br>
+>> ![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+[Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-adresse-e-mail-mutualisee-vers-exchange/)
+
+[Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/)
+
+[Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-email-platform/)
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
