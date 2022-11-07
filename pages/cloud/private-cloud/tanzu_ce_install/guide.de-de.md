@@ -34,7 +34,7 @@ Other Network components can be used as alternative, such as pfSense.<br>
 
 To set up your Network, you will need to define a public IP for external access and an internal network with DHCP service activated for your TCE infrastructure.<br>
 Your Datacenter comes with a set of public IPs usable for your different needs. They are visible in the Datacenter `Configure`{.action} tab, in the `Network`{.action} section. You will also see the mask and gateway settings on the page.<br>
-Check out our [Adding an IP block](https://docs.ovh.com/de/private-cloud/add-ip-block/) documentation if you are out of usable public IPs.
+Check out our [Adding an IP block](https://docs.ovh.com/de/private-cloud/ip-block-hinzufuegen/) documentation if you are out of usable public IPs.
 
 ![network](images/en00ipblocks.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Once the Network and template are ready, a Bootstrap VM is needed.<br>
 It will hold the necessary software components (Docker and Kubectl) and pilot the installation of TCE.<br>
 We'll use an Ubuntu VM but any OS allowing the install of the necessary items would work.<br>
 VM prerequisites for TCE is 2 CPUs and 6 GB Ram.<br>
-You can deploy a VM [from an ISO](https://docs.ovh.com/de/private-cloud/deploying-a-virtual-machine/) or [from an OVF template](https://docs.ovh.com/de/private-cloud/applying-ovh-template/).<br>
+You can deploy a VM [from an ISO](https://docs.ovh.com/de/private-cloud/virtuelle-maschine-deployen/) or [from an OVF template](https://docs.ovh.com/de/private-cloud/ovhcloud-template-deployment/).<br>
 
 Make sure the VM is set on the VLAN that will be used for the TCE clusters (VLAN13 in our case).<br>
 
