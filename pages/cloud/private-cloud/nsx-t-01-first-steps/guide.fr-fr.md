@@ -17,23 +17,18 @@ order: 01
 
 **Ce guide est une introduction à l'interface NSX-T**
 
-NSX-T est une solution de gestion de réseau logiciel **Sofware Defined networking (SDN)** fournie par VMware, OVHcloud propose ce service en remplacement de NSX-V. 
-
-Lorsque un client souscrit à l'offre NSX-T et quelle est activée certains paramètres sont déja actifs comme : 
-
-- Une passerelle externe nommée **ovh-T0-gw**. Cette passerelle sert d'interface entre le cluster VMware et des éléments externes cette connexion est de type **North-South**.
-- Une passerelle interne nommée **ovh-T1-gw**, elle est utilisé à l'interieur du cluster VMware pour les connexions entre sous-réseaux à l'intérieur du cluster VMware , c'est ce que l'on nomme une connexion **East-West**. Cette passerelle est relié à la passerelle externe **ovh-T0-gw**.
-
-
-
-
-
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
+NSX-T est une solution de gestion de réseau logiciel **Sofware Defined networking (SDN)** fournie par VMware, OVHcloud propose ce service en remplacement de NSX-V. 
+
+Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfiguration est appliqué avec deux passerelles :
+
+- **Tier-0 Gateway** : Pour les connexions entre le cluster VMware et Internet.
+- **Tier-1 Gateway** : Pour les connexions entre réseaux virtuels internes au cluster VMware ainsi que sur la passerelle **Tier-0-Gateway** pour accès externes.
 
 ## Prérequis
 
@@ -47,7 +42,6 @@ Lorsque un client souscrit à l'offre NSX-T et quelle est activée certains para
 La connexion à NSX-T se fait à partir de l'URL de votre cluster VMware fourni par OVHcloud de la forme **https://pcc-xxxxx.ovh.xx**.
 
 A partir de la page d'accueil de votre cluster cliquez sur l'icône `NSX NSX-T`{.action}.
-
 
 ![01 NSX-T Connection 01](images/01-nsxt-connection01.png)
 

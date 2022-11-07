@@ -15,22 +15,20 @@ order: 01
 
 ## Objectif
 
-**This guide is an introduction to the NSX-T interface**
-
-**NSX-T** is a **Software-Defined Networking (SDN)** solution provided by VMware. OVHcloud offers this service as an alternative to **NSX-V**.
-
-When a customer subscribes to **NSX-T** offer and what is enabled some parameters are already active like: 
-
-- An external gateway named **ovh-T0-gw** that is connected to the Internet and another internal gateway.
-- An internal gateway named **ovh-T1-gw** which is connected to the external gateway.
-
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
 >
 > This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
+**This guide is an introduction to the NSX-T interface**
 
+**NSX-T** is a **Software-Defined Networking (SDN)** solution provided by VMware. OVHcloud offers this service as an alternative to **NSX-V**.
+
+When a customer subscribes to the NSX-T offer and is enabled, a preset is applied with two gateways :
+
+- **Tier-0 Gateway** : For connections between the VMware cluster and the Internet.
+- **Tier-1 Gateway** : For connections between internal virtual networks to the VMware cluster and on the **Tier-0-Gateway** for external access.
 
 ## Requirements
 
