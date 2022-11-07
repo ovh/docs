@@ -1,7 +1,7 @@
 ---
 title: Come utilizzare l’API OpenStack
-excerpt: Come utilizzare l'API OpenStack
-slug: Come gestire le tue istanze con il client Python OpenStack
+excerpt: Come gestire le tue istanze con il client Python OpenStack
+slug: come_utilizzare_lapi_nova
 legacy_guide_number: g1935
 section: Gestione via OpenStack
 ---
