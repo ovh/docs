@@ -6,7 +6,7 @@ section: CMS
 order: 07
 ---
 
-**Dernière mise à jour le 06/10/2022**
+**Dernière mise à jour le 07/11/2022**
 
 ## Objectif
 
@@ -23,7 +23,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 >
 > Pour installer WordPress **automatiquement** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module « en un clic »](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
 >
-> Pour installer **manuellement un autre CMS**(Joomla!, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+> Pour installer **manuellement un autre CMS** (Joomla!, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 >
 
 ## Prérequis
@@ -191,9 +191,9 @@ Pour les bases de données créées sur un CloudDB, référez-vous aux informati
 
 > [!primary]
 > 
-> - Le nom du serveur d'une bases de données incluse avec votre offre d'hébergement Web a généralement cette forme : **"NameOfYourDatabase".mysql.db**. 
+> - Le nom du serveur d'une bases de données incluse avec votre offre d'hébergement Web a généralement cette forme : `NameOfYourDatabase.mysql.db`. 
 >
-> - Le nom du serveur d'une base de données CloudDB a la forme suivante : **"NicHandle(Without-ovh)"-XXX.eu.clouddb.ovh.net** où les **« X »** sont à remplacer par les chiffres de votre service.
+> - Le nom du serveur d'une base de données CloudDB commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service CloudDB.
 >
 
 - Préfixe des tables : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à [l'étape 1.4](#step1-4) de ce guide pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
@@ -234,7 +234,7 @@ Il ne vous reste plus qu'à cliquer sur le bouton `Se connecter`{.action} pour t
 
 > [!primary]
 >
-> Les équipes OVHcloud n'assurent pas de support sur des solutions tierces telles que WordPress, elles ne peuvent donc vous accompagner sur l'utilisation ou la configuration de votre CMS Wordpress.
+> Les équipes OVHcloud n'assurent pas de support sur des solutions tierces telles que WordPress, elles ne peuvent donc pas vous accompagner sur l'utilisation ou la configuration de votre CMS Wordpress.
 >
 > Pour un accompagnement de ce type, nous vous invitons à utiliser les forums dédiés à la solution WordPress.
 >
