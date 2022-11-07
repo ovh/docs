@@ -29,28 +29,28 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 
 > [!warning]
 >
-> An Additional IP cannot be moved from one zone to another. For example, an IP located in the SBG data center can be moved to GRA or RBX, but cannot be moved to BHS.
+> An Additional IP cannot be moved between different zones. For example, an IP located in the SBG data centre can be moved to GRA or RBX, but cannot be moved to BHS.
 >
 
-First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open your `Public Cloud`{.action} project. Then, select Additional IP in the **Network** section.
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), select your project from the `Public Cloud`{.action} section.
 
-In our example, an Additional IP is routed to "Instance_A" and we want to redirect it towards "Instance_B".
+In the left-hand menu, open `Public IPs`{.action} under `Network`. Click on the `Additional IP`{.action} tab.
 
-![migrating Additional IP](images/failover2022.png){.thumbnail}
+In this example, the Additional IP address routed to "Instance_A" will be migrated to "Instance_B".
 
-Click on `...`{.action} next to the Additional IP and select `Modify associated instance`{.action}.
+Click on `...`{.action} in the row of the Additional IP and select `Update attached instance`{.action}.
 
-![migrating Additional IP](images/modify1.2022.png){.thumbnail}
+![migrating Additional IP](images/migrateip_01.png){.thumbnail}
 
-Choose the destination server from the list by clicking the checkbox.
+Click on the drop-down menu to choose the destination instance from the list.
 
-![migrating Additional IP](images/modify1.png){.thumbnail}
+![migrating Additional IP](images/migrateip_02.png){.thumbnail}
 
 Confirm by clicking on `Attach`{.action}.
 
-After a few seconds the Control Panel will be updated and a confirmation message will be displayed if the migration was done sucessfully.
+After a few seconds, the Control Panel will be updated and a confirmation message will be displayed if the migration was done sucessfully.
 
-![migrating Additional IP](images/modify2.2022.png){.thumbnail}
+![migrating Additional IP](images/migrateip_03.png){.thumbnail}
 
 > [!primary]
 >
@@ -59,7 +59,7 @@ The Additional IP can be configured on the destination server before or after ca
 
 ## Go further
 
-[Configure an Additional IP](https://docs.ovh.com/sg/en/publiccloud/network-services/configure-additional-ip/)
+[Configuring an Additional IP](https://docs.ovh.com/sg/en/publiccloud/network-services/configure-additional-ip/)
 
 [Importing an Additional IP](https://docs.ovh.com/sg/en/publiccloud/network-services/import-additional-ip/)
 
