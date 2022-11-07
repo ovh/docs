@@ -56,7 +56,7 @@ Clicca sulla scheda `Moduli in 1 click`{.action} nella sezione `Hosting`{.action
 
 Puoi anche ricercare l'email ricevuta durante la creazione del tuo modulo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it): clicca sul tuo nome in alto a destra e poi su `Email di servizio`{.action}.
 
-### Modifica la password del tuo modulo
+### Modifica la password del tuo modulo <a name="password-change"></a>
 
 È possibile modificare la password del modulo dallo Spazio Cliente OVHcloud o accedendo direttamente alla pagina di connessione allo Spazio Cliente.
 In entrambi i casi, riceverai un'email di reimpostazione della password.

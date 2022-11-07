@@ -52,7 +52,7 @@ Cliquez sur l'onglet `Modules en 1 clic`{.action} depuis la partie `Hébergement
 
 Vous pouvez également rechercher l'e-mail reçu lors de la création de votre module depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) : cliquez sur votre nom en haut à droite de l'écran puis, dans le menu qui apparaît, cliquez sur `Emails de service`{.action}.
 
-### Modifier le mot de passe de votre module
+### Modifier le mot de passe de votre module <a name="password-change"></a>
 
 Vous pouvez modifier le mot de passe de votre module depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou en vous rendant directement sur la page de connexion à l'espace administrateur de votre site Web.
 Dans les deux cas, un e-mail de réinitialisation de mot de passe vous sera envoyé.

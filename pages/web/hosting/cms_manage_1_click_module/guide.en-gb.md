@@ -51,7 +51,7 @@ Click on the `1-click modules`{.action} tab in the `Hosting plans`{.action} sect
 
 You can also search for the email received after the creation of your module from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB): click on your name in the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
 
-### Change your module password
+### Change your module password <a name="password-change"></a>
 
 You can change the administrator password of your module via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or by going directly to the login page of your website’s admin interface.
 In both cases, you will receive an email containing a link to reset your password.
