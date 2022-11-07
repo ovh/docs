@@ -76,7 +76,7 @@ Dans la fenêtre qui s'affiche alors, prenez connaissance des informations puis 
 
 ### Téléverser les documents justificatifs
 
-Une fois vos informations saisies, la liste des documents justificatifs à fournir apparaît. Cliquez sur le bouton `...`{.action} puis sur `Télécharger`{.action} à droite de chaque document à fournir. 
+Une fois vos informations saisies, la liste des documents justificatifs à fournir apparaît. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> puis sur `Télécharger`{.action} à droite de chaque document à fournir. 
 
 Cliquez sur `Sélectionner un fichier`{.action}, sélectionnez le document correspondant sur votre poste de travail puis cliquez sur `Valider le document`{.action}.
 
@@ -242,7 +242,7 @@ Dans votre `Tableau de bord`{.action}, cliquez sur `Voir mon profil SVA`{.action
 
 Vous aurez alors accès aux coordonnées précédemment renseignées ainsi qu'au tableau récapitulatif de vos documents.
 
-La colonne `Statut` du tableau vous indique le statut de validation du document. Le bouton `...`{.action} à droite de chaque document vous permet d'interagir en conséquence.
+La colonne `Statut` du tableau vous indique le statut de validation du document. Le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite de chaque document vous permet d'interagir en conséquence.
 
 Vos justificatifs d'identité pouvant expirer dans le temps, vous pourrez également les mettre à jour depuis votre espace client OVHcloud.
 
@@ -250,9 +250,9 @@ Vos justificatifs d'identité pouvant expirer dans le temps, vous pourrez égale
 |---|---|---|
 |Valide|Votre document a été validé par nos équipes|Pas d'action possible|
 |Attente de validation|Votre document a bien été réceptionne et va être vérifié par nos équipes|Pas d'action possible avant la vérification du document|
-|Non valide|Votre document a été vérifié mais n'est pas conforme|Cliquez sur `...`{.action} à droite de ce document pour téléverser un nouveau justificatif|
-|Arrivé à expiration le XX/XX/XXXX|La date de fin de validité sera bientôt atteinte|Cliquez sur `...`{.action} à droite de ce document pour téléverser un nouveau justificatif à jour|
-|Expiré|La date de fin de validité du document est atteinte|Cliquez sur `...`{.action} à droite de ce document pour téléverser un nouveau justificatif à jour|
+|Non valide|Votre document a été vérifié mais n'est pas conforme|Cliquez sur <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite de ce document pour téléverser un nouveau justificatif|
+|Arrivé à expiration le XX/XX/XXXX|La date de fin de validité sera bientôt atteinte|Cliquez sur <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite de ce document pour téléverser un nouveau justificatif à jour|
+|Expiré|La date de fin de validité du document est atteinte|Cliquez sur <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite de ce document pour téléverser un nouveau justificatif à jour|
 
 ## Aller plus loin
 
