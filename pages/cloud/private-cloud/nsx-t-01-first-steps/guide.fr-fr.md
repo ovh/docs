@@ -9,7 +9,7 @@ order: 01
 **Dernière mise à jour le 04/11/2022**
 
 > [!warning]
-> Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, il seront modifiés lors de la sortie en version BETA et finalisés quand la sortie définitive sera prête. 
+> Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, il seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
 >
 
 
@@ -21,8 +21,12 @@ NSX-T est une solution de gestion de réseau logiciel **Sofware Defined networki
 
 Lorsque un client souscrit à l'offre NSX-T et quelle est activée certains paramètres sont déja actifs comme : 
 
-- Une passerelle externe nommée **ovh-T0-gw** qui est connectée à Internet et à une autre passerelle interne.
-- Une passerelle interne nommée **ovh-T1-gw** qui est connectée à la passerelle externe.
+- Une passerelle externe nommée **ovh-T0-gw**. Cette passerelle sert d'interface entre le cluster VMware et des éléments externes cette connexion est de type **North-South**.
+- Une passerelle interne nommée **ovh-T1-gw**, elle est utilisé à l'interieur du cluster VMware pour les connexions entre sous-réseaux à l'intérieur du cluster VMware , c'est ce que l'on nomme une connexion **East-West**. Cette passerelle est relié à la passerelle externe **ovh-T0-gw**.
+
+
+
+
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
