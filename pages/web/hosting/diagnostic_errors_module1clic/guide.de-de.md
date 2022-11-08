@@ -188,9 +188,9 @@ Dies kann mehrere Ursachen haben:
 
 - Ihre Domain ist noch immer mit Ihrem alten Webhosting verbunden. Bearbeiten Sie in diesem Fall Ihre [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain_1) oder Ihre [DNS-Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-server-andern) oder kontaktieren Sie Ihren bisherigen Hosting-Anbieter, um diese Anpassung durchzuführen.
 
-### Das Passwort "Administrator" für den Zugriff auf das "Backoffice" Ihres 1 Klick Moduls funktioniert nicht mehr <a name="adminpassword"></a>
+### Das Administrator-Passwort für den Zugriff auf das Backend Ihres 1-Klick-Moduls funktioniert nicht mehr <a name="adminpassword"></a>
 
-Wenn Sie Ihr derzeitiges Passwort für den Zugriff auf das Verwaltungsinterface Ihres CMS ablehnen, lesen Sie den Abschnitt "Passwort Ihres Moduls ändern"in unserer Anleitung zur [1-Klick-Verwaltung Ihres Moduls](https://docs.ovh.com/de/hosting/1-click-module-management/#password-change).
+Wenn das aktuelle Passwort für den Zugriff auf das Verwaltungsinterface Ihres CMS abgelehnt wird, lesen Sie den Abschnitt "Passwort Ihres Moduls ändern" in unserer Anleitung zur [Verwaltung Ihres 1-Klick-Moduls](https://docs.ovh.com/de/hosting/1-click-module-management/#password-change).
 
 
 ## Weiterführende Informationen <a name="gofurther"></a>
