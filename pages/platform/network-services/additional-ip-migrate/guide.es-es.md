@@ -18,7 +18,7 @@ order: 04
 >
 
 ## Objetivo
-Esta guía explica cómo migrar una IP de conmutación de una instancia a otra. Por lo general, esta acción limita o elimina la posibilidad de que su servidor esté inaccesible y le permite:
+Esta guía explica cómo migrar una Additional IP de una instancia a otra. Por lo general, esta acción limita o elimina la posibilidad de que su servidor esté inaccesible y le permite:
 
 - Migrar un sitio web a su «nueva versión»
 - Ejecutar su actividad en un servidor replicado mientras realiza un mantenimiento o ejecuta una actualización en el servidor de producción.
@@ -58,7 +58,7 @@ Haga clic en la casilla junto al servidor de destino
 
 
 > [!success]
-> La IP de conmutación puede configurarse en el servidor de destino antes o después de realizar la migración. Si está preconfigurada, comenzará a responder en cuanto se haya realizado la operación de enrutamiento (*routing*).
+> La Additional IP puede configurarse en el servidor de destino antes o después de realizar la migración. Si está preconfigurada, comenzará a responder en cuanto se haya realizado la operación de enrutamiento (*routing*).
 >
 
 ## Más información

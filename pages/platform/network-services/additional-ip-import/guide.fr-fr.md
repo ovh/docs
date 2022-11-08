@@ -6,7 +6,7 @@ section: Additional IP
 order: 03
 ---
 
-**Dernière mise à jour le 06/11/2022**
+**Dernière mise à jour le 07/11/2022**
 
 > [!primary]
 >
@@ -33,7 +33,9 @@ Il est possible d’importer une adresse Additional IP liée à un autre service
 
 ## En pratique
 
-Tout d’abord, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez votre projet dans la section `Public Cloud `{.action}. Ouvrez `Public IPs`{.action} dans « **Network** » dans le menu de gauche.
+Tout d’abord, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez votre projet dans la section `Public Cloud `{.action}.
+
+Dans le menu de gauche, ouvrez `Public IPs`{.action} dans `Network`.
 
 Ouvrez l'onglet `Additional IP`{.action} et cliquez sur le bouton `Actions`{.action}. Sélectionnez `Importer une Additional IP`{.action} pour afficher toutes les adresses IP pouvant être importées dans votre projet Public Cloud.
 
@@ -43,7 +45,7 @@ Si vous n'avez pas encore d'Additional IP sur votre projet Public Cloud, l'optio
 
 Cliquez sur `...`{.action} à côté de l'adresse IP que vous souhaitez importer et cliquez sur `Importer cette Additional IP`{.action}.
 
-![Importer IP supplémentaire](images/import22_02.png){.thumbnail}
+![Import Additional IP](images/import22_02.png){.thumbnail}
 
 Validez alors en cliquant sur `Importer`{.action}.
 
@@ -53,11 +55,11 @@ Patientez quelques minutes le temps que l'importation soit réalisée. Ouvrez l'
 
 Cliquez sur `...`{.action} à droite et sélectionnez `Modifier l'instance associée`{.action}.
 
-![Importer IP supplémentaire](images/import22_04.png){.thumbnail}
+![Import Additional IP](images/import22_04.png){.thumbnail}
 
 Une fenêtre contextuelle apparaîtra pour choisir l'instance à laquelle votre adresse IP doit être attachée.
 
-![Importer IP supplémentaire](images/import22_05.png){.thumbnail}
+![Import Additional IP](images/import22_05.png){.thumbnail}
 
 Cliquez sur `Joindre`{.action} pour confirmer. La page affiche alors un message de modification.
 

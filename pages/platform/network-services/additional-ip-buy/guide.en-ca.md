@@ -7,7 +7,7 @@ order: 02
 ---
 
 
-**Last updated 6th November 2022**
+**Last updated 7th November 2022**
 
 > [!primary]
 >
@@ -35,6 +35,7 @@ These Additional IP addresses can only be migrated to instances in the same proj
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and open your `Public Cloud`{.action} project.
+
 In the left-hand menu, open `Public IPs`{.action} under `Network`.
 
 Open the `Additional IP`{.action} tab and click on the `Actions`{.action} button. Select `Add a new IP`{.action}.

@@ -6,7 +6,7 @@ section: Additional IP
 order: 03
 ---
 
-**Letzte Aktualisierung am 02.11.2022**
+**Letzte Aktualisierung am 07.11.2022**
 
 > [!primary]
 >
@@ -33,45 +33,44 @@ Im OVHcloud Kundencenter können Sie eine Additional IP-Adresse, die mit einem a
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Public Cloud`{.action} Ihr Projekt aus.
 
-Klicken Sie auf `Additional IP`{.action} im Abschnitt "Network".
+Öffnen Sie im linken Menü `Public IPs`{.action} unter `Network`.
 
-Klicken Sie auf `Aktionen`{.action} und wählen Sie `Eine IP importieren`{.action}, um alle IP-Adressen anzuzeigen, die in Ihr Public Cloud Projekt importiert werden können.
+Öffnen Sie den Tab `Additional IP`{.action} und klicken Sie auf den Button `Aktionen`{.action}. Wählen Sie `Eine Additional IP importieren`{.action}, um alle IP-Adressen anzuzeigen, die in Ihr Public Cloud Projekt importiert werden können.
 
-![IP-Bereich](images/import1.png){.thumbnail}
+![Import Additional IP](images/import22_01.png){.thumbnail}
 
-Wenn Sie in Ihrem Public Cloud Projekt noch keine Additional IP haben, wird die Option zum Import einer IP auf der Startseite angezeigt.
+Wenn Sie noch keine Additional IP-Adresse für Ihr Public Cloud Projekt haben, wird die Import-Option für Additional IPs auf der Startseite angezeigt.
 
-Klicken Sie `...`{.action} rechts neben der IP, die Sie importieren möchten, und klicken Sie dann auf `Diese Additional IP importieren`{.action}.
+Klicken Sie auf `...`{.action} in der Zeile der IP-Adresse, die Sie importieren möchten, und klicken Sie auf `Diese Additional IP importieren`{.action}.
 
-![Additional IP importieren](images/import2.png){.thumbnail}
+![Import Additional IP](images/import22_02.png){.thumbnail}
 
-Bestätigen Sie Ihre Auswahl mit `Importieren`{.action}.
+Bestätigen Sie, indem Sie auf `Importieren`{.action} klicken.
 
-![Import confirm](images/importconfirm.png){.thumbnail}
+![Import Additional IP](images/import22_03.png){.thumbnail}
 
-Die Seite aktualisiert sich, und die Information, dass die IP-Adresse erfolgreich migriert wurde, wird angezeigt.
+Nach einigen Minuten ist der Import abgeschlossen. Öffnen Sie den Tab `Additional IP`{.action}, um die importierte Additional IP-Adresse zu sehen. Aktualisieren Sie die Seite falls nötig.
 
-Wenn die Additional IP erfolgreich importiert wurde, klicken Sie rechts auf `...`{.action} und dann auf `Verbundene Instanz bearbeiten`{.action}.
+Klicken Sie rechts auf `...`{.action} und wählen Sie `Verbundene Instanz bearbeiten`{.action}.
 
-![Additional IP importieren](images/modifyinstance.png){.thumbnail}
+![Import Additional IP](images/import22_04.png){.thumbnail}
 
-Wählen Sie im neuen Fenster die Instanz aus, mit der Sie Ihre IP-Adresse verknüpfen möchten.
+Im neu angezeigten Fenster kann die Instanz ausgewählt werden, der die IP-Adresse zugewiesen werden soll.
 
-![Additional IP importieren](images/modifyinstance1.png){.thumbnail}
+![Import Additional IP](images/import22_05.png){.thumbnail}
 
-Bestätigen Sie mit Klick auf `Verbinden`{.action}. Im Interface wird nun eine Änderungsmeldung angezeigt.
+Klicken Sie auf `Verbinden`{.action}, um zu bestätigen. Im Interface wird nun eine Änderungsmeldung angezeigt.
 
-> [!primary]
-> Eine Additional IP kann nicht von einer Länderzone zur anderen umgezogen werden. So kann beispielsweise eine IP im Rechenzentrum SBG nach GRA oder RBX umgezogen werden, aber nicht nach BHS.
+> [!warning]
+>
+> Eine Additional IP kann nicht von einer Länderzone zur anderen umgezogen werden. So kann beispielsweise eine IP-Adresse von SBG nach GRA oder RBX umgezogen werden, aber nicht nach BHS. 
 >
 
-![Additional IP importieren](images/modifycompleted.png){.thumbnail}
+Ihre Additional IP-Adresse wird nun mit Ihrer Instanz verbunden.
 
-Die Additional IP ist jetzt an Ihre Instanz angehängt.
-
-Im nächsten Schritt muss die IP-Konfiguration in Ihrem Betriebssystem durchgeführt werden. Wir empfehlen hierzu unsere [Anleitung](https://docs.ovh.com/de/publiccloud/network-services/configure-additional-ip/).
+Im nächsten Schritt muss die IP-Adresse in Ihrem Betriebssystem konfiguriert werden. Lesen Sie dazu unsere [Anleitung zur IP-Konfiguration](https://docs.ovh.com/de/publiccloud/network-services/configure-additional-ip/).
 
 ## Weiterführende Informationen
 
