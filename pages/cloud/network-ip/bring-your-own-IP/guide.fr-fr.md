@@ -6,7 +6,7 @@ section: Bring Your Own IP
 order: 1
 ---
 
-**Dernière mise à jour le 20/09/2022**
+**Dernière mise à jour le 08/11/2022**
 
 ## Objectif
 
