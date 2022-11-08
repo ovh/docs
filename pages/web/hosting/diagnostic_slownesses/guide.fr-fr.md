@@ -88,13 +88,13 @@ Lorsqu'il n'y a pas de surcharge au niveau de l'infrastructure d'hébergement mu
 
 Il existe des outils de diagnostic en ligne qui vous permettent de récupérez le TTFB de votre hébergement. Faites attention car la plupart d'entres eux fonctionnent comme des navigateurs internet et incluent des délais supplémentaires dans le TTFB. Ces systèmes ne sont pas non plus en mesure de prendre en compte les requêtes internes demandées par le fichier que vous avez appelé via votre navigateur. Ceci comme dans l'exemple ci-dessus avec le fichier **« index.php »**.
 
-### Etape 1 : Déterminer si les lenteurs proviennent de l'hébergement ou de votre site web
+### Etape 1 - déterminer si les lenteurs proviennent de l'hébergement ou de votre site web
 
 Identifiez si les lenteurs proviennent de votre site en lui-même de part son fonctionnement interne ou de l'infrastructure d'hébergement mutualisé où il se trouve.
 
 **Tous les diagnostics de l'étape 1 doivent être réalisés sans exception afin de déterminer si les ralentissements proviennent de vos services d'hébergement web ou de votre site internet que vous hébergez dessus.**
 
-#### 1.1 : Vérifer l'état de vos services OVHcloud
+#### 1.1 - Vérifer l'état de vos services OVHcloud
 
 Pour être sûr que vos services (hébergement mutualisé **et** base de données) ne font pas l'objet d'une maintenance ou d'un incident, récupérez le cluster et le filer de votre hébergement mutualisé ainsi que les informations générales relatives à votre base de données puis rendez-vous sur <https://web-cloud.status-ovhcloud.com/>.
 
@@ -117,11 +117,11 @@ Cliquez ensuite sur l'onglet `Multisites`{.action} pour récupérez le numéro d
 > Si aucun incident ou aucune maintenance n'est déclaré, poursuivez vos diagnostics.
 >
 
-####  1.2 : Tester le site sur plusieurs appareils
+####  1.2 - Tester le site sur plusieurs appareils
 
 Testez votre site internet depuis un autre appareil/ordinateur puis depuis un autre point d'accès à Internet. Le tout en vidant le cache de votre navigateur internet à chaque tentative afin que votre site soit directement chargé depuis l'hébergement.
 
-####  1.3 : Tester l'hébergement avec un fichier indépendant de votre site web
+####  1.3 - Tester l'hébergement avec un fichier indépendant de votre site web
 
 Si, dans **tous les précédents tests** les lenteurs sont présentes, placez à la racine de votre site dans l'[espace de stockage FTP de votre hébergement mutualisé](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) un fichier que vous nommerez « phpinfo.php ».
 
@@ -148,7 +148,7 @@ phpinfo();
 > En d'autres termes, si les lenteurs sont présentes uniquement sur une partie des pages ou du contenu de votre site, cela signifie que l'hébergement mutualisé **n'est pas la cause des lenteurs** que vous rencontrez sur votre site web.
 >
 
-#### 1.4 : Testez la connectivité et la vitesse d'exécution de votre base de données :
+#### 1.4 - Tester la connectivité et la vitesse d'exécution de votre base de données :
 
 Connectez-vous à votre base de données en suivant **l'étape 3** de notre guide sur la [création d'une base de données mutualisée](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
@@ -186,13 +186,12 @@ Profitez-en pour vérifiez si un nombre conséquent de requêtes sont effectuée
 En effet, cette situation peut engendrer une charge de traitement et dans certains cas aboutir à des ralentissements voire à des codes « 504 Gateway Timeout ».
 
 Vérifiez également la taille de vos tables présentes dans votre base de données.
-Effectivement, si une table est appelée régulièrement et que celle-ci est volumineuse, le chargement de cette table peut se faire plus lentement.
-Cette situation peut engendrer des requêtes lentes.
-Le cumul de ces requêtes peut se manifester par un ralentissement d'accès au site voire un code « 504 Gateway Timeout ».
+Effectivement, si une table est appelée régulièrement et que celle-ci est volumineuse, le chargement de cette table peut se faire plus lentement et engendrer des requêtes lentes.
+Le cumul de ces requêtes peut générer un ralentissement d'accès au site voire un code « 504 Gateway Timeout ».
 
-Si vous avez des tables volumineuses ou des flux de requêtes en base de données conséquents, nous vous invitons à optimiser vos tables et à mettre en place des solutions permettant de diminuer vos flux de requêtes vers votre base de données.
+Si vous avez des tables volumineuses ou des flux de requêtes en base de données conséquents, nous vous invitons à optimiser vos tables et à mettre en place des solutions permettant de diminuer les flux de requêtes vers votre base de données.
 
-#### Interprétation des diagnostics effectués lors de l'étape 1 :
+#### 1.5 - Interprétation des diagnostics effectués :
 
 **Cas 1 :** Si au moins une page, un script ou un fichier (y compris le fichier **« phpinfo.php »**) testés lors de l'étape 1 s'est chargé rapidement et que votre base de données a exécuté la commande « Benchmark » rapidement, cela signifie que les lenteurs que vous rencontrez provienent directement des scripts qui composent votre site. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
 
@@ -200,7 +199,7 @@ Si vous avez des tables volumineuses ou des flux de requêtes en base de donnée
 
 **Cas 3 :** Si **aucun incident et aucune maintenance** n'est déclaré ou n'a été déclaré comme **résolu** il y a moins de trois heures pour vos services d'hébergement web sur notre site <https://web-cloud.status-ovhcloud.com/> et pour les cas autres que les **cas 1** et **2**, des investigations côté OVHcloud seront nécessaires. Contactez le support Web afin qu'ils confirment avec vous l'origine des ralentissements que vous rencontrez.
 
-### Etape 2 : Identifier la (les) source(s) qui génère les lenteurs au niveau de votre site web <a name="step2"></a>
+### Etape 2 - identifier la (les) source(s) qui génère les lenteurs au niveau de votre site web <a name="step2"></a>
 
 A ce stade du guide, vous savez désormais que les ralentissments sont générés par les pages/scripts/fichiers qui composent votre site web.
 
@@ -211,38 +210,73 @@ A ce stade du guide, vous savez désormais que les ralentissments sont généré
 
 Retrouvez ci-après quelques pistes à vérifier pour faire disparaître les ralentissements que vous rencontrez.
 
-Cependant, j'ai observé les différents points suivants (pouvant expliquer les codes 504) :
+#### 2.1 - Vérifier la configuration de votre hébergement web :
 
--- Par moments, un certain nombre de connexions sortantes sont effectuées depuis votre site au travers de l'hébergement.
-En effet, les connexions sortantes sont très gourmandes en termes de ressources et peuvent, dans certains cas, engendrer des ralentissements de votre site et même des codes « 504 gateway timeout ».
-Je vous conseille de vérifier quel(s) élément(s) de votre site génère(nt) cette situation.
-S'il s'agit d'un CMS (Wordpress, Joomla, Prestashop, Drupal, ...), je vous invite à identifier le(s) plugin(s) et/ou thème générant ce flux de connexions sortantes.
+Vérifiez le moteur PHP, la version PHP et l'environnement d'exécution utilisé sur votre hébergement web à l'aide de notre guide sur la [configuration de votre hébergement web](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/).
 
-Afin de retrouver ces connexions sortantes dans les logs de votre hébergement, vous pouvez consulter la seconde partie du guide présent ci-dessous :
-https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/
+Si vous utilisez pour votre hébergement web une version de PHP obsolète, le moteur **« PHP CGI »** et/ou l'environnement **« legacy »** et **si votre site web est compatible**, privilégiez l'utilisation du moteur **« PHP »** (PHP FPM), l'environnement **« stable »** ou **« stable64 »** avec la version de PHP la plus récente possible.
 
--- Le fichier de configuration de votre hébergement peut également être optimisé.
-Ceci afin que le fonctionnement de votre site soit un peu plus "fluide".
-Si possible (et si vos sites sont compatibles), je vous invite à optimiser votre configuration d'hébergement en "php 7.0 stable" (minimum) à l'aide du guide présent ci-dessous :
-https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/
+Pour comparer les versions de PHP disponibles en fonction de l'environnement d'exécution utilisé, consultez **l'étape 2** du guide sur la [configuration de la version PHP sur votre hébergement](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
 
--- Par moments, un certain nombre de requêtes sont effectuées vers votre site sur des intervalles assez courts.
-Cela peut également, dans certains cas, augmenter la sollicitation du service, générer des ralentissements et même des codes 504 timeout.
-Je vous invite à vérifier si le nombre de requêtes (appelées pour charger l'une des pages de votre site) ne peut pas être optimisé.
+Utiliser une version de PHP récente, l'environnement d'exécution **« stable »** ou **« stable64 »** avec le moteur **« PHP »** (PHP FPM) rend votre site beaucoup plus fluide et rapide. Rien que le moteur **« PHP »** (PHP FPM) peut être jusqu'à 50 fois plus rapide que le moteur **« PHP CGI »** pour exécuter ses tâches.
+
+#### 2.2 - Analyser les connexions sortantes/connexion TCP réalisées par votre hébergement web :
+
+Les connexions sortantes sont très gourmandes en terme de ressources. Quand ces dernières sont nombreuses, quand elles ne s'exécutent pas correctement ou quand elles restent active trop longtemps, elles monopolisent tellement de ressources au niveau de votre hébergement web qu'il n'en reste plus suffisamment pour faire fonctionner normalement le reste de votre site web. Cela se traduit par des ralentissements voire des codes « 504 gateway timeout ».
+
+Pour analysez les connexions sortantes de votre hébergement, consultez les logs **OUT** de votre hébergement web à l'aide de notre documentation sur [comment consulter les logs de votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+
+Si vous constatez qu'il y a beaucoup de connexions sortantes sur votre hébergement, comparez vos logs **OUT** avec vos logs **WEB** à l'aide de l'horodatage de ces derniers. Ceci afin d'identifier les ou les script(s) responsables de cette situation.
+
+Si vous utilisez un Content Managment System (CMS) tel que WordPress, Joomla!, PrestaShop ou Drupal, identifiez le(s) plugin(s) et/ou le thème générant ce flux de connexions sortantes.
+
+#### 2.3 - Analyser le flux de requêtes HTTP effectué vers votre hébergement web :
+
+Pour effectuer cette action, consultez les logs **WEB** de votre hébergement web à l'aide de notre documentation sur [comment consulter les logs de votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+
+Les requêtes les plus gourmandes en terme de ressources sont les requêtes HTTP de type **POST** puis de type **PUT**. Ces dernières effectuent respectivement des modifications et des insertions.
+Les requêtes HTTP de type **GET** ne font que récupérer des éléments présents sur l'hébergement pour les afficher dans votre navigateur Internet. Elles sont généralement peut gourmandes en terme de ressources. Toutefois, celles-ci peuvent générer des ralentissements si plusieurs centaines sont demandées chaque seconde sur un intervalle de plusieurs minutes.
+
+Si vous constatez dans vos logs que des requêtes de type **POST** ou **PUT** sont effectuées sur des intervalles très court et de manière permanente ou que ces mêmes requêtes sont exécutées plusieurs fois par minutes sur un même fichier, identifiez et optimisez le script/fichier en cause pour diminuer le flux de requêtes HTTP.
+
 Effectivement, moins le nombre de requêtes sera élevé, moins de ressources allouées à votre hébergement mutualisé seront nécessaires pour charger la page.
 
-Afin d’analyser les logs web de votre hébergement, je vous invite à consulter le guide ci-après :
-https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/
+> [!success]
+>
+> Pour identifier les éléments longs à se charger sur l'une des pages de votre site web, vous pouvez par exemple effectuez une analyse réseau à l'aide du navigateur **Firefox**. Pour cela, appuyez sur la touche `F12` lorsque vous êtes sur votre navigateur Firefox puis sélectionnez l'onglet `Réseau`. Recharger votre page web à l'aide des touches `Ctrl + Maj + R` pour que l'outil vous affiche les requêtes exécutées pour charger votre page. Identifiez les éléments les plus longs à charger pour ensuite les optimiser.
+>
 
--- Si votre site internet contient beaucoup d'images, je vous préconise de vérifier si celles-ci sont optimisées et ne nécessitent pas un redimensionnement lors de l'affichage sur votre site.
+> [!primary]
+>
+> Pour diminuer le flux de requêtes à chacun des chargements de vos pages, vous pouvez également mettre en place un Content Delivery Network (CDN). Celui-ci permettra de mettre en cache le contenu statique de votre site web. Votre hébergement web sera moins sollicité et disposera de plus de ressources pour traiter le reste des requêtes qui ne peuvent pas être mises en cache.
+>
+> OVHcloud propose plusieurs [offres CDN](https://www.ovhcloud.com/fr/web-hosting/options/). Si vous souhaitez en utiliser ou en activer un pour votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis consultez notre guide sur [l'utilisation du CDN OVHcloud](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/).
+>
 
-Par exemple, si une image est présente sur votre site en résolution « 1000x2000 » et que celle-ci s'affiche au maximum en 100x200 pixels sur la page de votre site, cela peut engendrer une consommation de ressources côté hébergement qui peut être évitée.
-Effectivement, le serveur (en plus des autres actions qu'il doit effectuer) devra réaliser une opération de redimensionnement de l'image pour ensuite l’afficher à la taille demandée sur le site.
-Si votre site contient beaucoup d'images, cela peut représenter une consommation non négligeable au niveau des ressources allouées à votre hébergement.
+#### 2.4 - Optimiser vos images :
 
+Si, par exemple, une image est présente sur votre site en résolution « 1000x2000 » et que celle-ci s'affiche au maximum en 100x200 pixels sur la page de votre site web, cela engendre une consommation de ressources côté hébergement qui peut être optimisée.
 
+Effectivement, le serveur devra réaliser une opération de redimensionnement de l'image pour ensuite l’afficher à la taille demandée sur le site.
 
-De manière plus générale, je vous invite à consulter le guide présent ci-dessous concernant l'optimisation de performance pour un site internet :
-https://docs.ovh.com/fr/hosting/optimisation-performances-site/
+Si votre site contient beaucoup d'images, cela peut représenter une consommation de ressources non négligeable au niveau des ressources allouées à votre hébergement.
 
-Vous pouvez également retrouver des pistes d'optimisation de votre site en l'analysant sur la page https://gtmetrix.com (non gérée par OVHCloud).
+Redimmentionnez l'ensemble de vos images pour diminuer au maximum la consommation des ressources.
+
+#### 2.5 - Optimiser le reste de votre site web :
+
+Pour cela, consultez notre guide sur l'[optimisation des performances pour votre site Internet](https://docs.ovh.com/fr/hosting/optimisation-performances-site/)
+
+Retrouvez des pistes d'optimisation pour votre site en l'analysant sur [gtmetrix.com](https://gtmetrix.com){.external} (non géré par OVHCloud).
+
+### Conclusion
+
+Si votre hébergement web et votre base de données ne sont pas en cause et que votre site web continu d'être lent, cela siginfie que l'offre que vous utilisez pour héberger votre site web n'est pas ou plus adaptée à votre besoin. Vous devrez passer sur une [offre d'hébergement mutualisée](https://www.ovhcloud.com/fr/web-hosting/) suppérieure ou directement sur une infrastructure dédiée tel qu'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr/vps/) ou un [Serveur Dédié (SD)](https://www.ovhcloud.com/fr/bare-metal/). 
+
+## Aller plus loin <a name="go-further"></a>
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
