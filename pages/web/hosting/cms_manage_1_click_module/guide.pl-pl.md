@@ -56,7 +56,7 @@ Kliknij zakładkę `Moduły CMS`{.action} w części `Hosting`{.action} w Panelu
 
 Możesz również wyszukać e-mail otrzymany podczas tworzenia modułu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl): kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w menu, które się wyświetla kliknij `E-maile od działu wsparcia`{.action}.
 
-### Zmiana hasła do modułu
+### Zmiana hasła do modułu <a name="password-change"></a>
 
 Hasło modułu można zmienić w Panelu klienta OVHcloud lub na stronie logowania do panelu administratora Twojej strony WWW.
 W obu przypadkach otrzymasz e-mail z prośbą o zresetowanie hasła.

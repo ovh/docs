@@ -6,7 +6,7 @@ section: Additional IP
 order: 03
 ---
 
-**Ostatnia aktualizacja: 02-11-2022**
+**Ostatnia aktualizacja: 07-11-2022**
 
 > [!primary]
 >
@@ -33,39 +33,44 @@ Można zaimportować adres Additional IP powiązany z inną usługą OVHcloud.
 
 ## W praktyce
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, wybierz projekt w sekcji `Public Cloud`{.action}. Wybierz pozycję `Additional IP`{.action} w sekcji "Network".
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz Twój projekt w sekcji `Public Cloud `{.action}.
 
-Kliknij przycisk `Operacje`{.action} i wybierz opcję ` Importuj adres IP`{.action}, aby wyświetlić wszystkie adresy IP, które można zaimportować do projektu Public Cloud.
+W menu po lewej stronie otwórz `Public IPs`{.action} w `Network`.
 
-![IP Section](images/import1.png){.thumbnail}
+Otwórz kartę `Additional IP`{.action} i kliknij przycisk `Operacje`{.action}. Wybierz `Importuj Additional IP`{.action}, aby wyświetlić wszystkie adresy IP, które mogą być importowane do Twojego projektu Public Cloud.
 
-Jeśli nie posiadasz jeszcze adresu Additional IP w Twoim projekcie Public Cloud, na stronie głównej pojawi się możliwość importu adresu IP.
+![Sekcja IP](images/import22_01.png){.thumbnail}
 
-Kliknij ikonę z trzema kropkami po prawej stronie adresu IP, który chcesz zaimportować, a następnie kliknij pozycję `Importuj ten Additional IP`{.action}.
+Jeśli nie posiadasz jeszcze additional IP w Twoim projekcie Public Cloud, na stronie głównej pojawi się opcja importu dodatkowego adresu IP.
 
-![Import Additional IP](images/import2.png){.thumbnail}
+Kliknij `...`{.action} obok adresu IP, który chcesz importować i kliknij `Importuj ten Additional IP`{.action}.
 
-Kliknij przycisk `Importuj`{.action}:
+![Dodatkowe IP](images/import22_02.png){.thumbnail}
 
-![Import confirm](images/importconfirm.png){.thumbnail}
+Zatwierdź klikając `Importuj`{.action}.
 
-Spowoduje to ponowne załadowanie strony. Zostanie wyświetlone potwierdzenie migracji adresu IP.
+![Import potwierdzenia](images/import22_03.png){.thumbnail}
 
-Po zaimportowaniu adresu Additional IP kliknij ikonę z trzema kropkami (po prawej) i wybierz pozycję `Zmodyfikuj powiązaną instancję`{.action}.
+Odczekaj kilka minut, aż import zostanie zrealizowany. Otwórz zakładkę `Additional IP`{.action}, aby wyszukać zaimportowany adres Additional IP. W razie potrzeby odśwież stronę.
 
-![Import Additional IP](images/modifyinstance.png){.thumbnail}
+Kliknij `...`{.action} po prawej stronie i wybierz `Zmień powiązaną`{.action} instancję.
 
-Zostanie wyświetlone okno umożliwiające wybranie instancji, do której ma zostać przeniesiony adres IP:
+![Dodatkowe IP](images/import22_04.png){.thumbnail}
 
-![Import Additional IP](images/modifyinstance1.png){.thumbnail}
+Pojawi się okno, w którym wybierz instancję, do której należy przypisać Twój adres IP.
 
-Kliknij przycisk `Dołącz`{.action}. Spowoduje to ponowne załadowanie strony i wyświetlenie potwierdzenia, że adres IP został powiązany z instancją:
+![Dodatkowe IP](images/import22_05.png){.thumbnail}
 
-![Import Additional IP](images/modifycompleted.png){.thumbnail}
+Kliknij przycisk `Dołącz`{.action}, aby potwierdzić. Na stronie pojawi się komunikat modyfikacji.
 
-Adres Additional IP będzie już dołączony do instancji.
+> [!warning]
+>
+> Dodatkowy adres IP nie może być przenoszony między różnymi strefami. Na przykład adres IP zlokalizowany w centrum danych SBG może zostać przeniesiony do GRA lub RBX, ale nie do BHS.
+>
 
-Następnym krokiem jest skonfigurowanie adresu IP w systemie operacyjnym. Przewodnik jest dostępny tutaj: [Konfiguracja adresu Additional IP](https://docs.ovh.com/pl/publiccloud/network-services/configure-additional-ip/).
+Twój adres Additional IP zostanie teraz przypisany do Twojej instancji.
+
+Następnym krokiem jest konfiguracja IP w systemie operacyjnym. Zapoznaj się [z przewodnikiem dotyczącym tej konfiguracji](https://docs.ovh.com/pl/publiccloud/network-services/configure-additional-ip/).
 
 ## Sprawdź również
 

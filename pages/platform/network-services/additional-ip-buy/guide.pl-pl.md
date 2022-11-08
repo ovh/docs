@@ -10,7 +10,7 @@ order: 02
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 02-11-2022**
+**Ostatnia aktualizacja z dnia 07-11-2022**
 
 > [!primary]
 >
@@ -37,53 +37,56 @@ Te adresy Additional IP można migrować tylko do instancji tego samego projektu
 
 ## W praktyce
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.<br>
-W menu po lewej stronie kliknij `Additional IP`{.action} w sekcji `Network`.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
 
-Następnie kliknij przycisk `Operacje`{.action}, po czym wybierz `Zamów adresy Additional IP`{.action}.
+W menu po lewej stronie otwórz `Public IPs`{.action} w `Network`.
 
-![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
+Otwórz kartę `Additional IP`{.action} i kliknij przycisk `Operacje`{.action}. Wybierz `Dodaj nowy adres IP`{.action}.
 
-Wówczas wyświetli się ta strona:
+![Dodaj IP](images/buyaddIP_01.png){.thumbnail}
 
-![failoverIP](images/buyfailoverip2-2021.png){.thumbnail}
+W etapie 1 zamówienia kliknij `Dalej`{.action}.
 
-Wpisz następujące informacje:
+![Dodaj IP](images/buyaddIP_02.png){.thumbnail}
 
-* Liczba żądanych Additional IP
-* Instancja, na którą będą przekierowywane adresy IP
-* Geolokalizacja adresów IP
+Etap 2 umożliwia wybór kraju dla nowego adresu IP.
 
-Musisz także zaakceptować ogólne warunki korzystania z usługi.
+![Dodaj IP](images/buyaddIP_03.png){.thumbnail}
 
-Dostępne geolokalizacje w Europie to:
+Dla geolokalizacji IP dostępne są następujące kraje:
 
-|          |          |          |           |                    |
-|:--------:|:--------:|:--------:|:---------:|:------------------:|
-| Belgia | Finlandia |  Francja  | Niemcy | Czechy |
-|  Irlandia |  Włochy  | Litwa |  Niderlandy |     Wielka Brytania    |
-| Portugalia |  Hiszpania |  Polska |  Litwa |                    |
-
+|          |          |          |           |                |
+|:--------:|:--------:|:--------:|:---------:|:--------------:|
+| Belgia  | Finlandia  | Francja   | Niemcy   | Czechy |
+| Irlandia  |  Włochy   | Litwa | Niderlandy | Wielka Brytania    |
+| Portugalia |  Hiszpania   |  Polska |  Szwajcaria |                 |
 
 > [!primary] **Dostępność**
 > 
-> Niektóre kraje z powyższej listy mogą się nie wyświetlać w zależności
-> od dostępności adresów IP.
+> Niektóre z tych krajów mogą nie być wymienione w zależności od dostępności obecnie adresów IPv4.
 > 
 
-> [!primary] **Geolokalizacja**
+> [!primary] **Dzierżawa**
 >
-> Geolokalizacja opiera się wyłącznie na organizacjach referencyjnych.
+> Geolokalizacja IP opiera się wyłącznie na organizacjach referencyjnych.
 > 
-> Na przykład w przypadku RIPE: [https://www.ripe.net/](https://www.ripe.net/){.external}
+> Na przykład [RIPE NCC](https://www.ripe.net/){.external} obsługuje Europę jako regionalny rejestr internetowy.
 >
-> W przypadku weryfikacji w innych bazach prosimy o bezpośredni kontakt z zainteresowanymi organizacjami. OVHcloud nie będzie podejmować wobec nich żadnych działań.
+> Jeśli chcesz sprawdzić geolokalizację w inny sposób, skontaktuj się bezpośrednio z odpowiednimi organizacjami. OVHcloud nie będzie mógł udzielić Ci wsparcia w tym zakresie.
 
-Kliknij `Zamów`{.action}, aby zostać przekierowanym automatycznie do niego (wyświetlanie okienek pop-ups musi być dozwolone w Twojej przeglądarce).
+Po wybraniu kraju kliknij `Dalej`{.action}.
 
-Zamówienie znajdziesz również w Panelu klienta. W tym celu przejdź do `Dashboard`{.action}, a następnie kliknij `Wyświetl moje zamówienia`{.action}.
+Na ostatnim etapie wybierz instancję z rozwijanego menu. Następnie kliknij `Wygeneruj zamówienie`{.action}.
+
+![Dodaj IP](images/buyaddIP_04.png){.thumbnail}
+
+Zamówienie zostanie automatycznie otwarte, aby sfinalizować zamówienie.
 
 Więcej informacji znajdziesz w przewodniku dotyczącym [zarządzania zamówieniami OVHcloud](https://docs.ovh.com/pl/billing/zarzadzanie-zamowieniami-ovh/).
+
+Możesz również wyświetlić zamówienie w Panelu klienta, sekcja `Dashboard`{.action}, klikając `Pokaż moje zamówienia`{.action}.
+
+Następnym krokiem jest konfiguracja IP w systemie operacyjnym. Zapoznaj się [z przewodnikiem dotyczącym tej konfiguracji](https://docs.ovh.com/pl/publiccloud/network-services/configure-additional-ip/).
 
 ## Sprawdź również
 

@@ -6,7 +6,7 @@ section: Additional IP
 order: 03
 ---
 
-**Dernière mise à jour le 02/11/2022**
+**Dernière mise à jour le 07/11/2022**
 
 > [!primary]
 >
@@ -33,35 +33,40 @@ Il est possible d’importer une adresse Additional IP liée à un autre service
 
 ## En pratique
 
-Tout d’abord, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez votre projet dans la section `Public Cloud `{.action}. Ensuite, sélectionnez `Additional IP`{.action} dans la section "Network".
+Tout d’abord, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez votre projet dans la section `Public Cloud `{.action}.
 
-Cliquez sur `Actions`{.action} et sélectionnez `Importer une IP`{.action} pour afficher toutes les adresses IP pouvant être importées dans votre projet Public Cloud.
+Dans le menu de gauche, ouvrez `Public IPs`{.action} dans `Network`.
 
-![Section IP](images/import1.png){.thumbnail}
+Ouvrez l'onglet `Additional IP`{.action} et cliquez sur le bouton `Actions`{.action}. Sélectionnez `Importer une Additional IP`{.action} pour afficher toutes les adresses IP pouvant être importées dans votre projet Public Cloud.
 
-Si vous ne disposez pas encore d’Additional IP sur votre projet public cloud, l’option s’affichera alors sur la page d’accueil.
+![Section IP](images/import22_01.png){.thumbnail}
 
-Cliquez sur les 3 points à droite de l’IP que vous voulez importer et cliquez sur `Importer cette Additional IP`{.action}.
+Si vous n'avez pas encore d'Additional IP sur votre projet Public Cloud, l'option d'importation d'une Additional IP s'affichera sur la page d'accueil.
 
-![Importer une Additional IP](images/import2.png){.thumbnail}
+Cliquez sur `...`{.action} à côté de l'adresse IP que vous souhaitez importer et cliquez sur `Importer cette Additional IP`{.action}.
 
-Maintenant, cliquez sur `Importer`{.action} :
+![Import Additional IP](images/import22_02.png){.thumbnail}
 
-![Importer une Additional IP](images/importconfirm.png){.thumbnail}
+Validez alors en cliquant sur `Importer`{.action}.
 
-Une fois que vous l’aurez fait, la page sera rechargée et vous obtiendrez un message confirmant que la migration de l’IP s’est effectuée avec succès.
+![Import confirm](images/import22_03.png){.thumbnail}
 
-Lorsque l’Additional IP a été importée avec succès, cliquez sur les 3 points à droite, puis sur `Modifier l’instance associée`{.action}.
+Patientez quelques minutes le temps que l'importation soit réalisée. Ouvrez l'onglet `Additional IP`{.action} pour rechercher l'adresse Additional IP importée. Actualisez la page si nécessaire.
 
-![Importer une Additional IP](images/modifyinstance.png){.thumbnail}
+Cliquez sur `...`{.action} à droite et sélectionnez `Modifier l'instance associée`{.action}.
 
-Une fenêtre contextuelle apparaîtra pour vous permettre de choisir l'instance vers laquelle vous souhaitez déplacer votre IP :
+![Import Additional IP](images/import22_04.png){.thumbnail}
 
-![Importer une Additional IP](images/modifyinstance1.png){.thumbnail}
+Une fenêtre contextuelle apparaîtra pour choisir l'instance à laquelle votre adresse IP doit être attachée.
 
-Cliquez sur `Joindre`{.action} puis vous verrez la page se recharger avec la confirmation que l’IP a été associée à l’instance :
+![Import Additional IP](images/import22_05.png){.thumbnail}
 
-![Importer une Additional IP](images/modifycompleted.png){.thumbnail}
+Cliquez sur `Joindre`{.action} pour confirmer. La page affiche alors un message de modification.
+
+> [!warning]
+>
+> Une Additional IP ne peut être déplacée entre différentes zones. Par exemple, une IP localisée dans le datacentre de SBG peut être déplacée vers GRA ou RBX mais non vers BHS.
+>
 
 Votre adresse Additional IP sera maintenant attachée à votre instance.
 

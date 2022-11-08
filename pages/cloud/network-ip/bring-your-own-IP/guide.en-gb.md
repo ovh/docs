@@ -6,7 +6,7 @@ section: Bring Your Own IP
 order: 1
 ---
 
-**Last updated 20th September 2022**
+**Last updated 8th November 2022**
 
 ## Objective
 
@@ -35,6 +35,21 @@ You need to own (see below) a public IPv4 block with one of the following RIRs:
 - [RIPE](https://www.ripe.net/)
 
 An ARIN block can only be used with OVHcloud services located in Canada or the USA, while a RIPE block can only be used with OVHcloud services located in Europe.
+
+To be considered as a valid owned block, imported blocks must be one of the following types :
+
+- ARIN (object «Network type »)
+    - Direct Allocation
+    - Direct Assignment
+
+See <https://www.arin.net/resources/registry/whois/#network> and <https://www.arin.net/resources/registry/reassignments/> for more information on Net Types objects.
+
+- RIPE (object « status »)
+    - ASSIGNED PI
+    - LEGACY
+    - ALLOCATED PA
+
+See [« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) for more information on status objects.
 
 ### Your IP range must have a supported size <a name="supportedsize"></a>
 

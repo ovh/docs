@@ -6,7 +6,7 @@ section: Additional IP
 order: 03
 ---
 
-**Última actualización: 02/11/2022**
+**Última actualización: 07/11/2022**
 
 > [!primary]
 >
@@ -15,58 +15,62 @@ order: 03
 
 ## Objetivo
 
-Si necesita configurar una dirección IP de conmutación en sus instancias porque:
+Si necesita configurar una dirección Additional IP en sus instancias porque:
 
 - Tiene varios sitios web en su instancia 
 - Aloja varios proyectos internacionales
 - Quiere migrar de un servidor dedicado a una instancia de Public Cloud
 
-Puede importar una dirección IP de conmutación que esté asociada a otro servicio de OVHcloud.
+Puede importar una dirección Additional IP que esté asociada a otro servicio de OVHcloud.
 
-**Esta guía explica cómo importar esta IP de conmutación en su proyecto de Public Cloud de OVHcloud.**
+**Esta guía explica cómo importar esta Additional IP en su proyecto de Public Cloud de OVHcloud.**
 
 ## Requisitos
 
 - Tener un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
-- Tener una [dirección IP de conmutación](https://www.ovhcloud.com/es-es/bare-metal/ip/){.external}
+- Tener una [dirección Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/){.external}
 
 ## Procedimiento
 
-Primero, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione su proyecto en la sección `Public Cloud`{.action}. 
-A continuación, seleccione `Additional IP`{.action} en la sección "Network".
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione su proyecto en la sección `Public Cloud `{.action}.
 
-Haga clic en `Acciones`{.action} y seleccione `Importar una IP`{.action} para mostrar todas las direcciones IP que se pueden importar en su proyecto de Public Cloud.
+En el menú de la izquierda, abra `Public IPs`{.action} en `Network`.
 
-![IP Section](images/import1.png){.thumbnail}
+Abra la pestaña `Additional IP`{.action} y haga clic en el botón `Acciones`{.action}. Seleccione `Importar una IP`{.action} para mostrar todas las direcciones IP que puedan importarse a su proyecto de Public Cloud.
 
-Si todavía no tiene ninguna Additional IP en su proyecto de Public Cloud, la opción de importar una IP se mostrará en la página de inicio.
+![Sección IP](images/import22_01.png){.thumbnail}
 
-Haga clic en los tres puntos a la derecha de la IP que quiere importar y haga clic en `Importar esta Additional IP`{.action}.
+Si todavía no tiene una Additional IP en su proyecto de Public Cloud, la opción de importación de una Additional IP se mostrará en la página de inicio.
 
-![Import Additional IP](images/import2.png){.thumbnail}
+Haga clic en `...`{.action} junto a la dirección IP que quiera importar y haga clic en `Importar esta Additional IP`{.action}.
 
-Haga clic en `Importar`{.action}:
+![Importación IP](images/import22_02.png){.thumbnail}
 
-![Import confirm](images/importconfirm.png){.thumbnail}
+Haga clic en `Importar`{.action} para confirmar la operación.
 
-A continuación, se volverá a cargar la página y se mostrará la siguiente información para confirmar que la IP se ha migrado correctamente.
+![Importación confirmada](images/import22_03.png){.thumbnail}
 
-Una vez importada la IP de conmutación, haga clic en los tres puntos a la derecha y, después, en `Modificar la instancia asociada`{.action}.
+Espere a que finalice la importación en unos minutos. Abra la pestaña `Additional IP`{.action} para buscar la dirección IP importada. Actualice la página si es necesario.
 
-![Import Additional IP](images/modifyinstance.png){.thumbnail}
+Haga clic en `..`{.action} a la derecha y seleccione `Editar la instancia asociada`{.action}.
 
-Se abrirá una ventana emergente donde podrá elegir la instancia a la que desea migrar su IP:
+![Importación IP](images/import22_04.png){.thumbnail}
 
-![Import Additional IP](images/modifyinstance1.png){.thumbnail}
+Se abrirá una ventana emergente en la que podrá elegir la instancia a la que quiere asociar la dirección IP.
 
-Haga clic en `Asociar`{.action}. A continuación, se volverá a cargar la página con una confirmación de que la IP se ha asociado a la instancia:
+![Importación IP](images/import22_05.png){.thumbnail}
 
-![Import Additional IP](images/modifycompleted.png){.thumbnail}
+Haga clic en `Adjuntar`{.action} para confirmar la operación. Se mostrará un mensaje de edición en la página.
 
-Ahora, su IP de conmutación está asociada a su instancia.
+> [!warning]
+>
+> No es posible mover una Additional IP entre diferentes zonas. Por ejemplo, una IP localizada en el datacenter de SBG puede moverse hacia GRA o RBX, pero no hacia BHS.
+>
 
-El siguiente paso será configurar la IP en su sistema operativo. Puede consultar nuestra guía a continuación: [Configurar una Additional IP](https://docs.ovh.com/es/publiccloud/network-services/configure-additional-ip/){.external}.
+Su dirección Additional IP estará asociada a su instancia.
+
+El siguiente paso es configurar la IP en el sistema operativo. Consulte [nuestra guía sobre cómo configurar](https://docs.ovh.com/es/publiccloud/network-services/configure-additional-ip/) el alojamiento web.
 
 ## Más información
 

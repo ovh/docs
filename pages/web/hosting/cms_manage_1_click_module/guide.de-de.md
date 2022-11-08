@@ -55,7 +55,7 @@ Klicken Sie im Bereich `Hosting-Pakete`{.action} in Ihrem [OVHcloud Kundencenter
 
 Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) abrufen: Klicken Sie oben rechts auf Ihren Namen und dann im Kontextmenü auf `E-Mails vom Support`{.action}.
 
-### Passwort Ihres Moduls ändern
+### Passwort Ihres Moduls ändern <a name="password-change"></a>
 
 Sie können das Passwort Ihres Moduls über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ändern oder direkt auf die Login-Seite Ihrer Website zum Administrator-Bereich gehen.
 
