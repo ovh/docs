@@ -6,7 +6,7 @@ section: Diagnostica
 order: 02
 ---
 
-**Ultimo aggiornamento: 08/10/2021**
+**Ultimo aggiornamento: 08/11/2022**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -188,6 +188,10 @@ Questa anomalia può avere diverse cause:
 - Di recente hai effettuato una modifica nella tua zona o sui tuoi server [DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) o un [trasferimento di domini](../../domains/trasferire-un-dominio-generico-in-ovh/). Attendi il completamento di queste operazioni (48 ore per la modifica dei tuoi DNS). Riavvia anche i tuoi dispositivi (PC, smartphone, box, ecc...) e svuota la cache del tuo browser.
 
 - Il tuo dominio è sempre associato al tuo hosting precedente. In questo caso, modifica la tua [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1) o i tuoi [Server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#modifica-i-server-dns) o contatta il tuo precedente hosting provider.
+
+### La password "Amministratore" di accesso al "back office" del tuo modulo in 1 click non funziona più <a name="adminpassword"></a>
+
+In caso di rifiuto della password attuale di accesso all'interfaccia di amministrazione del tuo CMS, consulta il paragrafo "Modifica la password del tuo modulo" della nostra guida sulla [gestione del tuo modulo in 1 click](https://docs.ovh.com/it/hosting/1-click-module-management/).
 
 ## Per saperne di più <a name="gofurther"></a>
 

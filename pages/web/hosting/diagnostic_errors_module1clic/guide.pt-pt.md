@@ -10,7 +10,7 @@ Order: 02
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 08/10/2021**
+**Última atualização: 08/11/2022**
 
 ## Objetivo
 
@@ -188,6 +188,10 @@ Esta anomalia pode ter várias causas:
 - Efetuou recentemente uma alteração na sua zona ou nos seus servidores [DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns) ou uma [transferência de nome de domínio](../../domains/transferir-o-dominio-generico/). Aguarde até que estas operações estejam finalizadas (48 horas para as alterações nos seus DNS). Também pode reiniciar os seus dispositivos (PC, smartphone, box, etc.) e esvaziar a cache do seu browser.
 
 - O seu domínio está sempre associado ao seu antigo alojamento. Neste caso, altere a sua [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio_1) ou os seus [Servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#modificar-os-servidores-dns) ou contacte o seu antigo fornecedor de serviços.
+
+### A palavra-passe "Administrador" de acesso ao "back-office" do seu módulo 1 clique deixou de funcionar <a name="adminpassword"></a>
+
+Se a sua palavra-passe de acesso à interface de gestão do CMS for rejeitada, consulte o parágrafo "Alterar a palavra-passe do módulo" do nosso manual [sobre a gestão do módulo 1 clique](https://docs.ovh.com/pt/hosting/1-click-module-management/).
 
 ## Quer saber mais? <a name="gofurther"></a>
 

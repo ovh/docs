@@ -10,7 +10,7 @@ order: 02
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zaproponuj zmianę" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 08/10/2021**
+**Ostatnia aktualizacja z dnia 08/11/2022**
 
 ## Wprowadzenie 
 
@@ -189,7 +189,11 @@ Ta nieprawidłowość może mieć kilka przyczyn:
 
 - Twoja domena jest zawsze powiązana z Twoim poprzednim hostingiem. W tym przypadku zmień [strefę DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny_1) lub [serwery DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zmien-serwery-dns) lub skontaktuj się z aktualnym dostawcą usług hostingowych.
 
-## ## Sprawdź również <a name="gofurther"></a>
+### Hasło "Administrator" dostępu do "back-office" modułu za pomocą 1 kliknięcia nie działa <a name="adminpassword"></a>
+
+W przypadku odrzucenia Twojego aktualnego hasła do interfejsu administracyjnego Twojego CMS, zapoznaj się z sekcją "Zmiana hasła do Twojego modułu" w dokumentacji dotyczącej [zarządzanie modułem za pomocą 1 kliknięcia](https://docs.ovh.com/pl/hosting/1-click-module-management/).
+
+## Sprawdź również <a name="gofurther"></a>
 
 [Jak zdiagnozować białą stronę?](../hosting_www_jak_sprawdzic_przyczyne_wyswietlania_sie_bialej_strony/)
 
