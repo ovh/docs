@@ -54,7 +54,7 @@ Après quelques secondes, l’espace client est mis à jour. Un message de confi
 
 > [!primary]
 >
-L’IP Additional peut être configurée sur le serveur de destination avant ou après la migration. S’il était pré-configuré, il commencera à répondre dès que l’opération de routage sera terminée.
+L’Additional IP peut être configurée sur le serveur de destination avant ou après la migration. S’il était pré-configuré, il commencera à répondre dès que l’opération de routage sera terminée.
 >
 
 ## Aller plus loin
