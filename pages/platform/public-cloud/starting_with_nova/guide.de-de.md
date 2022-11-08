@@ -1,55 +1,55 @@
 ---
-title: Pierwsze kroki z API OpenStack
-excerpt: Dowiedz się, jak zarządzać instancjami za pomocą klienta Python OpenStack
-slug: pierwsze_kroki_z_api_nova
-legacy_guide_number: g1935
-section: Zarządzanie w OpenStack CLI
+title: Erste Schritte mit der OpenStack API
+slug: getting-started-openstack-api
+excerpt: Erfahren Sie hier, wie Sie Ihre Instanzen mithilfe des OpenStack Python Clients verwalten
+section: OpenStack
+order: 3
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Ostatnia aktualizacja z dnia 03-11-2022**
+**Letzte Aktualisierung am 03.11.2022**
 
-## Wprowadzenie
+## Ziel
 
-Aby móc zautomatyzować operacje dotyczące usługi Public Cloud, można korzystać z API OpenStack do generowania poszczególnych skryptów. 
+Um Ihre Operationen in der Public Cloud zu automatisieren, können Sie die OpenStack API verwenden, mit der verschiedene Skripte erstellt werden können. 
 
 > [!primary]
 >
-> Klient Nova był wcześniej używany do zarządzania instancjami i ich dyskami. Klient ten jest teraz zdeprecjowany, a zamówienia zostały zintegrowane z klientem Python OpenStack.
+> Der Nova Client wurde bislang für die Verwaltung Ihrer Instanzen und deren Disks verwendet. Dieser Client wird nicht mehr weiterentwickelt und die Funktionen wurden in den Python Client von OpenStack integriert.
 >
 
-Będziesz mógł na przykład uruchomić tworzenie dodatkowych instancji, gdy Twoje narzędzia monitoringu wykryją wzrost obciążenia, aby uniknąć przeciążenia infrastruktury. Możesz również regularnie programować tworzenie snapshotów.
+Sie können zum Beispiel die Erstellung zusätzlicher Instanzen starten, wenn Ihre Monitoring-Tools Lastspitzen erkennen, um eine Überlastung Ihrer Infrastruktur zu vermeiden. Die regelmßige Erstellung von Snapshots kann ebenfalls eingerichtet werden.
 
-Niniejszy przewodnik pomoże Ci w korzystaniu z API OpenStack w zarządzaniu instancjami za pomocą klienta Python OpenStack.
+**Diese Anleitung hilft Ihnen dabei, die OpenStack API zu verwenden, um Ihre Instanzen mithilfe des OpenStack Python Clients zu verwalten.**
+
+## Voraussetzungen
+
+- [Umgebung für die Verwendung der OpenStack-API vorbereiten](../vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
+- [OpenStack Umgebungsvariablen einrichten](../die-variablen-der-umgebung-openstack-laden/)
 
 
-## Wymagania początkowe
+## In der praktischen Anwendung
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](../przygotowanie_srodowiska_dla_api_openstack/)
-- [Zmienne środowiskowe OpenStack](../zmienne-srodowiskowe-openstack/)
-
-
-## W praktyce
-
-Możesz uzyskać listę zamówień, które możesz wykonać, czytając dokumentację klienta:
+Sie können die verfügbaren Befehle auflisten:
 
 ```bash
 admin@server-1:~$ openstack command list
 ```
 
-Możesz filtrować wyświetlane polecenia, wskazując grupę:
+Sie können die aufzulistenden Befehle filtern, indem Sie die Gruppe angeben: 
 
 ```bash
-admin@server-1:~$ openstack command list —group compute
+admin@server-1:~$ openstack command list --group compute
 ```
 
-Możesz również uzyskać informacje dotyczące zamówienia, dodając `help` przed komendą:
+Sie können Informationen zu Befehlen erhalten, indem Sie jeweils `help` voranstellen:
 
 ```bash
 admin@server-1:~$ openstack help flavor list 
+
 usage: openstack flavor list [-h] [-f {csv,json,table,value,yaml}] [-c COLUMN]
                              [--quote {all,minimal,none,nonnumeric}] [--noindent]
                              [--max-width <integer>] [--fit-width] [--print-empty]
@@ -57,21 +57,22 @@ usage: openstack flavor list [-h] [-f {csv,json,table,value,yaml}] [-c COLUMN]
                              [--sort-ascending | --sort-descending] [--public | --private | --all]
                              [--min-disk <min-disk>] [--min-ram <min-ram>] [--long]
                              [--marker <flavor-id>] [--limit <num-flavors>]
+
 List flavors ...
 ```
 
 > [!success]
 >
-> Zapoznaj się z dokumentacją klienta bezpośrednio na [stronie OpenStack](https://docs.openstack.org/python-openstackclient/latest/cli/index.html)
+> Die Benutzerdokumentation finden Sie auf der [OpenStack-Seite](https://docs.openstack.org/python-openstackclient/latest/cli/index.html).
 > 
 
-### Operacje podstawowe
+### Grundlegende Operationen
 
-#### Dodanie publicznego klucza SSH
+#### Hinzufügen eines öffentlichen SSH-Schlüssels
 
-W pierwszej kolejności należy dodać publiczny klucz SSH, który pozwoli na logowanie sie na instancje. 
+Zunächst muss ein öffentlicher SSH-Schlüssel hinzugefügt werden, damit Sie sich mit den Instanzen verbinden können.
 
-- Wyświetl listę poleceń związanych z kluczami SSH:
+- Befehle für SSH-Schlüssel auflisten:
 
 ```bash
 admin@server-1:~$ openstack help | grep keypair         
@@ -79,15 +80,16 @@ admin@server-1:~$ openstack help | grep keypair
   keypair delete  Delete public or private key(s)
   keypair list    List key fingerprints
   keypair show    Display key details
+
 ```
 
-- Dodaj publiczny klucz SSH:
+- Öffentlichen SSH-Schlüssel hinzufügen:
 
 ```bash
 admin@server-1:~$ openstack keypair create --public-key ~/.ssh/id_rsa.pub SSHKEY
 ```
 
-- Pobierz listę dostępnych kluczy SSH:
+- Verfügbare SSH-Schlüssel auflisten:
 
 ```bash
 admin@server-1:~$ openstack keypair list
@@ -98,9 +100,9 @@ admin@server-1:~$ openstack keypair list
 +---------------+-------------------------------------------------+------+
 ```
 
-#### Wyświetl listę modeli instancji
+#### Die Instanz-Modelle auflisten
 
-Następnie pobierz ID szablonu, którego chcesz użyć:
+Die ID des gewünschten Modells muss zuerst abgerufen werden:
 
 ```bash
 admin@server-1:~$ openstack flavor list
@@ -120,9 +122,9 @@ admin@server-1:~$ openstack flavor list
 +--------------------------------------+-----------------+--------+------+-----------+-------+-----------+
 ```
 
-#### Wyświetl listę dostępnych obrazów
+#### Die verfügbaren Images auflisten
 
-Na koniec pobierz ID obrazu, który będzie używany dla instancji:
+Um die Vorbereitung abzuschließen, rufen Sie die ID des Images ab, das für die Instanz verwendet werden soll:
 
 ```bash
 admin@server-1:~$ openstack image list 
@@ -141,9 +143,9 @@ admin@server-1:~$ openstack image list
 +--------------------------------------+-----------------------------------------------+--------+
 ```
 
-#### Utworzenie instancji
+#### Instanz erstellen
 
-Dzięki pobraniu wcześniej elementów możesz utworzyć instancję:
+Mit den zuvor abgerufenen Elementen können Sie nun eine Instanz erstellen:
 
 ```bash
 admin@server-1:~$ openstack server create --key-name SSHKEY --flavor d2-2 --image "Ubuntu 22.04" InstanceTest
@@ -180,8 +182,7 @@ admin@server-1:~$ openstack server create --key-name SSHKEY --flavor d2-2 --imag
 +-----------------------------+-----------------------------------------------------+
 ```
 
-Po kilku minutach możesz sprawdzić listę istniejących instancji, aby znaleźć nowo utworzoną instancję:
-
+Nach kurzer Wartezeit kann die Liste der existierenden Instanzen folgendermaßen überprüft werden, um die neu erstellte Instanz anzuzeigen:
 
 ```bash
 admin@server-1:~$ openstack server list                                                                 
@@ -192,15 +193,14 @@ admin@server-1:~$ openstack server list
 +--------------------------------------+--------------+--------+-------------------------------------+--------------+--------+
 ```
 
-#### Usunięcie instancji
+#### Löschen einer Instanz
 
-Instancję można usunąć za pomocą takiego polecenia:
+Sie können eine Instanz mit folgendem Befehl löschen:
 
 ```bash
 admin@server-1:~$ openstack server delete InstanceTest
 ```
 
-## Sprawdź również
+## Weiterführende Informationen
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
