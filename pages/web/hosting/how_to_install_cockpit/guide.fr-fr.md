@@ -65,9 +65,31 @@ Revenez sur votre nom de domaine et saisissez les login et mot de passe par déf
 
 ![Accès interface admin](images/how_to_install_cockpit%5B2%5D.png)
 
-####
+### Configurer votre application
 
+Les éléments de configuration se trouvent dans le fichier `config.php` situé dans le répertoire `/config/`.
+À la racine de votre application, éditez ce fichier de configuration :
 
+```sh
+nano config/config.php
+```
 
+Le fichier sera vide par défaut :
+
+```php
+return [
+
+];
+```
+
+Pour changer le nom de votre application, ajoutez la propriété `app.name` : 
+
+```php
+return [
+    'app.name' => 'Mon projet Cockpit'
+];
+```
+
+Vous trouverez plus de détail sur la [documentation](https://getcockpit.com/documentation/core/quickstart/configuration) relative à la configuration de Cockpit.
 
 ## Aller plus loin
