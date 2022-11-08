@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment mettre à jour votre équipement OverTheBox'
 section: "Configurations de l'OverTheBox"
 ---
 
-**Dernière mise à jour le 16/02/2022**
+**Dernière mise à jour le 08/11/2022**
 
 ## Objectif
 
@@ -42,8 +42,34 @@ Attendez quelques minutes afin que l'**OverTheBox** soit de nouveau opérationne
 > Votre  OvertheBox  est maintenant mise à jour, votre configuration a été réappliquée automatiquement.
 >
 
+#### Méthode n°2 : mise à jour par l'interface web locale
 
-#### Méthode n°2 : mise à jour par le CLI
+Il est possible de mettre à jour votre équipement OverTheBox depuis l'interface web locale.
+
+- Téléchargez la dernière image sur votre ordinateur : [http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz){.external}
+- Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
+- Cliquez sur **"System"**
+- Cliquez sur **"Backup/Flash Firmware"**
+
+![overthebox](images/upgrade-method2-1.png){.thumbnail}
+
+Ensuite, dans la section  **Flash new firmware image** :
+
+- Cliquez sur **"Parcourir"**
+- Choisissez le fichier image que vous venez de télécharger
+- Laissez la case **"Keep settings"** coché, si vous souhaitez conserver vos configurations
+- Cliquez sur **"Flash image"**
+
+![overthebox](images/upgrade-method2-2.png){.thumbnail}
+
+- Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle.
+
+> [!success]
+>
+> Votre  OvertheBox  est maintenant mise à jour, votre configuration a été réappliquée automatiquement si la case **Keep settings** n'a pas été décoché.
+>
+
+#### Méthode n°3 : mise à jour par le CLI
 
 Vous pouvez également mettre à jour votre équipement OverTheBox depuis le CLI, accessible depuis une connexion SSH.
 
@@ -66,7 +92,7 @@ otb-action-sysupgrade
 > Votre  OvertheBox  est maintenant mise à jour, votre configuration a été réappliquée automatiquement.
 >
 
-#### Méthode n°3 : réinstallation manuelle
+#### Méthode n°4 : réinstallation manuelle
 
 > [!warning]
 >
