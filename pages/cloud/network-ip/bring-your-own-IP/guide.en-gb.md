@@ -38,13 +38,13 @@ An ARIN block can only be used with OVHcloud services located in Canada or the U
 
 To be considered as a valid owned block, imported blocks must be one of the following types :
 
-- ARIN (objet «Network type »)
+- ARIN (object «Network type »)
     - Direct Allocation
     - Direct Assignment
 
 See <https://www.arin.net/resources/registry/whois/#network> and <https://www.arin.net/resources/registry/reassignments/> for more information on Net Types objects.
 
-- RIPE (objet « status »)
+- RIPE (object « status »)
     - ASSIGNED PI
     - LEGACY
     - ALLOCATED PA

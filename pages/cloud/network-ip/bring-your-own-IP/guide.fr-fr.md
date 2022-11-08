@@ -38,13 +38,13 @@ Un bloc ARIN ne peut être utilisé qu’avec des services OVHcloud situés au C
 
 Pour que le bloc soit considéré comme valide, les blocs importés doivent être de type suivants :
 
-- ARIN (objet «Network type »)
+- ARIN (object «Network type »)
     - Direct Allocation
     - Direct Assignment
 
 Vous pouvez consulter les pages <https://www.arin.net/resources/registry/whois/#network> et <https://www.arin.net/resources/registry/reassignments/> pour plus d’informations sur les objets « Network type ».
 
-- RIPE (objet « status »)
+- RIPE (object « status »)
     - ASSIGNED PI
     - LEGACY
     - ALLOCATED PA
