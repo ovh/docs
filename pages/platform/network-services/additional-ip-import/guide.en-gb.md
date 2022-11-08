@@ -6,7 +6,7 @@ section: Additional IP
 order: 03
 ---
 
-**Last updated 6th November 2022**
+**Last updated 7th November 2022**
 
 > [!primary]
 >
@@ -34,7 +34,9 @@ Instead of buying more public IP addresses, you can import an Additional IP addr
 
 ## Instructions
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), select your project from the `Public Cloud`{.action} section. Open `Public IPs`{.action} under "**Network**" in the left-hand menu.
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), select your project from the `Public Cloud`{.action} section.
+
+In the left-hand menu, open `Public IPs`{.action} under `Network`.
 
 Open the `Additional IP`{.action} tab and click on the `Actions`{.action} button. Select `Import an Additional IP`{.action} to display all the IP addresses that can be imported into your Public Cloud project.
 

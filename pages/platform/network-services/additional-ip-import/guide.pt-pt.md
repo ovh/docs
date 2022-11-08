@@ -6,7 +6,7 @@ section: Additional IP
 order: 03
 ---
 
-**Última atualização: 02/11/2022**
+**Última atualização: 07/11/2022**
 
 > [!primary]
 >
@@ -33,40 +33,45 @@ Pode importar um endereço Additional IP associado a outro serviço OVHcloud.
 
 ## Instruções
 
-Comece por fazer login na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione o seu projeto na secção `Public Cloud`{.action}. Por fim, selecione `Additional IP`{.action} na secção "Network".
+Ligue-se à sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione o seu projeto na secção `Public Cloud `{.action}.
 
-Clique em `Ações`{.action} e selecione `Importar um IP`{.action} para visualizar todos os endereços IP que podem ser importados para o seu projeto Public Cloud.
+No menu à esquerda, abra o `Public IPs`{.action} em `Network`.
 
-![Secção IP](images/import1.png){.thumbnail}
+Abra o separador `Additional IP`{.action} e clique no botão `Ações`{.action}. Selecione `Importar um Additional IP`{.action} para apresentar todos os endereços de IP que podem ser importados no seu projeto Public Cloud.
 
-Se ainda não dispõe de endereços Additional IP no seu projeto Public Cloud, a opção de importar um IP aparecerá na página inicial.
+![Secção IP](images/import22_01.png){.thumbnail}
 
-Clique nos três pontos à direita do IP que deseja importar e clique em `Importar este Additional IP`{.action}.
+Se ainda não tiver um IP adicional no seu projeto Public Cloud, a opção de importação de um IP adicional será apresentada na página inicial.
 
-![Importar Additional IP](images/import2.png){.thumbnail}
+Clique em `...`{.action} junto do endereço IP que deseja importar e clique em `Importar este Additional IP`{.action}.
 
-Agora, clique em `Importar`{.action}.
+![Importação Additional IP](images/import22_02.png){.thumbnail}
 
-![Importar Additional IP](images/importconfirm.png){.thumbnail}
+Valide clicando em `Importar`{.action}.
 
-Uma vez terminado, surgirá a seguinte informação a confirmar que a migração do IP foi bem-sucedida.
+![Importação confirmada](images/import22_03.png){.thumbnail}
 
-Deverá então clicar nos três pontos à direita e depois em `Modificar a instância associada`{.action}.
+Aguarde alguns minutos até que a importação seja concluída. Abra o separador `Additional IP`{.action} para encontrar o endereço Additional IP importado. Atualize a página caso seja necessário.
 
-![Importar Additional IP](images/modifyinstance.png){.thumbnail}
+Clique em `...`{.action} do lado direito e selecione `Alterar a instância associada`{.action}.
 
-Surgirá uma janela pop-up na qual poderá escolher a instância para onde deseja mover o seu IP:
+![Importação Additional IP](images/import22_04.png){.thumbnail}
 
-![Importar Additional IP](images/modifyinstance1.png){.thumbnail}
+Surgirá uma janela de contexto para escolher a instância à qual o seu endereço IP deve estar associado.
 
-Clique em `Associar`{.action} e aguarde pela confirmação de que o IP foi associado à instância:
+![Importação Additional IP](images/import22_05.png){.thumbnail}
 
-![Importar Additional IP](images/modifycompleted.png){.thumbnail}
+Clique em `Adicionar`{.action} para confirmar. A página apresenta então uma mensagem de modificação.
 
-O seu Additional IP está agora associado à sua instância.
+> [!warning]
+>
+> Um IP adicional não pode ser migrado entre diferentes zonas. Por exemplo, um IP localizado no datacenter SBG pode ser migrado para GRA ou RBX mas não para BHS.
+>
 
-O passo seguinte será a configuração do IP no seu sistema operativo. Consulte o nosso guia aqui: [Configurar um Additional IP](https://docs.ovh.com/pt/publiccloud/network-services/configure-additional-ip/).
+O seu endereço Additional IP será associado à sua instância.
 
-## Vá mais longe
+O próximo passo consiste em configurar o IP no seu sistema operativo. Consulte o [nosso guia dedicado a esta configuração](https://docs.ovh.com/pt/publiccloud/network-services/configure-additional-ip/).
+
+## Quer saber mais?
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
