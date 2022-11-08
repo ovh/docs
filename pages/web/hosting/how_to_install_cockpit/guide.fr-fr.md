@@ -6,7 +6,7 @@ section: CMS
 order: 09
 ---
 
-**Dernière mise à jour le 07/11/2022**
+**Dernière mise à jour le 08/11/2022**
 
 ## Objectif
 
@@ -65,6 +65,20 @@ Revenez sur votre nom de domaine et saisissez les login et mot de passe par déf
 
 ![Accès interface admin](images/how_to_install_cockpit%5B2%5D.png)
 
+### Changer le mot de passe du compte admin
+
+Pour des raisons évidentes de sécurité, changez le mot de passe `admin` du compte administrateur.
+
+Cliquez sur l'icône en bas à gauche (Users) :
+
+![Icône Users](images/how_to_install_cockpit%5B3%5D.png)
+
+Cliquez ensuite sur le compte 'Admin' et modifiez les informations de ce compte via la formulaire affiché. Changez alors votre adresse mail, votre mot de passe et pensez à générer un token dans la rubrique « API Key » en cliquant sur le cercle terminé par une flèche. Si vous le souhaitez, vous pouvez également activer un second facteur d'authentification (2FA) :
+
+![Interface admin](images/how_to_install_cockpit%5B4%5D.png)
+
+N'oubliez pas de valider en cliquant sur « Update » en bas et à droite de la page.
+
 ### Configurer votre application
 
 Les éléments de configuration se trouvent dans le fichier `config.php` situé dans le répertoire `/config/`.
@@ -86,10 +100,25 @@ Pour changer le nom de votre application, ajoutez la propriété `app.name` :
 
 ```php
 return [
-    'app.name' => 'Mon projet Cockpit'
+    'app.name' => 'Mon projet Cockpit',
+     'site_url' => 'https://monsite.ovh',
 ];
 ```
 
 Vous trouverez plus de détail sur la [documentation](https://getcockpit.com/documentation/core/quickstart/configuration) relative à la configuration de Cockpit.
+
+### Ajoutez des contenus
+
+#### Assets
+
+Le menu « Assets » vous permet de gérer vos contenus. Créez des répertoires pour organiser vos contenus et uploadez vos images et illustrations :
+
+![Folder creation](images/how_to_install_cockpit%5B5%5D.png)
+
+Uploadez maintenant une image dans votre répertoire :
+
+![Upload picture](images/how_to_install_cockpit%5B6%5D.png)
+
+![Upload picture](images/how_to_install_cockpit%5B7%5D.png)
 
 ## Aller plus loin
