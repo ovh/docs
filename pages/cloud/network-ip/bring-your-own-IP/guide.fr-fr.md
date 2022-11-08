@@ -6,7 +6,7 @@ section: Bring Your Own IP
 order: 1
 ---
 
-**Dernière mise à jour le 20/09/2022**
+**Dernière mise à jour le 08/11/2022**
 
 ## Objectif
 
@@ -35,6 +35,21 @@ Vous devez posséder (voir ci-dessous) un bloc IPv4 public auprès de l'un des R
 - [RIPE](https://www.ripe.net/)
 
 Un bloc ARIN ne peut être utilisé qu’avec des services OVHcloud situés au Canada ou aux Etats-Unis, tandis qu’un bloc RIPE ne peut être utilisé qu’avec des services OVHcloud situés en Europe.
+
+Pour que le bloc soit considéré comme valide, les blocs importés doivent être de type suivants :
+
+- ARIN (object «Network type »)
+    - Direct Allocation
+    - Direct Assignment
+
+Vous pouvez consulter les pages <https://www.arin.net/resources/registry/whois/#network> et <https://www.arin.net/resources/registry/reassignments/> pour plus d’informations sur les objets « Network type ».
+
+- RIPE (object « status »)
+    - ASSIGNED PI
+    - LEGACY
+    - ALLOCATED PA
+
+Vous pouvez consulter la page [« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) pour plus d’informations sur les objets « status ».
 
 ### Avoir une plage d'IP d'une taille prise en charge <a name="haveaniprangeofasupportedsize"></a>
 
