@@ -14,31 +14,31 @@ order: 04
 
 ## Objectif
 
-Ce guide vous explique comment basculer une Additional IP d'une instance à une autre. Cette opération peut avoir plusieurs applications, permettant généralement de limiter ou de supprimer les éventuels cas d'indisponibilité de service :
+Ce guide vous explique comment basculer une Additional IP d'une instance à une autre. Cette opération peut avoir plusieurs applications. Elle permet généralement de limiter ou de supprimer les éventuels cas d'indisponibilité de service en :
 
-- basculer sur un site dans sa "nouvelle version" ;
-- faire tourner votre production sur un serveur répliqué pendant que vous faites une maintenance, une mise à jour, sur le serveur de production.
+- basculant sur un site dans sa "nouvelle version" ;
+- faisant tourner votre production sur un serveur répliqué pendant que vous faites une maintenance ou une mise à jour sur le serveur de production.
 
 
 ## Prérequis
-- Au moins deux instances Public Cloud démarrées
-- Une Additional IP
+- Avoir au moins deux instances Public Cloud démarrées
+- Disposer d'une Additional IP
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique 
 
 > [!warning]
 >
-> Une Additional IP ne peut être déplacée entre différentes zones. Par exemple, une IP localisée dans le datacentre de SBG peut être déplacée vers GRA ou RBX mais non vers BHS.
+> Une Additional IP ne peut pas être déplacée entre différentes zones. Par exemple, une IP localisée dans le datacentre de SBG peut être déplacée vers GRA ou RBX mais pas vers BHS.
 >
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez votre projet dans la section `Public Cloud`{.action} .
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez votre projet dans la section `Public Cloud`{.action}.
 
-Dans le menu de gauche, ouvrez `Public IPs`{.action} dans `Network`. Cliquez sur l'onglet `Additional IP`{.action}.
+Dans le menu de gauche, rendez-vous dans la section `Network` puis ouvrez la partie `Public IPs`{.action}. Cliquez sur l'onglet `Additional IP`{.action}.
 
 Dans cet exemple, l'adresse IP supplémentaire routée vers "Instance_A" sera migrée vers "Instance_B".
 
-Cliquez sur `...`{.action} dans la ligne de l'IP supplémentaire et sélectionnez `Modifier l'instance associée`{.action} associée.
+Cliquez sur `...`{.action} dans la ligne de l'IP supplémentaire et sélectionnez `Modifier l'instance associée`{.action}.
 
 ![migrating Additional IP](images/migrateip_01.png){.thumbnail}
 
@@ -46,15 +46,15 @@ Cliquez sur le menu déroulant pour choisir l'instance de destination dans la li
 
 ![migrating Additional IP](images/migrateip_02.png){.thumbnail}
 
-Validez alors en cliquant sur `Joindre`{.action}.
+Validez en cliquant sur `Joindre`{.action}.
 
-Après quelques secondes, l’espace client est mis à jour et un message de confirmation s’affiche si la migration s’est effectuée avec succès.
+Après quelques secondes, l’espace client est mis à jour. Un message de confirmation s’affiche si la migration s’est effectuée avec succès.
 
 ![migrating Additional IP](images/migrateip_03.png){.thumbnail}
 
 > [!primary]
 >
-L’IP Additional peut être configurée sur le serveur de destination avant ou après la migration. S’il était préconfiguré, il commencera à répondre dès que l’opération de routage sera terminée.
+L’IP Additional peut être configurée sur le serveur de destination avant ou après la migration. S’il était pré-configuré, il commencera à répondre dès que l’opération de routage sera terminée.
 >
 
 ## Aller plus loin
