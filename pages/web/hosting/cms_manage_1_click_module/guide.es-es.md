@@ -56,7 +56,7 @@ Haga clic en la pestaña `Módulos en 1 clic`{.action} desde el menú `Alojamien
 
 También puede consultar el mensaje de correo electrónico recibido al crear el módulo desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es): haga clic en su nombre en la esquina superior derecha de la pantalla y, en el menú que aparece, haga clic en `Emails de servicio`{.action}.
 
-### Cambiar la contraseña del módulo
+### Cambiar la contraseña del módulo <a name="password-change"></a>
 
 Puede cambiar la contraseña de su módulo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) o directamente desde la página de conexión al área de administrador de su sitio web.
 En ambos casos, recibirá un mensaje de correo electrónico con el fin de restaurar la contraseña.

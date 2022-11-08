@@ -56,7 +56,7 @@ Clique no separador `Módulos "1 clique"`{.action} a partir da parte `Alojamento
 
 Também pode procurar o e-mail recebido durante a criação do módulo a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt): clique no seu nome no canto superior direito do ecrã e, no menu que aparecer, clique em `E-mails de serviço`{.action}.
 
-### Modificar a palavra-passe do seu módulo
+### Modificar a palavra-passe do seu módulo <a name="password-change"></a>
 
 Pode alterar a palavra-passe do módulo a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou através de uma ligação direta à página de acesso ao espaço de administrador do seu website.
 Em ambos os casos, ser-lhe-á enviado um e-mail de reinicialização da password.
