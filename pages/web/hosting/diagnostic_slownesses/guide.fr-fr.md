@@ -23,20 +23,20 @@ L'objectif de cette documentation est de vous permettre de diagnostiquer l'origi
 
 > [!primary]
 >
-> Si **après la réalisation de l'ensemble des diagnostics indiqués dans ce guide** il s'avère que le ralentissement provient de notre infrastructure, sachez que nos offres d'hébergement mutualisés ne disposent pas de « Service Level agreement » (SLA). 
+> Si **après la réalisation de l'ensemble des diagnostics indiqués dans ce guide** il s'avère que le ralentissement provient de notre infrastructure, sachez que nos offres d'hébergements mutualisés ne disposent pas de « Service Level Agreement » (SLA). 
 >
-> Ceci du fait que l'infrastructure d'hébergement est mutualisée entre plusieurs utilisateurs. Ces derniers se partagent les ressources de l'infrastructure d'hébergement mutualisée pour faire fonctionner leurs sites web. 
+> Ceci du fait que l'infrastructure d'hébergements est mutualisée entre plusieurs utilisateurs. Ces derniers se partagent les ressources de l'infrastructure d'hébergements mutualisés pour faire fonctionner leurs sites web. 
 >
 > Si l'un d'entre eux sur-sollicite l'infrastructure mutualisée, cela peut avoir des conséquences sur les autres hébergements présents sur cette même infrastructure.
 >
-> Si vous avez besoin d'un service disposant d'un taux de disponibilité SLA suppérieur à 99%, nous vous invitons à utiliser une solution VPS ou Serveur Dédié qui sera plus adapté à votre besoin.
+> Si vous avez besoin d'un service disposant d'un taux de disponibilité SLA suppérieur à 99%, nous vous invitons à utiliser un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr/vps/) ou un [Serveur Dédié (SD)](https://www.ovhcloud.com/fr/bare-metal/) qui sera plus adapté à votre besoin.
 >
-> *Sachez que les performances de l'infrastructure d'hébergement mutualisé OVHcloud sont monitorées 24 heures sur 24 et 7 jours sur 7. Ceci afin de vous garantir un haut taux de disponibilité et, le cas échéant un rétablissement rapide de vos services en cas de surcharge avérée.*
+> *Sachez que les performances de l'infrastructure d'hébergements mutualisés OVHcloud sont monitorées 24 heures sur 24 et 7 jours sur 7. Ceci afin de vous garantir un haut taux de disponibilité et, le cas échéant un rétablissement rapide de vos services en cas de surcharge avérée.*
 >
 
 ## Prérequis
 
-- Disposer d'un site hébergé sur l'une de nos offres d'[hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) sur lequel vous rencontrez des ralentissements.
+- Disposer d'un site hébergé sur l'une de nos offres d'[hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) et sur laquelle vous rencontrez des ralentissements.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
@@ -59,52 +59,52 @@ Les lenteurs ont principalement deux origines :
 
 *La quasi totalité des lenteurs proviennent en réalité du site internet et non de son hébergement mutualisé : c'est pour cela que nous avons décidés de créer le présent guide afin de vous aider au mieux dans cette situation.*
 
-Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre fournisseur d'accès à Internet ou à un débit de connexion Internet trop faible.
+Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre fournisseur d'accès à Internet ou à un débit de connexion Internet trop faible. Vérifiez votre point d'accès réseau **avant** de poursuivre vos diagnostics.
 
 ### Comprendre la notion de Time To First Bite (TTFB)
 
-Le TTFB représente la durée que votre hébergement web va mettre entre le moment ou vous émettez la requête pour afficher votre site web dans votre navigateur internet et le premier octet de données qui sera reçu en réponse à la requête demandée par votre navigateur.
+Le TTFB représente la durée que votre hébergement web va mettre pour renvoyez le premier octect de données à votre navigateur Internet suite à une requêtes effectuée par ce dernier pour afficher votre site web.
 
 Lorsqu'il n'y a pas de surcharge au niveau de l'infrastructure d'hébergement mutualisé et que votre site internet est optimisé au maximum, le TTFB n'exède pas les 800ms.
 
 > [!warning]
 >
-> Un TTFB élevé n'est pas non plus le signe que vos lenteurs proviennent de votre hébergement mutualisé. 
+> **Un TTFB élevé ne signifie pas automatiquement que vos lenteurs proviennent de votre hébergement mutualisé.**
 >
-> En effet, pour Content Managment System (CMS) tels que WordPress, Joomla!, PrestaShop ou Drupal, la page que vous appelez depuis votre navigateur internet peut elle-même générer des requêtes complémentaires en interne sur l'infrastructure. Votre page ne va alors rien renvoyer à votre navigateur tant que ces propres requêtes ne lui auront pas retournées leurs résultats.
+> En effet, pour Content Managment System (CMS) tels que WordPress, Joomla!, PrestaShop ou Drupal, la page que vous appelez depuis votre navigateur Internet peut elle-même générer des requêtes complémentaires en interne sur votre hébergement. Votre hébergement ne renverra rien à votre navigateur tant que ces requêtes internes ne seront pas elle-même finalisées.
 >
-> **Exemple** : Si vous demandez depuis votre navigateur internet d'afficher la page d'accueil de votre site, la requête va donc appeler le fichier **« index.php »** de votre site. 
+> **Exemple** : Si vous demandez depuis votre navigateur Internet d'afficher la page d'accueil de votre site web, la requête va donc appeler par défaut le fichier **« index.php »** de votre site web. 
 >
 > Une fois la requête arrivée sur le fichier **« index.php »**, celui-ci est alors exécuté par le serveur web de votre hébergement mutualisé. 
 >
-> Dans son exécution, le fichier **« index.php »** doit récupérer des informations parmi les autres fichiers qui composent votre site mais aussi des éléments présents dans votre base de données. 
+> Dans son exécution, le fichier **« index.php »** doit récupérer des informations parmi les autres fichiers qui composent votre site web voire des éléments présents dans votre base de données. 
 >
 > Chacune de ces demandes d'information génère une requête interne sur votre service d'hébergement. 
 >
-> Le fichier **« index.php »** attendra d'avoir le résultat de toutes les requêtes qu'il a demandé **avant** de renvoyer le premier octet de donnée à votre navigateur internet.
+> Le fichier **« index.php »** attendra d'avoir le résultat de toutes les requêtes internes qu'il a demandé **avant** de renvoyer le premier octet de donnée à votre navigateur internet.
 >
-> Si votre fichier **« index.php »** génère des requêtes "lentes" ou longues à s'exécuter, le TTFB sera alors élevé et votre site mettra plusieurs secondes à s'afficher. Ceci **sans que les performances de votre offre d'hébergement ne soit en cause**.
+> Si votre fichier **« index.php »** génère des requêtes "lentes" ou lourdes à s'exécuter, le TTFB sera alors élevé et votre site mettra plusieurs secondes à s'afficher. Ceci **sans que les performances de votre offre d'hébergement ne soit en cause**.
 >
 
-Il existe des outils de diagnostic en ligne qui vous permettent de récupérez le TTFB de votre hébergement. Faites attention car la plupart d'entres eux fonctionnent comme des navigateurs internet et incluent des délais supplémentaires dans le TTFB. Ces systèmes ne sont pas non plus en mesure de prendre en compte les requêtes internes demandées par le fichier que vous avez appelé via votre navigateur. Ceci comme dans l'exemple ci-dessus avec le fichier **« index.php »**.
+Il existe des outils de diagnostic en ligne qui vous permettent de récupérez le TTFB de votre hébergement. Faites attention car la plupart d'entres eux fonctionnent comme des navigateurs Internet. Ces systèmes ne sont pas en mesure de prendre en compte les requêtes internes demandées par le fichier que vous avez appelé via votre navigateur. Ceci comme dans l'exemple ci-dessus avec le fichier **« index.php »**.
 
 ### Etape 1 - déterminer si les lenteurs proviennent de l'hébergement ou de votre site web
 
 Identifiez si les lenteurs proviennent de votre site en lui-même de part son fonctionnement interne ou de l'infrastructure d'hébergement mutualisé où il se trouve.
 
-**Tous les diagnostics de l'étape 1 doivent être réalisés sans exception afin de déterminer si les ralentissements proviennent de vos services d'hébergement web ou de votre site internet que vous hébergez dessus.**
+*Tous les diagnostics de l'étape 1 doivent être réalisés ***sans exception*** afin de déterminer si les ralentissements proviennent de vos services d'hébergement web ou du site internet que vous hébergez dessus.*
 
 #### 1.1 - Vérifer l'état de vos services OVHcloud
 
-Pour être sûr que vos services (hébergement mutualisé **et** base de données) ne font pas l'objet d'une maintenance ou d'un incident, récupérez le cluster et le filer de votre hébergement mutualisé ainsi que les informations générales relatives à votre base de données puis rendez-vous sur <https://web-cloud.status-ovhcloud.com/>.
+Pour être sûr que vos services (hébergement mutualisé **et** base de données) ne font pas l'objet d'une maintenance ou d'un incident, récupérez le cluster et le filer de votre hébergement mutualisé ainsi que les informations générales relatives à votre base de données puis rendez-vous sur [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Pour connaître le cluster et le filer où se trouve votre hébergement mutualisé, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web concerné. Dans l'onglet `Informations générales`{.action}, repérez le **datacentre** de votre hébergement mutualisé ainsi que le filer **filer** où il se trouve.
+Pour connaître le cluster et le filer où se trouve votre hébergement mutualisé, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web concerné. Dans l'onglet `Informations générales`{.action}, repérez le `datacentre` de votre hébergement mutualisé ainsi que le filer `filer` où il se trouve.
 
-![slowness](images/DropFilerCluster1.png){.thumbnail}
+![Récupérer Filer](images/DropFilerCluster1.png){.thumbnail}
 
 Cliquez ensuite sur l'onglet `Multisites`{.action} pour récupérez le numéro du cluster où se trouve votre hébergement mutualisé.
 
-![slowness](images/DropFilerCluster2.png){.thumbnail}
+![Récupérer cluster](images/DropFilerCluster2.png){.thumbnail}
 
 > [!success]
 >
@@ -114,16 +114,16 @@ Cliquez ensuite sur l'onglet `Multisites`{.action} pour récupérez le numéro d
 >
 > *Sachez qu'une fois que l'incident ou la maintenance est marqué comme **résolu**, un délais de stabilisation de la charge accumulée peut survenir. Ce dernier prendra au maximum **3 heures** après la notification de résolution pour se résorber complètement.*
 >
-> Si aucun incident ou aucune maintenance n'est déclaré, poursuivez vos diagnostics.
->
+
+Si aucun incident ou aucune maintenance n'est déclaré, poursuivez vos diagnostics.
 
 ####  1.2 - Tester le site sur plusieurs appareils
 
-Testez votre site internet depuis un autre appareil/ordinateur puis depuis un autre point d'accès à Internet. Le tout en vidant le cache de votre navigateur internet à chaque tentative afin que votre site soit directement chargé depuis l'hébergement.
+Testez votre site web depuis un autre appareil/ordinateur puis depuis un autre point d'accès à Internet. Le tout en vidant le cache de votre navigateur à chaque tentative afin que votre site soit directement chargé depuis l'hébergement web.
 
 ####  1.3 - Tester l'hébergement avec un fichier indépendant de votre site web
 
-Si, dans **tous les précédents tests** les lenteurs sont présentes, placez à la racine de votre site dans l'[espace de stockage FTP de votre hébergement mutualisé](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) un fichier que vous nommerez « phpinfo.php ».
+Placez à la racine de votre site web dans l'[espace de stockage FTP de votre hébergement mutualisé](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) un fichier que vous nommerez **« phpinfo.php »**.
 
 Dans ce fichier, placez ensuite le code suivant :
 
@@ -135,28 +135,28 @@ phpinfo();
 
 > [!warning]
 >
-> Dans certains cas, les fichiers **« .htaccess »** présents dans les répertoires/dossiers situés en amont ou au même niveau que l'endroit où vous avez placé votre fichier **« phpinfo.php »** peuvent influer sur l'affichage dans un navigateur internet du **« phpinfo.php »**. 
-> S'il ne s'affiche pas, renommez le fichier **« .htaccess »** en **« .htaccess_OLD »** afin que le serveur ne l'exécute plus le temps de votre test. Renommez-le correctement une fois votre diagnostic effectué.
+> Dans certains cas, les fichiers **« .htaccess »** présents dans les répertoires/dossiers situés en amont ou au même niveau que l'endroit où vous avez placé votre fichier **« phpinfo.php »** peuvent influer sur l'affichage dans un navigateur Internet du **« phpinfo.php »**. 
+> S'il ne s'affiche pas, renommez vos fichiers **« .htaccess »** en **« .htaccess_OLD »** afin que le serveur ne les exécutent plus le temps de votre test. Renommez-les correctement une fois votre diagnostic effectué.
 >
 
-**Exemple**: Si votre nom de domaine permettant l'accès à votre site est « domain.tld » et si le fichier « phpinfo.php » a bien été placé à la racine de votre site web, celui-ci sera accessible grâce à l'URL suivante : `http://domain.tld/phpinfo.php` (ou `https://domain.tld/phpinfo.php`).
+**Exemple**: Si le nom de domaine permettant l'accès à votre site est « domain.tld » et si le fichier **« phpinfo.php »** a bien été placé à la racine de votre site web, celui-ci sera accessible grâce à l'URL suivante : `http://domain.tld/phpinfo.php` (ou `https://domain.tld/phpinfo.php`).
 
 > [!primary]
 >
-> Si l'appel du fichier **« phpinfo.php »** affiche instantanément un tableau de configuration, vous savez d'ors et déjà que les ralentissements ne proviennent pas de l'hébergement mutualisé où se trouve votre site. En effet, dans le cas contraire, ce fichier s'afficherait aussi lentement que vos autres pages. 
+> Si l'appel du fichier **« phpinfo.php »** affiche instantanément un tableau de configuration, cela signifie que les ralentissements ne proviennent pas de l'hébergement mutualisé où se trouve votre site web. En effet, dans le cas contraire, ce fichier s'afficherait aussi lentement que vos autres pages. 
 >
-> En d'autres termes, si les lenteurs sont présentes uniquement sur une partie des pages ou du contenu de votre site, cela signifie que l'hébergement mutualisé **n'est pas la cause des lenteurs** que vous rencontrez sur votre site web.
+> En d'autres termes, si les lenteurs sont présentes uniquement sur une partie des pages ou du contenu de votre site web, cela signifie que l'hébergement mutualisé **n'est pas la cause des lenteurs** rencontrées sur votre site web.
 >
 
 #### 1.4 - Tester la connectivité et la vitesse d'exécution de votre base de données :
 
 Connectez-vous à votre base de données en suivant **l'étape 3** de notre guide sur la [création d'une base de données mutualisée](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
-Si vous utilisez une base de données sur une offre **« Cloud DB »**, consultez notre guide sur [la connexion à votre base de données présente sur une offre Cloud DB](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
+Si vous utilisez une base de données sur une offre **CloudDB**, consultez notre guide sur [la connexion à votre base de données présente sur une offre Cloud DB](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
 
 Si la connexion est réussie, vous arrivez sur l'interface suivante :
 
-![slowness](images/pma.png){.thumbnail}
+![PHPMyAdmin](images/pma.png){.thumbnail}
 
 Cliquez sur l'onglet `SQL`{.action} pour ouvrir le menu de saisie de commandes puis saisissez la commande « Benchmark » suivante : 
 
@@ -166,67 +166,85 @@ SELECT benchmark(1000000,1+2);
 
 Cliquez ensuite sur `Go` pour lancer la requête.
 
-![slowness](images/benchmark.png){.thumbnail}
+![Lancement Benchmark](images/benchmark.png){.thumbnail}
 
 Une fois l'exécution terminée, un temps d'exécution s'affiche avec le résultat de la commande « Benchmark » :
 
-![slowness](images/benchmark2.png){.thumbnail}
+![Résultat Benchmark](images/benchmark2.png){.thumbnail}
 
 Effectuez l'opération 3 fois en espaçant les essais de 5 minutes puis notez les temps d'exécution.
 
 Le temps total d'exécution de la requête « Benchmark » ne doit pas excéder les valeurs suivantes en fonction de la base de données que vous utilisez :
 
-- 1,4 secondes pour une base de données présente sur une offre **Cloud DB**
+- 1,4 secondes pour une base de données présente sur une offre **CloudDB**
 - 1,6 secondes pour une base de données mutualisée de type **perso**
 - 1.7 secondes pour une base de données mutualisée de type **pro**
 
 Si les temps d'exécution sont inférieurs aux valeurs ci-dessus, cela signifie que **l'infrastructure hébergeant votre base de données n'est pas en cause**.
 
 Profitez-en pour vérifiez si un nombre conséquent de requêtes sont effectuées vers votre base de données.
-En effet, cette situation peut engendrer une charge de traitement et dans certains cas aboutir à des ralentissements voire à des codes « 504 Gateway Timeout ».
+En effet, cette situation peut engendrer une sur-sollicitation et aboutir à des ralentissements voire à des codes « 504 Gateway Timeout ».
 
 Vérifiez également la taille de vos tables présentes dans votre base de données.
 Effectivement, si une table est appelée régulièrement et que celle-ci est volumineuse, le chargement de cette table peut se faire plus lentement et engendrer des requêtes lentes.
-Le cumul de ces requêtes peut générer un ralentissement d'accès au site voire un code « 504 Gateway Timeout ».
+L'accumulation de ces requêtes lentes peut générer un ralentissement d'accès au site voire un code « 504 Gateway Timeout ».
 
-Si vous avez des tables volumineuses ou des flux de requêtes en base de données conséquents, nous vous invitons à optimiser vos tables et à mettre en place des solutions permettant de diminuer les flux de requêtes vers votre base de données.
+Si vous avez des tables volumineuses ou des flux de requêtes en base de données conséquents, optimisez vos tables et mettez en place des solutions permettant de diminuer les flux de requêtes vers votre base de données.
 
 #### 1.5 - Interprétation des diagnostics effectués :
 
-**Cas 1 :** Si au moins une page, un script ou un fichier (y compris le fichier **« phpinfo.php »**) testés lors de l'étape 1 s'est chargé rapidement et que votre base de données a exécuté la commande « Benchmark » rapidement, cela signifie que les lenteurs que vous rencontrez provienent directement des scripts qui composent votre site. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
+**Cas 1 :** Si vous rencontrez toutes les situations suivantes :
 
-**Cas 2 :** Si au moins une page, un script ou un fichier (y compris le fichier **« phpinfo.php »**) testés lors de l'étape 1 s'est chargé rapidement, que la commande « Benchmark » excède les temps totaux d'exécution indiqués plus haut dans ce guide mais que vous avez constaté des tables volumineuses ou un flux de requêtes conséquent vers votre base de données, cela signifie que les lenteurs que vous rencontrez provienent directement des scripts qui composent votre site. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
+- Au moins une page, un script ou un fichier (y compris le fichier **« phpinfo.php »**) testé lors de l'étape 1 s'est chargé rapidement.
+-  Votre base de données a exécuté la commande « Benchmark » rapidement.
 
-**Cas 3 :** Si **aucun incident et aucune maintenance** n'est déclaré ou n'a été déclaré comme **résolu** il y a moins de trois heures pour vos services d'hébergement web sur notre site <https://web-cloud.status-ovhcloud.com/> et pour les cas autres que les **cas 1** et **2**, des investigations côté OVHcloud seront nécessaires. Contactez le support Web afin qu'ils confirment avec vous l'origine des ralentissements que vous rencontrez.
+ Cela signifie que les lenteurs que vous rencontrez provienent directement des scripts qui composent votre site web. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
+
+**Cas 2 :** Si vous rencontrez toutes les situations suivantes :
+
+- Au moins une page, un script ou un fichier (y compris le fichier **« phpinfo.php »**) testé lors de **l'étape 1** s'est chargé rapidement.
+-  La commande « Benchmark » excède les temps totaux d'exécution indiqués plus haut dans ce guide.
+- Vous avez constaté des tables volumineuses ou un flux de requêtes conséquent vers votre base de données.
+
+ Cela signifie que les lenteurs que vous rencontrez provienent directement des scripts qui composent votre site. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
+
+**Cas 3 :** Si vous rencontrez toutes les situations suivantes :
+
+- **Aucun incident et aucune maintenance** n'est déclaré ou n'a été déclaré comme **résolu** il y a moins de trois heures pour vos services d'hébergement web sur notre site [status-ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
+- Pour toutes les configurations autres que les **cas 1** et **2**.
+
+ Des investigations côté OVHcloud seront nécessaires. Contactez le support Web afin qu'ils confirment avec vous l'origine des ralentissements que vous rencontrez.
 
 ### Etape 2 - identifier la (les) source(s) qui génère les lenteurs au niveau de votre site web <a name="step2"></a>
 
-A ce stade du guide, vous savez désormais que les ralentissments sont générés par les pages/scripts/fichiers qui composent votre site web.
+A ce stade, vous savez désormais que les ralentissments sont générés par les pages/scripts/fichiers qui composent votre site web.
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés pour réaliser les actions qui vont suivre, vous pouvez contacter l'un de nos [prestataires spécialisés](https://partner.ovhcloud.com/fr/). En effet, OVHcloud n'apportera pas d'assistance sur le développement et/ou l'ioptimisation du contenu de votre site web.
+> Si vous éprouvez des difficultés pour réaliser les actions qui vont suivre, vous pouvez contacter l'un de nos [prestataires spécialisés](https://partner.ovhcloud.com/fr/). En effet, OVHcloud n'apportera pas d'assistance sur le développement et/ou l'optimisation du contenu de votre site web.
 >
 
-Retrouvez ci-après quelques pistes à vérifier pour faire disparaître les ralentissements que vous rencontrez.
+Retrouvez ci-après les actions à réaliser pour identifier la ou les source(s) des lenteurs et optimiser votre site web. Ceci pour faire disparaître les ralentissements que vous rencontrez.
 
 #### 2.1 - Vérifier la configuration de votre hébergement web :
 
-Vérifiez le moteur PHP, la version PHP et l'environnement d'exécution utilisé sur votre hébergement web à l'aide de notre guide sur la [configuration de votre hébergement web](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/).
+Vérifiez le *moteur PHP*, la *version PHP* et l'*environnement d'exécution* utilisé sur votre hébergement web à l'aide de notre guide sur la [configuration de votre hébergement web](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/).
 
-Si vous utilisez pour votre hébergement web une version de PHP obsolète, le moteur **« PHP CGI »** et/ou l'environnement **« legacy »** et **si votre site web est compatible**, privilégiez l'utilisation du moteur **« PHP »** (PHP FPM), l'environnement **« stable »** ou **« stable64 »** avec la version de PHP la plus récente possible.
+Si vous utilisez sur votre hébergement web une version de PHP obsolète, le moteur **« PHP CGI »** et/ou l'environnement **« legacy »** et **si votre site web est compatible**, privilégiez l'utilisation du moteur **« PHP »** (PHP FPM), l'environnement **« stable »** ou **« stable64 »** avec la version de PHP la plus récente possible.
 
 Pour comparer les versions de PHP disponibles en fonction de l'environnement d'exécution utilisé, consultez **l'étape 2** du guide sur la [configuration de la version PHP sur votre hébergement](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
 
-Utiliser une version de PHP récente, l'environnement d'exécution **« stable »** ou **« stable64 »** avec le moteur **« PHP »** (PHP FPM) rend votre site beaucoup plus fluide et rapide. Rien que le moteur **« PHP »** (PHP FPM) peut être jusqu'à 50 fois plus rapide que le moteur **« PHP CGI »** pour exécuter ses tâches.
+Utiliser une version de PHP récente, l'environnement d'exécution **« stable »** ou **« stable64 »** avec le moteur **« PHP »** (PHP FPM) rend votre site beaucoup plus fluide et rapide. Rien que le moteur **« PHP »** (PHP FPM) peut être jusqu'à 50 fois plus performant que le moteur **« PHP CGI »** pour exécuter ses tâches.
 
 #### 2.2 - Analyser les connexions sortantes/connexion TCP réalisées par votre hébergement web :
 
-Les connexions sortantes sont très gourmandes en terme de ressources. Quand ces dernières sont nombreuses, quand elles ne s'exécutent pas correctement ou quand elles restent active trop longtemps, elles monopolisent tellement de ressources au niveau de votre hébergement web qu'il n'en reste plus suffisamment pour faire fonctionner normalement le reste de votre site web. Cela se traduit par des ralentissements voire des codes « 504 gateway timeout ».
+Les connexions sortantes sont très gourmandes en terme de ressources. Quand ces dernières sont nombreuses, quand elles ne s'exécutent pas correctement ou quand elles restent active trop longtemps, elles monopolisent tellement de ressources au niveau de votre hébergement web qu'il n'en reste plus suffisamment pour faire fonctionner normalement le reste de votre site web. 
 
-Pour analysez les connexions sortantes de votre hébergement, consultez les logs **OUT** de votre hébergement web à l'aide de notre documentation sur [comment consulter les logs de votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+Cela se traduit par des ralentissements voire des codes « 504 gateway timeout ».
 
-Si vous constatez qu'il y a beaucoup de connexions sortantes sur votre hébergement, comparez vos logs **OUT** avec vos logs **WEB** à l'aide de l'horodatage de ces derniers. Ceci afin d'identifier les ou les script(s) responsables de cette situation.
+Pour analysez les connexions sortantes de votre hébergement, consultez les logs **OUT** de ce dernier à l'aide de notre documentation sur [comment consulter les logs de votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+
+Si vous constatez qu'il y a beaucoup de connexions sortantes sur votre hébergement, comparez vos logs **OUT** avec vos logs **WEB** à l'aide de l'horodatage de ces derniers. Ceci afin d'identifier le ou les script(s) responsable(s) de cette situation.
 
 Si vous utilisez un Content Managment System (CMS) tel que WordPress, Joomla!, PrestaShop ou Drupal, identifiez le(s) plugin(s) et/ou le thème générant ce flux de connexions sortantes.
 
@@ -235,15 +253,25 @@ Si vous utilisez un Content Managment System (CMS) tel que WordPress, Joomla!, P
 Pour effectuer cette action, consultez les logs **WEB** de votre hébergement web à l'aide de notre documentation sur [comment consulter les logs de votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
 
 Les requêtes les plus gourmandes en terme de ressources sont les requêtes HTTP de type **POST** puis de type **PUT**. Ces dernières effectuent respectivement des modifications et des insertions.
+
 Les requêtes HTTP de type **GET** ne font que récupérer des éléments présents sur l'hébergement pour les afficher dans votre navigateur Internet. Elles sont généralement peut gourmandes en terme de ressources. Toutefois, celles-ci peuvent générer des ralentissements si plusieurs centaines sont demandées chaque seconde sur un intervalle de plusieurs minutes.
 
-Si vous constatez dans vos logs que des requêtes de type **POST** ou **PUT** sont effectuées sur des intervalles très court et de manière permanente ou que ces mêmes requêtes sont exécutées plusieurs fois par minutes sur un même fichier, identifiez et optimisez le script/fichier en cause pour diminuer le flux de requêtes HTTP.
+Si vous constatez dans vos logs l'une des situations suivantes :
 
-Effectivement, moins le nombre de requêtes sera élevé, moins de ressources allouées à votre hébergement mutualisé seront nécessaires pour charger la page.
+- Des requêtes de type **POST** ou **PUT** sont effectuées plusieurs fois par minutes et de manière permanente.
+- Des requêtes **POST** ou **PUT** sont exécutées plusieurs fois par minutes sur un même fichier.
+
+Identifiez et optimisez le script/fichier en cause pour diminuer le flux de requêtes HTTP.
+
+Effectivement, moins le nombre de requêtes sera élevé, moins les ressources allouées à votre hébergement mutualisé seront sollicitées.
 
 > [!success]
 >
-> Pour identifier les éléments longs à se charger sur l'une des pages de votre site web, vous pouvez par exemple effectuez une analyse réseau à l'aide du navigateur **Firefox**. Pour cela, appuyez sur la touche `F12` lorsque vous êtes sur votre navigateur Firefox puis sélectionnez l'onglet `Réseau`. Recharger votre page web à l'aide des touches `Ctrl + Maj + R` pour que l'outil vous affiche les requêtes exécutées pour charger votre page. Identifiez les éléments les plus longs à charger pour ensuite les optimiser.
+> Pour identifier les éléments longs à se charger sur l'une des pages de votre site web, vous pouvez par exemple effectuez une analyse réseau à l'aide du navigateur **Firefox**. 
+>
+> Pour cela, appuyez sur la touche `F12` lorsque vous êtes sur votre navigateur Firefox puis sélectionnez l'onglet `Réseau`. Recharger votre page web à l'aide des touches `Ctrl + Maj + R` pour que l'outil vous affiche les requêtes exécutées pour charger votre page. Identifiez les éléments les plus longs à charger pour ensuite les optimiser.
+>
+> ![Analyse réseau Firefox](images/F12.png){.thumbnail}
 >
 
 > [!primary]
@@ -257,7 +285,7 @@ Effectivement, moins le nombre de requêtes sera élevé, moins de ressources al
 
 Si, par exemple, une image est présente sur votre site en résolution « 1000x2000 » et que celle-ci s'affiche au maximum en 100x200 pixels sur la page de votre site web, cela engendre une consommation de ressources côté hébergement qui peut être optimisée.
 
-Effectivement, le serveur devra réaliser une opération de redimensionnement de l'image pour ensuite l’afficher à la taille demandée sur le site.
+Effectivement, le serveur devra réaliser une opération de redimensionnement de l'image pour ensuite l’afficher à la taille demandée sur le site web.
 
 Si votre site contient beaucoup d'images, cela peut représenter une consommation de ressources non négligeable au niveau des ressources allouées à votre hébergement.
 
@@ -269,9 +297,15 @@ Pour cela, consultez notre guide sur l'[optimisation des performances pour votre
 
 Retrouvez des pistes d'optimisation pour votre site en l'analysant sur [gtmetrix.com](https://gtmetrix.com){.external} (non géré par OVHCloud).
 
+> ![!success]
+>
+> Indépendamment des lenteurs, plus votre site web sera optimisé, plus son référencement naturel dans les moteurs de recherche sera optimisé également.
+
 ### Conclusion
 
-Si votre hébergement web et votre base de données ne sont pas en cause et que votre site web continu d'être lent, cela siginfie que l'offre que vous utilisez pour héberger votre site web n'est pas ou plus adaptée à votre besoin. Vous devrez passer sur une [offre d'hébergement mutualisée](https://www.ovhcloud.com/fr/web-hosting/) suppérieure ou directement sur une infrastructure dédiée tel qu'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr/vps/) ou un [Serveur Dédié (SD)](https://www.ovhcloud.com/fr/bare-metal/). 
+Si votre hébergement web et votre base de données **ne sont pas en cause** et que votre site web continu d'être lent malgré la réalisation de **toutes les étapes** de ce guide, cela signifie que l'offre que vous utilisez pour héberger votre site web n'est pas ou plus adaptée à votre besoin. 
+
+Vous devrez passer sur une [offre d'hébergement mutualisée](https://www.ovhcloud.com/fr/web-hosting/) suppérieure ou directement sur une infrastructure dédiée tel qu'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr/vps/) ou un [Serveur Dédié (SD)](https://www.ovhcloud.com/fr/bare-metal/). 
 
 ## Aller plus loin <a name="go-further"></a>
 
