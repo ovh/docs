@@ -36,6 +36,21 @@ You need to own (see below) a public IPv4 block with one of the following RIRs:
 
 An ARIN block can only be used with OVHcloud services located in Canada or the USA, while a RIPE block can only be used with OVHcloud services located in Europe.
 
+To be considered as a valid owned block, imported blocks must be one of the following types :
+
+- ARIN (object «Network type »)
+    - Direct Allocation
+    - Direct Assignment
+
+See <https://www.arin.net/resources/registry/whois/#network> and <https://www.arin.net/resources/registry/reassignments/> for more information on Net Types objects.
+
+- RIPE (object « status »)
+    - ASSIGNED PI
+    - LEGACY
+    - ALLOCATED PA
+
+See [« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) for more information on status objects.
+
 ### Your IP range must have a supported size <a name="supportedsize"></a>
 
 We accept IP blocks from size /24 up to size /19. Below, is the number of /24 you will receive from the imported range:
