@@ -36,9 +36,9 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 Dans le menu de gauche, rendez-vous dans la section `Network` puis ouvrez la partie `Public IPs`{.action}. Cliquez sur l'onglet `Additional IP`{.action}.
 
-Dans cet exemple, l'adresse IP supplémentaire routée vers "Instance_A" sera migrée vers "Instance_B".
+Dans cet exemple, l'adresse Additional IP routée vers "Instance_A" sera migrée vers "Instance_B".
 
-Cliquez sur `...`{.action} dans la ligne de l'IP supplémentaire et sélectionnez `Modifier l'instance associée`{.action}.
+Cliquez sur `...`{.action} dans la ligne de l'Additional IP et sélectionnez `Modifier l'instance associée`{.action}.
 
 ![migrating Additional IP](images/migrateip_01.png){.thumbnail}
 
