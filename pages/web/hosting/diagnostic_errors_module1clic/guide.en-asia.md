@@ -146,7 +146,7 @@ This can have several causes:
 
 ### The "Administrator" password to access the "back-office" of your 1-click module no longer works <a name="adminpassword"></a>
 
-If your current password to access your CMS admin interface is rejected, please read the “Change your module password” paragraph in our documentation on [managing your 1-click module](https://docs.ovh.com/asia/en/hosting/1-click-module-management/).
+If your current password to access your CMS admin interface is rejected, please read the “Change your module password” paragraph in our documentation on [managing your 1-click module](https://docs.ovh.com/asia/en/hosting/1-click-module-management/#password-change).
 
 ## Go further <a name="#gofurther"></a>
 

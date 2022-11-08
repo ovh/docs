@@ -191,7 +191,7 @@ Esta anomalia pode ter várias causas:
 
 ### A palavra-passe "Administrador" de acesso ao "back-office" do seu módulo 1 clique deixou de funcionar <a name="adminpassword"></a>
 
-Se a sua palavra-passe de acesso à interface de gestão do CMS for rejeitada, consulte o parágrafo "Alterar a palavra-passe do módulo" do nosso manual [sobre a gestão do módulo 1 clique](https://docs.ovh.com/pt/hosting/1-click-module-management/).
+Se a sua palavra-passe de acesso à interface de gestão do CMS for rejeitada, consulte o parágrafo "Alterar a palavra-passe do módulo" do nosso manual [sobre a gestão do módulo 1 clique](https://docs.ovh.com/pt/hosting/1-click-module-management/#password-change).
 
 ## Quer saber mais? <a name="gofurther"></a>
 

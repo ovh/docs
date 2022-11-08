@@ -191,7 +191,7 @@ Questa anomalia può avere diverse cause:
 
 ### La password "Amministratore" di accesso al "back office" del tuo modulo in 1 click non funziona più <a name="adminpassword"></a>
 
-In caso di rifiuto della password attuale di accesso all'interfaccia di amministrazione del tuo CMS, consulta il paragrafo "Modifica la password del tuo modulo" della nostra guida sulla [gestione del tuo modulo in 1 click](https://docs.ovh.com/it/hosting/1-click-module-management/).
+In caso di rifiuto della password attuale di accesso all'interfaccia di amministrazione del tuo CMS, consulta il paragrafo "Modifica la password del tuo modulo" della nostra guida sulla [gestione del tuo modulo in 1 click](https://docs.ovh.com/it/hosting/1-click-module-management/#password-change).
 
 ## Per saperne di più <a name="gofurther"></a>
 

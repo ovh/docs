@@ -172,7 +172,7 @@ Esta anomalía puede tener varias causas:
 
 ### La contraseña "Administrador" de acceso al "back-office" de su módulo en 1 clic ya no funciona <a name="adminpassword"></a>
 
-En caso de que se rechace la contraseña actual de acceso al panel de administración de su CMS, consulte el apartado "Cambiar la contraseña de su módulo" de nuestra documentación sobre la [gestión de su módulo en 1 clic](https://docs.ovh.com/us/es/hosting/1-click-module-management/).
+En caso de que se rechace la contraseña actual de acceso al panel de administración de su CMS, consulte el apartado "Cambiar la contraseña de su módulo" de nuestra documentación sobre la [gestión de su módulo en 1 clic](https://docs.ovh.com/us/es/hosting/1-click-module-management/#password-change).
 
 ## Más información <a name="gofurther"></a>
 

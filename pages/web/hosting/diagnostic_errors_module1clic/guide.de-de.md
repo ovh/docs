@@ -190,7 +190,7 @@ Dies kann mehrere Ursachen haben:
 
 ### Das Passwort "Administrator" für den Zugriff auf das "Backoffice" Ihres 1 Klick Moduls funktioniert nicht mehr <a name="adminpassword"></a>
 
-Wenn Sie Ihr derzeitiges Passwort für den Zugriff auf das Verwaltungsinterface Ihres CMS ablehnen, lesen Sie den Abschnitt "Passwort Ihres Moduls ändern"in unserer Anleitung zur [1-Klick-Verwaltung Ihres Moduls](https://docs.ovh.com/de/hosting/1-click-module-management/).
+Wenn Sie Ihr derzeitiges Passwort für den Zugriff auf das Verwaltungsinterface Ihres CMS ablehnen, lesen Sie den Abschnitt "Passwort Ihres Moduls ändern"in unserer Anleitung zur [1-Klick-Verwaltung Ihres Moduls](https://docs.ovh.com/de/hosting/1-click-module-management/#password-change).
 
 
 ## Weiterführende Informationen <a name="gofurther"></a>

@@ -191,7 +191,7 @@ Ta nieprawidłowość może mieć kilka przyczyn:
 
 ### Hasło "Administrator" dostępu do "back-office" modułu za pomocą 1 kliknięcia nie działa <a name="adminpassword"></a>
 
-W przypadku odrzucenia Twojego aktualnego hasła do interfejsu administracyjnego Twojego CMS, zapoznaj się z sekcją "Zmiana hasła do Twojego modułu" w dokumentacji dotyczącej [zarządzanie modułem za pomocą 1 kliknięcia](https://docs.ovh.com/pl/hosting/1-click-module-management/).
+W przypadku odrzucenia Twojego aktualnego hasła do interfejsu administracyjnego Twojego CMS, zapoznaj się z sekcją "Zmiana hasła do Twojego modułu" w dokumentacji dotyczącej [zarządzanie modułem za pomocą 1 kliknięcia](https://docs.ovh.com/pl/hosting/1-click-module-management/#password-change).
 
 ## Sprawdź również <a name="gofurther"></a>
 
