@@ -42,7 +42,7 @@ To do this, when you first access the management interface for your Hosted Excha
 
 With this configuration assistant, you can make several changes. Depending on what you want to do, the following table may make some steps of this guide optional.
 
-|Change|Kuvaus|
+|Change|Description|
 |---|---|
 |Choose a domain name|Determine the domain name that you will use for your Exchange email addresses. This is one of the elements that will make up your email address (such as contact@mypersonaldomain.ovh, for example).|
 |Configuring the domain name|The domain name you enter will be configured automatically if it is managed by OVHcloud on the same NIC handle as your Exchange service. If this is not the case, then you will need to configure it manually.|
