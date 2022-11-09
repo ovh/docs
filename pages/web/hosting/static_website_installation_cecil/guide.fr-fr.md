@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 
 ---
 
-**Dernière mise à jour le 18/10/2022**
+**Dernière mise à jour le 09/11/2022**
 
 ## Objectif
 
@@ -157,6 +157,40 @@ Vous pouvez maintenant éditer les fichiers dans votre I.D.E. :
 ![Affichage dans Visual Studio Code](images/static_website_installation_cecil%5B11%5D.png)
 
 Il vous suffit de renvoyer vos fichiers modifiés ou vos nouveaux fichiers sur votre serveur et de rebuilder pour avoir vos pages en ligne.
+
+### Utiliser une API
+
+Chaque fichier créée avec le générateur de pages statiques peut contenu du code lui permettant de faire appel à une API pour récupérer des données dynamiques. Dans l'exemple suivant, nous allons créer une page nous permettant d'afficher des données météorologiques.
+
+#### Création d'une page « météo »
+
+Créez une page dédiée pour accéder à la météo :
+
+```sh
+php cecil.phar new:page meteo.md
+```
+
+Modifiez le contenu de votre page :
+
+```sh
+nano pages/meteo.md
+```
+
+Lancez la génération de la page :
+
+```sh
+php cecil.phar build
+```
+
+Vérifiez la visibilité de votre page sur votre navigateur :
+
+![Visualisation nouvelle page créée](images/static_website_installation_cecil%5B12%5D.png)
+
+L'exemple pour ce guide sera réalisé avec l'API disponible sur le site [Météo Concept](https://api.meteo-concept.com/). Un compte gratuit vous permettar d'effectuer 500 requêtes quotidiennes gratuitement.
+
+Créez ensuite un token, vous pourrez le récupérer en cliquant sur le bouton « Afficher »  sur la page suivante :
+
+![Création token API Météo Concept](images/static_website_installation_cecil%5B13%5D.png)
 
 ## Aller plus loin
 
