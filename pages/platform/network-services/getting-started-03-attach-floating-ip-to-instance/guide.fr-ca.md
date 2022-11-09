@@ -99,7 +99,7 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> À l'étape suivante, choisissez la région de votre Floating IP. La région doit être celle de l'instance à laquelle la Floating IP sera rattachée.
 >>
->> ![select location ip](images/selectlocationip.png){.thumbnail}
+>> ![select location ip](images/selectregionip.png){.thumbnail}
 >> 
 >> > [!primary]
 >> > Veuillez noter que seules seront affichées les régions dans lesquelles ce service est disponible.

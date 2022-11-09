@@ -103,7 +103,7 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >>
 >> In the next step, choose a region for your Floating IPs. The region must be the same as that of the instance you wish to attach the Floating IP to.
 >>
->> ![select location ip](images/selectlocationip.png){.thumbnail}
+>> ![select location ip](images/selectregionip.png){.thumbnail}
 >>
 >>
 >> > [!primary]

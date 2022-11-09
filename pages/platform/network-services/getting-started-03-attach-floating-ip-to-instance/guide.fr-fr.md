@@ -60,6 +60,10 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> À l'étape 5 de la création d'une instance, vous est proposé le choix du « mode public » ou « mode privé » pour la mise en réseau de votre instance. 
 >>
+>> > [!warning]
+>> > Pour l'instant, toutes les régions ne sont pas compatibles avec cette fonctionnalité. Veillez à créer une instance dans une région valide. Pour plus d'informations, veuillez vous référer à notre section : [disponibilité régions](https://www.ovhcloud.com/fr/public-cloud/regions-availability/).
+>> >
+>>
 >> Par défaut, le mode public est sélectionné. Cependant, comme nous créons une instance à laquelle nous allons attacher une Floating IP, nous devons créer une instance avec un réseau privé **UNIQUEMENT**.
 >>
 >> Sélectionnez le `Mode privé`{.action} et cliquez sur la flèche déroulante pour sélectionner le réseau privé de votre choix (le réseau doit avoir été préalablement créé avec une Gateway).
@@ -99,7 +103,7 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> À l'étape suivante, choisissez la région de votre Floating IP. La région doit être celle de l'instance à laquelle la Floating IP sera rattachée.
 >>
->> ![select location ip](images/selectlocationip.png){.thumbnail}
+>> ![select location ip](images/selectregionip.png){.thumbnail}
 >> 
 >> > [!primary]
 >> > Veuillez noter que seules seront affichées les régions dans lesquelles ce service est disponible.
