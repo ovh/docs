@@ -44,21 +44,21 @@ Attendez quelques minutes afin que l'**OverTheBox** soit de nouveau opérationne
 
 #### Méthode n°2 : mise à jour par l'interface web locale
 
-Il est possible de mettre à jour votre équipement OverTheBox depuis l'interface web locale.
+Vous pouvez mettre à jour votre équipement OverTheBox depuis l'interface web locale.
 
-- Téléchargez la dernière image sur votre ordinateur : [http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz){.external}
-- Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
-- Cliquez sur **"System"**
-- Cliquez sur **"Backup/Flash Firmware"**
+- Téléchargez la dernière image sur votre ordinateur : [http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz){.external}.
+- Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}.
+- Cliquez sur `System`{.action}.
+- Cliquez sur `Backup/Flash Firmware`{.action}.
 
 ![overthebox](images/upgrade-method2-1.png){.thumbnail}
 
-Ensuite, dans la section  **Flash new firmware image** :
+Ensuite, dans la section **Flash new firmware image** :
 
-- Cliquez sur **"Parcourir"**
-- Choisissez le fichier image que vous venez de télécharger
-- Laissez la case **"Keep settings"** coché, si vous souhaitez conserver vos configurations
-- Cliquez sur **"Flash image"**
+- Cliquez sur `Parcourir`{.action}.
+- Choisissez le fichier image que vous venez de télécharger.
+- Laissez la case **"Keep settings"** cochée si vous souhaitez conserver vos configurations.
+- Cliquez sur `Flash image`{.action}.
 
 ![overthebox](images/upgrade-method2-2.png){.thumbnail}
 
@@ -66,7 +66,7 @@ Ensuite, dans la section  **Flash new firmware image** :
 
 > [!success]
 >
-> Votre  OvertheBox  est maintenant mise à jour, votre configuration a été réappliquée automatiquement si la case **Keep settings** n'a pas été décoché.
+> Votre  OvertheBox  est maintenant mise à jour, votre configuration a été réappliquée automatiquement si la case **Keep settings** n'a pas été décochée.
 >
 
 #### Méthode n°3 : mise à jour par le CLI

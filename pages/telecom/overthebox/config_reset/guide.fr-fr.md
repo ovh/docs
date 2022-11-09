@@ -102,7 +102,7 @@ firstboot -y
 
 > [!success]
 >
-> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans les guides suivants :
+> Votre OvertheBox est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans les guides suivants :
 >
 > [Installation OverTheBox Intel ou IT v1](../intel-itv1-installation/)
 >
