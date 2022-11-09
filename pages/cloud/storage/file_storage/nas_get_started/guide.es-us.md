@@ -30,7 +30,7 @@ Una vez que se haya conectado, haga clic en `Bare Metal Cloud`{.action} y, segui
 
 ![acceso al NAS](images/nas2021-01.png){.thumbnail}
 
-### Crear una partición
+### Crear una partición <a name="partition"></a>
 
 Para añadir una nueva partición, haga clic en `Crear una partición`{.action}.
 
@@ -68,7 +68,7 @@ Fuera de los snapshots realizados automáticamente, en cualquier momento puede c
 
 Asigne un nombre al snapshot y haga clic en `Añadir.`{.action}
 
-### Añadir un acceso
+### Añadir un acceso <a name="addaccess"></a>
 
 Para poder acceder a la partición que ha creado anteriormente, es necesario configurar un acceso.
 

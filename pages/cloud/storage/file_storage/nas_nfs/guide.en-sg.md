@@ -25,8 +25,8 @@ The OVHcloud HA-NAS service allows you to manage file storage that can be access
 - An [OVHcloud HA-NAS solution](https://www.ovhcloud.com/en-sg/storage-solutions/nas-ha/)
 - An OVHcloud service with a public IP address attached to it (Hosted Private Cloud, dedicated server, VPS, Public Cloud instance, etc.)
 - An operating system compatible with NFS installed on your server
-- [A partition created on the service with the NFS protcol enabled](https://docs.ovh.com/sg/en/storage/file-storage/nas/get-started/#creating-a-partition)
-- [An ACL entry for the server's IP address](https://docs.ovh.com/sg/en/storage/file-storage/nas/get-started/#adding-an-access)
+- [A partition created on the service with the NFS protcol enabled](https://docs.ovh.com/sg/en/storage/file-storage/nas/get-started/#partition)
+- [An ACL entry for the server's IP address](https://docs.ovh.com/sg/en/storage/file-storage/nas/get-started/#addaccess)
 - Administrative access (root) to your server via SSH or GUI
 
 ## Instructions

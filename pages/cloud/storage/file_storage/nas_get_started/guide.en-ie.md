@@ -14,9 +14,9 @@ Network Attached Storage (NAS) is a file server connected to a network whose mai
 
 ## Requirements
 
-- an IP address attached to an OVHcloud service (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud instance, etc.)
-- a [HA-NAS solution](https://www.ovh.ie/nas/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- An IP address attached to an OVHcloud service (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud instance, etc.)
+- A [HA-NAS solution](https://www.ovh.ie/nas/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
@@ -26,7 +26,7 @@ Once you have logged in, click on `Bare Metal Cloud`{.action}, then `NAS and CDN
 
 ![NAS access](images/nas2021-01.png){.thumbnail}
 
-### Creating a partition
+### Creating a partition <a name="partition"></a>
 
 To add a new partition, click `Create a partition`{.action}.
 
@@ -64,7 +64,7 @@ Apart from the snapshots taken automatically, you can create an instant snapshot
 
 Name the snapshot and click `Add`{.action}.
 
-### Adding an access
+### Adding an access <a name="addaccess"></a>
 
 In order to access the partition you created earlier, you will need to configure access.
 
