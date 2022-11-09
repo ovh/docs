@@ -1,6 +1,5 @@
 ---
 title: "Installer l'image OverTheBox sur votre matériel"
-description: "Installer l'image OverTheBox sur votre matériel"
 slug: installer-limage-overthebox-sur-votre-materiel
 excerpt: "Découvrez comment installer une image OverTheBox manuellement sur votre matériel"
 section: "Configurations techniques avancées"
@@ -10,7 +9,7 @@ section: "Configurations techniques avancées"
 
 ## Objectif
 
-Découvrez comment installer ou mettre à jour votre matériel en installant manuellement l'image OverTheBox
+Découvrez comment installer ou mettre à jour votre matériel en installant manuellement l'image OverTheBox.
 
 ## Prérequis
 
