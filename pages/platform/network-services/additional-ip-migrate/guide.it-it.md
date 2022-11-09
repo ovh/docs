@@ -10,7 +10,7 @@ order: 04
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento 02/11/2022**
+**Ultimo aggiornamento 07/11/2022**
 
 > [!primary]
 >
@@ -33,34 +33,34 @@ Questa guida ti mostra come trasferire un Additional IP da un’istanza all’al
 
 ## Procedura
 
-> [!primary]
-> Un Additional IP non può essere spostato da una zona all'altra. Ad esempio, un IP situato nel datacenter SBG potrà essere spostato verso GRA o RBX ma non potrà essere spostato verso BHS.
-> 
-
-### Migrazione dell'Additional IP
-
-Per prima cosa, Accedi alla sezione `Public Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona il tuo servizio. Selezionan Additional IP nella sezione **Network**.
-Nel nostro esempio, un Additional IP è indirizzato verso "Instance_A" e vogliamo reindirizzarlo verso "Instance_B".
-
-![IP-failover](images/failover2022.png){.thumbnail}
-
-Clicca sui tre puntini a destra dell’indirizzo Additional IP e poi su `Modifica l’istanza associata`{.action}.
-
-![IP-failover](images/modify1.2022.png){.thumbnail}
-
-Clicca sulla casella accanto al server di destinazione
-
-![IP-failover](images/modify1.png){.thumbnail}
-
-- Clicca su `Associa`{.action}.
-
-- Dopo alcuni secondi il tuo spazio cliente sarà aggiornato e visualizzerai un messaggio di conferma dell’avvenuta migrazione.
-
-![IP-failover](images/modify2.2022.png){.thumbnail}
-
-> [!success]
+> [!warning]
 >
-> L’indirizzo IP può essere configurato sul server di destinazione prima o dopo aver effettuato la migrazione. Se è preconfigurato, inizierà a rispondere non appena il processo di instradamento (<i>routing</i>) sarà terminato.
+> Un Additional IP non può essere spostato tra diverse zone. Ad esempio, un IP localizzato nel datacenter di SBG può essere spostato verso GRA o RBX ma non verso BHS.
+>
+
+Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona il tuo progetto nella sezione `Public Cloud`{.action}.
+
+Nel menu a sinistra, clicca sulla sezione `Network` e apri la sezione `Public IPs`{.action}. Clicca sulla scheda `Additional IP`{.action}.
+
+In questo esempio, l'indirizzo Additional IP ruotato verso "Instance_A" sarà migrato verso "Instance_B".
+
+Clicca sui tre puntini `...`{.action} nella riga dell'Additional IP e seleziona `Modifica l'istanza associata`{.action}.
+
+![migrating Additional IP](images/migrateip_01.png){.thumbnail}
+
+Clicca sul menu a tendina per selezionare l'istanza di destinazione dalla lista.
+
+![migrating Additional IP](images/migrateip_02.png){.thumbnail}
+
+Clicca su `Conferma`{.action}.
+
+Dopo alcuni secondi, lo Spazio Cliente OVHcloud viene aggiornato. Se la migrazione ha avuto successo, visualizzi un messaggio di conferma.
+
+![migrating Additional IP](images/migrateip_03.png){.thumbnail}
+
+> [!primary]
+>
+L'Additional IP può essere configurato sul server di destinazione prima o dopo la migrazione. Se pre-configurato, inizierà a rispondere non appena l'operazione di routing sarà terminata.
 >
 
 ## Per saperne di più

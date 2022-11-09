@@ -10,7 +10,7 @@ order: 04
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 02.11.2022**
+**Letzte Aktualisierung am 07.11.2022**
 
 > [!primary]
 >
@@ -31,29 +31,32 @@ IP-Adressen migrieren zu können bedeutet, die Möglichkeit eines Dienstausfalls
 
 ## In der praktischen Anwendung
 
-> [!primary]
-> Eine Additional IP kann nicht von einer Zone zur anderen umgezogen werden. So kann beispielsweise eine IP im Rechenzentrum SBG nach GRA oder RBX umgezogen werden, aber nicht nach BHS.
+> [!warning]
+>
+> Eine Additional IP kann nicht von einer Länderzone zur anderen umgezogen werden. So kann beispielsweise eine IP-Adresse von SBG nach GRA oder RBX umgezogen werden, aber nicht nach BHS. 
 >
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Additional IP`{.action} unter **Network**.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Public Cloud`{.action} Ihr Projekt aus.
 
-In diesem Beispiel soll die auf “Instance_A” geroutete Additional IP zu “Instance_B” migriert werden.
+Öffnen Sie im linken Menü `Public IPs`{.action} unter `Network`.
 
-![](images/failover2022.png){.thumbnail}
+Klicken Sie auf den Tab `Additional IP`{.action}.
 
-Klicken Sie auf `...`{.action} neben der Additional IP und dann auf “Verbundene Instanz bearbeiten”.
+In diesem Beispiel wird die auf "Instance_A" geroutete Additional IP-Adresse zu "Instance_B" migriert.
 
-![](images/modify1.2022.png){.thumbnail}
+Klicken Sie auf `...`{.action} in der Zeile der Additional IP und wählen Sie `Verbundene Instanz bearbeiten`{.action}.
 
-Wählen Sie den Zielserver aus der Liste über die Checkbox aus.
+![migrating Additional IP](images/migrateip_01.png){.thumbnail}
 
-![](images/modify1.png){.thumbnail}
+Klicken Sie auf das Drop-down-Menü, um die Ziel-Instanz in der Liste auszuwählen.
 
-Bestätigen Sie die Auswahl mit `Verbinden`{.action}.
+![migrating Additional IP](images/migrateip_02.png){.thumbnail}
+
+Bestätigen Sie, indem Sie auf `Anhängen`{.action} klicken.
 
 Nach einigen Sekunden wird die Kundencenter-Anzeige aktualisiert und eine Bestätigungsmeldung wird angezeigt, wenn die Migration erfolgreich durchgeführt wurde.
 
-![](images/modify2.2022.png){.thumbnail}
+![migrating Additional IP](images/migrateip_03.png){.thumbnail}
 
 
 > [!primary]
