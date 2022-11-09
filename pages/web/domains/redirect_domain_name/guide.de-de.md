@@ -1,5 +1,5 @@
 ---
-title: "Weiterleitung von OVHcloud verwalteten Domainnamen"
+title: "Weiterleitung von bei OVHcloud verwalteten Domainnamen"
 slug: domainweiterleitung
 excerpt: "Erfahren Sie hier, wie Sie verschiedene Weiterleitungsarten für einen von OVHcloud verwalteten Domainnamen erstellen"
 section: Allgemeine Verwendung

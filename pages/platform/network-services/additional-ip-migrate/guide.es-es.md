@@ -10,7 +10,7 @@ order: 04
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 02/11/2022**
+**Última actualización: 07/11/2022**
 
 > [!primary]
 >
@@ -31,34 +31,34 @@ Esta guía explica cómo migrar una Additional IP de una instancia a otra. Por l
 
 ## Procedimiento
 
-> [!primary]
-> Una Additional IP no puede moverse de una zona a otra. Por ejemplo, una IP situada en el datacenter SBG podrá migrarse a GRA o RBX, pero no podrá migrarse a BHS.
+> [!warning]
+>
+> No es posible mover una Additional IP entre diferentes zonas. Por ejemplo, una IP localizada en el datacenter de SBG puede moverse hacia GRA o RBX, pero no hacia BHS.
 >
 
-### Migración de la Additional IP
+En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), seleccione su proyecto en la sección `Public Cloud`{.action}.
 
-En primer lugar, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el servicio Public Cloud correspondiente. A continuación, seleccione Additional IP en el apartado **Network** .
-En nuestro ejemplo, una Additional IP se enruta hacia "Instancia_A" y queremos redirigirla hacia "Instancia_B".
+En la columna izquierda, haga clic en `Network` y abra la sección `Public IPs`{.action}. Haga clic en la pestaña `Aditional IP`{.action}.
 
-![migrar Additional IP](images/failover2022.png){.thumbnail}
+En este ejemplo, la dirección Additional IP enrutada a "Instancia_A" será migrada a "Instancia_B".
 
-Haga clic en los 3 puntos a la derecha de la Additional IP y a seleccione `Modificar la instancia asociada`{.action}.
+Haga clic en `...`{.action} en la línea de la Directorial IP y seleccione `Editar la instancia asociada`{.action}.
 
-![migrar Additional IP](images/modify1.2022.png){.thumbnail}
+![Migrating Additional IP](images/migrateip_01.png){.thumbnail}
 
-Haga clic en la casilla junto al servidor de destino
+Haga clic en el menú desplegable para seleccionar la instancia de destino de la lista.
 
-![migrar Additional IP](images/modify1.png){.thumbnail}
+![Migrating Additional IP](images/migrateip_02.png){.thumbnail}
 
-- Haga clic en `Asociar`{.action}.
+Acepte haciendo clic en `Adjuntar`{.action}.
 
-- Pasados unos segundos, el panel de control se actualizará y se mostrará el siguiente mensaje, confirmando que la migración se ha realizado correctamente:
+Al cabo de unos segundos, el área de cliente se actualizará. Si la migración se ha realizado correctamente, se mostrará un mensaje de confirmación.
 
-![migrar Additional IP](images/modify2.2022.png){.thumbnail}
+![Migrating Additional IP](images/migrateip_03.png){.thumbnail}
 
-
-> [!success]
-> La Additional IP puede configurarse en el servidor de destino antes o después de realizar la migración. Si está preconfigurada, comenzará a responder en cuanto se haya realizado la operación de enrutamiento (*routing*).
+> [!primary]
+>
+La Additional IP puede configurarse en el servidor de destino antes o después de la migración. Si está pre-configurado, comenzará a responder una vez finalizada la operación de enrutamiento.
 >
 
 ## Más información

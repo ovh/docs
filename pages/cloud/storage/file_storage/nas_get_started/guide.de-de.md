@@ -30,13 +30,13 @@ Klicken Sie nach dem Login auf `Bare Metal Cloud`{.action} und dann im linken Me
 
 ![Zugang zum NAS](images/nas2021-01.png){.thumbnail}
 
-### Eine Partition erstellen
+### Eine Partition erstellen <a name="partition"></a>
 
 Um eine neue Partition hinzuzufügen, klicken Sie auf `Eine Partition erstellen`{.action}.
 
 ![eine Partition erstellen](images/nas2021-02.png){.thumbnail}
 
-Geben Sie dann einfach den **Namen** der Partition, deren **Größe** sowie das autorisierte **Protokoll** (NFS oder CIFS) ein.
+Geben Sie dann den **Namen** der Partition, deren **Größe** sowie das autorisierte **Protokoll** (NFS oder CIFS) ein.
 
 ![Attribute der Partition](images/nas2021-03.png){.thumbnail}
 
@@ -68,7 +68,7 @@ Zusätzlich zu den automatisch erstellten Snapshots können Sie jederzeit einen 
 
 Benennen Sie den Snapshot und klicken Sie auf `Hinzufügen`{.action}.
 
-### Zugang hinzufügen
+### Zugang hinzufügen <a name="addaccess"></a>
 
 Um auf die zuvor von Ihnen erstellte Partition zuzugreifen, müssen Sie einen Zugang konfigurieren.
 
