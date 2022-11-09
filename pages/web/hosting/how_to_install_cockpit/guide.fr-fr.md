@@ -109,16 +109,32 @@ Vous trouverez plus de détail sur la [documentation](https://getcockpit.com/doc
 
 ### Ajoutez des contenus
 
+L'interface de Cockpit vous permet de créer des contenus en utilisant des modèles :
+
+![Content overview](images/how_to_install_cockpit%5B5%5D.png)
+
+#### Contenus
+
+Vous avez la possibilité de créer des Collections, qui seront des structures de données réutilisables, et des Singletons, réservés à des pages uniques. 
+L'option Tree vous permettra d'organiser l'arborescence qui contiendra vos Collections et Singletons.
+
+##### **Singleton**
+
+##### **Collection**
+
+##### **Tree**
+
 #### Assets
 
 Le menu « Assets » vous permet de gérer vos contenus. Créez des répertoires pour organiser vos contenus et uploadez vos images et illustrations :
 
-![Folder creation](images/how_to_install_cockpit%5B5%5D.png)
+![Folder creation](images/how_to_install_cockpit%5Ba5%5D.png)
 
 Uploadez maintenant une image dans votre répertoire :
 
-![Upload picture](images/how_to_install_cockpit%5B6%5D.png)
+![Upload picture](images/how_to_install_cockpit%5Ba6%5D.png)
 
-![Upload picture](images/how_to_install_cockpit%5B7%5D.png)
+![Upload picture](images/how_to_install_cockpit%5Ba7%5D.png)
+
 
 ## Aller plus loin
