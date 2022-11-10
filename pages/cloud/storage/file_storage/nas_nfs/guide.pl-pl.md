@@ -2,7 +2,7 @@
 title: "Montowanie NAS-HA przy użyciu zasobów NFS"
 slug: nas/nfs
 excerpt: "Dowiedz się, jak się zalogować do usługi NAS-HA przy użyciu protokołu NFS"
-section: NAS
+section: NAS-HA
 order: 03
 ---
 

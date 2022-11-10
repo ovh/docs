@@ -2,7 +2,7 @@
 title: "Montaje de un NAS-HA mediante NFS compartido"
 slug: nas/nfs
 excerpt: "Cómo conectarse a un NAS-HA utilizando un recurso compartido por NFS"
-section: NAS
+section: NAS-HA
 order: 03
 ---
 

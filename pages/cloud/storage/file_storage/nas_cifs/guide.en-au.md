@@ -2,7 +2,7 @@
 title: Mount your HA-NAS on Windows Server via CIFS
 slug: nas/cifs
 excerpt: This guide shows you how to mount your HA-NAS on Windows Server via CIFS.
-section: NAS
+section: HA-NAS
 order: 04
 ---
 

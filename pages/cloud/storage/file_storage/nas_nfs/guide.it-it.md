@@ -2,7 +2,7 @@
 title: "Installazione di un NAS-HA tramite condivisione NFS"
 slug: nas/nfs
 excerpt: "Come connettersi al tuo NAS-HA utilizzando una condivisione NFS"
-section: NAS
+section: NAS-HA
 order: 03
 ---
 

@@ -2,7 +2,7 @@
 title: Erste Schritte mit einem HA-NAS
 slug: nas/get-started
 excerpt: Erfahren Sie hier, wie Sie ein High Availability NAS über Ihr OVHcloud Kundencenter verwalten
-section: NAS
+section: HA-NAS
 order: 01
 ---
 

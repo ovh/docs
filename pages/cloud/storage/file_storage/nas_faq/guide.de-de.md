@@ -1,8 +1,8 @@
 ---
-title: Häufig gestellte Fragen zu NAS
+title: Häufig gestellte Fragen zu HA-NAS
 slug: nas/faq
-excerpt: Sie haben eine Frage zu NAS? Hier sind die am häufigsten gestellten Fragen und Antworten
-section: NAS
+excerpt: Sie haben eine Frage zu HA-NAS? Hier sind die am häufigsten gestellten Fragen und Antworten
+section: HA-NAS
 order: 02
 ---
 
@@ -18,9 +18,9 @@ order: 02
 
 Ja, die Konfiguration erfolgt über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Bare Metal Cloud`{.action}, dann `NAS und CDN`{.action}.
 
-### Ist es möglich, die Gesamtkapazität meines NAS zu erhöhen?
+### Ist es möglich, die Gesamtkapazität meines HA-NAS zu erhöhen?
 
-Nach der Bestellung ist es nicht mehr möglich, die Kapazität eines HA-NAS zu erhöhen. Um die Speicherkapazität zu erhöhen, müssen Ihre Daten auf einen anderen NAS mit größerer Kapazität migriert werden.
+Nach der Bestellung ist es nicht mehr möglich, die Kapazität eines HA-NAS zu erhöhen. Um die Speicherkapazität zu erhöhen, müssen Ihre Daten auf einen anderen HA-NAS mit größerer Kapazität migriert werden.
 
 ### Welche Speicherkapazitäten sind verfügbar?
 
@@ -36,7 +36,7 @@ Die angebotenen Speicherkapazitäten sind die verfügbaren Kapazitäten.
 
 ### Stehen die Ressourcen meines HA-NAS mir dediziert zur Verfügung?
 
-Die Festplatten in Ihrem NAS-HA sind ausschliesslich Ihnen dediziert. Die anderen Maschinenressourcen sind mit den anderen Nutzern geteilt (RAM, CPU, Bandbreite).
+Die Festplatten in Ihrem HA-NAS sind ausschliesslich Ihnen dediziert. Die anderen Maschinenressourcen sind mit den anderen Nutzern geteilt (RAM, CPU, Bandbreite).
 
 **Sonderfall:** Wenn Sie das 36 To Angebot bestellen, stehen Ihnen alle Ressourcen des Host-Servers (RAM, CPU, Bandbreite) zur Verfügung.
 
@@ -48,7 +48,7 @@ Die angebotenen Vertragslaufzeiten sind 1, 3, 6 und 12 Monate. Am Ende jeder Ver
 
 ### Kann ein HA-NAS an mehrere Server gleichzeitig angeschlossen werden?
 
-Ja. Ihr NAS kann gleichzeitig mit mehreren OVHcloud Dienstleistungen interagieren.
+Ja. Ihr HA-NAS kann gleichzeitig mit mehreren OVHcloud Dienstleistungen interagieren.
 
 ### Kann ich ein Betriebssystem auf einem HA-NAS installieren?
 
@@ -106,7 +106,7 @@ Sie können die Snapshot-Frequenz in Ihrem Kundencenter einstellen und haben fol
 - alle drei Tage
 - wöchentlich
 
-Sie können auch jederzeit manuelle Snapshots erstellen, zeitlich unbegrenzt speichern oder löschen. Diese Funktion ist über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder über die [API](https://api.ovh.com/){.external} verfügbar:
+Sie können auch jederzeit manuelle Snapshots erstellen, zeitlich unbegrenzt speichern oder löschen. Diese Funktion ist über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder über die [API](https://ca.api.ovh.com/){.external} verfügbar:
 
 > [!api]
 >

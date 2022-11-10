@@ -56,7 +56,7 @@ Klicken Sie auf den zu kündigenden Produkttyp in der folgenden Liste der wichti
 &emsp;&emsp;[Dedicated Server](#dedicated)<br />
 &emsp;&emsp;[VPS](#vps)<br />
 &emsp;&emsp;[Managed Bare Metal](#managedbaremetal)<br />
-&emsp;&emsp;[NAS-HA Server](#nas)<br />
+&emsp;&emsp;[HA-NAS Server](#nas)<br />
 &emsp;&emsp;[Loadbalancer](#iplb)<br />
 &emsp;&emsp;[Lizenzen](#licences)<br />
 
@@ -107,7 +107,7 @@ Um Ihren [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) D
 
 #### HA-NAS Server <a name="nas"></a>
 
-Um Ihr [HA-NAS](https://www.ovh.de/nas/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Produkte und Dienstleistungen`{.action}.
+Um Ihr [HA-NAS](https://www.ovhcloud.com/de/storage-solutions/nas-ha/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Produkte und Dienstleistungen`{.action}.
 
 Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action} und dann auf `Kündigen`{.action}.
 

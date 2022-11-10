@@ -2,7 +2,7 @@
 title: NAS-HA - Premiers pas avec les API
 slug: nas/quick-api
 excerpt: "Découvrez comment bien débuter avec un service NAS-HA en utilisant l'API OVHcloud"
-section: NAS
+section: NAS-HA
 order: 06
 ---
 

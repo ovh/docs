@@ -2,7 +2,7 @@
 title: "Montagem de NAS-HA através de NFS"
 slug: nas/nfs
 excerpt: "Saiba como conectar-se ao NAS-HA através de NFS"
-section: NAS
+section: NAS-HA
 order: 03
 ---
 

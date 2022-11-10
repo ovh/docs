@@ -2,7 +2,7 @@
 title: HA-NAS über NFS mounten
 slug: nas/nfs
 excerpt: "Erfahren Sie hier, wie sich mit Ihrem HA-NAS unter Verwendung einer NFS-Freigabe verbinden"
-section: NAS
+section: HA-NAS
 order: 03
 ---
 
