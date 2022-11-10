@@ -609,10 +609,10 @@ Voici comment procéder:
 >
 > `{datacenterId}` est l'**ancien** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
 >
->> > [!api]
->> >
->> > @api {GET} /dedicatedCloud/{serviceName}/datacenter
->> >
+> > [!api]
+> >
+> > @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> >
 >
 
 1\. Activez la sauvegarde pour le nouveau vDC.
