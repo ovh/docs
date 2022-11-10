@@ -2,7 +2,7 @@
 title: Erste Schritte mit einem HA-NAS
 slug: nas/get-started
 excerpt: Erfahren Sie hier, wie Sie ein High Availability NAS über Ihr OVHcloud Kundencenter verwalten
-section: NAS
+section: HA-NAS
 order: 01
 ---
 
@@ -19,7 +19,7 @@ Ein NAS (Network Attached Storage) ist ein Dateiserver, der mit einem Netzwerk v
 ## Voraussetzungen
 
 - Sie verfügen über eine IP-Adresse, die an einen OVHcloud Dienst angebunden ist (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud Instanz, etc.).
-- Sie verfügen über einen OVHcloud [HA-NAS](https://www.ovh.de/nas/) Dienst.
+- Sie haben ein [OVHcloud HA-NAS](https://www.ovhcloud.com/de/storage-solutions/nas-ha/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

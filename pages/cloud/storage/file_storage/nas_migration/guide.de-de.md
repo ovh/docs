@@ -2,7 +2,7 @@
 title: Migration von Daten von einem HA-NAS auf ein anderes über NFS
 slug: nas/migration
 excerpt: Erfahren Sie hier, wie Sie Ihre Daten über eine NFS-Freigabe von einem HA-NAS auf ein anderes migrieren.
-section: NAS
+section: HA-NAS
 order: 05
 ---
 

@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment ajouter des Additional IP à votre configuration'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 06/10/2022**
+**Dernière mise à jour le 10/11/2022**
 
 > [!primary]
 >
@@ -527,6 +527,31 @@ Cliquez sur `Ajouter`{.action}.
 
 Votre Additional IP est désormais fonctionnelle.
 
+### Plesk
+
+#### Etape 1 : accéder à la section Gestion de Plesk IP
+
+Dans le panneau de configuration Plesk, choisissez `Outils et paramètres`{.action} dans la barre latérale gauche.
+
+![accès à la gestion des adresses IP](images/pleskip1.png){.thumbnail}
+
+Cliquez sur `Adresses IP`{.action} sous **Outils et ressources**.
+
+#### Etape 2 : ajouter les informations IP supplémentaires
+
+Dans cette section, cliquez sur le bouton `Add IP Address`{.action}.
+
+![ajouter des informations IP](images/pleskip2-2.png){.thumbnail}
+
+Entrez votre adresse Additional IP sous la forme `xxx.xxx.xxx.xxx/32` dans le champ « Adresse IP et masque de sous-réseau », puis cliquez sur `OK`{.action}.
+
+![ajouter des informations IP](images/pleskip3-3.png){.thumbnail}
+
+#### Etape 3 : vérifier la configuration IP actuelle
+
+Dans la section « Adresses IP », vérifiez que l'adresse Additional IP a été correctement ajoutée.
+
+![configuration IP actuelle](images/pleskip4-4.png){.thumbnail}
 
 ### FreeBSD
 

@@ -1,8 +1,8 @@
 ---
-title: NAS - Frequently Asked Questions
+title: HA-NAS - Frequently Asked Questions
 slug: nas/faq
-excerpt: Do you have questions about NAS? Here are the most frequently asked questions
-section: NAS
+excerpt: Do you have questions about HA-NAS? Here are the most frequently asked questions
+section: HA-NAS
 order: 02
 ---
 
@@ -14,9 +14,9 @@ order: 02
 
 Yes, you can manage it from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) by going to the `Bare Metal Cloud`{.action}, then `NAS and CDN`{.action} section.
 
-### Can I increase the total storage capacity of my NAS?
+### Can I increase the total storage capacity of my HA-NAS?
 
-Once you have ordered a HA-NAS, you cannot increase its storage capacity. To increase your storage capacity, you will need to migrate your data onto a second NAS with a higher storage capacity.
+Once you have ordered a HA-NAS, you cannot increase its storage capacity. To increase your storage capacity, you will need to migrate your data onto a second HA-NAS with a higher storage capacity.
 
 ### What storage capacity options are available?
 
@@ -44,7 +44,7 @@ The subscription periods offered are 1 month, 3 months, 6 months and 12 months. 
 
 ### Can HA-NAS be connected to several servers at once?
 
-Yes. You can make your NAS interact simultaneously with several OVHcloud services.
+Yes. You can make your HA-NAS interact simultaneously with several OVHcloud services.
 
 ### Can I install an operating system on a HA-NAS?
 

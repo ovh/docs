@@ -2,7 +2,7 @@
 title: Montage d'un NAS-HA via partage NFS
 slug: nas/nfs
 excerpt: Découvrez comment vous connecter à votre NAS-HA en utilisant un partage NFS
-section: NAS
+section: NAS-HA
 order: 03
 ---
 
