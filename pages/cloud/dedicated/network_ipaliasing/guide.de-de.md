@@ -9,7 +9,7 @@ section: 'Netzwerk & IP'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 06.10.2022**
+**Letzte Aktualisierung am 10.11.2022**
 
 > [!primary]
 >
@@ -24,9 +24,9 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 
 ## Voraussetzungen
 
-- Sie verfügen über einen dedizierten Server ([VPS](https://www.ovh.de/virtual_server/){.external}, [Dedicated Server](https://www.ovh.de/dedicated_server/){.external} oder eine [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external}).
-- Sie verfügen über eine oder mehrere [Additional IPs](https://www.ovhcloud.com/de/bare-metal/ip/){.external}.
-- Sie sind via SSH auf Ihrem Server eingeloggt (Root-Zugriff).
+- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/.
+- Sie verfügen mindestens eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/).
+- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH oder GUI.
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
@@ -392,12 +392,12 @@ Sie erhalten daraufhin zum Beispiel Folgendes:
 
 Notieren Sie dann IPv4, Subnetzmaske, Standardgateway sowie den Namen der Netzwerkkarte.
 
-In unserem Beispiel lautet die IP des Servers: **94.23.229.151**
+In diesem Beispiel lautet die IP des Servers: **94.23.229.151**
 
 
-Die nächsten Schritte können Sie entweder über Kommandozeilen oder über die grafische Benutzeroberfläche ausführen:
+Die nächsten Schritte können Sie entweder über die Eingabeaufforderung oder über die grafische Benutzeroberfläche ausführen.
 
-#### In Kommandozeilen (empfohlen)
+#### Kommandozeile
 
 In den untenstehenden Befehlen ersetzen Sie Folgendes:
 
@@ -411,34 +411,35 @@ In den untenstehenden Befehlen ersetzen Sie Folgendes:
 
 > [!warning]
 >
-> Achtung: Die Eingabe falscher Informationen führt dazu, dass der Server nicht mehr erreichbar ist. In diesem Fall sind Korrekturmaßnahmen im WinRescue-Modus oder über KVM erforderlich.
+> Die Eingabe falscher Informationen führt dazu, dass der Server nicht mehr erreichbar ist. In diesem Fall sind dann Korrekturmaßnahmen im WinRescue-Modus oder über KVM erforderlich.
 > 
 
 In der Eingabeaufforderung:
 
 1. Umschalten auf statische IP
 
-```sh
+```powershell
 netsh interface ipv4 set address name="NETWORK_ADAPTER" static IP_ADDRESS SUBNET_MASK GATEWAY
 ```
  
 2. DNS-Server festlegen
 
-```sh
+```powershell
 netsh interface ipv4 set dns name="NETWORK_ADAPTER" static 213.186.33.99
 ```
+
 3. Additional IP hinzufügen
 
-```sh
+```powershell
 netsh interface ipv4 add address "NETWORK_ADAPTER" ADDITIONAL_IP 255.255.255.255
 ```
 
 Ihre Additional IP ist jetzt funktionsfähig.
 
 
-#### Über die grafische Benutzeroberfläche
+#### Grafische Benutzeroberfläche
 
-1. Gehen Sie zu `Start`{.action} > `Systemsteuerung`{.action} > `Netzwerk und Internet`{.action} > `Netzwerk- und Freigabecenter`{.action} > `Adaptereinstellungen ändern`{.action} (im linken Menü).
+1. Öffnen Sie `Start`{.action}, `Systemsteuerung`{.action}, `Netzwerk und Internet`{.action}, `Netzwerk- und Freigabecenter`{.action}, `Adaptereinstellungen ändern`{.action} (im linken Menü).
 2. Klicken Sie mit der rechten Maustaste auf `LAN-Verbindung`{.action}.
 3. Klicken Sie auf `Eigenschaften`{.action}.
 4. Wählen Sie `Internetprotokoll Version 4 (TCP/IPv4)`{.action} aus und klicken Sie auf `Eigenschaften`{.action}.
@@ -449,10 +450,10 @@ Ihre Additional IP ist jetzt funktionsfähig.
 
 > [!warning]
 >
-> Achtung: Die Eingabe falscher Informationen führt dazu, dass der Server nicht mehr erreichbar ist. In diesem Fall sind Korrekturmaßnahmen im WinRescue-Modus oder über KVM erforderlich.
+> Achtung: Die Eingabe falscher Informationen führt dazu, dass der Server nicht mehr erreichbar ist. In diesem Fall sind dann Korrekturmaßnahmen im WinRescue-Modus oder über KVM erforderlich.
 > 
 
-Klicken Sie dann auf `Erweitert`{.action} (immer noch in den `TCP/IP Einstellungen`{.action}).
+Klicken Sie auf `Erweitert`{.action} (immer noch in den `TCP/IP Einstellungen`{.action}).
 
 ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
 
@@ -467,6 +468,32 @@ Geben Sie dann Ihre Additional IP und die Subnetzmaske **255.255.255.255** ein.
 Klicken Sie auf `Hinzufügen`{.action}.
 
 Ihre Additional IP ist jetzt funktionsfähig.
+
+### Plesk
+
+#### Schritt 1: Auf die IP-Verwaltung von Plesk zugreifen
+
+Wählen Sie im Plesk Konfigurationspanel `Tools & Settings`{.action} im linken Menü aus.
+
+![Zugang zur Verwaltung der IP-Adressen](images/pleskip1.png){.thumbnail}
+
+Klicken Sie auf `IP Addresses`{.action} unter **Tools & Resources**.
+
+#### Schritt 2: Die zusätzliche IP-Information hinzufügen
+
+Klicken Sie in diesem Abschnitt auf den Button `Add IP Address`{.action}.
+
+![IP-Informationen hinzufügen](images/pleskip2-2.png){.thumbnail}
+
+Geben Sie Ihre Additional IP in der Form `xxx.xxx.xxx.xxx/32` in das Feld "IP address and subnet mask" ein und klicken Sie dann auf `OK`{.action}.
+
+![IP-Informationen hinzufügen](images/pleskip3-3.png){.thumbnail}
+
+#### Schritt 3: Aktuelle IP-Konfiguration überprüfen
+
+Überprüfen Sie im Bereich "IP Addresses" ob die Additional IP korrekt hinzugefügt wurde.
+
+![aktuelle IP-Konfiguration](images/pleskip4-4.png){.thumbnail}
 
 
 ### FreeBSD

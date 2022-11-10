@@ -9,7 +9,7 @@ section: 'Sieć & IP'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja dnia 06-10-2022**
+**Ostatnia aktualizacja dnia 10-11-2022**
 
 > [!primary]
 >
@@ -466,6 +466,32 @@ Następnie wprowadź adres Additional IP oraz maskę podsieci **255.255.255.255*
 Kliknij `Dodaj`{.action}.
 
 Od tej pory Twój adres Additional IP będzie działać.
+
+### Plesk
+
+#### Etap 1: dostęp do interfejsu zarządzania adresami IP Plesk
+
+W panelu konfiguracyjnym Plesk wybierz `Tools & Settings`{.action} na pasku bocznym po lewej stronie.
+
+![dostęp do zarządzania adresami IP](images/pleskip1.png){.thumbnail}
+
+Kliknij `IP Addresses`{.action} w **Tools & Settings**.
+
+#### Etap 2: dodaj dodatkowe informacje IP
+
+W tej sekcji kliknij przycisk `Add IP Address`{.action}.
+
+![dodaj informacje IP](images/pleskip2-2.png){.thumbnail}
+
+Wprowadź adres Additional IP w formie `xxx.xxx.xxx.xxx/32` w polu "IP address and subnet mask", a następnie kliknij `OK`{.action}.
+
+![dodaj informacje IP](images/pleskip3-3.png){.thumbnail}
+
+#### Etap 3: sprawdź aktualną konfigurację IP
+
+W sekcji "IP Addresses" sprawdź, czy adres Additional IP został poprawnie dodany.
+
+![aktualna konfiguracja IP](images/pleskip4-4.png){.thumbnail}
 
 
 ### FreeBSD
