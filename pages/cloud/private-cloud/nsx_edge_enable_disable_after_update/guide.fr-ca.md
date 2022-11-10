@@ -1,5 +1,5 @@
 ---
-title: Comment activer ou désactiver NSX Edge après une mise à jour
+title: "Comment éditer la fonction HA d'une NSX Edge"
 slug: enable-disable-nsx-edge-after-update
 section: NSX
 order: 10
