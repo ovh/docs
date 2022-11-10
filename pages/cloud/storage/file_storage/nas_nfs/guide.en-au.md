@@ -2,7 +2,7 @@
 title: Mounting HA-NAS via NFS share
 slug: nas/nfs
 excerpt: Find out how to connect to your HA-NAS using an NFS share
-section: NAS
+section: HA-NAS
 order: 03
 ---
 

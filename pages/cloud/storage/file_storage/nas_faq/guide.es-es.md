@@ -2,7 +2,7 @@
 title: Preguntas frecuentes sobre los NAS
 slug: nas/faq
 excerpt: ¿Tiene alguna duda sobre los NAS? A continuación le ofrecemos la respuesta a las preguntas más frecuentes.
-section: NAS
+section: NAS-HA
 order: 02
 ---
 

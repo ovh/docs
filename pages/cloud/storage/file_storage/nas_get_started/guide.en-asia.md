@@ -2,7 +2,7 @@
 title: Getting started with a HA-NAS solution
 slug: nas/get-started
 excerpt: Find out how to manage a HA-NAS via the OVHcloud Control Panel
-section: NAS
+section: HA-NAS
 order: 01
 ---
 

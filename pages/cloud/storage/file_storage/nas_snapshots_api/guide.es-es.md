@@ -2,7 +2,7 @@
 title: NAS-HA - Gestión de snapshots a través de la API
 slug: nas/snapshots-api
 excerpt: Cómo gestionar los snapshots del NAS-HA a través de la API de OVHcloud
-section: NAS
+section: NAS-HA
 order: 09
 ---
 

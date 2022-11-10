@@ -1,235 +1,193 @@
 ---
-title: 'Montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS'
+title: "Montowanie NAS-HA przy użyciu zasobów NFS"
 slug: nas/nfs
-excerpt: 'Dowiedz się, jak zamontować NAS przy użyciu protokołu NFS'
-section: NAS
+excerpt: "Dowiedz się, jak się zalogować do usługi NAS-HA przy użyciu protokołu NFS"
+section: NAS-HA
 order: 03
 ---
 
-**Ostatnia aktualizacja z dnia 21-02-2022**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
+
+**Ostatnia aktualizacja z dnia 08-11-2022**
+
+## Wprowadzenie
+
+Usługa NAS-HA OVHcloud pozwala na zarządzanie przestrzenią dyskową plików dostępną z poziomu sieci.
+
+**Dowiedz się, jak uzyskać dostęp do usługi NAS-HA poprzez NFS na najpopularniejszych systemach operacyjnych.**
+
+> [!warning]
+> OVHcloud oferuje szereg usług, których konfiguracja i zarządzanie należy do Ciebie. To Ty musisz upewnić się, że działają poprawnie.
+>
+> Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub zbliżenie się do [naszej społeczności](https://community.ovh.com/en/).
+>
 
 ## Wymagania początkowe
 
-Przewodnik wyjaśnia, jak zamontować NFS na najpopularniejszych dystrybucjach. Aby zamontować zasób NFS, potrzebne Ci będą następujące elementy:
-
-- Posiadanie [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/), **lub**  [VPS](https://www.ovhcloud.com/pl/vps/) **lub** [instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/).
-- Posiadanie usługi [NAS-HA](https://www.ovh.pl/nas/).
-- Dystrybucja kompatybilna z NFS.
+- Posiadanie oferty [NAS-HA OVHcloud](https://www.ovhcloud.com/pl/storage-solutions/nas-ha/)
+- Posiadanie usługi OVHcloud, do której przypisany jest publiczny adres IP (Hosted Private Cloud, serwer dedykowany, VPS, instancja Public Cloud, etc.)
+- Posiadanie systemu operacyjnego kompatybilnego z NFS zainstalowanego na Twoim serwerze
+- [Utworzenie partycji dla Twojej usługi przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/file-storage/nas/get-started/#partition)
+- [Posiadanie wpisu ACL dla adresu IP serwera](https://docs.ovh.com/pl/storage/file-storage/nas/get-started/#addaccess)
+- Dostęp administracyjny (root) do serwera przez SSH lub GUI
 
 ## W praktyce
 
-### Linux
+Poniższe sekcje zawierają przykłady konfiguracji dla najczęściej używanych dystrybucji/systemów operacyjnych. Pierwszy etap polega zawsze na zalogowaniu się do serwera przez SSH lub zalogowaniu się do interfejsu graficznego zainstalowanego systemu operacyjnego. Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z dużymi uprawnieniami.
 
-Kompatybilność: Debian & Ubuntu
+Potrzebna będzie również **nazwa wewnętrzna** oraz **adres IP** usługi NAS-HA, które można znaleźć w e-mailu otrzymanym po instalacji usługi lub w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Aby zamontować zasób NFS pod Linuxem:
+Następujące ratingi są używane jako argumenty w poniższych sekcjach wiersza poleceń. Zastąp je odpowiednimi wartościami podczas wprowadzania poleceń.
 
-- Zaloguj się do serwera przez SSH
-- Zainstaluj pakiet “nfs-client” przy użyciu polecenia:
+|Argument|Opis|
+|---|---|
+|IP_HA-NAS|Adres IP NAS-HA (np. `10.1.1.1`)|
+|NFS_PATH|ścieżka dostępu do partycji NAS-HA, którą chcesz zamontować, zawierająca nazwę usługi i nazwę partycji (Przykład: `zpool-123456/partition01`)|
+|MOUNTING_FOLDER|Katalog lokalny dla zamontowanej partycji|
 
+> [!warning]
+>
+> Użytkownik NFS to `root`, zmiany uprawnień dla tego użytkownika mogą powodować konflikty z istniejącymi uprawnieniami CIFS/SMB.
+>
 
-```sh
-aptitude install nfs-client
+### Dystrybucje oparte na Debianie
+
+Zainstaluj pakiet `nfs-common`:
+
+```bash
+ubuntu@server:~$ sudo apt install nfs-common
 ```
 
 Następnie użyj polecenia:
 
-
-```sh
-mount -t nfs  IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
+```bash
+ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
 ```
 
-|Argument|Opis |
-|---|---|
-|IP_NAS|Nazwa lub adres IP NAS|
-|/CHEMIN_NFS|Ścieżka na serwerze NFS dla zasobu (np.: "nas-000YY/mapartition")|
-|DOSSIER_MONTAGE|Katalog, w którym zainstalujesz zasób NFS na serwerze|
+**Przykład:**
 
+```bash
+ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+```
+
+Teraz możesz przejść do partycji zamontowanej w określonym folderze.
 
 > [!primary]
 >
-> Przestrzeń NAS może być montowana automatycznie w momencie uruchamiania dystrybucji. W tym celu dodaj poniższe polecenie do pliku /etc/fstab:
+> Aby zautomatyzować proces montowania serwera przy każdym uruchomieniu serwera, dodaj następującą linię do pliku `/etc/fstab`:
 >
-> ```
-> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
-> ```
+> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
-*Przykład:*
+### CentOS 7 / AlmaLinux / Rocky Linux
 
-```sh
-mount -t nfs  10.16.XXX.YYY:zpool-999888/PartitionName /media/NasHA -v
+Sprawdź, czy zainstalowane są najnowsze wersje pakietów `nfs-utils` i `rpcbind`:
+
+```bash
+centos@server:~$ sudo yum install nfs-utils rpcbind
 ```
 
-|Argument|Opis |
-|---|---|
-|IP_NAS|10.16.XXX.YYY|
-|/CHEMIN_NFS|zpool-999888/PartitionName|
-|DOSSIER_MONTAGE|/media/NasHA -v|
+W razie potrzeby uruchom ponownie usługę `rpcbind`, wprowadzając następujące polecenie:
 
-### CentOS
-
-Aby zamontować zasób NFS pod CentOS:
-
-- Zaloguj się do serwera przez SSH
-- Zainstaluj pakiety "nfs-utils" i "rpcbind" przy użyciu polecenia:
-
-
-```sh
-yum install nfs-utils rpcbind
+```bash
+centos@server:~$ sudo systemctl restart rpcbind
 ```
 
-Następnie zrestartuj usługę `rpcbind` przy użyciu polecenia:
+Aby zamontować partycję, użyj następującego polecenia:
 
-
-```sh
-/etc/init.d/rpcbind start
+```bash
+centos@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
 ```
 
-Teraz zastosuj polecenie:
+**Przykład:**
 
-```sh
-mount -t nfs  IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
+```bash
+centos@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
 ```
 
-|Argument|Opis |
-|---|---|
-|IP_NAS|Nazwa lub adres IP NAS|
-|/CHEMIN_NFS|Ścieżka na serwerze NFS dla zasobu (np.: "nas-000YY/mapartition")|
-|DOSSIER_MONTAGE|Katalog, w którym zainstalujesz zasób NFS na serwerze|
-
+Teraz możesz przejść do partycji zamontowanej w określonym folderze.
 
 > [!primary]
 >
-> Przestrzeń NAS może być montowana automatycznie w momencie uruchamiania dystrybucji. W tym celu dodaj poniższe polecenie do pliku /etc/fstab:
+> Aby zautomatyzować proces montowania serwera przy każdym uruchomieniu serwera, dodaj następującą linię do pliku `/etc/fstab`:
 >
-> ```
-> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
-> ```
+> `IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
-### Gentoo
+### Fedora
 
-Aby zamontować zasób NFS pod Gentoo:
+Zainstaluj pakiet `nfs-utils`:
 
-- Zaloguj się do serwera przez SSH
-- Zainstaluj pakiet “nfs-utils” przy użyciu polecenia:
-
-
-```sh
-emerge nfs-utils
+```bash
+fedora@server:~$ sudo dnf -y install nfs-utils
 ```
 
-Uruchom usługę NFS, wpisując polecenie:
+Następnie użyj polecenia:
 
-```sh
-/etc/init.d/nfs start
+```bash
+fedora@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
 ```
 
-Następnie zastosuj polecenie:
+**Przykład:**
 
-
-```sh
-mount -t nfs IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
+```bash
+fedora@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
 ```
 
-|Argument|Opis |
-|---|---|
-|IP_NAS|Nazwa lub adres IP NAS|
-|/CHEMIN_NFS|Ścieżka na serwerze NFS dla zasobu (np.: "nas-000YY/mapartition")|
-|DOSSIER_MONTAGE|Katalog, w którym zainstalujesz zasób NFS na serwerze|
+Teraz możesz przejść do partycji zamontowanej w określonym folderze.
 
-
-> [!primary]
->
-> Przestrzeń NAS może być montowana automatycznie w momencie uruchamiania dystrybucji. W tym celu dodaj poniższe polecenie do pliku /etc/fstab:
->
-> ```
-> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
-> ```
->
-> Następnie dodaj "nfsmount" do rozruchu serwera za pomocą następującego polecenia:
->
-> ```
-> rc-update add nfsmount default
-> ```
->
 
 ### Proxmox
 
-Kompatybilność: Proxmox 3.X
+W interfejsie administracyjnym Proxmox kliknij `Storage`{.action} w menu pionowym.
 
-Aby zamontować zasób NFS pod Proxmox:
+![proxmox](images/proxmox1.png){.thumbnail}
 
-- Zaloguj się do interfejsu administracyjnego Proxmox
-- Kliknij zakładkę `Storage`{.action}.
+Kliknij przycisk `Add`{.action} i wybierz `NFS`{.action}.
 
+W oknie, które się pojawi, wprowadź następujące informacje.
 
-![configuration](images/img_4647.jpg){.thumbnail}
-
-- Kliknij `Dodaj`{.action} i wybierz `NFS`{.action}.
-
-
-![configuration](images/img_4648.jpg){.thumbnail}
-
-
-|Argument|Opis |
+|Szczegóły|Opis|
 |---|---|
-|ID|Nazwa wybrana dla Twojego zasobu NFS|
-|Serwer|Nazwa NAS|
-|Eksport|Ścieżka na serwerze NFS dla zasób|
-|Zawartość|Rodzaj zawartości dla tego zasobu NFS (możliwa wartość: Images, ISO, Template, Backups, Containers)|
+|ID|Identyfikator konta zasobów współdzielonych|
+|Server|Adres IP NAS-HA (Przykład: `10.1.1.1`)|
+|Export|Ścieżka do partycji NAS-HA (musi być wykryta przez automatyczne skanowanie: wybierz go z listy.)|
+|Content|Rodzaje treści dla tego zasobu NFS (Disk image, ISO image, Container template, VZDump backup file, Container, Snippets)|
 
+![proxmox](images/proxmox2.png){.thumbnail}
 
-> [!primary]
->
-> Przestrzeń NAS może być montowana automatycznie w momencie uruchamiania dystrybucji. W tym celu dodaj poniższe polecenie do pliku /etc/fstab:
->
-> ```
-> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
-> ```
->
+Kliknij `Add`{.action}, aby zamontować partycję.
 
-### ESXI
+### VMware ESXI
 
-Aby zamontować udział NFS pod ESXI:
+W interfejsie VMware ESXI kliknij `Storage`{.action} w menu po lewej stronie.
 
-- Zaloguj się do serwera przez vSphere
-- W panelu administracyjnym kliknij `Inventory`{.action}:
+Następnie kliknij przycisk `New datastore`{.action}, aby otworzyć asystenta.
 
+![ESXI](images/esxi1.png){.thumbnail}
 
-![configuration](images/esxi_1.jpg){.thumbnail}
+W nowym oknie wybierz `Mount NFS datastore`{.action} i kliknij `Next`{.action}.
 
-- Przejdź do zakładki `Konfiguracja`{.action}.
+![ESXI](images/esxi2.png){.thumbnail}
 
+Wypełnij formularz następującymi szczegółami.
 
-![configuration](images/esxi_2.jpg){.thumbnail}
-
-- Następnie kliknij `Storage`{.action} w menu po lewej stronie.
-
-
-![configuration](images/esxi_3.jpg){.thumbnail}
-
-Wypełnij formularz, który się wyświetli.
-
-
-![configuration](images/esxi_4.jpg){.thumbnail}
-
-|Argument|Opis |
+|Szczegóły|Opis|
 |---|---|
-|Serwer|Nazwa lub adres IP NAS|
-|Folder|Ścieżka na serwerze NFS dla uzasobu (np.: "nas-000YY/mapartition")|
-|Nazwa datastore|Nazwa, którą nadałeś datastorowi|
+|Name|Identyfikator konta zasobów współdzielonych|
+|NFS server|Adres IP NAS-HA (Przykład: `10.1.1.1`)|
+|NFS share|Ścieżka do partycji NAS-HA do zamontowania (Przykład: `zpool-123456/partition01`)|
 
+![ESXI](images/esxi3.png){.thumbnail}
 
-## Dodatkowe informacje
+Następnie kliknij `Next`{.action}. Kliknij `Finish`{.action} w ostatnim etapie.
 
+Partycja NAS-HA jest teraz zamontowana w datastore.
 
-> [!alert]
->
-> Użytkownik NFS posiada uprawnienia `root`, zmiany uprawnień tego użytkownika mogą powodować konflikty z istniejącymi uprawnieniami CIFS/SMB.
->
+![ESXI](images/esxi4.png){.thumbnail}
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

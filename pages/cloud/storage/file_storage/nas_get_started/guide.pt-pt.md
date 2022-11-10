@@ -2,7 +2,7 @@
 title: Primeiros passos com um NAS-HA
 slug: nas/get-started
 excerpt: Saiba como gerir um NAS-HA a partir da Área de Cliente OVHcloud
-section: NAS
+section: NAS-HA
 order: 01
 ---
 

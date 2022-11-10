@@ -2,7 +2,7 @@
 title: HA-NAS - API Quickstart
 slug: nas/quick-api
 excerpt: Find out how to get started with HA-NAS using the OVHcloud API
-section: NAS
+section: HA-NAS
 order: 06
 ---
 
