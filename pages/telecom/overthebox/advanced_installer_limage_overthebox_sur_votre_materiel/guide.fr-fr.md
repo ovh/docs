@@ -126,7 +126,7 @@ Dans le cas de l'OverTheBox Intel, la clé USB doit être branchée sur un des p
 
 Dans le cas d'une OverTheBox IT v1, la clé USB doit être branchée sur un des ports USB **noirs** :
 
-![overthebox](images/manual_install-method1-3_OTBv2a.jpg){.thumbnail}
+![overthebox](images/manual_install-method1-3_OTBv2a.png){.thumbnail}
 
 Dans le cas d'une OverTheBox Plus, la clé USB doit être branchée sur un des ports USB **en façade** :
 
@@ -134,7 +134,7 @@ Dans le cas d'une OverTheBox Plus, la clé USB doit être branchée sur un des p
 
 Dans le cas d'une OverTheBox IT v2, la clé USB doit être branchée sur un des ports USB **au dos** :
 
-![overthebox](images/manual_install-method1-3_OTBv2c.jpg){.thumbnail}
+![overthebox](images/manual_install-method1-3_OTBv2c.png){.thumbnail}
 
 - Branchez l'**OverTheBox** sur le courant électrique, le boitier commence sa réinitialisation.
 - Dans le cas de l'OverTheBox Intel, attendez que le **voyant de façade Power** soit éteint (cela peut prendre quelque minutes).
