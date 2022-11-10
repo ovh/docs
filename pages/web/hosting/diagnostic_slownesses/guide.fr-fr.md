@@ -107,11 +107,11 @@ Cliquez ensuite sur l'onglet `Multisites`{.action} pour récupérer le numéro d
 
 > [!success]
 >
-> Si un incident ou une maintenance sont déclarés sur l'infrastructure où se trouve votre hébergement mutualisé, suivez celle-ci jusqu'à sa résolution par nos administrateurs. **Aucune autre action n'est à réaliser à votre niveau**.
+> Si un incident ou une maintenance sont déclarés sur l'infrastructure où se trouve votre hébergement mutualisé, suivez ceux-ci jusqu'à leur résolution par nos administrateurs. **Aucune autre action n'est à réaliser à votre niveau**.
 >
-> Vous pouvez vous inscrire avec votre adresse e-mail à la déclaration d'incident ou de maintenance pour être notifié par mail de l'avancée des opérations.
+> Vous pouvez vous inscrire avec votre adresse e-mail à la déclaration d'incident ou de maintenance, afin d'être notifié par e-mail de l'avancée des opérations.
 >
-> Une fois le statut de l'incident ou la maintenance marqué comme **résolu**, un délaisde stabilisation de la charge accumulée peut survenir. Ce dernier prendra au maximum **3 heures** après la notification de résolution pour se résorber complètement.
+> Une fois le statut de l'incident ou de la maintenance marqué comme **résolu**, la stabilisation de la charge accumulée peut nécessiter un délai de **3 heures** maximum après la notification de résolution pour se résorber complètement.
 >
 
 Si aucun incident ou aucune maintenance ne sont déclarés, poursuivez vos diagnostics.
