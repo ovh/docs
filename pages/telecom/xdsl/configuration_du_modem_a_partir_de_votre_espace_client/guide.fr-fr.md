@@ -74,7 +74,7 @@ Depuis cette partie, plusieurs possibilités s'offrent à vous.
 
 - **Redémarrer à distance votre box** : pour cela, cliquez sur le bouton `Redémarrer le modem`{.action} puis confirmez l'action. Patientez alors le temps que votre box redémarre.
 
-- **Activer ou désactiver la configuration à distance de votre box** : pour cela, cochez ou décochez la case à côté de `Configuration à distance activée`. L'activation écrasera le paramétrage actuel de votre box. La désactivation rendra impossible la configuration de votre box depuis l'espace client OVHcloud, celle-ci conservera cependant les paramètres en place au moment de la désactivation.
+- **Activer ou désactiver la configuration à distance de votre box** : pour cela, cochez ou décochez la case à côté de `Configuration à distance activée`. L'activation écrasera le paramétrage actuel de votre box. La désactivation rendra impossible la configuration de votre box depuis l'espace client OVHcloud, celle-ci conservera cependant les paramètres en place au moment de la désactivation. Lors de la désactivation un nouveau mot de passe est généré et transmis par email pour vous permettre d'accéder à l'interface locale du modem.
 
 - **Pare-feu** : lorsque vous gérez votre box à distance, le pare-feu n’est pas paramétrable. Celui-ci s’adapte automatiquement aux configurations en place dans l’espace client.
 
