@@ -6,7 +6,7 @@ section: Diagnostic
 order: 01
 ---
 
-**Dernière mise à jour le 09/11/2022**
+**Dernière mise à jour le 10/11/2022**
 
 ## Objectif
 
@@ -193,27 +193,33 @@ Si vous avez des tables volumineuses ou des flux de requêtes en base de donnée
 
 #### 1.5 - Interprétation des diagnostics effectués
 
-**Cas n°1 :** si vous rencontrez toutes les situations suivantes :
+**Cas n°1**
+
+Les affirmations suivantes s'appliquent **toutes** à votre situation :
 
 - au moins une page, un script ou un fichier (y compris le fichier « **phpinfo.php** ») testé lors de l'étape 1 s'est chargé rapidement ;
 - votre base de données a exécuté la commande « Benchmark » rapidement.
 
- Cela signifie que les lenteurs que vous rencontrez proviennent directement des scripts qui composent votre site web. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
+> Cela signifie que les lenteurs que vous rencontrez proviennent directement des scripts qui composent votre site web. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
 
-**Cas n°2 :** si vous rencontrez toutes les situations suivantes :
+**Cas n°2**
+
+Les affirmations suivantes s'appliquent **toutes** à votre situation :
 
 - au moins une page, un script ou un fichier (y compris le fichier « **phpinfo.php** ») testé lors de **l'étape 1** s'est chargé rapidement ;
 - la commande « Benchmark » excède les temps totaux d'exécution indiqués plus haut dans ce guide ;
 - vous avez constaté des tables volumineuses ou un flux de requêtes conséquent vers votre base de données.
 
- Cela signifie que les lenteurs que vous rencontrez proviennent directement des scripts qui composent votre site. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
+> Cela signifie que les lenteurs que vous rencontrez proviennent directement des scripts qui composent votre site. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
 
-**Cas n°3 :** si vous rencontrez toutes les situations suivantes :
+**Cas n°3**
+
+Les affirmations suivantes s'appliquent **toutes** à votre situation :
 
 - **aucun incident et aucune maintenance** ne sont déclarés, ou n'ont été déclarés comme **résolus** il y a moins de trois heures, pour vos services d'hébergement web sur notre site [status-ovhcloud.com](https://web-cloud.status-ovhcloud.com/) ;
-- pour toutes les configurations autres que les **cas n°1** et **cas n°2**.
+- les **cas n°1** et **cas n°2** détaillés ci-dessus ne correspondent pas à votre configuration.
 
- Des investigations côté OVHcloud seront nécessaires. Contactez nos services d'assistance sur les solutions Web, afin qu'ils confirment avec vous l'origine des ralentissements que vous rencontrez.
+> Des investigations côté OVHcloud seront nécessaires. Contactez nos services d'assistance sur les solutions Web, afin qu'ils confirment avec vous l'origine des ralentissements que vous rencontrez.
 
 ### Etape 2 - identifiez la(les) source(s) qui génère(nt) les lenteurs au niveau de votre site web <a name="step2"></a>
 
@@ -295,7 +301,7 @@ Redimensionnez l'ensemble de vos images pour diminuer au maximum la consommation
 
 Consultez notre guide sur l'[optimisation des performances pour votre site Internet](https://docs.ovh.com/fr/hosting/optimisation-performances-site/).
 
-Vous pouvez trouver des pistes d'optimisation pour votre site en l'analysant sur [gtmetrix.com](https://gtmetrix.com){.external} (ce site n'est pasn géré par OVHcloud).
+Vous pouvez trouver des pistes d'optimisation pour votre site en l'analysant sur [gtmetrix.com](https://gtmetrix.com){.external} (ce site n'est pas affilié à OVHcloud).
 
 > [!success]
 >
