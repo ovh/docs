@@ -8,6 +8,9 @@ section: Getting started
 order: 6
 hidden: true
 ---
+<style>
+.ovh-api-main { background:#fff;}
+</style> 
 
 **Last updated 10th November 2022**
 
@@ -582,10 +585,10 @@ Here is how to proceed:
 >
 > `{datacenterId}` is the **old** vDC id, you can get it with the following API call:
 >
->> > [!api]
->> >
->> > @api {GET} /dedicatedCloud/{serviceName}/datacenter
->> >
+> > [!api]
+> >
+> > @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> >
 >
 
 1\. Enable backup for the new vDC.
@@ -602,7 +605,6 @@ Here is how to proceed:
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
 >
-
 
 4\. Repeat steps 2 and 3 for all VMs that have backups enabled and have been migrated to the new vDC.
 

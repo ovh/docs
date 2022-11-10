@@ -8,6 +8,9 @@ section: Premiers pas
 order: 6
 hidden: true
 ---
+<style>
+.ovh-api-main { background:#fff;}
+</style> 
 
 **Dernière mise à jour le 10/11/2022**
 
@@ -638,7 +641,6 @@ Avant de continuer, vous pouvez vérifier visuellement, dans le plug-in graphiqu
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
 >
-
 
 <a name="reconzerto"></a>
 #### Etape 6.2 Reconfigurer Zerto Disaster Recovery (si pertinent)
