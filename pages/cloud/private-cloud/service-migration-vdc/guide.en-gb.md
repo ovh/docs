@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Last updated 20th september 2022**
+**Last updated 10th November 2022**
 
 **This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC) to a new destination vDC (Essentials or Premier).**
 
@@ -578,20 +578,31 @@ If OVHcloud provided Veeam is currently in use to backup VMs on the source vDC, 
 
 Here is how to proceed:
 
+> [!primary]
+>
+> `{datacenterId}` is the **old** vDC id, you can get it with the following API call:
+>
+>> > [!api]
+>> >
+>> > @api {GET} /dedicatedCloud/{serviceName}/datacenter
+>> >
+>
+
 1\. Enable backup for the new vDC.
 
 2\. Migrate the VM(s) from source vDC to destination vDC.
 
 3\. Run the OVHcloud API to re-check the backup date:
 
+> [!warning]
+>
+> This API call is to be executed on the old vDC (source vDC).
+
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
 >
 
-> [!warning]
->
-> This API call is to be executed on the old vDC (source vDC).
 
 4\. Repeat steps 2 and 3 for all VMs that have backups enabled and have been migrated to the new vDC.
 
@@ -602,12 +613,6 @@ Before you continue, you can check visually, in the graphic Backup Management pl
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
 >
 
-`{datacenterId}` is the **old** vDC id, you can get it with the following API call:
-
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
->
 <a name="reconzerto"></a>
 #### Step 6.2 Reconfigure Zerto Disaster Recovery (if relevant)
 
