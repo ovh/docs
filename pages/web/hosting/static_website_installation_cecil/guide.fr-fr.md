@@ -186,11 +186,12 @@ Vérifiez la visibilité de votre page sur votre navigateur :
 
 ![Visualisation nouvelle page créée](images/static_website_installation_cecil%5B12%5D.png)
 
-L'exemple pour ce guide sera réalisé avec l'API disponible sur le site [Météo Concept](https://api.meteo-concept.com/). Un compte gratuit vous permettar d'effectuer 500 requêtes quotidiennes gratuitement.
+L'API choisie pour cet exemple est celle fournie par [OpenWeather](https://openweathermap.org/). 
+Créez un compte : https://home.openweathermap.org/users/sign_up
 
-Créez ensuite un token, vous pourrez le récupérer en cliquant sur le bouton « Afficher »  sur la page suivante :
+Une fois votre compte validé (par envoi d'un mail de confirmation), allez sur le menu « My API keys ». Une clé a été générée par défaut, nous allons l'utiliser pour la suite.
 
-![Création token API Météo Concept](images/static_website_installation_cecil%5B13%5D.png)
+![Open Weather API key](images/static_website_installation_cecil%5B13%5D.png)
 
 ## Aller plus loin
 
