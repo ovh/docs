@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/capabilities/'
 ---
 
-**Last updated October 26, 2022**
+**Last updated November 8th, 2022**
 
 ## Objective
 
@@ -89,6 +89,14 @@ Here are the node types you can choose from:
 | db1-120 | 2560      | 32    | 120         |
 
 Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
+
+#### Disk type
+
+The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](https://www.ovhcloud.com/es/public-cloud/regions-availability/) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
+
+Also, the performance caracteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See [Block Storage documentation](https://www.ovhcloud.com/es/public-cloud/block-storage/) for more information about those performance caracteristics.
+
+Public Cloud Databases will select the most efficient disk type for your cluster depending on your cluster parameters.
 
 #### Effective storage
 
