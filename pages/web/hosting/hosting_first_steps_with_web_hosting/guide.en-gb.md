@@ -66,7 +66,7 @@ To ensure that the OVHcloud module installation is successful, please check that
 - the module’s installation directory is empty (which should be the case if you have not connected to your storage space)
 - you have already created a database in your Web Hosting plan (go to the `Databases`{.action} tab, then `Create a database`{.action} to do this)
 
-To create a database, please log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the Domain name from the Web Hosting plan that you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
+To create a database, please log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
 
 ![Access to 1-click modules](images/create_a_database.png){/thumbnail}
 
