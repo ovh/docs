@@ -94,7 +94,7 @@ Dies aktiviert den Rescue-Modus der Instanz. Um detaillierte Informationen zu er
 #### Instanz neu starten
 
 > [!warning]
-> Die Soft Reboot durchführen ist derzeit für Metal Instanzen nicht verfügbar.
+> Die Durchführung eines Soft Reboot ist derzeit für Metal Instanzen nicht verfügbar.
 >
 
 - Klicken Sie auf `Soft Reboot durchführen`{.action} um einen Neustart auf Software-Ebene durchzuführen.
