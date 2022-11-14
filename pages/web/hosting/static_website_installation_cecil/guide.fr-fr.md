@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 
 ---
 
-**Dernière mise à jour le 09/11/2022**
+**Dernière mise à jour le 14/11/2022**
 
 ## Objectif
 
@@ -77,6 +77,18 @@ Vous pouvez maintenant voir le résultat en allant sur votre nom de domaine :
 
 ![Installation Cecil](images/static_website_installation_cecil%5B3%5D.png)
 
+#### Configurer son site
+
+Les informations générales de votre site peuvent être configurées dans le fichier `config.yml` :
+
+```sh
+nano config.yml
+```
+
+Remplacez les informations par défaut par les votres et sauvegardez le fichier.
+
+![Fichier de configuration YAML](images/static_website_installation_cecil%5B4%5D.png)
+
 ### Créer sa première page
 
 La création des pages qui contiendront les données de votre site se fait via des fichiers au format _Markdown_. Ces pages sont personnalisables : Cecil utilise le moteur de _template_ [Twig](https://twig.symfony.com/) qui est utilisé par défaut avec le _framework_ [Symfony](https://symfony.com/).
@@ -99,7 +111,7 @@ php cecil.phar new:page mapage.md
 
 Un fichier `mapage.md` est alors créé à la racine du répertoire `/pages
 
-![Installation Cecil](images/static_website_installation_cecil%5B4%5D.png)
+![Installation Cecil](images/static_website_installation_cecil%5B5%5D.png)
 
 #### Gérérer les fichiers statiques
 
@@ -111,11 +123,11 @@ php cecil.phar build
 
 Votre fichier se trouve dans le répertoire `_site/mapage/` :
 
-![Installation Cecil](images/static_website_installation_cecil%5B5%5D.png)
+![Installation Cecil](images/static_website_installation_cecil%5B6%5D.png)
 
 Et vous pouvez la visualiser sur votre serveur en tapant l'URL de votre site, suivi de `/mapage/` :
 
-![Résultat navigateur](images/static_website_installation_cecil%5B6%5D.png)
+![Résultat navigateur](images/static_website_installation_cecil%5B7%5D.png)
 
 #### Modifier ses fichiers
 
@@ -130,11 +142,11 @@ Les captures d'écran du présent guide ont été réalisées sous GNU nano.
  nano pages/mapage.md
 ```
 
-![Édition du fichier dans GNU nano](images/static_website_installation_cecil%5B7%5D.png)
+![Édition du fichier dans GNU nano](images/static_website_installation_cecil%5B8%5D.png)
 
 Ajoutez quelques lignes en respectant la syntaxe _Markdown_ :
 
-![Ajout de contenu dans le fichier](images/static_website_installation_cecil%5B8%5D.png)
+![Ajout de contenu dans le fichier](images/static_website_installation_cecil%5B9%5D.png)
 
 Rebuildez vos pages après avoir sauvegardé votre fichier :
 
@@ -144,17 +156,17 @@ php cecil.phar build
 
 Puis retournez sur votre page pour voir le résultat :
 
-![Page mise à jour](images/static_website_installation_cecil%5B9%5D.png)
+![Page mise à jour](images/static_website_installation_cecil%5B10%5D.png)
 
 ##### **Modification sur votre poste de travail**
 
 Si vous préférez utiliser votre éditeur de code habituel, connectez-vous avec un client FTP sur votre serveur pour récupérer les fichiers sur votre ordinateurs :
 
-![Téléchargement avec FileZilla](images/static_website_installation_cecil%5B10%5D.png)
+![Téléchargement avec FileZilla](images/static_website_installation_cecil%5B11%5D.png)
 
 Vous pouvez maintenant éditer les fichiers dans votre I.D.E. :
 
-![Affichage dans Visual Studio Code](images/static_website_installation_cecil%5B11%5D.png)
+![Affichage dans Visual Studio Code](images/static_website_installation_cecil%5B12%5D.png)
 
 Il vous suffit de renvoyer vos fichiers modifiés ou vos nouveaux fichiers sur votre serveur et de rebuilder pour avoir vos pages en ligne.
 
@@ -182,16 +194,43 @@ Lancez la génération de la page :
 php cecil.phar build
 ```
 
-Vérifiez la visibilité de votre page sur votre navigateur :
+Vérifiez la visibilité de votre page sur votre navigateur en ajoutant `/meteo` à l'URL de votre site web :
 
-![Visualisation nouvelle page créée](images/static_website_installation_cecil%5B12%5D.png)
+![Visualisation nouvelle page créée](images/static_website_installation_cecil%5B13%5D.png)
+
+#### Choisir une API
 
 L'API choisie pour cet exemple est celle fournie par [OpenWeather](https://openweathermap.org/). 
 Créez un compte : https://home.openweathermap.org/users/sign_up
 
 Une fois votre compte validé (par envoi d'un mail de confirmation), allez sur le menu « My API keys ». Une clé a été générée par défaut, nous allons l'utiliser pour la suite.
 
-![Open Weather API key](images/static_website_installation_cecil%5B13%5D.png)
+![Open Weather API key](images/static_website_installation_cecil%5B14%5D.png)
+
+#### Préparer la page web
+
+Éditez le fichier `meteo.md` :
+
+```sh
+nano pages/meteo.md
+```
+
+Dans ce fichier, ajoutez la partie HTML de la page qui va permetter d'afficher la température de la ville sélectionnées :
+
+```html
+---
+title: "Meteo"
+date: 2022-11-14
+published: true
+---
+<h1>Météo</h1>
+<div>
+    <span id="city">Roubaix</span>
+    <div id="temperature"><span id="temperatureValue"></span> °C</div>
+    <div id="modify">Changer de ville</div>
+</div>
+<script src="script.js"></script>
+```
 
 ## Aller plus loin
 
