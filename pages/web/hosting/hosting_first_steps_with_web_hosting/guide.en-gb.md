@@ -37,7 +37,7 @@ In the Control Panel, OVHcloud provides a tool that allows you to install a CMS 
 
 - **Migrating an existing website to OVHcloud**
 
-Website migration can sometimes be quite tricky, particularly if you are migrating a website that is currently online and cannot experience service interruptions. As a result, this guide only includes a few of the steps you will need to take to migrate your services. Please refer to our guide: [Migrating your website and emails to OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}.
+Website migration can sometimes be quite tricky, particularly if you are migrating a website that is currently online and cannot experience service interruptions. As a result, this guide only includes a few of the steps you will need to take to migrate your services. Please refer to our guide: [Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}.
 
 ### Step 2: Set up your website
 
@@ -59,7 +59,7 @@ If you need more information on OVHcloud 1-click modules, please read our docume
 
 #### A quick solution in just a few clicks – no technical knowledge required
 
-This solution uses OVHcloud modules, a tool you can use to install a CMS easily. OVH sets up your website using the custom information you have entered (the custom credentials for logging in to your CMS, for example). To use this method, you will need to have a least one database in your solution.
+This solution uses OVHcloud modules, a tool you can use to install a CMS easily. OVHcloud sets up your website using the custom information you have entered (the custom credentials for logging in to your CMS, for example). To use this method, you will need to have a least one database in your solution.
 
 To ensure that the OVHcloud module installation is successful, please check that:
 
@@ -90,7 +90,7 @@ This stage is optional if you don’t want to use the email addresses included i
 
 ![Create an email address](images/create_an_email_address.png){/thumbnail}
 
-Enter the information requested to create your email address. Repeat this step for each additional email address you wish to create. If you are in the process of migrating your emails to OVHcloud, we would recommend that you use the [OVH Mail Migrator](https://omm.ovh.net/){.external} tool to help you with this. 
+Enter the information requested to create your email address. Repeat this step for each additional email address you wish to create. If you are in the process of migrating your emails to OVHcloud, we would recommend that you use the [OVHcloud Mail Migrator](https://omm.ovh.net/){.external} tool to help you with this. 
 
 If you need more information on creating an email address, please refer to our documentation: [How to set up an email address](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}.
 

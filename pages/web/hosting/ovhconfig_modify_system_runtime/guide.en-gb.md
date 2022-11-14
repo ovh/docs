@@ -12,7 +12,7 @@ order: 02
 
 You can use a range of different configurations on an OVHcloud Web Hosting plan. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}, provided that it is compatible with [our infrastructures’ configurations](https://webhosting-infos.hosting.ovh.net){.external}.
 
-**Find out how to modify the configuration of an OVHcloud Web Hosting plan from the OVH Control Panel.**
+**Find out how to modify the configuration of an OVHcloud Web Hosting plan from the OVHcloud Control Panel.**
 
 ## Requirements
 
@@ -93,7 +93,7 @@ By changing the runtime environment, you can edit certain technical values for y
 Once you have chosen your runtime environment, you can change it in two different ways:
 
 - **Via the OVHcloud Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan configuration via the OVHcloud Control Panel](../modify_your_web_hosting_systems_runtime_environment/#modify-your-web-hosting-plans-configuration-via-the-control-panel){.external} section of this guide.
-- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVH Web Hosting plan](../configuring-file-ovhconfig/){.external}.
+- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVHcloud Web Hosting plan](../configuring-file-ovhconfig/){.external}.
 
 #### PHP version
 

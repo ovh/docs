@@ -106,7 +106,7 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 >
 > |Field|Where to find this information|Action to take|
 > |---|---|---|
-> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.mydomain.ovh) in the DNS zone authoritative for the domain name to be added.<br></br It is important to note that if you want to add `blog.mydomain.ovh` you have to create the record for the subdomain `ovhcontrol.mydomain.ovh` and not `ovhcontrol.blog.mydomain.ovh` <br></br>To find the right zone, find the [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/#understanding-dns) your domain is linked to. You will need to validate only the primary domain, not all subdomains.|
+> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.mydomain.ovh) in the DNS zone authoritative for the domain name to be added.<br></br> It is important to note that if you want to add `blog.mydomain.ovh` you have to create the record for the subdomain `ovhcontrol.mydomain.ovh` and not `ovhcontrol.blog.mydomain.ovh` <br></br>To find the right zone, find the [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/#understanding-dns) your domain is linked to. You will need to validate only the primary domain, not all subdomains.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >

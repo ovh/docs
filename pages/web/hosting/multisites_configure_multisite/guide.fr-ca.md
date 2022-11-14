@@ -74,6 +74,11 @@ Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon
 |Activer le firewall|Permet d'activer un pare-feu (analyse des requêtes) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page ModSecurity](https://www.ovhcloud.com/fr/web-hosting/options/){.external}.|
 |Logs séparés|Permet d'activer un nouvel espace de logs sur le domaine sélectionné. Vous devrez choisir un nom de domaine dans une liste qui déterminera le nom d'accès à ce nouvel espace. Apprenez-en plus grâce à [notre page sur les statistiques détaillées](https://www.ovhcloud.com/fr/web-hosting/uc-website-traffic-analysis/){.external}.|
 
+> [!warning]
+>
+> Vous ne pourrez pas activer les logs séparés pour un nom de domaine externe. Cette option est uniquement disponible pour les domaines enregistrés chez OVHcloud.
+>
+
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}. Vérifiez ensuite le récapitulatif qui s'affiche.
 
 ![multisite](images/add-multisite-step3.png){.thumbnail}
@@ -147,7 +152,7 @@ A contrario, si vous souhaitez installer manuellement votre site, munissez-vous 
 >
 > Si vous souhaitez ajouter plusieurs sites web, vous devrez répéter cette étape.
 >
-> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} indique le nombre de sites Internet que vous pouvez accueillir sur votre espace.
+> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} indique le nombre de sites Internet recommandés que vous pouvez accueillir sur votre espace.
 >
 
 ## Aller plus loin

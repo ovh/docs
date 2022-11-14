@@ -84,7 +84,7 @@ Die Anleitung "[Verwendung von FileZilla](../webhosting_hilfe_zur_verwendung_von
 
 Aus Sicherheitsgründen verschleiert Ihre Website alle technischen Details über einen Fehler 500.
 
-Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](../webhosting_ssh_auf_ihren_webhostings/) (nur verfügbar mit einem [Business- oder Entwickler-Angebot](https://www.ovhcloud.com/de/web-hosting/)).
+Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](../webhosting_ssh_auf_ihren_webhostings/) (nur verfügbar mit einem [Pro Hosting-, Performance Hosting- oder Cloud Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/)).
 
 ### Ihre Website auf einen vorherigen Zustand zurücksetzen <a name="restore"></a>
 

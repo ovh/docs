@@ -78,6 +78,11 @@ Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [
 |Firewall aktivieren|Hier können Sie für die ausgewählte Domain eine Firewall (Anfragenanalyse) aktivieren. Weitere Informationen finden Sie auf unserer Seite zu [ModSecurity](https://www.ovhcloud.com/de/web-hosting/options/){.external}.|
 |Getrennte Logs|Sie können hier für die ausgewählte Domain einen neuen Bereich für separate Logs aktivieren. Wählen Sie aus einer Liste eine Domain aus, die als Zugangsname für den neuen Bereich verwendet wird. Weitere Informationen finden Sie auf [unserer Seite zu detaillierten Statistiken](https://www.ovhcloud.com/de/web-hosting/uc-website-traffic-analysis/){.external}.|
 
+> [!warning]
+>
+> Sie können die separaten Logs nicht für eine externe Domain aktivieren. Diese Option ist nur für bei OVHcloud registrierte Domains verfügbar.
+>
+
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Überprüfen Sie die angezeigte Zusammenfassung.
 
 ![Multisite](images/add-multisite-step3.png){.thumbnail}
@@ -105,7 +110,7 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 >
 > |Feld|Wo finde ich die Information?|Durchzuführende Maßnahme|
 > |---|---|---|
-> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain ovhcontrol (z. B. ovhcontrol.mydomain.ovh) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Um zu dieser zu gelangen, finden Sie die [DNS Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-konzept-verstehen), mit denen Ihre Domain verbunden ist. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
+> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain ovhcontrol (z. B. ovhcontrol.mydomain.ovh) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Bitte beachten Sie, dass Sie, wenn Sie `blog.mydomain.ovh` hinzufügen möchten, den Eintrag für die Subdomain `ovhcontrol.mydomain.ovh` und nicht `ovhcontrol.blog.mydomain.ovh` erstellen müssen.<br></br> Um zu dieser zu gelangen, finden Sie die [DNS Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-konzept-verstehen), mit denen Ihre Domain verbunden ist. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
 >
 > ![Multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -151,7 +156,7 @@ Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehö
 >
 > Wenn Sie mehrere Websites hinzufügen möchten, müssen Sie diese Schritte wiederholen.
 >
-> Achten Sie darauf, wie viele Websites Sie auf einem Webhosting betreiben. Je mehr Websites Sie einrichten, umso mehr Ressourcen Ihres Hostings werden beansprucht. Die [Webhosting-Vergleichsseite](https://www.ovhcloud.com/de/web-hosting/){.external} gibt an, wie viele Websites Sie auf Ihrem Speicherplatz hosten können.
+> Achten Sie darauf, wie viele Websites Sie auf einem Webhosting betreiben. Je mehr Websites Sie einrichten, umso mehr Ressourcen Ihres Hostings werden beansprucht. Die [Webhosting-Vergleichsseite](https://www.ovhcloud.com/de/web-hosting/){.external} gibt an, wie viele empfohlene Websites Sie auf Ihrem Speicherplatz hosten können.
 >
 
 ## Weiterführende Informationen

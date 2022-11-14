@@ -65,6 +65,9 @@ To retrieve a backup of your database, please read our guide on
 If you are using a **CloudDB** for your website, you can go to the ‘Databases’ tab, click on the cogwheel next to the database, and click ‘Back up now’ in the drop-down menu.
 You can also download, import and restore backups in this section.
 
+If you are using a **CloudDB** database for your website, you can go to the ‘Databases’ tab, click the `...`{.action} button to the right of the database, and click ‘Back up now’ in the drop-down menu.
+You can also download, import and restore backups in this section. Please read our guide [Backing up and exporting a database of your database server](https://docs.ovh.com/ie/en/hosting/backup-export-database-server/)
+
 ### Step 3: Retrieve the logs for your OVHcloud web hosting plan.
 
 If you would like to download your website’s logs, you can do so via your web hosting plan.

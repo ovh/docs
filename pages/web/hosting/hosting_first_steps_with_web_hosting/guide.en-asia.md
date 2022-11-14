@@ -6,7 +6,7 @@ section: Getting started
 order: 02
 ---
 
-**Last updated 5th May 2020**
+**Last updated 11th November 2022**
 
 ## Objective
 
@@ -47,11 +47,11 @@ Once you have clearly defined your project, you just have to build it on your We
 
 This solution uses OVHcloud 1-click modules, a tool you can use to install a CMS quickly and easily. OVHcloud sets up your website, and provides you with your admin credentials.
 
-To ensure that the OVHcloud module's installation is successful, please ensure that its installation directory is empty (which should be the case if you have not connected to your storage space). To install a 1-click module, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `1-click modules`{.action} tab, click the `Add a module`{.action} button.
+To ensure that the OVHcloud module's installation is successful, please ensure that its installation directory is empty (which should be the case if you have not connected to your storage space). To install a 1-click module, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `1-click modules`{.action} tab, click the `Add a module`{.action} button.
 
 ![Access to 1-click modules](images/access_to_the_1_click_modules_section.png){/thumbnail}
 
-Finally, to begin installing the 1-click module, select the CMS you want to install, check that the `Install in advanced mode`{.action} box is not ticked, and click the `Install`{.action} button.
+Finally, to begin installing the 1-click module, select the CMS you want to install, select the domain you would like to set up your website on, check that the `Install in advanced mode`{.action} box is not ticked, and click the `Install`{.action} button.
 
 At this stage, you will need to wait a few minutes to receive an email confirming that the module has been installed. This email will also contain the details required to log in to your website as an admin. You can then follow the remaining steps below.
 
@@ -66,7 +66,7 @@ To ensure that the OVHcloud module installation is successful, please check that
 - the module’s installation directory is empty (which should be the case if you have not connected to your storage space)
 - you have already created a database in your Web Hosting plan (go to the `Databases`{.action} tab, then `Create a database`{.action} to do this)
 
-To create a database, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
+To create a database, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
 
 ![Access to 1-click modules](images/create_a_database.png){/thumbnail}
 
@@ -86,7 +86,7 @@ As every website is unique, there is no universal straightforward method for get
 
 ### Step 3: Create your email addresses
 
-This stage is optional if you don’t want to use the email addresses included in your [Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external}. To create one or more email addresses, please ensure that you are logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Emails`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `Emails`{.action} section, click `Create an email address`{.action}.
+This stage is optional if you don’t want to use the email addresses included in your [Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external}. To create one or more email addresses, please ensure that you are logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Emails`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Emails`{.action} section, click `Create an email address`{.action}.
 
 ![Create an email address](images/create_an_email_address.png){/thumbnail}
 
@@ -108,13 +108,13 @@ There are several OVHcloud DNS records. We will focus on two particular records 
 
 - **The A record, for the website**
 
-To check the A record that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `General information`{.action} tab, copy the IP address that appears next to "IPv4".
+To check the A record that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the IP address that appears next to "IPv4".
 
 ![Edit the A record](images/know_the_OVH_A_records.png){/thumbnail}
 
 - **The MX records, for emails**
 
-To check the MX records that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Emails`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `General information`{.action} tab, copy the information that appears next to “MX records”. The MX records can differ from one service to another, depending on the DNS filter that you have decided to apply.
+To check the MX records that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Emails`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the information that appears next to “MX records”. The MX records can differ from one service to another, depending on the DNS filter that you have decided to apply.
 
 ![Edit the MX records](images/know_the_OVH_MX_records.png){/thumbnail}
 
@@ -149,7 +149,7 @@ If you need help with your website’s features, we recommend referring to the C
 
 ### Step 6: Use your email addresses
 
-Now, you just need to start using your email addresses. To do this, OVHcloud offers an online webmail application: RoundCube. RoundCube is available at the following address: <https://mail.ovh.net/>. You will need to enter the credentials for the email addresses that you have created with OVHcloud.
+Now, you just need to start using your email addresses. To do this, OVHcloud offers an online webmail application. The webmail is available at the following address: <https://www.ovhcloud.com/asia/mail/>. You will need to enter the credentials for the email addresses that you have created with OVHcloud.
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our email guides: <https://docs.ovh.com/asia/en/emails/>.
 

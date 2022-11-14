@@ -10,14 +10,14 @@ order: 03
 
 ## Obiettivo
 
-I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale… gli [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](http://pro.ovh.net/infos/){.external}.
+I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale… gli [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](http://pro.ovh.net/infos/){.external}.
 
-**Questa guida ti mostra come modificare la configurazione del tuo servizio di hosting dallo Spazio Cliente OVH.**
+**Questa guida ti mostra come modificare la configurazione del tuo servizio di hosting dallo Spazio Cliente OVHcloud.**
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} (escluso il servizio Cloud Web)
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} (escluso il servizio Cloud Web)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -34,7 +34,7 @@ Quando modifichi la configurazione del tuo hosting, cambi anche i parametri di b
 
 #### Step 1: accedi alla gestione della configurazione dell’hosting
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio dalla sezione `Hosting`{.action}, assicurati di essere posizionato nella scheda `Informazioni generali`{.action} e, nel riquadro “Configurazione”, clicca sui tre puntini in corrispondenza della versione PHP e seleziona `Modifica la configurazione`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio dalla sezione `Hosting`{.action}, assicurati di essere posizionato nella scheda `Informazioni generali`{.action} e, nel riquadro “Configurazione”, clicca sui tre puntini in corrispondenza della versione PHP e seleziona `Modifica la configurazione`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
@@ -76,8 +76,8 @@ Scegliere un ambiente di esecuzione differente consente di cambiare alcune speci
 |Ambienti|Legacy|Stabile|Stable64|
 |---|---|---|---|
 |architettura|32 bit|32 bit|64 bits|
-|Versione PHP minima|5.6|7.3|7.4|
-|Openssl|1.0.1t|1.0.1t|1.1.1d|
+|Versione PHP minima|5.4|5.4|7.4|
+|Openssl|1.0.1t|1.0.1t|1.1.1n|
 |Python|2.7 e 3.4|2.7 e 3.7|2.7 e 3.7|
 |Ruby|2.1|2.1|2.5|
 |Rails|4.1|4.1|5.2|
@@ -96,7 +96,7 @@ Una volta scelto il nuovo ambiente, è possibile eseguire le modifiche in due mo
 
 #### Versione di PHP
 
-PHP è un linguaggio di programmazione in continua evoluzione disponibile attualmente in numerose versioni. Le più recenti contengono le patch per i bug esistenti e aggiungono o rimuovono determinate funzionalità. OVH propone le nuove versioni rilasciate, disponibili alla pagina: <https://www.ovhcloud.com/it/web-hosting/uc-programming-language/> 
+PHP è un linguaggio di programmazione in continua evoluzione disponibile attualmente in numerose versioni. Le più recenti contengono le patch per i bug esistenti e aggiungono o rimuovono determinate funzionalità. OVHcloud propone le nuove versioni rilasciate, disponibili alla pagina: <https://www.ovhcloud.com/it/web-hosting/uc-programming-language/> 
 
 Dal momento che le ultime versioni potrebbero non includere alcune funzionalità, **prima di apportare qualsiasi modifica assicurati che la nuova versione di PHP sia compatibile con il tuo sito Internet**. 
 
