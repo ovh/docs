@@ -6,7 +6,7 @@ section: Premiers pas
 order: 02
 ---
 
-**Dernière mise à jour le 02/11/2022**
+**Dernière mise à jour le 14/11/2022**
 
 ## Objectif
 
@@ -58,11 +58,12 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> Si vous avez besoin d'assistance pour créer une nouvelle instance, consultez d'abord notre guide pour [créer une instance depuis l'espace client OVHcloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#create-instance). 
 >>
->> À l'étape 5 de la création d'une instance, vous est proposé le choix du « mode public » ou « mode privé » pour la mise en réseau de votre instance. 
 >>
 >> > [!warning]
->> > Pour l'instant, toutes les régions ne sont pas compatibles avec cette fonctionnalité. Veillez à créer une instance dans une région valide. Pour plus d'informations, veuillez vous référer à notre section : [disponibilité régions](https://www.ovhcloud.com/fr/public-cloud/regions-availability/).
+>> > A ce jour, toutes les régions ne sont pas compatibles avec cette fonctionnalité. Veillez à créer une instance dans une région qui le permet. Pour plus d'informations, veuillez vous référer à notre page sur la [disponibilité des produits Public Cloud pour chaque région](https://www.ovhcloud.com/fr/public-cloud/regions-availability/).
 >> >
+>>
+>> À l'étape 5 de la création d'une instance, vous est proposé le choix du « mode public » ou « mode privé » pour la mise en réseau de votre instance. 
 >>
 >> Par défaut, le mode public est sélectionné. Cependant, comme nous créons une instance à laquelle nous allons attacher une Floating IP, nous devons créer une instance avec un réseau privé **UNIQUEMENT**.
 >>

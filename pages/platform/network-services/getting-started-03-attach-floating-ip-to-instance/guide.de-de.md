@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/de/publiccloud/network-services/attaching-pci-floating-ip-to-instance/'
 ---
 
-**Last updated 2nd November 2022**
+**Last updated 14th November 2022**
 
 ## Objective
 

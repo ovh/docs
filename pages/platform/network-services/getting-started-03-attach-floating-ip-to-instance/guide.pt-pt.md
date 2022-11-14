@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/attaching-pci-floating-ip-to-instance/'
 ---
 
-**Last updated 2nd November 2022**
+**Last updated 14th November 2022**
 
 ## Objective
 
@@ -59,6 +59,11 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >> Before creating your instance, make sure you have created a [private network with Gateway](https://docs.ovh.com/pt/publiccloud/network-services/creating-private-network-with-gateway/).
 >>
 >> To create a new instance, follow [this guide](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#create-instance) if necessary. 
+>>
+>>
+>> > [!warning]
+>> > As of today, all regions do not support this feature. Make sure to create an instance in a valid region. For more information, please refer to our [regions availability](https://www.ovhcloud.com/pt/public-cloud/regions-availability/) page. 
+>> > 
 >>
 >> In Step 5, you have the option to choose a mode for your instance: Public mode or Private mode to be used for your instance networking. 
 >>
