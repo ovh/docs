@@ -2,7 +2,7 @@
 title: AI Training - Getting started
 slug: training/submit-job
 excerpt: Learn how to submit an AI Training job via UI
-section: AI Training guides
+section: AI Training - Guides
 order: 02
 ---
 

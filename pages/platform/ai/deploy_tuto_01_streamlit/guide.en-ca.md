@@ -2,7 +2,7 @@
 title: AI Deploy - Tutorial - Build & use a Streamlit image
 slug: deploy/build-use-streamlit-image
 excerpt: How to build and use a custom Docker image containing a Streamlit application
-section: AI Deploy tutorials
+section: AI Deploy - Tutorials
 order: 01
 ---
 

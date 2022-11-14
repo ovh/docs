@@ -2,7 +2,7 @@
 title: AI Training - Job concept
 slug: training/jobs
 excerpt: Learn the concept behind AI Training jobs
-section: AI Training guides
+section: AI Training - Guides
 order: 03
 ---
 

@@ -2,7 +2,7 @@
 title: AI Deploy - Getting started
 slug: deploy/getting-started
 excerpt: Discover AI Deploy and unfold your first application
-section: AI Deploy guides
+section: AI Deploy - Guides
 order: 02
 ---
 

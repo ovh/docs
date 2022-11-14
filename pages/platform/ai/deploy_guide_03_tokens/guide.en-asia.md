@@ -2,7 +2,7 @@
 title: AI Deploy - Accessing your app with tokens
 slug: deploy/tokens
 excerpt: Discover how to create a scoped token and query your AI Deploy app
-section: AI Deploy guides
+section: AI Deploy - Guides
 order: 03
 ---
 
