@@ -12,24 +12,24 @@ order: 03
 
 W sieci istnieje bardzo wiele rodzajów stron WWW. 
 
-Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prezentującą Twoją działalność) na **hostingu OVH**, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVH](https://webhosting-infos.hosting.ovh.net){.external}.
+Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prezentującą Twoją działalność) na **hostingu OVH**, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVHcloud](https://webhosting-infos.hosting.ovh.net){.external}.
 
-**Dowiedz się, jak zmienić konfigurację hostingu OVH w Panelu klienta.**
+**Dowiedz się, jak zmienić konfigurację hostingu OVHcloud w Panelu klienta.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external} (z wyjątkiem Cloud Web)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} (z wyjątkiem Cloud Web)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
 **Zmiana konfiguracji hostingu jest operacją wymagającą odpowiedniej wiedzy**: omyłkowe działanie mogłoby spowodować niedostępność Twojej strony WWW. Świadomość możliwych konsekwencji modyfikacji pozwoli Ci lepiej zrozumieć wprowadzane zmiany.
 
-Zmieniając konfigurację hostingu, zmieniasz jednocześnie konfigurację Twojej strony WWW. Jeśli korzystasz z kilku hostingów w ramach infrastruktury OVH, upewnij się, że wybrana konfiguracja jest kompatybilna z Twoją stroną WWW.
+Zmieniając konfigurację hostingu, zmieniasz jednocześnie konfigurację Twojej strony WWW. Jeśli korzystasz z kilku hostingów w ramach infrastruktury OVHcloud, upewnij się, że wybrana konfiguracja jest kompatybilna z Twoją stroną WWW.
 
 > [!warning]
 >
-> Przed rozpoczęciem jakichkolwiek zmian, upewnij się, że operacja nie uniemożliwi dostępu do Twojej strony WWW. Jednak w przypadku trudności zalecamy skorzystanie z pomocy specjalisty. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”. 
+> Przed rozpoczęciem jakichkolwiek zmian, upewnij się, że operacja nie uniemożliwi dostępu do Twojej strony WWW. Jednak w przypadku trudności zalecamy skorzystanie z pomocy specjalisty. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”. 
 > 
 
 ### Zmiana konfiguracji hostingu w Panelu klienta
@@ -78,8 +78,8 @@ Zmiana frameworka umożliwia modyfikację niektórych parametrów technicznych T
 |Środowiska|Legacy|Stabilny|Stable64|
 |---|---|---|---|
 |architektura|32 bit|32 bit|64 bit|
-|Minimalna wersja PHP|5.6|7.3|7.4|
-|Openssl|1.0.1t|1.0.1t|1.1.1d|
+|Minimalna wersja PHP|5.4|5.4|7.4|
+|Openssl|1.0.1t|1.0.1t|1.1.1n|
 |Python|2.7 i 3.4|2.7 i 3.7|2.7 i 3.7|
 |Ruby|2.1|2.1|2.5|
 |Rails|4.1|4.1|5.2|
@@ -98,7 +98,7 @@ Po dokonaniu wyboru masz dwie możliwości przeprowadzenia zmiany:
 
 #### Wersja PHP
 
-Aktualnie istnieje kilka wersji języka programowania PHP. Kolejne wersje zawierają różne poprawki, ponadto dodawane są nowe lub znikają stare funkcjonalności. OVH udostępnia najnowsze główne wersje PHP, których listę znajdziesz pod linkiem:<https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/>. 
+Aktualnie istnieje kilka wersji języka programowania PHP. Kolejne wersje zawierają różne poprawki, ponadto dodawane są nowe lub znikają stare funkcjonalności. OVHcloud udostępnia najnowsze główne wersje PHP, których listę znajdziesz pod linkiem:<https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/>. 
 
 W związku z faktem, że niektóre funkcjonalności mogą zniknąć w kolejnych wersjach, **przed wprowadzeniem jakichkolwiek zmian upewnij się, że nowa, wybrana wersja PHP jest kompatybilna ze stroną WWW.**
 
@@ -107,11 +107,11 @@ Istnieje kilka sposobów modyfikacji wersji PHP na Twoim hostingu:
 - **w Panelu klienta**: postępuj zgodnie z instrukcjami zawartymi w sekcji niniejszego przewodnika zatytułowanej [Modyfikacja konfiguracji hostingu w Panelu klienta](./#zmiana-konfiguracji-hostingu-w-panelu-klienta){.external};
 - **modyfikując ręcznie plik na przestrzeni FTP**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP.
 
-Jeśli chcesz uzyskać więcej informacji o zmianie wersji PHP, skorzystaj z instrukcji zawartych w naszym przewodniku [Zmiana wersji PHP na hostingu OVH](../konfiguracja_php_na_hostingu_www_ovh_2014/){.external}.
+Jeśli chcesz uzyskać więcej informacji o zmianie wersji PHP, skorzystaj z instrukcji zawartych w naszym przewodniku [Zmiana wersji PHP na hostingu OVHcloud](../konfiguracja_php_na_hostingu_www_ovh_2014/){.external}.
 
 #### Silnik PHP
 
-Wybór silnika PHP pozwala aktywować lub dezaktywować akcelerator PHP (PHP-FPM). Akcelerator został dostosowany do infrastruktury OVH w celu zwiększenia prędkości wykonywania skryptów PHP. W porównaniu do silnika phpcgi akcelerator PHP (PHP-FPM) pozwala zwiększyć wydajność do siedmiu razy. 
+Wybór silnika PHP pozwala aktywować lub dezaktywować akcelerator PHP (PHP-FPM). Akcelerator został dostosowany do infrastruktury OVHcloud w celu zwiększenia prędkości wykonywania skryptów PHP. W porównaniu do silnika phpcgi akcelerator PHP (PHP-FPM) pozwala zwiększyć wydajność do siedmiu razy. 
 
 Istnieją dwa sposoby zmiany silnika PHP wykorzystywanego przez Twój hosting:
 

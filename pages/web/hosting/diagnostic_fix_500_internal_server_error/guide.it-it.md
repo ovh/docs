@@ -75,15 +75,15 @@ Per accedere a questi file, accedi in FTP al tuo hosting seguendo la nostra [doc
 
 In seguito, nella guida "[Utilizzare FileZilla con il tuo hosting](../hosting_condiviso_guida_allutilizzo_di_filezilla/#diritti-su-file-e-cartelle)", verifica i seguenti elementi :
 
-- La **radice** del tuo hosting (si tratta della directory registrata `/` o `.` nel tuo software FTP) deve essere obbligatorio con diritti 705 (permessi di default). Ti consigliamo di non modificare questo livello di diritti.
-- I fascicoli devono essere di diritto 705.
-- I file devono essere in diritto 604.
+- La **radice** del tuo hosting (si tratta della directory registrata `/` o `.` nel tuo software FTP) deve essere obbligatoria con diritti 705 (permessi di default). Ti consigliamo di non modificare questo livello di diritti.
+- Le cartelle devono avere i diritti 705.
+- I file devono avere i diritti 604.
 
 ### Accedi ai dettagli degli errori sui tuoi script
 
 Per ragioni di sicurezza, il tuo sito nasconde gli eventuali dettagli sull'origine dell'errore 500 a chiunque vi si connetta tramite un browser web.
 
-Se vuoi avere accesso a questi dettagli, dal piano di hosting [pro2014](https://www.ovhcloud.com/it/web-hosting/professional-offer/) puoi connetterti al tuo sito tramite una [connessione ssh](../hosting_condiviso_il_protocollo_ssh/).
+Se vuoi avere accesso a questi dettagli, dal piano di hosting [pro2014](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o superiore puoi connetterti al tuo sito tramite una [connessione ssh](../hosting_condiviso_il_protocollo_ssh/).
 
 ### Ripristina il tuo sito allo stato precedente <a name="restore"></a>
 

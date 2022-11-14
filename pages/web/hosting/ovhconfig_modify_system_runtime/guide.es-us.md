@@ -76,8 +76,8 @@ Cambiar el entorno de ejecución permite modificar determinados valores técnico
 |Entornos|legacy|Estable|Stable64|
 |---|---|---|---|
 |arquitectura|32 bits|32 bits|64 bits|
-|Versión de PHP mínima|5.6|7.3|7.4|
-|OpenSSL|1.0.1t|1.0.1t|1.1.1d|
+|Versión de PHP mínima|5.4|5.4|7.4|
+|OpenSSL|1.0.1t|1.0.1t|1.1.1n|
 |Python|2.7 y 3.4|2.7 y 3.7|2.7 y 3.7|
 |Ruby|2.1|2.1|2.5|
 |Rails|4.1|4.1|5.2|

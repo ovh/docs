@@ -78,6 +78,11 @@ Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego 
 |Włącz firewall|Umożliwia aktywację zapory (analiza zapytań) dla danej domeny. Dowiedz się więcej na [naszej stronie ModSecurity](https://www.ovhcloud.com/pl/web-hosting/options/){.external}.|
 |Rozdzielone logi|Umożliwia wydzielenie logów dotyczących wybranej domeny.  Wybierz z listy nazwę domeny, która będzie stanowiła dostęp do wydzielonych logów. Dowiedz się więcej na [naszej stronie szczegółowych](https://www.ovhcloud.com/pl/web-hosting/uc-website-traffic-analysis/){.external} statystyk.|
 
+> [!warning]
+>
+> Nie będziesz mógł włączyć oddzielnych logów dla domeny zewnętrznej. Ta opcja jest dostępna tylko dla domen zarejestrowanych w OVHcloud.
+>
+
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
 
 ![MultiSite](images/add-multisite-step3.png){.thumbnail}
@@ -105,7 +110,7 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 >
 > |Pole|Gdzie znaleźć informację?|Działania|
 > |---|---|---|
-> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.mydomain.ovh) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zrozumienie-pojecia-dns), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
+> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.mydomain.ovh) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.mydomain.ovh`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.mydomain.ovh` i nie `ovhcontrol.blog.mydomain.ovh`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zrozumienie-pojecia-dns), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
 >
 > ![MultiSite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -151,7 +156,7 @@ Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a nast
 >
 > Jeśli chcesz dodać kilka stron WWW, powtórz ten etap.
 >
-> Zalecamy nie instalować na jednym hostingu zbyt wielu stron. Im większa liczba zainstalowanych stron, tym większe zużycie przypisanych do danego hostingu zasobów. [Na stronie z ofertą hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external} znajdziesz liczbę stron WWW, które możesz zainstalować na Twojej przestrzeni dyskowej.
+> Zalecamy nie instalować na jednym hostingu zbyt wielu stron. Im większa liczba zainstalowanych stron, tym większe zużycie przypisanych do danego hostingu zasobów. [Na stronie z ofertą hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external} znajdziesz liczbę zalecanych stron WWW, które możesz zainstalować na Twojej przestrzeni dyskowej.
 >
 
 ## Sprawdź również

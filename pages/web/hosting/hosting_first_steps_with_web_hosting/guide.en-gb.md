@@ -6,7 +6,7 @@ section: Getting started
 order: 02
 ---
 
-**Last updated 2nd March 2018**
+**Last updated 11th November 2022**
 
 ## Objective
 
@@ -37,7 +37,7 @@ In the Control Panel, OVHcloud provides a tool that allows you to install a CMS 
 
 - **Migrating an existing website to OVHcloud**
 
-Website migration can sometimes be quite tricky, particularly if you are migrating a website that is currently online and cannot experience service interruptions. As a result, this guide only includes a few of the steps you will need to take to migrate your services. Please refer to our guide: [Migrating your website and emails to OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}.
+Website migration can sometimes be quite tricky, particularly if you are migrating a website that is currently online and cannot experience service interruptions. As a result, this guide only includes a few of the steps you will need to take to migrate your services. Please refer to our guide: [Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}.
 
 ### Step 2: Set up your website
 
@@ -47,11 +47,11 @@ Once you have clearly defined your project, you just have to build it on your We
 
 This solution uses OVHcloud 1-click modules, a tool you can use to install a CMS quickly and easily. OVHcloud sets up your website, and provides you with your admin credentials.
 
-To ensure that the OVHcloud module's installation is successful, please ensure that its installation directory is empty (which should be the case if you have not connected to your storage space). To install a 1-click module, please log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `1-click modules`{.action} tab, click the `Add a module`{.action} button.
+To ensure that the OVHcloud module's installation is successful, please ensure that its installation directory is empty (which should be the case if you have not connected to your storage space). To install a 1-click module, please log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `1-click modules`{.action} tab, click the `Add a module`{.action} button.
 
 ![Access to 1-click modules](images/access_to_the_1_click_modules_section.png){/thumbnail}
 
-Finally, to begin installing the 1-click module, select the CMS you want to install, check that the `Install in advanced mode`{.action} box is not ticked, and click the `Install`{.action} button.
+Finally, to begin installing the 1-click module, select the CMS you want to install, select the domain you would like to set up your website on, check that the `Install in advanced mode`{.action} box is not ticked, and click the `Install`{.action} button.
 
 At this stage, you will need to wait a few minutes to receive an email confirming that the module has been installed. This email will also contain the details required to log in to your website as an admin. You can then follow the remaining steps below.
 
@@ -59,14 +59,14 @@ If you need more information on OVHcloud 1-click modules, please read our docume
 
 #### A quick solution in just a few clicks – no technical knowledge required
 
-This solution uses OVHcloud modules, a tool you can use to install a CMS easily. OVH sets up your website using the custom information you have entered (the custom credentials for logging in to your CMS, for example). To use this method, you will need to have a least one database in your solution.
+This solution uses OVHcloud modules, a tool you can use to install a CMS easily. OVHcloud sets up your website using the custom information you have entered (the custom credentials for logging in to your CMS, for example). To use this method, you will need to have a least one database in your solution.
 
 To ensure that the OVHcloud module installation is successful, please check that:
 
 - the module’s installation directory is empty (which should be the case if you have not connected to your storage space)
 - you have already created a database in your Web Hosting plan (go to the `Databases`{.action} tab, then `Create a database`{.action} to do this)
 
-To create a database, please log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
+To create a database, please log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
 
 ![Access to 1-click modules](images/create_a_database.png){/thumbnail}
 
@@ -86,11 +86,11 @@ As every website is unique, there is no universal straightforward method for get
 
 ### Step 3: Create your email addresses
 
-This stage is optional if you don’t want to use the email addresses included in your [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}. To create one or more email addresses, please ensure that you are logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Emails`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `Emails`{.action} section, click `Create an email address`{.action}.
+This stage is optional if you don’t want to use the email addresses included in your [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}. To create one or more email addresses, please ensure that you are logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Emails`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Emails`{.action} section, click `Create an email address`{.action}.
 
 ![Create an email address](images/create_an_email_address.png){/thumbnail}
 
-Enter the information requested to create your email address. Repeat this step for each additional email address you wish to create. If you are in the process of migrating your emails to OVHcloud, we would recommend that you use the [OVH Mail Migrator](https://omm.ovh.net/){.external} tool to help you with this. 
+Enter the information requested to create your email address. Repeat this step for each additional email address you wish to create. If you are in the process of migrating your emails to OVHcloud, we would recommend that you use the [OVHcloud Mail Migrator](https://omm.ovh.net/){.external} tool to help you with this. 
 
 If you need more information on creating an email address, please refer to our documentation: [How to set up an email address](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}.
 
@@ -108,13 +108,13 @@ There are several OVHcloud DNS records. We will focus on two particular records 
 
 - **The A record, for the website**
 
-To check the A record that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `General information`{.action} tab, copy the IP address that appears next to "IPv4".
+To check the A record that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the IP address that appears next to "IPv4".
 
 ![Edit the A record](images/know_the_OVH_A_records.png){/thumbnail}
 
 - **The MX records, for emails**
 
-To check the MX records that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Emails`{.action} section, then click on the Web Hosting plan that you have just ordered. In the `General information`{.action} tab, copy the information that appears next to “MX records”. The MX records can differ from one service to another, depending on the DNS filter that you have decided to apply.
+To check the MX records that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Emails`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the information that appears next to “MX records”. The MX records can differ from one service to another, depending on the DNS filter that you have decided to apply.
 
 ![Edit the MX records](images/know_the_OVH_MX_records.png){/thumbnail}
 
@@ -149,13 +149,13 @@ If you need help with your website’s features, we recommend referring to the C
 
 ### Step 6: Use your email addresses
 
-Now, you just need to start using your email addresses. To do this, OVHcloud offers an online webmail application: RoundCube. RoundCube is available at the following address: <https://mail.ovh.net/>. You will need to enter the credentials for the email addresses that you have created with OVHcloud.
+Now, you just need to start using your email addresses. To do this, OVHcloud offers an online webmail application. The webmail is available at the following address: <https://www.ovhcloud.com/en-gb/mail/>. You will need to enter the credentials for the email addresses that you have created with OVHcloud.
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our email guides: <https://docs.ovh.com/gb/en/emails/>.
 
 ## Go further
 
-[Migrating your website and emails to OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
 
 [How to get your website online](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
 

@@ -83,7 +83,7 @@ O guia "[Partilhado : Guia de utilização do FileZilla](../partilhado_guia_de_u
 
 Por razões de segurança, o seu website oculta eventuais detalhes sobre a origem do erro 500 a qualquer pessoa que se lhe ligue por um browser.
 
-Se pretender ter acesso a estes detalhes, poderá aceder ao seu site através de uma [ligação ssh](../partilhado_o_ssh_nos_alojamentos_partilhados/) a partir da fórmula de alojamento [pro2014](https://www.ovhcloud.com/pt/web-hosting/professional-offer/).
+Se pretender ter acesso a estes detalhes, poderá aceder ao seu site através de uma [ligação ssh](../partilhado_o_ssh_nos_alojamentos_partilhados/) a partir da fórmula de alojamento [pro2014](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou superior.
 
 ### Restaurar o seu site para o estado anterior <a name="restore"></a>
 
