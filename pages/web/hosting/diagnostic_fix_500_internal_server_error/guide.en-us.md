@@ -79,7 +79,7 @@ The [FileZilla guide](../web_hosting_filezilla_user_guide/#file-and-folder-permi
 
 For security reasons, your website hides all technical details about the error 500.
 
-To verify these details, you can use a [SSH connection](../web_hosting_ssh_on_web_hosting_packages/). (SSH is only available with the [Professional Hosting, Performance Hosting and Cloud Web Hosting](https://www.ovhcloud.com/en/web-hosting/).)
+To verify these details, you can use a [SSH connection](../web_hosting_ssh_on_web_hosting_packages/). (SSH is only available with the [Professional Hosting and Performance Hosting](https://www.ovhcloud.com/en/web-hosting/).)
 
 ### Restore your website to its previous state <a name="restore"></a>
 
