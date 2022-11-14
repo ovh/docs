@@ -10,13 +10,13 @@ order: 02
 
 ## Objectif
 
-Vous détenez une ou plusieurs des 3 solutions e-mail OVHcloud. Chaque compte e-mail dispose d'un espace de stockage dédié. Il est parfois nécessaire de bien gérer son espace de stockage pour éviter la saturation, aussi appelé « overquota ». Par défaut, les e-mails que vous recevez et envoyez sont stockés sur le serveur de votre compte e-mail. Il est également possible, via un logiciel de messagerie (Outlook, Mail de macOS, Thunderbird, etc.), de stocker vos e-mails en local sur votre ordinateur.
+Vous détenez une ou plusieurs des 3 solutions e-mail OVHcloud. Chaque compte e-mail dispose d'un espace de stockage dédié. Il est parfois nécessaire de bien gérer son espace de stockage pour éviter la saturation, aussi appelée « overquota ». Par défaut, les e-mails que vous recevez et envoyez sont stockés sur le serveur de votre compte e-mail. Il est également possible, via un logiciel de messagerie (Outlook, Mail de macOS, Thunderbird, etc.), de stocker vos e-mails en local sur votre ordinateur.
 
 **Découvrez comment gérer et optimiser l'espace de stockage d'une adresse e-mail.**
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud qui doit avoir été configurée au préalable (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telles que [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/))
+- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telles que [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/))
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
 - Disposer des informations de connexion aux adresses e-mails concernées.
 
@@ -29,17 +29,17 @@ Vous détenez une ou plusieurs des 3 solutions e-mail OVHcloud. Chaque compte e-
 
 ## En pratique <a name="instructions"></a>
 
-La gestion de l'espace de stockage de votre compte e-mail sera décomposé en 3 étapes dans ce guide. Elles peuvent être réalisées dans l'ordre ou indépendament selon votre besoin.
+La gestion de l'espace de stockage de votre compte e-mail sera décomposée en 3 étapes dans ce guide. Elles peuvent être réalisées dans l'ordre ou indépendament selon votre besoin.
 
 - [**Vérifier**](#check-quota) le quota actuel de vote compte e-mail. Cette étape vous permettra d'évaluer votre consommation actuelle, en vue des 2 étapes suivantes.
-- [**Optimiser**](#optimise) son compte e-mail. Vous trouverez dans cette étapes, des astuces qui vous permettront de maintenir un espace de stockage sans éléments superflux.
-- [**Archiver** ou **Changer d'offre e-mail**](#archiveorswitch). Si l'étape précédente ne suffit pas, vous trouverez les informations nécessaires pour configurer un espace d'archivage local (sur votre ordinateur) pour vos e-mails via votre logiciel de messagerie. Vous trouverez également les informations nécessaires pour changer l'offre e-mail de votre compte vers une offre offrant plus d'espace de stockage, si cela est possible.
+- [**Optimiser**](#optimise) votre compte e-mail. Vous trouverez dans cette étapes, des astuces qui vous permettront de maintenir un espace de stockage sans éléments superflux.
+- [**Archiver** ou **Changer d'offre e-mail**](#archiveorswitch). Si l'étape précédente ne suffit pas, vous trouverez les informations nécessaires pour configurer un espace d'archivage local (sur votre ordinateur) pour vos e-mails via votre logiciel de messagerie. Vous trouverez également les informations nécessaires pour changer l'offre e-mail de votre compte vers une offre disposant de plus d'espace de stockage, si cela est possible.
 
 ![email](images/email-quota-intro.gif){.thumbnail}
 
 ### 1- **Vérifier** le quota actuel de vote compte email <a name="check-quota"></a>
 
-Il existe plusieurs manières de vérifier la consommation de l'espace de stockage de votre compte e-mail. Depuis l'espace client si vous avez la gestion du service e-mail concerné, ou depuis le webmail si vous êtes uniquement l'utilisateur du compte e-mail.
+Vous pouvez réaliser cette action depuis l'espace client si vous avez la gestion du service e-mail concerné ou depuis le webmail si vous êtes uniquement l'utilisateur du compte e-mail.
 
 #### Depuis l'espace client <a name="quotacontrolpanel"></a>
 
@@ -64,7 +64,7 @@ Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 #### Depuis le Webmail <a name="quotawebmail"></a>
 
-Pour vous connecter au webmail, dirigez-vous vers la page <https://www.ovhcloud.com/fr/mail/> et saisissez les informations de connexion à votre compte e-mail, puis choisissez ci-dessous le webmail correspondant à votre offre:
+Pour vous connecter au webmail, dirigez-vous vers la page <https://www.ovhcloud.com/fr/mail/> et saisissez les informations de connexion à votre compte e-mail. Ensuite, choisissez ci-dessous le webmail correspondant à votre offre:
 
 > [!tabs]
 > **OWA** : **Emails (MXplan)** / **Email Pro** / **Exchange**
@@ -74,7 +74,7 @@ Pour vous connecter au webmail, dirigez-vous vers la page <https://www.ovhcloud.
 >>
 > **Roundcube** : **Emails (MXplan)**
 >>
->> Lorsque vous êtes connecté à Roundcube, le quota est visible dans la partie inférieure gauche, matérialisé par un camembert et le pourcentage consommé.<br><br>
+>> Lorsque vous êtes connecté au webmail Roundcube, le quota est visible dans la partie inférieure gauche, matérialisé par un camembert et le pourcentage consommé.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
 >>
 
@@ -85,12 +85,12 @@ Néanmoins, lorsque votre compte e-mail est saturé, il est toujours possible d'
 
 #### Optimiser l'espace aloué de votre compte e-mail
 
-Avant toute autre opération sur votre compte e-mail, il est nécessaire de bien prendre connaissance du contenu de votre compte e-mail afin de supprimer tous les éléments superflux. Nous vous invitons à vérifier certains en particulier:
+Avant toute autre opération sur votre compte e-mail, il est nécessaire de bien prendre connaissance du contenu de votre compte e-mail afin de supprimer tous les éléments superflux. Nous vous invitons à en vérifier certains en particulier:
 
-- `1`{.action} **La Corbeille (trash)**: Celle-ci contient les éléments que vous avez supprimés, pour éviter de cumulé des e-mails dans ce dossier, nous vous conseillons de vider régulièrement celle-ci.
-- `2`{.action} **La boite d'envoi (send messages)**: Lorsque vous envoyez un e-mail, celui-ci est transmis au destinataire, mais aussi conservé sur votre compte e-mail dans la « boite d'envoi ». Nous vous conseillons de purger celle-ci régulièrement ou d'archiver son contenu en local sur votre ordinateur ou sur un espace de stockage distant type "cloud".
-- `3`{.action} **Les e-mails stockés contenant des pièces jointes volumineuses**: Les e-mails contenant des pièces jointes consomment davantage d'espace sur votre compte e-mail. Nous vous conseillons de stocker les éléments volumineux sur un espace de stockage local (ordinateur) ou distant (cloud).
-- `4`{.action}**Trier ses dossiers**: Lorsque vous avez beaucoup de dossiers sur votre compte e-mail, il est moins aisé de prendre la mesure de l'espace occupé sur votre compte e-mail. C'est pourquoi, nous vous conseillonst de faire régulièrement l'inventaire de vos dossiers et de leur contenu.
+- `1`{.action} **La Corbeille (trash)**: Celle-ci contient les éléments que vous avez supprimés, pour éviter de cumuler des e-mails dans ce dossier, nous vous conseillons de la vider régulièrement.
+- `2`{.action} **La boite d'envoi (send messages)**: Lorsque vous envoyez un e-mail, celui-ci est transmis au destinataire. Cependant, il est aussi conservé sur votre compte e-mail dans la « boite d'envoi ». Nous vous conseillons de purger celle-ci régulièrement ou d'archiver son contenu en local sur votre ordinateur ou sur un espace de stockage distant type "cloud".
+- `3`{.action} **Les e-mails stockés contenant des pièces jointes volumineuses**: Les e-mails contenant des pièces jointes prennent davantage d'espace sur votre compte e-mail. Nous vous conseillons de stocker les éléments volumineux sur un espace de stockage local (ordinateur) ou distant (cloud).
+- `4`{.action}**Trier ses dossiers**: Lorsque vous avez beaucoup de dossiers sur votre compte e-mail, il est moins aisé de mesurer l'espace occupé sur votre compte e-mail. Faites régulièrement l'inventaire de vos dossiers et de leur contenu.
 
 ![email](images/email-quota-optimise01.png){.thumbnail}
 
@@ -101,9 +101,9 @@ Il est possible d'augmenter la capacité de stockage de votre compte e-mail, si 
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Un compte Mxplan peut faire entre 2,5Mo et 5Go. Si votre compte e-mail est saturé, que sa capacité est inférieure 5Go, vous pouvez modifier sa capacité via l'espace client.<br>
+>> Un compte Mxplan peut faire entre 2,5Mo et 5Go. S'il est saturé et que sa capacité est inférieure 5Go, vous pouvez modifier sa capacité via l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br>
 >> Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Modifier`{.action}.
->> Depuis la case `Quota`{.action}, sélectionner la taille qui vous convient, cliquez sur `suivant`{.action} puis `Valider`{.action}.<br><br>
+>> Depuis la case `Quota`{.action}, sélectionnez la taille qui vous convient, cliquez sur `suivant`{.action} puis `Valider`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
 >>
 > **Email Pro**
@@ -112,9 +112,11 @@ Il est possible d'augmenter la capacité de stockage de votre compte e-mail, si 
 >>
 > **Exchange**
 >>
->> Si votre compte Exchange arrive à saturation de ses 50Go, il est possible de souscrire à une option d'extension pour étendre sa capacité à 300Go.<br>
+>> Si votre compte Exchange arrive à saturation de ses 50Go, il est possible pour les offres **Hosted** et **Provider** de souscrire à une option d'extension pour étendre sa capacité à 300Go.<br>
 >> Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Augmenter la capacité à 300Go`{.action}. Choisissez le mode de facturation qui vous convient et cliquez sur `valider`{.action}.<br><br>
 >>![email](images/email-quota-more02.png){.thumbnail}<br>
+>>
+>> Si votre compte Exchange est déjà à 300Go sur une offre **Hosted** ou **Provider**, Vous devrez libérer de l'espace sur votre compte Exchange en supprimant des éléments superflux ou [archiver vos e-mails](#archiveorswitch) sur votre ordinateur en local. Cette situation est valable également pour les comptes Exchange de 50Go présents sur une offre **Private**.
 >>
 
 ### 3- **Archiver** ou **Changer d'offre e-mail** <a name="archiveorswitch"></a>
@@ -125,7 +127,7 @@ Il est possible d'augmenter la capacité de stockage de votre compte e-mail, si 
 > 
 > Les informations qui suivent sont basées sur une configuration IMAP de votre compte e-mail, cette configuration étant la plus répandu. La configuration POP par défaut est fondée sur un principe de stockage des e-mails en local. Dans notre contexte, il n'est donc pas pertinent d'archiver des e-mails qui sont déjà stockés localement sur votre ordinateur.
 
-Lorsque vous avez configuré votre adresse e-mail sur votre client de messagerie en IMAP, **par défaut**, le contenu visible correspond à ce qui est **synchronisé sur le serveur e-mail**. Cela signifie que les e-mails sont chargés sur votre ordinateur mais disparaissent si on les supprime du serveur. Pour les **archive sur votre ordinateur**, vous devez configurer votre logiciel de messagerie.
+Lorsque vous avez configuré votre adresse e-mail sur votre client de messagerie en IMAP, **par défaut**, le contenu visible correspond à ce qui est **synchronisé sur le serveur e-mail**. Cela signifie que les e-mails sont chargés sur votre ordinateur mais disparaissent si on les supprime du serveur. Pour les **archiver sur votre ordinateur**, vous devez configurer votre logiciel de messagerie.
 
 ![email](images/email-quota-step03-archive.png){.thumbnail}
 
@@ -174,19 +176,19 @@ Une fois votre logiciel de messagerie installé, suivez les instructions suivant
 > [!tabs]
 > **Outlook**
 >>
->> Sur Outlook, assurez-vous que dans votre colonne de gauche, le dossier « archive » ou « sur mon ordinateur » soit présent pour pouvoir y déposer les éléments que vous souhaitez garder en locale sur votre ordinateur. Consulter la documentation de Microsoft pour préparer votre dossier d'archive :<br><br>
->> - [Archivage dans Outlook pour Windows](https://support.microsoft.com/fr-fr/office/archivage-dans-outlook-pour-windows-25f75777-3cdc-4c77-9783-5929c7b47028)<br>
->> - [À propos des dossiers sur mon ordinateur dans Outlook pour Mac](https://support.microsoft.com/fr-fr/office/%C3%A0-propos-des-dossiers-sur-mon-ordinateur-dans-outlook-pour-mac-c91b8729-924d-4c25-a5f6-38883d0f763d)<br>
+>> Sur Outlook, assurez-vous que dans votre colonne de gauche, le dossier « archive » ou « sur mon ordinateur » soit présent pour pouvoir y déposer les éléments que vous souhaitez garder en local sur votre ordinateur. Consulter la documentation de Microsoft pour préparer votre dossier d'archive :<br><br>
+>> - [Archivage dans Outlook pour Windows](https://support.microsoft.com/fr-fr/office/archivage-dans-outlook-pour-windows-25f75777-3cdc-4c77-9783-5929c7b47028){.external}<br>
+>> - [À propos des dossiers sur mon ordinateur dans Outlook pour Mac](https://support.microsoft.com/fr-fr/office/%C3%A0-propos-des-dossiers-sur-mon-ordinateur-dans-outlook-pour-mac-c91b8729-924d-4c25-a5f6-38883d0f763d){.external}<br>
 >>
 > **Mail macOS**
 >>
 >> Depuis Mail sur mac OS, créez un dossier qui apparaîtra dans la section « Sur mon Mac » dans la colonne de gauche. Pour se faire, suivez la documentation d'Apple :<br><br>
->> - [Créer ou supprimer des boites aux lettres dans Mail sur Mac](https://support.apple.com/fr-fr/guide/mail/mlhlp1021/15.0/mac/12.0)<br>
+>> - [Créer ou supprimer des boites aux lettres dans Mail sur Mac](https://support.apple.com/fr-fr/guide/mail/mlhlp1021/15.0/mac/12.0){.external}<br>
 >>
 > **Thunderbird**
 >>
 >> Via thunderbird depuis Windows, macOS ou Linux vous pouvez déplacer vos e-mails dans un dossier du volet de gauche. Appuyez-vous sur la documentation de Mozilla :<br><br>
->> - [Archivage des messages](https://support.mozilla.org/fr/kb/archivage-des-messages)<br>
+>> - [Archivage des messages](https://support.mozilla.org/fr/kb/archivage-des-messages){.external}<br>
 >>
 
 #### Changer d'offre pour augmenter sa capacité <a name="switchingoffer"></a>
@@ -204,7 +206,7 @@ Sélectionnez dans le menu, ci-dessous, l'offre actuelle de votre compte e-mail 
 >>
 > **Exchange**
 >>
->> Si votre compte Exchange arrive à saturation des 50Go d'espace, il est possible de souscrire à une option d'extension pour étendre sa capacité à 300Go.<br>
+>> Si votre compte Exchange arrive à saturation des 50Go d'espace, il est possible de souscrire à une option d'extension pour étendre sa capacité à 300Go. Ceci uniquement si le compte Exchange est présent sur une offre **Hosted** ou **Provider**.<br>
 >> Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme Exchange, cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Augmenter la capacité à 300Go`{.action}.<br><br>
 >> ![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
