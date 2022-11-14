@@ -34,7 +34,7 @@ This can be created via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?ac
 >>
 >> Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open your `Public Cloud`{.action} project.
 >>
->> Click on `Public Gateway`{.action} in the left-hand menu under **Network**.
+>> Click on `Gateway`{.action} in the left-hand menu under **Network**.
 >>
 >> Please note that you need to have activated the vRack before proceeding, if you do not have a vRack, please consult [this section](https://docs.ovh.com/sg/en/publiccloud/network-services/public-cloud-vrack/#activation) of the relevant guide.
 >> 
@@ -58,7 +58,7 @@ This can be created via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?ac
 >>
 >> In the next step, select a location. It is best to create a Public Gateway in the region where you intend to deploy your private instances.
 >>
->> ![select location](images/selectlocation.png){.thumbnail}
+>> ![select location](images/selectregion.png){.thumbnail}
 >>
 > **Step 4**
 >>
@@ -92,7 +92,7 @@ This can be created via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?ac
 >> 
 >> ![new private network](images/createdprivatenetwork.png){.thumbnail} 
 >>
->> You can view the new gateway in the `Public Gateways`{.action} section.
+>> You can view the new gateway in the `Gateway`{.action} section.
 >>
 >> ![new private network](images/mynewgateway.png){.thumbnail}
 >>
