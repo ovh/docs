@@ -10,7 +10,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 08-12-2021**
+**Ostatnia aktualizacja z dnia 17-11-2022**
 
 ## Wprowadzenie
 
@@ -28,6 +28,10 @@ Może to być przydatne w następujących przypadkach:
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Posiadanie instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud
 - Dostęp administratora (root) do Twojej instancji przez SSH
+
+> [!warning]
+> Ta funkcja nie jest aktualnie dostępna dla instancji Metal.
+>
 
 ## W praktyce
 

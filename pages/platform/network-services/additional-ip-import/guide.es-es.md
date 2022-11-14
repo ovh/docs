@@ -6,7 +6,7 @@ section: Additional IP
 order: 03
 ---
 
-**Última actualización: 07/11/2022**
+**Última actualización: 17/11/2022**
 
 > [!primary]
 >
@@ -30,6 +30,10 @@ Puede importar una dirección Additional IP que esté asociada a otro servicio d
 - Tener un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
 - Tener una [dirección Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/){.external}
+
+> [!warning]
+> Esta funcionalidad no está actualmente disponible para instancias Metal.
+>
 
 ## Procedimiento
 

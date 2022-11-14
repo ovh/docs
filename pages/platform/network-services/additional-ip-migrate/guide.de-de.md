@@ -10,7 +10,7 @@ order: 04
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 07.11.2022**
+**Letzte Aktualisierung am 17.11.2022**
 
 > [!primary]
 >
@@ -28,6 +28,10 @@ IP-Adressen migrieren zu können bedeutet, die Möglichkeit eines Dienstausfalls
 - Sie verfügen über mindestens zwei [Public Cloud Instanzen](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
 - Sie verfügen über eine Additional IP.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+
+> [!warning]
+> Diese Funktion ist derzeit für Metal Instanzen nicht verfügbar.
+>
 
 ## In der praktischen Anwendung
 

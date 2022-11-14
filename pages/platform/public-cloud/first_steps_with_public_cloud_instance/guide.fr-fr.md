@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 05
 ---
 
-**Dernière mise à jour le 22/03/2022**
+**Dernière mise à jour le 17/11/2022**
 
 ## Objectif
 
@@ -88,6 +88,10 @@ Cliquez sur `Redémarrer en mode rescue`{.action}.
 Cela activera le mode rescue de l'instance. Consultez notre guide [Passer une instance en mode rescue](../passer-une-instance-en-mode-rescue/) pour obtenir des informations détaillées.
 
 #### Redémarrer une instance
+
+> [!warning]
+> L'option de redémarrage à chaud (soft) n'est actuellement pas disponible pour les instances Metal.
+>
 
 - Cliquez sur `Redémarrer à chaud (soft)`{.action} pour effectuer un redémarrage au niveau logiciel.
 - Cliquez sur `Redémarrer à froid (hard)`{.action} pour lancer un reboot au niveau matériel.

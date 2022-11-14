@@ -10,7 +10,7 @@ section: Gestão a partir da Área de Cliente OVHcloud
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 28/02/2022**
+**Última atualização: 17/11/2022**
 
 ## Objetivo
 
@@ -26,6 +26,10 @@ Pode criar um backup único de uma instância ou configurar um planeamento para 
 ## Instruções
 
 ### Criar um backup de uma instância
+
+> [!warning]
+> Esta opção só está disponível através de um **Cold Snapshot** para as instâncias Metal. A instância Metal passará para o modo rescue e, uma vez efetuado o backup, a instância será reiniciada em modo normal.
+>
 
 Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e abra o seu projeto `Public Cloud`{.action}. A seguir, clique em `Instances`{.action} no menu à esquerda.
 

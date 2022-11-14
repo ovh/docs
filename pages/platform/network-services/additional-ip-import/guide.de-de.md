@@ -6,7 +6,7 @@ section: Additional IP
 order: 03
 ---
 
-**Letzte Aktualisierung am 07.11.2022**
+**Letzte Aktualisierung am 17.11.2022**
 
 > [!primary]
 >
@@ -30,6 +30,10 @@ Im OVHcloud Kundencenter können Sie eine Additional IP-Adresse, die mit einem a
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über eine [Additional IP-Adresse](https://www.ovhcloud.com/de/bare-metal/ip/).
+
+> [!warning]
+> Diese Funktion ist derzeit für Metal Instanzen nicht verfügbar.
+>
 
 ## In der praktischen Anwendung
 

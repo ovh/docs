@@ -10,7 +10,7 @@ order: 01
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 02/11/2022**
+**Última actualización: 17/11/2022**
 
 > [!primary]
 >
@@ -35,6 +35,10 @@ Es posible que necesite configurar direcciones Additional IP en sus instancias, 
 - una [dirección Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/) o un bloque Additional IP
 - acceso de administrador (root) a su instancia por SSH o GUI
 - conocimientos básicos de redes y administración
+
+> [!warning]
+> Esta funcionalidad no está actualmente disponible para instancias Metal.
+>
 
 ## Procedimiento
 

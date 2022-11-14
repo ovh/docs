@@ -5,7 +5,7 @@ section: Additional IP
 order: 04
 ---
 
-**Dernière mise à jour le 07/11/2022**
+**Dernière mise à jour le 17/11/2022**
 
 > [!primary]
 >
@@ -24,6 +24,10 @@ Ce guide vous explique comment basculer une Additional IP d'une instance à une 
 - Avoir au moins deux instances Public Cloud démarrées
 - Disposer d'une Additional IP
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+
+> [!warning]
+> Cette fonctionnalité n'est actuellement pas disponible pour les instances Metal.
+>
 
 ## En pratique 
 

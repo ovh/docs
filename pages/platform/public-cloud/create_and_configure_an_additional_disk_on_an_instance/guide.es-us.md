@@ -11,7 +11,7 @@ order: 1
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 08/12/2021**
+**Última actualización: 17/11/2022**
 
 ## Objetivo
 
@@ -29,6 +29,10 @@ Esto puede ser útil en los siguientes casos:
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Disponer de una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud.
 - Tener acceso de administrador (root) a su instancia a través de SSH.
+
+> [!warning]
+> Esta funcionalidad no está actualmente disponible para instancias Metal.
+>
 
 ## Procedimiento
 

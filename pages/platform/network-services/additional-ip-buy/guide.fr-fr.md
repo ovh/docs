@@ -6,7 +6,7 @@ section: Additional IP
 order: 02
 ---
 
-**Dernière mise à jour le 07/11/2022**
+**Dernière mise à jour le 17/11/2022**
 
 > [!primary]
 >
@@ -29,6 +29,10 @@ Ces adresses Additional IP ne pourront être migrées que vers les instances d'u
 
 - Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Disposer d'au moins une instance. Consultez à cet effet [le guide pour créer une instance depuis l'espace client](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/).
+
+> [!warning]
+> Cette fonctionnalité n'est actuellement pas disponible pour les instances Metal.
+>
 
 ## En pratique
 

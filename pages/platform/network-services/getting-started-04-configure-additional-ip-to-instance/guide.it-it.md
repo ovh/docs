@@ -10,7 +10,7 @@ order: 01
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 02/11/2022**
+**Ultimo aggiornamento: 17/11/2022**
 
 > [!primary]
 >
@@ -35,6 +35,10 @@ Potrai configurare indirizzi Additional IP sulle tue istanze, ad esempio se ospi
 - un [indirizzo Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/) o un blocco Additional IP
 - un accesso amministratore (root) via SSH o GUI alla tua istanza
 - conoscenze di base sulle reti e la loro amministrazione
+
+> [!warning]
+> Questa funzionalità al momento non è disponibile per le istanze Metal.
+>
 
 ## Procedura
 

@@ -6,7 +6,7 @@ section: "Gestion depuis l'espace client"
 order: 01
 ---
 
-**Dernière mise à jour le 28/02/2022**
+**Dernière mise à jour le 17/11/2022**
 
 ## Objectif
 
@@ -22,6 +22,11 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 ## En pratique
 
 ### Créer une sauvegarde d'une instance
+
+> [!warning]
+> Cette option est uniquement disponible via un **Cold Snapshot** pour les instances Metal. L'instance Metal passera en mode rescue, et une fois la sauvegarde effectuée, l'instance sera redémarrée en mode normal.
+>
+
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et ouvrez votre projet `Public Cloud`{.action}. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
 

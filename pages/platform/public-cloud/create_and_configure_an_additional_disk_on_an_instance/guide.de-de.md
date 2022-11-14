@@ -11,7 +11,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 08.12.2021**
+**Letzte Aktualisierung am 17.11.2022**
 
 ## Ziel
 
@@ -28,6 +28,10 @@ Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
 - Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
+
+> [!warning]
+> Diese Funktion ist derzeit für Metal Instanzen nicht verfügbar.
+>
 
 ## In der praktischen Anwendung
 

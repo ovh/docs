@@ -25,6 +25,10 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 - An Additional IP address
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
+> [!warning]
+> This feature is currently not available for Metal instances.
+>
+
 ## Instructions
 
 > [!warning]

@@ -10,7 +10,7 @@ order: 05
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22/03/2022**
+**Ultimo aggiornamento: 17/11/2022**
 
 ## Obiettivo
 
@@ -92,6 +92,10 @@ Clicca su `Riavvia in modalità Rescue`{.action}.
 Questa operazione attiverà la modalità Rescue dell'istanza. Per maggiori informazioni, consulta la guida [Riavvia la tua istanza in Rescue mode](../riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/).
 
 #### Riavvia l’istanza
+
+> [!warning]
+> L'opzione di riavvia a caldo (soft) non è attualmente disponibile per le istanze Metal.
+>
 
 - Clicca su `Riavvia a caldo (soft)`{.action} per effettuare un riavvio a livello software.
 - Clicca su `Riavvia a freddo (hard)`{.action} per avviare un riavvio a livello hardware.

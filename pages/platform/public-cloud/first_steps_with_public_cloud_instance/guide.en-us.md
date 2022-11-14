@@ -6,7 +6,7 @@ section: Getting started
 order: 05
 ---
 
-**Last updated 22nd March 2022**
+**Last updated 17th November 2022**
 
 ## Objective
 
@@ -88,6 +88,10 @@ Click on `Reboot in rescue mode`{.action}.
 This will activate rescue mode for the instance. Refer to our guide [Putting an instance in rescue mode](../put_an_instance_in_rescue_mode/) for detailed information.
 
 #### Restarting the instance
+
+> [!warning]
+> The Hot reboot option is currently not available for Metal instances.
+>
 
 - Click on `Hot reboot (soft)`{.action} to perform a software-level reboot.
 - Click on `Cold reboot (hard)`{.action} to perform a hardware-level reboot.

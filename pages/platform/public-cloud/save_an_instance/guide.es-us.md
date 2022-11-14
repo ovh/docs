@@ -10,7 +10,7 @@ order: 01
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 28/02/2022**
+**Última actualización: 17/11/2022**
 
 ## Objetivo
 
@@ -27,9 +27,13 @@ Puede crear una copia de seguridad única de una instancia o configurar una plan
 
 ### Crear una copia de seguridad de una instancia
 
+> [!warning]
+> Esta opción solo está disponible a través de un **Cold Snapshot* para las instancias Metal. La instancia Metal pasará a modo de rescate y, una vez realizada la copia de seguridad, la instancia se reiniciará en modo normal.
+>
+
 Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y abra su proyecto de `Public Cloud`{.action}. En el menú de la izquierda, haga clic en `Instances`{.action}.
 
-Haga clic en el botón `..`{.action} a la derecha de la instancia y seleccione `Crear un backup`{.action}.
+Haga clic en el botón `...`{.action} a la derecha de la instancia y seleccione `Crear un backup`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 

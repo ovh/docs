@@ -6,7 +6,7 @@ section: Storage
 order: 1
 ---
 
-**Last updated 8th December 2021**
+**Last updated 17th November 2022**
 
 ## Objective
 
@@ -24,6 +24,10 @@ This can be useful in cases where:
 - Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - A [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - Administrative (root) access to your instance via SSH (Linux) or RDP (Windows)
+
+> [!warning]
+> This feature is currently not available for Metal instances.
+>
 
 ## Instructions
 

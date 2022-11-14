@@ -10,7 +10,7 @@ order: 04
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento 07/11/2022**
+**Ultimo aggiornamento 17/11/2022**
 
 > [!primary]
 >
@@ -30,6 +30,9 @@ Questa guida ti mostra come trasferire un Additional IP da un’istanza all’al
 - Un indirizzo Additional IP
 - Aver accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
+> [!warning]
+> Questa funzionalità al momento non è disponibile per le istanze Metal.
+>
 
 ## Procedura
 
