@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 02
 ---
 
-**Última actualización: à(/05/2020**
+**Última actualización: 14/11/2022**
 
 ## Objetivo
 
@@ -45,7 +45,7 @@ Una vez haya definido su proyecto, solo tiene que integrarlo en su alojamiento. 
 
 #### Solución sencilla en un clic y sin necesidad de conocimientos técnicos
 
-Esta solución utiliza los módulos en un clic de OVH, una herramienta que permite instalar un CMS de forma fácil y rápida. OVHcloud se encarga de la instalación del sitio web y le envía las claves de acceso.
+Esta solución utiliza los módulos en un clic de OVHcloud, una herramienta que permite instalar un CMS de forma fácil y rápida. OVHcloud se encarga de la instalación del sitio web y le envía las claves de acceso.
 
 Para poder instalar el módulo de OVHcloud, debe asegurarse de que el directorio de instalación del módulo esté vacío (si todavía no se ha conectado a su espacio de almacenamiento, estará vacío). Para instalar el módulo en un clic, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la sección `Alojamientos`{.action}, haga clic en el nombre de su alojamiento web. A continuación, abra la pestaña `Módulos en un clic`{.action} y haga clic en el botón `Añadir un módulo`{.action}.
 

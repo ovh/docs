@@ -79,8 +79,8 @@ Changer l'environnement d'exécution permet de modifier certaines valeurs techni
 |Environnements|Legacy|Stable|Stable64|
 |---|---|---|---|
 |architecture|32 bits|32 bits|64 bits|
-|Version PHP minimum|5.6|7.3|7.4|
-|Openssl|1.0.1t|1.0.1t|1.1.1d|
+|Version PHP minimum|5.4|5.4|7.4|
+|Openssl|1.0.1t|1.0.1t|1.1.1n|
 |Python|2.7 et 3.4|2.7 et 3.7|2.7 et 3.7|
 |Ruby|2.1|2.1|2.5|
 |Rails|4.1|4.1|5.2|
@@ -108,7 +108,7 @@ Il existe plusieurs manières de modifier la version de PHP de votre hébergemen
 - **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](./#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client) de cette documentation ;
 - **en modifiant manuellement un fichier sur votre espace de stockage** : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. 
 
-De manière générale, si vous souhaitez obtenir plus d'informations sur le changement d'une version de PHP, reportez-vous aux instructions décrites dans notre documentation [« Changer la version de PHP d’un hébergement web OVH »](../configurer-le-php-sur-son-hebergement-web-mutu-2014/).
+De manière générale, si vous souhaitez obtenir plus d'informations sur le changement d'une version de PHP, reportez-vous aux instructions décrites dans notre documentation [« Changer la version de PHP d’un hébergement web OVHcloud »](../configurer-le-php-sur-son-hebergement-web-mutu-2014/).
 
 #### Moteur PHP
 

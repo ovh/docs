@@ -14,7 +14,7 @@ order: 05
 
 To configure your hosting, first log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). In the `Hosting plans` section, you can manage your SSL certificates, the PHP version, the CDN option, the multisite, databases, etc.
 
-**Tips and tricks**: To help you configure your hosting, please check the `Getting started` section [here](https://docs.ovh.com/au/en/hosting/).
+**Tips and tricks**: To help you configure your hosting, please check the `Getting started` section [here](https://docs.ovh.com/au/en/hosting/get_started_with_a_web_hosting_package/).
 
 ### How do I manage my passwords?
 
