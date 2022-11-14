@@ -1,5 +1,5 @@
 ---
-title: "AI Training - Concept d'emploi (EN)"
+title: "AI Training - Concept d'un job (EN)"
 slug: training/jobs
 excerpt: Learn the concept behind AI Training jobs
 section: AI Training - Guides

@@ -1,5 +1,5 @@
 ---
-title: Données - concept et bonnes pratiques (EN)
+title: Données - Concept et bonnes pratiques (EN)
 slug: data
 excerpt: Learn the concept behind AI Tools data
 section: Informations générales
@@ -73,7 +73,7 @@ The purpose of the **read-write** permission is to be able to modify the content
 
 > [!primary]
 >
-> Volumes which are in **read-write** do not allow you to **delete** data from your Object Storage. If you delete them from a job or notebook, they will still be present in your object container, even after synchronisation. 
+> Volumes which are in **read-write** do not allow you to **delete** data from your Object Storage. If you delete them from a job or notebook, they will still be present in your object container, even after synchronisation.
 
 If you need to delete data from your object container, you can mount your volume in `RWD`.
 
@@ -81,7 +81,7 @@ If you need to delete data from your object container, you can mount your volume
 
 *When to attach a volume in read-write-delete `RWD`?*
 
-The purpose of the **read-write-delete** permission is to be able to modify or delete the object container contents. You can not only make changes to the different files in your container (Python code, requirements file, ...) but also, and especially, delete data from it. The RWD will allow you to permanently delete data you no longer need from your object container. 
+The purpose of the **read-write-delete** permission is to be able to modify or delete the object container contents. You can not only make changes to the different files in your container (Python code, requirements file, ...) but also, and especially, delete data from it. The RWD will allow you to permanently delete data you no longer need from your object container.
 This permission can be used in particular if you want to delete old codes or connection weights which can be heavy files.
 
 > [!warning]
