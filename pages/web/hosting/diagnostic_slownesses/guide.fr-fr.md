@@ -172,7 +172,7 @@ Si la connexion est réussie, vous arrivez sur l'interface suivante :
 Les affirmations suivantes s'appliquent **toutes** à votre situation :
 
 - au moins une page, un script ou un fichier (y compris le fichier « **phpinfo.php** ») testé lors de l'étape 1 s'est chargé rapidement;
-- La connexion à votre base de données s'est correctement effectuée.
+- la connexion à votre base de données s'est correctement effectuée lors des tests de l'étape 1.
 
 > Cela signifie que les lenteurs que vous rencontrez proviennent directement des scripts qui composent votre site web. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
 
