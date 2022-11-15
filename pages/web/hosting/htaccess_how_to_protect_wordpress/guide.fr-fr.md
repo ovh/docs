@@ -6,11 +6,11 @@ section: ''
 order: 
 ---
 
-**Dernière mise à jour le 03/10/2022**
+**Dernière mise à jour le 15/11/2022**
 
 ## Objectif
 
-Configurer le comportement de votre serveur avec un ou des fichiers _.htaccess_ pour modifier le comportement de votre site (redirections, interdictions d'accès ou autorisations restreintes).
+Configurer le comportement de votre serveur avec un ou des fichiers _.htaccess_ pour modifier le comportement de tout ou partie de votre site (redirections, interdictions d'accès ou autorisations restreintes).
 
 ## Prérequis
 
@@ -23,11 +23,11 @@ Vos fichiers étant placés sur votre serveur (ou devant y être copiés), vous 
 
 #### Qu'est-ce qu'un fichier _.htaccess_ ?
 
-Un fichier _.htaccess_ est un fichier permettant de configurer un serveur web Apache. Une des particularités de ces fichiers est qu'ils sont situés dans les répertoires des sites web sur le serveur. Un fichier _.htaccess_ aura des effets sur le répertoire dans lequel il est présent ainsi que dans tous les sous-répertoires qui le composent.
+Un fichier _.htaccess_ est un fichier permettant de configurer un serveur web. Dans notre cas, il s'agira du serveur web open source « Apache ». La syntaxe de ce fichier est définie par l'organisme qui édite et maintient Apache. Une des particularités de ces fichiers est qu'ils sont situés dans les répertoires des sites web sur le serveur. Un fichier _.htaccess_ aura des effets sur le répertoire dans lequel il est présent ainsi que dans tous les sous-répertoires qui le composent.
 
-Ils sont modifiables par des utilisateurs ayant des droits limités et qui n'ont pas la main sur les fichiers de configuration du serveur web. Autre avantage : il n'est pas nécessaire de redémarrer le serveur Apache pour que soient prises en compte les indications et modifications écrites dans le fichier _.htaccess_. Toutes nos offres d'[Hébergement web](https://www.ovhcloud.com/fr/web-hosting/) vous permettent de configurer vos propres fichiers _.htaccess_.
+Nos offres d'hébergements mutualisés ne vous permettent pas de modifier directement les configurations serveur, mais les fichiers _.htaccess_ vous donneront la possibilités de modifier certaines caractéristiques et comportements. Autre avantage : il n'est pas nécessaire de redémarrer le serveur Apache pour que soient prises en compte les indications et modifications écrites dans le fichier _.htaccess_. Toutes nos offres d'[Hébergement web](https://www.ovhcloud.com/fr/web-hosting/) vous permettent de configurer vos propres fichiers _.htaccess_.
 
-Le point devant le nom du fichier (qui n'a pas d'extension) désigne un fichier caché.
+Le point devant le nom du fichier (qui n'a pas d'extension) désigne un fichier caché. De plus, ces fichiers ne sont pas accessibles depuis les utilisateurs extérieurs venant visiter votre site web.
 
 #### Qu'est-ce qu'un serveur web ?
 
