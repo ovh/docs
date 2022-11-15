@@ -185,7 +185,7 @@ Les affirmations suivantes s'appliquent **toutes** à votre situation :
 
 > Des investigations côté OVHcloud seront nécessaires. Contactez nos services d'assistance sur les solutions Web, afin qu'ils confirment avec vous l'origine des ralentissements que vous rencontrez.
 
-### Etape 2 - identifiez la(les) source(s) qui génère(nt) les lenteurs au niveau de votre site web <a name="step2"></a>
+### Etape 2 - identifiez la (les) source(s) qui génère(nt) les lenteurs au niveau de votre site web <a name="step2"></a>
 
 A ce stade, vous savez désormais que les ralentissements sont générés par les pages/scripts/fichiers qui composent votre site web.
 
