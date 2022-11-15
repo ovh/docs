@@ -149,6 +149,37 @@ Une fois les fichiers décompressés dans votre dossier « **WordPress** », [co
 > Une fois le transfert terminé, vérifiez que tous les éléments présents dans le dossier local « **WordPress** » ont été correctement transférés dans le « dossier racine » présent sur votre hébergement web.
 >
 
+**Cas Particulier** : Si vous disposez d'un débit Internet limité et/ou d'une offre d'hébergement **Pro** ou supérieure, vous pouvez utiliser la connexion en **SSH** pour placer les fichiers sources de Wordpress dans l'espace de stockage de votre hébergement web. 
+
+Pour vous connecter en SSH à votre hébergement, consultez notre guide sur la [connexion en SSH depuis un hébergement mutualisé OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/)
+
+Une fois connecté en **SSH**, lancez les commandes suivantes :
+
+- Rendez-vous dans le « dossier racine » dans lequel vous souhaitez instaler votre WordPress sur votre hébergement web :
+```bash
+cd NameOfYourTargetFolder
+```
+- Récupérez les fichiers sources de WordPress directement depuis votre « dossier racine »: 
+```bash
+wget http://wordpress.org/latest.tar.gz
+```
+- Décompressez les fichiers sources de WordPress dans votre « dossier racine »:
+```bash
+tar xvf latest.tar.gz
+```
+- Un dossier « **wordpress** » est créé dans votre « dossier racine ». Déplacez sont contenu à la base de votre « dossier racine »:
+```bash
+mv wordpress/* ./
+```
+- Supprimez le dossier « **wordpress** » désormais vide:
+```bash
+rmdir ./wordpress/
+```
+- Supprimez le fichier compressé « **latest.tar.gz** »:
+```bash
+rm -f latest.tar.gz
+```
+
 ### Etape 3 - finaliser l'installation manuelle <a name="step3"></a>
 
 > [!success]
