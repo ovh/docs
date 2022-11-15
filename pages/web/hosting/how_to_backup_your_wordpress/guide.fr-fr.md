@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 
 ---
 
-**Dernière mise à jour le 04/10/2022**
+**Dernière mise à jour le 15/11/2022**
 
 ## Objectif
 
@@ -21,6 +21,8 @@ Vous devez disposer d'un [hébergement web](https://www.ovhcloud.com/fr/web-host
 ## En pratique
 
 Vous pouvez effectuer vos sauvegardes de deux façons : manuellement ou par le biais d'une extension.
+
+OVHcloud s’engage à fournir un service de sauvegarde automatique des données ainsi que la mise à disposition de ces sauvegardes. Il est toutefois de votre responsabilité de mettre en place votre propre politique de restauration, et de déterminer des points de restaurations aux moments que vous jugez opportuns.
 
 ### 1<sup>re</sup> méthode : la sauvegarde manuelle
 
@@ -124,3 +126,7 @@ Vous pouvez également faire une sauvegarde dès que vous installez ou modifiez 
 - Les sauvegardes régulières sont des bonnes pratiques à mettre en place pour chacun de vos sites
 - Veillez à ce que vos sauvegardes soient elles-mêmes sécurisées
 - Faites-les avant une mise à jour et vérifiez après celle-ci que tout fonctionne correctement sur votre site (vous aurez toujours la possibilité de revenir à la version antérieure).
+
+## Aller plus loin
+
+- [Plus d'informations sur les sauvegardes de votre hébergement web](https://docs.ovh.com/fr/hosting/specificites-techniques-hebergements-mutualises/#informations-sur-les-sauvegardes-automatiques)
