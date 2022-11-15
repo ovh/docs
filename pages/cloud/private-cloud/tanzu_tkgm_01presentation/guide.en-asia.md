@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Last updated 10th November 2022**
+**Last updated 15th November 2022**
 
 ## Objective
 
