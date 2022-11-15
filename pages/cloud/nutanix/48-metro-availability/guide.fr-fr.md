@@ -5,7 +5,7 @@ excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
 section: "Plan de Reprise d'Activité"
 order: 06
 ---
-<link rel="stylesheet" href="https://fpillotovh.github.io/icons/icons.css">
+
 
 **Dernière mise à jour le 15/11/2022**
 
@@ -174,7 +174,7 @@ Saisissez cette commande :
 ncli cluster info
 ```
 
-Notez la valeur de **Cluster UUID** qui doit avoir cette forme **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**.
+Notez la valeur du **Cluster UUID** qui doit avoir cette forme **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**.
 
 Déconnectez-vous de Prism Element et connectez-vous en SSH sur la machine virtuelle Prism Central de Roubaix.
 
@@ -217,7 +217,7 @@ Saisissez cette commande :
 ncli cluster info
 ```
 
-Notez la valeur de **Cluster UUID* qui doit avoir cette forme **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**
+Notez la valeur de **Cluster UUID** qui doit avoir cette forme **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**
 
 Déconnectez-vous de Prism Element et connectez-vous en SSH sur la machine virtuelle Prism Central de Gravelines.
 
@@ -597,7 +597,7 @@ Pour chaque sous-réseau existant, il est nécessaire d'avoir un réseau de test
 
 - **base** sur le VLAN 0.
 - **infra** sur le VLAN 1.
-- **production*** sur le VLAN 2.
+- **production** sur le VLAN 2.
 
 Nous allons donc créer 3 sous-réseaux supplémentaires sur les clusters de Gravelines et de Roubaix avec ces noms :
 
@@ -1087,7 +1087,7 @@ La liste des événements survenus apparaît, cliquez sur `Close`{.action} pour 
 
 ## Aller plus loin
 
-[Interconnexion de clusters au travers du vRack](https://https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/)
+[Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/)
 
 [Plan de reprise d'activité sous Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
 
