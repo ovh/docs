@@ -95,7 +95,7 @@ Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés pour effectuer les actions décrites ci-dessous, faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) en cyber sécurité .
+> Si vous éprouvez des difficultés pour effectuer les actions décrites ci-dessous, faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) en cyber sécurité.
 >
 
 Utilisez notre guide sur [les statistiques et logs de votre hébergement Web](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) pour rechercher les éléments malveillants injectés dans votre site web. Vous trouverez les informations dans les logs « web ». 
