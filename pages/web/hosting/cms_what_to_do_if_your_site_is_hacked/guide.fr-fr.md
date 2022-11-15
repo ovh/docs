@@ -78,7 +78,7 @@ Concernant OVHcloud, utilisez notre documentation pour :
 - [Modifier le mot de passe d'accès à l'espace de stockage FTP de votre hébergement Web](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
 - [Changer le mot de passe d'accès à votre base de données](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
 
-De manière générale, aidez-vous de notre documentation sur [la gestion des mots de passe](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe). Nous vous recommandons également d'utiliser un gestionnaire de mots de passe comme **Keepass** par exemple.
+Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe).
 
 > [!warning]
 > 
@@ -94,7 +94,7 @@ De manière générale, aidez-vous de notre documentation sur [la gestion des mo
 
 > [!warning]
 >
-> Pour cette partie, faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) en cyber sécurité si vous éprouvez des difficultés.
+> Si vous éprouvez des difficultés pour effectuer les actions décrites ci-dessous, faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) en cyber sécurité .
 >
 
 Utilisez notre guide sur [les statistiques et logs de votre hébergement Web](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) pour rechercher les éléments malveillants injectés dans votre site web. Vous trouverez les informations dans les logs « web ». 
@@ -128,7 +128,7 @@ Pour cette étape, trois cas de figure sont possibles :
 >
 > **Important** : Dans tous les cas de figure, si vous supprimez les codes malveillants sans pour autant corriger les failles de sécurité, le pirate informatique pourrait de nouveau les exploiter afin de redéposer du code malveillant sur votre hébergement. Il aurait même la possibilité d'y créer une nouvelle porte dérobée.
 >
-> La restauration à une date antérieure au piratage nécessitera une mise à jour **immédiate**. La réalisation d'un **audit de sécurité** sera indispensable également. Ceci afin d'identifier toutes les failles de sécurité.
+> La restauration à une date antérieure au piratage nécessitera une mise à jour **immédiate** et la réalisation indispensable d'un **audit de sécurité**, afin d'identifier toutes les failles de sécurité.
 >
 
 #### Cas n°1 - OVHcloud dispose d'une sauvegarde de votre site internet (espace de stockage FTP et base de données)
