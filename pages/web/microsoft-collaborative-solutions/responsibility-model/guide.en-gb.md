@@ -1,9 +1,9 @@
 ---
-title: Responsibility model
+title: Hosted Exchange Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 slug: responsibility-model
-section: Get Started
-order: 3
+section: Getting started with Exchange
+order: 9
 ---
 
 **Last updated November 15th, 2022**
