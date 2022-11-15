@@ -63,7 +63,7 @@ We create a *ldp-token* secret with only one key named *ldp-token* as the value 
 
 #### ConfigMap File
 
-Even if it is undocumented, Fluent Bit supports [GELF](https://docs.graylog.org/){.external} as a standard output with udp,tcp and TLS protocols out of the box. We will modify the proposed file of the documentation to parse and convert Fluent Bit logs to GELF. The input is using the [CRI parser](https://docs.fluentbit.io/manual/installation/kubernetes#container-runtime-interface-cri-parser) to properly format logs:
+Even if it is undocumented, Fluent Bit supports [GELF](https://docs.graylog.org/){.external} as a standard output with udp, tcp and TLS protocols out of the box. We will modify the proposed file of the documentation to parse and convert Fluent Bit logs to GELF. The input is using the [CRI parser](https://docs.fluentbit.io/manual/installation/kubernetes#container-runtime-interface-cri-parser) to properly format logs:
 
 ```yaml
 apiVersion: v1
