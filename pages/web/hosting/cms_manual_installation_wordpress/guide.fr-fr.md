@@ -6,7 +6,7 @@ section: CMS
 order: 07
 ---
 
-**Dernière mise à jour le 07/11/2022**
+**Dernière mise à jour le 15/11/2022**
 
 ## Objectif
 
@@ -149,33 +149,44 @@ Une fois les fichiers décompressés dans votre dossier « **WordPress** », [co
 > Une fois le transfert terminé, vérifiez que tous les éléments présents dans le dossier local « **WordPress** » ont été correctement transférés dans le « dossier racine » présent sur votre hébergement web.
 >
 
-**Cas Particulier** : Si vous disposez d'un débit Internet limité et/ou d'une offre d'hébergement **Pro** ou supérieure, vous pouvez utiliser la connexion en **SSH** pour placer les fichiers sources de Wordpress dans l'espace de stockage de votre hébergement web. 
+**Cas Particulier** : Si vous disposez d'un débit Internet limité et/ou d'une offre d'hébergement **Pro** ou supérieure, vous pouvez utiliser la connexion en **SSH** pour placer les fichiers sources de WordPress dans l'espace de stockage de votre hébergement web. 
 
-Pour vous connecter en SSH à votre hébergement, consultez notre guide sur la [connexion en SSH depuis un hébergement mutualisé OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/)
+Pour vous connecter en SSH à votre hébergement, consultez notre guide sur la [connexion en SSH depuis un hébergement mutualisé OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/).
 
-Une fois connecté en **SSH**, lancez les commandes suivantes :
+Une fois connecté en **SSH**, exécutez les commandes suivantes :
 
 - Rendez-vous dans le « dossier racine » dans lequel vous souhaitez instaler votre WordPress sur votre hébergement web :
+
 ```bash
 cd NameOfYourTargetFolder
 ```
-- Récupérez les fichiers sources de WordPress directement depuis votre « dossier racine »: 
+
+- Récupérez les fichiers sources de WordPress directement depuis votre « dossier racine » :
+
 ```bash
 wget http://wordpress.org/latest.tar.gz
 ```
-- Décompressez les fichiers sources de WordPress dans votre « dossier racine »:
+
+- Décompressez les fichiers sources de WordPress dans votre « dossier racine » :
+
 ```bash
 tar xvf latest.tar.gz
 ```
-- Un dossier « **wordpress** » est créé dans votre « dossier racine ». Déplacez sont contenu à la base de votre « dossier racine »:
+
+- Un dossier « **wordpress** » est créé dans votre « dossier racine ». Déplacez son contenu à la base de votre « dossier racine » :
+
 ```bash
 mv wordpress/* ./
 ```
-- Supprimez le dossier « **wordpress** » désormais vide:
+
+- Supprimez le dossier « **wordpress** » désormais vide :
+
 ```bash
 rmdir ./wordpress/
 ```
-- Supprimez le fichier compressé « **latest.tar.gz** »:
+
+- Supprimez le fichier compressé « **latest.tar.gz** » :
+
 ```bash
 rm -f latest.tar.gz
 ```
@@ -187,19 +198,19 @@ rm -f latest.tar.gz
 > Avant de continuer l'installation, videz le cache de votre navigateur Internet, afin d'éviter toute erreur.
 >
 
-#### 3.1 - Se rendre sur votre site Wordpress via votre navigateur
+#### 3.1 - Se rendre sur votre site WordPress via votre navigateur
 
 Saisissez votre domaine dans la barre de recherche de votre navigateur Internet.
 
-Si les fichiers sources de Wordpress ont été placés correctement dans votre dossier racine, la page Wordpress permettant de sélectionner la langue apparaît :
+Si les fichiers sources de WordPress ont été placés correctement dans votre dossier racine, la page WordPress permettant de sélectionner la langue apparaît :
 
 ![hosting](images/WPselectlangue.png){.thumbnail}
 
 Sélectionnez la langue du site puis cliquez sur `Continuer`{.action}.
 
-#### 3.2 - Lier votre Wordpress et votre base de données
+#### 3.2 - Lier votre WordPress et votre base de données
 
-Wordpress va vous demander de récupérer les identifiants de connexion à votre base de données :
+WordPress va vous demander de récupérer les identifiants de connexion à votre base de données :
 
 ![hosting](images/WPstart.png){.thumbnail}
 
@@ -237,11 +248,11 @@ Si tout c'est bien passé, la page suivante apparaît :
 
 Cliquez sur `Lancer l'installation`{.action}.
 
-#### 3.3 - Définir l'accès Administrateur au « back-office » de votre Wordpress et votre e-mail de contact
+#### 3.3 - Définir l'accès Administrateur au « back-office » de votre WordPress et votre e-mail de contact
 
-Une fois l'installation réalisée, Wordpress va vous demander des informations sur votre futur site, dont la création de votre identifiant Administrateur Wordpress.
+Une fois l'installation réalisée, WordPress va vous demander des informations sur votre futur site, dont la création de votre identifiant Administrateur WordPress.
 
-Ce dernier vous permettra ensuite d'accéder à l'espace d'administration, communément appelé « Back-office », de votre CMS Wordpress.
+Ce dernier vous permettra ensuite d'accéder à l'espace d'administration, communément appelé « Back-office », de votre CMS WordPress.
 
 ![hosting](images/WPafterDB2.png){.thumbnail}
 
@@ -251,7 +262,7 @@ Renseignez les informations demandées :
 - Identifiant : définissez l'identifiant Administrateur de votre CMS.
 - Mot de passe : définissez un mot de passe pour cet identifiant Administrateur.
 - Votre adresse de messagerie : renseignez une adresse e-mail valide.
-- Vie privée : cochez cette case pour que les moteurs de recherche référencent votre Wordpress.
+- Vie privée : cochez cette case pour que les moteurs de recherche référencent votre WordPress.
 
 Cliquez sur `Installer WordPress`{.action} dès que tout est correctement renseigné.
 
@@ -261,11 +272,11 @@ L'installation est termninée si la page suivante s'affiche :
 
 ![hosting](images/WPend.png){.thumbnail}
 
-Il ne vous reste plus qu'à cliquer sur le bouton `Se connecter`{.action} pour tester l'accès au « Back-office » de votre nouveau CMS Wordpress à l'aide des identifiants Administrateur préalablement créés lors de l'étape 3.3 juste avant.
+Il ne vous reste plus qu'à cliquer sur le bouton `Se connecter`{.action} pour tester l'accès au « Back-office » de votre nouveau CMS WordPress à l'aide des identifiants Administrateur préalablement créés lors de l'étape 3.3 juste avant.
 
 > [!primary]
 >
-> Les équipes OVHcloud n'assurent pas de support sur des solutions tierces telles que WordPress, elles ne peuvent donc pas vous accompagner sur l'utilisation ou la configuration de votre CMS Wordpress.
+> Les équipes OVHcloud n'assurent pas de support sur des solutions tierces telles que WordPress, elles ne peuvent donc pas vous accompagner sur l'utilisation ou la configuration de votre CMS WordPress.
 >
 > Pour un accompagnement de ce type, nous vous invitons à utiliser les forums dédiés à la solution WordPress.
 >
@@ -276,7 +287,7 @@ Une fois connecté, la page suivante apparaît :
 
 > [!success]
 >
-> Vous pouvez maintenant démarrer la création du contenu de votre site Wordpress !
+> Vous pouvez maintenant démarrer la création du contenu de votre site WordPress !
 >
 
 ## Aller plus loin <a name="go-further"></a>
