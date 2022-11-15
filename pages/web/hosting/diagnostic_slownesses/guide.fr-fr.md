@@ -181,7 +181,7 @@ Les affirmations suivantes s'appliquent **toutes** à votre situation :
 Les affirmations suivantes s'appliquent **toutes** à votre situation :
 
 - **aucun incident et aucune maintenance** ne sont déclarés, ou n'ont été déclarés comme **résolus** il y a moins de trois heures, pour vos services d'hébergement web sur notre site [status-ovhcloud.com](https://web-cloud.status-ovhcloud.com/) ;
-- le **cas n°1** détaillé ci-dessus ne correspont pas à votre configuration.
+- le **cas n°1** détaillé ci-dessus ne correspond pas à votre configuration.
 
 > Des investigations côté OVHcloud seront nécessaires. Contactez nos services d'assistance sur les solutions Web, afin qu'ils confirment avec vous l'origine des ralentissements que vous rencontrez.
 
