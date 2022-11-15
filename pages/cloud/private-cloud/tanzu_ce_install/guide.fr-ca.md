@@ -15,20 +15,18 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 
 > [!warning]
 >
-> Tanzu Community Edition ne bénéficie pas du support OVHcloud mais vous pouvez l'installer pour des tests. Si vous souhaitez béneficier d'une version maintenue par OVHcloud utilisez **Tanzu Kubernetes Grid** à la place. Vous pouvez vous aider de ce guide [Présentation de Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-presentation/) pour déployer cette solution.
+> Tanzu Community Edition ne bénéficie pas du support OVHcloud mais vous pouvez l'installer pour des tests. Si vous souhaitez béneficier d'une version maintenue par OVHcloud utilisez **Tanzu Kubernetes Grid** à la place. Vous pouvez vous aider de ce guide [Présentation de Tanzu Kubernetes Grid](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-presentation/) pour déployer cette solution.
 >
 
 **Ce guide est un exemple d'installation étape par étape de TCE.**
 
 ## Prérequis
 
-
-
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Avoir un identifiant actif dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Avoir un identifiant actif dans vSphere
-- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
-- Configurer le service [DHCP](https://docs.ovh.com/fr/private-cloud/configurer-le-dhcp-sur-une-edge-nsx/) sur la NSX Gateway
+- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/ca/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
+- Configurer le service [DHCP](https://docs.ovh.com/ca/fr/private-cloud/configurer-le-dhcp-sur-une-edge-nsx/) sur la NSX Gateway
 
 ## En pratique
 
@@ -39,7 +37,7 @@ D'autres composants réseau peuvent servir d'alternative, notament pfSense.<br>
 
 Pour paramétrer votre réseau, définissez une adresse IP publique pour l'accès extérieur et un réseau interne avec le service DHCP activé pour l'infrastructure TCE.<br>
 Votre datacenter est livré avec un certain nombre d'IPs publiques utilisables pour vos besoins. Elles sont visibles dans l'onglet `Configurer`{.action} du datacenter, dans la section `Réseau`{.action}. Vous verrez également les paramètres de masque et de passerelle sur la page.<br>
-Consultez notre documentation pour [ajouter un bloc d'IP](https://docs.ovh.com/fr/private-cloud/ajout-de-bloc-ip/) si vous n'avez plus d'IP publique utilisable.
+Consultez notre documentation pour [ajouter un bloc d'IP](https://docs.ovh.com/ca/fr/private-cloud/ajout-de-bloc-ip/) si vous n'avez plus d'IP publique utilisable.
 
 ![réseau](images/en00ipblocks.png){.thumbnail}
 
@@ -58,7 +56,7 @@ Pour notre exemple, la NSX Edge Services Gateway est paramétrée comme suit ave
 - Une règle SNAT traduit le réseau 172.16.13.1/24 par l'adresse publique xxx.xxx.xxx.226 pour l'accès externe<br>
 ![règle SNAT](images/en03nsxsnat.png){.thumbnail}
 
-Dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Sécurité`{.action} de votre Hosted Private Cloud, ajoutez les adresses IP publiques utilisées à la liste des adresses autorisées à se connecter.<br>
+Dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dans l'onglet `Sécurité`{.action} de votre Hosted Private Cloud, ajoutez les adresses IP publiques utilisées à la liste des adresses autorisées à se connecter.<br>
 Les adresses apparaîtront comme « Autorisé et mis en place ».
 
 ![adresses](images/en00ipsec.png){.thumbnail}
@@ -89,7 +87,7 @@ Pour finir, faites un clic-droit sur la VM et, dans la section `Modèle`{.action
 Une fois le réseau et le modèle prêts, une VM de Bootstrap est nécessaire pour les composants logiciels (Docker et Kubectl) et le pilotage de l'installation de TCE.<br>
 Nous utilisons une machine virtuelle sous Ubuntu, mais tout système d'exploitation permettant l'installation des éléments nécessaires est possible.<br>
 Les prérequis pour TCE sont une VM avec 2 CPU et 6 Go de RAM.<br>
-Vous pouvez déployer une VM [depuis un ISO](https://docs.ovh.com/fr/private-cloud/deploiement-d-une-machine-virtuelle/) ou [depuis un modèle OVF](https://docs.ovh.com/fr/private-cloud/deploiement-template-ovh/).<br>
+Vous pouvez déployer une VM [depuis un ISO](https://docs.ovh.com/ca/fr/private-cloud/deploiement-d-une-machine-virtuelle/) ou [depuis un modèle OVF](https://docs.ovh.com/ca/fr/private-cloud/deploiement-template-ovh/).<br>
 
 Assurez-vous que la machine virtuelle utilise le VLAN défini pour les clusters TCE (VLAN13 dans notre cas).<br>
 

@@ -15,18 +15,18 @@ You can deploy the product on an OVHcloud infrastructure to leverage its functio
 
 > [!warning]
 >
-> Tanzu Community Edition does not have OVHcloud support, but you can install it for testing. If you would like to use a version maintained by OVHcloud, use **Tanzu Kubernetes Grid** instead. You can use this guide [Introduction to Tanzu Kubernetes Grid](https://docs.ovh.com/gb/en/private-cloud/tanzu-tkgm-presentation/) to deploy this solution. 
+> Tanzu Community Edition does not have OVHcloud support, but you can install it for testing. If you would like to use a version maintained by OVHcloud, use **Tanzu Kubernetes Grid** instead. You can use this guide [Introduction to Tanzu Kubernetes Grid](https://docs.ovh.com/au/en/private-cloud/tanzu-tkgm-presentation/) to deploy this solution. 
 >
 
 **This guide offers a step by step example of TCE installation**
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - A user account with access to vSphere
-- A deployed [NSX Edge Services Gateway](https://docs.ovh.com/gb/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
-- [DHCP](https://docs.ovh.com/gb/en/private-cloud/setup-dhcp-nsx-edge/) services activated on the NSX Gateway
+- A deployed [NSX Edge Services Gateway](https://docs.ovh.com/au/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
+- [DHCP](https://docs.ovh.com/au/en/private-cloud/setup-dhcp-nsx-edge/) services activated on the NSX Gateway
 
 ## Instructions
 
@@ -37,7 +37,7 @@ Other Network components can be used as alternative, such as pfSense.<br>
 
 To set up your Network, you will need to define a public IP for external access and an internal network with DHCP service activated for your TCE infrastructure.<br>
 Your Datacenter comes with a set of public IPs usable for your different needs. They are visible in the Datacenter `Configure`{.action} tab, in the `Network`{.action} section. You will also see the mask and gateway settings on the page.<br>
-Check out our [Adding an IP block](https://docs.ovh.com/gb/en/private-cloud/add-ip-block/) documentation if you are out of usable public IPs.
+Check out our [Adding an IP block](https://docs.ovh.com/au/en/private-cloud/add-ip-block/) documentation if you are out of usable public IPs.
 
 ![network](images/en00ipblocks.png){.thumbnail}
 
@@ -56,7 +56,7 @@ For our study case, the NSX Edge Services Gateway is set up with two interfaces 
 - a SNAT rule to translate adress range 172.16.13.1/24 into secondary public IP xxx.xxx.xxx.226 for external access <br>
 ![SNAT rule](images/en03nsxsnat.png){.thumbnail}
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Security`{.action} tab of your Hosted Private Cloud and add the public IPs to the allowed adresses to connect.<br>
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Security`{.action} tab of your Hosted Private Cloud and add the public IPs to the allowed adresses to connect.<br>
 The addresses should appear as "Authorised and set up".
 
 ![addresses](images/en00ipsec.png){.thumbnail}
@@ -87,7 +87,7 @@ Once the Network and template are ready, a Bootstrap VM is needed.<br>
 It will hold the necessary software components (Docker and Kubectl) and pilot the installation of TCE.<br>
 We'll use an Ubuntu VM but any OS allowing the install of the necessary items would work.<br>
 VM prerequisites for TCE is 2 CPUs and 6 GB Ram.<br>
-You can deploy a VM [from an ISO](https://docs.ovh.com/gb/en/private-cloud/deploying-a-virtual-machine/) or [from an OVF template](https://docs.ovh.com/gb/en/private-cloud/applying-ovh-template/).<br>
+You can deploy a VM [from an ISO](https://docs.ovh.com/au/en/private-cloud/deploying-a-virtual-machine/) or [from an OVF template](https://docs.ovh.com/au/en/private-cloud/applying-ovh-template/).<br>
 
 Make sure the VM is set on the VLAN that will be used for the TCE clusters (VLAN13 in our case).<br>
 

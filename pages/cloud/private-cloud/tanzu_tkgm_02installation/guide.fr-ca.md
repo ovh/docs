@@ -26,8 +26,8 @@ Vous pouvez installer ce produit sur votre infrastructure OVHcloud pour profiter
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Avoir un identifiant actif dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Avoir un identifiant actif dans vSphere.
 - Avoir un VLAN qui possède un accès à Internet et un serveur DHCP.
 - Disposer de ces ressources :
@@ -218,7 +218,7 @@ L'interface graphique de la machine virtuelle Linux apparaît.
 
 Les outils de configuration et d'administration de **Tanzu Kubernetes Grid** sont installés sur la machine virtuelle **Bootstrap**. Cette machine virtuelle doit pouvoir se connecter à Internet et au cluster vSphere.
 
-Notez **l'adresse IP publique** que vous utilisez sur cette machine virtuelle et aidez-vous du guide « [Autoriser des adresses IP à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) » pour donner accès au cluster vSphere depuis la nouvelle machine virtuelle.
+Notez **l'adresse IP publique** que vous utilisez sur cette machine virtuelle et aidez-vous du guide « [Autoriser des adresses IP à se connecter au vCenter](https://docs.ovh.com/ca/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) » pour donner accès au cluster vSphere depuis la nouvelle machine virtuelle.
 
 ### Déploiement du cluster **Tanzu Kubernetes Grid** sur votre infrastructure 
 
@@ -357,7 +357,7 @@ Allez sur l'interface vCenter pour voir les sept machines virtuelles créées.
 
 ## Aller plus loin
 
-[Administrer un cluster TKG](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management)
+[Administrer un cluster TKG](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-management)
 
 [Présentation de VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 

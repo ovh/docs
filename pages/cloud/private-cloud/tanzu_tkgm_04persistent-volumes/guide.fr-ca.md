@@ -20,10 +20,10 @@ order: 05
 
 ## Prérequis
 
-- Être contact administrateur de [l'infrastructure Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être contact administrateur de [l'infrastructure Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Avoir un identifiant actif dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Avoir un identifiant actif dans vSphere.
-- Avoir déployé le cluster de **Workload** **TKG** à l'aide du guide « [administrer Tanzu Management Cluster Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management) ».
+- Avoir déployé le cluster de **Workload** **TKG** à l'aide du guide « [administrer Tanzu Management Cluster Grid](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-management) ».
 
 ## Présentation
 
@@ -41,7 +41,7 @@ Il est possible de créer d'autres Storage Classes pour chaque cluster de *WorkL
 
 ## En pratique
 
-Nous allons nous connecter sur un cluster de *WorkLoad* à partir de la console de la machine virtuelle **Bootstrap**. Vous pouvez vous aider du guide « [Administrer Tanzu Management Cluster Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management) » pour créer un cluster de workload et l'administrer.
+Nous allons nous connecter sur un cluster de *WorkLoad* à partir de la console de la machine virtuelle **Bootstrap**. Vous pouvez vous aider du guide « [Administrer Tanzu Management Cluster Grid](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-management) » pour créer un cluster de workload et l'administrer.
 
 A partir de la console de la machine virtuelle de **Bootstrap**, utilisez cette commande pour voir les contextes que l'on peut utiliser sur ce cluster :
 
@@ -212,11 +212,11 @@ Revenez dans le `Datacenter`{.action} à la racine des datacenters, cliquez sur 
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Présentation de Tanzu Kubernetes Grid au sein d'OVHcloud](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation)
+[Présentation de Tanzu Kubernetes Grid au sein d'OVHcloud](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-installation)
 
-[Installer Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-installation)
+[Installer Tanzu Kubernetes Grid](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-installation)
 
-[Administrer Tanzu Management Cluster Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-management)
+[Administrer Tanzu Management Cluster Grid](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-management)
 
 [Présentation de VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
