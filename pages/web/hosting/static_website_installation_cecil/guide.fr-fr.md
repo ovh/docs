@@ -6,20 +6,24 @@ section: 'Premiers pas'
 order: 
 ---
 
-**Dernière mise à jour le 14/11/2022**
+**Dernière mise à jour le 15/11/2022**
 
 ## Objectif
 
-Ce guide a pour objectif de vous permettre d'installer et de configurer [Cecil](https://cecil.app/), application écrite en PHP permettant de générer et administrer des pages web statiques.
+Ce guide a pour objectif de vous permettre d'installer et de configurer [Cecil](https://cecil.app/), application écrite en PHP permettant de générer et d'administrer des pages web statiques.
+
+Un site web composé essentiellement de pages web statiques vous garantira un meilleur temps de chargement pour vos visiteurs en plus d’une plus grande sécurité. Sans contenu dynamique, vos pages représentent un risque moindre quant aux attaques.
+
+La génération d’un site statique vous permet de disposer d’une grande liberté de création pour vous permettre de créer le site web de vos rêves tout en gagnant du temps car vous n’avez pas à partir de zéro.
 
 ## Prérequis
 
-Pour avoir des temps de réponse optimaux, nous préconisons notre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/). Cette solution inclut, entre autres, un accès SSH qui va vous permettre d'installer une ou plusieurs solutions alternatives à celles proposées dans l'offre.
+Pour avoir des temps de réponse optimaux, nous préconisons notre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/). Cette solution inclut, entre autres, un accès SSH qui va vous permettre d'installer, en ligne de commande, une ou plusieurs solutions alternatives à celles proposées dans l'offre.
 
 Pour mettre en place la solution, vous devrez intégrer les éléments suivants :
 - être familier de la ligne de commande et de l'utilisation d'un terminal
 - savoir transférer ses fichiers en FTP avec un client comme [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
-- avoir paramétré votre zone DNS pour faire pointer votre nom de domaine (ou votre sous-domaine) sur votre serveur.
+- avoir paramétré votre zone DNS pour faire pointer votre nom de domaine (ou votre sous-domaine) sur votre serveur. Cela vous sera utile si vous avez l’intention de créer plusieurs sites statiques sur le même hébergement web.
 
 Vous devez également avoir installé [Composer](https://getcomposer.org/) et avoir votre fichier `composer.phar` à la racine de votre serveur où dans n'importe quel répertoire accessible.
 
@@ -59,7 +63,7 @@ php cecil.phar new:site
 Vous aurez alors à renseigner certains éléments :
 - le titre de votre site _(title)_
 - la _baseline_
-- l'URL de votre site
+- l'URL de votre site (par exemple, `https://monsite.ovh`)
 - une description de votre site
 
 ![Installation Cecil](images/static_website_installation_cecil%5B1%5D.png)
@@ -69,7 +73,7 @@ Une fois ces éléments renseignés, vous devez maintenant déployer le site en 
 php cecil.phar build
 ```
 
-En affichant le contenu du répertoire, vous constaterez la création d'un répertoire `_site` qui contiendra l'ensemble des fichiers HTML et des assets, répetoire sur lequel pointe votre nom de domaine :
+En affichant le contenu du répertoire, vous constaterez la création d'un répertoire `_site` qui contiendra l'ensemble des fichiers HTML et des assets, répertoire sur lequel pointe votre nom de domaine :
 
 ![Installation Cecil](images/static_website_installation_cecil%5B2%5D.png)
 
@@ -129,7 +133,7 @@ Et vous pouvez la visualiser sur votre serveur en tapant l'URL de votre site, su
 
 ![Résultat navigateur](images/static_website_installation_cecil%5B7%5D.png)
 
-#### Modifier ses fichiers
+#### Personnaliser les fichiers de votre site
 
 ##### **Modification sur le serveur**
 
