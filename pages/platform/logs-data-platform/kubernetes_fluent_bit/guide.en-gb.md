@@ -6,7 +6,7 @@ excerpt: All the logs of your pods in one place
 section: Use cases
 ---
 
-**Last updated 27th July, 2020**
+**Last updated 15th November, 2022**
 
 ## Objective
 
@@ -63,7 +63,7 @@ We create a *ldp-token* secret with only one key named *ldp-token* as the value 
 
 #### ConfigMap File
 
-Even if it is undocumented, Fluent Bit supports [GELF](https://docs.graylog.org/){.external} as a standard output with udp,tcp and TLS protocols out of the box. We will modify the proposed file of the documentation to parse and convert Fluent Bit logs to GELF:
+Even if it is undocumented, Fluent Bit supports [GELF](https://docs.graylog.org/){.external} as a standard output with udp,tcp and TLS protocols out of the box. We will modify the proposed file of the documentation to parse and convert Fluent Bit logs to GELF. The input is using the [CRI parser](https://docs.fluentbit.io/manual/installation/kubernetes#container-runtime-interface-cri-parser) to properly format logs:
 
 ```yaml
 apiVersion: v1
@@ -91,15 +91,21 @@ data:
     @INCLUDE output-ldp.conf
 
   input-kubernetes.conf: |
+    # CRI Parser
+    [PARSER]
+        # http://rubular.com/r/tjUt3Awgg4
+        Name cri
+        Format regex
+        Regex ^(?<time>[^ ]+) (?<stream>stdout|stderr) (?<logtag>[^ ]*) (?<message>.*)$
+        Time_Key    time
+        Time_Format %Y-%m-%dT%H:%M:%S.%L%z
     [INPUT]
-        Name              tail
-        Tag               kube.*
-        Path              /var/log/containers/*.log
-        Parser            docker
-        DB                /var/log/flb_kube.db
-        Mem_Buf_Limit     5MB
-        Skip_Long_Lines   On
-        Refresh_Interval  10
+        Name tail
+        Path /var/log/containers/*.log
+        Parser cri
+        Tag kube.*
+        Mem_Buf_Limit 5MB
+        Skip_Long_Lines On
 
   filter-kubernetes.conf: |
     [FILTER]
