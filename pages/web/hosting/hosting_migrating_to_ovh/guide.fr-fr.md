@@ -126,7 +126,7 @@ Pour cela, remplacez les informations de connexion de votre ancienne base de don
 > Pour lier votre nouvelle base de données si vous utilisez un Content Management System (CMS) comme WordPress, Joomla!, Drupal ou PrestaShop, retrouvez les informations sur leurs fichiers de configuration depuis **l'étape 2** du guide « [modification du mot de passe d'une base de données](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/) ».
 >
 
-Déclarez/autorisez votre nom de domaine externe sur votre hébergement web OVHcloud via notre guide « [gestion des multisites d'un hébergement web OVHcloud](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) ». Déclarez bien le chemin du « dossier racine » dans lequel vous avez placé vos fichiers dans l'espace de stockage FTP de votre hébergement OVHcloud au début de cette étape.
+Déclarez/autorisez votre nom de domaine externe sur votre hébergement web OVHcloud via notre guide « [gestion des multisites d'un hébergement web OVHcloud](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) ». Déclarez bien le « nom » du dossier racine que vous avez choisi au début de l''[étape 4](#step4). Pour rappel, il s'agit du dossier dans lequel vous avez placé vos fichiers dans votre espace de stockage FTP.
 
 > [!warning]
 >
