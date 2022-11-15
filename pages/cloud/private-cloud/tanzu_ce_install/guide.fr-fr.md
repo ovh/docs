@@ -15,8 +15,9 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 
 > [!warning]
 >
-> Tanzu Community Edition ne bénéficie pas du support OVHcloud mais vous pouvez l'installer pour des tests. Si vous souhaitez béneficier d'une version maintenue par OVHcloud utilisez **Tanzu Kubernetes Grid** à la place. Vous pouvez vous aider de ce guide [Présentation de Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-presentation/) pour déployer cette solution.
+> Tanzu Community Edition arrive en fin de vie à la fin de l'année 2022 et ne sera plus disponible. VMware a décidé de proposer le téléchargement gratuit de VMware Tanzu Kubernetes Grid. Vous pouvez vous aider de ce guide  [Présentation de Tanzu Kubernetes Grid](https://docs.ovh.com/fr/private-cloud/tanzu-tkgm-presentation/) pour le déployer.
 >
+
 
 **Ce guide est un exemple d'installation étape par étape de TCE.**
 
