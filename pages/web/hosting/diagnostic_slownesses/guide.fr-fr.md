@@ -134,11 +134,11 @@ phpinfo();
 
 > [!warning]
 >
-> Dans certains cas, les fichiers **« .htaccess »** présents dans les répertoires/dossiers situés en amont ou au même niveau que l'endroit où vous avez placé votre fichier **« phpinfo.php »** peuvent influer sur l'affichage dans un navigateur Internet du **« phpinfo.php »**. 
+> Dans certains cas, les fichiers « **.htaccess** » présents dans les répertoires/dossiers situés en amont ou au même niveau que l'endroit où vous avez placé votre fichier « **phpinfo.php** » peuvent influer sur l'affichage dans un navigateur Internet du « **phpinfo.php** ». 
 >
-> Les manipulations sur un fichier **« .htaccess »** peuvent avoir des conséquences sur l'affichage de votre site. Faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés à réaliser ce qui suit.
+> Les manipulations sur un fichier « **.htaccess** » peuvent avoir des conséquences sur l'affichage de votre site. Faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés à réaliser ce qui suit.
 >
-> S'il ne s'affiche pas et **uniquement pour les utilisateurs avertis**, renommez vos fichiers **« .htaccess »** en **« .htaccess_OLD »** afin que le serveur ne les exécutent plus le temps de votre test. Renommez-les correctement une fois votre diagnostic effectué.
+> S'il ne s'affiche pas et **uniquement pour les utilisateurs avertis**, renommez vos fichiers « **.htaccess** » en « **.htaccess_OLD** » afin que le serveur ne les exécutent plus le temps de votre test. Renommez-les correctement une fois votre diagnostic effectué.
 >
 
 **Exemple**: si le nom de domaine permettant l'accès à votre site est « domain.tld » et si le fichier « **phpinfo.php** » a bien été placé à la racine de votre site web, celui-ci sera accessible grâce à l'URL suivante : `http://domain.tld/phpinfo.php` (ou `https://domain.tld/phpinfo.php`).
@@ -255,10 +255,10 @@ Pour diminuer le flux de requêtes à chacun des chargements de vos pages, vous 
 
 > [!warning]
 >
-> Les actions que vous réalisez dans votre base de données peuvent avoir des conséquences irréversibles si elle ne sont pas réalisées méthodiquement et correctement. Faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous n'êtes pas certain des actions à réaliser. 
+> Les actions que vous réalisez dans votre base de données peuvent avoir des conséquences irréversibles si elles ne sont pas réalisées méthodiquement et correctement. Faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous n'êtes pas certain des actions à réaliser. 
 >
 
-Vérifier si un nombre conséquent de requêtes sont effectuées vers votre base de données.<br>
+Vérifiez si un nombre conséquent de requêtes sont effectuées vers votre base de données.<br>
 En effet, cette situation peut engendrer une sur-sollicitation et aboutir à des ralentissements, voire à des codes « 504 Gateway Timeout ».
 
 Vérifiez également la taille de vos tables présentes dans votre base de données.<br>
