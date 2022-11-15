@@ -80,7 +80,6 @@ This shared model can help relieve the customer’s operational burden.
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage access of OVHcloud users on the service infrastructure |  | RA |
 | Manage access to the manager and to mailboxes following access control policy defined | RA | I |
 | Define and implement security protocols on the service (IMAP, POP, MAPI, EWS) and security associated | I | RA |
 | Manage access to control plane | A | RI |
