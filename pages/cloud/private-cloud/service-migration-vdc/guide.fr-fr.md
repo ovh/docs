@@ -12,7 +12,7 @@ hidden: true
 .ovh-api-main { background:#fff;}
 </style> 
 
-**Dernière mise à jour le 10/11/2022**
+**Dernière mise à jour le 15/11/2022**
 
 **Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (DC ou SDDC) vers un nouveau vDC de destination (Essentials ou Premier).**
 
@@ -618,7 +618,7 @@ Voici comment procéder:
 > >
 >
 
-1\. Activez la sauvegarde pour le nouveau vDC.
+1\. Activez l'option Veeam Managed Backup sur le nouveau vDC depuis l'espace client OVHCloud.
 
 2\. Migrez les machines virtuelles du vDC d'origine vers le vDC de destination.
 
