@@ -177,7 +177,7 @@ A popup menu will appear, and you can choose from:
 
 ![hosting](images/1830.png){.thumbnail}
 
-## Useful information
+## Useful information <a name="useful-information"></a>
 
 ### File and folder access rights (CHMOD)
 

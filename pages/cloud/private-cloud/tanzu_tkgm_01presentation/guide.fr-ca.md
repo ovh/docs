@@ -6,7 +6,7 @@ section: Tanzu
 order: 02
 ---
 
-**Dernière mise à jour le 10/11/2022**
+**Dernière mise à jour le 15/11/2022**
 
 ## Objectif
 
@@ -59,7 +59,7 @@ Pour chaque nouveau cluster *WorkLoad* installé en mode production, six nouvell
 
 ![02 admin and workload cluster diagram](images/02-tkc-mc-wc01.png){.thumbnail}
 
-Une application peut être constituée de plusieurs **pods** qui communiquent entre eux au travers du réseau interne du cluster de *Workflow*. Certains ports sont ouverts sur le réseau du cluster **VMware** grâce au module **kube-vip**.
+Une application peut être constituée de plusieurs **pods** qui communiquent entre eux au travers du réseau interne du cluster de *workload*. Certains ports sont ouverts sur le réseau du cluster **VMware** grâce au module **kube-vip**.
 
 ![03 apps and load balancing](images/03-internetworkcommunication01.png){.thumbnail}
 

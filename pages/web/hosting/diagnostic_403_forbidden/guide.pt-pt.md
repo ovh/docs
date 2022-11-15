@@ -85,7 +85,7 @@ Se o seu alojamento foi encerrado há menos de duas semanas e contém vários si
 
 Se o seu alojamento foi encerrado há mais de duas semanas, contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/) para efetuar uma auditoria de segurança das suas soluções. 
 
-### Etapa 4: reativar o alojamento web
+### Etapa 4: reativar o alojamento web <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >
