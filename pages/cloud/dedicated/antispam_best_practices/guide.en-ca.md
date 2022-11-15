@@ -2,7 +2,7 @@
 title: OVHcloud AntiSpam - Best Practices and Unblocking an IP
 slug: antispam-best-practices
 excerpt: Find out about our antispam best practices and how to unblock an IP blocked for SPAM
-section: Server management
+section: Server Management
 order: 5
 ---
 
