@@ -85,7 +85,7 @@ If your Web Hosting plan was closed more than two weeks ago, contact a [speciali
 > We recommend that you carry out a security audit **before** reopening your Web Hosting plan in any case. You might be held legally responsible for any malicious code originating from your hosting, regardless of intent.
 >
 
-### Step 4: Reactivate your Web Hosting plan
+### Step 4: Reactivate your Web Hosting plan <a name="reactivate-web-hosting"></a>
 
 #### Reactivating your hosting with FileZilla
 

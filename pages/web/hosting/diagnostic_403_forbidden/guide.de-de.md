@@ -85,7 +85,7 @@ Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und mehrere Websi
 
 Wenn Ihr Hosting vor mehr als zwei Wochen geschlossen wurde, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/), um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen. 
 
-### Schritt 4: Webhosting wieder aktivieren
+### Schritt 4: Webhosting wieder aktivieren <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >

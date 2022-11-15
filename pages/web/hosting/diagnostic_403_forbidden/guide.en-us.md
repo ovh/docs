@@ -80,7 +80,7 @@ If your Web Hosting plan was closed less than two weeks ago and contains multipl
 
 If your Web Hosting plan was closed more than two weeks ago, contact a [specialised service provider](https://partner.ovhcloud.com/en/directory/).
 
-### Step 4: Reactivate your Web Hosting plan
+### Step 4: Reactivate your Web Hosting plan <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >

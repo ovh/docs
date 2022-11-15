@@ -182,7 +182,7 @@ Surge um menu contextual e tem várias opções à sua disposição:
 
 ![alojamento](images/1830.png){.thumbnail}
 
-## Informações úteis
+## Informações úteis <a name="useful-information"></a>
 
 ### Direitos de acesso (Chmod) aos ficheiros e às pastas
 
