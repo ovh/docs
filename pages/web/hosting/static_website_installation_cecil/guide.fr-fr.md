@@ -236,9 +236,37 @@ published: true
 <script src="script.js"></script>
 ```
 
+#### Modifier les templates
+
+Les templates sont disposés dans le répertoire `layouts`. Vous pouvez les visualiser avec la commande :
+
+```sh
+ls -la layouts
+```
+
+Le fichier contient un répertoire `blog` et un fichier `index.html.twig` :
+
+![Cecil layouts directory](images/static_website_installation_cecil%5B15%5D.png)
+
+Ouvrez le fichier `index.html.twig` :
+
+![Cecil layouts index file](images/static_website_installation_cecil%5B16%5D.png)
+
+Le fichier fait référence à un template qui n'est pas présent dans le répertoire. Ce fichier (et d'autres) sont en fait dans le fichier `cecil.phar`. Les extensions `.phar` désigne des archives de fichiers PHP qui sont manipulables sans être décompressés.
+Décompressez les fichiers de cette archive pour les rendre visibles :
+
+```sh
+php cecil.phar util:extract
+```
+
+Affichez à nouveau le contenu du répertoire `layouts` :
+
+![Cecil layouts full directory](images/static_website_installation_cecil%5B17%5D.png)
+
 ## Aller plus loin
 
 - le site de l'application [Cecil](https://cecil.app/)
 - la [page](https://daringfireball.net/projects/markdown/) du créateur du format Markdown
 - un [guide](https://www.markdownguide.org/) sur ce format
 - notre guide sur l'[utilisation de FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+- le site officiel de [Twig](https://twig.symfony.com/), le moteur de templates utilisé.
