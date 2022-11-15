@@ -57,9 +57,9 @@ Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre four
 > Nous vous conseillons de noter vos résultats de diagnostic au fur et à mesure de votre avancée dans ce guide. En effet, ces résultats s'avèreront très utiles pour la résolution de votre situation, quelle que soit l'origine de la lenteur.
 >
 
-### Comprendre la notion de Time To First Bite (TTFB)
+### Comprendre la notion de Time To First Byte (TTFB)
 
-Le *Time To First Bite* (TTFB) représente la durée que votre hébergement web va mettre pour renvoyer le premier octect de données à votre navigateur Internet suite à une requête effectuée par ce dernier pour afficher votre site web.
+Le *Time To First Byte* (TTFB) représente la durée que votre hébergement web va mettre pour renvoyer le premier octet de données à votre navigateur Internet suite à une requête effectuée par ce dernier pour afficher votre site web.
 
 Lorsqu'il n'y a pas de surcharge au niveau de l'infrastructure d'hébergement mutualisé et que votre site internet est optimisé au maximum, le TTFB n'exède pas les 800ms.
 
@@ -134,9 +134,11 @@ phpinfo();
 
 > [!warning]
 >
-> Dans certains cas, les fichiers « **.htaccess** » présents dans les répertoires/dossiers situés en amont ou au même niveau que l'endroit où vous avez placé votre fichier « **phpinfo.php** » peuvent influer sur l'affichage dans un navigateur Internet du « **phpinfo.php** ».
+> Dans certains cas, les fichiers **« .htaccess »** présents dans les répertoires/dossiers situés en amont ou au même niveau que l'endroit où vous avez placé votre fichier **« phpinfo.php »** peuvent influer sur l'affichage dans un navigateur Internet du **« phpinfo.php »**. 
 >
-> S'il ne s'affiche pas, renommez vos fichiers « **.htaccess** » en « **.htaccess_OLD** » afin que le serveur ne les exécutent plus pendant la durée de votre test. Renommez-les correctement une fois votre diagnostic effectué.
+> Les manipulations sur un fichier **« .htaccess »** peuvent avoir des conséquences sur l'affichage de votre site. Faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés à réaliser ce qui suit.
+>
+> S'il ne s'affiche pas et **uniquement pour les utilisateurs avertis**, renommez vos fichiers **« .htaccess »** en **« .htaccess_OLD »** afin que le serveur ne les exécutent plus le temps de votre test. Renommez-les correctement une fois votre diagnostic effectué.
 >
 
 **Exemple**: si le nom de domaine permettant l'accès à votre site est « domain.tld » et si le fichier « **phpinfo.php** » a bien été placé à la racine de votre site web, celui-ci sera accessible grâce à l'URL suivante : `http://domain.tld/phpinfo.php` (ou `https://domain.tld/phpinfo.php`).
