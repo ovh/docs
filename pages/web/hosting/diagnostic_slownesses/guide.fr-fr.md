@@ -150,7 +150,7 @@ phpinfo();
 > En d'autres termes, si les lenteurs sont présentes uniquement sur une partie des pages ou du contenu de votre site web, cela signifie que l'hébergement mutualisé **n'est pas la cause des lenteurs** rencontrées sur votre site web.
 >
 
-#### 1.4 - Testez la connectivité et la vitesse d'exécution de votre base de données :
+#### 1.4 - Testez la connectivité de votre base de données :
 
 Connectez-vous à votre base de données en suivant **l'étape 3** de notre guide sur la [création d'une base de données mutualisée](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
@@ -160,38 +160,10 @@ Si la connexion est réussie, vous arrivez sur l'interface suivante :
 
 ![PHPMyAdmin](images/pma.png){.thumbnail}
 
-Cliquez sur l'onglet `SQL`{.action} pour ouvrir le menu de saisie de commandes puis saisissez la commande « Benchmark » suivante : 
-
-```bash
-SELECT benchmark(1000000,1+2);
-```
-
-Cliquez ensuite sur `Go`{.action} pour lancer la requête.
-
-![Lancement Benchmark](images/benchmark.png){.thumbnail}
-
-Une fois l'exécution terminée, un temps d'exécution s'affiche avec le résultat de la commande « Benchmark » :
-
-![Résultat Benchmark](images/benchmark2.png){.thumbnail}
-
-Effectuez l'opération 3 fois en espaçant les essais de 5 minutes puis notez les temps d'exécution.
-
-Le temps total d'exécution de la requête « Benchmark » ne doit pas excéder les valeurs suivantes en fonction de la base de données que vous utilisez :
-
-- 1,4 secondes pour une base de données présente sur une offre **CloudDB** ;
-- 1,6 secondes pour une base de données mutualisée de type **Perso** ;
-- 1.7 secondes pour une base de données mutualisée de type **Pro**.
-
-Si les temps d'exécution sont inférieurs aux valeurs ci-dessus, cela signifie que **l'infrastructure hébergeant votre base de données n'est pas en cause**.
-
-Profitez-en pour vérifier si un nombre conséquent de requêtes sont effectuées vers votre base de données.<br>
-En effet, cette situation peut engendrer une sur-sollicitation et aboutir à des ralentissements, voire à des codes « 504 Gateway Timeout ».
-
-Vérifiez également la taille de vos tables présentes dans votre base de données.<br>
-Si une table est appelée régulièrement et que celle-ci est volumineuse, le chargement de cette table peut se faire plus lentement et engendrer des requêtes lentes.<br>
-L'accumulation de ces requêtes lentes peut générer un ralentissement d'accès au site, voire un code « 504 Gateway Timeout ».
-
-Si vous avez des tables volumineuses ou des flux de requêtes en base de données conséquents, optimisez vos tables et mettez en place des solutions permettant de diminuer les flux de requêtes vers votre base de données.
+> [!warning]
+>
+> Si vous rencontrez une erreur, consultez notre documentation sur les [erreurs courantes rencontrées avec une base de données](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/). Agissez ensuite à l'aide du guide ci-dessus pour corriger votre situation puis tentez à nouveau de vous connecter à votre base de données.
+>
 
 #### 1.5 - Interprétation des diagnostics effectués
 
@@ -199,8 +171,8 @@ Si vous avez des tables volumineuses ou des flux de requêtes en base de donnée
 
 Les affirmations suivantes s'appliquent **toutes** à votre situation :
 
-- au moins une page, un script ou un fichier (y compris le fichier « **phpinfo.php** ») testé lors de l'étape 1 s'est chargé rapidement ;
-- votre base de données a exécuté la commande « Benchmark » rapidement.
+- au moins une page, un script ou un fichier (y compris le fichier « **phpinfo.php** ») testé lors de l'étape 1 s'est chargé rapidement;
+- La connexion à votre base de données s'est correctement effectuée.
 
 > Cela signifie que les lenteurs que vous rencontrez proviennent directement des scripts qui composent votre site web. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
 
@@ -208,18 +180,8 @@ Les affirmations suivantes s'appliquent **toutes** à votre situation :
 
 Les affirmations suivantes s'appliquent **toutes** à votre situation :
 
-- au moins une page, un script ou un fichier (y compris le fichier « **phpinfo.php** ») testé lors de **l'étape 1** s'est chargé rapidement ;
-- la commande « Benchmark » excède les temps totaux d'exécution indiqués plus haut dans ce guide ;
-- vous avez constaté des tables volumineuses ou un flux de requêtes conséquent vers votre base de données.
-
-> Cela signifie que les lenteurs que vous rencontrez proviennent directement des scripts qui composent votre site. Vous pouvez passer directement à [l'étape 2](#step2) pour suivre les conseils d'optimisation afin de résoudre votre situation.
-
-**Cas n°3**
-
-Les affirmations suivantes s'appliquent **toutes** à votre situation :
-
 - **aucun incident et aucune maintenance** ne sont déclarés, ou n'ont été déclarés comme **résolus** il y a moins de trois heures, pour vos services d'hébergement web sur notre site [status-ovhcloud.com](https://web-cloud.status-ovhcloud.com/) ;
-- les **cas n°1** et **cas n°2** détaillés ci-dessus ne correspondent pas à votre configuration.
+- le **cas n°1** détaillé ci-dessus ne correspont pas à votre configuration.
 
 > Des investigations côté OVHcloud seront nécessaires. Contactez nos services d'assistance sur les solutions Web, afin qu'ils confirment avec vous l'origine des ralentissements que vous rencontrez.
 
@@ -289,7 +251,25 @@ Pour diminuer le flux de requêtes à chacun des chargements de vos pages, vous 
 > OVHcloud propose plusieurs [offres CDN](https://www.ovhcloud.com/fr/web-hosting/options/). Si vous souhaitez en utiliser ou en activer une pour votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis consultez notre guide sur [l'utilisation du CDN OVHcloud](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/).
 >
 
-#### 2.4 - Optimisez vos images
+#### 2.4 - optimisez votre base de données
+
+> [!warning]
+>
+> Les actions que vous réalisez dans votre base de données peuvent avoir des conséquences irréversibles si elle ne sont pas réalisées méthodiquement et correctement. Faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous n'êtes pas certain des actions à réaliser. 
+>
+
+Vérifier si un nombre conséquent de requêtes sont effectuées vers votre base de données.<br>
+En effet, cette situation peut engendrer une sur-sollicitation et aboutir à des ralentissements, voire à des codes « 504 Gateway Timeout ».
+
+Vérifiez également la taille de vos tables présentes dans votre base de données.<br>
+Si une table est appelée régulièrement et que celle-ci est volumineuse, le chargement de cette table peut se faire plus lentement et engendrer des requêtes lentes.<br>
+L'accumulation de ces requêtes lentes peut générer un ralentissement d'accès au site, voire un code « 504 Gateway Timeout ».
+
+Si vous avez des tables volumineuses ou des flux de requêtes en base de données conséquents, optimisez vos tables et mettez en place des solutions permettant de diminuer les flux de requêtes vers votre base de données.
+
+Si vous constatez que des données inutilisées ou obsolètes sont présentes dans votre base de données, nettoyez celle-ci pour améliorer ses performances au quotidien.
+
+#### 2.5 - Optimisez vos images
 
 Si, par exemple, une image est présente sur votre site en résolution « 1000x2000 » et que celle-ci s'affiche au maximum en 100x200 pixels sur la page de votre site web, cela engendre une consommation de ressources côté hébergement qui peut être optimisée.
 
@@ -299,7 +279,7 @@ Si votre site contient beaucoup d'images, cela peut représenter une consommatio
 
 Redimensionnez l'ensemble de vos images pour diminuer au maximum la consommation des ressources.
 
-#### 2.5 - Optimisez le reste de votre site web
+#### 2.6 - Optimisez le reste de votre site web
 
 Consultez notre guide sur l'[optimisation des performances pour votre site Internet](https://docs.ovh.com/fr/hosting/optimisation-performances-site/).
 
