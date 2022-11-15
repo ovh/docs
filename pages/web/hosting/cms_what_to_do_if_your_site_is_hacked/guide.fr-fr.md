@@ -60,6 +60,7 @@ Réalisez une analyse anti-virus et anti-spywares de tous les appareils (PC, Mac
 >
 
 > [!success]
+>
 > Nous vous recommandons d'utiliser plusieurs anti-virus/anti-spywares (gratuits ou payants) pour chacun de vos appareils.
 > Effectivement, certains virus ou spywares peuvent persister en fonction du logiciel anti-virus utilisé.
 > Il existe des versions d'anti-virus/anti-spywares que vous pouvez installer « en local » sur votre appareil ou utiliser directement « en ligne » sur internet.
