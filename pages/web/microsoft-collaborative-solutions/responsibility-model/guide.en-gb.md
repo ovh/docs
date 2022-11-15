@@ -22,7 +22,6 @@ This shared model can help relieve the customer’s operational burden.
 | C: Is consulted during the process |
 | I: Is informed of the results of the process |
 
-
 ### 1. Before subscription
 
 #### 1.1. Specify service as needed
@@ -30,9 +29,9 @@ This shared model can help relieve the customer’s operational burden.
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Define and configure a domain name before service subscription | RA |  |
-| Choose the service's sizing (50Go or 300Go) without downgrade option | RA | I |
-| Define the version of Exchange and the mutualized infrastructure that support the service |  | RA |
-| Chose service location in EU (Or in CA if the client uses CA website ) | I | RA |
+| Choose the service's sizing (50GB or 300GB) without downgrade option | RA | I |
+| Define the version of Exchange and the mutualized infrastructure that supports the service |  | RA |
+| Choose service location in EU (or in CA if the client uses CA website ) | I | RA |
 
 ### 2. Service availability
 
@@ -40,7 +39,7 @@ This shared model can help relieve the customer’s operational burden.
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Install, configure, and deliver functional briks of the service | I | RA |
+| Install, configure, and deliver functional bricks of the service | I | RA |
 | Provide service licences | I | RA |
 | Produce, route, deliver and maintain physical machines, virtual machines and hosting buildings |  | RA |
 | Deliver a preconfigured service with requested number of mailboxes that needs additional configuration by the client | I | RA |
@@ -75,7 +74,6 @@ This shared model can help relieve the customer’s operational burden.
 | Administrate domain, mailboxes, distribution groups, … | RA | IR |
 | Manage backups on the service |  | RA |
 
-
 ##### **3.1.2. Access management**
 
 | **Activity** | **Customer** | **OVHcloud** |
@@ -105,13 +103,11 @@ This shared model can help relieve the customer’s operational burden.
 | --- | --- | --- |
 | Encrypt data on storage media |  | RA |
 
-
 ##### **3.1.5. Connectivity**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Manage IP addressing plan and network systems (architecture, protocols, network traffic and access to the service) |  | RA |
-
 
 ##### **3.1.6. Management**
 
@@ -120,13 +116,11 @@ This shared model can help relieve the customer’s operational burden.
 | Provide inventory of the service used | I | RA |
 | Maintain in operational and security condition the Exchange service |  | RA |
 
-
 ##### **3.1.7. Business continuity**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Define and maintain a business continuity and recovery plan following business needs |  | RA |
-
 
 #### 3.2. Event management
 
@@ -162,7 +156,6 @@ This shared model can help relieve the customer’s operational burden.
 | --- | --- | --- |
 | Define and plan reversion operations | RA | I |
 
-
 ### 5. End of service
 
 #### 5.1. Configuration destruction
@@ -171,17 +164,14 @@ This shared model can help relieve the customer’s operational burden.
 | --- | --- | --- |
 | Destroy configurations of end of service following contract termination| I | RA |
 
-
 #### 5.2. Data destruction
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Destroy client's data | I | RA |
 
-
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+[All our Microsoft collaborative solutions ocumentation](../)
+
+Join our community of users on <https://community.ovh.com/en/>.
