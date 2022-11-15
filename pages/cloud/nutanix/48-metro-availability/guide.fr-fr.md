@@ -5,6 +5,7 @@ excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
 section: "Plan de Reprise d'Activité"
 order: 06
 ---
+<link rel="stylesheet" href="https://fpillotovh.github.io/icons/icons.css">
 
 **Dernière mise à jour le 15/11/2022**
 
