@@ -8,7 +8,7 @@ routes:
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->
-**Last updated 8th July 2022**
+**Last updated 16th November 2022**
 
 ## Objective
 
@@ -113,7 +113,7 @@ The partitioning layout defined within an OVHcloud template cannot be changed: t
 > @api {GET} /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
 >
 
-**Customer Templates**
+**Customer Templates <a name="customertemplates"></a>**
 
 Users can create custom installation templates based on OVHcloud templates in order to be able to create custom partitioning layouts:
 
@@ -275,6 +275,7 @@ The following table gives an overview of well known customer errors and how to f
 |Partition of type `t` with mountpoint `m` cannot fill the disk.|- You have chosen the `swap` partition to fill the disk, we disallow this to avoid creating unnecessarily large `swap` partitions|- Set a fixed size for the `swap` partition|
 |Missing `/` partition. Please add a `/` partition in your partition scheme!|- Any Linux-based OS needs at least a `/` partition|- Add a `/` partition in your partitioning layout|
 |`message`. Please adjust partitions so that the `p` partition fits on `n` disk(s)|- You have chosen a partition with a RAID that requires a number of disks that your server can provide, but some disks are already full because of other partitions and/or this current partition|- If it is not already set on another partition, set the partition size to fill the disk<br />- Reduce the size of this partition so that it fits the disks<br />- Reduce the size of other partitions partitions so that this partition fits the disks|
+|Error with MBR partition table: Partition `p` is larger than 2TiB and this server does not support GPT|- You have defined a partition with a size that exceeds 2TiB and your are trying to apply such partitioning to a server that doesn't support GPT|- Reduce the partition to a size less than 2TiB<br />- Apply this partitioning to another similar server that supports GPT<br />- If you are using [customer templates](#customertemplates) to apply a partitioning with partitions larger than 2TiB to GPT-compatible and GPT-incompatible servers, you should create two separate [customer templates](#customertemplates). One template can have partitions that exceed 2TiB and should be used with GPT-compatible servers, the other template must have smaller partitions and should be used with servers that are not compatible with GPT|
 
 #### Input customer auto-fixing
 

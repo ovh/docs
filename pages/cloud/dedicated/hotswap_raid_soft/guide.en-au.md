@@ -2,7 +2,7 @@
 title: Hot Swap - Raid Soft
 slug: hotswap-raid-soft
 excerpt: This guide will show you the steps required to hotswap a disk on a server using software RAID.
-section: Server Management
+section: 'RAID and disks'
 ---
 
 
