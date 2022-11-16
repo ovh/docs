@@ -6,7 +6,7 @@ section: 'RAID & disques'
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->
-**Dernière mise à jour le 13/07/2022**
+**Dernière mise à jour le 16/11/2022**
 
 ## Objectif
 
@@ -74,7 +74,7 @@ Lors du lancement de l’installation du système d'exploitation, vous pouvez so
 
 **Templates OVHcloud <a name="OVHcloudtemplates"></a>**
 
-Un template OVHcloud est un template officiel quasi-identique à l'image prête à l'emploi de l'éditeur/vendeur de logiciel officiel. 
+Un template OVHcloud est un template officiel quasi-identique à l'image prête à l'emploi de l'éditeur/vendeur de logiciel officiel.
 
 Pour lister les templates disponibles (en fonction de la compatibilité matérielle de votre serveur), utilisez l'appel API suivant :
 
@@ -114,7 +114,7 @@ La configuration du partitionnement définie dans un template OVHcloud n'est pas
 > @api {GET} /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
 >
 
-**Templates personnalisés**
+**Templates personnalisés <a name="customertemplates"></a>**
 
 Les utilisateurs peuvent créer des templates d'installation personnalisés à partir des templates OVHcloud afin de pouvoir créer des dispositions de partitionnement personnalisées :
 
@@ -276,6 +276,7 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 |Partition of type `t` with mountpoint `m` cannot fill the disk.|- Vous avez choisi la partition `swap` pour remplir le disque, nous interdisons cela pour éviter de créer des partitions `swap` inutilement trop grandes.|- Définissez une taille fixe pour la partition de `swap`.|
 |Missing `/` partition. Please add a `/` partition in your partition scheme!|- Tout système d'exploitation Linux nécessite au moins une partition `/`.|- Ajoutez une partition `/` dans votre schéma de partitionnement.|
 |`message`. Please adjust partitions so that the `p` partition fits on `n` disk(s)|- Vous avez choisi une partition avec un RAID nécessitant un nombre de disques que votre serveur peut fournir, mais certains disques sont déjà pleins à cause d'autres partitions et/ou de cette partition actuelle.|- Si ce n'est pas déjà fait sur une autre partition, définissez la taille de la partition comme remplissant le disque.<br />- Réduisez la taille de cette partition pour qu'elle s'adapte aux disques.<br />- Réduisez la taille des autres partitions pour que cette partition s'adapte aux disques.|
+|Error with MBR partition table: Partition `p` is larger than 2TiB and this server does not support GPT|- Vous avez défini une partition dont la taille excède 2TiB et vous appliquez ce partitionnement sur un serveur qui ne supporte pas le GPT|- Réduisez la taille de cette partition à 2TiB.<br />- Appliquez ce partitionnement à un autre serveur similaire qui supporte GPT<br />- Lorsque vous utilisez des [templates personnalisés](#customertemplates), si vous avez certains serveurs qui ne supportent pas GPT et que vous souhaitez définir des partitions qui excèdent 2TiB, vous pouvez par exemple créer 2 [templates personnalisés](#customertemplates): un avec une/des partition(s) qui excèdent 2TiB pour les serveurs qui supportent GPT et un autre [template personnalisé](#customertemplates) sans partition qui excède 2TiB pour les serveurs qui ne supportent pas GPT|
 
 #### Auto-correction des données d'entrée client
 
