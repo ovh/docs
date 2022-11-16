@@ -16,33 +16,33 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ou [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) ou [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 > [!success]
 >
-> Pour installer WordPress **automatiquement** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module « en un clic »](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+> Pour installer WordPress **automatiquement** depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), consultez notre documentation sur l'[installation d'un module « en un clic »](https://docs.ovh.com/ca/fr/hosting/modules-en-1-clic/).
 >
-> Pour installer **manuellement un autre CMS** (Joomla!, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+> Pour installer **manuellement un autre CMS** (Joomla!, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 >
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) qui contient au moins une base de données.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) qui contient au moins une base de données.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/)
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 
 ## En pratique
 
 ### Etape 1 - préparer l'installation <a name="step1"></a>
 
-Pour installer le CMS **WordPress** sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
+Pour installer le CMS **WordPress** sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/), quelques préparatifs sont nécessaires.
 
 #### 1.1 - Vérifier la déclaration du « dossier racine »
 
 Le « dossier racine » correspond au répertoire dans lequel votre futur CMS sera installé dans votre hébergement. Il est recommandé de choisir un répertoire vide pour éviter les conflits avec vos autres potentiels multisites.
 
-Consultez notre documentation qui décrit [comment ajouter un multisite sur son hébergement web](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/), pour définir le dossier racine à utiliser sur votre WordPress.
+Consultez notre documentation qui décrit [comment ajouter un multisite sur son hébergement web](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/), pour définir le dossier racine à utiliser sur votre WordPress.
 
 > [!primary]
 >
@@ -51,16 +51,16 @@ Consultez notre documentation qui décrit [comment ajouter un multisite sur son 
 
 #### 1.2 - Vérifier le « pointage » du nom de domaine
 
-- Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre WordPress, ainsi que son sous-domaine en « www », pointent bien vers l'adresse IP de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+- Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre WordPress, ainsi que son sous-domaine en « www », pointent bien vers l'adresse IP de votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/).
 
-Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}.<br>
+Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}.<br>
 Dans l'encadré `Informations générales`{.action} sur votre droite, vous trouverez l'adresse IP de votre hébergement web dans le formulaire `IPv4`{.action}.
 
-Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine, en vous aidant de notre documentation sur les [zones DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
+Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine, en vous aidant de notre documentation sur les [zones DNS OVHcloud](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/).
 
 > [!warning]
 >
-> Si vous avez activé les options `CDN`{.action} ou `IP du pays`{.action} avec votre domaine, utilisez l'adresse IP adaptée en vous aidant de notre documentation recensant [l'ensemble des adresses IP de nos hébergements mutualisés](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/).
+> Si vous avez activé les options `CDN`{.action} ou `IP du pays`{.action} avec votre domaine, utilisez l'adresse IP adaptée en vous aidant de notre documentation recensant [l'ensemble des adresses IP de nos hébergements mutualisés](https://docs.ovh.com/ca/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/).
 >
 
 Si vous ne parvenez pas à effectuer ces vérifications, contactez l'hébergeur de votre zone DNS active afin de mettre à jour le pointage de votre nom de domaine.
@@ -70,18 +70,18 @@ Si vous ne parvenez pas à effectuer ces vérifications, contactez l'hébergeur 
 > Toutes les modifications effectuées dans votre zone DNS entraînent un délai de propagation de 4 à 24 heures.
 >
 
-- Récupérez [les informations nécessaires pour vous connecter à l'espace FTP de votre hébergement web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
-- Récupérez les accès à la base de données de votre offre d'hébergement web si elle existe déjà, ou créez-en une à l'aide de notre [documentation](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+- Récupérez [les informations nécessaires pour vous connecter à l'espace FTP de votre hébergement web](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
+- Récupérez les accès à la base de données de votre offre d'hébergement web si elle existe déjà, ou créez-en une à l'aide de notre [documentation](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/).
 
 #### 1.3 - Installer le client FTP gratuit « Filezilla »
 
-Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utilisation dans notre documentation sur l'[utilisation de Filezilla avec votre offre d'hébergement OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/).
+Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utilisation dans notre documentation sur l'[utilisation de Filezilla avec votre offre d'hébergement OVHcloud](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/).
 
 #### 1.4 - Préparer une base de données <a name="step1-4"></a>
 
-Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) en contiennent, à l'execption de [l'hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/).
+Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) en contiennent, à l'execption de [l'hébergement gratuit Start 10M](https://www.ovhcloud.com/fr-ca/domains/free-web-hosting/).
 
-Utilisez notre documentation pour [créer une base de données depuis votre offre d'hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+Utilisez notre documentation pour [créer une base de données depuis votre offre d'hébergement web](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/).
 
 Si vous disposez d'une offre CloudDB en MySQL ou MariaDB et que vous souhaitez l'utiliser pour installer manuellement votre WordPress, consultez notre documentation sur la [création d'une base de données sur un CloudDB](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/#creer-une-base-de-donnees).
 
@@ -91,11 +91,11 @@ Une fois la base de données créée, récupérez les paramètres de connexion (
 >
 > Si vous souhaitez installer votre CMS WordPress avec une base de données déjà existante, récupérez vos paramètres de connexion à votre base de données directement dans les fichiers du site liés à celle-ci.
 >
-> S'il s'agit aussi d'un CMS comme celui que vous devez installer, vous pouvez utiliser [ce guide](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/#etape-3-modifier-le-mot-de-passe-de-la-base-de-donnees-de-votre-site-dans-son-fichier-de-configuration) pour identifier les fichiers de configuration dans votre [espace de stockage FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+> S'il s'agit aussi d'un CMS comme celui que vous devez installer, vous pouvez utiliser [ce guide](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-base-de-donnees/#etape-3-modifier-le-mot-de-passe-de-la-base-de-donnees-de-votre-site-dans-son-fichier-de-configuration) pour identifier les fichiers de configuration dans votre [espace de stockage FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
 >
 > Connectez-vous ensuite à votre base de données pour recenser les « préfixes » des tables déjà présentes à l'intérieur. Ceci afin de ne pas choisir un « préfixe » de table déjà utilisé par un autre de vos sites.
 >
-> - Pour vous connecter à votre base de données liée à votre offre d'hébergement web, consultez [ce guide](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin).
+> - Pour vous connecter à votre base de données liée à votre offre d'hébergement web, consultez [ce guide](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin).
 > - Pour vous connecter à une base de données présente sur un Cloud DB, consultez [ce guide](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
 >
 
@@ -111,7 +111,7 @@ Rendez-vous sur le site de l'éditeur [WordPress](https://wordpress.org/download
 >
 > Notez, sur la page de téléchargement, la version PHP ainsi que la version MySQL ou MariaDB requises pour faire fonctionner votre WordPress.
 >
-> Configurez ensuite la version de PHP sur votre hébergement web en vous aidant de notre documentation sur [le changement de version PHP d'un hébergement web](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
+> Configurez ensuite la version de PHP sur votre hébergement web en vous aidant de notre documentation sur [le changement de version PHP d'un hébergement web](https://docs.ovh.com/ca/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
 >
 > Si vous utilisez déjà une version de PHP supérieure ou égale à celle requise, aucun changement n'est nécessaire.
 >
@@ -131,7 +131,7 @@ Indiquez le dossier « **WordPress** » en destination afin d'extraire vos fichi
 
 #### 2.3 - Déplacer les fichiers sources du dossier « WordPress » vers le « dossier racine » sur votre hébergement web
 
-Une fois les fichiers décompressés dans votre dossier « **WordPress** », [connectez-vous en FTP à votre espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide du [client FTP Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) puis copiez les fichiers contenus dans le dossier « **WordPress** » dans le « dossier racine » que vous avez défini sur votre hébergement lors de l'[étape 1](#step1) de ce guide.
+Une fois les fichiers décompressés dans votre dossier « **WordPress** », [connectez-vous en FTP à votre espace de stockage](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide du [client FTP Filezilla](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/) puis copiez les fichiers contenus dans le dossier « **WordPress** » dans le « dossier racine » que vous avez défini sur votre hébergement lors de l'[étape 1](#step1) de ce guide.
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -151,7 +151,7 @@ Une fois les fichiers décompressés dans votre dossier « **WordPress** », [co
 
 **Cas Particulier** : Si vous disposez d'un débit Internet limité et/ou d'une offre d'hébergement **Pro** ou supérieure, vous pouvez utiliser la connexion en **SSH** pour placer les fichiers sources de WordPress dans l'espace de stockage de votre hébergement web. 
 
-Pour vous connecter en SSH à votre hébergement, consultez notre guide sur la [connexion en SSH depuis un hébergement mutualisé OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/).
+Pour vous connecter en SSH à votre hébergement, consultez notre guide sur la [connexion en SSH depuis un hébergement mutualisé OVHcloud](https://docs.ovh.com/ca/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/).
 
 Une fois connecté en **SSH**, exécutez les commandes suivantes :
 
@@ -222,7 +222,7 @@ La page suivante apparaît :
 
 Renseignez les informations demandées concernant la base de données :
 
-- Nom de la base de données : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Nom de la base de données : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 - Identifiant : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
 Pour les bases de données créées sur un CloudDB, référez-vous aux informations indiquées dans [l'étape 1.4](#step1-4) de ce guide.
@@ -294,8 +294,8 @@ Une fois connecté, la page suivante apparaît :
 
 [Site officiel WordPress](https://wordpress.org)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

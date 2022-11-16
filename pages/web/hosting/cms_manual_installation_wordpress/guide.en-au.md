@@ -16,33 +16,33 @@ This tutorial will help you install WordPress CMS (Content Management System) ma
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/fr/) or [the editor of the WordPress CMS](https://wordpress.com/fr/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-au/) or [the editor of the WordPress CMS](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
 >
 
 > [!success]
 >
-> To install WordPress **automatically** from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), please refer to our documentation on [installing a one-click module](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+> To install WordPress **automatically** from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), please refer to our documentation on [installing a one-click module](https://docs.ovh.com/au/en/hosting/web_hosting_web_hosting_modules/).
 >
-> To manually **install another CMS** (Joomla!, Drupal, PrestaShop), please refer to our documentation on [installing a CMS manually](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+> To manually **install another CMS** (Joomla!, Drupal, PrestaShop), please refer to our documentation on [installing a CMS manually](https://docs.ovh.com/au/en/hosting/hosting_install_your_cms_manually/).
 >
 
 ## Requirements
 
-- Have a [Web Hosting plan](https://www.ovhcloud.com/fr/web-hosting/) that contains at least one database.
-- Have [domain name](https://www.ovhcloud.com/fr/domains/)
-- Log in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Have a [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that contains at least one database.
+- Have [domain name](https://www.ovhcloud.com/en-au/domains/)
+- Log in to [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 
 ## Instructions
 
 ### Step 1 - Prepare for installation <a name="step1"></a>
 
-To install the CMS **WordPress** on your [web hosting plan](https://www.ovhcloud.com/fr/web-hosting/), you will need to make some preparations.
+To install the CMS **WordPress** on your [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/), you will need to make some preparations.
 
 #### 1.1 - Check the “root folder” declaration
 
 The “root folder” refers to the directory your future CMS will be installed in on your hosting plan. We recommend choosing an empty directory to avoid conflicts with your other multisite potentials.
 
-Consult our documentation that describes [how to add a multisite on your web hosting plan](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/), to define the root folder to use on your WordPress.
+Consult our documentation that describes [how to add a multisite on your web hosting plan](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/), to define the root folder to use on your WordPress.
 
 > [!primary]
 >
@@ -51,16 +51,16 @@ Consult our documentation that describes [how to add a multisite on your web hos
 
 #### 1.2 - Check the domain name pointing
 
-- Make sure that the domain name you will use to access your WordPress, as well as its subdomain “www”, point to the IP address of your [web hosting plan](https://www.ovhcloud.com/fr/web-hosting/).
+- Make sure that the domain name you will use to access your WordPress, as well as its subdomain “www”, point to the IP address of your [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/).
 
-To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
+To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
 In the `General information`{.action} box on your right, you will find the IP address of your web hosting plan in the `IPv4`{.action} form.
 
-If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) documentation.
+If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](https://docs.ovh.com/au/en/domains/web_hosting_how_to_edit_my_dns_zone/) documentation.
 
 > [!warning]
 >
-> If you have activated the `CDN`{.action} or `country IP`{.action} options with your domain, use the appropriate IP address by referring to our documentation listing [all shared hosting IP addresses](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/).
+> If you have activated the `CDN`{.action} or `country IP`{.action} options with your domain, use the appropriate IP address by referring to our documentation listing [all shared hosting IP addresses](https://docs.ovh.com/au/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/).
 >
 
 If you are unable to perform these checks, contact the hosting provider for your active DNS zone to update the pointing of your domain name.
@@ -70,20 +70,20 @@ If you are unable to perform these checks, contact the hosting provider for your
 > Any changes you make to your DNS zone can take between 4 and 24 hours to propagate.
 >
 
-- Get [the information you need to log in to your Web Hosting plan’s FTP space](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
-- Retrieve access to your Web Hosting plan’s database if it already exists, or create one using our [documentation](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+- Get [the information you need to log in to your Web Hosting plan’s FTP space](https://docs.ovh.com/au/en/hosting/log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information).
+- Retrieve access to your Web Hosting plan’s database if it already exists, or create one using our [documentation](https://docs.ovh.com/au/en/hosting/creating-database/).
 
 #### 1.3 - Install the free FTP client "Filezilla"
 
-You can find the free download link and a tutorial on how to use it in our documentation on [using Filezilla with your OVHcloud hosting plan](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/).
+You can find the free download link and a tutorial on how to use it in our documentation on [using Filezilla with your OVHcloud hosting plan](https://docs.ovh.com/au/en/hosting/web_hosting_filezilla_user_guide/).
 
 #### 1.4 - Prepare a database <a name="step1-4"></a>
 
-CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/fr/web-hosting/) solutions include them, with the exception of [the free Start 10M hosting plan](https://www.ovhcloud.com/fr/domains/free-web-hosting/).
+CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/en-au/web-hosting/) solutions include them, with the exception of [the free Start 10M hosting plan](https://www.ovhcloud.com/en-au/domains/free-web-hosting/).
 
-Use our documentation to [create a database from your web hosting plan](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+Use our documentation to [create a database from your web hosting plan](https://docs.ovh.com/au/en/hosting/creating-database/).
 
-If you have a CloudDB offer in MySQL or MariaDB and you want to use it to manually install your WordPress, please refer to our documentation on [creating a database on a CloudDB](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/#creer-une-base-de-donnees).
+If you have a CloudDB offer in MySQL or MariaDB and you want to use it to manually install your WordPress, please refer to our documentation on [creating a database on a CloudDB](https://docs.ovh.com/au/en/clouddb/create-databases-and-users/#creating-a-database).
 
 Once you have created the database, retrieve the connection settings (server, database name, user name, and password) and save them for [step 3](#step3) in this guide.
 
@@ -91,12 +91,12 @@ Once you have created the database, retrieve the connection settings (server, da
 >
 > If you would like to install your WordPress CMS with an existing database, you can retrieve the connection settings for your database directly from the website files linked to it.
 >
-> If this is also a CMS like the one you need to install, you can use [this guide](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/#etape-3-modifier-le-mot-de-passe-de-la-base-de-donnees-de-votre-site-dans-son-fichier-de-configuration) to identify the configuration files in your [FTP storage space](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+> If this is also a CMS like the one you need to install, you can use [this guide](https://docs.ovh.com/au/en/hosting/change-password-database/#step-3-change-the-password-for-your-websites-database-in-its-configuration-file) to identify the configuration files in your [FTP storage space](https://docs.ovh.com/au/en/hosting/log-in-to-storage-ftp-web-hosting/).
 >
 > Then log in to your database to list the prefixes of the tables already inside. This is to avoid choosing a table "prefix" already used by another of your sites.
 >
-> - To connect to your database linked to your Web Hosting plan, see [this guide](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin).
-> - To connect to a database on a Cloud DB, see [this guide](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
+> - To connect to your database linked to your Web Hosting plan, see [this guide](https://docs.ovh.com/au/en/hosting/creating-database/#accessing-the-phpmyadmin-interface).
+> - To connect to a database on a Cloud DB, see [this guide](https://docs.ovh.com/gb/en/clouddb/connecting-to-database-on-database-server/).
 >
 
 ### Step 2 - start manual installation
@@ -111,7 +111,7 @@ Go to the publisher's [WordPress](https://wordpress.org/download/#download-insta
 >
 > On the download page, note the PHP version and the MySQL or MariaDB version required to run your WordPress.
 >
-> Then configure the PHP version on your web hosting plan by referring to our guide on [changing PHP versions of a web hosting plan](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
+> Then configure the PHP version on your web hosting plan by referring to our guide on [changing PHP versions of a web hosting plan](https://docs.ovh.com/au/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
 >
 > If you are already using a PHP version that is equal to or higher than the required PHP version, no changes are required.
 >
@@ -131,7 +131,7 @@ Enter the destination **WordPress** folder to extract your files to that folder.
 
 #### 2.3 - Move the source files from the "WordPress" folder to the "root folder" on your web hosting plan
 
-Once you have unpacked the files in your **WordPress** folder, [log in to your storage space via FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) using [FTP Filezilla client](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) then copy the files in the **WordPress** folder to the "root folder" you defined on your hosting in [step 1](#step1) of this guide.
+Once you have unpacked the files in your **WordPress** folder, [log in to your storage space via FTP](https://docs.ovh.com/au/en/hosting/log-in-to-storage-ftp-web-hosting/) using [FTP Filezilla client](https://docs.ovh.com/au/en/hosting/web_hosting_filezilla_user_guide/) then copy the files in the **WordPress** folder to the "root folder" you defined on your hosting in [step 1](#step1) of this guide.
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -151,7 +151,7 @@ Once you have unpacked the files in your **WordPress** folder, [log in to your s
 
 **Special Case**: If you have a limited internet speed and/or a hosting plan **Pro** or higher, you can use the **SSH** connection to put WordPress source files in your Web Hosting plan’s storage space. 
 
-To log in to your hosting plan via SSH, please refer to our guide to [logging in via SSH from an OVHcloud shared hosting plan](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/).
+To log in to your hosting plan via SSH, please refer to our guide to [logging in via SSH from an OVHcloud shared hosting plan](https://docs.ovh.com/au/en/hosting/web_hosting_ssh_on_web_hosting_packages/).
 
 Once you have logged in via **SSH**, run the following commands:
 
@@ -222,7 +222,7 @@ The following page appears:
 
 Enter the information requested for the database:
 
-- Database name: this name was defined when the database was created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Database name: this name was defined when the database was created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
 - ID: it is identical to the database name if you are using a database included with your web hosting plan.
 For databases created on CloudDB, please refer to the information in [Step 1.4](#step1-4) of this guide.
@@ -294,8 +294,8 @@ Once connected, the following page appears:
 
 [Official WordPress website](https://wordpress.org)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/fr/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/fr/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 
-Join our community of users on <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
