@@ -87,8 +87,6 @@ Los CMS necesitan una base de datos para funcionar. Nuestros planes [de hosting]
 
 Utilice nuestra guía para [crear una base de datos desde su plan de hosting](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/).
 
-Si tiene un servicio CloudDB en MySQL o MariaDB y quiere utilizarlo para instalar manualmente su WordPress, consulte nuestra guía sobre la [creación de una base de datos en un Cloud Databases](https://docs.ovh.com/es/clouddb/crear-bases-de-datos-y-usuarios/#crear-una-base-de-datos).
-
 Una vez que haya creado la base de datos, deberá descargar los parámetros de conexión (servidor, nombre de la base de datos, nombre de usuario y contraseña) y conservarlos para [el etapa 3](#step3) de esta guía.
 
 > [!primary]
@@ -98,9 +96,7 @@ Una vez que haya creado la base de datos, deberá descargar los parámetros de c
 > Si se trata también de un CMS como el que debe instalar, puede utilizar [esta guía](https://docs.ovh.com/us/es/hosting/cambiar-contrasena-base-de-datos/#etapa-3-cambiar-la-contrasena-de-la-base-de-datos-del-sitio-web-en-el-archivo-de-configuracion) para identificar los archivos de configuración en su [espacio de almacenamiento FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
 >
 > Conéctese a la base de datos para identificar los "prefijos" de las tablas que ya están en su interior. para no elegir un "prefijo" de tabla que ya utilice otro sitio web.
->
-> - Para conectarse a la base de datos asociada a su plan de hosting, consulte [esta guía](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin).
-> - Para conectarse a una base de datos en un Cloud Databases, consulte [esta guía](ttps://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/).
+> Para conectarse a la base de datos asociada a su plan de hosting, consulte [esta guía](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin).
 >
 
 ### Etapa 2 - iniciar la instalación manual
@@ -229,7 +225,6 @@ Introduzca la información solicitada para la base de datos:
 - Nombre de la base de datos: este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 - Identificador: es idéntico al nombre de la base de datos si utiliza una base de datos incluida con su alojamiento web.
-Para las bases de datos creadas en un CloudDB, consulte la información indicada en [el etapa 1.4](#step1-4) de esta guía.
 
 - Contraseña: le hemos enviado un mensaje de correo electrónico al crear la base de datos. Es posible que lo hayan cambiado.
 
@@ -237,9 +232,7 @@ Para las bases de datos creadas en un CloudDB, consulte la información indicada
 
 > [!primary]
 > 
-> - El nombre del servidor de una base de datos incluida con su plan de hosting suele tener la siguiente forma: `NameOfYourDatabase.mysql.db`. 
->
-> El nombre del servidor de una base de datos Cloud Databases comienza por su identificador de cliente de OVHcloud y tiene el siguiente formato: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` donde los **"X"** se sustituyen por la referencia de su servicio Cloud Databases.
+> El nombre del servidor de una base de datos incluida con su plan de hosting suele tener la siguiente forma: `NameOfYourDatabase.mysql.db`. 
 >
 
 - Prefijo de tablas: si la instalación se realiza con una nueva base de datos, introduzca el prefijo que prefiera. Si utiliza una base de datos ya utilizada en otro sitio web, consulte el [etapa 1.4](#step1-4) de esta guía para no indicar un "prefijo" de tabla que ya haya utilizado la base de datos.

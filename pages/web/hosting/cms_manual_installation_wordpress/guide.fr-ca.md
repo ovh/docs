@@ -83,8 +83,6 @@ Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[héber
 
 Utilisez notre documentation pour [créer une base de données depuis votre offre d'hébergement web](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/).
 
-Si vous disposez d'une offre CloudDB en MySQL ou MariaDB et que vous souhaitez l'utiliser pour installer manuellement votre WordPress, consultez notre documentation sur la [création d'une base de données sur un CloudDB](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/#creer-une-base-de-donnees).
-
 Une fois la base de données créée, récupérez les paramètres de connexion (serveur, nom de la base de données, nom d'utilisateur et mot de passe) et conservez-les pour [l'étape 3](#step3) de ce guide.
 
 > [!primary]
@@ -94,9 +92,7 @@ Une fois la base de données créée, récupérez les paramètres de connexion (
 > S'il s'agit aussi d'un CMS comme celui que vous devez installer, vous pouvez utiliser [ce guide](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-base-de-donnees/#etape-3-modifier-le-mot-de-passe-de-la-base-de-donnees-de-votre-site-dans-son-fichier-de-configuration) pour identifier les fichiers de configuration dans votre [espace de stockage FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
 >
 > Connectez-vous ensuite à votre base de données pour recenser les « préfixes » des tables déjà présentes à l'intérieur. Ceci afin de ne pas choisir un « préfixe » de table déjà utilisé par un autre de vos sites.
->
-> - Pour vous connecter à votre base de données liée à votre offre d'hébergement web, consultez [ce guide](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin).
-> - Pour vous connecter à une base de données présente sur un Cloud DB, consultez [ce guide](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
+> Pour vous connecter à votre base de données liée à votre offre d'hébergement web, consultez [ce guide](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin).
 >
 
 ### Etape 2 - démarrer l'installation manuelle
