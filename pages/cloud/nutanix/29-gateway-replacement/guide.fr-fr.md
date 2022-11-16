@@ -6,11 +6,13 @@ section: Réseau et sécurité
 order: 09
 ---
 
-**Dernière mise à jour le 15/11/2022**
+**Dernière mise à jour le 16/11/2022**
 
 ## Présentation
 
-Lorsque vous souscrivez à un offre Nutanix OVHcloud les connexions internet sortantes se font à partir d'une machine virtuelle intégrée Nommmée OVHcloud, cette passerelle a une bande passante limité à 1gb/s. Si vous souhaitez aller au dela de cette limite il faut remplacer la passerelle par un serveur dédié qui lui pour avoir une bande passante plus importante jusqu'a 10 Gb/s comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
+Une machine virtuelle **OVHGateway** est installée lors d'une déploiement d'une solution Nutanix on BYOL, cette machine virtuelle sert de passerelle Internet Sortante pour le cluster elle a une limite de 1gb/s sur le réseau public.
+
+Si vous avez besoin d'avoir une bande passante plus importante il faut remplacer cette passerelle par un serveur dédié et choisir une offre qui vous permettra d'aller de 1 gb/s à 10 gb/s sur le réseau public comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
 
 **Nous allons voir comment remplacer la passerelle par défaut par un serveur dédié OVHcloud.**
 
@@ -29,6 +31,18 @@ Lorsque vous souscrivez à un offre Nutanix OVHcloud les connexions internet sor
 - Disposer d'un serveur dédié qui utilise deux cartes réseaux une sur le réseau privé (vRACK) l'autre sur le réseau public.
 
 ## En pratique
+
+### Préparation de votre serveur avant déploiement
+
+
+
+### Connexion au vRack du serveur dédié
+
+
+### Arrêt de la machine virtuelle OVHgateway
+
+
+### Installation d'un système d'exploitation réseau 
 
 
 
