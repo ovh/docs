@@ -62,9 +62,9 @@ Po rozwiązaniu problemu możesz odblokować Destination IP wykonując następuj
 > W żadnym przypadku nie odblokuj adresu IP, zanim nie zawiesisz wysyłki e-maili z Twojego serwera i nie odblokuj kolejki wiadomości. W przeciwnym razie po raz drugi zostanie zablokowany na dłuższy czas. 
 >
 
-### Odblokuj Destination IP
+### Odblokuj adres IP
 
-#### Odblokuj Destination IP w Panelu klienta
+#### Odblokuj adres IP w Panelu klienta
 
 W [Panelu klienta OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij `IP`{.action}.
 
@@ -72,11 +72,11 @@ Pojawi się komunikat adresu IP lub usługi zablokowanej ze względu na SPAM.
 
 ![Alert przeciw spamie](images/alertantispam.png){.thumbnail}
 
-W sekcji "Moje publiczne adresy IP i powiązane usługi" kliknij przycisk `...`{.action} obok IP lub powiązanej z nim usługi i wybierz opcję `Anty-spam`{.action}.
+W sekcji "Moje publiczne adresy IP i powiązane usługi" kliknij przycisk `...`{.action} obok IP lub powiązanej z nim usługi i wybierz opcję `Antyspam`{.action}.
 
 ![antyspam](images/antispam.png){.thumbnail}
 
-W nowej zakładce kliknij `Odblokuj ochronę antyspamową`{.action} i zatwierdź.
+W nowej zakładce kliknij `Zdjęcie blokady antyspam`{.action} i zatwierdź.
 
 ![Odblokuj IP](images/unblockip.png){.thumbnail}
 
@@ -84,9 +84,9 @@ IP jest odblokowywane. Operacja może trwać kilka minut.
 
 Po zakończeniu operacji Twój Destination IP zostanie odblokowany.
 
-#### Odblokuj Destination IP z poziomu API OVHcloud
+#### Odblokuj adres IP z poziomu API OVHcloud
 
-Zaloguj się do interfejsu [API OVHcloud](https://eu.api.ovh.com/console/) i postępuj zgodnie z poniższymi instrukcjami. Aby uzyskać więcej informacji na temat korzystania z API OVHcloud, zapoznaj się z naszym przewodnikiem "Pierwsze kroki z [API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)".
+Zaloguj się do interfejsu [API OVHcloud](https://eu.api.ovh.com/console/) i postępuj zgodnie z poniższymi instrukcjami. Aby uzyskać więcej informacji na temat korzystania z API OVHcloud, zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)".
 
 Pobierz listę adresów IP każdej usługi OVHcloud (Hosted Private Cloud / VPS / Public Cloud / Serwer dedykowany):
 
@@ -95,7 +95,7 @@ Pobierz listę adresów IP każdej usługi OVHcloud (Hosted Private Cloud / VPS 
 > @api {GET} /ip
 >
 
-**typ**: Wskaż rodzaj IP (Dedicated, PCC, VPS, vRack, PCI, itp.)
+**type**: Wskaż rodzaj IP (Dedicated, PCC, VPS, vRack, PCI, itp.)
 
 Oto przykład:
 

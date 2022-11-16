@@ -72,11 +72,11 @@ Ein Pop-up zeigt Ihnen die für SPAM blockierte IP oder Dienstleistung an.
 
 ![Spam-Alarm](images/alertantispam.png){.thumbnail}
 
-Im Bereich "Meine öffentlichen IP-Adressen und dazugehörigen Dienste" klicken Sie auf den Button `..`{.action}. neben der IP oder dem entsprechenden Dienst und wählen Sie `Antispam aus`{.action}.
+Im Bereich "Meine öffentlichen IP-Adressen und dazugehörigen Dienste" klicken Sie auf den Button `..`{.action}. neben der IP oder dem entsprechenden Dienst und wählen Sie `Antispam`{.action}.
 
 ![antispam](images/antispam.png){.thumbnail}
 
-Klicken Sie im neuen Tab unten `auf Antispam`{.action} entsperren und bestätigen Sie.
+Klicken Sie im neuen Tab unten `Antispam-Sperrung aufheben`{.action} entsperren und bestätigen Sie.
 
 ![IP entsperren](images/unblockip.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Sobald die Bearbeitung abgeschlossen ist, wird Ihre IP entsperrt.
 
 #### Entsperren Sie Ihre IP-Adresse über die OVHcloud API
 
-Verbinden Sie sich mit dem [API-Interface von OVHcloud](https://eu.api.ovh.com/console/) und folgen Sie den nachstehenden Schritten. Weitere Informationen zur Verwendung der OVHcloud APIs finden Sie in unserer Anleitung "[Erste Schritte mit den OVHcloud APIs](https://docs.ovh.com/de/api/first-steps-with-ovh-api/)".
+Verbinden Sie sich mit dem [API-Interface von OVHcloud](https://eu.api.ovh.com/console/) und folgen Sie den nachstehenden Schritten. Weitere Informationen zur Verwendung der OVHcloud APIs finden Sie in unserer Anleitung "[Erste Schritte mit der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/)".
 
 Rufen Sie zunächst die Liste der IPs jedes OVHcloud Dienstes ab (Hosted Private Cloud / VPS / Public Cloud / Dedicated Server):
 
@@ -211,7 +211,7 @@ Die IP-Adresse wird nun entsperrt, es kann einige Minuten dauern, bis die Operat
 
 ### Falsch positive Ergebnisse
 
-In einigen Fällen kann die Antispam-Warnung falsch positiv sein. Wenn Sie überprüft und festgestellt haben, dass die **Message-ID** mit einer legitimen E-Mail verbunden ist, stellen Sie sicher, dass Ihre E-Mails den [RFC](#rfc) und den unten [aufgeführten bewährten](#bestpractices) Verfahren entsprechen.
+In einigen Fällen kann es sich bei der Spamwarnung um einen falschen Positivbefund handeln. Wenn Sie überprüft und festgestellt haben, dass die **Message-ID** einer legitimen E-Mail zugeordnet ist, sollten Sie sicherstellen, dass Ihre E-Mail-Nachrichten den [guten Praktiken](#bestpractices) entsprechen.
 
 
 ## Weiterführende Informationen

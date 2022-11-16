@@ -210,7 +210,7 @@ La dirección IP se está desbloqueando. La operación puede tardar varios minut
 
 ### En caso de falsos positivos
 
-En algunos casos, la alerta antispam puede ser un falso positivo. Si ha comprobado y comprobado que el **Message-ID** está asociado a un correo electrónico legítimo, debe asegurarse de que sus mensajes electrónicos se ajustan a las [buenas prácticas](#bestpractices).
+En algunos casos, la alerta de spam puede ser un falso positivo. Si ha comprobado que el **Message-ID** está asociado a un correo electrónico legítimo, debe asegurarse de que sus correos electrónicos cumplen con las [buenas prácticas](#bestpractices).
 
 ## Más información
   

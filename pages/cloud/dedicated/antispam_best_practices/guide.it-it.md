@@ -72,11 +72,11 @@ Un pop-up indica l'IP o il servizio bloccato per SPAM.
 
 ![Alert Antispam](images/alertantispam.png){.thumbnail}
 
-Nella sezione "I tuoi indirizzi IP pubblici e servizi associati", clicca sui tre puntini `...`{.action} in corrispondenza dell'IP o del servizio corrispondente e seleziona `Anti-Spam`{.action}.
+Nella sezione "I tuoi indirizzi IP pubblici e servizi associati", clicca sui tre puntini `...`{.action} in corrispondenza dell'IP o del servizio corrispondente e seleziona `Antispam`{.action}.
 
 ![antispam](images/antispam.png){.thumbnail}
 
-Nella nuova scheda, clicca su `Sblocca l'antispam`{.action} in basso e conferma.
+Nella nuova scheda, clicca su `Sblocca l'Antispam`{.action} in basso e conferma.
 
 ![Sblocca IP](images/unblockip.png){.thumbnail}
 
@@ -211,7 +211,7 @@ Lo sblocco dell'indirizzo IP è in corso. L'operazione potrebbe richiedere alcun
 
 ### In caso di falsi positivi
 
-In alcuni casi, l'allarme antispam può essere un falso positivo. Se hai verificato e verificato che il **Message-ID** è associato a un'email legittima, assicurati che i tuoi messaggi siano conformi alle [migliori pratiche](#bestpractices) indicate qui sotto.
+In alcuni casi, l'avviso di spam potrebbe essere un falso positivo. Se avete verificato e trovato che il **Message-ID** è associato a un'e-mail legittima, dovete assicurarvi che le vostre e-mail siano conformi alle [buone pratiche](#bestpractices).
 
 
 ## Per saperne di più

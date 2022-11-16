@@ -70,13 +70,13 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 Um pop-up indica-lhe o IP ou o serviço bloqueado para SPAM.
 
-![Alerta antisspam](images/alertantispam.png){.thumbnail}
+![Alerta antispam](images/alertantispam.png){.thumbnail}
 
-Na secção "Os meus endereços IP públicos e serviços associados", clique no botão `...`{.action} junto do IP ou do serviço correspondente e selecione o `Anti-Spam`{.action}.
+Na secção "Os meus endereços IP públicos e serviços associados", clique no botão `...`{.action} junto do IP ou do serviço correspondente e selecione o `AntiSpam`{.action}.
 
-![antisspam](images/antispam.png){.thumbnail}
+![antispam](images/antispam.png){.thumbnail}
 
-Na nova janela, clique em `Desbloquear o antisspam`{.action} e valide.
+Na nova janela, clique em `Desbloquear a proteção Anti-Spam`{.action} e valide.
 
 ![Desbloquear IP](images/unblockip.png){.thumbnail}
 
@@ -211,7 +211,7 @@ O endereço IP está a ser desbloqueado e a operação pode levar alguns minutos
 
 ### Em caso de falsos positivos
 
-Em certos casos, o alerta antisspam pode ser um falso positivo. Se verificou e verificou que a **Message-ID** está associada a um e-mail legítimo, deve assegurar-se de que as suas mensagens eletrónicas estão em conformidade com os [RFC](#rfc) e as [boas práticas](#bestpractices) indicadas abaixo.
+Em alguns casos, o alerta de spam pode ser um falso positivo. Se tiver verificado e descoberto que o **ID da mensagem*** está associado a um e-mail legítimo, terá de se certificar de que os seus e-mails estão em conformidade com [boas práticas](#bestpractices).
 
 
 ## Quer saber mais?
