@@ -34,7 +34,7 @@ Pour configurer le 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **
 
 Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx-ip/).
 
-## En Pratique
+## En pratique
 
 > [!warning]
 > 
