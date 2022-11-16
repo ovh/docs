@@ -30,13 +30,13 @@ A pirataria pode manifestar - se de várias formas (lista não exaustiva):
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/fr/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
 >
 
 ## Requisitos
 
-- Ter [oferta de alojamento Web Cloud](https://www.ovh.com/fr/hebergement-web/) com o seu website alojado em cima.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Ter [oferta de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/) com o seu website alojado em cima.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
@@ -78,12 +78,12 @@ Quando um website for hackeado, altere, por precaução, todas as palavras-passe
 
 No que diz respeito à OVHcloud, utilize a nossa documentação para:
 
-- [Alterar a palavra-passe de acesso ao seu identificador de cliente OVHcloud](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
-- [Proteger o acesso à sua Área de Cliente OVHcloud com uma dupla autenticação](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/).
-- [Alterar a palavra-passe de acesso ao espaço de armazenamento FTP do seu alojamento Web](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
-- [Alterar palavra-passe de acesso à base de dados](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
+- [Alterar a palavra-passe de acesso ao seu identificador de cliente OVHcloud](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/).
+- [Proteger o acesso à sua Área de Cliente OVHcloud com uma dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/).
+- [Alterar a palavra-passe de acesso ao espaço de armazenamento FTP do seu alojamento Web](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/).
+- [Alterar palavra-passe de acesso à base de dados](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-base-de-dados/).
 
-Também recomendamos que utilize um [gestor de palavras-passe](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe).
+Também recomendamos que utilize um [gestor de palavras-passe](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#utilizar-um-gestor-de-palavras-passe).
 
 > [!warning]
 > 
@@ -99,10 +99,10 @@ Também recomendamos que utilize um [gestor de palavras-passe](https://docs.ovh.
 
 > [!warning]
 >
-> Se encontrar dificuldades para efetuar as ações descritas abaixo, recorra a um prestador de [serviços especializado](https://partner.ovhcloud.com/fr/) em cibersegurança.
+> Se encontrar dificuldades para efetuar as ações descritas abaixo, recorra a um prestador de [serviços especializado](https://partner.ovhcloud.com/pt/) em cibersegurança.
 >
 
-Utilize o nosso manual sobre [estatísticas e logs do seu alojamento web](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) para pesquisar os elementos maliciosos injetados no seu website. As informações podem ser encontradas nos logs "web". 
+Utilize o nosso manual sobre [estatísticas e logs do seu alojamento web](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/) para pesquisar os elementos maliciosos injetados no seu website. As informações podem ser encontradas nos logs "web". 
 
 Comece a procurar a partir da data na qual constatou a pirataria, e volte ao histórico dos seus logs.
 
@@ -122,7 +122,7 @@ Comunique assim até às falhas de segurança presentes no seu site lendo os fic
 >
 > Vários websites (não geridos pela OVHcloud) podem permitir-lhe obter informações sobre os endereços IP maliciosos. Pode utilizar um deles para recuperar informações tais como o fornecedor do IP, a sua geolocalização, o gestor, etc...
 >
-> Se tem a certeza absoluta de que se trata de um IP malicioso, pode bloquear o acesso ao seu alojamento seguindo a nossa documentação sobre as [restrições de acesso através do ficheiro ".htaccess"](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
+> Se tem a certeza absoluta de que se trata de um IP malicioso, pode bloquear o acesso ao seu alojamento seguindo a nossa documentação sobre as [restrições de acesso através do ficheiro ".htaccess"](https://docs.ovh.com/pt/hosting/partilhado_htacess_como_impedir_que_certos_ips_acedam_ao_meu_website/).
 > 
 
 ### Etapa 4 - eliminar os elementos maliciosos e corrigir as falhas de segurança
@@ -142,9 +142,9 @@ Em função da data de pirataria do seu site (menos de 14 dias), a OVHcloud pode
 
 Para isso, consulte os nossos 3 guias sobre o assumpto:
 
-- [Restaurar o espaço de armazenamento FTP do seu alojamento Web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/)
-- [Recuperar o backup SQL da sua base de dados](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/)
-- [Importar o backup SQL para a sua base de dados](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/)
+- [Restaurar o espaço de armazenamento FTP do seu alojamento Web](https://docs.ovh.com/pt/hosting/restauracao-ftp-filezilla-area-de-cliente/)
+- [Recuperar o backup SQL da sua base de dados](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/)
+- [Importar o backup SQL para a sua base de dados](https://docs.ovh.com/pt/hosting/partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/)
 
 Façam coincidir ao máximo as datas de restauro do seu espaço de armazenamento FTP e da sua base de dados SQL.
 
@@ -153,10 +153,10 @@ Façam coincidir ao máximo as datas de restauro do seu espaço de armazenamento
 > A OVHcloud dispõe de robôs de segurança que podem detetar ações maliciosas realizadas a partir do seu alojamento. Estes últimos desativam o seu alojamento e notificam-no por e-mail de que o seu alojamento foi desativado.
 > Além deste e-mail, uma página "403 Forbidden" aparece normalmente quando tenta aceder ao seu website.
 >
-> Se o seu alojamento estiver desativado, os robôs de restauro automático disponíveis a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) também serão desativados.
+> Se o seu alojamento estiver desativado, os robôs de restauro automático disponíveis a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) também serão desativados.
 > Deve obrigatoriamente efetuar um restauro "manual" do seu site, eliminar os elementos maliciosos residuais e corrigir todas as falhas de segurança presentes neste backup. Isto **antes** de reativar o alojamento.
 >
-> Para reativar o alojamento Web, siga as instruções indicadas no passo 4 deste [guia](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/#reactivate-web-hosting).
+> Para reativar o alojamento Web, siga as instruções indicadas no passo 4 deste [guia](https://docs.ovh.com/pt/hosting/diagnostico-403-forbidden/).
 >
 
 O seu website deverá reaparecer se estas ações foram corretamente realizadas.
@@ -165,8 +165,8 @@ O seu website deverá reaparecer se estas ações foram corretamente realizadas.
 
 Para isso, consulte os nossos 2 guias sobre o assumpto:
 
-- [Restaurar o espaço de armazenamento FTP do seu alojamento Web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/)
-- [Importar o backup SQL para a sua base de dados](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/)
+- [Restaurar o espaço de armazenamento FTP do seu alojamento Web](https://docs.ovh.com/pt/hosting/restauracao-ftp-filezilla-area-de-cliente/)
+- [Importar o backup SQL para a sua base de dados](https://docs.ovh.com/pt/hosting/partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/)
 
 >[!warning]
 >
@@ -175,7 +175,7 @@ Para isso, consulte os nossos 2 guias sobre o assumpto:
 >
 > Se o seu alojamento estiver em estado "desativado", efetue um restauro "manual" do seu site, elimine os elementos maliciosos residuais e corrija todas as falhas de segurança presentes neste backup. Isto **antes** de reativar o alojamento.
 >
-> Para reativar o alojamento Web, siga as instruções indicadas no passo 4 deste [guia](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/#reactivate-web-hosting).
+> Para reativar o alojamento Web, siga as instruções indicadas no passo 4 deste [guia](https://docs.ovh.com/pt/hosting/diagnostico-403-forbidden/).
 >
 
 O seu website deverá reaparecer se estas ações foram corretamente realizadas.
@@ -184,7 +184,7 @@ O seu website deverá reaparecer se estas ações foram corretamente realizadas.
 
 Deverá eliminar manualmente os ficheiros e os códigos maliciosos previamente detetados no [Etapa 2](#step2) deste guia e corrigir as falhas de segurança do seu site.
 
-Para aceder ao espaço de armazenamento do alojamento, consulte o [nosso guia](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) sobre o assumpto.
+Para aceder ao espaço de armazenamento do alojamento, consulte o [nosso guia](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) sobre o assumpto.
 
 > [!warning]
 >
@@ -193,7 +193,7 @@ Para aceder ao espaço de armazenamento do alojamento, consulte o [nosso guia](h
 >
 > Se o seu alojamento está "desativado", elimine os elementos maliciosos residuais e corrija todas as falhas de segurança presentes neste backup **antes** de reativar o alojamento.
 >
-> Para reativar o alojamento Web, siga as instruções indicadas no passo 4 deste [guia](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/#reactivate-web-hosting).
+> Para reativar o alojamento Web, siga as instruções indicadas no passo 4 deste [guia](https://docs.ovh.com/pt/hosting/diagnostico-403-forbidden/).
 >
 
 O seu website deverá reaparecer se estas ações foram corretamente realizadas.
@@ -204,27 +204,27 @@ Atualize o seu website ao nível do código fonte, dos parâmetros de segurança
 
 Verifique as permissões de acesso FTP "CHMOD" para cada uma das pastas e ficheiros alojados no seu espaço de armazenamento.
 Por predefinição, recomendamos que se utilizem ao máximo as permissões "CHMOD" **705** para os dossiers e **604** para os ficheiros.
-Encontre mais detalhes sobre as permissões "CHMOD" na secção "Informações úteis" do nosso [tutorial sobre a utilização do cliente FTP Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/#useful-information).
+Encontre mais detalhes sobre as permissões "CHMOD" na secção "Informações úteis" do nosso [tutorial sobre a utilização do cliente FTP Filezilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/#useful-information).
 
 Se utilizar um CMS (Wordpress, Joomla!, PrestaShop, Drupal, etc.), atualize os seus plugins, o seu tema e o CMS em si.
 Privilegie a utilização de plugins/temas "oficiais" e mantenha o seu website atualizado o mais regularmente possível e de forma exaustiva.
 
-Proteja os seus formulários de contacto com um sistema do tipo "Captcha", para evitar que robôs maliciosos emitam SPAM desta forma. Se a função "mail()" de PHP tiver sido bloqueada no seu alojamento, consulte o [nosso guia](https://docs.ovh.com/fr/hosting/suivi-emails-automatises/) para resolver este bloqueio.
+Proteja os seus formulários de contacto com um sistema do tipo "Captcha", para evitar que robôs maliciosos emitam SPAM desta forma. Se a função "mail()" de PHP tiver sido bloqueada no seu alojamento, consulte o [nosso guia](https://docs.ovh.com/pt/hosting/alojamento_partilhado_seguimento_dos_emails_automatizados/) para resolver este bloqueio.
 
-Consulte também o nosso manual sobre [como proteger o seu website](https://docs.ovh.com/fr/hosting/secure-website/) para minimizar o risco de novos ataques.
+Consulte também o nosso manual sobre [como proteger o seu website](ttps://docs.ovh.com/pt/hosting/secure-website/) para minimizar o risco de novos ataques.
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Aceder ao espaço de armazenamento do alojamento web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/)
+[Aceder ao espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/)
 
-[Alterar a configuração do alojamento web](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/)
+[Alterar a configuração do alojamento web](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web//)
 
-[Ativar firewall da aplicação](https://docs.ovh.com/fr/hosting/activation-pare-feu-applicatif/)
+[Ativar firewall da aplicação](https://docs.ovh.com/pt/hosting/partilhado_ativacao_da_firewall/)
 
-[Otimizar as performances do seu site](https://docs.ovh.com/fr/hosting/optimisation-performances-site/)
+[Otimizar as performances do seu site](https://docs.ovh.com/pt/hosting/partilhado_guia_de_otimizacao_das_performances_do_seu_site/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/fr/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/fr/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
