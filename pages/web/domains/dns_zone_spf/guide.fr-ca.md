@@ -217,8 +217,8 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.ca ~all"
 
 ## Aller plus loin
 
-[Editer une zone DNS OVHcloud](https://docs.ovh.com/fr-ca/domains/editer-ma-zone-dns/){.external}.
+[Editer une zone DNS OVHcloud](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/){.external}.
 
-[Modifier les serveurs DNS d'un nom de domaine OVHcloud](https://docs.ovh.com/fr-ca/domains/generalites-serveurs-dns/){.external}.
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](https://docs.ovh.com/ca/fr/domains/generalites-serveurs-dns/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
