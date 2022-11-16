@@ -136,7 +136,7 @@ Nesta etapa, são possíveis três casos:
 > O restauro numa data anterior à pirataria requer uma atualização **imediata** e a realização indispensável de uma **auditoria de segurança**, a fim de identificar todas as falhas de segurança.
 >
 
-#### Caso n.º 1 - A OVHcloud dispõe de um backup do seu website (espaço de armazenamento FTP e base de dados)
+#### Caso nº 1 - A OVHcloud dispõe de um backup do seu website (espaço de armazenamento FTP e base de dados)
 
 Em função da data de pirataria do seu site (menos de 14 dias), a OVHcloud pode fornecer-lhe uma cópia de segurança (não contratual).
 
