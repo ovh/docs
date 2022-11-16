@@ -63,7 +63,7 @@ Realize uma análise antivírus e anti-spywares de todos os dispositivos (PC, Ma
 > **Nenhum sistema operativo está imune ao malware/malware.**
 >
 
-> [!success
+> [!success]
 >
 > Recomendamos que utilize vários antivírus/anti-spywares (gratuitos ou pagos) para cada um dos seus aparelhos.
 > Efetivamente, alguns vírus ou spywares podem persistir em função do software antivírus utilizado.
