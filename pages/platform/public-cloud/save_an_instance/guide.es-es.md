@@ -28,7 +28,7 @@ Puede crear una copia de seguridad única de una instancia o configurar una plan
 ### Crear una copia de seguridad de una instancia
 
 > [!warning]
-> Esta opción solo está disponible a través de un **Cold Snapshot* para las instancias Metal. La instancia Metal pasará a modo de rescate y, una vez realizada la copia de seguridad, la instancia se reiniciará en modo normal.
+> Esta opción solo está disponible a través de un **Cold Snapshot** para las instancias Metal. La instancia Metal pasará a modo de rescate y, una vez realizada la copia de seguridad, la instancia se reiniciará en modo normal.
 >
 
 Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra su proyecto de `Public Cloud`{.action}. En el menú de la izquierda, haga clic en `Instances`{.action}.

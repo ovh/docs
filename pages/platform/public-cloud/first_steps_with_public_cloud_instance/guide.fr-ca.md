@@ -90,7 +90,7 @@ Cela activera le mode rescue de l'instance. Consultez notre guide [Passer une in
 #### Redémarrer une instance
 
 > [!warning]
-> L'option de redémarrage à chaud (soft) n'est actuellement pas disponible pour les instances Metal.
+> L'option de redémarrage à chaud (soft) est actuellement indisponible pour les instances Metal.
 >
 
 - Cliquez sur `Redémarrer à chaud (soft)`{.action} pour effectuer un redémarrage au niveau logiciel.
