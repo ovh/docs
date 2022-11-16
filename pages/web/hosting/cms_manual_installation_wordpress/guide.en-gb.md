@@ -7,225 +7,296 @@ order: 07
 ---
 
 
-## Part 1: preparing for installation
+**Last updated 16th November 2022**
 
-## Necessary tools
+## Objective
 
-To install the WordPress platform on your shared hosting package, we advise you to get an FTP program such as FileZilla (free).
+This tutorial will help you install WordPress CMS (Content Management System) manually in just a few steps.
 
-## Necessary credentials
+> [!warning]
+>
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+> 
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/fr/) or [the editor of the WordPress CMS](https://wordpress.com/fr/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+>
 
-Make sure that you have your customer ID (nic-handle) and password so you can log in to your OVH customer account if necessary.
+> [!success]
+>
+> To install WordPress **automatically** from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), please refer to our documentation on [installing a one-click module](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+>
+> To manually **install another CMS** (Joomla!, Drupal, PrestaShop), please refer to our documentation on [installing a CMS manually](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+>
 
+## Requirements
 
-- Get your FTP ID and password so you can log on to your hosting package. 
-There is a guide showing you [how to get your FTP details](../modify-ftp-user-password/).
+- Have a [Web Hosting plan](https://www.ovhcloud.com/fr/web-hosting/) that contains at least one database.
+- Have [domain name](https://www.ovhcloud.com/fr/domains/)
+- Log in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 
-- You also need to have your SQL database ID and password so you can log on to the database.
-There is a guide showing you [how to get your SQL credentials](../creating-database/)
+## Instructions
 
+### Step 1 - Prepare for installation <a name="step1"></a>
 
-![wordpress](images/3125.png){.thumbnail}
+To install the CMS **WordPress** on your [web hosting plan](https://www.ovhcloud.com/fr/web-hosting/), you will need to make some preparations.
 
+#### 1.1 - Check the “root folder” declaration
 
-## Part 2: get source files
+The “root folder” refers to the directory your future CMS will be installed in on your hosting plan. We recommend choosing an empty directory to avoid conflicts with your other multisite potentials.
 
-- Go to the [WordPress](https://wordpress.com/learn-more/?v=discover) website. 
+Consult our documentation that describes [how to add a multisite on your web hosting plan](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/), to define the root folder to use on your WordPress.
 
-There should be a link that lets you download the latest stable version of the CMS
+> [!primary]
+>
+> If you define a “root folder” name that does not exist on your Web Hosting plan, it will be automatically created in your Web Hosting plan’s FTP storage space.
+>
 
+#### 1.2 - Check the domain name pointing
 
-The file will usually be compressed (zipped) so you have to be able to extract the files to your computer. There is lots of help available online.
+- Make sure that the domain name you will use to access your WordPress, as well as its subdomain “www”, point to the IP address of your [web hosting plan](https://www.ovhcloud.com/fr/web-hosting/).
 
-![wordpress](images/3126.png){.thumbnail}
+To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
+In the `General information`{.action} box on your right, you will find the IP address of your web hosting plan in the `IPv4`{.action} form.
 
+If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) documentation.
 
-## Part 3: Upload your files to your hosting package via FTP
+> [!warning]
+>
+> If you have activated the `CDN`{.action} or `country IP`{.action} options with your domain, use the appropriate IP address by referring to our documentation listing [all shared hosting IP addresses](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/).
+>
 
-## Unzip the file folder
-Open the folder that contains the zipped folder you downloaded. 
+If you are unable to perform these checks, contact the hosting provider for your active DNS zone to update the pointing of your domain name.
 
-Right-click on the folder, then select "Extract all...".
+> [!warning]
+>
+> Any changes you make to your DNS zone can take between 4 and 24 hours to propagate.
+>
 
-Indicate a destination in order to extract your files in a new folder. 
+- Get [the information you need to log in to your Web Hosting plan’s FTP space](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
+- Retrieve access to your Web Hosting plan’s database if it already exists, or create one using our [documentation](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
-There are a number of tutorials and types of decompression software available on the internet to help you achieve this. 
-Check them out if you are stuck at this stage.
+#### 1.3 - Install the free FTP client "Filezilla"
 
+You can find the free download link and a tutorial on how to use it in our documentation on [using Filezilla with your OVHcloud hosting plan](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/).
 
-The target folder will be called "WordPress"
+#### 1.4 - Prepare a database <a name="step1-4"></a>
 
-![wordpress](images/3127.png){.thumbnail}
+CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/fr/web-hosting/) solutions include them, with the exception of [the free Start 10M hosting plan](https://www.ovhcloud.com/fr/domains/free-web-hosting/).
 
-## Log on to the web hosting package via FTP
-To upload the WordPress files to your hosting package, you first have to log on. 
+Use our documentation to [create a database from your web hosting plan](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
-Follow this guide on [connecting to a hosting package in FTP](../log-in-to-storage-ftp-web-hosting/).
+If you have a CloudDB offer in MySQL or MariaDB and you want to use it to manually install your WordPress, please refer to our documentation on [creating a database on a CloudDB](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/#creer-une-base-de-donnees).
 
-![wordpress](images/3128.png){.thumbnail}
+Once you have created the database, retrieve the connection settings (server, database name, user name, and password) and save them for [step 3](#step3) in this guide.
 
-## Transfer files via FTP
-Follow these steps to upload your files using FTP.
+> [!primary]
+>
+> If you would like to install your WordPress CMS with an existing database, you can retrieve the connection settings for your database directly from the website files linked to it.
+>
+> If this is also a CMS like the one you need to install, you can use [this guide](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/#etape-3-modifier-le-mot-de-passe-de-la-base-de-donnees-de-votre-site-dans-son-fichier-de-configuration) to identify the configuration files in your [FTP storage space](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+>
+> Then log in to your database to list the prefixes of the tables already inside. This is to avoid choosing a table "prefix" already used by another of your sites.
+>
+> - To connect to your database linked to your Web Hosting plan, see [this guide](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin).
+> - To connect to a database on a Cloud DB, see [this guide](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
+>
 
-## Step 1
-Once you are logged in to FileZilla. 
+### Step 2 - start manual installation
 
-In the "Local site" section, which refers to the list of files on your computer, open the unzipped file entitled "WordPress" where your CMS files will be located. 
+#### 2.1 - Retrieve WordPress source files
 
-In the "Remote site" section, which refers to your OVH shared hosting package, open the "www" folder. It is this folder that you need to drop your CMS files into. 
+Go to the publisher's [WordPress](https://wordpress.org/download/#download-install){.external} to download the CMS source files.
 
-If this folder does not exist you can create it.
+![hosting](images/downloadWP.png){.thumbnail}
 
-Your files must be dropped in to the "www" folder or you will not be able to access the installation procedure from your domain name.
+> [!primary]
+>
+> On the download page, note the PHP version and the MySQL or MariaDB version required to run your WordPress.
+>
+> Then configure the PHP version on your web hosting plan by referring to our guide on [changing PHP versions of a web hosting plan](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
+>
+> If you are already using a PHP version that is equal to or higher than the required PHP version, no changes are required.
+>
 
-![wordpress](images/3129.png){.thumbnail}
+> [!warning]
+>
+> If you have other websites hosted on your Web Hosting plan, check that they are compatible with the PHP version you choose for your WordPress.
+>
 
-## Step 2
-Once these folders are open:
+#### 2.2 - Unzip downloaded source files to new folder
 
-In the "Local site" section, find all the files you need to install the WordPress CMS. 
+The downloaded file is in **compressed** (zipped) format. Create a folder named **WordPress** on your computer and then **unzip** the contents of the downloaded file into the **WordPress** folder.
 
-To select them all just click CTRL+A.
+To do this, open the folder in which you downloaded the compressed file, right-click on the file in question and then select “Extract all... ”.
 
-Then drag and drop the files in to the "Remote site" section in the "www" folder. 
+Enter the destination **WordPress** folder to extract your files to that folder.
 
-It is very likely that the "www" folder is not empty. You do not have to remove the files that are in it. We will go back to this point later on in the guide.
+#### 2.3 - Move the source files from the "WordPress" folder to the "root folder" on your web hosting plan
 
-![wordpress](images/3130.png){.thumbnail}
+Once you have unpacked the files in your **WordPress** folder, [log in to your storage space via FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) using [FTP Filezilla client](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) then copy the files in the **WordPress** folder to the "root folder" you defined on your hosting in [step 1](#step1) of this guide.
 
-## Step 3
-The files are being transferred. 
+![hosting](images/wpfl2.png){.thumbnail}
 
-Wait until all of the files are dropped in to the remote FTP server. This could take a few minutes.
+>[!warning]
+>
+> We strongly recommend that you use an empty "root folder" to avoid conflicts with another site. Ensure that the destination folder does not contain any items before moving the files.
+>
 
-Once the transfer is complete, make sure that all of the files and folders have been correctly transferred. 
+>[!primary]
+>
+> If the root folder you defined was not created automatically during the actions described in [step 1](#step1), you can create it via Filezilla.
+>
+> It may take a few minutes to upload files to your web hosting plan.
+>
+> Once the transfer is complete, check that all the elements in the local **WordPress** folder have been correctly transferred to the root folder on your Web Hosting plan.
+>
 
-This is the end of the section devoted to transferring files via FTP.
+**Special Case**: If you have a limited internet speed and/or a hosting plan **Pro** or higher, you can use the **SSH** connection to put WordPress source files in your Web Hosting plan’s storage space. 
 
-![wordpress](images/3131.png){.thumbnail}
+To log in to your hosting plan via SSH, please refer to our guide to [logging in via SSH from an OVHcloud shared hosting plan](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/).
 
+Once you have logged in via **SSH**, run the following commands:
 
-## Step 4: link with the database
+- Go to the "root folder" where you want to install WordPress on your web hosting plan:
 
-## Follow WordPress installation steps
+```bash
+cd NameOfYourTargetFolder
+```
 
-- Before continuing with the installation, clear your browser's cache, to prevent any errors. 
+- Retrieve WordPress source files directly from your "root folder":
 
+```bash
+wget http://wordpress.org/latest.tar.gz
+```
 
-In order to link your database to WordPress, you have to follow the CMS install steps.
+- Unzip the WordPress source files in your “root folder”:
 
-## Step 1
-Go to your domain name
+```bash
+tar xvf latest.tar.gz
+```
 
-This message will appear. 
+- A **wordpress** folder is created in your "root folder". Move its contents to the base of your "root folder":
 
-Click on "Create a configuration file to continue."
+```bash
+mv wordpress/* ./
+```
 
-![wordpress](images/3132.png){.thumbnail}
+- Delete the empty **wordpress** folder:
 
-## Step 2
-Get your database credentials (see the beginning of this guide)
+```bash
+rmdir ./wordpress/
+```
 
-Click "We're off!" or equivalent to go to the next step.
+- Delete the compressed file **latest.tar.gz**:
 
-![wordpress](images/3133.png){.thumbnail}
+```bash
+rm -f latest.tar.gz
+```
 
-## Step 3
-Enter the information requested concerning the database
+### Step 3 - Finalise manual installation <a name="step3"></a>
 
-Database name: chosen when it was created in the customer account. 
+> [!success]
+>
+> Before you continue with the installation, clear your Internet browser cache to avoid any errors.
+>
 
-ID: database ID. 
+#### 3.1 - Access your WordPress website via your browser
 
-Password: you were sent an email when you created the database - you might have changed it. 
+Enter your domain in the search bar of your web browser.
 
-Database address: enter the name of your database server, stated in the installation email or your customer account. 
+If the WordPress source files have been correctly placed in your root folder, the WordPress page for selecting the language appears:
 
-Table prefix: useful for installing WordPress lots of times on the same database. In this case, you have to enter a different prefix for each installation. 
+![hosting](images/WPselectlangue.png){.thumbnail}
 
-Important: the database IDs are not automatically sent when installing the hosting package. To receive them, you have to enable the database in your customer account.
+Select the site language and click `Continue`{.action}.
 
-Click "Send" to confirm login details for the database. 
+#### 3.2 - Link your WordPress and your database
 
+WordPress will ask you to retrieve the login details for your database:
 
-- These are the final steps for creating a link between your database and WordPress. You now just have to complete the installation itself.
+![hosting](images/WPstart.png){.thumbnail}
 
+Get your database login details (if necessary, read [Step 1.4](#step1-4) in this guide) then click on `Let's go!`{.action} to continue.
 
+The following page appears:
 
-![wordpress](images/3134.png){.thumbnail}
+![hosting](images/WPdb.png){.thumbnail}
 
+Enter the information requested for the database:
 
-## Completion
+- Database name: this name was defined when the database was created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-## Complete the installation steps
-Take the following steps to finish installing the WordPress blog.
+- ID: it is identical to the database name if you are using a database included with your web hosting plan.
+For databases created on CloudDB, please refer to the information in [Step 1.4](#step1-4) of this guide.
 
-## Step 1
-Click "Run install" or equivalent to continue.
+- Password: it was sent to you by email when the database was created. You may have modified it in the meantime.
 
-![wordpress](images/3135.png){.thumbnail}
+- Database address: Enter the name of your database server, in the installation email or in your OVHcloud Control Panel. 
 
-## Step 2
-Enter the information requested concerning administration of your WordPress blog:
+> [!primary]
+> 
+> - The server name of a database included with your web hosting plan usually has this form: `NameOfYourDatabase.mysql.db`. 
+>
+> - The server name of a CloudDB database starts with your OVHcloud NIC handle and is in the following form: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where the **"X"** are to be replaced by the reference of your CloudDB service.
+>
 
-Website title: enter the title of your blog.
+- Table prefix: if you are installing with a brand new database, enter your preferred “prefix”. If you are using a database that is already in use by another website, please refer to [Step 1.4](#step1-4) of this guide to avoid entering a table "prefix" that is already in use in your database.
 
-ID:choose the login ID to manage your blog. 
+Click `Submit`{.action} to validate the database connection information.
 
-Password, two times: enter your chosen password two times to log in to your WordPress blog administration. 
+If everything went well, the following page appears:
 
-Your email address: enter a valid email address. 
+![hosting](images/WPafterDB.png){.thumbnail}
 
-Private life: if this box is checked, the search engines will rank the blog. 
+Click `Launch Installation`{.action}.
 
-To launch the WordPress installation click on green]"Install WordPress".
+#### 3.3 - Set administrator access to the back-office of your WordPress and your contact email
 
-![wordpress](images/3136.png){.thumbnail}
+Once you have set it up, WordPress will ask you for information on your future website, including the creation of your WordPress admin username.
 
-## Step 3
-Your WordPress blog has now been installed!
+This will then give you access to the administration panel, commonly called “Back-office”, in your WordPress CMS.
 
-You can now log in and start to work on your blog. Click "Log in".
+![hosting](images/WPafterDB2.png){.thumbnail}
 
-![wordpress](images/3137.png){.thumbnail}
+Enter the information requested:
 
-## WordPress administration
-A look at the WordPress administration panel.
+- Site title: enter your website’s title.
+- ID: define your CMS Administrator ID.
+- Password: set a password for this Administrator ID.
+- Your email address: enter a valid email address.
+- Privacy: tick this box to have search engines reference your WordPress.
 
-![wordpress](images/3138.png){.thumbnail}
+Click `Install WordPress`{.action} as soon as you have entered all of the information correctly.
 
+#### 3.4 - Finalise manual installation and test "Administrator" access
 
-## Useful information
-OVH support is not authorised to answer questions about WordPress configuration.
+Installation is complete if the following page is displayed:
 
-Please consult the forum dedicated to WordPress.
+![hosting](images/WPend.png){.thumbnail}
 
+At this stage, simply click on the `Log in`{.action} button to test access to the Back-office of your new WordPress CMS using the administrator credentials that were created in step 3.3 just before.
 
-- Here is the link to the [support forum](http://www.wordpress-fr.net/support/) dedicated to this CMS.
+> [!primary]
+>
+> OVHcloud teams do not offer support on third-party solutions such as WordPress. They cannot therefore assist you with using or configuring your WordPress CMS.
+>
+> For support of this type, please use the forums dedicated to the WordPress solution.
+>
 
+Once connected, the following page appears:
 
+![hosting](images/WPadminInterface.png){.thumbnail}
 
-## Typical error: site under construction
-You have set up your files on FTP, however the "site under construction" page is still displayed. 
+> [!success]
+>
+> You can now start creating the content for your WordPress website!
+>
 
-When your hosting system was installed, OVH set up a "waiting" page while you were uploading files to your site. 
+## Go further <a name="go-further"></a>
 
-If you only drop your own files into the "www" folder and do not delete the OVH content first, then you may encounter this problem.
+[Official WordPress website](https://wordpress.org)
 
-To correct/fix this issue, you will need to remove or rename the "index.html" file that was created by OVH.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/fr/).
 
-It may be useful to simply just rename the file so that you can re-enable it at any time, and use it as your own "waiting" page.
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/fr/support-levels/).
 
-Something else to note: Your website's files must be placed in the "www" folder in order for them to display your website.
-
-![wordpress](images/3139.png){.thumbnail}
-
-## Typical error: PHP version
-This is an error to do with your server's PHP version. 
-
-The cause is simple: the latest version of PHP is not enabled. 
-
-A guide is available concerning how to modify the PHP version on your hosting package:[Modify hosting package PHP version]({legacy}1207)
-
-![wordpress](images/3140.png){.thumbnail}
-
+Join our community of users on <https://community.ovh.com>.
