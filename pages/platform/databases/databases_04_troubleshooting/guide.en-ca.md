@@ -58,7 +58,7 @@ Several reasons may cause a database instance to slow down. To start troubleshoo
 - **Verify metrics dashboard :** The first step is to understand if slowness is punctual or periodic. Many metrics can help you to understand if this phenomena happens each hour, each day, or is non-cyclical.
 - **Confront metrics to your needs :** If the experienced slowness matches with a high-level of metrics, such as CPU usage or RAM usages, it means that your database instance is reaching its maximum performance. If you reach max performance, it can be related to legit operations on your side, or code malfunctions. OVHcloud is not responsible for the scripts used.
 - **Check the slow queries :** major DBMS allow you to investigate slow queries, meaning investigating the queries made on databases that take too much time. Reducing time of queries is always a performance benefit.
-- **Verify OVHcloud health statuses :** OVHcloud may experience network or databases issues. We list them on <http://travaux.ovh.net/>.
+- **Verify OVHcloud health statuses :** OVHcloud may experience network or databases issues. We list them on <https://www.status-ovhcloud.com/>.
 
 If the slowness persists, please contact our support team.
 
@@ -76,7 +76,7 @@ Depending on the outage, your usage of the service can be affected by:
 To troublesoot an outage :
 
 1. **Check database instance status :** connect to your Public Cloud Control Panel and explore your database services. Verify the status. Nominal status is **Running**;
-2. **Check OVhcloud health statuses :** when major outages occurs, they are listed on <http://travaux.ovh.net/>.
+2. **Check OVhcloud health statuses :** when major outages occurs, they are listed on <https://www.status-ovhcloud.com/>.
 
 **A database instance reboot** can occur when:
 

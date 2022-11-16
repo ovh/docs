@@ -442,7 +442,7 @@ These queries performances are related to many external factors:
 - The heavy usage of the service (for example a legit traffic due to Sales actions).
 - An issue on the hardware infrastructure or network.
 
-To troubleshoot your performance, usually the first step is to check if the service is not affected, i.e. by a [travaux task](http://travaux.ovh.net/).
+To troubleshoot your performance, usually the first step is to check if the service is not affected, i.e. by a [travaux task](https://www.status-ovhcloud.com/).
 To bench a superior flavor, you can duplicate your database instance to a higher flavor model and test again the performance.
 
 Overall, if you are experiencing punctual slowness, you need databases and system admin skills.
