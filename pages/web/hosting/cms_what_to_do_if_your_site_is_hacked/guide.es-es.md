@@ -72,7 +72,7 @@ Si utiliza dispositivos que funcionan en *Linux*, *Mac OS* u otros sistemas oper
 
 Si se encuentra un virus o un programa espía, deberá eliminarlo del software anti-virus/antispyware **antes** para pasar a la siguiente etapa.
 
-### Etape 2 - modificar sus contraseñas <a name="step2"></a>
+### Etapa 2 - modificar sus contraseñas <a name="step2"></a>
 
 Una vez que haya pirateado un sitio web, modifique todas las contraseñas relacionadas con él por motivos de precaución.
 
