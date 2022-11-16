@@ -17,7 +17,7 @@ You can deploy the product on an OVHcloud infrastructure to leverage its functio
 
 > [!warning]
 >
-> Tanzu Community Edition is coming to an end of life at the end of 2022 and will no longer be available. VMware has decided to offer free download of VMware Tanzu Kubernetes Grid. You can use this guide [Introduction to Tanzu Kubernetes Grid](https://docs.ovh.com/pl/private-cloud/tanzu-tkgm-presentation/) to deploy it. 
+> Tanzu Community Edition is coming to an end of life at the end of 2022 and will no longer be available. VMware has decided to offer free download of VMware Tanzu Kubernetes Grid. You can use our [introduction to Tanzu Kubernetes Grid](https://docs.ovh.com/pl/private-cloud/tanzu-tkgm-presentation/) guide to deploy it.
 >
 
 **This guide offers a step by step example of TCE installation**
