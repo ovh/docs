@@ -6,7 +6,7 @@ section: Getting started with Exchange
 order: 9
 ---
 
-**Last updated November 15th, 2022**
+**Last updated 15th November 2022**
 
 The Hosted Exchange service is a Microsoft Exchange email solution. You can use it to manage your emails, calendars and tasks wherever you are.
 
@@ -68,24 +68,24 @@ This shared model can help relieve the customer’s operational burden.
 | Manage data availability on the hosted service following OVHcloud SLA |  | RA |
 | Manage security risks related client personal data following OVHcloud DPA and ISSP | I | RA |
 | Manage security risks of different components of the service |  | RA |
-| Manage risks of the client software being used (Outlook, Thunderbird, ...) | RA |  |
+| Manage risks of the client software being used (Outlook, Thunderbird, etc.) | RA |  |
 | Manage network accessibility of the Exchange service interface |  | RA |
-| Administrate the service infrastructure (Servers, OS, Antivirus, Storage) |  | RA |
-| Administrate domain, mailboxes, distribution groups, … | RA | IR |
+| Administrate the service infrastructure (servers, OS, antivirus, storage) |  | RA |
+| Administrate domain, mailboxes, distribution groups, etc. | RA | IR |
 | Manage backups on the service |  | RA |
 
 ##### **3.1.2. Access management**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage access to the manager and to mailboxes following access control policy defined | RA | I |
+| Manage access to the OVHcloud Control Panel and to mailboxes following access control policy defined | RA | I |
 | Define and implement security protocols on the service (IMAP, POP, MAPI, EWS) and security associated | I | RA |
 | Manage access to control plane | A | RI |
 | Manage access to mail service and data plane | RA | I |
 | Manage physical and logical access to infrastructures for OVHcloud teams |  | RA |
 
 ##### **3.1.3. Monitoring**
-
+    
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Monitor and manage alerts for the functioning of systems in support of the Exchange service | I | RA |
@@ -162,7 +162,7 @@ This shared model can help relieve the customer’s operational burden.
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Destroy configurations of end of service following contract termination| I | RA |
+| Destroy configurations at end of service following contract termination| I | RA |
 
 #### 5.2. Data destruction
 
@@ -172,6 +172,6 @@ This shared model can help relieve the customer’s operational burden.
 
 ## Go further
 
-[All our Microsoft collaborative solutions ocumentation](../)
+[All our Microsoft collaborative solutions documentation](../)
 
 Join our community of users on <https://community.ovh.com/en/>.
