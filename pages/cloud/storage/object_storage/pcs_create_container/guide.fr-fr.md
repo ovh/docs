@@ -61,8 +61,13 @@ Nommez votre conteneur, puis cliquez sur `Create the container`{.action} :
 
 > [!warning]
 >
-> Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre conteneur de doit pas contenir les caractères suivants : - [ . ] - [ _ ] et vous ne devez pas utiliser de majuscules.
-> Pour plus d'informations, consultez notre guide « [Lier un conteneur a un nom de domaine](https://docs.ovh.com/fr/storage/pcs/link-domain/) ».
+> Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre conteneur de doit pas contenir les caractères suivants :
+>
+> - [ . ]  
+> - [ _ ]  
+> - et vous ne devez pas utiliser de majuscules.  
+>
+> Pour plus d'informations, consultez notre guide « [Lier un conteneur a un nom de domaine](https://docs.ovh.com/ca/fr/storage/pcs/link-domain/) ».
 >
 
 ![container name](images/create-container-20211005111805966.png)
@@ -88,14 +93,16 @@ Développez le menu `Object Store`{.action}, cliquez sur `Containers`{.action} p
 
 Nommez votre conteneur.
 
-  > [!warning]
-  >
-  > Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre   conteneur de doit pas contenir les caractères suivants :
-  > - [ . ]
-  > - [ _ ]
-  > - Et vous ne devez pas utiliser de majuscules.
-  > Pour plus d'informations, consultez notre guide « [Lier un conteneur a un nom de domaine](https://docs.ovh.com/fr/storage/pcs/link-domain/) ».
-  >
+> [!warning]
+>
+> Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre conteneur de doit pas contenir les caractères suivants :
+>
+> - [ . ]  
+> - [ _ ]  
+> - et vous ne devez pas utiliser de majuscules.  
+>
+> Pour plus d'informations, consultez notre guide « [Lier un conteneur a un nom de domaine](https://docs.ovh.com/ca/fr/storage/pcs/link-domain/) ».
+>
 
 Sélectionnez la politique d'accès de votre conteneur puis cliquez sur `Suivant`{.action}
 

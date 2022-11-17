@@ -21,7 +21,7 @@ Oferta Object Storage dla Public Cloud to nielimitowane rozwiązanie do przechow
 - do hostingu publicznego (do przechowywania wszystkiego, co jest dostępne publicznie);
 - do archiwizacji danych.
 
-Pierwszy etap polega na utworzeniu kontenera, który gromadzi Twoje pliki. 
+Pierwszy etap polega na utworzeniu kontenera, który gromadzi Twoje pliki.
 
 **Niniejszy przewodnik wyjaśnia, jak go utworzyć w Panelu klienta OVHcloud i w interfejsie Horizon Openstack.**
 
@@ -65,11 +65,11 @@ Nazwij kontener i kliknij `Dodaj kontener`{.action}:
 
 > [!warning]
 >
-> Jeśli chcesz przypisać kontener do domeny, nazwa kontenera nie może zawierać następujących znaków: 
+> Jeśli chcesz przypisać kontener do domeny, nazwa kontenera nie może zawierać następujących znaków:
 >
-> - [ . ] 
-> - [ _ ] 
-> - i nie należy używać wielkich liter.
+> - [ . ]  
+> - [ _ ]  
+> - i nie należy używać wielkich liter.  
 >
 > Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Łączenie kontenera z nazwą domeny](https://docs.ovh.com/pl/storage/umieszczenie_kontenera_object_storage_za_domena/)".
 >
@@ -97,16 +97,16 @@ Rozwijaj menu `Object Store`{.action}, kliknij `Containers`{.action}, a następn
 
 Nazwij kontener.
 
-  > [!warning]
-  >
-  > Jeśli chcesz przypisać kontener do domeny, nazwa kontenera nie może zawierać następujących znaków:
-  >
-  > - [ . ]
-  > - [ _ ]
-  > - Nie wolno używać wielkich liter.
-  >
-  > Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Łączenie kontenera z nazwą domeny](https://docs.ovh.com/pl/storage/umieszczenie_kontenera_object_storage_za_domena/)".
-  >
+> [!warning]
+>
+> Jeśli chcesz przypisać kontener do domeny, nazwa kontenera nie może zawierać następujących znaków:
+>
+> - [ . ]  
+> - [ _ ]  
+> - Nie wolno używać wielkich liter.  
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Łączenie kontenera z nazwą domeny](https://docs.ovh.com/pl/storage/umieszczenie_kontenera_object_storage_za_domena/)".
+>
 
 Wybierz politykę dostępów dla kontenera i kliknij `Next`{.action}
 
