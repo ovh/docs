@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 
 ---
 
-**Dernière mise à jour le 16/11/2022**
+**Dernière mise à jour le 17/11/2022**
 
 ## Objectif
 
@@ -280,6 +280,18 @@ Cette balise et son contenu sont à placer avant la balise fermante `</body>` en
 </html>
 ```
 
+Quand un ou des fichiers assets sont modifiés, reconstruisez-le le cache avec la commande :
+
+```sh
+php cecil.phar cache:clear:assets
+```
+
+Si les modifications ne sont pas effectives sur votre navigateur, pensez à vider le cache de celui-ci et rebuilder votre solution :
+
+```sh
+php cecil.phar build
+```
+
 #### Fichier JavaScript
 
 Les fichiers JavaScript, comme les fichiers CSS, sont à mettre dans le répertoire `assets`. Libre à vous de les organiser dans différents répertoires.
@@ -324,6 +336,16 @@ function getTemperature(city) {
     };
 }
 ```
+
+Vous pouvez aller sur votre navigateur :
+
+![Web page with JavaScript running](images/static_website_installation_cecil%5B18%5D.png)
+
+Cliquez sur "Changez de ville" et saisissez le nom d'une commune :
+
+![Select a new city](images/static_website_installation_cecil%5B19%5D.png)
+
+![Page updated](images/static_website_installation_cecil%5B20%5D.png)
 
 ## Aller plus loin
 
