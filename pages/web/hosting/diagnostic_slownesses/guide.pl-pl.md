@@ -37,15 +37,15 @@ W rzadkich przypadkach informacje o powolnym wyświetlaczu mogą pochodzić od T
 >
 > Nasza oferta hostingu współdzielonego nie dysponuje "Service Level Agreement" (SLA). 
 >
-> Jeśli potrzebujesz usługi ze współczynnikiem dostępności SLA większym niż 99%, zalecamy rozważenie korzystania z [Prywatnego Serwera Wirtualnego (VPS)](https://www.ovhcloud.com/fr/vps/) lub [Serwera dedykowanego](https://www.ovhcloud.com/fr/bare-metal/).
+> Jeśli potrzebujesz usługi ze współczynnikiem dostępności SLA większym niż 99%, zalecamy rozważenie korzystania z [Prywatnego Serwera Wirtualnego (VPS)](https://www.ovhcloud.com/pl/vps/) lub [Serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/).
 >
 > Ponadto wydajność infrastruktury hostingu współdzielonego OVHcloud jest monitorowana 24 godziny na 24 i 7 dni na 7. W celu zapewnienia wysokiego poziomu dostępności oraz, w razie potrzeby, szybkiego przywrócenia usług w przypadku stwierdzonego przeciążenia.*
 >
 
 ## Wymagania początkowe
 
-- Posiadanie strony internetowej zainstalowanej w ramach jednej z naszych ofert[hosting OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Posiadanie strony internetowej zainstalowanej w ramach jednej z naszych ofert[hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -53,7 +53,7 @@ W rzadkich przypadkach informacje o powolnym wyświetlaczu mogą pochodzić od T
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/fr/). Niestety nie będziemy w stanie udzielić Ci wsparcia **w przypadku, gdy infrastruktura, na której hostowana jest Twoja oferta hostingu współdzielonego, nie jest istotna**. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/). Niestety nie będziemy w stanie udzielić Ci wsparcia **w przypadku, gdy infrastruktura, na której hostowana jest Twoja oferta hostingu współdzielonego, nie jest istotna**. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 > [!success]
@@ -101,7 +101,7 @@ Wszystkie diagnozy z etapu 1 muszą być wykonane **bez wyjątku**, aby określi
 
 Aby mieć pewność, że Twoje usługi (hosting współdzielony **i** baza danych) nie podlegają konserwacji lub awarii, pobierz informacje o klastrze i przędz z hostingu współdzielonego oraz ogólne informacje dotyczące bazy danych. Następnie możesz sprawdzić ich status na stronie [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Aby dowiedzieć się, gdzie znajduje się Twój hosting, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action} i wybierz odpowiedni hosting. W zakładce `Informacje ogólne`{.action} znajdziesz `centrum` danych hostingu współdzielonego oraz `filer`, w którym znajduje się ono.
+Aby dowiedzieć się, gdzie znajduje się Twój hosting, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action} i wybierz odpowiedni hosting. W zakładce `Informacje ogólne`{.action} znajdziesz `centrum` danych hostingu współdzielonego oraz `filer`, w którym znajduje się ono.
 
 ![Pobierz Filer](images/DropFilerCluster1.png){.thumbnail}
 
@@ -126,7 +126,7 @@ Przetestuj Twoją stronę WWW za pomocą innego urządzenia/komputera, a następ
 
 #### 1.3 - Przetestuj hosting przy użyciu pliku niezależnego od Twojej strony WWW
 
-Umieść w katalogu głównym Twojej strony WWW[przestrzeń dyskowa FTP Twojego hostingu](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) plik, który nazwiesz `phpinfo.php`.
+Umieść w katalogu głównym Twojej strony WWW[przestrzeń dyskowa FTP Twojego hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) plik, który nazwiesz `phpinfo.php`.
 
 W tym pliku wpisz następujący kod:
 
@@ -140,7 +140,7 @@ phpinfo();
 >
 > W niektórych przypadkach pliki "**.htaccess**" znajdujące się w katalogach/folderach znajdujących się na górze lub na tym samym poziomie, w jakim umieściłeś plik "**phpinfo.php**" mogą mieć wpływ na wyświetlanie w przeglądarce internetowej "**phpinfo.php***". 
 >
-> Operacje na pliku "**.htaccess**" mogą mieć wpływ na wyświetlanie strony. W przypadku trudności z realizacją tego zadania, należy skontaktować się z [wyspecjalizowanym dostawcą] (https://partner.ovhcloud.com/fr/).
+> Operacje na pliku "**.htaccess**" mogą mieć wpływ na wyświetlanie strony. W przypadku trudności z realizacją tego zadania, należy skontaktować się z [wyspecjalizowanym dostawcą] (https://partner.ovhcloud.com/pl/).
 >
 > Jeśli nie wyświetla się i **tylko dla zaawansowanych użytkowników**, należy zmienić nazwę plików "**.htaccess**" na "**.htaccess_OLD***", aby serwer nie wykonywał już testu. Zmień nazwę poprawnie po zakończeniu diagnostyki.
 >
@@ -156,9 +156,9 @@ phpinfo();
 
 #### 1.4 - Przetestuj połączenie z bazą danych:
 
-Zaloguj się do bazy danych, postępując zgodnie z **etap 3** w przewodniku [dotyczącym tworzenia wspólnej bazy danych](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+Zaloguj się do bazy danych, postępując zgodnie z **etap 3** w przewodniku [dotyczącym tworzenia wspólnej bazy danych](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/).
 
-Jeśli korzystasz z bazy danych w ofercie **CloudDB**, zapoznaj się z naszym przewodnikiem [dotyczącym połączenia z bazą danych w usłudze Cloud DB](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
+Jeśli korzystasz z bazy danych w ofercie **CloudDB**, zapoznaj się z naszym przewodnikiem [dotyczącym połączenia z bazą danych w usłudze Cloud DB](https://docs.ovh.com/pl/clouddb/polaczenie-bazy-danych-serwer-bdd/).
 
 Jeśli logowanie się powiodło się, otrzymasz następujący interfejs:
 
@@ -166,7 +166,7 @@ Jeśli logowanie się powiodło się, otrzymasz następujący interfejs:
 
 > [!warning]
 >
-> Jeśli wystąpi błąd, zapoznaj się z naszą dokumentacją dotyczącą [błędów występujących w bazie danych](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/). Następnie skorzystaj z powyższego przewodnika, aby poprawić Twoją sytuację, po czym spróbuj ponownie zalogować się do bazy danych.
+> Jeśli wystąpi błąd, zapoznaj się z naszą dokumentacją dotyczącą [błędów występujących w bazie danych](https://docs.ovh.com/pl/hosting/blad-baz-danych/). Następnie skorzystaj z powyższego przewodnika, aby poprawić Twoją sytuację, po czym spróbuj ponownie zalogować się do bazy danych.
 >
 
 #### 1.5 - Interpretacja wykonanych diagnoz
@@ -195,18 +195,18 @@ Na tym etapie już wiesz, że spowolnienia są generowane przez strony/skrypty/p
 
 > [!warning]
 >
-> Jeśli masz trudności z wykonaniem kolejnych działań, możesz skontaktować się z naszym [wyspecjalizowanym usługodawcą](https://partner.ovhcloud.com/fr/). OVHcloud nie będzie wspierać rozwoju i/lub optymalizacji zawartości Twojej strony WWW.
+> Jeśli masz trudności z wykonaniem kolejnych działań, możesz skontaktować się z naszym [wyspecjalizowanym usługodawcą](https://partner.ovhcloud.com/pl/). OVHcloud nie będzie wspierać rozwoju i/lub optymalizacji zawartości Twojej strony WWW.
 >
 
 Poniżej znajdziesz działania, które należy przeprowadzić, aby zidentyfikować źródło(-a) powolnego czasu i zoptymalizować Twoją stronę WWW.
 
 #### 2.1 - Sprawdź konfigurację hostingu
 
-Sprawdź framework PHP, wersję PHP i środowisko wykonawcze używane na Twoim hostingu. Zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji Twojego hostingu](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/).
+Sprawdź framework PHP, wersję PHP i środowisko wykonawcze używane na Twoim hostingu. Zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji Twojego hostingu](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/).
 
 Jeśli korzystasz z przestarzałej wersji PHP na Twoim hostingu, silnik "**PHP CGI**" i/lub środowisko "**legacy**" i **jeśli Twoja strona WWW jest kompatybilna**, skorzystaj z silnika "**PHP**" (PHP FPM), środowisko "**stable**" lub "**stable64**" z najnowsza wersja PHP.
 
-Aby porównać dostępne wersje PHP w zależności od używanego środowiska uruchomieniowego, sprawdź **etap 2** w przewodniku dotyczącym [konfiguracji wersji PHP na Twoim hostingu](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
+Aby porównać dostępne wersje PHP w zależności od używanego środowiska uruchomieniowego, sprawdź **etap 2** w przewodniku dotyczącym [konfiguracji wersji PHP na Twoim hostingu](https://docs.ovh.com/pl/hosting/konfiguracja_php_na_hostingu_www_ovh_2014/).
 
 Korzystanie z najnowszej wersji PHP, środowisko uruchomieniowe "**stable**" lub "**stable64**" z silnikiem "**PHP**" (PHP FPM) sprawi, że Twoja strona będzie płynniejsza i szybsza. Do wykonywania swoich zadań silnik "**PHP**" (PHP FPM) może być nawet 50 razy wydajniejszy od silnika "**PHP CGI**".
 
@@ -216,7 +216,7 @@ Połączenia wychodzące są bardzo energochłonne pod względem zasobów. Jeśl
 
 Prowadzi to do spowolnień lub nawet do kodów "504 gateway timeout".
 
-Aby przeanalizować połączenia wychodzące z Twojego hostingu, sprawdź logi **OUT** tego hostingu. Zapoznaj się z naszą dokumentacją dotyczącą [sprawdzanie logów hostingu](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+Aby przeanalizować połączenia wychodzące z Twojego hostingu, sprawdź logi **OUT** tego hostingu. Zapoznaj się z naszą dokumentacją dotyczącą [sprawdzanie logów hostingu](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/).
 
 Jeśli zauważysz, że na Twoim hostingu istnieje wiele połączeń wychodzących, porównaj logi **OUT** z Twoimi logami **WEB** za pomocą znacznika czasu tych logów. Dzięki temu możesz zidentyfikować skrypt lub skrypty odpowiedzialne za tę sytuację.
 
@@ -224,7 +224,7 @@ Jeśli korzystasz z Content Management System (CMS) takiego jak WordPress, Jooml
 
 #### 2.3 - Analizuj strumień zapytań HTTP wykonanych na Twoim hostingu:
 
-Aby przeprowadzić tę operację, zapoznaj się z logami **WEB** Twojego hostingu w dokumentacji dotyczącej hostingu [sprawdź logi](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+Aby przeprowadzić tę operację, zapoznaj się z logami **WEB** Twojego hostingu w dokumentacji dotyczącej hostingu [sprawdź logi](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/).
 
 Największe zapytania w zakresie zasobów to zapytania HTTP typu **POST**, a następnie zapytania typu **PUT**. Te ostatnie dokonują odpowiednio zmian i wstawiania.
 
@@ -252,14 +252,14 @@ Aby zmniejszyć przepływ zapytań do każdego załadowania strony, możesz rów
 
 > [!primary]
 >
-> OVHcloud oferuje kilka [oferty CDN](https://www.ovhcloud.com/fr/web-hosting/options/). Jeśli chcesz korzystać z tej usługi lub ją włączyć dla Twojego hostingu, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), a następnie zapoznaj się z naszym przewodnikiem dotyczącym [korzystania z usługi CDN OVHcloud](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/).
+> OVHcloud oferuje kilka [oferty CDN](https://www.ovhcloud.com/pl/web-hosting/options/). Jeśli chcesz korzystać z tej usługi lub ją włączyć dla Twojego hostingu, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie zapoznaj się z naszym przewodnikiem dotyczącym [korzystania z usługi CDN OVHcloud](https://docs.ovh.com/pl/hosting/przewodnik_dotyczacy_uslugi_geocache_na_hostingu_www/).
 >
 
 #### 2.4 - zoptymalizuj bazę danych
 
 > [!warning]
 >
-> Operacje, które wykonujesz w bazie danych mogą mieć nieodwracalne konsekwencje, jeśli nie są przeprowadzane metodycznie i prawidłowo. Skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/fr/), jeśli nie masz pewności co do działań, jakie należy przeprowadzić. 
+> Operacje, które wykonujesz w bazie danych mogą mieć nieodwracalne konsekwencje, jeśli nie są przeprowadzane metodycznie i prawidłowo. Skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/), jeśli nie masz pewności co do działań, jakie należy przeprowadzić. 
 >
 
 Sprawdź, czy do Twojej bazy danych wykonywana jest znaczna liczba zapytań.<br>
@@ -285,7 +285,7 @@ Zmień rozmiar wszystkich obrazów, aby zminimalizować zużycie zasobów.
 
 #### 2.6 - Zoptymalizuj pozostałą część Twojej strony WWW
 
-Zapoznaj się z naszym przewodnikiem dotyczącym [optymalizacji wydajności dla Twojej strony internetowej](https://docs.ovh.com/fr/hosting/optimisation-performances-site/).
+Zapoznaj się z naszym przewodnikiem dotyczącym [optymalizacji wydajności dla Twojej strony internetowej](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony/).
 
 Możesz sprawdzić ścieżki optymalizacji dla Twojej strony, analizując ją na stronie [gtmetrix.com](https://gtmetrix.com){.external} (strona ta nie jest powiązana z OVHcloud).
 
@@ -298,7 +298,7 @@ Możesz sprawdzić ścieżki optymalizacji dla Twojej strony, analizując ją na
 
 Jeśli Twój hosting WWW i baza danych **nie są przedmiotem dyskusji** i Twoja strona WWW będzie się powoli rozwijać, pomimo realizacji **wszystkich etapów** tego przewodnika, prawdopodobnie oznacza to, że oferta, której używasz do hostowania Twojej strony WWW nie jest lub jest bardziej odpowiednia dla Twojego projektu. 
 
-Możesz rozważyć ofertę [hostingu współdzielonego](https://www.ovhcloud.com/fr/web-hosting/) lub infrastrukturę dedykowaną, taką jak [Serwer Wirtualny Prywatny (VPS)](https://www.ovhcloud.com/fr/vps/) lub [Serwer dedykowany](https://www.ovhcloud.com/fr/bare-metal/). 
+Możesz rozważyć ofertę [hostingu współdzielonego](https://www.ovhcloud.com/pl/web-hosting/) lub infrastrukturę dedykowaną, taką jak [Serwer Wirtualny Prywatny (VPS)](https://www.ovhcloud.com/pl/vps/) lub [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/). 
 
 ## Sprawdź również <a name="go-further"></a>
 

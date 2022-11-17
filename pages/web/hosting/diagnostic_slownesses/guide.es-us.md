@@ -37,15 +37,15 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 >
 > Nuestros planes de hosting no disponen de "Service Level Agreement" (SLA). 
 >
-> Si necesita un servicio con una tasa de disponibilidad SLA superior al 99%, le recomendamos que considere la posibilidad de utilizar un [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/fr/vps/) o un [Servidor Dedicado](https://www.ovhcloud.com/fr/bare-metal/).
+> Si necesita un servicio con una tasa de disponibilidad SLA superior al 99%, le recomendamos que considere la posibilidad de utilizar un [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/es/vps/) o un [Servidor Dedicado](https://www.ovhcloud.com/es/bare-metal/).
 >
 > Por otro lado, el rendimiento de la infraestructura de alojamientos compartidos OVHcloud se monitoriza las 24 horas del día, los 7 días de la semana. Esto le garantiza un alto índice de disponibilidad y, en su caso, una rápida recuperación de sus servicios en caso de sobrecarga comprobada.*
 >
 
 ## Requisitos
 
-- Tener un sitio web alojado en uno de nuestros planes de hosting de OVHcloud (https://www.ovhcloud.com/fr/web-hosting/)
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Tener un sitio web alojado en uno de nuestros planes de hosting de OVHcloud (https://www.ovhcloud.com/es/web-hosting/)
+- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
 ## Procedimiento
 
@@ -53,7 +53,7 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/fr/). Nosotros no podremos asistirle. **siempre que la infraestructura en la que está alojado su plan de hosting no sea válida**. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/). Nosotros no podremos asistirle. **siempre que la infraestructura en la que está alojado su plan de hosting no sea válida**. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 > [!success]
@@ -101,7 +101,7 @@ Todos los diagnósticos del etapa 1 deben realizarse **sin excepción** para det
 
 Para asegurarse de que sus servicios (alojamiento compartido **et** de la base de datos) no son objeto de mantenimiento o de incidente, consulte la información del cluster y el filer de su alojamiento compartido, así como la información general relativa a su base de datos. Compruebe su estado en [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Para conocer el cluster y el filer en el que se encuentra su alojamiento compartido, conéctese a su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la pestaña `Información general`{.action}, consulte el `datacenter` de su alojamiento compartido y el `filer` en el que se encuentra.
+Para conocer el cluster y el filer en el que se encuentra su alojamiento compartido, conéctese a su [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la pestaña `Información general`{.action}, consulte el `datacenter` de su alojamiento compartido y el `filer` en el que se encuentra.
 
 ![Obtener Filer](images/DropFilerCluster1.png){.thumbnail}
 
@@ -126,7 +126,7 @@ Pruebe su sitio web desde otro dispositivo/ordenador y luego desde otro punto de
 
 #### 1.3 - Pruebe el alojamiento con un archivo independiente de su sitio web
 
-Ponga en la raíz de su sitio web en el[espacio de almacenamiento FTP de su alojamiento compartido](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) un archivo al que denominará "phpinfo.php".
+Ponga en la raíz de su sitio web en el[espacio de almacenamiento FTP de su alojamiento compartido](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) un archivo al que denominará "phpinfo.php".
 
 Introduzca el siguiente código en el archivo:
 
@@ -140,7 +140,7 @@ phpinfo();
 >
 > En algunos casos, los archivos "**.htaccess**" presentes en los directorios/carpetas situados antes o al mismo nivel que el lugar en el que haya colocado su fichero "**phpinfo.php**" pueden afectar a la visualización en un navegador de Internet del "**phpinfo.php**". 
 >
-> Las operaciones en un archivo "**.htaccess**" pueden afectar a la visualización de su sitio web. Si tiene dificultades para realizar lo siguiente, contacte con un [proveedor especializado](https://partner.ovhcloud.com/fr/).
+> Las operaciones en un archivo "**.htaccess**" pueden afectar a la visualización de su sitio web. Si tiene dificultades para realizar lo siguiente, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/).
 >
 > Si no aparece y **solo para usuarios avanzados**, renombre los archivos "**.htaccess**" en "***.htaccess_OLD**" para que el servidor no los ejecute durante el tiempo de prueba. Una vez realizado el diagnóstico, renombre correctamente.
 >
@@ -156,7 +156,7 @@ phpinfo();
 
 #### 1.4 - Pruebe la conectividad de su base de datos:
 
-Conéctese a su base de datos siguiendo **el etapa 3** de nuestra guía sobre la [creación de una base de datos compartida](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+Conéctese a su base de datos siguiendo **el etapa 3** de nuestra guía sobre la [creación de una base de datos compartida](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/).
 
 Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 
@@ -164,7 +164,7 @@ Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 
 > [!warning]
 >
-> Si se produce un error, consulte nuestra documentación sobre los [errores comunes encontrados con una base de datos](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/). A continuación, utilice la guía para corregir su situación e intente volver a conectarse a la base de datos.
+> Si se produce un error, consulte nuestra documentación sobre los [errores comunes encontrados con una base de datos](https://docs.ovh.com/us/es/hosting/error-requentes-base-de-datos/). A continuación, utilice la guía para corregir su situación e intente volver a conectarse a la base de datos.
 >
 
 #### 1.5 - Interpretación de los diagnósticos efectuados
@@ -193,18 +193,18 @@ En este punto, ya sabrá que la ralentización es causada por las páginas, scri
 
 > [!warning]
 >
-> Si tiene dificultades para realizar las siguientes acciones, puede contactar con uno de nuestros [proveedores especializados](https://partner.ovhcloud.com/fr/). OVHcloud no ayudará en el desarrollo o la optimización del contenido de su sitio web.
+> Si tiene dificultades para realizar las siguientes acciones, puede contactar con uno de nuestros [proveedores especializados](https://partner.ovhcloud.com/es/). OVHcloud no ayudará en el desarrollo o la optimización del contenido de su sitio web.
 >
 
 A continuación se indican las acciones que debe realizar para identificar las fuentes de la lentitud y optimizar su sitio web.
 
 #### 2.1 - Compruebe la configuración de su alojamiento web
 
-Compruebe el motor PHP, la versión PHP y el entorno de ejecución utilizados en su alojamiento web, con ayuda de nuestra guía sobre la [configuración de su alojamiento web](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/).
+Compruebe el motor PHP, la versión PHP y el entorno de ejecución utilizados en su alojamiento web, con ayuda de nuestra guía sobre la [configuración de su alojamiento web](https://docs.ovh.com/us/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/).
 
 Si utiliza en su alojamiento web una versión de PHP obsoleta, el motor "**PHP CGI**" y/o el entorno "**legacy**" y **si su sitio web es compatible**, privilegie el uso del motor "**PHP**" (PHP FPM), el entorno "**stable**" o "**stable64**". con la versión más reciente posible de PHP.
 
-Para comparar las versiones de PHP disponibles en función del entorno de ejecución utilizado, consulte **el etapa 2** de la guía sobre la [configuración de la versión PHP en su alojamiento](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
+Para comparar las versiones de PHP disponibles en función del entorno de ejecución utilizado, consulte **el etapa 2** de la guía sobre la [configuración de la versión PHP en su alojamiento](https://docs.ovh.com/us/es/hosting/cambiar-version-php-en-alojamiento-web/).
 
 Utilizar una versión de PHP reciente, el entorno de ejecución "**stable**" o "**stable64**" con el motor "**PHP**" (PHP FPM) hace su sitio mucho más fluido y rápido. A título informativo, el motor "**PHP**" (PHP-FPM) puede ser hasta 50 veces más potente que el motor "**PHP CGI**" para llevar a cabo sus tareas.
 
@@ -214,7 +214,7 @@ Las conexiones salientes son muy exigentes en términos de recursos. Cuando esta
 
 Esto se traduce en ralentizaciones e incluso en los códigos "504 gateway timeout".
 
-Para analizar las conexiones salientes del alojamiento, consulte los logs **OUT** del mismo. Si necesita ayuda, consulte nuestra guía sobre [la consulta de los logs de su alojamiento](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+Para analizar las conexiones salientes del alojamiento, consulte los logs **OUT** del mismo. Si necesita ayuda, consulte nuestra guía sobre [la consulta de los logs de su alojamiento](https://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/).
 
 Si encuentra que hay muchas conexiones salientes en su alojamiento, compare sus logs **OUT** con sus logs **WEB** utilizando la marca de tiempo de los mismos. para identificar el script o scripts responsables de esta situación.
 
@@ -222,7 +222,7 @@ Si utiliza un Content Management System (CMS) como WordPress, Joomla, PrestaShop
 
 #### 2.3 - Analice el flujo de peticiones HTTP realizadas a su alojamiento web:
 
-Para ello, consulte los logs **WEB** de su alojamiento web con nuestra guía sobre [cómo consultar los logs de su alojamiento](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+Para ello, consulte los logs **WEB** de su alojamiento web con nuestra guía sobre [cómo consultar los logs de su alojamiento](https://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/).
 
 Las peticiones más exigentes en términos de recursos son las de tipo HTTP **POST** y, seguidamente, las de tipo **PUT**. Estas últimas realizan, respectivamente, modificaciones e inserciones.
 
@@ -250,14 +250,14 @@ Para reducir el flujo de peticiones a cada una de las cargas de sus páginas, ta
 
 > [!primary]
 >
-> OVHcloud ofrece varios [productos CDN](https://www.ovhcloud.com/fr/web-hosting/options/). Si desea utilizar o activar una para su alojamiento web, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) y consulte nuestra guía sobre el uso de la CDN de OVHcloud](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/).
+> OVHcloud ofrece varios [productos CDN](https://www.ovhcloud.com/es/web-hosting/options/). Si desea utilizar o activar una para su alojamiento web, conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y consulte nuestra guía sobre el uso de la CDN de OVHcloud](https://docs.ovh.com/us/es/hosting/guia_de_uso_del_acelerador_geocache_en_un_alojamiento_web/).
 >
 
 #### 2.4 - Optimice su base de datos
 
 > [!warning]
 >
-> Las acciones que realice en la base de datos pueden tener consecuencias irreversibles si no se realizan de forma ordenada y correcta. Contacte con un [proveedor especializado](https://partner.ovhcloud.com/fr/) si no está seguro de las acciones a realizar. 
+> Las acciones que realice en la base de datos pueden tener consecuencias irreversibles si no se realizan de forma ordenada y correcta. Contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) si no está seguro de las acciones a realizar. 
 >
 
 Compruebe si se realizan un número considerable de consultas a la base de datos.<br>
@@ -283,7 +283,7 @@ Redimensione todas sus imágenes para reducir al mínimo el consumo de recursos.
 
 #### 2.6 - Optimice el resto de su sitio web
 
-Consulte nuestra guía sobre la [optimización del rendimiento de su sitio web](https://docs.ovh.com/fr/hosting/optimisation-performances-site/).
+Consulte nuestra guía sobre la [optimización del rendimiento de su sitio web](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/).
 
 Puede encontrar pistas de optimización para su sitio web analizándolo en [gtmetrix.com](https://gtmetrix.com){.external} (este sitio no está afiliado a OVHcloud).
 
@@ -295,7 +295,7 @@ Puede encontrar pistas de optimización para su sitio web analizándolo en [gtme
 
 Si su alojamiento web y su base de datos **no están en juego** y su sitio web sigue siendo lento, a pesar de haber realizado **todas las etapas** de esta guía, lo más probable es que el servicio que utiliza para alojar su sitio web no sea o no adecuado para sus necesidades. 
 
-Puede considerar un [plan de hosting](https://www.ovhcloud.com/fr/web-hosting/) superior o una infraestructura dedicada como un [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/fr/vps/) o un [Servidor Dedicado](https://www.ovhcloud.com/fr/bare-metal/). 
+Puede considerar un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) superior o una infraestructura dedicada como un [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/es/vps/) o un [Servidor Dedicado](https://www.ovhcloud.com/es/bare-metal/). 
 
 ## Más información <a name="go-further"></a>
 

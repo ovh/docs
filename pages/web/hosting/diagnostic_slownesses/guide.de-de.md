@@ -37,15 +37,15 @@ In seltenen Fällen können die Verzögerungen bei der Anzeige auch von Ihrem In
 >
 > Unsere Shared Hosting Angebote verfügen nicht über ein "Service Level Agreement"(SLA). 
 >
-> Wenn Sie einen Dienst mit einer SLA Verfügbarkeit von mehr als 99% benötigen, empfehlen wir die Verwendung eines [Virtual Private Server (VPS)](https://www.ovhcloud.com/fr/vps/) oder eines [Dedicated Server](https://www.ovhcloud.com/fr/bare-metal/).
+> Wenn Sie einen Dienst mit einer SLA Verfügbarkeit von mehr als 99% benötigen, empfehlen wir die Verwendung eines [Virtual Private Server (VPS)](https://www.ovhcloud.com/de/vps/) oder eines [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
 >
 > Darüber hinaus werden die Performance der Shared Hosting Infrastruktur von OVHcloud 24 Stunden am Tag und 7 Tage an 7 Tagen überwacht. So können Sie eine hohe Verfügbarkeit und gegebenenfalls eine schnelle Wiederherstellung Ihrer Dienste im Falle einer festgestellten Überlastung sicherstellen.*
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über eine auf einem unserer [OVHcloud Shared Hosting](https://www.ovhcloud.com/fr/web-hosting/) Angebote gehostete Website
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) eingeloggt
+- Sie verfügen über eine auf einem unserer [OVHcloud Shared Hosting](https://www.ovhcloud.com/de/web-hosting/) Angebote gehostete Website
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt
 
 ## Voraussetzungen
 
@@ -53,7 +53,7 @@ In seltenen Fällen können die Verzögerungen bei der Anzeige auch von Ihrem In
 >
 > OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Ihnen obliegen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/fr/) zu kontaktieren. Wir werden Ihnen keinen Support zur Verfügung stellen können **Wenn die Infrastruktur, in der Ihr Shared Hosting Angebot vorhanden ist, nicht in Frage kommt**. Weitere Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) zu kontaktieren. Wir werden Ihnen keinen Support zur Verfügung stellen können **Wenn die Infrastruktur, in der Ihr Shared Hosting Angebot vorhanden ist, nicht in Frage kommt**. Weitere Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
 >
 
 > [!success]
@@ -101,7 +101,7 @@ Alle Diagnosen in Schritt 1 sind **ausnahmslos** durchzuführen, um festzustelle
 
 Um sicherzustellen, dass Ihre Dienste (Shared Hosting **und*** Datenbank) nicht gewartet oder beeinträchtigt werden, holen Sie die Cluster-Informationen und Datenbankdaten auf und verschwinden Sie von Ihrem Shared Hosting sowie die allgemeinen Informationen zu Ihrer Datenbank. Anschließend können Sie ihren Status auf [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/) überprüfen.
 
-Um den Cluster zu sehen und zu verfolgen, wo sich Ihr Shared Hosting befindet, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Im Tab `Allgemeine Informationen`{.action} können Sie den entsprechenden `Rechenzentrum` Ihres Shared Hostings analysieren und dort den entsprechenden `filer` durchsuchen.
+Um den Cluster zu sehen und zu verfolgen, wo sich Ihr Shared Hosting befindet, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Im Tab `Allgemeine Informationen`{.action} können Sie den entsprechenden `Rechenzentrum` Ihres Shared Hostings analysieren und dort den entsprechenden `filer` durchsuchen.
 
 ![Filer abrufen](images/DropFilerCluster1.png){.thumbnail}
 
@@ -126,7 +126,7 @@ Testen Sie Ihre Website mit einem anderen Gerät/Computer und anschließend übe
 
 #### 1.3 - Testen Sie das Hosting mit einer von Ihrer Webseite unabhängigen Datei
 
-Legen Sie im Wurzelverzeichnis Ihrer Website im[FTP-Speicherplatz Ihres Shared Hostings](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) eine Datei mit dem Namen phpinfo.php` auf.
+Legen Sie im Wurzelverzeichnis Ihrer Website im[FTP-Speicherplatz Ihres Shared Hostings](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) eine Datei mit dem Namen phpinfo.php` auf.
 
 Geben Sie in diese Datei folgenden Code ein:
 
@@ -140,7 +140,7 @@ phpinfo();
 >
 > In bestimmten Fällen können die Dateien "**.htaccess**"in Verzeichnissen/Ordnern, die vor oder auf derselben Ebene wie der Ort, an dem Sie Ihre Datei "**phpinfo.php**"angelegt haben, die Anzeige des "**phpinfo.php**"im Webbrowser beeinflussen. 
 >
-> Änderungen an einer Datei "**.htaccess**" können Auswirkungen auf die Anzeige Ihrer Website haben. Wenden Sie sich an [spezialisierter Dienstleister](https://partner.ovhcloud.com/fr/), wenn Sie Schwierigkeiten haben, Folgendes zu tun.
+> Änderungen an einer Datei "**.htaccess**" können Auswirkungen auf die Anzeige Ihrer Website haben. Wenden Sie sich an [spezialisierter Dienstleister](https://partner.ovhcloud.com/de/), wenn Sie Schwierigkeiten haben, Folgendes zu tun.
 >
 > Wenn er nicht angezeigt wird und **nur für erfahrene Benutzer**, benennen Sie Ihre Dateien "**.htaccess**" in "***.htaccess_OLD**", damit der Server sie nicht mehr während Ihres Tests ausführt. Benennen Sie diese nach Ihrer Diagnose korrekt.
 >
@@ -156,9 +156,9 @@ phpinfo();
 
 #### 1.4 - Testen Sie die Konnektivität Ihrer Datenbank:
 
-Loggen Sie sich in Ihrer Datenbank ein und folgen Sie **Schritt 3** unserer Anleitung zur [Erstellung einer Shared Hosting Datenbank](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+Loggen Sie sich in Ihrer Datenbank ein und folgen Sie **Schritt 3** unserer Anleitung zur [Erstellung einer Shared Hosting Datenbank](https://docs.ovh.com/de/hosting/datenbank-erstellen/).
 
-Wenn Sie eine Datenbank für ein Angebot **CloudDB** verwenden, lesen Sie unsere Anleitung zu [Verbindung zu Ihrer Datenbank auf einem Cloud DB Angebot](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
+Wenn Sie eine Datenbank für ein Angebot **CloudDB** verwenden, lesen Sie unsere Anleitung zu [Verbindung zu Ihrer Datenbank auf einem Cloud DB Angebot](https://docs.ovh.com/de/clouddb/datenbank-verbindung-auf-bdd/).
 
 Wenn die Verbindung erfolgreich ist, gehen Sie auf folgendes Interface:
 
@@ -166,7 +166,7 @@ Wenn die Verbindung erfolgreich ist, gehen Sie auf folgendes Interface:
 
 > [!warning]
 >
-> Falls Sie einen Fehler feststellen, lesen Sie unsere Anleitung zu [aktuellen Datenbankabfällen](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/). Loggen Sie sich mithilfe der obigen Anleitung ein, um Ihre Situation zu korrigieren, und versuchen Sie dann, sich erneut mit Ihrer Datenbank zu verbinden.
+> Falls Sie einen Fehler feststellen, lesen Sie unsere Anleitung zu [aktuellen Datenbankabfällen](https://docs.ovh.com/de/hosting/datenbanken-fehler-beheben/). Loggen Sie sich mithilfe der obigen Anleitung ein, um Ihre Situation zu korrigieren, und versuchen Sie dann, sich erneut mit Ihrer Datenbank zu verbinden.
 >
 
 #### 1.5 - Auswertung der durchgeführten Diagnosen
@@ -195,18 +195,18 @@ An diesem Punkt wissen Sie jetzt, dass Verlangsamungen durch die Seiten/Skripte/
 
 > [!warning]
 >
-> Wenn Sie Schwierigkeiten haben, die folgenden Aktionen durchzuführen, können Sie einen unserer [Fachdienstleister](https://partner.ovhcloud.com/fr/) kontaktieren. OVHcloud wird keine Unterstützung bei der Entwicklung und/oder Optimierung des Inhalts Ihrer Website bieten.
+> Wenn Sie Schwierigkeiten haben, die folgenden Aktionen durchzuführen, können Sie einen unserer [Fachdienstleister](https://partner.ovhcloud.com/de/) kontaktieren. OVHcloud wird keine Unterstützung bei der Entwicklung und/oder Optimierung des Inhalts Ihrer Website bieten.
 >
 
 Im Folgenden finden Sie die notwendigen Aktionen, um die Quelle(n) der Langsamkeit zu ermitteln und Ihre Website zu optimieren.
 
 #### 2.1 - Überprüfen Sie die Konfiguration Ihres Webhostings
 
-Überprüfen Sie die auf Ihrem Webhosting verwendete PHP-Engine, PHP-Version und Ausführungsumgebung. Lesen Sie hierzu unsere Anleitung zur [Konfiguration Ihres Webhostings](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/).
+Überprüfen Sie die auf Ihrem Webhosting verwendete PHP-Engine, PHP-Version und Ausführungsumgebung. Lesen Sie hierzu unsere Anleitung zur [Konfiguration Ihres Webhostings](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/).
 
 Wenn Sie auf Ihrem Webhosting eine überholte PHP-Version verwenden, die Engine "**PHP CGI**" und/oder die Umgebung "**legacy**" und **Wenn Ihre Website kompatibel ist**, bevorzugen Sie die Verwendung der Engine "**PHP**"(PHP FPM) "**stable64**" mit der aktuellsten PHP-Version.
 
-Um die verfügbaren PHP-Versionen je nach verwendeter Ausführungsumgebung zu vergleichen, lesen Sie **Schritt 2** der Anleitung zur [Konfiguration der PHP-Version auf Ihrem Hosting](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
+Um die verfügbaren PHP-Versionen je nach verwendeter Ausführungsumgebung zu vergleichen, lesen Sie **Schritt 2** der Anleitung zur [Konfiguration der PHP-Version auf Ihrem Hosting](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/).
 
 Die Verwendung einer aktuellen PHP-Version, die Ausführungsumgebung "**stable**" oder "**stable64**" mit der Engine "**PHP**" (PHP FPM) macht Ihre Website viel flüssiger und schneller. Zur Information: Der Motor "**PHP**" (PHP FPM) kann bis zu 50 Mal leistungsfähiger sein als der Motor "**PHP CGI**", um seine Aufgaben auszuführen.
 
@@ -216,7 +216,7 @@ Ausgehende Verbindungen sind sehr ressourcenintensiv. Wenn diese Kenntnisse zahl
 
 Dies führt zu Verlangsamungen oder sogar zu "504 gateway timeout"-Codes.
 
-Um die ausgehenden Verbindungen Ihres Hostings zu analysieren, lesen Sie dessen Logs **OUT**. Weitere Informationen finden Sie in unserer Dokumentation zu [Logs Ihres Hostings einsehen](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+Um die ausgehenden Verbindungen Ihres Hostings zu analysieren, lesen Sie dessen Logs **OUT**. Weitere Informationen finden Sie in unserer Dokumentation zu [Logs Ihres Hostings einsehen](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/).
 
 Wenn Sie feststellen, dass viele ausgehende Verbindungen auf Ihrem Hosting vorhanden sind, vergleichen Sie Ihre Logs **OUT** mit Ihren Logs **WEB** mithilfe des Zeitstempels dieser Logs. So können Sie das Skript/die Skripte identifizieren, die für diese Situation verantwortlich sind.
 
@@ -224,7 +224,7 @@ Wenn Sie ein Content Management System (CMS) wie WordPress, Joomla!, PrestaShop 
 
 #### 2.3 - Analysieren Sie den Fluss der HTTP Anfragen zu Ihrem Webhosting:
 
-Lesen Sie hierzu die Logs **WEB** Ihres Webhostings unter Verwendung unserer Anleitung auf [Die Logs Ihres Webhostings einsehen](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+Lesen Sie hierzu die Logs **WEB** Ihres Webhostings unter Verwendung unserer Anleitung auf [Die Logs Ihres Webhostings einsehen](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/).
 
 Die ressourcenintensivsten Anfragen sind HTTP-Anfragen vom Typ **POST** und danach die vom Typ **PUT**. Diese führen jeweils Änderungen und Einfügungen durch.
 
@@ -252,14 +252,14 @@ Um den Abfragefluss für jedes Ladesystem Ihrer Seiten zu reduzieren, können Si
 
 > [!primary]
 >
-> OVHcloud bietet mehrere [CDN Angebote](https://www.ovhcloud.com/fr/web-hosting/options/). Wenn Sie eine für Ihr Webhosting aktivieren möchten, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ein und lesen Sie unsere Anleitung zu [Verwendung des OVHcloud CDN](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/).
+> OVHcloud bietet mehrere [CDN Angebote](https://www.ovhcloud.com/de/web-hosting/options/). Wenn Sie eine für Ihr Webhosting aktivieren möchten, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und lesen Sie unsere Anleitung zu [Verwendung des OVHcloud CDN](https://docs.ovh.com/de/hosting/verwendung_des_geocache_boosters_auf_einem_webhosting/).
 >
 
 #### 2.4 - Optimieren Sie Ihre Datenbank
 
 > [!warning]
 >
-> Die Aktionen, die Sie in Ihrer Datenbank durchführen, können irreversible Folgen haben, wenn sie nicht systematisch und korrekt durchgeführt werden. Wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/fr/), wenn Sie sich nicht sicher sind, welche Maßnahmen ergriffen werden sollen. 
+> Die Aktionen, die Sie in Ihrer Datenbank durchführen, können irreversible Folgen haben, wenn sie nicht systematisch und korrekt durchgeführt werden. Wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/), wenn Sie sich nicht sicher sind, welche Maßnahmen ergriffen werden sollen. 
 >
 
 Überprüfen Sie, ob eine große Anzahl an Anfragen an Ihre Datenbank durchgeführt wird.<br>
@@ -285,7 +285,7 @@ Passen Sie alle Ihre Images an, um den Ressourcenverbrauch möglichst gering zu 
 
 #### 2.6 - Optimieren Sie den Rest Ihrer Webseite
 
-Lesen Sie unsere Anleitung zur [Optimierung der Performance für Ihre Website](https://docs.ovh.com/fr/hosting/optimisation-performances-site/).
+Lesen Sie unsere Anleitung zur [Optimierung der Performance für Ihre Website](https://docs.ovh.com/de/hosting/webhosting_optimierung_der_performance_ihrer_webseite/).
 
 Sie können Optimierungsmöglichkeiten für Ihre Website finden, indem Sie diese auf [gtmetrix.com](https://gtmetrix.com){.external} analysieren (diese Website ist nicht bei OVHcloud verfügbar).
 
@@ -297,7 +297,7 @@ Sie können Optimierungsmöglichkeiten für Ihre Website finden, indem Sie diese
 
 Wenn Ihr Webhosting und Ihre Datenbank ** nicht betroffen sind und Ihre Website trotz der Umsetzung von **alle Schritte** in dieser Anleitung weiterhin langsam ist, bedeutet dies wahrscheinlich, dass das Angebot, das Sie für das Hosting Ihrer Website verwenden, nicht oder nicht mehr Ihren Bedürfnissen entspricht. 
 
-Sie können eine höhere [Shared Hosting Angebot](https://www.ovhcloud.com/fr/web-hosting/) oder eine dedizierte Infrastruktur wie einen [Virtual Private Server (VPS)](https://www.ovhcloud.com/fr/vps/) oder einen [Dedicated Server](https://www.ovhcloud.com/fr/bare-metal/) in Betracht ziehen. 
+Sie können eine höhere [Shared Hosting Angebot](https://www.ovhcloud.com/de/web-hosting/) oder eine dedizierte Infrastruktur wie einen [Virtual Private Server (VPS)](https://www.ovhcloud.com/de/vps/) oder einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Betracht ziehen. 
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

@@ -37,15 +37,15 @@ Em casos raros, os ecrãs também podem ser provocados pelo seu fornecedor de ac
 >
 > As nossas ofertas de alojamento partilhado não dispõem de "Service Level Agreement" (SLA). 
 >
-> Se precisar de um serviço com uma taxa de disponibilidade SLA superior a 99%, sugerimos que considere a utilização de um [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/fr/vps/) ou de um [Servidor Dedicado](https://www.ovhcloud.com/fr/bare-metal/).
+> Se precisar de um serviço com uma taxa de disponibilidade SLA superior a 99%, sugerimos que considere a utilização de um [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/pt/vps/) ou de um [Servidor Dedicado](https://www.ovhcloud.com/pt/bare-metal/).
 >
 > Além disso, as performances da infraestrutura de alojamento partilhado OVHcloud são monitorizadas 24 horas por dia e 7 dias por semana. Isto de forma a garantir-lhe uma alta taxa de disponibilidade e, se for caso disso, um restabelecimento rápido dos seus serviços em caso de sobrecarga comprovada.*
 >
 
 ## Requisitos
 
-- Dispor de um site alojado numa das nossas ofertas de[alojamento partilhado OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
-- Ter acesso à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Dispor de um site alojado numa das nossas ofertas de[alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
+- Ter acesso à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 
@@ -53,7 +53,7 @@ Em casos raros, os ecrãs também podem ser provocados pelo seu fornecedor de ac
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/fr/). De facto, não poderemos fornecer-lhe assistência **a partir do momento em que a infraestrutura em que o seu alojamento partilhado está presente não esteja em causa**. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). De facto, não poderemos fornecer-lhe assistência **a partir do momento em que a infraestrutura em que o seu alojamento partilhado está presente não esteja em causa**. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
 >
 
 > [!success]
@@ -101,7 +101,7 @@ Todos os diagnósticos da etapa 1 devem ser realizados ***sem exceção** para d
 
 Para ter a certeza de que os seus serviços (alojamento partilhado **e** base de dados) não são objeto de manutenção ou incidente, recupere as informações sobre o cluster e file do seu alojamento partilhado, assim como as informações gerais relativas à sua base de dados. De seguida, poderá verificar o seu estado em [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Para conhecer o cluster e filer onde se encontra o alojamento partilhado, aceda ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Information gerais`{.action}, localize o `datacenter` do seu alojamento partilhado bem como o `filer` onde está.
+Para conhecer o cluster e filer onde se encontra o alojamento partilhado, aceda ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Information gerais`{.action}, localize o `datacenter` do seu alojamento partilhado bem como o `filer` onde está.
 
 ![Recuperar Filer](images/DropFilerCluster1.png){.thumbnail}
 
@@ -126,7 +126,7 @@ Teste o seu website a partir de outro dispositivo/computador e a partir de outro
 
 #### 1.3 - Teste o alojamento com um ficheiro independente do seu website
 
-Coloque na raiz do seu website no [espaço de armazenamento FTP do seu alojamento partilhado](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) um ficheiro que denominará `phpinfo.php`.
+Coloque na raiz do seu website no [espaço de armazenamento FTP do seu alojamento partilhado](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) um ficheiro que denominará `phpinfo.php`.
 
 Neste ficheiro, insira o seguinte código:
 
@@ -140,7 +140,7 @@ phpinfo();
 >
 > Em certos casos, os ficheiros "**.htaccess**" presentes nos diretórios/dossiers situados a montante ou ao mesmo nível que o local onde colocou o seu ficheiro "**phpinfo.php**" podem influir na visualização num browser do "**phpinfo.php**". 
 >
-> As manipulações num ficheiro "**.htaccess**" podem ter consequências na visualização do seu site. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/fr/) se sentir dificuldades em realizar o seguinte.
+> As manipulações num ficheiro "**.htaccess**" podem ter consequências na visualização do seu site. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) se sentir dificuldades em realizar o seguinte.
 >
 > Se não for apresentada e **unicamente para os utilizadores experientes**, renomeie os seus ficheiros "**.htaccess**" em "**.htaccess_OLD**" para que o servidor não os execute durante o seu teste. Dê-lhes o nome correto quando o diagnóstico for efetuado.
 >
@@ -156,9 +156,9 @@ phpinfo();
 
 #### 1.4 - Teste a conectividade da sua base de dados:
 
-Aceda à sua base de dados seguindo *** o etapa 3** do nosso manual sobre a [criação de uma base de dados partilhada](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+Aceda à sua base de dados seguindo *** o etapa 3** do nosso manual sobre a [criação de uma base de dados partilhada](https://docs.ovh.com/pt/hosting/criar-base-de-dados/).
 
-Se utiliza uma base de dados numa oferta **CloudDB**, consulte o nosso guia sobre [a ligação à sua base de dados presente numa oferta Cloud DB](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
+Se utiliza uma base de dados numa oferta **CloudDB**, consulte o nosso guia sobre [a ligação à sua base de dados presente numa oferta Cloud DB](https://docs.ovh.com/pt/clouddb/conexao-base-de-dados-servidor-bdd/).
 
 Se a ligação for bem-sucedida, poderá aceder à seguinte interface:
 
@@ -166,7 +166,7 @@ Se a ligação for bem-sucedida, poderá aceder à seguinte interface:
 
 > [!warning]
 >
-> Se encontrar um erro, consulte o nosso manual sobre os [erros comuns encontrados com uma base de dados](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/). De seguida, altere a sua situação usando o guia acima para tentar novamente aceder à base de dados.
+> Se encontrar um erro, consulte o nosso manual sobre os [erros comuns encontrados com uma base de dados](https://docs.ovh.com/pt/hosting/erros-frequentes-bases-de-dados/). De seguida, altere a sua situação usando o guia acima para tentar novamente aceder à base de dados.
 >
 
 #### 1.5 - Interpretação dos diagnósticos efetuados
@@ -195,18 +195,18 @@ Neste momento, sabe que as lentidões são geradas pelas páginas/scripts/fichei
 
 > [!warning]
 >
-> Se encontrar dificuldades para realizar as ações que se seguem, pode contactar um dos nossos [prestadores especializados](https://partner.ovhcloud.com/fr/). A OVHcloud não prestará assistência ao desenvolvimento e/ou otimização do conteúdo do seu website.
+> Se encontrar dificuldades para realizar as ações que se seguem, pode contactar um dos nossos [prestadores especializados](https://partner.ovhcloud.com/pt/). A OVHcloud não prestará assistência ao desenvolvimento e/ou otimização do conteúdo do seu website.
 >
 
 Encontre aqui as ações a realizar para identificar a(s) fonte(s) da(s) lentidão e otimizar o seu website.
 
 #### 2.1 - Verifique a configuração do seu alojamento web
 
-Verifique o motor PHP, a versão PHP e o ambiente de execução utilizados no seu alojamento web, através do nosso guia sobre a [configuração do seu alojamento web](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/).
+Verifique o motor PHP, a versão PHP e o ambiente de execução utilizados no seu alojamento web, através do nosso guia sobre a [configuração do seu alojamento web](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/).
 
 Se utiliza no seu alojamento web uma versão de PHP obsoleta, o motor "**PHP CGI**" e/ou o ambiente "**legacy**" e **se o seu website for compatível**, dê preferência à utilização do motor "**PHP**" (PHP FPM), o ambiente "**stable**" ou "**stable64**" com a versão de PHP mais recente possível.
 
-Para comparar as versões de PHP disponíveis em função do ambiente de execução utilizado, consulte ***a etapa 2** do guia sobre a [configuração da versão PHP no seu alojamento](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
+Para comparar as versões de PHP disponíveis em função do ambiente de execução utilizado, consulte ***a etapa 2** do guia sobre a [configuração da versão PHP no seu alojamento](https://docs.ovh.com/pt/hosting/configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/).
 
 Utilizar uma versão de PHP recente, o ambiente de execução "**stable**" ou "**stable64**" com o motor "**PHP**" (PHP FPM) torna o seu site muito mais fluido e rápido. A título indicativo, o motor "**PHP**" (PHP FPM) pode ter um desempenho 50 vezes superior ao do motor "**PHP CGI**" para executar as suas tarefas.
 
@@ -216,7 +216,7 @@ As ligações de saída são muito exigentes em termos de recursos. Quando estas
 
 Isto traduz - se em atrasos ou mesmo em códigos "504 gateway timeout".
 
-Para analisar as ligações de saída do seu alojamento, consulte os logs **OUT** deste último. Pode consultar o nosso manual sobre [a consulta dos logs do seu alojamento](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+Para analisar as ligações de saída do seu alojamento, consulte os logs **OUT** deste último. Pode consultar o nosso manual sobre [a consulta dos logs do seu alojamento](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/).
 
 Se verificar que existem muitas ligações de saída no seu alojamento, compare os seus logs **OUT** com os seus logs **WEB** através do seu horário. Isto permitir-lhe-á identificar o(s) script(s) responsável(eis) por esta situação.
 
@@ -224,7 +224,7 @@ Se utilizar um Content Management System (CMS) como WordPress, Joomla!, PrestaSh
 
 #### 2.3 - Analise o fluxo de pedidos HTTP efetuado para o seu alojamento web:
 
-Para realizar esta ação, consulte os logs **WEB** do seu alojamento web através do nosso manual sobre [como consultar os logs do seu alojamento](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+Para realizar esta ação, consulte os logs **WEB** do seu alojamento web através do nosso manual sobre [como consultar os logs do seu alojamento](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/).
 
 Os pedidos mais exigentes em termos de recursos são os pedidos HTTP de tipo **POST** e os de tipo **PUT**. Estas devem efetuar, respetivamente, alterações e inserções.
 
@@ -252,14 +252,14 @@ Para diminuir o fluxo de pedidos a cada um dos carregamentos das suas páginas, 
 
 > [!primary]
 >
-> A OVHcloud oferece várias [ofertas CDN](https://www.ovhcloud.com/fr/web-hosting/options/). Se pretender utilizá-los ou ativar um para o seu alojamento web, aceda à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) e consulte o nosso guia sobre [utilização do CDN OVHcloud](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/).
+> A OVHcloud oferece várias [ofertas CDN](https://www.ovhcloud.com/pt/web-hosting/options/). Se pretender utilizá-los ou ativar um para o seu alojamento web, aceda à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e consulte o nosso guia sobre [utilização do CDN OVHcloud](https://docs.ovh.com/pt/hosting/guia_de_utilizacao_do_acelerador_geocache_num_alojamento_web/).
 >
 
 #### 2.4 - otimize a sua base de dados
 
 > [!warning]
 >
-> As ações que realiza na sua base de dados podem ter consequências irreversíveis se não forem realizadas de forma metódica e correta. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/fr/) se não tem a certeza das ações a realizar. 
+> As ações que realiza na sua base de dados podem ter consequências irreversíveis se não forem realizadas de forma metódica e correta. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) se não tem a certeza das ações a realizar. 
 >
 
 Verifique se um número consequente de pedidos é efetuado para a sua base de dados.<br>
@@ -285,7 +285,7 @@ Redimensione todas as suas imagens para minimizar o consumo de recursos.
 
 #### 2.6 - Otimize o resto do seu website
 
-Consulte o nosso guia sobre a [otimização das performances para o seu website](https://docs.ovh.com/fr/hosting/optimisation-performances-site/).
+Consulte o nosso guia sobre a [otimização das performances para o seu website](https://docs.ovh.com/pt/hosting/partilhado_guia_de_otimizacao_das_performances_do_seu_site/).
 
 Pode encontrar pistas de otimização para o seu site analisando-o em [gtmetrix.com](https://gtmetrix.com){.external} (este site não está associado à OVHcloud).
 
@@ -298,7 +298,7 @@ Pode encontrar pistas de otimização para o seu site analisando-o em [gtmetrix.
 
 Se o seu alojamento web e a sua base de dados ***não estiverem em causa** e o seu website continuar a ser lento, apesar da realização de **todas as etapas** deste guia, isso provavelmente significa que a oferta que utiliza para alojar o seu website não é ou deixou de ser adaptada às suas necessidades. 
 
-Pode considerar uma [oferta de alojamento partilhado](https://www.ovhcloud.com/fr/web-hosting/) superior ou uma infraestrutura dedicada como um [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/fr/vps/) ou um [Servidor Dedicado](https://www.ovhcloud.com/fr/bare-metal/). 
+Pode considerar uma [oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/) superior ou uma infraestrutura dedicada como um [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/pt/vps/) ou um [Servidor Dedicado](https://www.ovhcloud.com/pt/bare-metal/). 
 
 ## Quer saber mais? <a name="go-further"></a>
 
