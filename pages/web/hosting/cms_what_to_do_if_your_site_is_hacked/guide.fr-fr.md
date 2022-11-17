@@ -31,7 +31,7 @@ Un piratage peut se manifester de plusieurs manières (liste non exhaustive) :
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovh.com/fr/hebergement-web/) avec votre site Web hébergé dessus.
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/) avec votre site Web hébergé dessus.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
@@ -60,6 +60,7 @@ Réalisez une analyse anti-virus et anti-spywares de tous les appareils (PC, Mac
 >
 
 > [!success]
+>
 > Nous vous recommandons d'utiliser plusieurs anti-virus/anti-spywares (gratuits ou payants) pour chacun de vos appareils.
 > Effectivement, certains virus ou spywares peuvent persister en fonction du logiciel anti-virus utilisé.
 > Il existe des versions d'anti-virus/anti-spywares que vous pouvez installer « en local » sur votre appareil ou utiliser directement « en ligne » sur internet.
@@ -94,7 +95,7 @@ Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés pour effectuer les actions décrites ci-dessous, faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) en cyber sécurité .
+> Si vous éprouvez des difficultés pour effectuer les actions décrites ci-dessous, faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) en cyber sécurité.
 >
 
 Utilisez notre guide sur [les statistiques et logs de votre hébergement Web](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) pour rechercher les éléments malveillants injectés dans votre site web. Vous trouverez les informations dans les logs « web ». 

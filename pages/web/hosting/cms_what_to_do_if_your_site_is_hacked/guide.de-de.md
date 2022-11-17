@@ -1,117 +1,232 @@
 ---
-title: 'Was tun, wenn Ihre WordPress Seite gehackt wurde?'
-excerpt: ''
+title: "Tutorial - Ihre Website ist von einem Hack betroffen"
+excerpt: "Erfahren Sie hier, wie Sie Ihre gehackte Website reparieren"
 slug: was_tun_wenn_ihre_wordpress_seite_gehackt_wurde
 section: 'Anwendungsbeispiele'
 order: 01
 ---
 
-## 
-Sie haben eine bei OVH gehostete Webseite und stellen fest, dass Ihre Webseite nicht mehr angezeigt wird, dass sie auf eine andere Webseite weitergeleitet wird oder dass auf Ihrer Seite unerwünschte Werbung angezeigt wird.
+**Letzte Aktualisierung am 15.11.2022**
 
-Für WordPress übernimmt OVH keinen Support, weder per E-Mail noch telefonisch. In dieser Hilfe erklären wir Ihnen aber, welche Maßnahmen Sie ergreifen können, wenn Ihre Seite gehackt wurde.
+> [!primary]
+>
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
+## Ziel
 
-## Warum wurde meine Webseite gehackt?
-Warum wurde meine Webseite gehackt? Und was soll ich jetzt tun?
+Dieses Tutorial beschreibt notwendige Maßnahmen, wenn Sie feststellen, dass Ihre Website gehackt wurde. Befolgen Sie die unten aufgeführten 4 Schritte nacheinander, um Ihre Webseite wiederherzustellen.
 
-Wenn Webseiten gehackt werden, liegt das meist an fehlenden Updates, der Verwendung inoffizieller Plugins, zu simplen Passwörtern ...
+Ein Hack kann diverse Folgen haben (nicht erschöpfende Liste):
 
-KEIN Risiko ist unrealistisch. Aber es ist doch möglich, das Risiko zu minimieren.
+- Ihre Website erscheint nicht mehr oder nur teilweise, ohne Änderungen (FTP, SQL, DNS) Ihrerseits.
+- Ihre Website wird auf eine andere Website weitergeleitet.
+- Ihre Website zeigt unerwünschtes Verhalten in Form von Werbeeinblendungen (Pop-ups, Fehlermeldungen etc.).
+- Die Datenbank Ihrer Website ist plötzlich gefüllt.
+- Sie erhalten über Ihr Hosting SPAM, der von infizierten Skripte generiert wird.
 
-Es gibt einige ganz konkrete Maßnahmen, die Sie ergreifen können, wenn der Worst Case dann doch eingetroffen ist und/oder um eine Wiederholung zu verbinden (regelmäßige Updates von WordPress, Themes, Plugins, ...).
+**Dieses Tutorial erklärt, wie Sie Ihre gehackte Website wiederherstellen können.**
 
-Mit dieser Hilfe möchten wir Ihnen helfen, Ihre Webseite möglichst schnell wieder online zu stellen.
-
-Wenn Ihre Seite von OVH gesperrt wurden, erfahren Sie in [dieser Hilfe](https://www.ovh.de/g1392.ovh-vorgang-schliessung-wegen-hack), wie Sie weiter vorgehen müssen.
-
-
-## Überprüfung Ihres Rechners
-Es ist immer sinnvoll, in der lokalen Umgebung mit der Ursachenforschung zu beginnen. In vielen Fällen lassen sich der Angriff oder die Infektion hierher zurückverfolgen (Laptop, Desktop-Rechner, ...).
-
-Stellen Sie sicher, dass auf Ihrem lokalen Rechner ein aktuelles Antiviren-/Antimalware-Programm läuft. Manche Viren sind gegen bestimmte Antivirenprogramme "immun". Deshalb kann es sinnvoll sein, mehrere Programm zu verwenden (lokal und online). Das gilt sowohl für Windows als auch für Mac und Linux.
-
-
-## Kritische Einschätzung der Situation
-Sobald Sie merken, dass Ihre Seite gehackt wurde, müssen Sie entsprechende Maßnahmen ergreifen. Zunächst ist es wichtig, den Zeitpunkt des Hacks zu ermitteln, um dann zu überprüfen, ob eine Wiederherstellung der Daten durch OVH möglich ist.
+> [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+>
 
 
-## 
-Es ist wichtig, vor der Restaurierung das Datum der letzten Änderung Ihrer Web-Dateien (FTP) zu überprüfen, um dann die Sicherheitslücken zu erkennen und zu schließen.
-Es gibt kein spezifisches Vorgehen, um die genaue Quelle des Eindringens zu ermitteln, aber normalerweise nutzen Hacker Fehler im Skript aus, um eine HTTP-Anfrage zu starten.
+## Voraussetzungen
 
-Alle HTTP-Anfragen finden Sie in Ihren Logs (https://logs.cluster0XX.hosting.ovh.net/ihre_domain).
-Ersetzen Sie "ihre_domain" einfach durch den Namen Ihrer Domain mitsamt Domainendung, z. B. ovh.com.
+- Ihre Webseite befindet sich auf einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
-- 1 Ermitteln Sie Datum und Uhrzeit (anhand der E-Mail, die Sie erhalten haben)*
-- 2 Recherchieren Sie in Ihren Logs. Gehen Sie dabei von dem ermittelten Zeitpunkt aus und erweitern Sie nach und nach Ihren Suchbereich, bis Sie auf den inkorrekten Eintrag stoßen (ungewöhnlich, von den anderen abweichend, etc.). Dies kann ein bißchen Übung oder auch Kenntnis des Anfrageformats je nach Situation verlangen. Achten Sie besonders auf POST Anfragen, die häufigste Quelle von Hacks;
-- 3 Identifizieren Sie das durch Anfrage angegriffene Skript;
-- 4 Analysieren Sie das Skript, um die Sicherheitslücke zu identifizieren;
-- 5 Schließen Sie die Sicherheitslücke.
+## In der praktischen Anwendung
 
+Das Hacken einer Website hängt systematisch mit **mindestens** einem der folgenden Punkte zusammen:
 
-*Diese E-Mail erhalten Sie nur, wenn Ihr Hosting blockiert wurde. Ist dies nicht der Fall, so müssen Sie die Daten der letzen Änderung in Ihrem FTP-Bereich überprüfen.
+- Die Website-Software wurde länger nicht aktualisiert.
+- Malware auf einem der Geräte, die Sie zur Verwaltung Ihrer Website verwenden.
+- Installation von "inoffiziellen" Plugins oder Themes, insbesondere wenn Sie ein Content Managment System (CMS) wie WordPress, Joomla!, PrestaShop oder Drupal verwenden.
+- Passwörter (FTP, SQL, CMS-Backend, etc.) sind zu kurz oder zu generisch, insbesondere wenn diese nie geändert werden.
+- Ein Skript Ihrer Website öffnet absichtlich Ports auf Ihrem Webhosting, **ohne** zu überprüfen, was diese Ports empfangen.
+- Die FTP-Zugangsrechte ("CHMOD") des Hostings sind nicht strikt genug.
 
-Es ist nicht ausreichend, nur den vom Hacker hinzugefügten Code zu entfernen. Sie müssen das Problem vollumfänglich beheben..
+**Der Hack einer Website rührt nicht von einer Sicherheitslücke im Webhosting her.** Nur die Skripte/Dateien, die auf dem Webhosting gehostet werden, können dem Hosting Anweisungen erteilen. Sie können veranlassen, standardmäßig bestimmte Ports zu öffnen oder bestimmte Aktionen durchzuführen.<br>
+Die Skripte enthalten Befehle, die das Hosting dann ausführt.
 
-Wir empfehlen Ihnen, einen erfahrenen [Webmaster](https://partners.ovh.com) zu Rate zu ziehen und/oder sich an das offizielle WordPress Forum zu wenden.
-Bei einer solchen Anfrage kann Ihnen unser Support leider nicht behilflich sein.
+## Schritt 1: Scannen Sie alle Ihre Geräte
 
+Führen Sie eine Anti-Virus- und Anti-Malware-Analyse aller Geräte durch (PC, Mac, Smartphone, Tablet, etc.), die zur Administration oder Verwaltung Ihrer Website genutzt werden.
 
-## Wiederherstellung der Webseite
-WordPress besteht aus verschiedenen Dateien und einer Datenbank. Es ist möglich, Dateien älteren Datums wiederherzustellen. Bei OVH haben Sie für die Dateien auf Ihrem Hosting Zugriff auf eine History der letzten zwei Wochen. Für die Datenbank haben Sie Zugriff auf die letzten sieben Tage.
-Bitte beachten Sie, dass durch eine Wiederherstellung keine Sicherheitslücken geschlossen werden. Diese müssen Sie also dennoch ermitteln und schließen.
+> [!warning]
+>
+> Wenn Sie Geräte verwenden, die unter *Linux*, *Mac OS* oder anderen Betriebssystemen laufen, bei denen allgemein davon ausgegangen wird, dass geringes Risiko für  Virus- oder Malware-Befall besteht, **führen Sie trotzdem diese Analyse durch**.
+>
+> **Kein Betriebssystem ist gegen schädliche Software oder Viren immun.**
+>
 
-Durch die Wiederherstellung werden die Dateien durch das Backup ersetzt.
+> [!success]
+>
+> Wir empfehlen, für jedes Ihrer Geräte mehrere Anti-Virus/Anti-Malware (kostenlos oder kostenpflichtig) zu verwenden.
+> Manche Viren oder Malware können je nach verwendeter Anti-Viren-Software resistent sein.
+> Es gibt Varianten von Anti-Virus/Anti-Malware, die Sie "lokal" auf Ihrem Gerät installieren oder direkt online über Internet verwenden können.
+>
 
+Wenn ein Virus oder Schadsoftware gefunden wird, führen Sie eine Bereinigung mit Ihrer Anti-Virus/Anti-Malware-Software durch, **bevor** Sie zum nächsten Schritt übergehen.
 
-## Wiederherstellung der Dateien via FTP
-Über das OVHcloud Kundencenter können Sie Ihren gesamten FTP-Bereich wiederherstellen. Dies kann aber kompliziert sein, wenn mehrere Domains mit demselben Hosting verbunden sind.
+### Schritt 2: Passwörter ändern <a name="step2"></a> 
 
-In solchen Fällen ist es sinnvoller, nur das betroffene Verzeichnis wiederherzustellen. Eine Hilfe dazu finden Sie [hier](https://www.ovh.de/g1593.webhosting_abruf_einer_vollstandigen_sicherung_oder_einer_bestimmten_datei_per_ftp_mit_filezilla).
+Wenn eine Website gehackt wurde, ändern Sie alle zugehörigen Passwörter.
 
+Für OVHcloud Dienste verwenden Sie unsere Dokumentation:
 
-## Wiederherstellung der SQL-Datenbank
-Zur Wiederherstellung Ihrer Datenbank finden Sie bei uns zwei Hilfen, eine zum [Export](https://www.ovh.de/g1394.webhosting_hilfe_zum_export_von_datenbanken) und eine zum [Import](https://www.ovh.de/g1393.webhosting_import_einer_mysql-datenbank).
+- [Passwort für den Zugang zu Ihrer OVHcloud Kundenkennung ändern](https://docs.ovh.com/de/customer/Passwort-verwalten/)
+- [Den Zugang zu Ihrem OVHcloud Kundencenter mit Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
+- [Passwort für den Zugang zum FTP-Speicherplatz Ihres Webhostings ändern](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/)
+- [Passwort für den Zugriff auf Ihre Datenbank ändern](https://docs.ovh.com/de/hosting/datenbank-passwort-aendern/)
 
-Wenn Sie Ihre Dtaenbank gesichert haben (dump), müssen Sie über [phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-verbindung-auf-bdd/) alle Tabellen löschen, um anschließend das Backup zu importieren.
+Wir empfehlen Ihnen auch die Verwendung eines [Passwort-Managers](https://docs.ovh.com/de/customer/Passwort-verwalten/#einen-passwort-manager-verwenden).
 
+> [!warning]
+> 
+> Wenn Sie das Passwort Ihrer Datenbank ändern, vergessen Sie nicht, auch das Passwort in der Konfigurationsdatei Ihrer Website zu aktualisieren. Andernfalls wird die Verbindung zwischen der Datenbank und den Dateien im FTP-Speicherplatz Ihres Webhostings unterbrochen und Ihre Website wird einen Datenbankverbindungsfehler anzeigen.
+>
 
-## Nach der Wiederherstellung
-Wenn die Wiederherstellung abgeschlossen ist, müssen Sie überprüfen, ob für WordPress, Themes und Plugins Updates verfügbar sind, und diese gegebenenfalls durchführen.
+> [!primary]
+>
+> Wenn Sie ein CMS wie WordPress, Joomla!, PrestaShop oder Drupal verwenden, lesen Sie die offizielle Dokumentation Ihres CMS, um das Passwort für den Zugang zum Verwaltungsbereich Ihres CMS (Backend) zu ändern.
+>
 
-Denken Sie auch daran, nciht (mehr) verwendete Plugins zu deinstallieren. Bei einer einfachen Deaktivierung können dennoch Sicherheitslücken bestehen bleiben.
+### Schritt 3: Suche nach böswilligen Dateien und Sicherheitslücken
 
-Wenn der Hack länger zurückliegt und eine Wiederherstellung nicht möglich ist, müssen Sie folgendermaßen vorgehen:
+> [!warning]
+>
+> Wenn Sie Schwierigkeiten haben, die unten beschriebenen Aktionen durchzuführen, wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) für Cyber-Sicherheit.
+>
 
-## Sie können sich nicht auf Ihrem WordPress Admin-Panel anmelden
-In diesem Fall müssen Sie Ihr [Administrator-Passwort](https://codex.wordpress.org/) zurücksetzen. Wie das geht, erfahren Sie im offiziellen WordPress Guide.
+Folgen Sie unserer Anleitung zu [Statistiken und Logs Ihres Webhostings](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/), um in den "Web"-Logs nach den entsprechenden Einträgen zu suchen, die Schadcode in die Website injizieren.
 
-Wenn Ihnen das zu kompliziert ist, können Sie auch über [phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-verbindung-auf-bdd/) Ihre E-Mail-Adresse in der Tabelle User aktualisieren. Wenn Sie dann auf die Login-Seite gehen und auf Passwort vergessen klicken, wird Ihnen eine entsprechende E-Mail zugesandt.
+Beginnen Sie mit der Suche ab dem Datum, an dem Sie den Hack bemerkt haben, und gehen Sie dann durch die Log-History.
 
+Suchen Sie nach ungewöhnlichen "POST"-Anfragen. In der Regel haben Schaddateien alphanumerische Namen ohne besondere Bedeutung (**Beispiele**: az78e4jFn.txt, oij8bh4.html, udh73hd45.php, mlkjc23d.js, etc.).
 
-## Ersetzen Sie Ihre WordPress Dateien durch neu heruntergeladene Dateien
-Indem Sie alle Dateien ersetzen, stellen Sie sicher, dass Sie nicht-infizierten Content verwenden.
+Finden Sie die IP-Adresse, die entsprechende Anfragen ausgeführt hat. Suchen Sie anschließend in Ihren Logs nach dieser Adresse, um alle von dieser IP für Ihre Website angeforderten Aktionen einzusehen.
 
-- Gehen Sie auf die offizielle [WordPress](https://de.wordpress.org/)-Webseite.
+> [!primary]
+>
+> Im Allgemeinen rufen mehrere IP-Adressen im gleichen Zeitraum die schädlichen Skripte auf, die nach dem Hack vorhanden sind.
+> Analysieren Sie alle Logs Ihres Hostings.
+>
 
+Verfolgen Sie so die Sicherheitslücken in Ihrer Website nach und listen Sie dabei die schädlichen Dateien auf, auf die Sie stoßen.
 
-Dort finden Sie einen Link, um die neueste stabile Version herunterzuladen.
+> [!success]
+>
+> Über einschlägige Webseiten (die nicht von OVHcloud verwaltet werden) können Sie Informationen zu angreifenden IPs abrufen. Sie können einen dieser Dienste verwenden, um Informationen wie den IP-Anbieter, dessen Geolokalisierung, die Verwaltung usw. abzurufen.
+>
+> Wenn Sie absolut sicher sind, dass es sich um eine unerwünschte IP-Adresse handelt, können Sie den Zugang zu Ihrem Hosting sperren, indem Sie unsere Dokumentation zu den [Zugriffsbeschränkungen über die Datei ".htaccess"](https://docs.ovh.com/de/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/) befolgen.
+> 
 
-Die Datei ist in der Regel komprimiert (gezippt), Sie müssen sie also dekomprimieren (extrahieren) können. Im Internet finden Sie zahlreiche Hilfen und Anleitungen hierzu.
+### Schritt 4: Schadcode entfernen und Sicherheitslücken beheben
 
-Anschließend müssen Sie die Dateien auf Ihren FTP-Bereich hochladen. Wie das geht, erfahren Sie in [dieser Hilfe](https://www.ovh.de/g1374.webhosting_meine_seite_online_stellen).
+Für diesen Schritt sind drei Fallbeispiele möglich.
 
-Wenn mehrere Webseiten auf demselben Hosting platziert sind, muss der Dateitransfer in das richtige Verzeichnis durchgeführt werden.
+> [!alert]
+>
+> **Wichtig**: In jedem Fall könnte ein Hacker, wenn Sie Schadcode entfernen, aber Sicherheitslücken nicht schließen, diese erneut ausnutzen, um Schadcode wieder auf Ihrem Hosting zu platzieren. Er könnte sogar eine neue Hintertür einrichten.
+>
+> Die Wiederherstellung zum Zustand vor dem Hack erfordert ein **sofortiges** Update und die Durchführung eines **Sicherheitsaudits**, um alle Sicherheitslücken zu identifizieren.
+>
+T
+#### Fall 1 - OVHcloud verfügt über ein Backup Ihrer Website (FTP Speicherplatz und Datenbank)
 
-Die wp-config.php-Datei muss ebenfalls geändert werden, damit die Verbindung zur Datenbank funktioniert.
+Abhängig vom Datum des Vorfalls auf Ihrem Hosting (weniger als 14 Tage) kann OVHcloud Ihnen ein (außervertragliches) Backup zur Verfügung stellen.
 
-Rufen Sie hierfür die E-Mail wieder auf, die Sie nach Erstellung Ihrer Datenbank erhalten haben. Sie finden diese E-Mail in Ihrem OVHcloud Kundencenter, Bereich "Mein Account" > "Empfangene E-Mails". Darin sind alle notwendigen Informationen enthalten, mit Ausnahme des Passworts, das nur Sie alleine kennen.
+Lesen Sie hierzu unsere 3 Anleitungen:
 
-Wenn Sie das Passwort Ihrer Datenbank vergessen haben, können Sie es über das OVHcloud Kundencenter ändern. Wie das geht, erfahren Sie in [dieser Hilfe](https://www.ovh.de/g1374.webhosting_meine_seite_online_stellen).
-Denken Sie daran, anschließend über Ihr WordPress Admin-Interface nach möglichen Updates zu suchen.
+- [FTP-Speicherplatz Ihres Webhostings wiederherstellen](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/)
+- [SQL-Backup Ihrer Datenbank abrufen](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/)
+- [SQL-Backup in Ihre Datenbank importieren](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/)
+ 
+Gleichen Sie die Zeitpunkte für die Wiederherstellung Ihres FTP-Speicherplatzes und Ihrer SQL-Datenbank so weit wie möglich an.
 
+>[!warning]
+>
+> OVHcloud setzt Sicherheitsroboter ein, die von Ihrem Hosting ausgehende Angriffe erkennen können. Diese deaktivieren Ihr Hosting und und informieren Sie per E-Mail, dass Ihr Hosting deaktiviert wurde.
+> Zusätzlich zu dieser E-Mail erscheint in der Regel eine "403 Forbidden" Fehlerseite, wenn Sie auf Ihre Website zugreifen.
+>
+> Wenn sich Ihr Hosting im Zustand "Disabled" befindet, wird auch die über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbare Option zur automatischen Wiederherstellung deaktiviert.
+> Sie müssen eine "manuelle" Wiederherstellung Ihrer Website durchführen, die verbleibenden schadhaften Elemente entfernen und alle Sicherheitslücken in diesem Backup beheben. Dies muss durchgeführt werden, **bevor** das Hosting reaktiviert wird.
+>
+> Um das Webhosting wiederherzustellen, befolgen Sie die Anweisungen in Schritt 4 [dieser Anleitung](https://docs.ovh.com/de/hosting/diagnose-403-forbidden/).
+>
 
-## Nützliche Informationen
-Wir empfehlen Ihnen, stets nur offizielle WordPress-Plugins zu verwenden. Inoffizielle Plugins werden vom Herausgeber nicht notwendigerweise aktuell gehalten. Außerdem können auch die Plugins selbst schädlichen Code enthalten.
+Ihre Website sollte wieder verfügbar sein, wenn diese Aktionen korrekt durchgeführt wurden.
 
+#### Fall 2 - Sie verfügen über Ihr eigenes Backup vor dem Hack
+
+Lesen Sie hierzu unsere 2 Anleitungen:
+
+- [FTP-Speicherplatz Ihres Webhostings wiederherstellen](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/)
+- [SQL Backup in Ihre Datenbank importieren](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/)
+
+>[!warning]
+>
+> OVHcloud setzt Sicherheitsroboter ein, die von Ihrem Hosting ausgehende Angriffe erkennen können. Diese deaktivieren Ihr Hosting und und informieren Sie per E-Mail, dass Ihr Hosting deaktiviert wurde.
+> Zusätzlich zu dieser E-Mail erscheint in der Regel eine "403 Forbidden" Fehlerseite, wenn Sie auf Ihre Website zugreifen.
+>
+> Wenn sich Ihr Hosting im Zustand "Disabled" befindet, führen Sie eine "manuelle" Wiederherstellung Ihrer Website durch, beseitigen Sie die verbleibenden schadhaften Elemente und beheben Sie alle Sicherheitslücken in diesem Backup. Dies muss durchgeführt werden, **bevor** das Hosting reaktiviert wird.
+>
+> Um das Webhosting wiederherzustellen, befolgen Sie die Anweisungen in Schritt 4 [dieser Anleitung](https://docs.ovh.com/de/hosting/diagnose-403-forbidden/).
+>
+
+Ihre Website sollte wieder verfügbar sein, wenn diese Aktionen korrekt durchgeführt wurden.
+
+#### Fall 3 - Es ist kein Backup für Ihre Website verfügbar
+
+In [Schritt 2](#step2) dieser Anleitung müssen Sie die zuvor erfassten Dateien und Code manuell löschen und die Sicherheitslücken Ihrer Website korrigieren.
+
+Um sich mit dem Speicherplatz Ihres Hostings zu verbinden, lesen Sie [unsere Anleitung](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/).
+
+>[!warning]
+>
+> OVHcloud setzt Sicherheitsroboter ein, die von Ihrem Hosting ausgehende Angriffe erkennen können. Diese deaktivieren Ihr Hosting und und informieren Sie per E-Mail, dass Ihr Hosting deaktiviert wurde.
+> Zusätzlich zu dieser E-Mail erscheint in der Regel eine "403 Forbidden" Fehlerseite, wenn Sie auf Ihre Website zugreifen.
+>
+> Wenn sich Ihr Hosting im Zustand "Disabled" befindet, führen Sie eine "manuelle" Wiederherstellung Ihrer Website durch, beseitigen Sie die verbleibenden schadhaften Elemente und beheben Sie alle Sicherheitslücken in diesem Backup. Dies muss durchgeführt werden, **bevor** das Hosting reaktiviert wird.
+>
+> Um das Webhosting wiederherzustellen, befolgen Sie die Anweisungen in Schritt 4 [dieser Anleitung](https://docs.ovh.com/de/hosting/diagnose-403-forbidden/).
+>
+
+Ihre Website sollte wieder verfügbar sein, wenn diese Aktionen korrekt durchgeführt wurden.
+
+### Schritt 5: Ihre Website aktualisieren
+
+Aktualisieren Sie Ihre Website im Hinblick auf Quellcode, Sicherheitseinstellungen und verwendete Sprachversionen (insbesondere PHP).
+
+Überprüfen Sie die FTP-Zugriffsrechte ("CHMOD") für alle in Ihrem Speicherplatz gehosteten Ordner und Dateien.
+Standardmäßig empfehlen wir, keine höheren "CHMOD"-Rechte als **705** für Ordner und **604** für Dateien zu verwenden.
+
+Weitere Informationen zu den "CHMOD"-Rechten finden Sie im Abschnitt "Nützliche Informationen" unseres [Tutorials zur Nutzung des FTP-Clients Filezilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/#useful-information).
+
+Wenn Sie ein CMS verwenden (Wordpress, Joomla!, PrestaShop, Drupal, etc.), aktualisieren Sie Ihre Plugins, Themes und das CMS selbst.
+Verwenden Sie nur "offizielle" Plugins/Themes und halten Sie Ihre Website so regelmäßig und umfassend wie möglich auf dem neuesten Stand.
+
+Sichern Sie Ihre Kontaktformulare mindestens mit einem "Captcha"-System ab, um zu vermeiden, dass Bots SPAM über diese Methode versenden. Wenn die "mail()"-Funktion von PHP ebenfalls auf Ihrem Hosting gesperrt wurde, lesen Sie hierzu [unsere Anleitung](https://docs.ovh.com/de/hosting/webhosting_verwaltung_automatischer_e-mails/), um die Sperrung zu beheben.
+
+Lesen Sie auch unsere Anleitung zur [Sicherung Ihrer Website](https://docs.ovh.com/de/hosting/website-absichern/), um das Risiko eines erneuten Hacks möglichst gering zu halten.
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+[Mit dem Speicherplatz Ihres Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/)
+
+[Konfiguration Ihres Webhostings ändern](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern//)
+
+[Application Firewall aktivieren](https://docs.ovh.com/de/hosting/webhosting_aktivieren_der_web_application_firewall/)
+
+[Die Performance Ihrer Website optimieren](https://docs.ovh.com/de/hosting/webhosting_optimierung_der_performance_ihrer_webseite/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
