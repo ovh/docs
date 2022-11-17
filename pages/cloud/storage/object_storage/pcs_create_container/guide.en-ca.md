@@ -66,7 +66,7 @@ Name your container, then click `Create the container`{.action}:
 > - [ _ ]  
 > - And you must not use capital letters.  
 >  
-> See: [Linking a container to a domain name](https://docs.ovh.com/asia/en/storage/pcs/link-domain/)
+> See: [Linking a container to a domain name](https://docs.ovh.com/ca/en/storage/pcs/link-domain/)
 >
 
 ![container name](images/create-container-20211005111805966.png)
@@ -100,7 +100,7 @@ Name your container.
 > - [ _ ]  
 > - And you must not use capital letters.  
 >  
-> See: [Linking a container to a domain name](https://docs.ovh.com/asia/en/storage/pcs/link-domain/)
+> See: [Linking a container to a domain name](https://docs.ovh.com/ca/en/storage/pcs/link-domain/)
 >
 
 Select the access policy for your container then click `Next`{.action}.
