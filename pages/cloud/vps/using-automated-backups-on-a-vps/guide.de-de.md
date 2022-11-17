@@ -6,7 +6,7 @@ section: 'Backup Optionen'
 order: 2
 ---
 
-**Letzte Aktualisierung am 31.08.2022**
+**Letzte Aktualisierung am 15.11.2022**
 
 ## Ziel
 
@@ -33,7 +33,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Nach der Auswahl Ihres VPS klicken Sie auf den Tab `Automatisches Backup`{.action} im horizontalen Menü.
 
-Beachten Sie im nächsten Schritt die Kosteninformation und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellvorgang geführt und erhalten eine Bestätigungsmail. Backups werden nun täglich erstellt, bis die Option wieder gekündigt wird.
+Beachten Sie im nächsten Schritt die Preisinformation und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellvorgang geführt und erhalten eine Bestätigungsmail. Backups werden nun täglich erstellt, bis die Option wieder gekündigt wird.
 
 #### Backup-Zeit konfigurieren
 
@@ -62,22 +62,25 @@ Wenn Sie kürzlich Ihr Root-Passwort geändert haben, aktivieren Sie im Popup-Fe
 
 > [!alert]
 >
-Bitte beachten Sie, dass die automatisierten Backups nicht Ihre zusätzlichen Festplatten umfassen.
+Bitte beachten Sie, dass die automatisierten Backups nicht Ihre zusätzlichen Disks umfassen.
 >
 
 ### Ein Backup mounten und darauf zugreifen
 
-Es ist nicht erforderlich, Ihren laufenden Dienst mit einer Wiederherstellung vollständig zu überschreiben. Mit der Option “Mounte” können Sie auf die Backup-Partition zugreifen, um Ihre Dateien abzurufen. 
+Es ist nicht erforderlich, Ihren laufenden Dienst mit einer Wiederherstellung vollständig zu überschreiben. Mit der Option "Mounten" können Sie auf direkt auf das Backup zugreifen, um Ihre Dateien abzurufen.
 
 > [!warning]
->OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
->Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Weitere Hinweise finden Sie im Teil “Weiterführende Informationen” dieser Anleitung.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
 >
 
-Klicken Sie auf `...`{.action} neben dem Backup, auf das Sie zugreifen müssen, und wählen Sie `Mounten`{.action}.
+Klicken Sie auf `...`{.action} neben dem Backup, auf das Sie zugreifen möchten, und wählen Sie `Mounten`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
+
+Wenn Sie diese Option verwenden, wird eine Lese-/Schreibkopie des Backups erstellt und gemountet. Das ursprüngliche Backup bleibt für zukünftige Wiederherstellungen unverändert verfügbar.
 
 Nach Abschluss des Vorgangs erhalten Sie eine E-Mail. Sie können jetzt eine Verbindung zu Ihrem VPS herstellen und die Partition hinzufügen, auf der sich Ihr Backup befindet.
 
