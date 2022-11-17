@@ -10,7 +10,7 @@ order: 2
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 30/08/2022**
+**Última atualização: 15/11/2022**
 
 ## Sumário
 
@@ -83,6 +83,8 @@ Não é necessário restaurar completamente o seu atual serviço. A opção “M
 Clique em `...`{.action} junto ao backup pretendido e selecione `Montar`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
+
+Quando utiliza esta opção, é criada e montada uma cópia de leitura/escrita do backup. O backup original está disponível tal como está para restauros futuros.
 
 Após concluir o processo, irá receber um e-mail de confirmação. Poderá então ligar-se ao seu alojamento VPS e adicionar a partição onde o seu backup está localizado.
 

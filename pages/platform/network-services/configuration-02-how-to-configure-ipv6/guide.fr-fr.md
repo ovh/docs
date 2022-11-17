@@ -6,7 +6,7 @@ section: Configuration
 order: 02
 ---
 
-**Dernière mise à jour le 22/07/2022**
+**Dernière mise à jour le 15/11/2022**
 
 ## Objectif
 
@@ -18,9 +18,9 @@ Par défaut, seule l'adresse IPv4 est configurée.
 
 **Dans ce tutoriel, nous allons vous apprendre à configurer une adresse IPv6 sur une instance Public Cloud.**
 
-> [!warning]
+> [!primary]
 > 
-> Veuillez noter que, sur les versions récentes des systèmes d'exploitation Linux, l'adresse IPv6 est configurée par défaut sur les instances Public Cloud. Assurez-vous de vérifier le fichier de configuration de votre OS avant d'effectuer tout changement.
+> Actuellement, les offres Floating IP et Gateway ne prennent pas en charge l'IPv6. L'IPv6 n'est utilisable qu'avec les instances en [mode public](https://docs.ovh.com/fr/publiccloud/network-services/networking-concepts/#publicmode).
 >
 
 ## Prérequis
@@ -31,6 +31,11 @@ Par défaut, seule l'adresse IPv4 est configurée.
 * Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
+
+> [!warning]
+> 
+> Veuillez noter que, sur les versions récentes des systèmes d'exploitation Linux, l'adresse IPv6 est configurée par défaut sur les instances Public Cloud. Assurez-vous de vérifier le fichier de configuration de votre OS avant d'effectuer tout changement.
+>
 
 ### Lexique
 

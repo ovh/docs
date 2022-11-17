@@ -10,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 30/08/2022**
+**Ultimo aggiornamento: 15/11/2022**
 
 ## Obiettivo
 
@@ -82,6 +82,8 @@ Non è necessario sovrascrivere completamente il tuo servizio esistente con un r
 Clicca su `...`{.action} accanto al backup a cui desideri accedere e seleziona `Montaggio`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
+
+Quando utilizzi questa opzione, viene creata e montata una copia in lettura/scrittura del backup. Il backup originale resta disponibile per i ristoranti futuri.
 
 A completamento del processo riceverai una email. A questo punto puoi connetterti al tuo VPS e aggiungere la partizione in cui è localizzato il tuo backup.
 

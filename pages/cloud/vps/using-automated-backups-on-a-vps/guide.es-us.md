@@ -10,7 +10,7 @@ order: 2
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 30/08/2022**
+**Última actualización: 15/11/2022**
 
 ## Objetivo
 
@@ -82,6 +82,8 @@ No es necesario sobrescribir íntegramente el servicio existente con una restaur
 Haga clic en `...`{.action} junto a la copia de seguridad a la que necesite acceder y seleccione `Montaje`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
+
+Cuando se utiliza esta opción, se crea y monta una copia de seguridad de lectura-escritura. La copia de seguridad original sigue estando disponible para futuras restauraciones.
 
 Una vez completado el proceso, recibirá un mensaje de correo electrónico. Ahora, puede conectarse a su servidor virtual privado (VPS) y añadir la partición donde se encuentra su copia de seguridad.
 

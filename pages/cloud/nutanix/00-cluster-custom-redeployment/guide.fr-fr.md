@@ -6,7 +6,7 @@ section: Premiers pas
 order: 05
 ---
 
-**Dernière mise à jour le 10/06/2022**
+**Dernière mise à jour le 16/11/2022**
 
 ## Objectif
 
@@ -23,6 +23,12 @@ Découvrez comment reconditionner un Cluster avec des paramètres réseau person
 - Disposer d'un Cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur la page des [API OVHcloud](https://api.ovh.com/)
+
+> [!warning]
+> Si vous avez souscrit à **l'offre Nutanix on OVHcloud BYOL** et que vous avez activé des licences sur votre cluster, vous devez désinstaller vos licences avant de lancer le redéploiement. Vous pouvez vous aider de ce guide pour gérer vos licences :[Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/fr/nutanix/activate-license-on-nutanix-byol/)
+>
+
+
 
 ## Présentation de l'utilisation du réseau privé pour un Cluster Nutanix chez OVHcloud
 

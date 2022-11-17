@@ -21,7 +21,7 @@ La solución Object Storage para Public Cloud ofrece almacenamiento ilimitado co
 - para alojamiento público (para almacenar todo lo que sea accesible al público);
 - para almacenamiento en frío (archivado).
 
-El primer paso es crear un contenedor que agrupe sus archivos. 
+El primer paso es crear un contenedor que agrupe sus archivos.
 
 **Esta guía explica cómo crearlo desde el área de cliente de OVHcloud y desde el panel Horizon de OpenStack.**
 
@@ -67,9 +67,9 @@ Asigne un nombre al contenedor y haga clic en `Añadir el contenedor`{.action}.
 >
 > Si quiere asociar su contenedor a un dominio, el nombre del contenedor no debe contener los siguientes caracteres:
 >
-> - [ . ]
-> - [ _ ]
-> - Y no debes usar mayúsculas.
+> - [ . ]  
+> - [ _ ]  
+> - Y no debes usar mayúsculas.  
 >
 > Para más información, consulte nuestra guía "[Asociar un contenedor a un dominio](https://docs.ovh.com/us/es/storage/colocar_un_contenedor_de_object_storage_detras_de_un_nombre_de_dominio/)".
 >
@@ -97,16 +97,16 @@ Desarrolle el menú `Object Store`{.action}, haga clic en `Containers`{.action} 
 
 Asigne un nombre al contenedor.
 
-  > [!warning]
-  >
-  > Si quiere asociar su contenedor a un dominio, el nombre del contenedor no debe contener los siguientes caracteres:
-  >
-  > - [ . ]
-  > - [ _ ]
-  > - Y no debes usar mayúsculas.
-  >
-  > Para más información, consulte nuestra guía "[Asociar un contenedor a un dominio](https://docs.ovh.com/us/es/storage/colocar_un_contenedor_de_object_storage_detras_de_un_nombre_de_dominio/)".
-  >
+> [!warning]
+>
+> Si quiere asociar su contenedor a un dominio, el nombre del contenedor no debe contener los siguientes caracteres:
+>
+> - [ . ]  
+> - [ _ ]  
+> - Y no debes usar mayúsculas.  
+>
+> Para más información, consulte nuestra guía "[Asociar un contenedor a un dominio](https://docs.ovh.com/us/es/storage/colocar_un_contenedor_de_object_storage_detras_de_un_nombre_de_dominio/)".
+>
 
 Seleccione la política de acceso de su contenedor y haga clic en `Next`{.action}
 

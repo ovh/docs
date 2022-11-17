@@ -1,118 +1,230 @@
 ---
-title: 'Hacking del tuo sito WordPress: consigli e casi pratici'
-excerpt: ''
+title: "Tutorial - Consigli in seguito alla pirateria del tuo sito Web"
+excerpt: "Scopri i nostri consigli per riparare il tuo sito Web pirata"
 slug: hacking_del_tuo_sito_wordpress_consigli_e_casi_pratici
 section: Casi d'uso
 order: 01
 ---
 
+**Ultimo aggiornamento: 10/11/2022**
+  
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## 
-Il tuo sito sviluppato in WordPress e ospitato in OVH risulta non raggiungibile, viene reindirizzato verso un altro sito o presenta messaggi non desiderati.
+## Obiettivo
 
-OVH non garantisce assistenza relativamente all'utilizzo di WordPress, ma possiamo indicarti la procedura da seguire in caso di hacking.
+Questa guida ti mostra come il tuo sito Web è stato piratato. Di seguito **i 4 step da effettuare nell'ordine** per correggere la situazione.
 
+La pirateria può manifestarsi in diversi modi (elenco non esaustivo):
 
-## Perché il tuo sito è stato vittima di hacking? Che cosa devi fare?
-L'hacking di un sito avviene in generale quando il prodotto non è aggiornato o quando vengono utilizzati plugin non ufficiali e password troppo semplici.
+- il tuo sito Web non appare più correttamente o per nulla, senza alcuna modifica (FTP, SQL o DNS) da parte tua
+- il tuo sito Web è reindirizzato verso un altro sito
+- il tuo sito genera "annunci" intempestivi (Pop-up, finestre di errori, ecc...)
+- il database del tuo sito Web è subito compilato
+- dall'hosting vengono generati SPAM generati da script infetti.
 
-La mancanza totale di rischi non esiste, nè è possibile limitarli.
+**Scopri i nostri consigli per riparare il tuo sito Web pirata.**
 
-È però possibile adottare alcune misure per correggere il problema ed evitare che si ripresenti, ad esempio aggiornando regolarmente la versione di WordPress, i temi, i plugin, ecc...
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
+> 
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+>
 
-In questa guida ti spieghiamo come rimettere online il tuo sito.
+## Prerequisiti
 
-Se OVH ha chiuso il tuo sito consulta [questa guida](https://www.ovh.it/g1392.procedura-chiusura-hack-ovh), relativa alle procedure di chiusura per hacking.
+- Disporre di una [offerta di hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/) con il tuo sito Web ospitato su
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
+## Procedura
 
-## Esegui la scansione del tuo ambiente
-Il posto da cui cominciare è il tuo ambiente locale.
-In molti casi, infatti, la fonte dell'attacco inizia localmente (ad esempio computer portatile, pc dell'ufficio...).
+La pirateria di un sito Web è sistematicamente legata a **almeno**:
 
-Verifica che sulla tua macchina locale risulti attivo un Antivirus/Antimalware. 
-Ti consigliamo di utilizzarne più di uno (locale e online) per assicurarti che tutti i virus vengano rilevati. Questo consiglio è valido sia per Windows che per Mac e Linux.
+- mancanza di aggiornamenti del sito Web;
+- software spia presente su uno dei dispositivi che utilizzi per amministrare il tuo sito Web;
+- l'utilizzo di un plugin o di un tema "non ufficiale", in particolare se utilizzi un Content Managment System (CMS) come WordPress, Joomla!, PrestaShop o Drupal
+- password (FTP, SQL, "back office" per i CMS, ecc.) troppo corte o troppo facili da trovare, soprattutto se non cambiate;
+- uno script del tuo sito che apre deliberatamente porte a livello del tuo hosting Web **senza** verificare quello che riceve da queste porte;
+- diritti di accesso FTP "CHMOD" un po' troppo permissivi.
 
+**La pirateria di un sito Web non deriva da un difetto di sicurezza dell'hosting Web.** Solo gli script/file ospitati sono in grado di dare ordini all'hosting. Gli enti creditizi possono chiedere o meno di aprire alcuni porti di accesso chiusi di default o di eseguire o meno alcune azioni.<br>
+Gli script ordinano, l'hosting esegue.
 
-## Valuta la situazione
-Quando ti rendi conto che il tuo sito ha subito hacking, è necessario agire in fretta.
-Per prima cosa è importante sapere a quando risale l'attacco, per essere sicuro che OVH possa ripristinare i tuoi dati.
-Individuiamo la fonte dell'intrusione e analizziamo i 2 casi possibili.
+### Step 1 - scannerizza tutti i tuoi dispositivi
 
+Esegui un'analisi anti-virus e anti-spyware di tutti i dispositivi (PC, Mac, smartphone/Iphone, tablet,...) da cui gestisci l'amministrazione o la gestione del tuo sito Web.
 
-## 
-Prima di effettuare qualsiasi ripristino, è importante verificare la data delle ultime modifiche dei tuoi file Web (FTP) per trovare e correggere le falle di sicurezza.
-Non è possibile descrivere dettagliatamente la procedura che permette di identificare a colpo sicuro l'origine di qualsiasi intrusione, ma in generale un attacco è possibile a causa di una falla in uno script che l'hacker sfrutta per effettuare una richiesta HTTP.
+> [!warning]
+>
+> Se utilizzi dispositivi che funzionano con *Linux*, *Mac OS* o altri sistemi operativi per i quali è comunemente indicato che non esiste il rischio di avere un virus o un software "spia", **effettua comunque questa analisi**.
+>
+> **Nessun sistema operativo è immune da malware/malware.**
+>
 
-Tutte le richieste HTTP sono disponibili nei tuoi log (https://logs.cluster0XX.hosting.ovh.net/tuo_dominio).
-Sostituisci "tuo_dominio" con il tuo dominio e la sua estensione, ad esempio "ovh.com".
+> [!success]
+>
+> Ti consigliamo di utilizzare diversi anti-virus/anti-spyware (gratuiti o a pagamento) per ogni tuo dispositivo.
+> Effettivamente, alcuni virus o spyware possono persistere a seconda del software antivirus utilizzato.
+> Esistono versioni di anti-virus/anti-spyware che puoi installare "in locale" sul tuo dispositivo o utilizzare direttamente "online" su Internet.
+>
 
-- Individua la data e l'ora contenute nell'email che hai ricevuto*
-- Consulta i tuoi log a partire da questo orario ed eventualmente allarga il campo di ricerca agli orari anteriori fino a trovare una richiesta non corretta, sospetta o diversa dalle altre. Questa operazione richiede un pò di pratica e di conoscenza del formato delle richieste. Presta particolare attenzione alle richieste di tipo POST, maggiormente sfruttate dagli hacker
-- Individua lo script utilizzato da questa richiesta
-- Analizza lo script per individuare la falla
-- Correggi la falla
+Se viene individuato un virus o un software spia, eliminalo utilizzando il tuo software anti-virus/anti-spyware **anteriormente** allo step successivo.
 
+### Step 2 - modifica la password <a name="step2"></a>
 
-*l'invio di email avviene solo se il tuo hosting è stato bloccato. In caso contrario è necessario verificare la data delle ultime modifiche effettuate dallo spazio FTP (data dei file).
+Se un sito Web è stato hacker e precauzionale, modifica tutte le password associate.
 
-Eliminare semplicemente il codice malevolo aggiunto dall'hacker non è sufficiente: è necessario correggere totalmente la falla di sicurezza.
+Per OVHcloud, consulta la nostra guida:
 
-Per questo tipo di operazione, ti consigliamo di richiedere l’assistenza di un [Webmaster](https://partners.ovh.com) o di chiedere aiuto sul forum ufficiale di WordPress.
-In nessun caso il supporto OVH potrà assisterti direttamente per questo tipo di richiesta.
+- [Modifica la password di accesso al tuo identificativo cliente OVHcloud](https://docs.ovh.com/it/customer/gestire-la-password/).
+- [Rendere sicuro l'accesso allo Spazio Cliente OVHcloud con doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/).
+- [Modificare la password di accesso allo spazio di storage FTP del tuo hosting Web](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/).
+- [Modifica la password di accesso al tuo database](https://docs.ovh.com/it/hosting/modificare-password-database/).
 
+Consigliamo inoltre di utilizzare un [gestore di password](https://docs.ovh.com/it/customer/gestire-la-password/#utilizza-un-software-per-la-gestione-di-password).
 
-## Ripristina il tuo sito
-WordPress è composto da file e da un database. È possibile ripristinare i tuoi file a una data anteriore. OVH propone uno storico dei file presenti sul tuo hosting di 2 settimane. Per il database, è possibile risalire fino a 7 giorni prima.
-Il ripristino non corregge le falle di sicurezza, cancella semplicemente i dati presenti e li sostituisce con quelli contenuti nel backup.
+> [!warning]
+> 
+> Modificando la password del tuo database, ricordati di aggiornare la password anche nel file di configurazione del tuo sito Web. In caso contrario, il collegamento tra il database e i file presenti nello spazio di storage FTP del tuo hosting Web sarà interrotto e il tuo sito visualizzerà un "errore durante la connessione al tuo database".
+>
 
+> [!primary]
+>
+> Se utilizzi un CMS come WordPress, Joomla!, PrestaShop o Drupal, consulta la documentazione ufficiale del tuo CMS per modificare la password di accesso allo spazio di amministrazione del tuo CMS ("Back-office").
+>
 
-## Ripristina i tuoi file via FTP
-Dal tuo Spazio Cliente OVH è possibile ripristinare la totalità del tuo spazio FTP, ma questa operazione può essere complicata se hai più domini associati allo stesso hosting.
+### Step 3 - ricercare i file malevoli e le falle di sicurezza
 
-In questo caso, è preferibile ripristinare solo la directory interessata. Per maggiori informazioni, consulta [questa guida](https://www.ovh.it/g1593.recupera-un-backup-completo-o-un-file-specifico-in-ftp-con-fileZilla).
+> [!warning]
+>
+> In caso di difficoltà nell'esecuzione delle azioni descritte di seguito, rivolgiti a un [fornitore specializzato](https://partner.ovhcloud.com/it/) in sicurezza informatica.
+>
 
+Utilizza la nostra guida su [le statistiche e i log del tuo hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/) per ricercare gli elementi malevoli iniettati nel tuo sito Web. Trovi le informazioni nei log "web". 
 
-## Ripristina il tuo database SQL
-Se necessario, consulta le nostre guide per [esportare](https://www.ovh.it/g1394.web_hosting_come_esportare_un_database) e [importare](https://www.ovh.it/g1393.web_hosting_come_importare_un_database_mysql) il tuo database.
+Cerca a partire dalla data in cui hai rilevato la pirateria e torna allo storico dei tuoi log.
 
-Una volta effettuato il backup del database (dump), per importarlo è necessario eliminare tutte le tabelle dall'interfaccia [phpMyAdmin](https://docs.ovh.com/it/hosting/connessione-database-server-bdd/).
+Identifica le richieste "POST" che escono dall'ordinario. Generalmente i file malevoli hanno nomi alfanumerici senza alcun significato particolare (**esempio***: az78e4jFn.txt, oij8bh4.html, udh73hd45.php, mlkjc23d.js, ...).
 
+Recupera l'indirizzo IP che ha effettuato la richiesta malevola. Effettua una ricerca di questo indirizzo nei tuoi log per visualizzare tutte le azioni richieste sul tuo sito da questo IP.
 
-## Cosa fare dopo aver effettuato il ripristino?
-Una volta completato il ripristino verifica se sono disponibili aggiornamenti di WordPress, dei temi e dei plugin ed eventualmente installali.
+> [!primary]
+>
+> In genere, più indirizzi IP malevoli chiamano, durante lo stesso periodo, gli script malevoli presenti in seguito alla pirateria.
+> Ti ringraziamo per aver analizzato tutti i log del tuo hosting.
+>
 
-Disinstalla i plugin che non utilizzi: la loro semplice disattivazione non è sufficiente a eliminare le eventuali falle presenti.
+Raggiungi le falle di sicurezza presenti nel tuo sito, elencando i file malevoli che incontri.
 
-Se l’attacco è avvenuto in una data precedente al periodo di backup, ecco come ripristinare il tuo WordPress:
+> [!success]
+>
+> Alcuni siti (non gestiti da OVHcloud) possono permetterti di ottenere informazioni sugli IP malevoli. Puoi utilizzare uno di questi per recuperare informazioni come il provider dell'IP, la sua geolocalizzazione, il gestore, ecc...
+>
+> Se sei assolutamente sicuro che si tratti di un IP malevolo, puoi bloccarlo all'accesso al tuo hosting seguendo la nostra guida sulle [restrizioni di accesso tramite il file ".htaccess"](https://docs.ovh.com/it/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+> 
 
-## Non riesci ad accedere al pannello di amministrazione WordPress
-In questo caso, modifica la tua [password amministratore](https://codex.wordpress.org/) seguendo la guida ufficiale di WordPress.
+### Step 4 - Eliminare gli elementi malevoli e correggere le falle di sicurezza
 
-È possibile aggiornare la tua email dalla tabella user di [phpMyAdmin](https://docs.ovh.com/it/hosting/connessione-database-server-bdd/). Ritorna poi alla pagina di login, clicca su Hai dimenticato la password? e aspetta che ti venga inviata l'email.
+In questa fase sono possibili tre casi: 
 
+> [!alert]
+>
+> **Importante**: In ogni caso, se elimini i codici malevoli senza correggere le falle di sicurezza, l'hacker potrebbe di nuovo utilizzarli per depositare nuovamente il codice malevolo sul tuo hosting. Avrebbe anche la possibilità di creare una nuova porta d'accesso.
+>
+> Il ripristino a una data anteriore alla pirateria richiederà un aggiornamento **immediato** e l'indispensabile realizzazione di un **audit di sicurezza**, al fine di identificare tutte le falle di sicurezza.
+>
 
-## Scarica di nuovo i file di WordPress e sostituiscili a quelli già esistenti.
-L’installazione di nuovi file di base ti garantisce l’utilizzo di contenuti non hackerati.
+#### Caso n°1 - OVHcloud dispone di un backup del tuo sito Internet (spazio di storage FTP e database)
 
-- Accedi al sito ufficiale di [WordPress](https://it.wordpress.org/).
+In base alla data di hacking del tuo sito (meno di 14 giorni), OVHcloud può fornirti un backup (non contrattuale).
 
+Per farlo, consulta le nostre 3 guide sull'argomento:
 
-Clicca sul link per scaricare l'ultima versione stabile del CMS.
+- [Ripristinare lo spazio di storage FTP del tuo hosting Web](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/)
+- [Recupera il backup SQL del tuo database](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/)
+- [Importare il backup SQL nel tuo database](https://docs.ovh.com/it/hosting/web_hosting_come_importare_un_database_mysql/)
 
-Il file scaricato è generalmente compresso (zip), quindi è necessario decomprimerlo.
+Fai coincidere il più possibile le date di ripristino del tuo spazio di storage FTP e del tuo database SQL.
 
-Una volta estratto, trasferisci i file sul tuo spazio FTP. Se necessario, consulta [questa guida](https://www.ovh.it/g1374.hosting_condiviso_come_mettere_online_il_tuo_sito).
+>[!warning]
+>
+> OVHcloud dispone di robot di sicurezza in grado di rilevare azioni malevoli eseguite dal tuo hosting. che disattivano il tuo hosting e ti avvisano via email che il tuo hosting è stato disattivato.
+> In aggiunta a questa email, in genere compare una pagina "403 Forbidden" quando cerchi di accedere al tuo sito.
+>
+> Se il tuo hosting è "disattivato", i robot di ripristino automatico disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) saranno disattivati.
+> È necessario effettuare un ripristino "manuale" del sito, eliminare gli elementi malevoli residui e correggere eventuali falle di sicurezza presenti nel backup. Questa operazione **prima** di riattivare il tuo hosting.
+>
+> Per riattivare l'hosting Web, segui le istruzioni riportate nello Step 4 di questa [guida](https://docs.ovh.com/it/hosting/diagnostic-403-forbidden/).
+>
 
-Nel caso di più siti presenti su uno stesso hosting, il trasferimento dei file deve essere effettuato nella relativa directory.
+Se le operazioni sono state eseguite correttamente, il sito dovrebbe essere riabilitato.
 
-Per rendere operativo il collegamento con il database, è necessario modificare il file wp-config.php.
+#### Caso n°2 - Disponi del tuo backup precedente la pirateria
 
-Per farlo, è necessario disporre dell'email ricevuta al momento della creazione del tuo database. Puoi trovare tutte le informazioni nel tuo Spazio Cliente OVH, nella sezione "Supporto" > "Email ricevute".
+Per farlo, consulta le nostre 2 guide sull'argomento:
 
-Se non ricordi più la password del tuo database, puoi modificarla dal tuo Spazio Cliente OVH. Per eseguire questa operazione, consulta [questa guida](https://www.ovh.it/g1374.hosting_condiviso_come_mettere_online_il_tuo_sito).
-Importante: ricordati di verificare gli aggiornamenti disponibili dal pannello di amministrazione WordPress
+- [Ripristinare lo spazio di storage FTP del tuo hosting Web](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/)
+- [Importare il backup SQL nel tuo database](https://docs.ovh.com/it/hosting/web_hosting_come_importare_un_database_mysql/)
 
+>[!warning]
+>
+> OVHcloud dispone di robot di sicurezza in grado di rilevare azioni malevoli eseguite dal tuo hosting. che disattivano il tuo hosting e ti avvisano via email che il tuo hosting è stato disattivato.
+> In aggiunta a questa email, in genere compare una pagina "403 Forbidden" quando cerchi di accedere al tuo sito.
+>
+> Se il tuo hosting è "disattivato", effettua un ripristino "manuale" del sito, rimuovi gli elementi malevoli residui e correggi tutte le falle di sicurezza presenti nel backup. Questa operazione **prima** di riattivare il tuo hosting.
+>
+> Per riattivare l'hosting Web, segui le istruzioni riportate nello Step 4 di questa [guida](https://docs.ovh.com/it/hosting/diagnostic-403-forbidden/).
+>
 
-## Informazioni utili
-Ti consigliamo di utilizzare solo plugin ufficiali di WordPress: le fonti non ufficiali non vengono necessariamente aggiornate e potrebbero contenere del codice malevolo.
+Se le operazioni sono state eseguite correttamente, il sito dovrebbe essere riabilitato.
 
+#### Caso n. 3 - nessun backup è disponibile per il tuo sito Web
+
+Elimina manualmente i file e i codici malevoli precedentemente rilevati durante lo [step 2](#step2) di questa guida e correggi le falle di sicurezza del tuo sito.
+
+Per accedere allo spazio di storage del tuo hosting, consulta la nostra guida (https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) sull'argomento.
+
+> [!warning]
+>
+> OVHcloud dispone di robot di sicurezza in grado di rilevare azioni malevoli eseguite dal tuo hosting. che disattivano il tuo hosting e ti avvisano via email che il tuo hosting è stato disattivato.
+> In aggiunta a questa email, in genere compare una pagina "403 Forbidden" quando cerchi di accedere al tuo sito.
+>
+> Se il tuo hosting è "disattivato", rimuovi gli elementi malevoli residui e correggi tutte le falle di sicurezza presenti nel backup **prima** di riattivare il tuo hosting.
+>
+> Per riattivare l'hosting Web, segui le istruzioni riportate nello Step 4 di questa [guida](https://docs.ovh.com/it/hosting/diagnostic-403-forbidden/).
+>
+
+Se le operazioni sono state eseguite correttamente, il sito dovrebbe essere riabilitato.
+
+### Step 5 - Aggiorna il tuo sito
+
+Aggiorna il tuo sito Web al suo codice sorgente, ai parametri di sicurezza di cui dispone, alle versioni di linguaggio che utilizza (in particolare PHP).
+
+Verifica i diritti di accesso FTP "CHMOD" per ogni cartelle e file ospitati nel tuo spazio di archiviazione.
+Di default, consigliamo di utilizzare al massimo i diritti "CHMOD" **705** per i fascicoli e **604** per i file.
+Per maggiori informazioni sui permessi "CHMOD", consulta la sezione "Informazioni utili" del nostro [tutorial sull'utilizzo del client FTP Filezilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/#useful-information).
+
+Se utilizzi un CMS (Wordpress, Joomla!, PrestaShop, Drupal...), aggiorna i tuoi plugin, il tuo tema e il CMS in sé.
+Utilizza plugin/temi "ufficiali" e aggiorna il tuo sito Web il più regolarmente possibile ed esaustivamente.
+
+Proteggi i tuoi form di contatto con l'ausilio di un sistema di tipo "Captcha" per evitare che i robot malevoli emettano SPAM attraverso questo mezzo. Se la funzione "mail()" di PHP è stata bloccata sul tuo hosting, consulta [la nostra guida](https://docs.ovh.com/it/hosting/hosting_web_gestisci_linvio_delle_tue_email_automatiche/) su questo argomento per risolvere il blocco.
+
+Consulta anche la nostra guida su [come proteggere il tuo sito Web](https://docs.ovh.com/it/hosting/secure-website/), per ridurre al minimo il rischio di un'altra pirateria.
+
+## Per saperne di più <a name="go-further"></a>
+
+[Accedere allo spazio di storage del tuo hosting Web](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/)
+
+[Modifica la configurazione di un hosting Web](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//)
+
+[Attiva il firewall applicativo](https://docs.ovh.com/it/hosting/hosting_condiviso_attiva_un_firewall_applicativo/)
+
+[Ottimizza le performance del tuo sito](https://docs.ovh.com/it/hosting/web_hosting_ottimizza_le_performance_del_tuo_sito/)
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

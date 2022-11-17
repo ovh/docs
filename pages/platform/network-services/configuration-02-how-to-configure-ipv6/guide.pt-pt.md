@@ -10,7 +10,7 @@ order: 02
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22/07/2022**
+**Última atualização: 15/11/2022**
 
 ## Objetivo
 
@@ -22,9 +22,9 @@ Por predefinição, apenas o endereço IPv4 é configurado.
 
 **Neste tutorial, iremos explicar como configurar um endereço IPv6 numa instância Public Cloud.**
 
-> [!warning]
->
-> Note-se que nas versões recentes dos sistemas operativos Linux, o endereço IPv6 é configurado por defeito nas instâncias da Nuvem Pública. Certifique-se de verificar o seu ficheiro de configuração do SO antes de fazer quaisquer alterações.
+> [!primary]
+> 
+> Atualmente, as ofertas Floating IP e Gateway não tomam a cargo o IPv6. O IPv6 só pode ser utilizado com as instâncias em [modo público](https://docs.ovh.com/pt/publiccloud/network-services/networking-concepts/#publicmode).
 >
 
 ## Requisitos
@@ -35,6 +35,12 @@ Por predefinição, apenas o endereço IPv4 é configurado.
 * Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
+
+> [!warning]
+>
+> Note-se que nas versões recentes dos sistemas operativos Linux, o endereço IPv6 é configurado por defeito nas instâncias da Nuvem Pública. Certifique-se de verificar o seu ficheiro de configuração do SO antes de fazer quaisquer alterações.
+>
+
 
 ### Léxico
 

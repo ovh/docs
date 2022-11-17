@@ -10,7 +10,7 @@ order: 02
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 22.07.2022**
+**Letzte Aktualisierung am 15.11.2022**
 
 ## Ziel
 
@@ -20,13 +20,12 @@ Jede Public Cloud Instanz wird mit einer IPv4-Adresse und einer IPv6-Adresse aus
 
 Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 
-**In dieser Anleitung möchten wir Ihnen zeigen, wie Sie eine IPv6-Adresse auf einer Public Cloud Instanz konfigurieren können.**
+**Diese Anleitung erklärt, wie Sie eine IPv6-Adresse auf einer Public Cloud Instanz konfigurieren können.**
 
-> [!warning]
+> [!primary]
+> 
+> Floating IP und Gateway sind derzeit nicht mit IPv6 kompatibel. Sie können IPv6 nur mit Instanzen im [Public Mode](#https://docs.ovh.com/de/publiccloud/network-services/networking-concepts/#publicmode) verwenden.
 >
-> Bitte beachten Sie, dass bei neueren Versionen von Linux-Betriebssystemen die IPv6-Adresse von Public-Cloud-Instanzen breits vorkonfiguriert ist. Überprüfen Sie deshalb die Konfigurationsdatei Ihres Betriebssystems, bevor Sie Änderungen vornehmen.
->
-
 
 ## Voraussetzungen
 
@@ -37,6 +36,12 @@ Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 
 
 ## In der praktischen Anwendung
+
+> [!warning]
+>
+> Bitte beachten Sie, dass bei neueren Versionen von Linux-Betriebssystemen die IPv6-Adresse von Public-Cloud-Instanzen breits vorkonfiguriert ist. Überprüfen Sie deshalb die Konfigurationsdatei Ihres Betriebssystems, bevor Sie Änderungen vornehmen.
+>
+
 
 ### Glossar
 

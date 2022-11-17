@@ -50,7 +50,7 @@ Para crear una tarea CRON, haga clic en el botón `Añadir una planificación`{.
 |Opción|Descripción|   
 |---|---|   
 |Orden a ejecutar|Establezca la ruta al archivo que contiene el script. Ejemplo: www/jobs/cron.php|   
-|Idioma|Seleccione la versión PHP del script o haga clic en "Otro".|
+|Idioma|Seleccione la versión PHP del script.|
 |Activación|Seleccione si la tarea se activará después de crearla o se activará más adelante.| 
 |Logs por e-mail|Si es necesario, seleccione un contacto (administrador o técnico) al que se enviará un informe en caso de error de ejecución. También puede proporcionar otra dirección de correo electrónico.| 
 |Descripción|Introduzca una descripción para consultar el progreso en la ejecución de sus tareas.| 

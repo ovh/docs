@@ -51,7 +51,7 @@ Um einen CRON-Task zu erstellen, klicken Sie rechts auf den Button `Eine Planung
 |Option|Beschreibung|   
 |---|---|   
 |Auszuführender Befehl|Legen Sie den Zugriffspfad zur Datei mit Ihrem Skript fest. Beispiel: www/jobs/cron.php|   
-|Sprache |Wählen Sie die vom Skript verwendete PHP-Version aus oder wählen Sie "Andere".|
+|Sprache |Wählen Sie die vom Skript verwendete PHP-Version aus.|
 |Aktivierung|Wählen Sie aus, ob der Task nach seiner Erstellung aktiv sein soll oder später aktiviert wird.| 
 |Logs per E-Mail|Wenn nötig wählen Sie einen Kontakt (Administrator oder Technischer) aus, an den im Falle eines Ausführungsfehlers ein Bericht versendet wird. Sie können auch eine andere E-Mail-Adresse angeben.| 
 |Beschreibung|Geben Sie eine Beschreibung ein, um Ihre Tasks zu dokumentieren.| 
