@@ -1,5 +1,5 @@
 ---
-title: Responsibility model
+title: Responsibility model for Email pro service
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 slug: responsibility-model
 section: Get Started
