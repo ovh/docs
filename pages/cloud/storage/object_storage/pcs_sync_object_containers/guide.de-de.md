@@ -7,7 +7,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/pcs/sync-object-containers/'
 ---
 
-**Last updated 16 November 2022**
+**Last updated 16th November 2022**
 
 ## Objective
 

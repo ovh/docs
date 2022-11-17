@@ -6,7 +6,7 @@ section: OpenStack Swift Storage Class Specifics
 order: 100
 ---
 
-**Last updated 16 November 2022**
+**Last updated 16th November 2022**
 
 ## Objective
 

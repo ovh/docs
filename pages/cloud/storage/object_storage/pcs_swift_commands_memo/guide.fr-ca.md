@@ -409,14 +409,15 @@ swift capabilities
 
 ### Limiter la taille d'un conteneur
 
-Pour limiter la taille d'un conteneur, ajoutez la métadonnée 'X-Container-Meta-Quota-Bytes' et sa valeur limite:
-```
+Pour limiter la taille d'un conteneur, ajoutez la métadonnée 'X-Container-Meta-Quota-Bytes' et sa valeur limite :
+
+```bash
 swift post -H "X-Container-Meta-Quota-Bytes:<limit-in-bytes>" <conteneur>
 ```
 
-Lorsque la limite est dépassée, l'erreur suivante est retournée:
+Lorsque la limite est dépassée, l'erreur suivante est retournée :
 
-```
+```bash
 swift upload <conteneur> logo_ovh.png
 Object PUT failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<account>/<conteneur>/logo_ovh.png 413 Request Entity Too Large b'Upload exceeds quota.' (txn: txee1f2b77c26a424ebbda8-0062a1aa7f)
 Consider using the --segment-size option to chunk the object
