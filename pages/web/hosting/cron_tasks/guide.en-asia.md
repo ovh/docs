@@ -45,7 +45,7 @@ To create a new cron task, click on the `Add a scheduling`{.action} button on th
 |Option|Description|   
 |---|---|   
 |Command to be executed|Define the path to the file containing your script. Example: www/jobs/cron.php|   
-|Language|Select the PHP version the script is using or choose "Other".|
+|Language|Select the PHP version the script is using.|
 |Activation|Choose whether the task will be active after creation or activated later.| 
 |Logs by email|If necessary, select a contact (admin or technical) to whom a report will be sent in case of an execution error. You can also provide an alternative email address.| 
 |Description|Enter a description to keep track of what your tasks do.| 

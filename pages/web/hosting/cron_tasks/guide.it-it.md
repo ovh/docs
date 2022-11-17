@@ -50,7 +50,7 @@ Per creare un task CRON, clicca sul pulsante `Aggiungi una pianificazione`{.acti
 |Opzione|Descrizione|   
 |---|---|   
 |Ordine da eseguire|Definisci il percorso per accedere al file che contiene il tuo script. Esempio: www/jobs/cron.php|   
-|Lingua|Seleziona la versione PHP utilizzata dallo script o scegli "Altro".|
+|Lingua|Seleziona la versione PHP utilizzata dallo script.|
 |Attivazione|Scegli se attivare il task dopo la sua creazione o attivarlo successivamente.| 
 |Log via email|Se necessario, seleziona un contatto (amministratore o tecnico) al quale verrà inviato un report in caso di errore di esecuzione. Puoi anche fornire un altro indirizzo email.| 
 |Descrizione|Inserisci una descrizione per seguire l'esecuzione dei tuoi compiti.| 
