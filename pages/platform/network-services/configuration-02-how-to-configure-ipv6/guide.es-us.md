@@ -10,7 +10,7 @@ order: 02
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 22/07/2022**
+**Última actualización: 15/11/2022**
 
 ## Objetivo
 El protocolo de internet versión 6 (IPv6), la última versión del protocolo de internet (IP), está diseñado para resolver el agotamiento de las direcciones IPv4 utilizando direcciones compuestas por 128 bits en vez de los 32 bits de las direcciones IPv4.
@@ -21,9 +21,9 @@ Por defecto solo está configurada la IPv4.
 
 **Esta guía explica cómo configurar una dirección IPv6 en una instancia de Public Cloud.**
 
-> [!warning]
->
-> Tenga en cuenta que en las versiones recientes de los sistemas operativos Linux, la dirección IPv6 está configurada por defecto en las instancias de Public Cloud. Asegúrese de comprobar el archivo de configuración de su sistema operativo antes de realizar cualquier cambio.
+> [!primary]
+> 
+> Actualmente las opciones Floating IP y Gateway no permiten la IPv6. La IPv6 solo puede utilizarse con las instancias en [modo público](https://docs.ovh.com/us/es/publiccloud/network-services/networking-concepts/#publicmode).
 >
 
 ## Requisitos
@@ -34,6 +34,11 @@ Por defecto solo está configurada la IPv4.
 * Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
+
+> [!warning]
+>
+> Tenga en cuenta que en las versiones recientes de los sistemas operativos Linux, la dirección IPv6 está configurada por defecto en las instancias de Public Cloud. Asegúrese de comprobar el archivo de configuración de su sistema operativo antes de realizar cualquier cambio.
+>
 
 ### Léxico
 
