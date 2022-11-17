@@ -117,7 +117,7 @@ Un fichier `mapage.md` est alors créé à la racine du répertoire `/pages
 
 ![Installation Cecil](images/static_website_installation_cecil%5B5%5D.png)
 
-#### Gérérer les fichiers statiques
+#### Générer les fichiers statiques
 
 Toujours à la racine, tapez la commande :
 
@@ -174,6 +174,16 @@ Vous pouvez maintenant éditer les fichiers dans votre I.D.E. :
 
 Il vous suffit de renvoyer vos fichiers modifiés ou vos nouveaux fichiers sur votre serveur et de rebuilder pour avoir vos pages en ligne.
 
+#### Ajout la page générée au menu de votre site
+
+Pour ajouter cette nouvelle page dans le menu du site, vous devez modifier manuellement l'en-tête du fichier `.md` en rajoutant la ligne :
+
+```sh
+menu: main
+```
+
+![Add menu](images/static_website_installation_cecil%5B13%5D.png)
+
 ### Utiliser une API
 
 Chaque fichier créée avec le générateur de pages statiques peut contenu du code lui permettant de faire appel à une API pour récupérer des données dynamiques. Dans l'exemple suivant, nous allons créer une page nous permettant d'afficher des données météorologiques.
@@ -200,7 +210,7 @@ php cecil.phar build
 
 Vérifiez la visibilité de votre page sur votre navigateur en ajoutant `/meteo` à l'URL de votre site web :
 
-![Visualisation nouvelle page créée](images/static_website_installation_cecil%5B13%5D.png)
+![Visualisation nouvelle page créée](images/static_website_installation_cecil%5B14%5D.png)
 
 #### Choisir une API
 
@@ -209,7 +219,7 @@ Créez un compte : https://home.openweathermap.org/users/sign_up
 
 Une fois votre compte validé (par envoi d'un mail de confirmation), allez sur le menu « My API keys ». Une clé a été générée par défaut, nous allons l'utiliser pour la suite.
 
-![Open Weather API key](images/static_website_installation_cecil%5B14%5D.png)
+![Open Weather API key](images/static_website_installation_cecil%5B15%5D.png)
 
 #### Préparer la page web
 
@@ -226,6 +236,7 @@ Dans ce fichier, ajoutez la partie HTML de la page qui va permetter d'afficher l
 title: "Meteo"
 date: 2022-11-16
 published: true
+menu: main
 ---
 <h1>Météo</h1>
 <div>
@@ -245,11 +256,11 @@ ls -la layouts
 
 Le fichier contient un répertoire `blog` et un fichier `index.html.twig` :
 
-![Cecil layouts directory](images/static_website_installation_cecil%5B15%5D.png)
+![Cecil layouts directory](images/static_website_installation_cecil%5B16%5D.png)
 
 Ouvrez le fichier `index.html.twig` :
 
-![Cecil layouts index file](images/static_website_installation_cecil%5B16%5D.png)
+![Cecil layouts index file](images/static_website_installation_cecil%5B17%5D.png)
 
 Le fichier fait référence à un template qui n'est pas présent dans le répertoire. Ce fichier (et d'autres) sont en fait dans le fichier `cecil.phar`. Les extensions `.phar` désigne des archives de fichiers PHP qui sont manipulables sans être décompressés.
 Décompressez les fichiers de cette archive pour les rendre visibles :
@@ -260,7 +271,7 @@ php cecil.phar util:extract
 
 Affichez à nouveau le contenu du répertoire `layouts` :
 
-![Cecil layouts full directory](images/static_website_installation_cecil%5B17%5D.png)
+![Cecil layouts full directory](images/static_website_installation_cecil%5B18%5D.png)
 
 Nous allons modifier le template par défaut pour insérer une balise `<script>` qui contiendra le code permettant l'appel à l'API :
 
@@ -339,13 +350,13 @@ function getTemperature(city) {
 
 Vous pouvez aller sur votre navigateur :
 
-![Web page with JavaScript running](images/static_website_installation_cecil%5B18%5D.png)
+![Web page with JavaScript running](images/static_website_installation_cecil%5B19%5D.png)
 
 Cliquez sur "Changez de ville" et saisissez le nom d'une commune :
 
-![Select a new city](images/static_website_installation_cecil%5B19%5D.png)
+![Select a new city](images/static_website_installation_cecil%5B20%5D.png)
 
-![Page updated](images/static_website_installation_cecil%5B20%5D.png)
+![Page updated](images/static_website_installation_cecil%5B21%5D.png)
 
 ## Aller plus loin
 
