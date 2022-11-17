@@ -6,6 +6,10 @@ section: 'Diagnostyka Exchange'
 order: 2
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
 **Ostatnia aktualizacja z dnia 08-02-2022**
  
 ## Wprowadzenie
@@ -17,14 +21,14 @@ Wykreśliłeś przez przypadek jeden lub kilka elementów (e-mail, kontakt, spot
 ## Wymagania początkowe
  
 - Posiadanie rozwiązania poczty elektronicznej OVHcloud:
-    - **MX Plan** (tylko [nowa](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/) wersja) proponowany w naszej [ofercie hostingu www](https://www.ovhcloud.com/pl/web-hosting/) zawartej w darmowym [hostingu Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) 
+    - **MX Plan** ([tylko nowa wersja](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)) proponowany w naszej [ofercie hostingu www](https://www.ovhcloud.com/pl/web-hosting/) zawartej w darmowym [hostingu Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
     - lub [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
-    - lub [**E-mail Pro**](https://www.ovhcloud.com/pl/emails/email-pro/).
+    - lub [**E-mail Pro**](https://www.ovhcloud.com/pl/emails/email-pro/)
 - Dane do logowania do odpowiedniego konta e-mail
 
 ## W praktyce
 
-### Retencja 
+### Retencja
 
 Retencja usuniętych elementów (pusty koszyk) jest dostępna przez 14 dni w przypadku:
 
@@ -50,13 +54,13 @@ Zaloguj się na odpowiedni adres e-mail poprzez Webmail (OWA): <https://www.ovhc
 >
 > W przypadku ofert typu **Private Exchange** link do interfejsu Webmail znajduje się w ramce **Logowanie** w zakładce `Informacje ogólne`{.action} na Twojej platformie.
 
-Po zalogowaniu kliknij `Elementy usunięte`{.action} w kolumnie po lewej stronie, a następnie `Pobierz usunięte`{.action} elementy w górnej części kolumny środkowej.
+Po zalogowaniu kliknij `Elementy usunięte`{.action} w kolumnie po lewej stronie, a następnie `Pobierz usunięte elementy`{.action} w górnej części kolumny środkowej.
 
 ![emails](images/3582.png){.thumbnail}
 
 Pojawi się dodatkowe okno. Możliwe, że Twoja przeglądarka internetowa blokuje domyślnie pojawianie się okna typu *pop-up*, więc upewnij się, że zezwala na nie.
 
-Możesz wybrać kilka elementów, utrzymując przycisk `Ctrl` (lub `zamów`) na klawiaturze, a następnie klikając na wybrane elementy.
+Możesz wybrać kilka elementów, utrzymując przycisk `Ctrl` (lub `command`) na klawiaturze, a następnie klikając na wybrane elementy.
 
 ![emails](images/3584.png){.thumbnail}
 

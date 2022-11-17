@@ -6,6 +6,10 @@ section: Troubleshooting
 order: 2
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
 **Letzte Aktualisierung am 08.02.2022**
  
 ## Ziel
@@ -17,14 +21,14 @@ Sie haben versehentlich ein oder mehrere Elemente (E-Mail, Kontakt, Kalender) ge
 ## Voraussetzungen
  
 - Sie verfügen über eine OVHcloud E-Mail-Lösung:
-    - **MX Plan** ([nur neue Version](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/)), bei unseren [Webhosting-Angeboten](https://www.ovhcloud.com/de/web-hosting/) inklusive bei einem kostenlosen [Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/) 
+    - **MX Plan** ([nur neue Version](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/)), bei unseren [Webhosting-Angeboten](https://www.ovhcloud.com/de/web-hosting/) inklusive bei einem kostenlosen [Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/)
     - oder [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/)
-    - oder [**E-Mail Pro**](https://www.ovhcloud.com/de/emails/email-pro/).
-- Sie kennen die Verbindungsdaten der betreffenden E-Mail-Adresse.
+    - oder [**E-Mail Pro**](https://www.ovhcloud.com/de/emails/email-pro/)
+- Sie kennen die Verbindungsdaten der betreffenden E-Mail-Adresse
 
 ## In der praktischen Anwendung
 
-### Vorhaltezeit 
+### Vorhaltezeit
 
 Die Aufbewahrung der gelöschten Elemente (leerer Spam) ist für 14 Tage für folgende Elemente verfügbar:
 
@@ -50,17 +54,17 @@ Loggen Sie sich via Webmail (OWA) mit der entsprechenden E-Mail-Adresse ein: <ht
 >
 > Bei Private **Exchange** Angeboten befindet sich der Webmail-Login im Rahmen **Verbindung** des Tab `Allgemeine Informationen`{.action} auf Ihrer Plattform.
 
-Wenn Sie eingeloggt sind, `klicken Sie`{.action} in der linken Spalte auf Gelöschte Elemente` und dann auf `{.action}Die gelöschten Elemente im oberen Teil der mittleren Spaltewiederherstellen.
+Klicken Sie nach dem Login in der linken Spalte auf `Gelöschte Elemente`{.action} und anschließend auf `Gelöschte Elemente wiederherstellen`{.action} im oberen Teil der zentralen Spalte.
 
-![E-Mails](images/3582.png){.thumbnail}
+![emails](images/3582.png){.thumbnail}
 
-Ein zusätzliches Fenster erscheint. Möglicherweise blockiert Ihr Browser standardmäßig das Auftauchen von Pop-*Up*-Fenstern. Stellen Sie sicher, dass er diese erlaubt.
+Ein zusätzliches Fenster erscheint. Möglicherweise blockiert Ihr Browser standardmäßig das Auftauchen von *Pop-Up*-Fenstern. Stellen Sie sicher, dass er diese erlaubt.
 
 Sie können mehrere Elemente auswählen, indem Sie die `Ctrl` (oder `command`) Taste Ihrer Tastatur beibehalten und auf die gewünschten Elemente klicken.
 
-![E-Mails](images/3584.png){.thumbnail}
+![emails](images/3584.png){.thumbnail}
 
-Bestätigen Sie anschließend Ihre Wiederherstellung, indem Sie auf `Abruf klicken`{.action}.
+Bestätigen Sie anschließend Ihre Wiederherstellung, indem Sie auf `Abruf`{.action} klicken.
 
 > [!primary]
 >

@@ -17,14 +17,14 @@ You have mistakenly deleted one or more items (email, contact, calendar appointm
 ## Requirements
  
 - an OVHcloud email solution
-    - **MX Plan** ([new version only](https://docs.ovh.com/gb/en/emails/web_hosting_an_overview_of_ovh_email/)) available as part of our web[ hosting ](https://www.ovhcloud.com/en-gb/web-hosting/)plans, included in a free Start10M [hosting package](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/) 
+    - **MX Plan** ([new version only](https://docs.ovh.com/gb/en/emails/web_hosting_an_overview_of_ovh_email/)) available as part of our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/), included in a [free Start10M hosting package](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
     - or [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
-    - or [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/).
+    - or [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/)
 - the login details for the email address concerned
 
 ## Instructions
 
-### Retention 
+### Retention
 
 Deleted item retention (emptied bin) is available for 14 days for the following items:
 

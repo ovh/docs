@@ -6,6 +6,10 @@ section: 'Diagnóstico Exchange'
 order: 2
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 08/02/2022**
  
 ## Objetivo
@@ -19,12 +23,12 @@ Eliminou por erro um ou vários elementos (e-mail, contacto, calendário) e esva
 - Ter uma solução de e-mail OVHcloud:
     - **MX Plan** ([nova versão apenas](https://docs.ovh.com/pt/emails/partilhado_generalidades_e-mail_partilhado_ovh/)) proposto entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluído num [alojamento Start10M gratuito](https://www.ovhcloud.com/pt/domains/free-web-hosting/) 
     - ou [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/)
-    - ou [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/).
-- Conhecer os dados de acesso do endereço de e-mail em questão.
+    - ou [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/)
+- Conhecer os dados de acesso do endereço de e-mail em questão
 
 ## Instruções
 
-### A retenção 
+### A retenção
 
 A retenção dos elementos eliminados (lixeira esvaziada) está disponível durante 14 dias para os seguintes elementos:
 
@@ -56,7 +60,7 @@ Uma vez ligado, clique em `Elementos suprimidos`{.action} na coluna da esquerda 
 
 Surgirá uma nova janela. É possível que o seu navegador bloqueie por predefinição o aparecimento das janelas do tipo *pop-up*, por isso certifique-se de que autoriza estas últimas.
 
-Pode selecionar vários elementos mantendo a tecla `Ctrl` (ou `encomenda`) do seu teclado e clicando nos elementos pretendidos.
+Pode selecionar vários elementos mantendo a tecla `Ctrl` (ou `command`) do seu teclado e clicando nos elementos pretendidos.
 
 ![emails](images/3584.png){.thumbnail}
 

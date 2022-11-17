@@ -6,6 +6,10 @@ section: 'Diagnostica Exchange'
 order: 2
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 **Ultimo aggiornamento: 08/02/2022**
  
 ## Obiettivo
@@ -17,14 +21,14 @@ Hai eliminato per errore uno o più elementi (email, contatti, appuntamento con 
 ## Prerequisiti
  
 - Disporre di una soluzione email OVHcloud
-    - **MX Plan** (solo[ nuova versione) proposto tra le nostre ](https://docs.ovh.com/it/emails/informazioni-generali-email-condivise/)offerte di hosting Web[, incluso in un ](https://www.ovhcloud.com/it/web-hosting/) [hosting Start10M gratuito](https://www.ovhcloud.com/it/domains/free-web-hosting/) 
+    - **MX Plan** ([solo nuova versione](https://docs.ovh.com/it/emails/informazioni-generali-email-condivise/)) proposto tra le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/), incluso in un [hosting Start10M gratuito](https://www.ovhcloud.com/it/domains/free-web-hosting/)
     - o [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/)
-    - o [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/).
+    - o [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/)
 - Conoscere le credenziali di accesso dell'indirizzo email
 
 ## Procedura
 
-### La retention 
+### La retention
 
 La ritenzione degli elementi eliminati (cestino svuotato) è disponibile per 14 giorni per i seguenti elementi:
 
@@ -56,7 +60,7 @@ Una volta connesso, clicca sugli `Elementi eliminati`{.action} nella colonna di 
 
 Si apre una finestra aggiuntiva. È possibile che il browser blocchi di default la comparsa delle finestre di tipo *pop-up*, quindi assicurati che autorizzi queste ultime.
 
-Puoi selezionare diversi elementi mantenendo il tasto `Ctrl`(o `comando`) della tua tastiera e cliccando sugli elementi desiderati.
+Puoi selezionare diversi elementi mantenendo il tasto `Ctrl`(o `command`) della tua tastiera e cliccando sugli elementi desiderati.
 
 ![email](images/3584.png){.thumbnail}
 
