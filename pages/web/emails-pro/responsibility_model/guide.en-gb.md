@@ -3,7 +3,7 @@ title: Email Pro Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 slug: responsibility-model
 section: Getting started
-order: 3
+order: 9
 ---
 
 **Last updated 17th November 2022**
