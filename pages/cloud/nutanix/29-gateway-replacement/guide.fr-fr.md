@@ -186,15 +186,17 @@ ip a | grep -C1 DOWN
 
 Vous verrez apparaitre 3 cartes réseau avec l'état **DOWN**, reprenez la liste des adresses MAC et récupérer le nom des deux cartes privés comme dans l'exemple ci-dessous :
 
-```console
+```bash
        valid_lft forever preferred_lft forever
-3: `publiccardname2`: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
-    link/ether `gg:gg:gg:gg:gg:gg` brd gg:gg:gg:gg:gg:gg
-4: `privatecardname1': <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
-    link/ether `hh:hh:hh:hh:hh:hh` brd ff:ff:ff:ff:ff:ff
-5: 'privatecardname2`: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
-    link/ether `yy:yy:yy:yy:yy:yy` brd ff:ff:ff:ff:ff:ff
+3: "publiccardname2": <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether "gg:gg:gg:gg:gg:gg" brd gg:gg:gg:gg:gg:gg
+4: "privatecardname1": <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether "hh:hh:hh:hh:hh:hh" brd ff:ff:ff:ff:ff:ff
+5: "privatecardname2": <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether "yy:yy:yy:yy:yy:yy" brd ff:ff:ff:ff:ff:ff
 ```
+
+
 
 Maintenant nous allons modifier la configuration en modifiant le fichier de configuration `/etc/netplan/50-cloud-init.yaml`
 
