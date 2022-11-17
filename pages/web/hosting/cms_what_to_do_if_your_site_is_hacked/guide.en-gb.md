@@ -121,7 +121,7 @@ Trace the security vulnerabilities in your website and list the malicious files 
 > If you are absolutely sure that this is a malicious IP, you can block access to your hosting by following our documentation on [access restrictions via the .htaccess file](https://docs.ovh.com/gb/en/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 >
 
-## Step 4: Remove malicious elements and fix security vulnerabilities
+### Step 4: Remove malicious elements and fix security vulnerabilities
 
 For this step, there are three possible scenarios.
 
@@ -132,7 +132,7 @@ For this step, there are three possible scenarios.
 > Restoring to a pre-hack date will require an **immediate** update and an essential **security audit** to identify any security vulnerabilities.
 >
 
-### Case 1 - OVHcloud has a backup of your website (FTP storage space and database)
+#### Case 1 - OVHcloud has a backup of your website (FTP storage space and database)
 
 Depending on the date your website was hacked (less than 14 days), OVHcloud can provide you with a backup (not contractual).
 
@@ -146,7 +146,7 @@ Make the restore dates for your FTP storage space and SQL database coincide as m
 
 >[!warning]
 >
-> OVHcloud uses security robots that can detect malicious actions performed from your hosting. They will deactivate your hosting plan and notify you via email that your hosting plan has been deactivated.
+> OVHcloud has security robots that can detect malicious actions originating from your hosting. They will deactivate your hosting plan and notify you via email that your hosting plan has been deactivated.
 > In addition to this email, a "403 Forbidden" page usually appears when you try to access your website.
 >
 > If your hosting system is in the "disabled" state, the automatic restoration robots available from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) will be disabled as well.
@@ -157,7 +157,7 @@ Make the restore dates for your FTP storage space and SQL database coincide as m
 
 Your website should reappear if these actions have been performed correctly.
 
-### Case 2 - You have created your own backup before the hack
+#### Case 2 - You have created your own backup before the hack
 
 To do this, please refer to our 2 guides on the subject:
 
@@ -176,7 +176,7 @@ To do this, please refer to our 2 guides on the subject:
 
 Your website should reappear if these actions have been performed correctly.
 
-### Case 3 - No backup is available for your website
+#### Case 3 - No backup is available for your website
 
 You will need to manually delete the files and malicious code previously detected in [step 2](#step2) of this guide, then fix your website’s security vulnerabilities.
 
