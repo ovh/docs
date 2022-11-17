@@ -14,7 +14,7 @@ order: 01
   
 ## Objetivo
 
-Este tutorial tem como objetivo ajudá-lo quando verificar que o seu website foi hackeado. Encontra-se em seguida ***os 4 passos a realizar por ordem** para corrigir esta situação.
+Este tutorial tem como objetivo ajudá-lo quando verificar que o seu website foi hackeado. Encontra-se em seguida **os 4 passos a realizar por ordem** para corrigir esta situação.
 
 A pirataria pode manifestar - se de várias formas (lista não exaustiva):
 
