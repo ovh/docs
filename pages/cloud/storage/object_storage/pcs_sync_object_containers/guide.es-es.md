@@ -25,7 +25,7 @@ If you want to move your objects from one data centre to another, or even from o
 
 > [!primary]
 >
- > If your container contains objects larger than 5 GB, your two containers must have the same name. In addition, the synchronisation configuration must also be applied to the container that contains the segments.
+> If your container contains objects larger than 5 GB, your two containers must have the same name. In addition, the synchronisation configuration must also be applied to the container that contains the segments.
 >
 
 ### Configuring the sync
