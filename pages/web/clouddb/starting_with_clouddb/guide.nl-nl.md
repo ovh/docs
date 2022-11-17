@@ -40,7 +40,7 @@ U kunt hier de belangrijke informatie van uw SQL-instance raadplegen. Wij nodige
 |RAM|Toont het RAM-geheugen dat beschikbaar is voor uw instance, wordt ook weergegeven als u de RAM-limiet bijna overschrijdt. Uw CloudDB-instance beschikt over dedicated, gegarandeerde resources: zijn RAM-geheugen. Indien nodig kunt u het geheugen uitbreiden en worden gewaarschuwd als u het hele geheugen van uw instance gebruikt.|
 |Infrastructuur|Toont de infrastructuur die door uw instance wordt gebruikt. Deze informatie is kenmerkend aan de OVH-infrastructuur.|
 |Datacenter|Toont het datacenter waarin de instance is gecreëerd.|
-|Host|Toont de server waarop de instance is gecreëerd.  Deze informatie is kenmerkend aan OVH‘s infrastructuur en kan worden gebruikt in onze communicatie omtrent [OVH-incidenten](http://travaux.ovh.net/){.external}.|
+|Host|Toont de server waarop de instance is gecreëerd.  Deze informatie is kenmerkend aan OVH‘s infrastructuur en kan worden gebruikt in onze communicatie omtrent [OVH-incidenten](https://www.status-ovhcloud.com/){.external}.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}
 
