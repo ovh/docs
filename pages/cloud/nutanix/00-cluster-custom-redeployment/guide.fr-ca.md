@@ -26,7 +26,7 @@ Découvrez comment reconditionner un Cluster avec des paramètres réseau person
 
 
 > [!warning]
-> Si vous avez souscrit à **l'offre Nutanix on OVHcloud BYOL** et que vous avez activé des licences sur votre cluster il faut désinstaller vos licences avant de lancer le redéploiement. Vous pouvez vous aidez de ce guide pour gérer vos licences [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/ca/fr/nutanix/activate-license-on-nutanix-byol/)
+> Si vous avez souscrit à **l'offre Nutanix on OVHcloud BYOL** et que vous avez activé des licences sur votre cluster, vous devez désinstaller vos licences avant de lancer le redéploiement. Vous pouvez vous aider de ce guide pour gérer vos licences :[Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/ca/fr/nutanix/activate-license-on-nutanix-byol/)
 >
 
 ## Présentation de l'utilisation du réseau privé pour un Cluster Nutanix chez OVHcloud
