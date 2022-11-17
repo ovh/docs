@@ -154,8 +154,6 @@ phpinfo();
 
 Connectez-vous à votre base de données en suivant **l'étape 3** de notre guide sur la [création d'une base de données mutualisée](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
-Si vous utilisez une base de données sur une offre **CloudDB**, consultez notre guide sur [la connexion à votre base de données présente sur une offre Cloud DB](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
-
 Si la connexion est réussie, vous arrivez sur l'interface suivante :
 
 ![PHPMyAdmin](images/pma.png){.thumbnail}
@@ -298,8 +296,8 @@ Vous pouvez envisager une [offre d'hébergement mutualisée](https://www.ovhclou
 
 ## Aller plus loin <a name="go-further"></a>
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, consultez nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
