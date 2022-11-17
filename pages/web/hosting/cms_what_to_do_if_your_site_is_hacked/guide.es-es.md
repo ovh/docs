@@ -113,7 +113,7 @@ Identifique la dirección IP que ha realizado la solicitud maliciosa. A continua
 > [!primary]
 >
 > Generalmente, varias direcciones IP maliciosas denominan, durante el mismo período, los scripts maliciosos presentes como consecuencia de la piratería.
-> Analice todos los logs de su alojamiento.
+> An [OVHcloud web hosting plan]alice todos los logs de su alojamiento.
 >
 
 Suba los fallos de seguridad en su sitio web y, al mismo tiempo, enumere los archivos maliciosos que encontrará.
