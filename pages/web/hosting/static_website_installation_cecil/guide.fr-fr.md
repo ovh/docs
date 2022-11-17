@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 
 ---
 
-**Dernière mise à jour le 15/11/2022**
+**Dernière mise à jour le 16/11/2022**
 
 ## Objectif
 
@@ -224,7 +224,7 @@ Dans ce fichier, ajoutez la partie HTML de la page qui va permetter d'afficher l
 ```html
 ---
 title: "Meteo"
-date: 2022-11-14
+date: 2022-11-16
 published: true
 ---
 <h1>Météo</h1>
@@ -233,7 +233,6 @@ published: true
     <div id="temperature"><span id="temperatureValue"></span> °C</div>
     <div id="modify">Changer de ville</div>
 </div>
-<script src="script.js"></script>
 ```
 
 #### Modifier les templates
@@ -262,6 +261,69 @@ php cecil.phar util:extract
 Affichez à nouveau le contenu du répertoire `layouts` :
 
 ![Cecil layouts full directory](images/static_website_installation_cecil%5B17%5D.png)
+
+Nous allons modifier le template par défaut pour insérer une balise `<script>` qui contiendra le code permettant l'appel à l'API :
+
+```sh
+nano layouts/_default/page.html.twig
+```
+
+Cette balise et son contenu sont à placer avant la balise fermante `</body>` en page de page :
+
+```twig
+    </footer>
+    {%- include 'partials/googleanalytics.js.twig' with {site} only ~%}
+    {% block javascript %}
+    <script src="{{ asset('script.js', {minify: true}) }}"></script>
+    {% endblock %}
+  </body>
+</html>
+```
+
+#### Fichier JavaScript
+
+Les fichiers JavaScript, comme les fichiers CSS, sont à mettre dans le répertoire `assets`. Libre à vous de les organiser dans différents répertoires.
+
+Nous allons créer le fichier `script.js` mentionné précédemment à la racinte de ce répertoire `assets` :
+
+```sh
+nano assets/script.js
+```
+
+Pensez à remplacer la valeur de la variable `apiKey` par la clé que vous aurez récupérée sur le site 
+
+```javascript
+let apiKey = '123456789'; // Remplacez cette valeur
+let city = 'Roubaix'; // Indiquez ici la ville par défaut qui sera affichée sur la page météo
+getTemperature(city);
+
+let button = document.querySelector('#modify');
+button.addEventListener('click', () => {
+    city = prompt('Choose a city');
+    getTemperature(city);
+});
+
+function getTemperature(city) {
+    let url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey + '&units=metric';
+    let xhrQuery = new XMLHttpRequest();
+    xhrQuery.open('GET', url);
+    xhrQuery.responseType = 'json';
+    xhrQuery.send();
+
+    xhrQuery.onload = function() {
+        if (xhrQuery.readyState === XMLHttpRequest.DONE) {
+            if (xhrQuery.status === 200) {
+                let city = xhrQuery.response.name;
+                let temperature = xhrQuery.response.main.temp;
+                document.querySelector('#city').textContent = city;
+                document.querySelector('#temperatureValue').textContent = temperature;
+            } else {
+                alert('A problem has occurred, please come try later.');
+            }
+        }
+    };
+}
+```
 
 ## Aller plus loin
 
