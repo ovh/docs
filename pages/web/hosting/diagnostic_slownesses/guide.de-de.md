@@ -2,12 +2,12 @@
 title: "Meine Website ist langsam. Was soll ich tun?" 
 excerpt: "Ermitteln Sie den Ursprung der Langsamkeit Ihrer Website und erfahren Sie, wie Sie diese Situation lösen"
 slug: slow-website-fix
-Abschnitt: Diagnose
+section: Diagnose
 order: 01
 ---
 
 **Letzte Aktualisierung am 17.11.2022**
-
+ 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >

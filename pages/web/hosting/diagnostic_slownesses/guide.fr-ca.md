@@ -7,7 +7,7 @@ order: 01
 ---
 
 **Dernière mise à jour le 10/11/2022**
-
+ 
 ## Objectif
 
 Un ralentissement sur votre site résulte d'un chargement excessivement long pour afficher l'ensemble ou certaines parties de votre site. 
