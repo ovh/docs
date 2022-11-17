@@ -35,7 +35,7 @@ order: 12
 >
 > Lorsque le cluster Nutanix est commandé avec l'offre BYOL, le cluster est livré avec une version d'essai de 90 jours. Vous devez donc, en tant que client, installer vos licences pendant cette période.
 >
-> Si l'on souhaite redéployer un cluster avec l'offre BYOL, il faut au préalable avoir désinstallé les licences sur le cluster avant de lancer un redéploiement. Ce guide explique comme ajouter ou supprimer des licences.
+> Si vous souhaitez redéployer un cluster avec l'offre BYOL, vous devez au préalable avoir désinstallé les licences sur le cluster avant de lancer un redéploiement. Ce guide explique comme ajouter ou supprimer des licences.
 >
 
 

@@ -31,9 +31,9 @@ order: 12
 
 > [!warning]
 >
-> Within Nutanix on OVHcloud portfolio, OVHcloud proposes you the BYOL (Bring Your Own Licence) offer, which means that you, as an OVHcloud customer, must provide the Nutanix Cloud Platform licences on your cluster.
+> Within the Nutanix on OVHcloud portfolio, OVHcloud offers the BYOL (Bring Your Own Licence) solution, which means that you, as an OVHcloud customer, must provide the Nutanix Cloud Platform licences on your cluster.
 >
-> When the Nutanix cluster is ordered in BYOL offer, the cluster is delivered with a 90-day trial licence. As a customer, you must register your Nutanix Cloud Platform licences on your cluster during this period.
+> When the Nutanix cluster is ordered within the BYOL offer, the cluster is delivered with a 90-day trial licence. As a customer, you must register your Nutanix Cloud Platform licences on your cluster during this period.
 >
 > If you want to redeploy a cluster with the BYOL offer, you must first uninstall the licences on the cluster before launching a redeployment. This guide explains how to add or remove licences.
 >
