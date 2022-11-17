@@ -6,7 +6,7 @@ section: 'Diagnostic'
 order: 02
 ---
 
-**Dernière mise à jour le 14/11/2022**
+**Dernière mise à jour le 17/11/2022**
 
 ## Objectif
 
@@ -137,10 +137,11 @@ En effet, le logiciel de messagerie aura pour rôle de convertir vos e-mails en 
 
 Vous trouverez ci-dessous, une liste non-exhaustive des guides de configuration pour les clients de messagerie sur ordinateur, en fonction de l'offre que vous possédez :
 
-Vous trouverez ci-dessous une liste non-exhaustive des guides de configuration pour les clients de messagerie utilisant :
+Vous trouverez ci-dessous une liste non-exhaustive des guides de configuration pour les clients de messagerie utilisant:
+
 - le protocole IMAP sur les offres **MXplan** et **E-mail Pro** ;
 - le protocole MAPI sur l'offre **Exchange** pour Outlook Windows ;
-- le protocol EWS sur l'offre **Exchange** pour Outlook macOS.
+- le protocole EWS sur l'offre **Exchange** pour Outlook macOS.
 
 > [!tabs]
 > **Emails (MXplan)**
