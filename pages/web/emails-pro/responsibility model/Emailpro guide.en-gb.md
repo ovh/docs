@@ -1,16 +1,16 @@
 ---
-title: Responsibility model for Email pro service
+title: Email Pro Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 slug: responsibility-model
-section: Get Started
+section: Getting started
 order: 3
 ---
 
-**Last updated November 17th, 2022**
+**Last updated 17th November 2022**
 
-The Email pro service is a Microsoft Exchange email solution hosted in Europe, based on a shared infrastructure with 10BG storage capacity.
+The Email Pro service is a Microsoft Exchange email solution hosted in Europe, based on a shared infrastructure with 10BG storage capacity.
 
-The RACI below details shared responsibilities between OVHcloud and the customer for Email pro service.
+The RACI below details shared responsibilities between OVHcloud and the customer for Email Pro service.
 This shared model can help relieve the customer’s operational burden.
 
 ## RACI definition
@@ -172,6 +172,6 @@ This shared model can help relieve the customer’s operational burden.
 
 ## Go further
 
-[All our Microsoft collaborative solutions documentation](../)
+[All our Email Pro documentation](../)
 
 Join our community of users on <https://community.ovh.com/en/>.
