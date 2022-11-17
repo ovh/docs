@@ -152,7 +152,7 @@ echo 'bonding' | tee -a /etc/modules
  
 # Disable cloud-init networking
 touch /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-echo "network: {config: disabled}">> /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+echo "network: {config: disabled}">> /etc/cloud/cloud.cfg.d/99-disabl"ii:ii:yy:yy:yy:yy""e-network-config.cfg
  
 # Enable forwarding
 sed -i s/#net.ipv4.ip_forward/net.ipv4.ip_forward/g /etc/sysctl.conf
@@ -184,21 +184,46 @@ Saisissez cette commande pour faire apparaitre les cartes qui ne sont pas connec
 ip a | grep -C1 DOWN
 ```
 
-Vous verrez apparaitre 3 cartes réseau avec l'état **DOWN**, reprenez la liste des adresses MAC et récupérer le nom des deux cartes privés comme dans l'exemple ci-dessous :
+Vous verrez apparaitre 3 cartes réseau avec l'état **DOWN**, reprenez la liste des adresses MAC et récupérer le nom des deux cartes privées comme dans l'exemple ci-dessous :
 
 ```bash
-       valid_lft forever preferred_lft forever
 3: "publiccardname2": <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
-    link/ether "gg:gg:gg:gg:gg:gg" brd gg:gg:gg:gg:gg:gg
+    link/ether "mac-address-public-card2" brd gg:gg:gg:gg:gg:gg
 4: "privatecardname1": <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
-    link/ether "hh:hh:hh:hh:hh:hh" brd ff:ff:ff:ff:ff:ff
+    link/ether "mac-address-private-card1" brd ff:ff:ff:ff:ff:ff
 5: "privatecardname2": <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
-    link/ether "yy:yy:yy:yy:yy:yy" brd ff:ff:ff:ff:ff:ff
+    link/ether "mac-address-private-card1" brd ff:ff:ff:ff:ff:ff
 ```
 
+lancer cette commande 
+
+```bash
+ip a | grep -C1 UP
+```
+
+Vous verrez apparaitre 2 cartes avec l'état **UP**, la carte loopback et une carte physique dont l'adresse MAC doit correspondre à une des adresses publiques notés dans l'espace client OVHcloud. récuperer le nom de cette carte privé 
 
 
-Maintenant nous allons modifier la configuration en modifiant le fichier de configuration `/etc/netplan/50-cloud-init.yaml`
+```bash
+1: "lo": <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+--
+       valid_lft forever preferred_lft forever
+2: "publiccardname1": <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether "mac-address-public-card1" brd ff:ff:ff:ff:ff:ff
+```
+
+En s'appuyant sur les informations recueillies, nous allons editer le fichier `/etc/netplan/50-cloud-init.yaml` et remplacer les noms des cartes et des adresses MAC comme ceci :
+
+
+* "publiccardname1" : Le nom de la première carte publique 
+* "mac-address-public-card1" : L'addresse MAC de la première carte réseau publique
+
+* "privatecardname1" : le nom de la première carte réseau privée
+* "mac-address-private-card1" : L'addresse MAC de la première carte réseau privé
+
+* "privatecardname2" : le nom de la deuxième carte réseau privée
+* "mac-address-private-card2" : L'addresse MAC de la deuxième carte réseau privé
 
 ```yaml
 # This file is generated from information provided by the datasource.  Changes
@@ -209,32 +234,32 @@ Maintenant nous allons modifier la configuration en modifiant le fichier de conf
 network:
     version: 2
     ethernets:
-        < interface name public network 1>:
+       "publiccardname1":
             accept-ra: false
             addresses:
             - 2001:41d0:20b:4500::/56
             dhcp4: true
             gateway6: fe80::1
             match:
-                macaddress: < mac address interface public network 1>
+                macaddress: "mac-address-public-card1"
             nameservers:
                 addresses:
                 - 2001:41d0:3:163::1
-            set-name: < interface name public network 1>
+            set-name: "publiccardname1"
         #vRack interface
-        < interface name private network 1>:
+        "privatecardname1":
             match:
-                macaddress: < mac address interface private network 1>
+                macaddress: "mac-address-private-card1"
             optional: true
-        < interface name private network 2>:
+        "privatecardname2":
             match:
-                macaddress: 0c:42:a1:a7:31:83
+                macaddress: "mac-address-private-card2"
             optional: true
     bonds:
         bond0:
             dhcp4: no
             addresses: [192.168.254.2/24]
-            interfaces: [< interface name private network 1>,< interface name private network 2>]
+            interfaces: ["privatecardname1","privatecardname2"]
             parameters:
                 mode: 802.3ad
                 transmit-hash-policy: layer3+4
@@ -254,7 +279,16 @@ network:
             link: bond0
 ```
 
+Exécutez ces commandes pour appliquer la configuration :
 
+```bash
+# Apply network configuration
+sudo netplan apply
+# Reboot server
+sudo reboot
+```
+
+La passerelle est disponible pour le Cluster Nutanix pour le VLAN1 et le VLAN2.
 
 
 ## Aller plus loin <a name="gofurther"></a>
