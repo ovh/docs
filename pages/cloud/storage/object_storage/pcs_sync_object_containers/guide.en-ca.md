@@ -5,7 +5,7 @@ section: OpenStack Swift Storage Class Specifics
 order: 060
 ---
 
-**Last updated 27th October 2021**
+**Last updated 16 November 2022**
 
 ## Objective
 
@@ -23,7 +23,7 @@ If you want to move your objects from one data centre to another, or even from o
 
 > [!primary]
 >
-> If your container contains objects larger than 5 GB, your two containers must have the same name.
+ > If your container contains objects larger than 5 GB, your two containers must have the same name. In addition, the synchronisation configuration must also be applied to the container that contains the segments.
 >
 
 ### Configuring the sync

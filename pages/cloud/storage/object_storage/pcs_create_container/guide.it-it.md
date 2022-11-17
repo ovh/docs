@@ -21,7 +21,7 @@ L'offerta Object Storage Public Cloud propone una soluzione di storage illimitat
 - per l'hosting pubblico (per archiviare tutto ciò che è accessibile al pubblico);
 - per l'archiviazione a freddo (archiviazione).
 
-Il primo step è la creazione di un container che raggrupperà i tuoi file. 
+Il primo step è la creazione di un container che raggrupperà i tuoi file.
 
 **Questa guida ti mostra come crearlo dallo Spazio Cliente OVHcloud e dall'interfaccia Horizon d'Openstack.**
 
@@ -65,11 +65,11 @@ Assegna un nome al container e clicca su `Aggiungi il container`{.action}:
 
 > [!warning]
 >
-> Per collegare il container a un dominio, il nome del container di dati non deve contenere questi caratteri: 
+> Per collegare il container a un dominio, il nome del container di dati non deve contenere questi caratteri:
 >
-> - [ . ] 
-> - [ _ ]
-> - e non dovete utilizzare maiuscole.
+> - [ . ]  
+> - [ _ ]  
+> - e non dovete utilizzare maiuscole.  
 >
 > Per maggiori informazioni, consulta la guida [Associare un container a un dominio](https://docs.ovh.com/it/storage/configura_un_dominio_su_un_container_del_tuo_object_storage/).
 >
@@ -97,16 +97,16 @@ Sviluppa il menu `Object Store`{.action}, clicca su `Containers`{.action} e poi 
 
 Assegna un nome al tuo container.
 
-  > [!warning]
-  >
-  > Per collegare il container a un dominio, il nome del container di dati non deve contenere questi caratteri:
-  >
-  > - [ . ]
-  > - [ _ ]
-  > - Non è necessario utilizzare maiuscole
-  >
-  > Per maggiori informazioni, consulta la guida [Associare un container a un dominio](https://docs.ovh.com/it/storage/configura_un_dominio_su_un_container_del_tuo_object_storage/).
-  >
+> [!warning]
+>
+> Per collegare il container a un dominio, il nome del container di dati non deve contenere questi caratteri:
+>
+> - [ . ]  
+> - [ _ ]  
+> - Non è necessario utilizzare maiuscole  
+>
+> Per maggiori informazioni, consulta la guida [Associare un container a un dominio](https://docs.ovh.com/it/storage/configura_un_dominio_su_un_container_del_tuo_object_storage/).
+>
 
 Seleziona la politica di accesso del container e clicca su `Next`{.action}
 

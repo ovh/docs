@@ -1,52 +1,50 @@
 ---
-title: Object Storage Swift - Objektcontainer synchronisieren
+title: Object Storage Swift – Synchronisieren von Objektcontainern (EN)
 slug: pcs/sync-object-containers
 section: OpenStack Swift Storage Class Specifics
 order: 060
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/pcs/sync-object-containers/'
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
->
+**Last updated 16 November 2022**
 
-**Letzte Aktualisierung am 27.10.2021**
+## Objective
 
-## Ziel
+If you want to move your objects from one data centre to another, or even from one project to another, syncing objects between containers is the best solution for avoiding service disruptions during your migration. This guide explains how you can implement this solution.
 
-Wenn Sie Ihre Objekte von einem Rechenzentrum in ein anderes oder gar von einem Projekt in ein anderes verschieben möchten, ist die Synchronisation von Objekten zwischen Containern die beste Lösung, um eine Unterbrechung des Dienstes während der Migration zu vermeiden. In dieser Anleitung erfahren Sie, wie Sie diese Lösung umsetzen.
 
-## Voraussetzungen
+## Requirements
 
-- [Umgebung für die Verwendung der OpenStack-API mit dem Swift-Client vorbereiten](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
-- [Die OpenStack Umgebungsvariablen laden](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/)
-- 2 Objektcontainer in 2 verschiedenen Rechenzentren
+- [An environment that is ready to use the OpenStack API with the Swift client](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [OpenStack environment variables set](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/)
+- Two object containers in two different data centres
 
-## In der praktischen Anwendung
+
+## Instructions
 
 > [!primary]
 >
-> Enthält Ihr Container Objekte mit einer Größe von mehr als 5 GB, müssen beide Container dendelben Namen haben.
+ > If your container contains objects larger than 5 GB, your two containers must have the same name. In addition, the synchronisation configuration must also be applied to the container that contains the segments.
 >
 
-### Synchronisationskonfiguration
+### Configuring the sync
 
-#### Erstellung des Synchronisationsschlüssels
+#### Creating a sync key
 
-Damit sich die Container authentifizieren können, muss ein Schlüssel erstellt und auf jedem Objekt-Container konfiguriert werden:
+For containers to authenticate, you will need to create a key and configure it on each object container.
 
-- Schlüssel erstellen:
-
+- Create the key:
 
 ```bash
 root@server-1:~$ sharedKey=$(openssl rand -base64 32)
 ```
 
+#### Destination container configuration
 
-#### Konfiguration des Empfänger-Containers
+First of all, you will need to configure the key on the container that will receive the data. In our case, the destination container is in BHS.
 
-Zuerst muss der Schlüssel auf dem Container konfiguriert werden, der die Daten empfängt. In diesem Fall befindet er sich in BHS.
-
-- Überprüfen Sie die geladene Region in den Umgebungsvariablen:
+- Check the region that has loaded in the environment variables:
 
 ```bash
 root@server-1:~$ env | grep OS_REGION
@@ -54,13 +52,13 @@ root@server-1:~$ env | grep OS_REGION
 OS_REGION_NAME=BHS
 ```
 
-- Konfigurieren Sie den Schlüssel im Empfänger-Container:
+- Configure the key on the destination container:
 
 ```bash
 root@server-1:~$ swift post --sync-key "$sharedKey" containerBHS
 ```
 
-- Überprüfen Sie mit dem folgenden Befehl, ob die Konfiguration korrekt ist, und ermitteln Sie dabei gleichzeitig den Inhalt der Variable "Account":
+- Next, check that the key has been successfully configured using the following command, and note down the content of the "Account" variable at the same time:
 
 ```bash
 root@server-1:~$ swift stat containerBHS
@@ -81,33 +79,33 @@ Meta Access-Control-Allow-Origin: https://www.ovh.com
                     Content-Type: text/plain; charset=utf-8
 ```
 
-- Rufen Sie die Adresse des Empfänger-Containers ab, um sie anschließend im Quell-Container zu konfigurieren (in diesem Fall: "//OVH_PUBLIC_CLOUD/Region/Account/Container").
+- Retrieve the target container’s address, then configure it on the source container (this one is: "//OVH_PUBLIC_CLOUD/Region/Account/Container").
 
 ```bash
 root@server-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/BHS/AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29/containerBHS"
 ```
 
-#### Konfiguration des Quell-Containers
+#### Source container configuration
 
-- Region in den Umgebungsvariablen ändern:
+- Change the region in the environment variables:
 
 ```bash
 root@server-1:~$ export OS_REGION_NAME=GRA
 ```
 
-- Konfigurieren des Schlüssels im Quell-Container:
+- Configure the key on the source container:
 
 ```bash
 root@server-1:~$ swift post --sync-key "$sharedKey" containerGRA
 ```
 
-- Konfigurieren Sie den Empfängercontainer im Quell-Container:
+- Configure the recipient container on the source container:
 
 ```bash
 root@server-1:~$ swift post --sync-to "$destContainer" containerGRA
 ```
 
-- Wie zuvor kann die Konfigurationen mit folgendem Befehl überprüft werden:
+- As detailed previously, you can check that it has been configured properly using the following command:
 
 ```bash
 root@server-1:~$ swift stat containerGRA
@@ -127,11 +125,13 @@ X-Storage-Policy: Policy-0
     Content-Type: text/plain; charset=utf-8
 ```
 
-#### Überprüfung der Synchronisation
 
-Nach einigen Minuten (abhängig von Anzahl und Größe der zu versendenden Dateien) kann überprüft werden, ob die Synchronisation korrekt verläuft, indem die Dateien einfach in jedem Container aufgelistet werden.
 
-- Auflisten der Dateien im Quell-Container:
+#### Checking the sync
+
+After a few minutes (depending on the number and size of the files to be sent), you can check whether the sync is successful by simply listing the files in each container.
+
+- To list the files on the source container:
 
 ```bash
 root@server-1:~$ swift list containerGRA
@@ -140,7 +140,7 @@ test2.txt
 test3.txt
 ```
 
-- Auflisten der Dateien im Empfänger-Container:
+- To list the files on the destination container:
 
 ```bash
 root@server-1:~$ swift list containerBHS
@@ -149,13 +149,13 @@ test2.txt
 test3.txt
 ```
 
-### Synchronisation zwischen zwei Containern umkehren
+### Reversing the synchronisation between two containers
 
-Um die Synchronisation zwischen zwei Containern umzukehren, muss der Metadaten-Eintrag `—sync-to` aus dem Quell-Container gelöscht und dann auf dem anderen Container deklariert werden, der so zum neuen Quell-Container wird.
+In order to reverse the synchronisation between two containers, you need to remove the `--sync-to` metadata from the source container, and redeclare it on the other container, which will then become the new source container.
 
 > [!warning]
 >
-> Vergessen Sie nicht, auch die Region in der neuen `—sync-to`-URL zu ändern.
+> Don't forget to also change the region in the new "sync-to" URL.
 >
 
 ```bash
@@ -165,9 +165,9 @@ root@server-1:~$ export OS_REGION_NAME=BHS
 root@server-1:~$ swift post --sync-to "$destContainer" containerBHS
 ```
 
-### Synchronisation zwischen zwei Containern abbrechen
+### Stop synchronisation between two containers
 
-Um die Synchronisation zwischen zwei Containern zu beenden, müssen die Metadaten `—sync-key` und `—sync-to` gelöscht werden.
+In order to stop synchronisation between two containers, you need to remove the `--sync-key` and `--sync-to` metadata:
 
 ```bash
 swift post -H "X-Container-Sync-Key:" containerGRA
@@ -176,9 +176,9 @@ swift post -H "X-Container-Sync-To:" containerGRA
 
 > [!primary]
 >
-> Diese Anleitung kann auch für die Migration von RunAbove-Objekten nach Public Cloud verwendet werden.
+> You can also use this guide for migrating RunAbove objects to the OVHcloud Public Cloud.
 >
 
-## Weiterführende Informationen
+## Go further
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>.

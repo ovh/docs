@@ -67,9 +67,9 @@ Dê um nome ao seu container e clique em `Adicionar o container`{.action}:
 >
 > Se deseja associar o seu container a um nome de domínio, o nome do seu container de dados não deve conter os seguintes caracteres:
 >
-> - [ . ]
-> - [ _ ]
-> - e não deve utilizar maiúsculas.
+> - [ . ]  
+> - [ _ ]  
+> - e não deve utilizar maiúsculas.  
 >
 > Para mais informações, consulte o nosso guia "[Associar um container a um nome de domínio](https://docs.ovh.com/gb/en/storage/pcs/link-domain/) (EN)".
 >
@@ -97,16 +97,16 @@ Desenvolva o menu `Object Store`{.action}, clique em `Containers`{.action} e dep
 
 Dê um nome ao seu container.
 
-  > [!warning]
-  >
-  > Se deseja associar o seu container a um nome de domínio, o nome do seu container de dados não deve conter os seguintes caracteres:
-  >
-  > - [ . ]
-  > - [ _ ]
-  > - E não devem usar maiúsculas.
-  >
-  > Para mais informações, consulte o nosso guia "[Associar um container a um nome de domínio](https://docs.ovh.com/gb/en/storage/pcs/link-domain/) (EN)".
-  >
+> [!warning]
+>
+> Se deseja associar o seu container a um nome de domínio, o nome do seu container de dados não deve conter os seguintes caracteres:
+>
+> - [ . ]  
+> - [ _ ]  
+> - E não devem usar maiúsculas.  
+>
+> Para mais informações, consulte o nosso guia "[Associar um container a um nome de domínio](https://docs.ovh.com/gb/en/storage/pcs/link-domain/) (EN)".
+>
 
 Selecione a política de acesso do seu container e clique em `Next`{.action}
 
