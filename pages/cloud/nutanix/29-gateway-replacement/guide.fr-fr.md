@@ -48,11 +48,13 @@ Allez dans votre espace client OVHcloud cliquez sur `Hosted Private Cloud`{.acti
 
 ![01 get nutanix vrack 01](images/01-get-nutanix-vrack01.png){.thumbnail}
 
-Toujours dans dans votre espace client OVHcloud allez sur l'onglet `Bare Metal Cloud`{.action}. Séléctionnez dans la barre de menu à gauche votre serveur dédié. Ensuite cliquez sur `Network interfaces`{.action}.
+Toujours dans dans votre espace client OVHcloud allez sur l'onglet `Bare Metal Cloud`{.action}. Sélectionnez dans la barre de menu à gauche votre serveur dédié. Ensuite cliquez sur `Network interfaces`{.action}.
+
+![02 getnetworkinformation 01](images/02-getnetworkinformation01.png){.thumbnail}
 
 En bas à droite de la page vous verrez apparaitre la liste des interfaces avecs leur **MAC address** (2 sur le réseau public, 2 sur le réseau privé). Notez ou copiez ces **MAC address** avec le réseau associé. 
 
-![02 getnetworkinformation 01](images/02-getnetworkinformation01.png){.thumbnail}
+![02 getnetworkinformation 02](images/02-getnetworkinformation02.png){.thumbnail}
 
 Au travers de l'encadrement **Bandwith** cliquez sur `Modify public bandwidth`{.action} pour changer le débit de votre réseau public.
 
