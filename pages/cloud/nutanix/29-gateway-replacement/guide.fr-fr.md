@@ -6,13 +6,13 @@ section: Réseau et sécurité
 order: 09
 ---
 
-**Dernière mise à jour le 17/11/2022**
+**Dernière mise à jour le 18/11/2022**
 
 ## Présentation
 
-Une machine virtuelle **OVHGateway** est installée lors d'une déploiement d'une solution Nutanix on BYOL, cette machine virtuelle sert de passerelle Internet Sortante pour le cluster elle a une limite de 1gb/s sur le réseau public.
+Une machine virtuelle **OVHgateway** est installée lors d'une déploiement d'une solution Nutanix, cette machine virtuelle sert de passerelle Internet Sortante pour le cluster elle a une limite de 1 gb/s sur le réseau public.
 
-Si vous avez besoin d'avoir une bande passante plus importante il faut remplacer cette passerelle par un serveur dédié et choisir une offre qui vous permettra d'aller de 1 gb/s à 10 gb/s sur le réseau public comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
+Si vous avez besoin d'avoir une bande passante plus importante il faut remplacer cette passerelle par un serveur dédié et choisir une offre qui vous permettra d'aller entre 1 gb/s à 10 gb/s sur le réseau public comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
 
 **Nous allons voir comment remplacer la passerelle par défaut par un serveur dédié OVHcloud pour augmenter la bande passante**
 
@@ -25,23 +25,24 @@ Si vous avez besoin d'avoir une bande passante plus importante il faut remplacer
 
 ## Prérequis
 
-- Disposer d'un cluster Nutanix dans votre compte OVHcloud
+- Disposer d'un cluster Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central. 
 - Disposer d'un serveur dédié qui utilise deux cartes réseaux une sur le réseau privé (vRACK) l'autre sur le réseau public.
 
 ## En pratique
 
-Nous allons déployer un serveur dédié sous Linux qui utilise 4 cartes réseaux (2 sur le réseau public, 2 sur le réseau privé)
+Nous allons déployer un serveur dédié sous Linux qui utilise 4 cartes réseaux (2 sur le réseau public, 2 sur le réseau privé) pour remplacer la machine virtuelle OVHgateway.
 
-Le réseau public utilisera une seule carte réseau et le réseau privé utilisera deux cartes réseau en équipe et remplacera l'OVHGateway comme ceci :
+Le réseau public utilisera une seule carte réseau et le réseau privé utilisera deux cartes réseau en équipe.
+
+Pour remplacer l'OVHgateway nous allons prendre utilisez ces paramètres :
 
 - Lan public en DHCP qui fournit une adresse publique.
 - Lan privé sur une équipe de deux cartes et des adresses privés manuelle sur plusieurs VLAN
-    - VLAN 172.16.3.254/22
-    - VLAN 10.22.3.254/22
+    - VLAN 1 : adresse IP privée et masque de l'OVHgateway (Dans notre exemple 172.16.3.254/22)
 
-### Récupération des informations nécessaire au déploiement de votre serveur
+### Récupération des informations nécessaires au déploiement de votre serveur
 
 Allez dans votre espace client OVHcloud cliquez sur `Hosted Private Cloud`{.action} dans la barre d'onglet sélectionnez votre cluster Nutanix à gauche et notez le nom du vRack associé à votre cluster Nutanix dans `Private network (vRack)`.
 
@@ -56,7 +57,7 @@ En bas à droite de la page vous verrez apparaitre la liste des interfaces avecs
 Au travers de l'encadrement **Bandwith** cliquez sur `Modify public bandwidth`{.action} pour changer le débit de votre réseau public.
 
 > [!warning]
-> En fonction du débit que vous souhaitez le prix de l'abonnement à votre serveur augmentera et une commande sera lancée pour valider votre choix.  
+> En fonction du débit que vous souhaitez le prix de l'abonnement à votre serveur augmentera et il faudra le valider par une commande dans votre espace client OVHcloud.
 >
 
 ![03 Change bandwitdh 01](images/03-change-bandwidth01.png){.thumbnail}
@@ -149,21 +150,21 @@ apt update && apt upgrade -y
 apt install vlan net-tools -y
 echo "8021q" >> /etc/modules
 echo 'bonding' | tee -a /etc/modules
- 
+
 # Disable cloud-init networking
 touch /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 echo "network: {config: disabled}">> /etc/cloud/cloud.cfg.d/99-disabl"ii:ii:yy:yy:yy:yy""e-network-config.cfg
- 
+
 # Enable forwarding
 sed -i s/#net.ipv4.ip_forward/net.ipv4.ip_forward/g /etc/sysctl.conf
 sysctl net.ipv4.ip_forward
- 
+
 # get public interface
 NIC=$(ip link | grep UP | awk -F: '$0 !~ "lo|vir|wl|^[^0-9]"{print $2;getline}')
- 
+
 # routing traffic to public interface
 iptables -t nat -A POSTROUTING -o ${NIC} -j MASQUERADE
- 
+
 # Saving Rules
 echo iptables-persistent iptables-persistent/autosave_v4 boolean true | debconf-set-selections
 echo iptables-persistent iptables-persistent/autosave_v6 boolean true | debconf-set-selections
@@ -216,14 +217,21 @@ Vous verrez apparaitre 2 cartes avec l'état **UP**, la carte loopback et une ca
 En s'appuyant sur les informations recueillies, nous allons editer le fichier `/etc/netplan/50-cloud-init.yaml` et remplacer les noms des cartes et des adresses MAC comme ceci :
 
 
-* "publiccardname1" : Le nom de la première carte publique 
-* "mac-address-public-card1" : L'addresse MAC de la première carte réseau publique
+* "publiccardname1" : Le nom de la première carte publique. 
+* "mac-address-public-card1" : L'addresse MAC de la première carte réseau publique.
 
-* "privatecardname1" : le nom de la première carte réseau privée
-* "mac-address-private-card1" : L'addresse MAC de la première carte réseau privé
+* "privatecardname1" : le nom de la première carte réseau privée.
+* "mac-address-private-card1" : L'addresse MAC de la première carte réseau privée.
 
-* "privatecardname2" : le nom de la deuxième carte réseau privée
-* "mac-address-private-card2" : L'addresse MAC de la deuxième carte réseau privé
+* "privatecardname2" : le nom de la deuxième carte réseau privée.
+* "mac-address-private-card2" : L'addresse MAC de la deuxième carte réseau privée
+
+
+Exécuter cette commande pour éditer le fichier
+
+```bash
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
 
 ```yaml
 # This file is generated from information provided by the datasource.  Changes
@@ -234,32 +242,32 @@ En s'appuyant sur les informations recueillies, nous allons editer le fichier `/
 network:
     version: 2
     ethernets:
-       "publiccardname1":
+        enp26s0f0np0:
             accept-ra: false
             addresses:
             - 2001:41d0:20b:4500::/56
             dhcp4: true
             gateway6: fe80::1
             match:
-                macaddress: "mac-address-public-card1"
+                macaddress: 0c:42:a1:65:d4:16
             nameservers:
                 addresses:
                 - 2001:41d0:3:163::1
-            set-name: "publiccardname1"
+            set-name: enp26s0f0np0
         #vRack interface
-        "privatecardname1":
+        enp96s0f0np0:
             match:
-                macaddress: "mac-address-private-card1"
+                macaddress: 04:3f:72:bf:13:9e
             optional: true
-        "privatecardname2":
+        enp96s0f1np1:
             match:
-                macaddress: "mac-address-private-card2"
+                macaddress: 04:3f:72:bf:13:9f
             optional: true
     bonds:
         bond0:
             dhcp4: no
             addresses: [192.168.254.2/24]
-            interfaces: ["privatecardname1","privatecardname2"]
+            interfaces: [enp96s0f0np0,enp96s0f1np1]
             parameters:
                 mode: 802.3ad
                 transmit-hash-policy: layer3+4
