@@ -79,6 +79,11 @@ Pour plus d'informations sur la gestion des bases de données, reportez-vous au 
 
 - Nous vous recommandons de consulter nos [offres d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/) pour vous assurer que le plan d'hébergement Web que vous souhaitez commander sera compatible avec vos besoins.
 
+> [!warning]
+>
+> La modification du fichier **php.ini** est indisponible sur les offres d'hébergements mutualisés. Ceci du fait que la configuration PHP est globale à l'ensemble de l'infrastructure mutualisée.
+>
+
 - Vous pouvez vérifier les détails de la configuration de votre hébergement web. Pour cela, consultez la rubrique [« Informations techniques de votre hébergement Web »](./#informations-techniques de-votre-hebergement-web) en bas de ce guide. 
 
 - Vous pourrez modifier la version PHP de votre hébergement web, soit depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ("**Configuration**"), soit en modifiant le fichier .ovhconfig. Des configurations mixtes sont également possibles avec ces dernières. Des instructions détaillées sont disponibles dans nos guides :

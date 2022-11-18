@@ -84,6 +84,11 @@ Para saber más sobre la gestión de las bases de datos, consulte la guía [Crea
 
 - Le recomendamos que consulte nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) para asegurarse de que el alojamiento web que desea contratar sea compatible con sus necesidades.
 
+> [!warning]
+>
+> La modificación del archivo **php.ini** no está disponible en los planes de hosting. Esto se debe a que la configuración PHP es global al conjunto de la infraestructura compartida.
+>
+
 - Puede verificar los detalles de la configuración de su alojamiento web. Para ello, consulte la sección [« Información técnica de su alojamiento web »](./#informacion-tecnica-de-su-alojamiento-web) al final de esta guía. 
 
 - Podrá modificar la versión PHP de su alojamiento web, o bien en [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) ("**Configuración**"), o bien modificando el archivo .ovhconfig. También se pueden llevar a cabo configuraciones mixtas en estas últimas. Tiene a su disposición instrucciones detalladas en nuestras guías:

@@ -84,6 +84,11 @@ Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj si
 
 - Zapoznaj się z przewodnikiem po [ofertach hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/), aby upewnić się, że plan hostingu, który chcesz zamówić, odpowiada Twoim potrzebom.
 
+> [!warning]
+>
+> Zmiana pliku **php.ini** jest niedostępna w ofercie hostingu współdzielonego. Wynika to z faktu, że konfiguracja PHP jest globalna dla całej infrastruktury współdzielonej.
+>
+
 - Możesz sprawdzić szczegóły konfiguracji Twojego hostingu. W tym celu sprawdź rubrykę [„Informacje techniczne o Twoim hostingu”](./#informacje-techniczne-o-twoim-hostingu) na dole niniejszego przewodnika. 
 
 - Wersję PHP hostingu możesz zmienić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) („**Konfiguracja**”) lub modyfikując plik .ovhconfig. W przypadku tego drugiego rozwiązania możliwe są również konfiguracje mieszane. Szczegółowe instrukcje znajdują się w przewodnikach:

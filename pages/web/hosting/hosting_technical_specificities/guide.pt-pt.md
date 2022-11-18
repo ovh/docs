@@ -84,6 +84,11 @@ Para mais informações sobre a gestão das bases de dados, consulte o guia [Cri
 
 - É recomendável que consulte as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/uc-programming-language/) a fim de assegurar que o serviço de alojamento web que deseja encomendar se adequa às suas necessidades.
 
+> [!warning]
+>
+> A modificação do ficheiro **php.ini** está indisponível nas ofertas de alojamento partilhado. Isto porque a configuração PHP é global ao conjunto da infraestrutura partilhada.
+>
+
 - Verifique os detalhes de configuração do seu alojamento web. Para isso, consulte a rubrica «Informações técnicas do seu alojamento web», mais abaixo neste guia. 
 
 - Pode modificar a versão PHP do seu alojamento web, quer a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) («**Configuração**»), quer alterando o ficheiro .ovhconfig. Também são possíveis configurações mistas neste último caso. Os seguintes guias contêm instruções pormenorizadas:

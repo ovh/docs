@@ -83,6 +83,11 @@ Weitere Informationen zur Verwaltung von Datenbanken finden Sie in der Anleitung
 
 - Wir empfehlen Ihnen, die Details der [Webhosting Angebote](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/) auf unserer Website nachzulesen, um sicherzustellen, dass das gewünschte Angebot Ihren Anforderungen entspricht.
 
+> [!warning]
+>
+> Die Änderung der Datei **php.ini** ist bei den Webhosting Angeboten nicht verfügbar. Dies liegt daran, dass die PHP-Konfiguration global für die gesamte Shared Hosting Infrastruktur ist.
+>
+
 - Sie können die Konfigurationsdetails Ihres Webhostings überprüfen. Gehen Sie hierzu zum Abschnitt [„Technische Konfigurationen der Webhostings“](./#technische-konfigurationen-der-webhostings) am Ende dieser Anleitung. 
 
 - Sie können die PHP Versions Ihres Webhostings ändern, entweder über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) („**Konfiguration**“) oder indem Sie die Datei .ovhconfig entsprechend bearbeiten. Es sind auch gemischte Konfigurationen möglich. Ausführliche Instruktionen finden Sie in folgenden Anleitungen:

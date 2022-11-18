@@ -72,6 +72,11 @@ Please refer to [this guide](../creating-database/) for more information about m
 
 - We recommend to consult [our website](https://www.ovhcloud.com/asia/web-hosting/uc-programming-language/) to make sure the Web Hosting plan you would like to order will be appropriate for your hosting requirements.
 
+> [!warning]
+>
+> You cannot edit the **php.ini** file on shared hosting plans because the PHP configuration is global to the entire shared infrastructure.
+>
+
 - You can verify the details of the configuration on our website; please see under [Web Hosting libraries](./#web-hosting-libraries) below. 
 
 - You will be able to change the PHP version for your Web Hosting, either in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) ("**Configuration**") or by editing the .ovhconfig file. Mixed configurations are also possible with the latter. Detailed instructions are available in our guides:
