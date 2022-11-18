@@ -10,7 +10,7 @@ order: 01
 ## Objectif
 
 > [!warning]
-> Cet article est destiné aux utilisateurs expérimentés qui ont un minimum des connaissances concernant le monde open source, ainsi que des notions d'administration.
+> Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissance concernant le monde open source, ainsi que des notions d'administration.
 
 Cette documentation à pour but de vous accompagner pour deployer tous les composants, ou services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement dédié et **entièrement privé**.
 Profiter d'une infrastructure "full private" sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
