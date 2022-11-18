@@ -220,7 +220,7 @@ Quando tiver concluído, clique em `Seguinte`{.action} para avançar para o últ
 
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-Se tiver dúvidas sobre o período de utilização, recomendamos que escolha a opção de facturação por hora, pois pode alterar esta opção mais tarde. Para mudar para a opção de facturação mensal, deve esperar até que a sua instância esteja disponível na página "Instances".
+Recomendamos que escolha a facturação horária se não tiver a certeza do período de utilização, uma vez que não é possível escolhê-la depois de o serviço ter sido entregue. Terá a opção de mudar para uma assinatura mensal assim que a instância estiver disponível na página "Instances"
 
 > [!warning]
 >

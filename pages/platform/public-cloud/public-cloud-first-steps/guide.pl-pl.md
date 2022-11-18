@@ -220,7 +220,7 @@ Po zastosowaniu wybranych opcji kliknij przycisk `Dalej`{.action}, aby przejść
 
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-Jeśli masz pytania dotyczące okresu użytkowania, zalecamy wybranie opcji rozliczenia godzinowego, ponieważ możesz zmienić tę opcję później. Aby przełączyć się na opcję rozliczeń miesięcznych, musisz poczekać, aż Twoja instancja będzie dostępna na stronie "Instances".
+Zalecamy wybór rozliczenia godzinowego w przypadku braku pewności co do okresu korzystania z usługi, ponieważ nie ma możliwości jego wyboru po jej wykonaniu. Będziesz miał możliwość przejścia na miesięczny abonament, gdy tylko instancja będzie dostępna na stronie "Instances".
 
 > [!warning]
 >

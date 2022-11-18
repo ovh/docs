@@ -220,7 +220,8 @@ Una vez que hay seleccionado las opciones deseadas, haga clic en `Siguiente`{.ac
 
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-Si tiene dudas sobre el periodo de uso, le recomendamos que elija la opción de facturación por horas, ya que puede cambiar esta opción más adelante. Para cambiar a la opción de facturación mensual, debe esperar a que su instancia esté disponible en la página «Instances».
+Le recomendamos que elija la facturación por horas si no está seguro del periodo de uso, ya que no es posible elegirla después de la prestación del servicio. Tendrá la opción de cambiar a una suscripción mensual tan pronto como la instancia esté disponible en la página «Instances».
+
 
 > [!warning]
 >

@@ -220,7 +220,7 @@ Una volta completata l’operazione, clicca su `Continua`{.action} per procedere
 
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-In caso di dubbi sul periodo di utilizzo, si consiglia di scegliere l'opzione di fatturazione oraria, che potrà essere modificata in seguito. Per passare all'opzione di fatturazione mensile, è necessario attendere che l'istanza sia disponibile nella pagina "Instances".
+Si consiglia di scegliere la fatturazione oraria se non si è sicuri del periodo di utilizzo, poiché non è possibile sceglierla dopo l'erogazione del servizio. Avrete la possibilità di passare a un abbonamento mensile non appena l'istanza sarà disponibile nella pagina "Instances".
 
 > [!warning]
 >
