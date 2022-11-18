@@ -12,7 +12,7 @@ hidden: true
 .ovh-api-main { background:#fff;}
 </style> 
 
-**Last updated 15th November 2022**
+**Last updated 18th November 2022**
 
 **This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC) to a new destination vDC (Essentials or Premier).**
 
@@ -606,7 +606,7 @@ Here is how to proceed:
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
 >
 
-4\. Repeat steps 2 and 3 for all VMs that have backups enabled and have been migrated to the new vDC.
+4\. If you have migrated only part of the virtual machines whose backups are enabled, you can repeat steps 2 and 3 in order to transfer their backup jobs to the new vDC.
 
 Before you continue, you can check visually, in the graphic Backup Management plug-in on the new vDC, that the backup jobs are present and active. You can then disable Veeam Backup on the old vDC. You can do this via the following API call:
 
