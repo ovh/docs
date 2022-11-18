@@ -251,14 +251,14 @@ network:
         enp26s0f0np0:
             accept-ra: false
             addresses:
-            - 2001:41d0:20b:4500::/56:
+            - 2001:41d0:20b:4500::/56
             dhcp4: true
             gateway6: fe80::1
             match:
                 macaddress: 0c:42:a1:65:d4:16
             nameservers:
                 addresses:
-                - 2001:41d0:3:163::1:
+                - 2001:41d0:3:163::1
             set-name: enp26s0f0np0
         #vRack interface
         enp96s0f0np0:
