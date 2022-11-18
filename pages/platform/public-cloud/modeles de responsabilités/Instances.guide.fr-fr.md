@@ -113,9 +113,8 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 |Fournir l'inventaire des instances consommées | I | RA |
 | Assurer la sécurité des infrastructures de gestion (API, control plane) |   | RA |
-| Assurer la sécurité des OS, Softwares et Middlewares installés sur les Serveurs Dédiés | RA |  |
-| Gérer la sécurité des données déposées par le Client sur les Instances | RA |  |
-| Gérer la sécurité physique des équipements et infrastructures hébergés chez OVHcloud | I | RA |
+| Assurer la sécurité des OS, Softwares et Middlewares installés sur les Instances | RA |  |
+| Gérer la sécurité physique des équipements et infrastructures hébergés | I | RA |
 | Gérer la sécurité des données herbergées sur les Instances | RA |  |
 
 ##### **3.1.7. Continuité d'activité**
