@@ -14,7 +14,7 @@ Une machine virtuelle **OVHgateway** est installée lors d'une déploiement d'un
 
 Si vous avez besoin d'avoir une bande passante plus importante il faut remplacer cette passerelle par un serveur dédié et choisir une offre qui vous permettra d'aller entre 1 gb/s à 10 gb/s sur le réseau public comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
 
-**Nous allons voir comment remplacer la passerelle par défaut par un serveur dédié OVHcloud pour augmenter la bande passante**
+**Nous allons voir comment remplacer la passerelle par défaut par un serveur dédié OVHcloud pour augmenter la bande passante.**
 
 
 > [!warning]
@@ -39,8 +39,9 @@ Le réseau public utilisera une seule carte réseau et le réseau privé utilise
 Pour remplacer l'OVHgateway nous allons prendre utilisez ces paramètres :
 
 - Lan public en DHCP qui fournit une adresse publique.
-- Lan privé sur une équipe de deux cartes et des adresses privés manuelle sur plusieurs VLAN
+- Lan privé sur une équipe de deux cartes et des adresses privés manuelle sur plusieurs VLAN :
     - VLAN 1 : adresse IP privée et masque de l'OVHgateway (Dans notre exemple 172.16.3.254/22)
+    - VLAN 2 : Une autre adresse privé pour un VLAN supplémentaire (Dans notre exemple 10.22.3.254/22)
 
 ### Récupération des informations nécessaires au déploiement de votre serveur
 
@@ -86,7 +87,7 @@ Restez sur la configuration, cliquez en bas de la page sur `Le bouton de configu
 
 ![04 attach bm to nutanix vrack 01](images/04-attach-bm-to-nutanix-vrack01.png){.thumbnail}
 
-Séléctionnez le vRack dans **Select private network** qui correspond à votre serveur Nutanix noté précedemment. 
+Sélectionnez le vRack dans **Select private network** qui correspond à votre serveur Nutanix noté précedemment. 
 
 ![04 attach bm to nutanix vrack 02](images/04-attach-bm-to-nutanix-vrack02.png){.thumbnail}
 
@@ -102,7 +103,7 @@ Au travers des onglets du serveur dédié allez sur `General information`{.actio
 
 ![05 install OS 01](images/05-install-os01.png){.thumbnail}
 
-Cliquez sur `LINUX (18)`{.action}.
+Cliquez sur `liste des serveurs`{.action}.
 
 ![05 install OS 02](images/05-install-os02.png){.thumbnail}
 
@@ -116,7 +117,7 @@ Cliquez sur `Confirm`{.action}.
 
 L'installation du système d'exploitation se lance un fenêtre de l'état d'avancement apparait et disparaitra quand l'installation sera terminée.
 
-Un message vous sera envoyé dans votre boite au lettre et contiendra le compte utilisateur administrateur et de son mot de passe.  
+Un message vous sera envoyé dans votre boite au lettre et contiendra le compte utilisateur administrateur (le compte se nomme ubuntu) et de son mot de passe.  
 
 ![05 install OS 04](images/05-install-os05.png){.thumbnail}
 
@@ -128,27 +129,27 @@ Allez dans **Prism Central** dans la gestion des machines virtuelles séléction
 
 ![07 Shutdown ovhgateway 01](images/07-shutdown-ovhgateway01.png){.thumbnail}
 
-La machine virtuelle est éteinte 
+La machine virtuelle est éteinte. 
 
 ![07 Shutdown ovhgateway 02](images/07-shutdown-ovhgateway02.png){.thumbnail}
 
 ### Configuration réseau en tant que passerelle Linux
 
-Lorsque l'on déploie un serveur Linux à partir de l'interface client OVHcloud une seule carte réseau est configurée c'est l'adresse IP publique elle servira pour vous connecer en SSH et effectuer votre coniguration.
+Lorsque l'on déploie un serveur Linux à partir de l'interface client OVHcloud une seule carte réseau est configurée, c'est l'adresse IP publique elle servira pour vous connecter en SSH et éffectuer votre configuration.
 
-Connectez vous en SSH au serveur dédié avec cette commande
+Connectez vous en SSH au serveur dédié avec cette commande :
 
 ```bash
 ssh ubuntu@dedicated-server-public-ip-address
 ```
 
-Saisissez cette commande pour faire apparaitre les cartes qui ne sont pas connectés et repérez avec les adresses MAC le nom des deux cartes réseaux du réseau privé :
+Saisissez cette commande pour faire apparaitre les cartes qui ne sont pas connectées, cela va vous servir pour identifier les deux cartes réseaux privées. 
 
 ```bash
 ip a | grep -C1 DOWN
 ```
 
-Vous verrez apparaitre 3 cartes réseau avec l'état **DOWN**, reprenez la liste des adresses MAC et récupérer le nom des deux cartes privées comme dans l'exemple ci-dessous :
+Trois cartes réseaux doivent apparaitrent avec l'état **DOWN**, reprenez la liste des adresses MAC et récupérer le nom des deux cartes privées comme dans l'exemple ci-dessous :
 
 > [!warning]
 > Ne vous basez pas sur l'ordre des cartes pour trouver le nom de carte du réseau privé mais plutôt sur les adresse MAC noté précedemment.
@@ -156,7 +157,7 @@ Vous verrez apparaitre 3 cartes réseau avec l'état **DOWN**, reprenez la liste
 
 ```bash
 3: "publiccardname2": <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
-    link/ether "mac-address-public-card2" brd gg:gg:gg:gg:gg:gg
+    link/ether "mac-address-public-card2" brd ff:ff:ff:ff:ff:ff
 4: "privatecardname1": <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
     link/ether "mac-address-private-card1" brd ff:ff:ff:ff:ff:ff
 5: "privatecardname2": <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
@@ -169,7 +170,7 @@ lancer cette commande
 ip a | grep -C1 UP
 ```
 
-Vous verrez apparaitre 2 cartes avec l'état **UP**, la carte loopback et une carte physique dont l'adresse MAC doit correspondre à une des adresses publiques notés dans l'espace client OVHcloud. récuperer le nom de cette carte privé 
+Vous verrez apparaitre 2 cartes avec l'état **UP**, la carte loopback et une carte physique dont l'adresse MAC doit correspondre à une des adresses publiques notées dans l'espace client OVHcloud. récuperer le nom de cette carte publique :
 
 ```bash
 1: "lo": <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -182,14 +183,14 @@ Vous verrez apparaitre 2 cartes avec l'état **UP**, la carte loopback et une ca
 
 Les informations importantes à garder sont les suivantes :
 
-* "publiccardname1" : Le nom de la première carte publique. 
-* "mac-address-public-card1" : L'addresse MAC de la première carte réseau publique.
+* `"publiccardname1"` : Le nom de la première carte réseau publique. 
+* `"mac-address-public-card1"` : L'addresse MAC de la première carte réseau publique.
 
-* "privatecardname1" : le nom de la première carte réseau privée.
-* "mac-address-private-card1" : L'addresse MAC de la première carte réseau privée.
+* `"privatecardname1"` : le nom de la première carte réseau privée.
+* `"mac-address-private-card1"` : L'addresse MAC de la première carte réseau privée.
 
-* "privatecardname2" : le nom de la deuxième carte réseau privée.
-* "mac-address-private-card2" : L'addresse MAC de la deuxième carte réseau privée
+* `"privatecardname2"` : le nom de la deuxième carte réseau privée.
+* `"mac-address-private-card2"` : L'addresse MAC de la deuxième carte réseau privée
 
 Exécutez cette commande pour éditer le fichier `/etc/nftables.conf`
 
@@ -276,7 +277,7 @@ Exécuter cette commande pour éditer le fichier `/etc/netplan/50-cloud-init.yam
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Modifiez le contenu du fichier en remplaçant ces noms : 
+Modifiez le contenu du fichier en remplaçant les noms ci-dessous : 
 
 * `"publiccardname1"`
 * `"mac-address-public-card1"` 
