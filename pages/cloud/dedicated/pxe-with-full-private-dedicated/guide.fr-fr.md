@@ -61,7 +61,7 @@ Le processus complet aura comme instruction de par ses commandes:
 ## Prérequis
 
 * Être connecté à [l'espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
-* Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) **ayant un système d'exploitation déjà installé**.
+* Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
 * Avoir toutes les interfaces réseaux de ce serveur en réseau dit **privé**, ce qui sous-entend que vous avez au préalable configuré le(s) service(s) [vrack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
 * Un système dédié supplémentaire avec les interfaces réseaux configurées par défaut, à savoir, un accès au réseau public ainsi qu'à votre réseau privé. (qui hébergera les services DHCP et TFPT). Le système d'exploitation sera celui de votre choix.
 
@@ -80,9 +80,10 @@ exemple d'infrastructure private basic (schéma layer 2):
 ![Schema](images/schema_basic.png){.thumbnail}
 
 Exemple:
-* réseau privé (ex: 192.168.1.0/28)
-* services hébergés/mutualisés sur `Node 0`
-* une seule machine cliente `Node 1`
+
+* réseau privé (ex: 192.168.1.0/28).
+* services hébergés/mutualisés sur `Node 0`.
+* une seule machine cliente `Node 1`.
 
 
 le service DHCP
@@ -124,17 +125,17 @@ allow bootp;
 
 Détails:
 
-`subnet_mask`: 192.168.1.240
-`broadcast_address`: 192.168.1.15
-`dns_servers`: cf chapitre optionnel
+* `subnet_mask`: 192.168.1.240
+* `broadcast_address`: 192.168.1.15
+* `dns_servers`: cf chapitre optionnel
 
-`default_router`: 192.168.1.1
-`TFTP_server_address`: 192.168.1.1
+* `default_router`: 192.168.1.1
+* `TFTP_server_address`: 192.168.1.1
 
 
-`hostname`: nom machine cliente
-`ethernet_address`: adresse matérielle (MAC) machine cliente
-`ip_hostname`: ip machine cliente
+* `hostname`: nom machine cliente
+* `ethernet_address`: adresse matérielle (MAC) machine cliente
+* `ip_hostname`: ip machine cliente
 
 
 le service **TFTP**
@@ -152,7 +153,7 @@ Ce qu'il faut savoir:
 
 exemple de configuration avec tftpd-hpa:
 
-``bash
+```bash
 # /etc/default/tftpd-hpa
 TFTP_USERNAME="tftp"
 TFTP_DIRECTORY="/var/lib/tftpboot"
