@@ -220,7 +220,7 @@ Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf `Weiter`{.action}, um zum
 
 ![Abrechnungsmethode auswählen](images/instance-creation-05-2022.png){.thumbnail}
 
-Wir empfehlen Ihnen, bei Unsicherheit bezüglich des Verwendungszeitraums die stündliche Abrechnung auszuwählen, da es nicht möglich ist, im Nachhinein zu dieser Option zu wechseln. Sobald die Instanz auf der “Instanzen”-Seite verfügbar ist, können Sie auf monatliche Abrechnung umstellen.
+Wir empfehlen, die stündliche Abrechnung zu wählen, wenn Sie sich über den Nutzungszeitraum im Unklaren sind, da es nach der Lieferung des Dienstes nicht mehr möglich ist, diesen auszuwählen. Sie haben die Möglichkeit, zu einem monatlichen Abonnement zu wechseln, sobald die Instanz auf der Seite "Instances" verfügbar ist.
 
 > [!warning]
 >
