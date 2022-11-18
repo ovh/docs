@@ -87,6 +87,11 @@ Ti ricordiamo che, non essendo OVHcloud il Registrar del tuo dominio al momento 
 
 Una volta sbloccato il dominio e ottenuto il codice, è possibile ordinarne il trasferimento in OVHcloud dal [nostro sito](https://www.ovhcloud.com/it/domains/). Inserisci il nome del tuo dominio e segui la procedura d’ordine.
 
+> [!success]
+>
+> Per conoscere le condizioni tariffarie per il trasferimento di un dominio in base alla sua estensione, inserisci il dominio che vuoi trasferire sulla nostra pagina [www.ovhcloud.com/it/domains/tld/](https://www.ovhcloud.com/it/domains/tld/)
+>
+
 Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella casella accanto al tuo dominio Se non disponi ancora del codice di trasferimento, seleziona la casella `Inserisci il codice di trasferimento successivamente`{.action}. Prima di proseguire, assicurati di essere in grado di recuperare questo codice. Ricordati che il trasferimento non verrà avviato fino a quando non verrà fornito un codice valido.
 
 È inoltre possibile completare l'ordine con un [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} e altre soluzioni OVHcloud. Per effettuare questa operazione è necessario migrare i servizi verso OVHcloud. Questa guida, intitolata "[Migrare un sito e un servizio di posta in OVHcloud](../../hosting/migrare-un-sito-in-ovh/)", fornisce alcune istruzioni su come procedere.

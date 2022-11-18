@@ -104,6 +104,11 @@ Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.
 
 - Po kliknięciu `Zmień konfigurację`{.action} w tym etapie możesz wprowadzić nazwy serwerów DNS, których nazwa domeny używa obecnie. W ten sposób domena będzie już powiązana z tymi serwerami DNS w konfiguracji OVHcloud.
 
+> [!success]
+>
+> Aby uzyskać informacje na temat cennika transferu domeny w zależności od jej rozszerzenia, wprowadź domenę, którą chcesz przenieść na naszą stronę [www.ovhcloud.com/pl/domains/tld/](https://www.ovhcloud.com/pl/domains/tld/)
+>
+
 - Jeśli nie przeprowadzasz tej operacji, domena zostanie dostarczona wraz z nową strefą DNS na serwerach DNS OVHcloud. Może zaistnieć konieczność ręcznej [modyfikacji strefy DNS](../hosting_www_jak_edytowac_strefe_dns/).
 
 - W niektórych przypadkach proces transferu może wymagać dodatkowych informacji o właścicielu domeny. Aby dodać te informacje, kliknij opcję `Zarządzanie kontaktami/właściciela`{.action}.

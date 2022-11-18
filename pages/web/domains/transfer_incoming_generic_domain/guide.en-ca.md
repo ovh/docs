@@ -80,6 +80,11 @@ Please note that OVHcloud is not your current domain name registrar. We are ther
 
 Now that your domain name is unlocked and you have your AUTH/INFO, you can request for your domain name to be transferred to OVHcloud. Simply order a domain name transfer on [our website](https://www.ovhcloud.com/en-ca/domains/domain-transfer/){.external}. Enter your domain name, and follow the order process.
 
+> [!success]
+>
+> To find out the pricing conditions for transferring a domain name depending on its extension, enter the domain you wish to transfer on our page [www.ovhcloud.com/en-ca/domains/tld/](https://www.ovhcloud.com/en-ca/domains/tld/)
+>
+
 ![domain](images/Domain_transfer_order.png){.thumbnail}
 
 When you are asked to provide your transfer code, enter it into the field. If you do not have the transfer code yet, you can tick a box labelled `Enter the authentication code later in the OVHcloud Control Panel`{.action}. However, we advise to have the code ready before you continue. Keep in mind that transfer will not start until a valid code is provided.

@@ -88,6 +88,11 @@ Atenção: a OVHcloud não é o agente registador do seu domínio no momento em 
 
 Depois de desbloquear o seu nome de domínio e obter o código, pode encomendar a sua transferência para a OVHcloud a partir do [nosso site](https://www.ovhcloud.com/pt/domains/){.external}. Introduza o seu nome de domínio e siga os passos da encomenda.
 
+> [!success]
+>
+> Para conhecer as condições tarifárias para a transferência de um nome de domínio em função da sua extensão, insira o domínio que deseja transferir na nossa página [www.ovhcloud.com/pt/domains/tld/](https://www.ovhcloud.com/pt/domains/tld/)
+>
+
 Quando for necessário indicar o código de transferência, introduza-o no campo ao lado do seu nome de domínio. Se ainda não dispõe do código de transferência, selecione a opção Indicar o código de `transferência mais tarde`{.action}. No entanto, sugerimos que se certifique de que tem este código à sua disposição antes de continuar. Lembre-se de que a transferência não será iniciada até que um código válido seja fornecido.
 
 Também pode concluir a sua encomenda com um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} e outras soluções da OVHcloud. Isto pode interessar-lhe se deseja também migrar os seus serviços para a OVHcloud. O nosso manual intitulado "[Como migrar um site para a OVHcloud](../../hosting/migrar-site-para-ovh/){.external}?" irá fornecer-lhe instruções sobre como realizar este procedimento.
