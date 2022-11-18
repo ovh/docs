@@ -6,7 +6,7 @@ section: Per iniziare
 order: 1
 ---
 
-**Ultimo aggiornamento: 02/08/2022**
+**Ultimo aggiornamento: 17/11/2022**
 
 ## Obiettivo
 
@@ -202,14 +202,25 @@ Lo Step 4 consente di configurare opzioni aggiuntive.
 - È possibile scegliere di creare un’istanza flessibile che consenta di effettuare, in un secondo momento, il downgrade per un modello più piccolo (anche cambiando categoria del modello di server). Tuttavia, questo limiterà l’istanza a 50GB di**storage incluso**, a prescindere dalle operazioni di upgrade o downgrade.
 - È possibile modificare il nome dell’istanza.
 - È possibile aggiungere uno script post-installazione. 
-- È possibile connettere l’istanza a una rete privata esistente (vRack).
-- È possibile attivare i backup automatici per l’istanza. Ti consigliamo di consultare i dettagli relativi ai prezzi e alle opzioni di rotazione. 
+- È possibile attivare i backup automatici per l’istanza. Ti consigliamo di consultare i dettagli relativi ai prezzi e alle opzioni di rotazione.
 
-Una volta completata l’operazione, clicca su `Successivo`{.action} per procedere allo step finale e scegliere il metodo di pagamento.
+Una volta terminato, clicca su `Continua`{.action} per configurare la tua rete.
+
+![configure network](images/network-selection.png){.thumbnail}
+
+In base all'utilizzo previsto delle tue istanze, puoi selezionare il **Modalità Public** o **Modalità Privata**.
+
+La modalità Public è il modello di rete classico che permette alle istanze di avere una porta di rete pubblica collegata. Associata alla vRack, ogni istanza possiede un IP pubblico e un IP privato.
+
+La modalità Private ti offre la possibilità di assegnare le tue istanze esclusivamente a una rete privata. Le istanze di questa modalità possono essere esposte alla rete pubblica solo con un servizio Gateway o Load Balancer con Floating IP. Per maggiori informazioni, consulta la nostra guida sulle [soluzioni di rete per il Public Cloud OVHcloud](https://docs.ovh.com/it/publiccloud/network-services/).
+
+Una volta scelta la modalità, seleziona una rete privata a cui associare l'istanza o clicca su `Crea una nuova rete privata`{.action} per crearne una nuova.
+
+Una volta completata l’operazione, clicca su `Continua`{.action} per procedere allo step finale e scegliere il metodo di pagamento.
 
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-Se hai dubbi riguardo al periodo di utilizzo, ti consigliamo di scegliere la fatturazione oraria, in quanto non sarà possibile effettuare questa scelta in un secondo momento. Avrai la possibilità di passare alla fatturazione mensile non appena l’istanza sarà disponibile nella pagina “Istanze”.
+In caso di dubbi sul periodo di utilizzo, si consiglia di scegliere l'opzione di fatturazione oraria, che potrà essere modificata in seguito. Per passare all'opzione di fatturazione mensile, è necessario attendere che l'istanza sia disponibile nella pagina "Instances".
 
 > [!warning]
 >

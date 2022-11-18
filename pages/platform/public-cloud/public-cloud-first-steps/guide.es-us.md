@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 04
 ---
 
-**Última actualización: 02/08/2022**
+**Última actualización: 17/11/2022**
 
 ## Objetivo
 
@@ -202,14 +202,25 @@ En el cuarto paso deberá configurar algunas opciones adicionales:
 - crear una instancia flexible para poder pasar posteriormente a un modelo inferior (o incluso cambiar de modelo). Esta opción limitará el **almacenamiento incluido** de la instancia a 50 GB, independientemente de cualquier migración a un modelo superior o inferior;
 - cambiar el nombre de su instancia;
 - añadir un script de post-instalación;
-- conectar instancias a una red privada asociada (vRack);
 - permitir el backup automatizado de instancias (puede consultar el precio y el tipo de rotación en esa misma sección).
+
+Cuando haya terminado, haga clic en `Siguiente`{.acción} para configurar su red.
+
+![configure network](images/network-selection.png){.thumbnail}
+
+En función del uso previsto de sus instancias, puede seleccionar el **Modo público* o **Modo privado**.
+
+El modo público es el modelo de red clásico. Permite que las instancias tendrán un puerto de red público conectado. Asociada al vRack, cada instancia posee una IP pública y una IP privada.
+
+El modo privado le permite asignar sus instancias únicamente a una red privada. Las instancias de este modo solo pueden estar expuestas a la red pública mediante un servicio Gateway o un Load Balancer con Floating IPs. Para más información, consulte nuestra guía sobre las [soluciones de red para el Public Cloud de OVHcloud](https://docs.ovh.com/us/es/publiccloud/network-services/).
+
+Una vez elegido el modo, seleccione una red privada a la que quiere asociar la instancia o haga clic en `Crear una nueva red privada`{.action} para crear una nueva.
 
 Una vez que hay seleccionado las opciones deseadas, haga clic en `Siguiente`{.action} y, por último, elija el tipo de facturación.
 
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-Si tiene dudas sobre el período de uso, le recomendamos que elija la opción de facturación por horas, ya que no podrá modificar esta opción más adelante. Para pasar a la opción de facturación mensual, debe esperar a que su instancia esté disponible en la página «Instancias».
+Si tiene dudas sobre el periodo de uso, le recomendamos que elija la opción de facturación por horas, ya que puede cambiar esta opción más adelante. Para cambiar a la opción de facturación mensual, debe esperar a que su instancia esté disponible en la página «Instances».
 
 > [!warning]
 >

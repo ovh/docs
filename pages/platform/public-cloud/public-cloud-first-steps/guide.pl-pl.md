@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 1
 ---
 
-**Ostatnia aktualizacja: 02-08-2022**
+**Ostatnia aktualizacja: 17-11-2022**
 
 ## Wprowadzenie
 
@@ -202,14 +202,25 @@ W czwartym kroku można skonfigurować dodatkowe opcje.
 - Możesz utworzyć instancję elastyczną, która umożliwia później przejście do mniejszego modelu (a nawet zmianę kategorii modelu serwera), ale zawsze ogranicza instancję do 50 GB **przestrzeni dyskowej**, niezależnie od tego, czy następuje przejście do wyższego, czy niższego modelu.
 - Możesz zmienić nazwę wyświetlaną instancji.
 - Możesz dodać skrypt uruchamiany po instalacji.
-- Możesz dołączyć instancje do istniejącej sieci prywatnej (vRack).
 - Możesz włączyć automatyczne kopie zapasowe instancji. Zwróć uwagę na informacje o cenie i szczegóły dotyczące rotacji kopii zapasowych.
+
+Po zakończeniu kliknij przycisk `Dalej`{.action}, aby skonfigurować Twoją sieć.
+
+![configure network](images/network-selection.png){.thumbnail}
+
+W zależności od planowanego wykorzystania instancji możesz wybrać **Tryb publiczny** lub **Tryb prywatny**.
+
+Tryb publiczny to klasyczny model sieci, który umożliwia przypisany publiczny port sieciowy Twoim instancjom. Każda instancja posiada publiczny adres IP i prywatny adres IP przypisany do usługi vrack.
+
+Tryb prywatny daje możliwość przypisywania instancji tylko do sieci prywatnej. Instancje w tym trybie mogą być dostępne w sieci publicznej wyłącznie za pomocą usługi Gateway lub Load Balancer z Floating IP. Więcej informacji znajdziesz w ddokumentacją dotyczącą [rozwiązań sieciowych dla Public Cloud OVHcloud](https://docs.ovh.com/pl/publiccloud/network-services/).
+
+Po wybraniu trybu wybierz prywatną sieć, do której chcesz przypisać instancję lub kliknij `Utwórz nową prywatną sieć`{.action}, aby stworzyć nową.
 
 Po zastosowaniu wybranych opcji kliknij przycisk `Dalej`{.action}, aby przejść do ostatniego kroku i wybrać metodę rozliczania.
 
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-Jeśli masz wątpliwości dotyczące okresu użytkowania, zalecamy wybór rozliczania godzinowego, ponieważ później już nie można go wybrać. Gdy tylko instancja będzie dostępna na stronie “Instancje”, będziesz mieć możliwość zmiany na subskrypcję miesięczną.
+Jeśli masz pytania dotyczące okresu użytkowania, zalecamy wybranie opcji rozliczenia godzinowego, ponieważ możesz zmienić tę opcję później. Aby przełączyć się na opcję rozliczeń miesięcznych, musisz poczekać, aż Twoja instancja będzie dostępna na stronie "Instances".
 
 > [!warning]
 >

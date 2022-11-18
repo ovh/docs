@@ -6,7 +6,7 @@ section: Introdução
 order: 1
 ---
 
-**Última atualização: 02/08/2022**
+**Última atualização: 17/11/2022**
 
 ## Objetivo
 
@@ -202,14 +202,25 @@ O 4.º passo permitirá configurar opções suplementares.
 - Pode optar por criar uma instância flexível que lhe permita mais tarde fazer o downgrade para um modelo inferior (até mudando de categoria de modelo de servidor), mas isso irá limitar a instância a 50 GB de **armazenamento incluído**, independentemente de upgrades ou downgrades.
 - Pode mudar o nome de exibição da instância.
 - Pode adicionar um script pós-instalação.
-- Pode conectar a instância a uma rede privada existente (vRack).
 - Pode ativar backups automáticos da instância. Atenção: tome nota das informações relativas aos preços e às opções de rotação.
+
+Depois de terminar, clique em `Seguinte`{.action} para configurar a sua rede.
+
+![configure network](images/network-selection.png){.thumbnail}
+
+Em função da utilização prevista das suas instâncias, pode selecionar o **Modo Público** ou **Modo Privado**.
+
+O modo Public é o modelo de rede clássico, permite que as suas instâncias tenham uma porta de rede pública ligada. Associada ao vrack, cada instância possui um IP público e um IP privado.
+
+O modo privado oferece-lhe a possibilidade de afetar as suas instâncias apenas a uma rede privada. As instâncias deste modo só podem ser expostas à rede pública através de um serviço Gateway ou Load Balancer com Floating IP. Para mais informações, consulte o nosso manual sobre as [soluções de rede para o Public Cloud da OVHcloud](https://docs.ovh.com/pt/publiccloud/network-services/).
+
+Depois de escolher o modo escolhido, selecione uma rede privada para associar a sua instância ou clique em `Criar uma nova rede privada`{.action} para criar uma nova.
 
 Quando tiver concluído, clique em `Seguinte`{.action} para avançar para o último passo e escolher um método de faturação.
 
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-Recomendamos que escolha a faturação horária caso tenha dúvidas a respeito do período de uso, pois não será possível fazê-lo depois. Terá a oportunidade de mudar para uma faturação mensal depois de a instância ficar disponível na página «Instâncias».
+Se tiver dúvidas sobre o período de utilização, recomendamos que escolha a opção de facturação por hora, pois pode alterar esta opção mais tarde. Para mudar para a opção de facturação mensal, deve esperar até que a sua instância esteja disponível na página "Instances".
 
 > [!warning]
 >
