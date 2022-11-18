@@ -1,7 +1,7 @@
 ---
 title: RACI Instances Public Cloud
 slug: raci-instances-public-cloud
-section: RACI Bare Metal Cloud
+section: RACI Instances Public Cloud
 excerpt: RACI entre OVHcloud et le client pour l'utilisation des Instances Public Cloud
 ---
 
