@@ -6,7 +6,7 @@ section: Getting started
 order: 07
 ---
 
-**Last updated 17th August 2020**
+**Last updated 18th Novamber 2022**
 
 ## Objective
 
@@ -16,13 +16,18 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 ## Requirements
 
-- a [domain name](https://www.ovhcloud.com/en-gb/domains/){.external} registered with OVHcloud
+- a [domain name](https://www.ovhcloud.com/en-gb/domains/){.external} registered with OVHcloud or a [DNS zone](https://www.ovhcloud.com/en-gb/domains/dns-subdomain/){.external} of domain no registered with OVHcloud 
 - an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the necessary permissions to manage the Web Hosting plan
 
 ## Instructions
 
 ### Activating your email solution
+
+> [!primary]
+>
+> For external domain you need first activate the DNS zone, please read our documentation: [Creating an OVHcloud DNS zone for a domain name]([https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/](https://docs.ovh.com/gb/en/domains/create_a_dns_zone_for_a_domain_which_is_not_registered_at_ovh/)){.external}.
+>
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan that has the email solution.
 
