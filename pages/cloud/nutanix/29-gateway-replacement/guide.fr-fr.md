@@ -142,45 +142,6 @@ Connectez vous en SSH au serveur dédié avec cette commande
 ssh ubuntu@dedicated-server-public-ip-address
 ```
 
-Créer un fichier nommé `configurenetwork.sh` qui active le routage, le NAT et installe des outils nécessaires. 
-
-```bash
-#!/bin/bash
-set -eux
-
-apt update && apt upgrade -y
-apt install vlan net-tools -y
-echo "8021q" >> /etc/modules
-echo 'bonding' | tee -a /etc/modules
-
-# Disable cloud-init networking
-touch /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-echo "network: {config: disabled}">> /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-
-# Enable forwarding
-sed -i s/#net.ipv4.ip_forward/net.ipv4.ip_forward/g /etc/sysctl.conf
-sysctl net.ipv4.ip_forward
-
-# get public interface
-NIC=$(ip link | grep UP | awk -F: '$0 !~ "lo|vir|wl|^[^0-9]"{print $2;getline}')
-
-# routing traffic to public interface
-iptables -t nat -A POSTROUTING -o ${NIC} -j MASQUERADE
-
-# Saving Rules
-echo iptables-persistent iptables-persistent/autosave_v4 boolean true | debconf-set-selections
-echo iptables-persistent iptables-persistent/autosave_v6 boolean true | debconf-set-selections
-apt -y install iptables-persistent --no-install-recommends
-```
-
-Lancez ces commandes pour executer le script et redémarrer votre serveur:
-
-```bash
-chmod u+x configurenetwork.sh
-sudo ./configurenetwork.sh
-sudo reboot
-```
-
 Saisissez cette commande pour faire apparaitre les cartes qui ne sont pas connectés et repérez avec les adresses MAC le nom des deux cartes réseaux du réseau privé :
 
 ```bash
@@ -211,6 +172,10 @@ ip a | grep -C1 UP
 Vous verrez apparaitre 2 cartes avec l'état **UP**, la carte loopback et une carte physique dont l'adresse MAC doit correspondre à une des adresses publiques notés dans l'espace client OVHcloud. récuperer le nom de cette carte privé 
 
 
+> [!primary]
+> 
+>
+
 ```bash
 1: "lo": <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -220,7 +185,7 @@ Vous verrez apparaitre 2 cartes avec l'état **UP**, la carte loopback et une ca
     link/ether "mac-address-public-card1" brd ff:ff:ff:ff:ff:ff
 ```
 
-En s'appuyant sur les informations recueillies, nous allons editer le fichier `/etc/netplan/50-cloud-init.yaml` et remplacer les noms des cartes et des adresses MAC comme ceci :
+
 
 
 * "publiccardname1" : Le nom de la première carte publique. 
@@ -232,8 +197,86 @@ En s'appuyant sur les informations recueillies, nous allons editer le fichier `/
 * "privatecardname2" : le nom de la deuxième carte réseau privée.
 * "mac-address-private-card2" : L'addresse MAC de la deuxième carte réseau privée
 
+Exécutez cette commande pour éditer le fichier `/etc/nftables.conf`
 
-Exécuter cette commande pour éditer le fichier
+```bash
+sudo nano /etc/nftables.conf
+```
+
+Modifiez le contenu du fichier en remplaçant "publiccardname1" par le nom de la carte réseau publique
+
+```conf
+flush ruleset
+
+define DEV_VLAN1 = bond0.1
+define DEV_VLAN2 = bond0.2
+define DEV_WORLD = "publiccardname1"
+define NET_VLAN1 = 172.16.0.0/22
+define NET_VLAN2 = 10.22.0.0/22
+
+table ip global {
+    chain inbound_world {
+        # accepting ping (icmp-echo-request) for diagnostic purposes.
+        # However, it also lets probes discover this host is alive.
+        # This sample accepts them within a certain rate limit:
+        #
+        # icmp type echo-request limit rate 5/second accept
+
+        # allow SSH connections from anywhere
+        ip saddr 0.0.0.0/0 tcp dport 22 accept
+    }
+
+    chain inbound_private_vlan1 {
+        # accepting ping (icmp-echo-request) for diagnostic purposes.
+        icmp type echo-request limit rate 5/second accept
+
+        # allow SSH from the VLAN1 network
+        ip protocol . th dport vmap { tcp . 22 : accept}
+    }
+
+    chain inbound_private_vlan2 {
+        # accepting ping (icmp-echo-request) for diagnostic purposes.
+        icmp type echo-request limit rate 5/second accept
+
+        # allow SSH from the VLAN2 network
+        ip protocol . th dport vmap { udp . 22 : accept}
+    }
+
+    chain inbound {
+        type filter hook input priority 0; policy drop;
+
+        # Allow traffic from established and related packets, drop invalid
+        ct state vmap { established : accept, related : accept, invalid : drop }
+
+        # allow loopback traffic, anything else jump to chain for further evaluation
+        iifname vmap { lo : accept, $DEV_WORLD : jump inbound_world, $DEV_VLAN1 : jump inbound_private_vlan1, $DEV_VLAN2 : jump inbound_private_vlan2 }
+
+        # the rest is dropped by the above policy
+    }
+
+    chain forward {
+        type filter hook forward priority 0; policy drop;
+
+        # Allow traffic from established and related packets, drop invalid
+        ct state vmap { established : accept, related : accept, invalid : drop }
+
+        # connections from the internal net to the internet: vlan2 to vlan1 and vlan2 to vlan1 not allowed
+        meta iifname . meta oifname { $DEV_VLAN1 . $DEV_WORLD, $DEV_VLAN2 . $DEV_WORLD, $DEV_WORLD . $DEV_VLAN1, $DEV_WORLD . $DEV_VLAN2 } accept
+
+        # the rest is dropped by the above policy
+    }
+
+    chain postrouting {
+        type nat hook postrouting priority 100; policy accept;
+
+        # masquerade private IP addresses
+        ip saddr $NET_VLAN1 meta oifname $DEV_WORLD counter masquerade
+        ip saddr $NET_VLAN2 meta oifname $DEV_WORLD counter masquerade
+    }
+}
+```
+
+Exécuter cette commande pour éditer le fichier `/etc/netplan/50-cloud-init.yaml` 
 
 ```bash
 sudo nano /etc/netplan/50-cloud-init.yaml
@@ -293,16 +336,38 @@ network:
             link: bond0
 ```
 
-Exécutez ces commandes pour appliquer la configuration :
+Exécutez ces commandes :
 
 ```bash
-# Apply network configuration
+#!/bin/bash
+set -eux
+
+apt update && apt upgrade -y
+
+# Disable cloud-init networking
+touch /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+echo "network: {config: disabled}">> /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+
+# Enable forwarding
+sed -i s/#net.ipv4.ip_forward/net.ipv4.ip_forward/g /etc/sysctl.conf
+sysctl net.ipv4.ip_forward
+
+# Ufw disabling
+sudo systemctl disable ufw
+sudo systemctl stop ufw
+
+# Appling network configuration
 sudo netplan apply
-# Reboot server
+
+# Nftables enabling
+sudo systemctl enable nftables
+sudo systemctl start nftables
+
+# system reboot
 sudo reboot
 ```
 
-La passerelle est disponible pour le Cluster Nutanix pour le VLAN1 et le VLAN2.
+La passerelle est disponible pour le Cluster Nutanix dans le VLAN1 et le VLAN2.
 
 
 ## Aller plus loin <a name="gofurther"></a>
