@@ -183,7 +183,7 @@ A seguir, escolha um datacenter para a sua instância Public Cloud.
 
 Neste passo, deve escolher um sistema operativo para a instância. As imagens disponíveis dependerão das escolhas feitas nos passos anteriores, nomeadamente no que se refere ao tipo de servidor e à região. Estarão igualmente disponíveis sistemas operativos com aplicações pré-instaladas.
 
-![image select](images/instance-creation-02.png){.thumbnail}
+![image select](images/instance-creation-02-2022.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,11 +192,11 @@ Se escolher um sistema operativo que requeira uma licença paga, os custos serã
 
 Este passo também exige que seja adicionada uma chave SSH (com exceção das instâncias Windows), seja colando a chave diretamente através de `Adicionar uma chave`{.action}, seja escolhendo-a da lista, partindo do princípio de que a armazenou previamente na Área de Cliente durante o [2.º passo](./#2o-passo-armazenamento-de-chaves-publicas-na-area-de-cliente-ovhcloud_1).
 
-![key select](images/instance-creation-03.png){.thumbnail}
+![key select](images/instance-creation-03-2022.png){.thumbnail}
 
 O 4.º passo permitirá configurar opções suplementares.
 
-![options select](images/instance-creation-04.png){.thumbnail}
+![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - Pode instalar múltiplas instâncias com a configuração escolhida (dentro dos limites da quota inicial mencionada acima).
 - Pode optar por criar uma instância flexível que lhe permita mais tarde fazer o downgrade para um modelo inferior (até mudando de categoria de modelo de servidor), mas isso irá limitar a instância a 50 GB de **armazenamento incluído**, independentemente de upgrades ou downgrades.
@@ -207,7 +207,7 @@ O 4.º passo permitirá configurar opções suplementares.
 
 Quando tiver concluído, clique em `Seguinte`{.action} para avançar para o último passo e escolher um método de faturação.
 
-![billing select](images/instance-creation-05.png){.thumbnail}
+![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
 Recomendamos que escolha a faturação horária caso tenha dúvidas a respeito do período de uso, pois não será possível fazê-lo depois. Terá a oportunidade de mudar para uma faturação mensal depois de a instância ficar disponível na página «Instâncias».
 

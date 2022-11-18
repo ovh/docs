@@ -183,7 +183,7 @@ En el próximo paso, deberá seleccionar un datacenter para su instancia de Publ
 
 En tercer lugar, deberá seleccionar un sistema operativo para su instancia. Las imágenes disponibles en este paso dependerán de las opciones que haya seleccionado en los pasos anteriores (p. ej., la compatibilidad con el tipo de servidor y la localización). También hay disponibles sistemas operativos con aplicaciones preinstaladas.
 
-![image select](images/instance-creation-02.png){.thumbnail}
+![image select](images/instance-creation-02-2022.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,11 +192,11 @@ Si selecciona un sistema operativo con licencia de pago, el coste se incluirá a
 
 En este paso también deberá añadir una clave SSH (salvo en instancias Windows). Para ello, puede copiar la clave directamente haciendo clic en `Añadir una llave`{.action} o seleccionar una clave de la lista de llaves disponibles (tal y como explicamos en el [paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud_1), deberá haber añadido su clave previamente al área de cliente de OVHcloud).
 
-![key select](images/instance-creation-03.png){.thumbnail}
+![key select](images/instance-creation-03-2022.png){.thumbnail}
 
 En el cuarto paso deberá configurar algunas opciones adicionales:
 
-![options select](images/instance-creation-04.png){.thumbnail}
+![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - desplegar múltiples instancias con la configuración seleccionada, siempre y cuando no supere el límite inicial;
 - crear una instancia flexible para poder pasar posteriormente a un modelo inferior (o incluso cambiar de modelo). Esta opción limitará el **almacenamiento incluido** de la instancia a 50 GB, independientemente de cualquier migración a un modelo superior o inferior;
@@ -207,7 +207,7 @@ En el cuarto paso deberá configurar algunas opciones adicionales:
 
 Una vez que hay seleccionado las opciones deseadas, haga clic en `Siguiente`{.action} y, por último, elija el tipo de facturación.
 
-![billing select](images/instance-creation-05.png){.thumbnail}
+![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
 Si tiene dudas sobre el período de uso, le recomendamos que elija la opción de facturación por horas, ya que no podrá modificar esta opción más adelante. Para pasar a la opción de facturación mensual, debe esperar a que su instancia esté disponible en la página «Instancias».
 

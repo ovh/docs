@@ -217,6 +217,8 @@ Le mode Privé vous offre la possibilité d'affecter vos instances uniquement à
 
 Une fois votre mode choisi, sélectionnez un réseau privé auquel attacher votre instance ou cliquez sur `Créer un nouveau réseau privé`{.action} pour en créer un nouveau.
 
+Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour passer à la dernière étape et définir votre mode de facturation.
+
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
 > [!warning]

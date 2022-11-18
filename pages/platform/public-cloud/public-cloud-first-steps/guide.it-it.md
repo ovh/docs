@@ -183,7 +183,7 @@ Nello step successivo, seleziona un datacenter per la tua istanza Public Cloud.
 
 Nello step 3 seleziona un sistema operativo per l’istanza. Le immagini disponibili in questo step dipenderanno dalle scelte effettuate negli step precedenti, ad esempio per quanto riguarda la compatibilità con il tipo di server e la regione. Sono disponibili anche sistemi operativi con applicazioni preinstallate. 
 
-![image select](images/instance-creation-02.png){.thumbnail}
+![image select](images/instance-creation-02-2022.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,11 +192,11 @@ Se scegli un sistema operativo che richiede una licenza a pagamento, i relativi 
 
 In questo step è necessario aggiungere una chiave SSH (ad eccezione delle istanze Windows). Per farlo hai due possibilità: puoi aggiungere la chiave direttamente cliccando sul pulsante `Aggiungi una chiave`{.action} oppure puoi selezionare la chiave dalla lista (a condizione di averla salvato nello Spazio Cliente durante lo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud_1)).
 
-![key select](images/instance-creation-03.png){.thumbnail}
+![key select](images/instance-creation-03-2022.png){.thumbnail}
 
 Lo Step 4 consente di configurare opzioni aggiuntive.
 
-![options select](images/instance-creation-04.png){.thumbnail}
+![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - È possibile implementare più istanze con la configurazione selezionata (nella quota iniziale di cui sopra).
 - È possibile scegliere di creare un’istanza flessibile che consenta di effettuare, in un secondo momento, il downgrade per un modello più piccolo (anche cambiando categoria del modello di server). Tuttavia, questo limiterà l’istanza a 50GB di**storage incluso**, a prescindere dalle operazioni di upgrade o downgrade.
@@ -207,7 +207,7 @@ Lo Step 4 consente di configurare opzioni aggiuntive.
 
 Una volta completata l’operazione, clicca su `Successivo`{.action} per procedere allo step finale e scegliere il metodo di pagamento.
 
-![billing select](images/instance-creation-05.png){.thumbnail}
+![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
 Se hai dubbi riguardo al periodo di utilizzo, ti consigliamo di scegliere la fatturazione oraria, in quanto non sarà possibile effettuare questa scelta in un secondo momento. Avrai la possibilità di passare alla fatturazione mensile non appena l’istanza sarà disponibile nella pagina “Istanze”.
 

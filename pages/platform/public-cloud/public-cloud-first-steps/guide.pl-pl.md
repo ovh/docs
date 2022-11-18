@@ -183,7 +183,7 @@ W następnym kroku wybierz centrum danych instancji Public Cloud.
 
 Trzecia opcja służy do wyboru systemu operacyjnego instancji. Obrazy dostępne w tym kroku zależą od wyborów dokonanych w poprzednich krokach, na przykład od zgodności z typem serwera i regionu. Dostępne są również systemy operacyjne z preinstalowanymi aplikacjami.
 
-![image select](images/instance-creation-02.png){.thumbnail}
+![image select](images/instance-creation-02-2022.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,11 +192,11 @@ Jeśli wybierzesz system operacyjny, który wymaga płatnej licencji, jej koszty
 
 W tym kroku należy też dodać klucz SSH (poza instancjami z systemem Windows) przez wklejenie bezpośrednio za pomocą przycisku `Dodaj klucz`{.action} lub wybranie z listy, o ile klucz został zapisany w Panelu klienta w [kroku 2](./#krok-2-przechowywanie-kluczy-publicznych-w-panelu-klienta-ovhcloud_1).
 
-![key select](images/instance-creation-03.png){.thumbnail}
+![key select](images/instance-creation-03-2022.png){.thumbnail}
 
 W czwartym kroku można skonfigurować dodatkowe opcje.
 
-![options select](images/instance-creation-04.png){.thumbnail}
+![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - Możesz wdrożyć wiele instancji z wybraną konfiguracją (w ramach wspomnianego powyżej limitu początkowego).
 - Możesz utworzyć instancję elastyczną, która umożliwia później przejście do mniejszego modelu (a nawet zmianę kategorii modelu serwera), ale zawsze ogranicza instancję do 50 GB **przestrzeni dyskowej**, niezależnie od tego, czy następuje przejście do wyższego, czy niższego modelu.
@@ -207,7 +207,7 @@ W czwartym kroku można skonfigurować dodatkowe opcje.
 
 Po zastosowaniu wybranych opcji kliknij przycisk `Dalej`{.action}, aby przejść do ostatniego kroku i wybrać metodę rozliczania.
 
-![billing select](images/instance-creation-05.png){.thumbnail}
+![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
 Jeśli masz wątpliwości dotyczące okresu użytkowania, zalecamy wybór rozliczania godzinowego, ponieważ później już nie można go wybrać. Gdy tylko instancja będzie dostępna na stronie “Instancje”, będziesz mieć możliwość zmiany na subskrypcję miesięczną.
 

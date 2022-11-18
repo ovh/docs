@@ -183,7 +183,7 @@ Wählen Sie im nächsten Schritt ein Rechenzentrum für Ihre Public Cloud Instan
 
 Im dritten Schritt wählen Sie das Betriebssystem für Ihre Instanz aus. Welche Images in diesem Schritt verfügbar sind, ist abhängig von Ihrer Auswahl in den vorangegangen Schritten, d. h. der Kompatibilität mit dem Servertyp und der Region. Es stehen auch Betriebssysteme mit vorinstallierten Anwendungen zur Verfügung.
 
-![Image auswählen](images/instance-creation-02.png){.thumbnail}
+![Image auswählen](images/instance-creation-02-2022.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,11 +192,11 @@ Wenn Sie ein Betriebssystem auswählen, das eine kostenpflichtige Lizenz erforde
 
 Auch für diesen Schritt muss ein SSH-Schlüssel hinzugefügt werden (ausgenommen Windows-Instanzen), indem dieser entweder direkt über `Schlüssel hinzufügen`{.action} eingefügt oder aus der Liste ausgewählt wird, wenn Sie diesen bereits in [Schritt 2](./#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern_1) im Kundencenter gespeichert haben.
 
-![Schlüssel auswählen](images/instance-creation-03.png){.thumbnail}
+![Schlüssel auswählen](images/instance-creation-03-2022.png){.thumbnail}
 
 Im vierten Schritt können zusätzliche Optionen konfiguriert werden.
 
-![Optionen auswählen](images/instance-creation-04.png){.thumbnail}
+![Optionen auswählen](images/instance-creation-04-2022.png){.thumbnail}
 
 - Sie können mehrere Instanzen mit den gewählten Einstellungen deployen (innerhalb der zuvor erwähnten Quota).
 - Sie können eine flexible Instanz erstellen, damit Sie im Nachhinein auch auf ein kleineres Modell (oder sogar andere Servermodellkategorien) wechseln können. Diese Option begrenzt jedoch den **inklusiven Speicherplatz** der Instanz auf 50 GB, unabhängig davon, ob auf ein höheres oder ein geringeres Modell migriert wird.
@@ -207,7 +207,7 @@ Im vierten Schritt können zusätzliche Optionen konfiguriert werden.
 
 Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf `Weiter`{.action}, um zum letzten Schritt überzugehen und eine Abrechnungsmethode auszuwählen.
 
-![Abrechnungsmethode auswählen](images/instance-creation-05.png){.thumbnail}
+![Abrechnungsmethode auswählen](images/instance-creation-05-2022.png){.thumbnail}
 
 Wir empfehlen Ihnen, bei Unsicherheit bezüglich des Verwendungszeitraums die stündliche Abrechnung auszuwählen, da es nicht möglich ist, im Nachhinein zu dieser Option zu wechseln. Sobald die Instanz auf der “Instanzen”-Seite verfügbar ist, können Sie auf monatliche Abrechnung umstellen.
 
