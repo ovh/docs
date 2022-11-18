@@ -52,7 +52,7 @@ Toujours dans dans votre espace client OVHcloud allez sur l'onglet `Bare Metal C
 
 ![02 getnetworkinformation 01](images/02-getnetworkinformation01.png){.thumbnail}
 
-En bas à droite de la page vous verrez apparaitre la liste des interfaces avecs leur **MAC address** (2 sur le réseau public, 2 sur le réseau privé). Notez ou copiez ces **MAC address** avec le réseau associé. 
+Allez en bas à droite et notez dans **Network Interfaces** les adresses MAC associées au réseau public et au réseau privé (deux adresses MAC par réseau).
 
 ![02 getnetworkinformation 02](images/02-getnetworkinformation02.png){.thumbnail}
 
