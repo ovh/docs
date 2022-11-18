@@ -246,51 +246,51 @@ sudo nano /etc/netplan/50-cloud-init.yaml
 # /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
 # network: {config: disabled}
 network:
-    version: 2
-    ethernets:
-        enp26s0f0np0:
-            accept-ra: false
-            addresses:
-            - 2001:41d0:20b:4500::/56
-            dhcp4: true
-            gateway6: fe80::1
-            match:
-                macaddress: 0c:42:a1:65:d4:16
-            nameservers:
-                addresses:
-                - 2001:41d0:3:163::1
-            set-name: enp26s0f0np0
-        #vRack interface
-        enp96s0f0np0:
-            match:
-                macaddress: 04:3f:72:bf:13:9e
-            optional: true
-        enp96s0f1np1:
-            match:
-                macaddress: 04:3f:72:bf:13:9f
-            optional: true
-    bonds:
-        bond0:
-            dhcp4: no
-            addresses: [192.168.254.2/24]
-            interfaces: [enp96s0f0np0,enp96s0f1np1]
-            parameters:
-                mode: 802.3ad
-                transmit-hash-policy: layer3+4
-                mii-monitor-interval: 100
-    vlans:
-        bond0.1:
-            dhcp4: no
-            dhcp6: no
-            id: 1
-            addresses: [172.16.3.254/22]
-            link: bond0
-        bond0.2:
-            dhcp4: no
-            dhcp6: no
-            id: 2
-            addresses: [10.2.3.254/22]
-            link: bond0
+    version: 2
+    ethernets:
+        enp26s0f0np0:
+            accept-ra: false
+            addresses:
+            - 2001:41d0:20b:4500::/56:
+            dhcp4: true
+            gateway6: fe80::1
+            match:
+                macaddress: 0c:42:a1:65:d4:16
+            nameservers:
+                addresses:
+                - 2001:41d0:3:163::1:
+            set-name: enp26s0f0np0
+        #vRack interface
+        enp96s0f0np0:
+            match:
+                macaddress: 04:3f:72:bf:13:9e
+            optional: true
+        enp96s0f1np1:
+            match:
+                macaddress: 04:3f:72:bf:13:9f
+            optional: true
+    bonds:
+        bond0:
+            dhcp4: no
+            addresses: [192.168.254.2/24]
+            interfaces: [enp96s0f0np0, enp96s0f1np1]
+            parameters:
+                mode: 802.3ad
+                transmit-hash-policy: layer3+4
+                mii-monitor-interval: 100
+    vlans:
+        bond0.1:
+            dhcp4: no
+            dhcp6: no
+            id: 1
+            addresses: [172.16.3.254/22]
+            link: bond0
+        bond0.2:
+            dhcp4: no
+            dhcp6: no
+            id: 2
+            addresses: [10.2.3.254/22]
+            link: bond0
 ```
 
 Exécutez ces commandes pour appliquer la configuration :
