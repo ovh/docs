@@ -133,7 +133,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Traiter les incidents matériels et réseau (tickets et contacts téléphoniques) | AI | RA |
 | Traiter les autres incidents | RA |  |
-| Remplacer les éléments matériels défectueux du Serveur Dédié | I | RA |
+| Remplacer les éléments matériels défectueux de l'Infrastructure en support des Instances | I | RA |
 | Restaurer les sauvegardes de l'Instance | RA |  |
 | Restaurer les sauvegardes en cas de souscription à une option gérée par OVHcloud | A | R |
 
