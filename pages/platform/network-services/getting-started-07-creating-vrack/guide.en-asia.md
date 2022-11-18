@@ -190,7 +190,7 @@ Once done, click on `Create`{.action} to start the process.
 > Creating the private network may take several minutes.
 >
 
-#### Creating a VLAN with the OVHcloud APIv6
+#### Creating a VLAN with the OVHcloud APIv6 <a name="vlansetup"></a>
 
 To create a VLAN using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/asia/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) of the corresponding guide.
 

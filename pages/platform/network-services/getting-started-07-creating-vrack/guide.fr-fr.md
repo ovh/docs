@@ -192,13 +192,13 @@ Dans le cas où vous devez faire communiquer des serveurs dédiés OVHcloud avec
 
 La plage DHCP par défaut est en 10.0.0.0/16. Pour modifier cette plage IP, vous devrez obligatoirement passer par les APIv6 OVHcloud.
 
-Une fois terminé, cliquez sur `Créer`{.action} pour lancer le processus.
+Une fois vos choix faits, cliquez sur `Créer`{.action} pour lancer le processus.
 
 > [!primary]
 > La création du réseau privé peut prendre plusieurs minutes.
 >
 
-#### Créer un VLAN depuis les APIv6 OVHcloud
+#### Créer un VLAN depuis les APIv6 OVHcloud <a name="vlansetup"></a>
 
 Pour créer un VLAN depuis les APIv6 OVHcloud, cliquez [ici](https://docs.ovh.com/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1) pour consulter le guide spécifique à cette méthode.
 
