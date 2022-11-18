@@ -155,7 +155,7 @@ echo 'bonding' | tee -a /etc/modules
 
 # Disable cloud-init networking
 touch /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-echo "network: {config: disabled}">> /etc/cloud/cloud.cfg.d/99-disabl"ii:ii:yy:yy:yy:yy""e-network-config.cfg
+echo "network: {config: disabled}">> /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 
 # Enable forwarding
 sed -i s/#net.ipv4.ip_forward/net.ipv4.ip_forward/g /etc/sysctl.conf
