@@ -1,7 +1,7 @@
 ---
 title: "AI Deploy - Portfolio d'app (EN)"
 slug: deploy/apps-portfolio
-excerpt: A collection of AI apps that can be easily deployed with AI Deploy
+excerpt: Une collection d'apps d'intelligence artificielle pouvant être déployées AI Deploy
 section: AI Deploy guides
 order: 05
 routes:
