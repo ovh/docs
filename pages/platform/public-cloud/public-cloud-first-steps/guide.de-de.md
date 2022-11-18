@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 1
 ---
 
-**Letzte Aktualisierung am 02.08.2022**
+**Letzte Aktualisierung am 17.11.2022**
 
 ## Ziel
 
@@ -202,8 +202,19 @@ Im vierten Schritt können zusätzliche Optionen konfiguriert werden.
 - Sie können eine flexible Instanz erstellen, damit Sie im Nachhinein auch auf ein kleineres Modell (oder sogar andere Servermodellkategorien) wechseln können. Diese Option begrenzt jedoch den **inklusiven Speicherplatz** der Instanz auf 50 GB, unabhängig davon, ob auf ein höheres oder ein geringeres Modell migriert wird.
 - Sie können den Anzeigenamen Ihrer Instanz ändern.
 - Sie können ein Post-Installationsskript hinzufügen.
-- Sie können die Instanz(en) zu einem vorhandenen privaten Netzwerk (vRack) hinzufügen.
 - Sie können automatische Backups für die Instanz(en) aktivieren. Bitte achten Sie hierbei auf die Preisinformationen sowie die Optionen zur Backup-Rotation.
+
+Wenn Sie fertig sind, klicken Sie auf `Weiter`{.action}, um Ihr Netzwerk zu konfigurieren.
+
+![configure network](images/network-selection.png){.thumbnail}
+
+Je nach geplanter Nutzung Ihrer Instanzen können Sie den **Öffentlicher Modus** oder **Privater Modus** auswählen.
+
+Der Öffentlicher Modus ist das klassische Netzwerkmodell und erlaubt es Ihren Instanzen, einen eigenen öffentlichen Netzwerk-Port einzurichten. Jede Instanz ist mit dem vRack verbunden und verfügt über eine öffentliche und eine private IP.
+
+Der Privater Modus bietet Ihnen die Möglichkeit, Ihre Instanzen ausschließlich einem privaten Netzwerk zuzuweisen. Die Instanzen dieses Modus können dem öffentlichen Netzwerk nur mit einem Gateway oder Loadbalancer mit Floating IPs ausgesetzt werden. Weitere Informationen finden Sie in unserer Dokumentation zu den [Netzwerklösungen für die OVHcloud Public Cloud](https://docs.ovh.com/de/publiccloud/network-services/).
+
+Wählen Sie nach der Wahl Ihr privates Netzwerk aus, an das Ihre Instanz angehängt werden soll, oder klicken Sie auf `Ein neues privates Netzwerk erstellen`{.action}, um ein neues zu erstellen.
 
 Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf `Weiter`{.action}, um zum letzten Schritt überzugehen und eine Abrechnungsmethode auszuwählen.
 
