@@ -1,7 +1,7 @@
 ---
-title: CLI - Référence des commandes (EN)
+title: CLI - Principales commandes (EN)
 slug: cli/overview-cli
-excerpt: Learn how to use the CLI to interact with AI Training
+excerpt: Découvrez les principales commandes de la CLI pour interagir sur les AI Tools
 section: Command Line Interface
 order: 205
 routes:
@@ -221,4 +221,4 @@ ovhai config set <region>
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)

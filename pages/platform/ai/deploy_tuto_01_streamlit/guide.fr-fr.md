@@ -1,7 +1,7 @@
 ---
-title: AI Deploy - Tutoriel - Créer et utiliser une image Streamlit (EN)
+title: AI Deploy - Tutoriel - Construire & utiliser une image Streamlit (EN)
 slug: deploy/build-use-streamlit-image
-excerpt: How to build and use a custom Docker image containing a Streamlit application
+excerpt: Comment construire et utiliser votre propre image Docker contenant une application Streamlit
 section: AI Deploy - Tutoriels
 order: 01
 routes:

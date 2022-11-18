@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Premiers pas (EN)
 slug: notebooks/definition
-excerpt: Learn how to simply bootstrap an AI Notebook
+excerpt: Découvrez comment lancer un AI Notebooks
 section: AI Notebooks - Guides
 order: 02
 routes:

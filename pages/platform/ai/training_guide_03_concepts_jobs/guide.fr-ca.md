@@ -1,7 +1,7 @@
 ---
-title: "AI Training - Concept d'un job (EN)"
+title: AI Training - Concept (EN)
 slug: training/jobs
-excerpt: Learn the concept behind AI Training jobs
+excerpt: Découvrez le concept des jobs AI Training
 section: AI Training - Guides
 order: 03
 routes:

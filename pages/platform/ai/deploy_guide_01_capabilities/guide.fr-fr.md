@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Capacités et limites (EN)
 slug: deploy/capabilities
-excerpt: Discover the capabilities and limitations of AI Deploy
+excerpt: Découvrez toutes les capacités et limites d'AI Deploy
 section: AI Deploy - Guides
 order: 01
 routes:

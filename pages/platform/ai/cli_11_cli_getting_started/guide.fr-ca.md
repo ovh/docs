@@ -1,7 +1,7 @@
 ---
-title: CLI - Lancer un notebook AI (EN)
+title: CLI - Lancer un AI Notebook (EN)
 slug: cli/getting-started-cli
-excerpt: Learn how to run an AI Notebook using the CLI
+excerpt: Découvrez comment lancer un AI Notebooks avec la CLI
 section: Command Line Interface
 order: 201
 routes:

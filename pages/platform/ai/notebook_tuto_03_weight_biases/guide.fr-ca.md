@@ -1,7 +1,7 @@
 ---
-title: AI Notebooks - Tutoriel - Intégration des poids et biais (EN)
+title: AI Notebooks - Tutoriel - Intégration de Weights & Biases (EN)
 slug: notebooks/tuto-weights-and-biases
-excerpt: How to use wandb in notebooks  
+excerpt: Comment utiliser Wandb dans vos AI Notebooks
 section: AI Notebooks - Tutoriels
 order: 03
 routes:

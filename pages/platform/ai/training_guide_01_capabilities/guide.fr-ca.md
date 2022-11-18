@@ -1,7 +1,7 @@
 ---
 title: AI Training - Capacités et limites (EN)
 slug: training/capabilities
-excerpt: Find out about current capabilities and limitations of AI Training
+excerpt: Découvrez toutes les capacités et limites d'AI Training
 section: AI Training - Guides
 order: 01
 routes:

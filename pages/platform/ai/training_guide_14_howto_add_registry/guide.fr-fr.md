@@ -1,7 +1,7 @@
 ---
-title: AI Training - Gérer les registres Docker (EN)
+title: AI Training - Gérer vos registres Docker (EN)
 slug: training/add-private-registry
-excerpt: Learn how to add your own registry to AI Training via UI
+excerpt: Découvrez comment ajouter votre registry privée à votre job AI Training
 section: AI Training - Guides
 order: 05
 routes:

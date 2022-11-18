@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Premiers pas (EN)
 slug: deploy/getting-started
-excerpt: Discover AI Deploy and unfold your first application
+excerpt: Découvrez AI Deploy et lancez votre première application
 section: AI Deploy - Guides
 order: 02
 routes:

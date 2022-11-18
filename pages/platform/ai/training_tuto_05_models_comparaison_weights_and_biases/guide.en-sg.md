@@ -1,5 +1,5 @@
 ---
-title: AI Training - Tutorial - Compare models with Weights & Biases for audio classification task
+title: AI Training - Tutorial - Compare models with W&B for audio classification task
 slug: training/tuto-models-comparaison-weights-and-biases
 excerpt: Compare 2 models by running 2 jobs in parallel. See which one performs best on your data!
 section: AI Training - Tutorials

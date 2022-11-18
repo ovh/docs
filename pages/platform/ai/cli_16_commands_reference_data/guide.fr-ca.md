@@ -1,7 +1,7 @@
 ---
-title: CLI - Référence des commandes pour les données (EN)
+title: CLI - Principales commandes pour les données (EN)
 slug: cli/data-cli
-excerpt: Learn how to manage your object storage data with the ovhai CLI
+excerpt: Découvrez les principales commandes pour gérer vos données sur votre object storage avec la CLI ovhai
 section: Command Line Interface
 order: 206
 routes:
@@ -271,4 +271,4 @@ ovhai data delete GRA my-container file1
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)

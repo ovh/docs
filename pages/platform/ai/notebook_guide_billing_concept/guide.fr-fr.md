@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Facturation et cycle de vie (EN)
 slug: notebooks/billing
-excerpt: Learn how we bill AI Notebooks
+excerpt: Découvrez comment sont facturés les AI Notebooks
 section: AI Notebooks - Guides
 order: 5
 routes:

@@ -1,7 +1,7 @@
 ---
 title: CLI - Installation (EN)
 slug: cli/install-client
-excerpt: Learn how to install the CLI to interact with AI Tools
+excerpt: Découvrez comment installer la CLI afin d'interagir avec les AI Tools
 section: Command Line Interface
 order: 200
 routes:

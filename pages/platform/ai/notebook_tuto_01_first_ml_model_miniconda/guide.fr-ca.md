@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Tutoriel - Créez votre premier modèle de Machine Learning (EN)
 slug: notebooks/tuto-first-ml-model-miniconda
-excerpt: How to build your first Machine Learning model thanks to Miniconda
+excerpt: Comment construire votre premier modèle de Machine Learning grâce à Miniconda
 section: AI Notebooks - Tutoriels
 order: 01
 routes:

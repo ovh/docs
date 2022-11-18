@@ -1,7 +1,7 @@
 ---
-title: "CLI - Gérer les jetons d'accès (EN)"
+title: CLI - Se servir des tokens d'accès (EN)
 slug: cli/app-token-cli
-excerpt: Learn how to create Application tokens with the ovhai CLI
+excerpt: Découvrez comment créer des tokens d'accès avec la CLI ovhai
 section: Command Line Interface
 order: 203
 routes:
@@ -113,4 +113,4 @@ ovhai token renew <token-id>
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)

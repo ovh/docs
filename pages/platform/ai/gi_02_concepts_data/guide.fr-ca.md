@@ -1,7 +1,7 @@
 ---
 title: Données - Concept et bonnes pratiques (EN)
 slug: data
-excerpt: Learn the concept behind AI Tools data
+excerpt: Comprendre les bonnes pratiques sur les données avec les AI Tools
 section: Informations générales
 order: 105
 routes:

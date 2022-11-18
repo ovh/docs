@@ -1,7 +1,7 @@
 ---
-title: "AI Deploy - Tutoriel - Déployer une application pour une tâche de classification audio à l'aide de Streamlit (EN)"
+title: AI Deploy - Tutoriel - Déployez une app de classification audio grâce à Streamlit (EN)
 slug: deploy/tuto-streamlit-sounds-classification
-excerpt: How to deploy a Streamlit app to classify marine mammal sounds
+excerpt: Comment déployer une app Streamlit pour classifier les sons des mammifères marins
 section: AI Deploy - Tutoriels
 order: 03
 routes:

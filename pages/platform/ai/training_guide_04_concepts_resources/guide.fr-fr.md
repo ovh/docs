@@ -1,7 +1,7 @@
 ---
-title: AI Training - Surveillez vos ressources cloud (EN)
+title: AI Training - Suivre vos ressources cloud (EN)
 slug: training/resources
-excerpt: Learn the resources provided by AI Training jobs
+excerpt: Faites le suivi des ressources cloud utilisées par vos jobs AI Training
 section: AI Training - Guides
 order: 04
 routes:

@@ -1,7 +1,7 @@
 ---
 title: Tableaux comparatifs entre AI Notebooks, AI Training, AI Deploy (EN)
 slug: ai-comparative-tables
-excerpt: Discover the main differences between each of the OVHcloud AI tools' bricks
+excerpt: Découvrir les principales différences entre chaque AI Tools d'OVHcloud
 section: Informations générales
 order: 100
 routes:

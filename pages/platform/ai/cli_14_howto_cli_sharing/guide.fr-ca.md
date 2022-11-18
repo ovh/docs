@@ -1,7 +1,7 @@
 ---
-title: CLI - Lancer et partager un AI Notebook avec des jetons (EN)
+title: CLI - Lancer et partager un AI Notebook avec un token (EN)
 slug: cli/sharing-notebooks
-excerpt: Learn how to share a notebook
+excerpt: Découvrez comment partager un AI Notebooks avec un token
 section: Command Line Interface
 order: 204
 routes:
@@ -68,11 +68,11 @@ Created At: 27-05-21 14:01
 Updated At: 27-05-21 14:01
 User:       user-uY7UNgjpKBPY
 Spec:       
-  Resources: 
+  Resources:
     GPU:       1
     GPU Model: Tesla-V100S
     CPU:       13
-  Volumes: 
+  Volumes:
   Labels:  
   Unsecure: false
   Env:     
@@ -82,7 +82,7 @@ Spec:
 Status:     
   State:           RUNNING
   Infos:           
-  Transitioned At: 
+  Transitioned At:
   Duration:        53s
   Url:             https://d8d809f2-717b-4b60-9881-07e6987a144d.notebook.gra.training.ai.cloud.ovh.net
   Monitoring Url:  https://monitoring.gra.training.ai.cloud.ovh.net/d/gpu?var-notebook=d8d809f2-717b-4b60-9881-07e6987a144d&from=1622124009877
@@ -170,11 +170,11 @@ Wait a few seconds for the notebook to be in the `RUNNING` state.
     Updated At: 27-05-21 14:03
     User:       user-uY7UNgjpKBPY
     Spec:       
-      Resources: 
+      Resources:
         GPU:       1
         GPU Model: Tesla-V100S
         CPU:       13
-      Volumes: 
+      Volumes:
       Labels:  
         subject: image-recognition
       Unsecure: false
@@ -185,7 +185,7 @@ Wait a few seconds for the notebook to be in the `RUNNING` state.
     Status:     
       State:           RUNNING
       Infos:           
-      Transitioned At: 
+      Transitioned At:
       Duration:        34s
       Url:             https://3cd20aa3-3f5d-49be-b027-ccaf6dd06f01.notebook.gra.training.ai.cloud.ovh.net
       Monitoring Url:  https://monitoring.gra.training.ai.cloud.ovh.net/d/gpu?var-notebook=3cd20aa3-3f5d-49be-b027-ccaf6dd06f01&from=1622124160516
@@ -255,11 +255,11 @@ Created At: 27-05-21 14:06
 Updated At: 27-05-21 14:06
 User:       user-uY7UNgjpKBPY
 Spec:       
-  Resources: 
+  Resources:
     GPU:       1
     GPU Model: Tesla-V100S
     CPU:       13
-  Volumes: 
+  Volumes:
   Labels:  
   Unsecure: true
   Env:     
@@ -269,7 +269,7 @@ Spec:
 Status:     
   State:           RUNNING
   Infos:           
-  Transitioned At: 
+  Transitioned At:
   Duration:        20s
   Url:             https://8e3ac445-0b47-4eea-9269-19a36b7213c7.notebook.gra.training.ai.cloud.ovh.net
   Monitoring Url:  https://monitoring.gra.training.ai.cloud.ovh.net/d/gpu?var-notebook=8e3ac445-0b47-4eea-9269-19a36b7213c7&from=1622124347366
@@ -283,4 +283,4 @@ In this example, the `Url` is `https://8e3ac445-0b47-4eea-9269-19a36b7213c7.note
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)

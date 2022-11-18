@@ -1,7 +1,7 @@
 ---
-title: AI Notebooks - Fonctionnalités, capacités et limitations (EN)
+title: AI Notebooks - Caractéristiques, capacités et limites (EN)
 slug: notebooks/capabilities
-excerpt: Find out about current features, capabilities and limitations of AI Notebooks
+excerpt: Découvrez les principales caractéristiques, capacités et limites des AI Notebooks
 section: AI Notebooks - Guides
 order: 04
 routes:

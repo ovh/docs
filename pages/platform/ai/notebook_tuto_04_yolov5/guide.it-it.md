@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Tutorial - Train YOLOv5 on a custom dataset
 slug: notebooks/yolov5-example
-excerpt: Example on how to use a YOLOv5 model on AI Training
+excerpt: How to train the YOLOv5 model on a custom dataset with AI Notebooks
 section: AI Notebooks - Tutorials
 order: 04
 routes:

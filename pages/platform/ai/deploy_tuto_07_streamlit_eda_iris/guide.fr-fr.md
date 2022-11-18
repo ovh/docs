@@ -1,7 +1,7 @@
 ---
-title: "AI Deploy - Tutoriel - Déployer une application interactive pour l'EDA et la prédiction à l'aide de Streamlit (EN)"
+title: AI Deploy - Tutoriel - Déployez une app interactive pour l'EDA et la prédiction en utilisant Streamlit (EN)
 slug: deploy/tuto-streamlit-eda-iris
-excerpt: How to deploy a Streamlit app for interactive data visualization and prediction
+excerpt: Comment déployer une app Streamlit pour de la prédiction et visualisation interactive de données
 section: AI Deploy - Tutoriels
 order: 07
 routes:

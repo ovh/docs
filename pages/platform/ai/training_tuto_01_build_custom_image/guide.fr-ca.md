@@ -1,7 +1,7 @@
 ---
-title: AI Training - Tutoriel - Créer et utiliser une image Docker personnalisée (EN)
+title: AI Training - Tutoriel - Construire & utiliser une image Docker personnalisée (EN)
 slug: training/build-use-custom-image
-excerpt: Explanations on how to build and use your own custom image
+excerpt: Comment construire et utiliser votre propre image Docker
 section: AI Training - Tutoriels
 order: 01
 routes:

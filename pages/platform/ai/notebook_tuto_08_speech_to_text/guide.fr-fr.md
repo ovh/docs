@@ -1,7 +1,7 @@
 ---
-title: "AI Notebooks - Tutoriel - Utiliser Speech-to-Text sur l'audio et la vidéo (EN)"
+title: AI Notebooks - Tutoriel - Utilisez le Speech-to-Text sur des audios et vidéos (EN)
 slug: notebooks/tuto-speech-to-text-recognition
-excerpt: How to convert Speech to Text using AI Notebooks
+excerpt: Comment faire de la reconnaissance automatique de la parole pour la transcrire sous forme de texte en utilisant AI Notebooks
 section: AI Notebooks - Tutoriels
 order: 08
 routes:

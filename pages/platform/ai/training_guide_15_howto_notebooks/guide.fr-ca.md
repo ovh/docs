@@ -1,7 +1,7 @@
 ---
-title: AI Training - Démarrer une tâche avec une image Docker de type notebook (EN)
+title: AI Training - Démarrer un job avec une image Docker pour notebook (EN)
 slug: training/start-use-notebooks
-excerpt: Learn how to start and use notebooks over AI training
+excerpt: Découvrez comment utiliser un notebook dans AI Training
 section: AI Training - Guides
 order: 06
 routes:

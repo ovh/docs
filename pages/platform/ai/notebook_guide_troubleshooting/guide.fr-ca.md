@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Dépannage (EN)
 slug: notebooks/debug-notebooks
-excerpt: Tutorial about how to debug your notebooks
+excerpt: Principales erreurs et comment dépanner votre AI Notebooks
 section: AI Notebooks - Guides
 order: 05
 routes:

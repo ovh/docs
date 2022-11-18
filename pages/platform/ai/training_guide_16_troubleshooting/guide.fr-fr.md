@@ -1,7 +1,7 @@
 ---
 title: AI Training - Dépannage (EN)
 slug: training/debug-jobs
-excerpt: Tutorial about how to debug your jobs
+excerpt: Principales erreurs et comment dépanner vos jobs AI Training
 section: AI Training - Guides
 order: 07
 routes:

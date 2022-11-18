@@ -1,7 +1,7 @@
 ---
-title: "Aide-mémoire de la CLI d'ovhai (EN)"
+title: ovhai CLI - Mémo des commandes (EN)
 slug: cheat-sheet
-excerpt: Find all the useful commands for OVHcloud AI Training ovhai CLI
+excerpt: Retrouvez les principales commandes de la CLI ovhai
 section: Informations générales
 order: 107
 routes:
@@ -24,4 +24,4 @@ The goal of this cheat sheet is to provide a quick reference to all the commands
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)

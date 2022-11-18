@@ -1,7 +1,7 @@
 ---
-title: "AI Notebooks - Gérez et utilisez les données d'un notebook via l'interface utilisateur (EN)"
+title: AI Notebooks - Se servir de données dans un notebook via l'espace client (UI) (EN)
 slug: notebooks/manage-data-ui
-excerpt: Learn how to manage and access data from your Object Storage in your Notebook
+excerpt: Découvrez comment gérer et accéder aux données de votre Object Storage depuis votre AI Notebooks
 section: AI Notebooks - Guides
 order: 03
 routes:

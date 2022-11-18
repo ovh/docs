@@ -1,7 +1,7 @@
 ---
-title: "Utilisateurs - Gérer les utilisateurs et les rôles de l'AI (EN)"
+title: Utilisateurs - Gérer les utilisateurs AI et leurs rôles (EN)
 slug: users
-excerpt: Learn the concept behind AI Training users
+excerpt: Comprendre le concept des utilisateurs des AI Tools
 section: Informations générales
 order: 104
 routes:

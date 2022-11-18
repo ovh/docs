@@ -1,7 +1,7 @@
 ---
-title: AI Deploy - Accéder à votre application avec des jetons (EN)
+title: AI Deploy - Accéder à vos apps via tokens (EN)
 slug: deploy/tokens
-excerpt: Discover how to create a scoped token and query your AI Deploy app
+excerpt: Découvrez comment créer un token pour votre app AI Deploy
 section: AI Deploy - Guides
 order: 03
 routes:

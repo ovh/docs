@@ -1,7 +1,7 @@
 ---
-title: AI Training - Tutoriel - Se connecter à distance via VSCode (EN)
+title: AI Training - Tutoriel - Connectez-vous à VS Code à distance (EN)
 slug: training/vscode-remote-code
-excerpt: Tutorial to configure Remote Visual Studio with AI Training
+excerpt: Comment configurer VS Code pour utiliser AI Training à distance
 section: AI Training - Tutoriels
 order: 03
 routes:

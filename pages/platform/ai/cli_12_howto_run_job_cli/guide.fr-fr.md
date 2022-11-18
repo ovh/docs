@@ -1,7 +1,7 @@
 ---
 title: CLI - Lancer un job AI Training (EN)
 slug: cli/run-job-cli
-excerpt: Learn how to run an AI Training job using the CLI
+excerpt: Découvrez comment lancer un job AI Training avec la CLI
 section: Command Line Interface
 order: 202
 routes:
