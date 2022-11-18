@@ -210,7 +210,7 @@ Se os ficheiros de origem do WordPress foram corretamente colocados na sua pasta
 
 ![hosting](images/WPselectlangue.png){.thumbnail}
 
-Selecione a língua do website e clique em Continuer {.action}.
+Selecione a língua do website e clique em `Continuer`{.action}.
 
 ##### 3.2 - Associar o seu WordPress e a sua base de dados
 

@@ -58,7 +58,7 @@ Consulte nuestra guía sobre [cómo añadir un multisitio a un alojamiento web](
 - Asegúrese de que el dominio que utilice para acceder a su WordPress y al subdominio en "www" apuntan correctamente a la dirección IP de su plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).
 
 Para obtener la dirección IP de su plan de hosting, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Web Cloud`{.action} y seleccione su plan de hosting en la sección `Alojamientos`{.action}.<br>
-En el recuadro `Información general`{.action}", a su derecha, encontrará la dirección IP de su alojamiento web en el formulario `IPv4`{.action}.
+En el recuadro `Información general`{.action}, a su derecha, encontrará la dirección IP de su alojamiento web en el formulario `IPv4`{.action}.
 
 Si la zona DNS activa de su dominio está gestionada en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), compare la dirección IP de su alojamiento con la presente en la zona DNS de su dominio, ayudándole a nuestra documentación sobre las [zonas DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/).
 
