@@ -66,7 +66,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Décider d’ajouter / supprimer une option sur l'Instance | RA | I |
 | Réaliser l’ajout / suppression des options ou du matériel sur l'Instance | I | RA |
 | Installer les briques de sécurité nécessaires en fonction des besoins | RA |  |
-| Administrer les applicatifs installés sur l'Instance | RA | I |
+| Administrer les applicatifs installés sur l'Instance | RA |   |
 | Réaliser les backups | RA |  |
 | Réaliser les backups suite à la demande du Client (en option) | CI | RA |
 
