@@ -219,6 +219,8 @@ Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour passer à la der
 
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
+Nous recommandons de choisir la facturation horaire en cas de doute sur la période d'utilisation, car il n'est pas possible de la choisir après la livraison du service. Vous aurez la possibilité de passer à un abonnement mensuel dès que l'instance sera disponible sur la page "Instances".
+
 > [!warning]
 >
 >Si vous choisissez d'être facturé à l'heure, vous continuerez à être facturé tant que l'instance n'est pas supprimée. Même si l'instance n'est pas utilisée.
