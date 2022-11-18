@@ -211,11 +211,11 @@ Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour configurer votre
 
 En fonction de l'utilisation envisagée de vos instances, vous pouvez sélectionner le **Mode Public** ou **Mode Privé**. 
 
-Le mode Public est le modèle de réseau classique, il permet à vos instances de d'avoir un port réseau public rattaché. Associée au vrack, chaque instance possède une IP publique et une IP privée.
+Le mode Public est le modèle de réseau classique, il permet à vos instances d'avoir un port réseau public rattaché. Associée au vrack, chaque instance possède une IP publique et une IP privée.
 
-Le mode Privé vous offre la possibilité d'affecter vos instances uniquement à un réseau privé. Les instances de ce mode ne peuvent être exposées au réseau public qu'à l'aide d'un service Gateway ou Loadbalancer avec des floating IPs. Pour plus d'informations, consultez notre documentation sur les [solutions réseau pour le Public Cloud OVHcloud](https://docs.ovh.com/fr/publiccloud/network-services/).
+Le mode Privé vous offre la possibilité d'affecter vos instances uniquement à un réseau privé. Les instances de ce mode ne peuvent être exposées au réseau public qu'à l'aide d'un service Gateway ou Load Balancer avec des Floating IPs. Pour plus d'informations, consultez notre documentation sur les [solutions réseau pour le Public Cloud OVHcloud](https://docs.ovh.com/fr/publiccloud/network-services/).
 
-Une fois le mode choisi, sélectionnez un réseau privé auquel attacher votre instance ou cliquez sur `Créer un nouveau réseau privé`{.action} pour en créer un nouveau.
+Une fois votre mode choisi, sélectionnez un réseau privé auquel attacher votre instance ou cliquez sur `Créer un nouveau réseau privé`{.action} pour en créer un nouveau.
 
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
