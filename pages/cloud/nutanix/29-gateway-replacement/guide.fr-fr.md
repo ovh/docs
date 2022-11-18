@@ -171,11 +171,6 @@ ip a | grep -C1 UP
 
 Vous verrez apparaitre 2 cartes avec l'état **UP**, la carte loopback et une carte physique dont l'adresse MAC doit correspondre à une des adresses publiques notés dans l'espace client OVHcloud. récuperer le nom de cette carte privé 
 
-
-> [!primary]
-> 
->
-
 ```bash
 1: "lo": <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -185,8 +180,7 @@ Vous verrez apparaitre 2 cartes avec l'état **UP**, la carte loopback et une ca
     link/ether "mac-address-public-card1" brd ff:ff:ff:ff:ff:ff
 ```
 
-
-
+Les informations importantes à garder sont les suivantes :
 
 * "publiccardname1" : Le nom de la première carte publique. 
 * "mac-address-public-card1" : L'addresse MAC de la première carte réseau publique.
@@ -203,7 +197,7 @@ Exécutez cette commande pour éditer le fichier `/etc/nftables.conf`
 sudo nano /etc/nftables.conf
 ```
 
-Modifiez le contenu du fichier en remplaçant "publiccardname1" par le nom de la carte réseau publique
+Modifiez le contenu du fichier en remplaçant `"publiccardname1"` par le nom correspondant dans votre configuration.
 
 ```conf
 flush ruleset
@@ -282,6 +276,17 @@ Exécuter cette commande pour éditer le fichier `/etc/netplan/50-cloud-init.yam
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
+Modifiez le contenu du fichier en remplaçant ces noms : 
+
+* `"publiccardname1"`
+* `"mac-address-public-card1"` 
+* `"privatecardname1"`
+* `"mac-address-private-card1"`
+* `"privatecardname2"` 
+* `"mac-address-private-card2"`
+
+par les noms des cartes et les adresses MAC de votre serveur.
+
 ```yaml
 # This file is generated from information provided by the datasource.  Changes
 # to it will not persist across an instance reboot.  To disable cloud-init's
@@ -291,32 +296,32 @@ sudo nano /etc/netplan/50-cloud-init.yaml
 network:
     version: 2
     ethernets:
-        enp26s0f0np0:
+        "publiccardname1":
             accept-ra: false
             addresses:
             - 2001:41d0:20b:4500::/56
             dhcp4: true
             gateway6: fe80::1
             match:
-                macaddress: 0c:42:a1:65:d4:16
+                macaddress: "mac-address-public-card1"
             nameservers:
                 addresses:
                 - 2001:41d0:3:163::1
-            set-name: enp26s0f0np0
+            set-name: "publiccardname1"
         #vRack interface
-        enp96s0f0np0:
+        "privatecardname1":
             match:
-                macaddress: 04:3f:72:bf:13:9e
+                macaddress: "mac-address-private-card1"
             optional: true
-        enp96s0f1np1:
+        "privatecardname2":
             match:
-                macaddress: 04:3f:72:bf:13:9f
+                macaddress: "mac-address-private-card2"
             optional: true
     bonds:
         bond0:
             dhcp4: no
             addresses: [192.168.254.2/24]
-            interfaces: [enp96s0f0np0, enp96s0f1np1]
+            interfaces: ["privatecardname1", "privatecardname2"]
             parameters:
                 mode: 802.3ad
                 transmit-hash-policy: layer3+4
