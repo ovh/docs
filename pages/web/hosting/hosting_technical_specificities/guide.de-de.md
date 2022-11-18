@@ -85,7 +85,7 @@ Weitere Informationen zur Verwaltung von Datenbanken finden Sie in der Anleitung
 
 > [!warning]
 >
-> Die Änderung der Datei **php.ini** ist bei den Webhosting Angeboten nicht verfügbar. Dies liegt daran, dass die PHP-Konfiguration global für die gesamte Shared Hosting Infrastruktur ist.
+> Die Änderung der Datei **php.ini** ist bei Webhosting-Diensten nicht verfügbar. Das liegt daran, dass die PHP-Konfiguration global für die gesamte Shared Hosting Infrastruktur ist.
 >
 
 - Sie können die Konfigurationsdetails Ihres Webhostings überprüfen. Gehen Sie hierzu zum Abschnitt [„Technische Konfigurationen der Webhostings“](./#technische-konfigurationen-der-webhostings) am Ende dieser Anleitung. 
