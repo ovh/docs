@@ -91,6 +91,9 @@ Deux sections sont présentes pour la mise en place des restrictions par IP :
 
 Pour n'autoriser l'accès à l'espace client OVHcloud qu'à une ou plusieurs adresse(s) IP légitimes, cliquez sur le bouton `Ajouter une restriction`{.action}.
 
+> Dans les captures écran qui vont suivre, les valeurs **111.222.333.444** et **444.333.222.111** sont à remplacer par les adresses IP qui vous concernent.
+> 
+
 ![Add allow rule](images/ip4.png){.thumbnail}
 
 Dans la fenêtre qui s'ouvre, renseignez l'adresse IP publique que vous souhaitez autoriser dans le formulaire `IP`{.action}. Cochez la case `Alerte`{.action} si vous souhaitez être notifié par mail des tentatives de connexion via cette adresse IP puis laissez la `Règle`{.action} sur le statut `Autorisé`{.action}.
