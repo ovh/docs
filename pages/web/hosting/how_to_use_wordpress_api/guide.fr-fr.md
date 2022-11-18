@@ -18,4 +18,15 @@ Vous devez disposer d'un [Hébergement Web](https://www.ovhcloud.com/fr/web-host
 
 ## En pratique
 
+### API REST
+
+Une API REST peut se définir comme une interface de programmation d'application (Application Programming Interface) respectant les contraintes de l'architecture REST (Representational State Transfert).
+
+Les API permettent aux applications de communiquer entre elles : récupérer des contenus, effectuer une inscription, s'authentifier sur un service, _etc._
+La possibilité d'utiliser l'API REST de WordPress permet d'utiliser l'interface d'administration pour les usages habituels (gestion des comptes des utilisateurs, rédaction de contenu, organisation, _etc._) et de proposer une interface pour l'utilisateur final développée avec une autre technologie. WordPress peut donc s'utiliser comme un CMS Headless.
+
+### Préparer WordPress
+
+Depuis la version 4.7, WordPress propose nativement une API REST qui remplace l'API XML-RPC qui, elle, était activée depuis la version 3.5.
+
 ## Aller plus loin
