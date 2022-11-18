@@ -147,7 +147,7 @@ Créer un fichier nommé `configurenetwork.sh` qui active le routage, le NAT et 
 ```bash
 #!/bin/bash
 set -eux
- 
+
 apt update && apt upgrade -y
 apt install vlan net-tools -y
 echo "8021q" >> /etc/modules
@@ -176,18 +176,22 @@ apt -y install iptables-persistent --no-install-recommends
 Lancez ces commandes pour executer le script et redémarrer votre serveur:
 
 ```bash
-sudo chmod u+x configurenetwork.sh
+chmod u+x configurenetwork.sh
 sudo ./configurenetwork.sh
 sudo reboot
 ```
 
-Saisissez cette commande pour faire apparaitre les cartes qui ne sont pas connectés et reperez avec les adresse MAC le nom des deux cartes réseaux du réseau privé :
+Saisissez cette commande pour faire apparaitre les cartes qui ne sont pas connectés et repérez avec les adresses MAC le nom des deux cartes réseaux du réseau privé :
 
 ```bash
 ip a | grep -C1 DOWN
 ```
 
 Vous verrez apparaitre 3 cartes réseau avec l'état **DOWN**, reprenez la liste des adresses MAC et récupérer le nom des deux cartes privées comme dans l'exemple ci-dessous :
+
+> [!warning]
+> Ne vous basez pas sur l'ordre des cartes pour trouver le nom de carte du réseau privé mais plutôt sur les adresse MAC noté précedemment.
+>
 
 ```bash
 3: "publiccardname2": <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
