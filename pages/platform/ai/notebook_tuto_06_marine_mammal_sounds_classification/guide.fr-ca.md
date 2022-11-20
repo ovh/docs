@@ -1,5 +1,5 @@
 ---
-title: AI Notebooks - Tutoriel - Analyse et classification audio avec l'IA (EN)
+title: "AI Notebooks - Tutoriel - Analyse et classification audio avec l'IA (EN)"
 slug: notebooks/tuto-marine-mammal-sounds-classification
 excerpt: Comment classifier des sons avec une IA
 section: AI Notebooks - Tutoriels

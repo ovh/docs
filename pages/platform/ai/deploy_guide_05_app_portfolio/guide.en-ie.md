@@ -2,7 +2,7 @@
 title: AI Deploy - Apps portfolio
 slug: deploy/apps-portfolio
 excerpt: A collection of AI apps that can be easily deployed with AI Deploy
-section: AI Deploy guides
+section: AI Deploy - Guides
 order: 05
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: AI Deploy - Tutoriel - Déployez une app pour de l'analyse de sentiment avec Hugging Face et Flask (EN)
+title: "AI Deploy - Tutoriel - Déployez une app pour de l'analyse de sentiment avec Hugging Face et Flask (EN)"
 slug: deploy/tuto-flask-hugging-face-sentiment-analysis
-excerpt: Comment déployer une app pour analyser les sentiments d'un texte en utilisant Hugging Face et Flask
+excerpt: "Comment déployer une app pour analyser les sentiments d'un texte en utilisant Hugging Face et Flask"
 section: AI Deploy - Tutoriels
 order: 06
 routes:

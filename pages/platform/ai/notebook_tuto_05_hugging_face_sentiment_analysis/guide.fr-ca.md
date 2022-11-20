@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Tutoriel - Analyse de sentiments en utilisant Hugging Face (EN)
 slug: notebooks/tuto-hugging-face-sentiment-analysis
-excerpt: Comment utiliser les modèles d'Hugging Face pour faire de l'analyse de sentiments sur des tweets
+excerpt: "Comment utiliser les modèles d'Hugging Face pour faire de l'analyse de sentiments sur des tweets"
 section: AI Notebooks - Tutoriels
 order: 05
 routes:

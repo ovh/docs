@@ -1,7 +1,7 @@
 ---
-title: CLI - Se servir des tokens d'accès (EN)
+title: "CLI - Se servir des tokens d'accès (EN)"
 slug: cli/app-token-cli
-excerpt: Découvrez comment créer des tokens d'accès avec la CLI ovhai
+excerpt: "Découvrez comment créer des tokens d'accès avec la CLI ovhai"
 section: Command Line Interface
 order: 203
 routes:

@@ -1,8 +1,8 @@
 ---
 title: "AI Deploy - Portfolio d'app (EN)"
 slug: deploy/apps-portfolio
-excerpt: Une collection d'apps d'intelligence artificielle pouvant être déployées AI Deploy
-section: AI Deploy guides
+excerpt: "Une collection d'apps d'AI pouvant être facilement déployées avec AI Deploy"
+section: AI Deploy - Guides
 order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/'

@@ -1,7 +1,7 @@
 ---
 title: AI Training - Premiers pas (EN)
 slug: training/submit-job
-excerpt: Découvrez comment lancer un job AI Training depuis l'espace client (UI)
+excerpt: "Découvrez comment lancer un job AI Training depuis l'espace client (UI)"
 section: AI Training - Guides
 order: 02
 routes:
