@@ -6,7 +6,7 @@ section: AI Deploy - Guides
 order: 05
 ---
 
-**Last updated 4th November, 2022.**
+**Last updated 20th November, 2022.**
 
 > [!primary]
 >

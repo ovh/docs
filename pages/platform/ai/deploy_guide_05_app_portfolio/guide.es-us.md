@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/'
 ---
 
-**Last updated 4th November, 2022.**
+**Last updated 20th November, 2022.**
 
 > [!primary]
 >
