@@ -6,7 +6,7 @@ section: 'Web Hosting configuration'
 order: 05
 ---
 
-**Last updated 28th July 2022**
+**Last updated 18th November 2022**
 
 ## Objective
 
@@ -70,6 +70,11 @@ Please refer to [this guide](../creating-database/) for more information about m
 ### PHP
 
 - We recommend to consult [our website](https://www.ovhcloud.com/en/web-hosting/uc-programming-language/) to make sure the Web Hosting plan you would like to order will be appropriate for your hosting requirements.
+
+> [!warning]
+>
+> You cannot edit the **php.ini** file on shared hosting plans because the PHP configuration is global to the entire shared infrastructure.
+>
 
 - You can verify the details of the configuration on our website; please see under [Web Hosting libraries](./#web-hosting-libraries) below. 
 

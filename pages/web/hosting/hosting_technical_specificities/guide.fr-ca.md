@@ -6,7 +6,7 @@ section: "Configuration de l'hébergement"
 order: 05
 ---
 
-**Dernière mise à jour le 28/07/2022**
+**Dernière mise à jour le 21/11/2022**
 
 ## Objectif
 
@@ -71,6 +71,11 @@ Pour plus d'informations sur la gestion des bases de données, reportez-vous au 
 ### PHP
 
 - Nous vous recommandons de consulter nos [offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/uc-programming-language/) pour vous assurer que le plan d'hébergement Web que vous souhaitez commander sera compatible avec vos besoins.
+
+> [!warning]
+>
+> La modification du fichier **php.ini** est indisponible sur les offres d'hébergements mutualisés. Ceci du fait que la configuration PHP est globale à l'ensemble de l'infrastructure mutualisée.
+>
 
 - Vous pouvez vérifier les détails de la configuration de votre hébergement web. Pour cela, consultez la rubrique [« Informations techniques de votre hébergement Web »](./#informations-techniques de-votre-hebergement-web) en bas de ce guide. 
 

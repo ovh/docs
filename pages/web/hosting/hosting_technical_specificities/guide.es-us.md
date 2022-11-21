@@ -10,7 +10,7 @@ order: 05
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 28/07/2022**
+**Última actualización: 21/11/2022**
 
 ## Objetivo
 
@@ -75,6 +75,11 @@ Para saber más sobre la gestión de las bases de datos, consulte la guía [Crea
 ### PHP
 
 - Le recomendamos que consulte nuestros [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) para asegurarse de que el alojamiento web que desea contratar sea compatible con sus necesidades.
+
+> [!warning]
+>
+> La modificación del archivo **php.ini** no está disponible en los planes de hosting. Esto se debe a que la configuración PHP es global al conjunto de la infraestructura compartida.
+>
 
 - Puede verificar los detalles de la configuración de su alojamiento web. Para ello, consulte la sección [« Información técnica de su alojamiento web »](./#informacion-tecnica-de-su-alojamiento-web) al final de esta guía. 
 
