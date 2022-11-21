@@ -6,7 +6,7 @@ section: Diagnóstico e Modo Rescue
 order: 04
 ---
 
-**Última atualização: 17/10/2022**
+**Última atualização: 15/11/2022**
 
 ## Objetivo
 
