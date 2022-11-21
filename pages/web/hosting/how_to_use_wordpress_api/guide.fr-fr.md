@@ -29,4 +29,12 @@ La possibilité d'utiliser l'API REST de WordPress permet d'utiliser l'interface
 
 Depuis la version 4.7, WordPress propose nativement une API REST qui remplace l'API XML-RPC qui, elle, était activée depuis la version 3.5.
 
+Pour pouvoir adresser l'API, vous devez modifier le réglage des permaliens.Rendez-vous sur l'interface d'administration de votre site WordPress. Rendez-vous dans « Réglages », puis « Permaliens » :
+
+![Permaliens WordPress](images/how_to_use_wordpress_api%5B1%5D.png)
+
+Par défaut, la structure des permaliens est définie sur « Simple ». Pour rendre l'API accessible, il suffit de choisir un des autres paramètres et de valider en cliquant sur « Enregistrer les modifications » en bas de la page :
+
+// Insérer screeshot
+
 ## Aller plus loin
