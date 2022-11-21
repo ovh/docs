@@ -137,7 +137,7 @@ La machine virtuelle est éteinte.
 
 ### Configuration réseau en tant que passerelle Linux
 
-Lorsque l'on déploie un serveur Linux à partir de l'interface client OVHcloud une seule carte réseau est configurée, c'est l'adresse IP publique elle servira pour vous connecter en SSH et effectuer votre configuration.
+Lorsque l'on déploie un serveur Linux à partir de l'interface client OVHcloud une seule carte réseau est configurée avec l'adresse publique attribuée à votre serveur. Cette adresse vous servira pour vous connecter en SSH.
 
 Connectez-vous en SSH au serveur dédié avec cette commande :
 
