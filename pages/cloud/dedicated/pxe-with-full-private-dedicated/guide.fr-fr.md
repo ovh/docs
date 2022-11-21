@@ -1,7 +1,7 @@
 ---
-title: 'Gestion du reboot (avec PXE) dans un environnement "privé" chez Ovhcloud'
+title: 'Gestion du reboot avec PXE, dans un environnement "privé" chez Ovhcloud'
 slug: netboot PXE
-excerpt: 'Comment réaliser les redémarrages des machines à travers un environnement "entièrement privé" chez OVHcloud'
+excerpt: 'Comment réaliser les redémarrages de vos solutions OVHcloud à travers un environnement "entièrement privé"'
 section: 'Utilisation avancée'
 order: 01
 ---
@@ -12,7 +12,7 @@ order: 01
 > [!warning]
 > Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissance concernant le monde open source, ainsi que des notions d'administration.
 
-Cette documentation à pour but de vous accompagner pour deployer tous les composants, ou services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement dédié et **entièrement privé**.
+Cette documentation à pour but de vous accompagner pour deployer tous les composants ou bien services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement dédié et **entièrement privé**.
 Profiter d'une infrastructure "full private" sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
 
 > [!warning]
@@ -75,7 +75,7 @@ Le processus complet aura comme instruction de par ses commandes:
 * mise en marche.
 
 
-exemple d'infrastructure private basic (schéma layer 2):
+exemple d'infrastructure privée basique (schéma layer 2):
 
 ![Schema](images/schema_basic.png){.thumbnail}
 
@@ -125,27 +125,23 @@ allow bootp;
 
 Détails:
 
-* `subnet_mask`: 192.168.1.240
-* `broadcast_address`: 192.168.1.15
-* `dns_servers`: cf chapitre optionnel
+* *subnet_mask*: 192.168.1.240
+* *broadcast_address*: 192.168.1.15
+* *dns_servers*: cf chapitre optionnel
+* *default_router*: 192.168.1.1
+* *TFTP_server_address*: 192.168.1.1
 
-* `default_router`: 192.168.1.1
-* `TFTP_server_address`: 192.168.1.1
-
-
-* `hostname`: nom machine cliente
-* `ethernet_address`: adresse matérielle (MAC) machine cliente
-* `ip_hostname`: ip machine cliente
+* *hostname*: nom machine cliente
+* *ethernet_address*: adresse matérielle (MAC) machine cliente
+* *ip_hostname*: ip machine cliente
 
 
 le service **TFTP**
 
-selon votre distribution, il existe plusieurs paquets réalisant la fonction de serveur TFTP:
+selon votre distribution, il existe plusieurs paquets réalisant la fonction de serveur TFTP.
 Par exemple: `tftp-server`, `tftpd`, `tftpd-hpa` ou encore `atftpd`.
 
-
 L'arborescence d'installation peut être différente selon le package installé.
-
 
 Ce qu'il faut savoir:
 * Ce service utilise le port 69 (UDP), à déclarer dans le firewall, pour permettre/autoriser les futures connections.
@@ -199,20 +195,23 @@ iptables -I INPUT -i eth1 -p udp --dport 69 -j ACCEPT
 
 
 > [!warning]
+> 
 > Il est récommandé également de deployer les services DNS et NTP.
 > Ceux-ci ne sont pas nécessaires pour les phases de démarrage des systèmes donc pas imposés dans cette procédure.
 > Mais ils font partie des services importants par la suite, pour la stabilité de votre infrastructure.
+> 
+
 
 **Suggestions**
 
 service DNS:
-Pour pouvez utiliser la table locale du Node 0, à savoir `/etc/hosts`, ou bien utiliser par exemple un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
+Pour pouvez utiliser la table locale du *Node 0*, à savoir `/etc/hosts`, ou bien utiliser par exemple un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
 
 
 service NTP:
-[ntp](https://fr.wikipedia.org/wiki/Network_Time_Protocol)
 
-[ex](https://www.pool.ntp.org/zone/fr)
+definition [ntp](https://fr.wikipedia.org/wiki/Network_Time_Protocol)
+mise en place [ntp_serveur](https://www.pool.ntp.org/zone/fr)
 
 ```bash
 # pour le service NTP
