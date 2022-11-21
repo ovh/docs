@@ -186,4 +186,6 @@ nova help
 
 ## Weiterführende Informationen
 
+[OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/).
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

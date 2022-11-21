@@ -172,5 +172,7 @@ nova help
 
 ## Sprawdź również
 
+[Zmienne środowiskowe OpenStack](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/).
+
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
 

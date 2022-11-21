@@ -173,4 +173,6 @@ nova help
 
 ## Go further
 
+[Setting OpenStack environment variables](https://docs.ovh.com/ca/en/public-cloud/set-openstack-environment-variables/).
+
 Join our community of users on <https://community.ovh.com/en/>.

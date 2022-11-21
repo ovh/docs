@@ -173,4 +173,6 @@ nova help
 
 ## Quer saber mais?
 
+[Carregar as variáveis de ambiente OpenStack](https://docs.ovh.com/pt/public-cloud/carregar-as-variaveis-de-ambiente-openstack/).
+
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>

@@ -173,4 +173,6 @@ nova help
 
 ## Aller plus loin
 
+[Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/charger-les-variables-denvironnement-openstack/).
+
 Rejoignez la communauté de nos utilisateurs à l'adresse <https://community.ovh.com/>.
