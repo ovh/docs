@@ -6,13 +6,13 @@ section: Réseau et sécurité
 order: 09
 ---
 
-**Dernière mise à jour le 18/11/2022**
+**Dernière mise à jour le 21/11/2022**
 
 ## Présentation
 
-Une machine virtuelle **OVHgateway** est installée lors d'une déploiement d'une solution Nutanix, cette machine virtuelle sert de passerelle Internet Sortante pour le cluster elle a une limite de 1 gb/s sur le réseau public.
+Une machine virtuelle **OVHgateway** est installée lors d'une déploiement d'un cluster **Nutanix on OVHcloud**, cette machine virtuelle sert de passerelle Internet Sortante pour le cluster le débit maximal est de 1gb/s.
 
-Si vous avez besoin d'avoir une bande passante plus importante il faut remplacer cette passerelle par un serveur dédié et choisir une offre qui vous permettra d'aller entre 1 gb/s à 10 gb/s sur le réseau public comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
+Si vous avez besoin d'une bande passante plus importante il faut remplacer cette passerelle par un serveur dédié et choisir une offre qui vous permettra d'aller entre 1 gb/s à 10 gb/s sur le réseau public comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
 
 **Nous allons voir comment remplacer la passerelle par défaut par un serveur dédié OVHcloud pour augmenter la bande passante.**
 
@@ -28,7 +28,7 @@ Si vous avez besoin d'avoir une bande passante plus importante il faut remplacer
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central. 
-- Disposer d'un serveur dédié qui utilise deux cartes réseaux une sur le réseau privé (vRACK) l'autre sur le réseau public.
+- Disposer d'un serveur dédié dans votre compte OVHcloud avec plusieurs cartes réseaux, certaines sur le réseau public d'autre sur le réseau privé.
 
 ## En pratique
 
@@ -36,10 +36,10 @@ Nous allons déployer un serveur dédié sous Linux qui utilise 4 cartes réseau
 
 Le réseau public utilisera une seule carte réseau et le réseau privé utilisera deux cartes réseau en équipe.
 
-Pour remplacer l'OVHgateway nous allons prendre utilisez ces paramètres :
+Pour remplacer l'OVHgateway nous allons utiliser ces paramètres :
 
 - Lan public en DHCP qui fournit une adresse publique.
-- Lan privé sur une équipe de deux cartes et des adresses privés manuelle sur plusieurs VLAN :
+- Lan privé sur une équipe de deux cartes et des adresses privées manuelles sur plusieurs VLAN :
     - VLAN 1 : adresse IP privée et masque de l'OVHgateway (Dans notre exemple 172.16.3.254/22)
     - VLAN 2 : Une autre adresse privé pour un VLAN supplémentaire (Dans notre exemple 10.22.3.254/22)
 
@@ -49,11 +49,11 @@ Allez dans votre espace client OVHcloud cliquez sur `Hosted Private Cloud`{.acti
 
 ![01 get nutanix vrack 01](images/01-get-nutanix-vrack01.png){.thumbnail}
 
-Toujours dans dans votre espace client OVHcloud allez sur l'onglet `Bare Metal Cloud`{.action}. Sélectionnez dans la barre de menu à gauche votre serveur dédié. Ensuite cliquez sur `Network interfaces`{.action}.
+Toujours dans dans votre espace client OVHcloud allez sur l'onglet `Bare Metal Cloud`{.action}. Sélectionnez dans la barre de menu à gauche votre serveur dédié et cliquez sur `Network interfaces`{.action}.
 
 ![02 getnetworkinformation 01](images/02-getnetworkinformation01.png){.thumbnail}
 
-Allez en bas à droite et notez dans **Network Interfaces** les adresses MAC associées au réseau public et au réseau privé (deux adresses MAC par réseau).
+Allez en bas à droite dans **Network Interfaces** et notez les adresses MAC associées au réseau public et au réseau privé (deux adresses MAC par réseau).
 
 ![02 getnetworkinformation 02](images/02-getnetworkinformation02.png){.thumbnail}
 
@@ -77,7 +77,7 @@ Cliquez sur `View purshase order`{.action} pour voir le bon de commande.
 
 ![03 Change bandwitdh 04](images/03-change-bandwidth04.png){.thumbnail}
 
-Dès que la commande sera validé votre débit sur la bande passante publique sera changée.
+Dès que la commande sera validée votre débit sur la bande passante publique sera changée.
 
 ![03 Change bandwitdh 05](images/03-change-bandwidth05.png){.thumbnail}
 
@@ -125,7 +125,7 @@ Un message vous sera envoyé dans votre boite au lettre et contiendra le compte 
 
 Nous allons arrêter la machine virtuelle **OVHgateway** avant de configurer le serveur dédié.
 
-Allez dans **Prism Central** dans la gestion des machines virtuelles séléctionnez la machine virtuelle `OVHgateway` allez dans le menu `Actions`{.action} et choisissez `Guest Shutdown`{.action}.
+Allez dans **Prism Central** dans la gestion des machines virtuelles sélectionnez la machine virtuelle `OVHgateway` allez dans le menu `Actions`{.action} et choisissez `Guest Shutdown`{.action}.
 
 ![07 Shutdown ovhgateway 01](images/07-shutdown-ovhgateway01.png){.thumbnail}
 
@@ -135,7 +135,7 @@ La machine virtuelle est éteinte.
 
 ### Configuration réseau en tant que passerelle Linux
 
-Lorsque l'on déploie un serveur Linux à partir de l'interface client OVHcloud une seule carte réseau est configurée, c'est l'adresse IP publique elle servira pour vous connecter en SSH et éffectuer votre configuration.
+Lorsque l'on déploie un serveur Linux à partir de l'interface client OVHcloud une seule carte réseau est configurée, c'est l'adresse IP publique elle servira pour vous connecter en SSH et effectuer votre configuration.
 
 Connectez vous en SSH au serveur dédié avec cette commande :
 
@@ -143,7 +143,7 @@ Connectez vous en SSH au serveur dédié avec cette commande :
 ssh ubuntu@dedicated-server-public-ip-address
 ```
 
-Saisissez cette commande pour faire apparaitre les cartes qui ne sont pas connectées, cela va vous servir pour identifier les deux cartes réseaux privées. 
+Saisissez cette commande pour faire apparaitre les cartes qui ne sont pas connectées, deux des cartes réseaux non connectés sont les cartes réseaux privées.
 
 ```bash
 ip a | grep -C1 DOWN
@@ -152,7 +152,7 @@ ip a | grep -C1 DOWN
 Trois cartes réseaux doivent apparaitrent avec l'état **DOWN**, reprenez la liste des adresses MAC et récupérer le nom des deux cartes privées comme dans l'exemple ci-dessous :
 
 > [!warning]
-> Ne vous basez pas sur l'ordre des cartes pour trouver le nom de carte du réseau privé mais plutôt sur les adresse MAC noté précedemment.
+> Ne vous basez pas sur l'ordre des cartes pour trouver le nom des cartes du réseau privé mais plutôt sur les adresses MAC noté précedemment.
 >
 
 ```bash
