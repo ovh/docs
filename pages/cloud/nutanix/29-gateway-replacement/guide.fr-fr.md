@@ -45,19 +45,19 @@ Pour remplacer l'OVHgateway nous allons utiliser ces paramètres :
 
 ### Récupération des informations nécessaires au déploiement de votre serveur
 
-Allez dans votre espace client OVHcloud cliquez sur `Hosted Private Cloud`{.action} dans la barre d'onglet sélectionnez votre cluster Nutanix à gauche et notez le nom du vRack associé à votre cluster Nutanix dans `Private network (vRack)`.
+Allez dans votre espace client OVHcloud cliquez sur `Hosted Private Cloud`{.action} dans la barre d'onglet sélectionnez votre cluster Nutanix à gauche et notez le nom du vRack associé à votre cluster Nutanix dans `Réseau privé (vRack)`.
 
 ![01 get nutanix vrack 01](images/01-get-nutanix-vrack01.png){.thumbnail}
 
-Toujours dans votre espace client OVHcloud allez sur l'onglet `Bare Metal Cloud`{.action}. Sélectionnez dans la barre de menu à gauche votre serveur dédié et cliquez sur `Network interfaces`{.action}.
+Toujours dans votre espace client OVHcloud allez sur l'onglet `Bare Metal Cloud`{.action}. Sélectionnez dans la barre de menu à gauche votre serveur dédié et cliquez sur `Interfaces réseau`{.action}.
 
 ![02 getnetworkinformation 01](images/02-getnetworkinformation01.png){.thumbnail}
 
-Positionnez-vous en bas à droite dans **Network Interfaces** et notez les adresses MAC associées au réseau public et au réseau privé (deux adresses MAC par réseau).
+Positionnez-vous en bas à droite dans **Interface réseau** et notez les adresses MAC associées au réseau public et au réseau privé (deux adresses MAC par réseau).
 
 ![02 getnetworkinformation 02](images/02-getnetworkinformation02.png){.thumbnail}
 
-Au travers de l'encadrement **Bandwith** cliquez sur `Modify public bandwidth`{.action} pour changer le débit de votre réseau public.
+Au travers de l'encadrement **Bande passante** cliquez sur `Modifier la bande passante publique`{.action} pour changer le débit de votre réseau public.
 
 > [!warning]
 > En fonction du débit que vous souhaitez le prix de l'abonnement à votre serveur augmentera et il faudra valider ce changement par une commande dans votre espace client OVHcloud.
@@ -65,15 +65,15 @@ Au travers de l'encadrement **Bandwith** cliquez sur `Modify public bandwidth`{.
 
 ![03 Change bandwitdh 01](images/03-change-bandwidth01.png){.thumbnail}
 
-Sélectionnez la vitessse désirée et cliquez sur `Next`{.action}.
+Sélectionnez la vitessse désirée et cliquez sur `Suivant`{.action}.
 
 ![03 Change bandwitdh 02](images/03-change-bandwidth02.png){.thumbnail}
 
-Cliquez sur `Pay`{.action}.
+Cliquez sur `Payer`{.action}.
 
 ![03 Change bandwitdh 03](images/03-change-bandwidth03.png){.thumbnail}
 
-Cliquez sur `View purshase order`{.action} pour voir le bon de commande.
+Cliquez sur `Voir votre bon de commande`{.action} pour voir le bon de commande.
 
 ![03 Change bandwitdh 04](images/03-change-bandwidth04.png){.thumbnail}
 
@@ -83,15 +83,15 @@ Dès que la commande sera validée votre débit sur la bande passante publique s
 
 ### Connexion au vRack du serveur dédié
 
-Restez sur la configuration, cliquez en bas de la page sur `Le bouton de configuration`{.action} des cartes du réseau privé.
+Restez sur la configuration, cliquez en bas de la page sur `Le bouton de configuration`{.action} des cartes du réseau privé, et cliquez sur `Attacher un réseau privé vRack`{.action}.
 
 ![04 attach bm to nutanix vrack 01](images/04-attach-bm-to-nutanix-vrack01.png){.thumbnail}
 
-Sélectionnez le vRack dans **Select private network** qui correspond à votre serveur Nutanix noté précédemment. 
+Sélectionnez le vRack dans **Sélectionnez votre réseau privé** qui correspond à votre serveur Nutanix noté à partir de votre cluster Nutanix et cliquez sur `Attacher`{.action}.
 
 ![04 attach bm to nutanix vrack 02](images/04-attach-bm-to-nutanix-vrack02.png){.thumbnail}
 
-Le vRack est affiché dans la colonne **Private Network**.
+Le vRack est affiché dans la colonne **Réseau privé**.
 
 ![04 attach bm to nutanix vrack 03](images/04-attach-bm-to-nutanix-vrack03.png){.thumbnail}
 
@@ -99,27 +99,31 @@ Le vRack est affiché dans la colonne **Private Network**.
 
 Nous allons maintenant installer un système d'exploitation Linux Ubuntu 22 à partir de l'espace client.
 
-Au travers des onglets du serveur dédié allez sur `General information`{.action}. Cliquez sur le bouton de `Last operating system (OS) installed by OVHcloud`{.action} de la rubrique **General information**.
+Au travers des onglets du serveur dédié allez sur `Informations générales`{.action}, cliquez sur le bouton à droite de `Dernier système d'exploitation (OS) installé par OVHcloud`{.action}. et cliquez sur `Installer`{.action}
 
 ![05 install OS 01](images/05-install-os01.png){.thumbnail}
 
-Cliquez sur `liste des serveurs`{.action}.
+Laissez la sélection sur `Installer à partir d'un template OVH`{.action} et cliquez sur `Suivant`{.action}.
 
-![05 install OS 02](images/05-install-os02.png){.thumbnail}
+![05 install OS 01](images/05-install-os01.png){.thumbnail}
 
-Sélectionnez `Ubuntu Server 22.04 LTS`{.action} et cliquez sur `Next`{.action}.
+Cliquez sur la `liste des serveurs`{.action}.
 
 ![05 install OS 03](images/05-install-os03.png){.thumbnail}
 
-Cliquez sur `Confirm`{.action}.
+Sélectionnez `Ubuntu Server 22.04 LTS`{.action} et cliquez sur `Suivant`{.action}.
 
 ![05 install OS 04](images/05-install-os04.png){.thumbnail}
+
+Cliquez sur `Valider`{.action}.
+
+![05 install OS 05](images/05-install-os05.png){.thumbnail}
 
 L'installation du système d'exploitation se lance une fenêtre de l'état d'avancement apparait et disparaitra quand l'installation sera terminée.
 
 Un message vous sera envoyé dans la boite aux lettres du compte client, il contiendra le compte utilisateur administrateur (le compte se nomme ubuntu) ainsi qu'un lien vers son mot de passe.  
 
-![05 install OS 04](images/05-install-os05.png){.thumbnail}
+![05 install OS 06](images/05-install-os06.png){.thumbnail}
 
 ### Arrêt de la machine virtuelle OVHgateway sur Prism Central
 
