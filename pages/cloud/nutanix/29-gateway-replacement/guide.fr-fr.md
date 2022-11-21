@@ -28,24 +28,22 @@ Si vous avez besoin d'une bande passante plus importante il faut remplacer cette
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central. 
-- Disposer d'un serveur dédié dans votre compte OVHcloud avec plusieurs cartes réseaux, certaines sur le réseau public d'autre sur le réseau privé.
+- Disposer d'un serveur dédié dans votre compte OVHcloud avec plusieurs cartes réseaux, certaines sur le réseau public d'autres sur le réseau privé.
 
 ## En pratique
 
 Nous allons déployer un serveur dédié sous Linux qui utilise 4 cartes réseaux (2 sur le réseau public, 2 sur le réseau privé) pour remplacer la machine virtuelle OVHgateway.
 
-Le réseau public utilisera une seule carte réseau et le réseau privé utilisera deux cartes réseau en équipe.
-
 Pour remplacer l'OVHgateway nous allons utiliser ces paramètres :
 
-- Lan public en DHCP qui fournit une adresse publique.
+- Lan public en DHCP qui fournit une adresse publique sur une seule carte réseau.
 - Lan privé sur une équipe de deux cartes et des adresses privées manuelles sur plusieurs VLAN :
     - VLAN 1 : adresse IP privée et masque de l'OVHgateway (Dans notre exemple 172.16.3.254/22)
     - VLAN 2 : Une autre adresse privée pour un VLAN supplémentaire (Dans notre exemple 10.22.3.254/22)
 
 ### Récupération des informations nécessaires au déploiement de votre serveur
 
-Allez dans votre espace client OVHcloud cliquez sur `Hosted Private Cloud`{.action} dans la barre d'onglet sélectionnez votre cluster Nutanix à gauche et notez le nom du vRack associé à votre cluster Nutanix dans `Réseau privé (vRack)`.
+Allez dans votre espace client OVHcloud cliquez sur `Hosted Private Cloud`{.action} dans la barre d'onglets, sélectionnez votre cluster Nutanix à gauche et notez le nom du vRack associé à votre cluster Nutanix dans `Réseau privé (vRack)`.
 
 ![01 get nutanix vrack 01](images/01-get-nutanix-vrack01.png){.thumbnail}
 
@@ -53,7 +51,7 @@ Toujours dans votre espace client OVHcloud allez sur l'onglet `Bare Metal Cloud`
 
 ![02 getnetworkinformation 01](images/02-getnetworkinformation01.png){.thumbnail}
 
-Positionnez-vous en bas à droite dans **Interface réseau** et notez les adresses MAC associées au réseau public et au réseau privé (deux adresses MAC par réseau).
+Positionnez-vous en bas à droite dans **Interfaces réseau** et notez les adresses MAC associées au réseau public et au réseau privé (deux adresses MAC par réseau).
 
 ![02 getnetworkinformation 02](images/02-getnetworkinformation02.png){.thumbnail}
 
@@ -87,7 +85,7 @@ Restez sur la configuration, cliquez en bas de la page sur `Le bouton de configu
 
 ![04 attach bm to nutanix vrack 01](images/04-attach-bm-to-nutanix-vrack01.png){.thumbnail}
 
-Sélectionnez le vRack dans **Sélectionnez votre réseau privé** qui correspond à votre serveur Nutanix noté à partir de votre cluster Nutanix et cliquez sur `Attacher`{.action}.
+Sélectionnez le vRack dans **Sélectionnez votre réseau privé** qui correspond à votre serveur Nutanix et cliquez sur `Attacher`{.action}.
 
 ![04 attach bm to nutanix vrack 02](images/04-attach-bm-to-nutanix-vrack02.png){.thumbnail}
 
@@ -173,7 +171,7 @@ Lancer cette commande :
 ip a | grep -C1 UP
 ```
 
-Vous voyez deux cartes réseau avec l'état **UP**, la carte loopback et une carte physique dont l'adresse MAC doit correspondre à une des adresses publiques notées dans l'espace client OVHcloud. Récuperez le nom de cette carte publique :
+Vous voyez deux cartes réseau avec l'état **UP**, la carte loopback et une carte physique dont l'adresse MAC doit correspondre à une des adresses publiques notées dans l'espace client OVHcloud. Récuperez le nom de cette carte réseau :
 
 ```bash
 1: "lo": <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
