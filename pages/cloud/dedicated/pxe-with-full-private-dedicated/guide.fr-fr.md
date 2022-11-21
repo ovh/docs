@@ -10,7 +10,9 @@ order: 01
 ## Objectif
 
 > [!warning]
+> 
 > Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissance concernant le monde open source, ainsi que des notions d'administration.
+> 
 
 Cette documentation à pour but de vous accompagner pour deployer tous les composants ou bien services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement dédié et **entièrement privé**.
 Profiter d'une infrastructure "full private" sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
@@ -22,7 +24,7 @@ Profiter d'une infrastructure "full private" sans avoir modifié la configuratio
 >
 
 Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.
-Chaque serveur est muni de 2 interfaces réseaux (en réalité 4: fonctionnants par pair en liens aggrégés pour la redondance), vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit "public" aussi appelés "front-end" et ceux, au contraire, dit "privé" appelés "back-end".
+Chaque serveur est muni de 2 interfaces réseaux (en réalité 4: fonctionnants (par paire) en liens aggrégés pour la redondance), vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit "public" aussi appelés "front-end" et ceux, au contraire, dit "privés" appelés "back-end".
 
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode full-private, c'est-à-dire, ne possédant **uniquement** que des réseaux privés.
 Cette solution propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
@@ -54,8 +56,7 @@ Le processus complet aura comme instruction de par ses commandes:
 
 > [!primary]
 >
-> La description ici restera le plus générique possible pour rester claire, et ainsi ne pas ajouter des éléments/contraintes techniques qui sortent du cadre de notre exemple.
-> Mais donnera une vision globale du principe de fonctionnement.
+> La description ici restera le plus générique possible pour rester claire, et ainsi ne pas ajouter des éléments ou contraintes techniques qui sortent du cadre de notre exemple, mais donnera une vision globale du principe de fonctionnement.
 >
 
 ## Prérequis
@@ -82,8 +83,8 @@ exemple d'infrastructure privée basique (schéma layer 2):
 Exemple:
 
 * réseau privé (ex: 192.168.1.0/28).
-* services hébergés/mutualisés sur `Node 0`.
-* une seule machine cliente `Node 1`.
+* services hébergés/mutualisés sur *Node 0*.
+* une seule machine cliente *Node 1*.
 
 
 le service DHCP
@@ -122,7 +123,6 @@ allow bootp;
 
 ```
 
-
 Détails:
 
 * *subnet_mask*: 192.168.1.240
@@ -138,7 +138,7 @@ Détails:
 
 le service **TFTP**
 
-selon votre distribution, il existe plusieurs paquets réalisant la fonction de serveur TFTP.
+Selon votre distribution, il existe plusieurs paquets réalisant la fonction de serveur TFTP.
 Par exemple: `tftp-server`, `tftpd`, `tftpd-hpa` ou encore `atftpd`.
 
 L'arborescence d'installation peut être différente selon le package installé.
@@ -170,7 +170,6 @@ Nous utiliserons le chemin par défaut de l'application (/var/lib/tftpboot/), et
 
 ```
 
-
 La syntaxe [sanboot](https://ipxe.org/cmd/sanboot) permet de forcer la détection des disques locaux, et la découverte de secteur d'amorçage lié à un éventuel système d'exploitation installé au préalable.
 A partir du moment où cette étape a été réalisée, le système d'exploitation peut débuter son chargement.
 
@@ -197,7 +196,7 @@ iptables -I INPUT -i eth1 -p udp --dport 69 -j ACCEPT
 > [!warning]
 > 
 > Il est récommandé également de deployer les services DNS et NTP.
-> Ceux-ci ne sont pas nécessaires pour les phases de démarrage des systèmes donc pas imposés dans cette procédure.
+> Ceux-ci ne sont pas nécessaires pour les phases de démarrage des systèmes, donc pas imposés dans cette procédure.
 > Mais ils font partie des services importants par la suite, pour la stabilité de votre infrastructure.
 > 
 
@@ -205,13 +204,13 @@ iptables -I INPUT -i eth1 -p udp --dport 69 -j ACCEPT
 **Suggestions**
 
 service DNS:
-Pour pouvez utiliser la table locale du *Node 0*, à savoir `/etc/hosts`, ou bien utiliser par exemple un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
+Pour pouvez utiliser la table locale de chaque *Node*, à savoir `/etc/hosts`, ou bien utiliser par exemple un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
 
 
 service NTP:
 
 definition [ntp](https://fr.wikipedia.org/wiki/Network_Time_Protocol)
-mise en place [ntp_serveur](https://www.pool.ntp.org/zone/fr)
+
 
 ```bash
 # pour le service NTP
