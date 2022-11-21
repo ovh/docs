@@ -199,7 +199,7 @@ Exécutez cette commande pour éditer le fichier `/etc/nftables.conf`
 sudo nano /etc/nftables.conf
 ```
 
-Modifiez le contenu du fichier en remplaçant `"publiccardname1"` par le nom correspondant dans votre configuration.
+Modifiez le contenu du fichier en remplaçant `"publiccardname1"` par ce que vous avez noté.
 
 ```conf
 flush ruleset
@@ -278,17 +278,6 @@ Exécuter cette commande pour éditer le fichier `/etc/netplan/50-cloud-init.yam
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Modifiez le contenu du fichier en remplaçant les noms ci-dessous : 
-
-* `"publiccardname1"`
-* `"mac-address-public-card1"` 
-* `"privatecardname1"`
-* `"mac-address-private-card1"`
-* `"privatecardname2"` 
-* `"mac-address-private-card2"`
-
-par les noms des cartes et les adresses MAC de votre serveur.
-
 ```yaml
 # This file is generated from information provided by the datasource.  Changes
 # to it will not persist across an instance reboot.  To disable cloud-init's
@@ -342,6 +331,15 @@ network:
             addresses: [10.2.3.254/22]
             link: bond0
 ```
+
+Modifiez le contenu du fichier `/etc/netplan/50-cloud-init.yaml` en remplaçant les noms ci-dessous : 
+
+* `"publiccardname1"` par le nom de votre carte réseau publique.
+* `"mac-address-public-card1"` par l'adresse MAC de votre carte réseau publique.
+* `"privatecardname1"` par le nom de votre première carte réseau privée.
+* `"mac-address-private-card1"` par l'adresse MAC de votre première carte réseau privée.
+* `"privatecardname2"` par le nom de votre deuxième carte réseau privée.
+* `"mac-address-private-card2"` par l'adresse MAC de votre deuxième carte réseau privée.
 
 Exécutez ces commandes :
 
