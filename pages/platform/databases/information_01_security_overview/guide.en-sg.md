@@ -6,7 +6,7 @@ section: General information
 order: 010
 ---
 
-**Last updated October 26, 2022**
+**Last updated 21st November 2022**
 
 ## Objective
 
@@ -23,7 +23,7 @@ OVHcloud Public Cloud Databases as a whole are [ISO/IEC 27001, 27017 and 27018](
 ![ISO certification badge](images/certificate_badge_iso.png){.align-center}
 ![GDPR compliance badge](images/compliance_badge_gdpr.png){.align-center}
 
-Those certifications cover all DBMS in the Public Cloud Databases offer, you can find the complete list on the [Public Cloud Databases web page](https://www.ovhcloud.com/en-gb/public-cloud/databases/).
+Those certifications cover all DBMS in the Public Cloud Databases offer, you can find the complete list on the [Public Cloud Databases web page](https://www.ovhcloud.com/en-sg/public-cloud/databases/).
 
 ## Infrastructure & software
 
@@ -35,9 +35,31 @@ When choosing Business and Enterprise service plan, your data is replicated acro
 
 Public Cloud Databases services are backed up on a daily basis. Those backups are encrypted and uploaded to a remote, replicated storage backend, in a different datacenter from the database service. In case of a catastrophic failure of one of our datacenters,you will still be able to recover your data, with a 24 hours data loss maximum. Backup frequency and retention may vary depending on DBMS and service plan selected.
 
-### Disk encryption
+### Data encryption
 
-In order to provide the Public Cloud Databases offer, dedicated virtual machines are used. All customer data stored on disk is encrypted using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup). A unique key is generated for each database service and is never reused.
+We perform end-to-end encryption for all our Public Cloud Databases and backups.
+
+#### In-transit encryption (transport)
+
+To ensure your data is safe, all inbound and outbound network traffic to your database services is TSL encrypted.
+
+Customer access to provided services is only provided over TLS encrypted connections. There is no option for using unencrypted plaintext connections.
+
+Communication between virtual machines within Public Cloud Databases is secured with either TLS or IPsec. There are no unencrypted plaintext connections.
+
+#### At-rest encryption (on disk)
+
+At-rest data encryption covers both active service instances as well as service backups in cloud object storage.
+
+All customer data stored on disk is encrypted using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup). 
+
+A unique key is generated for each database service or backup, and is never re-used. The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. We use the LUKS2 default mode aes-xts-plain64:sha256 with a 512-bit key.
+
+#### Client-side encryption
+
+Client side-encryption allows a customer to encrypt data from the sender's side, before the transmission, with his personal encryption key.
+
+We do not provide client-side encryption so far.
 
 ### CVE monitoring
 
@@ -55,9 +77,6 @@ Public Cloud Databases provide interconnection with your private network. This o
 
 All database services are IP restricted. By default, services are not accessible. Users can specify unique IP or IP blocks from which the service will accept connections. IP restriction prevents all attacks from the outside of a specific information system.
 
-### TLS end-to-end encryption
-
-To ensure your data is safe, all inbound and outbound traffic to your database services is TSL encrypted.
 
 ## Go further
 
