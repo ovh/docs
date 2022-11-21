@@ -19,7 +19,8 @@ Profiter d'une infrastructure "full private" sans avoir modifié la configuratio
 
 > [!warning]
 >
-> Pour rappel, il est très fortement recommandé de ne pas modifier les configurations par défaut: configuration Bios, Boot Order, etc...
+> Pour rappel, il est très fortement recommandé de ne pas modifier les configurations par défaut:<br>
+> configuration Bios, Boot Order, etc...
 > Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres bien définis, pour vous proposez des environnements techniques les mieux adaptés à votre matériel.
 >
 
@@ -143,7 +144,8 @@ le service **TFTP**
 Selon votre distribution, il existe plusieurs paquets réalisant la fonction de serveur TFTP.<br>
 Par exemple: *tftp-server*, *tftpd*, *tftpd-hpa* ou encore *atftpd*.
 
-> [!info]
+> [!primary]
+> 
 > L'arborescence d'installation peut être différente selon la version du package et de votre système d'exploitation utilisé.
 > 
 
@@ -152,7 +154,7 @@ Ce qu'il faut savoir:
 * Ce service utilise le port 69 (UDP), à déclarer dans le firewall, pour permettre/autoriser les futures connections.
 * Il est obligatoire de déclarer un répertoire "cible", correspondant à une arboresence locale qui sera utilisée pour les réceptions et les téléchargments des fichiers.
 
-exemple de configuration avec le logiciel 'tftpd-hpa':
+exemple de configuration avec le logiciel `tftpd-hpa`:
 
 ```bash
 # /etc/default/tftpd-hpa
@@ -214,7 +216,6 @@ Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/et
 
 
 service NTP:
-
 definition [ntp](https://fr.wikipedia.org/wiki/Network_Time_Protocol)
 
 
