@@ -177,7 +177,7 @@ Un menu contextuel apparait, et plusieurs choix vous sont proposés :
 
 ![hosting](images/1830.png){.thumbnail}
 
-## Informations utiles
+## Informations utiles <a name="useful-information"></a>
 
 ### Droits d'accès (Chmod) sur les fichiers et les dossiers
 

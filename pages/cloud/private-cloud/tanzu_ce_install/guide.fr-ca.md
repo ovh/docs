@@ -6,12 +6,17 @@ section: Tanzu
 order: 01
 ---
 
-**Dernière mise à jour le 04/03/2022**
+**Dernière mise à jour le 16/11/2022**
 
 ## Objectif
 
 VMware Tanzu Community Edition (TCE) est une plate-forme Kubernetes complète et simple à gérer.<br>
 Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter de ses fonctionnalités et de son évolutivité.
+
+> [!warning]
+>
+> Tanzu Community Edition arrive en End Of Life à la fin de l'année 2022 et ne sera plus disponible. VMware a décidé de proposer le téléchargement gratuit de VMware Tanzu Kubernetes Grid. Vous pouvez consulter notre guide sur la [présentation de Tanzu Kubernetes Grid](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-presentation/) pour le déployer.
+>
 
 **Ce guide est un exemple d'installation étape par étape de TCE.**
 

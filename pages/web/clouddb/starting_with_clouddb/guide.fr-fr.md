@@ -52,7 +52,7 @@ Vous pouvez y consulter les informations importantes concernant votre instance. 
 |RAM|Affiche la mémoire vive disponible pour votre instance ainsi que les éventuels dépassements de mémoire. Votre instance CloudDB dispose de ressources dédiées et garanties : sa mémoire RAM. Si besoin, vous pouvez faire évoluer cette dernière et être prévenu si vous consommez toutes les ressources mémoire de votre instance.|
 |Infrastructure|Affiche l'infrastructure utilisée par votre instance. Il s'agit d'une information inhérente à l'infrastructure d'OVHcloud.|
 |Datacenter|Affiche le centre de données dans lequel l'instance a été créée.|
-|Host|Affiche le serveur OVHcloud dans lequel votre instance est créée. Il s'agit d'une information inhérente à l'infrastructure d'OVHcloud et peut être utilisée dans nos communications liées aux [incidents OVHcloud](http://travaux.ovh.net/){.external}.|
+|Host|Affiche le serveur OVHcloud dans lequel votre instance est créée. Il s'agit d'une information inhérente à l'infrastructure d'OVHcloud et peut être utilisée dans nos communications liées aux [incidents OVHcloud](https://www.status-ovhcloud.com/){.external}.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}
 

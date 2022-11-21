@@ -1,18 +1,18 @@
 ---
-title: Adicionar licenças no seu cluster Nutanix BYOL (EN)
+title: "Gestão das licenças no seu cluster da oferta Nutanix on OVHcloud BYOL (EN)"
 slug: activate-licence-on-nutanix-byol
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/activate-licence-on-nutanix-byol/'
-excerpt: 'How to add licences in an OVHcloud Nutanix cluster in the BYOL solution'
+excerpt: 'How to add and remove licences in a Nutanix cluster with the BYOL offer'
 section: Primeiros passos
 order: 12
 ---
 
-**Last updated 26th October 2022**
+**Last updated 16th November 2022**
 
 ## Objective
 
-**Find out how to activate your licences on a Nutanix on OVHcloud solution in *Bring Your Own Licence* (BYOL) mode**
+**Find out how to activate or deactivate your licences in the BYOL offer**
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -24,7 +24,8 @@ order: 12
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Access to your clusters via **Prism Central**
-- You must have Nutanix licences and have them available on the Nutanix portal.
+- You must have your Nutanix login details on [Nutanix Official Site](https://www.nutanix.com).
+- You must have valid licences with your Nutanix NIC handle.
 
 ## Instructions
 
@@ -32,9 +33,13 @@ order: 12
 
 > [!warning]
 >
-> OVHcloud offers you Nutanix as a *Bring Your Own Licence* (BYOL) version, which means that you, as an OVHcloud customer, must provide the cluster licences.
-> When the Nutanix cluster is ordered in BYOL mode, the cluster is delivered with a 90-day trial. As a customer, you must install your licences during this period.
+> Within the Nutanix on OVHcloud portfolio, OVHcloud offers the BYOL (Bring Your Own Licence) solution, which means that you, as an OVHcloud customer, must provide the Nutanix Cloud Platform licences on your cluster.
 >
+> When the Nutanix cluster is ordered within the BYOL offer, the cluster is delivered with a 90-day trial licence. As a customer, you must register your Nutanix Cloud Platform licences on your cluster during this period.
+>
+> If you want to redeploy a cluster with the BYOL offer, you must first uninstall the licences on the cluster before launching a redeployment. This guide explains how to add or remove licences.
+>
+
 
 There are three types of licences for:
 

@@ -8,7 +8,7 @@ section: Erste Schritte
 order: 05
 ---
 
-**Last updated 10th June 2022**
+**Last updated 16th November 2022**
 
 ## Objective
 
@@ -25,6 +25,10 @@ Find out how to repackage a Cluster with custom network settings via the OVHclou
 - a Nutanix Cluster in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 - access to the [OVHcloud API page](https://api.ovh.com/)
+
+> [!warning]
+> If you have signed up to the **Nutanix on OVHcloud BYOL offer** and have activated licences on your cluster, you will need to uninstall your licences before you launch the redeployment. You can use this guide to manage your licences: [Manage licences in your Nutanix cluster on OVHcloud BYOL Offer](https://docs.ovh.com/de/nutanix/activate-licence-on-nutanix-byol/)
+>
 
 ## Introduction to using the private network for a Nutanix Cluster at OVHcloud
 

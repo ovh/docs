@@ -5,7 +5,7 @@ excerpt: "Découvrez comment réinitialiser votre équipement OverTheBox afin de
 section: "Configurations de l'OverTheBox"
 ---
 
-**Dernière mise à jour le 08/11/2022**
+**Dernière mise à jour le 14/11/2022**
 
 ## Objectif
 
@@ -108,6 +108,15 @@ firstboot -y
 >
 > [Installation OverTheBox Plus ou IT v2](../plus-itv2-installation/)
 >
+
+### Méthode n°4 : réinitialisation par clé USB
+
+> [!warning]
+>
+> Cette méthode n'est pas recommandée et n'est utile uniquement que pour certains usages avancés.
+>
+
+Vous pouvez suivre le guide « [Installer l’image OverTheBox sur votre matériel](../installer-limage-overthebox-sur-votre-materiel/) » pour installer manuellement la dernière image du système OverTheBox.
 
 ## Aller plus loin
 

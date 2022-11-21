@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 2
 ---
 
-**Last updated 31st August 2022**
+**Last updated 15th November 2022**
 
 ## Objective
 
@@ -79,7 +79,9 @@ Click on `...`{.action} next to the backup you need to access and select `Mounti
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
 
-After the process is completed, you will receive an email. You can now connect to your VPS and add the partition where your backup is located.
+When you use this option, a read-write copy of the backup is created and mounted. The original backup will remain available unchanged for future restorations.
+
+After the process is completed, you will receive an email. You can now connect to your VPS and access the partition where your backup is located.
 
 #### Using Secure Shell
 
@@ -117,7 +119,7 @@ You can now switch to this folder and access your backup data.
                                         
 #### Using Windows
 
-Establish an RDP connection to your server. When you’ve logged in, right-click on the `Start Menu`{.action} button, and then click `Disk Management`{.action}.
+Establish an RDP connection to your server. Once logged in, right-click on the `Start Menu`{.action} button, and then click `Disk Management`{.action}.
 
 ![disk management](images/windowsbackup1.png){.thumbnail}
 

@@ -78,6 +78,11 @@ A questo punto è necessario personalizzare l'aggiunta del dominio o sottodomini
 |Attiva il firewall|Permette di attivare un firewall (analisi del traffico) sul dominio selezionato.  Per maggiori informazioni, accedi alla pagina relativa a [Mod Security](https://www.ovhcloud.com/it/web-hosting/options/){.external}.|
 |Log separati|Permette di attivare un nuovo spazio di log sul dominio selezionato. Dovrai scegliere, tra quelli disponibili nella lista, il dominio che determinerà il nome di accesso al nuovo spazio. Per maggiori informazioni, accedi alla [pagina relativa alle statistiche dettagliate](https://www.ovhcloud.com/it/web-hosting/uc-website-traffic-analysis/){.external}.|
 
+> [!warning]
+>
+> Non è possibile attivare log separati per un dominio esterno. Questa opzione è disponibile solo per i domini registrati in OVHcloud.
+>
+
 Una volta inseriti tutti i dati, clicca su `Seguente`{.action} e verifica la correttezza delle informazioni inserite.
 
 ![multisito](images/add-multisite-step3.png){.thumbnail}
@@ -105,7 +110,7 @@ Ora che il dominio è stato aggiunto, passa allo [Step 3: mettere online](#site-
 >
 > |Campo|Dove trovare l’informazione|Azione da realizzare|
 > |---|---|---|
-> |TXT|Nella scheda `Multisito`{.action}, clicca sul pulsante `Configura il token ovhcontrol`{.action} in basso a sinistra.|Consente a OVHcloud di assicurarsi che l'aggiunta di ciascun dominio esterno sia legittima. Provvedi a creare il record TXT con il sottodominio ovhcontrol (ad esempio, ovhcontrol.mydomain.ovh) nella zona DNS che è l'autorità per il dominio da aggiungere.<br></br>Per recuperarla, consulta i [server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#capire-il-concetto-di-dns) a cui è associato il tuo dominio. Dovrai convalidare solo il dominio principale, non tutti i sottodomini.|
+> |TXT|Nella scheda `Multisito`{.action}, clicca sul pulsante `Configura il token ovhcontrol`{.action} in basso a sinistra.|Consente a OVHcloud di assicurarsi che l'aggiunta di ciascun dominio esterno sia legittima. Provvedi a creare il record TXT con il sottodominio ovhcontrol (ad esempio, ovhcontrol.mydomain.ovh) nella zona DNS che è l'autorità per il dominio da aggiungere.<br></br>Per aggiungere `blog.mydomain.ovh` è necessario creare il record per il sottodominio `ovhcontrol.mydomain.ovh` e non `ovhcontrol.blog.mydomain.ovh`.<br></br>Per recuperarla, consulta i [server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#capire-il-concetto-di-dns) a cui è associato il tuo dominio. Dovrai convalidare solo il dominio principale, non tutti i sottodomini.|
 >
 > ![multisito](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -151,7 +156,7 @@ Se invece vuoi effettuare un’installazione manuale, assicurati di avere a disp
 >
 > Per aggiungere più siti Web, ripeti questa operazione.
 >
-> Ti consigliamo però di prestare la massima attenzione:  maggiore è il numero di siti ospitati, più alto sarà il numero di risorse necessarie. [La pagina delle nostre soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} indica il numero di siti Internet che puoi ospitare sul tuo spazio.
+> Ti consigliamo però di prestare la massima attenzione:  maggiore è il numero di siti ospitati, più alto sarà il numero di risorse necessarie. [La pagina delle nostre soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} indica il numero di siti Internet raccomandati che puoi ospitare sul tuo spazio.
 >
 
 ## Per saperne di più

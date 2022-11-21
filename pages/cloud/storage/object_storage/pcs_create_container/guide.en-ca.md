@@ -17,7 +17,7 @@ The Object Storage solution for Public Cloud offers an unlimited storage solutio
 - For public hosting (to store everything that is accessible to the public).
 - For cold storage (archiving).
 
-The first step is to create a container that will hold your files. 
+The first step is to create a container that will hold your files.
 
 **This guide explains how to create it from the OVHcloud Control Panel and from the Openstack Horizon interface.**
 
@@ -61,9 +61,10 @@ Name your container, then click `Create the container`{.action}:
 > [!warning]
 >
 > If you want to link your container to a domain name, your container name must not contain the following characters:
-> - [ . ]
-> - [ _ ]
-> - And you must not use capital letters.
+>
+> - [ . ]  
+> - [ _ ]  
+> - And you must not use capital letters.  
 >  
 > See: [Linking a container to a domain name](https://docs.ovh.com/ca/en/storage/pcs/link-domain/)
 >
@@ -94,9 +95,10 @@ Name your container.
 > [!warning]
 >
 > If you want to link your container to a domain name, your container name must not contain the following characters:
-> - [ . ]
-> - [ _ ]
-> - And you must not use capital letters.
+>
+> - [ . ]  
+> - [ _ ]  
+> - And you must not use capital letters.  
 >  
 > See: [Linking a container to a domain name](https://docs.ovh.com/ca/en/storage/pcs/link-domain/)
 >

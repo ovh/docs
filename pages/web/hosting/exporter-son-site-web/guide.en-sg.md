@@ -62,7 +62,6 @@ To identify the folder that the website is stored on, go to the `Multi-site`{.ac
 To retrieve a backup of your database, please read our guide on
 [Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/).
 
-
 ### Step 3: Retrieve the logs for your OVHcloud web hosting plan.
 
 If you would like to download your website’s logs, you can do so via your web hosting plan.

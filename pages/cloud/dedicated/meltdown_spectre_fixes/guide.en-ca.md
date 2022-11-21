@@ -665,7 +665,7 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">vSphere 6.0/6.5</td>
                <td class="confluenceTd">
                   <p>Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</p>
-                  <p><a class="external-link" href="http://travaux.ovh.net/?do=details&amp;id=29250" rel="nofollow">http://travaux.ovh.net/?do=details&amp;id=29250</a></p>
+                  <p><a class="external-link" href="https://hosted-private-cloud.status-ovhcloud.com/incidents/89jqnyth2113" rel="nofollow">https://hosted-private-cloud.status-ovhcloud.com/incidents/89jqnyth2113</a></p>
                   <p>All host : 100% patched</p>
                </td>
                <td class="confluenceTd">
@@ -742,7 +742,7 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">Horizon 7 aaS</td>
                <td colspan="1" class="confluenceTd">
                   <p>Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</p>
-                  <p><a class="external-link" href="http://travaux.ovh.net/?do=details&amp;id=29251" rel="nofollow">http://travaux.ovh.net/?do=details&amp;id=29251</a></p>
+                  <p><a class="external-link" href="https://bare-metal-servers.status-ovhcloud.com/incidents/t3py38ybz4fx" rel="nofollow">https://bare-metal-servers.status-ovhcloud.com/incidents/t3py38ybz4fx</a></p>
                   <p>&nbsp;</p>
                </td>
                <td colspan="1" class="confluenceTd">
@@ -794,7 +794,7 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">Horizon 7 over pCC</td>
                <td colspan="1" class="confluenceTd">
                   <p>Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</p>
-                  <p><a class="external-link" href="http://travaux.ovh.net/?do=details&amp;id=29250" rel="nofollow">http://travaux.ovh.net/?do=details&amp;id=29250</a></p>
+                  <p><a class="external-link" href="https://hosted-private-cloud.status-ovhcloud.com/incidents/89jqnyth2113" rel="nofollow">https://hosted-private-cloud.status-ovhcloud.com/incidents/89jqnyth2113</a></p>
                </td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">
@@ -1301,7 +1301,7 @@ fullwidth: true
                <td colspan="1" class="confluenceTd">LXC</td>
                <td colspan="1" class="confluenceTd">
                   <p>Service update (<em><span style="color: rgb(0,0,255);">OVH side</span></em>)</p>
-                  <p><a class="external-link" href="http://travaux.ovh.net/?do=details&amp;id=29245" rel="nofollow">http://travaux.ovh.net/?do=details&amp;id=29245</a></p>
+                  <p><a class="external-link" href="https://web-cloud.status-ovhcloud.com/incidents/zkngm354nk96" rel="nofollow">https://web-cloud.status-ovhcloud.com/incidents/zkngm354nk96</a></p>
                </td>
                <td colspan="1" class="confluenceTd">
                   <div class="content-wrapper">

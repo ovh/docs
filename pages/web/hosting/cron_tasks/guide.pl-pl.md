@@ -50,7 +50,7 @@ Aby utworzyć zadanie CRON, kliknij przycisk `Dodaj harmonogram`{.action} po pra
 |Opcja|Opis|   
 |---|---|   
 |Zamówienie do wykonania|Zdefiniuj ścieżkę dostępu do pliku zawierającego Twój skrypt. Przykład: www/jobs/cron.php|   
-|Język|Wybierz wersję PHP używaną przez skrypt lub wybierz "Inne".|
+|Język|Wybierz wersję PHP używaną przez skrypt.|
 |Aktywacja|Wybierz, czy zadanie będzie aktywne po jego utworzeniu, czy też zostanie włączone w późniejszym terminie.| 
 |Logi na e-mail|W razie potrzeby wybierz kontakt (administrator lub technik), do którego zostanie wysłany raport w przypadku błędu w wykonaniu. Możesz również podać inny adres poczty elektronicznej.| 
 |Opis|Wpisz opis, aby śledzić wykonywanie zadań.| 

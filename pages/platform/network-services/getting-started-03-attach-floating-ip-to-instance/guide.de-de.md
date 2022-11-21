@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/de/publiccloud/network-services/attaching-pci-floating-ip-to-instance/'
 ---
 
-**Last updated 2nd November 2022**
+**Last updated 14th November 2022**
 
 ## Objective
 
@@ -105,7 +105,7 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >>
 >> In the next step, choose a region for your Floating IPs. The region must be the same as that of the instance you wish to attach the Floating IP to.
 >>
->> ![select location ip](images/selectlocationip.png){.thumbnail}
+>> ![select location ip](images/selectregionip.png){.thumbnail}
 >>
 >>
 >> > [!primary]

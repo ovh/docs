@@ -1,6 +1,6 @@
 ---
 title: Cloud Archive Swift - Création de conteneur Public Cloud Archive
-slug: pca/creation-de-conteneur
+slug: pca/create-container
 excerpt: Découvrez comment créer vos conteneurs Public Cloud Archive depuis votre espace client OVHcloud
 section: Spécificités de la classe de stockage d'archive OpenStack Swift
 order: 020

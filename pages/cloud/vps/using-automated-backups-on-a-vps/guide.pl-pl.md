@@ -10,7 +10,7 @@ order: 2
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia: 31-08-2022**
+**Ostatnia aktualizacja z dnia: 15-11-2022**
 
 ## Wprowadzenie
 
@@ -82,6 +82,8 @@ Całkowite zastąpienie istniejącej usługi w wyniku przywrócenia nie jest kon
 Kliknij ikonę `...`{.action} obok kopii zapasowej, do której chcesz uzyskać dostęp, i wybierz pozycję `Montowanie`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
+
+Gdy korzystasz z tej opcji, utworzona zostaje kopia zapasowa w trybie odczytu i zapisu. Oryginalna kopia zapasowa pozostaje dostępna dla przyszłych przywróceń.
 
 Po ukończeniu procesu otrzymasz wiadomość e-mail. Teraz możesz się połączyć z prywatnym serwerem wirtualnym i dodać partycję, na której znajduje się kopia zapasowa.
 

@@ -34,11 +34,11 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](ht
 >>
 >> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}.
 >>
->> Cliquez sur `Public Gateways`{.action} dans le menu de gauche sous l'onglet **Network**.
+>> Cliquez sur `Gateway`{.action} dans le menu de gauche sous l'onglet **Network**.
 >>
 >> Veuillez noter qu'il est nécessaire d'avoir activé le vRack avant de poursuivre. Si vous n'en possédez pas, nous vous invitons à consulter cette [section](https://docs.ovh.com/fr/publiccloud/network-services/public-cloud-vrack/#activation) du guide correspondant.
 >>
->> Cliquez ensuite sur le bouton `Créer une Public Gateway`{.action}. 
+>> Cliquez ensuite sur le bouton `Créer une Gateway`{.action}. 
 >>
 >> ![création de la gateway](images/firstgatewaycreation.png){.thumbnail}
 >>
@@ -58,7 +58,7 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](ht
 >>
 >> Sélectionnez ensuite une localisation pour votre Gateway. Il est préférable de créer une Public Gateway dans la région dans laquelle vous avez l'intention de déployer vos instances privées.
 >>
->> ![sélection de la région](images/selectlocation.png){.thumbnail}
+>> ![sélection de la région](images/selectregion.png){.thumbnail}
 >>
 > **Etape 4**
 >>
@@ -78,7 +78,7 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](ht
 >>
 > **Etape 5**
 >>
->> Une fois le réseau ajouté, cliquez sur `Créer une gateway`{.action}.
+>> Une fois le réseau ajouté, cliquez sur `Créer une Gateway`{.action}.
 >>
 >> ![créer une gateway](images/confirmcreation.png){.thumbnail}
 >> 
@@ -92,7 +92,7 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](ht
 >> 
 >> ![nouveau réseau privé](images/createdprivatenetwork.png){.thumbnail} 
 >>
->> Vous pouvez afficher la Public Gateway dans la section `Public Gateways`{.action}.
+>> Vous pouvez afficher la Public Gateway dans la section `Gateway`{.action}.
 >>
 >> ![nouveau gateway](images/mynewgateway.png){.thumbnail}
 >>

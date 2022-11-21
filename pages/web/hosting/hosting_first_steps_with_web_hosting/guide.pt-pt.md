@@ -6,26 +6,26 @@ section: Primeiros passos
 order: 02
 ---
 
-**Última atualização: 06/02/2018**
+**Última atualização: 14/11/2022**
 
 ## Sumário
 
-O alojamento web da OVH oferece várias possibilidades de utilização e configuração. Esta guia introdutório contém informação para começar a tirar partido dessas possibilidades. 
+O alojamento web da OVHcloud oferece várias possibilidades de utilização e configuração. Esta guia introdutório contém informação para começar a tirar partido dessas possibilidades. 
 
 **Siga as instruções para saber como usar e gerir um alojamento web.**
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
 - Ter um [domínio](https://www.ovhcloud.com/pt/domains/){.external} (endereço que permite identificar e aceder ao seu site).
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 ### 1 - Tipo de Projeto: Criar ou Transferir um Site.
 
-O alojamento web OVH permite criar um site novo com toda a facilidade, ou alojar um já existente. Pretende partilhar um hobby ou promover uma atividade profissional? Criar um blogue ou uma loja online? Migrar um site para a OVH? Neste guia existem opções para vários tipos de projeto.
+O alojamento web OVHcloud permite criar um site novo com toda a facilidade, ou alojar um já existente. Pretende partilhar um hobby ou promover uma atividade profissional? Criar um blogue ou uma loja online? Migrar um site para a OVH? Neste guia existem opções para vários tipos de projeto.
 
 - **Criação de um site**
 
@@ -35,7 +35,7 @@ Na Área de Cliente existe uma ferramenta que permite instalar um CMS com 1 cliq
 
 - **Transferir um site para a OVH**
 
-A transferência de um site é um procedimento um pouco mais complicado, sobretudo para um projeto que já está *online*, cujo acesso não pode ser interrompido. Este guia contém algumas instruções para ajudar a transferir um site para a OVH. Para mais informação sobre a transferência de um site, consulte o guia (em francês) [Transferir o meu site para a OVH](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (versão PT disponível em breve).
+A transferência de um site é um procedimento um pouco mais complicado, sobretudo para um projeto que já está *online*, cujo acesso não pode ser interrompido. Este guia contém algumas instruções para ajudar a transferir um site para a OVHcloud. Para mais informação sobre a transferência de um site, consulte o guia (em francês) [Transferir o meu site para a OVHcloud](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (versão PT disponível em breve).
 
 ### 2 - Instalar CMS ou Transferir um site
 
@@ -43,9 +43,9 @@ Nesta secção vai aprender a colocar o site no alojamento. A secção 4 (Domín
 
 #### Módulos 1 clique: instalar CMS de forma automática
 
-Os módulos 1 clique da OVH permitem instalar um CMS de forma simples e rápida. O sistema OVH instala o CMS de forma automática e envia um e-mail com o link e os dados de acesso à interface de criação e gestão do site.
+Os módulos 1 clique da OVHcloud permitem instalar um CMS de forma simples e rápida. O sistema OVHcloud instala o CMS de forma automática e envia um e-mail com o link e os dados de acesso à interface de criação e gestão do site.
 
-Antes continuar, certifique-se que a pasta de instalação está vazia e que o sistema pode criar uma nova base de dados. Na primeira utilização do alojamento, esta verificação não é necessária. Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para instalar o módulo CMS. Clique em `Alojamentos`{.action} e, de seguida, no nome do alojamento web que contratou. Depois, nos `Módulos 1 clique`{.action}, clique no botão `Adicionar um módulo`{.action}.
+Antes continuar, certifique-se que a pasta de instalação está vazia e que o sistema pode criar uma nova base de dados. Na primeira utilização do alojamento, esta verificação não é necessária. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para instalar o módulo CMS. Clique em `Alojamentos`{.action} e, de seguida, no nome do alojamento web que contratou. Depois, nos `Módulos 1 clique`{.action}, clique no botão `Adicionar um módulo`{.action}.
 
 ![Acesso aos módulos 1 clique](images/access_to_the_1_click_modules_section.png){/thumbnail}
 
@@ -57,7 +57,7 @@ Para mais informações sobre os módulos 1 clique, consulte o guia: [Como insta
 
 #### Módulos 1 clique: criar e selecionar uma base de dados de forma manual
 
-No modo de instalação simples, o Módulo 1 clique instala automaticamente o CMS e a respetiva base de dados. Se preferir criar e selecionar manualmente uma base de dados, escolha a instalação avançada. Atenção! (1) A instalação avançada requer a configuração de alguns aspetos importantes para o funcionamento do CMS e da base de dados. (2) As ofertas de Alojamento OVH permitem criar um número limitado de bases de dados. É possível adicionar bases de dados extra, mas estas serão pagas à parte.
+No modo de instalação simples, o Módulo 1 clique instala automaticamente o CMS e a respetiva base de dados. Se preferir criar e selecionar manualmente uma base de dados, escolha a instalação avançada. Atenção! (1) A instalação avançada requer a configuração de alguns aspetos importantes para o funcionamento do CMS e da base de dados. (2) As ofertas de Alojamento OVHcloud permitem criar um número limitado de bases de dados. É possível adicionar bases de dados extra, mas estas serão pagas à parte.
 
 Para instalar o módulo no modo avançado, certifique-se que:
 
@@ -78,9 +78,9 @@ Se desejar mais informação sobre o processo, consulte o guia: [Como instalar u
 
 #### Transferência de um site já criado.
 
-Nesta situação, precisa de ter acesso aos ficheiros do site que irá transferir para o alojamento OVH. De seguida, terá de aceder ao espaço de alojamento, e efetuar a transferência dos ficheiros para a pasta correta. Se necessário, terá de associar o site a uma base de dados previamente criada.
+Nesta situação, precisa de ter acesso aos ficheiros do site que irá transferir para o alojamento OVHcloud. De seguida, terá de aceder ao espaço de alojamento, e efetuar a transferência dos ficheiros para a pasta correta. Se necessário, terá de associar o site a uma base de dados previamente criada.
 
-Atenção! Este processo pode variar de acordo com o tipo de site. Se precisar de mais informação, consulte os guias: [Colocar um site online](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external} e [Transferir um site para a OVH](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (versão PT disponível em breve). O site está no alojamento OVH. Se quiser usar a solução de e-mail incluída no serviço, siga as instruções abaixo. Senão, passe à secção: **Domínios: Consultar, Verificar e Alterar dados DNS**.
+Atenção! Este processo pode variar de acordo com o tipo de site. Se precisar de mais informação, consulte os guias: [Colocar um site online](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external} e [Transferir um site para a OVHcloud](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (versão PT disponível em breve). O site está no alojamento OVHcloud. Se quiser usar a solução de e-mail incluída no serviço, siga as instruções abaixo. Senão, passe à secção: **Domínios: Consultar, Verificar e Alterar dados DNS**.
 
 ### 3 - Criar endereços de e-mail
 
@@ -88,19 +88,19 @@ A utilização dos serviços de e-mail incluídos no [alojamento web](https://ww
 
 ![Criar um endereço de e-mail](images/create_an_email_address.png){/thumbnail}
 
-Siga as instruções e insira a informação necessária. Repita este passo para criar mais endereços. Pretende transferir as suas mensagens de e-mail para a OVH? Use o [OVH Mail Migrator](https://omm.ovh.net/){.external}, e siga as instruções apresentadas. 
+Siga as instruções e insira a informação necessária. Repita este passo para criar mais endereços. Pretende transferir as suas mensagens de e-mail para a OVH? Use o [OVHcloud Mail Migrator](https://omm.ovh.net/){.external}, e siga as instruções apresentadas. 
 
-Para mais informações, consulte o guia: [Como criar um endereço de e-mail](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external} e [Transferir o meu site para a OVH](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (Versão PT disponível em breve).
+Para mais informações, consulte o guia: [Como criar um endereço de e-mail](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external} e [Transferir o meu site para a OVHcloud](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (Versão PT disponível em breve).
 
 ### 4 - Domínios: Consultar, Verificar e Alterar dados DNS
 
-Por esta altura, o seu site está alojado nos serviços OVH e os endereços de e-mail estão criados. Contudo, para que o site fique *online* e o serviço de e-mail possa funcionar, precisa de configurar o domínio (ou subdomínio). Essa configuração passa, por exemplo, por associar um domínio a um endereço IP na Zona DNS.
+Por esta altura, o seu site está alojado nos serviços OVHcloud e os endereços de e-mail estão criados. Contudo, para que o site fique *online* e o serviço de e-mail possa funcionar, precisa de configurar o domínio (ou subdomínio). Essa configuração passa, por exemplo, por associar um domínio a um endereço IP na Zona DNS.
 
 Quando um internauta usa um browser para aceder ao site, o seu domínio (e.g. www.meudominio.pt) é «convertido» para o endereço IP do servidor onde o site está localizado. Este processo, designado de resolução DNS, permite que o navegador consiga «encontrar» os ficheiros do *site* no serviço de alojamento, e apresentar o site no ecrã do dispositivo (e.g. computador, smartphone).  
 
-Se adquiriu um domínio juntamente com o serviço de alojamento OVH, e não alterou a configuração da zona DNS, passe à secção **Personalizar o seu Site com um CMS**. Caso contrário, ou se não tiver a certeza, siga as instruções abaixo.
+Se adquiriu um domínio juntamente com o serviço de alojamento OVHcloud, e não alterou a configuração da zona DNS, passe à secção **Personalizar o seu Site com um CMS**. Caso contrário, ou se não tiver a certeza, siga as instruções abaixo.
 
-#### Consultar registos DNS do alojamento OVH 
+#### Consultar registos DNS do alojamento OVHcloud 
 
 Existem dois registos DNS (campos A e MX) que permitem aceder ao seu site e receber mensagens destinadas ao seu endereço de e-mail. 
 
@@ -118,7 +118,7 @@ Para consultar os campos MX, e os dados que deve usar na zona DNS, aceda à [Ár
 
 #### Verificar e/ou alterar os registos DNS
 
-Agora que sabe os registos DNS associados ao seu alojamento web OVH, pode verificar e alterar os campos A e MX. Atenção! As configurações podem variar em função do tipo de site.
+Agora que sabe os registos DNS associados ao seu alojamento web OVHcloud, pode verificar e alterar os campos A e MX. Atenção! As configurações podem variar em função do tipo de site.
 
 - **Subscrição conjunta de um domínio e de um alojamento web OVH**
 
@@ -132,7 +132,7 @@ Se o seu domínio estiver associado a uma zona DNS alojada noutro prestador de s
 
 - **Transferir serviços (sites e e-mail) para a OVH**
 
-Após a transferência do site para o alojamento OVH, terá que alterar os campos DNS. Neste tipo de situação, se as configurações DNS não forem executados de forma correta, os serviços (site ou e-mail) podem ficar indisponíveis. Como tal, deverá seguir as instruções indicadas no guia: [Transferir o meu site para a OVH](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (versão PT disponível em breve).
+Após a transferência do site para o alojamento OVHcloud, terá que alterar os campos DNS. Neste tipo de situação, se as configurações DNS não forem executados de forma correta, os serviços (site ou e-mail) podem ficar indisponíveis. Como tal, deverá seguir as instruções indicadas no guia: [Transferir o meu site para a OVHcloud](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (versão PT disponível em breve).
 
 > [!primary]
 >
@@ -145,13 +145,13 @@ Instalou um CMS com um dos Módulos 1 Clique e recebeu um e-mail com os dados do
 
 ### 6 - Usar o Serviço de E-mail
 
-Os seus endereços de e-mail podem ser usados com o Roundcube, um serviço de webmail incluído na oferta de alojamento OVH. Aceda a <https://mail.ovh.net/>, e preencha os dados associados ao endereço de e-mail criado através do sistema OVH.
+Os seus endereços de e-mail podem ser usados com o Roundcube, um serviço de webmail incluído na oferta de alojamento OVHcloud. Aceda a <https://www.ovhcloud.com/pt/mail/>, e preencha os dados associados ao endereço de e-mail criado através do sistema OVHcloud.
 
 Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/){.external}. Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página:<https://docs.ovh.com/pt/emails/>.
 
 ## Quer saber mais? Veja os guias abaixo
 
-[Transferir o meu site para a OVH](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (Versão PT disponível em breve)
+[Transferir o meu site para a OVHcloud](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (Versão PT disponível em breve)
 
 [Colocar o meu *site* online](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external}
 

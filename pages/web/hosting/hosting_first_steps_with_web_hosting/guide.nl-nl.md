@@ -20,7 +20,7 @@ U heeft onlangs een webhosting plan aangeschaft om uw website te kunnen maken. M
 - U moet beschikken over een [OVH-webhosting plan](https://www.ovhcloud.com/nl/web-hosting/){.external}.
 - U moet een e-mail hebben ontvangen met daarin de bevestiging dat uw webhosting is geïnstalleerd.
 - U moet beschikken over een [domeinnaam](https://www.ovhcloud.com/nl/domains/){.external}, wat het adres zal worden waarop uw website te vinden zal zijn.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
+- U moet ingelogd zijn op uw [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 ## Instructie
 
@@ -34,11 +34,11 @@ Met uw OVH-webhosting kunt u een nieuwe website bouwen of een bestaande website 
 
  U heeft de mogelijkheid uw eigen website te bouwen als u voldoende vaardigheden heeft om te programmeren, of door gebruik te maken van kant-en-klaar websites als CMS (Content Management System). De eerste oplossing vereist bepaalde technische vaardigheden, maar biedt de mogelijkheid een project meer op maat te bouwen. De tweede biedt de mogelijkheid gebruik te maken van een structuur die klaar is voor gebruik, zonder er veel  technische vaardigheden nodig te hebben.
 
-Vanuit het Control Panel biedt OVH de klant een tool waarmee deze met 1 klik een CMS kan installeren en kan kiezen uit WordPress, PrestaShop, Drupal en Joomla!. Als u niet weet welke CMS het beste bij u past dan kan dit [vergelijkend overzicht](https://www.ovhcloud.com/nl/web-hosting/uc-cms-comparison/){.external} u helpen bij uw keuze. Indien de CMS die u wilt installeren niet door OVH wordt aangeboden, kunt u deze handmatig op uw hosting installeren.
+Vanuit het Control Panel biedt OVHcloud de klant een tool waarmee deze met 1 klik een CMS kan installeren en kan kiezen uit WordPress, PrestaShop, Drupal en Joomla!. Als u niet weet welke CMS het beste bij u past dan kan dit [vergelijkend overzicht](https://www.ovhcloud.com/nl/web-hosting/uc-cms-comparison/){.external} u helpen bij uw keuze. Indien de CMS die u wilt installeren niet door OVHcloud wordt aangeboden, kunt u deze handmatig op uw hosting installeren.
 
 - **Migratie van uw website naar OVH**
 
-Het migreren van een website kan kwetsbaar zijn, vooral als het om een werkende dienst gaat waarbij een onderbreking geen optie is. Wat dat betreft geeft deze handleiding maar een paar van de stappen aan die nodig zijn om uw diensten te kunnen verhuizen. Voor het volledige verhuisproces kunt u terecht in onze handleiding [Mijn website naar OVH verhuizen](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external}.
+Het migreren van een website kan kwetsbaar zijn, vooral als het om een werkende dienst gaat waarbij een onderbreking geen optie is. Wat dat betreft geeft deze handleiding maar een paar van de stappen aan die nodig zijn om uw diensten te kunnen verhuizen. Voor het volledige verhuisproces kunt u terecht in onze handleiding [Mijn website naar OVHcloud verhuizen](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external}.
 
 ### Stap 2: Installeer uw website 
 
@@ -46,9 +46,9 @@ Als uw project eenmaal precies is vastgesteld, hoeft het alleen nog maar te word
 
 #### Eenvoudige oplossing in 1 klik, zonder noodzaak aan technische vaardigheden
 
-Deze oplossing maakt gebruik van de 1-klik-modules van OVH, een tool waarmee snel en eenvoudig een CMS kan worden geïnstalleerd. OVH installeert de website en geeft u uw gebruikersgegevens door.
+Deze oplossing maakt gebruik van de 1-klik-modules van OVHcloud, een tool waarmee snel en eenvoudig een CMS kan worden geïnstalleerd. OVHcloud installeert de website en geeft u uw gebruikersgegevens door.
 
-Om de installatie van de OVH-module mogelijk te maken, dient u ervoor te zorgen dat de installatiedirectory leeg is (dit is het geval als u nog niet bent ingelogd op uw opslagruimte). Om de installatie van de 1-klik-module te realiseren, logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het linkermenu naar `Hosting`{.action} en vervolgens naar de naam van de webhosting die u hebt besteld. Klik vervolgens in de tab `1-klik-modules`{.action} op de knop `Module toevoegen`{.action}.
+Om de installatie van de OVH-module mogelijk te maken, dient u ervoor te zorgen dat de installatiedirectory leeg is (dit is het geval als u nog niet bent ingelogd op uw opslagruimte). Om de installatie van de 1-klik-module te realiseren, logt u in op uw [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het linkermenu naar `Hosting`{.action} en vervolgens naar de naam van de webhosting die u hebt besteld. Klik vervolgens in de tab `1-klik-modules`{.action} op de knop `Module toevoegen`{.action}.
 
 ![Toegang tot 1-klik-modules](images/access_to_the_1_click_modules_section.png){/thumbnail}
 
@@ -56,18 +56,18 @@ Selecteer tot slot, om de installatie van de 1-klik-module in gang te zetten, de
 
 Nu hoeft u alleen nog maar even geduld te hebben tot u de e-mail ontvangt waarin de installatie van de module wordt bevestigd en waarin de gegevens staan die u nodig heeft om in te kunnen loggen op het administratieve gedeelte van de website. Daarna kunt u verder gaan met de hieronder vermelde stappen.
 
-Voor meer informatie over onze OVH 1-klik-modules kunt u onze documentatie raadplegen: [Een website installeren met 1-klik-modules](https://docs.ovh.com/nl/hosting/1-klik-modules/){.external}.
+Voor meer informatie over onze OVHcloud 1-klik-modules kunt u onze documentatie raadplegen: [Een website installeren met 1-klik-modules](https://docs.ovh.com/nl/hosting/1-klik-modules/){.external}.
 
 #### Snelle oplossing in een paar klikken, zonder noodzaak aan technische vaardigheden
 
-Bij deze oplossing worden de OVH-modules gebruikt, een tool waarmee eenvoudig een CMS geïnstalleerd kan worden. OVH installeert uw website dankzij de persoonsgegevens die u heeft doorgegeven (bijvoorbeeld: de persoonlijke inloggegevens voor CMS). Voor deze oplossing is minstens één database nodig in het pakket.
+Bij deze oplossing worden de OVH-modules gebruikt, een tool waarmee eenvoudig een CMS geïnstalleerd kan worden. OVHcloud installeert uw website dankzij de persoonsgegevens die u heeft doorgegeven (bijvoorbeeld: de persoonlijke inloggegevens voor CMS). Voor deze oplossing is minstens één database nodig in het pakket.
 
 Om de installatie van de OVH-module mogelijk te kunnen maken, dient u zich ervan te verzekeren dat:
 
 - de installatie-directory leeg is (wat het geval is wanneer u nog niet bent ingelogd op uw opslagruimte);
 - er al een database is aangemaakt op uw hosting (ga naar de tab `Database`{.action} en vervolgens naar `Een database aanmaken`{.action} om de handeling te verrichten).
 
-Om de database aan te maken, logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het linkermenu naar `Hosting`{.action} en vervolgens naar de naam van de webhosting die u heeft besteld. Klik in de tab `Database`{.action} op de knop `Database aanmaken`{.action}. Vul de gevraagde gegevens in en wacht terwijl de installatie wordt uitgevoerd.
+Om de database aan te maken, logt u in op uw [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het linkermenu naar `Hosting`{.action} en vervolgens naar de naam van de webhosting die u heeft besteld. Klik in de tab `Database`{.action} op de knop `Database aanmaken`{.action}. Vul de gevraagde gegevens in en wacht terwijl de installatie wordt uitgevoerd.
 
 ![Toegang tot 1-klik-modules](images/create_a_database.png){/thumbnail}
 
@@ -83,17 +83,17 @@ Raadpleeg onze documentatie voor meer informatie over het geavanceerd installere
 
 Deze oplossing is van toepassing wanneer u een website wilt bouwen of verhuizen zonder gebruik te maken van de OVH-modules. U dient in het bezit te zijn van de bestanden van de website die u wenst te installeren. U dient dus handmatig in te loggen op uw opslagruimte om er de bestanden van de website naar te uploaden en deze vervolgens, indien mogelijk, te verbinden met een vooraf aangemaakte database.
 
-Er bestaat geen universeel stappenplan omdat de websites behoorlijk van elkaar kunnen verschillen, maar we kunnen u met onze documentatie wel op weg helpen met de op uw OVH-webhosting uit te voeren handelingen: [Mijn website online zetten](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} en [Mijn website naar OVH verhuizen](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external} indien van toepassing. Wanneer de website eenmaal handmatig is geïnstalleerd op uw webhosting, kunt u verder gaan met de hieronder vermelde stappen.
+Er bestaat geen universeel stappenplan omdat de websites behoorlijk van elkaar kunnen verschillen, maar we kunnen u met onze documentatie wel op weg helpen met de op uw OVH-webhosting uit te voeren handelingen: [Mijn website online zetten](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} en [Mijn website naar OVHcloud verhuizen](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external} indien van toepassing. Wanneer de website eenmaal handmatig is geïnstalleerd op uw webhosting, kunt u verder gaan met de hieronder vermelde stappen.
 
 ### Stap 3: Creëer uw e-mailadressen 
 
-Deze stap is niet verplicht als u geen gebruik wenst te maken van de e-mailadressen die zijn inbegrepen bij uw [webhosting](https://www.ovhcloud.com/nl/web-hosting/){.external}. Om één of meer e-mailadressen aan te maken, dient u te zijn ingelogd op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het menu aan de linkerkant naar het gedeelte `E-mails`{.action}, en klik vervolgens op de naam van de webhosting die u hebt besteld. Klik vervolgens in de tab `E-mails`{.action} op de knop `Maak een e-mailadres aan`{.action}.
+Deze stap is niet verplicht als u geen gebruik wenst te maken van de e-mailadressen die zijn inbegrepen bij uw [webhosting](https://www.ovhcloud.com/nl/web-hosting/){.external}. Om één of meer e-mailadressen aan te maken, dient u te zijn ingelogd op uw [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het menu aan de linkerkant naar het gedeelte `E-mails`{.action}, en klik vervolgens op de naam van de webhosting die u hebt besteld. Klik vervolgens in de tab `E-mails`{.action} op de knop `Maak een e-mailadres aan`{.action}.
 
 ![Een e-mailadres aanmaken](images/create_an_email_address.png){/thumbnail}
 
-Volg de aanwijzingen voor aanmaken van uw e-mailadres. Herhaal deze stap om er meerdere aan te maken. Indien u uw e-mailadressen aan het verhuizen bent naar OVH, kunt u gebruik maken van onze tool [OVH Mail Migrator](https://omm.ovh.net/){.external} om u te helpen dit te voltooien. 
+Volg de aanwijzingen voor aanmaken van uw e-mailadres. Herhaal deze stap om er meerdere aan te maken. Indien u uw e-mailadressen aan het verhuizen bent naar OVHcloud, kunt u gebruik maken van onze tool [OVHcloud Mail Migrator](https://omm.ovh.net/){.external} om u te helpen dit te voltooien. 
 
-Raadpleeg onze documentatie voor meer informatie over het aanmaken van een e-mailadres of over het verhuizen van uw diensten naar OVH: [Hoe maak ik een e-mailadres aan](https://docs.ovh.com/nl/emails/webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres/){.external} en [Een website naar OVH verhuizen](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external} indien van toepassing.
+Raadpleeg onze documentatie voor meer informatie over het aanmaken van een e-mailadres of over het verhuizen van uw diensten naar OVH: [Hoe maak ik een e-mailadres aan](https://docs.ovh.com/nl/emails/webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres/){.external} en [Een website naar OVHcloud verhuizen](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external} indien van toepassing.
 
 ### Stap 4: Controleer of wijzig de configuratie van uw domein
 
@@ -101,11 +101,11 @@ Bij deze stap dient uw website op uw OVH-webhosting te zijn geïnstalleerd en uw
 
 Wanneer bijvoorbeeld een bezoeker naar uw website gaat, voert hij in zijn browser het adres van uw website in (uw domeinnaam). Daarna wordt een DNS-resolutie uitgevoerd. Het is dit proces dat het mogelijk maakt de aansluiting te maken tussen uw domeinnaam en de server waarop uw website wordt gehost. Deze correlatie is mogelijk dankzij informatie in een DNS-zone: een soort telefoonboek waar de configuratie van uw website is ingeschreven.
 
-Als u uw domeinnaam samen met uw OVH-webhosting hebt besteld en u geen enkele wijziging in de DNS-zone hebt aangebracht vanuit uw OVH Control Panel, kunt u verder gaan met de volgende stap. Zo niet, of als u het niet zeker weet, raden we u aan de huidige stap te vervolgen.
+Als u uw domeinnaam samen met uw OVH-webhosting hebt besteld en u geen enkele wijziging in de DNS-zone hebt aangebracht vanuit uw OVHcloud Control Panel, kunt u verder gaan met de volgende stap. Zo niet, of als u het niet zeker weet, raden we u aan de huidige stap te vervolgen.
 
-#### De DNS-records van OVH kennen 
+#### De DNS-records van OVHcloud kennen 
 
-Er zijn meerdere DNS-velden eigen aan OVH. We gaan vooral naar twee van hen in het bijzonder kijken die zorgen voor de toegankelijkheid van uw website en de ontvangst van berichten op uw e-mailadressen.
+Er zijn meerdere DNS-velden eigen aan OVHcloud. We gaan vooral naar twee van hen in het bijzonder kijken die zorgen voor de toegankelijkheid van uw website en de ontvangst van berichten op uw e-mailadressen.
 
 - **Veld A, voor de website**
 
@@ -125,11 +125,11 @@ Nu u de DNS-records kent die eigen zijn aan uw OVH-webhosting, moet u ze verifi�
 
 - **Een domeinnaam bestellen met een OVH-webhosting**
 
-De configuratie van uw domein is juist. Ga verder met de volgende stap. Als u echter wijzigingen hebt aangebracht in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} aan de DNS-zone van uw domein, kan het zijn dat deze niet meer juist is.
+De configuratie van uw domein is juist. Ga verder met de volgende stap. Als u echter wijzigingen hebt aangebracht in uw [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} aan de DNS-zone van uw domein, kan het zijn dat deze niet meer juist is.
     
 Om toegang te krijgen tot de DNS-zone van uw domein, gaat u in het linkermenu naar `Domeinen`{.action} en klikt u op de naam van het betreffende domein. Verifieer en wijzig de nodige informatie in de tab `DNS-zone`{.action}.
 
-- **Domeinnaam die de OVH DNS-zone niet meer gebruikt**
+- **Domeinnaam die de OVHcloud DNS-zone niet meer gebruikt**
     
 U dient de DNS-zone van uw domein te controleren bij de provider die deze beheert. Wijzig indien nodig de informatie.
 
@@ -150,13 +150,13 @@ Als u hulp wilt bij de functionaliteit van uw website, raden we u aan naar de we
 
 ### Stap 6: Maak gebruik vanuw e-mailadressen 
 
-U hoeft nu alleen nog maar uw e-mailadressen te gebruiken. Hiervoor stelt OVH een online dienst ter beschikking (webmail): RoundCube. Deze is toegankelijk op het adres: <https://mail.ovh.net/> waar u uw inloggegevens dient in te voeren voor uw bij OVH aangemaakte e-mailadres.
+U hoeft nu alleen nog maar uw e-mailadressen te gebruiken. Hiervoor stelt OVHcloud een online dienst ter beschikking (webmail): RoundCube. Deze is toegankelijk op het adres: <https://mail.ovh.net/> waar u uw inloggegevens dient in te voeren voor uw bij OVHcloud aangemaakte e-mailadres.
 
 Raadpleeg onze gids voor meer informatie over het gebruik van RoundCube: [Gebruik van RoundCube](https://docs.ovh.com/nl/emails/webmail_roundcube_gebruikershandleiding/){.external}. Indien u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: <https://docs.ovh.com/nl/emails/>.
 
 ## Verder
 
-[Mijn website verhuizen naar OVH](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external}
+[Mijn website verhuizen naar OVHcloud](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external}
 
 [Mijn website online zetten](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
 

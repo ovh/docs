@@ -6,7 +6,7 @@ section: Sauvegarde
 order: 2
 ---
 
-**Dernière mise à jour le 01/02/2022**
+**Dernière mise à jour le 15/11/2022**
 
 ## Objectif
 
@@ -37,6 +37,23 @@ Après avoir sélectionné votre VPS, cliquez sur l'onglet `Backup automatisé`{
 Veuillez prendre alors connaissance des informations de tarification de cette option, puis cliquez sur `Commander`{.action}.
 Vous serez guidé dans le processus de commande et recevrez un e-mail de confirmation. Les sauvegardes seront désormais créées quotidiennement jusqu'à ce que l'option soit annulée par vos soins.
 
+#### Configurer l’heure du backup
+
+Vous pouvez modifier l'heure à laquelle la sauvegarde aura lieu. 
+
+Cliquez sur `...`{.action} au-dessus du tableau puis sur `Editer`{.action}.
+
+![autobackupvps](images/backup_vps_time01.png){.thumbnail}
+
+Dans la fenêtre qui s'affiche, modifiez l'heure de la journée (norme de temps UTC 24 heures). Cliquez sur `Confirmer`{.action}.
+
+![autobackupvps](images/backup_vps_time02.png){.thumbnail}
+
+> [!primary]
+>
+> Une fois validé dans l’espace client, le changement sera effectif dans un délai de 24 à 48 heures.
+>
+
 ### Étape 2 : restaurer une sauvegarde à partir de l'espace client OVHcloud
 
 Sélectionnez votre VPS puis cliquez sur l'onglet `Backup automatisé`{.action} dans le menu horizontal. Un maximum de 7 sauvegardes quotidiennes seront disponibles (15 sauvegardes quotidiennes pour les VPS d'anciennes gammes). Cliquez sur `...`{.action} à droite de la sauvegarde à restaurer et sélectionnez `Restauration`{.action}.
@@ -64,6 +81,8 @@ Cette option permet d'accéder aux données de sauvegarde au cas où vous ne sou
 Cliquez sur `...`{.action} à droite de la sauvegarde souhaitée et sélectionnez `Montage`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
+
+Lorsque vous utilisez cette option, une copie en lecture-écriture de la sauvegarde est créée et montée. La sauvegarde d'origine reste disponible telle quelle pour les restaurations futures.
 
 Une fois le processus terminé, vous recevrez un e-mail. Vous pourrez alors vous connecter à votre VPS et ajouter la partition où se trouve votre sauvegarde.
 

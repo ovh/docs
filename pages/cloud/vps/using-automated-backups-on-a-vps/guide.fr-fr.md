@@ -6,7 +6,7 @@ section: Sauvegarde
 order: 2
 ---
 
-**Dernière mise à jour le 30/08/2022**
+**Dernière mise à jour le 15/11/2022**
 
 ## Objectif
 
@@ -80,6 +80,8 @@ Cette option permet d'accéder aux données de sauvegarde au cas où vous ne sou
 Cliquez sur `...`{.action} à droite de la sauvegarde souhaitée et sélectionnez `Montage`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
+
+Lorsque vous utilisez cette option, une copie en lecture-écriture de la sauvegarde est créée et montée. La sauvegarde d'origine reste disponible telle quelle pour les restaurations futures.
 
 Une fois le processus terminé, vous recevrez un e-mail. Vous pourrez alors vous connecter à votre VPS et ajouter la partition où se trouve votre sauvegarde.
 

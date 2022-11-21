@@ -74,6 +74,11 @@ Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon
 |Activer le firewall|Permet d'activer un pare-feu (analyse des requêtes) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page ModSecurity](https://www.ovhcloud.com/fr/web-hosting/options/){.external}.|
 |Logs séparés|Permet d'activer un nouvel espace de logs sur le domaine sélectionné. Vous devrez choisir un nom de domaine dans une liste qui déterminera le nom d'accès à ce nouvel espace. Apprenez-en plus grâce à [notre page sur les statistiques détaillées](https://www.ovhcloud.com/fr/web-hosting/uc-website-traffic-analysis/){.external}.|
 
+> [!warning]
+>
+> Vous ne pourrez pas activer les logs séparés pour un nom de domaine externe. Cette option est uniquement disponible pour les domaines enregistrés chez OVHcloud.
+>
+
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}. Vérifiez ensuite le récapitulatif qui s'affiche.
 
 ![multisite](images/add-multisite-step3.png){.thumbnail}
@@ -101,7 +106,7 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 >
 > |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
-> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
+> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>Il est important de noter que si vous souhaitez ajouter `blog.mydomain.ovh`, vous devrez créer l'entrée TXT `ovhcontrol.mydomain.ovh` et non l'entrée `ovhcontrol.blog.mydomain.ovh`.<br></br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -147,7 +152,7 @@ A contrario, si vous souhaitez installer manuellement votre site, munissez-vous 
 >
 > Si vous souhaitez ajouter plusieurs sites web, vous devrez répéter cette étape.
 >
-> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} indique le nombre de sites Internet que vous pouvez accueillir sur votre espace.
+> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} indique le nombre de sites Internet recommandés que vous pouvez accueillir sur votre espace.
 >
 
 ## Aller plus loin

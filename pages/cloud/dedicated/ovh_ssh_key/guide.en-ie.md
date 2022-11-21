@@ -2,7 +2,7 @@
 title: Installing an OVHcloud SSH key 
 slug: ovh-ssh-key
 excerpt: This guide will explain how to install an OVHcloud SSH key, allowing our administrators to make changes
-section: Security
+section: 'Diagnostic and rescue mode'
 ---
 
 **Last updated 19th April 2018**

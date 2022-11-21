@@ -13,7 +13,7 @@ order: 1
 OVHcloud has announced the end of its Metrics Data Platform solution.
 It is no longer possible to order new services from July 8th 2021.
 Active services will be supported until October 26th 2021, when support ends.
-All operations can be tracked via [the status task #51756](http://travaux.ovh.net/?do=details&id=51756).
+All operations can be tracked via [this status task](https://bare-metal-servers.status-ovhcloud.com/incidents/7tx5l20nbp8z).
 
 ## End of Life Planning
 

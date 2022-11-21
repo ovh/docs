@@ -176,9 +176,9 @@ Pour finaliser l'action, cliquez sur `Suivant`{.action}. Assurez-vous que les in
 
 ### Modifier un enregistrement SPF
 
-Pour modifier le SPF dans la configuration OVHCloud de votre domaine, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
+Pour modifier le SPF dans la configuration OVHcloud de votre domaine, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
 
-Le tableau affiche la configuration OVHCloud de votre domaine. Chaque ligne correspond à un enregistrement DNS. Repérez votre enregistrement TXT ou SPF dans ce tableau et cliquez sur le bouton `...`{.action} afin d'éditer l'entrée.
+Le tableau affiche la configuration OVHcloud de votre domaine. Chaque ligne correspond à un enregistrement DNS. Repérez votre enregistrement TXT ou SPF dans ce tableau et cliquez sur le bouton `...`{.action} afin d'éditer l'entrée.
 
 ### Configuration SPF OVHcloud pour les offres e-mail mutualisées <a name="ovhcloudspfvalue"></a>
 
@@ -217,8 +217,8 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.ca ~all"
 
 ## Aller plus loin
 
-[Editer une zone DNS OVHcloud](https://docs.ovh.com/fr-ca/domains/editer-ma-zone-dns/){.external}.
+[Editer une zone DNS OVHcloud](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/){.external}.
 
-[Modifier les serveurs DNS d'un nom de domaine OVHcloud](https://docs.ovh.com/fr-ca/domains/generalites-serveurs-dns/){.external}.
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](https://docs.ovh.com/ca/fr/domains/generalites-serveurs-dns/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

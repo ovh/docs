@@ -85,7 +85,7 @@ Si su alojamiento ha sido cerrado hace menos de dos semanas y contiene varios si
 
 Si su alojamiento ha sido cerrado más de dos semanas antes, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) para realizar una auditoría de seguridad de sus soluciones. 
 
-### Etapa 4: reactivar su alojamiento web
+### Etapa 4: reactivar su alojamiento web <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >
