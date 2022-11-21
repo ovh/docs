@@ -10,7 +10,7 @@ order: 01
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 24.10.2022**
+**Letzte Aktualisierung am 21.11.2022**
 
 ## Ziel
 
@@ -39,6 +39,11 @@ Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können I
 - Der Domaininhaber und/oder dessen Administratoren sind über den Transfer informiert.
 
 ## In der praktischen Anwendung
+
+> [!success]
+>
+> Um die Transferkosten anzuzeigen, geben Sie den Domainnamen, den Sie transferieren möchten, auf unserer Webseite ein: [www.ovhcloud.com/de/domains/tld/](https://www.ovhcloud.com/de/domains/tld/). Folgen Sie dann den Schritten dieser Anleitung.
+>
 
 Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahme mit Ihrem aktuellen Registrar und OVHcloud. Die folgende Tabelle enthält die zu kontaktierenden Stellen sowie die Dauer der verschiedenen Schritte des Transfervorgangs.
 
@@ -84,7 +89,11 @@ Bitte beachten Sie, dass OVHcloud zum Zeitpunkt der Einleitung des Transfervorga
 
 Sobald Ihr Domainname freigegeben und der Code verfügbar ist, können Sie den Transfer zu OVHcloud beantragen. Dazu führen Sie einfach eine [Bestellung über unsere Website aus](https://www.ovhcloud.com/de/domains/){.external}. Geben Sie dort Ihren Domainnamen ein und folgen Sie den Bestellschritten.
 
+![domain](images/Domain_transfer_order.png){.thumbnail}
+
 Wenn Sie zur Eingabe des AUTH/INFO-Code eingeben werden, können Sie ihn in das entsprechende Feld eintragen. Wenn Sie noch nicht über den Code verfügen, können Sie auch die Option auswählen, diesen nachzuliefern. Wir empfehlen jedoch, den Code verfügbar zu haben, bevor Sie die Bestellung ausführen. Denken Sie daran, dass der Transfer erst dann gestartet wird, wenn ein gültiger Code eingegeben wurde.
+
+![domain](images/step_authinfo_add.png){.thumbnail}
 
 Sie können Ihre Bestellung auch mit einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} kombinieren. Unsere Anleitung "[Migration Ihrer Website zu OVHcloud](../../hosting/migration-ihrer-website-zu-ovh/){.external}" beschreibt den optimalen Weg zum Migrieren Ihrer Dienste.
 

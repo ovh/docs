@@ -10,7 +10,7 @@ order: 01
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 24-10-2022**
+**Ostatnia aktualizacja z dnia 18-11-2022**
 
 ## Wprowadzenie
 
@@ -42,6 +42,11 @@ Transfer domeny umożliwia jej przeniesienie do innego operatora.  Możesz przen
 - Powiadomienie właściciela domeny i/lub administratorów o wszczęciu procedury transferu
 
 ## W praktyce
+
+> [!success]
+>
+> Aby uzyskać informacje na temat cennika transferu domeny w zależności od jej rozszerzenia, wprowadź domenę, którą chcesz przenieść na naszą stronę [www.ovhcloud.com/pl/domains/tld/](https://www.ovhcloud.com/pl/domains/tld/) następnie postępuj zgodnie z instrukcjami zawartymi w tym przewodniku.
+>
 
 Procedura transferu składa się z kilku etapów, w które włączone są różne podmioty, w tym obecny rejestr, OVHcloud i inne strony. Poniższa tabela wskazuje osoby, z którymi należy się kontaktować oraz szacowany czas trwania każdego etapu.
 
@@ -87,7 +92,11 @@ Pamiętaj, że OVHcloud nie jest operatorem Twojej domeny w momencie rozpoczęci
 
 Po odblokowaniu Twojej domeny i uzyskanym kodzie możesz zamówić transfer domeny do OVHcloud z [naszej strony](https://www.ovhcloud.com/pl/domains/){.external}. Wprowadź nazwę Twojej domeny, po czym postępuj zgodnie z kolejnymi instrukcjami.
 
+![domain](images/Domain_transfer_order.png){.thumbnail}
+
 Wprowadź kod transferu w polu obok nazwy Twojej domeny. Jeśli nie posiadasz jeszcze kodu transferu, możesz zaznaczyć pole Podaj `kod transferu później`{.action}. Zalecamy jednak, abyś przed kolejnymi krokami upewnił się, że jesteś w stanie ten kod uzyskać. Pamiętaj, że transfer nie rozpocznie się, dopóki nie zostanie podany prawidłowy kod.
+
+![domain](images/step_authinfo_add.png){.thumbnail}
 
 Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.com/pl/web-hosting/){.external} i innymi rozwiązaniami OVHcloud. Może to być interesujące, jeśli chcesz przenieść Twoje usługi do OVHcloud. Przewodnik "[Przeniesienie strony WWW do OVHcloud](../../hosting/przeniesienie-strony-www-do-ovh/){.external}" zawiera instrukcje, jak to zrobić.
 

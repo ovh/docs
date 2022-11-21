@@ -10,7 +10,7 @@ order: 01
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 24/10/2022**
+**Última actualización: 18/11/2022**
 
 ## Objetivo
 
@@ -42,6 +42,11 @@ Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** 
 - Haber informado al propietario del dominio y a sus administradores de la solicitud de transferencia.
 
 ## Procedimiento
+
+> [!success]
+>
+> Para conocer las condiciones tarifarias para la transferencia de un dominio en función de su extensión, introduzca el dominio que desea transferir a nuestra página [www.ovhcloud.com/es/domains/tld/](https://www.ovhcloud.com/es/domains/tld/) y siga los pasos que se indican en esta guía.
+>
 
 El procedimiento de transferencia se desarrolla en varias etapas e involucra a varias entidades, entre ellas su actual agente registrador, OVHcloud y otras partes. La siguiente tabla resume las etapas de una transferencia.
 
@@ -87,7 +92,11 @@ Tenga en cuenta que OVHcloud no es el agente registrador del dominio al iniciar 
 
 Una vez desbloqueado el dominio, y con el código obtenido, puede solicitar la transferencia a OVHcloud desde [nuestro sitio web](https://www.ovhcloud.com/es/domains/){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
 
+![domain](images/Domain_transfer_order.png){.thumbnail
+
 Cuando se le pida el código de transferencia, introdúzcalo en el campo situado junto al dominio. Si todavía no tiene el código de transferencia, puede marcar la casilla `Introducir código de transferencia más adelante`{.action}. No obstante, le recomendamos que, antes de continuar, se asegure previamente de que podrá obtener el código. Tenga en cuenta que la transferencia no se iniciará hasta que se haya proporcionado un código válido.
+
+![domain](images/step_authinfo_add.png){.thumbnail}
 
 También puede completar el pedido con un [alojamiento web](https://www.ovhcloud.com/es/web-hosting/){.external} y otras soluciones de OVHcloud. Esto le puede interesar si quiere migrar sus servicios a OVHcloud. Nuestra guía [Migrar un sitio web y el correo a OVHcloud ](../../hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external} explica cómo hacerlo.
 

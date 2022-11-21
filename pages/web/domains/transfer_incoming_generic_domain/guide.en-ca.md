@@ -6,7 +6,7 @@ section: Transfer
 order: 01
 ---
 
-**Last updated 24 October 2022**
+**Last updated 18th November 2022**
 
 ## Objective
 
@@ -35,6 +35,11 @@ By transferring your domain name, you will change your domain name registrar. Yo
 - The domain name owner and/or its administrators must be informed of the transfer request.
 
 ## Instructions
+
+> [!success]
+>
+> To find out the pricing conditions for transferring a domain name depending on its extension, enter the domain you wish to transfer on our page [www.ovhcloud.com/en-ca/domains/tld/](https://www.ovhcloud.com/en-ca/domains/tld/) and follow the steps in this guide.
+>
 
 The transfer procedure has several steps. These steps will involve various entities being contacted, including your current domain name registrar, OVHcloud, and other parties. The table below provides a breakdown of who is contacted, and how long each step will take to complete.
 
