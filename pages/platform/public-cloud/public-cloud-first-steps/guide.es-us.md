@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 04
 ---
 
-**Última actualización: 02/08/2022**
+**Última actualización: 17/11/2022**
 
 ## Objetivo
 
@@ -183,7 +183,7 @@ En el próximo paso, deberá seleccionar un datacenter para su instancia de Publ
 
 En tercer lugar, deberá seleccionar un sistema operativo para su instancia. Las imágenes disponibles en este paso dependerán de las opciones que haya seleccionado en los pasos anteriores (p. ej., la compatibilidad con el tipo de servidor y la localización). También hay disponibles sistemas operativos con aplicaciones preinstaladas.
 
-![image select](images/instance-creation-02.png){.thumbnail}
+![image select](images/instance-creation-02-2022.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,24 +192,35 @@ Si selecciona un sistema operativo con licencia de pago, el coste se incluirá a
 
 En este paso también deberá añadir una clave SSH (salvo en instancias Windows). Para ello, puede copiar la clave directamente haciendo clic en `Añadir una llave`{.action} o seleccionar una clave de la lista de llaves disponibles (tal y como explicamos en el [paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud_1), deberá haber añadido su clave previamente al área de cliente de OVHcloud).
 
-![key select](images/instance-creation-03.png){.thumbnail}
+![key select](images/instance-creation-03-2022.png){.thumbnail}
 
 En el cuarto paso deberá configurar algunas opciones adicionales:
 
-![options select](images/instance-creation-04.png){.thumbnail}
+![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - desplegar múltiples instancias con la configuración seleccionada, siempre y cuando no supere el límite inicial;
 - crear una instancia flexible para poder pasar posteriormente a un modelo inferior (o incluso cambiar de modelo). Esta opción limitará el **almacenamiento incluido** de la instancia a 50 GB, independientemente de cualquier migración a un modelo superior o inferior;
 - cambiar el nombre de su instancia;
 - añadir un script de post-instalación;
-- conectar instancias a una red privada asociada (vRack);
 - permitir el backup automatizado de instancias (puede consultar el precio y el tipo de rotación en esa misma sección).
+
+Cuando haya terminado, haga clic en `Siguiente`{.acción} para configurar su red.
+
+![configure network](images/network-selection.png){.thumbnail}
+
+En función del uso previsto de sus instancias, puede seleccionar el **Modo público* o **Modo privado**.
+
+El modo público es el modelo de red clásico. Permite que las instancias tendrán un puerto de red público conectado. Asociada al vRack, cada instancia posee una IP pública y una IP privada.
+
+El modo privado le permite asignar sus instancias únicamente a una red privada. Las instancias de este modo solo pueden estar expuestas a la red pública mediante un servicio Gateway o un Load Balancer con Floating IPs. Para más información, consulte nuestra guía sobre las [soluciones de red para el Public Cloud de OVHcloud](https://docs.ovh.com/us/es/publiccloud/network-services/).
+
+Una vez elegido el modo, seleccione una red privada a la que quiere asociar la instancia o haga clic en `Crear una nueva red privada`{.action} para crear una nueva.
 
 Una vez que hay seleccionado las opciones deseadas, haga clic en `Siguiente`{.action} y, por último, elija el tipo de facturación.
 
-![billing select](images/instance-creation-05.png){.thumbnail}
+![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-Si tiene dudas sobre el período de uso, le recomendamos que elija la opción de facturación por horas, ya que no podrá modificar esta opción más adelante. Para pasar a la opción de facturación mensual, debe esperar a que su instancia esté disponible en la página «Instancias».
+Le recomendamos que elija la facturación por horas si no está seguro del periodo de uso, ya que no es posible elegirla después de la prestación del servicio. Tendrá la opción de cambiar a una suscripción mensual tan pronto como la instancia esté disponible en la página «Instances».
 
 > [!warning]
 >

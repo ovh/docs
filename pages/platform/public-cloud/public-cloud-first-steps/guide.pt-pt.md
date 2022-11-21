@@ -6,7 +6,7 @@ section: Introdução
 order: 1
 ---
 
-**Última atualização: 02/08/2022**
+**Última atualização: 17/11/2022**
 
 ## Objetivo
 
@@ -183,7 +183,7 @@ A seguir, escolha um datacenter para a sua instância Public Cloud.
 
 Neste passo, deve escolher um sistema operativo para a instância. As imagens disponíveis dependerão das escolhas feitas nos passos anteriores, nomeadamente no que se refere ao tipo de servidor e à região. Estarão igualmente disponíveis sistemas operativos com aplicações pré-instaladas.
 
-![image select](images/instance-creation-02.png){.thumbnail}
+![image select](images/instance-creation-02-2022.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,24 +192,35 @@ Se escolher um sistema operativo que requeira uma licença paga, os custos serã
 
 Este passo também exige que seja adicionada uma chave SSH (com exceção das instâncias Windows), seja colando a chave diretamente através de `Adicionar uma chave`{.action}, seja escolhendo-a da lista, partindo do princípio de que a armazenou previamente na Área de Cliente durante o [2.º passo](./#2o-passo-armazenamento-de-chaves-publicas-na-area-de-cliente-ovhcloud_1).
 
-![key select](images/instance-creation-03.png){.thumbnail}
+![key select](images/instance-creation-03-2022.png){.thumbnail}
 
 O 4.º passo permitirá configurar opções suplementares.
 
-![options select](images/instance-creation-04.png){.thumbnail}
+![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - Pode instalar múltiplas instâncias com a configuração escolhida (dentro dos limites da quota inicial mencionada acima).
 - Pode optar por criar uma instância flexível que lhe permita mais tarde fazer o downgrade para um modelo inferior (até mudando de categoria de modelo de servidor), mas isso irá limitar a instância a 50 GB de **armazenamento incluído**, independentemente de upgrades ou downgrades.
 - Pode mudar o nome de exibição da instância.
 - Pode adicionar um script pós-instalação.
-- Pode conectar a instância a uma rede privada existente (vRack).
 - Pode ativar backups automáticos da instância. Atenção: tome nota das informações relativas aos preços e às opções de rotação.
+
+Depois de terminar, clique em `Seguinte`{.action} para configurar a sua rede.
+
+![configure network](images/network-selection.png){.thumbnail}
+
+Em função da utilização prevista das suas instâncias, pode selecionar o **Modo Público** ou **Modo Privado**.
+
+O modo Public é o modelo de rede clássico, permite que as suas instâncias tenham uma porta de rede pública ligada. Associada ao vrack, cada instância possui um IP público e um IP privado.
+
+O modo privado oferece-lhe a possibilidade de afetar as suas instâncias apenas a uma rede privada. As instâncias deste modo só podem ser expostas à rede pública através de um serviço Gateway ou Load Balancer com Floating IP. Para mais informações, consulte o nosso manual sobre as [soluções de rede para o Public Cloud da OVHcloud](https://docs.ovh.com/pt/publiccloud/network-services/).
+
+Depois de escolher o modo escolhido, selecione uma rede privada para associar a sua instância ou clique em `Criar uma nova rede privada`{.action} para criar uma nova.
 
 Quando tiver concluído, clique em `Seguinte`{.action} para avançar para o último passo e escolher um método de faturação.
 
-![billing select](images/instance-creation-05.png){.thumbnail}
+![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-Recomendamos que escolha a faturação horária caso tenha dúvidas a respeito do período de uso, pois não será possível fazê-lo depois. Terá a oportunidade de mudar para uma faturação mensal depois de a instância ficar disponível na página «Instâncias».
+Recomendamos que escolha a facturação horária se não tiver a certeza do período de utilização, uma vez que não é possível escolhê-la depois de o serviço ter sido entregue. Terá a opção de mudar para uma assinatura mensal assim que a instância estiver disponível na página "Instances"
 
 > [!warning]
 >

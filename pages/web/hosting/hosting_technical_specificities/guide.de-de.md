@@ -10,7 +10,7 @@ order: 05
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 28.07.2022**
+**Letzte Aktualisierung am 21.11.2022**
 
 ## Ziel 
 
@@ -82,6 +82,11 @@ Weitere Informationen zur Verwaltung von Datenbanken finden Sie in der Anleitung
 ### PHP
 
 - Wir empfehlen Ihnen, die Details der [Webhosting Angebote](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/) auf unserer Website nachzulesen, um sicherzustellen, dass das gewünschte Angebot Ihren Anforderungen entspricht.
+
+> [!warning]
+>
+> Die Änderung der Datei **php.ini** ist bei Webhosting-Diensten nicht verfügbar. Das liegt daran, dass die PHP-Konfiguration global für die gesamte Shared Hosting Infrastruktur ist.
+>
 
 - Sie können die Konfigurationsdetails Ihres Webhostings überprüfen. Gehen Sie hierzu zum Abschnitt [„Technische Konfigurationen der Webhostings“](./#technische-konfigurationen-der-webhostings) am Ende dieser Anleitung. 
 

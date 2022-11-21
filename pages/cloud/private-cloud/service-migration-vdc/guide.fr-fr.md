@@ -12,7 +12,7 @@ hidden: true
 .ovh-api-main { background:#fff;}
 </style> 
 
-**Dernière mise à jour le 15/11/2022**
+**Dernière mise à jour le 18/11/2022**
 
 **Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (DC ou SDDC) vers un nouveau vDC de destination (Essentials ou Premier).**
 
@@ -633,7 +633,7 @@ Voici comment procéder:
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
 >
 
-4\. Répétez les étapes 2 et 3 pour toutes les machines virtuelles dont les sauvegardes sont activées et qui ont été migrées vers le nouveau vDC.
+4\. Si vous n'aviez migré qu'une partie des machines virtuelles dont les sauvegardes sont activées, vous pouvez répéter les étapes 2 et 3 afin de transférer leurs piles de backups vers le nouveau vDC.
 
 Avant de continuer, vous pouvez vérifier visuellement, dans le plug-in graphique Backup Management sur le nouveau vDC, que les piles de backup sont bien présentes et actives. Vous pouvez ensuite désactiver Veeam Backup sur l'ancien vDC. Cela peut se faire via l'appel API suivant :
 

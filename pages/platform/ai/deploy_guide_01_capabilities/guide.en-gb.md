@@ -2,7 +2,7 @@
 title: AI Deploy - Capabilities and limitations
 slug: deploy/capabilities
 excerpt: Discover the capabilities and limitations of AI Deploy
-section: AI Deploy guides
+section: AI Deploy - Guides
 order: 01
 ---
 

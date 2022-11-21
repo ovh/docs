@@ -6,7 +6,7 @@ section: Transfer
 order: 01
 ---
 
-**Last updated 24 October 2022**
+**Last updated 18th November 2022**
 
 ## Objective
 
@@ -35,6 +35,11 @@ By transferring your domain name, you will change your domain name registrar. Yo
 - The domain name owner and/or its administrators must be informed of the transfer request.
 
 ## Instructions
+
+> [!success]
+>
+> To find out the pricing conditions for transferring a domain name depending on its extension, enter the domain you wish to transfer on our page [www.ovhcloud.com/en-gb/domains/tld/](https://www.ovhcloud.com/en-gb/domains/tld/) and follow the steps in this guide.
+>
 
 The transfer procedure has several steps. These steps will involve various entities being contacted, including your current domain name registrar, OVHcloud, and other parties. The table below provides a breakdown of who is contacted, and how long each step will take to complete.
 
@@ -84,7 +89,7 @@ Now that your domain name is unlocked and you have your AUTH/INFO, you can reque
 
 When you are asked to provide your transfer code, enter it into the field. If you do not have the transfer code yet, you can tick a box labelled `Enter the authentication code later in the OVHcloud Control Panel`{.action}. However, we advise to have the code ready before you continue. Keep in mind that transfer will not start until a valid code is provided.
 
-![domain](images/step_authinfo_add.png){.thumbnail}
+
 
 Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/). Our guide on [Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/){.external} provides useful information for an optimised approach.
 

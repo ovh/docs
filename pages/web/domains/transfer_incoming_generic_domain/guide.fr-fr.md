@@ -6,7 +6,7 @@ section: Transfert
 order: 01
 ---
 
-**Dernière mise à jour le 21/10/2022**
+**Dernière mise à jour le 18/11/2022**
 
 ## Objectif
 
@@ -39,6 +39,11 @@ En transférant votre nom de domaine, vous changerez de registre pour celui-ci. 
 
 ## En pratique
 
+> [!success]
+>
+> Pour connaître les conditions tarifaires pour le transfert d'un nom de domaine en fonction de son extension, renseignez le domaine que vous souhaitez transférer sur notre page [www.ovhcloud.com/fr/domains/tld/](https://www.ovhcloud.com/fr/domains/tld/) puis suivez les étapes de ce guide.
+> 
+
 La procédure de transfert comporte plusieurs étapes, impliquant la prise de contact avec votre registre actuel et OVHcloud. Le tableau ci-dessous vous indique les personnes contactées et la durée estimée de chaque étape.
 
 |Étapes|Description|Qui est impliqué ?|Où ?|Temps requis|
@@ -57,9 +62,9 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 **Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](https://www.ovh.com/fr/support/outils/check_whois.pl) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
 
-- ** Si les informations sont correctes : passez à l'étape suivante de ce guide.**
-
-- ** Si les informations sont incorrectes ou invisibles : contactez le bureau d'enregistrement actuel du nom de domaine pour vérifier et/ou modifier ce dernier.**
+- **Si les informations sont correctes :**
+ passez à l'étape suivante de ce guide.
+- **Si les informations sont incorrectes ou invisibles :** contactez le bureau d'enregistrement actuel du nom de domaine pour vérifier et/ou modifier ce dernier.
 
 > [!primary]
 >
@@ -83,7 +88,11 @@ Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom 
 
 Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](https://www.ovhcloud.com/fr/domains/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
 
+![domain](images/Domain_transfer_order.png){.thumbnail}
+
 Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la zone en face de votre nom de domaine. Si vous ne disposez pas encore du code de transfert, vous pouvez cocher la case intitulée `Entrer le code de transfert ultérieurement`{.action}. Toutefois, nous vous conseillons vivement de vous assurer que vous disposez du code à remettre avant de continuer. N'oubliez pas que le transfert ne démarrera pas tant qu'un code valide n'aura pas été fourni.
+
+![domain](images/step_authinfo_add.png){.thumbnail}
 
 Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](../../hosting/migrer-mon-site-chez-ovh/){.external} » vous fournira des instructions sur la façon de procéder.
 
@@ -146,4 +155,8 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 
 [Migration de votre site Web et de vos e-mails vers OVHcloud](../../hosting/migrer-mon-site-chez-ovh/){.external}
 
-Rejoignez notre communauté d'utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

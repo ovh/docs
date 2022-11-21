@@ -2,7 +2,7 @@
 title: AI Training - Troubleshooting
 slug: training/debug-jobs
 excerpt: Tutorial about how to debug your jobs
-section: AI Training guides
+section: AI Training - Guides
 order: 07
 ---
 

@@ -2,7 +2,7 @@
 title: AI Deploy - Scaling strategies
 slug: deploy/apps-deployments
 excerpt: Understand the scaling strategies (static scaling vs autoscaling) of AI Deploy
-section: AI Deploy guides
+section: AI Deploy - Guides
 order: 04
 ---
 

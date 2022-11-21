@@ -10,7 +10,7 @@ order: 05
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 28/07/2022**
+**Ultimo aggiornamento: 21/11/2022**
 
 ## Obiettivo
 
@@ -83,6 +83,11 @@ Per maggiori informazioni sulla gestione dei database, consulta la guida [Creare
 ### PHP
 
 - Ti consigliamo di consultare le nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/) per assicurarti che il piano che vuoi acquistare sia adatto alle tue esigenze. 
+
+> [!warning]
+>
+> La modifica del file **php.ini** non è disponibile sulle offerte di hosting condiviso. La configurazione PHP è globale per l'intera infrastruttura condivisa.
+>
 
 - È possibile verificare i dettagli della configurazione del tuo hosting Web. Per farlo, consulta la rubrica \[”Informazioni tecniche del tuo hosting Web”\](.#informazioni-tecniche-del-tuo-hosting-web) in fondo a questa guida. 
 

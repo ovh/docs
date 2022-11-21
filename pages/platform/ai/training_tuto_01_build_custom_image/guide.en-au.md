@@ -2,7 +2,7 @@
 title: AI Training - Tutorial -  Build & use custom Docker image
 slug: training/build-use-custom-image
 excerpt: Explanations on how to build and use your own custom image
-section: AI Training tutorials
+section: AI Training - Tutorials
 order: 01
 ---
 

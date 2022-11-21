@@ -10,7 +10,7 @@ order: 05
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 28/07/2022**
+**Última atualização: 21/11/2022**
 
 ## Objetivo
 
@@ -83,6 +83,11 @@ Para mais informações sobre a gestão das bases de dados, consulte o guia [Cri
 ### PHP
 
 - É recomendável que consulte as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/uc-programming-language/) a fim de assegurar que o serviço de alojamento web que deseja encomendar se adequa às suas necessidades.
+
+> [!warning]
+>
+> A modificação do ficheiro **php.ini** está indisponível nas ofertas de alojamento partilhado. Isto porque a configuração PHP é global ao conjunto da infraestrutura partilhada.
+>
 
 - Verifique os detalhes de configuração do seu alojamento web. Para isso, consulte a rubrica «Informações técnicas do seu alojamento web», mais abaixo neste guia. 
 

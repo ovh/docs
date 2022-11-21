@@ -10,7 +10,7 @@ order: 05
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 28-07-2022**
+**Ostatnia aktualizacja z dnia 21-11-2022**
 
 ## Wprowadzenie 
 
@@ -83,6 +83,11 @@ Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj si
 ### PHP
 
 - Zapoznaj się z przewodnikiem po [ofertach hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/), aby upewnić się, że plan hostingu, który chcesz zamówić, odpowiada Twoim potrzebom.
+
+> [!warning]
+>
+> Zmiana pliku **php.ini** jest niedostępna w ofercie hostingu współdzielonego. Wynika to z faktu, że konfiguracja PHP jest globalna dla całej infrastruktury współdzielonej.
+>
 
 - Możesz sprawdzić szczegóły konfiguracji Twojego hostingu. W tym celu sprawdź rubrykę [„Informacje techniczne o Twoim hostingu”](./#informacje-techniczne-o-twoim-hostingu) na dole niniejszego przewodnika. 
 

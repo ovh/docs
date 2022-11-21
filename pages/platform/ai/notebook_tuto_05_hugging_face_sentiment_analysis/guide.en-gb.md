@@ -2,7 +2,7 @@
 title: AI Notebooks - Tutorial - Sentiment analysis on Tweets using Hugging Face
 slug: notebooks/tuto-hugging-face-sentiment-analysis
 excerpt: How to use Hugging Face models to analyse Twitter sentiments
-section: AI Notebooks tutorials
+section: AI Notebooks - Tutorials
 order: 05
 ---
 

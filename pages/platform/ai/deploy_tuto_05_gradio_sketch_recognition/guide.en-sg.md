@@ -2,7 +2,7 @@
 title: AI Deploy - Tutorial - Deploy a Gradio app for sketch recognition
 slug: deploy/tuto-gradio-sketch-recognition
 excerpt: How to build and use a custom Docker image containing a Gradio application
-section: AI Deploy tutorials
+section: AI Deploy - Tutorials
 order: 05
 ---
 

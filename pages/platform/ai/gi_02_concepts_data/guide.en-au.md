@@ -1,5 +1,5 @@
 ---
-title: Data - concept and best practices
+title: Data - Concept and best practices
 slug: data
 excerpt: Learn the concept behind AI Tools data
 section: General information
