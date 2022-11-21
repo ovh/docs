@@ -43,6 +43,11 @@ Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** 
 
 ## Procedimiento
 
+> [!success]
+>
+> Para conocer las condiciones tarifarias para la transferencia de un dominio en función de su extensión, introduzca el dominio que desea transferir a nuestra página [www.ovhcloud.com/es-es/domains/tld/](https://www.ovhcloud.com/es-es/domains/tld/) y siga los pasos que se indican en esta guía.
+>
+
 El procedimiento de transferencia se desarrolla en varias etapas e involucra a varias entidades, entre ellas su actual agente registrador, OVHcloud y otras partes. La siguiente tabla resume las etapas de una transferencia.
 
 |Etapa|Descripción|Quién realiza la acción|Dónde|Plazo|
@@ -86,11 +91,6 @@ Tenga en cuenta que OVHcloud no es el agente registrador del dominio al iniciar 
 ### 3. solicitar la transferencia del dominio a OVHcloud
 
 Una vez desbloqueado el dominio, y con el código obtenido, puede solicitar la transferencia a OVHcloud desde [nuestro sitio web](https://www.ovhcloud.com/es-es/domains/){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
-
-> [!success]
->
-> Para conocer las condiciones tarifarias para la transferencia de un dominio en función de su extensión, introduzca el dominio que desea transferir a nuestra página [www.ovhcloud.com/es-es/domains/tld/](https://www.ovhcloud.com/es-es/domains/tld/)
->
 
 Cuando se le pida el código de transferencia, introdúzcalo en el campo situado junto al dominio. Si todavía no tiene el código de transferencia, puede marcar la casilla `Introducir código de transferencia más adelante`{.action}. No obstante, le recomendamos que, antes de continuar, se asegure previamente de que podrá obtener el código. Tenga en cuenta que la transferencia no se iniciará hasta que se haya proporcionado un código válido.
 

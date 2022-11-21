@@ -44,6 +44,11 @@ A transferência de um domínio permite alterar o agente registador que o gere. 
 
 ## Instruções
 
+> [!success]
+>
+> Para conhecer as condições tarifárias para a transferência de um nome de domínio em função da sua extensão, insira o domínio que deseja transferir na nossa página [www.ovhcloud.com/pt/domains/tld/](https://www.ovhcloud.com/pt/domains/tld/) e siga as instruções.
+>
+
 O procedimento de transferência compreende várias etapas, implicando o contacto com várias entidades, entre as quais o seu registo atual, a OVHcloud e outras partes. A tabela abaixo indica as etapas de uma transferência.
 
 |Etapa|Descrição|Quem está envolvido?|Onde?|Prazo|
@@ -87,11 +92,6 @@ Atenção: a OVHcloud não é o agente registador do seu domínio no momento em 
 ### Etapa 3: solicitar a transferência de um domínio para a OVHcloud
 
 Depois de desbloquear o seu nome de domínio e obter o código, pode encomendar a sua transferência para a OVHcloud a partir do [nosso site](https://www.ovhcloud.com/pt/domains/){.external}. Introduza o seu nome de domínio e siga os passos da encomenda.
-
-> [!success]
->
-> Para conhecer as condições tarifárias para a transferência de um nome de domínio em função da sua extensão, insira o domínio que deseja transferir na nossa página [www.ovhcloud.com/pt/domains/tld/](https://www.ovhcloud.com/pt/domains/tld/)
->
 
 Quando for necessário indicar o código de transferência, introduza-o no campo ao lado do seu nome de domínio. Se ainda não dispõe do código de transferência, selecione a opção Indicar o código de `transferência mais tarde`{.action}. No entanto, sugerimos que se certifique de que tem este código à sua disposição antes de continuar. Lembre-se de que a transferência não será iniciada até que um código válido seja fornecido.
 

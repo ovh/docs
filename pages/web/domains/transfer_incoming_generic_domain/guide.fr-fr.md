@@ -39,6 +39,11 @@ En transférant votre nom de domaine, vous changerez de registre pour celui-ci. 
 
 ## En pratique
 
+> [!success]
+>
+> Pour connaître les conditions tarifaires pour le transfert d'un nom de domaine en fonction de son extension, renseignez le domaine que vous souhaitez transférer sur notre page [www.ovhcloud.com/fr/domains/tld/](https://www.ovhcloud.com/fr/domains/tld/) puis suivez les étapes de ce guide.
+> 
+
 La procédure de transfert comporte plusieurs étapes, impliquant la prise de contact avec votre registre actuel et OVHcloud. Le tableau ci-dessous vous indique les personnes contactées et la durée estimée de chaque étape.
 
 |Étapes|Description|Qui est impliqué ?|Où ?|Temps requis|
@@ -82,11 +87,6 @@ Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom 
 ### Étape 3 : demander un transfert de nom de domaine vers OVHcloud
 
 Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](https://www.ovhcloud.com/fr/domains/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
-
-> [!success]
->
-> Pour connaître les conditions tarifaires pour le transfert d'un nom de domaine en fonction de son extension, renseignez le domaine que vous souhaitez transférer sur notre page [www.ovhcloud.com/fr/domains/tld/](https://www.ovhcloud.com/fr/domains/tld/)
-> 
 
 Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la zone en face de votre nom de domaine. Si vous ne disposez pas encore du code de transfert, vous pouvez cocher la case intitulée `Entrer le code de transfert ultérieurement`{.action}. Toutefois, nous vous conseillons vivement de vous assurer que vous disposez du code à remettre avant de continuer. N'oubliez pas que le transfert ne démarrera pas tant qu'un code valide n'aura pas été fourni.
 

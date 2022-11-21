@@ -40,6 +40,11 @@ Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können I
 
 ## In der praktischen Anwendung
 
+> [!success]
+>
+> Geben Sie die Domain, die Sie transferieren möchten, auf unserer Seite an [www.ovhcloud.com/de/domains/tld/](https://www.ovhcloud.com/de/domains/tld/) und folgen Sie den Schritten dieser Anleitung.
+>
+
 Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahme mit Ihrem aktuellen Registrar und OVHcloud. Die folgende Tabelle enthält die zu kontaktierenden Stellen sowie die Dauer der verschiedenen Schritte des Transfervorgangs.
 
 |Schritt|Beschreibung|Wer ist betroffen?|Wo?|Dauer|
@@ -83,11 +88,6 @@ Bitte beachten Sie, dass OVHcloud zum Zeitpunkt der Einleitung des Transfervorga
 ### Schritt 3: Domaintransfer zu OVHcloud anfordern
 
 Sobald Ihr Domainname freigegeben und der Code verfügbar ist, können Sie den Transfer zu OVHcloud beantragen. Dazu führen Sie einfach eine [Bestellung über unsere Website aus](https://www.ovhcloud.com/de/domains/){.external}. Geben Sie dort Ihren Domainnamen ein und folgen Sie den Bestellschritten.
-
-> [!success]
->
-> Geben Sie die Domain, die Sie transferieren möchten, auf unserer Seite an [www.ovhcloud.com/de/domains/tld/](https://www.ovhcloud.com/de/domains/tld/)
->
 
 Wenn Sie zur Eingabe des AUTH/INFO-Code eingeben werden, können Sie ihn in das entsprechende Feld eintragen. Wenn Sie noch nicht über den Code verfügen, können Sie auch die Option auswählen, diesen nachzuliefern. Wir empfehlen jedoch, den Code verfügbar zu haben, bevor Sie die Bestellung ausführen. Denken Sie daran, dass der Transfer erst dann gestartet wird, wenn ein gültiger Code eingegeben wurde.
 
