@@ -208,11 +208,11 @@ Wenn Sie fertig sind, klicken Sie auf `Weiter`{.action}, um Ihr Netzwerk zu konf
 
 ![configure network](images/network-selection.png){.thumbnail}
 
-Je nach geplanter Nutzung Ihrer Instanzen können Sie den **Öffentlicher Modus** oder **Privater Modus** auswählen.
+Je nach geplanter Nutzung Ihrer Instanzen können Sie **Öffentlicher Modus** oder **Privater Modus** auswählen.
 
-Der Öffentlicher Modus ist das klassische Netzwerkmodell und erlaubt es Ihren Instanzen, einen eigenen öffentlichen Netzwerk-Port einzurichten. Jede Instanz ist mit dem vRack verbunden und verfügt über eine öffentliche und eine private IP.
+Der Öffentliche Modus ist das klassische Netzwerkmodell und erlaubt es Ihren Instanzen, einen eigenen öffentlichen Netzwerk-Port einzurichten. Jede Instanz ist mit dem vRack verbunden und verfügt über eine öffentliche und eine private IP.
 
-Der Privater Modus bietet Ihnen die Möglichkeit, Ihre Instanzen ausschließlich einem privaten Netzwerk zuzuweisen. Die Instanzen dieses Modus können dem öffentlichen Netzwerk nur mit einem Gateway oder Loadbalancer mit Floating IPs ausgesetzt werden. Weitere Informationen finden Sie in unserer Dokumentation zu den [Netzwerklösungen für die OVHcloud Public Cloud](https://docs.ovh.com/de/publiccloud/network-services/).
+Der Private Modus bietet Ihnen die Möglichkeit, Ihre Instanzen ausschließlich einem privaten Netzwerk zuzuweisen. Die Instanzen dieses Modus können dem öffentlichen Netzwerk nur mit einem Gateway oder Loadbalancer mit Floating IPs ausgesetzt werden. Weitere Informationen finden Sie in unserer Dokumentation zu den [Netzwerklösungen für die OVHcloud Public Cloud](https://docs.ovh.com/de/publiccloud/network-services/).
 
 Wählen Sie nach der Wahl Ihr privates Netzwerk aus, an das Ihre Instanz angehängt werden soll, oder klicken Sie auf `Ein neues privates Netzwerk erstellen`{.action}, um ein neues zu erstellen.
 
@@ -220,7 +220,8 @@ Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf `Weiter`{.action}, um zum
 
 ![Abrechnungsmethode auswählen](images/instance-creation-05-2022.png){.thumbnail}
 
-Wir empfehlen, die stündliche Abrechnung zu wählen, wenn Sie sich über den Nutzungszeitraum im Unklaren sind, da es nach der Lieferung des Dienstes nicht mehr möglich ist, diesen auszuwählen. Sie haben die Möglichkeit, zu einem monatlichen Abonnement zu wechseln, sobald die Instanz auf der Seite "Instances" verfügbar ist.
+Wir empfehlen Ihnen, bei Unsicherheit bezüglich des Verwendungszeitraums die stündliche Abrechnung auszuwählen, da es nicht möglich ist, nach der Lieferung des Dienstes zu dieser Option zu wechseln. Sobald die Instanz in der “Instanzen”-Übersicht angezeigt wird, können Sie auf monatliche Abrechnung umstellen.
+
 
 > [!warning]
 >
