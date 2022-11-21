@@ -328,7 +328,7 @@ network:
             dhcp4: no
             dhcp6: no
             id: 2
-            addresses: [10.2.3.254/22]
+            addresses: [10.22.3.254/22]
             link: bond0
 ```
 
