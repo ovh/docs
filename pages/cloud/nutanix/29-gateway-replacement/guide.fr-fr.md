@@ -10,7 +10,7 @@ order: 09
 
 ## Présentation
 
-Une machine virtuelle **OVHgateway** est installée lors d'une déploiement d'un cluster **Nutanix on OVHcloud**, cette machine virtuelle sert de passerelle Internet Sortante pour le cluster le débit maximal est de 1gb/s.
+Une machine virtuelle **OVHgateway** est installée lors d'un déploiement d'un cluster **Nutanix on OVHcloud**, cette machine virtuelle sert de passerelle Internet Sortante pour le cluster le débit maximal est de 1gb/s.
 
 Si vous avez besoin d'une bande passante plus importante il faut remplacer cette passerelle par un serveur dédié et choisir une offre qui vous permettra d'aller entre 1 gb/s et 10 gb/s sur le réseau public comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
 
@@ -49,11 +49,11 @@ Allez dans votre espace client OVHcloud cliquez sur `Hosted Private Cloud`{.acti
 
 ![01 get nutanix vrack 01](images/01-get-nutanix-vrack01.png){.thumbnail}
 
-Toujours dans dans votre espace client OVHcloud allez sur l'onglet `Bare Metal Cloud`{.action}. Sélectionnez dans la barre de menu à gauche votre serveur dédié et cliquez sur `Network interfaces`{.action}.
+Toujours dans votre espace client OVHcloud allez sur l'onglet `Bare Metal Cloud`{.action}. Sélectionnez dans la barre de menu à gauche votre serveur dédié et cliquez sur `Network interfaces`{.action}.
 
 ![02 getnetworkinformation 01](images/02-getnetworkinformation01.png){.thumbnail}
 
-Allez en bas à droite dans **Network Interfaces** et notez les adresses MAC associées au réseau public et au réseau privé (deux adresses MAC par réseau).
+Positionnez-vous en bas à droite dans **Network Interfaces** et notez les adresses MAC associées au réseau public et au réseau privé (deux adresses MAC par réseau).
 
 ![02 getnetworkinformation 02](images/02-getnetworkinformation02.png){.thumbnail}
 
@@ -77,7 +77,7 @@ Cliquez sur `View purshase order`{.action} pour voir le bon de commande.
 
 ![03 Change bandwitdh 04](images/03-change-bandwidth04.png){.thumbnail}
 
-Dès que la commande sera validée votre débit sur la bande passante publique sera changée.
+Dès que la commande sera validée votre débit sur la bande passante publique sera changé.
 
 ![03 Change bandwitdh 05](images/03-change-bandwidth05.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Restez sur la configuration, cliquez en bas de la page sur `Le bouton de configu
 
 ![04 attach bm to nutanix vrack 01](images/04-attach-bm-to-nutanix-vrack01.png){.thumbnail}
 
-Sélectionnez le vRack dans **Select private network** qui correspond à votre serveur Nutanix noté précedemment. 
+Sélectionnez le vRack dans **Select private network** qui correspond à votre serveur Nutanix noté précédemment. 
 
 ![04 attach bm to nutanix vrack 02](images/04-attach-bm-to-nutanix-vrack02.png){.thumbnail}
 
@@ -115,9 +115,9 @@ Cliquez sur `Confirm`{.action}.
 
 ![05 install OS 04](images/05-install-os04.png){.thumbnail}
 
-L'installation du système d'exploitation se lance un fenêtre de l'état d'avancement apparait et disparaitra quand l'installation sera terminée.
+L'installation du système d'exploitation se lance une fenêtre de l'état d'avancement apparait et disparaitra quand l'installation sera terminée.
 
-Un message vous sera envoyé dans la boite au lettre du commpte client, il contiendra le compte utilisateur administrateur (le compte se nomme ubuntu) ainsi qu'un lien vers son mot de passe.  
+Un message vous sera envoyé dans la boite aux lettres du compte client, il contiendra le compte utilisateur administrateur (le compte se nomme ubuntu) ainsi qu'un lien vers son mot de passe.  
 
 ![05 install OS 04](images/05-install-os05.png){.thumbnail}
 
@@ -163,13 +163,13 @@ Trois cartes réseaux sont affichées avec l'état **DOWN**, reprenez la liste d
     link/ether "mac-address-private-card1" brd ff:ff:ff:ff:ff:ff
 ```
 
-lancer cette commande 
+Lancer cette commande. 
 
 ```bash
 ip a | grep -C1 UP
 ```
 
-Vous voyez deux cartes réseau avec l'état **UP**, la carte loopback et une carte physique dont l'adresse MAC doit correspondre à une des adresses publiques notées dans l'espace client OVHcloud. récuperer le nom de cette carte publique :
+Vous voyez deux cartes réseau avec l'état **UP**, la carte loopback et une carte physique dont l'adresse MAC doit correspondre à une des adresses publiques notées dans l'espace client OVHcloud. Récuperez le nom de cette carte publique :
 
 ```bash
 1: "lo": <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
