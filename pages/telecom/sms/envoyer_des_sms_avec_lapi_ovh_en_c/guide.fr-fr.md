@@ -6,7 +6,10 @@ legacy_guide_number: g1654
 section: 'Envoyer des SMS'
 ---
 
-Vous aurez besoin d’un environnement de développement c#, d’un compte OVH avec des crédits SMS.
+**Dernière mise à jour le 21/11/2022**
+
+
+Vous aurez besoin d’un environnement de développement c#, d’un compte OVH avec des crédits SMS et d'un expéditeur de SMS validé.
 
 ## Appels vers l'API
 Il n'existe pas encore de Wrapper c#, nous implémenterons donc l'appel au Webservice directement dans le code. Dans un but de lisibilité et de simplicité, la partie de consommation de l'API n'est pas factorisée ni implémentée complètement (deserialisation json, etc.).
@@ -169,7 +172,7 @@ private void sendSms()
             String ServiceName = "sms-XX00000-1";
             String METHOD = "POST";
             String QUERY = "https://eu.api.ovh.com/1.0/sms/"+ServiceName+"/jobs";
-            String BODY =@"{ ""charset"": ""UTF-8"", ""receivers"": [ ""+33660000000"" ], ""message"": ""Test SMS OVH"", ""priority"": ""high"",  ""senderForResponse"": true}";
+            String BODY =@"{ ""charset"": ""UTF-8"", ""receivers"": [ ""+33660000000"" ], ""message"": ""Test SMS OVH"", ""priority"": ""high"",  ""senderForResponse"": true, ""sender"": ""YOURSENDER""}";
 
             Int32 unixTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
             String TSTAMP = (unixTimestamp).ToString();
