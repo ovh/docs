@@ -219,7 +219,7 @@ Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour passer à la der
 
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-Nous recommandons de choisir la facturation horaire en cas de doute sur la période d'utilisation, car il n'est pas possible de la choisir après la livraison du service. Vous aurez la possibilité de passer à un abonnement mensuel dès que l'instance sera disponible sur la page "Instances".
+Nous recommandons de choisir la facturation horaire en cas de doute sur la période d'utilisation, car il n'est pas possible de la choisir après la livraison du service. Vous aurez la possibilité de passer à un abonnement mensuel dès que l'instance sera disponible sur la page « Instances ».
 
 > [!warning]
 >
@@ -234,7 +234,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 ![instances page](images/instance-connect-01.png){.thumbnail}
 
-Un utilisateur disposant d'autorisations élevées est automatiquement créé sur l'instance. Le nom d'utilisateur reflète l'image choisie, par exemple « ubuntu », « debian », « fedora », « arch », etc. Vous pouvez vérifier cela, ainsi que toutes les autres spécifications sur le  « Tableau de bord » de l'instance en cliquant sur `...`{.action}, puis sur`Détail de l'instance`{.action}.
+Un utilisateur disposant d'autorisations élevées est automatiquement créé sur l'instance. Le nom d'utilisateur reflète l'image choisie, par exemple « ubuntu », « debian », « fedora », « arch », etc. Vous pouvez vérifier cela, ainsi que toutes les autres spécifications sur le  « Tableau de bord » de l'instance en cliquant sur `...`{.action}, puis sur `Détail de l'instance`{.action}.
 
 > [!primary]
 >
