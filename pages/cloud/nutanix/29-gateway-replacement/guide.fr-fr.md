@@ -105,7 +105,7 @@ Au travers des onglets du serveur dédié allez sur `Informations générales`{.
 
 Laissez la sélection sur `Installer à partir d'un template OVH`{.action} et cliquez sur `Suivant`{.action}.
 
-![05 install OS 01](images/05-install-os01.png){.thumbnail}
+![05 install OS 02](images/05-install-os02.png){.thumbnail}
 
 Cliquez sur la `liste des serveurs`{.action}.
 
