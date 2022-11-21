@@ -1,5 +1,5 @@
 ---
-title: 'Gestion du reboot avec PXE, dans un environnement "privé" chez Ovhcloud'
+title: 'Gestion du reboot avec PXE, dans un environnement privé chez Ovhcloud'
 slug: netboot PXE
 excerpt: 'Comment réaliser les redémarrages de vos solutions OVHcloud à travers un environnement "entièrement privé"'
 section: 'Utilisation avancée'
