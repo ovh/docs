@@ -90,16 +90,17 @@ Exemple:
 * une seule machine cliente *Node 1*.
 
 
-le service DHCP
 
-ci-dessous, un exemple de fichier de configuration pour votre service **DHCP** avec le netboot PXE.<br>
-Selon votre distribution, l'arboresence peut être différente (dhcpd.conf):
+#### le service DHCP
 
-En général, il suffit de:<br>
+ci-dessous, un exemple de fichier de configuration pour votre service **DHCP**.<br>
+Selon votre distribution, l'arboresence peut être différente (dhcpd.conf).
 
-* déclarer une interface réseau pour l'écoute
-* préciser la version du protocol l'adresse IP (en v4 ou v6)
-* configurer/déclarer le subnet utilisé
+En régle générale, il suffit de:<br>
+
+* déclarer une interface réseau pour l'écoute (en attente de requêtes).
+* préciser la version du protocol IP (v4 ou v6).
+* configurer/déclarer le subnet utilisé.
 
 à titre d'exemple:
 ```bash
@@ -107,29 +108,32 @@ En général, il suffit de:<br>
 allow booting;
 allow bootp;
 
- # Minimum configuration directives...
- option domain-name "domain_name";
- option subnet-mask subnet_mask;
- option broadcast-address broadcast_address;
- option routers default_router;
+default-lease-time 7200;
+max-lease-time 7200;
 
- # Optional
- option domain-name-servers dns_servers;
-
- # Declare the TFTP server
- group {
-  option root-path "/tftpboot/";
-  next-server TFTP_server_address;
+# Minimum configuration directives...
+subnet 192.168.1.0 netmask 192.168.1.240 {
+  range 192.168.1.1 192.168.1.5;
+  option subnet-mask 192.168.1.240;
+  option broadcast-address 192.168.1.15;
+  option routers 192.168.1.1;
+  option root-path "/srv/tftp/";
+  option tftp-server-name "192.168.1.1";
+  
+  # Declare the TFTP server
+  next-server 192.168.1.1;
   filename "pxelinux.0";
- 
-  # Declare each host here
-  host hostname {
-   hardware ethernet ethernet_address;
-   fixed-address ip_hostname;
+  
+   # optional
+  option dns-servers node_0;
+  option ntp-servers node_0;
 
+# Declare each host here
+host node_1 {
+hardware ethernet xx:xx:xx:xx:xx:xx;
+server-name "private-node-1";
  }
 }
-
 ```
 
 Détails:
@@ -138,14 +142,15 @@ Détails:
 * `subnet_mask` : 192.168.1.240
 * `broadcast_address` : 192.168.1.15
 * `dns_servers` : cf chapitre optionnel
+* `ntp_servers` : cf chapitre optionnel
 * `default_router` : 192.168.1.1
-* `TFTP_server_address` : 192.168.1.1
-* `hostname` : nom machine cliente
-* `ethernet_address` : adresse matérielle (MAC) machine cliente
-* `ip_hostname` : ip machine cliente
+* `next-server` : 192.168.1.1
+* `host` : nom machine cliente
+* `hardware ethernet` : adresse matérielle (MAC) machine cliente
+* `server-name` : ip machine cliente
 
 
-le service **TFTP**
+#### le service **TFTP**
 
 Selon votre distribution, il existe plusieurs paquets réalisant la fonction de serveur TFTP.<br>
 Par exemple: *tftp-server*, *tftpd*, *tftpd-hpa* ou encore *atftpd*.
