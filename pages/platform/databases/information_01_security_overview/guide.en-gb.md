@@ -6,7 +6,7 @@ section: General information
 order: 010
 ---
 
-**Last updated October 26, 2022**
+**Last updated 21st November 2022**
 
 ## Objective
 
@@ -47,22 +47,19 @@ Customer access to provided services is only provided over TLS encrypted connect
 
 Communication between virtual machines within Public Cloud Databases is secured with either TLS or IPsec. There are no unencrypted plaintext connections.
 
-
 #### At-rest encryption (on disk)
 
 At-rest data encryption covers both active service instances as well as service backups in cloud object storage.
 
 All customer data stored on disk is encrypted using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup). 
 
-A unique key is generated for each database service or backup, and is never reused. The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. We use the LUKS2 default mode aes-xts-plain64:sha256 with a 512-bit key.
-
+A unique key is generated for each database service or backup, and is never re-used. The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. We use the LUKS2 default mode aes-xts-plain64:sha256 with a 512-bit key.
 
 #### Client-side encryption
 
 Client side-encryption allows a customer to encrypt data from the sender's side, before the transmission, with his personal encryption key.
 
 We do not provide client-side encryption so far.
-
 
 ### CVE monitoring
 
