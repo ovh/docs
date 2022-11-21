@@ -14,7 +14,7 @@ order: 01
 > Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissance concernant le monde open source, ainsi que des notions d'administration.
 > 
 
-Cette documentation à pour but de vous accompagner pour deployer tous les composants ou bien services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement dédié et **entièrement privé**.
+Cette documentation à pour but de vous accompagner pour deployer tous les composants ou bien services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement dédié et **entièrement privé**.<br>
 Profiter d'une infrastructure "full private" sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
 
 > [!warning]
@@ -23,13 +23,14 @@ Profiter d'une infrastructure "full private" sans avoir modifié la configuratio
 > Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres bien définis, pour vous proposez des environnements techniques les mieux adaptés à votre matériel.
 >
 
-Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.
-Chaque serveur est muni de 2 interfaces réseaux (en réalité 4: fonctionnants (par paire) en liens aggrégés pour la redondance), vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit "public" aussi appelés "front-end" et ceux, au contraire, dit "privés" appelés "back-end".
+Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.<br>
+Chaque serveur est muni de 2 interfaces réseaux (en réalité 4: fonctionnants en liens aggrégés (par paire) pour la redondance).<br>
+Vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit "public" aussi appelés "front-end" et ceux, au contraire, dit "privés" appelés "back-end".
 
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode full-private, c'est-à-dire, ne possédant **uniquement** que des réseaux privés.
 Cette solution propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
 
-La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.
+La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
 Mais dans ce cas, le mecanisme de démarrage de la solution se retrouve inopérant, à savoir que lorsque les systèmes sont démarrés, via une méthode **netboot** (Network Boot), ces derniers doivent obligatoirement récupèrer leur configurations via des services réseaux mutualisés présent sur le réseaux OVHcloud.
 
 
@@ -138,7 +139,7 @@ Détails:
 
 le service **TFTP**
 
-Selon votre distribution, il existe plusieurs paquets réalisant la fonction de serveur TFTP.
+Selon votre distribution, il existe plusieurs paquets réalisant la fonction de serveur TFTP.<br>
 Par exemple: `tftp-server`, `tftpd`, `tftpd-hpa` ou encore `atftpd`.
 
 L'arborescence d'installation peut être différente selon le package installé.
@@ -174,7 +175,7 @@ La syntaxe [sanboot](https://ipxe.org/cmd/sanboot) permet de forcer la détectio
 A partir du moment où cette étape a été réalisée, le système d'exploitation peut débuter son chargement.
 
 
-> Pour finaliser les déploiements des nouveaux services, ne pas oublier d'autoriser les futures connexions **entrantes** depuis les machines clientes:
+Pour finaliser les déploiements des nouveaux services, ne pas oublier d'autoriser les futures connexions **entrantes** depuis les machines clientes.<br>
 exemple de configuration de firewall local avec `iptables`, cela peut varier selon votre distribution:
 
 ```bash
@@ -187,7 +188,7 @@ iptables -I INPUT -i eth1 -p udp --dport 69 -j ACCEPT
 
 > [!warning]
 >
-> Penser à relancer le service de firewall local après chaque modification/déclaration de configuration pour prise en compte.
+> Penser à relancer le service de firewall local après chaque modification/déclaration de configuration, pour prise en compte.
 >
 
 ## Optionnel
@@ -203,8 +204,8 @@ iptables -I INPUT -i eth1 -p udp --dport 69 -j ACCEPT
 
 **Suggestions**
 
-service DNS:
-Pour pouvez utiliser la table locale de chaque *Node*, à savoir `/etc/hosts`, ou bien utiliser par exemple un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
+service DNS:<br>
+Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/etc/hosts`,ou bien utiliser, par exemple, un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
 
 
 service NTP:
