@@ -95,6 +95,12 @@ le service DHCP
 ci-dessous, un exemple de fichier de configuration pour votre service **DHCP** avec le netboot PXE.<br>
 Selon votre distribution, l'arboresence peut être différente (dhcpd.conf):
 
+En général, il suffit de:<br>
+
+* déclarer une interface réseau pour l'écoute
+* préciser la version du protocol l'adresse IP (en v4 ou v6)
+* configurer/déclarer le subnet utilisé
+
 à titre d'exemple:
 ```bash
 
