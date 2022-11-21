@@ -2,7 +2,7 @@
 title: AI Notebooks - Billing and lifecycle
 slug: notebooks/billing
 excerpt: Learn how we bill AI Notebooks
-section: AI Notebooks guides
+section: AI Notebooks - Guides
 order: 5
 ---
 

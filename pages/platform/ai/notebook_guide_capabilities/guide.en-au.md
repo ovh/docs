@@ -2,7 +2,7 @@
 title: AI Notebooks - Features, Capabilities and Limitations
 slug: notebooks/capabilities
 excerpt: Find out about current features, capabilities and limitations of AI Notebooks
-section: AI Notebooks guides
+section: AI Notebooks - Guides
 order: 04
 ---
 

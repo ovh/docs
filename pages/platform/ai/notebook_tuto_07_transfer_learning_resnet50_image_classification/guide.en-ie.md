@@ -1,8 +1,8 @@
 ---
-title: AI Notebooks - Tutorial - Use a pretrained ResNet model for image classification
+title: AI Notebooks - Tutorial - Use ResNet for image classification
 slug: notebooks/tuto-transfer-learning-resnet
 excerpt: How to use an existing model to do Transfer Learning?
-section: AI Notebooks tutorials
+section: AI Notebooks - Tutorials
 order: 07
 ---
 

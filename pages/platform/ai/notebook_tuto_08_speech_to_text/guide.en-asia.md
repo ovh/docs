@@ -2,7 +2,7 @@
 title: AI Notebooks - Tutorial - Use Speech-to-Text powers on audio and video
 slug: notebooks/tuto-speech-to-text-recognition
 excerpt: How to convert Speech to Text using AI Notebooks
-section: AI Notebooks tutorials
+section: AI Notebooks - Tutorials
 order: 08
 ---
 

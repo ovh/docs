@@ -2,7 +2,7 @@
 title: AI Deploy - Tutorial - Deploy a simple app with Flask
 slug: deploy/tuto-build-use-flask-image
 excerpt: How to build and use a custom Docker image containing a Flask application
-section: AI Deploy tutorials
+section: AI Deploy - Tutorials
 order: 02
 ---
 

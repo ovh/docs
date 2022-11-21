@@ -2,7 +2,7 @@
 title: AI Notebooks - Getting started
 slug: notebooks/definition
 excerpt: Learn how to simply bootstrap an AI Notebook
-section: AI Notebooks guides
+section: AI Notebooks - Guides
 order: 02
 ---
 
