@@ -86,7 +86,7 @@ Sobald Ihr Domainname freigegeben und der Code verfügbar ist, können Sie den T
 
 > [!success]
 >
-> Geben Sie die Domain, die Sie transferieren möchten, auf unserer Seite an [www.ovhcloud.com/de/domains/tld/](https://www.ovhcloud.com/de/domains/tld/)
+> Um die Transfer-Kosten für Ihren Domainnamen zu erfahren, geben Sie ihn in das Suchformular auf unserer Webseite ein [www.ovhcloud.com/de/domains/tld/](https://www.ovhcloud.com/de/domains/tld/).
 >
 
 Wenn Sie zur Eingabe des AUTH/INFO-Code eingeben werden, können Sie ihn in das entsprechende Feld eintragen. Wenn Sie noch nicht über den Code verfügen, können Sie auch die Option auswählen, diesen nachzuliefern. Wir empfehlen jedoch, den Code verfügbar zu haben, bevor Sie die Bestellung ausführen. Denken Sie daran, dass der Transfer erst dann gestartet wird, wenn ein gültiger Code eingegeben wurde.
