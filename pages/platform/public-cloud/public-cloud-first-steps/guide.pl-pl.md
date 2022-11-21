@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 1
 ---
 
-**Ostatnia aktualizacja: 02-08-2022**
+**Ostatnia aktualizacja: 17-11-2022**
 
 ## Wprowadzenie
 
@@ -183,7 +183,7 @@ W następnym kroku wybierz centrum danych instancji Public Cloud.
 
 Trzecia opcja służy do wyboru systemu operacyjnego instancji. Obrazy dostępne w tym kroku zależą od wyborów dokonanych w poprzednich krokach, na przykład od zgodności z typem serwera i regionu. Dostępne są również systemy operacyjne z preinstalowanymi aplikacjami.
 
-![image select](images/instance-creation-02.png){.thumbnail}
+![image select](images/instance-creation-02-2022.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,24 +192,35 @@ Jeśli wybierzesz system operacyjny, który wymaga płatnej licencji, jej koszty
 
 W tym kroku należy też dodać klucz SSH (poza instancjami z systemem Windows) przez wklejenie bezpośrednio za pomocą przycisku `Dodaj klucz`{.action} lub wybranie z listy, o ile klucz został zapisany w Panelu klienta w [kroku 2](./#krok-2-przechowywanie-kluczy-publicznych-w-panelu-klienta-ovhcloud_1).
 
-![key select](images/instance-creation-03.png){.thumbnail}
+![key select](images/instance-creation-03-2022.png){.thumbnail}
 
 W czwartym kroku można skonfigurować dodatkowe opcje.
 
-![options select](images/instance-creation-04.png){.thumbnail}
+![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - Możesz wdrożyć wiele instancji z wybraną konfiguracją (w ramach wspomnianego powyżej limitu początkowego).
 - Możesz utworzyć instancję elastyczną, która umożliwia później przejście do mniejszego modelu (a nawet zmianę kategorii modelu serwera), ale zawsze ogranicza instancję do 50 GB **przestrzeni dyskowej**, niezależnie od tego, czy następuje przejście do wyższego, czy niższego modelu.
 - Możesz zmienić nazwę wyświetlaną instancji.
 - Możesz dodać skrypt uruchamiany po instalacji.
-- Możesz dołączyć instancje do istniejącej sieci prywatnej (vRack).
 - Możesz włączyć automatyczne kopie zapasowe instancji. Zwróć uwagę na informacje o cenie i szczegóły dotyczące rotacji kopii zapasowych.
+
+Po zakończeniu kliknij przycisk `Dalej`{.action}, aby skonfigurować Twoją sieć.
+
+![configure network](images/network-selection.png){.thumbnail}
+
+W zależności od planowanego wykorzystania instancji możesz wybrać **Tryb publiczny** lub **Tryb prywatny**.
+
+Tryb publiczny to klasyczny model sieci, który umożliwia przypisany publiczny port sieciowy Twoim instancjom. Każda instancja posiada publiczny adres IP i prywatny adres IP przypisany do usługi vrack.
+
+Tryb prywatny daje możliwość przypisywania instancji tylko do sieci prywatnej. Instancje w tym trybie mogą być dostępne w sieci publicznej wyłącznie za pomocą usługi Gateway lub Load Balancer z Floating IP. Więcej informacji znajdziesz w ddokumentacją dotyczącą [rozwiązań sieciowych dla Public Cloud OVHcloud](https://docs.ovh.com/pl/publiccloud/network-services/).
+
+Po wybraniu trybu wybierz prywatną sieć, do której chcesz przypisać instancję lub kliknij `Utwórz nową prywatną sieć`{.action}, aby stworzyć nową.
 
 Po zastosowaniu wybranych opcji kliknij przycisk `Dalej`{.action}, aby przejść do ostatniego kroku i wybrać metodę rozliczania.
 
-![billing select](images/instance-creation-05.png){.thumbnail}
+![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
-Jeśli masz wątpliwości dotyczące okresu użytkowania, zalecamy wybór rozliczania godzinowego, ponieważ później już nie można go wybrać. Gdy tylko instancja będzie dostępna na stronie “Instancje”, będziesz mieć możliwość zmiany na subskrypcję miesięczną.
+Zalecamy wybór rozliczenia godzinowego w przypadku braku pewności co do okresu korzystania z usługi, ponieważ nie ma możliwości jego wyboru po jej wykonaniu. Będziesz miał możliwość przejścia na miesięczny abonament, gdy tylko instancja będzie dostępna na stronie "Instances".
 
 > [!warning]
 >

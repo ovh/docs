@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 1
 ---
 
-**Letzte Aktualisierung am 02.08.2022**
+**Letzte Aktualisierung am 17.11.2022**
 
 ## Ziel
 
@@ -183,7 +183,7 @@ Wählen Sie im nächsten Schritt ein Rechenzentrum für Ihre Public Cloud Instan
 
 Im dritten Schritt wählen Sie das Betriebssystem für Ihre Instanz aus. Welche Images in diesem Schritt verfügbar sind, ist abhängig von Ihrer Auswahl in den vorangegangen Schritten, d. h. der Kompatibilität mit dem Servertyp und der Region. Es stehen auch Betriebssysteme mit vorinstallierten Anwendungen zur Verfügung.
 
-![Image auswählen](images/instance-creation-02.png){.thumbnail}
+![Image auswählen](images/instance-creation-02-2022.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,24 +192,36 @@ Wenn Sie ein Betriebssystem auswählen, das eine kostenpflichtige Lizenz erforde
 
 Auch für diesen Schritt muss ein SSH-Schlüssel hinzugefügt werden (ausgenommen Windows-Instanzen), indem dieser entweder direkt über `Schlüssel hinzufügen`{.action} eingefügt oder aus der Liste ausgewählt wird, wenn Sie diesen bereits in [Schritt 2](./#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern_1) im Kundencenter gespeichert haben.
 
-![Schlüssel auswählen](images/instance-creation-03.png){.thumbnail}
+![Schlüssel auswählen](images/instance-creation-03-2022.png){.thumbnail}
 
 Im vierten Schritt können zusätzliche Optionen konfiguriert werden.
 
-![Optionen auswählen](images/instance-creation-04.png){.thumbnail}
+![Optionen auswählen](images/instance-creation-04-2022.png){.thumbnail}
 
 - Sie können mehrere Instanzen mit den gewählten Einstellungen deployen (innerhalb der zuvor erwähnten Quota).
 - Sie können eine flexible Instanz erstellen, damit Sie im Nachhinein auch auf ein kleineres Modell (oder sogar andere Servermodellkategorien) wechseln können. Diese Option begrenzt jedoch den **inklusiven Speicherplatz** der Instanz auf 50 GB, unabhängig davon, ob auf ein höheres oder ein geringeres Modell migriert wird.
 - Sie können den Anzeigenamen Ihrer Instanz ändern.
 - Sie können ein Post-Installationsskript hinzufügen.
-- Sie können die Instanz(en) zu einem vorhandenen privaten Netzwerk (vRack) hinzufügen.
 - Sie können automatische Backups für die Instanz(en) aktivieren. Bitte achten Sie hierbei auf die Preisinformationen sowie die Optionen zur Backup-Rotation.
+
+Wenn Sie fertig sind, klicken Sie auf `Weiter`{.action}, um Ihr Netzwerk zu konfigurieren.
+
+![configure network](images/network-selection.png){.thumbnail}
+
+Je nach geplanter Nutzung Ihrer Instanzen können Sie **Öffentlicher Modus** oder **Privater Modus** auswählen.
+
+Der Öffentliche Modus ist das klassische Netzwerkmodell und erlaubt es Ihren Instanzen, einen eigenen öffentlichen Netzwerk-Port einzurichten. Jede Instanz ist mit dem vRack verbunden und verfügt über eine öffentliche und eine private IP.
+
+Der Private Modus bietet Ihnen die Möglichkeit, Ihre Instanzen ausschließlich einem privaten Netzwerk zuzuweisen. Die Instanzen dieses Modus können dem öffentlichen Netzwerk nur mit einem Gateway oder Loadbalancer mit Floating IPs ausgesetzt werden. Weitere Informationen finden Sie in unserer Dokumentation zu den [Netzwerklösungen für die OVHcloud Public Cloud](https://docs.ovh.com/de/publiccloud/network-services/).
+
+Wählen Sie nach der Wahl Ihr privates Netzwerk aus, an das Ihre Instanz angehängt werden soll, oder klicken Sie auf `Ein neues privates Netzwerk erstellen`{.action}, um ein neues zu erstellen.
 
 Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf `Weiter`{.action}, um zum letzten Schritt überzugehen und eine Abrechnungsmethode auszuwählen.
 
-![Abrechnungsmethode auswählen](images/instance-creation-05.png){.thumbnail}
+![Abrechnungsmethode auswählen](images/instance-creation-05-2022.png){.thumbnail}
 
-Wir empfehlen Ihnen, bei Unsicherheit bezüglich des Verwendungszeitraums die stündliche Abrechnung auszuwählen, da es nicht möglich ist, im Nachhinein zu dieser Option zu wechseln. Sobald die Instanz auf der “Instanzen”-Seite verfügbar ist, können Sie auf monatliche Abrechnung umstellen.
+Wir empfehlen Ihnen, bei Unsicherheit bezüglich des Verwendungszeitraums die stündliche Abrechnung auszuwählen, da es nicht möglich ist, nach der Lieferung des Dienstes zu dieser Option zu wechseln. Sobald die Instanz in der “Instanzen”-Übersicht angezeigt wird, können Sie auf monatliche Abrechnung umstellen.
+
 
 > [!warning]
 >

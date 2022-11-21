@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 1st August 2022**
+**Last updated 17th November 2022**
 
 ## Objective
 
@@ -183,7 +183,7 @@ In the next step, choose a data centre for your Public Cloud instance.
 
 The third option is where you select an operating system for the instance. Which images are available in this step depends on the choices made in previous steps, i.e. compatibility with the server type and the region. Operating systems with pre-installed applications are also available.
 
-![image select](images/instance-creation-02.png){.thumbnail}
+![image select](images/instance-creation-02-2022.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,22 +192,33 @@ If you select an operating system that requires paid licensing, these costs will
 
 This step also requires an SSH key to be added (Windows instances excluded), either by pasting the key directly via `Add a key`{.action} or selecting it from the list, provided you have stored it in the Control Panel in [Step 2](./#step-2-storing-public-keys-in-the-ovhcloud-control-panel_1).
 
-![key select](images/instance-creation-03.png){.thumbnail}
+![key select](images/instance-creation-03-2022.png){.thumbnail}
 
 The fourth step allows to configure some additional options.
 
-![options select](images/instance-creation-04.png){.thumbnail}
+![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - You can deploy multiple instances with the chosen setup (within your initial quota mentioned above).
 - You can choose to create a flexible instance which allows you to later downgrade to a smaller model (even switching server model categories) but it will limit the instance to 50GB of **included storage** at all times, regardless of upgrades or downgrades.
 - You can change the display name for your instance.
 - You can add a post-installation script.
-- You can connect the instance(s) to an existing private network (vRack).
 - You can enable automatic backups for the instance(s). Please take note of the pricing information and the rotation option details.
+
+When you have applied your choices, click on `Next`{.action} to configure your network.
+
+![configure network](images/network-selection.png){.thumbnail}
+
+Depending on how you intend to use your instances, you can select the **Public mode** or **Private mode**. 
+
+The Public mode is the standard network model, it allows your instances to have a public network port attached. Associated with the vrack, each instance has a public and a private IP.
+
+The Private mode provides you with the possiblity of assiging your instances to a private network only. Instances in this mode can only be exposed to the public network using a Gateway or a Loadbalancer service with Floating IPs. For more information, please consult our [Public Cloud Network Services](https://docs.ovh.com/sg/en/publiccloud/network-services/) guides.
+
+Once you have selected a mode, select a private network to attach your instance to or click on `Create a new private network`{.action} to create a new one.
 
 When you have applied your choices, click `Next`{.action} to proceed to the final step and decide on a billing method.
 
-![billing select](images/instance-creation-05.png){.thumbnail}
+![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
 We recommend to choose hourly billing if there is any doubt regarding the usage period, because it is not possible to choose it after the service delivery. You will have the option to switch to a monthly subscription as soon as the instance is available on the "Instances" page.
 

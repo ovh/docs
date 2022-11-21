@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 04
 ---
 
-**Dernière mise à jour le 01/08/2022**
+**Dernière mise à jour le 17/11/2022**
 
 ## Objectif
 
@@ -181,7 +181,7 @@ Notez que vous pouvez mettre à niveau votre instance ultérieurement, mais vous
 
 À l'étape 3, sélectionnez un système d'exploitation pour l'instance. Les images disponibles dépendent des choix effectués dans les étapes précédentes, c'est-à-dire la compatibilité avec le type de serveur et la région. Des systèmes d'exploitation avec des applications préinstallées sont également disponibles.
 
-![image select](images/instance-creation-02.png){.thumbnail}
+![image select](images/instance-creation-02-2022.png){.thumbnail}
 
 
 > [!primary]
@@ -191,22 +191,35 @@ Si vous choisissez un système d'exploitation nécessitant une licence payante, 
 
 Cette étape nécessite également l'ajout d'une clé SSH (sauf instances Windows), soit en ajoutant la clé directement via `Ajouter une clé`{.action}, soit en la sélectionnant dans la liste, à condition que vous l'ayez stockée dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud_1).
 
-![key select](images/instance-creation-03.png){.thumbnail}
+![key select](images/instance-creation-03-2022.png){.thumbnail}
 
 L'étape 4 permet de configurer des options supplémentaires.
 
-![options select](images/instance-creation-04.png){.thumbnail}
+![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - Vous pouvez déployer plusieurs instances avec la configuration choisie (dans le quota initial mentionné ci-dessus).
 - Vous pouvez choisir de créer une instance flexible qui vous permet de descendre vers un modèle inférieur (même en changeant de catégorie du modèles de serveur), mais elle limite l'instance à 50 Go de stockage **inclus** , indépendamment des mises à niveau inférieur ou supérieur.
 - Vous pouvez modifier le nom d'affichage de votre instance.
 - Vous pouvez ajouter un script de post-installation.
-- Vous pouvez connecter les instances à un réseau privé existant (vRack).
 - Vous pouvez activer les sauvegardes automatiques pour vos instances. Tenez compte des informations relatives aux prix et aux options de rotation.
+
+Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour configurer votre réseau.
+
+![configure network](images/network-selection.png){.thumbnail}
+
+En fonction de l'utilisation envisagée de vos instances, vous pouvez sélectionner le **Mode Public** ou **Mode Privé**. 
+
+Le mode Public est le modèle de réseau classique, il permet à vos instances d'avoir un port réseau public rattaché. Associée au vrack, chaque instance possède une IP publique et une IP privée.
+
+Le mode Privé vous offre la possibilité d'affecter vos instances uniquement à un réseau privé. Les instances de ce mode ne peuvent être exposées au réseau public qu'à l'aide d'un service Gateway ou Load Balancer avec des Floating IPs. Pour plus d'informations, consultez notre documentation sur les [solutions réseau pour le Public Cloud OVHcloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/).
+
+Une fois votre mode choisi, sélectionnez un réseau privé auquel attacher votre instance ou cliquez sur `Créer un nouveau réseau privé`{.action} pour en créer un nouveau.
 
 Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour passer à la dernière étape et définir votre mode de facturation.
 
-![billing select](images/instance-creation-05.png){.thumbnail}
+![billing select](images/instance-creation-05-2022.png){.thumbnail}
+
+Nous recommandons de choisir la facturation horaire en cas de doute sur la période d'utilisation, car il n'est pas possible de la choisir après la livraison du service. Vous aurez la possibilité de passer à un abonnement mensuel dès que l'instance sera disponible sur la page « Instances ».
 
 > [!warning]
 >
@@ -221,7 +234,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 ![instances page](images/instance-connect-01.png){.thumbnail}
 
-Un utilisateur disposant d'autorisations élevées est automatiquement créé sur l'instance. Le nom d'utilisateur reflète l'image choisie, par exemple « ubuntu », « debian », « fedora », « arch », etc. Vous pouvez vérifier cela, ainsi que toutes les autres spécifications sur le  « Tableau de bord » de l'instance en cliquant sur `...`{.action}, puis sur`Détail de l'instance`{.action}.
+Un utilisateur disposant d'autorisations élevées est automatiquement créé sur l'instance. Le nom d'utilisateur reflète l'image choisie, par exemple « ubuntu », « debian », « fedora », « arch », etc. Vous pouvez vérifier cela, ainsi que toutes les autres spécifications sur le  « Tableau de bord » de l'instance en cliquant sur `...`{.action}, puis sur `Détail de l'instance`{.action}.
 
 > [!primary]
 >

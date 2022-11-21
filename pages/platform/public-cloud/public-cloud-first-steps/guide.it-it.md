@@ -6,7 +6,7 @@ section: Per iniziare
 order: 1
 ---
 
-**Ultimo aggiornamento: 02/08/2022**
+**Ultimo aggiornamento: 17/11/2022**
 
 ## Obiettivo
 
@@ -183,7 +183,7 @@ Nello step successivo, seleziona un datacenter per la tua istanza Public Cloud.
 
 Nello step 3 seleziona un sistema operativo per l’istanza. Le immagini disponibili in questo step dipenderanno dalle scelte effettuate negli step precedenti, ad esempio per quanto riguarda la compatibilità con il tipo di server e la regione. Sono disponibili anche sistemi operativi con applicazioni preinstallate. 
 
-![image select](images/instance-creation-02.png){.thumbnail}
+![image select](images/instance-creation-02-2022.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,24 +192,35 @@ Se scegli un sistema operativo che richiede una licenza a pagamento, i relativi 
 
 In questo step è necessario aggiungere una chiave SSH (ad eccezione delle istanze Windows). Per farlo hai due possibilità: puoi aggiungere la chiave direttamente cliccando sul pulsante `Aggiungi una chiave`{.action} oppure puoi selezionare la chiave dalla lista (a condizione di averla salvato nello Spazio Cliente durante lo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud_1)).
 
-![key select](images/instance-creation-03.png){.thumbnail}
+![key select](images/instance-creation-03-2022.png){.thumbnail}
 
 Lo Step 4 consente di configurare opzioni aggiuntive.
 
-![options select](images/instance-creation-04.png){.thumbnail}
+![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - È possibile implementare più istanze con la configurazione selezionata (nella quota iniziale di cui sopra).
 - È possibile scegliere di creare un’istanza flessibile che consenta di effettuare, in un secondo momento, il downgrade per un modello più piccolo (anche cambiando categoria del modello di server). Tuttavia, questo limiterà l’istanza a 50GB di**storage incluso**, a prescindere dalle operazioni di upgrade o downgrade.
 - È possibile modificare il nome dell’istanza.
 - È possibile aggiungere uno script post-installazione. 
-- È possibile connettere l’istanza a una rete privata esistente (vRack).
-- È possibile attivare i backup automatici per l’istanza. Ti consigliamo di consultare i dettagli relativi ai prezzi e alle opzioni di rotazione. 
+- È possibile attivare i backup automatici per l’istanza. Ti consigliamo di consultare i dettagli relativi ai prezzi e alle opzioni di rotazione.
 
-Una volta completata l’operazione, clicca su `Successivo`{.action} per procedere allo step finale e scegliere il metodo di pagamento.
+Una volta terminato, clicca su `Continua`{.action} per configurare la tua rete.
 
-![billing select](images/instance-creation-05.png){.thumbnail}
+![configure network](images/network-selection.png){.thumbnail}
 
-Se hai dubbi riguardo al periodo di utilizzo, ti consigliamo di scegliere la fatturazione oraria, in quanto non sarà possibile effettuare questa scelta in un secondo momento. Avrai la possibilità di passare alla fatturazione mensile non appena l’istanza sarà disponibile nella pagina “Istanze”.
+In base all'utilizzo previsto delle tue istanze, puoi selezionare il **Modalità Public** o **Modalità Privata**.
+
+La modalità Public è il modello di rete classico che permette alle istanze di avere una porta di rete pubblica collegata. Associata alla vRack, ogni istanza possiede un IP pubblico e un IP privato.
+
+La modalità Private ti offre la possibilità di assegnare le tue istanze esclusivamente a una rete privata. Le istanze di questa modalità possono essere esposte alla rete pubblica solo con un servizio Gateway o Load Balancer con Floating IP. Per maggiori informazioni, consulta la nostra guida sulle [soluzioni di rete per il Public Cloud OVHcloud](https://docs.ovh.com/it/publiccloud/network-services/).
+
+Una volta scelta la modalità, seleziona una rete privata a cui associare l'istanza o clicca su `Crea una nuova rete privata`{.action} per crearne una nuova.
+
+Una volta completata l’operazione, clicca su `Continua`{.action} per procedere allo step finale e scegliere il metodo di pagamento.
+
+![billing select](images/instance-creation-05-2022.png){.thumbnail}
+
+Si consiglia di scegliere la fatturazione oraria se non si è sicuri del periodo di utilizzo, poiché non è possibile sceglierla dopo l'erogazione del servizio. Avrete la possibilità di passare a un abbonamento mensile non appena l'istanza sarà disponibile nella pagina "Instances".
 
 > [!warning]
 >
