@@ -128,12 +128,13 @@ subnet 192.168.1.0 netmask 192.168.1.240 {
   option dns-servers node_0;
   option ntp-servers node_0;
 
+}
+
 # Declare each host here
 host node_1 {
 hardware ethernet xx:xx:xx:xx:xx:xx;
 server-name "private-node-1";
  }
-}
 ```
 
 Détails:
@@ -148,6 +149,7 @@ Détails:
 * `host` : nom machine cliente
 * `hardware ethernet` : adresse matérielle (MAC) machine cliente
 * `server-name` : ip machine cliente
+
 
 
 #### le service **TFTP**
@@ -209,7 +211,12 @@ iptables -I INPUT -i eth1 -p udp --dport 69 -j ACCEPT
 > Penser à relancer le service de firewall local après chaque modification/déclaration de configuration, pour prise en compte.
 >
 
-## Optionnel
+#### Mise en marche
+
+screen
+
+
+#### Optionnel
 
 
 > [!warning]
@@ -227,7 +234,7 @@ Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/et
 
 
 service NTP:
-definition [ntp](https://fr.wikipedia.org/wiki/Network_Time_Protocol)
+
 
 
 ```bash
@@ -243,5 +250,7 @@ iptables -I INPUT -i ethX -p tcp --dport 53 -j ACCEPT
 
 ## Aller plus loin
 
+[dhcp](https://wiki.debian.org/fr/DHCP_Server)
+définition [ntp](https://fr.wikipedia.org/wiki/Network_Time_Protocol)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
