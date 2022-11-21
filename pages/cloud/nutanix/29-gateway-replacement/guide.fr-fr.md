@@ -12,7 +12,7 @@ order: 09
 
 Une machine virtuelle **OVHgateway** est installée lors d'une déploiement d'un cluster **Nutanix on OVHcloud**, cette machine virtuelle sert de passerelle Internet Sortante pour le cluster le débit maximal est de 1gb/s.
 
-Si vous avez besoin d'une bande passante plus importante il faut remplacer cette passerelle par un serveur dédié et choisir une offre qui vous permettra d'aller entre 1 gb/s à 10 gb/s sur le réseau public comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
+Si vous avez besoin d'une bande passante plus importante il faut remplacer cette passerelle par un serveur dédié et choisir une offre qui vous permettra d'aller entre 1 gb/s et 10 gb/s sur le réseau public comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
 
 **Nous allons voir comment remplacer la passerelle par défaut par un serveur dédié OVHcloud pour augmenter la bande passante.**
 
@@ -41,7 +41,7 @@ Pour remplacer l'OVHgateway nous allons utiliser ces paramètres :
 - Lan public en DHCP qui fournit une adresse publique.
 - Lan privé sur une équipe de deux cartes et des adresses privées manuelles sur plusieurs VLAN :
     - VLAN 1 : adresse IP privée et masque de l'OVHgateway (Dans notre exemple 172.16.3.254/22)
-    - VLAN 2 : Une autre adresse privé pour un VLAN supplémentaire (Dans notre exemple 10.22.3.254/22)
+    - VLAN 2 : Une autre adresse privée pour un VLAN supplémentaire (Dans notre exemple 10.22.3.254/22)
 
 ### Récupération des informations nécessaires au déploiement de votre serveur
 
@@ -60,7 +60,7 @@ Allez en bas à droite dans **Network Interfaces** et notez les adresses MAC ass
 Au travers de l'encadrement **Bandwith** cliquez sur `Modify public bandwidth`{.action} pour changer le débit de votre réseau public.
 
 > [!warning]
-> En fonction du débit que vous souhaitez le prix de l'abonnement à votre serveur augmentera et il faudra le valider par une commande dans votre espace client OVHcloud.
+> En fonction du débit que vous souhaitez le prix de l'abonnement à votre serveur augmentera et il faudra valider ce changement par une commande dans votre espace client OVHcloud.
 >
 
 ![03 Change bandwitdh 01](images/03-change-bandwidth01.png){.thumbnail}
@@ -117,7 +117,7 @@ Cliquez sur `Confirm`{.action}.
 
 L'installation du système d'exploitation se lance un fenêtre de l'état d'avancement apparait et disparaitra quand l'installation sera terminée.
 
-Un message vous sera envoyé dans votre boite au lettre et contiendra le compte utilisateur administrateur (le compte se nomme ubuntu) et de son mot de passe.  
+Un message vous sera envoyé dans la boite au lettre du commpte client, il contiendra le compte utilisateur administrateur (le compte se nomme ubuntu) ainsi qu'un lien vers son mot de passe.  
 
 ![05 install OS 04](images/05-install-os05.png){.thumbnail}
 
@@ -137,22 +137,21 @@ La machine virtuelle est éteinte.
 
 Lorsque l'on déploie un serveur Linux à partir de l'interface client OVHcloud une seule carte réseau est configurée, c'est l'adresse IP publique elle servira pour vous connecter en SSH et effectuer votre configuration.
 
-Connectez vous en SSH au serveur dédié avec cette commande :
+Connectez-vous en SSH au serveur dédié avec cette commande :
 
 ```bash
 ssh ubuntu@dedicated-server-public-ip-address
 ```
 
-Saisissez cette commande pour faire apparaitre les cartes qui ne sont pas connectées, deux des cartes réseaux non connectés sont les cartes réseaux privées.
-
+Saisissez cette commande pour faire apparaitre les cartes qui ne sont pas connectées.
 ```bash
 ip a | grep -C1 DOWN
 ```
 
-Trois cartes réseaux doivent apparaitrent avec l'état **DOWN**, reprenez la liste des adresses MAC et récupérer le nom des deux cartes privées comme dans l'exemple ci-dessous :
+Trois cartes réseaux sont affichées avec l'état **DOWN**, reprenez la liste des adresses MAC et récupérer le nom des deux cartes privées comme dans l'exemple ci-dessous :
 
 > [!warning]
-> Ne vous basez pas sur l'ordre des cartes pour trouver le nom des cartes du réseau privé mais plutôt sur les adresses MAC noté précedemment.
+> Ne vous basez pas sur l'ordre des cartes pour trouver le nom des cartes du réseau privé mais plutôt sur les adresses MAC noté à partir du Manager.
 >
 
 ```bash
@@ -170,7 +169,7 @@ lancer cette commande
 ip a | grep -C1 UP
 ```
 
-Vous verrez apparaitre 2 cartes avec l'état **UP**, la carte loopback et une carte physique dont l'adresse MAC doit correspondre à une des adresses publiques notées dans l'espace client OVHcloud. récuperer le nom de cette carte publique :
+Vous voyez deux cartes réseau avec l'état **UP**, la carte loopback et une carte physique dont l'adresse MAC doit correspondre à une des adresses publiques notées dans l'espace client OVHcloud. récuperer le nom de cette carte publique :
 
 ```bash
 1: "lo": <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -181,7 +180,7 @@ Vous verrez apparaitre 2 cartes avec l'état **UP**, la carte loopback et une ca
     link/ether "mac-address-public-card1" brd ff:ff:ff:ff:ff:ff
 ```
 
-Les informations importantes à garder sont les suivantes :
+Après avoir exécuter ces commandes vous devez avoir noté ces informatations :
 
 * `"publiccardname1"` : Le nom de la première carte réseau publique. 
 * `"mac-address-public-card1"` : L'addresse MAC de la première carte réseau publique.
