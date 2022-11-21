@@ -65,7 +65,7 @@ Au travers de l'encadrement **Bande passante** cliquez sur `Modifier la bande pa
 
 ![03 Change bandwitdh 01](images/03-change-bandwidth01.png){.thumbnail}
 
-Sélectionnez la vitessse désirée et cliquez sur `Suivant`{.action}.
+Sélectionnez la bande passante désirée et cliquez sur `Suivant`{.action}.
 
 ![03 Change bandwitdh 02](images/03-change-bandwidth02.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Cliquez sur `Payer`{.action}.
 
 ![03 Change bandwitdh 03](images/03-change-bandwidth03.png){.thumbnail}
 
-Cliquez sur `Voir votre bon de commande`{.action} pour voir le bon de commande.
+Cliquez sur `Voir ma commande`{.action} pour afficher le bon de commande.
 
 ![03 Change bandwitdh 04](images/03-change-bandwidth04.png){.thumbnail}
 
@@ -167,7 +167,7 @@ Trois cartes réseaux sont affichées avec l'état **DOWN**, reprenez la liste d
     link/ether "mac-address-private-card1" brd ff:ff:ff:ff:ff:ff
 ```
 
-Lancer cette commande. 
+Lancer cette commande :
 
 ```bash
 ip a | grep -C1 UP
