@@ -194,11 +194,11 @@ Quelques conseils pour que vos fichiers soient les plus légers possibles :
 
 Pour des raisons de lisibilité, il convient de stocker ses images dans un répertoire dédié :
 
-![Arborescence fichiers et dossiers](images/create_your_personal_webpage_1.png)
+![Arborescence fichiers et dossiers](images/create_your_personal_webpage_1.png){.thumbnail}
 
 Prenons le cas d'un fichier au format *PNG*. Placez-le dans le répertoire « images » :
 
-![Arborescence fichiers et dossiers avec image](images/create_your_personal_webpage_2.png)
+![Arborescence fichiers et dossiers avec image](images/create_your_personal_webpage_2.png){.thumbnail}
 
 Nous allons maintenant créer un nouveau paragraphe dans lequel nous placerons l'image (dans cet exemple, nous ne précisons pas la taille d'affichage de l'image en pixels. Le navigateur l'affichera donc selon sa taille originale, sous forme de fichier).
 
@@ -222,7 +222,7 @@ Nous allons maintenant créer un nouveau paragraphe dans lequel nous placerons l
 
 Le résultat sur votre navigateur devrait être le suivant :
 
-![Résultat code HTML sur navigateur](images/create_your_personal_webpage_3.png)
+![Résultat code HTML sur navigateur](images/create_your_personal_webpage_3.png){.thumbnail}
 
 ### Appliquer une mise en forme à votre contenu grâce aux styles CSS
 
@@ -235,7 +235,7 @@ Les feuilles de style permettent de changer l'apparence et le comportement des �
 
 Comme pour les fichiers HTML, les fichiers CSS peuvent être créés avec n'importe quel éditeur de texte. L'extension de ces fichiers doit être en *.css*.
 
-![Placement fichier CSS](images/create_your_personal_webpage_4.png)
+![Placement fichier CSS](images/create_your_personal_webpage_4.png){.thumbnail}
 
 Nous devons maintenant lier ce fichier CSS, que nous avons nommé par convention *style.css*, à notre page HTML. Ce lien se fait en ajoutant une balise `<link>` dans la balise `<head>` dans le fichier index.html :
 
@@ -294,7 +294,7 @@ Vous constaterez que les textes sont maintenant collés aux bords du navigateur.
 
 La propriété padding définit le bord tournant (marge intérieure), c'est à dire l'espace à l'extérieur du bloc qui contient le texte (ou n'importe quel élément). Le schéma suivant illustre la correspondance de ces termes dans ce que l'on appelle le « modèle de boîtes » en CSS :
 
-![Modèle de boîte CSS](images/create_your_personal_webpage_5.png)
+![Modèle de boîte CSS](images/create_your_personal_webpage_5.png){.thumbnail}
 
 ### Améliorer la structure HTML du document
 
