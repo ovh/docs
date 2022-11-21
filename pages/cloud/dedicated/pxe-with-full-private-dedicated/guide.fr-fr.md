@@ -24,11 +24,11 @@ Profiter d'une infrastructure "full private" sans avoir modifié la configuratio
 >
 
 Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.<br>
-Chaque serveur est muni de 2 interfaces réseaux (en réalité 4: fonctionnants en liens aggrégés (par paire) pour la redondance).<br>
-Vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit "public" aussi appelés "front-end" et ceux, au contraire, dit "privés" appelés "back-end".
+Chaque serveur est muni de 2 interfaces réseaux (en réalité 4, fonctionnants en liens aggrégés (par paire) pour la redondance).<br>
+Vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit "public" aussi appelés "front-end" et ceux, au contraire dit "privés", appelés "back-end".
 
-Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode full-private, c'est-à-dire, ne possédant **uniquement** que des réseaux privés.
-Cette solution propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
+Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode full-private, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
+Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
 
 La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
 Mais dans ce cas, le mecanisme de démarrage de la solution se retrouve inopérant, à savoir que lorsque les systèmes sont démarrés, via une méthode **netboot** (Network Boot), ces derniers doivent obligatoirement récupèrer leur configurations via des services réseaux mutualisés présent sur le réseaux OVHcloud.
@@ -38,20 +38,22 @@ Mais dans ce cas, le mecanisme de démarrage de la solution se retrouve inopéra
 definition du Netboot avec la fonctionnabilité PXE:
 
 * Mode de démarrage en PXE (solution de démarrage réseau bas niveau) via l'interface réseau d'une machine cliente active permettant de communiquer avec le serveur DHCP de ce même réseau.
-* Le serveur DHCP peut donc lui adresser les informations nécessaire afin de lui indiquer: le fichier de configuration initiale, et l'endroit où le récupérer.
+* Le serveur DHCP peut donc lui adresser les informations nécessaire afin de lui indiquer, le fichier de configuration initiale, ainsi que l'endroit où le récupérer.
 * le serveur client va chercher à acceder à ce fichier en protocol TFTP, pour ensuite le charger dans sa configuration.
-* Le fichier contient les informations permettant la selection du type d'amorçage d'un systeme pour la machine cliente: disque local, volume réseau, usb, etc...
+* Le fichier contient les informations permettant la selection du type d'amorçage d'un systeme pour la machine cliente:<br>
+  disque local, volume réseau, usb, etc...
 
 
 ### Comment fonctionne le Netboot chez OVHcloud
 Nous avons pré-configurés la méthode de recherche d'amorçage des systèmes avec le Netboot (Network Boot) en priorité.
 
-Cette méthode consiste à lancer une séquence via l'interface réseau qui permet d'utiliser les services **mutualisés** DHCP et TFTP (via le réseau interne OVHcloud), afin de récupérer le fichier de configuration adéquate qui sera utiliser par le système qui tente de démarrer.
+Cette méthode, décrite précedement, consiste donc à lancer une séquence via l'interface réseau qui permet d'utiliser les services **mutualisés** DHCP et TFTP (via le réseau interne OVHcloud), afin de récupérer le fichier de configuration adéquate qui sera utiliser par le système qui tente de démarrer.
 
-Le processus complet aura comme instruction de par ses commandes:
+Le processus complet de récupération aura comme instruction de par ses instructions:
 
 * de vérifier l'origine et la bonne intégrité du fichier à récupéré (via chaine de certification interne)
-* en fonction de type de serveur et du bios utilisé (legacy/UEFI), le script récupéré sera donc en fonction du mode détecté: PXE (legacy) ou iPXE (UEFI).
+* en fonction de type de serveur et du bios utilisé (legacy/UEFI), le script récupéré sera donc en fonction du mode détecté:<br>
+  PXE (pour le legacy) ou iPXE (utilisé avec l'UEFI, qui représente une version plus évoluée de PXE).
 * le mode étant détecté, le script correspondant sera donc éxecuté et permettra l'"amorçage" du systeme d'exploitation présent.
 
 
@@ -73,27 +75,26 @@ Le processus complet aura comme instruction de par ses commandes:
 ### Deployer vos services DHCP, TFTP et PXE
 
 * installation des packages pour les services DHCP/TFTP/PXE.
-* paramétrages des fichiers de configuration pour chaque service.
+* configuration basique pour chaque service.
 * mise en marche.
 
 
 exemple d'infrastructure privée basique (schéma layer 2):
 
-![Schema](images/schema_basic.png){.thumbnail}
+![Schema](images/schema_basic.png)
 
 Exemple:
 
-* réseau privé (ex: 192.168.1.0/28).
 * services hébergés/mutualisés sur *Node 0*.
 * une seule machine cliente *Node 1*.
 
 
 le service DHCP
 
-ci-dessous, un exemple de fichier de configuration pour votre service **DHCP** avec le netboot PXE.
-selon votre distribution, l'arboresence peut être différente (dhcpd.conf):
+ci-dessous, un exemple de fichier de configuration pour votre service **DHCP** avec le netboot PXE.<br>
+Selon votre distribution, l'arboresence peut être différente (dhcpd.conf):
 
-exemple:
+à titre d'exemple:
 ```bash
 
 allow booting;
@@ -126,29 +127,32 @@ allow bootp;
 
 Détails:
 
-* *subnet_mask*: 192.168.1.240
-* *broadcast_address*: 192.168.1.15
-* *dns_servers*: cf chapitre optionnel
-* *default_router*: 192.168.1.1
-* *TFTP_server_address*: 192.168.1.1
-
-* *hostname*: nom machine cliente
-* *ethernet_address*: adresse matérielle (MAC) machine cliente
-* *ip_hostname*: ip machine cliente
+* réseau privé (ex: 192.168.1.0/28).
+* `subnet_mask` : 192.168.1.240
+* `broadcast_address` : 192.168.1.15
+* `dns_servers` : cf chapitre optionnel
+* `default_router` : 192.168.1.1
+* `TFTP_server_address` : 192.168.1.1
+* `hostname` : nom machine cliente
+* `ethernet_address` : adresse matérielle (MAC) machine cliente
+* `ip_hostname` : ip machine cliente
 
 
 le service **TFTP**
 
 Selon votre distribution, il existe plusieurs paquets réalisant la fonction de serveur TFTP.<br>
-Par exemple: `tftp-server`, `tftpd`, `tftpd-hpa` ou encore `atftpd`.
+Par exemple: *tftp-server*, *tftpd*, *tftpd-hpa* ou encore *atftpd*.
 
-L'arborescence d'installation peut être différente selon le package installé.
+> [!info]
+> L'arborescence d'installation peut être différente selon la version du package et de votre système d'exploitation utilisé.
+> 
+
 
 Ce qu'il faut savoir:
 * Ce service utilise le port 69 (UDP), à déclarer dans le firewall, pour permettre/autoriser les futures connections.
-* Il est obligatoire de déclarer un répertoire dit "cible", correspondant au chemin système qui sera utilisé pour les réceptions et les téléchargments des fichiers.
+* Il est obligatoire de déclarer un répertoire "cible", correspondant à une arboresence locale qui sera utilisée pour les réceptions et les téléchargments des fichiers.
 
-exemple de configuration avec tftpd-hpa:
+exemple de configuration avec le logiciel 'tftpd-hpa':
 
 ```bash
 # /etc/default/tftpd-hpa
@@ -162,7 +166,8 @@ RUN_DAEMON="yes"
 
 ```
 
-Nous utiliserons le chemin par défaut de l'application (/var/lib/tftpboot/), et y déposerons le fichier `pxelinux.0` à utliser:
+Nous utiliserons le chemin par défaut de l'application (/var/lib/tftpboot/), et y déposerons le fichier `pxelinux.0` à utliser.
+Le fichier doit simplement contenir la directive suivante:
 
 ```bash
 
