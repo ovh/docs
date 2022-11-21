@@ -1,5 +1,5 @@
 ---
-title: "AI Notebooks - Tutoriel - Utilisez ResNet pour la classification d'images (EN)"
+title: "AI Notebooks - Tutoriel - Utiliser ResNet pour la classification d'images (EN)"
 slug: notebooks/tuto-transfer-learning-resnet
 excerpt: "Comment utiliser a modèle existant pour faire de l'apprentissage par transfert?"
 section: AI Notebooks - Tutoriels

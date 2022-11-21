@@ -1,5 +1,5 @@
 ---
-title: AI Deploy - Tutoriel - Déployez une app Gradio pour de la reconnaissance de schémas (EN)
+title: AI Deploy - Tutoriel - Déployer une app Gradio pour de la reconnaissance de schémas (EN)
 slug: deploy/tuto-gradio-sketch-recognition
 excerpt: Comment construire et utiliser votre propre image Docker contenant une application Gradio
 section: AI Deploy - Tutoriels

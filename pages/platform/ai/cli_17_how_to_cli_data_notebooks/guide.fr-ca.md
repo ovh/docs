@@ -1,5 +1,5 @@
 ---
-title: CLI - Utilisez vos données dans un notebook (EN)
+title: CLI - Utiliser vos données dans un notebook (EN)
 slug: cli/access-object-storage-data
 excerpt: Découvrez comment accéder à vos données depuis votre Object Storage dans votre AI Notebooks
 section: Command Line Interface
