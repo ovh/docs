@@ -42,7 +42,7 @@ Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können I
 
 > [!success]
 >
-> Geben Sie die Domain, die Sie transferieren möchten, auf unserer Seite an [www.ovhcloud.com/de/domains/tld/](https://www.ovhcloud.com/de/domains/tld/) und folgen Sie den Schritten dieser Anleitung.
+> Um die Transferkosten anzuzeigen, geben Sie den Domainnamen, den Sie transferieren möchten, auf unserer Webseite ein: [www.ovhcloud.com/de/domains/tld/](https://www.ovhcloud.com/de/domains/tld/). Folgen Sie dann den Schritten dieser Anleitung.
 >
 
 Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahme mit Ihrem aktuellen Registrar und OVHcloud. Die folgende Tabelle enthält die zu kontaktierenden Stellen sowie die Dauer der verschiedenen Schritte des Transfervorgangs.
