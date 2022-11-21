@@ -1,5 +1,5 @@
 ---
-title: CLI - Principales commandes (EN)
+title: CLI - Commandes principales (EN)
 slug: cli/overview-cli
 excerpt: Découvrez les principales commandes de la CLI pour interagir sur les AI Tools
 section: Command Line Interface

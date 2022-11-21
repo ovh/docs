@@ -1,5 +1,5 @@
 ---
-title: Données - Concept et bonnes pratiques (EN)
+title: Données - Concepts et bonnes pratiques (EN)
 slug: data
 excerpt: Comprendre les bonnes pratiques sur les données avec les AI Tools
 section: Informations générales

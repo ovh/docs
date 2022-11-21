@@ -1,5 +1,5 @@
 ---
-title: AI Training - Tutoriel - Exécutez votre premier code Tensorflow avec des GPU (EN)
+title: AI Training - Tutoriel - Exécuter votre premier code Tensorflow avec des GPU (EN)
 slug: training/tensorflow-gpu-examples
 excerpt: Comment utiliser la librairie Tensorflow avec des GPU
 section: AI Training - Tutoriels

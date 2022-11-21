@@ -1,5 +1,5 @@
 ---
-title: AI Deploy - Tutoriel - Déployez un service web pour YOLOv5 en utilisant Flask (EN)
+title: AI Deploy - Tutoriel - Déployer un service web pour YOLOv5 en utilisant Flask (EN)
 slug: deploy/web-service-yolov5
 excerpt: Coment déployer un service web pour YOLOv5 en utilisant vos propres paramètres de valeurs avec Flask
 section: AI Deploy - Tutoriels

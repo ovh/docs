@@ -1,5 +1,5 @@
 ---
-title: AI Notebooks - Tutoriel - Utilisez Tensorboard dans un notebook (EN)
+title: AI Notebooks - Tutoriel - Utiliser Tensorboard dans un notebook (EN)
 slug: notebooks/tuto-tensorboard-embedded
 excerpt: Comment utiliser Tensorboard dans un AI Notebooks
 section: AI Notebooks - Tutoriels

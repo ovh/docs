@@ -1,5 +1,5 @@
 ---
-title: AI Training - Tutoriel - Comparez des modèles avec W&B pour la classification audio (EN)
+title: AI Training - Tutoriel - Comparer des modèles avec W&B pour la classification audio (EN)
 slug: training/tuto-models-comparaison-weights-and-biases
 excerpt: Comparez 2 modèles en entraînant 2 jobs en parallèle. Voyez lequel est le meilleur avec vos données !
 section: AI Training - Tutoriels

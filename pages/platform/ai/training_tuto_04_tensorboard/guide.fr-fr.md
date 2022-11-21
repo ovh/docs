@@ -1,5 +1,5 @@
 ---
-title: AI Training - Tutoriel - Utilisez le Tensorboard dans un job (EN)
+title: AI Training - Tutoriel - Utiliser le Tensorboard dans un job (EN)
 slug: training/tuto-tensorboard-inside-job
 excerpt: Comment utiliser Tensorboard dans un job AI Training
 section: AI Training - Tutoriels

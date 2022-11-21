@@ -1,5 +1,5 @@
 ---
-title: AI Notebooks - Tutoriel - Entraînez YOLOv5 sur votre jeu de données (EN)
+title: AI Notebooks - Tutoriel - Entraîner YOLOv5 sur votre jeu de données (EN)
 slug: notebooks/yolov5-example
 excerpt: Comment entraîner le modèle YOLOv5 sur un jeu de données personnalisé avec AI Notebooks
 section: AI Notebooks - Tutoriels

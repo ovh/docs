@@ -1,5 +1,5 @@
 ---
-title: CLI - Principales commandes pour les données (EN)
+title: CLI - Commandes principales pour les données (EN)
 slug: cli/data-cli
 excerpt: Découvrez les principales commandes pour gérer vos données sur votre object storage avec la CLI ovhai
 section: Command Line Interface
