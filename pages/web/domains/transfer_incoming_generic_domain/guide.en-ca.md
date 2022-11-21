@@ -6,7 +6,7 @@ section: Transfer
 order: 01
 ---
 
-**Last updated 24 October 2022**
+**Last updated 18th November 2022**
 
 ## Objective
 
