@@ -197,16 +197,8 @@ Le groupe apparait dans la liste utilisateurs de votre cluster VMware, les membr
 > Par défaut, les membre du groupe ne possèdent aucunes permissions sur votre Hosted Private Cloud. Il pourra se connecter à votre Hosted Private Cloud mais n'aura aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
 >
 
+![03 add group 04](images/03-addgroup04.png)
 
-Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
-Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
-
-Une fois autorisés, le groupe et ses permissions seront modifiables directement depuis votre espace client OVHcloud comme n'importe quel utilisateur de votre Hosted Private Cloud.
-
-> [!primary]
->
-> Par défaut, le groupe ne possède aucune permission sur votre Hosted Private Cloud. Ses membres pourront se connecter à votre Hosted Private Cloud mais n'auront aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
->
 
 ## Aller plus loin
 
