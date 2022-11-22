@@ -6,7 +6,7 @@ section: OpenStack
 order: 1
 ---
 
-**Last updated 30th March 2022.**
+**Last updated 30th March 2022**
 
 ## Objective
 
