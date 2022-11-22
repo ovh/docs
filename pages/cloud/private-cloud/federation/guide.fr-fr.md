@@ -143,7 +143,7 @@ Une fenêtre apparait pour afficher l'état d'avancement, attendez d'être à ce
 
 ![01 add directory 03](images/01-add-directory03.png)
 
-Votre serveur Active Directory est relié à votre cluster VMware. Vous pouvez ajouter des utilisateurs et des groupes de votre Active Directory pour vous connecter à votre cluster VMware.
+Votre serveur Active Directory est relié à votre cluster VMware. Vous pouvez ajouter des utilisateurs et des groupes de votre annuaire Active Directory pour vous connecter à votre cluster VMware.
 
 ![01 add directory 04](images/01-add-directory04.png)
 
@@ -180,15 +180,15 @@ Vous avez la possibilité d'autoriser directement un ensemble d'utilisateurs (gr
 
 Cliquez sur `Importer un utilisateur`{.action}.
 
-![03 add group 01](images/01-addgroup01.png)
+![03 add group 01](images/03-addgroup01.png)
 
 Sélectionnez votre annuaire Active Directory, cliquez sur `Importer un groupe`{.action}, saisissez le `nom de votre groupe` et cliquez sur `Suivant`{.action}.
 
-![03 add group 02](images/01-addgroup02.png)
+![03 add group 02](images/03-addgroup02.png)
 
 Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
 
-![03 add group 03](images/01-addgroup03.png)
+![03 add group 03](images/03-addgroup03.png)
 
 Le groupe apparait dans la liste utilisateurs de votre cluster VMware, les membres de ce groupes auront la possibilité de se connecter à votre cluster VMware.
 
