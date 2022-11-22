@@ -1,11 +1,12 @@
 ---
-title: RACI instances Public Cloud
+title: RACI pour les instances Public Cloud
 slug: raci-instances-public-cloud
-section: RACI instances Public Cloud
-excerpt: RACI entre OVHcloud et le client pour l'utilisation des instances Public Cloud
+section: Informations générales
+excerpt: "RACI entre OVHcloud et le client pour l'utilisation des instances Public Cloud"
+order: 5
 ---
 
-**Dernière mise à jour le xx décembre 2022**
+**Dernière mise à jour le 22/11/2022**
 
 ## Objectif
 
