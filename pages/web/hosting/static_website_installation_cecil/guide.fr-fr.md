@@ -188,7 +188,7 @@ menu: main
 ### Conclusion
 
 Cecil est un outil permettant de construire efficacement un site statique à partir de fichier Markdown, langage de balisage plus simple à mettre en œuvre que le HTML L'organisation des fichiers Markdown conditionne la hiérarchie de vos pages web.<br/>
-
+L'utilisation d'un moteur de template très utilisé dans la communauté développeurs web vous permettra de trouver facilement de nombreuses sources sur internet pour concevoir une interface d'apparence professionnelle.
 
 ## Aller plus loin
 
@@ -196,4 +196,4 @@ Cecil est un outil permettant de construire efficacement un site statique à par
 - la [page](https://daringfireball.net/projects/markdown/) du créateur du format Markdown
 - un [guide](https://www.markdownguide.org/) sur ce format
 - notre guide sur l'[utilisation de FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
-- le site officiel de [Twig](https://twig.symfony.com/), le moteur de templates utilisé.
+- le site officiel de [Twig](https://twig.symfony.com/), le moteur de templates utilisé par Cecil.
