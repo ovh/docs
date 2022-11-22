@@ -9,7 +9,7 @@ section: 'Redes & IP'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 31/05/2022**
+**Última atualização: 07/11/2022**
 
 ## Sumário
 
@@ -150,6 +150,8 @@ De seguida, aceda ao menu `Bare Metal Cloud`{.action} e abra na secção `IP`{.a
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 
 No ecrã seguinte, clique no botão `Adicionar uma regra`{.action} para adicionar uma regra ao Armor.
+
+Pode definir até **30 regras para cada IP**.
 
 ![Configura_Armor](images/ConfigureArmor2021.png){.thumbnail}
 

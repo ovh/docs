@@ -6,7 +6,7 @@ section: OpenStack
 order: 1
 ---
 
-**Last updated 30th March 2022.**
+**Last updated 30th March 2022**
 
 ## Objective
 
@@ -172,5 +172,7 @@ nova help
 ```
 
 ## Go further
+
+[Setting OpenStack environment variables](https://docs.ovh.com/au/en/public-cloud/set-openstack-environment-variables/).
 
 Join our community of users on <https://community.ovh.com/en/>.
