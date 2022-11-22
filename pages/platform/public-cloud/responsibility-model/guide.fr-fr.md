@@ -1,22 +1,22 @@
 ---
-title: RACI Instances Public Cloud
+title: RACI instances Public Cloud
 slug: raci-instances-public-cloud
-section: RACI Instances Public Cloud
-excerpt: RACI entre OVHcloud et le client pour l'utilisation des Instances Public Cloud
+section: RACI instances Public Cloud
+excerpt: RACI entre OVHcloud et le client pour l'utilisation des instances Public Cloud
 ---
 
 **Dernière mise à jour le xx décembre 2022**
 
 ## Objectif
 
-Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour les services Instances Public Cloud. Ce modèle peut aider le client à utiliser le service au mieux.
+Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour les instances Public Cloud. Ce modèle peut aider le client à utiliser au mieux le service.
 
 | Rôles |
 | --- |
 |R : Est en charge de la Réalisation du processus|
 |A : Est Approbateur de la réalisation du processus|
 |C : Est Consulté pendant le processus|
-|I : est Informé des résultats  du processus|
+|I : Est Informé des résultats du processus|
 
 ### 1. Avant la souscription
 
@@ -25,8 +25,8 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Choisir la gamme d'instances en fonction des besoins (CPU, RAM, General Purpose ...)  | RA | I |
-| Renseigner les données à caractère personnel nécessaires pour la souscription au Service | RA | I |
-| Choisir la localisation du Service | RA | I |
+| Renseigner les données à caractère personnel nécessaires pour la souscription au service | RA | I |
+| Choisir la localisation du service | RA | I |
 
 ### 2. Mise à disposition du service
 
@@ -34,9 +34,9 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Produire, acheminer, livrer et maintenir les Instances physiques et les bâtiments d’hébergement | I | RA |
-| Installer les briques fonctionnelles internes à l'Instance nécessaires au maintien en conditions opérationnelles et au maintien en conditions de sécurité (firmware, BIOS) | I | RA |
-| Déployer la configuration réseau initiale du Service | I | RA |
+| Produire, acheminer, livrer et maintenir les instances physiques et les bâtiments d’hébergement | I | RA |
+| Installer les briques fonctionnelles internes à l'instance nécessaires au maintien en conditions opérationnelles et au maintien en conditions de sécurité (firmware, BIOS) | I | RA |
+| Déployer la configuration réseau initiale du service | I | RA |
 | Acheter et détenir les licences et droits d’utilisation pour les OS Microsoft proposés au cathalogue d'OVHcloud | CI | RA |
 | Acheter et détenir les licences et droits d'utilisation pour les autres types d'OS utilisés | RA |  |
 
@@ -61,12 +61,12 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer la sécurité logique des données installées sur l'Instance (confidentialité, intégrité, sauvegardes, …) |RA |  | 
-| Assurer l'accessibilité de l'Instance sur le réseau |  | RA |
-| Décider d’ajouter / supprimer une option sur l'Instance | RA | I |
-| Réaliser l’ajout / suppression des options ou du matériel sur l'Instance | I | RA |
+| Gérer la sécurité logique des données installées sur l'instance (confidentialité, intégrité, sauvegardes, …) |RA |  | 
+| Assurer l'accessibilité de l'instance sur le réseau |  | RA |
+| Décider d’ajouter / supprimer une option sur l'instance | RA | I |
+| Réaliser l’ajout / suppression des options ou du matériel sur l'instance | I | RA |
 | Installer les briques de sécurité nécessaires en fonction des besoins | RA |  |
-| Administrer les applicatifs installés sur l'Instance | RA |   |
+| Administrer les applicatifs installés sur l'instance | RA |   |
 | Réaliser les backups | RA |  |
 | Réaliser les backups suite à la demande du Client (en option) | CI | RA |
 
@@ -74,20 +74,20 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer les droits d’accès à l'interface de Gestion (Manager OVHcloud) | RA | I |
+| Gérer les droits d’accès à l'interface de gestion (espace client OVHcloud) | RA | I |
 | Gérer les accès physiques et logiques des équipes OVHcloud aux infrastructures | I | RA |
-| Gérer les accès et la politique de sécurité des utilisateurs du Service | RA |  |
+| Gérer les accès et la politique de sécurité des utilisateurs du service | RA |  |
 
 ##### **3.1.3. Monitoring**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer et monitorer la capacité des serveurs physiques en support des Services Public Cloud |  | RA |
+| Gérer et monitorer la capacité des serveurs physiques en support des services Public Cloud |  | RA |
 | Gérer et monitorer la capacité des services Public Cloud | RA |  |
-| Surveiller le bon fonctionnement des logiciels installés sur les Instances | RA |  |
-| Conserver les logs du control plane qui supervise l'Instance (API, hyperviseur) |  | RA |
+| Surveiller le bon fonctionnement des logiciels installés sur les instances | RA |  |
+| Conserver les logs du control plane qui supervise l'instance (API, hyperviseur) |  | RA |
 | Conserver les logs du système d’information hébergé sur l'instance | RA |  |
-| Monitorer et surveiller le bon fonctionnement des dispositifs physiques (utilités) en support des Instances | I | RA |
+| Monitorer et surveiller le bon fonctionnement des dispositifs physiques (utilités) en support des instances | I | RA |
 | Créer, modifier, contrôler, restaurer, supprimer les jobs de backups | RA |  |
 | Créer les jobs des backups suite à la souscription à l'option Automated backups | AI | R |
 | Réaliser la maintenance des dispositifs de stockage et de sauvegarde fournis |  | RA |
@@ -96,7 +96,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Assurer le chiffrement des données sur l'Espace de Stockage alloué | RA |  |
+| Assurer le chiffrement des données sur l'espace de stockage alloué | RA |  |
 
 ##### **3.1.5. Connectivité**
 
@@ -111,11 +111,11 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-|Fournir l'inventaire des instances consommées | I | RA |
+| Fournir l'inventaire des instances consommées | I | RA |
 | Assurer la sécurité des infrastructures de gestion (API, control plane) |   | RA |
-| Assurer la sécurité des OS, Softwares et Middlewares installés sur les Instances | RA |  |
+| Assurer la sécurité des OS, softwares et middlewares installés sur les instances | RA |  |
 | Gérer la sécurité physique des équipements et infrastructures hébergés | I | RA |
-| Gérer la sécurité des données herbergées sur les Instances | RA |  |
+| Gérer la sécurité des données herbergées sur les instances | RA |  |
 
 ##### **3.1.7. Continuité d'activité**
 | **Activité** | **Client** | **OVHcloud** |
@@ -123,7 +123,6 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Réaliser des tests périodiques de restauration de données | RA |  |
 | Maintenir un plan de continuité d’activité et de reprise d’activité pour le SI hébergé | RA | C |
 | Gérer les systèmes de gestion automatiques de l’infrastructure mise à disposition | I | RA |
-
 
 #### 3.2. Gestion des évènements
 
@@ -133,15 +132,15 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Traiter les incidents matériels et réseau (tickets et contacts téléphoniques) | AI | RA |
 | Traiter les autres incidents | RA |  |
-| Remplacer les éléments matériels défectueux de l'Infrastructure en support des Instances | I | RA |
-| Restaurer les sauvegardes de l'Instance | RA |  |
+| Remplacer les éléments matériels défectueux de l'infrastructure en support des instances | I | RA |
+| Restaurer les sauvegardes de l'instance | RA |  |
 | Restaurer les sauvegardes en cas de souscription à une option gérée par OVHcloud | A | R |
 
 #### **3.2.2. Changements**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Déployer les correctifs, mettre à jour et configurer les OS, softwares, middlewares et systèmes d’information hébergés sur les Instances | RA |  |
+| Déployer les correctifs, mettre à jour et configurer les OS, softwares, middlewares et systèmes d’information hébergés sur les instances | RA |  |
 
 ### 4. Réversion
 
@@ -172,5 +171,5 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Supprimer les données sur les Instances |  | RA |
+| Supprimer les données sur les instances |  | RA |
 | Détruire les supports de stockage arrivés en fin de vie ou sur lesquels le processus de destruction sécurisé génère des erreurs |  | RA |
