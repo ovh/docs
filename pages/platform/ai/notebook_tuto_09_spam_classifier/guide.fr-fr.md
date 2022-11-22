@@ -1,5 +1,5 @@
 ---
-title: AI Notebooks - Tutoriel - Construire votre classificateur de spam
+title: AI Notebooks - Tutoriel - Construire votre classificateur de spam (EN)
 slug: notebooks/tuto-spam-classifier
 excerpt: "Comment construire un classificateur de spam avec du Machine Learning"
 section: AI Notebooks - Tutoriels
@@ -8,13 +8,13 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-spam-classifier/'
 ---
 
-**Last updated 22th November, 2022.**
+**Last updated 22nd November, 2022.**
 
 ## Objective
 
-This tutorial will allow you to build a simple spam classifier with **OVHcloud AI Notebooks**. You will be able to meet the concepts of logistic regression, dimension reduction, stop words, quantiles and much more. A very simple Machine Learning model will be used: the **logistic regression**.
+This tutorial will show you how to build a simple spam classifier with **OVHcloud AI Notebooks**. You will be able to learn the concepts of logistic regression, dimension reduction, stop words, quantiles and much more. A very simple Machine Learning model will be used: the **logistic regression**.
 
-At the end of this tutorial, you will have learned the principal methods to build your own **spam classifier**.
+At the end of this tutorial, you will have learnt the principal methods to build your own **spam classifier**.
 
 ![image](images/spam-classifier.png){.thumbnail}
 
@@ -72,7 +72,7 @@ If you want to launch it with the CLI, choose the `jupyterlab` editor and the `c
 
 To access the different versions of `conda` available, run the following command.
 
-``` {.console}
+```console
 ovhai capabilities framework list -o yaml
 ```
 
@@ -83,7 +83,7 @@ ovhai capabilities framework list -o yaml
 
 Choose the number of CPUs (`<nb-cpus>`) to use in your notebook and use the following command.
 
-``` {.console}
+```console
 ovhai notebook run conda jupyterlab \
 	--name <notebook-name> \
 	--framework-version <conda-version> \
