@@ -67,11 +67,11 @@ Sélectionnez la bande passante désirée et cliquez sur `Suivant`{.action}.
 
 ![03 Change bandwitdh 02](images/03-change-bandwidth02.png){.thumbnail}
 
-Cliquez sur `Payer`{.action}.
+Cliquez sur `Régler`{.action}.
 
 ![03 Change bandwitdh 03](images/03-change-bandwidth03.png){.thumbnail}
 
-Cliquez sur `Voir ma commande`{.action} pour afficher le bon de commande.
+Cliquez sur `Voir le bon de commande`{.action} pour afficher le bon de commande.
 
 ![03 Change bandwitdh 04](images/03-change-bandwidth04.png){.thumbnail}
 
