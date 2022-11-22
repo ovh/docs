@@ -134,17 +134,16 @@ Ensuite cliquez sur `Executer`{.action}.
 
 ![01 add directory 02](images/01-add-directory02.png)
 
-
-Une fenêtre de l'état d'avance d'active directory apparait attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
+Une fenêtre apparait pour afficher l'état d'avancement, attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
 
 > [!primary]
 >
-> La fenêtre d'avancement doit être à cent pour cent pour que l'opération soit validée il est possible que si un paramètre saisie n'est pas correct que l'opération soit annulé dans ce cas relancez une configuration après quelques minutes car certaines opérations d'annulations sont en cours.
+> Si un paramètre n'est pas valide la tâche sera annulée avant d'arriver à 100%, dans ce cas attendez quelques minutes pour que l'annulation soit complête avant de refaire la configuration.
 >
 
 ![01 add directory 03](images/01-add-directory03.png)
 
-Votre serveur Active Directory est relié à votre cluster VMware. Vous pouvez ajouter des utilisateurs et de groupes de votre Active Directory pour vous connecter à votre cluster VMware.
+Votre serveur Active Directory est relié à votre cluster VMware. Vous pouvez ajouter des utilisateurs et des groupes de votre Active Directory pour vous connecter à votre cluster VMware.
 
 ![01 add directory 04](images/01-add-directory04.png)
 
