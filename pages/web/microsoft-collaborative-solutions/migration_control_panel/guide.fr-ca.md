@@ -56,7 +56,7 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/a
 
 > [!primary]
 >
-> Votre compte OVHcloud doit préalablement être contact *administrateur* **et** contact *technique* du service MX plan à migrer **et** du service E-mail Pro ou Exchange vers lequel vous migrez.
+> Votre compte OVHcloud doit préalablement être contact administrateur **et** contact technique du service MX plan à migrer, **ainsi que** du service E-mail Pro ou Exchange vers lequel vous migrez.
 >
 > Pour plus d'information sur les changements de contacts, consultez notre guide pour [gérer les contacts de ses services](../../customer/gestion-des-contacts/).
 >

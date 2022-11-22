@@ -59,7 +59,7 @@ W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?a
 
 > [!primary]
 >
-> Twoje konto OVHcloud musi mieć uprzednio kontakt *administrator* **i** kontakt *techniczny* usługi MX Plan, którą chcesz przenieść **i** z usługi E-mail Pro lub Exchange, do której możesz się przenieść..
+> Twoje konto OVHcloud musi być wcześniej kontaktem administratora **i** kontakt techniczny usługi MX Plan, którą chcesz przenieść, **oraz** usługi E-mail Pro lub Exchange, do której możesz się przenieść.
 >
 > Aby uzyskać więcej informacji na temat zmian kontaktów, zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania kontaktami swoich usług](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
 >

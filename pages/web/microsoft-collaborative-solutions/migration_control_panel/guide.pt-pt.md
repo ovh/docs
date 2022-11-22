@@ -59,7 +59,7 @@ Para isso, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action
 
 > [!primary]
 >
-> A sua conta OVHcloud deve ter previamente contacto *administrador* **e** contacto *técnico* do serviço MX plan a migrar **e** do serviço E-mail Pro ou Exchange para o qual migra.
+> A sua conta OVHcloud deve ter um contacto com o administrador **e** contacto técnico do serviço MX plan a migrar, **bem como** do serviço E-mail Pro ou Exchange para o qual migra.
 >
 > Para mais informações sobre as alterações de contactos, consulte o nosso guia para [gerir os contactos dos seus serviços](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
 >
