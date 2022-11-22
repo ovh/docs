@@ -4,7 +4,7 @@ slug: firewall-network
 section: Network Management
 ---
 
-**Last updated 31st May 2022**
+**Last updated 7th November 2022**
 
 ## Objective
 
@@ -151,6 +151,8 @@ Go to the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click o
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 
 On the following screen, click the `Add a rule`{.action} button to add a rule to Armor.
+
+You can set up to **30 rules per IP**.
 
 ![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
 

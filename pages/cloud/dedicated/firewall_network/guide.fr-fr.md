@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment configurer votre Network Firewall'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 31/05/2022**
+**Dernière mise à jour le 07/11/2022**
 
 ## Objectif
 
@@ -144,6 +144,8 @@ Ensuite, rendez-vous dans le menu `Bare Metal Cloud`{.action} et cliquez sur la 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 
 Sur l’écran suivant, cliquez sur le bouton `Ajouter une règle`{.action} pour ajouter une règle à Armor.
+
+Vous pouvez configurer jusqu'à **30 règles par adresse IP**.
 
 ![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
 

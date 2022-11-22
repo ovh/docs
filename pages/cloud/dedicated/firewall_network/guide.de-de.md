@@ -9,7 +9,7 @@ section: 'Netzwerk & IP'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 31.05.2022**
+**Letzte Aktualisierung am 07.11.2022**
 
 ## Ziel
 
@@ -156,6 +156,8 @@ Gehen Sie anschließend in das Menü `IP`{.action} und klicken Sie auf `...`{.ac
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 
 Klicken Sie auf dem folgenden Bildschirm auf den Button `Regel hinzufügen`{.action}, um Armor hinzuzufügen.
+
+Sie können bis zu **30 Regeln für jede IP-Adresse** festlegen.
 
 ![configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
 
