@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment configurer votre Network Firewall'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 31/05/2022**
+**Dernière mise à jour le 07/11/2022**
 
 ## Objectif
 
