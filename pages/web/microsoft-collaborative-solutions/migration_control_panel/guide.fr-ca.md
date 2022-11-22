@@ -7,7 +7,7 @@ order: 1
 hidden: true
 ---
 
-**Dernière mise à jour le 22/02/2022**
+**Dernière mise à jour le 22/11/2022**
 
 ## Objectif
 
@@ -53,6 +53,13 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/a
 |Poursuivre vers « [Version historique de l'offre MX Plan](#VersionHistoriqueMxplan) »|Poursuivre vers « [Nouvelle version de l'offre MX Plan](#NouvelleVersionMxplan) »|
 
 #### 3.1 Migrer une offre MXPlan historique <a name="VersionHistoriqueMxplan"></a>
+
+> [!primary]
+>
+> Votre compte OVHcloud doit préalablement être contact *administrateur* **et** contact *technique* du service MX plan à migrer **et** du service E-mail Pro ou Exchange vers lequel vous migrez.
+>
+> Pour plus d'information sur les changements de contacts, consultez notre guide pour [gérer les contacts de ses services](../../customer/gestion-des-contacts/).
+>
 
 La migration peut être effectuée depuis deux interfaces :<br>
 

@@ -6,7 +6,7 @@ section: 'Migração de uma conta Exchange'
 order: 1
 ---
 
-**Última atualização: 22/02/2022**
+**Última atualização: 22/11/2022**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -59,9 +59,9 @@ Para isso, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action
 
 > [!primary]
 >
-> A sua conta OVHcloud deve ter um contacto com o administrador e o contacto técnico do serviço E-mail Pro ou Exchange para o qual migra.
+> A sua conta OVHcloud deve ter previamente contacto *administrador* **e** contacto *técnico* do serviço MX plan a migrar **e** do serviço E-mail Pro ou Exchange para o qual migra.
 >
-> Para mais informações sobre as alterações de contactos, consulte o nosso guia para [gerir os contactos dos seus serviços](../../customer/gestao_dos_contactos/).
+> Para mais informações sobre as alterações de contactos, consulte o nosso guia para [gerir os contactos dos seus serviços](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
 >
 
 A migração pode ser efetuada a partir de duas interfaces:<br>

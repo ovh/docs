@@ -7,7 +7,7 @@ order: 1
 hidden: true
 ---
 
-**Last updated 22nd April 2022**
+**Last updated 22nd November 2022**
 
 ## Objective
 
@@ -52,6 +52,13 @@ To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?acti
 |Continue with [Legacy version of the MX Plan solution](#LegacyMxplan)|Continue with [New version of the MX Plan solution](#NewVersionMxplan)|
 
 #### 3.1 Migrating a legacy MXPlan solution <a name="LegacyMxplan"></a>
+
+> [!primary]
+>
+> Your OVHcloud account **must be** the *administrative* contact **and** *technical* contact for the MX plan service to be migrated **and** Email Pro or Exchange service you are migrating to.
+>
+> For more information on editing contacts, please refer to our guide on [managing contacts for your services](https://docs.ovh.com/us/en/customer/managing-contacts/).
+>
 
 You can migrate from two interfaces:<br>
 

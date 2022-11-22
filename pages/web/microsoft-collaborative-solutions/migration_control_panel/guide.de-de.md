@@ -6,7 +6,7 @@ section: Account-Migration
 order: 1
 ---
 
-**Letzte Aktualisierung am 22.04.2022**
+**Letzte Aktualisierung am 22.11.2022**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -61,7 +61,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 > [!primary]
 >
-> Ihr OVHcloud Kunden-Account muss der Administrator- und technische Kontakt für den E-Mail Pro oder Exchange-Dienst sein, auf den Sie migrieren.
+> Ihr OVHcloud Account muss zuvor *Administrator*- **und** *technische* Kontakt für des MX Plan Dienstes zu migrierenden **und** den E-Mail Pro oder Exchange-Dienstes sein, auf den Sie migrieren.
 >
 > Weitere Informationen zu den Änderungen der Kontakte finden Sie in unserer Anleitung zur [Verwaltung der Kontakte Ihrer Dienstleistungen](../../customer/verwaltung-der-kontakte/).
 >
