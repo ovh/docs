@@ -1,8 +1,8 @@
 ---
-title: AI Notebooks - Tutoriel - Construire votre classificateur de spam (EN)
+title: AI Notebooks - Tutorial - Build your spam classifier
 slug: notebooks/tuto-spam-classifier
 excerpt: How to build your Spam classifier thanks to Machine Learning
-section: AI Notebooks - Tutoriels
+section: AI Notebooks - Tutorials
 order: 09
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-spam-classifier/'
@@ -25,17 +25,17 @@ At the end of this tutorial, you will have learnt the principal methods to build
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
 - A user for AI Notebooks
 
 ## Instructions
 
-You can launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) or via the ovhai [CLI](https://docs.ovh.com/fr/publiccloud/ai/cli/getting-started-cli/).
+You can launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) or via the ovhai [CLI](https://docs.ovh.com/es/publiccloud/ai/cli/getting-started-cli/).
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 
-To launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), refer to the following steps.
+To launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), refer to the following steps.
 
 #### Code editor
 
@@ -100,7 +100,7 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 ## Go further
 
-- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](https://docs.ovh.com/fr/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/).
+- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](https://docs.ovh.com/es/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/).
 
 ## Feedback
 
