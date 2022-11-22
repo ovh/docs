@@ -19,7 +19,7 @@ Découvre comment créer la première page d'un site web sur un hébergement Sta
 - Avoir un éditeur de texte (bloc-notes, TextEdit, Notepad++, etc.)
 - Avoir installé un client FTP (tel que [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) pour téléverser (déposer sur l'hébergement) ses fichiers sur son espace dédié.
 
-## Présentation des concepts
+## Avant de commencer
 
 ### De quoi est faite une page web ?
 
