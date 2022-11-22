@@ -6,7 +6,7 @@ section: 'Tutoriels'
 order: 01
 ---
 
-**Dernière mise à jour le 21/11/2022**
+**Dernière mise à jour le 22/11/2022**
 
 ## Objectif
 
@@ -119,7 +119,7 @@ Quant à la balise `<body>`, elle va contenir les autres balises HTML qui vont s
 
 Nous allons maintenant éditer le contenu textuel de votre page, toujours en respectant la structure standard du HTML, pour y ajouter un titre, un sous-titre, des paragraphes et des listes de texte.
 
-##### **Balises `<h1>` jusqu'à `<h6>`**
+- **Les balises `<h1>` jusqu'à `<h6>`**
 
 Les titres s'écrivent entre balises `<h...>`, lesquelles sont hiérarchisées comme sur n'importe quel document : d'abord `<h1>`, puis `<h2>`, etc., la dernière étant la balise `<h6>`. La balise `<h1>` est donc indispensable si vous voulez écrire une balise `<h2>`. Si toutefois vous ne respectez pas cette règle, le navigateur affichera le résultat sans erreur.
 
@@ -132,7 +132,7 @@ Les titres s'écrivent entre balises `<h...>`, lesquelles sont hiérarchisées c
 
 Vous pouvez observer le résultat en ouvrant le fichier HTML via un navigateur Internet (Firefox, Chrome, Safari, etc.) : les deux chaînes de caractères seront affichées avec des tailles différentes.
 
-##### **Balise `<p>`**
+- **La balise `<p>`**
 
 Cette balise est utilisée pour mettre du texte (« p » pour paragraphe). Il est possible d'en positionner plusieurs :
 
@@ -144,7 +144,7 @@ Cette balise est utilisée pour mettre du texte (« p » pour paragraphe). Il es
 </body>
 ```
 
-##### **Les balises `<ul>` et `<li>`**
+- **Les balises `<ul>` et `<li>`**
 
 Vous pouvez, en HTML, utiliser des listes. Nous prendrons l'exemple de listes simples, dites non ordonnées (comme celles disponibles dans un traitement de texte). Pour déclarer une liste, on utilise la balise `<ul>` (*unordered list*). Cette balise va encadrer d'autres éléments, les balises `<li>`, qui contiendront le contenu des vos listes :
 
@@ -388,13 +388,13 @@ Une fois les fichiers totalement transférés sur votre hébergement, vous pouve
 > Notre infrastructure comprend un système de cache permettant à vos pages de s'afficher avec le moins de latence possible. Lorsque vous déployez, il est possible que vous ne visualisiez pas immédiatement les modifications faites sur votre navigateur. Dans ce cas, attendez quelques secondes et n'hésitez pas à rafraîchir le cache de votre navigateur avec la combinaison de touches `Ctrl` + `F5`.
 > 
 
-### Améliorer son site avec un *template*
+### Améliorer son site avec un template
 
 Le CSS et le HTML sont des langages faciles à appréhender pour un résultat rapide. Cependant, ces langages, et particulièrement le CSS, ont considérablement évolué. Si les feuilles de styles en cascade offrent plus de fonctionnalités (animations, dégradés, position des éléments sur la page, etc.), elles sont devenues plus complexes à coder.
 
 Pour gagner du temps sur l'apparence de votre site et vous permettre de vous concentrer sur le contenu, et donc ce qui sera référencé, il est courant d'avoir recours à des *templates* (modèles) pour gagner du temps et avoir un résultat de qualité tant graphiquement que fonctionnellement (design, ergonomie, visibilité sur smartphone et tablette).
 
-#### Qu'est-ce qu'un *template* ? Quelles solutions utiliser ?
+#### Qu'est-ce qu'un template ? Quelles solutions utiliser ?
 
 Un *template* est un modèle ou un exemple que l'on peut réutiliser, en l'adaptant ou non. Le recours aux *templates* permet de gagner du temps sur la conception d'un site en adaptant des éléments déjà conçus, tout en offrant les qualités que l'on peut exiger d'un site « professionnel ». Le mot « thème » peut également être utilisé.
 
