@@ -5,7 +5,7 @@ excerpt: "Découvrez comment utiliser votre serveur Active Directory comme sourc
 section: Fonctionnalités VMware vSphere
 ---
 
-**Dernière mise à jour le 27/10/2022**
+**Dernière mise à jour le 22/11/2022**
 
 ## Objectif
 
@@ -75,25 +75,25 @@ Récupérez l'adresse IP de votre Hosted Private Cloud par la méthode de votre 
 Via cette commande sur le serveur Active Directory ou une machine Windows distante :
 
 ```bash
-nslookup pcc-198-51-100-121.ovh.com
+nslookup fqdn-mypcc
 ```
 
 Ici, il s'agit de la valeur à la fin de la dernière ligne :
 
 ```console
-> Address:  198.51.100.121
+> Address:  XXX.XXX.XXX.XXX
 ```
 
 Il est également possible d'utiliser la commande suivante (depuis une machine Linux/Unix/Mac distante) :
 
 ```bash
-host pcc-198-51-100-121.ovh.com
+host fqdn-my-pcc
 ```
 
 Ici, il s'agit de la valeur à la fin de la ligne :
 
 ```shell
-> pcc-198-51-100-121.ovh.com has address 198.51.100.121
+> fqdn-my-pcc has address XXX.XXX.XXX.XXX
 ```
 
 Utilisez cette adresse IP pour autoriser votre Hosted Private Cloud à accèder à votre serveur LDAPS Active Directory (par défaut sur le port TCP 636).
@@ -104,39 +104,99 @@ Exemple de configuration de rgle de pare-feu entrant :
 
 |Adresse IP distante (source)|Adresse IP locale (destination)|Port distant (source)|Port local (destination)|Protocole|
 |---|---|---|---|---|
-|198.51.100.121|Toutes les adresses|Tous les ports|636|TCP|
+|XXX.XXX.XXX.XXX|Toutes les adresses|Tous les ports|636|TCP|
 
 Adaptez cette configuration à votre entreprise et mettez en place la régle de pare-feu.
 
 ### Ajouter votre serveur Active Directory comme source d'authentification
 
-A partir de votre espace client OVHcloud allez dans 
+A partir de votre espace client OVHcloud allez dans l'administration de votre cluster VMware.
+
+Cliquez sur  l'onglet `Utilisateurs`{.action} et cliquez sur `Ajouter un Active Directory LDAPs`{.action} dans la rubrique **Active Directories (LDAPs)**.
+
+![01 add directory 01](images/01-add-directory01.png)
+
+Saisissez ces informations : 
+
+* **Nom de domaine Active Directory** : Nom de domaine active directory.
+* **Alias de domaine Active Directory**: Nom NETBIOS de votre domaine.
+* **Description (Facultatif)** :  Nom de domaine active directory.
+* **Adresse IP du serveur Active Directory** : Adresse IP publique d'accès à votre serveur LDAPS.
+* **Nom d'hôte du serveur LDAPS Active Directory** : nom FQDN public de votre serveur Active directory.
+* **Port du service LDAPS*** : numéro du port du service LDAPS.
+* **Empreinte du certificat SSL** : Empreinte du cerficat SSL récupéré précedemment.
+* **Identifiant utilisateur Active Directory** : nom d'utilisateur Active directory suivi de @nomdedomaine-activedirectory.
+* **Mot de passe utilisateur Active Directory** : Mot de passe de l'utilisateur Active Directory.
+* **Base DN pour les utilisateurs** : Nom DN (Syntaxe LDAP) du dossier contenant les utilisateurs comme par exemple cn=Users,dc=example,dc=com pour le domaine example.com.
+* **Base DN pour les groupes** : Nom DN (Syntaxe LDAP) du dossier contenant les groupes comme par exemple cn=Users,dc=example,dc=com pour le domaine example.com.
+
+Ensuite cliquez sur `Executer`{.action}.
+
+![01 add directory 02](images/01-add-directory02.png)
 
 
-
-
+Une fenêtre de l'état d'avance d'active directory apparait attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
 
 > [!primary]
 >
-> Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
+> La fenêtre d'avancement doit être à cent pour cent pour que l'opération soit validée il est possible que si un paramètre saisie n'est pas correct que l'opération soit annulé dans ce cas relancez une configuration après quelques minutes car certaines opérations d'annulations sont en cours.
 >
-> ![Opération annulée](images/federation_canceled.png){.thumbnail}
+
+![01 add directory 03](images/01-add-directory03.png)
+
+Votre serveur Active Directory est relié à votre cluster VMware. Vous pouvez ajouter des utilisateurs et de groupes de votre Active Directory pour vous connecter à votre cluster VMware.
+
+![01 add directory 04](images/01-add-directory04.png)
+
 
 ### Autoriser un utilisateur Active Directory à accéder à votre Hosted Private Cloud
 
 Maintenant que votre cluster VMware est connecté à votre annuaire active directory vous pouvez rajouter des utisateurs de cet annuaire pour se connecter sur votre cluster VMware.
 
+Cliquez sur `Importer un utilisateur`{.action}
 
+![02 add user 01](images/02-adduser01.png)
 
+Sélectionnez votre annuaire Active Directory, cliquez sur `Importer un utilisateur`{.action}, saisissez votre nom d'utilisateur au format UPN `username@nomdedomaineactivedirectory` et cliquez sur `Suivant`{.action}.
+
+![02 add user 02](images/02-adduser01.png)
+
+Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
+
+![02 add user 03](images/02-adduser03.png)
+
+Un nouvel utilisateur apparait dans le manager, vous pouvez l'utilisez pour vous connecter à votre cluster VMware. 
 
 > [!primary]
 >
 > Par défaut, l'utilisateur ne possède aucune permission sur votre Hosted Private Cloud. Il pourra se connecter à votre Hosted Private Cloud mais n'aura aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
 >
 
+![02 add user 04](images/02-adduser04.png)
+
+
 ### Autoriser un groupe Active Directory à accéder à votre Hosted Private Cloud
 
 Vous avez la possibilité d'autoriser directement un ensemble d'utilisateurs (groupe) issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud au travers de l'espace client OVHcloud.
+
+Cliquez sur `Importer un utilisateur`{.action}.
+
+![03 add group 01](images/01-addgroup01.png)
+
+Sélectionnez votre annuaire Active Directory, cliquez sur `Importer un groupe`{.action}, saisissez le `nom de votre groupe` et cliquez sur `Suivant`{.action}.
+
+![03 add group 02](images/01-addgroup02.png)
+
+Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
+
+![03 add group 03](images/01-addgroup03.png)
+
+Le groupe apparait dans la liste utilisateurs de votre cluster VMware, les membres de ce groupes auront la possibilité de se connecter à votre cluster VMware.
+
+> [!primary]
+>
+> Par défaut, les membre du groupe ne possèdent aucunes permissions sur votre Hosted Private Cloud. Il pourra se connecter à votre Hosted Private Cloud mais n'aura aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
+>
 
 
 Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
