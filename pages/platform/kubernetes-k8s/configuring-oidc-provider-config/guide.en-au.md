@@ -17,8 +17,8 @@ In this guide you will be able to configure your OIDC provider through the OVHcl
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - An OVHcloud Managed Kubernetes cluster
 
 ## Warning
@@ -30,7 +30,7 @@ In this guide you will be able to configure your OIDC provider through the OVHcl
 
 ### Configure OIDC provider through the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 
@@ -173,7 +173,7 @@ The "OVH provider" needs to be configured with a set of credentials:
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/au/en/api/first-steps-with-ovh-api/) tutorial.
 
 Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
@@ -469,6 +469,6 @@ Destroy complete! Resources: 1 destroyed.
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-au/public-cloud/kubernetes/).
 
 Join our community of users on <https://community.ovh.com/en/>.
