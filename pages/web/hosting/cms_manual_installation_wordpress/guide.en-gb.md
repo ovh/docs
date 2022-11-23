@@ -1,5 +1,5 @@
 ---
-title: 'Installing WordPress manually'
+title: 'Tutorial - Installing WordPress manually'
 excerpt: How to manually install WordPress
 slug: cms_manually_install_wordpress
 section: CMS

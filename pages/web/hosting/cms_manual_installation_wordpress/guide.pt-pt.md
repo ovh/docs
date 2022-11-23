@@ -1,5 +1,5 @@
 ---
-title: 'CMS, como instalar manualmente WordPress'
+title: 'Tutorial - CMS, como instalar manualmente WordPress'
 excerpt: Como instalar manualmente WordPress?
 slug: cms_como_instalar_manualmente_wordpress
 section: CMS
@@ -269,7 +269,7 @@ Insira as informações solicitadas:
 - O seu endereço de e-mail: introduza um endereço de e-mail válido.
 - Privacidade: selecione esta opção para que os motores de busca referenciem o seu WordPress.
 
-Clique em `Installer WordPress`{.action} logo que as informações estiverem corretas.
+Clique em `Instalar WordPress`{.action} logo que as informações estiverem corretas.
 
 #### 3.4 - Finalizar a instalação manual e testar o acesso "Administrador"
 
