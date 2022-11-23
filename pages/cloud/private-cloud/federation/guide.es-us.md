@@ -35,8 +35,8 @@ Preparing configuration setup, you need to retrieve the following information:
 - Active Directory public IP address.
 - Active Directory LDAPS hostname. This is the name used inside the SSL certificate of the LDAPS service, it must resolve to the public IP address of the Active Directory server.
 - LDAPS service port (636 by default)
-- Base DN (Base Distinguished Name) for users. This is the DN from which users will be searched. For example: dc=example,dc=com
-- Base DN (Base Distinguished Name) for groups. This is the DN from which groups will be searched. For example: dc=example,dc=com
+- Base DN (Base Distinguished Name) for users. This is the DN from which users will be searched. For example: cn=Users,dc=example,dc=com
+- Base DN (Base Distinguished Name) for groups. This is the DN from which groups will be searched. For example: cn=Groups,dc=example,dc=com
 - Username and password of a domain user that will be used to connect to the LDAPS server. It must be at least a read-only user on the Active Directory server sections specified on the two "Base DN" fields above. Must be a pre-Windows 2000 username, in the UPN format (user@eample.com).
 
 For more information, you can refer to the [VMware documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.psc.doc/GUID-98B36135-CDC1-435C-8F27-5E0D0187FF7E.html){.external}.

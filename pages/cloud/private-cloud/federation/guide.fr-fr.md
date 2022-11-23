@@ -5,7 +5,7 @@ excerpt: "Découvrez comment utiliser votre serveur Active Directory comme sourc
 section: Fonctionnalités VMware vSphere
 ---
 
-**Dernière mise à jour le 10/02/2022**
+**Dernière mise à jour le 23/11/2022**
 
 ## Objectif
 
@@ -26,20 +26,20 @@ Ce guide a pour objectif d'expliquer les détails de la mise en place d'un serve
 
 La connexion du vCenter au serveur Active Directory est réalisée via le protocole LDAPS fourni par le serveur Active Directory.
 
-Afin de préparer la mise en place de la configuration, vous devez récupèrer les informations suivantes :
+Afin de préparer la mise en place de la configuration, vous devez récupérer les informations suivantes :
 
 - Nom de domaine Active Directory (FQDN).
 - Alias de domaine Active Directory (Nom NetBIOS).
 - Adresse IP publique du serveur Active Directory.
 - Nom d'hôte du serveur LDAPS Active Directory. Nom utilisé dans le certificat SSL du service LDAPS, ce nom doit résoudre sur l'adresse IP publique du serveur Active Directory.
 - Port du service LDAPS (par défaut 636).
-- Base DN (Base Distinguished Name) pour les utilisateurs. Il s'agit du DN à partir duquel seront recherchés les utilisateurs. Par exemple, dc=example,dc=com
-- Base DN (Base Distinguished Name) pour les groupes. Il s'agit du DN à partir duquel seront recherchés les groupes. Par exemple, dc=example,dc=com
+- Base DN (Base Distinguished Name) pour les utilisateurs. Il s'agit du DN à partir duquel seront recherchés les utilisateurs. Par exemple, cn=Users,dc=example,dc=com
+- Base DN (Base Distinguished Name) pour les groupes. Il s'agit du DN à partir duquel seront recherchés les groupes. Par exemple, cn=Groups,dc=example,dc=com
 - Identifiant et mot de passe d'un utilisateur du domaine qui sera utilisé pour la connection au serveur LDAPS. Il doit être au minimum en lecture seule sur la section du serveur Active Directory pour les deux « Base DN » choisis précédemment. Identifiant pre-Windows 2000 sous la forme UPN (user@example.com).
 
-Pour plus d'informations, vous pouvez vous réfèrer à la [documentation VMware à ce sujet](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.psc.doc/GUID-98B36135-CDC1-435C-8F27-5E0D0187FF7E.html){.external}.
+Pour plus d'informations, vous pouvez vous référer à la [documentation VMware à ce sujet](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.authentication.doc/GUID-98B36135-CDC1-435C-8F27-5E0D0187FF7E.html){.external}.
 
-En complément des informations précédentes, vous devez récupèrer l'empreinte du certificat SSL (SHA1 Fingerprint) du serveur LDAPS Active Directory.
+En complément des informations précédentes, vous devez récupérer l'empreinte du certificat SSL (SHA1 Fingerprint) du serveur LDAPS Active Directory.
 
 Vous pouvez récupérer cette information par la méthode de votre choix.
 
@@ -51,20 +51,21 @@ Get-ChildItem -Path Cert:\LocalMachine\MY | Select-Object -property FriendlyName
 
 Ici, il s'agit de la valeur à droite du signe deux-points ( : ) :
 
-```shell
-> Thumbprint : BB:46:CA:6B:FC:92:4E:96:B4:BB:6E:44:7E:8F:AD:4C:C9:32:AB:AB
+```powershell
+> Thumbprint : XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX
+                
 ```
 
 - Vous pouvez aussi utiliser la commande OpenSSL suivante (depuis une machine Linux/Unix/Mac distante) :
 
-```shell
+```powershell
 openssl s_client -connect ad.example.com:636 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 ```
 
 Ici, il s'agit de la valeur à droite du signe égal ( = ) :
 
 ```shell
-> SHA1 Fingerprint=BB:46:CA:6B:FC:92:4E:96:B4:BB:6E:44:7E:8F:AD:4C:C9:32:AB:AB
+> SHA1 Fingerprint=XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:Xx
 ```
 
 ### Autoriser la connexion au serveur Active Directory depuis votre Hosted Private Cloud
@@ -73,132 +74,131 @@ Récupérez l'adresse IP de votre Hosted Private Cloud par la méthode de votre 
 
 Via cette commande sur le serveur Active Directory ou une machine Windows distante :
 
-```shell
-nslookup pcc-198-51-100-121.ovh.com
+```bash
+nslookup fqdn-mypcc
 ```
 
 Ici, il s'agit de la valeur à la fin de la dernière ligne :
 
-```shell
-> Address:  198.51.100.121
+```console
+> Address:  XXX.XXX.XXX.XXX
 ```
 
 Il est également possible d'utiliser la commande suivante (depuis une machine Linux/Unix/Mac distante) :
 
-```shell
-host pcc-198-51-100-121.ovh.com
+```bash
+host fqdn-my-pcc
 ```
 
 Ici, il s'agit de la valeur à la fin de la ligne :
 
 ```shell
-> pcc-198-51-100-121.ovh.com has address 198.51.100.121
+> fqdn-my-pcc has address XXX.XXX.XXX.XXX
 ```
 
-Utilisez cette adresse IP pour autoriser votre Hosted Private Cloud à accèder à votre serveur LDAPS Active Directory (par défaut sur le port TCP 636).
+Utilisez cette adresse IP pour autoriser votre Hosted Private Cloud à accéder à votre serveur LDAPS Active Directory (par défaut sur le port TCP 636).
 
 Cette opération s'effectue dans la configuration du pare-feu de votre Active Directory ou de votre entreprise.
 
-Exemple de configuration de rgle de pare-feu entrant :
+Exemple de configuration de règle de pare-feu entrant :
 
 |Adresse IP distante (source)|Adresse IP locale (destination)|Port distant (source)|Port local (destination)|Protocole|
 |---|---|---|---|---|
-|198.51.100.121|Toutes les adresses|Tous les ports|636|TCP|
+|XXX.XXX.XXX.XXX|Toutes les adresses|Tous les ports|636|TCP|
 
-Adaptez cette configuration à votre entreprise et mettez en place la régle de pare-feu.
+Adaptez cette configuration à votre entreprise et mettez en place la règle de pare-feu.
 
 ### Ajouter votre serveur Active Directory comme source d'authentification
 
-La mise en place d'un serveur Active Directory comme source d'authentification peut être effectuée grâce à l'API OVHcloud.
+A partir de votre espace client OVHcloud allez dans les paramètres OVHcloud de cluster VMware.
 
-Récupérez votre « serviceName » en utilisant l'appel API suivant :
+Positionnez-vous sur l'onglet `Utilisateurs`{.action} et cliquez sur `Ajouter un Active Directory LDAPs`{.action} dans la rubrique **Active Directories (LDAPs)**.
 
-> [!api]
->
-> @api {GET} /dedicatedCloud
->
+![01 add directory 01](images/01-add-directory01.png)
 
-Effectuez ensuite la mise en place du serveur Active Directory comme source d'authentification.
+Saisissez ces informations : 
 
-Vous devrez spécifier les informations récupérées précédemment. Ne cochez pas la case « noSsl ».
+* **Nom de domaine Active Directory** : Nom de domaine active directory.
+* **Alias de domaine Active Directory**: Nom NetBIOS de votre domaine.
+* **Description (Facultatif)** :  Nom de domaine active directory.
+* **Adresse IP du serveur Active Directory** : Adresse IP publique d'accès à votre serveur LDAPS.
+* **Nom d'hôte du serveur LDAPS Active Directory** : Nom FQDN public de votre serveur Active directory.
+* **Port du service LDAPS*** : Numéro du port du service LDAPS.
+* **Empreinte du certificat SSL** : Empreinte du certificat SSL récupéré précédemment.
+* **Identifiant utilisateur Active Directory** : Nom d'utilisateur Active directory suivi de @nomdedomaine-activedirectory.
+* **Mot de passe utilisateur Active Directory** : Mot de passe de l'utilisateur Active Directory.
+* **Base DN pour les utilisateurs** : Nom DN (Syntaxe LDAP) du dossier contenant les utilisateurs comme par exemple cn=Users,dc=example,dc=com pour le domaine example.com.
+* **Base DN pour les groupes** : Nom DN (Syntaxe LDAP) du dossier contenant les groupes comme par exemple cn=Users,dc=example,dc=com pour le domaine example.com.
 
-> [!api]
->
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory
->
+Ensuite cliquez sur `Executer`{.action}.
 
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/federation_create.png){.thumbnail}
+![01 add directory 02](images/01-add-directory02.png)
 
-Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.
+Une fenêtre apparait pour afficher l'état d'avancement, attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
 
 > [!primary]
 >
-> Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
+> Si un paramètre n'est pas valide la tâche sera annulée avant d'arriver à 100%, dans ce cas attendez quelques minutes pour que l'annulation soit complète avant de relancer la configuration.
 >
-> ![Opération annulée](images/federation_canceled.png){.thumbnail}
+
+![01 add directory 03](images/01-add-directory03.png)
+
+Votre domaine Active Directory est relié à votre cluster VMware. Vous pouvez maintenant ajouter des utilisateurs et des groupes de votre annuaire Active Directory pour vous connecter à votre cluster VMware.
+
+![01 add directory 04](images/01-add-directory04.png)
+
 
 ### Autoriser un utilisateur Active Directory à accéder à votre Hosted Private Cloud
 
-Vous avez la possibilité d'autoriser un utilisateur issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud, grâce à l'API OVHcloud.
+Maintenant que votre cluster VMware est connecté à votre annuaire active directory vous pouvez rajouter des utilisateurs de cet annuaire pour se connecter sur votre cluster VMware.
 
-Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
+Cliquez sur `Importer un utilisateur`{.action}
 
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
->
+![02 add user 01](images/02-adduser01.png)
 
-Effectuez l'ajout de l'utilisateur issu de votre Active Directory.
+Sélectionnez votre annuaire Active Directory, cliquez sur `Importer un utilisateur`{.action}, saisissez votre nom d'utilisateur au format UPN `username@nomdedomaineactivedirectory` et cliquez sur `Suivant`{.action}.
 
-Vous devrez spécifier le nom d'utilisateur « pre-Windows 2000 » tel qu'indiqué dans votre Active Directory.
+![02 add user 02](images/02-adduser01.png)
 
-> [!api]
->
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser
+Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
 
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser](images/federation_grant_user.png){.thumbnail}
+![02 add user 03](images/02-adduser03.png)
 
-Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
-Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
-
-Une fois autorisé, l'utilisateur et ses permissions seront modifiables directement depuis votre espace client OVHcloud comme n'importe quel utilisateur de votre Hosted Private Cloud.
+Un nouvel utilisateur apparait dans le manager, vous pouvez l'utilisez pour vous connecter à votre cluster VMware. 
 
 > [!primary]
 >
 > Par défaut, l'utilisateur ne possède aucune permission sur votre Hosted Private Cloud. Il pourra se connecter à votre Hosted Private Cloud mais n'aura aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
 >
 
+![02 add user 04](images/02-adduser04.png)
+
+
 ### Autoriser un groupe Active Directory à accéder à votre Hosted Private Cloud
 
-Vous avez la possibilité d'autoriser directement un ensemble d'utilisateurs (groupe) issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud, grâce à l'API OVHcloud.
+Vous avez la possibilité d'autoriser directement un groupe d'utilisateurs issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud au travers de l'espace client OVHcloud.
 
-Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
+Cliquez sur `Importer un utilisateur`{.action}.
 
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
->
+![03 add group 01](images/03-addgroup01.png)
 
-Effectuez l'ajout du groupe issu de votre Active Directory.
+Sélectionnez votre annuaire Active Directory, cliquez sur `Importer un groupe`{.action}, saisissez le `nom de votre groupe` et cliquez sur `Suivant`{.action}.
 
-Vous devrez spécifier le nom du groupe « pre-Windows 2000 » tel qu'indiqué dans votre Active Directory.
+![03 add group 02](images/03-addgroup02.png)
 
-> [!api]
->
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup
+Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
 
+![03 add group 03](images/03-addgroup03.png)
 
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/federation_grant_group.png){.thumbnail}
-
-Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
-Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
-
-Une fois autorisés, le groupe et ses permissions seront modifiables directement depuis votre espace client OVHcloud comme n'importe quel utilisateur de votre Hosted Private Cloud.
+Le groupe apparait dans la liste utilisateurs de votre cluster VMware, les membres de ce groupe auront la possibilité de se connecter à votre cluster VMware.
 
 > [!primary]
 >
-> Par défaut, le groupe ne possède aucune permission sur votre Hosted Private Cloud. Ses membres pourront se connecter à votre Hosted Private Cloud mais n'auront aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
+> Par défaut, les membre du groupe ne possèdent aucunes permissions sur votre Hosted Private Cloud. Il pourra se connecter à votre Hosted Private Cloud mais n'aura aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
 >
+
+![03 add group 04](images/03-addgroup04.png)
+
 
 ## Aller plus loin
 
