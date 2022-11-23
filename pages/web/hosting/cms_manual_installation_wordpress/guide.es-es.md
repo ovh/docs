@@ -42,7 +42,8 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 Para instalar el CMS **WordPress** en su plan [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/), es necesario realizar algunos preparativos.
 
-##### 1.1 - Comprobar la declaración de la "carpeta raíz"
+#### 1.1 - Comprobar la declaración de la "carpeta raíz"
+
 
 La carpeta raíz corresponde al directorio en el que se instalará el futuro CMS en el alojamiento. Le recomendamos que elija un directorio vacío para evitar conflictos con otros posibles multisitios.
 
