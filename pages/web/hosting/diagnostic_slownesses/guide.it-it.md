@@ -126,7 +126,7 @@ Prova il tuo sito Web da un altro dispositivo/computer e poi da un altro punto d
 
 #### 1.3 - Prova l'hosting con un file indipendente dal tuo sito Web
 
-Nella root del tuo sito Web accedi allo[spazio di storage FTP del tuo hosting condiviso](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/), un file che potrai chiamare `phpinfo.php`.
+Nella root del tuo sito Web accedi allo [spazio di storage FTP del tuo hosting condiviso](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/), un file che potrai chiamare `phpinfo.php`.
 
 Inserisci questo codice nel file:
 
