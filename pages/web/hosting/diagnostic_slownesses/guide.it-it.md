@@ -39,7 +39,7 @@ In rari casi, la visualizzazione lenta può anche provenire dal tuo provider Int
 >
 > In caso di necessità di un servizio con un tasso di disponibilità SLA superiore al 99%, ti consigliamo di considerare l'utilizzo di un [Server Privato Virtuale (VPS)](https://www.ovhcloud.com/it/vps/) o di un [Server Dedicato](https://www.ovhcloud.com/it/bare-metal/).
 >
-> Inoltre, le prestazioni dell'infrastruttura di hosting condivisi OVHcloud sono monitorate 24 ore su 24 e 7 giorni su 7, al fine di garantirti un alto tasso di disponibilità e, in caso di comprovata necessità, un rapido ripristino dei tuoi servizi.*
+> Inoltre, le prestazioni dell'infrastruttura di hosting condivisi OVHcloud sono monitorate 24 ore su 24 e 7 giorni su 7, al fine di garantirti un alto tasso di disponibilità e, in caso di comprovata necessità, un rapido ripristino dei tuoi servizi.
 >
 
 ## Prerequisiti

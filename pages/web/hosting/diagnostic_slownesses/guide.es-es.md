@@ -44,7 +44,7 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 
 ## Requisitos
 
-- Tener un sitio web alojado en uno de nuestros planes de hosting de OVHcloud (https://www.ovhcloud.com/es-es/web-hosting/)
+- Tener un sitio web alojado en uno de nuestros [planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/)
 - Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
 ## Procedimiento

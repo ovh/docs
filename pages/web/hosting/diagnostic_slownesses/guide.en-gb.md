@@ -40,7 +40,7 @@ In rare cases, the slow display may also be caused by your Internet service prov
 
 ## Requirements
 
-- Have a website hosted on one of our [OVHcloud shared hosting] offers(https://www.ovhcloud.com/en-gb/web-hosting/)
+- Have a website hosted on one of our [OVHcloud shared hosting](https://www.ovhcloud.com/en-gb/web-hosting/) offers
 - Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
