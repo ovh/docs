@@ -79,7 +79,7 @@ You can find the free download link and a tutorial on how to use it in our docum
 
 #### 1.4 - Prepare a database <a name="step1-4"></a>
 
-CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/asia/web-hosting/) solutions include them, with the exception of [the free Start 10M hosting plan](https://www.ovhcloud.com/asia/domains/free-web-hosting/).
+CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/asia/web-hosting/) solutions include them.
 
 Use our documentation to [create a database from your web hosting plan](https://docs.ovh.com/asia/en/hosting/creating-database/).
 
