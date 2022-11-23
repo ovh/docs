@@ -105,7 +105,7 @@ Aby dowiedzieć się, gdzie znajduje się Twój hosting, zaloguj się do [Panelu
 
 ![Pobierz Filer](images/DropFilerCluster1.png){.thumbnail}
 
-Następnie kliknij zakładkę `MultiSite{.action}, aby pobrać numer klastra, na którym znajduje się Twój hosting.
+Następnie kliknij zakładkę `MultiSite`{.action}, aby pobrać numer klastra, na którym znajduje się Twój hosting.
 
 ![Pobranie klastra](images/DropFilerCluster2.png){.thumbnail}
 
