@@ -131,7 +131,7 @@ The token needs to appears in the description field (see above) of the whois obj
 
 ### You have to allow OVHcloud to announce the IP range <a name="announceip"></a>
 
-On the RIR where the IP range is registered, you will need to create a **route** object for it (matching exactly the IP range), with the OVHcloud **AS number** ("AS16276") or your own AS number in the **origin** field of the route object.
+On the RIR where the IP range is registered, you will need to create a **route object** for it (matching exactly the IP range), with the OVHcloud **AS number** ("AS16276") or your own AS number in the **origin** field of the route object.
 
 For more information on route objects, please refer to your RIR’s documentation page :
 
