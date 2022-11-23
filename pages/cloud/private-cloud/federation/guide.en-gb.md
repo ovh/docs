@@ -52,7 +52,7 @@ Get-ChildItem -Path Cert:\LocalMachine\MY | Select-Object -property FriendlyName
 Here, it is the value on the right side of the colon sign:
 
 ```shell
-> Thumbprint : BB:46:CA:6B:FC:92:4E:96:B4:BB:6E:44:7E:8F:AD:4C:C9:32:AB:AB
+> Thumbprint : XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX
 ```
 
 - You can also use the following OpenSSL command (from a distant Linux/Unix/Mac machine):
@@ -74,25 +74,25 @@ Retrieve your Hosted Private Cloud IP address with the method of your choice.
 You can use this command on the Active Directory server or any remote Windows machine:
 
 ```shell
-nslookup pcc-198-51-100-121.ovh.com
+nslookup fqdn-mypcc
 ```
 
 Here, it is the value at the end of the last line:
 
 ```shell
-> Address:  198.51.100.121
+> Address:  XXX.XXX.XXX.XXX
 ```
 
 You can alternatively use the following command (from a remote Linux/Unix/Mac machine):
 
 ```shell
-host pcc-198-51-100-121.ovh.com
+host fqdn-my-pcc
 ```
 
 Here, it is the value at the end of the line:
 
 ```shell
-> pcc-198-51-100-121.ovh.com has address 198.51.100.121
+> fqdn-my-pcc has address XXX.XXX.XXX.XXX
 ```
 
 Use the retrieved IP address to allow your Hosted Private Cloud to access the Active Directory LDAPS server (by default on TCP port 636).
@@ -103,7 +103,7 @@ Here is a firewall rule configuration example:
 
 |Remote IP address (source)|Local IP address (destination)|Remote port (source)|Local port (destination)|Protocol|
 |---|---|---|---|---|
-|198.51.100.121|All addresses|All ports|636|TCP|
+|XXX.XXX.XXX.XXX|All addresses|All ports|636|TCP|
 
 Adapt this configuration to your company and apply that rule on your firewall.
 
