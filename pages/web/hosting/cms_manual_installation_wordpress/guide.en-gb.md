@@ -74,9 +74,9 @@ If you are unable to perform these checks, contact the hosting provider for your
 - Get [the information you need to log in to your Web Hosting plan’s FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information).
 - Retrieve access to your Web Hosting plan’s database if it already exists, or create one using our [documentation](https://docs.ovh.com/gb/en/hosting/creating-database/).
 
-#### 1.3 - Install the free FTP client "Filezilla"
+#### 1.3 - Install the free FTP client "FileZilla"
 
-You can find the free download link and a tutorial on how to use it in our documentation on [using Filezilla with your OVHcloud hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/).
+You can find the free download link and a tutorial on how to use it in our documentation on [using FileZilla with your OVHcloud hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/).
 
 #### 1.4 - Prepare a database <a name="step1-4"></a>
 
@@ -132,7 +132,7 @@ Enter the destination **WordPress** folder to extract your files to that folder.
 
 #### 2.3 - Move the source files from the "WordPress" folder to the "root folder" on your web hosting plan
 
-Once you have unpacked the files in your **WordPress** folder, [log in to your storage space via FTP](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) using [FTP Filezilla client](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/) then copy the files in the **WordPress** folder to the "root folder" you defined on your hosting in [step 1](#step1) of this guide.
+Once you have unpacked the files in your **WordPress** folder, [log in to your storage space via FTP](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) using [FTP FileZilla client](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/) then copy the files in the **WordPress** folder to the "root folder" you defined on your hosting in [step 1](#step1) of this guide.
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -143,7 +143,7 @@ Once you have unpacked the files in your **WordPress** folder, [log in to your s
 
 >[!primary]
 >
-> If the root folder you defined was not created automatically during the actions described in [step 1](#step1), you can create it via Filezilla.
+> If the root folder you defined was not created automatically during the actions described in [step 1](#step1), you can create it via FileZilla.
 >
 > It may take a few minutes to upload files to your web hosting plan.
 >

@@ -77,11 +77,11 @@ Se não conseguir realizar estas verificações, contacte o alojador da sua zona
 - Obtenha [as informações necessárias para se ligar ao espaço FTP do seu alojamento web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/#1-recuperar-as-informacoes-de-acesso).
 - Obtenha os acessos à base de dados do alojamento web, caso já exista, ou crie um através da nossa [documentação](https://docs.ovh.com/pt/hosting/criar-base-de-dados/).
 
-#### 1.3 - Instalar o cliente FTP gratuito "Filezilla"
+#### 1.3 - Instalar o cliente FTP gratuito "FileZilla"
 
-Encontre o link de download gratuito, assim como um tutorial sobre a sua utilização na nossa documentação sobre a[utilização do Filezilla com o seu plano de alojamento OVHcloud](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/).
+Encontre o link de download gratuito, assim como um tutorial sobre a sua utilização na nossa documentação sobre a[utilização do FileZilla com o seu plano de alojamento OVHcloud](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/).
 
-##### 1.4 - Preparar uma base de dados <a name="step1-4"></a>
+#### 1.4 - Preparar uma base de dados <a name="step1-4"></a>
 
 Os CMS precisam de uma base de dados para funcionarem. As nossas ofertas de[alojamento web](https://www.ovhcloud.com/pt/web-hosting/) contêm, com exceção de [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/).
 
@@ -105,7 +105,7 @@ Depois de criar a base de dados, recupere os parâmetros de ligação (servidor,
 
 ### Etapa 2 - iniciar a instalação manual
 
-##### 2.1 - Recuperar os ficheiros fonte de WordPress
+#### 2.1 - Recuperar os ficheiros fonte de WordPress
 
 Aceda ao site do editor [WordPress](https://wordpress.org/download/#download-install){.external} para descarregar os ficheiros de origem do CMS.
 
@@ -136,7 +136,7 @@ Indique a pasta "**WordPress**" em destino para extrair os seus ficheiros desta 
 
 #### 2.3 - Migrar os ficheiros de origem do processo "WordPress" para a pasta raiz do seu alojamento web
 
-Depois de descomprimir os ficheiros na pasta "**WordPress**", [ligue-se ao espaço de armazenamento através de FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) com o auxílio do [cliente FTP Filezilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/), e depois copie os ficheiros na pasta "**WordPress**" para a pasta raiz que definiu no seu alojamento durante a[etapa 1](#step1) deste guia.
+Depois de descomprimir os ficheiros na pasta "**WordPress**", [ligue-se ao espaço de armazenamento através de FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) com o auxílio do [cliente FTP FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/), e depois copie os ficheiros na pasta "**WordPress**" para a pasta raiz que definiu no seu alojamento durante a[etapa 1](#step1) deste guia.
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -147,7 +147,7 @@ Depois de descomprimir os ficheiros na pasta "**WordPress**", [ligue-se ao espa�
 
 >[!primary]
 >
-> Se a pasta raiz que definiu não tiver sido criada automaticamente durante as ações descritas na[etapa 1](#step1), pode criá-la através do Filezilla.
+> Se a pasta raiz que definiu não tiver sido criada automaticamente durante as ações descritas na[etapa 1](#step1), pode criá-la através do FileZilla.
 >
 > O depósito dos ficheiros no seu alojamento pode levar alguns minutos.
 >
@@ -203,7 +203,7 @@ rm -f latest.tar.gz
 > Antes de continuar a instalação, esvazie a cache do seu browser para evitar qualquer erro.
 >
 
-##### 3.1 - Aceder ao seu site WordPress através do seu browser
+#### 3.1 - Aceder ao seu site WordPress através do seu browser
 
 Introduza o seu domínio na barra de pesquisa do seu browser.
 
@@ -213,7 +213,7 @@ Se os ficheiros de origem do WordPress foram corretamente colocados na sua pasta
 
 Selecione a língua do website e clique em `Continuer`{.action}.
 
-##### 3.2 - Associar o seu WordPress e a sua base de dados
+#### 3.2 - Associar o seu WordPress e a sua base de dados
 
 O WordPress vai pedir-lhe que obtenha os dados de acesso à sua base de dados:
 

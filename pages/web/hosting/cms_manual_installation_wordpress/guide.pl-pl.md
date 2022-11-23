@@ -77,9 +77,9 @@ Jeśli nie możesz przeprowadzić tych weryfikacji, skontaktuj się z aktualnym 
 - Pobierz [informacje potrzebne do zalogowania się do przestrzeni FTP Twojego hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/#etap-1-pobranie-informacji-niezbednych-do-logowania).
 - Zdobądź dostęp do bazy danych Twojego hostingu, jeśli już istnieje, lub utwórz ją zgodnie z naszym [dokumentacją](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/).
 
-#### 1.3 - Zainstaluj darmowy program FTP "Filezilla"
+#### 1.3 - Zainstaluj darmowy program FTP "FileZilla"
 
-W dokumentacji OVH dotyczącej korzystania z usługi znajdziesz link do pobrania za darmo oraz tutorial dotyczący korzystania z tego linku.[korzystanie z Filezilla wraz z hostingiem OVHcloud](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
+W dokumentacji OVH dotyczącej korzystania z usługi znajdziesz link do pobrania za darmo oraz tutorial dotyczący korzystania z tego linku.[korzystanie z FileZilla wraz z hostingiem OVHcloud](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
 
 #### 1.4 - Przygotowanie bazy danych <a name="step1-4"></a>
 
@@ -135,7 +135,7 @@ Wpisz folder "**WordPress**" docelowo, aby pobrać pliki z tego folderu.
 
 #### 2.3 - Przenieś pliki źródłowe z katalogu "WordPress" do "katalogu głównego" na Twój hosting
 
-Po rozpakowaniu plików w Twoim katalogu "**WordPress**", [zaloguj się przez FTP do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) przy użyciu [klienta FTP Filezilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/), a następnie skopiuj pliki zawarte w katalogu "**WordPress**" do "katalogu głównego", który zdefiniowałeś na Twoim hostingu w trakcie [etap 1](#step1) niniejszego przewodnika.
+Po rozpakowaniu plików w Twoim katalogu "**WordPress**", [zaloguj się przez FTP do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) przy użyciu [klienta FTP FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/), a następnie skopiuj pliki zawarte w katalogu "**WordPress**" do "katalogu głównego", który zdefiniowałeś na Twoim hostingu w trakcie [etap 1](#step1) niniejszego przewodnika.
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -146,7 +146,7 @@ Po rozpakowaniu plików w Twoim katalogu "**WordPress**", [zaloguj się przez FT
 
 >[!primary]
 >
-> Jeśli "katalog główny", który zdefiniowałeś nie został utworzony automatycznie podczas operacji opisanych w [etap 1](#step1), możesz go utworzyć za pomocą Filezilla.
+> Jeśli "katalog główny", który zdefiniowałeś nie został utworzony automatycznie podczas operacji opisanych w [etap 1](#step1), możesz go utworzyć za pomocą FileZilla.
 >
 > Przechowywanie plików na hostingu może zająć kilka minut.
 >

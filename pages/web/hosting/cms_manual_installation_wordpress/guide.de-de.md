@@ -73,9 +73,9 @@ Sollten Sie diese Überprüfungen nicht durchführen können, kontaktieren Sie d
 - Rufen Sie [die für die Verbindung mit dem FTP-Bereich Ihres Webhostings notwendigen Informationen](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/#schritt-1-erforderliche-verbindungsinformationen-abrufen) ab.
 - Rufen Sie die Datenbank Ihres Webhosting Angebots ab, wenn es bereits existiert, oder erstellen Sie eine Datenbank mit unserer [Dokumentation](https://docs.ovh.com/de/hosting/datenbank-erstellen/).
 
-#### 1.3 - Den kostenlosen FTP Client "Filezilla" installieren
+#### 1.3 - Den kostenlosen FTP Client "FileZilla" installieren
 
-Der kostenlose Download-Link sowie eine Anleitung zur Nutzung finden Sie in unserer Anleitung zur [Nutzung von Filezilla mit Ihrem OVHcloud Hosting-Angebot](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/).
+Der kostenlose Download-Link sowie eine Anleitung zur Nutzung finden Sie in unserer Anleitung zur [Nutzung von FileZilla mit Ihrem OVHcloud Hosting-Angebot](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/).
 
 #### 1.4 - Eine Datenbank <a name="step1-4"></a> erstellen
 
@@ -131,7 +131,7 @@ Geben Sie den Ordner "**WordPress**" an den Bestimmungsort ein, um Ihre Dateien 
 
 #### 2.3 - Die Quelldateien des Ordners "WordPress" auf das "Wurzelverzeichnis" auf Ihrem Webhosting verschieben
 
-Sobald die Dateien in Ihrem Ordner "**WordPress**" dekomprimiert wurden, [Via FTP mit Ihrem Speicherplatz verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) mithilfe des [FTP-Filezilla-Clients](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/) und kopieren Sie die Dateien in dem Ordner "**WordPress**" in das "Wurzelverzeichnis" von [Schritt 1](#step1) dieser Anleitung.
+Sobald die Dateien in Ihrem Ordner "**WordPress**" dekomprimiert wurden, [Via FTP mit Ihrem Speicherplatz verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) mithilfe des [FTP-FileZilla-Clients](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/) und kopieren Sie die Dateien in dem Ordner "**WordPress**" in das "Wurzelverzeichnis" von [Schritt 1](#step1) dieser Anleitung.
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -142,7 +142,7 @@ Sobald die Dateien in Ihrem Ordner "**WordPress**" dekomprimiert wurden, [Via FT
 
 >[!primary]
 >
-> Wenn das von Ihnen definierte "Wurzelverzeichnis" nicht automatisch bei den in [Schritt 1](#step1) beschriebenen Aktionen erstellt wurde , können Sie es über Filezilla erstellen.
+> Wenn das von Ihnen definierte "Wurzelverzeichnis" nicht automatisch bei den in [Schritt 1](#step1) beschriebenen Aktionen erstellt wurde , können Sie es über FileZilla erstellen.
 >
 > Es kann einige Minuten dauern, bis die Dateien auf Ihrem Hosting gespeichert sind.
 >

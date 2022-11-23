@@ -42,7 +42,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 Para instalar el CMS **WordPress** en su plan [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/), es necesario realizar algunos preparativos.
 
-##### 1.1 - Comprobar la declaración de la "carpeta raíz"
+#### 1.1 - Comprobar la declaración de la "carpeta raíz"
 
 La carpeta raíz corresponde al directorio en el que se instalará el futuro CMS en el alojamiento. Le recomendamos que elija un directorio vacío para evitar conflictos con otros posibles multisitios.
 
@@ -77,9 +77,9 @@ Si no puede realizar estas comprobaciones, póngase en contacto con el proveedor
 - Obtenga [la información necesaria para conectarse al espacio FTP de su alojamiento web](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/#1-obtener-los-datos-de-conexion).
 - Consulte los accesos a la base de datos de su plan de hosting, si ya existe, o cree una con ayuda de [documentación](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/).
 
-#### 1.3 - Instalar el cliente FTP gratuito "Filezilla"
+#### 1.3 - Instalar el cliente FTP gratuito "FileZilla"
 
-Para más información, consulte la página de descarga gratuita y el tutorial sobre su uso en nuestra documentación sobre el [uso de Filezilla en el alojamiento de OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/).
+Para más información, consulte la página de descarga gratuita y el tutorial sobre su uso en nuestra documentación sobre el [uso de FileZilla en el alojamiento de OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/).
 
 #### 1.4 - Preparar una base de datos <a name="step1-4"></a>
 
@@ -131,7 +131,7 @@ Indique la carpeta "**WordPress**" en la que quiera descargar los archivos desde
 
 #### 2.3 - Mover los archivos fuente del directorio "WordPress" al "directorio raíz" de su alojamiento web
 
-Una vez descomprimidos los archivos en su carpeta "**WordPress**", [conéctese por FTP al espacio de almacenamiento](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) utilizando el [cliente FTP Filezilla](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/) y, a continuación, copie los archivos contenidos en la carpeta "**WordPress**" en la "carpeta raíz" que haya establecido en su alojamiento durante el [etapa 1](#step1) de esta guía.
+Una vez descomprimidos los archivos en su carpeta "**WordPress**", [conéctese por FTP al espacio de almacenamiento](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) utilizando el [cliente FTP FileZilla](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/) y, a continuación, copie los archivos contenidos en la carpeta "**WordPress**" en la "carpeta raíz" que haya establecido en su alojamiento durante el [etapa 1](#step1) de esta guía.
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -142,7 +142,7 @@ Una vez descomprimidos los archivos en su carpeta "**WordPress**", [conéctese p
 
 >[!primary]
 >
-Si el directorio raíz que ha definido no se ha creado automáticamente en las acciones descritas en el [etapa 1](#step1), puede crearlo a través de Filezilla.
+Si el directorio raíz que ha definido no se ha creado automáticamente en las acciones descritas en el [etapa 1](#step1), puede crearlo a través de FileZilla.
 >
 > El almacenamiento de los archivos en el alojamiento puede tardar unos minutos.
 >

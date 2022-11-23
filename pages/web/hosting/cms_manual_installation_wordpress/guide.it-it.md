@@ -77,9 +77,9 @@ Se non riesci a effettuare queste verifiche, contatta il provider della tua zona
 - Recupera [le informazioni necessarie per accedere allo spazio FTP del tuo hosting web](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/#step-1-recupera-i-dati-necessari-a-effettuare-laccesso).
 - Recupera gli accessi al database della tua offerta di hosting Web se esiste già, o creane una utilizzando la nostra [guida](https://docs.ovh.com/it/hosting/creare-database/).
 
-#### 1.3 - Installare il client FTP gratuito "Filezilla"
+#### 1.3 - Installare il client FTP gratuito "FileZilla"
 
-Per maggiori informazioni, consulta la guida scaricare gratuitamente il link di download e consulta la nostra guida su [utilizzare Filezilla con la tua soluzione di hosting OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/).
+Per maggiori informazioni, consulta la guida scaricare gratuitamente il link di download e consulta la nostra guida su [utilizzare FileZilla con la tua soluzione di hosting OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/).
 
 #### 1.4 - Preparare un database <a name="step1-4"></a>
 
@@ -135,7 +135,7 @@ Indica la cartella "**WordPress**" in arrivo per estrarre i tuoi file da questa 
 
 #### 2.3 - Trasferisci i file sorgente dalla cartella "WordPress" alla cartella "root" sul tuo hosting Web
 
-Una volta che i file vengono decomprimiti nella cartella "**WordPress**", [collegati in FTP al tuo spazio di archiviazione](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) con l'aiuto del [client FTP Filezilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/) e copia i file contenuti nella cartella "**WordPress**" nella "cartella root" definita sul tuo hosting durante lo[step 1]( #step1) di questa guida.
+Una volta che i file vengono decomprimiti nella cartella "**WordPress**", [collegati in FTP al tuo spazio di archiviazione](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) con l'aiuto del [client FTP FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/) e copia i file contenuti nella cartella "**WordPress**" nella "cartella root" definita sul tuo hosting durante lo[step 1]( #step1) di questa guida.
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -146,7 +146,7 @@ Una volta che i file vengono decomprimiti nella cartella "**WordPress**", [colle
 
 >[!primary]
 >
-> Se la cartella root definita non è stata creata automaticamente durante le azioni descritte nello[step 1](#step1), puoi crearla via Filezilla.
+> Se la cartella root definita non è stata creata automaticamente durante le azioni descritte nello[step 1](#step1), puoi crearla via FileZilla.
 >
 > Il deposito dei file sul tuo hosting può richiedere qualche minuto.
 >
@@ -252,7 +252,7 @@ Se tutto è andato bene, visualizzi la pagina seguente:
 
 Clicca su `Avvia l'installazione`{.action}.
 
-### 3.3 - Definisci l'accesso Amministratore al back office del tuo WordPress e la tua email di contatto
+#### 3.3 - Definisci l'accesso Amministratore al back office del tuo WordPress e la tua email di contatto
 
 Una volta completata l'installazione, WordPress ti chiederà informazioni sul tuo futuro sito, inclusa la creazione dell'identificativo Amministratore WordPress.
 

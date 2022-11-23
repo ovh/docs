@@ -73,7 +73,7 @@ Si vous ne parvenez pas à effectuer ces vérifications, contactez l'hébergeur 
 - Récupérez [les informations nécessaires pour vous connecter à l'espace FTP de votre hébergement web](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
 - Récupérez les accès à la base de données de votre offre d'hébergement web si elle existe déjà, ou créez-en une à l'aide de notre [documentation](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/).
 
-#### 1.3 - Installer le client FTP gratuit « Filezilla »
+#### 1.3 - Installer le client FTP gratuit « FileZilla »
 
 Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utilisation dans notre documentation sur l'[utilisation de FileZilla avec votre offre d'hébergement OVHcloud](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/).
 
@@ -129,7 +129,7 @@ Indiquez le dossier « **WordPress** » en destination afin d'extraire vos fichi
 
 #### 2.3 - Déplacer les fichiers sources du dossier « WordPress » vers le « dossier racine » sur votre hébergement web
 
-Une fois les fichiers décompressés dans votre dossier « **WordPress** », [connectez-vous en FTP à votre espace de stockage](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide du [client FTP Filezilla](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/) puis copiez les fichiers contenus dans le dossier « **WordPress** » dans le « dossier racine » que vous avez défini sur votre hébergement lors de l'[étape 1](#step1) de ce guide.
+Une fois les fichiers décompressés dans votre dossier « **WordPress** », [connectez-vous en FTP à votre espace de stockage](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide du [client FTP FileZilla](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/) puis copiez les fichiers contenus dans le dossier « **WordPress** » dans le « dossier racine » que vous avez défini sur votre hébergement lors de l'[étape 1](#step1) de ce guide.
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -140,7 +140,7 @@ Une fois les fichiers décompressés dans votre dossier « **WordPress** », [co
 
 >[!primary]
 >
-> Si le « dossier racine » que vous avez défini n'a pas été créé automatiquement lors des actions décrites dans l'[étape 1](#step1), vous pouvez le créer via Filezilla.
+> Si le « dossier racine » que vous avez défini n'a pas été créé automatiquement lors des actions décrites dans l'[étape 1](#step1), vous pouvez le créer via FileZilla.
 >
 > Le dépôt des fichiers sur votre hébergement peut prendre quelques minutes.
 >
