@@ -119,7 +119,7 @@ Positionnez-vous sur l'onglet `Utilisateurs`{.action} et cliquez sur `Ajouter un
 Saisissez ces informations : 
 
 * **Nom de domaine Active Directory** : Nom de domaine active directory.
-* **Alias de domaine Active Directory**: Nom NETBIOS de votre domaine.
+* **Alias de domaine Active Directory**: Nom NetBIOS de votre domaine.
 * **Description (Facultatif)** :  Nom de domaine active directory.
 * **Adresse IP du serveur Active Directory** : Adresse IP publique d'accès à votre serveur LDAPS.
 * **Nom d'hôte du serveur LDAPS Active Directory** : Nom FQDN public de votre serveur Active directory.

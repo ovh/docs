@@ -115,10 +115,10 @@ Go to the `Users`{.action} tab and click `Add LDAP Active Directory{.action} in 
 
 ![01 add directory 01](images/01-add-directory01.png)
 
-Enter this information:
+Enter these information:
 
 * **Active Directory domain name** : Active directory domain name.
-* **Active Directory domain alias**: NETBIOS domain name.
+* **Active Directory domain alias**: NetBIOS domain name.
 * **Description (optional)** :  Active directory domain name.
 * **Active Directory server IP address** : Public IP address to access your LDAPS server.
 * **Active Directory LDAPS server host name** : The public FQDN name of your Active Directory server.
