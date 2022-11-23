@@ -3,7 +3,7 @@ title: Tutorial - CMS - ręczna instalacja modułu WordPress
 excerpt: Jak ręcznie zainstalować moduł WordPress?
 slug: cms_-_reczna_instalacja_modulu_wordpress
 section: CMS
-order: 07
+order: 04
 ---
 
 **Ostatnia aktualizacja z dnia 16-11-2022**

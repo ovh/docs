@@ -3,7 +3,7 @@ title: 'Tutorial - CMS, manually install WordPress'
 excerpt: How to manually install WordPress
 slug: cms_manually_install_wordpress
 section: CMS
-order: 07
+order: 04
 ---
 
 

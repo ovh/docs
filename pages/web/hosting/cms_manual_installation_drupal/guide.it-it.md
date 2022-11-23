@@ -3,7 +3,7 @@ title: 'CMS: installa manualmente Drupal'
 excerpt: Come fai a installare manualmente Drupal?
 slug: cms_installa_manualmente_drupal
 section: CMS
-order: 04
+order: 07
 ---
 
 

@@ -3,7 +3,7 @@ title: "Tutorial - Manuelle Installation von WordPress"
 slug: cms_manually_install_wordpress
 excerpt: "Hier erfahren Sie, wie Sie Ihr WordPress CMS manuell installieren"
 section: CMS
-order: 07
+order: 04
 ---
 
 **Letzte Aktualisierung am 18.11.2022**
