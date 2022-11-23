@@ -211,7 +211,8 @@ Jeśli pliki źródłowe WordPress zostały poprawnie umieszczone w katalogu gł
 
 ![hosting](images/WPselectlangue.png){.thumbnail}
 
-Wybierz język strony i kliknij na 'Kontynuuj{.action}.
+Wybierz język strony i kliknij na `Kontynuuj`{.action}.
+
 
 #### 3.2 - Powiązanie modułu WordPress z bazą danych
 
