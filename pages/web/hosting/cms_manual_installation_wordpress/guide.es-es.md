@@ -146,7 +146,8 @@ Una vez descomprimidos los archivos en su carpeta "**WordPress**", [conéctese p
 
 >[!primary]
 >
-Si el directorio raíz que ha definido no se ha creado automáticamente en las acciones descritas en el [etapa 1](#step1), puede crearlo a través de Filezilla.
+> Si el directorio raíz que ha definido no se ha creado automáticamente en las acciones descritas en el [etapa 1](#step1), puede crearlo a través de Filezilla.
+
 >
 > El almacenamiento de los archivos en el alojamiento puede tardar unos minutos.
 >
