@@ -95,7 +95,7 @@ Esta primeira etapa permite-lhe determinar se os atrasos provêm:
 - do seu site, devido ao seu funcionamento interno;
 - ou da infraestrutura de alojamento partilhado onde o seu site se encontra.
 
-Todos os diagnósticos da etapa 1 devem ser realizados ***sem exceção** para determinar se as lentidões provêm dos seus serviços de alojamento web ou do website que aloja.
+Todos os diagnósticos da etapa 1 devem ser realizados **sem exceção** para determinar se as lentidões provêm dos seus serviços de alojamento web ou do website que aloja.
 
 #### 1.1 - Verifique o estado dos seus serviços OVHcloud
 
