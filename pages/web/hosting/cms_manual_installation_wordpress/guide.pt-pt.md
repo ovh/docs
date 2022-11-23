@@ -129,7 +129,8 @@ Aceda ao site do editor [WordPress](https://wordpress.org/download/#download-ins
 
 O ficheiro descarregado está no formato **compressado** (zippé). Crie uma pasta intitulada "**WordPress**" no seu computador e **descomprima** o conteúdo do ficheiro carregado no interior da pasta "**WordPress**".
 
-Para isso, abra a pasta onde carregou o ficheiro comprimido, clique no ficheiro em questão e selecione "Extrair tudo...". ".
+Para isso, abra a pasta onde carregou o ficheiro comprimido, clique no ficheiro em questão e selecione "Extrair tudo...". 
+
 
 Indique a pasta "**WordPress**" em destino para extrair os seus ficheiros desta pasta.
 
