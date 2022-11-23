@@ -135,8 +135,8 @@ On the RIR where the IP range is registered, you will need to create a **route**
 
 For more information on route objects, please refer to your RIR’s documentation page :
 
-- ARIN - [ROA Requests](https://www.arin.net/resources/rpki/roarequest.html)
-- RIPE - [Managing ROAs](https://www.ripe.net/manage-ips-and-asns/resource-management/certification/resource-certification-roa-management)
+- RIPE - [Managing Route Objects](https://www.ripe.net/manage-ips-and-asns/db/support/managing-route-objects-in-the-irr)
+- ARIN - [Submitting Routing Information](https://www.arin.net/resources/manage/irr/#submitting-routing-information)
 
 ## Instructions
 
