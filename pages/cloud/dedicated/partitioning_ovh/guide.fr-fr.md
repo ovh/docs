@@ -6,7 +6,7 @@ section: 'RAID & disques'
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->
-**Dernière mise à jour le 16/11/2022**
+**Dernière mise à jour le 23/11/2022**
 
 ## Objectif
 
@@ -207,14 +207,14 @@ ZFS ne supporte pas les niveaux RAID standards. Il s'agit de périphériques vir
 
 Afin de rendre l'API OVHcloud la plus simple possible, il est nécessaire que vous définissiez un RAID standard au sein de l'API pour les systèmes de fichiers ZFS. Le niveau RAID standard sera alors traduit par une définition équivalente de vdev. Le tableau suivant illustre la traduction des différents niveaux RAID proposés par l'API OVHcloud ainsi qu'un rappel de leurs caractéristiques respectives.
 
-|RAID Standard|Type vdev équivalent|Nombre minimal de disques de données|Nombre de disques de parité|
-|---|---|---|---|
-|RAID 0|striped vdev|1|0|
-|RAID 1|mirror|2|0|
-|RAID 5|raidz1|2|1|
-|RAID 6|raidz2|3|2|
-|RAID 7|raidz3|4|3|
-|RAID 10|❌|4|0|
+|RAID Standard|Type vdev équivalent|Nombre minimal de disques de données|Nombre de disques de parité|Nombre minimal total de disques requis|
+|---|---|---|---|---|
+|RAID 0|striped vdev|1|0|1|
+|RAID 1|mirror|2|0|2|
+|RAID 5|raidz1|2|1|3|
+|RAID 6|raidz2|3|2|5|
+|RAID 7|raidz3|4|3|7|
+|RAID 10|❌|4|0|4|
 
 > [!warning]
 >
