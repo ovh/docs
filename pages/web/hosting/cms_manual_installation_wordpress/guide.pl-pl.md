@@ -180,7 +180,8 @@ tar xvf latest.tar.gz
 - W katalogu głównym utworzony jest katalog "**wordpress**". Przenieś jego zawartość do podstawy katalogu głównego:
 
 ```bash
-mv wordpress/*
+mv wordpress/* ./
+
 ```
 
 - Usuń katalog "**wordpress**" teraz pusty:
