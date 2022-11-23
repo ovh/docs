@@ -6,7 +6,7 @@ section: Getting started
 order: 08
 ---
 
-**Last updated 14th October 2022**
+**Last updated 5th May 2020**
 
 ## Objective
 
@@ -143,7 +143,7 @@ Your domain name’s configuration will still remain unchanged, and you will con
 
 #### Step 4: Modify your domain name’s configuration
 
-Now that you have transferred your website, recreated your email addresses, and transferred your domain name to OVHcloud, you will need to modify your domain name’s configuration. You can do this by modifying your domain name’s current DNS servers, replacing them with OVHcloud DNS servers.
+Now that you have transferred your website, recreated your email addresses, and transferred your domain name to OVHcloud, you will need to modify your domain name’s configuration. You can do this by modifying your domain name’s current DNS servers, replacing them with OVH DNS servers.
 
 You will need to modify them via your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. This guide with *[General information about DNS servers](https://docs.ovh.com/ca/en/domains/web_hosting_general_information_about_dns_servers/){.external}* will help you do this.
 
@@ -180,8 +180,4 @@ Your website, email addresses and domain name have now been migrated to OVHcloud
 
 [Managing a database on a web hosting package](https://docs.ovh.com/ca/en/hosting/managing-a-database-on-a-web-hosting-package/){.external}
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/).
-
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en-ca/support-levels/).
-
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
