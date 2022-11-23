@@ -180,7 +180,7 @@ Le seguenti affermazioni si applicano **tutte** alla tua situazione:
 
 > Significa che i ritardi riscontrati provengono direttamente dagli script che compongono il tuo sito Web. È possibile passare direttamente allo Step 2 per seguire i consigli di ottimizzazione per risolvere la tua situazione.
 
-**Caso 2**
+**Caso n°2**
 
 Le seguenti affermazioni si applicano **tutte** alla tua situazione:
 
