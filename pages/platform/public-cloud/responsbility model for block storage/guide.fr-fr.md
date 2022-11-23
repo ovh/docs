@@ -60,11 +60,12 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Gérer la sécurité logique des données installées sur l'instance (confidentialité, intégrité, sauvegardes, …) |RA |  | 
-| Assurer l'accessibilité de l'instance sur le réseau |  | RA |
-| Décider d’ajouter / supprimer une option sur l'instance | RA | I |
-| Réaliser l’ajout / suppression des options ou du matériel sur l'instance | I | RA |
+| Assurer l'accessibilité des volumes de données via les Instances auxquelles ils sont attachés |  | RA |
+| Décider d’ajouter / supprimer une option de Block Storage (redimensionner, créer un snapshot, créer un volume backup) | RA | I |
+| Réaliser l’ajout / suppression des options sur le Service Block Storage (redimensionner, créer un snapshot, créer un volume backup) | I | RA |
 | Installer les briques de sécurité nécessaires en fonction des besoins | RA |  |
-| Administrer les applicatifs installés sur l'instance | RA |   |
+| Administrer le Service de stockage | I | RA  |
+| Administrer les données | RA |   |
 | Réaliser les backups | RA |  |
 | Réaliser les backups suite à la demande du Client (en option) | CI | RA |
 
