@@ -80,7 +80,8 @@ Si no puede realizar estas comprobaciones, póngase en contacto con el proveedor
 
 #### 1.3 - Instalar el cliente FTP gratuito "Filezilla"
 
-Para más información, consulte la página de descarga gratuita y el tutorial sobre su uso en nuestra documentación sobre el [uso de Filezilla en el alojamiento de OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/).
+Para más información, consulte la página de descarga gratuita y el tutorial sobre su uso en nuestra documentación sobre el [uso de FileZilla en el alojamiento de OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/).
+
 
 #### 1.4 - Preparar una base de datos <a name="step1-4"></a>
 
