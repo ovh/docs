@@ -133,9 +133,9 @@ Il est nécessaire que le token apparaisse dans le champ de description (voir ci
 
 ### Permettre à OVHcloud d'annoncer la plage d'IP
 
-Sur le RIR où la plage d'adresses IP est inscrite, il faudra créer un objet de routage pour celle-ci (correspondant exactement à la plage d'IP), avec le numéro **AS** de OVHcloud ("AS16276") ou votre propre numéro AS dans le champ origine de l'objet de routage.
+Sur le RIR où la plage d'adresses IP est inscrite, il faudra créer un objet de routage (*route object*) pour celle-ci (correspondant exactement à la plage d'IP), avec le numéro **AS** de OVHcloud ("AS16276") ou votre propre numéro AS dans le champ origine de l'objet de routage.
 
-Pour plus d'informations sur les objets de routage, veuillez consulter la page de votre RIR :
+Pour plus d'informations sur les objets de routage (*route objects*), veuillez consulter la page de votre RIR :
 
 - ARIN - [ROA Requests](https://www.arin.net/resources/rpki/roarequest.html)
 - RIPE - [Managing ROAs](https://www.ripe.net/manage-ips-and-asns/resource-management/certification/resource-certification-roa-management)
