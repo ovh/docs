@@ -6,7 +6,7 @@ section: Bring Your Own IP
 order: 1
 ---
 
-**Last updated 8th November 2022**
+**Last updated 23rd November 2022**
 
 ## Objective
 
@@ -132,6 +132,11 @@ The token needs to appears in the description field (see above) of the whois obj
 ### You have to allow OVHcloud to announce the IP range <a name="announceip"></a>
 
 On the RIR where the IP range is registered, you will need to create a **route** object for it (matching exactly the IP range), with the OVHcloud **AS number** ("AS16276") or your own AS number in the **origin** field of the route object.
+
+For more information on route objects, please refer to your RIR’s documentation page :
+
+- ARIN - [ROA Requests](https://www.arin.net/resources/rpki/roarequest.html)
+- RIPE - [Managing ROAs](https://www.ripe.net/manage-ips-and-asns/resource-management/certification/resource-certification-roa-management)
 
 ## Instructions
 
