@@ -35,7 +35,7 @@ Afin de préparer la mise en place de la configuration, vous devez récupérer l
 - Port du service LDAPS (par défaut 636).
 - Base DN (Base Distinguished Name) pour les utilisateurs. Il s'agit du DN à partir duquel seront recherchés les utilisateurs. Par exemple, cn=Users,dc=example,dc=com
 - Base DN (Base Distinguished Name) pour les groupes. Il s'agit du DN à partir duquel seront recherchés les groupes. Par exemple, cn=Groups,dc=example,dc=com
-- Identifiant et mot de passe d'un utilisateur du domaine qui sera utilisé pour la connection au serveur LDAPS. Il doit être au minimum en lecture seule sur la section du serveur Active Directory pour les deux « Base DN » choisis précédemment. Identifiant pre-Windows 2000 sous la forme UPN (user@example.com).
+- Identifiant et mot de passe d'un utilisateur du domaine qui sera utilisé pour la connection au serveur LDAPS. Il doit être au minimum en lecture seule sur la section du serveur Active Directory pour les deux « Base DN » choisis précédemment. Identifiant sous la forme UPN (user@example.com).
 
 Pour plus d'informations, vous pouvez vous référer à la [documentation VMware à ce sujet](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.authentication.doc/GUID-98B36135-CDC1-435C-8F27-5E0D0187FF7E.html){.external}.
 
@@ -75,25 +75,25 @@ Récupérez l'adresse IP de votre Hosted Private Cloud par la méthode de votre 
 Via cette commande sur le serveur Active Directory ou une machine Windows distante :
 
 ```bash
-nslookup fqdn-mypcc
+nslookup pcc-198-51-100-121.ovh.com
 ```
 
 Ici, il s'agit de la valeur à la fin de la dernière ligne :
 
 ```console
-> Address:  XXX.XXX.XXX.XXX
+> Address:  198.51.100.121
 ```
 
 Il est également possible d'utiliser la commande suivante (depuis une machine Linux/Unix/Mac distante) :
 
 ```bash
-host fqdn-my-pcc
+host pcc-198-51-100-121.ovh.com
 ```
 
 Ici, il s'agit de la valeur à la fin de la ligne :
 
 ```shell
-> fqdn-my-pcc has address XXX.XXX.XXX.XXX
+> pcc-198-51-100-121.ovh.com has address 198.51.100.121
 ```
 
 Utilisez cette adresse IP pour autoriser votre Hosted Private Cloud à accéder à votre serveur LDAPS Active Directory (par défaut sur le port TCP 636).
@@ -104,13 +104,13 @@ Exemple de configuration de règle de pare-feu entrant :
 
 |Adresse IP distante (source)|Adresse IP locale (destination)|Port distant (source)|Port local (destination)|Protocole|
 |---|---|---|---|---|
-|XXX.XXX.XXX.XXX|Toutes les adresses|Tous les ports|636|TCP|
+|198.51.100.121|Toutes les adresses|Tous les ports|636|TCP|
 
 Adaptez cette configuration à votre entreprise et mettez en place la règle de pare-feu.
 
 ### Ajouter votre serveur Active Directory comme source d'authentification
 
-A partir de votre espace client OVHcloud allez dans les paramètres OVHcloud de cluster VMware.
+A partir de votre espace client OVHcloud allez dans les paramètres OVHcloud de votre infrastucture Hosted Private Cloud by VMware.
 
 Positionnez-vous sur l'onglet `Utilisateurs`{.action} et cliquez sur `Ajouter un Active Directory LDAPs`{.action} dans la rubrique **Active Directories (LDAPs)**.
 
@@ -118,17 +118,17 @@ Positionnez-vous sur l'onglet `Utilisateurs`{.action} et cliquez sur `Ajouter un
 
 Saisissez ces informations : 
 
-* **Nom de domaine Active Directory** : Nom de domaine active directory.
+* **Nom de domaine Active Directory** : Nom de domaine Active directory.
 * **Alias de domaine Active Directory**: Nom NetBIOS de votre domaine.
-* **Description (Facultatif)** :  Nom de domaine active directory.
+* **Description (Facultatif)** : Nom de domaine active Airectory.
 * **Adresse IP du serveur Active Directory** : Adresse IP publique d'accès à votre serveur LDAPS.
 * **Nom d'hôte du serveur LDAPS Active Directory** : Nom FQDN public de votre serveur Active directory.
 * **Port du service LDAPS*** : Numéro du port du service LDAPS.
 * **Empreinte du certificat SSL** : Empreinte du certificat SSL récupéré précédemment.
 * **Identifiant utilisateur Active Directory** : Nom d'utilisateur Active directory suivi de @nomdedomaine-activedirectory.
 * **Mot de passe utilisateur Active Directory** : Mot de passe de l'utilisateur Active Directory.
-* **Base DN pour les utilisateurs** : Nom DN (Syntaxe LDAP) du dossier contenant les utilisateurs comme par exemple cn=Users,dc=example,dc=com pour le domaine example.com.
-* **Base DN pour les groupes** : Nom DN (Syntaxe LDAP) du dossier contenant les groupes comme par exemple cn=Users,dc=example,dc=com pour le domaine example.com.
+* **Base DN pour les utilisateurs** : Nom DN (Syntaxe LDAP) du dossier contenant les utilisateurs comme par exemple dc=example,dc=com pour le domaine example.com.
+* **Base DN pour les groupes** : Nom DN (Syntaxe LDAP) du dossier contenant les groupes comme par exemple dc=example,dc=com pour le domaine example.com.
 
 Ensuite cliquez sur `Executer`{.action}.
 
@@ -150,7 +150,7 @@ Votre domaine Active Directory est relié à votre cluster VMware. Vous pouvez m
 
 ### Autoriser un utilisateur Active Directory à accéder à votre Hosted Private Cloud
 
-Maintenant que votre cluster VMware est connecté à votre annuaire active directory vous pouvez rajouter des utilisateurs de cet annuaire pour se connecter sur votre cluster VMware.
+Maintenant que votre cluster VMware est connecté à votre annuaire Active directory vous pouvez rajouter des utilisateurs de cet annuaire pour se connecter sur votre cluster VMware.
 
 Cliquez sur `Importer un utilisateur`{.action}
 
@@ -164,7 +164,7 @@ Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être �
 
 ![02 add user 03](images/02-adduser03.png)
 
-Un nouvel utilisateur apparait dans le manager, vous pouvez l'utilisez pour vous connecter à votre cluster VMware. 
+Un nouvel utilisateur apparait dans le manager, vous pouvez l'utilisez pour vous connecter à l'interface vCenter de votre infrastructure. 
 
 > [!primary]
 >
@@ -190,7 +190,7 @@ Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être �
 
 ![03 add group 03](images/03-addgroup03.png)
 
-Le groupe apparait dans la liste utilisateurs de votre cluster VMware, les membres de ce groupe auront la possibilité de se connecter à votre cluster VMware.
+Le groupe apparait dans la liste utilisateurs de votre cluster, les membres de ce groupe auront la possibilité de se connecter à vCenter.
 
 > [!primary]
 >

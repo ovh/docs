@@ -35,7 +35,7 @@ Preparing configuration setup, you need to retrieve the following information:
 - LDAPS service port (636 by default)
 - Base DN (Base Distinguished Name) for users. This is the DN from which users will be searched. For example: cn=Users,dc=example,dc=com
 - Base DN (Base Distinguished Name) for groups. This is the DN from which groups will be searched. For example: cn=Groups,dc=example,dc=com
-- Username and password of a domain user that will be used to connect to the LDAPS server. It must be at least a read-only user on the Active Directory server sections specified on the two "Base DN" fields above. Must be a pre-Windows 2000 username, in the UPN format (user@eample.com).
+- Username and password of a domain user that will be used to connect to the LDAPS server. It must be at least a read-only user on the Active Directory server sections specified on the two "Base DN" fields above. Must be in the UPN format (user@eample.com).
 
 For more information, you can refer to the [VMware documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.psc.doc/GUID-98B36135-CDC1-435C-8F27-5E0D0187FF7E.html){.external}.
 
@@ -74,25 +74,25 @@ Retrieve your Hosted Private Cloud IP address with the method of your choice.
 You can use this command on the Active Directory server or any remote Windows machine:
 
 ```shell
-nslookup fqdn-mypcc
+nslookup pcc-198-51-100-121.ovh.com
 ```
 
 Here, it is the value at the end of the last line:
 
 ```shell
-> Address:  XXX.XXX.XXX.XXX
+> Address:  198.51.100.121
 ```
 
 You can alternatively use the following command (from a remote Linux/Unix/Mac machine):
 
 ```shell
-host fqdn-my-pcc
+host pcc-198-51-100-121.ovh.com
 ```
 
 Here, it is the value at the end of the line:
 
 ```shell
-> fqdn-my-pcc has address XXX.XXX.XXX.XXX
+> pcc-198-51-100-121.ovh.com has address 198.51.100.121
 ```
 
 Use the retrieved IP address to allow your Hosted Private Cloud to access the Active Directory LDAPS server (by default on TCP port 636).
@@ -103,7 +103,7 @@ Here is a firewall rule configuration example:
 
 |Remote IP address (source)|Local IP address (destination)|Remote port (source)|Local port (destination)|Protocol|
 |---|---|---|---|---|
-|XXX.XXX.XXX.XXX|All addresses|All ports|636|TCP|
+|198.51.100.121|All addresses|All ports|636|TCP|
 
 Adapt this configuration to your company and apply that rule on your firewall.
 
@@ -150,7 +150,7 @@ Your Active Directory domain is linked to your VMware cluster. You can now add u
 
 ### Authorise an Active Directory user to access your Hosted Private Cloud
 
-Now that your VMware cluster is connected to your active directory, you can add users from that directory to connect to your VMware cluster.
+Now that your VMware infrastructure is connected to your Active directory, you can add users from that directory to connect to your VMware cluster.
 
 Click `Import User`{.action}
 
@@ -173,11 +173,11 @@ A new user will appear in the Control Panel. You can use this user to log in to 
 ![02 add user 04](images/02-adduser04.png)
 
 
-### Autoriser un groupe Active Directory à accéder à votre Hosted Private Cloud
+### Authorise an Active Directory group to access your Hosted Private Cloud
 
 You can authorise a group of users directly from your Active Directory server to access your Hosted Private Cloud through the OVHcloud Control Panel.
 
-Cliquez sur `Importer un utilisateur`{.action}.
+click on `Importer u`{.action}.
 
 ![03 add group 01](images/03-addgroup01.png)
 
@@ -201,4 +201,5 @@ The group will appear in the list of users for your VMware cluster. Members of t
 
 ## Go further
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+
+Join our community of users on <https://community.ovh.com/en/>.
