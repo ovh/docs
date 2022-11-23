@@ -105,7 +105,7 @@ Para conhecer o cluster e filer onde se encontra o alojamento partilhado, aceda 
 
 ![Recuperar Filer](images/DropFilerCluster1.png){.thumbnail}
 
-A seguir, clique no separador ``Multisites`{.action} para obter o número do cluster onde está o seu alojamento partilhado.
+A seguir, clique no separador `Multisites`{.action} para obter o número do cluster onde está o seu alojamento partilhado.
 
 ![Recuperar o cluster](images/DropFilerCluster2.png){.thumbnail}
 
