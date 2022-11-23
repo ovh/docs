@@ -75,7 +75,8 @@ Si vous ne parvenez pas à effectuer ces vérifications, contactez l'hébergeur 
 
 #### 1.3 - Installer le client FTP gratuit « Filezilla »
 
-Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utilisation dans notre documentation sur l'[utilisation de Filezilla avec votre offre d'hébergement OVHcloud](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/).
+Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utilisation dans notre documentation sur l'[utilisation de FileZilla avec votre offre d'hébergement OVHcloud](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/).
+
 
 #### 1.4 - Préparer une base de données <a name="step1-4"></a>
 
