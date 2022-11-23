@@ -1,7 +1,7 @@
 ---
-title: 'Gestion du reboot avec PXE dans un environnement privé'
+title: 'Gestion du reboot de vos serveurs avec OLA, agrégation privée activée'
 slug: netboot PXE
-excerpt: 'Comment réaliser les redémarrages de vos solutions OVHcloud à travers un environnement "entièrement privé"'
+excerpt: 'Comment réaliser les redémarrages de vos solutions OVHcloud à travers un environnement OLA'
 section: 'Utilisation avancée'
 order: 01
 ---
@@ -19,14 +19,14 @@ Profiter d'une infrastructure "full private" sans avoir modifié la configuratio
 
 > [!warning]
 >
-> Pour rappel, il est très fortement recommandé de ne pas modifier les configurations par défaut:<br>
+> Pour rappel, il est prohibé de modifier les configurations par défaut:<br>
 > configuration Bios, Boot Order, etc...
 > Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres bien définis, pour vous proposez des environnements techniques les mieux adaptés à votre matériel.
 >
 
 Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.<br>
-Chaque serveur est muni de 2 interfaces réseaux (en réalité 4, fonctionnants en liens aggrégés (par paire) pour la redondance).<br>
-Vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit "public" aussi appelés "front-end" et ceux, au contraire dit "privés", appelés "back-end".
+Chaque serveur est muni de 2 interfaces réseaux fonctionnants en liens aggrégés, assurant la redondance.<br>
+Vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit "public"et ceux, au contraire dit "privés", passant par notre solution [vrack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
 
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode full-private, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
 Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
