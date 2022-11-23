@@ -5,7 +5,7 @@ excerpt: Learn how to use you Active Directory server as an authentication sourc
 section: 'VMware vSphere features'
 ---
 
-**Last updated 10th February 2022**
+**Last updated 23th November 2022**
 
 ## Objective
 
@@ -109,98 +109,96 @@ Adapt this configuration to your company and apply that rule on your firewall.
 
 ### Add your Active Directory server as an authentication source
 
-Setting up an Active Directory as an authentication source is done through the OVHcloud API.
+From your OVHcloud Control Panel, go to the OVHcloud VMware cluster settings.
 
-Retrieve your « serviceName » using the following API call:
+Go to the `Users`{.action} tab and click `Add LDAP Active Directory{.action} in the **Active Directories (LDAPs)** section.
 
-> [!api]
->
-> @api {GET} /dedicatedCloud
->
+![01 add directory 01](images/01-add-directory01.png)
 
-Then, use the following API call to add your Active Directory server as an authentication source.
+Enter this information:
 
-You will have to specify information retreived from the previous steps. Do not check the "noSsl" checkbox.
+* **Active Directory domain name** : Active directory domain name.
+* **Active Directory domain alias**: NETBIOS domain name.
+* **Description (optional)** :  Active directory domain name.
+* **Active Directory server IP address** : Public IP address to access your LDAPS server.
+* **Active Directory LDAPS server host name** : The public FQDN name of your Active Directory server.
+* **LDAPS service port*** : The port number of the LDAPS service.
+* **SSL certificate thumbprint** : Thumbprint of the SSL certificate retrieved earlier.
+* **Active Directory username** : Active directory username followed by @domain-activedirectory.
+* **Active Directory user password** : Active Directory user password.
+* **DN base for users** : The DN (LDAP syntax) of the folder containing users such as cn=Users,dc=example,dc=com for the domain example.com.
+* **DN base for groups** : The DN of the folder containing the groups, such as cn=Users,dc=example,dc=com for the domain example.com.
 
-> [!api]
->
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory
->
-
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/federation_create.png){.thumbnail}
-
-Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) on your Hosted Private Cloud `Operations`{.action} tab.
-
-> [!primary]
->
-> If the provided information is invalid, the operation will be canceled and a message will show the returned error.
->
-> ![Canceled operation](images/federation_canceled.png){.thumbnail}
-
-### Allow an Active Directory user to access your Hosted Private Cloud
-
-You can allow an Active Directory user to access your Hosted Private Cloud through the OVHcloud API.
-
-Retrieve your « activeDirectoryId » using the following API call:
-
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
->
-
-Then, use the following API call to allow an Active Directory user to access your Hosted Private Cloud.
-
-You will have to specify the "pre-Winows 2000" username as it is inside your Active Directory.
-
-> [!api]
->
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser
+Then click `Submit`{.action}.
 
 
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser](images/federation_grant_user.png){.thumbnail}
+![01 add directory 02](images/01-add-directory02.png)
 
-Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) on your Hosted Private Cloud `Operations`{.action} tab.<br>
-If the provided information is invalid, the operation will be canceled and a message will show the returned error.
-
-Once allowed, the user and its permissions will be manageable directly from you OVHcloud Control Panel as any other Hosted Private Cloud user.
+A window will pop up to show progress, wait until you are one hundred percent and click `Close`{.action}.
 
 > [!primary]
 >
-> By default, the user does not have any permission on your Hosted Private Cloud. It will be able to connect to your Hosted Private Cloud but it will not have any access. You can adjust the permissions from the OVHcloud Control Panel.
+> If a parameter is not valid, the task will be cancelled before reaching 100%, in this case wait a few minutes for the cancellation to be complete before relaunching the configuration.
 >
 
-### Allow an Active Directory group to access your Hosted Private Cloud
+![01 add directory 03](images/01-add-directory03.png)
 
-You can allow directly an Active Directory user set (group) to access your Hosted Private Cloud through the OVHcloud API.
+Your Active Directory domain is linked to your VMware cluster. You can now add users and groups from your Active Directory to connect to your VMware cluster.
 
-Retrieve your « activeDirectoryId » using the following API call:
-
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
->
-
-Then, use the following API call to allow an Active Directory group to access your Hosted Private Cloud.
-
-You will have to specify the "pre-Winows 2000" group name as it is inside your Active Directory.
-
-> [!api]
->
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup
+![01 add directory 04](images/01-add-directory04.png)
 
 
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/federation_grant_group.png){.thumbnail}
+### Authorise an Active Directory user to access your Hosted Private Cloud
 
-Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) on your Hosted Private Cloud `Operations`{.action} tab.<br>
-If the provided information is invalid, the operation will be canceled and a message will show the returned error.
+Now that your VMware cluster is connected to your active directory, you can add users from that directory to connect to your VMware cluster.
 
-Once allowed, the group and its permissions will be manageable directly from your OVHcloud Control Panel as any other Hosted Private Cloud user.
+Click `Import User`{.action}
+
+![02 add user 01](images/02-adduser01.png)
+
+Select your Active Directory, click 'Import User`{.action}, enter your UPN `username@nomdedomaineactivedirectory` and click `Next`{.action}.
+![02 add user 02](images/02-adduser01.png)
+
+A task status window appears, wait until you are one hundred percent and click `Close`{.action}.
+
+![02 add user 03](images/02-adduser03.png)
+
+A new user will appear in the Control Panel. You can use this user to log in to your VMware cluster.
 
 > [!primary]
 >
-> By default, the group does not have any permission on your Hosted Private Cloud. Its members will be able to connect to your Hosted Private Cloud but they will not have any access. You can adjust the permissions from the OVHcloud Control Panel.
+> By default, the user does not have any permission on your Hosted Private Cloud. They can connect to your Hosted Private Cloud, but will not have any access. You can adjust permissions from the OVHcloud Control Panel.
 >
+
+![02 add user 04](images/02-adduser04.png)
+
+
+### Autoriser un groupe Active Directory à accéder à votre Hosted Private Cloud
+
+You can authorise a group of users directly from your Active Directory server to access your Hosted Private Cloud through the OVHcloud Control Panel.
+
+Cliquez sur `Importer un utilisateur`{.action}.
+
+![03 add group 01](images/03-addgroup01.png)
+
+Select your Active Directory, click 'Import Group`{.action}, type the `name of your group' and click 'Next`{.action}.
+
+![03 add group 02](images/03-addgroup02.png)
+
+A task status window appears, wait until you are one hundred percent and click 'Close`{.action}.Select your Active Directory, click 'Import Group`{.action}, type your group name and click 'Next`{.action}.
+
+![03 add group 03](images/03-addgroup03.png)
+
+The group will appear in the list of users for your VMware cluster. Members of this group will be able to log in to your VMware cluster.
+
+> [!primary]
+>
+> By default, group members do not have any permissions on your Hosted Private Cloud. They can connect to your Hosted Private Cloud, but will not have any access. You can adjust permissions from the OVHcloud Control Panel.
+>
+
+![03 add group 04](images/03-addgroup04.png)
+
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
