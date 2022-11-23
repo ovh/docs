@@ -44,7 +44,7 @@ Em casos raros, os ecrãs também podem ser provocados pelo seu fornecedor de ac
 
 ## Requisitos
 
-- Dispor de um site alojado numa das nossas ofertas de[alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de um site alojado numa das nossas ofertas de [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
