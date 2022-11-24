@@ -5,7 +5,7 @@ excerpt: Secure Your OVHcloud Managed Kubernetes Cluster with Keycloak, an OpenI
 section: Tutorials
 ---
 
-**Last updated 28th June, 2022.**
+**Last updated 24th November, 2022.**
 
 <style>
  pre {
@@ -638,28 +638,7 @@ The first user connection required an initial password, so let's create it:
 
 ### Configure Keycloak instance in your Kubernetes cluster as an OIDC provider
 
-Now you have a working keycloak, and created a User, you can log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
-Go to the `Public Cloud`{.action} section, and then in the sidebar, click on `Managed Kubernetes Service`{.action}.
-
-![OVHcloud Kubernetes section](images/kube.png)
-
-Click in your Kubernetes cluster you want to link to your OIDC provider.
-At the right, you can find the `Access and security`{.action} section:
-
-![Manager](images/manager.png)
-
-In this section, you can find the `OIDC provider`{.action}.
-For the moment, you should have the information message: "No OIDC provider configured".
-
-In order to add our OIDC provider, click on the `...`{.action} button, and then on `Configure an OIDC provider`{.action}.
-
-![Configure an OIDC provider](images/configure-oidc-provider.png)
-
-You should have a new pop-up. Fill it with our Keycloak informations like this:
-
-![OIDC popup](images/popup.png)
-
-In our example, the Provider URL is: `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication`.
+Now that you have a working keycloak, your Provider URL is `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication`, and since you created a User, you can read the [Configuring the OIDC provider on an OVHcloud Managed Kubernetes cluster](../configure-oidc-provider/) guide to configure the OIDC provider on your Kubernetes cluster via the OVHcloud Control Panel, the OVHcloud API or via Terraform. 
 
 Explanations:
 
@@ -759,8 +738,6 @@ If you can see the nodes of your Managed Kubernetes Service, congratulations, yo
 ## Upgrade the Keycloak deployment if needed
 
 Enter the following command:
-
-TODO: xxx
 
 ```bash
 helm upgrade \
