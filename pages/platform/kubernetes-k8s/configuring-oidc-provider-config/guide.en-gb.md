@@ -24,7 +24,7 @@ In this guide you will be able to configure your OIDC provider through the OVHcl
 ## Warning
 
 > [!warning]
-> Several elementary validations are made (e.g. on provider URL, CA content and required claims) but if you misconfigure your OIDC provider, errors will be logged by the Kubernetes API Server, and thus only visible through the cluster's audit logs on the OVHCloud Manager.
+> Several elementary validations are made (e.g. on provider URL, CA content and required claims) but if you misconfigure your OIDC provider, errors will be logged by the Kubernetes API Server, and thus only visible through the cluster's audit logs in the OVHcloud Control Panel.
 
 ## Instructions
 
@@ -46,10 +46,10 @@ Click on the `...` button in the `OIDC provider` section.
 
 Fill the needed information in the popup (note: each field corresponds to a flag from the [API Server configuration documentation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#configuring-the-api-server):
 
-* `Provider URL`: The OIDC issuer url.
+* `Provider URL`: The OIDC issuer URL.
 * `Client ID`: The OIDC client ID.
 * `OIDC Username Claim`: JWT claim to use as the user name. By default sub, which is expected to be a unique identifier of the end user. Admins can choose other claims, such as email or name, depending on their provider. However, claims other than email will be prefixed with the issuer URL to prevent naming clashes with other plugins.
-* `OIDC Username Prefix`: Prefix prepended to username claims to prevent clashes with existing names (such as `system:users`). For example, the value `oidc:` will create usernames like `oidc:jane.doe`. If this field isn't set and `oidcUsernameClaim` is a value other than email the prefix defaults to `issuer_url` where `issuer_url` is the value of `oidcIssuerUrl.` The value `-` can be used to disable all prefixing.
+* `OIDC Username Prefix`: Prefix prepended to username claims to prevent clashes with existing names (such as `system:users`). For example, the value `oidc:` will create usernames like `oidc:jane.doe`. If this field isn't set and `oidcUsernameClaim` is a value other than email, the prefix defaults to `issuer_url` where `issuer_url` is the value of `oidcIssuerUrl.` The value `-` can be used to disable all prefixing.
 * `OIDC Groups Claim`: Array of JWT claim to use as the user's group. If the claim is present it must be an array of strings.
 * `OIDC Groups Prefix`: Prefix prepended to group claims to prevent clashes with existing names (such as `system:groups`). For example, the value `oidc:` will create group names like `oidc:engineering` and `oidc:infra`.
 * `OIDC Required Claim`: Array of `key=value` pairs that describe required claims in the ID Token. If set, the claims are verified to be present in the ID Token with a matching value."
@@ -62,9 +62,9 @@ Click on the `Add` button to validate the form and configure the OIDC provider o
 
 #### The API Explorer
 
-To simplify things, we are using the [API Explorer](https://api.ovh.com/console/), which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](https://api.ovh.com/console/) which allows to explore, learn and interact with the API in an interactive way.
 
-Log in to the API Explorer using your OVH NIC.
+Log in to the API Explorer using your OVHcloud NIC handle.
 
 ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 
@@ -80,7 +80,8 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
 GET /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
 ```
 
-Result:
+**Result:**
+
 ```json
 {
   "issuerUrl": "https://www.ovhcloud.com/fr/",
@@ -106,6 +107,7 @@ Result:
 ```bash
 PUT /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
 ```
+
 ```json
 {
   "issuerUrl": "https://www.ovhcloud.com/fr/",
@@ -131,6 +133,7 @@ PUT /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
 ```bash
 POST  /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
 ```
+
 ```json
 {
   "issuerUrl": "https://www.ovhcloud.com/fr/",
@@ -234,7 +237,7 @@ Alternatively the secret keys can be retrieved from your environment.
 - `OVH_APPLICATION_SECRET`
 - `OVH_CONSUMER_KEY`
 
-This later method (or a similar alternative) is recommended to avoid storing secret data in a source repository.
+This latter method (or a similar alternative) is recommended to avoid storing secret data in a source repository.
 
 Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API, but other endpoints exist, depending on your needs:
 
@@ -408,7 +411,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 #### Destroy
 
-If you want to delete the OIDC provider you configured it through Terraform, have to execute `terraform destroy` command:
+If you want to delete the OIDC provider you configured through Terraform, you have to execute the `terraform destroy` command:
 
 ```bash
 $ terraform destroy
