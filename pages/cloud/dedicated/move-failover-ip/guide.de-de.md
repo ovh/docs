@@ -10,7 +10,7 @@ order: 7
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 06.10.2022**
+**Letzte Aktualisierung am 24.11.2022**
 
 > [!primary]
 >
@@ -59,6 +59,10 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 >
 
 ### Eine IP über das OVHcloud Kundencenter umziehen
+
+> [!warning]
+> Nur ein Block mit einer einzigen Größe (/32) kann von einem dedizierten Server auf einen VPS verschoben werden.
+>
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}.
 

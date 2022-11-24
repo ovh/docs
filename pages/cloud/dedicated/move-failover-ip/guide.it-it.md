@@ -10,7 +10,7 @@ order: 7
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 06/10/2022**
+**Ultimo aggiornamento: 24/11/2022**
 
 > [!primary]
 >
@@ -59,6 +59,10 @@ Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'al
 >
 
 ### Sposta un IP dallo Spazio Cliente OVHcloud
+
+> [!warning]
+> Solo un blocco di dimensioni singole (/32) potrà essere spostato da un server dedicato a un VPS.
+>
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul menu `Bare Metal Cloud`{.action} e apri la sezione `IP`{.action}.
 
