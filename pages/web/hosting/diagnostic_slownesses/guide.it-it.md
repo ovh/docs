@@ -185,7 +185,7 @@ Le seguenti affermazioni si applicano **tutte** alla tua situazione:
 Le seguenti affermazioni si applicano **tutte** alla tua situazione:
 
 - **nessun incidente e nessuna manutenzione** sono dichiarati o sono stati dichiarati come **risolti** meno di tre ore fa per i tuoi servizi di hosting Web sul nostro sito [status-ovhcloud.com](https://web-cloud.status-ovhcloud.com/);
-- il **cas n°1** dettagliato di cui sopra non corrisponde alla tua configurazione.
+- il **caso n°1** dettagliato di cui sopra non corrisponde alla tua configurazione.
 
 > Saranno necessarie ulteriori indagini da parte di OVHcloud. Contatta i nostri servizi di assistenza sulle soluzioni Web per confermare con te l'origine dei rallentamenti riscontrati.
 
