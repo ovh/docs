@@ -43,7 +43,7 @@ La récupération des éléments supprimés peut être réalisée depuis le webm
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Connectez-vous à l'adresse e-mail concernée via le webmail (OWA) : <https://www.ovh.com/fr-ca/mail/>.
+Connectez-vous à l'adresse e-mail concernée via le webmail (OWA) : <https://www.ovhcloud.com/fr-ca/mail/>.
 
 > [!primary]
 >
