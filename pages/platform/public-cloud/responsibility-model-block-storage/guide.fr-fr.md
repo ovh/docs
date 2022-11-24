@@ -1,9 +1,9 @@
 ---
 title: RACI pour Block Storage Public Cloud
-slug: raci-Block-Storage-public-cloud
+slug: raci-block-storage-public-cloud
 section: Informations générales
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation du Block Storage Public Cloud"
-order: 5
+order: 6
 ---
 
 **Dernière mise à jour le 24/11/2022**
@@ -14,10 +14,10 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | Rôles |
 | --- |
-|R : Est en charge de la Réalisation du processus|
-|A : Est Approbateur de la réalisation du processus|
-|C : Est Consulté pendant le processus|
-|I : Est Informé des résultats du processus|
+|R : Est en charge de la **R**éalisation du processus|
+|A : Est **A**pprobateur de la réalisation du processus|
+|C : Est **C**onsulté pendant le processus|
+|I : Est **I**nformé des résultats du processus|
 
 ### 1. Avant la souscription
 
@@ -27,7 +27,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Choisir la gamme de Block Storage en fonction des besoins (Classic, High speed, ...) | RA | I |
 | Renseigner les données à caractère personnel nécessaires pour la souscription au service | RA | I |
-| Choisir la localisation du service en cohérence avec la localisation des Instances | RA | I |
+| Choisir la localisation du service en cohérence avec la localisation des instances | RA | I |
 
 ### 2. Mise à disposition du service
 
@@ -60,20 +60,20 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Gérer la sécurité logique des données installées sur l'instance (confidentialité, intégrité, sauvegardes, …) |RA |  | 
-| Assurer l'accessibilité des volumes de données via les Instances auxquelles ils sont attachés |  | RA |
+| Assurer l'accessibilité des volumes de données via les instances auxquelles ils sont attachés |  | RA |
 | Décider d’ajouter / supprimer une option de Block Storage (redimensionner, créer un snapshot, créer un volume backup) | RA | I |
 | Réaliser l’ajout / suppression des options sur le Service Block Storage (redimensionner, créer un snapshot, créer un volume backup) | I | RA |
 | Installer les briques de sécurité nécessaires en fonction des besoins | RA |  |
-| Administrer le Service de stockage | I | RA  |
+| Administrer le service de stockage | I | RA  |
 | Administrer les données | RA |   |
 | Réaliser les backups | RA |  |
-| Réaliser les backups suite à la demande du Client (en option) | CI | RA |
+| Réaliser les backups suite à la demande du client (en option) | CI | RA |
 
 ##### **3.1.2. Gestion des accès**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer les droits d’accès à l'interface de Gestion (espace client OVHcloud) | RA | I |
+| Gérer les droits d’accès à l'interface de gestion (espace client OVHcloud) | RA | I |
 | Gérer les accès physiques et logiques des équipes OVHcloud aux infrastructures | I | RA |
 | Gérer les accès et la politique de sécurité des utilisateurs du service | RA |  |
 
