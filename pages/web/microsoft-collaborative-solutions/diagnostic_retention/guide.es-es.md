@@ -73,4 +73,4 @@ A continuación, acepte la restauración haciendo clic en `Obtener`{.action}.
 
 ## Más información
  
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
