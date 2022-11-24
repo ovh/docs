@@ -105,9 +105,129 @@ Vérifiez dans votre navigateur et cliquez sur le lien « Weather » qui a été
 
 ![Test new page](images/static_website_installation_cecil_api_call%5B2%5D.png)
 
-### Ajouter des assets
+### Ajouter le code JavaScript
+
+Il n'est pas possible d'ajouter une balise `<script>` dans un fichier Markdown. Il est nécessaire de modifier le template fourni par défaut pour permettre l'ajout de cette balise.
+
+#### Modifier le template
+
+Les templates sont disposés dans le répertoire `layouts`. Vous pouvez les visualiser avec la commande :
+
+```sh
+ls -la layouts
+```
+
+Le fichier contient un répertoire `blog` et un fichier `index.html.twig` :
+
+![layouts directory](images/static_website_installation_cecil_api_call%5B3%5D.png)
+
+Ouvrez le fichier `index.html.twig` :
+
+![Cecil layouts index file](images/static_website_installation_cecil_api_call%5B4%5D.png)
+
+Le fichier fait référence à un template qui n'est pas présent dans le répertoire. Ce fichier (et d'autres) sont en fait dans le fichier `cecil.phar`. Les extensions `.phar` désigne des archives de fichiers PHP qui sont manipulables sans être décompressés.
+Décompressez les fichiers de cette archive pour les rendre visibles :
+
+```sh
+php cecil.phar util:extract
+```
+
+Affichez à nouveau le contenu du répertoire `layouts` :
+
+![Cecil layouts directory including uncompressed files](images/static_website_installation_cecil_api_call%5B5%5D.png)
+
+Nous allons modifier le template par défaut pour insérer une balise `<script>` qui contiendra le code permettant l'appel à l'API :
+
+```sh
+nano layouts/_default/page.html.twig
+```
+
+Cette balise et son contenu sont à placer avant la balise fermante `</body>` en page de page :
+
+```twig
+    </footer>
+    {%- include 'partials/googleanalytics.js.twig' with {site} only ~%}
+    {% block javascript %}
+    <script src="{{ asset('script.js', {minify: true}) }}"></script>
+    {% endblock %}
+  </body>
+</html>
+```
+
+Quand un ou des fichiers assets sont modifiés, reconstruisez-le le cache avec la commande :
+
+```sh
+php cecil.phar cache:clear:assets
+```
+
+Si les modifications ne sont pas effectives sur votre navigateur, pensez à vider le cache de celui-ci et rebuilder votre solution :
+
+```sh
+php cecil.phar build
+```
+
+#### Ajouter le fichier JavaScript
+
+Les fichiers JavaScript, comme les fichiers CSS, sont à mettre dans le répertoire `assets`. Libre à vous de les organiser dans différents répertoires.
+
+Nous allons créer le fichier `script.js` mentionné précédemment à la racinte de ce répertoire `assets` :
+
+```sh
+nano assets/script.js
+```
+
+Pensez à remplacer la valeur de la variable `apiKey` par la clé que vous aurez récupérée sur le site 
+
+```javascript
+let apiKey = '123456789'; // Remplacez cette valeur
+let city = 'Roubaix'; // Indiquez ici la ville par défaut qui sera affichée sur la page météo
+getTemperature(city);  // Appel de la fonction appelant l'API avec le paramètre 'city'
+
+// Ajout d'un événement sur le click du bouton « Change city »
+let button = document.querySelector('#modify');
+button.addEventListener('click', () => {
+    city = prompt('Choose a city');
+    getTemperature(city);
+});
+
+// Fonction d'appel à l'API en utilisant un objet XMLHttpRequest pour une requête asynchrone
+function getTemperature(city) {
+    let url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey + '&units=metric';
+    let xhrQuery = new XMLHttpRequest();
+    xhrQuery.open('GET', url);
+    xhrQuery.responseType = 'json';
+    xhrQuery.send();
+
+    xhrQuery.onload = function() {
+        if (xhrQuery.readyState === XMLHttpRequest.DONE) {
+            if (xhrQuery.status === 200) {
+                let city = xhrQuery.response.name;
+                let temperature = xhrQuery.response.main.temp;
+                document.querySelector('#city').textContent = city;
+                document.querySelector('#temperatureValue').textContent = temperature;
+            } else {
+                alert('A problem has occurred, please come try later.');
+            }
+        }
+    };
+}
+```
 
 ### Tests
+
+Vous pouvez aller sur votre navigateur :
+
+![Web page with JavaScript running](images/static_website_installation_cecil_api_call%5B6%5D.png)
+
+Cliquez sur "Changez de ville" et saisissez le nom d'une commune :
+
+![Select a new city](images/static_website_installation_cecil_api_call%5B7%5D.png)
+
+![Page updated](images/static_website_installation_cecil_api_call%5B8%5D.png)
+
+### Conclusion
+
+Ce guide vous donne un exemple de la façon dont vous pouvez intégrer des données dynamiques récupérées sur des sources externes par le biais d'API. Vous pouvez ainsi construire et faire vivre un site en modifiant manuellement les contenus des pages et en en créant de nouvelles, tout en enrichissant leur contenu depuis d'autres sites.
 
 ## Aller plus loin
 
