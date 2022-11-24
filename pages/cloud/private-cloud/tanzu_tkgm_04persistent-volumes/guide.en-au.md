@@ -41,7 +41,7 @@ You can create additional Storage Classes for each *WorkLoad* cluster.
 
 ## Instructions
 
-We will connect to a *WorkLoad* cluster from the console of the **Bootstrap** virtual machine. You can use the [Tanzu Management Cluster Grid administration](https://docs.ovh.com/au/en/tanzu-tkgm-management) guide to create and manage a workload cluster.
+We will connect to a *WorkLoad* cluster from the console of the **Bootstrap** virtual machine. You can use the [Tanzu Management Cluster Grid administration](https://docs.ovh.com/au/en/private-cloud/tanzu-tkgm-management) guide to create and manage a workload cluster.
 
 From the **Bootstrap** virtual machine console, run this command to view the contexts that can be used on this cluster:
 
