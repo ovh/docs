@@ -6,7 +6,7 @@ section: 'Exchange account migration'
 order: 1
 ---
 
-**Last updated 22nd April 2022**
+**Last updated 22nd November 2022**
 
 ## Objective
 
@@ -55,7 +55,7 @@ To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?act
 
 > [!primary]
 >
-> Your OVHcloud account **must be** the administrative contact and technical contact for the Email Pro or Exchange service you are migrating to.
+> Your OVHcloud account must first be an administrative contact **and** technical contact for the MX plan service to be migrated, **as well as** for the Email Pro or Exchange service you are migrating to.
 >
 > For more information on editing contacts, please refer to our guide on [managing contacts for your services](../../customer/managing-contacts/).
 >
