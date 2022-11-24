@@ -31,7 +31,7 @@ Each notebook is linked to a **Public Cloud** project and specifies hardware res
 
 You can create notebooks with the OVHcloud Control Panel (see below in this tutorial) or use the [ovhai CLI](https://docs.ovh.com/asia/en/publiccloud/ai/cli/getting-started-cli/).
 
-AI Notebooks also provide an easy way to access data from your Object Storage, you can read more about it [here](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/manage-data-ui/).
+AI Notebooks also provide an easy way to access data from your Object Storage, you can read more about it [here](https://docs.ovh.com/asia/en/publiccloud/ai/notebooks/manage-data-ui/).
 
 ## Launch your first AI Notebook
 
