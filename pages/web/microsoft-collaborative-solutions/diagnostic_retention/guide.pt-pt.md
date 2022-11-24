@@ -73,4 +73,4 @@ De seguida, valide o seu restauro clicando em `Recuperar`{.action}.
 
 ## Saiba mais
  
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
