@@ -8,7 +8,7 @@ routes:
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->
-**Last updated 23rd November 2022**
+**Last updated 28th November 2022**
 
 ## Objective
 
@@ -185,19 +185,24 @@ The following table provides an overview of filesystem compatibility with RAID l
 |Filesystem|LVM|RAID 0|RAID 1|RAID 5|RAID 6|RAID 7|RAID 10|
 |---|---|---|---|---|---|---|---|
 |Btrfs, ext4, XFS|✅|✅|✅|✅|✅|❌|✅|
+|swap|✅|✅|✅|✅|✅|❌|✅|
 |ZFS¹|❌|✅|✅|✅|✅|✅|❌|
-|swap|❌|⚠️²|❌|❌|❌|❌|❌|
-|NTFS|❌|❌|✅³|❌|❌|❌|❌|
-|UFS, VMFS5, VMFS6, VMFS-L⁴|❌|❌|❌|❌|❌|❌|❌|
+|NTFS|❌|❌|✅²|❌|❌|❌|❌|
+|UFS, VMFS5, VMFS6, VMFS-L³|❌|❌|❌|❌|❌|❌|❌|
 
 ¹ See the [ZFS vdevs vs standard RAID](#raidz2RAID) table for more details.<br />
-² The RAID level for swap can only be set to 1 within the [OVHcloud API](https://api.ovh.com/). In reality, the swap partitions will not use RAID. When a swap partition with size `s` is defined on a server with `n` disks, this will create `n` partitions of size `s` on every disk without any software RAID device underneath.<br />
-³ Windows native RAID (the one configured by the OVHcloud installer) supports RAID 1 but only between two disks while other implementations allow for more than two.<br />
-⁴ The ESXi installer does not support custom partitioning schemes. Partitioning is defined by the software publisher. Nevertheless, the [OVHcloud API](https://api.ovh.com/) can give you an idea of what the partitioning looks like: see [OVHcloud templates](#OVHcloudtemplates) for more details.<br />
+² Windows native RAID (the one configured by the OVHcloud installer) supports RAID 1 but only between two disks while other implementations allow for more than two.<br />
+³ The ESXi installer does not support custom partitioning schemes. Partitioning is defined by the software publisher. Nevertheless, the [OVHcloud API](https://api.ovh.com/) can give you an idea of what the partitioning looks like: see [OVHcloud templates](#OVHcloudtemplates) for more details.<br />
 
 > [!warning]
 >
 > This table is only provided for information purposes. Please note that LVM and especially filesystem compatibility also depend on the OS (OVHcloud template) being installed. See [OVHcloud templates](#OVHcloudtemplates) for more details.
+>
+
+<!-- markdownlint-disable-next-line MD028 -->
+> [!warning]
+>
+> swap with RAID level other than 1 can only be selected from the OVHcloud API, not from the OVHcloud Control Panel. We are currently working on adding this feature to the OVHcloud Control Panel.
 >
 
 #### ZFS vdevs vs standard RAID <a name="raidz2RAID"></a>
