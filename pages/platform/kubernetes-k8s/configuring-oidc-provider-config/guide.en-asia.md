@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure the OIDC provider of an OVHcloud Managed Kub
 section: User guides
 ---
 
-**Last updated 23nd November 2022**
+**Last updated 24th November 2022**
 
 ## Objective
 

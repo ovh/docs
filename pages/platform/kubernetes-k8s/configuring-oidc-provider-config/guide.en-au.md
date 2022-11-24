@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure the OIDC provider of an OVHcloud Managed Kub
 section: User guides
 ---
 
-**Last updated 23nd November 2022**
+**Last updated 24th November 2022**
 
 ## Objective
 
@@ -24,7 +24,7 @@ In this guide you will be able to configure your OIDC provider through the OVHcl
 ## Warning
 
 > [!warning]
-> Several elementary checks, on provider URL, CA content & required claims, for example, exists but if you misconfigured your OIDC provider, error logs will be displayed on Kubernetes API Server side.
+> Several elementary validations are made (e.g. on provider URL, CA content and required claims) but if you misconfigure your OIDC provider, errors will be logged by the Kubernetes API Server, and thus only visible through the cluster's audit logs on the OVHCloud Manager.
 
 ## Instructions
 
@@ -44,12 +44,12 @@ Click on the `...` button in the `OIDC provider` section.
 
 ![Configure OIDC provider menu](images/configure-oidc-menu.png){.thumbnail}
 
-Fill the needed information in the popup:
+Fill the needed information in the popup (note: each field corresponds to a flag from the [API Server configuration documentation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#configuring-the-api-server):
 
 * `Provider URL`: The OIDC issuer url.
 * `Client ID`: The OIDC client ID.
 * `OIDC Username Claim`: JWT claim to use as the user name. By default sub, which is expected to be a unique identifier of the end user. Admins can choose other claims, such as email or name, depending on their provider. However, claims other than email will be prefixed with the issuer URL to prevent naming clashes with other plugins.
-* `OIDC Username Prefix`: Prefix prepended to username claims to prevent clashes with existing names (such as `system:users`). For example, the value `oidc:` will create usernames like `oidc:jane.doe`. If this field isn't set and `oidcUsernameClaim` is a value other than email the prefix defaults to `issuer_url` where `issuer_url` is the value of `oidcIssuerUrl.` The value - can be used to disable all prefixing.
+* `OIDC Username Prefix`: Prefix prepended to username claims to prevent clashes with existing names (such as `system:users`). For example, the value `oidc:` will create usernames like `oidc:jane.doe`. If this field isn't set and `oidcUsernameClaim` is a value other than email the prefix defaults to `issuer_url` where `issuer_url` is the value of `oidcIssuerUrl.` The value `-` can be used to disable all prefixing.
 * `OIDC Groups Claim`: Array of JWT claim to use as the user's group. If the claim is present it must be an array of strings.
 * `OIDC Groups Prefix`: Prefix prepended to group claims to prevent clashes with existing names (such as `system:groups`). For example, the value `oidc:` will create group names like `oidc:engineering` and `oidc:infra`.
 * `OIDC Required Claim`: Array of `key=value` pairs that describe required claims in the ID Token. If set, the claims are verified to be present in the ID Token with a matching value."
