@@ -44,7 +44,7 @@ Click on the `...` button in the `OIDC provider` section.
 
 ![Configure OIDC provider menu](images/configure-oidc-menu.png){.thumbnail}
 
-Fill the needed information in the popup:
+Fill the needed information in the popup (note: each field corresponds to a flag from the [API Server configuration documentation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#configuring-the-api-server):
 
 * `Provider URL`: The OIDC issuer url.
 * `Client ID`: The OIDC client ID.
