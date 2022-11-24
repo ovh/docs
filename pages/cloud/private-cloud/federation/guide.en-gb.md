@@ -156,7 +156,7 @@ A task status window appears, wait until you are one hundred percent and click `
 
 ![02 add user 03](images/02-adduser03.png)
 
-A new user will appear in the Control Panel. You can use this user to log in to your VMware cluster.
+A new user will be displayed in the Control Panel. You can use this to log in to the vSphere interface.
 
 > [!primary]
 >
@@ -169,7 +169,7 @@ A new user will appear in the Control Panel. You can use this user to log in to 
 
 You can authorise directly a set of users (groups) from your Active Directory server to access your Hosted Private Cloud from the OVHcloud Control Panel.
 
-click on `Importer u`{.action}.
+click on `Import user`{.action}.
 
 ![03 add group 01](images/03-addgroup01.png)
 

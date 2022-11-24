@@ -156,7 +156,7 @@ Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être �
 
 ![02 add user 03](images/02-adduser03.png)
 
-Un nouvel utilisateur apparait dans le manager, vous pouvez l'utilisez pour vous connecter à l'interface vCenter de votre infrastructure. 
+Un nouvel utilisateur est affiché dans le manager, vous pouvez l'utilisez pour vous connecter à l'interface vSphere. 
 
 > [!primary]
 >
