@@ -76,9 +76,10 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
 
 - Get an existing cluster's OIDC configuration:
 
-```bash
-GET /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
-```
+> [!api]
+>
+> @api {GET} /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
+> 
 
 **Result:**
 
@@ -104,9 +105,10 @@ GET /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
 
 - Update an existing cluster's OIDC provider to change username and groups prefix:
 
-```bash
-PUT /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
-```
+> [!api]
+>
+> @api {PUT} /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
+> 
 
 ```json
 {
@@ -130,9 +132,10 @@ PUT /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
 
 - Configure an OIDC provider for your OVHcloud Managed Kubernetes cluster:
 
-```bash
-POST  /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
-```
+> [!api]
+>
+> @api {POST} /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
+> 
 
 ```json
 {
@@ -156,9 +159,10 @@ POST  /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
 
 - Delete an existing cluster's OIDC configuration:
 
-```bash
-DELETE /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
-```
+> [!api]
+>
+> @api {DELETE} /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
+> 
 
 ### Configure OIDC provider through Terraform
 
