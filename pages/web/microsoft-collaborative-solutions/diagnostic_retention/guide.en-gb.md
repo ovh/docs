@@ -1,5 +1,5 @@
 ---
-title: Restoreing deleted items from your email account
+title: Restoring deleted items from your email account
 slug: email-retention
 excerpt: Find out how to restore deleted items from your email account via webmail (OWA)
 section: Exchange Diagnostics
