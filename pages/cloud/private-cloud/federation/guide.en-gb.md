@@ -111,11 +111,11 @@ Adapt this configuration to your company and apply that rule on your firewall.
 
 From your OVHcloud Control Panel, go to the OVHcloud VMware cluster settings.
 
-Go to the `Users`{.action} tab and click `Add LDAP Active Directory{.action} in the **Active Directories (LDAPS)** section.
+Go to the `Users`{.action} tab and click `Add an Active Directory LDAPS`{.action} in the **Active Directories (LDAPS)** section.
 
 ![01 add directory 01](images/01-add-directory01.png)
 
-Enter these information:
+Enter these informations :
 
 * **Active Directory domain name** : Active directory domain name.
 * **Active Directory domain alias**: NetBIOS domain name.

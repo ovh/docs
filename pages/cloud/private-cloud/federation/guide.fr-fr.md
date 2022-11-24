@@ -105,7 +105,7 @@ Adaptez cette configuration à votre entreprise et mettez en place la règle de 
 
 A partir de votre espace client OVHcloud allez dans les paramètres OVHcloud de votre infrastructure Hosted Private Cloud by VMware.
 
-Positionnez-vous sur l'onglet `Utilisateurs`{.action} et cliquez sur `Ajouter un Active Directory LDAPs`{.action} dans la rubrique **Active Directories (LDAPs)**.
+Positionnez-vous sur l'onglet `Utilisateurs`{.action} et cliquez sur `Ajouter un Active Directory LDAPS`{.action} dans la rubrique **Active Directories (LDAPs)**.
 
 ![01 add directory 01](images/01-add-directory01.png)
 
