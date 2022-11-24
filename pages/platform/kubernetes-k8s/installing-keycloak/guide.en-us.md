@@ -5,7 +5,7 @@ excerpt: Secure Your OVHcloud Managed Kubernetes Cluster with Keycloak, an OpenI
 section: Tutorials
 ---
 
-**Last updated 28th June, 2022.**
+**Last updated 25th November, 2022.**
 
 <style>
  pre {
@@ -570,8 +570,8 @@ By default, there is a single realm in Keycloak called `Master`. It is dedicated
 
 Let's create a dedicated realm for our tutorial:
 
-1) Display the dropdown menu in the top-left corner where it is indicated `Master`, then click on the `Add realm`{.action} blue button.
-2) Fill in the form with this name: `ovh-lab-k8s-oidc-authentication`, then click on the `Create`{.action} blue button.
+1. Display the dropdown menu in the top-left corner where it is indicated `Master`, then click on the `Add realm`{.action} blue button.
+2. Fill in the form with this name: `ovh-lab-k8s-oidc-authentication`, then click on the `Create`{.action} blue button.
 
 ![Keycloak create realm](images/keycloak-realm.png)
 
@@ -585,9 +585,8 @@ A __client__ in Keycloak is an entity that can request a Keycloak server to auth
 
 <ol start="2">
   <li>Click on <code class="action">Create</code> in the top-right corner of the table.</li>
+  <li>Fill in the form with the following parameters:</li>
 </ol>
-
-3. Fill in the form with the following parameters:
 
 ```text
 Client ID: k8s-oidc-auth
@@ -600,9 +599,6 @@ In our example, the new Client informations are:
 
 <ol start="4">
   <li>Then click on the <code class="action">Save</code> button.</li>
-</ol>
-
-<ol start="5">
   <li>In the new created client, Find the <code>Access Type</code> field and set its value to <code>confidential</code> to require a secret to initiate the login protocol. Then click on the <code class="action">Save</code> blue button to save the change.
 </ol>
 
@@ -610,19 +606,11 @@ In our example, the new Client informations are:
 
 <ol start="6">
   <li>Then click on the <code class="action">Credentials</code> tab. Find the <code>Valid Redirect URIs</code> field and set the following value: <code>*</code></li>
-</ol>
-
-<ol start="7">
-  <li>Find the <code>Admin URL</code> and the <code>Web Origins</code> fields and set their values to your defined domain name if it is not already done. 
-  
-  In our example: <code>https://keycloak.example.com/</code>.
+  <li>Find the <code>Admin URL</code> and the <code>Web Origins</code> fields and set their values to your defined domain name if it is not already done.<br><br>
+  In our example: <code>https://keycloak.example.com/</code>.<br>
   __\/!\ Be careful to use the HTTPS schema only /!\\__</li>
- </ol> 
-  
-<ol start="8">
   <li>Save your changes.</li>
 </ol>  
-
 
 #### Create a USER
 
@@ -650,28 +638,7 @@ The first user connection required an initial password, so let's create it:
 
 ### Configure Keycloak instance in your Kubernetes cluster as an OIDC provider
 
-Now you have a working keycloak, and created a User, you can log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
-Go to the `Public Cloud`{.action} section, and then in the sidebar, click on `Managed Kubernetes Service`{.action}.
-
-![OVHcloud Kubernetes section](images/kube.png)
-
-Click in your Kubernetes cluster you want to link to your OIDC provider.
-At the right, you can find the `Access and security`{.action} section:
-
-![Manager](images/manager.png)
-
-In this section, you can find the `OIDC provider`{.action}.
-For the moment, you should have the information message: "No OIDC provider configured".
-
-In order to add our OIDC provider, click on the `...`{.action} button, and then on `Configure an OIDC provider`{.action}.
-
-![Configure an OIDC provider](images/configure-oidc-provider.png)
-
-You should have a new pop-up. Fill it with our Keycloak informations like this:
-
-![OIDC popup](images/popup.png)
-
-In our example, the Provider URL is: `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication`.
+Now you have a working keycloak, your Provider URL is `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication` and you created a User, you can watch the [Configuring the OIDC provider on an OVHcloud Managed Kubernetes cluster](../configure-oidc-provider/) guide to configure the OIDC provider on your Kubernetes cluster through Control Panel, the API or Terraform. 
 
 Explanations:
 
@@ -771,8 +738,6 @@ If you can see the nodes of your Managed Kubernetes Service, congratulations, yo
 ## Upgrade the Keycloak deployment if needed
 
 Enter the following command:
-
-TODO: xxx
 
 ```bash
 helm upgrade \
