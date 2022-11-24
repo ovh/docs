@@ -24,7 +24,7 @@ In this guide you will be able to configure your OIDC provider through the OVHcl
 ## Warning
 
 > [!warning]
-> Several elementary checks, on provider URL, CA content & required claims, for example, exists but if you misconfigured your OIDC provider, error logs will be displayed on Kubernetes API Server side.
+> Several elementary validations are made (e.g. on provider URL, CA content and required claims) but if you misconfigure your OIDC provider, errors will be logged by the Kubernetes API Server, and thus only visible through the cluster's audit logs on the OVHCloud Manager.
 
 ## Instructions
 
