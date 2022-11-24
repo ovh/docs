@@ -100,7 +100,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Fournir l'inventaire des volumes consommées | I | RA |
+| Fournir l'inventaire des volumes de stockage consommé | I | RA |
 | Gérer la sécurité des infrastructures de gestion (API, control plane) |   | RA |
 | Assurer la sécurité des OS, softwares et middlewares installés sur les instances | RA |  |
 | Gérer la sécurité physique des équipements et infrastructures hébergés | I | RA |
