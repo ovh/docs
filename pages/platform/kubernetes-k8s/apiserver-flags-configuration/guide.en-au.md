@@ -27,7 +27,7 @@ section: User guides
  }
 </style>
 
-**Last updated 19th September 2022**
+**Last updated 25th November 2022**
 
 ## Objective
 
@@ -64,11 +64,12 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
 
 - Get an existing cluster's customization:
 
-```bash
-GET /cloud/project/{serviceName}/kube/{kubeID}/customization
-```
+> [!api]
+>
+> @api {GET} /cloud/project/{serviceName}/kube/{kubeID}/customization
+>
 
-Result:
+**Result:**
 ```json
 {
     "apiServer": {
@@ -82,9 +83,11 @@ Result:
 
 - Update an existing cluster's customization to disable the "AlwaysPullImages" admission plugin (e.g. in order to avoid our kubelet agents from reaching the Docker Hub download rate limit):
 
-```bash
-PUT /cloud/project/{serviceName}/kube/{kubeID}/customization
-```
+> [!api]
+>
+> @api {PUT} /cloud/project/{serviceName}/kube/{kubeID}/customization
+>
+
 ```json
 {
     "apiServer": {
@@ -98,9 +101,11 @@ PUT /cloud/project/{serviceName}/kube/{kubeID}/customization
 
 - Create a Kubernetes cluster in the GRA5 region while disabling the "AlwaysPullImages" admission plugin:
 
-```bash
-POST /cloud/project/{serviceName}/kube
-```
+> [!api]
+>
+> @api {POST} /cloud/project/{serviceName}/kube
+>
+
 ```json
 {
     "region": "GRA5",
@@ -118,9 +123,11 @@ POST /cloud/project/{serviceName}/kube
 
 - Reset an existing cluster while disabling the "AlwaysPullImages" admission plugin:
 
-```bash
-POST /cloud/project/{serviceName}/kube/{kubeID}/reset
-```
+> [!api]
+>
+> @api {POST} /cloud/project/{serviceName}/kube/{kubeID}/reset
+>
+
 ```json
 {
     "customization": {
