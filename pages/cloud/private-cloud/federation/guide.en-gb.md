@@ -148,7 +148,7 @@ Click `Import User`{.action}.
 
 ![02 add user 01](images/02-adduser01.png)
 
-Select your Active Directory, click `Import User`{.action}, enter your Active Directory Username and click `Next`{.action}.
+Select your Active Directory, click `Import User`{.action}, enter your Active Directory Username in the UPN format (user@eample.com) and click `Next`{.action}.
 
 ![02 add user 02](images/02-adduser02.png)
 

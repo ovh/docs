@@ -148,7 +148,7 @@ Cliquez sur `Importer un utilisateur`{.action}
 
 ![02 add user 01](images/02-adduser01.png)
 
-Sélectionnez votre annuaire Active Directory, cliquez sur `Importer un utilisateur`{.action}, saisissez votre nom d'utilisateur et cliquez sur `Suivant`{.action}.
+Sélectionnez votre annuaire Active Directory, cliquez sur `Importer un utilisateur`{.action}, saisissez votre nom d'utilisateur dans un format UPN (user@eample.com) et cliquez sur `Suivant`{.action}.
 
 ![02 add user 02](images/02-adduser02.png)
 
