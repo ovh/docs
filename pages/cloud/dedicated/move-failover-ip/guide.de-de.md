@@ -61,7 +61,7 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 ### Eine IP über das OVHcloud Kundencenter umziehen
 
 > [!warning]
-> Nur ein Block mit einer einzigen Größe (/32) kann von einem dedizierten Server auf einen VPS verschoben werden.
+> Nur ein Block mit einer einzigen Adresse (/32) kann von einem dedizierten Server auf einen VPS verschoben werden.
 >
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}.
