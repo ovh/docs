@@ -33,7 +33,7 @@ If you need to migrate multiple accounts, we recommend that you set up a migrati
 
 This step is optional if you already have an Exchange service to which you are migrating.
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, then order the Email Pro or Exchange service you want. Follow the steps, then wait until the service is actually installed. An email will be sent to you as soon as it is complete.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, then order the Exchange service you want. Follow the steps, then wait until the service is actually installed. An email will be sent to you as soon as it is complete.
 
 > [!primary]
 >
@@ -55,7 +55,7 @@ To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?acti
 
 > [!primary]
 >
-> Your OVHcloud account must first be an administrative contact **and** technical contact for the MX plan service to be migrated, **as well as** for the Email Pro or Exchange service you are migrating to.
+> Your OVHcloud account must first be an administrative contact **and** technical contact for the MX plan service to be migrated, **as well as** for the Exchange service you are migrating to.
 >
 > For more information on editing contacts, please refer to our guide on [managing contacts for your services](https://docs.ovh.com/ca/en/customer/managing-contacts/).
 >

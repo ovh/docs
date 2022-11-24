@@ -11,7 +11,7 @@ hidden: true
 
 ## Objectif
 
-OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dans une offre d'hébergement web), E-mail Pro et Exchange. Celles-ci bénéficient de fonctionnalités propres et peuvent s'adapter à plusieurs usages. Vos besoins évoluent ? OVHcloud met à votre disposition un outil de migration vous permettant de passer d'une solution à une autre.
+OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dans une offre d'hébergement web) et Exchange. Celles-ci bénéficient de fonctionnalités propres et peuvent s'adapter à plusieurs usages. Vos besoins évoluent ? OVHcloud met à votre disposition un outil de migration vous permettant de passer d'une solution à une autre.
 
 **Découvrez comment migrer une adresse e-mail MX Plan vers un compte Exchange.**
 
@@ -34,7 +34,7 @@ Si vous devez migrer plusieurs comptes, nous vous conseillons de mettre en place
 
 Cette étape est facultative si vous disposez déjà d'un service Exchange vers lequel vous effectuez cette migration.
 
-Dans le cas contraire, connectez-vous à votre [espace client OVHcloud](espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), puis commandez le service E-mail Pro ou Exchange de votre choix. Suivez les différentes étapes, puis patientez jusqu'à l'installation du service. Un e-mail vous sera envoyé dès la fin de celle-ci.
+Dans le cas contraire, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), puis commandez le service Exchange de votre choix. Suivez les différentes étapes, puis patientez jusqu'à l'installation du service. Un e-mail vous sera envoyé dès la fin de celle-ci.
 
 > [!primary]
 >
@@ -56,9 +56,9 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/a
 
 > [!primary]
 >
-> Votre compte OVHcloud doit préalablement être contact administrateur **et** contact technique du service MX plan à migrer, **ainsi que** du service E-mail Pro ou Exchange vers lequel vous migrez.
+> Votre compte OVHcloud doit préalablement être contact administrateur **et** contact technique du service MX plan à migrer, **ainsi que** du service Exchange vers lequel vous migrez.
 >
-> Pour plus d'information sur les changements de contacts, consultez notre guide pour [gérer les contacts de ses services](../../customer/gestion-des-contacts/).
+> Pour plus d'information sur les changements de contacts, consultez notre guide pour [gérer les contacts de ses services](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/).
 >
 
 La migration peut être effectuée depuis deux interfaces :<br>
