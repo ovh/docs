@@ -92,7 +92,7 @@ Narzędzia te nie są bowiem w stanie uwzględnić żądań wewnętrznych, o kt�
 
 W tym pierwszym kroku sprawdzisz, czy powstały opóźnienia:
 
-- lub
+- albo twoja strona, ze względu na jej wewnętrzne funkcjonowanie;
 - infrastrukturą hostingu, na której znajduje się Twoja strona.
 
 Wszystkie diagnozy z etapu 1 muszą być wykonane **bez wyjątku**, aby określić, czy spowolnienie wynika z usług hostingu lub strony WWW hostowanej na hostingu.
