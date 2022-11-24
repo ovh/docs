@@ -220,7 +220,7 @@ The graphical interface for the Linux virtual machine is then available.
 
 The configuration and administration tools for **Tanzu Kubernetes Grid** are installed on the **Bootstrap** virtual machine. This virtual machine must be able to connect to the Internet and to the vSphere cluster.
 
-Write down **the public IP address** you use on this virtual machine and use this guide [Authorise IP addresses to connect to vCenter](https://docs.ovh.com/es/private-cloud/authorise-ip-addresses-vcenter/) to grant access to the vSphere cluster to the new virtual machine.
+Write down **the public IP address** you use on this virtual machine and use this guide [Authorise IP addresses to connect to vCenter](https://docs.ovh.com/es/private-cloud/autorizar-direcciones-ip-a-conectarse-al-vcenter/) to grant access to the vSphere cluster to the new virtual machine.
 
 ### Deploying the **Tanzu Kubernetes Grid** cluster on your infrastructure 
 
