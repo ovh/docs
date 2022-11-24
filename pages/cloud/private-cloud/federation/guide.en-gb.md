@@ -5,7 +5,7 @@ excerpt: Learn how to use you Active Directory server as an authentication sourc
 section: 'VMware vSphere features'
 ---
 
-**Last updated 23th November 2022**
+**Last updated 24th November 2022**
 
 ## Objective
 
@@ -121,22 +121,30 @@ Enter these information:
 * **Active Directory domain alias**: NetBIOS domain name.
 * **Description (optional)** :  Active directory domain name.
 * **Active Directory server IP address** : Public IP address to access your LDAPS server.
-* **Active Directory LDAPS server host name** : The public FQDN name of your Active Directory server.
-* **LDAPS service port*** : The LDAPS service port number.
-* **SSL certificate thumbprint** : The SSL Thumbprint certificate retrieved earlier.
-* **Active Directory username** : pre-Windows 2000 username, in the UPN format (user@eample.com).
+* **Active Directory LDAPS server host name** : Public FQDN name of your Active Directory server.
+* **LDAPS service port*** : LDAPS service port number.
+* **SSL certificate thumbprint** : SSL Thumbprint certificate retrieved earlier.
+* **Active Directory username** : Pre-Windows 2000 username, in the UPN format (user@eample.com).
 * **Active Directory user password** : Active Directory user password.
-* **DN base for users** : The DN (LDAP syntax) of the folder containing users such as dc=example,dc=com for the domain example.com.
-* **DN base for groups** : The DN of the folder containing the groups, such as dc=example,dc=com for the domain example.com.
+* **DN base for users** : DN (Distinguish Name) containing users such as dc=example,dc=com for the domain example.com.
+* **DN base for groups** : DN (Distinguish Name) containing the groups, such as dc=example,dc=com for the domain example.com.
 
 Then click `Submit`{.action}.
 
+![01 add directory 02](images/01-add-directory02.png)
 
-### Authorise an Active Directory user to access your Hosted Private Cloud
+A window will pop up to show progress, wait until you are one hundred percent and click `Close`{.action}.
 
-Now that your VMware infrastructure is connected to your Active directory, you can add users from that directory to connect to your VMware cluster.
+> [!primary]
+>
+> If a parameter is not valid, the task will be cancelled before reaching 100%, in this case wait a few minutes for the cancellation to be complete before relaunching the configuration.
+>
 
-Click `Import User`{.action}
+### Allow an Active Directory user to access your Hosted Private Cloud
+
+You can allow an Active Directory user to access your Hosted Private Cloud from your OVHcloud Control Panel.
+
+Click `Import User`{.action}.
 
 ![02 add user 01](images/02-adduser01.png)
 
@@ -152,14 +160,14 @@ A new user will appear in the Control Panel. You can use this user to log in to 
 
 > [!primary]
 >
-> By default, the user does not have any permission on your Hosted Private Cloud. They can connect to your Hosted Private Cloud, but will not have any access. You can adjust permissions from the OVHcloud Control Panel.
+> By default, the user does not have any permission on your Hosted Private Cloud. It will be able to connect to your Hosted Private Cloud but it will not have any access. You can adjust the permissions from the OVHcloud Control Panel.
 >
 
 ![02 add user 04](images/02-adduser04.png)
 
-### Authorise an Active Directory group to access your Hosted Private Cloud
+### Allow an Active Directory group to access your Hosted Private Cloud
 
-You can authorise a group of users directly from your Active Directory server to access your Hosted Private Cloud through the OVHcloud Control Panel.
+You can authorise directly a set of users (groups) from your Active Directory server to access your Hosted Private Cloud from the OVHcloud Control Panel.
 
 click on `Importer u`{.action}.
 
@@ -173,11 +181,11 @@ A task status window appears, wait until you are one hundred percent and click `
 
 ![03 add group 03](images/03-addgroup03.png)
 
-The group will appear in the list of users for your VMware cluster. Members of this group will be able to log in to your VMware cluster.
+The group appears in the users list for your cluster, and members of this group can log in to your cluster’s administration interface.
 
 > [!primary]
 >
-> By default, group members do not have any permissions on your Hosted Private Cloud. They can connect to your Hosted Private Cloud, but will not have any access. You can adjust permissions from the OVHcloud Control Panel.
+> By default, the group does not have any permission on your Hosted Private Cloud. Its members will be able to connect to your Hosted Private Cloud but they will not have any access. You can adjust the permissions from the OVHcloud Control Panel.
 >
 
 ![03 add group 04](images/03-addgroup04.png)

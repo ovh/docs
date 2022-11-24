@@ -5,7 +5,7 @@ excerpt: "Découvrez comment utiliser votre serveur Active Directory comme sourc
 section: Fonctionnalités VMware vSphere
 ---
 
-**Dernière mise à jour le 23/11/2022**
+**Dernière mise à jour le 24/11/2022**
 
 ## Objectif
 
@@ -117,11 +117,11 @@ Saisissez ces informations :
 * **Adresse IP du serveur Active Directory** : Adresse IP publique d'accès à votre serveur LDAPS.
 * **Nom d'hôte du serveur LDAPS Active Directory** : Nom FQDN public de votre serveur Active directory.
 * **Port du service LDAPS*** : Numéro du port du service LDAPS.
-* **Empreinte du certificat SSL** : Empreinte du certificat SSL récupéré précédemment.
+* **Empreinte du certificat SSL** : Empreinte du certificat SSL.
 * **Identifiant utilisateur Active Directory** : Identifiant pre-Windows 2000 sous la forme UPN (user@example.com).
 * **Mot de passe utilisateur Active Directory** : Mot de passe de l'utilisateur Active Directory.
-* **Base DN pour les utilisateurs** : Nom DN (Syntaxe LDAP) du dossier contenant les utilisateurs comme par exemple dc=example,dc=com pour le domaine example.com.
-* **Base DN pour les groupes** : Nom DN (Syntaxe LDAP) du dossier contenant les groupes comme par exemple dc=example,dc=com pour le domaine example.com.
+* **Base DN pour les utilisateurs** : Nom DN contenant les utilisateurs comme par exemple dc=example,dc=com pour le domaine example.com.
+* **Base DN pour les groupes** : Nom DN contenant les groupes comme par exemple dc=example,dc=com pour le domaine example.com.
 
 Ensuite cliquez sur `Executer`{.action}.
 
@@ -136,14 +136,13 @@ Une fenêtre apparait pour afficher l'état d'avancement, attendez d'être à ce
 
 ![01 add directory 03](images/01-add-directory03.png)
 
-Votre domaine Active Directory est relié à votre cluster VMware. Vous pouvez maintenant ajouter des utilisateurs et des groupes de votre annuaire Active Directory pour vous connecter à votre cluster VMware.
+Votre domaine Active Directory est relié à votre infrastructure VMware. Vous pouvez maintenant ajouter des utilisateurs et des groupes de votre annuaire Active Directory pour vous connecter à votre interface vSphere.
 
 ![01 add directory 04](images/01-add-directory04.png)
 
-
 ### Autoriser un utilisateur Active Directory à accéder à votre Hosted Private Cloud
 
-Maintenant que votre cluster VMware est connecté à votre annuaire Active directory vous pouvez rajouter des utilisateurs de cet annuaire pour permettre la connexion à vCenter.
+Vous avez la possibilité d'autoriser un utilisateur issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud à partir de votre espace client OVHcloud.
 
 Cliquez sur `Importer un utilisateur`{.action}
 
@@ -169,7 +168,7 @@ Un nouvel utilisateur apparait dans le manager, vous pouvez l'utilisez pour vous
 
 ### Autoriser un groupe Active Directory à accéder à votre Hosted Private Cloud
 
-Vous avez la possibilité d'autoriser directement un groupe d'utilisateurs issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud au travers de l'espace client OVHcloud.
+Vous avez la possibilité d'autoriser directement un ensemble d'utilisateurs (groupe) issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud au travers de l'espace client.
 
 Cliquez sur `Importer un utilisateur`{.action}.
 
@@ -183,11 +182,11 @@ Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être �
 
 ![03 add group 03](images/03-addgroup03.png)
 
-Le groupe apparait dans la liste utilisateurs de votre cluster, les membres de ce groupe auront la possibilité de se connecter à vCenter.
+Le groupe apparait dans la liste utilisateurs de votre cluster, les membres de ce groupe peuvent se connecter à l'interface d'administration de votre cluster.
 
 > [!primary]
 >
-> Par défaut, les membre du groupe ne possèdent aucunes permissions sur votre Hosted Private Cloud. Il pourra se connecter à votre Hosted Private Cloud mais n'aura aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
+> Par défaut, le groupe ne possède aucune permission sur votre Hosted Private Cloud. Ses membres pourront se connecter à votre Hosted Private Cloud mais n'auront aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
 >
 
 ![03 add group 04](images/03-addgroup04.png)
