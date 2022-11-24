@@ -17,9 +17,8 @@ Vous avez supprimé par erreur un ou plusieurs éléments (e-mail, contact, rend
 ## Prérequis
  
 - Disposer d'une solution e-mail OVHcloud:
-    - **MX Plan** ([nouvelle version uniquement](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/#en-pratique)) proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/)
-    - ou [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/)
-    - ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/)
+    - **MX Plan** ([nouvelle version uniquement](https://docs.ovh.com/ca/fr/emails/generalites-sur-les-emails-mutualises/#en-pratique)) proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)
+    - ou [**Hosted Exchange**](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)
 - Connaître les identifiants de connexion de l’adresse e-mail concernée
 
 ## En pratique
@@ -44,7 +43,7 @@ La récupération des éléments supprimés peut être réalisée depuis le webm
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Connectez-vous à l'adresse e-mail concernée via le webmail (OWA) : <https://www.ovh.com/fr/mail/>.
+Connectez-vous à l'adresse e-mail concernée via le webmail (OWA) : <https://www.ovhcloud.com/fr-ca/mail/>.
 
 > [!primary]
 >
