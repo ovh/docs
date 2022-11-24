@@ -122,7 +122,7 @@ Enter these informations :
 * **Description (optional)** :  Active directory domain name.
 * **Active Directory server IP address** : Public IP address to access your LDAPS server.
 * **Active Directory LDAPS server host name** : Public FQDN name of your Active Directory server.
-* **LDAPS service port*** : LDAPS service port number.
+* **LDAPS service port** : LDAPS service port number.
 * **SSL certificate thumbprint** : SSL Thumbprint certificate retrieved earlier.
 * **Active Directory username** : Pre-Windows 2000 username, in the UPN format (user@eample.com).
 * **Active Directory user password** : Active Directory user password.

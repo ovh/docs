@@ -116,7 +116,7 @@ Saisissez ces informations :
 * **Description (Facultatif)** : Nom de domaine active Directory.
 * **Adresse IP du serveur Active Directory** : Adresse IP publique d'accès à votre serveur LDAPS.
 * **Nom d'hôte du serveur LDAPS Active Directory** : Nom FQDN public de votre serveur Active directory.
-* **Port du service LDAPS*** : Numéro du port du service LDAPS.
+* **Port du service LDAPS** : Numéro du port du service LDAPS.
 * **Empreinte du certificat SSL** : Empreinte du certificat SSL.
 * **Identifiant utilisateur Active Directory** : Identifiant pre-Windows 2000 sous la forme UPN (user@example.com).
 * **Mot de passe utilisateur Active Directory** : Mot de passe de l'utilisateur Active Directory.
