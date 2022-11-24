@@ -37,7 +37,6 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Produire, acheminer, livrer et maintenir les instances physiques et les bâtiments d’hébergement | I | RA |
 
-
 #### 2.2. Modèle de réversibilité
 
 | **Activité** | **Client** | **OVHcloud** |
@@ -131,7 +130,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Déployer les correctifs, mettre à jour et configurer les OS, softwares, middlewares et systèmes d’information hébergés sur les instances | RA |  |
 
-### 4. Réversion
+### 4. Réversibilité
 
 #### 4.1. Modèle de réversibilité
 
