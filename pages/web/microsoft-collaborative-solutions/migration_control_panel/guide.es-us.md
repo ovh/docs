@@ -7,7 +7,7 @@ order: 1
 hidden: true
 ---
 
-**Última actualización: 22/02/2022**
+**Última actualización: 22/11/2022**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -32,7 +32,7 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (incluido en u
 
 Este paso es opcional si ya tiene un servicio Exchange al que quiere realizar la migración.
 
-En caso contrario, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y contrate el servicio Email Pro o Exchange que desee. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
+En caso contrario, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y contrate el servicio Exchange que desee. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
 
 > [!primary]
 >
@@ -51,6 +51,13 @@ Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/
 |Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](#VersionHistoriqueMxplan).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](#NouvelleVersionMxplan).|
 
 #### 3.1 Migrar una solución MXPlan histórica <a name="VersionHistoriqueMxplan"></a>
+
+> [!primary]
+>
+> Su cuenta de OVHcloud debe previamente ser contacto administrador **y** contacto técnico del servicio MX Plan que vaya a migrar, **así como** del servicio Exchange al que vaya migrando.
+>
+> Para más información sobre los cambios de contactos, consulte nuestra guía para [gestionar los contactos de sus servicios](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/).
+>
 
 La migración puede realizarse desde dos interfaces:<br>
 

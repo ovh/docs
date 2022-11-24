@@ -89,7 +89,7 @@ Load the previously trained model for handwritten digits classification.
 
 > [!primary]
 >
-> Here you will use your trained model, then save it in an Object Storage container. Click [here](https://docs.ovh.com/us/en/ai-training/data-cli/) to learn more about Object Storage.
+> Here you will use your trained model, then save it in an Object Storage container. Click [here](https://docs.ovh.com/us/en/publiccloud/ai/cli/data-cli/) to learn more about Object Storage.
 >
 
 ```python

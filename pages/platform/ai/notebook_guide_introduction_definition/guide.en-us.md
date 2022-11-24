@@ -6,7 +6,7 @@ section: AI Notebooks - Guides
 order: 02
 ---
 
-**Last updated 11th April, 2022.**
+**Last updated 24th November, 2022.**
 
 ## Objective
 
@@ -22,16 +22,16 @@ The OVHcloud AI Notebooks service provides you Jupyter or VSCode notebooks, link
 
 **Notebooks** are files which contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc…). Notebooks are both human-readable documents containing the analysis description and the results (figures, tables, etc..) as well as executable files which can be run to perform data analysis. It's vastly used across developer world, especially in the data and artificial intelligence fields.
 
-**OVHcloud AI Notebook** is our solution for managed Jupyter or VSCode notebooks. You can launch your notebooks quickly with the CPUs and GPUs resources you need. 
+**OVHcloud AI Notebook** is our solution for managed Jupyter or VSCode notebooks. You can launch your notebooks quickly with the CPUs and GPUs resources you need.
 You also get secure user access, simplified use of your data, and the most popular artificial intelligence frameworks (TensorFlow, PyTorch, Hugging Face, Scikit-learn, ...).
 
 The advantage compared to doing your own setup is that everything is already installed for you, and that you pay only for your notebooks while they are running.
 
 Each notebook is linked to a **Public Cloud** project and specifies hardware resources along with a machine learning framework and an editor among those available.
 
-You can create notebooks with the OVHcloud Control Panel (see below in this tutorial) or use the [ovhai CLI](https://docs.ovh.com/us/en/publiccloud/ai/cli/getting-started-cli/). 
+You can create notebooks with the OVHcloud Control Panel (see below in this tutorial) or use the [ovhai CLI](https://docs.ovh.com/us/en/publiccloud/ai/cli/getting-started-cli/).
 
-AI Notebooks also provide an easy way to access data from your Object Storage, you can read more about it [here](https://docs.ovh.com/us/en/publiccloud/ai/notebooks/tuto-access-object-storage-data/).
+AI Notebooks also provide an easy way to access data from your Object Storage, you can read more about it [here](https://docs.ovh.com/us/en/publiccloud/ai/notebooks/manage-data-ui/).
 
 ## Launch your first AI Notebook
 
@@ -67,7 +67,7 @@ Choose the AI framework you want to use and click on the `Next`{.action} button.
 > [!primary]
 >
 > As you can see a lot of fameworks are available. This guide uses one of the most famous, _PyTorch_.
-> As you can guess all of these Frameworks are _deployed_ as container based on images. 
+> As you can guess all of these Frameworks are _deployed_ as container based on images.
 >
 
 Next, select your privacy settings and click on the `Next`{.action} button.
@@ -177,4 +177,4 @@ During its lifetime the AI Notebook will transition between the following status
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)

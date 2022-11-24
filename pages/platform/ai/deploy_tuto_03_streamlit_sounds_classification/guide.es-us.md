@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/'
 ---
 
-**Last updated 3rd November, 2022.**
+**Last updated 24th November, 2022.**
 
 > [!primary]
 >
@@ -122,7 +122,7 @@ Define the function that classifies the sounds from the previously trained model
 
 > [!primary]
 >
-> Here you will use your trained model, then save it in an Object Container. Click [here](https://docs.ovh.com/us/es/ai-training/data-cli/) to learn more about Object Storage.
+> Here you will use your trained model, then save it in an Object Container. Click [here](https://docs.ovh.com/us/es/publiccloud/ai/cli/data-cli/) to learn more about Object Storage.
 >
 
 ```python
@@ -261,7 +261,7 @@ docker build . -t streamlit_app:latest
 >
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
-> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **sreamlit_app:latest**.
+> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **streamlit_app:latest**.
 >
 
 ### Test it locally (optional)

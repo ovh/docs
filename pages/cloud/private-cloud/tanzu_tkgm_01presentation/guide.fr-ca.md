@@ -71,7 +71,7 @@ Les volumes persistants sont stockés par défaut sur le stockage VMware (vSAN o
 
 Il est possible de créer des **Custom Storage Class** pour définir un autre emplacement.
 
-Utilisez le guide « [Gestion des volumes permanents dans Tanzu Kubernetes Grid](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-permanent-volumes) » pour ajouter une application qui utilise un volume permanent externe.
+Utilisez le guide « [Gestion des volumes permanents dans Tanzu Kubernetes Grid](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-persistent-volumes) » pour ajouter une application qui utilise un volume permanent externe.
 
 ### Sauvegarde de vos applications 
 
@@ -83,7 +83,7 @@ Diverses solutions de sauvegarde compatibles avec **Tanzu Kubernetes Grid** exis
 
 [Administrer un cluster Tanzu Kubernetes GRID](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-management)
 
-[Gestion des volumes sur un cluster Tanzu Kubernetes GRID](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-permanent-volumes)
+[Gestion des volumes sur un cluster Tanzu Kubernetes GRID](https://docs.ovh.com/ca/fr/private-cloud/tanzu-tkgm-persistent-volumes)
 
 [Présentation de VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
