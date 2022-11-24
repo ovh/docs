@@ -5,7 +5,7 @@ excerpt: Secure Your OVHcloud Managed Kubernetes Cluster with Keycloak, an OpenI
 section: Tutorials
 ---
 
-**Last updated 25th November, 2022.**
+**Last updated 24th November, 2022.**
 
 <style>
  pre {
@@ -638,7 +638,7 @@ The first user connection required an initial password, so let's create it:
 
 ### Configure Keycloak instance in your Kubernetes cluster as an OIDC provider
 
-Now you have a working keycloak, your Provider URL is `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication` and you created a User, you can watch the [Configuring the OIDC provider on an OVHcloud Managed Kubernetes cluster](../configure-oidc-provider/) guide to configure the OIDC provider on your Kubernetes cluster through Control Panel, the API or Terraform. 
+Now that you have a working keycloak, your Provider URL is `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication`, and since you created a User, you can read the [Configuring the OIDC provider on an OVHcloud Managed Kubernetes cluster](../configure-oidc-provider/) guide to configure the OIDC provider on your Kubernetes cluster via the OVHcloud Control Panel, the OVHcloud API or via Terraform. 
 
 Explanations:
 
