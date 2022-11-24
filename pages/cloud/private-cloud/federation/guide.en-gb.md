@@ -150,7 +150,7 @@ Click `Import User`{.action}.
 
 Select your Active Directory, click `Import User`{.action}, enter your Active Directory Username and click `Next`{.action}.
 
-![02 add user 02](images/02-adduser01.png)
+![02 add user 02](images/02-adduser02.png)
 
 A task status window appears, wait until you are one hundred percent and click `Close`{.action}.
 

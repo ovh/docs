@@ -150,7 +150,7 @@ Cliquez sur `Importer un utilisateur`{.action}
 
 Sélectionnez votre annuaire Active Directory, cliquez sur `Importer un utilisateur`{.action}, saisissez votre nom d'utilisateur et cliquez sur `Suivant`{.action}.
 
-![02 add user 02](images/02-adduser01.png)
+![02 add user 02](images/02-adduser02.png)
 
 Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
 
