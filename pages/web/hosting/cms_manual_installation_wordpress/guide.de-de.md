@@ -3,7 +3,7 @@ title: "Tutorial - Manuelle Installation von WordPress"
 slug: cms_manually_install_wordpress
 excerpt: "Erfahren Sie hier, wie Sie Ihr WordPress CMS selbst installieren"
 section: CMS
-order: 07
+order: 04
 ---
 
 > [!primary]
