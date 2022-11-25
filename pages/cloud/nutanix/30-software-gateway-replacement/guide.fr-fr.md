@@ -1,7 +1,7 @@
 ---
 title: Remplacement de l'OVHgateway
 slug: software-gateway-replacement
-excerpt: "Remplace de l'OVHgateway par un autre machine virtuelle administrable"
+excerpt: "Remplace de l'OVHgateway par une autre machine virtuelle administrable"
 section: "Plan de Reprise d'Activité"
 order: 02
 ---
@@ -90,7 +90,7 @@ Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=go
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
-Ce que l'on nomme **IP supplémentaire** est une plage de 4 adresses. La première et la dernière sont réservées, la troisième se trouve sur un équipement OVHcloud et sert de passerelle **Internet**. La seule adresse IP utilisable est la seconde adresse de la plage. 
+Ce que l'on nomme **IPFO** est une plage de 4 adresses. La première et la dernière sont réservées, la troisième se trouve sur un équipement OVHcloud et sert de passerelle **Internet**. La seule adresse IP utilisable est la seconde adresse de la plage. 
 
 Lors de l'installation, nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
@@ -103,7 +103,7 @@ XX.XX.XX.N+3    Adresse IP de broadcast réservée
 
 Par exemple, si l'adresse **IPFO** affichée sur le site client est 198.51.100.0/30, il faut utiliser :
 
-- **198.51.100.1 ** pour l'adresse de l'interface **WAN** ;
+- **198.51.100.1** pour l'adresse de l'interface **WAN** ;
 - **198.51.100.2** pour la passerelle sur l'interface **WAN**.
 
 <a name="poweronvmpfsense"></a>
@@ -245,9 +245,9 @@ Saisissez `n` et appuyez sur la touche `Entrée`{.action} à la demande de la co
 
 ![Configure pfsense 08](images/04-configureip-pfsense08.png){.thumbnail}
 
-Saisissez **l'adresse IP publique avec le masque** et appuyez sur la touche `Entrée`{.action}. Par exemple **123.123.123.5/30**.
+Saisissez **l'adresse IP publique avec le masque** et appuyez sur la touche `Entrée`{.action}. Par exemple **198.51.100.1**.
 
-Saisissez ensuite **l'adresse IP de la passerelle publique** et appuyez sur la touche `Entrée`{.action}. Par exemple **123.123.123.6**.
+Saisissez ensuite **l'adresse IP de la passerelle publique** et appuyez sur la touche `Entrée`{.action}. Par exemple **198.51.100.2**.
 
 ![Configure pfsense 09](images/04-configureip-pfsense09.png){.thumbnail}
 
@@ -300,7 +300,7 @@ Appuyez sur la touche `Entrée`{.action} pour terminer la configuration en ligne
 <a name="configurepfsenseoptions"></a>
 ### Configuration de certaines options au travers de l'interface WEB
 
-Connectez-vous sur la console Web de pfSense avec cette URL `https://192.168.10.254` à partir d'une machine virtuelle du cluster se trouvant sur le réseau local **AHV : Base**.
+Connectez-vous sur la console Web de pfSense avec cette URL `https://192.168.10.254` à partir d'une machine virtuelle du cluster se trouvant sur le réseau local **AHV : infra**.
 
 Saisissez ces informations :
 
