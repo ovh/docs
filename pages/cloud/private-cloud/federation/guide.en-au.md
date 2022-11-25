@@ -42,7 +42,7 @@ Preparing configuration setup, you need to retrieve the following information:
 - LDAPS service port (636 by default)
 - Base DN (Base Distinguished Name) for users. This is the DN from which users will be searched. For example: dc=example,dc=com
 - Base DN (Base Distinguished Name) for groups. This is the DN from which groups will be searched. For example: dc=example,dc=com
-- Username and password of a domain user that will be used to connect to the LDAPS server. It must be at least a read-only user on the Active Directory server sections specified on the two "Base DN" fields above. Must be a pre-Windows 2000 username, in the UPN format (user@eample.com).
+- Username and password of a domain user that will be used to connect to the LDAPS server. It must be at least a read-only user on the Active Directory server sections specified on the two "Base DN" fields above. Must be a pre-Windows 2000 username, in the UPN format (user@example.com).
 
 For more information, you can refer to the [VMware documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.psc.doc/GUID-98B36135-CDC1-435C-8F27-5E0D0187FF7E.html){.external}.
 
@@ -122,29 +122,29 @@ Go to the `Users`{.action} tab and click `Add an Active Directory LDAPS`{.action
 
 ![01 add directory 01](images/01-add-directory01.png)
 
-Enter these informations :
+Enter the following information :
 
-* **Active Directory domain name** : Active directory domain name.
-* **Active Directory domain alias**: NetBIOS domain name.
-* **Description (optional)** :  Active directory domain name.
-* **Active Directory server IP address** : Public IP address to access your LDAPS server.
-* **Active Directory LDAPS server host name** : Public FQDN name of your Active Directory server.
-* **LDAPS service port** : LDAPS service port number.
-* **SSL certificate thumbprint** : SSL Thumbprint certificate retrieved earlier.
-* **Active Directory username** : Pre-Windows 2000 username, in the UPN format (user@eample.com).
-* **Active Directory user password** : Active Directory user password.
-* **DN base for users** : DN (Distinguish Name) containing users such as dc=example,dc=com for the domain example.com.
-* **DN base for groups** : DN (Distinguish Name) containing the groups, such as dc=example,dc=com for the domain example.com.
+- **Active Directory domain name** : Active directory domain name.
+- **Active Directory domain alias**: NetBIOS domain name.
+- **Description (optional)** :  Active directory domain name.
+- **Active Directory server IP address** : Public IP address to access your LDAPS server.
+- **Active Directory LDAPS server host name** : Public FQDN name of your Active Directory server.
+- **LDAPS service port** : LDAPS service port number.
+- **SSL certificate thumbprint** : SSL Thumbprint certificate retrieved earlier.
+- **Active Directory username** : Pre-Windows 2000 username, in the UPN format (user@example.com).
+- **Active Directory user password** : Active Directory user password.
+- **DN base for users** : DN (Distinguish Name) containing users such as dc=example,dc=com for the example.com domain.
+- **DN base for groups** : DN (Distinguish Name) containing the groups, such as dc=example,dc=com for the example.com domain.
 
 Then click `Submit`{.action}.
 
 ![01 add directory 02](images/01-add-directory02.png)
 
-A window will pop up to show progress, wait until you are one hundred percent and click `Close`{.action}.
+A window will pop up to show progress, wait until it's fully completed and click `Close`{.action}.
 
 > [!primary]
 >
-> If a parameter is not valid, the task will be cancelled before reaching 100%, in this case wait a few minutes for the cancellation to be complete before relaunching the configuration.
+> If a parameter is not valid, the task will be cancelled before reaching 100%. In this case, wait a few minutes for the cancellation to be complete before relaunching the configuration.
 >
 
 ### Allow an Active Directory user to access your Hosted Private Cloud
@@ -155,15 +155,15 @@ Click `Import User`{.action}.
 
 ![02 add user 01](images/02-adduser01.png)
 
-Select your Active Directory, click `Import User`{.action}, enter your Active Directory Username in the UPN format (user@eample.com) and click `Next`{.action}.
+Select your Active Directory, click `Import User`{.action}, enter your Active Directory Username in the UPN format (user@example.com) and click `Next`{.action}.
 
 ![02 add user 02](images/02-adduser02.png)
 
-A task status window appears, wait until you are one hundred percent and click `Close`{.action}.
+A task status window appears, wait until it's fully completed and click `Close`{.action}.
 
 ![02 add user 03](images/02-adduser03.png)
 
-A new user will be displayed in the Control Panel. You can use this to log in to the vSphere interface.
+A new user will be displayed in the Control Panel. You can use this user to log in to the vSphere interface.
 
 > [!primary]
 >
@@ -176,7 +176,7 @@ A new user will be displayed in the Control Panel. You can use this to log in to
 
 You can authorise directly a set of users (groups) from your Active Directory server to access your Hosted Private Cloud from the OVHcloud Control Panel.
 
-click on `Import user`{.action}.
+Click on `Import user`{.action}.
 
 ![03 add group 01](images/03-addgroup01.png)
 
@@ -184,7 +184,7 @@ Select your Active Directory, click `Import Group`{.action}, type the `name of y
 
 ![03 add group 02](images/03-addgroup02.png)
 
-A task status window appears, wait until you are one hundred percent and click `Close`{.action}. Select your Active Directory, click `Import Group`{.action}, type your group name and click `Next`{.action}.
+A task status window appears, wait until it's fully completed and click `Close`{.action}. Select your Active Directory, click `Import Group`{.action}, type your group name and click `Next`{.action}.
 
 ![03 add group 03](images/03-addgroup03.png)
 

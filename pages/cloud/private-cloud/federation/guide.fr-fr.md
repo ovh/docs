@@ -103,7 +103,7 @@ Adaptez cette configuration à votre entreprise et mettez en place la règle de 
 
 ### Ajouter votre serveur Active Directory comme source d'authentification
 
-A partir de votre espace client OVHcloud allez dans les paramètres OVHcloud de votre infrastructure Hosted Private Cloud by VMware.
+Depuis votre espace client OVHcloud, rendez-vous dans les paramètres OVHcloud de votre infrastructure Hosted Private Cloud by VMware.
 
 Positionnez-vous sur l'onglet `Utilisateurs`{.action} et cliquez sur `Ajouter un Active Directory LDAPS`{.action} dans la rubrique **Active Directories (LDAPs)**.
 
@@ -111,27 +111,27 @@ Positionnez-vous sur l'onglet `Utilisateurs`{.action} et cliquez sur `Ajouter un
 
 Saisissez ces informations : 
 
-* **Nom de domaine Active Directory** : Nom de domaine Active directory.
-* **Alias de domaine Active Directory**: Nom NetBIOS de votre domaine.
-* **Description (Facultatif)** : Nom de domaine active Directory.
-* **Adresse IP du serveur Active Directory** : Adresse IP publique d'accès à votre serveur LDAPS.
-* **Nom d'hôte du serveur LDAPS Active Directory** : Nom FQDN public de votre serveur Active directory.
-* **Port du service LDAPS** : Numéro du port du service LDAPS.
-* **Empreinte du certificat SSL** : Empreinte du certificat SSL.
-* **Identifiant utilisateur Active Directory** : Identifiant pre-Windows 2000 sous la forme UPN (user@example.com).
-* **Mot de passe utilisateur Active Directory** : Mot de passe de l'utilisateur Active Directory.
-* **Base DN pour les utilisateurs** : Nom DN contenant les utilisateurs comme par exemple dc=example,dc=com pour le domaine example.com.
-* **Base DN pour les groupes** : Nom DN contenant les groupes comme par exemple dc=example,dc=com pour le domaine example.com.
+- **Nom de domaine Active Directory** : Nom de domaine Active directory.
+- **Alias de domaine Active Directory**: Nom NetBIOS de votre domaine.
+- **Description (Facultatif)** : Nom de domaine Active Directory.
+- **Adresse IP du serveur Active Directory** : Adresse IP publique d'accès à votre serveur LDAPS.
+- **Nom d'hôte du serveur LDAPS Active Directory** : Nom FQDN public de votre serveur Active directory.
+- **Port du service LDAPS** : Numéro du port du service LDAPS.
+- **Empreinte du certificat SSL** : Empreinte du certificat SSL.
+- **Identifiant utilisateur Active Directory** : Identifiant pre-Windows 2000 sous la forme UPN (user@example.com).
+- **Mot de passe utilisateur Active Directory** : Mot de passe de l'utilisateur Active Directory.
+- **Base DN pour les utilisateurs** : Nom DN contenant les utilisateurs comme, par exemple, dc=example,dc=com pour le domaine example.com.
+- **Base DN pour les groupes** : Nom DN contenant les groupes comme, par exemple, dc=example,dc=com pour le domaine example.com.
 
-Ensuite cliquez sur `Executer`{.action}.
+Cliquez ensuite sur `Executer`{.action}.
 
 ![01 add directory 02](images/01-add-directory02.png)
 
-Une fenêtre apparait pour afficher l'état d'avancement, attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
+Une fenêtre apparaît pour afficher l'état d'avancement, attendez d'avoir atteint 100% et cliquez sur `Fermer`{.action}.
 
 > [!primary]
 >
-> Si un paramètre n'est pas valide la tâche sera annulée avant d'arriver à 100%, dans ce cas attendez quelques minutes pour que l'annulation soit complète avant de relancer la configuration.
+> Si un paramètre n'est pas valide, la tâche sera annulée avant d'arriver à 100%. Dans ce cas, attendez quelques minutes jusqu'à ce que l'annulation soit complète avant de relancer la configuration.
 >
 
 ![01 add directory 03](images/01-add-directory03.png)
@@ -142,21 +142,21 @@ Votre domaine Active Directory est relié à votre infrastructure VMware. Vous p
 
 ### Autoriser un utilisateur Active Directory à accéder à votre Hosted Private Cloud
 
-Vous avez la possibilité d'autoriser un utilisateur issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud à partir de votre espace client OVHcloud.
+Depuis votre espace client OVHcloud, vous pouvez autoriser un utilisateur issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud.
 
 Cliquez sur `Importer un utilisateur`{.action}
 
 ![02 add user 01](images/02-adduser01.png)
 
-Sélectionnez votre annuaire Active Directory, cliquez sur `Importer un utilisateur`{.action}, saisissez votre nom d'utilisateur dans un format UPN (user@eample.com) et cliquez sur `Suivant`{.action}.
+Sélectionnez votre annuaire Active Directory, cliquez sur `Importer un utilisateur`{.action}, saisissez votre nom d'utilisateur dans un format UPN (user@example.com) et cliquez sur `Suivant`{.action}.
 
 ![02 add user 02](images/02-adduser02.png)
 
-Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
+Une fenêtre avec l'état d'avancement de la tâche apparaît, attendez d'avoir atteint 100% et cliquez sur `Fermer`{.action}.
 
 ![02 add user 03](images/02-adduser03.png)
 
-Un nouvel utilisateur est affiché dans le manager, vous pouvez l'utilisez pour vous connecter à l'interface vSphere. 
+Un nouvel utilisateur est affiché dans l'espace client, vous pouvez l'utiliser pour vous connecter à l'interface vSphere. 
 
 > [!primary]
 >
@@ -178,11 +178,11 @@ Sélectionnez votre annuaire Active Directory, cliquez sur `Importer un groupe`{
 
 ![03 add group 02](images/03-addgroup02.png)
 
-Une fenêtre avec l'état d'avancement de la tâche apparait, attendez d'être à cent pour cent et cliquez sur `Fermer`{.action}.
+Une fenêtre avec l'état d'avancement de la tâche apparaît, attendez d'avoir atteint 100% et cliquez sur `Fermer`{.action}.
 
 ![03 add group 03](images/03-addgroup03.png)
 
-Le groupe apparait dans la liste utilisateurs de votre cluster, les membres de ce groupe peuvent se connecter à l'interface d'administration de votre cluster.
+Le groupe apparaît dans la liste des utilisateurs de votre cluster, les membres de ce groupe peuvent se connecter à l'interface d'administration de votre cluster.
 
 > [!primary]
 >
