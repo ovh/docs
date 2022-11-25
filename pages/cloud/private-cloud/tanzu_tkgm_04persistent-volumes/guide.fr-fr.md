@@ -1,6 +1,6 @@
 ---
 title: Gestion des volumes persistants dans Tanzu Kubernetes Grid
-slug: tanzu-tkgm-persistant-volumes
+slug: tanzu-tkgm-persistent-volumes
 excerpt: Comment déployer une application dans Tanzu Kubernetes Grid avec des volumes persistants
 section: Tanzu
 order: 05
