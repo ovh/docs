@@ -10,7 +10,7 @@ order: 02
 
 ## Objectif
 
-Ce guide vous présente comment remplacer la passerelles OVHgateway qui ne permet qu'un accès Internet par une autre passerelle de votre choix et qui vous permettra de faire du NAT.
+Ce guide vous présente comment remplacer la passerelles OVHgateway qui ne permet qu'un accès Internet sortant par une autre passerelle de votre choix et qui vous ouvrira la possibilité d'avoir des accès entrant via du NAT ou du VPN ainsi que la possibilité de gérer l'accès Internet pour des VLAN supplémentaires.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -26,14 +26,17 @@ Ce guide vous présente comment remplacer la passerelles OVHgateway qui ne perme
 
 ## En pratique
 
-Dans notre guide nous allons remplacer la machine virtuelle OVHgateway installéé lors du déploiement et qui ne permet qu'un accès Internet sortant par une machine virtuelle administrable sur laquelle il sera possible de faire du NAT, de rajouter un connexion Internet sur des VLAN supplémentaire et de permettre des accès VPN divers.
+La passerelle OVHGateway utilise par défaut deux carte réseaux :
 
-Nous allons utiliser une machine virtuelle sour pfsense mais vous pouvez vous appuyer sur ce guide pour d'autres systèmes administrables et qui s'installent sur Nutanix.
+- Une sur le VLAN 0  connectée à Internet avec une adresse IP supplémentaire OVHcloud.
+- Une sur le VLAN 1  connectée au réseau local d'administration.
 
+Nous allons remplacer cette passerelle par une autre gateway avec les même paramètres. Nous allons utiliser le système d'exploitation réseau pfsense
 
+> [!warning]
+> Cette documentation vous montre comment installer pfsense mais vous pouvez l'adapter à d'autres systèmes d'exploitations réseaux (Distribution Linux, pare-feux virtuels) il vous faudra juste vous assurer de la compatibiité de votre machine virtuelle avec Nutanix sous AHV.
+>
 
-
- 
 <a name="downloadsources"></a>
 ### Téléchargement des sources pour l'installation de pfSense
 
@@ -87,7 +90,7 @@ Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=go
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
-Ce que l'on nomme **IPFO** est une plage de 4 adresses. La première et la dernière sont réservées, la troisième se trouve sur un équipement OVHcloud et sert de passerelle **Internet**. La seule adresse IP utilisable est la seconde adresse de la plage. 
+Ce que l'on nomme **IP supplémentaire** est une plage de 4 adresses. La première et la dernière sont réservées, la troisième se trouve sur un équipement OVHcloud et sert de passerelle **Internet**. La seule adresse IP utilisable est la seconde adresse de la plage. 
 
 Lors de l'installation, nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
@@ -98,10 +101,10 @@ XX.XX.XX.N+2    Adresse à utiliser en tant que passerelle sur l'interface WAN d
 XX.XX.XX.N+3    Adresse IP de broadcast réservée
 ```
 
-Par exemple, si l'adresse **IPFO** affichée sur le site client est 123.123.123.4/30, il faut utiliser :
+Par exemple, si l'adresse **IPFO** affichée sur le site client est 198.51.100.0/30, il faut utiliser :
 
-- **123.123.123.5** pour l'adresse de l'interface **WAN** ;
-- **123.123.123.6** pour la passerelle sur l'interface **WAN**.
+- **198.51.100.1 ** pour l'adresse de l'interface **WAN** ;
+- **198.51.100.2** pour la passerelle sur l'interface **WAN**.
 
 <a name="poweronvmpfsense"></a>
 #### Etape 2.5 Démarrage de la machine virtuelle **GW-PFSENSE**
