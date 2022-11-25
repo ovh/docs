@@ -6,7 +6,7 @@ section: Premiers pas
 order: 11
 ---
 
-**Dernière mise à jour le 05/10/2022**
+**Dernière mise à jour le 25/11/2022**
 
 ## Objectif
 
@@ -41,17 +41,6 @@ OVHcloud intègre au produit **Hosted Private Cloud powered by Nutanix** les ver
 > 
 > Lors de ces mises à jours, **LCM** peut proposer une nouvelle version qui n'est pas encore qualifiée par OVHcloud. Attendez qu'elle soit validée par OVHcloud pour continuer à bénéficier du support.
 >
-
-Les versions supportées par OVHCloud sont les suivantes :
-
-| Catégorie de version          | Numéro de version                      |
-| ----------------------------- | -------------------------------------- |
-| **LTS**                       | 5.20 & 6.5                             |
-|                               |                                        |
-| **STS**                       | 6.1                                    |
-|                               |                                        |
-
-Ce guide sera régulièrement mis à jour avec les versions supportées. 
 
 Il est possible de voir les versions qualifiées au travers de l'API OVHcloud. 
 
