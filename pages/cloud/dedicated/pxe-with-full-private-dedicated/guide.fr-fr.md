@@ -112,17 +112,25 @@ default-lease-time 7200;
 max-lease-time 7200;
 
 # Minimum configuration directives...
-subnet 192.168.1.0 netmask 192.168.1.240 {
+subnet 192.168.1.0 netmask 255.255.255.240 {
   range 192.168.1.1 192.168.1.5;
-  option subnet-mask 192.168.1.240;
+  option subnet-mask 255.255.255.240;
   option broadcast-address 192.168.1.15;
   option routers 192.168.1.1;
   option root-path "/srv/tftp/";
   option tftp-server-name "192.168.1.1";
+  option bootfile-name "undionly.kpxe";
   
   # Declare the TFTP server
   next-server 192.168.1.1;
   filename "pxelinux.0";
+  
+  if exists user-class and option user-class = "iPXE" {
+	filename "sanboot.txt";
+ } else {
+	filename "undionly.kpxe";
+ }
+
   
    # optional
   option dns-servers node_0;
@@ -140,7 +148,7 @@ server-name "private-node-1";
 Détails:
 
 * réseau privé (ex: 192.168.1.0/28).
-* `subnet_mask` : 192.168.1.240
+* `subnet_mask` : 255.255.255.240
 * `broadcast_address` : 192.168.1.15
 * `dns_servers` : cf chapitre optionnel
 * `ntp_servers` : cf chapitre optionnel
@@ -181,35 +189,14 @@ RUN_DAEMON="yes"
 
 ```
 
-Nous utiliserons le chemin par défaut de l'application (/var/lib/tftpboot/), et y déposerons le fichier `pxelinux.0` à utliser.
-Le fichier doit simplement contenir la directive suivante:
+Nous utiliserons le chemin par défaut de l'application (/var/lib/tftpboot/), et y déposerons le binaire `undionly.kpxe` à utliser.
 
-```bash
 
-# Boot from local hard disk
-  sanboot --no-describe --drive 0x80
-
-```
-
+en PXE
 La syntaxe [sanboot](https://ipxe.org/cmd/sanboot) permet de forcer la détection des disques locaux, et la découverte de secteur d'amorçage lié à un éventuel système d'exploitation installé au préalable.
 A partir du moment où cette étape a été réalisée, le système d'exploitation peut débuter son chargement.
 
 
-Pour finaliser les déploiements des nouveaux services, ne pas oublier d'autoriser les futures connexions **entrantes** depuis les machines clientes.<br>
-exemple de configuration de firewall local avec `iptables`, cela peut varier selon votre distribution:
-
-```bash
-# pour le service DHCP
-iptables -I INPUT -i ethX -p udp --dport 67:68 --sport 67:68 -j ACCEPT
-
-# pour le service TFTP
-iptables -I INPUT -i eth1 -p udp --dport 69 -j ACCEPT
-```
-
-> [!warning]
->
-> Penser à relancer le service de firewall local après chaque modification/déclaration de configuration, pour prise en compte.
->
 
 #### Mise en marche
 
