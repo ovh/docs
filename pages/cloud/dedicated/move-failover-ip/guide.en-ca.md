@@ -6,7 +6,7 @@ section: Network Management
 order: 7
 ---
 
-**Last updated 6th October 2022**
+**Last updated 24th November 2022**
 
 > [!primary]
 >
@@ -55,6 +55,10 @@ With this technology, you can switch IP addresses from one solution to another i
  
  
 ### Moving an IP from the OVHcloud Control Panel
+
+> [!warning]
+> Only a single size block (/32) can be moved from a dedicated server to a VPS.
+>
 
 Log in to the [OVHcloud Control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} menu and open `IP`{.action}.
 

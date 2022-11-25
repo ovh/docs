@@ -10,7 +10,7 @@ order: 7
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 06/10/2022**
+**Última actualización: 24/11/2022**
 
 > [!primary]
 >
@@ -58,6 +58,10 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 >
 
 ### Migrar una IP desde el área de cliente de OVHcloud
+
+> [!warning]
+> Sólo se podrá trasladar un bloque de tamaño único (/32) de un servidor dedicado a un VPS.
+>
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda al menú `Bare Metal Cloud`{.action} y abra `IP`{.action}.
 
