@@ -84,7 +84,6 @@ Para criar e implementar a sua imagem, utilize a seguinte chamada e complete os 
 > @api {POST} /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
-
 | Campo | Descrição |
 |-|-|
 | serviceName | O nome do seu servidor. |
