@@ -5,7 +5,7 @@ excerpt: "Découvrez comment utiliser votre serveur Active Directory comme sourc
 section: Fonctionnalités VMware vSphere
 ---
 
-**Dernière mise à jour le 24/11/2022**
+**Dernière mise à jour le 25/11/2022**
 
 ## Objectif
 

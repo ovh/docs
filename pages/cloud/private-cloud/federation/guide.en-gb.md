@@ -5,7 +5,7 @@ excerpt: Learn how to use you Active Directory server as an authentication sourc
 section: 'VMware vSphere features'
 ---
 
-**Last updated 24th November 2022**
+**Last updated 25th November 2022**
 
 ## Objective
 
@@ -190,8 +190,6 @@ The group appears in the users list for your cluster, and members of this group 
 
 ![03 add group 04](images/03-addgroup04.png)
 
-
 ## Go further
-
 
 Join our community of users on <https://community.ovh.com/en/>.
