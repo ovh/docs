@@ -17,7 +17,7 @@ Mithilfe der Funktion *Bring Your Own Image* (BYOI) können Sie *cloudready* Ima
 
 **Was bedeutet *cloudready*?**
 <br>*cloudready* bedeutet vor allem, unabhängig von der zugrundeliegenden Infrastruktur zu sein.
-Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sichergestellt werden, dass das (heruntergeladene oder erstellte) Image die technischen Anforderungen eines *cloudready* Image erfüllt. Das Image muss in der Lage sein, unabhängig von der Servertypologie korrekt zu booten. Im Falle der Verwendung eines Config Drive muss es auch den *cloud-init* Dienst beinhalten. Schließlich müssen die Systemkonfigurationen es ermöglichen, das Betriebssystem, insbesondere die Netzwerkkonfigurationen, vollständig einzurichten.
+Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sichergestellt werden, dass das (heruntergeladene oder erstellte) Image die technischen Anforderungen eines *cloudready* Image erfüllt. Das Image muss in der Lage sein, unabhängig von der Servertypologie korrekt zu booten. Im Falle der Verwendung eines Config Drive muss es auch den Dienst *cloud-init* beinhalten. Schließlich müssen die Systemkonfigurationen es ermöglichen, das Betriebssystem, insbesondere die Netzwerkkonfigurationen, vollständig einzurichten.
 
 **Diese Anleitung erklärt, wie Sie *Bring Your Own Image* mit einem OVHcloud Server verwenden.**
 
@@ -26,7 +26,7 @@ Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sic
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) (für die Methode über das [Kundencenter](#viacontrolpanel)).
 - Sie haben die [Credentials generiert, um die API zu verwenden](https://docs.ovh.com/de/api/first-steps-with-ovh-api/) (für den Abschnitt zum [Deployment über API](#viaapi)).
-- Die Größe Ihres Images muss kleiner sein als die Server-RAM Größe minus 3GiB.
+- Die Image-Datei muss kleiner sein als die RAM-Größe des Servers minus 3 GB.
 
 > [!warning]
 >
@@ -99,13 +99,13 @@ Um Ihr Image zu deployen, verwenden Sie folgenden Aufruf und vervollständigen S
 | hostname (ConfigDrive) | Hostname Ihres Servers. |
 | sshKey (ConfigDrive) | Ihr öffentlicher SSH-Schlüssel. |
 | userData (ConfigDrive) | Ihr Post-Installationsskript. |
-| userMetadatas (ConfigDrive) | Metadaten, die von cloud-init zum Zeitpunkt des Boot verwendet werden. |
+| userMetadatas (ConfigDrive) | Metadaten, die von *cloud-init* zum Zeitpunkt des Boot verwendet werden. |
 | description | Bezeichnung für Ihr Image. |
 | diskGroupId | Die Kennung (ID) der zu verwendenden Festplatte. |
 | httpHeader | Nur anzugeben, wenn nötig, um das Image herunterzuladen. |
 | type | Typ/Format Ihres Images (qcow2, raw, ova). |
 
-"ConfigDrive" ist eine von cloud-init beim ersten Boot Ihres Servers verwendete Partition, um die gewünschte Konfiguration festzulegen. Sie können auswählen, ob Sie diese Option aktivieren möchten.
+"ConfigDrive" ist eine von *cloud-init* beim ersten Boot Ihres Servers verwendete Partition, um die gewünschte Konfiguration festzulegen. Sie können auswählen, ob Sie diese Option aktivieren möchten.
 
 ![POST API Call](images/postapicall.png){.thumbnail}
 
