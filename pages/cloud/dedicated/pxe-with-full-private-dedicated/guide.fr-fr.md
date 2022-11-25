@@ -117,7 +117,7 @@ subnet 192.168.1.0 netmask 255.255.255.240 {
   option subnet-mask 255.255.255.240;
   option broadcast-address 192.168.1.15;
   option routers 192.168.1.1;
-  option root-path "/srv/tftp/";
+  option root-path "/var/lib/tftp/";
   option tftp-server-name "192.168.1.1";
   option bootfile-name "undionly.kpxe";
   
@@ -126,7 +126,7 @@ subnet 192.168.1.0 netmask 255.255.255.240 {
   filename "pxelinux.0";
   
   if exists user-class and option user-class = "iPXE" {
-	filename "sanboot.txt";
+	filename "pxelinux.0";
  } else {
 	filename "undionly.kpxe";
  }
