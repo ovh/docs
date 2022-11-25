@@ -9,7 +9,7 @@ section: Utilizzo avanzato
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 28/03/2022**
+**Ultimo aggiornamento: 25/11/2022**
 
 ## Obiettivo
 
@@ -27,7 +27,7 @@ Oltre ai requisiti e ai limiti indicati in appresso, è necessario assicurarsi c
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per la sezione ["Implementazione dallo Spazio Cliente"](#viacontrolpanel) di questa guida.
 - Essere connesso alle [API OVHcloud](https://api.ovh.com/){.external} per la sezione ["Implementazione via API"](#viaapi) di questa guida.
 - Aver generato i [credenziali per utilizzare l'APIv6](https://docs.ovh.com/it/api/first-steps-with-ovh-api/) per la sezione ["Implementazione via API"](#viaapi) di questa guida.
-- La dimensione della tua immagine deve essere inferiore al disco o ai dischi installati sul server
+- La dimensione della tua immagine deve essere inferiore alla quantità della RAM del tuo server meno 3GiB.
 
 > [!warning]
 >
@@ -56,7 +56,7 @@ Se il tuo server dispone di un boot **uefi**, sarà necessario prevedere nella t
 
 Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sezione `Bare Metal Cloud`{.action}, poi `Server Dedicati`{.action}, seleziona il tuo server.
 
-Nel riquadro `Informazioni generali`, clicca sul pulsante`...`{.action} davanti alle `Informazioni generali`. Infine clicca su `Installa`{.action}.
+Nel riquadro `Informazioni generali`, clicca sul pulsante `...`{.action} davanti alle `Informazioni generali`. Infine clicca su `Installa`{.action}.
 
 ![bring your ownimage](images/byoi-controlpanel01.png){.thumbnail}
 
@@ -74,7 +74,7 @@ Per l'attivazione di `ConfigDrive`, consulta la documentazione su [questa pagina
 
 ### Crea la tua immagine dalle API <a name="viaapi"></a>
 
-Accedi alla sezione [/dedicated/server](https://api.ovh.com/){.external}, clicca su https://api.ovh.com/` `{.action}. Il campo `Filter` ti permetterà di ricercare "BringYourOwnImage".
+Clicca su [https://api.ovh.com/](https://api.ovh.com/){.external}, accedi alla sezione `/dedicated/server`{.action}. Il campo `Filter` ti permetterà di ricercare "BringYourOwnImage".
 
 Disponi di tre chiamate API legate alla funzionalità BringYourOwnImage.
 
@@ -133,7 +133,7 @@ Ecco alcuni esempi:
 |-|-|
 | Can't write qcow2 on disk. | Impossibile scrivere l'immagine qcow2 sul disco. |
 | Could not download, qcow2 image is too big to download in memory. | Non c'è abbastanza spazio di RAM per scaricare l'immagine. |
-| Could not download image located: http://path/of/your/image | Impossibile scaricare l'immagine situata: http://path/of/your/image |
+| Could not download image located: `http://path/of/your/image` | Impossibile scaricare l'immagine situata: `http://path/of/your/image` |
 | Bad format image, expected: qcow2, raw. | Il formato dell'immagine non è corretto. |
 | Bad checkSumType, expected: sha1, sha256, md5. | Il tipo di checksum non è corretto. |
 | Bad $checkSumType for downloaded file, got: 1234 while expecting 5678. | Il checksum non è corretto. |

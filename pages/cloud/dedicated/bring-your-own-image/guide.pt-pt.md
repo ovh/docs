@@ -5,7 +5,7 @@ slug: bringyourownimage
 section: Utilização avançada
 ---
 
-**Última atualização: 28/03/2022**
+**Última atualização: 25/11/2022**
 
 ## Objetivo
 
@@ -23,7 +23,7 @@ Para além dos requisitos e limitações citados abaixo, é necessário assegura
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para a secção ["Implementação através da Área de Cliente"](#viacontrolpanel) deste manual.
 - Ter acesso às [API OVHcloud](https://api.ovh.com/){.external} para a parte ["Implementação através da API"](#viaapi) deste manual.
 - Ter gerado os [credenciais para utilizar a APIv6](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/) para a parte ["Implementação através da API"](#viaapi) deste manual.
-- A dimensão da sua imagem deve ser inferior ao(s) disco(s) instalado(s) no servidor.
+- O tamanho da sua imagem deve ser inferior à quantidade da memória RAM do seu servidor menos 3GiB.
 
 > [!warning]
 >
@@ -119,6 +119,21 @@ Neste exemplo, a implementação está em curso de arranque.
 ![GET API call](images/getapicall.png){.thumbnail}
 
 A implementação pode durar cerca de dez minutos. Terminada a operação, o estado da sua implementação passará para "done" e o seu servidor será reiniciado no disco.
+
+#### Exemplos de retorno
+
+Veja alguns exemplos:
+
+| Mensagem | Significado |
+|-|-|
+| Can't write qcow2 on disk. | Não é possível escrever a imagem qcow2 no disco. |
+| Could not download, qcow2 image is too big to download in memory. | Não há espaço de RAM suficiente para descarregar a imagem. |
+| Could not download image located: `http://path/of/your/image`. | Não é possível descarregar a imagem localizada: `http://caminho/de/sua/imagem`. |
+| Bad format image, expected: qcow2, raw. | O formato da imagem está incorreto. |
+| Bad checkSumType, expected: sha1, sha256, md5. | O tipo de checksum está incorreto. |
+| Bad $checkSumType for downloaded file, got: 1234 while expting 5678. | O checksum está incorreto. |
+| Can not move backup GPT data structures to the end of disk. | O formato disco está incorreto. |
+| Could not create configdrive on disk. | Não é possível criar a partição configurável no disco. |
 
 ### Eliminar a implementação
 
