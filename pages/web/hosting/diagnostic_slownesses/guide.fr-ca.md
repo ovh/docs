@@ -33,15 +33,15 @@ Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre four
 >
 > Nos offres d'hébergements mutualisés ne disposent pas de « Service Level Agreement » (SLA). 
 >
-> Si vous avez besoin d'un service offrant un taux de disponibilité SLA supérieur à 99%, nous vous conseillons d'envisager l'utilisation d'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr/vps/) ou d'un [Serveur Dédié](https://www.ovhcloud.com/fr/bare-metal/).
+> Si vous avez besoin d'un service offrant un taux de disponibilité SLA supérieur à 99%, nous vous conseillons d'envisager l'utilisation d'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr-ca/vps/) ou d'un [Serveur Dédié](https://www.ovhcloud.com/fr-ca/bare-metal/).
 >
 > Par ailleurs, les performances de l'infrastructure d'hébergements mutualisés OVHcloud sont monitorées 24 heures sur 24 et 7 jours sur 7. Ceci afin de vous garantir un haut taux de disponibilité et, le cas échéant, un rétablissement rapide de vos services en cas de surcharge avérée.
 >
 
 ## Prérequis
 
-- Disposer d'un site hébergé sur l'une de nos offres d'[hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d'un site hébergé sur l'une de nos offres d'[hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
 
@@ -49,7 +49,7 @@ Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre four
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance **dès lors que l'infrastructure où votre offre d'hébergement mutualisé est présente n'est pas en cause**. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance **dès lors que l'infrastructure où votre offre d'hébergement mutualisé est présente n'est pas en cause**. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 > [!success]
@@ -97,7 +97,7 @@ Tous les diagnostics de l'étape 1 doivent être réalisés **sans exception** a
 
 Pour être sûr que vos services (hébergement mutualisé **et** base de données) ne font pas l'objet d'une maintenance ou d'un incident, récupérez les informations sur le cluster et le filer de votre hébergement mutualisé ainsi que les informations générales relatives à votre base de données. Vous pourrez ensuite vérifier leur statut sur [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Pour connaître le cluster et le filer où se trouve votre hébergement mutualisé, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web concerné. Dans l'onglet `Informations générales`{.action}, repérez le `datacentre` de votre hébergement mutualisé ainsi que le `filer` où il se trouve.
+Pour connaître le cluster et le filer où se trouve votre hébergement mutualisé, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web concerné. Dans l'onglet `Informations générales`{.action}, repérez le `datacentre` de votre hébergement mutualisé ainsi que le `filer` où il se trouve.
 
 ![Récupérer Filer](images/DropFilerCluster1.png){.thumbnail}
 
@@ -122,7 +122,7 @@ Testez votre site web depuis un autre appareil/ordinateur puis depuis un autre p
 
 #### 1.3 - Testez l'hébergement avec un fichier indépendant de votre site web
 
-Placez, à la racine de votre site web dans l'[espace de stockage FTP de votre hébergement mutualisé](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/), un fichier que vous nommerez `phpinfo.php`.
+Placez, à la racine de votre site web dans l'[espace de stockage FTP de votre hébergement mutualisé](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/), un fichier que vous nommerez `phpinfo.php`.
 
 Dans ce fichier, insérez le code suivant :
 
@@ -136,7 +136,7 @@ phpinfo();
 >
 > Dans certains cas, les fichiers « **.htaccess** » présents dans les répertoires/dossiers situés en amont ou au même niveau que l'endroit où vous avez placé votre fichier « **phpinfo.php** » peuvent influer sur l'affichage dans un navigateur Internet du « **phpinfo.php** ». 
 >
-> Les manipulations sur un fichier « **.htaccess** » peuvent avoir des conséquences sur l'affichage de votre site. Faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés à réaliser ce qui suit.
+> Les manipulations sur un fichier « **.htaccess** » peuvent avoir des conséquences sur l'affichage de votre site. Faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés à réaliser ce qui suit.
 >
 > S'il ne s'affiche pas et **uniquement pour les utilisateurs avertis**, renommez vos fichiers « **.htaccess** » en « **.htaccess_OLD** » afin que le serveur ne les exécutent plus le temps de votre test. Renommez-les correctement une fois votre diagnostic effectué.
 >
@@ -152,9 +152,7 @@ phpinfo();
 
 #### 1.4 - Testez la connectivité de votre base de données :
 
-Connectez-vous à votre base de données en suivant **l'étape 3** de notre guide sur la [création d'une base de données mutualisée](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
-
-Si vous utilisez une base de données sur une offre **CloudDB**, consultez notre guide sur [la connexion à votre base de données présente sur une offre Cloud DB](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
+Connectez-vous à votre base de données en suivant **l'étape 3** de notre guide sur la [création d'une base de données mutualisée](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/).
 
 Si la connexion est réussie, vous arrivez sur l'interface suivante :
 
@@ -162,7 +160,7 @@ Si la connexion est réussie, vous arrivez sur l'interface suivante :
 
 > [!warning]
 >
-> Si vous rencontrez une erreur, consultez notre documentation sur les [erreurs courantes rencontrées avec une base de données](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/). Agissez ensuite à l'aide du guide ci-dessus pour corriger votre situation puis tentez à nouveau de vous connecter à votre base de données.
+> Si vous rencontrez une erreur, consultez notre documentation sur les [erreurs courantes rencontrées avec une base de données](https://docs.ovh.com/ca/fr/hosting/erreurs-frequentes-bases-de-donnees/). Agissez ensuite à l'aide du guide ci-dessus pour corriger votre situation puis tentez à nouveau de vous connecter à votre base de données.
 >
 
 #### 1.5 - Interprétation des diagnostics effectués
@@ -191,18 +189,18 @@ A ce stade, vous savez désormais que les ralentissements sont générés par le
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés pour réaliser les actions qui vont suivre, vous pouvez contacter l'un de nos [prestataires spécialisés](https://partner.ovhcloud.com/fr/). En effet, OVHcloud n'apportera pas d'assistance sur le développement et/ou l'optimisation du contenu de votre site web.
+> Si vous éprouvez des difficultés pour réaliser les actions qui vont suivre, vous pouvez contacter l'un de nos [prestataires spécialisés](https://partner.ovhcloud.com/fr-ca/). En effet, OVHcloud n'apportera pas d'assistance sur le développement et/ou l'optimisation du contenu de votre site web.
 >
 
 Retrouvez ci-après les actions à réaliser pour identifier la ou les source(s) des lenteurs et optimiser votre site web.
 
 #### 2.1 - Vérifiez la configuration de votre hébergement web
 
-Vérifiez le moteur PHP, la version PHP et l'environnement d'exécution utilisés sur votre hébergement web, en vous aidant de notre guide sur la [configuration de votre hébergement web](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/).
+Vérifiez le moteur PHP, la version PHP et l'environnement d'exécution utilisés sur votre hébergement web, en vous aidant de notre guide sur la [configuration de votre hébergement web](https://docs.ovh.com/ca/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/).
 
 Si vous utilisez sur votre hébergement web une version de PHP obsolète, le moteur « **PHP CGI** » et/ou l'environnement « **legacy** » et **si votre site web est compatible**, privilégiez l'utilisation du moteur « **PHP** » (PHP FPM), l'environnement « **stable** » ou « **stable64** » avec la version de PHP la plus récente possible.
 
-Pour comparer les versions de PHP disponibles en fonction de l'environnement d'exécution utilisé, consultez **l'étape 2** du guide sur la [configuration de la version PHP sur votre hébergement](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
+Pour comparer les versions de PHP disponibles en fonction de l'environnement d'exécution utilisé, consultez **l'étape 2** du guide sur la [configuration de la version PHP sur votre hébergement](https://docs.ovh.com/ca/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
 
 Utiliser une version de PHP récente, l'environnement d'exécution « **stable** » ou « **stable64** » avec le moteur « **PHP** » (PHP FPM) rend votre site beaucoup plus fluide et rapide. A titre indicatif, le moteur « **PHP** » (PHP FPM) peut être jusqu'à 50 fois plus performant que le moteur « **PHP CGI** » pour exécuter ses tâches.
 
@@ -212,7 +210,7 @@ Les connexions sortantes sont très gourmandes en terme de ressources. Quand ces
 
 Cela se traduit par des ralentissements voire des codes « 504 gateway timeout ».
 
-Pour analyser les connexions sortantes de votre hébergement, consultez les logs **OUT** de ce dernier. Vous pouvez vous aider de notre documentation sur [la consultation des logs de votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+Pour analyser les connexions sortantes de votre hébergement, consultez les logs **OUT** de ce dernier. Vous pouvez vous aider de notre documentation sur [la consultation des logs de votre hébergement](https://docs.ovh.com/ca/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
 
 Si vous constatez qu'il y a beaucoup de connexions sortantes sur votre hébergement, comparez vos logs **OUT** avec vos logs **WEB** à l'aide de l'horodatage de ces derniers. Cela vous permettra d'identifier le ou les script(s) responsable(s) de cette situation.
 
@@ -220,7 +218,7 @@ Si vous utilisez un Content Management System (CMS) tel que WordPress, Joomla!, 
 
 #### 2.3 - Analysez le flux de requêtes HTTP effectué vers votre hébergement web :
 
-Pour effectuer cette action, consultez les logs **WEB** de votre hébergement web à l'aide de notre documentation sur [comment consulter les logs de votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
+Pour effectuer cette action, consultez les logs **WEB** de votre hébergement web à l'aide de notre documentation sur [comment consulter les logs de votre hébergement](https://docs.ovh.com/ca/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/).
 
 Les requêtes les plus gourmandes en terme de ressources sont les requêtes HTTP de type **POST** puis celles de type **PUT**. Ces dernières effectuent respectivement des modifications et des insertions.
 
@@ -248,14 +246,14 @@ Pour diminuer le flux de requêtes à chacun des chargements de vos pages, vous 
 
 > [!primary]
 >
-> OVHcloud propose plusieurs [offres CDN](https://www.ovhcloud.com/fr/web-hosting/options/). Si vous souhaitez en utiliser ou en activer une pour votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis consultez notre guide sur [l'utilisation du CDN OVHcloud](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/).
+> OVHcloud propose plusieurs [offres CDN](https://www.ovhcloud.com/fr-ca/web-hosting/options/). Si vous souhaitez en utiliser ou en activer une pour votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis consultez notre guide sur [l'utilisation du CDN OVHcloud](https://docs.ovh.com/ca/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/).
 >
 
 #### 2.4 - optimisez votre base de données
 
 > [!warning]
 >
-> Les actions que vous réalisez dans votre base de données peuvent avoir des conséquences irréversibles si elles ne sont pas réalisées méthodiquement et correctement. Faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous n'êtes pas certain des actions à réaliser. 
+> Les actions que vous réalisez dans votre base de données peuvent avoir des conséquences irréversibles si elles ne sont pas réalisées méthodiquement et correctement. Faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous n'êtes pas certain des actions à réaliser. 
 >
 
 Vérifiez si un nombre conséquent de requêtes sont effectuées vers votre base de données.<br>
@@ -281,7 +279,7 @@ Redimensionnez l'ensemble de vos images pour diminuer au maximum la consommation
 
 #### 2.6 - Optimisez le reste de votre site web
 
-Consultez notre guide sur l'[optimisation des performances pour votre site Internet](https://docs.ovh.com/fr/hosting/optimisation-performances-site/).
+Consultez notre guide sur l'[optimisation des performances pour votre site Internet](https://docs.ovh.com/ca/fr/hosting/optimisation-performances-site/).
 
 Vous pouvez trouver des pistes d'optimisation pour votre site en l'analysant sur [gtmetrix.com](https://gtmetrix.com){.external} (ce site n'est pas affilié à OVHcloud).
 
@@ -294,12 +292,12 @@ Vous pouvez trouver des pistes d'optimisation pour votre site en l'analysant sur
 
 Si votre hébergement web et votre base de données **ne sont pas en cause** et que votre site web continue d'être lent, malgré la réalisation de **toutes les étapes** de ce guide, cela signifie probablement que l'offre que vous utilisez pour héberger votre site web n'est pas ou plus adaptée à votre besoin. 
 
-Vous pouvez envisager une [offre d'hébergement mutualisée](https://www.ovhcloud.com/fr/web-hosting/) supérieure ou une infrastructure dédiée telle qu'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr/vps/) ou un [Serveur Dédié](https://www.ovhcloud.com/fr/bare-metal/). 
+Vous pouvez envisager une [offre d'hébergement mutualisée](https://www.ovhcloud.com/fr-ca/web-hosting/) supérieure ou une infrastructure dédiée telle qu'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr-ca/vps/) ou un [Serveur Dédié](https://www.ovhcloud.com/fr-ca/bare-metal/). 
 
 ## Aller plus loin <a name="go-further"></a>
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, consultez nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
