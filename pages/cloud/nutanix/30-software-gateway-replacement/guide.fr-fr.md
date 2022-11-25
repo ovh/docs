@@ -28,12 +28,12 @@ Ce guide vous présente comment remplacer la passerelles OVHgateway qui ne perme
 
 La passerelle OVHGateway utilise par défaut deux carte réseaux :
 
-- Une sur le VLAN 0  connectée à Internet avec une adresse IP supplémentaire OVHcloud.
-- Une sur le VLAN 1  connectée au réseau local d'administration.
+- Une sur le VLAN 0 (base)  connectée à Internet avec une adresse IP supplémentaire OVHcloud.
+- Une sur le VLAN 1 (infra) connectée au réseau local d'administration.
 
 Nous allons remplacer cette passerelle par une autre gateway avec les même paramètres. Nous allons utiliser le système d'exploitation réseau pfsense
 
-> [!warning]
+> [!primary]
 > Cette documentation vous montre comment installer pfsense mais vous pouvez l'adapter à d'autres systèmes d'exploitations réseaux (Distribution Linux, pare-feux virtuels) il vous faudra juste vous assurer de la compatibiité de votre machine virtuelle avec Nutanix sous AHV.
 >
 
@@ -50,18 +50,18 @@ A l'aide de [cette documentation](https://docs.ovh.com/fr/nutanix/image-import/)
 Créez une machine virtuelle avec ces paramètres :
 
 - **Nom** : `GW-PFSENSE`
-- **Stockage1** : `60 Go HDD` 
+- **Stockage1** : `100 Go HDD` 
 - **Stockage2** : `Un lecteur DVD connecté à l'image ISO de pfSense`
 - **RAM** : `4 Go` 
 - **CPU** : `2 vCPU`
-- **Réseau** : `deux cartes réseau sur le réseau de AHV: **Base**`
+- **Réseau** : `2 cartes réseaux, une sur le VLAN 0(base) et l'autre sur le VLAN 1(infra)`
 
 Vous pouvez vous aider de [notre guide sur la gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/) pour créer cette machine virtuelle.
 
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
 <a name="shutdownovhgateway"></a>
-### Arrêt de la machine virtuelle **OVH-GATEWAY**
+### Arrêt de la machine virtuelle **OVHGateway**
 
 Pour éviter des doublons d'adresses IP sur le réseau, il faut arrêter la machine virtuelle **OVHgateway** avant de démarrer la nouvelle machine virtuelle sous **pfSense**.
 
@@ -90,7 +90,7 @@ Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=go
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
-Ce que l'on nomme **IPFO** est une plage de 4 adresses. La première et la dernière sont réservées, la troisième se trouve sur un équipement OVHcloud et sert de passerelle **Internet**. La seule adresse IP utilisable est la seconde adresse de la plage. 
+**IPFO** est une plage de 4 adresses. La première et la dernière sont réservées, la troisième se trouve sur un équipement OVHcloud et sert de passerelle **Internet**. La seule adresse IP utilisable est la seconde adresse de la plage. 
 
 Lors de l'installation, nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
@@ -366,7 +366,7 @@ Cliquez sur `Apply Changes`{.action} pour activer la règle.
 
 ![Authorisation admin from public ADDRESS 05](images/07-authorize-admin-from-publicaddress05.png){.thumbnail}
 
-L'interface d'administration de **pfSense** est alors accessible depuis Internet, uniquement à partir du réseau autorisé en HTTPS, ici `https://123.123.123.5` .
+L'interface d'administration de **pfSense** est alors accessible depuis Internet, uniquement à partir du réseau autorisé en HTTPS, ici `https://198.51.100.1` .
 
 
 <a name="gofurther"></a>
