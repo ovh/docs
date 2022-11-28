@@ -1,5 +1,5 @@
 ---
-title: FAQ Web Hosting
+title: FAQ Webhosting
 excerpt: Hier finden Sie die Antworten zu den am häufigsten gestellten Fragen rund um OVHcloud Webhostings
 slug: webhosting-faq
 section: Erste Schritte
@@ -34,11 +34,11 @@ Wenn Sie in Ihrem Kundencenter eingeloggt sind:
 
 ### Wie kann ich meine Website online stellen? 
 
-Um Ihre Website online zu stellen benötigen Sie einen [Domainnamen](https://www.ovhcloud.com/de/domains/), der der Webadresse entspricht, über die Ihre Website erreichbar ist (Beispiel: *meindomain.com*). Sie benötigen auch ein [Hosting](https://www.ovhcloud.com/de/web-hosting/), auf dem Ihre Website installiert werden kann.
+Um Ihre Website online zu stellen benötigen Sie einen [Domainnamen](https://www.ovhcloud.com/de/domains/), der der Webadresse entspricht, über die Ihre Website erreichbar ist (Beispiel: *meinedomain.com*). Sie benötigen auch ein [Hosting](https://www.ovhcloud.com/de/web-hosting/), auf dem Ihre Website installiert werden kann.
 
-Folgen Sie den für die Erstellung Ihrer Website notwendigen Schritten auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/uc-website/) und folgen Sie dann den Anweisungen in der Anleitung [Eine Website auf Ihrem Webhosting online stellen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/).
+Folgen Sie den für die Erstellung Ihrer Website notwendigen Schritten auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/uc-website/) und folgen Sie dann den Anweisungen in der Anleitung "[Eine Website auf Ihrem Webhosting online stellen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/)".
 
-**Tipps und Tricks**: Um Ihnen bei der Erstellung Ihrer Website zu helfen, bietet Ihnen OVHcloud die Installation einer Software zur Erstellung von Webseiten (WordPress, PrestaShop, Joomla! und Drupal) auf Ihrem Hosting. Die Funktion [1 Klick-Module](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/) bietet Ihnen die Möglichkeit.
+**Tipps und Tricks**: Um Ihnen bei der Erstellung Ihrer Website zu helfen, bietet Ihnen OVHcloud die Installation einer Software zur Erstellung von Webseiten (WordPress, PrestaShop, Joomla! und Drupal) auf Ihrem Hosting. Die Funktion [1 Klick-Module](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/) bietet Ihnen diese Möglichkeit.
 
 ### Wie überträgt man eine Website und E-Mails auf die OVHcloud Server? 
 
@@ -46,20 +46,20 @@ Lesen Sie die Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](https:
 
 ### Wie kann ich mehrere Websites auf demselben Webhosting hosten?
 
-Lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) einrichten.
+Lesen Sie die Anleitung "[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)" .
 
 ### Wie kann ich die E-Mail-Accounts meines Webhosting bei einer Kündigung beibehalten?
 
 Wenn Sie Ihr Webhosting kündigen oder löschen, wird auch der inbegriffene E-Mail-Dienst gekündigt. Um Ihre E-Mail-Accounts zu behalten, müssen Sie den E-Mail-Dienst vor der Kündigung des Hostings abtrennen.<br>
 
-Gehen Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Im Bereich `Konfiguration`, klicken Sie auf `...`{.action} rechts neben `E-Mail-Adressen`. Klicken Sie auf `Meine E-Mail-Option abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges E-Mail-Angebot zu bestellen, mit dem Sie Ihre bereits erstellten E-Mail-Adressen behalten können.
+Gehen Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Im Bereich `Konfiguration` klicken Sie auf `...`{.action} rechts neben `E-Mail-Adressen`. Klicken Sie auf `Meine E-Mail-Option abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges E-Mail-Angebot zu bestellen, mit dem Sie Ihre bereits erstellten E-Mail-Accounts behalten können.
 
-### Wie kann ich bei einer Kündigung eines Performance Shared Hostings das verbundene CloudDB Angebot beibehalten?
+### Wie kann ich bei einer Kündigung eines Performance Hostings den darin enthaltenen CloudDB Dienst beibehalten?
 
-Shared Hosting **Performance** beinhalten ein kostenlos aktivierbares CloudDB Angebot.
-Wenn Sie Ihr Shared Hosting **Performance** kündigen oder löschen, wird auch das dazugehörige CloudDB Angebot gekündigt. Um Ihr CloudDB zu behalten, müssen Sie es vor der Kündigung des Hostings abtrennen.<br>
+Ein Webhosting der Reihe **Performance** beinhaltet ein kostenlos aktivierbares CloudDB Angebot.
+Wenn Sie Ihr **Performance** Hosting kündigen oder löschen, wird auch der dazugehörige CloudDB Dienst gekündigt. Um Ihr CloudDB zu behalten, müssen Sie es vor der Kündigung des Hostings abtrennen.<br>
 
-Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Klicken Sie im Abschnitt **Konfiguration** auf die Schaltfläche `...`{.action} rechts von "**Private Datenbank**". Klicken Sie auf `Abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges CloudDB Angebot zu bestellen, damit Sie Ihr bereits erstelltes CloudDB beibehalten können.
+Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Klicken Sie im Abschnitt **Konfiguration** auf die Schaltfläche `...`{.action} rechts von "**Private Datenbank**". Klicken Sie auf `Abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges CloudDB Angebot zu bestellen, mit dem Sie Ihr bereits erstelltes CloudDB beibehalten können.
 
 ## Diagnose
 
@@ -70,7 +70,7 @@ Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hosting
 
 ### Was tun, wenn mein Webhosting nicht korrekt funktioniert? 
 
-Es kann verschiedene Gründe geben, warum Ihre Website nicht wie erwartet funktioniert. Um die Ursache zu ermitteln, stellen Sie zunächst sicher, dass **keiner Ihrer Dienste verlängert werden muss**, indem Sie sich in Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen.
+Es kann verschiedene Gründe geben, warum Ihre Website nicht wie erwartet funktioniert. Um die Ursache zu ermitteln, stellen Sie zunächst sicher, dass **keiner Ihrer Dienste verlängert werden muss**, indem Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen.
 
 Überprüfen Sie dann die [aktuellen Vorgänge auf unserer Infrastruktur](https://www.status-ovhcloud.com/). Wenn alle Ihre Dienste aktiv sind und von keinerlei Störungen oder Wartungsarbeiten betroffen sind, empfehlen wir Ihnen eine genauere Diagnose.
 
@@ -126,13 +126,13 @@ Wenn Ihre Webseite eine Datenbank enthält, lesen Sie unsere Anleitung [Backup i
 
 ![webmail](images/webmail.png){.thumbnail}
 
-Diese Anomalie ist Folge einer fehlerhaften Konfiguration auf der Ebene der [DNS-Server](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/) oder der [DNS Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/), die Ihrer Domain zugewiesen sind.
+Diese Anomalie ist Folge einer fehlerhaften Konfiguration auf der Ebene der [DNS-Server](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/) oder der [DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/), die Ihrer Domain zugewiesen sind.
 
-Der häufigste Fall ist: Domainname und Hosting wurden getrennt bestellt. Sie sind also nicht über die DNS Zone untereinander verbunden.
+Der häufigste Fall ist: Domainname und Hosting wurden getrennt bestellt. Sie sind also nicht über die DNS-Zone untereinander verbunden.
 
 Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Domainnamen`{.action}. Klicken Sie auf die betreffende Domain und dann auf den Tab `DNS-Server`{.action}.
 
-Notieren Sie sich die angegebenen DNS Server und gehen Sie dann auf den Tab `DNS-Zone`{.action}.
+Notieren Sie sich die angegebenen DNS-Server und gehen Sie dann auf den Tab `DNS-Zone`{.action}.
 
 Vergleichen Sie die **Ziele** der `NS`-Einträge im Tab `DNS-Zone`{.action} mit den **DNS-Servern** im Tab desselben Namens:
 
