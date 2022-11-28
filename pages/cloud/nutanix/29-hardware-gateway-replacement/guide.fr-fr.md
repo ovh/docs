@@ -6,13 +6,13 @@ section: Réseau et sécurité
 order: 09
 ---
 
-**Dernière mise à jour le 25/11/2022**
+**Dernière mise à jour le 28/01/2022**
 
 ## Présentation
 
 Une machine virtuelle **OVHgateway** est installée lors d'un déploiement d'un cluster **Nutanix on OVHcloud**, cette machine virtuelle sert de passerelle Internet Sortante pour le cluster le débit maximal est de 1gb/s.
 
-Si vous avez besoin d'une bande passante plus importante il faut remplacer cette passerelle par un serveur dédié et choisir une offre qui vous permettra d'aller entre 1 gb/s et 10 gb/s sur le réseau public comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
+Si vous avez besoin d'une bande passante plus importante il faut remplacer cette passerelle par un serveur dédié et choisir une offre qui vous permettra d'aller entre 1 gb/s et 10 gb/s sur le réseau public comme indiqué sur ce lien [Serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/). Contactez le service commercial OVHcloud pour vous aider à choisir le bon serveur. 
 
 **Nous allons voir comment remplacer la passerelle par défaut par un serveur dédié OVHcloud pour augmenter la bande passante.**
 
@@ -28,7 +28,7 @@ Si vous avez besoin d'une bande passante plus importante il faut remplacer cette
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central. 
-- Disposer d'un serveur dédié dans votre compte OVHcloud avec plusieurs cartes réseaux, certaines sur le réseau public d'autres sur le réseau privé.
+- Disposer d'un serveur dédié dans votre compte OVHcloud avec plusieurs cartes réseaux, certaines sur le réseau public d'autres sur le réseau privé. Ce serveur doit être sur le même Data Center que le cluster Nutanix.
 
 ## En pratique
 
@@ -37,10 +37,11 @@ Nous allons déployer un serveur dédié sous Linux qui utilise 4 cartes réseau
 Pour remplacer l'OVHgateway nous allons utiliser ces paramètres :
 
 - Lan public en DHCP qui fournit une adresse publique sur une seule carte réseau.
-- Lan privé sur une équipe de deux cartes et des adresses privées manuelles sur plusieurs VLAN :
+- Lan privé sur une équipe de deux cartes et des adresses privées paramétrées sur un VLAN.
     - VLAN 1 : adresse IP privée et masque de l'OVHgateway (Dans notre exemple 172.16.3.254/22)
-    - VLAN 2 : Une autre adresse privée pour un VLAN supplémentaire (Dans notre exemple 10.22.3.254/22)
 
+![00 diagram nutanix and dedicated server 01](images/00-diagram-nutanix-and-dedicated-server-01.png){.thumbnail}    
+    
 ### Récupération des informations nécessaires au déploiement de votre serveur
 
 Allez dans votre espace client OVHcloud cliquez sur `Hosted Private Cloud`{.action} dans la barre d'onglets, sélectionnez votre cluster Nutanix à gauche et notez le nom du vRack associé à votre cluster Nutanix dans `Réseau privé (vRack)`.
@@ -208,7 +209,6 @@ define DEV_VLAN1 = bond0.1
 define DEV_VLAN2 = bond0.2
 define DEV_WORLD = "publiccardname1"
 define NET_VLAN1 = 172.16.0.0/22
-define NET_VLAN2 = 10.22.0.0/22
 
 table ip global {
     chain inbound_world {
@@ -230,14 +230,7 @@ table ip global {
         ip protocol . th dport vmap { tcp . 22 : accept}
     }
 
-    chain inbound_private_vlan2 {
-        # accepting ping (icmp-echo-request) for diagnostic purposes.
-        icmp type echo-request limit rate 5/second accept
-
-        # allow SSH from the VLAN2 network
-        ip protocol . th dport vmap { udp . 22 : accept}
-    }
-
+    
     chain inbound {
         type filter hook input priority 0; policy drop;
 
@@ -245,7 +238,7 @@ table ip global {
         ct state vmap { established : accept, related : accept, invalid : drop }
 
         # allow loopback traffic, anything else jump to chain for further evaluation
-        iifname vmap { lo : accept, $DEV_WORLD : jump inbound_world, $DEV_VLAN1 : jump inbound_private_vlan1, $DEV_VLAN2 : jump inbound_private_vlan2 }
+        iifname vmap { lo : accept, $DEV_WORLD : jump inbound_world, $DEV_VLAN1 : jump inbound_private_vlan1 }
 
         # the rest is dropped by the above policy
     }
@@ -257,7 +250,7 @@ table ip global {
         ct state vmap { established : accept, related : accept, invalid : drop }
 
         # connections from the internal net to the internet: vlan2 to vlan1 and vlan2 to vlan1 not allowed
-        meta iifname . meta oifname { $DEV_VLAN1 . $DEV_WORLD, $DEV_VLAN2 . $DEV_WORLD, $DEV_WORLD . $DEV_VLAN1, $DEV_WORLD . $DEV_VLAN2 } accept
+        meta iifname . meta oifname { $DEV_VLAN1 . $DEV_WORLD, $DEV_WORLD . $DEV_VLAN1 } accept
 
         # the rest is dropped by the above policy
     }
@@ -267,7 +260,6 @@ table ip global {
 
         # masquerade private IP addresses
         ip saddr $NET_VLAN1 meta oifname $DEV_WORLD counter masquerade
-        ip saddr $NET_VLAN2 meta oifname $DEV_WORLD counter masquerade
     }
 }
 ```
@@ -324,12 +316,6 @@ network:
             id: 1
             addresses: [172.16.3.254/22]
             link: bond0
-        bond0.2:
-            dhcp4: no
-            dhcp6: no
-            id: 2
-            addresses: [10.22.3.254/22]
-            link: bond0
 ```
 
 Modifiez le contenu du fichier `/etc/netplan/50-cloud-init.yaml` en remplaçant les noms ci-dessous : 
@@ -372,7 +358,11 @@ sudo systemctl start nftables
 sudo reboot
 ```
 
-La passerelle est disponible pour le Cluster Nutanix dans le VLAN1 et le VLAN2.
+La passerelle est disponible pour le Cluster Nutanix dans le VLAN1.
+
+### Test de la bande passante
+
+Vous pouvez contrôler la bande passante de votre serveur 
 
 
 ## Aller plus loin <a name="gofurther"></a>
