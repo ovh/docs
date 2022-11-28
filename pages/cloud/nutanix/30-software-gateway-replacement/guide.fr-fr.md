@@ -6,11 +6,11 @@ section: "Plan de Reprise d'Activité"
 order: 02
 ---
 
-**Dernière mise à jour le 25/11/2022**
+**Dernière mise à jour le 28/11/2022**
 
 ## Objectif
 
-Ce guide vous présente comment remplacer la passerelles OVHgateway qui ne permet qu'un accès Internet sortant par une autre passerelle de votre choix et qui vous ouvrira la possibilité d'avoir des accès entrant via du NAT ou du VPN ainsi que la possibilité de gérer l'accès Internet pour des VLAN supplémentaires.
+Ce guide vous présente comment remplacer la passerelles OVHgateway qui ne permet qu'un accès Internet sortant par une autre passerelle de votre choix qui vous ouvrira la possibilité d'avoir des accès entrant via du NAT ou du VPN ainsi que la possibilité de gérer l'accès Internet pour des VLAN supplémentaires.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -31,7 +31,8 @@ La passerelle OVHGateway utilise par défaut deux carte réseaux :
 - Une sur le VLAN 0 (base)  connectée à Internet avec une adresse IP supplémentaire OVHcloud.
 - Une sur le VLAN 1 (infra) connectée au réseau local d'administration.
 
-Nous allons remplacer cette passerelle par une autre gateway avec les même paramètres. Nous allons utiliser le système d'exploitation réseau pfsense
+Nous allons remplacer cette passerelle par une autre gateway avec les même paramètres avec dans notre le système d'exploitation réseau **PfSense**
+
 
 > [!primary]
 > Cette documentation vous montre comment installer pfsense mais vous pouvez l'adapter à d'autres systèmes d'exploitations réseaux (Distribution Linux, pare-feux virtuels) il vous faudra juste vous assurer de la compatibiité de votre machine virtuelle avec Nutanix sous AHV.

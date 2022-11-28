@@ -106,7 +106,7 @@ Laissez la sélection sur `Installer à partir d'un template OVH`{.action} et cl
 
 ![05 install OS 02](images/05-install-os02.png){.thumbnail}
 
-Cliquez sur la `liste des serveurs`{.action}.
+Cliquez sur la `liste des serveurs`{.action}. en dessous de **Certains OS nécessitent une licence**.
 
 ![05 install OS 03](images/05-install-os03.png){.thumbnail}
 
@@ -358,7 +358,7 @@ sudo systemctl start nftables
 sudo reboot
 ```
 
-La passerelle est disponible pour le Cluster Nutanix dans le VLAN1.
+La passerelle est disponible pour le Cluster Nutanix dans le VLAN 1.
 
 ### Test de la bande passante
 
