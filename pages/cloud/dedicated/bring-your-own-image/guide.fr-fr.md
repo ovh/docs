@@ -5,7 +5,7 @@ slug: bringyourownimage
 section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 28/03/2022**
+**Dernière mise à jour le 25/11/2022**
 
 ## Objectif
 
@@ -23,7 +23,7 @@ Outre les prérequis et limitations citées plus bas, il faut s'assurer que l'im
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) pour la partie [« Déploiement via espace client »](#viacontrolpanel) de ce guide.
 - Être connecté aux [API OVHcloud](https://api.ovh.com/){.external} pour la partie [« Déploiement via API »](#viaapi) de ce guide.
 - Avoir généré les [credentials pour utiliser l'APIv6](../../api/first-steps-with-ovh-api/) pour la partie [« Déploiement via API »](#viaapi) de ce guide.
-- La taille de votre image doit être plus petite que le(s) disque(s) installé(s) sur le serveur.
+- La taille de votre image doit être inférieure à la quantité de la mémoire vive de votre serveur moins 3GiB.
 
 > [!warning]
 >
@@ -34,7 +34,7 @@ Outre les prérequis et limitations citées plus bas, il faut s'assurer que l'im
 
 **Limitations techniques**
 
-Il existe aujourd'hui encore quelques limitations techniques liées à l'usage de produits physiques comme les serveurs dédiés. 
+Il existe aujourd'hui encore quelques limitations techniques liées à l'usage de produits physiques comme les serveurs dédiés.
 Veuillez prendre en compte les impératifs listés ci-dessous lors de votre préparation de déploiement. Cette liste n'est pas exhaustive.
 
 - Le type de boot : **uefi** ou **legacy**
@@ -62,7 +62,7 @@ Dans la fenêtre qui apparaît, sélectionnez `Installer à partir d'une image p
 
 Vous serez redirigé vers la page de configuration. Assurez-vous que l'URL de votre image est au format approprié. Complétez le reste des champs requis sur cette page. Lorsque vous avez confirmé que les informations sont correctes, cliquez sur `Installer le système`{.action}.
 
-Retrouvez le détail des options dans la partie [« Tableaux des options »](#options) de ce guide. 
+Retrouvez le détail des options dans la partie [« Tableaux des options »](#options) de ce guide.
 
 Concernant l'activation de `ConfigDrive`, retrouver la documentation sur [cette page](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
 
@@ -130,13 +130,12 @@ Voici quelques exemples de retour :
 |-|-|
 | Can't write qcow2 on disk. | Impossible d'écrire l'image qcow2 sur le disque. |
 | Could not download, qcow2 image is too big to download in memory. | Il n'y a pas assez d'espace en RAM pour télécharger l'image. |
-| Could not download image located : http://path/of/your/image. | Impossible de télécharger l'image située : http://chemin/de/votre/image. |
+| Could not download image located : `http://path/of/your/image`. | Impossible de télécharger l'image située : `http://chemin/de/votre/image`. |
 | Bad format image, expected : qcow2, raw. | Le format de l'image est incorrect. |
 | Bad checkSumType, expected : sha1, sha256, md5. | Le type de checksum est incorrect. |
 | Bad $checkSumType for downloaded file, got : 1234 while expecting 5678. | Le checksum est incorrect. |
 | Can not move backup GPT data structures to the end of disk. | Le format disque est incorrect. |
 | Could not create configdrive on disk. | Impossible de créer la partition configdrive sur le disk. |
-
 
 ### Supprimer le déploiement
 

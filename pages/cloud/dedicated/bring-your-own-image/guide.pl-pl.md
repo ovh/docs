@@ -5,7 +5,7 @@ slug: bringyourownimage
 section: Poziom zaawansowany
 ---
 
-**Ostatnia aktualizacja z dnia 28-03-2022**
+**Ostatnia aktualizacja z dnia 25-11-2022**
 
 ## Wprowadzenie
 
@@ -23,7 +23,7 @@ Oprócz wymagań i ograniczeń wymienionych poniżej, należy upewnić się, że
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w części ["Wdrażanie w Panelu klienta"](#viacontrolpanel) niniejszego przewodnika.
 - Dostęp do [API OVHcloud](https://api.ovh.com/){.external} w części ["Wdrażanie przez API"](#viaapi) niniejszego przewodnika.
 - Wygenerowanie [credentials do korzystania z APIv6](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/) w części ["Wdrażanie przez API"](#viaapi) tego przewodnika.
-- Rozmiar obrazu musi być mniejszy niż dyski zainstalowane na serwerze.
+- Rozmiar obrazu musi być mniejszy niż ilość pamięci RAM serwera minus 3GiB.
 
 > [!warning]
 >
@@ -130,9 +130,9 @@ Oto kilka przykładów:
 |-|-|
 | Can't write qcow2 on disk. | Nie można zapisać obrazu qcow2 na dysku. |
 | Could not download, qcow2 image is too big to download in memory. | Nie ma wystarczająco dużo miejsca w pamięci RAM, aby pobrać obraz. |
-| Could not download image located: http://path/of/your/image | Nie można pobrać obrazu znajdującego się na stronie: http://chemin/de/votre/image |
+| Could not download image located: `http://path/of/your/image` | Nie można pobrać obrazu znajdującego się na stronie: `http://ścieżka/Twój/obraz` |
 | Format obrazu, expected: qcow2, raw. | Format obrazu jest nieprawidłowy. |
-| Bad checkSumType, expected: sha1, sha256, md5\. | Typ checksum jest nieprawidłowy. |
+| Bad checkSumType, expected: sha1, sha256, md5. | Typ checksum jest nieprawidłowy. |
 | Bad $checkSumType for downloaded file, got: 1234 while expecting 5678\. | Checksum jest nieprawidłowy. |
 | Can not move backup GPT data structures to the end of disk. | Format dysku jest nieprawidłowy. |
 | Could not create configdrive on disk. | Nie można utworzyć partycji skonfigurowanej na dysku. |

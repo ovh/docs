@@ -5,7 +5,7 @@ slug: bringyourownimage
 section: Advanced use
 ---
 
-**Last updated 28th March 2022**
+**Last updated 25th November 2022**
 
 ## Objective
 
@@ -25,8 +25,7 @@ The image must be able to boot correctly, whatever the server type. It must also
 - A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) (for the method "[Deployment via Control Panel](#viacontrolpanel)")
 - Access to the [OVHcloud API](../../api/first-steps-with-ovh-api/) (for the section "[Deployment via API](#viaapi)" of this guide)
-- Your image must be smaller than the disk(s) installed in the server
-
+- Your image must be smaller than the Server RAM minus 3GiB.
 
 > [!warning]
 >
@@ -64,7 +63,7 @@ In the window that appears, select `Install from custom image`{.action} and clic
 
 You will be redirected to the configuration page. Make sure your image URL is in the correct format. Complete the rest of the required fields on this page. Once you have confirmed that the information is correct, click `Install the system`{.action}.
 
-You can find more details on the options in the "[Deployment options](#options)" section below. 
+You can find more details on the options in the "[Deployment options](#options)" section below.
 
 For more information on activating ConfigDrive, please consult the documentation on [this page](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
 
