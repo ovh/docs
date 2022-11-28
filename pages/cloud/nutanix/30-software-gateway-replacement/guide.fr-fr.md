@@ -119,7 +119,7 @@ Cliquez sur `Launch console`{.action}.
 ![Start GATEWAY pfsense](images/02-start-gatewaypfsense03.png){.thumbnail}
 
 <a name="pfsenseinstall"></a>
-### Installation de **pfsense**
+### Installation de **pfSense**
 
 Prenez connaissance des informations liées à la licence pfSense et appuyez sur la touche `Entrée`{.action} pour les accepter.
 
