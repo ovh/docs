@@ -7,7 +7,7 @@ order: 01
 ---
 
 **Dernière mise à jour le 10/11/2022**
-
+ 
 ## Objectif
 
 Un ralentissement sur votre site résulte d'un chargement excessivement long pour afficher l'ensemble ou certaines parties de votre site. 
@@ -35,7 +35,7 @@ Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre four
 >
 > Si vous avez besoin d'un service offrant un taux de disponibilité SLA supérieur à 99%, nous vous conseillons d'envisager l'utilisation d'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr/vps/) ou d'un [Serveur Dédié](https://www.ovhcloud.com/fr/bare-metal/).
 >
-> Par ailleurs, les performances de l'infrastructure d'hébergements mutualisés OVHcloud sont monitorées 24 heures sur 24 et 7 jours sur 7. Ceci afin de vous garantir un haut taux de disponibilité et, le cas échéant, un rétablissement rapide de vos services en cas de surcharge avérée.*
+> Par ailleurs, les performances de l'infrastructure d'hébergements mutualisés OVHcloud sont monitorées 24 heures sur 24 et 7 jours sur 7. Ceci afin de vous garantir un haut taux de disponibilité et, le cas échéant, un rétablissement rapide de vos services en cas de surcharge avérée.
 >
 
 ## Prérequis
@@ -288,6 +288,7 @@ Vous pouvez trouver des pistes d'optimisation pour votre site en l'analysant sur
 > [!success]
 >
 > Indépendamment des lenteurs, plus votre site web sera optimisé, plus son référencement naturel dans les moteurs de recherche sera également optimisé.
+>
 
 ### Conclusion
 

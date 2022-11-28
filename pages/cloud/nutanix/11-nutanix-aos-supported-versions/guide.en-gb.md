@@ -6,7 +6,7 @@ section: Getting started
 order: 11
 ---
 
-**Last updated 5th October 2022**
+**Last updated 25th November 2022**
 
 ## Objective
 
@@ -41,17 +41,6 @@ OVHcloud integrates LTS versions with the **Hosted Private Cloud powered by Nuta
 > 
 > During these updates, **LCM** may offer a new version that is not yet qualified by OVHcloud. Please wait for OVHcloud to validate it to continue receiving support.
 >
-
-The versions supported by OVHcloud are:
-
-| Version category              | Version number                         |
-| ----------------------------- | -------------------------------------- |
-| **LTS**                       | 5.20 & 6.5                             |
-|                               |                                        |
-| **STS**                       | 6.1                                    |
-|                               |                                        |
-
-This guide will be regularly updated with supported versions.
 
 Qualified versions can be viewed through the OVHcloud API.
 

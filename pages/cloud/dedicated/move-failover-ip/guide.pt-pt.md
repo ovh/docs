@@ -10,7 +10,7 @@ order: 7
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em “Contribuir” nesta página.
 >
 
-**Última atualização: 06/10/2022**
+**Última atualização: 24/11/2022**
 
 > [!primary]
 >
@@ -56,6 +56,10 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 > Por outro lado, os blocos contendo endereços MAC virtuais duplicados não podem ser movidos. Deve primeiro apagar o endereço MAC virtual duplicado no bloco a ser movido.
 
 ### Migrar um IP a partir da Área de Cliente OVHcloud
+
+> [!warning]
+> Apenas um único bloco de tamanho (/32) poderá ser movido de um servidor dedicado para um VPS.
+>
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no menu `Bare Metal Cloud`{.action} e abra a secção `IP`{.action}.
 

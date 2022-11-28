@@ -3,7 +3,7 @@ title: Installer manuellement Drupal
 slug: installer-manuellement-drupal
 excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS Drupal.
 section: CMS
-order: 04
+order: 07
 ---
 
 

@@ -3,7 +3,7 @@ title: 'Manuelle Installation von Drupal'
 excerpt: Wie funktioniert die manuelle Installation von Drupal?
 slug: cms_manuelle_installation_von_drupal
 section: CMS
-order: 04
+order: 07
 ---
 
 

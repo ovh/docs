@@ -9,7 +9,7 @@ section: Uso avanzado
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 28/03/2022**
+**Última actualización: 25/11/2022**
 
 ## Objetivo
 
@@ -27,7 +27,7 @@ Además de los requisitos y limitaciones indicados más abajo, debe asegurarse d
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para la sección ["Despliegue desde el área de cliente"](#viacontrolpanel) de esta guía.
 - Estar conectado a la [API de OVHcloud](https://api.ovh.com/){.external} para la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
 - Haber generado los [credenciales para utilizar la APIv6](https://docs.ovh.com/es/api/first-steps-with-ovh-api/) en la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
-- El tamaño de la imagen debe ser inferior al disco o discos instalados en el servidor
+- El tamaño de la imagen debe ser inferior a la cantidad de memoria RAM del servidor menos 3 GiB.
 
 > [!warning]
 >
@@ -133,7 +133,7 @@ Aquí hay algunos ejemplos:
 |-|-|
 | Can't write qcow2 on disk. | No se puede escribir la imagen qcow2 en el disco. |
 | Could not download, qcow2 image is too big to download in memory. | No hay suficiente espacio en RAM para descargar la imagen. |
-| Could not download image located: http://path/of/your/image. | No se ha podido descargar la imagen: http://path/of/your/image. |
+| Could not download image located: `http://path/of/your/image`. | No se ha podido descargar la imagen: `http://ruta/de/su/imagen`. |
 | Bad format image, expected: qcow2, raw. | El formato de la imagen es incorrecto. |
 | Bad checkSumType, expected : sha1, sha256, md5. | El tipo de checksum es incorrecto. |
 | Bad $checkSumType for downloaded file, got : 1234 while expecting 5678. | El checksum es incorrecto. |
