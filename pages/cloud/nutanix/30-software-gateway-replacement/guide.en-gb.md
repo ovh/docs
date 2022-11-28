@@ -32,7 +32,9 @@ The OVHgateway uses two network cards by default:
 - One on VLAN 0 (base) connected to the internet with an additional OVHcloud IP address.
 - One on VLAN 1 (infra) connected to the local administration network.
 
-In our guide, we will replace this gateway with the network operating system **PfSense Community edition** without support but it is quite possible to adapt this guide to other operating systems that can be installed on AHV (You will need to ensure compatibility).
+In our guide, we will replace this gateway with the network operating system **PfSense Community edition** without support.
+
+It is entirely possible to use this guide to install other network operating systems compatible with AHV.
 
 <a name="downloadsources"></a>
 ### Downloading sources for pfSense installation

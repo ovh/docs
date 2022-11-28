@@ -32,7 +32,9 @@ La passerelle OVHGateway utilise par défaut deux carte réseaux :
 - Une sur le VLAN 0 (base)  connectée à Internet avec une adresse IP supplémentaire OVHcloud.
 - Une sur le VLAN 1 (infra) connectée au réseau local d'administration.
 
-Dans notre guide, nous allons remplacer cette passerelle par le système d'exploitation réseau **PfSense Community edition** sans support mais il est tout fait possible d'adapter ce guide à d'autre systèmes d'exploitations que l'on peux installer sur AHV (Il faudra vous assurer de la compatibilité).
+Dans notre guide, nous allons remplacer cette passerelle par le système d'exploitation réseau **PfSense Community edition** sans support.
+
+Il est tout fait possible de s'appuyer sur ce guide pour installer d'autre systèmes d'exploitations réseaux comptatibles avec AHV.
 
 <a name="downloadsources"></a>
 ### Téléchargement des sources pour l'installation de pfSense
@@ -104,7 +106,7 @@ Par exemple, si l'adresse **IPFO** affichée sur le site client est 198.51.100.0
 - **198.51.100.2** pour la passerelle sur l'interface **WAN**.
 
 <a name="poweronvmpfsense"></a>
-#### Etape 2.5 Démarrage de la machine virtuelle **GW-PFSENSE**
+### Démarrage de la machine virtuelle **GW-PFSENSE**
 
 Revenez dans la gestion des machines virtuelles sur **Prism Central** et cliquez sur `GW-PFSENSE`{.action}.
 
