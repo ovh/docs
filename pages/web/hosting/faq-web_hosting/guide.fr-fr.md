@@ -76,7 +76,8 @@ Lorsque vous résiliez ou supprimez votre hébergement mutualisé, l'offre e-mai
 
 Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Adresses e-mails** ». Cliquez sur `Délier mon option e-mail`{.action} et suivez les instructions pour commander une offre e-mail indépendante qui vous permettra de conserver vos adresses e-mails déjà créées.
 
-### Comment conserver l'offre CloudDB liée à mon hébergement mutualisé "Performance" lors d'une résiliation ?
+### Lors d'une résiliation d'un hébergement mutualisé Performance, comment conserver l'offre CloudDB liée ?
+
 
 Les hébergements mutualisés **Performance** comprennent une offre CloudDB activable gratuitement.
 Lorsque vous résiliez ou supprimez votre hébergement mutualisé **Performance**, l'offre CloudDB qui est attachée est également résiliée. Pour conserver votre CloudDB, il vous faudra le détacher avant la résiliation de l'hébergement.<br>
