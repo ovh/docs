@@ -10,7 +10,7 @@ order: 05
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 07.04.2022**
+**Letzte Aktualisierung am 28.11.2022**
 
 ## Verwaltung Ihres Angebots 
 
@@ -53,6 +53,13 @@ Lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting](https://docs.ovh
 Wenn Sie Ihr Webhosting kündigen oder löschen, wird auch der inbegriffene E-Mail-Dienst gekündigt. Um Ihre E-Mail-Accounts zu behalten, müssen Sie den E-Mail-Dienst vor der Kündigung des Hostings abtrennen.<br>
 
 Gehen Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Im Bereich `Konfiguration`, klicken Sie auf `...`{.action} rechts neben `E-Mail-Adressen`. Klicken Sie auf `Meine E-Mail-Option abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges E-Mail-Angebot zu bestellen, mit dem Sie Ihre bereits erstellten E-Mail-Adressen behalten können.
+
+### Wie kann ich bei einer Kündigung eines Performance Shared Hostings das verbundene CloudDB Angebot beibehalten?
+
+Shared Hosting **Performance** beinhalten ein kostenlos aktivierbares CloudDB Angebot.
+Wenn Sie Ihr Shared Hosting **Performance** kündigen oder löschen, wird auch das dazugehörige CloudDB Angebot gekündigt. Um Ihr CloudDB zu behalten, müssen Sie es vor der Kündigung des Hostings abtrennen.<br>
+
+Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Klicken Sie im Abschnitt **Konfiguration** auf die Schaltfläche `...`{.action} rechts von "**Private Datenbank**". Klicken Sie auf `abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges CloudDB Angebot zu bestellen, damit Sie Ihr bereits erstelltes CloudDB beibehalten können.
 
 ## Diagnose
 

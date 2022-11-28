@@ -78,12 +78,10 @@ Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votr
 
 ### Lors d'une résiliation d'un hébergement mutualisé Performance, comment conserver l'offre CloudDB liée ?
 
-
 Les hébergements mutualisés **Performance** comprennent une offre CloudDB activable gratuitement.
 Lorsque vous résiliez ou supprimez votre hébergement mutualisé **Performance**, l'offre CloudDB qui est attachée est également résiliée. Pour conserver votre CloudDB, il vous faudra le détacher avant la résiliation de l'hébergement.<br>
 
 Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Base de données Privée** ». Cliquez sur `Délier`{.action} et suivez les instructions afin de commander une offre CloudDB indépendante, ce qui vous permettra de conserver votre CloudDB déjà créé.
-
 
 ## Diagnostic
 

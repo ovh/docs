@@ -10,7 +10,7 @@ order: 05
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 07/04/2022**
+**Última atualização: 28/112022**
 
 ## Gestão da sua oferta
 
@@ -79,6 +79,13 @@ De seguida, selecione a sua nova fórmula de alojamento e a duração da sua nov
 Quando rescinde ou elimina o seu alojamento partilhado, a oferta de e-mail que está associada é igualmente rescindida. Para conservar os endereços de e-mail, é necessário desassociar a oferta de e-mail antes que o alojamento seja rescindido.<br>
 
 Para isso, aceda ao separador `Informações gerais`{.action} do alojamento. Na secção **Configuração**, clique no botão `...`{.action} à direita de `Endereços de e-mail`. Clique em `Desassociar a minha opção de e-mail`{.action} e siga as instruções para encomendar uma oferta de e-mail independente que lhe permitirá conservar os seus endereços de e-mail já criados.
+
+### Durante a rescisão de um alojamento partilhado Performance, como conservar a oferta CloudDB associada?
+
+Os alojamentos partilhados **Performance** incluem uma oferta CloudDB ativável gratuitamente.
+Quando rescinde ou elimina o seu alojamento partilhado **Performance**, a oferta CloudDB que está associada também é rescindida. Para conservar o seu CloudDB, terá de o desassociar antes da rescisão do alojamento.<br>
+
+Para isso, clique no separador `Informações gerais`{.action} do seu alojamento. Na secção **Configuração**, clique no botão `...`{.action} à direita de "**Base de dados Privada**". Clique em `Deer`{.action} e siga as instruções para encomendar uma oferta CloudDB independente, o que lhe permitirá conservar o seu CloudDB já criado.
 
 ## Diagnóstico
 
