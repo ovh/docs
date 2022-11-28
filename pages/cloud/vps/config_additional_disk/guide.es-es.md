@@ -36,7 +36,7 @@ Una vez seleccionado el VPS, abra la pestaña `Disco adicional`{.action} del men
 
 Tome nota de la información sobre los precios y haga clic en `Contratar`{.action}. Le guiaremos en el proceso de pedido y recibirá un mensaje de correo electrónico de confirmación una vez instalado el disco.
 
-### Subir el nuevo espacio de almacenamiento
+### Montar el nuevo espacio de almacenamiento
 
 > [!warning]
 > OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
@@ -52,7 +52,7 @@ Los siguientes ejemplos suponen que está conectado como usuario con altos permi
 
 Puede utilizar el siguiente comando para comprobar el nombre del nuevo dispositivo:
 
-```
+```bash
 $ lsblk
 
 sda       8:0    0   80G  0 disk
@@ -66,7 +66,7 @@ En este ejemplo, el disco adicional se llama `sdb`.
 
 Ejecute `fdisk` para crear una partición en el disco. Cuando se le pida, introduzca `n` para una nueva partición y acepte los siguientes valores predeterminados pulsando Entrar (" ↩"). Por último, utilice el comando `w` para escribir los cambios en el disco.
 
-```
+```bash
 $ sudo fdisk /dev/sdb
 
 Welcome to fdisk (util-linux 2.34).
@@ -74,7 +74,7 @@ Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
 ```
 
-```
+```bash
 Command (m for help): n
 
 Partition type
@@ -84,7 +84,7 @@ Partition type
 Select (default p):
 ```
 
-```
+```bash
 Partition number (1-4, default 1): 
 
 First sector (2048-104857599, default 2048):
@@ -93,7 +93,7 @@ Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-104857599, default 104857599
 Created a new partition 1 of type 'Linux' and of size 50 GiB.
 ```
 
-```
+```bash
 Command (m for help): w
 
 The partition table has been altered.
@@ -103,7 +103,7 @@ Syncing disks.
 
 Una vez creada la partición `sdb1`, puede formatearla con ext4:
 
-```
+```bash
 $ sudo mkfs.ext4 /dev/sdb1
 
 Creating filesystem with 13106944 4k blocks and 3276800 inodes
@@ -120,14 +120,14 @@ Writing superblocks and filesystem accounting information: done
 
 Para terminar, montar el disco:
 
-```
+```bash
 $ sudo mkdir /mnt/disk
 $ sudo mount /dev/sdb1 /mnt/disk
 ```
 
 En la última línea, puede ver que el disco adicional está ahora montado a `/mnt/disk`:
 
-```
+```bash
 $ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            1.9G     0  1.9G   0% /dev
@@ -155,7 +155,7 @@ Este paso anterior no es persistente, ya que el disco se desvinculará si se rei
 
 En primer lugar, obtenga el UUID (ID de bloque) del periférico:
 
-```
+```bash
 $ sudo blkid
 /dev/sda1: LABEL="cloudimg-rootfs" UUID="e616a2cd-3c02-4c79-9823-9b1bb5c13b26" TYPE="ext4" PARTUUID="a44089a3-f407-41e6-b7a5-1ed7672cef20"
 /dev/sda15: LABEL_FATBOOT="UEFI" LABEL="UEFI" UUID="4411-1580" TYPE="vfat" PARTUUID="e1746ac7-80c1-4859-9b4d-fa6ce11b3ae9"
@@ -171,13 +171,13 @@ $ sudo blkid
 
 Abra `/etc/fstab` con un editor de texto:
 
-```
+```bash
 $ sudo nano /etc/fstab
 ```
 
 Añada la siguiente línea al archivo y sustituya el UUID por el suyo:
 
-```
+```bash
 UUID=87571b68-30e1-498b-a64c-49ec5cd4f31c /mnt/disk ext4 nofail 0 0
 ```
 
@@ -223,19 +223,19 @@ Pulse `cmd` y haga clic en `Aceptar`{.action} para abrir la aplicación de líne
 
 En la línea de comandos, abra DISKPART:
 
-```
+```bash
 C:\> diskpart
 ```
 
 Utilice la siguiente serie de comandos DISKPART para configurar el disco en línea:
 
-```
+```bash
 DISKPART> san
 
 SAN Policy: Offline Shared
 ```
 
-```
+```bash
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -249,19 +249,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```
+```bash
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk
 ```
 
-```
+```bash
 DISKPART> atributos disk clear readonly
 
 Disk atributos cleared successfully.
 ```
 
-```
+```bash
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -273,7 +273,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```
+```bash
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
