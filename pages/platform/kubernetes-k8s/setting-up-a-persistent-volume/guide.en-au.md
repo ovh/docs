@@ -32,7 +32,7 @@ order: 0
 
 In this tutorial we are going to guide you with a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
 
-You will create a `Persistent Volume Claim` (PVC), that will automatically create a `Persistent Volume` (PV) that will automatically create an asscoiated Public Cloud __Block Storage__ volume.
+You will create a `Persistent Volume Claim` (PVC), that will automatically create a `Persistent Volume` (PV) that will automatically create an asscoiated Public Cloud __Block Storage__ volume.<br>
 Then you will create a `Pod` attached to the PVC.
 
 ![Schema](images/schema.png){.thumbnail}
@@ -136,7 +136,7 @@ Apply it to the cluster:
 kubectl apply -f test-pvc-pod.yaml
 ```
 
-And check everything is working correctly:
+Check that everything is working correctly:
 
 ```bash
 kubectl describe pod test-pvc-pod
@@ -271,7 +271,8 @@ No resources found.
 
 > [!warning]
 >
-> If you created a pod attached to a PVC and you want to delete the PVC, the PVC can't be terminated still the pod will live. So please delete before the pod, and then the PVC.
+> If you created a pod attached to a PVC and you want to delete the PVC, please note that the PVC can't be terminated while the pod is still on. 
+> So please delete the pod first, then delete the PVC.
 
 ### Changing the reclaim policy
 
