@@ -1,12 +1,12 @@
 ---
-title: IPsec interconnection between two sites
-slug: ipsec-interconnection
+title: OVHgateway replacement
+slug: software-gateway-replacement
 excerpt: Setting up an IPsec VPN between two remote Nutanix clusters
-section: Disaster Recovery Plan
+section: Network & Security
 order: 02
 ---
 
-**Last updated 29th June 2022**
+**Last updated 28th November 2022**
 
 ## Objective
 
@@ -21,11 +21,9 @@ This guide will show you how to interconnect two Nutanix clusters, provided by O
 
 ## Requirements
 
-- Two Nutanix clusters provided by OVHcloud, on different sites
+- One Nutanix cluster provided by OVHcloud
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - Access to your clusters via Prism Central
-- A different private IP addressing scheme applied per cluster
-- Being familiar with uses for an IPsec VPN using the [Nutanix Disaster Recovery Plan guide](https://docs.ovh.com/gb/en/nutanix/disaster-recovery-plan-overview/)
 
 ## Instructions
 
