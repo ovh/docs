@@ -31,12 +31,7 @@ La passerelle OVHGateway utilise par défaut deux carte réseaux :
 - Une sur le VLAN 0 (base)  connectée à Internet avec une adresse IP supplémentaire OVHcloud.
 - Une sur le VLAN 1 (infra) connectée au réseau local d'administration.
 
-Nous allons remplacer cette passerelle par une autre gateway avec les même paramètres avec dans notre le système d'exploitation réseau **PfSense**.
-
-
-> [!primary]
-> Cette documentation vous montre comment installer pfsense mais vous pouvez l'adapter à d'autres systèmes d'exploitations réseaux (Distribution Linux, pare-feux virtuels) il vous faudra juste vous assurer de la compatibiité de votre machine virtuelle sur Nutanix avec AHV.
->
+dans notre guide, nous allons remplacer cette passerelle par le système d'exploitation réseau **PfSense** mais il est tout fait possible d'adapter ce guide à d'autre systèmes d'exploitations que l'on peux installer sur AHV.
 
 <a name="downloadsources"></a>
 ### Téléchargement des sources pour l'installation de pfSense
