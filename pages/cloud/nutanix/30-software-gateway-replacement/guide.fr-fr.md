@@ -10,7 +10,7 @@ order: 02
 
 ## Objectif
 
-Ce guide vous présente comment remplacer la passerelles OVHgateway (Passerelle Interne sortante) par une autre système d'exploitation réseau qui vous donnera en plus de l'accès Internet la possibilité de configurer du NAT et des VPN (Ipsec ou SSL VPN).
+Ce guide vous présente comment remplacer la passerelles OVHgateway (Passerelle Internet sortante) par une autre système d'exploitation réseau qui vous donnera en plus de l'accès Internet la possibilité de configurer du NAT et des VPN (Ipsec ou SSL VPN).
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -31,7 +31,7 @@ La passerelle OVHGateway utilise par défaut deux carte réseaux :
 - Une sur le VLAN 0 (base)  connectée à Internet avec une adresse IP supplémentaire OVHcloud.
 - Une sur le VLAN 1 (infra) connectée au réseau local d'administration.
 
-dans notre guide, nous allons remplacer cette passerelle par le système d'exploitation réseau **PfSense** mais il est tout fait possible d'adapter ce guide à d'autre systèmes d'exploitations que l'on peux installer sur AHV.
+dans notre guide, nous allons remplacer cette passerelle par le système d'exploitation réseau **PfSense Community edition** sans support mais il est tout fait possible d'adapter ce guide à d'autre systèmes d'exploitations que l'on peux installer sur AHV.
 
 <a name="downloadsources"></a>
 ### Téléchargement des sources pour l'installation de pfSense
