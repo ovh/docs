@@ -122,8 +122,8 @@ Enter these information:
 * **Description (optional)** :  Active directory domain name.
 * **Active Directory server IP address** : Public IP address to access your LDAPS server.
 * **Active Directory LDAPS server host name** : The public FQDN name of your Active Directory server.
-* **LDAPS service port*** : The port number of the LDAPS service.
-* **SSL certificate thumbprint** : Thumbprint of the SSL certificate retrieved earlier.
+* **LDAPS service port*** : The LDAPS service port number.
+* **SSL certificate thumbprint** : The SSL Thumbprint certificate retrieved earlier.
 * **Active Directory username** : Active directory username followed by @domain-activedirectory.
 * **Active Directory user password** : Active Directory user password.
 * **DN base for users** : The DN (LDAP syntax) of the folder containing users such as cn=Users,dc=example,dc=com for the domain example.com.
