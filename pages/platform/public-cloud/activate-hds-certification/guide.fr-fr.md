@@ -6,7 +6,7 @@ section: 'Gestion de projets'
 order: 9
 ---
 
-**Dernière mise à jour le 21/03/2022**
+**Dernière mise à jour le 28/11/2022**
 
 ## Objectif
 
