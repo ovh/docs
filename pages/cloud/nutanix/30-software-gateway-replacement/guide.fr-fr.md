@@ -32,7 +32,7 @@ La passerelle OVHGateway utilise par défaut deux carte réseaux :
 - Une sur le VLAN 0 (base)  connectée à Internet avec une adresse IP supplémentaire OVHcloud.
 - Une sur le VLAN 1 (infra) connectée au réseau local d'administration.
 
-Dans notre guide, nous allons remplacer cette passerelle par le système d'exploitation réseau **PfSense Community edition** sans support.
+Dans notre guide, nous allons remplacer cette passerelle par le système d'exploitation réseau **pfSense Community edition** sans support.
 
 Il est tout fait possible de s'appuyer sur ce guide pour installer d'autre systèmes d'exploitations réseaux comptatibles avec AHV.
 
@@ -366,6 +366,27 @@ Cliquez sur `Apply Changes`{.action} pour activer la règle.
 ![Authorisation admin from public ADDRESS 05](images/07-authorize-admin-from-publicaddress05.png){.thumbnail}
 
 L'interface d'administration de **pfSense** est alors accessible depuis Internet, uniquement à partir du réseau autorisé en HTTPS, ici `https://198.51.100.1` .
+
+### Configuration d'un accès Internet sur un nouveau VLAN
+
+#### Modification de la machine virtuelle pfSense
+
+Nous allons créer un nouveau VLAN avec ces paramètres
+
+- **Nom du VLAN** : `Production`
+- **Numéro du VLAN** : 2
+
+Aidez-vous de ce guide pour créer un nouveau VLAN sur votre cluster Nutanix [Isoler les machines de gestion de la production]
+(https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/).
+
+
+
+
+
+
+#### Ajout des règles par défaut pour accéder à Internet depuis le nouveau VLAN
+
+
 
 
 <a name="gofurther"></a>
