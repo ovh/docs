@@ -6,7 +6,7 @@ section: Getting started
 order: 05
 ---
 
-**Last updated 7th April 2022**
+**Last updated 28th November 2022**
 
 ## Manage your solution
 
@@ -75,6 +75,13 @@ Then select your new hosting plan and the duration of your new subscription. Rev
 When you cancel or delete your hosting plan, the email solution attached to it will also be cancelled. To keep your email addresses, you will need to detach the email solution before cancelling the hosting plan.<br>
 
 To do this, go to your Web Hosting plan’s `General information`{.action} tab. In the **Configuration** section, click on the `...`{.action} button to the right of **Email addresses**. Click `Detach my email option`{.action} and follow the instructions to order an independent email solution that lets you keep your email addresses you have already created.
+
+### When cancelling a Performance hosting plan, how do I keep the CloudDB offer linked to it?
+
+The **Performance** shared hosting plans include a CloudDB offer that can be activated for free.
+When you cancel or delete your **Performance** shared hosting plan, the CloudDB service that is linked to it will also be cancelled. To keep your CloudDB, you will need to detach it before cancelling the hosting plan.<br>
+
+To do this, click on the `General information`{.action} tab on your web hosting plan. In the **Configuration** section, click the `...`{.action} to the right of **Private Database**'. Click on `Unlink`{.action} and follow the instructions to order an independent CloudDB offer, which will allow you to keep your already created CloudDB.
 
 ## Diagnostics 
 
