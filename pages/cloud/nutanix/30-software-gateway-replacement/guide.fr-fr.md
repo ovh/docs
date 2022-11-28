@@ -371,7 +371,9 @@ L'interface d'administration de **pfSense** est alors accessible depuis Internet
 
 #### Modification de la machine virtuelle pfSense
 
-Nous allons créer un nouveau VLAN avec ces paramètres
+Connectez-vous à Prism Central pour effectuer ces modifications :
+
+Nous allons créer un nouveau VLAN avec ces paramètres :
 
 - **Nom du VLAN** : `Production`
 - **Numéro du VLAN** : 2
@@ -379,15 +381,96 @@ Nous allons créer un nouveau VLAN avec ces paramètres
 Aidez-vous de ce guide pour créer un nouveau VLAN sur votre cluster Nutanix [Isoler les machines de gestion de la production]
 (https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/).
 
+Votre nouveau réseau doit apparaitre dans **Subnets**
 
+![08 add vlan production 01](images/08-add-vlan-production01.png){.thumbnail}
 
+Maintenant que le nouveau sous-réseau est créé nous allons rajouter une carte dans  la configuration de votre machine virtuelle **GW-PFSENSE**.
 
+Au travers de la gestion des machines virtuelles sélectionnez votre machine virtuelle **GW-PFSENSE** allez dans le menu `Actions`{.action} et choisissez `Update`{.action}.
 
+![09 update-vm-pfsense 01](images/09-update-vm-pfsense01.png){.thumbnail}
 
-#### Ajout des règles par défaut pour accéder à Internet depuis le nouveau VLAN
+Cliquez sur `Next`{.action}.
 
+![09 update-vm-pfsense 02](images/09-update-vm-pfsense02.png){.thumbnail}
 
+Cliquez sur `Attach to Subnet`{.action}.
 
+![09 update-vm-pfsense 03](images/09-update-vm-pfsense03.png){.thumbnail}
+
+Choisissez le subnet `Production`{.action} et cliquez sur `Save`{.action}.
+
+![09 update-vm-pfsense 04](images/09-update-vm-pfsense04.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![09 update-vm-pfsense 05](images/09-update-vm-pfsense05.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![09 update-vm-pfsense 06](images/09-update-vm-pfsense06.png){.thumbnail}
+
+Cliquez sur `Save`{.action}.
+
+![09 update-vm-pfsense 06](images/09-update-vm-pfsense06.png){.thumbnail}
+
+#### Activation et configuration de la nouvelle carte réseau sur pfSense
+
+Connectez-vous en https sur l'interface pfSense avec l'adresse publique par exemple **https://198.51.100.1** sur votre interface d'administration pfSense et suivez ces instructions :
+
+Allez dans le menu `Interfaces`{.action} et cliquez sur `Assignments`{.action}.
+
+![10 addinterface-in-pfsense 01](images/10-addinterface-in-pfsense01.png){.thumbnail}
+
+Cliquez sur `+ Add`{.action} en face de **Available network ports:**.
+
+![10 addinterface-in-pfsense 02](images/10-addinterface-in-pfsense02.png){.thumbnail}
+
+Cliquez sur `Save`{.action}.
+
+![10 addinterface-in-pfsense 03](images/10-addinterface-in-pfsense03.png){.thumbnail}
+
+Au travers du menu `Interfaces`{.action} et cliquez sur `OPT1`{.action}
+
+![11 assign ip to new interface 01](images/11-assign-ip-to-new-interface01.png){.thumbnail}
+
+Modifiez ces paramètres :
+
+* **Description** : `VLAN 2`
+* **IPv4 Address** : `192.168.2.254/24`
+
+Ensuite cliquez sur `Save`{.action}.
+
+![11 assign ip to new interface 02](images/11-assign-ip-to-new-interface02.png){.thumbnail}
+
+Cliquez sur `Apply Changes`{.action}.
+
+![11 assign ip to new interface 03](images/11-assign-ip-to-new-interface03.png){.thumbnail}
+
+Cliquez sur `Rules`{.action} dans le menu `Firewall`.
+
+![12 add rule for new card 01](images/12-add-rule-for-new-card01.png){.thumbnail}
+
+Allez dans l'onglet `VLAN2`{.action} et cliquez sur `Add`{.action} en bas dans les boutons à gauche.
+
+![12 add rule for new card 02](images/12-add-rule-for-new-card02.png){.thumbnail}
+
+Changez ces valeurs :
+
+* **Protocol** : `Any`
+* **Source** : `VLAN2 net`
+* **Destination** : `any`
+
+Et cliquez sur `Save`{.action}.
+
+![12 add rule for new card 03](images/12-add-rule-for-new-card03.png){.thumbnail}
+
+Cliquez sur `Apply Changes`{.action}.
+
+![12 add rule for new card 04](images/12-add-rule-for-new-card04.png){.thumbnail}
+
+Votre VLAN2 peut utiliser cette passerelle pour se connecter à Internet.
 
 <a name="gofurther"></a>
 ## Aller plus loin
