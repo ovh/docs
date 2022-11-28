@@ -362,7 +362,22 @@ La passerelle est disponible pour le Cluster Nutanix dans le VLAN1.
 
 ### Test de la bande passante
 
-Vous pouvez contrôler la bande passante de votre serveur 
+Vous pouvez contrôler la bande passante de votre serveur avec un outil nommé Iperf que vous pouvez trouver sur le site officiel [Site WEB Iperf](https://iperf.fr/)
+
+Pour faire un test complet, utilisez créer une machine virtuelle sous Linux, installer le logiciel iperf3 et lancer cette commande :
+
+```bash
+perf3 -c proof.ovh.net -p 5202 -t 180 --logfile iperf2.log
+```
+
+Le test dure 3 minutes et vous aurez la bande passante de votre cluster au travers de votre serveur dédié.
+
+```console
+[  6] 1796.00-1797.00 sec  1.08 GBytes  9.28 Gbits/sec    0   3.02 MBytes
+[  6] 1797.00-1798.00 sec  1.08 GBytes  9.28 Gbits/sec    0   3.02 MBytes
+[  6] 1798.00-1799.00 sec  1.08 GBytes  9.28 Gbits/sec    0   3.02 MBytes
+[  6] 1799.00-1800.00 sec  1.08 GBytes  9.28 Gbits/sec    0   3.02 MBytes
+```
 
 
 ## Aller plus loin <a name="gofurther"></a>
