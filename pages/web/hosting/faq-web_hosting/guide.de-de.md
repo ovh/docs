@@ -59,7 +59,7 @@ Gehen Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings.
 Shared Hosting **Performance** beinhalten ein kostenlos aktivierbares CloudDB Angebot.
 Wenn Sie Ihr Shared Hosting **Performance** kündigen oder löschen, wird auch das dazugehörige CloudDB Angebot gekündigt. Um Ihr CloudDB zu behalten, müssen Sie es vor der Kündigung des Hostings abtrennen.<br>
 
-Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Klicken Sie im Abschnitt **Konfiguration** auf die Schaltfläche `...`{.action} rechts von "**Private Datenbank**". Klicken Sie auf `abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges CloudDB Angebot zu bestellen, damit Sie Ihr bereits erstelltes CloudDB beibehalten können.
+Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Klicken Sie im Abschnitt **Konfiguration** auf die Schaltfläche `...`{.action} rechts von "**Private Datenbank**". Klicken Sie auf `Abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges CloudDB Angebot zu bestellen, damit Sie Ihr bereits erstelltes CloudDB beibehalten können.
 
 ## Diagnose
 

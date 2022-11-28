@@ -85,7 +85,7 @@ Per effettuare questa operazione, clicca sulla scheda `Informazioni generali`{.a
 Gli hosting condivisi **Performance** includono un'offerta CloudDB attivabile gratuitamente.
 Quando elimini o elimini il tuo hosting condiviso **Performance**, l'offerta CloudDB associata è disattivata. Per conservare il tuo CloudDB, dovrai scollegarlo prima della disattivazione dell'hosting.<br>
 
-Clicca sulla scheda `Informazioni generali`{.action} del tuo hosting. Nella sezione **Configurazione**, clicca sul pulsante `...`{.action} a destra di "**Database Private**". Clicca su `Scollegare`{.action} e segui le istruzioni per ordinare un'offerta CloudDB indipendente, per mantenere il tuo CloudDB già creato.
+Clicca sulla scheda `Informazioni generali`{.action} del tuo hosting. Nella sezione **Configurazione**, clicca sul pulsante `...`{.action} a destra di "**Database Private**". Clicca su `Scollega`{.action} e segui le istruzioni per ordinare un'offerta CloudDB indipendente, per mantenere il tuo CloudDB già creato.
 
 ## Diagnostica
 

@@ -85,7 +85,7 @@ Para ello, acceda a la pestaña `Información general`{.action} del alojamiento.
 Los alojamientos compartidos **Performance** incluyen una solución CloudDB que se puede activar gratuitamente.
 Al dar de baja o eliminar el alojamiento compartido **Performance**, la solución CloudDB asociada también se dará de baja. Para conservar su Cloud Databases, deberá desvincularlo antes de dar de baja el alojamiento.<br>
 
-Para ello, abra la pestaña `Información general`{.action} del alojamiento. En la sección **Configuración**, haga clic en el botón `...`{.action} a la derecha de "**Base de datos privada**". Haga clic en `Deelier`{.action} y siga las instrucciones para contratar una solución Cloud Databases independiente, lo que le permitirá conservar su Cloud Databases ya creado.
+Para ello, abra la pestaña `Información general`{.action} del alojamiento. En la sección **Configuración**, haga clic en el botón `...`{.action} a la derecha de "**Base de datos privada**". Haga clic en `Desvincular`{.action} y siga las instrucciones para contratar una solución Cloud Databases independiente, lo que le permitirá conservar su Cloud Databases ya creado.
 
 ## Diagnóstico
 

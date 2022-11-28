@@ -85,7 +85,7 @@ Para isso, aceda ao separador `Informações gerais`{.action} do alojamento. Na 
 Os alojamentos partilhados **Performance** incluem uma oferta CloudDB ativável gratuitamente.
 Quando rescinde ou elimina o seu alojamento partilhado **Performance**, a oferta CloudDB que está associada também é rescindida. Para conservar o seu CloudDB, terá de o desassociar antes da rescisão do alojamento.<br>
 
-Para isso, clique no separador `Informações gerais`{.action} do seu alojamento. Na secção **Configuração**, clique no botão `...`{.action} à direita de "**Base de dados Privada**". Clique em `Deer`{.action} e siga as instruções para encomendar uma oferta CloudDB independente, o que lhe permitirá conservar o seu CloudDB já criado.
+Para isso, clique no separador `Informações gerais`{.action} do seu alojamento. Na secção **Configuração**, clique no botão `...`{.action} à direita de "**Base de dados Privada**". Clique em `Desassociar`{.action} e siga as instruções para encomendar uma oferta CloudDB independente, o que lhe permitirá conservar o seu CloudDB já criado.
 
 ## Diagnóstico
 
