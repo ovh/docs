@@ -1,5 +1,5 @@
 ---
-title: aux
+title: Setting-up a Persistent Volume on OVHcloud Managed Kubernetes
 slug: setting-up-a-persistent-volume
 excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Volumes (PV), attach a Pod to a PVC, change PV reclaim policy and delete created objects'
 section: Storage
