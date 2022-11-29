@@ -3,7 +3,7 @@ title: Enterprise File Storage - FAQ
 excerpt: 'FAQ zum Enterprise File Storage Dienst'
 slug: netapp/faq
 section: Enterprise File Storage
-order: 7
+order: 050
 ---
 
 > [!primary]

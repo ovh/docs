@@ -5,7 +5,7 @@ excerpt: 'Comment reconnaître un e-mail de phishing et que faire si vous avez c
 section: Sécurité
 ---
 
-**Dernière mise à jour le 03/08/2022**
+**Dernière mise à jour le 29/11/2022**
 
 ## Objectif
 
@@ -38,13 +38,6 @@ Cliquez sur l'image pour l'agrandir. Retrouvez les détails et explications dans
 |1 - Expéditeur|Vérifiez que l’adresse utilisée pour l’envoi de l’e-mail se termine par un domaine tel que « @ovhcloud.com », « @ovh.com », « @soyoustart.com » , « @kimsufi.com » ou un sous-domaine tel que « @events.ovhcloud.com », « @news.soyoustart.com », « @services.kimsufi.com », etc... |L'expéditeur de l'e-mail sera forcément une adresse qui ne vient pas d'OVHcloud.|
 |2 - Objet|Vérifiez que votre identifiant **(commençant par la première lettre du nom enregistré chez OVHcloud puis par la première lettre du prénom enregistré chez OVHcloud)** et/ou l’adresse e-mail de votre compte figurent dans l’objet du message.|Très souvent, l'e-mail sera marqué comme \[SPAM] et **votre identifiant n'apparaîtra pas ou sera incorrect**.|
 |3 - Lien|**Sans cliquer dessus, passez votre pointeur de souris sur le lien ou le bouton** et vous en verrez directement la cible (en dessous ou tout en bas de votre navigateur). Dans notre exemple, le lien renvoie bien vers une adresse https://www.ovh.com/.|Dans notre exemple, en passant le pointeur de la souris sur le lien, vous remarquez que celui-ci n'a rien à voir avec OVHcloud. **Ne cliquez pas dessus.**|
-
-> [!success]
-> 
-> Une grande partie des e-mails légitimes envoyés par OVHcloud à propos de vos services peut être consultée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois connecté, cliquez sur votre nom en haut à droite puis sur `E-mails de service`{.action}
->
-> L'e-mail que vous avez reçu n'y figure pas ? Il peut alors s'agir soit d'un e-mail de phishing, soit d'un e-mail destiné à un autre identifiant client OVHcloud (vérifiez l'identifiant qui figure dans l'objet de l'e-mail).
->
 
 #### Identifier un SMS de phishing
 

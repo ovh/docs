@@ -3,7 +3,7 @@ title: Enterprise File Storage - Iniziare a utilizzare le API
 slug: netapp/quick-start
 excerpt: Iniziare a utilizzare la soluzione Enterprise File Storage con le API OVHcloud
 section: Enterprise File Storage
-order: 2
+order: 030
 ---
 
 > [!primary]

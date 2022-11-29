@@ -10,7 +10,7 @@ order: 05
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 07-04-2022**
+**Ostatnia aktualizacja z dnia 28-11-2022**
 
 ## Zarządzanie usługą
  
@@ -79,6 +79,13 @@ Następnie wybierz nową ofertę hostingu oraz czas trwania nowego abonamentu. Z
 Jeśli zrezygnujesz z hostingu lub usuniesz go z hostingu, powiązana z nim oferta e-mail zostanie również usunięta. Aby zachować konta e-mail, należy odłączyć usługę e-mail przed rezygnacją z hostingu.<br>
 
 W tym celu przejdź do zakładki `Informacje ogólne`{.action} na Twoim hostingu. W sekcji **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie `Adresy e-mail`. Kliknij polecenie `Odłącz opcję e-mail`{.action} i postępuj zgodnie z instrukcjami, aby zamówić niezależną ofertę e-mail, która pozwoli Ci zachować utworzone konta e-mail.
+
+### W przypadku rezygnacji z hostingu Performance, jak zachować powiązaną ofertę CloudDB?
+
+Serwery wirtualne **Performance** obejmują usługę CloudDB włączoną za darmo.
+Gdy rezygnujesz lub usuwasz hosting **Performance**, przypisana do hostingu usługa CloudDB jest również wyłączona. Aby zachować usługę CloudDB, należy ją odłączyć przed rezygnacją z hostingu.<br>
+
+W tym celu kliknij zakładkę `Informacje ogólne`{.action} Twojego hostingu. W sekcji **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie "**Prywatna baza danych**". Kliknij polecenie `Odłącz`{.action} i postępuj zgodnie z instrukcjami, aby zamówić niezależną ofertę CloudDB, co pozwoli Ci zachować utworzoną wcześniej usługę CloudDB.
 
 ## Diagnostyka
 

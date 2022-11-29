@@ -1,5 +1,5 @@
 ---
-title: Jak włączyć lub wyłączyć NSX Edge po aktualizacji (EN)
+title: Jak zmienić funkcję HA dla NSX Edge (EN)
 slug: enable-disable-nsx-edge-after-update
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/enable-disable-nsx-edge-after-update/'

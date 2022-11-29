@@ -3,7 +3,7 @@ title: Enterprise File Storage - Koncepcje
 slug: netapp/concepts
 excerpt: "Sprawdź zasady działania oferty Enterprise File Storage"
 section: Enterprise File Storage
-order: 1
+order: 010
 ---
 
 > [!primary]

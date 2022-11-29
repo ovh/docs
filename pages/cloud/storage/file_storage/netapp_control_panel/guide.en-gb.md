@@ -3,7 +3,7 @@ title: Managing Enterprise File Storage from the OVHcloud Control Panel
 excerpt: Find out how to manage your Enterprise File Storage service in the OVHcloud Control Panel
 slug: netapp/control-panel
 section: Enterprise File Storage
-order: 2
+order: 020
 ---
 
 **Last updated 14th April 2022**

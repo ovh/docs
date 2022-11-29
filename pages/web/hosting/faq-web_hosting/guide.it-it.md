@@ -10,7 +10,7 @@ order: 05
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 07/04/2022**
+**Ultimo aggiornamento: 28/11/2022**
 
 ## Gestisci la tua offerta
 
@@ -79,6 +79,13 @@ Seleziona la nuova soluzione di hosting e la durata del nuovo abbonamento. Leggi
 Una volta terminato o eliminato il tuo hosting condiviso, l'offerta email associata viene disattivata. Per conservare i tuoi indirizzi email, prima di disattivare l'hosting, dovrai scollegare il servizio di posta.<br>
 
 Per effettuare questa operazione, clicca sulla scheda `Informazioni generali`{.action} del tuo hosting. Nella sezione `Configurazione`, clicca sul pulsante `...`{.action} a destra di `Account email`. Clicca su `Scollega la tua opzione email`{.action} e segui le istruzioni per ordinare un'offerta email indipendente che ti permetterà di conservare i tuoi indirizzi email già creati.
+
+### In caso di disattivazione di un hosting condiviso Performance, come conservare l'offerta CloudDB associata?
+
+Gli hosting condivisi **Performance** includono un'offerta CloudDB attivabile gratuitamente.
+Quando elimini o elimini il tuo hosting condiviso **Performance**, l'offerta CloudDB associata è disattivata. Per conservare il tuo CloudDB, dovrai scollegarlo prima della disattivazione dell'hosting.<br>
+
+Clicca sulla scheda `Informazioni generali`{.action} del tuo hosting. Nella sezione **Configurazione**, clicca sul pulsante `...`{.action} a destra di "**Database Private**". Clicca su `Scollega`{.action} e segui le istruzioni per ordinare un'offerta CloudDB indipendente, per mantenere il tuo CloudDB già creato.
 
 ## Diagnostica
 
