@@ -3,7 +3,7 @@ title: Enterprise File Storage - Conceptos
 slug: netapp/concepts
 excerpt: 'Descubra los principios de funcionamiento de la solución Enterprise File Storage'
 section: Enterprise File Storage
-order: 1
+order: 010
 ---
 
 

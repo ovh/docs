@@ -3,7 +3,7 @@ title: Enterprise File Storage - Volumes verwalten
 slug: netapp/volumes
 excerpt: Erfahren Sie hier, wie Sie Ihre OVHcloud Enterprise File Storage Volumes mit der OVHcloud API erstellen und verwalten
 section: Enterprise File Storage
-order: 3
+order: 040
 ---
 
 > [!primary]
