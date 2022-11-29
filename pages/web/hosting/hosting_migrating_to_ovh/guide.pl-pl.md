@@ -1,5 +1,5 @@
 ---
-title: Przeniesienie strony WWW i kont e-mail do OVH
+title: Przeniesienie strony WWW i kont e-mail do OVHcloud
 slug: przeniesienie-strony-www-do-ovh
 excerpt: "Dowiedz się, jak migrować Twoją stronę WWW, konta e-mail i domenę do OVHcloud bez przerwy w dostępności usług"
 section: Pierwsze kroki
