@@ -51,7 +51,7 @@ Se non conosci il codice nei diversi linguaggi citati, puoi copiare/incollare gl
 
 Per creare una pagina Web, inizia scrivendo in un file il tuo codice sorgente a partire da uno dei tre linguaggi citati sopra. Ecco i nomi principali dell'estensione: *".html"* (per i tuoi file HTML), *".css"* (per i tuoi file CSS), *".js"* (per i tuoi file JavaScript).
 
-I file possono essere scritti in editor di testo, inclusi quelli disponibili di default sul tuo sistema operativo (block note, TextEdit). Numerose soluzioni Open Source gratuite offrono funzionalità aggiuntive: [Notepad++](https://notepad-plus-plus.org/), [Bracket](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) o ancora [micro](https://micro-editor.github.io/). È inoltre possibile utilizzare un IDE (Integrated Development Environment, ambiente di sviluppo integrato) come [Visual Studio Code](https://code.visualstudio.com/) o [Geany](https://www.geany.org/).
+I file possono essere scritti in editor di testo, inclusi quelli disponibili di default sul tuo sistema operativo (block note, TextEdit). Numerose soluzioni Open Source gratuite offrono funzionalità aggiuntive: [Notepad++](https://notepad-plus-plus.org/), [Bracket](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) o ancora [Micro](https://micro-editor.github.io/). È inoltre possibile utilizzare un IDE (Integrated Development Environment, ambiente di sviluppo integrato) come [Visual Studio Code](https://code.visualstudio.com/) o [Geany](https://www.geany.org/).
 
 Per visualizzare e adattare le tue pagine prima di depositarle sul tuo hosting, utilizza il tuo browser web. per aprire il file dalla sua posizione locale direttamente sul browser.
 
