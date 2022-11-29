@@ -180,7 +180,7 @@ Znacznik HTML używany do wyświetlania obrazu jest znacznikiem `<img>`. W przec
 
 ##### **Optymalizacja obrazów**
 
-Duży obraz to obraz, który zajmie dużo czasu, zwłaszcza jeśli internauci używają smartfona lub tabletu podłączonego do sieci 4 lub 5G.
+Duży obraz to obraz, który zajmie dużo czasu, zwłaszcza jeśli internauci używają smartfona lub tabletu podłączonego do sieci 4G lub 5G.
 Ogólnie rzecz biorąc, musisz zoptymalizować obrazy i ograniczyć ich wagę. Waga jest wyrażona w bajtach. Zazwyczaj używane jednostki to kilobajty (1 kb = 1,000 bajtu) lub megabajt (1 MB = 1,000,000 bajtów). Obraz powyżej kilkudziesięciu KB jest uważany za ciężki i zasługuje na optymalizację. 
 
 **Przykład**: jeśli Twoje obrazy ważą każde 1 MB, to będziesz mógł umieścić poniżej 10 obrazów na Twoim hostingu Start10M. Jeśli uda Ci się zmniejszyć rozmiar między 50 KB a 200 KB, może pojawić się nawet 100 na Twojej stronie WWW.
