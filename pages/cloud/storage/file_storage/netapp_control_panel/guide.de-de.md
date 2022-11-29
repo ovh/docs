@@ -3,7 +3,7 @@ title: "Enterprise File Storage - Verwaltung über das OVHcloud Kundencenter"
 excerpt: Erfahren Sie hier, wie Sie Ihren Enterprise File Storage Dienst über Ihr OVHcloud Kundencenter verwalten
 slug: netapp/control-panel
 section: Enterprise File Storage
-order: 2
+order: 020
 ---
 
 > [!primary]

@@ -3,7 +3,7 @@ title: "Enterprise File Storage - Gestão a partir da Área de Cliente OVHcloud"
 excerpt: Saiba como gerir o serviço Enterprise File Storage a partir da Área de Cliente OVHcloud
 slug: netapp/control-panel
 section: Enterprise File Storage
-order: 2
+order: 020
 ---
 
 > [!primary]
