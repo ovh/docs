@@ -192,7 +192,7 @@ Para ello, es necesario tener las claves de acceso de todas sus antiguas cuentas
 > Si sus direcciones de correo estuvieran configuradas en POP sin conservar copias de los mensajes en su antiguo servidor de correo, o si tuviera los emails registrados "localmente" en sus dispositivos, solo podrá realizar la **opción 2**.
 >
 
-**Opción 2**: realice una copia de seguridad del contenido de sus direcciones de correo mediante un cliente de correo (Outlook, Correo de Mac...), reconfigure su cliente de correo e importe la copia de seguridad en su nueva dirección de correo de OVHcloud.
+**Opción 2**: realice una copia de seguridad del contenido de sus direcciones de correo mediante un cliente de correo (Outlook, Mail para Mac...), reconfigure su cliente de correo e importe la copia de seguridad en su nueva dirección de correo de OVHcloud.
 
 ### Etapa 8: reconfigurar su cliente de correo <a name="step8"></a>
 

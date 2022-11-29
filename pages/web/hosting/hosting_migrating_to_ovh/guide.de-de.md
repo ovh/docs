@@ -201,7 +201,7 @@ Wiederholen Sie den Vorgang für alle Ihre E-Mail-Accounts.
 > Wenn Ihre E-Mail-Adressen ohne Aufbewahrung von Kopien der E-Mails auf Ihrem alten E-Mail-Server als POP konfiguriert wären oder wenn Sie über E-Mails verfügen, die auf Ihrem Gerät "lokal" gespeichert sind, kann nur die **Option 2** durchgeführt werden.
 >
 
-**Option 2**: Backup des Inhalts Ihrer E-Mail-Adressen mithilfe eines E-Mail-Programms (Outlook, Mac Mail...) durchführen, Ihr E-Mail-Programm neu konfigurieren und das Backup in Ihre neue OVHcloud E-Mail-Adresse importieren.
+**Option 2**: Backup des Inhalts Ihrer E-Mail-Adressen mithilfe eines E-Mail-Programms (Outlook, Mail für Mac...) durchführen, Ihr E-Mail-Programm neu konfigurieren und das Backup in Ihre neue OVHcloud E-Mail-Adresse importieren.
 
 ### Schritt 8: Ihre E-Mail-Software neu konfigurieren <a name="step8"></a>
 

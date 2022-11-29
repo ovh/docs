@@ -201,7 +201,7 @@ Powtórz operację dla wszystkich Twoich kont e-mail.
 > Jeśli Twoje adresy e-mail są skonfigurowane w POP bez zatrzymywania kopii e-maili na starym serwerze e-mail lub jeśli posiadasz na swoich urządzeniach wiadomości e-mail zapisane "lokalnie", będzie można zrealizować tylko **opcja 2**.
 >
 
-**Wariant 2**: wykonaj kopię zapasową zawartości Twoich kont e-mail przy użyciu programu pocztowego (Outlook, Mail firmy Mac,...), ponownie skonfiguruj program pocztowy i zaimportuj kopię zapasową na nowy adres e-mail OVHcloud.
+**Wariant 2**: wykonaj kopię zapasową zawartości Twoich kont e-mail przy użyciu programu pocztowego (Outlook, Mail dla Mac,...), ponownie skonfiguruj program pocztowy i zaimportuj kopię zapasową na nowy adres e-mail OVHcloud.
 
 ### Etap 8: konfiguruj ponownie programy pocztowe <a name="step8"></a>
 

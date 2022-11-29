@@ -201,7 +201,7 @@ Effettua l'operazione su tutti i tuoi account email.
 > Se i tuoi indirizzi email fossero configurati in POP senza conservare copie delle email sul tuo vecchio server di posta, o se disponessi delle email registrate "in locale" sui tuoi dispositivi, potrà essere realizzata solo l'**opzione 2**.
 >
 
-**Opzione 2**: effettua un backup del contenuto dei tuoi indirizzi email con un client di posta (Outlook, Mail di Mac, ecc...), riconfigura il tuo client di posta e importa il backup nel tuo nuovo indirizzo email OVHcloud.
+**Opzione 2**: effettua un backup del contenuto dei tuoi indirizzi email con un client di posta (Outlook, Mail per Mac, ecc...), riconfigura il tuo client di posta e importa il backup nel tuo nuovo indirizzo email OVHcloud.
 
 ### Step 8: riconfigurare il tuo client di posta <a name="step8"></a>
 

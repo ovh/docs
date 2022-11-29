@@ -188,7 +188,7 @@ Réitérez l'opération pour l'ensemble de vos comptes e-mail.
 > Si vos adresses e-mail étaient configurées en POP sans conservation de copies des e-mails sur votre ancien serveur e-mail, ou si vous disposez des e-mails enregistrés « en local » sur vos appareils, seule l'**option 2** pourra être réalisée.
 >
 
-**Option 2** : effectuez une sauvegarde du contenu de vos adresses e-mail à l'aide d'un logiciel de messagerie (Outlook, Mail de Mac, ...), reconfigurez votre logiciel de messagerie puis importez la sauvegarde dans votre nouvelle adresse e-mail OVHcloud.
+**Option 2** : effectuez une sauvegarde du contenu de vos adresses e-mail à l'aide d'un logiciel de messagerie (Outlook, Mail pour Mac, ...), reconfigurez votre logiciel de messagerie puis importez la sauvegarde dans votre nouvelle adresse e-mail OVHcloud.
 
 ### Etape 8 : reconfigurer vos logiciels de messagerie <a name="step8"></a>
 
