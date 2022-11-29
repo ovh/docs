@@ -109,7 +109,7 @@ Queste operazioni vengono eseguite esclusivamente presso il tuo hosting provider
 
 ### Step 4: importare il backup del tuo sito Web sulla tua offerta di hosting OVHcloud <a name="step4"></a>
 
-Per importare il backup dello spazio di storage FTP del tuo precedente provider, [accedi allo spazio di storage FTP del tuo hosting OVHcloud](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) e trasferisci il backup nella cartella root "ww" (o in un'altra cartella root creata precedentemente).
+Per importare il backup dello spazio di storage FTP del tuo precedente provider, [accedi allo spazio di storage FTP del tuo hosting OVHcloud](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) e trasferisci il backup nella cartella root "www" (o in un'altra cartella root creata precedentemente).
 
 Ti consigliamo di utilizzare il software [FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/) per trasferire il tuo backup FTP sul tuo hosting.
 
