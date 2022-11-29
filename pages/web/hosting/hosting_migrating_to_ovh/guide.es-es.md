@@ -188,7 +188,7 @@ Existen dos opciones para migrar el contenido de sus antiguas direcciones:
 
 Le recomendamos que no utilice el `Tipo de servidor`{.action} **POP** en la sección `Cuenta de origen`{.action}. Este protocolo elimina los mensajes de correo de su antiguo servidor para enviarlos al servidor de destino de OVHcloud. No podrá comparar el contenido de la antigua dirección y la nueva dirección de correo electrónico.
 
-En la sección `Cuenta de destino`{.action}, introduzca únicamente la dirección de correo electrónico de OVHcloud correspondiente y su contraseña asociada. Dejando el `Tipo de servidor`{.action} como `Hosted by OVH (Autodetect)`{.action}.
+En la sección `Cuenta de destino`{.action}, introduzca únicamente la dirección de correo electrónico de OVHcloud correspondiente y su contraseña asociada, dejando el `Tipo de servidor`{.action} como `Hosted by OVH (Autodetect)`{.action}.
 
 Una vez completada la migración, conéctese a su dirección de correo electrónico de OVHcloud utilizando el [webmail OVHcloud](https://www.ovhcloud.com/es-es/mail/) para comprobar que todos sus mensajes de correo estén presentes en la nueva cuenta.
 
