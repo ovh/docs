@@ -213,7 +213,7 @@ Depois de migrar os seus antigos endereços de e-mail para a OVHcloud, reconfigu
 
 #### Para as contas "Email-Pro"
 
-- Encontre os nossos guias de ajuda à configuração nas secções `Configuration on computador` e 'Configuration no smartphone` de [o nosso manual na oferta Email-Pro](https://docs.ovh.com/pt/emails-pro/).
+- Encontre os nossos guias de ajuda à configuração nas secções `Configuration on computador` e `Configuration no smartphone` de [o nosso manual na oferta Email-Pro](https://docs.ovh.com/pt/emails-pro/).
 
 #### Para as contas de e-mail "Exchange" :
 
