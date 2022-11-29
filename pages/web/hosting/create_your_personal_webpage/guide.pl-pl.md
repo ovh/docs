@@ -51,7 +51,7 @@ Jeśli nie znasz kodu w różnych językach, możesz skopiować/wkleić przykła
 
 Aby utworzyć stronę www, zapisz w pliku kod źródłowy w jednym z trzech języków wymienionych powyżej. Oto ich główne nazwy rozszerzeń: *".html"* (dla plików HTML), *".css"* (dla plików CSS), *".js"* (dla plików JavaScript).
 
-Pliki można zapisać w edytorach tekstu, w tym pliki, które są domyślnie dostępne w systemie operacyjnym (notatnik, TextEdit). Darmowe rozwiązania Open Source oferują wiele dodatkowych funkcji: [Notepad++](https://notepad-plus-plus.org/), [Brackets](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) lub [micro](https://micro-editor.github.io/). Można również korzystać z IDE (Integrated Development Environment, zintegrowane środowisko rozwoju), takich jak [Visual Studio Code](https://code.visualstudio.com/) lub [Geany](https://www.geany.org/).
+Pliki można zapisać w edytorach tekstu, w tym pliki, które są domyślnie dostępne w systemie operacyjnym (notatnik, TextEdit). Darmowe rozwiązania Open Source oferują wiele dodatkowych funkcji: [Notepad++](https://notepad-plus-plus.org/), [Brackets](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) lub [Micro](https://micro-editor.github.io/). Można również korzystać z IDE (Integrated Development Environment, zintegrowane środowisko rozwoju), takich jak [Visual Studio Code](https://code.visualstudio.com/) lub [Geany](https://www.geany.org/).
 
 Aby wyświetlać i dostosowywać strony przed umieszczeniem ich na hostingu, użyj przeglądarki internetowej. W tym celu otwórz plik z lokalnej lokalizacji bezpośrednio w przeglądarce.
 
