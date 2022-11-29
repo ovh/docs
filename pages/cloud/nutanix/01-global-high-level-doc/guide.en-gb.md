@@ -65,7 +65,7 @@ OVHgateway has a lightweight design, using 1 vCPU, 1 GB memory and a 11 GiB disk
 
 Bandwidth for Internet access is 1 Gbps.
 
-Vous pouvez remplacer cette machine virtuelle par un autre système d'exploitation réseau en vous appuyant sur ce guide Remplacement de l'OVHgateway.
+You can replace this virtual machine with another network operating system by following this guide [Replace OVHgateway](https://docs.ovh.com/en/gb/nutanix/software-gateway-replacement/).
 
 ### Prism Central Access
 
