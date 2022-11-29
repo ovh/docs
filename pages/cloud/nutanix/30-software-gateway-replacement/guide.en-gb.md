@@ -1,12 +1,12 @@
 ---
 title: OVHgateway replacement
 slug: software-gateway-replacement
-excerpt: Setting up an IPsec VPN between two remote Nutanix clusters
+excerpt: Replacing the OVHgateway with another manageable virtual machine
 section: Network & Security
 order: 02
 ---
 
-**Last updated 28th November 2022**
+**Last updated 29th November 2022**
 
 ## Objective
 
@@ -30,11 +30,12 @@ This guide will explain how to replace the outgoing internet gateway (OVHgateway
 The OVHgateway uses two network cards by default: 
 
 - One on VLAN 0 (base) connected to the internet with an additional OVHcloud IP address.
-- One on VLAN 1 (infra) connected to the local administration network.
+- One on VLAN 1 (infra) connected to the local administration network with in this example a range of IP addresses in 192.168.10.0/24.
 
-In our guide, we will replace this gateway with the network operating system **pfSense Community edition** without support.
+In our guide, we will replace this gateway with the network operating system **pfSense Community edition** without software support.
 
-It is entirely possible to use this guide to install other network operating systems compatible with AHV.
+> [!primary]
+> It is entirely possible to use this guide to install other network operating systems compatible with AHV.
 
 <a name="downloadsources"></a>
 ### Downloading sources for pfSense installation
@@ -367,7 +368,108 @@ Click `Apply Changes`{.action} to activate the rule.
 
 The **pfSense** administration interface is then accessible from the Internet, only from the authorised network in HTTPS, here `https://198.51.100.1`.
 
+### Configuring Internet Access in a New VLAN
 
+#### PfSense VM modification
+
+Log in to Prism Central to make these changes:
+
+Use this guide to create a new VLAN on your Nutanix cluster [Isolating management machines from production]
+(https://docs.ovh.com/gb/en/nutanix/nutanix-isolate-management-machines/) with these settings:
+
+- **VLAN name**: `Production`
+- **VLAN number**: `2`
+
+Your new network must appear in **Subnets**.
+
+![08 add vlan production 01](images/08-add-vlan-production01.png){.thumbnail}
+
+Now that the new subnet has been created, we will add a adapter to the configuration of your **GW-PFSENSE** virtual machine.
+
+Through virtual machine management select your virtual machine **GW-PFSENSE** go to the `Actions`{.action} menu and choose `Update`{.action}.
+
+![09 update-vm-pfsense 01](images/09-update-vm-pfsense01.png){.thumbnail}
+
+Click `Next`{.action}.
+
+![09 update-vm-pfsense 02](images/09-update-vm-pfsense02.png){.thumbnail}
+
+Cliquez sur `Attach to Subnet`{.action}.
+
+![09 update-vm-pfsense 03](images/09-update-vm-pfsense03.png){.thumbnail}
+
+Choose the subnets `Production`{.action} and click `Save`{.action}.
+
+![09 update-vm-pfsense 04](images/09-update-vm-pfsense04.png){.thumbnail}
+
+Click `Next`{.action}.
+
+![09 update-vm-pfsense 05](images/09-update-vm-pfsense05.png){.thumbnail}
+
+Click `Next`{.action}.
+
+![09 update-vm-pfsense 06](images/09-update-vm-pfsense06.png){.thumbnail}
+
+Click `Save`{.action}.
+
+![09 update-vm-pfsense 06](images/09-update-vm-pfsense06.png){.thumbnail}
+
+#### Enable and configure the new network adapter on pfSense
+
+Log in to the pfSense interface in https, with the public address (for example, **https://198.51.100.1**) in your pfSense administration interface, and follow these instructions:
+
+Go to the `Interfaces`{.action} menu and click `Assignments`{.action}.
+
+![10 addinterface-in-pfsense 01](images/10-addinterface-in-pfsense01.png){.thumbnail}
+
+Click `+ Add`{.action} to the right of **Available network ports:**.
+
+![10 addinterface-in-pfsense 02](images/10-addinterface-in-pfsense02.png){.thumbnail}
+
+Click `Save`{.action}.
+
+![10 addinterface-in-pfsense 03](images/10-addinterface-in-pfsense03.png){.thumbnail}
+
+Through the `Interfaces`{.action} menu and click `OPT1`{.action}
+
+![11 assign ip to new interface 01](images/11-assign-ip-to-new-interface01.png){.thumbnail}
+
+Modify these settings :
+
+* **Description** : `VLAN2`
+* **IPv4 Address** : `192.168.2.254/24`
+
+Then click `Save`{.action}.
+
+![11 assign ip to new interface 02](images/11-assign-ip-to-new-interface02.png){.thumbnail}
+
+Click `Apply Changes`{.action}.
+
+![11 assign ip to new interface 03](images/11-assign-ip-to-new-interface03.png){.thumbnail}
+
+Go to the `Firewall' menu and click on `Rules`{.action}.
+
+![12 add rule for new card 01](images/12-add-rule-for-new-card01.png){.thumbnail}
+
+Go to the `VLAN2`{.action} tab and click the `Add`{.action} button on the left.
+
+![12 add rule for new card 02](images/12-add-rule-for-new-card02.png){.thumbnail}
+
+Change these values :
+
+* **Protocol** : `Any`
+* **Source** : `VLAN2 net`
+* **Destination** : `any`
+
+And click `Save`{.action}.
+
+![12 add rule for new card 03](images/12-add-rule-for-new-card03.png){.thumbnail}
+
+Click sur `Apply Changes`{.action}.
+
+![12 add rule for new card 04](images/12-add-rule-for-new-card04.png){.thumbnail}
+
+Your VLAN 2 is now connected to the Internet.
 
 <a name="gofurther"></a>
 ## Go further

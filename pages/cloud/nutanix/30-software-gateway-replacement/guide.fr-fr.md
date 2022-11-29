@@ -1,12 +1,12 @@
 ---
 title: Remplacement de l'OVHgateway
 slug: software-gateway-replacement
-excerpt: "Replacing the OVHgateway with another configurable virtual machine"
+excerpt: "Remplacement de l'OVHgateway par une autre machine virtuelle administrable"
 section: "Réseau et sécurité"
 order: 02
 ---
 
-**Dernière mise à jour le 28/11/2022**
+**Dernière mise à jour le 29/11/2022**
 
 ## Objectif
 
@@ -30,11 +30,12 @@ La passerelle OVHGateway utilise par défaut deux carte réseaux :
 
 
 - Une sur le VLAN 0 (base)  connectée à Internet avec une adresse IP supplémentaire OVHcloud.
-- Une sur le VLAN 1 (infra) connectée au réseau local d'administration.
+- Une sur le VLAN 1 (infra) connectée au réseau local d'administration avec dans cet exemple une plage d'adresses IP en 192.168.10.0/24.
 
-Dans notre guide, nous allons remplacer cette passerelle par le système d'exploitation réseau **pfSense Community edition** sans support.
+Dans notre guide, nous allons remplacer cette passerelle par le système d'exploitation réseau **pfSense Community edition** sans support logiciel.
 
-Il est tout fait possible de s'appuyer sur ce guide pour installer d'autre systèmes d'exploitations réseaux comptatibles avec AHV.
+> [!primary]
+> Il est tout fait possible de s'appuyer sur ce guide pour installer d'autres systèmes d'exploitations réseaux comptatibles avec AHV.
 
 <a name="downloadsources"></a>
 ### Téléchargement des sources pour l'installation de pfSense
@@ -373,19 +374,17 @@ L'interface d'administration de **pfSense** est alors accessible depuis Internet
 
 Connectez-vous à Prism Central pour effectuer ces modifications :
 
-Nous allons créer un nouveau VLAN avec ces paramètres :
+Aidez-vous de ce guide pour créer un nouveau VLAN sur votre cluster Nutanix [Isoler les machines de gestion de la production]
+(https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/) avec ces paramètres :
 
 - **Nom du VLAN** : `Production`
-- **Numéro du VLAN** : 2
+- **Numéro du VLAN** : `2`
 
-Aidez-vous de ce guide pour créer un nouveau VLAN sur votre cluster Nutanix [Isoler les machines de gestion de la production]
-(https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/).
-
-Votre nouveau réseau doit apparaitre dans **Subnets**
+Votre nouveau réseau doit apparaitre dans **Subnets**.
 
 ![08 add vlan production 01](images/08-add-vlan-production01.png){.thumbnail}
 
-Maintenant que le nouveau sous-réseau est créé nous allons rajouter une carte dans  la configuration de votre machine virtuelle **GW-PFSENSE**.
+Maintenant que le nouveau sous-réseau est créé nous allons rajouter une carte dans la configuration de votre machine virtuelle **GW-PFSENSE**.
 
 Au travers de la gestion des machines virtuelles sélectionnez votre machine virtuelle **GW-PFSENSE** allez dans le menu `Actions`{.action} et choisissez `Update`{.action}.
 
@@ -399,7 +398,7 @@ Cliquez sur `Attach to Subnet`{.action}.
 
 ![09 update-vm-pfsense 03](images/09-update-vm-pfsense03.png){.thumbnail}
 
-Choisissez le subnet `Production`{.action} et cliquez sur `Save`{.action}.
+Choisissez le sous réseaux `Production`{.action} et cliquez sur `Save`{.action}.
 
 ![09 update-vm-pfsense 04](images/09-update-vm-pfsense04.png){.thumbnail}
 
@@ -423,7 +422,7 @@ Allez dans le menu `Interfaces`{.action} et cliquez sur `Assignments`{.action}.
 
 ![10 addinterface-in-pfsense 01](images/10-addinterface-in-pfsense01.png){.thumbnail}
 
-Cliquez sur `+ Add`{.action} en face de **Available network ports:**.
+Cliquez sur `+ Add`{.action} à droite de **Available network ports:**.
 
 ![10 addinterface-in-pfsense 02](images/10-addinterface-in-pfsense02.png){.thumbnail}
 
@@ -437,7 +436,7 @@ Au travers du menu `Interfaces`{.action} et cliquez sur `OPT1`{.action}
 
 Modifiez ces paramètres :
 
-* **Description** : `VLAN 2`
+* **Description** : `VLAN2`
 * **IPv4 Address** : `192.168.2.254/24`
 
 Ensuite cliquez sur `Save`{.action}.
@@ -448,11 +447,11 @@ Cliquez sur `Apply Changes`{.action}.
 
 ![11 assign ip to new interface 03](images/11-assign-ip-to-new-interface03.png){.thumbnail}
 
-Cliquez sur `Rules`{.action} dans le menu `Firewall`.
+Rendez-vous dans le menu `Firewall` et cliquez sur `Rules`{.action}.
 
 ![12 add rule for new card 01](images/12-add-rule-for-new-card01.png){.thumbnail}
 
-Allez dans l'onglet `VLAN2`{.action} et cliquez sur `Add`{.action} en bas dans les boutons à gauche.
+Allez dans l'onglet `VLAN2`{.action} et cliquez sur le bouton le `Add`{.action} le plus à gauche.
 
 ![12 add rule for new card 02](images/12-add-rule-for-new-card02.png){.thumbnail}
 
@@ -470,7 +469,7 @@ Cliquez sur `Apply Changes`{.action}.
 
 ![12 add rule for new card 04](images/12-add-rule-for-new-card04.png){.thumbnail}
 
-Votre VLAN2 peut utiliser cette passerelle pour se connecter à Internet.
+Votre VLAN2 est maintenant connecté à Internet.
 
 <a name="gofurther"></a>
 ## Aller plus loin
