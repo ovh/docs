@@ -94,7 +94,7 @@ Depois de criar a zona DNS, aceda à secção de gestão usando o nosso manual "
 
 ![hosting](images/DNSzone.png){.thumbnail}
 
-> [!success
+> [!success]
 >
 > Note os dois valores-alvo das duas primeiras entradas do tipo "NS". Elas servirão para a [etapa 9](#step9) deste manual.
 >
