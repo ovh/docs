@@ -112,7 +112,7 @@ Puede copiar y pegar este código en su archivo `index.html` :
 Algunas etiquetas contienen más información que otras, como la etiqueta `<html lang="en">` del ejemplo anterior.<br>
 En este caso, se utilizan atributos que permiten especificar ciertos elementos. En este caso concreto, se trata de indicar cuál es el idioma principal de la página web. Algunos de estos atributos son universales y pueden utilizarse en todas las etiquetas (con algunas excepciones), otros son específicos.
 
-La etiqueta `<head>` incluye elementos que no se mostrarán en la pantalla. Las etiquetas `< meta>` proporcionarán orientación al navegador, pero también a los motores de búsqueda, como la codificación de los caracteres utilizados en el documento (UTF-8 en el ejemplo anterior) o información sobre la visualización en móvil ("viewport" en el ejemplo anterior).
+La etiqueta `<head>` incluye elementos que no se mostrarán en la pantalla. Las etiquetas `<meta>` proporcionarán orientación al navegador, pero también a los motores de búsqueda, como la codificación de los caracteres utilizados en el documento (UTF-8 en el ejemplo anterior) o información sobre la visualización en móvil ("viewport" en el ejemplo anterior).
 La etiqueta `<title>` es muy importante. Le permite determinar el título de su página que aparecerá en la pestaña de su navegador, pero sobre todo que será indexado por los motores de búsqueda.<br>
 Este título le permitirá, por ejemplo, aparecer en los resultados de búsqueda en Google, DuckDuckGo, etc.<br>
 Colocarse en la parte superior de estos resultados es un ejercicio definido por las reglas SEO (*Search Engine Optimization*). No trataremos este tema en este artículo.
@@ -125,7 +125,7 @@ A continuación, editaremos el contenido de texto de su página, siempre siguien
 
 - **Etiquetas `<h1>` hasta `<h6>`**
 
-Los títulos se escriben entre etiquetas `<h..>`, que están jerarquizadas como en cualquier documento: en primer lugar, `<h1>`, luego `< h2>`, etc., la última es la etiqueta `<h6>`. La etiqueta `<h1>` es, por tanto, indispensable si desea escribir una etiqueta `<h2>`. Si no cumple con esta regla, el navegador mostrará el resultado sin errores.
+Los títulos se escriben entre etiquetas `<h..>`, que están jerarquizadas como en cualquier documento: en primer lugar, `<h1>`, luego `<h2>`, etc., la última es la etiqueta `<h6>`. La etiqueta `<h1>` es, por tanto, indispensable si desea escribir una etiqueta `<h2>`. Si no cumple con esta regla, el navegador mostrará el resultado sin errores.
 
 ```html
 <body>
@@ -253,7 +253,7 @@ Ahora debemos asociar este archivo CSS, que hemos nombrado por convenio *style.c
 </head>
 ```
 
-Para comprobarlo, declararemos en nuestra hoja de estilo un color definido para cada elemento `< h1>` de nuestra página web. Modifique el archivo de estilo.css añadiendo las siguientes líneas:
+Para comprobarlo, declararemos en nuestra hoja de estilo un color definido para cada elemento `<h1>` de nuestra página web. Modifique el archivo de estilo.css añadiendo las siguientes líneas:
 
 ```html
 h1 {
@@ -369,7 +369,7 @@ Podemos hacerlo de la misma manera para hacer que el texto sea interactivo:
 <p>La oferta <a href="https://www.ovhcloud.com/es-es/domains/">"Nombre de dominio"</a> incluye :</p>
 ```
 
-Para mostrar el destino del enlace en una nueva pestaña, solo tiene que añadir un atributo `target` a su etiqueta `< a>` :
+Para mostrar el destino del enlace en una nueva pestaña, solo tiene que añadir un atributo `target` a su etiqueta `<a>` :
 
 ```html
 <p>La oferta <a href="https://www.ovhcloud.com/es-es/domains/" target="_blank">>"Nombre de dominio"</a> incluye :</p>
