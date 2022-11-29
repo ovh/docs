@@ -1,5 +1,5 @@
 ---
-title: 'Migrare un sito e un servizio di posta in OVH'
+title: 'Migrare un sito e un servizio di posta in OVHcloud'
 slug: migrare-un-sito-in-ovh
 excerpt: "Come migrare il tuo sito Web, le tue email e il tuo dominio in OVHcloud senza interruzione di servizi"
 section: 'Per iniziare'
