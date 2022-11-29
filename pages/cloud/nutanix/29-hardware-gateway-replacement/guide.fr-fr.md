@@ -6,7 +6,7 @@ section: Réseau et sécurité
 order: 09
 ---
 
-**Dernière mise à jour le 28/01/2022**
+**Dernière mise à jour le 29/01/2022**
 
 ## Présentation
 
@@ -366,9 +366,15 @@ Vous pouvez contrôler la bande passante de votre serveur avec un outil nommé I
 
 Pour faire un test complet, utilisez créer une machine virtuelle sous Linux, installer le logiciel iperf3 et lancer cette commande :
 
+
+
 ```bash
-perf3 -c proof.ovh.net -p 5202 --logfile iperf2.log
+perf3 -c proof.ovh.net -p 5202 --logfile resultlog.log
 ```
+
+> [!warning]
+> Parfois le port 5202 est indisponible vous pouvez essayer un port entre 5201 et 5210 en cas de problème. 
+
 
 Le test dure 10 secondes et vous aurez la bande passante de votre cluster au travers de votre serveur dédié.
 
