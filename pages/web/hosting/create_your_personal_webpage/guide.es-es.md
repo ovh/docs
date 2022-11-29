@@ -313,7 +313,7 @@ En su última iteración, el lenguaje [HTML5](https://html.spec.whatwg.org/) ofr
 Cada uno de estos elementos podrá utilizarse para usos específicos:
 
 - el `header` contendrá, por ejemplo, el menú de navegación (que a su vez estará enmarcado por una etiqueta `<nav>`);
-- en la `mano` figurarán todos los elementos relacionados con el contenido, que también pueden estructurar el documento con mayor precisión (`sección`, `artículo`, `aside`, `div`, etc.).
+- en la `main` figurarán todos los elementos relacionados con el contenido, que también pueden estructurar el documento con mayor precisión (`section`, `article`, `aside`, `div`, etc.).
 - el `footer` contendrá información más genérica, como enlaces a redes sociales, menciones legales, condiciones generales de uso y posiblemente otro menú de navegación.
 
 El código HTML se mostrará del siguiente modo:

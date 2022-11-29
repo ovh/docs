@@ -313,7 +313,7 @@ W swojej ostatniej iteracji język [HTML5](https://html.spec.whatwg.org/) propon
 Każdy z tych elementów może być wykorzystywany do konkretnych zastosowań:
 
 - na przykład `header` będzie zawierał menu nawigacyjne (samo w sobie oprawione znacznikiem `<nav>`);
-- w `ręce` będą figurować wszystkie elementy związane z treścią, które mogą również jeszcze dokładniej ustrukturyzować dokument (`sekcja`, `artykuł`, `Azji`, `div` itp.);
+- w `main` będą figurować wszystkie elementy związane z treścią, które mogą również jeszcze dokładniej ustrukturyzować dokument (`section`, `article`, `aside`, `div`, itp.);
 - oferta `footer` będzie zawierała bardziej ogólne informacje, takie jak linki do sieci społecznościowych, informacje prawne, ogólne warunki korzystania z usługi oraz prawdopodobnie inne menu nawigacyjne.
 
 Kod HTML pojawi się w następującej strukturze:

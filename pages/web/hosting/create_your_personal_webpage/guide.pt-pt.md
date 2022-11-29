@@ -308,13 +308,13 @@ Na sua última iteração, a linguagem [HTML5](https://html.spec.whatwg.org/) pr
 
 - um cabeçalho, que figurará num balise `<header>` (não confundir com o balise `<head>`);
 - conteúdo principal, definido por um balise `<main>`;
-- por fim, um pé de página, descrito pelo item `<foter>`.
+- por fim, um pé de página, descrito pelo item `<footer>`.
 
 Cada um destes elementos pode ser utilizado para usos precisos:
 
 - o `header` conterá, por exemplo, o menu de navegação (ele mesmo enquadrado por um balise `<nav>`);
-- na `mão`, figurarão todos os elementos relacionados com o conteúdo, os quais podem igualmente estruturar o documento de forma ainda mais precisa (`secção`, `artigo`, `ásia`, `div`, etc.);
-- o `feoter` conterá informações mais genéricas, tais como ligações às redes sociais, menções legais, condições gerais de utilização e, possivelmente, outro menu de navegação.
+- na `main`, figurarão todos os elementos relacionados com o conteúdo, os quais podem igualmente estruturar o documento de forma ainda mais precisa (`section`, `article`, `aside`, `div`, etc.);
+- o `footer` conterá informações mais genéricas, tais como ligações às redes sociais, menções legais, condições gerais de utilização e, possivelmente, outro menu de navegação.
 
 O seu código HTML será apresentado da seguinte forma:
 

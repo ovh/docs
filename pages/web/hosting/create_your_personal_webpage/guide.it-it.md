@@ -313,7 +313,7 @@ Nella sua ultima iterazione, il linguaggio [HTML5](https://html.spec.whatwg.org/
 Ognuno di questi elementi può essere utilizzato per utilizzi specifici:
 
 - l'`header` conterrà, ad esempio, il menu di navigazione (a sua volta incorniciato da un tag `<nav>`);
-- in `mano` figureranno tutti gli elementi connessi al contenuto, che possono anche strutturare in modo ancora più preciso il documento (`sezione`, `articolo`, `aside`, `div`, ecc.);
+- in `main` figureranno tutti gli elementi connessi al contenuto, che possono anche strutturare in modo ancora più preciso il documento (`section`, `article`, `aside`, `div`, ecc.);
 - il `footer` conterrà informazioni più generiche, come i collegamenti ai social network, le indicazioni legali, le condizioni generali di utilizzo e forse un altro menu di navigazione.
 
 Il tuo codice HTML sarà strutturato come segue:

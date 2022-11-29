@@ -313,8 +313,8 @@ In ihrer letzten Wiederholung bietet die fünfte [HTML5](https://html.spec.whatw
 Jedes dieser Elemente kann für bestimmte Zwecke verwendet werden:
 
 - Der `header` enthält zum Beispiel das Navigationsmenü (selbst mit einem Bake-`<nav>`);
-- Von `Hand` werden alle inhaltlichen Elemente enthalten, die auch das Dokument noch genauer strukturieren können (`Abschnitt`, `Artikel`, `aside`, `div` usw.);
-- Der `Footer` enthält allgemeinere Informationen wie Links zu sozialen Netzwerken, rechtliche Hinweise, allgemeine Nutzungsbedingungen und möglicherweise ein anderes Browsermenü.
+- Von `Hand` werden alle inhaltlichen Elemente enthalten, die auch das Dokument noch genauer strukturieren können (`section`, `article`, `aside`, `div`, usw.);
+- Der `footer` enthält allgemeinere Informationen wie Links zu sozialen Netzwerken, rechtliche Hinweise, allgemeine Nutzungsbedingungen und möglicherweise ein anderes Browsermenü.
 
 Ihr HTML-Code wird wie folgt strukturiert:
 
