@@ -370,6 +370,8 @@ The **pfSense** administration interface is then accessible from the Internet, o
 
 ### Configuring Internet Access in a New VLAN
 
+We will create a new subnet in VLAN 2 with an address range in 192.168.2.0/24 and a gateway in 192.168.2.254.
+
 #### PfSense VM modification
 
 Log in to Prism Central to make these changes:
