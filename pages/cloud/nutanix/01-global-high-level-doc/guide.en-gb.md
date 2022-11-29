@@ -63,6 +63,10 @@ You can therefore use it for outgoing traffic but not for incoming traffic.
 
 OVHgateway has a lightweight design, using 1 vCPU, 1 GB memory and a 11 GiB disk.
 
+Bandwidth for Internet access is 1 Gbps.
+
+Vous pouvez remplacer cette machine virtuelle par un autre système d'exploitation réseau en vous appuyant sur ce guide Remplacement de l'OVHgateway.
+
 ### Prism Central Access
 
 Once the cluster is delivered, OVHcloud provides you with a FQDN for your cluster.

@@ -67,7 +67,7 @@ La passerelle OVHgateway est de conception légère, elle utilise 1 vCPU, 1 GB d
 
 La bande passante pour accéder à Internet est de 1 Gb/s.
 
-Vous pouvez remplacer cette machine virtuelle par un autre système d'exploitation réseau en vous appuyant sur ce guide [Remplacement de l'OVHgateway](https://docs.ovh.com/fr/nutanix/software-gateway-replacement/).
+You can replace this virtual machine with another network operating system by following this guide [Replace OVHgateway](https://docs.ovh.com/en/gb/nutanix/software-gateway-replacement/).
 
 ### Prism Central Access
 
