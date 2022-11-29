@@ -1,7 +1,7 @@
 ---
 title: Migration Ihrer Website und E-Mails zu OVH
 slug: migration-ihrer-website-zu-ovh
-excerpt: "Hier erfahren Sie, wie Sie Ihre Website, E-Mails und Domains ohne Dienstunterbrechung zu OVHcloud migrieren."
+excerpt: "Erfahren Sie hier, wie Sie Ihre Website, E-Mails und Domains ohne Dienstunterbrechung zu OVHcloud migrieren"
 section: 'Erste Schritte'
 order: 08
 ---
@@ -14,183 +14,181 @@ order: 08
 
 ## Ziel
 
-In dieser Anleitung werden die verschiedenen Aktionen beschrieben, die durchgeführt werden müssen, um Ihre gesamte Website, Domain und E-Mail-Adressen bei OVHcloud ohne Dienstunterbrechung zu migrieren.
+In dieser Anleitung werden die verschiedenen Aktionen beschrieben, die durchgeführt werden müssen, um Ihre gesamte Website, Domainnamen und E-Mail-Adressen zu OVHcloud ohne Dienstunterbrechung zu migrieren.
 
 > [!warning]
->
-> OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Ihnen obliegen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Weitere Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf die Verwaltung der Domain Ihrer Website (diese muss ebenfalls seit mehr als 60 Tagen existieren).
-- Sie haben Zugriff auf die aktive DNS-Zone (Domain Name System) Ihrer Domain.
+- Sie haben Zugriff auf die Verwaltung des Domainnamnens Ihrer Website.
+- Der Domainname ist transferierbar (existiert seit mindestens 60 Tagen).
+- Sie haben Zugriff auf die aktive DNS-Zone (Domain Name System) Ihres Domainnamens.
 - Sie haben Zugriff auf die Dateien und Datenbanken Ihrer Website bei Ihrem aktuellen Hosting-Anbieter.
-- Sie verfügen über die Login-Daten (Benutzer, Passwort, Server) Ihrer aktuellen E-Mail-Adressen.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
+- Sie verfügen über die Login-Daten (Benutzer, Passwort, Server) Ihrer aktuellen E-Mail-Accounts.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!success]
 >
-> Die Anweisungen in dieser Anleitung beziehen sich auf verschiedene Produkte aus dem Web Cloud Universum. Wir empfehlen Ihnen, alle nachstehenden Schritte zu lesen **bevor** Sie Ihre Dienste migrieren.
+> Die Anweisungen in dieser Anleitung beziehen sich auf verschiedene Produkte aus dem Web Cloud Universum. Wir empfehlen Ihnen, alle nachstehenden Schritte durchzugehen **bevor** Sie Ihre Dienste migrieren.
 >
 
-Um Ihre Website und E-Mails zu OVHcloud zu migrieren ** ohne Unterbrechung des Dienstes** erfordert es ein präzises Verfahren in 10 Schritten:
+Um Ihre Website und E-Mails **ohne Dienstunterbrechung** zu OVHcloud zu migrieren, sollten 10 Schritte in dieser Reihenfolge durchgeführt werden:
 
-- [Schritt 1: Hosting und E-Mail-Adressen bei OVHcloud bestellen](#step1)
-- [Schritt 2: eine DNS-Zone für Ihre Domain bei OVHcloud erstellen und vorkonfigurieren](#step2)
-- [Schritt 3: ein vollständiges Backup Ihrer Website abrufen](#step3)
-- [Schritt 4: Backup Ihrer Website auf Ihr OVHcloud Hosting-Angebot importieren](#step4)
-- [Schritt 5: Ihre E-Mail-Adressen bei OVHcloud auf die gleiche Art neu erstellen](#step5)
-- [Schritt 6: OVHcloud E-Mail-Server in der aktiven DNS-Zone Ihrer Domain angeben](#step6)
-- [Schritt 7: Transfer des Inhalts Ihrer alten E-Mail-Adressen zu Ihren neuen Adressen bei OVHcloud](#step7)
+- [Schritt 1: Webhosting und E-Mail-Accounts bei OVHcloud bestellen](#step1)
+- [Schritt 2: Eine DNS-Zone für Ihren Domainnamen bei OVHcloud erstellen und vorkonfigurieren](#step2)
+- [Schritt 3: Vollständiges Backup Ihrer Website erstellen](#step3)
+- [Schritt 4: Backup Ihrer Website in Ihr OVHcloud Hosting importieren](#step4)
+- [Schritt 5: Ihre E-Mail-Accounts bei OVHcloud neu erstellen](#step5)
+- [Schritt 6: OVHcloud E-Mail-Server in der aktiven DNS-Zone Ihres Domainnamens hinterlegen](#step6)
+- [Schritt 7: Transfer des Inhalts Ihrer bestehenden E-Mail-Accounts zu Ihren neuen Accounts bei OVHcloud](#step7)
 - [Schritt 8: Ihre E-Mail-Software rekonfigurieren](#step8)
-- [Schritt 9: die aktiven DNS-Server Ihrer Domain durch die von OVHcloud ersetzen](#step9)
-- [Schritt 10: Ihre Domain zu OVHcloud transferieren](#step10)
+- [Schritt 9: Die aktiven DNS-Server Ihres Domainnamens mit OVHcloud DNS-Servern ersetzen](#step9)
+- [Schritt 10: Ihren Domainnamen zu OVHcloud transferieren](#step10)
 
-Folgen Sie diesen 10 Schritten **in der Reihenfolge*** werden Sie keine Dienstunterbrechung für den Zugriff auf Ihre Website und den Empfang Ihrer neuen E-Mails haben.
+Wenn Sie diesen Schritten **der Reihe nach** folgen, werden Sie in der Regel keine Dienstunterbrechung für Ihre Website und den E-Mail-Empfang erfahren.
 
-Abhängig von Ihrem Registrar, Ihrem Hosting-Anbieter oder Ihrem E-Mail-Anbieter kann es jedoch sein, dass diese den Zugang zu Ihren alten Dienstleistungen sperren, wenn sie feststellen, dass Ihre Domain nicht mehr über ihre Infrastrukturen konfiguriert ist.<br>
+Abhängig von Ihrem Domain-Registrar, Ihrem Hosting-Anbieter oder Ihrem E-Mail-Anbieter kann es jedoch sein, dass der Zugang zu Ihren Dienstleistungen gesperrt wird, sobald Ihr Domainname nicht mehr über deren Infrastrukturen konfiguriert ist.<br>
 In diesem Fall kann es zu einer Dienstunterbrechung kommen.
 
-Sollte es zu einer solchen Unterbrechung kommen, so wird diese Anleitung so gestaltet, dass die Dauer der Unterbrechung minimiert wird.
+Diese Anleitung ist derart gestaltet, die Dauer einer möglichen Unterbrechung zu minimieren.
 
-### Schritt 1: Hosting und E-Mail-Adressen bei OVHcloud bestellen <a name="step1"></a>
+### Schritt 1: Webhosting und E-Mail-Accounts bei OVHcloud bestellen <a name="step1"></a>
 
-Mehrere OVHcloud Shared Hosting Angebote enthalten ein "MX Plan" E-Mail-Angebot. Mit diesem E-Mail Angebot können E-Mail-Adressen mit einem Speicherplatz von maximal 5 GB für jede Adresse erstellt werden. Wählen Sie aus den unten stehenden Hosting-Angeboten die PHP-Version, die SQL-Version, die Anzahl der E-Mail-Adressen, die Sie benötigen, und die Größe Ihrer Website aus, die Sie migrieren möchten:
+Mehrere OVHcloud Shared Hosting Angebote enthalten "MX Plan" E-Mail-Dienste. Mit diesem E-Mail-Angebot können E-Mail-Accounts mit jeweils maximal 5 GB Speicherplatz erstellt werden. Wählen Sie aus den unten stehenden Hosting-Angeboten eines aus, das den Anforderungen Ihrer Website an PHP-Version, SQL-Version, Anzahl der benötigten E-Mail-Accounts, sowie der Größe der zu migrierenden Website entspricht:
 
-- Hosting [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) mit **10 E-Mail-Adressen** "MX Plan"
-- Hosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) mit **100 E-Mail-Adressen** "MX Plan"
-- Hosting [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) mit **1000 E-Mail-Adressen** "MX Plan". Dieses Angebot wurde im Jahr 4 als "Subangebote"angeboten.
-- Hosting [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) mit **200 E-Mail-Adressen** "MX Plan". Dieses Angebot wird von Anwendungsentwicklern verwendet.
+- Hosting [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) mit **10 "MX Plan E-Mail-Accounts**
+- Hosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) mit **100 "MX Plan E-Mail-Accounts** (für gewerbliche Webseiten)
+- Hosting [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) mit **1000 "MX Plan E-Mail-Accounts** (skalierbare dedizierte Ressourcen)
+- Hosting [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) mit **200 E-Mail-Accounts** (für Anwendungsentwickler)
 
-Wenn Sie Ihr Webhosting-Angebot ausgewählt haben, klicken Sie, wenn Sie noch nicht Kunde bei OVHcloud sind, auf den Button `Bestellen`{.action} auf den oben stehenden Geschäftsseiten. Folgen Sie den Bestellschritten **ohne den Transfer Ihrer Domain zu beantragen**.
+Wenn Sie sich für ein passendes Webhosting-Angebot entschieden haben, klicken Sie auf den Button `Bestellen`{.action} auf unserer Webseite. Folgen Sie den Bestellschritten, aber **leiten Sie dabei noch nicht den Transfer Ihres Domainnamens ein**.
 
-Sie können die Bestellung auch über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ausführen. Wenn Sie eingeloggt sind, klicken Sie auf den Bereich `Web Cloud`{.action}, klicken Sie dann im oberen linken Bereich auf den Button `Bestellen`{.action} und dann auf den Bereich `Hosting`{.action}. Folgen Sie den Bestellschritten **ohne den Transfer Ihrer Domain zu beantragen**.
+Wenn Sie bereits Kunde sind, kann die Bestellung auch über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ausgeführt werden. Wenn Sie eingeloggt sind, klicken Sie auf den Bereich `Web Cloud`{.action}. Klicken Sie dann links auf den Button `Bestellen`{.action} und wählen Sie `Hosting-Pakete`{.action}. Folgen Sie den Bestellschritten **ohne den Transfer Ihrer Domain zu beantragen**.
 
-Sobald die Zahlung bestätigt wurde, wird die Installation des Hostings gestartet. Es wird eine E-Mail an Ihre Kontakt-E-Mail-Adresse versandt. Diese enthält die Zugangsdaten zum FTP-Speicherplatz (File Transfer Protocol) Ihres Webhostings.
+Sobald die Zahlung bestätigt wurde, startet die Installation des Hostings. Sie erhalten eine E-Mail an Ihre Kontakt-E-Mail-Adresse, die Zugangsdaten zum FTP-Speicherplatz (File Transfer Protocol) Ihres Webhostings enthält.
 
 > [!primary]
+> OVHcloud bietet neben MX Plan weitere E-Mail-Angebote an. Sie können beispielsweise [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/)-Accounts und/oder [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/)-Accounts mit E-Mail-Accounts kombinieren.
 >
-> OVHcloud bietet zusätzlich zum "MX Plan" weitere E-Mail-Angebote an. Sie können zum Beispiel "MX Plan" Adressen ["E-Mail-Pro"](https://www.ovhcloud.com/de/emails/email-pro/) und/oder Accounts ["Exchange"](https://www.ovhcloud.com/de/emails/hosted-exchange/) mit E-Mail-Adressen kombinieren.
->
 
-### Schritt 2: eine DNS-Zone für Ihre Domain bei OVHcloud erstellen und vorkonfigurieren <a name="step2"></a>
+### Schritt 2: Eine DNS-Zone für Ihren Domainnamen bei OVHcloud erstellen und vorkonfigurieren <a name="step2"></a>
 
-Wenn Ihr Webhosting eingerichtet ist, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und erstellen Sie eine DNS-Zone für Ihre Domain **ohne die "www"**. Weitere Informationen finden Sie in unserer Anleitung zur [Erstellung einer DNS-Zone bei OVHcloud](https://docs.ovh.com/de/domains/erstellung_einer_dns_zone_fur_eine_externe_domain/).
+Wenn Ihr Webhosting eingerichtet ist, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und erstellen Sie eine DNS-Zone für Ihren Domainnamen. Verwenden Sie dabei nicht "**www**". Weitere Informationen finden Sie in unserer Anleitung zur [Erstellung einer DNS-Zone bei OVHcloud](https://docs.ovh.com/de/domains/erstellung_einer_dns_zone_fur_eine_externe_domain/).
 
-Sobald die DNS-Zone eingerichtet ist, können Sie sich in unserer Anleitung "[OVHcloud DNS-Zone bearbeiten](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/)"zu ihrer Verwaltung einloggen. Sind diese nicht vorhanden, geben Sie folgende Einträge ein:
+Sobald die DNS-Zone eingerichtet ist, kann sie zur Verwendung mit dem Webhosting vorbereitet werden. Verwenden Sie dazu unsere Anleitung zum [Bearbeiten einer OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/). Fügen Sie folgende Einträge hinzu, sofern diese nicht existieren:
 
-- Ihr Domainname ohne die "www" zum Ziel "MX": "mx1.mail.ovh.net"
-- Ihr Domainname ohne die "www" zum Ziel "MX": "mx2.mail.ovh.net"
-- Ihr Domainname ohne die "www" zum Ziel "MX": "mx3.mail.ovh.net"
-- Ihr Domainname ohne die "www" auf die A-Ziel-IP Ihres OVHcloud Hostings. Um die richtige IP-Adresse abzurufen, lesen Sie unsere Anleitung zum Lesen der [IP-Adressen der verschiedenen Shared Hosting Cluster](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/).
-- Ihre Domain **mit** die "www", auf Ihre Domain ohne die "www", mit einem Eintrag vom Typ "CNAME".
+- Ihr Domainname ohne "www" als Eintragstyp "MX", zum Ziel: `mx1.mail.ovh.net.`
+- Ihr Domainname ohne "www" als Eintragstyp "MX", zum Ziel: `mx2.mail.ovh.net.`
+- Ihr Domainname ohne "www" als Eintragstyp "MX", zum Ziel: `mx3.mail.ovh.net.`
+- Ihr Domainname ohne "www" als Eintragstyp "A", mit der IP-Adresse Ihres OVHcloud Hostings als Ziel. Die zu verwendende IP-Adresse ist gelistet im [Verzeichnis von IP-Adressen für die Webhosting Cluster](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/).
+- Ihr Domainname **mit** "www" als Eintragstyp "CNAME", mit Ihrem Domainnamen (ohne "www") als Ziel.
 
-**Beispiel**: Für die Domain "domain.tld" muss die Wiedergabe wie folgt lauten:
+**Beispiel**: Für den Domainnamen "domain.tld" sollte das Ergebnis wie in der folgenden Abbildung angezeigt werden:
 
 ![hosting](images/DNSzone.png){.thumbnail}
 
 > [!success]
 >
-> Beachten Sie die beiden Zielwerte der ersten beiden Einträge vom Typ "NS". Sie werden in [Schritt 9](#step9) dieser Anleitung verwendet.
+> Beachten Sie die beiden Zielwerte der ersten beiden Einträge vom Typ "NS". Sie werden in [Schritt 9](#step9) dieser Anleitung benötigt.
 >
-> Diese Werte entsprechen den DNS Servern, die dieser DNS Zone für Ihre Domain zugewiesen sind.
+> Diese Werte entsprechen den DNS-Servern, die die DNS-Zone für Ihren Domainnamen hosten.
 >
 
-### Schritt 3: ein vollständiges Backup Ihrer Website abrufen <a name="step3"></a>
+### Schritt 3: Vollständiges Backup Ihrer Website erstellen <a name="step3"></a>
 
-Rufen Sie den Inhalt des FTP-Speicherplatzes Ihres aktuellen Hostings zusammen mit einem Backup Ihrer Datenbank, wenn Ihre Website eine verwendet.
+Kopieren Sie den Inhalt des FTP-Speicherplatzes Ihres aktuellen Hostings, und erstellen Sie ein Backup Ihrer Datenbank, falls Ihre Website eine verwendet.
 
-Diese Operationen werden ausschließlich bei Ihrem derzeitigen Hosting-Anbieter durchgeführt. Kontaktieren Sie ihn, wenn Sie Schwierigkeiten haben, ein vollständiges Backup Ihrer Website zu erhalten.
+Diese Aktionen werden ausschließlich bei Ihrem derzeitigen Hosting-Anbieter durchgeführt. Kontaktieren Sie ihn, wenn Sie Schwierigkeiten haben, ein vollständiges Backup Ihrer Website zu erhalten.
 
-### Schritt 4: Backup Ihrer Website auf Ihr OVHcloud Hosting Angebot importieren <a name="step4"></a>
+### Schritt 4: Backup Ihrer Website in Ihr OVHcloud Hosting importieren <a name="step4"></a>
 
-Um das Backup des FTP-Speicherplatzes Ihres bisherigen Anbieters zu importieren, [verbinden Sie sich mit dem FTP-Speicherplatz Ihres OVHcloud Hostings](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) und verlagern Sie das Backup in den "www"-Wurzelordner (oder in einen anderen Wurzelordner, den Sie zuvor erstellt haben).
+Um das Backup des FTP-Speicherplatzes Ihrer Website zu importieren, [verbinden Sie sich mit dem FTP-Speicherplatz Ihres OVHcloud Hostings](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) und laden Sie das Backup in den "www"-Wurzelordner hoch (gegebenenfalls in einen anderen Wurzelordner, den Sie zuvor erstellt haben).
 
-Wir empfehlen Ihnen, das Programm [FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/) zu verwenden, um Ihr FTP-Backup auf Ihr Hosting zu übertragen.
+Wir empfehlen, das Programm [FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/) zu verwenden, um das FTP-Backup auf Ihr Hosting zu übertragen.
 
-Wenn Ihre Backup-Datei komprimiert (gezippt) wird, entkomprimieren Sie sie in einem leeren Ordner auf Ihrem Computer, bevor Sie Ihre Dateien auf das OVHcloud Hosting hochladen.
+Wenn Ihre Backup-Datei als komprimiertes Archiv vorliegt, entkomprimieren Sie es in einem leeren Ordner auf Ihrem Computer, bevor Sie Ihre Dateien auf das OVHcloud Hosting hochladen.
 
-Für das Backup Ihrer Datenbank erstellen Sie [Datenbank erstellen](https://docs.ovh.com/de/hosting/datenbank-erstellen/) und [Datenbank importieren](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/).
+[Erstellen Sie eine neue Datenbank](https://docs.ovh.com/de/hosting/datenbank-erstellen/) für Ihr Hosting und [importieren Sie dann Ihr Backup](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/).
 
 > [!primary]
 >
-> OVHcloud bietet CloudDB Datenbankserver an. Wenn Sie dieses Angebot auf Ihrer Website verwenden möchten, finden Sie unsere gesamte Dokumentation zu diesem Produkt auf unserer dedizierten Seite <https://docs.ovh.com/de/clouddb/>.
+> OVHcloud bietet auch CloudDB Datenbankserver an. Wenn Sie dieses Angebot mit Ihrer Website verwenden möchten, finden Sie unsere Dokumentation zu diesem Dienst auf unserer dedizierten Seite <https://docs.ovh.com/de/clouddb/>.
 >
 
-Verbinden Sie anschließend Ihre OVHcloud-Datenbank mit der Konfigurationsdatei Ihrer Website im FTP-Speicherplatz Ihres OVHcloud-Hostings.
-Ersetzen Sie hierzu die Verbindungsdaten Ihrer alten Datenbank mit denen Ihrer neuen OVHcloud Datenbank. Diese Informationen finden Sie in der Datei "Konfiguration/Verbindung zu Ihrer Datenbank"Ihrer Website.
+Ihre OVHcloud Datenbank muss mit der Konfigurationsdatei Ihrer Website im FTP-Speicherplatz Ihres OVHcloud Hostings verlinkt werden.
+Ersetzen Sie hierzu die Verbindungsdaten Ihrer alten Datenbank mit denen Ihrer neuen Datenbank bei OVHcloud. Sie finden diese Informationen in den Konfigurationseinstellungen Ihrer Website oder in der Datenbank-Konfigurationsdatei.
 
 > [!success]
 >
-> Um Ihre neue Datenbank zu verbinden, wenn Sie ein Content Management System (CMS) wie WordPress, Joomla!, Drupal oder PrestaShop verwenden, finden Sie die Informationen zu ihren Konfigurationsdateien in **Schritt 2** der Anleitung "[Änderung des Passworts einer Datenbank](https://docs.ovh.com/de/hosting/datenbank-passwort-aendern/)".
+> Wenn Sie ein Content Management System (CMS) wie WordPress, Joomla!, Drupal oder PrestaShop verwenden, finden Sie die Informationen zur Datenbank in deren Konfigurationsdateien. Sie finden Details hierzu in **Schritt 2** der Anleitung "[Änderung des Passworts einer Datenbank](https://docs.ovh.com/de/hosting/datenbank-passwort-aendern/)".
 >
 
-Erklären/erlauben Sie Ihre externe Domain auf Ihrem OVHcloud Webhosting über unsere Anleitung "[Verwaltung der Multisites eines OVHcloud Webhostings](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)". Geben Sie den "Namen"des Wurzelverzeichnisses an, das Sie zu Beginn von [Schritt 4](#step4) ausgewählt haben. Zur Erinnerung: Es handelt sich um den Ordner, in den Sie Ihre Dateien in Ihren FTP-Speicherplatz gelegt haben.
+Deklarieren und authorisieren Sie Ihren externen Domainnamen auf Ihrem OVHcloud Webhosting mithilfe unserer Anleitung "[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)". Geben Sie den Namen des Ordners, den Sie zu Beginn von [Schritt 4](#step4) ausgewählt haben, als Wurzelverzeichnis an. Zur Erinnerung: Es handelt sich um den Ordner im FTP-Speicherplatz, in den Sie Ihre Webseiten-Dateien abgelegt haben.
 
 > [!warning]
 >
-> **Die Durchführung dieser Operation ist von entscheidender Bedeutung**. Ihre Website wird erst dann angezeigt, wenn Sie die richtigen Informationen geliefert haben. Achten Sie insbesondere auf die Syntax des DNS Eintrags "TXT".
+> **Diese Aktion ist von entscheidender Bedeutung**. Ihre Website wird erst dann angezeigt, wenn Sie die notwendigen Informationen korrekt eingegeben haben. Achten Sie insbesondere auf die Syntax des DNS-Eintrags von Typ "TXT".
 >
-> Da Ihre Domain noch nicht bei OVHcloud ist, müssen Sie einen DNS-Eintrag vom Typ "TXT" mit dem "OVHcontrol Token" hinzufügen und den Verweis vom Typ "A" Ihrer Domain ändern. Dies geschieht direkt in der aktiven DNS-Zone Ihrer Domain bei Ihrem aktuellen Anbieter.
+> Da Ihre Domain noch nicht bei OVHcloud ist, müssen Sie einen DNS-Eintrag vom Typ "TXT" mit dem "OVHcontrol Token" als Inhalt anlegen und den Eintrag vom Typ "A" Ihres Domainnamens abändern. Dies muss in der aktiven DNS-Zone Ihres Domainnamens bei Ihrem aktuellen Anbieter erfolgen.
 >
-> Tun Sie dasselbe für Ihre Subdomain unter "www".
+> Tun Sie dasselbe für Ihre Subdomain "www".
 >
-> Kontaktieren Sie gegebenenfalls den aktuellen Verwalter Ihrer DNS Zone, um die Änderung durchzuführen.
+> Kontaktieren Sie gegebenenfalls den Administrator Ihrer aktiven DNS-Zone, um die Änderungen durchzuführen.
 >
 
-**Beispiel**: für die Domain "domain.tld":
+**Beispiel** für "domain.tld":
 
 ![hosting](images/DNSmultisite.png){.thumbnail}
 
-**Die Änderung der DNS-Einträge "A", "CNAME"und "TXT" muss beim aktuellen DNS-Anbieter Ihrer Domain durchgeführt werden und erfordert eine Propagationszeit von 4 bis maximal 24 Stunden, bis die Änderungen voll wirksam sind.**
+**Die Änderung der DNS-Einträge vom Typ "A", "CNAME" und "TXT" muss beim aktuellen DNS-Provider Ihres Domainnamens durchgeführt werden und erfordert eine Propagationszeit von 4 bis maximal 24 Stunden, bis die Änderungen voll wirksam sind.**
 
-Nach der Propagation der DNS Einstellungen wird die bei OVHcloud gehostete Seite Ihrer Domain angezeigt.
+Nach der Propagation der DNS-Konfiguration wird die bei OVHcloud gehostete Website unter Ihrem Domainnamen angezeigt.
 
-### Schritt 5: Ihre E-Mail-Adressen bei OVHcloud auf die gleiche Art neu erstellen <a name="step5"></a>
+### Schritt 5: Ihre E-Mail-Accounts bei OVHcloud neu erstellen <a name="step5"></a>
 
-Erstellen Sie die E-Mail-Adressen Ihres E-Mail-Anbieters auf identische Weise mithilfe unserer Anleitung zur [Erstellung von "MX Plan"](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/).
+Erstellen Sie neue E-Mail-Accounts und verwenden Sie dabei die gleichen E-Mail-Adressen, die Sie aktuell bei Ihrem E-Mail-Provider haben. Sie finden mehr Informationen in unserer Anleitung zur [Erstellung von E-Mail-Accounts mit MX Plan](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/).
 
-Wenn Sie sich für eine "E-Mail Pro" oder "Exchange" Lösung entschieden haben, lesen Sie unsere Anleitung zum Thema, um Ihre E-Mail-Adressen zu erstellen:
+Wenn Sie sich für eins der E-Mail-Angebote Email Pro oder Exchange entschieden haben, lesen Sie unsere entsprechenden Anleitungen, um Ihre E-Mail-Adressen zu erstellen:
 
-- Für "E-Mail-Pro": <https://docs.ovh.com/de/emails-pro/erstkonfiguration/>
-- für "Exchange": <https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_konfiguration_der_dienstleistung/>
+- Email Pro: <https://docs.ovh.com/de/emails-pro/erstkonfiguration/>
+- Exchange: <https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_konfiguration_der_dienstleistung/>
 
-### Schritt 6: OVHcloud E-Mail-Server in der aktiven DNS Zone Ihrer Domain deklarieren <a name="step6"></a>
+### Schritt 6: OVHcloud E-Mail-Server in der aktiven DNS-Zone Ihres Domainnamens hinterlegen <a name="step6"></a>
 
-Ändern Sie die "MX" E-Mail-Server in der aktiven DNS-Zone Ihrer Domain.
-So erhalten Sie Ihre neuen E-Mails auf Ihren neuen OVHcloud E-Mail-Adressen.
+Bearbeiten Sie die "MX"-Einträge für E-Mail-Server in der aktiven DNS-Zone Ihres Domainnamens.
+Das bewirkt, dass Ihre E-Mails fortan in Ihren neuen E-Mail-Accounts bei OVHcloud ankommen.
 
-Ersetzen Sie bei Ihrem Anbieter Ihre alten "MX" Einträge durch die folgenden drei Einträge (ohne die alten Einträge zu hinterlegen):
+Ersetzen Sie bei Ihrem DNS-Provider Ihre Einträge vom Typ mit den folgenden drei Einträgen (ohne bestehende Einträge beizubehalten):
 
-- Ihr Domainname (ohne die "www") auf das Ziel vom Typ "MX": "mx1.mail.ovh.net "
-- Ihr Domainname (ohne die "www") auf das Ziel vom Typ "MX": "mx2.mail.ovh.net "
-- Ihr Domainname (ohne die "www") auf das Ziel vom Typ "MX": "mx3.mail.ovh.net "
+- Ihr Domainname ohne "www" als Eintragstyp "MX", zum Ziel: `mx1.mail.ovh.net.`
+- Ihr Domainname ohne "www" als Eintragstyp "MX", zum Ziel: `mx2.mail.ovh.net.`
+- Ihr Domainname ohne "www" als Eintragstyp "MX", zum Ziel: `mx3.mail.ovh.net.`
 
-Die Änderung der "MX" Server erfolgt beim aktuellen DNS Server Ihrer Domain und **benötigt bis zu 4 bis 24 Stunden**, bis die Änderungen voll wirksam sind.<br>
-Dies bedeutet, dass Ihre E-Mails während der Propagation der DNS Einstellungen immer weniger an Ihren alten E-Mail Adressen und immer mehr an Ihren neuen OVHcloud E-Mail Adressen empfangen werden<br>.
-Sobald die Propagation abgeschlossen ist, werden alle empfangenen neuen E-Mails auf Ihren OVHcloud E-Mail-Adressen empfangen.
+Die Änderung der "MX"-Server erfolgt beim aktuellen Ihrem DNS-Provider und **benötigt zwischen 4 bis 24 Stunden**.<br>
+Das bedeutet, dass während der Propagation der DNS-Einstellungen immmer weniger E-Mails in Ihren alten Accounts ankommen und Ihre neuen Accounts bei OVHcloud E-Mails damit beginnen, E-Mails zu empfangen. Sobald die Propagation abgeschlossen ist, werden alle E-Mails auf Ihren OVHcloud E-Mail-Accounts empfangen.
 
-Wir empfehlen Ihnen, die "MX" Einträge zu ändern , **bevor** Sie den Inhalt der E-Mail-Adressen migrieren.
-Diese Methode erspart es Ihnen, eine Migration für die wenigen E-Mails vorzunehmen, die Sie während der Propagation der DNS Einstellungen an Ihren alten E-Mail-Adressen empfangen.
+Wir empfehlen, die "MX"-Einträge zu ändern, **bevor** Sie den Inhalt Ihrer E-Mail-Accounts migrieren (Schritt 7).
+Andernfalls erhalten Sie auch nach der Migration bestehender E-Mails zu den neuen Accounts noch neue E-Mails in den alten Accounts.
 
-### Schritt 7: Transfer des Inhalts Ihrer alten E-Mail-Adressen zu Ihren neuen Adressen bei OVHcloud <a name="step7"></a>
+### Schritt 7: Transfer des Inhalts Ihrer bestehenden E-Mail-Accounts zu Ihren neuen Accounts bei OVHcloud <a name="step7"></a>
 
-Nach der Propagation der DNS Einstellungen werden Ihre neuen E-Mails nun alle auf Ihren neuen E-Mail Adressen empfangen. Ihre alten E-Mails werden jedoch weiterhin auf Ihrem alten E-Mail-Server gespeichert.
+Nach der Propagation der DNS-Einstellungen werden Ihre neuen E-Mails nun alle in Ihren neuen E-Mail-Accounts empfangen. Ihre alten E-Mails befinden sich jedoch weiterhin auf Ihrem alten E-Mail-Server.
 
-Um den Inhalt Ihrer alten Adressen zu migrieren, haben Sie zwei Optionen.
+Um den Inhalt Ihrer alten Accounts zu migrieren, haben Sie zwei Optionen.
 
-**Option 1**: Verwenden Sie unser Tool [OVHcloud Mail Migrator (OMM)](https://omm.ovh.net/){.external}, mit dem der Inhalt der bei Ihrem bisherigen Anbieter registrierten E-Mail-Adressen auf die bei OVHcloud erstellten kopiert werden kann. Weitere Informationen finden Sie in unserer Anleitung "[E-Mail-Accounts über OVH Mail Migrator migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/)".
+**Option 1**: Verwenden Sie unser Tool [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external}, um die Inhalte der bei Ihrem bisherigen Anbieter registrierten E-Mail-Accounts auf die bei OVHcloud erstellten Accounts zu kopieren. Weitere Informationen finden Sie in unserer Anleitung "[E-Mail-Accounts über OVH Mail Migrator migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/)".
 
-Wir empfehlen Ihnen, den `Servertyp`{.action} **POP** im Bereich `Quell-Account`{.action} nicht zu verwenden. Dieses Protokoll löscht E-Mails Ihres alten Servers, um diese an den Ziel-OVHcloud-Server zu senden. Sie können dann den Inhalt der alten Adresse und der neuen E-Mail-Adresse nicht mehr vergleichen.
+Wir empfehlen Ihnen, als `Server type`{.action} unter `Source account`{.action} nicht **POP** zu verwenden. Dieses Protokoll löscht E-Mails auf dem Quell-Server, und sendet sie an den Ziel-Server bei OVHcloud. Sie können dann die Inhalte von beiden Accounts nicht mehr vergleichen.
 
-Geben Sie für den Bereich `Ziel-Account`{.action} ausschließlich die betreffende OVHcloud-E-Mail-Adresse und das zugehörige Passwort ein. Hierbei bleibt der `Servertyp`{.action} auf `Hosted by OVH (Autodetect)`{.action}.
+Geben Sie im Bereich `Destination account`{.action} ausschließlich die betreffende OVHcloud E-Mail-Adresse und das zugehörige Passwort ein. Hierbei bleibt der `Server type`{.action} auf `Hosted by OVH (Autodetect)`{.action}.
 
-Wenn die Migration abgeschlossen ist, loggen Sie sich mithilfe des [OVHcloud Webmail](https://www.ovhcloud.com/de/mail/) mit Ihrer OVHcloud E-Mail-Adresse ein, um zu überprüfen, ob alle Ihre E-Mails im neuen Account enthalten sind.
+Wenn die Migration abgeschlossen ist, loggen Sie sich über [OVHcloud Webmail](https://www.ovhcloud.com/de/mail/) in Ihren OVHcloud E-Mail-Account ein, um zu überprüfen, ob alle Ihre E-Mails im neuen Account enthalten sind.
 
 Wiederholen Sie den Vorgang für alle Ihre E-Mail-Accounts.
 
@@ -198,58 +196,58 @@ Wiederholen Sie den Vorgang für alle Ihre E-Mail-Accounts.
 >
 > Sie müssen über die Zugangsdaten für alle Ihre alten E-Mail-Accounts sowie den Namen des E-Mail-Servers Ihres bisherigen Anbieters verfügen, um diese Aktion durchzuführen.
 >
-> Wenn Ihre E-Mail-Adressen ohne Aufbewahrung von Kopien der E-Mails auf Ihrem alten E-Mail-Server als POP konfiguriert wären oder wenn Sie über E-Mails verfügen, die auf Ihrem Gerät "lokal" gespeichert sind, kann nur die **Option 2** durchgeführt werden.
+> Wenn Ihre E-Mail-Accounts als "POP" ohne Aufbewahrung von E-Mail-Kopien auf Ihrem E-Mail-Server konfiguriert sind oder wenn Sie E-Mails haben, die nur lokal auf Ihrem Gerät gespeichert sind, kommt nur **Option 2** in Frage.
 >
 
-**Option 2**: Backup des Inhalts Ihrer E-Mail-Adressen mithilfe eines E-Mail-Programms (Outlook, Mail für Mac...) durchführen, Ihr E-Mail-Programm neu konfigurieren und das Backup in Ihre neue OVHcloud E-Mail-Adresse importieren.
+**Option 2**: Backup des Inhalts Ihrer E-Mail-Accounts mithilfe einer E-Mail-Software (Outlook, Mac Mail, etc.) durchführen, Ihr E-Mail-Programm neu einrichten und das Backup in Ihre neuen OVHcloud E-Mail-Accounts importieren.
 
-### Schritt 8: Ihre E-Mail-Software neu konfigurieren <a name="step8"></a>
+### Schritt 8: Ihre E-Mail-Software rekonfigurieren <a name="step8"></a>
 
-Sobald Ihre alten E-Mail-Adressen bei OVHcloud migriert sind, konfigurieren Sie Ihre E-Mail-Software mithilfe unserer Anleitungen zum Thema neu.
+Sobald Ihre E-Mail-Accounts bei OVHcloud eingerichtet und bestehende Inhalte migriert sind, konfigurieren Sie Ihre neuen Accounts in Ihrer E-Mail-Software mithilfe unserer Anleitungen zum Thema.
 
-#### Für die E-Mail Accounts "MX Plan": 
+#### Für MX Plan E-Mail-Accounts: 
 
-- Alle Konfigurationseinstellungen finden Sie in unserer Anleitung "[Allgemeine Informationen zu den MX Plan E-Mails](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/#2-e-mail-client-verwenden)". Sie finden dort auch Links zu den personalisierten Konfigurationsanleitungen für die wichtigsten E-Mail-Programme.
+- Alle Konfigurationseinstellungen finden Sie in unserer Anleitung "[Erste Schritte mit MX Plan](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/#2-e-mail-client-verwenden)". Sie finden dort auch Links zu den Konfigurationsanleitungen für die wichtigsten E-Mail-Clients.
 
-#### Für "E-Mail-Pro" Accounts:
+#### Für E-Mail Pro E-Mail-Accounts:
 
-- Sie finden alle unsere Anleitungen zur Konfigurationsunterstützung in den Abschnitten `Konfiguration auf einem Computer` und `Smartphone-Konfiguration` von [unserer Anleitung zum E-Mail-Pro Angebot](https://docs.ovh.com/de/emails-pro/).
+- Sie finden alle unsere Anleitungen zur Konfigurationsunterstützung unter `Konfiguration des E-Mail-Clients` auf der [Seite für E-Mail Pro](https://docs.ovh.com/de/emails-pro/).
 
-#### Für die "Exchange" E-Mail Accounts:
+#### Für Exchange E-Mail-Accounts:
 
-- Sie finden alle unsere Anleitungen zur Konfigurationshilfe in den Abschnitten `Konfiguration Exchange am Computer` und `Konfiguration Exchange per Smartphone` [unsere Dokumentation zum Exchange Angebot](https://docs.ovh.com/de/microsoft-collaborative-solutions/).
+- Sie finden alle unsere Anleitungen zur Konfigurationsunterstützung in den Abschnitten `Konfiguration des Exchange E-Mail-Clients`und `Konfiguration von Exchange auf kompatiblen Smartphones/Tablets` auf der [Seite für Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/).
 
-### Schritt 9: die aktiven DNS Server Ihrer Domain durch die Server von OVHcloud ersetzen <a name="step9"></a>
+### Schritt 9: Die aktiven DNS-Server Ihres Domainnamens mit OVHcloud DNS-Servern ersetzen <a name="step9"></a>
 
-Die im [Schritt 2](#step2) vorkonfigurierte DNS Zone wird noch nicht auf Ihre Domain angewendet.
+Die in [Schritt 2](#step2) vorkonfigurierte DNS-Zone wird noch nicht auf Ihren Domainnamen angewendet.
 
-Ersetzen Sie die derzeitigen DNS-Server Ihrer Domain mit den beiden in der OVHcloud DNS-Zone angegebenen DNS-Servern.
+Ersetzen Sie die aktuell aktiven DNS-Server Ihres Domainnamens mit den beiden in der OVHcloud DNS-Zone angegebenen DNS-Servern.
 
 > [!warning]
 >
-> Die Änderung der DNS Server muss vom aktuellen Registrar Ihrer Domain aus durchgeführt werden und **benötigt bis zu 24 bis 48 Stunden**, bis sie voll wirksam ist.
+> Die Änderung der DNS-Server muss beim aktuellen Registrar Ihres Domainnamens durchgeführt werden und **benötigt bis zu 24 bis 48 Stunden**, bis sie voll wirksam ist.
 >
 
-### Schritt 10: Ihre Domain zu OVHcloud transferieren <a name="step10"></a>
+### Schritt 10: Ihren Domainnamen zu OVHcloud transferieren <a name="step10"></a>
 
-Wenn die Propagation der DNS Einstellungen abgeschlossen ist, testen Sie Ihre Website und überprüfen Sie den Versand und Empfang von E-Mails von Ihren E-Mail Adressen aus.
-Wenn alles in Ordnung ist, entsperren Sie Ihre Domain und erhalten Sie von Ihrem aktuellen Registrar den "Transfer Code", "EPP" oder "AuthCode".
+Wenn die Propagation der DNS-Einstellungen abgeschlossen ist, testen Sie Ihre Website und überprüfen Sie den Versand und Empfang von E-Mails.
+Wenn alles funktioniert, entsperren Sie Ihren Domainnamen und fordern Sie bei Ihrem aktuellen Registrar den "Transfer Code", "EPP" oder "AuthCode" an.
 
-Transferieren Sie anschließend Ihre Domain mithilfe unserer Anleitung zur [Transfer einer Domain zu OVHcloud](https://docs.ovh.com/de/domains/transfer-einer-generischen-domain/).
+Transferieren Sie anschließend Ihren Domainnamen mithilfe unserer Anleitung zum [Transfer eines Domainnamens zu OVHcloud](https://docs.ovh.com/de/domains/transfer-einer-generischen-domain/).
 
-Sobald der Transfer Ihrer Daten und Dienstleistungen abgeschlossen ist, müssen Sie Ihre alten Dienstleistungen nur noch bei Ihrem bisherigen Anbieter kündigen.
+Sobald der Transfer Ihrer Daten und Dienstleistungen abgeschlossen ist, können Sie Ihre alten Dienstleistungen bei Ihrem Anbieter kündigen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Allgemeine Informationen zu den Shared-E-Mails](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/).
+[Erste Schritte mit MX Plan](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/)
 
-[Allgemeine Informationen zu den DNS Servern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/).
+[DNS-Server ändern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/)
 
-[Eine Shared-E-Mail-Adresse erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/).
+[E-Mail-Accounts erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/)
 
-[Import einer MySQL-Datenbank](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/).
+[Backup in eine Webhosting-Datenbank importieren](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/)
 
-[Verwaltung einer Datenbank über ein Shared Hosting](https://docs.ovh.com/de/hosting/datenbank-erstellen/).
+[Verwaltung einer Webhosting-Datenbank](https://docs.ovh.com/de/hosting/datenbank-erstellen/)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
