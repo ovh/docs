@@ -67,7 +67,7 @@ Diverse offerte di hosting condiviso OVHcloud contengono un'offerta email "MX Pl
 - Hosting [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) con **1000 indirizzi email** "MX Plan". Questa offerta è disponibile in 4 "sottolivello".
 - L'hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) con **200 indirizzi email** "MX Plan". Questa offerta è utilizzata dagli sviluppatori di applicazioni.
 
-Una volta scelta la soluzione di hosting, se non sei ancora cliente OVHcloud, clicca su `Commander`{.action} nelle precedenti pagine commerciali. Segui gli step dell'ordine **senza richiedere il trasferimento del tuo dominio**.
+Una volta scelta la soluzione di hosting, se non sei ancora cliente OVHcloud, clicca su `Ordine`{.action} nelle precedenti pagine commerciali. Segui gli step dell'ordine **senza richiedere il trasferimento del tuo dominio**.
 
 L'ordine è disponibile anche nello Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Accedi alla sezione `Web Cloud`{.action} e clicca su `Ordinare`{.action} > `Hosting`{.action}. Continua con gli step dell'ordine **senza richiedere il trasferimento del tuo dominio**.
 
@@ -217,7 +217,7 @@ Una volta migrati i vecchi indirizzi email in OVHcloud, è possibile riconfigura
 
 #### Per gli account email "Exchange":
 
-- Tutte le nostre guide all'aiuto alla configurazione sono disponibili nelle sezioni `Configurazione Exchange su` e `Configurazione Exchange su smartphone` di [la nostra guida sull'offerta Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/).
+- Tutte le nostre guide all'aiuto alla configurazione sono disponibili nelle sezioni `Configurazione di Exchange sul computer` e `Configurazione di Exchange su smartphone` di [la nostra guida sull'offerta Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/).
 
 ### Step 9: sostituire i server DNS attivi del tuo dominio con quelli di OVHcloud <a name="step9"></a>
 

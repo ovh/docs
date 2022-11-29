@@ -113,7 +113,7 @@ Para importar la copia de seguridad del espacio de almacenamiento FTP de su ante
 
 Le recomendamos que utilice el programa [FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/) para transferir su copia de seguridad FTP a su alojamiento.
 
-Si el archivo de backup está comprimido (zippé), descomprimirlo en una carpeta vacía en su ordenador antes de transferir sus archivos al alojamiento de OVHcloud.
+Si el archivo de backup está comprimido (zip), descomprimirlo en una carpeta vacía en su ordenador antes de transferir sus archivos al alojamiento de OVHcloud.
 
 Para la copia de seguridad de su base de datos, [cree una nueva base de datos](https://docs.ovh.com/es/hosting/crear-base-de-datos/) y luego [importe la copia de seguridad en su nueva base de datos](https://docs.ovh.com/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/).
 
@@ -201,7 +201,7 @@ Para ello, es necesario tener las claves de acceso de todas sus antiguas cuentas
 > Si sus direcciones de correo estuvieran configuradas en POP sin conservar copias de los mensajes en su antiguo servidor de correo, o si tuviera los emails registrados "localmente" en sus dispositivos, solo podrá realizar la **opción 2**.
 >
 
-**Opción 2**: realice una copia de seguridad del contenido de sus direcciones de correo mediante un cliente de correo (Outlook, Mail de Mac...), reconfigure su cliente de correo e importe la copia de seguridad en su nueva dirección de correo de OVHcloud.
+**Opción 2**: realice una copia de seguridad del contenido de sus direcciones de correo mediante un cliente de correo (Outlook, Correo de Mac...), reconfigure su cliente de correo e importe la copia de seguridad en su nueva dirección de correo de OVHcloud.
 
 ### Etapa 8: reconfigurar su cliente de correo <a name="step8"></a>
 
