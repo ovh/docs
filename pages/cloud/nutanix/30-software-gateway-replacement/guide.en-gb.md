@@ -386,7 +386,7 @@ Your new network must appear in **Subnets**.
 
 Now that the new subnet has been created, we will add a adapter to the configuration of your **GW-PFSENSE** virtual machine.
 
-Through virtual machine management select your virtual machine **GW-PFSENSE** go to the `Actions`{.action} menu and choose `Update`{.action}.
+Through virtual machine management select your virtual machine **GW-PFSENSE**, go to the `Actions`{.action} menu and choose `Update`{.action}.
 
 ![09 update-vm-pfsense 01](images/09-update-vm-pfsense01.png){.thumbnail}
 
@@ -412,7 +412,7 @@ Click `Next`{.action}.
 
 Click `Save`{.action}.
 
-![09 update-vm-pfsense 06](images/09-update-vm-pfsense06.png){.thumbnail}
+![09 update-vm-pfsense 07](images/09-update-vm-pfsense07.png){.thumbnail}
 
 #### Enable and configure the new network adapter on pfSense
 

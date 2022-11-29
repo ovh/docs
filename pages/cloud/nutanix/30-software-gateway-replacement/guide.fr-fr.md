@@ -386,7 +386,7 @@ Votre nouveau réseau doit apparaitre dans **Subnets**.
 
 Maintenant que le nouveau sous-réseau est créé nous allons rajouter une carte dans la configuration de votre machine virtuelle **GW-PFSENSE**.
 
-Au travers de la gestion des machines virtuelles sélectionnez votre machine virtuelle **GW-PFSENSE** allez dans le menu `Actions`{.action} et choisissez `Update`{.action}.
+Au travers de la gestion des machines virtuelles sélectionnez votre machine virtuelle **GW-PFSENSE**, rendez-vous dans le menu `Actions`{.action} et choisissez `Update`{.action}.
 
 ![09 update-vm-pfsense 01](images/09-update-vm-pfsense01.png){.thumbnail}
 
@@ -412,7 +412,7 @@ Cliquez sur `Next`{.action}.
 
 Cliquez sur `Save`{.action}.
 
-![09 update-vm-pfsense 06](images/09-update-vm-pfsense06.png){.thumbnail}
+![09 update-vm-pfsense 07](images/09-update-vm-pfsense07.png){.thumbnail}
 
 #### Activation et configuration de la nouvelle carte réseau sur pfSense
 
