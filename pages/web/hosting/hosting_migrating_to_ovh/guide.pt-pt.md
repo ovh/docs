@@ -211,7 +211,7 @@ Depois de migrar os seus antigos endereços de e-mail para a OVHcloud, reconfigu
 
 - Encontre os parâmetros de configuração no nosso guia "[Generalidades sobre os e-mails MX Plan](https://docs.ovh.com/pt/emails/partilhado_generalidades_e-mail_partilhado_ovh/#2-utilizar-o-software-a-sua-escolha)". Além disso, poderá encontrar links para os guias de configuração personalizados para os principais softwares de e-mail.
 
-#### Para as contas "Email-Pro" :
+#### Para as contas "Email-Pro"
 
 - Encontre os nossos guias de ajuda à configuração nas secções `Configuration on computador` e 'Configuration no smartphone` de [o nosso manual na oferta Email-Pro](https://docs.ovh.com/pt/emails-pro/).
 
