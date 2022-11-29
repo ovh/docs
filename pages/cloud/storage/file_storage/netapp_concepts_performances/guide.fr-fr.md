@@ -1,6 +1,6 @@
 ---
 title: Enterprise File Storage - Concepts de performances
-excerpt: 'Performances pour Entreprise File Storage'
+excerpt: "Découvrez les concepts liés au provisionnement, au suivi ainsi qu'au test des performances de la solution Enterprise File Storage"
 slug: netapp/performances
 section: Enterprise File Storage
 order: 011
