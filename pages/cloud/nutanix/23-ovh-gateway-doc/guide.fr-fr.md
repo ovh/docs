@@ -21,7 +21,7 @@ order: 03
 #### Informations générales
 
 > [!primary]
-> Cette machine virtuelle n'est pas administrable, mais vous pouvez la remplacer par un autre système d'exploitation réseau comme indiqué dans ce guide [Remplacement de l'OVHgateway](https://docs.ovh.com/fr/nutanix/software-gateway-replacement/).
+> Cette machine virtuelle n'est pas administrable, mais vous pouvez la remplacer par un autre système d'exploitation réseau compatible avec AHV comme indiqué dans ce guide [Remplacement de l'OVHgateway](https://docs.ovh.com/fr/nutanix/software-gateway-replacement/).
 >
 
 La VM est basée sur Ubuntu 18.04.5 LTS (Bionic).
@@ -221,7 +221,7 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
 
 Dans les métadonnées, vous retrouvez l'UUID, ici : `54b919e1-b1e5-4d4a-b055-47ff298bf7d7`.
 
-Vous devez ensuite trouver le bon UUID de sous-réseau. Exécutez la commande ci-dessous :
+Vous devez ensuite trouver les bons UUID de sous-réseaux. Exécutez la commande ci-dessous :
 
 ```bash
 curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PRISMADMINPASSWORD" -X POST https://fqdn-cluster:9440/api/nutanix/v3/subnets/list -d{} | jq .
@@ -236,9 +236,9 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
 {
   "api_version": "3.1",
   "metadata": {
-    "total_matches": 1,
+    "total_matches": 3,
     "kind": "subnet",
-    "length": 1,
+    "length": 3,
     "offset": 0
   },
   "entities": [
@@ -249,13 +249,16 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
         "resources": {
           "vswitch_name": "br0",
           "subnet_type": "VLAN",
-          "virtual_switch_uuid": "1e9520a5-1d04-4857-8a32-4a09e923a688",
-          "vlan_id": 0
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
+          "vlan_id": 0,
+          "ip_usage_stats": {
+            "num_macs": 2
+          }
         },
         "cluster_reference": {
           "kind": "cluster",
-          "name": "uppercase",
-          "uuid": "0005d309-53ab-cfbb-6330-0c42a114b058"
+          "name": "cluster-1444.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
         }
       },
       "spec": {
@@ -263,30 +266,78 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
         "resources": {
           "vswitch_name": "br0",
           "subnet_type": "VLAN",
-          "virtual_switch_uuid": "1e9520a5-1d04-4857-8a32-4a09e923a688",
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
           "vlan_id": 0
         },
         "cluster_reference": {
           "kind": "cluster",
-          "name": "uppercase",
-          "uuid": "0005d309-53ab-cfbb-6330-0c42a114b058"
+          "name": "cluster-1444.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
         }
       },
       "metadata": {
-        "last_update_time": "2021-12-13T18:00:22Z",
+        "last_update_time": "2022-11-25T13:09:43Z",
         "kind": "subnet",
-        "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e",
+        "uuid": "3652d420-9f94-4350-8af7-b921d0761781",
         "spec_version": 0,
-        "creation_time": "2021-12-13T18:00:22Z",
+        "creation_time": "2022-11-25T13:09:43Z",
+        "spec_hash": "00000000000000000000000000000000000000000000000000",
         "categories_mapping": {},
         "categories": {}
       }
-    }
-  ]
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "infra",
+        "resources": {
+          "vswitch_name": "br0",
+          "subnet_type": "VLAN",
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
+          "vlan_id": 1,
+          "ip_usage_stats": {
+            "num_macs": 4
+          }
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "cluster-1444.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
+        }
+      },
+      "spec": {
+        "name": "infra",
+        "resources": {
+          "vswitch_name": "br0",
+          "subnet_type": "VLAN",
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
+          "vlan_id": 1
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "cluster-1444.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2022-11-25T13:09:43Z",
+        "kind": "subnet",
+        "uuid": "e60826da-4aab-4810-b7d3-0604a3e16719",
+        "spec_version": 0,
+        "creation_time": "2022-11-25T13:09:43Z",
+        "spec_hash": "00000000000000000000000000000000000000000000000000",
+        "categories_mapping": {},
+        "categories": {}
+      }
+    },
+   ]
 }
 ```
 
-Dans les métadonnées, vous retrouvez l'UUID, ici : `4676d823-82dd-4c71-a95d-847e7cdc3a3e`.
+le résultat de la requette restapi vous renvoie la configuration des sous-réseaux il faut relevez les UUID de ces sous réseaux qui se trouvent en dessous de `"kind": "subnet"` dans la variable "uuid" comme ici par exemple : 
+
+ * `3652d420-9f94-4350-8af7-b921d0761781` pour le VLAN **base** sur le VLAN 0  
+ * `e60826da-4aab-4810-b7d3-0604a3e16719` pour le VLAN **infra** sur le VLAN 1
 
 #### Étape 3 : créer les fichiers nécessaires
 
@@ -330,7 +381,7 @@ Créez le fichier `vm.json` :
           "subnet_reference": {
             "kind": "subnet",
             "name": "base",
-            "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e"
+            "uuid": "3652d420-9f94-4350-8af7-b921d0761781"
           },
           "is_connected": true
         },
@@ -343,8 +394,8 @@ Créez le fichier `vm.json` :
           ],
           "subnet_reference": {
             "kind": "subnet",
-            "name": "base",
-            "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e"
+            "name": "infra",
+            "uuid": "e60826da-4aab-4810-b7d3-0604a3e16719"
           },
           "is_connected": true
         }
@@ -377,15 +428,25 @@ Cochez `data_source_reference` pour vous assurer que l'UUID est bien l'UUID de v
                          }
 ```
 
-Vérifiez également l'UUID de votre sous-réseau :
+Vérifiez également l'UUID de vos sous-réseaux :
 
 ```json
           "subnet_reference": {
             "kind": "subnet",
             "name": "base",
-            "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e"
+            "uuid": "3652d420-9f94-4350-8af7-b921d0761781"
                               }
 ```
+
+```json
+          "subnet_reference": {
+            "kind": "subnet",
+            "name": "infra",
+            "uuid": "e60826da-4aab-4810-b7d3-0604a3e16719"
+                              }
+```
+
+
 
 Il faut maintenant créer le fichier `cloud-init.yaml`. Ce fichier contient les données utilisateur. Au démarrage du système, ces paramètres tels que les utilisateurs, les paquets, les fichiers, etc, seront appliqués à la VM.
 
