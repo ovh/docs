@@ -227,7 +227,7 @@ Sustituya los servidores DNS actuales de su dominio por los dos servidores DNS d
 
 > [!warning]
 >
-> El cambio de los servidores DNS debe realizarse desde el actual agente registrador del dominio y tarda entre **propagación de 24 a 48 horas***.
+> El cambio de los servidores DNS debe realizarse desde el actual agente registrador del dominio y tarda entre **propagación de 24 a 48 horas**.
 >
 
 ### Etapa 10: transferir su dominio a OVHcloud <a name="step10"></a>
