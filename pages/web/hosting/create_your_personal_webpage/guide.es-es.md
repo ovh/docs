@@ -51,7 +51,7 @@ Si no está familiarizado con el código en los diferentes lenguajes citados, pu
 
 Para crear una página web, comience escribiendo en un archivo su código fuente a partir de uno de los tres lenguajes anteriores. Estos son sus principales nombres de extensión: *".html"* (para los archivos HTML), *".css"* (para los archivos CSS), *".js"* (para los archivos JavaScript).
 
-Los archivos pueden escribirse en editores de texto, incluyendo los que están disponibles por defecto en su sistema operativo (bloc de notas, TextEdit). Muchas soluciones de código abierto gratuitas ofrecen funcionalidades adicionales: [Notepad++](https://notepad-plus-plus.org/), [Brackets](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) o [micrófono](https://micro-editor.github.io/). También es posible utilizar un IDE (Integrated Development Environment, entorno de desarrollo integrado) como [Visual Studio Code](https://code.visualstudio.com/) o [Geany](https://www.geany.org/).
+Los archivos pueden escribirse en editores de texto, incluyendo los que están disponibles por defecto en su sistema operativo (bloc de notas, TextEdit). Muchas soluciones de código abierto gratuitas ofrecen funcionalidades adicionales: [Notepad++](https://notepad-plus-plus.org/), [Brackets](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) o [Micro](https://micro-editor.github.io/). También es posible utilizar un IDE (Integrated Development Environment, entorno de desarrollo integrado) como [Visual Studio Code](https://code.visualstudio.com/) o [Geany](https://www.geany.org/).
 
 Para visualizar y ajustar sus páginas antes de guardarlas en su alojamiento, utilice su navegador web. Para ello, abra su archivo desde su ubicación local directamente en su navegador.
 
