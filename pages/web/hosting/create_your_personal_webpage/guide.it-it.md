@@ -101,7 +101,7 @@ Puoi copiare/incollare questo codice nel tuo file `index.html`:
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ma page personnelle</title>
+        <title>mia pagina personale</title>
     </head>
     <body>
          
@@ -248,7 +248,7 @@ Ora dobbiamo collegare questo file CSS, che abbiamo chiamato per convenzione *st
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma page personnelle</title>
+    <title>mia pagina personale</title>
     <link rel="stylesheet" href="style.css">
 </head>
 ```
