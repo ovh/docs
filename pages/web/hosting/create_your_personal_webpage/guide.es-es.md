@@ -423,7 +423,7 @@ En internet encontrará muchos recursos para aprender y mejorar su práctica, co
 - [Empezar con el HTML](https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 - [Guía de referencia de etiquetas HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 - [Cursillo W3Schools sobre HTML](https://www.w3schools.com/html/)
-- [Tutoriels CSS Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/Tutorials)
+- [Tutoriales CSS Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/Tutorials)
 - [CSS Tutorial W3 Schools](https://www.w3schools.com/css/).
 
 ### Volver a trabajar sus imágenes
