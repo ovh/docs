@@ -330,9 +330,6 @@ Modifiez le contenu du fichier `/etc/netplan/50-cloud-init.yaml` en remplaçant 
 Exécutez ces commandes :
 
 ```bash
-#!/bin/bash
-set -eux
-
 apt update && apt upgrade -y
 
 # Disable cloud-init networking
@@ -374,7 +371,7 @@ perf3 -c proof.ovh.net -p 5202 --logfile resultlog.log
 
 > [!warning]
 > Parfois le port 5202 est indisponible vous pouvez essayer un port entre 5201 et 5210 en cas de problème. 
-
+>
 
 Le test dure 10 secondes et vous aurez la bande passante de votre cluster au travers de votre serveur dédié.
 
@@ -384,7 +381,6 @@ Le test dure 10 secondes et vous aurez la bande passante de votre cluster au tra
 [  6] 1798.00-1799.00 sec  1.08 GBytes  9.28 Gbits/sec    0   3.02 MBytes
 [  6] 1799.00-1800.00 sec  1.08 GBytes  9.28 Gbits/sec    0   3.02 MBytes
 ```
-
 
 ## Aller plus loin <a name="gofurther"></a>
 
