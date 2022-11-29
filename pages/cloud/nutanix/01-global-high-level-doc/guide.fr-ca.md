@@ -4,14 +4,13 @@ slug: high-level-documentation
 excerpt: "Les détails techniques de l'infrastructure Nutanix chez OVHcloud"
 section: Premiers pas
 order: 01
-hidden: true
 ---
 
 **Dernière mise à jour le 11/01/2022**
 
 ## Objectif
 
-Cette page fournit une explication sur les éléments qui constituent un Cluster Nutanix tel que fourni par OVHcloud, ainsi que sur son fonctionnement sur l'infrastructure OVHcloud.
+Cette page fournit une explication sur les éléments qui constituent un cluster Nutanix tel que fourni par OVHcloud, ainsi que sur son fonctionnement sur l'infrastructure OVHcloud.
 
 ## En pratique
 
@@ -22,11 +21,11 @@ Un cluster Nutanix est constitué d’un ensemble de services OVHcloud :
 - [Serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/)
 - [vRack](https://www.ovh.com/ca/fr/solutions/vrack/)
 - [Load Balancer](https://www.ovh.com/ca/fr/solutions/load-balancer/)
-- [IP Failover](https://www.ovhcloud.com/fr-ca/bare-metal/ip/)
+- [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/)
 
 Les serveurs dédiés (3 minimum) sont connectés au sein du vRack qui est un réseau L2, le réseau privé des hosts (noeud ou *node*).
 
-L'adresse IP publique de chaque noeud n'est pas accessible car l'IP Failover est dédiée à l'accès Internet. Cet accès est assuré par la passerelle « OVHgateway » qui est une VM dédiée créée par OVHcloud sur votre cluster.
+L'adresse IP publique de chaque noeud n'est pas accessible car l'Additional IP est dédiée à l'accès Internet. Cet accès est assuré par la passerelle « OVHgateway » qui est une VM dédiée créée par OVHcloud sur votre cluster.
 
 Le load balancer est utilisé pour exposer l'interface web utilisateur (*WebUI*) **Prism Central** sur Internet de façon publique. Pour des raisons de sécurité, vous pouvez restreindre l'interface utilisateur Web aux seules adresses IP de votre organisation.
 
@@ -55,7 +54,7 @@ Ces valeurs doivent être augmentées si vous ajoutez de nouvelles fonctionnalit
 
 ### OVHgateway
 
-**La passerelle OVHgateway permet d’accéder à Internet sur le cluster via l’adresse IP Failover.**
+**La passerelle OVHgateway permet d’accéder à Internet sur le cluster via l’adresse Additional IP.**
 
 Cette VM a deux NIC, l’un pour le réseau privé (dans le vRack) et l’autre pour l’Internet public.
 
