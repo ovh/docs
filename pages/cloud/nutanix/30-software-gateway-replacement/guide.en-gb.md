@@ -434,7 +434,7 @@ Through the `Interfaces`{.action} menu and click `OPT1`{.action}
 
 ![11 assign ip to new interface 01](images/11-assign-ip-to-new-interface01.png){.thumbnail}
 
-Modify these settings :
+Check **Enable Interfaces** and modify these settings :
 
 * **Description** : `VLAN2`
 * **IPv4 Address** : `192.168.2.254/24`
