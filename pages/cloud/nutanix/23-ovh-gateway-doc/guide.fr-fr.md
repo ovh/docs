@@ -6,7 +6,7 @@ section: Réseau et sécurité
 order: 03
 ---
 
-**Dernière mise à jour le 11/01/2022**
+**Dernière mise à jour le 29/11/2022**
 
 ## Objectif
 
@@ -19,6 +19,10 @@ order: 03
 ### Détails techniques
 
 #### Informations générales
+
+> [!primary]
+> Cette machine virtuelle n'est pas administrable, mais vous pouvez la remplacer par un autre système d'exploitation réseau comme indiqué dans ce guide [Remplacement de l'OVHgateway](https://docs.ovh.com/fr/nutanix/software-gateway-replacement/).
+>
 
 La VM est basée sur Ubuntu 18.04.5 LTS (Bionic).
 La passerelle OVHgateway a un design léger, avec 2 NICs, 1 vCPU, 1 GB de mémoire et 11 GiB d'espace-disque.
@@ -35,6 +39,7 @@ Les équipes OVHcloud ont personnalisé la VM avec un script *IPTABLES*.
 > [!primary]
 > La VM est utilisée uniquement pour le trafic NAT entre les hosts, le CVM, la VM et Internet.
 >
+
 
 Les requêtes ICMP ne sont autorisées que dans le réseau privé.
 
