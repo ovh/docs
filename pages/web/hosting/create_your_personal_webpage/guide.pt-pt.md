@@ -241,7 +241,7 @@ Tal como para os ficheiros HTML, os ficheiros CSS podem ser criados com qualquer
 
 ![Colocação do ficheiro CSS](images/create_your_personal_webpage_4.png){.thumbnail}
 
-Agora temos de ligar este ficheiro CSS, que designámos por convenção *estilo.css*, à nossa página HTML. Esta ligação é realizada adicionando um balizas `<link>` no balizador `<head>` no ficheiro index.html:
+Agora temos de ligar este ficheiro CSS, que designámos por convenção *style.css*, à nossa página HTML. Esta ligação é realizada adicionando um balizas `<link>` no balizador `<head>` no ficheiro index.html:
 
 ```html
 <head>

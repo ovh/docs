@@ -241,7 +241,7 @@ Come per i file HTML, i file CSS possono essere creati con qualsiasi editor di t
 
 ![Posizionamento file CSS](images/create_your_personal_webpage_4.png){.thumbnail}
 
-Ora dobbiamo collegare questo file CSS, che abbiamo chiamato per convenzione *stile.css*, alla nostra pagina HTML. Questo link si effettua aggiungendo un tag `<link>` nel tag `<head>` nel file index.html:
+Ora dobbiamo collegare questo file CSS, che abbiamo chiamato per convenzione *style.css*, alla nostra pagina HTML. Questo link si effettua aggiungendo un tag `<link>` nel tag `<head>` nel file index.html:
 
 ```html
 <head>
