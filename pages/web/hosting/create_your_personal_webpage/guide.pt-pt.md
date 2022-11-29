@@ -430,7 +430,7 @@ Encontrará muitos recursos na web para aprender e melhorar a sua prática, copi
 
 Muitas ferramentas gratuitas permitem-lhe retrabalhar as suas ilustrações:
 
-- A aplicação [Fotos](https://apps.microsoft.com/store/detail/photos-microsoft/9WZDNCRFJBH4) Windows 10 e 11
+- A aplicação [Photos](https://apps.microsoft.com/store/detail/photos-microsoft/9WZDNCRFJBH4) Windows 10 e 11
 - A aplicação [Fotos](https://support.apple.com/pt-pt/guide/photos/welcome/mac) macOS
 - [Paint.Net](https://www.getpaint.net/), [GIMP](https://www.gimp.org/), [darktable](https://www.darktable.org/)
 - Lembre-se também das aplicações de retoque de imagem disponíveis nos seus smartphone Android ou iOS.
