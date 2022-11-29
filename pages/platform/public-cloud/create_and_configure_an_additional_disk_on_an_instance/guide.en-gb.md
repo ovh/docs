@@ -6,7 +6,7 @@ section: Storage
 order: 1
 ---
 
-**Last updated 8th December 2021**
+**Last updated 29th November 2022**
 
 ## Objective
 
@@ -209,7 +209,17 @@ Remove the device ID from the fstab to complete the unmount process, if this is 
 ~$ admin@server-1:~$ sudo nano /etc/fstab
 ```
 
-Save and exit the editor. The disk should be unmounted.
+Save and exit the editor.
+
+Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage**.
+
+Click on the `...`{.action} next to the corresponding volume and select `Detach from instance`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Click on `Confirm`{.action} in the pop up window to start the process.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 
 #### Using Windows
 
@@ -332,6 +342,40 @@ In the last window, click `Finish`{.action} to format the disk.
 ![format disk](images/format-disk-06.png){.thumbnail}
 
 The disk will be available as a drive in File Explorer after the operation.
+
+### Detach a volume
+
+If you wish to detach a volume from your instance, the best practice is to unmount the volume from within the instance before detaching it from your control panel.
+
+Establish a remote desktop (RDP) connection to your Windows instance.
+
+Once logged in, right-click on the `Start Menu`{.action} button and open `Disk Management`{.action}.
+
+![disk management](images/start-menu.png){.thumbnail}
+
+Right click on the volume you wish to unmount and select `Change Drive Letter and Paths...`{.action}.
+
+![unmount disk](images/unmountdisk.png){.thumbnail}
+
+Click on `Remove`{.action} to remove the drive.
+
+![remove disk](images/changedriveletter.png){.thumbnail}
+
+Next, click on `Yes`{.action} to confirm the disk removal.
+
+![confirm remove disk](images/confirmunmounting.png){.thumbnail}
+
+When finished, you can close Disk Management.
+
+Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage**.
+
+Click on the `...`{.action} next to the corresponding volume and select `Detach from instance`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Click on `Confirm`{.action} in the pop up window to start the process.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 
 ## Go further
 
