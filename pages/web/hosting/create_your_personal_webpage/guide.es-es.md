@@ -440,7 +440,7 @@ También encontrará recursos en línea:
 - [Compresor](https://compressor.io/)
 - [ShrinkMe](https://shrinkme.app/)
 - [Free Online Image Optimizer](https://kraken.io/web-interface)
-- [TinyJPG](https://tinyjpg.com/) et [TinyPNG](https://tinypng.com/).
+- [TinyJPG](https://tinyjpg.com/) y [TinyPNG](https://tinypng.com/).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 
