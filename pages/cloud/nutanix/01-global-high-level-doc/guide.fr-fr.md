@@ -25,7 +25,7 @@ Un cluster Nutanix est constitué d’un ensemble de services OVHcloud :
 
 Les serveurs dédiés (3 minimum) sont connectés au sein du vRack qui est un réseau L2, le réseau privé des hosts (noeud ou *node*).
 
-Deux VLAN sont utilisés le VLAN 0 pour l'internet public et le VLAN 1 pour l'infrastructure Nutanix (Hôtes, CVMs, Prism Element et Prism Central).
+Deux VLAN sont utilisés, le VLAN 0 pour l'internet public et le VLAN 1 pour l'infrastructure Nutanix (Hôtes, CVMs, Prism Element et Prism Central).
 
 L'adresse IP publique de chaque noeud n'est pas accessible car l'Additional IP est dédiée à l'accès Internet. Cet accès est assuré par la passerelle « OVHgateway » qui est une VM dédiée créée par OVHcloud sur votre cluster.
 

@@ -23,7 +23,7 @@ A Nutanix cluster consists of a stack of OVHcloud services:
 
 Dedicated servers (3 minimum) are connected within the vRack which is an L2 network, the hosts (node) private network.
 
-Two VLANs are used VLAN 0 for public internet and VLAN 1 for Nutanix infrastructure (Hosts, CVMs, Prism Element and Prism Central).
+Two VLANs are used, VLAN 0 for public internet and VLAN 1 for Nutanix infrastructure (Hosts, CVMs, Prism Element and Prism Central).
 
 The public IP address of each node is not accessible since the Additional IP is dedicated to the Internet access. This access is ensured by the "OVHGateway" wich is a dedicated VM created by OVHcloud on your cluster.
 
