@@ -430,7 +430,7 @@ En internet encontrará muchos recursos para aprender y mejorar su práctica, co
 
 Gracias a las numerosas herramientas gratuitas, podrá reelaborar sus ilustraciones:
 
-- La aplicación [Fotos](https://apps.microsoft.com/store/detail/photos-microsoft/9WZDNCRFJBH4) Windows 10 y 11
+- La aplicación [Photos](https://apps.microsoft.com/store/detail/photos-microsoft/9WZDNCRFJBH4) Windows 10 y 11
 - La aplicación [Photos](https://support.apple.com/es-es/guide/photos/welcome/mac) macOS
 - [Paint.Net](https://www.getpaint.net/), [GIMP](https://www.gimp.org/), [darktable](https://www.darktable.org/)
 - Piense también en las aplicaciones de retoque de imagen disponibles en sus smartphones Android o iOS.
