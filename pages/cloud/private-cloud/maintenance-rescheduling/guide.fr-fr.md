@@ -5,11 +5,16 @@ slug: maintenance-rescheduling
 section: Fonctionnalités OVHcloud
 ---
 
-**Dernière mise à jour le 28/11/2022**
+**Dernière mise à jour le 29/11/2022**
 
 ## Objectif
 
-Lorsqu'une maintenance est programmée sur votre Hosted Private Cloud, un e-mail de notification vous est envoyé pour vous prévenir de la date de cette maintenance. Si cette date ne vous convient, par exemple pour des impératifs de production, vous pouvez reporter cette maintenance à une date de votre choix.
+Lorsqu'une maintenance est programmée sur votre Hosted Private Cloud, un e-mail de notification vous est envoyé pour vous prévenir de la date de cette maintenance. Si cette date ne vous convient pas, par exemple pour des impératifs de production, vous pouvez reporter cette maintenance à une date de votre choix.
+
+> [!primary]
+> Nous essayons de nous adapter au maximum à votre utilisation de l'infrastructure et à vos contraintes. Cependant, nous devons parfois planifier des maintenances pour lesquelles il ne sera pas possible de modifier la date et/ou l'heure (maintenances d'infrastructure impliquant plusieurs clients, interventions urgentes pour éviter un incident, etc)
+>
+> Pour information, lorsqu'une date de maintenance peut être modifiée par vos soins, les nouvelles dates qui vous seront proposées seront comprises dans un intervalle de temps réduit.
 
 **Découvrez comment reporter la date d'une maintenance programmée sur votre Hosted Private Cloud, depuis votre espace client OVHcloud.**
 
@@ -36,8 +41,9 @@ Cliquez ensuite sur le bouton `...`{.action} puis sur `Modifier la date de trait
 > [!primary]
 > Si le bouton `Modifier la date de traitement`{.action} est grisé, cela signifie que cette maintenance ne peut pas être reportée.
 
-Sélectionnez une date dans le calendrier qui vous est présenté. Renseignez manuellement une heure pour cette maintenance.<br>
-**Attention !** Pour qu'il soit pris en compte, le nouvel horaire ne doit plus être coloré en bleu. Une fois que vous avez renseigné le nouvel horaire, cliquez à côté de celui-ci, l'horaire ne sera alors plus coloré en bleu.
+Sélectionnez une date dans le calendrier qui vous est présenté. Les dates grisées ne sont pas sélectionnables.<br>
+Renseignez ensuite manuellement une nouvelle heure pour cette maintenance ou laissez inchangé l'horaire initialement prévu.<br>
+**Attention !** Pour qu'il soit pris en compte, le nouvel horaire ne doit plus être surligné en bleu. Une fois que vous avez renseigné le nouvel horaire, cliquez à côté de celui-ci dans la fenêtre, afin que l'horaire ne soit plus surligné en bleu.
 
 Enfin, cliquez sur le bouton `Modifier`{.action} pour valider vos modifications.
 
