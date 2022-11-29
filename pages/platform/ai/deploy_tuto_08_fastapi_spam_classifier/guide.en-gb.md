@@ -34,14 +34,14 @@ In order to do this, we will use [FastAPI](https://streamlit.io/), a web framewo
 - A [user for AI Deploy](https://docs.ovh.com/gb/en/publiccloud/ai/users/);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
-- You also should have followed the the tutorial [AI Notebooks - Tutorial - Build your spam classifier](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-spam-classifier/). Find the code on the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/text-classification/miniconda/spam-classifier/notebook-spam-classifier.ipynb). You will be able to understand the creation of the spam classification model.
+- You also should have followed the tutorial [AI Notebooks - Tutorial - Build your spam classifier](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-spam-classifier/). Find the code on the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/text-classification/miniconda/spam-classifier/notebook-spam-classifier.ipynb). You will be able to understand the creation of the spam classification model.
 
 ## Instructions
 
 You are going to follow different steps to build your **FastAPI** app.
 
 - More information about FastAPI capabilities can be found [here](https://fastapi.tiangolo.com/).
-- Direct link to the full code can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/apps/fastapi/spam-classifier-api).
+- Direct link to the full code can be found [here](https://github.com/ovh/ai-training-examples/tree/main/apps/fastapi/spam-classifier-api).
 
 Here we will mainly discuss how to write the `model.py` and `app.py` codes, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/fastapi/spam-classifier-api).
 
@@ -51,7 +51,7 @@ Two Python files are created for the purpose of defining the model and building 
 
 #### Define the model.py file
 
-This Python file is dedicated to build and define the model: **Logistic Regression**. You can find the full code [here](https://github.com/ovh/ai-training-examples/blob/main/apps/fastapi/spam-classifier-api/model.py).
+This Python file is dedicated to build and define the **Logistic Regression** model. You can find the full code [here](https://github.com/ovh/ai-training-examples/blob/main/apps/fastapi/spam-classifier-api/model.py).
 
 > [!primary]
 >
@@ -153,7 +153,7 @@ def process_message(message):
     return dense_select
 ```
 
-Define `GET` method.
+Define the `GET` method.
 
 ```python
 @app.get('/')
@@ -195,7 +195,7 @@ def classify_message(data : request_body):
 
 > [!primary]
 >
-> All the functions defined above are in the Python file `app.py`.
+> All the functions defined above are in the `app.py` Python file.
 >
 > You can find the code on the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/apps/fastapi/spam-classifier-api/app.py).
 >
@@ -246,7 +246,7 @@ ENTRYPOINT ["uvicorn"]
 CMD ["app:app", "--host", "0.0.0.0"]
 ```
 
-Give correct access rights to **ovhcloud user** (`42420:42420`):
+Give correct access rights to an **ovhcloud user** (`42420:42420`):
 
 ```console
 RUN chown -R 42420:42420 /workspace
@@ -292,7 +292,7 @@ Once started, your application should be available on `http://localhost:8000`.
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry/).
+> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry/).
 >
 
 Find the address of your shared registry by launching this command:
@@ -343,7 +343,7 @@ By clicking on the link of your AI Deploy app, you will arrive on the following 
 
 ![Overview](images/get-method-fastapi.png){.thumbnail}
 
-But how to interact with your API?
+How to interact with your API?
 
 You can add `/docs` at the end of the url of your app.
 
@@ -368,7 +368,7 @@ Congratulations! You have obtained the result of the prediction with the **label
 
 ## Go further
 
-- You can imagine deploying an AI model with an other tool: **Gradio**. Refer to this [tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
+- You can imagine deploying an AI model with an other tool: **Gradio**. Read this [tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 - Another way to create an AI Deploy app is to use **Streamlit**! [Follow this tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-eda-iris/).
 
 ## Feedback
