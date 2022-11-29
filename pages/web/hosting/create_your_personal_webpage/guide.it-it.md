@@ -19,7 +19,7 @@ Questa guida ti mostra come creare la prima pagina di un sito Web su un hosting 
 ## Prerequisiti
 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovh.com/it/hebergement-web/) o di un [hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/)
+- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) o di un [hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/)
 - Disporre di un editor di testo (ad esempio blocchi di testo, TextEdit, Notepad++, ecc...)
 - Aver installato un client FTP (come [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), ecc...) per trasferire (depositare sull'hosting) i suoi file sul suo spazio dedicato.
 
