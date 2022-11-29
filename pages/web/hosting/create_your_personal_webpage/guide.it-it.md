@@ -423,7 +423,7 @@ Troverai molte risorse sul Web per imparare e migliorare la tua pratica, per cop
 - [Iniziare con l'HTML](https://developer.mozilla.org/it/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 - [Guide di riferimento sulle luci HTML](https://developer.mozilla.org/it/docs/Web/HTML)
 - [Tutorial W3Schools su HTML](https://www.w3schools.com/html/)
-- [Tutoriels CSS Mozilla](https://developer.mozilla.org/it/docs/Web/CSS/Tutorials)
+- [Tutorial CSS Mozilla](https://developer.mozilla.org/it/docs/Web/CSS/Tutorials)
 - [CSS Tutorial W3 Schools](https://www.w3schools.com/css/).
 
 ### Rielaborare le tue immagini
