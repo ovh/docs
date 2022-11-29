@@ -366,24 +366,24 @@ Linki umożliwiające poruszanie się między stronami są istotnymi elementami 
 Możemy zrobić to w ten sam sposób, aby tekst był interaktywny:
 
 ```html
-<p>Oferta <a href="https://www.ovhcloud.com/fr/domains/">"Domena"</a> zawiera:</p>
+<p>Oferta <a href="https://www.ovhcloud.com/pl/domains/">"Domena"</a> zawiera:</p>
 ```
 
 Aby wyświetlić cel linku w nowej zakładce, wystarczy dodać atrybut `target` do tagu `<a>`:
 
 ```html
-<p>Oferta <a href="https://www.ovhcloud.com/fr/domains/" target="_blank">"Nazwa domeny"</a> zawiera:</p>
+<p>Oferta <a href="https://www.ovhcloud.com/pl/domains/" target="_blank">"Nazwa domeny"</a> zawiera:</p>
 ```
 
 ### Jak przechowywać treści na hostingu?
 
-Aby Twoje strony WWW były widoczne dla wszystkich użytkowników, należy je umieścić na hostingu (należy aktywować hosting zgodnie [z instrukcjami zawartymi w tym przewodniku](https://docs.ovh.com/fr/hosting/activer-start10m/)).
+Aby Twoje strony WWW były widoczne dla wszystkich użytkowników, należy je umieścić na hostingu (należy aktywować hosting zgodnie [z instrukcjami zawartymi w tym przewodniku](https://docs.ovh.com/pl/hosting/wlaczanie_start10m/)).
 
 Pliki są przesyłane za pomocą dedykowanego protokołu: **FTP** (dla **F**ile **T**ransfert **P**protokół). Skorzystaj z programu dedykowanego do tej operacji, takiego jak [FileZilla](https://filezilla-project.org/download.php?type=client) lub [Cyberduck](https://cyberduck.io/download/).
 
 ### Uruchom swoją stronę przez FTP
 
-Aby umieszczać pliki na Twoim hostingu, zapoznaj się z przewodnikiem dotyczącym [korzystania z FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/#connexion-avec-filezilla-en-ftp).
+Aby umieszczać pliki na Twoim hostingu, zapoznaj się z przewodnikiem dotyczącym [korzystania z FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
 
 Po całkowitym przeniesieniu plików na Twój hosting możesz zobaczyć wynik wpisując nazwę domeny na pasku adresowym przeglądarki lub naciskając klawisz `F5` na klawiaturze, aby odświeżyć stronę, jeśli już jesteś na Twojej stronie.
 

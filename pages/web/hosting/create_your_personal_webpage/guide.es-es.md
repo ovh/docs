@@ -377,7 +377,7 @@ Para mostrar el destino del enlace en una nueva pestaña, solo tiene que añadir
 
 ### ¿Cómo almacenar contenido en mi alojamiento?
 
-Para que sus páginas, y por tanto su sitio web, sean visibles para todo el mundo, debe guardarlas en su alojamiento (debe activar su alojamiento [como se indica en esta guía](https://docs.ovh.com/fr/hosting/activer-start10m/)).
+Para que sus páginas, y por tanto su sitio web, sean visibles para todo el mundo, debe guardarlas en su alojamiento (debe activar su alojamiento [como se indica en esta guía](https://docs.ovh.com/es/hosting/activar-start10m/)).
 
 La transferencia de los archivos se realiza a través de un protocolo dedicado: el **FTP** (para **F**ile **T**ransfert **P**rotocol). Utilice un programa dedicado para realizar esta operación, como [FileZilla](https://filezilla-project.org/download.php?type=client) o [Cyberduck](https://cyberduck.io/download/).
 
@@ -442,7 +442,7 @@ También encontrará recursos en línea:
 - [Free Online Image Optimizer](https://kraken.io/web-interface)
 - [TinyJPG](https://tinyjpg.com/) et [TinyPNG](https://tinypng.com/).
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/fr/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

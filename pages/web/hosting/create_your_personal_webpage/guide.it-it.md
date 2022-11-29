@@ -174,7 +174,7 @@ Puoi vedere il risultato nel tuo browser: di default, gli elementi delle liste s
 
 #### Aggiungi immagini per rendere la tua pagina più attraente
 
-Il web è soprattutto un mezzo visivo. In questa sezione vedremo come inserire le immagini nel tuo contenuto. L'offerta Start 10M ti offre uno spazio di storage da 10 MB. È sufficiente per le tue pagine HTML e CSS, ma può essere limitato per mettere molte immagini sul tuo sito. In questo caso, ti consigliamo di optare per un'[offerta di hosting Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) che permetta di usufruire di uno storage di maggiore entità.
+Il web è soprattutto un mezzo visivo. In questa sezione vedremo come inserire le immagini nel tuo contenuto. L'offerta Start 10M ti offre uno spazio di storage da 10 MB. È sufficiente per le tue pagine HTML e CSS, ma può essere limitato per mettere molte immagini sul tuo sito. In questo caso, ti consigliamo di optare per un'[offerta di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che permetta di usufruire di uno storage di maggiore entità.
 
 Il tag HTML utilizzato per visualizzare un'immagine è il tag `<img>`. Contrariamente alle luci che abbiamo visto prima, non c'è apertura e chiusura di questo elemento. Parleremo di targhette autofermanti. Sono gli attributi di questo tag che permettono di collegare la posizione del file e il testo descrittivo dell'immagine.
 
