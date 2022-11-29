@@ -402,7 +402,7 @@ Para ganar tiempo en la apariencia de su sitio web y permitirle concentrarse en 
 
 Una *plantilla* es un modelo o ejemplo que se puede reutilizar, adaptándolo o no. El recurso a las *plantillas* permite ganar tiempo en el diseño de un sitio adaptando elementos ya diseñados, al tiempo que ofrecen las cualidades que se pueden exigir de un sitio "profesional". También puede utilizarse la palabra "tema".
 
-Existen soluciones "open source" gratuitas disponibles en Internet, como [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) o incluso [Semantic UI](https://semantic-ui.com/). Estas herramientas se denominan "framework": se trata de librerías que facilitan la creación de sitios o aplicaciones web. Ofrecen elementos estandarizados, personalizables y reutilizables y toda la comunidad propone *templates* reutilizables.
+Existen soluciones "open source" gratuitas disponibles en Internet, como [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) o [Semantic UI](https://semantic-ui.com/). Estas herramientas se denominan "framework": se trata de librerías que facilitan la creación de sitios o aplicaciones web. Ofrecen elementos estandarizados, personalizables y reutilizables y toda la comunidad propone *templates* reutilizables.
 
 #### Bootstrap
 
