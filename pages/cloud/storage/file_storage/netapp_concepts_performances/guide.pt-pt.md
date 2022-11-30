@@ -1,5 +1,5 @@
 ---
-título: Enterprise File Storage - Conceitos de performance
+title: Enterprise File Storage - Conceitos de performance
 excerpt: "Descubra os conceitos relacionados com o aprovisionamento, o acompanhamento e o teste de desempenho da solução Enterprise File Storage"
 slug: netapp/performances
 section: Enterprise File Storage
