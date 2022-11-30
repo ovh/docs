@@ -138,23 +138,17 @@ Your Dockerfile should start with the `FROM` instruction indicating the parent i
 FROM python:3.7
 ```
 
-Define the home directory and add your `requirements.txt` file to it:
+Create the home directory and add your files to it:
 
 ```console
 WORKDIR /workspace
-ADD requirements.txt /workspace/requirements.txt
+ADD . /workspace
 ```
 
 Install your needed Python modules using a `pip install ...` command with the `requirements.txt` file which contains all modules:
 
 ```console
 RUN pip install -r requirements.txt
-```
-
-Add your Python file and the image to the `workspace`:
-
-```console
-ADD app.py mnist-classes.png /workspace/
 ```
 
 Give correct access rights to the **ovhcloud user** (`42420:42420`):
