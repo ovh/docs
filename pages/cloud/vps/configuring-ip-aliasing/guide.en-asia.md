@@ -9,7 +9,7 @@ section: 'Network management'
 
 > [!primary]
 >
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/asia/network/additional-ip/). This renaming has no effect on its technical features or the functioning of your services.
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/asia/network/additional-ip/). This renaming has no effect on its technical features.
 >
 
 ## Objective
