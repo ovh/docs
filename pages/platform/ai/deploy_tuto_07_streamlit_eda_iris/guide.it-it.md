@@ -232,7 +232,7 @@ seaborn==0.12.0
 
 ### Write the Dockerfile for the application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `one-for-all` OVHcloud image:
+Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `python:3.8` OVHcloud image:
 
 ```console
 python:3.8
