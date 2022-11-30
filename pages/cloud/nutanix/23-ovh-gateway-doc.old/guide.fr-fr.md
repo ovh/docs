@@ -334,7 +334,7 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
 }
 ```
 
-le résultat de la requette vous renvoie la configuration des sous-réseaux il faut relevez les UUID de ces sous réseaux qui se trouvent en dessous de `"kind": "subnet"` dans la variable "uuid" comme ici par exemple : 
+le résultat de la requette vous renvoie la configuration des sous-réseaux il faut relevez les UUID de chaque sous réseau qui se trouve en dessous de `"kind": "subnet"` dans la variable "uuid" comme ici par exemple : 
 
  * `3652d420-9f94-4350-8af7-b921d0761781` pour le VLAN **base** sur le VLAN 0  
  * `e60826da-4aab-4810-b7d3-0604a3e16719` pour le VLAN **infra** sur le VLAN 1
