@@ -122,7 +122,7 @@ L'installation du système d'exploitation se lance. La fenêtre de l'état d'ava
 
 ![05 install OS 06](images/05-install-os06.png){.thumbnail}
 
-Un e-mail de notification sera alors envoyé à l'adresse e-mail référencée dans le compte OVHcloud. Cet e-mail contient le compte utilisateur administrateur (le compte se nomme ubuntu) ainsi qu'un lien pour définir le mot de passe.
+Un e-mail de notification sera alors envoyé à l'adresse e-mail référencée dans le compte OVHcloud. Cet e-mail contient le compte utilisateur administrateur (le compte se nomme ubuntu) ainsi qu'un lien pour obtenir le mot de passe.
 
 ### Arrêt de la machine virtuelle OVHgateway sur Prism Central
 
