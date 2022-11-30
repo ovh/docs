@@ -28,7 +28,7 @@ La passerelle OVHgateway a un design léger, avec 2 NICs, 1 vCPU, 1 GB de mémoi
 >
 
 `ens3` est l'interface pour le réseau externe et possède l'adresse IP Failover dans le sous-réseau **base** avec le VLAN 0. <br>
-`ens4` est l'interface pour le réseau interne dans le sous-réseau **infra** avec le VLAN 1 
+`ens4` est l'interface pour le réseau interne dans le sous-réseau **infra** avec le VLAN 1. 
 
 Les équipes OVHcloud ont personnalisé la VM avec un script *IPTABLES*.
 
@@ -119,7 +119,7 @@ Cependant, si la passerelle n'est pas présente, vérifiez le sous-réseau en vo
 
 Dans ce cas, le sous-réseau est 192.168.0.0/24. Dans la configuration par défaut, l'adresse IP de la passerelle est donc 192.168.0.254.
 
-##### **Récupérer le nom du sous-réseau**
+##### **Récupérer les nom des sous-réseau**
 
 Si la passerelle existe toujours, rendez-vous sur la VM de la section VM de l'interface web Prism Central.
 
