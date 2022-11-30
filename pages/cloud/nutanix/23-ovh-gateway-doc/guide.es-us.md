@@ -4,17 +4,17 @@ slug: ovh-gateway-documentation
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/ovh-gateway-documentation/'
 excerpt: Find out how the OVHGateway works
-section: Primeros pasos
-order: 02
+section: Red y seguridad
+order: 03
 ---
 
-**Last updated 11th January 2022**
+**Last updated 2nd May 2022**
 
 ## Objective
 
-OVHgateway is the name of the outgoing point of your cluster to the internet.
+“OVHgateway” is the name of the outgoing point of your cluster to the internet.
 
-**This guide will explain how this gateway works.**
+**This guide will explain how this gateway works, and how to redeploy it.**
 
 ## Instructions
 
@@ -22,16 +22,25 @@ OVHgateway is the name of the outgoing point of your cluster to the internet.
 
 #### General information
 
-The VM is based on Ubuntu 18.04.5 LTS (Bionic).
-OVHgateway has a lightweight design, using 2 NICs, 1 vCPU, 1 GB memory and a 11 GiB disk.
+The VM is based on Ubuntu 20.04 LTS (“ The Focal Fossa ”).
 
-`ens3` is the interface for the external network and owns the Failover IP address.<br>
+> [!primary]
+> The gateway is built on the basis of *Daily Build* cloud images of Ubuntu.
+> The file used is downloaded directly from the Ubuntu servers: <https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img> then customised using cloud-init.
+
+> [!primary]
+> OVHcloud recommends that you replace this gateway with one of your choice.
+
+The OVHgateway has a lightweight design, with 2 NICs, 1 vCPU, 1 GB of memory and 20 GiB of disk space.
+
+`ens3` is the interface for the external network and owns the Additional IP address.<br>
 `ens4` is the interface for the internal network.
 
 OVHcloud teams have customised the VM with an *IPTABLES* script.
 
 > [!primary]
 > There is no way to connect with SSH or any other protocol.
+> It is also not possible to log from the console via Prism Central.
 >
 
 > [!primary]
@@ -46,15 +55,13 @@ The VM is deployed with *cloud-init*, a tool that applies user data to your inst
 
 ```yaml
 #cloud-config
+---
 hostname: gw
 fqdn: gw.ovh.cloud
 users:
   - name: ovh
-    sudo: ['ALL=(ALL) NOPASSWD:ALL']
-    groups: sudo
-    shell: /bin/bash
-    lock_passwd: false
-    passwd: <>
+    shell: /bin/nologin
+disable_root: true
 write_files:
   - path: /etc/netplan/50-cloud-init.yaml
     content: |
@@ -69,25 +76,73 @@ write_files:
               addresses: [DNS]
           ens4:
             addresses: [PRIVATEIP]
+  - path: /etc/systemd/system/firegateway.service
+    content: |
+      [Unit]
+      Description=GatewayFirewall
+      Wants=network.target network-online.target
+      After=network.target network-online.target
+      [Service]
+      Type=simple
+      ExecStart=/root/firegateway
+      Restart=always
+      TimeoutStartSec=0
+      [Install]
+      WantedBy=multi-user.target
+  - path: /root/firegateway
+    content: |
+      #!/bin/bash
+      iptables -F
+      iptables -X
+      iptables -t nat -F
+      iptables -t nat -X
+      iptables -t mangle -F
+      iptables -t mangle -X
+      iptables -P INPUT DROP
+      iptables -P OUTPUT DROP
+      iptables -P FORWARD ACCEPT
+      iptables -A INPUT -i ens4 -p ICMP -j ACCEPT
+      iptables -A OUTPUT -p ICMP -j ACCEPT
+      iptables -A INPUT -i ens3 -m state --state ESTABLISHED,RELATED -j ACCEPT
+      iptables -A INPUT -i ens4 -j ACCEPT      
+      iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE
+ 
 runcmd:
+  - netplan generate
   - netplan apply
+  - /sbin/sysctl -w net.ipv4.conf.default.rp_filter=1
+  - /sbin/sysctl -w net.ipv4.tcp_syncookies=1
+  - /sbin/sysctl -w net.ipv4.conf.all.accept_redirects=0
+  - /sbin/sysctl -w net.ipv4.conf.all.secure_redirects=0
+  - /sbin/sysctl -w net.ipv4.conf.default.accept_source_route=0
+  - sed -i s/#net.ipv4.ip_forward/net.ipv4.ip_forward/g /etc/sysctl.conf
+  - /sbin/sysctl -w net.ipv4.ip_forward=1
+  - iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE
+  - chmod +x /root/firegateway
+  - systemctl enable firegateway.service
+  - systemctl disable ssh.service
+  - apt remove -y wget curl ftp git htop mtr-tiny open-vm-tools tcpdump telnet tmux snapd openssh-server
+  - apt update && apt upgrade -y
+  - apt-get clean -y
+  - apt autoremove -y
+final_message: "The system is finally up, after $UPTIME seconds"
 ```
 
-### How to re-deploy the VM gateway
+### How to redeploy the VM gateway with the central Prism interface
 
 #### Step 1: Collect information
 
 To redeploy the gateway VM you will need:
 
-- Failover IP address
+- Additional IP address
 - LAN subnet (subnet of CVM, Prism Central, AHV hypervisors)
 - Subnet name
 
-##### **Check the failover IP address**
+##### **Check the Additional IP address**
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) and open the management section of your [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external}. Verify the failover IP address used by the Nutanix Cluster.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) and open the management section of your [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external}. Verify the Additional IP address used by the Nutanix Cluster.
 
-![ip failover](images/check_subnet0.png){.thumbnail}
+![Additional IP](images/check_subnet0.png){.thumbnail}
 
 > [!primary]
 > The following instructions will use the IP block 123.45.6.78/30 for example purposes.
@@ -110,7 +165,7 @@ The gateway IP is displayed here.
 
 ![check subnet on gateway](images/check_subnet2.png){.thumbnail}
 
-However, if the gateway is not present, check the subnet by going to "Hardware" then "Hosts" in the Prism Central WebUI.
+However, if the gateway is not present, check the subnet by going to `Hardware` then `Hosts` in the Prism Central WebUI.
 
 ![check subnet on gateway2](images/check_subnet1.png){.thumbnail}
 
@@ -120,46 +175,165 @@ In this case the subnet is 192.168.0.0/24. In the default configuration, the gat
 
 If the gateway still exists, go to the VM in the VM section of your Prism Central WebUI.
 
-Click on the OVHgateway VM and open the "NICs" tab.
+Click on the OVHgateway VM and open the `NICs` tab.
 
 ![check subnet on gateway2](images/check_subnet_name0.png){.thumbnail}
 
-#### Step 2: Import an image on the cluster
+#### Step 2: create the VM 
 
-Log in to Prism Central and go to `Compute & Storage`{.action}, then `Images`{.action}.
+Log in to Prism Central and create a VM.
 
-Click on the `Import Images`{.action} button.
+Customise the VM name and characteristics.
 
-![prism central images](images/import_image1.png){.thumbnail}
+![Deploy VM](images/deploy_vm.png){.thumbnail}
 
-Click on the `Images on a cluster`{.action} button, then on `Select Images`{.action}.
+Click `Next`{.action}
 
-![prism central images](images/import_image2.png){.thumbnail}
+You then need to attach a disk. To do this, you can select the image used to create the original gateway.
 
-Check "ovh_gateway" and click on `Next`{.action}.
+![Attach Disk1](images/attach_disk.png){.thumbnail}
 
-![prism central images](images/import_image3.png){.thumbnail}
+![Attach Disk2](images/attach_disk2.png){.thumbnail}
 
-Once the task is done, the "ovh_gateway" image will be available on the cluster.
+Then add **two nics** to the “base” network:
 
-![prism central images](images/import_image4.png){.thumbnail}
+![Attach subnet](images/attach_subnet.png){.thumbnail}
 
-##### **Retrieve the necessary information with the Nutanix API**
+![Attach subnet](images/attach_subnet2.png){.thumbnail}
 
-To deploy the VM, you need the UUID of the "image" and the network.
+Click `Next`{.action}.
 
-Open a terminal and execute the following command:
+In the management interface, choose `cloud-init` in the “Guest customisation” section.
+
+![Guest customization](images/cloud-init.png){.thumbnail}
+
+You now need to create a yaml script to define the parameters. This script contains the user data. When the system boots, these settings such as users, packets, files, etc. will be applied to the VM.
+
+Below, you will find a template that you can modify with your values to create your VM.
+
+> [!primary]
+> You can use the original VM creation file or use a custom file to create your own gateway. This is what we will see in this example.
+>
+
+> [!primary]
+>
+> - Replace the `hostname`, `fqdn`, `name`, `passwd`, `ssh-autorized-keys` and IP addresses with the values you want.
+> - This file creates the file for netplan, applies the configuration, and initializes a reboot.
+> - The password must be a hash value. You can generate it with the command below.
+>
+
+```bash
+mkpasswd --method=SHA-512 --rounds=4096
+```
+
+```yaml
+#cloud-config
+hostname: <yourhostname>
+fqdn: <yourhostname.ovh.cloud>
+users:
+  - name: <yourusername>
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: sudo
+    shell: /bin/bash
+    lock_passwd: false
+    passwd: <yourhashpass>
+    ssh-authorized-keys: <your public ssh key>
+write_files: 
+   - path: /etc/netplan/50-cloud-init.yaml
+     content: |
+        network:
+           version: 2
+           renderer: networkd
+           ethernets:
+              ens3:
+                addresses: [123.45.6.77/30]
+                gateway4: 123.45.6.78
+                nameservers:
+                  addresses: [213.186.33.99]
+              ens4:
+                addresses: [192.168.0.254]
+
+
+runcmd:
+   - netplan generate
+```
+
+Paste this script into the box provided.
+
+![Guest customization](images/cloud-init.png){.thumbnail}
+
+Click `Next`{.action}, then `Create VM`{.action}.
+
+> [!primary]
+> Wait a few minutes for the VM to take into account all settings.
+
+### How to redeploy the VM gateway in the command line
+
+#### Step 1: collect information
+
+To redeploy the gateway VM, you will need the following:
+
+- Additional IP address
+- LAN subnet (CVM hypervisor subnet, Prism Central, AHV)
+- Subnet name
+
+##### **Check the Additional IP address**
+
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)  and access your [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} management. Check the Additional IP address used by the Nutanix cluster.
+
+![Additional IP](images/check_subnet0.png){.thumbnail}
+
+> [!primary]
+> The following instructions will use the IP block 123.45.6.78/30 as an example.
+>
+
+When using the [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external}, the first, penultimate, and last addresses in a given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below:
+
+```console
+123.45.6.76   Reserved: Network address
+123.45.6.77   First usable IP
+123.45.6.78   Reserved: Network gateway
+123.45.6.79   Reserved: Network broadcast
+```
+
+##### **Verify the private IP address of the subnet or private gateway**
+
+If the gateway still exists, go to the VM section of the Prism Central web interface.
+
+The gateway IP is displayed here.
+
+![check subnet on gateway](images/check_subnet2.png){.thumbnail}
+
+However, if the gateway is not present, check the subnet by going to the `Hardware` menu then `Hosts` in the Prism Central web interface.
+
+![check subnet on gateway2](images/check_subnet1.png){.thumbnail}
+
+In this case, the subnet is 192.168.0.0/24. In the default configuration, the gateway IP address is 192.168.0.254.
+
+##### **Retrieve Subnet Name**
+
+If the gateway still exists, go to the VM section of the Prism Central web interface.
+
+Click on the OVHgateway VM and open the `NICs` tab.
+
+![check subnet on gateway2](images/check_subnet_name0.png){.thumbnail}
+
+##### **Retrieve the necessary information using the Nutanix API**
+
+To deploy the VM, you need the UUID of the image and the network.
+
+Open a terminal and run the following command:
 
 ```bash
 curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PRISMADMINPASSWORD" -X POST https://fqdn-cluster:9440/api/nutanix/v3/images/list -d{} | jq .
 ```
 
 > [!primary]
-> Remember to enter your actual password and FQDN as parameters.
+> Please ensure that you enter your real password and FQDN in the settings.
 >
 
 > [!primary]
-> The "jq ." command will provide a readable json.
+> The “ jq . ” will provide a readable json.
 >
 
 ```json
@@ -175,39 +349,40 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
     {
       "status": {
         "state": "COMPLETE",
-        "name": "ovh_gateway",
+        "name": "focal-server-cloudimg-amd64.img",
         "resources": {
           "retrieval_uri_list": [
-            "https://127.0.0.1:9440/api/nutanix/v3/images/54b919e1-b1e5-4d4a-b055-47ff298bf7d7/file"
+            "https://127.0.0.1:9440/api/nutanix/v3/images/22c00053-a23e-4dae-a9a9-de0d60ce29ce/file"
           ],
           "current_cluster_reference_list": [
             {
               "kind": "cluster",
-              "uuid": "0005d309-53ab-cfbb-6330-0c42a114b058"
+              "uuid": "0005dda3-c2a2-6485-5399-043f72b508a0"
             }
           ],
           "architecture": "X86_64",
-          "size_bytes": 3221225472,
+          "size_bytes": 2361393152,
           "image_type": "DISK_IMAGE",
-          "source_uri": "http://192.168.0.11:49200/ovhgateway.qcow2"
+          "source_uri": "http://192.168.0.1:49200/focal-server-cloudimg-amd64.img"
         },
-        "description": "OVHGatewayVM"
+        `description`: `ubuntu-focal`
       },
       "spec": {
-        "name": "ovh_gateway",
+        "name": "focal-server-cloudimg-amd64.img",
         "resources": {
           "image_type": "DISK_IMAGE",
-          "source_uri": "http://192.168.0.11:49200/ovhgateway.qcow2",
+          "source_uri": "http://192.168.0.1:49200/focal-server-cloudimg-amd64.img",
           "architecture": "X86_64"
         },
-        "description": "OVHGatewayVM"
+        `description`: `ubuntu-focal`
       },
       "metadata": {
-        "last_update_time": "2021-12-15T09:30:34Z",
+        "last_update_time": "2022-05-02T08:49:21Z",
         "kind": "image",
         "uuid": "54b919e1-b1e5-4d4a-b055-47ff298bf7d7",
         "spec_version": 0,
-        "creation_time": "2021-12-15T09:30:34Z",
+        "creation_time": "2022-05-02T08:49:21Z",
+        "spec_hash": "00000000000000000000000000000000000000000000000000",
         "categories_mapping": {},
         "categories": {}
       }
@@ -216,18 +391,17 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
 }
 ```
 
-In the metadata you can find the UUID, in this case: `54b919e1-b1e5-4d4a-b055-47ff298bf7d7`.
+In the metadata, you will find the UUID, here: `54b919e1-b1e5-4d4a-b055-47ff298bf7d7`, for the image named focal-server-cloudimg-amd64.img.
 
-Next you need to find the correct subnet UUID. Execute the command below:
+You then need to find the correct subnet UUID. Run the command below:
 
 ```bash
-curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PRISMADMINPASSWORD" -X POST https://fqdn-cluster:9440/api/nutanix/v3/subnets/list -d{} | jq .
+curl -k -H Accept:application/json -H Content-Type:application/json -u `admin:PRISMADMINPASSWORD` -X POST https://fqdn-cluster:9440/api/nutanix/v3/subnets/list -d{} | jq.
 ```
 
 > [!primary]
-> Remember to use your actual password and FQDN as parameters.
+> Please ensure that you enter your real password and FQDN in the settings.
 >
-
 
 ```json
 {
@@ -283,11 +457,11 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
 }
 ```
 
-In the metadata you can find the UUID, in this case: `4676d823-82dd-4c71-a95d-847e7cdc3a3e`.
+In the metadata, you will find the UUID, here: `4676d823-82dd-4c71-a95d-847e7cdc3a3e`. 
 
-#### Step 3: Create the necessary files
+#### Step 2: Create files needed for CLI deployment
 
-To deploy the VM you need two files: `vm.json`, describing the VM and the `cloud-init.yaml` configuration file which contains the user data such as password, network, etc.
+To deploy the VM, you need two files: `vm.json`, describing the virtual machine and the `cloud-init.yaml` configuration file that contains user data such as password, network, etc.
 
 Create the `vm.json` file:
 
@@ -362,10 +536,10 @@ Create the `vm.json` file:
 ```
 
 > [!primary]
-> You can adjust the settings with your values as needed: VM name, number of VCPUs, RAM size, disk size etc.
+> You can adjust the parameters with your values, according to your needs: VM name, number of VCPU, RAM size, disk size, etc.
 >
 
-Check `data_source_reference` to ensure the UUID is the actual UUID of your OS image:
+Check `data_source_reference` to ensure that the UUID is the UUID of your system image:
 
 ```json
 "data_source_reference": {
@@ -374,7 +548,7 @@ Check `data_source_reference` to ensure the UUID is the actual UUID of your OS i
                          }
 ```
 
-Verify as well for your subnet UUID:
+Also check your subnet's UUID:
 
 ```json
           "subnet_reference": {
@@ -384,21 +558,24 @@ Verify as well for your subnet UUID:
                               }
 ```
 
-Now you have to create the `cloud-init.yaml` file. This file contains the "user data". When the system boots, these parameters such as users, package, files, etc. will be applied to the VM.
+You now need to create the `cloud-init.yaml` file. This file contains user data. When the system boots, these settings such as users, packets, files, etc. will be applied to the VM.
 
-Below, find a template that you can amend with your values to create your individual VM.
+Below, you will find a template that you can modify with your values to create your individual VM.
+
+> [!primary]
+> You can use the original creation file or use a custom file to create your own gateway. This is what we will see in this example.
+>
 
 > [!primary]
 >
-> - Change "hostname", "fqdn", "name", "passwd", "ssh-autorized-keys" and ip addresses with the desired values.
-> - This file will create the file for netplan, apply the configuration, and initiate a reboot.
+> - Replace the `hostname`, `fqdn`, `name`, `passwd`, `ssh-autorized-keys` and IP addresses with the values you want.
+> - This file creates the file for netplan, applies the configuration, and initializes a reboot.
 > - The password must be a hash value. You can generate it with the command below.
 >
 
 ```bash
 mkpasswd --method=SHA-512 --rounds=4096
 ```
-
 
 ```yaml
 #cloud-config
@@ -432,25 +609,28 @@ runcmd:
    - netplan generate
 ```
 
-#### Step 4: Create the VM 
+#### Step 3: create the VM 
 
-Transform the `cloud-init.yaml` into "base64" and put it into a variable:
+Transform the `cloud-init.yaml` into “base64” and place it in a variable:
 
 ```bash
 USERDATA=$(base64 -w 0 cloud-init.yaml)
 ```
 
-Then replace the chain "USERDATA" in `vm.json` with the value of the `USERDATA` variable in the `vm.json` file:
+Then replace the string “USERDATA” in `vm.json` with the value of the variable `USERDATA` in the `vm.json` file:
 
 ```bash
 sed -i s/USERDATA/${USERDATA}/g vm.json
 ```
 
-Finally, use a cURL request to register and power on the VM:
+Finally, use a cURL query to save and power on the VM:
 
 ```bash
 curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PRISMADMINPASSWORD" -X POST https://fqdn:9440/api/nutanix/v3/vms -d @vm.json | jq .
 ```
+
+> [!primary]
+> Wait a few minutes for the VM to take into account all settings.
 
 ## Go further
 
