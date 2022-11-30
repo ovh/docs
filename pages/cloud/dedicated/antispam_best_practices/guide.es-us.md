@@ -6,7 +6,11 @@ section: Diagnóstico y modo de rescate
 order : 04
 ---
 
-**Última actualización: 15/11/2022**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 30/11/2022**
 
 ## Objetivo
 
@@ -52,7 +56,7 @@ Identifique el problema, solucione y desbloquee la IP.
 - Deje de enviar mensajes de correo electrónico (p. ej.: detener todos los programas de correo (como qmail, Postfix, Sendmail, etc.).
 - Compruebe la cola de espera de los emails (por ejemplo, qmHandle para qmail, postrabo -p para Postfix) y vacídela.
 - Analice sus logs gracias al **Message-ID** presente en la alerta de bloqueo.
-- Si envía spam o mensajes de correo ilegítimos, le recomendamos encarecidamente que resuelva el problema **antes** de desbloquear la dirección IP. Para más información sobre las [buenas prácticas](#bestpractices) de envío de correo electrónico, consulte la segunda parte de esta guía. 
+- Si envía spam o mensajes de correo ilegítimos, le recomendamos encarecidamente que resuelva el problema **antes** de desbloquear la dirección IP. Consulte esta guía para conocer las [mejores prácticas (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices) al enviar correos electrónicos.
 
 Una vez resuelto el problema, puede desbloquear la dirección IP realizando las siguientes acciones.
 
@@ -210,7 +214,7 @@ La dirección IP se está desbloqueando. La operación puede tardar varios minut
 
 ### En caso de falsos positivos
 
-En algunos casos, la alerta de spam puede ser un falso positivo. Si ha comprobado que el **Message-ID** está asociado a un correo electrónico legítimo, debe asegurarse de que sus correos electrónicos cumplen con las [buenas prácticas](#bestpractices).
+En algunos casos, la alerta de spam puede ser un falso positivo. Si ha comprobado que el **Message-ID** está asociado a un correo electrónico legítimo, debe asegurarse de que sus correos electrónicos cumplen con el [RFC (EN)](#rfc) y las [buenas prácticas (EN)](#bestpractices).
 
 ## Más información
   

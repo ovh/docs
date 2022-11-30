@@ -10,7 +10,7 @@ order: 04
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15.11.2022**
+**Letzte Aktualisierung am 30.11.2022**
 
 ## Ziel
 
@@ -57,7 +57,7 @@ Identifizieren Sie die Problemursache, beheben Sie sie und entsperren Sie dann I
 - Beenden Sie den Versand von E-Mails (zum Beispiel: jegliche E-Mail-Software wie qmail, Postfix, Sendmail usw. abschalten).
 - Überprüfen Sie die Warteschlange der E-Mails (zum Beispiel: qmHandle für qmail, postqueue -p für Postfix) und leeren Sie diese.
 - Analysieren Sie Ihre Logs mithilfe der **Message-ID** im Sperralarm.  
-- Wenn Sie den Versand von SPAM oder missbräuchlicher E-Mails bestätigen können, beheben Sie dessen Ursache, **bevor** Sie die IP-Adresse entsperren. Im zweiten Teil dieser Anleitung erfahren Sie mehr über [*Best Practices*](#bestpractices) beim Versand von E-Mails. 
+- Wenn Sie den Versand von SPAM oder missbräuchlicher E-Mails bestätigen können, beheben Sie dessen Ursache, **bevor** Sie die IP-Adresse entsperren. In diesem Leitfaden erfahren Sie mehr über [*best practices* (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices) beim Versand von E-Mails. 
 
 Wenn das Problem gelöst ist, können Sie Ihre IP-Adresse entsperren, indem Sie die folgenden Schritte ausführen.
 
@@ -215,7 +215,7 @@ Die IP-Adresse wird nun entsperrt. Es kann einige Minuten dauern, bis die Operat
 
 ### False Positives
 
-In einigen Fällen kann es sich bei der SPAM-Warnung um einen falschen Alarm handeln. Wenn Sie nachgeprüft und festgestellt haben, dass die **Message-ID** einer legitimen E-Mail zugeordnet ist, stellen Sie sicher, dass Ihre E-Mails den [*Best Practices*](#bestpractices) entsprechen.
+In einigen Fällen kann es sich bei der SPAM-Warnung um einen falschen Alarm handeln. Wenn Sie nachgeprüft und festgestellt haben, dass die **Message-ID** einer legitimen E-Mail zugeordnet ist, stellen Sie sicher, dass Ihre E-Mails den [RFC (EN)](#rfc) und den [*Best Practices* (EN)](#bestpractices) entsprechen.
 
 
 ## Weiterführende Informationen

@@ -6,7 +6,11 @@ section: Diagnostica e modalità Rescue
 order: 04
 ---
 
-**Ultimo aggiornamento: 15/11/2022**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 30/11/2022**
 
 ## Obiettivo
 
@@ -53,7 +57,7 @@ L'operazione consiste nell'identificare il problema, risolverlo e sbloccare il t
 - Fermate l'invio di email (ad esempio: arrestare tutti i client di posta come qmail, Postfix, Sendmail, ecc.)
 - Verifica la coda di attesa delle email (ad esempio qmHandle per qmail, postcoda -p per Postfix) e svuotala.
 - Analizza i tuoi log grazie al **Message-ID** presente nell'alert di blocco.
-- Se invia correttamente SPAM o email illegittime, ti consigliamo vivamente di risolvere il problema **prima** di sbloccare l'indirizzo IP. Per conoscere le [migliori pratiche](#bestpractices) di invio delle email, consulta la seconda sezione di questa guida. 
+- Se invia correttamente SPAM o email illegittime, ti consigliamo vivamente di risolvere il problema **prima** di sbloccare l'indirizzo IP. Consultare questa guida per le [migliori pratiche (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices) di invio delle e-mail.
 
 Una volta risolto il problema, puoi sbloccare il tuo indirizzo IP seguendo gli step successivi.
 
@@ -211,7 +215,7 @@ Lo sblocco dell'indirizzo IP è in corso. L'operazione potrebbe richiedere alcun
 
 ### In caso di falsi positivi
 
-In alcuni casi, l'avviso di spam potrebbe essere un falso positivo. Se avete verificato e trovato che il **Message-ID** è associato a un'e-mail legittima, dovete assicurarvi che le vostre e-mail siano conformi alle [buone pratiche](#bestpractices).
+In alcuni casi, l'avviso di spam potrebbe essere un falso positivo. Se avete verificato e trovato che il **Message-ID** è associato a un'e-mail legittima, dovete assicurarvi che le vostre e-mail siano conformi alle [RFC (EN)](#rfc) e alle [buone pratiche (EN)](#bestpractices).
 
 
 ## Per saperne di più

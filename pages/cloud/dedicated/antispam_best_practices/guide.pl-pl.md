@@ -6,7 +6,11 @@ section: Diagnostyka i tryb Rescue
 order: 04
 ---
 
-**Ostatnia aktualizacja z dnia 15-11-2022**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 30-11-2022**
 
 ## Wprowadzenie
 
@@ -53,7 +57,7 @@ Operacja polega na identyfikacji problemu i jego rozwiązaniu, a następnie odbl
 - Zatrzymaj wysyłkę e-maili (na przykład: zatrzymać wszystkie programy poczty elektronicznej, takie jak qmail, Postfix, Sendmail itp.).
 - Sprawdź kolejkę wiadomości e-mail (np. qmHandle dla qmail, postqueue -p dla Postfix) i wyczyść.
 - Analizuj logi za pomocą **Message-ID** w alercie blokady.
-- Jeśli wysyłasz SPAM lub nieprawidłowe wiadomości e-mail, rekomendujemy rozwiązanie problemu **przed** odblokowaniem adresu IP. W drugiej części niniejszego przewodnika znajdziesz [dobre praktyki](#bestpractices) w zakresie wysyłania e-maili. 
+- Jeśli wysyłasz SPAM lub nieprawidłowe wiadomości e-mail, rekomendujemy rozwiązanie problemu **przed** odblokowaniem adresu IP. Proszę zapoznać się z tym przewodnikiem, aby uzyskać [najlepsze praktyki (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices) w zakresie poczty elektronicznej
 
 Po rozwiązaniu problemu możesz odblokować Destination IP wykonując następujące kroki.
 
@@ -211,7 +215,7 @@ Odblokowanie adresu IP może zająć kilka minut.
 
 ### W przypadku wyników fałszywie dodatnich
 
-W niektórych przypadkach alert antyspamowy może być fałszywie dodatni. Jeśli sprawdzasz i odkryłeś, że **Message-ID** jest przypisany do poprawnego adresu e-mail, upewnij się, że wiadomości e-mail są zgodne z [RFC](#rfc) i [dobrymi praktykami](#bestpractices), o których mowa poniżej.
+W niektórych przypadkach alert antyspamowy może być fałszywie dodatni. Jeśli sprawdzasz i odkryłeś, że **Message-ID** jest przypisany do poprawnego adresu e-mail, upewnij się,  że Twoje wiadomości e-mail są zgodne z [RFC (EN)](#rfc) i [dobrymi praktykami (EN)](#bestpractices).
 
 ## Sprawdź również
  
