@@ -4,6 +4,8 @@ slug: antispam-best-practices
 excerpt: Descubra as nossas boas práticas antisspam e como desbloquear um endereço IP bloqueado para SPAM
 section: Diagnóstico e Modo Rescue
 order: 04
+routes:
+    canonical: 'https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/'
 ---
 
 > [!primary]
