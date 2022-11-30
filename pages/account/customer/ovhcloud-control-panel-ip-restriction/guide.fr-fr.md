@@ -6,7 +6,7 @@ section: Sécurité
 order: 03
 ---
 
-**Dernière mise à jour le 15/11/2022**
+**Dernière mise à jour le 30/11/2022**
 
 ## Objectif
 
@@ -46,7 +46,9 @@ Si vous utilisez un réseau 4G/5G en complément, n'oubliez pas de récupérer �
 
 > [!warning]
 >
-> La plupart des Fournisseurs d'Accès à Internet (FAI) allouent une adresse IP **fixe** à votre point d'accès Internet/box. Néanmoins, certains FAI allouent des adresses IP **dynamiques*. Ces adresses IP dynamiques changent au redémarrage de votre box ou toutes les 24/48 heures.
+> La plupart des Fournisseurs d'Accès à Internet (FAI) allouent une adresse IP **dynamique** à votre point d'accès Internet/box. Ces adresses IP dynamiques changent au redémarrage de votre box ou toutes les 24/48 heures. Néanmoins, certains FAI peuvent vous allouer des adresses IP **fixes** sur demande.
+>
+> Pour une connexion en 3G/4G/5G, les IP sont systématiquement **dynamiques**.
 >
 > **Avant** de mettre en place une restriction par IP sur votre espace client OVHcloud, vérifiez auprès de votre FAI que les adresses IP récupérées précédemment sont bien des adresses IP **fixes**. Dans le cas contraire, vous risqueriez de perdre rapidement l'accès à votre espace client OVHcloud en déclarant une IP dynamique.
 >
