@@ -22,10 +22,10 @@ Poznaj pojęcia związane z tworzeniem rezerw, monitorowaniem oraz testowaniem w
 
 Pojęcie "poziom usługi" jest ważnym elementem oferty Enterprise File Storage. Określa ona osiągalny poziom wydajności dla każdej usługi świadczonej w ramach rezerwy. Wydajność systemu plików jest zazwyczaj zdefiniowana przez kilka elementów: 
 
-- natężenie przepływu; 
-- IOPS (lub liczba operacji wejścia-wyjścia na sekundę);
-- rozmiar bloku;
-- model dostępu sekwencyjnego lub losowego.
+- Natężenie przepływu.
+- IOPS (lub liczba operacji wejścia-wyjścia na sekundę).
+- Rozmiar bloku.
+- Model dostępu sekwencyjnego lub losowego.
 
 Do tej pory Enterprise File Storage zapewnia i gwarantuje wydajność wynoszącą **64 MB/s na TB i 4000 IOPS na TB**. Zapasowe zasoby usług mają więc bezpośredni wpływ na wydajność Twojej usługi.
 
@@ -67,17 +67,15 @@ Przed rozpoczęciem testu upewnij się, że klient używany w tym benchmarku ma 
 
 Narzędzie [FIO](https://github.com/axboe/fio) pozwala na przetestowanie kilku scenariuszy i na zmianę wielu parametrów testowych: 
 
-- liczbę obrazów; 
-- rozmiar obrazów;
-- rozmiar bloku;
-- czas trwania testu; 
-- liczbę FIO workers;
-- model dostępu (odczyt/zapis/sekwencyjny/losowy) itp.
+- Liczbę obrazów.
+- Rozmiar obrazów.
+- Rozmiar bloku.
+- Czas trwania testu.
+- Liczbę FIO workers.
+- Model dostępu (odczyt/zapis/sekwencyjny/losowy) itp.
 
 Więcej informacji znajduje się na stronie [dokumentacja FIO](https://fio.readthedocs.io/en/latest/index.html){.external}.
 
 ## Sprawdź również
 
 Przyłącz się do społeczności naszych użytkowników na Discord: <https://discord.gg/jW2FgBJ72h>
-
-

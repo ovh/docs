@@ -22,10 +22,10 @@ Scopri i concetti di approvvigionamento, monitoraggio e test delle performance d
 
 Il concetto di "livello di servizio" è un elemento importante nell'offerta Enterprise File Storage. Definisce i livelli di prestazioni raggiungibili per ogni servizio fornito. Le prestazioni di un file system sono generalmente definite da diversi elementi: 
 
-- flusso 
-- gli IOPS (o numero di operazioni di entrata-uscita al secondo)
-- dimensioni del blocco;
-- il modello di accesso sequenziale o casuale.
+- Flusso.
+- Gli IOPS (o numero di operazioni di entrata-uscita al secondo).
+- Dimensioni del blocco.
+- Il modello di accesso sequenziale o casuale.
 
 Ad oggi, Enterprise File Storage fornisce e garantisce obiettivi di performance di **64 MB/s per TB e 4000 IOPS per TB**. Le capacità dei servizi provviste hanno quindi un impatto diretto sulle prestazioni disponibili per il tuo servizio.
 
@@ -67,17 +67,15 @@ Prima di iniziare il test, verifica che il cliente utilizzato per questo benchma
 
 Il tool [FIO](https://github.com/axboe/fio) ti permette di testare diversi scenari e modificare numerosi parametri di test: 
 
-- numero di immagini; 
-- la dimensione delle immagini;
-- dimensioni del blocco;
-- la durata del test; 
-- il numero di FIO workers;
-- il modello di accesso (lettura/scrittura/sequenziale/casuale), ecc...
+- Il numero di immagini.
+- La dimensione delle immagini.
+- Dimensioni del blocco.
+- La durata del test.
+- Il numero di FIO workers.
+- Il modello di accesso (lettura/scrittura/sequenziale/casuale), ecc...
 
 Per maggiori informazioni, consulta la [documentazione di FIO](https://fio.readthedocs.io/en/latest/index.html){.external}.
 
 ## Per saperne di più
 
 Contatta la nostra Community di utenti su Discord: <https://discord.gg/jW2FgBJ72h>
-
-

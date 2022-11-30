@@ -22,10 +22,10 @@ Descubra los conceptos relacionados con el aprovisionamiento, el seguimiento y l
 
 El concepto de "nivel de servicio" es un elemento importante de la solución Enterprise File Storage. Establece los niveles de rendimiento alcanzables para cada servicio aprovisionado. El rendimiento de un sistema de archivos suele definirse por varios elementos: 
 
-- tasa de bits 
-- las IOPS (o número de operaciones de entrada-salida por segundo);
-- el tamaño de bloque;
-- el modelo de acceso secuencial o aleatorio.
+- Tasa de bits.
+- Las IOPS (o número de operaciones de entrada-salida por segundo).
+- El tamaño de bloque.
+- El modelo de acceso secuencial o aleatorio.
 
 A día de hoy, Enterprise File Storage proporciona y garantiza objetivos de rendimiento de **64 MB/s por TB y 4000 IOPS por TB**. La capacidad aprovisionada de los servicios tiene, por tanto, un impacto directo en el rendimiento disponible para su servicio.
 
@@ -67,17 +67,15 @@ Antes de iniciar el test, compruebe que el cliente utilizado para este benchmark
 
 La herramienta [FIO](https://github.com/axboe/fio) le permite probar varios escenarios y modificar numerosos parámetros de prueba: 
 
-- el número de imágenes; 
-- el tamaño de las imágenes;
-- el tamaño de bloque;
-- la duración del test; 
-Número de FIO workers
-- el modelo de acceso (lectura/escritura/secuencial/aleatoria), etc.
+- El número de imágenes.
+- El tamaño de las imágenes.
+- El tamaño de bloque.
+- La duración del test.
+- El número de FIO workers.
+- El modelo de acceso (lectura/escritura/secuencial/aleatoria), etc.
 
 Más información sobre [la documentación de FIO](https://fio.readthedocs.io/en/latest/index.html) {.external}.
 
 ## Más información
 
 Interactúe con nuestra comunidad de usuarios en Discord : <https://discord.gg/jW2FgBJ72h>
-
-

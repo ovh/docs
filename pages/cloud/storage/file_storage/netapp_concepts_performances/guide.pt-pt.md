@@ -22,10 +22,10 @@ Descubra os conceitos relacionados com o aprovisionamento, o acompanhamento e o 
 
 A noção de "nível de serviço" é um elemento importante da oferta Enterprise File Storage. Define os níveis de desempenho alcançáveis para cada serviço provisionado. O desempenho de um sistema de ficheiros é geralmente definido por vários elementos: 
 
-- o débito; 
-- IOPS (ou número de operações de entrada-saída por segundo);
-- o tamanho do bloco;
-- o modelo de acesso sequencial ou aleatório.
+- O débito.
+- IOPS (ou número de operações de entrada-saída por segundo).
+- O tamanho do bloco.
+- O modelo de acesso sequencial ou aleatório.
 
 Atualmente, o Enterprise File Storage fornece e garante objetivos de desempenho de **64 MB/s por To e 4000 IOPS por To**. As capacidades provisionadas dos serviços têm assim um impacto direto sobre as performances disponíveis para o seu serviço.
 
@@ -67,17 +67,15 @@ Antes de iniciar o teste, verifique se o cliente utilizado para este benchmark t
 
 A ferramenta [FIO](https://github.com/axboe/fio) permite-lhe testar vários cenários e modificar vários parâmetros de teste: 
 
-- o número de imagens; 
-- o tamanho das imagens;
-- o tamanho do bloco;
-- a duração do teste; 
-- o número de FIO workers;
-- o modelo de acesso (leitura/escrita/sequencial/aleatório), etc.
+- O número de imagens.
+- O tamanho das imagens.
+- O tamanho do bloco.
+- O duração do teste. 
+- O número de FIO workers.
+- O modelo de acesso (leitura/escrita/sequencial/aleatório), etc.
 
 Encontre mais informações sobre [a documentação do FIO](https://fio.readthedocs.io/en/latest/index.html){.external}.
 
 ## Quer saber mais?
 
 Fale com a nossa comunidade de utilizadores no Discord: <https://discord.gg/jW2FgBJ72h>
-
-
