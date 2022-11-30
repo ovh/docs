@@ -164,11 +164,11 @@ In our case, the exact cURL code is:
     -H "Authorization: Bearer WixOC/dmSoK3d0YSd20UvLMzbSVxMTMosnz6FcBQOQDlqxAsR5BezCVKtYfu18e"
     --header 'Content-Type: application/json'
     --data ' "Elea" '
- ```
+```
 
  Giving us
 
- ```bash
+```bash
  "Hello Elea. Congratulations, you have launched your first AI App!"
 ```
 

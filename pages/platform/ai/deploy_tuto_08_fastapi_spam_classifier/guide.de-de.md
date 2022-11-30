@@ -19,7 +19,7 @@ routes:
 
 ## Objective
 
-The objective of this tutorial is to deploy an API for **Spam classification***.
+The objective of this tutorial is to deploy an API for **Spam classification**.
 
 The use case is the [Spam Ham Collection Dataset](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection).
 
