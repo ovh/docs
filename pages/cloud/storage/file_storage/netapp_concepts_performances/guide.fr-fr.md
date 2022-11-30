@@ -27,7 +27,7 @@ A ce jour, Enterprise File Storage fournit et garantit des objectifs de performa
 
 Cette information est importante lorsque vous concevez votre architecture de stockage. Prenons trois exemples pour l’illustrer :
 
-- **Exemple n°1** : votre application nécessite un débit théorique d’environ **430 Mo/s**. Pour cela, vous devez provisionner au moins **7 To** de stockage. En effet, un rapide calcul (**450/64 = 6,72**) permet d’estimer la capacité minimale nécessaire pour atteindre ce débit.
+- **Exemple n°1** : votre application nécessite un débit théorique d’environ **430 Mo/s**. Pour cela, vous devez provisionner au moins **7 To** de stockage. En effet, un rapide calcul (**430/64 = 6,72**) permet d’estimer la capacité minimale nécessaire pour atteindre ce débit.
 
 - **Exemple n°2** : votre infrastructure nécessite **4500 IOPS** et un volume de données de **1 To**. Pour cela, vous devez provisionner **2 To** pour obtenir les **4500 IOPS nécessaires**. Plus spécifiquement dans ce cas, vous bénéficierez de **8000 IOPS** sur la capacité provisionnée. Il s’agit donc de sur-provisionner votre service afin d’assurer le niveau de performances souhaité.
 
