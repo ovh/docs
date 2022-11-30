@@ -149,7 +149,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 For [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below:
 
 ```console
-198.51.100.0  Reserved: Network address
+198.51.100.0   Reserved: Network address
 198.51.100.1   First usable IP
 198.51.100.2   Reserved: Network gateway
 198.51.100.3   Reserved: Network broadcast
@@ -282,7 +282,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 ![Additional IP](images/check_subnet0.png){.thumbnail}
 
 > [!primary]
-> The following instructions will use the IP block 123.45.6.78/30 as an example.
+> The following instructions will use the IP block 198.51.100.0/30 as an example.
 >
 
 When using the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}, the first, penultimate, and last addresses in a given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below:

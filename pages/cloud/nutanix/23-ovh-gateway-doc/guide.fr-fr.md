@@ -6,7 +6,7 @@ section: Réseau et sécurité
 order: 03
 ---
 
-**Dernière mise à jour le 02/05/2022**
+**Dernière mise à jour le 30/11/2022**
 
 ## Objectif
 
@@ -279,7 +279,7 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 ![Additional IP](images/check_subnet0.png){.thumbnail}
 
 > [!primary]
-> Les instructions suivantes vont utiliser le bloc IP 123.45.6.78/30 à titre d'exemple.
+> Les instructions suivantes vont utiliser le bloc IP 198.51.100.0/30 à titre d'exemple.
 >
 
 Dans le cadre d'une utilisation du [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}, la première adresse, l'avant-dernière et la dernière adresse d'un bloc IP donné sont toujours réservées respectivement à l'adresse réseau, à la passerelle réseau et au broadcast du réseau. Cela signifie que la première adresse utilisable est la seconde adresse du bloc, comme indiqué ci-dessous :
