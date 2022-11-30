@@ -23,8 +23,12 @@ OVHgateway is the name of the outgoing point of your cluster to the internet.
 The VM is based on Ubuntu 18.04.5 LTS (Bionic).
 OVHgateway has a lightweight design, using 2 NICs, 1 vCPU, 1 GB memory and a 11 GiB disk.
 
-`ens3` is the interface for the external network and owns the Failover IP address.<br>
-`ens4` is the interface for the internal network.
+> [!primary]
+> This virtual machine cannot be managed, but you can replace it with another AHV-compatible network operating system as described in this guide [OVHgateway replacement](https://docs.ovh.com/en/gb/nutanix/software-gateway-replacement/).
+>
+
+`ens3` is the interface for the external network and owns the Failover IP address in the subnet **base** with VLAN 0.<br>
+`ens4` is the interface for the internal network in the subnet **infra** with VLAN 1.
 
 OVHcloud teams have customised the VM with an *IPTABLES* script.
 
@@ -88,16 +92,16 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 ![ip failover](images/check_subnet0.png){.thumbnail}
 
 > [!primary]
-> The following instructions will use the IP block 123.45.6.78/30 for example purposes.
+> The following instructions will use the IP block 198.51.100.0/30 for example purposes.
 >
 
 For [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below:
 
 ```console
-123.45.6.76   Reserved: Network address
-123.45.6.77   First usable IP
-123.45.6.78   Reserved: Network gateway
-123.45.6.79   Reserved: Network broadcast
+198.51.100.0  Reserved: Network address
+198.51.100.1   First usable IP
+198.51.100.2   Reserved: Network gateway
+198.51.100.3   Reserved: Network broadcast
 ```
 
 ##### **Check the private subnet or gateway private IP address**
@@ -231,9 +235,9 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
 {
   "api_version": "3.1",
   "metadata": {
-    "total_matches": 1,
+    "total_matches": 3,
     "kind": "subnet",
-    "length": 1,
+    "length": 3,
     "offset": 0
   },
   "entities": [
@@ -244,13 +248,16 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
         "resources": {
           "vswitch_name": "br0",
           "subnet_type": "VLAN",
-          "virtual_switch_uuid": "1e9520a5-1d04-4857-8a32-4a09e923a688",
-          "vlan_id": 0
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
+          "vlan_id": 0,
+          "ip_usage_stats": {
+            "num_macs": 2
+          }
         },
         "cluster_reference": {
           "kind": "cluster",
-          "name": "uppercase",
-          "uuid": "0005d309-53ab-cfbb-6330-0c42a114b058"
+          "name": "cluster-xxxx.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
         }
       },
       "spec": {
@@ -258,30 +265,78 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
         "resources": {
           "vswitch_name": "br0",
           "subnet_type": "VLAN",
-          "virtual_switch_uuid": "1e9520a5-1d04-4857-8a32-4a09e923a688",
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
           "vlan_id": 0
         },
         "cluster_reference": {
           "kind": "cluster",
-          "name": "uppercase",
-          "uuid": "0005d309-53ab-cfbb-6330-0c42a114b058"
+          "name": "cluster-xxxx.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
         }
       },
       "metadata": {
-        "last_update_time": "2021-12-13T18:00:22Z",
+        "last_update_time": "2022-11-25T13:09:43Z",
         "kind": "subnet",
-        "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e",
+        "uuid": "3652d420-9f94-4350-8af7-b921d0761781",
         "spec_version": 0,
-        "creation_time": "2021-12-13T18:00:22Z",
+        "creation_time": "2022-11-25T13:09:43Z",
+        "spec_hash": "00000000000000000000000000000000000000000000000000",
         "categories_mapping": {},
         "categories": {}
       }
-    }
-  ]
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "infra",
+        "resources": {
+          "vswitch_name": "br0",
+          "subnet_type": "VLAN",
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
+          "vlan_id": 1,
+          "ip_usage_stats": {
+            "num_macs": 4
+          }
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "cluster-xxxx.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
+        }
+      },
+      "spec": {
+        "name": "infra",
+        "resources": {
+          "vswitch_name": "br0",
+          "subnet_type": "VLAN",
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
+          "vlan_id": 1
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "cluster-xxxx.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2022-11-25T13:09:43Z",
+        "kind": "subnet",
+        "uuid": "e60826da-4aab-4810-b7d3-0604a3e16719",
+        "spec_version": 0,
+        "creation_time": "2022-11-25T13:09:43Z",
+        "spec_hash": "00000000000000000000000000000000000000000000000000",
+        "categories_mapping": {},
+        "categories": {}
+      }
+    },
+   ]
 }
 ```
 
-In the metadata you can find the UUID, in this case: `4676d823-82dd-4c71-a95d-847e7cdc3a3e`.
+the result of the query returns the configuration of the subnets. You will need to find the UUIDs of these subnets, which are located below ``kind`: `subnet` in the `uuid` variable as in this example:
+
+* `3652d420-9f94-4350-8af7-b921d0761781` for VLAN **base** on VLAN 0
+* `e60826da-4aab-4810-b7d3-0604a3e16719` for VLAN **infra** on VLAN 1
 
 #### Step 3: Create the necessary files
 
@@ -325,7 +380,7 @@ Create the `vm.json` file:
           "subnet_reference": {
             "kind": "subnet",
             "name": "base",
-            "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e"
+            "uuid": "3652d420-9f94-4350-8af7-b921d0761781"
           },
           "is_connected": true
         },
@@ -338,8 +393,8 @@ Create the `vm.json` file:
           ],
           "subnet_reference": {
             "kind": "subnet",
-            "name": "base",
-            "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e"
+            "name": "infra",
+            "uuid": "e60826da-4aab-4810-b7d3-0604a3e16719"
           },
           "is_connected": true
         }
@@ -372,13 +427,21 @@ Check `data_source_reference` to ensure the UUID is the actual UUID of your OS i
                          }
 ```
 
-Verify as well for your subnet UUID:
+Also check the UUID of your subnets :
 
 ```json
           "subnet_reference": {
             "kind": "subnet",
             "name": "base",
-            "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e"
+            "uuid": "3652d420-9f94-4350-8af7-b921d0761781"
+                              }
+```
+
+```json
+          "subnet_reference": {
+            "kind": "subnet",
+            "name": "infra",
+            "uuid": "e60826da-4aab-4810-b7d3-0604a3e16719"
                               }
 ```
 
@@ -423,7 +486,7 @@ write_files:
                 nameservers:
                   addresses: [213.186.33.99]
               ens4:
-                addresses: [192.168.0.254]
+                addresses: [192.168.0.254/24]
 
 
 runcmd:

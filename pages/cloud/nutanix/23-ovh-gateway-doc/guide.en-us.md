@@ -23,6 +23,11 @@ OVHgateway is the name of the outgoing point of your cluster to the internet.
 The VM is based on Ubuntu 18.04.5 LTS (Bionic).
 OVHgateway has a lightweight design, using 2 NICs, 1 vCPU, 1 GB memory and a 11 GiB disk.
 
+> [!primary]
+> This virtual machine cannot be managed, but you can replace it with another AHV-compatible network operating system as described in this guide [OVHgateway replacement](https://docs.ovh.com/en/gb/nutanix/software-gateway-replacement/)
+>
+
+
 `ens3` is the interface for the external network and owns the Failover IP address.<br>
 `ens4` is the interface for the internal network.
 

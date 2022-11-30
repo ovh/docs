@@ -6,7 +6,7 @@ section: Réseau et sécurité
 order: 03
 ---
 
-**Dernière mise à jour le 29/11/2022**
+**Dernière mise à jour le 30/11/2022**
 
 ## Objectif
 
@@ -20,15 +20,15 @@ order: 03
 
 #### Informations générales
 
+La VM est basée sur Ubuntu 18.04.5 LTS (Bionic).
+La passerelle OVHgateway a un design léger, avec 2 NICs, 1 vCPU, 1 GB de mémoire et 11 GiB d'espace-disque.
+
 > [!primary]
 > Cette machine virtuelle n'est pas administrable, mais vous pouvez la remplacer par un autre système d'exploitation réseau compatible avec AHV comme indiqué dans ce guide [Remplacement de l'OVHgateway](https://docs.ovh.com/fr/nutanix/software-gateway-replacement/).
 >
 
-La VM est basée sur Ubuntu 18.04.5 LTS (Bionic).
-La passerelle OVHgateway a un design léger, avec 2 NICs, 1 vCPU, 1 GB de mémoire et 11 GiB d'espace-disque.
-
-`ens3` est l'interface pour le réseau externe et possède l'adresse IP Failover.<br>
-`ens4` est l'interface pour le réseau interne.
+`ens3` est l'interface pour le réseau externe et possède l'adresse IP Failover dans le sous-réseau **base** avec le VLAN 0. <br>
+`ens4` est l'interface pour le réseau interne dans le sous-réseau **infra** avec le VLAN 1 
 
 Les équipes OVHcloud ont personnalisé la VM avec un script *IPTABLES*.
 
@@ -93,16 +93,16 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 ![ip failover](images/check_subnet0.png){.thumbnail}
 
 > [!primary]
-> Les instructions suivantes vont utiliser le bloc IP 123.45.6.78/30 à titre d'exemple.
+> Les instructions suivantes vont utiliser le bloc IP 198.51.100.0/30 à titre d'exemple.
 >
 
 Dans le cadre d'une utilisation du [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}, la première adresse, l'avant-dernière et la dernière adresse d'un bloc IP donné sont toujours réservées respectivement à l'adresse réseau, à la passerelle réseau et au broadcast du réseau. Cela signifie que la première adresse utilisable est la seconde adresse du bloc, comme indiqué ci-dessous :
 
 ```console
-123.45.6.76   Reserved: Network address
-123.45.6.77   First usable IP
-123.45.6.78   Reserved: Network gateway
-123.45.6.79   Reserved: Network broadcast
+198.51.100.0  Reserved: Network address
+198.51.100.1  First usable IP
+198.51.100.2  Reserved: Network gateway
+198.51.100.3  Reserved: Network broadcast
 ```
 
 ##### **Vérifier l'adresse IP privée du sous-réseau ou de la passerelle privée**
@@ -257,7 +257,7 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
         },
         "cluster_reference": {
           "kind": "cluster",
-          "name": "cluster-1444.nutanix.ovh.net",
+          "name": "cluster-xxxx.nutanix.ovh.net",
           "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
         }
       },
@@ -271,7 +271,7 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
         },
         "cluster_reference": {
           "kind": "cluster",
-          "name": "cluster-1444.nutanix.ovh.net",
+          "name": "cluster-xxxx.nutanix.ovh.net",
           "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
         }
       },
@@ -301,7 +301,7 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
         },
         "cluster_reference": {
           "kind": "cluster",
-          "name": "cluster-1444.nutanix.ovh.net",
+          "name": "cluster-xxxx.nutanix.ovh.net",
           "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
         }
       },
@@ -315,7 +315,7 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
         },
         "cluster_reference": {
           "kind": "cluster",
-          "name": "cluster-1444.nutanix.ovh.net",
+          "name": "cluster-xxxx.nutanix.ovh.net",
           "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
         }
       },
@@ -334,7 +334,7 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
 }
 ```
 
-le résultat de la requette restapi vous renvoie la configuration des sous-réseaux il faut relevez les UUID de ces sous réseaux qui se trouvent en dessous de `"kind": "subnet"` dans la variable "uuid" comme ici par exemple : 
+le résultat de la requette vous renvoie la configuration des sous-réseaux il faut relevez les UUID de ces sous réseaux qui se trouvent en dessous de `"kind": "subnet"` dans la variable "uuid" comme ici par exemple : 
 
  * `3652d420-9f94-4350-8af7-b921d0761781` pour le VLAN **base** sur le VLAN 0  
  * `e60826da-4aab-4810-b7d3-0604a3e16719` pour le VLAN **infra** sur le VLAN 1
@@ -484,12 +484,12 @@ write_files:
            renderer: networkd
            ethernets:
               ens3:
-                addresses: [123.45.6.77/30]
-                gateway4: 123.45.6.78
+                addresses: [198.51.100.1/30]
+                gateway4: 198.51.100.2
                 nameservers:
                   addresses: [213.186.33.99]
               ens4:
-                addresses: [192.168.0.254]
+                addresses: [192.168.0.254/30]
 
 
 runcmd:
