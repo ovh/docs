@@ -10,7 +10,7 @@ order:
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous permettre de créer vos premiers contenus avec le CMS WordPress, les organiser, les mettre en ligne et changer le thème de votre site.
+Ce tutoriel a pour objectif de vous permettre de créer vos premiers contenus avec le CMS [WordPress](https://wordpress.org/), les organiser, les mettre en ligne et changer le thème de votre site.
 
 ## Prérequis
 
