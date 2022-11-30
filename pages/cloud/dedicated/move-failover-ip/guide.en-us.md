@@ -10,7 +10,7 @@ order: 7
 
 > [!primary]
 >
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en/network/additional-ip/). This has no further impact on any of its features or the functioning of your services.
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en/network/additional-ip/). This renaming has no effect on its technical features or the functioning of your services.
 >
 
 
