@@ -31,7 +31,7 @@ Enterprise File Storage bietet und garantiert Leistungsziele von **64 MB/s pro T
 
 Diese Information ist wichtig, wenn Sie Ihre Storage-Architektur entwerfen. Nehmen wir drei Beispiele:
 
-- **Beispiel Nr. 1**: Ihre Anwendung benötigt einen theoretischen Durchsatz von etwa **430 MB/s**. Hierfür müssen Sie mindestens **7 TB** Storage bereitstellen. Eine schnelle Berechnung (**450/64 = 6,72**) ermöglicht die Schätzung der Mindestkapazität, die erforderlich ist, um diesen Durchsatz zu erreichen.
+- **Beispiel Nr. 1**: Ihre Anwendung benötigt einen theoretischen Durchsatz von etwa **430 MB/s**. Hierfür müssen Sie mindestens **7 TB** Storage bereitstellen. Eine schnelle Berechnung (**430/64 = 6,72**) ermöglicht die Schätzung der Mindestkapazität, die erforderlich ist, um diesen Durchsatz zu erreichen.
 
 - **Beispiel Nr. 2**: Ihre Infrastruktur benötigt **4500 IOPS** und ein Datenvolumen von **1 TB**. Hierfür müssen Sie **2 TB** reservieren, um die notwendigen **4500 IOPS zu erhalten**. In diesem Fall verfügen Sie über **8000 IOPS** über die im Voraus bereitgestellte Kapazität. Es geht also darum, Ihren Dienst zu überbieten, um die gewünschte Performance zu gewährleisten.
 

@@ -27,7 +27,7 @@ To date, Enterprise File Storage provides and guarantees performance targets of 
 
 This information is important when you design your storage architecture. Let’s take three examples to illustrate it:
 
-- **Example 1**: your application needs a theoretical bandwidth of about **430 MB/s**. To do this, you need to provision at least **7 TB** of storage. Indeed, a quick calculation (**450/64 = 6.72**) allows to estimate the minimum capacity needed to achieve this flow.
+- **Example 1**: your application needs a theoretical bandwidth of about **430 MB/s**. To do this, you need to provision at least **7 TB** of storage. Indeed, a quick calculation (**430/64 = 6.72**) allows to estimate the minimum capacity needed to achieve this flow.
 
 - **Example 2**: your infrastructure requires **4500 IOPS** and a data volume of **1 TB**. To do this, you need to provision **2 TB** to get the **required 4500 IOPS**. Specifically, you will get **8000 IOPS** on provisioned capacity. This involves overprovisioning your service to ensure the level of performance you want.
 

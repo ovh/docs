@@ -31,7 +31,7 @@ Atualmente, o Enterprise File Storage fornece e garante objetivos de desempenho 
 
 Esta informação é importante quando desenvolve a sua arquitetura de armazenamento. Vejamos três exemplos:
 
-- **Exemplo n°1**: a sua aplicação necessita de um débito teórico de cerca de **430 MB/s**. Para isso, deve aprovisionar pelo menos **7 TB** de armazenamento. Com efeito, um cálculo rápido (**450/64 = 6,72**) permite estimar a capacidade mínima necessária para atingir este caudal.
+- **Exemplo n°1**: a sua aplicação necessita de um débito teórico de cerca de **430 MB/s**. Para isso, deve aprovisionar pelo menos **7 TB** de armazenamento. Com efeito, um cálculo rápido (**430/64 = 6,72**) permite estimar a capacidade mínima necessária para atingir este caudal.
 
 - **Exemplo n°2**: a sua infraestrutura requer **4500 IOPS** e um volume de dados de **1 TB**. Para isso, é necessário aprovisionar ***2 TB** para obter os **4500 IOPS necessários**. Mais especificamente neste caso, beneficiará de **8000 IOPS** sobre a capacidade provisionada. Trata-se de aprovisionar o seu serviço de forma a assegurar o nível de desempenho desejado.
 

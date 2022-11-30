@@ -31,7 +31,7 @@ Ad oggi, Enterprise File Storage fornisce e garantisce obiettivi di performance 
 
 Questa informazione è importante quando progettate l'architettura di storage. Prendiamo tre esempi per illustrarlo:
 
-- **Esempio n. 1**: la tua applicazione richiede un flusso teorico di circa **430 MB/s**. Per effettuare questa operazione è necessario disporre di almeno **7 TB** di storage. Infatti, un rapido calcolo (**450/64 = 6,72**) permette di stimare la capacità minima necessaria per raggiungere tale flusso.
+- **Esempio n. 1**: la tua applicazione richiede un flusso teorico di circa **430 MB/s**. Per effettuare questa operazione è necessario disporre di almeno **7 TB** di storage. Infatti, un rapido calcolo (**430/64 = 6,72**) permette di stimare la capacità minima necessaria per raggiungere tale flusso.
 
 - **Esempio n°2**: la tua infrastruttura richiede **4500 IOPS** e un volume di dati di **1 TB**. Per effettuare questa operazione è necessario disporre **2 TB** per ottenere **4500 IOPS necessari**. In particolare, usufruisci di **8000 IOPS** sulla capacità attivata. Per garantire il livello di prestazioni desiderato, è necessario sovrintendere il servizio.
 

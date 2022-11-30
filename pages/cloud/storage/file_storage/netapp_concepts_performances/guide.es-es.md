@@ -31,7 +31,7 @@ A día de hoy, Enterprise File Storage proporciona y garantiza objetivos de rend
 
 Esta información es importante al diseñar la arquitectura de almacenamiento. Veamos tres ejemplos:
 
-- **Ejemplo n°1**: su aplicación necesita una tasa de transferencia teórica de aproximadamente **430 MB/s**. Para ello, debe aprovisionar al menos **7 TB** de almacenamiento. En efecto, un rápido cálculo (**450/64 = 6,72**) permite estimar la capacidad mínima necesaria para alcanzar este caudal.
+- **Ejemplo n°1**: su aplicación necesita una tasa de transferencia teórica de aproximadamente **430 MB/s**. Para ello, debe aprovisionar al menos **7 TB** de almacenamiento. En efecto, un rápido cálculo (**430/64 = 6,72**) permite estimar la capacidad mínima necesaria para alcanzar este caudal.
 
 - **Ejemplo n°2**: su infraestructura necesita **4500 IOPS** y un volumen de datos de **1 TB**. Para ello, debe aprovisionar **2 TB** para obtener las **4500 IOPS necesarias**. Más específicamente en este caso, disfrutará de **8000 IOPS** sobre la capacidad aprovisionada. Por lo tanto, el objetivo es recargar el servicio para garantizar el nivel de rendimiento deseado.
 

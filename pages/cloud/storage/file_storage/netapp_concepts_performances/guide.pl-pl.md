@@ -31,7 +31,7 @@ Do tej pory Enterprise File Storage zapewnia i gwarantuje wydajność wynosząc�
 
 Informacja ta jest ważna w przypadku architektury przestrzeni dyskowej. Przytoczmy trzy przykłady:
 
-- **Przykład nr 1**: Twoja aplikacja wymaga teoretycznego pobrania około **430 MB/s**. W tym celu należy zapewnić co najmniej **7 TB** przestrzeń dyskową. Szybkie obliczenie (**450/64 = 6,72**) pozwala bowiem na oszacowanie minimalnej zdolności przepustowej niezbędnej do osiągnięcia takiego przepływu.
+- **Przykład nr 1**: Twoja aplikacja wymaga teoretycznego pobrania około **430 MB/s**. W tym celu należy zapewnić co najmniej **7 TB** przestrzeń dyskową. Szybkie obliczenie (**430/64 = 6,72**) pozwala bowiem na oszacowanie minimalnej zdolności przepustowej niezbędnej do osiągnięcia takiego przepływu.
 
 - **Przykład nr 2**: Twoja infrastruktura wymaga **4500 IOPS** i ilości danych **1 TB**. W tym celu należy zapewnić zapasy **2 TB**, aby otrzymać **niezbędne 4500 IOPS**. W tym przypadku skorzystasz z **8000 IOPS** w przypadku wykorzystania dodatkowej pojemności. Chodzi zatem o nadmierne dostarczanie usługi, aby zapewnić pożądany poziom wydajności.
 
