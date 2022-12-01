@@ -47,7 +47,7 @@ If you are not familiar with the code in the different languages mentioned, you 
 
 To create a web page, start by writing your source code from one of the three languages mentioned above into a file. Here are their main extension names: *.html" (for your HTML files), *.css* (for your CSS files), *.js* (for your JavaScript files).
 
-Files can be written in text editors, including those available by default on your operating system (notebook, TextEdit). Many free Open Source solutions offer additional features: [Notepad++](https://notepad-plus-plus.org/), [Brackets](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) or [microphone](https://micro-editor.github.io/). You can also use an IDE (Integrated Development Environment) such as [Visual Studio Code](https://code.visualstudio.com/) or [Geany](https://www.geany.org/).
+Files can be written in text editors, including those available by default on your operating system (notebook, TextEdit). Many free Open Source solutions offer additional features: [Notepad++](https://notepad-plus-plus.org/), [Brackets](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) or [Micro](https://micro-editor.github.io/). You can also use an IDE (Integrated Development Environment) such as [Visual Studio Code](https://code.visualstudio.com/) or [Geany](https://www.geany.org/).
 
 To view and adjust your pages before they are placed on your hosting plan, use your web browser. To do this, open your file from its local location directly on your browser.
 
