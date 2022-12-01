@@ -6,7 +6,7 @@ section: 'Automated tasks (CRON)'
 order: 01
 ---
 
-**Last updated 1th December 2022**
+**Last updated 1st December 2022**
 
 ## Objective
 
