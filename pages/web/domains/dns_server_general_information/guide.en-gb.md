@@ -6,7 +6,7 @@ section: 'DNS and DNS Zone'
 order: 01
 ---
 
-**Last updated 18th February 2021**
+**Last updated 1st December 2022**
 
 ## Objective
 
