@@ -4,8 +4,6 @@ slug: antispam-best-practices
 excerpt: Come sbloccare un indirizzo IP bloccato per SPAM
 section: Diagnostica e modalità Rescue
 order: 04
-routes:
-    canonical: 'https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/'
 ---
 
 > [!primary]

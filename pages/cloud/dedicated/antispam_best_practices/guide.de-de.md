@@ -2,10 +2,8 @@
 title: OVHcloud AntiSpam - Best Practices und Entsperren einer IP-Adresse
 slug: antispam-best-practices
 excerpt: Erfahren Sie hier unsere AntiSpam-Maßnahmen und wie Sie eine gesperrte IP-Adresse freigeben können
-section: Diagnose & Rescue Modus
+section: Diagnose & Rescue Modus
 order: 04
-routes:
-    canonical: 'https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/'
 ---
 
 > [!primary]
