@@ -234,13 +234,12 @@ iptables -I INPUT -i ethX -p tcp --dport 53 -j ACCEPT
 ```
 
 
-
 | étape | mode LEGACY | mode UEFI |
 |---|---|---|
 |1|boot en PXE|Boot en PXE|
 |2|requête vers DHCP|requête vers DHCP|
 |3|réponse/attribution IP|réponse/attribution IP|
-|4|requête pour récuperer le binaire PXE|requête pour récuperer le binaire iPXE|
+|4|requête pour récuperer le binaire iPXE|requête pour récuperer le binaire iPXE|
 |5|récupération du binaire en TFTP|récupération du binaire en TFTP|
 |6|chargement et initialisation|chargement et initialisation|
 |7|requête DHCP pour récupérer le script associé au binaire|requête DHCP pour récupérer le script associé au binaire|
@@ -248,10 +247,11 @@ iptables -I INPUT -i ethX -p tcp --dport 53 -j ACCEPT
 |9|éxécution de commandes shell PXE|éxécution de commande shell iPXE|
 |10|commande `boot` lancée|commandes shell pour récuperer en HTTP les sources pour le bootloader rEFInd|
 |11|fallback réalisé sur les disques locaux détectés|commande shell pour charger le binaire rEFInd ainsi que son fichier de config|
-|12|chargement du systeme d'exploitation installé sur disques locaux|le binaire rEFInd scanne les disques locaux pour charger/detecter les systèmes d'amorçages |
-|13|Système démarré |rEFInd utilise les amorçages présents|
-|14||chargement du systeme d'exploitation installé sur disques locaux|
+|12|chargement du systeme d'exploitation installé|le binaire rEFInd scanne les disques locaux pour charger/détecter les systèmes d'amorçages |
+|13|Système démarré |rEFInd utilise les secteurs d'amorçages présents|
+|14||chargement du système d'exploitation associé|
 |15||Système démarré|
+
 
 
 
