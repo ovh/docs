@@ -32,7 +32,7 @@ Lors de l'installation de votre CMS en 1-clic, vous avez reçu un mail contenant
 
 Rendez-vous sur le lien qui vous a été communiqué par mail lors de l'installation. Par défaut, l'URL pour accéder à l'interface ser termine par `wp-admin`&nbsp;:
 
-![WordPress - Admin login](images/wordpress_first_steps%5B1%5D.png)
+![WordPress - Admin login](images/wordpress_first_steps%5B1%5D.png){.thumbnail}
 
 > [!warning]
 > 
@@ -40,7 +40,7 @@ Rendez-vous sur le lien qui vous a été communiqué par mail lors de l'installa
 
 Saisissez le login (ou «&nbsp;Nom de l'administrateur&nbsp;») qui vous a été fourni par mail et le mot de passe dans le lien «&nbsp;Mot de passe WordPress&nbsp;:» dans le même document. Vous arrivez alors sur votre Dashbord (tableau de bord)&nbsp;:
 
-![WordPress - Dashboard](images/wordpress_first_steps%5B2%5D.png)
+![WordPress - Dashboard](images/wordpress_first_steps%5B2%5D.png){.thumbnail}
 
 ### Changez le thème de votre site WordPress
 
@@ -48,11 +48,11 @@ Les **thèmes** WordPress sont des ensembles de fichiers qui vont vous permettre
 
 Pour modifier votre thème, dans le menu de gauche de votre Tableau de bord, allez dans «&nbsp;Apparence&nbsp;» puis «&nbsp;Thèmes&nbsp;»&nbsp;:
 
-![WordPress - Appearance/Themes](images/wordpress_first_steps%5B3%5D.png)
+![WordPress - Appearance/Themes](images/wordpress_first_steps%5B3%5D.png){.thumbnail}
 
 Choisissez alors un thème parmi ceux proposés et cliquez sur «&nbsp;Activer&nbsp;» (Activate)&nbsp;:
 
-![WordPress - Appearance/Themes](images/wordpress_first_steps%5B4%5D.png)
+![WordPress - Appearance/Themes](images/wordpress_first_steps%5B4%5D.png){.thumbnail}
 
 Vous pouvez constater le résultat en allant sur votre site web.
 
