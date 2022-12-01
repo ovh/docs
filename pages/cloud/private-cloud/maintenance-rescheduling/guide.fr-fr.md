@@ -5,7 +5,7 @@ slug: maintenance-rescheduling
 section: Fonctionnalités OVHcloud
 ---
 
-**Dernière mise à jour le 29/11/2022**
+**Dernière mise à jour le 30/11/2022**
 
 ## Objectif
 
@@ -21,14 +21,16 @@ Lorsqu'une maintenance est programmée sur votre Hosted Private Cloud, un e-mail
 ## Prérequis
 
 - Avoir reçu un e-mail de notification de maintenance indiquant spécifiquement que vous pouvez « **modifier la date d'exécution de la maintenance** ». Dans le cas contraire, la date de la maintenance ne peut pas être modifiée.
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Être contact administrateur ou technique de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)) ou à l'[interface d'administration de vos services par API](https://eu.api.ovh.com/).
 
 ## En pratique
 
 > [!success]
 > Les e-mails envoyés par OVHcloud sont également accessibles depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br>
 > Cliquez sur votre nom en haut à droite de votre écran puis sur `E-mails de service`{.action} dans le menu de droite.
+
+### Depuis l'espace client OVHcloud
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) avec un compte administrateur.
 
@@ -41,13 +43,30 @@ Cliquez ensuite sur le bouton `...`{.action} puis sur `Modifier la date de trait
 > [!primary]
 > Si le bouton `Modifier la date de traitement`{.action} est grisé, cela signifie que cette maintenance ne peut pas être reportée.
 
-Sélectionnez une date dans le calendrier qui vous est présenté. Les dates grisées ne sont pas sélectionnables.<br>
-Renseignez ensuite manuellement une nouvelle heure pour cette maintenance ou laissez inchangé l'horaire initialement prévu.<br>
+Sélectionnez une date dans le calendrier qui vous est présenté. Seules les dates non-grisées sont sélectionnables.<br>
+Renseignez ensuite manuellement une nouvelle heure pour cette maintenance ou laissez inchangé l'horaire initialement prévu. Si vous dépassez la dernière heure autorisée, la dernière heure de programmation possible sera automatiquement proposée.<br>
 **Attention !** Pour qu'il soit pris en compte, le nouvel horaire ne doit plus être surligné en bleu. Une fois que vous avez renseigné le nouvel horaire, cliquez à côté de celui-ci dans la fenêtre, afin que l'horaire ne soit plus surligné en bleu.
 
 Enfin, cliquez sur le bouton `Modifier`{.action} pour valider vos modifications.
 
 ![modification horaire](images/maintenance-date-edition02.png){.thumbnail}
+
+### Depuis l'API OVHcloud
+
+Connectez-vous à l'[interface d'administration de vos services par API](https://eu.api.ovh.com/). Vous pouvez vous aider de notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/).
+
+Exécutez l'appel API suivant :
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
+>
+
+Renseignez les variables :
+
+- serviceName : la référence de votre PCC sous la forme `pcc-XX-XX-XX-XX` ;
+- taskId : il s'agit de la « référence de l'opération » de maintenance renseignér dans l'e-mail de notification qui vous a été envoyé ;
+- executionDate: renseignez la nouvelle date de maintenance au format `YYYY-MM-DDTHH:MM+01:SS` (par exemple, 2023-01-02T08:00:00+01:00 pour une maintenance programmée le 02/01/2023 à 08h00 (UTC+1)).
 
 ## Aller plus loin
 
