@@ -43,7 +43,7 @@ Przypominamy, że wolumen to partycja usługi (zwana również "pulą" lub "pul�
 
 Poniżej znajdziesz hierarchię usługi przestrzeni dyskowej Enterprise File Storage:
 
-![Enterprise File Storage Perf 1](images/Netapp_Hierarchie_2.png)
+![Enterprise File Storage Perf 1](images/Netapp_Hierarchie_2.png){.thumbnail}
 
 Enterprise File Storage nie pozwala na ręczne modyfikowanie QoS. QoS definiuje się bowiem na poziomie usługi (puli).
 

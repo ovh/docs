@@ -43,7 +43,7 @@ Ti ricordiamo che un volume è una partizione del servizio (chiamata anche "pool
 
 Di seguito trovi la gerarchia di un servizio di storage Enterprise File Storage:
 
-![Enterprise File Storage Perf 1](images/Netapp_Hierarchie_2.png)
+![Enterprise File Storage Perf 1](images/Netapp_Hierarchie_2.png){.thumbnail}
 
 Enterprise File Storage non consente ancora la modifica della QoS manualmente. La QoS è definita al livello del servizio (pool).
 
