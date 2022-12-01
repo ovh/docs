@@ -106,7 +106,6 @@ onglet interfaces réseaux
 
 ![OLA1](images/Scr_OLA1.png)
 ![OLA2](images/Scr_OLA2.png)
-![OLA3](images/Scr_OLA3.png)
 
 * Un système dédié supplémentaire avec les interfaces réseaux configurées par défaut, à savoir, un accès au réseau public ainsi qu'à votre réseau privé. (qui hébergera les services DHCP et TFTP). Le système d'exploitation sera celui de votre choix.
 
