@@ -8,7 +8,7 @@ order: 05
 
 
 ## 
-Per geolocalizzare l'indirizzo IP del tuo sito, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e selziona il nome del tuo sito nella sezione Hosting a sinistra.
+Per geolocalizzare l'indirizzo IP del tuo sito, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e selziona il nome del tuo sito nella sezione Hosting a sinistra.
 
 ![geolocation](images/2792.png){.thumbnail}
 A questo punto, seleziona il tab Domini associati e clicca sull'icona a forma di matita in corrispondenza del sito che vuoi geolocalizzare.

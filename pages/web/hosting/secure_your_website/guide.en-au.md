@@ -21,7 +21,7 @@ However, if you experience any difficulties completing some of these steps, plea
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> We have published this guide to assist you as much as we can with common tasks. We recommend contacting a specialist provider and/or getting in touch with the publisher of the interface or software if you encounter any difficulties. OVH cannot assist you in this regard. You can find more information in the “Go further” section of this guide.
+> We have published this guide to assist you as much as we can with common tasks. We recommend contacting a specialist provider and/or getting in touch with the publisher of the interface or software if you encounter any difficulties. OVHcloud cannot assist you in this regard. You can find more information in the “Go further” section of this guide.
 >
 
 ## Requirements

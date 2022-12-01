@@ -96,7 +96,7 @@ Cette étape peut être facultative si vous ne souhaitez pas utiliser les adress
 
 ![Créer une adresse e-mail](images/create_an_email_address.png){/thumbnail}
 
-Suivez les informations demandées jusqu'à la création de votre adresse e-mail. Répétez cette étape pour en créer plusieurs. Si vous êtes dans un processus de migration de vos e-mails chez OVHcloud, nous vous invitons à utiliser notre outil [OVHcloud Mail Migrator](https://omm.ovh.net/){.external} afin de vous aider dans vos démarches. 
+Suivez les informations demandées jusqu'à la création de votre adresse e-mail. Répétez cette étape pour en créer plusieurs. Si vous êtes dans un processus de migration de vos e-mails chez OVHcloud, nous vous invitons à utiliser notre outil [OVH Mail Migrator](https://omm.ovh.net/){.external} afin de vous aider dans vos démarches. 
 
 Si vous désirez obtenir plus d'informations sur la création d'une adresse e-mail ou sur la migration de vos services chez OVHcloud, consultez nos documentations : [Comment créer une adresse e-mail](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external} et [Migrer mon site chez OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external} si ce dernier s'applique.
 

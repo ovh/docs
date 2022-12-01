@@ -52,7 +52,7 @@ A questo punto il nostro sistema rileverà automaticamente il o gli indirizzi IP
 
 - Se disponi di più IP, selezionane uno.
 - Scegli la zona geografica del tuo servizio SSL Gateway.
-- Se la zona DNS del dominio o sottodominio è gestita dal tuo account OVH, seleziona la casella corrispondente per autorizzarci a modificare la configurazione per impostare il puntamento verso il tuo SSL Gateway.
+- Se la zona DNS del dominio o sottodominio è gestita dal tuo account OVHcloud, seleziona la casella corrispondente per autorizzarci a modificare la configurazione per impostare il puntamento verso il tuo SSL Gateway.
 - Clicca su `Ordina`{.action}.
 
 
@@ -63,14 +63,14 @@ A questo punto il nostro sistema rileverà automaticamente il o gli indirizzi IP
 > [!primary]
 >
 > Se disponi di più indirizzi IP per il tuo sito, dovrai sceglierne solo uno per ordine.
-> Se hai attivato l’offerta Advanced, in un secondo momento potrai aggiungere fino a 2 IP supplementari tramite lo Spazio Cliente OVH.
+> Se hai attivato l’offerta Advanced, in un secondo momento potrai aggiungere fino a 2 IP supplementari tramite lo Spazio Cliente OVHcloud.
 > 
 
 - Segui gli step e conferma il tuo ordine.
 
 
 ## Configura la tua zona DNS
-Se non hai selezionato l’opzione relativa alla modifica automatica, una volta confermato l’ordine ricevi un’email in cui ti viene chiesto di impostare entro 3 giorni il puntamento del tuo dominio o sottodominio verso l’infrastruttura OVH.
+Se non hai selezionato l’opzione relativa alla modifica automatica, una volta confermato l’ordine ricevi un’email in cui ti viene chiesto di impostare entro 3 giorni il puntamento del tuo dominio o sottodominio verso l’infrastruttura OVHcloud.
 
 
 
@@ -83,9 +83,9 @@ Se non hai selezionato l’opzione relativa alla modifica automatica, una volta 
 
 > [!faq]
 >
-> Caso 1: la tua zona DNS è gestita dai server DNS condivisi OVH.
+> Caso 1: la tua zona DNS è gestita dai server DNS condivisi OVHcloud.
 >> 
->>     - Se il tuo identificativo è contatto amministratore o tecnico della zona DNS, potrai modificarla dallo Spazio Cliente OVH.
+>>     - Se il tuo identificativo è contatto amministratore o tecnico della zona DNS, potrai modificarla dallo Spazio Cliente OVHcloud.
 >>     - Se non sei contatto amministratore o tecnico della zona DNS, per modificarla dovrai rivolgerti alla persona autorizzata.
 
 >> 
@@ -102,7 +102,7 @@ Se non hai selezionato l’opzione relativa alla modifica automatica, una volta 
 
 > [!faq]
 >
-> Caso 2: la tua zona DNS non è gestita dai server DNS condivisi OVH.
+> Caso 2: la tua zona DNS non è gestita dai server DNS condivisi OVHcloud.
 >> 
 >>     - In questo caso, modifica l'IP nella tua zona DNS accedendo all'interfaccia del tuo provider o del tuo server dedicato.
 >

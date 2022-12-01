@@ -13,7 +13,7 @@ Software
 Per installare il CMS Drupal sulla tua offerta di hosting condiviso, ti consigliamo di utilizzare un client FTP come FileZilla (gratuito).
 
 ## [b]Credenziali[/b]
-Assicurati di disporre delle credenziali (Nic-handle e password) di accesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Assicurati di disporre delle credenziali (Nic-handle e password) di accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 
 - Recupera le credenziali FTP per accedere al tuo hosting Web.
@@ -66,7 +66,7 @@ Per salvare i tuoi file sull'FTP, segui questi step.
 Apri FileZilla.
 
 Nella sezione Sito locale, che contiene l'elenco dei file presenti sul tuo pc, apri la cartella decompressa Drupal-xxx in cui sono presenti i file del tuo CMS.
-Nella sezione Sito remoto, che corrisponde in questo caso al tuo hosting condiviso OVH, apri la cartella www in cui dovrai salvare tutti i file del CMS.
+Nella sezione Sito remoto, che corrisponde in questo caso al tuo hosting condiviso OVHcloud, apri la cartella www in cui dovrai salvare tutti i file del CMS.
 Se questa cartella non esiste, puoi crearla.
 Per poter effettuare l'installazione dal tuo dominio, i tuoi file devono necessariamente essere salvati nella cartella "www".
 
@@ -114,7 +114,7 @@ Inserisci le informazioni del tuo database:
 Seleziona MySQL, MariaDB o equivalente.
 
 
-- Nome database: il nome scelto al momento della sua creazione nello Spazio Cliente OVH.
+- Nome database: il nome scelto al momento della sua creazione nello Spazio Cliente OVHcloud.
 
 - Nome utente database: uguale al nome del database.
 
@@ -126,7 +126,7 @@ Seleziona MySQL, MariaDB o equivalente.
 
 ![drupal](images/3202.png){.thumbnail}
 
-- Host database: il nome del server del tuo database, indicato nell'email di installazione o nel tuo Spazio Cliente OVH. Generalmente finisce per .mysql.db.
+- Host database: il nome del server del tuo database, indicato nell'email di installazione o nel tuo Spazio Cliente OVHcloud. Generalmente finisce per .mysql.db.
 
 - Porta database: lascia vuoto questo campo.
 
@@ -135,7 +135,7 @@ Seleziona MySQL, MariaDB o equivalente.
 
 
 ![drupal](images/3203.png){.thumbnail}
-Importante: le credenziali del database non vengono inviate automaticamente durante l'installazione dell'hosting. Per riceverle, attiva il database nel tuo Spazio Cliente OVH.
+Importante: le credenziali del database non vengono inviate automaticamente durante l'installazione dell'hosting. Per riceverle, attiva il database nel tuo Spazio Cliente OVHcloud.
 Clicca su Salva e continua per confermare le informazioni di accesso al tuo database.
 
 
@@ -194,22 +194,22 @@ Costruisci il tuo sito con il tuo CMS Drupal!
 
 ## Supporto Drupal
 Se hai bisogno di aiuto per utilizzare il tuo CMS, ti consigliamo di consultare i forum dedicati alla soluzione e la pagina del [supporto ](https://www.drupal.org/support).
-Il supporto OVH non risponde alle domande relative alla configurazione del tuo CMS.
+Il supporto OVHcloud non risponde alle domande relative alla configurazione del tuo CMS.
 Se hai bisogno di aiuto, consulta la guida []({legacy}2053) disponibile online.
 
 
 ## Errori comuni
 
-- Errore "OVH - Sito in costruzione"
+- Errore "OVHcloud - Sito in costruzione"
 
 
-Hai configurato i tuoi file sul tuo server FTP, ma continui a visualizzare la pagina "Sito in construzione" di OVH.
+Hai configurato i tuoi file sul tuo server FTP, ma continui a visualizzare la pagina "Sito in construzione" di OVHcloud.
 
-Quando installi il tuo hosting, OVH realizza una pagina di attesa per permetterti di caricare i file del tuo sito.
+Quando installi il tuo hosting, OVHcloud realizza una pagina di attesa per permetterti di caricare i file del tuo sito.
 
-Se salvi i file nella cartella www ma non elimini il contenuto inserito da OVH, potrebbe verificarsi questo problema.
+Se salvi i file nella cartella www ma non elimini il contenuto inserito da OVHcloud, potrebbe verificarsi questo problema.
 
-Per risolverlo, elimina o rinomina il file "index.html" che OVH ha salvato sul tuo hosting.
+Per risolverlo, elimina o rinomina il file "index.html" che OVHcloud ha salvato sul tuo hosting.
 
 Se rinomini semplicemente il file, puoi riattivarlo in qualsiasi momento per utilizzarlo come pagina di attesa.
 
@@ -224,5 +224,5 @@ Altre informazioni utili: per essere presi in carico, i file del tuo sito devono
 
 La causa è semplice: l'ultima versione di PHP non è stata attivata.
 
-Per modificare la versione PHP del tuo hosting coindiviso, consulta la guida [Configura PHP sul tuo Hosting Web OVH]({legacy}1207)
+Per modificare la versione PHP del tuo hosting coindiviso, consulta la guida [Configura PHP sul tuo Hosting Web OVHcloud]({legacy}1207)
 

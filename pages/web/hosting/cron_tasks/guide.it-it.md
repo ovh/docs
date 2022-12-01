@@ -10,7 +10,7 @@ order: 01
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22/09/2020**
+**Ultimo aggiornamento: 01/12/2022**
 
 ## Obiettivo
 
@@ -33,7 +33,7 @@ Sull'hosting Web OVHcloud è possibile utilizzare script per automatizzare alcun
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action}.
 
-Seleziona l'hosting, clicca sulla scheda `Più`{.action} e poi su `Task pianificati - Cron`{.action}
+Seleziona l'hosting, clicca sulla scheda `Più`{.action} e poi su `Cron`{.action}.
 
 In questa sezione, visualizzi i tuoi task pianificati e i loro parametri.
 

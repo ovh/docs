@@ -37,10 +37,10 @@ You will then land on the page for managing your solution.
 
 |Option|Description|
 |---|---|
-|IPv4|IPv4 address of the OVH gateway you would like to point to|
-|IPv6|IPv6 address of the OVH gateway you would like to point to|
+|IPv4|IPv4 address of the OVHcloud gateway you would like to point to|
+|IPv6|IPv6 address of the OVHcloud gateway you would like to point to|
 |Zone|Geographic zone of your SSL Gateway IP address|
-|Outgoing IPv4|OVH IPv4 addresses that will connect to your server|
+|Outgoing IPv4|OVHcloud IPv4 addresses that will connect to your server|
 |Solution|Solution subscription type|
 |Documentation|Link to this user guide|
 |Status|Your SSL Gateway service status|

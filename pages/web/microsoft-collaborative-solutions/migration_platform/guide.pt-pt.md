@@ -31,7 +31,7 @@ Deseja migrar os seus endereços de e-mail presentes numa plataforma Exchange ou
 ## Requisitos
 
 - Ter uma plataforma **"fonte"** com contas [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external} ou [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external} configuradas.
-- Ter uma plataforma de **"destino"** com contas [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}, [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external} ou MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}). Esta plataforma deve dispor de contas não configuradas ou disponíveis para acolher os endereços de e-mail que devem ser migrados.
+- Ter uma plataforma de **"destino"** com contas [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}, [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external} ou MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}). Esta plataforma deve dispor de contas não configuradas ou disponíveis para acolher os endereços de e-mail que devem ser migrados.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
@@ -132,7 +132,7 @@ Se configurou uma das contas migradas num cliente de e-mail (exemplo: Outlook, T
 
 ## Quer saber mais?
 
-[Como gerir os contactos (gestores) dos serviços OVH](https://docs.ovh.com/pt/customer/gestao_dos_contactos/){.external}.
+[Como gerir os contactos (gestores) dos serviços OVHcloud](https://docs.ovh.com/pt/customer/gestao_dos_contactos/){.external}.
 
 [Guides E-mail Pro](https://docs.ovh.com/pt/emails-pro/){.external}.
 

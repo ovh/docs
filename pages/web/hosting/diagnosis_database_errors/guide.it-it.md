@@ -149,7 +149,7 @@ Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configu
 
 > [!warning]
 >
-> Se i consigli forniti sull'ottimizzazione del database non sono sufficienti per sbloccare l'accesso al tuo sito, ti consigliamo di contattare la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). OVH non potrà fornirti alcuna assistenza al riguardo.
+> Se i consigli forniti sull'ottimizzazione del database non sono sufficienti per sbloccare l'accesso al tuo sito, ti consigliamo di contattare la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti alcuna assistenza al riguardo.
 >
 
 Superamento della capacità della RAM
@@ -213,7 +213,7 @@ Per risolvere questa anomalia, puoi:
 
 - Aumentare la [quantità di RAM](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/#monitora-la-ram-consumata). accedendo alla sezione `Database` del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul pulsante `...`{.action} nella sezione `RAM` e clicca su `Modifica la quantità di RAM`{.action}.
 
-- Per importare il tuo database in più operazioni anziché in una sola pagina (per maggiori informazioni sulle operazioni da effettuare, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) OVH non potrà fornirti alcuna assistenza al riguardo).
+- Per importare il tuo database in più operazioni anziché in una sola pagina (per maggiori informazioni sulle operazioni da effettuare, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) OVHcloud non potrà fornirti alcuna assistenza al riguardo).
 
 - [Ottimizza il tuo database](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/) e ripeti le operazioni di esportazione/importazione.
 

@@ -17,8 +17,8 @@ Le service Exchange permet de bénéficier d’adresses e-mail professionnelles,
 ## Prérequis
 
 - Disposer d'une offre [Exchange](https://www.ovh.com/ca/fr/emails/){.external}.
-- Disposer au minimum de deux comptes Exchange actifs et configurés sur la même plateforme Exchange OVH.
-- Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Disposer au minimum de deux comptes Exchange actifs et configurés sur la même plateforme Exchange OVHcloud.
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Disposer des identifiants relatifs au compte Exchange qui bénéficiera des nouveaux droits délégués.
 
 ## En pratique
@@ -40,7 +40,7 @@ Lorsque vous avez identifié le compte concerné par la délégation, détermin�
 
 ### Étape 1 : mettre en place la délégation
 
-Pour effectuer cette manipulation, connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Cliquez ensuite sur le nom du service Exchange dans lequel se trouve le compte concerné par la création de la délégation. Positionnez-vous enfin sur l'onglet `Comptes e-mail`{.action}.
+Pour effectuer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Cliquez ensuite sur le nom du service Exchange dans lequel se trouve le compte concerné par la création de la délégation. Positionnez-vous enfin sur l'onglet `Comptes e-mail`{.action}.
 
 Le tableau qui apparaît affiche les comptes liés à votre service Exchange. Cliquez sur les trois points à droite du compte pour lequel vous souhaitez créer une délégation,  puis sur `Gérer les délégations`{.action}.
 

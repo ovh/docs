@@ -96,7 +96,7 @@ Aby dodać pierwszą nazwę domeny do platformy i rozpocząć konfigurowanie kon
 
 ## Sprawdź również
 
-[Edycja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
+[Edycja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
 
 [Dodanie domeny do usługi Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/dodanie-domeny-exchange/) 
 

@@ -14,7 +14,7 @@ Django CMS est un système de gestion de contenu (CMS) écrit en Python et basé
 
 L’[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) permet d’utiliser Python comme moteur d’exécution pour vos sites web. Vous pouvez donc y installer et héberger Django CMS, ainsi que toute autre application web conçue dans ce langage.
 
-À travers ce tutoriel, nous allons installer un site web avec Django CMS sur un hébergement Cloud Web d’OVH. Puis nous le mettrons à disposition derrière votre nom de domaine.
+À travers ce tutoriel, nous allons installer un site web avec Django CMS sur un hébergement Cloud Web d’OVHcloud. Puis nous le mettrons à disposition derrière votre nom de domaine.
 
 ## Prérequis
 

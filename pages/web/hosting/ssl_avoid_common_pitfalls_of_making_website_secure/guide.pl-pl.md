@@ -10,7 +10,7 @@ order: 04
 
 ## Wprowadzenie 
 
-W ramach hostingu w OVH możesz skorzystać z certyfikatów SSL dla wszystkich stron WWW. Certyfikat SSL zapewnia poufność i integralność danych przesyłanych przez Internet, np. za pośrednictwem formularza na stronie WWW czy poczty elektronicznej, oraz zawiera informacje o domenie. O obecności certyfikatu SSL świadczy ikona kłódki oraz protokół HTTPS w pasku adresu strony internetowej. Przesył danych pomiędzy komputerem użytkownika a serwerem jest wtedy szyfrowany.
+W ramach hostingu w OVHcloud możesz skorzystać z certyfikatów SSL dla wszystkich stron WWW. Certyfikat SSL zapewnia poufność i integralność danych przesyłanych przez Internet, np. za pośrednictwem formularza na stronie WWW czy poczty elektronicznej, oraz zawiera informacje o domenie. O obecności certyfikatu SSL świadczy ikona kłódki oraz protokół HTTPS w pasku adresu strony internetowej. Przesył danych pomiędzy komputerem użytkownika a serwerem jest wtedy szyfrowany.
 
 Uruchomienie certyfikatu dla istniejącej strony WWW może stwarzać problemy. Przed wdrożeniem certyfikatu SSL upewnij się, że nie zakłóci to działania strony WWW.
 
@@ -18,9 +18,9 @@ Uruchomienie certyfikatu dla istniejącej strony WWW może stwarzać problemy. P
 
 > [!warning]
 >
-> OVH udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie.  Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+> OVHcloud udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie.  Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
 > 
 
 

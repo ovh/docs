@@ -65,7 +65,7 @@ Similarly, you can use the OVHcloud API from your Web Hosting by using the offic
 ```json
 1. {
 2.     "name": "Example Application",
-3.     "description": "This is an example of OVH APIs wrapper usage",
+3.     "description": "This is an example of OVHcloud APIs wrapper usage",
 4.     "require": {
 5.         "ovh/ovh": "1.1.*"
 6.     }

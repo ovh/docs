@@ -44,10 +44,10 @@ Vamos ver agora como utilizar o seu serviço SSL Gateway
 ![partie infos](images/8.PNG){.thumbnail}
 
 
-|IPv4|Endereço IPv4 da gateway OVH para o qual deve apontar|
-|IPv6|Endereço IPv6 da gateway OVH para o qual deve apontar|
+|IPv4|Endereço IPv4 da gateway OVHcloud para o qual deve apontar|
+|IPv6|Endereço IPv6 da gateway OVHcloud para o qual deve apontar|
 |Zone|Zona geográfica do endereço IP do seu SSL Gateway|
-|IPv4 de saída|Endereços IPv4 OVH que se ligarão ao seu servidor|
+|IPv4 de saída|Endereços IPv4 OVHcloud que se ligarão ao seu servidor|
 |Oferta|Tipo de oferta subscrita|
 |Documentação|Link para este guia de utilização|
 |Estado|Estado do seu serviço SSL Gateway|

@@ -43,10 +43,10 @@ Hier erfahren Sie, wie Sie Ihr SSL Gateway verwenden.
 
 |---|---|
 |---|---|
-|IPv4|IPv4-Adresse des OVH Gateways, auf die Sie verweisen müssen|
-|IPv6|IPv6-Adresse des OVH Gateways, auf die Sie verweisen müssen|
+|IPv4|IPv4-Adresse des OVHcloud Gateways, auf die Sie verweisen müssen|
+|IPv6|IPv6-Adresse des OVHcloud Gateways, auf die Sie verweisen müssen|
 |Zone|Geografische Zone der IP-Adresse Ihres SSL Gateways|
-|Ausgehende IPv4|IPv4-Adressen von OVH, die sich mit Ihrem Server verbinden|
+|Ausgehende IPv4|IPv4-Adressen von OVHcloud, die sich mit Ihrem Server verbinden|
 |Angebot|Art Ihres Angebots|
 |Dokumentation|Link zu dieser Anleitung|
 |Status|Status Ihrer SSL Gateway Dienstleistung|

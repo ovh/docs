@@ -6,7 +6,7 @@ section: Tâches automatisées (CRON)
 order: 01
 ---
 
-**Dernière mise à jour le 22 Septembre 2020**
+**Dernière mise à jour le 01/12/2022**
 
 ## Objectif
 
@@ -29,7 +29,7 @@ Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour autom
 
 Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`{.action}, puis sur `Hébergements`{.action}.
 
-Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus+`{.action} puis sur `Tâches planifiées - Cron`{.action}
+Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus`{.action} puis sur `Cron`{.action}.
 
 Dans cette section, vous aurez un aperçu de vos tâches planifiées et de leurs paramètres.
 

@@ -22,7 +22,7 @@ Czasami konieczne może okazać się zabezpieczenie dostępu do części Twojej 
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -37,7 +37,7 @@ Czasami konieczne może okazać się zabezpieczenie dostępu do części Twojej 
 >
 > Proponowane tutaj rozwiązanie to tylko jedna z możliwości technicznych, aby stworzyć przestrzeń administracyjną na Twojej stronie WWW. Możesz również korzystać z funkcji [Moduł za pomocą 1 kliknięcia](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/) zaproponowanej przez [OVHcloud](https://www.ovhcloud.com/pl/).
 >
-> W przypadku pytań dotyczących tworzenia lub programowania Twojej strony, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+> W przypadku pytań dotyczących tworzenia lub programowania Twojej strony, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
 >
 
 ### Etap 1: utwórz drzewo

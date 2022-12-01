@@ -193,7 +193,7 @@ Nasza usługa anty-spamowa będzie analizować sytuację, a nasz dział wsparcia
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji następną część, która pomoże Ci w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
+> Oddajemy do Twojej dyspozycji następną część, która pomoże Ci w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
 >
 
 Mimo że rekomendujemy korzystanie z funkcji "mail()" PHP, hosting współdzielony umożliwia wysyłanie e-maili przy użyciu skryptu SMTP (Simple Mail Transfer Protocol). Całkowity rozmiar wiadomości e-mail nie może przekroczyć **10 MB** (tj. **7/8 MB bez kapsułek**).

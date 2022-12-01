@@ -27,7 +27,7 @@ Vous souhaitez migrer vos adresses e-mail présentes sur une plateforme Exchange
 ## Prérequis
 
 - Disposer d'une plateforme **«source»** avec des comptes [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external} ou [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external} configurés.
-- Disposer d'une plateforme de **«destination»** avec des comptes [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external}, [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external} ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}). Cette plateforme doit disposer de comptes non configurés ou disponibles pour accueillir les adresses e-mail qui doivent être migrées.
+- Disposer d'une plateforme de **«destination»** avec des comptes [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external}, [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external} ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}). Cette plateforme doit disposer de comptes non configurés ou disponibles pour accueillir les adresses e-mail qui doivent être migrées.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique

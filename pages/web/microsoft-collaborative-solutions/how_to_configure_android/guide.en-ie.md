@@ -38,7 +38,7 @@ On your device’s homepage, open the `Gmail`{.action} app. You can add an accou
 
 Enter your email address, then tap `Next`{.action}.
 
-Enter your email password, do not select any client certificates, then tap `Next`{.action} to continue configuring your account. You can make connections to the OVH server to configure your account. If you would like to do so, a notification will appear on your device. Tap `OK`{.action} to make these connections.
+Enter your email password, do not select any client certificates, then tap `Next`{.action} to continue configuring your account. You can make connections to the OVHcloud server to configure your account. If you would like to do so, a notification will appear on your device. Tap `OK`{.action} to make these connections.
 
 Enter the incoming server settings. Some fields may be auto-filled.
 
@@ -47,7 +47,7 @@ Enter the incoming server settings. Some fields may be auto-filled.
 |Domain/Username|Enter your full email address.|  
 |Password|Enter the password for your email address.|
 |Client certificate|Do not select anything.|
-|Server|Enter the details for the server your Exchange service is hosted on. You will find these details in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Enter the details for the server your Exchange service is hosted on. You will find these details in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
 |Port|Enter port 443.|  
 |Security type|Choose ‘SSL/TLS’.|
 
@@ -55,7 +55,7 @@ Then tap `Next`{.action}. If all the information you have entered is correct, yo
 
 ![Exchange](images/configuration-exchange-gmail-application-android-step2.png){.thumbnail}
 
-To finalise your configuration, you will need to authorise the OVH server to control certain security features on your device. Tap `OK`{.action}, read the information on the page, and tap `Activate device administrator`{.action}.
+To finalise your configuration, you will need to authorise the OVHcloud server to control certain security features on your device. Tap `OK`{.action}, read the information on the page, and tap `Activate device administrator`{.action}.
 
 Set a name for your account, so that you can distinguish it from any other accounts associated with your app. Then press `Next`{.action}.
 
@@ -65,7 +65,7 @@ To check that the account has been correctly configured, you can send a test ema
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also offers a web application that has [collaborative features](https://www.ovhcloud.com/en-ie/emails/){.external}, accessible via <https://www.ovh.ie/mail/>. You can log in using your email credentials.
+OVHcloud also offers a web application that has [collaborative features](https://www.ovhcloud.com/en-ie/emails/){.external}, accessible via <https://www.ovh.ie/mail/>. You can log in using your email credentials.
 
 ## Go further
 

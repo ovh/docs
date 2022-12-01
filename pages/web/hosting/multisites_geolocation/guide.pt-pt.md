@@ -18,7 +18,7 @@ Clique depois no lápis à direita da linha do website que deseja geolocalizar«
 
 ![geolocation](images/2793.png){.thumbnail}
 Poderá escolher de seguida o IP correspondente ao país.
-A OVH propõe 12 países diferentes
+A OVHcloud propõe 12 países diferentes
 
 ![geolocation](images/2794.png){.thumbnail}
 É necessário aguardar 24h para que a alteração seja replicada pela Internet

@@ -252,7 +252,7 @@ En la nueva ventana, haga clic en «Permisos» y realice los cambios deseados:
 ## Reapertura del sitio web
 Puede reabrir su sitio utilizando un comando personalizado.
 
-Por lo general, esta operación se realiza después de que OVH cierre por seguridad un espacio de alojamiento que ha sido hackeado.
+Por lo general, esta operación se realiza después de que OVHcloud cierre por seguridad un espacio de alojamiento que ha sido hackeado.
 
 Para utilizar un comando, haga clic en el menú «Ir» y seleccione «Enviar orden...».
 

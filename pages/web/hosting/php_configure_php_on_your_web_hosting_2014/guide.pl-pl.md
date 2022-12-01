@@ -16,7 +16,7 @@ order: 01
 
 ## Wprowadzenie 
 
-Twój [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} umożliwia Ci hostowanie wybranej strony internetowej, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVH](https://webhosting-infos.hosting.ovh.net){.external}. W tym celu może być konieczne zmodyfikowanie wersji PHP używanej przez Twój hosting.
+Twój [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} umożliwia Ci hostowanie wybranej strony internetowej, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVHcloud](https://webhosting-infos.hosting.ovh.net){.external}. W tym celu może być konieczne zmodyfikowanie wersji PHP używanej przez Twój hosting.
 
 **Dowiedz się, jak zmienić wersję PHP na hostingu OVHcloud.**
 
@@ -70,7 +70,7 @@ Kiedy jesteś gotowy do zmiany wersji PHP, przejdź do etapu 2.
 
 Istnieją dwa sposoby modyfikacji wersji PHP na Twoim hostingu:
 
-- **poprzez asystenta konfiguracji w Panelu klienta** : po zalogowaniu się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) możesz wybrać nową wersję PHP spośród innych parametrów. Zapoznaj się z instrukcjami zawartymi w przewodniku OVH ["Zmiana konfiguracji hostingu"](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/){.external} i przeprowadź operację w tym celu.
+- **poprzez asystenta konfiguracji w Panelu klienta** : po zalogowaniu się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) możesz wybrać nową wersję PHP spośród innych parametrów. Zapoznaj się z instrukcjami zawartymi w przewodniku OVHcloud ["Zmiana konfiguracji hostingu"](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/){.external} i przeprowadź operację w tym celu.
 
 - **modyfikując ręcznie plik na Twojej przestrzeni dyskowej**: to rozwiązanie jest bardziej techniczne i wymaga podłączenia do [przestrzeni FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/), gdzie należy zmienić plik `.ovhconfig`. Zapoznaj się z instrukcjami zawartymi w przewodniku OVHcloud ["Konfiguracja pliku .ovhconfig na hostingu WWW"](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/){.external}, aby przeprowadzić operację za pomocą tego pliku.
 

@@ -92,7 +92,7 @@ Para crear una o más direcciones de correo electrónico, deber estar conectado 
 
 ![Crear una dirección de correo](images/create_an_email_address.png){.thumbnail} 
 
-Introduzca la información solicitada para crear su dirección de correo electrónico y repita este mismo proceso si desea crear más direcciones. Para migrar todas sus direcciones de correo electrónico a OVHcloud, le recomendamos que utilice nuestra herramienta [OVHcloud Mail Migrator](https://omm.ovh.net/){.external}, que le simplificará el proceso. 
+Introduzca la información solicitada para crear su dirección de correo electrónico y repita este mismo proceso si desea crear más direcciones. Para migrar todas sus direcciones de correo electrónico a OVHcloud, le recomendamos que utilice nuestra herramienta [OVH Mail Migrator](https://omm.ovh.net/){.external}, que le simplificará el proceso. 
 
 Si desea más información sobre cómo crear una dirección de correo electrónico o migrar sus servicios a OVHcloud, consulte nuestras guías [Crear una dirección de correo electrónico en un MX Plan](https://docs.ovh.com/es/emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/) y, en su caso, [Transferir un sitio web y el correo sin cortes del servicio](https://docs.ovh.com/es/domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/).
 

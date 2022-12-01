@@ -38,7 +38,7 @@ Na ekranie Twojego urządzenia wybierz aplikację `Gmail`{.action}. Dodanie kont
 
 Wpisz Twój adres e-mail i kliknij `Dalej`{.action}.
 
-Następnie wpisz hasło wybrane dla Twojego konta e-mail, nie wybieraj certyfikatu klienta, kliknij `Dalej`{.action}, aby kontynuować konfigurację. W trakcie konfiguracji konta może zaistnieć potrzeba połączenia z serwerem OVH. W takim przypadku urządzenie wyświetli powiadomienie: kliknij `OK`{.action}, aby połączyć się z serwerem.
+Następnie wpisz hasło wybrane dla Twojego konta e-mail, nie wybieraj certyfikatu klienta, kliknij `Dalej`{.action}, aby kontynuować konfigurację. W trakcie konfiguracji konta może zaistnieć potrzeba połączenia z serwerem OVHcloud. W takim przypadku urządzenie wyświetli powiadomienie: kliknij `OK`{.action}, aby połączyć się z serwerem.
 
 Wpisz parametry serwera poczty przychodzącej. Niektóre pola mogą być wstępnie uzupełnione.
 
@@ -55,7 +55,7 @@ Następnie kliknij `Dalej`{.action}. Jeśli wpisane informacje są poprawne, log
 
 ![Exchange](images/configuration-exchange-gmail-application-android-step2.png){.thumbnail}
 
-Aby zakończyć konfigurację, zezwól serwerowi OVH na zdalne zarządzanie niektórymi funkcjami bezpieczeństwa związanymi z urządzeniem. Kliknij `OK`{.action}, zapoznaj się z informacjami, które się wyświetlą, po czym kliknij `Aktywuj administratora tego urządzenia`{.action}.
+Aby zakończyć konfigurację, zezwól serwerowi OVHcloud na zdalne zarządzanie niektórymi funkcjami bezpieczeństwa związanymi z urządzeniem. Kliknij `OK`{.action}, zapoznaj się z informacjami, które się wyświetlą, po czym kliknij `Aktywuj administratora tego urządzenia`{.action}.
 
 Następnie nazwij konto w taki sposób, aby łatwo je było odróżnić od innych kontdostępnych w aplikacji. Następnie kliknij `Dalej`{.action}.
 
@@ -65,7 +65,7 @@ Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skon
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVH oferuje również aplikację internetową posiadającą [funkcje do pracy zespołowej](https://www.ovhcloud.com/pl/emails/){.external}  dostępną pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pracy zespołowej](https://www.ovhcloud.com/pl/emails/){.external}  dostępną pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również
 

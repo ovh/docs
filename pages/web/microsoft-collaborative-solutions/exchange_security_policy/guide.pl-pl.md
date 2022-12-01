@@ -25,7 +25,7 @@ Zarządzanie polityką bezpieczeństwa usługi e-mail może wiązać się z czt
 
 - wzmocnienie bezpieczeństwa kont e-mail podczas próby logowania przez użytkowników;
 - ustanowienie bardziej złożonych haseł dla kont usługi e-mail;
-- wzmocnienie weryfikacji wiadomości przychodzących na serwery OVH i na Twoje konta e-mail (dotyczy wyłącznie kont [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external});
+- wzmocnienie weryfikacji wiadomości przychodzących na serwery OVHcloud i na Twoje konta e-mail (dotyczy wyłącznie kont [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external});
 - zdefiniowanie, jak wiadomości „niechciane” będą wyświetlane w Twoich skrzynkach e-mail (dotyczy wyłącznie kont [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}).
 
 Aby przejść do polityki bezpieczeństwa usługi e-mail, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. 
@@ -44,7 +44,7 @@ Następnie przejdź do aspektów, które chcesz zmodyfikować.
 
 - [Wzmocnienie bezpieczeństwa danych](#enhanced-security): Określ, czy konta mają być blokowane po pewnej liczbie nieudanych prób logowania.|
 - [Ustanowienie bardziej złożonego hasła](#password-complexity):Ustaw wymaganie złożoności oraz reguły zmiany hasła.|
-- [Wzmocnienie weryfikacji wiadomości przychodzących (dotyczy wyłącznie usługi Exchange)](./#wzmocnienie-weryfikacji-wiadomosci-przychodzacych-dotyczy-wylacznie-uslugi-exchange){.external}|Określ, czy serwery OVH mają sprawdzać, czy otrzymane wiadomości pochodzą z dozwolonego źródła (weryfikacje DKIM i/lub SPF).|
+- [Wzmocnienie weryfikacji wiadomości przychodzących (dotyczy wyłącznie usługi Exchange)](./#wzmocnienie-weryfikacji-wiadomosci-przychodzacych-dotyczy-wylacznie-uslugi-exchange){.external}|Określ, czy serwery OVHcloud mają sprawdzać, czy otrzymane wiadomości pochodzą z dozwolonego źródła (weryfikacje DKIM i/lub SPF).|
 - [Określenie sposobu wyświetlania niechcianych wiadomości (dotyczy wyłącznie usługi Exchange)](./#okreslenie-sposobu-wyswietlania-niechcianych-wiadomosci-dotyczy-wylacznie-uslugi-exchange){.external}|Określ, czy niechciane wiadomości mają zawierać tag pozwalający je zidentyfikować, czy też automatycznie trafiać do kosza.|
 
 ### Wzmocnienie bezpieczeństwa danych <a name="enhanced-security"></a>
@@ -75,12 +75,12 @@ Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{
 
 ### Wzmocnienie weryfikacji wiadomości przychodzących (dotyczy wyłącznie usługi Exchange) <a name="incoming-messages-verification"></a>	
 
-Możesz określić, czy serwery OVH mają sprawdzać, czy wiadomości spływające na konta e-mail pochodzą z dozwolonego źródła wysyłki (weryfikacje DKIM i/lub SPF).
+Możesz określić, czy serwery OVHcloud mają sprawdzać, czy wiadomości spływające na konta e-mail pochodzą z dozwolonego źródła wysyłki (weryfikacje DKIM i/lub SPF).
 
 W tym celu zaznacz żądane pola w poniższej tabeli:
 
-- **Aktywacja weryfikacji podpisu DKIM**: Określ, czy serwery OVH mają weryfikować podpis DKIM pod wiadomościami, które spływają na Twoje konta Exchange. Czynność ta gwarantuje autentyczność domeny nadawcy i integralność wiadomości. Umożliwia również identyfikację wiadomości pochodzących z nielegalnych źródeł i oznaczenie ich jako spam.
-- **Aktywacja weryfikacji ochrony SPF**: Określ, czy serwery OVH powinny weryfikować, czy źródło wysyłki spływających do Ciebie wiadomości jest zapisane w rekordzie SPF domeny nadawcy. Weryfikacja ta może pomóc w identyfikacji wiadomości pochodzących z nielegalnych źródeł. Wiadomości takie będą oznaczane jako spam.
+- **Aktywacja weryfikacji podpisu DKIM**: Określ, czy serwery OVHcloud mają weryfikować podpis DKIM pod wiadomościami, które spływają na Twoje konta Exchange. Czynność ta gwarantuje autentyczność domeny nadawcy i integralność wiadomości. Umożliwia również identyfikację wiadomości pochodzących z nielegalnych źródeł i oznaczenie ich jako spam.
+- **Aktywacja weryfikacji ochrony SPF**: Określ, czy serwery OVHcloud powinny weryfikować, czy źródło wysyłki spływających do Ciebie wiadomości jest zapisane w rekordzie SPF domeny nadawcy. Weryfikacja ta może pomóc w identyfikacji wiadomości pochodzących z nielegalnych źródeł. Wiadomości takie będą oznaczane jako spam.
 
 Po dokonaniu wyboru zatwierdź zmiany, klikając polecenie `Zapisz zmiany`{.action}.
 
@@ -90,8 +90,8 @@ Czynność ta pozwala określić, czy niechciane wiadomości, które spływają 
 
 W tym celu zaznacz żądane pola w poniższej tabeli:
 
-- **Identyfikacja niechcianych wiadomości**: Określ, czy serwery OVH mają dodać tag pozwalający zidentyfikować niechciane wiadomości jako spam.|
-- **Przenoszenie niechcianych wiadomości do kosza**: Określ, czy serwery OVH mają automatycznie przenosić niechciane wiadomości do kosza.
+- **Identyfikacja niechcianych wiadomości**: Określ, czy serwery OVHcloud mają dodać tag pozwalający zidentyfikować niechciane wiadomości jako spam.|
+- **Przenoszenie niechcianych wiadomości do kosza**: Określ, czy serwery OVHcloud mają automatycznie przenosić niechciane wiadomości do kosza.
 
 Po dokonaniu wyboru zatwierdź zmiany, klikając polecenie `Zapisz zmiany`{.action}.
 

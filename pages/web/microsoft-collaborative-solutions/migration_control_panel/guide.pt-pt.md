@@ -184,7 +184,7 @@ Também pode migrar manualmente os seus endereços de e-mail para a nova oferta 
 
 ## Quer saber mais?
 
-[Como gerir os contactos (gestores) dos serviços OVH](../../customer/gestao_dos_contactos/){.external}.
+[Como gerir os contactos (gestores) dos serviços OVHcloud](../../customer/gestao_dos_contactos/){.external}.
 
 [Guias E-mail Pro](../../emails-pro/){.external}.
 

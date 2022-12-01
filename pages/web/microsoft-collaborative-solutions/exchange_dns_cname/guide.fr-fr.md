@@ -12,14 +12,14 @@ order: 5
 
 Lors de l'ajout d'un nom de domaine à votre offre e-mail, une configuration du champ CNAME (DNS) peut vous être demandée. Celle-ci a pour but de s'assurer que l'ajout du nom de domaine en question est légitime.
 
-**Apprenez pourquoi l'ajout d'un champ CNAME peut être requis et comment en ajouter un chez OVH.**
+**Apprenez pourquoi l'ajout d'un champ CNAME peut être requis et comment en ajouter un chez OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'une offre e-mail OVH.
+- Disposer d'une offre e-mail OVHcloud.
 - Avoir effectué l'ajout d'un nom de domaine sur votre offre e-mail demandant l'ajout d'un champ CNAME.
 - Pouvoir modifier la configuration de votre nom de domaine (sa zone DNS).
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 
@@ -31,9 +31,9 @@ Son but est de prouver que vous êtes bien l'administrateur du nom de domaine qu
 
 Ce diagnostic peut apparaître dans les cas suivants :
 
-- le nom de domaine déclaré n'est pas enregistré chez OVH ;
+- le nom de domaine déclaré n'est pas enregistré chez OVHcloud ;
 - le nom de domaine déclaré n'est pas géré par votre identifiant client ;
-- le nom de domaine déclaré n'utilise pas la configuration OVH (ses serveurs DNS).
+- le nom de domaine déclaré n'utilise pas la configuration OVHcloud (ses serveurs DNS).
 
 ![cnamedomainemail](images/cname_exchange_diagnostic.png){.thumbnail}
 
@@ -47,20 +47,20 @@ Le champ CNAME apparaît sur l'image.
 
 Dès lors, deux possibilités peuvent se présenter :
 
-- **votre domaine utilise la configuration  OVH** : vous pouvez réaliser la manipulation décrite ci-dessous depuis votre espace client OVH ;
+- **votre domaine utilise la configuration  OVH** : vous pouvez réaliser la manipulation décrite ci-dessous depuis votre espace client OVHcloud ;
 
 - **votre domaine n'utilise pas la configuration  OVH** : vous devez réaliser les modifications depuis l’interface vous permettant de gérer la configuration de votre domaine.
 
 > [!primary]
 >
-> Si votre nom de domaine est enregistré chez OVH, vous pouvez vérifier si ce dernier utilise notre configuration dans votre espace client depuis l’onglet `Serveurs DNS`{.action}, une fois le nom de domaine concerné sélectionné.
+> Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration dans votre espace client depuis l’onglet `Serveurs DNS`{.action}, une fois le nom de domaine concerné sélectionné.
 >
 
 ### Étape 3 : créer le champ CNAME dans la configuration OVH
 
 Cliquez sur `Noms de domaine`{.action} dans votre espace client, puis sur le nom de domaine concerné. Sélectionnez ensuite l'onglet `Zone DNS`{.action}.
 
-Un tableau devrait apparaître. Ce dernier affiche la configuration de votre domaine chez OVH. Celle-ci est constituée de plusieurs enregistrements DNS, tous symbolisés par une ligne du tableau.
+Un tableau devrait apparaître. Ce dernier affiche la configuration de votre domaine chez OVHcloud. Celle-ci est constituée de plusieurs enregistrements DNS, tous symbolisés par une ligne du tableau.
 
 Pour ajouter une entrée CNAME, cliquez sur le bouton `Ajouter une entrée`{.action}.
 

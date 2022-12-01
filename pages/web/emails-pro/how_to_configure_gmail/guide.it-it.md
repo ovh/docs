@@ -103,7 +103,7 @@ Una volta effettuata la convalida, l’indirizzo email OVHcloud compare nella sc
 
 Una volta completata la configurazione dell’indirizzo Email Pro non ti resta che utilizzarlo: da questo momento è infatti possibile inviare e ricevere messaggi dall’interfaccia di Gmail.
 
-Per inviare email dall’account OVH è necessario scegliere l’indirizzo di posta che eseguirà l’invio al momento della redazione del nuovo messaggio, dal campo `Da`{.action} della finestra di redazione.
+Per inviare email dall’account OVHcloud è necessario scegliere l’indirizzo di posta che eseguirà l’invio al momento della redazione del nuovo messaggio, dal campo `Da`{.action} della finestra di redazione.
 
 ![Email Pro](images/configuration-gmail-web-step6.png){.thumbnail}
 

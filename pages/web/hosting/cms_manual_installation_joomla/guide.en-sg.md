@@ -78,7 +78,7 @@ Once you are logged in to FileZilla.
 
 In the "Local site" section, which refers to the list of files on your computer, open the unzipped file entitled "Joomla!" where your CMS files will be located. 
 
-In the "Remote site" section, which refers to your OVH shared hosting package, open the "www" folder. This is the folder that you need to upload your CMS files to. 
+In the "Remote site" section, which refers to your OVHcloud shared hosting package, open the "www" folder. This is the folder that you need to upload your CMS files to. 
 
 If this folder does not exist you can create it.
 

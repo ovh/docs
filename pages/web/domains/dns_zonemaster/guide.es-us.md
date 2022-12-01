@@ -76,7 +76,7 @@ Si tiene más preguntas sobre Zonemaster, consulte [FAQ](https://zonemaster.net/
 
 ## Más información <a name="go-further"></a>
 
-[Cambiar los servidores DNS de un dominio en OVH](https://docs.ovh.com/us/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
+[Cambiar los servidores DNS de un dominio en OVHcloud](https://docs.ovh.com/us/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
 
 [Modificación de una zona DNS de OVHcloud](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.
 

@@ -10,13 +10,13 @@ order: 03
 
 ## Sumário
 
-Existem diferentes razões pelas quais tem de configurar o seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}. Por isso, a OVH criou um ficheiro que permite alterar determinadas definições: o **.ovhconfig**.
+Existem diferentes razões pelas quais tem de configurar o seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}. Por isso, a OVHcloud criou um ficheiro que permite alterar determinadas definições: o **.ovhconfig**.
 
 **Descubra o ficheiro .ovhconfig e saiba como configurá-lo.**
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVH](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
+- Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
 - Ter a palavra-passe do utilizador FTP para aceder ao seu espaço de armazenamento. 
 
 ## Instruções
@@ -37,7 +37,7 @@ Caso pretenda alterar o ficheiro .ovhconfig manualmente, continue a ler este man
 
 Tenha consigo o seu nome de utilizador FTP, a respetiva palavra-passe e o endereço do servidor FTP. De seguida, ligue-se ao seu espaço de armazenamento. Para mais informações, consulte o manual “[Aceder ao espaço de armazenamento](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space){.external}” (versão em inglês).
 
-**Se já não possuir estas informações**, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. Aqui, poderá encontrar todas as informações que lhe permitem ligar-se. Para mais informações sobre a palavra-passe do utilizador FTP, consulte o manual [“Modificar a palavra-passe de um utilizador FTP”](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/) (versão em inglês).
+**Se já não possuir estas informações**, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. Aqui, poderá encontrar todas as informações que lhe permitem ligar-se. Para mais informações sobre a palavra-passe do utilizador FTP, consulte o manual [“Modificar a palavra-passe de um utilizador FTP”](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/) (versão em inglês).
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 
@@ -72,7 +72,7 @@ Personalize os valores das variáveis em função da configuração que pretende
 |---|---|
 |app.engine|Permite alterar o motor PHP utilizado pelo alojamento. Insira “php” para ativar o acelerador PHP-FPM e “phpcgi” para o desativar.|
 |app.engine.version|Permite definir a [versão de PHP](https://www.ovhcloud.com/pt/web-hosting/uc-programming-language/){.external} utilizada pelo alojamento. Indique a versão que pretende utilizar.|
-|http.firewall|Permite ativar ou desativar a [firewall fornecida com os alojamentos web da OVH](https://www.ovhcloud.com/pt/web-hosting/options/){.external}. Insira “security” para ativar ou “none” para desativar.|
+|http.firewall|Permite ativar ou desativar a [firewall fornecida com os alojamentos web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/options/){.external}. Insira “security” para ativar ou “none” para desativar.|
 |environment|Permite gerir o comportamento da cache dos ficheiros estáticos do seu website, assim como o tratamento dos erros PHP. Insira “production” para maximizar a implementação de cache e ocultar os erros PHP, ou “development” para não aplicar nenhuma cache e apresentar os erros PHP.|
 |container.image|Permite alterar o ambiente de execução utilizado pelo alojamento. Indique um motor à sua escolha. Para mais informações, consulte a secção [“Descobrir as configurações disponíveis”](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/#descobrir-as-configuracoes-disponiveis_1){.external} do manual "Alterar a configuração do alojamento web".|
 

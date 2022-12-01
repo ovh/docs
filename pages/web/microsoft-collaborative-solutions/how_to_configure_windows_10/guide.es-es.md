@@ -40,7 +40,7 @@ Cumplimente la información de su cuenta:
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
 |Nombre de usuario|Introduzca la dirección de correo electrónico completa.|
 |Dominio|Deje este campo vacío.|
-|Servidor|Indique el servidor en el que está alojado su servicio Exchange. Puede consultar esta información en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la pestaña `Información general`{.action} de su servicio Exchange, en el recuadro **Conexión**.|
+|Servidor|Indique el servidor en el que está alojado su servicio Exchange. Puede consultar esta información en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la pestaña `Información general`{.action} de su servicio Exchange, en el recuadro **Conexión**.|
 |El servidor requiere conexión cifrada (SSL)|Deje marcada esta casilla.|
 |Nombre de cuenta|Introduzca un nombre que le permita diferenciar su cuenta del resto de cuentas de su aplicación Correo.|
 
@@ -56,7 +56,7 @@ Si lo desea, puede realizar una prueba de envío para comprobar que la cuenta es
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVH ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovhcloud.com/es-es/emails/){.external} y está disponible en la dirección <https://www.ovhcloud.com/es-es/mail/>. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovhcloud.com/es-es/emails/){.external} y está disponible en la dirección <https://www.ovhcloud.com/es-es/mail/>. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
 

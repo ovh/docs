@@ -28,7 +28,7 @@ The security policy management of your Exchange service has four aspects:
 - strengthening the verification of incoming messages on our servers and to your Exchange addresses
 - defining how the so-called "unwanted" messages will be displayed in your Exchange addresses
 
-To access the security policy of your Exchange service, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and make sure you are in the "Web" section. Click `Microsoft`{.action}, then `Exchange`{.action}, and finally, select the Exchange service concerned.
+To access the security policy of your Exchange service, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and make sure you are in the "Web" section. Click `Microsoft`{.action}, then `Exchange`{.action}, and finally, select the Exchange service concerned.
 
 On the page that appears, click on the `Security`{.action} tab.
 

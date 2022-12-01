@@ -10,7 +10,7 @@ order: 03
 
 ## Objectif
 
-[Camaleon CMS](http://camaleon.tuzitio.com/){.external} est un système de gestion de contenu (Content System Management, CMS en anglais) écrit en Ruby, basé sur le framework web [Ruby on Rails](https://rubyonrails.org/){.external}. L’[hébergement Cloud Web OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) permet d’utiliser Ruby comme moteur d’exécution pour vos sites web et donc d’y installer et héberger Camaleon CMS ou toute autre application web conçue en Ruby. Dans ce tutoriel, nous allons installer un site web avec Camaleon CMS sur un hébergement Cloud Web d’OVH et le mettre à disposition derrière votre nom de domaine.
+[Camaleon CMS](http://camaleon.tuzitio.com/){.external} est un système de gestion de contenu (Content System Management, CMS en anglais) écrit en Ruby, basé sur le framework web [Ruby on Rails](https://rubyonrails.org/){.external}. L’[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) permet d’utiliser Ruby comme moteur d’exécution pour vos sites web et donc d’y installer et héberger Camaleon CMS ou toute autre application web conçue en Ruby. Dans ce tutoriel, nous allons installer un site web avec Camaleon CMS sur un hébergement Cloud Web d’OVH et le mettre à disposition derrière votre nom de domaine.
 
 **Découvrez comment installer un Camaleon CMS sur Cloud Web**
 
@@ -18,7 +18,7 @@ order: 03
 ## Prérequis
 
 - Disposer d’un [hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
 - Ce que vous devez savoir :
     - Les bases de l’écosystème Ruby.
     - Se connecter en SSH.
@@ -28,7 +28,7 @@ order: 03
 
 ### Étape 1 : activer Ruby comme moteur d’exécution
 
-Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`. 
+Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`. 
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d’exécution Ruby est bien activé. Si tel est le cas, poursuivez vers l’étape 2  *Associer Ruby à un multisite* 
 
@@ -239,7 +239,7 @@ democld@cloudweb-ssh:~/camaleon $ RAILS_ENV=production rake assets:precompile
 
 ### Étape 6 : redémarrer le *daemon* Ruby
 
-Pour redémarrer le *daemon* Ruby, retournez sur votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action}, puis sur `Redémarrer`{.action}. 
+Pour redémarrer le *daemon* Ruby, retournez sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action}, puis sur `Redémarrer`{.action}. 
 
 Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votremultisite. 
 

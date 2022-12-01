@@ -24,7 +24,7 @@ Il progetto è organizzato gradualmente in ordine crescente di importanza e diff
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo VPS. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o contattare l'amministratore del servizio. OVH non potrà fornirti assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo VPS. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o contattare l'amministratore del servizio. OVHcloud non potrà fornirti assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
 >
 
 ## Prerequisiti

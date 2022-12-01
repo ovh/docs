@@ -87,7 +87,7 @@ A coluna `Diagnóstico`{.action} permite-lhe controlar a configuração DNS do d
 
  *Para um registo CNAME*, recorra ao guia [«Criar um registo CNAME para associar um domínio»](../../microsoft-collaborative-solutions/exchange_20132016_adicionar_um_campo_do_tipo_cname/). 
 <br> *Para um registo MX*, recorra ao guia [«Adicionar um campo MX à configuração do domínio»](../../domains/e-mail-partilhado-manual-de-configuracao-mx-com-zona-dns-ovh/). 
-<br> *Para um registo SRV*, informe qual é a sua zona DNS recorrendo às informações apresentadas quando clica na etiqueta vermelha. Para adicionar este registo, recorra ao guia [« Editar uma zona DNS da OVH »](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+<br> *Para um registo SRV*, informe qual é a sua zona DNS recorrendo às informações apresentadas quando clica na etiqueta vermelha. Para adicionar este registo, recorra ao guia [« Editar uma zona DNS da OVHcloud »](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
 
 ![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
 

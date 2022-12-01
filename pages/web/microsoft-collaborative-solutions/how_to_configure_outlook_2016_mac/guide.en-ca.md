@@ -45,7 +45,7 @@ Enter your email address, then click `Continue`{.action}. If you are asked to ch
 |Mail address|Enter a name that will distinguish this account from any other accounts added in Outlook.|
 |DOMAIN\username or email address|Enter your full email address.|
 |Password|Enter the password for your email address.|
-|Server|Depending on the DNS configuration for your domain name, you may not need to enter the server. If you do, enter the details for the server your Exchange service is hosted on. You will find these details in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Depending on the DNS configuration for your domain name, you may not need to enter the server. If you do, enter the details for the server your Exchange service is hosted on. You will find these details in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
 
 Once you have entered this information, click `Add account`{.action}. If the information is correct, Outlook will successfully connect to the account.
 
@@ -57,7 +57,7 @@ To check that the account has been properly configured, you can send a test emai
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH offers a web application that includes various collaborative features, which can be accessed at <https://ex.mail.ovh.ca/>. You can log in using your email credentials.
+OVHcloud offers a web application that includes various collaborative features, which can be accessed at <https://ex.mail.ovh.ca/>. You can log in using your email credentials.
 
 ## Go further
 

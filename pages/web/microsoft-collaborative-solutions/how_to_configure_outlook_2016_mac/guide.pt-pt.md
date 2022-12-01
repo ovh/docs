@@ -47,7 +47,7 @@ Introduza o seu endereço de e-mail e clique em `Continuar`{.action}. Se aparece
 |Endereço de e-mail|Insira um nome que lhe permita reconhecer esta conta entre as outras presentes na aplicação Outlook.|
 |DOMAINE\\nome de utilizador ou endereço de e-mail|Insira o endereço de e-mail completo.|
 |Palavra-passe|Insira a palavra-passe do e-mail.|
-|Servidor|Dependendo da configuração DNS do seu domínio, a opção de inserir o servidor pode ser facultativa. Caso seja necessário, indique o servidor em que está alojado o serviço Exchange. Poderá encontrá-lo na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Informações gerais`{.action} do serviço Exchange, depois em `Conexão`{.action}.|
+|Servidor|Dependendo da configuração DNS do seu domínio, a opção de inserir o servidor pode ser facultativa. Caso seja necessário, indique o servidor em que está alojado o serviço Exchange. Poderá encontrá-lo na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Informações gerais`{.action} do serviço Exchange, depois em `Conexão`{.action}.|
 
 Concluída esta etapa, clique no botão `Adicionar conta`{.action}. Se os dados estiverem corretos, a aplicação ligar-se-á à conta.
 
@@ -59,7 +59,7 @@ Se quiser, pode efetuar um teste de envio para verificar se a conta está corret
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVH disponibiliza uma aplicação web que tem [funcionalidades de colaboração](https://www.ovh.com/pt/emails/){.external} disponível no endereço <https://www.ovh.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
+A OVHcloud disponibiliza uma aplicação web que tem [funcionalidades de colaboração](https://www.ovh.com/pt/emails/){.external} disponível no endereço <https://www.ovh.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ## Quer saber mais?
 

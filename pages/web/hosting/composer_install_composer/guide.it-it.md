@@ -20,9 +20,9 @@ order: 02
 
 > [!warning]
 >
-> OVH mette a tua disposizione servizi di cui tu sei il responsabile per la configurazione e la gestione. garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> OVHcloud mette a tua disposizione servizi di cui tu sei il responsabile per la configurazione e la gestione. garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVH non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 > 
 
 ## Prerequisiti
@@ -66,13 +66,13 @@ Per installare Symfony 2 semplicemente, esegui il comando:
 php composer.phar create-project symfony/framework-standard-edition my_project_name "2.7*"
 ```
 
-Allo stesso modo, puoi utilizzare l'API di OVH dal tuo hosting utilizzando il wrapper ufficiale. Per farlo, è sufficiente aggiungere un file chiamato composer.json che contiene la lista delle dipendenze di cui hai bisogno. Ecco un esempio di questo file con il wrapper dell'API OVHcloud:
+Allo stesso modo, puoi utilizzare l'API di OVHcloud dal tuo hosting utilizzando il wrapper ufficiale. Per farlo, è sufficiente aggiungere un file chiamato composer.json che contiene la lista delle dipendenze di cui hai bisogno. Ecco un esempio di questo file con il wrapper dell'API OVHcloud:
 
 
 ```json
 1. {
 2.     "name": "Esempio di Applicazione",
-3.     "descrizione": "This an esempio of OVH APIs wrapper use",
+3.     "descrizione": "This an esempio of OVHcloud APIs wrapper use",
 4.     "require": {
 5.         "ovh/ovh": "1.1.*"
 6.     }

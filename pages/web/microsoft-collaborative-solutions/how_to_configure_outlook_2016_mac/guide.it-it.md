@@ -44,7 +44,7 @@ Inserisci il tuo indirizzo email e clicca su `Avanti`{.action}. Se ti viene chie
 |Indirizzo di posta elettronica|Inserisci un nome che ti permetterà di riconoscere questo account tra quelli presenti nella tua applicazione Outlook.|
 |DOMINIO\nome utente o indirizzo email|Inserisci l'indirizzo email completo|
 |Password|Digita la password associata all'account|
-|Server|Sulla base della configurazione DNS del tuo nome di dominio, l'inserimento delle informazioni relative al server potrebbe essere facoltativo. Se necessario, indica il server sul quale è ospitato il tuo servizio Exchange. Puoi ritrovarlo nel tuo Spazio Cliente OVH nella scheda `Informazioni generali`{.action} del servizio Exchange interessato, sotto la voce `Connessione`{.action}.|
+|Server|Sulla base della configurazione DNS del tuo nome di dominio, l'inserimento delle informazioni relative al server potrebbe essere facoltativo. Se necessario, indica il server sul quale è ospitato il tuo servizio Exchange. Puoi ritrovarlo nel tuo Spazio Cliente OVHcloud nella scheda `Informazioni generali`{.action} del servizio Exchange interessato, sotto la voce `Connessione`{.action}.|
 
 Una volta inseriti tutti i dati, clicca su `Aggiungi account`{.action}. Se i dati inseriti sono corretti, la connessione all'account andrà a buon fine.
 
@@ -56,7 +56,7 @@ Per verificare la corretta configurazione dell'account esegui un test di invio.
 
 Una volta configurato l'indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
+OVHcloud ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 

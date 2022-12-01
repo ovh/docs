@@ -280,7 +280,7 @@ In the new window, click Permissions, then make your changes.
 ## Re-open the website
 You have the option to re-open your website by running a custom command.
 
-In most cases, you will run this command after OVH has shut down your website as a security precaution following a hack.
+In most cases, you will run this command after OVHcloud has shut down your website as a security precaution following a hack.
 
 To use this command:
 

@@ -30,7 +30,7 @@ Para funcionar, cada servidor guarda na sua memória cache uma parte do seu webs
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Ter um serviço de [alojamento Web da OVH](https://www.ovhcloud.com/pt/web-hosting/).
+- Ter um serviço de [alojamento Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
 
 ## Instruções
 

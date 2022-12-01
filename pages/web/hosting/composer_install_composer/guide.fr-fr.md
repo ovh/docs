@@ -16,7 +16,7 @@ order: 02
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -62,13 +62,13 @@ Si vous souhaitez installer Symfony 2 simplement, vous pouvez par exemple lancer
 php composer.phar create-project symfony/framework-standard-edition my_project_name "2.7.*"
 ```
 
-De la même manière, vous pouvez utiliser l'API de OVH depuis votre hébergement en utilisant le wrapper officiel. Pour cela, il suffit d'ajouter un fichier nommé composer.json qui contient la liste des dépendances dont vous avez besoin. Voici un exemple de ce fichier avec le wrapper d'API OVHcloud :
+De la même manière, vous pouvez utiliser l'API de OVHcloud depuis votre hébergement en utilisant le wrapper officiel. Pour cela, il suffit d'ajouter un fichier nommé composer.json qui contient la liste des dépendances dont vous avez besoin. Voici un exemple de ce fichier avec le wrapper d'API OVHcloud :
 
 
 ```json
 1. {
 2.     "name": "Example Application",
-3.     "description": "This is an example of OVH APIs wrapper usage",
+3.     "description": "This is an example of OVHcloud APIs wrapper usage",
 4.     "require": {
 5.         "ovh/ovh": "1.1.*"
 6.     }

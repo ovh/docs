@@ -1,6 +1,6 @@
 ---
 title: 'Backup einer Webhosting-Datenbank exportieren'
-excerpt: 'Hier erfahren Sie, wie Sie ein Backup einer Datenbank Ihres OVH Webhostings exportieren.'
+excerpt: 'Hier erfahren Sie, wie Sie ein Backup einer Datenbank Ihres OVHcloud Webhostings exportieren.'
 slug: webhosting_hilfe_zum_export_von_datenbanken
 legacy_guide_number: g1394
 section: 'Datenbanken'
@@ -13,38 +13,38 @@ order: 03
 
 Fast alle Content Management Systeme (CMS) wie WordPress oder Joomla! verwenden heutzutage Datenbanken, um sogenannte dynamische Inhalte wie beispielsweise Kommentare oder Artikel zu speichern. Es kann aus verschiedenen Gründen erforderlich sein, ein Backup Ihrer Datenbank zu erstellen, um deren Inhalt zu exportieren.
 
-**In dieser Anleitung erfahren Sie, wie Sie ein Backup der Datenbank Ihres OVH Webhostings erstellen.**
+**In dieser Anleitung erfahren Sie, wie Sie ein Backup der Datenbank Ihres OVHcloud Webhostings erstellen.**
 
 ## Voraussetzungen
 
 - Sie haben ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
-- Ihr [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot beinhaltet eine Datenbank.
+- Ihr [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot beinhaltet eine Datenbank.
 - Je nach der verwendeten Backup-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhosting Angebots über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder die erforderlichen Login-Daten, um sich mit der Datenbank zu verbinden.
 
 ## Beschreibung
 
 Bevor Sie beginnen, wählen Sie die Methode aus, die Sie für den Export des Backups der Datenbank anwenden möchten. Entsprechend Ihrer technischen Kenntnisse zu diesem Thema stehen Ihnen mehrere Möglichkeiten zur Verfügung.
 
-- **Backup über das OVH Backup-Tool**: Erstellen Sie die Backups Ihrer Datenbanken über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Hierfür sind keine besonderen technischen Kenntnisse erforderlich.
+- **Backup über das OVHcloud Backup-Tool**: Erstellen Sie die Backups Ihrer Datenbanken über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Hierfür sind keine besonderen technischen Kenntnisse erforderlich.
 
 - **Backup über das phpMyAdmin-Webinterface**: Loggen Sie sich im phpMyAdmin-Interface ein, um dort die Aktion durchzuführen. Sie sollten für diese Methode mit dem phpMyAdmin-Webinterface vertraut sein.
 
-- **Backup über ein Skript erstellen**: Hierzu muss zunächst ein Skript geschrieben und auf Ihrem OVH Webhosting gespeichert werden. Für das Schreiben des Skripts sind spezifische technische Kenntnisse erforderlich.
+- **Backup über ein Skript erstellen**: Hierzu muss zunächst ein Skript geschrieben und auf Ihrem OVHcloud Webhosting gespeichert werden. Für das Schreiben des Skripts sind spezifische technische Kenntnisse erforderlich.
 
-- **Backup über einen SSH-Befehl erstellen**: Verbinden Sie sich hierfür via SSH mit Ihrem Speicherplatz und verwenden Sie die entsprechenden Befehle für die Erstellung des Backups. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot erforderlich.
+- **Backup über einen SSH-Befehl erstellen**: Verbinden Sie sich hierfür via SSH mit Ihrem Speicherplatz und verwenden Sie die entsprechenden Befehle für die Erstellung des Backups. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot erforderlich.
 
-Einige der oben aufgeführten Methoden lassen sich nicht über ein OVH Interface ausführen. Daher können wir Ihnen nicht sagen, wie diese umzusetzen sind. Im Folgenden geben wir Ihnen hierzu einige Informationen, sie ersetzen jedoch nicht die Unterstützung eines Webmasters. 
+Einige der oben aufgeführten Methoden lassen sich nicht über ein OVHcloud Interface ausführen. Daher können wir Ihnen nicht sagen, wie diese umzusetzen sind. Im Folgenden geben wir Ihnen hierzu einige Informationen, sie ersetzen jedoch nicht die Unterstützung eines Webmasters. 
 
 Folgen Sie dieser Anleitung nun entsprechend der von Ihnen ausgewählten Backup-Methode.
 
 > [!warning]
 >
-> OVH stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVH leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
 >
 
-### Backup mit dem OVH Backup-Tool exportieren
+### Backup mit dem OVHcloud Backup-Tool exportieren
 
 Loggen Sie sich für den Zugriff auf das Backup-Tool in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
@@ -68,7 +68,7 @@ Bleiben Sie im Tab `Datenbanken`{.action} und klicken Sie auf die drei Punkte re
 
 ![databasedump](images/database-dump-step4.png){.thumbnail}
 
-Es werden Ihnen nun alle verfügbaren Backups der ausgewählten Datenbank angezeigt. In der Tabelle finden Sie das genaue Erstellungsdatum des jeweiligen Backups sowie das Datum, zu dem dieses vom OVH Backup-Tool wieder gelöscht wird.
+Es werden Ihnen nun alle verfügbaren Backups der ausgewählten Datenbank angezeigt. In der Tabelle finden Sie das genaue Erstellungsdatum des jeweiligen Backups sowie das Datum, zu dem dieses vom OVHcloud Backup-Tool wieder gelöscht wird.
 
 Klicken Sie auf die drei Punkte rechts neben dem Backup, das Sie exportieren möchten, und gehen Sie dann auf `Sicherung herunterladen`{.action}, um das Backup herunterzuladen. Es öffnet sich ein Fenster, in dem Sie dazu aufgefordert werden, das Backup auf Ihrem Rechner zu speichern. Bestätigen Sie und warten Sie, bis das Backup heruntergeladen wurde.
 
@@ -90,7 +90,7 @@ Geben Sie im phpMyAdmin-Webinterface die Informationen zu Ihrer Datenbank ein, w
 
 > [!warning]
 >
-> Da das phpMyAdmin-Webinterface nicht von OVH entwickelt wurde, können wir Ihnen nicht sagen, wie das Backup durchzuführen ist. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder sich auf der Website des Herausgebers zu informieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Da das phpMyAdmin-Webinterface nicht von OVHcloud entwickelt wurde, können wir Ihnen nicht sagen, wie das Backup durchzuführen ist. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder sich auf der Website des Herausgebers zu informieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 ### Backup über ein Skript exportieren

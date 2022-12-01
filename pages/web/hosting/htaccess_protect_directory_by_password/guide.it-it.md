@@ -37,7 +37,7 @@ A volte potrebbe essere necessario proteggere l'accesso a una parte del tuo sito
 >
 > La soluzione proposta è solo una delle possibilità tecniche per creare uno spazio amministratore sul tuo sito. Inoltre, è possibile utilizzare la funzionalità [CMS in 1 click](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/) proposta da [OVHcloud](https://www.ovhcloud.com/it/).
 >
-> Per qualsiasi richiesta relativa alla creazione o alla programmazione del tuo sito, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). OVH non sarà infatti in grado di fornirti assistenza su questi argomenti.
+> Per qualsiasi richiesta relativa alla creazione o alla programmazione del tuo sito, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). OVHcloud non sarà infatti in grado di fornirti assistenza su questi argomenti.
 >
 
 ### Step 1: creare l'arborescenza

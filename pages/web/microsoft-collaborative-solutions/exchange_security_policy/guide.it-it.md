@@ -75,12 +75,12 @@ Una volta completate le informazioni, clicca su `Seguente`{.action} > `Conferma`
 
 ### Aumentare il controllo dei messaggi in entrata (esclusivamente per Exchange) <a name="incoming-messages-verification"></a>
 
-Questa azione permette di indicare se i server OVH devono verificare che i messaggi ricevuti provengano da una sorgente legittima (verifiche DKIM e/o SPF).
+Questa azione permette di indicare se i server OVHcloud devono verificare che i messaggi ricevuti provengano da una sorgente legittima (verifiche DKIM e/o SPF).
 
 Per farlo, seleziona le caselle interessate nella tabella seguente:
 
-- **Attiva la verifica della firma DKIM**: Indica se i server OVH devono verificare la firma DKIM dei messaggi ricevuti sugli account Exchange. Questa azione garantisce l’autenticità del dominio del mittente e l’integrità del messaggio. Consente inoltre di identificare invii non legittimi, che verranno contrassegnati come Spam.
-- **Attiva la verifica della protezione SPF**: Indica se i server OVH devono verificare che la sorgente dei messaggi ricevuti sia presente nel record SPF del dominio mittente. Questa verifica consente di identificare invii non legittimi, che verranno contrassegnati come Spam.
+- **Attiva la verifica della firma DKIM**: Indica se i server OVHcloud devono verificare la firma DKIM dei messaggi ricevuti sugli account Exchange. Questa azione garantisce l’autenticità del dominio del mittente e l’integrità del messaggio. Consente inoltre di identificare invii non legittimi, che verranno contrassegnati come Spam.
+- **Attiva la verifica della protezione SPF**: Indica se i server OVHcloud devono verificare che la sorgente dei messaggi ricevuti sia presente nel record SPF del dominio mittente. Questa verifica consente di identificare invii non legittimi, che verranno contrassegnati come Spam.
 
 Una volta effettuata la scelta, clicca su `Salva le modifiche`{.action} per confermare l’operazione. 
 
@@ -90,8 +90,8 @@ Questa azione permette di indicare se assegnare ai messaggi indesiderati un tag 
 
 Per farlo, seleziona le caselle interessate nella tabella seguente:
 
-- **Identifica i messaggi indesiderati**: Indica se i server OVH devono aggiungere un tag per identificare la posta indesiderata come Spam.
-- **Sposta la posta indesiderata nel cestino**: Indica se i server OVH devono spostare automaticamente la posta indesiderata nel cestino.
+- **Identifica i messaggi indesiderati**: Indica se i server OVHcloud devono aggiungere un tag per identificare la posta indesiderata come Spam.
+- **Sposta la posta indesiderata nel cestino**: Indica se i server OVHcloud devono spostare automaticamente la posta indesiderata nel cestino.
 
 Una volta effettuata la scelta, clicca su `Salva le modifiche`{.action} per confermare l’operazione. 
 
