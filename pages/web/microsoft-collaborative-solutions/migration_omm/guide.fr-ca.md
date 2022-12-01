@@ -1,7 +1,7 @@
 ---
-title: Migrer des comptes e-mail via OVHcloud Mail Migrator
+title: Migrer des comptes e-mail via OVH Mail Migrator
 slug: migration-comptes-e-mail-ovh-mail-migrator
-excerpt: Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVHcloud Mail Migrator
+excerpt: Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVH Mail Migrator
 section: Migration d'un compte Exchange
 order: 2
 ---
@@ -10,9 +10,9 @@ order: 2
 
 ## Objectif
 
-[OVHcloud Mail Migrator](https://omm.ovh.net/){.external} est un outil créé par OVHcloud. Il permet de migrer vos comptes e-mail vers vos adresses e-mail OVHcloud. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos adresses e-mails.
+[OVH Mail Migrator](https://omm.ovh.net/){.external} est un outil créé par OVHcloud. Il permet de migrer vos comptes e-mail vers vos adresses e-mail OVHcloud. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos adresses e-mails.
 
-**Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVHcloud Mail Migrator.**
+**Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVH Mail Migrator.**
 
 ## Prérequis
 
@@ -22,7 +22,7 @@ order: 2
 
 ## En pratique
 
-[OVHcloud Mail Migrator](https://omm.ovh.net/){.external} est accessible depuis la page <https://omm.ovh.net/>. Il gère trois types de migrations et permet de les suivre.
+[OVH Mail Migrator](https://omm.ovh.net/){.external} est accessible depuis la page <https://omm.ovh.net/>. Il gère trois types de migrations et permet de les suivre.
 
 |Type de migration|Description|
 |---|---|
@@ -119,7 +119,7 @@ Sur la page qui s'affiche, complétez les informations du **Nouveau projet** :
 |Information|Description|
 |---|---|
 |Nom|Définissez un nom à votre projet de migration.|
-|Mot de passe|Définissez un mot de passe à votre projet, afin de le gérer depuis l'outil OVHcloud Mail Migrator.|
+|Mot de passe|Définissez un mot de passe à votre projet, afin de le gérer depuis l'outil OVH Mail Migrator.|
 |E-mail|Renseignez une adresse e-mail qui recevra des notifications quant à l'avancement de votre projet de migration.|
 
 Cliquez ensuite sur `Créer le projet`{.action}. La page qui apparaît alors vous permet de gérer et de suivre votre projet de migration. Pensez à conserver l'**identifiant du projet** affiché.
@@ -131,7 +131,7 @@ Vous pouvez à présent commencer vos migrations de comptes. Pour cela, plusieur
 |Continuer|Permet de suivre l'avancement des migrations de votre projet. Un bouton vous offre également la possibilité de mettre en attente et de reprendre des migrations.|
 |Création multiple|Permet d'ajouter dans la file d'attente plusieurs migrations grâce à l'import d'un fichier (CSV ou Excel). Ce dernier doit respecter un formatage précis ; nous vous recommandons d'utiliser les modèles fournis.|
 |Ajouter|Permet d'ajouter compte par compte des migrations dans la file d'attente. Vous pourrez cependant conserver les serveurs source et de destination en tant que valeur par défaut.|
-|Options|Permet de personnaliser les éléments que l'outil OVHcloud Mail Migrator doit migrer ainsi que le nombre de requêtes simultanées que l'outil peut effectuer lorsqu'il réalise les migrations.|
+|Options|Permet de personnaliser les éléments que l'outil OVH Mail Migrator doit migrer ainsi que le nombre de requêtes simultanées que l'outil peut effectuer lorsqu'il réalise les migrations.|
 |Déconnexion|Permet de vous déconnecter de la page de suivi du projet ; cela vous offre la possibilité de vous identifier pour suivre un éventuel autre projet de migration.|
 
 Si vous souhaitez accéder de nouveau au suivi de votre projet de migration, connectez-vous à la page <https://omm.ovh.net/>, passez votre souris sur l'onglet `Projet`{.action} dans la barre de menu en haut de la page, puis cliquez sur `Suivre un projet`{.action}. Vous devrez renseigner alors l'`Identifiant du projet de migration`{.action} ainsi que le `Mot de passe`{.action} associé à ce dernier.

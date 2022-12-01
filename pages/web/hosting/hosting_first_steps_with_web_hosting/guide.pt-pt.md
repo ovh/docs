@@ -88,7 +88,7 @@ A utilização dos serviços de e-mail incluídos no [alojamento web](https://ww
 
 ![Criar um endereço de e-mail](images/create_an_email_address.png){/thumbnail}
 
-Siga as instruções e insira a informação necessária. Repita este passo para criar mais endereços. Pretende transferir as suas mensagens de e-mail para a OVH? Use o [OVHcloud Mail Migrator](https://omm.ovh.net/){.external}, e siga as instruções apresentadas. 
+Siga as instruções e insira a informação necessária. Repita este passo para criar mais endereços. Pretende transferir as suas mensagens de e-mail para a OVH? Use o [OVH Mail Migrator](https://omm.ovh.net/){.external}, e siga as instruções apresentadas. 
 
 Para mais informações, consulte o guia: [Como criar um endereço de e-mail](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external} e [Transferir o meu site para a OVHcloud](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (Versão PT disponível em breve).
 

@@ -1,7 +1,7 @@
 ---
-title: Migrating email accounts using OVHcloud Mail Migrator
+title: Migrating email accounts using OVH Mail Migrator
 slug: exchange-account-migration-with-ovh-mail-migrator
-excerpt: Find out how to migrate your email accounts to OVHcloud using our OVHcloud Mail Migrator tool
+excerpt: Find out how to migrate your email accounts to OVHcloud using our OVH Mail Migrator tool
 section: Migrate an Exchange account
 ---
 
@@ -9,9 +9,9 @@ section: Migrate an Exchange account
 
 ## Objective
 
-[OVHcloud Mail Migrator](https://omm.ovh.net/){.external} is a tool created by OVHcloud. It is used to migrate your email accounts to your OVHcloud email addresses. The process covers different types of content, such as emails, contacts, calendars and tasks, provided that they are compatible with your email addresses.
+[OVH Mail Migrator](https://omm.ovh.net/){.external} is a tool created by OVHcloud. It is used to migrate your email accounts to your OVHcloud email addresses. The process covers different types of content, such as emails, contacts, calendars and tasks, provided that they are compatible with your email addresses.
 
-**Find out how to migrate your email accounts to OVHcloud using our OVHcloud Mail Migrator tool.**
+**Find out how to migrate your email accounts to OVHcloud using our OVH Mail Migrator tool.**
 
 ## Requirements
 
@@ -21,7 +21,7 @@ section: Migrate an Exchange account
 
 ## Instructions
 
-[OVHcloud Mail Migrator](https://omm.ovh.net/){.external} can be accessed from the page <https://omm.ovh.net/>. It handles three types of migration, and allows you to track their progress.
+[OVH Mail Migrator](https://omm.ovh.net/){.external} can be accessed from the page <https://omm.ovh.net/>. It handles three types of migration, and allows you to track their progress.
 
 |Migration type|Description|
 |---|---|
@@ -118,7 +118,7 @@ On the page that opens, fill in the information for the **New project:**
 |Information|Description|
 |---|---|
 |Name|Define a name for your migration project.|
-|Password|Define a password for your project, so that you can manage it from the OVHcloud Mail Migrator tool.|
+|Password|Define a password for your project, so that you can manage it from the OVH Mail Migrator tool.|
 |Email|Enter an email address for receiving notifications on the progress of your migration project.|
 
 Then click `Create project`{.action}. In the page that opens, you can manage and track your migration project. Remember to save the **Project ID** shown.
@@ -130,7 +130,7 @@ You can now begin migrating your accounts. To do this, you can use several tabs:
 |Continue|Used to track the progress of the migrations for your project. There is also a button you can use to pause and restart your migrations.|
 |Multiple creation|Used to add several migrations to the queue, by importing a file (CSV or Excel). This file must be in a specific format. We recommend using the templates provided.|
 |Add|Used to add migrations to the queue, one account at a time. However, you can keep the source and destination servers as default values.|
-|Options|Can be used to customise which elements the OVHcloud Mail Migrator should migrate, and the number of concurrent requests that the tool can handle when carrying out migrations.|
+|Options|Can be used to customise which elements the OVH Mail Migrator should migrate, and the number of concurrent requests that the tool can handle when carrying out migrations.|
 |Log out|Used to log out of the project tracking page. You can then log in, and track other migration projects.|
 
 If you want to return to the tracking for your migration project, log in to the <https://omm.ovh.net/> tool, move your mouse over the `Project`{.action} tab on the menu bar at the top of the page, then click `Track a project`{.action}. You will need to enter the `Migration project ID`{.action}, and the `Password`{.action} associated with it.

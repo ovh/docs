@@ -89,7 +89,7 @@ Możesz pominąć ten etap, jeżeli nie chcesz korzystać z adresów e-mail wcho
 
 ![Załóż adres e-mail](images/create_an_email_address.png){/thumbnail}
 
-Wpisz wymagane informacje aż do utworzenia adresu e-mail. Powtórz ten etap, aby utworzyć większą liczbę adresów. Jeżeli jesteś w trakcie przenoszenia Twoich adresów e-mail na serwer OVHcloud, skorzystaj z naszego narzędzia [OVHcloud Mail Migrator] (https://omm.ovh.net/){.external}, które pomoże Ci wykonać wszystkie kroki. 
+Wpisz wymagane informacje aż do utworzenia adresu e-mail. Powtórz ten etap, aby utworzyć większą liczbę adresów. Jeżeli jesteś w trakcie przenoszenia Twoich adresów e-mail na serwer OVHcloud, skorzystaj z naszego narzędzia [OVH Mail Migrator] (https://omm.ovh.net/){.external}, które pomoże Ci wykonać wszystkie kroki. 
 
 Jeżeli chcesz otrzymać więcej informacji dotyczących tworzenia adresu e-mail lub przenoszenia usług do OVHcloud, zapoznaj się z dokumentacją: [Tworzenie konta e-mail](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external} oraz [Przenoszenie strony na serwer OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}, o ile jest on wykorzystywany.
 
