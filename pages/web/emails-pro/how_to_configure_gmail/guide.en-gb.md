@@ -106,7 +106,7 @@ To send an email from your OVHcloud Email Pro address via the Gmail online inter
 
 ![emailpro](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Please also note that you can still use our online interface, accessible via <https://www.ovh.co.uk/mail>, to access your OVH Email Pro address. You just need to use your usual credentials to log in.
+Please also note that you can still use our online interface, accessible via <https://www.ovh.co.uk/mail>, to access your OVHcloud Email Pro address. You just need to use your usual credentials to log in.
 
 ## Go further
 

@@ -119,7 +119,7 @@ cat nome_database.sql | mysql --host=server --user=utente --port=porta --passwor
 
 > [!primary]
 >
-> In alcuni casi, è possibile che la RAM disponibile nella tua istanza CloudDB non permetta di realizzare l'esportazione o l'importazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVH nello Spazio Cliente. Se necessario, consulta la documentazione ["Iniziare a utilizzare il servizio CloudDB"](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
+> In alcuni casi, è possibile che la RAM disponibile nella tua istanza CloudDB non permetta di realizzare l'esportazione o l'importazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVHcloud nello Spazio Cliente. Se necessario, consulta la documentazione ["Iniziare a utilizzare il servizio CloudDB"](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
 >
 
 ## Per saperne di più

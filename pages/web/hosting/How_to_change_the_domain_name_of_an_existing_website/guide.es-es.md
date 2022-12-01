@@ -106,7 +106,7 @@ Vamos a diferenciar dos tipos de sitios web:
 
 La mayoría de los CMS permiten directamente, desde su espacio de administración *back-office*, sustituir el dominio inicialmente declarado para su sitio web por otro.
 
-Los CMS son desarrollados por terceros no gestionados por OVHcloud. A continuación ofrecemos los enlaces a la documentación oficial de los distintos CMS que ofrece OVH para su instalación en nuestros alojamientos compartidos:
+Los CMS son desarrollados por terceros no gestionados por OVHcloud. A continuación ofrecemos los enlaces a la documentación oficial de los distintos CMS que ofrece OVHcloud para su instalación en nuestros alojamientos compartidos:
 
 
 - WordPress: <https://wordpress.org/support/article/changing-the-site-url/>

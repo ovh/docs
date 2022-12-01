@@ -7,7 +7,7 @@ order: 01
 
 **Dernière mise à jour le 07/01/2021**
 
-Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVH. Cela vous permettra par exemple de trouver quelle adresse IP renseigner dans vos zones DNS, en fonction de :
+Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVHcloud. Cela vous permettra par exemple de trouver quelle adresse IP renseigner dans vos zones DNS, en fonction de :
 
 - votre cluster
 - vos options (CDN, SSL payant, SSL gratuit...)

@@ -10,13 +10,13 @@ order: 03
 
 ## Objetivo
 
-Existen diversos motivos por los que podría tener que modificar la configuración de su [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}. Para ello, OVH pone a su disposición el archivo **.ovhconfig**, con el que podrá cambiar determinados parámetros.
+Existen diversos motivos por los que podría tener que modificar la configuración de su [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}. Para ello, OVHcloud pone a su disposición el archivo **.ovhconfig**, con el que podrá cambiar determinados parámetros.
 
 **Esta guía explica cómo editar el archivo .ovhconfig para modificar la configuración de un alojamiento web.**
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external} (salvo los planes de hosting Cloud Web).
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} (salvo los planes de hosting Cloud Web).
 - Tener la contraseña del usuario FTP para acceder al espacio de almacenamiento. 
 
 ## Procedimiento
@@ -37,7 +37,7 @@ A continuación explicamos cómo editar manualmente el archivo .ovhconfig.
 
 Para conectarse al espacio de almacenamiento, necesitará el usuario FTP principal y la contraseña FTP, así como la dirección del servidor FTP. Conéctese al espacio de almacenamiento. Si necesita ayuda, consulte el apartado «Conectarse al espacio de almacenamiento» de la guía [Publicar un sitio web en internet.](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/#22-conectarse-al-espacio-de-almacenamiento){.external}
 
-Si no conoce los datos anteriores, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. En la tabla podrá consultar los datos de conexión. Si no conoce la contraseña FTP, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/){.external}.
+Si no conoce los datos anteriores, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. En la tabla podrá consultar los datos de conexión. Si no conoce la contraseña FTP, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/){.external}.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 
@@ -71,8 +71,8 @@ Personalice los valores de las variables según la configuración que quiera uti
 |Variables|Descripción|
 |---|---|
 |app.engine|Permite cambiar el motor de PHP que utiliza el alojamiento. Introduzca «php» para activar el acelerador PHP-FPM y «phpcgi» para desactivarlo.|
-|app.engine.version|Permite elegir la versión de PHP que utiliza el alojamiento entre [las que ofrece OVH](https://www.ovhcloud.com/es-es/web-hosting/uc-programming-language/){.external}. Introduzca la versión de PHP que quiera utilizar.|
-|http.firewall|Permite activar o desactivar el [firewall incluido con todos los planes de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}. Introduzca «security» para activarlo o «none» para desactivarlo.|
+|app.engine.version|Permite elegir la versión de PHP que utiliza el alojamiento entre [las que ofrece OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/uc-programming-language/){.external}. Introduzca la versión de PHP que quiera utilizar.|
+|http.firewall|Permite activar o desactivar el [firewall incluido con todos los planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}. Introduzca «security» para activarlo o «none» para desactivarlo.|
 |environment|Permite administrar el comportamiento de la caché de los archivos estáticos en su sitio web y el tratamiento de los errores PHP. Introduzca «production» para maximizar el almacenamiento en caché y ocultar los errores de PHP o «development» para que no se aplique ninguna caché y mostrar los errores PHP.|
 |container.image|Permite cambiar el entorno de ejecución que utiliza el alojamiento. Introduzca el motor que quiera utilizar. Puede consultar los distintos motores en el apartado «Opciones de configuración disponibles» de la guía [Modificar la configuración de un alojamiento web](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#motor-de-php){.external}.|
 

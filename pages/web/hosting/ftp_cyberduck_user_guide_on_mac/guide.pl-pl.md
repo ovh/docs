@@ -283,7 +283,7 @@ W nowym oknie kliknij na  Uprawnienia i dokonaj zmian:
 ## Odblokowanie strony
 Za pomocą spersonalizowanego polecenia możesz odblokować stronę.
 
-W większości przypadków operacja ta jest następstwem zablokowania strony przez OVH ze względów bezpieczeństwa w następstwie włamania. 
+W większości przypadków operacja ta jest następstwem zablokowania strony przez OVHcloud ze względów bezpieczeństwa w następstwie włamania. 
 
 Aby skorzystać z polecenia:
 

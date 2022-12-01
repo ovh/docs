@@ -10,13 +10,13 @@ order: 03
 
 ## Wprowadzenie 
 
-Możesz chcieć z różnych powodów zmienić konfigurację [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}. Aby Ci to umożliwić, firma OVH udostępniła plik **.ovhconfig** pozwalający zmienić niektóre ustawienia.
+Możesz chcieć z różnych powodów zmienić konfigurację [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}. Aby Ci to umożliwić, firma OVHcloud udostępniła plik **.ovhconfig** pozwalający zmienić niektóre ustawienia.
 
 **Poznaj plik .ovhconfig i dowiedz się, jak go modyfikować.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external} (z wyjątkiem Cloud Web)
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} (z wyjątkiem Cloud Web)
 - Posiadanie hasła użytkownika FTP umożliwiające dostęp do przestrzeni dyskowej 
 
 ## W praktyce
@@ -71,8 +71,8 @@ Wpisz wartości zmiennych odpowiadające konfiguracji, którą chcesz zastosowa�
 |Zmienna|Szczegóły|
 |---|---|
 |app.engine|Pozwala zmodyfikować silnik PHP używany przez hosting. Wpisz „php”, aby włączyć akcelerator PHP-FPM i „phpcgi”, aby go wyłączyć.|
-|app.engine.version|Pozwala wybrać wersję PHP używaną przez hosting spośród [wersji oferowanych przez OVH](https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/){.external}. Wpisz wybraną przez Ciebie wersję.|
-|http.firewall|Pozwala włączyć lub wyłączyć [zaporę ogniową dostarczaną wraz z hostingiem OVH](https://www.ovhcloud.com/pl/web-hosting/options/){.external}. Wpisz „security”, aby go włączyć lub „none”, aby go wyłączyć.|
+|app.engine.version|Pozwala wybrać wersję PHP używaną przez hosting spośród [wersji oferowanych przez OVHcloud](https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/){.external}. Wpisz wybraną przez Ciebie wersję.|
+|http.firewall|Pozwala włączyć lub wyłączyć [zaporę ogniową dostarczaną wraz z hostingiem OVHcloud](https://www.ovhcloud.com/pl/web-hosting/options/){.external}. Wpisz „security”, aby go włączyć lub „none”, aby go wyłączyć.|
 |environment|Pozwala zarządzać mechanizmem pamięci podręcznej dla plików statycznych Twojej strony WWW, a także przetwarzaniem błędów PHP. Wpisz „production”, aby zmaksymalizować buforowanie i ukryć błędy PHP lub „development”, aby pamięć podręczna nie była stosowana a błędy PHP były wyświetlane.|
 |container.image|Pozwala modyfikować środowisko wykonawcze wykorzystywane przez hosting. Wpisz nazwę wybranego silnika. Wykaz silników możesz znaleźć w naszej dokumentacji: [Dostępne opcje konfiguracji środowiska uruchomieniowego](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/#dostepne-opcje-konfiguracji-srodowiska-uruchomieniowego_1){.external}.|
 

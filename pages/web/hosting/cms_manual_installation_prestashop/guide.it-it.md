@@ -13,7 +13,7 @@ order: 06
 Per installare la piattaforma PrestaShop sulla tua offerta di hosting condiviso, ti consigliamo di utilizzare un client FTP come FileZilla (gratuito).
 
 ## [b]Credenziali[/b]
-Assicurati di disporre delle credenziali (Nic-handle e password) di accesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Assicurati di disporre delle credenziali (Nic-handle e password) di accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 
 - Recupera le credenziali FTP per accedere al tuo hosting Web.
@@ -66,7 +66,7 @@ Apri FileZilla.
 
 Nella sezione Sito locale, che contiene l'elenco dei file presenti sul tuo pc, apri la cartella decompressa PrestaShop in cui sono presenti i file del tuo CMS.
 
-Nella sezione Sito remoto, che corrisponde in questo caso al tuo hosting condiviso OVH, apri la cartella www in cui dovrai salvare tutti i file del CMS.
+Nella sezione Sito remoto, che corrisponde in questo caso al tuo hosting condiviso OVHcloud, apri la cartella www in cui dovrai salvare tutti i file del CMS.
 
 Se questa cartella non esiste, puoi crearla.
 
@@ -140,9 +140,9 @@ Clicca su Successivo per confermare le informazioni inserite.
 ## Step 4
 Inserisci le informazioni del tuo database:
 
-Indirizzo server del database:  inserisci il nome del server del tuo database, indicato nell'email di installazione o nel tuo Spazio Cliente OVH.
+Indirizzo server del database:  inserisci il nome del server del tuo database, indicato nell'email di installazione o nel tuo Spazio Cliente OVHcloud.
 
-Nome del database: il nome scelto al momento della sua creazione nello Spazio Cliente OVH.
+Nome del database: il nome scelto al momento della sua creazione nello Spazio Cliente OVHcloud.
 
 Nome di accesso database: uguale al nome del database.
 
@@ -150,7 +150,7 @@ Password del database: se non l'hai modificata, la password che hai ricevuto per
 
 Prefisso delle tabelle: utile per realizzare più installazioni di PrestaShop sur la même base de données. utilizzando lo stesso database. In questo caso, è necessario inserire un prefisso diverso per ognuna delle installazioni.
 
-Importante: le credenziali del database non vengono inviate automaticamente durante l'installazione dell'hosting. Per riceverle, attiva il database nel tuo Spazio Cliente OVH.
+Importante: le credenziali del database non vengono inviate automaticamente durante l'installazione dell'hosting. Per riceverle, attiva il database nel tuo Spazio Cliente OVHcloud.
 
 Una volta completate le informazioni, puoi verificare la connessione al tuo database.
 
@@ -188,16 +188,16 @@ Una volta effettuato l'accesso, visualizzi il pannello di amministrazione di Pre
 
 
 ## Informazioni utili
-Il supporto OVH non risponde alle domande relative alla configurazione del tuo PrestaShop. Se hai bisogno di aiuto, consulta la guida [prestashop]({legacy}2053) disponibile online o i [forum dedicati](https://www.prestashop.com/forums/forum/57-forum-italiano/) a questa soluzione.
+Il supporto OVHcloud non risponde alle domande relative alla configurazione del tuo PrestaShop. Se hai bisogno di aiuto, consulta la guida [prestashop]({legacy}2053) disponibile online o i [forum dedicati](https://www.prestashop.com/forums/forum/57-forum-italiano/) a questa soluzione.
 
 ## - Errore "Sito in costruzione"
 Hai configurato i tuoi file sul tuo server FTP, ma continui a visualizzare la pagina "Sito in construzione".
 
-Quando installi il tuo hosting, OVH realizza una pagina di attesa per permetterti di caricare i file del tuo sito.
+Quando installi il tuo hosting, OVHcloud realizza una pagina di attesa per permetterti di caricare i file del tuo sito.
 
-Se salvi i file nella cartella www ma non elimini il contenuto inserito da OVH, potrebbe verificarsi questo problema.
+Se salvi i file nella cartella www ma non elimini il contenuto inserito da OVHcloud, potrebbe verificarsi questo problema.
 
-Per risolverlo, elimina o rinomina il file "index.html" che OVH ha salvato sul tuo hosting.
+Per risolverlo, elimina o rinomina il file "index.html" che OVHcloud ha salvato sul tuo hosting.
 
 Se rinomini semplicemente il file, puoi riattivarlo in qualsiasi momento per utilizzarlo come pagina di attesa.
 

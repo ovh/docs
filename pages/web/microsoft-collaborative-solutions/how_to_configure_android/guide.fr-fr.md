@@ -17,7 +17,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -49,7 +49,7 @@ Sur l'écran d'accueil de votre appareil, rendez-vous sur l'application `Gmail`{
 
 Renseignez votre adresse e-mail, puis appuyez sur `Suivante`{.action}.
 
-Indiquez maintenant le mot de passe de votre adresse e-mail, ne sélectionnez pas de certificat client, puis appuyez sur `Suivante`{.action} pour poursuivre la configuration. Des connexions vers le serveur d'OVH peuvent être effectuées pour configurer votre compte. Si tel est le cas, un avertissement s'affiche sur votre appareil : appuyez sur `OK`{.action} pour effectuer ces connexions.
+Indiquez maintenant le mot de passe de votre adresse e-mail, ne sélectionnez pas de certificat client, puis appuyez sur `Suivante`{.action} pour poursuivre la configuration. Des connexions vers le serveur d'OVHcloud peuvent être effectuées pour configurer votre compte. Si tel est le cas, un avertissement s'affiche sur votre appareil : appuyez sur `OK`{.action} pour effectuer ces connexions.
 
 Renseignez à présent les paramètres du serveur entrant. Certains champs peuvent être pré-remplis.
 
@@ -58,7 +58,7 @@ Renseignez à présent les paramètres du serveur entrant. Certains champs peuve
 |Domaine/Nom d'utilisateur|Renseignez l'adresse e-mail complète.|  
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
 |Certificat client|Ne sélectionnez rien.|
-|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
+|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
 |Port|Renseignez le port  443 .|  
 |Type de sécurité|Choisissez « SSL/TLS ».|
 
@@ -66,7 +66,7 @@ Appuyez maintenant sur `Suivante`{.action}. Si les informations renseignées son
 
 ![exchange](images/configuration-exchange-gmail-application-android-step2.png){.thumbnail}
 
-Pour finaliser votre configuration, vous devez autoriser le serveur d'OVH à contrôler à distance certaines fonctionnalités inhérentes à la sécurité de votre appareil. Appuyez sur `OK`{.action}, prenez connaissance des informations qui s'affichent et appuyez sur `Activer cet administrateur de l'appareil`{.action}.
+Pour finaliser votre configuration, vous devez autoriser le serveur d'OVHcloud à contrôler à distance certaines fonctionnalités inhérentes à la sécurité de votre appareil. Appuyez sur `OK`{.action}, prenez connaissance des informations qui s'affichent et appuyez sur `Activer cet administrateur de l'appareil`{.action}.
 
 Nommez enfin votre compte de manière à le reconnaître parmi d'autres affichés dans votre application. Appuyez ensuite sur `Suivante`{.action}.
 
@@ -76,7 +76,7 @@ Vous pouvez effectuer un test d'envoi de message pour vérifier que le compte es
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose également une application web disposant de [fonctions collaboratives](https://www.ovhcloud.com/fr/emails/){.external} accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+OVHcloud propose également une application web disposant de [fonctions collaboratives](https://www.ovhcloud.com/fr/emails/){.external} accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
 ## Aller plus loin
 

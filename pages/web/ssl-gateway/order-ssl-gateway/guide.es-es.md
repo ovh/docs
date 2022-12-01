@@ -42,7 +42,7 @@ A continuación, nuestro sistema detectará automáticamente la dirección IP qu
 
 Seleccione la zona geográfica de su servicio SSL Gateway.
 
-Si gestiona la zona DNS de dicho dominio o subdominio desde su cuenta de OVH, marque la casilla correspondiente para que modifiquemos automáticamente su configuración de modo que apunte al SSL Gateway.
+Si gestiona la zona DNS de dicho dominio o subdominio desde su cuenta de OVHcloud, marque la casilla correspondiente para que modifiquemos automáticamente su configuración de modo que apunte al SSL Gateway.
 
 Haga clic en `Contratar`{.action}.
 
@@ -60,7 +60,7 @@ Siga las indicaciones y valide la orden de pedido.
 
 
 ## Configuracion de la zona DNS
-Una vez haya validado la orden de pedido, si no ha marcado la casilla de modificación automática recibirá un mensaje de correo electrónico indicándole que dispone de 3 días para hacer que su dominio o subdominio apunte hacia la infraestructura de OVH.
+Una vez haya validado la orden de pedido, si no ha marcado la casilla de modificación automática recibirá un mensaje de correo electrónico indicándole que dispone de 3 días para hacer que su dominio o subdominio apunte hacia la infraestructura de OVHcloud.
 
 
 

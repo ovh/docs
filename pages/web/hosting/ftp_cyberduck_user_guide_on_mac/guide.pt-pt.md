@@ -281,7 +281,7 @@ Nessa nova janela clique em Permissões efetuando as modificações desejadas:
 ## Reabertura do site
 Tem a possibilidade de efetuar a reabertura do seu site ao utilizar um comando personalizado.
 
-Na maioria dos casos esta manipulação deve ser efetuada após o encerramento do seu alojamento por parte da OVH no seguimento de um hack.
+Na maioria dos casos esta manipulação deve ser efetuada após o encerramento do seu alojamento por parte da OVHcloud no seguimento de um hack.
 
 Para utilizar um comando:
 

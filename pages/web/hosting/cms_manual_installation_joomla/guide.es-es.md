@@ -8,7 +8,7 @@ order: 05
 
 > [!warning]
 >
-> La responsabilidad sobre la configuración y la gestión de los servicios que OVH pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> La responsabilidad sobre la configuración y la gestión de los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
 > 
@@ -28,7 +28,7 @@ Todos estos elementos se encuentran en [nuestros productos](https://www.ovhcloud
 
 ### Parte 1: preparación de la instalación
 
-Para instalar la plataforma **Joomla!**  en su plan de hosting, le recomendamos que disponga de un programa **FTP** como **FileZilla** (gratuito). *Asegúrese de tener su identificador de cliente (NIC) y contraseña para poder conectarse al área de cliente de OVH si es necesario.*
+Para instalar la plataforma **Joomla!**  en su plan de hosting, le recomendamos que disponga de un programa **FTP** como **FileZilla** (gratuito). *Asegúrese de tener su identificador de cliente (NIC) y contraseña para poder conectarse al área de cliente de OVHcloud si es necesario.*
 
 - Obtenga su identificador y la contraseña FTP para conectarse al alojamiento web.
 - También es necesario disponer de su identificador y la contraseña de la base de datos SQL, que le permiten conectarse a la base de datos.
@@ -71,7 +71,7 @@ Siga estos pasos para subir los archivos al FTP. Una vez conectado a FileZilla.
 
 En el apartado "Sitio local", que corresponde a la lista de archivos presentes en su ordenador, abra la carpeta descomprimida titulada "Joomla!" en el que están presentes los archivos del CMS.
 
-En la pestaña "Sitio remoto" del apartado correspondiente al alojamiento compartido de OVH, abra la pestaña "www". En esta carpeta es donde deberá subir todos los archivos del CMS.
+En la pestaña "Sitio remoto" del apartado correspondiente al alojamiento compartido de OVHcloud, abra la pestaña "www". En esta carpeta es donde deberá subir todos los archivos del CMS.
 
 *Si esta carpeta no existe, puede crearla.*
 
@@ -202,7 +202,7 @@ Para obtener una visión general del panel de administración de Joomla!, haga c
 
 ### Información útil
 
-**El soporte de OVH no estará facultado para responder a cualquier solicitud de ayuda relativa a la configuración de su Joomla!.**
+**El soporte de OVHcloud no estará facultado para responder a cualquier solicitud de ayuda relativa a la configuración de su Joomla!.**
 
 Puede consultar los foros dedicados a la solución Joomla!.
 
@@ -212,9 +212,9 @@ Si ha configurado sus archivos en el espacio FTP, la página "Sitio en construcc
 
 Durante la instalación de su alojamiento, OVHcloud muestra una página por defecto para que pueda cargar los archivos de su sitio web.
 
-Si simplemente coloca sus archivos en la carpeta **"www"** sin eliminar el contenido depositado por OVH, puede aparecer este problema.
+Si simplemente coloca sus archivos en la carpeta **"www"** sin eliminar el contenido depositado por OVHcloud, puede aparecer este problema.
 
-Para corregirlo, elimine o renombre el archivo "index.html" instalado por OVH en su alojamiento.
+Para corregirlo, elimine o renombre el archivo "index.html" instalado por OVHcloud en su alojamiento.
 
 *Para poder reactivar este contenido en cualquier momento y utilizarlo como página por defecto, puede asignarle otro nombre al archivo.*
 

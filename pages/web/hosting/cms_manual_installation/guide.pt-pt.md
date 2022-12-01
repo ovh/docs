@@ -126,7 +126,7 @@ Para isso, poderá consultar os fóruns dedicados ao [Drupal](https://www.drupal
 
 ## Vá mais longe
 
-[Como migrar um site e e-mails para a OVH](../migrar-site-para-ovh/){.external}
+[Como migrar um site e e-mails para a OVHcloud](../migrar-site-para-ovh/){.external}
 
 [Publicar um site num alojamento web](../partilhado_colocar_o_meu_website_online/){.external}
 

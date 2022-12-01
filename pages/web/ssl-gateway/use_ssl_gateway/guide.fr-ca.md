@@ -14,13 +14,13 @@ Découvrez comment utiliser votre service SSL Gateway afin de sécuriser les con
 ### Prérequis
 
 - Disposer d’un service SSL Gateway.
-- Être connecté à votre  [espace client OVH](https://www.ovh.com/manager){.external}, partie `Sunrise`{.action}.
+- Être connecté à votre  [espace client OVHcloud](https://www.ovh.com/manager){.external}, partie `Sunrise`{.action}.
 
 ## En pratique
 
 
 ### Configurer le service
-Connectez-vous à votre [espace client OVH](https://www.ovh.com/manager){.external}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/manager){.external}.
 Cliquez ensuite sur la section `Sunrise`{.action}.
 
 ![Bouton d'ouverture](images/4.PNG){.thumbnail}
@@ -40,10 +40,10 @@ La page qui s’affiche concerne la gestion de votre solution.
 
 |Option|Description|
 |---|---|
-|IPv4|Adresse IPv4 de la passerelle OVH vers laquelle vous souhaitez pointer.|
-|IPv6|Adresse IPv6 de la passerelle OVH vers laquelle vous souhaitez pointer.|
+|IPv4|Adresse IPv4 de la passerelle OVHcloud vers laquelle vous souhaitez pointer.|
+|IPv6|Adresse IPv6 de la passerelle OVHcloud vers laquelle vous souhaitez pointer.|
 |Zone|Zone géographique de l’adresse IP de votre SSL Gateway.|
-|IPv4 de sortie|Adresses IPv4 OVH qui se connecteront à votre serveur.|
+|IPv4 de sortie|Adresses IPv4 OVHcloud qui se connecteront à votre serveur.|
 |Offre|Type d'offre souscrite.|
 |Documentation|Lien vers ce guide d'utilisation.|
 |État|État de votre service SSL Gateway.|
@@ -196,7 +196,7 @@ Afin de suivre l'adresse IP de votre visiteur, le SSL Gateway ajoute automatique
 
 Comme ces champs peuvent être falsifiés par un client malveillant, ils ne doivent être pris en compte que s’ils proviennent d'une source approuvée, comme le SSL Gateway. La liste des adresses IP source utilisées par le SSL Gateway se trouve dans :
 
-- votre espace client OVH, section « Sunrise » ;
+- votre espace client OVHcloud, section « Sunrise » ;
 - la section « SSL Gateway » ;
 - le champ « IPv4 de sortie ».
 

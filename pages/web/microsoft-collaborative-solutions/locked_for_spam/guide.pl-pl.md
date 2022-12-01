@@ -75,7 +75,7 @@ Gotowe zgłoszenie serwisowe wygląda następująco:
 >
 > - Czy odpowiedziałeś na spam?
 > 
-> Te odpowiedzi pomogą OVH szybko reaktywować Twoje konto.
+> Te odpowiedzi pomogą OVHcloud szybko reaktywować Twoje konto.
 > <br>
 > <br>
 > 

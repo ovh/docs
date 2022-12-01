@@ -98,7 +98,7 @@ Para añadir su primer nombre de dominio a su plataforma y configurar las cuenta
 
 ## Más información
 
-[Editar una zona DNS de OVH](../../domains/web_hosting_como_editar_mi_zona_dns/)
+[Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/)
 
 [Añadir un dominio a un servicio Exchange](../anadir-dominio-exchange/) 
 

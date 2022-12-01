@@ -51,7 +51,7 @@ Unser System wird daraufhin automatisch die IP-Adresse(n) Ihrer Website erkennen
 
 - Wenn sie mehrere IPs besitzen, wählen Sie eine davon aus.
 - Wählen Sie die geografische Zone Ihres SSL Gateway.
-- Wenn die DNS Zone der Domain bzw. Subdomain von OVH verwaltet wird, setzen Sie ein Häkchen im entsprechenden Feld. Wir ändern dann automatisch die Konfiguration der DNS Zone, damit die Domain auf Ihr SSL Gateway zeigt.
+- Wenn die DNS Zone der Domain bzw. Subdomain von OVHcloud verwaltet wird, setzen Sie ein Häkchen im entsprechenden Feld. Wir ändern dann automatisch die Konfiguration der DNS Zone, damit die Domain auf Ihr SSL Gateway zeigt.
 - Klicken Sie auf `Bestellen`{.action}
 
 
@@ -69,7 +69,7 @@ Folgen Sie allen weiteren Schritten und validieren Sie Ihren Bestellschein.
 
 
 ## Ihre DNS Zone konfigurieren
-Wenn Sie im Feld zur automatischen Änderung durch OVH kein Häkchen gesetzt haben, werden Sie nach der Validierung Ihres Bestellscheins per E-Mail aufgefordert, Ihre Domain bzw. Subdomain innerhalb von 3 Tagen auf die OVH Infrastruktur zeigen zu lassen.
+Wenn Sie im Feld zur automatischen Änderung durch OVHcloud kein Häkchen gesetzt haben, werden Sie nach der Validierung Ihres Bestellscheins per E-Mail aufgefordert, Ihre Domain bzw. Subdomain innerhalb von 3 Tagen auf die OVHcloud Infrastruktur zeigen zu lassen.
 
 
 
@@ -82,7 +82,7 @@ Wenn Sie im Feld zur automatischen Änderung durch OVH kein Häkchen gesetzt hab
 
 > [!faq]
 >
-> Fall 1:  Ihre DNS Zone wird auf den Shared DNS Servern von OVH verwaltet.
+> Fall 1:  Ihre DNS Zone wird auf den Shared DNS Servern von OVHcloud verwaltet.
 >> 
 >>     - Wenn Sie selbst technischer oder Administrator-Kontakt für die DNS Zone sind, muss diese über Ihr Kundencenter geändert werden.
 >>     - Wenn Sie nicht der Kontakt für die DNS Zone sind, müssen Sie die zuständige Person kontaktieren, damit diese die nötigen Änderungen vornimmt.
@@ -101,7 +101,7 @@ Wenn Sie im Feld zur automatischen Änderung durch OVH kein Häkchen gesetzt hab
 
 > [!faq]
 >
-> Fall 2: Ihre DNS Zone wird nicht auf den Shared DNS Servern von OVH verwaltet.
+> Fall 2: Ihre DNS Zone wird nicht auf den Shared DNS Servern von OVHcloud verwaltet.
 >> 
 >>     - In diesem Fall ändern Sie einfach über das Verwaltungsinterface Ihres Anbieters oder Ihres Dedicated Servers die IP-Adresse in Ihrer DNS Zone.
 >

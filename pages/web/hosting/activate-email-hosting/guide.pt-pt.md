@@ -17,7 +17,7 @@ Se adquiriu um alojamento web sem o associar diretamente a um nome de domínio, 
 ## Requisitos
 
 - Dispor de um [nome de domínio](https://www.ovh.com/pt/dominios/){.external} na sua Área de Cliente OVHcloud.
-- Ter um serviço de [alojamento Web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter um serviço de [alojamento Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções

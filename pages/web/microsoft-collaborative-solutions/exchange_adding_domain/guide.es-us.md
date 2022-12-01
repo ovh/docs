@@ -92,7 +92,7 @@ Una vez asociado el dominio, asegúrese de que su configuración es correcta com
 
 - **Si ha elegido la configuración automática al añadir el dominio**: la visualización en el área de cliente de OVHcloud puede tardar unos minutos en actualizarse.
 
-- **Si ha introducido un dominio no gestionado por OVHcloud**: haga clic en la etiqueta roja para ver los cambios que debe realizar. Si el dominio no utiliza la configuración de OVH (es decir, si no utiliza los servidores DNS de OVH), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS. Si necesita añadir un registro CNAME, puede consultar la guía [Crear un registro CNAME al añadir un dominio asociado](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_anadir_un_registro_cname/).
+- **Si ha introducido un dominio no gestionado por OVHcloud**: haga clic en la etiqueta roja para ver los cambios que debe realizar. Si el dominio no utiliza la configuración de OVHcloud (es decir, si no utiliza los servidores DNS de OVH), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS. Si necesita añadir un registro CNAME, puede consultar la guía [Crear un registro CNAME al añadir un dominio asociado](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_anadir_un_registro_cname/).
 
 > [!primary]
 >

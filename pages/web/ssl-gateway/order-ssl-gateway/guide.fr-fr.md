@@ -49,7 +49,7 @@ Notre système va ensuite détecter automatiquement la ou les adresses IP de vot
 
 - Si vous disposez de plusieurs IPs, sélectionnez en une.
 - Choisissez la zone géographique de votre service SSL Gateway
-- Si la zone DNS de ce domaine ou sous-domaine est géré par votre compte OVH, cochez la case correspondante afin que nous modifions automatiquement la configuration de celui-ci pour pointer vers votre SSL Gateway.
+- Si la zone DNS de ce domaine ou sous-domaine est géré par votre compte OVHcloud, cochez la case correspondante afin que nous modifions automatiquement la configuration de celui-ci pour pointer vers votre SSL Gateway.
 - Cliquez sur `Commander`{.action}.
 
 
@@ -66,7 +66,7 @@ Notre système va ensuite détecter automatiquement la ou les adresses IP de vot
 
 
 ### Configuration de votre zone DNS
-Une fois votre bon de commande validé, si vous n'avez pas coché la case de modification automatique, un e-mail vous sera envoyé afin de vous demander de faire pointer votre domaine ou sous-domaine vers l'infrastructure OVH dans un délai de 3 jours.
+Une fois votre bon de commande validé, si vous n'avez pas coché la case de modification automatique, un e-mail vous sera envoyé afin de vous demander de faire pointer votre domaine ou sous-domaine vers l'infrastructure OVHcloud dans un délai de 3 jours.
 
 
 > [!warning]
@@ -77,15 +77,15 @@ Une fois votre bon de commande validé, si vous n'avez pas coché la case de mod
 
 > [!faq]
 >
-> Cas 1 : votre zone DNS est gérée par les serveurs DNS mutualisés OVH.
+> Cas 1 : votre zone DNS est gérée par les serveurs DNS mutualisés OVHcloud.
 >> 
 >> - Si votre identifiant est contact administrateur ou technique de cette zone DNS, une modification de celle-ci sera nécessaire dans votre espace client.
 >> - Si vous n'êtes pas contact de cette zone DNS, il vous faudra contacter la personne en charge de celle-ci afin de la modifier.
 >> 
->> Reportez-vous aux instructions du guide « [Créer une zone DNS OVH pour un nom de domaine](https://docs.ovh.com/fr/domains/creer-une-zone-dns-pour-un-domaine-externe/){.external} » si nécessaire.
+>> Reportez-vous aux instructions du guide « [Créer une zone DNS OVHcloud pour un nom de domaine](https://docs.ovh.com/fr/domains/creer-une-zone-dns-pour-un-domaine-externe/){.external} » si nécessaire.
 >> 
 >
-> Cas 2 : votre zone DNS n'est pas gérée par les serveurs DNS mutualisés OVH.
+> Cas 2 : votre zone DNS n'est pas gérée par les serveurs DNS mutualisés OVHcloud.
 >> 
 >> - Dans ce cas il vous suffit de modifier l'IP dans votre zone DNS en vous rendant sur l'interface de votre prestataire ou de votre serveur dédié.
 >>

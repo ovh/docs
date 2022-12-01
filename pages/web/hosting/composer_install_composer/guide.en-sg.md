@@ -54,13 +54,13 @@ php composer.phar create-project symfony/framework-standard-edition my_project_n
 ```
 
 
-Similarly, you can use the OVHcloud API from your web hosting package by using the offical wrapper. Just add a file called composer.json which contains the list of dependencies you need. Here is an example of this file with the OVH API wrapper:
+Similarly, you can use the OVHcloud API from your web hosting package by using the offical wrapper. Just add a file called composer.json which contains the list of dependencies you need. Here is an example of this file with the OVHcloud API wrapper:
 
 
 ```
 {
 "name": "Example Application",
-"description": "This is an example of OVH APIs wrapper usage",
+"description": "This is an example of OVHcloud APIs wrapper usage",
 "require": {
 "ovh/ovh": "1.1.*"
 }

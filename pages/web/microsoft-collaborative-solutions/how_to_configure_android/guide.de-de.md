@@ -39,7 +39,7 @@ Tippen Sie auf dem Bildschirm Ihres Geräts auf die `Gmail`{.action}-App. Es gib
 
 Geben Sie Ihre E-Mail-Adresse ein und tippen Sie dann auf `Weiter`{.action}.
 
-Geben Sie nun das Passwort Ihrer E-Mail-Adresse ein, wählen Sie kein Clientzertifikat aus und klicken Sie auf `Weiter`{.action}, um mit der Konfiguration fortzufahren. Es kann sein, dass sich die App mit dem OVH Server verbindet, um Ihren Account einzurichten. Ist das der Fall, erscheint eine entsprechende Nachricht auf Ihrem Gerät. Tippen Sie auf `OK`{.action}, um die Verbindung vorzunehmen.
+Geben Sie nun das Passwort Ihrer E-Mail-Adresse ein, wählen Sie kein Clientzertifikat aus und klicken Sie auf `Weiter`{.action}, um mit der Konfiguration fortzufahren. Es kann sein, dass sich die App mit dem OVHcloud Server verbindet, um Ihren Account einzurichten. Ist das der Fall, erscheint eine entsprechende Nachricht auf Ihrem Gerät. Tippen Sie auf `OK`{.action}, um die Verbindung vorzunehmen.
 
 Geben Sie nun die Einstellungen des Eingangsservers ein. Manche Felder werden gegebenenfalls automatisch ausgefüllt.
 
@@ -56,7 +56,7 @@ Tippen Sie anschließend auf `Weiter`{.action}. Wenn Ihre Angaben korrekt sind, 
 
 ![Exchange](images/configuration-exchange-gmail-application-android-step2.png){.thumbnail}
 
-Um die Konfiguration abzuschließen, erlauben Sie dem OVH Server bestimmte Sicherheitsfunktionen Ihres Geräts remote zu steuern. Tippen Sie auf `OK`{.action}, lesen Sie die Informationen im angezeigten Fenster und tippen Sie dann auf `Diesen Geräteadministrator aktivieren`{.action}.
+Um die Konfiguration abzuschließen, erlauben Sie dem OVHcloud Server bestimmte Sicherheitsfunktionen Ihres Geräts remote zu steuern. Tippen Sie auf `OK`{.action}, lesen Sie die Informationen im angezeigten Fenster und tippen Sie dann auf `Diesen Geräteadministrator aktivieren`{.action}.
 
 Nun können Sie einen Namen für Ihren Account festlegen, um diesen von anderen in Ihrer App angezeigten Accounts zu unterscheiden. Tippen Sie anschließend auf `Weiter`{.action}.
 
@@ -66,7 +66,7 @@ Sie können eine Test-E-Mail versenden, um zu überprüfen, dass der Account kor
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
-Eine OVH Webanwendung mit [kollaborativen Funktionen](https://www.ovhcloud.com/de/emails/){.external} ist verfügbar unter [https://www.ovh.de/mail/](https://www.ovh.de/mail/){.external}. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+Eine OVHcloud Webanwendung mit [kollaborativen Funktionen](https://www.ovhcloud.com/de/emails/){.external} ist verfügbar unter [https://www.ovh.de/mail/](https://www.ovh.de/mail/){.external}. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 ## Weiterführende Informationen
 

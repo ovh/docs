@@ -51,7 +51,7 @@ O nosso sistema vai detetar de seguida automaticamente ou o os endereços IP do 
 
 - Se possui vários endereços IP, selecione um.
 - Escolha a zona geográfica do seu serviço SSL Gateway
-- Se a zona DNS desse domínio ou subdomínio é gerido pela sua conta OVH, escolha a opção correspondente para que a OVH faça a modificação automaticamente, de forma a que o seu domínio ou subdomínio aponte para a sua oferta SSL Gateway.
+- Se a zona DNS desse domínio ou subdomínio é gerido pela sua conta OVHcloud, escolha a opção correspondente para que a OVHcloud faça a modificação automaticamente, de forma a que o seu domínio ou subdomínio aponte para a sua oferta SSL Gateway.
 - Clique em `Encomendar`{.action}.
 
 
@@ -69,7 +69,7 @@ O nosso sistema vai detetar de seguida automaticamente ou o os endereços IP do 
 
 
 ## Configuracao da sua zona DNS
-Após ter validado a encomenda, e se não escolheu a opção de modificação automático, vai receber um e-mail a solicitar que aponte o seu domínio ou subdomínio para a infraestrutura OVH num prazo de 3 dias.
+Após ter validado a encomenda, e se não escolheu a opção de modificação automático, vai receber um e-mail a solicitar que aponte o seu domínio ou subdomínio para a infraestrutura OVHcloud num prazo de 3 dias.
 
 
 
@@ -82,7 +82,7 @@ Após ter validado a encomenda, e se não escolheu a opção de modificação au
 
 > [!faq]
 >
-> Caso 1: a sua zona DNS é gerida pelos servidores DNS partilhados da OVH.
+> Caso 1: a sua zona DNS é gerida pelos servidores DNS partilhados da OVHcloud.
 >> 
 >>     - Se o seu identificador é o contacto administrador ou técnico dessa zona DNS, a modificação terá de ser efetuada através do seu Espaço Cliente.
 >>     - Se não é o contacto dessa zona, terá de contactar a pessoa encarregue dessa função para que efetue a modificação.
@@ -101,7 +101,7 @@ Após ter validado a encomenda, e se não escolheu a opção de modificação au
 
 > [!faq]
 >
-> Caso 2: a sua zona DNS não é gerida pelos servidores DNS partilhados da OVH.
+> Caso 2: a sua zona DNS não é gerida pelos servidores DNS partilhados da OVHcloud.
 >> 
 >>     - Nesse caso basta que modifique o IP da sua zona DNS ao aceder à interface do seu prestador de serviços ou do seu servidor dedicado.
 >

@@ -31,7 +31,7 @@ W rzadkich przypadkach informacje o powolnym wyświetlaczu mogą pochodzić od T
 
 > [!primary]
 >
-> **Po zakończeniu wszystkich testów opisanych w tym przewodniku**, jeśli spowolnienie wynika z infrastruktury hostingowej OVH, przypominamy, że jest współdzielone między kilku użytkowników.
+> **Po zakończeniu wszystkich testów opisanych w tym przewodniku**, jeśli spowolnienie wynika z infrastruktury hostingowej OVHcloud, przypominamy, że jest współdzielone między kilku użytkowników.
 >
 > Użytkownicy dzielą się zasobami infrastruktury hostingu współdzielonego i zarządzają swoimi stronami www. Jeśli któraś z nich nadmiernie wypytuje infrastrukturę wirtualną, może to mieć wpływ na inne hostingi znajdujące się na tej samej infrastrukturze.
 >

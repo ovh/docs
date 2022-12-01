@@ -10,13 +10,13 @@ order: 03
 
 ## Einleitung
 
-Es gibt mehrere Gründe, um die Konfiguration Ihres [Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} zu bearbeiten. Aus diesem Grund hat OVH eine Datei erstellt, über die bestimmte Einstellungen geändert werden können: **.ovhconfig**.
+Es gibt mehrere Gründe, um die Konfiguration Ihres [Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} zu bearbeiten. Aus diesem Grund hat OVHcloud eine Datei erstellt, über die bestimmte Einstellungen geändert werden können: **.ovhconfig**.
 
 **Hier erfahren Sie, wozu die .ovhconfig-Datei verwendet wird und wie Sie diese bearbeiten.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot (ausgenommen Cloud Web).
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot (ausgenommen Cloud Web).
 - Sie haben das Passwort des FTP-Benutzers, um auf Ihren Speicherplatz zuzugreifen. 
 
 ## Beschreibung
@@ -71,8 +71,8 @@ Passen Sie die Werte der Variablen entsprechend der Konfiguration an, die Sie f�
 |Variable|Beschreibung|
 |---|---|
 |app.engine|Hier können Sie die von Ihrem Webhosting verwendete PHP-Engine ändern. Geben Sie „php“ ein, um den PHP-FPM-Beschleuniger zu verwenden, oder „phpcgi“, um diesen zu deaktivieren.|
-|app.engine.version|Hier können Sie die vom Webhosting verwendete PHP-Version aus den [von OVH angebotenen Versionen](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/){.external} auswählen. Geben Sie Ihre bevorzugte Version ein.|
-|http.firewall|Hier können Sie die [mit den OVH Webhostings angebotene Firewall](https://www.ovh.com/de/hosting/mod_security.xml){.external} aktivieren oder deaktivieren. Geben Sie „security“ ein, um diese zu aktivieren, oder „none“, um sie zu deaktivieren.|
+|app.engine.version|Hier können Sie die vom Webhosting verwendete PHP-Version aus den [von OVHcloud angebotenen Versionen](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/){.external} auswählen. Geben Sie Ihre bevorzugte Version ein.|
+|http.firewall|Hier können Sie die [mit den OVHcloud Webhostings angebotene Firewall](https://www.ovh.com/de/hosting/mod_security.xml){.external} aktivieren oder deaktivieren. Geben Sie „security“ ein, um diese zu aktivieren, oder „none“, um sie zu deaktivieren.|
 |environment|Hier können Sie festlegen, wie die statischen Dateien Ihrer Website gecacht werden sowie die PHP-Fehlerbehandlung einstellen. Geben Sie „production“ ein, um das Caching zu maximieren und PHP-Fehler zu verbergen, oder „development“, um das Caching abzustellen und PHP-Fehler anzuzeigen.|
 |container.image|Hier können Sie die von Ihrem Webhosting verwendete Ausführungsumgebung ändern. Geben Sie die gewünschte Engine ein. Die möglichen Konfigurationen finden Sie in unserer Dokumentation: [„Verfügbare Konfigurationen“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#verfugbare-konfigurationen_1){.external}|
 

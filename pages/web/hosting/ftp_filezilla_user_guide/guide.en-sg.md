@@ -25,7 +25,7 @@ You can use it to put files or your website online by [connecting to your web ho
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- An [OVH Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external}
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external}
 - You need to have installed Filezilla software on your computer. It is available free of charge from the page [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
 ## Interface overview <a name="interface"></a>

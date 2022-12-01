@@ -208,7 +208,7 @@ Aby uzyskać dostęp do wszystkich ustawień, kliknij ikonę koła zębatego u g
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Po lewej stronie pojawi się drzewo menu „Opcje”. W tym widoku można dostosować układ i zachowanie konta e-mail. Niektóre opcje konta mogą być wyłączone po stronie OVH ze względów bezpieczeństwa.
+Po lewej stronie pojawi się drzewo menu „Opcje”. W tym widoku można dostosować układ i zachowanie konta e-mail. Niektóre opcje konta mogą być wyłączone po stronie OVHcloud ze względów bezpieczeństwa.
 
 ![useowa](images/owa_exchange_step23.png){.thumbnail}
 

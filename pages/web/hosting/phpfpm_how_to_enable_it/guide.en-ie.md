@@ -1,6 +1,6 @@
 ---
-title: Enable PHP optimisation with OVH web hosting
-excerpt: This guide will show you how to enable PHP-FPM on your hosting package with OVH in order to improve the PHP response time
+title: Enable PHP optimisation with OVHcloud web hosting
+excerpt: This guide will show you how to enable PHP-FPM on your hosting package with OVHcloud in order to improve the PHP response time
 slug: enable_php_optimisation_with_ovh_web_hosting
 section: PHP
 order: 03

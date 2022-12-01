@@ -1,6 +1,6 @@
 ---
 title: 'Backup in eine Webhosting-Datenbank importieren'
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie ein Backup in die Datenbank Ihres OVH Webhostings importieren.'
+excerpt: 'In dieser Anleitung erfahren Sie, wie Sie ein Backup in die Datenbank Ihres OVHcloud Webhostings importieren.'
 slug: webhosting_import_einer_mysql-datenbank
 section: 'Datenbanken'
 order: 04
@@ -12,12 +12,12 @@ order: 04
 
 Fast alle Content-Management-Systeme (CMS) wie WordPress oder Joomla! verwenden heutzutage Datenbanken, um sogenannte dynamischen Inhalte wie beispielsweise Kommentare oder Artikel zu speichern. Aus verschiedenen Gründen kann es vorkommen, dass Sie Daten in eine Ihrer Datenbanken importieren möchten, um deren Inhalt zu ändern oder zu ersetzen.
 
-**Hier erfahren Sie, wie Sie ein Backup in die Datenbank Ihres OVH Webhostings importieren.**
+**Hier erfahren Sie, wie Sie ein Backup in die Datenbank Ihres OVHcloud Webhostings importieren.**
 
 ## Voraussetzungen
 
-- Sie haben ein [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
-- Ihr [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot beinhaltet eine Datenbank.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
+- Ihr [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot beinhaltet eine Datenbank.
 - Sie haben Zugriff auf das Backup, das Sie in Ihre Datenbanken importieren möchten.
 - Je nach der verwendeten Import-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhosting Angebots über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, oder die erforderlichen Login-Daten, um sich mit der Datenbank zu verbinden.
 
@@ -25,25 +25,25 @@ Fast alle Content-Management-Systeme (CMS) wie WordPress oder Joomla! verwenden 
 
 Bevor Sie beginnen, wählen Sie die Methode aus, die Sie für den Import des Backups in die betreffende Datenbank anwenden möchten. Entsprechend Ihrer technischen Kenntnisse zu diesem Thema stehen Ihnen mehrere Möglichkeiten zur Verfügung.
 
-- **Eine ältere Version Ihrer Datenbank mit wenigen Klicks wiederherstellen**: Dank der regelmäßigen Sicherungen des Backup-Tools von OVH können Sie den Inhalt Ihrer Datenbanken wiederherstellen. Hierzu sind keine besonderen technischen Kenntnisse erforderlich und Sie können das Backup über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ausführen.
+- **Eine ältere Version Ihrer Datenbank mit wenigen Klicks wiederherstellen**: Dank der regelmäßigen Sicherungen des Backup-Tools von OVHcloud können Sie den Inhalt Ihrer Datenbanken wiederherstellen. Hierzu sind keine besonderen technischen Kenntnisse erforderlich und Sie können das Backup über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ausführen.
 
 - **Ihre eigene Backup-Datei mit wenigen Klicks importieren**: Sie können Ihre eigene, von Ihnen zuvor erstellte Backup-Datei in eine Ihrer Datenbanken importieren. Loggen Sie sich hierfür in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein.
 
 - **Backup über das phpMyAdmin-Webinterface importieren**: Loggen Sie sich im phpMyAdmin-Interface ein, um dort den Import durchzuführen. Für diese Methode benötigen Sie Grundkenntnisse im Umgang mit phpMyAdmin. Außerdem darf Ihre Backup-Datei eine bestimmte Größe nicht überschreiten.
 
-- **Backup über ein Skript importieren**: Hierzu muss zunächst ein Skript geschrieben und auf Ihrem OVH Webhosting gespeichert werden. Für das Schreiben des Skripts sind spezifische technische Kenntnisse erforderlich.
+- **Backup über ein Skript importieren**: Hierzu muss zunächst ein Skript geschrieben und auf Ihrem OVHcloud Webhosting gespeichert werden. Für das Schreiben des Skripts sind spezifische technische Kenntnisse erforderlich.
 
-- **Backup über einen SSH-Befehl importieren**: Verbinden Sie sich hierfür via SSH mit Ihrem Speicherplatz und verwenden Sie die entsprechenden Befehle für den Import. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot erforderlich.
+- **Backup über einen SSH-Befehl importieren**: Verbinden Sie sich hierfür via SSH mit Ihrem Speicherplatz und verwenden Sie die entsprechenden Befehle für den Import. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot erforderlich.
 
-Einige der oben aufgeführten Methoden lassen sich nicht über ein OVH Interface ausführen. Daher können wir Ihnen nicht sagen, wie diese umzusetzen sind. Im Folgenden geben wir Ihnen hierzu zwar einige Informationen, sie ersetzen jedoch nicht die Unterstützung eines Webmasters.
+Einige der oben aufgeführten Methoden lassen sich nicht über ein OVHcloud Interface ausführen. Daher können wir Ihnen nicht sagen, wie diese umzusetzen sind. Im Folgenden geben wir Ihnen hierzu zwar einige Informationen, sie ersetzen jedoch nicht die Unterstützung eines Webmasters.
 
 Folgen Sie dieser Anleitung nun entsprechend der von Ihnen gewählten Import-Methode.
 
 > [!warning]
 >
-> OVH stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVH leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
 >
 
 ### Backup über das Kundencenter wiederherstellen
@@ -54,7 +54,7 @@ Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting
 
 ![Datenbankimport](images/database-import-step5.png){.thumbnail}
 
-Es werden Ihnen nun alle verfügbaren Backups der ausgewählten Datenbank angezeigt. In der Tabelle finden Sie das genaue Erstellungsdatum des jeweiligen Backups sowie das Datum, zu dem dieses vom OVH Backup-Tool wieder gelöscht wird.
+Es werden Ihnen nun alle verfügbaren Backups der ausgewählten Datenbank angezeigt. In der Tabelle finden Sie das genaue Erstellungsdatum des jeweiligen Backups sowie das Datum, zu dem dieses vom OVHcloud Backup-Tool wieder gelöscht wird.
 
 Klicken Sie auf die drei Punkte rechts neben dem Backup, das Sie wiederherstellen möchten, und gehen Sie dann auf `Sicherung wiederherstellen`{.action}. Vergewissern Sie sich, dass die Informationen im angezeigten Fenster korrekt sind, und klicken Sie dann auf `Bestätigen`{.action}. Warten Sie, bis die Wiederherstellung abgeschlossen ist.
 
@@ -105,7 +105,7 @@ Geben Sie im phpMyAdmin-Webinterface die Informationen zu Ihrer Datenbank ein, w
 
 > [!warning]
 >
-> Da das phpMyAdmin-Webinterface nicht von OVH entwickelt wurde, können wir Ihnen nicht sagen, wie der Import durchzuführen ist. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder sich auf der Website des Herausgebers zu informieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Da das phpMyAdmin-Webinterface nicht von OVHcloud entwickelt wurde, können wir Ihnen nicht sagen, wie der Import durchzuführen ist. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder sich auf der Website des Herausgebers zu informieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 ### Backup über ein Skript importieren
@@ -114,7 +114,7 @@ Für diese Methode sind mehrere Schritte notwendig. Vergewissern Sie sich, dass 
 
 > [!warning]
 >
-> Für diese Methode sind Programmierkenntnisse erforderlich. Im Folgenden geben wir Ihnen einige Informationen zur Vorgehensweise, empfehlen Ihnen aber dennoch, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Hilfe brauchen. Für externe Dienstleistungen bietet OVH leider keine Unterstützung.
+> Für diese Methode sind Programmierkenntnisse erforderlich. Im Folgenden geben wir Ihnen einige Informationen zur Vorgehensweise, empfehlen Ihnen aber dennoch, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Hilfe brauchen. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung.
 >
 
 #### Schritt 1: Importskript schreiben

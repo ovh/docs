@@ -20,7 +20,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System) W
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/) lub [edytora CMS WordPress](https://wordpress.com/support/){.external}. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/) lub [edytora CMS WordPress](https://wordpress.com/support/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 > [!success]
@@ -79,7 +79,7 @@ Jeśli nie możesz przeprowadzić tych weryfikacji, skontaktuj się z aktualnym 
 
 #### 1.3 - Zainstaluj darmowy program FTP "FileZilla"
 
-W dokumentacji OVH dotyczącej korzystania z usługi znajdziesz link do pobrania za darmo oraz tutorial dotyczący korzystania z tego linku.[korzystanie z FileZilla wraz z hostingiem OVHcloud](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
+W dokumentacji OVHcloud dotyczącej korzystania z usługi znajdziesz link do pobrania za darmo oraz tutorial dotyczący korzystania z tego linku.[korzystanie z FileZilla wraz z hostingiem OVHcloud](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
 
 #### 1.4 - Przygotowanie bazy danych <a name="step1-4"></a>
 

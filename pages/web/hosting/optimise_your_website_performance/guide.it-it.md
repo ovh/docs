@@ -138,11 +138,11 @@ Riducendo il numero di richieste TCP in uscita, si riducono i tempi di caricamen
 
 **CDN**
 
-Per migliorare l’accessibilità, il download e il posizionamento naturale del tuo sito, puoi utilizzare la CDN (Content Delivery Network) OVH per salvare i tuoi file, le tue applicazioni e i tuoi siti.
+Per migliorare l’accessibilità, il download e il posizionamento naturale del tuo sito, puoi utilizzare la CDN (Content Delivery Network) OVHcloud per salvare i tuoi file, le tue applicazioni e i tuoi siti.
 
 In questo modo, migliorano i tempi di risposta degli utenti finali in tutto il mondo, dato che le parti statiche del tuo sito vengono caricate direttamente dall’utente nel POP a lui più vicino.
 
-Trovi tutte le offerte CDN OVH [qui](https://www.ovh.it/cdn/){.external}.
+Trovi tutte le offerte CDN OVHcloud [qui](https://www.ovh.it/cdn/){.external}.
 
 
 ### Step 6: Verifica i CMS (Content Management System) e i plugin utilizzati

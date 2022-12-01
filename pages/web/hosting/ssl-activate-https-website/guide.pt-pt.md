@@ -17,7 +17,7 @@ Graças ao alojamento web da OVHcloud, pode beneficiar de um certificado SSL. Es
 ## Requisitos
 
 - Ter um [certificado SSL](https://www.ovh.com/pt/ssl/){.external} instalado no [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
-- Dispor de, pelo menos, um website instalado e acessível no alojamento web da OVH.
+- Dispor de, pelo menos, um website instalado e acessível no alojamento web da OVHcloud.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 

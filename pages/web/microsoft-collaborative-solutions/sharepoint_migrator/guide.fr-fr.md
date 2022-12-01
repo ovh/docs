@@ -6,7 +6,7 @@ section: Sharepoint
 order: 2
 ---
 
-L'outil OSM vous permet de rapatrier le contenu de votre Sharepoint externe vers OVH. La migration se déroule en 3 étapes :
+L'outil OSM vous permet de rapatrier le contenu de votre Sharepoint externe vers OVHcloud. La migration se déroule en 3 étapes :
 
 - Le contenu
 - Les données
@@ -21,7 +21,7 @@ Certains prérequis sont nécessaires afin que la migration se passe au mieux. L
 - Sharepoint source accessible en ligne (en http ou https)
 - Avoir un Sharepoint chez OVH
 - Créer ses comptes Sharepoint chez OVH
-- Se loguer au moins une fois sur le Sharepoint OVH avant de démarrer la migration
+- Se loguer au moins une fois sur le Sharepoint OVHcloud avant de démarrer la migration
 
 
 ## Preparation
@@ -52,7 +52,7 @@ Tout d'abord, il faut renseigner les informations de votre Sharepoint (source).
 - Login : *nom de l'utilisateur à migrer.*
 - Mot de passe : *mot de passe de l'utilisateur à migrer.*
 
-Ensuite celles de votre Sharepoint OVH (destination)
+Ensuite celles de votre Sharepoint OVHcloud (destination)
 
 
 ![emails](images/destination.png){.thumbnail}
