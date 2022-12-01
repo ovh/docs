@@ -14,22 +14,22 @@ Find out how to create the first page of a website on a Start 10M hosting plan, 
 
 ## Requirements
 
-- a [Domain name](https://www.ovhcloud.com/en-gb/domains/)
-- an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) or a [Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
-- a text editor (notebook, TextEdit, Notepad++, etc.)
-- an FTP client (such as [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) installed to upload (upload to the web hosting plan) your files to your dedicated space
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/)
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) or a [Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
+- A text editor (notebook, TextEdit, Notepad++, etc.)
+- An FTP client (such as [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) installed to transfer files to your hosting storage space
 
 ## Before you begin
 
 ### What is a web page made of?
 
-The content of a website often consists of several web pages. A web page displays frozen or unfrozen content that has been formatted to serve a browsing experience. The pages you view on your browser are the result of three components that we will detail:
+The content of a website often consists of several web pages. A web page displays static or dynamic content that has been formatted to serve a browsing experience. The pages you view on your browser are the result of three components that we will detail:
 
-- **HTML (HyperText Markup Language)**: language used to structure your pages. "Structure" refers to the elements and their organisation.<br>
-**Example**: a document title will be followed by a subtitle and one or more paragraphs.
+- **HTML (HyperText Markup Language)**: Language used to structure your pages. "Structure" refers to the elements and their organisation.<br>
+**Example**: A document title will be followed by a subtitle and one or more paragraphs.
 
-The elements used to structure your content are called "tags" and are written using opening and closing chevrons.<br>
-**Example**: The `<p>` tag is one that starts a paragraph, with the same paragraph closed by the `</p>` closing tag. 
+The elements used to structure your content are called "tags" and are written between a less-than sign and a greater-than sign.<br>
+**Example**: The `<p>` tag starts a paragraph, with the same paragraph closed by the `</p>` closing tag. 
 
 >[!warning]
 >
@@ -38,16 +38,16 @@ The elements used to structure your content are called "tags" and are written us
 
 More than a hundred tags are available but you can perfectly realise your site with some of them.
 
-- **Cascading Style Sheet (CSS)**: language describing how the HTML elements will be positioned, sized, behaving, coloured, or displayed. These rules can apply for generic elements (the same colour for all titles on the site, or the font that will be used for all texts) or for specific elements (the text contained in the footer, the behaviour at the top of the navigation menu).
+- **Cascading Style Sheet (CSS)**: Language describing how the HTML elements will be positioned, sized, behaving, coloured, or displayed. These rules can apply for generic elements (the same colour for all titles on the site, or the font that will be used for all texts) or for specific elements (the text contained in the footer, the behaviour at the top of the navigation menu).
 
-- **JavaScript**: language that can be used to enrich interactions on a website (or web application). Although essential for web developers, it is not mandatory to create your website.<br>
+- **JavaScript**: Language that can be used to enrich interactions on a website (or web application). Although essential for web developers, it is not mandatory to create your website.<br>
 If you are not familiar with the code in the different languages mentioned, you can copy and paste the code examples provided in this guide, they will allow you to have a usable website on your hosting.
 
 ### Which tools to use?
 
-To create a web page, start by writing your source code from one of the three languages mentioned above into a file. Here are their main extension names: *".html"* (for your HTML files), *".css"* (for your CSS files), *".js"* (for your JavaScript files).
+To create a web page, start by writing your source code from one of the three languages mentioned above into a file. Here are their main extension names: *.html" (for your HTML files), *.css* (for your CSS files), *.js* (for your JavaScript files).
 
-Files can be written to text editors, including those available by default on your operating system (notebook, TextEdit). Many free Open Source solutions offer additional features: [Notepad++](https://notepad-plus-plus.org/), [Brackets](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) or [microphone](https://micro-editor.github.io/). You can also use an IDE (Integrated Development Environment) such as [Visual Studio Code](https://code.visualstudio.com/) or [Geany](https://www.geany.org/).
+Files can be written in text editors, including those available by default on your operating system (notebook, TextEdit). Many free Open Source solutions offer additional features: [Notepad++](https://notepad-plus-plus.org/), [Brackets](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) or [microphone](https://micro-editor.github.io/). You can also use an IDE (Integrated Development Environment) such as [Visual Studio Code](https://code.visualstudio.com/) or [Geany](https://www.geany.org/).
 
 To view and adjust your pages before they are placed on your hosting plan, use your web browser. To do this, open your file from its local location directly on your browser.
 
@@ -59,7 +59,7 @@ By contrast, a **dynamic** website implies that the pages you view are generated
 
 ### What is PHP?
 
-PHP (*PHP Hypertext Preprocessor*) is a language mostly used in web development. It works exclusively on the server side, so it is not necessary to build the visible elements on your browser. However, it will be useful for, for example, retrieving messages sent to you via your website’s contact form.
+PHP (*PHP Hypertext Preprocessor*) is a language mostly used in web development. It works exclusively on the server side, so it is not necessary to build the visible elements on your browser. However, it will be useful for retrieving messages sent to you via your website’s contact form, for example.
 
 ## Instructions
 
@@ -69,7 +69,7 @@ Use the steps below to create your first web page.
 
 To create your first web page, create a directory anywhere on your computer, where you will place all your files.
 
-Name the first `index.html` file, it will contain HTML code. This is the first file to be created, because the HTTP servers are configured by default so that the request made on your hosting (by typing your domain name in the address bar of a browser) displays the file `index`.
+Name the initial file `index.html`; it will contain HTML code. This is the first file to be created, because the HTTP servers are configured by default so that the request made on your hosting (by typing your domain name in the address bar of a browser) displays the file `index`.
 
 Open your text editor and save your work file. 
 
@@ -83,16 +83,16 @@ Open your text editor and save your work file.
 
 HTML pages are always structured in the same way:
 
-- a DOCTYPE declaration that instructs the browser to read the following content in full compliance with the standards;
-- A tag `<html>` that will frame all other tags in the document
+- A `DOCTYPE` declaration that instructs the browser to read the following content in full compliance with the standards
+- A `<html>` tag that will frame all other tags in the document
 - A `<head>` tag that will contain information about the page encoding and its title
-- a `<body>` tag that will contain the body of your HTML page
+- A `<body>` tag that will contain the body of your HTML page
 
 You can copy and paste this code into your `index.html` file:
 
 ```html
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -106,12 +106,12 @@ You can copy and paste this code into your `index.html` file:
 ```
 
 Some tags have more information than others, such as the `<html lang="en">` tag in the example above.<br>
-In this case, we are talking about attributes that will allow us to specify certain elements. In this case, it is a matter of specifying the main language of the web page. Some of these attributes are universal and can be used on all tags (with some exceptions), others are specific.
+In this case, we are talking about attributes that will allow us to specify certain elements. Here you can declare the main language of the web page. Some of these attributes are universal and can be used on all tags (with some exceptions), others are specific.
 
 The `<head>` tag includes elements that will not be displayed on the screen. The `<meta>` tags will give directions to the browser, but also to search engines, such as the encoding of the characters used in the document (UTF-8 in the example above) or information about the mobile display (“viewport” in the example above).
-The `<title>` tag is very important. It allows you to determine the title of your page that will appear on the tab of your browser, but especially that will be indexed by search engines.<br>
-This title will allow you, for example, to appear in search results on Google, DuckDuckGo, etc.<br>
-Getting to the top in these results is an exercise defined by *Search Engine Optimisation* (SEO) rules. We will not deal with this topic in this article.
+The `<title>` tag is very important. It is not only the title of your page that will appear on the tab of your browser, but will also be indexed by search engines.<br>
+This title will allow your website, for example, to appear in search results on Google, DuckDuckGo, etc.<br>
+Getting to the top in these results is an exercise defined by *Search Engine Optimisation* (SEO) rules. We will not deal with this topic in this tutorial.
 
 The `<body>` tag will contain the other HTML tags that will structure your document.
 
@@ -121,7 +121,7 @@ We will now edit the text content of your page, always following the standard HT
 
 - **Tags `<h1>` through `<h6>`**
 
-Titles are written in tags `<h...>`, which are prioritised as on any document: first `<h1>`, then `<h2>`, and so on, with the last tag being `<h6>`. The `<h1>` tag is therefore required if you want to write a `<h2>` tag. If you do not follow this rule, the browser will display the result without errors.
+Titles are written in `<h...>` tags, which are prioritised as on any document: first `<h1>`, then `<h2>`, and so on, with the last tag being `<h6>`. The `<h1>` tag is therefore required if you want to write a `<h2>` tag. If you do not follow this rule, the browser will display the result without errors.
 
 ```html
 <body>
@@ -130,7 +130,7 @@ Titles are written in tags `<h...>`, which are prioritised as on any document: f
 </body>
 ```
 
-You can observe the result by opening the HTML file via an Internet browser (Firefox, Chrome, Safari, etc.): the two strings will be displayed with different sizes.
+You can observe the result by opening the HTML file in an Internet browser (Firefox, Chrome, Safari, etc.): the two strings will be displayed with different sizes.
 
 - **Tag `<p>`**
 
@@ -156,17 +156,17 @@ You can use lists in HTML. We will take the example of simple lists, called unor
         <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
     </p>
     <p>OVHcloud offers Start 10M hosting for every domain name purchase for free.</p>
-    <p>The `Domain Name` offer includes:</p>
+    <p>The domain name offer includes:</p>
     <ul>
-        <li>Free 10MB web hosting</li>
-        <li>Free 5GB Email Account</li>
+        <li>Free 10 MB web hosting</li>
+        <li>Free 5 GB email account</li>
         <li>DNSSEC: cache poisoning protection</li>
         <li>Easy Redirect: accessing social networks from your domain name</li>
     </ul>
 </body>
 ```
 
-You can see the result in your browser: by default, list items are displayed with bullets.
+You can see the result in your browser: by default, list items are displayed with bullet points.
 
 #### Add pictures to make your page more attractive
 
@@ -176,18 +176,18 @@ The HTML tag used to display an image is the `<img>` tag. Unlike the tags we saw
 
 ##### **Optimise your images**
 
-A large image is one that will take time to load by your browser, especially if your visitors use a smartphone or tablet connected to the 4 or 5G network.
-In general, you should optimise your images and limit their weight. This weight is expressed in bytes. Typical units are kilobytes (1 KB = 1,000 bytes) or megabytes (1 MB = 1,000,000 bytes). An image larger than a few dozen KB is considered heavy and deserves to be optimised. 
+A large image will take time to load in a browser, especially if your visitors use a smartphone or tablet connected to the 4G or 5G network.
+In general, you should optimise your images and limit their size. Their "weight" is expressed in bytes. Typical units are kilobytes (1 KB = 1,000 bytes) or megabytes (1 MB = 1,000,000 bytes). An image larger than a few dozen KB is considered "heavy" and deserves to be optimised. 
 
 **Example**: If your images each weigh 1 MB, you will be limited to less than 10 images on your Start10M hosting. If you manage to reduce their size from 50kb to 200kb, you could present up to a hundred on your web page.
 
 Some tips to make your files as light as possible:
 
-- Resize the definition of your images to the size at which they will be displayed on your site ;
-- the size is expressed in pixels width×height (for example, 300×250 pixels is the width of a standard advertising image) ;
-- Modify the resolution (the “web” uses a default resolution of 72 dpi) ;
-- Choose compressed formats such as *JPEG*, *PNG* or *Webp* ;
-- You can also use a vector format (SVG) ;
+- Resize the definition of your images to the size at which they will be displayed on your site.
+- The size is expressed in pixel *width×height* (for example, 300×250 pixels is the width of a standard advertising image).
+- Modify the resolution (the Web uses a default resolution of 72 dpi).
+- Choose compressed formats such as *JPEG*, *PNG* or *Webp*.
+- You can use a vector format (SVG).
 - Avoid uncompressed *BPM* and *TIFF* formats.
 
 ##### **Store your images on your web hosting plan**
@@ -210,10 +210,10 @@ We will now create a new paragraph in which we will place the image (in this exa
         <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
     </p>
     <p>OVHcloud offers Start 10M hosting for every domain name purchase for free.</p>
-    <p>The `Domain Name` offer includes:</p>
+    <p>The domain name offer includes:</p>
     <ul>
-        <li>Free 10MB web hosting</li>
-        <li>Free 5GB Email Account</li>
+        <li>Free 10 MB web hosting</li>
+        <li>Free 5 GB email account</li>
         <li>DNSSEC: cache poisoning protection</li>
         <li>Easy Redirect: accessing social networks from your domain name</li>
     </ul>
@@ -237,7 +237,7 @@ As with HTML files, CSS files can be created with any text editor. The extension
 
 ![CSS File Placement](images/create_your_personal_webpage_4.png){.thumbnail}
 
-We now need to link this CSS file, which we named by convention *style.css*, to our HTML page. This link is done by adding a `<link>` tag in the `<head>` tag in the index.html file :
+We now need to link this CSS file, which we named by convention *style.css*, to our HTML page. This link is done by adding a `<link>` tag in the `<head>` tag of the *index.html* file:
 
 ```html
 <head>
@@ -249,25 +249,25 @@ We now need to link this CSS file, which we named by convention *style.css*, to 
 </head>
 ```
 
-To check, we will declare in our style sheet a colour defined for each element `<h1>` of our web page. Edit the style.css file by adding these lines:
+To check, we will declare in our style sheet a colour defined for each element `<h1>` of our web page. Edit the *style.css* file by adding these lines:
 
 ```html
 h1 {
-    colour red;
+    color red;
 }
 ```
 
-This set of instructions is called a CSS rule and means: all HTML elements `<h1>` will have the colour *(colour)* red *(red)*.
+This set of instructions is called a CSS rule and means: all HTML elements `<h1>` will have the colour *(color)* *(red)*.
 
 You can test another colour on the `<h2>` element, paragraphs, and list items:
 
 ```html
 h1 {
-    colour red;
+    color red;
 }
  
 h2
-    colour blue;
+    color blue;
 }
  
 p {
@@ -281,7 +281,7 @@ li {
 
 Refresh your browser page by pressing the `F5` key on your keyboard: your title will now appear in red.
 
-Browsers have default styles, including specific rules for positioning elements. We will modify the CSS file accordingly and specify a rule that will apply to all HTML elements displayed by the browser. The `*` (star) selector, called the universal selector, is used and is placed at the beginning of the CSS file:
+Browsers have default styles, including specific rules for positioning elements. We will modify the CSS file accordingly and specify a rule that will apply to all HTML elements displayed by the browser. The `*` (asterisk) selector, called the universal selector, is used and is placed at the beginning of the CSS file:
 
 ```html
 * {
@@ -302,15 +302,15 @@ We have positioned basic elements in your `<body>` tag: `h1`, `h2`, `p`, `ul` an
 
 In its latest iteration, [HTML5](https://html.spec.whatwg.org/) provides new tags to help structure a document and enrich it semantically. A standard document (including a traditional medium) includes visually identifiable blocks that can be reproduced in HTML:
 
-- a header, which will appear in a `<header>` tag (not to be confused with the `<head>` tag)
-- primary content, defined by a `<main>` tag
-- finally, a footer, described by the `<footer>` element.
+- A header, which will appear in a `<header>` tag (not to be confused with the `<head>` tag)
+- Primary content, defined by a `<main>` tag
+- A footer, described by the `<footer>` element
 
 Each of these elements can be used for specific uses:
 
-- the `header` will contain, for example, the navigation menu (itself framed by a `<nav>` tag);
-- in the `main` will be all content-related elements, which can also structure the document even more precisely (`section`, `article`, `aside`, `div`, etc.);
-- the `footer` will contain more generic information, such as links to social networks, legal notices, general conditions of use and possibly another navigation menu.
+- The `header` will contain, for example, the navigation menu (itself framed by a `<nav>` tag).
+- The `main` will contain all content-related elements, which can also structure the document even more precisely (`section`, `article`, `aside`, `div`, etc.).
+- The `footer` will contain more generic information, such as links to social networks, legal notices, general conditions of use and possibly another navigation menu.
 
 Your HTML code will look like this:
 
@@ -332,10 +332,10 @@ Your HTML code will look like this:
             <h1>Welcome to my personal page</h1>
             <h2>Create your website quickly and easily</h2>
             <p>OVHcloud offers Start 10M hosting for every domain name purchase for free.</p>
-            <p>The "Domain Name" offer includes:</p>
+            <p>The domain name offer includes:</p>
             <ul>
-                <li>Free 10MB web hosting</li>
-                <li>Free 5GB Email Account</li>
+                <li>Free 10 MB web hosting</li>
+                <li>Free 5 GB email account</li>
                 <li>DNSSEC: cache poisoning protection</li>
                 <li>Easy Redirect: accessing social networks from your domain name</li>
             </ul>
@@ -349,7 +349,7 @@ Your HTML code will look like this:
 
 ### Make an item interactive
 
-Links to navigate a site from page to page are essential elements of the web. To implement them, use the tag `<a>` (_anchor_, anchor), which makes an element interactive, along with an `href` attribute that will contain the URL to point to. In the following example, we will make the logo contained in the `<header>` tag interactive:
+Links to navigate a site from page to page are essential elements of the Web. To implement them, use the tag `<a>` (*anchor*), which makes an element interactive, along with an `href` attribute that will contain the URL to point to. In the following example, we will make the logo contained in the `<header>` tag interactive:
 
 ```html
 <header> 
@@ -362,20 +362,20 @@ Links to navigate a site from page to page are essential elements of the web. To
 We can do it the same way to make text interactive:
 
 ```html
-<p>Offer <a href="https://www.ovhcloud.com/en-gb/domains/">"Domain name"</a> includes:</p>
+<p>Offer <a href="https://www.ovhcloud.com/en-gb/domains/">domain name</a> includes:</p>
 ```
 
 To display the link target in a new tab, simply add a `target` attribute to your `<a>` tag:
 
 ```html
-<p>Offer <a href="https://www.ovhcloud.com/en-gb/domains/" target="_blank">"Domain name"</a> includes:</p>
+<p>Offer <a href="https://www.ovhcloud.com/en-gb/domains/" target="_blank">domain name</a> includes:</p>
 ```
 
 ### How do I store content on my hosting plan?
 
 To make your pages, and therefore your website, visible to everyone, you will need to upload them to your hosting plan (you will need to activate your hosting plan [as detailed in this guide](https://docs.ovh.com/gb/en/hosting/activate-start10m/)).
 
-You can transfer files via a dedicated protocol: the **FTP** (for **F**ile **T**ransfer **P**rotocol) Use dedicated software for this operation, such as [FileZilla](https://filezilla-project.org/download.php?type=client) or [Cyberduck](https://cyberduck.io/download/).
+You can transfer files via a dedicated protocol: **FTP** (for **F**ile **T**ransfer **P**rotocol) Use dedicated software for this operation, such as [FileZilla](https://filezilla-project.org/download.php?type=client) or [Cyberduck](https://cyberduck.io/download/).
 
 ### Deploy your website in FTP
 
@@ -390,15 +390,15 @@ Once the files have been transferred to your web hosting plan, you can view the 
 
 ### Improve your website with a template
 
-CSS and HTML are easy to understand languages for quick results. However, these languages, particularly CSS, have evolved considerably. If cascading style sheets offer more functionality (animations, gradients, position of elements on the page, etc.), they have become more complex to code.
+CSS and HTML are easy to understand languages for quick results. However, these languages, particularly CSS, have evolved considerably. While cascading style sheets offer more functionality (animations, gradients, position of elements on the page, etc.), they have become more complex to code.
 
-To save time on the appearance of your site and allow you to focus on the content, and therefore what will be referenced, it is common to use *templates* (templates) to save time and have a quality result both graphically and functionally (design, ergonomics, visibility on smartphone and tablet).
+To save time on the appearance of your site and allow you to focus on the content, and therefore what will be referenced, it is common to use *templates* to save time and have a quality result both graphically and functionally (design, ergonomics, visibility on smartphone and tablet).
 
 #### What is a template? Which solutions to use?
 
-A *template* is a template or an example that can be reused, whether or not you can adapt it. Using *templates* saves time on site design by adapting elements that have already been designed, while offering the qualities that can be demanded of a "professional" site. The word theme can also be used.
+A template is a guideline or an example that can be reused, whether or not you can adapt it. Using templates saves time on site design by adapting elements that have already been designed, while offering the qualities that can be demanded of a "professional" site. The word theme can also be used.
 
-There are free "Open Source" solutions available on the internet, such as [Bootstrap](https://materializecss.com/), [Materialise](https://materializecss.com/), [Foundation](https://get.foundation/) or [Semantic UI](https://semantic-ui.com/). These tools are called “framework”: these are libraries that make it easier to create websites or web applications. They offer standardised, customisable and reusable elements, and the entire community offers reusable *templates*.
+There are free "Open Source" solutions available on the internet, such as [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) or [Semantic UI](https://semantic-ui.com/). These tools are called “frameworks”: libraries that make it easier to create websites or web applications. They offer standardised, customisable and reusable elements, and the entire community offers reusable templates.
 
 #### Bootstrap
 
@@ -419,26 +419,26 @@ You will find many resources on the web to learn and improve your practice, to c
 - [Start with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 - [HTML Tag Reference](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
-- [Tutoriels CSS Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/Tutorials)
+- [Mozilla CSS Tutorials](https://developer.mozilla.org/en-US/docs/Web/CSS/Tutorials)
 - [CSS Tutorial W3 Schools](https://www.w3schools.com/css/).
 
 ### Rework your images
 
 Many free tools allow you to rework your illustrations:
 
-- The Windows 10 and 11 [Photos](https://apps.microsoft.com/store/detail/photos-microsoft/9WZDNCRFJBH4) app
-- The macOS [Photos](https://support.apple.com/en-gb/guide/photos/welcome/mac) app
+- The Windows 10 and 11 [Photos app](https://apps.microsoft.com/store/detail/photos-microsoft/9WZDNCRFJBH4)
+- The macOS [Photos app](https://support.apple.com/en-gb/guide/photos/welcome/mac)
 - [Paint.Net](https://www.getpaint.net/), [GIMP](https://www.gimp.org/), [darktable](https://www.darktable.org/)
-- Also think about the photo editing applications available on your Android or iOS smartphones.
+- Also think about the photo editing applications available on Android or iOS smartphones.
 
 You will also find online resources:
 
 - [Compressor](https://compressor.io/)
 - [ShrinkMe](https://shrinkme.app/)
 - [Free Online Image Optimiser](https://kraken.io/web-interface)
-- [TinyJPG](https://tinyjpg.com/) et [TinyPNG](https://tinypng.com/).
+- [TinyJPG](https://tinyjpg.com/) and [TinyPNG](https://tinypng.com/).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
