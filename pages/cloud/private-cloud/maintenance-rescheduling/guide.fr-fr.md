@@ -65,7 +65,7 @@ Exécutez l'appel API suivant :
 Renseignez les variables :
 
 - serviceName : la référence de votre PCC sous la forme `pcc-XX-XX-XX-XX` ;
-- taskId : il s'agit de la « référence de l'opération » de maintenance renseignér dans l'e-mail de notification qui vous a été envoyé ;
+- taskId : il s'agit de la « référence de l'opération » de maintenance renseignée dans l'e-mail de notification qui vous a été envoyé ;
 - executionDate: renseignez la nouvelle date de maintenance au format `YYYY-MM-DDTHH:MM+01:SS` (par exemple, 2023-01-02T08:00:00+01:00 pour une maintenance programmée le 02/01/2023 à 08h00 (UTC+1)).
 
 ## Aller plus loin
