@@ -10,7 +10,7 @@ order: 01
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22 de setembro de 2020**
+**Última atualização: 01/12/2022**
 
 ## Objetivo
 
@@ -33,7 +33,7 @@ No seu alojamento Web OVHcloud, pode utilizar scripts para automatizar certas op
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action}.
 
-Selecione o alojamento em causa, clique no separador `Plus+`{.action} e, a seguir, em `Tarefas programadas - Cron`{.action}
+Selecione o alojamento em causa, clique no separador `Mais`{.action} e, a seguir, em `Cron`{.action}.
 
 Nesta secção, terá uma visão geral das tarefas planeadas e dos respetivos parâmetros.
 
