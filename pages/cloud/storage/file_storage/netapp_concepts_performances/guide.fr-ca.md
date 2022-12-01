@@ -6,11 +6,11 @@ section: Enterprise File Storage
 order: 011
 ---
 
-**Dernière mise à jour le 29/11/2022**
+**Dernière mise à jour le 30/11/2022**
 
 ## Objectif
 
-Découvrez les concepts liés au provisionnement, au suivi ainsi qu'au test des performances de la solution [Enterprise File Storage](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/).
+Découvrez les concepts liés au provisionnement, au suivi ainsi qu'au test des performances de la solution [Enterprise File Storage](https://www.ovhcloud.com/fr-ca/storage-solutions/enterprise-file-storage/).
 
 ## En pratique
 
@@ -31,7 +31,7 @@ Cette information est importante lorsque vous concevez votre architecture de sto
 
 - **Exemple n°2** : votre infrastructure nécessite **4500 IOPS** et un volume de données de **1 To**. Pour cela, vous devez provisionner **2 To** pour obtenir les **4500 IOPS nécessaires**. Plus spécifiquement dans ce cas, vous bénéficierez de **8000 IOPS** sur la capacité provisionnée. Il s’agit donc de sur-provisionner votre service afin d’assurer le niveau de performances souhaité.
 
-- **Exemple n°3** : votre application ne nécessite pas de performance en particulier mais un volume de stockage de plus de **60 To**. Dans ce cas, il est préférable de s’orienter vers le service de stockage [NAS-HA](https://www.ovhcloud.com/fr/storage-solutions/nas-ha/), plus économique et permettant d’atteindre des capacités supérieures à 58 To par service.
+- **Exemple n°3** : votre application ne nécessite pas de performance en particulier mais un volume de stockage de plus de **60 To**. Dans ce cas, il est préférable de s’orienter vers le service de stockage [NAS-HA](https://www.ovhcloud.com/fr-ca/storage-solutions/nas-ha/), plus économique et permettant d’atteindre des capacités supérieures à 58 To par service.
 
 ### Volumes et qualité de services (QoS)
 
@@ -57,7 +57,7 @@ Afin d’effectuer vos propres tests de performances et pour vous familiariser a
 
 Il est important de tester les performances de votre Enterprise File Storage dans le même datacenter que vos charges de travail. Les latences entre les datacenters sont trop élevées durant le fonctionnement normal pour qu'une telle évaluation soit pertinente.
 
-Avant de démarrer le test, vérifiez que le client utilisé pour ce benchmark a accès à votre service Enterprise File Storage et à un volume de test. Si ce n’est pas encore fait, vous pouvez suivre le guide de [gestion depuis l’espace client OVHcloud](https://docs.ovh.com/fr/storage/file-storage/netapp/control-panel/).
+Avant de démarrer le test, vérifiez que le client utilisé pour ce benchmark a accès à votre service Enterprise File Storage et à un volume de test. Si ce n’est pas encore fait, vous pouvez suivre le guide de [gestion depuis l’espace client OVHcloud](https://docs.ovh.com/fr-ca/storage/file-storage/netapp/control-panel/).
 
 #### Banc de test
 
