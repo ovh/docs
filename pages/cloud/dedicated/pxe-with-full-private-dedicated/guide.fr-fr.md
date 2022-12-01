@@ -1,9 +1,8 @@
 ---
 title: 'Gestion du reboot de vos serveurs avec OLA, l'agrégation privée activée'
 slug: netboot OLA
-excerpt: 'Comment réaliser les redémarrages de vos solutions OVHcloud fonctionnant à travers l'OVH Link Aggregation'
+excerpt: "Comment réaliser les redémarrages de vos solutions OVHcloud fonctionnant à travers l'OVH Link Aggregation"
 section: 'Utilisation avancée'
-order: 01
 ---
 
 
