@@ -1,6 +1,6 @@
 ---
-title: "Décaler une maintenance programmée sur votre PCC"
-excerpt: "Découvrez comment décaler, depuis votre espace client OVHcloud, une maintenance programmée sur votre PCC"
+title: "Décaler une maintenance programmée sur votre Hosted Private Cloud"
+excerpt: "Découvrez comment décaler une maintenance programmée sur votre service Hosted Private Cloud powered by VMware"
 slug: maintenance-rescheduling
 section: Fonctionnalités OVHcloud
 ---
@@ -9,19 +9,19 @@ section: Fonctionnalités OVHcloud
 
 ## Objectif
 
-Lorsqu'une maintenance est programmée sur votre Hosted Private Cloud, un e-mail de notification vous est envoyé pour vous prévenir de la date de cette maintenance. Si cette date ne vous convient pas, par exemple pour des impératifs de production, vous pouvez reporter cette maintenance à une date de votre choix.
+Lorsqu'une maintenance est programmée sur votre Hosted Private Cloud, un e-mail de notification vous est envoyé pour vous prévenir de la date de cette maintenance. Si cette date ne vous convient pas, par exemple pour des impératifs de production, vous pouvez reporter cette maintenance à une date de votre choix, via l'espace client OVHcloud ou l'API OVHcloud.
 
 > [!primary]
-> Nous essayons de nous adapter au maximum à votre utilisation de l'infrastructure et à vos contraintes. Cependant, nous devons parfois planifier des maintenances pour lesquelles il ne sera pas possible de modifier la date et/ou l'heure (maintenances d'infrastructure impliquant plusieurs clients, interventions urgentes pour éviter un incident, etc)
+> Nous essayons de nous adapter au maximum à votre utilisation de l'infrastructure et à vos contraintes. Cependant, nous devons parfois planifier des maintenances pour lesquelles il ne sera pas possible de modifier la date et/ou l'heure (maintenances d'infrastructure impliquant plusieurs clients, interventions urgentes pour éviter un incident, etc).
 >
-> Pour information, lorsqu'une date de maintenance peut être modifiée par vos soins, les nouvelles dates qui vous seront proposées seront comprises dans un intervalle de temps réduit.
+> Pour information, lorsqu'une date de maintenance peut être modifiée par vos soins, les nouvelles dates proposées sont comprises dans un intervalle de temps réduit.
 
-**Découvrez comment reporter la date d'une maintenance programmée sur votre Hosted Private Cloud, depuis votre espace client OVHcloud.**
+**Découvrez comment reporter la date d'une maintenance programmée sur votre Hosted Private Cloud powered by VMware, depuis votre espace client OVHcloud ou l'API OVHcloud.**
 
 ## Prérequis
 
 - Avoir reçu un e-mail de notification de maintenance indiquant spécifiquement que vous pouvez « **modifier la date d'exécution de la maintenance** ». Dans le cas contraire, la date de la maintenance ne peut pas être modifiée.
-- Être contact administrateur ou technique de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Être contact administrateur ou technique de l'infrastructure [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)) ou à l'[interface d'administration de vos services par API](https://eu.api.ovh.com/).
 
 ## En pratique
