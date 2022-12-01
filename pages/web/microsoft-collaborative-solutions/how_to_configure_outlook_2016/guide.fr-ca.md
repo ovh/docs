@@ -19,7 +19,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 - Disposer d'une offre [Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}.
 - Disposer du logiciel Microsoft Outlook 2016 installé sur votre appareil.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
-- Le champ SRV d'OVH doit être correctement configuré dans la zone DNS du nom de domaine.
+- Le champ SRV d'OVHcloud doit être correctement configuré dans la zone DNS du nom de domaine.
 
 > [!primary]
 >
@@ -44,12 +44,12 @@ Une fenêtre de sécurité vous demandant de renseigner le **mot de passe** de l
 
 > [!primary]
 >
-> Si un message vous indique qu'Outlook n'a pas pu paramétrer votre compte, cela peut indiquer que le champ SRV d'OVH n'est pas correctement configuré dans la zone DNS de votre nom de domaine.
+> Si un message vous indique qu'Outlook n'a pas pu paramétrer votre compte, cela peut indiquer que le champ SRV d'OVHcloud n'est pas correctement configuré dans la zone DNS de votre nom de domaine.
 >
-> Nous vous conseillons de vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, onglet `Domaines associés`{.action}, puis colonne `Diagnostic`{.action} du tableau.
+> Nous vous conseillons de vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, onglet `Domaines associés`{.action}, puis colonne `Diagnostic`{.action} du tableau.
 >
 
-Si la configuration de votre nom de domaine est correcte, un message vous demandant d'autoriser une connexion vers le serveur d'OVH apparaît. Acceptez cette connexion afin de permettre la configuration automatique de votre compte Exchange.
+Si la configuration de votre nom de domaine est correcte, un message vous demandant d'autoriser une connexion vers le serveur d'OVHcloud apparaît. Acceptez cette connexion afin de permettre la configuration automatique de votre compte Exchange.
 
 Une fois celui-ci correctement paramétré et accessible depuis votre logiciel Outlook 2016, vous pouvez effectuer un test d'envoi pour vérifier que le compte est fonctionnel.
 
@@ -59,7 +59,7 @@ Une fois celui-ci correctement paramétré et accessible depuis votre logiciel O
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose une application web disposant de fonctions collaboratives. Celle-ci est accessible à l’adresse <https://ex.mail.ovh.ca/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+OVHcloud propose une application web disposant de fonctions collaboratives. Celle-ci est accessible à l’adresse <https://ex.mail.ovh.ca/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin
 

@@ -235,7 +235,7 @@ Nous vous invitons à consulter les forums dédiés à la solution Drupal.
 
 
 ### Erreurs classiques
-- Erreur "OVH - Site en construction"
+- Erreur "OVHcloud - Site en construction"
 
 Vous avez mis en place vos fichiers sur le FTP, cependant la page "Site en construction" est toujours affichée.
 

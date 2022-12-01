@@ -121,7 +121,7 @@ Una vez añadido el dominio, vaya al [paso 3\. publicar un sitio web en internet
 > ![Multisitio](images/add-multisite-external-step4.png){.thumbnail}
 >
 
- Una vez seleccionado el dominio que quiera asociar al alojamiento, deberá personalizar su información. Tenga en cuenta que algunas opciones incluidas en su [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external} no pueden activarse durante este proceso. Es necesario añadir el dominio en primer lugar y posteriormente activar dichas opciones modificando la configuración del multisitio.
+ Una vez seleccionado el dominio que quiera asociar al alojamiento, deberá personalizar su información. Tenga en cuenta que algunas opciones incluidas en su [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} no pueden activarse durante este proceso. Es necesario añadir el dominio en primer lugar y posteriormente activar dichas opciones modificando la configuración del multisitio.
 
 |Campo|Descripción|
 |---|---|

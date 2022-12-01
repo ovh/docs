@@ -13,7 +13,7 @@ order: 05
 Per installare la piattaforma Joomla! sulla tua offerta di hosting condiviso, ti consigliamo di utilizzare un client FTP come FileZilla (gratuito).
 
 ## [b]Credenziali[/b]
-Assicurati di disporre delle credenziali (Nic-handle e password) di accesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Assicurati di disporre delle credenziali (Nic-handle e password) di accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 
 - Recupera le credenziali FTP per accedere al tuo hosting Web.
@@ -66,7 +66,7 @@ Apri FileZilla.
 
 Nella sezione Sito locale, che contiene l'elenco dei file presenti sul tuo pc, apri la cartella decompressa Joomla! in cui sono presenti i file del tuo CMS.
 
-Nella sezione Sito remoto, che corrisponde in questo caso al tuo hosting condiviso OVH, apri la cartella www in cui dovrai salvare tutti i file del CMS.
+Nella sezione Sito remoto, che corrisponde in questo caso al tuo hosting condiviso OVHcloud, apri la cartella www in cui dovrai salvare tutti i file del CMS.
 
 Se questa cartella non esiste, puoi crearla.
 
@@ -130,13 +130,13 @@ Inserisci le informazioni del tuo database:
 
 Tipo database: seleziona il tipo di database, generalmente MySQL.
 
-Nome Host: inserisci il nome del server del tuo database, indicato nell'email di installazione o nel tuo Spazio Cliente OVH.
+Nome Host: inserisci il nome del server del tuo database, indicato nell'email di installazione o nel tuo Spazio Cliente OVHcloud.
 
 Nome utente: uguale al nome del database, indicato nell'email di installazione.
 
 Password: se non l'hai modificata, la password che hai ricevuto per email al momento della creazione del tuo database.
 
-Nome database: definito al momento della creazione nel tuo Spazio Cliente OVH.
+Nome database: definito al momento della creazione nel tuo Spazio Cliente OVHcloud.
 
 Prefisso tabelle: utile per realizzare più installazioni di Joomla! utilizzando lo stesso database. In questo caso, è necessario inserire un prefisso diverso per ognuna delle installazioni.
 
@@ -199,16 +199,16 @@ Una volta effettuato l'accesso, visualizzi il pannello di amministrazione di Joo
 
 
 ## Informazioni utili
-Il supporto OVH non risponde alle domande relative alla configurazione del tuo Joomla!. Se hai bisogno di aiuto, consulta la guida []({legacy}2053) disponibile online o i [forum dedicati](http://forum.joomla.it/) a questa soluzione.
+Il supporto OVHcloud non risponde alle domande relative alla configurazione del tuo Joomla!. Se hai bisogno di aiuto, consulta la guida []({legacy}2053) disponibile online o i [forum dedicati](http://forum.joomla.it/) a questa soluzione.
 
 ## - Errore "Sito in costruzione"
 Hai configurato i tuoi file sul tuo server FTP, ma continui a visualizzare la pagina "Sito in construzione".
 
-Quando installi il tuo hosting, OVH realizza una pagina di attesa per permetterti di caricare i file del tuo sito.
+Quando installi il tuo hosting, OVHcloud realizza una pagina di attesa per permetterti di caricare i file del tuo sito.
 
-Se salvi i file nella cartella www ma non elimini il contenuto inserito da OVH, potrebbe verificarsi questo problema.
+Se salvi i file nella cartella www ma non elimini il contenuto inserito da OVHcloud, potrebbe verificarsi questo problema.
 
-Per risolverlo, elimina o rinomina il file "index.html" che OVH ha salvato sul tuo hosting.
+Per risolverlo, elimina o rinomina il file "index.html" che OVHcloud ha salvato sul tuo hosting.
 
 Se rinomini semplicemente il file, puoi riattivarlo in qualsiasi momento per utilizzarlo come pagina di attesa.
 
@@ -221,7 +221,7 @@ Altre informazioni utili: per essere presi in carico, i file del tuo sito devono
 
 La causa è semplice: l'ultima versione di PHP non è stata attivata.
 
-Per modificare la versione PHP del tuo hosting coindiviso, consulta la guida [Configura PHP sul tuo Hosting Web OVH]({legacy}1207)
+Per modificare la versione PHP del tuo hosting coindiviso, consulta la guida [Configura PHP sul tuo Hosting Web OVHcloud]({legacy}1207)
 
 ![joomla](images/3156.png){.thumbnail}
 
@@ -232,7 +232,7 @@ Magic Quotes deve essere Off, cioè a 0 nel tuo file di configurazione.
 
 Nelle nuove offerte 2014, Magic Quote è disattivata di default se PHP-FPM è attivato. Nelle vecchie offerte du hosting condiviso, è possibile disattivare la variabile nel file .htaccess.
 
-Per modificare la versione PHP del tuo hosting coindiviso 2014, consulta la guida [Configura PHP sul tuo Hosting Web OVH]({legacy}1207).
+Per modificare la versione PHP del tuo hosting coindiviso 2014, consulta la guida [Configura PHP sul tuo Hosting Web OVHcloud]({legacy}1207).
 
 Per modificare la versione PHP su una vecchia offerta, consulta la guida []]({legacy}1175).
 

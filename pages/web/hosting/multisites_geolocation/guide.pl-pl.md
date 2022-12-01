@@ -16,7 +16,7 @@ Po zalogowaniu należy kliknąć na nazwę strony głównej znajdującą się z 
 Następnie należy wybrać Strony www i kliknąć na ikonkę długopisu z prawej strony strony internetowej, dla której chcesz ustawić geolokalizację.
 
 ![geolocation](images/2793.png){.thumbnail}
-Będziesz mógł wybrać IP danego kraju. OVH proponuje 12 różnych krajów.
+Będziesz mógł wybrać IP danego kraju. OVHcloud proponuje 12 różnych krajów.
 
 ![geolocation](images/2794.png){.thumbnail}
 Wprowadzanie zmiany może trwać około 24 godziny.

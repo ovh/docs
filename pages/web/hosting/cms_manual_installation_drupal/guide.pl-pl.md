@@ -64,7 +64,7 @@ Po zalogowaniu do programu FileZilla:
 
 W części "Adres lokalny", która zawiera listę plików znajdujących się na Twoim komputerze, otówrz rozpakowany katalog o nazwie "Drupal-xxx", w którym znajdują się pliki modułu.
 
-W części "Serwer zdalny", która odnosi się do hostingu www OVH, otwórz katalog "www". W tym katalogu zostaną umieszczone wszystkie pliki modułu.
+W części "Serwer zdalny", która odnosi się do hostingu www OVHcloud, otwórz katalog "www". W tym katalogu zostaną umieszczone wszystkie pliki modułu.
 Jeśli taki katalog nie istnieje, możesz go utworzyć.
 Pliki muszą zostać obowiązkowo umieszczone w katalogu "www". W przeciwnym razie procedura instalacji nie będzie dostępna z poziomu nazwy domeny.
 
@@ -200,22 +200,22 @@ Odwiedź forum modułu Drupal.
 - Oto strona [pomocy dla modułu ](https://www.drupal.org/support).
 
 
-Pomoc OVH nie będzie w stanie zapewnić Ci wsparcia w zakresie konfiguracji modułu Drupal.
+Pomoc OVHcloud nie będzie w stanie zapewnić Ci wsparcia w zakresie konfiguracji modułu Drupal.
 Udostępniamy przewodnik na ten temat: []({legacy}2053).
 
 
 ## Klasyczne błędy
 
-- Błąd "OVH - strona w budowie"
+- Błąd "OVHcloud - strona w budowie"
 
 
 Umieściłeś pliki na FTP, ale nadal wyświetla się informacja "strona w budowie".
 
-Po zainstalowaniu hostingu, OVH umieszcza na nim stronę tymczasową.
+Po zainstalowaniu hostingu, OVHcloud umieszcza na nim stronę tymczasową.
 
-Jeśli umieścisz pliki w katalogu "www" i nie usuniesz treści umieszczonych przez OVH, pojawi się ten problem. 
+Jeśli umieścisz pliki w katalogu "www" i nie usuniesz treści umieszczonych przez OVHcloud, pojawi się ten problem. 
 
-Aby to poprawić, usuń plik "index.html" umieszczony przez OVH lub zmień jego nazwę.
+Aby to poprawić, usuń plik "index.html" umieszczony przez OVHcloud lub zmień jego nazwę.
 
 Zmień nazwę tego pliku. Będziesz mógł później aktywować ten plik jako tymczasową stronę główną.
 

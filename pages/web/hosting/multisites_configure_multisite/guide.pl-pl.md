@@ -61,7 +61,7 @@ W przypadku nazwy domeny zewnętrznej (inny identyfikator klienta) lub zewnętrz
 > [!warning]
 > Ten etap ma zastosowanie jedynie, jeśli zaznaczyłeś opcję "Dodaj domenę zarejestrowaną w OVHcloud". Domena lub jej strefa DNS muszą znajdować się **w Panelu klienta**. W przypadku domen zewnętrznych przejdź do [etap 2.2: dodaj domenę zewnętrzną](#add-external-domain){.external}.
 
-Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego w OVH hostingu niektóre z oferowanych elementów mogą być dostępne, inne zaś nie.
+Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego w OVHcloud hostingu niektóre z oferowanych elementów mogą być dostępne, inne zaś nie.
 
 > [!primary]
 > Aby dodać subdomenę, najpierw wybierz domenę główną z listy (przykład: mydomain.ovh). Na kolejnym etapie podasz subdomenę (przykład: **blog**.mydomain.ovh).

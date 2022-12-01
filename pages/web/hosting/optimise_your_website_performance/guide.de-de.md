@@ -15,7 +15,7 @@ Die erläuterten Stichpunkte helfen Ihnen dabei, ein grundlegendes Verständnis 
 **Erfahren Sie, wie Sie die Performance Ihrer Webseite verbessern können.**
 
 > [!warning]
-> In diesem Tutorial zeigen wir Ihnen (unter anderem) die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der OVH Community unter https://community.ovh.com/ (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+> In diesem Tutorial zeigen wir Ihnen (unter anderem) die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der OVHcloud Community unter https://community.ovh.com/ (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
 
 ## Voraussetzungen

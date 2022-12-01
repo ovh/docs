@@ -69,7 +69,7 @@ Po zalogowaniu do programu FileZilla:
 
 W części "Adres lokalny", która zawiera listę plików znajdujących się na Twoim komputerze, otówrz rozpakowany katalog o nazwie "Joomla", w którym znajdują się pliki modułu.
 
-W części "Serwer zdalny", która odnosi się do hostingu www OVH, otwórz katalog "www". W tym katalogu zostaną umieszczone wszystkie pliki modułu. 
+W części "Serwer zdalny", która odnosi się do hostingu www OVHcloud, otwórz katalog "www". W tym katalogu zostaną umieszczone wszystkie pliki modułu. 
 
 Jeśli taki katalog nie istnieje, możesz go utworzyć.
 
@@ -204,7 +204,7 @@ Tak wygląda panel administracyjny modułu Joomla!.
 
 
 ## Użyteczne informacje
-Pomoc OVH nie będzie w stanie zapewnić Ci wsparcia w zakresie konfiguracji modułu Joomla!.
+Pomoc OVHcloud nie będzie w stanie zapewnić Ci wsparcia w zakresie konfiguracji modułu Joomla!.
 Udostępniamy przewodnik na ten temat: []({legacy}2053).
 
 Zachęcamy do korzystania z forum rozwiązania Joomla!.
@@ -217,11 +217,11 @@ Zachęcamy do korzystania z forum rozwiązania Joomla!.
 ## Klasyczny błąd: strona w budowie
 Umieściłeś pliki na FTP, ale nadal wyświetla się informacja "strona w budowie".
 
-Po zainstalowaniu hostingu, OVH umieszcza na nim stronę tymczasową.
+Po zainstalowaniu hostingu, OVHcloud umieszcza na nim stronę tymczasową.
 
-Jeśli umieścisz pliki w katalogu "www" i nie usuniesz treści umieszczonych przez OVH, pojawi się ten problem. 
+Jeśli umieścisz pliki w katalogu "www" i nie usuniesz treści umieszczonych przez OVHcloud, pojawi się ten problem. 
 
-Aby to poprawić, usuń plik "index.html" umieszczony przez OVH lub zmień jego nazwę.
+Aby to poprawić, usuń plik "index.html" umieszczony przez OVHcloud lub zmień jego nazwę.
 
 Zmień nazwę tego pliku. Będziesz mógł później aktywować ten plik jako tymczasową stronę główną.
 
@@ -248,7 +248,7 @@ W nowej ofercie 2014, jeśli PHP-FPM jest włączone, zmienna Magic Quotes jest 
 Udostępniamy przewodnik dotyczący zmiany zmiennych PHP na hostingu www 2014:
 [Zmiana wersji PHP na hostingu www]({legacy}1207)
 
-Udostępniamy również przewodnik dotyczący zmiany zmiennych PHP na starszym hostingu www:[Zmiana zmiennych PHP na starych hostingach OVH](http://pomoc.ovh.pl/KonfiguracjaPhp)
+Udostępniamy również przewodnik dotyczący zmiany zmiennych PHP na starszym hostingu www:[Zmiana zmiennych PHP na starych hostingach OVHcloud](http://pomoc.ovh.pl/KonfiguracjaPhp)
 
 ![joomla](images/3157.png){.thumbnail}
 

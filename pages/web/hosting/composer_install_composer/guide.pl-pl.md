@@ -20,9 +20,9 @@ order: 02
 
 > [!warning]
 >
-> OVH udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie.  Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+> OVHcloud udostępnia różnorodne usługi, jednak ich konfiguracja, zarządzanie oraz utrzymanie należy do Ciebie.  Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
 > 
 
 ## Wymagania początkowe
@@ -66,13 +66,13 @@ Jeśli chcesz po prostu zainstalować Symfony 2, możesz na przykład uruchomić
 php composer.phar create-project symfony/framework-standard-edition my_project_name "2.7.*"
 ```
 
-Możesz również korzystać z API OVH z poziomu Twojego hostingu za pomocą oficjalnej werappera. W tym celu wystarczy dodać plik o nazwie composer.json, który zawiera listę zależności, których potrzebujesz. Oto przykład tego pliku za pomocą wrappera API OVHcloud:
+Możesz również korzystać z API OVHcloud z poziomu Twojego hostingu za pomocą oficjalnej werappera. W tym celu wystarczy dodać plik o nazwie composer.json, który zawiera listę zależności, których potrzebujesz. Oto przykład tego pliku za pomocą wrappera API OVHcloud:
 
 
 ```json
 1. {
 2.     "name": "Przykład Aplikacji",
-3.     "opis": "This is an example of OVH API wrapper use",
+3.     "opis": "This is an example of OVHcloud API wrapper use",
 4.     "require": {
 5.         "ovh/ovh": "1.1.*"
 6.     }

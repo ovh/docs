@@ -51,7 +51,7 @@ Nasz system wykryje automatycznie adres lub adresy IP Twojej strony www skonfigu
 
 - Jeśli dysponujesz kilkoma adresami IP, wybierz jeden.
 - Wybierz strefę geograficzną usługi SSL Gateway.
-- Jeśli zarządzasz strefą DNS tej domeny lub subdomeny na swoim koncie klienta w OVH, zaznacz odpowiednie pole, abyśmy mogli automatycznie zmienić jej konfigurację tak, aby wskazywała na usługę SSL Gateway.
+- Jeśli zarządzasz strefą DNS tej domeny lub subdomeny na swoim koncie klienta w OVHcloud, zaznacz odpowiednie pole, abyśmy mogli automatycznie zmienić jej konfigurację tak, aby wskazywała na usługę SSL Gateway.
 - Kliknij na `Zamów`{.action}.
 
 
@@ -69,7 +69,7 @@ Nasz system wykryje automatycznie adres lub adresy IP Twojej strony www skonfigu
 
 
 ## Konfiguracja strefy DNS
-Po zrealizowaniu zamówienia, jeśli nie zaznaczyłeś opcji automatycznej modyfikacji, otrzymasz e-mail z informacjami na temat konieczności przekierowania domeny lub subdomeny na infrastrukturę OVH w ciągu 3 dni.
+Po zrealizowaniu zamówienia, jeśli nie zaznaczyłeś opcji automatycznej modyfikacji, otrzymasz e-mail z informacjami na temat konieczności przekierowania domeny lub subdomeny na infrastrukturę OVHcloud w ciągu 3 dni.
 
 
 
@@ -82,7 +82,7 @@ Po zrealizowaniu zamówienia, jeśli nie zaznaczyłeś opcji automatycznej modyf
 
 > [!faq]
 >
-> Przykład 1: Strefa DNS znajduje się na współdzielonych serwerach DNS OVH.
+> Przykład 1: Strefa DNS znajduje się na współdzielonych serwerach DNS OVHcloud.
 >> 
 >>     - Jeśli jesteś kontaktem administracyjnym lub technicznym dla tej strefy DNS, będziesz musiał wprowadzić zmiany z poziomu panelu klienta.
 >>     - Jeśli nie jesteś jednym z tych kontaktów, skontaktuj się z osobą, która może wprowadzić zmiany.
@@ -101,7 +101,7 @@ Po zrealizowaniu zamówienia, jeśli nie zaznaczyłeś opcji automatycznej modyf
 
 > [!faq]
 >
-> Przykład 2: Strefa DNS nie znajduje się na współdzielonych serwerach DNS OVH.
+> Przykład 2: Strefa DNS nie znajduje się na współdzielonych serwerach DNS OVHcloud.
 >> 
 >>     - W tym przypadku wystarczy zmienić adres IP w strefie DNS u Twojego dostawcy lub na serwerze dedykowanym.
 >

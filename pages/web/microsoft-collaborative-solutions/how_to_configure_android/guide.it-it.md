@@ -41,7 +41,7 @@ Sulla schermata Home del tuo dispositivo clicca sull’applicazione `Gmail`{.act
 
 Inserisci il tuo indirizzo email e clicca su `Avanti`{.action}.
 
-A questo punto indica la password del tuo indirizzo email, non spuntare “Usa certificato del client” e clicca su `Avanti`{.action} per continuare. Per configurare il tuo account puoi connetterti al server OVH. In questo caso, sullo schermo del tuo dispositivo vedrai apparire un avviso: clicca quindi su `OK`{.action} per avviare la connessione.
+A questo punto indica la password del tuo indirizzo email, non spuntare “Usa certificato del client” e clicca su `Avanti`{.action} per continuare. Per configurare il tuo account puoi connetterti al server OVHcloud. In questo caso, sullo schermo del tuo dispositivo vedrai apparire un avviso: clicca quindi su `OK`{.action} per avviare la connessione.
 
 Imposta i parametri del server in entrata. Alcuni campi possono essere precompilati. 
 
@@ -58,7 +58,7 @@ Clicca su `Avanti`{.action}. Se le informazioni inserite sono corrette, l’acce
 
 ![exchange](images/configuration-exchange-gmail-application-android-step2.png){.thumbnail}
 
-Per terminare la configurazione, è necessario autorizzare il server OVH a verificare alcune funzionalità inerenti la sicurezza del tuo dispositivo. Clicca su `OK`{.action}, assicurati di aver letto le informazioni che appaiono sulla finestra di dialogo e clicca su `Attivare l’amministratore del dispositivo`{.action}.
+Per terminare la configurazione, è necessario autorizzare il server OVHcloud a verificare alcune funzionalità inerenti la sicurezza del tuo dispositivo. Clicca su `OK`{.action}, assicurati di aver letto le informazioni che appaiono sulla finestra di dialogo e clicca su `Attivare l’amministratore del dispositivo`{.action}.
 
 Rinomina il tuo account in modo da riconoscerlo tra quelli elencati nell’applicazione. Clicca su `Avanti`{.action}.
 
@@ -68,7 +68,7 @@ Invia un’email di test per verificare la corretta configurazione dell’accoun
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
+OVHcloud ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}. Accedi a questo link [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 

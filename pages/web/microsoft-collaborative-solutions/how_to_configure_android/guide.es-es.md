@@ -38,7 +38,7 @@ Abra la aplicación `Gmail`{.action} desde la pantalla de inicio de su dispositi
 
 Introduzca su dirección de correo electrónico y pulse `Siguiente`{.action}.
 
-A continuación, introduzca la contraseña de su cuenta de correo electrónico, no seleccione ningún certificado de cliente y pulse `Siguiente`{.action} para seguir configurando la cuenta de correo. Es posible que la aplicación tenga que conectarse al servidor de OVH para terminar de configurar la cuenta. En ese caso, aparecerá un mensaje de aviso en su dispositivo. Pluse `Aceptar`{.action} para autorizar la conexión.
+A continuación, introduzca la contraseña de su cuenta de correo electrónico, no seleccione ningún certificado de cliente y pulse `Siguiente`{.action} para seguir configurando la cuenta de correo. Es posible que la aplicación tenga que conectarse al servidor de OVHcloud para terminar de configurar la cuenta. En ese caso, aparecerá un mensaje de aviso en su dispositivo. Pluse `Aceptar`{.action} para autorizar la conexión.
 
 Introduzca los ajustes del servidor de entrada. Algunos campos podrían autocompletarse.
 
@@ -47,7 +47,7 @@ Introduzca los ajustes del servidor de entrada. Algunos campos podrían autocomp
 |Dominio/Nombre de usuario|Introduzca la dirección de correo electrónico completa.|  
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
 |Certificado de cliente|No seleccione ningún certificado.|
-|Servidor|Indique el servidor en el que está alojado su servicio Exchange. Puede consultar esta información en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la pestaña `Información general`{.action} de su servicio Exchange, en el recuadro **Conexión**.|
+|Servidor|Indique el servidor en el que está alojado su servicio Exchange. Puede consultar esta información en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la pestaña `Información general`{.action} de su servicio Exchange, en el recuadro **Conexión**.|
 |Puerto|Introduzca el puerto **443**.|  
 |Tipo de seguridad|Seleccione **SSL/TLS**.|
 
@@ -55,7 +55,7 @@ A continuación, pulse `Siguiente`{.action}. Si los datos introducidos son corre
 
 ![Conexión a la cuenta Exchange](images/configuration-exchange-gmail-application-android-step2.png){.thumbnail}
 
-Para terminar de configurar la cuenta, deberá autorizar al servidor de OVH a que controle de forma remota algunas funciones relacionada con la seguridad de su dispositivo. Pulse `Aceptar`{.action}, lea la información que se muestra en la pantalla y pulse `Activar este administrador de dispositivos`{.action}.
+Para terminar de configurar la cuenta, deberá autorizar al servidor de OVHcloud a que controle de forma remota algunas funciones relacionada con la seguridad de su dispositivo. Pulse `Aceptar`{.action}, lea la información que se muestra en la pantalla y pulse `Activar este administrador de dispositivos`{.action}.
 
 Por último, puede asignarle un nombre a la cuenta para diferenciarla de las otras cuentas que tenga en la aplicación. Pulse `Siguiente`{.action} para finalizar.
 
@@ -65,7 +65,7 @@ Si lo desea, puede realizar una prueba de envío para comprobar que la cuenta es
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVH ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovhcloud.com/es-es/emails/){.external} y está disponible en la dirección [https://www.ovh.es/mail/](https://www.ovh.es/mail/){.external}. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovhcloud.com/es-es/emails/){.external} y está disponible en la dirección [https://www.ovh.es/mail/](https://www.ovh.es/mail/){.external}. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
 

@@ -127,7 +127,7 @@ Transfer domeny wiąże się z potwierdzeniem przez e-mail. Etap ten może zosta
 Sprawdź adres e-mail właściciela domeny u aktualnego operatora domeny.<br>
 Sprawdź również w pierwszej kolejności foldery "SPAM" / "niechciane wiadomości" odpowiednich adresów e-mail.
 
-Jeśli e-mail do potwierdzenia nie zostanie odnaleziony, skontaktuj się z pomocą OVHcloud poprzez utworzenie zgłoszenia. Wsparcie techniczne OVH może wówczas anulować transfer. Po anulowaniu operacji zmień adres e-mail właściciela domeny, wybierając innego dostawcę e-mail (np. Gmail, Yahoo, Onet, wp.pl itp.).<br>
+Jeśli e-mail do potwierdzenia nie zostanie odnaleziony, skontaktuj się z pomocą OVHcloud poprzez utworzenie zgłoszenia. Wsparcie techniczne OVHcloud może wówczas anulować transfer. Po anulowaniu operacji zmień adres e-mail właściciela domeny, wybierając innego dostawcę e-mail (np. Gmail, Yahoo, Onet, wp.pl itp.).<br>
 Po zmianie adresu e-mail wykonaj [nowy wniosek o transfer](#step3).
 
 ### Etap 5: zarządzaj domeną za pomocą OVHcloud

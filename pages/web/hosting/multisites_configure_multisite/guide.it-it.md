@@ -16,7 +16,7 @@ order: 03
 
 Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anche se i domini non sono registrati in OVHcloud.
 
-**Questa guida ti mostra come configurare un multisito sul tuo hosting Web OVH.**
+**Questa guida ti mostra come configurare un multisito sul tuo hosting Web OVHcloud.**
 
 ## Prerequisiti
 
@@ -148,7 +148,7 @@ annota i parametri indicati e clicca su `Conferma`{.action}. A questo punto, il 
 
 Una volta che il nome del dominio è stato aggiunto, non ti resta che pubblicare online il sito associato. Ti ricordiamo che questa operazione dovrà essere effettuata nella cartella root indicata nello step precedente.
 
-Per semplificare la procedura, OVHcloud mette a disposizione i moduli in 1 click, template pronti all'uso grazie ai quali il sito verrà installato automaticamente nella cartella root. Per maggiori informazioni, consulta la guida [Installare i moduli in 1 click OVH](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}. 
+Per semplificare la procedura, OVHcloud mette a disposizione i moduli in 1 click, template pronti all'uso grazie ai quali il sito verrà installato automaticamente nella cartella root. Per maggiori informazioni, consulta la guida [Installare i moduli in 1 click OVHcloud](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}. 
 
 Se invece vuoi effettuare un’installazione manuale, assicurati di avere a disposizione i file del sito e caricali nella corretta cartella root del tuo spazio di storage. Per maggiori informazioni, consulta la guida [Mettere online un sito Internet su un hosting Web](../hosting_condiviso_come_mettere_online_il_tuo_sito/){.external}.
 

@@ -13,10 +13,10 @@ order: 06
 Para instalar a sua plataforma PrestaShop no seu alojamento partilhado, sugerimos o uso do cliente FTP FileZilla (gratuito).
 
 ## Identificadores de acesso necessários para a instalação
-Assegura-se que possui o Nichandle e a palavra-passe associada para poder ligar-se ao seu Espaço Cliente OVH, se necessário.
+Assegura-se que possui o Nichandle e a palavra-passe associada para poder ligar-se ao seu Espaço Cliente OVHcloud, se necessário.
 
 
-- Obtenha o seu identificador e palavra-passe de acesso FTP para se ligar ao espaço de armazenamento do seu serviço de alojamento partilhado OVH.
+- Obtenha o seu identificador e palavra-passe de acesso FTP para se ligar ao espaço de armazenamento do seu serviço de alojamento partilhado OVHcloud.
 Um guia para obtenção dos dados de acesso FTP está à disposição:[prestashop]({legacy}1374)
 
 - É necessário possuir um identificador e palavra-passe da base de dados SQL que lhe permita a ligação a uma base de dados.
@@ -70,7 +70,7 @@ Uma vez já ligado através de FileZilla:
 - Na secção "Site local", que corresponde aos ficheiros presentes no seu computador local, abra a pasta que descomprimiu com o nome "prestashop" e na qual estão presentes os ficheiros do CMS.
 
 
-Na secção "Site Distante/remoto", que corresponde ao espaço de alojamento OVH, abra a pasta "www". É nessa pasta que deverão ser colocados todos os ficheiros do CMS.
+Na secção "Site Distante/remoto", que corresponde ao espaço de alojamento OVHcloud, abra a pasta "www". É nessa pasta que deverão ser colocados todos os ficheiros do CMS.
 
 Se a pasta não existir, terá  a possibilidade de a criar.
 
@@ -208,15 +208,15 @@ Encontrará aqui uma pré-visualização do painel de administração PrestaShop
 
 
 ## Informações úteis
-O suporte da OVH não está habilitado para responder às suas questões sobre configuração e utilização de PrestaShop.
+O suporte da OVHcloud não está habilitado para responder às suas questões sobre configuração e utilização de PrestaShop.
 Está no entanto disponível um guia para o ajudar na utilização: [prestashop]({legacy}2053)..
 
 Convidamo-lo a consultar o [fórum do PrestaShop](https://www.prestashop.com/forums/forum/202-forum-em-portugues/).
 
 ## Erro clássico: site em construção
-Colocou os seus ficheiros, através de FTP mas, continua a ver "Página em construção" numa página padrão criada pela OVH aquando da instalação do seu alojamento.
+Colocou os seus ficheiros, através de FTP mas, continua a ver "Página em construção" numa página padrão criada pela OVHcloud aquando da instalação do seu alojamento.
 
-Se colocar o seu conteúdo na pasta "www" sem ter eliminado o conteúdo padrão adicionado pela OVH, encontrará esse caso.
+Se colocar o seu conteúdo na pasta "www" sem ter eliminado o conteúdo padrão adicionado pela OVHcloud, encontrará esse caso.
 
 Para corrigir o problema:
 

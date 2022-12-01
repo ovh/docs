@@ -48,10 +48,10 @@ En la página de gestión del servicio, podrá ver la siguiente información:
 ![apartado información](images/8.PNG){.thumbnail}
 
 
-|IPv4|Dirección IPv4 de la puerta de enlace OVH hacia la que debe apuntar|
-|IPv6|Dirección IPv6 de la puerta de enlace OVH hacia la que debe apuntar|
+|IPv4|Dirección IPv4 de la puerta de enlace OVHcloud hacia la que debe apuntar|
+|IPv6|Dirección IPv6 de la puerta de enlace OVHcloud hacia la que debe apuntar|
 |Zona|Zona geográfica de la dirección IP de su SSL Gateway|
-|IPv4 de salida|Direcciones IPv4 OVH que se conectarán al servidor|
+|IPv4 de salida|Direcciones IPv4 OVHcloud que se conectarán al servidor|
 |Producto|Producto contratado|
 |Documentación|Enlace hacia esta guía de uso|
 |Estado|Estado del servicio SSL Gateway|

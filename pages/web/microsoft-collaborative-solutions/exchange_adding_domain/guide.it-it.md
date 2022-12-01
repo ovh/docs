@@ -93,7 +93,7 @@ Una volta associato il dominio, assicurati che la sua configurazione sia corrett
 
 - **se hai scelto una configurazione automatica durante l'aggiunta del dominio**: l'aggiornamento della pagina nello Spazio Cliente OVHcloud potrebbe richiedere alcuni minuti.
 
-- **se hai inserito un dominio non gestito da OVHcloud**: clicca sulla casellina rossa per visualizzare le modifiche da apportare. Se il dominio non utilizza i server DNS OVH, è necessario effettuare le modifiche tramite l’interfaccia di gestione della configurazione del dominio. Per cambiare le impostazioni di un record CNAME, consulta la guida [Creare un record CNAME per aggiungere un dominio associato](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_20132016_aggiungi_un_record_di_tipo_cname/).
+- **se hai inserito un dominio non gestito da OVHcloud**: clicca sulla casellina rossa per visualizzare le modifiche da apportare. Se il dominio non utilizza i server DNS OVHcloud, è necessario effettuare le modifiche tramite l’interfaccia di gestione della configurazione del dominio. Per cambiare le impostazioni di un record CNAME, consulta la guida [Creare un record CNAME per aggiungere un dominio associato](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_20132016_aggiungi_un_record_di_tipo_cname/).
 
 > [!primary]
 >
@@ -122,7 +122,7 @@ Per rimuovere un dominio associato al tuo servizio Exchange o Email Pro, è nece
 
 > [!warning]
 >
-> Prima di eliminare account email, assicurati che non siano utilizzati. Potrebbe essere necessario eseguire un backup di questi account. Se necessario, consulta la guida [Migrare manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/) che ti descriverà come esportare i dati di un account dal tuo Spazio Cliente OVH o da un client di posta.
+> Prima di eliminare account email, assicurati che non siano utilizzati. Potrebbe essere necessario eseguire un backup di questi account. Se necessario, consulta la guida [Migrare manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/) che ti descriverà come esportare i dati di un account dal tuo Spazio Cliente OVHcloud o da un client di posta.
 
 Clicca sulla scheda `Domini associati`{.action} della tua piattaforma. Dalla tabella, la colonna `Account` ti indica il numero di account associati ai domini della tua lista.
 

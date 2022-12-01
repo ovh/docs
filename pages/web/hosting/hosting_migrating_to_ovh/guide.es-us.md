@@ -175,7 +175,7 @@ Tras la propagación de DNS, se le enviarán todos los mensajes de correo a las 
 
 Existen dos opciones para migrar el contenido de sus antiguas direcciones:
 
-**Opción 1**: utilice nuestra herramienta [OVHcloud Mail Migrator (OMM)](https://omm.ovh.net/) {.external} que permite copiar el contenido de las direcciones de correo electrónico que tuviera con su anterior proveedor a las creadas en OVHcloud. Para más información, consulte nuestra guía [Migrar cuentas de correo electrónico a través de OVH Mail Migrator](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange-migracion-de-cuentas-correo-ovh-mail-migrator/).
+**Opción 1**: utilice nuestra herramienta [OVH Mail Migrator (OMM)](https://omm.ovh.net/) {.external} que permite copiar el contenido de las direcciones de correo electrónico que tuviera con su anterior proveedor a las creadas en OVHcloud. Para más información, consulte nuestra guía [Migrar cuentas de correo electrónico a través de OVH Mail Migrator](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange-migracion-de-cuentas-correo-ovh-mail-migrator/).
 
 Le recomendamos que no utilice el `Tipo de servidor`{.action} **POP** en la sección `Cuenta de origen`{.action}. Este protocolo elimina los mensajes de correo de su antiguo servidor para enviarlos al servidor de destino de OVHcloud. No podrá comparar el contenido de la antigua dirección y la nueva dirección de correo electrónico.
 

@@ -1,6 +1,6 @@
 ---
 title: '.htaccess, reescritura de URL con mod_rewrite'
-excerpt: El mod_rewrite está disponible en todos los planes de OVH (menos en los 20GP).
+excerpt: El mod_rewrite está disponible en todos los planes de OVHcloud (menos en los 20GP).
 slug: web_hosting_htaccess_reescritura_de_url_con_mod_rewrite
 section: Reescritura y autenticación
 order: 03

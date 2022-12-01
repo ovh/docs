@@ -51,7 +51,7 @@ Our system will then automatically detect your site’s IP address(es) configure
 
 - If you use several IPs, select one.
 - Choose the geographic zone of your SSL Gateway service
-- If the DNS zone of this domain or subdomain is managed by your OVH account, tick the correct box so that we can automatically modify its configuration to point to your SSL Gateway.
+- If the DNS zone of this domain or subdomain is managed by your OVHcloud account, tick the correct box so that we can automatically modify its configuration to point to your SSL Gateway.
 - Click `Order`{.action}.
 
 ![free order](images/3-en.png){.thumbnail}
@@ -68,7 +68,7 @@ Our system will then automatically detect your site’s IP address(es) configure
 
 
 ## Configuring your DNS zone
-If you have not ticked the automatic modification box once your purchase order has been validated, you will receive an email requesting that you point your domain or subdomain to OVH servers within three days.
+If you have not ticked the automatic modification box once your purchase order has been validated, you will receive an email requesting that you point your domain or subdomain to OVHcloud servers within three days.
 
 
 

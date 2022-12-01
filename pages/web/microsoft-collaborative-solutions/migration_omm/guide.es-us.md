@@ -1,7 +1,7 @@
 ---
-title: 'Migrar una cuenta de correo con OVHcloud Mail Migrator'
+title: 'Migrar una cuenta de correo con OVH Mail Migrator'
 slug: exchange-migracion-de-cuentas-correo-ovh-mail-migrator
-excerpt: 'Cómo utilizar OVHcloud Mail Migrator para migrar una cuenta de correo electrónico'
+excerpt: 'Cómo utilizar OVH Mail Migrator para migrar una cuenta de correo electrónico'
 section: 'Migración de una cuenta'
 ---
 
@@ -9,9 +9,9 @@ section: 'Migración de una cuenta'
 
 ## Objetivo
 
-[OVHcloud Mail Migrator](https://omm.ovh.net/){.external} es una herramienta creada por OVHcloud que permite migrar el contenido de una o más direcciones de correo electrónico a sus cuentas de correo en OVHcloud. Es posible migrar mensajes de correo electrónico, contactos, calendarios y tareas, siempre que estas últimas sean compatibles con sus cuentas de correo electrónico. 
+[OVH Mail Migrator](https://omm.ovh.net/){.external} es una herramienta creada por OVHcloud que permite migrar el contenido de una o más direcciones de correo electrónico a sus cuentas de correo en OVHcloud. Es posible migrar mensajes de correo electrónico, contactos, calendarios y tareas, siempre que estas últimas sean compatibles con sus cuentas de correo electrónico. 
 
-**Esta guía explica cómo migrar una cuenta de correo hacia OVHcloud con la herramienta OVHcloud Mail Migrator.**
+**Esta guía explica cómo migrar una cuenta de correo hacia OVHcloud con la herramienta OVH Mail Migrator.**
 
 ## Requisitos
 
@@ -21,7 +21,7 @@ section: 'Migración de una cuenta'
 
 ## Procedimiento
 
-Acceda a la herramienta [OVHcloud Mail Migrator](https://omm.ovh.net/){.external} en la dirección <https://omm.ovh.net/>. Es posible realizar tres tipos de migración:
+Acceda a la herramienta [OVH Mail Migrator](https://omm.ovh.net/){.external} en la dirección <https://omm.ovh.net/>. Es posible realizar tres tipos de migración:
 
 |Tipo de migración|Descripción|
 |---|---|
@@ -117,7 +117,7 @@ Introduzca la información del **nuevo proyecto**:
 |Campo|Descripción|
 |---|---|
 |Nombre|Asigne un nombre al proyecto de migración.|
-|Contraseña|Establezca una contraseña para poder gestionar el proyecto de migración desde la herramienta OVHcloud Mail Migrator.|
+|Contraseña|Establezca una contraseña para poder gestionar el proyecto de migración desde la herramienta OVH Mail Migrator.|
 |Correo electrónico|Introduzca la dirección de correo electrónico en la que quiera recibir las notificaciones relativas a la migración.|
 
 Haga clic en `Crear el proyecto`{.action}. A continuación podrá gestionar y consultar el estado del proyecto de migración. No olvide anotar el **ID del proyecto**.
@@ -129,7 +129,7 @@ Ya puede empezar a migrar el contenido de sus cuentas. Existen diversas pestaña
 |Continuar|Permite consultar el estado de las migraciones del proyecto. También puede poner en cola de espera o reanudar las migraciones.|
 |Creación por lotes|Permite añadir a la cola de espera varias migraciones mediante la importación de un archivo CSV o Excel. En este último caso, el archivo Excel debe tener un formato concreto, por lo que le recomendamos que utilice el modelo que le facilitamos.|
 |Añadir|Permite añadir migraciones a la cola de espera una a una. Es posible conservar los servidores de origen y de destino como valores por defecto.|
-|Opciones|Permite personalizar los elementos que debe migrar la herramienta OVHcloud Mail Migrator, así como el número de peticiones simultáneas que la herramienta puede realizar al ejecutar las migraciones.|
+|Opciones|Permite personalizar los elementos que debe migrar la herramienta OVH Mail Migrator, así como el número de peticiones simultáneas que la herramienta puede realizar al ejecutar las migraciones.|
 |Desconexión|Permite desconectarse de la página de seguimiento del proyecto para así poder volver a identificarse para consultar otro proyecto de migración, por ejemplo.|
 
 Si quiere consultar el estado de un proyecto de migración, acceda a la página <https://omm.ovh.net/>. Sitúe el ratón sobre la opción `Proyecto`{.action} en el menú superior y seleccione `Consultar el progreso de un proyecto`{.action}. Una vez en la página correspondiente, introduzca el **ID del proyecto de migración** y la **Contraseña**.

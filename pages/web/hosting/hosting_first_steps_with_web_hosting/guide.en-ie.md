@@ -90,7 +90,7 @@ This stage is optional if you don’t want to use the email addresses included i
 
 ![Create an email address](images/create_an_email_address.png){/thumbnail}
 
-Enter the information requested to create your email address. Repeat this step for each additional email address you wish to create. If you are in the process of migrating your emails to OVHcloud, we would recommend that you use the [OVHcloud Mail Migrator](https://omm.ovh.net/){.external} tool to help you with this. 
+Enter the information requested to create your email address. Repeat this step for each additional email address you wish to create. If you are in the process of migrating your emails to OVHcloud, we would recommend that you use the [OVH Mail Migrator](https://omm.ovh.net/){.external} tool to help you with this. 
 
 If you need more information on creating an email address, please refer to our documentation: [How to set up an email address](https://docs.ovh.com/ie/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}.
 

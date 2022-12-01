@@ -78,14 +78,14 @@ Nowa reguła jest widoczna na liście wraz z wyjaśnieniem jej działania. Możn
 
 > [!primary]
 >
-Poniższe instrukcje są wykonalne tylko wtedy, jeśli w domenie są właściwie używane rekordy OVHcloud MX. Inne konfiguracje usługi są również możliwe, ale mogą nie korzystać z ochrony OVH przed spamem.
+Poniższe instrukcje są wykonalne tylko wtedy, jeśli w domenie są właściwie używane rekordy OVHcloud MX. Inne konfiguracje usługi są również możliwe, ale mogą nie korzystać z ochrony OVHcloud przed spamem.
 >
 
 Utwórz nową regułę, klikając ikonę `+`{.action}.
 
 ![inboxrules](images/exchange-rules-step7.png){.thumbnail}
 
-Nadaj nazwę regule, a jako warunki wybierz „Zawiera te wyrazy” i „w temacie...”. W następnym interfejsie wpisz „\[SPAM]”, aby wybrać wiadomości, które zostały wstępnie oznaczone przez funkcję ochrony przed spamem OVH. Dodaj to wyrażenie, klikając ikonę `+`{.action}, a następnie kliknij przycisk `OK`{.action}.
+Nadaj nazwę regule, a jako warunki wybierz „Zawiera te wyrazy” i „w temacie...”. W następnym interfejsie wpisz „\[SPAM]”, aby wybrać wiadomości, które zostały wstępnie oznaczone przez funkcję ochrony przed spamem OVHcloud. Dodaj to wyrażenie, klikając ikonę `+`{.action}, a następnie kliknij przycisk `OK`{.action}.
 
 ![inboxrules](images/exchange-rules-step8.png){.thumbnail}
 

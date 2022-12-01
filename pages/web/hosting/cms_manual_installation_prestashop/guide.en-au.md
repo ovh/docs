@@ -76,7 +76,7 @@ Once you are logged in to FileZilla.
 
 In the "Local site" section, which refers to the list of files on your computer, open the unzipped file entitled "PrestaShop" where your CMS files will be located. 
 
-In the "Remote site" section, which refers to your OVH web hosting package, open the "www" folder. It is this folder that you need to upload your CMS files to. 
+In the "Remote site" section, which refers to your OVHcloud web hosting package, open the "www" folder. It is this folder that you need to upload your CMS files to. 
 
 If this folder does not exist you can create it.
 

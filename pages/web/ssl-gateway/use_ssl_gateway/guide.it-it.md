@@ -12,15 +12,15 @@ excerpt: Come rendere sicure le connessioni al tuo sito Web
 > [!primary]
 >
 > - Aver ordinato un [SSL Gateway](../order-ssl-gateway/guide.it-it.md).
-> - Avere accesso allo Spazio Cliente OVH Sunrise.
+> - Avere accesso allo Spazio Cliente OVHcloud Sunrise.
 >
 
 ## Utilizzo
-Questa guida ti mostra come configurare e rinnovare il tuo servizio SSL Gateway OVH.
+Questa guida ti mostra come configurare e rinnovare il tuo servizio SSL Gateway OVHcloud.
 
 
 ### Configurazione del servizio
-- Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager){.external}.
+- Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/manager){.external}.
 - Clicca su `Sunrise`{.action}.
 
 ![pulsante Sunrise](images/4.PNG){.thumbnail}
@@ -43,10 +43,10 @@ Questa guida ti mostra come configurare e rinnovare il tuo servizio SSL Gateway 
 
 |||
 |---|---|
-|IPv4|Indirizzo IPv4 del gateway OVH a cui deve puntare il tuo servizio|
-|IPv6|Indirizzo IPv6 del gateway OVH a cui deve puntare il tuo servizio|
+|IPv4|Indirizzo IPv4 del gateway OVHcloud a cui deve puntare il tuo servizio|
+|IPv6|Indirizzo IPv6 del gateway OVHcloud a cui deve puntare il tuo servizio|
 |Zona|Zona geografica dell’indirizzo IP del tuo SSL Gateway|
-|IPv4 di uscita|Indirizzi IPv4 OVH che si connetteranno al tuo server|
+|IPv4 di uscita|Indirizzi IPv4 OVHcloud che si connetteranno al tuo server|
 |Offerta|Tipo di offerta sottoscritta|
 |Documentazione|Link a questa guida|
 |Stato|Stato del tuo SSL Gateway|
@@ -259,7 +259,7 @@ Per poter tracciare l’indirizzo del tuo visitatore, l’SSL Gateway aggiunge a
 - X-Forwarded-For e X-Remote-Ip: indirizzo del cliente
 - X-Forwarded-Port e X-Remote-Port: porta sorgente del cliente
 
-Questi campi potrebbero essere sfruttati anche da clienti malevoli e devono quindi essere presi in considerazione solo se le richieste provengono da una sorgente affidabile come l’SSL Gateway. La lista degli IP sorgente utilizzati dall’SSL Gateway è disponibile nel tuo Spazio Cliente OVH Sunrise > Sezione SSL Gateway > Campo “IPv4 di uscita”
+Questi campi potrebbero essere sfruttati anche da clienti malevoli e devono quindi essere presi in considerazione solo se le richieste provengono da una sorgente affidabile come l’SSL Gateway. La lista degli IP sorgente utilizzati dall’SSL Gateway è disponibile nel tuo Spazio Cliente OVHcloud Sunrise > Sezione SSL Gateway > Campo “IPv4 di uscita”
 
 Al momento della pubblicazione di questa guida gli indirizzi sono **213.32.4.0/24** e **144.217.9.0/24**, ma in futuro potrebbero aggiungersene altri.
 

@@ -69,7 +69,7 @@ Eine Anleitung zur Herstellung einer FTP-Verbindung zu Ihrem Webhosting finden S
 
 Unter "Lokal" (linker Bereich) finden Sie alle Dateien auf Ihrem Rechner. Öffnen Sie hier den dekomprimierten Ordner "Drupal-xxx", in dem sich alle Dateien Ihres CMS befinden.
 
-Unter "Server" (rechter Bereich) finden Sie die Dateien Ihres OVH Webhostings. Öffnen Sie hier das "www" Verzeichnis. In dieses Verzeichnis müssen Sie alle Dateien des CMS ablegen.
+Unter "Server" (rechter Bereich) finden Sie die Dateien Ihres OVHcloud Webhostings. Öffnen Sie hier das "www" Verzeichnis. In dieses Verzeichnis müssen Sie alle Dateien des CMS ablegen.
 Falls dieses Verzeichnis noch nicht existiert, können Sie es jetzt erstellen.
 Die Dateien müssen in jedem Fall im "www" Verzeichnis abgelegt werden. Andernfalls kann die Installation von Ihrem Domainnamen aus nicht gestartet werden.
 
@@ -201,22 +201,22 @@ Jetzt müssen Sie Drupal nur noch einsetzen und Ihre Webseite ganz nach Ihren W�
 
 ## Drupal Support
 Wir empfehlen Ihnen, bei Problemen jeglicher Art das [Drupal Forum](http://www.drupalcenter.de/) zu besuchen.
-Der Kundendienst von OVH ist leider nicht berechtigt, Anfragen bezüglich der Konfiguration Ihres Drupal zu bearbeiten.
+Der Kundendienst von OVHcloud ist leider nicht berechtigt, Anfragen bezüglich der Konfiguration Ihres Drupal zu bearbeiten.
 Unter folgendem Link finden Sie aber eine Nutzungsanleitung: []({legacy}2053).
 
 
 ## Häufige Fehler
 
-- Fehler "OVH - Seite wird erstellt"
+- Fehler "OVHcloud - Seite wird erstellt"
 
 
 Sie haben alle Dateien auf den FTP-Server verschoben, aber trotzdem wird weiterhin angezeigt "Seite wird erstellt".
 
-Bei der Installation Ihres Hosting richtet OVH eine vorläufige Seite ein, bis Sie Ihre Webseite selbst gestalten.
+Bei der Installation Ihres Hosting richtet OVHcloud eine vorläufige Seite ein, bis Sie Ihre Webseite selbst gestalten.
 
-Wenn Sie Ihre Dateien im "www" Verzeichnis ablegen, ohne zuvor die von OVH hinterlegten Inhalte zu löschen, kann es zu diesem Fehler kommen.
+Wenn Sie Ihre Dateien im "www" Verzeichnis ablegen, ohne zuvor die von OVHcloud hinterlegten Inhalte zu löschen, kann es zu diesem Fehler kommen.
 
-Um diesen Fehler zu beheben, müssen Sie die von OVH auf Ihrem Hosting erstellte Datei "index.html" löschen oder umbenennen.
+Um diesen Fehler zu beheben, müssen Sie die von OVHcloud auf Ihrem Hosting erstellte Datei "index.html" löschen oder umbenennen.
 
 Es kann sinnvoll sein, die Datei lediglich umzubennen. So können Sie sie später jederzeit erneut als vorläufige Seite verwenden.
 
@@ -231,5 +231,5 @@ Hier handelt es sich um einen Fehler bei der PHP-Version Ihres Servers.
 
 Der Grund ist einfach: Die neueste Version von PHP ist nicht aktiviert.
 
-Wie Sie die PHP-Version auf Ihrem Webhosting ändern können, erfahren Sie hier:[Konfiguration von PHP für ein OVH Webhosting 2014]({legacy}1207)
+Wie Sie die PHP-Version auf Ihrem Webhosting ändern können, erfahren Sie hier:[Konfiguration von PHP für ein OVHcloud Webhosting 2014]({legacy}1207)
 

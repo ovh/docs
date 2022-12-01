@@ -69,7 +69,7 @@ Once you are logged in to FileZilla.
 
 In the "Local site" section, which refers to the list of files on your computer, open the unzipped file entitled "PrestaShop" where your CMS files will be located. 
 
-In the "Remote site" section, which refers to your OVH web hosting package, open the "www" folder. It is this folder that you need to upload your CMS files to. 
+In the "Remote site" section, which refers to your OVHcloud web hosting package, open the "www" folder. It is this folder that you need to upload your CMS files to. 
 
 If this folder does not exist you can create it.
 
@@ -209,7 +209,7 @@ A look at the PrestaShop administration panel.
 
 
 ## Useful information
-OVH support is not authorised to answer questions about PrestaShop configuration.
+OVHcloud support is not authorised to answer questions about PrestaShop configuration.
 
 Please consult the forum dedicated to PrestaShop
 
@@ -221,11 +221,11 @@ Please consult the forum dedicated to PrestaShop
 ## Typical error: site under construction
 You have set up your files on FTP, however the "site under construction" page is still displayed. 
 
-When your hosting package was installed, OVH set up a "waiting" page while you were uploading files to your site. 
+When your hosting package was installed, OVHcloud set up a "waiting" page while you were uploading files to your site. 
 
-If you only upload your own files to the "www" folder and do not delete the OVH content first, then you may encounter this problem.
+If you only upload your own files to the "www" folder and do not delete the OVHcloud content first, then you may encounter this problem.
 
-To fix this issue, you will need to remove or rename the "index.html" file that was created by OVH.
+To fix this issue, you will need to remove or rename the "index.html" file that was created by OVHcloud.
 
 It may be useful to simply just rename the file so that you can re-enable it at any time, and use it as your own "waiting" page.
 

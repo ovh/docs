@@ -16,7 +16,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 > [!warning]
 >
-> La responsabilidad sobre la configuración y la gestión de los servicios que OVH pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> La responsabilidad sobre la configuración y la gestión de los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
 > 
@@ -52,7 +52,7 @@ Introduzca su dirección de correo electrónico y haga clic en `Continuar`{.acti
 |Dirección de correo electrónico|Introduzca un nombre que le permita diferenciar su cuenta del resto de cuentas de su aplicación Outlook.|
 |DOMINIO\nombre de usuario o dirección de correo electrónico|Introduzca la dirección de correo electrónico completa.|
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor|Según la configuración DNS de su dominio, es posible que no sea obligatorio introducir un servidor. Si fuera necesario, indique el servidor en el que está alojado su servicio Exchange. Puede consultar esta información desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la pestaña `Información general`{.action} de su servicio Exchange, en el recuadro **Conexión**.|
+|Servidor|Según la configuración DNS de su dominio, es posible que no sea obligatorio introducir un servidor. Si fuera necesario, indique el servidor en el que está alojado su servicio Exchange. Puede consultar esta información desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la pestaña `Información general`{.action} de su servicio Exchange, en el recuadro **Conexión**.|
 
 Una vez introducidos los datos, haga clic en el botón `Agregar cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta.
 
@@ -64,7 +64,7 @@ Si lo desea, puede realizar una prueba de envío para comprobar que la cuenta es
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVH ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovhcloud.com/es-es/emails/){.external} y está disponible en la dirección <https://www.ovhcloud.com/es/mail/>. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovhcloud.com/es-es/emails/){.external} y está disponible en la dirección <https://www.ovhcloud.com/es/mail/>. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
 

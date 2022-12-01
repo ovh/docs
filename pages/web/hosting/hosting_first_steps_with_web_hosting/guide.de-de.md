@@ -90,7 +90,7 @@ Dieser Schritt ist optional, wenn Sie die in Ihrem [Webhosting](https://www.ovhc
 
 ![Eine E-Mail-Adresse anlegen](images/create_an_email_address.png){/thumbnail}
 
-Geben Sie die erforderlichen Informationen ein, um Ihre E-Mail-Adresse zu erstellen. Wiederholen Sie diesen Schritt, um mehrere E-Mail-Adressen anzulegen. Wenn Sie Ihre E-Mail-Adressen zu OVHcloud migrieren möchten, empfehlen wir Ihnen unser Tool [OVHcloud Mail Migrator](https://omm.ovh.net/){.external} zu verwenden, das Sie bei der Migration unterstützt. 
+Geben Sie die erforderlichen Informationen ein, um Ihre E-Mail-Adresse zu erstellen. Wiederholen Sie diesen Schritt, um mehrere E-Mail-Adressen anzulegen. Wenn Sie Ihre E-Mail-Adressen zu OVHcloud migrieren möchten, empfehlen wir Ihnen unser Tool [OVH Mail Migrator](https://omm.ovh.net/){.external} zu verwenden, das Sie bei der Migration unterstützt. 
 
 Weitere Informationen zum Anlegen einer E-Mail-Adresse oder über die Migration Ihrer Dienstleistungen zu OVHcloud finden Sie in den folgenden Dokumentationen: [Eine E-Mail-Adresse erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external} und [Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}.
 

@@ -22,7 +22,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -151,7 +151,7 @@ Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w p
 
 > [!warning]
 >
-> Jeśli dostarczone porady dotyczące optymalizacji Twojej bazy danych nie wystarczą, aby odblokować dostęp do Twojej strony, zalecamy kontakt z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+> Jeśli dostarczone porady dotyczące optymalizacji Twojej bazy danych nie wystarczą, aby odblokować dostęp do Twojej strony, zalecamy kontakt z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
 >
 
 ### Przekroczenie pojemności pamięci RAM
@@ -217,7 +217,7 @@ Aby usunąć tę anomalię, możesz:
 
 - Zwiększyć [ilość pamięci RAM](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#monitoruj-zuzyta-pamiec-ram). W tym celu przejdź do [CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/) w sekcji `Bazy danych`{.action} twojego [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie kliknij przycisk `...`{.action} w części `RAM`, a następnie na `Zmień ilość pamięci RAM`{.action}.
 
-- Podziel bazę danych, aby ją importować na kilka operacji zamiast jednej (w przypadku pytań dotyczących operacji, które należy przeprowadzić, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.)
+- Podziel bazę danych, aby ją importować na kilka operacji zamiast jednej (w przypadku pytań dotyczących operacji, które należy przeprowadzić, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.)
 
 - [Zoptymalizuj bazę danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1), a następnie powtórzyć operacje eksportu / importu.
 
@@ -251,7 +251,7 @@ W takiej sytuacji powinieneś [zoptymalizować bazy danych](https://docs.ovh.com
 
 > [!warning]
 >
-> W przypadku pytań dotyczących operacji, które należy przeprowadzić, aby zmniejszyć liczbę aktywnych połączeń na Twojej bazie danych, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
+> W przypadku pytań dotyczących operacji, które należy przeprowadzić, aby zmniejszyć liczbę aktywnych połączeń na Twojej bazie danych, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
 >
 
 #### "Name or service not known"

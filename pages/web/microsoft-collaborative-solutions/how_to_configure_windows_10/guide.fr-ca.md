@@ -42,7 +42,7 @@ Renseignez à présent les informations demandées :
 |Mot de passe|Indiquez le mot de passe de l'adresse e-mail.|
 |Nom d’utilisateur|Renseignez l'adresse e-mail complète.|
 |Domaine|Ne rien renseigner.|
-|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
+|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
 |Le serveur requiert une connexion chiffrée (SSL)|Laissez impérativement cette case cochée.|
 |Nom du compte|Indiquez un nom vous permettant de reconnaître ce compte parmi d'autres affichés dans votre application Courrier.|
 
@@ -58,7 +58,7 @@ Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctem
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose également une application web disposant de fonctions collaboratives. Celle-ci est accessible à l’adresse <www.ovhcloud.com/fr/mail>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+OVHcloud propose également une application web disposant de fonctions collaboratives. Celle-ci est accessible à l’adresse <www.ovhcloud.com/fr/mail>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin
 

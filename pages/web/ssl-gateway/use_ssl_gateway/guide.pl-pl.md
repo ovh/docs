@@ -44,10 +44,10 @@ Zobaczymy teraz, jak korzystać z usługi SSL Gateway.
 
 |Pole|Opis|
 |---|---|
-|IPv4|Adres IPv4 bramy OVH, na który powinieneś wskazywać.|
-|IPv6|Adres IPv6 bramy OVH, na który powinieneś wskazywać.|
+|IPv4|Adres IPv4 bramy OVHcloud, na który powinieneś wskazywać.|
+|IPv6|Adres IPv6 bramy OVHcloud, na który powinieneś wskazywać.|
 |Strefa|Geograficzna strefa adresu IP usługi SSL Gateway|
-|IPv4 wyjściowe|Adresy IPv4 OVH, które będą się łączyć z Twoim serwerem|
+|IPv4 wyjściowe|Adresy IPv4 OVHcloud, które będą się łączyć z Twoim serwerem|
 |Oferta|Typ zamówionej oferty|
 |Dokumentacja|Link do przewodników|
 |Status|Status usługi SSL Gateway|

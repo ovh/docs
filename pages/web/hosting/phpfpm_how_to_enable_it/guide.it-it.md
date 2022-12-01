@@ -1,6 +1,6 @@
 ---
 title: Attiva l’ottimizzazione PHP sul tuo hosting condiviso OVH
-excerpt: Questa guida ti mostra come attivare PHP-FPM sul tuo hosting condiviso OVH, per migliorare i tempi di risposta PHP
+excerpt: Questa guida ti mostra come attivare PHP-FPM sul tuo hosting condiviso OVHcloud, per migliorare i tempi di risposta PHP
 slug: attiva_lottimizzazione_php_sul_tuo_hosting_condiviso_ovh
 section: PHP
 order: 03
@@ -15,7 +15,7 @@ Abbiamo adattato PHP-FPM alla nostra infrastruttura Web, per consentirti di acce
 I test che abbiamo condotto dimostrano che in questo modo puoi ottenere performance fino a 7 volte più rapide di prima.
 
 ## Nel tuo Spazio Cliente OVH
-Questa guida ti mostra come attivare il PHP FPM e definire la versione di PHP utilizzando il file .ovhconfig. Se preferisci effettuare questa operazione direttamente dal tuo Spazio Cliente OVH, consulta questa guida: []({legacy}1999)
+Questa guida ti mostra come attivare il PHP FPM e definire la versione di PHP utilizzando il file .ovhconfig. Se preferisci effettuare questa operazione direttamente dal tuo Spazio Cliente OVHcloud, consulta questa guida: []({legacy}1999)
 
 Attenzione: utilizzando PHP-FPM, per ragioni di sicurezza, queste opzioni sono disattivate (disabilitate da PHP):
 

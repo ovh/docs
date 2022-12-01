@@ -90,7 +90,7 @@ Se non intendi utilizzare gli account email inclusi nel tuo piano di [hosting](h
 
 ![Crea un indirizzo email](images/create_an_email_address.png){/thumbnail}
 
-Segui la procedura indicata e ripeti l’operazione per creare altri account. Per migrare i tuoi account email in OVHcloud, ti consigliamo di utilizzare il nostro tool [OVHcloud Mail Migrator](https://omm.ovh.net/){.external}. 
+Segui la procedura indicata e ripeti l’operazione per creare altri account. Per migrare i tuoi account email in OVHcloud, ti consigliamo di utilizzare il nostro tool [OVH Mail Migrator](https://omm.ovh.net/){.external}. 
 
 Per maggiori informazioni sulla creazione di un account email o la migrazione dei tuoi servizi in OVHcloud, consulta le nostre guide [Creare un indirizzo email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external} e [Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}.
 

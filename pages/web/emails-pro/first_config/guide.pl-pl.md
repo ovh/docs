@@ -83,7 +83,7 @@ W kolumnie `Diagnostyka`{.action} możesz sprawdzić konfigurację DNS domeny. J
 
 - **Automatyczna konfiguracja podczas dodawania domeny OVHcloud**: wprowadzona zmiana może pojawić się w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} dopiero za kilka godzin.
 
-- **Ręczna konfiguracja domeny nieobsługiwanej przez OVHcloud**: kliknij czerwony przycisk, aby wyświetlić listę modyfikacji do wprowadzania. <br>*Instrukcje dotyczące rekordu CNAME* znajdziesz w naszym przewodniku <br>*Instrukcje dotyczące rekordu MX* znajdziesz w naszym przewodniku <br>*W przypadku rekordu SRV* wypełnij pole DNS z wykorzystaniem informacji, które wyświetlane zostaną po kliknięciu czerwonego przycisku. Możesz zapoznać się z przewodnikiem „[Edycja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}”, aby dodać ten rekord.
+- **Ręczna konfiguracja domeny nieobsługiwanej przez OVHcloud**: kliknij czerwony przycisk, aby wyświetlić listę modyfikacji do wprowadzania. <br>*Instrukcje dotyczące rekordu CNAME* znajdziesz w naszym przewodniku <br>*Instrukcje dotyczące rekordu MX* znajdziesz w naszym przewodniku <br>*W przypadku rekordu SRV* wypełnij pole DNS z wykorzystaniem informacji, które wyświetlane zostaną po kliknięciu czerwonego przycisku. Możesz zapoznać się z przewodnikiem „[Edycja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}”, aby dodać ten rekord.
 
 ![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
 

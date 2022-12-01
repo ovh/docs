@@ -52,7 +52,7 @@ Klicken Sie neben `Nachrichten von anderen Konten abrufen` auf `E-Mail-Konto hin
 
 ![emailpro](images/configuration-gmail-web-step2.png){.thumbnail}
 
-Geben Sie jetzt die Einstellungen des POP-Servers (Eingangsserver) Ihres OVH E-Mail Pro Accounts ein:
+Geben Sie jetzt die Einstellungen des POP-Servers (Eingangsserver) Ihres OVHcloud E-Mail Pro Accounts ein:
 
 |Information|Beschreibung| 
 |---|---| 

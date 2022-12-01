@@ -85,7 +85,7 @@ Prima di passare a un'offerta inferiore, assicurati che la nuova offerta conteng
 
 In caso contrario, rimuovi i database inutilizzati e riduci, se necessario, la quantità di dati che contengono. Questa quantità non dovrà superare la dimensione massima dei database della nuova offerta (per qualsiasi richiesta di assistenza sulle operazioni da effettuare, contatta i partner OVHcloud(https://partner.ovhcloud.com/it/)).
 
-Una volta eliminati i dati sui tuoi database, utilizza la scheda `Database`{.action} nella sezione `Hosting`{.action} dello Spazio Cliente OVH. Clicca sul pulsante `...`{.action} a destra della base interessata e su `Ricalcola la quota`{.action}.
+Una volta eliminati i dati sui tuoi database, utilizza la scheda `Database`{.action} nella sezione `Hosting`{.action} dello Spazio Cliente OVHcloud. Clicca sul pulsante `...`{.action} a destra della base interessata e su `Ricalcola la quota`{.action}.
 
 ![quota](images/quota.png){.thumbnail}
 

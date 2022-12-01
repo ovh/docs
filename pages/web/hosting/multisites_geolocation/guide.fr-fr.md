@@ -23,7 +23,7 @@ Une fois dans le menu, il faut sélectionner l'onglet Sites Web. Puis cliquer su
 
 ![hosting](images/2793.png){.thumbnail}
 
-Vous pourrez alors choisir alors l'ip correspondante au pays. *OVH propose 12 pays différents*
+Vous pourrez alors choisir alors l'ip correspondante au pays. *OVHcloud propose 12 pays différents*
 
 
 ![hosting](images/2794.png){.thumbnail}

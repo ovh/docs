@@ -271,7 +271,7 @@ Clicca su Permessi nella nuova finestra e poi esegui le modifiche desiderate.
 
 
 ## Sblocco del sito
-Puoi sbloccare il sito con un comando personalizzato in seguito al blocco di sicurezza del tuo spazio hosting OVH a causa di un attacco.
+Puoi sbloccare il sito con un comando personalizzato in seguito al blocco di sicurezza del tuo spazio hosting OVHcloud a causa di un attacco.
 
 Puoi usare il comando: 
 

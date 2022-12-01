@@ -13,7 +13,7 @@ Retrouvez nos [différents guides mutualisés/hébergement Web](https://docs.ovh
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
@@ -347,7 +347,7 @@ Sur la nouvelle fenêtre, cliquez sur Permissions puis effectuez les modificatio
 ### Reouverture du site
 Vous avez la possibilité d'effectuer la réouverture de votre site en utilisant une commande personnalisée.
 
-Dans la plupart des cas, cette manipulation fait suite à une fermeture par sécurité de votre espace d'hébergement par OVH suite à un hack.
+Dans la plupart des cas, cette manipulation fait suite à une fermeture par sécurité de votre espace d'hébergement par OVHcloud suite à un hack.
 
 Pour utiliser une commande :
 

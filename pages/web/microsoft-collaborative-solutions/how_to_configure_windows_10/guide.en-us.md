@@ -42,7 +42,7 @@ Enter the following information:
 |Password|Enter the password for your email address.|
 |User name|Enter your full email address.|
 |Domain|Leave this field blank.|
-|Server|Enter the details of the server your Exchange service is hosted on. You will find these in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Enter the details of the server your Exchange service is hosted on. You will find these in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
 |This server requires a secure connection (SSL)|You must leave this box ticked.|
 |Account name|Enter a name that will distinguish this account from any other accounts added in your Mail application.|
 
@@ -58,7 +58,7 @@ To check that the account has been correctly configured, you can send a test ema
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH also offers a web application that includes various collaborative features. You can access this application at <www.ovhcloud.com/en/mail>. Log in using your email credentials.
+OVHcloud also offers a web application that includes various collaborative features. You can access this application at <www.ovhcloud.com/en/mail>. Log in using your email credentials.
 
 ## Go further
 

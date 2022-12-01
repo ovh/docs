@@ -10,14 +10,14 @@ order: 01
 
 ## Wprowadzenie 
 
-Moduły OVHcloud umożliwiają łatwe i szybkie postawienie strony internetowej (bez konieczności posiadania umiejętności technicznych), przy pomocy narzędzi w Panelu klienta OVH. Automatyczna instalacja jest dostępna dla: WordPress, PrestaShop, Drupal i Joomla!.
+Moduły OVHcloud umożliwiają łatwe i szybkie postawienie strony internetowej (bez konieczności posiadania umiejętności technicznych), przy pomocy narzędzi w Panelu klienta OVHcloud. Automatyczna instalacja jest dostępna dla: WordPress, PrestaShop, Drupal i Joomla!.
 
-**Dowiedz się, jak postawić stronę za pomocą modułów OVH.**
+**Dowiedz się, jak postawić stronę za pomocą modułów OVHcloud.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}.
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Pusty katalog na hostingu, w którym zostanie zainstalowany moduł.
 - Domena (wraz z subdomeną, jeśli jest potrzebna), skonfigurowana w ramach opcji MultiSite.
 
@@ -41,7 +41,7 @@ Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 W tu możesz przeglądać już zainstalowane moduły, zarządzać nimi i instalować nowe.
 
-![Dostęp do sekcji Moduły OVH](images/access_to_the_1_click_modules_section.png){.thumbnail}
+![Dostęp do sekcji Moduły OVHcloud](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
 ### Dodawanie modułu
 
