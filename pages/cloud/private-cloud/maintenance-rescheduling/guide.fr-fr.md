@@ -53,7 +53,7 @@ Enfin, cliquez sur le bouton `Modifier`{.action} pour valider vos modifications.
 
 ### Depuis l'API OVHcloud
 
-Connectez-vous à l'[interface d'administration de vos services par API](https://eu.api.ovh.com/). Vous pouvez vous aider de notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/).
+Connectez-vous à l'[interface d'administration de vos services par API](https://eu.api.ovh.com/). Vous pouvez vous aider de notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) ».
 
 Exécutez l'appel API suivant :
 
