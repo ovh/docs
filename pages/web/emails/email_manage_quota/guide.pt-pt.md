@@ -6,6 +6,10 @@ section: 'Diagnóstico'
 order: 02
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 17/11/2022**
 
 ## Objetivo
@@ -16,16 +20,16 @@ Cada conta de e-mail da OVHcloud dispõe de um espaço de armazenamento dedicado
 
 ## Requisitos
 
-- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/fr/web-hosting/), incluída num [alojamento Start10M gratuito](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou o [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/))
-- Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, na secção `Web Cloud`{.action}.
+- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [alojamento Start10M gratuito](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou o [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/))
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 - Dispor das informações de ligação aos endereços de e-mail em causa.
 
 > [!primary]
 >
 > **Casos especiais**
 >
-> - Relativamente ao alojamento gratuito Start 10M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode efetuar esta operação a partir da Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, posicionando-se no domínio em questão.
-> - No âmbito de um [alojamento web](https://www.ovhcloud.com/fr/web-hosting/){.external}, é necessário ativar a oferta MX Plan incluída antes de continuar a ler este manual. Para isso, consulte o nosso manual "[Ativar os endereços de e-mail incluídos no seu alojamento web](https://docs.ovh.com/fr/hosting/activer-email-hebergement-web/)".
+> - Relativamente ao alojamento gratuito Start 10M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode efetuar esta operação a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, posicionando-se no domínio em questão.
+> - No âmbito de um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, é necessário ativar a oferta MX Plan incluída antes de continuar a ler este manual. Para isso, consulte o nosso manual "[Ativar os endereços de e-mail incluídos no seu alojamento web](https://docs.ovh.com/pt/hosting/ativar-e-mail-alojamento-web/)".
 
 ## Prática <a name="instructions"></a>
 
@@ -43,7 +47,7 @@ Pode realizar esta ação a partir da Área de Cliente se tem a gestão do servi
 
 #### A partir da Área de Cliente <a name="quotacontrolpanel"></a>
 
-Na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
+Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
 
 > [!tabs]
 > **E-mails (MXplan)**
@@ -64,7 +68,7 @@ Na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 #### A partir do webmail <a name="quotawebmail"></a>
 
-Para se ligar ao webmail, aceda à página <https://www.ovhcloud.com/fr/mail/>e introduza as informações de ligação à sua conta de e-mail. De seguida, selecione o webmail correspondente à sua oferta:
+Para se ligar ao webmail, aceda à página <https://www.ovhcloud.com/pt/mail/>e introduza as informações de ligação à sua conta de e-mail. De seguida, selecione o webmail correspondente à sua oferta:
 
 > [!tabs]
 > **OWA**: **E-mails (MXplan)** / **Email Pro** / **Exchange**
@@ -89,7 +93,7 @@ Quando a sua conta de e-mail estiver sobrecarregada, poderá sempre enviar e-mai
 Antes de efetuar qualquer operação na sua conta de e-mail, é necessário tomar conhecimento do conteúdo da sua conta de e-mail para eliminar todos os elementos supérfluos. Sugerimos que verifique alguns deles em particular:
 
 - `1`{.action} **La Córdova (trash)**: esta contém os elementos que eliminou. Para evitar a acumulação de e-mails nesta pasta, aconselhamos que esvazie a lixeira regularmente.
-- `2`{.action} **Os elementos enviados (sente mensagens)**: quando envia um e-mail, este é enviado ao destinatário. No entanto, também é conservado na sua conta de e-mail nos "elementos enviados". Sugerimos que purgue esta pasta regularmente ou arquive o seu conteúdo localmente no seu computador ou num espaço de armazenamento remoto do tipo "cloud".
+- `2`{.action} **Os elementos enviados (sent mensagens)**: quando envia um e-mail, este é enviado ao destinatário. No entanto, também é conservado na sua conta de e-mail nos "elementos enviados". Sugerimos que purgue esta pasta regularmente ou arquive o seu conteúdo localmente no seu computador ou num espaço de armazenamento remoto do tipo "cloud".
 - `3`{.action} **Os e-mails armazenados com anexos volumosos**: os e-mails que contenham anexos recebem mais espaço na sua conta de e-mail. Aconselhamos que armazene os elementos volumosos num espaço de armazenamento local (computador) ou remoto (cloud).
 - `4`{.action}**Selecionar as pastas**: quando tem muitas pastas na sua conta de e-mail, é menos fácil medir o espaço ocupado na sua conta de e-mail. Faça regularmente o inventário das suas pastas e do seu conteúdo.
 
@@ -102,14 +106,14 @@ Antes de efetuar qualquer operação na sua conta de e-mail, é necessário toma
 > [!tabs]
 > **E-mails (MXplan)**
 >>
->> A capacidade de uma conta MXplan pode ir de 2,5 MB a 5 GB. Se estiver saturado e a sua capacidade for inferior a 5GB, pode modificar a sua capacidade através do>
->> No separador `Contas de e-mail` {.action}, clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>à direita da conta a modificar e, a seguir, em `Alterar` {.ação}.
->> Na casa `Quota` {.ação}, selecione o tamanho que lhe convém, clique em `Seguinte` {.ação} e depois `Validar` {.ação}.<br><br>
+>> A capacidade de uma conta MXplan pode variar entre 2,5 MB e 5 GB. Se estiver saturado e a sua capacidade for inferior a 5GB, pode alterar a sua capacidade através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).<br>
+>> No separador `Contas de e-mail`{.action}, clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>à direita da conta a modificar e, a seguir, em `Alterar`{.action}.
+>> Na casa `Quota`{.action}, selecione o tamanho que lhe convém, clique em `Seguinte`{.action} e depois `Validar`{.action}.<br><br>
 >> ![e-mail](images/email-quota-more01.png) {.thumbnail}<br>
 >>
 > **Email Pro**
 >> 
->> A oferta Email Pro dispõe de uma capacidade única de 10GB. Se precisar de um armazenamento maior, deverá passar para uma oferta com mais espaço. Para isso, leia a secção >
+>> A oferta Email Pro dispõe de uma capacidade única de 10 GB. Se precisar de um armazenamento maior, deverá passar para uma oferta com mais espaço. Para isso, leia a secção [mudar de oferta para aumentar a sua capacidade](#switchingoffer) deste guia.<br>
 >>
 > **Exchange**
 >>
@@ -146,35 +150,36 @@ Encontrará abaixo uma lista não exaustiva dos guias de configuração para os 
 > [!tabs]
 > **E-mails (MXplan)**
 >>
->> Configuração de uma conta MXplan no **Windows**:<br><br>
->> - >
->> - ><br>
->> Configuração de uma conta MXplan no **macOS**:<br><br>
->> - >
->> - >
->> - >
+>> Configuração de uma conta MX plan em **Windows*:<br><br>
+>> - [Endereço do Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/) (English) (incluído com Windows)<br>
+>> - [Outlook para Mxplan](https://docs.ovh.com/pt/emails/configuracao-outlook-2016/)
+>> - [Thunderbird](https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/) (gratuito)<br><br>
+>> Configuração de uma conta MX plan em **macOS**:<br><br>
+>> - [Mail](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_de_mail_para_mac_-_el_capitan/) (incluído com macOS)<br>
+>> - [Outlook](https://docs.ovh.com/pt/emails/configuracao-outlook-2016-mac/)<br>
+>> - [Thunderbird](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_configuracao_para_thunderbird/) (gratuito)<br>
 >>
 > **E-mail Pro**
 >>
->> Configuração de uma conta E-mail Pro no **Windows**:<br><br>
->> - >
->> - >
->> - ><br>
->> Configuração de uma conta E-mail Pro no **macOS**:<br><br>
->> - >
->> - >
->> - >
+>> Configuração de uma conta E-mail Pro em **Windows*:<br><br>
+>> - [Endereço do Windows 10](https://docs.ovh.com/gb/en/emails-pro/mail-configuration-windows-10/) (English) (incluído com Windows)<br>
+>> - [Outlook](https://docs.ovh.com/pt/emails-pro/configuracao-outlook-2016/)<br>
+>> - [Thunderbird](https://docs.ovh.com/pt/emails-pro/configuracao-thunderbird-emailpro-windows/) (gratuito)<br><br>
+>> Configuração de uma conta E-mail Pro em **macOS**:<br><br>
+>> - [Mail](https://docs.ovh.com/pt/emails-pro/configurar-email-pro-mail-macos/) (incluído com macOS)<br>
+>> - [Outlook](https://docs.ovh.com/pt/emails-pro/configuracao-outlook-2016-mac/)<br>
+>> - [Thunderbird](https://docs.ovh.com/pt/emails-pro/configuracao-thunderbird-emailpro-mac/) (gratuito)<br>
 >>
 > **Exchange**
 >>
->> Configuração de uma conta Exchange no **Windows**:<br><br>
->> - >
->> - >
->> - ><br>
->> Configuração de uma conta Exchange no **macOS**:<br><br>
->> - >
->> - >
->> - >
+>> Configuração de uma conta Exchange em **Windows*:<br><br>
+>> - [Endereço do Windows 10](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/mail-configuration-windows-10/) (English) (incluído com Windows)<br>
+>> - [Outlook](https://docs.ovh.com/pt/microsoft-collaborative-solutions/configuracao-outlook-2016/)<br>
+>> - [Thunderbird](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_configuracao_de_thunderbird/) (gratuito)<br><br>
+>> Configuração de uma conta Exchange em **macOS**:<br><br>
+>> - [Mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange-configuracao-mail-mac/) (incluído com macOS)<br>
+>> - [Outlook](https://docs.ovh.com/pt/microsoft-collaborative-solutions/configuracao-outlook-2016-mac/)<br>
+>> - [Thunderbird](https://docs.ovh.com/pt/microsoft-collaborative-solutions/configuracao-exchange-thunderbird-mac/) (gratuito)<br>
 >>
 
 Depois de instalar o seu software de correio, siga as instruções abaixo para preparar a pasta do arquivo no seu software de correio eletrónico.
@@ -183,18 +188,18 @@ Depois de instalar o seu software de correio, siga as instruções abaixo para p
 > **Outlook**
 >>
 >> No Outlook, certifique-se de que, na sua coluna da esquerda, a pasta "arquivo" ou "no meu computador" está presente para poder introduzir os elementos que deseja manter localmente no seu computador. Consulte a documentação da Microsoft para preparar a sua pasta de arquivo:<br><br>
->> - >
->> - >
+>> - [Arquivo no Outlook para Windows](https://support.microsoft.com/pt-pt/office/arquivar-no-outlook-para-windows-25f75777-3cdc-4c77-9783-5929c7b47028) {.external}<br>
+>> - [Sobre as pastas do meu computador no Outlook para Mac](https://support.microsoft.com/pt-pt/office/acerca-das-pastas-no-meu-computador-no-outlook-para-mac-c91b8729-924d-4c25-a5f6-38883d0f763d) {.external}<br>
 >>
 > **Mail macOS**
 >>
 >> A partir do e-mail no macOS, crie uma pasta que aparecerá na secção "No meu Mac" na coluna da esquerda. Para isso, siga a documentação da Apple:<br><br>
->> - >
+>> - [Criar ou eliminar caixas de correio no Mail](https://support.apple.com/pt-pt/guide/mail/mlhlp1021/15.0/mac/12.0) {.external}<br>
 >>
 > **Thunderbird**
 >>
 >> Através do thunderbird a partir do Windows, macOS ou Linux, pode mover os seus e-mails para uma pasta da parte esquerda. Ajude-se com a documentação de Mozilla:<br><br>
->> - >
+>> - [Arquivo de mensagens](https://support.mozilla.org/pt-PT/kb/mensagens-arquivadas) {.external}<br>
 >>
 
 #### Mudar de oferta para aumentar a sua capacidade <a name="switchingoffer"></a>
@@ -204,11 +209,11 @@ Selecione, no menu abaixo, a oferta atual da sua conta de e-mail:
 > [!tabs]
 > **E-mails (MXplan)**
 >>
->> Se a capacidade da sua conta de e-mail já está a um máximo de 5GB, pode optar por uma migração para uma oferta [**Email Pro** de 10GB](https://www.ovhcloud.com/fr/emails/email-pro/) ou [**Hosted Exchange** de 50GB](https://www.ovhcloud.com/fr/emails/hosted-exchange/). Para isso, sugerimos que encomende a oferta mais adequada e siga a documentação "[Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-adresse-e-mail-mutualisee-vers-exchange/)". 
+>> Se a capacidade da sua conta de e-mail já está a um máximo de 5GB, pode optar por uma migração para uma oferta [**Email Pro** de 10GB](https://www.ovhcloud.com/pt/emails/email-pro/) ou [**Hosted Exchange** de 50GB](https://www.ovhcloud.com/pt/emails/hosted-exchange/). Para isso, sugerimos que encomende a oferta mais adequada e siga a documentação "[Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/migracao-endereco-email-partilhado-vers-exchange/)". 
 >>
 > **Email Pro**
 >>
->> A oferta Email Pro dispõe de uma capacidade única de 10GB. Pode optar por uma migração para uma oferta [**Hosted Exchange** de 50GB](https://www.ovhcloud.com/fr/emails/hosted-exchange/). Para isso, sugerimos que encomende a oferta mais adequada e siga o nosso manual "[Migrar os endereços de e-mail de uma plataforma de e-mail da OVHcloud para outra](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-email-platform/)".
+>> A oferta Email Pro dispõe de uma capacidade única de 10GB. Pode optar por uma migração para uma oferta [**Hosted Exchange** de 50GB](https://www.ovhcloud.com/pt/emails/hosted-exchange/). Para isso, sugerimos que encomende a oferta mais adequada e siga o nosso manual "[Migrar os endereços de e-mail de uma plataforma de e-mail da OVHcloud para outra](https://docs.ovh.com/pt/microsoft-collaborative-solutions/migration-email-platform/)".
 >>
 > **Exchange**
 >>
@@ -219,12 +224,12 @@ Selecione, no menu abaixo, a oferta atual da sua conta de e-mail:
 
 ## Saiba mais
 
-[Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-adresse-e-mail-mutualisee-vers-exchange/)
+[Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/migracao-endereco-email-partilhado-vers-exchange/)
 
-[Migrar manualmente o seu endereço de e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/)
+[Migrar manualmente o seu endereço de e-mail](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/)
 
-[Migrar os endereços de e-mail de uma plataforma de e-mail OVHcloud para outra](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-email-platform/)
+[Migrar os endereços de e-mail de uma plataforma de e-mail OVHcloud para outra](https://docs.ovh.com/pt/microsoft-collaborative-solutions/migration-email-platform/)
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/fr/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

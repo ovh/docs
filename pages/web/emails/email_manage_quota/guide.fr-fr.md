@@ -16,7 +16,7 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/))
+- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/)).
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
 - Disposer des informations de connexion aux adresses e-mails concernées.
 
@@ -82,7 +82,7 @@ Pour vous connecter au webmail, rendez-vous sur la page <https://www.ovhcloud.co
 
 Si votre compte e-mail est saturé, cela signifie que vous n'êtes plus en mesure de recevoir des e-mails.<br>
 Lorsque qu'une personne vous envoie un e-mail, elle reçoit, en réponse automatique, un e-mail d'erreur du type *« 552, "5.2.2", Le compte de messagerie auquel vous avez envoyé un message a épuisé son quota. »*.<br>
-Lorsque votre compte e-mail est saturé, vous pouvez toujours envoyer des e-mails de votre côté. En revanche, ces e-mails ne pourront pas être stockés dans votre « boite d'envoi ».
+Lorsque votre compte e-mail est saturé, vous pouvez toujours envoyer des e-mails de votre côté. En revanche, ces e-mails ne pourront pas être stockés dans « messages envoyés ».
 
 #### Optimiser l'espace aloué de votre compte e-mail
 
@@ -91,7 +91,7 @@ Avant toute autre opération sur votre compte e-mail, il est nécessaire de bien
 - `1`{.action} **La Corbeille (trash)** : celle-ci contient les éléments que vous avez supprimés. Pour éviter de cumuler des e-mails dans ce dossier, nous vous conseillons de vider la corbeille régulièrement.
 - `2`{.action} **Les éléments envoyés (sent messages)** : lorsque vous envoyez un e-mail, celui-ci est transmis au destinataire. Cependant, il est aussi conservé sur votre compte e-mail dans les « éléments envoyés ». Nous vous conseillons de purger ce dossier régulièrement ou d'archiver son contenu en local sur votre ordinateur ou sur un espace de stockage distant de type « cloud ».
 - `3`{.action} **Les e-mails stockés contenant des pièces jointes volumineuses** : les e-mails contenant des pièces jointes prennent davantage d'espace sur votre compte e-mail. Nous vous conseillons de stocker les éléments volumineux sur un espace de stockage local (ordinateur) ou distant (cloud).
-- `4`{.action}**Trier ses dossiers** : lorsque vous avez beaucoup de dossiers sur votre compte e-mail, il est moins aisé de mesurer l'espace occupé sur votre compte e-mail. Faites régulièrement l'inventaire de vos dossiers et de leur contenu.
+- `4`{.action} **Trier ses dossiers** : lorsque vous avez beaucoup de dossiers sur votre compte e-mail, il est moins aisé de mesurer l'espace occupé sur votre compte e-mail. Faites régulièrement l'inventaire de vos dossiers et de leur contenu.
 
 ![email](images/email-quota-optimise01.png){.thumbnail}
 
