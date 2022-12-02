@@ -181,11 +181,11 @@ When the models will be downloaded and added to this volume, the status of the j
 To launch this **AI Training** job and download the models, use the following OVHcloud's CLI command:
 
 ```console
-ovhai job run streamlit_app:latest \
---cpu 12 \
---volume speech_to_text_app_models@GRA/:/workspace/speech_to_text_app_models:RW \
---volume https://github.com/ovh/ai-training-examples.git:/workspace/github_repo:rw \
--- bash -c 'python /workspace/github_repo/apps/streamlit/speech-to-text/download_models.py'
+ovhai job run <shared-registry-address>/streamlit_app:latest \
+    --cpu 12 \
+    --volume speech_to_text_app_models@GRA/:/workspace/speech_to_text_app_models:RW \
+    --volume https://github.com/ovh/ai-training-examples.git:/workspace/github_repo:rw \
+    -- bash -c 'python /workspace/github_repo/apps/streamlit/speech-to-text/download_models.py'
 ```   
 
 > [!primary]
