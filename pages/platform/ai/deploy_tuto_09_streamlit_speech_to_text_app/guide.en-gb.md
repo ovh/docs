@@ -44,10 +44,11 @@ You are going to follow different steps to deploy your **Streamlit Speech to Tex
 
 - **Write & Install** the libraries and packages in our environment so that our application can work.
 - **Write the `Dockerfile`** that contains all the commands to launch our speech to text app.
+- **Build the Docker image** from the Dockerfile
 - **(Optional) - Import the models and save them locally** in an *Object Storage (volume)* to speed up the initialization of the app.
 - **Deploy your app**.
 
-*If you have cloned the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), you will not need to rewrite the files (requirements.txt, packages.txt and Dockerfile) since you already have them. In this case, you can go directly to the optional step or the next one, even if it is better to understand the global operation.*
+*If you have cloned the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), you will not need to rewrite the files (requirements.txt, packages.txt and Dockerfile) since you already have them. In this case, you can go directly to the "Build the Docker image" step, even if it is better to understand the global operation.*
 
 ### Write the requirements.txt file for the application
 
@@ -106,7 +107,6 @@ We can now install our needed system packages. To do this, use `apt-get`, which 
 ```console
 RUN apt-get update
 RUN xargs -a packages.txt apt-get install --yes
-RUN pip install -r requirements.txt
 ```
 
 Use a `pip install ...` command to install our needed python modules that are in the `requirements.txt` file:
@@ -127,37 +127,6 @@ Finally, create a `data` folder which will temporarily store users' audio files 
 RUN mkdir /data ; chown -R 42420:42420 /workspace /data
 ENV HOME=/workspace
 ```
-
-### Import the models and save them locally (Optional)
-As we explained in the blog articles, you will considerably reduce the initialization time of the app if you download the models and store them in a local folder. This will allow you not to have to download them again every time you relaunch the application. 
-
-To do this, we will use **AI Training**. This will allow us to launch a python script from *GitHub* that will **download the models and store them in an OVHcloud volume** named `speech_to_text_app_models`. 
-When the models will be downloaded and added to this volume, the status of the job will automatically switch from `Running` to `Done` and the **job will be immediately stopped**. This operation should be quite fast.
-
-*Unfortunately, the diarization model can't be saved anymore since pyannote.audio v2. Make sure you have replaced the `use_auth_token="ACCESS TOKEN GOES HERE"` code line in the app.py file by your own token so it can download the model. If the model fails to be downloaded during the initialization of the app, the diarization option will be disabled.*
-
-To launch this **AI Training** job and download the models, use the following OVHcloud's CLI command:
-
-```console
-./ovhai job run ovhcom/ai-training-one-for-all \
---cpu 12 \
---volume speech_to_text_app_models@GRA/:/workspace/speech_to_text_app_models:RW \
---volume https://github.com/MathieuBsqt/STT_APP_Models.git:/workspace/github_repo:rw \
--- bash -c 'pip install -r /workspace/github_repo/requirements.txt && python /workspace/github_repo/download_models.py'
-```   
-
-> [!primary]
-> `--volume` allows you to specify what volume you want to add to your job. As mentioned, we add the volume `speech_to_text_app_models` and we put it in `RW` (read and write) mode since we want to add our models to this volume. If you do not have this volume in your Object Storage list, do not worry, it will be created automatically. As you can see, the `--volume` parameter also allows you to get files from a GitHub repository, which in our case contains the script to download the models.
-> 
->  `--bash` allows you to provide commands through which you install the librairies mentioned in your `requirements.txt` file, and run the python script.
->
-
-When you run this command, an `Info url` will appear. Opening it will allow you to **track the status of the job**.
-Once the *GitHub* repository is recovered, the python script will be launched and the job status will switch to `Running`. Then, you just have to wait for the job to end.
-
-We advise you to **turn on the auto-refresh option** (`Running` status automatically disables it). This will allow you to see when the job will end (job status switches to `Done`). Otherwise, you can refresh the page manually. 
-
-Once the models have been uploaded and the status is `Done`, you can continue.
 
 ### Build the Docker image from the Dockerfile
 Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, packages.txt, Dockerfile, python files). 
@@ -188,20 +157,60 @@ Find the address of your shared registry by launching this command:
 ovhai registry list
 ```
 
-Log in on the shared registry with your usual OpenStack credentials:
+Log in on your shared registry with your usual OpenStack credentials:
 
 ```console
 docker login -u <user> -p <password> <shared-registry-address>
 ```
 
-Push the compiled image into the shared registry:
+Tag the compiled image and Push it into your shared registry:
 
 ```console
 docker tag streamlit_app:latest <shared-registry-address>/streamlit_app:latest
 docker push <shared-registry-address>/streamlit_app:latest
 ```
 
+### Import the models and save them locally (Optional)
+As we explained in the blog articles, you will considerably reduce the initialization time of the app if you download the models and store them in a local folder. This will allow you not to have to download them again every time you relaunch the application. 
+
+To do this, we will use **AI Training**. This will allow us to launch a python script from *GitHub* that will **download the models and store them in an OVHcloud volume** named `speech_to_text_app_models`. 
+When the models will be downloaded and added to this volume, the status of the job will automatically switch from `Running` to `Done` and the **job will be immediately stopped**. This operation should be quite fast.
+
+*Unfortunately, the diarization model can't be saved anymore since pyannote.audio v2. Make sure you have replaced the `use_auth_token="ACCESS TOKEN GOES HERE"` code line in the app.py file by your own token so it can download the model. If the model fails to be downloaded during the initialization of the app, the diarization option will be disabled.*
+
+To launch this **AI Training** job and download the models, use the following OVHcloud's CLI command:
+
+```console
+ovhai job run streamlit_app:latest \
+--cpu 12 \
+--volume speech_to_text_app_models@GRA/:/workspace/speech_to_text_app_models:RW \
+--volume https://github.com/ovh/ai-training-examples.git:/workspace/github_repo:rw \
+-- bash -c 'python /workspace/github_repo/apps/streamlit/speech-to-text/download_models.py'
+```   
+
+> [!primary]
+> `streamlit_app:latest` corresponds to the name of your Docker image.
+>
+> `--volume` allows you to specify what volume you want to add to your job. As mentioned, we add the volume `speech_to_text_app_models` and we put it in `RW` (read and write) mode since we want to add our models to this volume. If you do not have this volume in your Object Storage list, do not worry, it will be created automatically. As you can see, the `--volume` parameter also allows you to get files from a GitHub repository, which in our case contains the script to download the models.
+> 
+>  `--bash` allows you to provide commands through which you install the librairies mentioned in your `requirements.txt` file, and run the python script.
+>
+
+When you run this command, an `Info url` will appear. Opening it will allow you to **track the status of the job**.
+Once the *GitHub* repository is recovered, the python script will be launched and the job status will switch to `Running`. Then, you just have to wait for the job to end.
+
+We advise you to **turn on the auto-refresh option** (`Running` status automatically disables it). This will allow you to see when the job will end (job status switches to `Done`). Otherwise, you can refresh the page manually. 
+
+Once the models have been uploaded and the status is `Done`, you can continue.
+
 ### Launch the app on AI Deploy
+
+> [!primary]
+>
+> If you followed the optional part `Import the models and save them locally`, you can load the volume where your models are stored with the `--volume` parameter. This time, we put this volume in read-only (`RO`) mode because we only need to have an access to the models so we can use them. We don't need to write or delete anything in this Object Storage container.
+>
+> Otherwise, you can remove the `--volume` line, since it will not bring anything to your app.
+>
 
 The following command starts a new app running your Streamlit application:
 
@@ -212,12 +221,6 @@ ovhai app run \
       --volume speech_to_text_app_models@GRA/:/workspace/models:RO \
       <shared-registry-address>/streamlit_app:latest
 ```
-> [!primary]
->
-> If you followed the optional part `Import the models and save them locally`, you can load the volume where your models are stored with the `--volume` parameter. This time, we put it in read-only (`RO`) mode because we only need to have an access to the models, so we can use them. We don't need to write or delete anything in this Object Storage container.
->
-> Otherwise, you can delete the `--volume` line, since it will not bring anything to your app.
->
 
 > [!primary]
 >
