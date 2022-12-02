@@ -62,11 +62,57 @@ WordPress vous permet de créer facilement du contenu sans avoir de connaissance
 
 Pour créer un article, allez sur le menu à gauche dans «&nbsp;Articles&nbsp;» (Posts) puis «&nbsp;Ajouter&nbsp;» (Add New)&nbsp;:
 
-![WordPress - Posts/Add New](images/wordpress_first_steps%5B4%5D.png){.thumbnail}
+![WordPress - Posts/Add New](images/wordpress_first_steps%5B5%5D.png){.thumbnail}
+
+Depuis la version, WordPress propose une interface pour simplifier la rédaction et la mise en forme des articles&nbsp;: Gutenberg, éditeur WYSIWYG (« what you see is what you get »)
+
+![WordPress - Gutenberg](images/wordpress_first_steps%5B6%5D.png){.thumbnail}
+
+Ajoutez un titre à votre page en cliquant sur «&nbsp;Add title&nbsp;»&nbsp;:
+
+![WordPress - Gutenberg, add title](images/wordpress_first_steps%5B7%5D.png){.thumbnail}
+
+Pour ajouter du contenu, cliquez sur le signe «&nbsp;+&nbsp;» et choisissez ce que vous souhaitez insérer un bloc qui contiendra un paragraphe, un sous-titre, une image, etc.&nbsp;:
+
+![WordPress - Gutenberg, add block](images/wordpress_first_steps%5B8%5D.png){.thumbnail}
+
+Sur la droite de votre page, trois liens vous permettent de&nbsp;:
+
+- Enregistrer le brouillon (Save draft), que vous pouvez faire avec Ctrl+S
+- Prévisualiser (Preview)
+- Publier (Publish) sur votre site.
+
+Pour notre exemple, nous allons cliquer sur «&nbsp;Visualiser&nbsp;» (Preview), puis «&nbsp;Prévisualiser dans un nouvel onglet&nbsp;» (Preview in a new tab). Vous pouvez choisir le type d'appareil sur lequel faire le rendu (PC, tablette ou smartphone)&nbsp;:
+
+![WordPress - Preview](images/wordpress_first_steps%5B10%5D.png){.thumbnail}
+
+Pour revenir à l'interface d'administration de WordPress, cliquez sur l'icône en haut à gauche.
+
+### Gérez les catégories
+
+WordPress vous permet de définir des catégories et d'associer vos articles avec une ou plusieurs d'entre elles. Pour gérer les catégories de votre site, rendez vous dans «&nbsp;Articles&nbsp;», puis «&nbsp;Catégories&nbsp;»&nbsp;:
+
+![WordPress - Categories](images/wordpress_first_steps%5B11%5D.png){.thumbnail}
+
+Renseignez maintenant le formulaire pour ajouter une nouvelle catégorie&nbsp;:
+
+- Nom («&nbsp;Name&nbsp;») de votre catégorie tel qu'elle apparaîtra sur votre site
+- Slug, c'est le nom qui apparaîtra dans l'URL
+- Catégorie parente («&nbsp;Parent Category&nbsp;») vous permet de hiérarchiser vos catégories
+- Description, non apparente par défaut, la description de votre catégorie peut toutefois être rendue visible par certains thèmes.
+
+![WordPress - Categories filled](images/wordpress_first_steps%5B12%5D.png){.thumbnail}
+
+Une fois ces informations indiquées, cliquez sur le bouton «&nbsp;Ajouter une nouvelle catégorie&nbsp;» (Add New Category)
+
+![WordPress - Categories added](images/wordpress_first_steps%5B13%5D.png){.thumbnail}
 
 ## Aller plus loin
 
 - stockez vos accès dans un gestionnaire de mots de passe comme [KeePass](https://keepass.info/)
+- tester en ligne l'éditeur par défaut [Gutenberg](https://fr.wordpress.org/gutenberg/)
 - quelques ressources où trouver des thèmes WordPress
     - [WordPress Themes](https://wordpress.com/fr/themes)
-    - 
+    - [TemplaMonster](https://www.templatemonster.com/fr/type/themes-wordpress/)
+    - [Elegant Themes](https://www.elegantthemes.com/), éditeur du constructeur de thèmes Divi
+    - [Elementor](https://elementor.com/), au autre éditeur de thèmes
