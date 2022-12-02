@@ -183,7 +183,7 @@ Une fois ces modifications terminées, redémarrez le service à l'aide de la co
 /etc/init.d/fail2ban restart
 ```
 
-Pour toute demande complémentaire concernant Fail2Ban, n’hésitez pas à consulter la [documentation officielle](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} de cet outil.
+Pour toute demande complémentaire concernant Fail2Ban, consultez la [documentation officielle](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} de cet outil.
 
 
 ### Configurer le pare-feu interne : iptables
@@ -194,7 +194,7 @@ La distribution nue dispose d’un service de pare-feu nommé iptables. Par déf
 iptables -L
 ```
 
-Il est alors recommandé de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur la configuration des iptables, reportez-vous à la documentation officielle de votre distribution Linux.
+Il est alors recommandé de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur la configuration des iptables, consultez [notre guide](https://docs.ovh.com/fr/dedicated/firewall-iptables/) et la documentation officielle de votre distribution Linux.
 
 
 ### Configurer le Network Firewall d’OVHcloud

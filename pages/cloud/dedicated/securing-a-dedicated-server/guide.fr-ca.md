@@ -193,7 +193,7 @@ La distribution nue dispose d’un service de pare-feu nommé iptables. Par déf
 iptables -L
 ```
 
-Il est alors recommandé de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur la configuration des iptables, reportez-vous à la documentation officielle de votre distribution Linux.
+Il est alors recommandé de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur la configuration des iptables, consultez [notre guide](https://docs.ovh.com/ca/fr/dedicated/firewall-iptables/) et la documentation officielle de votre distribution Linux.
 
 
 ### Configurer le Network Firewall d’OVHcloud

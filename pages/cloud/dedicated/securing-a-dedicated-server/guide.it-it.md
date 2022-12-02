@@ -194,7 +194,7 @@ Le distribuzioni di base dispongono di un servizio di firewall chiamato iptables
 iptables -L
 ```
 
-Ti consigliamo di creare e adattare le regole di questo firewall in base alle tue necessità. Per maggiori informazioni sulla configurazione di iptables, consulta la documentazione ufficiale della tua distribuzione Linux.
+Ti consigliamo di creare e adattare le regole di questo firewall in base alle tue necessità. Per maggiori informazioni sulla configurazione di iptables, consulta la [nostra guida](https://docs.ovh.com/it/dedicated/firewall-iptables/) e la documentazione ufficiale della tua distribuzione Linux.
 
 
 ### Configura il Network Firewall OVHcloud

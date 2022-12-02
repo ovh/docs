@@ -193,7 +193,7 @@ A distribuição “básica” inclui uma firewall designada iptables. A configu
 iptables -L
 ```
 
-Como tal, recomendamos a criação e o ajustamento das regras da firewall à sua utilização. Para obter mais informações sobre a configuração dos iptables, consulte a documentação oficial da distribuição Linux.
+Como tal, recomendamos a criação e o ajustamento das regras da firewall à sua utilização. Para obter mais informações sobre a configuração dos iptables, consulte o [nosso guia](https://docs.ovh.com/pt/dedicated/firewall-iptables/) e a documentação oficial da distribuição Linux.
 
 
 ### Configurar a Network Firewall da OVHcloud
@@ -207,10 +207,10 @@ Poderá também consultar o nosso [manual](https://docs.ovh.com/pt/dedicated/fir
 
 A segurança de um sistema também inclui a proteção dos dados. A proteção dos seus dados é essencial e, por isso, a OVHcloud oferece-lhe 500 GB de armazenamento gratuito com o seu servidor. É possível ativar este armazenamento na Área de Cliente e aceder ao mesmo através dos protocolos abaixo:
 
-* FTP;
-* FTPS;
-* NFS;
-* CIFS.
+- FTP
+- FTPS
+- NFS
+- CIFS
 
 Será necessária uma solução de armazenamento de terceiros para replicar os seus dados e transferi-los para o seu armazenamento.
 

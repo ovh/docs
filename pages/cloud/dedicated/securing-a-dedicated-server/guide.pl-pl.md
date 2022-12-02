@@ -193,7 +193,7 @@ Czyste dystrybucje Linux są wyposażone w zaporę sieciową o nazwie iptables. 
 iptables -L
 ```
 
-Zalecamy utworzenie dla tej zapory reguł i dostosowanie ich do Twojego trybu użytkowania. Więcej informacji dotyczących konfiguracji zapory iptables znajdziesz w oficjalnej dokumentacji dołączonej do dystrybucji Linux.
+Zalecamy utworzenie dla tej zapory reguł i dostosowanie ich do Twojego trybu użytkowania. Więcej informacji dotyczących konfiguracji zapory iptables zapoznaj się z [naszym przewodnikiem](https://docs.ovh.com/pl/dedicated/firewall-iptables/) i w oficjalnej dokumentacji dołączonej do dystrybucji Linux.
 
 
 ### Konfiguracja Network Firewall OVHcloud
@@ -207,10 +207,10 @@ Aby skonfigurować Network Firewall, możesz również skorzystać z [przewodnik
 
 Pojęcie bezpieczeństwa nie ogranicza się wyłącznie do ochrony systemu przed atakami. Niezwykle istotne jest również zabezpieczenie Twoich danych. Dlatego OVHcloud oferuje bezpłatnie 500 GB przestrzeni dyskowej na kopie zapasowe. Możesz aktywować tę przestrzeń w Panelu klienta i połączyć się z nią, używając następujących protokołów:
 
-* FTP;
-* FTPS;
-* NFS;
-* CIFS.
+- FTP
+- FTPS
+- NFS
+- CIFS
 
 Będziesz potrzebował zewnętrznego rozwiązania do replikacji danych i przesłania ich na przestrzeń dyskową do przechowywania kopii zapasowych.
 
