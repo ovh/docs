@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 18/01/2021**
+**Última atualização: 01/12/2022**
 
 ## Objetivo
 
@@ -218,11 +218,13 @@ network:
             match:
               name: eth0
             addresses:
-              - "YOUR_IPV6/IPv6_PREFIX"
-            gateway6: "IPv6_GATEWAY"
+              - YOUR_IPV6/IPv6_PREFIX
+            gateway6: IPv6_GATEWAY
             routes:
-              - to: "IPv6_GATEWAY"
+              - to: IPv6_GATEWAY
                 scope: link
+              - to: ::/0
+                via: IPv6_GATEWAY
 ```
 
 > [!warning]
