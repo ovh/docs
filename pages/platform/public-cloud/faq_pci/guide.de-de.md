@@ -89,7 +89,7 @@ Lesen Sie die Anleitung [vRack Public Cloud](https://docs.ovh.com/de/publiccloud
 Das private Netzwerk verfügt standardmäßig über den nativen Netzschutz von OpenStack. Diese beinhalten verschiedene Mechanismen wie den Schutz vor IP-Spoofing.<br>
 Auf der Instanzen-Seite kann dies zu Blockaden von Netzwerkpaketen führen, je nach Ihren Bedürfnissen (pfSense, Router, CARP Protokoll...).
 
-Je nach Bedarf müssen Sie die Port Security` Funktion im privaten Port oder Netzwerk deaktivieren.
+Je nach Bedarf müssen Sie die `Port Security` Funktion im privaten Port oder Netzwerk deaktivieren.
 Bitte lesen Sie die Anleitung zur [Verwaltung der Firewall- und Port-Security-Regeln über Netzwerke mit OpenStack CLI](https://docs.ovh.com/de/public-cloud/firewall_security_pci/).
 
 Weitere Informationen finden Sie in [OpenStack Dokumentation](https://docs.openstack.org/developer/dragonflow/specs/mac_spoofing.html) oder auf [superuser.openstack.org](https://superuser.openstack.org/articles/managing-port-level-security-openstack/).
