@@ -226,7 +226,7 @@ Vamos agora criar um novo parágrafo no qual colocaremos a imagem (neste exemplo
 
 O resultado no seu browser deverá ser o seguinte:
 
-![Resultado do código HTML no browser](images/create_your_personal_webpage_3.png){.thumbnail}
+![Resultado do código HTML no browser](images/create_your_personal_webpage_3_pt.png){.thumbnail}
 
 ### Aplicar configuração ao seu conteúdo graças aos estilos CSS
 

@@ -226,7 +226,7 @@ Ahora vamos a crear un nuevo párrafo en el que colocar la imagen (en este ejemp
 
 El resultado en su navegador debería ser el siguiente:
 
-![Resultado de código HTML en el navegador](images/create_your_personal_webpage_3.png){.thumbnail}
+![Resultado de código HTML en el navegador](images/create_your_personal_webpage_3_es.png){.thumbnail}
 
 ### Dar formato a su contenido utilizando los estilos CSS
 

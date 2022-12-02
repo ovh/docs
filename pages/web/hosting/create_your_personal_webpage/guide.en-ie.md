@@ -14,8 +14,8 @@ Find out how to create the first page of a website on a Start 10M hosting plan, 
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-gb/domains/)
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) or a [Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
+- A [domain name](https://www.ovhcloud.com/en-ie/domains/)
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) or a [Start 10M hosting plan](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/)
 - A text editor (notebook, TextEdit, Notepad++, etc.)
 - An FTP client (such as [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) installed to transfer files to your hosting storage space
 
@@ -170,7 +170,7 @@ You can see the result in your browser: by default, list items are displayed wit
 
 #### Add pictures to make your page more attractive
 
-The web is primarily a visual medium. In this section, we will look at how to insert images into your content. Start 10M comes with 10 MB of storage. This is enough for your HTML and CSS pages, but it can be limited if you want to put a lot of images on your site. If this is the case, we recommend opting for an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), as this would give you more storage.
+The web is primarily a visual medium. In this section, we will look at how to insert images into your content. Start 10M comes with 10 MB of storage. This is enough for your HTML and CSS pages, but it can be limited if you want to put a lot of images on your site. If this is the case, we recommend opting for an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/), as this would give you more storage.
 
 The HTML tag used to display an image is the `<img>` tag. Unlike the tags we saw earlier, there is no opening and closing of this item. We'll call it a self-closing tag. The attributes of this tag will provide the link to the file location and the descriptive text of the image.
 
@@ -362,24 +362,24 @@ Links to navigate a site from page to page are essential elements of the Web. To
 We can do it the same way to make text interactive:
 
 ```html
-<p>Offer <a href="https://www.ovhcloud.com/en-gb/domains/">domain name</a> includes:</p>
+<p>Offer <a href="https://www.ovhcloud.com/en-ie/domains/">domain name</a> includes:</p>
 ```
 
 To display the link target in a new tab, simply add a `target` attribute to your `<a>` tag:
 
 ```html
-<p>Offer <a href="https://www.ovhcloud.com/en-gb/domains/" target="_blank">domain name</a> includes:</p>
+<p>Offer <a href="https://www.ovhcloud.com/en-ie/domains/" target="_blank">domain name</a> includes:</p>
 ```
 
 ### How do I store content on my hosting plan?
 
-To make your pages, and therefore your website, visible to everyone, you will need to upload them to your hosting plan (you will need to activate your hosting plan [as detailed in this guide](https://docs.ovh.com/gb/en/hosting/activate-start10m/)).
+To make your pages, and therefore your website, visible to everyone, you will need to upload them to your hosting plan (you will need to activate your hosting plan [as detailed in this guide](https://docs.ovh.com/ie/en/hosting/activate-start10m/)).
 
 You can transfer files via a dedicated protocol: **FTP** (for **F**ile **T**ransfer **P**rotocol) Use dedicated software for this operation, such as [FileZilla](https://filezilla-project.org/download.php?type=client) or [Cyberduck](https://cyberduck.io/download/).
 
 ### Deploy your website in FTP
 
-To upload your files to your hosting, please refer to our guide on [using FileZilla](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/).
+To upload your files to your hosting, please refer to our guide on [using FileZilla](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/).
 
 Once the files have been transferred to your web hosting plan, you can view the results by typing your domain name in the address bar of your browser, or by pressing the `F5` key on your keyboard to reload the page if you are already on your website.
 
@@ -438,8 +438,8 @@ You will also find online resources:
 - [Free Online Image Optimiser](https://kraken.io/web-interface)
 - [TinyJPG](https://tinyjpg.com/) and [TinyPNG](https://tinypng.com/).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

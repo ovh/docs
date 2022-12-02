@@ -226,7 +226,7 @@ Teraz utworzymy nowy punkt, w którym umieścimy obraz (w tym przykładzie nie o
 
 Wynik w przeglądarce powinien być następujący:
 
-![Wynik kodu HTML w przeglądarce](images/create_your_personal_webpage_3.png){.thumbnail}
+![Wynik kodu HTML w przeglądarce](images/create_your_personal_webpage_3_pl.png){.thumbnail}
 
 ### Aplikuj na Twoje treści korzystając ze stylów CSS
 

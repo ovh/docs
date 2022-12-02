@@ -226,7 +226,7 @@ Ora creeremo un nuovo paragrafo in cui inseriremo l'immagine (in questo esempio 
 
 Il risultato sul tuo browser dovrebbe essere :
 
-![Risultato del codice HTML sul browser](images/create_your_personal_webpage_3.png){.thumbnail}
+![Risultato del codice HTML sul browser](images/create_your_personal_webpage_3_it.png){.thumbnail}
 
 ### Applica una forma al tuo contenuto grazie agli stili CSS
 

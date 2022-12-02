@@ -226,7 +226,7 @@ Wir werden nun einen neuen Absatz erstellen, in dem wir das Bild eintragen (in d
 
 Das Ergebnis für Ihren Browser sollte sein:
 
-![HTML-Code-Ergebnis im Browser](images/create_your_personal_webpage_3.png){.thumbnail}
+![HTML-Code-Ergebnis im Browser](images/create_your_personal_webpage_3_de.png){.thumbnail}
 
 ### Gestalten Sie Ihren Inhalt mit CSS-Stilen
 
