@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 10/09/2021**
+**Última atualização: 02/12/2022**
 
 
 ## Sumário
@@ -44,7 +44,7 @@ Na etapa seguinte, tome nota da informação relativa ao preço e depois clique 
 
 ### Passo 2: Obter um snapshot
 
-Uma vez ativada esta opção, clique em `...`{.action} junto à opção "Snapshot" e no respetivo menu clique em `Obter snapshot`{.action}. O processo de criação de um snapshot pode demorar alguns minutos. No final, o tempo de duração será indicado na caixa “Sumário de opções”.
+Uma vez ativada esta opção, clique em `...`{.action} junto à opção "Snapshot" e no respetivo menu clique em `Obter snapshot`{.action}. A duração da criação da snapshot depende do espaço de armazenamento utilizado. No final, o tempo de duração será indicado na caixa “Sumário de opções”.
 
 ### Passo 3: Apagar/restaurar um snapshot
 

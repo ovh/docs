@@ -10,7 +10,7 @@ order: 1
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 10/09/2021**
+**Ultimo aggiornamento: 02/12/2022**
 
 
 ## Obiettivo
@@ -44,7 +44,7 @@ Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ord
 
 ### Step 2: Acquisire uno snapshot
 
-Una volta attivata l’opzione, clicca su `...`{.action} accanto all’opzione "Snapshot" e nel menu a scelta rapida clicca su `Scatta uno snapshot`{.action}. Per ottenere uno snapshot potrebbero essere necessari alcuni minuti. In seguito, nel riquadro “Sintesi opzioni” appariranno la data e l’ora dello scatto.
+Una volta attivata l’opzione, clicca su `...`{.action} accanto all’opzione "Snapshot" e nel menu a scelta rapida clicca su `Scatta uno snapshot`{.action}. La durata della creazione dello Snapshot dipende dallo spazio di storage utilizzato. In seguito, nel riquadro “Sintesi opzioni” appariranno la data e l’ora dello scatto.
 
 ### Step 3: Cancellare/ripristinare uno snapshot
 
