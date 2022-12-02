@@ -181,46 +181,6 @@ UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 
 Save and exit the editor. The disk should be automatically mounted after every reboot from now on.
 
-### Detach the volume
-
-If you wish to detach a volume from your instance, the best practice is to unmount the volume in the operating system before detaching it from the instance.
-
-Establish an [SSH connection to your instance](../public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
-
-```bash
-~$ admin@server-1:~$ lsblk
-
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 254:0 0 10G 0 disk
-└─vda1 254:1 0 10G 0 part /
-vdb       8:0    0   10G  0 disk
-└─vdb1    8:1    0   10G  0 part /mnt/disk
-```
-
-Unmount the partition using the command below:
-
-```bash
-~$ admin@server-1:~$ sudo umount /dev/sdb1
-```
-
-Remove the device ID from the fstab to complete the unmount process, if this is not done, the partition will be mounted right back after a reboot.
-
-```bash
-~$ admin@server-1:~$ sudo nano /etc/fstab
-```
-
-Save and exit the editor.
-
-Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage**.
-
-Click on the `...`{.action} next to the corresponding volume and select `Detach from instance`{.action}.
-
-![detach disk](images/detachinstance.png){.thumbnail}
-
-Click on `Confirm`{.action} in the pop up window to start the process.
-
-![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
-
 #### Using Windows
 
 Establish a remote desktop (RDP) connection to your Windows instance.
@@ -343,9 +303,49 @@ In the last window, click `Finish`{.action} to format the disk.
 
 The disk will be available as a drive in File Explorer after the operation.
 
-### Detach the volume
+### Detach a volume
 
-If you wish to detach a volume from your instance, the best practice is to unmount the volume from within the instance before detaching it from your control panel.
+If you wish to detach a volume from your instance, the best practice is to unmount the volume in the operating system before detaching it from the instance.
+
+#### On Linux
+
+Establish an [SSH connection to your instance](../public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
+
+```bash
+~$ admin@server-1:~$ lsblk
+
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda 254:0 0 10G 0 disk
+└─vda1 254:1 0 10G 0 part /
+vdb       8:0    0   10G  0 disk
+└─vdb1    8:1    0   10G  0 part /mnt/disk
+```
+
+Unmount the partition using the command below:
+
+```bash
+~$ admin@server-1:~$ sudo umount /dev/sdb1
+```
+
+Remove the device ID from the fstab to complete the unmount process, if this is not done, the partition will be mounted right back after a reboot.
+
+```bash
+~$ admin@server-1:~$ sudo nano /etc/fstab
+```
+
+Save and exit the editor.
+
+Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage**.
+
+Click on the `...`{.action} next to the corresponding volume and select `Detach from instance`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Click on `Confirm`{.action} in the pop up window to start the process.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
+
+#### On Windows
 
 Establish a remote desktop (RDP) connection to your Windows instance.
 
