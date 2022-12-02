@@ -75,7 +75,7 @@ Repita el procedimiento descrito en este apartado para crear las cuentas que des
 
 Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web Access (OWA)"](https://docs.ovh.com/es/emails/uso-outlook-en-la-web/){.external}.
+La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web App (OWA)"](https://docs.ovh.com/es/emails/uso-outlook-en-la-web/){.external}.
 
 ![Correo electrónico](images/mxplan-creation-new-step5.png){.thumbnail}
 

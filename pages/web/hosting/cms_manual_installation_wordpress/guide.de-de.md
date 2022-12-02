@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Manuelle Installation von WordPress"
 slug: cms_manually_install_wordpress
-excerpt: "Erfahren Sie hier, wie Sie Ihr WordPress CMS selbst installieren"
+excerpt: "Erfahren Sie hier, wie Sie Ihr WordPress CMS eigenständig installieren"
 section: CMS
 order: 04
 ---
@@ -39,7 +39,7 @@ Dieses Tutorial hilft Ihnen bei der manuellen Installation eines WordPress CMS (
 
 ### Schritt 1 - Installation vorbereiten <a name="step1"></a> 
 
-Um das CMS **WordPress** auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot zu installieren, sind einige Vorbereitungen erforderlich.
+Um das CMS **WordPress** auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu installieren, sind einige Vorbereitungen erforderlich.
 
 #### 1.1 - Das Wurzelverzeichnis auswählen
 

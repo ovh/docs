@@ -76,7 +76,7 @@ Repita este passo sempre que necessário, de acordo com o número de contas disp
 
 Aceda à página “[Ligação ao webmail](https://www.ovhcloud.com/pt/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
-Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual "[Utilizar um endereço de e-mail a partir do Outlook Web Access (OWA)](https://docs.ovh.com/pt/emails/utilizacao-owa/){.external}".
+Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual "[Utilizar um endereço de e-mail a partir do Outlook Web App (OWA)](https://docs.ovh.com/pt/emails/utilizacao-owa/){.external}".
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 

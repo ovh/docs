@@ -62,7 +62,7 @@ Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action} 
 
 Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. Para ello, puede utilizar el webmail o configurar la cuenta en un dispositivo.
 
-##### 3.1. Utilizar el webmail Outlook Web Access (OWA)
+##### 3.1. Utilizar el webmail Outlook Web App (OWA)
 
 Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 

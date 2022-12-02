@@ -10,7 +10,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia: 10-09-2021**
+**Ostatnia aktualizacja z dnia: 02-12-2022**
 
 
 ## Wprowadzenie
@@ -44,7 +44,7 @@ W następnym kroku przeczytaj informację o cenie i kliknij pozycję `Zamów`{.a
 
 ### Krok 2: tworzenie migawki
 
-Po włączeniu opcji kliknij ikonę `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Utwórz migawkę`{.action}. Utworzenie migawki może zająć kilka minut. Po utworzeniu migawki w obszarze “Podsumowanie opcji” pojawi się jej znacznik czasu.
+Po włączeniu opcji kliknij ikonę `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Utwórz migawkę`{.action}. Czas tworzenia snapshota zależy od użytej przestrzeni dyskowej. Po utworzeniu migawki w obszarze “Podsumowanie opcji” pojawi się jej znacznik czasu.
 
 ### Krok 3: usuwanie / przywracanie migawki
 

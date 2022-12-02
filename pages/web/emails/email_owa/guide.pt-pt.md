@@ -1,5 +1,5 @@
 ---
-title: 'Utilizar o endereço de e-mail a partir do webmail Outlook Web Access (OWA)'
+title: 'Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)'
 slug: utilizacao-owa
 excerpt: 'Saiba como utilizar o seu endereço de e-mail a partir do webmail OWA'
 section: Introdução

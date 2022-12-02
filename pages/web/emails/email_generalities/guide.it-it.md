@@ -66,7 +66,7 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la co
 
 #### Utilizza i tuoi indirizzi email
 
-Una volta creati gli account non ti resta che utilizzarli utilizzando la Webmail Outlook Web Access (OWA) o il software che preferisci.
+Una volta creati gli account non ti resta che utilizzarli utilizzando la Webmail Outlook Web App (OWA) o il software che preferisci.
 
 ##### **1. Webmail Outlook on the web**
 

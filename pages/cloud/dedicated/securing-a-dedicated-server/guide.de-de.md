@@ -193,7 +193,7 @@ Die reine Basisdistribution wird mit einem Firewall-Dienst namens Iptables gelie
 iptables -L
 ```
 
-Es wird empfohlen, die Regeln dieser Firewall zu erstellen und an Ihre Bedürfnisse anzupassen. Für weitere Informationen zur Konfiguration von Iptables lesen Sie bitte die offizielle Dokumentation Ihrer Linux-Distribution.
+Es wird empfohlen, die Regeln dieser Firewall zu erstellen und an Ihre Bedürfnisse anzupassen. Für weitere Informationen zur Konfiguration von Iptables lesen Sie [unsere Anleitung](https://docs.ovh.com/de/dedicated/firewall-iptables/) und die offizielle Dokumentation Ihrer Linux-Distribution.
 
 
 ### OVHcloud Network Firewall konfigurieren
@@ -214,7 +214,7 @@ Das Konzept der Sicherheit ist nicht auf den Schutz eines Systems vor Angriffen 
 
 Außerdem benötigen Sie eine zusätzliche Backup-Lösung, um Ihre Daten zu replizieren und auf Ihren Backup-Speicher zu übertragen.
 
-Für weitere Informationen zu unseren Storage-Angeboten lesen Sie unsere [Anleitung](https://docs.ovh.com/gb/en/dedicated/services-backup-storage/){.external} zum Thema (Englisch).
+Für weitere Informationen zu unseren Storage-Angeboten lesen Sie [unsere Anleitung](https://docs.ovh.com/gb/en/dedicated/services-backup-storage/){.external} zum Thema (Englisch).
 
 
 ## Weiterführende Informationen

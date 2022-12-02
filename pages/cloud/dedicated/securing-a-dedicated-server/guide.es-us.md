@@ -194,7 +194,7 @@ La distribución de base dispone de un servicio de firewall llamado iptables. Po
 iptables -L
 ```
 
-Le recomendamos que cree y adapte las reglas del firewall en función de su uso. Para más información sobre la configuración de iptables, consulte la documentación oficial de su distribución Linux.
+Le recomendamos que cree y adapte las reglas del firewall en función de su uso. Para más información sobre la configuración de iptables, consulte [nuestra guía](https://docs.ovh.com/us/es/dedicated/firewall-iptables/) y la documentación oficial de su distribución Linux.
 
 
 ### Configurar el firewall de red de OVHcloud

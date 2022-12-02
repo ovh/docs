@@ -180,7 +180,7 @@ Once you have completed these changes, restart the service using this command:
 /etc/init.d/fail2ban restart
 ```
 
-For any additional queries and information concerning Fail2Ban, please refer to the official documentation for this tool: <https://www.fail2ban.org/wiki/index.php/Main_Page>.
+For any additional queries and information concerning Fail2Ban, please refer to our guide and the official documentation for this tool: <https://www.fail2ban.org/wiki/index.php/Main_Page>.
 
 ### Configure the internal firewall: iptables
 
@@ -190,7 +190,7 @@ The bare-metal distribution comes with a firewall service named iptables. By def
 iptables -L
 ```
 
-It is recommended that you create and adjust the rules on this firewall to fit your needs. For more detailed information on how to configure the iptables, please refer to the official documentation of your Linux distribution.
+It is recommended that you create and adjust the rules on this firewall to fit your needs. For more detailed information on how to configure the iptables, please refer to [our guide](https://docs.ovh.com/gb/en/dedicated/firewall-iptables/) and the official documentation of your Linux distribution.
 
 ### Configure the OVHcloud Network Firewall
 
