@@ -6,7 +6,7 @@ section: AI Deploy - Tutorials
 order: 09
 ---
 
-**Last updated 28th November, 2022.**
+**Last updated 2nd December, 2022.**
 
 > [!primary]
 >
@@ -14,7 +14,6 @@ order: 09
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
-
 
 ![Overview](images/speech-to-text.png){.thumbnail}
 
@@ -24,19 +23,21 @@ The purpose of this documentation is to **Deploy the Speech to Text Application*
 
 Deploying your app will allow you to benefit from **very powerful resources** which will make the speech to text application extremely fast. It can also be easily shared, unlike a local application.
 
-Here, the use case is **English Speech Recognition**, but you can choose another model as explained in the blog articles. Some models work with Chinese, French, German, Japanese, Russian, ... 
+Here, the use case is **English Speech Recognition**, but you can choose another model as explained in the blog articles. Some models work with Chinese, French, German, Japanese, Russian, etc.
 
 Overview of the Speech to text app:
+
 ![Overview](images/speech-to-text-app-overview.png){.thumbnail}
 
 ## Requirements
+
 To deploy your app, you need:
+
 - An access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 - An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - A [user for AI Deploy](https://docs.ovh.com/gb/en/publiccloud/ai/users/).
-- [The OVHcloud AI CLI](https://cli.bhs.training.ai.cloud.ovh.net/) **and** [Docker](https://www.docker.com/get-started) installed on your local computer, **or** only an access to a Debian Docker Instance on the [Public Cloud](https://www.ovh.com/manager/public-cloud/)
+- [The OVHcloud AI CLI](https://cli.bhs.training.ai.cloud.ovh.net/) **and** [Docker](https://www.docker.com/get-started) installed on your local computer, **or** only an access to a Debian Docker Instance on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
 - To deploy your app, you must have the full code of the application, either by cloning the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), or by having followed the blog articles that taught you how to build this app step by step.
-
 
 ## Instructions
 
@@ -91,7 +92,7 @@ This file should start with the `FROM` instruction, indicating the parent image 
 FROM python:3.8
 ```
 
-We recommend that you do not downgrade the version of python. Indeed, reporting to *pyannote.audio's* [documentation](https://github.com/pyannote/pyannote-audio), only python 3.8+ is officially supported for the moment.
+We recommend that you do not downgrade the version of python. Indeed, according to *pyannote.audio's* [documentation](https://github.com/pyannote/pyannote-audio), only python 3.8+ is officially supported for the moment.
 
 Then, define the home directory and add all your files (python scripts, requirements.txt, packages.txt, and the Dockerfile) to it thanks to the following commands:
 
@@ -129,6 +130,7 @@ ENV HOME=/workspace
 ```
 
 ### Build the Docker image from the Dockerfile
+
 Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, packages.txt, Dockerfile, python files). 
 
 Once you are in it, launch the following command to build your application image:
@@ -163,7 +165,7 @@ Log in on your shared registry with your usual OpenStack credentials:
 docker login -u <user> -p <password> <shared-registry-address>
 ```
 
-Tag the compiled image and Push it into your shared registry:
+Tag the compiled image and push it into your shared registry:
 
 ```console
 docker tag streamlit_app:latest <shared-registry-address>/streamlit_app:latest
@@ -171,6 +173,7 @@ docker push <shared-registry-address>/streamlit_app:latest
 ```
 
 ### Import the models and save them locally (Optional)
+
 As we explained in the blog articles, you will considerably reduce the initialization time of the app if you download the models and store them in a local folder. This will allow you not to have to download them again every time you relaunch the application. 
 
 To do this, we will use **AI Training**. This will allow us to launch a python script from *GitHub* that will **download the models and store them in an OVHcloud volume** named `speech_to_text_app_models`. 
@@ -186,14 +189,14 @@ ovhai job run <shared-registry-address>/streamlit_app:latest \
     --volume speech_to_text_app_models@GRA/:/workspace/speech_to_text_app_models:RW \
     --volume https://github.com/ovh/ai-training-examples.git:/workspace/github_repo:rw \
     -- bash -c 'python /workspace/github_repo/apps/streamlit/speech-to-text/download_models.py'
-```   
+```
 
 > [!primary]
 > `streamlit_app:latest` corresponds to the name of your Docker image.
 >
 > `--volume` allows you to specify what volume you want to add to your job. As mentioned, we add the volume `speech_to_text_app_models` and we put it in `RW` (read and write) mode since we want to add our models to this volume. If you do not have this volume in your Object Storage list, do not worry, it will be created automatically. As you can see, the `--volume` parameter also allows you to get files from a GitHub repository, which in our case contains the script to download the models.
 > 
->  `--bash` allows you to provide commands through which you install the librairies mentioned in your `requirements.txt` file, and run the python script.
+> `--bash` allows you to provide commands through which you install the librairies mentioned in your `requirements.txt` file, and run the python script.
 >
 
 When you run this command, an `Info url` will appear. Opening it will allow you to **track the status of the job**.
