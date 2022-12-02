@@ -181,9 +181,9 @@ UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 
 Save and exit the editor. The disk should be automatically mounted after every reboot from now on.
 
-### Detach a volume
+### Detach the volume
 
-If you wish to detach a volume from your instance, the best practice is to unmount the volume from within the instance before detaching it from your control panel.
+If you wish to detach a volume from your instance, the best practice is to unmount the volume in the operating system before detaching it from the instance.
 
 Establish an [SSH connection to your instance](../public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
 
@@ -343,7 +343,7 @@ In the last window, click `Finish`{.action} to format the disk.
 
 The disk will be available as a drive in File Explorer after the operation.
 
-### Detach a volume
+### Detach the volume
 
 If you wish to detach a volume from your instance, the best practice is to unmount the volume from within the instance before detaching it from your control panel.
 
