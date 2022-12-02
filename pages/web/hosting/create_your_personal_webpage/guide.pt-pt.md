@@ -423,7 +423,7 @@ Encontrará muitos recursos na web para aprender e melhorar a sua prática, copi
 - [Começar com o HTML](https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 - [Guia de referência sobre as balizas HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [Tutorial W3Schools no HTML](https://www.w3schools.com/html/)
-- [Tutoriais CSS Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Tutorials)
+- [Tutoriais CSS Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/CSS/)
 - [CSS Tutorial W3 Schools](https://www.w3schools.com/css/).
 
 ### Reiniciar as suas imagens
