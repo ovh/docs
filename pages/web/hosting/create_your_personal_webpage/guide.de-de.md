@@ -213,7 +213,7 @@ Wir werden nun einen neuen Absatz erstellen, in dem wir das Bild eintragen (in d
     <p>
         <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
     </p>
-    <p>OVHcloud bietet Ihnen auf seinem Start 10M Angebot kostenlos ein Hosting für jeden Kauf einer Domain an.</p>
+    <p>OVHcloud bietet Ihnen das Start 10M Hosting kostenlos beim Kauf einer Domain an.</p>
     <p>Das Angebot "Domainname" umfasst:</p>
     <ul>
         <li>Webhosting 10 MB gratis</li>
