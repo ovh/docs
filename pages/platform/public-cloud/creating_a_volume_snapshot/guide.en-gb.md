@@ -28,7 +28,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-In the row of the volume concerned, click on `...`{.action} and select `Create a snapshot`{.action}. (It is not required to detach the volume from its instance first.)
+In the row of the volume concerned, click on `...`{.action} and select `Create a snapshot`{.action}. (It is not required to detach the volume from its instance first. However, if you wish to detach your volume first before creating the snapshot, please consult this [section](../create_and_configure_an_additional_disk_on_an_instance/detach-the-volume/#on-linux) of the corresponding guide for linux and this [section](../create_and_configure_an_additional_disk_on_an_instance/detach-the-volume/#on-windows) for windows.
 
 ![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
 
