@@ -106,6 +106,6 @@ Wiadomości błędnie oznaczonych jako spam (tzw. fałszywie pozytywnych) nie mo
 
 [Exchange 2016: współdzielenie kalendarza w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
 
-[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web Access (OWA)](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

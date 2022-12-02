@@ -10,14 +10,14 @@ order: 01
 
 ## Objective
 
-If you have activated an OVHcloud Web Hosting plan, you can have email addresses, which can be used to send and receive messages from any device. 
+If you have activated an OVHcloud web hosting plan, you can have email addresses, which can be used to send and receive messages from any device. 
 
 **This guide describes the first steps with an OVHcloud email solution.**
 
 ## Requirements
 
-- an MX plan solution, available via a [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- An MX plan solution, available with a [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
@@ -63,7 +63,7 @@ Once you have completed the text fields, click `Next`{.action} and then check th
 
 Once you have configured your email addresses, you can start using them straight away. There are two ways you can do this.
 
-##### 1. Use Outlook Web Access (OWA) webmail.
+##### 1. Use Outlook Web App (OWA) webmail.
 
 Go to the [Webmail login](https://www.ovh.com/sg/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button.
 

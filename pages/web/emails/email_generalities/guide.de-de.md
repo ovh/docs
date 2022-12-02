@@ -20,14 +20,14 @@ Mit der MX Plan Lösung verfügen Sie über E-Mail-Adressen, mit denen Sie Nachr
 
 ## Voraussetzungen
 
- - Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder als Teil eines kostenlosen [Start 10M Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+- Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder als Teil eines kostenlosen [Start 10M Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
-Sobald das MX Plan Angebot erstellt und verfügbar ist, können Sie es über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten. Je nach Aktivierungsdatum oder falls Ihr Dienst [vor Kurzem migriert wurde](https://www.ovh.de/mxplan-migration/), verfügen Sie entweder über den MX Plan *Legacy* oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion.
+Sobald der MX Plan erstellt und verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten. Je nach Aktivierungsdatum oder falls Ihr Dienst [vor Kurzem migriert wurde](https://www.ovh.de/mxplan-migration/), verfügen Sie entweder über den MX Plan *Legacy* oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion.
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plans. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
 |MX Plan Legacy|MX Plan neuere Version|
 |---|---|
@@ -62,9 +62,9 @@ Wenn Sie die Felder ausgefüllt haben, klicken Sie auf `Weiter`{.action} und üb
 
 ![E-Mail](images/mxplan-starter-new-step3.png){.thumbnail}
 
-#### E-Mail-Adressen verwenden
+#### E-Mail-Accounts verwenden
 
-Sobald Ihre E-Mail-Adressen angelegt wurden, können Sie diese verwenden. Hierfür stehen Ihnen zwei Möglichkeiten zur Verfügung: Sie können das Outlook Webmail (OWA) oder einen E-Mail-Client Ihrer Wahl verwenden.
+Sobald Ihre E-Mail-Accounts angelegt wurden, können Sie diese verwenden. Hierfür stehen Ihnen zwei Möglichkeiten zur Verfügung: Sie können das Outlook Webmail (OWA) oder einen E-Mail-Client Ihrer Wahl verwenden.
 
 ##### **1. Webmail (OWA) verwenden**
 
@@ -84,7 +84,7 @@ Um Ihren Mailaccount mit einer E-Mail-Software zu verwenden, müssen Sie diese E
 |[Thunderbird Windows](https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-windows/)|[Outlook Mac OS](https://docs.ovh.com/de/emails/konfiguration-outlook-2016-mac/)|[Mail für iPhone oder iPad](https://docs.ovh.com/de/emails/mail-konfiguration-iphone-ios-91/)|
 |||[Thunderbird Mac OS](https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-mac/)|
 
-Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihrer E-Mail-Adresse benötigen, verwenden Sie die folgenden Werte:
+Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihres E-Mail-Accounts benötigen, verwenden Sie die folgenden Werte:
 
 - **IMAP-Konfiguration (empfohlen)**
 
@@ -102,14 +102,14 @@ Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihrer E-Mail-Adresse ben�
 
 > [!warning]
 >
-> Sollten Sie Schwierigkeiten bei der Konfiguration der E-Mail-Adresse auf Ihrem Gerät haben, verwenden Sie unsere [Konfigurationsanleitungen](../) oder wenden Sie sich an den Anbieter der Software oder des Geräts.
+> Sollten Sie Schwierigkeiten bei der Konfiguration des E-Mail-Accounts auf Ihrem Gerät haben, verwenden Sie unsere [Konfigurationsanleitungen](../) oder wenden Sie sich an den Anbieter der Software oder des Geräts.
 >
 
 #### Erweiterte Funktionen
 
 ##### **Sicherheitsrichtlinie**
 
-Um die Zugriffssicherheit auf Ihre E-Mail-Adressen zu erhöhen, können Sie Sicherheitseinstellungen für Ihre MX Plan Lösung vornehmen.
+Um die Zugriffssicherheit auf Ihre E-Mail-Accounts zu erhöhen, können Sie Sicherheitseinstellungen für Ihre MX Plan Lösung vornehmen.
 
 Folgen Sie dazu unserer Anleitung "[Sicherheitseinstellungen eines E-Mail-Dienstes verwalten](https://docs.ovh.com/de/microsoft-collaborative-solutions/passwort-sicherheitseinstellungen-verwalten/)".
 
@@ -167,7 +167,7 @@ Geben Sie hier die angeforderten Informationen ein.
 |---|---|  
 |Account-Name|Geben Sie die E-Mail-Adresse ein (zum Beispiel Vorname.Name). Der Domainname der E-Mail-Adresse wird automatisch angehängt.|  
 |Account-Beschreibung:|Geben Sie eine kurze Beschreibung ein, damit Sie diesen Account später von anderen Accounts in Ihrem OVHcloud Kundencenter unterscheiden können.|  
-|Account-Größe:|Wählen Sie die gewünschte Account-Größe aus. Hierbei handelt es sich um den Speicherplatz Ihrer E-Mail-Adresse zum Speichern von Nachrichten.|  
+|Account-Größe:|Wählen Sie die gewünschte Account-Größe aus. Hierbei handelt es sich um den Speicherplatz Ihres Accounts zum Speichern von Nachrichten.|  
 |Passwort|[Legen Sie ein Passwort fest](https://docs.ovh.com/de/customer/Passwort-verwalten/#in-der-praktischen-anwendung) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, ein neues zu generieren, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.|
 
 Wenn Sie die Felder ausgefüllt haben, klicken Sie auf `Weiter`{.action} und überprüfen Sie die in der Zusammenfassung angezeigten Informationen. Sind diese korrekt, klicken Sie auf `Bestätigen`{.action}. Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Accounts).

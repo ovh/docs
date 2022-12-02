@@ -83,7 +83,7 @@ Once you have done this, click the `Next`{.action} button, then click `Confirm`{
 
 Once you have changed your password, you can access your email address. There are two ways you can do this:
 
-- **Using webmail:** go to the [webmail login](https://www.ovh.com.au/mail/){.external} page, then enter your email address and new password. If you have just changed your password and the login fails, wait a few moments, then try to sign in again. To find out how to use your email address via OWA webmail, use our guide guide on [Using an email address via Outlook Web Access (OWA) webmail](../using-owa){.external}.
+- **Using webmail:** go to the [webmail login](https://www.ovh.com.au/mail/){.external} page, then enter your email address and new password. If you have just changed your password and the login fails, wait a few moments, then try to sign in again. To find out how to use your email address via OWA webmail, use our guide guide on [Using an email address via Outlook Web App (OWA) webmail](../using-owa){.external}.
 
 - **Using compatible email software:** you will need to enter the new password on all of the devices your email address is linked to. To do this, a window may appear automatically, prompting you to enter your password. Otherwise, you can [refer to our configuration guides](../) or contact the publisher of the software or application you are using, as the process may be specific to the tool.
 
