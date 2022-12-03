@@ -1,8 +1,8 @@
 ---
-title: 'Gestion du reboot de vos serveurs avec la fonction OLA'
-slug: api-partitioning
+title: 'Gestion du reboot de vos serveurs avec votre OVH Link Aggregation'
+slug: netboot OLA
 excerpt: ""
-section: ''
+section: 'Utilisation avancée'
 ---
 
 
