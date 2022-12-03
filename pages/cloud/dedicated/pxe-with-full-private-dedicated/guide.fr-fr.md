@@ -362,7 +362,12 @@ scan_delay 0
 
 
 
-### Mise en marche
+## Mise en marche
+
+
+Les sources qui ont servis d'exemple sont disponibles au téléchargement via ce <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/dedicated/pxe-with-full-private-dedicated/files/src.zip" download>ce lien</a>
+Elles pourront eventuellement servir de template si besoin.<br>
+
 
 Aperçu de ce que l'on obtiend à l'affichage lors d'un Netboot UEFI (par défaut):<br>
 correspond aux étape 1 à 7 <br>
