@@ -3,7 +3,6 @@ title: 'Gestion du reboot de vos serveurs avec OLA, l'agrégation privée activ�
 slug: netboot
 excerpt: 'Comment réaliser les redémarrages de vos solutions OVHcloud fonctionnant à travers l'OVH Link Aggregation'
 section: 'Utilisation avancée'
-order: 1
 ---
 
 
@@ -95,13 +94,6 @@ processus complet de démarrage Netboot:
 |14|chargement du système d'exploitation associé|
 |15|Système démarré|
 
-Aperçu de ce que l'on obtiend à l'affichage lors d'un Netboot UEFI (par défaut):<br>
-correspond aux étape 1 à 7
-![iPXE en action](images/animation.gif)
-
-
-correspond au résultat des étapes 8 à 13
-![rEFInd en action](images/rEFInd.png)
 
 
 > [!primary]
@@ -381,12 +373,14 @@ scan_delay 0
 #### Mise en marche
 
 Aperçu de ce que l'on obtiend à l'affichage lors d'un Netboot UEFI (par défaut):<br>
-correspond aux étape 1 à 7
+correspond aux étape 1 à 7 <br>
 ![iPXE en action](images/animation.gif)
 
 
-correspond au résultat des étapes 8 à 13
+correspond au résultat des étapes 8 à 13 <br>
 ![rEFInd en action](images/rEFInd.png)
+
+
 
 
 #### Optionnel
