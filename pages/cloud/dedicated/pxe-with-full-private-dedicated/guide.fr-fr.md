@@ -1,8 +1,8 @@
 ---
-title: ''
-slug: 
-excerpt: ""
-section: ''
+title: 'Gestion du reboot de vos serveurs avec OLA, l'agrégation privée activée'
+slug: Netoot
+excerpt: "Gestion du reboot de vos serveurs avec OLA, l'agrégation privée activée'"
+section: 'Utilisation avancée'
 ---
 
 
