@@ -1,8 +1,9 @@
 ---
 title: 'Gestion du reboot de vos serveurs avec OLA, l'agrégation privée activée'
 slug: netboot OLA
-excerpt: "Comment réaliser les redémarrages de vos solutions OVHcloud fonctionnant à travers l'OVH Link Aggregation"
+excerpt: 'Comment réaliser les redémarrages de vos solutions OVHcloud fonctionnant à travers l'OVH Link Aggregation'
 section: 'Utilisation avancée'
+order: 01
 ---
 
 
@@ -16,6 +17,7 @@ section: 'Utilisation avancée'
 Cette documentation à pour but de vous accompagner pour deployer tous les composants ou bien services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement dédié et **entièrement privé**.<br>
 Profiter d'une infrastructure privée sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
 
+
 > [!warning]
 >
 > Pour rappel, il est prohibé de modifier les configurations par défaut:<br>
@@ -27,7 +29,7 @@ Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous p
 Chaque serveur est muni au minimum de 2 interfaces réseaux, fonctionnants en réalité en liens aggrégés et assurant la redondance en cas de panne. <br>
 Vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit "public" et ceux, au contraire dit "privés" en passant par notre solution [vrack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
 
-Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode *full-private*, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
+Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **agrégation privée**, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
 Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
 
 La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
@@ -38,63 +40,24 @@ Mais dans ce cas, le mecanisme de démarrage de la solution se retrouve inopéra
 
 > [!primary]
 >
-> Ce qu'il faut savoir
-> * il existe 2 "types" de boot:<br>
->  * Legacy (version ancienne): représente les anciens BIOS avec fonctionnabilités sommmaires, et limitations de prise en compte avec des matériels récents.
->  * [UEFI](https://fr.wikipedia.org/wiki/UEFI) (version récente) qui répresente une version améliorée du mode Legacy.
-> 
-> * il existe 2 "types" de PXE:<br>
->  * PXE: utilisant un environnement standardisé client/serveur, basé sur quelques protocoles (BOOTP/DHCP/TFTP), afin de permettre un démarrage/deploiement via le réseau du système client.
->  * iPXE: utilisant un environnement standardisé client/serveur plus évolué, basé sur plus grand nombre de protocoles (HTTP,iSCSI, AoE, FCoE, Wi-Fi...), afin de permettre un démarrage/deploiement via le réseau du système client.
+>  il existe 2 "types" de PXE:<br>
+>  * PXE: utilisant un environnement standardisé client/serveur, basé sur les protocoles BOOTP/DHCP/TFTP, afin de permettre un démarrage/deploiement via le réseau du système client.
+>  * iPXE: utilisant un environnement standardisé client/serveur plus évolué, basé sur les protocoles HTTP,iSCSI, AoE, FCoE, Wi-Fi afin de permettre un démarrage/deploiement via le réseau du système client.
 
 definition du Netboot:
 
 * Mode de démarrage en PXE (solution de démarrage réseau bas niveau) via l'interface réseau d'une machine cliente active permettant de communiquer avec le serveur DHCP de ce même réseau.Ce mode est défini au préalable dans le bios de votre serveur via le "boot order".
 * Le serveur DHCP peut donc lui adresser les informations nécessaires, une adresse IP, un fichier PXE (sous forme de binaire executable), un script PXE. 
 * le serveur client va chercher à récupérer ce binaire en protocol TFTP, pour ensuite le charger dans sa configuration.
-* Le binaire récupéré et chargé en tant que firmware, peut donc désormais éxécuter le script associé qui contiendra les informations permettant la selection du type d'amorçage d'un systeme pour la machine cliente:<br>
+* Le binaire récupéré et chargé en tant que firmware, et peut donc désormais éxécuter le script associé qui contiendra les informations permettant la selection du type d'amorçage d'un systeme pour la machine cliente:<br>
   disque local, volume réseau, usb, etc...
-
-
-### Comment fonctionne le Netboot chez OVHcloud
-Nous avons pré-configurés la méthode de recherche d'amorçage des systèmes avec le Netboot (Network Boot) par défaut.
-
-Cette méthode, décrite précedement, consiste donc à lancer une séquence via l'interface réseau qui permet d'utiliser les services **mutualisés** DHCP, TFTP  et HTTP (via le réseau interne OVHcloud), afin de récupérer les fichiers de configuration adéquates qui seront utilisé par le système qui tente de démarrer.
-
-Le processus complet de démarrage aura comme instruction:
-
-* de vérifier l'origine et la bonne intégrité des fichiers à récupéré (via chaine de certification interne)
-* en fonction de type de serveur et du bios utilisé (legacy/UEFI), le script récupéré sera donc en fonction du mode détecté:<br>
-  PXE (pour le legacy) ou iPXE (utilisé avec l'UEFI).
-* le mode étant détecté, le script correspondant sera donc éxecuté et permettra l'amorçage du systeme d'exploitation installé au préalable.
-
-
-processus complet de démarrage Netboot:
-le cas avec l'**UEFI** est le cas par défaut et le plus courant, mais il existe des solutions plus ancienne en legacy.
-
-| étape | mode LEGACY | mode UEFI |
-|---|---|---|
-|1|boot en PXE|Boot en PXE|
-|2|requête vers DHCP|requête vers DHCP|
-|3|réponse/attribution IP|réponse/attribution IP|
-|4|requête pour récuperer le binaire iPXE|requête pour récuperer le binaire iPXE|
-|5|récupération du binaire en TFTP|récupération du binaire en TFTP|
-|6|chargement et initialisation|chargement et initialisation|
-|7|requête DHCP pour récupérer le script associé au binaire|requête DHCP pour récupérer le script associé au binaire|
-|8|récupération du script PXE|récupération du script iPXE|
-|9|éxécution de commandes shell PXE|éxécution de commande shell iPXE|
-|10|commande `boot` lancée|commandes shell pour récuperer en HTTP les sources (binaire + fichier de config) pour le bootloader rEFInd|
-|11|fallback réalisé sur les disques locaux détectés|commande shell pour charger le binaire rEFInd|
-|12|chargement du systeme d'exploitation installé|le binaire rEFInd scanne les disques locaux pour charger/détecter les systèmes d'amorçages |
-|13|Système démarré |rEFInd utilise les secteurs d'amorçages présents|
-|14||chargement du système d'exploitation associé|
-|15||Système démarré|
 
 
 > [!primary]
 >
 > La description ici restera le plus générique possible pour rester claire, et ainsi ne pas ajouter des éléments ou contraintes techniques qui sortent du cadre de notre exemple, mais donnera une vision globale du principe de fonctionnement.
 >
+
 
 ## Prérequis
 
@@ -104,12 +67,47 @@ le cas avec l'**UEFI** est le cas par défaut et le plus courant, mais il existe
 cf images extraites du manager, ci-dessous:<br>
 onglet interfaces réseaux
 
-![OLA1](images/Scr_OLA1.png)
-![OLA2](images/Scr_OLA2.png)
+![OLA1](images/Scr_OLA1.png){.thumbnail}
+![OLA2](images/Scr_OLA2.png){.thumbnail}
 
-* Un système dédié supplémentaire avec les interfaces réseaux configurées par défaut, à savoir, un accès au réseau public ainsi qu'à votre réseau privé. (qui hébergera les services DHCP et TFTP). Le système d'exploitation sera celui de votre choix.
+* Un système dédié supplémentaire avec les interfaces réseaux configurées par défaut, à savoir, un accès au réseau public ainsi qu'à votre réseau privé, qui hébergera tous les services (DHCP, TFTP et HTTP). Le système d'exploitation sera celui de votre choix.
 
 
+
+### Présentation rapide d'un démarrage en Netboot chez OVHcloud 
+processus complet de démarrage Netboot:
+
+| étape | description / détails |
+|---|---|
+|1|mode Netboot se lance|
+|2|requête vers DHCP (discover)|
+|3|réponse et attribution d'adresse IP (offer/request/ack)|
+|4|requête pour récuperer le binaire iPXE|
+|5|récupération du binaire en TFTP|
+|6|chargement et initialisation de l'interface réseau avec le nouveau firmware|
+|7|requête DHCP pour récupérer le script associé au binaire iPXE|
+|8|récupération du script iPXE|
+|9|éxécution des commandes shell iPXE associées|
+|10|commande shell pour récuperer en HTTP les sources (binaire + fichier de config) pour le bootloader rEFInd|
+|11|commande shell pour charger le binaire rEFInd|
+|12|le binaire rEFInd scanne les disques locaux pour détecter les secteurs d'amorçages |
+|13|rEFInd utilise les secteurs d'amorçages présents via son bootloader|
+|14|chargement du système d'exploitation associé|
+|15|Système démarré|
+
+Aperçu de ce que l'on obtiend à l'affichage lors d'un Netboot UEFI (par défaut):<br>
+correspond aux étape 1 à 7
+![iPXE en action](images/animation.gif)
+
+
+correspond au résultat des étapes 8 à 13
+![rEFInd en action](images/rEFInd.png)
+
+
+> [!primary]
+>
+> La description ici restera le plus générique possible pour rester claire, et ainsi ne pas ajouter des éléments ou contraintes techniques qui sortent du cadre de notre exemple, mais donnera une vision globale du principe de fonctionnement.
+>
 
 
 ## En pratique
@@ -128,7 +126,7 @@ exemple d'infrastructure privée basique (schéma layer 2):
 Exemple:
 
 * services hébergés/mutualisés sur *Node 0*.
-* une seule machine cliente *Node 1*.
+* une seule machine cliente *Node 1* en OLA.
 
 
 
@@ -141,9 +139,8 @@ En régle générale, il suffit de:<br>
 
 * déclarer une interface réseau pour l'écoute (en attente de requêtes).
 * préciser la version du protocol IP (v4 ou v6).
-* configurer/déclarer le subnet utilisé.
+* renseigner un fichier de configuration principale (à titre d'exemple, cf fichier ci-dessous)
 
-à titre d'exemple:
 ```bash
 default-lease-time 7200;
 max-lease-time 7200;
@@ -216,24 +213,18 @@ subnet 192.168.1.0 netmask 255.255.255.240 {
 
     if option arch = 00:07 { 			# Détermine le type d'architecture, ici 64bits
       if exists user-class and option user-class = "iPXE" {
-          filename "refind.pxe"; 		# Détermine le script iPXE correspondant
+          filename "refind.pxe"; 		# Détermine le script appelé par le binaire
       } else {
             filename "ipxe.efi"; 		# Détermine le binaire iPXE
-        }
+      }
 
-      } else if option arch = 00:06 { 		# Détermine le type d'architecture, ici 32bits
-          if exists  user-class and option user-class = "iPXE" {
-              filename "ipxe32.efi"; 		# Détermine le script iPXE correspondant
-          } else {
-              filename "ipxe.efi";		# Détermine le biniare iPXE si arch différente
-            }
-        } else {
-            if exists user-class and option user-class = "iPXE" {
-                filename "refind.pxe";
-            } else {
-                  filename "undionly.kpxe";	# Détermine le binaire dans le cas de LEGACY
-              }
-          }
+    } else if option arch = 00:06 { 		# Détermine le type d'architecture, ici 32bits
+      if exists  user-class and option user-class = "iPXE" {
+              filename "refind.pxe"; 		# Détermine le script appelé par le binaire
+      } else {
+              filename "ipxe32.efi";		# Détermine le binaire iPXE
+      }
+    }
 }
 
 # Declare each host here
@@ -245,7 +236,7 @@ host node_1 {
 
 Détails:
 
-* réseau privé (ex: 192.168.1.0/28).
+* réseau privé (ex: 192.168.1.0/28)
 * `subnet_mask` : 255.255.255.240
 * `broadcast_address` : 192.168.1.15
 * `dns_servers` : cf chapitre optionnel
@@ -254,7 +245,7 @@ Détails:
 * `next-server` : 192.168.1.1
 * `host` : nom machine cliente
 * `hardware ethernet` : adresse matérielle (MAC) machine cliente
-* `server-name` : ip machine cliente
+* `server-name` : hostname machine cliente
 
 
 
@@ -290,7 +281,7 @@ root@node_0:/srv/tftp# tree
 .
 |-- ipxe.efi
 |-- ipxe32.efi
-`-- undionly.kpxe
+`-- refind.kpxe 
 ```
 
 Contenu du fichier `refind.pxe`:
@@ -300,11 +291,10 @@ doit être déclaré/actif, le service http qui désservira les fichiers pour rE
 
 ```bash
 #!ipxe 
-#
+
 echo Boot to local disk
 
 set ressources-url http://192.168.1.1
-
 iseq ${platform} efi && goto is_efi_x86_64 || goto not_efi
 
 :not_efi
@@ -390,11 +380,16 @@ scan_delay 0
 
 #### Mise en marche
 
-screen
+Aperçu de ce que l'on obtiend à l'affichage lors d'un Netboot UEFI (par défaut):<br>
+correspond aux étape 1 à 7
+![iPXE en action](images/animation.gif)
+
+
+correspond au résultat des étapes 8 à 13
+![rEFInd en action](images/rEFInd.png)
 
 
 #### Optionnel
-
 
 > [!warning]
 > 
@@ -409,12 +404,18 @@ screen
 service DNS:<br>
 Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/etc/hosts`,ou bien utiliser, par exemple, un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
 
+service NTP:<br>
+Il est fortement conseillé d'utiliser un service DNS surtout si votre infrastructure comprends plusieurs machines.
 
-service NTP:
 
+> [!warning]
+>
+> Pour que ces services soient pleinement fonctionnels, penser à déclarer/ajouter les régles dans le firewall local de la machine hébergeant les services.
+>
 
-
+exemple avec la commande `iptables`:<br>
 ```bash
+
 # pour le service NTP
 iptables -I INPUT -i ethX -p udp --dport 123 -j ACCEPT
 
@@ -427,8 +428,12 @@ iptables -I INPUT -i ethX -p tcp --dport 53 -j ACCEPT
 
 ## Aller plus loin
 
+Comprendre et personnaliser votre service DHCP:<br>
 [dhcp](https://wiki.debian.org/fr/DHCP_Server)
+
 [ntp](https://fr.wikipedia.org/wiki/Network_Time_Protocol)
+
+Comprendre et personnaliser votre service rEFInd:<br>
 [rEFInd](https://fr.wikipedia.org/wiki/REFInd)
 
 
