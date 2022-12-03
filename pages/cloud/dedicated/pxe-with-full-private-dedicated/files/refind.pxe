@@ -1,0 +1,27 @@
+#!ipxe 
+
+echo Boot to local disk
+set ressources-url http://192.168.1.1
+iseq ${platform} efi && goto is_efi_x86_64 || goto not_efi
+
+:not_efi
+echo Legacy boot mode
+sleep 2
+goto LEGACY_BOOT_default
+
+#Boot the first local HDD
+:LEGACY_BOOT_default
+echo Executing sanboot
+sleep 2
+sanboot --no-describe --drive 0x80
+goto end
+
+:is_efi_x86_64
+echo EFI boot mode
+imgfetch --name refind.conf ${ressources-url}/refind.conf
+chain ${ressources-url}/refind_x64.efi
+
+:end
+echo Chain on hard drive failed
+sleep 10
+exit 1
