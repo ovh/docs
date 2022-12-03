@@ -25,30 +25,31 @@ Profiter d'une infrastructure privée sans avoir modifié la configuration par d
 
 Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.<br>
 Chaque serveur est muni au minimum de 2 interfaces réseaux, fonctionnants en réalité en liens aggrégés et assurant la redondance en cas de panne. <br>
-Vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit "public" et ceux, au contraire dit "privés" en passant par notre solution [vrack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
+Vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit *public* et ceux, au contraire dit *privés* en passant par notre solution [vrack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
 
-Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **agrégation privée**, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
+Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire ne possédant **uniquement** des réseaux privés.
 Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
 
 La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
-Mais dans ce cas, le mecanisme de démarrage de la solution se retrouve inopérant, à savoir que lorsque les systèmes sont démarrés, via une méthode **netboot** (Network Boot), ces derniers doivent obligatoirement récupèrer leur configurations via des services réseaux mutualisés présent sur le réseaux OVHcloud.
+Mais dans ce cas, le mecanisme de démarrage de la solution se retrouve inopérant, à savoir que lorsque les systèmes sont démarrés, via une méthode **netboot** (Network Boot), ces derniers doivent obligatoirement récupèrer leur configurations via des services réseaux mutualisés présent sur le réseaux interne d'OVHcloud.
 
 
 ### Présentation rapide d'un démarrage en Netboot 
 
 > [!primary]
 >
->  il existe 2 "types" de PXE:<br>
->  * PXE: utilisant un environnement standardisé client/serveur, basé sur les protocoles BOOTP/DHCP/TFTP, afin de permettre un démarrage/deploiement via le réseau du système client.
->  * iPXE: utilisant un environnement standardisé client/serveur plus évolué, basé sur les protocoles HTTP,iSCSI, AoE, FCoE, Wi-Fi afin de permettre un démarrage/deploiement via le réseau du système client.
+>  il existe 2 types de PXE:<br>
+>  PXE: utilisant un environnement standardisé client/serveur, basé sur les protocoles BOOTP/DHCP/TFTP, afin de permettre un démarrage/deploiement via le réseau du système client.<br>
+>  iPXE: utilisant un environnement standardisé client/serveur plus évolué, basé sur les protocoles HTTP,iSCSI, AoE, FCoE, Wi-Fi afin de permettre un démarrage/deploiement via le réseau du système client.
+> 
 
 definition du Netboot:
 
-* Mode de démarrage en PXE (solution de démarrage réseau bas niveau) via l'interface réseau d'une machine cliente active permettant de communiquer avec le serveur DHCP de ce même réseau.Ce mode est défini au préalable dans le bios de votre serveur via le "boot order".
-* Le serveur DHCP peut donc lui adresser les informations nécessaires, une adresse IP, un fichier PXE (sous forme de binaire executable), un script PXE. 
+* Mode de démarrage en PXE (solution de démarrage réseau bas niveau) via l'interface réseau d'une machine cliente active permettant de communiquer avec le serveur DHCP de ce même réseau.Ce mode est défini au préalable dans le bios de votre serveur via le menu *boot order*.
+* Le serveur DHCP peut donc lui adresser les informations nécessaires, une adresse IP, un fichier PXE (sous forme de binaire executable), ainsi qu'un script PXE.
 * le serveur client va chercher à récupérer ce binaire en protocol TFTP, pour ensuite le charger dans sa configuration.
 * Le binaire récupéré et chargé en tant que firmware, et peut donc désormais éxécuter le script associé qui contiendra les informations permettant la selection du type d'amorçage d'un systeme pour la machine cliente:<br>
-  disque local, volume réseau, usb, etc...
+disque local, volume réseau, usb, etc...
 
 
 > [!primary]
@@ -61,13 +62,11 @@ definition du Netboot:
 
 * Être connecté à [l'espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
 * Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
-* Avoir toutes les interfaces réseaux de ce serveur en réseau dit **privé**, ce qui sous-entend que vous avez au préalable configuré la fonction [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).
-cf images extraites du manager, ci-dessous:<br>
-onglet interfaces réseaux
+* Avoir toutes les interfaces réseaux de ce serveur en réseau dit **privé**, ce qui sous-entend que vous avez au préalable configuré la fonction [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
+images extraites du manager via l'onglet `Interfaces réseaux`{.action}, ci-dessous:<br>
 
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
 ![OLA2](images/Scr_OLA2.png){.thumbnail}
-
 * Un système dédié supplémentaire avec les interfaces réseaux configurées par défaut, à savoir, un accès au réseau public ainsi qu'à votre réseau privé, qui hébergera tous les services (DHCP, TFTP et HTTP). Le système d'exploitation sera celui de votre choix.
 
 
@@ -251,11 +250,12 @@ Par exemple: *tftp-server*, *tftpd*, *tftpd-hpa* ou encore *atftpd*.
 > 
 
 
-Ce qu'il faut savoir:
+Ce qu'il faut savoir:<br>
+
 * Ce service utilise le port 69 (UDP)
 * Il est obligatoire de déclarer un répertoire "cible", correspondant à une arboresence locale qui sera utilisée pour les réceptions et les téléchargments des fichiers.
 
-exemple de configuration avec le logiciel `tftpd-hpa`:
+exemple de configuration avec le logiciel `tftpd-hpa`:<br>
 
 ```bash
 # /etc/default/tftpd-hpa
@@ -275,10 +275,10 @@ root@node_0:/srv/tftp# tree
 `-- refind.kpxe 
 ```
 
-Contenu du fichier `refind.pxe`:
+Contenu du fichier `refind.pxe`:<br>
+
 doit être déclaré/actif, le service http qui désservira les fichiers pour rEFInd:<br>
 (le chemin choisi dans notre exemple sera  celui par défaut, à savoir `/var/www/` toujours sur le *Node_0*)
-
 
 ```bash
 #!ipxe 
@@ -324,14 +324,7 @@ exit 1
 > Plus d'informations si besoin à cette [adresse](https://ipxe.org/cmd/sanboot).
 >
 
-> [!warning]
->
-> il s'avère que celle-ci ne fonctionne pas en mode UEFI dans le SI d'OVHcloud
->
-
-
 A partir du moment où cette étape a été réalisée, le système d'exploitation peut débuter son chargement.
-
 
 
 
@@ -352,7 +345,7 @@ root@node_0:/var/www# tree
 
 contenu du fichier `refind.conf`
 
-Il s'agit d'intégrer les directives mimumun pour une bonne intégration au SI d'OVHcloud.
+Il s'agit d'intégrer les directives mimimun pour une bonne intégration au SI d'OVHcloud.
 ```bash
 
 timeout 1
@@ -369,7 +362,7 @@ scan_delay 0
 
 
 
-#### Mise en marche
+### Mise en marche
 
 Aperçu de ce que l'on obtiend à l'affichage lors d'un Netboot UEFI (par défaut):<br>
 correspond aux étape 1 à 7 <br>
@@ -421,13 +414,11 @@ iptables -I INPUT -i ethX -p tcp --dport 53 -j ACCEPT
 
 ## Aller plus loin
 
-Comprendre et personnaliser votre service DHCP:<br>
-[dhcp](https://wiki.debian.org/fr/DHCP_Server)
+Comprendre et/ou personnaliser votre service DHCP via ce [lien](https://wiki.debian.org/fr/DHCP_Server)
 
-[ntp](https://fr.wikipedia.org/wiki/Network_Time_Protocol)
+Comprendre ou découvrir NTP via ce [lien](https://fr.wikipedia.org/wiki/Network_Time_Protocol)
 
-Comprendre et personnaliser votre service rEFInd:<br>
-[rEFInd](https://fr.wikipedia.org/wiki/REFInd)
+Comprendre et/ou personnaliser votre service rEFInd via ce [lien](https://fr.wikipedia.org/wiki/REFInd)
 
 
 
