@@ -67,6 +67,7 @@ images extraites du manager via l'onglet `Interfaces réseaux`{.action}, ci-dess
 
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
 ![OLA2](images/Scr_OLA2.png){.thumbnail}
+
 * Un système dédié supplémentaire avec les interfaces réseaux configurées par défaut, à savoir, un accès au réseau public ainsi qu'à votre réseau privé, qui hébergera tous les services (DHCP, TFTP et HTTP). Le système d'exploitation sera celui de votre choix.
 
 
@@ -291,12 +292,6 @@ iseq ${platform} efi && goto is_efi_x86_64 || goto not_efi
 :not_efi
 echo Legacy boot mode
 goto LEGACY_BOOT_default
-
-:LEGACY_BOOT_boot
-echo Executing exit 0
-sleep 2
-boot
-goto end
 
 #Boot the first local HDD
 :LEGACY_BOOT_default
