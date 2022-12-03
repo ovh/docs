@@ -1,5 +1,5 @@
 ---
-title: 'Gestion du reboot de vos serveurs avec votre OVH Link Aggregation'
+title: 'Gestion du reboot de vos serveurs avec l'OVH Link Aggregation'
 slug: netboot OLA
 excerpt: "Comment réaliser les redémarrages de vos solutions OVHcloud fonctionnant à travers votre agrégation privée activée"
 section: 'Utilisation avancée'
