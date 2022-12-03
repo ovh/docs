@@ -19,8 +19,7 @@ Profiter d'une infrastructure privée sans avoir modifié la configuration par d
 
 > [!warning]
 >
-> Pour rappel, il est prohibé de modifier les configurations par défaut:<br>
-> configuration Bios, Boot Order, etc...
+> Pour rappel, il est prohibé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
 > Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres de critères de fonctionnement bien définis, pour vous proposez des environnements techniques les mieux adaptés à votre matériel.
 >
 
