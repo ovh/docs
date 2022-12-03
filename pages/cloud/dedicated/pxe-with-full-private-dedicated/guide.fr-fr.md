@@ -1,6 +1,6 @@
 ---
 title: 'Gestion du reboot de vos serveurs avec OLA, l'agrégation privée activée'
-slug: Netoot
+slug: 
 excerpt: "Gestion du reboot de vos serveurs avec OLA, l'agrégation privée activée'"
 section: 'Utilisation avancée'
 ---
