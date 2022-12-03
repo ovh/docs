@@ -1,5 +1,5 @@
 ---
-title: 'Gestion du reboot de vos serveurs avec la fonction OLA'
+title: 'Gestion du reboot de vos serveurs avec la fonction OLA, l'agrégation privée activée'
 slug: api-partitioning
 excerpt: ""
 section: ''
