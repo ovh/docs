@@ -13,14 +13,14 @@ section: 'Utilisation avancée'
 > Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissance concernant le monde open source, ainsi que des notions d'administration.
 > 
 
-Cette documentation à pour but de vous accompagner pour deployer tous les composants ou bien services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement dédié et **entièrement privé**.<br>
+Cette documentation à pour but de vous accompagner pour deployer tous les composants, ou bien services nécessaires, au bon redémarrage de vos solutions OVHcloud en environnement dédié et **entièrement privé**.<br>
 Profiter d'une infrastructure privée sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
 
 
 > [!warning]
 >
 > Pour rappel, il est prohibé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
-> Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres de critères de fonctionnement bien définis, pour vous proposez des environnements techniques les mieux adaptés à votre matériel.
+> Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres de critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
 >
 
 Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.<br>
@@ -63,7 +63,7 @@ disque local, volume réseau, usb, etc...
 * Être connecté à [l'espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
 * Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
 * Avoir toutes les interfaces réseaux de ce serveur en réseau dit **privé**, ce qui sous-entend que vous avez au préalable configuré la fonction [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
-images extraites du manager via l'onglet `Interfaces réseaux`{.action}, ci-dessous:<br>
+images extraites du manager, via l'onglet `Interfaces réseaux`{.action}, du machine éligible à notre procédure:<br>
 
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
 ![OLA2](images/Scr_OLA2.png){.thumbnail}
@@ -71,23 +71,22 @@ images extraites du manager via l'onglet `Interfaces réseaux`{.action}, ci-dess
 * Un système dédié supplémentaire avec les interfaces réseaux configurées par défaut, à savoir, un accès au réseau public ainsi qu'à votre réseau privé, qui hébergera tous les services (DHCP, TFTP et HTTP). Le système d'exploitation sera celui de votre choix.
 
 
-
 ### Présentation rapide d'un démarrage en Netboot chez OVHcloud 
 processus complet de démarrage Netboot:
 
 | étape | description / détails |
 |---|---|
-|1|mode Netboot se lance|
-|2|requête vers DHCP (discover)|
-|3|réponse et attribution d'adresse IP (offer/request/ack)|
+|1|La machine client reçoit une demande de mise sous tension, le mode Netboot est sélectionné|
+|2|requête de l'interface réseau vers DHCP (discover)|
+|3|réponse et attribution d'une adresse IP via le DHCP(offer/request/ack)|
 |4|requête pour récuperer le binaire iPXE|
 |5|récupération du binaire en TFTP|
 |6|chargement et initialisation de l'interface réseau avec le nouveau firmware|
 |7|requête DHCP pour récupérer le script associé au binaire iPXE|
 |8|récupération du script iPXE|
-|9|éxécution des commandes shell iPXE associées|
+|9|éxécution des commandes shell iPXE associées au précédent script|
 |10|commande shell pour récuperer en HTTP les sources (binaire + fichier de config) pour le bootloader rEFInd|
-|11|commande shell pour charger le binaire rEFInd|
+|11|commande shell pour récupérer et éxécuter le binaire rEFInd|
 |12|le binaire rEFInd scanne les disques locaux pour détecter les secteurs d'amorçages |
 |13|rEFInd utilise les secteurs d'amorçages présents via son bootloader|
 |14|chargement du système d'exploitation associé|
@@ -278,7 +277,7 @@ root@node_0:/srv/tftp# tree
 
 Contenu du fichier `refind.pxe`:<br>
 
-doit être déclaré/actif, le service http qui désservira les fichiers pour rEFInd:<br>
+Le service http qui désservira les fichiers nécessaires pour rEFInd:<br>
 (le chemin choisi dans notre exemple sera  celui par défaut, à savoir `/var/www/` toujours sur le *Node_0*)
 
 ```bash
@@ -287,18 +286,7 @@ doit être déclaré/actif, le service http qui désservira les fichiers pour rE
 echo Boot to local disk
 
 set ressources-url http://192.168.1.1
-iseq ${platform} efi && goto is_efi_x86_64 || goto not_efi
-
-:not_efi
-echo Legacy boot mode
-goto LEGACY_BOOT_default
-
-#Boot the first local HDD
-:LEGACY_BOOT_default
-echo Executing sanboot
-sleep 2
-sanboot --no-describe --drive 0x80
-goto end
+iseq ${platform} efi && goto is_efi_x86_64 || goto end
 
 :is_efi_x86_64
 echo EFI boot mode
@@ -312,14 +300,13 @@ exit 1
 
 ```
 
+
+
 > [!primary]
 >
-> La syntaxe [sanboot](https://ipxe.org/cmd/sanboot) permet de forcer le fallback vers les disques durs locaux.<br>
-> En effet, il est connu que cette méthode, prévu initialement pour chercher divers volumes sur le réseaux, sert à initier le boot en utiliser les disques locaux.<br>
-> Plus d'informations si besoin à cette [adresse](https://ipxe.org/cmd/sanboot).
->
-
-A partir du moment où cette étape a été réalisée, le système d'exploitation peut débuter son chargement.
+> Nous prenons en considération dans notre exemple que les cas ou votre architecture sera en 32bits ou bien 64bits.
+> Ce qui réprésentera la très grande majorité des cas rencontrés.
+> 
 
 
 
@@ -329,7 +316,7 @@ Il est question de rendre disponible (en HTTP) les ressources permettant le lanc
 * le fichier de configuration `refind.conf`
 
 
-doit être déclaré/actif, le service http qui désservira les fichiers pour rEFInd:<br>
+Le service http qui désservira les fichiers pour rEFInd:<br>
 (le chemin choisi dans notre exemple sera  celui par défaut, à savoir `/var/www/` toujours sur le *Node_0*)
 
 ```bash
