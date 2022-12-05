@@ -31,23 +31,23 @@ Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.co
 Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
 
 La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
-Mais dans ce cas, le mecanisme de démarrage de la solution se retrouve inopérant, à savoir que lorsque les systèmes sont démarrés, via une méthode **netboot** (Network Boot), ces derniers doivent obligatoirement récupèrer leur configurations via des services réseaux mutualisés présent sur le réseaux interne d'OVHcloud.
+Dans ce cas, le mecanisme de démarrage de la solution se retrouve inopérant, à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers doivent obligatoirement récupèrer leur configurations via les services réseaux mutualisés présents sur le réseau interne d'OVHcloud.
 
 
 ### Présentation rapide d'un démarrage en Netboot 
 
 > [!primary]
 >
->  il existe 2 types de PXE:<br>
->  PXE: utilisant un environnement standardisé client/serveur, basé sur les protocoles BOOTP/DHCP/TFTP, afin de permettre un démarrage/deploiement via le réseau du système client.<br>
->  iPXE: utilisant un environnement standardisé client/serveur plus évolué, basé sur les protocoles HTTP,iSCSI, AoE, FCoE, Wi-Fi afin de permettre un démarrage/deploiement via le réseau du système client.
+>  il existe 2 versions de PXE:<br>
+>  **PXE**: utilisant un environnement standardisé client/serveur, basé sur les protocoles BOOTP/DHCP/TFTP, afin de permettre un démarrage/deploiement via le réseau du système client.<br>
+>  **iPXE**: utilisant un environnement standardisé client/serveur plus évolué, basé sur les protocoles HTTP,iSCSI, AoE, FCoE, Wi-Fi afin de permettre un démarrage/deploiement via le réseau du système client.
 > 
 
-definition du Netboot:
+dérourelemnt du Netboot:
 
-* Mode de démarrage en PXE (solution de démarrage réseau bas niveau) via l'interface réseau d'une machine cliente active permettant de communiquer avec le serveur DHCP de ce même réseau.Ce mode est défini au préalable dans le bios de votre serveur via le menu *boot order*.
-* Le serveur DHCP peut donc lui adresser les informations nécessaires, une adresse IP, un fichier PXE (sous forme de binaire executable), ainsi qu'un script PXE.
-* le serveur client va chercher à récupérer ce binaire en protocol TFTP, pour ensuite le charger dans sa configuration.
+* Mode de démarrage en PXE (solution de démarrage réseau bas niveau) via l'interface réseau d'une machine cliente active permettant de communiquer avec le serveur **DHCP** de ce même réseau.Ce mode est défini au préalable dans le bios de votre serveur via le menu *boot order*.
+* Le serveur DHCP peut donc lui adresser les informations nécessaires, une adresse IP, un fichier PXE (sous forme de binaire executable), ainsi qu'un **script** PXE associé.
+* le serveur client va chercher à récupérer ce binaire en protocol **TFTP**, pour ensuite le charger dans sa configuration.
 * Le binaire récupéré et chargé en tant que firmware, et peut donc désormais éxécuter le script associé qui contiendra les informations permettant la selection du type d'amorçage d'un systeme pour la machine cliente:<br>
 disque local, volume réseau, usb, etc...
 
@@ -60,10 +60,10 @@ disque local, volume réseau, usb, etc...
 
 ## Prérequis
 
-* Être connecté à [l'espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
+* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
 * Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
-* Avoir toutes les interfaces réseaux de ce serveur en réseau dit **privé**, ce qui sous-entend que vous avez au préalable configuré la fonction [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
-images extraites du manager, via l'onglet `Interfaces réseaux`{.action}, du machine éligible à notre procédure:<br>
+* Avoir toutes les interfaces réseaux de ce serveur en réseau dit **privé**, ce qui sous-entend que vous avez au préalable configuré notre fonctionnabilité [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
+images extraites du manager, via l'onglet `Interfaces réseaux`{.action}, d'une machine éligible à notre procédure:<br>
 
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
 ![OLA2](images/Scr_OLA2.png){.thumbnail}
@@ -78,15 +78,15 @@ processus complet de démarrage Netboot:
 |---|---|
 |1|La machine client reçoit une demande de mise sous tension, le mode Netboot est sélectionné|
 |2|requête de l'interface réseau vers DHCP (discover)|
-|3|réponse et attribution d'une adresse IP via le DHCP(offer/request/ack)|
+|3|réponse et attribution d'une adresse IP via le DHCP (offer/request/ack)|
 |4|requête pour récuperer le binaire iPXE|
 |5|récupération du binaire en TFTP|
 |6|chargement et initialisation de l'interface réseau avec le nouveau firmware|
 |7|requête DHCP pour récupérer le script associé au binaire iPXE|
 |8|récupération du script iPXE|
-|9|éxécution des commandes shell iPXE associées au précédent script|
-|10|commande shell pour récuperer en HTTP les sources (binaire + fichier de config) pour le bootloader rEFInd|
-|11|commande shell pour récupérer et éxécuter le binaire rEFInd|
+|9|éxécution des commandes shell iPXE contenu dans le précédent script|
+|10|commande shell iPXE pour récuperer en HTTP les sources (binaire + fichier de config) pour le bootloader rEFInd|
+|11|commande shell iPXE pour récupérer et éxécuter le binaire rEFInd|
 |12|le binaire rEFInd scanne les disques locaux pour détecter les secteurs d'amorçages |
 |13|rEFInd utilise les secteurs d'amorçages présents via son bootloader|
 |14|chargement du système d'exploitation associé|
