@@ -1,5 +1,5 @@
 ---
-title: 'Gestion du reboot de vos serveurs avec OLA:      OVH Link Aggregation'
+title: 'Gestion du reboot de vos serveurs avec OLA, OVH Link Aggregation'
 slug: netboot OLA
 excerpt: "Comment réaliser les redémarrages de vos solutions OVHcloud fonctionnant à travers votre agrégation privée activée"
 section: 'Utilisation avancée'
@@ -62,13 +62,13 @@ disque local, volume réseau, usb, etc...
 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
 * Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
-* Avoir toutes les interfaces réseaux de ce serveur en réseau dit **privé**, ce qui sous-entend que vous avez au préalable configuré notre fonctionnabilité [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
-images extraites du manager, via l'onglet `Interfaces réseaux`{.action}, d'une machine éligible à notre procédure:<br>
+* Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez au préalable configuré notre fonctionnabilité [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
+ Exemple d'une machine éligible à notre procédure, via l'onglet `Interfaces réseau`{.action} du manager:<br>
 
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
 ![OLA2](images/Scr_OLA2.png){.thumbnail}
 
-* Un système dédié supplémentaire avec les interfaces réseaux configurées par défaut, à savoir, un accès au réseau public ainsi qu'à votre réseau privé, qui hébergera tous les services (DHCP, TFTP et HTTP). Le système d'exploitation sera celui de votre choix.
+* Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (DHCP, TFTP et HTTP). Le système d'exploitation sera celui de votre choix.
 
 
 ### Présentation rapide d'un démarrage en Netboot chez OVHcloud 
