@@ -5,6 +5,7 @@ slug: exchange_2013_how_to_configure_on_ios_iphoneipad
 routes:
     canonical: 'https://docs.ovh.com/ie/en/emails/email_hosting_iphone_ios_91_configuration/'
 section: Exchange-compatible smartphone and tablet configuration
+order: 02
 ---
 
 **Last updated 21st May 2021**

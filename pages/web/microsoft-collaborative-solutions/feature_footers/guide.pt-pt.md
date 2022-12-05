@@ -3,7 +3,7 @@ title: 'Criar assinaturas automáticas'
 excerpt: 'Saiba como criar assinaturas automáticas nas suas contas de e-mail'
 slug: exchange_20132016_assinatura_automatica_-_disclaimer
 section: 'Características da conta Exchange'
-order: 3
+order: 03
 ---
 
 

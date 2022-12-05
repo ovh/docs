@@ -6,7 +6,7 @@ routes:
 legacy_guide_number: 1278
 excerpt: 'Retrouvez ici la procédure d’ajout d’un compte Exchange pour Thunderbird'
 section: 'Configuration Exchange sur ordinateur'
-order: 6
+order: 06
 ---
 
 **Dernière mise à jour le 23/08/2021**

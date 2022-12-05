@@ -4,7 +4,7 @@ slug: exchange_2013_przewodnik_dotyczacy_licencji_outlook_exchange_2013
 legacy_guide_number: 1718
 excerpt: Dowiedz się, jak zamówić licencję Outlook z platformy Exchange OVHcloud i zainstalować ją
 section: Office
-order: 1
+order: 01
 ---
 
 > [!primary]

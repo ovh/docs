@@ -4,7 +4,7 @@ excerpt: 'Dowiedz się, jak skonfigurować odpowiedzi automatyczne w interfejsie
 slug: exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa
 section: 'Outlook Web Application (OWA)'
 legacy_guide_number: g1922
-order: 3
+order: 03
 ---
 
 **Ostatnia aktualizacja: 03-08-2020**

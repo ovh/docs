@@ -3,7 +3,7 @@ title: 'Konfiguracja weryfikacji dwuetapowej na koncie Exchange'
 slug: konfiguracja-2fa-exchange
 excerpt: 'Dowiedz się, jak skonfigurować weryfikację dwuetapową na koncie Exchange'
 section: 'Funkcjonalności i współdzielenie Exchange'
-order: 3
+order: 03
 ---
 
 **Ostatnia aktualizacja z dnia 11-03-2020**

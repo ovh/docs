@@ -3,7 +3,7 @@ title: 'Crear reglas de la bandeja de entrada en OWA'
 slug: crear-reglas-de-bandeja-de-entrada-en-owa
 excerpt: 'Cómo crear redirecciones y filtros de correo electrónico con OWA'
 section: 'Outlook Web Application (OWA)'
-order: 2
+order: 02
 ---
 
 **Última actualización: 11/3/2020**

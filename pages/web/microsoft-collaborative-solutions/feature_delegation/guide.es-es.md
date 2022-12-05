@@ -3,7 +3,7 @@ title: 'Delegar permisos en una cuenta de correo'
 slug: exchange_2013_dar_permisos_full_access_a_una_cuenta
 excerpt: 'Cómo delegar permisos de su cuenta de correo en otra cuenta'
 section: 'Funcionalidades de Exchange'
-order: 3
+order: 03
 ---
 
 **Última actualización: 24/10/2020**

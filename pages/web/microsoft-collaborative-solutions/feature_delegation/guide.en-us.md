@@ -3,7 +3,7 @@ title: 'Delegating permissions on an Exchange account'
 slug: exchange_2013_how_to_grant_full_access_permissions_for_an_account
 excerpt: 'Find out how to delegate permissions on your Exchange account to another user'
 section: 'Exchange account features'
-order: 3
+order: 03
 ---
 
 **Last updated 24th October 2020**

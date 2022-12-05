@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pl/emails/konfiguracja_konta_e-mail_w_programie_thunderbird/'
 excerpt: 'Tutaj znajdziesz procedurę dodawania konta Exchange w programie Thunderbird'
 section: 'Konfigurowanie konta Exchange na komputerze'
-order: 5
+order: 05
 ---
 
 > [!primary]

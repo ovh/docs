@@ -3,7 +3,7 @@ title: 'Configurer son compte Exchange sur Courrier pour Windows 10'
 slug: configuration-courrier-windows-10
 excerpt: "Apprenez à configurer un compte Exchange sur l'application Courrier pour Windows 10"
 section: 'Configuration Exchange sur ordinateur'
-order: 5
+order: 05
 ---
 
 **Dernière mise à jour le 17/05/2018**

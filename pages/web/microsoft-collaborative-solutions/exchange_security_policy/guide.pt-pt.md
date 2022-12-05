@@ -3,7 +3,7 @@ title: 'Gerir a política de segurança de um serviço de e-mail'
 slug: gerir-politica-de-seguranca-palavra-passe
 excerpt: 'Saiba como gerir a política de segurança do seu serviço de e-mail.'
 section: 'Introdução ao Exchange'
-order: 6
+order: 06
 ---
 
 **Última atualização: 22/04/2022**

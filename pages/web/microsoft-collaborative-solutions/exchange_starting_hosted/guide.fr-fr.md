@@ -3,7 +3,7 @@ title: Premiers pas avec le service Hosted Exchange
 slug: premiere-configuration-exchange
 excerpt: Débutez avec un service Hosted Exchange
 section: Premiers pas avec Exchange
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 09/01/2018**

@@ -3,7 +3,7 @@ title: 'Delegowanie uprawnień do konta e-mail'
 slug: exchange_2013_przyznanie_uprawnien_full_access
 excerpt: 'Dowiedz się, jak zezwolić innym osobom na zarządzanie skrzynką e-mail'
 section: 'Funkcjonalności i współdzielenie Exchange'
-order: 3
+order: 03
 ---
 
 **Ostatnia aktualizacja z dnia 24/10/2020**

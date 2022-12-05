@@ -4,7 +4,7 @@ excerpt: Come eseguire la diagnostica automatizzata degli errori sugli account E
 slug: diagnostica_exchange_cosa_fare_in_caso_di_errore
 legacy_guide_number: g2277
 section: Diagnostica Exchange
-order: 1
+order: 01
 ---
 
 > [!primary]

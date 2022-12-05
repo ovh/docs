@@ -4,7 +4,7 @@ slug: exchange-signature-automatique-disclaimer
 legacy_guide_number: 1330
 excerpt: Retrouvez ici la procedure d’activation d’un pied de page (Disclaimer) sur votre compte e-mail
 section: Fonctionnalités des comptes Exchange
-order: 6
+order: 06
 ---
 
 **Dernière mise à jour le 26/03/2020**

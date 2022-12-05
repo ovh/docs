@@ -4,7 +4,7 @@ excerpt: Come aggiungere firme automatiche ai tuoi account email
 slug: exchange_2013_firma_automatica_-_disclaimer
 legacy_guide_number: g1330
 section: Funzionalità di un account Exchange
-order: 3
+order: 03
 ---
 
 **Ultimo aggiornamento 24/03/2020**

@@ -4,7 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie automatische Signaturen zu Ihren E-Mail-Acc
 slug: exchange_20132016_automatische_signatur_-_disclaimer
 legacy_guide_number: g1330
 section: Exchange Account-Funktionen
-order: 3
+order: 03
 ---
 
 

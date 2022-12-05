@@ -2,8 +2,8 @@
 title: 'Configuring your Exchange account in Outlook for Windows'
 slug: exchange-configuration-outlook-2016-windows
 excerpt: 'Find out how to configure your Exchange account in Outlook for Windows'
-section: 'Configure Exchange on computer'
-order: 1
+section: Email clients
+order: 04
 ---
 
 **Last updated 5th July 2021**

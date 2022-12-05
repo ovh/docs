@@ -2,8 +2,8 @@
 title: Getting started with the Hosted Exchange service
 excerpt: Get started with a Hosted Exchange service
 slug: configuring-exchange
-section: Getting started with Exchange
-order: 1
+section: 'Getting started with Exchange'
+order: 01
 ---
 
 **Last updated 2018/10/05**

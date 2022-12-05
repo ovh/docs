@@ -4,7 +4,7 @@ excerpt: 'Aprenda a gestionar su dirección Exchange con el webmail de OWA'
 slug: exchange_2016_guia_de_uso_de_outlook_web_app
 legacy_guide_number: g1918
 section: 'Outlook Web Application (OWA)'
-order: 1
+order: 01
 ---
 
 **Última actualización: 25/06/2021**

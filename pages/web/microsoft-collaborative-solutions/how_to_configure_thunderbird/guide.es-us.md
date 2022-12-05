@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/us/es/emails/correo_guia_de_configuracion_en_thunderbird/'
 excerpt: 'Cómo configurar una cuenta Exchange en Thunderbird para Windows'
 section: 'Configuración del cliente de correo Exchange'
-order: 5
+order: 05
 ---
 
 > [!primary]

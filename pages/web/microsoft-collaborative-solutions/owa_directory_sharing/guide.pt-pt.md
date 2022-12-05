@@ -4,7 +4,7 @@ excerpt: 'Saiba como partilhar pastas entre contas Exchange'
 slug: exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa
 legacy_guide_number: g1929
 section: 'Outlook Web Application (OWA)'
-order: 5
+order: 05
 ---
 
 

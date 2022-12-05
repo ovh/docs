@@ -2,7 +2,8 @@
 title: Creating a CNAME record to add an associated domain
 excerpt: Find out about the purpose of a CNAME record, and how to add one at OVHcloud
 slug: exchange_20132016_how_to_add_a_cname_record
-section: Getting started with Exchange
+section: 'Getting started with Exchange'
+order: 05
 ---
 
 **Last updated 22nd January 2018**

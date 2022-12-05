@@ -1,8 +1,8 @@
 ---
 title: Configuring your Exchange account on the macOS Mail app
 slug: exchange-configuration-mail-macos
-section: Configure Exchange on computer
-order: 3
+section: Email clients
+order: 03
 ---
 
 **Last updated 28/12/2021**

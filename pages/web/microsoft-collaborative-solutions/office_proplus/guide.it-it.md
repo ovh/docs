@@ -4,7 +4,7 @@ legacy_guide_number: 2339
 slug: office365-proplus-desktop-remoto
 excerpt: Come installare e utilizzare Microsoft 365 aps su un desktop remoto (RDS) o un computer condiviso
 section: Office
-order: 4
+order: 04
 ---
 
 > [!primary]

@@ -3,7 +3,7 @@ title: 'Zarządzanie fakturowaniem kont Exchange'
 slug: zarzadzanie-fakturowanie-exchange
 excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi Exchange'
 section: 'Konfiguracja usługi Exchange'
-order: 1
+order: 01
 ---
 
 

@@ -4,7 +4,7 @@ slug: exchange-utilisation-des-comptes-de-ressource
 legacy_guide_number: 1325
 excerpt: Ajouter et utiliser les comptes de ressource avec l’offre Exchange
 section: Fonctionnalités des comptes Exchange
-order: 4
+order: 04
 ---
 
 **Dernière mise à jour le 22 décembre 2020**

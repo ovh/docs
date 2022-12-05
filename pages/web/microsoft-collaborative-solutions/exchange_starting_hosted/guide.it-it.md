@@ -4,7 +4,7 @@ slug: exchange_20132016_prima_configurazione
 excerpt: 'Scopri come configurare un Hosted Exchange'
 section: 'Configurazione del servizio Exchange'
 legacy_guide_number: g1311
-order: 1
+order: 01
 ---
 
 **Ultimo aggiornamento: 27/06/2018**

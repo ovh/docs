@@ -4,7 +4,7 @@ slug: activation-et-gestion-de-votre-sharepoint-ovh
 legacy_guide_number: 2249
 excerpt: 'Découvrez comment commander et configurer une plateforme SharePoint.'
 section: Sharepoint
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 11/08/2020**

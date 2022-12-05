@@ -3,7 +3,7 @@ title: "Migrare i tuoi indirizzi email da una piattaforma OVHcloud verso un'altr
 slug: migration-email-platform
 excerpt: "Questa guida ti mostra come migrare gli indirizzi email da una piattaforma Exchange o Email Pro verso un'altra piattaforma Exchange, Email Pro o MX Plan"
 section: Migrazione di account
-order: 2
+order: 02
 ---
 
 > [!primary]

@@ -3,7 +3,7 @@ title: 'Creating inbox rules in OWA'
 slug: creating-inbox-rules-in-owa
 excerpt: 'Find out how to create email redirections and filters using OWA'
 section: 'Outlook Web Application (OWA)'
-order: 2
+order: 02
 ---
 
 **Last updated 11th March 2020**

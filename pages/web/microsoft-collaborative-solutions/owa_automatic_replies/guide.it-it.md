@@ -4,7 +4,7 @@ excerpt: 'Scopri come impostare risposte automatiche con OWA'
 slug: exchange_2016_imposta_una_risposta_automatica_con_owa
 legacy_guide_number: g1922
 section: 'Outlook Web Application (OWA)'
-order: 3
+order: 03
 ---
 
 **Ultimo aggiornamento: 27/07/2020**

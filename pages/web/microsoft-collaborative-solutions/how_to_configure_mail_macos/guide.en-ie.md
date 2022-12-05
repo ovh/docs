@@ -2,6 +2,7 @@
 title: Configuring your Exchange account on the macOS Mail app
 slug: exchange-automatic-configuration-on-mail-mac
 section: Email clients
+order: 03
 ---
 
 **Last updated 28/12/2021**
