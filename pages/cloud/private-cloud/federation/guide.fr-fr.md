@@ -194,9 +194,9 @@ Le groupe apparaît dans la liste des utilisateurs de votre cluster, les membres
 
 ### Utilisation de l'API OVHcloud
 
-Il est possible d'utiliser l'API OVHcloud pour effecutuer les mêmes opérations (Ajout d'un annuaire et autorisation d'un groupe ou d'un utilisateur à se connecter à vCenter)
+Il est possible d'utiliser l'API OVHcloud pour effectuer les mêmes opérations (Ajout d'un annuaire et autorisation d'un groupe ou d'un utilisateur à se connecter à votre interface vCenter).
 
-#### Ajout d'un annuaire Active directory
+#### Ajouter un annuaire Active directory
 
 Récupérez votre « serviceName » en utilisant l'appel API suivant :
 
