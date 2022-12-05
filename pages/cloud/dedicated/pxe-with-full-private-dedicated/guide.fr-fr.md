@@ -309,7 +309,7 @@ Il est question de rendre disponible (en HTTP) les ressources permettant le lanc
 * le fichier de configuration `refind.conf`
 
 
-Le service http qui désservira les fichiers pour rEFInd:<br>
+Le service **HTTP** qui désservira les fichiers pour rEFInd:<br>
 (le chemin choisi dans notre exemple sera  celui par défaut, à savoir `/var/www/` toujours sur le *Node_0*)
 
 ```bash
