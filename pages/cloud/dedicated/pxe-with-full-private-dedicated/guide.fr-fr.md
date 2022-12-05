@@ -287,7 +287,11 @@ iseq ${platform} efi && goto is_efi_x86_64 || goto end
 
 :is_efi_x86_64
 echo EFI boot mode
+
+# Récuperer le fichier de configuration
 imgfetch --name refind.conf ${ressources-url}/refind.conf
+
+# Charger le binaire rEFIND
 chain ${ressources-url}/refind_x64.efi
 
 :end
@@ -297,13 +301,6 @@ exit 1
 
 ```
 
-
-
-> [!primary]
->
-> Nous prenons en considération dans notre exemple que les cas ou votre architecture sera en 32bits ou bien 64bits.
-> Ce qui réprésentera la très grande majorité des cas rencontrés.
-> 
 
 
 #### le service **HTTP**
@@ -348,7 +345,7 @@ Elles pourront eventuellement servir de template si besoin.<br>
 
 
 Aperçu de ce que l'on obtiend à l'affichage lors d'un Netboot UEFI (par défaut):<br>
-correspond aux étape 1 à 7 <br>
+correspond aux étapes 1 à 7 <br>
 ![iPXE en action](images/animation.gif)
 
 
