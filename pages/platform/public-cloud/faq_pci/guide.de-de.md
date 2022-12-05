@@ -15,7 +15,7 @@ order: 01
 
 ### Wie kann ich mich mit einer Public Cloud Instanz verbinden?
 
-Die Verbindung erfolgt durch ein Paar von SSH-Schlüsseln, die bei der Erstellung Ihrer Public Cloud-Instanz konfiguriert werden müssen.
+Die Verbindung erfolgt mit einem SSH-Schlüsselpaar, das bei der Erstellung Ihrer Public Cloud-Instanz konfiguriert werden muss.
 
 Lesen Sie die Anleitung [Erste Public Cloud Instanz erstellen und auf dieser einloggen](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/).
 
@@ -86,57 +86,59 @@ Diese privaten Netzwerke werden durch die vRack Technologie von OVHcloud unterst
 
 Lesen Sie die Anleitung [vRack Public Cloud](https://docs.ovh.com/de/publiccloud/network-services/public-cloud-vrack/).
 
-Das private Netzwerk verfügt standardmäßig über den nativen Netzschutz von OpenStack. Diese beinhalten verschiedene Mechanismen wie den Schutz vor IP-Spoofing.<br>
-Auf der Instanzen-Seite kann dies zu Blockaden von Netzwerkpaketen führen, je nach Ihren Bedürfnissen (pfSense, Router, CARP Protokoll...).
+Das private Netzwerk verfügt standardmäßig über den nativen Schutz von OpenStack. Diese beinhalten verschiedene Mechanismen wie den Schutz vor IP-Spoofing.<br>
+Auf der Instanzen-Seite kann dies zu Blockaden von Netzwerkpaketen führen, je nach Ihren Bedürfnissen (pfSense, Router, CARP Protokoll, etc.).
 
-Je nach Bedarf müssen Sie die `Port Security` Funktion im privaten Port oder Netzwerk deaktivieren.
+Je nach Bedarf müssen Sie die Funktion `Port Security` im privaten Port oder Netzwerk deaktivieren.
 Bitte lesen Sie die Anleitung zur [Verwaltung der Firewall- und Port-Security-Regeln über Netzwerke mit OpenStack CLI](https://docs.ovh.com/de/public-cloud/firewall_security_pci/).
 
-Weitere Informationen finden Sie in [OpenStack Dokumentation](https://docs.openstack.org/developer/dragonflow/specs/mac_spoofing.html) oder auf [superuser.openstack.org](https://superuser.openstack.org/articles/managing-port-level-security-openstack/).
+Weitere Informationen finden Sie in der [OpenStack Dokumentation](https://docs.openstack.org/developer/dragonflow/specs/mac_spoofing.html) oder auf [superuser.openstack.org](https://superuser.openstack.org/articles/managing-port-level-security-openstack/).
 
 ### Kann ich die öffentliche IP-Adresse meiner Instanz ändern?
 
 Die öffentlichen IPs werden den Instanzen automatisch zugewiesen und können daher nicht geändert werden. Um die öffentliche IP-Adresse einer Instanz zu verwalten, empfehlen wir die Verwendung von Additional IPs. So können Sie unabhängig von einer der Instanz automatisch zugewiesenen öffentlichen Adresse eine oder mehrere Additional IP-Adressen zu Ihrer Instanz hinzufügen.
 
-Weitere Informationen finden Sie in der Anleitung [Eine Additional IP erwerben](https://docs.ovh.com/de/publiccloud/network-services/buy-additional-ip/).
+Weitere Informationen finden Sie in der Anleitung "[Eine Additional IP erwerben](https://docs.ovh.com/de/publiccloud/network-services/buy-additional-ip/)".
 
-### Wie kann ich überprüfen, ob meine Instanz für die MDS Sicherheitslücke anfällig ist?
+### Wie kann ich überprüfen, ob meine Instanz für die Sicherheitslücke "MDS" anfällig ist?
 
-Die Sicherheitslücke für [MDS-Sicherheitslücke](https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html) kann mit folgendem Befehl überprüft werden:
+Die Anfälligkeit für die [Sicherheitslücke "MDS"](https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html) kann mit folgendem Befehl überprüft werden:
 
 ```bash
 cat /sys/devices/system/cpu/vulnerabilities/mds
 ```
 
-Wenn das Ergebnis `Vulnerable` ist, haben Sie keine Angst, der zugrunde liegende Hypervisor schützt Sie.
+Auch wenn das Ergebnis `Vulnerable` ist, besteht kein Grund zur Sorge, da der zugrunde liegende Hypervisor Ihre Dienste schützt.
 
-Sie können diese Sicherheitslücke jedoch direkt in Ihrer Instanz abwehren, indem Sie entweder [über das OVHcloud Kundencenter](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_ihrer_public_cloud_instanz/) oder mit einem Befehl wie diesem einen Hard Reboot Ihrer Instanz durchführen:
+Sie können diese Sicherheitslücke auch direkt auf der Instanz abwehren, indem Sie entweder [über das OVHcloud Kundencenter](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_ihrer_public_cloud_instanz/) oder mit einem Befehl wie diesem einen Hard Reboot Ihrer Instanz durchführen:
 
 ```bash
 openstack server reboot --hard $serverID
 ```
 
-### Ist meine Instanz immer noch durch die SSBD Sicherheitslücke gefährdet?
+### Wie kann ich überprüfen, ob meine Instanz für die Sicherheitslücke "SSBD" anfällig ist?
 
-Die Sicherheitslücke für [SSBD Sicherheitslücke](https://www.kernel.org/doc/html/latest/userspace-api/spec_ctrl.html) kann mit folgendem Befehl überprüft werden:
+Die Anfälligkeit für die [Sicherheitslücke "SSBD"](https://www.kernel.org/doc/html/latest/userspace-api/spec_ctrl.html) kann mit folgendem Befehl überprüft werden:
 
 ```bash
 cat /sys/devices/system/cpu/vulnerabilities/ssbd
 ```
 
-Selbst wenn das Ergebnis `Vulnerable` ist, ist Ihre Instanz trotzdem gegen diese Sicherheitslücke geschützt.
+Auch wenn das Ergebnis `Vulnerable` ist, besteht kein Grund zur Sorge, da der zugrunde liegende Hypervisor Ihre Dienste schützt.
 
-Der *flag CPU SSBD* ist für Ihre Instanz nicht verfügbar, da er bei einigen Betriebssystemen Instabilität verursachen kann.
+Dies kann nicht direkt über die Instanz behoben werden, da der *SSBD Flag* für Ihre Instanz nicht bereitgestellt wird.
 
-### Ist die Virtualisierung in der Instanz möglich?
+Der Grund dafür ist, dass dies bei einigen Betriebssystemen Instabilität verursachen kann.
+
+### Ist Virtualisierung mit Instanzen möglich (*Nested*)?
 
 Ja und nein.
 
-Ja, da die Option aktiviert ist (der *CPU VMX* Flag ist in Ihrer Instanz sichtbar). So können Sie jede Virtualisierungslösung in Ihrer Instanz verwenden (KVM, QEMU, VirtualBox, Xen, HyperV etc.).
+Ja, da die Option aktiviert ist (der *Flag* "CPU VMX" ist verfügbar). Damit können Sie jede darauf basierende Virtualisierungslösung mit Ihrer Instanz verwenden (KVM, QEMU, VirtualBox, Xen, HyperV, etc.).
 
-Nein, denn sobald eine Live-Migration Ihrer Instanz stattfindet (und dies kann jederzeit geschehen, basierend auf dem Lebenszyklus des zugrunde liegenden Hypervisors), kann Ihr Linux-Kernel nicht mehr funktionieren (Kernel Panic).
+Nein, denn sobald eine Live-Migration Ihrer Instanz stattfindet (und das kann jederzeit geschehen, basierend auf dem Lebenszyklus des zugrunde liegenden Hypervisors), kann dies eine *Kernel Panic* auslösen.
 
-Weitere Informationen finden Sie unter [diesen Link](https://www.linux-kvm.org/page/Nested_Guests#Limitations).
+Weitere Informationen finden Sie unter [diesem Link](https://www.linux-kvm.org/page/Nested_Guests#Limitations).
 
 ## Weiterführende Informationen
 
