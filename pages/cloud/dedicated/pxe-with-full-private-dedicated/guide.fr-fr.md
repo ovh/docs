@@ -275,7 +275,7 @@ root@node_0:/srv/tftp# tree
 .
 |-- ipxe.efi
 |-- ipxe32.efi
-`-- refind.kpxe 
+`-- refind.pxe 
 ```
 
 Contenu du fichier `refind.pxe`:<br>
