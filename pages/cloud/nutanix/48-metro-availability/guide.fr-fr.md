@@ -19,16 +19,12 @@ order: 06
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
-<a name="prerequis"></a>
-
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via Prism Central.
 - Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloud avec des licences **Pack Advanced** si vous avez une offre packagée sur les deux clusters du P.R.A. Ces 3 clusters devront être sur des sites distants pour obtenir un maximum de sûreté.
 - Avoir une latence de moins de 5 ms entre les deux clusters répliqués.
-
-<a name="presentation"></a>
 
 ## Présentation
 
@@ -48,17 +44,15 @@ Vous trouverez ci-dessous le schéma représentant les trois sites :
 
 ![00 - Metro Availability Diagram 01](images/00-metro-availability-diagram01.png){.thumbnail}
 
-<a name="enpratique"></a>
-
 ## En pratique
 
 - [Etape 1 Configuration](#configuration)
     - [Etape 1.1 Interconnexion des trois clusters](#connectcl)
-    - [Etape 1.2 Suppression des enregistrements Prism Central pour les clusters de Roubaix et Gravelines](#supprpc)
-    - [Etape 1.3 Enregistrement des deux clusters sur Prism Central à Erith](#enregpc)
-    - [Etape 1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#paramiscsi)
+    - [Etape 1.2 Suppression des enregistrements Prism Central pour les clusters de Roubaix et Gravelines](#delpc)
+    - [Etape 1.3 Enregistrement des deux clusters sur Prism Central à Erith](#regpc)
+    - [Etape 1.4 Ajout des adresses IP pour les connexions iSCSI sur les trois clusters](#configiscsi)
     - [Etape 1.5 Création de deux Storage Containers](#addsc)
-    - [Etape 1.6 Déplacement des machines virtuelles dans le Storage Container](#deplst)
+    - [Etape 1.6 Déplacement des machines virtuelles dans le Storage Container](#movevm)
     - [Etape 1.7 Création d'une catégorie qui servira lors de la mise en place du P.R.A.](#creacat)
     - [Etape 1.8 Ajout des machines virtuelles dans les catégories](#addvmcat)
     - [Etape 1.9 Mise en place des réplications synchrones entre Roubaix et Gravelines](#confreplsync)
@@ -101,7 +95,7 @@ Les informations de configuration des clusters utilisées par notre guide sont l
     - Serveur 2 : adresse VM **CVM** `192.168.2.22`, adresse IP hyperviseur **AHV** `192.168.2.2`.
     - Serveur 3 : adresse VM **CVM** `192.168.2.23`, adresse IP hyperviseur **AHV** `192.168.2.3`.
     - Adresse virtuelle de Prism Element : `192.168.2.101`.
-    - Adresse iSCSI de Prism Element : `192.168.2.102`.   
+    - Adresse iSCSI de Prism Element : `192.168.2.102`.
     - Adresse IP Prism Central : `192.168.2.100`.
     - Passerelle : `192.168.3.254`.
     - Masque : `255.255.252.0`
@@ -138,7 +132,7 @@ Lorsque vous aurez terminé la configuration, vous aurez dans votre vRack ces é
 
 Les trois clusters sont pour l'instant accessibles à partir de l'URL Prism Central de chaque cluster.
 
-<a name="supprpc"></a>
+<a name="delpc"></a>
 
 #### Etape 1.2 - Suppression des enregistrements Prism Central pour les clusters de Roubaix et Gravelines
 
@@ -226,7 +220,7 @@ ssh nutanix@adresse_ip_privee_prism_central_Gravelines
 saisissez le mot de passe de Prism Central
 python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_Gravelines
 ```
-<a name="enregpc"></a>
+<a name="regpc"></a>
 
 #### Etape 1.3 - Enregistrement des deux clusters sur le Prism Central d'Erith
 
@@ -326,7 +320,7 @@ Sélectionnez les machines virtuelles de Prism Central de Gravelines et Roubaix 
 
 ![02b - Shutdow Prism Central Gravelines Roubaix 02](images/02-shutdown-prism-central02.png){.thumbnail}
 
-<a name="paramiscsi"></a>
+<a name="configiscsi"></a>
 
 #### Etape 1.4 - Ajout des adresses IP pour les connexions iSCSI sur les trois clusters
 
@@ -342,27 +336,27 @@ Faites défilez la fenêtre, ajoutez une `adresse IP non utilisée`{.action} à 
 
 ![03 - Add iscsi address Erith 03](images/03-add-iscsi-address-erith03.png){.thumbnail}
 
-A partir du tableau de bord Prism Central, cliquez sur le lien vers le `cluster de Gravelines`{.action}.
+A partir du tableau de bord Prism Central, cliquez sur le lien vers le « cluster de Gravelines ».
 
 ![03 - Add iscsi address Gravelines 01](images/03-add-iscsi-address-gravelines01.png){.thumbnail}
 
-Sur le tableau de bord de Prism Element, cliquez en haut à gauche sur le `nom du cluster`{.action}.
+Sur le tableau de bord de Prism Element, cliquez en haut à gauche sur le « nom du cluster ».
 
 ![03 - Add iscsi address Gravelines 02](images/03-add-iscsi-address-gravelines02.png){.thumbnail}
 
-Faites défiler la fenêtre, ajoutez une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur `Save`{.action}.
+Faites défiler la fenêtre, ajoutez une « adresse IP non utilisée » à `ISCSI Data Services IP` et cliquez sur `Save`{.action}.
 
 ![03 - Add iscsi address graveline 03](images/03-add-iscsi-address-gravelines03.png){.thumbnail}
 
-A partir du tableau de bord Prism Central, cliquez sur le lien vers le `cluster de Roubaix`{.action}.
+A partir du tableau de bord Prism Central, cliquez sur le lien vers le « cluster de Roubaix ».
 
 ![03 - Add iscsi address Roubaix 01](images/03-add-iscsi-address-roubaix01.png){.thumbnail}
 
-Sur le tableau de bord de Prism Element, cliquez en haut à gauche sur le `nom du cluster`{.action}.
+Sur le tableau de bord de Prism Element, cliquez en haut à gauche sur le « nom du cluster ».
 
 ![03 - Add iscsi address Roubaix 02](images/03-add-iscsi-address-roubaix02.png){.thumbnail}
 
-Faites défilez la fenêtre, ajoutez une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur `Save`{.action}.
+Faites défilez la fenêtre, ajoutez une « adresse IP non utilisée » à `ISCSI Data Services IP` et cliquez sur `Save`{.action}.
 
 ![03 - Add iscsi address Roubaix 03](images/03-add-iscsi-address-roubaix03.png){.thumbnail}
 
@@ -372,7 +366,7 @@ Faites défilez la fenêtre, ajoutez une `adresse IP non utilisée`{.action} à 
 
 Nous allons créer deux Storage Containers portant le même nom, un à Roubaix et l'autre à Gravelines. 
  
-Depuis le menu principal de Prism Element, cliquez sur `Storage Containers`{.action} dans le sous-menu **Compute & Storage**.
+Depuis le menu principal de Prism Element, cliquez sur `Storage Containers`{.action} dans le sous-menu `Compute & Storage`{.action}.
 
 ![05 - Add-storage-container 01](images/05-add-storage-container01.png){.thumbnail}
 
@@ -388,19 +382,19 @@ Cliquez sur `Create Storage Container`{.action}.
 
 ![05 - Add-storage-container 04](images/05-add-storage-container04.png){.thumbnail}
 
-Saisissez `UsedForDR` dans **Name**, choisissez le `cluster de Gravelines` dans **Cluster** et cliquez sur `Create`{.action}.
+Saisissez `UsedForDR` dans **Name**, choisissez le `cluster de Gravelines` dans `Cluster` et cliquez sur `Create`{.action}.
 
 ![05 - Add-storage-container 05](images/05-add-storage-container05.png){.thumbnail}
 
-Dans la liste des **Storages Containers**, vous verrez deux Storage Containers portant le même nom. Un sur le cluster de Roubaix et l'autre sur le cluster de Gravelines.
+Dans la liste des `Storages Containers`, vous verrez deux Storage Containers portant le même nom. Un sur le cluster de Roubaix et l'autre sur le cluster de Gravelines.
 
 ![05 - Add-storage-container 06](images/05-add-storage-container06.png){.thumbnail}
 
-<a name="deplst"></a>
+<a name="movevm"></a>
 
 #### Etape 1.6 - Déplacement des machines virtuelles dans le Storage Container
 
-Nous allons déplacer le stockage des machines virtuelles sur les **Storage Container** que nous avons créé.
+Nous allons déplacer le stockage des machines virtuelles sur les `Storage Container` que nous avons créé.
 
 Connectez-vous en SSH sur Prism Element du cluster de Roubaix :
 
@@ -409,7 +403,7 @@ ssh nutanix@adresse_ip_privee_Prism_element_Roubaix
 Saisissez le mot de passe du compte Nutanix de Prism Element
 ```
 
-Exécutez cette commande pour chaque VM que nous allons déplacer dans le **Storage Container**, en remplaçant **nomvm** par le nom de la machine virtuelle (dans notre plan de reprise d'activité, nous avons deux machines virtuelles à Roubaix, une sous Windows et une autre sous Linux).
+Exécutez cette commande pour chaque VM que nous allons déplacer dans le `Storage Container`, en remplaçant **nomvm** par le nom de la machine virtuelle (dans notre plan de reprise d'activité, nous avons deux machines virtuelles à Roubaix, une sous Windows et une autre sous Linux).
 
 ```bash
 acli vm.update_container nomvm container=UsedForDR
@@ -435,7 +429,7 @@ Saisissez le mot de passe du compte Nutanix de Prism Element
 
 Nous allons créer une catégorie avec deux valeurs dans Prism Central pour affectuer les machines virtuelles concernées par la réplication.
 
-Faites défiler le menu principal, cliquez sur `Categories`{.action} dans le sous menu `Administration`.
+Faites défiler le menu principal, cliquez sur `Categories`{.action} dans le sous menu `Administration`{.action}.
 
 ![06 - Add Categorie 01](images/06-add-categories01.png){.thumbnail}
 
@@ -457,11 +451,11 @@ La catégorie apparait dans la liste et elle est prête à être utilisée.
 
 Nous allons affecter deux machines virtuelles sur le cluster de Roubaix dans une catégorie et trois machines virtuelles sur le cluster de Gravelines dans une autre catégorie.
 
-Via le menu principal de Prism Central, cliquez sur `Vms`{.action} dans le sous menu **Compute & Storage**.
+Via le menu principal de Prism Central, cliquez sur `Vms`{.action} dans le sous menu `Compute & Storage`{.action}.
 
 ![07 - Add Categorie to VM Roubaix 01](images/07-add-categorie-to-vm-roubaix01.png){.thumbnail}
 
-Sélectionnez à gauche `les deux machines virtuelles`{.action} de Roubaix puis, dans le menu **Actions**, cliquez sur `Manage Categories`{.action}.
+Sélectionnez à gauche **les deux machines virtuelles** de Roubaix puis, dans le menu `Actions`{.action}, cliquez sur `Manage Categories`{.action}.
 
 ![07 - Add Categorie to VM Roubaix 02](images/07-add-categorie-to-vm-roubaix02.png){.thumbnail}
 
@@ -469,7 +463,7 @@ Ajoutez la catégorie `ProcectedVM: Roubaix`, cliquez ensuite sur `Save`{.action
 
 ![07 - Add Categorie to VM Roubaix 03](images/07-add-categorie-to-vm-roubaix03.png){.thumbnail}
 
-Sélectionnez à gauche `les trois machines virtuelles`{.action} de Gravelines et, dans le menu **Actions**, cliquez sur `Manage Categories`{.action}.
+Sélectionnez à gauche `les trois machines virtuelles`{.action} de Gravelines et, dans le menu `Actions`{.action}, cliquez sur `Manage Categories`{.action}.
 
 ![08 - Add Categorie to VM Gravelines 01](images/08-add-categorie-to-vm-gravelines01.png){.thumbnail}
 
@@ -493,7 +487,7 @@ Cliquez sur `Create Protection Policy`{.action}.
 
 ![09 - Create Protection Policy Roubaix 02](images/09-create-data-protection-roubaix02.png){.thumbnail}
 
-Saisissez `ROUBAIX-TO-GRAVELINES`{.action} dans **Policy name**, gardez **Local AZ** et cliquez sur `Select Cluster`{.action} dans **Primary Location**.
+Saisissez `ROUBAIX-TO-GRAVELINES` dans **Policy name**, gardez **Local AZ** et cliquez sur `Select Cluster`{.action} dans **Primary Location**.
 
 ![09 - Create Protection Policy Roubaix 03](images/09-create-data-protection-roubaix03.png){.thumbnail}
 
@@ -519,7 +513,7 @@ Cliquez à nouveau sur `Enable`{.action}.
 
 L'activation de l'option **Disaster Recovery** est en cours.
 
-Garder **Local AZ**, sélectionnez le cluster dans **Recovery Location** et cliquez sur `Save`{.action}.
+Garder `Local AZ`, sélectionnez le cluster dans **Recovery Location** et cliquez sur `Save`{.action}.
 
 ![09 - Create Protection Policy Roubaix 08](images/09-create-data-protection-roubaix09.png){.thumbnail}
 
@@ -555,7 +549,7 @@ Cliquez sur `Create Protection Policy`{.action}.
 
 ![10 - Create Protection Policy Gravelines 01](images/10-create-data-protection-gravelines01.png){.thumbnail}
 
-Choisissez comme nom `GRAVELINES-TO-ROUBAIX` dans **Policy Name**, gardez **Local AZ** et choisissez le cluster de Gravelines dans **Primary Location**. Cliquez ensuite sur `Save`{.action}.
+Choisissez comme nom `GRAVELINES-TO-ROUBAIX` dans **Policy Name**, gardez `Local AZ` et choisissez le cluster de Gravelines dans **Primary Location**. Cliquez ensuite sur `Save`{.action}.
 
 ![10 - Create Protection Policy Gravelines 02](images/10-create-data-protection-gravelines02.png){.thumbnail}
 
@@ -575,7 +569,7 @@ Cliquez sur `Next`{.action}.
 
 ![10 - Create Protection Policy Gravelines 06](images/10-create-data-protection-gravelines06.png){.thumbnail}
 
-Sélectionnez la catégorie `ProtectedVM : Gravelines`{.action} et cliquez sur `Add`{.action}.
+Sélectionnez la catégorie `ProtectedVM: Gravelines`{.action} et cliquez sur `Add`{.action}.
 
 ![10 - Create Protection Policy Gravelines 07](images/10-create-data-protection-gravelines07.png){.thumbnail}
 
@@ -607,7 +601,7 @@ Nous allons donc créer 3 sous-réseaux supplémentaires sur les clusters de Gra
 
 Aidez-vous de ce guide pour créer des VLAN sur vos clusters Nutanix : [isoler les machines de gestion de la production](https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/).
 
-Dans le tableau de bord **Subnets** de Prism Central, vous verrez six nouveaux sous-réseaux.
+Dans le tableau de bord `Subnets` de Prism Central, vous verrez six nouveaux sous-réseaux.
 
 ![11 - Create Test Subnet 01](images/11-create-testsubnet01.png){.thumbnail}
 
@@ -623,7 +617,7 @@ Maintenant que les réplications et les sous-réseaux sont en place, nous allons
 
 ##### **Création du plan de reprise d'activité pour le cluster de Roubaix**
 
-Dans le menu principal de Prism Central, cliquez sur `Recovery Plans`{.action} dans le sous-menu **Data Protection**. 
+Dans le menu principal de Prism Central, cliquez sur `Recovery Plans`{.action} dans le sous-menu `Data Protection`{.action}. 
 
 ![12 - Create Recovery Plan Roubaix 01](images/12-create-roubaix-recovery-plan01.png){.thumbnail}
 
@@ -853,7 +847,7 @@ Allez sur une machine virtuelle qui se trouve à Roubaix et qui fait partie du p
 
 ![15 - livemigration Roubaix to Gravelines 00](images/15-livemigration-roubaix-to-gravelines00.png){.thumbnail}
 
-Revenez sur votre plan de reprise et cliquez sur `Failover`{.action} dans le menu `More`.
+Revenez sur votre plan de reprise et cliquez sur `Failover`{.action} dans le menu `More`{.action}.
 
 ![15 - livemigration Roubaix to Gravelines 01](images/15-livemigration-roubaix-to-gravelines01.png){.thumbnail}
 
@@ -865,7 +859,7 @@ Cliquez ensuite sur `Failover`{.action}.
 
 ![15 - livemigration Roubaix to Gravelines 02](images/15-livemigration-roubaix-to-gravelines02.png){.thumbnail}
 
-Saisissez `Failover`{.action} et cliquez sur `Failover`.
+Saisissez `Failover` et cliquez sur `Failover`{.action}.
 
 ![15 - livemigration Roubaix to Gravelines 03](images/15-livemigration-roubaix-to-gravelines03.png){.thumbnail}
 
@@ -889,7 +883,7 @@ Après une migration, il est nécessaire d'inverser la réplication et le foncti
 
 ##### **Inversion de la réplication**
 
-Dans le menu principal de Prism Central, cliquez sur `Protections Policies`{.action} dans le sous-menu **Data Protection**.
+Dans le menu principal de Prism Central, cliquez sur `Protections Policies`{.action} dans le sous-menu `Data Protection`{.action}.
 
 ![16 - invert replication after failover 01](images/16-invert-replication-after-failover01.png){.thumbnail}
 
@@ -945,7 +939,7 @@ La réplication est inversée, cliquez sur le bouton <i class="icons-close icons
 
 ##### **Inversion du plan de reprise d'activité**
 
-Dans le menu principal de Prism Central, cliquez sur `Recovery Plans`{.action} dans le sous menu **Data Protection**.
+Dans le menu principal de Prism Central, cliquez sur `Recovery Plans`{.action} dans le sous menu `Data Protection`{.action}.
 
 ![17 - invert recovery plan after failover 01](images/17-invert-recovery-plan-after-failover01.png){.thumbnail}
 
@@ -953,7 +947,7 @@ Cliquez sur `Recovery VM from Roubaix to Gravelines`{.action}.
 
 ![17 - invert recovery plan after failover 02](images/17-invert-recovery-plan-after-failover02.png){.thumbnail}
 
-Dans le menu **More**, cliquez sur `Update`{.action}.
+Dans le menu `More`{.action}, cliquez sur `Update`{.action}.
 
 ![17 - invert recovery plan after failover 03](images/17-invert-recovery-plan-after-failover03.png){.thumbnail}
 
@@ -1008,7 +1002,7 @@ Reply from xx.xx.xx.xx: bytes=32 time=20ms TTL=58
 
 Laissez la commande ping tourner en permanence et retournez dans Prism Central.
 
-Dans le menu principal, cliquez sur `VMs`{.action} dans le sous-menu **Compute & Storage**.
+Dans le menu principal, cliquez sur `VMs`{.action} dans le sous-menu `Compute & Storage`{.action}.
 
 ![18 - fail on Gravelines 01](images/18-fail-on-gravelines01.png){.thumbnail}
 
