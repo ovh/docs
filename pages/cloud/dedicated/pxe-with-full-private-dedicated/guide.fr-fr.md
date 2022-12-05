@@ -27,11 +27,11 @@ Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous p
 Chaque serveur est muni au minimum de 2 interfaces réseaux, fonctionnants en réalité en liens aggrégés et assurant la redondance en cas de panne. <br>
 Vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit *public* et ceux, au contraire dit *privés* en passant par notre solution [vrack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
 
-Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire ne possédant **uniquement** des réseaux privés.
+Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
 Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
 
 La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
-Dans ce cas, le mecanisme de démarrage de la solution se retrouve inopérant, à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers doivent obligatoirement récupèrer leur configurations via les services réseaux mutualisés présents sur le réseau interne d'OVHcloud.
+par conséquent, le mecanisme de démarrage de la solution se retrouve inopérant, à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers doivent obligatoirement récupèrer leur configurations via les services réseaux mutualisés présents sur le réseau interne d'OVHcloud.
 
 
 ### Présentation rapide d'un démarrage en Netboot 
@@ -43,12 +43,12 @@ Dans ce cas, le mecanisme de démarrage de la solution se retrouve inopérant, �
 >  **iPXE**: utilisant un environnement standardisé client/serveur plus évolué, basé sur les protocoles HTTP,iSCSI, AoE, FCoE, Wi-Fi afin de permettre un démarrage/deploiement via le réseau du système client.
 > 
 
-dérourelemnt du Netboot:
+déroulement du Netboot (Network boot):
 
-* Mode de démarrage en PXE (solution de démarrage réseau bas niveau) via l'interface réseau d'une machine cliente active permettant de communiquer avec le serveur **DHCP** de ce même réseau.Ce mode est défini au préalable dans le bios de votre serveur via le menu *boot order*.
-* Le serveur DHCP peut donc lui adresser les informations nécessaires, une adresse IP, un fichier PXE (sous forme de binaire executable), ainsi qu'un **script** PXE associé.
+* Mode de démarrage en **PXE** (solution de démarrage réseau bas niveau) via l'interface réseau d'une machine cliente active permettant de communiquer avec le serveur **DHCP** de ce même réseau. Ce mode est défini au préalable dans le bios de votre serveur via le menu *boot order*.
+* Le serveur **DHCP** peut donc lui adresser les informations nécessaires afin de récupérer: une adresse IP, un firmware PXE (sous forme de binaire executable), ainsi que le **script** PXE associé.
 * le serveur client va chercher à récupérer ce binaire en protocol **TFTP**, pour ensuite le charger dans sa configuration.
-* Le binaire récupéré et chargé en tant que firmware, et peut donc désormais éxécuter le script associé qui contiendra les informations permettant la selection du type d'amorçage d'un systeme pour la machine cliente:<br>
+* Le binaire récupéré et chargé en tant que firmware, peut donc désormais éxécuter le script associé qui contiendra les informations permettant la selection de recherche du type d'amorçage d'un systeme pour la machine cliente:<br>
 disque local, volume réseau, usb, etc...
 
 
@@ -63,11 +63,9 @@ disque local, volume réseau, usb, etc...
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
 * Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
 * Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez au préalable configuré notre fonctionnabilité [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
- Exemple d'une machine éligible à notre procédure, via l'onglet `Interfaces réseau`{.action} du manager:<br>
-
+ Exemple d'une machine éligible à notre procédure, via l'onglet `Interfaces réseau`{.action} de son manager:<br>
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
 ![OLA2](images/Scr_OLA2.png){.thumbnail}
-
 * Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (DHCP, TFTP et HTTP). Le système d'exploitation sera celui de votre choix.
 
 
@@ -115,8 +113,9 @@ exemple d'infrastructure privée basique (schéma layer 2):
 
 Exemple:
 
-* services hébergés/mutualisés sur *Node 0*.
-* une seule machine cliente *Node 1* en OLA.
+* services hébergés/mutualisés sur **Node 0**.
+* une seule machine cliente **Node 1** avec OLA actif.
+
 
 
 
@@ -305,6 +304,7 @@ exit 1
 
 #### le service **HTTP**
 Il est question de rendre disponible (en HTTP) les ressources permettant le lancement du menu rEFInd que le script iPXE doit récupérer, à savoir:<br>
+
 * le binaire éxécutable `refind_x64.efi`
 * le fichier de configuration `refind.conf`
 
@@ -368,7 +368,7 @@ correspond au résultat des étapes 8 à 13 <br>
 **Suggestions**
 
 service DNS:<br>
-Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/etc/hosts`,ou bien utiliser, par exemple, un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
+Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/etc/hosts`ou bien utiliser, par exemple, un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
 
 service NTP:<br>
 Il est fortement conseillé d'utiliser un service DNS surtout si votre infrastructure comprends plusieurs machines.
@@ -395,11 +395,8 @@ iptables -I INPUT -i ethX -p tcp --dport 53 -j ACCEPT
 ## Aller plus loin
 
 Comprendre et/ou personnaliser votre service DHCP via ce [lien](https://wiki.debian.org/fr/DHCP_Server)
-
 Comprendre ou découvrir NTP via ce [lien](https://fr.wikipedia.org/wiki/Network_Time_Protocol)
-
 Comprendre et/ou personnaliser votre service rEFInd via ce [lien](https://fr.wikipedia.org/wiki/REFInd)
-
 
 
 
