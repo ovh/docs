@@ -7,7 +7,7 @@ excerpt: Learn how to use you Active Directory server as an authentication sourc
 section: 'Funcionalidades de VMware vSphere'
 ---
 
-**Last updated 25th November 2022**
+**Last updated 05th December 2022**
 
 ## Objective
 
@@ -191,6 +191,89 @@ The group appears in the users list for your cluster, and members of this group 
 >
 
 ![03 add group 04](images/03-addgroup04.png)
+
+### Using the OVHcloud API
+
+You can use the OVHcloud API to perform the same operations (Add a directory and allow a group or user to connect to your vCenter interface).
+
+#### Add your Active Directory server
+
+Retrieve your « serviceName » using the following API call:
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud
+>
+
+Then, use the following API call to add your Active Directory server as an authentication source.
+
+You will have to specify information retreived from the previous steps. Do not check the "noSsl" checkbox.
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory
+>
+
+![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/04-federation_create.png){.thumbnail}
+
+Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) on your Hosted Private Cloud `Operations`{.action} tab.
+
+> [!primary]
+>
+> If the provided information is invalid, the operation will be canceled and a message will show the returned error.
+>
+> ![Canceled operation](images/05-federation_canceled.png){.thumbnail}
+
+####  Allow an Active Directory user to access your Hosted Private Cloud
+
+You can allow an Active Directory user to access your Hosted Private Cloud through the OVHcloud API.
+
+Retrieve your « activeDirectoryId » using the following API call:
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
+>
+
+Then, use the following API call to allow an Active Directory user to access your Hosted Private Cloud.
+
+You will have to specify the "pre-Winows 2000" username as it is inside your Active Directory.
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser
+
+
+![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser](images/06-federation_grant_user.png){.thumbnail}
+
+Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) on your Hosted Private Cloud `Operations`{.action} tab.<br>
+If the provided information is invalid, the operation will be canceled and a message will show the returned error.
+
+Once allowed, the user and its permissions will be manageable directly from you OVHcloud Control Panel as any other Hosted Private Cloud user.
+
+#### Allow an Active Directory group to access your Hosted Private Cloud
+
+You can allow directly an Active Directory user set (group) to access your Hosted Private Cloud through the OVHcloud API.
+
+Retrieve your « activeDirectoryId » using the following API call:
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
+>
+
+Then, use the following API call to allow an Active Directory group to access your Hosted Private Cloud.
+
+You will have to specify the "pre-Winows 2000" group name as it is inside your Active Directory.
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup
+
+![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/07-federation_grant_group.png){.thumbnail}
+
+Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) on your Hosted Private Cloud `Operations`{.action} tab.<br>
+If the provided information is invalid, the operation will be canceled and a message will show the returned error.
 
 ## Go further
 

@@ -192,7 +192,7 @@ Le groupe apparaît dans la liste des utilisateurs de votre cluster, les membres
 ![03 add group 04](images/03-addgroup04.png)
 
 
-### Utilisation de l'API OVHcloud
+### Utiliser l'API OVHcloud
 
 Il est possible d'utiliser l'API OVHcloud pour effectuer les mêmes opérations (Ajout d'un annuaire et autorisation d'un groupe ou d'un utilisateur à se connecter à votre interface vCenter).
 

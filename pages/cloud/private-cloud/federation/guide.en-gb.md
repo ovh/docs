@@ -5,7 +5,7 @@ excerpt: Learn how to use you Active Directory server as an authentication sourc
 section: 'VMware vSphere features'
 ---
 
-**Last updated 25th November 2022**
+**Last updated 05th December 2022**
 
 ## Objective
 
@@ -194,9 +194,7 @@ The group appears in the users list for your cluster, and members of this group 
 
 You can use the OVHcloud API to perform the same operations (Add a directory and allow a group or user to connect to your vCenter interface).
 
-### Add your Active Directory server
-
-Setting up an Active Directory as an authentication source is done through the OVHcloud API.
+#### Add your Active Directory server
 
 Retrieve your « serviceName » using the following API call:
 
@@ -216,7 +214,7 @@ You will have to specify information retreived from the previous steps. Do not c
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/04-federation_create.png){.thumbnail}
 
-Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) on your Hosted Private Cloud `Operations`{.action} tab.
+Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) on your Hosted Private Cloud `Operations`{.action} tab.
 
 > [!primary]
 >
