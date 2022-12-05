@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated December 5<sup>th</sup>, 2022.**
 
 In this tutorial we are going to guide you with the install of [Agones](https://agones.dev){.external} on your OVHcloud Managed Kubernetes Service. Agones is an open-source, multiplayer, dedicated game-server hosting built on Kubernetes.
 
@@ -87,14 +87,12 @@ There are several ways to install Agones in a Kubernetes cluster. For our test w
 The first step to install Agones is to setup a service account with enough permissions to create some special RBAC resource types.
 
 ```bash
-kubectl create clusterrolebinding cluster-admin-binding \
-  --clusterrole=cluster-admin --serviceaccount=kube-system:default
+kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --serviceaccount=kube-system:default
 ```
 
 Now we have the [Cluster Role Binding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding){.external} needed for the installation:
 
-<pre class="console"><code>$ kubectl create clusterrolebinding cluster-admin-binding \
->   --clusterrole=cluster-admin --serviceaccount=kube-system:default
+<pre class="console"><code>$ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --serviceaccount=kube-system:default
 clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-binding created</code></pre>
 
 ## Installing the Agones chart
@@ -105,10 +103,11 @@ Now let's continue by adding Agones repository to Helm's repository list.
 helm repo add agones https://agones.dev/chart/stable
 ```
 
-And then installing the stable Agones chart:
+And then, after creating the `agones-system` namespace, install the stable Agones chart:
 
 ```bash
-helm install --name my-agones --namespace agones-system agones/agones
+kubectl create namespace agones-system
+helm install my-agones --namespace agones-system agones/agones
 ```
 
 After some moments, Agones should we installed:
@@ -166,16 +165,16 @@ Where all the `Conditions` should have status `True`.
 
 ## Deploying a game server
 
-The Agones <em>Hello world</em> is rather boring, a simple [Xonotic game server](https://github.com/GoogleCloudPlatform/agones/blob/release-0.9.0/examples/xonotic){.external}.
+The Agones <em>Hello world</em> is rather boring, a simple [Xonotic game server](https://github.com/googleforgames/agones/tree/release-1.27.0/examples/xonotic){.external}.
 
 [Xonotic](https://www.xonotic.org/){.external} is an open-source multi-player FPS, and a rather good one, with lots of interesting game modes, maps, weapons and customization options.
 
 Deploying a Xonotic game server over Agones is rather easy:
 
-<pre><code class="language-bash">kubectl create -f https://raw.githubusercontent.com/GoogleCloudPlatform/agones/release-0.9.0/examples/xonotic/gameserver.yaml</code></pre>
-The game server deployment can take some moments, so we need to wait until its status is `Ready` before using it. We can fetch the status with:
+<pre><code class="language-bash">kubectl create -f https://raw.githubusercontent.com/googleforgames/agones/release-1.27.0/examples/xonotic/gameserver.yaml</code></pre>
+The game server deployment can take some moments, so we need to wait until its status is `Ready` or `Unhealthy` before using it. We can fetch the status with:
 <pre><code class="language-bash">kubectl get gameserver</code></pre>
-We wait until the fetch gives a `Ready` status on our game server:
+We wait until the fetch gives a `Ready` or `Unhealthy` status on our game server:
 <pre class="console"><code>kubectl get gameserver
 NAME      STATE   ADDRESS         PORT   NODE       AGE
 xonotic   Ready   51.83.xxx.yyy   7094   node-zzz   5d
@@ -189,15 +188,15 @@ So now that you have a server, let's test it!
 
 Download the Xonotic client (it runs on Windows, Linux and MacOS, so there is no excuse), and launch it:
 
-![Xonotic](https://blog.ovh.com/fr/blog/wp-content/uploads/2019/04/Screenshot-from-2019-04-10-02-28-13-1280x720.png){.thumbnail}
+![Xonotic](images/agones-004.png){.thumbnail}
 
 Then go to the <em>Multiplayer</em> menu and enter the address and port of our game server:
 
-![Multiplayer menu](https://blog.ovh.com/fr/blog/wp-content/uploads/2019/04/Screenshot-from-2019-04-10-02-28-41-1280x720.png){.thumbnail}
+![Multiplayer menu](images/agones-005.png){.thumbnail}
 
 And you are ready to play!
 
-![Let's frag](https://blog.ovh.com/fr/blog/wp-content/uploads/2019/04/Screenshot-from-2019-04-10-02-35-36-1280x720.png){.thumnbnail}
+![Let's frag](images/agones-006.png){.thumnbnail}
 
 ### And on the server side?
 
