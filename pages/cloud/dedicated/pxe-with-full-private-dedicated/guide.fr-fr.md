@@ -399,6 +399,7 @@ iptables -I INPUT -i ethX -p tcp --dport 53 -j ACCEPT
 ## Aller plus loin
 
 Comprendre et/ou personnaliser votre service DHCP via ce [lien](https://wiki.debian.org/fr/DHCP_Server).<br>
+Comprendre et/ou personnaliser votre iPXE via ce [lien](https://ipxe.org/docs)
 Comprendre ou découvrir NTP via ce [lien](https://fr.wikipedia.org/wiki/Network_Time_Protocol).<br>
 Comprendre et/ou personnaliser votre service rEFInd via ce [lien](https://fr.wikipedia.org/wiki/REFInd).<br>
 
