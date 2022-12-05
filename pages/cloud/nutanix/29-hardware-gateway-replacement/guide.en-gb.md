@@ -6,7 +6,7 @@ section: Network & Security
 order: 10
 ---
 
-**Last updated 10th November 2022**
+**Last updated 5th December 2022**
   
 ## Objective
 
