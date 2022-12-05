@@ -77,19 +77,19 @@ processus complet de démarrage Netboot:
 | étape | description / détails |
 |---|---|
 |1|La machine client reçoit une demande de mise sous tension, le mode Netboot est sélectionné|
-|2|requête de l'interface réseau vers DHCP (discover)|
-|3|réponse et attribution d'une adresse IP via le DHCP (offer/request/ack)|
-|4|requête pour récuperer le binaire iPXE|
-|5|récupération du binaire en TFTP|
-|6|chargement et initialisation de l'interface réseau avec le nouveau firmware|
-|7|requête DHCP pour récupérer le script associé au binaire iPXE|
-|8|récupération du script iPXE|
-|9|éxécution des commandes shell iPXE contenu dans le précédent script|
-|10|commande shell iPXE pour récuperer en HTTP les sources (binaire + fichier de config) pour le bootloader rEFInd|
-|11|commande shell iPXE pour récupérer et éxécuter le binaire rEFInd|
-|12|le binaire rEFInd scanne les disques locaux pour détecter les secteurs d'amorçages |
+|2|Requête de l'interface réseau vers DHCP (discover)|
+|3|Réponse et attribution d'une adresse IP via le DHCP (offer/request/ack)|
+|4|Requête pour récuperer le binaire iPXE|
+|5|Récupération du binaire en TFTP|
+|6|Chargement et initialisation de l'interface réseau avec le nouveau firmware|
+|7|Requête DHCP pour récupérer le script associé au binaire iPXE|
+|8|Récupération du script iPXE|
+|9|Exécution des commandes shell iPXE contenu dans le précédent script|
+|10|Commande shell iPXE pour récuperer en HTTP les sources (binaire + fichier de config) pour le bootloader rEFInd|
+|11|Commande shell iPXE pour récupérer et éxécuter le binaire rEFInd|
+|12|Le binaire rEFInd scanne les disques locaux pour détecter les secteurs d'amorçages |
 |13|rEFInd utilise les secteurs d'amorçages présents via son bootloader|
-|14|chargement du système d'exploitation associé|
+|14|Chargement du système d'exploitation associé|
 |15|Système démarré|
 
 
