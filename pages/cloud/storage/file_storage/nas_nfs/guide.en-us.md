@@ -61,13 +61,13 @@ ubuntu@server:~$ sudo apt install nfs-common
 Then use the following mount command:
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Example:**
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 You can now access your mounted partition at the specified folder.
@@ -100,13 +100,13 @@ centos@server:~$ sudo systemctl restart rpcbind
 To mount your partition, use the following command:
 
 ```bash
-centos@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+centos@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Example:**
 
 ```bash
-centos@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+centos@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 You can now access your mounted partition at the specified folder.
@@ -129,13 +129,13 @@ fedora@server:~$ sudo dnf -y install nfs-utils
 Then use the following mount command:
 
 ```bash
-fedora@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+fedora@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Example:**
 
 ```bash
-fedora@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+fedora@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 You can now access your mounted partition at the specified folder.

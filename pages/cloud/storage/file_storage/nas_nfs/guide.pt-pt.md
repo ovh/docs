@@ -63,13 +63,13 @@ ubuntu@server:~$ sudo apt install nfs-common
 De seguida, utilize o seguinte comando de montagem:
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+ubuntu@server:~$ sudo mount -t nfs_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Exemplo:**
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Já pode aceder à sua partição montada na pasta especificada.
@@ -98,13 +98,13 @@ centos@server:~$ sudo systemctl restart rpcbind
 Para montar a sua partição, utilize o seguinte comando:
 
 ```bash
-centos@server:~$ sudo mount -t nfs_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+centos@server:~$ sudo mount -t nfs_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Exemplo:**
 
 ```bash
-centos@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+centos@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Já pode aceder à sua partição montada na pasta especificada.
@@ -113,7 +113,7 @@ Já pode aceder à sua partição montada na pasta especificada.
 >
 > A fim de automatizar o processo de montagem em cada arranque do servidor, adicione a seguinte linha ao ficheiro `/etc/fstab`:
 >
-> `IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER nfs rw 0`
+> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0`
 >
 
 ### Fedora
@@ -127,13 +127,13 @@ fedora@server:~$ sudo dnf -y instal nfs-utils
 De seguida, utilize o seguinte comando de montagem:
 
 ```bash
-fedora@server:~$ sudo mount -t nfs_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+fedora@server:~$ sudo mount -t nfs_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Exemplo:**
 
 ```bash
-fedora@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+fedora@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Já pode aceder à sua partição montada na pasta especificada.
