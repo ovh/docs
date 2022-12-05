@@ -16,8 +16,8 @@ If you have just purchased an MX Plan solution, this means you have email addres
 
 ## Requirements
 
-- an MX plan solution, This is available via: a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), a  [free Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or an MX Plan solution only
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and `Web Cloud`{.action} section
+- An MX plan solution, available with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), a [free Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and `Web Cloud`{.action} section
 
 ## Instructions <a name="instructions"></a>
 
@@ -32,7 +32,7 @@ To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?act
 
 ### New version of the MX Plan solution <a name="newmxplan"></a>
 
-#### Accessing your solution management
+#### Managing your email accounts
 
 If you are using the new version of the MX Plan solution, this is the display you should get. If not, please ensure you follow the right path [by referring to the information above](#instructions).
 
@@ -40,15 +40,15 @@ If you are using the new version of the MX Plan solution, this is the display yo
 
 #### Adding an email account
 
-To configure your email addresses, go to the `Email accounts`{.action} tab. The window that opens will list the accounts that are already available, as well as those that you can still create. To add a new email account, click `Add account`{.action}.
+To configure your email accounts, go to the `Email accounts`{.action} tab. The window that opens will list the accounts that are already available, as well as those that you can still create. To add a new email account, click `Add account`{.action}.
 
 ![email](images/mxplan-starter-new-step2.png){.thumbnail}
 
-In the pop-up window, enter the following information:
+In the popup window, enter the following information:
 
 |Information|Description|
 |---|---|
-|Email account|A temporary name is already pre-filled in the text box: delete it and enter your new email address (e.g. firstname.surname). The domain name for the email address is already pre-selected in the list.|
+|Email account|A temporary name is already pre-filled in the text box: delete it and enter your new email address (e.g. firstname.surname). The domain name for the email address is already preselected in the list.|
 |First name|Enter a first name.|
 |Last name|Enter a last name.|
 |Display name|Enter the name that will be displayed when sending emails from this address.|
@@ -58,11 +58,11 @@ Once you have completed the text fields, click `Next`{.action} and then check th
 
 ![email](images/mxplan-starter-new-step3.png){.thumbnail}
 
-#### Using your email addresses
+#### Using your email accounts
 
-Once you have created your email addresses, you can start using them straight away. You can do this using Outlook Web Access (OWA) webmail, or you can use any software you want.
+Once you have created your email addresses, you can start using them straight away. You can do this using Outlook Web App (OWA) webmail, or you can use any software you want.
 
-##### **1. Using Outlook Web Access (OWA) webmail**
+##### **1. Using Outlook Web App (OWA) webmail**
 
 Go to the [Webmail login](https://www.ovh.co.uk/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
 
@@ -72,15 +72,15 @@ When you first log in to the webmail interface, you are prompted to set the inte
 
 ##### **2. Using the software of your choice**
 
-To use your email address with a third-party software, you will need to configure this email address on the device you want to use (PC, Mac, smartphone or tablet). To do this, you can use our configuration guides:
+To use your email address with a third-party software, you will need to configure this account on the device you want to use (PC, Mac, smartphone or tablet). To do this, you can use our configuration guides:
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
 |[Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)|[Outlook Windows](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016/)|[MacOS Mail (latest version)](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/)|[Android (latest version)](https://docs.ovh.com/gb/en/emails/configuration-android/)|
-|[Thunderbird](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/)|[Mail for iPhone or iPad](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/)|
-|||[Thunderbird Mac OS](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|
+|[Thunderbird](https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/)|[Outlook Mac OS](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/)|[Mail for iPhone or iPad](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/)|
+|||[Thunderbird Mac OS](https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-mac/)|
 
-If you just need the information required to configure your email address, the settings to use are listed below:
+If you just need the information required to configure your email accounts, the settings to use are listed below:
 
 - **For IMAP configuration (recommended)**
 
@@ -119,21 +119,21 @@ To do this, you will need to create a redirection.
 
 You can do this in two ways:
 
-- creating a redirection via webmail, via the inbox rules. To do this, please follow our guide on [Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/#example-1-redirecting-emails-to-another-address).
+- Creating a redirection in the webmail interface, via inbox rules. To do this, please follow our guide on [Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/#example-1-redirecting-emails-to-another-address).
 
-- creating a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](https://docs.ovh.com/gb/en/emails/email-redirection-guide/#mx-plan-new-version_1) redirections.
+- Creating a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](https://docs.ovh.com/gb/en/emails/email-redirection-guide/#mx-plan-new-version_1) redirections.
 
-##### **Voicemail**
+##### **Automated responses**
 
-You may go on holidays, or you may not have access to your email address for a certain period of time.
+You may go on holidays, or you will not have access to your email accounts for a certain period of time.
 
-You can then create an automatic reply. Please follow our guide on [Setting up automatic replies in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/).
+You can then use the automatic reply function of your email accounts. Please follow our guide on [Creating an autoreply for an email account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/).
 
 ##### **Delegations**
 
-You may want to send an email from your personal email address, **instead of** or **from another** email address associated with your domain name.
+You may want to send an email from your own email account using an email address associated with another account of your organisation.
 
-To do this, you will need to configure the delegation for the email address concerned. Please follow our guide on [Delegating account rights](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_grant_full_access_permissions_for_an_account/).
+To do this, you will need to configure the delegation for the email account concerned. Please follow our guide on [delegating account rights](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_grant_full_access_permissions_for_an_account/).
 
 ##### **Mailing lists**
 
@@ -141,9 +141,9 @@ You may want to send a regular newsletter to your contacts.
 
 To do this, you can create a mailing list. Please follow our guide on [Managing and using mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/).
 
-##### **Bottom of page**
+##### **Footer**
 
-You may want to apply a global signature to all the email addresses for your domain name.
+You may want to apply a global signature to all the email accounts for your domain name.
 
 You can do this in the footer, which can be configured from your Control Panel. Please follow our guide on [Adding a footer to your emails](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_create_an_automatic_signature/).
 
@@ -157,11 +157,11 @@ If you are using the legacy version of the MX Plan solution, this is the display
 
 #### Adding an email account
 
-To create an email address, go to the `Email accounts`{.action} tab. The table that appears will contain all of the email addresses you have created as part of your MX Plan solution. Then click the `Create Email Address`{.action} button.
+To create an email account, go to the `Email accounts`{.action} tab. The table that appears will contain all of the email accounts you have created as part of your MX Plan solution. Then click the `Create an email address`{.action} button.
 
 ![email](images/mxplan-starter-legacy-step2.png){.thumbnail}
 
-In the pop-up window, enter the following information:
+In the popup window, enter the following information:
 
 |Information|Description|  
 |---|---|  
@@ -174,29 +174,29 @@ Once you have completed the text fields, click `Next`{.action} and then check th
 
 ![email](images/mxplan-starter-legacy-step3.png){.thumbnail}
 
-#### Using your email addresses
+#### Using your email accounts
 
-Once you have created your email addresses, you can start using them straight away. There are two ways you can do this: using the RoundCube webmail interface, or using the software of your choice.
+Once you have created your email accounts, you can start using them straight away. There are two ways you can do this: using the RoundCube webmail interface, or using the software of your choice.
 
 ##### **1. Using RoundCube webmail**
 
-Go to the [Webmail login](https://www.ovh.co.uk/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
+Go to the [webmail login](https://www.ovh.co.uk/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
 
-Your inbox will appear. To find out how to use your email address via the RoundCube webmail interface, use our guide “[Use your email address via the RoundCube webmail interface ](https://docs.ovh.com/fr/emails/utilisation-roundcube/)”.
+Your inbox will appear. To find out how to use your email accounts via the RoundCube webmail interface, use our guide on [Using your email account via the RoundCube webmail interface](https://docs.ovh.com/gb/en/emails/roundcube-userguide/).
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
 ##### **2. Using the software of your choice**
 
-To use your email address with a third-party software, you will need to configure this email address on the device you want to use (PC, Mac, smartphone or tablet). To do this, you can use our configuration guides:
+To use your email accounts with a third-party software, you will need to configure them on the device you want to use (PC, Mac, smartphone or tablet). To do this, you can use our configuration guides:
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
 |[Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/)|[Outlook Windows](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016/)|[MacOS Mail (latest version)](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/)|[Android (latest version)](https://docs.ovh.com/gb/en/emails/configuration-android/)|
-|[Thunderbird](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/)|[Mail for iPhone or iPad](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/)|
-|||[Thunderbird Mac OS](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|
+|[Thunderbird](https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/)|[Outlook Mac OS](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/)|[Mail for iPhone or iPad](https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/)|
+|||[Thunderbird Mac OS](https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-mac/)|
 
-If you just need the information required to configure your email address, the settings to use are listed below:
+If you just need the information required to configure your email accounts, the settings to use are listed below:
 
 - **For IMAP configuration (recommended)**
 
@@ -214,7 +214,7 @@ If you just need the information required to configure your email address, the s
 
 > [!warning]
 >
-> If you have any problems configuring your email address on your device, we recommend using [our configuration guides](../) or getting in touch with the publishers of the application you are using, because you may need to make a change that is specific to the application.
+> If you have any problems configuring your email accounts on your device, we recommend using [our configuration guides](../) or contacting the publishers of the application you are using, because you may need to make a change that is specific to the application.
 
 #### Advanced features
 
@@ -222,19 +222,19 @@ If you just need the information required to configure your email address, the s
 
 You may want to redirect your emails to another recipient, create an alias or systematically copy another email address.
 
-To do this, you will need to create a redirection. Please follow our guide on [Using email](https://docs.ovh.com/gb/en/emails/email-redirection-guide/#mx-plan-legacy-version) redirections.
+To do this, you will need to create a redirection. Please follow our guide on [Using email redirections](https://docs.ovh.com/gb/en/emails/email-redirection-guide/#mx-plan-legacy-version).
 
-##### **Voicemail**
+##### **Automated responses**
 
-You may go on holidays, or you will not have access to your email address for a certain period of time.
+You may go on holidays, or you will not have access to your email accounts for a certain period of time.
 
-You can then use the automatic reply on your email address. Please follow our guide on [Creating an auto-reply for an email](https://docs.ovh.com/gb/en/emails/set-up-email-responder/) address.
+You can then use the automatic reply function of your email accounts. Please follow our guide on [Creating an autoreply for an email account](https://docs.ovh.com/gb/en/emails/set-up-email-responder/).
 
 ##### **Delegations**
 
-You may want to **delegate all the email service for a domain name to another OVHcloud account** , or **delegate one or more email accounts to another OVHcloud account**. For example, you can allow the holder of this other OVHcloud account to change the password for an email address.
+You may want to **delegate all the email services for a domain name to another OVHcloud account** , or **delegate one or more email accounts to another OVHcloud account**. For example, you can allow the holder of this other OVHcloud account to change the password for an email account.
 
-Please follow our guide on [Delegating email management to another person](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/).
+Please follow our guide on [Delegating email management to another person](https://docs.ovh.com/gb/en/emails/delegate-managing-emails/).
 
 ##### **Mailing lists**
 

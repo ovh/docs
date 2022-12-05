@@ -65,13 +65,13 @@ Po uzupełnieniu pól kliknij `Dalej`{.action}, a następnie sprawdź informacje
 
 #### Korzystanie z kont e-mail
 
-Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz skorzystać z jednej z dwóch możliwości: webmail Outlook Web Access (OWA) lub innego programu.
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz skorzystać z jednej z dwóch możliwości: webmail Outlook Web App (OWA) lub innego programu.
 
-##### **1. Korzystanie z Webmail Outlook Web Access (OWA)**
+##### **1. Korzystanie z Webmail Outlook Web App (OWA)**
 
 Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovh.pl/mail/), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
-Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Outlook Web Access (OWA)](https://docs.ovh.com/pl/emails/korzystanie-owa/).
+Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Outlook Web App (OWA)](https://docs.ovh.com/pl/emails/korzystanie-owa/).
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 

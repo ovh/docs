@@ -64,13 +64,13 @@ Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action} 
 
 #### Utilizar las direcciones de correo
 
-Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. Para ello, puede utilizar el webmail Outlook Web Access (OWA) o el programa que desee.
+Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. Para ello, puede utilizar el webmail Outlook Web App (OWA) o el programa que desee.
 
-##### **1. Utilizar el webmail Outlook Web Access (OWA)**
+##### **1. Utilizar el webmail Outlook Web App (OWA)**
 
 Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde el webmail Outlook Web Access (OWA)](https://docs.ovh.com/es/emails/uso-outlook-en-la-web/).
+La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde el webmail Outlook Web App (OWA)](https://docs.ovh.com/es/emails/uso-outlook-en-la-web/).
 
 ![Correo electrónico](images/mxplan-starter-new-step4.png){.thumbnail}
 

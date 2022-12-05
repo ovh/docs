@@ -1,5 +1,5 @@
 ---
-title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web Access (OWA)'
+title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)'
 slug: korzystanie-owa
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
 section: 'Pierwsze kroki'

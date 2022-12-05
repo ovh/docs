@@ -17,7 +17,7 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 ## Wymagania początkowe
 
 - Wykupienie usługi MX Plan Jest ona dostępna w ramach oferty: [Hosting](https://www.ovhcloud.com/pl/web-hosting/){.external}, [Hosting Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} lub oferty MX Plan zamówionej oddzielnie.
-- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail](https://www.ovh.pl/mail/){.external} Outlook Web Access (OWA).
+- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail](https://www.ovh.pl/mail/){.external} Outlook Web App (OWA).
 
 > [!primary]
 >
@@ -83,7 +83,7 @@ Po zmianie hasła kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.
 
 Po zmianie hasła możesz zalogować się do konta e-mail. Możesz to zrobić na dwa różne sposoby.
 
-- Zaloguj się na stronie **Logowanie do interfejsu Webmail**, po czym wprowadź odpowiedni adres e-mail oraz hasło. Jeśli właśnie zmieniłeś hasło i uwierzytelnienie nie powiodło się, odczekaj kilka chwil, następnie spróbuj zalogować się ponownie. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Outlook Web Access (OWA)](../korzystanie-owa/){.external}.
+- Zaloguj się na stronie **Logowanie do interfejsu Webmail**, po czym wprowadź odpowiedni adres e-mail oraz hasło. Jeśli właśnie zmieniłeś hasło i uwierzytelnienie nie powiodło się, odczekaj kilka chwil, następnie spróbuj zalogować się ponownie. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Outlook Web App (OWA)](../korzystanie-owa/){.external}.
 
 - **Użyj kompatybilnego programu pocztowego**: konieczne jest wprowadzenie nowego hasła we wszystkich urządzeniach, w których konto e-mail zostało skonfigurowane. W przypadku niektórych programów pocztowych okno, do którego należy wpisać nowe hasło do konta e-mail wyświetli się automatycznie. Jeśli tak się nie stanie, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem używanego przez Ciebie oprogramowania.
 

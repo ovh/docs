@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 10.09.2021**
+**Letzte Aktualisierung am 02.12.2022**
 
 
 ## Ziel
@@ -44,7 +44,7 @@ Beachten Sie im nächsten Schritt die Kosteninformation und klicken Sie dann auf
 
 ### Schritt 2: Einen Snapshot erstellen
 
-Sobald die Option aktiviert ist, klicken Sie auf `...`{.action} neben der Option “Snapshot”. Im Kontextmenü klicken Sie auf `Snapshot erstellen`{.action}. Das Erstellen des Snapshot kann einige Minuten dauern. Anschließend wird der Zeitstempel der Erstellung im Bereich **Zusammenfassung der Optionen** angezeigt.
+Sobald die Option aktiviert ist, klicken Sie auf `...`{.action} neben der Option “Snapshot”. Im Kontextmenü klicken Sie auf `Snapshot erstellen`{.action}. Die Dauer der Erstellung des Snapshots hängt vom verwendeten Speicherplatz ab. Anschließend wird der Zeitstempel der Erstellung im Bereich **Zusammenfassung der Optionen** angezeigt.
 
 ### Schritt 3: Einen Snapshot löschen/wiederherstellen
 
@@ -56,7 +56,7 @@ Wenn Sie sicher sind, dass Sie Ihren VPS auf den Stand des Snapshots zurücksetz
 
 > [!alert]
 >
-> Dabei ist zu beachten, dass der Snapshot im Zuge der Wiederherstellung gelöscht wird. Wenn Sie einen identischen Snapshot behalten möchten, ist es notwendig,  einen neuen Snapshot zu erzeugen, bevor Sie Änderungen am wiederhergestellten System vornehmen.
+> Dabei ist zu beachten, dass der Snapshot im Zuge der Wiederherstellung gelöscht wird. Wenn Sie einen identischen Snapshot behalten möchten, ist es notwendig, einen neuen Snapshot zu erzeugen, bevor Sie Änderungen am wiederhergestellten System vornehmen.
 >
 
 ### Optimale Vorgehensweise zur Snapshot-Erstellung

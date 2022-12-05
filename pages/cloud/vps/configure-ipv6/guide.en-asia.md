@@ -6,7 +6,7 @@ section: 'Network management'
 order: 1
 ---
 
-**Last updated 18th January 2021**
+**Last updated 1st December 2022**
 
 ## Objective
 
@@ -207,11 +207,13 @@ network:
             match:
               name: eth0
             addresses:
-              - "YOUR_IPV6/IPv6_PREFIX"
-            gateway6: "IPv6_GATEWAY"
+              - YOUR_IPV6/IPv6_PREFIX
+            gateway6: IPv6_GATEWAY
             routes:
-              - to: "IPv6_GATEWAY"
+              - to: IPv6_GATEWAY
                 scope: link
+              - to: ::/0
+                via: IPv6_GATEWAY
 ```
 
 > [!warning]

@@ -5,7 +5,7 @@ excerpt: "Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud"
 section: 'Réseau et IP'
 ---
 
-**Dernière mise à jour le 18/01/2021**
+**Dernière mise à jour le 01/12/2022**
 
 ## Objectif
 
@@ -225,12 +225,15 @@ network:
             match:
               name: eth0
             addresses:
-              - "YOUR_IPV6/IPv6_PREFIX"
-            gateway6: "IPv6_GATEWAY"
+              - YOUR_IPV6/IPv6_PREFIX
+            gateway6: IPv6_GATEWAY
             routes:
-              - to: "IPv6_GATEWAY"
+              - to: IPv6_GATEWAY
                 scope: link
+              - to: ::/0
+                via: IPv6_GATEWAY
 ```
+
 > [!warning]
 >
 > Il est important de respecter l'alignement de chaque élément de ce fichier tel que représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace est nécessaire.

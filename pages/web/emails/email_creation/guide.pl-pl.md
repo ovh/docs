@@ -75,7 +75,7 @@ Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od lic
 
 Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovhcloud.com/pl/mail/){.external}, po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
-Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail Outlook Web Access (OWA), zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail przy użyciu Webmail Outlook Web Access (OWA)](https://docs.ovh.com/pl/emails/korzystanie-owa/){.external}.
+Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail Outlook Web App (OWA), zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](https://docs.ovh.com/pl/emails/korzystanie-owa/){.external}.
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 

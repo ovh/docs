@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 1
 ---
 
-**Last updated 3rd September 2021**
+**Last updated 2nd December 2022**
 
 
 ## Objective
@@ -39,7 +39,7 @@ In the next step, please take note of the pricing information, then click on `Or
 
 ### Step 2: Taking a snapshot
 
-Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. Creating the snapshot might take a few minutes. Afterwards, the timestamp of the creation will appear in the **Summary of options** box.
+Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. The time it takes to create the snapshot depends on the storage space in use. Afterwards, the timestamp of the creation will appear in the **Summary of options** box.
 
 ### Step 3: Deleting / restoring a snapshot
 

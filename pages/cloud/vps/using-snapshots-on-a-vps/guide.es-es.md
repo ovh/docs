@@ -10,7 +10,7 @@ order: 1
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 10/9/2021**
+**Última actualización: 02/12/2022**
 
 
 ## Objetivo
@@ -44,7 +44,7 @@ En el siguiente paso, preste atención a la información sobre los precios y, a 
 
 ### Paso 2: Tomar una instantánea
 
-Una vez activada la opción, haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en «Tomar una instantánea» (en el menú contextual). La instantánea puede tardar unos minutos en crearse. Después, aparecerá la fecha y hora de su creación en el cuadro «Resumen de opciones».
+Una vez activada la opción, haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en «Tomar una instantánea» (en el menú contextual). El tiempo de creación del snapshot depende del espacio de almacenamiento utilizado. Después, aparecerá la fecha y hora de su creación en el cuadro «Resumen de opciones».
 
 ### Paso 3: Eliminar o restaurar una instantánea
 
