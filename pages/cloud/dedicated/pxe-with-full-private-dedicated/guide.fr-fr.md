@@ -201,11 +201,11 @@ subnet 192.168.1.0 netmask 255.255.255.240 {
     ping-check = 1;
     next-server 192.168.1.1; # tftpd server's IP
 
-    if option arch = 00:07 { 			# Détermine le type d'architecture, ici 64bits
+    if option arch = 00:07 {    			# Détermine le type d'architecture, ici 64bits
       if exists user-class and option user-class = "iPXE" {
-          filename "refind.pxe"; 		# Détermine le script appelé par le binaire
+          filename "refind.pxe";     		# Détermine le script appelé par le binaire
       } else {
-            filename "ipxe.efi"; 		# Détermine le binaire iPXE
+            filename "ipxe.efi"; 	    	# Détermine le binaire iPXE
       }
 
     } else if option arch = 00:06 { 		# Détermine le type d'architecture, ici 32bits
@@ -260,12 +260,12 @@ exemple de configuration avec le logiciel `tftpd-hpa`:<br>
 ```bash
 # /etc/default/tftpd-hpa
 TFTP_USERNAME="tftp"
-TFTP_DIRECTORY="/srv/tftpboot"
+TFTP_DIRECTORY="/srv/tftp"
 TFTP_ADDRESS="TFTP_server_address:69"
 TFTP_OPTIONS="--secure"
 ```
 
-Nous utiliserons comme exemple le chemin `/srv/tftpboot`, et y déposerons les fichiers nécessaires:<br>
+Nous utiliserons comme exemple le chemin `/srv/tftp`, et y déposerons les fichiers nécessaires:<br>
 
 ```bash
 root@node_0:/srv/tftp# tree
@@ -276,9 +276,6 @@ root@node_0:/srv/tftp# tree
 ```
 
 Contenu du fichier `refind.pxe`:<br>
-
-Le service http qui désservira les fichiers nécessaires pour rEFInd:<br>
-(le chemin choisi dans notre exemple sera  celui par défaut, à savoir `/var/www/` toujours sur le *Node_0*)
 
 ```bash
 #!ipxe 
@@ -307,7 +304,6 @@ exit 1
 > Nous prenons en considération dans notre exemple que les cas ou votre architecture sera en 32bits ou bien 64bits.
 > Ce qui réprésentera la très grande majorité des cas rencontrés.
 > 
-
 
 
 #### le service **HTTP**
