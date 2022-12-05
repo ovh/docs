@@ -5,7 +5,7 @@ excerpt: 'Decouvrez comment configurer des adresses IPv6 sur notre infrastructur
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 26/08/2022**
+**Dernière mise à jour le 05/12/2022**
 
 ## Objectif
 
