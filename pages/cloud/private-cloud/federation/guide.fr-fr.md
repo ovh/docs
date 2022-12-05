@@ -5,7 +5,7 @@ excerpt: "Découvrez comment utiliser votre serveur Active Directory comme sourc
 section: Fonctionnalités VMware vSphere
 ---
 
-**Dernière mise à jour le 25/11/2022**
+**Dernière mise à jour le 05/12/2022**
 
 ## Objectif
 
@@ -191,6 +191,87 @@ Le groupe apparaît dans la liste des utilisateurs de votre cluster, les membres
 
 ![03 add group 04](images/03-addgroup04.png)
 
+
+### Utiliser l'API OVHcloud
+
+Il est possible d'utiliser l'API OVHcloud pour effectuer les mêmes opérations (Ajout d'un annuaire et autorisation d'un groupe ou d'un utilisateur à se connecter à votre interface vCenter).
+
+#### Ajouter un annuaire Active directory
+
+Récupérez votre « serviceName » en utilisant l'appel API suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud
+>
+
+Effectuez ensuite la mise en place du serveur Active Directory comme source d'authentification.
+
+Vous devrez spécifier les informations récupérées précédemment. Ne cochez pas la case « noSsl ».
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory
+>
+
+![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/04-federation_create.png){.thumbnail}
+
+Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.
+
+> [!primary]
+>
+> Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
+>
+> ![Opération annulée](images/05-federation_canceled.png){.thumbnail}
+
+#### Autoriser un utilisateur Active Directory à accéder à votre Hosted Private Cloud
+
+Vous avez la possibilité d'autoriser un utilisateur issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud, grâce à l'API OVHcloud.
+
+Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
+>
+
+Effectuez l'ajout de l'utilisateur issu de votre Active Directory.
+
+Vous devrez spécifier le nom d'utilisateur « pre-Windows 2000 » tel qu'indiqué dans votre Active Directory.
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser
+
+![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser](images/06-federation_grant_user.png){.thumbnail}
+
+Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
+Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
+
+#### Autoriser un groupe Active Directory à accéder à votre Hosted Private Cloud
+
+Vous avez la possibilité d'autoriser directement un ensemble d'utilisateurs (groupe) issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud, grâce à l'API OVHcloud.
+
+Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
+>
+
+Effectuez l'ajout du groupe issu de votre Active Directory.
+
+Vous devrez spécifier le nom du groupe « pre-Windows 2000 » tel qu'indiqué dans votre Active Directory.
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup
+
+
+![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/07-federation_grant_group.png){.thumbnail}
+
+Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
+Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
 
 ## Aller plus loin
 
