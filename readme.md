@@ -42,3 +42,4 @@ Please take into consideration the following guidelines :
 ## Licensing
 
 When contributing you agree with the licensing terms, provided in the [LICENSE](LICENSE) file.
+
