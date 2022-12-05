@@ -5,7 +5,7 @@ excerpt: "Découvrez comment utiliser votre serveur Active Directory comme sourc
 section: Fonctionnalités VMware vSphere
 ---
 
-**Dernière mise à jour le 25/11/2022**
+**Dernière mise à jour le 05/12/2022**
 
 ## Objectif
 
@@ -214,7 +214,7 @@ Vous devrez spécifier les informations récupérées précédemment. Ne cochez 
 > @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory
 >
 
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/federation_create.png){.thumbnail}
+![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/04-federation_create.png){.thumbnail}
 
 Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.
 
@@ -222,7 +222,7 @@ Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la s
 >
 > Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
 >
-> ![Opération annulée](images/federation_canceled.png){.thumbnail}
+> ![Opération annulée](images/05-federation_canceled.png){.thumbnail}
 
 #### Autoriser un utilisateur Active Directory à accéder à votre Hosted Private Cloud
 
@@ -243,7 +243,7 @@ Vous devrez spécifier le nom d'utilisateur « pre-Windows 2000 » tel qu'indiqu
 >
 > @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser
 
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser](images/federation_grant_user.png){.thumbnail}
+![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser](images/06-federation_grant_user.png){.thumbnail}
 
 Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
 Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
@@ -268,7 +268,7 @@ Vous devrez spécifier le nom du groupe « pre-Windows 2000 » tel qu'indiqué d
 > @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup
 
 
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/04-federation_grant_group.png){.thumbnail}
+![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/07-federation_grant_group.png){.thumbnail}
 
 Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
 Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
