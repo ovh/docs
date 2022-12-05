@@ -196,8 +196,6 @@ You can use the OVHcloud API to perform the same operations (Add a directory and
 
 #### Add your Active Directory server
 
-Setting up an Active Directory as an authentication source is done through the OVHcloud API.
-
 Retrieve your « serviceName » using the following API call:
 
 > [!api]
