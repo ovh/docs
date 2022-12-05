@@ -56,7 +56,7 @@ Go to the bottom right in **Network interfaces** and note the MAC addresses asso
 
 ![02 getnetworkinformation 02](images/02-getnetworkinformation02.png){.thumbnail}
 
-In the **Bandwidth** box, click `Change public bandwidth`{.action} to change the bandwidth of your public network.
+In the **Bandwidth** box, click `Modify public bandwidth`{.action} to change the bandwidth of your public network.
 
 > [!warning]
 > Depending on the speed you want, the price of your server subscription will increase. This change must be validated by placing a new order in the OVHcloud Control Panel.
@@ -82,7 +82,7 @@ Once the order has been confirmed, your bandwidth will be changed.
 
 ### Connect to the vRack of the dedicated server
 
-Stay on the configuration, click the `...`{.action} button at the bottom of the page. private network adapter configuration, then click `Attach vRack Private Network`{.action}.
+Stay on the configuration, click the `...`{.action} button at the bottom of the page. private network adapter configuration, then click `Attach a vRack Private Network`{.action}.
 
 ![04 attach bm to nutanix vrack 01](images/04-attach-bm-to-nutanix-vrack01.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Select `Ubuntu Server 22.04 LTS`{.action} and click `Next`{.action}.
 
 ![05 install OS 04](images/05-install-os04.png){.thumbnail}
 
-Click `Validate`{.action}.
+Click `Confirm`{.action}.
 
 ![05 install OS 05](images/05-install-os05.png){.thumbnail}
 
