@@ -67,7 +67,7 @@ par conséquent, le mecanisme de démarrage de la solution se retrouve inopéran
 
 
 ### Présentation rapide d'un démarrage en Netboot chez OVHcloud 
-processus complet de démarrage Netboot:
+
 
 liste des composants intervenants lors du démarrage :
 
@@ -82,10 +82,21 @@ rEFInd
 * La solution rEFInd, sous forme de BootLoader, a été choisie car parfaitement adapté à nos besoins, celle-ci permettant la recherche du type d'amorçage d'un systeme pour les differentes machines clientes:<br>
 disque local, volume réseau, usb, etc...
 
-descriptions du processus de démarrage :
+processus complet de démarrage Netboot:
 
 ![Netboot en action](images/netboot_steps.png)
 
+
+|étape|description/détails|
+|---|---|
+|1|
+|2|
+|3|
+|4|
+|5|
+|6|
+|7|
+|8|
 
 > [!primary]
 >
