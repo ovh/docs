@@ -19,11 +19,11 @@ order: 09
 
 ## Objective
 
-The purpose of this documentation is to **Deploy the Speech to Text Application** we have realised in the blog articles using [Streamlit](https://streamlit.io/) and pre-trained models. 
+The purpose of this documentation is to **Deploy the Speech to Text Application** we have realised in the [blog articles](https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/) using [Streamlit](https://streamlit.io/) and pre-trained models. 
 
 Deploying your app will allow you to benefit from **very powerful resources** which will make the speech to text application extremely fast. It can also be easily shared, unlike a local application.
 
-Here, the use case is **English Speech Recognition**, but you can choose another model as explained in the blog articles. Some models work with Chinese, French, German, Japanese, Russian, etc.
+Here, the use case is **English Speech Recognition**, but you can choose another model as explained in the [blog articles](https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/). Some models work with Chinese, French, German, Japanese, Russian, etc.
 
 Overview of the Speech to text app:
 
@@ -37,7 +37,7 @@ To deploy your app, you need:
 - An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - A [user for AI Deploy](https://docs.ovh.com/gb/en/publiccloud/ai/users/).
 - [The OVHcloud AI CLI](https://cli.bhs.training.ai.cloud.ovh.net/) **and** [Docker](https://www.docker.com/get-started) installed on your local computer, **or** only an access to a Debian Docker Instance on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
-- To deploy your app, you must have the full code of the application, either by cloning the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), or by having followed the blog articles that taught you how to build this app step by step.
+- To deploy your app, you must have the full code of the application, either by cloning the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), or by having followed the [blog articles](https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/) that taught you how to build this app step by step.
 
 ## Instructions
 
