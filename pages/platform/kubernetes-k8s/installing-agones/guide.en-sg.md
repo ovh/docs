@@ -103,11 +103,10 @@ Now let's continue by adding Agones repository to Helm's repository list.
 helm repo add agones https://agones.dev/chart/stable
 ```
 
-And then, after creating the `agones-system` namespace, install the stable Agones chart:
+And then installing the stable Agones chart:
 
 ```bash
-kubectl create namespace agones-system
-helm install my-agones --namespace agones-system agones/agones
+helm install my-agones --namespace agones-system --create-namespace agones/agones 
 ```
 
 After some moments, Agones should we installed:
