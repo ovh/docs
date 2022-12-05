@@ -4,6 +4,7 @@ excerpt: 'Come gestire la mailing list di Exchange'
 slug: exchange_2013_utilizzo_dei_gruppi_mailing_list
 legacy_guide_number: g1258
 section: 'Funzionalità di un account Exchange'
+order: 01
 ---
 
 **Ultimo aggiornamento: 26/02/2020**

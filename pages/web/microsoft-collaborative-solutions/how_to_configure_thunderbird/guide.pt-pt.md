@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/'
 excerpt: 'Encontre aqui o procedimento para adicionar uma conta Exchange para Thunderbird'
 section: 'Configuração do software cliente de e-mail Exchange'
-order: 05
+order: 02
 ---
 
 **Última atualização: 26/08/2021**

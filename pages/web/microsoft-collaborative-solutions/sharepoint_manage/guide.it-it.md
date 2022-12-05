@@ -3,6 +3,8 @@ title: 'Attiva e gestisci il tuo Sharepoint OVH'
 excerpt: 'Attiva e gestisci il tuo Sharepoint OVH'
 slug: attiva_e_gestisci_il_tuo_sharepoint_ovh
 legacy_guide_number: g2249
+section: SharePoint
+order: 01
 ---
 
 **Ultimo aggiornamento: 15/04/2020**

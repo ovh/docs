@@ -3,8 +3,7 @@ title: 'Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange'
 slug: exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app
 excerpt: 'Dowiedz się, jak zarządzać adresem programu Exchange przy użyciu interfejsu OWA webmail'
 section: 'Outlook Web Application (OWA)'
-order: 1
-legacy_guide_number: g1918
+order: 01
 ---
 
 **Ostatnia aktualizacja: 25-06-2021**

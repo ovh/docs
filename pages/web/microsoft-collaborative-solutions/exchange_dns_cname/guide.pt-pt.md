@@ -3,6 +3,8 @@ title: 'Criar um registo CNAME para associar um domínio'
 excerpt: 'Como e porquê adicionar um registo CNAME a um domínio OVHcloud'
 slug: exchange_20132016_adicionar_um_campo_do_tipo_cname
 legacy_guide_number: g1519
+section: Primeiros passos com Exchange
+order: 05
 ---
 
 **Última atualização: 06/09/2019**

@@ -4,7 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie eine automatische Fehlerdiagnose für Excha
 slug: exchange_diagnose_was_tun_bei_fehlern
 legacy_guide_number: g2277
 section: Troubleshooting
-order: 02
+order: 03
 ---
 
 > [!primary]

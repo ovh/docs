@@ -3,6 +3,7 @@ title: 'Utilização das contas de recurso'
 excerpt: Insert Here A Short Desc
 slug: exchange_20132016_utilizacao_das_contas_de_recurso
 legacy_guide_number: g1325
+order: 04
 ---
 
 **Última atualização: 22 de dezembro de 2020**

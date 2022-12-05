@@ -4,6 +4,7 @@ excerpt: 'In dieser Anleitung erfahren Sie, wie Sie Ihren Exchange Account in An
 slug: exchange_20132016_konfiguration_in_android
 legacy_guide_number: g1282
 section: 'Konfiguration von Exchange auf kompatiblen Smartphones/Tablets'
+order: 01
 ---
 
 **Stand 14.09.2018**

@@ -3,6 +3,7 @@ title: 'Tworzenie reguł skrzynki odbiorczej w aplikacji OWA'
 slug: tworzenie-regul-skrzynki-odbiorczej-w-owa
 excerpt: 'Dowiedz się, jak utworzyć reguły przekierowania e-maili i filtry przy użyciu aplikacji OWA'
 section: 'Outlook Web Application (Aplikacja WWW)'
+order: 02
 ---
 
 **Ostatnia aktualizacja: 11-03-2020**

@@ -6,6 +6,7 @@ routes:
     canonical: 'https://docs.ovh.com/de/emails/mail-konfiguration-iphone-ios-91/'
 legacy_guide_number: g1272
 section: Konfiguration von Exchange auf kompatiblen Smartphones/Tablets
+order: 02
 ---
 
 > [!primary]

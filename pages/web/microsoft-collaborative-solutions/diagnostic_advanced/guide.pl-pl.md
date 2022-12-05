@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak przeprowadzić automatyczną diagnostykę błędów 
 slug: diagnostyka_exchange_co_zrobic_w_przypadku_bledu
 section: Diagnostyka Exchange
 legacy_guide_number: g2277
+order: 03
 ---
 
 > [!primary]

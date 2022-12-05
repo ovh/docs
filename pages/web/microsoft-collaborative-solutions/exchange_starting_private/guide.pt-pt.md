@@ -4,6 +4,7 @@ slug: exchange_primeiros_passos_com_um_servidor_private
 excerpt: 'Descubra como configurar o seu servidor Private Exchange.'
 legacy_guide_number: g2074
 section: 'Primeiros passos com Exchange'
+order: 02
 ---
 
 **Última atualização: 25/03/2020**

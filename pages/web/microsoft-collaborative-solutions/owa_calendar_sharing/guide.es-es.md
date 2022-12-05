@@ -2,8 +2,8 @@
 title: 'Compartir un calendario con el webmail OWA'
 excerpt: 'Cómo compartir calendarios en Exchange'
 slug: exchange_2016_compartir_un_calendario_con_el_webmail_owa
-legacy_guide_number: g1923
 section: 'Outlook Web Application (OWA)'
+order: 04
 ---
 
 **Última actualización: 19/2/2020**

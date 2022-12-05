@@ -3,7 +3,8 @@ title: 'Creare un record CNAME per aggiungere un dominio associato'
 slug: exchange_20132016_aggiungi_un_record_di_tipo_cname
 legacy_guide_number: g1519
 excerpt: 'Scopri come aggiungere un record CNAME e a cosa serve'
-section: 'Configurazione del servizio Exchange'
+section: 'Iniziare a utilizzare Exchange'
+order: 05
 ---
 
 **Ultimo aggiornamento: 02/07/2018**

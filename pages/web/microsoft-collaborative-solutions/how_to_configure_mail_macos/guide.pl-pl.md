@@ -2,6 +2,7 @@
 title: 'Konfiguracja konta Exchange w aplikacji Mail na macOS'
 slug: konfiguracja-mail-macos
 section: 'Konfiguracja programu pocztowego Exchange'
+order: 03
 ---
 
 **Ostatnia aktualizacja z dnia 28-12-2021**

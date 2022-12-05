@@ -3,6 +3,7 @@ title: 'Przeniesienie kont e-mail za pomocą OVH Mail Migrator'
 slug: exchange-migracja-kont-e-mail-ovh-mail-migrator
 excerpt: 'Dowiedz się, jak przenieść konta e-mail do OVH przy użyciu narzędzia OVH Mail Migrator'
 section: 'Przeniesienie konta'
+order: 02
 ---
 
 > [!primary]

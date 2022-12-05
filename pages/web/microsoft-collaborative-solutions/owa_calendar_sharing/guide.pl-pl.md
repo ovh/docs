@@ -3,7 +3,7 @@ title: 'Exchange : współdzielenie kalendarza w interfejsie OWA'
 excerpt: 'Dowiedz się, jak współdzielić kalendarze w programie Exchange'
 slug: exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa
 section: 'Outlook Web Application (Aplikacja WWW)'
-legacy_guide_number: g1923
+order: 04
 ---
 
 **Ostatnia aktualizacja: 19-02-2020**
