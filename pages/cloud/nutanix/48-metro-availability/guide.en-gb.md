@@ -1,8 +1,8 @@
 ---
 title: "Configuring Disaster Recovery with Metro"
 slug: metro-availability
-excerpt: `Implementing Metro for a Disaster Recovery Plan`
-section: `Disaster Recovery Plan`
+excerpt: "Implementing Metro for a Disaster Recovery Plan"
+section: "Disaster Recovery Plan"
 order: 06
 ---
 
