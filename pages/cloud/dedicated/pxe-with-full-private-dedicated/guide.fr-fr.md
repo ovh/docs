@@ -17,12 +17,22 @@ Cette documentation à pour but de vous accompagner pour deployer tous les compo
 Profiter d'une infrastructure privée sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
 
 
+
 > [!warning]
 >
 > Pour rappel, il est prohibé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
 > Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres de critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
-> Aussi, cette configuration permet à nos équipes....
+> Nous avons pré-configurés les paramètres de démarrage en fonction de nos qualifications et avons donc intégrer toutes nos stack de tooling en conséquences:
+> monitoring, recycling, netboot.
+> Ainsi ces paramètres permettent à nos équipes d'intervenir de manière optimisée et en toute transparence et éfficacité.
+> Si ces paramètres sont amenées à être modifiés, nos équipes ne pourront surement plus effectuer leur tâches qui leur sont dédiées dans les conditions que nous aurons choisies.
+> 
 
+> [!primary]
+> 
+> Le Netboot consiste , de par ses différentes séquences, a élaborer/choisir un type d'amorçage pour votre système d'exploitation.
+> Les solutions qu'on choisi les équipes OVhcloud, permettront à vos solutions de pourvoir démarrer dans toutes les situations ou cas de figures, même en cas de panne.
+>
 
 Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.<br>
 Chaque serveur est muni au minimum de 2 interfaces réseaux, fonctionnants en réalité en liens aggrégés et assurant la redondance en cas de panne. <br>
@@ -42,21 +52,6 @@ par conséquent, le mecanisme de démarrage de la solution se retrouve inopéran
 >  il existe 2 composants:<br>
 >  **PXE**: utilisant un environnement standardisé client/serveur, basé sur les protocoles BOOTP/DHCP/TFTP, afin de permettre un démarrage/deploiement via le réseau du système client.<br>
 >  **iPXE**: utilisant un environnement standardisé client/serveur plus évolué, basé sur les protocoles HTTP,iSCSI, AoE, FCoE, Wi-Fi afin de permettre un démarrage/deploiement via le réseau du système client.
-> 
-
-déroulement du Netboot (Network boot):
-
-* Mode de démarrage en **PXE** (solution de démarrage réseau bas niveau) via l'interface réseau d'une machine cliente active permettant de communiquer avec le serveur **DHCP** de ce même réseau. Ce mode est défini au préalable dans le bios de votre serveur via le menu *boot order*.
-* Le serveur **DHCP** peut donc lui adresser les informations nécessaires afin de récupérer: une adresse IP, un firmware PXE (sous forme de binaire executable), ainsi que le **script** PXE associé.
-* le PXE requête le DHCP pour pouvoir les ressources 
-* le serveur client va chercher à récupérer ce binaire en protocol **TFTP**, pour ensuite le charger dans sa configuration.
-* Le binaire récupéré et chargé en tant que firmware, peut donc désormais éxécuter le script associé qui contiendra les informations permettant la selection de recherche du type d'amorçage d'un systeme pour la machine cliente:<br>
-disque local, volume réseau, usb, etc...
-
-
-> [!primary]
->
-> La description ici restera le plus générique possible pour rester claire, et ainsi ne pas ajouter des éléments ou contraintes techniques qui sortent du cadre de notre exemple, mais donnera une vision globale du principe de fonctionnement.
 >
 
 
@@ -74,26 +69,22 @@ disque local, volume réseau, usb, etc...
 ### Présentation rapide d'un démarrage en Netboot chez OVHcloud 
 processus complet de démarrage Netboot:
 
-liste des composants
-dhcp / tftp / http / refind
-| étape | description / détails |
-|---|---|
-|1|La machine clients reçoit une demande de mise sous tension, le mode Netboot est pré-sélectionné|
-|2|La machine cliente requête de l'interface réseau vers DHCP (discover)|
-|3|Réponse et attribution d'une adresse IP via le DHCP (offer/request/ack)|
-|4|Requête pour récuperer le binaire iPXE|
-|5|Récupération du binaire en TFTP|
-|6|Chargement et initialisation de l'interface réseau avec le nouveau firmware|
-|7|Requête DHCP pour récupérer le script associé au binaire iPXE|
-|8|Récupération du script iPXE|
-|9|Exécution du script iPXE|
-|10|Commande shell iPXE pour récuperer en HTTP les sources (binaire + fichier de config) pour le bootloader rEFInd|
-|11|Commande shell iPXE pour récupérer et éxécuter le binaire rEFInd|
-|12|Le binaire rEFInd scanne les disques locaux pour détecter les secteurs d'amorçages |
-|13|rEFInd utilise les secteurs d'amorçages présents via son bootloader|
-|14|Chargement du système d'exploitation associé|
-|15|Système démarré|
+liste des composants intervenants lors du démarrage :
 
+* Mode de démarrage en **PXE** (solution de démarrage réseau bas niveau) via l'interface réseau d'une machine cliente active permettant de communiquer avec le serveur **DHCP** de ce même réseau. Ce mode est défini au préalable dans le bios de votre serveur via le menu *boot order*.
+dhcp
+* Un serveur **DHCP** : pour adresser les informations nécessaires afin de récupérer: une adresse IP, un firmware PXE (sous forme de binaire executable), ainsi que le **script** PXE associé.
+tftp
+* Un service **TFTP** : pour récuperer des ressources en réseau
+http
+* Un service **HTTP** : pour récuperer des ressources en réseau
+rEFInd
+* La solution rEFInd, sous forme de BootLoader, a été choisie car parfaitement adapté à nos besoins, celle-ci permettant la recherche du type d'amorçage d'un systeme pour les differentes machines clientes:<br>
+disque local, volume réseau, usb, etc...
+
+descriptions du processus de démarrage :
+
+![Netboot en action](images/netboot_steps.png)
 
 
 > [!primary]
