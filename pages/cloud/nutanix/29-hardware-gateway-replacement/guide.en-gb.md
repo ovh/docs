@@ -1,5 +1,5 @@
 ---
-title: Replace the OVHgateway with a dedicated server
+title: Replacing the OVHgateway with a dedicated server
 slug: hardware-gateway-replacement
 excerpt: "How to replace your gateway integrated in Nutanix with a dedicated server to increase bandwidth"
 section: Network & Security
@@ -25,10 +25,10 @@ Contact OVHcloud Sales to help you choose the right server.
 
 ## Requirements
 
-- Have a Nutanix cluster in your OVHcloud account.
-- Access into your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
-- Be connected to the cluster via Prism Central. 
-- Have a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account with several network cards, some on the public network, others on the private network. This server must be on the same Data Centre as the Nutanix cluster.
+- A Nutanix cluster in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- You must be connected to the cluster via **Prism Central**. 
+- You have a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account with several network cards, some on the public network, others on the private network. This server must be in the same data centre as the Nutanix cluster.
 
 ## Instructions
 
@@ -36,9 +36,9 @@ We will deploy a dedicated server on Linux that uses 4 network cards (2 on the p
 
 To replace the OVHgateway VM, we will use these settings:
 
-- DHCP public LAN that provides a public address on a single network adapter.
-- Private LAN on a team of two adapters and private addresses configured on a VLAN.
-    - VLAN 1: OVHgateway private IP address and mask (in our example: 172.16.3.254/22)
+- DHCP public LAN that provides a public address on a single network adapter
+- Private LAN on a team of two adapters and private addresses configured on a VLAN
+- VLAN 1: OVHgateway private IP address and mask (in our example: 172.16.3.254/22)
 
 ![00 diagram nutanix and dedicated server 01](images/00-diagram-nutanix-and-dedicated-server-01.png){.thumbnail}
 
@@ -152,7 +152,7 @@ Enter this command to display cards that are not connected.
 ip a | grep -C1 DOWN
 ```
 
-Three network adapters are displayed with the status **DOWN**, go back to the list of MAC addresses and retrieve the names of the two private adapters, as in the example below:
+Three network adapters are displayed with the status **DOWN**. Go back to the list of MAC addresses and retrieve the names of the two private adapters, as in the example below:
 
 > [!warning]
 > Do not rely on the order of the cards to find the names of the private network cards, but rather on the MAC addresses referenced in the OVHcloud Control Panel.
