@@ -107,6 +107,10 @@ Une fois ces informations indiquées, cliquez sur le bouton «&nbsp;Ajouter une 
 
 ![WordPress - Categories added](images/wordpress_first_steps%5B13%5D.png){.thumbnail}
 
+### Affectez une catégorie à un article
+
+
+
 ## Aller plus loin
 
 - stockez vos accès dans un gestionnaire de mots de passe comme [KeePass](https://keepass.info/)
