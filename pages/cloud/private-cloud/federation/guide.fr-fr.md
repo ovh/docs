@@ -192,9 +192,11 @@ Le groupe apparaît dans la liste des utilisateurs de votre cluster, les membres
 ![03 add group 04](images/03-addgroup04.png)
 
 
-### Utiliser l'API OVHcloud à la place du manager
+### Utilisation de l'API OVHcloud
 
-L'ajout d'un annuaire active directory peux aussi se faire au travers de l'API OVHcloud
+Il est possible d'utiliser l'API OVHcloud pour effecutuer les mêmes opérations (Ajout d'un annuaire et autorisation d'un groupe ou d'un utilisateur à se connecter à vCenter)
+
+#### Ajout d'un annuaire Active directory
 
 Récupérez votre « serviceName » en utilisant l'appel API suivant :
 
@@ -221,7 +223,8 @@ Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la s
 > Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
 >
 > ![Opération annulée](images/federation_canceled.png){.thumbnail}
-### Autoriser un utilisateur Active Directory à accéder à votre Hosted Private Cloud
+
+#### Autoriser un utilisateur Active Directory à accéder à votre Hosted Private Cloud
 
 Vous avez la possibilité d'autoriser un utilisateur issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud, grâce à l'API OVHcloud.
 
@@ -245,13 +248,7 @@ Vous devrez spécifier le nom d'utilisateur « pre-Windows 2000 » tel qu'indiqu
 Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
 Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
 
-Une fois autorisé, l'utilisateur et ses permissions seront modifiables directement depuis votre espace client OVHcloud comme n'importe quel utilisateur de votre Hosted Private Cloud.
-
-> [!primary]
->
-> Par défaut, l'utilisateur ne possède aucune permission sur votre Hosted Private Cloud. Il pourra se connecter à votre Hosted Private Cloud mais n'aura aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
->
-### Autoriser un groupe Active Directory à accéder à votre Hosted Private Cloud
+#### Autoriser un groupe Active Directory à accéder à votre Hosted Private Cloud
 
 Vous avez la possibilité d'autoriser directement un ensemble d'utilisateurs (groupe) issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud, grâce à l'API OVHcloud.
 
@@ -271,18 +268,10 @@ Vous devrez spécifier le nom du groupe « pre-Windows 2000 » tel qu'indiqué d
 > @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup
 
 
-![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/federation_grant_group.png){.thumbnail}
+![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/04-federation_grant_group.png){.thumbnail}
 
 Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
 Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
-
-Une fois autorisés, le groupe et ses permissions seront modifiables directement depuis votre espace client OVHcloud comme n'importe quel utilisateur de votre Hosted Private Cloud.
-
-> [!primary]
->
-> Par défaut, le groupe ne possède aucune permission sur votre Hosted Private Cloud. Ses membres pourront se connecter à votre Hosted Private Cloud mais n'auront aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
->
-
 
 ## Aller plus loin
 
