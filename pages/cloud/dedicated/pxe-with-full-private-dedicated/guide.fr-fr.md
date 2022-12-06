@@ -73,7 +73,7 @@ liste des composants intervenants lors du démarrage :
 * Un serveur **DHCP** : afin de rendre opérationelle l'interface réseau de votre machine cliente
 * Un service **TFTP** : pour récuperer des ressources en réseau
 * Un service **HTTP** : pour récuperer des ressources en réseau 
-* La solution **rEFInd**, sous forme de BootLoader, a été retenue car parfaitement adaptée à vos besoins, celle-ci permettra la recherche du type d'amorçage d'un systeme pour les differentes machines clientes:<br>
+* La solution **rEFInd**, sous forme de BootLoader, a été retenue car parfaitement adaptée, celle-ci permettra la recherche du type d'amorçage d'un systeme pour les differentes machines clientes:<br>
 disque local, volume réseau, usb, etc...
 
 
