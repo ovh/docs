@@ -3,7 +3,7 @@ title: 'Iniziare a utilizzare Private Exchange'
 excerpt: 'Come configurare il tuo server Private Exchange'
 slug: exchange_pirmi_zingsniai_su_private_serveriu
 section: 'Iniziare a utilizzare Exchange'
-legacy_guide_number: g2074
+order: 02
 ---
 
 **Ultimo aggiornamento: 25/03/2020**

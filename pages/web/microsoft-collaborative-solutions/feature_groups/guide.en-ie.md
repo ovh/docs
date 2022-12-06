@@ -3,8 +3,7 @@ title: 'Creating contact groups'
 slug: exchange_20132016_how_to_use_the_groups_feature_mailing_lists
 excerpt: 'Find out how to manage mailing lists in Exchange'
 section: 'Exchange account features'
-order: 1
-legacy_guide_number: g1258
+order: 02
 ---
 
 **Last updated 26th February 2020**

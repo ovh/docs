@@ -3,8 +3,7 @@ title: 'Enabling and managing your OVHcloud SharePoint'
 excerpt: 'Find out how to order and configure a SharePoint platform'
 slug: enable_and_manage_your_ovh_sharepoint
 section: SharePoint
-legacy_guide_number: 2249
-order: 1
+order: 01
 ---
 
 **Last updated 15th April 2020**

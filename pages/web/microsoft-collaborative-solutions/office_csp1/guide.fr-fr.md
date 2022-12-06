@@ -3,12 +3,12 @@ title: Gérer un groupe de licences Microsoft 365 OVHcloud (CSP1)
 slug: commander-et-gerer-un-groupe-de-licences-office-365-ovh
 excerpt: Découvez comment souscrire à une licence Microsoft 365 et la gérer dans votre espace client OVHcloud.
 section: Office
-order: 2
+order: 02
 ---
 
 **Dernière mise à jour le 22/02/2022**
 
-## Objectif
+## Objectif 
 
 Il y a plusieurs avantages à souscrire aux offres OVHcloud **Microsoft 365 apps for business** ou **Microsoft 365 apps for entreprise**. La facturation est mensuelle et vous pouvez installer une licence sur 5 PC/Mac, 5 tablettes et 5 smartphones.
 

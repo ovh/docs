@@ -1,10 +1,9 @@
 ---
 title: Utilizar el escritorio remoto con Microsoft 365 apps
-legacy_guide_number: 2339
 slug: office365-proplus-escritorio-remoto
 excerpt: Cómo instalar y utilizar Microsoft 365 apps en un escritorio remoto (RDS) o en un ordenador compartido
 section: Office
-order: 4
+order: 04
 ---
 
 > [!primary]

@@ -2,9 +2,8 @@
 title: 'Crear firmas automáticas'
 excerpt: 'Cómo agregar firmas automáticas a sus cuentas de correo electrónico'
 slug: exchange_20132016_firma_automatica_disclaimer
-legacy_guide_number: g1330
-section: Funcionalidades de Exchange
-order: 3
+section: Funcionalidades de las cuentas Exchange
+order: 07
 ---
 
 **Última actualización: 26/3/2020**

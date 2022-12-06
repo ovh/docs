@@ -3,7 +3,7 @@ title: 'Utilização de grupos de difusão (mailing lists)'
 excerpt: 'Saiba como gerir grupos de difusão (mailing lists) no Exchange'
 slug: exchange_20132016_utilizacao_de_grupos_de_difusao_mailing_list
 section: 'Funcionalidades das contas Exchange'
-legacy_guide_number: g1258
+order: 02
 ---
 
 **Última atualização: 13/05/2020**

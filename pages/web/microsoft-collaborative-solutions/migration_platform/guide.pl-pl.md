@@ -2,8 +2,8 @@
 title: "Migracja kont e-mail z jednej platformy e-mail OVHcloud do innej"
 slug: migration-email-platform
 excerpt: "Dowiedz się, jak migrować konta e-mail z platformy Exchange lub E-mail Pro na inną platformę Exchange, E-mail Pro lub MX Plan"
-section: Migracja konta Exchange
-order: 2
+section: Migracja konta
+order: 01
 ---
 
 > [!primary]

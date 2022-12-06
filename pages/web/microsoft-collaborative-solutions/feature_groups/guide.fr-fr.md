@@ -1,10 +1,9 @@
 ---
 title: 'Créer un groupe de contacts'
 slug: exchange-utilisation-des-groupes-mailing-list
-legacy_guide_number: 1258
 excerpt: 'Retrouvez ici la mise en place et l’utilisation de groupe via votre compte Exchange'
 section: 'Fonctionnalités des comptes Exchange'
-order: 2
+order: 02
 ---
 
 **Dernière mise à jour le 26/02/2020**

@@ -4,8 +4,8 @@ slug: exchange-configuracion-de-thunderbird
 routes:
     canonical: 'https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/'
 excerpt: 'Cómo configurar una cuenta Exchange en Thunderbird para Windows'
-section: 'Configuración del cliente de correo Exchange'
-order: 5
+section: 'Configuración en el ordenador'
+order: 04
 ---
 
 > [!primary]

@@ -3,7 +3,7 @@ title: Wykorzystanie diagnostyki błędów Exchange
 excerpt: 'Dowiedz się, jak przeprowadzić automatyczną diagnostykę błędów na kontach Exchange'
 slug: diagnostyka_exchange_co_zrobic_w_przypadku_bledu
 section: Diagnostyka Exchange
-legacy_guide_number: g2277
+order: 01
 ---
 
 > [!primary]

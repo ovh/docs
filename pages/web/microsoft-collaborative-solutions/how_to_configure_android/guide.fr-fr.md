@@ -2,8 +2,8 @@
 title: Configurer son compte Exchange sur Android via l'application Gmail
 slug: exchange-configuration-sous-android
 excerpt: Apprenez à configurer un compte Exchange sur Android, via l'application Gmail
-section: Configuration Exchange sur smartphone
-order: 2
+section: Configuration sur smartphone/tablette
+order: 02
 ---
 
 **Dernière mise à jour le 17/05/2018**

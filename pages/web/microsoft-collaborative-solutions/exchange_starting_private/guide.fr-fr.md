@@ -1,10 +1,9 @@
 ---
 title: 'Premiers pas avec le service Private Exchange'
 slug: exchange-premiers-pas-avec-un-serveur-private
-legacy_guide_number: 2074
 excerpt: 'Découvrez comment mettre en place votre serveur Private Exchange.'
 section: 'Premiers pas avec Exchange'
-order: 2
+order: 02
 ---
 
 **Dernière mise à jour le 25/03/2020**

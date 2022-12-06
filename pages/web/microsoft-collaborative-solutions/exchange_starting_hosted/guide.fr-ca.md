@@ -3,7 +3,7 @@ title: Premiers pas avec le service Exchange Hébergé
 slug: premiere-configuration-exchange
 excerpt: Débutez avec un service Exchange Hébergé
 section: Premiers pas avec Exchange
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 2018/10/05**

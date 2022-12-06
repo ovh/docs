@@ -3,7 +3,7 @@ title: Eine Microsoft 365 Lizenzgruppe von OVHcloud verwalten
 slug: bestellung_und_verwaltung_einer_office_365_lizenzgruppe_bei_ovh
 excerpt: Erfahren Sie hier, wie Sie eine Microsoft 365 Lizenz bestellen und in Ihrem OVHcloud Kundencenter verwalten
 section: Office
-order: 2
+order: 02
 ---
 
 > [!primary]

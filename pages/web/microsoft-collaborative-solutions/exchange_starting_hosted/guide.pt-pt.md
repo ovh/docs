@@ -2,7 +2,8 @@
 title: 'Primeiros passos com o serviço Hosted Exchange'
 slug: exchange_20132016_a_primeira_configuracao_do_servico
 excerpt: 'Como configurar pela primeira vez um serviço Hosted Exchange'
-legacy_guide_number: g1311
+section: Primeiros passos com Exchange
+order: 01
 ---
 
 **Última atualização: 21/01/2019**

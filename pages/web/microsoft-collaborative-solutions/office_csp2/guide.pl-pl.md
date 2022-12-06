@@ -3,7 +3,7 @@ title: Zarządzanie grupą licencji Office 365 Reseller (CSP2) OVHcloud
 slug: zarzadzanie-licencje-office-365-reseller-csp2
 excerpt: Dowiedz się, jak zamówić i zarządzać usługą Office 365 Reseller (CSP2) w OVHcloud
 section: Office
-order: 3
+order: 03
 ---
 
 > [!primary]

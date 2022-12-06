@@ -2,8 +2,8 @@
 title: Uso del diagnóstico de errores Exchange
 excerpt: 'Cómo realizar un diagnóstico automatizado de los errores en las cuentas Exchange'
 slug: que_hacer_en_caso_de_error_del_diagnostico_exchange
-legacy_guide_number: g2277
 section: Diagnóstico Exchange
+order: 01
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: 'Adding a domain name to your Exchange service'
 slug: adding-domain-exchange
 excerpt: 'Find out how to add a domain name to your Exchange service'
 section: 'Getting started with Exchange'
+order: 04
 ---
 
 **Last updated 7th October 2022**

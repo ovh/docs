@@ -2,8 +2,8 @@
 title: Restaurer les éléments supprimés de votre compte e-mail 
 slug: exchange-comment-retrouver-des-elements-supprimes
 excerpt: Découvrez comment restaurer des éléments supprimés depuis votre compte e-mail via le webmail (OWA)
-section: Diagnostic Exchange
-order: 2
+section: Diagnostics Exchange
+order: 02
 ---
 
 **Dernière mise à jour le 08/02/2022**

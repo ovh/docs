@@ -2,7 +2,8 @@
 title: 'Añadir un dominio a un servicio Exchange'
 slug: anadir-dominio-exchange
 excerpt: 'Cómo añadir un dominio a un servicio Exchange'
-section: 'Configuración de Exchange'
+section: 'Primeros pasos con Exchange'
+order: 04
 ---
 
 > [!primary]

@@ -2,9 +2,8 @@
 title: 'Getting started with the Private Exchange service'
 excerpt: 'Find out how to configure your Private Exchange platform'
 slug: getting-started-with-private-exchange
-legacy_guide_number: g2074
 section: 'Getting started with Exchange'
-order: 2
+order: 02
 ---
 
 **Last updated 17th April 2020**

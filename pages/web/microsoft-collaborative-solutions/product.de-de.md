@@ -1,6 +1,6 @@
 ---
 title: Microsoft Collaborative Solutions
 slug: microsoft-collaborative-solutions
-sections: Erste Schritte mit Exchange, Exchange Account-Funktionen, Outlook Web App (OWA), Account-Migration, Konfiguration des Exchange E-Mail-Clients, Konfiguration von Exchange auf kompatiblen Smartphones/Tablets, Office, SharePoint, Troubleshooting
-order: 07
+sections: Erste Schritte mit Exchange, Konfiguration auf computer, Konfiguration auf Smartphone/Tablet, Account-Migration, Exchange Account-Funktionen, Outlook Web App (OWA), Troubleshooting, Office, SharePoint
+order: 07 
 ---

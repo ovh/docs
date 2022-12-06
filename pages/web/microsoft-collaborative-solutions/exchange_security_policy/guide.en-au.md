@@ -3,7 +3,7 @@ title: 'Managing the security policy of an Exchange service'
 slug: manage-security-policy-password
 excerpt: 'Find out how to manage the security policy of your Exchange service'
 section: 'Getting started with Exchange'
-order: 6
+order: 06
 ---
 
 **Last updated 22nd April 2022**

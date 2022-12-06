@@ -3,6 +3,7 @@ title: 'Using Exchange error diagnostics'
 excerpt: 'Find out how to run automated error checks on Exchange accounts'
 slug: exchange_diagnostic_what_to_do_if_you_encounter_an_error
 section: Exchange Diagnostics
+order: 01
 ---
 
 **Last updated 8th July 2022**

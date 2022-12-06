@@ -1,10 +1,9 @@
 ---
 title: Using Remote Desktop with Microsoft 365 apps
-legacy_guide_number: 2339
 slug: office365-proplus-remote-desktop
 excerpt: Find out how to install and use Microsoft 365 apps on a remote desktop (RDS) or shared computer
 section: Office
-order: 4
+order: 04
 ---
 
 **Last updated 6th September 2021**

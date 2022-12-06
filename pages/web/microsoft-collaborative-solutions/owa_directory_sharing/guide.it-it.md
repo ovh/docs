@@ -2,9 +2,8 @@
 title: Condividere una cartella con la Webmail OWA
 excerpt: Come condividere una cartella tra account Exchange
 slug: exchange_2016_condividi_una_cartella_con_la_webmail_owa
-section: 'Outlook Web Application (OWA)'
-order: 5
-legacy_guide_number: g1929
+section: 'Utilizzo di Outlook Web App (OWA)'
+order: 04
 ---
 
 

@@ -2,9 +2,8 @@
 title: Verwendung der Exchange Fehlerdiagnose
 excerpt: 'Erfahren Sie hier, wie Sie eine automatische Fehlerdiagnose für Exchange Accounts durchführen'
 slug: exchange_diagnose_was_tun_bei_fehlern
-legacy_guide_number: g2277
 section: Troubleshooting
-order: 2
+order: 01
 ---
 
 > [!primary]

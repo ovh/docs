@@ -3,7 +3,7 @@ title: 'Configurar la política de seguridad de un servicio de correo'
 slug: configurar-politica-seguridad-exchange
 excerpt: 'Esta guía explica cómo configurar la política de seguridad de un servicio de correo'
 section: 'Primeros pasos con Exchange'
-order: 6
+order: 06
 ---
 
 **Última actualización: 22/04/2022**

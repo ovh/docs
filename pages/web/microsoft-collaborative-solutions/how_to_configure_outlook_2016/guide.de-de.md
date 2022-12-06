@@ -2,7 +2,8 @@
 title: 'Konfiguration von Exchange mit Outlook für Windows'
 slug: exchange-automatische-konfiguration-auf-outlook-2016
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Exchange Account in Outlook für Windows einrichten'
-section: 'Konfiguration des Exchange E-Mail-Clients'
+section: Konfiguration auf computer
+order: 01
 ---
  
 > [!primary]
