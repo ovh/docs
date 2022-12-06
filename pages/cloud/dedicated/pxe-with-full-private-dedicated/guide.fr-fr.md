@@ -13,38 +13,39 @@ section: 'Utilisation avancée'
 > Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissance concernant le monde open source, ainsi que des notions d'administration.
 > 
 
-Cette documentation à pour but de vous accompagner pour deployer tous les composants, ou bien services nécessaires, au bon redémarrage de vos solutions OVHcloud en environnement dédié et **entièrement privé**.<br>
+Cette documentation à pour but de vous accompagner pour deployer tous les composants et services nécessaires, au bon redémarrage de vos solutions OVHcloud en environnement **entièrement privée**.<br>
 Profiter d'une infrastructure privée sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
 
 
 
 > [!warning]
->
-> Pour rappel, il est prohibé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
-> Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres de critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
-> Nous avons pré-configurés les paramètres de démarrage en fonction de nos qualifications et avons donc intégrer tous nos outils en conséquences: netboot, monitoring, recycling, etc...
-> Ainsi ces paramètres permettent à nos équipes d'intervenir de manière optimisée, en toute transparence et éfficacité.
-> Si ces paramètres sont amenées à être modifiés, nos équipes ne pourront plus effectuer leur tâches qui leur sont dédiées dans les conditions que nous aurons choisies.
-> 
 
-> [!primary]
+> Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres de critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
 > 
+> Nous avons pré-configurés le mecanisme de démarrage en fonction de nos qualifications et avons intégré tous nos outils : netboot, monitoring, recycling, etc...
+>  Si ces paramètres sont amenées à être modifiés, nos équipes ne pourront plus effectuer leur tâches qui leur sont dédiées dans les conditions que nous aurons choisies.
+>   
+>  Pour rappel, il est fortemeetn déconseillé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
+> 
+> Ainsi ces paramètres permettent à nos équipes d'intervenir de manière optimisée, en toute transparence et éfficacité.
+>
 > Le Netboot consiste, de par ses différentes séquences, à élaborer/choisir un type d'amorçage pour vos système d'exploitation.
 > Les solutions techniques qu'on choisi les équipes d'OVhcloud permettront à vos solutions de pourvoir démarrer en toutes circonstances.
->
+
+
 
 Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.<br>
 Chaque serveur est muni au minimum de 2 interfaces réseaux, fonctionnants en réalité en liens aggrégés et assurant la redondance en cas de panne. <br>
-Vous avez donc la possiblité d'utiliser/déclarer vos réseaux dit *public* et ceux, au contraire dit *privés* en passant par notre solution [vrack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
+Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *public*, et ceux *privés* en passant par notre solution [vrack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
 
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
 Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
 
 La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
-par conséquent, le mecanisme de démarrage de la solution se retrouve inopérant, à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers doivent obligatoirement récupèrer leur configurations via les services réseaux mutualisés présents sur le réseau interne d'OVHcloud.
+Par conséquent, un serveur isolé de par son réseau privé empéche le mecanisme de démarrage de solution,  à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot) ces sur le réseau interne d'OVHcloud.
 
 
-### Présentation rapide d'un démarrage en Netboot 
+### Présentation rapide d'un démarrage en Netboot
 
 > [!primary]
 >
@@ -58,11 +59,12 @@ par conséquent, le mecanisme de démarrage de la solution se retrouve inopéran
 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
 * Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
+* Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (DHCP, TFTP et HTTP). Le système d'exploitation sera celui de votre choix.
 * Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez au préalable configuré notre fonctionnabilité [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
  Exemple d'une machine éligible à notre procédure, via l'onglet `Interfaces réseau`{.action} de son manager:<br>
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
 ![OLA2](images/Scr_OLA2.png){.thumbnail}
-* Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (DHCP, TFTP et HTTP). Le système d'exploitation sera celui de votre choix.
+
 
 
 ### Présentation rapide d'un démarrage en Netboot chez OVHcloud 
@@ -70,9 +72,9 @@ par conséquent, le mecanisme de démarrage de la solution se retrouve inopéran
 
 liste des composants intervenants lors du démarrage :
 
-* Un serveur **DHCP** : afin de rendre opérationelle l'interface réseau de votre machine cliente
-* Un service **TFTP** : pour récuperer des ressources en réseau
-* Un service **HTTP** : pour récuperer des ressources en réseau 
+* Un serveur **DHCP** : afin de rendre opérationelle l'interface réseau de votre machine cliente.
+* Un service **TFTP** : pour récuperer des ressources en réseau.
+* Un service **HTTP** : pour récuperer des ressources en réseau.
 * La solution **rEFInd**, sous forme de BootLoader, a été retenue car parfaitement adaptée, celle-ci permettra la recherche du type d'amorçage d'un systeme pour les differentes machines clientes:<br>
 disque local, volume réseau, usb, etc...
 
@@ -123,7 +125,10 @@ Exemple:
 
 
 
-
+> [!primary]
+>
+> Pour que ces services soient pleinement fonctionnels, penser à déclarer/ajouter si besoin les régles dans le firewall local sur l'interface réseau privée de la machine hébergeant les services.
+> 
 #### le service **DHCP**
 
 ci-dessous, un exemple de fichier de configuration pour votre service **DHCP**.<br>
@@ -378,22 +383,10 @@ Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/et
 service NTP:<br>
 Il est fortement conseillé d'utiliser un service DNS surtout si votre infrastructure comprends plusieurs machines.
 
+liste des ports à autoriser dans votre firewall local (de la machine hébergeant les services).
+* NTP port 123
+* DNS port 53
 
-> [!warning]
->
-> Pour que ces services soient pleinement fonctionnels, penser à déclarer/ajouter les régles dans le firewall local de la machine hébergeant les services.
->
-
-exemple avec la commande `iptables`:<br>
-```bash
-
-# pour le service NTP
-iptables -I INPUT -i ethX -p udp --dport 123 -j ACCEPT
-
-# pour le service DNS
-iptables -I INPUT -i ethX -p udp --dport 53 -j ACCEPT
-iptables -I INPUT -i ethX -p tcp --dport 53 -j ACCEPT
-```
 
 
 
