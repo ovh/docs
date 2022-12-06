@@ -2,7 +2,7 @@
 title: 'Die Zwei-Faktor-Authentifizierung für einen Exchange Account konfigurieren'
 slug: 2fa-exchange-konfigurieren
 excerpt: 'Erfahren Sie hier, wie Sie die Zwei-Faktor-Authentifizierung für einen Exchange Account einrichten'
-section: 'Exchange Account-Funktionen'
+section: Exchange Account-Funktionen
 order: 04
 ---
 

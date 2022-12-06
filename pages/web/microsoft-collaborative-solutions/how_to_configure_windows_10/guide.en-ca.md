@@ -2,7 +2,7 @@
 title: 'Configuring your Exchange account in the Mail app for Windows 10'
 slug: exchange-mail-configuration-windows-10
 excerpt: 'Find out how to configure an Exchange account on the Mail application for Windows 10'
-section: Konfiguration auf computer
+section: Configuration on computer
 order: 03
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Configuring your Exchange account on the macOS Mail app
 slug: exchange-configuration-mail-macos
-section: Konfiguration auf computer
+section: Configuration on computer
 order: 06
 ---
 

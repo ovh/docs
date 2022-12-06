@@ -2,7 +2,7 @@
 title: 'Kontaktgruppen erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie Mailinglisten in Exchange verwalten'
 slug: exchange_20132016_verwendung_der_gruppen_mailinglisten
-section: 'Exchange Account-Funktionen'
+section: Exchange Account-Funktionen
 order: 02
 ---
 
