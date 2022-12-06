@@ -59,7 +59,7 @@ Par conséquent, un serveur isolé de par son réseau privé empéche le mecanis
 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
 * Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
-* Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (DHCP, TFTP et HTTP). Le système d'exploitation sera celui de votre choix.
+* Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (DHCP, TFTP). Le système d'exploitation sera celui de votre choix.
 * Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez au préalable configuré notre fonctionnabilité [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
  Exemple d'une machine éligible à notre procédure, via l'onglet `Interfaces réseau`{.action} de son manager:<br>
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
@@ -74,7 +74,6 @@ liste des composants intervenants lors du démarrage :
 
 * Un serveur **DHCP** : Attribuer une configuration réseau pour une machine cliente qui tente de démarrer.
 * Un service **TFTP** : Ressources en reseau qui seront interroger/requêter par PXE.
-* Un service **HTTP** : Ressources en réseau qui seront interroger/requeter par iPXE.
 * La solution **rEFInd**, ous forme de BootLoader, a été retenue car parfaitement adaptée, celle-ci permettra la recherche du type d'amorçage d'un systeme pour les differentes machines clientes:<br>
 disque local, volume réseau, usb, etc...
 
@@ -104,9 +103,9 @@ schéma (logique) de démarrage Netboot:
 
 ## En pratique
 
-### Deployer vos services DHCP, TFTP et HTTP
+### Deployer vos services DHCP, TFTP
 
-* installation des packages pour les services DHCP/TFTP/HTTP.
+* installation des packages pour les services DHCP/TFTP.
 * configuration basique pour chaque service.
 * mise en marche.
 
@@ -277,9 +276,12 @@ Nous utiliserons comme exemple le chemin `/srv/tftp`, et y déposerons les fichi
 root@node_0:/srv/tftp# tree
 .
 |-- ipxe.efi
-|-- ipxe32.efi
-`-- refind.pxe 
+|-- refind.conf
+|-- refind.pxe
+`-- refind_x64.efi
 ```
+
+#### le bootloader **rEFInd**
 
 Contenu du fichier `refind.pxe`:<br>
 
@@ -288,17 +290,18 @@ Contenu du fichier `refind.pxe`:<br>
 
 echo Boot to local disk
 
-set ressources-url http://192.168.1.1
+
 iseq ${platform} efi && goto is_efi_x86_64 || goto end
 
 :is_efi_x86_64
 echo EFI boot mode
 
 # Récuperer le fichier de configuration
-imgfetch --name refind.conf ${ressources-url}/refind.conf
+imgfetch --name refind.conf tftp://${[next-server}/refind.conf
 
 # Charger le binaire rEFIND
-chain ${ressources-url}/refind_x64.efi
+imgfetch --name refind tftp://${next-server}/refind_x64.efi
+chain refind
 
 :end
 echo Chain on hard drive failed
@@ -307,23 +310,6 @@ exit 1
 
 ```
 
-
-
-#### le service **HTTP**
-Il est question de rendre disponible (en HTTP) les ressources permettant le lancement du menu rEFInd que le script iPXE doit récupérer, à savoir:<br>
-
-* le binaire éxécutable `refind_x64.efi`
-* le fichier de configuration `refind.conf`
-
-
-Le service HTTP qui désservira les fichiers pour rEFInd:<br>
-(le chemin choisi dans notre exemple sera  celui par défaut, à savoir `/var/www/` toujours sur le *Node_0*)
-
-```bash
-root@node_0:/var/www# tree
-|-- refind.conf
-`-- refind_x64.efi
-```
 
 contenu du fichier `refind.conf`
 
