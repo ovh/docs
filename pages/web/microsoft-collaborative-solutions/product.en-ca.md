@@ -1,6 +1,6 @@
 ---
 title: Microsoft collaborative solutions
 slug: microsoft-collaborative-solutions
-sections: Getting started with Exchange, Exchange account features, Outlook Web Application (OWA), Account migration, Email clients, Exchange-compatible smartphone and tablet configuration, Office, SharePoint, Exchange Diagnostics
+sections: Getting started with Exchange, Email clients, Exchange-compatible smartphone and tablet configuration, Account migration, Exchange account features, Outlook Web Application (OWA), Exchange Diagnostics, Office, SharePoint
 order: 07 
 ---
