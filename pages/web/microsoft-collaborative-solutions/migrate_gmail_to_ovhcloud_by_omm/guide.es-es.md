@@ -2,7 +2,7 @@
 title: 'Migrar una cuenta de Gmail a una cuenta de correo electrónico de OVHcloud a través de OVH Mail Migrator'
 slug: migracion-de-gmail-mediante-ovh-mail-migrator
 excerpt: 'Cómo migrar sus cuentas de Gmail a OVHcloud con nuestra herramienta OVH Mail Migrator'
-section: 'Migrar una cuenta de Exchange'
+section: 'Migración de una cuenta'
 order: 04
 ---
 

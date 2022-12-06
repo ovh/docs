@@ -2,7 +2,7 @@
 title: 'Delegar permissões numa conta de e-mail'
 slug: exchange_3013_atribuir_permissoes_full_access_a_uma_conta
 excerpt: 'Saiba como delegar os direitos da sua conta de e-mail noutro'
-section: “Funcionalidades das contas Exchange”
+section: Funcionalidades das contas Exchange
 order: 03
 ---
 
