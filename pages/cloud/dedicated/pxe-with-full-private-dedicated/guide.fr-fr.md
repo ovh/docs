@@ -89,14 +89,18 @@ processus complet de démarrage Netboot:
 
 |étape|description/détails|
 |---|---|
-|1|
-|2|
-|3|
-|4|
-|5|
-|6|
-|7|
-|8|
+|1|envoi de requête discover vers le DHCP de la machine cliente|
+|2|Le DHCP affecte une adresse IP à la machine cliente (offer/request/ack)|
+||requête de récupération du binaire iPXE|
+|3||récupération en TFTP du binaire iPXE|
+|4|chargement du binaire iPXE en tant que firmware|
+|5|requête de récupération de script iPXE si nécessaire|
+|6|récuparation du script iPXE associé en TFTP|
+|7|éxécution du script iPXE|
+||récupération des ressources nécessaire à rEFInd|
+||binaire et fichier de configuration requis|
+|8|éxécution et chargement du binaire rEFInd|
+|9|rEFInd lance sa tâche de scan afin de repérer les secteurs d'amorçage des disques locaux|
 
 > [!primary]
 >
