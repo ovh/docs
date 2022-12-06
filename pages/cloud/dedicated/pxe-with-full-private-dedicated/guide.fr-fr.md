@@ -206,18 +206,18 @@ subnet 192.168.1.0 netmask 255.255.255.240 {
     ping-check = 1;
     next-server 192.168.1.1; # tftpd server's IP
 
-    if option arch = 00:07 {    			# Détermine le type d'architecture, ici 64bits
+    if option arch = 00:07 {                # Détermine le type d'architecture, ici 64bits
       if exists user-class and option user-class = "iPXE" {
-          filename "refind.pxe";     		# Détermine le script appelé par le binaire
+          filename "refind.pxe";            # Détermine le script appelé par le binaire
       } else {
-            filename "ipxe.efi"; 	    	# Détermine le binaire iPXE
+            filename "ipxe.efi";            # Détermine le binaire iPXE
       }
 
-    } else if option arch = 00:06 { 		# Détermine le type d'architecture, ici 32bits
+    } else if option arch = 00:06 {         # Détermine le type d'architecture, ici 32bits
       if exists  user-class and option user-class = "iPXE" {
-              filename "refind.pxe"; 		# Détermine le script appelé par le binaire
+              filename "refind.pxe";        # Détermine le script appelé par le binaire
       } else {
-              filename "ipxe32.efi";		# Détermine le binaire iPXE
+              filename "ipxe32.efi";        # Détermine le binaire iPXE
       }
     }
 }
