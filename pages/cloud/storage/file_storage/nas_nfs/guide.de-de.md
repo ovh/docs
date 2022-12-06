@@ -10,7 +10,7 @@ order: 03
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 08.11.2022**
+**Letzte Aktualisierung am 06.12.2022**
 
 ## Ziel
 
@@ -64,13 +64,13 @@ ubuntu@server:~$ sudo apt install nfs-common
 Verwenden Sie anschließend folgenden Mount-Befehl:
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Beispiel:**
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Sie können nun über den angegebenen Ordner auf Ihre gemountete Partition zugreifen.
@@ -99,13 +99,13 @@ centos@server:~$ sudo systemctl restart rpcbind
 Verwenden Sie folgenden Befehl, um Ihre Partition zu mounten:
 
 ```bash
-centos@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+centos@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Beispiel:**
 
 ```bash
-centos@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+centos@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Sie können nun über den angegebenen Ordner auf Ihre gemountete Partition zugreifen.
@@ -114,7 +114,7 @@ Sie können nun über den angegebenen Ordner auf Ihre gemountete Partition zugre
 >
 > Um die Mountoperation automatisch auszuführen, wenn der Server bootet, fügen Sie folgende Zeile zur Datei `/etc/fstab` hinzu:
 >
-> `IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
+> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
 ### Fedora
@@ -128,13 +128,13 @@ fedora@server:~$ sudo dnf -y install nfs-utils
 Verwenden Sie anschließend folgenden Mount-Befehl:
 
 ```bash
-fedora@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+fedora@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Beispiel:**
 
 ```bash
-fedora@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+fedora@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Sie können nun über den angegebenen Ordner auf Ihre gemountete Partition zugreifen.

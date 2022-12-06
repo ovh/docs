@@ -6,7 +6,7 @@ section: NAS-HA
 order: 03
 ---
 
-**Dernière mise à jour le 08/11/2022**
+**Dernière mise à jour le 06/12/2022**
 
 ## Objectif
 
@@ -59,13 +59,13 @@ ubuntu@server:~$ sudo apt install nfs-common
 Utilisez ensuite la commande de montage suivante :
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Par exemple :**
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Vous pouvez maintenant accéder à votre partition montée dans le dossier spécifié.
@@ -94,13 +94,13 @@ centos@server:~$ sudo systemctl restart rpcbind
 Pour monter votre partition, utilisez la commande suivante :
 
 ```bash
-centos@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+centos@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Par exemple :**
 
 ```bash
-centos@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+centos@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Vous pouvez maintenant accéder à votre partition montée dans le dossier spécifié.
@@ -109,7 +109,7 @@ Vous pouvez maintenant accéder à votre partition montée dans le dossier spéc
 >
 > Afin d'automatiser le processus de montage à chaque démarrage du serveur, ajoutez la ligne suivante au fichier `/etc/fstab` :
 >
-> `IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
+> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
 ### Fedora
@@ -123,13 +123,13 @@ fedora@server:~$ sudo dnf -y install nfs-utils
 Utilisez ensuite la commande de montage suivante :
 
 ```bash
-fedora@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+fedora@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Par exemple :**
 
 ```bash
-fedora@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+fedora@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Vous pouvez maintenant accéder à votre partition montée dans le dossier spécifié.
