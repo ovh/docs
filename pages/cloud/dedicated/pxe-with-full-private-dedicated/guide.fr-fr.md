@@ -22,16 +22,15 @@ Profiter d'une infrastructure privée sans avoir modifié la configuration par d
 >
 > Pour rappel, il est prohibé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
 > Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres de critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
-> Nous avons pré-configurés les paramètres de démarrage en fonction de nos qualifications et avons donc intégrer toutes nos stack de tooling en conséquences:
-> monitoring, recycling, netboot.
-> Ainsi ces paramètres permettent à nos équipes d'intervenir de manière optimisée et en toute transparence et éfficacité.
-> Si ces paramètres sont amenées à être modifiés, nos équipes ne pourront surement plus effectuer leur tâches qui leur sont dédiées dans les conditions que nous aurons choisies.
+> Nous avons pré-configurés les paramètres de démarrage en fonction de nos qualifications et avons donc intégrer tous nos outils en conséquences: netboot, monitoring, recycling, etc...
+> Ainsi ces paramètres permettent à nos équipes d'intervenir de manière optimisée, en toute transparence et éfficacité.
+> Si ces paramètres sont amenées à être modifiés, nos équipes ne pourront plus effectuer leur tâches qui leur sont dédiées dans les conditions que nous aurons choisies.
 > 
 
 > [!primary]
 > 
-> Le Netboot consiste , de par ses différentes séquences, a élaborer/choisir un type d'amorçage pour votre système d'exploitation.
-> Les solutions qu'on choisi les équipes OVhcloud, permettront à vos solutions de pourvoir démarrer dans toutes les situations ou cas de figures, même en cas de panne.
+> Le Netboot consiste, de par ses différentes séquences, à élaborer/choisir un type d'amorçage pour vos système d'exploitation.
+> Les solutions techniques qu'on choisi les équipes d'OVhcloud permettront à vos solutions de pourvoir démarrer en toutes circonstances.
 >
 
 Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.<br>
@@ -49,7 +48,7 @@ par conséquent, le mecanisme de démarrage de la solution se retrouve inopéran
 
 > [!primary]
 >
->  il existe 2 composants:<br>
+>  il existe un 2 composants majeurs :<br>
 >  **PXE**: utilisant un environnement standardisé client/serveur, basé sur les protocoles BOOTP/DHCP/TFTP, afin de permettre un démarrage/deploiement via le réseau du système client.<br>
 >  **iPXE**: utilisant un environnement standardisé client/serveur plus évolué, basé sur les protocoles HTTP,iSCSI, AoE, FCoE, Wi-Fi afin de permettre un démarrage/deploiement via le réseau du système client.
 >
@@ -71,16 +70,12 @@ par conséquent, le mecanisme de démarrage de la solution se retrouve inopéran
 
 liste des composants intervenants lors du démarrage :
 
-* Mode de démarrage en **PXE** (solution de démarrage réseau bas niveau) via l'interface réseau d'une machine cliente active permettant de communiquer avec le serveur **DHCP** de ce même réseau. Ce mode est défini au préalable dans le bios de votre serveur via le menu *boot order*.
-dhcp
-* Un serveur **DHCP** : pour adresser les informations nécessaires afin de récupérer: une adresse IP, un firmware PXE (sous forme de binaire executable), ainsi que le **script** PXE associé.
-tftp
+* Un serveur **DHCP** : afin de rendre opérationelle l'interface réseau de votre machine cliente
 * Un service **TFTP** : pour récuperer des ressources en réseau
-http
-* Un service **HTTP** : pour récuperer des ressources en réseau
-rEFInd
-* La solution rEFInd, sous forme de BootLoader, a été choisie car parfaitement adapté à nos besoins, celle-ci permettant la recherche du type d'amorçage d'un systeme pour les differentes machines clientes:<br>
+* Un service **HTTP** : pour récuperer des ressources en réseau 
+* La solution **rEFInd**, sous forme de BootLoader, a été retenue car parfaitement adaptée à vos besoins, celle-ci permettra la recherche du type d'amorçage d'un systeme pour les differentes machines clientes:<br>
 disque local, volume réseau, usb, etc...
+
 
 processus complet de démarrage Netboot:
 
@@ -210,18 +205,18 @@ subnet 192.168.1.0 netmask 255.255.255.240 {
     ping-check = 1;
     next-server 192.168.1.1; # tftpd server's IP
 
-    if option arch = 00:07 {                # Détermine le type d'architecture, ici 64bits
+    if option arch = 00:07 {                        # Détermine le type d'architecture, ici 64bits
       if exists user-class and option user-class = "iPXE" {
-          filename "refind.pxe";            # Détermine le script appelé par le binaire
+          filename "refind.pxe";                    # Détermine le script appelé par le binaire
       } else {
-            filename "ipxe.efi";            # Détermine le binaire iPXE
+            filename "ipxe.efi";                    # Détermine le binaire iPXE
       }
 
-    } else if option arch = 00:06 {         # Détermine le type d'architecture, ici 32bits
+    } else if option arch = 00:06 {                 # Détermine le type d'architecture, ici 32bits
       if exists  user-class and option user-class = "iPXE" {
-              filename "refind.pxe";        # Détermine le script appelé par le binaire
+              filename "refind.pxe";                # Détermine le script appelé par le binaire
       } else {
-              filename "ipxe32.efi";        # Détermine le binaire iPXE
+              filename "ipxe32.efi";                # Détermine le binaire iPXE
       }
     }
 }
@@ -355,13 +350,13 @@ Elles pourront eventuellement servir de template si besoin.<br>
 
 
 Aperçu de ce que l'on obtiend à l'affichage lors d'un Netboot UEFI (par défaut):<br>
-correspond aux étapes 1 à 7 <br>
-![iPXE en action](images/animation.gif)
+correspond aux étapes 1 à 4<br>
+![iPXE en action](images/animation.gif){.thumbnail}
 
 
-correspond au résultat des étapes 8 à 13 <br>
-![rEFInd en action](images/rEFInd.png)
-ci-dessus, nous avons le bootloader rEFInd chargé sur une machine avec le systeme debian d'installé.
+correspond au résultat des étapes 5 à 9 <br>
+![rEFInd en action](images/rEFInd.png){.thumbnail}
+Ci-dessus, nous avons le bootloader rEFInd chargé sur une machine avec un système debian installé.
 
 
 
@@ -405,9 +400,11 @@ iptables -I INPUT -i ethX -p tcp --dport 53 -j ACCEPT
 ## Aller plus loin
 
 Comprendre et/ou personnaliser votre service DHCP via ce [lien](https://wiki.debian.org/fr/DHCP_Server).<br>
-Comprendre et/ou personnaliser votre iPXE via ce [lien](https://ipxe.org/docs)
-Comprendre ou découvrir NTP via ce [lien](https://fr.wikipedia.org/wiki/Network_Time_Protocol).<br>
+Comprendre et/ou personnaliser votre service iPXE via ce [lien](https://ipxe.org/docs).<br>
 Comprendre et/ou personnaliser votre service rEFInd via ce [lien](https://fr.wikipedia.org/wiki/REFInd).<br>
+Comprendre ou découvrir NTP via ce [lien](https://fr.wikipedia.org/wiki/Network_Time_Protocol).<br>
+Comprendre ou découvrir Dnsmasq via ce [lien](https://wiki.debian.org/dnsmasq).<br>
+
 
 
 
