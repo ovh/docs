@@ -48,7 +48,7 @@ par conséquent, le mecanisme de démarrage de la solution se retrouve inopéran
 
 > [!primary]
 >
->  il existe un 2 composants majeurs :<br>
+>  il existe un composant majeur existant en 2 versions :<br>
 >  **PXE**: utilisant un environnement standardisé client/serveur, basé sur les protocoles BOOTP/DHCP/TFTP, afin de permettre un démarrage/deploiement via le réseau du système client.<br>
 >  **iPXE**: utilisant un environnement standardisé client/serveur plus évolué, basé sur les protocoles HTTP,iSCSI, AoE, FCoE, Wi-Fi afin de permettre un démarrage/deploiement via le réseau du système client.
 >
