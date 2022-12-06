@@ -194,7 +194,7 @@ Depois de instalar o seu software de correio, siga as instruções abaixo para p
 > **Mail macOS**
 >>
 >> A partir do e-mail no macOS, crie uma pasta que aparecerá na secção "No meu Mac" na coluna da esquerda. Para isso, siga a documentação da Apple:<br><br>
->> - [Criar ou eliminar caixas de correio no Mail](https://support.apple.com/pt-pt/guide/mail/mlhlp1021/15.0/mac/12.0) {.external}<br>
+>> - [Criar ou eliminar caixas de correio no Mail](https://support.apple.com/pt-pt/guide/mail/mlhlp1021/15.0/mac/12.0){.external}<br>
 >>
 > **Thunderbird**
 >>
