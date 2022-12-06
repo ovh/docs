@@ -92,7 +92,7 @@ Quando il tuo account email è saturo, puoi sempre inviare email dalla tua parte
 
 Prima di effettuare qualsiasi altra operazione sul tuo account email, è necessario prendere visione del contenuto del tuo account per eliminare tutti gli elementi superflui. Ti consigliamo di verificarne alcuni in particolare:
 
-- `1`{.action} **La Corbeille (Trah)**: contiene gli elementi che hai eliminato. Per evitare di accumulare email in questa cartella, ti consigliamo di svuotare regolarmente il cestino.
+- `1`{.action} **La spazzatura (trash)**: contiene gli elementi che hai eliminato. Per evitare di accumulare email in questa cartella, ti consigliamo di svuotare regolarmente il cestino.
 - `2`{.action} **Gli elementi inviati (sent messages)**: quando inviate un'email, questa viene trasmessa al destinatario. ma viene anche conservato sul tuo account email nei "messaggi inviati". Ti consigliamo di svuotare regolarmente questa cartella o archiviarne il contenuto in locale sul tuo computer o su uno spazio di archiviazione remoto di tipo "cloud".
 - `3`{.action} **Le email salvate contenenti allegati voluminosi**: le email contenenti allegati richiedono più spazio sul tuo account email. Ti consigliamo di salvare gli elementi voluminosi su uno spazio di storage locale (computer) o remoto (cloud).
 - `4`{.action}**Cartella**: quando hai molte cartelle sul tuo account email, è meno facile misurare lo spazio occupato sul tuo account email. Effettua regolarmente l'inventario delle tue cartelle e del loro contenuto.
