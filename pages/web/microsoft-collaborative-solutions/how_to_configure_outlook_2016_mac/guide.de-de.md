@@ -2,7 +2,7 @@
 title: 'Konfiguration von Exchange auf Outlook 2016 für Mac'
 slug: konfiguration-outlook-2016-mac
 excerpt: 'So konfigurieren Sie Ihren Exchange Account auf Outlook 2016 für Mac'
-section: 'E-Mail-Clients'
+section: Computerkonfiguration
 order: 02
 ---
 

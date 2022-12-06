@@ -4,7 +4,7 @@ slug: exchange-configuration-automatique-sous-ios-iphone-ipad
 routes:
     canonical: 'https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/'
 excerpt: Découvrez comment configurer un compte Exchange sur un iPhone ou un iPad, via l'application Mail
-section: Configuration Exchange sur smartphone/tablettes
+section: Configuration sur smartphone/tablette
 order: 03
 ---
 

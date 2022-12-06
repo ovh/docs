@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja konta Exchange w aplikacji Mail na macOS'
 slug: konfiguracja-mail-macos
-section: 'Konfiguracja Exchange na komputerze'
+section: 'Konfiguracja komputerowa'
 order: 06
 ---
 

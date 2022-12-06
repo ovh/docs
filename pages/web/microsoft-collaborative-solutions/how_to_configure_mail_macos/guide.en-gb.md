@@ -2,7 +2,7 @@
 title: Configuring your Exchange account on the macOS Mail app
 slug: exchange-automatic-configuration-on-mail-mac
 excerpt: Find out how to configure your Exchange email address on the macOS Mail app
-section: Email clients
+section: Konfiguration auf computer
 order: 06
 ---
 

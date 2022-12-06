@@ -4,7 +4,7 @@ slug: konfiguracja-exchange-thunderbird-mac
 routes:
     canonical: 'https://docs.ovh.com/pl/emails/konfiguracja_konta_e-mail_w_programie_thunderbird/'
 excerpt: 'Tutaj znajdziesz procedurę dodawania konta Exchange w programie Thunderbird'
-section: 'Konfiguracja Exchange na komputerze'
+section: 'Konfiguracja komputerowa'
 order: 05
 ---
 

@@ -4,7 +4,7 @@ slug: configuracao-exchange-thunderbird-mac
 routes:
     canonical: 'https://docs.ovh.com/pt/emails/e-mails_partilhados_guia_de_configuracao_para_o_thunderbird/'
 excerpt: 'Encontre aqui o procedimento para adicionar uma conta Exchange para Thunderbird'
-section: 'Configuração Exchange no computador'
+section: 'Configurazione al computer'
 order: 05
 ---
 

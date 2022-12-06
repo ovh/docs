@@ -2,7 +2,7 @@
 title: 'Konfiguracja konta Exchange w aplikacji Poczta na systemie Windows 10'
 slug: konfiguracja-poczta-windows-10
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w aplikacji Poczta na urządzeniu z systemem Windows 10'
-section: 'Konfiguracja Exchange na komputerze'
+section: 'Konfiguracja komputerowa'
 order: 03
 ---
 

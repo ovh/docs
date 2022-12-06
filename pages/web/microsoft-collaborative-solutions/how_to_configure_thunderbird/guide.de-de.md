@@ -4,7 +4,7 @@ slug: exchange_20132016_konfiguration_in_thunderbird
 routes:
     canonical: 'https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-windows/'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Exchange Account in Thunderbird für Windows einrichten'
-section: 'E-Mail-Clients'
+section: Computerkonfiguration
 order: 04
 ---
 
