@@ -6,7 +6,7 @@ section: NAS-HA
 order: 03
 ---
 
-**Dernière mise à jour le 08/11/2022**
+**Dernière mise à jour le 06/12/2022**
 
 ## Objectif
 
