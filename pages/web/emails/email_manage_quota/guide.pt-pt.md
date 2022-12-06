@@ -189,7 +189,7 @@ Depois de instalar o seu software de correio, siga as instruções abaixo para p
 >>
 >> No Outlook, certifique-se de que, na sua coluna da esquerda, a pasta "arquivo" ou "no meu computador" está presente para poder introduzir os elementos que deseja manter localmente no seu computador. Consulte a documentação da Microsoft para preparar a sua pasta de arquivo:<br><br>
 >> - [Arquivo no Outlook para Windows](https://support.microsoft.com/pt-pt/office/arquivar-no-outlook-para-windows-25f75777-3cdc-4c77-9783-5929c7b47028){.external}<br>
->> - [Sobre as pastas do meu computador no Outlook para Mac](https://support.microsoft.com/pt-pt/office/acerca-das-pastas-no-meu-computador-no-outlook-para-mac-c91b8729-924d-4c25-a5f6-38883d0f763d) {.external}<br>
+>> - [Sobre as pastas do meu computador no Outlook para Mac](https://support.microsoft.com/pt-pt/office/acerca-das-pastas-no-meu-computador-no-outlook-para-mac-c91b8729-924d-4c25-a5f6-38883d0f763d){.external}<br>
 >>
 > **Mail macOS**
 >>
