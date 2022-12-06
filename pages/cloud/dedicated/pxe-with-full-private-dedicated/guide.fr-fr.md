@@ -19,19 +19,16 @@ Profiter d'une infrastructure privée sans avoir modifié la configuration par d
 
 
 > [!warning]
-
+>
 > Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres de critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
 > 
-> Nous avons pré-configurés le mecanisme de démarrage en fonction de nos qualifications et avons intégré tous nos outils : netboot, monitoring, recycling, etc...
->  Si ces paramètres sont amenées à être modifiés, nos équipes ne pourront plus effectuer leur tâches qui leur sont dédiées dans les conditions que nous aurons choisies.
->   
->  Pour rappel, il est fortemeetn déconseillé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
-> 
-> Ainsi ces paramètres permettent à nos équipes d'intervenir de manière optimisée, en toute transparence et éfficacité.
->
 > Le Netboot consiste, de par ses différentes séquences, à élaborer/choisir un type d'amorçage pour vos système d'exploitation.
-> Les solutions techniques qu'on choisi les équipes d'OVhcloud permettront à vos solutions de pourvoir démarrer en toutes circonstances.
-
+>
+> Pour rappel, il est fortement déconseillé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
+> 
+> Nous avons pré-configurés le mecanisme de démarrage de nos solutions et y avons intégré tous nos outils : netboot, monitoring, recycling, etc...
+> Si ces paramètres sont amenées à être modifiés, nos équipes ne pourront plus effectuer leur tâches qui leur sont dédiées dans les conditions que nous aurons choisies.
+>
 
 
 Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.<br>
@@ -87,10 +84,10 @@ schéma (logique) de démarrage Netboot:
 |---|---|
 1. envoi de requête discover vers le DHCP depuis la machine cliente.
 2. Le DHCP affecte une adresse IP à la machine cliente (offer/request/ack). Requête de récupération du binaire iPXE.
-|3||récupération en TFTP du binaire iPXE.
-|4|chargement du binaire iPXE en tant que firmware.
-|5|requête de récupération de script iPXE si nécessaire.
-|6|récuparation du script iPXE associé en TFTP.
+3. récupération en TFTP du binaire iPXE.
+4. chargement du binaire iPXE en tant que firmware.
+5. requête de récupération de script iPXE si nécessaire.
+6. récuparation du script iPXE associé en TFTP.
 7. éxécution du script iPXE.récupération des ressources nécessaire à rEFInd. binaire et fichier de configuration requis.
 8. éxécution et chargement du binaire rEFInd.
 9. rEFInd lance sa tâche de scan afin de repérer les secteurs d'amorçage des disques locaux.
@@ -123,8 +120,9 @@ Exemple:
 
 > [!primary]
 >
-> Pour que ces services soient pleinement fonctionnels, penser à déclarer/ajouter si besoin les régles dans le firewall local sur l'interface réseau privée de la machine hébergeant les services.
-> 
+> Après le démarrage des systèmes, et pour que les services  DHCP et ceux optionels (DNS et NTP) soient pleinement fonctionnels, penser à déclarer/ajouter si besoin les régles dans le firewall local sur l'interface réseau privée de la machine hébergeant les services.
+>
+
 #### le service **DHCP**
 
 ci-dessous, un exemple de fichier de configuration pour votre service **DHCP**.<br>
@@ -364,7 +362,7 @@ service DNS:<br>
 Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/etc/hosts`ou bien utiliser, par exemple, un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
 
 service NTP:<br>
-Il est fortement conseillé d'utiliser un service DNS surtout si votre infrastructure comprends plusieurs machines.
+Il est fortement conseillé d'utiliser un service NTP surtout si votre infrastructure comprends plusieurs machines.
 
 liste des ports à autoriser dans votre firewall local (de la machine hébergeant les services).
 * NTP port 123
