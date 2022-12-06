@@ -101,7 +101,6 @@ Les informations de configuration des clusters utilisées par notre guide sont l
     - Masque : `255.255.252.0`
     - Version du cluster : `6.5`.
 
-
 En plus de ce guide, vous pouvez vous aider de ces documentations :
 
 - [hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) ;
@@ -117,7 +116,7 @@ En plus de ce guide, vous pouvez vous aider de ces documentations :
 
 La première étape est de réaliser l'interconnexion des trois clusters sur le même vRack OVHcloud. 
 
-Aidez-vous de ce guide pour interconnecter vos clusters : [Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/). Pour connecter les trois clusters,utilisez les instructions fournies sur le guide dans ce sens :
+Aidez-vous de ce guide pour interconnecter vos clusters : [Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/). Pour connecter les trois clusters, utilisez les instructions fournies sur le guide dans ce sens :
 
 - Les clusters de Roubaix dans le vRack dédié à Gravelines.
 - Les clusters de Erith dans le vRack dédié à Gravelines.
@@ -220,6 +219,7 @@ ssh nutanix@adresse_ip_privee_prism_central_Gravelines
 saisissez le mot de passe de Prism Central
 python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_Gravelines
 ```
+
 <a name="regpc"></a>
 
 #### Etape 1.3 - Enregistrement des deux clusters sur le Prism Central d'Erith
@@ -427,7 +427,7 @@ Saisissez le mot de passe du compte Nutanix de Prism Element
 
 #### Etape 1.7 - Création d'une catégorie qui servira lors de la mise en place du P.R.A
 
-Nous allons créer une catégorie avec deux valeurs dans Prism Central pour affectuer les machines virtuelles concernées par la réplication.
+Nous allons créer une catégorie avec deux valeurs dans Prism Central pour affecter les machines virtuelles concernées par la réplication.
 
 Faites défiler le menu principal, cliquez sur `Categories`{.action} dans le sous menu `Administration`{.action}.
 
@@ -459,7 +459,7 @@ Sélectionnez à gauche **les deux machines virtuelles** de Roubaix puis, dans l
 
 ![07 - Add Categorie to VM Roubaix 02](images/07-add-categorie-to-vm-roubaix02.png){.thumbnail}
 
-Ajoutez la catégorie `ProcectedVM: Roubaix`, cliquez ensuite sur `Save`{.action}.
+Ajoutez la catégorie `ProtectedVM: Roubaix`, cliquez ensuite sur `Save`{.action}.
 
 ![07 - Add Categorie to VM Roubaix 03](images/07-add-categorie-to-vm-roubaix03.png){.thumbnail}
 
@@ -467,7 +467,7 @@ Sélectionnez à gauche `les trois machines virtuelles`{.action} de Gravelines e
 
 ![08 - Add Categorie to VM Gravelines 01](images/08-add-categorie-to-vm-gravelines01.png){.thumbnail}
 
-Ajoutez la catégorie `ProcectedVM: Gravelines`, cliquez ensuite sur `Save`{.action}.
+Ajoutez la catégorie `ProtectedVM: Gravelines`, cliquez ensuite sur `Save`{.action}.
 
 ![08 - Add Categorie to VM Gravelines 02](images/08-add-categorie-to-vm-gravelines02.png){.thumbnail}
 

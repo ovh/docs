@@ -57,7 +57,7 @@ Below is the diagram showing the three sites:
     - [Step 1.8 Add virtual machines in categories](#addvmcat)
     - [Step 1.9 Setting up synchronous replications between Roubaix and Gravelines](#confreplsync)
     - [Step 1.10 Create Subnets for Disaster Recovery Plan](#addsublan)
-    - [Step 1.11 Implementation of business resumption plans](#adddr)
+    - [Step 1.11 Implementation of disaster recovery plans](#adddr)
 - [Step 2 - Validate Disaster Recovery Plan](#validation)
     - [Step 2.1 Monitoring the Disaster Recovery Plan](#ctrldr)
     - [Step 2.2 Live migration of virtual machines from Roubaix to Gravelines](#livemigration)
@@ -100,7 +100,6 @@ The cluster configuration information used in our guide is as follows:
     - Gateway: `192.168.3.254`.
     - Mask: `255.255.252.0`
     - Cluster version: `6.5`.
-
 
 In addition to this guide, you can use these documents:
 
@@ -145,15 +144,15 @@ The Erith cluster will host the Prism Central virtual machine for the three clus
 Connect via SSH to the Prism Element cluster in Roubaix:
 
 ```bash
-ssh nutanix@adresse_ip_privee_prism_element_Roubaix
+ssh nutanix@private_ip_address_prism_element_Roubaix
 Enter Prism Element password
 ```
 
 Run this command to remove Prism Element from the Prism Central configuration:
 
 ```bash
-ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=private_ip_address_central_roubaix
-username=admin password=mdp_pe_Roubaix force=true
+ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=private_ip_address_central_roubaix\
+username=admin password=pwd_pe_Roubaix force=true
 ```
 
 This message appears when disconnecting from Prism Central.
@@ -168,12 +167,12 @@ Enter this command:
 ncli cluster info
 ```
 
-Note the value of the  **Cluster UUID** that must have this form **xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx**.
+Note the value of the  **Cluster UUID** that must have this form **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**.
 
 Disconnect from Prism Element and connect via SSH on the Prism Central virtual machine in Roubaix.
 
 ```bash
-ssh nutanix@adresse_ip_privee_prism_central_roubaix
+ssh nutanix@private_ip_address_prism_central_roubaix
 Enter Prism Central password
 ```
 
@@ -188,14 +187,14 @@ python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_Ro
 Log in to the Prism Element cluster in Gravelines via SSH.
 
 ```bash
-ssh nutanix@adresse_ip_prism_element_Gravelines
+ssh nutanix@private_ip_address_prism_element_Gravelines
 Enter Prism Element password
 ```
 
 Enter this command:
 
 ```bash
-ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=adresse_ip_privee_prism_central_Gravelines\
+ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=private_ip_address_prism_central_Gravelines\
 username=admin password=pwd_pe_Gravelines force=true
 ```
 
@@ -211,15 +210,16 @@ Enter this command:
 ncli cluster info
 ```
 
-Note the value of **Cluster UID** that should be in this form **xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx**
+Note the value of **Cluster UID** that should be in this form **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**
 
 Disconnect from Prism Element and connect via SSH on the Prism Central virtual machine in Gravelines.
 
 ```bash
-ssh nutanix@adresse_ip_privee_prism_central_Gravelines
+ssh nutanix@private_ip_address_prism_central_Gravelines
 enter Prism Central password
 python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_Gravelines
 ```
+
 <a name="regpc"></a>
 
 #### Step 1.3 - Registration of the two clusters on the Prism Central in Erith
@@ -227,14 +227,14 @@ python /home/nutanix/bin/unregistration_cleanup.py cluster_uuid_prism_element_Gr
 Log in to the Prism Element in Roubaix via SSH:
 
 ```bash
-ssh nutanix@adresse_ip_privee_prism_element_Roubaix
+ssh nutanix@private_ip_address_prism_element_Roubaix
 enter Prism Element password
 ```
 
 Run this command:
 
 ```bash
-ncli multicluster register-to-prism-central username=admin password=passwod_admin\ external-ip-address-or-svm-ips=adresse_ip_privee_prism_central_Erith
+ncli multicluster register-to-prism-central username=admin password=passwod_admin\ external-ip-address-or-svm-ips=private_ip_address_prism_central_Erith
 ```
 
 This message appears:
@@ -257,7 +257,7 @@ Registered Cluster Count: 1
     Cluster Id                : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
     Cluster Name              : Prism-Central-Erith-FQDN
     Is Multicluster           : true
-    Controller VM IP Addre... : [adresse_ip_privee_prism_central_Erith]
+    Controller VM IP Addre... : [private_ip_address_prism_central_Erith]
     External or Masqueradi... :
     Cluster FQDN              :
     Controller VM NAT IP A... :
@@ -298,7 +298,7 @@ Registered Cluster Count: 1
     Cluster Id                : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
     Cluster Name              : Prism-Central-Erith-FQDN
     Is Multicluster           : true
-    Controller VM IP Addre... : [adresse_ip_privee_prism_central_Erith]
+    Controller VM IP Addre... : [private_ip_address_prism_central_Erith]
     External or Masqueradi... :
     Cluster FQDN              :
     Controller VM NAT IP A... :
@@ -328,7 +328,7 @@ From the Prism Central dashboard, click the link to the `Erith cluster`{.action}
 
 ![03 - Add iscsi address Erith 01](images/03-add-iscsi-address-erith01.png){.thumbnail}
 
-On the Prism Element dashboard, click the cluster `name in the top left-hand corner`{.action}.
+On the Prism Element dashboard, click the `cluster name`{.action} in the top left-hand corner.
 
 ![03 - Add iscsi address Erith 02](images/03-add-iscsi-address-erith02.png){.thumbnail}
 
@@ -399,7 +399,7 @@ We will move the virtual machine storage to the `Storage Container` we have crea
 Connect via SSH on the Prism Element of the Roubaix cluster:
 
 ```bash
-ssh nutanix@adresse_ip_privee_Prism_element_Roubaix
+ssh nutanix@private_ip_address_Prism_element_Roubaix
 Enter the Nutanix account password of Prism Element
 ```
 
@@ -413,7 +413,7 @@ Enter the Nutanix account password of Prism Element
 Log in to the Prism Element of the Gravelines cluster via SSH:
 
 ```bash
-ssh nutanix@adresse_ip_privee_Prism_element_Gravelines
+ssh nutanix@private_ip_address_Prism_element_Gravelines
 Enter the Nutanix account password of Prism Element
 ```
 
@@ -427,7 +427,7 @@ Enter the Nutanix account password of Prism Element
 
 #### Step 1.7 - Creation of a category to be used when implementing the P.R.A
 
-We will create a category with two values in Prism Central to love the virtual machines involved in replication.
+We will create a category with two values in Prism Central to assign the virtual machines involved in replication.
 
 Scroll through the main menu, click `Categories`{.action} on the `Administration`{.action} submenu.
 
@@ -459,7 +459,7 @@ From the Prism Central main menu, click `Vms`{.action} in the `Compute & Storage
 
 ![07 - Add Categorie to VM Roubaix 02](images/07-add-categorie-to-vm-roubaix02.png){.thumbnail}
 
-Add the category `ProcectedVM: Roubaix`, then click `Save`{.action}.
+Add the category `ProtectedVM: Roubaix`, then click `Save`{.action}.
 
 ![07 - Add Categorie to VM Roubaix 03](images/07-add-categorie-to-vm-roubaix03.png){.thumbnail}
 
@@ -467,7 +467,7 @@ Select `the three virtual machines`{.action} in Gravelines on the left, and on t
 
 ![08 - Add Categorie to VM Gravelines 01](images/08-add-categorie-to-vm-gravelines01.png){.thumbnail}
 
-Add the category `ProcectedVM: Gravelines`, then click `Save`{.action}.
+Add the category `ProtectedVM: Gravelines`, then click `Save`{.action}.
 
 ![08 - Add Categorie to VM Gravelines 02](images/08-add-categorie-to-vm-gravelines02.png){.thumbnail}
 
@@ -607,7 +607,7 @@ In the Prism Central `Subnets` dashboard, you will see six new subnets.
 
 <a name="adddr"></a>
 
-#### Step 1.11 - Implementation of business resumption plans
+#### Step 1.11 - Implementation of disaster recovery plans
 
 Now that the replications and subnets are in place, we will implement automated or manual disaster recovery plans on demand to:
 
@@ -773,7 +773,7 @@ Then click `Done`{.action}.
 > 3 networks have been added to this disaster recovery plan because the Gateway virtual machine uses these three networks.
 >
 
-Both business resumption plans are in production.
+Both disaster recovery plans are in production.
 
 ![13 - Create Recovery Plan Gravelines 10](images/13-create-gravelines-recovery-plan10.png){.thumbnail}
 
