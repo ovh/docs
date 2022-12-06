@@ -199,7 +199,7 @@ Depois de instalar o seu software de correio, siga as instruções abaixo para p
 > **Thunderbird**
 >>
 >> Através do thunderbird a partir do Windows, macOS ou Linux, pode mover os seus e-mails para uma pasta da parte esquerda. Ajude-se com a documentação de Mozilla:<br><br>
->> - [Arquivo de mensagens](https://support.mozilla.org/pt-PT/kb/mensagens-arquivadas) {.external}<br>
+>> - [Arquivo de mensagens](https://support.mozilla.org/pt-PT/kb/mensagens-arquivadas){.external}<br>
 >>
 
 #### Mudar de oferta para aumentar a sua capacidade <a name="switchingoffer"></a>
