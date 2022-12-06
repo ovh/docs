@@ -3,7 +3,7 @@ title: 'Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Excha
 slug: migracao-endereco-email-partilhado-vers-exchange
 excerpt: 'Saiba como migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange'
 section: 'Migração de contas'
-order: 04
+order: 02
 ---
 
 **Última atualização: 22/11/2022**

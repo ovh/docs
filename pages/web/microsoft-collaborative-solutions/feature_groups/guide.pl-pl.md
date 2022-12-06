@@ -2,9 +2,8 @@
 title: 'Korzystanie z grup (mailing listy) dostępnych z kontem Exchange'
 excerpt: 'Dowiedz się, jak zarządzać listami wysyłkowymi w programie Exchange'
 slug: exchange_20132016_korzystanie_z_grup_wewnetrzne_grupy_dyskusyjne
-section: 'Funkcjonalności i współdzielenie Exchange'
-legacy_guide_number: g1258
-order: 01
+section: 'Funkcje kont Exchange'
+order: 02
 ---
 
 **Ostatnia aktualizacja: 26-02-2020**

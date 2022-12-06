@@ -2,7 +2,7 @@
 title: 'Primeros pasos con el servicio Hosted Exchange'
 excerpt: 'Cómo configurar por primera vez el servicio Hosted Exchange'
 slug: exchange_20132016_primera_configuracion_del_servicio
-section: 'Configuración de Exchange'
+section: 'Primeros pasos con Exchange'
 order: 01
 ---
 

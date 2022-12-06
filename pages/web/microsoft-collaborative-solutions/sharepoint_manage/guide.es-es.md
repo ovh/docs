@@ -2,7 +2,6 @@
 title: 'Activación y gestión de un SharePoint OVH'
 slug: activacion_y_gestion_de_un_sharepoint_ovh
 excerpt: 'Cómo contratar y configurar una plataforma SharePoint'
-legacy_guide_number: g2249
 section: SharePoint
 order: 01
 ---

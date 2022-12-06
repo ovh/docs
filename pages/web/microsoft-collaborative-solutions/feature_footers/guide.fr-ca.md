@@ -1,10 +1,9 @@
 ---
 title: Ajouter un pied de page pour vos comptes Exchange 
 slug: exchange-signature-automatique-disclaimer
-legacy_guide_number: 1330
 excerpt: Retrouvez ici la procedure d’activation d’un pied de page (Disclaimer) sur votre compte Exchange
 section: Fonctionnalités des comptes Exchange
-order: 06
+order: 07
 ---
 
 **Dernière mise à jour le 26/03/2020**

@@ -1,7 +1,6 @@
 ---
 title: How to obtain an Outlook licence for Exchange
 slug: exchange-outlook-licence
-legacy_guide_number: 1718
 excerpt: Find out how to subscribe to an Outlook licence from your OVHcloud Exchange platform and how to activate it
 section: Office
 order: 01

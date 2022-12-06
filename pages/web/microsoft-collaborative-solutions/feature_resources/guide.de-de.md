@@ -2,9 +2,8 @@
 title: Verwendung von Ressourcen-Accounts
 excerpt: In dieser Hilfe wird die Verwendung der Ressourcen-Accounts Ihres Exchange Angebots beschrieben
 slug: exchange_20132016_verwendung_der_ressourcen-accounts
-legacy_guide_number: g1325
 section: 'Exchange Account-Funktionen'
-order: 04
+order: 05
 ---
 
 **Letzte Aktualisierung am 22.12.2020**

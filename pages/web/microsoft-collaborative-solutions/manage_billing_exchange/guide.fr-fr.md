@@ -3,7 +3,7 @@ title: 'Gérer la facturation de vos comptes Exchange'
 slug: gestion-facturation-exchange
 excerpt: 'Découvrez comment gérer la facturation de votre service Exchange'
 section: 'Premiers pas avec Exchange'
-order: 01
+order: 03
 ---
 
 **Dernière mise à jour le 23/03/2020**

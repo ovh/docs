@@ -3,7 +3,6 @@ title: 'Iniziare a utilizzare Hosted Exchange'
 slug: exchange_20132016_prima_configurazione
 excerpt: 'Scopri come configurare un Hosted Exchange'
 section: 'Iniziare a utilizzare Exchange'
-legacy_guide_number: g1311
 order: 01
 ---
 

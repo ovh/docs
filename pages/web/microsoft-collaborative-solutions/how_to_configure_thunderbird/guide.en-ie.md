@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/ie/en/emails/configure-email-for-thunderbird-windows/'
 excerpt: 'Find out how to configure your Exchange account in Thunderbird'
 section: 'Email clients'
-order: 02
+order: 04
 ---
 
 **Last updated 26th August 2021**

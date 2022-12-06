@@ -2,8 +2,8 @@
 title: 'Attivare la doppia autenticazione su un account Exchange'
 slug: attiva_2fa_exchange
 excerpt: 'Come attivare la doppia autenticazione su un account Exchange'
-section: 'Funzionalità di un account Exchange'
-order: 03
+section: 'Funzionalità degli account Exchange'
+order: 04
 ---
 
 **Ultimo aggiornamento: 11/03/2020**

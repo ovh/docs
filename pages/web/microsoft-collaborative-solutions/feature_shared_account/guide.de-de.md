@@ -3,7 +3,7 @@ title: Freigegebenes Postfach erstellen und verwenden
 slug: exchange-verwendung-freigegebene-accounts
 excerpt: Erfahren Sie hier, wie Sie ein freigegebenes Postfach zu Ihrem Exchange-Dienst hinzufügen und verwenden
 section: Exchange Account-Funktionen
-order: 05
+order: 06
 ---
 
 > [!primary]

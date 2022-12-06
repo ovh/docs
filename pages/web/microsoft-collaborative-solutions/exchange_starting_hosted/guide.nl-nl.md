@@ -4,7 +4,7 @@ title: Aan de slag met Hosted Exchange
 slug: eerste-configuratie-exchange
 excerpt: Hosted Exchange - de eerste stappen
 section: Configuratie van Exchange
-order: 1
+order: 01
 ---
 
 **Laatste update 01-02-2018**

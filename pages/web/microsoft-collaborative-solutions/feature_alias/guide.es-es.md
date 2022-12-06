@@ -2,7 +2,7 @@
 title: Añadir un alias a una cuenta de correo
 slug: email-alias
 excerpt: Cómo añadir un alias a una dirección de correo electrónico desde el área de cliente de OVHcloud
-section: Funcionalidades de Exchange
+section: Funcionalidades de las cuentas Exchange
 order: 01
 ---
 

@@ -2,8 +2,8 @@
 title: 'Migracja konta e-mail MX Plan na konto E-mail Pro lub Exchange'
 slug: migracja-adres-e-mail-na-hostingu-na-exchange
 excerpt: 'Dowiedz się, jak przenieść konto e-mail MX Plan na konto E-mail Pro lub Exchange'
-section: 'Migracja konta Exchange'
-order: 04
+section: 'Migracja konta'
+order: 02
 ---
 
 **Ostatnia aktualizacja z dnia 22-11-2022**

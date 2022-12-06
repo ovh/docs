@@ -3,7 +3,7 @@ title: 'Configurar una cuenta Exchange en Android utilizando la aplicación Gmai
 slug: configuracion-android
 excerpt: 'Cómo configurar una cuenta Exchange en Android utilizando la aplicación Gmail'
 section: 'Configuración en un smartphone o tablet compatible con Exchange'
-order: 01
+order: 02
 ---
 
 **Última actualización: 31/05/2018**

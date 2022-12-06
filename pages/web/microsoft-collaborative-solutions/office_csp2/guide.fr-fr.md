@@ -8,7 +8,7 @@ order: 03
 
 **Dernière mise à jour le 17/06/2022**
 
-## Objectif
+## Objectif 
 
 Office 365 Revendeurs (CSP2) est un service vous permettant de bénéficier de différents types de licences Microsoft 365 aux tarifs préférentiels afin que vous puissiez les revendre auprès de vos clients.
 

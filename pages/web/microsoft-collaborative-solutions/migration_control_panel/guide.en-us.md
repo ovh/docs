@@ -3,7 +3,7 @@ title: 'Migrating an MX Plan email address to an Exchange account'
 slug: migration-email-address-to-exchange
 excerpt: 'Find out how to migrate an MX Plan email address to an Exchange account'
 section: 'Account migration'
-order: 04
+order: 02
 hidden: true
 ---
 

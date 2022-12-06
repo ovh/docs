@@ -3,7 +3,7 @@ title: 'Configuring two-factor authentication on an Exchange account'
 slug: configuring-2fa-exchange
 excerpt: 'Find out how to configure two-factor authentication on an Exchange account'
 section: 'Exchange account features'
-order: 03
+order: 04
 ---
 
 **Last updated 11th March 2020**

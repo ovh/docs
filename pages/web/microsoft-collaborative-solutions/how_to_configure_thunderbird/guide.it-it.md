@@ -4,8 +4,8 @@ slug: exchange_20132016_configurazione_di_thunderbird
 routes:
     canonical: 'https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/'
 excerpt: Come configurare il tuo indirizzo Exchange su Thunderbird per Windows
-section: 'Configurazione di un client di posta elettronica Exchange'
-order: 02
+section: 'Configurazione di Exchange sul computer '
+order: 04
 ---
 
 > [!primary]

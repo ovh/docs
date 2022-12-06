@@ -8,7 +8,7 @@ order: 02
 
 **Dernière mise à jour le 22/02/2022**
 
-## Objectif
+## Objectif 
 
 Il y a plusieurs avantages à souscrire aux offres OVHcloud **Microsoft 365 apps for business** ou **Microsoft 365 apps for entreprise**. La facturation est mensuelle et vous pouvez installer une licence sur 5 PC/Mac, 5 tablettes et 5 smartphones.
 

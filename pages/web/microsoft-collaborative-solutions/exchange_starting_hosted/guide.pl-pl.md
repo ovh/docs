@@ -2,7 +2,7 @@
 title: 'Pierwsze kroki z usługą Hosted Exchange'
 slug: exchange_20132016_pierwsza_konfiguracja_uslugi
 excerpt: 'Rozpocznij pracę z usługą Hosted Exchange'
-section: 'Konfiguracja usługi Exchange'
+section: 'Pierwsze kroki z Exchange'
 order: 01
 ---
 

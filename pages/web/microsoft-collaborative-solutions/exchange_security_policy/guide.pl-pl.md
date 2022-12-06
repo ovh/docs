@@ -2,7 +2,7 @@
 title: 'Zarządzanie polityką bezpieczeństwa usługi e-mail'
 slug: zarzadzanie-polityka-bezpieczenstwa-exchange
 excerpt: 'Dowiedz się, jak zarządzać polityką bezpieczeństwa usługi e-mail'
-section: 'Pierwsze kroki z usługą Exchange'
+section: 'Pierwsze kroki z Exchange'
 order: 06
 ---
 

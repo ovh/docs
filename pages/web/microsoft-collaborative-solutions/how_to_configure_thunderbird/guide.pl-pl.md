@@ -4,8 +4,8 @@ slug: exchange_20132016_konfiguracja_w_programie_thunderbird
 routes:
     canonical: 'https://docs.ovh.com/pl/emails/konfiguracja_konta_e-mail_w_programie_thunderbird/'
 excerpt: 'Tutaj znajdziesz procedurę dodawania konta Exchange w programie Thunderbird'
-section: 'Konfigurowanie konta Exchange na komputerze'
-order: 02
+section: 'Konfiguracja Exchange na komputerze'
+order: 04
 ---
 
 > [!primary]

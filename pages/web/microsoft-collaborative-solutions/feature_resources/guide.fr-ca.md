@@ -3,7 +3,7 @@ title: Créer et utiliser des comptes de ressource
 slug: exchange-utilisation-des-comptes-de-ressource
 excerpt: Ajouter et utiliser les comptes de ressource avec l’offre Exchange
 section: Fonctionnalités des comptes Exchange
-order: 04
+order: 05
 ---
 
 **Dernière mise à jour le 22 décembre 2020**

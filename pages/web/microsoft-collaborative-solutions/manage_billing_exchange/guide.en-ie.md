@@ -3,7 +3,7 @@ title: 'Managing the billing for Exchange accounts'
 slug: manage-exchange-billing
 excerpt: 'Find out how to manage the billing for your Exchange service'
 section: 'Getting started with Exchange'
-order: 02
+order: 03
 ---
 
 **Last updated 20th April 2020**

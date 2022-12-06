@@ -10,7 +10,7 @@ L'outil OSM vous permet de rapatrier le contenu de votre Sharepoint externe vers
 
 - Le contenu
 - Les données
-- La personnalisation
+- La personnalisation 
 
 
 ## Prérequis

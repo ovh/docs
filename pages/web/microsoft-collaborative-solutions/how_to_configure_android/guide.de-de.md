@@ -2,9 +2,8 @@
 title: 'Konfiguration Ihres Exchange Accounts in Android über die Gmail-App'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie Ihren Exchange Account in Android über die Gmail-App einrichten.'
 slug: exchange_20132016_konfiguration_in_android
-legacy_guide_number: g1282
 section: 'Konfiguration von Exchange auf kompatiblen Smartphones/Tablets'
-order: 01
+order: 02
 ---
 
 **Stand 14.09.2018**

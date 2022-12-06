@@ -1,7 +1,6 @@
 ---
 title: 'Primeros pasos con el servidor Private Exchange'
 slug: exchange_primeros_pasos_con_un_servidor_private
-legacy_guide_number: 2074
 excerpt: 'Cómo configurar el servidor Private Exchange'
 section: 'Primeros pasos con Exchange'
 order: 02

@@ -1,7 +1,6 @@
 ---
 title: Ajouter un alias sur son compte e-mail
 slug: exchange-ajouter-un-alias-sur-un-e-mail-depuis-le-manager
-legacy_guide_number: 1252
 excerpt: Découvrez comment ajouter un alias sur une adresse e-mail depuis votre espace client OVHcloud
 section: Fonctionnalités des comptes Exchange
 order: 01

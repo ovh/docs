@@ -1,10 +1,9 @@
 ---
 title: 'Migrare un account email con OVH Mail Migrator'
 slug: migrazione-account-email-con-ovh-mail-migrator
-legacy_guide_number: 1624
 excerpt: 'Scopri come migrare i tuoi account di posta elettronica verso OVH grazie al nostro tool OVH Mail Migrator'
-section: 'Migrazione di account'
-order: 02
+section: 'Migrazione account'
+order: 03
 ---
 
 > [!primary]

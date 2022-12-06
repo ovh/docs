@@ -3,7 +3,7 @@ title: 'Konfiguration von Exchange auf der Windows 10 Mail App'
 slug: mail-konfiguration-windows-10
 excerpt: 'Hier erfahren Sie, wie Sie Ihren Exchange Account auf der Mail App von Windows 10 einrichten.'
 section: 'E-Mail-Clients'
-order: 06
+order: 03
 ---
 
 **Stand 29.08.2018**

@@ -3,7 +3,7 @@ title: Migrating email accounts using OVH Mail Migrator
 slug: exchange-account-migration-with-ovh-mail-migrator
 excerpt: Find out how to migrate your email accounts to OVHcloud using our OVH Mail Migrator tool
 section: Account migration
-order: 02
+order: 03
 ---
 
 **Last updated 2018/10/05**

@@ -2,8 +2,8 @@
 title: Crea e utilizza un account condiviso
 slug: exchange-utilizzo-account-condivisi
 excerpt: Aggiungi e utilizza un account condiviso sulla tua soluzione Exchange
-section: Funzionalità di un account Exchange
-order: 05
+section: Funzionalità degli account Exchange
+order: 06
 ---
 
 > [!primary]

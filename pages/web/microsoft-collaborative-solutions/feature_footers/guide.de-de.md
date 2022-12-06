@@ -2,9 +2,8 @@
 title: 'Automatische Signaturen erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie automatische Signaturen zu Ihren E-Mail-Accounts hinzufügen'
 slug: exchange_20132016_automatische_signatur_-_disclaimer
-legacy_guide_number: g1330
 section: Exchange Account-Funktionen
-order: 03
+order: 07
 ---
 
 

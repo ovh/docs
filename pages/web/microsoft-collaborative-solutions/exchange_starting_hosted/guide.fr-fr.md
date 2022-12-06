@@ -8,7 +8,7 @@ order: 01
 
 **Dernière mise à jour le 09/01/2018**
 
-## Objectif
+## Objectif 
 
 Le service Hosted Exchange permet de bénéficier d’adresses e-mail professionnelles facilitant le travail collaboratif grâce à des fonctionnalités comme la synchronisation du calendrier et celle des contacts.
 

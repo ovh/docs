@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_iphone_ios_91/'
 excerpt: 'Cómo configurar una cuenta Exchange en un iPhone o iPad utilizando la aplicación Mail'
 section: 'Configuración en un smartphone o tablet compatible con Exchange'
-order: 02
+order: 03
 ---
 
 

@@ -2,8 +2,8 @@
 title: 'Delegare i diritti su un account email'
 excerpt: 'Come assegnare i diritti del tuo email a un altro account'
 slug: exchange_2013_assegna_i_diritti_full_access_a_un_account
-section: Funzionalità di un account Exchange
-order: 0
+section: Funzionalità degli account Exchange
+order: 03
 ---
 
 **Ultimo aggiornamento: 24/10/2020**

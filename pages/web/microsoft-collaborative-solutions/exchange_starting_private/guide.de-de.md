@@ -2,7 +2,6 @@
 title: 'Erste Schritte mit Private Exchange'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Private Exchange Dienst einrichten'
 slug: exchange_die_ersten_schritte_mit_einem_private_server
-legacy_guide_number: g2074
 section: 'Erste Schritte mit Exchange'
 order: 02
 ---

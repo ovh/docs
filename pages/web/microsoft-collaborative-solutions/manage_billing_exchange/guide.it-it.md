@@ -3,7 +3,7 @@ title: 'Gestire la fatturazione di un account Exchange'
 slug: gestisci-fatturazione-exchange
 excerpt: 'Come effettuare le diverse azioni relative alla fatturazione del tuo servizio Exchange'
 section: 'Iniziare a utilizzare Exchange'
-order: 02
+order: 03
 ---
 
 **Ultimo aggiornamento: 23/03/2020**

@@ -1,6 +1,5 @@
 ---
 title: Utilizar o ambiente de trabalho remoto com Microsoft 365 apps
-legacy_guide_number: 2339
 slug: office365-proplus-escritório-a-distância
 excerpt: Saiba como instalar e utilizar Microsoft 365 apps num ambiente de trabalho remoto (RDS) ou num computador partilhado
 section: Office

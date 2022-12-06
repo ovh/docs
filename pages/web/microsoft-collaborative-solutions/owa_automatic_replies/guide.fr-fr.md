@@ -2,7 +2,6 @@
 title: 'Mettre en place un répondeur automatique depuis l’interface OWA'
 excerpt: Découvrez comment mettre en place une réponse automatique sous OWA
 slug: exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa
-legacy_guide_number: g1922
 section: "Utilisation d'Outlook Web Application (OWA)"
 order: 02
 ---

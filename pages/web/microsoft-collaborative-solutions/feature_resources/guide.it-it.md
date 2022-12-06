@@ -2,8 +2,8 @@
 title: 'Crea e utilizza account di risorsa'
 excerpt: In questa guida ti mostriamo come configurare degli account di risorsa
 slug: exchange_2013_utilizzo_account_di_risorsa
-legacy_guide_number: g1325
-order: 04
+section: Funzionalità degli account Exchange
+order: 05
 ---
 
 **Ultimo aggiornamento: 22 dicembre 2020**

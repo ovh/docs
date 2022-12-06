@@ -3,7 +3,7 @@ title: 'Configuring your Exchange account in Outlook for Windows'
 slug: configuration-outlook-2016
 excerpt: 'Find out how to configure your Exchange account in Outlook for Windows'
 section: Email clients
-order: 04
+order: 01
 ---
  
 **Last updated 5th July 2021**
