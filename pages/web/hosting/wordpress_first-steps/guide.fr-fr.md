@@ -126,10 +126,6 @@ Vous pouvez alors modifier les catégories en cochant ou décochant les élémen
 > Sélectionner une sous-catégorie n'entraîne pas la sélection automatique de la catégorie parenteS.
 >
 
-### Créer une page
-
-### Améliorer la structure de vos URL
-
 ## Aller plus loin
 
 - stockez vos accès dans un gestionnaire de mots de passe comme [KeePass](https://keepass.info/)
