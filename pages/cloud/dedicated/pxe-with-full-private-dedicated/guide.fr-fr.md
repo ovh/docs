@@ -84,7 +84,7 @@ processus complet de démarrage Netboot:
 
 |étape|description/détails|
 |---|---|
-|1|envoi de requête discover vers le DHCP de la machine cliente|
+|1|envoi de requête discover vers le DHCP depuis la machine cliente|
 |2|Le DHCP affecte une adresse IP à la machine cliente (offer/request/ack)|
 ||requête de récupération du binaire iPXE|
 |3||récupération en TFTP du binaire iPXE|
