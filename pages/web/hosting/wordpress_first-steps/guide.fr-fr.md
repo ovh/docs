@@ -28,7 +28,7 @@ Lors de l'installation de votre CMS en 1-clic, vous avez reçu un mail contenant
 - le nom de l'administrateur
 - un lien pour obtenir le mot de passe administrateur.
 
-### Se connectez à l'interface d'administration
+### Se connecter à l'interface d'administration
 
 Rendez-vous sur le lien qui vous a été communiqué par mail lors de l'installation. Par défaut, l'URL pour accéder à l'interface ser termine par `wp-admin`&nbsp;:
 
@@ -42,7 +42,7 @@ Saisissez le login (ou «&nbsp;Nom de l'administrateur&nbsp;») qui vous a été
 
 ![WordPress - Dashboard](images/wordpress_first_steps%5B2%5D.png){.thumbnail}
 
-### Changez le thème de votre site WordPress
+### Changer le thème de votre site WordPress
 
 Les **thèmes** WordPress sont des ensembles de fichiers qui vont vous permettre de modifier la présentation de votre site sans en modifier le contenu. Il existe de nombreux thèmes disponibles sur internet, gratuits comme payants, avec des thématiques différentes&nbsp;: sites web, blogs, e-commerce, presse en ligne.
 
@@ -88,7 +88,7 @@ Pour notre exemple, nous allons cliquer sur «&nbsp;Visualiser&nbsp;» (Preview)
 
 Pour revenir à l'interface d'administration de WordPress, cliquez sur l'icône en haut à gauche.
 
-### Gérez les catégories
+### Gérer les catégories
 
 WordPress vous permet de définir des catégories et d'associer vos articles avec une ou plusieurs d'entre elles. Pour gérer les catégories de votre site, rendez vous dans «&nbsp;Articles&nbsp;», puis «&nbsp;Catégories&nbsp;»&nbsp;:
 
@@ -107,9 +107,28 @@ Une fois ces informations indiquées, cliquez sur le bouton «&nbsp;Ajouter une 
 
 ![WordPress - Categories added](images/wordpress_first_steps%5B13%5D.png){.thumbnail}
 
-### Affectez une catégorie à un article
+Vous avez la possibilité de gérer la hiérarchie des vos catégories. Une nouvelle catégorie peut être liée à une catégorie existante&nbsp;:
 
+![WordPress - Sub-categorie added](images/wordpress_first_steps%5B14%5D.png){.thumbnail}
 
+### Affecter une catégorie à un article
+
+Pour affecter un article à une ou plusieurs catégories, cliquez sur «&nbsp;Articles&nbsp;» (Posts). Vous aurez alors la liste de tous les articles et leur statut. Survolez le titre de l'article que vous souhaitez classer, puis cliquez sur «&nbsp;Modification rapide&nbsp;»(Quick Edit)&nbsp;:
+
+![WordPress - Categorize a post](images/wordpress_first_steps%5B15%5D.png){.thumbnail}
+
+Vous pouvez alors modifier les catégories en cochant ou décochant les éléments listés dans la colonne «&nbsp;Categories&nbsp;»&nbsp;:
+
+![WordPress - Set new categories to an existing post](images/wordpress_first_steps%5B16%5D.png){.thumbnail}
+
+>[!warning]
+>
+> Sélectionner une sous-catégorie n'entraîne pas la sélection automatique de la catégorie parenteS.
+>
+
+### Créer une page
+
+### Améliorer la structure de vos URL
 
 ## Aller plus loin
 
