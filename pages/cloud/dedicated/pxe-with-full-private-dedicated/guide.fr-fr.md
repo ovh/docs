@@ -77,7 +77,7 @@ liste des composants intervenants lors du démarrage :
 disque local, volume réseau, usb, etc...
 
 
-processus complet de démarrage Netboot:
+déroulement (logique) de démarrage Netboot:
 
 ![Netboot en action](images/netboot_steps.png)
 
