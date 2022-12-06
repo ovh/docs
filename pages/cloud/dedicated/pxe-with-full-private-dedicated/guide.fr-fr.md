@@ -355,7 +355,7 @@ correspond aux étapes 1 à 4<br>
 
 
 correspond au résultat des étapes 5 à 9 <br>
-![rEFInd en action](images/rEFInd.png){.thumbnail}
+![rEFInd en action](images/rEFInd.png){.thumbnail}<br>
 Ci-dessus, nous avons le bootloader rEFInd chargé sur une machine avec un système debian installé.
 
 
