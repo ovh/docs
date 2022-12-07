@@ -31,10 +31,10 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
   <div style="border: 1px solid #46464A; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
             <h3 style="margin: 0 ; font-size: ">
-                Hello World
+                <b>Hello World</b>
             </h3>
             <p>
-                made by <b>OVHCloud</b>
+                <b>OVHCloud</b>
             </p>
         </div>
         <p>Launch your first API with Flask</p>
@@ -78,10 +78,10 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
   <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
             <h3 style="margin: 0">
-                EDA and interactive prediction
+                <b>EDA and interactive prediction</b>
             </h3>
             <p>
-                made by <b>OVHCloud</b>
+                <b>OVHCloud</b>
             </p>
         </div>
         <p>Explore, analyse iris data and do interactive prediction with Streamlit</p>
@@ -125,10 +125,10 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
   <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
             <h3 style="margin: 0">
-                Sketch recognition
+                <b>Sketch recognition</b>
             </h3>
             <p>
-                made by <b>OVHCloud</b>
+                <b>OVHCloud</b>
             </p>
         </div>
         <p>Recognize handwritten digits with Gradio</p>
@@ -172,10 +172,10 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
   <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
             <h3 style="margin: 0">
-                Spam classification
+                <b>Spam classification</b>
             </h3>
             <p>
-                made by <b>OVHCloud</b>
+                <b>OVHCloud</b>
             </p>
         </div>
         <p>Classify spam messages with FastAPI</p>
@@ -212,17 +212,17 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
                 ovhai app run --default-http-port 8000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification
             </blockquote>
             <figcaption>
-                <b>API</b> - interact with the API with `<app-url>`/docs or curl command
+                <b>API</b> - interact with the API with <b>app-url<b>/docs or curl command
             </figcaption>
         </div>
   </div>
   <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
             <h3 style="margin: 0">
-                Sentiment analysis
+                <b>Sentiment analysis</b>
             </h3>
             <p>
-                made by <b>OVHCloud</b>
+                <b>OVHCloud</b>
             </p>
         </div>
         <p>Analyse text sentiment with Hugging Face models and Flask</p>
@@ -264,6 +264,7 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
         </div>
   </div>
 </div>
+<br/>
 
 If you want to launch these apps from the OVHcloud control panel:
 
