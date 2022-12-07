@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Dernière mise à jour le 04/11/2022**
+**Dernière mise à jour le 07/12/2022**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, il seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -15,7 +15,7 @@ order: 01
 
 ## Objectif
 
-**Ce guide est une introduction à l'interface NSX-T**
+**Ce guide est une introduction à NSX-T**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -23,12 +23,15 @@ order: 01
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
-NSX-T est une solution de gestion de réseau logiciel **Sofware Defined networking (SDN)** fournie par VMware, OVHcloud propose ce service en remplacement de NSX-V. 
+NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-V dans son offre Hosted Private Cloud Powered by VMware. 
 
 Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfiguration est appliqué avec deux passerelles :
 
-- **Tier-0 Gateway** : Pour les connexions entre le cluster VMware et Internet.
-- **Tier-1 Gateway** : Pour les connexions entre réseaux virtuels internes au cluster VMware ainsi que sur la passerelle **Tier-0-Gateway** pour accès externes.
+- **Tier-0 Gateway**: For connections outside the cluster, this is called north-south traffic.
+- **Tier-1 Gateway** : Pour les connexions intra-cluster (segments) qui dans ce cas est trafic est-ouest.
+
+Les deux passerelles sont reliées entre elles afin d'autoriser les réseaux internes à communiquer à l'extérieur du cluster.
+
 
 ## Prérequis
 
@@ -39,7 +42,7 @@ Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfi
 
 ### Connexion à l'interface d'administration de NSX-T
 
-La connexion à NSX-T se fait à partir de l'URL de votre cluster VMware fourni par OVHcloud de la forme **https://pcc-xxxxx.ovh.xx**.
+La connexion à NSX-T se fait à partir de l'URL de votre cluster fourni par OVHcloud de la forme **https://pcc-xxxxx.ovh.xx**.
 
 A partir de la page d'accueil de votre cluster cliquez sur l'icône `NSX NSX-T`{.action}.
 

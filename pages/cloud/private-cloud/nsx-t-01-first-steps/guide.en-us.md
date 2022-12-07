@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Last updated 04th November 2022**
+**Last updated 07th December 2022**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -21,14 +21,16 @@ order: 01
 > This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
-**This guide is an introduction to the NSX-T interface**
+**This guide is an introduction to the NSX-T**
 
-**NSX-T** is a **Software-Defined Networking (SDN)** solution provided by VMware. OVHcloud offers this service as an alternative to **NSX-V**.
+NSX-T is a Software-Defined Networking (SDN)** solution provided by VMware. OVHcloud is offering this service to replace NSX-V in its Hosted Private Cloud Powerer by VMware solution.
 
 When a customer subscribes to the NSX-T offer and is enabled, a preset is applied with two gateways :
 
 - **Tier-0 Gateway** : For connections between the VMware cluster and the Internet.
-- **Tier-1 Gateway** : For connections between internal virtual networks to the VMware cluster and on the **Tier-0-Gateway** for external access.
+- **Tier-1 Gateway**: For intra-cluster connections (segments) that in this case is east-west traffic.
+
+The two gateways are interconnected to allow internal networks to communicate outside the cluster.
 
 ## Requirements
 
@@ -39,7 +41,7 @@ When a customer subscribes to the NSX-T offer and is enabled, a preset is applie
 
 ### Logging in to the NSX-T administration interface
 
-You can connect to NSX-T from the URL of your VMware cluster, provided by OVHcloud, in the form **https://pcc-xxxxx.ovh.xx**.
+You can connect to NSX-T from the URL of your cluster, provided by OVHcloud, in the form **https://pcc-xxxxx.ovh.xx**.
 
 From the homepage for your cluster, click the `NSX NSX-T`{.action} icon.
 
@@ -80,3 +82,4 @@ Inside initial configuration, there is no link between your VMware infrastructur
 ## Go further <a name="gofurther"></a>
 
 Join our community of users on <https://community.ovh.com/en/>.
+
