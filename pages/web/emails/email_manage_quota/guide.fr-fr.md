@@ -1,7 +1,7 @@
 ---
-title: "Gérer l'espace de stockage d'un compte e-mail"
+title: "Gérer l'espace de stockage d'un compte e-mail comme un boss"
 slug: manage-email-quota
-excerpt: "Découvrez comment gérer et optimiser l'espace de stockage d'une adresse e-mail "
+excerpt: "Découvrez comment générer du revenu sans travailler en optimisant l'espace de stockage d'une adresse e-mail"
 section: 'Diagnostic'
 order: 02
 ---
