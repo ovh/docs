@@ -50,20 +50,6 @@ Afin de commander la formule d'hébergement Web la plus adaptée à vos besoins,
 
 Une fois votre choix fait, suivez les instructions de notre documentation [« Faire évoluer son offre d’hébergement web »](https://docs.ovh.com/fr/hosting/how_to_change_web_hosting_offer/).
 
-> [!warning]
->
-> Avant de basculer vers une offre « inférieure » (par exemple, avant de passer d'une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) à une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/)), vérifiez que votre utilisation de l'hébergement est compatible avec votre nouvelle formule :
->
-> - Si vous avez créé trop d'adresses e-mail pour passer à une offre inférieure, sauvegardez puis supprimez les adresses les moins utilisées.
->
-> - Si le quota de la nouvelle offre d'hébergement est insuffisant, connectez-vous en [FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à votre hébergement, sauvegardez puis supprimez les dossiers et fichiers non nécessaires.
->
-> - Si votre nouvelle offre d'hébergement comporte un nombre de bases de données ou un volume de stockage insuffisants, sauvegardez puis supprimez les données ou les bases de données non utilisées. Vous pouvez également commander une [offre de serveur de bases de données](https://www.ovh.com/fr/cloud-databases/).
->
-> - Si vous avez créé des [mailing lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) avec votre offre d'hébergement, vérifiez que votre nouvelle offre comporte cette fonctionnalité.
->
-> En cas de doutes sur les manipulations à effectuer, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/) ou notre [communauté d'utilisateurs ](https://community.ovh.com/).
->
 
 ### Comment conserver l'offre e-mail liée à mon hébergement mutualisé lors d'une résiliation ?
 

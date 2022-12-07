@@ -116,18 +116,26 @@ Une fois ces 6 éléments vérifiés, vous pouvez réaliser votre [changement d'
 
 Dans le cadre d'un changement de l'offre [Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, il vous sera possible de faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/).
 
+Après avoir pris connaissance de cette information, vous pouvez réaliser votre [changement d'offre](#modify)
+
 #### **Booster temporairement votre hébergement** <a name="boost"></a>
 
-Avec l'[OPTION BOOST](https://www.ovhcloud.com/fr/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez faire évoluer temporairement les ressources de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également migrer vers une solution supérieure afin de disposer de davantage de ressources de manière permanente.
+Avec l'[option Boost](https://www.ovhcloud.com/fr/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez faire évoluer temporairement les ressources de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également migrer vers une solution supérieure afin de disposer de davantage de ressources de manière permanente.
+
+Si l'option **Boost** convient à votre besoin, dans le cadre `Informations générales` de votre hébergement, cliquez sur le bouton `...`{.action} à droite de `Boost` puis sur `Booster mon offre`{.action}.
+
+![change_plan](images/change_boost.png){.thumbnail}
 
 #### **La facturation en cas de changement d'offre** <a name="billing"></a>
 
-Lorsque vous modifiez votre formule en cours d'abonnement, un *report de temps* s'applique sur votre nouvelle offre. Ce report correspond à la durée restante d'abonnement sur votre offre actuelle.
+Lorsque vous modifiez votre formule en cours d'abonnement, un *report de temps* calculé s'applique sur votre nouvelle offre. Ce report est basé sur la durée restante d'abonnement sur votre offre actuelle.
 
-**Exemple :**<br>
-Vous passez d'une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) à une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), alors que l'abonnement en cours n'est pas terminé.<br>
-Par conséquent, la durée restante sera automatiquement **ajoutée** au pro rata temporis à votre nouvel abonnement **Pro**.<br>
-Celui-ci durera de ce fait **un peu plus d'un an**, jusqu'à son prochain renouvellement.
+> **Exemple :**<br>
+> Vous passez d'une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) à un abonnement d'un an sur l'offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), alors que l'abonnement Perso en cours n'est pas terminé.<br>
+> Par conséquent, la durée restante de l'abonnement **Perso** sera automatiquement **ajoutée** au pro rata temporis à votre nouvel abonnement **Pro**.<br>
+> Votre nouvel abonnement **Pro** durera de ce fait **un an** + **le pro rata temporis calculé sur votre précédente offre Perso**, jusqu'à son prochain renouvellement.
+
+Si ces conditions vous conviennent, vous pouvez réaliser votre [changement d'offre](#modify)
 
 ## Aller plus loin <a name="gofurther"></a>
 
