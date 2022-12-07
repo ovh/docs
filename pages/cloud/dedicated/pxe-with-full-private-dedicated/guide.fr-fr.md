@@ -13,21 +13,21 @@ section: 'Utilisation avancée'
 > Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissance concernant le monde open source, ainsi que des notions d'administration.
 > 
 
-Cette documentation à pour but de vous accompagner pour deployer tous les composants et services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement **entièrement privée**.<br>
-Profiter d'une infrastructure privée sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
+Cette documentation à pour but de vous accompagner pour déployer tous les composants et services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement **entièrement privée**.<br>
+Profitez d'une infrastructure privée sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
 
 
 > [!warning]
 >
-> Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres et critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
+> Nous avons au préalable effectué tous nos tests, qualifications et validations de configurations, à partir de paramètres et critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
 > 
-> Le Netboot (Network Boot), consiste de par ses différentes séquences, à utiliser votre interface réseau (en mode bas niveau) comme moyen de selection d'amorçage à vos systèmes d'exploitation.
-> A savoir qu'il est possible de démarrer n'importe quel système à partir d'un volume réseau: SAN, NFS, etc,... ou bien plus fréquement, à partir d'un volume local : disque local, CD/DVD ou USB.
+> Le Netboot (Network Boot) consiste, de par ses différentes séquences, à utiliser votre interface réseau (en mode bas niveau) comme moyen de sélection d'amorçage à vos systèmes d'exploitation.
+> A savoir qu'il est possible de démarrer n'importe quel système à partir d'un volume réseau, par exemple SAN ou NFS. Cependant, le système démarre généralement à partir d'un volume local : disque local, CD/DVD ou USB.
 >
-> Pour rappel, il est fortement déconseillé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
+> Pour rappel, il est fortement déconseillé de modifier les configurations par défaut: configuration BIOS, Boot Order, etc.
 > 
-> Puisque nous avons pré-configurés ce mecanisme de démarrage à nos solutions et y avons intégrés tous nos outils : netboot, monitoring, recycling, etc...
-> Si ces paramètres sont amenées à être modifiés, nos équipes ne pourront plus effectuer leur tâches qui leur sont dédiées dans les conditions que nous aurons choisies, et surtout vous risqueriez de rendre le démarrage inopérant.
+> En effet, nous avons pré-configuré ce mécanisme de démarrage à nos solutions et y avons intégrés tous nos outils : netboot, monitoring, recycling, etc.
+> Si ces paramètres étaient amenés à être modifiés, nos équipes ne pourraient plus effectuer les tâches qui leur sont dédiées dans les conditions que nous avons choisies, et surtout vous risqueriez de rendre le démarrage inopérant.
 >
 
 
@@ -47,7 +47,7 @@ Par conséquent, un serveur isolé de par son réseau privé empéche le mecanis
 >
 >  il existe un composant majeur existant en 2 versions :<br>
 >  **PXE**: utilisant un environnement standardisé client/serveur, basé sur les protocoles BOOTP/DHCP/TFTP, afin de permettre un démarrage/deploiement via le réseau du système client.<br>
->  **iPXE**: utilisant un environnement standardisé client/serveur plus évolué, basé sur les protocoles HTTP,iSCSI, AoE, FCoE, Wi-Fi afin de permettre un démarrage/deploiement via le réseau du système client.
+>  **iPXE**: utilisant un environnement standardisé client/serveur plus évolué, basé sur les protocoles HTTP,iSCSI, AoE, FCoE, Wi-Fi afin de permettre un démarrage/déploiement via le réseau du système client.
 >
 
 
@@ -57,7 +57,7 @@ Par conséquent, un serveur isolé de par son réseau privé empéche le mecanis
 * Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
 * Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (**DHCP** et **TFTP**). Le système d'exploitation sera celui de votre choix.
 * Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez au préalable configuré notre fonctionnabilité [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
- *exemple d'une machine éligible à notre procédure, à partir de l'onglet `Interfaces réseau`{.action} de son manager:* <br>
+ *exemple d'une machine éligible à notre procédure, à partir de l'onglet* `Interfaces réseau`{.action} *de son manager:* <br>
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
 ![OLA2](images/Scr_OLA2.png){.thumbnail}
 
@@ -69,7 +69,7 @@ Par conséquent, un serveur isolé de par son réseau privé empéche le mecanis
 liste des composants intervenants lors du démarrage :
 
 * Un serveur **DHCP** : attribuer une configuration réseau  (bail avec adresse IP) pour une machine cliente qui tente de démarrer.
-* Un service **TFTP** : ressources disponibles à travers le reseau et qui seront interrogées/requêtées par PXE.
+* Un service **TFTP** : ressources disponibles à travers le réseau et qui seront interrogées/requêtées par PXE et iXPE.
 * La solution **rEFInd**, sous forme de **BootLoader**, a été retenue car parfaitement adaptée, celle-ci permettra la recherche de secteurs d'amorçage des machines clientes: disque local, usb, etc...
 
 
@@ -125,9 +125,9 @@ Selon votre distribution, l'arboresence peut être différente (dhcpd.conf).
 
 En régle générale, il suffit de:<br>
 
-* déclarer une interface réseau pour l'écoute (en attente de requêtes).
-* préciser la version du protocol IP (v4 ou v6).
-* renseigner un fichier de configuration principale (à titre d'exemple, cf fichier ci-dessous)
+* déclarez une interface réseau pour l'écoute (en attente de requêtes).
+* précisez la version du protocol IP (v4 ou v6).
+* renseignez un fichier de configuration principale (à titre d'exemple, cf fichier ci-dessous)
 
 ```bash
 default-lease-time 7200;
@@ -341,9 +341,9 @@ Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/p
 
 > [!warning]
 > 
-> Il est récommandé également de deployer les services DNS et NTP.
+> Il est récommandé également de déployer les services DNS et NTP.
 > Ceux-ci ne sont pas nécessaires pour les phases de démarrage des systèmes, donc pas imposés dans cette procédure.
-> Mais ils font partie des services importants par la suite, princialement pour la stabilité de votre infrastructure.
+> Mais ils font partie des services importants par la suite, principalement pour la stabilité de votre infrastructure.
 > 
 
 
