@@ -1,8 +1,8 @@
 ---
-title: Wymiana bramki OVH (EN)
+title: Wymiana bramy OVHgateway (EN)
 slug: software-gateway-replacement
 excerpt: Find out how to replace the OVHgateway with another manageable virtual machine
-section: Bezpieczeństwo sieci
+section: Sieć i bezpieczeństwo
 order: 11
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/software-gateway-replacement/'

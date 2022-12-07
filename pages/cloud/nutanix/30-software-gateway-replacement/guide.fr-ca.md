@@ -42,7 +42,7 @@ Dans notre guide, nous allons remplacer cette passerelle par le système d'explo
 
 Téléchargez l'image ISO de l'installation de **pfSense** à partir de ce lien : [Téléchargement de pfSense](https://www.pfsense.org/download/){.external}.
 
-A l'aide de [cette documentation](https://docs.ovh.com/ca/fr/image-import/), ajoutez l'image **ISO pfSense** dans votre cluster Nutanix.
+A l'aide de [cette documentation](https://docs.ovh.com/ca/fr/nutanix/image-import/), ajoutez l'image **ISO pfSense** dans votre cluster Nutanix.
 
 <a name="createvmpfsense"></a>
 
@@ -57,7 +57,7 @@ Créez une machine virtuelle avec ces paramètres :
 - **CPU** : `2 vCPU`
 - **Réseau** : `2 cartes réseaux, une sur le VLAN 0(base) et l'autre sur le VLAN 1(infra)`
 
-Vous pouvez vous aider de [notre guide sur la gestion des machines virtuelles](https://docs.ovh.com/ca/fr/virtual-machine-management/) pour créer cette machine virtuelle.
+Vous pouvez vous aider de [notre guide sur la gestion des machines virtuelles](https://docs.ovh.com/ca/fr/nutanix/virtual-machine-management/) pour créer cette machine virtuelle.
 
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
@@ -384,7 +384,7 @@ L'interface d'administration de **pfSense** est alors accessible depuis Internet
 
 Connectez-vous à Prism Central pour effectuer ces modifications :
 
-Aidez-vous du guide « [Isoler les machines de gestion de la production](https://docs.ovh.com/ca/fr/nutanix-isolate-management-machines/) » pour créer un nouveau VLAN sur votre cluster Nutanix avec ces paramètres :
+Aidez-vous du guide « [Isoler les machines de gestion de la production](https://docs.ovh.com/ca/fr/nutanix/nutanix-isolate-management-machines/) » pour créer un nouveau VLAN sur votre cluster Nutanix avec ces paramètres :
 
 - **Nom du VLAN** : `Production`
 - **Numéro du VLAN** : `2`

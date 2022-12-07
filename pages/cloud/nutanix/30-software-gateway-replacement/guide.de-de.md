@@ -2,7 +2,7 @@
 title: OVHgateway ersetzen (EN)
 slug: software-gateway-replacement
 excerpt: Find out how to replace the OVHgateway with another manageable virtual machine
-section: Netzwerksicherheit
+section: Netzwerk und Sicherheit
 order: 11
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/software-gateway-replacement/'
