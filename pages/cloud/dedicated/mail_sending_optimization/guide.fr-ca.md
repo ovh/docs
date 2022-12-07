@@ -5,7 +5,7 @@ slug: optimiser-envoi-emails
 section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 04/11/2022**
+**Dernière mise à jour le 07/12/2022**
 
 ## Objectif
 
@@ -23,6 +23,11 @@ Les politiques anti-spam sont de plus en plus strictes. Afin de fluidifier vos e
 ## Prérequis
 
 - Avoir un serveur e-mail déjà configuré
+
+> [!warning]
+>
+> L'objectif de ce guide est de vous fournir quelques astuces pour optimiser l'envoi de vos e-mails. Prenez en considération que chaque service de messagerie a ses propres directives et bonnes pratiques pour garantir la réception des e-mails par les destinataires. Nous vous recommandons vivement de les consulter.
+>
 
 ## En pratique
 
@@ -132,6 +137,8 @@ Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://sup
 #### Vers un serveur Gmail
 
 L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire est chez Gmail. Voici un article de Google qui peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr){.external}.
+
+Google propose également un [article dédié](https://support.google.com/mail/answer/81126?hl=en){.external} à la prévention du spam pour les utilisateurs de Gmail.
 
 ### Vérifier vos informations
 

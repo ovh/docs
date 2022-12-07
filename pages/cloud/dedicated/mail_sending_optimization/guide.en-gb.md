@@ -5,7 +5,7 @@ excerpt: 'Find out how to send emails and limit the risk of them being marked as
 section: Tutorial
 ---
 
-**Last updated 4th November 2022**
+**Last updated 7th December 2022**
 
 ## Objective
 
@@ -22,6 +22,11 @@ Anti-spam policies are becoming increasingly strict. To ensure that your emails 
 ## Requirements
 
 - a configured email server
+
+> [!warning]
+>
+> The purpose of this guide is to provide you with a number of tips on optimising how your emails are sent. Keep in mind that each email service has its own guidelines and best practices for ensuring that messages are received by recipients. We strongly recommend that you consult these guidelines.
+>
 
 ## Instructions
 
@@ -128,6 +133,8 @@ For additional information, please open a [support request](https://support.micr
 #### To a Gmail server
 
 If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
+
+Google also has a [dedicated article](https://support.google.com/mail/answer/81126?hl=en){.external} regarding spam prevention to Gmail users.
 
 ### Check your information
 
