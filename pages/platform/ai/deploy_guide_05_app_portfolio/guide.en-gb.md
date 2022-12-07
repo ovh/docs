@@ -6,7 +6,7 @@ section: AI Deploy - Guides
 order: 05
 ---
 
-**Last updated 1st December, 2022.**
+**Last updated 7th December, 2022.**
 
 > [!primary]
 >
@@ -27,13 +27,243 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
 
 ### Quick examples
 
-| Owner | Task | Description | Documentation | Dockerfile | Docker image | HTTP port | CLI command | Usage |       
-|-------|------|-------------|---------------|------------|--------------|-----------|-------------|-------|
-| OVHcloud | Hello world | Launch your first API with Flask | [AI Deploy - Getting started](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/getting-started/) | [Dockerfile - Hello world](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/hello-world/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/ai-deploy-hello-world` | 5000 | `ovhai app run --default-http-port 5000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/ai-deploy-hello-world` | **API** - interact with the API with a curl command or a Python script |
-| OVHcloud | EDA and interactive prediction | Explore, analyse iris data and do interactive prediction with Streamlit | [AI Deploy - Tutorial - Deploy an interactive app for EDA and prediction using Streamlit](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-eda-iris/) | [Dockerfile - EDA and prediction on iris data](https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/eda-classification-iris/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-eda` | 8501 | `ovhai app run --default-http-port 8501 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-eda` | **Web interface** - access to the app with the url |
-| OVHcloud | Sketch recognition | Recognize handwritten digits with Gradio | [AI Deploy - Tutorial - Deploy a Gradio app for sketch recognition](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/) | [Dockerfile - Sketch recognition](https://github.com/ovh/ai-training-examples/blob/main/apps/gradio/sketch-recognition/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition` | 8080 (default) | `ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition` | **Web interface** - access to the app with the url |
-| OVHcloud | Spam classification | Classify spam messages with FastAPI | [AI Deploy - Tutorial - Deploy and call a spam classifier with FastAPI](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-fastapi-spam-classifier/) | [Dockerfile - Spam classifier API](https://github.com/ovh/ai-training-examples/blob/main/apps/fastapi/spam-classifier-api/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification` | 8000 | `ovhai app run --default-http-port 8000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification` | **API** - interact with the API with `<app-url>/docs` or curl command |
-| OVHcloud | Sentiment analysis | Analyse text sentiment with Hugging Face models and Flask | [AI Deploy - Tutorial - Deploy an app for sentiment analysis with Hugging Face and Flask](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/) | [Dockerfile - Sentiment analysis Hugging Face app](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/sentiment-analysis-hugging-face-app/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis` | 5000 | `ovhai app run --default-http-port 5000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis` | **Web interface** - access to the app with the url |
+<div style="display: grid; grid-template-columns: 50% 50%; grid-gap: 5px">
+  <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center">
+            <h1 style="margin: 0">
+                Hello World
+            </h1>
+            <p>
+                made by <b>OVHCloud</b>
+            </p>
+        </div>
+        <p>Launch your first API with Flask</p>
+        <div style="display: flex; flex-direction: column;">
+            <h3 style="margin: 0">
+                Resources:
+            </h3>
+            <a href="https://docs.ovh.com/gb/en/publiccloud/ai/deploy/getting-started/" target="_blank">
+                AI Deploy - Getting started
+            </a>
+            <a href="https://github.com/ovh/ai-training-examples/blob/main/apps/flask/hello-world/Dockerfile"  target="_blank">
+                Dockerfile - Hello world
+            </a>
+        </div>
+        <hr>
+        <div>
+            <h3 style="margin: 0">
+                Docker image
+            </h3>
+            <blockquote>
+                priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/ai-deploy-hello-world
+            </blockquote>
+        </div>
+        <div>
+            <div style="display: flex; align-items: center; justify-content: space-between">
+                <h3 style="margin: 0">
+                    CLI command
+                </h3>
+                <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
+                    HTTP port: 5000
+                </mark>
+            </div>
+            <blockquote>
+                ovhai app run --default-http-port 5000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/ai-deploy-hello-world
+            </blockquote>
+            <figcaption>
+                <b>API</b> - interact with the API with a curl command or a Python script
+            </figcaption>
+        </div>
+  </div>
+  <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center">
+            <h1 style="margin: 0">
+                EDA and interactive prediction
+            </h1>
+            <p>
+                made by <b>OVHCloud</b>
+            </p>
+        </div>
+        <p>Explore, analyse iris data and do interactive prediction with Streamlit</p>
+        <div style="display: flex; flex-direction: column;">
+            <h3 style="margin: 0">
+                Resources:
+            </h3>
+            <a href="https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-eda-iris/" target="_blank">
+                AI Deploy - Tutorial - Deploy an interactive app for EDA and prediction using Streamlit
+            </a>
+            <a href="https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/eda-classification-iris/Dockerfile"  target="_blank">
+                Dockerfile - EDA and prediction on iris data
+            </a>
+        </div>
+        <hr>
+        <div>
+            <h3 style="margin: 0">
+                Docker image
+            </h3>
+            <blockquote>
+                priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-eda
+            </blockquote>
+        </div>
+        <div>
+            <div style="display: flex; align-items: center; justify-content: space-between">
+                <h3 style="margin: 0">
+                    CLI command
+                </h3>
+                <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
+                    HTTP port: 8501
+                </mark>
+            </div>
+            <blockquote>
+                ovhai app run --default-http-port 8501 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-eda
+            </blockquote>
+            <figcaption>
+                <b>Web interface</b> - access to the app with the url
+            </figcaption>
+        </div>
+  </div>
+  <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center">
+            <h1 style="margin: 0">
+                Sketch recognition
+            </h1>
+            <p>
+                made by <b>OVHCloud</b>
+            </p>
+        </div>
+        <p>Recognize handwritten digits with Gradio</p>
+        <div style="display: flex; flex-direction: column;">
+            <h3 style="margin: 0">
+                Resources:
+            </h3>
+            <a href="https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/" target="_blank">
+                AI Deploy - Tutorial - Deploy a Gradio app for sketch recognition
+            </a>
+            <a href="https://github.com/ovh/ai-training-examples/blob/main/apps/gradio/sketch-recognition/Dockerfile"  target="_blank">
+                Dockerfile - Sketch recognition
+            </a>
+        </div>
+        <hr>
+        <div>
+            <h3 style="margin: 0">
+                Docker image
+            </h3>
+            <blockquote>
+                priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition
+            </blockquote>
+        </div>
+        <div>
+            <div style="display: flex; align-items: center; justify-content: space-between">
+                <h3 style="margin: 0">
+                    CLI command
+                </h3>
+                <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
+                    HTTP port: 8080 (default)
+                </mark>
+            </div>
+            <blockquote>
+                ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition
+            </blockquote>
+            <figcaption>
+                <b>Web interface</b> - access to the app with the url
+            </figcaption>
+        </div>
+  </div>
+  <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center">
+            <h1 style="margin: 0">
+                Spam classification
+            </h1>
+            <p>
+                made by <b>OVHCloud</b>
+            </p>
+        </div>
+        <p>Classify spam messages with FastAPI</p>
+        <div style="display: flex; flex-direction: column;">
+            <h3 style="margin: 0">
+                Resources:
+            </h3>
+            <a href="https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-fastapi-spam-classifier/" target="_blank">
+                AI Deploy - Tutorial - Deploy and call a spam classifier with FastAPI
+            </a>
+            <a href="https://github.com/ovh/ai-training-examples/blob/main/apps/fastapi/spam-classifier-api/Dockerfile"  target="_blank">
+                Dockerfile - Spam classifier API
+            </a>
+        </div>
+        <hr>
+        <div>
+            <h3 style="margin: 0">
+                Docker image
+            </h3>
+            <blockquote>
+                priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification
+            </blockquote>
+        </div>
+        <div>
+            <div style="display: flex; align-items: center; justify-content: space-between">
+                <h3 style="margin: 0">
+                    CLI command
+                </h3>
+                <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
+                    HTTP port: 8000
+                </mark>
+            </div>
+            <blockquote>
+                ovhai app run --default-http-port 8000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification
+            </blockquote>
+            <figcaption>
+                <b>API</b> - interact with the API with `<app-url>`/docs or curl command
+            </figcaption>
+        </div>
+  </div>
+  <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center">
+            <h1 style="margin: 0">
+                Sentiment analysis
+            </h1>
+            <p>
+                made by <b>OVHCloud</b>
+            </p>
+        </div>
+        <p>Analyse text sentiment with Hugging Face models and Flask</p>
+        <div style="display: flex; flex-direction: column;">
+            <h3 style="margin: 0">
+                Resources:
+            </h3>
+            <a href="https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/" target="_blank">
+                AI Deploy - Tutorial - Deploy an app for sentiment analysis with Hugging Face and Flask
+            </a>
+            <a href="https://github.com/ovh/ai-training-examples/blob/main/apps/flask/sentiment-analysis-hugging-face-app/Dockerfile"  target="_blank">
+                Dockerfile - Sentiment analysis Hugging Face app
+            </a>
+        </div>
+        <hr>
+        <div>
+            <h3 style="margin: 0">
+                Docker image
+            </h3>
+            <blockquote>
+                priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis
+            </blockquote>
+        </div>
+        <div>
+            <div style="display: flex; align-items: center; justify-content: space-between">
+                <h3 style="margin: 0">
+                    CLI command
+                </h3>
+                <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
+                    HTTP port: 5000
+                </mark>
+            </div>
+            <blockquote>
+                ovhai app run --default-http-port 5000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis
+            </blockquote>
+            <figcaption>
+                <b>Web interface</b> - access to the app with the url
+            </figcaption>
+        </div>
+  </div>
+</div>
 
 If you want to launch these apps from the OVHcloud control panel:
 
