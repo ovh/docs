@@ -341,13 +341,17 @@ Tem a possibilidade de definir o endereço IP da instância da sua interface vRa
 Para isso, pode adicionar um simples argumento na função "—nic":
 
 ```bash
+``` 
 --nic net-id=[ID-Network],v4-fixed-ip=[IP_static_vRack]
+```
 ```
 
 Exemplo:
 
 ```bash
+```
 --nic net-id=[ID-vRack],v4-fixed-ip=192.168.0.42
+```
 ```
 
 ###### Verificação da instância

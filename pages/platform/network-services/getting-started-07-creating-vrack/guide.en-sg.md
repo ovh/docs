@@ -327,11 +327,15 @@ You can set the IP address of the instance of your vRack interface at the OpenSt
 
 To do this, you can add a single argument to the function "--nic":
 
+``` 
 --nic net-id=[ID-Network],v4-fixed-ip=[IP_static_vRack]
+```
 
 Example:
 
+```
 --nic net-id=[ID-vRack],v4-fixed-ip=192.168.0.42
+```
 
 ###### Verifying the instance
 

@@ -334,11 +334,15 @@ Vous avez la possibilité de définir l'adresse IP de l'instance de votre interf
 
 Pour cela, vous pouvez ajouter un simple argument dans la fonction « --nic » :
 
+```
 --nic net-id=[ID-Network],v4-fixed-ip=[IP_fixe_vRack]
+```
 
 Exemple :
 
+```
 --nic net-id=[ID-vRack],v4-fixed-ip=192.168.0.42
+```
 
 ###### Vérification de l'instance
 

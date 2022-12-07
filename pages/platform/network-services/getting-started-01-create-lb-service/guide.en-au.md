@@ -38,7 +38,7 @@ openstack router add subnet my_router my_subnet
 openstack router set --external-gateway Ext-Net my_router
 ```
 
-You can now attach your instances to the new network. We recommend following our guide to [integrate an instance into vRack](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack/#instance-integration). List the addresses of your instances in your network with the following command.
+You can now attach your instances to the new network. We recommend following our guide to [integrate an instance into vRack](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack/#instance-integration). List the addresses of your instances in your network with the following command:
 
 ```bash
 openstack server list
@@ -78,7 +78,7 @@ openstack floating ip set --port <my_load_balancer_vip_port_id> <floating_ip>
 
 ### Configuring your Load Balancer
 
-In this example we will configure a HTTP Load Balancer. In order to listen on port 80 of the Load Balancer, create a Listener with this command:
+In this example we will configure an HTTP Load Balancer. In order to listen on port 80 of the Load Balancer, create a Listener with this command:
 
 ```bash
 openstack loadbalancer listener create --name my_listener_http --protocol HTTP --protocol-port 80 my_loadbalancer

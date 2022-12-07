@@ -344,13 +344,17 @@ Sie können die IP-Adresse der Instanz Ihres vRack Interface auf OpenStack-Ebene
 Hierzu können Sie ein einfaches Argument zur Funktion "--nic" hinzufügen:
 
 ```bash
+``` 
 --nic net-id=[ID-Network],v4-fixed-ip=[IP_static_vRack]
+```
 ```
 
 Beispiel:
 
 ```bash
+```
 --nic net-id=[ID-vRack],v4-fixed-ip=192.168.0.42
+```
 ```
 
 ###### Überprüfung der Instanz
