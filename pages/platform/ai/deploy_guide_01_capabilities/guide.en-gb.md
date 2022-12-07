@@ -6,7 +6,7 @@ section: AI Deploy - Guides
 order: 01
 ---
 
-**Last updated 3rd November, 2022.**
+**Last updated 7th December, 2022.**
 
 > [!primary]
 >
@@ -20,16 +20,16 @@ order: 01
 This page provides the technical capabilities and limitations of the Public Cloud AI Deploy offer.
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
-## ALPHA phase
+## BETA phase
 
-Please note that the AI Deploy offer is currently in ALPHA Phase, meaning:
+Please note that the AI Deploy offer is currently in BETA Phase, meaning:
 
-- the service is free during ALPHA phase.
+- the service is free during BETA phase.
 - the service is not ready for production.
-- there is no official support.
-- there are no contractual agreements (SLA).
-- the General Availability is uncertain.
-- some features are under development. Please check the roadmap link above to follow progress.
+-	there is no official support.
+-	there are no contractual agreements (SLA).
+-	the General Availability is uncertain.
+-	some features are under development. Please check the roadmap link above to follow progress.
 
 ## Capabilities and limitations
 
@@ -46,26 +46,42 @@ Entire AI Deploy instances have to be in the same region. Multi-AZ is currently 
 
 #### Compute resources
 
+##### **Replica type**
+
 You can either choose the number of GPU or CPU for an AI Deploy app, not both.
 By default, a job uses one CPU instance.
 
-If you choose GPU:
+##### **Available replica ranges**
+
+If you choose `GPU`:
 
 - You can go from 1 to 4 GPU per instance.
-- You can go from 1 to 10 instances.
 - CPU, memory and local storage resources are not customizable but scaled linearly with each additional GPU.
 
-If you choose CPU:
+If you choose `CPU`:
 
-- You can go from 1 to 12 vCPU.
-- You can go from 1 to 10 instances.
+- You can go from 1 to 12 CPU per instance.
 - Memory and local storage resource is not customizable but scaled linearly with each additional CPU.
 
 Information about maximum number of CPU/GPU, memory per CPU/GPU, and local storage are available with the `ovhai` CLI or OVHcloud Public Cloud price page.
 
 ```console
-ovhai capability
+ovhai capabilities
 ```
+
+##### **Scaling**
+
+AI Deploy offers the possibility to choose between two [scaling strategies](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-deployments/): **static** or **automatic**.
+
+If you choose `static scaling`:
+
+- You can go from 1 to 10 replicas.
+
+If you choose `autoscaling`:
+
+- You can choose both the **minimum number** of replicas (1 by default) and the **maximum number** of replicas.
+- You can define the metric monitored that will act as a trigger for autoscaling: `CPU` or `RAM`.
+- You can choose the threshold for the percentage of average use: integer between 1 and 100%.
 
 #### Local storage
 
@@ -81,9 +97,11 @@ Attached storage allows you to work on several TB of data, while being persisten
 
 #### Authorized AI Deploy
 
-AI Deploy authorize the deployment of your own Docker images or applications from the OVHcloud catalog.
+AI Deploy authorize the deployment of your own Docker images or applications from the [OVHcloud catalog](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/).
 
 Docker images can be hosted in a public or private registry.
+
+However, the use of `docker-compose` is not possible.
 
 #### Maximum execution time
 
@@ -93,6 +111,10 @@ There is no duration limitation on AI Deploy app execution.
 
 Your application is deployed simultaneously on the amount of selected instances.
 To benefit from high-availability, a minimum of two instances is required. In case of instance failure, a new one is automatically created.
+
+#### Rolling upgrade
+
+You can update your application's Docker image to offer an up-to-date version of your service. Updates are incremental, and will not result in any service disruptions. Your current configuration will also be retained, such as your HTTP endpoint and deployment strategy.
 
 #### Network
 
