@@ -1,23 +1,22 @@
 ---
-title: OVHgateway replacement
+title: Replacing OVHgateway
 slug: software-gateway-replacement
-excerpt: Replacing the OVHgateway with another manageable virtual machine
+excerpt: Find out how to replace the OVHgateway with another manageable virtual machine
 section: Network & Security
 order: 11
 ---
 
-**Last updated 05th December 2022**
+**Last updated 5th December 2022**
 
 ## Objective
 
-This guide will explain how to replace the outgoing internet gateway (OVHgateway) with another network operating system that will give you in addition to internet access the ability to configure NAT and VPN (Ipsec or SSL VPN).
+This guide will explain how to replace the outgoing internet gateway (OVHgateway) with another network operating system that will give you, in addition to internet access, the ability to configure NAT and VPN (Ipsec or SSL VPN).
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they they function correctly.
 >
 > This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
-
 
 ## Requirements
 
@@ -30,7 +29,7 @@ This guide will explain how to replace the outgoing internet gateway (OVHgateway
 The OVHgateway uses two network cards by default: 
 
 - One on VLAN 0 (base) connected to the internet with an additional OVHcloud IP address.
-- One on VLAN 1 (infra) connected to the local administration network with in this example a range of IP addresses in 192.168.10.0/24.
+- One on VLAN 1 (infra) connected to the local administration network with a range of IP addresses, in this example in 192.168.10.0/24.
 
 In our guide, we will replace this gateway with the network operating system **pfSense Community edition** without software support.
 
@@ -38,6 +37,7 @@ In our guide, we will replace this gateway with the network operating system **p
 > It is entirely possible to use this guide to install other network operating systems compatible with AHV.
 
 <a name="downloadsources"></a>
+
 ### Downloading sources for pfSense installation
 
 Download an ISO image for the **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/){.external}.
@@ -45,7 +45,8 @@ Download an ISO image for the **pfSense** installation from this link: [Download
 Using [this documentation](https://docs.ovh.com/gb/en/nutanix/image-import/), add the **pfSense ISO** image to your Nutanix cluster.
 
 <a name="createvmpfsense"></a>
-### Creating the **GW-PFSENSE virtual machine**
+
+### Creating the GW-PFSENSE virtual machine
 
 Create a virtual machine with these settings:
 
@@ -61,7 +62,8 @@ You can use [our guide on virtual machine management](https://docs.ovh.com/gb/en
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
 <a name="shutdownovhgateway"></a>
-### Shutting down the **OVH-GATEWAY virtual machine**
+
+### Shutting down the OVH-GATEWAY virtual machine
 
 To avoid duplicate IP addresses on the network, stop the **OVHgateway** virtual machine before starting the new virtual machine on **pfSense**.
 
@@ -77,11 +79,12 @@ Click on the `OVHgateway`{.action} virtual machine.
 
 ![OVHGateway 03](images/01-stop-ovhgateway03.png){.thumbnail}
 
-From the `More` menu at the top, click `Soft Shutdown`{.action}.
+From the `More`{.action} menu at the top, click `Soft Shutdown`{.action}.
 
 ![OVHGateway 04](images/01-stop-ovhgateway04.png){.thumbnail}
 
 <a name="getpublicaddress"></a>
+
 ### Retrieving the public address in the OVHcloud Control Panel 
 
 Retrieve information about the OVHcloud gateway network settings.
@@ -92,7 +95,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 **IPFO** is a range of 4 addresses. The first and last are reserved, the third is on OVHcloud hardware and serves as an **Internet** gateway. The only usable IP address is the second address in the range.
 
-During installation, we will reuse this information to assign it to the new **GW-PFSENSE virtual machine**
+During installation, we will reuse this information to assign it to the new **GW-PFSENSE virtual machine**.
 
 ```console
 XX.XX.XX.N Reserved network address that appears on the OVHcloud client site
@@ -107,13 +110,14 @@ For example, if the **IPFO** address displayed on the client site is 198.51.100.
 - **198.51.100.2** for the gateway on the **WAN** interface.
 
 <a name="poweronvmpfsense"></a>
-### Start the **GW-PFSENSE virtual machine**
+
+### Start the GW-PFSENSE virtual machine
 
 Go back to virtual machine management in **Prism Central** and click on `GW-PFSENSE`{.action}.
 
 ![Start GATEWAY pfsense](images/02-start-gatewaypfsense01.png){.thumbnail}
 
-Select `Power On`{.action} from the `More` menu.
+Select `Power On`{.action} from the `More`{.action} menu.
 
 ![Start GATEWAY pfsense](images/02-start-gatewaypfsense02.png){.thumbnail}
 
@@ -122,7 +126,8 @@ Click `Launch console`{.action}.
 ![Start GATEWAY pfsense](images/02-start-gatewaypfsense03.png){.thumbnail}
 
 <a name="pfsenseinstall"></a>
-### Installing **pfSense**
+
+### Installing pfSense
 
 Review the pfSense licence information and press the `Enter`{.action} key to accept it.
 
@@ -165,11 +170,12 @@ Select `Reboot` and press the `Enter`{.action} key.
 ![pfsense Installation 10](images/03-install-pfsense10.png){.thumbnail}
 
 <a name="pfsenseremovecdrom"></a>
+
 ### Eject the pfSense CDROM from the GW-PFSENSE virtual machine
 
-From **Prism Central**, go back to **GW-PFSENSE** virtual machine management and perform the following steps to eject the **CDROM**.
+From **Prism Central**, go back to **GW-PFSENSE** virtual machine management and perform the following steps to eject the CDROM.
 
-Click on `Soft Shutdown`{.action} in the `More` menu on the **GW-PFSENSE** virtual machine to stop this virtual machine.
+Click on `Soft Shutdown`{.action} in the `More`{.action} menu on the **GW-PFSENSE** virtual machine to stop this virtual machine.
 
 ![Remove CDROM 01](images/03-remove-cdrom01.png){.thumbnail}
 
@@ -197,7 +203,7 @@ Click `Save`{.action}.
 
 ![Remove CDROM 07](images/03-remove-cdrom07.png){.thumbnail}
 
-Click `Power On`{.action} in the `More` menu.
+Click `Power On`{.action} in the `More`{.action} menu.
 
 ![Remove CDROM 08](images/03-remove-cdrom08.png){.thumbnail}
 
@@ -206,11 +212,12 @@ Click `Launch Console`{.action} to continue the installation after startup.
 ![Remove CDROM 09](images/03-remove-cdrom09.png){.thumbnail}
 
 <a name="configureippfsense"></a>
-### Configure pfSense IP Addresses Through the Console
+
+### Configure pfSense IP addresses through the console
 
 We will configure the **pfSense** gateway IP addresses as follows:
 
-- WAN interface: Use this part of the guide “[Retrieving a public address in the OVHcloud Control Panel](#getpublicaddress)” to assign the IP address and gateway on this interface.
+- WAN interface: Use this part of the [Retrieving a public address in the OVHcloud Control Panel](#getpublicaddress) guide to assign the IP address and gateway on this interface.
 - LAN Interface: 192.168.10.254/24 which is the gateway address of the Nutanix cluster private network followed by the subnet mask. 
 
 Accept the licence by pressing the `Enter`{.action} key.
@@ -298,6 +305,7 @@ Press the `Enter`{.action} key to complete the command line configuration.
 ![Configure pfsense 20](images/04-configureip-pfsense20.png){.thumbnail}
 
 <a name="configurepfsenseoptions"></a>
+
 ### Configure some options through the web interface
 
 Connect to the pfSense Web Console with the URL <https://192.168.10.254> from a cluster virtual machine on the **AHV LAN: Base**.
@@ -307,11 +315,12 @@ Enter the following information:
 - **User account**: admin
 - **Default password**: pfsense
 
-Then click on `SIGN IN`{.action}.
+Then click `SIGN IN`{.action}.
 
 ![WEB Configure pfsense 01](images/05-configure-pfsense01.png){.thumbnail}
 
 <a name="changepassword"></a>
+
 #### Change the pfSense default password**
 
 From the `System`{.action} menu, choose `User Manager`{.action}.
@@ -331,7 +340,8 @@ Confirm the changes by clicking `Save`{.action} at the bottom of the menu.
 ![Change Password 03](images/06-change-password04.png){.thumbnail}.
 
 <a name="addadminrule"></a>
-#### Add a rule to allow remote administration from a public address**
+
+#### Add a rule to allow remote administration from a public address
 
 Go to the `Firewall`{.action} menu and choose `Rules`{.action}.
 
@@ -376,8 +386,7 @@ We will create a new subnet in VLAN 2 with an address range in 192.168.2.0/24 an
 
 Log in to Prism Central to make these changes:
 
-Use this guide to create a new VLAN on your Nutanix cluster [Isolating management machines from production]
-(https://docs.ovh.com/gb/en/nutanix/nutanix-isolate-management-machines/) with these settings:
+Use the [Isolating management machines from production](https://docs.ovh.com/gb/en/nutanix/nutanix-isolate-management-machines/) guide to create a new VLAN on your Nutanix cluster with these settings:
 
 - **VLAN name**: `Production`
 - **VLAN number**: `2`
@@ -386,9 +395,9 @@ Your new network must appear in **Subnets**.
 
 ![08 add vlan production 01](images/08-add-vlan-production01.png){.thumbnail}
 
-Now that the new subnet has been created, we will add a adapter to the configuration of your **GW-PFSENSE** virtual machine.
+Now that the new subnet has been created, we will add an adapter to the configuration of your **GW-PFSENSE** virtual machine.
 
-Through virtual machine management select your virtual machine **GW-PFSENSE**, go to the `Actions`{.action} menu and choose `Update`{.action}.
+Via the virtual machine management, select your **GW-PFSENSE** virtual machine, go to the `Actions`{.action} menu and choose `Update`{.action}.
 
 ![09 update-vm-pfsense 01](images/09-update-vm-pfsense01.png){.thumbnail}
 
@@ -396,11 +405,11 @@ Click `Next`{.action}.
 
 ![09 update-vm-pfsense 02](images/09-update-vm-pfsense02.png){.thumbnail}
 
-Cliquez sur `Attach to Subnet`{.action}.
+Click `Attach to Subnet`{.action}.
 
 ![09 update-vm-pfsense 03](images/09-update-vm-pfsense03.png){.thumbnail}
 
-Choose the subnets `Production`{.action} and click `Save`{.action}.
+Choose the `Production`{.action} subnets and click `Save`{.action}.
 
 ![09 update-vm-pfsense 04](images/09-update-vm-pfsense04.png){.thumbnail}
 
@@ -432,7 +441,7 @@ Click `Save`{.action}.
 
 ![10 addinterface-in-pfsense 03](images/10-addinterface-in-pfsense03.png){.thumbnail}
 
-Through the `Interfaces`{.action} menu and click `OPT1`{.action}
+In the `Interfaces`{.action} menu, click `OPT1`{.action}
 
 ![11 assign ip to new interface 01](images/11-assign-ip-to-new-interface01.png){.thumbnail}
 
@@ -441,7 +450,7 @@ Check **Enable Interfaces** and modify these settings :
 * **Description** : `VLAN2`
 * **IPv4 Address** : `192.168.2.254/24`
 
-Then click `Save`{.action}.
+Click `Save`{.action}.
 
 ![11 assign ip to new interface 02](images/11-assign-ip-to-new-interface02.png){.thumbnail}
 
@@ -449,7 +458,7 @@ Click `Apply Changes`{.action}.
 
 ![11 assign ip to new interface 03](images/11-assign-ip-to-new-interface03.png){.thumbnail}
 
-Go to the `Firewall' menu and click on `Rules`{.action}.
+Go to the `Firewall` menu and click `Rules`{.action}.
 
 ![12 add rule for new card 01](images/12-add-rule-for-new-card01.png){.thumbnail}
 
@@ -463,17 +472,18 @@ Change these values :
 * **Source** : `VLAN2 net`
 * **Destination** : `any`
 
-And click `Save`{.action}.
+Click `Save`{.action}.
 
 ![12 add rule for new card 03](images/12-add-rule-for-new-card03.png){.thumbnail}
 
-Click sur `Apply Changes`{.action}.
+Click `Apply Changes`{.action}.
 
 ![12 add rule for new card 04](images/12-add-rule-for-new-card04.png){.thumbnail}
 
 Your VLAN 2 is now connected to the Internet.
 
 <a name="gofurther"></a>
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
