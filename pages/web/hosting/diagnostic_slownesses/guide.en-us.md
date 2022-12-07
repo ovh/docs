@@ -41,7 +41,7 @@ In rare cases, the slow display may also be caused by your Internet service prov
 ## Requirements
 
 - A website hosted on an [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/)
-- A [domain name](https://www.ovhcloud.com/en-us/domains/)
+- A [domain name](https://www.ovhcloud.com/en/domains/)
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions

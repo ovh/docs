@@ -47,11 +47,11 @@ Las buenas prácticas que figuran a continuación deben aplicarse desde la creac
 
 La seguridad de sus servicios y datos depende de la eficacia de su contraseña. Este debe ser **complejo, único y renovado regularmente**.
 
-Consulte todas nuestras recomendaciones sobre las contraseñas en nuestra guía [Cambiar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/).
+Consulte todas nuestras recomendaciones sobre las contraseñas en nuestra guía [Cambiar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/).
 
 #### Guardar la contraseña
 
-Si todavía no lo ha hecho, guarde su contraseña en un [gestor de contraseñas](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/#utilizar-un-gestor-de-contrasenas).
+Si todavía no lo ha hecho, guarde su contraseña en un [gestor de contraseñas](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/#utilizar-un-gestor-de-contrasenas).
 
 > [!primary]
 > Los programas **Keepass** y **Bitwarden** son gestores de contraseñas libres y de impuestos.
@@ -165,7 +165,7 @@ Si advierte una actividad sospechosa en su cuenta, [póngase en contacto con el 
 
 ## Más información
 
-[Cambiar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/)
+[Cambiar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/)
 
 [Proteger su cuenta de OVHcloud con la doble autenticación](https://docs.ovh.com/us/es/customer/proteger-su-cuenta-con-una-2FA/)
 

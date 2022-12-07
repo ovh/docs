@@ -67,7 +67,7 @@ Vous pouvez effectuer un test d'envoi pour vérifier que le compte est bien para
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose une application web disposant de [fonctions collaboratives](https://www.ovhcloud.com/fr/emails/){.external}. Celle-ci est accessible à l’adresse <https://www.ovhcloud.com/com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+OVHcloud propose une application web disposant de [fonctions collaboratives](https://www.ovhcloud.com/fr/emails/){.external}. Celle-ci est accessible à l’adresse <https://www.ovhcloud.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin
 

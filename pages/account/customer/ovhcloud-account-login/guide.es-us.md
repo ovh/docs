@@ -62,7 +62,7 @@ Una vez conectado, podrá tomar nota de su identificador, que se muestra en el �
 
 ### He perdido mi contraseña
 
-Si ha perdido o no recuerda su contraseña, consulte [esta guía, en la que se explican los pasos que deberá seguir para cambiarla](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/#en-caso-de-haber-olvidado-la-contrasena-actual).
+Si ha perdido o no recuerda su contraseña, consulte [esta guía, en la que se explican los pasos que deberá seguir para cambiarla](https://docs.ovh.com/es/customer/gestionar-su-contrasena/#en-caso-de-haber-olvidado-la-contrasena-actual).
 
 ### He perdido mi contraseña y mi dirección de correo electrónico principal ya no es válida
 
