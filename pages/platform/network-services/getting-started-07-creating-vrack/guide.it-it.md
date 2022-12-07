@@ -338,19 +338,11 @@ Puoi definire l'indirizzo IP dell'istanza della tua interfaccia vRack a livello 
 
 Per farlo, puoi aggiungere un semplice argomento nella funzione "—nic":
 
-```bash
-``` 
---nic net-id=[ID-Network],v4-fixed-ip=[IP_static_vRack]
-```
-```
+`--nic net-id=[ID-Network],v4-fixed-ip=[IP_static_vRack]`
 
 Esempio:
 
-```bash
-```
---nic net-id=[ID-vRack],v4-fixed-ip=192.168.0.42
-```
-```
+`--nic net-id=[ID-vRack],v4-fixed-ip=192.168.0.42`
 
 ###### Verifica dell'istanza
 
