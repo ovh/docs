@@ -198,7 +198,7 @@ subnet 192.168.1.0 netmask 255.255.255.240 {
     option broadcast-address 192.168.1.15;
     option routers 192.168.1.1;
     ping-check = 1;
-    next-server 192.168.1.1; # tftpd server's IP
+    next-server 192.168.1.1;                        # Détermine l'IP de votre serveur tftp
 
     if option arch = 00:07 {                        # Détermine le type d'architecture, ici 64bits
       if exists user-class and option user-class = "iPXE" {
