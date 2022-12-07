@@ -57,7 +57,7 @@ Par conséquent, un serveur isolé de par son réseau privé empéche le mecanis
 * Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
 * Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (**DHCP** et **TFTP**). Le système d'exploitation sera celui de votre choix.
 * Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez au préalable configuré notre fonctionnabilité [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
- **exemple d'une machine éligible à notre procédure, à partir de l'onglet `Interfaces réseau`{.action} de son manager:** <br>
+ *exemple d'une machine éligible à notre procédure, à partir de l'onglet `Interfaces réseau`{.action} de son manager:* <br>
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
 ![OLA2](images/Scr_OLA2.png){.thumbnail}
 
@@ -253,7 +253,7 @@ Ce qu'il faut savoir:<br>
 * Ce service utilise le port 69 (UDP)
 * Il est obligatoire de déclarer un répertoire "cible", correspondant à une arboresence locale qui sera utilisée pour les réceptions et les téléchargments des fichiers.
 
-*exemple de configuration avec le logiciel `tftpd-hpa`:*<br>
+exemple de configuration avec le logiciel `tftpd-hpa`:<br>
 
 ```bash
 # /etc/default/tftpd-hpa
@@ -277,7 +277,7 @@ root@node_0:/srv/tftp# tree
 
 #### le bootloader **rEFInd**
 
-Contenu du fichier `refind.pxe`:<br>
+Contenu du fichier `refind.pxe`: <br>
 
 ```bash
 #!ipxe 
@@ -304,7 +304,7 @@ exit 1
 ```
 
 
-contenu du fichier `refind.conf`
+contenu du fichier `refind.conf` : <br>
 
 *Il s'agit d'intégrer les directives mimimun pour une bonne intégration au SI d'OVHcloud.*
 ```bash
@@ -350,7 +350,7 @@ Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/p
 **Suggestions**
 
 service DNS:<br>
-Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/etc/hosts`ou bien utiliser, par exemple, un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
+Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/etc/hosts`, ou bien utiliser un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
 
 service NTP:<br>
 Il est fortement conseillé d'utiliser un service NTP surtout si votre infrastructure comprends plusieurs machines.
