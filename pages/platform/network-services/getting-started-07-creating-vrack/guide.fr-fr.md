@@ -338,7 +338,7 @@ Pour cela, vous pouvez ajouter un simple argument dans la fonction « --nic » :
 
 Exemple :
 
---nic net-id=[ID-vRack],v4-fixed-ip=192.168.0.42
+`--nic net-id=[ID-vRack],v4-fixed-ip=192.168.0.42`
 
 ###### Vérification de l'instance
 

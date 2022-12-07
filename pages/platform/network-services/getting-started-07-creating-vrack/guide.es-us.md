@@ -339,15 +339,11 @@ Puede definir la dirección IP de la instancia de su interfaz vRack a nivel de O
 
 Para ello, puede añadir un simple argumento a la función "—nic":
 
-```bash
---nic net-id=[ID-Network],v4-fixed-ip=[IP_static_vRack]
-```
+`--nic net-id=[ID-Network],v4-fixed-ip=[IP_static_vRack]`
 
 Por ejemplo:
 
-```bash
---nic net-id=[ID-vRack],v4-fixed-ip=192.168.0.42
-```
+`--nic net-id=[ID-vRack],v4-fixed-ip=192.168.0.42`
 
 ###### Verificación de la instancia
 
