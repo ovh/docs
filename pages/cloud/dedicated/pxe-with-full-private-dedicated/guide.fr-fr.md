@@ -13,21 +13,21 @@ section: 'Utilisation avancée'
 > Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissance concernant le monde open source, ainsi que des notions d'administration.
 > 
 
-Cette documentation à pour but de vous accompagner pour deployer tous les composants et services nécessaires, au bon redémarrage de vos solutions OVHcloud en environnement **entièrement privée**.<br>
+Cette documentation à pour but de vous accompagner pour deployer tous les composants et services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement **entièrement privée**.<br>
 Profiter d'une infrastructure privée sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
-
 
 
 > [!warning]
 >
-> Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres de critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
+> Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres et critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
 > 
-> Le Netboot consiste, de par ses différentes séquences, à élaborer/choisir un type d'amorçage pour vos système d'exploitation.
+> Le Netboot (Network Boot), consiste de par ses différentes séquences, à utiliser votre interface réseau (en mode bas niveau) comme moyen de selection d'amorçage à vos systèmes d'exploitation.
+> A savoir qu'il et possible de démarrer n'importe quel système à partir d'un volume réseau: SAN, NFS, etc,..., ou bien plus fréquement, à partir d'un volume local : CD/DVD, USB, disque local.
 >
 > Pour rappel, il est fortement déconseillé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
 > 
-> Nous avons pré-configurés le mecanisme de démarrage de nos solutions et y avons intégré tous nos outils : netboot, monitoring, recycling, etc...
-> Si ces paramètres sont amenées à être modifiés, nos équipes ne pourront plus effectuer leur tâches qui leur sont dédiées dans les conditions que nous aurons choisies.
+> Puisque nous avons pré-configurés ce mecanisme de démarrage de nos solutions et y avons intégré tous nos outils : netboot, monitoring, recycling, etc...
+> Si ces paramètres sont amenées à être modifiés, nos équipes ne pourront plus effectuer leur tâches qui leur sont dédiées dans les conditions que nous aurons choisies, et surtout vous risqueriez de rendre le démarrage inopérant.
 >
 
 
@@ -37,9 +37,8 @@ Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *public*, et ceu
 
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
 Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
-
 La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
-Par conséquent, un serveur isolé de par son réseau privé empéche le mecanisme de démarrage de solution,  à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot) ces sur le réseau interne d'OVHcloud.
+Par conséquent, un serveur isolé de par son réseau privé empéche le mecanisme de démarrage, à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers s'appuyent sur le réseau interne d'OVHcloud et ses services mutualisés nécessaires.
 
 
 ### Présentation rapide d'un démarrage en Netboot
@@ -56,9 +55,9 @@ Par conséquent, un serveur isolé de par son réseau privé empéche le mecanis
 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
 * Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
-* Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (DHCP, TFTP). Le système d'exploitation sera celui de votre choix.
+* Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (DHCP et TFTP). Le système d'exploitation sera celui de votre choix.
 * Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez au préalable configuré notre fonctionnabilité [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
- Exemple d'une machine éligible à notre procédure, via l'onglet `Interfaces réseau`{.action} de son manager:<br>
+ Exemple d'une machine éligible à notre procédure, à partir de l'onglet `Interfaces réseau`{.action} de son manager:<br>
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
 ![OLA2](images/Scr_OLA2.png){.thumbnail}
 
@@ -69,26 +68,25 @@ Par conséquent, un serveur isolé de par son réseau privé empéche le mecanis
 
 liste des composants intervenants lors du démarrage :
 
-* Un serveur **DHCP** : Attribuer une configuration réseau pour une machine cliente qui tente de démarrer.
-* Un service **TFTP** : Ressources en reseau qui seront interroger/requêter par PXE.
-* La solution **rEFInd**, ous forme de BootLoader, a été retenue car parfaitement adaptée, celle-ci permettra la recherche du type d'amorçage d'un systeme pour les differentes machines clientes:<br>
-disque local, volume réseau, usb, etc...
+* Un serveur **DHCP** : Attribuer une configuration réseau  (bail avec adresse IP) pour une machine cliente qui tente de démarrer.
+* Un service **TFTP** : Ressources disponible à travers le reseau et qui seront interrogées/requêtées par PXE.
+* La solution **rEFInd**, sous forme de BootLoader, a été retenue car parfaitement adaptée, celle-ci permettra la recherche de secteurs d'amorçage des machines clientes:<br>
+disque local, usb, etc...
 
 
 schéma (logique) de démarrage Netboot:
-
 ![Netboot en action](images/netboot_steps.png)
 
 
 |étape|description/détails|
 |---|---|
-1. envoi de requête discover vers le DHCP depuis la machine cliente.
-2. Le DHCP affecte une adresse IP à la machine cliente (offer/request/ack). Requête de récupération du binaire iPXE.
+1. envoi de requête discover vers le DHCP depuis la machine cliente (en broadcast).
+2. le DHCP affecte une adresse IP à la machine cliente (offer/request/ack). Requête de récupération du binaire iPXE.l
 3. récupération en TFTP du binaire iPXE.
 4. chargement du binaire iPXE en tant que firmware.
-5. requête de récupération de script iPXE si nécessaire.
+5. requête de récupération de script iPXE.
 6. récuparation du script iPXE associé en TFTP.
-7. éxécution du script iPXE.récupération des ressources nécessaire à rEFInd. binaire et fichier de configuration requis.
+7. éxécution du script iPXE. récupération des ressources nécessaire à rEFInd: binaire et fichier de configuration requis.
 8. éxécution et chargement du binaire rEFInd.
 9. rEFInd lance sa tâche de scan afin de repérer les secteurs d'amorçage des disques locaux.
 
@@ -108,7 +106,6 @@ schéma (logique) de démarrage Netboot:
 
 
 exemple d'infrastructure privée basique (schéma layer 2):
-
 ![Schema](images/schema_basic.png)
 
 Exemple:
@@ -117,10 +114,9 @@ Exemple:
 * une seule machine cliente **Node 1** avec OLA actif.
 
 
-
 > [!primary]
 >
-> Après le démarrage des systèmes, et pour que les services  DHCP et ceux optionels (DNS et NTP) soient pleinement fonctionnels, penser à déclarer/ajouter si besoin les régles dans le firewall local sur l'interface réseau privée de la machine hébergeant les services.
+> Après le démarrage des systèmes, et pour que les services DHCP et ceux optionels (DNS et NTP) soient pleinement fonctionnels, penser à déclarer/ajouter si besoin les régles dans le firewall local sur l'interface réseau privée de la machine hébergeant les services.
 >
 
 #### le service **DHCP**
@@ -274,6 +270,7 @@ Nous utiliserons comme exemple le chemin `/srv/tftp`, et y déposerons les fichi
 root@node_0:/srv/tftp# tree
 .
 |-- ipxe.efi
+|-- ipxe32.efi
 |-- refind.conf
 |-- refind.pxe
 `-- refind_x64.efi
@@ -287,7 +284,6 @@ Contenu du fichier `refind.pxe`:<br>
 #!ipxe 
 
 echo Boot to local disk
-
 
 iseq ${platform} efi && goto is_efi_x86_64 || goto end
 
@@ -327,22 +323,17 @@ scan_delay 0
 ```
 
 
-
 ## Mise en marche
 
 
-Les sources qui ont servis d'exemple sont disponibles au téléchargement via ce <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/dedicated/pxe-with-full-private-dedicated/files/src.zip" download>ce lien</a>
-Elles pourront eventuellement servir de template si besoin.<br>
-
-
 Aperçu de ce que l'on obtiend à l'affichage lors d'un Netboot UEFI (par défaut):<br>
-correspond aux étapes 1 à 4<br>
+correspond aux étapes 1 à 8<br>
 ![iPXE en action](images/animation.gif){.thumbnail}
 
 
-correspond au résultat des étapes 5 à 9 <br>
+correspond au résultat des étapes 8 et 9 <br>
 ![rEFInd en action](images/rEFInd.png){.thumbnail}<br>
-Ci-dessus, nous avons le bootloader rEFInd chargé sur une machine avec un système debian installé.
+Ci-dessus, nous avons le bootloader rEFInd chargé sur une machine avec un système *debian* installé.
 
 
 
@@ -352,7 +343,7 @@ Ci-dessus, nous avons le bootloader rEFInd chargé sur une machine avec un syst�
 > 
 > Il est récommandé également de deployer les services DNS et NTP.
 > Ceux-ci ne sont pas nécessaires pour les phases de démarrage des systèmes, donc pas imposés dans cette procédure.
-> Mais ils font partie des services importants par la suite, pour la stabilité de votre infrastructure.
+> Mais ils font partie des services importants par la suite, princialement pour la stabilité de votre infrastructure.
 > 
 
 
@@ -378,7 +369,6 @@ Comprendre et/ou personnaliser votre service iPXE via ce [lien](https://ipxe.org
 Comprendre et/ou personnaliser votre service rEFInd via ce [lien](https://fr.wikipedia.org/wiki/REFInd).<br>
 Comprendre ou découvrir NTP via ce [lien](https://fr.wikipedia.org/wiki/Network_Time_Protocol).<br>
 Comprendre ou découvrir Dnsmasq via ce [lien](https://wiki.debian.org/dnsmasq).<br>
-
 
 
 
