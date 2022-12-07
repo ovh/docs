@@ -139,7 +139,7 @@ Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://sup
 
 L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire est chez Gmail. Voici un article de Google qui peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr){.external}.
 
-Google propose également un [article dédié](https://support.google.com/mail/answer/81126?hl=en){.external} à la prévention du spam pour les utilisateurs de Gmail.
+Google propose également un [article dédié à la prévention du spam](https://support.google.com/mail/answer/81126?hl=en){.external} pour les utilisateurs de Gmail.
 
 ### Vérifier vos informations
 
