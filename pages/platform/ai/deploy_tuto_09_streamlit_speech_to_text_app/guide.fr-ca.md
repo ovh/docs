@@ -1,7 +1,7 @@
 ---
-title: "AI Deploy - Tutoriel - Créer et déployer une application Speech to Text à l'aide de Streamlit (EN)"
+title: "AI Deploy - Tutoriel - Créer et déployer une application de Speech to Text (EN)"
 slug: deploy/tuto-streamlit-speech-to-text-app
-excerpt: Comment créer et déployer une application Streamlit pour la synthèse vocale
+excerpt: "Comment créer et déployer une application de Speech to Text / Transcription audio"
 section: AI Deploy - Tutoriels
 order: 09
 routes:
