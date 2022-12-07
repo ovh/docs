@@ -336,6 +336,8 @@ correspond au résultat des étapes 8 et 9 <br>
 Ci-dessus, nous avons le bootloader rEFInd chargé sur une machine avec un système *debian* installé.
 
 
+Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/dedicated/dedicated-pxe-private/files/src.zip" download>ce lien</a>. les ressources qui ont servis à élaborer nos tests et exemples présents tout au long de cette présentation.<br>
+Ils pourront servir de template selon vos besoins.
 
 #### Optionnel
 
