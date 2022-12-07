@@ -28,20 +28,20 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
 ### Quick examples
 
 <div style="display: grid; grid-template-columns: 50% 50%; grid-gap: 5px">
-  <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
+  <div style="border: 1px solid #46464A; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
-            <h1 style="margin: 0">
+            <h3 style="margin: 0 ; font-size: ">
                 Hello World
-            </h1>
+            </h3>
             <p>
                 made by <b>OVHCloud</b>
             </p>
         </div>
         <p>Launch your first API with Flask</p>
         <div style="display: flex; flex-direction: column;">
-            <h3 style="margin: 0">
+            <h5 style="margin: 0">
                 Resources:
-            </h3>
+            </h5>
             <a href="https://docs.ovh.com/gb/en/publiccloud/ai/deploy/getting-started/" target="_blank">
                 AI Deploy - Getting started
             </a>
@@ -51,18 +51,18 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
         </div>
         <hr>
         <div>
-            <h3 style="margin: 0">
+            <h5 style="margin: 0">
                 Docker image
-            </h3>
+            </h5>
             <blockquote>
                 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/ai-deploy-hello-world
             </blockquote>
         </div>
         <div>
             <div style="display: flex; align-items: center; justify-content: space-between">
-                <h3 style="margin: 0">
+                <h5 style="margin: 0">
                     CLI command
-                </h3>
+                </h5>
                 <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
                     HTTP port: 5000
                 </mark>
@@ -77,18 +77,18 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
   </div>
   <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
-            <h1 style="margin: 0">
+            <h3 style="margin: 0">
                 EDA and interactive prediction
-            </h1>
+            </h3>
             <p>
                 made by <b>OVHCloud</b>
             </p>
         </div>
         <p>Explore, analyse iris data and do interactive prediction with Streamlit</p>
         <div style="display: flex; flex-direction: column;">
-            <h3 style="margin: 0">
+            <h5 style="margin: 0">
                 Resources:
-            </h3>
+            </h5>
             <a href="https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-eda-iris/" target="_blank">
                 AI Deploy - Tutorial - Deploy an interactive app for EDA and prediction using Streamlit
             </a>
@@ -98,18 +98,18 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
         </div>
         <hr>
         <div>
-            <h3 style="margin: 0">
+            <h5 style="margin: 0">
                 Docker image
-            </h3>
+            </h5>
             <blockquote>
                 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-eda
             </blockquote>
         </div>
         <div>
             <div style="display: flex; align-items: center; justify-content: space-between">
-                <h3 style="margin: 0">
+                <h5 style="margin: 0">
                     CLI command
-                </h3>
+                </h5>
                 <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
                     HTTP port: 8501
                 </mark>
@@ -124,18 +124,18 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
   </div>
   <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
-            <h1 style="margin: 0">
+            <h3 style="margin: 0">
                 Sketch recognition
-            </h1>
+            </h3>
             <p>
                 made by <b>OVHCloud</b>
             </p>
         </div>
         <p>Recognize handwritten digits with Gradio</p>
         <div style="display: flex; flex-direction: column;">
-            <h3 style="margin: 0">
+            <h5 style="margin: 0">
                 Resources:
-            </h3>
+            </h5>
             <a href="https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/" target="_blank">
                 AI Deploy - Tutorial - Deploy a Gradio app for sketch recognition
             </a>
@@ -145,18 +145,18 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
         </div>
         <hr>
         <div>
-            <h3 style="margin: 0">
+            <h5 style="margin: 0">
                 Docker image
-            </h3>
+            </h5>
             <blockquote>
                 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition
             </blockquote>
         </div>
         <div>
             <div style="display: flex; align-items: center; justify-content: space-between">
-                <h3 style="margin: 0">
+                <h5 style="margin: 0">
                     CLI command
-                </h3>
+                </h5>
                 <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
                     HTTP port: 8080 (default)
                 </mark>
@@ -171,18 +171,18 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
   </div>
   <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
-            <h1 style="margin: 0">
+            <h3 style="margin: 0">
                 Spam classification
-            </h1>
+            </h3>
             <p>
                 made by <b>OVHCloud</b>
             </p>
         </div>
         <p>Classify spam messages with FastAPI</p>
         <div style="display: flex; flex-direction: column;">
-            <h3 style="margin: 0">
+            <h5 style="margin: 0">
                 Resources:
-            </h3>
+            </h5>
             <a href="https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-fastapi-spam-classifier/" target="_blank">
                 AI Deploy - Tutorial - Deploy and call a spam classifier with FastAPI
             </a>
@@ -192,18 +192,18 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
         </div>
         <hr>
         <div>
-            <h3 style="margin: 0">
+            <h5 style="margin: 0">
                 Docker image
-            </h3>
+            </h5>
             <blockquote>
                 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification
             </blockquote>
         </div>
         <div>
             <div style="display: flex; align-items: center; justify-content: space-between">
-                <h3 style="margin: 0">
+                <h5 style="margin: 0">
                     CLI command
-                </h3>
+                </h5>
                 <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
                     HTTP port: 8000
                 </mark>
@@ -218,18 +218,18 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
   </div>
   <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
-            <h1 style="margin: 0">
+            <h3 style="margin: 0">
                 Sentiment analysis
-            </h1>
+            </h3>
             <p>
                 made by <b>OVHCloud</b>
             </p>
         </div>
         <p>Analyse text sentiment with Hugging Face models and Flask</p>
         <div style="display: flex; flex-direction: column;">
-            <h3 style="margin: 0">
+            <h5 style="margin: 0">
                 Resources:
-            </h3>
+            </h5>
             <a href="https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/" target="_blank">
                 AI Deploy - Tutorial - Deploy an app for sentiment analysis with Hugging Face and Flask
             </a>
@@ -239,18 +239,18 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
         </div>
         <hr>
         <div>
-            <h3 style="margin: 0">
+            <h5 style="margin: 0">
                 Docker image
-            </h3>
+            </h5>
             <blockquote>
                 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis
             </blockquote>
         </div>
         <div>
             <div style="display: flex; align-items: center; justify-content: space-between">
-                <h3 style="margin: 0">
+                <h5 style="margin: 0">
                     CLI command
-                </h3>
+                </h5>
                 <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
                     HTTP port: 5000
                 </mark>
