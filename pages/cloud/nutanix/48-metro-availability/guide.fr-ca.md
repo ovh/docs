@@ -6,7 +6,6 @@ section: "Plan de Reprise d'Activité"
 order: 06
 ---
 
-
 **Dernière mise à jour le 15/11/2022**
 
 ## Objectif

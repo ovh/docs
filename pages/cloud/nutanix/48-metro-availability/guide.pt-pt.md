@@ -2,7 +2,7 @@
 title: Configurando a recuperação de desastres com o Metro (EN)
 slug: metro-availability
 excerpt: "Implementing Metro for a Disaster Recovery Plan"
-section: Plano de Recuperação de Desastres
+section: Disaster Recovery Plan
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/metro-availability/'
@@ -23,8 +23,8 @@ routes:
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- access to your clusters via Prism Central
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Access to your clusters via Prism Central
 - You need to have 3 Nutanix clusters within the OVHcloud infrastructure with **Pack Advanced** licences, if you have a package offer on both clusters in the P.R.A. These 3 clusters will need to be at remote sites for maximum security.
 - You must have less than 5 ms of latency between the two replicated clusters.
 
