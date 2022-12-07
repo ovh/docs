@@ -63,7 +63,7 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
                 <h5 style="margin: 0">
                     CLI command
                 </h5>
-                <mark style="padding: 4px; border-radius: 5px; background-color: #46464A; color: #fff">
+                <mark style="padding: 4px; border-radius: 5px; background-color: #337ab7; color: #fff">
                     HTTP port: 5000
                 </mark>
             </div>
@@ -110,11 +110,11 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
                 <h5 style="margin: 0">
                     CLI command
                 </h5>
-                <mark style="padding: 4px; border-radius: 5px; background-color: #46464A; color: #fff">
+                <mark style="padding: 4px; border-radius: 5px; background-color: #337ab7; color: #fff">
                     HTTP port: 8501
                 </mark>
             </div>
-            <blockquote>
+            <blockquote style="margin-top: 5px">
                 ovhai app run --default-http-port 8501 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-eda
             </blockquote>
             <figcaption>
@@ -157,11 +157,11 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
                 <h5 style="margin: 0">
                     CLI command
                 </h5>
-                <mark style="padding: 4px; border-radius: 5px; background-color: #46464A; color: #fff">
+                <mark style="padding: 4px; border-radius: 5px; background-color: #337ab7; color: #fff">
                     HTTP port: 8080 (default)
                 </mark>
             </div>
-            <blockquote>
+            <blockquote style="margin-top: 5px">
                 ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition
             </blockquote>
             <figcaption>
@@ -204,11 +204,11 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
                 <h5 style="margin: 0">
                     CLI command
                 </h5>
-                <mark style="padding: 4px; border-radius: 5px; background-color: #46464A; color: #fff">
+                <mark style="padding: 4px; border-radius: 5px; background-color: #337ab7; color: #fff">
                     HTTP port: 8000
                 </mark>
             </div>
-            <blockquote>
+            <blockquote style="margin-top: 5px">
                 ovhai app run --default-http-port 8000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification
             </blockquote>
             <figcaption>
@@ -251,12 +251,59 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
                 <h5 style="margin: 0">
                     CLI command
                 </h5>
-                <mark style="padding: 4px; border-radius: 5px; background-color: #46464A; color: #fff">
+                <mark style="padding: 4px; border-radius: 5px; background-color: #337ab7; color: #fff">
                     HTTP port: 5000
                 </mark>
             </div>
-            <blockquote>
+            <blockquote style="margin-top: 5px">
                 ovhai app run --default-http-port 5000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis
+            </blockquote>
+            <figcaption>
+                <b>Web interface</b> - access to the app with the url
+            </figcaption>
+        </div>
+  </div>
+  <div style="border: 1px solid #46464A; border-radius: 8px; padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center">
+            <h3 style="margin: 0">
+                <b>Speech-to-Text</b>
+            </h3>
+            <p>
+                <b>OVHCloud</b>
+            </p>
+        </div>
+        <p>Deploy a Speech-to-Text application with Streamlit</p>
+        <div style="display: flex; flex-direction: column;">
+            <h5 style="margin: 0">
+                Resources:
+            </h5>
+            <a href="https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/" target="_blank">
+                AI Deploy - Tutorial - Create and deploy a Speech to Text application using Streamlit
+            </a>
+            <a href="https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/speech-to-text/Dockerfile"  target="_blank">
+                Dockerfile - Speech-to-Text app
+            </a>
+        </div>
+        <hr>
+        <div>
+            <h5 style="margin: 0">
+                Docker image
+            </h5>
+            <blockquote>
+                priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-speech-to-text
+            </blockquote>
+        </div>
+        <div>
+            <div style="display: flex; align-items: center; justify-content: space-between">
+                <h5 style="margin: 0">
+                    CLI command
+                </h5>
+                <mark style="padding: 4px; border-radius: 5px; background-color: #337ab7; color: #fff">
+                    HTTP port: 8501
+                </mark>
+            </div>
+            <blockquote style="margin-top: 5px">
+            ovhai app run --default-http-port 8501 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-speech-to-text
             </blockquote>
             <figcaption>
                 <b>Web interface</b> - access to the app with the url
