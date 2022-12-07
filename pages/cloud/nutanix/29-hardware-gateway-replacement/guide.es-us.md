@@ -2,7 +2,7 @@
 title: Sustitución del OVHgateway por un servidor dedicado (EN)
 slug: hardware-gateway-replacement
 excerpt: "How to replace your gateway integrated in Nutanix with a dedicated server to increase bandwidth"
-section: Seguridad de la red
+section: Red y seguridad
 order: 10
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/hardware-gateway-replacement/'
