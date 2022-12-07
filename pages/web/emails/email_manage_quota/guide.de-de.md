@@ -1,7 +1,7 @@
 ---
 title: "Speicherplatz eines E-Mail-Accounts verwalten"
 slug: manage-email-quota
-excerpt: "Hier erfahren Sie, wie Sie den Speicherplatz einer E-Mail-Adresse verwalten und optimieren."
+excerpt: "Erfahren Sie hier, wie Sie den Speicherplatz von E-Mail-Accounts verwalten und optimieren"
 section: 'Diagnose'
 order: 02
 ---
@@ -14,158 +14,157 @@ order: 02
 
 ## Ziel
 
-Jeder OVHcloud E-Mail-Account verfügt über einen dedizierten Speicherplatz. Die gute Verwaltung des Speicherplatzes verhindert eine Überlastung des Speicherplatzes, auch als "Überquota"bezeichnet. Standardmäßig werden E-Mails, die Sie empfangen und versenden, auf dem Server Ihres E-Mail-Accounts gespeichert. Sie können Ihre E-Mails auch über ein E-Mail-Programm (Outlook, macOS Mail, Thunderbird...) lokal auf Ihrem Computer speichern.
+Jeder OVHcloud E-Mail-Account verfügt über einen dedizierten Speicherplatz. Eine regelmäßige Verwaltung des Speicherplatzes verhindert dessen Auslastung, auch als "overquota" bezeichnet. Standardmäßig werden E-Mails, die Sie empfangen und versenden, auf dem Server Ihres E-Mail-Accounts gespeichert. Sie können Ihre E-Mails auch über ein E-Mail-Programm (Outlook, macOS Mail, Thunderbird, etc.) lokal auf Ihrem Computer speichern.
 
-**Hier erfahren Sie, wie Sie den Speicherplatz einer E-Mail-Adresse verwalten und optimieren.**
+**Diese Anleitung erklärt, wie Sie den Speicherplatz eines E-Mail-Accounts verwalten und optimieren.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine zuvor konfigurierte OVHcloud E-Mail-Lösung (**MX Plan**, die aus unseren [Webhosting-Angeboten](https://www.ovhcloud.com/de/web-hosting/) angeboten wird, in einem kostenlosen oder [separat bestellten Start10M Hosting wie](https://www.ovhcloud.com/de/domains/free-web-hosting/) [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [**Email Pro **](https://www.ovhcloud.com/de/emails/email-pro/)).
-- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `WebCloud`{.action}.
-- Sie verfügen über die Verbindungsinformationen zu den betreffenden E-Mail-Adressen.
+- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/), einem kostenlosen Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), im Bereich `Web Cloud`{.action}.
+- Sie verfügen über Anmeldeinformationen für den zu konfigurierenden E-Mail-Account.
 
 > [!primary]
 >
 > **Sonderfälle**
 >
-> - Hinweis zum Start 10M Hosting: Dieses muss unbedingt zuerst aktiviert werden, um eine E-Mail-Adresse zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} durchführen, indem Sie sich auf der betreffenden Domain befinden.
-> - Bei einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} müssen Sie Ihr MX Plan Inklusiv-Angebot aktivieren, bevor Sie mit dem Lesen dieser Anleitung fortfahren. Lesen Sie hierzu unsere Anleitung "[Die in Ihrem Webhosting enthaltenen E-Mail-Adressen aktivieren](https://docs.ovh.com/de/hosting/webhosting-email-aktivieren/)".
+> - Hinweis zum Start 10M Hosting: Dieses muss zuerst aktiviert werden, um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} durchführen, indem Sie den betreffenden Domainnamn aufrufen.
+> - Bei einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} müssen Sie den zugehörigen MX Plan aktivieren, bevor Sie mit dieser Anleitung fortfahren. Lesen Sie hierzu unsere Anleitung "[Die in Ihrem Webhosting enthaltenen E-Mail-Accounts aktivieren](https://docs.ovh.com/de/hosting/webhosting-email-aktivieren/)".
 
-## In der Praxis <a name="instructions"></a>
+## In der praktischen Anwendung <a name="instructions"></a>
 
-Die Verwaltung des Speicherplatzes Ihres E-Mail-Accounts wird in 3 Schritten in dieser Anleitung aufgelöst. Sie können nach Bedarf in der Reihenfolge oder unabhängig durchgeführt werden.
+Die Verwaltung des Speicherplatzes Ihres E-Mail-Accounts wird nachfolgend in 3 Maßnahmen unterteilt. Sie können je nach Bedarf individuell oder der Reihe nach durchgeführt werden.
 
-- [**Überprüfen**](#check-quota) Sie das aktuelle Quota für Ihren E-Mail-Account. In diesem Schritt können Sie Ihren aktuellen Verbrauch für die nächsten 2 Schritte bewerten.
-- [**Ihren**](#optimise) E-Mail-Account optimieren. Dieser Schritt bietet Ihnen Tipps, um einen Speicherplatz ohne unnötige Elemente zu erhalten.
-- [**Archiver** oder **E-Mail Angebot wechseln**](#archiveorswitch). Wenn der vorherige Schritt nicht ausreicht, finden Sie die notwendigen Informationen, um einen lokalen Speicherplatz (auf Ihrem Computer) für Ihre E-Mails über Ihr E-Mail-Programm zu konfigurieren. Sie finden auch die notwendigen Informationen, um das E-Mail-Angebot Ihres Accounts an ein Angebot mit größerem Speicherplatz zu ändern.
+- [**Überprüfen**](#check-quota) der aktuellen Quota Ihres E-Mail-Accounts. Damit können Sie die notwendigen Maßnahmen bewerten.
+- [**Optimieren**](#optimise) des E-Mail-Accounts. Dieser Schritt bietet Ihnen Tipps, um den vorhandenen Speicherplatz besser auszunutzen.
+- [**Archivieren** oder **E-Mail-Dienst wechseln**](#archiveorswitch). Wenn der vorherige Schritt nicht ausreicht, finden Sie hier die notwendigen Informationen, um ein lokales Archiv (auf Ihrem Computer) für Ihre E-Mails über Ihr E-Mail-Programm zu konfigurieren. Außerdem können Sie auf ein E-Mail-Angebot mit größerem Speicherplatz wechseln.
 
 ![E-Mail](images/email-quota-intro.gif){.thumbnail}
 
-### 1- **Überprüfen** des aktuellen Quotas Ihres E-Mail Accounts <a name="check-quota"></a>
+### 1. **Überprüfen** der aktuellen Quota Ihres E-Mail-Accounts <a name="check-quota"></a>
 
-Sie können diese Aktion über das Kundencenter durchführen, wenn Sie den betreffenden E-Mail-Dienst verwalten, oder über Webmail, wenn Sie nur der Benutzer des E-Mail-Accounts sind.
+Sie können diese Aktion über das Kundencenter durchführen, wenn Sie den zugehörigen E-Mail-Dienst verwalten, und alternativ über Webmail, wenn Sie nur der Benutzer des E-Mail-Accounts sind.
 
 #### Über das Kundencenter <a name="quotacontrolpanel"></a>
 
-Gehen Sie [in Ihrem OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `Web Cloud`{.action} und folgen Sie den Anweisungen Ihres Angebots:
+Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `Web Cloud`{.action} und folgen Sie den passenden Anweisungen für Ihren E-Mail-Dienst:
 
 > [!tabs]
-> **E-Mails (MXplan)**
+> **E-Mails (MX Plan)**
 >>
->> Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen des betreffenden MX Plan Dienstes aus. Gehen Sie auf den Tab `E-Mail Accounts`{.action}. Im angezeigten Fenster werden die bestehenden E-Mail-Accounts angezeigt. Sie können in der Spalte `Größe` den laufenden Verbrauch Ihrer E-Mail-Adresse einsehen.<br><br>
+>> Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen des betreffenden MX Plans aus. Gehen Sie auf den Tab `E-Mail Accounts`{.action}. Hier werden die bestehenden E-Mail-Accounts angezeigt. Sie können in der Spalte `Größe` den aktuellen Verbrauch Ihrer E-Mail-Accounts sehen.<br><br>
 >>![E-Mail](images/email-quota-quotacontrolpanel01.png){.thumbnail}<br>
 >>
 > **E-Mail Pro**
 >>
->> Klicken Sie auf `E-Mail Pro`{.action} und wählen Sie die betreffende Plattform aus. Gehen Sie auf den Tab `E-Mail Accounts`{.action}. Im angezeigten Fenster werden die bestehenden E-Mail-Accounts angezeigt. Sie können in der Spalte `Größe` den laufenden Verbrauch Ihrer E-Mail-Adresse einsehen.<br><br>
+>> Klicken Sie auf `E-Mail Pro`{.action} und wählen Sie den betreffenden Dienst aus. Gehen Sie auf den Tab `E-Mail Accounts`{.action}. Hier werden die bestehenden E-Mail-Accounts angezeigt. Sie können in der Spalte `Größe` den laufenden Verbrauch Ihrer E-Mail-Account einsehen.<br><br>
 >>![E-Mail](images/email-quota-quotacontrolpanel02.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
->> Klicken Sie auf `Microsoft`{.action} / `Exchange`{.action} und wählen Sie die betreffende Plattform aus. Gehen Sie auf den Tab `E-Mail Accounts`{.action}. Im angezeigten Fenster werden die bestehenden E-Mail-Accounts angezeigt. Sie können in der Spalte `Größe` den laufenden Verbrauch Ihrer E-Mail-Adresse einsehen.<br><br>
+>> Klicken Sie auf `Microsoft`{.action}, dann `Exchange`{.action} und wwählen Sie den betreffenden Dienst aus. Gehen Sie auf den Tab `E-Mail Accounts`{.action}. Hier werden die bestehenden E-Mail-Accounts angezeigt. Sie können in der Spalte `Größe` den laufenden Verbrauch Ihrer E-Mail-Account einsehen.<br><br>
 >>![E-Mail](images/email-quota-quotacontrolpanel03.png){.thumbnail}<br>
 >>
 
 #### Über das Webmail <a name="quotawebmail"></a>
 
-Um sich mit dem Webmail zu verbinden, gehen Sie auf die Seite <https://www.ovhcloud.com/de/mail/> und geben Sie die Login-Daten zu Ihrem E-Mail-Account ein. Wählen Sie anschließend das zu Ihrem Angebot passende Webmail-Interface aus:
+Um sich im Webmail einzuloggen, gehen Sie auf die Seite <https://www.ovhcloud.com/de/mail/> und geben Sie die Login-Daten zu Ihrem E-Mail-Account ein. Wählen Sie anschließend das zu Ihrem Angebot passende Webmail-Interface aus:
 
 > [!tabs]
-> **OWA**: **E-Mails (MXplan)** / **E-Mail Pro** / **Exchange**
+> **OWA**: **E-Mails (MX Plan)** / **E-Mail Pro** / **Exchange**
 >>
->> Klicken Sie auf <i class=".icons-gear-concept icons-masterbrand-blue"></i> den Button oben rechts neben Ihrem Bildschirm und klicken Sie auf `Optionen`{.action}. Klicken Sie `im Bereich`{.action} General `Mein Konto`{.action} auf  in der linken Spalte. Sie können das aktuelle Quota Ihres Accounts auf der rechten Unterseite des Formulars einsehen.<br><br>
+>> Klicken Sie auf den <i class=".icons-gear-concept icons-masterbrand-blue"></i>Button oben rechts und klicken Sie auf `Optionen`{.action}. Klicken Sie unter `Allgemein`{.action} auf `Mein Konto`{.action} in der linken Spalte. Sie können die aktuelle Speicherbelgung Ihres Accounts auf unten auf der Seite einsehen.<br><br>
 >>![E-Mail](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
-> **Roundcube**: **E-Mails (MXplan)**
+> **Roundcube**: **E-Mails (MX Plan)**
 >>
->> Wenn Sie mit dem Roundcube Webmail verbunden sind, ist das Quota im linken Bereich sichtbar, wird durch ein Kamembert verkörpert und der verbrauchte Prozentsatz angegeben.<br><br>
+>> Wenn Sie im Roundcube Webmail eingeloggt sind, wird die Quota im linken Bereich als Kreisdiagramm mit Prozentangabe angezeigt.<br><br>
 >>![E-Mail](images/email-quota-webmail02.png){.thumbnail}<br>
 >>
 
-### 2- **Ihren** E-Mail Account optimieren <a name="optimise"></a>
+### 2. **Optimieren** Ihres E-Mail-Accounts <a name="optimise"></a>
 
-Wenn Ihr E-Mail-Account überlastet ist, dann können Sie keine E-Mails mehr empfangen.<br>
-Wenn eine Person Ihnen eine E-Mail zusendet, erhält sie automatisch eine Fehlere-Mail vom Typ *"552, "5.2.2". Das E-Mail-Konto, an das Sie eine Nachricht gesendet haben, hat sein Quota ausgeschöpft."*.<br>
-Wenn Ihr E-Mail-Account gesättigt ist, können Sie immer E-Mails auf Ihrer Seite versenden. Diese E-Mails können jedoch nicht in Ihrem "Postfach" gespeichert werden.
+Wenn Ihr E-Mail-Account voll ist, können Sie keine E-Mails mehr empfangen.<br>
+Wenn jemand eine E-Mail an diesen Account sendet, wird automatisch eine Fehlernachricht zurückgegeben, in der Form *"552, 5.2.2". The email account to which you sent a message has exhausted its quota."*.<br>
+Sie können dann noch E-Mails versenden, diese werden aber nicht im Ordner für gesendete Nachrichten gespeichert.
 
 #### Optimieren Sie den Speicherplatz Ihres E-Mail-Accounts
 
-Bevor Sie weitere E-Mail-Accounts verwenden, müssen Sie den Inhalt Ihres E-Mail-Accounts einsehen, um alle unnötigen Elemente zu entfernen. Bitte überprüfen Sie einige dieser Angaben:
+Überprüfen Sie die Inhalte Ihres E-Mail-Accounts, um überflüssige Elemente zu entfernen:
 
-- `1`{.action} **Papierkorb (trash)**: Diese enthält die Elemente, die Sie gelöscht haben. Um zu vermeiden, dass E-Mails in diesem Ordner gesammelt werden, empfehlen wir Ihnen, den Spam-Ordner regelmäßig zu leeren.
-- `2`{.action} **Versandelemente (sent messages)**: Wenn Sie eine E-Mail versenden, wird diese an den Empfänger weitergeleitet. Sie werden jedoch auch in den "Versandstücken"auf Ihrem E-Mail-Account gespeichert. Wir empfehlen Ihnen, diesen Ordner regelmäßig zu leeren oder den Inhalt lokal auf Ihrem Computer oder einem entfernten "Cloud"-Speicherplatz zu archivieren.
-- `3`{.action} **Gespeicherte E-Mails mit umfangreichen Anhängen**: Bei E-Mails mit Anhängen wird mehr Speicherplatz für Ihren E-Mail-Account eingeräumt. Wir empfehlen Ihnen, umfangreiche Elemente auf einem lokalen (Computer) oder entfernten (Cloud) Speicherplatz zu speichern.
-- `4`{.action} **Ordner sortieren**: Wenn Sie viele Ordner auf Ihrem E-Mail-Account haben, ist es weniger einfach, den Speicherplatz Ihres E-Mail-Accounts zu messen. Führen Sie regelmäßig eine Bestandsaufnahme Ihrer Ordner und deren Inhalt durch.
+- `1`{.action} **Gelöschte Elemente (*Trash*)**: Dieser Ordner enthält die Elemente, die Sie gelöscht haben. Um zu vermeiden, dass sich E-Mails in diesem Ordner anhäufen, sollte er regelmäßig geleert werden.
+- `2`{.action} **Gesendete Elemente (*Sent*)**: Wenn Sie eine E-Mail versenden, wird eine Kopie im "Gesendet"-Ordner Ihres E-Mail-Accounts gespeichert. Wir empfehlen, diesen Ordner regelmäßig zu leeren oder dessen Inhalt lokal auf Ihrem Computer oder in einem Cloud-Speicher abzulegen.
+- `3`{.action} **Gespeicherte E-Mails mit großen Anhängen**: E-Mails mit angehängten Dateien verbrauchen deutlich mehr Speicherplatz auf dem Account. Wir empfehlen, diese stattdesssen lokal auf Ihrem Computer oder in einem Cloud-Speicher abzulegen.
+- `4`{.action} **Ordner-Sortierung**: Eine Vielzahl an Ordnern erschwert es, den Überblick über den verbrauchten Speicherplatz Ihres E-Mail-Accounts zu behalten. Führen Sie regelmäßig eine Bestandsaufnahme Ihrer Ordner und deren Inhalte durch.
 
 ![E-Mail](images/email-quota-optimise01.png){.thumbnail}
 
 #### Kapazität Ihres E-Mail-Accounts erhöhen
 
-Sie können die Speicherkapazität Ihres E-Mail-Accounts erhöhen, wenn dieser seine maximale Kapazität nicht erreicht hat. Folgen Sie der Vorgehensweise für Ihr Angebot:
+Sie können die Speicherkapazität Ihres E-Mail-Accounts erhöhen, sofern er seine maximale Größe nicht erreicht hat. Folgen Sie der Vorgehensweise für Ihren Dienst:
 
 > [!tabs]
-> **E-Mails (MXplan)**
+> **E-Mails (MX Plan)**
 >>
->> Die Kapazität eines MXplan Accounts kann zwischen 2,5 MB und 5 GB liegen. Ist es überlastet und verfügt es über weniger als 5 GB Kapazität, können Sie seine Kapazität über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)<br> ändern.
->> Klicken Sie im Tab `E-Mail-Accounts`{.action} rechts neben <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> dem zu ändernden Account auf den Button und anschließend auf `ändern`{.action}.
->> Wählen Sie im Feld `Quota`{.action} die für Sie passende Größe aus, klicken Sie auf `Weiter`{.action} und `bestätigen`{.action}.<br><br>
->> ![{.thumbnail}](images/email-quota-more01.png) E-Mail<br>
+>> Die Größe eines MX Plan Accounts kann zwischen 2,5 MB und 5 GB betragen. Sie können die Kapazität bei Bedarf über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)<br> ändern.
+>> Klicken Sie im Tab `E-Mail-Accounts`{.action} rechts neben dem zu ändernden Account auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>Button und dann auf `Ändern`{.action}.
+>> Wählen Sie im Feld `Quota`{.action} die neue Größe aus, klicken Sie auf `Weiter`{.action} und dann `Bestätigen`{.action}.<br><br>
+>> ![email](images/email-quota-more01.png){.thumbnail}<br>
 >>
 > **E-Mail Pro**
 >> 
->> Das E-Mail Pro Angebot verfügt über eine einzigartige Kapazität von 10 GB. Wenn Sie mehr Speicherplatz benötigen, benötigen Sie ein Angebot mit mehr Speicherplatz. Lesen Sie hierzu den Abschnitt [Angebot wechseln, um die Kapazität zu erhöhen](#switchingoffer) dieser Anleitung.<br>
+>> Das Angebot E-Mail Pro verfügt über eine fixe Account-Kapazität von 10 GB. Wenn Sie mehr Speicherplatz benötigen, kann das nur über einen Wechsel des E-Mail-Dienstes erreicht werden. Lesen Sie hierzu den Abschnitt [zur Migration von Accounts](#switchingoffer) in dieser Anleitung.<br>
 >>
 > **Exchange**
 >>
->> Wenn Ihr Exchange Account seine 50 GB Kapazität erreicht, können Sie für die Angebote **Hosted** und **Provider** eine Erweiterungsoption abonnieren, um die Kapazität auf 300 GB zu erweitern.<br>
->> Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihrer Plattform rechts neben <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>dem zu ändernden Account auf den Button und danach auf `Kapazität auf 300 GB erhöhen`{.action}. Wählen Sie den Abrechnungsmodus aus, der Ihnen am besten entspricht, und klicken Sie auf `Bestätigen`{.action}.<br><br>
+>> Wenn Ihr Exchange Account die maximale Größe von 50 GB erreicht, können Sie für die Angebote **Hosted** und **Provider** eine Erweiterungsoption abonnieren, um die Kapazität auf 300 GB zu erweitern.<br>
+>> Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihres Dienstes rechts neben dem zu ändernden Account auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>Button und danach auf `Kapazität auf 300 GB erhöhen`{.action}. Wählen Sie den gewünschten Abrechnungsmodus aus und klicken Sie auf `Bestätigen`{.action}.<br><br>
 >>![E-Mail](images/email-quota-more02.png){.thumbnail}<br>
 >>
->> Wenn Ihr Exchange Account bereits 300 GB Speicherplatz für ein **Hosted** oder **Provider** Angebot ausgefüllt hat, müssen Sie Platz für Ihren Exchange Account freigeben, indem Sie unnötige Elemente löschen oder Ihre E-Mails lokal auf Ihrem [Computer archivieren](#archiveorswitch). Dies gilt auch für Exchange Accounts mit 50 GB Speicherplatz auf einem **Private** Angebot.
+>> Wenn der betreffende Account in Exchange **Hosted** oder **Provider** bereits 300 GB Speicherplatz belegt, müssen Inhalte gelöscht oder lokal auf Ihrem Computer [archiviert werden](#archiveorswitch). Dies gilt auch für **Private** Exchange Accounts mit 50 GB Speicherplatz.
 >>
 
-### 3- **Archiver** oder **Wechsel des E-Mail Angebots** <a name="archiveorswitch"></a>
+### 3. **Archivieren** oder **E-Mail-Dienst wechseln** <a name="archiveorswitch"></a>
 
 #### Ihre E-Mails lokal auf Ihrem Computer archivieren
 
 > [!warning]
 > 
-> Die folgenden Informationen basieren auf einer IMAP-Konfiguration Ihres E-Mail-Accounts, die am häufigsten verwendet wird. Die POP-Konfiguration basiert auf einem Prinzip, dass E-Mails lokal gespeichert werden. In unserem Zusammenhang ist es daher nicht sinnvoll, E-Mails zu archivieren, die bereits lokal auf Ihrem Computer gespeichert sind.
+> Die folgenden Informationen basieren auf der IMAP-Konfiguration von E-Mail-Accounts, die am häufigsten verwendet wird. Bei der POP-Konfiguration hingegen werden E-Mails bereits auf Ihrem Gerät gespeichert. Eine Archivierung dieser Inhalte ist deshalb nicht relevant für die Speicherplatzverwaltung.
 
-Wenn Sie Ihre E-Mail-Adresse auf Ihrem E-Mail-Client als IMAP **konfiguriert haben**, entspricht der sichtbare Inhalt standardmäßig dem **auf dem E-Mail-Server synchronisierten Inhalt**. Das bedeutet, dass die E-Mails auf Ihren Computer geladen werden, aber verschwinden, wenn sie vom Server gelöscht werden. Um diese **auf Ihrem Computer zu archivieren** müssen Sie Ihr E-Mail-Programm konfigurieren.
+Wenn Sie Ihren E-Mail-Account im E-Mail-Client als IMAP konfiguriert haben, entspricht **normalerweise** der dort sichtbare Inhalt dem **auf dem E-Mail-Server synchronisierten Inhalt**. Das bedeutet, dass die E-Mails auf Ihren Computer geladen werden, aber wieder entfernt werden, sobald sie vom Server gelöscht werden. Um diese **auf Ihrem Computer zu archivieren** muss Ihr E-Mail-Programm konfiguriert werden.
 
 ![E-Mail](images/email-quota-step03-archive.png){.thumbnail}
 
-Wenn Sie möchten, können Sie den Speicherplatz für Ihren E-Mail-Account freigeben, indem Sie Ihre E-Mails direkt auf Ihrem Computer speichern. Hierfür benötigen Sie ein auf Ihrem Computer installiertes E-Mail-Programm.
-Das E-Mail-Programm soll Ihre E-Mails in Dateien umwandeln, um sie auf Ihrem Computer speichern zu können. Es ist jedoch notwendig, die Funktion "Archiv" Ihres E-Mail-Programms einzurichten. Die E-Mails werden dann in einem "lokalen" Ordner gespeichert und nicht direkt auf dem Server Ihres E-Mail-Accounts.
+Bei Bedarf können Sie Speicherplatz für Ihren E-Mail-Account freigeben, indem Sie Ihre E-Mails direkt auf Ihrem Computer speichern. Hierfür muss eine E-Mail-Software auf Ihrem Computer installiert sein.
 
-Im Folgenden finden Sie eine nicht erschöpfende Liste der Konfigurationsanleitungen für E-Mail-Clients, je nach Angebot, das Sie besitzen:
+E-Mail-Clients legen Ihre E-Mails als Dateien auf Ihrem Computer ab. Dazu muss die entsprechende "Archiv"-Funktion eingerichtet werden. Die E-Mails werden dann in einem lokalen Ordner gespeichert und können vom Server Ihres E-Mail-Accounts gelöscht werden.
 
-Nachfolgend finden Sie eine nicht erschöpfende Liste der Konfigurationsanleitungen für E-Mail-Clients, die Folgendes verwenden:
+Nachfolgend finden Sie eine nicht erschöpfende Liste der Konfigurationsanleitungen für E-Mail-Clients, je nach Ihrem verwendeten Angebot:
 
-- IMAP Protokoll für die **MXplan** und **E-Mail Pro Angebote** ;
-- das MAPI Protokoll zum Exchange **Angebot** für Outlook Windows ;
-- das EWS Protokoll für das **Exchange** Angebot für Outlook macOS.
+- IMAP Protokoll für **MX Plan** und **E-Mail Pro**
+- MAPI Protokoll für **Exchange** mit Windows Outlook 
+- EWS Protokoll für **Exchange** mit macOS Outlook 
 
 > [!tabs]
-> **E-Mails (MXplan)**
+> **E-Mails (MX Plan)**
 >>
->> Konfiguration eines MXplan Accounts auf **Windows**:<br><br>
->> - [E-Mail auf Windows 10](https://docs.ovh.com/de/emails/mail-konfiguration-windows-10/) (bei Windows inklusive)<br>
->> - [Outlook für Mxplan](https://docs.ovh.com/de/emails/konfiguration-outlook-2016/)
+>> Konfiguration eines MX Plan Accounts auf **Windows**:<br><br>
+>> - [Windows 10 Mail](https://docs.ovh.com/de/emails/mail-konfiguration-windows-10/) (bei Windows inklusive)<br>
+>> - [Outlook mit MX Plan](https://docs.ovh.com/de/emails/konfiguration-outlook-2016/)
 >> - [Thunderbird](https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-windows/) (kostenlos)<br><br>>
->> Konfiguration eines MXplan Accounts auf **macOS**:<br><br>
+>> Konfiguration eines MX Plan Accounts auf **macOS**:<br><br>
 >> - [Mail](https://docs.ovh.com/de/emails/anleitung-mail-konfiguration-auf-macos/) (inklusive mit macOS)<br>
 >> - [Outlook](https://docs.ovh.com/de/emails/konfiguration-outlook-2016-mac/)<br>
 >> - [Thunderbird](https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-mac/) (kostenlos)<br>
 >>
 > **E-Mail Pro**
 >>
->> Konfiguration eines E-Mail Pro Accounts auf **Windows*:<br><br>
->> - [E-Mail auf Windows 10](https://docs.ovh.com/de/emails-pro/mail-konfiguration-windows-10/) (bei Windows inklusive)<br>
+>> Konfiguration eines E-Mail Pro Accounts auf **Windows**:<br><br>
+>> - [Windows 10 Mail](https://docs.ovh.com/de/emails-pro/mail-konfiguration-windows-10/) (bei Windows inklusive)<br>
 >> - [Outlook](https://docs.ovh.com/de/emails-pro/konfiguration-outlook-2016/)<br>
 >> - [Thunderbird](https://docs.ovh.com/de/emails-pro/konfiguration-emailpro-thunderbird-windows/) (kostenlos)<br><br>>
->> Konfiguration eines E-Mail Pro Accounts auf **macOS*:<br><br>
+>> Konfiguration eines E-Mail Pro Accounts auf **macOS***:<br><br>
 >> - [Mail](https://docs.ovh.com/de/emails-pro/email-pro-auf-macos-konfigurieren/) (inklusive mit macOS)<br>
 >> - [Outlook](https://docs.ovh.com/de/emails-pro/konfiguration-outlook-2016-mac/)<br>
 >> - [Thunderbird](https://docs.ovh.com/de/emails-pro/konfiguration-emailpro-thunderbird-mac/) (kostenlos)<br>
@@ -173,7 +172,7 @@ Nachfolgend finden Sie eine nicht erschöpfende Liste der Konfigurationsanleitun
 > **Exchange**
 >
 >> Konfiguration eines Exchange Accounts auf **Windows**:<br><br>
->> - [E-Mail auf Windows 10](https://docs.ovh.com/de/microsoft-collaborative-solutions/mail-konfiguration-windows-10/) (bei Windows inklusive)<br>
+>> - [Windows 10 Mail](https://docs.ovh.com/de/microsoft-collaborative-solutions/mail-konfiguration-windows-10/) (bei Windows inklusive)<br>
 >> - [Outlook](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-automatische-konfiguration-auf-outlook-2016/)<br>
 >> - [Thunderbird](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_konfiguration_in_thunderbird/) (kostenlos)<br><br>>
 >> Konfiguration eines Exchange Accounts auf **macOS**:<br><br>
@@ -182,54 +181,54 @@ Nachfolgend finden Sie eine nicht erschöpfende Liste der Konfigurationsanleitun
 >> - [Thunderbird](https://docs.ovh.com/de/microsoft-collaborative-solutions/konfiguration-exchange-thunderbird-mac/) (kostenlos)<br>
 >
 
-Wenn Ihr E-Mail-Client installiert ist, folgen Sie den nachstehenden Anweisungen, um den Archivordner auf Ihrem E-Mail-Programm vorzubereiten.
+Wenn Ihr E-Mail-Client installiert ist, folgen Sie den nachstehenden Anweisungen, um den Archivordner zu konfigurieren.
 
 > [!tabs]
 > **Outlook**
 >>
->> Vergewissern Sie sich, dass in Ihrer linken Spalte der Ordner "Archiv" oder "auf meinem Computer" vorhanden ist, um die Elemente, die Sie lokal auf Ihrem Computer speichern möchten, dort ablegen zu können. Lesen Sie die Microsoft Dokumentation, um Ihren Archivordner vorzubereiten:<br><br>
+>> Vergewissern Sie sich, dass in der linken Spalte der Ordner "Archiv" oder "Auf meinem Computer" vorhanden ist, um die Elemente, die Sie lokal auf Ihrem Computer speichern möchten, dort ablegen zu können. Lesen Sie die Microsoft Dokumentation, um Ihren Archivordner vorzubereiten:<br><br>
 >> - [Archivierung in Outlook für Windows](https://support.microsoft.com/de-de/office/archivieren-in-outlook-f%C3%BCr-windows-25f75777-3cdc-4c77-9783-5929c7b47028){.external}<br>
->> - [Über die Dateien auf meinem Computer in Outlook für Mac](https://support.microsoft.com/de-de/office/%C3%A0-propos-des-dossiers-sur-mon-ordinateur-dans-outlook-pour-mac-c91b8729-924d-4c25-a5f6-38883d0f763d){.external}<br>
+>> - [Archivierung in Outlook für Mac](https://support.microsoft.com/de-de/office/informationen-zu-auf-meinem-computer-ordnern-in-outlook-f%C3%BCr-mac-c91b8729-924d-4c25-a5f6-38883d0f763d){.external}<br>
 >>
 > **macOS Mail**
 >>
->> Erstellen Sie mit Mail auf macOS einen Ordner, der in der linken Spalte im Abschnitt "Auf meinem Mac"erscheint. Folgen Sie hierzu der Dokumentation von Apple:<br><br>
->>> - [mailbox maken of verwijderen in Mail op Mac](https://support.apple.com/de-de/guide/mail/mlhlp1021/15.0/mac/12.0){.external}<br>
+>> Erstellen Sie mit Mail auf macOS einen Ordner, der in der linken Spalte im Abschnitt "Auf meinem Mac" erscheint. Folgen Sie hierzu der Dokumentation von Apple:<br><br>
+>>> - [Mailbox Mac](https://support.apple.com/de-de/guide/mail/mlhlp1021/15.0/mac/12.0){.external}<br>
 >>
 > **Thunderbird**
 >>
->> Mit Thunderbird können Sie Ihre E-Mails über Windows, macOS oder Linux in einen Ordner des linken Layouts verschieben. Lesen Sie die Mozilla-Dokumentation:<br><br>
->> - [Berichtenarchief](https://support.mozilla.org/de/kb/archivierte-nachrichten){.external} (English)<br>
+>> Mit Thunderbird können Sie Ihre E-Mails über Windows, macOS oder Linux in einen Ordner verschieben, der in der linken Spalte verfügbar ist. Lesen Sie die Dokumentation von Mozilla:<br><br>
+>> - [Mail Archiv](https://support.mozilla.org/de/kb/archivierte-nachrichten){.external}<br>
 >>
 
-#### Angebot wechseln, um die Kapazität zu erhöhen <a name="switchingoffer"></a>
+#### Zu einem Angebot mit höherer Kapazität wechseln <a name="switchingoffer"></a>
 
-Wählen Sie im folgenden Menü das aktuelle Angebot Ihres E-Mail-Accounts aus:
+Folgen Sie der passenden Dokumentation für Ihren E-Mail-Dienst:
 
 > [!tabs]
-> **E-Mails (MXplan)**
+> **E-Mails (MX Plan)**
 >>
->> Wenn die Kapazität Ihres E-Mail-Accounts bereits bei maximal 5 GB liegt, können Sie sich für eine Migration auf ein E-Mail Pro Angebot mit [**10 GB** oder](https://www.ovhcloud.com/de/emails/email-pro/)Hosted Exchange[** mit 50 GB entscheiden**](https://www.ovhcloud.com/de/emails/hosted-exchange/). Bestellen Sie hierzu das für Sie passende Angebot und folgen Sie unserer Anleitung "[Migration einer MX Plan E-Mail-Adresse auf einen E-Mail Pro oder Exchange Account](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-e-mail-adresse-auf-exchange/) ". 
+>> Wenn die Kapazität Ihres E-Mail-Accounts bereits bei 5 GB beträgt, können Sie sich für eine Migration auf [**E-Mail Pro** mit 10 GB](https://www.ovhcloud.com/de/emails/email-pro/) oder [**Hosted Exchange** mit 50 GB](https://www.ovhcloud.com/de/emails/hosted-exchange/) entscheiden. Bestellen Sie hierzu das gewünschte Angebot und folgen Sie unserer Anleitung "[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-e-mail-adresse-auf-exchange/)". 
 >>
 > **E-Mail Pro**
 >>
->> Das E-Mail Pro Angebot verfügt über eine einzigartige Kapazität von 10 GB. Sie können sich für eine Migration auf ein [**Hosted Exchange** Angebot mit 50 GB entscheiden](https://www.ovhcloud.com/de/emails/hosted-exchange/). Bestellen Sie hierzu das für Sie passende Angebot und folgen Sie unserer Anleitung "[Ihre E-Mail-Adressen von einer OVHcloud-Plattform auf eine andere migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-email-platform/)".
+>> Das Angebot E-Mail Pro verfügt über eine feste Account-Kapazität von 10 GB. Sie können auf [**Hosted Exchange** mit 50 GB](https://www.ovhcloud.com/de/emails/hosted-exchange/) wechseln. Bestellen Sie hierzu Hosted Exchange und folgen Sie unserer Anleitung "[E-Mail-Accounts von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-email-platform/)".
 >>
 > **Exchange**
 >>
->> Wenn Ihr Exchange Account 50 GB Speicherplatz erreicht, können Sie eine Erweiterungsoption abonnieren, um die Kapazität auf 300 GB zu erweitern. Dies nur, wenn der Exchange Account auf einem **Hosted** oder **Provider** Angebot verfügbar ist.<br>
->> Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihrer Exchange-Plattform auf den Button rechts neben <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>dem zu ändernden Account und danach auf `Kapazität auf 300 GB erhöhen`{.action}.<br><br>
+>> Wenn Ihr Exchange Account 50 GB erreicht, können Sie eine Erweiterungsoption abonnieren, um die Kapazität auf 300 GB zu erweitern. Dies gilt nur, wenn es sich um **Hosted Exchange** oder **Provider Exchange** handelt.<br>
+>> Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihres Exchange Dienstes auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>Button rechts neben dem zu ändernden Account und danach auf `Kapazität auf 300 GB erhöhen`{.action}.<br><br>
 >> ![E-Mail](images/email-quota-more02.png){.thumbnail}<br>
 >>
 
 ## Weiterführende Informationen
 
-[Eine MX Plan E-Mail-Adresse auf einen E-Mail Pro oder Exchange Account migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-e-mail-adresse-auf-exchange/)
+[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-e-mail-adresse-auf-exchange/)
 
-[Ihre E-Mail-Adresse manuell migrieren](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/)
+[Ihre E-Mail-Account manuell migrieren](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/)
 
-[Ihre E-Mail-Adressen von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-email-platform/)
+[E-Mail-Accounts von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-email-platform/)
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere Support-Angebote [einsehen](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
