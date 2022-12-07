@@ -27,7 +27,7 @@ In this tutorial, we will use the Node.js platform to build a **real-time chat a
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/it/publiccloud/databases/getting-started/) can help you to meet this requirement)
 - [Configure your MongoDB instance](https://docs.ovh.com/it/publiccloud/databases/mongodb/managing-service/) to accept incoming connections
-- A [NodeJS working environment](https://nodejs.dev/learn/how-to-install-nodejs) and public network connectivity (Internet). This tutorial was made using NodeJS LTS 16.14.0.
+- A [NodeJS working environment](https://nodejs.dev/en/learn/how-to-install-nodejs/) and public network connectivity (Internet). This tutorial was made using NodeJS LTS 16.14.0.
 
 ## Instructions
 
@@ -355,7 +355,7 @@ So each time a message is posted, the server will update the messages in the mes
 
 ![NodeJS Chat App second user](images/mongodb_tuto_01_connect_nodejs_to_managed_mongodb-20220215104535750.png)
 
-Great! You now have a nodeJS chat application up and running, with messages stored on a MongoDB cluster. Reach out to [official NodeJS tutorials](https://nodejs.dev/learn) for more use cases.
+Great! You now have a nodeJS chat application up and running, with messages stored on a MongoDB cluster. Reach out to [official NodeJS tutorials](https://nodejs.dev/en/learn/) for more use cases.
 
 
 ## Attachments

@@ -9,7 +9,7 @@ section: Diagnostics and rescue mode
 
 ## Objective
 
-Rescue mode is a tool provided by OVHcloud to boot your VPS into a temporary operating system. You can utilise it to diagnose and possibly resolve various issues on your primary OS.
+Rescue mode is a tool provided by OVHcloud to boot your VPS into a temporary operating system. You can use it to diagnose and possibly resolve various issues on your primary OS.
 
 Usual tasks the rescue mode is appropriate for include:
 

@@ -187,7 +187,7 @@ Se abrirá una ventana en la que deberá introducir la nueva contraseña de la b
 
 [Web hosting: guía de uso de FileZilla](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/)
 
-[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/)
+[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/)
 
 [Resolver los errores más frecuentes asociados a las bases de datos](https://docs.ovh.com/us/es/hosting/error-requentes-base-de-datos/)
 

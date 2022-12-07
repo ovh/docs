@@ -2,7 +2,7 @@
 title: AI Notebooks - Tutoriel - Construire votre classificateur de spam (EN)
 slug: notebooks/tuto-spam-classifier
 excerpt: How to build your Spam classifier thanks to Machine Learning
-section: AI Notebooks - Tutoriels
+section: AI Notebooks - Tutoriels
 order: 09
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-spam-classifier/'

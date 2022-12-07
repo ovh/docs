@@ -38,7 +38,7 @@ By transferring your domain name, you will change your domain name registrar. Yo
 
 > [!success]
 >
-> To find out the pricing conditions for transferring a domain name depending on its extension, enter the domain you wish to transfer on our page [www.ovhcloud.com/en-us/domains/tld/](https://www.ovhcloud.com/en-us/domains/tld/) and follow the steps in this guide.
+> To find out the pricing conditions for transferring a domain name depending on its extension, enter the domain you wish to transfer on our page [www.ovhcloud.com/en-us/domains/tld/](https://www.ovhcloud.com/en/domains/tld/) and follow the steps in this guide.
 >
 
 The transfer procedure has several steps. These steps will involve various entities being contacted, including your current domain name registrar, OVHcloud, and other parties. The table below provides a breakdown of who is contacted, and how long each step will take to complete.
