@@ -110,7 +110,7 @@ Dans la partie `Emails`{.action} de votre espace client, sélectionnez l'offre c
 Une fois ces 6 éléments vérifiés, vous pouvez réaliser votre [changement d'offre](#modify)
 
 
-### Cas particulier 
+### Cas particuliers
 
 #### **Vous possédez une offre Start 10M** <a name="start10m"></a>
 
