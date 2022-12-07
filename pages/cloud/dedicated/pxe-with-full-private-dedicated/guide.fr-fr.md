@@ -78,8 +78,8 @@ schéma (logique) de démarrage Netboot:
 ![Netboot en action](images/netboot_steps.png)
 
 
-|étape|description/détails|
-|---|---|
+|description/détails|
+|---|
 1. envoi de requête discover vers le DHCP depuis la machine cliente (en broadcast).
 2. le DHCP affecte une adresse IP à la machine cliente (offer/request/ack). Requête de récupération du binaire iPXE.l
 3. récupération en TFTP du binaire iPXE.
