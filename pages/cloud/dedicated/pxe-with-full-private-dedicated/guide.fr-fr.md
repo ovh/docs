@@ -22,7 +22,7 @@ Profiter d'une infrastructure privée sans avoir modifié la configuration par d
 > Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres et critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
 > 
 > Le Netboot (Network Boot), consiste de par ses différentes séquences, à utiliser votre interface réseau (en mode bas niveau) comme moyen de selection d'amorçage à vos systèmes d'exploitation.
-> A savoir qu'il et possible de démarrer n'importe quel système à partir d'un volume réseau: SAN, NFS, etc,..., ou bien plus fréquement, à partir d'un volume local : CD/DVD, USB, disque local.
+> A savoir qu'il et possible de démarrer n'importe quel système à partir d'un volume réseau: SAN, NFS, etc,... ou bien plus fréquement, à partir d'un volume local : CD/DVD, USB, disque local.
 >
 > Pour rappel, il est fortement déconseillé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
 > 
@@ -33,10 +33,10 @@ Profiter d'une infrastructure privée sans avoir modifié la configuration par d
 
 Les [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud vous permettent de configurer/déclarer vos propres réseaux.<br>
 Chaque serveur est muni au minimum de 2 interfaces réseaux, fonctionnants en réalité en liens aggrégés et assurant la redondance en cas de panne. <br>
-Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *public*, et ceux *privés* en passant par notre solution [vrack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
+Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *publics*, et ceux *privés* en passant par notre solution [vrack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
 
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
-Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.
+Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.<br>
 La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
 Par conséquent, un serveur isolé de par son réseau privé empéche le mecanisme de démarrage, à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers s'appuyent sur le réseau interne d'OVHcloud et ses services mutualisés nécessaires.
 
@@ -74,7 +74,7 @@ liste des composants intervenants lors du démarrage :
 disque local, usb, etc...
 
 
-schéma (logique) de démarrage Netboot:
+*schéma (logique) de démarrage Netboot:*
 ![Netboot en action](images/netboot_steps.png)
 
 
@@ -105,7 +105,7 @@ schéma (logique) de démarrage Netboot:
 * mise en marche.
 
 
-exemple d'infrastructure privée basique (schéma layer 2):
+*exemple d'infrastructure privée basique (schéma layer 2):*
 ![Schema](images/schema_basic.png)
 
 Exemple:
@@ -116,7 +116,7 @@ Exemple:
 
 > [!primary]
 >
-> Après le démarrage des systèmes, et pour que les services DHCP et ceux optionels (DNS et NTP) soient pleinement fonctionnels, penser à déclarer/ajouter si besoin les régles dans le firewall local sur l'interface réseau privée de la machine hébergeant les services.
+> Après le démarrage des systèmes, et pour que les services DHCP et ceux optionels (DNS et NTP) soient pleinement fonctionnels, penser à déclarer/ajouter les régles dans le firewall local via l'interface réseau privée de la machine hébergeant les services.
 >
 
 #### le service **DHCP**
@@ -307,7 +307,7 @@ exit 1
 
 contenu du fichier `refind.conf`
 
-Il s'agit d'intégrer les directives mimimun pour une bonne intégration au SI d'OVHcloud.
+*Il s'agit d'intégrer les directives mimimun pour une bonne intégration au SI d'OVHcloud.*
 ```bash
 
 timeout 1
@@ -326,18 +326,17 @@ scan_delay 0
 ## Mise en marche
 
 
-Aperçu de ce que l'on obtiend à l'affichage lors d'un Netboot UEFI (par défaut):<br>
-correspond aux étapes 1 à 8<br>
+Aperçu de ce que l'on obtient à l'affichage lors d'un Netboot UEFI (par défaut):<br>
+*correspond aux étapes 1 à 8* <br>
 ![iPXE en action](images/animation.gif){.thumbnail}
 
 
-correspond au résultat des étapes 8 et 9 <br>
+*correspond au résultat des étapes 8 et 9* <br>
 ![rEFInd en action](images/rEFInd.png){.thumbnail}<br>
-Ci-dessus, nous avons le bootloader rEFInd chargé sur une machine avec un système *debian* installé.
+Ci-dessus, nous avons le bootloader **rEFInd** chargé sur une machine avec un système *debian* installé.
 
 
-Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/dedicated/dedicated-pxe-private/files/src.zip" download>ce lien</a>. les ressources qui ont servis à élaborer nos tests et exemples présents tout au long de cette présentation.<br>
-Ils pourront servir de template selon vos besoins.
+Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/dedicated/dedicated-pxe-private/files/src.zip" download>ce lien</a>. les ressources qui ont servis à élaborer nos tests et exemples présents tout au long de cette présentation. Ils pourront servir de template selon vos besoins.
 
 #### Optionnel
 
@@ -357,7 +356,8 @@ Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/et
 service NTP:<br>
 Il est fortement conseillé d'utiliser un service NTP surtout si votre infrastructure comprends plusieurs machines.
 
-liste des ports à autoriser dans votre firewall local (de la machine hébergeant les services).
+liste des ports à autoriser dans votre firewall local (de la machine hébergeant les services):
+
 * NTP port 123
 * DNS port 53
 
