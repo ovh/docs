@@ -1,7 +1,7 @@
 ---
 title: Configurar uma conta Exchange no Mail do macOS
 slug: exchange-configuracao-mail-mac
-section: Configurazione al computer
+section: Configuração no computador
 order: 06
 ---
 
