@@ -1,7 +1,7 @@
 ---
 title: First step with NSX-T
 slug: nsx-t-first-steps
-excerpt: Discover the NSX-T interface
+excerpt: Discover NSX-T
 section: NSX-T
 order: 01
 ---
