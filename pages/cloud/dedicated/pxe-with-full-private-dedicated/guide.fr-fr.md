@@ -22,11 +22,11 @@ Profiter d'une infrastructure privée sans avoir modifié la configuration par d
 > Nous avons au préalable effectués tous nos tests, qualifications et validations de configurations, à partir de paramètres et critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
 > 
 > Le Netboot (Network Boot), consiste de par ses différentes séquences, à utiliser votre interface réseau (en mode bas niveau) comme moyen de selection d'amorçage à vos systèmes d'exploitation.
-> A savoir qu'il et possible de démarrer n'importe quel système à partir d'un volume réseau: SAN, NFS, etc,... ou bien plus fréquement, à partir d'un volume local : CD/DVD, USB, disque local.
+> A savoir qu'il est possible de démarrer n'importe quel système à partir d'un volume réseau: SAN, NFS, etc,... ou bien plus fréquement, à partir d'un volume local : disque local, CD/DVD ou USB.
 >
 > Pour rappel, il est fortement déconseillé de modifier les configurations par défaut: configuration Bios, Boot Order, etc...
 > 
-> Puisque nous avons pré-configurés ce mecanisme de démarrage de nos solutions et y avons intégré tous nos outils : netboot, monitoring, recycling, etc...
+> Puisque nous avons pré-configurés ce mecanisme de démarrage à nos solutions et y avons intégrés tous nos outils : netboot, monitoring, recycling, etc...
 > Si ces paramètres sont amenées à être modifiés, nos équipes ne pourront plus effectuer leur tâches qui leur sont dédiées dans les conditions que nous aurons choisies, et surtout vous risqueriez de rendre le démarrage inopérant.
 >
 
@@ -38,7 +38,7 @@ Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *publics*, et ce
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
 Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.<br>
 La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
-Par conséquent, un serveur isolé de par son réseau privé empéche le mecanisme de démarrage, à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers s'appuyent sur le réseau interne d'OVHcloud et ses services mutualisés nécessaires.
+Par conséquent, un serveur isolé de par son réseau privé empéche le mecanisme de démarrage, à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers s'appuyent sur le réseau interne d'OVHcloud et ses services mutualisés.
 
 
 ### Présentation rapide d'un démarrage en Netboot
@@ -55,9 +55,9 @@ Par conséquent, un serveur isolé de par son réseau privé empéche le mecanis
 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
 * Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
-* Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (DHCP et TFTP). Le système d'exploitation sera celui de votre choix.
+* Un système dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir, un accès au réseau public et privé, qui hébergera tous les services (**DHCP** et **TFTP**). Le système d'exploitation sera celui de votre choix.
 * Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez au préalable configuré notre fonctionnabilité [OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
- Exemple d'une machine éligible à notre procédure, à partir de l'onglet `Interfaces réseau`{.action} de son manager:<br>
+ **exemple d'une machine éligible à notre procédure, à partir de l'onglet `Interfaces réseau`{.action} de son manager:** <br>
 ![OLA1](images/Scr_OLA1.png){.thumbnail}
 ![OLA2](images/Scr_OLA2.png){.thumbnail}
 
@@ -68,10 +68,9 @@ Par conséquent, un serveur isolé de par son réseau privé empéche le mecanis
 
 liste des composants intervenants lors du démarrage :
 
-* Un serveur **DHCP** : Attribuer une configuration réseau  (bail avec adresse IP) pour une machine cliente qui tente de démarrer.
-* Un service **TFTP** : Ressources disponible à travers le reseau et qui seront interrogées/requêtées par PXE.
-* La solution **rEFInd**, sous forme de BootLoader, a été retenue car parfaitement adaptée, celle-ci permettra la recherche de secteurs d'amorçage des machines clientes:<br>
-disque local, usb, etc...
+* Un serveur **DHCP** : attribuer une configuration réseau  (bail avec adresse IP) pour une machine cliente qui tente de démarrer.
+* Un service **TFTP** : ressources disponibles à travers le reseau et qui seront interrogées/requêtées par PXE.
+* La solution **rEFInd**, sous forme de **BootLoader**, a été retenue car parfaitement adaptée, celle-ci permettra la recherche de secteurs d'amorçage des machines clientes: disque local, usb, etc...
 
 
 *schéma (logique) de démarrage Netboot:*
@@ -80,15 +79,15 @@ disque local, usb, etc...
 
 |description/détails|
 |---|
-1. envoi de requête discover vers le DHCP depuis la machine cliente (en broadcast).
-2. le DHCP affecte une adresse IP à la machine cliente (offer/request/ack). Requête de récupération du binaire iPXE.l
-3. récupération en TFTP du binaire iPXE.
-4. chargement du binaire iPXE en tant que firmware.
-5. requête de récupération de script iPXE.
-6. récuparation du script iPXE associé en TFTP.
-7. éxécution du script iPXE. récupération des ressources nécessaire à rEFInd: binaire et fichier de configuration requis.
-8. éxécution et chargement du binaire rEFInd.
-9. rEFInd lance sa tâche de scan afin de repérer les secteurs d'amorçage des disques locaux.
+|1. envoi de requête discover vers le DHCP depuis la machine cliente (en broadcast)|
+|2. le DHCP affecte une adresse IP à la machine cliente (offer/request/ack). Requête de récupération du binaire iPXE|
+|3. récupération en TFTP du binaire iPXE|
+|4. chargement du binaire iPXE en tant que firmware|
+|5. requête de récupération de script iPXE|
+|6. récuparation du script iPXE associé en TFTP|
+|7. éxécution du script iPXE. récupération des ressources nécessaire à rEFInd: binaire et fichier de configuration requis|
+|8. éxécution et chargement du binaire rEFInd|
+|9. rEFInd lance sa tâche de scan afin de repérer les secteurs d'amorçage des disques locaux|
 
 > [!primary]
 >
@@ -108,7 +107,7 @@ disque local, usb, etc...
 *exemple d'infrastructure privée basique (schéma layer 2):*
 ![Schema](images/schema_basic.png)
 
-Exemple:
+*Exemple:*
 
 * services hébergés/mutualisés sur **Node 0**.
 * une seule machine cliente **Node 1** avec OLA actif.
@@ -223,7 +222,7 @@ host node_1 {
 }
 ```
 
-Détails:
+*Détails:*
 
 * réseau privé (ex: 192.168.1.0/28)
 * `subnet_mask` : 255.255.255.240
@@ -254,7 +253,7 @@ Ce qu'il faut savoir:<br>
 * Ce service utilise le port 69 (UDP)
 * Il est obligatoire de déclarer un répertoire "cible", correspondant à une arboresence locale qui sera utilisée pour les réceptions et les téléchargments des fichiers.
 
-exemple de configuration avec le logiciel `tftpd-hpa`:<br>
+*exemple de configuration avec le logiciel `tftpd-hpa`:*<br>
 
 ```bash
 # /etc/default/tftpd-hpa
