@@ -20,7 +20,7 @@ order: 06
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté sur vos clusters via Prism Central.
 - Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloud avec des licences **Pack Advanced** si vous avez une offre packagée sur les deux clusters du P.R.A. Ces 3 clusters devront être sur des sites distants pour obtenir un maximum de sûreté.
 - Avoir une latence de moins de 5 ms entre les deux clusters répliqués.
@@ -102,8 +102,8 @@ Les informations de configuration des clusters utilisées par notre guide sont l
 
 En plus de ce guide, vous pouvez vous aider de ces documentations :
 
-- [hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) ;
-- [outils avancés](https://docs.ovh.com/fr/nutanix/advanced-tools/).
+- [hyperconvergence Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/) ;
+- [outils avancés](https://docs.ovh.com/ca/fr/nutanix/advanced-tools/).
 
 <a name="configuration"></a>
 
@@ -115,7 +115,7 @@ En plus de ce guide, vous pouvez vous aider de ces documentations :
 
 La première étape est de réaliser l'interconnexion des trois clusters sur le même vRack OVHcloud. 
 
-Aidez-vous de ce guide pour interconnecter vos clusters : [Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/). Pour connecter les trois clusters, utilisez les instructions fournies sur le guide dans ce sens :
+Aidez-vous de ce guide pour interconnecter vos clusters : [Interconnexion de clusters au travers du vRack](https://docs.ovh.com/ca/fr/nutanix/nutanix-vrack-interconnection/). Pour connecter les trois clusters, utilisez les instructions fournies sur le guide dans ce sens :
 
 - Les clusters de Roubaix dans le vRack dédié à Gravelines.
 - Les clusters de Erith dans le vRack dédié à Gravelines.
@@ -598,7 +598,7 @@ Nous allons donc créer 3 sous-réseaux supplémentaires sur les clusters de Gra
 - **testinfra** sur le VLAN 101.
 - **production** sur le VLAN 102.
 
-Aidez-vous de ce guide pour créer des VLAN sur vos clusters Nutanix : [isoler les machines de gestion de la production](https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/).
+Aidez-vous de ce guide pour créer des VLAN sur vos clusters Nutanix : [isoler les machines de gestion de la production](https://docs.ovh.com/ca/fr/nutanix/nutanix-isolate-management-machines/).
 
 Dans le tableau de bord `Subnets` de Prism Central, vous verrez six nouveaux sous-réseaux.
 
@@ -1080,13 +1080,13 @@ La liste des événements survenus apparaît, cliquez sur `Close`{.action} pour 
 
 ## Aller plus loin
 
-[Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/)
+[Interconnexion de clusters au travers du vRack](https://docs.ovh.com/ca/fr/nutanix/nutanix-vrack-interconnection/)
 
-[Plan de reprise d'activité sous Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
+[Plan de reprise d'activité sous Nutanix](https://docs.ovh.com/ca/fr/nutanix/disaster-recovery-plan-overview/)
 
-[Réplication asynchrone ou NearSync au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
+[Réplication asynchrone ou NearSync au travers de Prism Element](https://docs.ovh.com/ca/fr/nutanix/prism-element-nutanix-replication/)
 
-[Réplication avancée avec Leap](https://docs.ovh.com/fr/nutanix/leap-replication/)
+[Réplication avancée avec Leap](https://docs.ovh.com/ca/fr/nutanix/leap-replication/)
 
 [Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/)
 
