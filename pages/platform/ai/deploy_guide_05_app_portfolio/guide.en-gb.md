@@ -63,11 +63,11 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
                 <h5 style="margin: 0">
                     CLI command
                 </h5>
-                <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
+                <mark style="padding: 4px; border-radius: 5px; background-color: #46464A; color: #fff">
                     HTTP port: 5000
                 </mark>
             </div>
-            <blockquote>
+            <blockquote style="margin-top: 5px">
                 ovhai app run --default-http-port 5000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/ai-deploy-hello-world
             </blockquote>
             <figcaption>
@@ -75,7 +75,7 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
             </figcaption>
         </div>
   </div>
-  <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
+  <div style="border: 1px solid #46464A; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
             <h3 style="margin: 0">
                 <b>EDA and interactive prediction</b>
@@ -110,7 +110,7 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
                 <h5 style="margin: 0">
                     CLI command
                 </h5>
-                <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
+                <mark style="padding: 4px; border-radius: 5px; background-color: #46464A; color: #fff">
                     HTTP port: 8501
                 </mark>
             </div>
@@ -122,7 +122,7 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
             </figcaption>
         </div>
   </div>
-  <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
+  <div style="border: 1px solid #46464A; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
             <h3 style="margin: 0">
                 <b>Sketch recognition</b>
@@ -157,7 +157,7 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
                 <h5 style="margin: 0">
                     CLI command
                 </h5>
-                <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
+                <mark style="padding: 4px; border-radius: 5px; background-color: #46464A; color: #fff">
                     HTTP port: 8080 (default)
                 </mark>
             </div>
@@ -169,7 +169,7 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
             </figcaption>
         </div>
   </div>
-  <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
+  <div style="border: 1px solid #46464A; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
             <h3 style="margin: 0">
                 <b>Spam classification</b>
@@ -204,7 +204,7 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
                 <h5 style="margin: 0">
                     CLI command
                 </h5>
-                <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
+                <mark style="padding: 4px; border-radius: 5px; background-color: #46464A; color: #fff">
                     HTTP port: 8000
                 </mark>
             </div>
@@ -216,7 +216,7 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
             </figcaption>
         </div>
   </div>
-  <div style="border: 1px solid #000E9C; border-radius: 8px; padding: 20px;">
+  <div style="border: 1px solid #46464A; border-radius: 8px; padding: 20px;">
         <div style="display: flex; justify-content: space-between; align-items: center">
             <h3 style="margin: 0">
                 <b>Sentiment analysis</b>
@@ -251,7 +251,7 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
                 <h5 style="margin: 0">
                     CLI command
                 </h5>
-                <mark style="padding: 4px; border-radius: 5px; background-color: #000E9C; color: #fff">
+                <mark style="padding: 4px; border-radius: 5px; background-color: #46464A; color: #fff">
                     HTTP port: 5000
                 </mark>
             </div>
