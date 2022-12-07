@@ -43,7 +43,7 @@ Se mostrará una tabla con los usuarios FTP creados en su alojamiento. Estos usu
 
 > [!primary]
 >
-> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/).
+> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/).
 >
 
 Según el plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/), la modificación de la contraseña del usuario FTP a través de la pestaña `FTP-SSH`{.action} se realizará por dos caminos diferentes:
@@ -84,7 +84,7 @@ Existen diversas formas de conectar los archivos al espacio de alojamiento:
 
 ## Más información <a name="gofurther"></a>
 
-[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/)
+[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/)
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 

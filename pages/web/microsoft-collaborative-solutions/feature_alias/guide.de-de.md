@@ -3,7 +3,7 @@ title: Einen Alias zu einem E-Mail-Account hinzufügen
 slug: email-alias
 excerpt: Erfahren Sie hier, wie Sie im OVHcloud Kundencenter eine Alias-Adresse zu einem Mailaccount hinzufügen
 section: Exchange Account-Funktionen
-order: 1
+order: 01
 ---
 
 > [!primary]

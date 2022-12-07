@@ -3,7 +3,7 @@ title: Crear y utilizar una cuenta compartida
 slug: exchange-uso-de-las-cuentas-compartidas
 excerpt: Añadir y utilizar una cuenta compartida en su solución Exchange
 section: Funcionalidades de las cuentas Exchange
-order: 5
+order: 06
 ---
 
 **Última actualización: 15/06/2021**

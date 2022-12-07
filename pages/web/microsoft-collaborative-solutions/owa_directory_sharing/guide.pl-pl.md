@@ -2,8 +2,8 @@
 title: 'Współdzielenie folderów w interfejsie OWA'
 slug: exchange_2016_wspoldzielenie_katalogu_poprzez_webmail_owa
 excerpt: 'Dowiedz się, jak współdzielić foldery między kontami Exchange'
-section: 'Outlook Web Application (Aplikacja WWW)'
-order: 5
+section: 'Korzystanie z Outlook Web Application (OWA)'
+order: 04
 ---
 
 **Ostatnia aktualizacja: 07-04-2020**

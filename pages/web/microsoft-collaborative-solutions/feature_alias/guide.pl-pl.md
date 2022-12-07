@@ -3,7 +3,7 @@ title: Dodaj alias do konta e-mail
 slug: email-alias
 excerpt: Dowiedz się, jak dodać alias do konta e-mail w Panelu klienta OVHcloud
 section: Funkcje kont Exchange
-order: 1
+order: 01
 ---
 
 > [!primary]

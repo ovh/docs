@@ -2,8 +2,8 @@
 title: 'Kontaktgruppen erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie Mailinglisten in Exchange verwalten'
 slug: exchange_20132016_verwendung_der_gruppen_mailinglisten
-legacy_guide_number: g1258
-section: 'Outlook Web App (OWA)'
+section: Exchange Account-Funktionen
+order: 02
 ---
 
 **Letzte Aktualisierung am 26.02.2020**

@@ -5,7 +5,7 @@ excerpt: 'Decouvrez comment configurer des adresses IPv6 sur notre infrastructur
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 26/08/2022**
+**Dernière mise à jour le 05/12/2022**
 
 ## Objectif
 
@@ -22,6 +22,7 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 ## Prérequis
 
 - Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud.
+- Disposer d'une (ou plusieurs) [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/) configurée avec une vMAC, si vous souhaitez configurer plusieurs adresses IPv6.
 - Avoir toutes les informations relatives à votre IPv6 (préfix, passerelle...).
 - Avoir des connaissances de base en [SSH](../ssh-introduction/) et en réseau.
 

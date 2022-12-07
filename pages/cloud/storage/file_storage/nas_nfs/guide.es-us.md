@@ -10,7 +10,7 @@ order: 03
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 08/11/2022**
+**Última actualización: 06/12/2022**
 
 ## Objetivo
 
@@ -63,13 +63,13 @@ ubuntu@server:~$ sudo apt install nfs-common
 A continuación, utilice el siguiente comando para montarlo: 
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Ejemplo:**
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs 10.1.1:zpool-123456/partition01 /mount/ha_nas
+ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Ahora puede acceder a la partición montada en la carpeta especificada.
@@ -98,13 +98,13 @@ centos@server:~$ sudo systemctl restart rpcbind
 Para montar la partición, utilice el siguiente comando:
 
 ```bash
-centos@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+centos@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Ejemplo:**
 
 ```bash
-centos@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+centos@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Ahora puede acceder a la partición montada en la carpeta especificada.
@@ -133,7 +133,7 @@ fedora@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
 **Ejemplo:**
 
 ```bash
-fedora@server:~$ sudo mount -t nfs 10.1.1:zpool-123456/partition01 /mount/ha_nas
+fedora@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 Ahora puede acceder a la partición montada en la carpeta especificada.

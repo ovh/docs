@@ -1,7 +1,8 @@
 ---
 title: 'Konfiguration von Exchange auf macOS Mail'
 slug: exchange-automatische-konfiguration-auf-mac-mail
-section: 'Konfiguration des Exchange E-Mail-Clients'
+section: Konfiguration auf computer
+order: 06
 ---
 
 **Stand 28.12.2021**

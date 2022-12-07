@@ -109,7 +109,7 @@ Estas opciones se agrupan en un área de cliente de OVHcloud. Haga clic en su no
 A continuación le ofrecemos algunas guías adicionales que le ayudarán en sus primeros pasos:
 
 [Conectarse al área de cliente de OVHcloud](https://docs.ovh.com/us/es/customer/conectarse-area-de-cliente-ovhcloud/).<br>
-[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/).<br>
+[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/).<br>
 [Proteger mi cuenta de OVHcloud y gestionar mis datos personales](https://docs.ovh.com/us/es/customer/todo-sobre-el-id-de-cliente/).<br>
 [Gestionar los contactos de los servicios](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/).<br>
 [Crear claves SSH](https://docs.ovh.com/us/es/dedicated/crear-claves-ssh-dedicadas/).<br>

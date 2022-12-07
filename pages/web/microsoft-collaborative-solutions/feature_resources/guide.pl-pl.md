@@ -2,8 +2,8 @@
 title: 'Korzystanie z kont zasobów'
 excerpt: 'Przewodnik opisuje, w jaki sposób korzystać z kont zasobów.'
 slug: exchange_20132016_korzystanie_z_kont_zasobow
-section: 'Funkcjonalności i współdzielenie Exchange'
-legacy_guide_number: g1325
+section: 'Funkcje kont Exchange'
+order: 05
 ---
 
 **Ostatnia aktualizacja z dnia 22 grudnia 2020 r**

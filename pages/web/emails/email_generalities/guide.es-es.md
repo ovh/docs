@@ -56,7 +56,7 @@ A continuación, introduzca la información solicitada:
 |Nombre|Introduzca un nombre.|
 |Apellidos|Introduzca los apellidos.|
 |Nombre mostrado|Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.|
-|Contraseña|[Establezca una contraseña](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/) y confírmela introduciéndola de nuevo. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.|
+|Contraseña|[Establezca una contraseña](https://docs.ovh.com/es/customer/gestionar-su-contrasena/) y confírmela introduciéndola de nuevo. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.|
 
 Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action} y compruebe que la información indicada en el resumen es correcta. Si lo es, haga clic en `Aceptar`{.action}. Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas a su disposición.
 

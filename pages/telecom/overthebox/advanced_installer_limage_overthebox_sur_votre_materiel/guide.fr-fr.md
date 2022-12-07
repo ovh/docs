@@ -63,7 +63,7 @@ Vous obtiendrez plusieurs rubriques /dev/disk**X** (où **X** est remplacé par 
 
 Le dossier correspondant à votre clé doit être le dernier et être désigné ainsi : « /dev/disk **X**  (external, physical) ».
 
-![overthebox](images/images/manual_install-method1-2.png){.thumbnail}
+![overthebox](images/manual_install-method1-2.png){.thumbnail}
 
 Maintenant que vous connaissez l'emplacement de votre clé USB, vous pouvez flasher cette dernière.
 

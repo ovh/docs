@@ -2,8 +2,8 @@
 title: "Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre"
 slug: migration-email-platform
 excerpt: "Découvrez comment migrer les adresses e-mail d'une plateforme Exchange vers une autre plateforme Exchange ou MX Plan"
-section: Migration d’un compte Exchange
-order: 2
+section: Migration de comptes
+order: 01
 ---
 
 **Dernière mise à jour le 21/10/2020**

@@ -3,7 +3,7 @@ title: 'Getting started with the Hosted Exchange service'
 excerpt: 'Get started with a Hosted Exchange service'
 slug: exchange_20132016_configuring_the_solution_for_the_first_time
 section: 'Getting started with Exchange'
-order: 1
+order: 01
 ---
 
 **Last updated 19th January 2018**

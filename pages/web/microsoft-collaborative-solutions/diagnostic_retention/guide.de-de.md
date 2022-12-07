@@ -3,7 +3,7 @@ title: Die aus Ihrem E-Mail-Account gelöschten Elemente wiederherstellen
 slug: email-retention
 excerpt: Erfahren Sie hier, wie Sie gelöschte Elemente Ihres E-Mail-Accounts über Webmail (OWA) wiederherstellen
 section: Troubleshooting
-order: 2
+order: 02
 ---
 
 > [!primary]

@@ -1,10 +1,9 @@
 ---
 title: 'Ativação e gestão do seu SharePoint OVHcloud'
 slug: ativacao_e_gestao_do_seu_sharepoint_ovh
-legacy_guide_number: 2249
 excerpt: 'Saiba como subscrever e configurar uma plataforma SharePoint.'
-section: Sharepoint
-order: 1
+section: SharePoint
+order: 01
 ---
 
 **Última atualização: 30/04/2020**

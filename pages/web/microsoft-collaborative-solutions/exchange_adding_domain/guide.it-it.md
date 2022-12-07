@@ -2,8 +2,8 @@
 title: 'Aggiungi un dominio su una piattaforma email'
 slug: aggiungere-dominio-su-exchange
 excerpt: Come aggiungere un dominio alla piattaforma Exchange o Email Pro
-section: 'Configurazione dell’offerta Exchange'
-order: 4
+section: 'Iniziare a utilizzare Exchange'
+order: 04
 ---
 
 > [!primary]

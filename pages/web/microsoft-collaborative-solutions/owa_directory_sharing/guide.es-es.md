@@ -1,10 +1,9 @@
 ---
 title: 'Compartir carpetas en OWA'
 slug: exchange_2016_compartir_una_carpeta_con_el_webmail_owa
-legacy_guide_number: g1929
 excerpt: 'Cómo compartir carpetas entre cuentas Exchange'
-section: 'Outlook Web Application (OWA)'
-order: 5
+section: 'Uso de Outlook Web Application (OWA)'
+order: 04
 ---
 
 

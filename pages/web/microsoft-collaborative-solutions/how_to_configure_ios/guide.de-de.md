@@ -4,8 +4,8 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihren Exchange Account via Mail App auf ein
 slug: exchange_20132016_automatische_konfiguration_in_ios_iphone_-_ipad
 routes:
     canonical: 'https://docs.ovh.com/de/emails/mail-konfiguration-iphone-ios-91/'
-legacy_guide_number: g1272
-section: Konfiguration von Exchange auf kompatiblen Smartphones/Tablets
+section: Konfiguration auf Smartphone/Tablet
+order: 03
 ---
 
 > [!primary]

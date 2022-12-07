@@ -3,7 +3,7 @@ title: Przywróć usunięte elementy konta e-mail
 slug: email-retention
 excerpt: Dowiedz się, jak przywrócić usunięte elementy z konta e-mail poprzez Webmail (OWA)
 section: 'Diagnostyka Exchange'
-order: 2
+order: 02
 ---
 
 > [!primary]

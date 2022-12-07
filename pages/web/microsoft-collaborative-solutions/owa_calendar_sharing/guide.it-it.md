@@ -2,8 +2,8 @@
 title: 'Condividi un calendario con la Webmail OWA'
 excerpt: ''
 slug: exchange_2016_condividi_un_calendario_con_la_webmail_owa
-legacy_guide_number: g1923
-section: 'Outlook Web Application (OWA)'
+section: 'Utilizzo di Outlook Web App (OWA)'
+order: 03
 ---
 
 **Ultimo aggiornamento: 19/02/2020**

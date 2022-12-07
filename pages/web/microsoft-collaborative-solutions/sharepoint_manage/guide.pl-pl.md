@@ -2,8 +2,8 @@
 title: Aktywacja i zarządzanie usługą SharePoint OVHcloud
 slug: aktywacja-kont-email-zawartych-w-hostingu
 excerpt: Dowiedz się, jak zamówić i skonfigurować usługę SharePoint
-section: Pierwsze kroki
-order: 3
+section: SharePoint
+order: 01
 ---
 
 **Ostatnia aktualizacja z dnia 11-08-2020**

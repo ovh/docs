@@ -2,8 +2,8 @@
 title: 'Exchange: Pierwsze kroki z serwerem Private Exchange'
 excerpt: 'Pierwsza konfiguracja serwera Private Exchange'
 slug: exchange_pierwsze_kroki_na_serwerze_private
-section: 'Konfiguracja usługi Exchange'
-legacy_guide_number: g2074
+section: 'Pierwsze kroki z Exchange'
+order: 02
 ---
 
 **Ostatnia aktualizacja z dnia 25-03-2020**

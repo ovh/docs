@@ -4,8 +4,8 @@ slug: configurazione-exchange-thunderbird-mac
 routes:
     canonical: 'https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/'
 excerpt: Come configurare il tuo indirizzo Exchange su Thunderbird per macOS
-section: 'Configurazione di un client di posta elettronica Exchange'
-order: 6
+section: 'Configurazione al computer'
+order: 05
 ---
 
 > [!primary]

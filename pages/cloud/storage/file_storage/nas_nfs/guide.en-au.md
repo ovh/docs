@@ -6,7 +6,7 @@ section: HA-NAS
 order: 03
 ---
 
-**Last updated 16th September 2022**
+**Last updated 6th December 2022**
 
 ## Objective
 

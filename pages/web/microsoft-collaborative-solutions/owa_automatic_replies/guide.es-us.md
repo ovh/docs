@@ -2,9 +2,8 @@
 title: 'Crear respuestas automáticas en OWA'
 excerpt: 'Cómo configurar respuestas automáticas en OWA'
 slug: exchange_2016_crear_un_contestador_con_el_webmail_owa
-section: 'Outlook Web Application (OWA)'
-legacy_guide_number: g1922
-order: 3
+section: 'Uso de Outlook Web Application (OWA)'
+order: 02
 ---
 
 **Última actualización: 28/07/2020**

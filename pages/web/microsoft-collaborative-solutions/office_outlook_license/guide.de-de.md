@@ -1,10 +1,9 @@
 ---
 title: Eine Outlook-Lizenz für Exchange beziehen
 slug: exchange-outlook-lizenz
-legacy_guide_number: 1718
 excerpt: Erfahren Sie hier, wie Sie eine Outlook-Lizenz für Ihr OVHcloud Exchange bestellen und aktivieren
 section: Office
-order: 1
+order: 01
 ---
 
 > [!primary]

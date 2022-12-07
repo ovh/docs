@@ -3,7 +3,7 @@ title: Adding an alias to your email account
 slug: email-alias
 excerpt: Find out how to add an alias address to an email account in the OVHcloud Control Panel
 section: Exchange account features
-order: 1
+order: 01
 ---
 
 **Last updated 20th September 2021**

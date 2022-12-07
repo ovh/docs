@@ -3,7 +3,7 @@ title: Managing a group of Microsoft 365 OVHcloud licences
 slug: manage-office-365-csp1
 excerpt: Find out how to subscribe to a Microsoft 365 licence and manage it in the OVHcloud Control Panel
 section: Office
-order: 2
+order: 02
 ---
 
 **Last updated 24th February 2022**

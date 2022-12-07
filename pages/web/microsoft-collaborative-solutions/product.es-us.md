@@ -1,6 +1,6 @@
 ---
 title: Soluciones colaborativas Microsoft
 slug: microsoft-collaborative-solutions
-sections: Configuración de Exchange, Configuración del cliente de correo Exchange, Migración de una cuentaFuncionalidades de Exchange, Outlook Web Application (OWA), Office 365, Sharepoint, Miscelánea
+sections: Primeros pasos con Exchange, Configuración en el ordenador, Configuración en smartphone/tablet, Migración de una cuenta, Funcionalidades de las cuentas Exchange, Uso de Outlook Web Application (OWA), Diagnóstico Exchange, Office, SharePoint
 order: 07
 ---

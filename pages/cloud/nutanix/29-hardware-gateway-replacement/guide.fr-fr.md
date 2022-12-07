@@ -6,9 +6,9 @@ section: Réseau et sécurité
 order: 10
 ---
 
-**Dernière mise à jour le 29/11/2022**
+**Dernière mise à jour le 05/12/2022**
 
-## Présentation
+## Objectif
 
 Une machine virtuelle **OVHgateway** est installée lors d'un déploiement d'un cluster **Nutanix on OVHcloud**. Cette machine virtuelle sert de passerelle Internet sortante pour le cluster. Le débit maximal est de 1 GB/s.
 
@@ -147,6 +147,7 @@ ssh ubuntu@dedicated-server-public-ip-address
 ```
 
 Saisissez cette commande pour faire apparaître les cartes qui ne sont pas connectées.
+
 ```bash
 ip a | grep -C1 DOWN
 ```

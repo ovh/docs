@@ -3,6 +3,7 @@ title: "Règles de boîte de réception depuis l'interface OWA"
 slug: regles-boite-de-reception-owa
 excerpt: "Comment créer des filtres et des redirections e-mails depuis l'interface OWA"
 section: "Utilisation d'Outlook Web Application (OWA)"
+order: 05
 ---
 
 **Dernière mise à jour le 11 mars 2020**

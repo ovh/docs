@@ -3,7 +3,7 @@ title: Restaurar os elementos eliminados da sua conta de e-mail
 slug: email-retention
 excerpt: Saiba como restaurar os elementos eliminados a partir da sua conta de e-mail através do webmail (OWA)
 section: 'Diagnóstico Exchange'
-order: 2
+order: 02
 ---
 
 > [!primary]

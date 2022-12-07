@@ -2,8 +2,8 @@
 title: 'Berechtigungen für einen E-Mail Account übertragen'
 excerpt: 'Hier erfahren Sie, wie Sie einem anderen Account Berechtigungen für Ihren E-Mail Account zuweisen.'
 slug: exchange_2013_send_as_versand_als
-section: 'E-Mail Account-Funktionen'
-order: 3
+section: Exchange Account-Funktionen
+order: 03
 ---
 
 **Stand 24.10.2020**
