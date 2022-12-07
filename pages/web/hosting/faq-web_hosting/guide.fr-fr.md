@@ -46,14 +46,9 @@ Consultez le guide « [Partager son hébergement entre plusieurs sites](https://
 
 ### Comment changer de formule d'hébergement ?
 
-> [!primary]
->
-> Afin de commander la formule d'hébergement Web la plus adaptée à vos besoins, consultez [cette page](https://www.ovhcloud.com/fr/web-hosting/).
->
+Afin de commander la formule d'hébergement Web la plus adaptée à vos besoins, vous pouvez consultez nos offres sur [cette page](https://www.ovhcloud.com/fr/web-hosting/).
 
-Pour changer d'offre d'[hébergement mutualisé](https://www.ovhcloud.com/fr/web-hosting/), dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}. Choisissez l'hébergement concerné puis, dans la partie `Abonnement`, cliquez sur le bouton `...`{.action} dans la rubrique  `Offre` puis sur `Changer d'offre`{.action}.
-
-Sélectionnez ensuite votre nouvelle formule d'hébergement et la durée de votre nouvel abonnement. Prenez connaissance des contrats correspondants puis cliquez sur `Envoyer`{.action}.
+Une fois votre choix fait, suivez les instructions de notre documentation [« Faire évoluer son offre d’hébergement web »](https://docs.ovh.com/fr/hosting/how_to_change_web_hosting_offer/).
 
 > [!warning]
 >
