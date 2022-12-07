@@ -1,7 +1,7 @@
 ---
-title: Remplacement de l'OVHgateway
+title: Remplacement de la passerelle OVHgateway
 slug: software-gateway-replacement
-excerpt: "Remplacement de l'OVHgateway par une autre machine virtuelle administrable"
+excerpt: "Découvrez comment remplacer la passerelle OVHgateway par une autre machine virtuelle administrable"
 section: "Réseau et sécurité"
 order: 11
 ---
@@ -10,7 +10,7 @@ order: 11
 
 ## Objectif
 
-Ce guide vous explique comment remplacer la passerelle Internet sortante (OVHgateway) par un autre système d'exploitation réseau qui vous donnera en plus de l'accès Internet la possibilité de configurer NAT et VPN (Ipsec ou SSL VPN).
+Ce guide vous explique comment remplacer la passerelle Internet sortante (OVHgateway) par un autre système d'exploitation réseau qui vous donnera, en plus de l'accès Internet, la possibilité de configurer NAT et VPN (Ipsec ou SSL VPN).
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -20,24 +20,24 @@ Ce guide vous explique comment remplacer la passerelle Internet sortante (OVHgat
 
 ## Prérequis
 
-- Disposer d'un cluster Nutanix fournis par OVHcloud.
+- Disposer d'un cluster Nutanix fourni par OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur votre cluster via Prism Central.
 
 ## En pratique
 
-La passerelle OVHGateway utilise par défaut deux carte réseaux :
+La passerelle OVHGateway utilise par défaut deux cartes réseau :
 
-
-- Une sur le VLAN 0 (base)  connectée à Internet avec une adresse IP supplémentaire OVHcloud.
-- Une sur le VLAN 1 (infra) connectée au réseau local d'administration avec dans cet exemple une plage d'adresses IP en 192.168.10.0/24.
+- Une sur le VLAN 0 (base), connectée à Internet avec une adresse IP supplémentaire OVHcloud.
+- Une sur le VLAN 1 (infra), connectée au réseau local d'administration avec dans cet exemple une plage d'adresses IP en 192.168.10.0/24.
 
 Dans notre guide, nous allons remplacer cette passerelle par le système d'exploitation réseau **pfSense Community edition** sans support logiciel.
 
 > [!primary]
-> Il est tout fait possible de s'appuyer sur ce guide pour installer d'autres systèmes d'exploitations réseaux comptatibles avec AHV.
+> Il est tout fait possible de s'appuyer sur ce guide pour installer d'autres systèmes d'exploitations réseau compatibles avec AHV.
 
 <a name="downloadsources"></a>
+
 ### Téléchargement des sources pour l'installation de pfSense
 
 Téléchargez l'image ISO de l'installation de **pfSense** à partir de ce lien : [Téléchargement de pfSense](https://www.pfsense.org/download/){.external}.
@@ -45,6 +45,7 @@ Téléchargez l'image ISO de l'installation de **pfSense** à partir de ce lien 
 A l'aide de [cette documentation](https://docs.ovh.com/fr/nutanix/image-import/), ajoutez l'image **ISO pfSense** dans votre cluster Nutanix.
 
 <a name="createvmpfsense"></a>
+
 ### Création de la machine virtuelle **GW-PFSENSE**
 
 Créez une machine virtuelle avec ces paramètres :
@@ -61,6 +62,7 @@ Vous pouvez vous aider de [notre guide sur la gestion des machines virtuelles](h
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
 <a name="shutdownovhgateway"></a>
+
 ### Arrêt de la machine virtuelle **OVHGateway**
 
 Pour éviter des doublons d'adresses IP sur le réseau, il faut arrêter la machine virtuelle **OVHgateway** avant de démarrer la nouvelle machine virtuelle sous **pfSense**.
@@ -77,11 +79,12 @@ Cliquez sur la machine virtuelle `OVHgateway`{.action}.
 
 ![Arrêt OVHGateway 03](images/01-stop-ovhgateway03.png){.thumbnail}
 
-Depuis le menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
+Depuis le menu `More`{.action} en haut, cliquez sur `Soft Shutdown`{.action}.
 
 ![Arrêt OVHGateway 04](images/01-stop-ovhgateway04.png){.thumbnail}
 
 <a name="getpublicaddress"></a>
+
 ### Récupération de l'adresse publique sur l'espace client OVHcloud 
 
 Récupérez les informations concernant les paramètres réseau de la passerelle OVHcloud.
@@ -95,7 +98,7 @@ Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=go
 Lors de l'installation, nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
 ```console
-XX.XX.XX.N      Adresse de réseau réservée qui apparait sur le site client OVHcloud
+XX.XX.XX.N      Adresse de réseau réservée qui apparaît sur le site client OVHcloud
 XX.XX.XX.N+1    Adresse IP qui doit être affectée à l'interface WAN de la machine virtuelle GW-PFSENSE
 XX.XX.XX.N+2    Adresse à utiliser en tant que passerelle sur l'interface WAN de la machine virtuelle GW-PFSENSE
 XX.XX.XX.N+3    Adresse IP de broadcast réservée
@@ -107,13 +110,14 @@ Par exemple, si l'adresse **IPFO** affichée sur le site client est 198.51.100.0
 - **198.51.100.2** pour la passerelle sur l'interface **WAN**.
 
 <a name="poweronvmpfsense"></a>
-### Démarrage de la machine virtuelle **GW-PFSENSE**
+
+### Démarrage de la machine virtuelle GW-PFSENSE
 
 Revenez dans la gestion des machines virtuelles sur **Prism Central** et cliquez sur `GW-PFSENSE`{.action}.
 
 ![Start GATEWAY pfsense](images/02-start-gatewaypfsense01.png){.thumbnail}
 
-Via le menu `More`, cliquez sur `Power On`{.action}.
+Via le menu `More`{.action}, cliquez sur `Power On`{.action}.
 
 ![Start GATEWAY pfsense](images/02-start-gatewaypfsense02.png){.thumbnail}
 
@@ -122,7 +126,8 @@ Cliquez sur `Launch console`{.action}.
 ![Start GATEWAY pfsense](images/02-start-gatewaypfsense03.png){.thumbnail}
 
 <a name="pfsenseinstall"></a>
-### Installation de **pfSense**
+
+### Installation de pfSense
 
 Prenez connaissance des informations liées à la licence pfSense et appuyez sur la touche `Entrée`{.action} pour les accepter.
 
@@ -165,11 +170,12 @@ Sélectionnez `Reboot` et appuyez sur la touche `Entrée`{.action}.
 ![pfsense Installation 10](images/03-install-pfsense10.png){.thumbnail}
 
 <a name="pfsenseremovecdrom"></a>
+
 ### Ejection du CDROM pfSense de la machine virtuelle GW-PFSENSE
 
-Depuis **Prism central**, revenez sur la gestion de la machine virtuelle **GW-PFSENSE** et effectuez les opérations suivantes pour éjecter le **CDROM**.
+Depuis **Prism central**, revenez sur la gestion de la machine virtuelle **GW-PFSENSE** et effectuez les opérations suivantes pour éjecter le CDROM.
 
-Cliquez sur `Soft Shutdown`{.action} via le menu `More` de la machine virtuelle **GW-PFSENSE** pour arrêter cette machine virtuelle.
+Cliquez sur `Soft Shutdown`{.action} via le menu `More`{.action} de la machine virtuelle **GW-PFSENSE** pour arrêter cette machine virtuelle.
 
 ![Remove CDROM 01](images/03-remove-cdrom01.png){.thumbnail}
 
@@ -197,27 +203,28 @@ CLiquez sur `Save`{.action}.
 
 ![Remove CDROM 07](images/03-remove-cdrom07.png){.thumbnail}
 
-Cliquez sur `Power On`{.action} dans le menu `More`.
+Cliquez sur `Power On`{.action} dans le menu `More`{.action}.
 
 ![Remove CDROM 08](images/03-remove-cdrom08.png){.thumbnail}
 
-Cliquez sur `Launch Console`{.action} pour continuer l'installation après le démarrage. 
+Cliquez sur `Launch Console`{.action} pour continuer l'installation après le démarrage.
 
 ![Remove CDROM 09](images/03-remove-cdrom09.png){.thumbnail}
 
 <a name="configureippfsense"></a>
-### Configuration des adresses IP de pfSense au travers de la console
+
+### Configuration des adresses IP de pfSense via la console
 
 Nous allons configurer les adresses IP de passerelle **pfSense** comme ceci :
 
-- Interface WAN : Utilisez cette partie du guide « [Récupération de l'adresse publique sur l'espace client OVHcloud](#getpublicaddress) » pour affecter l'adresse IP et la passerelle sur cette interface.
-- Interface LAN: 192.168.10.254/24 qui correspond à l'adresse de passerelle du réseau privé du cluster Nutanix suivi du masque de sous réseau. 
+- Interface WAN : utilisez cette partie du guide « [Récupération de l'adresse publique sur l'espace client OVHcloud](#getpublicaddress) » pour affecter l'adresse IP et la passerelle sur cette interface.
+- Interface LAN: 192.168.10.254/24 qui correspond à l'adresse de passerelle du réseau privé du cluster Nutanix, suivi du masque de sous-réseau. 
 
 Acceptez la licence en appuyant sur la touche `Entrée`{.action}.
 
 ![Configure pfsense 01](images/04-configureip-pfsense01.png){.thumbnail}
 
-Saisissez `n` et appuyez sur la touche `Entrée`{.action} lorsque l'on vous demande s'il faut des **VLAN**.
+Lorsque l'on vous demande s'il faut des **VLAN**, saisissez `n` et appuyez sur la touche `Entrée`{.action}.
 
 ![Configure pfsense 02](images/04-configureip-pfsense02.png){.thumbnail}
 
@@ -241,7 +248,7 @@ Sélectionnez l'interface **WAN** en saisissant `1` et appuyez sur la touche `En
 
 ![Configure pfsense 07](images/04-configureip-pfsense07.png){.thumbnail}
 
-Saisissez `n` et appuyez sur la touche `Entrée`{.action} à la demande de la configuration de l'adresse par DHCP.
+À la demande de la configuration de l'adresse par DHCP, saisissez `n` et appuyez sur la touche `Entrée`{.action}.
 
 ![Configure pfsense 08](images/04-configureip-pfsense08.png){.thumbnail}
 
@@ -251,7 +258,7 @@ Saisissez ensuite **l'adresse IP de la passerelle publique** et appuyez sur la t
 
 ![Configure pfsense 09](images/04-configureip-pfsense09.png){.thumbnail}
 
-Répondez `n` et appuyez sur la touche `Entrée`{.action} lorsque l'assistant vous propose la configuration de l'**IPv6 address WAN interface via DHCP6**.
+Lorsque l'assistant vous propose la configuration de l'**IPv6 address WAN interface via DHCP6**, répondez `n` et appuyez sur la touche `Entrée`{.action}.
 
 ![Configure pfsense 10](images/04-configureip-pfsense10.png){.thumbnail}
 
@@ -298,9 +305,10 @@ Appuyez sur la touche `Entrée`{.action} pour terminer la configuration en ligne
 ![Configure pfsense 20](images/04-configureip-pfsense20.png){.thumbnail}
 
 <a name="configurepfsenseoptions"></a>
-### Configuration de certaines options au travers de l'interface WEB
 
-Connectez-vous sur la console Web de pfSense avec cette URL `https://192.168.10.254` à partir d'une machine virtuelle du cluster se trouvant sur le réseau local **AHV : infra**.
+### Configuration de certaines options au travers de l'interface Web
+
+Connectez-vous sur la console Web de pfSense avec cette URL `https://192.168.10.254`, à partir d'une machine virtuelle du cluster se trouvant sur le réseau local **AHV : infra**.
 
 Saisissez ces informations :
 
@@ -312,7 +320,8 @@ Cliquez ensuite sur `SIGN IN`{.action}.
 ![WEB Configure pfsense 01](images/05-configure-pfsense01.png){.thumbnail}
 
 <a name="changepassword"></a>
-#### Changement du mot de passe par défaut de pfSense**
+
+#### Changement du mot de passe par défaut de pfSense
 
 Dans le menu `System`{.action}, choisissez `User Manager`{.action}.
 
@@ -322,7 +331,7 @@ Cliquez sur l'icône en forme de `Stylo`{.action}.
 
 ![Change Password 02](images/06-change-password02.png){.thumbnail}
 
-Saisissez et confirmez le mot de passe  à droite de `Password`.
+Saisissez et confirmez le mot de passe à droite de `Password`.
 
 ![Change Password 03](images/06-change-password03.png){.thumbnail}
 
@@ -331,7 +340,8 @@ Validez les changements en cliquant sur `Save`{.action} en bas du menu.
 ![Change Password 03](images/06-change-password04.png){.thumbnail}.
 
 <a name="addadminrule"></a>
-#### Ajout d'une règle pour autoriser l'administration à distance à partir d'une adresse publique**
+
+#### Ajout d'une règle pour autoriser l'administration à distance à partir d'une adresse publique
 
 Allez dans le menu `Firewall`{.action} et choisissez `Rules`{.action}.
 
@@ -366,7 +376,7 @@ Cliquez sur `Apply Changes`{.action} pour activer la règle.
 
 ![Authorisation admin from public ADDRESS 05](images/07-authorize-admin-from-publicaddress05.png){.thumbnail}
 
-L'interface d'administration de **pfSense** est alors accessible depuis Internet, uniquement à partir du réseau autorisé en HTTPS, ici `https://198.51.100.1` .
+L'interface d'administration de **pfSense** est alors accessible depuis Internet, uniquement à partir du réseau autorisé en HTTPS, ici `https://198.51.100.1`.
 
 ### Configuration d'un accès Internet sur un nouveau VLAN
 
@@ -374,19 +384,18 @@ L'interface d'administration de **pfSense** est alors accessible depuis Internet
 
 Connectez-vous à Prism Central pour effectuer ces modifications :
 
-Aidez-vous de ce guide pour créer un nouveau VLAN sur votre cluster Nutanix [Isoler les machines de gestion de la production]
-(https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/) avec ces paramètres :
+Aidez-vous du guide « [Isoler les machines de gestion de la production](https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/) » pour créer un nouveau VLAN sur votre cluster Nutanix avec ces paramètres :
 
 - **Nom du VLAN** : `Production`
 - **Numéro du VLAN** : `2`
 
-Votre nouveau réseau doit apparaitre dans **Subnets**.
+Votre nouveau réseau doit apparaître dans **Subnets**.
 
 ![08 add vlan production 01](images/08-add-vlan-production01.png){.thumbnail}
 
-Maintenant que le nouveau sous-réseau est créé nous allons rajouter une carte dans la configuration de votre machine virtuelle **GW-PFSENSE**.
+Maintenant que le nouveau sous-réseau est créé, nous allons rajouter une carte dans la configuration de votre machine virtuelle **GW-PFSENSE**.
 
-Au travers de la gestion des machines virtuelles sélectionnez votre machine virtuelle **GW-PFSENSE**, rendez-vous dans le menu `Actions`{.action} et choisissez `Update`{.action}.
+Via@ la gestion des machines virtuelles, sélectionnez votre machine virtuelle **GW-PFSENSE**, rendez-vous dans le menu `Actions`{.action} et choisissez `Update`{.action}.
 
 ![09 update-vm-pfsense 01](images/09-update-vm-pfsense01.png){.thumbnail}
 
@@ -398,7 +407,7 @@ Cliquez sur `Attach to Subnet`{.action}.
 
 ![09 update-vm-pfsense 03](images/09-update-vm-pfsense03.png){.thumbnail}
 
-Choisissez le sous réseaux `Production`{.action} et cliquez sur `Save`{.action}.
+Choisissez le sous-réseau `Production`{.action} et cliquez sur `Save`{.action}.
 
 ![09 update-vm-pfsense 04](images/09-update-vm-pfsense04.png){.thumbnail}
 
@@ -416,7 +425,7 @@ Cliquez sur `Save`{.action}.
 
 #### Activation et configuration de la nouvelle carte réseau sur pfSense
 
-Connectez-vous en https sur l'interface pfSense avec l'adresse publique par exemple **https://198.51.100.1** sur votre interface d'administration pfSense et suivez ces instructions :
+Connectez-vous en https sur l'interface d'administration pfSense avec l'adresse publique, par exemple **https://198.51.100.1** et suivez les instructions ci-dessous.
 
 Allez dans le menu `Interfaces`{.action} et cliquez sur `Assignments`{.action}.
 
@@ -430,7 +439,7 @@ Cliquez sur `Save`{.action}.
 
 ![10 addinterface-in-pfsense 03](images/10-addinterface-in-pfsense03.png){.thumbnail}
 
-Au travers du menu `Interfaces`{.action} et cliquez sur `OPT1`{.action}
+Dans le menu `Interfaces`{.action}, cliquez sur `OPT1`{.action}
 
 ![11 assign ip to new interface 01](images/11-assign-ip-to-new-interface01.png){.thumbnail}
 
@@ -440,7 +449,7 @@ Cochez la case **Enable Interfaces** et modifiez ces paramètres :
 * **Description** : `VLAN2`
 * **IPv4 Address** : `192.168.2.254/24`
 
-Ensuite cliquez sur `Save`{.action}.
+Cliquez ensuite sur `Save`{.action}.
 
 ![11 assign ip to new interface 02](images/11-assign-ip-to-new-interface02.png){.thumbnail}
 
@@ -452,7 +461,7 @@ Rendez-vous dans le menu `Firewall` et cliquez sur `Rules`{.action}.
 
 ![12 add rule for new card 01](images/12-add-rule-for-new-card01.png){.thumbnail}
 
-Allez dans l'onglet `VLAN2`{.action} et cliquez sur le bouton le `Add`{.action} le plus à gauche.
+Allez dans l'onglet `VLAN2`{.action} et cliquez sur le bouton `Add`{.action} le plus à gauche.
 
 ![12 add rule for new card 02](images/12-add-rule-for-new-card02.png){.thumbnail}
 
@@ -462,7 +471,7 @@ Changez ces valeurs :
 * **Source** : `VLAN2 net`
 * **Destination** : `any`
 
-Et cliquez sur `Save`{.action}.
+Cliquez sur `Save`{.action}.
 
 ![12 add rule for new card 03](images/12-add-rule-for-new-card03.png){.thumbnail}
 
@@ -473,6 +482,7 @@ Cliquez sur `Apply Changes`{.action}.
 Votre VLAN2 est maintenant connecté à Internet.
 
 <a name="gofurther"></a>
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
