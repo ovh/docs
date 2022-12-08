@@ -6,7 +6,7 @@ section: AI Deploy - Guides
 order: 01
 ---
 
-**Last updated 7th December, 2022.**
+**Last updated 8th December, 2022.**
 
 > [!primary]
 >
@@ -95,9 +95,9 @@ Attached storage allows you to work on several TB of data, while being persisten
 
 ### Features and known limits
 
-#### Authorized AI Deploy
+#### Permitted deployment
 
-AI Deploy authorize the deployment of your own Docker images or applications from the [OVHcloud catalog](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/).
+AI Deploy authorizes the deployment of your own Docker images or applications from the [OVHcloud catalog](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/).
 
 Docker images can be hosted in a public or private registry.
 
@@ -114,11 +114,12 @@ To benefit from high-availability, a minimum of two instances is required. In ca
 
 #### Rolling upgrade
 
-You can update your application's Docker image to offer an up-to-date version of your service. Updates are incremental, and will not result in any service disruptions. Your current configuration will also be retained, such as your HTTP endpoint and deployment strategy.
+You can update the Docker image of your application to provide an updated version of your service. Updates are incremental and will not cause any downtime. Your current configuration will also be preserved, such as your HTTP endpoint and deployment policy.
+There is no need to stop and restart the application for the image update to take effect.
 
 #### Network
 
-**Public networking** can be used for all of the offers.
+**Public networking** can be used for all the AI Tools.
 
 **Private networking (vRack)** is not supported.
 
@@ -126,14 +127,27 @@ You can update your application's Docker image to offer an up-to-date version of
 
 **Ingress and Egress traffic** are included in the service plans and not metered.
 
-#### Backups
-
-We do not back up your AI Deploy apps yet.
-
 #### Logs and metrics
 
-We do not provide logs yet.
-We do not provide metrics yet.
+##### **Logs**
+
+To check the logs of your app, you can do it via the `ovhai` CLI using the following command:
+
+```console
+ovhai app logs <app-id>
+```
+
+##### **Metrics**
+
+To observe the metrics of your app, you can do so with the `ovhai` CLI using the command above:
+
+```console
+ovhai app get <app-id>
+```
+
+You can then access your metrics through the `Monitoring Url`.
+
+You are also able to check it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in your app information by clicking on the button `Access dashboards`.
 
 #### Security
 
