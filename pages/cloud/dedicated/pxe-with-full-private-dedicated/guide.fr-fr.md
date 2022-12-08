@@ -38,7 +38,7 @@ Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *publics*, et ce
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
 Ce choix propose à votre infrastructure la meilleure isolation/protection possible pour votre service hébergé.<br>
 La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
-Par conséquent, un serveur isolé de par son réseau privé empéche le mecanisme de démarrage, à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers s'appuyent sur le réseau interne d'OVHcloud et ses services mutualisés.
+Par conséquent, un serveur isolé de par son réseau privé empêche le mecanisme de démarrage, à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers s'appuyent sur le réseau interne d'OVHcloud et ses services mutualisés.
 
 
 ### Présentation rapide d'un démarrage en Netboot
@@ -97,7 +97,7 @@ liste des composants intervenants lors du démarrage :
 
 ## En pratique
 
-### Deployer vos services DHCP, TFTP
+### Déployer vos services DHCP, TFTP
 
 * installation des packages pour les services DHCP/TFTP.
 * configuration basique pour chaque service.
@@ -115,15 +115,15 @@ liste des composants intervenants lors du démarrage :
 
 > [!primary]
 >
-> Après le démarrage des systèmes, et pour que les services DHCP et ceux optionels (DNS et NTP) soient pleinement fonctionnels, penser à déclarer/ajouter les régles dans le firewall local via l'interface réseau privée de la machine hébergeant les services.
+> Après le démarrage des systèmes, et pour que les services DHCP et ceux optionels (DNS et NTP) soient pleinement fonctionnels, penser à déclarer/ajouter les règles dans le firewall local via l'interface réseau privée de la machine hébergeant les services.
 >
 
 #### le service **DHCP**
 
 ci-dessous, un exemple de fichier de configuration pour votre service **DHCP**.<br>
-Selon votre distribution, l'arboresence peut être différente (dhcpd.conf).
+Selon votre distribution, l'arborescence peut être différente (dhcpd.conf).
 
-En régle générale, il suffit de:<br>
+En règle générale, il suffit de:<br>
 
 * déclarer une interface réseau pour l'écoute (en attente de requêtes).
 * préciser la version du protocol IP (v4 ou v6).
@@ -305,7 +305,7 @@ exit 1
 
 contenu du fichier `refind.conf` : <br>
 
-*Il s'agit d'intégrer les directives mimimun pour une bonne intégration au SI d'OVHcloud.*
+*Il s'agit d'intégrer les directives minimales pour une bonne intégration au SI d'OVHcloud.*
 ```bash
 
 timeout 1
