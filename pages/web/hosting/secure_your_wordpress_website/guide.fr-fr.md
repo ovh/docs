@@ -8,7 +8,7 @@ order:
 
 **Dernière mise à jour le 08/12/2022**
 
-# Sécurité Wordpress
+# Sécurité WordPress
 
 ## Objectif
 
