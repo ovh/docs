@@ -5,7 +5,7 @@ slug: kubernetes-plugins-software-versions-reserved-resources
 section: Technical resources
 ---
 
-**Last updated August 24<sup>th</sup>, 2022.**
+**Last updated December 8<sup>th</sup>, 2022.**
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
 
@@ -13,13 +13,12 @@ We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) &
 
 Currently, we support the following Kubernetes releases:
 
-* `1.18` (deprecated)
-* `1.19` (deprecated)
-* `1.20`
+* `1.20` (deprecated)
 * `1.21`
 * `1.22`
 * `1.23`
 * `1.24`
+* `1.25`
 
 If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](../upgrading-kubernetes-version/) to receive official support for your cluster.
 
@@ -32,15 +31,18 @@ We will closely follow the Kubernetes releases, and new versions will be regular
 The OS and Docker demon version on your nodes will be regularly updated. Current versions are:
 
 * OS: Ubuntu 18.04 LTS
-* Docker: 18.06.3
-* Containerd: 1.4.3
+* Docker: 19.03.15
 
 ## CRI (Container Runtime Interface)
 
-As recommended by Kubernetes, `docker` used as CRI is now deprecated since `1.20`, you can find more information [here](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/).
+Since `1.20`, we use `containerd` as the default CRI
 
-* If you create a new cluster or a node pool after February 19th 2021 (in any supported Kubernetes version) or if you upgrade an existing cluster to 1.20, `containerd` is used as the default CRI for each nodes. Docker remains installed in our managed OS to ensure compatibilty for specific use cases.
-* For node pools created before that date, existing node pools will still use `docker` as the CRI on all nodes until you update that cluster to `1.20` or above.
+* `1.20`: 1.5.11 (deprecated)
+* `1.21`: 1.5.11
+* `1.22`: 1.5.11
+* `1.23`: 1.6.10
+* `1.24`: 1.6.10
+* `1.25`: 1.6.10
 
 ## CNI (Cluster Network Interface)
 
@@ -48,13 +50,12 @@ The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.ext
 
 The versions installed depends on the Kubernetes version:
 
-* `1.18`: calico v3.10.3, flannel v0.11.0 (deprecated)
-* `1.19`: calico v3.10.3, flannel v0.11.0 (deprecated)
-* `1.20`: calico v3.10.3, flannel v0.11.0
-* `1.21`: calico v3.22.4, flannel v0.17.0
-* `1.22`: calico v3.22.4, flannel v0.17.0
-* `1.23`: calico v3.22.4, flannel v0.17.0
-* `1.24`: calico v3.23.3, flannel v0.17.0
+* `1.20`: calico v3.10.3, flannel v0.11.0 (deprecated)
+* `1.21`: calico v3.22.5, flannel v0.17.0
+* `1.22`: calico v3.22.5, flannel v0.17.0
+* `1.23`: calico v3.22.5, flannel v0.17.0
+* `1.24`: calico v3.23.5, flannel v0.17.0
+* `1.25`: calico v3.24.5, flannel v0.20.1
 
 ## CSI (Container Storage Interface)
 
@@ -62,25 +63,23 @@ The CSI plugin installed is [cinder](https://github.com/kubernetes/cloud-provide
 
 The versions depend on the Kubernetes cluster version:
 
-* `1.18`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v2.2.2, csi-snapshotter v3.0.3, snapshot-controller: v3.0.3, csi-resizer v1.4.0 (deprecated)
-* `1.19`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v2.2.2, csi-snapshotter v3.0.3, snapshot-controller: v3.0.3, csi-resizer v1.4.0 (deprecated)
-* `1.20`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
+* `1.20`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0 (deprecated)
 * `1.21`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
 * `1.22`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
 * `1.23`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
 * `1.24`: csi-plugin v1.21.0, csi-attacher v3.5.0, csi-provisioner v3.2.1, csi-snapshotter v6.0.1, snapshot-controller: v6.0.1, csi-resizer v1.5.0
+* `1.25`: csi-plugin v1.21.0, csi-attacher v3.5.0, csi-provisioner v3.2.1, csi-snapshotter v6.0.1, snapshot-controller: v6.0.1, csi-resizer v1.5.0
 
 ## Other components
 
 The versions are:
 
-* `1.18`: coredns v1.8.0, metrics-server v0.3.6 (deprecated)
-* `1.19`: coredns v1.9.3, metrics-server v0.6.1 (deprecated)
-* `1.20`: coredns v1.9.3, metrics-server v0.6.1
-* `1.21`: coredns v1.9.3, metrics-server v0.6.1
-* `1.22`: coredns v1.9.3, metrics-server v0.6.1
-* `1.23`: coredns v1.9.3, metrics-server v0.6.1
-* `1.24`: coredns v1.9.3, metrics-server v0.6.1
+* `1.20`: coredns v1.10.0, metrics-server v0.6.2 (deprecated)
+* `1.21`: coredns v1.10.0, metrics-server v0.6.2
+* `1.22`: coredns v1.10.0, metrics-server v0.6.2
+* `1.23`: coredns v1.10.0, metrics-server v0.6.2
+* `1.24`: coredns v1.10.0, metrics-server v0.6.2
+* `1.25`: coredns v1.10.0, metrics-server v0.6.2
 
 ## Enabled policies
 
@@ -96,7 +95,7 @@ Authorization modes:
 
 Feature gates:
 
-* `TTLAfterFinished`: Allow a TTL controller to clean up resources after they finish execution.
+* `TTLAfterFinished`: Allow a TTL controller to clean up resources after they finish execution. (enabled by default for `v1.23+`, parameter removed in `v1.25`)
 
 ### Kubelet
 
