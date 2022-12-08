@@ -37,7 +37,7 @@ La commande de datastores supplémentaires s'effectue, elle, dans le menu `Add S
 
 À noter qu'il existe une alternative pour accéder à ces menus. En effet, vous pouvez aussi effectuer un clic droit sur le datacenter ou le cluster de l'infrastructure, puis choisir `OVHcloud`{.action}.
 
-![Option OVH Dedicated Cloud](images/Plugin03.jpg){.thumbnail}
+![Option OVH Hosted Private Cloud](images/Plugin03.jpg){.thumbnail}
 
 ## Aller plus loin
 

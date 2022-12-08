@@ -68,7 +68,7 @@ Wykonaj następujące wywołanie API:
 
 Wpisz zmienne:
 
-- serviceName: numer referencyjny usługi Dedicated Cloud w formie `pcc-XX-XX-XX`.
+- serviceName: numer referencyjny usługi Hosted Private Cloud w formie `pcc-XX-XX-XX`.
 - taskId: jest to "numer referencyjny operacji" konserwacji podany w przesłanym do Ciebie e-mailu z powiadomieniem.
 - executionDate: wprowadź nową datę konserwacji w formacie `YYYY-MM-DDTHH:MM+01:SS` (np. 2023-01-02T08:00:00+01:00 dla konserwacji zaplanowanej na dzień 02/01/2023 o 0800 (UTC+1).
 

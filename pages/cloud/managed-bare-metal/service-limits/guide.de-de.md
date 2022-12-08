@@ -23,16 +23,16 @@ order: 2
 | Element | Beschreibung | Wert |
 |:-----:|:-----:|:----------:|
 | Maximale Anzahl pro Client-ID | Anzahl der vCenter oder Pakete pro Organisation | Kein Limit |
-| Anzahl der verbundenen Dedicated Cloud | vCenters Verbindung (Enhanced Link Mode) | 0 (nicht autorisiert) |
+| Anzahl der verbundenen Hosted Private Cloud | vCenters Verbindung (Enhanced Link Mode) | 0 (nicht autorisiert) |
 | Anzahl min. von Hosts pro PCC (SLA) | Anzahl der Hosts pro vCenter zur Aufrechterhaltung des Service Level Agreements | 2 |
-| Anzahl min. von Hosts pro Dedicated Cloud (ohne SLA) | Mindestanzahl der Hosts, die in vCenter ohne Service Level Agreement zu verwenden sind | 0 |
+| Anzahl min. von Hosts pro Hosted Private Cloud (ohne SLA) | Mindestanzahl der Hosts, die in vCenter ohne Service Level Agreement zu verwenden sind | 0 |
 | Maximale Anzahl von Hosts pro Cluster | Hosts je Cluster | 64 |
 | Maximale Anzahl Cluster pro vDc | Anzahl der Cluster im gleichen virtuellen Datacenter | Kein Limit |
-| Maximale Anzahl vDc pro Dedicated Cloud | Anzahl der virtuellen Rechenzentren (vDC), die Kunden pro vCenter hinzufügen können | 400 |
-| Maximale Anzahl von Hosts pro Dedicated Cloud | Host-Limits pro vCenter | Bereich **Hosts**: 340 hosts, 70 zpools<br>Bereich **Hybrid**: 241 hosts, 120 zpools<br>Bereich **BigDS**: 76 hosts, 205 zpools |
+| Maximale Anzahl vDc pro Hosted Private Cloud | Anzahl der virtuellen Rechenzentren (vDC), die Kunden pro vCenter hinzufügen können | 400 |
+| Maximale Anzahl von Hosts pro Hosted Private Cloud | Host-Limits pro vCenter | Bereich **Hosts**: 340 hosts, 70 zpools<br>Bereich **Hybrid**: 241 hosts, 120 zpools<br>Bereich **BigDS**: 76 hosts, 205 zpools |
 | Maximale Anzahl virtuellen Maschinen pro SDDC | VMs, die von demselben vCenter verwaltet werden | 25 000 |
 | Maximale Anzahl virtuellen Maschinen pro Host | VMs werden auf demselben physischen Host gehostet | 1024 |
-| Maximale Anzahl IP-Adressen nach Dedicated Cloud | Maximale Anzahl öffentlichen IP-Adressen, die über vCenter zugewiesen und nutzbar sind | 1 x /23 |
+| Maximale Anzahl IP-Adressen nach Hosted Private Cloud | Maximale Anzahl öffentlichen IP-Adressen, die über vCenter zugewiesen und nutzbar sind | 1 x /23 |
 | vCPUs, RAM und Festplatte für vCenter Standard | vCenter (VCSA) zugewiesene Ressourcen | 4 virtuelle Prozessoren, 16 GB RAM, 290 GB Speicherplatz |
 | vCPUs, RAM und Festplatte für vROPS | vROPS-Ressourcen | 4 virtuelle Prozessoren, 16 GB RAM |
 | Maximale Anzahl IPSec VPN Tunnel | Maximale Anzahl von VPN-Tunneln pro | 512 Compact Edge<br>1600 Edge<br>4096 quad large edge<br>6000 extra large Edge |

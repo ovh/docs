@@ -37,7 +37,7 @@ Per ordinare datastore aggiuntivi, invece, clicca su `Add Storage`{.action}.
 
 L’accesso a questi menu è disponibile anche da un percorso alternativo, cliccando con il tasto destro sul datacenter o cluster dell’infrastruttura e selezionando `OVHcloud`{.action}.
 
-![OVHcloud Dedicated Cloud Option](images/Plugin03.jpg){.thumbnail}
+![OVHcloud Hosted Private Cloud Option](images/Plugin03.jpg){.thumbnail}
 
 ## Per saperne di più
 

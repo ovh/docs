@@ -43,7 +43,7 @@ Além do direcionamento IP privado, o [vRack](https://www.ovh.pt/solucoes/vrack/
 > Esta configuração permite configurar endereços IP de um mesmo bloco em vários servidores, desde que todos estejam no mesmo vRack que o bloco IP. O bloco IP deve ter pelo menos 2 endereços IP utilizáveis ou mais para que isso seja possível.
 >
 
-Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e clique em `Network`{.action}. A seguir, abra o menu `vRack` {.action}.
+Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e clique em `Network`{.action}. A seguir, abra o menu `vRack`{.action}.
 
 Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis. Clique no bloco IP que deseja adicionar ao vRack e clique no botão `Adicionar`{.action}.
 

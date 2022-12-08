@@ -129,7 +129,7 @@ Nous allons voir plus en détails la modification des droits par datacentre :
 |Lecture seule|accès en lecture seule|
 |Operateur|permet de configurer des machines virtuelles (VM) sur le réseau public|
 
-- `Accès au V(X)LAN`{.action} - il s'agit de la gestion des droits sur la partie réseau privé les VXLAN pour la gamme Dedicated Cloud ou les VLAN pour la gamme SDDC :
+- `Accès au V(X)LAN`{.action} - il s'agit de la gestion des droits sur la partie réseau privé les VXLAN pour la gamme Hosted Private Cloud ou les VLAN pour la gamme SDDC :
 
 |Droits|Description|
 |---|---|
@@ -204,7 +204,7 @@ Dans un Private Cloud, vous pouvez avoir plusieurs datacentres. En cliquant sur 
 Vous pouvez personnaliser le nom de votre datacenter en cliquant sur le crayon, ainsi qu'ajouter description personnalisée.
 
 Vous retrouverez les premières informations sur votre datacenter, sa gamme, le nombre d'hôtes et de datastores.
-Il est possible de bénéficier de plusieurs datacenters dans une même offre Private Cloud en ayant des gammes Dedicated Cloud et Software Defined Datacenter.
+Il est possible de bénéficier de plusieurs datacenters dans une même offre Private Cloud en ayant des gammes Hosted Private Cloud et Software Defined Datacenter.
 
 
 #### Hôtes

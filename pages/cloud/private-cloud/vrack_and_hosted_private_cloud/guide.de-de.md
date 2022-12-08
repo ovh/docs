@@ -43,11 +43,11 @@ Um den Kontext zu veranschaulichen:
 
 **2 vRack VM Network untereinander in verschiedenen geographischen Zonen in verschiedenen Hosted Private Cloud verbinden.**
 
-![VM Network - VM Network, verschieden Zone und Dedicated Cloud ](images/vmnetwork-vmnetwork-diff-geo-diff-pcc.png){.thumbnail}
+![VM Network - VM Network, verschieden Zone und Hosted Private Cloud ](images/vmnetwork-vmnetwork-diff-geo-diff-pcc.png){.thumbnail}
 
 **1 vRack VM Network und 1 vRack vDC in verschiedenen geographischen Zonen in verschiedenen Hosted Private Cloud verbinden.**
 
-![VM Network - vDC, unterschiedliche Zone und Dedicated Cloud ](images/vmnetwork-vdc-diff-geo-diff-pcc.png){.thumbnail}
+![VM Network - vDC, unterschiedliche Zone und Hosted Private Cloud ](images/vmnetwork-vdc-diff-geo-diff-pcc.png){.thumbnail}
 
 > [!primary]
 >
@@ -56,11 +56,11 @@ Um den Kontext zu veranschaulichen:
 
 **1 vRack vDC und 1 vRack vDC in verschiedenen geographischen Zonen in verschiedenen Hosted Private Cloud verbinden.**
 
-![vDC - vDC verschiedene Zone und Dedicated Cloud ](images/vdc-vdc-diff-geo-diff-pcc.png){.thumbnail}
+![vDC - vDC verschiedene Zone und Hosted Private Cloud ](images/vdc-vdc-diff-geo-diff-pcc.png){.thumbnail}
 
 **1 vRack vDC und 1 vRack vDC in einer einzigen Hosted Private Cloud verbinden.**
 
-![vDC - vDC selbst Dedicated Cloud ](images/vdc-vdc-same-pcc.png){.thumbnail}
+![vDC - vDC selbst Hosted Private Cloud ](images/vdc-vdc-same-pcc.png){.thumbnail}
 
 **Alle vDC einer Hosted Private Cloud teilen das gleiche vRack VM Network.**
 
@@ -68,21 +68,21 @@ Um den Kontext zu veranschaulichen:
 
 **1 vRack vDC und 1 vRack vDC in einer einzigen geografischen Zone in verschiedenen Hosted Private Cloud verbinden.**
 
-![vDC - vDC, Zone und verschiedene Dedicated Cloud ](images/vdc-vdc-same-zone-diff-pcc.png){.thumbnail}
+![vDC - vDC, Zone und verschiedene Hosted Private Cloud ](images/vdc-vdc-same-zone-diff-pcc.png){.thumbnail}
 
 ### Nicht mögliche Konfigurationen
 
 **1 vRack VM Network und 1 vRack VM Network in einer einzigen geografischen Zone in verschiedenen Hosted Private Cloud verbinden.**
 
-![VM Network - VM Network für gleiche Zone und verschiedene Dedicated Cloud ](images/vmnetwork-vmnetwork-same-geo-diff-pcc.png){.thumbnail}
+![VM Network - VM Network für gleiche Zone und verschiedene Hosted Private Cloud ](images/vmnetwork-vmnetwork-same-geo-diff-pcc.png){.thumbnail}
 
 **1 vRack VM Network und 1 vRack vDC in einer einzigen geografischen Zone in verschiedenen Hosted Private Cloud verbinden.**
 
-![VM Network - vDC-Zone und verschiedene Dedicated Cloud ](images/vmnetwork-vdc-same-geo-diff-pcc.png){.thumbnail}
+![VM Network - vDC-Zone und verschiedene Hosted Private Cloud ](images/vmnetwork-vdc-same-geo-diff-pcc.png){.thumbnail}
 
 **1 vRack VM Network und 1 vRack vDC in derselben geografischen Zone in derselben Hosted Private Cloud verbinden.**
 
-![VM Network - vDC-Zone und sogar Dedicated Cloud ](images/vmnetwork-vdc-same-geo-same-pcc.png){.thumbnail}
+![VM Network - vDC-Zone und sogar Hosted Private Cloud ](images/vmnetwork-vdc-same-geo-same-pcc.png){.thumbnail}
 
 ## Weiterführende Informationen
 

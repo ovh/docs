@@ -213,7 +213,7 @@ This API call generates an order that needs to be validated. If you don’t have
 <a name="addhostandds"></a>
 #### Step 2.2 Add new hosts and Datastores
 
-In the OVHcloud Control Panel, you will see your new vDC attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Dedicated Cloud billing](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) guide.
+In the OVHcloud Control Panel, you will see your new vDC attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Hosted Private Cloud billing](https://docs.ovh.com/gb/en/private-cloud/information_about_dedicated_cloud_billing/#add-resources-billed-monthly) guide.
 <a name="converttoglobal"></a>
 #### Step 2.3 Convert a datastore to a global datastore
 

@@ -90,7 +90,7 @@ Clique no botão `Encomendar mais licenças`{.action} à direita. Indique o núm
 
 ###### Eliminar uma licença num grupo de licenças
 
-No separador `Licenças` {.action" do seu grupo de licenças, clique no botão `...`{.action} à direita da licença a rescindir, e clique em `Eliminar conta` {.action}.
+No separador `Licenças` {.action" do seu grupo de licenças, clique no botão `...`{.action} à direita da licença a rescindir, e clique em `Eliminar conta`{.action}.
 
 ![emails](images/Outlook-cps1-06.png){.thumbnail}
 
@@ -99,7 +99,7 @@ No separador `Licenças` {.action" do seu grupo de licenças, clique no botão `
 
 ###### Rescindir o grupo de licenças
 
-Para rescindir o seu grupo de licenças Microsoft Office 365 CSP1, clique no seu nome (canto superior direito) da Área de Cliente OVHcloud e, a seguir, no botão `Gestão dos serviços` {.action}. A seguir, clique no botão `...`{.action} à direita do grupo de licenças a rescindir, depois por `Rescindir`{.action}.<br>
+Para rescindir o seu grupo de licenças Microsoft Office 365 CSP1, clique no seu nome (canto superior direito) da Área de Cliente OVHcloud e, a seguir, no botão `Gestão dos serviços`{.action}. A seguir, clique no botão `...`{.action} à direita do grupo de licenças a rescindir, depois por `Rescindir`{.action}.<br>
 Indique as razões do seu pedido de rescisão e clique em `Validar` {.action.
 
 > [!primary]

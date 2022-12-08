@@ -1,14 +1,14 @@
 ---
 deprecated: true
 title: De reserve hosts
-excerpt: Het beheren en monitoren van de reserve hosts op de Dedicated Cloud?
+excerpt: Het beheren en monitoren van de reserve hosts op de Hosted Private Cloud?
 slug: de_reserve_hosts
 legacy_guide_number: g860
 ---
 
 
 ## 
-U heeft een e-mail ontvangen, na het aanmaken van een incident ticket voor het toevoegen van een reserve host in uw Dedicated Cloud.
+U heeft een e-mail ontvangen, na het aanmaken van een incident ticket voor het toevoegen van een reserve host in uw Hosted Private Cloud.
 Een reserve host wordt meestal geleverd in uw infrastructuur in het geval van falen van een van de hosts. Deze host is gratis. Het incident ticket vraagt u om het IP-adres van de host getroffen door de storing.
 U kunt inloggen in uw vSphere Client, om het alert te constateren dat werd aangetroffen op uw host.
 Als u de HA en DRS functies van de VMware goed heeft geconfigureerd, migreren de VM's automatisch op de reserve host.

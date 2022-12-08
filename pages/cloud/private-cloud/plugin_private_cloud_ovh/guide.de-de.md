@@ -35,7 +35,7 @@ Um neue Datastores zu bestellen, gehen Sie in das Menü `Add Storage`{.action}.
 
 ![Storage hinzufügen](images/Plugin02.jpg){.thumbnail}
 
-Alternativ können Sie auch auf diese Menüs zugreifen, indem Sie mit der rechten Maustaste auf das Datacenter oder den Cluster klicken und anschließend `OVHcloud`{.action} auswählen (auch „OVH Dedicated Cloud“).
+Alternativ können Sie auch auf diese Menüs zugreifen, indem Sie mit der rechten Maustaste auf das Datacenter oder den Cluster klicken und anschließend `OVHcloud`{.action} auswählen (auch „OVH Hosted Private Cloud“).
 
 ![Option OVH Private Cloud](images/Plugin03.jpg){.thumbnail}
 

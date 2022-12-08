@@ -2,7 +2,7 @@
 title: Die Spare-Hosts
 routes:
     canonical: 'https://docs.ovh.com/de/private-cloud/die_spare-hosts/'
-excerpt: Bereitstellung eines Spare-Hosts in der Dedicated Cloud
+excerpt: Bereitstellung eines Spare-Hosts in der Hosted Private Cloud
 slug: die_spare-hosts
 section: OVHcloud Funktionen
 order: 04

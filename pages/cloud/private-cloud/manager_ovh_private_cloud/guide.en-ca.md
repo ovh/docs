@@ -127,7 +127,7 @@ Following are detailed listings of the available user rights by data centre.
 |None|no access|
 |Read-only|read access only|
 
-- **Access to the V(X)LANs**: concerns management rights over the private network section (VXLAN for Dedicated Cloud and VLAN for SDDC)
+- **Access to the V(X)LANs**: concerns management rights over the private network section (VXLAN for Hosted Private Cloud and VLAN for SDDC)
 
 |Right|Description|
 |---|---|
@@ -195,7 +195,7 @@ You can customise the name of your data centre by clicking on the pencil icon. B
 
 #### General information tab
 
-The first page contains some information about your data centre, its range, and the number of hosts and datastores. Multiple data centres can be leveraged in a single Hosted Private Cloud infrastructure with the Dedicated Cloud and Software Defined Datacenter ranges.
+The first page contains some information about your data centre, its range, and the number of hosts and datastores. Multiple data centres can be leveraged in a single Hosted Private Cloud infrastructure with the Hosted Private Cloud and Software Defined Datacenter ranges.
 
 #### Hosts tab
 

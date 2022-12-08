@@ -39,7 +39,7 @@ Conéctese a [https://ca.api.ovh.com/](https://ca.api.ovh.com/) y utilice la sig
 
 Introduzca las variables:
 
-- serviceName: la referencia de su Dedicated Cloud en forma `pcc-XX-XX-XX-XX`
+- serviceName: la referencia de su Hosted Private Cloud en forma `pcc-XX-XX-XX-XX`
 - datacenterId: ID del datacenter en el que está activada la solución Veeam Managed Backup
 
 Esta llamada va a generar un informe de copias de seguridad. Se enviará por correo electrónico a la dirección indicada en la cuenta de administrador del servicio Hosted Private Cloud.
@@ -74,7 +74,7 @@ Conéctese a [https://ca.api.ovh.com/](https://ca.api.ovh.com/) y utilice la sig
 
 Introduzca las variables:
 
-- serviceName: la referencia de su Dedicated Cloud en forma `pcc-XX-XX-XX-XX`
+- serviceName: la referencia de su Hosted Private Cloud en forma `pcc-XX-XX-XX-XX`
 - datacenterId: ID del datacenter en el que está activada la solución Veeam Managed Backup
 - backupJobName (opcional): el nombre de una copia de seguridad (obtenida en el paso 1) en forma de `pcc-XXX-XXX-XXX-XXX-XXX_vm-XXX` si solo desea restaurar una MV.
 - backupRepositoryName el nombre del backup repository obtenido en el paso 1.

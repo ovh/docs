@@ -74,7 +74,7 @@ Para ver el contexto:
 
 **Conectar 1 vRack MV Network y 1 vRack MV Network, en una misma zona geográfica, en diferentes Hosted Private Cloud.**
 
-![VM Network - MV Network misma zona y diferentes Dedicated Cloud ](images/vmnetwork-vmnetwork-same-geo-diff-pcc.png){.thumbnail}
+![VM Network - MV Network misma zona y diferentes Hosted Private Cloud ](images/vmnetwork-vmnetwork-same-geo-diff-pcc.png){.thumbnail}
 
 **Conectar 1 vRack VM Network y 1 vRack vDC en una misma zona geográfica en diferentes Hosted Private Cloud.**
 

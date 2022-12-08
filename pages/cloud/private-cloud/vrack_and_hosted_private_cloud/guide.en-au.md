@@ -60,7 +60,7 @@ Here is the context:
 
 **All vDCs in the same Hosted Private Cloud service sharing the same VM Network vRack.**
 
-![VM Network shared in Dedicated Cloud](images/all-vdc-share-same-vmnetwork.png){.thumbnail}
+![VM Network shared in Hosted Private Cloud](images/all-vdc-share-same-vmnetwork.png){.thumbnail}
 
 **Connecting 1 vRack vDC and 1 vRack vDC, in the same geographical zone, in different Hosted Private Cloud services.**
 
@@ -74,7 +74,7 @@ Here is the context:
 
 **Connecting 1 VM Network vRack and 1 vRack vDC, in the same geographical zone, in different Hosted Private Cloud services.**
 
-![VM Network - vDC same zone and different Dedicated Cloud](images/vmnetwork-vdc-same-geo-diff-pcc.png){.thumbnail}
+![VM Network - vDC same zone and different Hosted Private Cloud](images/vmnetwork-vdc-same-geo-diff-pcc.png){.thumbnail}
 
 **Connecting 1 VM Network vRack  and 1 vRack vDC, in the same geographical zone, in the same Hosted Private Cloud service.**
 

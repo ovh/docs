@@ -93,7 +93,7 @@ Click `...`{.action} and then `Modify rights`{.action} to edit them.
 |None|no access|
 |Read-only|read access only|
 
-- **Access to the V(X)LANs**: concerns management rights over the private network section (VXLAN for Dedicated Cloud and VLAN for SDDC)
+- **Access to the V(X)LANs**: concerns management rights over the private network section (VXLAN for Hosted Private Cloud and VLAN for SDDC)
 
 |Right|Description|
 |---|---|

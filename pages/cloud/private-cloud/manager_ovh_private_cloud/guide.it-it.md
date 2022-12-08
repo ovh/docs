@@ -129,7 +129,7 @@ Vediamo in dettaglio la modifica dei permessi per datacenter:
 |Sola lettura|Accesso in sola lettura|
 |Operatore|Permette di configurare macchine virtuali sulla rete pubblica|
 
-- `Accesso al V(X)LAN`{.action} \- Gestione dei permessi nella sezione rete privata (VxLan per Dedicated Cloud e VLAN per SDDC):
+- `Accesso al V(X)LAN`{.action} \- Gestione dei permessi nella sezione rete privata (VxLan per Hosted Private Cloud e VLAN per SDDC):
 
 |Permesso|Descrizione|
 |---|---|
@@ -204,7 +204,7 @@ Sulla tua infrastruttura Private Cloud possono essere presenti diversi datacente
 Per personalizzare il nome del tuo datacenter e aggiungere una descrizione, clicca sull’icona a forma di matita.
 
 In questa interfaccia vengono mostrate le informazioni relative al datacenter selezionato: gamma (SDDC o DC), numero di host e datastore.
-Per le gamme Dedicated Cloud e Software Defined Datacenter, è possibile usufruire di più datacenter nella stessa soluzione Private Cloud.
+Per le gamme Hosted Private Cloud e Software Defined Datacenter, è possibile usufruire di più datacenter nella stessa soluzione Private Cloud.
 
 
 #### Host

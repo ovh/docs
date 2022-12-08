@@ -151,7 +151,7 @@ O seu utilizador OVHVeeamEnterprise está agora acessível local e à distância
 ## Através da Área de Cliente OVHcloud
 
 
-Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção Hosted Private Cloud {.ação} e selecione `Plataformas e serviços` {.ação}. De seguida, selecione o seu serviço **backupserverenterprise** e clique em `Ativar a licença` {.action} na secção `Atalho`.
+Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção Hosted Private Cloud {.ação} e selecione `Plataformas e serviços` {.ação}. De seguida, selecione o seu serviço **backupserverenterprise** e clique em `Ativar a licença`{.action} na secção `Atalho`.
 
 ![](images/veeam001.png){.thumbnail}
 

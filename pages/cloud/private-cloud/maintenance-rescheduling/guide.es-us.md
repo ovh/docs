@@ -68,7 +68,7 @@ Ejecute la siguiente llamada a la API:
 
 Introduzca las variables:
 
-- serviceName: la referencia de su Dedicated Cloud en forma `pcc-XX-XX-XX-XX`.
+- serviceName: la referencia de su Hosted Private Cloud en forma `pcc-XX-XX-XX-XX`.
 - taskId: referencia de la operación de mantenimiento indicada en la notificación por correo electrónico que le hemos enviado.
 - executionDate: introduzca la nueva fecha de mantenimiento en formato `YYY-MM-DDTHH:MM+01:SS` (por ejemplo, 2023-01-02T08:00:00+01:00 para un mantenimiento programado el 02/01/2023 a las 08h0 0 (UTC+1).
 

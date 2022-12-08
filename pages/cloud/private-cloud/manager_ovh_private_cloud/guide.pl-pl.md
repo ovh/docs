@@ -127,7 +127,7 @@ Poniżej przyjrzymy się bliżej zmianie uprawnień według centrum danych:
 |Do odczytu|Dostęp tylko do odczytu|
 |Operator|Może konfigurować maszyny wirtualne (VM) w sieci publicznej|
 
-- `Dostęp do V(X)LAN`{.action} — zarządzanie uprawnieniami dotyczącymi części sieci prywatnej VXLAN dla gamy Dedicated Cloud lub VLAN dla gamy Private Cloud SDDC:
+- `Dostęp do V(X)LAN`{.action} — zarządzanie uprawnieniami dotyczącymi części sieci prywatnej VXLAN dla gamy Hosted Private Cloud lub VLAN dla gamy Private Cloud SDDC:
 
 |Uprawnienia|Opis|
 |---|---|
@@ -202,7 +202,7 @@ W usłudze Private Cloud można mieć kilka centrów danych Kliknij Twoją Priva
 Kliknij ikonę ołówka, aby dostosować nazwę centrum danych lub dodać spersonalizowany opis.
 
 Znajdziesz tu podstawowe informacje o Twoim centrum danych, gamie, liczbie hostów i magazynów danych.
-W ramach jednej oferty Private Cloud można mieć kilka centrów danych, posiadając gamy Dedicated Cloud oraz Private Cloud SDDC.
+W ramach jednej oferty Private Cloud można mieć kilka centrów danych, posiadając gamy Hosted Private Cloud oraz Private Cloud SDDC.
 
 
 #### Hosty

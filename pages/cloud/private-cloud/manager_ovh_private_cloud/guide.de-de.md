@@ -129,7 +129,7 @@ Nachfolgend sehen Sie die Berechtigungen je "Datacenter" im Detail:
 |Nur Lesen|nur lesender Zugriff|
 |Operator|erlaubt die Konfiguration virtueller Maschinen (VMs) im öffentlichen Netzwerk|
 
-- `Zugriff auf V(X)LAN`{.action}: Hierbei handelt es sich um die Rechteverwaltung für den privaten Netzwerkbereich, VXLAN für die Dedicated Cloud Reihe bzw. VLAN für die SDDC Reihe:
+- `Zugriff auf V(X)LAN`{.action}: Hierbei handelt es sich um die Rechteverwaltung für den privaten Netzwerkbereich, VXLAN für die Hosted Private Cloud Reihe bzw. VLAN für die SDDC Reihe:
 
 |Berechtigung|Beschreibung|
 |---|---|
@@ -204,7 +204,7 @@ Sie können den Namen Ihres "Datacenters" ändern oder eine angepasste Beschreib
 #### Allgemeine Informationen
 
 Hier finden Sie die Hauptinformationen zu Ihrem "Datacenter", den Diensttyp sowie die Anzahl der Hosts und Datastores.
-Bei "Dedicated Cloud" und "Software Defined Datacenter" können Sie über mehrere "Datacenter" in derselben Hosted Private Cloud Lösung verfügen.
+Bei "Hosted Private Cloud" und "Software Defined Datacenter" können Sie über mehrere "Datacenter" in derselben Hosted Private Cloud Lösung verfügen.
 
 
 #### Hosts
