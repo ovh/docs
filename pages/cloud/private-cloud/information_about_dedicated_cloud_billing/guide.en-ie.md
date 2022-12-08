@@ -52,7 +52,7 @@ Select the virtual datacentre where you want to add resources. Choose the host m
 
 
 ## Add resources billed hourly
-Hourly resources are added directly in vSphere by selecting the "inventory" tab and by clicking on the OVH Hosted Private Cloud tab.
+Hourly resources are added directly in vSphere by selecting the "inventory" tab and by clicking on the Hosted Private Cloud tab.
 
 You must have at least one host and one monthly storage for vSphere.
 
