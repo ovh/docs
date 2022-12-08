@@ -1,12 +1,14 @@
 ---
-title: 'Comment sécuriser WordPress ?'
-slug: securiser-wordpress
-excerpt: 'Adoptez les bonnes pratiques pour sécuriser votre site WordPress'
-section: 'Premiers pas'
+title: 'Sécurité WordPress : Bien protéger un site WordPress | OVHcloud'
+slug: uc-wordpress-security
+excerpt: 'La sécurité de votre site WordPress est essentielle. Découvrez les différentes étapes pour protéger et sécuriser un site WordPress des attaques !'
+section: 
 order: 
 ---
 
-**Dernière mise à jour le 04/10/2022**
+**Dernière mise à jour le 08/12/2022**
+
+# Sécurité Wordpress
 
 ## Objectif
 
