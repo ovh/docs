@@ -30,7 +30,7 @@ order: 2
 | Número máx. de clusters por vDC | Número de clusters en el mismo datacenter virtual | Sin límite |
 | Número máx. de vDC por PCC | Número de datacenters virtuales (vDC) que los clientes pueden añadir por vCenter | 400 |
 | Número máx. de hosts por PCC | Límites de hosts por vCenter | playa **Hosts**: 340 hosts, 70 zpools<br>playa **Hybrid**: 241 hosts, 120 zpools<br>playa **BigDS**: 76 hosts, 205 zpools |
-| Número máx. máquinas virtuales por PCC | MV gestionadas por el mismo vCenter | 25 000 |
+| Número máx. máquinas virtuales por SDDC | MV gestionadas por el mismo vCenter | 25 000 |
 | Número máx. máquinas virtuales por host | MV alojadas en el mismo host físico | 1024 |
 | Número máx. de direcciones IP por PCC | Número máx. direcciones IP públicas que puedan asignarse y utilizarse por vCenter | 1 x /23 |
 | vCPU, memoria RAM y disco utilizados por vCenter standard | Recursos asignados a vCenter (VCSA) | 4 procesadores virtuales, 16 GB de RAM, 290 GB de espacio en disco |
