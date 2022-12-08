@@ -72,7 +72,7 @@ Nous vous proposons ici quelques extensions populaires de WordPress, qui de ce f
 
 ### Comment configurer votre WordPress entièrement en HTTPS ?
 
-Pensez à consulter notre guide [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
+Pensez à consulter notre [guide sur les certificats SSL](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
 
 «&nbsp;Really Simple SSL&nbsp;» détecte automatiquement vos réglages et configure votre site web pour qu’il fonctionne avec le protocole HTTPS (protocole privilégié par les moteurs de recherche).
 
