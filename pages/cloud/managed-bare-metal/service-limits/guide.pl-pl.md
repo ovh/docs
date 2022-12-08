@@ -22,7 +22,7 @@ order: 2
 
 | Element | Opis | Wartość |
 |:-----:|:-----:|:----------:|
-| Maksymalna liczba Hosted Private Cloud na identyfikator klienta | Liczba vCenter lub pakietów na organizację | Brak limitu |
+| Maksymalna liczba Managed Bare Metal na identyfikator klienta | Liczba vCenter lub pakietów na organizację | Brak limitu |
 | Liczba powiązanych PCC | Połączenie vCenters (Enhanced Link Mode) | 0 (niedozwolony) |
 | Minimalna liczba hostów na PCC (SLA) | Liczba hostów w vCenter do utrzymania regulaminu poziomu usługi | 2 |
 | Minimalna liczba hostów na PCC (bez SLA) | Minimalna liczba hostów do wykorzystania z vCenter bez umowy na gwarantowany poziom usługi | 0 |
