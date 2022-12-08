@@ -8,7 +8,10 @@ section: OpenStack Swift Archive Storage Class Specifics
 order: 040
 ---
 
-**Last updated 15th December 2021**
+**Last updated 8th December 2022**
+## UAT TEST
+
+This line was added as a test for UAT. SNF-2005 / Test: SNF-1989
 
 ## Objective
 
