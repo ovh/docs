@@ -74,7 +74,7 @@ Conéctese a [https://api.ovh.com/](https://api.ovh.com/) y utilice la siguiente
 
 Introduzca las variables:
 
-- serviceName: la referencia de su Hosted Private Cloud en forma `pcc-XX-XX-XX-XX`
+- serviceName: la referencia de su Managed Bare Metal en forma `pcc-XX-XX-XX-XX`
 - datacenterId: ID del datacenter en el que está activada la solución Veeam Managed Backup
 - backupJobName (opcional): el nombre de una copia de seguridad (obtenida en el paso 1) en forma de `pcc-XXX-XXX-XXX-XXX-XXX_vm-XXX` si solo desea restaurar una MV.
 - backupRepositoryName el nombre del backup repository obtenido en el paso 1.
