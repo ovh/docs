@@ -1,9 +1,9 @@
 ---
-title: Création d'un sous compte OVHcloud et d'un utilisateur via l'API OVH
-excerpt: Création d'un sous compte OVHcloud et d'un utilisateur pour l'accès au manager OVHcloud via l'API
+title: "Création d'un sous compte OVHcloud et d'un utilisateur via l'API OVHcloud"
+excerpt: "Création d'un sous compte OVHcloud et d'un utilisateur pour l'accès au manager OVHcloud via l'API"
 ---
 
-**Dernière mise à jour le 08/06/2020**
+**Dernière mise à jour le 08/12/2022**
 
 ## Objectif
 
