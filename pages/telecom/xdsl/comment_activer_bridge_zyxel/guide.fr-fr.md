@@ -5,7 +5,7 @@ excerpt: "Découvrez comment activer le mode bridge sur un modem Zyxel afin d'ut
 section: 'Configurations techniques avancées'
 ---
 
-**Dernière mise à jour le 02/12/2020**
+**Dernière mise à jour le 08/12/2022**
 
 ## Objectif
 
@@ -87,5 +87,7 @@ Validez le changement, le bridge est désormais activé sur les ports LAN 1, 2 e
 Pour revenir en mode routeur suivez le guide [Redémarrer ou réinitialiser une box OVHcloud](../redemarrer-reinitialiser-modem-adsl-ovh/#reinitialiser-votre-box-ovh_1) pour réinitialiser votre modem Zyxel et rétablir sa configuration par défaut.
 
 ## Aller plus loin
+
+Vous pouvez retrouver plus d'information sur la configuration du modem sur le [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8825-T50K_V5.13_5.50-1.pdf){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
