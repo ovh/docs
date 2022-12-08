@@ -18,10 +18,10 @@ This page provides an explanation of the elements that constitute a Nutanix clus
 
 A Nutanix cluster consists of a stack of OVHcloud services:
 
-- [Dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/)
-- [vRack](https://www.ovh.co.uk/solutions/vrack/)
-- [Load Balancer](https://www.ovh.co.uk/solutions/load-balancer/)
-- [Additional IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/)
+- [Dedicated server](https://www.ovhcloud.com/it/bare-metal/)
+- [vRack](https://www.ovh.it/soluzioni/vrack/)
+- [Load Balancer](https://www.ovh.it/soluzioni/load-balancer/)
+- [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/)
 
 Dedicated servers (3 minimum) are connected within the vRack which is an L2 network, the hosts (node) private network.
 
