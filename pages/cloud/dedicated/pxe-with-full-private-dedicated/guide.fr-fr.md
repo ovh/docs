@@ -83,7 +83,7 @@ liste des composants intervenants lors du démarrage :
 |2. le DHCP affecte une adresse IP à la machine cliente (offer/request/ack). Requête de récupération du binaire iPXE|
 |3. récupération en TFTP du binaire iPXE|
 |4. chargement du binaire iPXE en tant que firmware|
-|5. requête de récupération de script iPXE|
+|5. requête de récupération de script iPXE par le firmware iPXE|
 |6. récuparation du script iPXE associé en TFTP|
 |7. exécution du script iPXE. récupération des ressources nécessaires à rEFInd: binaire et fichier de configuration requis|
 |8. exécution et chargement du binaire rEFInd|
@@ -121,7 +121,7 @@ liste des composants intervenants lors du démarrage :
 #### le service **DHCP**
 
 ci-dessous, un exemple de fichier de configuration pour votre service **DHCP**.<br>
-Selon votre distribution, l'arborescence peut être différente (dhcpd.conf).
+Selon votre distribution, l'arborescence peut être différente (`dhcpd.conf`).
 
 En règle générale, il suffit de:<br>
 
@@ -321,7 +321,7 @@ scan_delay 0
 ```
 
 
-## Mise en marche
+### Mise en marche
 
 
 Aperçu de ce que l'on obtient à l'affichage lors d'un Netboot UEFI (par défaut):<br>
@@ -348,10 +348,10 @@ Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/p
 
 **Suggestions**
 
-##### service **DNS**
+#### service **DNS**
 Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/etc/hosts`, ou bien utiliser un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
 
-##### service **NTP**
+#### service **NTP**
 Il est fortement conseillé d'utiliser un service NTP surtout si votre infrastructure comprends plusieurs machines.
 
 liste des ports à autoriser dans votre firewall local (de la machine hébergeant les services):
