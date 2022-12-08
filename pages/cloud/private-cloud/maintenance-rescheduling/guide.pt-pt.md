@@ -38,9 +38,9 @@ Quando uma manutenção é programada no seu Hosted Private Cloud, ser-lhe-á en
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) com uma conta de administrador.
 
-No menu `Hosted Private Cloud`{.action}, clique no separador `Operations`{.action}. Selecione `A fazer`{.action} no menu pendente que permite filtrar as operações.
+No menu `Hosted Private Cloud`{.action}, clique no separador `Operações`{.action}. Selecione `Por realizar`{.action} no menu pendente que permite filtrar as operações.
 
-A seguir, clique no botão `...`{.action} e em `Alterar a data de tratamento`{.action}.
+A seguir, clique no botão `...`{.action} e em `Modificar a data de tratamento`{.action}.
 
 ![alteração horária](images/maintenance-date-edition01.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Introduza as variáveis:
 
 - serviceName: a referência do seu PCC sob a forma `pcc-XX-XX-XX-XX-XX`.
 - TaskId: trata-se da "referência da operação" de manutenção introduzida no e-mail de notificação que lhe foi enviado.
-- ExecuçãoData: indicar a nova data de manutenção em formato `YYYY-MM-DTHH:MM+01:SS` (por exemplo, 2023-01-02T08:00:00+01:00 para manutenção programada a 02/01/2023 às 08h0 0 (UTC+1).
+- ExecuçãoData: indicar a nova data de manutenção em formato `YYYY-MM-DTHH:MM+01:SS` (por exemplo, 2023-01-02T08:00:00+01:00 para manutenção programada a 02/01/2023 às 08h0 0 (UTC+1)).
 
 ## Quer saber mais?
 

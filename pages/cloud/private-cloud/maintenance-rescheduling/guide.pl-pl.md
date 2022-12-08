@@ -26,26 +26,26 @@ Po zaplanowaniu prac konserwacyjnych na Twojej usłudze Hosted Private Cloud otr
 
 - Otrzymałeś e-mail z powiadomieniem o pracach konserwacyjnych informujący, że możesz **zmienić datę wykonania prac konserwacyjnych**. W przeciwnym razie data utrzymania nie może zostać zmieniona.
 - Posiadanie kontaktu administracyjnego lub technicznego w infrastrukturze [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub [interfejsu administracyjnego usług przez API](https://eu.api.ovh.com/).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub [interfejsu administracyjnego usług przez API](https://eu.api.ovh.com/).
 
 ## W praktyce
 
 > [!success]
-> E-maile wysłane przez OVHcloud są również dostępne w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).<br>
+> E-maile wysłane przez OVHcloud są również dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).<br>
 > Kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie `E-maile usługi`{.action} w menu po prawej stronie.
 
 ### W Panelu klienta OVHcloud
 
-Zaloguj się do Twojego [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) za pomocą konta administratora.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) za pomocą konta administratora.
 
-W menu `Hosted Private Cloud`{.action} kliknij zakładkę `Operations`{.action}. Wybierz `Do wykonania`{.action} z rozwijanego menu, w którym mają być filtrowane operacje.
+W menu `Hosted Private Cloud`{.action} kliknij zakładkę `Dział operacyjny`{.action}. Wybierz `Do wykonania`{.action} z rozwijanego menu, w którym mają być filtrowane operacje.
 
-Następnie kliknij przycisk...`, a następnie `{.action}Zmień datę przetwarzania` `{.action}.
+Następnie kliknij przycisk `...`{.action}, a następnie `Zmień datę wykonania`{.action}.
 
 ![zmiana harmonogramu](images/maintenance-date-edition01.png){.thumbnail}
 
 > [!primary]
-> Jeśli przycisk `Zmień datę przetwarzania`{.action} jest szary, oznacza to, że nie można odroczyć tej konserwacji.
+> Jeśli przycisk `Zmień datę wykonania`{.action} jest szary, oznacza to, że nie można odroczyć tej konserwacji.
 
 Wybierz datę w przedstawionym kalendarzu. Można wybrać tylko daty bez szarości.<br>
 Następnie wprowadź ręcznie kolejną godzinę konserwacji lub zostaw niezmieniony pierwotnie zaplanowany czas. Jeśli przekroczysz ostatnią dozwoloną godzinę, ostatnia możliwa godzina programowania zostanie automatycznie zaproponowana.<br>
@@ -68,9 +68,9 @@ Wykonaj następujące wywołanie API:
 
 Wpisz zmienne:
 
-- serviceName: numer referencyjny usługi Hosted Private Cloud w formie `pcc-XX-XX-XX`.
+- serviceName: numer referencyjny usługi Hosted Private Cloud w formie `pcc-XX-XX-XX-XX`.
 - taskId: jest to "numer referencyjny operacji" konserwacji podany w przesłanym do Ciebie e-mailu z powiadomieniem.
-- executionDate: wprowadź nową datę konserwacji w formacie `YYYY-MM-DDTHH:MM+01:SS` (np. 2023-01-02T08:00:00+01:00 dla konserwacji zaplanowanej na dzień 02/01/2023 o 0800 (UTC+1).
+- executionDate: wprowadź nową datę konserwacji w formacie `YYYY-MM-DDTHH:MM+01:SS` (np. 2023-01-02T08:00:00+01:00 dla konserwacji zaplanowanej na dzień 02/01/2023 o 0800 (UTC+1)).
 
 ## Sprawdź również
 

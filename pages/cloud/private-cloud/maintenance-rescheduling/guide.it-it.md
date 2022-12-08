@@ -38,9 +38,9 @@ In caso di manutenzione programmata sull'Hosted Private Cloud, riceverai un'emai
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) con un account amministratore.
 
-Nel menu `Hosted Private Cloud`{.action}, clicca sulla scheda `Operations`{.action}. Seleziona `Da fare`{.action} nel menu a tendina che permette di filtrare le operazioni.
+Nel menu `Hosted Private Cloud`{.action}, clicca sulla scheda `Operazioni`{.action}. Seleziona `Da fare`{.action} nel menu a tendina che permette di filtrare le operazioni.
 
-Clicca sui tre puntini in corrispondenza del servizio `...`{.action} e seleziona `Modifica la data di gestione`{.action}.
+Clicca sui tre puntini in corrispondenza del servizio `...`{.action} e seleziona `Modifica la data di elaborazione`{.action}.
 
 ![modifica oraria](images/maintenance-date-edition01.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Inserisci le variabili:
 
 - serviceName: il riferimento del tuo PCC in forma `pcc-XX-XX-XX`.
 - TaskId: è il "riferimento dell'operazione" indicato nell'email di notifica inviata.
-- executionData: inserisci la nuova data di manutenzione in formato `YYYY-MM-DDTHH:MM+01:SS` (ad esempio, 2023-01-02T08:00:00+01:00 per una manutenzione programmata il 02/01/2023 alle 08:0 0 (UTC+1).
+- executionData: inserisci la nuova data di manutenzione in formato `YYYY-MM-DDTHH:MM+01:SS` (ad esempio, 2023-01-02T08:00:00+01:00 per una manutenzione programmata il 02/01/2023 alle 08:0 0 (UTC+1)).
 
 ## Per saperne di più
 
