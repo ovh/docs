@@ -1,7 +1,6 @@
 ---
-title: 'Tester la plublication d'un guide sur Github'
-slug: test-uat-brenkt
-section: 'Tutoriels'
+title : "Tester la plublication d'un guide sur Github"
+excerpt : Ceci est un test 
 order: 01
 ---
 
