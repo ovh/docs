@@ -334,7 +334,7 @@ Aperçu de ce que l'on obtient à l'affichage lors d'un Netboot UEFI (par défau
 Ci-dessus, nous avons le bootloader **rEFInd** chargé sur une machine avec un système *debian* installé.
 
 
-Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/dedicated/dedicated-pxe-private/files/src.zip" download>ce lien</a>. les ressources qui ont servis à élaborer nos tests et exemples présents tout au long de cette présentation. Ils pourront servir de template selon vos besoins.
+Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/dedicated/dedicated-pxe-private/files/src.zip" download>ce lien</a> les ressources qui ont servis à élaborer nos tests et exemples présents tout au long de cette présentation. Ils pourront servir de template selon vos besoins.
 
 #### Optionnel
 
@@ -348,10 +348,10 @@ Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/p
 
 **Suggestions**
 
-service DNS:<br>
+###### service DNS:<br>
 Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/etc/hosts`, ou bien utiliser un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
 
-service NTP:<br>
+###### service NTP:<br>
 Il est fortement conseillé d'utiliser un service NTP surtout si votre infrastructure comprends plusieurs machines.
 
 liste des ports à autoriser dans votre firewall local (de la machine hébergeant les services):
