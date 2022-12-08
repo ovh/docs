@@ -326,7 +326,8 @@ scan_delay 0
 
 Aperçu de ce que l'on obtient à l'affichage lors d'un Netboot UEFI (par défaut):<br>
 *correspond aux étapes 1 à 8* <br>
-![iPXE en action](images/animation.gif){.thumbnail}
+#![iPXE en action](images/animation.gif){.thumbnail}
+<img src="images/animation.gif" width="100" height="100">
 
 
 *correspond au résultat des étapes 8 et 9* <br>
