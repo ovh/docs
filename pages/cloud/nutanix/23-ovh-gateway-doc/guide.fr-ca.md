@@ -6,13 +6,13 @@ section: Réseau et sécurité
 order: 03
 ---
 
-**Dernière mise à jour le 02/05/2022**
+**Dernière mise à jour le 08/12/2022**
 
 ## Objectif
 
 « OVHgateway » est le nom du point de sortie de votre cluster vers Internet.
 
-**Ce guide vous décrit le fonctionnement de cette passerelle.**
+**Ce guide vous décrit le fonctionnement de cette passerelle, et la méthode pour la redéployer.**
 
 ## En pratique
 
@@ -27,12 +27,12 @@ La VM est basée sur Ubuntu 20.04 LTS (« The Focal Fossa »).
 > Le fichier utilisé est téléchargé directement depuis les serveurs Ubuntu : <https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img> puis personnalisé à l'aide de cloud-init.
 
 > [!primary]
-> OVHcloud vous recommande de remplacer cette passerelle par une de votre choix.
+> OVHcloud vous recommande de remplacer cette passerelle par une de votre choix. vous pouvez-vous aidez de ce guide [Remplacement de l'OVHgateway](https://docs.ovh.com/ca/fr/nutanix/software-gateway-replacement/).
 
 La passerelle OVHgateway a un design léger, avec 2 NICs, 1 vCPU, 1 GB de mémoire et 20 GiB d'espace-disque.
 
-`ens3` est l'interface pour le réseau externe et possède l'adresse Additional IP.<br>
-`ens4` est l'interface pour le réseau interne.
+`ens3` est l'interface pour le réseau externe et possède l'adresse Additional IP dans le sous-réseau **base** avec le VLAN 0. <br>
+`ens4` est l'interface pour le réseau interne dans le sous-réseau **infra** avec le VLAN 1.
 
 > [!primary]
 > Il n'y a aucun moyen de se connecter avec SSH ou tout autre protocole.
@@ -140,17 +140,19 @@ Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=got
 ![Additional IP](images/check_subnet0.png){.thumbnail}
 
 > [!primary]
-> Les instructions suivantes vont utiliser le bloc IP 123.45.6.78/30 à titre d'exemple.
+> Les instructions suivantes vont utiliser le bloc IP 198.51.100.0/30 à titre d'exemple.
 >
 
 Dans le cadre d'une utilisation du [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}, la première adresse, l'avant-dernière et la dernière adresse d'un bloc IP donné sont toujours réservées respectivement à l'adresse réseau, à la passerelle réseau et au broadcast du réseau. Cela signifie que la première adresse utilisable est la seconde adresse du bloc, comme indiqué ci-dessous :
 
 ```console
-123.45.6.76   Reserved: Network address
-123.45.6.77   First usable IP
-123.45.6.78   Reserved: Network gateway
-123.45.6.79   Reserved: Network broadcast
+198.51.100.0  Reserved: Network address
+198.51.100.1  First usable IP
+198.51.100.2  Reserved: Network gateway
+198.51.100.3  Reserved: Network broadcast
 ```
+
+##### **Vérifier l'adresse IP privée du sous-réseau ou de la passerelle privée**
 
 ##### **Vérifier l'adresse IP privée du sous-réseau ou de la passerelle privée**
 
@@ -166,7 +168,7 @@ Cependant, si la passerelle n'est pas présente, vérifiez le sous-réseau en vo
 
 Dans ce cas, le sous-réseau est 192.168.0.0/24. Dans la configuration par défaut, l'adresse IP de la passerelle est donc 192.168.0.254.
 
-##### **Récupérer le nom du sous-réseau**
+##### **Récupérer les noms des sous-réseaux**
 
 Si la passerelle existe toujours, rendez-vous sur la VM de la section VM de l'interface web Prism Central.
 
@@ -241,12 +243,12 @@ write_files:
            renderer: networkd
            ethernets:
               ens3:
-                addresses: [123.45.6.77/30]
-                gateway4: 123.45.6.78
+                addresses: [198.51.100.1/30]
+                gateway4: 198.51.100.2
                 nameservers:
                   addresses: [213.186.33.99]
               ens4:
-                addresses: [192.168.0.254]
+                addresses: [192.168.0.254/24]
 
 
 runcmd:
@@ -279,16 +281,16 @@ Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=got
 ![Additional IP](images/check_subnet0.png){.thumbnail}
 
 > [!primary]
-> Les instructions suivantes vont utiliser le bloc IP 123.45.6.78/30 à titre d'exemple.
+> Les instructions suivantes vont utiliser le bloc IP 198.51.100.0 à titre d'exemple.
 >
 
 Dans le cadre d'une utilisation du [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}, la première adresse, l'avant-dernière et la dernière adresse d'un bloc IP donné sont toujours réservées respectivement à l'adresse réseau, à la passerelle réseau et au broadcast du réseau. Cela signifie que la première adresse utilisable est la seconde adresse du bloc, comme indiqué ci-dessous :
 
 ```console
-123.45.6.76   Reserved: Network address
-123.45.6.77   First usable IP
-123.45.6.78   Reserved: Network gateway
-123.45.6.79   Reserved: Network broadcast
+198.51.100.0  Reserved: Network address
+198.51.100.1  First usable IP
+198.51.100.2  Reserved: Network gateway
+198.51.100.3  Reserved: Network broadcast
 ```
 
 ##### **Vérifier l'adresse IP privée du sous-réseau ou de la passerelle privée**
@@ -402,9 +404,9 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
 {
   "api_version": "3.1",
   "metadata": {
-    "total_matches": 1,
+    "total_matches": 3,
     "kind": "subnet",
-    "length": 1,
+    "length": 3,
     "offset": 0
   },
   "entities": [
@@ -415,13 +417,16 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
         "resources": {
           "vswitch_name": "br0",
           "subnet_type": "VLAN",
-          "virtual_switch_uuid": "1e9520a5-1d04-4857-8a32-4a09e923a688",
-          "vlan_id": 0
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
+          "vlan_id": 0,
+          "ip_usage_stats": {
+            "num_macs": 2
+          }
         },
         "cluster_reference": {
           "kind": "cluster",
-          "name": "uppercase",
-          "uuid": "0005d309-53ab-cfbb-6330-0c42a114b058"
+          "name": "cluster-xxxx.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
         }
       },
       "spec": {
@@ -429,30 +434,78 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
         "resources": {
           "vswitch_name": "br0",
           "subnet_type": "VLAN",
-          "virtual_switch_uuid": "1e9520a5-1d04-4857-8a32-4a09e923a688",
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
           "vlan_id": 0
         },
         "cluster_reference": {
           "kind": "cluster",
-          "name": "uppercase",
-          "uuid": "0005d309-53ab-cfbb-6330-0c42a114b058"
+          "name": "cluster-xxxx.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
         }
       },
       "metadata": {
-        "last_update_time": "2021-12-13T18:00:22Z",
+        "last_update_time": "2022-11-25T13:09:43Z",
         "kind": "subnet",
-        "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e",
+        "uuid": "3652d420-9f94-4350-8af7-b921d0761781",
         "spec_version": 0,
-        "creation_time": "2021-12-13T18:00:22Z",
+        "creation_time": "2022-11-25T13:09:43Z",
+        "spec_hash": "00000000000000000000000000000000000000000000000000",
         "categories_mapping": {},
         "categories": {}
       }
-    }
-  ]
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "infra",
+        "resources": {
+          "vswitch_name": "br0",
+          "subnet_type": "VLAN",
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
+          "vlan_id": 1,
+          "ip_usage_stats": {
+            "num_macs": 4
+          }
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "cluster-xxxx.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
+        }
+      },
+      "spec": {
+        "name": "infra",
+        "resources": {
+          "vswitch_name": "br0",
+          "subnet_type": "VLAN",
+          "virtual_switch_uuid": "3dba2120-9467-4c57-8781-2b21b40485c1",
+          "vlan_id": 1
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "cluster-xxxx.nutanix.ovh.net",
+          "uuid": "0005ee26-4f51-e468-2a6a-043f72b50ef0"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2022-11-25T13:09:43Z",
+        "kind": "subnet",
+        "uuid": "e60826da-4aab-4810-b7d3-0604a3e16719",
+        "spec_version": 0,
+        "creation_time": "2022-11-25T13:09:43Z",
+        "spec_hash": "00000000000000000000000000000000000000000000000000",
+        "categories_mapping": {},
+        "categories": {}
+      }
+    },
+   ]
 }
 ```
 
-Dans les métadonnées, vous retrouvez l'UUID, ici : `4676d823-82dd-4c71-a95d-847e7cdc3a3e`. 
+le résultat de la requette vous renvoie la configuration des sous-réseaux il faut relevez les UUID de chaque sous réseau qui se trouve en dessous de `"kind": "subnet"` dans la variable "uuid" comme ici par exemple : 
+
+ * `3652d420-9f94-4350-8af7-b921d0761781` pour le VLAN **base** sur le VLAN 0  
+ * `e60826da-4aab-4810-b7d3-0604a3e16719` pour le VLAN **infra** sur le VLAN 1
 
 #### Étape 2 : créer les fichiers nécessaires pour le déploiement en CLI
 
@@ -496,7 +549,7 @@ Créez le fichier `vm.json` :
           "subnet_reference": {
             "kind": "subnet",
             "name": "base",
-            "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e"
+            "uuid": "3652d420-9f94-4350-8af7-b921d0761781"
           },
           "is_connected": true
         },
@@ -509,8 +562,8 @@ Créez le fichier `vm.json` :
           ],
           "subnet_reference": {
             "kind": "subnet",
-            "name": "base",
-            "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e"
+            "name": "infra",
+            "uuid": "e60826da-4aab-4810-b7d3-0604a3e16719"
           },
           "is_connected": true
         }
@@ -543,13 +596,21 @@ Cochez `data_source_reference` pour vous assurer que l'UUID est bien l'UUID de v
                          }
 ```
 
-Vérifiez également l'UUID de votre sous-réseau :
+Vérifiez également l'UUID de vos sous-réseaux :
 
 ```json
           "subnet_reference": {
             "kind": "subnet",
             "name": "base",
-            "uuid": "4676d823-82dd-4c71-a95d-847e7cdc3a3e"
+            "uuid": "3652d420-9f94-4350-8af7-b921d0761781"
+                              }
+```
+
+```json
+          "subnet_reference": {
+            "kind": "subnet",
+            "name": "infra",
+            "uuid": "e60826da-4aab-4810-b7d3-0604a3e16719"
                               }
 ```
 
@@ -592,12 +653,12 @@ write_files:
            renderer: networkd
            ethernets:
               ens3:
-                addresses: [123.45.6.77/30]
-                gateway4: 123.45.6.78
+                addresses: [198.51.100.1/30]
+                gateway4: 198.51.100.2
                 nameservers:
                   addresses: [213.186.33.99]
               ens4:
-                addresses: [192.168.0.254]
+                addresses: [192.168.0.254/24]
 
 
 runcmd:

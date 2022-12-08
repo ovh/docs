@@ -6,7 +6,7 @@ section: Premiers pas
 order: 01
 ---
 
-**Dernière mise à jour le 11/01/2022**
+**Dernière mise à jour le 08/12/2022**
 
 ## Objectif
 
@@ -24,6 +24,8 @@ Un cluster Nutanix est constitué d’un ensemble de services OVHcloud :
 - [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
 
 Les serveurs dédiés (3 minimum) sont connectés au sein du vRack qui est un réseau L2, le réseau privé des hosts (noeud ou *node*).
+
+Deux VLAN sont utilisés, le VLAN 0 pour l'internet public et le VLAN 1 pour l'infrastructure Nutanix (Hôtes, CVMs, Prism Element et Prism Central).
 
 L'adresse IP publique de chaque noeud n'est pas accessible car l'Additional IP est dédiée à l'accès Internet. Cet accès est assuré par la passerelle « OVHgateway » qui est une VM dédiée créée par OVHcloud sur votre cluster.
 
@@ -56,12 +58,16 @@ Ces valeurs doivent être augmentées si vous ajoutez de nouvelles fonctionnalit
 
 **La passerelle OVHgateway permet d’accéder à Internet sur le cluster via l’adresse Additional IP.**
 
-Cette VM a deux NIC, l’un pour le réseau privé (dans le vRack) et l’autre pour l’Internet public.
+Cette VM utilise deux cartes réseaux (dans le vRack), une sur le réseau privé dans le VLAN 1 et l’autre pour l’Internet public sur le VLAN 0.
 
 La VM utilise des règles de NAT pour acheminer le trafic du réseau privé vers Internet.
 Vous pouvez donc l'utiliser pour le trafic sortant mais pas pour le trafic entrant.
 
 La passerelle OVHgateway est de conception légère, elle utilise 1 vCPU, 1 GB de mémoire et 11 GiB de stockage.
+
+La bande passante pour accéder à Internet est de 1 Gb/s.
+
+Vous pouvez remplacer cette machine virtuelle par un autre système d'exploitation réseau en vous appuyant sur ce guide [Remplacement de l'OVHgateway](https://docs.ovh.com/fr/nutanix/software-gateway-replacement/).
 
 ### Prism Central Access
 

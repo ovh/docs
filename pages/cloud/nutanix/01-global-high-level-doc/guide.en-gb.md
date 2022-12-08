@@ -6,7 +6,7 @@ section: Getting started
 order: 01
 ---
 
-**Last updated 11th January 2022**
+**Last updated 08th December 2022**
 
 ## Objective
 
@@ -22,6 +22,8 @@ A Nutanix cluster consists of a stack of OVHcloud services:
 - [Additional IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/)
 
 Dedicated servers (3 minimum) are connected within the vRack which is an L2 network, the hosts (node) private network.
+
+Two VLANs are used, VLAN 0 for public internet and VLAN 1 for Nutanix infrastructure (Hosts, CVMs, Prism Element and Prism Central).
 
 The public IP address of each node is not accessible since the Additional IP is dedicated to the Internet access. This access is ensured by the "OVHGateway" wich is a dedicated VM created by OVHcloud on your cluster.
 
@@ -54,12 +56,16 @@ You will need to increase these values if you add new features on your cluster.
 
 **The OVHgateway provides Internet access to the cluster via the Additional IP address.**
 
-This VM has two NICs, one for the private network (in the vRack) and the other one for the public Internet.
+This VM uses two network cards (in the vRack), one on the private network in VLAN 1 and the other for the public internet on VLAN 0.
 
 The VM uses NAT to route traffic from the private network to the Internet.
 You can therefore use it for outgoing traffic but not for incoming traffic.
 
 OVHgateway has a lightweight design, using 1 vCPU, 1 GB memory and a 11 GiB disk.
+
+Bandwidth for Internet access is 1 Gbps.
+
+You can replace this virtual machine with another network operating system by following this guide [Replace OVHgateway](https://docs.ovh.com/gb/en/nutanix/software-gateway-replacement/).
 
 ### Prism Central Access
 
