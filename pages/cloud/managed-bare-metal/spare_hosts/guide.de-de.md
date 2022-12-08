@@ -1,8 +1,8 @@
 ---
-title: Die Spare-Hosts
+title: Spare-Hosts
 routes:
     canonical: 'https://docs.ovh.com/de/private-cloud/die_spare-hosts/'
-excerpt: Bereitstellung eines Spare-Hosts in der Hosted Private Cloud
+excerpt: Bereitstellung eines Spare-Hosts in Managed Bare Metal
 slug: die_spare-hosts
 section: OVHcloud Funktionen
 order: 04
@@ -13,7 +13,7 @@ order: 04
 
 ## Voraussetzungen
 
-- Sie nutzen ein Angebot der Art [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external}.
+- Sie nutzen einen [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Dienst.
 
 ## Einleitung
 
