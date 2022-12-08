@@ -1,16 +1,11 @@
 ---
-title: 'Gestion du reboot de vos serveurs avec la fonctionnalité OVHcloud Link Aggregation'
-slug: netboot OLA
-excerpt: "Comment réaliser les redémarrages de vos serveurs OVHcloud fonctionnant à travers votre agrégation privée activée"
-section: 'Utilisation avancée'
----
 
 
 ## Objectif
 
 > [!warning]
 > 
-> Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissance concernant le monde open source, ainsi que des notions d'administration système et réseau.
+> Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissances concernant le monde open source, ainsi que des notions d'administration système et réseau.
 > 
 
 Cette documentation a pour but de vous accompagner pour déployer tous les composants et services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement **entièrement privé**.<br>
