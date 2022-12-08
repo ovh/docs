@@ -2,7 +2,7 @@
 title: 'Hosty zapasowe'
 routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/hosty_zapasowe/'
-excerpt: 'Zarządzanie hostami zapasowymi w usłudze Hosted Private Cloud'
+excerpt: 'Zarządzanie hostami zapasowymi w usłudze Managed Bare Metal'
 slug: hosty_zapasowe
 section: 'Funkcjonalności OVHcloud'
 legacy_guide_number: g860
@@ -10,7 +10,7 @@ legacy_guide_number: g860
 
 ## Wprowadzenie
 
-Otrzymałeś e-mail informujący o utworzeniu zgłoszenia awarii związanego z dodaniem hosta zapasowego do usługi Hosted Private Cloud.
+Otrzymałeś e-mail informujący o utworzeniu zgłoszenia awarii związanego z dodaniem hosta zapasowego do usługi Managed Bare Metal.
 
 Host zapasowy jest dostarczany do twojej infrastruktury w przypadku uszkodzenia hosta wchodzącego w skład infrastruktury. Host ten jest darmowy. W zgłoszeniu awarii określone jest IP hosta, którego dotyczy przerwa w usłudze. 
 Możesz się zalogować do vSphere Client, aby sprawdzić alert związany z uszkodzonym hostem. 
