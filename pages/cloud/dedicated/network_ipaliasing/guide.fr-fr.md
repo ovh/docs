@@ -273,7 +273,7 @@ cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/N
 > ```
 >
 
-Vous pouvez maintenant ajouter votre Additional IP au fichier de configuration comme suit :
+Vous pouvez maintenant ajouter votre Additional IP au fichier de configuration, comme dans l'exemple ci-dessous :
 
 ```sh
 editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
@@ -307,7 +307,7 @@ address1=ADDITIONAL_IP1/32
 address2=ADDITIONAL_IP2/32
 ```
 
-#### Étape 3 : Redémarrer l'interface
+#### Étape 3 : redémarrer l'interface
 
 Vous devez maintenant redémarrer votre interface :
 
