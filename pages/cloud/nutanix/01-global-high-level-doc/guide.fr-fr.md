@@ -58,7 +58,7 @@ Ces valeurs doivent être augmentées si vous ajoutez de nouvelles fonctionnalit
 
 **La passerelle OVHgateway permet d’accéder à Internet sur le cluster via l’adresse Additional IP.**
 
-Cette VM utilise deux cartes réseaux (dans le vRack), une sur le réseau privé dans le VLAN 1 et l’autre pour l’Internet public sur le VLAN 0.
+Cette VM utilise deux cartes réseau (dans le vRack), une pour le réseau privé sur le VLAN 1 et l’autre pour l’Internet public sur le VLAN 0.
 
 La VM utilise des règles de NAT pour acheminer le trafic du réseau privé vers Internet.
 Vous pouvez donc l'utiliser pour le trafic sortant mais pas pour le trafic entrant.
@@ -67,7 +67,7 @@ La passerelle OVHgateway est de conception légère, elle utilise 1 vCPU, 1 GB d
 
 La bande passante pour accéder à Internet est de 1 Gb/s.
 
-Vous pouvez remplacer cette machine virtuelle par un autre système d'exploitation réseau en vous appuyant sur ce guide [Remplacement de l'OVHgateway](https://docs.ovh.com/fr/nutanix/software-gateway-replacement/).
+Pour remplacer cette machine virtuelle par un autre système d'exploitation réseau, consultez ce guide : [Remplacement de l'OVHgateway](https://docs.ovh.com/fr/nutanix/software-gateway-replacement/).
 
 ### Prism Central Access
 

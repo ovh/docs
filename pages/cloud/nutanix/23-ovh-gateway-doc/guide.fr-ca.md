@@ -27,7 +27,7 @@ La VM est basée sur Ubuntu 20.04 LTS (« The Focal Fossa »).
 > Le fichier utilisé est téléchargé directement depuis les serveurs Ubuntu : <https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img> puis personnalisé à l'aide de cloud-init.
 
 > [!primary]
-> OVHcloud vous recommande de remplacer cette passerelle par une de votre choix. vous pouvez-vous aidez de ce guide [Remplacement de l'OVHgateway](https://docs.ovh.com/ca/fr/nutanix/software-gateway-replacement/).
+> OVHcloud vous recommande de remplacer cette passerelle par une de votre choix. Vous pouvez-vous aider de ce guide : [Remplacement de l'OVHgateway](https://docs.ovh.com/ca/fr/nutanix/software-gateway-replacement/).
 
 La passerelle OVHgateway a un design léger, avec 2 NICs, 1 vCPU, 1 GB de mémoire et 20 GiB d'espace-disque.
 
@@ -502,7 +502,7 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PR
 }
 ```
 
-le résultat de la requette vous renvoie la configuration des sous-réseaux il faut relevez les UUID de chaque sous réseau qui se trouve en dessous de `"kind": "subnet"` dans la variable "uuid" comme ici par exemple : 
+Le résultat de la requête vous renvoie la configuration des sous-réseaux. Il faut relever les UUID de chaque sous réseau qui se trouve en dessous de `"kind": "subnet"` dans la variable "uuid", comme ici par exemple : 
 
  * `3652d420-9f94-4350-8af7-b921d0761781` pour le VLAN **base** sur le VLAN 0  
  * `e60826da-4aab-4810-b7d3-0604a3e16719` pour le VLAN **infra** sur le VLAN 1

@@ -8,7 +8,7 @@ section: Rede e segurança
 order: 03
 ---
 
-**Last updated 08th December 2022**
+**Last updated 8th December 2022**
 
 ## Objective
 
@@ -29,7 +29,7 @@ The VM is based on Ubuntu 20.04 LTS (“ The Focal Fossa ”).
 > The file used is downloaded directly from the Ubuntu servers: <https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img> then customised using cloud-init.
 
 > [!primary]
-> OVHcloud recommends that you replace this gateway with one of your choice. You can use this guide [OVHgateway replacement](https://docs.ovh.com/pt/nutanix/software-gateway-replacement/).
+> OVHcloud recommends that you replace this gateway with one of your choice. You can use this guide: [OVHgateway replacement](https://docs.ovh.com/pt/nutanix/software-gateway-replacement/).
 
 The OVHgateway has a lightweight design, with 2 NICs, 1 vCPU, 1 GB of memory and 20 GiB of disk space.
 
@@ -505,7 +505,7 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u `admin:PR
 }
 ```
 
-the result of the query returns the configuration of the subnets. You will need to find the UUIDs of these subnets, which are located below ``kind`: `subnet` in the `uuid` variable as in this example:
+the result of the query returns the configuration of the subnets. You will need to find the UUIDs of these subnets, which are located below `kind`: `subnet` in the `uuid` variable as in this example:
 
 * `3652d420-9f94-4350-8af7-b921d0761781` for VLAN **base** on VLAN 0
 * `e60826da-4aab-4810-b7d3-0604a3e16719` for VLAN **infra** on VLAN 1
