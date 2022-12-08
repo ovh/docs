@@ -6,7 +6,7 @@ section: Getting started
 order: 01
 ---
 
-**Last updated 11th January 2022**
+**Last updated 08th December 2022**
 
 ## Objective
 
@@ -125,7 +125,7 @@ OVHgateway has a lightweight design, using 1 vCPU, 1 GB memory and a 11 GiB disk
 
 Bandwidth for Internet access is 1 Gbps.
 
-You can replace this virtual machine with another network operating system by following this guide [Replace OVHgateway](https://docs.ovh.com/en/gb/nutanix/software-gateway-replacement/).
+You can replace this virtual machine with another network operating system by following this guide [Replace OVHgateway](https://docs.ovh.com/us/en/nutanix/software-gateway-replacement/).
 
 ### Prism Central Access
 

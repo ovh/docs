@@ -6,7 +6,7 @@ section: Réseau et sécurité
 order: 03
 ---
 
-**Dernière mise à jour le 02/05/2022**
+**Dernière mise à jour le 08/12/2022**
 
 ## Objectif
 
@@ -27,7 +27,7 @@ La VM est basée sur Ubuntu 20.04 LTS (« The Focal Fossa »).
 > Le fichier utilisé est téléchargé directement depuis les serveurs Ubuntu : <https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img> puis personnalisé à l'aide de cloud-init.
 
 > [!primary]
-> OVHcloud vous recommande de remplacer cette passerelle par une de votre choix. vous pouvez-vous aidez de ce guide [Remplacement de l'OVHgateway](https://docs.ovh.com/fr/nutanix/software-gateway-replacement/).
+> OVHcloud vous recommande de remplacer cette passerelle par une de votre choix. vous pouvez-vous aidez de ce guide [Remplacement de l'OVHgateway](https://docs.ovh.com/ca/fr/nutanix/software-gateway-replacement/).
 
 La passerelle OVHgateway a un design léger, avec 2 NICs, 1 vCPU, 1 GB de mémoire et 20 GiB d'espace-disque.
 
