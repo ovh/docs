@@ -80,7 +80,7 @@ A forma de o fazer é diferente consoante os direitos que delegou e o software o
 
 - **A partir do webmail Outlook Web Application (OWA)**
 
-Aceda ao endereço <https://www.ovh.com/pt/mail/> e introduza os identificadores da conta de e-mail que disponham do direito delegado. Depois de aceder, clique com o botão direito do rato no nome da conta no menu à esquerda e selecione `Adicionar uma pasta partilhada` {.action}.
+Aceda ao endereço <https://www.ovh.com/pt/mail/> e introduza os identificadores da conta de e-mail que disponham do direito delegado. Depois de aceder, clique com o botão direito do rato no nome da conta no menu à esquerda e selecione `Adicionar uma pasta partilhada`{.action}.
 
 Na janela que aparecer, indique o nome da conta para a qual beneficia do direito delegado e clique em `Adicionar`{.action}. A conta aparece no menu à esquerda, permitindo-lhe explorar o seu conteúdo.
 

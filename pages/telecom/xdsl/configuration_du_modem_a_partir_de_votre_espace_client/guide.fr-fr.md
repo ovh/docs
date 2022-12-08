@@ -5,7 +5,7 @@ excerpt: "Découvrez comment paramétrer à distance votre box OVHcloud depuis l
 section: 'Configuration de mon offre'
 ---
 
-**Dernière mise à jour le 10/11/2022**
+**Dernière mise à jour le 08/12/2022**
 
 ## Objectif
 
@@ -72,7 +72,7 @@ Depuis cette partie, plusieurs possibilités s'offrent à vous.
 
 - **Redémarrer à distance votre box** : pour cela, cliquez sur le bouton `Redémarrer le modem`{.action} puis confirmez l'action. Patientez alors le temps que votre box redémarre.
 
-- **Activer ou désactiver la configuration à distance de votre box** : pour cela, cochez ou décochez la case à côté de `Configuration à distance activée`. L'activation écrasera le paramétrage actuel de votre box. La désactivation rendra impossible la configuration de votre box depuis l'espace client OVHcloud, celle-ci conservera cependant les paramètres en place au moment de la désactivation. Lors de la désactivation, un nouveau mot de passe est généré et transmis par e-mail pour vous permettre d'accéder à l'interface locale du modem.
+- **Activer ou désactiver la configuration à distance de votre box** : pour cela, cochez ou décochez la case à côté de `Configuration à distance activée`. L'activation écrasera le paramétrage actuel de votre box. La désactivation rendra impossible la configuration de votre box depuis l'espace client OVHcloud, celle-ci conservera cependant les paramètres en place au moment de la désactivation. Lors de la désactivation, un nouveau mot de passe est généré et transmis par e-mail pour vous permettre d'accéder à l'interface locale du modem. Pour plus d'informations sur la configuration d'un modem Zyxel sans la configuration à distance, veuillez consulter le [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8825-T50K_V5.13_5.50-1.pdf){.external}.
 
 - **Pare-feu** : lorsque vous gérez votre box à distance, le pare-feu n’est pas paramétrable. Celui-ci s’adapte automatiquement aux configurations en place dans l’espace client.
 

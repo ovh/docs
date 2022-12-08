@@ -1,5 +1,5 @@
 ---
-title: FAQ Dedicated Cloud
+title: FAQ Hosted Private Cloud
 excerpt: ''
 slug: faq_dedicated_cloud
 legacy_guide_number: g598

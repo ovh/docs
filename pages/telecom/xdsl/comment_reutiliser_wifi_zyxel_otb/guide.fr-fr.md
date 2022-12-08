@@ -110,7 +110,7 @@ Branchez la première extrémité du câble dans le port LAN4 du modem Zyxel, la
 
 A l'aide d'un appareil pouvant se connecter au WiFi, connectez vous au WiFi partagé par votre modem Zyxel
 
-Si vous avez besoin d'aide pour configurer le réseau WiFi de votre modem Zyxel, vous pouvez consulter le [guide utilisateur Zyxel (en anglais)](http://files.isp.ovh.net/zyxel/VMG8823-B50B_V5.13_5.50.pdf){.external}.
+Si vous avez besoin d'aide pour configurer le réseau WiFi de votre modem Zyxel, vous pouvez consulter le [guide utilisateur Zyxel (en anglais)](http://files.isp.ovh.net/zyxel/VMG8825-T50K_V5.13_5.50-1.pdf){.external}.
 
 Une fois votre appareil connecté au WiFi, vérifiez que votre addresse IP correspond au DHCP de l'OverTheBox. Dans l'image ci-dessous, sur un téléphone Android, l'addresse IP 192.168.100.189 est bien incluse dans la plage d'addresses du DHCP de l'OverTheBox (192.168.100.0/24). L'IP de la passerelle, 192.168.100.1, correspond bien à l'IP du boitier OverTheBox au sein du LAN.
 

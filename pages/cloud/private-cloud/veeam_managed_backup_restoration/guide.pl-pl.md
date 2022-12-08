@@ -37,7 +37,7 @@ Zaloguj się na stronie [https://api.ovh.com/](https://api.ovh.com/) i skorzysta
 
 Wpisz zmienne:
 
-- serviceName: numer referencyjny usługi Dedicated Cloud w formie `pcc-XX-XX-XX-XX`
+- serviceName: numer referencyjny usługi Hosted Private Cloud w formie `pcc-XX-XX-XX-XX`
 - datacenterId: ID centrum danych, w którym jest aktywowane Twoje rozwiązanie Veeam Managed Backup
 
 To wywołanie generuje raport z kopii zapasowych. Zostanie on wysłany e-mailem na adres wskazany w koncie administratora usługi Hosted Private Cloud.
@@ -72,7 +72,7 @@ Zaloguj się na stronie [https://api.ovh.com/](https://api.ovh.com/) i skorzysta
 
 Wpisz zmienne:
 
-- serviceName: numer referencyjny usługi Dedicated Cloud w formie `pcc-XX-XX-XX-XX`
+- serviceName: numer referencyjny usługi Hosted Private Cloud w formie `pcc-XX-XX-XX-XX`
 - datacenterId: ID centrum danych, w którym jest aktywowane Twoje rozwiązanie Veeam Managed Backup
 - backupJobName (opcjonalnie): nazwa kopii zapasowej (uzyskana w etapie 1) w formie `pcc-XXX-XXX-XXX-XXX-XXX_vm-XXX`, jeśli chcesz przywrócić tylko jedną VM.
 - backupRepositoryName: nazwa backupRepository otrzymana w etapie 1

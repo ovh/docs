@@ -145,9 +145,9 @@ La facturation se base sur le tableau des tarifs disponible sur [cette page](htt
 
 - Vous avez une infrastructure SDDC avec deux hôtes L et deux hôtes XL. Sur cette infrastructure, vous démarrez deux machines virtuelles Windows Standard sur les hôtes L. Au cours du mois, une des machines virtuelles est déplacée sur un hôte XL. Dans ce cas, vous serez facturé de 75€ HT (25 € + 50 €).
 
-- Vous avez une infrastructure Dedicated Cloud avec deux hôtes M. Sur cette infrastructure, vous démarrez 11 machines virtuelles Windows Standard, et vous créez une règle DRS pour que les 11 machines virtuelles soient toujours sur le même host. Dans ce cas, serez facturé de 130 € HT correspondant à une licence "Datacenter"
+- Vous avez une infrastructure Hosted Private Cloud avec deux hôtes M. Sur cette infrastructure, vous démarrez 11 machines virtuelles Windows Standard, et vous créez une règle DRS pour que les 11 machines virtuelles soient toujours sur le même host. Dans ce cas, serez facturé de 130 € HT correspondant à une licence "Datacenter"
 
-- Vous avez une infrastructure Dedicated Cloud avec deux hôtes L+. Sur cette infrastructure, vous démarrez trois machines virtuelles Windows Standard et une machine virtuelle Windows Datacenter.
+- Vous avez une infrastructure Hosted Private Cloud avec deux hôtes L+. Sur cette infrastructure, vous démarrez trois machines virtuelles Windows Standard et une machine virtuelle Windows Datacenter.
 
 Deux cas peuvent se présenter ici :
 

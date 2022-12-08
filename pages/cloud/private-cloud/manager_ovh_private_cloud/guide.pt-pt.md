@@ -129,7 +129,7 @@ Vejamos mais pormenorizadamente a alteração de permissões por datacenter:
 |Apenas leitura|Acesso só de leitura|
 |Operador|Permite configurar máquinas virtuais (MV) na rede pública.|
 
-- `Acesso ao V(X)LAN`{.action} \-  trata-se da gestão das permissões na secção Rede Privada (VXLAN na gama Dedicated Cloud ou VLAN na gama SDDC):
+- `Acesso ao V(X)LAN`{.action} \-  trata-se da gestão das permissões na secção Rede Privada (VXLAN na gama Hosted Private Cloud ou VLAN na gama SDDC):
 
 |Permissões|Descrição|
 |---|---|
@@ -204,7 +204,7 @@ Numa Private Cloud, pode dispor de vários datacenters. Vai encontrá-los se cli
 Pode personalizar o nome do seu datacenter ao clicar no lápis, bem como acrescentar uma descrição personalizada.
 
 Encontrará as principais informações sobre o datacenter, a gama, o número de hosts e de datastores.
-É possível beneficiar de vários datacenters num mesmo serviço Private Cloud, desde que se trate das gamas Dedicated Cloud e Software Defined Datacenter.
+É possível beneficiar de vários datacenters num mesmo serviço Private Cloud, desde que se trate das gamas Hosted Private Cloud e Software Defined Datacenter.
 
 
 #### Hosts

@@ -41,7 +41,7 @@ Une fois connecté à votre espace client OVHcloud, rendez-vous dans le menu `Ba
 
 ### Etapa 2: adicionar os seus servidores ao vRack
 
-Depois de ativar o vRack na sua conta, aceda à secção `Bare Metal Cloud`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Network` {.action} e abra o menu `vRack {.action}.
+Depois de ativar o vRack na sua conta, aceda à secção `Bare Metal Cloud`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Network`{.action} e abra o menu `vRack {.action}.
 
 Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis. Clique em cada um dos servidores que deseja adicionar ao vRack e, a seguir, em `Adicionar`{.action}.
 
