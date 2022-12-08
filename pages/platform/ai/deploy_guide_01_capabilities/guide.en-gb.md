@@ -49,7 +49,7 @@ Entire AI Deploy instances have to be in the same region. Multi-AZ is currently 
 ##### **Replica type**
 
 You can either choose the number of GPU or CPU for an AI Deploy app, not both.
-By default, a job uses one CPU instance.
+By default, an app uses one CPU instance.
 
 ##### **Available replica ranges**
 
@@ -97,11 +97,13 @@ Attached storage allows you to work on several TB of data, while being persisten
 
 #### Permitted deployment
 
-AI Deploy authorizes the deployment of your own Docker images or applications from the [OVHcloud catalog](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/).
+AI Deploy authorizes the deployment of your own Docker images or applications from the [OVHcloud portfolio](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/).
 
 Docker images can be hosted in a public or private registry.
 
-However, the use of `docker-compose` is not possible.
+The use of `docker-compose` is not possible.
+
+Please beware that images need to be built with an **AMD architecture**.
 
 #### Maximum execution time
 
