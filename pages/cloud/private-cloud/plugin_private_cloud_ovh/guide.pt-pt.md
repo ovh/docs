@@ -37,7 +37,7 @@ A encomenda de datastores adicionais é feita no menu `Add Storage`{.action}.
 
 Nota: existe uma alternativa para aceder a estes menus. Para o fazer, clique com o botão direito do rato no datacenter ou no cluster da infraestrutura e, em seguida, selecione a opção `OVHcloud`{.action}.
 
-![Opção OVH Dedicated Cloud](images/Plugin03.jpg){.thumbnail}
+![Opção OVH Hosted Private Cloud](images/Plugin03.jpg){.thumbnail}
 
 ## Quer saber mais?
 

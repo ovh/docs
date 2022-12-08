@@ -37,7 +37,7 @@ Zamówienie dotyczące dodatkowych przestrzeni dyskowych (datastores) można zł
 
 Pamiętaj, że istnieje alternatywny sposób dostępu do tych menu. Możesz mianowicie kliknąć prawym przyciskiem myszy na centrum danych lub klaster infrastruktury, a następnie wybrać `OVHcloud`{.action}.
 
-![OVHcloud Dedicated Cloud Option](images/Plugin03.jpg){.thumbnail}
+![OVHcloud Hosted Private Cloud Option](images/Plugin03.jpg){.thumbnail}
 
 ## Sprawdź również
 

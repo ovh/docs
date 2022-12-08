@@ -132,7 +132,7 @@ We zullen de wijziging van rechten per datacenter in meer detail bekijken:
 |alleen-lezen|alleen-lezen toegang|
 |provider|hiermee kunt u virtuele machines (VM) op het openbare netwerk configureren|
 
-- `Toegang tot het V(X)LAN`{.action} - voor het beheren van rechten op het privénetwerk-gedeelte. VXLAN's voor de Dedicated Cloud-reeks of VLAN's voor de SDDC-reeks:
+- `Toegang tot het V(X)LAN`{.action} - voor het beheren van rechten op het privénetwerk-gedeelte. VXLAN's voor de Hosted Private Cloud-reeks of VLAN's voor de SDDC-reeks:
 
 |Rechten |Omschrijving|
 |---|---|
@@ -183,7 +183,7 @@ In een Private Cloud kunt u meerdere datacenters hebben. U kunt ze vinden door o
 
 U kunt de naam van uw datacenter personaliseren door op het potloodpictogram te klikken. U kunt ook een persoonlijke beschrijving toevoegen.
 U vindt de belangrijkste informatie over uw datacenter, de reeks (SDDC of DC), het aantal hosts en datastores.
-U kunt meerdere datacenters in één Private Cloud hebben als u Dedicated Cloud- en Software Defined Datacenter-reeksen heeft.
+U kunt meerdere datacenters in één Private Cloud hebben als u Hosted Private Cloud- en Software Defined Datacenter-reeksen heeft.
 
 
 ### Hosts

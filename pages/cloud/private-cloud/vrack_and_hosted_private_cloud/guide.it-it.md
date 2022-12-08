@@ -64,7 +64,7 @@ Per imitare il contesto, ecco:
 
 **Tutti i vDC di uno stesso Hosted Private Cloud condividono la stessa vRack VM Network.**
 
-![VM Network condiviso nel Dedicated Cloud](images/all-vdc-share-same-vmnetwork.png){.thumbnail}
+![VM Network condiviso nel Hosted Private Cloud](images/all-vdc-share-same-vmnetwork.png){.thumbnail}
 
 **Collegare 1 vRack vDC e 1 vRack vDC, nella stessa zona geografica, in diversi Hosted Private Cloud.**
 

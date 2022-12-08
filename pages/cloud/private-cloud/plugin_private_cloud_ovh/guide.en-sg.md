@@ -37,7 +37,7 @@ You can also order additional data stores from the `Add Storage`{.action} menu.
 
 There is also another way to access these menus. You can right-click on the infrastructure’s datacentre or cluster, then choose `OVHcloud`{.action}.
 
-![OVHcloud Dedicated Cloud Option](images/Plugin03.jpg){.thumbnail}
+![OVHcloud Hosted Private Cloud Option](images/Plugin03.jpg){.thumbnail}
 
 ## Go further
 

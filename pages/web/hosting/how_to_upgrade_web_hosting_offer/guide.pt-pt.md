@@ -57,9 +57,9 @@ Por conseguinte, a renovação da autorização de introdução no mercado terá
 > Para isso, siga [estas instruções](#checks), efetue a alteração da oferta e repita estas operações sempre que necessário.
 >
 
-Para alterar a subscrição, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud` {.action. Clique em `Alojamentos` {.action} e selecione o alojamento em causa.
+Para alterar a subscrição, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud` {.action. Clique em `Alojamentos`{.action} e selecione o alojamento em causa.
 
-No quadro `Subscrição`, clique no botão `...`{.action} à direita de `Oferta`, `Mudar de oferta` {.action}.
+No quadro `Subscrição`, clique no botão `...`{.action} à direita de `Oferta`, `Mudar de oferta`{.action}.
 
 ![change_plan](images/change_plan.png){.thumbnail}
 
@@ -115,7 +115,7 @@ A quota utilizada no seu alojamento FTP está visível na secção `Alojamentos`
 
 Verifique também que a nova oferta inclui um número suficiente de endereços de e-mail disponíveis. Caso contrário, elimine endereços supérfluos, depois de os ter [guardado](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/), se necessário.
 
-Se pretender manter o mesmo número de caixas de correio antes de passar o seu alojamento numa oferta inferior, pode igualmente encomendar uma nova oferta de e-mail **MX Plan**. Na parte `E-mails` {.action}, clique na oferta em causa e, a seguir, no botão `...`{.action} à direita de `Oferta`. Finalmente, clique em `Mudar de oferta`{.action}.
+Se pretender manter o mesmo número de caixas de correio antes de passar o seu alojamento numa oferta inferior, pode igualmente encomendar uma nova oferta de e-mail **MX Plan**. Na parte `E-mails`{.action}, clique na oferta em causa e, a seguir, no botão `...`{.action} à direita de `Oferta`. Finalmente, clique em `Mudar de oferta`{.action}.
 
 ![mxplan](images/mxplan.png){.thumbnail}
 

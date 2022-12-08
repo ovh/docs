@@ -110,7 +110,7 @@ Vous allez alors recevoir un SMS pour valider l'autorisation « **token validato
 Voici un exemple de SMS envoyé:
 
 ```console
-OVHcloud - Dedicated Cloud - message destiné à l'utilisateur admin.
+OVHcloud - Hosted Private Cloud - message destiné à l'utilisateur admin.
 L'opération testTokenValidation (#1743283) sur pcc-192-0-2-1 a besoin d'une validation.
 Id d'opération : 1743283.
 Token de confirmation : 540427.

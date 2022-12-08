@@ -58,7 +58,7 @@ Na tabela pode ver a configuração OVHcloud do seu domínio. Cada linha corresp
 
 ![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
-Se já existem campos MX e pretende substituí-los, clique no botão `...`{.action} à direita de cada linha da tabela em causa, e clique em `Eliminar entrada` {.action}. No entanto, certifique-se de que não deixa o seu domínio sem nenhum registo MX quando adicionar os registos MX pretendidos.
+Se já existem campos MX e pretende substituí-los, clique no botão `...`{.action} à direita de cada linha da tabela em causa, e clique em `Eliminar entrada`{.action}. No entanto, certifique-se de que não deixa o seu domínio sem nenhum registo MX quando adicionar os registos MX pretendidos.
 
 Para verificar mais rapidamente se já existem campos MX, selecione, com o filtro situado acima da tabela DNS, o campo do tipo **MX** e valide para só apresentar as entradas DNS MX da sua zona DNS.
 

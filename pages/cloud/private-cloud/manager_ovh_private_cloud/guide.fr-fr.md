@@ -93,7 +93,7 @@ Cliquez sur le bouton `...`{.action} puis sur `modifier les droits`{.action}.
 |Lecture seule|accès en lecture seule|
 |Operateur|permet de configurer des machines virtuelles (VM) sur le réseau public|
 
-- **Accès au V(X)LAN**: il s'agit de la gestion des droits sur la partie réseau privé (les VXLAN pour la gamme Dedicated Cloud ou les VLAN pour la gamme SDDC) :
+- **Accès au V(X)LAN**: il s'agit de la gestion des droits sur la partie réseau privé (les VXLAN pour la gamme Hosted Private Cloud ou les VLAN pour la gamme SDDC) :
 
 |Droits|Description|
 |---|---|
