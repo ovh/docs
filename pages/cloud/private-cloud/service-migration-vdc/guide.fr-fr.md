@@ -12,7 +12,7 @@ hidden: true
 .ovh-api-main { background:#fff;}
 </style> 
 
-**Dernière mise à jour le 18/11/2022**
+**Dernière mise à jour le 08/12/2022**
 
 **Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (DC ou SDDC) vers un nouveau vDC de destination (Essentials ou Premier).**
 
@@ -32,10 +32,10 @@ Ce processus comporte deux aspects :
 
 ## Prérequis
 
-- Une infrastructure PCC (SDDC ou DC)
-- Un [nouveau vRack ou un vRack vide](https://docs.ovh.com/fr/private-cloud/utiliser-le-private-cloud-au-sein-d-un-vrack/) ajouté sur votre infrastructure PCC (SDDC ou DC)
+- Une infrastructure PCC (SDDC ou DC).
+- Un [nouveau vRack ou un vRack vide](https://docs.ovh.com/fr/private-cloud/utiliser-le-private-cloud-au-sein-d-un-vrack/) ajouté sur votre infrastructure PCC (SDDC ou DC).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action}.
-- Être connecté à votre interface d'administration vSphere
+- Être connecté à votre interface d'administration vSphere.
 
 ## En pratique
 
