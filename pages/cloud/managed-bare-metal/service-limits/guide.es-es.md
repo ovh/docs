@@ -22,17 +22,17 @@ order: 2
 
 | Elemento | Descripción | Valor |
 |:-----:|:-----:|:----------:|
-| Número máx. Hosted Private Cloud por ID de cliente | Número de vCenter o packs por organización | Sin límite |
-| Número de Hosted Private Cloud asociados | Conexión de vCenters (Enhanced Link Mode) | 0 (no autorizado) |
-| Número mín. de hosts por Hosted Private Cloud (SLA) | Número de hosts por vCenter para el mantenimiento del contrato de nivel de servicio | 2 |
-| Número mín. de hosts por Hosted Private Cloud (sin SLA) | Número mínimo de hosts que se deben utilizar con vCenter sin contrato de nivel de servicio | 0 |
+| Número máx. Managed Bare Metal por ID de cliente | Número de vCenter o packs por organización | Sin límite |
+| Número de Managed Bare Metal asociados | Conexión de vCenters (Enhanced Link Mode) | 0 (no autorizado) |
+| Número mín. de hosts por Managed Bare Metal (SLA) | Número de hosts por vCenter para el mantenimiento del contrato de nivel de servicio | 2 |
+| Número mín. de hosts por Managed Bare Metal (sin SLA) | Número mínimo de hosts que se deben utilizar con vCenter sin contrato de nivel de servicio | 0 |
 | Número máx. de hosts por cluster | Hosts por cluster | 64 |
 | Número máx. de clusters por vDC | Número de clusters en el mismo datacenter virtual | Sin límite |
-| Número máx. de vDC por Hosted Private Cloud | Número de datacenters virtuales (vDC) que los clientes pueden añadir por vCenter | 400 |
-| Número máx. de hosts por Hosted Private Cloud | Límites de hosts por vCenter | playa **Hosts**: 340 hosts, 70 zpools<br>playa **Hybrid**: 241 hosts, 120 zpools<br>playa **BigDS**: 76 hosts, 205 zpools |
+| Número máx. de vDC por Managed Bare Metal | Número de datacenters virtuales (vDC) que los clientes pueden añadir por vCenter | 400 |
+| Número máx. de hosts por Managed Bare Metal | Límites de hosts por vCenter | playa **Hosts**: 340 hosts, 70 zpools<br>playa **Hybrid**: 241 hosts, 120 zpools<br>playa **BigDS**: 76 hosts, 205 zpools |
 | Número máx. máquinas virtuales por SDDC | MV gestionadas por el mismo vCenter | 25 000 |
 | Número máx. máquinas virtuales por host | MV alojadas en el mismo host físico | 1024 |
-| Número máx. de direcciones IP por Private Cloud | Número máx. direcciones IP públicas que puedan asignarse y utilizarse por vCenter | 1 x /23 |
+| Número máx. de direcciones IP por Managed Bare Metal | Número máx. direcciones IP públicas que puedan asignarse y utilizarse por vCenter | 1 x /23 |
 | vCPU, memoria RAM y disco utilizados por vCenter standard | Recursos asignados a vCenter (VCSA) | 4 procesadores virtuales, 16 GB de RAM, 290 GB de espacio en disco |
 | vCPU, memoria RAM y disco utilizados por vROPS | Recursos asignados a vROPS | 4 procesadores virtuales, 16 GB de RAM |
 | Número máx. túneles VPN IPSec | Número máx. túneles VPN por extensión | 512 compact edge<br>1600 large de edge<br>4096 quad large edge<br>6000 extra large edge |
