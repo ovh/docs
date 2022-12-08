@@ -1536,3 +1536,4 @@
             + [Overview of OVH Data Collector](labs/data-collector/overview)
             + [Manage my Data Collector](labs/data-collector/manage-collector)
             + [Available sources and sinks](labs/data-collector/available-sinks-sources)
+            + [Best guide](account/customer/UAT-Best-guides)
