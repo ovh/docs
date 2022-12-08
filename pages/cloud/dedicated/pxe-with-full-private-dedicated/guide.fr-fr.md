@@ -1,7 +1,7 @@
 ---
 title: 'Gestion du reboot de vos serveurs avec la fonctionnalité OVHcloud Link Aggregation'
 slug: netboot OLA
-excerpt: "Comment réaliser les redémarrages de vos solutions OVHcloud fonctionnant à travers votre agrégation privée activée"
+excerpt: "Comment réaliser les redémarrages de vos serveurs OVHcloud fonctionnant à travers votre agrégation privée activée"
 section: 'Utilisation avancée'
 ---
 
@@ -10,18 +10,18 @@ section: 'Utilisation avancée'
 
 > [!warning]
 > 
-> Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissance concernant le monde open source, ainsi que des notions d'administration.
+> Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissance concernant le monde open source, ainsi que des notions d'administration système et réseau.
 > 
 
-Cette documentation à pour but de vous accompagner pour déployer tous les composants et services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement **entièrement privée**.<br>
-Profitez d'une infrastructure privée sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVhcloud.
+Cette documentation a pour but de vous accompagner pour déployer tous les composants et services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement **entièrement privé**.<br>
+Profitez d'une infrastructure privée sans avoir modifié la configuration par défaut de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) OVHcloud.
 
 
 > [!warning]
 >
 > Nous avons au préalable effectué tous nos tests, qualifications et validations de configurations, à partir de paramètres et critères de fonctionnement bien définis, pour vous proposer des environnements techniques les mieux adaptés à votre matériel.
 > 
-> Le Netboot (Network Boot) consiste, de par ses différentes séquences, à utiliser votre interface réseau (en mode bas niveau) comme moyen de sélection d'amorçage à vos systèmes d'exploitation.
+> Le Netboot (Network Boot) consiste, de par ses différentes séquences, à utiliser votre interface réseau (en mode bas niveau) comme moyen de sélection de boot à vos systèmes d'exploitation.
 > A savoir qu'il est possible de démarrer n'importe quel système à partir d'un volume réseau, par exemple SAN ou NFS. Cependant, le système démarre généralement à partir d'un volume local : disque local, CD/DVD ou USB.
 >
 > Pour rappel, il est fortement déconseillé de modifier les configurations par défaut: configuration BIOS, Boot Order, etc.
@@ -36,7 +36,7 @@ Chaque serveur est muni au minimum de 2 interfaces réseaux, fonctionnants en r�
 Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *publics*, et ceux *privés* en passant par notre solution [vrack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
 
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire ne possédant **uniquement** que des réseaux privés.
-Ce choix propose à votre infrastructure la meilleur isolation/protection possible pour votre service hébergé.<br>
+Ce choix propose à votre infrastructure la meilleure isolation/protection possible pour votre service hébergé.<br>
 La seule différence majeure qui est à noter, est que les réseaux [privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
 Par conséquent, un serveur isolé de par son réseau privé empéche le mecanisme de démarrage, à savoir que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers s'appuyent sur le réseau interne d'OVHcloud et ses services mutualisés.
 
@@ -85,8 +85,8 @@ liste des composants intervenants lors du démarrage :
 |4. chargement du binaire iPXE en tant que firmware|
 |5. requête de récupération de script iPXE|
 |6. récuparation du script iPXE associé en TFTP|
-|7. éxécution du script iPXE. récupération des ressources nécessaire à rEFInd: binaire et fichier de configuration requis|
-|8. éxécution et chargement du binaire rEFInd|
+|7. exécution du script iPXE. récupération des ressources nécessaires à rEFInd: binaire et fichier de configuration requis|
+|8. exécution et chargement du binaire rEFInd|
 |9. rEFInd lance sa tâche de scan afin de repérer les secteurs d'amorçage des disques locaux|
 
 > [!primary]
@@ -125,9 +125,9 @@ Selon votre distribution, l'arboresence peut être différente (dhcpd.conf).
 
 En régle générale, il suffit de:<br>
 
-* déclarez une interface réseau pour l'écoute (en attente de requêtes).
-* précisez la version du protocol IP (v4 ou v6).
-* renseignez un fichier de configuration principale (à titre d'exemple, cf fichier ci-dessous)
+* déclarer une interface réseau pour l'écoute (en attente de requêtes).
+* préciser la version du protocol IP (v4 ou v6).
+* renseigner un fichier de configuration principale (à titre d'exemple, cf fichier ci-dessous)
 
 ```bash
 default-lease-time 7200;
@@ -279,7 +279,7 @@ root@node_0:/srv/tftp# tree
 
 Contenu du fichier `refind.pxe`: <br>
 
-```bash
+```none
 #!ipxe 
 
 echo Boot to local disk
@@ -300,7 +300,6 @@ chain refind
 echo Chain on hard drive failed
 sleep 10
 exit 1
-
 ```
 
 
@@ -365,11 +364,11 @@ liste des ports à autoriser dans votre firewall local (de la machine hébergean
 
 ## Aller plus loin
 
-Comprendre et/ou personnaliser votre service DHCP via ce [lien](https://wiki.debian.org/fr/DHCP_Server).<br>
-Comprendre et/ou personnaliser votre service iPXE via ce [lien](https://ipxe.org/docs).<br>
-Comprendre et/ou personnaliser votre service rEFInd via ce [lien](https://fr.wikipedia.org/wiki/REFInd).<br>
-Comprendre ou découvrir NTP via ce [lien](https://fr.wikipedia.org/wiki/Network_Time_Protocol).<br>
-Comprendre ou découvrir Dnsmasq via ce [lien](https://wiki.debian.org/dnsmasq).<br>
+[Comprendre et/ou personnaliser votre service DHCP](https://wiki.debian.org/fr/DHCP_Server).<br>
+[Comprendre et/ou personnaliser votre service iPXE](https://ipxe.org/docs).<br>
+[Comprendre et/ou personnaliser votre service rEFInd](https://fr.wikipedia.org/wiki/REFInd).<br>
+[Comprendre ou découvrir NTP](https://fr.wikipedia.org/wiki/Network_Time_Protocol).<br>
+[Comprendre ou découvrir Dnsmasq](https://wiki.debian.org/dnsmasq).<br>
 
 
 
