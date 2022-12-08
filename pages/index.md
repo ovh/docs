@@ -1093,6 +1093,7 @@
             + [Managing contacts for your services](account/customer/managing_contacts)
             + [Setting and managing an account password](account/customer/manage-ovh-password)
             + [Creating an OVHcloud Frankenguide](account/customer/uat-frankenguide-01)
+            + [truc](account/customer/truc)
         + [Security and conformity](account-and-service-management-account-information-security-and-conformity)
             + [Enabling two-factor authentication by security key](account/customer/enable-2fa-with-security-key)
             + [Enable two-factor authentication via OTP](account/customer/enable-2fa-with-mobile-app)
