@@ -348,10 +348,10 @@ Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/p
 
 **Suggestions**
 
-###### service DNS:<br>
+##### service **DNS**
 Pour pouvez utiliser la table locale de chaque *Node*, à savoir le fichier `/etc/hosts`, ou bien utiliser un service tel que [dnsmasq](https://en.wikipedia.org/wiki/Dnsmasq).
 
-###### service NTP:<br>
+##### service **NTP**
 Il est fortement conseillé d'utiliser un service NTP surtout si votre infrastructure comprends plusieurs machines.
 
 liste des ports à autoriser dans votre firewall local (de la machine hébergeant les services):
