@@ -26,7 +26,7 @@ It might become necessary to manually adjust the access settings of a service. T
 
 ## Instructions
 
-To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+Coucou! To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
 You can verify the cluster number of the Web Hosting on this page under **FTP server**.
 
 ### Cluster 002
