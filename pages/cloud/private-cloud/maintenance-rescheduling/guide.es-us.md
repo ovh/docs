@@ -1,6 +1,6 @@
 ---
 title: Desplazar un mantenimiento programado en su Hosted Private Cloud
-excerpt: "Esta guía explica cómo descubrir un mantenimiento programado en un servicio Hosted Private Cloud powered by VMware".
+excerpt: "Esta guía explica cómo descubrir un mantenimiento programado en un servicio Hosted Private Cloud powered by VMware"
 slug: maintenance-rescheduling
 section: Funcionalidades de OVHcloud
 ---
