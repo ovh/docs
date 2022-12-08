@@ -5,7 +5,7 @@ excerpt: 'Find out how to add Additional IP addresses to your server configurati
 section: 'Network Management'
 ---
 
-**Last updated 10th November 2022**
+**Last updated 7th December 2022**
 
 > [!primary]
 >
@@ -208,8 +208,7 @@ You now need to restart your interface:
 /etc/init.d/networking restart
 ```
 
-
-### Debian 9+, Ubuntu 17.04, Fedora 26+ and Arch Linux
+### Debian 9+, Ubuntu 17.04 and Arch Linux
 
 On these distributions, the naming of interfaces as eth0, eth1 (and so on) is abolished. We will therefore use `systemd-network` more generally.
 
@@ -243,6 +242,74 @@ You now need to restart your interface:
 ```sh
 systemctl restart systemd-networkd
 ```
+
+### Fedora 36 and following
+
+Fedora now uses keyfiles. NetworkManager previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in `/etc/NetworkManager/system-connections/`.
+
+#### Step 1: Create a backup
+
+First, make a copy of the config file, so that you can revert at any time:
+
+```sh
+cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
+
+#### Step 2: Edit the config file
+
+> [!primary]
+> 
+> Note that the name of the network file in our example may differ from your own. Please adjust to your appropriate name. To obtain the name of your network interface so you can edit the proper network file, you can run the following command: `ip a`.
+>
+> You can also verify the connected interface with the following command: 
+>
+> ```bash
+> nmcli connection show
+> ```
+>
+
+You can now add your Additional IP to the config file, as follows:
+
+```sh
+editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+```sh
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP/32
+```
+
+If you have two Additional IPs to configure, the configuration file should look like this:
+
+```sh
+[connection]
+id=cloud-init eno1
+uuid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
+type=ethernet
+
+[user]
+org.freedesktop.NetworkManager.origin=cloud-init
+
+[ethernet]
+mac-address=MA:CA:DD:RE:SS:XX
+
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP1/32
+address2=ADDITIONAL_IP2/32
+```
+
+#### Step 3: Restart the interface
+
+You now need to restart your interface:
+
+```sh
+systemctl restart NetworkManager
+```
+
 ### Ubuntu 17.10 and following
 
 Each Additional IP address will need its own line in the configuration file. The configuration file is called "50-cloud-init.yaml" and is located in /etc/netplan.
