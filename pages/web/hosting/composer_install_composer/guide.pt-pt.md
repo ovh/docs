@@ -10,7 +10,7 @@ order: 02
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 30/11/2020**
+**Última atualização: 09/12/2022**
 
 ## Objetivo
 
@@ -32,6 +32,8 @@ order: 02
 
 
 ## Instruções
+
+Ligue-se ao seu alojamento partilhado através de SSH através do nosso manual sobre [a utilização do SSH com o seu alojamento web partilhado OVHcloud](https://docs.ovh.com/pt/hosting/partilhado_o_ssh_nos_alojamentos_partilhados/).
 
 Verifique se utiliza uma versão de PHP compatível em linha de comandos:
 
