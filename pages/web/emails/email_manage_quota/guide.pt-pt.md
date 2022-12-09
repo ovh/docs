@@ -139,8 +139,6 @@ Quando configurou o seu endereço de e-mail no seu cliente de e-mail em IMAP, **
 Se desejar, pode libertar o espaço de armazenamento da sua conta de e-mail armazenando os seus e-mails diretamente no seu computador. Para isso, terá de recorrer a um software de mensagens instalado no seu computador.
 O papel do software de e-mail será converter os seus e-mails em ficheiros, de modo a poder armazená-los no seu computador. No entanto, é necessário configurar a função de arquivo do seu software de e-mail. Os e-mails serão colocados numa pasta "local" e não diretamente no servidor da sua conta de e-mail.
 
-Poderá consultar abaixo uma lista não exaustiva dos guias de configuração para os clientes de e-mails num computador, em função da oferta que possui:
-
 Encontrará abaixo uma lista não exaustiva dos guias de configuração para os clientes de e-mail que utilizam:
 
 - o protocolo IMAP sobre as ofertas **MXplan** e **E-mail Pro**;

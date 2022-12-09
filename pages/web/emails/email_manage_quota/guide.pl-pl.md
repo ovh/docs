@@ -139,8 +139,6 @@ Kiedy skonfigurowałeś Twoje konto e-mail w programie pocztowym IMAP, **domyśl
 Jeśli chcesz, możesz zwolnić przestrzeń dyskową Twojego konta e-mail, zapisując e-maile bezpośrednio na Twoim komputerze. W tym celu konieczne będzie skorzystanie z programu pocztowego zainstalowanego na Twoim komputerze.
 Do zadań programu pocztowego należy konwersja e-maili na pliki, które będą mogły być przechowywane na Twoim komputerze. Konieczne jest jednak skonfigurowanie funkcji "archiwum" Twojego programu pocztowego. E-maile będą wówczas przechowywane w folderze "lokalnym", a nie bezpośrednio na serwerze Twojego konta e-mail.
 
-Poniżej znajduje się przykładowa lista przewodników konfiguracyjnych dla klientów poczty elektronicznej, w zależności od posiadanej oferty:
-
 Poniżej znajduje się niewyczerpująca lista przewodników konfiguracyjnych dla klientów poczty elektronicznej używających:
 
 - protokół IMAP w ofercie **MXplan** i **E-mail Pro**;

@@ -20,16 +20,16 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 
 ## Requisitos
 
-- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [alojamiento Start10M gratuito](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma, como [**Hosted Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/es-es/emails/email-pro/)).
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
+- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es/web-hosting/), incluida en un [alojamiento Start10M gratuito](https://www.ovhcloud.com/es/domains/free-web-hosting/) o contratada por separado como solución autónoma, como [**Hosted Exchange**](https://www.ovhcloud.com/es/emails/hosted-exchange/)).
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
 - Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
 
 > [!primary]
 >
 > **Casos particulares**
 >
-> - En el caso del hosting gratuito Start 10M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, accediendo al dominio correspondiente.
-> - Si tiene un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}, deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](https://docs.ovh.com/es/hosting/activar-correo-hosting-web/).
+> - En el caso del hosting gratuito Start 10M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, accediendo al dominio correspondiente.
+> - Si tiene un [alojamiento web](https://www.ovhcloud.com/es/web-hosting/){.external}, deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](https://docs.ovh.com/us/es/hosting/activar-correo-hosting-web/).
 
 ## En la práctica <a name="instructions"></a>
 
@@ -47,7 +47,7 @@ Puede realizar esta acción desde el área de cliente si tiene la gestión del s
 
 #### Desde el área de cliente <a name="quotacontrolpanel"></a>
 
-Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda al apartado `Web Cloud`{.action} y siga las indicaciones de su solución:
+Desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda al apartado `Web Cloud`{.action} y siga las indicaciones de su solución:
 
 > [!tabs]
 > **Emails (MXplan)**
@@ -68,19 +68,11 @@ Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotoman
 
 #### Desde el webmail <a name="quotawebmail"></a>
 
-Para conectarse al webmail, acceda a la página <https://www.ovhcloud.com/es-es/mail/> e introduzca los datos de conexión a su cuenta de correo. Seleccione a continuación el webmail correspondiente a su solución:
+Para conectarse al webmail, acceda a la página <https://www.ovhcloud.com/es/mail/> e introduzca los datos de conexión a su cuenta de correo. Seleccione a continuación el webmail correspondiente a su solución:
 
-> [!tabs]
-> **OWA**: **Emails (MX Plan)** / **Email Pro** / **Exchange**
->>
->> Haga clic en el botón <i class="icons-gear-concept icons-masterbrand-blue"></i> situado en la parte superior derecha de la pantalla y seleccione `Opciones`{.action}. Haga clic en `Mi cuenta`{.action} en la sección `General`{.action} de la columna izquierda. Puede ver el límite actual de su cuenta en la parte inferior derecha del formulario.<br><br>
->>![Correo electrónico](images/email-quota-webmail01.png){.thumbnail}<br>
->>
-> **Roundcube**: **Emails (MXplan)**
->>
->> Cuando se conecta al webmail Roundcube, la cuota se muestra en la parte inferior izquierda, materializada por un campo y el porcentaje consumido.<br><br>
->>![Correo electrónico](images/email-quota-webmail02.png){.thumbnail}<br>
->>
+Haga clic en el botón <i class="icons-gear-concept icons-masterbrand-blue"></i> situado en la parte superior derecha de la pantalla y seleccione `Opciones`{.action}. Haga clic en `Mi cuenta`{.action} en la sección `General`{.action} de la columna izquierda. Puede ver el límite actual de su cuenta en la parte inferior derecha del formulario.
+
+![Correo electrónico](images/email-quota-webmail01.png){.thumbnail}
 
 ### 2. **Optimizar** su cuenta de correo <a name="optimise"></a>
 
@@ -106,7 +98,7 @@ Es posible aumentar la capacidad de almacenamiento de su cuenta de correo si est
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> La capacidad de una cuenta MXplan puede ir de 2,5 MB a 5 GB. Si está saturado y tiene una capacidad inferior a 5 GB, puede modificar su capacidad desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).<br>
+>> La capacidad de una cuenta MXplan puede ir de 2,5 MB a 5 GB. Si está saturado y tiene una capacidad inferior a 5 GB, puede modificar su capacidad desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).<br>
 >> En la pestaña `Cuentas de correo`{.action}, haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>situado al final de la línea correspondiente a la cuenta que quiera modificar y seleccione `Editar`{.action}.
 >> En la casilla `Cuota`{.action}, seleccione el tamaño que más le convenga, haga clic en `Siguiente`{.action} y luego en `Aceptar`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png) {.thumbnail}<br>
@@ -139,6 +131,8 @@ Cuando ha configurado su dirección de correo electrónico en su cliente de corr
 Si lo desea, es posible liberar el espacio de almacenamiento de su cuenta e-mail almacenando sus emails directamente en su ordenador. Para ello, deberá utilizar un cliente de correo instalado en su ordenador.
 ya que el cliente de correo convertirá su correo en archivos para poder almacenarlo en su ordenador. No obstante, es necesario configurar la función "archivo" del cliente de correo. Los mensajes de correo estarán entonces en una carpeta "local" y no directamente en el servidor de su cuenta de correo.
 
+A continuación ofrecemos una lista no exhaustiva de las guías de configuración para los clientes de correo electrónico, en función de la solución que posea:
+
 A continuación ofrecemos una lista no exhaustiva de las guías de configuración para los clientes de correo que utilizan:
 
 - el protocolo IMAP de las ofertas **MXplan** y **Email Pro**;
@@ -149,35 +143,35 @@ A continuación ofrecemos una lista no exhaustiva de las guías de configuració
 > **Emails (MXplan)**
 >>
 >> Configuración de una cuenta MXplan en **Windows**:<br>< br>
->> - [Correo en Windows 10](https://docs.ovh.com/es/emails/configuracion-correo-windows-10/) (incluido con Windows)<br>
->> - [Outlook para Mxplan](https://docs.ovh.com/es/emails/configuracion-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/) (gratuito)<br>>
+>> - [Correo en Windows 10](https://docs.ovh.com/us/es/emails/configuracion-correo-windows-10/) (incluido con Windows)<br>
+>> - [Outlook para Mxplan](https://docs.ovh.com/us/es/emails/configuracion-outlook-2016/)
+>> - [Thunderbird](https://docs.ovh.com/us/es/emails/correo_guia_de_configuracion_en_thunderbird/) (gratuito)<br>>
 >> Configuración de una cuenta MXplan en **macOS**:<br>< br>
->> - [Mail](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/) (incluido con macOS)<br>
->> - [Outlook](https://docs.ovh.com/es/emails/configuracion-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/) (gratuito)<br>
+>> - [Mail](https://docs.ovh.com/us/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/) (incluido con macOS)<br>
+>> - [Outlook](https://docs.ovh.com/us/es/emails/configuracion-outlook-2016-mac/)<br>
+>> - [Thunderbird](https://docs.ovh.com/us/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/) (gratuito)<br>
 >>
 > **Email Pro**
 >>
 >> Configuración de una cuenta Email Pro en **Windows** :<br>< br>
->> - [Correo en Windows 10](https://docs.ovh.com/es/emails-pro/configuracion-correo-windows-10/) (incluido con Windows)<br>
->> - [Outlook](https://docs.ovh.com/es/emails-pro/configuracion-outlook-2016/)<br>
->> - [Thunderbird](https://docs.ovh.com/es/emails-pro/configuracion-thunderbird-emailpro-windows/) (gratuito)<br>>
+>> - [Correo en Windows 10](https://docs.ovh.com/us/es/emails-pro/configuracion-correo-windows-10/) (incluido con Windows)<br>
+>> - [Outlook](https://docs.ovh.com/us/es/emails-pro/configuracion-outlook-2016/)<br>
+>> - [Thunderbird](https://docs.ovh.com/us/es/emails-pro/configuracion-thunderbird-emailpro-windows/) (gratuito)<br>>
 >> Configuración de una cuenta Email Pro en **macOS**:<br>< br>
->> - [Mail](https://docs.ovh.com/es/emails-pro/configurar-email-pro-mail-macos/) (incluido con macOS)<br>
->> - [Outlook](https://docs.ovh.com/es/emails-pro/configuracion-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/es/emails-pro/configuracion-thunderbird-emailpro-mac/) (gratuito)<br>
+>> - [Mail](https://docs.ovh.com/us/es/emails-pro/configurar-email-pro-mail-macos/) (incluido con macOS)<br>
+>> - [Outlook](https://docs.ovh.com/us/es/emails-pro/configuracion-outlook-2016-mac/)<br>
+>> - [Thunderbird](https://docs.ovh.com/us/es/emails-pro/configuracion-thunderbird-emailpro-mac/) (gratuito)<br>
 >>
 > **Exchange**
 >>
 >> Configuración de una cuenta Exchange en **Windows** :<br>< br>
->> - [Correo en Windows 10](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-correo-windows-10/) (incluido con Windows)<br>
->> - [Outlook](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-outlook-2016/)<br>
->> - [Thunderbird](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-configuracion-de-thunderbird/) (gratuito)<br>>
+>> - [Correo en Windows 10](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/configuracion-correo-windows-10/) (incluido con Windows)<br>
+>> - [Outlook](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/configuracion-outlook-2016/)<br>
+>> - [Thunderbird](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange-configuracion-de-thunderbird/) (gratuito)<br>>
 >> Configuración de una cuenta Exchange en **macOS**:<br>< br>
->> - [Mail](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-mail-macos/) (incluido con macOS)<br>
->> - [Outlook](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-configuracion-de-thunderbird-mac/) (gratuito)<br>
+>> - [Mail](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/configuracion-mail-macos/) (incluido con macOS)<br>
+>> - [Outlook](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/configuracion-outlook-2016-mac/)<br>
+>> - [Thunderbird](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange-configuracion-de-thunderbird-mac/) (gratuito)<br>
 >>
 
 Una vez instalado el cliente de correo, siga las instrucciones que se indican a continuación para preparar el archivo comprimido en su cliente de correo.
@@ -192,7 +186,7 @@ Una vez instalado el cliente de correo, siga las instrucciones que se indican a 
 > **Mail macOS**
 >>
 >> Desde Mail en macOS, cree una carpeta que aparecerá en la sección "En mi Mac" de la columna izquierda. Para ello, consulte la documentación de Apple:<br><br>
->> - [Crear o eliminar buzones de correo en Mail en Mac](https://support.apple.com/es-es/guide/mail/mlhlp1021/15.0/mac/12.0) {.external}< br>
+>> - [Crear o eliminar buzones de correo en Mail en Mac](https://support.apple.com/es-us/guide/mail/mlhlp1021/15.0/mac/12.0) {.external}< br>
 >>
 > **Thunderbird**
 >>
@@ -207,11 +201,7 @@ En el siguiente menú, seleccione la solución actual de su cuenta de correo:
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Si su cuenta de correo ya tiene una capacidad máxima de 5 GB, puede optar por migrar a una solución [**Email Pro** de 10 GB](https://www.ovhcloud.com/es-es/emails/email-pro/) o [**Hosted Exchange** de 50 GB](https://www.ovhcloud.com/es-es/emails/hosted-exchange/). Para ello, puede contratar el servicio más adecuado y consultar nuestra guía [Migrar una dirección de correo MX Plan a una cuenta Email Pro o Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/migrar-direccion-correo-en-alojamiento-correo-a-exchange/). 
->>
-> **Email Pro**
->>
->> La solución Email Pro tiene una capacidad única de 10 GB. Puede optar por migrar a un servicio [**Hosted Exchange** de 50 GB](https://www.ovhcloud.com/es-es/emails/hosted-exchange/). Para ello, le recomendamos que contrate el plan más adecuado y consulte nuestra guía "[Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra](https://docs.ovh.com/es/microsoft-collaborative-solutions/migration-email-platform/)".
+>> Si su cuenta de correo ya tiene una capacidad máxima de 5 GB, puede optar por migrar a una solución [**Email Pro** de 10 GB](https://www.ovhcloud.com/es/emails/email-pro/) o [**Hosted Exchange** de 50 GB](https://www.ovhcloud.com/es/emails/hosted-exchange/). Para ello, puede contratar el servicio más adecuado y consultar nuestra guía [Migrar una dirección de correo MX Plan a una cuenta Email Pro o Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/migrar-direccion-correo-en-alojamiento-correo-a-exchange/).
 >>
 > **Exchange**
 >>
@@ -222,12 +212,12 @@ En el siguiente menú, seleccione la solución actual de su cuenta de correo:
 
 ## Más información
 
-[Migrar una cuenta MX Plan a una cuenta Email Pro o Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/migrar-direccion-correo-en-alojamiento-correo-a-exchange/)
+[Migrar una cuenta MX Plan a una cuenta Email Pro o Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/migrar-direccion-correo-en-alojamiento-correo-a-exchange/)
 
-[Migrar manualmente una dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/)
+[Migrar manualmente una dirección de correo electrónico](https://docs.ovh.com/us/es/emails/migrar-sus-direcciones-de-correo-manualmente/)
 
-[Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra](https://docs.ovh.com/es/microsoft-collaborative-solutions/migration-email-platform/)
+[Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/migration-email-platform/)
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

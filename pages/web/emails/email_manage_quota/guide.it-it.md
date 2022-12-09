@@ -139,8 +139,6 @@ Quando hai configurato l'account email sul tuo client di posta in IMAP, **di def
 Se vuoi, liberare lo spazio di storage del tuo account email salvando le tue email direttamente sul tuo computer. Per farlo, sarà necessario utilizzare un client di posta installato sul tuo computer.
 Il client di posta convertirà le tue email in file, per poterle salvare sul tuo computer. ma è necessario configurare la funzione "archivio" del tuo client di posta. Le email saranno inserite nella cartella "locale" e non direttamente sul server del tuo account email.
 
-Di seguito trovi una lista non esaustiva delle guide di configurazione per i client di posta su computer, in base all'offerta che possiedi:
-
 Di seguito trovi una lista non esaustiva delle guide di configurazione per i client di posta che utilizzano:
 
 - protocollo IMAP sulle offerte **MXplan** ed **Email Pro**;
