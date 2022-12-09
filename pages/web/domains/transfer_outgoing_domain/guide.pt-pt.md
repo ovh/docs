@@ -90,7 +90,8 @@ Em vez de introduzir manualmente o código, recomendamos que o copie/cole, uma v
 >
 > Se o domínio estiver suspenso ou expirado, é necessário [criar um ticket de assistência](https://www.ovh.com/manager/dedicated/#/support/tickets/new) a partir da Área de Cliente OVHcloud.
 
-Uma vez o código de transferência recuperado, **não rebloqueie o seu domínio a menos que já não queira transferi-lo**.
+Uma vez o código de transferência recuperado, **não bloqueie de novo o seu domínio a menos que já não queira transferi-lo**.
+
 
 ### Etapa 3: iniciar a transferência para o novo agente de registo
 
