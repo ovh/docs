@@ -73,7 +73,7 @@ Aby zalogować się do interfejsu Webmail, przejdź do strony <https://www.ovhcl
 > [!tabs]
 > **OWA**: **E-maile (MXplan)** / **E-mail Pro** / **Exchange**
 >>
->> Kliknij przycisk <i class=".icons-gear-concept icons-masterbrand-blue"></i>w prawym górnym rogu ekranu, kliknij `Opcje`{.action}. Kliknij `Moje konto`{.action} w sekcji `Ogólne`{.action} w kolumnie po lewej stronie. Możesz wyświetlić aktualny limit Twojego konta w dolnej prawej części formularza.<br><br>
+>> Kliknij przycisk <i class="icons-gear-concept icons-masterbrand-blue"></i>w prawym górnym rogu ekranu, kliknij `Opcje`{.action}. Kliknij `Moje konto`{.action} w sekcji `Ogólne`{.action} w kolumnie po lewej stronie. Możesz wyświetlić aktualny limit Twojego konta w dolnej prawej części formularza.<br><br>
 >>![email](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
 > **Roundcube**: **E-maile (MXplan)**

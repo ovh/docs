@@ -73,7 +73,7 @@ Accedi alla Webmail, clicca sulla pagina <https://www.ovhcloud.com/it/mail/>e in
 > [!tabs]
 > **OWA**: **Email (MX Plan)**/**Email Pro**/**Exchange**
 >>
->> Clicca sul pulsante <i class=".icons-gear-concept icons-masterbrand-blue"></i>in alto a destra dello schermo e poi su `Opzioni`{.action}. Clicca sul `tuo account`{.action} nella sezione `Generale`{.action} nella colonna di sinistra. Visualizza la quota attuale del tuo account nella parte inferiore destra del form.<br><br>
+>> Clicca sul pulsante <i class="icons-gear-concept icons-masterbrand-blue"></i>in alto a destra dello schermo e poi su `Opzioni`{.action}. Clicca sul `tuo account`{.action} nella sezione `Generale`{.action} nella colonna di sinistra. Visualizza la quota attuale del tuo account nella parte inferiore destra del form.<br><br>
 >>![email](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
 > **Roundcube**: **Email (MXplan)**

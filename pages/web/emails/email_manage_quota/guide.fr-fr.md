@@ -69,7 +69,7 @@ Pour vous connecter au webmail, rendez-vous sur la page <https://www.ovhcloud.co
 > [!tabs]
 > **OWA** : **Emails (MXplan)** / **Email Pro** / **Exchange**
 >>
->> Cliquez sur le bouton <i class=".icons-gear-concept icons-masterbrand-blue"></i> en haut à droite de votre écran, cliquez sur `Options`{.action}. Cliquez sur `Mon compte`{.action} dans la section `Général`{.action} dans la colonne de gauche. Vous pouvez visualiser le quota actuel de votre compte dans la partie inférieure droite du formulaire.<br><br>
+>> Cliquez sur le bouton <i class="icons-gear-concept icons-masterbrand-blue"></i> en haut à droite de votre écran, cliquez sur `Options`{.action}. Cliquez sur `Mon compte`{.action} dans la section `Général`{.action} dans la colonne de gauche. Vous pouvez visualiser le quota actuel de votre compte dans la partie inférieure droite du formulaire.<br><br>
 >>![email](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
 > **Roundcube** : **Emails (MXplan)**

@@ -73,7 +73,7 @@ Para se ligar ao webmail, aceda à página <https://www.ovhcloud.com/pt/mail/>e 
 > [!tabs]
 > **OWA**: **E-mails (MXplan)** / **Email Pro** / **Exchange**
 >>
->> Clique no botão <i class=".icons-gear-concept icons-masterbrand-blue"></i>no canto superior direito do seu ecrã, clique em `Opções`{.action}. Clique em `A minha conta`{.action} na secção `Geral`{.action} na coluna da esquerda. Pode visualizar o limite atual da sua conta na parte inferior direita do formulário.<br><br>
+>> Clique no botão <i class="icons-gear-concept icons-masterbrand-blue"></i>no canto superior direito do seu ecrã, clique em `Opções`{.action}. Clique em `A minha conta`{.action} na secção `Geral`{.action} na coluna da esquerda. Pode visualizar o limite atual da sua conta na parte inferior direita do formulário.<br><br>
 >>![email](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
 > **Roundcube**: **E-mails (MXplan)**
