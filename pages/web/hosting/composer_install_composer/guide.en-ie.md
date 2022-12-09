@@ -22,12 +22,12 @@ If you encounter any difficulties performing these actions, please contact a [sp
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) with SSH access
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) with SSH access
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
-Access to your hosting plan via SSH using our guide to [using SSH with your OVHcloud web hosting plan](https://docs.ovh.com/ie/en/hosting/web_hosting_ssh_on_web_hosting_packages/).
+Access your hosting plan via SSH using our guide to [using SSH with your OVHcloud web hosting plan](https://docs.ovh.com/ie/en/hosting/web_hosting_ssh_on_web_hosting_packages/).
 
 Use the command line to check if the PHP version is compatible:
 
