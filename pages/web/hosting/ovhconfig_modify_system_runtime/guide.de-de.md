@@ -34,12 +34,14 @@ Wenn Sie die Konfiguration Ihres Hostings ändern, ändern Sie auch die Konfigur
 
 #### Schritt 1: Auf die Webhosting-Konfiguration zugreifen
 
-Um zu beginnen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden. Rechts von der `Global PHP Version`{.action} klicken Sie dann im Bereich `Konfiguration`{.action} auf die drei Punkte und anschließend auf den Button `Konfiguration ändern`{.action}.
+Um zu beginnen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden. Rechts von der `Globale PHP-Version`{.action} klicken Sie dann im Bereich `Konfiguration`{.action} auf die drei Punkte und anschließend auf den Button `Konfiguration ändern`{.action}.
 
 ![hosting konfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
 > [!primary]
 >Ist der Button `Konfiguration ändern`{.action} ausgegraut, läuft möglicherweise gerade eine Überprüfung der **globalen PHP-Version**. Ist das der Fall, erscheint ein blaues, rundes Symbol neben der Version, um die laufende Überprüfung anzuzeigen. Warten Sie einige Minuten, bis der Button `Konfiguration ändern`{.action} wieder verfügbar ist.
+>
+> Wenn die Option `Globale PHP-Version`{.action} nicht in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erscheint, überprüfen Sie bitte anhand unserer Anleitung zur [Konfiguration der Datei ".ovhconfig"](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/) auf der FTP-Basis Ihres OVHcloud Webhostings. 
 >
 
 #### Schritt 2: Webhosting-Konfiguration bearbeiten
@@ -136,5 +138,9 @@ Um den von Ihrem Webhosting verwendeten Modus zu ändern, haben Sie zwei Optione
 - **indem Sie die Datei „.ovhconfig“ manuell bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. Wenn Sie die Datei „**.ovhconfig**“ bearbeiten möchten, folgen Sie den Anweisungen in unserer Anleitung [„.ovhconfig-Datei Ihres Webhostings konfigurieren“](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/){.external}.
 
 ## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

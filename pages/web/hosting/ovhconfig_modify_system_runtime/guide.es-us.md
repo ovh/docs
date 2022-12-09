@@ -6,7 +6,7 @@ section: 'Configuración del alojamiento'
 order: 03
 ---
 
-**Última actualización: 05/05/2022**
+**Última actualización: 09/12/2022**
 
 ## Objetivo
 
@@ -34,12 +34,14 @@ Al modificar la configuración de un alojamiento, también se modifica la config
 
 #### 1. Acceder a la gestión de la configuración del alojamiento
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, en el recuadro **Configuración**, haga clic en el botón `···`{.action} correspondiente al epígrafe **Versión PHP global** y seleccione `Cambiar la configuración`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, en el recuadro **Configuración**. A la derecha de la `versión PHP global`{.action}, haga clic en el botón `···`{.action} correspondiente al epígrafe **Versión PHP global** y seleccione `Cambiar la configuración`{.action}.
 
 ![Configuración del alojamiento](images/change-hosting-configuration-step1.png){.thumbnail}
 
 > [!primary]
 > Si el botón `Cambiar la configuración`{.action} aparece oscurecido, es posible que se esté realizando una comprobación de la **versión PHP global**. En ese caso, aparecerá un círculo de color azul junto a la versión, indicando que se esta realizando una comprobación. Espere unos minutos hasta que el botón `Cambiar la configuración`{.action} vuelva a estar habilitado.
+>
+> Si la opción `versión PHP global`{.action} no aparece en su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), compruebe que existe un archivo "**.ovhconfig**" en la raíz FTP de su alojamiento compartido de OVHcloud con ayuda de nuestra guía sobre [configuración del archivo ".ovhconfig"](https://docs.ovh.com/us/es/hosting/configurar-archivo-ovhconfig/).
 >
 
 #### 2. Comprobar la configuración del alojamiento web
@@ -137,4 +139,8 @@ Puede cambiar el modo de su alojamiento web de dos formas distintas:
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

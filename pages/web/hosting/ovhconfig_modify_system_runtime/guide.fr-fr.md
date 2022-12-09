@@ -6,7 +6,7 @@ section: "Configuration de l'hébergement"
 order: 02
 ---
 
-**Dernière mise à jour le 30/11/2022**
+**Dernière mise à jour le 09/12/2022**
 
 ## Objectif
 
@@ -141,5 +141,9 @@ Pour modifier le mode utilisé par votre hébergement web, il existe deux possib
 - **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](../configurer-fichier-ovhconfig/).
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

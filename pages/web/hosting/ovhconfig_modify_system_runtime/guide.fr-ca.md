@@ -45,8 +45,6 @@ Pour démarrer cette manipulation, connectez-vous à votre [espace client OVHclo
 > Si l'option `Version PHP Globale`{.action} n'apparaît pas dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), vérifiez qu'un fichier « **.ovhconfig** » existe bien à la racine FTP de votre hébergement mutualisé OVHcloud à l'aide de notre guide sur la [configuration du fichier « .ovhconfig »](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/).
 >
 
-
-
 #### Étape 2 : modifier la configuration de l'hébergement web
 
 Sur la fenêtre qui apparaît, deux choix sont possibles. Sélectionnez celui qui correspond à l'action que vous souhaitez réaliser, puis cliquez sur `Suivant`{.action}.
@@ -141,5 +139,9 @@ Pour modifier le mode utilisé par votre hébergement web, il existe deux possib
 - **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](../configurer-fichier-ovhconfig/){.external}.
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

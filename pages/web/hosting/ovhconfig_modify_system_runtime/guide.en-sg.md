@@ -6,7 +6,7 @@ section: Web Hosting configuration
 order: 02
 ---
 
-**Last updated 5th May 2022**
+**Last updated 9th December 2022**
 
 ## Objective
 
@@ -34,12 +34,14 @@ When you modify your Web Hosting plan’s configuration, you will also change th
 
 #### Step 1: Access the Web Hosting plan’s configuration management.
 
-First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), click `Hosting plans`{.action}, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Next, click on the three dots, then, `Modify configuration`{.action}.
+First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), click `Hosting plans`{.action}, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Next and to the right of `Global PHP version`{.action}, click on the three dots, then, `Modify configuration`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
 > [!primary]
 > If the `Modify configuration`{.action} button is greyed out, it may be because of an ongoing **global PHP version** verification. If this is the case, a blue wheel will appear next to the version, indicating that a verification is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
+>
+> If the `Global PHP version`{.action} option does not appear in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), check that a "**.ovhconfig**" file does exist in the FTP root of your OVHcloud shared hosting plan by referring to our guide on [configuring the ".ovhconfig" file](https://docs.ovh.com/sg/en/hosting/configuring-file-ovhconfig/).
 >
 
 #### Step 2: Check your Web Hosting plan’s configuration.
@@ -137,5 +139,9 @@ There are two ways of modifying the mode used by your Web Hosting plan:
 - **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVHcloud Web Hosting plan](../configuring-file-ovhconfig/).
 
 ## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

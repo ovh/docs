@@ -1,12 +1,12 @@
 ---
 title: 'Modificare la configurazione di un hosting Web'
-excerpt: 'Come cambiare l’ambiente di esecuzione del tuo hosting Web dallo Spazio Cliente OVH'
+excerpt: 'Come cambiare l’ambiente di esecuzione del tuo hosting Web dallo Spazio Cliente OVHcloud'
 slug: modifica_lambiente_di_esecuzione_del_tuo_hosting_web
 section: 'Configurazione dell’hosting'
 order: 03
 ---
 
-**Ultimo aggiornamento: 11/04/2019**
+**Ultimo aggiornamento: 09/12/2022**
 
 ## Obiettivo
 
@@ -30,16 +30,18 @@ Quando modifichi la configurazione del tuo hosting, cambi anche i parametri di b
 > Prima di apportare qualsiasi modifica, assicurati che l’operazione non abbia impatto sulla raggiungibilità del tuo sito. In caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida. 
 > 
 
-### Modifica la configurazione dell’hosting Web dallo Spazio Cliente OVH
+### Modifica la configurazione dell’hosting Web dallo Spazio Cliente OVHcloud
 
 #### Step 1: accedi alla gestione della configurazione dell’hosting
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio dalla sezione `Hosting`{.action}, assicurati di essere posizionato nella scheda `Informazioni generali`{.action} e, nel riquadro “Configurazione”, clicca sui tre puntini in corrispondenza della versione PHP e seleziona `Modifica la configurazione`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio dalla sezione `Hosting`{.action}, assicurati di essere posizionato nella scheda `Informazioni generali`{.action} e, nel riquadro “Configurazione”. A destra di `Versione PHP Globale`{.action}, clicca sui tre puntini in corrispondenza della versione PHP e seleziona `Modifica la configurazione`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
 > [!primary]
 > Se il pulsante non è attivo, è probabile che sia in corso una verifica della versione PHP. In questo caso, comparirà un cerchio azzurro che indicherà la verifica in corso. Attendi qualche minuto fino a quando il pulsante `Modifica la configurazione`{.action} risulti nuovamente abilitato.
+>
+> Se l'opzione `Versione PHP Globale`{.action} non compare nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), verifica che esista un file "**.ovhconfig**" nella root FTP del tuo hosting condiviso OVHcloud utilizzando la nostra guida sulla [configurazione del file ".ovhconfig"](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/).
 >
 
 #### Step 2: modifica la configurazione dell’hosting Web
