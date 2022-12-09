@@ -90,7 +90,7 @@ Zamiast ręcznie wpisywać kod, zalecamy jego skopiowanie/wklejenie, ponieważ n
 >
 > Jeśli nazwa domeny została zawieszona lub wygasła, konieczne jest utworzenie [zgłoszenia serwisowego](https://www.ovh.com/manager/dedicated/#/support/tickets/new) w Panelu klienta OVHcloud.
 
-Po pobraniu kodu transferu **nie zablokuj domeny, chyba że nie chcesz jej już przenosić**.
+Po pobraniu kodu transferu **nie zablokuj ponownie domeny, chyba że nie chcesz jej już przenosić**.
 
 ### Etap 3: rozpocząć transfer do nowego operatora
 
