@@ -99,7 +99,7 @@ Klicken Sie auf den Button `Bestätigen`{.action}, um die Wiederherstellung zu s
 
 > [!primary]
 >
-> Die automatische Wiederherstellung kann einige Minuten bis einige Stunden in Anspruch nehmen. Wenn die Verlängerung **über 24 Stunden*** dauert, kontaktieren Sie [OVHcloud Kundendienst](https://www.ovhcloud.com/de/support-levels/).
+> Die automatische Wiederherstellung kann einige Minuten bis einige Stunden in Anspruch nehmen. Wenn der Vorgang **über 24 Stunden*** dauert, kontaktieren Sie den [OVHcloud Support](https://www.ovhcloud.com/de/support-levels/).
 >
 
 ### Datei mithilfe einer Software oder über ein Interface wiederherstellen
