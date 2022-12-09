@@ -159,10 +159,11 @@ In this situation, you can increase the [amount of RAM](https://docs.ovh.com/ie/
     
 > [!warning]
 >
-> To increase the amount of RAM the database need to be a standalone service and not included with the hosting Performance. If you want to increase the amount of RAM of a database included in the [Hosting Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/){.external} you first need to detach it.    
-To detach the database log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan that has the database activated.
-
-In the `Configuration` box, click the `...`{.action} button to the right of the `Private database` entry, then click the `Detach`{.action} button
+> To increase the amount of RAM, the database needs to be a standalone service and not one of those included with a Performance web hosting plan. If you want to increase the amount of RAM of a database included in the [Performance offers](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/){.external}, you first need to detach it.
+> 
+To detach the database, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the web hosting plan that has the database activated.
+>
+In the `Configuration` box, click the `...`{.action} button to the right of the `Private database` entry, then click the `Detach`{.action} button.
 > 
 
 You can also optimise your database by following the instructions of our guide "[Configuring your database server](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#managing-your-databases_1)".
