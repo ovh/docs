@@ -93,7 +93,8 @@ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-ad
 Now we have the [Cluster Role Binding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding){.external} needed for the installation:
 
 <pre class="console"><code>$ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --serviceaccount=kube-system:default
-clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-binding created</code></pre>
+clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-binding created
+</code></pre>
 
 ## Installing the Agones chart
 
@@ -116,7 +117,7 @@ After some moments, Agones should we installed:
 
 $ helm install my-agones --namespace agones-system --create-namespace agones/agones
 NAME: my-agones
-LAST DEPLOYED: Thu Dec  8 09:57:36 2022
+LAST DEPLOYED: Fri Dec  9 09:35:16 2022
 NAMESPACE: agones-system
 STATUS: deployed
 REVISION: 1
@@ -153,14 +154,13 @@ If everything is ok, you should see an `agones-controller` pod with a `Running` 
 
 <pre class="console"><code>$ kubectl get --namespace agones-system pods
 
-NAME                                      READY   STATUS      RESTARTS   AGE
-agones-allocator-6db787b757-kbh9h         1/1     Running     0          24s
-agones-allocator-6db787b757-lqftd         1/1     Running     0          24s
-agones-allocator-6db787b757-mfjns         1/1     Running     0          24s
-agones-controller-fc95bcbd7-mkbqr         1/1     Running     0          24s
-agones-ping-6fd4dd9b48-pdd7v              1/1     Running     0          24s
-agones-ping-6fd4dd9b48-t6cbm              1/1     Running     0          24s
-my-agones-delete-agones-resources-pfg4k   0/1     Completed   0          72s
+NAME                                READY   STATUS    RESTARTS   AGE
+agones-allocator-6db787b757-4vd7r   1/1     Running   0          95s
+agones-allocator-6db787b757-kvdkz   1/1     Running   0          95s
+agones-allocator-6db787b757-w9mjw   1/1     Running   0          95s
+agones-controller-fc95bcbd7-8zv4q   1/1     Running   0          95s
+agones-ping-6fd4dd9b48-r49qq        1/1     Running   0          95s
+agones-ping-6fd4dd9b48-w6pzd        1/1     Running   0          95s
 </code></pre>
 
 You can also see more details using:
@@ -172,7 +172,7 @@ kubectl describe --namespace agones-system pods
 Looking at the `agones-controller` description, you should see something like:
 
 <pre class="console"><code>$ kubectl describe --namespace agones-system pods
-Name:                 agones-controller-fc95bcbd7-mkbqr
+Name:                 agones-controller-fc95bcbd7-8zv4q
 Namespace:            agones-system
 [...]
 Conditions:
@@ -212,8 +212,9 @@ kubectl get gameserver
 We wait until the fetch gives a `Ready` or `Unhealthy` status on our game server:
 
 <pre class="console"><code>$ kubectl get gameserver
-NAME      STATE       ADDRESS         PORT   NODE                                         AGE
-xonotic   Unhealthy   51.83.xxx.yy   7094   nodepool-f636da5d-3d0d-481d-aa-node-f4d042   110s
+
+NAME      STATE   ADDRESS         PORT   NODE                                         AGE
+xonotic   Ready   51.83.xxx.yyy   7094   nodepool-f636da5d-3d0d-481d-aa-node-f4d042   24s
 </code></pre>
 
 When the game server is ready, we also get the address and the port we should use to connect to our deathmatch game (in my example, `51.83.xxx.yyy:7094`).
@@ -246,7 +247,7 @@ You will see that your game server is running in a pod called `xonotic`:
 
 <pre class="console"><code>$ kubectl get pods
 NAME      READY   STATUS    RESTARTS   AGE
-xonotic   2/2     Running   0          2m50s
+xonotic   2/2     Running   0          2m28s
 </code></pre>
 
 You can then use `kubectl logs` on it. In the pod there are two containers, the main `xonotic` one and a Agones <em>sidecar</em>, so we must specify that we want the logs of the `xonotic` container:
@@ -275,8 +276,8 @@ Game type successfully switched to dm
 Maplist contains no usable maps!  Resetting it to default map list.
 Switching to map silentsiege
 menu: unknown program name
->>> Found 'listening' statement: 3
 Server using port 26000
+>>> Found 'listening' statement: 3
 Server listening on address 0.0.0.0:26000
 >>> Found 'listening' statement: 4
 >>> Moving to READY: Server listening on address [0:0:0:0:0:0:0:0]:26000
@@ -286,3 +287,23 @@ Server listening on address [0:0:0:0:0:0:0:0]:26000
 ### Add some friends
 
 The next step is mostly enjoyable: ask some friends to connect to the server and do a true deathmatch like in *Quake 2* times.
+
+## Cleanup
+
+Uninstall Xonotic game server:
+
+```bash
+kubectl delete gameserver
+```
+
+To uninstall Agones, as you installed it through Helm, you can use `helm uninstall` command in order to delete the Agones Helm installed chart:
+
+```bash
+helm uninstall my-agones -n agones-system
+```
+
+Remove installed ClusterRoleBinding:
+
+```bash
+kubectl delete clusterrolebinding cluster-admin-binding
+```
