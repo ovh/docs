@@ -6,7 +6,7 @@ section: SSL
 order: 03
 ---
 
-**Dernière mise à jour le 01/12/2022**
+**Dernière mise à jour le 09/12/2022**
  
 ## Objectif
 
