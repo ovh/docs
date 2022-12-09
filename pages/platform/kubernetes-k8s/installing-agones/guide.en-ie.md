@@ -197,7 +197,7 @@ Deploying a Xonotic game server over Agones is rather easy:
 kubectl create -f https://raw.githubusercontent.com/googleforgames/agones/release-1.27.0/examples/xonotic/gameserver.yaml
 ```
 
-This command install Xonotic:
+This command installs Xonotic:
 
 <pre class="console"><code>$kubectl create -f https://raw.githubusercontent.com/googleforgames/agones/release-1.27.0/examples/xonotic/gameserver.yaml
 gameserver.agones.dev/xonotic created
@@ -296,7 +296,7 @@ Uninstall Xonotic game server:
 kubectl delete gameserver
 ```
 
-To uninstall Agones, as you installed it through Helm, you can use `helm uninstall` command in order to delete the Agones Helm installed chart:
+To uninstall Agones, as you installed it through Helm, you can use the `helm uninstall` command in order to delete the Agones Helm installed chart:
 
 ```bash
 helm uninstall my-agones -n agones-system
