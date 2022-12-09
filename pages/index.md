@@ -1372,6 +1372,7 @@
             + [Displaying boot logs in the KVM](cloud/vps/bootlog_display_kvm)
             + [Changing your root password on a VPS](cloud/vps/root_password)
             + [Resetting a Windows password](cloud/vps/resetting_a_windows_password)
+            + [UAT Common Minecraft errors](cloud/vps/jf-uat-test)
     + [Managed Bare Metal](bare-metal-cloud-managed-bare-metal)
         + [Managing virtual machines](bare-metal-cloud-managed-bare-metal-managing-virtual-machines)
             + [Installing VMware tools](cloud/managed-bare-metal/vmware_tools_install)
