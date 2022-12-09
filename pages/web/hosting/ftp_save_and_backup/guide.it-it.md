@@ -10,7 +10,7 @@ order: 06
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 20/06/2022**
+**Ultimo aggiornamento: 09/12/2022**
 
 ## Obiettivo
 
@@ -96,6 +96,11 @@ Una volta selezionata la data, clicca su `Seguente`{.action}.
 Assicurati che questa azione non comporti la perdita di dati, ad esempio di un file archiviato sullo spazio di storage dopo la data di ripristino selezionata. Come già precisato, il backup sovrascriverà i dati presenti nello storage.
 
 Clicca su `Conferma`{.action} per avviare l’operazione.
+
+> [!primary]
+>
+> Il ripristino automatico può richiedere da qualche minuto a qualche ora. Se dura **più di 24 ore**, contatta [il supporto OVHcloud](https://www.ovhcloud.com/it/support-levels/).
+>
 
 ### Ripristina un file da un software o un’interfaccia Web <a name="viainterface"></a>
 

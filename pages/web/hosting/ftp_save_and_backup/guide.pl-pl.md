@@ -10,7 +10,7 @@ order: 06
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja dnia 20-06-2022**
+**Ostatnia aktualizacja dnia 09-12-2022**
 
 ## Wprowadzenie 
 
@@ -96,6 +96,11 @@ Po wybraniu daty, kliknij przycisk `Dalej`{.action}.
 Poświęć chwilę, aby upewnić się, że żaden plik nie zostanie usunięty w wyniku przywrócenia przestrzeni dyskowej, np. plik, który zapisałeś na przestrzeni po wybranej dacie przywrócenia. Jak zostało wspomniane wyżej, przywrócenie przestrzeni dyskowej spowoduje usunięcie wszystkich aktualnych danych, które zostaną zastąpione danymi z kopii zapasowej.
 
 Kiedy jesteś gotowy do uruchomienia przywracania kopii zapasowej, kliknij przycisk `Zatwierdź`{.action}.
+
+> [!primary]
+>
+> Automatyczne przywracanie może potrwać od kilku minut do kilku godzin. Jeśli trwa **dłużej niż 24 godziny**, skontaktuj się z [Działem Wsparcia Klienta OVHcloud](https://www.ovhcloud.com/pl/support-levels/).
+>
 
 ### Przywracanie pliku za pomocą programu lub interfejsu <a name="viainterface"></a>
 

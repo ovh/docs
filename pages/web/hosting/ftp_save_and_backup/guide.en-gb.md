@@ -6,7 +6,7 @@ section: 'FTP and SSH'
 order: 06
 ---
 
-**Last updated 20th June 2022**
+**Last updated 09th December 2022**
 
 ## Objective
 
@@ -93,6 +93,11 @@ Once you have selected a date, click `Next`{.action}.
 Take a few minutes to check that none of your files will be lost after the restoration, e.g. any files saved on your storage space after the restore date you have selected. As a reminder, the restoration will effectively overwrite all of your current data, and replace it with the backup data.
 
 Once you are ready to start restoring the backup, click `Confirm`{.action}.
+
+> [!primary]
+>
+> Automatic restoration can take from a few minutes to a few hours. If it takes **more than 24 hours**, contact [OVHcloud support](https://www.ovhcloud.com/en-gb/support-levels/).
+>
 
 ### Restore a file using a software program or interface <a name="viainterface"></a>
 
