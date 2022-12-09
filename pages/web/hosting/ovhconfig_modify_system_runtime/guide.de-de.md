@@ -34,14 +34,14 @@ Wenn Sie die Konfiguration Ihres Hostings ändern, ändern Sie auch die Konfigur
 
 #### Schritt 1: Auf die Webhosting-Konfiguration zugreifen
 
-Um zu beginnen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden. Rechts von der `Globale PHP-Version`{.action} klicken Sie dann im Bereich `Konfiguration`{.action} auf die drei Punkte und anschließend auf den Button `Konfiguration ändern`{.action}.
+Um zu beginnen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden. Klicken Sie rechts von `Globale PHP-Version`{.action} im Bereich `Konfiguration`{.action} auf `...`{.action} und anschließend auf den Button `Konfiguration ändern`{.action}.
 
 ![hosting konfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
 > [!primary]
 >Ist der Button `Konfiguration ändern`{.action} ausgegraut, läuft möglicherweise gerade eine Überprüfung der **globalen PHP-Version**. Ist das der Fall, erscheint ein blaues, rundes Symbol neben der Version, um die laufende Überprüfung anzuzeigen. Warten Sie einige Minuten, bis der Button `Konfiguration ändern`{.action} wieder verfügbar ist.
 >
-> Wenn die Option `Globale PHP-Version`{.action} nicht in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erscheint, überprüfen Sie bitte anhand unserer Anleitung zur [Konfiguration der Datei ".ovhconfig"](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/) auf der FTP-Basis Ihres OVHcloud Webhostings. 
+> Wenn die Option `Globale PHP-Version`{.action} nicht in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erscheint, überprüfen Sie anhand [unserer Anleitung](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/) ob die Datei ".ovhconfig" im FTP-Wurzelverzeichnis Ihres OVHcloud Webhostings existiert. 
 >
 
 #### Schritt 2: Webhosting-Konfiguration bearbeiten
