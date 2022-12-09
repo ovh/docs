@@ -6,7 +6,7 @@ section: Transfer
 order: 04
 ---
 
-**Last updated 19th October 2022**
+**Last updated 9th December 2022**
 
 ## Objective
 
@@ -80,6 +80,8 @@ Make sure to copy and paste the code as opposed to typing it by hand, since some
 > [!warning]
 >
 > If the domain name has been suspended or expired, you will need to [create a support ticket](https://ca.ovh.com/manager/dedicated/#/support/tickets/new) from your OVHcloud Control Panel.
+
+Once the transfer code has been retrieved, **do not relock your domain unless you no longer wish to transfer it**.
 
 ### Step 3: Launch the transfer at your new registrar
 

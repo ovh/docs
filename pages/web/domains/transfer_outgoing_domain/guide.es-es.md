@@ -10,7 +10,7 @@ order: 03
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 20/10/2022**
+**Última actualización: 09/12/2022**
 
 ## Objetivo
 
@@ -89,6 +89,8 @@ En lugar de escribir manualmente el código, le recomendamos que copie y pegue e
 > [!warning]
 >
 > Si el dominio está suspendido o caducado, es necesario [crear un tique de asistencia](https://www.ovh.com/manager/dedicated/#/support/tickets/new) desde el área de cliente de OVHcloud.
+
+Una vez recuperado el código de transferencia, **no vuelva a cargar su dominio a menos que ya no quiera transferirlo**.
 
 ### 3\. iniciar la transferencia al nuevo agente registrador
 

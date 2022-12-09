@@ -10,7 +10,7 @@ order: 04
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 20/10/2022**
+**Ultimo aggiornamento: 09/12/2022**
 
 ## Obiettivo
 
@@ -89,6 +89,8 @@ Piuttosto che digitare manualmente il codice, ti consigliamo di copiarlo/incolla
 > [!warning]
 >
 > Se il dominio è sospeso o scaduto, è necessario [creare un ticket di assistenza](https://www.ovh.com/manager/dedicated/#/support/tickets/new) dallo Spazio Cliente OVHcloud.
+
+Una volta recuperato il codice di trasferimento, **non ribloccate il vostro dominio a meno che non vogliate trasferirlo**.
 
 ### Step 3: avvia il trasferimento verso il nuovo Registrar
 

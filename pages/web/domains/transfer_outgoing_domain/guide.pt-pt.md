@@ -10,7 +10,7 @@ order: 04
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 20/10/2022**
+**Última atualização: 09/12/2022**
 
 ## Objetivo
 
@@ -89,6 +89,8 @@ Em vez de introduzir manualmente o código, recomendamos que o copie/cole, uma v
 > [!warning]
 >
 > Se o domínio estiver suspenso ou expirado, é necessário [criar um ticket de assistência](https://www.ovh.com/manager/dedicated/#/support/tickets/new) a partir da Área de Cliente OVHcloud.
+
+Uma vez o código de transferência recuperado, **não rebloqueie o seu domínio a menos que já não queira transferi-lo**.
 
 ### Etapa 3: iniciar a transferência para o novo agente de registo
 

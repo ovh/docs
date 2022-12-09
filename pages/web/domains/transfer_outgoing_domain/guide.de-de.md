@@ -10,7 +10,7 @@ order: 04
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 22.10.2022**
+**Letzte Aktualisierung am 09.12.2022**
 
 ## Ziel
 
@@ -88,6 +88,8 @@ Anstatt den Code manuell einzugeben, empfehlen wir Ihnen, diesen zu kopieren und
 > [!warning]
 >
 > Wenn die Domain gesperrt oder abgelaufen ist, muss über Ihr OVHcloud Kundencenter ein [Support-Ticket erstellt werden](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
+
+Sobald der Transfer-Code abgerufen wurde **Sie können Ihre Domain nur dann wieder verriegeln, wenn Sie sie nicht mehr transferieren möchten**.
 
 ### Schritt 3: Transfer zum neuen Registrar beauftragen
 

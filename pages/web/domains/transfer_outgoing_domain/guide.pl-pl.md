@@ -10,7 +10,7 @@ order: 04
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 20-10-2022**
+**Ostatnia aktualizacja z dnia 09-12-2022**
 
 ## Wprowadzenie
 
@@ -89,6 +89,8 @@ Zamiast ręcznie wpisywać kod, zalecamy jego skopiowanie/wklejenie, ponieważ n
 > [!warning]
 >
 > Jeśli nazwa domeny została zawieszona lub wygasła, konieczne jest utworzenie [zgłoszenia serwisowego](https://www.ovh.com/manager/dedicated/#/support/tickets/new) w Panelu klienta OVHcloud.
+
+Po pobraniu kodu transferu **nie zablokuj domeny, chyba że nie chcesz jej już przenosić**.
 
 ### Etap 3: rozpocząć transfer do nowego operatora
 
