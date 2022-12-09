@@ -1,12 +1,12 @@
 ---
 title: 'Zmiana konfiguracji hostingu'
 slug: zmiana_srodowiska_uruchomieniowego_dla_hostingu_www
-excerpt: 'Dowiedz się, jak zmienić konfigurację hostingu OVH'
+excerpt: 'Dowiedz się, jak zmienić konfigurację hostingu OVHcloud'
 section: 'Konfiguracja hostingu'
 order: 03
 ---
 
-**Ostatnia aktualizacja z dnia 28-01-2019**
+**Ostatnia aktualizacja z dnia 09-12-2022**
 
 ## Wprowadzenie 
 
@@ -36,12 +36,14 @@ Zmieniając konfigurację hostingu, zmieniasz jednocześnie konfigurację Twojej
 
 #### Etap 1: zarządzanie konfiguracją hostingu
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Przejdź do sekcji `Informacje ogólne`{.action}, a następnie w części `Konfiguracja` kliknij przycisk z trzema kropkami obok wersji PHP i wybierz `Zmień konfigurację`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Przejdź do sekcji `Informacje ogólne`{.action}.  Po prawej stronie `Ogólna wersja PHP`{.action}, kliknij przycisk `...`{.action} a następnie na `Zmień konfigurację`{.action}.
 
 ![hosting zmiana wersji php](images/change-hosting-configuration-step1.png){.thumbnail}
 
 > [!primary]
 >Jeśli przycisk `Zmień konfigurację`{.action} jest wyszarzony, możliwe jest, że trwa weryfikacja **głównej wersji PHP**. W takim przypadku obok wersji wyświetli się okrągły niebieski symbol oznaczający, że weryfikacja jest w toku. Odczekaj kilka minut, aby przycisk `Zmień konfigurację`{.action} stał się znowu aktywny.
+>
+> Jeśli w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) nie pojawi się opcja `stronie PHP`{.action}, sprawdź, czy plik "**.ovhconfig**" istnieje w katalogu FTP Twojego hostingu współdzielonego OVHcloud, korzystając z naszego przewodnika dotyczącego [konfiguracji pliku ".ovhconfig"](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/).
 >
 
 #### Etap 2: zmiana konfiguracji hostingu

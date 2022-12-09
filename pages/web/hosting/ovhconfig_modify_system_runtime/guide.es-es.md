@@ -1,12 +1,12 @@
 ---
 title: 'Modificar la configuración de un alojamiento web'
 slug: cambiar_el_entorno_de_ejecucion_de_un_alojamiento
-excerpt: 'Cómo modificar la configuración de un alojamiento web de OVH'
+excerpt: 'Cómo modificar la configuración de un alojamiento web de OVHcloud'
 section: 'Configuración del alojamiento'
 order: 03
 ---
 
-**Última actualización: 20/12/2018**
+**Última actualización: 09/12/2022**
 
 ## Objetivo
 
@@ -34,12 +34,14 @@ Al modificar la configuración de un alojamiento, también se modifica la config
 
 #### 1. Acceder a la gestión de la configuración del alojamiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, en el recuadro **Configuración**, haga clic en el botón `···`{.action} correspondiente al epígrafe **Versión PHP global** y seleccione `Cambiar la configuración`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, en el recuadro **Configuración**. A la derecha de la `Versión PHP global`{.action}, haga clic en el botón `···`{.action} correspondiente al epígrafe **Versión PHP global** y seleccione `Cambiar la configuración`{.action}.
 
 ![Configuración del alojamiento](images/change-hosting-configuration-step1.png){.thumbnail}
 
 > [!primary]
 > Si el botón `Cambiar la configuración`{.action} aparece oscurecido, es posible que se esté realizando una comprobación de la **versión PHP global**. En ese caso, aparecerá un círculo de color azul junto a la versión, indicando que se esta realizando una comprobación. Espere unos minutos hasta que el botón `Cambiar la configuración`{.action} vuelva a estar habilitado.
+>
+> Si la opción `versión PHP global`{.action} no aparece en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), compruebe que existe un archivo "**.ovhconfig**" en la raíz FTP de su alojamiento compartido de OVHcloud con ayuda de nuestra guía sobre [configuración del archivo ".ovhconfig"](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/).
 >
 
 #### 2. Comprobar la configuración del alojamiento web
@@ -136,5 +138,9 @@ Puede cambiar el modo de su alojamiento web de dos formas distintas:
 - **Modificando manualmente el archivo «.ovhconfig»**: Esta opción es más técnica y requiere estar conectado al espacio de almacenamiento. Si quiere editar el archivo **.ovhconfig**, consulte la guía [Configurar el archivo «.ovhconfig» de un alojamiento web](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/){.external}.
 
 ## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
