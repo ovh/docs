@@ -36,7 +36,7 @@ Zmieniając konfigurację hostingu, zmieniasz jednocześnie konfigurację Twojej
 
 #### Etap 1: zarządzanie konfiguracją hostingu
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Przejdź do sekcji `Informacje ogólne`{.action}. Po prawej `stronie PHP`{.action}, a następnie w części `Konfiguracja` kliknij przycisk z trzema kropkami obok wersji PHP i wybierz `Zmień konfigurację`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Przejdź do sekcji `Informacje ogólne`{.action}.  Po prawej stronie `Ogólna wersja PHP`{.action}, kliknij przycisk `...`{.action} a następnie na `Zmień konfigurację`{.action}.
 
 ![hosting zmiana wersji php](images/change-hosting-configuration-step1.png){.thumbnail}
 

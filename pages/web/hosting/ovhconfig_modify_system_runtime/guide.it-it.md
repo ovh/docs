@@ -34,7 +34,7 @@ Quando modifichi la configurazione del tuo hosting, cambi anche i parametri di b
 
 #### Step 1: accedi alla gestione della configurazione dell’hosting
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio dalla sezione `Hosting`{.action}, assicurati di essere posizionato nella scheda `Informazioni generali`{.action} e, nel riquadro “Configurazione”. A destra di `Versione PHP Globale`{.action}, clicca sui tre puntini in corrispondenza della versione PHP e seleziona `Modifica la configurazione`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio dalla sezione `Hosting`{.action}, assicurati di essere posizionato nella scheda `Informazioni generali`{.action} e, nel riquadro “Configurazione”. A destra di `Versione PHP Globale`{.action}, clicca sul pulsante `...`{.action} e seleziona `Modifica la configurazione`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 

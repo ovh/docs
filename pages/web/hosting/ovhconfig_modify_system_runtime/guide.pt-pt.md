@@ -34,7 +34,7 @@ Ao alterar a configuração do seu alojamento, estará a alterar a configuraçã
 
 #### 1 - Aceder à gestão da configuração do alojamento
 
-Para iniciar esta operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. Certifique-se de que está no separador `Informações gerais`{.action}. A seguir, clique no botão dos três pontos correspondente à linha `Versão global de PHP`{.action} e selecione a opção `Alterar configuração`{.action}.
+Para iniciar esta operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. Certifique-se de que está no separador `Informações gerais`{.action}. A seguir, clique no botão `...`{.action} à direita de `Versão global de PHP`{.action} e selecione a opção `Alterar configuração`{.action}.
 
 ![Configuração do alojamento](images/change-hosting-configuration-step1.png){.thumbnail}
 
