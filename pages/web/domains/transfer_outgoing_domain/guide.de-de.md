@@ -83,13 +83,13 @@ Sobald sich der Status der Domain auf `Deaktiviert`{.action} aktualisiert, ersch
 
 Dieser Code wird von Ihrem neuen Registrar angefordert werden, um den Transfer abzuschließen. Sie können die Details bei Ihrem Provider überprüfen.
 
-Anstatt den Code manuell einzugeben, empfehlen wir Ihnen, diesen zu kopieren und einzufügen, da einige Zeichen leicht verwechselt werden können.
+Anstatt den Code manuell einzugeben, empfehlen wir, diesen zu kopieren und einzufügen, da einige Zeichen leicht zu verwechseln sind.
 
 > [!warning]
 >
 > Wenn die Domain gesperrt oder abgelaufen ist, muss über Ihr OVHcloud Kundencenter ein [Support-Ticket erstellt werden](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
 
-Sobald der Transfer-Code abgerufen wurde **Sie können Ihre Domain nur dann wieder verriegeln, wenn Sie sie nicht mehr transferieren möchten**.
+Sobald der Transfer-Code abgerufen wurde, reaktivieren Sie den Transfer-Schutz **nicht, es sei denn, Sie möchten den Transfer verhindern**.
 
 ### Schritt 3: Transfer zum neuen Registrar beauftragen
 
