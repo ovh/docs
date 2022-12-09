@@ -214,16 +214,16 @@ We wait until the fetch gives a `Ready` or `Unhealthy` status on our game server
 <pre class="console"><code>$ kubectl get gameserver
 
 NAME      STATE   ADDRESS         PORT   NODE                                         AGE
-xonotic   Ready   51.83.xxx.yyy   7094   nodepool-f636da5d-3d0d-481d-aa-node-f4d042   24s
+xonotic   Ready   51.83.xxx.yyy   7410   nodepool-f636da5d-3d0d-481d-aa-node-f4d042   24s
 </code></pre>
 
-When the game server is ready, we also get the address and the port we should use to connect to our deathmatch game (in my example, `51.83.xxx.yyy:7094`).
+When the game server is ready, we also get the address and the port we should use to connect to our deathmatch game (in my example, `51.83.xxx.yyy:7410`).
 
 ## It's frag time
 
 So now that you have a server, let's test it!
 
-Download the Xonotic client (it runs on Windows, Linux and MacOS, so there is no excuse), and launch it:
+Download the [Xonotic client](https://xonotic.org/) (it runs on Windows, Linux and MacOS, so there is no excuse), and launch it:
 
 ![Xonotic](images/agones-004.png){.thumbnail}
 
