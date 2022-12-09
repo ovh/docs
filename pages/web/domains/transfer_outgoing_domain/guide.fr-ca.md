@@ -62,7 +62,7 @@ Récupérez le code qui s'affiche dans la fenêtre.
 >
 > Si le nom de domaine est suspendu ou expiré, il est nécessaire de [créer un ticket d'assistance](https://ca.ovh.com/manager/dedicated/#/support/tickets/new) depuis votre espace client OVHcloud.
 
-Une fois le code de transfert récupéré, **ne reverrouillez pas votre domaine sauf si vous ne souhaitez plus le transférer**.
+Une fois le code de transfert récupéré, **ne reverrouillez pas votre domaine, sauf si vous ne souhaitez plus le transférer**.
 
 ### Étape 3 : débuter le transfert vers le nouveau bureau d'enregistrement
 
