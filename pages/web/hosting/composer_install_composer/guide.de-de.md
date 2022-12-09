@@ -14,7 +14,7 @@ order: 02
 
 ## Ziel 
 
-[Composer](https://getcomposer.org/){.external} ist ein für PHP erstellter Dependency Manager. PHP-Entwickler können externe Bibliotheken in ihre Programme einbinden. Composer vereinfacht die Verteilung von Bibliotheken und die Wartung des Codes von PHP-Projekten . Seit der Veröffentlichung dieses Tools wurden zahlreiche Best Practices für die Entwickliung vorgeschlagen und somit die Bibliotheken der PHP-Community verbessert. Diese bewährten Verfahren werden in der Form [SRP](http://www.php-fig.org/){.external} dokumentiert.
+[Composer](https://getcomposer.org/){.external} ist ein für PHP erstellter Dependency Manager. PHP-Entwickler können externe Bibliotheken in ihre Programme einbinden. Composer vereinfacht die Verteilung von Bibliotheken und die Wartung des Codes von PHP-Projekten. Seit der Veröffentlichung dieses Tools wurden zahlreiche Best Practices für die Entwicklung etabliert und somit die Bibliotheken der PHP-Community verbessert. Diese bewährten Verfahren werden in der Form [SRP](http://www.php-fig.org/){.external} dokumentiert.
 
 **Diese Anleitung erklärt, wie Sie Composer installieren und gibt ein Anwendungsbeispiel.**
 
@@ -32,7 +32,7 @@ Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister]
 
 ## In der praktischen Anwendung
 
-Verbinden Sie sich via SSH mit Ihrem Shared Hosting mithilfe unserer Anleitung zu [Verwendung von SSH mit Ihrem OVHcloud Webhosting](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/).
+Verbinden Sie sich via SSH mit Ihrem Hosting mithilfe unserer Anleitung zur [Verwendung von SSH mit Ihrem OVHcloud Webhosting](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/).
 
 Verwenden Sie die Kommandozeile, um zu überprüfen, ob die PHP-Version kompatibel ist:
 
