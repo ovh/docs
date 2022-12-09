@@ -69,7 +69,7 @@ To log in to webmail, go to the page <https://www.ovhcloud.com/en-gb/mail/> and 
 > [!tabs]
 > **OWA**: **Emails (MX Plan)** / **Email Pro** / **Exchange**
 >>
->> Click the <i class=".icons-gear-concept icons-masterbrand-blue"></i>button on the top right and select `Options`{.action}. Click `My account`{.action} in the `General`{.action} section in the left-hand column. You can view your account’s current quota in the lower right-hand corner of the form.<br><br>
+>> Click the <i class="icons-gear-concept icons-masterbrand-blue"></i>button on the top right and select `Options`{.action}. Click `My account`{.action} in the `General`{.action} section in the left-hand column. You can view your account’s current quota in the lower right-hand corner of the form.<br><br>
 >>![email](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
 > **Roundcube**: **Emails (MX Plan)**
