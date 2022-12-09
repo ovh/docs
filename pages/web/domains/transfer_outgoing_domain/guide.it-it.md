@@ -90,7 +90,7 @@ Piuttosto che digitare manualmente il codice, ti consigliamo di copiarlo/incolla
 >
 > Se il dominio è sospeso o scaduto, è necessario [creare un ticket di assistenza](https://www.ovh.com/manager/dedicated/#/support/tickets/new) dallo Spazio Cliente OVHcloud.
 
-Una volta recuperato il codice di trasferimento, **non ribloccate il vostro dominio a meno che non vogliate trasferirlo**.
+Una volta recuperato il codice di trasferimento, **non bloccate più il vostro dominio a meno che non vogliate trasferirlo**.
 
 ### Step 3: avvia il trasferimento verso il nuovo Registrar
 
