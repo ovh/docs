@@ -164,7 +164,6 @@ API endpoints to manage your AI Deploy apps can be found here:
 - EU: <https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
 - CA: <https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
 
-
 #### Command line interface (CLI)
 
 AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/){.external}.
