@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated December 5<sup>th</sup>, 2022.**
+**Last updated 9th December 2022.**
 
 In this tutorial we are going to guide you with the install of [Agones](https://agones.dev){.external} on your OVHcloud Managed Kubernetes Service. Agones is an open-source, multiplayer, dedicated game-server hosting built on Kubernetes.
 
@@ -93,7 +93,8 @@ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-ad
 Now we have the [Cluster Role Binding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding){.external} needed for the installation:
 
 <pre class="console"><code>$ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --serviceaccount=kube-system:default
-clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-binding created</code></pre>
+clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-binding created
+</code></pre>
 
 ## Installing the Agones chart
 
@@ -113,12 +114,29 @@ After some moments, Agones should we installed:
 
 <pre class="console"><code>$ helm repo add agones https://agones.dev/chart/stable
 "agones" has been added to your repositories
-$ helm install --name my-agones --namespace agones-system agones/agones
-NAME:   my-agones
-LAST DEPLOYED: Tue May 21 17:10:09 2019
+
+$ helm install my-agones --namespace agones-system --create-namespace agones/agones
+NAME: my-agones
+LAST DEPLOYED: Fri Dec  9 09:35:16 2022
 NAMESPACE: agones-system
-STATUS: DEPLOYED
-[...]</code></pre>
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+The Agones components have been installed in the namespace agones-system.
+
+You can get their status by running:
+kubectl --namespace agones-system get pods -o wide
+
+Once ready you can create your first GameServer using our examples https://agones.dev/site/docs/getting-started/create-gameserver/ .
+
+Finally don't forget to explore our documentation and usage guides on how to develop and host dedicated game servers on top of Agones:
+
+ - Create a Game Server (https://agones.dev/site/docs/getting-started/create-gameserver/)
+ - Integrating the Game Server SDK (https://agones.dev/site/docs/guides/client-sdks/)
+ - GameServer Health Checking (https://agones.dev/site/docs/guides/health-checking/)
+ - Accessing Agones via the Kubernetes API (https://agones.dev/site/docs/guides/access-api/)
+ </code></pre>
 
 > [!warning]
 > The installation we have just done isn't suited for production, as the official install instructions recommend running Agones and the game servers in separate, dedicated pools of nodes.
@@ -135,10 +153,14 @@ kubectl get --namespace agones-system pods
 If everything is ok, you should see an `agones-controller` pod with a `Running` status:
 
 <pre class="console"><code>$ kubectl get --namespace agones-system pods
-NAME                                 READY   STATUS    RESTARTS   AGE
-agones-controller-5f766fc567-xf4vv   1/1     Running   0          5d15h
-agones-ping-889c5954d-6kfj4          1/1     Running   0          5d15h
-agones-ping-889c5954d-mtp4g          1/1     Running   0          5d15h
+
+NAME                                READY   STATUS    RESTARTS   AGE
+agones-allocator-6db787b757-4vd7r   1/1     Running   0          95s
+agones-allocator-6db787b757-kvdkz   1/1     Running   0          95s
+agones-allocator-6db787b757-w9mjw   1/1     Running   0          95s
+agones-controller-fc95bcbd7-8zv4q   1/1     Running   0          95s
+agones-ping-6fd4dd9b48-r49qq        1/1     Running   0          95s
+agones-ping-6fd4dd9b48-w6pzd        1/1     Running   0          95s
 </code></pre>
 
 You can also see more details using:
@@ -150,15 +172,16 @@ kubectl describe --namespace agones-system pods
 Looking at the `agones-controller` description, you should see something like:
 
 <pre class="console"><code>$ kubectl describe --namespace agones-system pods
-Name:               agones-controller-5f766fc567-xf4vv
-Namespace:          agones-system
+Name:                 agones-controller-fc95bcbd7-8zv4q
+Namespace:            agones-system
 [...]
 Conditions:
   Type              Status
   Initialized       True
   Ready             True
   ContainersReady   True
-  PodScheduled      True</code></pre>
+  PodScheduled      True
+</code></pre>
 
 Where all the `Conditions` should have status `True`.
 
@@ -170,22 +193,37 @@ The Agones <em>Hello world</em> is rather boring, a simple [Xonotic game server]
 
 Deploying a Xonotic game server over Agones is rather easy:
 
-<pre><code class="language-bash">kubectl create -f https://raw.githubusercontent.com/googleforgames/agones/release-1.27.0/examples/xonotic/gameserver.yaml</code></pre>
-The game server deployment can take some moments, so we need to wait until its status is `Ready` or `Unhealthy` before using it. We can fetch the status with:
-<pre><code class="language-bash">kubectl get gameserver</code></pre>
-We wait until the fetch gives a `Ready` or `Unhealthy` status on our game server:
-<pre class="console"><code>kubectl get gameserver
-NAME      STATE   ADDRESS         PORT   NODE       AGE
-xonotic   Ready   51.83.xxx.yyy   7094   node-zzz   5d
+```bash
+kubectl create -f https://raw.githubusercontent.com/googleforgames/agones/release-1.27.0/examples/xonotic/gameserver.yaml
+```
+
+This command installs Xonotic:
+
+<pre class="console"><code>$kubectl create -f https://raw.githubusercontent.com/googleforgames/agones/release-1.27.0/examples/xonotic/gameserver.yaml
+gameserver.agones.dev/xonotic created
 </code></pre>
 
-When the game server is ready, we also get the address and the port we should use to connect to our deathmatch game (in my example, `51.83.xxx.yyy:7094`).
+The game server deployment can take some moments, so we need to wait until its status is `Ready` or `Unhealthy` before using it. We can fetch the status with:
+
+```bash
+kubectl get gameserver
+```
+
+We wait until the fetch gives a `Ready` or `Unhealthy` status on our game server:
+
+<pre class="console"><code>$ kubectl get gameserver
+
+NAME      STATE   ADDRESS         PORT   NODE                                         AGE
+xonotic   Ready   51.83.xxx.yyy   7410   nodepool-f636da5d-3d0d-481d-aa-node-f4d042   24s
+</code></pre>
+
+When the game server is ready, we also get the address and the port we should use to connect to our deathmatch game (in my example, `51.83.xxx.yyy:7410`).
 
 ## It's frag time
 
 So now that you have a server, let's test it!
 
-Download the Xonotic client (it runs on Windows, Linux and MacOS, so there is no excuse), and launch it:
+Download the [Xonotic client](https://xonotic.org/) (it runs on Windows, Linux and MacOS, so there is no excuse), and launch it:
 
 ![Xonotic](images/agones-004.png){.thumbnail}
 
@@ -209,57 +247,63 @@ You will see that your game server is running in a pod called `xonotic`:
 
 <pre class="console"><code>$ kubectl get pods
 NAME      READY   STATUS    RESTARTS   AGE
-xonotic   2/2     Running   0          5d15h
+xonotic   2/2     Running   0          2m28s
 </code></pre>
 
 You can then use `kubectl logs` on it. In the pod there are two containers, the main `xonotic` one and a Agones <em>sidecar</em>, so we must specify that we want the logs of the `xonotic` container:
 
-<pre class="console"><code>$ kubectl logs xonotic
-Error from server (BadRequest): a container name must be specified for pod xonotic, choose one of: [xonotic agones-gameserver-sidecar]
-$ kubectl logs xonotic xonotic
-&gt;&gt;&gt; Connecting to Agones with the SDK
-&gt;&gt;&gt; Starting health checking
-&gt;&gt;&gt; Starting wrapper for Xonotic!
-&gt;&gt;&gt; Path to Xonotic server script: /home/xonotic/Xonotic/server_linux.sh 
+<pre class="console"><code>$ kubectl logs xonotic xonotic
+>>> Connecting to Agones with the SDK
+>>> Starting health checking
+>>> Starting wrapper for Xonotic!
+>>> Path to Xonotic server script: /home/xonotic/Xonotic/server_linux.sh []
 Game is Xonotic using base gamedir data
 gamename for server filtering: Xonotic
-Xonotic Linux 22:03:50 Mar 31 2017 - release
+Xonotic Linux 20:37:34 Jun 27 2022 - release
 Current nice level is below the soft limit - cannot use niceness
 Skeletal animation uses SSE code path
 execing quake.rc
 [...]
-Authenticated connection to 109.190.xxx.yyy:42475 has been established: client is v6xt9/GlzxBH+xViJCiSf4E/SCn3Kx47aY3EJ+HOmZo=@Xon//Ks, I am /EpGZ8F@~Xon//Ks
-LostInBrittany is connecting...
-url_fclose: failure in crypto_uri_postbuf
-Receiving player stats failed: -1
-LostInBrittany connected
-LostInBrittany connected
-LostInBrittany is now spectating
-[BOT]Eureka connected
-[BOT]Hellfire connected
-[BOT]Lion connected
-[BOT]Scorcher connected
-unconnected changed name to [BOT]Eureka
-unconnected changed name to [BOT]Hellfire
-unconnected changed name to [BOT]Lion
-unconnected changed name to [BOT]Scorcher
-[BOT]Scorcher picked up Strength
-[BOT]Scorcher drew first blood!
-[BOT]Hellfire was gunned down by [BOT]Scorcher's Shotgun
-[BOT]Scorcher slapped [BOT]Lion around a bit with a large Shotgun
-[BOT]Scorcher was gunned down by [BOT]Eureka's Shotgun, ending their 2 frag spree
-[BOT]Scorcher slapped [BOT]Lion around a bit with a large Shotgun
-[BOT]Scorcher was shot to death by [BOT]Eureka's Blaster
-[BOT]Hellfire slapped [BOT]Eureka around a bit with a large Shotgun, ending their 2 frag spree
-[BOT]Eureka slapped [BOT]Scorcher around a bit with a large Shotgun
-[BOT]Eureka was gunned down by [BOT]Hellfire's Shotgun
-[BOT]Hellfire was shot to death by [BOT]Lion's Blaster, ending their 2 frag spree
-[BOT]Scorcher was cooked by [BOT]Lion
-[BOT]Eureka turned into hot slag
-[...]
+>>> Found 'listening' statement: 2
+Server using port 26000
+Server listening on address 0.0.0.0:26000
+Server listening on address [0:0:0:0:0:0:0:0]:26000
+execing server.cfg
+maxplayers can not be changed while a server is running.
+It will be changed on next server startup ("map" command).
+"maxplayers" set to "8"
+Game type successfully switched to dm
+Maplist contains no usable maps!  Resetting it to default map list.
+Switching to map silentsiege
+menu: unknown program name
+Server using port 26000
+>>> Found 'listening' statement: 3
+Server listening on address 0.0.0.0:26000
+>>> Found 'listening' statement: 4
+>>> Moving to READY: Server listening on address [0:0:0:0:0:0:0:0]:26000
+Server listening on address [0:0:0:0:0:0:0:0]:26000
 </code></pre>
 
 ### Add some friends
 
 The next step is mostly enjoyable: ask some friends to connect to the server and do a true deathmatch like in *Quake 2* times.
 
+## Cleanup
+
+Uninstall Xonotic game server:
+
+```bash
+kubectl delete gameserver
+```
+
+To uninstall Agones, as you installed it through Helm, you can use the `helm uninstall` command in order to delete the Agones Helm installed chart:
+
+```bash
+helm uninstall my-agones -n agones-system
+```
+
+Remove installed ClusterRoleBinding:
+
+```bash
+kubectl delete clusterrolebinding cluster-admin-binding
+```
