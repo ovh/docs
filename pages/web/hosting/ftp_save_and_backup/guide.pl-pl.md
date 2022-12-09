@@ -99,7 +99,7 @@ Kiedy jesteś gotowy do uruchomienia przywracania kopii zapasowej, kliknij przyc
 
 > [!primary]
 >
-> Automatyczne przywracanie może potrwać od kilku minut do kilku godzin. Jeśli trwa **dłużej niż 24 godziny**, skontaktuj się z [Działem Wsparcia Klienta OVHcloud](https://www.ovhcloud.com/pl/support-levels/).
+>Automatyczne przywracanie może trwać od kilku minut do kilku godzin. Jeśli trwa to **więcej niż 24 godziny**, skontaktuj się z [OVHcloud support](https://www.ovhcloud.com/pl/support-levels/).
 >
 
 ### Przywracanie pliku za pomocą programu lub interfejsu <a name="viainterface"></a>
