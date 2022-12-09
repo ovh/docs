@@ -16,7 +16,7 @@ Find out how to create the first page of a website on a Start 10M hosting plan, 
 
 - A [domain name](https://www.ovhcloud.com/en-gb/domains/)
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) or a [Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
-- A text editor (notebook, TextEdit, Notepad++, etc.)
+- A text editor (Notepad, TextEdit, Notepad++, etc.)
 - An FTP client (such as [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) installed to transfer files to your hosting storage space
 
 ## Before you begin
