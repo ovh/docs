@@ -6,7 +6,7 @@ section: PHP
 order: 02
 ---
 
-**Last updated 30th November 2020**
+**Last updated 09th December 2022**
 
 ## Objective
 
@@ -26,6 +26,8 @@ If you encounter any difficulties performing these actions, please contact a [sp
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
+
+Access to your hosting plan via SSH using our guide to [using SSH with your OVHcloud web hosting plan](https://docs.ovh.com/us/en/hosting/web_hosting_ssh_on_web_hosting_packages/).
 
 Use the command line to check if the PHP version is compatible:
 

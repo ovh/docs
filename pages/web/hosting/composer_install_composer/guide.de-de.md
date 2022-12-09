@@ -10,7 +10,7 @@ order: 02
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 30.11.2020**
+**Letzte Aktualisierung am 09.12.2022**
 
 ## Ziel 
 
@@ -31,6 +31,8 @@ Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister]
 
 
 ## In der praktischen Anwendung
+
+Verbinden Sie sich via SSH mit Ihrem Shared Hosting mithilfe unserer Anleitung zu [Verwendung von SSH mit Ihrem OVHcloud Webhosting](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/).
 
 Verwenden Sie die Kommandozeile, um zu überprüfen, ob die PHP-Version kompatibel ist:
 

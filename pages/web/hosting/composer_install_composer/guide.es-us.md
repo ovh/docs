@@ -6,7 +6,7 @@ section: PHP
 order: 02
 ---
 
-**Última actualización: 30/11/2020**
+**Última actualización: 09/12/2022**
 
 ## Objetivo
 
@@ -28,6 +28,8 @@ order: 02
 
 
 ## Procedimiento
+
+Conéctese a su alojamiento compartido por SSH con ayuda de nuestra guía sobre [el uso del SSH con su alojamiento web de OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_ssh_en_alojamiento_compartido/).
 
 Compruebe que utiliza una versión de PHP compatible en línea de comandos:
 

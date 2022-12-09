@@ -10,7 +10,7 @@ order: 02
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 30/11/2020**
+**Ultimo aggiornamento: 09/12/2022**
 
 ## Obiettivo
 
@@ -32,6 +32,8 @@ order: 02
 
 
 ## Procedura
+
+Accedi in SSH al tuo hosting condiviso utilizzando la nostra guida su [l'utilizzo dell'SSH con il tuo hosting Web OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/).
 
 Verifica di utilizzare una versione di PHP compatibile con il tuo ordine:
 
