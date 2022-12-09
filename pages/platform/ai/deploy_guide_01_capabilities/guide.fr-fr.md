@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/capabilities/'
 ---
 
-**Last updated 3rd November, 2022.**
+**Last updated 8th December, 2022.**
 
 > [!primary]
 >
@@ -22,16 +22,16 @@ routes:
 This page provides the technical capabilities and limitations of the Public Cloud AI Deploy offer.
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
-## ALPHA phase
+## BETA phase
 
-Please note that the AI Deploy offer is currently in ALPHA Phase, meaning:
+Please note that the AI Deploy offer is currently in BETA Phase, meaning:
 
-- the service is free during ALPHA phase.
+- the service is free during BETA phase.
 - the service is not ready for production.
-- there is no official support.
-- there are no contractual agreements (SLA).
-- the General Availability is uncertain.
-- some features are under development. Please check the roadmap link above to follow progress.
+-	there is no official support.
+-	there are no contractual agreements (SLA).
+-	the General Availability is uncertain.
+-	some features are under development. Please check the roadmap link above to follow progress.
 
 ## Capabilities and limitations
 
@@ -48,26 +48,42 @@ Entire AI Deploy instances have to be in the same region. Multi-AZ is currently 
 
 #### Compute resources
 
-You can either choose the number of GPU or CPU for an AI Deploy app, not both.
-By default, a job uses one CPU instance.
+##### **Replica type**
 
-If you choose GPU:
+You can either choose the number of GPU or CPU for an AI Deploy app, not both.
+By default, an app uses one CPU instance.
+
+##### **Available replica ranges**
+
+If you choose `GPU`:
 
 - You can go from 1 to 4 GPU per instance.
-- You can go from 1 to 10 instances.
 - CPU, memory and local storage resources are not customizable but scaled linearly with each additional GPU.
 
-If you choose CPU:
+If you choose `CPU`:
 
-- You can go from 1 to 12 vCPU.
-- You can go from 1 to 10 instances.
+- You can go from 1 to 12 CPU per instance.
 - Memory and local storage resource is not customizable but scaled linearly with each additional CPU.
 
 Information about maximum number of CPU/GPU, memory per CPU/GPU, and local storage are available with the `ovhai` CLI or OVHcloud Public Cloud price page.
 
 ```console
-ovhai capability
+ovhai capabilities
 ```
+
+##### **Scaling**
+
+AI Deploy offers the possibility to choose between two [scaling strategies](https://docs.ovh.com/fr/publiccloud/ai/deploy/apps-deployments/): **static** or **automatic**.
+
+If you choose `static scaling`:
+
+- You can go from 1 to 10 replicas.
+
+If you choose `autoscaling`:
+
+- You can choose both the **minimum number** of replicas (1 by default) and the **maximum number** of replicas.
+- You can define the metric monitored that will act as a trigger for autoscaling: `CPU` or `RAM`.
+- You can choose the threshold for the percentage of average use: integer between 1 and 100%.
 
 #### Local storage
 
@@ -81,11 +97,15 @@ Attached storage allows you to work on several TB of data, while being persisten
 
 ### Features and known limits
 
-#### Authorized AI Deploy
+#### Permitted deployment
 
-AI Deploy authorize the deployment of your own Docker images or applications from the OVHcloud catalog.
+AI Deploy authorizes the deployment of your own Docker images or applications from the [OVHcloud portfolio](https://docs.ovh.com/fr/publiccloud/ai/deploy/apps-portfolio/).
 
 Docker images can be hosted in a public or private registry.
+
+The use of `docker-compose` is not possible.
+
+Please beware that images need to be built with an **AMD architecture**.
 
 #### Maximum execution time
 
@@ -96,9 +116,14 @@ There is no duration limitation on AI Deploy app execution.
 Your application is deployed simultaneously on the amount of selected instances.
 To benefit from high-availability, a minimum of two instances is required. In case of instance failure, a new one is automatically created.
 
+#### Rolling upgrade
+
+You can update the Docker image of your application to provide an updated version of your service. Updates are incremental and will not cause any downtime. Your current configuration will also be preserved, such as your HTTP endpoint and deployment policy.
+There is no need to stop and restart the application for the image update to take effect.
+
 #### Network
 
-**Public networking** can be used for all of the offers.
+**Public networking** can be used for all the AI Tools.
 
 **Private networking (vRack)** is not supported.
 
@@ -106,14 +131,27 @@ To benefit from high-availability, a minimum of two instances is required. In ca
 
 **Ingress and Egress traffic** are included in the service plans and not metered.
 
-#### Backups
-
-We do not back up your AI Deploy apps yet.
-
 #### Logs and metrics
 
-We do not provide logs yet.
-We do not provide metrics yet.
+##### **Logs**
+
+To check the logs of your app, you can do it via the `ovhai` CLI using the following command:
+
+```console
+ovhai app logs <app-id>
+```
+
+##### **Metrics**
+
+To observe the metrics of your app, you can do so with the `ovhai` CLI using the command above:
+
+```console
+ovhai app get <app-id>
+```
+
+You can then access your metrics through the `Monitoring Url`.
+
+You are also able to check it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) in your app information by clicking on the button `Access dashboards`.
 
 #### Security
 
@@ -128,12 +166,11 @@ API endpoints to manage your AI Deploy apps can be found here:
 - EU: <https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
 - CA: <https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
 
-
 #### Command line interface (CLI)
 
 AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/fr/publiccloud/ai/cli/install-client/){.external}.
 
-## Going further
+## Go further
 
 Browse the full [AI Deploy documentation](https://docs.ovh.com/fr/publiccloud/ai/) to further understand the main concepts and get started.
 
