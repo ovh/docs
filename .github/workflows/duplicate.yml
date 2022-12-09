@@ -10,8 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
+#        with:
+#          fetch-depth: 2
+      - name: chmod
+        run: |
+          ls -alh .github/workflows/
+          chmod 755 .github/workflows/duplicate.sh
+          chmod 755 .github/workflows/trans
+          ls -alh .github/workflows/
       - name: Duplicate
         run: .github/workflows/duplicate.sh
       - name: Commit duplicate files
