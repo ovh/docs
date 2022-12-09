@@ -10,7 +10,7 @@ order: 06
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 20.06.2022**
+**Letzte Aktualisierung am 09.12.2022**
 
 ## Ziel 
 
@@ -96,6 +96,11 @@ Klicken Sie nach der Auswahl auf den Button `Weiter`{.action}.
 Vergewissern Sie sich, dass bei der Wiederherstellung keine Datei verloren geht. Das könnte beispielsweise mit einer Datei passieren, die nach dem ausgewählten Datum in Ihren Speicherplatz hochgeladen wurde. Beachten Sie, dass bei der Wiederherstellung die aktuellen Daten vollständig mit den Backup-Daten überschrieben werden.
 
 Klicken Sie auf den Button `Bestätigen`{.action}, um die Wiederherstellung zu starten.
+
+> [!primary]
+>
+> Die automatische Wiederherstellung kann einige Minuten bis einige Stunden in Anspruch nehmen. Wenn der Vorgang **über 24 Stunden*** dauert, kontaktieren Sie den [OVHcloud Support](https://www.ovhcloud.com/de/support-levels/).
+>
 
 ### Datei mithilfe einer Software oder über ein Interface wiederherstellen
 

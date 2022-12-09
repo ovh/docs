@@ -6,7 +6,7 @@ section: 'FTP et SSH'
 order: 06
 ---
 
-**Dernière mise à jour le 20/06/2022**
+**Dernière mise à jour le 09/12/2022**
 
 ## Objectif
 
@@ -92,6 +92,11 @@ Une fois la date sélectionnée, cliquez sur le bouton `Suivant`{.action}.
 Prenez quelques instants afin de vous assurer qu'aucun fichier ne sera perdu suite à la restauration, comme un fichier que vous auriez placé sur votre espace de stockage après la date de restauration choisie. Comme précisé, la restauration va en effet écraser l'ensemble des données actuelles afin de les remplacer par celles de la sauvegarde.
 
 Dès que vous êtes prêt à initier la sauvegarde, cliquez sur le bouton `Valider`{.action}.
+
+> [!primary]
+>
+> La restauration automatique peut prendre de quelques minutes à quelques heures. Si elle dure **plus de 24 heures**, contactez [le support d'OVHcloud](https://www.ovhcloud.com/fr/support-levels/).
+>
 
 ### Restaurer un fichier depuis un logiciel ou une interface <a name="viainterface"></a>
 
