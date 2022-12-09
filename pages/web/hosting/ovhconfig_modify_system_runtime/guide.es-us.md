@@ -6,7 +6,7 @@ section: 'Configuración del alojamiento'
 order: 03
 ---
 
-**Última actualización: 05/05/2020**
+**Última actualización: 05/05/2022**
 
 ## Objetivo
 

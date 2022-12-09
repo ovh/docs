@@ -6,7 +6,7 @@ section: Web Hosting configuration
 order: 02
 ---
 
-**Last updated 5th May 2020**
+**Last updated 5th May 2022**
 
 ## Objective
 
