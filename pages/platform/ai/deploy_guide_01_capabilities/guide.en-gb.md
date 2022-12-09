@@ -168,7 +168,7 @@ API endpoints to manage your AI Deploy apps can be found here:
 
 AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/){.external}.
 
-## Going further
+## Go further
 
 Browse the full [AI Deploy documentation](https://docs.ovh.com/gb/en/publiccloud/ai/) to further understand the main concepts and get started.
 
