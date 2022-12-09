@@ -20,7 +20,7 @@ Questa guida ti mostra come creare la prima pagina di un sito Web su un hosting 
 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
 - Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) o di un [hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/)
-- Disporre di un editor di testo (ad esempio blocchi di testo, TextEdit, Notepad++, ecc...)
+- Disporre di un editor di testo (ad esempio Blocco note, TextEdit, Notepad++, ecc...)
 - Aver installato un client FTP (come [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), ecc...) per trasferire (depositare sull'hosting) i suoi file sul suo spazio dedicato.
 
 ## Prima di iniziare
@@ -32,17 +32,17 @@ Il contenuto di un sito web è spesso costituito da diverse pagine web. Una pagi
 - **HTML (HyperText Markup Language)**: linguaggio utilizzato per strutturare le tue pagine. La "struttura" designa gli elementi e la loro organizzazione.<br>
 **Esempio**: un titolo di documento sarà seguito da un sottotitolo e da uno o più paragrafi.
 
-Gli elementi utilizzati per strutturare il vostro contenuto sono chiamati "targhette" e si scrivono utilizzando caponi che aprono e chiudono.<br>
+Gli elementi utilizzati per strutturare il vostro contenuto sono chiamati "tag" e si scrivono utilizzando caponi che aprono e chiudono.<br>
 **Esempio**: Il tag `<p>` designa quello che inizia un paragrafo e lo stesso paragrafo è chiuso dal tag `</p>`. 
 
 >[!warning]
 >
-> Per tutti i tag aperti deve essere creato un tag chiuso. Le luci non si sovrappongono (si chiudono nell'ordine inverso dell'apertura) e non possono essere interpretate in modo diverso dalle luci HTML.
+> Per tutti i tag aperti deve essere creato un tag chiuso. I tag non si sovrappongono (si chiudono nell'ordine inverso dell'apertura) e non possono essere interpretate in modo diverso dal tag HTML.
 >
 
-Sono disponibili oltre un centinaio di targhette, ma è possibile realizzare il tuo sito con alcune di esse.
+Sono disponibili oltre un centinaio di tag, ma è possibile realizzare il tuo sito con alcune di esse.
 
-- **Il CSS (Cascading Style Sheet, fogli di stile a cascata)**: linguaggio che descrive il modo in cui saranno posizionati, dimensionati, comportamentali, colorati o visualizzati gli elementi HTML. Tali regole possono essere applicate a elementi generici (lo stesso colore per tutti i titoli del sito, o la polizia che sarà utilizzata per tutti i testi) o a elementi precisi (il testo contenuto nel footer, il comportamento al sorvolo del menu di navigazione).
+- **Il CSS (Cascading Style Sheet, fogli di stile a cascata)**: linguaggio che descrive il modo in cui saranno posizionati, dimensionati, comportamentali, colorati o visualizzati gli elementi HTML. Tali regole possono essere applicate a elementi generici (lo stesso colore per tutti i titoli del sito, o i font che sarà utilizzata per tutti i testi) o a elementi precisi (il testo contenuto nel footer, il comportamento al sorvolo del menu di navigazione).
 
 - **JavaScript**: linguaggio che consente di arricchire le interazioni su un sito Web (o un'applicazione web). Pur essendo indispensabile per gli sviluppatori web, non è obbligatorio per creare il tuo sito web.<br>
 Se non conosci il codice nei diversi linguaggi citati, puoi copiare/incollare gli esempi di codice forniti in questa guida, ti permetteranno di avere un sito web utilizzabile sul tuo hosting.
@@ -51,7 +51,7 @@ Se non conosci il codice nei diversi linguaggi citati, puoi copiare/incollare gl
 
 Per creare una pagina Web, inizia scrivendo in un file il tuo codice sorgente a partire da uno dei tre linguaggi citati sopra. Ecco i nomi principali dell'estensione: *".html"* (per i tuoi file HTML), *".css"* (per i tuoi file CSS), *".js"* (per i tuoi file JavaScript).
 
-I file possono essere scritti in editor di testo, inclusi quelli disponibili di default sul tuo sistema operativo (block note, TextEdit). Numerose soluzioni Open Source gratuite offrono funzionalità aggiuntive: [Notepad++](https://notepad-plus-plus.org/), [Bracket](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) o ancora [Micro](https://micro-editor.github.io/). È inoltre possibile utilizzare un IDE (Integrated Development Environment, ambiente di sviluppo integrato) come [Visual Studio Code](https://code.visualstudio.com/) o [Geany](https://www.geany.org/).
+I file possono essere scritti in editor di testo, inclusi quelli disponibili di default sul tuo sistema operativo (Blocco note, TextEdit). Numerose soluzioni Open Source gratuite offrono funzionalità aggiuntive: [Notepad++](https://notepad-plus-plus.org/), [Bracket](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) o ancora [Micro](https://micro-editor.github.io/). È inoltre possibile utilizzare un IDE (Integrated Development Environment, ambiente di sviluppo integrato) come [Visual Studio Code](https://code.visualstudio.com/) o [Geany](https://www.geany.org/).
 
 Per visualizzare e adattare le tue pagine prima di depositarle sul tuo hosting, utilizza il tuo browser web. per aprire il file dalla sua posizione locale direttamente sul browser.
 
