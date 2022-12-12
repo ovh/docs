@@ -1361,7 +1361,6 @@
             + [FAQ](cloud/vps/vps-faq)
             + [Using the KVM for a VPS](cloud/vps/using_kvm_for_vps)
             + [Repartitioning a VPS after an upgrade](cloud/vps/upsize_vps_partition)
-            + [UAT Configuring a new Windows Server installation](cloud/vps/gy-uat-test)
         + [Network and IP management](bare-metal-cloud-virtual-private-servers-network-and-ip-management)
             + [Configuring IPv6 on a VPS](cloud/vps/configure-ipv6)
             + [Configuring OVHcloud Secondary DNS on a VPS](cloud/vps/adding-secondary-dns-on-vps)
