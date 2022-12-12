@@ -268,10 +268,9 @@ cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/N
 >
 > Vous pouvez également vérifier l'interface connectée avec la commande suivante :
 >
-> ```bash
-> nmcli connection show
-> ```
->
+> `nmcli connection show`
+> 
+
 
 Vous pouvez maintenant ajouter votre Additional IP au fichier de configuration, comme dans l'exemple ci-dessous :
 
