@@ -3,8 +3,6 @@ title: Migrating an infrastructure to a new vDC
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/sddc-migration/'
 excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
-slug: vdc-migration
-section: Getting started
 order: 6
 hidden: true
 ---
@@ -12,7 +10,7 @@ hidden: true
 .ovh-api-main { background:#fff;}
 </style> 
 
-**Last updated 18th November 2022**
+**Last updated 19th November 2022**
 
 **This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC) to a new destination vDC (Essentials or Premier).**
 
@@ -798,6 +796,6 @@ Please find below a list of Frequently Asked Questions, do not hesitate to submi
 > What happens if the Advice Service session takes less time than planned?
 >> A session is scheduled and accounted in blocks of 1 hour. For example, a session scheduled for 2 hours but taking 1.5 hours would be billed at 2 hours. A session scheduled for 3 hours which only took 1.5 hours would be charged at 2 hours.
 
-## Go further
+## Go further, Go higher !!!!
 
 Join our community of users on <https://community.ovh.com/en/>.

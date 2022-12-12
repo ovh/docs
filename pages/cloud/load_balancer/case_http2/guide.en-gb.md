@@ -5,7 +5,7 @@ excerpt: Configuring HTTP/2 on an OVH Load Balancer service
 section: Use case
 ---
 
-**Last updated 15th January 2018**
+**Last updated 8th December 2022**
 
 ## Objective
 
@@ -116,7 +116,7 @@ We will now add a rule to our route.
 
 The modifications made to your OVH Load Balancer must be *explicitly applied* in each of the zones configured for your service. Only at this point will they be visible to your website visitors. This way, you can make complex configuration changes in one go.
 
-If you have several zones, you must apply the same configuration for each of them.
+If you have several zones, you must apply the same configuration to each of them.
 
 
 #### Via the API

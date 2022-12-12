@@ -1274,6 +1274,7 @@
             + [VMware Update Manager](cloud/private-cloud/vmware_update_manager)
             + [Extend Volume in vSphere and in OS](cloud/private-cloud/extend_disk)
             + [Taking a snapshot](cloud/private-cloud/creer_un_snapshot)
+            + [Rescheduling a maintenance on your Hosted Private Cloud](cloud/private-cloud/maintenance-rescheduling)
         + [FAQ](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-faq)
             + [Technical capabilities](cloud/private-cloud/hpc_limits)
         + [Install Tanzu Community Edition](cloud/private-cloud/tanzu_ce_install)
@@ -1536,3 +1537,4 @@
             + [Overview of OVH Data Collector](labs/data-collector/overview)
             + [Manage my Data Collector](labs/data-collector/manage-collector)
             + [Available sources and sinks](labs/data-collector/available-sinks-sources)
+            + [Best guide](account/customer/UAT-Best-guides)
