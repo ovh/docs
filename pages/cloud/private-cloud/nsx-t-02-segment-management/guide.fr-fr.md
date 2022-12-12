@@ -34,17 +34,17 @@ order: 02
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précemment logical switch) il peut être de deux types :
 
 - Gérés à l'aide de VLAN (VLAN-backed segments). la communication entre les hotes et les VM doit se faire au travers d'un switch de niveau 2.
-- Géré à l'aide du surcouche logicielle sans avoir la necessité d'avoir des VLAN (Overlay-backed segments). la communication se fait au travers de tunnel sans besoin matériel spécifique.
+- Géré à l'aide du surcouche logicielle sans le besoin de VLANs (Overlay-backed segments). la communication se fait au travers de tunnel sans besoin matériel spécifique.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 
-Les segments peuvent être reliés à une passerelle dans ce cas il faut créer une réseau avec une passerelle afin de permettre un trafic sortant au dela de ce segment, soit avec un autre segment soit avec l'extérieur du cluster.
+Les segments peuvent être reliés à **ovh-T1-gw** dans ce cas il faut créer une réseau avec une passerelle afin de permettre un trafic sortant au dela de ce segment, soit avec un autre segment soit avec l'extérieur du cluster.
 
-## En pratique
+## En pratiques
 
 ### Création d'un segment dans l'interface NSX-T.
 
-Nous allons créer un segment rélié à la passerelle **Tier-1 Gateway** avec un sous réseau en 192.168.1.0/24 et une passerelle en 192.168.1.254 au travers d'un Overlay-backed segment.
+Nous allons créer un segment rélié à **Tier-1 Gateway** avec un sous réseau en 192.168.1.0/24 et une passerelle en 192.168.1.254 au travers d'un *Overlay-backed segment*.
 
 A partir de l'interface NSX-T allez dans l'onglet `Networking`{.action}.
 
@@ -77,7 +77,7 @@ Le nouveau segment apparait dans la liste.
 
 ![01 Create Segment 06](images/01-create-segment06.png)
 
-Toujours dans l'onglet `Networking` cliquez à gauche sur `Network Topology`{.action} pour voir le nouveau segment et son emplacement dans le réseau.
+Toujours dans l'onglet `Networking` cliquez à gauche sur `Network Topology`{.action} pour voir le nouveau segment et son emplacement dans le réseau. 
 
 ![02 Display Network Topology 01](images/02-display-network-topology-with-onesegment01.png)
 
@@ -85,27 +85,23 @@ Toujours dans l'onglet `Networking` cliquez à gauche sur `Network Topology`{.ac
 
 Allez dans l'interface vCenter de votre cluster Hosted Private Cloud.
 
-Faites un clic droit sur la `machine virtuelle`{.action}.
+Faites un clic droit sur la `machine virtuelle`{.action} et cliquez sur `Modifier les paramètres`{.action}.
 
 ![03 Connect Network Card to Segment 01](images/03-connect-network-card-vm-to-segment01.png)
 
-Cliquez sur `Modifier les paramètres`{.action}.
+Allez dans la barre de défilement à droite de votre adaptater réseau et choisissez `Parcourir`{.action}.
 
 ![03 Connect Network Card to Segment 02](images/03-connect-network-card-vm-to-segment02.png)
 
-Allez dans la barre de défilement à droite de votre adaptater réseau et choisissez `Parcourir`{.action}.
+Sélectionnez le `réseau`{.action} qui porte le nom de votre segment. et cliquez sur `OK`{.action}.
 
 ![03 Connect Network Card to Segment 03](images/03-connect-network-card-vm-to-segment03.png)
 
-Sélectionnez le `réseau`{.action} qui porte le nom de votre segment. et cliquez sur `OK`{.action}.
+Cliquez sur `OK`{.action}.
 
 ![03 Connect Network Card to Segment 04](images/03-connect-network-card-vm-to-segment04.png)
 
-Cliquez sur `OK`{.action}.
-
-![03 Connect Network Card to Segment 05](images/03-connect-network-card-vm-to-segment05.png)
-
-Revenez sur l'interface NSX-T
+Maintenant que votre machine virtuelle est connecté au segment revenez sur l'interface NSX-T.
 
 Allez dans l'onglet `Networking`{.action} choisissez `Network Topology`{.action}.
 
@@ -113,7 +109,7 @@ Allez dans l'onglet `Networking`{.action} choisissez `Network Topology`{.action}
 
 La machine virtuelle associé au réseau apparait dans la topologie du réseau.
 
-Aidez-vous de la première partie du guide pour créer un deuxième segment nommé ov2-segment dans un sous-réseau **192.168.2.0/24** avec une passerelle en **192.168.1.254** afin d'avoir deux segments.
+Aidez-vous de la première partie du guide pour créer un deuxième segment nommé ov2-segment dans un sous-réseau **192.168.2.0/24** avec une passerelle en **192.168.2.254** afin d'avoir deux segments.
 
 * **ov1-segment** sur le sous-réseau **192.168.1.0/24**
 * **ov2-segment** dans le sous réseau **192.168.2.0/24**
