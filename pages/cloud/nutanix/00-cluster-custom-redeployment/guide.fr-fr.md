@@ -108,7 +108,7 @@ Configurer ces paramètres :
 
 * **Replication Factor** : RF2.
 * **Erasure Coding feature** : Erasure Coding désactivé.
-* **Prism entral type** : alone.
+* **Prism entral type** : Alone.
 * **Prism Central VIP** : Adresse IP privée de Prism Central.
 * **Prism Element Virtual IP(VIP)** : Adresse IP de Prism Element.
 * **CIDR Gateway** : Adresse IP et la masque de l'OVHgateway (ce sera le sous-réseau du réseau d'administration du cluster)
@@ -202,3 +202,5 @@ Cliquez sur `Execute`{.action} pour lancer le redéploiement du cluster.
 [Utilisation de l'API OVHcloud](https://docs.ovh.com/fr/api/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+
+[Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/fr/nutanix/activate-license-on-nutanix-byol/)
