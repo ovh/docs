@@ -1,7 +1,7 @@
 ---
-title: Gestioon des segments
+title: Gestion des segments
 slug: nsx-t-segment-management
-excerpt: Comment créer des segments et utiliser des segments
+excerpt: Comment créer des segments et les utiliser
 section: NSX-T
 order: 02
 ---
@@ -9,7 +9,7 @@ order: 02
 **Dernière mise à jour le 12/12/2022**
 
 > [!warning]
-> Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
+> Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
 >
 
 ## Objectif
@@ -31,9 +31,9 @@ order: 02
 
 ## Présentation
 
-Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précemment logical switch) il peut être de deux types :
+Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précédemment logical switch) il peut être de deux types :
 
-- **VLAN-backed segments** : la communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2.
+- **VLAN-backed segments** : la communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switchde niveau 2.
 - **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle entre les hotes et les VM.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
