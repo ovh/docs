@@ -84,9 +84,10 @@ Voici un schéma (logique) de démarrage Netboot :
 - Un serveur dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir un accès au réseau public et privé. Ce serveur hébergera tous les services (**DHCP** et **TFTP**). Le système d'exploitation sera celui de votre choix.
 - Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez préalablement configuré [notre fonctionnalité OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
 
-> Voici un exemple d'une machine éligible à notre procédure, à partir de l'onglet* `Interfaces réseau`{.action} *de son manager:* <br>
 >
-> Pour vérifier que votre machine est éligible à notre procédure, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur l'onglet `Bare Metal Cloud`{.action}. Sélectionnez votre serveur et vérifiez son éligibilité à `OLA: OVHcloud Link Aggreation` dans l'onglet `Interfaces réseau`{.action}.
+> Pour vérifier que votre machine est éligible à notre procédure, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur l'onglet `Bare Metal Cloud`{.action}.
+>
+> Sélectionnez votre serveur et vérifiez son éligibilité à `OLA: OVHcloud Link Aggregation` dans l'onglet `Interfaces réseau`{.action}.
 >
 > ![OLA1](images/Scr_OLA1.png){.thumbnail}
 >
