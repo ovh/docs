@@ -10,7 +10,7 @@ order: 04
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 03.02.2022**
+**Letzte Aktualisierung am 09.12.2022**
 
 ## Ziel 
 
@@ -160,6 +160,15 @@ In der unten abgebildeten Nachricht im Bereich `Datenbanken`{.action} in Ihrem [
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
 In diesem Fall können Sie die [RAM-Kapazität](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#wechseln-des-datenbank-angebots_1) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erhöhen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf die Schaltfläche `...`{.action} im Bereich `RAM`.
+
+> [!warning]
+>
+> Diese Erweiterung des RAM funktioniert nur bei einer CloudDB, die nicht Teil eines Performance Webhostings ist. Wenn Sie die RAM-Kapazität einer in den [Performance Angeboten](https://www.ovhcloud.com/de/web-hosting/performance-offer/){.external} enthaltenen Datenbank erhöhen möchten, müssen Sie diese zuerst abtrennen.
+> 
+> Loggen Sie sich zum Abtrennen der Datenbank in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und öffnen Sie `Web Cloud`{.action}. Klicken Sie links auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting mit der aktiven CloudDB aus.
+>
+> Klicken Sie im Bereich `Konfiguration` auf den Button `...`{.action} rechts neben `Private Datenbank`. Klicken Sie dann auf `Abtrennen`{.action}.
+>
 
 Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in unserer Anleitung "[Ihren Datenbankserver konfigurieren](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#uberprufung-der-ram-nutzung)" befolgen.
 
